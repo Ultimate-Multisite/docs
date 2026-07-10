@@ -3,13 +3,13 @@ title: Pieslūdzība personalizētajai attīstībai
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kā kādu palīdzību saņemt no Codeable?
+# Kā kādu palīdzību saņemt no Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Reiz tiem, kad mums patiešām nepieciešams kaut kas fantastisks pielāgojums, lai mūsu tīkla strūmes tieši tā, kā mēs vēlamos. Ja tas ir tas, ko jūs meklējat, mēs jums ieteikam [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), vietu, kurā varat atrast pieredzējusies attīstītājus ar Ultimate Multisite uzmanību.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ir platforma, kas savona klientus kvalificēti WordPress freela attīstītājiem, kuri var strādāt projektos jebkuras izmēra. Viņiem ir ļoti skaidrs pieteikuma proces, lai nodrošinātu, ka jūs esat atbilstoši ekspertiem, kas kvalificēti tieši tam uzdevumam, ko jūs domājat.
 
-### Kā izveidot projektu Codeable?
+### Kā izveidot projektu Codeable? {#how-to-create-a-project-in-codeable}
 
 Vispirms, dodieties uz [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) un noklikšķiniet uz pogas **Start a Project** (Sākt projektu).
 

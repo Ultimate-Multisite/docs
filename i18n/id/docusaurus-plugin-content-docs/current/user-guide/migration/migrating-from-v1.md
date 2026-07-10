@@ -3,9 +3,9 @@ title: Migrasi dari V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrasi dari V1
+# Migrasi dari V1 {#migrating-from-v1}
 
-## Ultimate Multisite telah beralih dari versi rilis 1.x ke versi rilis 2.x.
+## Ultimate Multisite telah beralih dari versi rilis 1.x ke versi rilis 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versi 2.0 ke atas merupakan penulisan ulang menyeluruh dari basis kode, yang berarti sangat sedikit kesamaan antara versi lama dan versi baru. Oleh karena itu, saat melakukan upgrade dari 1.x ke 2.x, data Anda perlu dimigrasikan ke format yang dapat dipahami oleh versi baru.
 
@@ -15,7 +15,7 @@ Pelajaran ini membahas cara kerja migrator, apa yang harus dilakukan jika terjad
 
 _**PENTING: Sebelum Anda memulai upgrade dari versi 1.x ke versi 2.0, pastikan Anda membuat backup database situs Anda**_
 
-## Langkah pertama
+## Langkah pertama {#first-steps}
 
 Langkah pertama adalah mengunduh file .zip plugin dan menginstal versi 2.0 di dashboard network admin Anda.
 
@@ -51,7 +51,7 @@ Setelah aktivasi lisensi, Anda bisa memulai instalasi sebenarnya dengan mengklik
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Sekarang, waktunya migrasi
+## Sekarang, waktunya migrasi {#now-the-migration}
 
 Migrator memiliki fitur keamanan bawaan yang akan memeriksa seluruh multisite Anda untuk memastikan semua data Ultimate Multisite dapat dimigrasikan tanpa masalah. Klik tombol **Run Check** untuk memulai proses.
 
@@ -59,13 +59,13 @@ Migrator memiliki fitur keamanan bawaan yang akan memeriksa seluruh multisite An
 
 Setelah menjalankan pemeriksaan, ada dua kemungkinan: hasilnya bisa **dengan** error atau **tanpa error**.
 
-### Dengan Error
+### Dengan Error {#with-error}
 
 Jika Anda mendapat pesan error, Anda perlu menghubungi tim support kami agar mereka dapat membantu memperbaiki error tersebut. Pastikan Anda **menyertakan log error** saat membuat tiket. Anda bisa mengunduh log atau mengklik link yang bertuliskan contact our support team. Ini akan membuka widget bantuan di sisi kanan halaman Anda dengan kolom yang sudah terisi otomatis, termasuk log error di bagian deskripsi.
 
 _**Karena sistem menemukan error, Anda tidak akan bisa melanjutkan migrasi ke versi 2.0. Anda bisa melakukan rollback ke versi 1.x untuk melanjutkan menjalankan network Anda sampai error diperbaiki.**_
 
-### Tanpa Error
+### Tanpa Error {#without-error}
 
 Jika sistem tidak menemukan error, Anda akan melihat pesan sukses dan tombol **Migrate** di bagian bawah yang memungkinkan Anda melanjutkan migrasi. Di halaman ini, Anda akan diingatkan untuk membuat backup database sebelum melanjutkan, yang sangat kami sarankan. Klik **Migrate** jika Anda sudah memiliki backup.
 

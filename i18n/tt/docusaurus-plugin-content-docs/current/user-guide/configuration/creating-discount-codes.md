@@ -3,13 +3,13 @@ title: Скидка кодоlarını oluşturma
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Скидка кодов oluşturma (v2)
+# Скидка кодов oluşturma (v2) {#creating-discount-codes-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i referans almaktadır.**_
 
 Ultimate Multisite ile müşterilerin aboneliklerine indirim vermek için indirim kodları oluşturabilirsiniz. Ve bunları oluşturmak çok kolay!
 
-## İndirim Kodu Oluşturma ve Düzenleme
+## İndirim Kodu Oluşturma ve Düzenleme {#creating-and-editing-discount-codes}
 
 Bir indirim kodu oluşturmak veya düzenlemek için **Ultimate Multisite > Discount Codes** bölümüne gidin.
 
@@ -87,7 +87,7 @@ Burada mevcut olan ayarları inceleyelim:
 
 ###
 
-### URL параметрлерен куллану:
+### URL параметрлерен куллану: {#using-url-parameters}
 
 Галапчыгылараңар карары таблицаларыгызны ясарга, веб-сайтыгыз өчен зур купон код катысы ясарга һәм чекаут формагызга автомат түгел купон коды күтәрүне кабул итү өчен URL параметрлере белән булырга мөмкин.
 

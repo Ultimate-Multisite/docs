@@ -3,7 +3,7 @@ title: Maareynta Goobaha
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Maareyntaalka Sawirrada (Sites)
+# Maareyntaalka Sawirrada (Sites) {#managing-sites}
 
 Sawirrada (ama subsites-ka) waa qaybta ugu muhiimsan ganacsigaaga WaaS. Ultimate Multisite waxay leedahay 3 nooc oo sawirro ah:
 
@@ -11,13 +11,13 @@ Sawirrada (ama subsites-ka) waa qaybta ugu muhiimsan ganacsigaaga WaaS. Ultimate
 - **Site Templates** — Sawirro horey u hagaagsan oo macmiilku iska doorbidayna inay isticmaalaan
 - **Main Site** — Sawirka kooxdaada (network site) ee ugu muhiimsan
 
-## Aragtida Sawirrada
+## Aragtida Sawirrada {#viewing-sites}
 
 Ujeedo **Ultimate Multisite → Sites** si aad u aragto dhammaan subsites-ka ku jira kooxdaada. Sawir kasta waxaa lagu tilmaama noockiisa, waxaadna kala qaadi kartaa iyadoo la isticmaalayo All Sites (Dhammaan Sawirrada), Customer-Owned (Macmiilka U Socda), Templates (Templates), ama Pending (Waxay iiga soconaysaa).
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Bixinta Sawir Cusub
+## Bixinta Sawir Cusub {#adding-a-new-site}
 
 Riix badhka **Add Site** si aad u abuurtid sawir cusub. Waxaad u baahan doontaa inaad bixisid:
 
@@ -27,15 +27,15 @@ Riix badhka **Add Site** si aad u abuurtid sawir cusub. Waxaad u baahan doontaa 
 
 Qaabka **Copy Site** wuxuu kuu oggolaanayaa inaad samayso sawir cusub oo ku salaysan template hore. Marka la furayo, waxaad dooran kartaa template-ka aad isticmaali doonto si ay u noqoto bilowga. Hubi in **Copy Media on Duplication** uu furan yahay si loo bilaabo faylasha media (media files).
 
-## Maareynta Sawir Hore U Socda
+## Maareynta Sawir Hore U Socda {#managing-an-existing-site}
 
 Riix **Manage** ku qoran sawir kasta si aad u furto bogga **Edit Site**. Halkaas ayaad ka heli doontaa:
 
-### Macluumaadka Aasaasiga ah
+### Macluumaadka Aasaasiga ah {#basic-information}
 
 Magaca sawirka, noockiisa, ID-ga sawirka, iyo sharraafinta. Waxaad sidoo la arki doontaa domain-ka la xiriira (mapped domain), xiriirka socda (associated membership), iyo xisaabta macmiilka ee leh sawirkaas.
 
-### Doorashada Sawirka (Site Options)
+### Doorashada Sawirka (Site Options) {#site-options}
 
 Si aad u hagaajiso awoodaha iyo xaddidda sawirka:
 
@@ -49,7 +49,7 @@ Si aad u hagaajiso awoodaha iyo xaddidda sawirka:
 
 Si loo bilaabo, website-yadu waxay raacayaan xaddidda la dejiyay heerka xubsyada (membership level). Haddii aad dejiso xaddidaha heerka website-ka, waxay ka hor imaan doonaan dejimaha xubsyada.
 
-### Xiriirrada (Associations)
+### Xiriirrada (Associations) {#associations}
 
 Hoos ka dhanka badhanka barnaamijyada website-ka waxaad ka heli doontaa macluumaadka ku saabsan:
 
@@ -57,7 +57,7 @@ Hoos ka dhanka badhanka barnaamijyada website-ka waxaad ka heli doontaa macluuma
 - **Xubsyada** uu website-ku ku jiro
 - **Kaararka macaamiisha (Customer account)** la xiriira website-ka
 
-### Bariga Sare (Right Sidebar)
+### Bariga Sare (Right Sidebar) {#right-sidebar}
 
 Bariga sare waxaad samayn kartaa:
 

@@ -3,11 +3,11 @@ title: Isolatio Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolația Multi-Tenancy
+# Isolația Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 susține izolarea de bază de date și a sistemului de fișiere pentru subsitele suverâne, asigurând o separare completă a datelor în timp ce se păstrează configurarea rețelei, facturarea și administrarea la nivel de rețea.
 
-## Strategia de izolare
+## Strategia de izolare {#isolation-strategy}
 
 Folosiți izolarea suverană pentru clienții care au nevoie de o separare mai puternică a datelor, stocare dedicată a sistemului de fișiere sau o delimitare separată a gazdei (host).
 
@@ -18,7 +18,7 @@ Fiecare tenant suveran trebuie să aibă:
 - O intrare în registru al tenantului care mapează site-ul la baza de date sa, calea rădăcină, numele de gazdă și modelul de izolare.
 - Un rezultat de verificare a migrației înainte ca tenantul să fie considerat activ.
 
-## Legarea gazdei bazei de date (Database host binding)
+## Legarea gazdei bazei de date (Database host binding) {#database-host-binding}
 
 Versiunea 1.2.0 modifică comportamentul implicit al legării gazdei pe aceeași mașină pentru instalanțiile suverâne. Valorile precum `localhost` sunt normalizate astfel încât Bedrock, FrankenPHP și instalanțiile WordPress containerizate să poată acorda și verifica permisiunile împotriva șirului de gazdă MySQL pe care îl vede cu adevărat.
 
@@ -31,11 +31,11 @@ Când configurați un tenant suveran:
 
 Dacă rapoartele de verificare indică eșecuri în acordarea permisiunilor, comparați acordarea utilizatorului bazei de date a tenantului cu legarea gazdei configurată. Un utilizator acordat pentru `user@localhost` este diferit de `user@127.0.0.1` sau `user@%`.
 
-## Rădăcina sistemului de fișiere (Filesystem root)
+## Rădăcina sistemului de fișiere (Filesystem root) {#filesystem-root}
 
 Radix root tenant stabilis est inter redemitiis et deploys. Evadeți itineria montium temporalia. Ad installationes in modo Bedrock, confirmate quod radix tenant adhibet ad radice web WordPress quam tenant bootstrap expectat, non solum radicem projecti.
 
-## Ordo provisio
+## Ordo provisio {#provisioning-order}
 
 Ad novos tenentes souverainos, hoc ordine utite:
 
@@ -49,7 +49,7 @@ Ad novos tenentes souverainos, hoc ordine utite:
 
 Hoc ordine impedit tenentibus partialiter isolatis recipere trafficon antequam scriptor database, utentia et filesystem parviant.
 
-## Fluxus gestionis clientium souveraniorum
+## Fluxus gestionis clientium souveraniorum {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 conservat actiones gestionis clientium in situm principalem cum modo souveraneo activato. Tenant potuerit tamen operari ut installatio WordPress isolata, sed actiones ad clientem dependentes a facturatione rete, membrinibus vel data account partibus debent clientem redi ut situm principalum in lugar, sicut tentare completum actionem intra runtime tenant.
 

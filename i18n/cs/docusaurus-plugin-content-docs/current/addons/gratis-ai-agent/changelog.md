@@ -3,11 +3,11 @@ title: Změnový deník
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Vydáno 2026-04-28
+## 1.9.0 — Vydáno 2026-04-28 {#190--released-on-2026-04-28}
 
-### Novinky
+### Novinky {#new}
 
 - **Schopnost `create_contact_form`** — vytváří kontaktní formulář pomocí aktivního pluginu pro formuláře (Contact Form 7, WPForms, Fluent Forms nebo Gravity Forms) a vrací shortcode připravený k vložení do jakéhokoli příspěvku nebo stránky.
 - **Schopnost `set_featured_image`** — přiřazuje hlavní obrázek k příspěvku nebo stránce z existujícího ID v médiách nebo z vzdálené URL; automaticky doimporuje obrázek, když je poskytnut URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Obnovení poslední sady** — panel chatu nyní automaticky načte nejnovější konverzaci při načtení stránky i při otevření widgetu, takže kontext nikdy neunikne při navigaci po stránkách.
 - **Odkazy na akce pluginů** — rychlé odkazy na Nastavení a Registr schopností nyní zobrazují na obrazovce **Plugins → Installed Plugins** pod popisem pluginu.
 
-### Vylepřeno
+### Vylepřeno {#improved}
 
 - **Pokus o zdroj obrázku** — agent nyní opakuje všechny nakonfigurované zdroje bezplatných obrázků, než se při selhání stahování vrátí k AI-generovanému obrázku.
 - **Panel informací o modelu** — je vždy viditelný v hlavičce chatu; už není skrytý po první zprávě.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Přepracování widgetu chatu** — jednotná ikona AI nahrazuje předchozí vlastní avatar; je konzistentní s vestavěným systémem agentů.
 - **Linkifikace URL** — URL v systémových zprávách a bublinách s chybovými hlášením jsou nyní vykresleny jako klikatelné odkazy.
 
-### Opraveno
+### Opraveno {#fixed}
 
 - **Objevitelnost schopností** — opraveny popisy, odkazy v systémovém promptu a uspořádání namespace, takže všechny schopnosti se spolehlivě zobrazují v seznamu nástrojů agenta.
 - **Cache poskytovatelů** — poskytovatelé jsou nyní cacheti na úrovni celé stránky pomocí počítadla verzí, což zabraňuje problémům se zastaralými poskytovateli v síti multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Vydáno 2026-04-09
+## 1.4.0 — Vydáno 2026-04-09 {#140--released-on-2026-04-09}
 
-### Novinky
+### Novinky {#new-1}
 
 - **Výkonový benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — spouští sadu benchmarků Agent Capabilities v1 z příkazové řádky pro CI pipeline a pracovní postupy hodnocení modelů. Podporuje běh pro každou otázku, přehazování poskytovatelů/modelů a výstup v formátu JSON/CSV.
 - **Sada benchmarků Agent Capabilities v1** — strukturovaná sada komplexních, víceúrovňových promptů, které testují celou plochu schopností, s ohodnocením a hlášením tokenů/trvání.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Testovací otázka pro restauraci** (`q-restaurant-website`) — end-to-end test pokrývající registraci CPT, systém designu, navigaci a objevování pluginů.
 - **Plíseň konektorů AI poskytovatelů** přidána do blueprintů WordPress Playground pro rychlejší lokální nastavení vývoje.
 
-### Vylepřeno
+### Vylepřeno {#improved-1}
 
 - README aktualizováno dokumentací a pokyny pro nastavení konektorů AI poskytovatelů.
 
-### Opraveno
+### Opraveno {#fixed-1}
 
 - Vyřešeno 25 selhání testů PHPUnit na hlavní větvi.
 - Opraven formát URL GitHub releases v `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Poznámky k předchozích verzích jsou uloženy v úložišti pluginu._

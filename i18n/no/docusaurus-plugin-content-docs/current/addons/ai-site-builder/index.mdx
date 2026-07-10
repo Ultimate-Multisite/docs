@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller høyere
 - PHP 7.4 eller høyere
 - Multisite Ultimate plugin (aktiv)
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp addon-filene til katalogen din `/wp-content/plugins/`
 2. Aktiver pluginet via menyen 'Plugins' i WordPress
 3. Konfigurer addon-innstillingene i nettverksadministratoren
 
-## Utvikling
+## Utvikling {#development}
 
-### Oppsett
+### Oppsett {#setup}
 
 ```bash
 # Installer avhengigheter
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Prosjektstruktur
+### Prosjektstruktur {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Regler for kodeoppgradering
 ```
 
-### Testing
+### Testing {#testing}
 
 Addonet inkluderer et omfattende testrammeverk:
 
@@ -79,44 +79,44 @@ Addonet inkluderer et omfattende testrammeverk:
 - **Testdekning (Test Coverage)**: Konfigurert for å spore kodekledningen
 - **Multisite Testing**: Testene kjøres i et multisite-miljø
 
-### Kodekoder
+### Kodekoder {#code-standards}
 
 - **WordPress Coding Standards**: Håndhevet via PHPCS
 - **PHP 7.4+ Kompatibilitet**: Støtter moderne PHP-funksjoner
 - **Statisk Analyse**: PHPStan-integrasjon for typesjekking
 - **Kodeoppgradering**: Rector-regler for PHP-oppgraderinger
 
-### Byggsystem
+### Byggsystem {#build-system}
 
 - **Prosesserings av ressurser (Asset Processing)**: Minifisering av CSS/JS-filer
 - **Oversettelse (Translation)**: Generering av POT-filer
 - **Pakking (Packaging)**: Opprettelse av arkiver for distribusjon
 - **Utviklingsmodus (Development Mode)**: Ikke-minifiserte ressurser for feilsøking
 
-## Konfigurasjon
+## Konfigurasjon {#configuration}
 
 Addonet støtter ulike konfigurasjonsalternativer som er tilgjengelige via nettverksadministratorgrensesnittet.
 
-## Hooks og Filtre
+## Hooks og Filtre {#hooks-and-filters}
 
-### Handlinger (Actions)
+### Handlinger (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Utløses etter addon-initialisering
 - `ultimate-multisite-ai-site-builder_loaded` - Utløses etter at alle addon-filer er lastet
 
-### Filtre (Filters)
+### Filtre (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Endre addon-innstillingene
 - `ultimate-multisite-ai-site-builder_enabled` - Overstyre addonens aktiverings-/deaktiveringsstatus
 
-## Lisens
+## Lisens {#license}
 
 Dette addonet er lisensiert under GPL v3 eller nyere.
 
-## Støtte
+## Støtte {#support}
 
 For støtte og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
-## Endringslogg
+## Endringslogg {#changelog}
 
 - Versjon 1.0.1 (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.
 

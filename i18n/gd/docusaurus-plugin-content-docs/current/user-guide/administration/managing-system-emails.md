@@ -3,11 +3,11 @@ title: Ceannach air comharrachadh e-mailtean sistemaichean
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# A' chùlnaidhean e-mailan siseanta
+# A' chùlnaidhean e-mailan siseanta {#managing-system-emails}
 
 Rinn a' chùlnaidhean e-mailan siseanta a' Ultimate Multisite airson eirbhaidh sin sin, mar faighneachadh a' chluichd, fhaighneachadh bràth, agus atharrachadh àmras. Is e luach a tha thu a' chùlnaidhean e-mailan seo a' chluichd gu sgaidhlig a' chùlnaidhean agad.
 
-## A' chluichd e-mailan siseanta
+## A' chluichd e-mailan siseanta {#viewing-system-emails}
 
 Tuisge an **Ultimate Multisite → Settings** agus cluich air tòstáil **Emails** chun a bhith a' chluichd e-mailan.
 
@@ -21,7 +21,7 @@ Is e luach a tha thu a' chluichd e-mailan sin a' chluichd gu sgaidhlig a' chluic
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## A' chluichd tòstáil e-mailan ùra
+## A' chluichd tòstáil e-mailan ùra {#importing-new-email-templates}
 
 Leis am fhaighneachadh ùr na siostaman a' Ultimate Multisite agus addaichean, eadar-dhealaidh e-mailan ùra a' chluichd. Gus a bhith ag iarraidh a' chluichd sin a' chluichd gu sgaidhlig, cha tha e a' chluichd air a bhith a' chluichd gu sgaidhlig — faic thu a' chluichd gu sgaidhlig.
 
@@ -32,7 +32,7 @@ Gus a chluichd e-mailan ùra:
 3. Chruinneachadh an fhoiclas **Import Emails** airson faic e-mailan a tha a' chluichd
 4. Taisg an e-mailan a tha thu a' chluichd agus dìomhaigh
 
-## A' chluichd e-mailan siseanta
+## A' chluichd e-mailan siseanta {#resetting-email-templates}
 
 Mar sin, mar a tha thu a' chluichd e-mailan sin a' chluichd gu sgaidhlig a' chluichd an seàil, tha thu de dh'fhaighneachadh a' chluichd air a' chluichd a' chluichd. Tha thu de dh'fhaighneachadh a' chluichd air a' chluichd a' chluichd.
 

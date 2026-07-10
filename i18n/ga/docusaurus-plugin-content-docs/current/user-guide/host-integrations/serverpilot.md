@@ -3,17 +3,17 @@ title: Iompairte ServerPilot
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# Intégráisi le ServerPilot
+# Intégráisi le ServerPilot {#serverpilot-integration}
 
-## Oibríocht
+## Oibríocht {#overview}
 Is é ServerPilot seirbhís cloud chun WordPress agus siti eile PHP websites a chur ar servera ag DigitalOcean, Amazon, Google, nó aon forn deiridh eile. Féachfaidh an chéad seo a bheith i gcónaí domáin agus cur chuimhneachán sertaic SSL idir Ultimate Multisite agus ServerPilot.
 
-## Feicharásanna
+## Feicharásanna {#features}
 - Cur chuimhneachán domáin go dtí (Automatic domain syncing)
 - Cur chuimhneachán sertaic SSL le Let's Encrypt
 - Cur chuimhneachán sertaic SSL go dtí (Automatic SSL renewal)
 
-## Cónaitheachtaí
+## Cónaitheachtaí {#requirements}
 Is gceart sin é a chur i bhfeidm ag an t-file `wp-config.php` a bheith agatá:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## Instructionaí Setpoin
+## Instructionaí Setpoin {#setup-instructions}
 
-### 1. Déan an t-Aithris API ServerPilot atá
+### 1. Déan an t-Aithris API ServerPilot atá {#1-get-your-serverpilot-api-credentials}
 
 1. Login go dtí do dashboard ServerPilot
 2. Déan cur isteach ar "Account" > "API"
 3. Creoliad un n-api key nua má níl agat ag cur chuimhneachán
 4. Coptaidh do Client ID agus API Key
 
-### 2. Déan an App ID atá
+### 2. Déan an App ID atá {#2-get-your-app-id}
 
 1. I do dashboard ServerPilot, cur isteach ar "Apps"
 2. Déan chun an app a bheith ag cur WordPress multisite agat chun cinn
 3. Tá an App ID ag bheith i URL: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Add Constants go wp-config.php
+### 3. Add Constants go wp-config.php {#3-add-constants-to-wp-configphp}
 
 Add an cónaitheachtaí seo go dtí do t-file `wp-config.php`:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. Fáilte le an Intégráisiún
+### 4. Fáilte le an Intégráisiún {#4-enable-the-integration}
 
 1. I do admin WordPress, cur isteach ar Ultimate Multisite > Settings
 2. Déan chun an tab "Domain Mapping" (Cur chuimhneachán domáin)
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. Fáilte le ServerPilot integration
 5. Cliom ar "Save Changes" (Cur chuimhneacháin)
 
-## Conas Tá Éifeachtúil
+## Conas Tá Éifeachtúil {#how-it-works}
 
-### Cur Chuimhneachán Domáin
+### Cur Chuimhneachán Domáin {#domain-syncing}
 
 Nuair a bhíonn domán ag cur chuimhneachán i Ultimate Multisite:
 
@@ -66,7 +66,7 @@ Nuair a bhíonn domán ag cur chuimhneachán i Ultimate Multisite:
 3. Bidd an liosta athrúla seo go dtí ServerPilot tríd an API.
 4. Bhaileann ServerPilot an liosta de domáin do application.
 
-### Curtaí Sertificat SSL (SSL Certificate Management)
+### Curtaí Sertificat SSL (SSL Certificate Management) {#ssl-certificate-management}
 
 Tar éis a bhaineobh na domáin:
 
@@ -74,27 +74,27 @@ Tar éis a bhaineobh na domáin:
 2. Bhaileann ServerPilot an t-curtaí SSL agus an chláir ag éile tríd Let's Encrypt.
 3. Bhaileann ServerPilot an athrúcháin authiomáir na curtaí SSL.
 
-## Peatú Sertificat SSL (SSL Certificate Verification)
+## Peatú Sertificat SSL (SSL Certificate Verification) {#ssl-certificate-verification}
 
 Tá an curteáil ceangailt chun an t-amachasanna de chuid curtaí SSL a chur ar fáil do ServerPilot a sholáir, mar is féidir leat go ngairt sonraí amháin ar éile chun curtaí SSL a chur ar fáil agus a chláir. Ag curteáil, baill sé ag iarraidh 5 amachasanna, ach is féidir é seo athrú a dhéanamh tríd na filters.
 
-## Treocha (Troubleshooting)
+## Treocha (Troubleshooting) {#troubleshooting}
 
-### Cúsaí Ceangailte API (API Connection Issues)
+### Cúsaí Ceangailte API (API Connection Issues) {#api-connection-issues}
 - Déan cinnte go bhfuil an Client ID agus an API Key agat.
 - Déan cinnte go bhfuil an App ID agat.
 - Déan cinnte go bhfuil rathasanna ag do chontacht ServerPilot ag curteacha a bhaineann leat.
 
-### Cúsaí Sertificat SSL (SSL Certificate Issues)
+### Cúsaí Sertificat SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - Baillíonn ServerPilot go bhfuil sonraí DNS ceart ag curteáil ar an server de do domáin primaidh chun curtaí SSL a chur ar fáil.
 - Má níl curtaí SSL ag curtió, déan cinnte go bhfuil do domáin ag curteáil go ceart ar an chuid IP de do server.
 - Is féidir leat go ngairt sonraí amháin ar éile chun curtaí SSL a chur ar fáil agus a chláir (is é seo tí ar 5-15 minuta).
 
-### Domán Níl Ag Bhaineobh (Domain Not Added)
+### Domán Níl Ag Bhaineobh (Domain Not Added) {#domain-not-added}
 - Déan cinnte go bhfuil aon rud éifeachtach ag an loganna Ultimate Multisite chun meánacháin a chur ar fáil.
 - Déan cinnte go níl an domán curtha ag ServerPilot anois.
 - Déan cinnte go bhfuil an plan do ServerPilot ag curteacha an n-amachasanna de domáin atá agat.
 
-### Aileán Domáin (Domain Removal)
+### Aileán Domáin (Domain Removal) {#domain-removal}
 - Anois níl an API de ServerPilot ag cur isteach go léir an fáil ar chuid domáin oiriúnach.
 - Nuair a bhíonn cur isteach domáin (domain mapping) ag cur isteach i Ultimate Multisite, beidh an cur isteach sin ag athrú an liosta domáin i ServerPilot chun an domáin atá cur isteach a gcurt.

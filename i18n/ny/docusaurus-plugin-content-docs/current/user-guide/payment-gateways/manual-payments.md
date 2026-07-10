@@ -1,48 +1,46 @@
 ---
-title: Kuthandiza Mapemba Akuluwimi
+title: Kukhazikitsa Malipiro a Pamanja
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Kufunga Malipamo Yosamukulu (v2)
+# Kukhazikitsa Manual Payments (v2) {#setting-up-manual-payments-v2}
 
-_**KUFUNSA KUTI: Iye ndikufufuza Ultimate Multisite version 2.x.**_
+_**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite version 2.x.**_
 
-Malipamo yosamukulu ndi njira yomwe mungupereke kuti muli ndi njira zina za malipamo ngati **Stripe** kapena **PayPal** si ndi kwa anthu anu. Imene ndi kukhala kowonjezera (wire) kapena kupasa m'banki kapena njira yosamukulu yomwezi anthu anu ali nayo m'lokalilo.
+Manual payments ndi njira yoti mupereke njira zina zolipirira ngati **Stripe** kapena **PayPal** sizikupezeka kwa ogwiritsa ntchito anu. Itha kukhala wire kapena bank transfer kapena njira ina iliyonse yolipirira yomwe ilipo kwa ogwiritsa ntchito anu m’dera lawo.
 
-## Kodi Muliwo Kuti Muli Malipamo Yosamukulu?
+## Momwe mungayambitsire Manual Payments {#how-to-enable-manual-payments}
 
-Kufunsa malipamo yosamukulu ndi kukhala luso kwambiri. Kodi muli ndi kukhala kwawo m'payment gateways ndipo muli ndi mafunso osavuta za kuti anthu anapereke malipamo bwanji.
+Kukhazikitsa manual payment ndi kosavuta kwambiri. Muyenera kungoyiyambitsa pansi pa payment gateways ndi kuyika malangizo atsatanetsatane a momwe wogwiritsa ntchito ayenera kutumizira malipiro.
 
-Mwachidule, ndi ndi kumvera **Ultimate Multisite > Settings > Payments**. M'mmodzi mwa **Payment Gateways**, muli ndi kukhala kwawo **Manual** (kuyendetsa). Mudza kuona kuti kukhala kwawo **Payment Instructions** kuliwonetsa.
+Choyamba, pitani ku **Ultimate Multisite > Settings > Payments**. Pansi pa **Payment Gateways** , yatsani **Manual**. Mudzawona kuti bokosi la **Payment Instructions** lidzawonekera kwa inu.
 
-Muli ndi kufufuza za anthu anu omwe adzakhalaokera malipamo. Izi zingathe kukhala m'banki yanu kapena email yanu kuti anthu anapereke thandizo la malipamo, monga m'mmodzi.
+Onjezani m’bokosili zambiri zomwe kasitomala wanu adzafunika kuti alipire. Zitha kukhala zambiri za bank account yanu ndi email yanu kuti kasitomala akutumizireni chitsimikizo cha malipiro, mwachitsanzo.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Kuyatsa manual payment gateway ndi malo olembera a Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Iyi ndi mwayi wopereka za manual gateway:
+Nayi interface ya manual gateway settings:
 
 ![Manual gateway settings](/img/config/manual-gateway-settings.png)
 
-Mmodzi mwa kukhala kwawo, muli ndi kukhala kwawo **Save Settings** ndipo simukonzekera. Pamene anthu anaperekera (register) ku mtandawulo wanu, adzakhala ndi mawu omwe adzakhala kuti adzakhala ndi mafunso anu kuti apereke malipamo.
+Mukamaliza kuyikhazikitsa, dinani basi pa **Save Settings** ndipo zatha. Ogwiritsa ntchito akalembetsa ku network yanu, adzawona uthenga wowauza kuti adzalandira malangizo anu kuti amalize kugula.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Uthenga wotsimikizira kulembetsa wouza wogwiritsa ntchito kuti adzalandira malangizo a malipiro](/img/frontend/registration-manual-notice.png)
 
-Ndipo adzakhala ndi mawu m'Thank You page yanu ndi mafunso anu za malipamo.
+Ndipo adzalandiranso uthenga pa tsamba lanu la **Thank You** wokhala ndi malangizo anu a malipiro.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Kufufuza Malipamo Yosamukulu
+## Kutsimikizira manual payments {#confirming-manual-payments}
 
-(Kodi kuliwesi ndikufufuza kwa malipamo yosamukulu.)
+Kuti mutsimikizire manual payment, pitani ku menyu ya **Payments** pa bala lakumanzere. Kumeneko mutha kuona malipiro onse pa network yanu ndi tsatanetsatane wawo, kuphatikizapo **status** yawo. Manual payment nthawi zonse idzakhala ndi **Pending** status mpaka mutayisintha pamanja.
 
-Kuti kukhondwa mkati wopempha mkono, upitira menu ya **Payments** kuwole m'mulo wa kulankolo (left bar). Muli ndi kuyesa onse m'mulo wanu ndi mafo awo, kumtambalitsa kwake, kumwamba ndi **status** yake. M'mulo wopempha mkono uli ndi status ya **Pending** monga momwe ndi momwe mukunyang'anira wanu.
+![Mndandanda wa Payments ukuwonetsa manual payment yomwe ili pending](/img/admin/payments-list.png)
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+Lowani patsamba la malipiro podina **reference code**. Patsamba ili muli ndi tsatanetsatane wonse wa malipiro omwe akuyembekezera, monga reference ID, products, timestamps ndi zina zambiri.
 
-Muli kuyesa ndauwo wa m'mulo mwa kukhala kwa **reference code**. Pa m'mulo wopereka, muli ndi onse mafo a m'mulo wopempha mkono, monga reference ID, zinthu zomwe zili m'mulo, timestamps ndi zina.
+![Tsamba la tsatanetsatane wa malipiro likuwonetsa reference code, products, ndi totals](/img/admin/payment-edit.png)
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+Pa column yakumanja, mutha kusintha status ya malipiro. Kusintha kukhala **Completed** ndi **kuyatsa Activate Membership** option kudzayambitsa site ya kasitomala wanu ndipo membership yake idzakhala active.
 
-Pa chiyembekezo cha upatso (right column), muli ndi ulemu wopereka status ya m'mulo. Kukhazikitsa kuti ndi **Completed** ndikuyesa ulemu wa Activate Membership kuwathandiza site ya munthu wanu ndipo membership yake idzakhala yomwe yomwe.
-
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Tsamba losintha malipiro lokhala ndi Status yoyikidwa ku Completed ndi toggle ya Activate Membership](/img/admin/payment-activate-membership.png)

@@ -1,0 +1,197 @@
+---
+title: Emails
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Mailaka {#emails}
+
+Ny addon Ultimate Multisite: Emails dia mamela ny tompon’ny tambajotra hanomana sy hitantana kaonty mailakan’ny mpanjifa miaraka amin’ny tranonkala sy ny maha-mpikambana. Ny kinova 1.1.0 dia manampy fitantanana kaonty mailaka ho an’ny mpanjifa, webmail single sign-on, fanohanana forwarder CyberPanel, ary fanatsarana ny fanomanana mandritra ny famaranana fividianana.
+
+## Endri-javatra lehibe {#key-features}
+
+* **Widget kaonty mailakan’ny mpanjifa**: Afaka mamorona sy mitantana boaty mailaka avy amin’ny pejin’ny Account-ny ny mpanjifa rehefa manana maha-mpikambana mailaka mavitrika.
+* **Webmail SSO sy rohy majika**: Afaka manokatra webmail mivantana avy amin’ny pejin’ny Account ny mpanjifa amin’ny fanamarinana indray kitika rehefa manohana izany ny mpamatsy.
+* **Fanovana tenimiafina**: Afaka manavao ny tenimiafin’ny boaty mailaka avy amin’ny widget fitantanana mailaka ny mpanjifa sy ny mpitantana.
+* **Fanomanana zo amin’ny famaranana fividianana**: Mamorona ny maha-mpikambana mailaka ny famaranana fividianana, mampifandray azy amin’ny sehatra tranonkalan’ny mpanjifa, ary mahatonga ny fitaovana boaty mailaka ao amin’ny pejin’ny Account ho azo ampiasaina.
+* **Forwarder CyberPanel**: Afaka mamorona sy mitantana forwarder mailaka ho ampahany amin’ny fizotry ny serivisy mailaka ny tambajotra tohanan’ny CyberPanel.
+* **Fikirana mahafantatra mpamatsy**: Ny pejin’ny fikirana dia manivana ny mpamatsy ho amin’ireo fampidirana mavitrika sy voarindra, ka safidy azo ampiasaina ihany no hitan’ny mpitantana.
+
+## Fepetra takiana {#requirements}
+
+* Ultimate Multisite 2.0.0 na ambony kokoa
+* Fametrahana WordPress Multisite
+* Fampidirana mpamatsy mailaka voarindra iray farafahakeliny
+* Fanamarinana API an’ny mpamatsy manana fahazoan-dàlana hamorona boaty mailaka, hanova tenimiafina, ary hamoaka rohy fidirana webmail raha tohanana
+
+## Fametrahana {#installation}
+
+1. Ampakaro ao amin’ny `/wp-content/plugins/ultimate-multisite-emails` ny rakitra plugin.
+2. Ampandehano amin’ny tambajotra ny addon avy amin’ny **Plugins** ao amin’ny admin tambajotra WordPress.
+3. Mandehana any amin’ny **Ultimate Multisite** > **Fikirana** ary sokafy ny fikirana mailakan’ny addon.
+4. Alefaso ny fampidirana mpamatsy mailaka tianao hampiasain’ny mpanjifa.
+5. Tehirizo ny fikirana, avy eo andramo amin’ny mpanjifa tsy famokarana na tranonkala staging ny famoronana Account.
+
+## Fomba fiasan’ny fizotry ny fivarotana mailaka {#how-the-email-seller-flow-works}
+
+Manana sosona roa misaraka ny fivarotana mailaka:
+
+1. **Zo** — vokatra/maha-mpikambana mailaka Ultimate Multisite izay milaza fa avela hampiasa mailaka ho an’ny sehatra tranonkala, mpamatsy, quota, ary fetran-kaonty manokana ny mpanjifa.
+2. **Famoronana boaty mailaka** — ny boaty mailaka tena izy an’ny mpamatsy, toy ny `info@example.com`, noforonina rehefa misafidy ny ampahany eo an-toerana sy ny tenimiafina ny mpanjifa na mpitantana tambajotra.
+
+Mandritra ny famaranana fividianana, ny addon dia mamorona na mampihetsika ny **maha-mpikambana mailaka** ary mirakitra ny sehatra tranonkalan’ny mpanjifa sy ny mpamatsy ao amin’izany maha-mpikambana izany. Tsy maminavina anaran-boaty mailaka na tenimiafina izy. Rehefa vita ny fividianana ary misy ny tontolon’ny tranonkala/sehatra, dia afaka manokatra ny pejin’ny Account ny mpanjifa ary mamorona ny anaran-boaty mailaka tiany.
+
+Midika izany fa toy izao ny fizotry ny mpanjifa mahazatra:
+
+1. Mividy drafitra tranonkala ny mpanjifa ary manampy vokatra mailaka mandritra ny famaranana fividianana.
+2. Mamorona ny maha-mpikambana tranonkala sy ny maha-mpikambana mailaka faharoa ny Ultimate Multisite.
+3. Mampifandray ny maha-mpikambana mailaka amin’ny sehatra tranonkalan’ny mpanjifa sy ny mpamatsy ny addon Emails.
+4. Manokatra **Account** ao amin’ny Dashboard-ny ny mpanjifa.
+5. Miseho ny tontonana **Account Mailaka** ho an’io maha-mpikambana mailaka mavitrika io.
+6. Manindry **Mamorona Account** ny mpanjifa, mampiditra ny ampahany eo an-toerana toy ny `info`, mametraka tenimiafina, ary mamorona `info@their-domain.com` ao amin’ny mpamatsy voarindra ny addon.
+
+## Mandrindra vokatra mailaka {#configure-an-email-product}
+
+Mamoròna vokatra mailaka iray ho an’ny fonosana mailaka tsirairay tianao hamidy na homena. Raha vaovao amin’ny fametrahana vokatra ianao, atombohy amin’ny [Famoronana ny vokatra famandrihanao voalohany](../../user-guide/configuration/creating-your-first-subscription-product) ary miverena eto avy eo ho an’ny fikirana manokana momba ny mailaka.
+
+1. Mandehana any amin’ny **Admin Tambajotra > Ultimate Multisite > Vokatra > Ampio Vokatra**.
+2. Apetraho ho **Mailaka** ny **Karazan-vokatra**.
+3. Amboary ny vidiny. Mampiasà vidiny miverimberina aloa ho an’ny drafitra amidy, na apetraho ho maimaim-poana/aotra vidy ny vokatra raha tokony ho drafitra mailaka fanomezana izy.
+4. Sokafy ny fizarana **Fikirana Mailaka**.
+5. Safidio ny **Mpamatsy Mailaka** voarindra.
+6. Apetraho araka izay ilaina ny **Isan’ny Account**, **Quota Fitahirizana (MB)**, fetran’ny alias, forwarder, ary autoresponder.
+7. Tehirizo ny vokatra.
+
+Ireo mpamatsy alefa sy voarindra tanteraka ao amin’ny pejy **Integrations** ihany no miseho ao amin’ny mpisafidy mpamatsy. Raha foana ny mpisafidy, amboary sy andramo aloha ny mpamatsy.
+
+## Ampio mailaka amin’ny famaranana fividianana {#add-email-to-checkout}
+
+Matetika atolotra ho fanampiny amin’ny drafitra tranonkala ny vokatra mailaka. Jereo ny [Takelaka famaranana fividianana](../../user-guide/configuration/checkout-forms) ho an’ny fizotran’asa ankapoben’ny mpanitsy famaranana fividianana.
+
+1. Mamoròna na ovao ny drafitra tranonkala izay vidian’ny mpanjifa voalohany.
+2. Ampio ny vokatra mailaka ho fanampiny/order bump azo ampiasaina ho an’io fizotry ny famaranana fividianana io.
+3. Hamarino fa mbola ahitana ny saha tranonkala takiana mahazatra ny takelaka famaranana fividianana, indrindra ny sahan’ny URL/sehatra tranonkala.
+4. Manaova famaranana fividianana fitsapana amin’ny mpanjifa staging.
+5. Aorian’ny famaranana fividianana, sokafy ny [pejin’ny Account](../../user-guide/client-management/account-page) an’ilay mpanjifa ary hamarino fa miseho ny tontonana **Account Mailaka**.
+
+Ny sehatra mailaka dia alaina avy amin’ny sehatra tranonkalan’ny mpanjifa. Tsy mampiditra ny sehatra mailaka ao amin’ny dingan’ny vokatra mailaka ny mpanjifa.
+
+## Fitantanana mailaka ao amin’ny Account an’ny mpanjifa {#customer-account-email-management}
+
+Ny kinova 1.1.0 dia manampy widget fitantanana mailaka ao amin’ny pejin’ny Account an’ny mpanjifa. Ampiasao izany rehefa tokony hamorona sy hikojakoja boaty mailaka ho an’ny tranonkalany manokana amin’ny fomba self-service ny mpanjifa.
+
+Avy amin’ny pejin’ny Account, afaka manao izao ny mpanjifa:
+
+1. Mijery kaonty mailaka mifandray amin’ny maha-mpikambana mailaka/sehatra tranonkala ankehitriny.
+2. Mamorona boaty mailaka vaovao rehefa mamela Account fanampiny ny vokatra mailakany.
+3. Manova tenimiafin’ny boaty mailaka efa misy.
+4. Manokatra mpamatsy webmail tohanana amin’ny alalan’ny SSO na fidirana amin’ny rohy majika.
+
+Mampiasa ny rafitra currents an’ny pejin’ny Account Ultimate Multisite ilay widget, ka voafetra amin’ny tontolon’ny Account jerena amin’izao fotoana izao ny hetsika. Izany dia manakana ny mpanjifa tsy hitantana kaonty mailaka izay an’ny maha-mpikambana na tranonkala hafa.
+
+Raha tsy hitan’ny mpanjifa ny takelaka email, jereo fa manana **active Email product membership** izy, fa nampifandraisina tamin’ny domain an’ny site ilay membership, ary manana provider voaendrika ilay vokatra.
+
+## Fanomezana Drafitra Email Maimaim-poana ho an’ny Mpanjifa {#giving-a-customer-a-free-email-plan}
+
+Mba hanomezana email ho an’ny mpanjifa tsy andoavany vola, omeo aloha ny **email entitlement**, avy eo mamoròna na avelao ny mpanjifa hamorona ny mailbox.
+
+Safidy atolotra:
+
+* **Mamoròna vokatra email maimaim-poana**: apetraho ho maimaim-poana/aotra ny vidin’ny vokatra email, avy eo ampio membership mavitrika ho an’io mpanjifa io avy amin’ny **Ultimate Multisite > Memberships > Add Membership**. Safidio ny vokatra email sy ny mpanjifa. Maharitra mandra-piainana ny membership maimaim-poana mandra-panovana na fanafoanana azy. Raha natao hanaraka site efa misy ilay membership email, ataovy azo antoka fa mifandray amin’ny toe-javatra site/domain izany.
+* **Mampiasà fihenam-bidy 100% na rohy checkout maimaim-poana**: avelao ny mpanjifa handalo checkout mba hamoronana ho azy ny membership email sy ny firaketana fandoavam-bola ao amin’ny Ultimate Multisite.
+* **Mamoròna mailbox amin’ny maha admin**: mandehana any amin’ny **Ultimate Multisite > Email Accounts > Add Email Account** mba hamoronana mailbox manokana any amin’ny provider ho an’ny mpanjifa. Mahasoa amin’ny fanohanana izany, saingy tsy manolo ny membership vokatra email izay mampandeha ny fitaovana self-service ao amin’ny pejin’ny account an’ny mpanjifa.
+
+Raha tianao hitantana ny mailbox-ny samirery avy amin’ny pejin’ny account ny mpanjifa, ataovy azo antoka fa manana membership email mavitrika ho an’ilay domain izy. Afaka misy ny mailbox provider noforonina tanana tsy misy io membership io, saingy mety tsy hahita ny takelaka email self-service ho azy ny mpanjifa.
+
+## Account Noforonin’ny Admin sy "Tsy Misy Laharan-kaomandy" {#admin-created-accounts-and-no-order-number}
+
+Ny pejin’ny admin **Email Accounts** dia mamorona na manova mailbox provider. Tsy izy no dingana voalohany amin’ny fivarotana na fanomezana drafitra email.
+
+Rehefa manova account email, ny saha **Membership** dia mikaroka membership Ultimate Multisite efa misy amin’ny alalan’ny laharan’ny fanondroana/kaomandy. Raha manandrana manendry account alohan’ny hananan’ny mpanjifa membership email ianao, dia mety tsy hisy laharan-kaomandy hofidiana.
+
+Ampiasao kosa ity filaharan’asa ity:
+
+1. Mamoròna na tadiavo ny membership email an’ny mpanjifa. Ho an’ny fividianana, checkout no manao izany. Ho an’ny drafitra fanomezana, mamoròna ny membership amin’ny tanana avy amin’ny [Memberships](../../user-guide/administration/managing-memberships) na alefaso amin’ny checkout maimaim-poana ny mpanjifa.
+2. Hamafiso fa mavitrika ny membership ary mampiasa vokatra Email.
+3. Hamafiso fa mifandray amin’ny domain/provider an’ilay site ny membership email.
+4. Mamoròna ny mailbox avy amin’ny pejin’ny account an’ny mpanjifa na avy amin’ny **Ultimate Multisite > Email Accounts**.
+5. Raha ilaina, ovay ny firaketana mailbox ary tendreo ny mpanjifa, membership, ary site.
+
+Raha mila mamorona mailbox provider ho an’ny mpanjifa fotsiny ianao ary tsy mila fitantanana self-service amin’ny pejin’ny account, dia mety ho ampy ny account noforonin’ny admin. Raha tianao hahita sy hitantana izany ao amin’ny Ultimate Multisite ny mpanjifa, mamoròna koa ny membership email.
+
+## Webmail SSO sy Fidirana Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO dia manome ny mpanjifa hetsika **Open webmail** mivantana avy amin’ny pejin’ny account. Rehefa tohanan’ny provider mavitrika, ny addon dia mangataka URL fidirana vetivety androm-piainana ary mamindra ny mpanjifa ho ao amin’ny webmail nefa tsy mangataka azy handika credential mailbox.
+
+Mety hiovaova ny fitondran-tenan’ny provider:
+
+* Ny provider manana API SSO teratany dia afaka mamorona session webmail voamarina mivantana.
+* Ny provider manana fanohanana magic-link dia afaka mamorona rohy fidirana voafetra fotoana.
+* Ny provider tsy manana fanohanana SSO na magic-link dia tokony mbola hampiseho ny antsipirian’ny mailbox sy ny hetsika fitantanana tenimiafina, fa tsy misy bokotra webmail tsindry tokana.
+
+Alefaso ny fidirana webmail ho an’ireo provider izay efa nanamboaranao ny API credentials ilaina ihany. Raha tsy hita ny hetsika ho an’ny provider iray, hamafiso aloha fa mavitrika, voaendrika, ary manohana rohy fidirana webmail ilay provider.
+
+## Provisioning amin’ny Checkout {#checkout-provisioning}
+
+Ny addon dia manao provisioning ny **membership context** email mandritra ny checkout. Izy io dia mirakitra ny provider, fetran’ny account, quota, ary domain an’ny site mba hahafahan’ny mpanjifa mamorona ny anaran’ny mailbox-ny avy amin’ny pejin’ny account aorian’ny fividianana.
+
+Fampiharana atolotra:
+
+1. Amboary ny provider sy ny fetran’ny vokatra alohan’ny hanolorana ny vokatra email.
+2. Andramo fividianana amin’ny vokatra staging ary hamafiso fa noforonina ny membership email.
+3. Diniho ny pejin’ny account an’ny mpanjifa mba hanamafisana fa miseho ho an’ilay domain ny widget **Email Accounts**.
+4. Mamoròna mailbox fitsapana avy amin’ilay widget.
+5. Hamafiso ny hetsika fanovana tenimiafina sy webmail alohan’ny hampandehanana ny fizotran’ny asa ho an’ny vokatra production.
+
+Raha tsy mahomby ny provisioning, dia mbola afaka misy ny account sy membership an’ny mpanjifa raha mitaky fanaraha-maso avy amin’ny administrator kosa ny membership email na mailbox provider. Jereo ny activity logs an’ny Ultimate Multisite sy ny logs an’ny provider alohan’ny hanandramana indray.
+
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
+
+Ho an’ny tambajotra tohanan’ny CyberPanel, ny kinova 1.1.0 dia manampy fanohanana email forwarder. Ampiasao ny forwarders rehefa mila adiresy toy ny `info@customer-domain.test` ny mpanjifa mba hamerenana mandefa mailaka mankany amin’ny inbox hafa nefa tsy mamorona mailbox feno.
+
+Alohan’ny hanolorana forwarders, hamafiso fa voaendrika sy azo tratrarina ny fampifandraisana CyberPanel. Jereo ny torolàlana [Fampifandraisana CyberPanel](../../user-guide/administration/cyberpanel-integration) ho an’ny host, username, password, ary package constants ilaina.
+
+## Changelog {#changelog}
+
+### Kinova 1.1.0 - Navoaka tamin’ny 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Vaovao: Webmail SSO sy fidirana magic-link — afaka miditra mivantana amin’ny webmail avy amin’ny Account-ny ny mpanjifa amin’ny fanamarinana tsindry iray.
+* Vaovao: Nampiana fiasa fanovana tenimiafina ao amin’ny widget fitantanana Account mailaka.
+* Vaovao: Fanohanana CyberPanel email forwarder.
+* Vaovao: Widget fitantanana mailaka ao amin’ny pejin’ny Account mpanjifa ho an’ny famoronana sy fitantanana Account amin’ny alalan’ny tena.
+* Vaovao: Nampidirina ao amin’ny fikorianan’ny checkout ny fanomezana zo amin’ny Account mailaka ho an’ny mpanjifa.
+* Fanitsiana: Nohavaozina ny hook widget amin’ny pejin’ny Account mba hampiasa ny lamina fisoratana UMS marina.
+* Fanitsiana: Nosoloina vanilla JS sy famoahana antontan-taratasy HTML feno marina ny endrika Create Account.
+* Fanitsiana: Mampiasa ny rafitra currents an’ny UMS ho an’ny pejin’ny Account admin izao ny widget fitantanana mailaka.
+* Fanitsiana: Ahitana saha tenimiafina ny endrika famoronana Account mailaka ho an’ny admin ary mampiasa Email_Account_Manager.
+* Fanitsiana: Nesorina tamin’ny fanombohana Email_Account_Manager ny spam log isaky ny fangatahana.
+* Nohatsaraina: Manivana izao ny pejy Settings mba hampisehoana ireo mpamatsy mailaka mavitrika sy voarindra ihany.
+
+## Fanontaniana Apetraka Matetika {#frequently-asked-questions}
+
+### Afaka mamorona Account mailaka ho azy ve ny mpanjifa? {#can-customers-create-their-own-email-accounts}
+
+Eny. Rehefa manana membership mailaka mavitrika ho an’ny sehatra iray ny mpanjifa ary mamela Account fanampiny ny vokatra, dia afaka mamorona sy mitantana ny mailbox-ny avy amin’ny pejin’ny Account ny mpanjifa.
+
+### Manohana webmail SSO daholo ve ny mpamatsy rehetra? {#does-every-provider-support-webmail-sso}
+
+Tsia. Miankina amin’ny mpamatsy mailaka mavitrika ny fanohanana SSO sy magic-link. Ireo mpamatsy tsy manana access-link API dia mbola afaka manohana famoronana mailbox sy fanovana tenimiafina.
+
+### Afaka mamorona Account mailaka ho an’ny mpanjifa ve ny mpitantana? {#can-administrators-create-email-accounts-for-customers}
+
+Eny. Afaka mamorona Account mailaka avy amin’ny interface admin ny mpitantana, anisan’izany ny fametrahana ny tenimiafina voalohany rehefa mamorona ny Account. Ho an’ny fitantanana ataon’ny mpanjifa samirery, ataovy azo antoka koa fa manana membership mailaka mavitrika ho an’ilay sehatra ny mpanjifa.
+
+### Afaka manome Account mailaka maimaim-poana ve aho? {#can-i-give-an-email-account-away-for-free}
+
+Eny. Mamoròna vokatra Email maimaim-poana/tsy misy vidiny ary ampio ho membership mavitrika ho an’ny mpanjifa izany, na avelao ny mpanjifa hamita checkout amin’ny fihenam-bidy 100%. Rehefa misy ny membership mailaka, dia afaka mamorona ny mailbox tena izy ny mpanjifa na ny mpitantana.
+
+### Nahoana no mangataka laharan-kaomandy ny fanendrena Account mailaka? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Ny saha Membership dia mikaroka membership Ultimate Multisite efa misy amin’ny alalan’ny laharana fanondroana/kaomandy. Raha tsy nividy vokatra mailaka ny mpanjifa ary tsy namorona membership mailaka tamin’ny tanana ianao, dia tsy misy membership/kaomandy mailaka hotendrena. Mamoròna aloha ny membership mailaka, avy eo mamoròna na tendreo ny mailbox.
+
+### Mitovy amin’ny mailbox ve ny forwarders? {#are-forwarders-the-same-as-mailboxes}
+
+Tsia. Ny mailbox dia mitahiry mailaka ary manana fahazoan-dalana fidirana. Ny forwarder dia mandefa mailaka mankany amin’ny adiresy hafa ary tsy manome inbox misaraka.

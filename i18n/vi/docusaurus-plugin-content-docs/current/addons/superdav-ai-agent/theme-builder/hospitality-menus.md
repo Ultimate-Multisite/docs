@@ -3,15 +3,15 @@ title: Thực đơn Khách sạn
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Ẩm Thực
+# Menu Ẩm Thực {#hospitality-menus}
 
 Tính năng **Menu Ẩm Thực** cho phép Theme Builder tạo và nhúng các trang menu đồ ăn và thức uống có cấu trúc trực tiếp vào trang WordPress của bạn.
 
-## Tổng quan
+## Tổng quan {#overview}
 
 Giờ đây, Theme Builder có thể tạo các trang menu chuyên nghiệp, có cấu trúc dành cho các doanh nghiệp dịch vụ ăn uống, bao gồm nhà hàng, quán cà phê, quán bar và dịch vụ tiệc. Các menu này được tích hợp hoàn toàn vào thiết kế của trang web và dễ dàng cập nhật cũng như quản lý.
 
-## Các Loại Hình Dịch Vụ Được Hỗ Trợ
+## Các Loại Hình Dịch Vụ Được Hỗ Trợ {#supported-hospitality-types}
 
 - **Nhà hàng** — menu ăn uống đầy đủ dịch vụ
 - **Quán cà phê** — menu cà phê và đồ ăn nhẹ
@@ -21,9 +21,9 @@ Giờ đây, Theme Builder có thể tạo các trang menu chuyên nghiệp, có
 - **Xe bán đồ ăn (Food Trucks)** — menu dịch vụ ăn uống di động
 - **Nhà sản xuất bia và rượu vang** — menu đồ uống kèm mô tả
 
-## Cấu Trúc Menu
+## Cấu Trúc Menu {#menu-structure}
 
-### Danh Mục Menu
+### Danh Mục Menu {#menu-categories}
 
 Các menu được tổ chức thành các danh mục:
 
@@ -34,7 +34,7 @@ Các menu được tổ chức thành các danh mục:
 - **Đồ uống (Beverages)** — các loại thức uống (có và không cồn)
 - **Đặc biệt (Specials)** — món đặc biệt hàng ngày hoặc theo mùa
 
-### Định Dạng Mục Menu
+### Định Dạng Mục Menu {#menu-item-format}
 
 Mỗi mục menu bao gồm:
 
@@ -49,7 +49,7 @@ Mỗi mục menu bao gồm:
 }
 ```
 
-#### Trường Thông Tin Mục
+#### Trường Thông Tin Mục {#item-fields}
 
 | Trường | Kiểu | Mô tả |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Mỗi mục menu bao gồm:
 | `allergens` | array | Các chất gây dị ứng phổ biến (Hạt, Hàu, v.v.) |
 | `availability` | string | Thời gian có sẵn (Hàng ngày, Theo mùa, v.v.) |
 
-## Tạo Menu Ẩm Thực
+## Tạo Menu Ẩm Thực {#creating-hospitality-menus}
 
-### Bước 1: Cung cấp thông tin Menu
+### Bước 1: Cung cấp thông tin Menu {#step-1-provide-menu-information}
 
 Hãy cho Theme Builder biết về menu của bạn:
 
@@ -71,7 +71,7 @@ Tạo menu nhà hàng Ý cho nhà hàng của tôi với các món khai vị,
 món pasta, món chính và món tráng miệng. Bao gồm giá và mô tả.
 ```
 
-### Bước 2: Theme Builder Tạo Menu
+### Bước 2: Theme Builder Tạo Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder sẽ:
 
@@ -81,7 +81,7 @@ Theme Builder sẽ:
 4. Định dạng giá và mô tả
 5. Thêm thông tin ăn kiêng và chất gây dị ứng
 
-### Bước 3: Xem lại và Tùy chỉnh
+### Bước 3: Xem lại và Tùy chỉnh {#step-3-review-and-customize}
 
 Bạn có thể:
 
@@ -91,9 +91,9 @@ Bạn có thể:
 4. Cập nhật mô tả và thông tin ăn kiêng
 5. Điều chỉnh kiểu dáng và bố cục
 
-## Tùy Chọn Hiển Thị Menu
+## Tùy Chọn Hiển Thị Menu {#menu-display-options}
 
-### Trang Menu Đầy Đủ
+### Trang Menu Đầy Đủ {#full-menu-page}
 
 Một trang chuyên dụng hiển thị toàn bộ menu của bạn:
 
@@ -102,7 +102,7 @@ Một trang chuyên dụng hiển thị toàn bộ menu của bạn:
 - Bố cục thân thiện với việc in ấn
 - Thiết kế đáp ứng trên thiết bị di động
 
-### Widget Menu
+### Widget Menu {#menu-widget}
 
 Nhúng các phần menu vào các trang khác:
 
@@ -111,7 +111,7 @@ Nhúng các phần menu vào các trang khác:
 - Menu đồ uống trên trang bar
 - Trưng bày món tráng miệng ở chân trang (footer)
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Tạo một menu PDF có thể tải xuống:
 
@@ -120,9 +120,9 @@ Tạo một menu PDF có thể tải xuống:
 - Bao gồm hình ảnh và mô tả
 - Dễ dàng chia sẻ và gửi qua email
 
-## Thông Tin Ăn Kiêng và Chất Gây Dị Ứng
+## Thông Tin Ăn Kiêng và Chất Gây Dị Ứng {#dietary-and-allergen-information}
 
-### Thuộc Tính Ăn Kiêng
+### Thuộc Tính Ăn Kiêng {#dietary-attributes}
 
 Đánh dấu các mục bằng thông tin ăn kiêng:
 
@@ -134,7 +134,7 @@ Tạo một menu PDF có thể tải xuống:
 - **Low-Carb** — ít carbohydrate
 - **High-Protein** — giàu protein
 
-### Cảnh Báo Chất Gây Dị Ứng
+### Cảnh Báo Chất Gây Dị Ứng {#allergen-warnings}
 
 Bao gồm các chất gây dị ứng phổ biến:
 
@@ -147,9 +147,9 @@ Bao gồm các chất gây dị ứng phổ biến:
 - **Gluten** — lúa mì và các ngũ cốc chứa gluten
 - **Sesame** — hạt và dầu mè
 
-## Quản Lý Menu
+## Quản Lý Menu {#menu-management}
 
-### Cập Nhật Giá Cả
+### Cập Nhật Giá Cả {#updating-prices}
 
 Dễ dàng cập nhật giá menu:
 
@@ -159,7 +159,7 @@ Dễ dàng cập nhật giá menu:
 4. Lưu thay đổi
 5. Thay đổi sẽ xuất hiện ngay lập tức trên trang web của bạn
 
-### Thêm Các Mục Theo Mùa
+### Thêm Các Mục Theo Mùa {#adding-seasonal-items}
 
 Tạo các biến thể menu theo mùa:
 
@@ -169,7 +169,7 @@ Tạo các biến thể menu theo mùa:
 4. Lên lịch ngày có sẵn
 5. Tự động hiển thị trong mùa
 
-### Quản Lý Các Món Đặc Biệt
+### Quản Lý Các Món Đặc Biệt {#managing-specials}
 
 Hiển thị các món đặc biệt hàng ngày hoặc hàng tuần:
 
@@ -179,7 +179,7 @@ Hiển thị các món đặc biệt hàng ngày hoặc hàng tuần:
 4. Cập nhật hàng ngày hoặc hàng tuần
 5. Lưu trữ các món đặc biệt cũ
 
-## Tích Hợp với Theme Builder
+## Tích Hợp với Theme Builder {#integration-with-theme-builder}
 
 Khi sử dụng Theme Builder cho các trang web dịch vụ ăn uống:
 
@@ -189,9 +189,9 @@ Khi sử dụng Theme Builder cho các trang web dịch vụ ăn uống:
 4. **Tối ưu hóa di động** — menu hiển thị đẹp mắt trên điện thoại
 5. **Tối ưu hóa SEO** — menu thân thiện với công cụ tìm kiếm
 
-## Thực Hành Tốt Nhất
+## Thực Hành Tốt Nhất {#best-practices}
 
-### Thiết Kế Menu
+### Thiết Kế Menu {#menu-design}
 
 - **Tổ chức rõ ràng** — cấu trúc danh mục logic
 - **Mô tả dễ đọc** — hấp dẫn và cung cấp đầy đủ thông tin
@@ -199,7 +199,7 @@ Khi sử dụng Theme Builder cho các trang web dịch vụ ăn uống:
 - **Ảnh chuyên nghiệp** — hình ảnh món ăn chất lượng cao
 - **Khoảng trắng** — không làm trang bị quá tải
 
-### Nội Dung
+### Nội Dung {#content}
 
 - **Mô tả chính xác** — mô tả các mục một cách chính xác
 - **Làm nổi bật món đặc biệt** — làm cho các món đặc biệt nổi bật
@@ -207,7 +207,7 @@ Khi sử dụng Theme Builder cho các trang web dịch vụ ăn uống:
 - **Cập nhật thường xuyên** — giữ giá và các mục luôn mới nhất
 - **Sử dụng ngôn ngữ hấp dẫn** — làm cho các món ăn nghe ngon miệng
 
-### Khả Năng Tiếp Cận
+### Khả Năng Tiếp Cận {#accessibility}
 
 - **Phông chữ dễ đọc** — sử dụng các kiểu chữ rõ ràng, dễ đọc
 - **Độ tương phản đủ** — đảm bảo văn bản dễ đọc
@@ -215,9 +215,9 @@ Khi sử dụng Theme Builder cho các trang web dịch vụ ăn uống:
 - **Cảnh báo dị ứng** — hiển thị các chất gây dị ứng một cách nổi bật
 - **Thân thiện với di động** — kiểm tra trên tất cả các thiết bị
 
-## Ví Dụ
+## Ví Dụ {#examples}
 
-### Cấu Trúc Menu Nhà Hàng
+### Cấu Trúc Menu Nhà Hàng {#restaurant-menu-structure}
 
 ```
 Khai vị
@@ -241,7 +241,7 @@ Tráng miệng
 └── Gelato Selection
 ```
 
-### Cấu Trúc Menu Quán Cà Phê
+### Cấu Trúc Menu Quán Cà Phê {#cafe-menu-structure}
 
 ```
 Cà Phê
@@ -260,7 +260,7 @@ Bánh Sandwich
 └── Vegetarian Wrap
 ```
 
-## Tính Năng Liên Quan
+## Tính Năng Liên Quan {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — tạo menu điều hướng
 - [Design Direction](./design-direction.md) — tùy chỉnh thiết kế trang web của bạn

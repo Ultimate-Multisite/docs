@@ -3,7 +3,7 @@ title: Qo'shuvlar va Filtrlashlar
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooklar va filtrlari
+# Ultimate Multisite Hooklar va filtrlari {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite juda ko'p funksiyalar va ma'lumotlar bazasi so'rovlaridan iborat. U siz mavjud funksiyalarni o'zgartirish yoki yangi kod qo'shish imkonini beradigan hooklar (qabul qiluvchilar) va filterlarga ega.
 

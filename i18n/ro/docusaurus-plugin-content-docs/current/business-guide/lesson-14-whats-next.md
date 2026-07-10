@@ -3,15 +3,15 @@ title: 'Lecția 14: Ce urmează'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lecția 14: Ce urmează
+# Lecția 14: Ce urmează {#lesson-14-what-comes-next}
 
 Ai construit o platformă de site de nișă de la zero. FitSite este activă, oferind servicii studiilor de fitness și generând venituri recurente. Această lecție finală examinează pașii pe care trebuie să îi urmezi.
 
-## Unde ne-am oprit
+## Unde ne-am oprit {#where-we-left-off}
 
 FitSite este o afacere în funcțiune, cu clienți, operațiuni și o traiectorie de creștere. Acum ne gândim la ce urmează.
 
-## Rețeaua Complete FitSite
+## Rețeaua Complete FitSite {#the-complete-fitsite-network}
 
 Iată tot ce am construit în cadrul celor 14 lecții:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opțiunea 1: Aprofundarea în Nișa ta
+## Opțiunea 1: Aprofundarea în Nișa ta {#option-1-go-deeper-in-your-niche}
 
 Înainte de a extinde în nișe noi, ia în considerare a aprofunda domeniul fitness:
 
-### Sub-Nișe
+### Sub-Nișe {#sub-niches}
 
 - **Studiile de yoga** -- șabloane specializate cu funcționalități pentru meditație, retreat-uri și workshop-uri
 - **Boxe CrossFit** -- urmărirea WOD-urilor, rezultatele competițiilor, funcționalități comunitare
@@ -59,7 +59,7 @@ FitSite Network (Complete)
 
 Fiecare sub-nișă poate avea propriile sale șabloane și potențial propriul său brand, toate funcționând pe aceeași rețea Ultimate Multisite.
 
-### Funcționalități Premium
+### Funcționalități Premium {#premium-features}
 
 Construiește funcționalități pentru care studiile de fitness vor plăti extra:
 
@@ -68,14 +68,14 @@ Construiește funcționalități pentru care studiile de fitness vor plăti extr
 - **Șabloane de blog fitness** -- structuri de conținut pre-construite pentru marketing prin conținut fitness
 - **Integrare social media** -- publicarea automată a programelor de clase și a actualizărilor
 
-### Expansiune Geografică
+### Expansiune Geografică {#geographic-expansion}
 
 Dacă ai început la nivel local, extinde în:
 
 - Alte orașe din țara ta
 - Alte țări (folosește [funcționalitățile de localizare](/user-guide/localization/translating) ale Ultimate Multisite pentru a susține mai multe limbi)
 
-## Opțiunea 2: Extinderea în Nișe Adiacente
+## Opțiunea 2: Extinderea în Nișe Adiacente {#option-2-expand-to-adjacent-niches}
 
 Procesul pe care l-ai urmat pentru studiile de fitness funcționează pentru orice nișă. A doua nișă îți este mai ușoară deoarece ai deja:
 
@@ -83,7 +83,7 @@ Procesul pe care l-ai urmat pentru studiile de fitness funcționează pentru ori
 - Experiența operațională
 - Un ghid operațional dovedit
 
-### Nișe Adiacente Fitnessului
+### Nișe Adiacente Fitnessului {#adjacent-niches-to-fitness}
 
 - **Wellness și spa** -- terapeuți masaj, spa de zi, centre wellness
 - **Cluburi sportive** -- echipe sportive amatoare, ligi, cluburi recreative
@@ -91,7 +91,7 @@ Procesul pe care l-ai urmat pentru studiile de fitness funcționează pentru ori
 
 Acestea au o suprapunere de public cu fitnessul, așa că marketingul și parteneriatele tale ar putea fi transferabile.
 
-### Nișe Complet Noue
+### Nișe Complet Noue {#completely-new-niches}
 
 Aplică cadrul din Lecția 2 pentru a evalua orice nișă:
 
@@ -108,7 +108,7 @@ Fiecare nișă nouă are nevoie de:
 
 Infrastructura platformei, facturarea și procesele operaționale rămân aceleași.
 
-## Opțiunea 3: Construirea unei Platforme de Platforme
+## Opțiunea 3: Construirea unei Platforme de Platforme {#option-3-build-a-platform-of-platforms}
 
 La scară largă, poți rula mai multe branduri de nișă pe o singură rețea Ultimate Multisite:
 
@@ -118,11 +118,11 @@ La scară largă, poți rula mai multe branduri de nișă pe o singură rețea U
 
 Fiecare brand are propriile sale șabloane, planuri și marketing, dar împărtășesc infrastructura, facturarea și procesele operaționale. Aici devine puternică economia Ultimate Multisite — o singură platformă, multe verticale.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Pentru o separare completă între nișe, ia în considerare [addon-ul Multi-Network](/addons/multinetwork), care îți permite să rulezi mai multe rețele WordPress dintr-o singură instalare.
 
-## Opțiunea 4: Vânzarea Afacerii
+## Opțiunea 4: Vânzarea Afacerii {#option-4-sell-the-business}
 
 O platformă de site de nișă cu venituri recurente, o rată de abandon scăzută și o poziție de piață clară este un activ de mare valoare. Afacerile SaaS se vând de obicei cu o valoare de 3-5 ori venitul anual.
 
@@ -134,7 +134,7 @@ Un FitSite cu 200 de clienți la un ARPU de $89:
 
 Acesta nu este un rezultat garantat, dar este unul realist pentru o platformă de nișă bine gestionată.
 
-## Ce ai învățat
+## Ce ai învățat {#what-you-have-learned}
 
 Acest curs ți-a învățat un proces repetabil:
 
@@ -150,7 +150,7 @@ Acest curs ți-a învățat un proces repetabil:
 
 Nișa este strategia. Platforma este instrumentul. Ultimate Multisite face instrumentul posibil. Înțelegerea ta a nișei îi conferă valoare.
 
-## Începe să Construiești
+## Începe să Construiești {#start-building}
 
 Dacă ai urmărit cu FitSite, ai o platformă funcțională. Dacă ai citit până aici pentru a-ți găsi propria nișă, revino la [Lecția 2: Alegerea Nișei Tale](lesson-2-picking-your-niche) și începe procesul pentru verticala aleasă.
 

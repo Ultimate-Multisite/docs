@@ -3,7 +3,7 @@ title: تاریخچه تغییرات Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# تغییرات لاگ Captcha
+# تغییرات لاگ Captcha {#captcha-changelog}
 
 نسخه: 1.5.0 - تاریخ انتشار: 2026-05-22
 * جدید: محدودکننده نرخ (Rate Limiter) با توقف سخت — هر درخواست GET و POST را که روی صفحات محافظت شده توسط Captcha (wp-login / register / lost-password / comments، WooCommerce my-account / checkout / pay-for-order، Ultimate Multisite checkout / inline-login) رخ می‌دهد، شمارش می‌کند و با کد وضعیت HTTP 429، یک هدر `Retry-After`، و یک خواباندن تصادفی (tarpit sleep) (۱ تا ۵ ثانیه، با سقف ۱5 ثانیه) پاسخ می‌دهد.

@@ -3,13 +3,13 @@ title: Kutanthauza Kukhala kwa Sunrise Constant ku Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Kufufu kwa kutuma constant ya Sunrise iwe true ku Closte
+# Kufufu kwa kutuma constant ya Sunrise iwe true ku Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Mwanzo, wengine wa host wamefungua wp-config.php kwa sababu za usalama. Hii inamaanisha Ultimate Multisite haikubali kurekebisha faili hili kiotomatiki ili kuongeza constants zinazohitajika ili kupata mapping ya domain na vipengele vingine kufanya kazi. Closte ni mmoja kati ya host hizo.
 
 Hata hivyo, Closte inatoa njia ya kuongeza constants kwenye wp-config.php kwa njia salama. Unahitaji tu kufuata hatua hizi:
 
-## Kwenye dashboard ya Closte
+## Kwenye dashboard ya Closte {#on-the-closte-dashboard}
 
 Kwanza, [ingia kwenye akaunti yako ya Closte](https://app.closte.com/), bonyeza menu ya Sites, kisha bonyeza link ya Dashboard kwenye tovuti unayofanya kazi nayo:
 

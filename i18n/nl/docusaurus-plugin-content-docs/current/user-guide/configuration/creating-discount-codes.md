@@ -1,100 +1,106 @@
 ---
-title: Kortingscodes maken
+title: Kortingscodes aanmaken
 sidebar_position: 19
-_i18n_hash: 3c7a42fff1710e14a95a32365f893dc3
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creëren van Kortingscodes (v2)
+# Kortingscodes aanmaken (v2) {#creating-discount-codes-v2}
 
-_**BELANGRIJK NOTITIE: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Met Ultimate Multisite kun je kortingscodes maken om je klanten kortingen te geven op hun abonnementen. En ze maken is eenvoudig!
+Met Ultimate Multisite kun je kortingscodes aanmaken om je klanten korting te geven op hun abonnementen. En ze aanmaken is eenvoudig!
 
-## Kortingscodes maken en bewerken
+## Kortingscodes aanmaken en bewerken {#creating-and-editing-discount-codes}
 
-Om een kortingscode te maken of te bewerken, ga naar **Ultimate Multisite > Discount Codes**.
+Om een kortingscode aan te maken of te bewerken, ga je naar **Ultimate Multisite > Kortingscodes**.
 
-![](/img/config/discount-codes-list.png)
+![Lijst met kortingscodes — lege staat voordat er codes bestaan](/img/config/discount-codes-empty.png)
 
-Daar heb je een lijst van de kortingscodes die je al hebt gemaakt.
+Daar zie je een lijst met de kortingscodes die je al hebt aangemaakt.
 
-Je kunt op **Add Discount** **Code** klikken om een nieuwe coupon te maken of je kunt de bestaande bewerken door erover te zweven en op **Edit** te klikken.
+Je kunt op **Kortingscode** **toevoegen** klikken om een nieuwe coupon aan te maken, of je kunt de codes die je hebt bewerken door er met de muis overheen te gaan en op **Bewerken** te klikken.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![Lijst met kortingscodes met hover-acties die links voor Bewerken en Verwijderen tonen](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![Knop Kortingscode toevoegen in de paginakop](/img/config/discount-codes-add-button.png)
 
-Je wordt doorgestuurd naar de pagina waar je je kortingscode maakt of bewerkt. In dit voorbeeld maken we er een nieuwe.
+Je wordt doorgestuurd naar de pagina waar je je couponcode aanmaakt of bewerkt. In dit voorbeeld maken we een nieuwe aan.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![Bewerkpagina voor kortingscode met alle secties zichtbaar](/img/config/discount-code-edit.png)
 
-Laten we de beschikbare instellingen bekijken:
+Laten we kijken naar de instellingen die hier beschikbaar zijn:
 
-**Enter Discount Code:** Dit is alleen de naam van je kortingscode. Dit is niet de code die je klanten moeten gebruiken op het afrekenformulier.
+**Voer kortingscode in:** Dit is alleen de naam van je kortingscode. Dit is niet de code die je klanten op het checkout-formulier moeten gebruiken.
 
-**Description:** Hier kun je kort beschrijven waarvoor deze coupon bedoeld is.
+**Beschrijving:** Hier kun je kort beschrijven waarvoor deze coupon bedoeld is.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![Velden voor naam en beschrijving van kortingscode bovenaan de bewerkpagina](/img/config/discount-code-description.png)
 
-**Coupon code:** Hier definieer je de code die je klanten moeten invoeren tijdens het afrekenen.
+Je kunt de kortingscode ook als actief of inactief bekijken:
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![Actieve status van kortingscode](/img/config/discount-code-active.png)
 
-**Discount:** Hier kun je een **percentage** of een **vast bedrag** instellen voor je kortingscode.
+**Couponcode:** Hier definieer je de code die je klanten tijdens de checkout moeten invoeren.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![Couponcodeveld waar klanten de code invoeren bij checkout](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Als deze optie uitgeschakeld is, wordt deze kortingscode alleen toegepast op de **eerste betaling**. Alle andere betalingen krijgen geen korting. Als deze optie ingeschakeld is, is de kortingscode geldig voor alle toekomstige betalingen.
+**Korting:** Hier kun je voor je kortingscode een **percentage** of een **vast bedrag** instellen.
 
-**Setup fee discount:** Als deze optie uitgeschakeld is, geeft de couponcode **geen korting op de installatiekosten** van de bestelling. Als deze optie ingeschakeld is, kun je de korting (percentage of vast bedrag) instellen die deze couponcode toepast op de installatiekosten van je plannen.
+![Instelling voor kortingsbedrag met keuzelijst voor percentage of vast bedrag](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**Toepassen op verlengingen:** Als deze optie is uitgeschakeld, wordt deze kortingscode alleen toegepast op de **eerste betaling**. Alle andere betalingen krijgen geen korting. Als deze optie is ingeschakeld, is de kortingscode geldig voor alle toekomstige betalingen.
 
-**Active:** Schakel deze kortingscode handmatig in of uit.
+**Korting op installatiekosten:** Als deze optie is uitgeschakeld, geeft de couponcode **geen korting op de installatiekosten** van de bestelling. Als deze optie is ingeschakeld, kun je de korting (percentage of vast bedrag) instellen die deze couponcode toepast op de installatiekosten van je abonnementen.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![Schakelopties voor toepassen op verlengingen en korting op installatiekosten](/img/config/discount-code-renewals.png)
 
-Onder **Advanced Options** hebben we de volgende instellingen:
+**Actief:** Activeer of deactiveer deze couponcode handmatig.
 
-**Limit uses:**
+![Schakelaar Actief om de kortingscode handmatig in of uit te schakelen](/img/config/discount-code-active.png)
 
-  * **Uses:** Hier zie je hoe vaak de kortingscode is gebruikt.
+Onder **Geavanceerde opties** hebben we de volgende instellingen:
 
-  * **Max uses:** Dit beperkt het aantal keren dat gebruikers deze kortingscode kunnen gebruiken. Als je bijvoorbeeld 10 invoert, kan de coupon slechts 10 keer worden gebruikt. Na deze limiet kan de kortingscode niet meer worden gebruikt.
+![Geavanceerde opties voor kortingscode](/img/config/discount-code-advanced.png)
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+**Gebruik beperken:**
 
-**Start & expiration dates:** Hier kun je een startdatum en/of een vervaldatum toevoegen aan je coupon.
+  * **Gebruik:** Hier kun je zien hoe vaak de kortingscode is gebruikt.
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+  * **Maximaal gebruik:** Dit beperkt het aantal keren dat gebruikers deze kortingscode kunnen gebruiken. Als je hier bijvoorbeeld 10 invult, kan de coupon slechts 10 keer worden gebruikt. Na deze limiet kan de couponcode niet meer worden gebruikt.
 
-**Limit products:** Als je **Select products** inschakelt, worden al je producten getoond. Je kunt handmatig selecteren (door aan of uit te schakelen) welke producten deze kortingscode kunnen accepteren. Producten die hier uitgeschakeld zijn, tonen geen wijziging als je klanten proberen deze kortingscode op die producten toe te passen.
+![Instelling Gebruik beperken met huidig aantal keren gebruikt en veld voor maximaal gebruik](/img/config/discount-code-limit-uses.png)
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+**Start- en vervaldatums:** Hier heb je de optie om een startdatum en/of een vervaldatum aan je coupon toe te voegen.
 
-Na het instellen van al deze opties, klik op **Save Discount Code** om je coupon op te slaan en klaar!
+![Velden voor start- en vervaldatum om de kortingscode te plannen](/img/config/discount-code-dates.png)
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+**Producten beperken:** Als je **Producten selecteren** inschakelt, worden al je producten aan je getoond. Je hebt de optie om handmatig te selecteren (door in of uit te schakelen) welk product deze couponcode kan accepteren. Producten die hier zijn uitgeschakeld, tonen geen wijziging als je klanten deze couponcode voor die producten proberen te gebruiken.
 
-De coupon staat nu in je lijst en daar kun je op **edit or delete** klikken.
+![Sectie Producten beperken met schakelaars per product](/img/config/discount-code-limit-products.png)
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+Nadat je al deze opties hebt ingesteld, klik je op **Kortingscode opslaan** om je coupon op te slaan en dan is het klaar!
 
-### 
+![Knop Kortingscode opslaan onderaan de bewerkpagina](/img/config/discount-code-save.png)
 
-### URL-parameters gebruiken:
+De coupon staat nu in je lijst en van daaruit kun je erop klikken om deze te **bewerken of verwijderen**.
 
-Wil je je prijstabellen aanpassen of een mooie kortingscodepagina voor je website bouwen en automatisch een kortingscode toepassen op je afrekenformulier, dan kun je dit doen via URL-parameters.
+![Rij met kortingscode in de lijst met hover-acties Bewerken en Verwijderen](/img/config/discount-codes-list-hover.png)
 
-Allereerst moet je de deelbare link voor je plan verkrijgen. Ga hiervoor naar **Ultimate Multisite > Products** en selecteer een plan.
+###
 
-Klik op de knop **Click to Copy Shareable Link**. Hiermee krijg je de deelbare link naar dit specifieke plan. In ons geval was de deelbare link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_.
+### URL-parameters gebruiken: {#using-url-parameters}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Als je je prijstabellen wilt aanpassen of een mooie couponcodepagina voor je website wilt maken en automatisch een kortingscode op je checkout-formulier wilt toepassen, kun je dit doen via URL-parameters.
 
-Om je kortingscode op dit specifieke plan toe te passen, voeg je gewoon de parameter **?discount_code=XXX** toe aan de URL. Waarbij **XXX** de kortingscode is.
+Eerst moet je de deelbare link voor je abonnement ophalen. Ga hiervoor naar **Ultimate Multisite > Producten** en selecteer een abonnement.
 
-In dit voorbeeld passen we de kortingscode **50OFF** toe op dit specifieke product.
+Klik op de knop **Klik om deelbare link te kopiëren**. Dit geeft je de deelbare link naar dit specifieke abonnement. In ons geval was de gegeven deelbare link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
-De URL voor dit specifieke plan en met de 50OFF kortingscode toegepast ziet er als volgt uit: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+![Productpagina met knop voor deelbare link](/img/config/products-list.png)
+
+Om je kortingscode op dit specifieke abonnement toe te passen, voeg je gewoon de parameter **?discount_code=XXX** toe aan de URL. Waarbij **XXX** de couponcode is.
+
+In ons voorbeeld hier passen we de couponcode **50OFF** toe op dit specifieke product.
+
+De URL voor dit specifieke abonnement met de 50OFF-kortingscode toegepast ziet er zo uit: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
 ###

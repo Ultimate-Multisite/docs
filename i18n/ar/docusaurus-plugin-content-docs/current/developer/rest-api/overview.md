@@ -1,44 +1,44 @@
 ---
 title: نظرة عامة على REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# مرجع واجهة برمجة التطبيقات
+# مرجع REST API {#rest-api-reference}
 
-## التكوين الأساسي
+## الإعداد الأساسي {#base-configuration}
 
-**URL الأساسي:** `{site_url}/wp-json/wu/v2/`  
-**المصادقة:** مفتاح API & سري (المصادقة الأساسية HTTP أو معلمات URL)
+**Base URL:** `{site_url}/wp-json/wu/v2/`
+**المصادقة:** مفتاح API والسر (HTTP Basic Auth أو معاملات URL)
 
-## المصادقة
+## المصادقة {#authentication}
 
-### تمكين واجهة برمجة التطبيقات
+### تفعيل API {#enable-api}
 ```php
-// تمكين واجهة برمجة التطبيقات في إعدادات Ultimate Multisite أو برمجياً
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### الحصول على بيانات اعتماد واجهة برمجة التطبيقات
+### الحصول على بيانات اعتماد API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### طرق المصادقة
+### طرق المصادقة {#authentication-methods}
 
-**المصادقة الأساسية HTTP (مستحسن):**
+**HTTP Basic Auth (موصى به):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**معلمات URL:**
+**معاملات URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## نقاط النهاية الأساسية
+## نقاط النهاية الأساسية {#core-endpoints}
 
-### 1. واجهة برمجة التطبيقات للعملاء
+### 1. API العملاء {#1-customers-api}
 
 **المسار الأساسي:** `/customers`
 
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. واجهة برمجة التطبيقات للمواقع
+### 2. API المواقع {#2-sites-api}
 
 **المسار الأساسي:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. واجهة برمجة التطبيقات للأعضاء
+### 3. API العضويات {#3-memberships-api}
 
 **المسار الأساسي:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. واجهة برمجة التطبيقات للمنتجات
+### 4. API المنتجات {#4-products-api}
 
 **المسار الأساسي:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. واجهة برمجة التطبيقات للمدفوعات
+### 5. API المدفوعات {#5-payments-api}
 
 **المسار الأساسي:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. واجهة برمجة التطبيقات للنطاقات
+### 6. API النطاقات {#6-domains-api}
 
 **المسار الأساسي:** `/domains`
 
@@ -167,9 +167,10 @@ Content-Type: application/json
 }
 ```
 
-## نقطة النهاية للتسجيل
+## نقطة نهاية التسجيل {#registration-endpoint}
 
-توفر نقطة النهاية `/register` تدفقًا كاملًا للشراء/التسجيل:
+توفر نقطة النهاية `/register` تدفق دفع/تسجيل كاملًا:
+
 ```http
 POST /wu/v2/register
 Content-Type: application/json
@@ -208,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## استجابات الأخطاء
+## نقاط نهاية المستأجر السيادي {#sovereign-tenant-endpoints}
+
+يضيف Ultimate Multisite: Multi-Tenancy 1.2.0 تغطية REST للمستأجر السيادي للتكاملات التي تنشئ مستأجرين معزولين أو تفحصهم أو تتحقق منهم.
+
+تعتمد حمولة الطلب الدقيقة على قدرة المضيف المفعّلة، لكن ينبغي أن تتوقع التكاملات مجموعات نقاط النهاية هذه:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+استخدم نقطة نهاية bootstrap لتحضير سجل المستأجر وقاعدة البيانات ونظام الملفات وحالة التوجيه. استخدم نقاط نهاية حالة الترحيل والتحقق قبل تحويل حركة مرور الإنتاج. استخدم نقطة نهاية الحذف للتفكيك السيادي بحيث تتم إزالة بيانات اعتماد قاعدة البيانات عبر تدفق تنظيف الإضافة.
+
+تتضمن استجابات حالة الترحيل النموذجية ما يلي:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+تعامل مع `ready: false` كمانع قبل الإطلاق. تحقق من تفاصيل التحقق، وأصلح ربط مضيف قاعدة البيانات أو قائمة الانتظار أو توفير المستخدمين أو مشكلة التوجيه، ثم أعد محاولة التحقق.
+
+## استجابات الأخطاء {#error-responses}
 
 ```json
 {
@@ -223,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## الترقيم والتصفية
+## ترقيم الصفحات والتصفية {#pagination-and-filtering}
 
-**معلمات الاستعلام:**
+**معاملات الاستعلام:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-المعلمات الشائعة:
-- `per_page` - عدد العناصر لكل صفحة (الافتراضي: 20، الحد الأقصى: 100)
+المعاملات الشائعة:
+- `per_page` - العناصر لكل صفحة (الافتراضي: 20، الحد الأقصى: 100)
 - `page` - رقم الصفحة
 - `search` - مصطلح البحث
-- `orderby` - حقل الترتيب
-- `order` - اتجاه الترتيب (تصاعدي/تنازلي)
-- `status` - تصفية حسب الحالة
-- `date_created` - تصفية حسب نطاق التاريخ
+- `orderby` - حقل الفرز
+- `order` - اتجاه الفرز (asc/desc)
+- `status` - التصفية حسب الحالة
+- `date_created` - التصفية حسب نطاق التاريخ

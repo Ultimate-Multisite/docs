@@ -4,22 +4,22 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types
+# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 Bu filtre, bir alan otomatik olarak gönderilebiliyorsa (auto-submittable) doğrulama kontrolünü atlamasına izin verir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $submittable_field_types | `array` | Alan tiplerinin listesi. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) dosyasında 92. satırda tanımlanmıştır.
 
 
-## Returns
+## Returns {#returns}

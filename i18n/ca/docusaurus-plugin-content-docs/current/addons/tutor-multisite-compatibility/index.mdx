@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Compatibilitat de Tutor Multisite
+# Compatibilitat de Tutor Multisite {#tutor-multisite-compatibility}
 
 Un plugin de WordPress que afegeix correccions de compatibilitat per a Tutor LMS en entorns multisite.
 
-## Descripció
+## Descripció {#description}
 
 Aquest plugin ofereix correccions essencials de compatibilitat per executar Tutor LMS en xarxes multisite de WordPress. Gestiona l'inscripció d'usuàri, la gestió d'instructors, les limitacions de cursos i altra funcionalitat específica de multisite.
 
-## Funcionalitats
+## Funcionalitats {#features}
 
 - **Gestió de taules de base de dades**: Detecta i crea automàticament les taules faltants de Tutor LMS que fallen a causa de les restriccions de clau externa (foreign key) de multisite.
 - **Inscripció d'usuàri en multisite**: Gestors AJAX personalitzats per gestionar l'inscripció d'usuàri en diversos sites de la xarxa.
@@ -24,7 +24,7 @@ Aquest plugin ofereix correccions essencials de compatibilitat per executar Tuto
 - **Vistes d'administració personalitzades**: Interfície de gestió i llista d'instructors consciente de multisite.
 - **Utilitaris d'administració**: Interfície de gestió de la base de dades per als administradors de la xarxa i del site.
 
-## Requisits
+## Requisits {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Aquest plugin ofereix correccions essencials de compatibilitat per executar Tuto
 - Instal·lació de WordPress Multisite
 - Plugin Ultimate Multisite (per la funcionalitat de limitacions de cursos)
 
-## Instal·lació
+## Instal·lació {#installation}
 
 1. Carrega els fitxers del plugin a `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Assegura't que Tutor LMS està instal·lat i activat
 3. Activa el plugin des del menú 'Plugins' de WordPress
 4. El plugin s'integrarà automàticament amb Tutor LMS
 
-## Estructura de fitxers
+## Estructura de fitxers {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funcionalitat traslladada del plugin MU
+## Funcionalitat traslladada del plugin MU {#functionality-moved-from-mu-plugin}
 
 Aquest plugin conté funcionalitat que estava prèviament en `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Aquest plugin conté funcionalitat que estava prèviament en `wp-content/mu-plug
 - Gestió d'inscripció d'usuàri multisite
 - Afichage de l'ID del producte de cursos
 
-## Gestió de la base de dades
+## Gestió de la base de dades {#database-management}
 
-### El problema
+### El problema {#the-problem}
 
 En entorns multisite de WordPress, la creació de taules de Tutor LMS falla per a les taules amb restriccions de clau externa (foreign key) a la taula d'usuàri. Això succeeix perquè:
 
@@ -81,7 +81,7 @@ En entorns multisite de WordPress, la creació de taules de Tutor LMS falla per 
 - Les clau externes refereixen a `wp_2_users` (que no existeix)
 - La taula real d'usuàri és `wp_users` (compartida a tota la xarxa)
 
-### La solució
+### La solució {#the-solution}
 
 Aquest plugin ho fa automàticament:
 
@@ -92,13 +92,13 @@ Aquest plugin ho fa automàticament:
    - Creació de nous sites en la xarxa
    - Comprovació manual de taules a través de l'interfície d'administració
 
-### Taules afectades
+### Taules afectades {#affected-tables}
 
 - `tutor_coupon_usages` - Conté clau externa a la taula d'usuàri
 - `tutor_carts` - Conté clau externa a la taula d'usuàri
 - `tutor_notification_preferences` - Taula de TutorPro amb clau externa a la taula d'usuàri
 
-### Interfície d'administració
+### Interfície d'administració {#admin-interface}
 
 Accedeu als eines de gestió de la base de dades a:
 
@@ -111,6 +111,6 @@ L'interfície us permet:
 - Comprovar la configuració de la base de dades
 - Veure informació d'estat detallada
 
-## Suport
+## Suport {#support}
 
 Aquest plugin està dissenyat específicament per a la plataforma KursoPro. Per a suport tècnic, contactegeu amb l'equip de desenvolupament.

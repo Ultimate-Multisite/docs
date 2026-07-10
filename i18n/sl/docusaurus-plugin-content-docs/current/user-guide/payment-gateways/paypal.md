@@ -3,7 +3,7 @@ title: Nastavitve PayPal-a
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Uporaba PayPal vgateya (v2)
+# Uporaba PayPal vgateya (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**POMEMBNO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 
@@ -13,13 +13,13 @@ Kot je tudi pri Stripeu, PayPal je široko uporabljen za spletne plačbe, zlasti
 
 Opazite, da potrebujete **PayPal poslovno račun** (PayPal Business account), da bi dobili API podatke, ki jih potrebuje za to integracijo.
 
-## Omogočanje Paypala na vašem omrežju
+## Omogočanje Paypala na vašem omrežju {#enabling-paypal-on-your-network}
 
 Da bi omogočili PayPal kot možnost plačanja na vašem omrežju, gre do **Ultimate Multisite > Settings > Payments** in označite polje ob strani PayPal.
 
 ![Omogočanje Paypala v aktivnih plačilnih vgatevah](/img/config/settings-payment-gateways.png)
 
-## Uporaba vodnega asistenta za nastavitve (guided setup wizard)
+## Uporaba vodnega asistenta za nastavitve (guided setup wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 dodaja vodni asistent za nastavitve Paypala v nastavitve plačilne vgateve. Po tem ko aktivirate Paypala, uporabite vodni asistent na **Ultimate Multisite > Settings > Payments**, da izberete kako želite povezati vgatevijo in potrdite, kakšne podatke še potrebujejo pred shranjevanjem.
 
@@ -30,7 +30,7 @@ Asistent podpira dve načini nastavitve:
 
 Če ne vidite možnosti OAuth v wizardu, dokončajte postopek ručne vnosov podatkov za identiteto na spodaj. Gateway deluje z tistimi sličnimi PayPal Business API podatki kot pri prejšnjih verzij Ultimate Multisite 2.x.
 
-## Dobavo PayPal API podatkov za identiteto
+## Dobavo PayPal API podatkov za identiteto {#getting-the-paypal-api-credentials}
 
 Ko je PayPal aktiv, potrebujete, da vnesete polja za PayPal API **Username**, PayPal API **Password** in PayPal API **Signature**.
 

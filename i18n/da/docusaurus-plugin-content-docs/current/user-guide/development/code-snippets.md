@@ -3,7 +3,7 @@ title: Kodeudsnit
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodeudsnip til v2
+# Kodeudsnip til v2 {#code-snippets-for-v2}
 
 Grundlæggende bruges kodeudsnit til **WordPress** til at udføre bestemte handlinger, som ellers må kræve en dedikeret mindre plugin. Sådan kode placeres i et af WordPress kernefiler eller temaets `functions.php` fil (generelt), eller den kan bruges som en MU plugin.
 
@@ -15,7 +15,7 @@ I denne artikel viser vi tre kodeudsnit, der kan bruges med **Ultimate Multisite
 
   * [**Løsning af CORS-problemer med Font-Icons på kortlagte domæner**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ændring af placeringen af Account menu-elementet
+## Ændring af placeringen af Account menu-elementet {#changing-the-position-of-the-account-menu-item}
 
 For at ændre placeringen af Account menu-elementet på din clients Dashboard, skal du blot tilføje følgende kodeudsnit til `functions.php` i temaet for din hovedside. Du kan også indsætte udskriften inde i en af dine mu-plugins eller custom plugins.
 
@@ -23,7 +23,7 @@ For at ændre placeringen af Account menu-elementet på din clients Dashboard, s
 add_filter('wu_my_account_menu_position', function() { return 10; // Juster denne værdi for at placere menuen på den ønskede position.
 ```
 
-## Hvordan man tjekker, om brugeren er under en given plan og/eller har et aktivt abonnement
+## Hvordan man tjekker, om brugeren er under en given plan og/eller har et aktivt abonnement {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Som netværksadministrator kan du skulle oprette custom functions, der udfører basale handlinger eller gør en service/funktion tilgængelig for en udvalgt gruppe abonnenter eller slutbrugere, baseret på status for deres abonnement og den plan, de er tilmeldt.
 
@@ -54,8 +54,8 @@ Bemærk, at brugere kun kan abonnere på en **Plan**, ikke et Paket eller en Ser
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Løsning af CORS-problemer med Font-Icons i kortlagte domæner
-## Løsning af CORS-problemer med Font-Icons i kortlagte domæner
+## Løsning af CORS-problemer med Font-Icons i kortlagte domæner {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Løsning af CORS-problemer med Font-Icons i kortlagte domæner {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Efter du har kortlagt en domæne til et undersite kan du opdage, at siden har problemer med at indlæse brugerdefinerede skrifttyper. Det skyldes en krydsdomæneblokering i dine serverindstillinger.
 
@@ -63,13 +63,13 @@ Da skrifttilfældet næsten altid indlæses direkte fra CSS, er vores domæne-ma
 
 Her er kodeudsnit til at løse problemet for Apache og NGINX. Disse ændringer kræver avanceret viden om serverkonfigurationsfiler (.htaccess filer og NGINX konfigurationsfiler). Hvis du ikke er komfortabel med selv at foretage disse ændringer, send denne side til din hostingsudbyders supportagenter, hvis du har brug for hjælp.
 
-### Apache
+### Apache {#apache}
 
 Til din .htaccess fil skal du tilføje:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 I din serverkonfigurationsfil (placeringen varierer fra server til server) skal du tilføje:
 

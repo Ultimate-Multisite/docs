@@ -1,0 +1,194 @@
+---
+title: Hooks යොමුව
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks යොමුව {#hooks-reference}
+
+Ultimate Multisite හි සියලු **ක්‍රියා 59** සහ **පෙරහන් 118** සඳහා ස්වයංක්‍රීයව ජනනය කළ ලේඛන.
+
+## ක්‍රියා {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — සත්‍යාපන යළි-යොමු කිරීමට පෙර ක්‍රියාත්මක වේ.
+- [set_auth_cookie](./Actions/set_auth_cookie) — සත්‍යාපන cookie එක සකසීමට කෙලින්ම පෙර ක්‍රියාත්මක වේ.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — පුරනය වූ සත්‍යාපන cookie එක සකසීමට කෙලින්ම පෙර ක්‍රියාත්මක වේ.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — wp plugins හරහා සංවර්ධකයන්ට තමන්ගේම සත්කාරක සැපයුම්කරු ඒකාබද්ධ කිරීම් එක් කිරීමට ඉඩ දෙයි.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — සියලු පරායත්තතා පූරණය වූ විට ප්‍රේරණය වේ
+- [wu_activation](./Actions/wu_activation) — සක්‍රිය කිරීම සඳහා plugin හි අනෙකුත් කොටස්වලට තම ක්‍රමවේද සම්බන්ධ කිරීමට ඉඩ දෙයි
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — පරිශීලකයෙකු හෝ super admin කෙනෙකු අඩවි අච්චුව මාරු කළ පසු plugin සංවර්ධකයන්ට functions hook කිරීමට ඉඩ දෙයි
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — සමහර අවස්ථාවල, ක්‍රියා හැසිරවීමට අමතර බලයක් පූරණය කළ යුතු වේ.
+- [wu_before_search_models](./Actions/wu_before_search_models) — සෙවීම් ඉල්ලීම සැකසීමට පෙර ක්‍රියාත්මක වේ.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — සංවර්ධකයන්ට checkout object එකට අමතර වෙනස්කම් කිරීමට ඉඩ දෙයි.
+- [wu_cart_setup](./Actions/wu_cart_setup) — සංවර්ධකයන්ට checkout object එකට අමතර වෙනස්කම් කිරීමට ඉඩ දෙයි.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form එකට field එකක් එක් කිරීමට පෙර ක්‍රියාත්මක වේ.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — සංවර්ධකයන්ට අමතර hooks ප්‍රේරණය කිරීමට ඉඩ දෙයි.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout සැකසීමට පෙර.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order එක සම්පූර්ණයෙන් එකලස් කළ පසු ක්‍රියාත්මක වේ.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin සංවර්ධකයන්ට Network Dashboard Panel වෙත widgets එක් කිරීමට ඉඩ දෙයි.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin සංවර්ධකයන්ට Network Dashboard Panel වෙත widgets එක් කිරීමට ඉඩ දෙයි.
+- [wu_deactivation](./Actions/wu_deactivation) — අක්‍රිය කිරීම සඳහා plugin හි අනෙකුත් කොටස්වලට තම ක්‍රමවේද සම්බන්ධ කිරීමට ඉඩ දෙයි
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — මකාදැමීමේ ක්‍රියාවලියට ක්‍රියා එක් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — domain එකක් අඩවියකට ප්‍රධාන domain එක වන විට ක්‍රියාත්මක වේ.
+- [wu_domain_created](./Actions/wu_domain_created) — නව domain mapping එකක් එක් කළ විට ප්‍රේරණය වේ.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — අපගේ මූලික Domain Mapping පූරණය වූ පසු ක්‍රියාත්මක විය
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — සමහර plugins, mapping එක සක්‍රිය වීමට පෙර URL සුරකිනු ඇත, හෝ ඇතුළත් නොවන වෙනත් ආකාරයකින් URLs ගොඩනගනු ඇත
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — අඩවියක් පිටපත් කිරීම සිදු වූ පසු සංවර්ධකයන්ට hook කිරීමට ඉඩ දෙයි.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin සංවර්ධකයන්ට අමතර hooks එක් කිරීමට ඉඩ දෙයි
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — අමතර පිරිසිදු කිරීමට hook එක
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — නව domain modal එක එක් කිරීමේ ඉල්ලීම හැසිරවීමට පෙර ක්‍රියාත්මක වේ.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — අවශ්‍ය නම් වෙනස් ආකාරවලින් meta data සුරැකීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — අවශ්‍ය නම් වෙනස් ආකාරවලින් පරිශීලක meta data සුරැකීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — වලංගු නොවන magic link token එකක් හමු වූ විට ක්‍රියාත්මක වේ.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link හරහා පරිශීලකයෙකු පුරනය වූ පසු ක්‍රියාත්මක වේ.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer එක එක් කළ විට plugin සංවර්ධකයන්ට අමතර දේ කිරීමට ඉඩ දෙයි.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — entity එකක් සඳහා MCP හැකියාවන් ලියාපදිංචි කළ පසු ක්‍රියාත්මක වේ.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter එක ආරම්භ කළ පසු ක්‍රියාත්මක වේ.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership එක අවලංගු කළ පසු ප්‍රේරණය වේ.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership අලුත් කිරීමෙන් පසු ප්‍රේරණය වේ.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership එක අවලංගු කිරීමට පෙර ප්‍රේරණය වේ.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership අලුත් කිරීමට පෙර ප්‍රේරණය වේ.
+- [wu_model_post_save](./Actions/wu_model_post_save) — object එකක් database එකට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
+- [wu_page_added](./Actions/wu_page_added) — pages ලියාපදිංචි කළ විට plugin සංවර්ධකයන්ට අමතර දේ ධාවනය කිරීමට ඉඩ දෙයි.
+- [wu_page_after_render](./Actions/wu_page_after_render) — අපි page එක මුද්‍රණය කළ පසු plugin සංවර්ධකයන්ට අමතර අන්තර්ගතය එක් කිරීමට ඉඩ දෙයි
+- [wu_page_before_render](./Actions/wu_page_before_render) — අපි page එක මුද්‍රණය කිරීමට පෙර plugin සංවර්ධකයන්ට අමතර අන්තර්ගතය එක් කිරීමට ඉඩ දෙයි.
+- [wu_page_load](./Actions/wu_page_load) — අපගේ pages වෙත අමතර hooks එක් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — අපි page එක මුද්‍රණය කළ පසු plugin සංවර්ධකයන්ට අමතර අන්තර්ගතය එක් කිරීමට ඉඩ දෙයි
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — අපි page එක මුද්‍රණය කිරීමට පෙර plugin සංවර්ධකයන්ට අමතර අන්තර්ගතය එක් කිරීමට ඉඩ දෙයි.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — අපගේ pages වෙත අමතර hooks එක් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — මෙම පිටුව සඳහා widgets ලියාපදිංචි කළ පසු ක්‍රියාත්මක වේ.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons වෙත integrations සඳහා capability modules අමුණීමට ඉඩ දෙමින් ක්‍රියාත්මක වේ.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations තමන්ම ලියාපදිංචි කිරීමට ඉඩ දෙමින් ක්‍රියාත්මක වේ.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — අමතර routes ලියාපදිංචි කිරීමට ඉඩ දෙයි.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin සංවර්ධකයන්ට සුරැකීමේ ක්‍රියාවලියට actions එක් කිරීමට ඉඩ දෙයි
+- [wu_site_created](./Actions/wu_site_created) — site එකක් පළමු වරට සාදන ලද පසු ක්‍රියාත්මක වේ.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — අවශ්‍ය නම්, plugin සංවර්ධකයන්ට අමතර hooks එක් කිරීමට ඉඩ දෙයි.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer සන්දර්භය තුළ සිටින විට ක්‍රියාත්මක වේ.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook එක ක්‍රියාත්මක කරයි.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — object එකක් database එකට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — object එකක් database එකට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object එකක් database එකට ගබඩා කළ පසු ක්‍රියාත්මක වේ.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin සංවර්ධකයන්ට අගුළු හැරීමේ ක්‍රියාවලියට actions එක් කිරීමට ඉඩ දෙයි.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — සත්‍යාපන cookie කල් ඉකුත් වීමේ කාලපරාසයේ දිග පෙරහන් කරයි.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — සත්‍යාපන redirect scheme එක පෙරහන් කරයි.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ආරක්ෂාව සඳහා මුල් WP Filter එක මෙහි නැවත නිර්මාණය කරයි.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — previewer තුළ භාවිත කරන URL පෙරහන් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie එක HTTPS හරහා පමණක් යැවිය යුතුද යන්න පෙරහන් කරයි.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — ආරක්ෂිත සත්‍යාපන redirect භාවිත කළ යුතුද යන්න පෙරහන් කරයි.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — logged in cookie එක HTTPS හරහා පමණක් යැවිය යුතුද යන්න පෙරහන් කරයි.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies සැබවින්ම client වෙත යැවීම වැළැක්වීමට ඉඩ දෙයි.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL සකසන්න.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters හරහා අමතර පියවර එකතු කරන්න
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — render context එකට ගෝලීයව අමතර variable එක් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — මෙම පරීක්ෂාව කෙටි-සංචරණය කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — නව domain එකක් එක් කිරීමේ modal සඳහා fields පෙරහන් කරයි.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — setup fee line item එකට වෙනස්කම් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite විසින් එක් කරන admin notices පෙරහන් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — වෙනස් කළ පසු පෙරහන් කරන්න.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — දැන්, අපි සියලුම types සමඟ කටයුතු කරමු.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — සීමා කිරීම් කෙටි-සංචරණය කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee අදාළ කළ යුතුද නැද්ද යන්න පෙරහන් කරයි.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — මුල් api arguments පෙරහන් කරන්න.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — බිල්පත් ලිපිනයේ fields පෙරහන් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — output මඟහැර නව එකක් සැකසීමට සංවර්ධකයින්ට ඉඩ දෙයි
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — unset current user code මඟහැරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "recurring amount" මුළු එකතුව පෙරහන් කරයි.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "initial amount" මුළු එකතුව පෙරහන් කරන්න.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "initial amount" මුළු එකතුව පෙරහන් කරන්න.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — credit අගය වෙනස් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain records බවට පත් නොවිය යුතු හවුල් checkout-form base domains පෙරහන් කරයි.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — නව field templates එක් කිරීම සඳහා අපගේ APIs මෙහි hook වේ.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — නව field types එක් කිරීම සඳහා අපගේ APIs මෙහි hook වේ.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — error messages පෙරහන් කරන්න.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — field එකක් auto-submittable නම් පරීක්ෂාව මඟහැරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — form validator තුළ අභිරුචි aliases එක් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — validation rules පෙරහන් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — අනවශ්‍ය Params ඉවත් කරන්න.
+- [wu_contains_element](./Filters/wu_contains_element) — ආරම්භක සෙවුමේ ප්‍රතිඵල වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — constant එක වෙනස් ආකාරයකින් ස්ථාපනය කිරීමට host providers ට ඉඩ දෙයි.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — රටේ පරිපාලන උප-බෙදීම්වල සුදුසු නම ලබා දෙයි.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — රටක ප්‍රාන්තයක් සඳහා නගර ලැයිස්තුව ලබා දෙයි.
+- [wu_country_get_states](./Filters/wu_country_get_states) — මෙම රට සඳහා ප්‍රාන්ත ලැයිස්තුව ලබා දෙයි.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — පෙරනිමි හැසිරීම වෙනස් කර වත්මන් customer වෙනස් ලෙස සැකසීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — පෙරනිමි හැසිරීම වෙනස් කර වත්මන් membership වෙනස් ලෙස සැකසීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_current_set_site](./Filters/wu_current_set_site) — පෙරනිමි හැසිරීම වෙනස් කර වත්මන් site වෙනස් ලෙස සැකසීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — site කළමනාකරණ URL පරාමිතීන් වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — සබැඳි පෙරහන් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ප්‍රතිඵල නිර්වචනය කිරීමට නව පරීක්ෂා එක් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — පසුව අමතර කාණ්ඩ එක් කිරීමට අපට අවශ්‍ය විය හැක.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — අමතර builders හෝ plugins සමඟ කටයුතු කිරීමට මෙම විග්‍රාහකය පුළුල් කිරීමට සංවර්ධකයන්ට ඉඩ දෙන සාමාන්‍ය filter එකක් එක් කරයි.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — අමතර මුරපද නීති බලගැන්විය යුතුද යන්න filter කරන්න.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ජනනය කළ පාරිභෝගික පරිශීලක නාමය filter කරන්න.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — checkout පිටුවක පෙර-සැකසුම් filter කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — මෙම හැසිරීම මඟහැරීමට නව form slugs එක් කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — නව සංක්‍රමණ පියවර එක් කිරීමට සංවර්ධකයන්ට සහ add-ons වලට ඉඩ දෙයි
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — මෙම filter ගැන වැඩිදුර පහතින්, මෙම ක්‍රමය තුළම බලන්න.
+- [wu_get_post_types](./Filters/wu_get_post_types) — පෙන්විය යුතු ලිපි වර්ග තේරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — පේළි ආපසු දෙයි, filter කළ හැක
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — domain/path යුගල සංස්කරණය කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration සැකසීම සඳහා wizard කොටස් filter කරයි.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — form එකක fields filter කරයි. form එක filter නාමයේ ඇති ID මඟින් හඳුනාගනී.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ස්වාධීන බිල්කරණ චක්‍ර ඇති නිෂ්පාදන වර්ග filter කරන්න.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — API සඳහා දී ඇති තත්ත්වයක් බලෙන් සැකසීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — development mode සඳහා අමතර පරීක්ෂණ එක් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — MCP adapter සඳහා දී ඇති තත්ත්වයක් බලෙන් සැකසීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ආරක්ෂක හේතු නිසා, hook කිරීම සඳහා ලබා ගත හැකි actions ගණන අපි සීමා කරමු. මෙම filter එක සංවර්ධකයන්ට පුළුල් කිරීමට ඉඩ දෙයි
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — මෙම plan මත දී ඇති ලිපි වර්ගයක් අවසර ලැබේදැයි පරීක්ෂා කරයි. ආපසු ලැබෙන අගය filter කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP ලිපින සත්‍යාපනය බලගැන්විය යුතුද යන්න filter කරන්න.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent සත්‍යාපනය බලගැන්විය යුතුද යන්න filter කරන්න.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ජනනය කළ magic link URL filter කරන්න.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic links සක්‍රීයද යන්න filter කරන්න.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — domain එකක් primary කළ පසු redirect URL filter කරයි.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ස්වයංක්‍රීය redirect වළක්වන පරාමිතිවල බැහැර කිරීමේ ලැයිස්තුවක් සාදන්න.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP හැකියාව ඇතුළත් කිරීමේ තීරණය අභිබවා යාමට filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ගණනය කළ කල් ඉකුත් වීමේ දිනය filter කරයි.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — අලුත් කිරීමෙන් පසු සැකසිය යුතු ගණනය කළ කල් ඉකුත් වීමේ දිනය filter කරයි.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — නව යාවත්කාලීන form slugs එක් කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — අවම මුරපද දිග filter කරන්න.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — අවශ්‍ය අවම මුරපද ශක්තිය filter කරන්න (zxcvbn ලකුණු).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — අපගේ සංස්කරණ පිටුවලට action links එක් කිරීමට plugin සංවර්ධකයන්ට සහ අපටම ඉඩ දෙයි
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — මුරපදවල කුඩා අකුරු අවශ්‍යද යන්න filter කරන්න.
+- [wu_password_require_number](./Filters/wu_password_require_number) — මුරපදවල සංඛ්‍යා අවශ්‍යද යන්න filter කරන්න.
+- [wu_password_require_special](./Filters/wu_password_require_special) — මුරපදවල විශේෂ අක්ෂර අවශ්‍යද යන්න filter කරන්න.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — මුරපදවල මහ අකුරු අවශ්‍යද යන්න filter කරන්න.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — පොරොත්තු ගෙවීම් පිළිබඳ පණිවිඩය වෙනස් කිරීමට පරිශීලකයාට ඉඩ දෙයි.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plans ලෙස සැලකිය යුතු නිෂ්පාදන වර්ග filter කරන්න.
+- [wu_post_count](./Filters/wu_post_count) — මුළු ගණන වෙනස් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — ගණන් කළ යුතු ලිපි තත්ත්වය වෙනස් කිරීමට plugin සංවර්ධකයන්ට ඉඩ දෙයි. පෙරනිමියෙන්, ප්‍රකාශිත සහ පුද්ගලික ලිපි ගණන් කෙරේ
+- [wu_post_default_status](./Filters/wu_post_default_status) — object දත්ත database තුළ ගබඩා කිරීමට පෙර filter කරයි.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite විසින් සුරැකීමට පෙර settings filter කිරීමට සංවර්ධකයන්ට ඉඩ දෙයි.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — ඉල්ලීම සමඟ ඉදිරියට යාමට අවසර තිබේද නැද්ද යන්න filter කරයි.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — ඉල්ලීම සමඟ ඉදිරියට යාමට අවසර තිබේද නැද්ද යන්න filter කරයි.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ඉල්ලීම සමඟ ඉදිරියට යාමට අවසර තිබේද නැද්ද යන්න පෙරහන් කරයි.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ඉල්ලීම සමඟ ඉදිරියට යාමට අවසර තිබේද නැද්ද යන්න පෙරහන් කරයි.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ඉල්ලීම සමඟ ඉදිරියට යාමට අවසර තිබේද නැද්ද යන්න පෙරහන් කරයි.
+- [wu_return_url](./Filters/wu_return_url) — checkout ක්‍රියාවලීන් පසු භාවිත වන gateway ආපසු URL වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — තවත් සෙවුම් මාදිලි functions එක් කිරීමට plugin සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — අමතර setup wizard පියවර එක් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — අලුතින් සාදන ලද අඩවියක් සඳහා Ultimate Multisite විසින් domain වාර්තාවක් සෑදිය යුතුද යන්න පෙරහන් කරයි.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — යළි යොමු කිරීම කෙටි මඟින් නවතා, එය සිදුවීම වැළැක්වීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler නැවත ලිවීමට ඉඩ දෙයි
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — අඩවි සඳහා ලබා ගත හැකි තොග ක්‍රියා පෙරහන් කරන්න.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ජාලය තුළ get pluginssites සඳහා අගය වෙනස් කිරීමට පෙරහන.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — හරස්-domain single-sign-on හැකියාව සබල/අබල කරන්න.
+- [wu_sso_url](./Filters/wu_sso_url) — හරස්-domain පාරිභෝගික ක්‍රියා සඳහා ආපසු ලබාදීමට පෙර ජනනය කළ SSO URLs පෙරහන් කරයි.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription දත්ත පෙරහන් කරන්න. success_url හෝ cancel_url override කළ හැක.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — ගෙවීම් intent arguments පෙරහන් කරයි.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — පරීක්ෂා කිරීමට ඇති සැලැස්මේ ID පෙරහන් කරයි. මෙය පවතින්නේ නම්, නව subscription එක මෙම සැලැස්ම භාවිත කරයි.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — පරීක්ෂා කිරීමට ඇති නිෂ්පාදනයේ ID පෙරහන් කරයි. මෙය පවතින්නේ නම්, නව subscription එක මෙම නිෂ්පාදනය භාවිත කරයි.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge options සමඟ යවන idempotency_key අගය පෙරහන් කරයි.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — මෙම webhook සමඟ සම්බන්ධ සාමාජිකත්ව වාර්තාව පෙරහන් කරයි.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — database තුළ ගබඩා කිරීමට serialized වීමට පෙර data meta පෙරහන් කරයි.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — database තුළ ගබඩා කිරීමට පෙර object data පෙරහන් කරයි.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — unlock කිරීමට upgrade URL වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping එකක් භාවිත කළ යුතුද යන්න තීරණය කරන්න
+- [wu_username_from_email](./Filters/wu_username_from_email) — නව පාරිභෝගික username පෙරහන් කරන්න.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — සාමාජිකත්ව පරිශීලක සීමාව පිළිබඳ පණිවිඩය වෙනස් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ප්‍රතිස්ථාපනය කළ හැකි ලැයිස්තුවට අමතර ෆෝල්ඩර එක් කිරීමට සංවර්ධකයින්ට ඉඩ දෙයි.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — මෙම entity සඳහා සබල කර ඇති sub_commands පෙරහන් කරයි.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — අපගේ constants inject කළ හැකි ස්ථානය හඳුනා ගැනීමට උත්සාහ කරන විට අපි patterns තුනක් පරීක්ෂා කරමු:

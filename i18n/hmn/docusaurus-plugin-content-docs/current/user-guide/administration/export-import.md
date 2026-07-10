@@ -3,17 +3,17 @@ title: Txhawm thiab Tuaj
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Xuất và Nhập
+# Xuất và Nhập {#export--import}
 
 Ultimate Multisite 2.9.0 thêm một công cụ **Xuất & Nhập** cho trang đơn lẻ dưới mục **Tools > Export & Import**. Bạn sử dụng nó khi cần đóng gói một trang WordPress thành tệp ZIP, khôi phục tệp ZIP đó, hoặc di chuyển một trang giữa các cài đặt WordPress Ultimate Multisite và trang đơn lẻ tương thích.
 
-## Quyền yêu cầu
+## Quyền yêu cầu {#required-permissions}
 
 Bạn phải đăng nhập với tư cách là quản trị viên có thể truy cập menu **Tools** của WordPress trên trang bạn đang xuất hoặc nhập. Trên mạng đa trang (multisite), hãy sử dụng tài khoản quản trị viên mạng khi xuất hoặc nhập các trang con từ các công cụ Ultimate Multisite cấp mạng.
 
 Các tệp tải xuống ZIP được phục vụ thông qua một điểm cuối tải xuống đã xác thực, vì vậy hãy giữ phiên quản trị viên hoạt động cho đến khi quá trình tải xuống hoàn tất và không chia sẻ các URL tải xuống được tạo ra công khai.
 
-## Xuất trang sang ZIP
+## Xuất trang sang ZIP {#exporting-a-site-to-a-zip}
 
 1. Trong admin WordPress của trang bạn muốn sao chép, đi tới **Tools > Export & Import**.
 2. Mở khu vực xuất và chọn trang bạn muốn đóng gói.
@@ -23,7 +23,7 @@ Các tệp tải xuống ZIP được phục vụ thông qua một điểm cuố
 
 Hãy giữ tệp ZIP ở một nơi an toàn. Nó có thể chứa nội dung trang, cài đặt, tệp đa phương tiện (media files) và các tài sản mã được chọn.
 
-## Nội dung khi xuất
+## Nội dung khi xuất {#what-the-export-includes}
 
 Một tệp ZIP xuất có thể bao gồm:
 
@@ -34,7 +34,7 @@ Một tệp ZIP xuất có thể bao gồm:
 
 ZIP file chu xis neem chawm nuam media, xim plugin thiab theme, thiab site database tables no xim li cas.
 
-## Site hauv ZIP los tso (Importing a site from a ZIP)
+## Site hauv ZIP los tso (Importing a site from a ZIP) {#importing-a-site-from-a-zip}
 
 1. Tsim lub **Tools > Export & Import** rau WordPress site uas koj thov los.
 2. Lò koj lub import area ntawd los thiab upload lub ZIP uas tab tom ua tau ntawm Export & Import tool.
@@ -46,7 +46,7 @@ ZIP file chu xis neem chawm nuam media, xim plugin thiab theme, thiab site datab
 
 Ha cov WordPress installation uas muaj site hauv ib leeg, siv ZIP los tso yuav lub site uas ceeb los ntawm lub site uas import los. Tsim backup zoo tshaj plaws (full backup) ntawm site uas koj xav los tso thaum koj mus rov los, thiab tsis txhob mus ua import ntau rau ib site los ib yam tig luag hnub.
 
-## Limitations and compatibility notes
+## Limitations and compatibility notes {#limitations-and-compatibility-notes}
 
 ---
 

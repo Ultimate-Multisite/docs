@@ -4,11 +4,11 @@ title: Filter - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filtre: wu_rest_create_item
+# Filtre: wu_rest_create_item {#filter-wurestcreateitem}
 
 İsteğin devam edip edemeyeceğini filtreler.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tür | Açıklama |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 | $rest_base | `array` | Varlık (Entity) slug'ı. |
 | $this | `\Base_Manager` | Nesne örneği. |
 
-### Ne Zaman
+### Ne Zaman {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) dosyasında 362. satırda tanımlanmıştır.

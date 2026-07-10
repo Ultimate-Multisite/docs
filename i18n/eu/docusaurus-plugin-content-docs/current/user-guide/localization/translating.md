@@ -3,11 +3,11 @@ title: Ultimate Multisite-a iritszalean
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-aren ir gurean
+# Ultimate Multisite-aren ir gurean {#translating-ultimate-multisite}
 
 Ultimate Multisitea ingleaz ez daitezke itxitu da, baina pluginak guztiz irraldiria da eta biziaren kontribuciationak aktiboz espero dugu.
 
-## Pluginaren Gurean Itxiturik
+## Pluginaren Gurean Itxiturik {#core-plugin-translations}
 
 Ultimate Multisite pluginaren gurean itxiturik egin da **WordPress.org-ren ofizial translation platforma** bidez:
 
@@ -24,7 +24,7 @@ Hau da WordPress komunitatearen standard translation sistema. Itxiturikak ordezk
 
 Zure hizkuntzak itxiturik editora (itxiturikak aprobatatzeko modua dutela) ordain dezakeko nahi baduzu, [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) bidez hartu behar duzu.
 
-## Addon Itxiturikak
+## Addon Itxiturikak {#addon-translations}
 
 Addon pluginaren itxiturikak jarri da bere gurean:
 
@@ -32,11 +32,11 @@ Addon pluginaren itxiturikak jarri da bere gurean:
 
 Addon itxiturikak orain AI-ler ezarritutako lehenbaitak dira. Horrek suportatutako hizkuntza guztietan aurkitzen ditu baina ez duenez testu gehiago natural eta ondo jakin dituzko erantzunak edo inposibiltateak izan dezake. Human translator (human itxiturik editor) bere irudiak eta hobek kontribuiziona emateko gurean espero dugu.
 
-## Itxiturikak Lokalak
+## Itxiturikak Lokalak {#local-translations}
 
 Poedit er gurean irudiari proiektu bat da kontribuiziorik ez duzun, baina lokalment irudiari egiteko nahi duzu, non ikietako ikuspeak:
 
-### Poedit er Erdatzeko
+### Poedit er Erdatzeko {#using-poedit}
 
 `.pot` filea irudiari egiteko desktop aplikazio **[Poedit](https://poedit.net)** da benetan erabiliziek:
 
@@ -46,6 +46,6 @@ Poedit er gurean irudiari proiektu bat da kontribuiziorik ez duzun, baina lokalm
 4. Saldu -- Poedit-ek `.po` eta `.mo` fileak ematen du
 5. Output fileak `lang` folder-ra jarri
 
-### Loco Translate er Erdatzeko
+### Loco Translate er Erdatzeko {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin-ek, desktop tool bat bilatu gabe, admin paneletik direktu irudiari egiteko ematen du. Irudiari fileak emate eta kompilatzea gorri egiten du.

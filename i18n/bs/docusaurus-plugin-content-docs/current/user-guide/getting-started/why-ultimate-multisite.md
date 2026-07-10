@@ -3,11 +3,11 @@ title: Zašto Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Zašto Ultimate Multisite
+# Zašto Ultimate Multisite {#why-ultimate-multisite}
 
 Ako ste stigli do ovog članka, vjerovatno ste čuli da naš plugin može biti rješenje za ostvarenje vaše poslovne ideje. Nadamo se da ćete na kraju ovog teksta pronaći sve odgovore koje vam trebaju.
 
-## Šta je Ultimate Multisite?
+## Šta je Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite je WordPress Multisite plugin koji vam omogućava da klijentima ponudite WaaS (Website as a Service – Web sa usluge). Uz naš plugin, možete imati različite nivoe pretplate i omogućiti klijentima da vam plaćaju periodičnu naknadu za hostovanje sajta u vašoj Multisite mreži.
 
@@ -15,7 +15,7 @@ Ultimate Multisite vam omogućava da primite plaćanja putem različitih gateway
 
 I ovo je tek početak, jer možete proširiti njegove funkcije pomoću add-on-a i webhooks-a.
 
-## Ostale značajke
+## Ostale značajke {#other-features}
 
 Ultimate Multisite takođe nudi:
 
@@ -33,11 +33,11 @@ I naprednije stvari:
 
 *   **Search and Replace API:** Takođe možete anotirati šablone sajtova placeholderima poput {{site_name}} i koristiti Search and Replace API za automatsko popunjavanje tih placeholder-a informacijama koje vam klijent dostavi odmah nakon prijave.
 
-## Primjeri upotrebe
+## Primjeri upotrebe {#use-cases}
 
 Sada je vrijeme da pogledamo neke od mogućih scenarija upotrebe za Ultimate Multisite.
 
-### Slučaj 1: Agencija
+### Slučaj 1: Agencija {#case-1-an-agency}
 
 Tipično, osnovne vještine agencije leže u dizajnu web sajtova, pri čemu se aspekti poput hostovanja ili marketinga navode kao dodatne usluge.
 
@@ -47,7 +47,7 @@ Stroga kontrola nad pluginovima i temama održava se na nivou proizvoda putem po
 
 Agencije će pronaći mir grudi sa Ultimate Multisite-om, jer im omogućava da rade ono što najbolje znaju – dizajniranje izvanrednih sajtova.
 
-### Slučaj 2: Niche Provider (Specijalista za nišu)
+### Slučaj 2: Niche Provider (Specijalista za nišu) {#case-2-niche-provider}
 
 Postoji stara poslovica koja kaže: "Uradi jednu stvar i uradi je dobro". Za mnoge stručnjake, to znači kreiranje proizvoda ili usluge oko jedine osnovne ideje.
 
@@ -57,7 +57,7 @@ Jedna od inovativnih značajki Ultimate Multisite-a, template site, je sajt na k
 
 Za provajdera nišnih sajtova i usluga, ovo pruža neusporedivu prednost u sposobnosti trenutnog kreiranja sajta spremnog za upotrebu sa prilagođenim pluginovima i dizajnom. Klijent samo treba da pruži minimalan unos kako bi usluga bila završena.
 
-### Slučaj 3: WordPress Web Hosting
+### Slučaj 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Postoji bezbroj načina za hostovanje WordPress sajtova, ali rijetko je jednako jednostavno kao pružanje web prostora klijentu sa unaprijed instaliranom verzijom WordPress-a. To je zato što je potrebno da se složi niz odluka i razmatranja kako bi se pružila smislena usluga.
 

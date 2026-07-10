@@ -3,11 +3,11 @@ title: ওয়েবহুক ব্যবস্থাপনা
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ওয়েবহুক হ্যান্ডলিং
+# ওয়েবহুক হ্যান্ডলিং {#webhook-handling}
 
 বাইরের সার্ভিসগুলো থেকে ইভেন্ট রিসিভ করার জন্য কাস্টম ওয়েবহুক এন্ডপয়েন্ট তৈরি করুন এবং Ultimate Multisite-এর সাথে ডেটা সিঙ্ক করুন।
 
-## কাস্টম ওয়েবহুক এন্ডপয়েন্ট
+## কাস্টম ওয়েবহুক এন্ডপয়েন্ট {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## নিরাপত্তার দিকগুলো
+## নিরাপত্তার দিকগুলো {#security-considerations}
 
 *   HMAC বা একটি শেয়ার্ড সিক্রেট ব্যবহার করে সর্বদা ওয়েবহুক সিগনেচার যাচাই করুন।
 *   আপনার REST রুটে একটি `permission_callback` ব্যবহার করুন — প্রোডাকশনে এটি কখনোই `__return_true` সেট করবেন না।

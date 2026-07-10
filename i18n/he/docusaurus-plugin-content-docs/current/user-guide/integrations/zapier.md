@@ -1,98 +1,98 @@
 ---
-title: שילוב Zapier
+title: אינטגרציית Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# שילוב Ultimate Multisite עם Zapier
+# שילוב Ultimate Multisite עם Zapier {#integrating-ultimate-multisite-with-zapier}
 
-באחד המאמרים דיברנו על [Webhooks](webhooks.md) וכיצד ניתן להשתמש בהם לשילוב עם אפליקציות צד שלישי.
+באחד המאמרים דנו ב[וובהוקים](webhooks.md) ובאופן שבו ניתן להשתמש בהם כדי להשתלב עם יישומי צד שלישי.
 
-השימוש ב-webhooks מעט מסובך מכיוון שהוא דורש ידע מתקדם בתכנות ובקליטת payloads. השימוש ב-**Zapier** הוא דרך לעקוף את הקושי הזה.
+השימוש בוובהוקים מעט מורכב, מכיוון שהוא דורש ידע מתקדם בקידוד ובקליטת payloads. שימוש ב-**Zapier** הוא דרך לעקוף זאת.
 
-ל-Zapier יש שילוב עם יותר מ-5000+ אפליקציות, מה שמקל על התקשורת בין אפליקציות שונות.
+ל-Zapier יש אינטגרציה עם יותר מ-5000+ אפליקציות, מה שמקל על תקשורת בין יישומים שונים.
 
-תוכלו ליצור **Triggers** שיופעלו כאשר אירועים מתרחשים ברשת שלכם (לדוגמה, חשבון נוצר ומפעיל את האירוע account_create) או ליצור **Actions** ברשת שלכם כתגובה לאירועים חיצוניים (לדוגמה, יצירת מנוי חשבון חדש ברשת Ultimate Multisite שלכם).
+ניתן ליצור **טריגרים** שיופעלו כאשר אירועים מתרחשים ברשת שלך (לדוגמה, Account נוצר ומפעיל את האירוע account_create) או ליצור **פעולות** ברשת שלך בתגובה לאירועים חיצוניים (לדוגמה, יצירת חברות Account חדשה ברשת Ultimate Multisite שלך).
 
-זה אפשרי מכיוון שה-**triggers וה-actions של Ultimate Multisite ב-Zapier** מופעלים על ידי ה-[REST API](https://developer.ultimatemultisite.com/api/docs/).
+זה אפשרי מכיוון ש-**הטריגרים של Ultimate Multisite Zapier** והפעולות מופעלים על ידי ה-[REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## איך להתחיל
+## איך להתחיל {#how-to-start}
 
-ראשית, חפשו Ultimate Multisite ברשימת האפליקציות של Zapier. לחלופין, תוכלו ללחוץ על [הקישור הזה](https://zapier.com/apps/wp-ultimo/integrations).
+ראשית, חפש את Ultimate Multisite ברשימת האפליקציות של Zapier. לחלופין, ניתן ללחוץ על [הקישור הזה](https://zapier.com/apps/wp-ultimo/integrations).
 
-היכנסו ל-dashboard שלכם ולחצו על כפתור **+** **Create Zap** בסרגל הצד השמאלי כדי להגדיר Zap חדש.
+עבור אל ה-Dashboard שלך ולחץ על כפתור **+** **יצירת Zap** בסרגל הצד השמאלי כדי להגדיר Zap חדש.
 
-![לוח הבקרה של Zapier עם כפתור Create Zap](/img/admin/webhooks-list.png)
+![Dashboard של Zapier עם כפתור יצירת Zap](/img/admin/webhooks-list.png)
 
-תועברו לדף יצירת ה-Zap.
+תופנה אל עמוד יצירת ה-Zap.
 
-בתיבת החיפוש הקלידו "wp ultimo". לחצו כדי לבחור באפשרות גרסת **Beta**.
+בתיבת החיפוש הקלד "wp ultimo". לחץ כדי לבחור באפשרות גרסת **Beta**.
 
 ![חיפוש WP Ultimo ברשימת האפליקציות של Zapier](/img/admin/webhooks-list.png)
 
-לאחר בחירת האפליקציה שלנו, בחרו באירוע הזמין: **New Ultimate Multisite Event**.
+לאחר בחירת האפליקציה שלנו, בחר באירוע הזמין: **אירוע Ultimate Multisite חדש**.
 
-![בחירת trigger של New Ultimate Multisite Event](/img/admin/webhooks-list.png)
+![בחירת טריגר אירוע Ultimate Multisite חדש](/img/admin/webhooks-list.png)
 
-עכשיו אנחנו צריכים לתת ל-Zapier גישה **לרשת שלכם**. לחיצה על **Sign in** תפתח חלון חדש שידרוש את **פרטי ה-API**.
+כעת עלינו לתת ל-Zapier גישה אל **הרשת שלך**. לחיצה על **התחברות** תפתח חלון חדש שדורש את **פרטי הגישה ל-API**.
 
-![הנחיית Sign in של Zapier לפרטי API](/img/admin/webhooks-list.png)
+![בקשת התחברות של Zapier עבור פרטי גישה ל-API](/img/admin/webhooks-list.png)
 
-היכנסו לפאנל הניהול של הרשת שלכם ונווטו אל **Ultimate Multisite > Settings** > **API & Webhooks** וחפשו את הקטע API Settings.
+עבור ללוח הניהול של הרשת שלך ונווט אל **Ultimate Multisite > הגדרות** > **API ו-Webhooks** וחפש את מקטע הגדרות ה-API.
 
-סמנו את האפשרות **Enable API** מכיוון שהיא נדרשת כדי שהחיבור יעבוד.
+בחר באפשרות **הפעלת API**, מכיוון שהיא נדרשת כדי שהחיבור הזה יעבוד.
 
-![הגדרות API עם אפשרות Enable API ב-Ultimate Multisite](/img/admin/webhooks-list.png)
+![הגדרות API ו-Webhooks עם אפשרויות הגדרות API והפעלת API](/img/admin/settings-api-webhooks.png)
 
-השתמשו בסמל **Copy to Clipboard** בשדות API Key ו-API Secret והדביקו את הערכים האלה במסך השילוב.
+השתמש בסמל **העתקה ללוח** בשדות API Key ו-API Secret והדבק את הערכים האלה במסך האינטגרציה.
 
-בשדה URL, הכניסו את כתובת ה-URL המלאה של הרשת שלכם, כולל הפרוטוקול (HTTP או HTTPS).
+בשדה URL, הזן את כתובת ה-URL המלאה של הרשת שלך, כולל הפרוטוקול (HTTP או HTTPS).
 
-![מסך שילוב Zapier עם שדות API Key, Secret ו-URL](/img/admin/webhooks-list.png)
+![מסך אינטגרציה של Zapier עם שדות API Key, Secret ו-URL](/img/admin/webhooks-list.png)
 
-לחצו על כפתור **Yes, Continue** כדי לעבור לשלב הבא. אם הכל עובד כמו שצריך, תקבלו את פני החשבון המחובר החדש שלכם! לחצו על **Continue** כדי ליצור trigger חדש.
+לחץ על כפתור **כן, המשך** כדי לעבור לשלב הבא. אם הכול עובד, תקבל הודעה על Account מחובר חדש! לחץ על **המשך** כדי ליצור טריגר חדש.
 
-## איך ליצור Trigger חדש
+## איך ליצור טריגר חדש {#how-to-create-a-new-trigger}
 
-עכשיו שהחשבון שלכם מחובר, תוכלו לראות את האירועים הזמינים. בואו נבחר את האירוע **payment_received** עבור המדריך הזה.
+כעת, כשה-Account שלך מחובר, ניתן לראות אירועים זמינים. נבחר באירוע **payment_received** עבור המדריך הזה.
 
-![בחירת אירוע payment_received ב-trigger של Zapier](/img/admin/webhooks-list.png)
+![בחירת אירוע payment_received בטריגר של Zapier](/img/admin/webhooks-list.png)
 
-לאחר בחירת האירוע ולחיצה על **continue**, יופיע **שלב בדיקה**.
+לאחר שהאירוע נבחר ולחצת על **המשך**, יופיע **שלב בדיקה**.
 
-![שלב בדיקת trigger ב-Zapier](/img/admin/webhooks-list.png)
+![שלב בדיקה של Zapier עבור הטריגר](/img/admin/webhooks-list.png)
 
-בשלב זה, Zapier יבדוק אם ה-Zap שלכם יכול **לשלוף את ה-payload הספציפי לאירוע הזה**. באירועים עתידיים מאותו סוג, מידע עם אותו מבנה יישלח.
+בשלב זה, Zapier יבדוק אם ה-Zap שלך יכול **למשוך את ה-payload הספציפי לאירוע הזה**. באירועים עתידיים מאותו סוג, יישלח מידע באותו מבנה.
 
-![בדיקת trigger ב-Zapier הושלמה בהצלחה עם payload](/img/admin/webhooks-list.png)
+![בדיקת טריגר של Zapier הושלמה בהצלחה עם payload](/img/admin/webhooks-list.png)
 
-במדריך שלנו הבדיקה **הושלמה בהצלחה** והחזירה את המידע לדוגמה של ה-payload. מידע לדוגמה זה יעזור לנו בעת יצירת actions. ה-trigger שלכם נוצר כעת ומוכן להתחבר לאפליקציות אחרות.
+במדריך שלנו הבדיקה **הושלמה בהצלחה** והחזירה את פרטי דוגמת ה-payload. פרטי הדוגמה האלה יהיו שימושיים כדי להנחות אותנו בעת יצירת פעולות. הטריגר שלך נוצר כעת ומוכן להתחבר ליישומים אחרים.
 
-## איך ליצור Actions
+## איך ליצור פעולות {#how-to-create-actions}
 
-Actions משתמשים במידע מ-triggers אחרים כדי ליצור רשומות חדשות ברשת שלכם.
+פעולות משתמשות במידע מטריגרים אחרים כדי ליצור רשומות חדשות ברשת שלך.
 
-ב**שלב יצירת ה-action** תבחרו את Ultimate Multisite **Beta** ואת האפשרות **Create Items on Ultimate Multisite**.
+ב-**שלב יצירת פעולה** תבחר את Ultimate Multisite **Beta** ואת האפשרות **יצירת פריטים ב-Ultimate Multisite**.
 
-![יצירת action עם Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![יצירת פעולה עם יצירת פריטים ב-Ultimate Multisite](/img/admin/webhooks-list.png)
 
-בשלב הבא תיצרו את האימות שלכם, בדיוק כפי שעשינו ב**איך להתחיל**, או תבחרו אימות קיים. במדריך זה נבחר את אותו אימות שנוצר קודם לכן.
+בשלב הבא תיצור את האימות שלך, בדיוק כפי שעשינו ב-**איך להתחיל**, או תבחר אימות שכבר נוצר. במדריך הזה נבחר את אותו אימות שנוצר קודם לכן.
 
-![בחירת אימות עבור ה-action ב-Zapier](/img/admin/webhooks-list.png)
+![בחירת אימות עבור הפעולה ב-Zapier](/img/admin/webhooks-list.png)
 
-### הגדרת ה-Action
+### הגדרת הפעולה {#setting-up-the-action}
 
-זהו **השלב העיקרי של ה-action** וכאן הדברים קצת שונים. המידע הראשון שתבחרו הוא ה-**Item**. Item הוא **מודל המידע** של הרשת שלכם כגון **Customers, Payments, Sites, Emails** ואחרים.
+זהו **השלב הראשי של הפעולה**, וכאן הדברים מעט שונים. המידע הראשון שתבחר הוא ה-**פריט**. פריט הוא **מודל המידע** של הרשת שלך, כגון **לקוחות, תשלומים, אתרים, אימיילים** ואחרים.
 
-![בחירת סוג Item עבור ה-action ב-Zapier](/img/admin/webhooks-list.png)
+![בחירת סוג פריט עבור הפעולה ב-Zapier](/img/admin/webhooks-list.png)
 
-כאשר בוחרים item, הטופס **יסתדר מחדש כדי להציג את השדות הנדרשים והאופציונליים** עבור ה-item שנבחר.
+בעת בחירת פריט, הטופס **יסתדר מחדש כדי להציג את השדות הנדרשים והאופציונליים** עבור הפריט שנבחר.
 
-לדוגמה, כאשר בוחרים את ה-item **Customer**, שדות הטופס יציגו את כל מה שצריך למלא כדי ליצור Customer חדש ברשת.
+לדוגמה, בעת בחירת הפריט **לקוח**, שדות הטופס יציגו את כל מה שנדרש למלא כדי ליצור לקוח חדש ברשת.
 
-![שדות Customer item בהגדרת action ב-Zapier](/img/admin/webhooks-list.png)
+![שדות פריט לקוח בהגדרת פעולה ב-Zapier](/img/admin/webhooks-list.png)
 
-לאחר מילוי כל השדות המסומנים כ-**required** ולחיצה על continue, מסך אחרון יציג לכם את השדות שמולאו ואת השדות שנותרו ריקים.
+לאחר מילוי כל השדות המסומנים כ-**נדרשים** ולחיצה על המשך, מסך אחרון יציג לך את השדות שמולאו ואת השדות שנותרו ריקים.
 
-![בדיקת action ב-Zapier מציגה שדות מלאים וריקים](/img/admin/webhooks-list.png)
+![בדיקת פעולה של Zapier המציגה שדות שמולאו ושדות שלא מולאו](/img/admin/webhooks-list.png)
 
-ברגע שהבדיקה שלכם מסתיימת ומצליחה, ה-action שלכם מוגדר. חשוב גם לבדוק ברשת שלכם אם ה-item נוצר עם הבדיקה של ה-action שלכם.
+ברגע שהבדיקה שלך מסתיימת בהצלחה, הפעולה שלך מוגדרת. חשוב גם לבדוק ברשת שלך אם הפריט נוצר באמצעות הבדיקה של הפעולה שלך.

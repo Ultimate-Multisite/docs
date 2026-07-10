@@ -3,11 +3,11 @@ title: Neden Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Neden Ultimate Multisite?
+# Neden Ultimate Multisite? {#why-ultimate-multisite}
 
 Bu makaleye ulaştıysanız, muhtemelen eklentimizin iş fikrinizi gerçeğe dönüştürecek çözüm olabileceğini duymuşsunuzdur. Umarız bu yazının sonunda ihtiyacınız olan tüm cevapları bulursunuz.
 
-## Ultimate Multisite Nedir?
+## Ultimate Multisite Nedir? {#what-is-ultimate-multisite}
 
 Ultimate Multisite, müşterilerinize WaaS (Hizmet Olarak Web Sitesi) sunmanızı sağlayan bir WordPress Multisite eklentisidir. Eklentimiz sayesinde farklı abonelik kademeleri oluşturabilir ve müşterilerinizin Multisite ağınızda barındırılan bir site için size düzenli ödeme yapmasını sağlayabilirsiniz.
 
@@ -15,7 +15,7 @@ Ultimate Multisite, ödemelerinizi farklı ödeme yöntemleriyle (WooCommerce ve
 
 Ve bu sadece başlangıç; çünkü işlevlerini eklentiler ve webhook'larla genişletebilirsiniz.
 
-## Diğer Özellikler
+## Diğer Özellikler {#other-features}
 
 Ultimate Multisite ayrıca şunları sunar:
 
@@ -33,11 +33,11 @@ Ve daha gelişmiş özellikler:
 
   * Search and Replace API: Ayrıca site şablonlarını {{site_name}} gibi yer tutucularla işaretleyebilir ve Search and Replace API'yi kullanarak bu yer tutucuları müşterinizin kayıt sırasında sağladığı bilgilerle otomatik olarak doldurabilirsiniz.
 
-## Kullanım Senaryoları
+## Kullanım Senaryoları {#use-cases}
 
 Şimdi Ultimate Multisite için olası kullanım senaryolarından bazılarına bakalım.
 
-### Senaryo 1: Bir Ajans
+### Senaryo 1: Bir Ajans {#case-1-an-agency}
 
 Tipik olarak bir ajansın temel yetenekleri web sitesi tasarımında yatar; barındırma veya pazarlama gibi konular ek hizmetler olarak sunulur.
 
@@ -47,7 +47,7 @@ Eklentiler ve temalar üzerinde sıkı kontrol, Ultimate Multisite'ın ayarları
 
 Ajanslar, Ultimate Multisite sayesinde en iyi yaptıkları işe, yani olağanüstü web siteleri tasarlamaya odaklanarak içleri rahat çalışabilirler.
 
-### Senaryo 2: Niş Sağlayıcı
+### Senaryo 2: Niş Sağlayıcı {#case-2-niche-provider}
 
 "Bir şeyi yap ve onu iyi yap" diye eski bir söz vardır. Birçok uzman için bu, tek bir temel fikir etrafında bir ürün veya hizmet oluşturmak anlamına gelir.
 
@@ -57,7 +57,7 @@ Ultimate Multisite'ın yenilikçi özelliklerinden biri olan şablon site, teman
 
 Niş siteler ve hizmetler sunan bir sağlayıcı için bu, özel eklentiler ve tasarımla kullanıma hazır bir siteyi anında oluşturabilme konusunda eşsiz bir avantaj sağlar. Müşterinin hizmeti tamamlamak için yalnızca minimum düzeyde bilgi girmesi yeterlidir.
 
-### Senaryo 3: WordPress Web Barındırma
+### Senaryo 3: WordPress Web Barındırma {#case-3-wordpress-web-hosting}
 
 WordPress sitelerini barındırmanın sayısız yolu vardır, ancak müşteriye önceden kurulmuş bir WordPress sürümüyle web alanı sağlamak nadiren bu kadar basittir. Bunun nedeni, anlamlı bir hizmet sunmak için bir dizi karar ve değerlendirmenin bir araya gelmesi gerektiğidir.
 

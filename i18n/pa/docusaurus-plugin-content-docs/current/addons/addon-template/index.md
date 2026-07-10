@@ -3,25 +3,25 @@ title: Addon Template
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## ਲੋੜਾਂ (Requirements)
+## ਲੋੜਾਂ (Requirements) {#requirements}
 
 - WordPress 5.3 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
 - PHP 7.4 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
 - Multisite Ultimate plugin (active)
 
-## ਇੰਸਟਾਲੇਸ਼ਨ (Installation)
+## ਇੰਸਟਾਲੇਸ਼ਨ (Installation) {#installation}
 
 1. ਐਡਨ ਫਾਈਲਾਂ ਨੂੰ ਆਪਣੀ `/wp-content/plugins/` ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਅਪਲੋਡ ਕਰੋ।
 2. WordPress ਵਿੱਚ 'Plugins' ਮੀਨੂ ਰਾਹੀਂ plugin ਨੂੰ ਐਕਟਿਵੇਟ ਕਰੋ।
 3. ਨੈੱਟਵਰਕ ਐਡਮਿਨ ਵਿੱਚ ਐਡਨ ਸੈਟਿੰਗਜ਼ ਨੂੰ ਕਨਫਿਗਰ ਕਰੋ।
 
-## ਡਿਵੈਲਪਮੈਂਟ (Development)
+## ਡਿਵੈਲਪਮੈਂਟ (Development) {#development}
 
-### ਸੈਟਅਪ (Setup)
+### ਸੈਟਅਪ (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ਪ੍ਰੋਜੈਕਟ ਸਟ੍ਰਕਚਰ (Project Structure)
+### ਪ੍ਰੋਜੈਕਟ ਸਟ੍ਰਕਚਰ (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### ਟੈਸਟਿੰਗ (Testing)
+### ਟੈਸਟਿੰਗ (Testing) {#testing}
 
 ਇਸ ਐਡਨ ਵਿੱਚ ਇੱਕ ਪੂਰਾ ਟੈਸਟਿੰਗ ਫਰੇਮਵਰਕ ਸ਼ਾਮਲ ਹੈ:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Test Coverage**: ਕੋਡ ਕਵਰੇਜ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਕਨਫਿਗਰ ਕੀਤਾ ਗਿਆ।
 - **Multisite Testing**: ਟੈਸਟ multisite environment ਵਿੱਚ ਚੱਲਦੇ ਹਨ।
 
-### ਕੋਡ ਸਟੈਂਡਰਡਜ਼ (Code Standards)
+### ਕੋਡ ਸਟੈਂਡਰਡਜ਼ (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS ਰਾਹੀਂ ਲਾਗੂ ਕੀਤੇ ਗਏ।
 - **PHP 7.4+ Compatibility**: ਆਧੁਨਿਕ PHP ਫੀਚਰ ਸਪੋਰਟ ਕੀਤੇ ਗਏ।
 - **Static Analysis**: type checking ਲਈ PHPStan ইন্ਟੀਗ੍ਰੇਸ਼ਨ।
 - **Code Modernization**: PHP ਅਪਗ੍ਰੇਡ ਲਈ Rector ਨਿਯਮ।
 
-### ਬਿਲਡ ਸਿਸਟਮ (Build System)
+### ਬਿਲਡ ਸਿਸਟਮ (Build System) {#build-system}
 
 - **Asset Processing**: CSS/JS ਫਾਈਲਾਂ ਲਈ ਮਿਨੀਫਾਈਕੇਸ਼ਨ।
 - **Translation**: POT ਫਾਈਲ ਜਨਰੇਸ਼ਨ।
 - **Packaging**: ਡਿਸਟ੍ਰੀਬਿਊਸ਼ਨ ਲਈ ਆਰਕਾਈਵ ਕ੍ਰिएशन।
 - **Development Mode**: ਡੀਬੱਗਿੰਗ ਲਈ Unminified assets।
 
-## ਕਨਫਿਗਰੇਸ਼ਨ (Configuration)
+## ਕਨਫਿਗਰੇਸ਼ਨ (Configuration) {#configuration}
 
 ਇਹ ਐਡਨ ਨੈੱਟਵਰਕ ਐਡਮਿਨ ਇੰਟਰਫੇਸ ਰਾਹੀਂ ਪਹੁੰਚਣ ਵਾਲੇ ਕਈ ਕਨਫਿਗਰੇਸ਼ਨ ਆਪਸ਼ਨ ਸਪੋਰਟ ਕਰਦਾ ਹੈ।
 
-## ਹੁੱਕਸ ਅਤੇ ਫਿਲਟਰਸ (Hooks and Filters)
+## ਹੁੱਕਸ ਅਤੇ ਫਿਲਟਰਸ (Hooks and Filters) {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - ਐਡਨ ਇਨੀਸ਼ੀਅਲਾਈਜ਼ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
 - `ultimate-multisite-addon-template_loaded` - ਸਾਰੇ ਐਡਨ ਫਾਈਲਾਂ ਲੋਡ ਹੋਣ ਤੋਂ ਬਾਅਦ ਚੱਲਦਾ ਹੈ।
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - ਐਡਨ ਸੈਟਿੰਗਜ਼ ਨੂੰ ਮੋਡੀਫਾਈ ਕਰਦਾ ਹੈ।
 - `ultimate-multisite-addon-template_enabled` - ਐਡਨ ਦੇ enable/disable ਸਟੇਟਸ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰਦਾ ਹੈ।
 
-## ਲਾਇਸੈਂਸ (License)
+## ਲਾਇਸੈਂਸ (License) {#license}
 
 ਇਹ ਐਡਨ GPL v3 ਜਾਂ ਇਸ ਤੋਂ ਬਾਅਦ ਦੇ ਲਾਇਸੈਂਸ ਹੇਠ ਲਾਇਸੈਂਸ ਕੀਤਾ ਗਿਆ ਹੈ।
 
-## ਸਪੋਰਟ (Support)
+## ਸਪੋਰਟ (Support) {#support}
 
 ਸਪੋਰਟ ਅਤੇ ਡਾਕੂਮੈਂਟੇਸ਼ਨ ਲਈ, [MultisiteUltimate.com](https://multisiteultimate.com) 'ਤੇ ਜਾਓ।
-## ਚੇਂਜਲੌਗ (Changelog)
+## ਚੇਂਜਲੌਗ (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix ਨੂੰ ultimate-multisite ਵਿੱਚ rename ਕੀਤਾ; text domain ਨੂੰ update ਕੀਤਾ; version bump।
 

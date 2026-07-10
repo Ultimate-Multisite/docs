@@ -1,138 +1,138 @@
 ---
-title: Ndiri kuvaingira sei mapping ye domain?
+title: Maitiro Ekumisikidza Kubatanidzwa kweDomain
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Ndiri Kuti Kuratidzi Mapping ya Domain (v2)
+# Maitiro Ekugadzirisa Kubatanidza Domain (v2) {#how-to-configure-domain-mapping-v2}
 
-_**CHINDIRA CHINDIRA: Iriweyi iri rinoreferira ku Ultimate Multisite version 2.x.**_
+_**CHIZIVISO CHAKAKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite vhezheni 2.x.**_
 
-Chimwe chete chinekuura kwemakore anonyanyera kwepremium network ndiko kunenge kune chokwadi, kuti uone vana vako vanogona kuita chokwadi chekuti vange domain top-level kuvanhu vavo. Panguva dzose, izvi zvinhu zvinobuda sei: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) kana [_**joesbikeshop.com**_](http://joesbikeshop.com)? Iyi ndiyo chokwadi chinekuura Ultimate Multisite, saka hauna kune kutenda plugins dzine vanhu vose.
+Chimwe chezvinhu zvine simba zvikuru panetiweki yepremium kugona kupa vatengi vedu mukana wekubatanidza domain yepamusoro-soro kumasaiti avo. Pakupedzisira, ndeipi inotaridzika sehunyanzvi zvikuru: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) kana [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ndokusaka Ultimate Multisite ichipa chinhu ichocho chakavakirwa-mukati, pasina kudiwa kwekushandisa maplugin echitatu-bato.
 
-## Domain mapping ndiri iweyi?
+## Chii chinonzi kubatanidza domain? {#whats-domain-mapping}
 
-Se zviri kuita kunoda, domain mapping ndiko uwezi waUltimate Multisite kuti uongere rurimi rwako rine custom domain uye uone rurimi runogone kuita mapping kune site yese munzvimbo (network) neuriwo domain.
+Sezvinoratidzwa nezita, kubatanidza domain kugona kunopihwa neUltimate Multisite kugamuchira chikumbiro chedomain yakasarudzika uye kubatanidza chikumbiro ichocho nesaiti inoenderana munetiweki ine domain iyoyo yakabatanidzwa.
 
-### Sei kuratidza domain mapping mu Ultimate Multisite Network yako
+### Maitiro ekuseta kubatanidza domain paUltimate Multisite Network yako {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping inoda zvinhu zvinoreva kuti iwe unenge uri kuita. Saka, ndiri chokwadi kuti Ultimate Multisite chinogona kungekuita nzira yese yakakwana kwako, saka hauna sharo.
+Kubatanidza domain kunoda kumwe kuseta kwaunoita kuti kushande. Nerombo rakanaka, Ultimate Multisite inozviitira basa rakaoma kuitira kuti ugone kuzadzisa zvinodiwa zviri nyore.
 
-Panguva inoshandiswa Ultimate Multisite, wizard (mabasa) ichiita zvinhu zvinodawo, izvi zvichiri kuita sunrise.php uye kuitira folder inotariswa. **Wizard haizovaka kuti uende mberi mpfaro kunge iwe usina kukoma nguva iyi.**
+Panguva yekuisa Ultimate Multisite, wizard ichakopa otomatiki uye kuisa **sunrise.php** kufolda yakatarwa. **Wizard haizokutenderi kuenderera kusvikira danho iri rapera**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Iyi ndiyo, kana Ultimate Multisite installation wizard yakakoma kuita setup yenyika yako, unogona kuita mapping ya domain custom ngayeri.
+Izvi zvinoreva kuti kana wizard yekuisa Ultimate Multisite yapedza kuseta netiweki yako, unogona kutanga kubatanidza domain yakasarudzika ipapo ipapo.
 
-Chii chinekuura kuti domain mapping mu Ultimate Multisite haina kune kunge kuita. Unenge uenda kuita function ya WordPress Multisite native domain mapping kana nzira inotra yanyanya dzinotariswa dzine mapping.
+Cherechedza kuti kubatanidza domain muUltimate Multisite hakusi kwekumanikidzwa. Une sarudzo yekushandisa basa reWordPress Multisite rekuzvarwa rekubatanidza domain kana chero imwe mhinduro yekubatanidza domain.
 
-Kana uchida kuva ndikubatsira kuti ndikubatsire nemafungiro ako pamusoro pe WordPress.
+Kana uchida kudzima kubatanidza domain kweUltimate Multisite kuti upe mukana kune dzimwe mhinduro dzekubatanidza domain, unogona kudzima chinhu ichi pasi pe**Ultimate Multisite > Zvirongwa > Kubatanidza Domain**.
 
-Kana uchida kunyera (disable) mapping ya domain ya Ultimate Multisite kuti uonde kwemweya kune zvinoreta mapping dzine chinangwa chinotevera, unogona kuva nekuona ifeature iyi panguva **Ultimate Multisite > Settings > Domain Mapping**.
+![Peji rezvirongwa zveKubatanidza Domain rinoratidza kutungamira admin, meseji yekubatanidza uye sarudzo dzeDNS](/img/config/domain-mapping-settings.png)
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+Pasi chaipo pesarudzo iyi, unogonawo kuona sarudzo **Manikidza Kutungamira Admin**. Sarudzo iyi inokubvumira kudzora kana vatengi vako vachikwanisa kuwana admin dashboard yavo pazvose domain yavo yakasarudzika nesubdomain kana pane chimwe chete chazvo.
 
-Panguva iyi, unogona kutaurawo option ya **Force Admin Redirect** (Kutevera Admin Redirect). Option iyi inokubatsira kuti uonde kuona kuti vanhu vavo vanogona kuenda kwenye dashboard yavo ya admin pama domain dzavo dzinotevera kana subdomain chete, kana kuti pama dzine chinangwa chimiri.
+Kana ukasarudza **Manikidza kutungamira kudomain yakabatanidzwa** , vatengi vako vachangokwanisa kuwana admin dashboard yavo pamadomain avo akasarudzika chete.
 
-Kana uri kuita **Force redirect to mapped domain** (Kutevera kune domain inotevera), vanhu vavo vanogona kuenda kwenye dashboard yavo ya admin pama custom domains chete.
+Sarudzo **Manikidza kutungamira ku** **domain yenetiweki** ichaita zvinopesana chaizvo - vatengi vako vachangobvumidzwa kuwana madashboard avo pasubdomain yavo chete, kunyangwe vachiedza kusaina pamadomain avo akasarudzika.
 
-Option ya **Force redirect to network domain** (Kutevera kune network domain) itaramba inogona kuti vanhu vavo vanogone kuenda kwenye dashboards yavo, kunyanya kana vanoda ku-sign in pama custom domains dzavo. Iyi inotevera zvinoreta chine chinangwa chimiri — vanhu vavo vanogone kuenda pama subdomain chete, pane vanoda ku-sign in pama custom domains dzavo.
+Uye sarudzo **Bvumira kupinda kuadmin kuburikidza nezvose domain yakabatanidzwa uye domain yenetiweki** inovabvumira kuwana admin dashboards dzavo pazvose subdomain nedomain yakasarudzika.
 
-Kana uri kuita **Allow access to the admin by both mapped domain domain and network domain** (Kubvumira kuenda kwenye admin nedomain inotevera uye network domain), vanhu vavo vanogone kuenda kwenye dashboards yavo ya admin pane subdomain uye pama custom domain chete.
+![Dropdown yeKutungamira Admin yakavhurwa ichiratidza sarudzo nhatu dzekutungamira](/img/config/domain-mapping-redirect-options.png)
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+Pane nzira mbiri dzekubatanidza domain yakasarudzika. Yekutanga ndeyekubatanidza zita redomain kubva kunetwork admin dashboard yako se super admin uye yechipiri iri kuburikidza nesubsite admin dashboard pasi pepeji reakaundi.
 
-Kune nzira kubva kune mapping ya custom domain. Imwe ndiyo kuita mapping ye domain name yakatiye (mapa) kubva mu network admin dashboard se super admin, uye imwe inogona kuita kupamba pama subsite admin dashboard pane account page.
-
-Asi munenge uchatanga kuita mapping ya custom domain kune subsites dzako mu network yako, unofanira kuona kuti **DNS settings** (mabasa ekutenderwa kwe DNS) ye domain name inowanikwa zvakanaka.
+Asi usati watanga kubatanidza domain yakasarudzika kune imwe yemasubsite munetiweki yako, uchafanira kuva nechokwadi chekuti **zvirongwa zveDNS** zvezita redomain zvakagadziriswa nemazvo.
 
 ###
 
-### Kuona kuti DNS settings ye domain inowanikwa zvakanaka
+### Kuva nechokwadi chekuti zvirongwa zveDNS zvedomain zvakagadziriswa nemazvo {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Kuti kuti kuti mapping iwe iwe kuitika, unofanira kuona kuti domain uyu uri kupfungwa kune IP address ye Network yako. Ndinonoda kuti uone IP address ye network - ip address ye domain inozivikanwa (where Ultimate Multisite inozivikanwa) - haina IP address ye custom domain uyo wantipa mapping. Kuti utsvaka IP address ye domain yakagadzirwa, tinonoda kuti uenda ku [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), kune misanidi, iwe vachikumbira.
+Kuti kubatanidza kushande, unofanira kuva nechokwadi chekuti domain yauri kuronga kubatanidza iri kunongedzera kuIP address yeNetwork yako. Cherechedza kuti unoda IP address yeNetwork - IP address yedomain kwakaiswa Ultimate Multisite - kwete IP address yedomain yakasarudzika yaunoda kubatanidza. Kuti utsvage IP address yedomain chaiyo, tinokurudzira kuenda ku[Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), semuenzaniso.
 
-Kuti mapping yekuonekane zvakanaka, unofanira kuita **A RECORD** munzvimbo inozivikanwa ye **DNS** yako kuti inopfungwa IP address iyo. DNS management inogara inotevera zvakawanda pakati pe domain registrars dzakasiyana-siyana, asi kune tutorials dzakawanda online dzinokubatsira kana uvaunoda kutsvaka " _Creating A Record on XXXX_ " where XXXX ndiyo registrar yako (ex.: " _Creating A Record on_ _GoDaddy_ ").
+Kuti ubatanidze domain nemazvo, unofanira kuwedzera **A RECORD** pakugadzirisa kwako kwe**DNS** inonongedzera ku**IP address** iyoyo. Kutungamira DNS kunosiyana zvikuru pakati pevanyoresi vemadomain vakasiyana, asi kune matutorial mazhinji online anotsanangura izvi kana ukatsvaga " _Kugadzira A Record paXXXX_ " apo XXXX ari munyoresi wedomain yako (semuenzaniso: " _Kugadzira A Record pa_ _GoDaddy_ ").
 
-Kana uri kuona kuti unowanikwa zvinhu kubva pano, **taura support ye domain registrar yako** uye vanoita zvakanaka kune iwo munzvimbo iyi.
+Kana ukazviwana uchinetseka kuita kuti izvi zvishande, **taura nerutsigiro rwemunyoresi wedomain yako** uye vachakwanisa kukubatsira pachikamu ichi.
 
-Kana uri kupfeka kuti vafana vako vaveone domain dzavo vekupfungwa (map), vachida kuita izvi vekuita vavo vekuti. Vamukumbire kuenda ku support ye registrar yavo kana vanokumbira kuti vaveone kuti vaingakwanisa kuita A Record.
+Kana uchironga kubvumira vatengi vako kubatanidza madomain avo pachavo, vachafanira kuita basa pachikamu ichi ivo pachavo. Vatungamire kusisitimu yerutsigiro rwemunyoresi wavo kana vakazviwana vasingakwanisi kugadzira A Record.
 
-### Kupfeka custom domain name se Super Admin
+### Kubatanidza zita redomain yakasarudzika seSuper Admin {#mapping-custom-domain-name-as-super-admin}
 
-Kana uri kupfungwa se super admin munzvimbo yako, unogona kuita uye kuita management kwecustom domain names zvakatarisa kuenda kune **Ultimate Multisite > Domains**.
+Paunenge wakapinda se super admin panetiweki yako, unogona kuwedzera nekutarisira mazita emadomain akasarudzika zviri nyore nekuenda pasi pe**Ultimate Multisite > Domains**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Peji yerondedzero yeDomains muUltimate Multisite](/img/admin/domains-list.png)
 
-Pasi munyore pasi pano, unogona kuklikira button we **Add Domain** uyu upiwe mupfupi uye uyu uva modal window inotipa kuita nekuita uye kuisa **custom domain name**, **the subsite** unoda kuteerera custom domain name iye, uye kuita zvinhu zvinoda kuti uisa se **primary domain** kana chero. (ziva kuti unogona kuita mapping we **domain names dzakawanda kune subsite imwe**).
+Pasi pepeji iri, unogona kudzvanya bhatani re**Wedzera Domain** pamusoro uye izvi zvichaunza hwindo remodal kwaunogona kuseta nekuzadza **zita redomain yakasarudzika** , **subsite** yaunoda kushandisa zita redomain yakasarudzika pairi, uye kusarudza kana uchida kurimisa se**zita redomain guru** kana kwete (cherechedza kuti unogona kubatanidza **mazita emadomain akawanda kune subsite imwe**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal yeWedzera Domain ine zita redomain, sarudzo yesaiti uye toggle yedomain guru](/img/admin/domain-add-modal.png)
 
-Panguva uyu wese waifamba nekuisa zvinhu, unogona kuklikira button we **Add Existing Domain** pamusoro.
+Mushure mekuisa ruzivo rwese, unogona kubva wadzvanya bhatani re**Wedzera Domain Iripo** pazasi.
 
-Izvi zvinotanga kuratidza uye kuita verification nekugadzirisa DNS information ya custom domain. Ugoonawo log pamusoro paunyangwe kuti ufuwe process inozviva. Izvi zvinhu zvichakanaka kunge kuva kune miniti miviri kuti zvinokumbira.
+Izvi zvichatanga maitiro ekusimbisa uye kutora ruzivo rweDNS rwedomain yakasarudzika. Uchaonawo log pazasi pepeji kuti utevere maitiro airi kufamba nawo. Maitiro aya anogona kutora maminitsi mashoma kuti apere.
 
-Ultimate Multisite v2.13.0 inogadzira automatically internal domain record kana site yakachena yakagadzirwa pamusoro we host inotevera kuti itizwiswa se domain ya chero. Kana host iwe ndiyo primary domain yenyika, kana iye yeho base domains dzakashandiswa mu field ye **Site URL**, zvinhu zvinogadzirwa zvemapped-domain dzine automatic zvinogadzirwa kuti base domain inenge inoshandiswa nesite dzese dzinoshandisa.
+Ultimate Multisite v2.13.0 inogadzirawo rekodhi yedomain yemukati otomatiki kana saiti itsva yagadzirwa pa host inofanira kubatwa sedomain yesaiti imwe neimwe. Kana host iri domain huru yenetiweki, kana imwe yemadomain ekutanga efomu rekubhadhara akagovaniswa akagadzirirwa pa **Saiti URL** field, rekodhi yedomain yakamapwa otomatiki inosvetukwa kuitira kuti domain yekutanga yakagovaniswa irambe ichiwanikwa kusaiti yega yega inoishandisa.
 
-**Stage** kana status inofanira kuva kubva **Checking DNS** kune **Ready** kana zvose zvakagadzirwa zvakanaka.
+Kana mutengi achinyoresa domain itsva kuburikidza ne Domain Seller v1.3.0 kana itsva kupfuura iyoyo, Ultimate Multisite inobva yamapira domain yakanyoreswa kusaiti yenetiweki yemutengi nekusarudzika. Vatongi havachadi kuwedzera rekodhi yakaparadzana yedomain yakamapwa mushure mekunyoresa kwabudirira kunze kwekunge vachida kugadzirisa sarudzo dzakadai semureza wedomain huru, mamiriro ekushanda, kana kubatwa kweSSL.
+
+**Danho** kana mamiriro anofanira kuchinja kubva pa **Kuongorora DNS** kuenda pa **Yagadzirira** kana zvese zvakagadzirwa zvakanaka.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Kana uingine domain name, unogona kuona zvinhu zvakawanda pamusoro yayo. Unenge uchiramba uone zvakanaka:
+Kana ukadzvanya pazita redomain, uchakwanisa kuona dzimwe sarudzo mukati maro. Ngatitarisei nekukurumidza kwadziri:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Peji reruzivo rwedomain rine danho, saiti, zvinoshanda, huru uye matoggles eSSL](/img/admin/domain-edit.png)
 
-**Stage:** Ichi ndiri iye stage inozvisono domaini riri. Kana uchida domaini wako, zvichakaitika kuti ichiingave pamba **Checking DNS**. Kuratidzo, izvi zvichakutenderera kuita neDNS entries uye kuitira kuti zvinonzi zvino zvinhu zvacho zviri ndiri zvakanaka. Ndondzo, domaini ichaunganidzirwa pamba **Checking SSL**. Ultimate Multisite ichachinja kana domaini inenge inoratidza SSL kana haina, uye ichachinja domaini yako kuva **Ready** kana **Ready (without SSL)**.
+**Danho:** Iri ndiro danho riri padomain. Paunotanga kuwedzera domain, ingangove iri padanho re **Kuongorora DNS**. Maitiro acho achaongorora zvinyorwa zveDNS uye asimbise kuti zvakarurama. Zvadaro, domain ichaiswa padanho re **Kuongorora SSL**. Ultimate Multisite ichaongorora kana domain iine SSL kana kuti kwete uye icharonga domain yako se **Yagadzirira** kana **Yagadzirira (pasina SSL)**.
 
-**Site:** Ichi ndiri subdomain inozvinowanikwa nemu domain iye. Domain inozvinonzi izvi ichoichiratidza content ya site iye.
+**Saiti:** Subdomain yakabatana nedomain iyi. Domain yakamapwa icharatidza zvirimo zvesaiti iyi chaiyo.
 
-**Active:** Unogona kuita kuti option iyi ine kana haina kuti ufanane kana kufamba nedomaini.
+**Inoshanda:** Unogona kuchinja sarudzo iyi on kana off kuti ushandise kana kudzima domain.
 
-**Is Primary Domain?:** Vamwe vana vakurudzwa (customers) vanogona kuva nemapamba anonyanyorwa (mapped domain) yakawanda pamba yese dzinowanikwa kune site iye. Shandisa option iyi kuti ufanane kana iye ndiri domaini inonyanyorwa (primary domain) yese dzinowanikwa kune site iye.
+**Iri Domain Huru Here?:** Vatengi vako vanogona kuva nemadomain akamapwa anopfuura rimwe pasaiti yega yega. Shandisa sarudzo iyi kusarudza kana iri domain huru yesaiti chaiyo.
 
-**Is Secure?:** Kunyangwe Ultimate Multisite ichichinja kana domaini inenge inoratidza SSL kana haina pamba itai, unogona kuita kuti ufanane kuti utangea domaini neine kana haina SSL certificate. Ndinonzi kuti zvinhu izvi: kana website haine SSL certificate uye unoda kuitira kuti utangea neine SSL, zvichakanaka kuti zvishandisa errors (matambudziko) anogona kuita.
+**Yakachengeteka Here?:** Kunyangwe Ultimate Multisite ichiongorora kana domain iine SSL certificate kana kuti kwete isati yaigonesa, unogona kusarudza nemaoko kurodha domain iine kana isina SSL certificate. Cherechedza kuti kana webhusaiti isina SSL certificate uye ukaedza kuimanikidza kurodha neSSL, inogona kukupa zvikanganiso.
 
-### Kuita mapping custom domain name se Subsite user
+### Kumapa zita redomain rakasarudzika semushandisi weSubsite {#mapping-custom-domain-name-as-subsite-user}
 
-Subsite administrators vanogonawo kuita mapping custom domain names kubva mu subsite admin dashboard yavo.
+Vatongi veSubsite vanogonawo kumapa mazita edomain akasarudzika kubva pa dashboard yekutonga ye subsite yavo.
 
-Mazuva akapfuma, unofanira kuona kuti ufanane option iyi pamba **Domain mapping** settings. Shoko screenshot:
+Kutanga, unofanira kuva nechokwadi chekuti wagonesa sarudzo iyi pasi pezvirongwa zve **Kumapa domain**. Ona mufananidzo uri pazasi.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Unogonawo kuitira kana kuita configuration option iyi pamba **Plan** level kana product options mu **Ultimate Multisite > Products**.
+Unogonawo kuseta kana kugadzirisa sarudzo iyi pasi pechikamu che **Plan** kana sarudzo dzechigadzirwa pa **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Chikamu cheMadomain Akasarudzika papeji rekugadzirisa chigadzirwa](/img/config/product-custom-domains.png)
 
-Nekuti iye nzira dzese optioni dziri kuonekwa uye kana mutsva we subsite anogone kuita mapping ye custom domain names, mutsva we subsite anogona kuona metabox yakaita **Account** page inosanganiswe ne **Domains**.
+Kana chero dzesarudzo idzodzo dzagoneswa uye mushandisi we subsite achibvumidzwa kumapa mazita edomain akasarudzika, mushandisi we subsite anofanira kuona metabox pasi pepeji re **Account** rinonzi **Madomain**.
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Mutsva anogona kuita click pama button ye **Add Domain** uye izvi dzochiratidza modal window inosanganiswe neinstruktsa dzakasiyana.
+Mushandisi anogona kudzvanya bhatani re **Wedzera Domain** uye richaunza hwindo remodal rine mimwe mirayiridzo.
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Mudzidzi anogona kuita click pama **Next Step** uye kuenda kuitira custom domain name. Anogonewo kunge anenge anaona kuti iwe ndiyo primary domain kana pane zvakasiyana.
+Mushandisi anogona kuzodzvanya **Danho Rinotevera** uye oenderera mberi nekuwedzera zita redomain rakasarudzika. Vanogonawo kusarudza kana iyi ichava domain huru kana kuti kwete.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Click pama **Add Domain** dzochiratidza kuratidza (verify) uye kuva neDNS information ye custom domain.
+Kudzvanya **Wedzera Domain** kuchatanga maitiro ekuongorora uye kutora ruzivo rweDNS rwedomain yakasarudzika.
 
-### Zvinhu Pamusoro PeDomain Syncing
+### Nezve Kuwiriranisa Domain {#about-domain-syncing}
 
-Domain Syncing ndiyo nzira inosanganiswe inozuva kuti Ultimate Multisite inenge inowanikira custom domain name yako mu hosting account yako seadd-on domain **kuti mapping yone iwe ine zvibatsiri**.
+Kuwiriranisa Domain inzira apo Ultimate Multisite inowedzera zita redomain rakasarudzika ku account yako yehosting sedomain yekuwedzera **kuti kumapa domain kushande**.
 
-Domain syncing inogona kuenda nekuti vendor ya hosting yako inenge inowanikira (integrate) nefeature ye domain mapping ya Ultimate Multisite. Hurei, vendor aya vanowanikwa kuti ndivo _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ uye _Cpanel._
+Kuwiriranisa domain kunoitika otomatiki kana mupi wako wehosting aine integration nechinhu chekumapa domain cheUltimate Multisite. Parizvino, vapi vehosting ava ndivo _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ uye _Cpanel._
 
-Kana integration ya host-provider inenge yakati, Ultimate Multisite inogona kuitira (enqueue) DNS kana subdomain creation task yezvinhu zvakachengetedza nesite dzakachengetedza. Kana usina integration inosimbisa task iyi, background job inozviswa kuti isingave kuva nenzira dzinovaka queue entries. Checks dzineDNS uye SSL dzine mapped domains dziri kunge dziri kuenda zvakanaka kuparamusika pfungwa yezvinhu zvedomain (domain-stage process).
+Kana integration yemupi wehost yashanda, Ultimate Multisite inogona zvakare kuisa mutsetse basa rekugadzira DNS kana subdomain kudivi remupi kumasaiti achangobva kugadzirwa. Kana pasina integration iri kuteerera basa iroro, basa rekumashure rinosvetukwa kudzivirira zvinyorwa zvemutsetse zvisina zvazvinoita. Kuongororwa kweDNS neSSL kwemadomain akamapwa kunoramba kuchimhanya kuburikidza nemaitiro akajairwa edanho redomain.
 
-Iriro uchikoro uyu integration mu Ultimate Multisite settings under **Integration** tab.
+Uchafanira kugonesa integration iyi pazvirongwa zveUltimate Multisite pasi petabhu ye **Integration**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+![Tabhu yeIntegrations muzvirongwa zveUltimate Multisite inoratidza vapi vehosting](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Ziva kuti kana hosting provider yako hairi muuno wese weve vachangoperekedzi veupenyu veunoda, **unoda ku sync kana kuenda ku add domain name** kune akaunti yako yehosting._
+_Cherechedza kuti kana mupi wako wehosting asiri mumwe wevapi vataurwa pamusoro,**uchafanira kuwiriranisa nemaoko kana kuwedzera zita redomain** ku account yako yehosting._

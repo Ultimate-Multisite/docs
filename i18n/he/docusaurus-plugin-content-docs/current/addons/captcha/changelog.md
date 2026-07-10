@@ -3,7 +3,7 @@ title: יומן שינויי Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# יומן שינויים של Captcha
+# יומן שינויים של Captcha {#captcha-changelog}
 
 גרסה: 1.5.0 - שוחררה ב-2026-05-22
 * חדש: מגביל קצב בעצירה מוחלטת (Hard-stop rate limiter) — סופר כל GET ו-POST בממשקים המוגנים על ידי קפטצ'ה (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ומגיב עם HTTP 429, כותרת `Retry-After`, והשהיית טרפיט (tarpit sleep) אקראית (1–5 שניות, עם תקרה מקסימלית של 15 שניות).

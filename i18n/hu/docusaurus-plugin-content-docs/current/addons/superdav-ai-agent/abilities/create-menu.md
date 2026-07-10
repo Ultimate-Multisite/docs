@@ -3,15 +3,15 @@ title: Menü létrehozása
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menü létrehozása
+# Menü létrehozása {#create-menu}
 
 Az **Menü létrehozása** funkciója lehetővé teszi a WordPress navigációs menüjének létrehozását, és támogatja az oldal címeitől független navigációs címkék használatát.
 
-## Áttekintő
+## Áttekintő {#overview}
 
 Ez a funkció kiterjeszti a standard menü létrehozási lehetőséget egy `navigation_label` paraméter hozzáadásával. Ez lehetővé teszi, hogy olyan menüeket hozz létre, ahol a navigációban megjelenő címke eltér az oldal címe(től), ezzel növelve a weboldal struktúrájának és a felhasználói élménynek rugalmasságát.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Paraméter | Típus | Kötelező | Leírás |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Ez a funkció kiterjeszti a standard menü létrehozási lehetőséget egy `navi
 | `location` | string | Nem | A témában meghatározott hely, ahová ezt a menüt kell hozzárendelni, pl. `primary` |
 | `navigation_label` | string | Nem | A navigációban megjelenő címke (különálló az oldal címtől) |
 
-## Visszaadott érték
+## Visszaadott érték {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Ez a funkció kiterjeszti a standard menü létrehozási lehetőséget egy `navi
 }
 ```
 
-## Navigációs címke vs. Oldal címe
+## Navigációs címke vs. Oldal címe {#navigation-label-vs-page-title}
 
 A `navigation_label` paraméter lehetővé teszi, hogy elválasztja a belső menü nevét az end felhasználóknak megjelenő címektől:
 
@@ -43,9 +43,9 @@ Ez hasznos, ha:
 - Több nyelvet kell támogatnia, és ezeknek eltérő hosszanatú címkéket kell használni
 - Menüeket kell létrehozni specifikus régiókra vagy felhasználói csoportokra
 
-## Használati példák
+## Használati példák {#usage-examples}
 
-### Példa 1: Egyszerű menü navigációs címkével
+### Példa 1: Egyszerű menü navigációs címkével {#example-1-simple-menu-with-navigation-label}
 
 **Kérdés:**
 ```
@@ -62,7 +62,7 @@ Létrehoz egy fő navigációs menüt, melynek neve "Main Navigation", és a nav
 }
 ```
 
-### Példa 2: Menü specifikus témakörnyezeti helyhez
+### Példa 2: Menü specifikus témakörnyezeti helyhez {#example-2-menu-for-specific-theme-location}
 
 **Kérdés:**
 ```
@@ -80,7 +80,7 @@ Létrehoz egy láblépő menüt, melynek neve "Footer Links", navigációs címk
 }
 ```
 
-## Integráció a Témakészítővel (Theme Builder)
+## Integráció a Témakészítővel (Theme Builder) {#integration-with-theme-builder}
 
 Ha a Theme Builder-t használja, a Create Menu funkció:
 
@@ -89,13 +89,13 @@ Ha a Theme Builder-t használja, a Create Menu funkció:
 3. Meghatározza a menüeket a megfelelő témamenü helyekre
 4. Támogatja a menüelemek hozzáadását a létrehozás után
 
-## Kapcsolódó funkciók
+## Kapcsolódó funkciók {#related-abilities}
 
 - **`add_menu_item`** — Elemek hozzáadása egy meglévő menühez
 - **`update_menu`** — Menü nevi átnevezése vagy átrendelése egy témamenü helyre
 - **`delete_menu`** — Menü eltávolítása az oldalról
 
-## Jó gyakorlatok
+## Jó gyakorlatok {#best-practices}
 
 - **Használjon világos navigációs címkéket** — tartsa a címkéket tömören és leíróként felhasználóknak
 - **Egyezessen a témamenü helyekkel** — rendelje el a menüeket a megfelelő témamenü helyre a megfelelő megjelenítés érdekében
@@ -103,14 +103,14 @@ Ha a Theme Builder-t használja, a Create Menu funkció:
 - **Tesztelje a responzivitást** — ellenőrizze, hogy a menüek megfelelően jelennek meg mobil eszközökön
 - **Lokálisítsa a címkéket** — használjon más navigációs címkéket különböző nyelvi verziókhoz
 
-## Korlátozások
+## Korlátozások {#limitations}
 
 - A navigációs címkék csak megjelenítő jellegűek; a belső `name` továbbra is használatos a WordPress azonosításához
 - A témakövetés változó; nem minden téma támogatja minden menü helyet
 - A menüelemeket külön kell hozzáadni a menü létrehozása után
 - Egy navigációs címke megváltoztatása megköveteli a menü frissítését
 
-## Kapcsolódó funkciók
+## Kapcsolódó funkciók {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — létrehoz logookat az oldal fejlécehez
 - [Validate Palette Contrast](./validate-palette-contrast.md) — biztosítja az elérhető színpalettákat

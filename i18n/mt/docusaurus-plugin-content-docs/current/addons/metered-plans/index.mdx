@@ -1,0 +1,117 @@
+---
+title: Pjanijiet bil-kejl
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Pjanijiet Imkejla {#metered-plans}
+
+L-addon Ultimate Multisite: Pjanijiet Imkejla jittrasforma kif tiffattura lill-klijenti tiegħek billi jintroduċi kapaċitajiet flessibbli ta' fatturazzjoni mkejla. Minflok limiti iebsin u riġidi li jimblukkaw lill-utenti meta jinqabżu, ippermetti ħlasijiet ta' eċċess li awtomatikament jiffatturaw lill-klijenti għal użu addizzjonali.
+
+## Karatteristiċi Ewlenin {#key-features}
+
+* **Fatturazzjoni Mkejla**: Iċċarġja lill-klijenti skont l-użu attwali minflok livelli fissi
+* **Ġestjoni tal-Eċċess**: Iffattura awtomatikament għal użu li jaqbeż il-limiti tal-pjan
+* **Traċċar tal-Użu**: Immonitorja l-konsum tar-riżorsi tal-klijenti f'ħin reali
+* **Prezzijiet Flessibbli**: Issettja rati personalizzati għal riżorsi differenti (ħażna, bandwidth, siti, eċċ.)
+* **Fatturazzjoni tat-Tokens tal-AI**: Ittraċċa u ffattura tokens ta' input u output għall-użu tal-AI fis-subsiti tal-klijenti
+* **Fatturazzjoni Awtomatika**: Iġġenera fatturi awtomatikament meta jinqabżu il-limiti tal-użu
+* **Rapporti tal-Użu**: Analitika dettaljata tal-użu u rappurtar għall-klijenti u l-amministraturi
+
+## Perfett Għal {#perfect-for}
+
+* **Fornituri tal-Hosting**: Offri pjanijiet skalabbli li jikbru mal-bżonnijiet tal-klijenti
+* **Pjattaformi SaaS**: Iffattura skont il-konsum attwali tar-riżorsi
+* **Netwerks ta' Aġenziji**: Mudelli ta' prezzijiet flessibbli għal proġetti tal-klijenti
+* **Hosting ta' Bejjiegħa mill-Ġdid**: Ippermetti lis-sħab joffru prezzijiet ibbażati fuq l-użu
+
+## Kif Jaħdem {#how-it-works}
+
+1. Ikkonfigura riżorsi mkejla (spazju fuq id-diska, bandwidth, numru ta' siti, eċċ.)
+2. Issettja limiti bażiċi tal-pjan u rati ta' eċċess
+3. Is-sistema awtomatikament tittraċċa l-użu fin-netwerk tiegħek
+4. Meta l-klijenti jaqbżu l-limiti, jiġu kkalkulati l-ħlasijiet ta' eċċess
+5. Il-fatturi jiġu ġġenerati awtomatikament skont iċ-ċiklu tal-fatturazzjoni
+6. Il-klijenti jistgħu jaraw l-użu tagħhom u l-ħlasijiet li ġejjin f'ħin reali
+
+## Fatturazzjoni tat-Tokens tal-AI {#ai-token-billing}
+
+Il-verżjoni 1.1.0 iżżid fatturazzjoni tat-tokens tal-AI għal netwerks li joffru karatteristiċi tal-AI permezz tal-WordPress AI Client SDK. Pjanijiet Imkejla jisimgħu għal talbiet ta' ġenerazzjoni AI kompluti, jirreġistraw l-għadd ta' tokens ta' input u output għas-subsite kurrenti, u jikkonvertu dawk it-tokens f'infiq AI fatturabbli għall-perjodu ta' fatturazzjoni kurrenti tal-klijent.
+
+Uża l-fatturazzjoni tat-tokens tal-AI meta trid toffri għodod AI fuq siti tal-klijenti mingħajr ma tassorbi spejjeż imprevedibbli tal-mudelli. Kull talba tiġi attribwita lis-subsite, lill-klijent, lis-sħubija, lill-fornitur, u lill-mudell sabiex l-amministraturi jkunu jistgħu jawditjaw l-użu filwaqt li l-klijenti jkunu jistgħu jaraw kif il-konsum tal-AI tagħhom jaffettwa l-kont tagħhom.
+
+### Ikkonfigura Rati Għal Kull Token {#configure-per-token-rates}
+
+Ir-rati tal-AI jiġu kkonfigurati għal kull mudell bħala rati separati ta' input u output. Ir-rati jiġu kkalkulati għal kull miljun tokens, li jaqbel mal-paġni komuni tal-prezzijiet tal-fornituri tal-AI.
+
+1. Fl-amministrazzjoni tan-network, iftaħ **Multisite Ultimate → Settings → Pjanijiet Imkejla**.
+2. Attiva l-kejl tal-infiq AI għall-prodott jew sħubija li għandha tiffattura l-użu tal-AI.
+3. Żid entrati tar-rati tal-mudelli billi tuża l-IDs tal-mudelli ritornati mill-konnettur tiegħek, bħal `gpt-4o`, `gpt-4o-mini`, jew identifikatur ieħor ta' mudell kompatibbli ma' OpenAI.
+4. Daħħal valuri separati ta' **Rata tal-Input** u **Rata tal-Output** fil-munita tas-sit tiegħek għal kull miljun tokens.
+5. Issettja l-allowance tal-infiq AI inkluża tal-klijent u l-imġiba tal-eċċess għall-pjan.
+
+Meta ID eżatt ta' mudell ma jkunx ikkonfigurat, Pjanijiet Imkejla jista' jqabbel skont il-prefiss tal-mudell. Pereżempju, rata kkonfigurata għal `claude-sonnet-4` tista' tapplika għal IDs ta' mudelli b'timestamp li jibdew b'dak il-prefiss. L-iżviluppaturi jistgħu wkoll jaġġustaw it-tabella finali tar-rati bil-filtru [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Konnetturi AI Appoġġjati {#supported-ai-connectors}
+
+Il-fatturazzjoni tat-tokens tal-AI taħdem ma' konnetturi li joħorġu avvenimenti ta' ġenerazzjoni tal-WordPress AI Client SDK u jinkludu l-użu tat-tokens fil-metadata tar-rispons. Dan jinkludi l-familja ta' konnetturi AI ta' Ultimate Multisite iddokumentata hawn:
+
+* [Konnettur Ultimate AI għal Endpoints Kompatibbli](../ultimate-ai-connector-compatible-endpoints/) għal APIs kompatibbli ma' OpenAI, inklużi OpenAI, Mistral, gateways kompatibbli ma' Ollama, u fornituri oħra li jesponu metadata kompatibbli tal-użu tat-tokens
+* [Konnettur Ultimate AI għal WebLLM](../ultimate-ai-connector-webllm/) għall-użu ta' WebLLM nattiv għall-browser meta t-talbiet jiġu rrottjati permezz tal-fluss tal-avvenimenti tal-AI Client SDK
+* Konnetturi ta' fornituri AI użati minn [Gratis AI Agent](../gratis-ai-agent/) meta l-fornitur magħżul jirrapporta għadd ta' tokens tal-prompt u tal-kompletament permezz tal-SDK
+
+Konnetturi personalizzati jistgħu jipparteċipaw billi jattivaw l-avvenimenti standard `wp_ai_client_before_generate_result` u `wp_ai_client_after_generate_result` b'metadata tal-mudell, tal-fornitur, u tal-użu tat-tokens. Is-settings tal-konnettur jiġu infurzati mis-sit ewlieni għas-subsiti sabiex is-siti tal-klijenti jużaw il-fornituri u l-limiti approvati min-network.
+
+### Użu tal-Kont tal-Klijent {#customer-account-usage}
+
+Il-klijenti jaraw l-użu tal-AI flimkien mar-riżorsi mkejla l-oħra tagħhom fiż-żona tal-kont tagħhom. Ir-ringiela tal-infiq AI turi t-total tal-perjodu ta' fatturazzjoni kurrenti derivat mit-tokens irreġistrati tal-prompt u tal-kompletament, mir-rati kkonfigurati tal-mudelli, u minn kwalunkwe allowance inkluża fil-pjan.
+
+Jekk klijent għandu metodu ta' ħlas fil-fajl, l-użu 'l fuq mill-allowance inkluża jitqies bħala eċċess fatturabbli. Jekk il-pjan ikun ikkonfigurat għal qtugħ iebes u l-klijent ma jkollux metodu ta' ħlas disponibbli, it-talbiet AI jistgħu jiġu mblukkati ladarba tintlaħaq l-allowance u l-klijent jiġi mħeġġeġ iżid dettalji tal-ħlas qabel ikompli.
+
+## Riżorsi Appoġġjati {#supported-resources}
+
+* Ħażna fuq id-diska
+* Bandwidth/trasferiment tad-data
+* Numru ta' siti
+* Numru ta' utenti
+* Użu tat-tokens tal-AI u infiq AI
+* Tipi ta' riżorsi personalizzati
+
+## Rekwiżiti {#requirements}
+
+* Multisite Ultimate 2.0.0 jew ogħla
+* Installazzjoni WordPress Multisite
+* PHP 7.4 jew ogħla
+
+## Installazzjoni {#installation}
+
+1. Tella' l-fajls tal-estensjoni għal `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Attiva l-estensjoni permezz tal-iskrin 'Estensjonijiet' f'WordPress
+3. Mur għal Multisite Ultimate → Settings → Pjanijiet Imkejla
+4. Ikkonfigura r-riżorsi mkejla u l-prezzijiet tiegħek
+5. Attiva l-fatturazzjoni mkejla għall-prodotti fl-editur tal-prodott
+
+## Mistoqsijiet Frekwenti {#frequently-asked-questions}
+
+## X'jiġri meta klijent jaqbeż il-limitu tiegħu? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Minflok ma jimblokka l-aċċess, is-sistema ssegwi l-eċċess u żżidu mal-fattura li jmiss tagħhom abbażi tar-rati li kkonfigurajt.
+
+## Nista' nissettja rati ta' eċċess differenti għal prodotti differenti? {#can-i-set-different-overage-rates-for-different-products}
+
+Iva, kull prodott jista' jkollu riżorsi mkejla u pprezzar tal-eċċess uniċi.
+
+## Kif jiġu nnotifikati l-klijenti dwar l-użu? {#how-are-customers-notified-about-usage}
+
+Il-klijenti jistgħu jaraw l-użu attwali tagħhom fid-Dashboard tagħhom u jirċievu notifiki fakultattivi meta jkunu qed joqorbu lejn il-limiti jew jaqbżuhom.
+
+## Kif jiġi pprezzat l-użu ta' tokens tal-AI? {#how-is-ai-token-usage-priced}
+
+L-użu ta' tokens tal-AI jiġi pprezzat mir-rati kkonfigurati tal-input u tal-output tal-mudell għal kull miljun token. Il-Pjanijiet Imkejla jimmultiplikaw l-għadd ta' tokens tal-prompt u tal-completion ta' kull talba b'dawk ir-rati, iżidu r-riżultat mal-infiq attwali tal-AI tal-klijent għall-perjodu tal-kontijiet, u japplikaw l-allowance tal-pjan jew ir-regoli tal-eċċess.
+
+## Nista' xorta nuża limiti stretti? {#can-i-still-use-hard-limits}
+
+Iva, il-kontijiet imkejla huma fakultattivi għal kull prodott. Tista' tħallat prodotti tradizzjonali b'limiti stretti ma' prodotti mkejla.

@@ -3,7 +3,7 @@ title: Zapier Integration
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integratioun vo Ultimate Multisite mit Zapier
+# Integratioun vo Ultimate Multisite mit Zapier {#integrating-ultimate-multisite-with-zapier}
 
 In ere Artikel hämmer mir über [Webhooks](webhooks.md) gsproche und wie mer die für d'Integration mit Drittanbieter-Applikatione bruche chönnt.
 
@@ -15,7 +15,7 @@ Du chasch **Triggers** erstelle, wo usglöst wärde, wenn Ereignis uf dim Netzwe
 
 Das isch möglich, will d'**Ultimate Multisite Zapier Triggers** und Actions dur d'[REST API](https://developer.ultimatemultisite.com/api/docs/) aagtriibe wärde.
 
-## Wie fangt mer aa?
+## Wie fangt mer aa? {#how-to-start}
 
 Zuerst suchsch du Ultimate Multisite i de Zapier App-Liste. Alternativ chasch du uf [diesen Link](https://zapier.com/apps/wp-ultimo/integrations) klicke.
 
@@ -51,7 +51,7 @@ Im Feld URL gibst du dini ganz Netzwerk-URL ii, inklusiv em Protokoll (HTTP oder
 
 Klick uf de Knopf **Yes, Continue**, um zur nächste Schritt z'cho. Wenn alles klappt, sölle Sie vo Ihrem neue verbundene Konto begrüesst werde! Klick uf **Continue**, um en neie Trigger z'erstelle.
 
-## Wie mer en neie Trigger erstellt
+## Wie mer en neie Trigger erstellt {#how-to-create-a-new-trigger}
 
 Jetzt, wo Ihr Konto verbunde isch, chönne Sie d'verfüegbare Events gseh. Wählemer für die Tutorial-Ufgab de Event **payment_received**.
 
@@ -67,7 +67,7 @@ In däm Schritt prüeft Zapier, ob Ihr Zap de **spezifischi payload zu däm Even
 
 In üsere Tutorial isch de Test **erfolgreich abgschlosse** und het d'Payload-Beispilsinformation zrugggäh. Dä Beispilsinformation wird eus helfe, wenn mir Aktionen erstelle. Din Trigger isch jetz erstellt und parat zum mit andere Applikatione verbunde z'si.
 
-## Wie mer Actions erstellt
+## Wie mer Actions erstellt {#how-to-create-actions}
 
 Actions bruche Informatione vo andere Triggern, um neui Einträg in dim Netzwerk z'erstelle.
 
@@ -79,7 +79,7 @@ Im nächste Schritt erstellsch entweder dini Authentifizierig, genau wie mirs bi
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Action iistelle
+### Action iistelle {#setting-up-the-action}
 
 Das isch de **Hauptschritt vom Action** und do sind d'Sache chli anders. D'ersti Information, wo du wählsch, isch s'**Item**. S'Item isch s'Informationsmodell vo dim Netzwerk wie **Customers, Payments, Sites, Emails** und anderi.
 

@@ -3,11 +3,11 @@ title: Plugin Yönetim Yetenekleri
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Yönetim Yetenekleri
+# Plugin Yönetim Yetenekleri {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0, konuşma sırasında AI asistanının çağırabileceği **7 plugin yönetim yeteneği** ile geliyor. Bu yetenekler, [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) üzerinden kurulan WordPress pluginleri üzerinde programatik kontrol sağlar.
 
-## Yeteneklere Genel Bakış
+## Yeteneklere Genel Bakış {#abilities-overview}
 
 | Yetenek | Slug | Açıklama |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0, konuşma sırasında AI asistanının çağırabileceği
 | Install Plugin | `install_plugin` | Sandbox'ta oluşturulmuş bir plugini canlı WordPress plugin dizinine dağıtır. |
 | Activate Plugin | `activate_plugin` | Sandbox'ta oluşturulmuş bir plugini wp-env sandbox ortamında etkinleştirir. |
 
-## Plugin Yükleyici API
+## Plugin Yükleyici API {#plugin-installer-api}
 
 Plugin yükleyici, pluginleri dağıtırken veya kaldırırken dosya sistemi işlemlerini yönetir. Temel davranışlar şunlardır:
 
@@ -28,7 +28,7 @@ Plugin yükleyici, pluginleri dağıtırken veya kaldırırken dosya sistemi iş
 - **Update**: Mevcut plugin dosyalarını değiştirir. Kısmi durum hatalarını önlemek için yazmadan önce plugini devre dışı bırakır.
 - **Delete by slug**: Slug ile plugin dizinini bulur, tüm sitelerde devre dışı bırakır ve ardından dizini kaldırır.
 
-### Özel Bir Kurulum İşleyicisi Kaydetme
+### Özel Bir Kurulum İşleyicisi Kaydetme {#registering-a-custom-install-handler}
 
 `gratis_ai_plugin_installer_before_install` ve `gratis_ai_plugin_installer_after_install` eylemlerini kullanarak kurulum yaşam döngüsüne takılabilirsiniz (hook):
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosistem Kaydı
+## Ekosistem Kaydı {#ecosystem-registry}
 
 Yetenekler, **plugin ekosistemi kaydı** aracılığıyla kaydedilir. Bu kayıt, yetenek slug'larını ilgili işleyici sınıflarına eşler ve bunları AI asistanının araç dağıtıcısına (tool dispatcher) sunar.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Entegrasyonu
+## HookScanner Entegrasyonu {#hookscanner-integration}
 
 `create_plugin` ve `update_plugin` yetenekleri, otomatik olarak **HookScanner**'ı yeni oluşturulan kod üzerinde çalıştırır. HookScanner, plugin tarafından kaydedilen WordPress action ve filter hook'larının bir listesini döndürür.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner, `vendor/` ve `node_modules/` dizinlerini otomatik olarak atlar.
 
-## Asenkron İş (Async Job) Mimarisi
+## Asenkron İş (Async Job) Mimarisi {#async-job-architecture}
 
 Uzun süren plugin işlemleri (oluşturma, yükleme), canlı ilerleme takibi ile **asenkron işler (async jobs)** olarak gönderilir. AI sohbet arayüzü ilerlemeyi sorgular ve durum güncellemelerini kullanıcıya yayınlar (stream):
 

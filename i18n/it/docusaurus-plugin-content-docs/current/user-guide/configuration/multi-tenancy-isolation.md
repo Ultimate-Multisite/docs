@@ -3,11 +3,11 @@ title: Isolamento Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolamento Multi-Tenant
+# Isolamento Multi-Tenant {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta isolamento de banco de dados e sistema de arquivos por subsite para inquilinos soberanos. Isso mantém os dados do inquilino separados, preservando o provisionamento de nível de rede, faturamento e administração.
 
-## Estratégia de Isolamento
+## Estratégia de Isolamento {#isolation-strategy}
 
 Use o isolamento soberano para clientes que necessitem de separação de dados mais forte, armazenamento de sistema de arquivos dedicado ou um limite de host separado.
 
@@ -18,7 +18,7 @@ Cada inquilino soberano deve ter:
 - Uma entrada no registro do inquilino que mapeia o site para seu banco de dados, caminho raiz, nome de host e modelo de isolamento.
 - Um resultado de verificação de migração antes que o inquilino seja considerado ativo.
 
-## Vinculação do Host do Banco de Dados
+## Vinculação do Host do Banco de Dados {#database-host-binding}
 
 A Versão 1.2.0 altera o comportamento padrão de vinculação de host na mesma máquina para instalações soberanas. Valores na mesma máquina, como `localhost`, são normalizados para que Bedrock, FrankenPHP e instalações do WordPress conteinerizadas possam conceder e verificar permissões contra a string de host que o MySQL realmente vê.
 
@@ -31,11 +31,11 @@ Ao configurar um inquilino soberano:
 
 Se a verificação relatar falhas na concessão, compare as concessões do usuário do DB do inquilino com a vinculação do host configurada. Um usuário concedido para `user@localhost` é diferente de `user@127.0.0.1` ou `user@%`.
 
-## Raiz do Sistema de Arquivos
+## Raiz do Sistema de Arquivos {#filesystem-root}
 
 La root del tenant deve essere stabile durante i riavvii e i deploy. Evita percorsi di mount temporanei. Per installazioni in stile Bedrock, conferma che la root del tenant punti alla web root di WordPress attesa dal bootstrap del tenant, non solo alla root del progetto.
 
-## Ordine di provisioning
+## Ordine di provisioning {#provisioning-order}
 
 Per i nuovi tenant sovrani, usa questo ordine:
 
@@ -49,7 +49,7 @@ Per i nuovi tenant sovrani, usa questo ordine:
 
 Questo ordine impedisce ai tenant parzialmente isolati di ricevere traffico prima che il database writer, gli utenti e il filesystem siano pronti.
 
-## Flussi di gestione dei clienti sovrani
+## Flussi di gestione dei clienti sovrani {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 mantiene le azioni di gestione dei clienti sul sito principale quando è abilitato il modo sovrano. Un tenant può comunque funzionare come installazione WordPress isolata, ma le azioni rivolte ai clienti che dipendono dalla fatturazione di rete, dall'adesione o dai dati dell'account condiviso dovrebbero reindirizzare il cliente al sito principale invece di tentare di completare l'azione all'interno del runtime del tenant.
 

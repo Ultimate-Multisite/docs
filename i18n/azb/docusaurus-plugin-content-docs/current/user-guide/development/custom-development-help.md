@@ -3,13 +3,13 @@ title: Custom Development Support
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable'dan Özel Geliştirme Yardımı Nasıl Alınır?
+# Codeable'dan Özel Geliştirme Yardımı Nasıl Alınır? {#how-to-get-custom-development-help-from-codeable}
 
 Bazen ağımızın tam olarak istediğimiz gibi akması için harika bir özelleştirmeye ihtiyacımız olur. Eğer aradığınız şey bu ise, Ultimate Multisite uzmanlığına sahip deneyimli geliştiriciler bulabileceğiniz bir yer olan [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)'ı tavsiye ederiz.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), müşterileri her büyüklükteki projede çalışabilecek nitelikli WordPress serbest geliştiricileriyle buluşturan bir platformdur. Aklınızdaki görev için özel olarak nitelikli uzmanlarla eşleştiğinizden emin olmak için titiz bir başvuru sürecine sahiptirler.
 
-### Codeable'da bir proje nasıl oluşturulur?
+### Codeable'da bir proje nasıl oluşturulur? {#how-to-create-a-project-in-codeable}
 
 Öncelikle [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)'a gidin ve **Start a Project** düğmesine tıklayın.
 

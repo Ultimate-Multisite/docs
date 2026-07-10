@@ -4,11 +4,11 @@ title: فیلتر - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Filter: wu_rest_get_items
+# Filter: wu_rest_get_items {#filter-wurestgetitems}
 
 این فیلتر تعیین می‌کند که آیا اجازه پردازش درخواست داده می‌شود یا خیر.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | توضیحات |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 | $rest_base | `array` | اسلاگ موجودیت. |
 | $this | `\Base_Manager` | نمونه شیء. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) در خط ۳۳۶ تعریف شده است.

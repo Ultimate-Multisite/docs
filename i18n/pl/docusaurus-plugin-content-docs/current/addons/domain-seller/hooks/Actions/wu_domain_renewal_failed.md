@@ -4,11 +4,11 @@ title: Akcja - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Akcja: wu_domain_renewal_failed
+# Akcja: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 Wyzwala się po nieudanej próbie odnowienia domeny.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Wyzwala się po nieudanej próbie odnowienia domeny.
 | $renewal_data | `array<string,mixed>` | Metadane odnowienia (nazwa domeny, lata itp.). |
 | $error_message | `string` | Łatwo czytelny komunikat o błędzie od rejestratora. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) w linii 630

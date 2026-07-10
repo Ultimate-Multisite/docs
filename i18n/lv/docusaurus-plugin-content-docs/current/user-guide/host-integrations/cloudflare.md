@@ -3,18 +3,18 @@ title: Cloudflare integrācija
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integrācija
+# Cloudflare Integrācija {#cloudflare-integration}
 
-## Īskatsauce
+## Īskatsauce {#overview}
 Cloudflare ir galvenais satura sniegšanas tīkls (CDN) un drošības pakalpojums, kas palīdz aizsargāt un ātrāk strādāt vietnes. Šī integrācija ļauj automātiskai domēna pārvaldīšanai starp Ultimate Multisite un Cloudflare, īpaši subdomain multisite instalācijās.
 
-## Funkcionalitātes
+## Funkcionalitātes {#features}
 - Automātiska subdomainu izveide Cloudflare.
 - Proxied subdomainu atbalsts.
 - DNS reģistru pārvaldība.
 - Uzlabotas DNS reģistru attēlošana Ultimate Multisite admin panelī.
 
-## Prasības
+## Prasības {#requirements}
 Jums jādefinē šādas konstantes savā `wp-config.php` failā:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'jūsu_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'jūsu_zone_id');
 ```
 
-## Iestatīšanas instrukcijas
+## Iestatīšanas instrukcijas {#setup-instructions}
 
-### 1. Saņemiet savu Cloudflare API kluātri (API Key)
+### 1. Saņemiet savu Cloudflare API kluātri (API Key) {#1-get-your-cloudflare-api-key}
 
 1. Loginieties uz savu Cloudflare dashboardu.
 2. Dodieties uz "My Profile" (klikšķiniet uz savas e-pasta adresi augšvecīnā).
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'jūsu_zone_id');
    - Zone.DNS: Edit (Rediģēt)
 5. Kopējiet savu API kluātri.
 
-### 2. Saņemiet savu Zone ID
+### 2. Saņemiet savu Zone ID {#2-get-your-zone-id}
 
 1. Savā Cloudflare dashboardā izvēlieties domēnu, ko vēlaties izmantot.
 2. Zone ID ir redzams "Overview" (Izskats) tabā, labajā pusē ap "API" sadaļas zem "Zone ID".
 3. Kopējiet Zone ID.
 
-### 3. Pievienojiet konstantes `wp-config.php` failā
+### 3. Pievienojiet konstantes `wp-config.php` failā {#3-add-constants-to-wp-configphp}
 
 Pievienojiet šo konstantes savam `wp-config.php` failam:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'jūsu_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'jūsu_zone_id');
 ```
 
-### 4. Iespējojiet integrāciju
+### 4. Iespējojiet integrāciju {#4-enable-the-integration}
 
 1. Savā WordPress admin panelī dodieties uz Ultimate Multisite > Settings (Iestatījumi).
 2. Navigējieties uz "Domain Mapping" (Domēnu mapi) tabu.
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'jūsu_zone_id');
 4. Iespējojiet Cloudflare integrāciju.
 5. Nospiediet "Save Changes" (Saglabāt izmaiņas).
 
-## Kā tas strādā
+## Kā tas strādā {#how-it-works}
 
-### Subdomainu pārvaldība
+### Subdomainu pārvaldība {#subdomain-management}
 
 Kad tiek radīts jauns vietnes instalācijā ar subdomain multisite:
 
@@ -67,7 +67,7 @@ Kad tiek radīts jauns vietnes instalācijā ar subdomain multisite:
 2. Subdomēna pēc defaulta ir konfiguriēta caur Cloudflare proxy (to šo var izveidot filtrus).
 3. Kad vietne tiek izslēgta, integrācija atņem subdomēnu no Cloudflare.
 
-### DNS rekurdīru attēlots
+### DNS rekurdīru attēlots {#dns-record-display}
 
 Integrācija uzlabo DNS rekurdīru redzamību Ultimate Multisite admin panelī šādi:
 
@@ -75,11 +75,11 @@ Integrācija uzlabo DNS rekurdīru redzamību Ultimate Multisite admin panelī �
 2. Parāda, vai rekurdīri ir proxy (vai nav)
 3. Rāda papildu informāciju par DNS rekurdīriem
 
-## Cloudflare custom hostnames
+## Cloudflare custom hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (laiku vai nosaukts "Cloudflare for SaaS") ir Cloudflare funkcija, kas ļauj jūsu klientiem izmantot savus domānos ar SSL-u jūsu multisite tīklā. Tas ir ieteikts pieeju domānu mapejamais multisite instalācijām, kas izmanto Cloudflare, jo Cloudflare automātiski pārvaldī rekurdīru sertifikāta izdošanu un atjaunošanu katram custom domānam.
 
-### Kā tas atšķiras no standarta Cloudflare integrācijas
+### Kā tas atšķiras no standarta Cloudflare integrācijas {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Standarta integrācija | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -99,23 +99,23 @@ Pilna API referance ir pieejama [Cloudflare Custom Hostnames dokumentācijai](ht
 Ultimate Multisite v2.6.1 no šī versijas sākot ar visiem pluginu iestatījumiem un labelēm šo funkciju nosaužam **Cloudflare Custom Hostnames**. Pirmais versijās to nosaukums bija "Cloudflare for SaaS", kas ir pamata Cloudflare produkta nosaukums.
 :::
 
-## Savi اہم paziņojumi
+## Savi اہم paziņojumi {#setting-up-cloudflare-custom-hostnames}
 
 At Cloudflare lasītās atjauninājumiem wildcard proxying tagad ir pieejams visiem klientiem. Tas nozīmē, ka standarta Cloudflare DNS integrācija nav tik kritika subdomēnu multisite instalācijām kā iepriekš, jo jūs vienkārši varat izveidot wildcard DNS ierakstu Cloudflare.
 
-## Kļūdu likums
+## Kļūdu likums {#important-notes}
 
-### API savienojuma problēmas
+### API savienojuma problēmas {#troubleshooting}
 - Pārbaudiet, vai jūsu API token ir pareizs un vai tas ir nepieciešamie iestatījumi.
 - Pārbaudiet, vai jūsu Zone ID ir pareizs.
 - Nodrošiniet, ka jūsu Cloudflare kontam ir nepieciešami atļaujas.
 
-### Subdomēna nav pievienota
+### Subdomēna nav pievienota {#api-connection-issues}
 - Pārbaudiet Ultimate Multisite logus jebkurām kļūdu ziņojumiem.
 - Pārbaudiet, vai subdomēna vēl nav pievienota Cloudflare.
 - Nodrošiniet, ka jūsu Cloudflare plāns atbalsta DNS ierakstu skaitu, ko jūs izveidojat.
 
-### Proxy problēmas
+### Proxy problēmas {#subdomain-not-added}
 
 * Ja jūs nevola, lai subdomēni tika proxyti, varat izmantot filtru `wu_cloudflare_should_proxy`.
 * Noteikumi var nepiemērots darboties labi, ja tie ir proxyti (piemēram, noteikumi dažām WordPress admin funkcijām).

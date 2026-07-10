@@ -4,11 +4,11 @@ title: Akce - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Vykonává se těsně před nastavením cookie pro ověření.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Vykonává se těsně před nastavením cookie pro ověření.
 | $scheme | `string` | Schéma ověření. Hodnoty zahrnují 'auth' nebo 'secure_auth'. |
 | $token | `string` | Token uživatele, který se použije pro toto cookie. |
 
-### Od
+### Od {#since}
 
 - 2.5.0
 - 4.9.0: Byl přidán parametr <code>$token</code>.
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) na řádku 124

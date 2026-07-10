@@ -3,19 +3,19 @@ title: راه‌اندازی Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# راه‌اندازی درگاه پرداخت Stripe (نسخه ۲)
+# راه‌اندازی درگاه پرداخت Stripe (نسخه ۲) {#setting-up-the-stripe-gateway-v2}
 
 _**نکته مهم: این مقاله مربوط به نسخه 2.x از Ultimate Multisite است.**_
 
 شما می‌توانید تا چهار روش پرداخت را در صفحه تنظیمات پرداخت فعال کنید: Stripe، Stripe Checkout، PayPal و پرداخت دستی. در این مقاله، نحوه اتصال به **Stripe** را بررسی می‌کنیم.
 
-## فعال‌سازی Stripe
+## فعال‌سازی Stripe {#enabling-stripe}
 
 برای فعال کردن Stripe به عنوان یک درگاه پرداخت در شبکه خود، به **Ultimate Multisite > Settings > Payments** بروید و گزینه **Stripe** یا **Stripe Checkout** را در بخش Active Payment Gateways فعال کنید.
 
 ![فعال‌سازی Stripe در درگاه‌های پرداخت](/img/config/settings-payment-gateways.png)
 
-### تفاوت Stripe و Stripe Checkout:
+### تفاوت Stripe و Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** با این روش، فیلدی برای وارد کردن شماره کارت اعتباری در صفحه پرداخت نمایش داده می‌شود.
 
@@ -47,7 +47,7 @@ _**نکته:** می‌توانید **Sandbox mode** را فعال کنید تا 
 
 ![وارد کردن کلیدهای Stripe در تنظیمات Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## راه‌اندازی Webhook در Stripe
+## راه‌اندازی Webhook در Stripe {#setting-up-stripe-webhook}
 
 Stripe از طریق webhook هر زمان که رویدادی در **حساب Stripe شما** رخ دهد، Ultimate Multisite را مطلع می‌کند.
 

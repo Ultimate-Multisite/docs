@@ -3,7 +3,7 @@ title: Ahoana ny fametrahana WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ahoana ny fametrahana WordPress Multisite?
+# Ahoana ny fametrahana WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Ny WordPress Multisite dia ahafahanao manana tambajotra (network) an'ireo tranokala maromaro ao anaty fampiasana iray. Ity dia tena azo atao fa tsy mandeha ho aktiva amin'ny fahataperana izany.
 
@@ -101,9 +101,9 @@ Mba famoronana subsite:
 
 Rehefa vita ny famenoana ireo toerana rehetra, tsindrio ny bokotra "Add site". Rehefa voforona ny subsite vaovao, mandehana ary afaka miditra azy mba hanamarinana fa miasa tsara ilay subsite.
 
-## Olana Mahazatra:
+## Olana Mahazatra: {#add-a-trailing-slash-to-wp-admin}
 
-### 1\. Afaka mamorona sites vaovao aho nefa tsy azo miditra izy ireo.
+### 1\. Afaka mamorona sites vaovao aho nefa tsy azo miditra izy ireo. {#common-problems}
 
 Raha nifidy subdomain ianao, mila manao koa fepetra ho an'ny wildcard subdomains ho an'ny tambajotra multisite anareo.
 

@@ -3,7 +3,7 @@ title: Potongan Kode
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Cuplikan Kode untuk v2
+# Cuplikan Kode untuk v2 {#code-snippets-for-v2}
 
 Pada dasarnya, cuplikan kode untuk **WordPress** digunakan untuk melakukan berbagai aksi yang mungkin membutuhkan plugin kecil tersendiri. Cuplikan kode seperti ini ditempatkan di salah satu file inti WordPress atau file tema (umumnya file functions.php dari tema Anda) atau dapat digunakan sebagai MU plugin.
 
@@ -15,13 +15,13 @@ Dalam artikel ini kami akan menunjukkan tiga cuplikan kode yang dapat digunakan 
 
   * [**Memperbaiki masalah CORS dengan Font-Icons di domain yang dipetakan**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Mengubah posisi menu item Account
+## Mengubah posisi menu item Account {#changing-the-position-of-the-account-menu-item}
 
 Untuk mengubah posisi menu item Account di Dashboard klien Anda, cukup tambahkan cuplikan kode berikut ke functions.php tema aktif situs utama Anda. Anda juga bisa menempatkan cuplikan ini di dalam salah satu mu-plugins atau plugin kustom Anda.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Sesuaikan nilai ini untuk menempatkan menu di posisi yang diinginkan.
 
-## Cara memeriksa apakah pengguna berada di plan tertentu dan/atau memiliki langganan aktif
+## Cara memeriksa apakah pengguna berada di plan tertentu dan/atau memiliki langganan aktif {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Sebagai admin jaringan, Anda mungkin perlu membuat fungsi kustom yang akan menjalankan aksi dasar atau menyediakan layanan/fitur untuk kelompok pelanggan atau pengguna akhir tertentu, berdasarkan status langganan mereka dan plan yang mereka ikuti.
 
@@ -47,8 +47,8 @@ Perlu diingat bahwa pengguna hanya dapat berlangganan **Plan**, bukan Package at
 
 ![Daftar produk yang menampilkan ID plan](/img/admin/products-list.png)
 
-## Memperbaiki masalah CORS dengan Font-Icons di domain yang dipetakan
-## Memperbaiki masalah CORS dengan Font-Icons di domain yang dipetakan
+## Memperbaiki masalah CORS dengan Font-Icons di domain yang dipetakan {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Memperbaiki masalah CORS dengan Font-Icons di domain yang dipetakan {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Setelah memetakan domain ke sub-site, Anda mungkin menemukan bahwa situs tersebut mengalami masalah dalam memuat font kustom. Hal ini disebabkan oleh pemblokiran cross-origin pada pengaturan server Anda.
 
@@ -56,13 +56,13 @@ Karena file font hampir selalu dimuat langsung dari CSS, plugin domain mapping k
 
 Berikut adalah cuplikan kode untuk memperbaiki masalah ini pada Apache dan NGINX. Perubahan ini membutuhkan pengetahuan lanjutan tentang file konfigurasi server (file .htaccess dan file konfigurasi NGINX). Jika Anda tidak nyaman melakukan perubahan ini sendiri, kirimkan halaman ini ke tim support penyedia hosting Anda ketika meminta bantuan.
 
-### Apache
+### Apache {#apache}
 
 Pada file .htaccess Anda, tambahkan:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 Pada file konfigurasi server Anda (lokasinya berbeda-beda tergantung server), tambahkan:
 

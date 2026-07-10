@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## అవసరాలు (Requirements)
+## అవసరాలు (Requirements) {#requirements}
 
 - WordPress 5.3 లేదా అంతకంటే ఎక్కువ
 - PHP 7.4 లేదా అంతకంటే ఎక్కువ
 - Multisite Ultimate ప్లగిన్ (యాక్టివేట్ చేయబడి ఉండాలి)
 
-## ఇన్‌స్టాలేషన్ (Installation)
+## ఇన్‌స్టాలేషన్ (Installation) {#installation}
 
 1. అడ్డాన్ ఫైళ్లను మీ `/wp-content/plugins/` డైరెక్టరీలోకి అప్‌లోడ్ చేయండి.
 2. WordPress లోని 'Plugins' మెనూ ద్వారా ప్లగిన్‌ను యాక్టివేట్ చేయండి.
 3. నెట్‌వర్క్ అడ్మిన్ లో అడ్డాన్ సెట్టింగ్‌లను కాన్ఫిగర్ చేయండి.
 
-## డెవలప్‌మెంట్ (Development)
+## డెవలప్‌మెంట్ (Development) {#development}
 
-### సెటప్ (Setup)
+### సెటప్ (Setup) {#setup}
 
 ```bash
 # డిపెండెన్సీలను ఇన్‌స్టాల్ చేయండి
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ప్రాజెక్ట్ స్ట్రక్చర్ (Project Structure)
+### ప్రాజెక్ట్ స్ట్రక్చర్ (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # కోడ్ ఆధునికీకరణ నియమాలు
 ```
 
-### టెస్టింగ్ (Testing)
+### టెస్టింగ్ (Testing) {#testing}
 
 ఈ అడ్డాన్‌లో సమగ్రమైన టెస్టింగ్ ఫ్రేమ్‌వర్క్ ఉంది:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **టెస్ట్ కవరేజ్ (Test Coverage)**: కోడ్ కవరేజీని ట్రాక్ చేయడానికి కాన్ఫిగర్ చేయబడింది.
 - **మల్టీసైట్ టెస్టింగ్ (Multisite Testing)**: టెస్ట్‌లు మల్టీసైట్ ఎన్విరాన్‌మెంట్‌లో రన్ అవుతాయి.
 
-### కోడ్ స్టాండర్డ్స్ (Code Standards)
+### కోడ్ స్టాండర్డ్స్ (Code Standards) {#code-standards}
 
 - **WordPress కోడింగ్ స్టాండర్డ్స్**: PHPCS ద్వారా అమలు చేయబడుతుంది.
 - **PHP 7.4+ అనుకూలత**: ఆధునిక PHP ఫీచర్లు మద్దతు ఇస్తాయి.
 - **స్టాటిక్ అనాలిసిస్ (Static Analysis)**: టైప్ చెకింగ్ కోసం PHPStan ఇంటిగ్రేషన్.
 - **కోడ్ ఆధునికీకరణ (Code Modernization)**: PHP అప్‌గ్రేడ్‌ల కోసం Rector నియమాలు.
 
-### బిల్డ్ సిస్టమ్ (Build System)
+### బిల్డ్ సిస్టమ్ (Build System) {#build-system}
 
 - **ఆస్తి ప్రాసెసింగ్ (Asset Processing)**: CSS/JS ఫైళ్ల కోసం మినిఫికేషన్.
 - **అనువాదం (Translation)**: POT ఫైల్ జనరేషన్.
 - **ప్యాకేజింగ్ (Packaging)**: పంపిణీ కోసం ఆర్కైవ్ సృష్టి.
 - **డెవలప్‌మెంట్ మోడ్ (Development Mode)**: డీబగ్గింగ్ కోసం మినిఫై చేయని ఆస్తులు.
 
-## కాన్ఫిగరేషన్ (Configuration)
+## కాన్ఫిగరేషన్ (Configuration) {#configuration}
 
 ఈ అడ్డాన్ నెట్‌వర్క్ అడ్మిన్ ఇంటర్‌ఫేస్ ద్వారా యాక్సెస్ చేయగల వివిధ కాన్ఫిగరేషన్ ఎంపికలను మద్దతు ఇస్తుంది.
 
-## హుక్స్ మరియు ఫిల్టర్లు (Hooks and Filters)
+## హుక్స్ మరియు ఫిల్టర్లు (Hooks and Filters) {#hooks-and-filters}
 
-### యాక్షన్స్ (Actions)
+### యాక్షన్స్ (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - అడ్డాన్ ప్రారంభమైన తర్వాత ట్రిగ్గర్ అవుతుంది.
 - `ultimate-multisite-ai-site-builder_loaded` - అన్ని అడ్డాన్ ఫైళ్లు లోడ్ అయిన తర్వాత ట్రిగ్గర్ అవుతుంది.
 
-### ఫిల్టర్లు (Filters)
+### ఫిల్టర్లు (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - అడ్డాన్ సెట్టింగ్‌లను మార్చడానికి.
 - `ultimate-multisite-ai-site-builder_enabled` - అడ్డాన్ ఎనేబుల్/డిసేబుల్ స్థితిని ఓవర్‌రైడ్ చేయడానికి.
 
-## లైసెన్స్ (License)
+## లైసెన్స్ (License) {#license}
 
 ఈ అడ్డాన్ GPL v3 లేదా అంతకంటే ఎక్కువ కింద లైసెన్స్ చేయబడింది.
 
-## సపోర్ట్ (Support)
+## సపోర్ట్ (Support) {#support}
 
 సపోర్ట్ మరియు డాక్యుమెంటేషన్ కోసం, [MultisiteUltimate.com](https://multisiteultimate.com) ని సందర్శించండి.
-## ఛేంజ్‌లాగ్ (Changelog)
+## ఛేంజ్‌లాగ్ (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): ప్రిఫిక్స్‌ను ultimate-multisiteకి పేరు మార్చారు; టెక్స్ట్ డొమైన్‌ను అప్‌డేట్ చేశారు; వెర్షన్ బంప్.
 

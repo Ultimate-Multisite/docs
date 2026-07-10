@@ -4,27 +4,26 @@ title: Filtro - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filtro: wu_apc_process_page_content
+# Filtro: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Consente agli sviluppatori di modificare il contenuto finale
 
-## Parameters
+## Parametri {#parameters}
 
-| Name | Type | Description |
+| Nome | Tipo | Descrizione |
 |------|------|-------------|
-| $content | `string` | Contenuto dopo le sostituzioni. |
-| $content_before_processing | `string` | Contenuto prima delle sostituzioni. |
-| $to_replace | `array` | Array contenente i segnaposto da sostituire. |
-| $placeholder_count | `int` | Numero di segnaposto trovati. |
+| $content | `string` | Content after replacements. |
+| $content_before_processing | `string` | Content pre replecements. |
+| $to_replace | `array` | Array containing the placeholders hold. |
+| $placeholder_count | `int` | Number of placeholders found. |
 
-### Since
+### Dalla versione {#since}
 
 - 1.4.0
+### Sorgente {#source}
 
-### Source
+Definito in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) alla riga 46
 
-Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) at line 46
 
-## Returns
-
+## Restituisce {#returns}
 Contenuto dopo la modifica.

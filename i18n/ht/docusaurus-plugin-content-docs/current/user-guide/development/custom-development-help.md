@@ -3,13 +3,13 @@ title: Ayitèl Devlopman Konpayi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Kijan ou ka jwenn èdiksyon devlopman espesyal nan Codeable?
+# Kijan ou ka jwenn èdiksyon devlopman espesyal nan Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Parfois, nou bezwen yon kòmansman espesyal pou fè flò nou yo egzak jan nou vle yo. Si se sa ou ap chèche, nou rekòmande [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), yon kote ou ka jwenn devlopè ki gen eksperyans ak espesyalizasyon Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) se yon platfòm ki konekte kliyan yo ak devlopè WordPress freelance ki kwalifikasyon, ki kapab travay sou pwojè de tout gwosè. Yo gen pwosesis aplikasyon trè atansyon pou asire ou ap jwenn eksperts espesyalman kwalifikasyon pou travay ou vle a.
 
-### Kijan pou w kreye yon pwojè nan Codeable?
+### Kijan pou w kreye yon pwojè nan Codeable? {#how-to-create-a-project-in-codeable}
 
 Premye bagay, ale sou [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) epi klike sou bouton **Start a Project** (Kòmanse yon Pwojè).
 

@@ -1,148 +1,156 @@
 ---
-title: Tùy chỉnh Biểu mẫu Đăng ký của Bạn
+title: Tùy chỉnh biểu mẫu đăng ký của bạn
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Tùy chỉnh Biểu mẫu Đăng ký
+# Tùy chỉnh Biểu mẫu đăng ký của bạn {#customizing-your-registration-form}
 
-Để tạo nên sự khác biệt cho mạng lưới của bạn so với các SaaS khác được xây dựng trên nền tảng WordPress, Ultimate Multisite cho phép bạn tùy chỉnh trang đăng ký và đăng nhập thông qua tính năng **Checkout Forms** (Biểu mẫu thanh toán).
+Để làm cho mạng của bạn trông độc đáo so với tất cả các SaaS khác được xây dựng trên nền tảng WordPress, Ultimate Multisite cho phép bạn tùy chỉnh các trang đăng ký và đăng nhập bằng tính năng **Biểu mẫu thanh toán** của chúng tôi.
 
-Mặc dù đây là cách dễ dàng và linh hoạt để thử nghiệm nhiều phương pháp khác nhau nhằm chuyển đổi khách hàng mới, nhưng chúng chủ yếu được dùng để tạo các biểu mẫu đăng ký được cá nhân hóa. Bài viết này sẽ hướng dẫn bạn cách thực hiện điều đó.
+Mặc dù chúng là một cách dễ dàng và linh hoạt để thử nghiệm các phương pháp khác nhau khi cố gắng chuyển đổi khách hàng mới, chúng chủ yếu được dùng để tạo các biểu mẫu đăng ký được cá nhân hóa. Bài viết này nhằm chỉ cho bạn cách thực hiện điều đó.
 
-## Trang đăng nhập và đăng ký:
+## Trang đăng nhập và đăng ký: {#login-and-registration-pages}
 
-Khi cài đặt Ultimate Multisite, plugin sẽ tự động tạo các trang đăng nhập và đăng ký tùy chỉnh trên trang web chính của bạn. Bạn có thể thay đổi các trang mặc định này bất cứ lúc nào bằng cách vào **Ultimate Multisite > Settings > Login & Registration**.
+Khi cài đặt Ultimate Multisite, nó tự động tạo các trang đăng nhập và đăng ký tùy chỉnh trên trang chính của bạn. Bạn có thể thay đổi các trang mặc định này bất cứ lúc nào bằng cách vào trang **Ultimate Multisite > Cài đặt > Đăng nhập & Đăng ký**.
 
 ![Trang cài đặt Đăng nhập và Đăng ký](/img/config/settings-general.png)
 
-Hãy cùng xem qua từng tùy chọn mà bạn có thể tùy chỉnh trên trang **Login & Registration**:
+Dưới đây là chế độ xem đầy đủ của trang cài đặt đăng nhập và đăng ký:
 
-  * **Enable registration:** Tùy chọn này sẽ bật hoặc tắt chức năng đăng ký trên mạng lưới của bạn. Nếu tắt, khách hàng sẽ không thể đăng ký và mua các sản phẩm của bạn.
+![Trang đầy đủ cài đặt Đăng nhập và Đăng ký](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Nếu tùy chọn này được bật, những khách hàng đăng ký gói miễn phí hoặc gói trả phí có thời gian dùng thử sẽ nhận được email xác minh và cần nhấp vào liên kết xác minh để website của họ được tạo.
+Hãy xem từng tùy chọn bạn có thể tùy chỉnh trên trang **Đăng nhập & Đăng ký**:
 
-  * **Default registration page:** Đây là trang đăng ký mặc định. Trang này cần được xuất bản trên website của bạn và có biểu mẫu đăng ký (còn gọi là checkout form) - nơi khách hàng sẽ đăng ký sử dụng sản phẩm của bạn. Bạn có thể tạo bao nhiêu trang đăng ký và checkout form tùy thích, chỉ cần nhớ đặt shortcode của checkout form vào trang đăng ký, nếu không biểu mẫu sẽ không hiển thị.
+  * **Bật đăng ký:** Tùy chọn này sẽ bật hoặc tắt đăng ký trên mạng của bạn. Nếu tùy chọn này bị tắt, khách hàng của bạn sẽ không thể đăng ký và đăng ký theo dõi các sản phẩm của bạn.
 
-  * **Use custom login page:** Tùy chọn này cho phép bạn sử dụng trang đăng nhập tùy chỉnh, khác với trang wp-login.php mặc định. Nếu bật tùy chọn này, bạn có thể chọn trang sẽ được dùng để đăng nhập trong tùy chọn **Default login page** (ngay bên dưới).
+  * **Bật xác minh email:** Nếu tùy chọn này được bật, khách hàng đăng ký theo dõi gói miễn phí hoặc gói trả phí có thời gian dùng thử sẽ nhận được email xác minh và sẽ cần nhấp vào liên kết xác minh để các website của họ được tạo.
 
-  * **Obfuscate the original login url (wp-login.php)**: Nếu bạn muốn ẩn URL đăng nhập gốc, bạn có thể bật tùy chọn này. Điều này hữu ích để ngăn chặn các cuộc tấn công brute-force. Khi tùy chọn này được bật, Ultimate Multisite sẽ hiển thị lỗi 404 khi người dùng cố truy cập liên kết wp-login.php gốc.
+  * **Trang đăng ký mặc định:** Đây là trang mặc định cho đăng ký. Trang này cần được xuất bản trên website của bạn và có một biểu mẫu đăng ký (còn được gọi là biểu mẫu thanh toán) - nơi khách hàng của bạn sẽ đăng ký theo dõi các sản phẩm của bạn. Bạn có thể tạo bao nhiêu trang đăng ký và biểu mẫu thanh toán tùy ý, chỉ cần nhớ đặt shortcode biểu mẫu thanh toán trên trang đăng ký, nếu không nó sẽ không xuất hiện.
 
-  * **Force synchronous site publication:** Sau khi khách hàng đăng ký một sản phẩm trên mạng lưới, trang web đang chờ xử lý cần được chuyển đổi thành một trang mạng lưới thực sự. Quá trình xuất bản diễn ra qua Job Queue theo cách bất đồng bộ. Bật tùy chọn này để buộc quá trình xuất bản xảy ra trong cùng một request với quá trình đăng ký.
+  * **Sử dụng trang đăng nhập tùy chỉnh:** Tùy chọn này cho phép bạn sử dụng một trang đăng nhập đã tùy chỉnh, khác với trang wp-login.php mặc định. Nếu tùy chọn này được bật, bạn có thể chọn trang nào sẽ được dùng để đăng nhập trong tùy chọn **Trang đăng nhập mặc định** (ngay bên dưới).
 
-Bây giờ, hãy xem các tùy chọn khác vẫn liên quan đến quá trình đăng nhập và đăng ký. Chúng nằm ngay bên dưới **Other options** trên cùng trang Login & registration:
+  * **Làm rối url đăng nhập gốc (wp-login.php)** : Nếu bạn muốn ẩn URL đăng nhập gốc, bạn có thể bật tùy chọn này. Điều này hữu ích để ngăn chặn các cuộc tấn công brute-force. Nếu tùy chọn này được bật, Ultimate Multisite sẽ hiển thị lỗi 404 khi người dùng cố gắng truy cập liên kết wp-login.php gốc
 
-  * **Default role:** Đây là vai trò mà khách hàng sẽ có trên website của họ sau quá trình đăng ký.
+  * **Buộc xuất bản site đồng bộ:** Sau khi khách hàng đăng ký theo dõi một sản phẩm trên một mạng, site mới đang chờ xử lý cần được chuyển đổi thành một site mạng thực sự. Quá trình xuất bản diễn ra thông qua Job Queue, không đồng bộ. Bật tùy chọn này để buộc việc xuất bản diễn ra trong cùng yêu cầu với đăng ký.
 
-  * **Add users to the main site as well:** Bật tùy chọn này sẽ thêm người dùng vào trang web chính của mạng lưới sau quá trình đăng ký. Nếu bạn bật tùy chọn này, một tùy chọn để đặt **default role** cho những người dùng này trên website của bạn cũng sẽ xuất hiện ngay bên dưới.
+Bây giờ, hãy xem các tùy chọn khác vẫn liên quan đến quy trình đăng nhập và đăng ký. Chúng nằm ngay bên dưới **Tùy chọn khác** trên cùng trang Đăng nhập & đăng ký:
 
-  * **Enable multiple accounts:** Cho phép người dùng có tài khoản ở nhiều trang web khác nhau trong mạng lưới của bạn với cùng một địa chỉ email. Nếu tắt tùy chọn này, khách hàng sẽ không thể tạo tài khoản trên các website khác trong mạng lưới của bạn với cùng địa chỉ email.
+  * **Vai trò mặc định:** Đây là vai trò mà khách hàng của bạn sẽ có trên website của họ sau quy trình đăng ký.
 
-Và đó là tất cả các tùy chọn liên quan đến đăng nhập và đăng ký mà bạn có thể tùy chỉnh! Đừng quên lưu cài đặt sau khi bạn hoàn tất chỉnh sửa.
+  * **Bật Jumper:** Bật lối tắt Jumper trong khu vực quản trị. Jumper cho phép quản trị viên nhanh chóng nhảy đến các màn hình Ultimate Multisite, đối tượng mạng và các đích được hỗ trợ khác mà không cần duyệt qua từng menu. Tắt tùy chọn này nếu bạn muốn ẩn công cụ điều hướng nhanh đó khỏi giao diện quản trị.
 
-## Sử dụng nhiều biểu mẫu đăng ký:
+  * **Thêm người dùng vào trang chính nữa:** Bật tùy chọn này cũng sẽ thêm người dùng vào trang chính của mạng của bạn sau quy trình đăng ký. Nếu bạn bật tùy chọn này, một tùy chọn để đặt **vai trò mặc định** của những người dùng này trên website của bạn cũng sẽ xuất hiện ngay bên dưới.
 
-Ultimate Multisite 2.0 cung cấp trình soạn thảo checkout form cho phép bạn tạo bao nhiêu biểu mẫu tùy thích, với các trường khác nhau, các sản phẩm được đề xuất khác nhau, v.v.
+  * **Bật nhiều tài khoản:** Cho phép người dùng có tài khoản ở các site khác nhau trong mạng của bạn với cùng một địa chỉ email. Nếu tùy chọn này tắt, khách hàng của bạn sẽ không thể tạo tài khoản trên các website khác đang chạy trên mạng của bạn bằng cùng một địa chỉ email.
 
-Cả trang đăng nhập và đăng ký đều được nhúng bằng shortcode: **[wu_login_form]** cho trang đăng nhập và **[wu_checkout]** cho trang đăng ký. Bạn có thể tùy chỉnh thêm trang đăng ký bằng cách xây dựng hoặc tạo các checkout form.
+Và đó là tất cả các tùy chọn liên quan đến đăng nhập và đăng ký mà bạn có thể tùy chỉnh! Đừng quên lưu cài đặt sau khi bạn chỉnh sửa xong.
 
-Để truy cập tính năng này, vào menu **Checkout Forms** ở thanh bên trái.
+## Sử dụng nhiều biểu mẫu đăng ký: {#using-multiple-registration-forms}
 
-![Menu Checkout Forms ở thanh bên](/img/config/checkout-forms-list.png)
+Ultimate Multisite 2.0 cung cấp một trình chỉnh sửa biểu mẫu thanh toán cho phép bạn tạo bao nhiêu biểu mẫu tùy ý, với các trường khác nhau, sản phẩm được cung cấp, v.v.
 
-Trên trang này, bạn có thể xem tất cả các checkout form mà bạn có.
+Cả trang đăng nhập và đăng ký đều được nhúng bằng shortcode: **[wu_login_form]** trên trang đăng nhập và**[wu_checkout]** cho trang đăng ký. Bạn có thể tùy chỉnh thêm trang đăng ký bằng cách xây dựng hoặc tạo các biểu mẫu thanh toán.
 
-Nếu bạn muốn tạo một biểu mẫu mới, chỉ cần nhấp vào **Add Checkout Form** ở đầu trang.
+Để truy cập tính năng này, hãy đi tới menu **Biểu mẫu thanh toán**, ở thanh bên trái.
 
-Bạn có thể chọn một trong ba tùy chọn làm điểm bắt đầu: single step (một bước), multi-step (nhiều bước) hoặc blank (trống). Sau đó, nhấp **Go to the Editor**.
+![Menu Biểu mẫu thanh toán trong thanh bên](/img/config/checkout-forms-list.png)
 
-![Thêm Checkout Form với các tùy chọn single step, multi-step hoặc blank](/img/config/checkout-forms-list.png)
+Trên trang này, bạn có thể thấy tất cả các biểu mẫu thanh toán bạn có.
 
-Ngoài ra, bạn có thể chỉnh sửa hoặc sao chép các biểu mẫu bạn đã có bằng cách nhấp vào các tùy chọn bên dưới tên của nó. Ở đó, bạn cũng sẽ tìm thấy các tùy chọn để sao chép shortcode của biểu mẫu hoặc xóa biểu mẫu.
+Nếu bạn muốn tạo một biểu mẫu mới, chỉ cần nhấp vào **Thêm Biểu mẫu thanh toán** ở đầu trang.
 
-![Các thao tác khi di chuột vào checkout form với chỉnh sửa, sao chép và xóa](/img/config/checkout-form-hover-actions.png)
+Bạn có thể chọn một trong ba tùy chọn này làm điểm bắt đầu: một bước, nhiều bước hoặc trống. Sau đó, nhấp vào **Đi tới Trình chỉnh sửa**.
 
-Nếu bạn chọn single step hoặc multi-step, checkout form sẽ được điền sẵn các bước cơ bản để hoạt động. Sau đó, nếu muốn, bạn có thể thêm các bước bổ sung vào đó.
+![Thêm Biểu mẫu thanh toán với các tùy chọn một bước, nhiều bước hoặc trống](/img/config/checkout-forms-list.png)
 
-### Chỉnh sửa Checkout Form:
+Ngoài ra, bạn có thể chỉnh sửa hoặc nhân bản các biểu mẫu bạn đã có bằng cách nhấp vào các tùy chọn bên dưới tên của nó. Ở đó, bạn cũng sẽ tìm thấy các tùy chọn để sao chép shortcode của biểu mẫu hoặc xóa biểu mẫu.
 
-Như chúng tôi đã đề cập trước đó, bạn có thể tạo checkout form cho nhiều mục đích khác nhau. Trong ví dụ này, chúng ta sẽ làm việc với một biểu mẫu đăng ký.
+![Các hành động khi rê chuột trên biểu mẫu thanh toán với chỉnh sửa, nhân bản và xóa](/img/config/checkout-form-hover-actions.png)
 
-Sau khi điều hướng đến trình soạn thảo checkout form, đặt tên cho biểu mẫu (chỉ dùng để tham khảo nội bộ) và một slug (được dùng để tạo shortcode, chẳng hạn).
+Nếu bạn chọn một bước hoặc nhiều bước, biểu mẫu thanh toán sẽ đã được điền sẵn các bước cơ bản để nó hoạt động. Sau đó, nếu muốn, bạn có thể thêm các bước bổ sung vào đó.
 
-![Trình soạn thảo checkout form với các trường tên và slug](/img/config/checkout-form-editor.png)
+### Chỉnh sửa Biểu mẫu thanh toán: {#editing-a-checkout-form}
 
-Các biểu mẫu được tạo thành từ các bước và trường. Bạn có thể thêm bước mới bằng cách nhấp vào **Add New Checkout Step**.
+Như chúng tôi đã đề cập trước đó, bạn có thể tạo biểu mẫu thanh toán cho các mục đích khác nhau. Trong ví dụ này, chúng ta sẽ làm việc trên một biểu mẫu đăng ký.
 
-![Nút Add New Checkout Step](/img/config/checkout-form-add-step.png)
+Sau khi điều hướng đến trình chỉnh sửa biểu mẫu thanh toán, hãy đặt tên cho biểu mẫu của bạn (chỉ được dùng để tham chiếu nội bộ) và một slug (được dùng để tạo shortcakes, chẳng hạn).
 
-Trên tab đầu tiên của cửa sổ modal, điền nội dung cho bước của biểu mẫu. Đặt ID, tên và mô tả. Các mục này chủ yếu được sử dụng nội bộ.
+![Trình chỉnh sửa biểu mẫu thanh toán với các trường tên và slug](/img/config/checkout-form-name-slug.png)
 
-![Tab nội dung bước checkout với ID, tên và mô tả](/img/config/checkout-form-step.png)
+Biểu mẫu được tạo từ các bước và trường. Bạn có thể thêm một bước mới bằng cách nhấp vào **Thêm bước thanh toán mới**.
 
-Tiếp theo, đặt chế độ hiển thị của bước. Bạn có thể chọn giữa **Always show** (Luôn hiển thị), **Only show for logged in users** (Chỉ hiển thị cho người dùng đã đăng nhập) hoặc **Only show for guests** (Chỉ hiển thị cho khách).
+![Nút Thêm bước thanh toán mới](/img/config/checkout-form-add-step.png)
 
-![Các tùy chọn hiển thị bước checkout](/img/config/checkout-form-step.png)
+Trên tab đầu tiên của cửa sổ modal, hãy điền nội dung cho bước trong biểu mẫu của bạn. Đặt cho nó một ID, một tên và một mô tả. Các mục này chủ yếu được sử dụng nội bộ.
 
-Cuối cùng, cấu hình kiểu dáng của bước. Đây là các trường tùy chọn.
+![Tab nội dung bước thanh toán với ID, tên và mô tả](/img/config/checkout-form-step-content.png)
 
-![Cấu hình kiểu dáng bước checkout](/img/config/checkout-form-step.png)
+Tiếp theo, thiết lập khả năng hiển thị của bước. Bạn có thể chọn giữa **Luôn hiển thị** , **Chỉ hiển thị cho người dùng đã đăng nhập** hoặc **Chỉ hiển thị cho khách**.
 
-Bây giờ, đã đến lúc thêm các trường vào bước đầu tiên của chúng ta. Chỉ cần nhấp **Add New Field** và chọn loại section bạn muốn.
+![Các tùy chọn hiển thị bước thanh toán](/img/config/checkout-form-step-visibility.png)
 
-![Nút Add New Field](/img/config/checkout-form-editor.png)![Dropdown chọn loại trường](/img/config/checkout-form-step.png)
+Cuối cùng, cấu hình kiểu của bước. Đây là các trường tùy chọn.
 
-Mỗi trường có các tham số khác nhau cần điền. Với mục nhập đầu tiên này, chúng ta sẽ chọn trường **Username**.
+![Cấu hình kiểu bước thanh toán](/img/config/checkout-form-step-style.png)
 
-![Cấu hình trường Username](/img/config/checkout-form-step.png)![Các tham số trường Username](/img/config/checkout-form-step.png)![Cài đặt bổ sung trường Username](/img/config/checkout-form-step.png)
+Bây giờ, đã đến lúc thêm các trường vào bước đầu tiên của chúng ta. Chỉ cần nhấp vào **Thêm trường mới** và chọn loại phần bạn muốn.
 
-Bạn có thể thêm bao nhiêu bước và trường tùy theo nhu cầu. Để hiển thị các sản phẩm cho khách hàng chọn, hãy sử dụng trường Pricing Table. Nếu bạn muốn cho khách hàng chọn template, hãy thêm trường Template Selection. Và cứ thế tiếp tục.
+![Nút Thêm trường mới](/img/config/checkout-form-add-field-button.png)![Menu thả xuống chọn loại trường](/img/config/checkout-form-field-type-dropdown.png)
 
-_**Lưu ý:** Nếu bạn tạo sản phẩm sau khi tạo checkout form, bạn sẽ cần thêm sản phẩm vào phần Pricing table. Nếu bạn không thêm, sản phẩm sẽ không hiển thị cho khách hàng trên trang đăng ký._
+Mỗi trường có các tham số khác nhau cần được điền. Với mục đầu tiên này, chúng ta sẽ chọn trường **Tên người dùng**.
 
-_**Lưu ý 2:** username, email, password, site title, site URL, order summary, payment và submit button là các trường bắt buộc để tạo checkout form._
+![Cấu hình trường Tên người dùng](/img/config/checkout-form-username-content.png)![Tham số trường Tên người dùng](/img/config/checkout-form-username-visibility.png)![Cài đặt bổ sung của trường Tên người dùng](/img/config/checkout-form-username-style.png)
 
-Trong khi làm việc với checkout form, bạn luôn có thể sử dụng nút Preview để xem khách hàng sẽ nhìn thấy biểu mẫu như thế nào. Bạn cũng có thể chuyển đổi giữa xem với tư cách người dùng hiện có hoặc khách truy cập.
+Bạn có thể thêm bao nhiêu bước và trường tùy nhu cầu. Để hiển thị các sản phẩm cho khách hàng chọn, hãy dùng trường Bảng giá. Nếu bạn muốn cho phép khách hàng chọn một mẫu, hãy thêm trường Chọn mẫu. Và tương tự.
 
-![Nút Preview trên trình soạn thảo checkout form](/img/config/checkout-form-editor.png)![Xem trước checkout form với tư cách khách truy cập hoặc người dùng hiện có](/img/config/checkout-form-editor.png)
+![Trình chỉnh sửa biểu mẫu thanh toán với trường chọn mẫu](/img/config/checkout-form-with-template-field.png)
 
-Cuối cùng, trong **Advanced Options** bạn có thể cấu hình thông báo cho trang **Thank You**, thêm các đoạn mã để theo dõi chuyển đổi, thêm CSS tùy chỉnh cho checkout form hoặc giới hạn theo một số quốc gia nhất định.
+_**Lưu ý:** Nếu bạn tạo một sản phẩm sau khi tạo biểu mẫu thanh toán, bạn sẽ cần thêm sản phẩm đó vào phần Bảng giá. Nếu bạn không thêm, sản phẩm sẽ không xuất hiện cho khách hàng trên trang đăng ký._
 
-![Advanced Options với trang Thank You, theo dõi chuyển đổi và CSS tùy chỉnh](/img/config/checkout-form-advanced.png)
+_**Lưu ý 2:** tên người dùng, email, mật khẩu, tiêu đề website, URL website, tóm tắt đơn hàng, thanh toán và nút gửi là các trường bắt buộc để tạo một biểu mẫu thanh toán._
 
-Bạn cũng có thể bật hoặc tắt checkout form theo cách thủ công bằng cách chuyển đổi tùy chọn này ở cột bên phải, hoặc xóa vĩnh viễn biểu mẫu.
+Trong khi bạn đang làm việc với biểu mẫu thanh toán, bạn luôn có thể dùng nút Xem trước để xem khách hàng sẽ nhìn thấy biểu mẫu như thế nào. Bạn cũng có thể chuyển đổi giữa chế độ xem như một người dùng hiện có hoặc một khách truy cập.
 
-![Công tắc Active và tùy chọn xóa cho checkout form](/img/config/checkout-form-active.png)
+![Nút Xem trước trên trình chỉnh sửa biểu mẫu thanh toán](/img/config/checkout-form-preview-button.png)![Xem trước biểu mẫu thanh toán dưới dạng khách truy cập hoặc người dùng hiện có](/img/config/checkout-form-preview-modal.png)
 
-Đừng quên lưu checkout form của bạn!
+Cuối cùng, trong **Tùy chọn nâng cao**, bạn có thể cấu hình thông báo cho trang **Cảm ơn**, thêm đoạn mã để theo dõi chuyển đổi, thêm CSS tùy chỉnh vào biểu mẫu thanh toán hoặc giới hạn biểu mẫu ở một số quốc gia nhất định.
 
-![Nút Save Checkout Form](/img/config/checkout-form-save.png)
+![Tùy chọn nâng cao với trang Cảm ơn, theo dõi chuyển đổi và CSS tùy chỉnh](/img/config/checkout-form-advanced.png)
 
-Để lấy shortcode của biểu mẫu, nhấp vào **Generate Shortcode** và sao chép kết quả hiển thị trên cửa sổ modal.
+Bạn cũng có thể bật hoặc tắt thủ công biểu mẫu thanh toán bằng cách bật/tắt tùy chọn này ở cột bên phải, hoặc xóa vĩnh viễn biểu mẫu.
 
-![Modal Generate Shortcode với shortcode để sao chép](/img/config/checkout-form-editor.png)
+![Công tắc kích hoạt và tùy chọn xóa cho biểu mẫu thanh toán](/img/config/checkout-form-active.png)
 
-_**Lưu ý:** Bạn sẽ cần thêm shortcode này vào trang đăng ký của mình để checkout form được thêm vào đó._
+Đừng quên lưu biểu mẫu thanh toán của bạn!
 
-## Chọn trước sản phẩm và template qua tham số URL:
+![Nút Lưu biểu mẫu thanh toán](/img/config/checkout-form-save.png)
 
-Nếu bạn muốn tạo bảng giá tùy chỉnh cho sản phẩm và chọn trước trên checkout form sản phẩm hoặc template mà khách hàng chọn từ bảng giá hoặc trang template của bạn, bạn có thể sử dụng tham số URL cho việc này.
+Để lấy shortcode của biểu mẫu, hãy nhấp vào **Tạo shortcode** và sao chép kết quả hiển thị trên cửa sổ modal.
 
-### **Đối với các gói:**
+![Modal Tạo shortcode với shortcode để sao chép](/img/config/checkout-form-editor.png)
 
-Vào **Ultimate Multisite > Products > Chọn một gói**. Bạn sẽ thấy nút **Click to copy Shareable Link** ở đầu trang. Đây là liên kết bạn có thể sử dụng để chọn trước gói cụ thể này trên checkout form của bạn.
+_**Lưu ý:** Bạn sẽ cần thêm shortcode này vào trang đăng ký để biểu mẫu thanh toán này được thêm vào đó._
 
-![Trang sản phẩm với nút shareable link](/img/config/products-list.png)
+## Chọn trước sản phẩm và mẫu thông qua tham số URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Lưu ý rằng shareable link này chỉ hợp lệ cho **Plans** (Gói). Bạn không thể sử dụng shareable link cho packages hoặc services.
+Nếu bạn muốn tạo các bảng giá tùy chỉnh cho sản phẩm của mình và chọn trước trên biểu mẫu thanh toán sản phẩm hoặc mẫu mà khách hàng chọn từ bảng giá hoặc trang mẫu của bạn, bạn có thể dùng tham số URL cho việc này.
 
-### Đối với template:
+### **Đối với gói:** {#for-plans}
 
-Nếu bạn muốn chọn trước các site template trên checkout form, bạn có thể sử dụng tham số: **?template_id=X** trên URL trang đăng ký của bạn. "X" cần được thay thế bằng **số ID của site template**. Để lấy số này, vào **Ultimate Multisite > Sites**.
+Đi tới **Ultimate Multisite > Sản phẩm > Chọn một gói**. Bạn sẽ thấy nút **Nhấp để sao chép liên kết có thể chia sẻ** ở đầu trang. Đây là liên kết bạn có thể dùng để chọn trước gói cụ thể này trên biểu mẫu thanh toán.
 
-Nhấp vào **Manage** ngay bên dưới site template bạn muốn sử dụng. Bạn sẽ thấy số SITE ID. Chỉ cần sử dụng số này để site template cụ thể này được chọn trước trên checkout form của bạn. Trong trường hợp của chúng ta ở đây, tham số URL sẽ là **?template_id=2**.
+![Trang sản phẩm với nút liên kết có thể chia sẻ](/img/config/products-list.png)
 
-![Danh sách Sites hiển thị ID của site template](/img/config/site-templates-list.png)
+Lưu ý rằng liên kết có thể chia sẻ này chỉ hợp lệ cho **Gói**. Bạn không thể dùng liên kết có thể chia sẻ cho các gói sản phẩm hoặc dịch vụ.
 
-Giả sử website mạng lưới của chúng ta là [**www.mynetwork.com**](http://www.mynetwork.com) và trang đăng ký với checkout form của chúng ta nằm ở trang **/register**. Toàn bộ URL với site template được chọn trước sẽ trông như [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+### Đối với mẫu: {#for-templates}
 
-Và nếu bạn muốn, bạn có thể chọn trước cả sản phẩm và template cho checkout form của mình. Tất cả những gì bạn cần làm là sao chép shareable link của gói và dán tham số template vào cuối. Nó sẽ trông như [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Nếu bạn muốn chọn trước mẫu website trên biểu mẫu thanh toán, bạn có thể dùng tham số: **?template_id=X** trên URL trang đăng ký của bạn. "X" cần được thay bằng **số ID mẫu website**. Để lấy số này, hãy đi tới **Ultimate Multisite > Website**.
+
+Nhấp vào **Quản lý** ngay bên dưới mẫu website bạn muốn dùng. Bạn sẽ thấy số SITE ID. Chỉ cần dùng số này cho mẫu website cụ thể đó để nó được chọn trước trên biểu mẫu thanh toán. Trong trường hợp của chúng ta ở đây, tham số URL sẽ là **?template_id=2**.
+
+![Danh sách website hiển thị ID mẫu website](/img/config/site-templates-list.png)
+
+Giả sử website mạng của chúng ta là [**www.mynetwork.com**](http://www.mynetwork.com) và trang đăng ký với biểu mẫu thanh toán của chúng ta nằm ở trang **/register**. URL đầy đủ với mẫu website này được chọn trước sẽ trông như [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Và nếu muốn, bạn có thể chọn trước cả sản phẩm và mẫu cho biểu mẫu thanh toán. Tất cả những gì bạn cần làm là sao chép liên kết có thể chia sẻ của gói và dán tham số mẫu vào cuối. Nó sẽ trông như [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

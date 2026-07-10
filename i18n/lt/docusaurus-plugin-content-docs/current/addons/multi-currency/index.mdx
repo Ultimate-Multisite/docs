@@ -1,0 +1,117 @@
+---
+title: Kelios valiutos
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Kelios valiutos {#multi-currency}
+
+Ultimate Multisite: Kelios valiutos leidžia jūsų tinklui priimti mokėjimus keliomis valiutomis. Ji automatiškai konvertuoja kainas naudodama tiesioginius arba rankinius valiutų kursus, leidžia nustatyti tikslias kiekvieno produkto kainas bet kuriai valiutai ir pagal geolokaciją nustato kiekvieno lankytojo pageidaujamą valiutą — visa tai valdoma iš vieno administratoriaus Dashboard.
+
+## Pagrindinės funkcijos {#key-features}
+
+- **Automatinis valiutos kurso konvertavimas** — kainos konvertuojamos iš jūsų bazinės valiutos naudojant kursus, gautus iš jūsų pasirinkto teikėjo
+- **Kainų perrašymai pagal produktą** — nustatykite tikslias konkrečiai valiutai skirtas kainas bet kuriam produktui, kad apeitumėte automatinį konvertavimą
+- **Valiutos pasirinkimo registracijos laukas** — leidžia klientams pasirinkti pageidaujamą valiutą atsiskaitymo / registracijos metu
+- **Keli valiutų kursų teikėjai** — ECB, Frankfurter, Stripe arba visiškai rankiniai kursai
+- **Valiutos nustatymas pagal geolokaciją** — automatiškai iš anksto parenka valiutą, atitinkančią lankytojo šalį
+- **Administratoriaus Dashboard** — vienoje vietoje tvarkykite aktyvias valiutas, valiutų kursus ir teikėjo nustatymus
+
+## Reikalavimai {#requirements}
+
+- Ultimate Multisite 2.0.0 arba naujesnė
+- WordPress Multisite diegimas
+- PHP 7.4 arba naujesnė
+
+## Diegimas {#installation}
+
+1. Įkelkite plugin failus į `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktyvuokite plugin per **Plugins** ekraną WordPress (Network Activate)
+3. Eikite į **Ultimate Multisite → Kelios valiutos**, kad atidarytumėte administratoriaus Dashboard
+4. Pridėkite valiutas, kurias norite priimti, ir sukonfigūruokite savo valiutų kursų teikėją
+
+## Konfigūracija {#configuration}
+
+### Administratoriaus Dashboard {#admin-dashboard}
+
+Kelių valiutų administratoriaus Dashboard (**Ultimate Multisite → Kelios valiutos**) yra centrinė vieta, kurioje galite:
+
+- Pridėti, įjungti arba išjungti valiutas
+- Pasirinkti valiutų kursų teikėją ir atnaujinti kursus pagal poreikį
+- Peržiūrėti dabartinius visų aktyvių valiutų kursus
+- Nustatyti rankinius kursus, kai automatiniai teikėjai netinka
+
+### Valiutų kursų teikėjai {#exchange-rate-providers}
+
+| Teikėjas | Aprašymas |
+|---|---|
+| **ECB** | Europos Centrinis Bankas — nemokami dienos kursai EUR pagrįstiems tinklams |
+| **Frankfurter** | Atvirojo kodo ECB veidrodinė API — nemokama, API rakto nereikia |
+| **Stripe** | Naudoja Stripe tiesioginius FX kursus — reikalinga aktyvi Stripe integracija |
+| **Rankinis** | Kursus įvedate tiesiogiai; jokių išorinių API užklausų |
+
+Pasirinkite savo teikėją skiltyje **Ultimate Multisite → Kelios valiutos → Nustatymai → Valiutų kursų teikėjas**. Kursus galima bet kada atnaujinti rankiniu būdu arba suplanuoti, kad jie būtų atnaujinami automatiškai.
+
+### Kainų perrašymai pagal produktą {#per-product-pricing-overrides}
+
+Kai automatinis konvertavimas nėra pakankamai tikslus, galite nustatyti tikslią konkrečios valiutos kainą bet kuriam produktui:
+
+1. Atidarykite produkto redaktorių (**Ultimate Multisite → Produktai → Redaguoti**)
+2. Slinkite iki skilties **Valiutų kainodara**
+3. Įveskite tikslią kainą kiekvienai valiutai, kurią norite perrašyti
+4. Išsaugokite produktą
+
+Produktai be perrašymo naudoja konvertuotą kainą iš jūsų bazinės valiutos.
+
+### Valiutos pasirinkimo registracijos laukas {#currency-selector-signup-field}
+
+Valiutos pasirinkimo lauką galima pridėti prie jūsų registracijos / atsiskaitymo proceso, kad klientai registruodamiesi pasirinktų pageidaujamą valiutą:
+
+1. Eikite į **Ultimate Multisite → Kelios valiutos → Nustatymai**
+2. Įjunkite **Rodyti valiutos pasirinkimą registracijos metu**
+3. Pasirinktinai nustatykite numatytąją valiutą arba leiskite geolokacijai nustatyti iš anksto pasirinktą reikšmę
+
+Pasirinkta valiuta išsaugoma kartu su prenumerata ir naudojama visam vėlesniam apmokestinimui.
+
+### Valiutos nustatymas pagal geolokaciją {#geolocation-based-currency-detection}
+
+Kai įjungtas geolokacijos nustatymas, addon susieja lankytojo šalį su valiuta ir iš anksto ją parenka valiutos pasirinkimo lauke. Norėdami įjungti:
+
+1. Eikite į **Ultimate Multisite → Kelios valiutos → Nustatymai**
+2. Įjunkite **Nustatyti valiutą pagal lankytojo vietą**
+3. Susiekite šalis su valiutomis lentelėje **Geolokacijos susiejimas**
+
+Jei lankytojo šaliai susiejimo nėra, kaip atsarginė parinktis naudojama tinklo bazinė valiuta.
+
+## Dažnai užduodami klausimai {#frequently-asked-questions}
+
+### Kas nutinka, jei valiutų kursų teikėjas nepasiekiamas? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addon grįžta prie paskutinių sėkmingai gautų kursų. Jei kursai niekada nebuvo gauti, jis grįžta prie jūsų sukonfigūruotų rankinių kursų. Rekomenduojama sukonfigūruoti rankinius kursus kaip saugumo priemonę.
+
+### Ar galiu naudoti skirtingus teikėjus skirtingoms valiutoms? {#can-i-use-different-providers-for-different-currencies}
+
+Ne — vienu metu visoms valiutoms aktyvus vienas teikėjas. Naudokite **Rankinis**, jei jums reikia visiškos atskirų kursų kontrolės.
+
+### Ar geolokacijai reikalingas atskiras plugin? {#does-geolocation-require-a-separate-plugin}
+
+Išorinis geolokacijos plugin nereikalingas. Addon naudoja WordPress integruotą IP į šalį nustatymą. Didesniam tikslumui per pateiktus filtro hook galima integruoti specializuotą geolokacijos paslaugą.
+
+### Ar perrašymai pagal produktą taikomi prieš mokestį ar po jo? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Perrašymai pagal produktą nustato kainą prieš mokesčius tikslinėje valiutoje. Mokestis apskaičiuojamas virš perrašymo kainos naudojant jūsų esamą mokesčių konfigūraciją.
+
+## Keitimų žurnalas {#changelog}
+
+### Versija 1.0.0 — išleista 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Nauja: kelių valiutų palaikymas su automatiniu valiutų kursų konvertavimu
+- Nauja: kainų perrašymai pagal produktą tikslioms konkrečiai valiutai skirtoms kainoms
+- Nauja: valiutos pasirinkimo registracijos laukas atsiskaitymo procesui
+- Nauja: valiutų kursų teikėjai: ECB, Frankfurter, Stripe ir rankinis
+- Nauja: valiutos nustatymas pagal geolokaciją
+- Nauja: administratoriaus Dashboard valiutoms ir valiutų kursams valdyti
+- Pataisyta: Dashboard visada rodydavo kainas bazine valiuta, neatsižvelgiant į pasirinktą valiutą

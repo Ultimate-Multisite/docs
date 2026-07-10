@@ -3,7 +3,7 @@ title: Mijoz hisob sahifasi
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Mijozingiz Hisob Sahifasi (v2)
+# Mijozingiz Hisob Sahifasi (v2) {#your-clients-account-page-v2}
 
 _**MUHIM MA'LUMOT: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 
@@ -11,7 +11,7 @@ Mijozlar sizning tarmoqqa saytga obuna bo'lganda, ular o'zlar uchun to'lovlar, a
 
 Bu tutorialda biz sizni mijoz hisob sahifasi orqali yo'l ko'rsatamiz va ularning bu sahifada nima ko'rishi va qila olishini ko'rasiz.
 
-## Hisob Sahifasi
+## Hisob Sahifasi {#the-account-page}
 
 Hisob sahifasiga mijozning dashboardida **Account** (Hisob) tugmasidan bosib kirish mumkin.
 
@@ -27,7 +27,7 @@ Mijoz buni bosgandan so'ng, ular o'z a'zoliklari, to'lov manzili, fakturalar, do
 
 U shuningdek, a'zolikni boshqa reja yoki siz taklif qiladigan boshqa paket yoki xizmat bilan almashtirishi mumkin. Har bir bo'limni alohida ko'rib chiqamiz.
 
-### A'zo Sizning A'zolik Ko'rinishi:
+### A'zo Sizning A'zolik Ko'rinishi: {#your-membership-overview}
 
 Sizning mijozlaringning veb-sayt nomi ostida joylashgan birinchi blokda ular hozirgi reja va undan sotib olingan xizmatlar/paketlar haqidagi umumiy ma'lumot ko'rsatiladi. Bu blok shuningdek, a'zolik raqamini, uning uchun to'langan dastlabki miqdorni, reja va har qanday xizmat/paketning narxini va bu a'zolik uchun necha marta hisob-yuritilganligini ko'rsatadi. Ular shuningdek, a'zolik **Faol** , **Yakunlangan** yoki **Bekor qilingan** ekanligini ham ko'rishi mumkin.
 
@@ -43,7 +43,7 @@ Endi, agar mijozlar bu hozirgi a'zolik uchun paketlarni yoki xizmatlarni sotib o
 
 Eslatma: bu a'zolik o'zgartirish sahifasiga kupon kodlari qo'shilmaydi. Agar mijoz birinchi a'zolik xaridi vaqtida kupon kodidan foydalangan bo'lsa, ushbu kod yangi a'zolikka ham tegishli bo'ladi.
 
-### Hisob-yuritish Manzilini Yangilash:
+### Hisob-yuritish Manzilini Yangilash: {#updating-the-billing-address}
 
 Hisobiyda hisob sahifasida mijozlar o'zlar uchun faktura manzilini ham yangilashlari mumkin. Ular shunchaki _Billing Address_ (Faktura manzili) yonidagi **Update** (Yangilash) tugmasiga bosishlari kerak.
 
@@ -53,7 +53,7 @@ Mijozingiz uchun yangi oynaga chiqadi. Ular shunchaki yangi manzilni to'ldirib, 
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Sayt shablonini o'zgartirish:
+### Sayt shablonini o'zgartirish: {#changing-the-site-template}
 
 Mijozlaringiz sayt shablonlarini o'zgartirishlari mumkin bo'lishini ta'minlash uchun siz **Ultimate Multisite > Settings (Sozlamalar) > Sites** ga o'tib, **Allow Template Switching** (Shablonlarni almashtirishga ruxsat berish) opsiyasini yoqishingiz kerak.
 
@@ -81,7 +81,7 @@ Tasdiqlashni yoqib, **Switch Process** (O'zgartirish jarayonini amalga oshirish)
 
 Mijozlar ham bu panel orqali hozirgi tayinlangan shablonga qaytarish kerak bo'lganda **Reset current template** (Hozirgi shablonni qayta tiklash) funksiyasidan foydalanishlari mumkin. Boshqa shablonga o'tish kabi, shablonni qayta tiklash sayt kontentini yozib qo'yishi mumkin, shuning uchun mijozlar faqat qayta tiklash harakatini tushunishlari kerak.
 
-### Maxsus domenlarni qo'shish:
+### Maxsus domenlarni qo'shish: {#adding-custom-domains}
 
 Mijozlaringiz ham bu reja uchun akkaunt sahifasida maxsus domen qo'shish imkoniyatiga ega bo'ladi. Mijozlaringizga maxsus domenlardan foydalanishga ruxsat berish uchun **Ultimate Multisite > Settings > Domain Mapping** (Domen xaritasi) ga o'ting.
 
@@ -115,7 +115,7 @@ Mana domen mapping sozlamalar sahifasining to'liq ko'rinishi:
 
 **Domain qo'shishni** bosgandan so'ng, domen mijozning hisobiga qo'shiladi. Endi ular faqat o'z domain registratorida ushbu aniq domen DNS yozuvlarini o'zgartirishlari kerak.
 
-### Parolni o'zgartirish:
+### Parolni o'zgartirish: {#changing-password}
 
 Hisob paneli ichida mijozlar **Parolni o'zgartirish** tugmasini bosib parollarini ham o'zgartirishi mumkin.
 
@@ -125,7 +125,7 @@ Bu yeni pencerede mijozlaringizning hozirgi parolini va foydalanishni xohlagan y
 
 ![Hozirgi va yangi parol maydonchalari bilan parol o'zgartirish shakli](/img/account-page/change-password-form.png)
 
-### Xavfli hudud:
+### Xavfli hudud: {#danger-zone}
 
 Bizda **Xavfli hudud** qismida ko'rsatilgan ikkita variant ham mavjud: **Saytni o'chirish** va **Hisobni o'chirish**. Bu ikkalasi ham Xavfli hududda joylashgan, chunki bu ikki harakat orqadan qaytarilmaydi. Agar mijozlaringiz veb-saytlarini yoki hisoblarini o'chirib tashlasalar, ularni tiklay olmaydilar.
 

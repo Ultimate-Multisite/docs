@@ -1,11 +1,11 @@
 ---
-title: এড-অন বিকাশৰ আৰম্ভণি
+title: এডঅন উন্নয়নৰ সৈতে আৰম্ভ কৰা
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon Development
+# অ্যাডঅন উন্নয়ন {#addon-development}
 
-## Addon Structure
+## অ্যাডঅন গঠন {#addon-structure}
 
 ```
 my-addon/
@@ -21,7 +21,7 @@ my-addon/
 └── templates/                   # Template files
 ```
 
-## Main Addon File Template
+## মুখ্য অ্যাডঅন ফাইলৰ টেমপ্লেট {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Custom Model Example
+## কাষ্টম মডেলৰ উদাহৰণ {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin Page Integration
+## প্ৰশাসনিক পৃষ্ঠা সংহতি {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testing Your Addon
+## আপোনাৰ Addon পৰীক্ষা কৰা {#testing-your-addon}
 
 ```php
 <?php
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Next Steps
+## v2.13.0 extension points {#v2130-extension-points}
 
-- Review the [Hooks Reference](/developer/hooks) for available actions and filters
-- Check the [REST API Overview](/developer/rest-api/overview) for API integration
-- Use the [Addon Template](/addons/addon-template) as a starting scaffold
+Ultimate Multisite v2.13.0-এ sovereign tenants, checkout domains, বা host-provider DNS automation-ৰ সৈতে সংহতি কৰা addons-ৰ বাবে উপযোগী কেইবাটাও extension points যোগ কৰে।
+
+### SSO আৰু মুখ্য-ছাইট ব্যৱস্থাপনা URLs {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form base domains {#checkout-form-base-domains}
+
+যেতিয়া আপোনাৰ addon-এ অতিৰিক্ত shared base domains প্ৰদান কৰে যিবোৰে প্ৰতি-ছাইট custom mappings-ৰ পৰিৱৰ্তে checkout-form **Site URL** domains-ৰ দৰে আচৰণ কৰিব লাগে, তেতিয়া `wu_checkout_form_base_domains` ব্যৱহাৰ কৰক:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite-এ এই hosts-সমূহ স্বাভাৱিক কৰে আৰু সিহঁতৰ বাবে স্বয়ংক্ৰিয় প্ৰতি-ছাইট mapped-domain records এৰি যায়।
+
+### স্বয়ংক্ৰিয় domain-record সৃষ্টি {#automatic-domain-record-creation}
+
+নতুনকৈ সৃষ্টি কৰা ছাইটৰ বাবে স্বয়ংক্ৰিয় domain-record সৃষ্টি দমন বা স্থগিত কৰিব লাগিলে আপোনাৰ addon-এ `wu_should_create_domain_record_for_site` ব্যৱহাৰ কৰক:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` শুনা host-provider integrations-এ ছাইট সৃষ্টি হ'লে provider-side DNS records সৃষ্টি কৰিব পাৰে। যদি সেই action-ৰ বাবে কোনো integration পঞ্জীয়ন কৰা নাই, Ultimate Multisite-এ খালী background job এৰি যায়।
+
+## পৰৱৰ্তী পদক্ষেপসমূহ {#next-steps}
+
+- উপলব্ধ actions আৰু filters-ৰ বাবে [Hooks Reference](/developer/hooks) পৰ্যালোচনা কৰক
+- API সংহতিৰ বাবে [REST API Overview](/developer/rest-api/overview) চাওক
+- আৰম্ভণিৰ scaffold হিচাপে [Addon Template](/addons/addon-template) ব্যৱহাৰ কৰক

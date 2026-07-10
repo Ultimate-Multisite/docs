@@ -3,18 +3,18 @@ title: Isdhexgalka Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration
+# Cloudflare Integration {#cloudflare-integration}
 
-## Aragtii (In-depth explanation)
+## Aragtii (In-depth explanation) {#overview}
 Cloudflare waa shirkad weyn oo bixisa adeegga helitaanka waxyaabaha (CDN) iyo amniga, waxayna ka caawisay inay ilaaliyaan web-iyadaas waxayna si dhaqso ah u hagaajiyaan. Isdhexgalka (integration) kan wuxuu kuu oggolaanayaa maamulka domain-ka oo toos ah ee inta u dhaxaysa Ultimate Multisite iyo Cloudflare, gaar ahaan marka aad isticmaalayso subdomain multisite installation.
 
-## Waxyaabaha La Heystay
+## Waxyaabaha La Heystay {#features}
 - Abuurista automatic (automatic) ee subdomain-yada Cloudflare-ka
 - Taageerada subdomain-yada la wareejiyay (Proxied subdomain support)
 - Maamulka DNS record-yada
 - Muujinta heer sare ah oo DNS record-yada ah ee admin-ka Ultimate Multisite
 
-## Shuruudaha La Baahan Yahay
+## Shuruudaha La Baahan Yahay {#requirements}
 Waxyaabaha soo socda waa in lagu qoro `wp-config.php` faylkaaga:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Tallaabooyinka Qorsheynta (Setup Instructions)
+## Tallaabooyinka Qorsheynta (Setup Instructions) {#setup-instructions}
 
-### 1. Hel API Key-gaaga Cloudflare
+### 1. Hel API Key-gaaga Cloudflare {#1-get-your-cloudflare-api-key}
 
 1. Tag dashboard-kaaga Cloudflare-ka oo ku gasho "My Profile" (ku riix email-kaaga ee goobta sare ee dhanka midig).
 2. Dooro "API Tokens" laga bilaabo menu-ga.
@@ -33,13 +33,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit (Wax ka beddel)
 4. Nuqul qaadaro API token-kaaga.
 
-### 2. Hel Zone ID-gaaga
+### 2. Hel Zone ID-gaaga {#2-get-your-zone-id}
 
 1. Dashboard-kaaga Cloudflare, dooro domain-ka aad rabto inaad isticmaasho.
 2. Zone ID-gu wuxuu siinayaa tabta "Overview", dhanka midig ee hoos ka yaalla "API".
 3. Nuqul qaadaro Zone ID-gaaga.
 
-### 3. Ku dar Constants-ka `wp-config.php`
+### 3. Ku dar Constants-ka `wp-config.php` {#3-add-constants-to-wp-configphp}
 
 Ku dar constants-kan `wp-config.php` faylkaaga:
 
@@ -48,7 +48,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Fur Isticmaalka (Enable the Integration)
+### 4. Fur Isticmaalka (Enable the Integration) {#4-enable-the-integration}
 
 1. Admin-ka WordPress-kaaga, tag Ultimate Multisite > Settings.
 2. Tag tabta "Domain Mapping".
@@ -56,9 +56,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Fur isdhexgalka Cloudflare.
 5. Nuqul qaadaro "Save Changes" (Wax ka beddel).
 
-## Sidee U Shaqayso?
+## Sidee U Shaqayso? {#how-it-works}
 
-### Maamulka Subdomain-yada
+### Maamulka Subdomain-yada {#subdomain-management}
 
 Marka la abuuro website cusub oo ku jira subdomain multisite installation:
 
@@ -66,7 +66,7 @@ Marka la abuuro website cusub oo ku jira subdomain multisite installation:
 2. Subdomain-ka waxaa inta badan loo dejiyay inuu si toos ah ugu wareegayo (proxied) Cloudflare (kan ayaa la beddeli karaa filters-ka).
 3. Marka website-ka la nisbo, isku-dhafka (integration) wuxuu ka saari doonaa subdomain-ka Cloudflare.
 
-### Muujinta DNS Record-ka
+### Muujinta DNS Record-ka {#dns-record-display}
 
 Isku-dhafka wuxuu hagaajinayaa sida loo muujiyo DNS record-ka ee admin-ka Ultimate Multisite iyada oo:
 
@@ -74,11 +74,11 @@ Isku-dhafka wuxuu hagaajinayaa sida loo muujiyo DNS record-ka ee admin-ka Ultima
 2. Waxay muujisaa in ma la wareegayo (proxied) ama aysan la wareegin
 3. Waxay muujisaa macluumaad dheeri ah ee ku saabsan DNS record-ka
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (oo hore loo yaqay "Cloudflare for SaaS") waa astaamaha Cloudflare oo u oggolaanaysa macaamiisha inay isticmaalaan domain-kooda lahayd SSL ku socda shirkaddaada multisite. Waa habka la talinaya ee lagu isticmaalo multisite-yada la xiriira domain-ka (domain-mapped) ee adeegsada Cloudflare, sababtoo ah Cloudflare wuxuu si toos ah maamulaa bixinta iyo dib-u-soo-qaabid SSL certificate-ka ee domain kasta oo gaar ah.
 
-### Waa maxaca kala duwanaanshaha isku-dhafka standard-ka Cloudflare
+### Waa maxaca kala duwanaanshaha isku-dhafka standard-ka Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Isku-dhafka Standard-ka | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -86,7 +86,7 @@ Isku-dhafka wuxuu hagaajinayaa sida loo muujiyo DNS record-ka ee admin-ka Ultima
 | **Wax ugu habboon** | Multisite oo ku salaysan subdomain | Multisite oo la xiriira domain-ka |
 | **SSL** | Waxay si gaar ah u maamulaa | Wuxuu si toos ah u maamulaa Cloudflare |
 
-### Sida loo dejiyo Cloudflare Custom Hostnames
+### Sida loo dejiyo Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. Dashboard-ka Cloudflare ku fur, fur domain-kaaga oo fur.
 2. Tag **SSL/TLS > Custom Hostnames**.
@@ -100,23 +100,23 @@ Si aad u hesho macluumaadka API-ga oo dhammaystiran, fiiri [Cloudflare Custom Ho
 Hadda, Ultimate Multisite v2.6.1-ka ka dib, waxa la tixraacayaa astaamahan **Cloudflare Custom Hostnames** dhammaan settings-ka iyo labels-ka plugin-ka. Qaybta hore waxay isticmaashay magaca "Cloudflare for SaaS", oo ah magaca badeecadda Cloudflare ee asalka ah.
 :::
 
-## Fiiro Muhiim ah
+## Fiiro Muhiim ah {#important-notes}
 
 Hadda, cusboonaysiinta ugu dambeeyay ee Cloudflare-ka, waxaa la heli karaa wildcard proxying dhammaan macaamiisha. Tani waxay ka dhigan tahay in isku xirnaanta DNS-ka caadiga ah ee Cloudflare-ka ay si weyn u muhiim uma aha installation-ka multisite-ka subdomain-ka marka la barbardhigo waxyaabaha hore, sababtoo ah waxaad si fudud samayn kartaa record wildcard DNS-ka oo ku jira Cloudflare.
 
-## Xallinta Dhibaatooyinka (Troubleshooting)
+## Xallinta Dhibaatooyinka (Troubleshooting) {#troubleshooting}
 
-### Masalahada Xiriirka API-ga
+### Masalahada Xiriirka API-ga {#api-connection-issues}
 - Hubi in token-ka API-gaagu yahay mid sax ah oo leh fursadaha loo baahan yahay.
 - Hubi in Zone ID-gaagu yahay mid sax ah.
 - Hubi in account-ka Cloudflare-kaagu leeyahay furaha (permissions) ee loo baahan yahay.
 
-### Subdomain-ka Aan La Bixin
+### Subdomain-ka Aan La Bixin {#subdomain-not-added}
 - Hubi logs-ka Ultimate Multisite-ka wax walba oo qalad ah oo ka yimid.
 - Hubi in subdomain-ku aan hore u lahayn Cloudflare ku lahayn.
 - Hubi in qorshaha (plan) ee Cloudflare-kaagu uu taageero tirada records DNS-ka aad samaynayso.
 
-### Masalahyada Proxy-ga
+### Masalahyada Proxy-ga {#proxying-issues}
 
 - Haddii aad rabto inaad subdomains-ka aysan la proxy-gareyn, waxaad isticmaali kartaa filter-ka `wu_cloudflare_should_proxy`.
 - Qaar ka mid ah astaamaha (features) waxay si sax ah u shaqayn karaan marka la proxy-gareeyo (tusaale, qaar ka mid ah shaqooyinka admin-ka WordPress).

@@ -3,13 +3,13 @@ title: Nche Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading a plan (v2)
+# Downgrading a plan (v2) {#downgrading-a-plan-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Việc hạ cấp gói dịch vụ hoặc đăng ký là một hành động mà khách hàng của bạn có thể thực hiện nếu họ có ngân sách hạn chế hoặc quyết định rằng họ không cần nhiều tài nguyên để chạy trang phụ (subsite) của mình nữa.
 
-## Cách hạ cấp gói dịch vụ
+## Cách hạ cấp gói dịch vụ {#how-to-downgrade-a-plan}
 
 Khách hàng của bạn có thể hạ cấp gói bất cứ lúc nào bằng cách đăng nhập vào bảng điều khiển quản trị (admin dashboard) của trang phụ và nhấp vào **Change** (Thay đổi) dưới trang tài khoản của họ.
 
@@ -25,7 +25,7 @@ Trong ví dụ này, chúng ta đang hạ cấp gói từ **Premium** xuống **
 
 ![Trang tài khoản hiển thị biểu ngữ thay đổi thành viên đang chờ xử lý](/img/account-page/pending-change.png)
 
-### Điều gì xảy ra khi người dùng hạ cấp gói dịch vụ
+### Điều gì xảy ra khi người dùng hạ cấp gói dịch vụ {#what-happens-when-a-user-downgrades-their-plan}
 
 Điều quan trọng cần lưu ý là việc hạ cấp gói không làm thay đổi cấu hình hiện có trong trang phụ của người dùng.
 
@@ -37,7 +37,7 @@ Nó sẽ không tự động thay đổi mẫu trang (site template) vì việc 
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ọ bụrụ na ihe ọ bụla na payment
+### Ọ bụrụ na ihe ọ bụla na payment {#what-happens-to-the-payment}
 
 N'ime version 2.0, ọ dịghị m nwere zarie anyị ga-eme ndụ na payment n'ime proration anọchịrị ike.
 

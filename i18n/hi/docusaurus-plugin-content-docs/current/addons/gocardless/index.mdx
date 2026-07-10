@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Payment
 
 अपने ग्राहकों को GoCardless का उपयोग करके डायरेक्ट डेबिट (Direct Debit) के माध्यम से Multisite Ultimate की मेंबरशिप और प्रोडक्ट्स के लिए भुगतान करने दें!
 
-## Installation
+## Installation {#installation}
 
 1. 'ultimate-multisite-gocardless' को '/wp-content/plugins/' डायरेक्टरी में अपलोड करें
 2. WordPress में 'Plugins' मेनू के माध्यम से प्लगइन को एक्टिवेट करें
 3. प्लगइन को सेट अप करने के लिए स्टेप-बाय-स्टेप विज़ार्ड (Wizard) का पालन करें
 
-## Usage Guide
+## Usage Guide {#usage-guide}
 
 _GoCardless_ एक पेमेंट गेटवे है जो **यूरोप और यूके** में उपलब्ध है और यह **डायरेक्ट डेबिट** भुगतान की सुविधा देता है।
 
@@ -29,7 +29,7 @@ _GoCardless_ एक पेमेंट गेटवे है जो **यूर
 
 _**ध्यान दें: GoCardless केवल निम्नलिखित मुद्राओं (currencies) के साथ काम करता है:**_ **EUR, GBP, AUD, SEK, और DKK।**
 
-## Add-on इंस्टॉल करना
+## Add-on इंस्टॉल करना {#installing-the-add-on}
 
 सबसे पहले, आपको Ultimate Multisite के लिए GoCardless add-on इंस्टॉल करना होगा। आप यह **Ultimate Multisite > Settings > Add-ons (साइडबार पर)** पर जाकर और उस लिस्ट में GoCardless add-on चुनकर कर सकते हैं।
 
@@ -37,7 +37,7 @@ add-on इंस्टॉल और एक्टिवेट हो जाने
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## एक्सेस टोकन प्राप्त करना
+## एक्सेस टोकन प्राप्त करना {#getting-an-access-token}
 
 _GoCardless_ पर एक अकाउंट बनाएं (या यदि आप **पहले से टेस्ट करना** चाहते हैं, तो _GoCardless_ सैंडबॉक्स पर अकाउंट बनाएं, जो अनुशंसित है)। फिर, लॉग इन करने के बाद, **Developers** मेनू आइटम पर जाएं।
 
@@ -61,7 +61,7 @@ _GoCardless_ पर एक अकाउंट बनाएं (या यदि 
 
 पहला कदम यह था। इसके बाद, आपको एक वेबहुक लिसनर (webhook listener) सेट अप करने की आवश्यकता है।
 
-## Webhook Listener सेट अप करना
+## Webhook Listener सेट अप करना {#setting-up-the-webhook-listener}
 
 सब्सक्रिप्शन (subscriptions) से निपटते समय, Ultimate Multisite को सब्सक्रिप्शन स्टेटस में बदलाव, किए जा रहे नए भुगतानों और अन्य ऐसी चीज़ों के बारे में जानना ज़रूरी होता है।
 

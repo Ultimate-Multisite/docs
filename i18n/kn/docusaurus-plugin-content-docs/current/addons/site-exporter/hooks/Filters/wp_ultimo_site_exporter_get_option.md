@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 ಇದು ಸ್ಲಗ್ ರೂಪದಲ್ಲಿರುವ ನೆಟ್‌ವರ್ಕ್ ಆಪ್ಷನ್ ಮೌಲ್ಯವನ್ನು ಮರಳಿ ನೀಡುತ್ತದೆ.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | ಆಪ್ಷನ್‌ನ ಹೆಸರು. |
 | $default | `mixed` | ಡೀಫಾಲ್ಟ್ ಮೌಲ್ಯ. |
 
-### Since
+### Since {#since}
 
 - 1.9.6
-### Source
+### Source {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) ನಲ್ಲಿ 126ನೇ ಸಾಲಿನಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಲಾಗಿದೆ.
 
 
-## Returns
+## Returns {#returns}
 ಸ್ಲಗ್ ರೂಪದಲ್ಲಿರುವ ನೆಟ್‌ವರ್ಕ್ ಆಪ್ಷನ್ ಮೌಲ್ಯ.

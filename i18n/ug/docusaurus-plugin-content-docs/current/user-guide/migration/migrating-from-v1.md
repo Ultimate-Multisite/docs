@@ -3,9 +3,9 @@ title: V1-den geçiş yapmak
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1-den 2-ye geçmek (Migrating from V1)
+# V1-den 2-ye geçmek (Migrating from V1) {#migrating-from-v1}
 
-## Ultimate Multisite eski 1.x sürüm ailesinden 2.x sürüm ailesine geçti.
+## Ultimate Multisite eski 1.x sürüm ailesinden 2.x sürüm ailesine geçti. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite sürüm 2.0 ve sonrası kodun tamamen yeniden yazılması demektir، یعنی قدیمی نسخه و جدید نسخه بینشون خیلی کم مشترک هست. به همین دلیل، وقتی از 1.x به 2.x ارتقا می‌کنید، باید داده‌های خودتون رو به فرمتی منتقل کنید که نسخه‌های جدید بتونش بفهمند.
 
@@ -15,7 +15,7 @@ Ultimate Multisite sürüm 2.0 ve sonrası kodun tamamen yeniden yazılması dem
 
 _**مهم: قبل از اینکه شروع به ارتقاء از نسخه 1.x به نسخه 2.0 کنید، حتماً یک بکاپ از دیتابیس سایت خود تهیه کنید**_
 
-## اولین مراحل (First steps)
+## اولین مراحل (First steps) {#first-steps}
 
 اولین مرحله دانلود فایل .zip پلاگین و نصب نسخه 2.0 روی داشبورد مدیریت شبکه خود هست.
 
@@ -49,19 +49,19 @@ _**توجه:** اگر Ultimate Multisite 1.x رو روی Multisite خود نصب
 
 بعد از فعال شدن license، می‌تونید با کلیک روی **Install** در صفحه بعدی نصب واقعی رو شروع کنید. این کار به صورت خودکار فایل‌ها و دیتابیس لازم برای کارکرد نسخه ۲.۰ رو ایجاد می‌کنه.
 
-## حالا، انتقال (Migration) süreci
+## حالا، انتقال (Migration) süreci {#now-the-migration}
 
 Migrator'da bir güvenlik özelliği var; bu özellik, tüm multisite'ınızı kontrol ederek Ultimate Multisite verilerinizin herhangi bir sorun olmadan taşınabileceğini doğrular. Süreci başlatmak için **Run Check** butonuna tıklayın.
 
 Sonra kontrolü çalıştırdıktan sonra iki ihtimalle karşılaşırsınız: sonuç ya hata ile **with an error** ya da hata olmadan **without an error**.
 
-### Hata ile (With Error)
+### Hata ile (With Error) {#with-error}
 
 Eğer bir hata mesajı alırsanız, hatayı düzeltmenize yardımcı olmaları için destek ekibimizle iletişime geçmeniz gerekecek. Bir ticket oluştururken lütfen **hata kaydını (error log)** sağlamayı unutmayın. Kaydı indirebilirsiniz veya destek ekibimize ulaşacağınızı belirten bağlantıya tıklayabilirsiniz. Bu, sayfanızın sağ tarafında size önceden doldurulmuş alanlar içeren bir yardım widget'ı açacak ve hata kayıtlarını açıklamada göreceksiniz.
 
 _**Sistem bir hata bulduğu için, 2.0 sürümüne geçemezsiniz. Hata düzeltilene kadar ağınızı çalıştırmaya devam etmek için 1.x sürümüne geri dönebilirsiniz.**_
 
-### Hata Olmadan (Without Error)
+### Hata Olmadan (Without Error) {#without-error}
 
 Eğer sistem herhangi bir hata bulamazsa, bir başarı mesajı göreceksiniz ve aşağıda **Migrate** butonu olacak; bu butonla migrasyon işlemine devam edebilirsiniz. Bu sayfada, ilerlemeden önce veritabanınızın yedeğini almanız gerektiğini hatırlatacağız, ki bunu şiddetle tavsiye ediyoruz. Zaten bir yedeğiniz varsa **Migrate**'a basın.
 

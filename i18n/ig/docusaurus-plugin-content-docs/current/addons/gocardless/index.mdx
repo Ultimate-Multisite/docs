@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Ịkwụ ụgwọ GoCardless
+
+Kwe ka ndị ahịa gị kwụọ ụgwọ maka ndị otu na ngwaahịa Multisite Ultimate site na Direct Debit site na iji GoCardless!
+
+## Ntinye {#installation}
+
+1. Bulite 'ultimate-multisite-gocardless' na ndekọ '/wp-content/plugins/'
+2. Mee plugin ahụ ka ọ rụọ ọrụ site na menu 'Plugins' na WordPress
+3. Soro Wizard nzọụkwụ n'otu n'otu iji hazie plugin ahụ
+
+## Ntuziaka Ojiji {#usage-guide}
+
+_GoCardless_ bụ ụzọ ịkwụ ụgwọ dị na **Europe na UK** nke na-enye ohere maka ịkwụ ụgwọ **Direct Debit**.
+
+**Ultimate Multisite: GoCardless Gateway** na-agbakwunye nkwado _GoCardless_ na Ultimate Multisite, na-enye gị ohere ịnata ụgwọ n'aka ndị ahịa gị na mpaghara ahụ site na iji Direct Debit.
+
+Nkuzi a ga-ekpuchi otu esi hazie _GoCardless_ iji malite ịnakwere ịkwụ ụgwọ site na ya na netwọkụ Ultimate Multisite gị.
+
+_**Rịba ama: GoCardless na-arụ ọrụ naanị na ego ndị a:**_ **EUR, GBP, AUD, SEK, na DKK.**
+
+## Ịwụnye Add-on {#installing-the-add-on}
+
+Nke mbụ, ị ga-achọ ịwụnye GoCardless add-on maka Ultimate Multisite. Ị nwere ike ime nke ahụ site n'ịga na **Ultimate Multisite > Ntọala > Add-ons (na sidebar)**. Ma họrọ GoCardless add-on na ndepụta ahụ.
+
+Mgbe etinyere add-on ahụ ma mee ka ọ rụọ ọrụ, gaa na **Ultimate Multisite > Ntọala > Ịkwụ ụgwọ**, gbanye nhọrọ GoCardless, wee chekwaa.
+
+![Ntọala ụzọ ịkwụ ụgwọ](/img/config/settings-payment-gateways.png)
+
+## Inweta Access Token {#getting-an-access-token}
+
+Mepụta akaụntụ na _GoCardless_ (ma ọ bụ na _GoCardless_ sandbox, ma ọ bụrụ na ịchọrọ **ịnwale ya mbụ** , nke a na-akwado). Mgbe ahụ, mgbe ịbanyechara, gaa na ihe menu **Developers**.
+
+<!-- Nseta ihuenyo adịghị: Dashboard GoCardless na-egosi ọnọdụ menu Developers -->
+
+Na ibe **Developers**, pịa bọtịnụ **Mepụta** n'akụkụ aka nri elu nke ihuenyo, mgbe ahụ pịa nhọrọ **Access Token**.
+
+<!-- Nseta ihuenyo adịghị: Ibe Developers GoCardless nwere bọtịnụ Create na nhọrọ Access Token -->
+
+Nke a ga-emepe windo modal ọhụrụ, na-enye gị ohere ịmepụta token ọhụrụ. Nye ya aha a ga-amata nke ọma ma hụ na ịhọrọ nhọrọ **Nnweta ịgụ-na-ide** na menu **Scope**.
+
+<!-- Nseta ihuenyo adịghị: Modal GoCardless maka ịmepụta access token ọhụrụ nwere scope Read-write -->
+
+Access token ahụ ga-apụta na ihuenyo. Detuo nke ahụ ma tinye ya na menu **Ultimate Multisite > Ntọala > Ịkwụ ụgwọ > GoCardless** gị.
+
+Jide n'aka na itinyere ya n'ọhịa ziri ezi. Ọ bụrụ na ọ bụ **token dị ndụ** **n** , gbanyụọ **ọnọdụ sandbox** tupu itinye token ahụ.
+
+![Ntọala ụzọ ịkwụ ụgwọ nwere GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Nseta ihuenyo adịghị: Oghere token GoCardless na ntọala ịkwụ ụgwọ Ultimate Multisite -->
+
+Nke ahụ bụ ya maka nzọụkwụ mbụ. Na-esote, ị ga-ahazi onye na-ege webhook ntị.
+
+## Ịhazigharị Onye na-ege Webhook Ntị {#setting-up-the-webhook-listener}
+
+Mgbe a na-emeso ndebanye aha, Ultimate Multisite kwesịrị ịnụ banyere mgbanwe na ọnọdụ ndebanye aha, ịkwụ ụgwọ ọhụrụ a na-eme, na ihe ndị ọzọ yiri nke ahụ.
+
+Ụzọ payment gateways si agwa Ultimate Multisite maka mgbanwe ndị ahụ bụ iji **oku webhook**. N'ihi nke ahụ, ka njikọta ahụ wee rụọ ọrụ 100%, anyị kwesịrị ịgwa _GoCardless_ URL ọ ga-akpọrọ ozi niile ahụ.
+
+Laghachi na panel **GoCardless > Developers** gị ma pịa bọtịnụ Create ọzọ, mana oge a, họrọ nhọrọ **Webhook endpoint**.
+
+<!-- Nseta ihuenyo adịghị: Ibe Developers GoCardless nwere nhọrọ Webhook endpoint -->Windo ọhụrụ ga-emepe nwere nhọrọ webhook endpoint. Ọ na-arịọ maka URL webhook, yabụ laghachi na **ntọala Ultimate Multisite > Ịkwụ ụgwọ > GoCardless** gị ma detuo URL webhook edepụtara n'ebe ahụ:
+
+<!-- Nseta ihuenyo adịghị: Ntọala Ultimate Multisite GoCardless na-egosi URL webhook -->
+
+Na mgbakwunye, ị nwere ike itinye **webhook secret** nke a ga-eji bịanye aka na oku webhook gị. Ihe ọ bụla ị tinyere n'ọhịa ahụ, ị ga-etinyekwa ya na **ọhịa Ultimate Multisite Webhook Secret**.
+
+<!-- Nseta ihuenyo adịghị: Fọm nhazi webhook endpoint GoCardless nwere oghere URL na secret -->
+
+<!-- Nseta ihuenyo adịghị: Oghere webhook secret Ultimate Multisite GoCardless -->
+
+Mechaa site n'ichekwa endpoint ahụ site n'ịpị bọtịnụ **Mepụta webhook endpoint** ma mgbe ahụ **chekwaakwa ntọala Ultimate Multisite gị**.
+
+Ị kwesịrị ịdị njikere ịnakwere _GoCardless_ ugbu a!

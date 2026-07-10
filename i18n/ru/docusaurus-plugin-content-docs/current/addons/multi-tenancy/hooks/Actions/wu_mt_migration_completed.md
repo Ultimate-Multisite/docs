@@ -4,20 +4,20 @@ title: Действие - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# Действие: wu_mt_migration_completed
+# Действие: wu_mt_migration_completed {#action-wumtmigrationcompleted}
 
 Вызывается, когда миграция завершена.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $job | `\Migration_Job` | Завершенная миграционная задача. |
 
-### С версии
+### С версии {#since}
 
 - 1.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L693) на строке 693

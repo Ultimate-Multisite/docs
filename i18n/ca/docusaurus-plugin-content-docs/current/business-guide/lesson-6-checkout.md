@@ -3,15 +3,15 @@ title: 'Liçona 6: L''experiència d''inscripció'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Aula 6: L'Experiència de Registre
+# Aula 6: L'Experiència de Registre {#lesson-6-the-signup-experience}
 
 El process de pagament és on l'interès es converte en rendiment. Un procés de registre confús o genèric fa perdre clients. Un flux específic del sector que parli el seu idioma i que es senti fàcil converte'ls.
 
-## On vam deixar
+## On vam deixar {#where-we-left-off}
 
 FitSite té templates i plans configurats. Ara creem l'experiència de registre i pagament que transforma els propietaris de centres de fitness en clients pagadors.
 
-## Entendre el flux de registre
+## Entendre el flux de registre {#understanding-the-registration-flow}
 
 Els formularis de pagament d'Ultimate Multisite són formularis multietapa totalment personalitzables. Per FitSite, volem un flux que:
 
@@ -21,11 +21,11 @@ Els formularis de pagament d'Ultimate Multisite són formularis multietapa total
 
 Consulta [The Registration Flow](/user-guide/configuration/the-registration-flow) per a la referència tècnica completa.
 
-## Dissenyar el pagament de FitSite
+## Dissenyar el pagament de FitSite {#designing-the-fitsite-checkout}
 
 Navega a **Ultimate Multisite > Checkout Forms** i crea un nou formulari.
 
-### Pas 1: Selecció de plans
+### Pas 1: Selecció de plans {#step-1-plan-selection}
 
 La primera cosa que veu els propietaris de centres de fitness han de ser els plans, presentats en termes que entenguin.
 
@@ -37,7 +37,7 @@ La primera cosa que veu els propietaris de centres de fitness han de ser els pla
 "1 GB de magatzematge" no significa res per a un propietari de gimnàsium. "Tot el que necessites per a un lloc web professional de centre" significa tot. Escriu les descripcions dels plans en el idioma del teu client.
 :::
 
-### Pas 2: Selecció de templates
+### Pas 2: Selecció de templates {#step-2-template-selection}
 
 Després de triar un plan, el client tria el seu template inicial.
 
@@ -45,7 +45,7 @@ Després de triar un plan, el client tria el seu template inicial.
 - Els templates disponibles es filtren pel plan que han seleccionat (configurat a la Aula 5)
 - Cada template ha de tenir una imatge de previsualització que mostri un disseny específic de fitness
 
-### Pas 3: Creació de compte
+### Pas 3: Creació de compte {#step-3-account-creation}
 
 Mantén-ho mínim. Recull només:
 
@@ -55,27 +55,27 @@ Mantén-ho mínim. Recull només:
 
 No demanis informació que no necessitis al registre. Cada camp addicional redueix les conversions.
 
-### Pas 4: Configuració del lloc web
+### Pas 4: Configuració del lloc web {#step-4-site-setup}
 
 - **Site title**: Remplenat prèviament amb el nom del centre de fitness escrit al Pas 3
 - **Site URL**: Generat automàticament a partir del nom del centre (ex: `ironworks.fitsite.com`)
 
-### Pas 5: Pagament
+### Pas 5: Pagament {#step-5-payment}
 
 - Afegir el camp de **Payment**
 - Configurar la teva passarela de pagament ([Stripe](/user-guide/payment-gateways/stripe) es recomana per a la facturació per subscripció)
 - Si creasti *order bumps* a la Aula 5, afegeix un camp **Order Bump** abans del pas de pagament
 
-### Pas 6: Confirmació
+### Pas 6: Confirmació {#step-6-confirmation}
 
 - Personalitza el missatge de confirmació amb un idioma específic de fitness
 - Exemple: "El lloc web del teu centre de fitness està sent creat. Seràs redirigit al teu nou lloc web en uns segons."
 
-## Afegir un interruptor de selecció de període
+## Afegir un interruptor de selecció de període {#adding-a-period-selection-toggle}
 
 Si has configurat variacions de preu als teus plans (mensual vs. anual), afegeix un camp de **Period Selection** al formulari de pagament perquè els clients puguin alternar entre períodes de facturació. Consulta [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) per a les instruccions.
 
-## Configurar el pagament
+## Configurar el pagament {#configuring-payment}
 
 Si encara no has configurat una passarela de pagament:
 
@@ -85,7 +85,7 @@ Si encara no has configurat una passarela de pagament:
 
 Consulta [Getting Paid](/user-guide/payment-gateways/getting-paid) per detalls sobre com arriben els pagaments al teu compte.
 
-## Provar el flux
+## Provar el flux {#testing-the-flow}
 
 Abans de continuar, completa un test de registre complet:
 
@@ -105,7 +105,7 @@ Verifica que:
 - [ ] El client aterriar en un lloc web funcional amb el template seleccionat
 - [ ] Els correus electrònics de confirmació utilitzen un idioma específic de fitness
 
-## La xarxa FitSite fins ara
+## La xarxa FitSite fins ara {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## El que vam construir en aquesta Aula
+## El que vam construir en aquesta Aula {#what-we-built-this-lesson}
 
 - **Un formulari de pagament multietapa** adaptat als propietaris de centres de fitness
 - **Idioma específic del sector** durant tot el flux de registre

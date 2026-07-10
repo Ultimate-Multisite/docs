@@ -4,11 +4,11 @@ title: 'Kitendo - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 Inaruhusu watengenezaji wa plugins kuongeza hooks zaidi kwenye kurasa zetu.
 
-## Viparametrika
+## Viparametrika {#parameters}
 
 | Jina | Aina | Maelezo |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Inaruhusu watengenezaji wa plugins kuongeza hooks zaidi kwenye kurasa zetu.
 | $page_hook | `string` | Hook ya ukurasa huu. |
 | $admin_page | `self` | Mfano wa ukurasa. |
 
-### Tangu
+### Tangu {#since}
 
 - 1.8.2
 - 2.0.4: Iliongeza kiparametrika cha tatu: mfano wa ukurasa.
-### Chanzo
+### Chanzo {#source}
 
 Imeainishwa katika [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) kwenye mstari wa 332

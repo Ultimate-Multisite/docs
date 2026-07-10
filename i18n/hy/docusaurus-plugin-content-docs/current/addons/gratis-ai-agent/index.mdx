@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent-ը ինքնավար WordPress AI օգնական է, որը կարող է պլանավորել, կառուցել և կառավարել ամբողջական WordPress կայքեր բնական լեզվով հրահանգների միջոցով։ Այն տրամադրում է **կարողությունների** կառուցվածքային հավաքածու՝ առանձին, ստուգելի գործողություններ, որոնք agent-ը կարող է կանչել՝ ընդգրկելով ամեն ինչ՝ բովանդակության կառավարումից մինչև դիզայնի համակարգի հարմարեցում։ 1.9.0 տարբերակը ավելացնում է բովանդակության ստեղծման կարողություններ, էջի տեսողական վերանայում client-ի կողմի էկրանապատկերների միջոցով, հինգ ներկառուցված agent պրոֆիլներ և access control-ի ու branding-ի feature flags։
+
+## Հիմնական հնարավորություններ {#key-features}
+
+- **Կարողությունների համակարգ** — գործողությունների մոդուլային, ընդարձակվող կատալոգ, որը agent-ը կարող է կանչել ձեր WordPress տեղակայման վրա
+- **Բովանդակության կառավարում** — ստեղծեք գրառումներ և էջեր (ներառյալ էջի ձևանմուշների նշանակումը), մեկ կանչով խմբաքանակով ստեղծեք մի քանի գրառում, սահմանեք գլխավոր պատկերներ և կառուցեք կապի ձևեր
+- **Տեսողական վերանայում** — ստացեք կենդանի էջերի էկրանապատկերներ, համեմատեք նախքան/հետո վիճակները և ստացեք AI-ի ստեղծած դիզայնի վերանայում՝ դասավորության, տպագրության, գույնի և մատչելիության վերաբերյալ
+- **Հինգ ներկառուցված agent-ներ** — Content Writer, Site Builder, Design Studio, Plugin Manager և Support Assistant; փոխարկելի են չաթի վերնագոտում գտնվող Agent Picker-ի միջոցով
+- **Feature flags** — access-control-ի և branding-ի փոխարկիչներ Settings → Feature Flags-ում՝ դերերի սահմանափակումների, white-label անվանման և widget-ի հարմարեցման համար
+- **Custom Post Type-ի կառավարում** — գրանցեք, ցուցակագրեք և ջնջեք custom post types՝ վերագործարկումներից հետո պահպանմամբ
+- **Custom Taxonomy-ի կառավարում** — գրանցեք, ցուցակագրեք և ջնջեք custom taxonomies՝ պահպանմամբ
+- **Դիզայնի համակարգի կարողություններ** — ներարկեք custom CSS, կառավարեք ընտրված block patterns, սահմանեք կայքի լոգոն և կիրառեք theme.json նախադրվածքներ
+- **Global Styles-ի կառավարում** — կարդացեք և գրեք theme.json արժեքներ գունային պալիտրաների, տպագրության, միջակայքերի և այլնի համար
+- **Նավիգացիոն մենյուի կառավարում** — ծրագրային եղանակով ստեղծեք և թարմացրեք նավիգացիոն մենյուներն ու դրանց տարրերը
+- **Ընտրանքների կառավարում** — կարդացեք և գրեք WordPress ընտրանքներ՝ ներկառուցված անվտանգության արգելացանկով՝ կարևոր կարգավորումները պաշտպանելու համար
+- **Տեղադրվող կարողությունների ռեեստր** — հայտնաբերեք և ակտիվացրեք լրացուցիչ կարողությունների փաթեթներ՝ առանց core plugin ֆայլերը փոփոխելու
+- **Site Builder Orchestration v2** — բազմաքայլ կայքի կառուցման պլաններ՝ plugin-ների հայտնաբերմամբ, առաջընթացի հետևմամբ և սխալների վերականգնմամբ
+- **WP-CLI benchmark հրաման** — գործարկեք agent-ի կարողությունների benchmark փաթեթը հրամանային տողից՝ CI-ի և մոդելի գնահատման համար
+
+## Պահանջներ {#requirements}
+
+- WordPress 6.0 կամ ավելի բարձր
+- PHP 8.1 կամ ավելի բարձր
+- WordPress Multisite (network-activated) կամ մեկ կայքի տեղակայում
+- Ակտիվ AI մատակարարի connector plugin (Anthropic, OpenAI կամ համատեղելի)
+
+## Տեղադրում {#installation}
+
+1. Վերբեռնեք plugin-ի ֆայլերը `/wp-content/plugins/gratis-ai-agent` հասցեով
+2. Ակտիվացրեք plugin-ը WordPress-ի **Plugins** էկրանի միջոցով
+3. Անցեք **Gratis AI Agent → Settings** և միացրեք ձեր AI մատակարարին
+4. (Ընտրովի) Դիտեք **Կարողությունների ռեեստրը**՝ լրացուցիչ կարողությունների փաթեթներ տեղադրելու համար
+
+## Արագ մեկնարկ {#quick-start}
+
+Ակտիվացնելուց և AI մատակարարին միացնելուց հետո բացեք **Gratis AI Agent** վահանակը WordPress-ի admin կողային գոտում։ Մուտքագրեք բնական լեզվով հրահանգ, և agent-ը կպլանավորի ու կկատարի անհրաժեշտ քայլերը՝ օգտագործելով իր հասանելի կարողությունները։
+
+**Օրինակ հրահանգներ.**
+
+```
+Ստեղծեք «Պորտֆոլիո» custom post type՝ «Նախագծի կատեգորիա» taxonomy-ով։
+```
+
+```
+Ներարկեք մուգ ռեժիմի գունային պալիտրա theme-ի մեջ և սահմանեք հիմնական գույնը #1a1a2e։
+```
+
+```
+Կառուցեք ռեստորանի կայք՝ առցանց մենյուով, ամրագրման ձևով և կապի էջով։
+```
+
+## Կարողությունների ակնարկ {#abilities-overview}
+
+Կարողությունները ատոմային գործողություններ են, որոնք agent-ը կարող է կատարել։ Յուրաքանչյուր կարողություն գրանցված PHP class է, որը տրամադրում է schema (պարամետրեր և վերադարձվող տեսակներ), որը agent-ը կարդում է runtime-ի ընթացքում։ Կարողությունները խմբավորված են գործառական ոլորտների մեջ՝
+
+| Ոլորտ | Կարողություններ |
+|---|---|
+| **Բովանդակության կառավարում** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Տեսողական վերանայում** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Դիզայնի համակարգ** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Նավիգացիոն մենյուներ** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Ընտրանքների կառավարում** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Տեղադրվող կարողություններ** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Տեսեք [Կարողությունների տեղեկատուն](./abilities)՝ ամբողջական պարամետրերի փաստաթղթավորման և օգտագործման օրինակների համար։
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent-ը տրամադրվում է `wp gratis-ai-agent` հրամանների ընտանիքով՝ benchmark-ներ գործարկելու և կարողությունները հրամանային տողից կառավարելու համար։ Տեսեք [WP-CLI տեղեկատուն](./wp-cli)՝ հրամանների ամբողջական ցանկի համար։
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Կազմաձևում {#configuration}
+
+Բոլոր կարգավորումները գտնվում են WordPress admin-ում՝ **Gratis AI Agent → Settings** բաժնում՝
+
+| Կարգավորում | Նկարագրություն |
+|---|---|
+| **AI մատակարար** | Ընտրեք և կազմաձևեք ակտիվ AI մատակարարի connector-ը |
+| **Մոդել** | Ընտրեք լեզվական մոդելը, որը կօգտագործվի agent սեսիաների համար |
+| **Max Tokens** | Յուրաքանչյուր հարցման token բյուջե (լռելյայն՝ 4096) |
+| **Կարողության ժամանակի սահմանափակում** | Առավելագույն վայրկյաններ, որոնց ընթացքում անհատական կարողությունը կարող է աշխատել (լռելյայն՝ 30) |
+| **Debug Logging** | Գրանցեք կարողությունների կանչերը և agent-ի դատողությունը WordPress debug log-ում |
+
+## Ընտրանքների կառավարման անվտանգության արգելացանկ {#options-management-safety-blocklist}
+
+Ընտրանքների կառավարման կարողությունը ներառում է ներկառուցված արգելացանկ, որը կանխում է գործակալի կողմից զգայուն WordPress ընտրանքների ընթերցումը կամ գրառումը։ Լռելյայն արգելացանկը ներառում է՝
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL ընտրանքներ — դրանց համար օգտագործեք նվիրված միգրացիայի գործիք)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (գաղտնի բանալիներ)
+- `active_plugins`, `template` (plugin/theme ակտիվացում — օգտագործեք նվիրված կարողություններ)
+- Տեղադրված plugin-ների կողմից գրանցված վճարային gateway-ի հավատարմագրեր և API բանալիներ
+
+Լրացուցիչ գրառումներ կարող են ավելացվել `gratis_ai_agent_options_blocklist` զտիչի միջոցով։
+
+## Կցորդներ և զտիչներ {#hooks-and-filters}
+
+### Գործողություններ {#actions}
+
+- `gratis_ai_agent_ability_registered` — գործարկվում է կարողության գրանցումից հետո, ստանում է կարողության class-ի անունը
+- `gratis_ai_agent_plan_started` — գործարկվում է, երբ կայքի կառուցման պլանը սկսում է կատարվել
+- `gratis_ai_agent_plan_completed` — գործարկվում է, երբ պլանը հաջողությամբ ավարտվում է
+- `gratis_ai_agent_plan_failed` — գործարկվում է, երբ պլանը հանդիպում է անվերականգնելի սխալի
+
+### Զտիչներ {#filters}
+
+- `gratis_ai_agent_abilities` — փոփոխել գրանցված կարողությունների ցանկը նախքան գործակալի կողմից այն բեռնելը
+- `gratis_ai_agent_options_blocklist` — ընդլայնել կամ կրճատել ընտրանքների անվտանգության արգելացանկը
+- `gratis_ai_agent_benchmark_questions` — ավելացնել հատուկ benchmark հարցեր գնահատման փաթեթում
+- `gratis_ai_agent_plan_plugins` — փոփոխել plugin-ների հայտնաբերման ցանկը կայքի պլանի ստեղծման ընթացքում
+
+## Աջակցություն {#support}
+
+Աջակցության համար այցելեք [ultimatemultisite.com](https://ultimatemultisite.com) կամ բացեք խնդիր plugin-ի պահոցում։
+
+## Փոփոխությունների մատյան {#changelog}
+
+Տարբերակների ամբողջական պատմության համար տեսեք [Փոփոխությունների մատյանը](./changelog)։

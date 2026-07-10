@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addonok
+# Ultimate Multisite Addonok {#ultimate-multisite-addons}
 
 Az Addonok kiegészítik az Ultimate Multisite funkcióit további funkciókkal és integrációkkal. A legtöbb addon fizetős, és [ultimatemultisite.com](https://ultimatemultisite.com)-ről vásárolható.
 
-## Telepítés
+## Telepítés {#installation}
 
 Az Addonokat két módon telepítheti:
 
 1. **Az Addon Oldalon** – Navigáljon az Ultimate Multisite admin felületén található addon kezelő oldalra.
 2. **Manuális letöltés** – Töltse le [az accountjából](https://ultimatemultisite.com/my-account/downloads/) és töltse fel a Plugins > Add New menüpontokon keresztül.
 
-## Elérhető Addonok
+## Elérhető Addonok {#available-addons}
 
 | Addon | Leírás |
 |-------|-------------|

@@ -3,13 +3,13 @@ title: Ndihmë me zhvillim të personalizuar
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Siç si mund të marr ndihmë për zhvillim nga Codeable?
+# Siç si mund të marr ndihmë për zhvillim nga Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Ndonjëherë, ne vërtet kemi nevojë për ndonjë personalizim fantastik që të bëjmë rrjetat tona pikërisht ashtu si dëshirojmë. Nëse kjo është ajo që kërkoni, ju rekomandojmë [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), një vend ku mund të gjeni zhvillues me përvojë me ekspertizën e Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) është një platformë që lidh klientët me zhvillues freelance WordPress të kualifikuar, të aftë të punojnë në projekte të çdo madhësie. Ata kanë një proces aplikimi shumë të rregullt për të siguruar që ju të përshtatet me ekspertë specifikisht kualifikuar për detyrën që keni parasysh.
 
-### Si të krijoni një projekt në Codeable?
+### Si të krijoni një projekt në Codeable? {#how-to-create-a-project-in-codeable}
 
 Para se ndonjëherë, shkoni te [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) dhe klikoni butonin **Start a Project** (Ndrysho emrin e butonit në shqip nëse dëshironi të jetë më i qartë, p.sh., "Filloj një Projekt").
 

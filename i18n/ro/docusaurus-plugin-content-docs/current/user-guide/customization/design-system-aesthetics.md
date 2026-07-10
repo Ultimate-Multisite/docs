@@ -3,11 +3,11 @@ title: Abilități în Estetica Sistemului de Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill de Estetică a Sistemului de Design
+# Skill de Estetică a Sistemului de Design {#design-system-aesthetics-skill}
 
 **Skill-ul de Estetică a Sistemului de Design** este o metodă ghidată pentru rafinarea identității vizuale a site-ului tău. Te ajută să iei decizii consistente privind tipografia, culoarea, spațierea și elementele de mișcare (motion tokens) care definesc sistemul tău de design.
 
-## Ce este Estetica Sistemului de Design?
+## Ce este Estetica Sistemului de Design? {#what-is-design-system-aesthetics}
 
 Estetica Sistemului de Design este o competență structurată care acoperă:
 
@@ -20,9 +20,9 @@ Estetica Sistemului de Design este o competență structurată care acoperă:
 
 Aceste decizii sunt înregistrate în fișierul `theme.json` al temei tale, creând un sistem vizual coeziv.
 
-## De ce să folosești Estetica Sistemului de Design?
+## De ce să folosești Estetica Sistemului de Design? {#why-use-design-system-aesthetics}
 
-### Consistență
+### Consistență {#consistency}
 
 Un sistem de design asigură că:
 
@@ -31,7 +31,7 @@ Un sistem de design asigură că:
 - Spațierea urmează un model predictibil
 - Animațiile par unificate
 
-### Eficiență
+### Eficiență {#efficiency}
 
 În loc să iei decizii de design pagină cu pagină, tu:
 
@@ -39,7 +39,7 @@ Un sistem de design asigură că:
 - Le aplici oriunde
 - Le actualizezi global schimbând o singură valoare
 
-### Flexibilitate
+### Flexibilitate {#flexibility}
 
 Poți:
 
@@ -47,9 +47,9 @@ Poți:
 - Experimenta cu estetici diferite
 - Menține consistența mărcii în timp ce evoluezi
 
-## Declanșarea Skill-ului de Estetică a Sistemului de Design
+## Declanșarea Skill-ului de Estetică a Sistemului de Design {#triggering-the-design-system-aesthetics-skill}
 
-### Activare Manuală
+### Activare Manuală {#manual-activation}
 
 Poți iniția skill-ul în orice moment:
 
@@ -69,7 +69,7 @@ sau
 "Guide me through design system decisions"
 ```
 
-### Sugestii Automate
+### Sugestii Automate {#automatic-suggestions}
 
 Agentii pot sugera utilizarea skill-ului atunci când:
 
@@ -78,9 +78,9 @@ Agentii pot sugera utilizarea skill-ului atunci când:
 - Doriți să îmbunătățiți consistența vizuală
 - Vă pregătiți să lansezi site-ul
 
-## Procesul de Estetică a Sistemului de Design
+## Procesul de Estetică a Sistemului de Design {#the-design-system-aesthetics-process}
 
-### Pasul 1: Tipografia
+### Pasul 1: Tipografia {#step-1-typography}
 
 Agentul te întreabă despre alegerile tale de fonturi:
 
@@ -110,7 +110,7 @@ Apoi, agentul definește:
 - **Scala de greutăți (Weight scale)**: Greutățile fonturilor (regular, medium, bold, etc.)
 - **Înălțimea de linie (Line height)**: Spațierea dintre linii pentru o citire mai ușoară
 
-### Pasul 2: Paleta de Culori
+### Pasul 2: Paleta de Culori {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Agentul creează o paletă completă care include:
 - Culori semantice (success, warning, error)
 - Stări de hover și active
 
-### Pasul 3: Spațiere
+### Pasul 3: Spațiere {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Agentul definește token-uri de spațiere:
 - Scala: xs, sm, md, lg, xl, 2xl
 - Valorile specifice pentru padding, margin, gap
 
-### Pasul 4: Borduri și Umbre
+### Pasul 4: Borduri și Umbre {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Agentul creează:
 - Token-uri de umbre pentru nivelurile de elevație
 - Token-uri de lățime a bordurilor
 
-### Pasul 5: Mișcare și Animație
+### Pasul 5: Mișcare și Animație {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Agentul definește:
 - Funcțiile de easing (ease-in, ease-out, ease-in-out)
 - Keyframe-uri de animație pentru interacțiunile comune
 
-## Aplicarea Esteticii Sistemului de Design
+## Aplicarea Esteticii Sistemului de Design {#applying-design-system-aesthetics}
 
-### Aplicare Automată
+### Aplicare Automată {#automatic-application}
 
 După ce finalizezi skill-ul, agentul:
 
@@ -218,7 +218,7 @@ După ce finalizezi skill-ul, agentul:
 3. Regeneră stilurile blocurilor pentru a se potrivi noului sistem
 4. Activează tema actualizată
 
-### Aplicare Manuală
+### Aplicare Manuală {#manual-application}
 
 Poți edita și tu direct `theme.json`:
 
@@ -257,9 +257,9 @@ Poți edita și tu direct `theme.json`:
 }
 ```
 
-## Vizualizarea Sistemului Tău de Design
+## Vizualizarea Sistemului Tău de Design {#viewing-your-design-system}
 
-### Roagă Agentul
+### Roagă Agentul {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ sau
 
 Agentul îți va afișa tipografia, culorile, spațierea și alte token-uri.
 
-### Vizualizarea theme.json
+### Vizualizarea theme.json {#view-themejson}
 
 Deschide `/wp-content/themes/[theme-name]/theme.json` într-un editor de text pentru a vedea definițiile brute ale token-urilor.
 
-## Actualizarea Sistemului Tău de Design
+## Actualizarea Sistemului Tău de Design {#updating-your-design-system}
 
-### Actualizări Rapide
+### Actualizări Rapide {#quick-updates}
 
 Roagă agentul pentru modificări specifice:
 
@@ -299,7 +299,7 @@ sau
 "Change the heading font to a serif"
 ```
 
-### Re-design Complet
+### Re-design Complet {#full-redesign}
 
 Rulează din nou skill-ul de Estetică a Sistemului de Design:
 
@@ -309,7 +309,7 @@ Rulează din nou skill-ul de Estetică a Sistemului de Design:
 
 Acest lucru te va ghida din nou prin toate deciziile, începând cu valorile tale actuale.
 
-### Actualizări Parțiale
+### Actualizări Parțiale {#partial-updates}
 
 Actualizează aspecte specifice:
 
@@ -317,15 +317,15 @@ Actualizează aspecte specifice:
 "Just update the color palette, keep everything else"
 ```
 
-## Cele Mai Bune Practici pentru Sistemul de Design
+## Cele Mai Bune Practici pentru Sistemul de Design {#design-system-best-practices}
 
-### Consistență
+### Consistență {#consistency-1}
 
 - Folosește aceleași token-uri oriunde
 - Nu crea culori sau dimensiuni de o singură utilizare
 - Referințează token-urile în loc să codifici valorile în mod rigid
 
-### Nomenclatură
+### Nomenclatură {#naming}
 
 Folosește nume clare, semantice:
 
@@ -335,7 +335,7 @@ Folosește nume clare, semantice:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalabilitate
+### Scalabilitate {#scalability}
 
 Proiectează sistemul tău pentru a scala:
 
@@ -343,7 +343,7 @@ Proiectează sistemul tău pentru a scala:
 - Creează scale (xs, sm, md, lg, xl) în loc de valori arbitrare
 - Planifică adăugiri viitoare
 
-### Documentare
+### Documentare {#documentation}
 
 Documentează sistemul tău de design:
 
@@ -351,9 +351,9 @@ Documentează sistemul tău de design:
 - Când să folosești fiecare token
 - Excepții și cazuri de margine
 
-## Modele Comune de Sistem de Design
+## Modele Comune de Sistem de Design {#common-design-system-patterns}
 
-### Minimalist Modern
+### Minimalist Modern {#modern-minimalist}
 
 - Tipografie sans-serif (Inter, Helvetica)
 - Paletă de culori limitată (2-3 culori)
@@ -361,7 +361,7 @@ Documentează sistemul tău de design:
 - Umbre subtile
 - Animații fluide și rapide
 
-### Cald și Prietenos
+### Cald și Prietenos {#warm-and-friendly}
 
 - Amestec de serif și sans-serif
 - Paletă de culori calde (portocale, griuri calde)
@@ -369,7 +369,7 @@ Documentează sistemul tău de design:
 - Umbre blânde
 - Animații jucăușe
 
-### Corporativ Profesional
+### Corporativ Profesional {#professional-corporate}
 
 - Sans-serif curat (Roboto, Open Sans)
 - Paletă neutre cu o culoare accent
@@ -377,7 +377,7 @@ Documentează sistemul tău de design:
 - Umbre minimale
 - Tranziții subtile
 
-### Creativ și Audacious
+### Creativ și Audacious {#creative-and-bold}
 
 - Tipografie distinctivă
 - Paletă de culori îndrăzneață
@@ -385,7 +385,7 @@ Documentează sistemul tău de design:
 - Umbre puternice
 - Animații vizibile
 
-## Depanare
+## Depanare {#troubleshooting}
 
 **Modificările mele de design nu sunt vizibile**
 - Șterge cache-ul browserului
@@ -403,7 +403,7 @@ Documentează sistemul tău de design:
 - Editează manual `theme.json` pentru valorile anterioare
 - Rulează skill-ul cu alegeri diferite
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 După ce ai definit sistemul tău de design:
 

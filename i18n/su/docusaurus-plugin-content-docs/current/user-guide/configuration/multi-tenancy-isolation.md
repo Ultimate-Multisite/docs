@@ -3,11 +3,11 @@ title: Isolasi Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolasi Multi-Tenancy
+# Isolasi Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ngabrugi isolasi database jeung filesystem per-subsite pikeun tenant anu mandiri (sovereign). Ieu ngajaga data tenant jadi pisah bari tetep ngajaga penyediaan jaringan, penagihan, jeung administrasi di tingkat jaringan.
 
-## Strategi Isolasi
+## Strategi Isolasi {#isolation-strategy}
 
 Gunakan isolasi mandiri (sovereign isolation) pikeun pelanggan anu butuh pemisahan data leuwih kuat, penyimpanan filesystem khusus, atawa batasan host anu pisah.
 
@@ -18,7 +18,7 @@ Setiap tenant mandiri kudu boga:
 - Entri registri tenant anu mapkeun situs kana databasena, root pathna, hostname, jeung model isolasi.
 - Hasil verifikasi migrasi saméméh tenant dianggap live.
 
-## Binding Host Database
+## Binding Host Database {#database-host-binding}
 
 Versi 1.2.0 ngarobah tingkah laku binding host sarua mesin (same-machine) anu default pikeun instalasi mandiri. Nilai sarua mesin saperti `localhost` diatur ulang (normalized) sangkan Bedrock, FrankenPHP, jeung instalasi WordPress containerized bisa méré jeverifikasi izin kana string host MySQL anu sieun ningali.
 
@@ -31,11 +31,11 @@ Lamun ngatur tenant mandiri:
 
 Lamun laporan verifikasi nunjukkeun kegagalan izin (grant failures), bandingkeun izin user DB tenant jeung binding host anu diatur. User anu dipasihkeun pikeun `user@localhost` béda jeung `user@127.0.0.1` atawa `user@%`.
 
-## Root Filesystem
+## Root Filesystem {#filesystem-root}
 
 Akar root penyewa kudu stabil dina waktu restart jeung deployment. Hindari ngagunake mount path sementara. Pikeun instalasi gaya Bedrock, pastikeun akar penyewa nunjuk ka WordPress web root anu dipikahoyong ku tenant bootstrap, lain ngan ukur root proyekna.
 
-## Urutan provisioning
+## Urutan provisioning {#provisioning-order}
 
 Pikeun penyewa souveren anyar, anggo urutan ieu:
 
@@ -49,7 +49,7 @@ Pikeun penyewa souveren anyar, anggo urutan ieu:
 
 Urutan ieu ngalanggar penyewa anu masih parantos terisolasi tina ngarangkul trafik saméméh database writer, user, jeung filesystem siap.
 
-## Alur manajemen pelanggan souveren
+## Alur manajemen pelanggan souveren {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 ngajaga tindakan manajemen pelanggan dina situs utama nalika mode souveren diaktifkeun. Penyewa masih bisa jalan salaku instalasi WordPress anu terisolasi, tapi tindakan pamaréntah pelanggan anu gumantung kana penagihan jaringan (network billing), keanggotaan (membership), atawa data akun babarengan (shared account data) kudu ngirim deui pelanggan ka situs utama tibatan nyoba ngalaksanakeun tindakan éta di jero runtime penyewa.
 

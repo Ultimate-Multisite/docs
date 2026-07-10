@@ -3,11 +3,11 @@ title: Haladó kódpéldák
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Haladó kód példák
+# Haladó kód példák {#advanced-code-examples}
 
 Ezek az példák a Ultimate Multisite-el kapcsolatos haladó integrációs mintákat mutatják be.
 
-## Dinamikus árazási motor
+## Dinamikus árazási motor {#dynamic-pricing-engine}
 
 Egy szabályalapú árazási motor, amely alkalmazza a mennyiségi, hűség- és szezonális kedvezményeket:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Haladó oldal biztosítás (Advanced Site Provisioning)
+## Haladó oldal biztosítás (Advanced Site Provisioning) {#advanced-site-provisioning}
 
 Automatikus konfigurálás új oldalak számára pluginekkel, SSL-szervízzel, CDN-nel, backupokkal és monitoringgal, a szolgáltatási terv funkciói alapján:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Saját korlátok rendszere (Custom Limitations System)
+## Saját korlátok rendszere (Custom Limitations System) {#custom-limitations-system}
 
 Követi és biztosítja a forráskorlátokat használati figyelmeztetésekkel:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB atomikus számlálója az `increment_item()`-nel
+## BerlinDB atomikus számlálója az `increment_item()`-nel {#berlindb-atomic-counter-with-incrementitem}
 
 Az Ultimate Multisite v2.6.1 hozzáadta az `increment_item()` metódust a BerlinDB `Query` osztályhoz. Használja, hogy biztonságosan, atomikus módon növelje a numerikus oszlopokat, elkerülve az olvasás-módosítás-írás (read-modify-write) versenyhelyzeteket – hasznos a számlálóknál, a használati kvótáknál és a forradalomkorlátozás ellenőrzéseinál, amelyek párhuzamos kérések alatt futnak.
 
-### Metódus aláírás
+### Metódus aláírás {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Az Ultimate Multisite v2.6.1 hozzáadta az `increment_item()` metódust a Berlin
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Egyszerű használat
+### Egyszerű használat {#basic-usage}
 
 ```php
 // Hozzáad 1-et az `api_calls` oszlophoz a 42-es membership ID-hez.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### API használat követése a membership szerint
+### API használat követése a membership szerint {#tracking-api-usage-per-membership}
 
 Egy gyakorlati mintázat a membership-ok szintjén történő API forradalomkorlátok biztosítására:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Miért `increment_item()` helyett `update_item()`?
+### Miért `increment_item()` helyett `update_item()`? {#why-incrementitem-instead-of-updateitem}
 
 Egy egyszerű olvasás-módosítás-írás (read-modify-write) megközelítés veszélyes párhuzamos kérések alatt:
 

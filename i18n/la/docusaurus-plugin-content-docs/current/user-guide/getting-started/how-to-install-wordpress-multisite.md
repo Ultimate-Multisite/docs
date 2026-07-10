@@ -3,7 +3,7 @@ title: Quomodo instalare WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Quommodo Installō WordPress Multisite?
+# Quommodo Installō WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite te permittit habere network sitium in una sola installation. Hoc est factor inclusus, sed non est activus per default.
 
@@ -61,7 +61,7 @@ Et hoc codicem, etiam a WordPress praebet, ad filum tuum _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add trailing slash in /wp-admin
+# add trailing slash in /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Para crear un subsitio:
 
 Después de rellenar los campos, haz clic en el botón "Añadir sitio". Una vez creado el nuevo subsitio, ve y accédelo para asegurarte de que el subsitio funciona correctamente.
 
-## Problemas Comunes:
+## Problemas Comunes: {#common-problems}
 
-### 1. Puedo crear sitios nuevos pero no son accesibles.
+### 1. Puedo crear sitios nuevos pero no son accesibles. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Si elegiste subdominios, también necesitas configurar subdominios comodín (wildcard) para tu red multisite.
 

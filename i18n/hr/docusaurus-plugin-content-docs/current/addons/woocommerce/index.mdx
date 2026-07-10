@@ -1,0 +1,109 @@
+---
+title: WooCommerce integracija
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce integracija {#woocommerce-integration}
+
+WooCommerce integracija radi na vrlo sličan način kao naš ručni gateway. Nudi veliku fleksibilnost vašim korisnicima, omogućujući im da odaberu bilo koji od obrazaca plaćanja dostupnih na vašoj WooCommerce instalaciji. I jednostavna je: nakon završetka korisnikova obračunskog razdoblja, korisnička pretplata stavlja se na čekanje. Istovremeno će se na WooCommerce instalaciji glavnog sitea mreže izraditi narudžba. Korisnik zatim prima račun u svoju e-poštu, s poveznicom za izvršenje plaćanja. Nakon što je plaćanje primljeno, pretplata se obnavlja.
+
+## Značajke {#features}
+
+- Jednostavna integracija između Ultimate Multisite i WooCommerce
+- Dostupno je nekoliko načina plaćanja
+- Automatizirana ponavljajuća naplata pomoću ugrađene jezgre pretplata, uz opcionalna poboljšanja WooCommerce Subscriptions plugin
+- Ukupni iznosi na checkoutu uključuju Ultimate Multisite poreze kao zasebne, neoporezive WooCommerce stavke naknada kako bi kupci mogli pregledati iznose poreza prije plaćanja
+
+## Dokumentacija {#documentation}
+
+**Postavljanje WooCommerce integracije**
+
+**Proširenje vaših opcija plaćanja uz Ultimate Multisite: WooCommerce integracija**
+
+## Instalacija {#installation}
+
+1. Prenesite 'ultimate-multisite-woocommerce' u direktorij '/wp-content/plugins/'
+2. Aktivirajte plugin putem izbornika 'Plugins' u WordPressu
+3. Slijedite Wizard korak po korak kako biste postavili plugin
+
+## Vodič za korištenje {#usage-guide}
+
+_**VAŽNA NAPOMENA: Ovaj se članak odnosi na Ultimate Multisite verziju 2.x.**_
+
+_**PAŽNJA:** Ultimate Multisite: WooCommerce integracija zahtijeva da WooCommerce bude aktiviran barem na vašem glavnom siteu._
+
+Razumijemo da _Stripe_ i _PayPal_ nisu dostupni u nekim zemljama, što ograničava ili ometa Ultimate Multisite korisnike u učinkovitom korištenju našeg plugina. Zato smo izradili **add-on za integraciju _WooCommerce_**.
+
+_WooCommerce_ je vrlo popularan plugin za e-trgovinu. Razvojni programeri diljem svijeta izradili su add-onove za integraciju različitih gatewaya za plaćanje s njim. Iskoristili smo to kako bismo proširili gatewaye za plaćanje koje možete koristiti u Ultimate Multisite sustavu naplate.
+
+## Postavljanje {#setting-it-up}
+
+Prvo trebate instalirati WooCommerce Integration add-on koji je **besplatan za licencirane korisnike**. Da biste ga instalirali, kliknite Ultimate Multisite na svojem super admin dashboardu i odaberite **Add-ons**.
+
+![Stranica add-onova](/img/admin/addons-page.png)
+
+Ovdje možete pronaći sve Ultimate Multisite add-onove. Kliknite add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Stranica add-onova koja prikazuje WooCommerce Integration](/img/admin/addons-page.png)
+
+Pojavit će se prozor s pojedinostima add-ona. Samo kliknite **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Nakon dovršetka instalacije bit ćete preusmjereni na stranicu plugina. Ovdje samo kliknite **Network Activate** i _WooCommerce_ add-on bit će aktiviran na vašoj mreži.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Nakon što ga aktivirate, ako još uvijek nemate instaliran i aktiviran WooCommerce plugin na svojoj web-stranici, **primit ćete podsjetnik**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Nakon instalacije vidjet ćete dodatnu opciju u postavkama plaćanja Ultimate Multisite. Zatim ondje možete **omogućiti** opciju _WooCommerce_.
+
+![Postavke Ultimate Multisite gatewaya za plaćanje s omogućenim WooCommerce](/img/addons/woocommerce-payment-gateway.png)
+
+Možete konfigurirati neke osnovne postavke poput prikaznog naziva koji će se prikazivati na front endu i uputa koje će voditi vaše korisnike kroz njihov checkout tijek. Zatim možete otići na **_WooCommerce_ postavke glavnog sitea** kako biste omogućili i konfigurirali gateway za plaćanje koji želite koristiti.
+
+### Stavke poreznih naknada na checkoutu {#checkout-tax-fee-lines}
+
+Kada Ultimate Multisite checkout uključuje poreze, integracija dodaje svaki Ultimate Multisite iznos poreza u WooCommerce checkout kao zasebnu, neoporezivu stavku naknade. Time ukupni porez ostaje vidljiv prije plaćanja, a WooCommerce se sprječava da ponovno oporezuje poreznu naknadu.
+
+## Kako upravljati plaćanjem {#how-to-manage-the-payment}
+
+WooCommerce integracija radi na vrlo sličan način kao naš **ručni gateway**. Nedostatak je to što se svako plaćanje mora platiti ručno na kraju obračunskog razdoblja. Evo kako tijek funkcionira:
+
+  * Nakon završetka korisnikova obračunskog ciklusa, članstvo se stavlja **na čekanje**. Istovremeno će se izraditi narudžba na _WooCommerce_ instalaciji na glavnom siteu vaše mreže.
+
+  * Korisnici zatim primaju račun u svoju e-poštu, s poveznicom za izvršenje plaćanja (poveznica se također pojavljuje u njihovoj povijesti naplate na dashboardu njihova subsitea). Ta poveznica preusmjerava korisnika na _**WooCommerce**_ **checkout** , gdje će korisnici moći odabrati jedan od **dostupnih _WooCommerce_ gatewaya** kako bi obradili svoje plaćanje.
+
+  * Nakon što je plaćanje primljeno, članstvo se **obnavlja** , plaćanje se bilježi u Ultimate Multisite i narudžba se postavlja kao dovršena.
+
+### Neke važne napomene: {#some-important-notes}
+
+  * Zadana funkcionalnost Ultimate Multisite i dalje radi s ovim oblikom integracije. Na primjer, **izdavanje povrata** sa zaslona **Upravljanje pretplatom** komunicirat će s WooCommerce kako bi se izdao povrat putem odabranog obrasca plaćanja.
+
+  * Ultimate Multisite: WooCommerce Integration oslanja se na WP-Cron za rad. To većinu vremena radi vrlo dobro, ali ako site ima slab promet, cron se ne pokreće za provjeru zakazanih događaja i događaj se propušta, što može uzrokovati kašnjenja u izvršenju.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Ručno pokretanje plaćanja svaki mjesec nije idealno za krajnje korisnike jer se očekuje da se pretplate automatski ponavljaju u svakom obračunskom ciklusu. WooCommerce Integration add-on sada uključuje osnovni kod pretplata, pa ponavljajući proizvodi uvijek koriste pretplate za ponavljajuću naplatu.
+
+**Ne** trebate kupiti ni instalirati zaseban [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) da biste prodavali ponavljajuće proizvode putem ove integracije. Ako je taj plugin kupljen, instaliran i dostupan na vašoj glavnoj web-stranici, Ultimate Multisite će ga koristiti, a WooCommerce će prikazati dodatne značajke za upravljanje pretplatama. Kada nije dostupan, ugrađena jezgra pretplata i dalje obrađuje ponavljajuće proizvode.
+
+![Postavke integracije WooCommerce pretplata](/img/addons/woocommerce-subscription-integration.png)
+
+I to je to. Vaši krajnji korisnici više neće morati ručno izvršavati plaćanje na kraju svojeg obračunskog ciklusa za ponavljajuće proizvode.
+
+Osim što će narudžba biti stvorena na vašoj glavnoj web-stranici pod _WooCommerce_, također će se stvoriti pretplata za svaki Account.
+
+### Ponašanje obustave pri neuspjeloj obnovi {#failed-renewal-suspension-behavior}
+
+Prema zadanim postavkama, članstva ostaju aktivna dok WooCommerce Subscriptions obrađuje svoj raspored ponovnih pokušaja za neuspjelo plaćanje. Time se čuva uobičajeni odgodni rok WooCommerce Subscriptions kako bi oporavljena obnova mogla ponovno uskladiti pretplatu i članstvo bez preranog prekida pristupa.
+
+Administratori koji žele strožu kontrolu pristupa mogu omogućiti **Odmah obustavi članstva pri neuspjelim obnovama** u postavkama WooCommerce Integration. Kada je ova opcijska postavka omogućena, Ultimate Multisite obustavlja povezano članstvo čim plaćanje obnove ne uspije, umjesto da čeka završetak obrade ponovnih pokušaja WooCommerce Subscriptions.
+
+Programeri mogu nadjačati istu odluku filtrom `wu_woo_suspend_on_payment_failure`. Stranice s referencama hookova generiraju se iz izvornog koda add-ona, pa ovaj pregled ističe samo naziv filtra za prilagođena pravila obustave.

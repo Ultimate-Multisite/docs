@@ -3,11 +3,11 @@ title: Liikmepäranduse lõppmine ja veebisaidi blokeerimine
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Liikmesriku lõppmine ja veebisaite blokeerimine
+# Liikmesriku lõppmine ja veebisaite blokeerimine {#membership-expiration-and-site-blocking}
 
 See juhend selgitab, kuidas Ultimate Multisite haldab liikmesriikude lõppmine, proovivõtud perioodide lõppmine ja veebisaite esile jäämist. See käsitleb liikmesriiku elukorra aktiivsetest lõppenudeni, sellele kontrolli oleva seadistusi ning mida kontrollida, kui veebisaid jääb pääsuraks pärast liikmesriikude lõppmine.
 
-## Liikmesriiku staatuse elukord
+## Liikmesriiku staatuse elukord {#membership-status-lifecycle}
 
 Ultimate Multisite iga liikmesriikule on üks järgmised staatused:
 
@@ -24,7 +24,7 @@ Vab liikmesriikud ei lõpnu automaatselt. Ultimate Multisite käsitleb neid kui 
 | **Expired** (Lõppmine) | Lõppmisega lõppunud lõppmineaeg ja antud andlustuheperioodi ilma uuesti kinnitamata |
 | **Cancelled** (Tühistatud) | Kasutajaks või administraatoril poolt otseselt tühistatud |
 
-### Kuidas liikmesriikud lõppuvad?
+### Kuidas liikmesriikud lõppuvad? {#how-memberships-transition-to-expired}
 
 Ultimate Multisite käib iga tund **tagasi kontrolli**, et leida liikmesriikuid, mis peaksid märkimine kui lõppenud. See kontroll kasutab [Action Scheduler](https://actionscheduler.org/) (ei otse WP-Cronit) ja käib nagu `wu_membership_check` nimetatud scheduled action.
 
@@ -34,7 +34,7 @@ Lõppminekontrollil on **teadlik andlustuheperiood 3 päeva** poolt. Liikmesriik
 3 päeva lajuva ajakohangus on eraldatud allpool kirjeldatud Etüütik blokki lajuva ajakohanguse seadistusest. Lajuva ajakohangus kontrollib, millal **status muutub** aktiivne/pausitud olekuks lajuvaniks. Etüütik blokki lajuva ajakohangus kontrollib, millal **sait blokeeritakse**, pärast seda, kui status on juba muudunud.
 :::
 
-#### Auto-renewing vs. Non-auto-renewing jäsenlust
+#### Auto-renewing vs. Non-auto-renewing jäsenlust {#auto-renewing-vs-non-auto-renewing-memberships}
 
 See eraldamine on oluline mõista lajuvaajutuse käitumist:
 
@@ -42,7 +42,7 @@ See eraldamine on oluline mõista lajuvaajutuse käitumist:
 
 - **Auto-jäsenlusi (auto-renewing memberships)** (`auto_renew = true`): Croni lajuvaajutuse kontroll **niiestab neid täiesti**. Makseportaal (Stripe, PayPal jne.) on odavat teavitama Ultimate Multisite'i webhookidega, kui jäsenluse uuendamine ebaõnnestub või tühistatakse. Kui webhookit ei saada – konfiguratsiooniga valitud lõpppunktiga viga, portali ületusega või jäsenluse tühistamise süsteemi väljaspool – võib jäsenlus jätta olla `active` ajaltes igavajalikku lajuvaajutust pärast lajuvaajutuse kuupäeva üle.
 
-### Kuidas proovikud lõenduvad
+### Kuidas proovikud lõenduvad {#how-trials-end}
 
 Kui proovikujäsenluse prooviaja lõpeb, teeb süsteem:
 
@@ -52,11 +52,11 @@ Kui proovikujäsenluse prooviaja lõpeb, teeb süsteem:
 
 See protsess toimib sama tundlikku ajakavast kui regulaarne lajuvaajutuse kontroll, kuid **vain ei auto-jäsenlusi**. Auto-jäsenluste prooviaja üleandmisest makseportaal on vastutav.
 
-## Etüütik pääsude blokeerimine
+## Etüütik pääsude blokeerimine {#block-frontend-access}
 
 Oletodolla, kun jäsenyys päättyy tai siirtyy tauolle, **rajoitetaan vain wp-admin -paneeli**. Sivuston julkinen etuosa pysyy saatavilla vierailijoille. Julkisen pääsyn estämiseksi sinun on käytettävä **Block Frontend Access** -asetusta.
 
-### Asetuksen konfigurointi
+### Asetuksen konfigurointi {#configuring-the-setting}
 
 Siirry kohtaan **Ultimate Multisite > Settings > Memberships** ja aktivoi **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Kolme yhteen liittyvää asetusta hallitsee tätä käyttäytymistä:
 | **Frontend Block Grace Period** | Päivien määrä odotettava aika sen jälkeen, kun jäsenyys on poistettu käytöstä ennen estämistä. Aseta `0` estämään välittömästi. | 0 |
 | **Frontend Block Page** | Sivu pääsivustolla, johon vierailijoita ohjataan, kun sivusto estetään. Jos sitä ei ole asetettu, vierailijat näkevät yleisen viestin "Sivua ei ole tällä hetkellä saatavilla" ja linkin sisäänkirjautumissivulle sivuston ylläpitäjän käyttöön. | None |
 
-### Mitä vierailijat näkevät, kun sivu estetään
+### Mitä vierailijat näkevät, kun sivu estetään {#what-visitors-see-when-a-site-is-blocked}
 
 Kun etuosan pääsy on estetty, vierailijat saavat joko:
 
@@ -83,7 +83,7 @@ Kun etuosan pääsy on estetty, vierailijat saavat joko:
 
 Sivuston ylläpitäjät voivat silti kirjautua sisään – sisäänkirjautumissivu ei koskaan esty.
 
-### Mitä estetään ja milloin
+### Mitä estetään ja milloin {#what-gets-blocked-and-when}
 
 Estämiskäyttäytyminen riippuu jäsenyysstatusesta:
 
@@ -104,28 +104,28 @@ Vaikimata, et proovimisaeg on lõppenud, `trialing` staatusega liikmesolek **ei*
 Tühistatud liikmesolekud blokeeritakse alati pärast lõppuväalu üleminemist, kas "Block Frontend Access" on sisse või mitte. Etis blokitud lõppukordik ei ole tühistatud liikmesolekude jaoks.
 :::
 
-## Probleemide lahendamine: Situsid jäävad pääsaks pärast lõppuväalu
+## Probleemide lahendamine: Situsid jäävad pääsaks pärast lõppuväalu {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Kui situsid jäävad avalikuks kättesaadavaks pärast liikmesoleku lõppumist, käige läbi need kontrollid järgmisel järjekorras:
 
-### 1. Kontrollige "Block Frontend Access" seaduse aktiveerimine
+### 1. Kontrollige "Block Frontend Access" seaduse aktiveerimine {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Minimeerige **Ultimate Multisite > Settings > Memberships** ja kinnitage, et **Block Frontend Access** lühend on sisse. See seade on **oletuks välja selle**, mida tähendab see, et ainult `wp-admin` on piiratud liikmesoleku inaktiivseks muutudes.
 
-### 2. Kontrollige lõppukordiku blokki
+### 2. Kontrollige lõppukordiku blokki {#2-check-the-frontend-block-grace-period}
 
 Kontrollige seistustelguselele seadistuslehel **Frontend Block Grace Period** väärtust. Kui see on asetatud 7 päevale, näiteks ei peaks frontend blokeerimast enne 7 päeva pärast jälgimise perioodi lõppu – isegi kui liiklusstatus on juba `expired`.
 
 Asetage see `0`, kui soovite kohe blokeerida pärast seda, kui liiklus muutub inaktiivseks.
 
-### 3. Lõpetage Liiklusstatus tõesti Muutatud
+### 3. Lõpetage Liiklusstatus tõesti Muutatud {#3-confirm-the-membership-status-has-actually-changed}
 Minimeerige **Ultimate Multisite > Memberships** ja kontrollige mõjatu liiklusstatus. Kui see näitab endiselt `active` kuigi lõpppäev on juba möödunud, on statusi üleliikumine mitte toimunud. Üldised põhjust:
 
 - **Liiklus uuestiautoboomitub**: Kontrollige `auto_renew`-väljaust liiklusredakteerimise lehel. Kui auto-renew on aktiveeritud, järelevalve cron ühistab seda liiklust – see sõltub maksukeskuse raportiroimest. Kontrollige oma käsitluse dashboardi (Stripe, PayPal) kinnitamiseks, kas jälgimisstatus vastab Ultimate Multisite näitlevale.
 
 - **Cron töö ei käinud**: Vaadake järgmist samm.
 
-### 4. Kontrollige Action Scheduler käitumist
+### 4. Kontrollige Action Scheduler käitumist {#4-verify-action-scheduler-is-running}
 Ultimate Multisite kasutab croni tööde jaoks Action Schedulerit. Minimeerige **Tools > Scheduled Actions** võrku administratiivse juures ja otsige:
 
 - **`wu_membership_check`** – See peaks ilmbumise korduvaks toiminguks, mis käib kundi iga tundi. Kui see puudub, ei ole liikluskontrolli ühistatud.
@@ -146,7 +146,7 @@ Um eine zuverlässige Cronausführung zu gewährleisten, richten Sie einen Syste
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Überprüfen Sie Gateway Webhook-Probleme (Automatische Verlängerung von Mitgliedschaften)
+### 5. Überprüfen Sie Gateway Webhook-Probleme (Automatische Verlängerung von Mitgliedschaften) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Wenn die Mitgliedschaft automatisch verlängert wird und das Gateway-Abonnement jedoch gekündigt wurde oder fehlgeschlagen ist, aber Ultimate Multisite es immer noch als `aktiv` anzeigt:
 
@@ -155,7 +155,7 @@ Wenn die Mitgliedschaft automatisch verlängert wird und das Gateway-Abonnement 
 
 Wenn das Gateway die Mitgliedschaft als gekündigt anzeigt, aber Ultimate Multisite dies nicht tut, wurde die Webhook-Benachrichtigung wahrscheinlich verloren. Sie können den Mitgliedschaftsstatus manuell in **Ultimate Multisite > Mitglieder > [Mitgliedschaft bearbeiten]** ändern.
 
-### 6. Überprüfen Sie die Ablauf-Pufferzeit (Cron-Ebene)
+### 6. Überprüfen Sie die Ablauf-Pufferzeit (Cron-Ebene) {#6-check-the-expiration-grace-period-cron-level}
 
 Die Cronprüfung hat eine eigene Pufferzeit (Standard: 3 Tage), bevor eine Mitgliedschaft als abgelaufen markiert wird. Dies ist getrennt von der Pufferzeit für den Frontend-Block. Die Gesamtzeit, bis eine Seite gesperrt wird, beträgt:
 
@@ -163,7 +163,7 @@ Die Cronprüfung hat eine eigene Pufferzeit (Standard: 3 Tage), bevor eine Mitgl
 
 Näiteks olet poolt puudutatud seadistustega ja 7-päevase esilehooleperioodi, võib veebileht blokeerimiseks korduvusest `date_expiration` pärast kuni 10 päeva keda.
 
-### 7. Liiklikuks lülitamine liiklusstatusi
+### 7. Liiklikuks lülitamine liiklusstatusi {#7-manually-expire-a-membership}
 
 Kui vajad seiti kohe blokeerida ilma cron-tsykli ootamata, saad manuaalselt muuta liiklusstatus:
 
@@ -174,7 +174,7 @@ Kui vajad seiti kohe blokeerida ilma cron-tsykli ootamata, saad manuaalselt muut
 
 Esilehooleperioodi blokeerimine hakab toimida järgmise lehtlaadimise ajal (lõppunud liiklusstatuside jaoks on esilehooleperiood, või tühistatud liiklusstatuside jaoks kohe).
 
-## Kokkuvõte
+## Kokkuvõte {#summary}
 
 Kogu ajakava lõppusest kuupäevast seiti blokeerimisse:
 
@@ -206,7 +206,7 @@ Tühistatud liiklusstatuside puhul on teelõpp lühem:
   Veebilehti esilehine osa on kohe blokeeritud
 ```
 
-## Arengutööde viidend
+## Arengutööde viidend {#developer-reference}
 
 Järgnev hook'id ja filterid võimaldavad teil seadistada lõppumise ja blokeerimise käitumist:
 

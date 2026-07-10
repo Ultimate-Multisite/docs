@@ -1,0 +1,116 @@
+---
+title: Ho tsamaellana ha Tutor le Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Katoloso ya WordPress e eketsang ditokiso tsa tshebedisano bakeng sa Tutor LMS ditikolohong tsa multisite.
+
+## Tlhaloso {#description}
+
+Katoloso ena e fana ka ditokiso tsa bohlokwa tsa tshebedisano bakeng sa ho tsamaisa Tutor LMS ho dinetweke tsa WordPress multisite. E sebetsana le ngodiso ya basebedisi, taolo ya barupedi, meedi ya dithuto, le tshebetso e nngwe e ikgethang ya multisite.
+
+## Dikarolo {#features}
+
+- **Taolo ya Ditafole tsa Database**: E lemoha ka boiketsetso le ho bopa ditafole tsa Tutor LMS tse haellang tse hlolehang ka lebaka la dithibelo tsa senotlolo sa kantle sa multisite
+- **Ngodiso ya Basebedisi ba Multisite**: Bahlokomedi ba AJAX ba ikgethang bakeng sa ho laola ngodiso ya basebedisi ho pholletsa le disaete tsa netweke
+- **Taolo ya Karolo ya Morupedi**: Kabelo le taolo ya karolo ya morupedi ka boiketsetso ditikolohong tsa multisite
+- **Meedi ya Dithuto**: Kopanyo le Ultimate Multisite bakeng sa ho laola meedi ya ho bopa dithuto le difanele ho itshetlehile ka merero ya saete
+- **Dipono tsa Motsamaisi tse Ikgethang**: Lenane la barupedi le sehokelo sa taolo tse hlokomelang multisite
+- **Dithulusi tsa Motsamaisi**: Sehokelo sa taolo ya database bakeng sa batsamaisi ba netweke le ba saete
+
+## Ditlhoko {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Katoloso ya Tutor LMS (e qobellwa ka boiketsetso ka hlooho ya `Requires Plugins`)
+- Kenyo ya WordPress Multisite
+- Katoloso ya Ultimate Multisite (bakeng sa tshebetso ya meedi ya dithuto)
+
+## Kenyo {#installation}
+
+1. Kenya difaele tsa katoloso ho `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Netefatsa hore Tutor LMS e kentsoe mme e butswitswe
+3. Bulela katoloso ka menyu ya 'Dikatoloso' ho WordPress
+4. Katoloso e tla ikopanya ka boiketsetso le Tutor LMS
+
+## Sebopeho sa Difaele {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Tshebetso e Tlositsweng ho MU plugin {#functionality-moved-from-mu-plugin}
+
+Katoloso ena e na le tshebetso e neng e le ho `wp-content/mu-plugins/daves.php` pele:
+
+- Meedi ya phetoho ya boemo ba thuto
+- Meedi ya ho bopa thuto
+- Kopanyo ya CartFlows le meedi
+- Taolo ya karolo ya morupedi wa Tutor
+- Tshebetso ya ngodiso ya basebedisi ba multisite
+- Pontsho ya ID ya sehlahiswa sa thuto
+
+## Taolo ya Database {#database-management}
+
+### Bothata {#the-problem}
+
+Ditikolohong tsa WordPress multisite, ho bopa ditafole tsa Tutor LMS ho hloleha bakeng sa ditafole tse nang le dithibelo tsa senotlolo sa kantle ho tafole ya basebedisi. Sena se etsahala hobane:
+
+- Ditafole tse ikgethang tsa saete di sebedisa diprefix tse kang `wp_2_tutor_carts`
+- Dinotlolo tsa kantle di supa ho `wp_2_users` (e seng teng)
+- Tafole ya nnete ya basebedisi ke `wp_users` (e arolelanwang ho pholletsa le netweke)
+
+### Tharollo {#the-solution}
+
+Katoloso ena ka boiketsetso e:
+
+1. **Lemoha Ditafole tse Haellang**: E hlahloba ditafole tse hlolehileng ho bopuwa ka lebaka la dithibelo tsa senotlolo sa kantle
+2. **Bopa Ditafole ka Ditshupiso tse Nepahetseng**: E sebedisa lebitso le nepahetseng la tafole ya basebedisi (`wp_users` ho multisite)
+3. **Sebetsana le Maemo a Mangata**:
+   - Ho bulelwa/ho bulelwa hape ha katoloso
+   - Ho bopuwa ha saete e ntjha netwekeng
+   - Ho hlahloba tafole ka letsoho ka sehokelo sa motsamaisi
+
+### Ditafole tse Angwang {#affected-tables}
+
+- `tutor_coupon_usages` - E na le senotlolo sa kantle ho tafole ya basebedisi
+- `tutor_carts` - E na le senotlolo sa kantle ho tafole ya basebedisi
+- `tutor_notification_preferences` - Tafole ya TutorPro e nang le senotlolo sa kantle ho tafole ya basebedisi
+
+### Sehokelo sa Motsamaisi {#admin-interface}
+
+Fumana dithulusi tsa taolo ya database ho:
+
+- **Motsamaisi wa Netweke**: Di-setting → Tutor Multisite DB
+- **Motsamaisi wa Saete**: Dithulusi → Tutor Multisite DB
+
+Sehokelo se o dumella ho:
+- Sheba ditafole tse haellang ho pholletsa le disaete tsohle
+- Qalisa ho bopuwa ha tafole ka letsoho
+- Hlahloba tlhophiso ya database
+- Sheba tlhahisoleseding e qaqileng ya boemo
+
+## Tshehetso {#support}
+
+Katoloso ena e reretswe ka ho ikgetha sethala sa KursoPro. Bakeng sa tshehetso ya botekgeniki, ikopanye le sehlopha sa ntshetsopele.

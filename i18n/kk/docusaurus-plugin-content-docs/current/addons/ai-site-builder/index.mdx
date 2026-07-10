@@ -1,0 +1,124 @@
+---
+title: AI сайт құрастырушысы
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Site Builder {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Талаптар {#requirements}
+
+- WordPress 5.3 немесе одан жоғары
+- PHP 7.4 немесе одан жоғары
+- Multisite Ultimate плагині (белсенді)
+
+## Орнату {#installation}
+
+1. Аддон файлдарын `/wp-content/plugins/` каталогыңызға жүктеңіз
+2. Плагинді WordPress ішіндегі 'Plugins' мәзірі арқылы белсендіріңіз
+3. Желі әкімшісінде аддон баптауларын конфигурациялаңыз
+
+## Әзірлеу {#development}
+
+### Баптау {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Жоба құрылымы {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP кластары және қосылатын файлдар
+│   ├── class-multisite-ultimate-updater.php  # Жаңарту өңдеуіші
+│   └── class-ai_site_builder-main.php             # Негізгі функционал
+├── tests/                        # Модульдік тесттер
+│   ├── bootstrap.php            # Тестті бастапқы жүктеу
+│   ├── class-*-base.php         # Негізгі тест класы
+│   └── class-*-test.php         # Тест жағдайлары
+├── views/                       # Үлгі файлдары
+├── assets/                      # Статикалық ресурстар
+│   ├── css/                     # Стиль кестелері
+│   ├── js/                      # JavaScript файлдары
+│   └── images/                  # Суреттер
+├── lang/                        # Тіл файлдары
+├── composer.json                # PHP тәуелділіктері
+├── package.json                 # Node.js тәуелділіктері
+├── phpunit.xml.dist             # PHPUnit конфигурациясы
+├── .phpcs.xml.dist              # Код стандарттары конфигурациясы
+└── rector.php                   # Кодты жаңғырту ережелері
+```
+
+### Тестілеу {#testing}
+
+Аддон кешенді тестілеу фреймворкін қамтиды:
+
+- **Модульдік тесттер**: WordPress тест жинағы бар PHPUnit негізіндегі тесттер
+- **Негізгі тест класы**: Ортақ тест сценарийлері үшін көмекші әдістерді ұсынады
+- **Тест қамтуы**: Код қамтуын бақылауға конфигурацияланған
+- **Multisite тестілеуі**: Тесттер multisite ортасында орындалады
+
+### Код стандарттары {#code-standards}
+
+- **WordPress кодтау стандарттары**: PHPCS арқылы орындатылады
+- **PHP 7.4+ үйлесімділігі**: Заманауи PHP мүмкіндіктеріне қолдау көрсетіледі
+- **Статикалық талдау**: Түрлерді тексеруге арналған PHPStan интеграциясы
+- **Кодты жаңғырту**: PHP жаңартуларына арналған Rector ережелері
+
+### Құрастыру жүйесі {#build-system}
+
+- **Ресурстарды өңдеу**: CSS/JS файлдарын кішірейту
+- **Аударма**: POT файлын жасау
+- **Пакеттеу**: Таратуға арналған архив жасау
+- **Әзірлеу режимі**: Жөндеу үшін кішірейтілмеген ресурстар
+
+## Конфигурация {#configuration}
+
+Аддон желі әкімшісі интерфейсі арқылы қолжетімді әртүрлі конфигурация опцияларын қолдайды.
+
+## Хуктар және сүзгілер {#hooks-and-filters}
+
+### Әрекеттер {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Аддон инициализациясынан кейін іске қосылады
+- `ultimate-multisite-ai-site-builder_loaded` - Барлық аддон файлдары жүктелгеннен кейін іске қосылады
+
+### Сүзгілер {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Аддон баптауларын өзгерту
+- `ultimate-multisite-ai-site-builder_enabled` - Аддонды қосу/өшіру күйін қайта анықтау
+
+## Лицензия {#license}
+
+Бұл аддон GPL v3 немесе кейінгі нұсқасы бойынша лицензияланған.
+
+## Қолдау {#support}
+
+Қолдау және құжаттама үшін [MultisiteUltimate.com](https://multisiteultimate.com) сайтына кіріңіз
+## Өзгерістер журналы {#changelog}
+
+- Нұсқа 1.0.1 (2025-09-28): префиксті ultimate-multisite деп қайта атау; мәтіндік доменді жаңарту; нұсқаны арттыру.
+
+
+- Нұсқа  (2025-09-28): префиксті ultimate-multisite деп қайта атау; мәтіндік доменді жаңарту; нұсқаны арттыру.

@@ -1,46 +1,68 @@
 ---
-title: Mintaanyag
+title: Változásnapló
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Újdonságok naplójának (Changelog)
+# Változásnapló {#changelog}
 
-## 1.16.0 — Kiadás dátuma: 2026-05-20
+## 1.18.0 — Megjelent: 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Új funkciók (New)
+### Új {#new}
 
-- **Logo SVG generálásának képessége** — A Theme Builder most képes generálni és beépíteni a felhasználói neévre biztonságosított, egyedi logo SVG-eket.
-- **Fotó feltöltése a felfedezési interjúban** — A Theme Builder felfedezési interjúja most tartalmaz egy fotó feltöltési lépést, ami gazdagabb tervezési kontextust biztosít.
-- **Paletta kontraszt validációja** — Előzetesen ellenőrzi a színeket WCAG megfelelőség szempontjából, mielőtt a témára alkalmazná őket.
-- **Vendéglátói menük** — A Theme Builder most képes generálni strukturált étel- és italmenő oldalakat a vendéglátó vállalkozások számára.
-- **Desktop és mobil előnézet renderelése** — A tervezési irány kiválasztása során előnézheti a dizájnját a desktop és mobil eszközökön.
-- **Navigációs címke paraméter** — A Menu létrehozása most támogat egy különálló `navigation_label`-t, amely nem feltétlenül az oldaltitel.
-- **Tier 1 eszköz elérhetősége** — az sd-ai-agent/site-scrape most egy Tier 1 eszköz, amely alapértelmezés szerint elérhető a Theme Builderben.
+- **Google Calendar eszközök** — konfigurált naptárak és események olvasása ütemezés-tudatos automatizálásokhoz
+- **Kapcsolatleképezés és résztvevősegédek** — naptári résztvevők párosítása a webhely felhasználóival és kapcsolataival
+- **Emberi jóváhagyási kapuk és emlékeztetőrekordok** — automatizálások szüneteltetése felülvizsgálathoz, és ismétlődő értesítések elkerülése
+- **TextBee SMS-szolgáltató** — konfigurált szöveges üzenetértesítések küldése a TextBee-n keresztül
+- **Advanced kísérőcsomag** — megbízható fejlesztői fájlrendszer-, adatbázis-, WP-CLI-, REST-diszpécser-, plugin-építő-, git-pillanatkép-, felhasználókezelési és benchmark-eszközök hozzáadása, a WordPress.org buildtől külön terjesztve
 
-### Javítások (Fixed)
+### Továbbfejlesztve {#improved}
 
-- **AI Client cache** — most transzientekkel támasztja alá a keresztkérésen keresztül történő tartósságot, ezzel megakadályozva az adatok elvesztését a hosszú ideig tartó agent feladatok során.
-- **Plugin sor akciólinkei** — javítva és átnevezve a tisztább felhasználói élmény érdekében.
+- **Felügyelt Superdav szolgáltatás beállítása** — hosztolt szolgáltatási endpointok és automatikus kapcsolat-létesítés hozzáadása támogatott webhelyekhez
+- **Kiadási csomagolás** — külön core és Advanced ZIP-ek készítése, mindkettő közzététele a GitHubon, és csak a core csomag elküldése a WordPress.org-ra
 
-## 1.10.0 — Kiadás dátuma: 2026-05-05
+### Javítva {#fixed}
 
-### Új funkciók (New)
+- **AI-kérések megbízhatósága** — modellválasztás, kérés-időtúllépések, alapértelmezett beállítási modell, reasoning-text kezelés és érvénytelen eszközhívásokhoz tartozó újrapróbálkozási útmutatás javítása
+- **Naptár- és emlékeztető-megerősítés** — Google Calendar tokenek és emlékeztető-duplikációmentesítés megerősítése
+- **Bevezetés és jóváhagyási folytatások** — frontend bevezetési indítások és megerősített képességfolytatások javítása
+- **WordPress.org csomagolási felülvizsgálati problémák** — a core kiadással kapcsolatos csomagolási felülvizsgálati visszajelzések kezelése
 
-- **Tavily internetkeresés** — hozzáadja a Tavily-t keresőforrásszá, így a Brave Search mellett gazdagabb internetkeresési eredményeket kap.
-- **Téma-tudatos beépített képességek** — A Block Themes, Classic Themes, Kadence Blocks és Kadence Theme képességi útmutatók most tartalmazzák a plugin-ot.
-- **Oldaltíró kapcsolatfelvételi űrés** — lehetővé teszi, hogy a chat felületéről közvetlenül bármilyen oldalra kapcsolatfelvételi űrés egre helyezzen.
+## 1.16.0 — Megjelent: 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Javított funkciók (Improved)
+### Új {#new-1}
 
-- **WooCommerce integráció átalakítása** — most a WooCommerce natív API-jait használja, ami jobb megbízhatóságot és kompatibilitást biztosít.
-- **Forráslista automatikus frissítése** — minden plugin aktiválásakor vagy deaktiválásakor frissül.
+- **Generate Logo SVG képesség** — a Theme Builder mostantól egyedi logó SVG-ket tud generálni és beágyazni névtérbiztos tisztítással
+- **Fotófeltöltés a feltáró interjúban** — a Theme Builder feltáró interjúja mostantól tartalmaz egy fotófeltöltési lépést a gazdagabb dizájnkörnyezethez
+- **Validate Palette Contrast képesség** — színpárok ellenőrzése WCAG-megfelelőség szempontjából, mielőtt alkalmaznád őket egy témára
+- **Vendéglátóipari menük** — a Theme Builder mostantól strukturált étel- és italmenüoldalakat tud generálni vendéglátóipari vállalkozások számára
+- **Asztali és mobil előnézeti renderelés** — a dizájnirány kiválasztása közben megtekintheted a dizájnodat asztali és mobileszközökön
+- **Navigációs címkeparaméter** — a Create Menu képesség mostantól támogat egy különálló `navigation_label` értéket, amely eltér az oldal címétől
+- **Tier 1 eszköz elérhetősége** — az sd-ai-agent/site-scrape mostantól alapértelmezetten elérhető Tier 1 eszköz a Theme Builderben
 
-### Javítások (Fixed)
+### Javítva {#fixed-1}
 
-- **navigate-to képesség** — javította az admin oldalakon előforduló végtelen újrafrissítési ciklust.
-- **list-posts képesség** — most helyesen oldja meg a kategória és címke neveit a slug-kra.
-- **WP-CLI parancsok** — helyreállította a hiányzó namespace aliasokat egy korábbi átalakítás után.
-- **Esemény automatizáció** — szépen kezeli azokat az oldalakat, ahol az automatizációs táblák még nem lettek létrehozva.
-- **memory-save képesség** — most használja a helyes namespace prefixet a rendszer utasításépítőben.
-- **Scalar eszköz eredményei** — most helyesen csomagolja be, mielőtt visszaadja az AI-nak.
-- **Felhasználási statisztikák** — most helyesen kezeli az elavult képességi kulcsformátumot az idősebb verzióktól való frissítés során.
+- **AI Client gyorsítótár** — mostantól transientekre épül a kérések közötti perzisztenciához, megelőzve az adatvesztést hosszú ideig futó agent-feladatoknál
+- **Plugin sorműveleti linkek** — javítva és átnevezve az egyértelműség érdekében
+
+## 1.10.0 — Megjelent: 2026-05-05 {#1100--released-on-2026-05-05}
+
+### Új {#new-2}
+
+- **Tavily internetes keresés** — a Tavily hozzáadása keresési szolgáltatóként a gazdagabb internetes keresési eredményekhez a Brave Search mellett
+- **Témaérzékeny beépített készségek** — a Block Themes, Classic Themes, Kadence Blocks és Kadence Theme készségútmutatók mostantól a pluginnal együtt érkeznek
+- **Webhelyépítő kapcsolatfelvételi űrlap képesség** — kapcsolatfelvételi űrlap hozzáadása bármely oldalhoz közvetlenül a chat felületről
+
+### Továbbfejlesztve {#improved-1}
+
+- **WooCommerce integráció átdolgozva** — mostantól natív WooCommerce API-kat használ a jobb megbízhatóság és kompatibilitás érdekében
+- **A szolgáltatói lista automatikusan frissül** — amikor bármely plugin aktiválásra vagy deaktiválásra kerül
+
+### Javítva {#fixed-2}
+
+- **navigate-to képesség** — végtelen újratöltési ciklus javítva egyes admin oldalakon
+- **list-posts képesség** — mostantól helyesen oldja fel a kategória- és címkeneveket slugokká
+- **WP-CLI parancsok** — hiányzó névtéraliasok visszaállítása egy korábbi átdolgozás után
+- **Eseményautomatizálás** — kíméletesen kezeli azokat a webhelyeket, ahol az automatizálási táblák még nincsenek létrehozva
+- **memory-save képesség** — mostantól a megfelelő névtérelőtagot használja a rendszerutasítás-építőben
+- **Skalár eszközeredmények** — mostantól helyesen becsomagolva kerülnek visszaadásra az AI-nak
+- **Használati statisztikák** — mostantól helyesen kezelik a régi képességkulcs-formátumot a régebbi verziókról történő frissítéskor

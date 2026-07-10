@@ -1,0 +1,150 @@
+---
+title: Multi-tenancy
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-tenancy {#multi-tenancy}
+
+Fordel undersider på tværs af servere og databaser for ydeevne og sikkerhed
+
+## Højdepunkter i version 1.2.0-udgivelsen {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 tilføjer det suveræne lejerfundament til produktionsisolerings-workflows:
+
+- Stateless lejer-autologin med kortlivede, replay-beskyttede SSO-besøg.
+- Database- og filsystemisolering pr. underside for suveræne lejere.
+- Hostinger multi-tenancy-kapacitet til host-bevidst lejerprovisionering.
+- Verifikationsporte for suveræn migrering til tjek af ældre data og asynkron push-behandling.
+- Konfigurerbar binding af databasehost på samme maskine til Bedrock-, FrankenPHP- og localhost-installationer.
+- Forbedringer af lejer-bootstrap, databaseskriver, skema-bootstrap og brugerprovisionering.
+- Sikrere suveræn nedtagning, der rydder op i lejeroplysninger.
+
+Se brugervejledningerne for [workflow til suveræn migrering](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolering](/user-guide/configuration/multi-tenancy-isolation) og [operationer for suveræne lejere](/user-guide/administration/sovereign-tenant-operations).
+
+## Krav {#requirements}
+
+- WordPress 5.3 eller nyere
+- PHP 7.4 eller nyere
+- Multisite Ultimate plugin (aktiv)
+
+## Installation {#installation}
+
+1. Upload addon-filerne til din `/wp-content/plugins/`-mappe
+2. Aktivér plugin'et via menuen 'Plugins' i WordPress
+3. Konfigurer addon-indstillingerne i netværksadministrationen
+
+## Udvikling {#development}
+
+### Opsætning {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projektstruktur {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Test {#testing}
+
+Addon'et indeholder et omfattende testframework:
+
+- **Enhedstest**: PHPUnit-baserede test med WordPress-testpakke
+- **Basistestklasse**: Indeholder hjælpemetoder til almindelige testscenarier
+- **Testdækning**: Konfigureret til at spore kodedækning
+- **Multisite-test**: Test køres i multisite-miljø
+
+### Kodestandarder {#code-standards}
+
+- **WordPress-kodestandarder**: Håndhæves via PHPCS
+- **PHP 7.4+-kompatibilitet**: Moderne PHP-funktioner understøttes
+- **Statisk analyse**: PHPStan-integration til typekontrol
+- **Kodernisering**: Rector-regler til PHP-opgraderinger
+
+### Build-system {#build-system}
+
+- **Asset-behandling**: Minificering af CSS/JS-filer
+- **Oversættelse**: Generering af POT-fil
+- **Pakning**: Oprettelse af arkiv til distribution
+- **Udviklingstilstand**: Ikke-minificerede assets til debugging
+
+## Konfiguration {#configuration}
+
+Addon'et understøtter forskellige konfigurationsmuligheder, der er tilgængelige via netværksadministrationsgrænsefladen.
+
+### Konfiguration af suveræn lejer {#sovereign-tenant-configuration}
+
+For suveræne lejere skal du konfigurere lejerdatabasen, filsystemroden, binding af databasehost og host-kapacitet, før trafik routes til lejeren. Kør migreringsverifikation efter hver ændring, der påvirker databaseoplysninger, host-binding, routing eller brugerprovisionering.
+
+Brug kun `localhost`, når lejerens runtime og database grants forventer adgang via lokal socket eller samme maskine. Brug `127.0.0.1` eller et service-hostnavn, når det er den grant-host, der er konfigureret af din udbyder.
+
+### Hostinger-kapacitet {#hostinger-capability}
+
+Hostinger multi-tenancy-kapaciteten fungerer med det delte Hostinger-integrationstoken. Bekræft, at domænet findes i hPanel, at DNS peger på Hostinger-kontoen, og at lejerdatabaseindstillingerne matcher hPanel før verifikation.
+
+## Hooks og filtre {#hooks-and-filters}
+
+### Handlinger {#actions}
+
+- `ultimate-multisite-addon-template_init` - Udløses efter initialisering af addon'et
+- `ultimate-multisite-addon-template_loaded` - Udløses efter, at alle addon-filer er indlæst
+
+### Filtre {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Rediger addon-indstillinger
+- `ultimate-multisite-addon-template_enabled` - Tilsidesæt addon'ets aktiver/deaktiver-status
+
+## Licens {#license}
+
+Dette addon er licenseret under GPL v3 eller nyere.
+
+## Support {#support}
+
+For support og dokumentation, besøg [MultisiteUltimate.com](https://multisiteultimate.com)
+## Ændringslog {#changelog}
+
+- Version 1.2.0 (2026-06-03): tilføj stateless lejer-autologin, Hostinger multi-tenancy-kapacitet, database- og filsystemisolering pr. underside, verifikationsporte for suveræn migrering, forbedringer af lejer-bootstrap/databaseskriver, konfigurerbar MySQL host-binding og sikrere suveræn nedtagning.
+
+- Version 1.0.1 (2025-09-28): omdøb præfiks til ultimate-multisite; opdater tekstdomæne; versionsforøgelse.
+
+
+- Version  (2025-09-28): omdøb præfiks til ultimate-multisite; opdater tekstdomæne; versionsforøgelse.

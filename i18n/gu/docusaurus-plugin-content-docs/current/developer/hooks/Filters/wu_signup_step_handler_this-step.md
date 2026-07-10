@@ -4,10 +4,10 @@ title: 'ફિલ્ટર - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# ફિલ્ટર: wu_signup_step_handler_\{$this->step\}
+# ફિલ્ટર: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
 
 આ હેન્ડલરને ફરીથી લખવાની (rewrite) મંજૂરી આપે છે.
 
-### સ્ત્રોત
+### સ્ત્રોત {#source}
 
 તે [inc/checkout/class-legacy-checkout.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L369) માં લાઇન 369 પર વ્યાખ્યાયિત છે.

@@ -3,14 +3,14 @@ title: Loco Translate Diari de canvis
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Historial de versions de Loco Translate
+# Historial de versions de Loco Translate {#loco-translate-changelog}
 
-### 1.0.1
+### 1.0.1 {#101}
 * Compatibilitat millorada amb la última versió de Loco Translate
 * Controlem d'accés millorat per a una millor seguretat
 * Optimitzacions de rendiment
 
-### 1.0.0
+### 1.0.0 {#100}
 * Llançament inicial
 * Directòries de traducció específics del lloc
 * Sistema de prioritat de traducció

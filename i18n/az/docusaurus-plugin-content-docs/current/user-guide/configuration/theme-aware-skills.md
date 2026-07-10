@@ -3,11 +3,11 @@ title: Tema-Mütəxəssis Bacarıqlar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Əsaslı Bacarıqlar
+# Tema-Əsaslı Bacarıqlar {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0, aktiv WordPress temanıza avtomatik uyğunlaşan dörd yeni tema-əsaslı daxili bacarıq təqdim edir. Bu bacarıqlar, temanızın arxitekturasına və xüsusiyyətlərinə uyğunlaşdırılmış ixtisaslaşdırılmış bələdçilik və imkanlar təmin edir.
 
-## Tema-Əsaslı Bacarıqlar Nədir?
+## Tema-Əsaslı Bacarıqlar Nədir? {#what-are-theme-aware-skills}
 
 Tema-əsaslı bacarıqlar, AI köməkçisi tərəfindən saytınızda hazırda aktiv olan WordPress temasına əsasən avtomatik seçilən, öncədən qurulmuş bilik bazaları və alət dəstləridir. Temalar arasında keçid etdikdə, köməkçinin mövcud bacarıqları avtomatik yenilənir — əl ilə heç bir ayarlaşdırma tələb etmir.
 
@@ -18,9 +18,9 @@ Hər bir bacarıq aşağıdakıları əhatə edir:
 - **Özəlləşdirmə nümunələri** — ümumi tapşırıqlar üçün kod parçaları və konfiqurasiya patternları
 - **Ən yaxşı təcrübələr** — temanın arxitekturası və iş axını üçün tövsiyələr
 
-## Mövcud Tema-Əsaslı Bacarıqlar
+## Mövcud Tema-Əsaslı Bacarıqlar {#available-theme-aware-skills}
 
-### Blok Temaları (Block Themes)
+### Blok Temaları (Block Themes) {#block-themes}
 
 **Tətbiq olunur:** WordPress blok əsaslı (Full Site Editing) arxitekturasından istifadə edən temalar.
 
@@ -34,7 +34,7 @@ Block Themes bacarığı aşağıdakılar barədə bələdçilik verir:
 
 **Avtomatik aktivləşir:** Aktiv temanız blok teması olduqda (``block-templates`` funksionallığını dəstəkləyir).
 
-### Klassik Temalar (Classic Themes)
+### Klassik Temalar (Classic Themes) {#classic-themes}
 
 **Tətbiq olunur:** PHP şablonlarından və klassik redaktorundan istifadə edən ənənəvi WordPress temaları.
 
@@ -48,7 +48,7 @@ Classic Themes bacarığı aşağıdakılar barədə bələdçilik verir:
 
 **Avtomatik aktivləşir:** Aktiv temanız klassik (blok olmayan) tema olduqda.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Tətbiq olunur:** İrəli blok əsaslı dizayn üçün Kadence Blocks plugin-indən istifadə edən saytlar.
 
@@ -62,7 +62,7 @@ Kadence Blocks bacarığı aşağıdakılar barədə bələdçilik verir:
 
 **Avtomatik aktivləşir:** Kadence Blocks plugin-i saytınızda aktiv olduqda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Tətbiq olunur:** Blok əsaslı dizayn və özəlləşdirmə üçün Kadence temasından istifadə edən saytlar.
 
@@ -76,15 +76,15 @@ Kadence Theme bacarığı aşağıdakılar barədə bələdçilik verir:
 
 **Avtomatik aktivləşir:** Kadence teması aktiv temanız olduqda.
 
-## Bacarıqlar Necə Seçilir
+## Bacarıqlar Necə Seçilir {#how-skills-are-selected}
 
 Köməkçi aktiv temanızı və quraşdırılmış pluginlərinizi hər mesajda avtomatik aşkarlayır. Əgər uyğun gələn tema-əsaslı bacarıq mövcuddursa, o, köməkçinin kontekstinə avtomatik yüklənir. Bacarıqları əl ilə aktivləşdirməyə və ya dəyişdirməyə ehtiyac yoxdur.
 
-### Bir Neçə Bacarıq
+### Bir Neçə Bacarıq {#multiple-skills}
 
 Əgər saytınıza bir neçə bacarıq tətbiq olunursa (məsələn, həm Kadence Blocks, həm də Kadence Theme aktivdirsə), köməkçi bütün tətbiq olunan bacarıqlara çıxışa malikdir və hər birindən bələdçilik götürə bilər.
 
-### Temalar Arasında Keçid
+### Temalar Arasında Keçid {#switching-themes}
 
 Aktiv temanızı dəyişdikdə, köməkçinin mövcud bacarıqları növbəti mesajda avtomatik yenilənir. Məsələn:
 
@@ -92,11 +92,11 @@ Aktiv temanızı dəyişdikdə, köməkçinin mövcud bacarıqları növbəti me
 2. Klassik bir temaya keçirsiniz.
 3. Növbəti mesajınızda, **Classic Themes** bacarığı avtomatik yüklənir və **Block Themes** bacarığı artıq mövcud deyil.
 
-## Tema-Əsaslı Bacarıqlardan İstifadə
+## Tema-Əsaslı Bacarıqlardan İstifadə {#using-theme-aware-skills}
 
 Tema-əsaslı bacarıqdan istifadə etmək üçün sadəcə olaraq söhbət interfeysində nə etmək istədiyinizi təsvir edin. Köməkçi avtomatik olaraq müvafiq bacarığın bələdçiliyinə istinad edəcək.
 
-### Nümunə Sorğular
+### Nümunə Sorğular {#example-prompts}
 
 **Block Themes üçün:**
 > "Blok patternlarından istifadə edərək fon şəkli və mərkəzləşdirilmiş mətnlə bir hero bölməsi yaradın."

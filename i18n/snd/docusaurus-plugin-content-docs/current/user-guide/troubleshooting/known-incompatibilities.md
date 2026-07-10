@@ -3,7 +3,7 @@ title: معروف ناهمانتي
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# ٻين پيگمنٽس سان جاني ٿيل غير مطابقت (Known incompatibilities with other Plugins)
+# ٻين پيگمنٽس سان جاني ٿيل غير مطابقت (Known incompatibilities with other Plugins) {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite کي انسٹال ۽ فعال ڪرڻ کان پوءِ، توهان کي ٻين پيگمنٽس سان ڪجهه مسئلا اچڻ ۾ ٿي سگهن ٿا جيڪي حل نه ڪيا ويا آهن.
 

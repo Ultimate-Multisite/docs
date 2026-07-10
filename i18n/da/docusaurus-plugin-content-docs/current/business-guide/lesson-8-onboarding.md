@@ -3,15 +3,15 @@ title: 'Lektion 8: Kunde onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lektion 8: Kundebegivenhed (Customer Onboarding)
+# Lektion 8: Kundebegivenhed (Customer Onboarding) {#lesson-8-customer-onboarding}
 
 At at få en kunde til at registrere sig er kun halvdelen af jobbet. Hvis de logger ind, føler sig overvældede og aldrig kommer tilbage, har du mistet dem. Denne lektion designer oplevelsen, der forvandler en ny registrering til en aktiv, engageret kunde.
 
-## Hvor vi stoppede
+## Hvor vi stoppede {#where-we-left-off}
 
 FitSite er fuldt mærket med en fungerende checkout-proces. Nu fokuserer vi på, hvad der sker efter, at en fitnessstudioejer har gennemført registreringen og lander på sin nye side for første gang.
 
-## Hvorfor onboarding betyder noget
+## Hvorfor onboarding betyder noget {#why-onboarding-matters}
 
 De første 30 minutter efter registrering bestemmer, om en kunde bliver eller falder fra (churn). En fitnessstudioejer, der:
 
@@ -21,9 +21,9 @@ De første 30 minutter efter registrering bestemmer, om en kunde bliver eller fa
 
 Dine niche-temaer (Lektion 4) håndterer det første punkt. Denne lektion håndterer det andet.
 
-## Den første login oplevelse
+## Den første login oplevelse {#the-first-login-experience}
 
-### Velkomstdashboard widget
+### Velkomstdashboard widget {#welcome-dashboard-widget}
 
 Opret en custom dashboard widget, der hilser nye kunder velkommen og guider dem gennem opsætningen. Denne skal være fremtrædende, når de logger ind for første gang.
 
@@ -37,7 +37,7 @@ Opret en custom dashboard widget, der hilser nye kunder velkommen og guider dem 
 
 Hvert trin linker direkte til den relevante side eller indstilling. Ingen behov for at lede rundt i menuerne.
 
-### Forenkl Dashboardet
+### Forenkl Dashboardet {#simplify-the-dashboard}
 
 Nye kunder behøver ikke se alle WordPress-menuindstillinger. Overvej følgende:
 
@@ -47,29 +47,29 @@ Nye kunder behøver ikke se alle WordPress-menuindstillinger. Overvej følgende:
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addon kan hjælpe med at styre, hvad kunder ser.
 
-## Velkomst E-mailsekvens
+## Velkomst E-mailsekvens {#welcome-email-sequence}
 
 En enkelt velkomstmail er ikke nok. Opsæt en sekvens, der guider kunder gennem deres første uge:
 
-### E-mail 1: Velkommen (Umiddelbart efter tilmelding)
+### E-mail 1: Velkommen (Umiddelbart efter tilmelding) {#email-1-welcome-immediately-after-signup}
 
 - Emne: "Velkommen til FitSite – dit studiohjem er live"
 - Indhold: Login-link, hurtige starttrin, link til hjælperessourcer
 - Tone: Engageret, opmuntrende, fitness-specifik
 
-### E-mail 2: Hurtige sejre (Dag 1)
+### E-mail 2: Hurtige sejre (Dag 1) {#email-2-quick-wins-day-1}
 
 - Emne: "3 ting du skal gøre først på dit FitSite"
 - Indhold: Tilføj dit logo, opdater din forsiden hovedbillede, tilføj dit klassetidsplan
 - Inkluder skærmbilleder, der viser præcis, hvor man skal klikke
 
-### E-mail 3: Gør det dit eget (Dag 3)
+### E-mail 3: Gør det dit eget (Dag 3) {#email-3-make-it-yours-day-3}
 
 - Emne: "Gør dit fitnesshjem iøjnefaldende"
 - Indhold: Tilpas farver, tilføj trainerfotos, skriv din studiohistorie
 - Link til eksempler på gode fitnesshjem på platformen
 
-### E-mail 4: Gå live (Dag 7)
+### E-mail 4: Gå live (Dag 7) {#email-4-go-live-day-7}
 
 - Emne: "Klar til at dele din FitSite med verden?"
 - Indhold: Tjekliste over, hvad du skal verificere før deling, hvordan du forbinder en custom domæne (hvis du er på Growth/Pro), tips til social deling
@@ -78,11 +78,11 @@ En enkelt velkomstmail er ikke nok. Opsæt en sekvens, der guider kunder gennem 
 Brug [Webhooks](/user-guide/integrations/webhooks) eller [Zapier](/user-guide/integrations/zapier) til at udløse disse e-mails via din e-mail marketing platform. Dette giver dig mere kontrol over timingen og lader dig spore engagementet.
 :::
 
-## Hjælperessourcer
+## Hjælperessourcer {#help-resources}
 
 Lav niche-specielt hjælpeindhold, der besvarer de spørgsmål fitnessstudioejere rent faktisk stiller:
 
-### Videnbaseartikler
+### Videnbaseartikler {#knowledge-base-articles}
 
 - "Sådan opdaterer du din klassetidsplan"
 - "Tilføjelse og redigering af trænerprofiler"
@@ -92,7 +92,7 @@ Lav niche-specielt hjælpeindhold, der besvarer de spørgsmål fitnessstudioejer
 
 Skriv disse for ikke-tekniske brugere. Brug skærmbilleder. Undgå WordPress-jargon.
 
-### Video-gennemløb
+### Video-gennemløb {#video-walkthroughs}
 
 Korte (2-3 minutters) skærmoptagelser, der viser:
 
@@ -103,7 +103,7 @@ Korte (2-3 minutters) skærmoptagelser, der viser:
 
 Disse behøver ikke være polerede produktioner. Klart, hjælpsomt og niche-specifikt er det vigtigste.
 
-## Kontoprisen (The Account Page)
+## Kontoprisen (The Account Page) {#the-account-page}
 
 Ultimate Multisite inkluderer en kundeorienteret [Account Page](/user-guide/client-management/account-page), hvor kunderne administrerer deres abonnement. Tilpas denne til:
 
@@ -112,7 +112,7 @@ Vis opgraderingsmuligheder med fitness-specifikke fordele
 Tilbyd faktureringshistorik og faktura-downloads
 Link til hjælperessourcer
 
-## Måling af Onboarding Succes
+## Måling af Onboarding Succes {#measuring-onboarding-success}
 
 Følg disse indikatorer for at vide, om dit onboarding virker:
 
@@ -121,7 +121,7 @@ Følg disse indikatorer for at vide, om dit onboarding virker:
 - **Supportbilletter fra nye kunder**: Højt antal betyder, at dit onboarding har huller.
 - **Trial-til-betalingskonvertering**: Hvis du tilbyder prøveperioder, hvor stor en procentdel konverterer?
 
-## FitSite Netværket Indtil Nu
+## FitSite Netværket Indtil Nu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network

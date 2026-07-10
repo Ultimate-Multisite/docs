@@ -4,11 +4,11 @@ title: Filtre - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filtre: retrieve_password_message
+# Filtre: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Filtra el cos del missatge de l'e-mail de reseteo de contrasenya.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Filtra el cos del missatge de l'e-mail de reseteo de contrasenya.
 | $user_login | `string` | L'usuari (username) de l'usuari. |
 | $user_data | `\WP_User` | Objecte WP_User. |
 
-### Des de
+### Des de {#since}
 
 - 2.8.0
 - 4.1.0: S'afegeixen els paràmetres <code>$user_login</code> i <code>$user_data</code>.
-### Font
+### Font {#source}
 
 Definit en [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) a la línia 149
 
 
-## Retorn
+## Retorn {#returns}
 Missatge d'e-mail predeterminat.

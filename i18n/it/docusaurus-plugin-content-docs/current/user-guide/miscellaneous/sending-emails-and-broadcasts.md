@@ -1,120 +1,124 @@
 ---
-title: Invio di email e trasmissioni
+title: Invio di email e comunicazioni di massa
 sidebar_position: 11
-_i18n_hash: 2c58b558fa68e4dd6e81bec971d52536
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Invio di email e trasmissioni (v2)
+# Invio di email e comunicazioni (v2) {#sending-emails-and-broadcasts-v2}
 
-_**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
+_**NOTA IMPORTANTE: questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
-Ultimate Multisite offre una funzionalità che ti consente di comunicare con i tuoi clienti inviando un'email a un utente mirato o a un gruppo di utenti, oltre a inviare avvisi sul loro cruscotto di amministrazione per trasmettere annunci.
+Ultimate Multisite include una funzionalità che ti permette di comunicare con i tuoi clienti inviando un’email a un utente specifico o a un gruppo di utenti, oltre a inviare avvisi sulla loro Dashboard di amministrazione per diffondere annunci
 
-## Aggiungi avvisi amministrativi al cruscotto dei tuoi clienti con le Trasmissioni
+## Aggiungi avvisi di amministrazione alla Dashboard dei tuoi clienti con le comunicazioni {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Utilizzando la funzione di trasmissione di Ultimate Multisite, puoi aggiungere **avvisi amministrativi** al cruscotto di amministrazione del sottosito del tuo utente.
+Usando la funzionalità di comunicazione di Ultimate Multisite, puoi aggiungere **avvisi di amministrazione** alla Dashboard di amministrazione del sottosito del tuo utente.
 
-Questo è estremamente utile se hai bisogno di fare un annuncio come la manutenzione del sistema o l'offerta di nuovi prodotti o servizi ai tuoi utenti esistenti. Ecco come apparirà l'avviso amministrativo sul cruscotto del tuo utente.
+Questo è estremamente utile se devi fare un annuncio, come una manutenzione di sistema, oppure offrire nuovi prodotti o servizi ai tuoi utenti esistenti. Ecco come apparirà l’avviso di amministrazione sulla Dashboard del tuo utente.
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+<!-- Screenshot non disponibile: avviso di amministrazione mostrato sulla Dashboard del sottosito di un cliente -->
 
-Per avviare un avviso amministrativo, vai al cruscotto di amministrazione della rete e sotto il menu **Ultimate Multisite**, troverai l'opzione **Broadcasts**.
+Per avviare un avviso di amministrazione, vai alla Dashboard di amministrazione della rete e, nel menu **Ultimate Multisite**, troverai l’opzione **Comunicazioni**.
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Pagina elenco Comunicazioni nell’amministrazione di Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Da questa pagina, fai clic sul pulsante **Add Broadcast** in alto.
+Puoi anche modificare le comunicazioni esistenti:
 
-Questo aprirà la finestra modale Add broadcast dove puoi scegliere il tipo di trasmissione che desideri inviare.
+![Interfaccia di modifica della comunicazione](/img/admin/broadcast-edit.png)
 
-Vai avanti e seleziona **Message** quindi fai clic sul pulsante **Next Step**.
+Da questa pagina, fai clic sul pulsante **Aggiungi comunicazione** in alto.
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+Questo aprirà la finestra modale Aggiungi comunicazione, dove puoi scegliere quale tipo di comunicazione desideri inviare.
 
-La finestra successiva ti chiederà di selezionare il **Target customer** o il **Target product**. Nota che puoi selezionare più di un utente o più di un prodotto.
+Procedi e seleziona **Messaggio**, quindi fai clic sul pulsante **Passaggio successivo**.
 
-Per cercare un account utente o un prodotto, devi iniziare a digitare la parola chiave nel campo.
+![Modale Aggiungi comunicazione con l’opzione Messaggio selezionata](/img/admin/broadcast-add-message.png)
 
-Sotto il campo **Message type**, puoi selezionare il colore dell'avviso. Questo enfatizzerà l'urgenza del tuo messaggio.
+La finestra successiva ti chiederà il **Cliente di destinazione** oppure il **Prodotto di destinazione**. Nota che puoi selezionare più di un utente o più di un prodotto.
 
-Puoi quindi fare clic su **Next Step**.
+Per cercare un account utente o un prodotto devi iniziare a digitare la parola chiave all’interno del campo.
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+Nel campo **Tipo di messaggio**, puoi selezionare il colore dell’avviso. Questo metterà in evidenza l’urgenza del tuo messaggio.
 
-La finestra successiva è dove puoi iniziare a comporre il tuo messaggio inserendo l'oggetto e il contenuto/messaggio che desideri trasmettere agli utenti.
+Puoi quindi fare clic su **Passaggio successivo**.
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+![Campi cliente di destinazione, prodotto di destinazione e tipo di messaggio per una comunicazione Messaggio](/img/admin/broadcast-message-targets.png)
 
-Dopo aver creato il tuo messaggio, puoi premere il pulsante **Send**.
+La finestra successiva è dove puoi iniziare a comporre il tuo messaggio inserendo l’oggetto e il contenuto/messaggio che desideri diffondere agli utenti.
 
-Ecco fatto. L'avviso amministrativo dovrebbe apparire immediatamente sul cruscotto del tuo utente.
+![Editor dell’oggetto e del contenuto del messaggio della comunicazione nel passaggio di composizione](/img/admin/broadcast-edit.png)
 
-## Invia email ai tuoi clienti
+Dopo aver creato il tuo messaggio, puoi quindi premere il pulsante **Invia**.
 
-Utilizzando la funzione di trasmissione di Ultimate Multisite, puoi inviare un'email ai tuoi utenti. Hai l'opzione di inviare l'email solo a utenti specifici o di mirare a un gruppo di utenti specifico in base al prodotto o al piano a cui sono iscritti.
+Ed è tutto. L’avviso di amministrazione dovrebbe comparire immediatamente sulla Dashboard del tuo utente.
 
-Per avviare una trasmissione di email, vai al cruscotto di amministrazione della rete e sotto il menu Ultimate Multisite, troverai l'opzione Broadcast.
+## Invia email ai tuoi clienti {#send-emails-to-your-customers}
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+Usando la funzionalità di comunicazione di Ultimate Multisite, puoi inviare un’email ai tuoi utenti. Hai la possibilità di inviare l’email solo a utenti specifici oppure di indirizzarla a un gruppo di utenti specifico in base al prodotto o al piano a cui sono iscritti.
 
-Da questa pagina, fai clic sul pulsante **Add broadcast** in alto.
+Per avviare una comunicazione email, vai alla Dashboard di amministrazione della rete e, nel menu Ultimate Multisite, troverai l’opzione Comunicazione.
 
-Questo aprirà la finestra modale Add broadcast dove puoi scegliere il tipo di trasmissione che desideri inviare. Vai avanti e seleziona **Email** quindi fai clic sul pulsante **Next Step**.
+![Pagina elenco Comunicazioni usata come punto di partenza per una comunicazione email](/img/admin/broadcasts-list.png)
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+Da questa pagina, fai clic sul pulsante **Aggiungi comunicazione** in alto.
 
-La finestra successiva ti chiederà di selezionare il **Target customer** o il **Target product**. Nota che puoi selezionare più di un utente o più di un prodotto.
+Questo aprirà la finestra modale Aggiungi comunicazione, dove puoi scegliere quale tipo di comunicazione desideri inviare. Procedi e seleziona **Email**, quindi fai clic sul pulsante **Passaggio successivo**.
 
-Per cercare un account utente o un prodotto, devi iniziare a digitare la parola chiave nel campo.
+![Modale Aggiungi comunicazione con l’opzione Email selezionata](/img/admin/broadcast-add-email.png)
 
-Una volta selezionato il tuo pubblico di destinazione, puoi fare clic su **Next Step**.
+La finestra successiva ti chiederà il **Cliente di destinazione** oppure il **Prodott** o di destinazione. Nota che puoi selezionare più di un utente o più di un prodotto.
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+Per cercare un account utente o un prodotto devi iniziare a digitare la parola chiave all’interno del campo.
 
-La finestra successiva è dove puoi iniziare a comporre la tua email inserendo l'oggetto e il contenuto/messaggio che desideri inviare agli utenti.
+Una volta selezionato il tuo pubblico di destinazione, puoi fare clic su **Passaggio successivo**.
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+![Selezione di clienti di destinazione e prodotto di destinazione per una comunicazione Email](/img/admin/broadcast-email-targets.png)
 
-Dopo aver creato il tuo messaggio, puoi premere il pulsante **Send**.
+La finestra successiva è dove puoi iniziare a comporre la tua email inserendo l’oggetto e il contenuto/messaggio che desideri inviare agli utenti.
 
-Ecco quanto è facile inviare un'email ai tuoi utenti finali utilizzando la funzione di trasmissione.
+<!-- Screenshot non disponibile: editor dell’oggetto e del contenuto della comunicazione email nel passaggio di composizione -->
 
-## Email di sistema
+Dopo aver creato il tuo messaggio, puoi premere il pulsante **Invia**.
 
-Le email di sistema in Ultimate Multisite sono quelle **notifiche automatiche** inviate dal sistema dopo determinate azioni come registrazione, pagamento, mappatura del dominio, ecc. Queste email possono essere modificate dalle impostazioni di Ultimate Multisite. Include anche una funzione che ti consente di reimpostare e importare le impostazioni esistenti da un'altra installazione di Ultimate Multisite.
+Ed ecco quanto è facile inviare un’email ai tuoi utenti finali usando la funzionalità di comunicazione.
 
-### Reimpostare & Importare
+## Email di sistema {#system-emails}
 
-Le nuove versioni di Ultimate Multisite, così come gli add-on, possono e registreranno nuove email di tanto in tanto.
+Le email di sistema in Ultimate Multisite sono quelle **notifiche automatiche** inviate dal sistema dopo determinate azioni, come registrazione, pagamento, mappatura del dominio, ecc. Queste email possono essere modificate dalle impostazioni di Ultimate Multisite. Include anche una funzionalità che ti permette di reimpostare e importare impostazioni esistenti da un’altra installazione di Ultimate Multisite.
 
-Per prevenire conflitti e altri problemi, **non aggiungeremo automaticamente i nuovi modelli di email come Email di Sistema nella tua installazione**, a meno che non siano cruciali per il corretto funzionamento di una determinata funzionalità.
+### Reimpostazione e importazione {#resetting--importing}
 
-Tuttavia, gli super amministratori e gli agenti possono importare queste nuove email registrate tramite lo strumento di importazione. Tale processo creerà una nuova email di sistema con il contenuto e la configurazione del nuovo modello di email, consentendo al super amministratore di apportare le modifiche desiderate o di mantenerle così come sono.
+Le nuove versioni di Ultimate Multisite, così come gli add-on, possono registrare e registreranno di tanto in tanto nuove email.
 
-#### Come importare le email di sistema
+Per evitare conflitti e altri problemi, **non aggiungeremo automaticamente i nuovi template email come Email di sistema nella tua installazione** , a meno che non siano cruciali per il corretto funzionamento di una determinata funzionalità.
 
-Vai alla pagina Impostazioni di Ultimate Multisite e accedi alla scheda **Emails**.
+Tuttavia, i super admin e gli agenti possono importare queste email appena registrate tramite lo strumento di importazione. Questo processo creerà una nuova email di sistema con il contenuto e la configurazione del nuovo template email, permettendo al super admin di apportare qualsiasi modifica desideri o di mantenerli così come sono.
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+#### Come importare le email di sistema {#how-to-import-system-emails}
 
-Quindi, nella barra laterale, fai clic sul pulsante **Customize System Emails**.
+Vai alla pagina Impostazioni di Ultimate Multisite e apri la scheda **Email**.
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+![Scheda Email nelle impostazioni di Ultimate Multisite che mostra la sezione Email di sistema](/img/config/settings-emails-tab.png)
 
-Nella pagina Email di Sistema, vedrai il pulsante di azione **Reset & Import** in alto. Fare clic su quel pulsante dovrebbe aprire la finestra modale di importazione e reimpostazione.
+Quindi, nella barra laterale, fai clic sul pulsante **Personalizza Email di sistema**.
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+<!-- Screenshot non disponibile: pulsante Personalizza Email di sistema nel pannello laterale Email di sistema -->
 
-Quindi, puoi attivare le opzioni Importa Email per vedere quali email di sistema sono disponibili per l'importazione.
+Nella pagina Email di sistema, vedrai il pulsante di azione **Reimposta e importa** in alto. Facendo clic su quel pulsante si dovrebbe aprire la finestra modale di importazione e reimpostazione.
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+![Pulsante di azione Reimposta o Importa nella pagina di amministrazione Email di sistema](/img/admin/system-emails-reset-import.png)
 
-#### Reimpostare le Email di Sistema
+Quindi, puoi attivare le opzioni Importa email per vedere quali email di sistema sono disponibili per l’importazione.
 
-Altre volte, potresti renderti conto che le modifiche apportate a un determinato modello di email non funzionano più e desideri reimpostarlo al suo **stato predefinito**.
+<!-- Screenshot non disponibile: modale Reimposta e Importa con le opzioni Importa email espanse -->
 
-In tali casi, hai due opzioni: puoi semplicemente eliminare l'email di sistema e importarla di nuovo (utilizzando le istruzioni sopra) - il che cancellerà le metriche di invio e altre cose, rendendo questo metodo meno preferito.
+#### Reimpostazione delle email di sistema {#reseting-system-emails}
 
-Oppure puoi usare lo **Strumento Reimposta & Importa** per reimpostare quel modello di email.
+Altre volte, ti renderai conto che le modifiche apportate a un determinato template email non funzionano più per te e vorresti reimpostarlo al suo **stato predefinito**.
 
-Per reimpostare un modello di email, puoi seguire i passaggi sopra fino a raggiungere lo Strumento Reimposta & Importa, quindi attivare l'opzione **Reset** e selezionare le email che desideri reimpostare al loro contenuto predefinito.
+In questi casi, hai due opzioni: puoi semplicemente eliminare l'email di sistema e importarla di nuovo (usando le istruzioni sopra) - il che cancellerà le metriche di invio e altre cose, rendendo questo metodo il meno consigliato.
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+Oppure puoi usare lo **strumento Reimposta e Importa** per reimpostare quel template email.
+
+Per reimpostare un template email, puoi seguire i passaggi sopra finché non raggiungi lo strumento Reimposta e Importa, quindi attivare l'opzione **Reimposta** e selezionare le email che vuoi riportare al loro contenuto predefinito.
+
+<!-- Screenshot non disponibile: modale Reimposta e Importa con le opzioni Reimposta email espanse -->

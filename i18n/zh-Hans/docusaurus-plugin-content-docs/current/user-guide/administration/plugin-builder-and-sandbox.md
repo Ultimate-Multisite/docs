@@ -3,11 +3,11 @@ title: 插件构建器与沙箱
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 引入了 **Plugin Builder & Sandbox System**，该系统允许 AI 助手在安全、隔离的沙盒环境中为您的网络生成、激活和管理 WordPress 插件。
 
-## Overview
+## Overview {#overview}
 
 Plugin Builder 使 AI 助手能够根据自然语言请求编写自定义 WordPress 插件。生成的插件会在影响实际网站功能之前，先经过验证、存储并在沙盒层中激活。
 
@@ -17,7 +17,7 @@ Plugin Builder 使 AI 助手能够根据自然语言请求编写自定义 WordPr
 - 为需要 WordPress hooks 或自定义文章类型的特性进行原型设计。
 - 为批量操作创建短期自动化脚本。
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 要生成一个插件，请打开 Gratis AI Agent 的聊天界面，并描述您的需求。例如：
 
@@ -32,7 +32,7 @@ AI 将会：
 
 您可以在激活之前，通过在同一对话线程中进行后续追问来完善结果。
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 在沙盒中激活一个生成的插件，与在实际网络中激活它是不同的。沙盒会：
 
@@ -48,7 +48,7 @@ AI 将会：
 
 系统会显示一条状态消息，确认激活是否成功或失败。如果失败，错误日志将显示在聊天线程中。
 
-## Managing Generated Plugins
+## Managing Generated Plugins {#managing-generated-plugins}
 
 生成的插件列在 **Gratis AI Agent → Plugin Builder → Manage Plugins**。从这个界面，您可以：
 
@@ -64,7 +64,7 @@ AI 将会：
 **Install on network** 会将生成的插件部署到您的实际 WordPress multisite。在继续之前，请仔细审查插件代码。Gratis AI Agent 在完成实际安装前会提示您确认。
 :::
 
-## Installing a Generated Plugin on the Network
+## Installing a Generated Plugin on the Network {#installing-a-generated-plugin-on-the-network}
 
 当您对一个沙盒插件感到满意时，可以将其安装到实际网络：
 
@@ -78,7 +78,7 @@ AI 将会：
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Updates
+## Plugin Updates {#plugin-updates}
 
 要更新一个生成的插件，请在新的对话中向 AI 助手描述更改：
 
@@ -86,7 +86,7 @@ AI 将会：
 
 AI 会生成一个新版本，该版本会与当前版本一起出现在沙盒中。您需要审查差异（diff），并在应用更新之前确认。
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Plugin Builder 使用集成的 **HookScanner** 来分析每个生成插件注册的 hooks 和 filters。HookScanner 的输出会显示在聊天回复中，包括：
 
@@ -96,7 +96,7 @@ Plugin Builder 使用集成的 **HookScanner** 来分析每个生成插件注册
 
 这帮助您在激活插件之前了解其行为。
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - 生成的插件与手动安装的插件分开存储，在您明确将其安装到网络之前，无法通过标准的 WordPress 插件管理界面访问。
 - 沙盒使用路径验证来防止在写入插件文件时发生目录遍历。

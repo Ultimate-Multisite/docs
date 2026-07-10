@@ -3,7 +3,7 @@ title: Maanlista
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite -Maantien valikon uudelleenjärjestely
+# Ultimate Multisite -Maantien valikon uudelleenjärjestely {#re-ordering-the-ultimate-multisite-country-list}
 
 Maantien valikko on järjestetty aakkosjärjestykseen englanninkielisten maantietojen muotojen perusteella. Tämä voi tarkoittaa, että jos yrityksesi kotimaa tai suurin osa asiakkaistasi on piilotettu valtavan maantietolistan keskelle.
 

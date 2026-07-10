@@ -3,13 +3,13 @@ title: Сырткы әзерләндерү көмеги
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-dan Custom Geliştirme Yardımı Nasıl Alırsınız?
+# Codeable-dan Custom Geliştirme Yardımı Nasıl Alırsınız? {#how-to-get-custom-development-help-from-codeable}
 
 Bazen ağ akışlarımızı tam istediğimiz gibi yapmak için gerçekten harika bir özelleştirmeye ihtiyacımız olur. Eğer aradığınız buysa, size [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)'i tavsiye ederiz; burada Ultimate Multisite uzmanlığı olan deneyimli geliştiriciler bulabilirsiniz.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), müşterileri nitelikli WordPress serbest çalışanlarla birleştiren ve her türlü büyüklükteki projelerde çalışabilen bir platformdur. Sizin aklınızdaki görev için özel olarak nitelikli uzmanlarla eşleştirilmenizi sağlamak için titiz bir başvuru süreci vardır.
 
-### Codeable'da proje nasıl oluşturulur?
+### Codeable'da proje nasıl oluşturulur? {#how-to-create-a-project-in-codeable}
 
 Öncelikle [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)'e gidin ve **Start a Project** (Proje Başlat) düğmesine tıklayın.
 

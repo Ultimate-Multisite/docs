@@ -1,0 +1,124 @@
+---
+title: Pangwangun Situs AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Pangwangun Situs AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Sarat {#requirements}
+
+- WordPress 5.3 atawa leuwih luhur
+- PHP 7.4 atawa leuwih luhur
+- plugin Multisite Ultimate (aktip)
+
+## Pamasangan {#installation}
+
+1. Unggah payil addon ka diréktori `/wp-content/plugins/` anjeun
+2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress
+3. Konpigurasikeun setélan addon dina admin jaringan
+
+## Pangwangunan {#development}
+
+### Setup {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktur Proyék {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### Nguji {#testing}
+
+Addon ieu ngawengku rangka nguji anu komprehensif:
+
+- **Unit Tests**: Tés dumasar PHPUnit kalayan WordPress test suite
+- **Base Test Class**: Nyadiakeun métode bantu pikeun skenario tés umum
+- **Test Coverage**: Dikonpigurasikeun pikeun ngalacak cakupan kode
+- **Multisite Testing**: Tés dijalankeun dina lingkungan multisite
+
+### Standar Kode {#code-standards}
+
+- **WordPress Coding Standards**: Ditegakeun ngaliwatan PHPCS
+- **Kasaluyuan PHP 7.4+**: Fitur PHP modéren dirojong
+- **Analisis Statis**: Integrasi PHPStan pikeun mariksa tipe
+- **Modernisasi Kode**: Aturan Rector pikeun pamutahiran PHP
+
+### Sistem Ngawangun {#build-system}
+
+- **Ngolah Aset**: Minifikasi pikeun payil CSS/JS
+- **Tarjamahan**: Nyieun payil POT
+- **Paket**: Nyieun arsip pikeun distribusi
+- **Modeu Pangwangunan**: Aset teu diminifikasi pikeun debugging
+
+## Konfigurasi {#configuration}
+
+Addon ieu ngarojong rupa-rupa pilihan konfigurasi anu bisa diaksés ngaliwatan antarbeungeut admin jaringan.
+
+## Hooks jeung Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Dipicu sanggeus inisialisasi addon
+- `ultimate-multisite-ai-site-builder_loaded` - Dipicu sanggeus sakabéh payil addon dimuat
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Robah setélan addon
+- `ultimate-multisite-ai-site-builder_enabled` - Timpa status aktip/nonaktip addon
+
+## Lisénsi {#license}
+
+Addon ieu dilisénsikeun dina GPL v3 atawa leuwih anyar.
+
+## Rojongan {#support}
+
+Pikeun rojongan jeung dokuméntasi, buka [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Vérsi 1.0.1 (2025-09-28): ganti ngaran prefix jadi ultimate-multisite; mutahirkeun domain téks; naékkeun vérsi.
+
+
+- Vérsi  (2025-09-28): ganti ngaran prefix jadi ultimate-multisite; mutahirkeun domain téks; naékkeun vérsi.

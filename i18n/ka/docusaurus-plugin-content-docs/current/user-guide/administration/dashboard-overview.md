@@ -3,11 +3,11 @@ title: ダშბორდის მიმოხილვა
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# დეშბორდის მიმოხილვა
+# დეშბორდის მიმოხილვა {#dashboard-overview}
 
 Ultimate Multisite-ს აქვს სპეციალური **Dashboard** (დეშბორდი) Ultimate Multisite მენიუს ქვეშ, ასევე ამატებს ვიჯეტებს Network Dashboard-ზე. ეს სტატია განიხილავს, თუ რა დაინახავთ ორივე ადგილას.
 
-## ქსელური დეშბორდი (The Network Dashboard)
+## ქსელური დეშბორდი (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite ინექცირებს სასარგებლო ვიჯეტებს ქსელის დონის დეშბორდში, რომელიც შეგიძლიათ იპოვოთ **My Sites → Network Admin → Dashboard**-ზე.
 
@@ -35,7 +35,7 @@ Ultimate Multisite ინექცირებს სასარგებლო
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite დეშბორდი (The Ultimate Multisite Dashboard)
+## Ultimate Multisite დეშბორდი (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 მიუხედავად იმისა, რომ ქსელური დეშბორდი ქსელის შესახებ ყოვლისმომცველ ინფორმაციას წარმოადგენს, Ultimate Multisite დეშბორდი (Ultimate Multisite მენიუს ზედა დონეზე) წარმოადგენს სერვისის შესახებ ინფორმაციას.
 

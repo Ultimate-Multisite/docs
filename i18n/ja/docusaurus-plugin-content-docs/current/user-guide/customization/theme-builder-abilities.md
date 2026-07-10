@@ -3,11 +3,11 @@ title: テーマビルダー機能
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: ブロックテーマの骨組み構築と有効化
+# Theme Builder Abilities: ブロックテーマの骨組み構築と有効化 {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 は、チャットインターフェースからカスタムのブロックテーマを生成し、デプロイするための2つの強力な機能（アビリティ）を導入しました。
 
-## 概要
+## 概要 {#overview}
 
 **scaffold-block-theme** と **activate-theme** のアビリティを使用すると、エージェントは以下のことが可能になります。
 
@@ -15,7 +15,7 @@ Superdav AI Agent v1.12.0 は、チャットインターフェースからカス
 *   手動での操作なしに、サイト上でテーマを自動的に有効化する
 *   デザインの決定プロセスをガイドすることで、統一感のあるビジュアルアイデンティティを構築する
 
-## ブロックテーマの骨組み構築 (Scaffold Block Theme)
+## ブロックテーマの骨組み構築 (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme** アビリティは、以下の要素を含む、完全なテーマ構造を持つ新しい WordPress ブロックテーマを生成します。
 
@@ -24,7 +24,7 @@ Superdav AI Agent v1.12.0 は、チャットインターフェースからカス
 *   カスタムブロックのスタイルとバリエーション
 *   テーマのメタデータとサポート宣言
 
-### 呼び出し方法
+### 呼び出し方法 {#how-to-invoke}
 
 Superdav AI Agent とのチャットで、テーマの生成をリクエストできます。
 
@@ -39,7 +39,7 @@ sans-serif typography, and a professional layout"
 3.  必要なすべてのテーマファイルを作成する
 4.  テーマを有効化する準備を整える
 
-### 期待される出力
+### 期待される出力 {#expected-output}
 
 アビリティが正常に実行されると、以下が表示されます。
 
@@ -57,11 +57,11 @@ sans-serif typography, and a professional layout"
   Status: Ready to activate
 ```
 
-## テーマの有効化 (Activate Theme)
+## テーマの有効化 (Activate Theme) {#activate-theme}
 
 **activate-theme** アビリティは、サイトを新しく骨組み構築された、または既存のブロックテーマに切り替えます。
 
-### 呼び出し方法
+### 呼び出し方法 {#how-to-invoke-1}
 
 テーマを骨組み構築した後、すぐに有効化できます。
 
@@ -75,7 +75,7 @@ sans-serif typography, and a professional layout"
 "Switch to the Twentytwentyfour theme"
 ```
 
-### 期待される出力
+### 期待される出力 {#expected-output-1}
 
 有効化が成功した場合:
 
@@ -93,7 +93,7 @@ sans-serif typography, and a professional layout"
   Note: Check your homepage to verify the layout
 ```
 
-## ワークフロー：骨組み構築と有効化
+## ワークフロー：骨組み構築と有効化 {#workflow-scaffold-and-activate}
 
 一般的なワークフローでは、これら両方のアビリティを組み合わせて使用します。
 
@@ -103,7 +103,7 @@ sans-serif typography, and a professional layout"
 4.  **有効化**: 「今すぐテーマを有効化して」
 5.  **確認**: サイトにアクセスし、新しいデザインが適用されていることを確認する
 
-## デザイントークンとカスタマイズ
+## デザイントークンとカスタマイズ {#design-tokens-and-customization}
 
 骨組み構築されたテーマは、以下の目的で WordPress のデザイントークン（`theme.json` を経由）を使用します。
 
@@ -115,14 +115,14 @@ sans-serif typography, and a professional layout"
 
 これらのトークンは `theme.json` に一元管理されているため、一つのファイルからデザインシステム全体を簡単に調整できます。
 
-## 制限事項と注意点
+## 制限事項と注意点 {#limitations-and-notes}
 
 *   テーマは `/wp-content/themes/` に骨組み構築され、WordPress の命名規則に従う必要があります。
 *   有効化には、WordPress サイト上で適切な権限が必要です。
 *   テーマ内のカスタム PHP コードは最小限に留めるべきです。複雑な機能にはプラグインを使用してください。
 *   ブロックテーマは、WordPress 5.9 以降で最もよく機能します。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
 **骨組み構築後、テーマが表示されない**
 *   テーマディレクトリが存在し、適切な権限が設定されているか確認してください。
@@ -139,7 +139,7 @@ sans-serif typography, and a professional layout"
 *   キャッシュプラグインをクリアしてください。
 *   使用しているトークンを WordPress のバージョンがサポートしているか確認してください。
 
-## 次のステップ
+## 次のステップ {#next-steps}
 
 テーマを有効化した後、以下のことができます。
 *   **Design System Aesthetics skill** を使用して、タイポグラフィ、色、間隔を調整する

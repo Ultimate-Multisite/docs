@@ -4,11 +4,11 @@ title: Φίλτρο - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Το φιλτράρει την υπολογισμένη ημερομηνία λήξης ώστε να ρυθμίζεται μετά την ανανέωση.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | Ο αναγνωριστικός αριθμός της συνδρομής. |
 | $membership | `\Membership` | Το αντικείμενο συνδρομής. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Ορίζεται στο [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) στην γραμμή 2192

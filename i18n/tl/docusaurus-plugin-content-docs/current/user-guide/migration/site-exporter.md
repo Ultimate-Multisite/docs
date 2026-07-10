@@ -3,7 +3,7 @@ title: Tagapag-eksporta ng Site
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# Site Exporter
+# Site Exporter {#site-exporter}
 
 Ang feature na ito ay ibinibigay ng addon na **Site Exporter**.
 

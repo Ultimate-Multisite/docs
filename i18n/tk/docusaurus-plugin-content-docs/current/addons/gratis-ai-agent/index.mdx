@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent tebigy dil görkezmeleri arkaly doly WordPress saýtlaryny meýilleşdirip, gurup we dolandyryp bilýän awtonom WordPress AI kömekçisidir. Ol agentiň çagyryp bilýän diskret, synalyp bolýan hereketleri bolan **ukyplaryň** gurluşly toplumyny hödürleýär — mazmun dolandyryşyndan başlap dizaýn ulgamy sazlamalaryna çenli ähli zady öz içine alýar. 1.9.0 wersiýasy mazmun döretmek ukyplaryny, müşderi tarapyndaky ekran suratlary arkaly wizual sahypa synyny, bäş sany içerki agent profilini we elýeterliligi dolandyrmak hem-de brending üçin aýratynlyk baýdaklaryny goşýar.
+
+## Esasy aýratynlyklar {#key-features}
+
+- **Ukyplar ulgamy** — agentiň siziň WordPress gurnamaňyzda çagyryp bilýän hereketleriniň modul, giňeldilip bolýan katalogy
+- **Mazmun dolandyryşy** — ýazgylary we sahypalary dörediň (sahypa şablonlaryny bellemek bilen birlikde), bir çagyryşda birnäçe ýazgyny toparlaýyn dörediň, esasy suratlary belläň we habarlaşma formalaryny guruň
+- **Wizual syn** — janly sahypalaryň ekran suratlaryny alyň, öň/soň ýagdaýlaryny deňeşdiriň we ýerleşiş, tipografiýa, reňk hem-de elýeterlilik boýunça AI tarapyndan döredilen dizaýn synyny alyň
+- **Bäş içerki agent** — Mazmun ýazyjy, Saýt gurujy, Dizaýn studiýasy, Plugin dolandyryjysy we Goldaw kömekçisi; söhbet sözbaşysyndaky Agent Picker arkaly çalşyrylyp bilner
+- **Aýratynlyk baýdaklary** — rol çäklendirmeleri, white-label atlandyrma we widget sazlamalary üçin Settings → Feature Flags bölüminde elýeterliligi dolandyrmak we brending açyp-ýapmalary
+- **Ýörite ýazgy görnüşini dolandyrmak** — gaýtadan işe girizilmelerden soň hem saklanýan ýörite ýazgy görnüşlerini bellige alyň, sanawlaň we pozuň
+- **Ýörite taksonomiýany dolandyrmak** — saklanýan ýörite taksonomiýalary bellige alyň, sanawlaň we pozuň
+- **Dizaýn ulgamy ukyplary** — ýörite CSS goşuň, saýlanan blok nusgalaryny dolandyryň, saýtyň logosyny belläň we theme.json presetlerini ulanyň
+- **Global stilleri dolandyrmak** — reňk palitralary, tipografiýa, aralyklar we başgalar üçin theme.json bahalaryny okaň we ýazyň
+- **Nawigasiýa menýusyny dolandyrmak** — nawigasiýa menýularyny we olaryň elementlerini programmatik taýdan dörediň hem täzeläň
+- **Sazlamalary dolandyrmak** — möhüm sazlamalary goramak üçin içerki howpsuz blok sanawy bilen WordPress sazlamalaryny okaň we ýazyň
+- **Gurnalýan ukyplar reýestri** — esasy plugin faýllaryny üýtgetmezden goşmaça ukyp paketlerini tapyň we işjeňleşdiriň
+- **Site Builder Orchestration v2** — plugin gözlegi, ösüş yzarlamasy we säwlikden dikeldiş bilen köp ädimli saýt gurmak meýilnamalary
+- **WP-CLI benchmark buýrugy** — CI we model bahalandyrmasy üçin agent ukyp benchmark toplumyny buýruk setirinden işlediň
+
+## Talaplar {#requirements}
+
+- WordPress 6.0 ýa-da has ýokary
+- PHP 8.1 ýa-da has ýokary
+- WordPress Multisite (tor boýunça işjeňleşdirilen) ýa-da ýeke saýt gurnamasy
+- Işjeň AI üpjün ediji birikdiriji plugin (Anthropic, OpenAI ýa-da gabat gelýän)
+
+## Gurnama {#installation}
+
+1. Plugin faýllaryny `/wp-content/plugins/gratis-ai-agent` içine ýükläň
+2. Plugini WordPress içindäki **Plugins** ekrany arkaly işjeňleşdiriň
+3. **Gratis AI Agent → Settings** bölümine geçiň we AI üpjün edijiňizi birikdiriň
+4. (Meýletin) Goşmaça ukyp paketlerini gurnamak üçin **Ukyplar reýestrine** göz aýlaň
+
+## Çalt başlangyç {#quick-start}
+
+Işjeňleşdirilip, AI üpjün edijä birikdirilenden soň, WordPress admin gapdal panelinde **Gratis AI Agent** panelini açyň. Tebigy dilde görkezme ýazyň, agent bolsa elýeterli ukyplaryny ulanyp zerur ädimleri meýilleşdirer we ýerine ýetirer.
+
+**Mysal görkezmeler:**
+
+```
+"Portfolio" ýörite ýazgy görnüşini "Project Category" taksonomiýasy bilen döret.
+```
+
+```
+Theme içine garaňky režim reňk palitrasyny goş we esasy reňki #1a1a2e edip belle.
+```
+
+```
+Onlaýn menýuly, bronlama formaly we habarlaşma sahypaly restoran websaýtyny gur.
+```
+
+## Ukyplara umumy syn {#abilities-overview}
+
+Ukyplar agentiň ýerine ýetirip bilýän atomar hereketleridir. Her ukyp agentiň ýerine ýetiriliş wagtynda okaýan shemasyny (parametrler we gaýtarma görnüşleri) hödürleýän bellige alnan PHP klasydyr. Ukyplar funksional ugurlara toparlanýar:
+
+| Ugur | Ukyplar |
+|---|---|
+| **Mazmun dolandyryşy** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Wizual syn** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Ýörite ýazgy görnüşleri** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Ýörite taksonomiýalar** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dizaýn ulgamy** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global stiller** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Nawigasiýa menýulary** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Sazlamalary dolandyrmak** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Gurnalýan ukyplar** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Saýt gurujy** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Doly parametr resminamalary we ulanyş mysallary üçin [Ukyplar maglumatnamasyna](./abilities) serediň.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent benchmarklary işletmek we ukyplary buýruk setirinden dolandyrmak üçin `wp gratis-ai-agent` buýruk maşgalasy bilen gelýär. Doly buýruk sanawy üçin [WP-CLI maglumatnamasyna](./wp-cli) serediň.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Sazlama {#configuration}
+
+Ähli sazlamalar WordPress adminindäki **Gratis AI Agent → Settings** bölüminde ýerleşýär:
+
+| Sazlama | Düşündiriş |
+|---|---|
+| **AI üpjün ediji** | Işjeň AI üpjün ediji birikdirijisini saýlaň we sazlaň |
+| **Model** | Agent sessiýalary üçin ulanyljak dil modelini saýlaň |
+| **Max Tokens** | Her isleg üçin token býujeti (deslapky 4096) |
+| **Ukyp wagtynyň çägi** | Aýry bir ukyp üçin işlemäge rugsat berilýän iň köp sekunt (deslapky 30) |
+| **Debug ýazgylary** | Ukyp çagyryşlaryny we agent pikir ýöretmesini WordPress debug ýazgysyna ýaz |
+
+## Sazlamalary dolandyrmak howpsuz blok sanawy {#options-management-safety-blocklist}
+
+Options Management ukyby, agentiň duýgur WordPress sazlamalaryny okamagynyň ýa-da ýazmagynyň öňüni alýan içerki blocklist-i öz içine alýar. Adaty blocklist şulary öz içine alýar:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL sazlamalary — bular üçin ýörite migrasiýa guralyny ulanyň)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (gizlin açarlar)
+- `active_plugins`, `template` (plugin/theme işjeňleşdirme — ýörite ukyplary ulanyň)
+- Töleg derwezesi maglumatlary we gurnalan plugin-ler tarapyndan bellige alnan API açarlary
+
+Goşmaça ýazgylar `gratis_ai_agent_options_blocklist` filter arkaly goşulyp bilner.
+
+## Hooks we Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — bir ukyp bellige alnandan soň işledilýär, ukyp klassynyň adyny kabul edýär
+- `gratis_ai_agent_plan_started` — site builder plan ýerine ýetirilişi başlanda işledilýär
+- `gratis_ai_agent_plan_completed` — plan üstünlikli tamamlananda işledilýär
+- `gratis_ai_agent_plan_failed` — plan düzedip bolmajak ýalňyşlyk bilen ýüzbe-ýüz bolanda işledilýär
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — agent ony ýüklemezden öň bellige alnan ukyp sanawyny üýtgediň
+- `gratis_ai_agent_options_blocklist` — sazlamalaryň howpsuzlyk blocklist-ini giňeldiň ýa-da azaldyň
+- `gratis_ai_agent_benchmark_questions` — bahalandyrma toplumyna ýörite benchmark soraglaryny goşuň
+- `gratis_ai_agent_plan_plugins` — site plan döredilende plugin tapyş sanawyny üýtgediň
+
+## Goldaw {#support}
+
+Goldaw üçin [ultimatemultisite.com](https://ultimatemultisite.com) sahypasyna baryň ýa-da plugin repository-de mesele açyň.
+
+## Üýtgeşmeler taryhy {#changelog}
+
+Doly wersiýa taryhy üçin [Üýtgeşmeler taryhy](./changelog) serediň.

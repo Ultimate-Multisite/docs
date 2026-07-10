@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Mailchimp integrazioa
+
+Integratu zure Multisite Ultimate sarea zure Mailchimp-ekin. Zenbait plan Mailchimp zerrendekin lotu ditzakezu, eta izena ematean harpidedunak automatikoki gehitu zerrenda horietara.
+
+## Instalazioa {#installation}
+
+1. Igo 'ultimate-multisite-mailchimp' '/wp-content/plugins/' direktoriora
+2. Aktibatu plugina zure WordPress sareko administrazioko 'Pluginak' menuaren bidez
+
+## Erabilera-gida {#usage-guide}
+
+Harpidedunen emailak zure MailChimp zerrendekin sinkronizatzea oso erraza da gure Ultimate Multisite: MailChimp Integration gehigarriarekin. Tutorial honen helburua dena konfiguratzen laguntzea da!
+
+## API gako bat lortzea {#getting-an-api-key}
+
+Eskuragarri dauden ezarpenetan sartu aurretik, MailChimp API gako bat behar dugu. Horri esker, Ultimate Multisite-k MailChimp API-rekin komunikatu ahal izango du zerrendak eta taldeak eskuratzeko, eta erabiltzaileek izena ematen dutenean email helbideak zerrenda eta talde horietara gehitzeko.
+
+Jarraitu tutorial hau zure MailChimp API gakoa lortzeko: [API gakoei buruz | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Gehitu zure MailChimp API gakoa hemen:_ _**Ultimate Multisite ezarpenak - > Gehigarrien ezarpenak -> MailChimp**_
+
+## Integrazio modua {#integration-mode}
+
+MailChimp Integration gehigarriak bi “integrazio modu” eskaintzen ditu; horrek esan nahi du gehigarria email helbideak sinkronizatzeko erabiltzeko bi modu desberdin daudela.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Bi integrazio modu malgutasun handiagoa izateko!_
+
+### 1. modua: Zerrenda anitz {#mode-1-multiple-lists}
+
+Modu lehenetsiak **Zerrenda anitz** erabiltzen ditu. Modu honek plan bakoitzerako MailChimp zerrenda anitz hautatzeko aukera emango dizu. Aukerarik onena da zure erabiltzaileak zerrenda desberdinetan segmentatzen badituzu.
+
+Adibidez, demagun 3 zerrenda desberdin dituzula zure MailChimp kontuan: **Buletina** , **A plana** , eta **B plana**. Erabiltzaile guztiak, beren plana edozein dela ere, Buletina zerrendan ere sartzea nahi duzu, zure eguneraketak gal ez ditzaten.
+
+Hori lortzeko, Zerrenda anitz modua erabil dezakezu **Buletina** eta **A plana** zerrendak A planeko MailChimp ezarpenetara gehitzeko, eta **Buletina** eta **B plana** B planeko MailChimp ezarpenetara gehitzeko.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Hautatu kontu berrietarako eta bertan behera utzitako kontuetarako zerrenda lehenetsiak_
+
+### 2. modua: Zerrenda bakarra + talde anitz {#mode-2-single-list--multiple-groups}
+
+MailChimp-ek zure zerrenda **Taldeak** izeneko erabiltzaile talde txikiagoetan segmentatzeko aukera ematen dizu. Horrek kontrol handiagoa ematen dizu, zure harpidedunen azpimultzo jakin bati kanpaina bat bidal diezaiokezulako MailChimp-en kanpaina beraren kopia anitz sortu beharrik gabe (horrek zaildu egiten du gero kanpaina horren metrikak aztertzea).
+
+Adibidez, **Nire sareko harpidedunak,** izeneko zerrenda bakar bat izan dezakezu, eta haren barruan **A plana** eta **B plana** taldeak izan.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Hautatu zerrenda eta talde lehenetsiak, “zerrenda bakarra + talde anitz” integrazio modua erabiltzen baduzu_
+
+## Zerrenda eta talde lehenetsiak {#default-lists-and-groups}
+
+Zure erabilera-kasu zehatzerako zentzuzkoena den integrazio modua hautatu ondoren, zerrenda lehenetsiak (eta taldeak, moduaren arabera) hautatzeko unea da. Zerrenda lehenetsia erabiliko da plan jakin batek zerrenda zehatzik hautatuta ez duenean.
+
+Bertan behera utzitako kontuetarako zerrenda lehenetsia ere hauta dezakezu. Erabiltzaile batek bere harpidetza amaitzen duenean eta bere kontua zure saretik kentzen duenean, haren email helbidea bertan behera utzitako kontuetarako ezarritako zerrendara mugituko da.
+
+## Harpidetza bikoitza gaitzea {#enabling-double-subscription}
+
+Ezarpenen orri berean, **Harpidetza bikoitza** gaitzeko aukera izango duzu. Aukera honek erabiltzailea hautatutako zerrenda lehenetsira ETA erabiltzaile horren planerako hautatutako zerrendara gehituko du. Aukera hau gaituta ez badago, erabiltzailea erabiltzailearen planerako hautatutako zerrendara bakarrik gehituko da. Plan jakin horretarako ezer ezarrita ez badago, erabiltzailea hautatutako zerrenda lehenetsira gehituko da.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Zure erabiltzaileak izena ematean zerrenda lehenetsira eta planaren zerrendara harpidetuta izan ditzakezu_
+
+## Plan bakoitzerako zerrendak eta taldeak hautatzea {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Joan zure **Planak** atalera eta hautatu editatu nahi duzun plana. Kontuan izan **Aukera aurreratuak** meta-koadroan MailChimp izeneko fitxa berri bat egongo dela eskuragarri.
+
+Fitxa horretan, zerrenda anitz edo zerrenda bakar bat eta talde anitz hautatu ahal izango dituzu (integrazio moduaren arabera) plan horretarako.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Hautatu zure plan bakoitzerako erabili nahi dituzun zerrendak eta taldeak_
+
+Erabiltzaile berri batek plan horretan izena ematen duenean, haren email helbidea hautatutako zerrenda eta taldeetara gehituko da!

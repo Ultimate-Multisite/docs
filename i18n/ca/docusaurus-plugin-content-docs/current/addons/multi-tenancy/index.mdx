@@ -1,124 +1,150 @@
 ---
-title: Multi-tenancy
+title: Multitenència
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multitenància
+# Multitenència {#multi-tenancy}
 
-Distribuir subsites arreu de diferents servidors i bases de dades per millorar el rendiment i la seguretat.
+Distribueix subllocs entre servidors i bases de dades per millorar el rendiment i la seguretat
 
-## Requisits
+## Aspectes destacats de la versió 1.2.0 {#version-120-release-highlights}
 
-- WordPress 5.3 o més recent
-- PHP 7.4 o més recent
-- Plugin Multisite Ultimate (activat)
+Multi-Tenancy 1.2.0 afegeix la base d’arrendatari sobirà per als fluxos de treball d’aïllament en producció:
 
-## Instal·lació
+- Autoinici de sessió d’arrendatari sense estat amb visites SSO de curta durada i protegides contra repetició.
+- Aïllament de base de dades i sistema de fitxers per sublloc per a arrendataris sobirans.
+- Capacitat de multitenència de Hostinger per a l’aprovisionament d’arrendataris conscient de l’amfitrió.
+- Portes de verificació de migració sobirana per a comprovacions de dades heretades i processament d’enviament asíncron.
+- Enllaç configurable de l’amfitrió de base de dades a la mateixa màquina per a instal·lacions Bedrock, FrankenPHP i localhost.
+- Millores en l’arrencada de l’arrendatari, l’escriptor de base de dades, l’arrencada d’esquema i l’aprovisionament d’usuaris.
+- Desmuntatge sobirà més segur que neteja les credencials de l’arrendatari.
 
-1. Carrega els fitxers de l'addon al teu directori `/wp-content/plugins/`
-2. Activa el plugin des del menú 'Plugins' de WordPress
-3. Configura les impostes de l'addon a l'administrador de la xarxa
+Consulta les guies d’usuari per al [flux de treball de migració sobirana](/user-guide/getting-started/sovereign-migration-workflow), l’[aïllament de multitenència](/user-guide/configuration/multi-tenancy-isolation) i les [operacions d’arrendatari sobirà](/user-guide/administration/sovereign-tenant-operations).
 
-## Desenvolupament
+## Requisits {#requirements}
 
-### Configuració
+- WordPress 5.3 o superior
+- PHP 7.4 o superior
+- plugin Multisite Ultimate (actiu)
+
+## Instal·lació {#installation}
+
+1. Puja els fitxers del complement al directori `/wp-content/plugins/`
+2. Activa el plugin a través del menú 'Plugins' de WordPress
+3. Configura els paràmetres del complement a l’administració de xarxa
+
+## Desenvolupament {#development}
+
+### Configuració {#setup}
 
 ```bash
-# Instal·lar dependències
+# Install dependencies
 composer install
 npm install
 
-# Executar proves
+# Run tests
 npm run test
 
-# Comprovar estàndards de codi
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Corregir problemes de estil de codi
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Compilar per a producció
+# Build for production
 npm run build
 ```
 
-### Estructura del projecte
+### Estructura del projecte {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # Classes i incloques PHP
-│   ├── class-multisite-ultimate-updater.php  # Gestor d'actualitzacions
+├── inc/                          # Classes PHP i inclusions
+│   ├── class-multisite-ultimate-updater.php  # Gestor d’actualitzacions
 │   └── class-multi_tenancy-main.php             # Funcionalitat principal
 ├── tests/                        # Proves unitàries
-│   ├── bootstrap.php            # Bootstrap de proves
+│   ├── bootstrap.php            # Arrencada de proves
 │   ├── class-*-base.php         # Classe base de proves
 │   └── class-*-test.php         # Casos de prova
 ├── views/                       # Fitxers de plantilla
-├── assets/                      # Recursos estàtics
-│   ├── css/                     # Fitxers de estil
-│   ├── js/                      # Fitxers de JavaScript
+├── assets/                      # Actius estàtics
+│   ├── css/                     # Fulls d’estil
+│   ├── js/                      # Fitxers JavaScript
 │   └── images/                  # Imatges
-├── lang/                        # Fitxers de llengua
+├── lang/                        # Fitxers d’idioma
 ├── composer.json                # Dependències PHP
 ├── package.json                 # Dependències Node.js
 ├── phpunit.xml.dist             # Configuració de PHPUnit
-├── .phpcs.xml.dist              # Configuració d'estàndards de codi
-└── rector.php                   # Regles de modernització de codi
+├── .phpcs.xml.dist              # Configuració d’estàndards de codi
+└── rector.php                   # Regles de modernització del codi
 ```
 
-### Prova
+### Proves {#testing}
 
-L'addon inclou un marc de proves complet:
+El complement inclou un marc de proves complet:
 
-- **Proves unitàries**: Proves basades en PHPUnit amb la suite de proves de WordPress
-- **Classe base de proves**: Proporciona mètodes d'ajut per a escenaris de prova comuns
-- **Cobertura de proves**: Configurades per rastrejar la cobertura de codi
-- **Prova de Multisite**: Les proves s'executen en un entorn multisite
+- **Proves unitàries**: Proves basades en PHPUnit amb el conjunt de proves de WordPress
+- **Classe base de proves**: Proporciona mètodes d’ajuda per a escenaris de prova habituals
+- **Cobertura de proves**: Configurada per fer el seguiment de la cobertura del codi
+- **Proves multisite**: Les proves s’executen en un entorn multisite
 
-### Estàndards de codi
+### Estàndards de codi {#code-standards}
 
-- **Estàndards de codi de WordPress**: Aplicats mitjançant PHPCS
-- **Compatibilitat PHP 7.4+**: Suporta funcions modernes de PHP
-- **Anàlisi estàtica**: Integració de PHPStan per a la verificació de tipus
-- **Modernització de codi**: Regles Rector per a actualitzacions de PHP
+- **Estàndards de codificació de WordPress**: Aplicats mitjançant PHPCS
+- **Compatibilitat amb PHP 7.4+**: Funcions modernes de PHP compatibles
+- **Anàlisi estàtica**: Integració de PHPStan per a la comprovació de tipus
+- **Modernització del codi**: Regles de Rector per a actualitzacions de PHP
 
-### Sistema de compilació
+### Sistema de compilació {#build-system}
 
-- **Processament de recursos**: Minificació per a fitxers CSS/JS
+- **Processament d’actius**: Minificació per a fitxers CSS/JS
 - **Traducció**: Generació de fitxer POT
-- **Embalatge**: Creació d'arxiu per a la distribució
-- **Mode de desenvolupament**: Recursos no minificats per a la depuració
+- **Empaquetament**: Creació d’arxiu per a la distribució
+- **Mode de desenvolupament**: Actius no minificats per a la depuració
 
-## Configuració
+## Configuració {#configuration}
 
-L'addon suporta diverses opcions de configuració accessibles a través de l'interfície d'administració de la xarxa.
+El complement admet diverses opcions de configuració accessibles a través de la interfície d’administració de xarxa.
 
-## Hooks i Filtres
+### Configuració d’arrendatari sobirà {#sovereign-tenant-configuration}
 
-### Accions
+Per als arrendataris sobirans, configura la base de dades de l’arrendatari, l’arrel del sistema de fitxers, l’enllaç de l’amfitrió de base de dades i la capacitat de l’amfitrió abans d’encaminar el trànsit cap a l’arrendatari. Executa la verificació de migració després de cada canvi que afecti les credencials de la base de dades, l’enllaç de l’amfitrió, l’encaminament o l’aprovisionament d’usuaris.
 
-- `ultimate-multisite-addon-template_init` - S'executa després de l'inicialització de l'addon
-- `ultimate-multisite-addon-template_loaded` - S'executa després de carregar tots els fitxers de l'addon
+Utilitza `localhost` només quan el temps d’execució de l’arrendatari i les concessions de la base de dades esperin accés per sòcol local o a la mateixa màquina. Utilitza `127.0.0.1` o un nom d’amfitrió de servei quan aquest sigui l’amfitrió de concessió configurat pel teu proveïdor.
 
-### Filtres
+### Capacitat de Hostinger {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Modifica les impostes de l'addon
-- `ultimate-multisite-addon-template_enabled` - Sobrepassa l'estat d'habilitar/deshabilitar de l'addon
+La capacitat de multitenència de Hostinger funciona amb el token d’integració compartit de Hostinger. Confirma que el domini és present a hPanel, que el DNS apunta al compte de Hostinger i que els paràmetres de la base de dades de l’arrendatari coincideixen amb hPanel abans de la verificació.
 
-## Llicència
+## Hooks i filtres {#hooks-and-filters}
 
-Aquest addon està llicenciat sota GPL v3 o més recent.
+### Accions {#actions}
 
-## Suport
+- `ultimate-multisite-addon-template_init` - S’activa després de la inicialització del complement
+- `ultimate-multisite-addon-template_loaded` - S’activa després que tots els fitxers del complement s’hagin carregat
+
+### Filtres {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Modifica els paràmetres del complement
+- `ultimate-multisite-addon-template_enabled` - Sobreescriu l’estat d’activació/desactivació del complement
+
+## Llicència {#license}
+
+Aquest complement està llicenciat sota la GPL v3 o posterior.
+
+## Suport {#support}
 
 Per a suport i documentació, visita [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historial de canvis
+## Registre de canvis {#changelog}
 
-- Versió 1.0.1 (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.
+- Versió 1.2.0 (2026-06-03): afegeix autoinici de sessió d’arrendatari sense estat, capacitat de multitenència de Hostinger, aïllament de base de dades i sistema de fitxers per sublloc, portes de verificació de migració sobirana, millores en l’arrencada de l’arrendatari/escriptor de base de dades, enllaç configurable de l’amfitrió MySQL i desmuntatge sobirà més segur.
+
+- Versió 1.0.1 (2025-09-28): canvia el nom del prefix a ultimate-multisite; actualitza el domini de text; incrementa la versió.
 
 
-- Versió (2025-09-28): canvi de prefix a ultimate-multisite; actualització del domini de text; increment de versió.
+- Versió  (2025-09-28): canvia el nom del prefix a ultimate-multisite; actualitza el domini de text; incrementa la versió.

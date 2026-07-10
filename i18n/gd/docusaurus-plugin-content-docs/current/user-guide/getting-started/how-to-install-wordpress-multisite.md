@@ -3,7 +3,7 @@ title: Comharrachadh WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Cona chlàradh WordPress Multisite?
+# Cona chlàradh WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Leidichir WordPress Multisite leideach thu a bhith agadair seannach de siti ar cur-a-chlu. Is e feuma seo a th'annach, ach tha e ann an-diugh gu nàdarach.
 
@@ -98,9 +98,9 @@ At sao a bhith a' chùis:
 
 An uair a tha thu a' chùis gu latha, coir an "Add site". An uair a tha an subsite a' chùis, thoir air a ghlacadh airson a bhith a' chùis agus a' sgrùdadh gu bheil an subsite a' chùis.
 
-## Earracha a tha a' chùis:
+## Earracha a tha a' chùis: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Is e féidir li mi a shlàmhachadh seòiltainn ùra ach tha iad a' chùis.
+### 1. Is e féidir li mi a shlàmhachadh seòiltainn ùra ach tha iad a' chùis. {#common-problems}
 
 Tha thu a' chùis subdomains, tha thu a' fhaighinn a' chùis wildcard subdomains airson do network multisite.
 

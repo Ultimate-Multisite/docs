@@ -3,7 +3,7 @@ title: Pag-upgrade sa Plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Pag-upgrade sa Plan (v2)
+# Pag-upgrade sa Plan (v2) {#upgrading-a-plan-v2}
 
 _**MAHINUNGAN: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 
@@ -39,7 +39,7 @@ Human ma-complete ang checkout, ang bag-ong product(s) iapil sa account sa imong
 
 ##
 
-## Mga Dalan sa Pag-upgrade ug Downgrade (Upgrade and Downgrade Paths)
+## Mga Dalan sa Pag-upgrade ug Downgrade (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Sa matag usa sa imong mga product, naa kay tab nga **Up & Downgrades**. Ang unang option sa tab na kana kay field nga gitawag og **Plan Group**.
 

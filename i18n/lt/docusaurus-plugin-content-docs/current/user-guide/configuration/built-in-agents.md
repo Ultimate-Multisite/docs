@@ -1,132 +1,148 @@
 ---
-title: Įdiegti agentai
+title: Integruotieji agentai
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Wbudovai Agentai
+# Integruoti Agentai {#built-in-agents}
 
-Gratis AI Agent v1.9.0 dostarcza pięć wbudowanych agentów, z których każdy jest wstępnie skonfigurowany zestawem narzędzi, spersonalizowanym systemowym promptem oraz sugestiami startowymi dopasowanymi do powszechnych zadań w danej dziedzinie. Przełączanie się między agentami zmienia to, co asystent może robić i jak odpowiada – bez żadnej konfiguracji po Twojej stronie.
+Gratis AI Agent v1.9.0 pateikiamas su penkiais integruotais agentais, kurių kiekvienas iš anksto sukonfigūruotas su tikslingu įrankių rinkiniu, pritaikytu sistemos raginimu ir pradiniais pasiūlymais, atitinkančiais įprastas tos srities užduotis. Perjungiant agentus keičiasi tai, ką asistentas gali daryti ir kaip jis atsako — be jokios konfigūracijos iš jūsų pusės. Superdav AI Agent v1.18.0 gali pridėti tvarkaraštį suvokiančius įrankius, priminimų įrašus, patvirtinimo vartus ir SMS pranešimus prie šių darbo eigų, kai susijusios integracijos yra sukonfigūruotos.
 
-## Czym jest Agent?
+## Kas yra agentas? {#what-is-an-agent}
 
-Każdy agent to nazwany profil konfiguracyjny, który łączy:
+Kiekvienas agentas yra pavadintas konfigūracijos profilis, kuris sujungia:
 
-- **Narzędzia (Tools)** — możliwości, które agent ma prawo wywołać (np. Content Writer ma dostęp do możliwości tworzenia treści; Design Studio ma dostęp do umiejętności CSS i theme.json).
-- **Systemowy prompt** — instrukcje określające ton, priorytety i ograniczenia agenta.
-- **Sugestie (Suggestions)** — wstępnie napisane prompty wyświetlane w interfejsie czatu, które pomagają Ci szybko zacząć pracę.
+- **Įrankiai** — gebėjimai, kuriuos agentui leidžiama iškviesti (pvz., turinio rašytojas turi prieigą prie įrašų kūrimo gebėjimų; dizaino studija turi prieigą prie CSS ir theme.json gebėjimų)
+- **Sistemos raginimas** — instrukcijos, nustatančios agento toną, prioritetus ir apribojimus
+- **Pasiūlymai** — iš anksto parašyti raginimai, rodomi pokalbio sąsajoje, kad padėtų greitai pradėti
 
-## Dostęp do Wyboru Agentów
+## Prieiga prie agento pasirinkiklio {#accessing-the-agent-picker}
 
-1. Otwórz panel **Gratis AI Agent** w pasku bocznym administracji WordPressa.
-2. Kliknij **ikonę agenta** w lewym górnym rogu nagłówka czatu (ikona zmienia się, aby odzwierciedlać aktywny agent).
-3. **Agent Picker** otwiera się jako nakładka tabeli formularza. Każdy agent jest wymieniony wraz z ikoną, nazwą i krótkim opisem.
-4. Kliknij w wiersz agenta, aby go aktywować. Nagłówek czatu aktualizuje się natychmiast.
+1. Atidarykite **Gratis AI Agent** skydelį WordPress administratoriaus šoninėje juostoje.
+2. Spustelėkite **agento piktogramą** pokalbio antraštės viršutiniame kairiajame kampe (piktograma keičiasi, kad atspindėtų aktyvų agentą).
+3. **Agentų pasirinkiklis** atsidaro kaip formos lentelės perdanga. Kiekvienas agentas pateikiamas su savo piktograma, pavadinimu ir vienos eilutės aprašymu.
+4. Spustelėkite agento eilutę, kad jį aktyvuotumėte. Pokalbio antraštė atsinaujina iš karto.
 
-Możesz również przełączać się między agentami w trakcie rozmowy – systemowy prompt nowego agenta zaczyna obowiązywać od następnej wiadomości.
+Taip pat galite perjungti agentus pokalbio viduryje — naujojo agento sistemos raginimas įsigalioja nuo kitos žinutės.
 
-## Pięć Wbudowanych Agentów
+## Penki integruoti agentai {#the-five-built-in-agents}
 
-### Content Writer (Piszący Treści)
+### Turinio rašytojas {#content-writer}
 
-**Skupienie:** Tworzenie i edycja postów, stron oraz formularzy kontaktowych.
+**Sritis:** Įrašų, puslapių ir kontaktinių formų kūrimas bei redagavimas.
 
-**Dostępne narzędzia:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Prieinami įrankiai:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Įjungus Superdav AI Agent v1.18.0 integracijas, patvirtintoms darbo eigoms taip pat gali būti prieinami sukonfigūruotas kalendoriaus kontekstas, patvirtinimo vartai, priminimai ir SMS pranešimų įrankiai.
 
-**Kas labiausiai tinka:**
-- Blogų parašymas ir publikavimas iš trumpo įrašo ar planų
-- Naujo svetainės uchun puslapykių partijų kūrimas
-- Kontakto ir užklauso formų kūrimas
-- Postams nuolatinio vaizdo nustatymas URL ar paieška pagalba
+**Ką jis daro gerai:**
+- Tinklaraščio įrašų rengimas ir publikavimas pagal trumpą aprašą ar planą
+- Naujos svetainės nukreipimo puslapių paketų kūrimas
+- Kontaktinių ir užklausų formų kūrimas
+- Pagrindinių paveikslėlių nustatymas įrašuose iš URL arba paieškos
+- Renginio tolesnių žinučių rengimas iš sukonfigūruoto Google Calendar konteksto, tada pristabdymas patvirtinimui prieš siunčiant pranešimus
 
-**Pradžia sužestai:**
-- *Rašykite apie 500 žodžių blogą apie WordPress multisite pranašumus.*
-- *Sukurkite „Apie mus“, „Paslaugos“ ir „Kontaktai“ puslapykius ir publikuokite juos.*
-- *Įdėkite rezervacijos užklauso formą Kontaktų puslapio įrinkalui.*
-
----
-
-### Svetainės Dydžio Kuri
-
-**Pakuotojimas:** Galima sukurti visą svetainę nuo vieno įrašo.
-
-**Prieinami įrankiai:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Kas labiausiai tinka:**
-- Sukurti daug fazų svetainės kūrimo planą aprašytam verslo tipui
-- Kiekvieną fazę veikti autonomiškai – struktūra, turinys, navigacija, dizainas
-- Atnaujinti klaidos viduje planui be reikalinga man mano
-- Įdėti rekomenduojamus pluginus kaip dalį kūrimo
-- Kontakto formų sukurti tiesiog iš chat svetainės kūrėjimo (Superdav AI Agent v1.10.0+)
-
-**Pradžia sužestai:**
-- *Sukurkite fotografijų portfolijos svetainę su galerijos įrašo tipu, rezervacijos puslapyku ir kontakto forma.*
-- *Sukurkite restoranų svetainę su onlaikiniu meniu, veikimo laukais ir santalų rezervacijos užklauso forma.*
-- *Nustatykite freelancerių konsultacijų svetainę su paslaugų puslapiais, portfoliju ir blogu.*
-- *Naudokite svetainės kūrėjo kontakto formą Kontaktų puslapyje.*
+**Pradiniai pasiūlymai:**
+- *Parašyk 500 žodžių tinklaraščio įrašą apie WordPress multisite privalumus.*
+- *Sukurk puslapius „Apie“, „Paslaugos“ ir „Kontaktai“ ir juos publikuok.*
+- *Pridėk rezervacijos užklausos formą į Kontaktų puslapį.*
+- *Parenk priminimą dalyviams apie rytojaus sukonfigūruotą kalendoriaus renginį ir palauk patvirtinimo prieš jį siųsdamas.*
 
 ---
 
-### Dizaino Studija
+### Svetainės kūrėjas {#site-builder}
 
-**Pakuotojimas:** Vizualios personalizacijos – spalvos, tipografijos, CSS ir blokų šablonų.
+**Sritis:** Svetainės kūrimas nuo pradžios iki pabaigos pagal vieną raginimą.
 
-**Paskutojami įrankiai:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Prieinami įrankiai:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Su Superdav AI Agent v1.18.0, sukonfigūruoti valdomų paslaugų, patvirtinimo, priminimų, kalendoriaus ir SMS įrankiai gali būti prieinami ten, kur administratoriai juos įjungia.
 
-**Kas geriausiai padary:**
-- Naudoti pavadinimus theme preset'us (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Tame peržiūrėti ir sukurti globalų tipografijos ir spalvų paletros nustatymus per `theme.json`
-- Įdaryti pritaikytą CSS kodą prekių ženaliui specifinių pakeitimų atlikimui
-- Atimti puslapio skaitmeną ir peržiūrėti jį dizaino problemų užtikrinimui
+**Ką jis daro gerai:**
+- Kelių etapų svetainės kūrimo plano generavimas aprašytam verslo tipui
+- Kiekvieno etapo vykdymas autonomiškai — struktūra, turinys, navigacija, dizainas
+- Atsigavimas po klaidų plano viduryje nereikalaujant rankinio įsikišimo
+- Rekomenduojamų plugins diegimas kaip kūrimo dalis
+- Kontaktinių formų kūrimas tiesiai iš pokalbio sąsajos (Superdav AI Agent v1.10.0+)
+- Paleidimo priminimų arba dalyvių tolesnio susisiekimo koordinavimas be pasikartojančių pranešimų, kai įjungti patvirtinimo vartai ir priminimų įrašai
 
-**Pradžia:**
-- *Tinklydami warm-editorial presetą, nustatykite pagrindinį spalvą į #2d6a4f.*
-- *Atimkite naują puslapio pagrindinį skaitmenį ir pasakykite, ką turėtumėte pagerinti.*
-- *Sukurkite naudingą hero blokų šabloną su visapriešingai vaizdu aktyvumu ir centrinę antraukę.*
-
----
-
-### Plugin Manager (Įtraukimų valdyba)
-
-**Kiekis:** Apibūdinti, įdaryti ir valdyti WordPress pluginus.
-
-**Paskutojami įrankiai:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Kas geriausiai padary:**
-- Rekomenduoti geriausią pluginą apibūdintam naudojimo scenariju
-- Įdaryti įtraukimų paketus iš registratorenio
-- Peržiūrėti įtraukimų katalogą pagal kategorijas
-
-**Pradžia:**
-- *Koks geriausias pluginas klubui/memberių sąrašui?*
-- *Įdarykite WooCommerce įtraukimų paketą.*
-- *Pokažykite visus turimus e-komercijos įtraukimų paketus.*
+**Pradiniai pasiūlymai:**
+- *Sukurk fotografijos portfolio svetainę su galerijos įrašo tipu, rezervacijos puslapiu ir kontaktine forma.*
+- *Sukurk restorano svetainę su internetiniu meniu, darbo valandomis ir staliuko rezervacijos užklausos forma.*
+- *Sukonfigūruok laisvai samdomo konsultanto svetainę su paslaugų puslapiais, portfolio skiltimi ir tinklaraščiu.*
+- *Pridėk kontaktinę formą į Kontaktų puslapį naudodamas svetainės kūrėją.*
+- *Kai svetainės paleidimo kontrolinis sąrašas bus patvirtintas, išsiųsk SMS priminimą sukonfigūruotam suinteresuotojo asmens kontaktui.*
 
 ---
 
-### Support Assistant (Pagalba specialistė)
+### Dizaino studija {#design-studio}
 
-**Kiekis:** Atsakyti į klausimus apie svetainės turinį, nustatymus ir WordPress konfigūraciją.
+**Sritis:** Vizualinis pritaikymas — spalvos, tipografija, CSS ir blokų šablonai.
 
-**Paskutojami įrankiai:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Prieinami įrankiai:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Kas labiausiai geriaus:**
-- Atidaryti dabartinius svetainės nustatymus ir parinktis.
-- Paaiškinati, kokie post tipai, taksonomijos ir meniu yra konfigūruoti svetainei.
-- Atsakyti į klausimus „kas šis nustatymas daro?“, skaitydami tiesioginius vertus.
-- Veikti kaip skaitomas diagnostikos laisvas, prieš atlikdami pakeitimus.
+**Ką jis daro gerai:**
+- Pavadintų theme išankstinių nustatymų taikymas (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Globalios tipografijos ir spalvų palečių tikslinimas per theme.json
+- Pasirinktinio CSS įterpimas konkretaus prekės ženklo pakeitimams
+- Puslapio ekrano kopijos darymas ir jos peržiūra dėl dizaino problemų
 
-**Pradžia:**
-- *Kuri pluginai ir nustatymai yra aktyvi šioje svetainei?*
-- *Nurodyti visus pritaikytus post tipus, registruotus šioje svetainei.*
-- *Kuri navigacijos meniu egzistuoja ir kur jie priklausomai nurodyti?*
+**Pradiniai pasiūlymai:**
+- *Pritaikyk warm-editorial išankstinį nustatymą, tada nustatyk pagrindinę spalvą į #2d6a4f.*
+- *Padaryk pagrindinio puslapio ekrano kopiją ir pasakyk, ką patobulintum.*
+- *Sukurk daugkartinio naudojimo hero bloko šabloną su viso pločio fono paveikslėliu ir centruota antrašte.*
+
+### Plugin Manager {#plugin-manager}
+
+**Sritis:** WordPress plugins atradimas, diegimas ir valdymas.
+
+**Prieinami įrankiai:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Ką jis daro gerai:**
+- Geriausio plugin rekomendavimas aprašytam naudojimo atvejui
+- Gebėjimų paketų diegimas iš registro
+- Prieinamo gebėjimų katalogo naršymas pagal kategoriją
+
+**Pradiniai pasiūlymai:**
+- *Koks geriausias plugin narystės katalogui?*
+- *Įdiek WooCommerce gebėjimų paketą.*
+- *Parodyk visus prieinamus e. prekybos gebėjimų paketus.*
 
 ---
 
-## Agentų pritaikymas
+### Pagalbos asistentas {#support-assistant}
 
-Kiekvienas įtrauktas agentas gali būti išplėstinamas arba pakeistas naudojant `gratis_ai_agent_agents` filtruojimą.
+**Sritis:** Atsakymai į klausimus apie svetainės turinį, nustatymus ir WordPress konfigūraciją.
 
-### Pridėti pritaikytą sisteminį promptą esamajam agentui
+**Prieinami įrankiai:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Ką jis atlieka gerai:**
+- Peržiūri dabartinius svetainės nustatymus ir parinktis
+- Paaiškina, kokie įrašų tipai, taksonomijos ir meniu yra sukonfigūruoti svetainėje
+- Atsako į klausimus „ką daro šis nustatymas?“ skaitydamas tiesiogines reikšmes
+- Veikia kaip tik skaitymui skirtas diagnostikos sluoksnis prieš atliekant pakeitimus
+
+**Pradiniai pasiūlymai:**
+- *Kokie plugin ir nustatymai šiuo metu aktyvūs šioje svetainėje?*
+- *Išvardyk visus pasirinktinius įrašų tipus, užregistruotus šioje svetainėje.*
+- *Kokie navigacijos meniu yra ir kur jie priskirti?*
+
+---
+
+## Superdav automatizavimo integracijos {#superdav-automation-integrations}
+
+Kai sukonfigūruotos Superdav AI Agent v1.18.0 integracijos, integruoti agentai gali dalyvauti saugesnėse, tvarkaraštį įvertinančiose automatizavimo darbo eigose:
+
+- **Google Calendar skaitymo įrankiai** leidžia agentams peržiūrėti sukonfigūruotus kalendorius ir įvykius prieš rengiant tolesnius darbus.
+- **Kontaktų ir dalyvių susiejimas** padeda susieti įvykio dalyvius su WordPress naudotojais arba žinomais kontaktais.
+- **Žmogaus patvirtinimo vartai** sustabdo jautrius veiksmus, kol įgaliotas naudotojas juos peržiūri ir patvirtina.
+- **Priminimų įrašai** neleidžia dubliuoti pranešimų, kai suplanuotos užduotys bandomos vykdyti iš naujo arba kartojamos.
+- **TextBee SMS pranešimai** siunčia sukonfigūruotas tekstines žinutes tik tada, kai įjungti SMS prisijungimo duomenys ir darbo eigos leidimai.
+
+Rekomenduojama darbo eiga: paprašykite agento parengti pranešimą arba veiksmą, peržiūrėkite patvirtinimo raginimą, tada leiskite patvirtintam veiksmui tęstis. Pasikartojantiems priminimams palikite įjungtą priminimų dubliavimo šalinimą, kad tas pats įvykis arba kontaktas nebūtų informuojamas pakartotinai.
+
+---
+
+## Agentų pritaikymas {#customising-agents}
+
+Kiekvieną integruotą agentą galima išplėsti arba pakeisti naudojant `gratis_ai_agent_agents` filtrą.
+
+### Pasirinktinio sistemos raginimo pridėjimas prie esamo agento {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,13 +153,13 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Registruoti naują agentą
+### Naujo agento registravimas {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Optimizuoja postus ir puslapisems ieškoti enginečių.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
         'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Naujas agentas pasirodžia Agent Picker'e tiesiogiai po filtra veikimo.
+Naujasis agentas pasirodo agentų parinkiklyje iškart po to, kai paleidžiamas filtras.
 
-### Priešdaryti įtrauktą agentą
+### Integruoto agento pašalinimas {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

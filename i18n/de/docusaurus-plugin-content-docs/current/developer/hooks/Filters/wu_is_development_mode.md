@@ -4,23 +4,23 @@ title: Filter - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# Filter: wu_is_development_mode
+# Filter: wu_is_development_mode {#filter-wuisdevelopmentmode}
 
 Allow plugin developers to add additional tests for development mode.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $is_development_mode | `bool` | Die aktuelle Entwicklungsstatus. |
 | $site_url | `string` | Die Site-URL. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definiert in [`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L63) at line 63
 
 
-## Returns
+## Returns {#returns}

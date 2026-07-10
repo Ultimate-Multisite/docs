@@ -3,11 +3,11 @@ title: ساروقي مائٽريڪشن تصديق
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Sovereign Migration Verification
+# Sovereign Migration Verification {#sovereign-migration-verification}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ۾ WP-CLI جو verification commands شامل آهن جيڪي sovereign tenant migrations لاءِ موجود آهن. ان کي انهن وقت استعمال ڪريو تڏهن ته جڏهن ڪا tenant migration، SSO visit، يا اڪيلو installation توقع مطابق کام نه ڪري رهيو هجي.
 
-## چلائڻ وارن commands
+## چلائڻ وارن commands {#commands-to-run}
 
 Network WordPress install کان verification رن ڪريو:
 
@@ -18,28 +18,28 @@ wp tenant verify-sovereign-push --site=<site-id>
 
 ان tenant جو site ID استعمال ڪريو جنهن کي توهان migrate ڪري رهيا آهيو. پهرين command ياري ڪري ٿو ته tenant هن legacy network-side data تي انحصار نه رکي ٿو. ٻئي command ياري ڪري ٿو ته sovereign push jobs کي process ۽ drain ڪرڻ جي صلاحيت آهي.
 
-## عام غلطيون (Common failures)
+## عام غلطيون (Common failures) {#common-failures}
 
-### Database grants match host نه آهن
+### Database grants match host نه آهن {#database-grants-do-not-match-the-host}
 
 جيڪڏهن verification رپورٽ grant يا writer-user جو غلطي ڏिके ٿي، ته configure ڪيل database host کي چيڪ ڪريو. `localhost`، `127.0.0.1`، ۽ container service name مختلف MySQL grant hosts هوندا آهن. tenant host binding يا database grants کي اپڊيٽ ڪريو، پنهنجي verification کي ٻيهر رن ڪريو.
 
-### Bedrock يا local installs جڳهه کان connect نه ٿين سگهن
+### Bedrock يا local installs جڳهه کان connect نه ٿين سگهن {#bedrock-or-local-installs-cannot-connect}
 
 Bedrock ۽ local socket installs ڊيٽابيس کي `localhost` طور رپورٽ ڪري سگهن ٿا جڏهن ته runtime normalized address تروضي سان connect ڪري ٿو. Version 1.2.0 هڪ ئي مشين جي host strings کي normalizes ڪري ٿو، پر custom host overrides گهڻيون grant سان ضد ڪري سگهن ٿيون.
 
-### Async push queue drain نه ٿيو
+### Async push queue drain نه ٿيو {#async-push-queue-does-not-drain}
 
 جيڪڏهن `verify-sovereign-push` ختم نه ٿئي، ته Action Scheduler يا configure ڪيل async runner کي چيڪ ڪريو. غلطي واري jobs کي صرف تبديل ڪرڻ کان اڳ confirm ڪريو ته اهي retry ڪرڻ يا discard ڪرڻ لاءِ محفوظ آهن.
 
-### Tenant user count غلط آهي
+### Tenant user count غلط آهي {#tenant-user-count-is-wrong}
 
 Migration کي sovereign tenant لاءِ users provision ڪرڻ گهرجي. جيڪڏهن توقع ڪيل install user مڪمل نه آهي، ته SSO رن ڪرڻ کان اڳ user provisioning جو قدم ٻيهر رن ڪريو.
 
-### SSO visit رد ٿي وڃي
+### SSO visit رد ٿي وڃي {#sso-visit-is-rejected}
 
 اسٹائلنس لِنٹنٹ آٹو لاگ ان لاءِ، ٹیننٹ ڈومین، اوریجن پِن (origin pin)، ٹوکن کا مقصد (token purpose)، نونس (nonce)، تے ایکسپائری (expiry) بالکل ایک جیسے ہونے چاہئیں۔ یقینی بنا لو کہ ٹیننٹ کا URL صحیح ہے تے SSO وزٹ جنریٹ کرنے کے فوراً بعد لاگ ان کی کوشش کی جا رہی ہے۔
 
-## کب دوبارہ کوشش کرنی ہے
+## کب دوبارہ کوشش کرنی ہے {#when-to-retry}
 
 ہر انفراسٹرکچر تبدیلی کے بعد تصدیق کو دوبارہ چیک کریں۔ جب تک تمام تصدیقی چیک پاس نہ ہو جائیں، پروڈکشن ٹریفک تبدیل نہ کریں، سورس ڈیٹا ڈیلیٹ نہ کریں، یا مائگریشن کریڈینشلز ہٹانے نہ دیں۔

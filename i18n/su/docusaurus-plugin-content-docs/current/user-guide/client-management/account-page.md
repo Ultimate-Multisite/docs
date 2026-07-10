@@ -3,7 +3,7 @@ title: Halaman Akun Klien
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Akun Klien Anda (v2)
+# Halaman Akun Klien Anda (v2) {#your-clients-account-page-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
@@ -11,7 +11,7 @@ Lamun pelanggan berlangganan paket di jaringan Anda, mereka bakal dapat akses ke
 
 Di tutorial ini, kami akan pandu kamu lewat halaman akun pelanggan dan kamu bisa lihat apa saja yang bisa dilihat dan dilakukan pelanggan di dalamnya.
 
-## Halaman Akun
+## Halaman Akun {#the-account-page}
 
 Halaman akun bisa diakses dengan klik **Account** di dalam dashboard pelanggan Anda.
 
@@ -27,7 +27,7 @@ Setelah pelanggan klik di sana, mereka akan lihat gambaran keanggotaan mereka, a
 
 Mereka juga bisa mengubah keanggotaan ke paket lain, atau membeli paket/layanan lain yang Anda tawarkan. Mari kita lihat setiap bagiannya satu per satu.
 
-### Gambaran Keanggotaan Anjeun:
+### Gambaran Keanggotaan Anjeun: {#your-membership-overview}
 
 Blok kahiji di handapkeun ngaran situs pelanggan anjeun nunjukkeun gambaran umum rencana je layanan/paket anu geus dibeli bareng éta. Blok éta ogé nunjukkeun nomer keanggotaan, jumlah awal anu dibayar pikeun éta, sabaraha harga rencana je layanan/paketna, sarta sabaraha kali manéhna ditagih kanggo keanggotaan éta. Maranéhna ogé bisa ningali upami keanggotaan éta **Aktif**, **Kedaluwarsa** atawa **Dibatalkan**.
 
@@ -43,7 +43,7 @@ Ayeuna, upami pelanggan anjeun milih pikeun meuli paket atawa layanan kanggo kea
 
 Catetan yén kode kupon teu bisa ditambah dina halaman ganti keanggotaan ieu. Upami pelanggan geus ngagunake kode kupon dina pembelian keanggotaan kahiji, kode éta ogé bakal berlaku pikeun keanggotaan anyar ieu.
 
-### Ngabaharui Alamat Tagihan:
+### Ngabaharui Alamat Tagihan: {#updating-the-billing-address}
 
 Di halaman akun, pelanggan Anda juga bisa memperbarui alamat penagihan mereka. Mereka hanya perlu mengklik **Update** di sebelah _Billing Address_.
 
@@ -53,7 +53,7 @@ Sebuah jendela baru akan muncul untuk pelanggan Anda. Yang perlu mereka lakukan 
 
 ![Form Perubahan Alamat Penagihan](/img/account-page/billing-address-form.png)
 
-### Mengubah Template Situs:
+### Mengubah Template Situs: {#changing-the-site-template}
 
 Supaya pelanggan Anda bisa mengubah template situs, Anda perlu masuk ke **Ultimate Multisite > Settings > Sites** dan nyalakan opsi **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Sanggeus nyaluykeun (toggle on) konfirmasi jeung klik **Process Switch**, templa
 
 Pelanggan ogé bisa ngagunake **Reset current template** tina panel ieu lamun maranéhna butuh ngabalikeun situs ka template anu ayeuna ditugaskeun. Saperti ganti ka template séjén, ngreset template bisa nulis ulang konten situs, jadi pelanggan ngan ukur kudu ngabuktikeun éta nalika maranéhna ngarti tindakan resetna.
 
-### Nambah Domain Kustom:
+### Nambah Domain Kustom: {#adding-custom-domains}
 
 Pelanggan anjeun ogé bakal boga pilihan pikeun nambahan domain kustom pikeun rencana ieu dina halaman akun maranéhna. Pikeun ngidinan pelanggan anjeun ngagunake domain kustom, ka **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Sanggeus klik **Next Step**, pelanggan anjeun bisa nambahan nama domain kustomna
 
 Sanggeus klik **Add Domain**, domain éta bakal ditambahan ka akun pelanggan anjeun. Sagala nu kudu dilakukeun ayeuna nyaéta ngarobah DNS record domain kustom ieu dina registrar domain maranéhna.
 
-### Ngarobah Password:
+### Ngarobah Password: {#changing-password}
 
 Di dalam dashboard account, pelanggan anjeun ogé bisa ngarobah passwordna ku klik **Change Password**.
 
@@ -125,7 +125,7 @@ Ieu bakal nunjukkeun jendela anyar di mana pelanggan kudu ngisi sandi anu ayeuna
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Zona Bahaya:
+### Zona Bahaya: {#danger-zone}
 
 Kami ogé miboga dua pilihan anu ditunjukeun dina bagian **Danger Zone**: **Hapus Situs** jeung **Hapus Akun**. Dua tindakan ieu aya di bagian Danger Zone sabab tindakan iki teu bisa dibalikkeun deui. Upami pelanggan ngahapus situs atawa akunna, maranéhna moal bisa balik deui.
 

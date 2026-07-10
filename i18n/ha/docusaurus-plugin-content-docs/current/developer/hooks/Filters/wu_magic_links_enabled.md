@@ -1,0 +1,22 @@
+---
+id: wu_magic_links_enabled
+title: Tace - wu_magic_links_enabled
+sidebar_label: wu_magic_links_enabled
+_i18n_hash: 98f65dc18013396be2f197fbbd49e773
+---
+# Tace: wu_magic_links_enabled {#filter-wumagiclinksenabled}
+
+Tace ko an kunna hanyoyin haɗin sihiri.
+
+## Sigogi {#parameters}
+
+| Suna | Nau'i | Bayani |
+|------|------|-------------|
+| $enabled | `bool` | Ko an kunna hanyoyin haɗin sihiri. |
+
+### Tun daga {#since}
+
+- 2.0.0
+### Tushe {#source}
+
+An ayyana a cikin [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) a layi 377

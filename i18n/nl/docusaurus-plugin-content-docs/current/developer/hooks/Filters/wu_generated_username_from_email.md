@@ -4,11 +4,11 @@ title: Filter - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email
+# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Filter gegenereerde klantgebruikersnaam.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Filter gegenereerde klantgebruikersnaam.
 | $new_user_args | `array` | Array van nieuwe gebruikersargumenten, mogelijk inclusief voor- en achternaam. |
 | $suffix | `string` | Voeg een string toe aan de gebruikersnaam om deze uniek te maken. |
 
-### Since
+### Since {#since}
 
 - 3.7.0
 
-### Source
+### Source {#source}
 
 Gedefinieerd in [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) op regel 488

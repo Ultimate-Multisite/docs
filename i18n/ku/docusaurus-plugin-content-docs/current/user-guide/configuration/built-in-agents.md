@@ -1,132 +1,148 @@
 ---
-title: ئاسایی ئەژمنەکان
+title: Agentên Hundirîn
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Built-in
+# Agentên Navxweyî {#built-in-agents}
 
-Gratis AI Agent v1.9.0 پچ پنج ئاژێری پێشوەخت (built-in agents) دەهێنێت، هەر یەک لەوانە بە ئامراز و ئامرازە دیاریکراوێک، سیستەم پرۆمبتێکی تایبەت، و پێشنیاری سەرەتایی کە لەگەڵ ئاسانکارییە باوەکان لەو ناوچەیەدا دەگونجێن. گۆڕینی نێوان ئاژێرەکان کاریگەریی ئەوەیە کە ئەسستنت چۆن کار دەکات و چۆن وەڵام دەدات، بەبێ پێویستی هەر جۆرە ڕێکخستنی لەلایەن تۆشەوە.
+Gratis AI Agent v1.9.0 bi pênc agentên navxweyî tê, her yek ji wan bi komeke amûrên berê ve hatine amadekirin, system promptek taybet, û pêşniyarên destpêkê yên li gorî karên hevpar ên wê qadê hatine saz kirin. Guhertina di navbera agentan de tiştên ku arîkar dikare bike û awayê bersiva wî diguherîne — bêyî tu veavakirinek ji aliyê we ve. Superdav AI Agent v1.18.0 dikare dema entegrasyonên têkildar hatine veavakirin, amûrên haydar ji bernameyê, tomarên bîranînê, dergehên erêkirinê, û agahdariyên SMSê li van herikên karê zêde bike.
 
-## ئاژێر چییە؟
+## Agent Çi Ye? {#what-is-an-agent}
 
-هەر یەک لەو ئاژێرە پڕۆفایلێکی دیاریکراو (named configuration profile)ە کە کۆیچوونەیەک لەم شتە دەگرێتەوە:
+Her agent profîleke veavakirinê ya bi nav e ku van tiştan li hev tîne:
 
-- **Tools** — تواناکان کە ڕێگە دەدرێت ئاژێرەکە بەکاربهێنێت (بۆ نموونە، نووسەرێکی ناوەڕۆک دەتوانێت کارەکانی دروستکردنی پۆست و صفحات ئەنجام بدات؛ استودیۆی دیزاین دەتوانێت کارەکانی CSS و theme.json بەکاربهێنێت).
-- **System prompt** — ڕێنماییەکان کە توندیی، پێشنیارەکان، و سنوورەکانی ئاژێرەکە دیاری دەکەن.
-- **Suggestions** — پرۆمبتە نووسراوەکانی پێشوەخت کە لە جێی چاتدا دەردەکەون بۆ ئەوەی بە خێرایی دەستپێبکەیت.
+- **Amûr** — şiyanên ku destûr tê dayîn agent wan bi kar bîne (mînak, Content Writer xwedî gihîştina şiyanên afirandina nivîsê ye; Design Studio xwedî gihîştina şiyanên CSS û theme.json e)
+- **System prompt** — rêwerzên ku awaz, pêşîtiyên, û sînorên agent diyar dikin
+- **Pêşniyar** — promptên berê nivîsandî ku di navrûya sohbetê de tên nîşandan da ku hûn zû dest pê bikin
 
-## دەستگەیشتن بۆ هەڵبژاردنی ئاژێر (Agent Picker)
+## Gihîştina Hilbijêrê Agentan {#accessing-the-agent-picker}
 
-1. **Gratis AI Agent** پۆلەی لە لایەنی بەڕێوەبردنی WordPress بکەرەوە.
-2. **agent icon**-ی لە سەرەوەی سەری چاتەکە clique بکە (ئای کونەکە دەگۆڕێت بۆ ئەوەی نیشان بدات ئاژێرەکەی چالاکە).
-3. **Agent Picker** وەک پڕۆفایلێکی ناوەڕۆک لەسەر ڕێکخستنی فۆرم دەکرێتەوە. هەر ئاژێرێک بە ئای کونەکە، ناونیشانی، و وەسفی یەک-ڕێوە دیارراو نیشان دەدرێت.
-4. سەر ئەو ڕێفەی (row)ە clique بکە بۆ چالاککردن. سەری چاتەکە بە خێرایی نوێ دەبێتەوە.
+1. Panela **Gratis AI Agent** di sidebar a rêveberiya WordPress de vekin.
+2. Li **îkona agent** ya li jora-çepê ya sernavê sohbetê bikirtînin (îkon li gorî agentê çalak diguhere).
+3. **Hilbijêrê Agentan** wekî qatek form-table vedibe. Her agent bi îkona xwe, navê xwe, û danasînek yek rêzikî tê lîstekirin.
+4. Li rêza agentekî bikirtînin da ku wê çalak bikin. Sernavê sohbetê yekser nû dibe.
 
-دەتوانیت لە نێوان قسەکردن بگۆڕیت ئاژێر؛ سیستەم پرۆمبتی ئاژێرە نوێی لەو پەیامە دواییندا دەست پێدەکات کارکردن.
+Hûn dikarin di nîvê axaftinê de jî agentan biguherînin — system prompt a agentê nû ji peyama din ve bandor dike.
 
-## پەنج ئاژێرە پێشوەخت (The Five Built-in Agents)
+## Pênc Agentên Navxweyî {#the-five-built-in-agents}
 
-### نووسەر ناوەڕۆک (Content Writer)
+### Content Writer {#content-writer}
 
-**تایبەتمەندی سەرەکی:** دروستکردنی و چاککردنەوەی پۆستەکان، صفحاتەکان، و فۆرمەکانی پەیوەندی.
+**Baldarî:** Afirandin û sererastkirina nivîs, rûpel, û formên têkiliyê.
 
-**ئامرازە بەکارخوازراوەکان:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Amûrên berdest:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Dema entegrasyonên Superdav AI Agent v1.18.0 çalak bin, konteksa salnameyê ya veavakirî, dergehên erêkirinê, bîranîn, û amûrên agahdariya SMSê jî dikarin ji bo herikên karê erêkirî berdest bin.
 
-**چی چیه کار دۆخۆشه‌كه‌ت؟**
-- نووسینی و بڵاوکردنەوەی پۆستەکانی بلاگ لەسەر بنووتنی کورت یان پێکهاتەی وردی (outline)
-- دروستکردنی کۆمەڵێک لاندینگ پیج بۆ شوێنێکی نوێ
-- دروستکردنی فۆرمەکانی پەیوەندی و پرسیارکان
-- دانانی وێنەی سەرنجڕاکێش لەسەر پۆستەکان بە شێوەی لینک یان گەڕان
+**Tiştên ku baş dike:**
+- Amadekirina pêşnivîs û weşandina nivîsên blogê ji kurteyeke an xêzekê
+- Afirandina komên rûpelên landing ji bo malpereke nû
+- Avakirina formên têkilî û pirsînê
+- Danîna wêneyên taybet li ser nivîsan ji URLekê an lêgerînê
+- Amadekirina peyamên piştî-bûyerê ji konteksa Google Calendar ya veavakirî, paşê sekinandin ji bo erêkirinê berî şandina agahdariyan
 
-**پیشنهادەکانی دەستپێک:**
-- *نووسینی پۆستی بلاگێکی ٥٠٠ وشەیی لەسەر سوودەکانی WordPress multisite.*
-- *دروستکردنی پەڕەیەکی باسی، خدمات و پەیوەندی دروست بکە و بڵاو بکەرەوە.*
-- *فۆرمێکی rezervه‌کردن بۆ پرسیارکان لەسەر پەڕەی پەیوەندی زیاد بکە.*
-
----
-
-### Site Builder (درستوکار شوێنساز)
-
-**تایبەتمەندی سەرەکی:** دروستکردنی وێبسایتی تەواوی لە یەک پڕۆمێپت (prompt)دا.
-
-**ئامرازەکانی بەکارهێنان:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**چی چیه کار دۆخۆشه‌كه‌ت؟**
-- پلانی دروستکردنی وێبسایتێکی چەند قۆناغی بۆ جۆری بازرگانیی دیاریکراو دەنووسێتەوە.
-- هەر قۆناغێک بە شێوەیەکی خۆبەڕێوەدەبێت — پێکهاتە، ناوەڕۆک، ڕێنمایی (navigation)، و دیزاین.
-- لە ماوەی پلانداناندا لە هەڵەکاندا دەگەڕێتەوە بەبێ ئەوەی کارلێکێکی دەستکرد پێویست بێت.
-- پلاتینی گواستراو پێشنیارکراون وەک بەشێک لە دروستکردنەکە دابنێت.
-- فۆرمەکانی پەیوەندی ڕاستەوخۆ لەسەر جێی چات (Chat interface) دەستپێدەکەیت (Superdav AI Agent v1.10.0+).
-
-**پیشنهادەکانی دەستپێک:**
-- *دروستکردنی وێبسایتی پۆرتۆفۆڵ بۆ فۆتۆگرافی لەگەڵ جۆرێکی پۆستی گالەری، پەڕەیەکی rezervه‌کردن، و فۆرم پەیوەندی.*
-- *دروستکردنی وێبسایتی restorant (خاوەنی خواردنەوە) لەگەڵ مینیووی ئۆنلاین، کاتی کارکردن، و فۆرمی پرسیار بۆ rezervacijaی خاڵ.*
-- *دروستکردنی وێبسایتی ڕاوێژکاری فری لانسینگ لەگەڵ پەڕەکانی خدمات، بەشی پۆرتۆفۆڵ، و بلاگ.*
-- *بەکارھێنانی Site Builder بۆ زیادکردنی فۆرم پەیوەندییەک لەسەر پەڕەی پەیوەندی.*
+**Pêşniyarên destpêkê:**
+- *Nivîseke blogê ya 500 peyvan li ser sûdên WordPress multisite binivîse.*
+- *Rûpelên About, Services, û Contact biafirîne û wan biweşîne.*
+- *Formeke pirsîna bookingê li rûpela Contact zêde bike.*
+- *Ji bo beşdarên bûyera salnameya veavakirî ya sibê bîranînek amade bike û berî şandinê li benda erêkirinê bimîne.*
 
 ---
 
-### Design Studio (استۆدی دیزاین)
+### Site Builder {#site-builder}
 
-**تایبەتمەندی سەرەکی:** گۆڕینی ڕەنگ، تایپوگرافی (فۆنت)، CSS، و پترۆنەکانی بلوک.
+**Baldarî:** Afirandina malperê ji serî heta dawî ji yek promptê.
 
-**أدوات موجودەکان:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Amûrên berdest:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Bi Superdav AI Agent v1.18.0 re, amûrên managed-service, erêkirinê, bîranînê, salnameyê, û SMSê yên veavakirî dikarin li cihên ku rêveber wan çalak dikin berdest bin.
 
-**چی باش دەکات:**
-- پێشستە تێیدا (وەک minimal-dark، warm-editorial، corporate-blue، vibrant-startup، classic-blog) جێبەجێکردن.
-- ڕێکخستنی تایبەتمەندیی گشتی و پالتۆپەکانی ڕەنگ لە ڕێگەی theme.jsonەوە.
-- CSS تایبەت بۆ گۆڕانکارییەکان بە تایبەتمەندی براندەکە دەربڵاودان (overrides) دەهێنێتە ناو سایتێک.
-- وەرگرتنی سکرین شاتی یەک صفحات و داواکردنی پێداچوونەوەی دیزاین بۆ کێشەکانی دیزاین.
+**Tiştên ku baş dike:**
+- Çêkirina planeke avakirina malperê ya çend qonaxî ji bo cureyeke karsaziyê ya hatî danasîn
+- Pêkanîna her qonaxê bi xweserî — avahî, naverok, navîgasyon, dîzayn
+- Rizgarkirin ji şaşiyan di nîvê planê de bêyî ku destwerdana destan hewce be
+- Sazkirina pluginên pêşniyarkirî wekî beşek ji avakirinê
+- Afirandina formên têkiliyê rasterast ji navrûya sohbetê (Superdav AI Agent v1.10.0+)
+- Hevkoordînekirina bîranînên destpêkirinê an şopandina beşdaran bê agahdariyên dubare, dema dergehên erêkirinê û tomarên bîranînê çalak bin
 
-**پیشنهادەکانی سەرەتایی:**
-- *پێشستە warm-editorialەکە جێبەجێ بکە و پاشان ڕەنگی سەرەکی (primary colour) بە #2d6a4f دیاری بکە.*
-- *سکرین شاتی سەرۆکە (homepage) وەربگرە و بڵێ چیت دەتوانی بدەیت باشتر بکەیت.*
-- *پۆلێکی بلاک پۆل (hero block pattern) بەکاربهێنە کە وێنەیەکی پسراوەی بە تەواوی ڕووبارێژکراو و سێسڵی سەرنجڕاکێش هەبێت.*
-
----
-
-### Plugin Manager (بەڕێوەبردنی پلگین)
-
-**تایبەتمەندی سەرەکی:** دۆزینەوە، دامەزراندن و بەڕێوەبردنی WordPress plugins.
-
-**أدوات موجودەکان:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**چی باش دەکات:**
-- بۆ ئەو شێوازە دیاریکراو، باشترین پلگینەکە پێشنیار دەکات.
-- پۆڵەکانی تایبەتمەندی (ability packs) لە registries و دامەزراندن دەکاتەوە.
-- کاتالوگێکی تایبەتمەندیی موجود بە بەشی جیاواز دەگەڕێتەوە.
-
-**پیشنهادەکانی سەرەتایی:**
-- *باشترین پلگین بۆ دۆلێری ئەندازیاری (membership directory) چییە؟*
-- *ability pack ی WooCommerce دامەزران بکە.*
-- *بۆ من هەموو پۆڵەکانی تایبەتمەندیی بازاڕکردن (ecommerce ability packs) نیشان بدە.*
+**Pêşniyarên destpêkê:**
+- *Malpereke portfolio ya wênekêşiyê bi cureyê nivîsa gallery, rûpeleke bookingê, û formeke têkiliyê ava bike.*
+- *Malpereke xwaringehê bi menuyeke online, demên vekirinê, û formeke pirsîna rezervasyona masê biafirîne.*
+- *Malpereke şêwirmendiya freelancer bi rûpelên xizmetan, beşa portfolio, û blogê saz bike.*
+- *Bi karanîna site builder formeke têkiliyê li rûpela Contact zêde bike.*
+- *Piştî ku lîsteya kontrola destpêkirina malperê hate erêkirin, bîranîneke SMSê ji têkiliya stakeholder a veavakirî re bişîne.*
 
 ---
 
-### Support Assistant (یاریری پشتگیریکردن)
+### Design Studio {#design-studio}
 
-**تایبەتمەندی سەرەکی:** وەڵامدانەوەی پرسیارەکان دەربارەی ناوەڕۆکی سایت، ڕێکخستنەکان و پێکهاتەی WordPress.
+**Baldarî:** Taybetkirina dîtbarî — reng, tîpografî, CSS, û qalibên blokan.
 
-**أدوات موجودەکان:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Amûrên berdest:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**چی چیه؟ (What it does well):**
-- تنظیمات و گزینه‌های فعلی سایت رو پیدا می‌کنه.
-- توضیح می‌ده که چه نوع پست‌ها (post types)، تاکسونومی‌ها (taxonomies) و منوها روی سایت تنظیم شدن.
-- با خواندن مقادیر زنده، به سوالاتی مثل "این تنظیم این کار رو می‌کنه؟" پاسخ میده.
-- قبل از اینکه تغییر ایجاد کنید، یک لایه تشخیص فقط (read-only diagnostic layer) عمل می‌کنه.
+**Tiştên ku baş dike:**
+- Sepandina presetên theme yên bi nav (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Rastkirina hûr a tîpografiya gerdûnî û paletên rengan bi rêya theme.json
+- Têxistina CSS a taybet ji bo overrideên taybet ên brandê
+- Girtina screenshot a rûpelekê û nirxandina wê ji bo pirsgirêkên dîzaynê
 
-**پیشنهادات اولیه:**
-- *در حال حاضر چه پلاگین‌ها و تنظیماتی روی این سایت فعال هستن؟*
-- *تمام انواع پست سفارشی ثبت شده روی این سایت رو لیست کن.*
-- *چه منوی ناوبری‌هایی وجود دارن و کجا اختصاص داده شدن؟*
+**Pêşniyarên destpêkê:**
+- *Preset a warm-editorial bisepîne û paşê rengê sereke bike #2d6a4f.*
+- *Screenshot a homepageê bigire û ji min re bêje tu çi baştir dikî.*
+- *Qalibeke bloka hero ya ji nû ve bikaranînê biafirîne bi wêneyê paşxaneyê ya firehiya tevahî û sernavê navendî.*
+
+### Plugin Manager {#plugin-manager}
+
+**Baldarî:** Dîtin, sazkirin, û rêvebirina pluginên WordPress.
+
+**Amûrên berdest:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Tiştên ku baş dike:**
+- Pêşniyarkirina plugin a herî baş ji bo rewşeke bikaranînê ya hatî danasîn
+- Sazkirina pakêtên şiyanê ji registry
+- Gerîn di katalogê şiyanên berdest de li gorî kategoriyê
+
+**Pêşniyarên destpêkê:**
+- *Plugin a herî baş ji bo directory a membershipê çi ye?*
+- *Pakêta şiyanên WooCommerce saz bike.*
+- *Hemû pakêtên şiyanê yên ecommerce yên berdest nîşanî min bide.*
 
 ---
 
-## شخصی‌سازی ایجنت‌ها (Customising Agents)
+### Support Assistant {#support-assistant}
 
-هر ایجنت داخلی می‌تونه از طریق فیلتر `gratis_ai_agent_agents` گسترش پیدا کنه یا جایگزین بشه.
+**Baldarî:** Bersivdana pirsan li ser naveroka malperê, mîheng, û veavakirina WordPress.
 
-### اضافه کردن یک پرامپت سیستمی سفارشی به یک ایجنت موجود
+**Amûrên berdest:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Ew çi baş dike:**
+- Lêgerîna mîheng û vebijarkên heyî yên malperê
+- Şirovekirina ku kîjan cureyên nivîsan, taksonomî û menu li ser malperê hatine mîhengkirin
+- Bersivdana pirsên "ev mîheng çi dike?" bi xwendina nirxên zindî
+- Kar kirin wekî qatek teşhîskirina tenê-xwendin berî guherandinê
+
+**Pêşniyarên destpêkê:**
+- *Kîjan plugin û mîheng niha li ser vê malperê çalak in?*
+- *Hemû cureyên nivîsên taybet ên li ser vê malperê tomarbûyî navnîş bike.*
+- *Kîjan menuên navîgasyonê hene û li ku hatine veqetandin?*
+
+---
+
+## Yekbûnên Otomasyonê yên Superdav {#superdav-automation-integrations}
+
+Dema yekbûnên Superdav AI Agent v1.18.0 hatibin mîhengkirin, ajanên navxweyî dikarin beşdarî herikînên xebatê yên otomasyonê yên ewletir û bi bernameyê re agahdar bibin:
+
+- **Amûrên xwendina Google Calendar** dihêlin ajan berî nivîsandina xebata şopandinê salname û bûyerên mîhengkirî kontrol bikin.
+- **Nexşandina têkilî û beşdaran** alîkar dike ku beşdarên bûyerê bi bikarhênerên WordPress an têkiliyên naskirî re werin lihevkirin.
+- **Deriyên pejirandina mirovan** çalakiyên hestiyar radiwestînin heta bikarhênerek destûrdar wan binirxîne û piştrast bike.
+- **Tomarên bîranînê** asteng dikin ku dema karên bernamekirî ji nû ve biceribînin an dubare bibin agahdarîyên ducar werin şandin.
+- **Agahdarîyên TextBee SMS** tenê dema nasnameyên SMS û destûrên herikîna xebatê çalak bin peyamên nivîskî yên mîhengkirî dişînin.
+
+Herikîna xebatê ya pêşniyarkirî: ji ajanê bipirse ku peyam an çalakiyê amade bike, daxwaza pejirandinê binirxîne, paşê bihêle çalakiya pejirandî bidome. Ji bo bîranînên dubare, deduplication a bîranînê çalak bihêle da ku heman bûyer an têkilî gelek caran agahdar nebe.
+
+---
+
+## Taybetkirina Ajanan {#customising-agents}
+
+Her ajanê navxweyî dikare bi rêya filter a `gratis_ai_agent_agents` were berfirehkirin an were guhertin.
+
+### Zêdekirina daxwaznameya pergalê ya taybet li ajanekî heyî {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### ثبت یک ایجنت جدید
+### Tomarkirina ajanekî nû {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-ئەژمارەکەی نوێ بەposa filterەکە دەردەکەوێت لەسەر ئەوەی فیلترەکە کار بکات.
+Ajanê nû tavilê piştî ku filter bixebite di Hilbijêrê Ajanê de xuya dibe.
 
-### هەڵگرتنی ئەژمارێکی پێشوەخت (built-in agent)
+### Rakirina ajanekî navxweyî {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

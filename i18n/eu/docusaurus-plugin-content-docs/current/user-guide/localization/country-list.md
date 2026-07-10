@@ -3,7 +3,7 @@ title: Iraskidetza
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite-aren kontuer listaren ustezpenaketa
+# Ultimate Multisite-aren kontuer listaren ustezpenaketa {#re-ordering-the-ultimate-multisite-country-list}
 
 Kontuerra irriztzeko dropdown-a (menuak) kontuerren ingel batariak ondorioz alfabetikoko dauratsu egiten du. Horrek, minutu batzuk, diseinuaren kontuerra eta/edo gure kosturietako seguruaguneen gehiendu parte bat bigarri edo lehen parte batean ez dagoela eskatzen du.
 

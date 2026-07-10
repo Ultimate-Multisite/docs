@@ -1,40 +1,40 @@
 ---
 title: コミュニティ
 sidebar_position: 9
-_i18n_hash: 8fc30c38fc7c143dc911f341ceb8d547
+_i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Communityへの参加方法
+# Ultimate Multisite Community への参加方法 {#how-to-join-ultimate-multisite-community}
 
-Ultimate Multisite Communityは、他のUltimate Multisiteユーザーとつながり、ヒントや経験などを共有できるスペースです。Ultimate Multisite Communityにアクセスするには、https://community.ultimatemultisite.com/home にアクセスしてください。
+Ultimate Multisite Community は、他の Ultimate Multisite ユーザーとつながり、ヒントや経験などを共有できる場所です。Ultimate Multisite Community にアクセスするには、https://community.ultimatemultisite.com/home に移動してください。
 
-ウェルカムページで「**creating your account here**」リンクへ進んでください。
+ウェルカムページで「**creating your account here** 」リンクに移動します。
 
-<!-- Screenshot unavailable: Community welcome page with creating your account link -->
+<!-- スクリーンショット利用不可: アカウント作成リンクがある Community ウェルカムページ -->
 
-登録ページにリダイレクトされます。ここでユーザー名、メールアドレス、パスワードを入力してください。Captchaを完了し、**Register** ボタンをクリックします。
+登録ページにリダイレクトされます。ここで、ユーザー名、メールアドレス、パスワードを入力する必要があります。Captcha を行い、**Register** ボタンをクリックします。
 
-<!-- Screenshot unavailable: Community register page with username, email, password fields and Captcha -->
+<!-- スクリーンショット利用不可: ユーザー名、メール、パスワード欄と Captcha がある Community 登録ページ -->
 
-登録後、プロフィール作成に進みます。このページで写真をアップロードし、フルネームを入力し、簡単な自己紹介を書いたりします。また、ソーシャルメディアリンクを追加し、アカウントの権限を設定してください。
+登録後は、プロフィールを作成します。このページでは、写真をアップロードし、氏名を入力し、短い自己紹介を書くことなどができます。また、ソーシャルメディアのリンクを追加し、Account の権限を設定します。
 
-<!-- Screenshot unavailable: Community profile creation page with photo upload and bio fields -->
+<!-- スクリーンショット利用不可: 写真アップロードと自己紹介欄がある Community プロフィール作成ページ -->
 
-今、あなたは「Introductions」チャンネルにいます。ここで自己紹介をしたり、他のメンバーについて少し知ることができます。**New Post** ボタンをクリックして投稿を作成できます。
+これで「Introductions」チャンネルにいます。ここでは自己紹介をしたり、他のメンバーについて少し知ることができます。**New Post** ボタンをクリックして投稿を作成できます。
 
-<!-- Screenshot unavailable: Community Introductions channel with New Post button -->
+<!-- スクリーンショット利用不可: New Post ボタンがある Community Introductions チャンネル -->
 
-Loungeセクションのチャンネルと「Dev Logs」チャンネルは誰でも利用できます。ただし、コミュニティ内の他のチャンネルにアクセスするには特別な権限が必要です。
+Lounge セクションのチャンネルと「Dev Logs」チャンネルは誰でも利用できます。ただし、コミュニティ内の他のチャンネルにアクセスするには特別な権限が必要です。
 
-<!-- Screenshot unavailable: Community channels showing Lounge section and Dev Logs channel -->
+<!-- スクリーンショット利用不可: Lounge セクションと Dev Logs チャンネルを表示する Community チャンネル -->
 
-このアクセスは、アクティブなUltimate Multisiteライセンスキーを提供いただいた時点で付与されます。実行するには、任意のプライベートチャンネルリンクをクリックし、**Unlock** ボタンを押してください。
+このアクセス権は、有効な Ultimate Multisite ライセンスキーを提供すると付与されます。行うには、任意のプライベートチャンネルリンクをクリックし、その後 **Unlock** ボタンをクリックします。
 
-<!-- Screenshot unavailable: Community private channel with Unlock button -->
+<!-- スクリーンショット利用不可: Unlock ボタンがある Community プライベートチャンネル -->
 
-アンロックアクセスページにリダイレクトされます。Ultimate Multisiteライセンスキーを入力し、Unlock Access ボタンをクリックしてください：
+アクセス解除ページにリダイレクトされます。Ultimate Multisite ライセンスキーを入力し、Unlock Access ボタンをクリックしてください。
 
-<!-- Screenshot unavailable: Community unlock access page with license key input -->
+<!-- スクリーンショット利用不可: ライセンスキー入力がある Community アクセス解除ページ -->
 
-ライセンスが検証され、プライベートチャンネルにアクセスできるようになります。このプロセスは最大24時間かかる場合がありますので、リンクをクリックしてコミュニティに戻り、処理中も他のスペースをお楽しみください。
+ライセンスが検証され、プライベートチャンネルにアクセスできるようになります。この処理には最大24時間かかる場合があるため、リンクをクリックしてコミュニティに戻り、リクエストの処理中は他のスペースをお楽しみください。
 
-<!-- Screenshot unavailable: Community license validation confirmation page -->
+<!-- スクリーンショット利用不可: Community ライセンス検証確認ページ -->

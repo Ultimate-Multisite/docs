@@ -3,19 +3,19 @@ title: Stripe'ı Kurmak
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'i Kurma (v2)
+# Stripe Gateway'i Kurma (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ÖNEMLİ QAYDALI: Bu maqale Ultimate Multisite versiyası 2.x haqida məlumat berir.**_
 
 Ödəniş ayarlar səhifədə ödəniş üsullarının dört növünü aktiv etdirə bilərsiniz: Stripe, Stripe Checkout, PayPal və Manual (qo'lda). Bu maqolada biz **Stripe** bilan qanday integratsiya qilishni ko'rib chiqamiz.
 
-## Stripe-ni Faollashtirish
+## Stripe-ni Faollashtirish {#enabling-stripe}
 
 Stripe-ni tarmog'ingizdagi mavjud to'lov eshollari sifatida faollashtirish uchun **Ultimate Multisite > Settings > Payments** ga kiring va "Active Payment Gateways" (Faol To'lov Eshollari) bo'limidagi **Stripe** yoki **Stripe Checkout** yonidagi tugmani belgilang.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Bu usul to'lov jarayoni davomida kredit karta raqamini kiritish uchun joy ko'rsatadi.
 
@@ -25,7 +25,7 @@ Stripe-ni tarmog'ingizdagi mavjud to'lov eshollari sifatida faollashtirish uchun
 
 ![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
 
-### Stripe API kalitlarini olish
+### Stripe API kalitlarini olish {#setting-up-stripe-webhook}
 
 Stripe to'lov eshollari sifatida faollashtirilgandan so'ng, siz **Stripe Publishable Key** va **Stripe Secret Key** maydonlarini to'ldirishingiz kerak bo'ladi. Buni Stripe hisobingizga kirib kiritishingiz mumkin.
 

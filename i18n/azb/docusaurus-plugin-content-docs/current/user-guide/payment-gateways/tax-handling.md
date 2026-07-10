@@ -1,119 +1,120 @@
 ---
-title: Tax Management
+title: مالیات ایداره‌سی
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergi Yönetimi
+# مالیاتین ایداره اولونماسی {#tax-handling}
 
-Ultimate Multisite, çekirdek eklentimize entegre edilmiş bir vergi toplama modülüne sahiptir. Bu nedenle, planlarınız, paketleriniz ve hizmetleriniz için satış vergisi toplamanız gerektiğinde, herhangi bir add-on kurmak zorunda kalmadan bunu kolayca yapabilirsiniz.
+Ultimate Multisiteین اصلی پلاگینیمیزین ایچینده مالیات توپلاما مودولو وار، اونا گؤره پلن‌لرینیز، پاکت‌لرینیز و خیدمت‌لرینیزده ساتیش مالیاتلاری توپلاماغا احتیاجینیز اولسا، هئچ بیر اضافه قورماقدان آسانلیقلا بونو ائده بیلرسینیز.
 
-Avrupa'da bulunan şirketler için, **KDV** uyumluluğunu daha iyi desteklemek amacıyla araçlar ve özellikler ekleyen bir **add-on** sunuyoruz.
+آوروپادا یئرلشن شرکت‌لر اوچون، VAT اویغونلوغونو داها یاخشی **دستکلماک** اوچون آلت‌لر و اؤزللیک‌لر آرتیران بیر **اضافه** تقدیم ائدیریک.
 
-Ultimate Multisite, vergileri sizin adınıza hükümete beyan etmez veya yatırmaz; biz sadece işlem anında uygun vergileri toplamanıza yardımcı oluruz. **Vergileri yatırma sorumluluğu hala size aittir.**
+Ultimate Multisite سیزین یئرینیزه دؤوله‌ته مالیات فایل ائتمیر یا اؤدمور؛ بیز سادجه معامله زامانی اویغون مالیاتلاری توپلاماغا کؤمک ائدیریک. **یئنه ده مالیاتلاری اؤزونوز اؤدمه‌لی‌سینیز.**
 
-## Vergi Toplamayı Etkinleştirme
+## مالیات توپلامانی فعال ائتمک {#enabling-tax-collection}
 
-Vergi toplama varsayılan olarak etkin değildir. Bunu etkinleştirmek için **Ultimate Multisite > Ayarlar > Vergiler** sayfasına gitmeli ve "Enable Taxes" ayarını açmanız gerekir.
+مالیات توپلاما پیش‌فرض فعال دئییل. اونو فعال ائتمک اوچون **Ultimate Multisite > تنظیمات > مالیاتلار** بؤلمه‌سینه گئدیب مالیاتلاری فعال ائت تنظیمینی فعال ائتمه‌لی‌سینیز.
 
-![Tax settings page'deki Enable Taxes düğmesi](/img/config/settings-taxes-enable.png)
+![مالیات تنظیمات صفحه‌سینین یوخاریسیندا مالیاتلاری فعال ائت دؤیمه‌سی](/img/config/settings-taxes-enable.png)
 
-İşte vergi ayarları sayfasının tam görünümü:
+مالیات تنظیمات صفحه‌سینین تام گؤرونوشو:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![مالیات تنظیماتینین تام صفحه‌سی](/img/config/settings-taxes-full.png)
 
-Ayrıca, ürünler için vergi ayarlarını da görebilirsiniz:
+تک‌تک محصوللار اوچون مالیات تنظیماتینا دا باخا بیلرسینیز:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![محصوللار اوچون مالیات تنظیماتلاری](/img/config/settings-taxes.png)
 
-### Vergi Hariç mi, Vergi Dahil mi
+### مالیات خارج‌ده در برابر مالیات داخل‌ده {#tax-excluded-vs-tax-included}
 
-Varsayılan olarak, tüm ürün fiyatlarınız vergi hariçtir, bu da vergilerin ürün fiyatına **dahil olmadığı** anlamına gelir. Eğer bir müşterinin belirli bir alışveriş için vergi ödemesi gerektiğine karar verirsek, vergileri ara toplamın **üzerine** ekleriz.
+پیش‌فرض اولاراق، بوتون محصول قیمت‌لرینیز مالیات خارج‌ده‌دیر، یعنی مالیاتلار محصولون قیمتینه **داخل دئییل**. بیر موشتری‌نین وئریلن آلیشدا مالیات اؤدمه‌لی اولدوغونو معین ائتسک، مالیاتلاری آلت‌جمعین **اوستونه** آرتیراجاغیق.
 
-Vergilerin ürün fiyatınıza dahil olmasını tercih ederseniz, **Inclusive Tax** ayarını etkinleştirerek bunu yapabilirsiniz.
+مالیاتلارین محصولون قیمتینه داخل اولماسینی ترجیح ائدیرسینیزسه، **داخل مالیات** تنظیمینی فعال ائده بیلرسینیز.
 
-![Enable Taxes ayarının altındaki Inclusive Tax düğmesi](/img/config/settings-taxes-inclusive.png)
+![مالیاتلاری فعال ائت تنظیمینین آلتین‌دا داخل مالیات دؤیمه سطری](/img/config/settings-taxes-inclusive.png)
 
-Yapılan değişiklikleri **kaydetmeyi** unutmayın.
+ائدیییز دَییشیکلیک‌لری **ساخلاغی** اونوت مایین.
 
 ###
 
-## Vergi Oranları Oluşturma
+## مالیات نرخ‌لاری یاراتماق {#creating-tax-rates}
 
-Vergi Toplamayı etkinleştirdikten sonra, vergi oranlarını oluşturmak için vergi oranları düzenleyicimizi kullanmanız gerekecektir.
+مالیات توپلامانی فعال ائتدیکدن سونرا، مالیات نرخ‌لاری ائدیتروموزدن ایستیفاده ائده‌رک خاص یئرلر اوچون مالیات نرخ‌لاری یاراتمالیسینیز.
 
-Düzenleyiciye, Vergi ayarları sayfasının kenar çubuğundaki **Manage Tax Rates** düğmesine tıklayarak ulaşabilirsiniz.
+ائدیتره مالیات تنظیمات صفحه‌سینین یان بؤلمه‌سینده‌کی **مالیات نرخ‌لارینی ایداره ائت** دؤیمه‌سینه باساراق گیریشه بیلرسینیز.
 
-![Tax Rates panelindeki Manage Tax Rates bağlantısı](/img/config/settings-taxes-manage-rates.png)
+![تنظیمات صفحه‌سینده مالیات نرخ‌لاری پانلینده مالیات نرخ‌لارینی ایداره ائت لینکی](/img/config/settings-taxes-manage-rates.png)
 
-Vergi oranları düzenleyici sayfasında, **Add new Row** düğmesine tıklayarak yeni Vergi Oranları ekleyebilirsiniz.
+مالیات نرخ‌لاری ائدیتر صفحه‌سینده، **یئنی سطر آرتیر** دؤیمه‌سینه باساراق یئنی مالیات نرخ‌لاری آرتیرا بیلرسینیز.
 
-![Add new Row düğmeli vergi oranları düzenleyici tablosu](/img/config/tax-rates-editor.png)
+![یوخاریسیندا یئنی سطر آرتیر دؤیمه‌سی اولان مالیات نرخ‌لاری ائدیتر جدولی](/img/config/tax-rates-editor.png)
 
-Her vergi oranına bir **başlık** (faturada kullanılır) vermeniz gerekecek. Ardından, bu verginin hangi **ülkede** (zorunlu), hangi **eyalette** ve hangi **şehirde** (her ikisi de isteğe bağlı) uygulanacağını seçebilirsiniz. Son olarak, **yüzde olarak vergi oranını** ekleyin.
+هر مالیات نرخینه بیر **باشلیق** وئرمه‌لی‌سینیز (فاکتورلاردا ایشله‌نیر). سونرا بو مالیاتین آلیناجاغی **اؤلکه**نی (لازیمی)، **ایالت،** و **شهری** (هر ایکی‌سی اختیاری) سئچه بیلرسینیز. آخیرندا **مالیات نرخینی فاییزله** آرتیرین.
 
-### Vergi Kategorileri
+### مالیات کاتئقوریالاری {#tax-categories}
 
-Ayrıca, farklı ürün türleri için farklı vergi oranları eklemek amacıyla birden fazla Vergi Kategorisi oluşturabilirsiniz.
+آیری محصول نؤوع‌لری اوچون آیری مالیات نرخ‌لاری آرتیرماق اوچون، بیر نئچه مالیات کاتئقوریاسی دا یارادا بیلرسینیز.
 
-**Add new Tax Category** düğmesine tıklayın, ardından kategorinizin adını yazın ve **Create** düğmesine basın.
+**یئنی مالیات کاتئقوریاسی آرتیر** اوستونه باسین، سونرا کاتئقوریانیزین آدینی یازین و **یارات** باسین.
 
-![tax rates editor'daki Add new Tax Category düğmesi](/img/config/tax-categories-add.png)
+![مالیات نرخ‌لاری ائدیتر صفحه‌سینین یوخاریسیندا یئنی مالیات کاتئقوریاسی آرتیر دؤیمه‌سی](/img/config/tax-categories-add.png)
 
-![create category modal'daki Tax Category Name giriş alanı](/img/config/tax-categories-create-modal.png)
+![کاتئقوریا یاراتما مودالیندا مالیات کاتئقوریاسی آدی داخیل ائتمه ساحه‌سی](/img/config/tax-categories-create-modal.png)
 
-Kategoriler arasında gezinmek için **Switch** düğmesine tıklayın ve yeni vergiler eklemek istediğiniz kategoriyi seçin.
+کاتئقوریالار آراسیندا گزینمک اوچون **دَییشدیر** اوستونه باسین و یئنی مالیاتلار آرتیرماق ایسته‌دیییز کاتئقوریانی سئچین.
 
-![tax categories arasında geçiş yapmak için Switch açılır düğmesi](/img/config/tax-categories-switch.png)
+![مالیات کاتئقوریالاری آراسیندا دَییشمک اوچون دَییشدیر آچیلا‌ن دؤیمه‌سی](/img/config/tax-categories-switch.png)
 
-![Mevcut kategorileri gösteren tax category selector açılır menüsü](/img/config/tax-categories-select.png)
+![موجود کاتئقوریالاری گؤسترن مالیات کاتئقوریاسی سئچن آچیلا‌ن لیستی](/img/config/tax-categories-select.png)
 
-Belirli bir ürün için vergi kategorisini, **Ürün düzenleme sayfasına** giderek ve ardından Vergiler sekmesine tıklayarak ayarlayabilirsiniz.
+خاص بیر محصول اوچون مالیات کاتئقوریاسینی **محصول دوزنلمه صفحه‌سی**نه و سونرا مالیاتلار تبینه گئده‌رک تنظیم ائده بیلرسینیز.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![مالیات کاتئقوریاسی و مالیات‌لی اولما دؤیمه‌سی ایله محصول مالیاتلاری تبی](/img/config/product-taxes.png)
 
-Aynı ekranda, Ultimate Multisite'ın bu ürüne vergi toplamaması gerektiğini bildirmesi için **Is Taxable?** düğmesini kapatabilirsiniz.
+همین صفحه‌ده، **مالیات‌لی‌دیر؟** دؤیمه‌سینی سؤندوره‌ره‌ک Ultimate Multisiteا بیلدیره بیلرسینیز کی بو وئریلن محصولدان مالیات توپلامامالیدیر.
 
-## Avrupa KDV Desteği
+## آوروپا VAT دسته‌یی {#european-vat-support}
 
-Daha önce bahsettiğimiz gibi, Avrupa KDV düzenlemeleri nedeniyle ek gereksinimleri olan AB'deki müşteriler için bir add-on mevcuttur.
+قبلاً دئدیییمیز کیمی، آوروپا بیرلییینده‌کی موشتریلر اوچون موجود بیر اضافه‌میز وار؛ چونکی آوروپا VAT قانونلارینا گؤره اضافی احتیاجلاری وار.
 
-KDV araçlarımız birkaç önemli konuda yardımcı olur:
+VAT آلت‌لاریمیز بیر نئچه اؤنم‌لی ایشده کؤمک ائدیر:
 
-*   AB KDV oranlarının kolay yüklenmesi;
-*   KDV Numarası toplama ve doğrulaması - ve KDV muafiyeti olan kuruluşlar (geçerli KDV numarasına sahip şirketler gibi) için ters kayıt mekanizması (reverse charging);
+  * آوروپا بیرلییی VAT نرخ‌لارینین آسان یوکلنمه‌سی؛
 
-Bu add-onu kurmak için **Ultimate Multisite > Ayarlar** sayfasına gidin ve ardından kenar çubuktaki **Check our Add-ons** bağlantısına tıklayın.
+  * VAT نؤمره‌سینین توپلانماسی و یوخلانماسی - و VATدان معاف قوروملار اوچون تَرس حِسابلاما (مسلاً معتبر VAT نؤمره‌سی اولان شرکت‌لر)؛
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+او اضافه‌نی قورماق اوچون **Ultimate Multisite > تنظیمات** بؤلمه‌سینه گئدین و سونرا یان بؤلمه‌ده‌کی **اضافه‌لریمیزه باخین** لینکینه باسین.
 
-Add-on sayfamıza yönlendirileceksiniz. Orada **Ultimate Multisite VAT add-on** araması yapabilir ve kurabilirsiniz.
+![اضافه‌لریمیزه باخین لینکی ایله تنظیمات صفحه‌سی یان بؤلمه‌سی](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: Add-ons page'deki VAT add-on karosu -->
+اضافه‌لر صفحه‌میزه یؤنلندیریله‌جه‌کسینیز. اورادا **Ultimate Multisite VAT اضافه‌سی**نی آختاریب قورا بیلرسینیز.
+
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Ardından, **Network Admin > Plugins** bölümüne gidin ve bu add-onu ağ genelinde etkinleştirin.
+سونرا، **شبکه یؤنتمی > پلاگین‌لر** بؤلمه‌سینه گئدین و او اضافه‌نی بوتون شبکه‌ده فعال ائدین.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-**Vergi Ayarları** sekmesine geri döndüğünüzde, yeni seçenekler göreceksiniz. Yeni KDV araçlarını etkinleştirmek için **Enable VAT Support** düğmesini açın. Ayarlarınızı **kaydetmeyi** unutmayın!
+**مالیات تنظیمات تبی**نه قاییتسانیز، یئنی سئچیم‌لری گؤره‌جه‌کسینیز. یئنی VAT آلت‌لارینی فعال ائتمک اوچون **VAT دسته‌یینی فعال ائت** سئچیمینی فعال ائدین. تنظیماتینیزی **ساخلاغی** اونوت مایین!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### KDV Vergi Oranlarını Çekme
+### VAT مالیات نرخ‌لارینی چکمک {#pulling-on-vat-tax-rates}
 
-Entegrasyonumuzun eklediği araçlardan biri, AB üye devletleri için vergi oranlarını yükleme yeteneğidir. Bu, AB KDV desteği etkinleştirildikten sonra vergi oranları düzenleyici sayfasını ziyaret edilerek yapılabilir.
+اینتگراسیامیزین آرتیردیغی آلت‌لاردان بیری، آوروپا بیرلییی عضو دؤوله‌تلری اوچون مالیات نرخ‌لارینی یوکلمه ایماکانیدیر. بونو آوروپا بیرلییی VAT دسته‌یینی فعال ائتدیکدن سونرا مالیات نرخ‌لاری ائدیتر صفحه‌سینه گئده‌رک ائتمک اولار.
 
-Sayfanın altında KDV çekme seçeneklerini göreceksiniz. Bir oran türü seçip **Update EU VAT Rates** düğmesine tıklamak, her AB üye devleti için vergi oranlarını içeren tabloyu çekecek ve otomatik olarak dolduracaktır. Daha sonra sadece kaydetmeniz yeterli olacaktır.
+صفحه‌نین آلتین‌دا VAT چکمه سئچیم‌لرینی گؤره‌جه‌کسینیز. بیر نرخ نؤوعو سئچیب **آوروپا بیرلییی VAT نرخ‌لارینی یئنیله** دؤیمه‌سینه باسماق، هر آوروپا بیرلییی عضو دؤوله‌تی اوچون مالیات نرخ‌لارینی چکیب جدولی خودکار دولدوراجاق. سونرا فقط اونو ساخلاماغینیز یئتَر.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![مالیات نرخ‌لاری ائدیتر صفحه‌سینین آلتین‌دا آوروپا بیرلییی VAT نرخ‌لارینی یئنیله دؤیمه‌سی](/img/config/tax-rates-vat-pull.png)
 
-Çekildikten sonra değerleri düzenleyebilirsiniz. Bunu yapmak için, sadece düzenlemek istediğiniz tablo satırını düzenleyip yeni değerleri kaydetmek için tıklamanız yeterlidir.
+نرخ‌لاری چکدیکدن سونرا دَیَرلری دوزنله‌یه ده بیلرسینیز. بونو ائتمک اوچون، لازیم اولان جدول سطرینی سادجه دوزنله‌یین و یئنی دَیَرلری ساخلاماغا باسین.
 
-### KDV Doğrulama
+### VAT یوخلاماسی {#vat-validation}
 
-KDV desteği etkinleştirildiğinde, Ultimate Multisite ödeme formuna, fatura adresi alanının altına ek bir alan ekleyecektir. Bu alan yalnızca AB'de bulunan müşteriler için görünecektir.
+VAT دسته‌یی فعال اولاندا، Ultimate Multisite اؤدنی‌یه گئدیش فورماسینا، فاکتورا آدرسی ساحه‌سینین آلتین‌دا اضافی بیر ساحه آرتیراجاق. بو ساحه فقط آوروپا بیرلییینده یئرلشن موشتریلر اوچون گؤرونه‌جه‌ک.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite daha sonra KDV Numarasını doğrulayacak ve geçerli çıkarsa, ters kayıt mekanizması uygulanacak ve o sipariş için vergi oranı %0 olarak ayarlanacaktır.
+Ultimate Multisite سونرا VAT Number-ی یوخلایاجاق و اگر گئچرلی اولسا، reverse charge مکانیزمی او سیفاریشه اویغولاناجاق و وئرگی نرخی 0% اولاجاق.

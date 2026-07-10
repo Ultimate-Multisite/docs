@@ -4,13 +4,13 @@ title: Действие - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Действие: wu_checkout_order_created
+# Действие: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 Срабатывает после полной сборки заказа.
 
 Дополнения могут использовать это для создания вторичных членств для продуктов с независимыми циклами выставления счетов.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 | $membership | `\WP_Ultimo\Models\Membership` | Основное членство. |
 | $payment | `\WP_Ultimo\Models\Payment` | Платёж. |
 
-### С версии
+### С версии {#since}
 
 - 2.5.0
 
-### Источник
+### Источник {#source}
 
 Определено в `inc/checkout/class-checkout.php` на строке 891

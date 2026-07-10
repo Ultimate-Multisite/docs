@@ -3,11 +3,11 @@ title: Boafy Fandaharam-potoana sy Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Ny Gratis AI Agent v1.5.0 dia mitondra ny **Plugin Builder & Sandbox System**, izay ahafahanao mamorona, manao activata ary mitantana WordPress plugins ao amin'ny tambajotra anao — izany rehetra izany dia ataon'ny tontolo sandbox azo antoka sy misaraka.
 
-## Fandaharam-beo (Overview)
+## Fandaharam-beo (Overview) {#overview}
 
 Ny Plugin Builder dia ahafahan'ny asistantra AI manoratra plugin WordPress manokana mifanaraka amin'ny fangatahana an-teny mahazatra. Ireo plugin namboarina dia voamarina, voatahiry ary natao activata ao anatin'ny layer sandbox alohan'ny hampahazoana fiantraikany amin'ny fiasan'ny tranokala tena izy.
 
@@ -17,7 +17,7 @@ Ireto ny ohatra fampiasana azy:
 - Fandefasana (prototyping) ireo singa izay mila WordPress hooks na custom post types.
 - Famoronana script automation fohy ho an'ny asa maro (batch operations).
 
-## Famoronana Plugin amin'ny alalan'ny AI
+## Famoronana Plugin amin'ny alalan'ny AI {#generating-a-plugin-via-ai}
 
 Mba hanamboarana plugin, afaka manokatra ny interface chat an'ny Gratis AI Agent ianao ary manoratra izay ilainao. Ohatra:
 
@@ -32,7 +32,7 @@ Ny AI dia hatao ireto:
 
 Afaka manatsara ny vokatra ianao amin'ny alalan'ny fanazavana bebe kokoa ao anatin'ny resaka mitovy taloha alohan'ny hanaovana activata.
 
-## Fanatanterahana ao anatin'ny Sandbox (Sandbox Activation)
+## Fanatanterahana ao anatin'ny Sandbox (Sandbox Activation) {#sandbox-activation}
 
 Ny fanatanterahana plugin namboarina ao anatin'ny sandbox dia hafa noho ny fanatanterahany eo amin'ny tambajotra tena izy. Ny sandbox:
 

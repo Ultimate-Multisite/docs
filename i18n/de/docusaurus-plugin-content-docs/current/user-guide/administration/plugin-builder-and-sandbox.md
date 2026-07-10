@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 führt das **Plugin Builder & Sandbox System** ein. Damit kann der KI-Assistent WordPress-Plugins in Ihrem Netzwerk generieren, aktivieren und verwalten – und das alles innerhalb einer sicheren, isolierten Sandbox-Umgebung.
 
-## Überblick
+## Überblick {#overview}
 
 Der Plugin Builder ermöglicht es dem KI-Assistenten, auf natürliche Sprachanfragen hin benutzerdefinierte WordPress-Plugins zu schreiben. Die generierten Plugins werden validiert, gespeichert und in einer Sandbox-Schicht aktiviert, bevor sie jemals die Funktionalität der Live-Seite beeinflussen.
 
@@ -17,7 +17,7 @@ Anwendungsfälle sind unter anderem:
 - Prototyping von Funktionen, die WordPress Hooks oder benutzerdefinierte Beitragstypen erfordern.
 - Erstellung kurzlebiger Automatisierungsskripte für Stapeloperationen.
 
-## Generieren eines Plugins mittels KI
+## Generieren eines Plugins mittels KI {#generating-a-plugin-via-ai}
 
 Um ein Plugin zu generieren, öffnen Sie die Chat-Oberfläche des Gratis AI Agent und beschreiben Sie, was Sie benötigen. Zum Beispiel:
 
@@ -32,7 +32,7 @@ Die KI wird:
 
 Sie können das Ergebnis verfeinern, indem Sie vor der Aktivierung eine Folgefrage im selben Gesprächs-Thread stellen.
 
-## Sandbox-Aktivierung
+## Sandbox-Aktivierung {#sandbox-activation}
 
 Die Aktivierung eines generierten Plugins in der Sandbox unterscheidet sich von der Aktivierung im Live-Netzwerk. Die Sandbox:
 
@@ -48,7 +48,7 @@ Um ein Plugin in der Sandbox zu aktivieren, klicken Sie auf den Button **In Sand
 
 Eine Statusmeldung bestätigt, ob die Aktivierung erfolgreich war oder fehlgeschlagen ist. Bei einem Fehler wird das Fehlerprotokoll im Chat-Thread angezeigt.
 
-## Verwalten von generierten Plugins
+## Verwalten von generierten Plugins {#managing-generated-plugins}
 
 Generierte Plugins werden unter **Gratis AI Agent → Plugin Builder → Manage Plugins** aufgelistet. Von diesem Bildschirm aus können Sie:
 
@@ -64,7 +64,7 @@ Generierte Plugins werden unter **Gratis AI Agent → Plugin Builder → Manage 
 **Im Netzwerk installieren** stellt das generierte Plugin auf Ihr Live-WordPress-Multisite bereit. Überprüfen Sie den Plugin-Code, bevor Sie fortfahren. Gratis AI Agent fordert Sie vor Abschluss einer Live-Installation zur Bestätigung auf.
 :::
 
-## Installation eines generierten Plugins im Netzwerk
+## Installation eines generierten Plugins im Netzwerk {#installing-a-generated-plugin-on-the-network}
 
 Wenn Sie mit einem in der Sandbox getesteten Plugin zufrieden sind, können Sie es im Live-Netzwerk installieren:
 
@@ -78,7 +78,7 @@ Alternativ verwenden Sie den Slash-Befehl in der Chat-Oberfläche:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin-Updates
+## Plugin-Updates {#plugin-updates}
 
 Um ein generiertes Plugin zu aktualisieren, beschreiben Sie die Änderung in einem neuen Gespräch dem KI-Assistenten:
 
@@ -86,7 +86,7 @@ Um ein generiertes Plugin zu aktualisieren, beschreiben Sie die Änderung in ein
 
 Die KI generiert eine neue Version, die zusammen mit der aktuellen Version in der Sandbox erscheint. Sie überprüfen den Diff und bestätigen, bevor das Update angewendet wird.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Der Plugin Builder verwendet einen integrierten **HookScanner**, um die Hooks und Filter zu analysieren, die jedes generierte Plugin registriert. Die Ausgabe des HookScanners wird in der Chat-Antwort angezeigt und enthält:
 
@@ -96,7 +96,7 @@ Der Plugin Builder verwendet einen integrierten **HookScanner**, um die Hooks un
 
 Dies hilft Ihnen, das Verhalten eines Plugins zu verstehen, bevor Sie es aktivieren.
 
-## Sicherheitsaspekte
+## Sicherheitsaspekte {#security-considerations}
 
 - Generierte Plugins werden separat von manuell installierten Plugins gespeichert und sind nicht über den Standard-WordPress-Plugin-Verwaltungsbildschirm zugänglich, bis Sie sie explizit im Netzwerk installieren.
 - Die Sandbox verwendet Pfadvalidierung, um Verzeichnisdurchläufe zu verhindern, wenn Plugin-Dateien geschrieben werden.

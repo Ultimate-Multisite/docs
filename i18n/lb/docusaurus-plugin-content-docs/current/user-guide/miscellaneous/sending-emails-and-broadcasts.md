@@ -1,125 +1,124 @@
 ---
-title: E-Mails und Broadcasts verschicke
+title: E-Mailen a Rundsendunge schécken
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-Mails und Broadcasts verschicke (v2)
+# E-Mailen a Broadcasts schécken (v2) {#sending-emails-and-broadcasts-v2}
 
-_**WICHTIGE NOTIZ: Däri Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
+_**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
-Ultimate Multisite het e Funktion, wo dir erlaubt, mit dine Kunde in Kontakt z'bliibe, indem du en E-Mail an en spezifische Benutzer oder en Gruppe vo Benutzer schicksch und au Meldige uf ihrem Admin-Dashboard verschicksch, um Ankündige z'verbreite.
+Ultimate Multisite kënnt mat enger Funktioun, déi Iech erlaabt mat Äre Clienten ze kommunizéieren, andeems Dir eng E-Mail un e gezielte Benotzer oder eng Grupp vu Benotzer schéckt, souwéi Hiwäiser op hirem Admin-Dashboard ze schécken, fir Ukënnegungen ze broadcasten
 
-## Füeg Admin-Meldige zu de Dashboard vo dine Kunde mit Broadcasts hinzu
+## Admin-Hiwäiser mat Broadcasts op den Dashboard vun Äre Clienten derbäisetzen {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Mit de Ultimate Multisite Broadcast-Funktion chasch du **Admin-Meldige** uf s'Admin-Dashboard vom Benutzer vo dim Subsite hinzufüge.
+Mat der Ultimate Multisite Broadcast-Funktioun kënnt Dir **Admin-Hiwäiser** op den Admin-Dashboard vun der Ënnersäit vun Ärem Benotzer derbäisetzen.
 
-Das isch extrem hilfreich, falls du en Ankündigung mache muesch, wie zum Bischpil über Systemwartig oder neui Produkt oder Service a dini bestehende Benutzer. So wird d'Admin-Meldig uf de Dashboard vom Benutzer usgseh.
+Dëst ass extrem hëllefräich, wann Dir eng Ukënnegung maache musst, wéi Systemënnerhalt oder d'Ubidde vun neie Produkter oder Servicer un Är bestehend Benotzer. Esou wäert den Admin-Hiweis um Dashboard vun Ärem Benotzer ausgesinn.
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- Screenshot net verfügbar: Admin-Hiweis-Broadcast um Dashboard vun enger Clienten-Ënnersäit gewisen -->
 
-Um en Admin-Meldig z'starte, gaht du zu dim Netzwerk-Admin-Dashboard und unter em Menü **Ultimate Multisite** findsch du d'Option **Broadcasts**.
+Fir en Admin-Hiweis unzefänken, gitt op Ären Netzwierk-Admin-Dashboard an ënner dem **Ultimate Multisite** Menü fannt Dir d'Optioun **Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Broadcasts-Lëschtensäit am Ultimate Multisite Admin](/img/admin/broadcasts-list.png)
 
-Du chasch au bestehendi Broadcasts bearbeite:
+Dir kënnt och bestehend Broadcasts änneren:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Broadcast-Ännerungsinterface](/img/admin/broadcast-edit.png)
 
-Von dere Seite klickst du uf de Knopf **Add Broadcast** obe.
+Vun dëser Säit aus klickt op de **Add Broadcast** Knäppchen uewen.
 
-Das öffnet s'Modal-Fenster zum Hinzufüge vo enere Broadcast, wo du wähle chasch, weli Art vo Broadcast du verschicke möchtisch.
+Dëst mécht d'Add broadcast modalt Fënster op, wou Dir wielen kënnt, wéi eng Zort Broadcast Dir schécke wëllt.
 
-Wähl eifach **Message** us und klick denn uf de Knopf **Next Step**.
+Wielt **Message** a klickt dann op de **Next Step** Knäppchen.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Add broadcast Modal mat der ausgewielter Message-Optioun](/img/admin/broadcast-add-message.png)
 
-S'nächsti Fenster wird dich frage, ob du en **Target customer** oder en **Target product** wähle möchtisch. Beacht, dass du meh als eine Benutzer oder meh als es Produkt uswähle chasch.
+Déi nächst Fënster freet Iech entweder no dem **Target customer** oder **Target product**. Notéiert, datt Dir méi wéi ee Benotzer oder méi wéi ee Produkt auswiele kënnt.
 
-Om e User-Account oder Produkt z'sueche, muesch de Schlüsselwort i s'Feld afange tippe.
+Fir entweder no engem Benotzerkont oder engem Produkt ze sichen, musst Dir ufänken d'Schlësselwuert an d'Feld anzeginn.
 
-Unter em Feld **Message type** chasch d'Farbe vo de Nachricht wähle. Das betont d'Dringlichkeit vo dinere Nachricht.
+Ënner dem **Message type** Feld kënnt Dir d'Faarf vum Hiweis auswielen. Dëst ënnersträicht d'Drénglechkeet vun Ärem Message.
 
-Dänn chasch du uf **Next Step** klicke.
+Duerno kënnt Dir op **Next Step** klicken.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Target customers, Target product a Message type Felder fir e Message-Broadcast](/img/admin/broadcast-message-targets.png)
 
-S'nächsti Fenster isch de Ort, wo du afange chasch, dini Nachricht z'formulieren, indem du s'Thema und de Inhalt/d'Nachricht iigibsch, wo du an d'User ussende wetsch.
+Déi nächst Fënster ass do, wou Dir ufänke kënnt Äre Message ze verfassen, andeems Dir de Betreff an den Inhalt/Message agitt, deen Dir un d'Benotzer broadcaste wëllt.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Betreff vum Broadcast-Message an Inhaltseditor am Verfaassungs-Schrëtt](/img/admin/broadcast-edit.png)
 
-Nachdem du dini Nachricht erstellt hesch, chasch du uf de **Send**-Button drücke.
+Nodeems Dir Äre Message erstallt hutt, kënnt Dir dann op de **Send** Knäppchen drécken.
 
-Und das isch alles. D'Admin-Meldig söll sofort uf em Dashboard vo dim User erschiine.
+An dat ass et. Den Admin-Hiweis soll direkt um Dashboard vun Ärem Benotzer gewise ginn.
 
-## E-Mails a dini Kunde schicke
+## E-Mailen un Är Clienten schécken {#send-emails-to-your-customers}
 
-Mit de Ultimate Multisite Broadcast-Funktion chasch du e E-Mail an dini User schicke. Du hesch d'Option, d'E-Mail nur an spezifischi User z'schicke oder e spezifischi User-Gruppe basierend uf em Produkt oder Plan, wo sie abonniert sind, gezielt aazielä.
+Mat der Ultimate Multisite Broadcast-Funktioun kënnt Dir eng E-Mail un Är Benotzer schécken. Dir hutt d'Méiglechkeet, d'E-Mail nëmmen un spezifesch Benotzer ze schécken oder eng spezifesch Benotzergrupp unzeviséieren, baséiert op dem Produkt oder Plang, ënner deem si abonnéiert sinn.
 
-Um mit eme E-Mail-Broadcast afange, gaht du zu dim Network Admin Dashboard und unter em Ultimate Multisite Menü findsch du d'Option Broadcast.
+Fir en E-Mail-Broadcast unzefänken, gitt op Ären Netzwierk-Admin-Dashboard an ënner dem Ultimate Multisite Menü fannt Dir d'Broadcast Optioun.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Broadcasts-Lëschtensäit als Startpunkt fir en E-Mail-Broadcast benotzt](/img/admin/broadcasts-list.png)
 
-Von dere Seite klickst du uf de Button **Add broadcast** obe.
+Vun dëser Säit aus klickt op de **Add broadcast** Knäppchen uewen.
 
-Das öffnet s'Modal-Fenster Add broadcast, wo du wähle chasch, weli Art vo Broadcast du schicke wetsch. Wähl eifach **Email** us und klick denn uf de Button **Next Step**.
+Dëst mécht d'Add broadcast modalt Fënster op, wou Dir wielen kënnt, wéi eng Zort Broadcast Dir schécke wëllt. Wielt **Email** a klickt dann op de **Next Step** Knäppchen.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Add broadcast Modal mat der ausgewielter Email-Optioun](/img/admin/broadcast-add-email.png)
 
-S'nächsti Fenster wird dich nach em **Target customer** oder **Target product** fröge. Beacht, dass du meh als eine User oder meh als es Produkt wähle chasch.
+Déi nächst Fënster freet Iech entweder no dem **Target customer** oder **Target produc** t. Notéiert, datt Dir méi wéi ee Benotzer oder méi wéi ee Produkt auswiele kënnt.
 
-Om ëch en Sie en Benutzerkonto oder Produkt sueche wëns du de Schlüsselwort i de Feld start tippe.
+Fir entweder no engem Benotzerkont oder engem Produkt ze sichen, musst Dir ufänken d'Schlësselwuert an d'Feld anzeginn.
 
-Allerhin, wéi Dir d'Zielgruppe usgwischt hanner, chënnt Dir **Next Step** anklicke.
+Wann Är Zilgrupp ausgewielt ass, kënnt Dir op **Next Step** klicken.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Auswiel vun Target customers an Target product fir en Email-Broadcast](/img/admin/broadcast-email-targets.png)
 
-D'nächste Fenest isch de Ort, wou Dir d'E-Mail sota setze chönnt, indem Dir de Betreff und de Inhalt/d'Nachricht iitsetzt, wéi Dir a de Benutzer wëll send.
+Déi nächst Fënster ass do, wou Dir ufänke kënnt Är E-Mail ze verfassen, andeems Dir de Betreff an den Inhalt/Message agitt, deen Dir un d'Benotzer schécke wëllt.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- Screenshot net verfügbar: E-Mail-Broadcast Betreff an Inhaltseditor am Verfaassungs-Schrëtt -->
 
-Nachdem Dir Iech fir d'Nachricht erstellt hanner, chönnt Dir de **Send**-Button drücke.
+Nodeems Dir Äre Message erstallt hutt, kënnt Dir op de **Send** Knäppchen drécken.
 
-Und dat isch wie eifach, wéi Dir en E-Mail an Iechi Endbenutzer mit de broadcast Funktioun send.
+An esou einfach ass et, eng E-Mail un Är Endbenotzer mat der Broadcast-Funktioun ze schécken.
 
-## System emails
+## System-E-Mailen {#system-emails}
 
-System emails i Ultimate Multisite sinn déi **automatesch Notifikationen**, déi de System nach bestimmte Aktionen wéi Registrering, Zahld, Domänmapping usw. verschickt. Dës E-Mails chënnt Dir us de Ultimate Multisite Settings bearbeite oder ändere. Es chunnt au mit ere Funktioun mee, wou Dir bestahendi Settings vun enger andere Ultimate Multisite Installation resetten an importé kënnt.
+System-E-Mailen an Ultimate Multisite sinn déi **automatesch Notifikatiounen**, déi vum System no bestëmmten Aktiounen, wéi Registréierung, Bezuelung, Domain-Mapping, asw., geschéckt ginn. Dës E-Maile kënnen aus den Ultimate Multisite Astellungen geännert oder modifizéiert ginn. Et kënnt och mat enger Funktioun, déi Iech erlaabt, bestehend Astellunge vun enger anerer Ultimate Multisite Installatioun zeréckzesetzen an z'importéieren.
 
-### Resetten & Importieren
+### Zerécksetzen & Importéieren {#resetting--importing}
 
-Nee Ultimate Multisite Versionen, wéi och Add-ons, chönnen und wëll sech vo Zitt zu Zitt neie E-Mails registréieren.
+Nei Ultimate Multisite Versiounen, souwéi Add-ons, kënnen a wäerten heiansdo nei E-Mailen registréieren.
 
-Um Konfliktar an de Ort ze verhinderen an ander Problem, **mir füegen d'neie E-Mail-Templates net automatisch als System Emails uf Iechere Installation hinzu**, es sei denn si sinn entscheidend fir d'korrekt Funktioun vun enger bestimmte Funktioun.
+Fir Konflikter an aner Problemer ze vermeiden, **füüge mir déi nei E-Mail-Templates net automatesch als System Emails op Ärer Installatioun derbäi** , ausser si si wichteg fir dat korrekt Fonctionnement vun enger bestëmmter Funktioun.
 
-Allerhin chönnen Super Admins und Agents déi neie registrierte E-Mails via de importer Tool importé. Dëse Prozess schafft e neie System Email mat em Inhalt an de Konfiguratioun vum neien E-Mail Template, wat dem Super Admin d'allne Änderige erlaubet oder si wéi si sinn behalte kann.
+Allerdéngs kënnen Super-Admins an Agenten dës nei registréiert E-Mailen iwwer d'Importer-Tool importéieren. Dee Prozess erstellt eng nei System-E-Mail mam Inhalt an der Konfiguratioun vum neien E-Mail-Template, wat dem Super-Admin erlaabt all Modifikatiounen ze maachen, déi e wëllt, oder se esou ze behalen, wéi se sinn.
 
-#### Wéi mer System emails importé
+#### Wéi System-E-Mailen importéiert ginn {#how-to-import-system-emails}
 
+Gitt op Är Ultimate Multisite Settings Säit a wiesselt op den **Emails** Tab.
 
-Gang zu de Ultimate Multisite Settings-Seite und gaht zur Registerkarte **Emails**.
+![Emails Tab an den Ultimate Multisite Astellungen, deen d'System Emails Sektioun weist](/img/config/settings-emails-tab.png)
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+Dann, an der Säiteläischt, klickt op de **Customize System Emails** Knäppchen.
 
-Dänn, uf de Seitenleist, klickt op de Knopf **Customize System Emails** aa.
+<!-- Screenshot net verfügbar: Customize System Emails Knäppchen am System Emails Säiteläischt-Panel -->
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+Op der System Emails Säit gesitt Dir den **Reset & Import** Aktiounsknäppchen uewen. Wann Dir op dee Knäppchen klickt, soll d'Import- an Zerécksetz-Modalfënster opgoen.
 
-U de System Emails Seite gsehnd Sie obe de Aktionsknopf **Reset & Import**. Wenn Sie druf klickt, sölle sichs es Modal-Fenster zum Import und Zurücksetzen öffne.
+![Reset oder Import Aktiounsknäppchen op der System Emails Admin Säit](/img/admin/system-emails-reset-import.png)
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+Da kënnt Dir d'Import Emails Optiounen ëmschalten, fir ze gesinn, wéi eng System-E-Mailen zur Importatioun verfügbar sinn.
 
-Dänn chönne Sie d'Import Emails Option umschalte, um z'gseh, welchi System E-Mails zum Import verfügbar sind.
+<!-- Screenshot net verfügbar: Modal fir Zerécksetzen an Importéieren mat den Optiounen fir E-Mailen z'importéieren ausgeklappt -->
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+#### System-E-Mailen zerécksetzen {#reseting-system-emails}
 
-#### System E-Mails Zurücksetzen
+Heiansdo mierks du, datt d'Ännerungen, déi s du un enger bestëmmter E-Mail-Schabloun gemaach hues, net méi fir dech funktionéieren an datt s du se op hiren **Standardzoustand** zerécksetze wëlls.
 
-Manchmal merkt Sie, dass d'Änderige, wo Sie an eme bestimmte E-Mail-Template gmacht händ, für Sie nümme funktioniert und Sie s'zur **Standardzustand** zurücksetze wend.
+An esou Fäll hues du zwou Méiglechkeeten: du kanns d'System-E-Mail einfach läschen an erëm importéieren (mat den Instruktiounen hei uewen) - wat Versandmetriken an aner Saache läscht, wouduerch dës Method am mannste recommandéiert ass.
 
-In so Fall händ Sie zwei Möglichkeite: Sie chönne eifach d'System E-Mail lösche und sie wieder importiere (mit de obe beschriebene Schritt) – das löscht aber Send-Metrike und anderi Sache, was die Methode am wenigste bevorzugt.
+Oder du kanns den **Zerécksetzen-&-Import-Tool** benotzen, fir dës E-Mail-Schabloun zeréckzesetzen.
 
-Oder Sie chönne s'**Reset & Import Tool** bruche, um es E-Mail-Template z'zurücksetze.
+Fir eng E-Mail-Schabloun zeréckzesetzen, kanns du d'Schrëtt hei uewen verfollegen, bis du beim Zerécksetzen-&-Import-Tool ukënns, an dann d'Optioun **Zerécksetzen** aktivéieren an d'E-Mailen auswielen, déi s du op hiren Standardinhalt zerécksetze wëlls.
 
-Um es E-Mail-Template z'zurücksetze, chönne Sie d'Schritt obe folge bis Sie s'Reset & Import Tool erreiche, und dann chönne Sie d'Option **Reset** umschalte und die E-Mails wähle, wo Sie uf ihre Standardinhalt zurücksetze wend.
-
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Screenshot net verfügbar: Modal fir Zerécksetzen an Importéieren mat den Optiounen fir E-Mailen zeréckzesetzen ausgeklappt -->

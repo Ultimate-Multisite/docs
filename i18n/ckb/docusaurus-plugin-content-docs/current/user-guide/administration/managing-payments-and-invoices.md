@@ -3,9 +3,9 @@ title: بەرێوەبردنی پارە و فاکچurare
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Manage Payments û Fatura
+# Manage Payments û Fatura {#managing-payments-and-invoices}
 
-## Paramêtreyên Pêşvebirina Pêşvebirin
+## Paramêtreyên Pêşvebirina Pêşvebirin {#payment-settings}
 
 Pêş têkaptina pêşvebirin ji nîşan bidin, pirdana parametreên hatine li ser vekirin. Ragin **Ultimate Multisite → Settings** û klikirê li sekçyonaya **Payment**.
 
@@ -15,7 +15,7 @@ Li vir yek ji paginên pêşvebirin e:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Seçimetên Giştî yên Pêşvebirin
+### Seçimetên Giştî yên Pêşvebirin {#general-payment-options}
 
 Di parametreên giştî de tu dikarin hatine ravekirin:
 
@@ -24,7 +24,7 @@ Di parametreên giştî de tu dikarin hatine ravekirin:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Pêşvebirinên Pagina (Payment Gateways)
+### Pêşvebirinên Pagina (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite piştgirî gelek paginên pêşvebirin dike. Tu dikarin her yek ji wan derxistin û hatine ravekirin ji sekçyonaya Payment settings tab.
 
@@ -40,11 +40,11 @@ Her yek ji wan sekçyonaya ravekirinkir xwe heye ku tu API keys û parametreên 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Modê Sandbox (Sandbox Mode)
+### Modê Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Tu dikarin **Sandbox Mode** derxistin ji bo lêkolînkirina integrasyonê paginê xwe berî ku wê bi kar derxistin bibe. Ji dema sandbox mode derxistin e, heç parastina rast ne hatine kirin.
 
-## Dîtina Pêşvebirin
+## Dîtina Pêşvebirin {#viewing-payments}
 
 Ragin sekçyonaya **Payments** li ser Ultimate Multisite ji bo dîtina hemû transaksiyonên berî bi neteweyê we.
 
@@ -54,7 +54,7 @@ Tu dikarin paginên pêşvebirin bi durum (completed, pending, failed, refunded)
 
 کلیک کردن روی یک پرداخت برای مشاهده جزئیات کامل آن، از جمله اقلام صورتحساب، عضویت مرتبط، اطلاعات مشتری و داده‌های درگاه پرداخت.
 
-## فاکتورها (Invoices)
+## فاکتورها (Invoices) {#invoices}
 
 Ultimate Multisite می‌تواند به طور خودکار فاکتورهایی را برای پرداخت‌ها تولید کند. شما می‌توانید قالب فاکتور و فرمت شماره‌گذاری آن را از تنظیمات پرداخت سفارشی کنید.
 

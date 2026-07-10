@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 देशाच्या प्रशासकीय उपविभागाचे (administrative sub-divisions) चांगले नाव परत करतो.
 
-## पॅरामीटर्स
+## पॅरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | जर आपल्याला शब्दांना कॅपिटल (uppercase) करायचे असेल. |
 | $current_country | `\WP_Ultimo\Country\Country` | सध्याच्या क्लासचे उदाहरण (Instance). |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) या फाईलमध्ये लाइन 250 वर परिभाषित केले आहे.
 
-## Returns
+## Returns {#returns}
 सुधारित उपविभागाचे नाव.

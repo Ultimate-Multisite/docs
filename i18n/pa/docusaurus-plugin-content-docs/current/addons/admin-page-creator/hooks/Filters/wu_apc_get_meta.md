@@ -4,11 +4,11 @@ title: ਫਿਲਟਰ - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Developers ਨੂੰ final values filter ਕਰਨ ਅਤੇ naye processing cases add karne ki ijazat deta hai.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Developers ਨੂੰ final values filter ਕਰਨ ਅਤੇ naye processing cas
 | $meta_type | `string` | Jis meta data ko retrieve karna hai, uska type. |
 | $meta_key | `string` | Meta field ka naam. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) at line 93
 
-## Returns
+## Returns {#returns}
 Naya default value.

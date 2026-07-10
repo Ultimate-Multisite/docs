@@ -1,124 +1,124 @@
 ---
-title: Slanje e-poruka i masovnih obavijesti
+title: Slanje e-mailova i broadcasta
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Slanje e-mailova i obavijesti (v2)
+# Slanje emailova i Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
-Ultimate Multisite dolazi sa funkcijom koja vam omogućava da komunicirate sa svojim klijentima slanjem e-maila ciljanom korisniku ili grupi korisnika, kao i slanjem obavijesti na njihov admin dashboard radi oglašavanja.
+Ultimate Multisite dolazi s funkcijom koja će vam omogućiti da komunicirate sa svojim kupcima slanjem emaila ciljanom korisniku ili grupi korisnika, kao i slanjem obavijesti na njihov admin dashboard radi emitovanja najava
 
-## Dodavanje admin obavijesti na dashboard vaših klijenta putem Broadcasts-a
+## Dodajte admin obavijesti na dashboard svojih kupaca uz Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Koristeći funkciju Broadcasts u Ultimate Multisite-u, možete dodati **admin obavijesti** na admin dashboard subsite-a vašeg korisnika.
+Korištenjem Ultimate Multisite broadcast funkcije, možete dodati **admin obavijesti** na admin dashboard podstranice svog korisnika.
 
-Ovo je izuzetno korisno ako trebate objaviti neku obavijest, poput održavanja sistema ili predstavljanja novih proizvoda ili usluga vašim postojećim korisnicima. Tako će izgledati admin obavijest na dashboard-u vašeg korisnika.
+Ovo je izuzetno korisno ako trebate objaviti najavu poput održavanja sistema ili ponude novih proizvoda ili usluga svojim postojećim korisnicima. Ovako će admin obavijest izgledati na dashboardu vašeg korisnika.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Da biste kreirali admin obavijest, idite na admin dashboard vaše mreže i pod menijem **Ultimate Multisite** pronaći ćete opciju **Broadcasts**.
+Da biste pokrenuli admin obavijest, idite na svoj mrežni admin dashboard i ispod **Ultimate Multisite** menija pronaći ćete opciju **Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Stranica liste Broadcasts u Ultimate Multisite adminu](/img/admin/broadcasts-list.png)
 
-Možete uređivati i postojeće obavijesti:
+Također možete uređivati postojeće broadcasts:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Interfejs za uređivanje broadcasta](/img/admin/broadcast-edit.png)
 
-Sa ove stranice, kliknite na gumb **Add Broadcast** (Dodaj obavijest) na vrhu.
+Na ovoj stranici kliknite dugme **Add Broadcast** na vrhu.
 
-Ovo će otvoriti modalni prozor za dodavanje obavijesti gdje možete odabrati koji tip obavijesti želite poslati.
+Ovo će otvoriti modalni prozor za dodavanje broadcasta, gdje možete odabrati koju vrstu broadcasta želite poslati.
 
-Nastavite i odaberite **Message** (Poruka), a zatim kliknite na gumb **Next Step** (Sljedeći korak).
+Odaberite **Message**, zatim kliknite dugme **Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal za dodavanje broadcasta s odabranom opcijom Message](/img/admin/broadcast-add-message.png)
 
-Sljedeći prozor će vas pitati za **Target customer** (Ciljani korisnik) ili **Target product** (Ciljani proizvod). Imajte na umu da možete odabrati više od jednog korisnika ili više od jednog proizvoda.
+Sljedeći prozor će od vas tražiti ili **Target customer** ili **Target product**. Imajte na umu da možete odabrati više od jednog korisnika ili više od jednog proizvoda.
 
-Da biste pretražili korisnički račun ili proizvod, morate početi kucati ključnu riječ u polje.
+Da biste pretražili korisnički račun ili proizvod, trebate početi unositi ključnu riječ unutar polja.
 
-Pod poljem **Message type** (Tip poruke), možete odabrati boju obavijesti. Ovo će naglasiti hitnost vaše poruke.
+U polju **Message type** možete odabrati boju obavijesti. To će naglasiti hitnost vaše poruke.
 
 Zatim možete kliknuti **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Polja za ciljane kupce, ciljani proizvod i tip poruke za Message broadcast](/img/admin/broadcast-message-targets.png)
 
-Sljedeći prozor je mjesto gdje možete početi sastavljati poruku unosom teme i sadržaja/poruke koju želite objaviti korisnicima.
+Sljedeći prozor je mjesto gdje možete početi sastavljati svoju poruku unosom naslova i sadržaja/poruke koju želite emitovati korisnicima.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Naslov broadcast poruke i editor sadržaja u koraku sastavljanja](/img/admin/broadcast-edit.png)
 
-Nakon kreiranja poruke, možete pritisnuti gumb **Send** (Pošalji).
+Nakon što kreirate poruku, možete pritisnuti dugme **Send**.
 
-I to je sve. Admin obavijest bi trebala odmah biti vidljiva na dashboard-u vašeg korisnika.
+I to je to. Admin obavijest bi se odmah trebala prikazati na dashboardu vašeg korisnika.
 
-## Slanje e-mailova vašim klijentima
+## Šaljite emailove svojim kupcima {#send-emails-to-your-customers}
 
-Koristeći funkciju Broadcasts u Ultimate Multisite-u, možete poslati e-mail vašim korisnicima. Imate opciju da pošaljete e-mail samo određenim korisnicima ili da ciljate određenu grupu korisnika na osnovu proizvoda ili plana na koje su pretplaćeni.
+Korištenjem Ultimate Multisite broadcast funkcije, možete poslati email svojim korisnicima. Imate opciju poslati email samo određenim korisnicima ili ciljati određenu korisničku grupu na osnovu proizvoda ili plana na koji su pretplaćeni.
 
-Da biste započeli e-mail broadcast, idite na admin dashboard vaše mreže i pod menijem Ultimate Multisite pronaći ćete opciju Broadcast.
+Da biste pokrenuli email broadcast, idite na svoj mrežni admin dashboard i ispod Ultimate Multisite menija pronaći ćete opciju Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Stranica liste Broadcasts koja se koristi kao početna tačka za email broadcast](/img/admin/broadcasts-list.png)
 
-Sa ove stranice, kliknite na gumb **Add broadcast** (Dodaj obavijest) na vrhu.
+Na ovoj stranici kliknite dugme **Add broadcast** na vrhu.
 
-Ovo će otvoriti modalni prozor za dodavanje obavijesti gdje možete odabrati koji tip obavijesti želite poslati. Nastavite i odaberite **Email** (E-mail), a zatim kliknite na gumb **Next Step**.
+Ovo će otvoriti modalni prozor za dodavanje broadcasta, gdje možete odabrati koju vrstu broadcasta želite poslati. Odaberite **Email**, zatim kliknite dugme **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal za dodavanje broadcasta s odabranom opcijom Email](/img/admin/broadcast-add-email.png)
 
-Sljedeći prozor će vas pitati za **Target customer** (Ciljani korisnik) ili **Target product** (Ciljani proizvod). Imajte na umu da možete odabrati više od jednog korisnika ili više od jednog proizvoda.
+Sljedeći prozor će od vas tražiti ili **Target customer** ili **Target product**. Imajte na umu da možete odabrati više od jednog korisnika ili više od jednog proizvoda.
 
-Da biste pretražili korisnički račun ili proizvod, morate početi kucati ključnu riječ u polje.
+Da biste pretražili korisnički račun ili proizvod, trebate početi unositi ključnu riječ unutar polja.
 
-Nakon što je vaša ciljna publika odabrana, možete kliknuti **Next Step**.
+Kada je vaša ciljana publika odabrana, možete kliknuti **Next Step**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Odabir ciljanih kupaca i ciljanog proizvoda za Email broadcast](/img/admin/broadcast-email-targets.png)
 
-Sljedeći prozor je mjesto gdje možete početi sastavljati e-mail unosom teme i sadržaja/poruke koju želite poslati korisnicima.
+Sljedeći prozor je mjesto gdje možete početi sastavljati svoj email unosom naslova i sadržaja/poruke koju želite poslati korisnicima.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Nakon kreiranja poruke, možete pritisnuti gumb **Send** (Pošalji).
+Nakon što kreirate poruku, možete pritisnuti dugme **Send**.
 
-I tako je jednostavno poslati e-mail vašim krajnjim korisnicima koristeći funkciju broadcast.
+I tako je jednostavno poslati email svojim krajnjim korisnicima koristeći broadcast funkciju.
 
-## Sistemski e-mailovi
+## Sistemski emailovi {#system-emails}
 
-Sistemski e-mailovi u Ultimate Multisite-u su **automatske obavijesti** koje sistem šalje nakon određenih radnji, kao što su registracija, plaćanje, mapiranje domena itd. Ove e-mail poruke se mogu uređivati ili mijenjati iz Ultimate Multisite postavki. Također dolazi sa funkcijom koja vam omogućava resetovanje i uvoz postojećih postavki iz druge Ultimate Multisite instalacije.
+Sistemski emailovi u Ultimate Multisite su one **automatske obavijesti** koje sistem šalje nakon određenih radnji kao što su registracija, plaćanje, mapiranje domena itd. Ovi emailovi se mogu uređivati ili mijenjati iz Ultimate Multisite postavki. Također dolazi s funkcijom koja će vam omogućiti da resetujete i uvezete postojeće postavke iz druge Ultimate Multisite instalacije.
 
-### Resetovanje i uvoz
+### Resetovanje i uvoz {#resetting--importing}
 
-Nove verzije Ultimate Multisite-a, kao i add-on-i, povremeno mogu registrovati nove e-mail šablone.
+Nove Ultimate Multisite verzije, kao i dodaci, mogu i povremeno će registrirati nove emailove.
 
-Da bismo spriječili sukobe i druge probleme, **mi nećemo automatski dodavati nove e-mail šablone kao sistemske e-mailove na vašu instalaciju** , osim ako nisu ključni za pravilno funkcionisanje određene funkcije.
+Da bismo spriječili konflikte i druge probleme, **nećemo automatski dodati nove email predloške kao System Emails u vašu instalaciju** , osim ako su ključni za ispravno funkcionisanje određene funkcije.
 
-Međutim, super admini i agenti mogu uvesti ove novoregistrovane e-mailove putem alata za uvoz (importer tool). Taj proces će kreirati novi sistemski e-mail sa sadržajem i konfiguracijom novog e-mail šablona, omogućavajući super adminu da napravi bilo kakve modifikacije koje želi ili da ih ostavi takve kakve jesu.
+Međutim, super administratori i agenti mogu uvesti ove novo registrovane emailove putem alata za uvoz. Taj proces će kreirati novi sistemski email sa sadržajem i konfiguracijom novog email predloška, omogućavajući super administratoru da napravi bilo kakve izmjene koje želi ili da ih zadrži takvima kakvi jesu.
 
-#### Kako uvesti sistemske e-mailove
+#### Kako uvesti sistemske emailove {#how-to-import-system-emails}
 
-Idite na stranicu Postavke Ultimate Multisite-a i idite na karticu **Emails** (E-mailovi).
+Idite na svoju stranicu Ultimate Multisite Settings i pređite na karticu **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Kartica Emails u Ultimate Multisite postavkama koja prikazuje odjeljak System Emails](/img/config/settings-emails-tab.png)
 
-Zatim, na bočnom panelu, kliknite na gumb **Customize System Emails** (Prilagodi sistemske e-mailove).
+Zatim, na bočnoj traci, kliknite dugme **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Na stranici Sistemski e-mailovi, vidjet ćete akcioni gumb **Reset & Import** (Resetovanje i uvoz) na vrhu. Klikom na taj gumb bi trebalo da se otvori modalni prozor za uvoz i resetovanje.
+Na stranici System Emails vidjet ćete dugme akcije **Reset & Import** na vrhu. Klikom na to dugme trebao bi se otvoriti modalni prozor za uvoz i resetovanje.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Dugme akcije Reset or Import na admin stranici System Emails](/img/admin/system-emails-reset-import.png)
 
-Zatim, možete uključiti opcije Import Emails da vidite koji sistemski e-mailovi su dostupni za uvoz.
+Zatim možete uključiti opcije Import Emails da vidite koji su sistemski emailovi dostupni za uvoz.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Snimak ekrana nedostupan: modal za resetovanje i uvoz s proširenim opcijama za uvoz emailova -->
 
-#### Resetovanje sistemskih e-mailova
+#### Resetovanje sistemskih emailova {#reseting-system-emails}
 
-Ponekad ćete shvatiti da promjene koje ste napravili određenom e-mail šablonu više ne rade za vas i želite ga vratiti u **podrazumevano stanje**.
+Ponekad ćete shvatiti da izmjene koje ste napravili na određenom predlošku emaila više ne odgovaraju vašim potrebama i da ga želite resetovati na njegovo **zadano stanje**.
 
-U takvim slučajevima, imate dvije opcije: možete jednostavno obrisati sistemski e-mail i ponovo ga uvesti (koristeći gore navedene uputstva) – što će izbrisati metrike slanja i druge stvari, što čini ovu metodu najmanje poželjnom.
+U takvim slučajevima imate dvije opcije: možete jednostavno obrisati sistemsku email poruku i ponovo je uvesti (koristeći upute iznad) — što će obrisati metrike slanja i druge stvari, zbog čega je ova metoda najmanje preporučljiva.
 
-Ili možete koristiti **Reset & Import tool** za resetovanje tog e-mail šablona.
+Ili možete koristiti **alat za resetovanje i uvoz** da resetujete taj predložak emaila.
 
-Da biste resetovali e-mail šablon, možete pratiti gore navedene korake sve dok ne stignete do alata Reset & Import, a zatim uključiti opciju **Reset** i odabrati e-mailove koje želite vratiti na podrazumevano stanje sadržaja.
+Da biste resetovali predložak emaila, možete slijediti korake iznad dok ne dođete do alata za resetovanje i uvoz, a zatim uključiti opciju **Resetovanje** i odabrati emailove koje želite vratiti na njihov zadani sadržaj.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Snimak ekrana nedostupan: modal za resetovanje i uvoz s proširenim opcijama za resetovanje emailova -->

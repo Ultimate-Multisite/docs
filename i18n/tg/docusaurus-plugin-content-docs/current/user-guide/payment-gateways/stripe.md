@@ -3,19 +3,19 @@ title: Насоз кардани Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Насозӣ кардани шウェイ Stripe (v2)
+# Насозӣ кардани шウェイ Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**Эътибори муҳим: Ин мақола ба Ultimate Multisite версияи 2.x меруу.**_
 
 Шумо метавонед то чор усул пардохтро дар саҳифаи калитуби пардохти худ фаъол кунед: Stripe, Stripe Checkout, PayPal ва Рушӣ (Manual). Дар ин мақола мо интихоб мекунем, ки чӣ тавр бо **Stripe** ҳамгирӣ кунем.
 
-## Фаъол кардани Stripe
+## Фаъол кардани Stripe {#enabling-stripe}
 
 Барои фаъол кардани Stripe ҳамчун як шウェイ пардохт дар шабакаи худ, ба **Ultimate Multisite > Settings > Payments** равед ва тугси (toggle) пасои **Stripe** ё **Stripe Checkout** дар қисми Active Payment Gateways-ро иҷро кунед.
 
 ![Фаъол кардани Stripe дар шウェイ пардохти фаъол](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ин усул ҷойро барои ворид кардани рақами картаи кредит ҳангоми савдо (checkout) нишон медиҳад.
 
@@ -25,7 +25,7 @@ _**Эътибори муҳим: Ин мақола ба Ultimate Multisite вер
 
 ![Саҳифаи редиректи Stripe Checkout дар интихоби савдо](/img/config/settings-payment-gateways.png)
 
-### Гирифтани API keys-и Stripe
+### Гирифтани API keys-и Stripe {#setting-up-stripe-webhook}
 
 Баъд аз фаъол кардани Stripe ҳамчун шウェイ пардохт, шумо бояд болоии матлабҳо барои **Stripe Publishable Key** ва **Stripe Secret Key** маълумот ворид кунед. Шумо метавонед инро бо ворид шудан ба ҳисоби Stripe-и худ гиред.
 

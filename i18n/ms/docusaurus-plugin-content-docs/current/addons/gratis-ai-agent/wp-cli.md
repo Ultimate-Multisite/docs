@@ -3,11 +3,11 @@ title: Rujukan WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referensi WP-CLI
+# Referensi WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent menyediakan keluarga perintah `wp gratis-ai-agent` untuk melakukan *benchmarking* agen, mengurus keupayaan (*abilities*), dan menyemak status agen dari baris perintah. Semua perintah memerlukan WP-CLI 2.0 atau lebih tinggi.
 
-## Instalasi
+## Instalasi {#installation}
 
 Perintah WP-CLI didaftarkan secara automatik apabila *plugin* diaktifkan. Sahkan dengan:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Menjalankan set ujian *benchmark* Keupayaan Agen (*Agent Capabilities*) — iaitu set *prompt* yang kompleks dan berbilang langkah yang menguji keseluruhan keupayaan. Gunakan ini untuk menilai prestasi model, membandingkan penyedia AI, atau mengesahkan *ability pack* sebelum digunakan dalam persekitaran produksi.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Pilihan
+### Pilihan {#options}
 
 | Pilihan | Penerangan |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Format output: `table` (lalai), `json`, `csv` |
 | `--save` | Simpan hasil *benchmark* ke dalam pangkalan data untuk perbandingan sejarah |
 
-### Contoh
+### Contoh {#examples}
 
 Jalankan set *benchmark* penuh dengan penyedia dan model semasa:
 
@@ -57,7 +57,7 @@ Jalankan terhadap model tertentu dan simpan hasilnya:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 *Benchmark* akan mengeluarkan satu baris bagi setiap soalan dengan lajur berikut:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Guna tetapan tema gelap           100    apply_theme_js
 ...
 ```
 
-### Soalan Benchmark
+### Soalan Benchmark {#benchmark-questions}
 
 Set lalai termasuk:
 
@@ -95,11 +95,11 @@ Soalan tambahan boleh didaftarkan melalui *filter* `gratis_ai_agent_benchmark_qu
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Mengurus keupayaan dan *ability pack* yang dipasang.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Menyenaraikan semua keupayaan yang didaftarkan, sumbernya (teras atau *pack*), dan status semasa.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Memuat turun dan mengaktifkan *ability pack* daripada pendaftar.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Melumpuhkan keupayaan tertentu tanpa membuang *pack*. Berguna untuk mengehadkan skop agen pada laman tertentu.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Mengaktifkan semula keupayaan yang sebelum ini dilumpuhkan.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Memaparkan konfigurasi agen semasa dan status sambungan.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Memaparkan aktiviti agen terkini dari log *debug*.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Mengatur semula keadaan agen: membersihkan CSS yang disuntik, membuang CPT dan taksonomi yang didaftarkan agen, menetapkan semula gaya global, dan mengosongkan *cache* pilihan agen. Tidak membuang *plugin* atau tetapan.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Kod Keluar
+## Kod Keluar {#exit-codes}
 
 Semua perintah keluar dengan `0` jika berjaya. Kod keluar bukan sifar:
 

@@ -3,15 +3,15 @@ title: Qonaqxanalar Menyuları
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Qonaqi Menüləri
+# Qonaqi Menüləri {#hospitality-menus}
 
 **Qonaqi Menüləri** funksionallığı Theme Builder-ə saytınızda strukturlaşdırılmış yemək və içki menyu səhifələri yaratmağa və yerləşdirməyə imkan verir.
 
-## Ümumi Baxış
+## Ümumi Baxış {#overview}
 
 Theme Builder indi restoranlar, kafeler, barlar və katering xidmətləri kimi qonaqi bizneslər üçün peşəkar, strukturlaşdırılmış menyu səhifələri yarada bilər. Bu menyular saytınızın dizaynına tam inteqrasiya olunur və asanlıqla yenilənə və idarə edilə bilər.
 
-## Dəstəklənən Qonaqi Tiplər
+## Dəstəklənən Qonaqi Tiplər {#supported-hospitality-types}
 
 - **Restoranlar** — tam xidmət yemək menyuları
 - **Kafeler** — qəhvə və yüngül yemək menyuları
@@ -21,9 +21,9 @@ Theme Builder indi restoranlar, kafeler, barlar və katering xidmətləri kimi q
 - **Food Truck-lar** — mobil yemək xidməti menyuları
 - **Brauerilər və Vineryalar** — təsvirlərlə içki menyuları
 
-## Menyu Strukturu
+## Menyu Strukturu {#menu-structure}
 
-### Menyu Kateqoriyaları
+### Menyu Kateqoriyaları {#menu-categories}
 
 Menyular kateqoriyalara bölünür:
 
@@ -34,7 +34,7 @@ Menyular kateqoriyalara bölünür:
 - **İçkilər** — içkilər (alkoqollu və alkoqollu olmayan)
 - **Xüsusi Təkliflər** — gündəlik və ya mövsimlə bağlı xüsusi təkliflər
 
-### Menyu Elementi Formatı
+### Menyu Elementi Formatı {#menu-item-format}
 
 Hər bir menyu elementi aşağıdakıları əhatə edir:
 
@@ -49,7 +49,7 @@ Hər bir menyu elementi aşağıdakıları əhatə edir:
 }
 ```
 
-#### Element Sahələri
+#### Element Sahələri {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Hər bir menyu elementi aşağıdakıları əhatə edir:
 | `allergens` | array | Ümumi allergenlər (Qoz, Qızılbalıq və s.) |
 | `availability` | string | Nə vaxt mövcuddur (Hər gün, Mövsimlə və s.) |
 
-## Qonaqi Menyular Yaratmaq
+## Qonaqi Menyular Yaratmaq {#creating-hospitality-menus}
 
-### Addım 1: Menyu Məlumatını Verin
+### Addım 1: Menyu Məlumatını Verin {#step-1-provide-menu-information}
 
 Theme Builder-ə menyunuz haqqında məlumat verin:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Addım 2: Theme Builder Menyunu Yaradır
+### Addım 2: Theme Builder Menyunu Yaradır {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Qiymətləri və təsvirləri formatlayır
 5. Dietetik və allergen məlumatlarını əlavə edir
 
-### Addım 3: Nəzərdən Keçirin və Təkmilləşdirin
+### Addım 3: Nəzərdən Keçirin və Təkmilləşdirin {#step-3-review-and-customize}
 
 Bunları edə bilərsiniz:
 
@@ -91,9 +91,9 @@ Bunları edə bilərsiniz:
 4. Təsvirləri və dietetik məlumatları yeniləmək
 5. Stil və yerləşdirməni tənzimləmək
 
-## Menyu Göstərilmə Seçimləri
+## Menyu Göstərilmə Seçimləri {#menu-display-options}
 
-### Tam Menyu Səhifəsi
+### Tam Menyu Səhifəsi {#full-menu-page}
 
 Bütün menyunuzu göstərən ayrılmış bir səhifə:
 
@@ -102,7 +102,7 @@ Bütün menyunuzu göstərən ayrılmış bir səhifə:
 - Print üçün uyğun yerləşdirmə
 - Mobil cihazlara uyğun dizayn
 
-### Menyu Widget-i
+### Menyu Widget-i {#menu-widget}
 
 Menyu bölmələrini digər səhifələrə yerləşdirmək:
 
@@ -111,7 +111,7 @@ Menyu bölmələrini digər səhifələrə yerləşdirmək:
 - Bar səhifəsində içki menyusu
 - Footer-də şirniyyat vitrini
 
-### Menyu PDF
+### Menyu PDF {#menu-pdf}
 
 Yüklənməyə hazır PDF menyusu yaratmaq:
 
@@ -120,9 +120,9 @@ Yüklənməyə hazır PDF menyusu yaratmaq:
 - Şəkillər və təsvirlər daxildir
 - Paylaşmaq və e-poçtla göndərmək asandır
 
-## Dietetik və Allergen Məlumatları
+## Dietetik və Allergen Məlumatları {#dietary-and-allergen-information}
 
-### Dietetik Atributlar
+### Dietetik Atributlar {#dietary-attributes}
 
 Elementləri dietetik məlumatlarla işarələyin:
 
@@ -134,7 +134,7 @@ Elementləri dietetik məlumatlarla işarələyin:
 - **Low-Carb** — karbohidrat miqdarı azdır
 - **High-Protein** — protein baxımından zəngindir
 
-### Allergen Xəbərdarlığı
+### Allergen Xəbərdarlığı {#allergen-warnings}
 
 Ümumi allergenləri daxil edin:
 
@@ -147,9 +147,9 @@ Elementləri dietetik məlumatlarla işarələyin:
 - **Gluten** — buğda və gluten ehtiva edən taxıllar
 - **Sesame** — sésəm tohumları və yağ
 
-## Menyu İdarəetməsi
+## Menyu İdarəetməsi {#menu-management}
 
-### Qiymətləri Yeniləmək
+### Qiymətləri Yeniləmək {#updating-prices}
 
 Menyu qiymətlərini asanlıqla yeniləyin:
 
@@ -159,7 +159,7 @@ Menyu qiymətlərini asanlıqla yeniləyin:
 4. Dəyişiklikləri yadda saxlayın
 5. Dəyişikliklər dərhal saytınızda görünəcək
 
-### Mövsimlə Elementlər Əlavə Etmək
+### Mövsimlə Elementlər Əlavə Etmək {#adding-seasonal-items}
 
 Mövsimlə menyu variantları yaradın:
 
@@ -169,7 +169,7 @@ Mövsimlə menyu variantları yaradın:
 4. Mövcudluq tarixlərini təyin edin
 5. Mövsim ərzində avtomatik göstəriləcək
 
-### Xüsusi Təklifləri İdarə Etmək
+### Xüsusi Təklifləri İdarə Etmək {#managing-specials}
 
 Gündəlik və ya həftəlik xüsusi təkliflər göstərin:
 
@@ -179,7 +179,7 @@ Gündəlik və ya həftəlik xüsusi təkliflər göstərin:
 4. Gündəlik və ya həftəlik yeniləyin
 5. Köhnə xüsusi təklifləri arxivləşdirin
 
-## Theme Builder ilə İntegrasiya
+## Theme Builder ilə İntegrasiya {#integration-with-theme-builder}
 
 Qonaqi saytlar üçün Theme Builder istifadə edərkən:
 
@@ -189,9 +189,9 @@ Qonaqi saytlar üçün Theme Builder istifadə edərkən:
 4. **Mobil optimallaşdırma** — menyular telefonlarda gözəl görünür
 5. **SEO optimallaşdırması** — menyular axtarış motorları üçün dostdur
 
-## Ən Yaxşı Praktikalər
+## Ən Yaxşı Praktikalər {#best-practices}
 
-### Menyu Dizaynı
+### Menyu Dizaynı {#menu-design}
 
 - **Aydın təşkilatlanma** — məntiqi kateqoriya strukturu
 - **Oxunaqlı təsvirlər** — iştah açıcı və məlumatlı
@@ -199,7 +199,7 @@ Qonaqi saytlar üçün Theme Builder istifadə edərkən:
 - **Peşəkar fotoşəkillər** — yüksək keyfiyyətli yemək şəkilləri
 - **Boş sahə** — səhifəni çox doldurmayın
 
-### Məzmun
+### Məzmun {#content}
 
 - **Dəqiq təsvirlər** — elementləri dəqiq təsvir edin
 - **Xüsusi təklifləri vurğulayın** — xüsusi təklifləri ön plana çıxarın
@@ -207,7 +207,7 @@ Qonaqi saytlar üçün Theme Builder istifadə edərkən:
 - **Mütəmadi yeniləyin** — qiymətləri və elementləri güncel saxlayın
 - **İştah açıcı dildən istifadə edin** — elementləri dadlı səsləndirin
 
-### Erişimlilik
+### Erişimlilik {#accessibility}
 
 - **Oxunaqlı hərflər** — aydın, oxunaqlı şriftlər istifadə edin
 - **Kifayət qədər kontrast** — mətnin oxunaqlığından əmin olun
@@ -215,9 +215,9 @@ Qonaqi saytlar üçün Theme Builder istifadə edərkən:
 - **Allergen xəbərdarlığı** — allergenləri görünən şəkildə göstərin
 - **Mobilə uyğun** — bütün cihazlarda test edin
 
-## Nümunələr
+## Nümunələr {#examples}
 
-### Restoran Menyusu Strukturu
+### Restoran Menyusu Strukturu {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Kafe Menyusu Strukturu
+### Kafe Menyusu Strukturu {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Əlaqəli Xüsusiyyətlər
+## Əlaqəli Xüsusiyyətlər {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — naviqasiya menyuları yaratmaq
 - [Design Direction](./design-direction.md) — saytınızın dizaynını fərdiləşdirmək

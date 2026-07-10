@@ -3,7 +3,7 @@ title: Hook-yada iyo Filter-yada
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks and filters
+# Ultimate Multisite Hooks and filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite waa waxa uu ka kooban yahay hawlo badan oo function ah iyo su’aalo database ah. Waxaa jira hooks iyo filters oo kuu oggolaan do inaad wax ka bedesho ama ku dartid code cusub function-ka jira.
 

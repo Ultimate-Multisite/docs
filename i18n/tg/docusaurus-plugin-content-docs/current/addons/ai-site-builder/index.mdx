@@ -1,0 +1,124 @@
+---
+title: Сомонасоз бо AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Созандаи сайт бо зеҳни сунъӣ {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Талабот {#requirements}
+
+- WordPress 5.3 ё болотар
+- PHP 7.4 ё болотар
+- Плагини Multisite Ultimate (фаъол)
+
+## Насбкунӣ {#installation}
+
+1. Файлҳои замимаро ба директорияи `/wp-content/plugins/`-и худ боргузорӣ кунед
+2. Плагинро тавассути менюи 'Plugins' дар WordPress фаъол кунед
+3. Танзимоти замимаро дар маъмурияти шабака танзим кунед
+
+## Таҳия {#development}
+
+### Танзим {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Сохтори лоиҳа {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Синфҳои PHP ва файлҳои дохилшаванда
+│   ├── class-multisite-ultimate-updater.php  # Коркарди навсозӣ
+│   └── class-ai_site_builder-main.php             # Функсияҳои асосӣ
+├── tests/                        # Санҷишҳои воҳидӣ
+│   ├── bootstrap.php            # Оғози санҷиш
+│   ├── class-*-base.php         # Синфи асосии санҷиш
+│   └── class-*-test.php         # Ҳолатҳои санҷишӣ
+├── views/                       # Файлҳои қолаб
+├── assets/                      # Дороиҳои статикӣ
+│   ├── css/                     # Ҷадвалҳои услуб
+│   ├── js/                      # Файлҳои JavaScript
+│   └── images/                  # Тасвирҳо
+├── lang/                        # Файлҳои забон
+├── composer.json                # Вобастагиҳои PHP
+├── package.json                 # Вобастагиҳои Node.js
+├── phpunit.xml.dist             # Танзимоти PHPUnit
+├── .phpcs.xml.dist              # Танзимоти стандартҳои код
+└── rector.php                   # Қоидаҳои навсозии код
+```
+
+### Санҷиш {#testing}
+
+Ин замима чорчӯбаи фарогири санҷишро дар бар мегирад:
+
+- **Санҷишҳои воҳидӣ**: Санҷишҳои асосёфта ба PHPUnit бо маҷмӯаи санҷишии WordPress
+- **Синфи асосии санҷиш**: Усулҳои ёрирасонро барои сенарияҳои маъмули санҷиш фароҳам меорад
+- **Фарогирии санҷиш**: Барои пайгирии фарогирии код танзим шудааст
+- **Санҷиши multisite**: Санҷишҳо дар муҳити multisite иҷро мешаванд
+
+### Стандартҳои код {#code-standards}
+
+- **Стандартҳои коднависии WordPress**: Тавассути PHPCS маҷбурӣ карда мешаванд
+- **Мутобиқат бо PHP 7.4+**: Хусусиятҳои муосири PHP дастгирӣ мешаванд
+- **Таҳлили статикӣ**: Ҳамгироии PHPStan барои санҷиши навъҳо
+- **Навсозии код**: Қоидаҳои Rector барои навсозии PHP
+
+### Системаи сохтан {#build-system}
+
+- **Коркарди дороиҳо**: Хурдсозӣ барои файлҳои CSS/JS
+- **Тарҷума**: Тавлиди файли POT
+- **Бастабандӣ**: Эҷоди бойгонӣ барои паҳнкунӣ
+- **Ҳолати таҳия**: Дороиҳои хурднашуда барои ислоҳи хатоҳо
+
+## Танзимот {#configuration}
+
+Ин замима имконоти гуногуни танзимотро дастгирӣ мекунад, ки тавассути интерфейси маъмурияти шабака дастрасанд.
+
+## Hooks ва Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Пас аз оғозёбии замима иҷро мешавад
+- `ultimate-multisite-ai-site-builder_loaded` - Пас аз бор шудани ҳамаи файлҳои замима иҷро мешавад
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Тағйир додани танзимоти замима
+- `ultimate-multisite-ai-site-builder_enabled` - Бознависии ҳолати фаъол/ғайрифаъол будани замима
+
+## Иҷозатнома {#license}
+
+Ин замима таҳти GPL v3 ё версияи баъдтар иҷозатнома гирифтааст.
+
+## Дастгирӣ {#support}
+
+Барои дастгирӣ ва ҳуҷҷатҳо, ба [MultisiteUltimate.com](https://multisiteultimate.com) гузаред
+## Сабти тағйирот {#changelog}
+
+- Версияи 1.0.1 (2025-09-28): тағйири номи пешванд ба ultimate-multisite; навсозии домени матн; баланд кардани версия.
+
+
+- Версияи  (2025-09-28): тағйири номи пешванд ба ultimate-multisite; навсозии домени матн; баланд кардани версия.

@@ -3,19 +3,19 @@ title: Aħjar il-Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ażżawil tal-Stripe (v2)
+# Ażżawil tal-Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTA IMPORTANTI: Danitra tista'dha l-versjoni 2.x ta Ultimate Multisite.**_
 
 Tista'k attivaw ukoll quattro metodi di pagamenti fuq pajla impostazzjonijiet tat-pagamenti tagħna: Stripe, Stripe Checkout, PayPal u Manuali. F'dinja, nista' nfermu kif nistabbilixhom ma' **Stripe**.
 
-## Attivazzjoni tal-Stripe
+## Attivazzjoni tal-Stripe {#enabling-stripe}
 
 Biex tistabbilixxi l-Stripe bħala gateway ta pagamenti disponibbli fuq la-rete tiegħek, għandi tmur għand **Ultimate Multisite > Settings > Payments** u tagħmel il-tick fuq il-toggle li jikkontrolla l-Stripe jew Stripe Checkout f'sezzjoni Active Payment Gateways.
 
 ![Attivazzjoni tal-Stripe fil-gateway ta pagamenti attivi](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Metodu huwa li juri spazzju biex tinsert il-numru tal-kartetta di kreditu klawża fl-checkout.
 
@@ -47,7 +47,7 @@ Kopi l-valur mill-**Publishable key** u **Secret key**, mill-kolonna **Token** u
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Aħjar il-Webhook ta Stripe
+## Aħjar il-Webhook ta Stripe {#setting-up-stripe-webhook}
 
 Stripe trabbil event ta webhook li jgħinu l-Ultimate Multisite ogni volta li passiert xi ħaġa fuq **kont attivar tiegħek fuq stripe**.
 

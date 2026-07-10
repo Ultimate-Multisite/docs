@@ -3,11 +3,11 @@ title: Sovereign Migracijos Procesas
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Przepływ migracji suwerennej
+# Przepływ migracji suwerennej {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 wprowadza bramy weryfikacji migracji dla przenoszenia standardowego subsite'u do infrastruktury najsuwerennego najemcy (sovereign tenant).
 
-## Zanim zaczniesz
+## Zanim zaczniesz {#before-you-start}
 
 Upewnij się, że masz:
 
@@ -17,7 +17,7 @@ Upewnij się, że masz:
 - Powiązanie hosta bazy danych pasujące do środowiska docelowego.
 - Dostęp do poleceń WP-CLI dla sieci.
 
-## Zalecany przepływ pracy
+## Zalecany przepływ pracy {#recommended-workflow}
 
 1. Przygotuj bazę danych i system plików docelowego najemcy.
 2. Zarejestruj lub zaktualizuj ustawienia izolacji najemcy (tenant isolation settings).
@@ -28,7 +28,7 @@ Upewnij się, że masz:
 7. Odwiedź najemcę za pomocą SSO.
 8. Zmień DNS lub routing dopiero po pomyślnym przejściu weryfikacji.
 
-## Bramy weryfikacji
+## Bramy weryfikacji {#verification-gates}
 
 Przepływ weryfikacji sprawdza migrację z kilku stron:
 
@@ -40,6 +40,6 @@ Przepływ weryfikacji sprawdza migrację z kilku stron:
 
 Traktuj niepowodzenia weryfikacji jako blokady przed uruchomieniem. Napraw zgłoszony problem z bazą danych, użytkownikiem, kolejką lub routingiem, a następnie ponownie uruchom weryfikację, zanim wystawisz najemcę na klientów.
 
-## Pierwsza wizyta produkcyjna
+## Pierwsza wizyta produkcyjna {#first-production-visit}
 
 Po pomyślnym przejściu weryfikacji użyj opcji **Visit (SSO)** z ekranu zarządzania stroną dla pierwszej wizyty administratora. Potwierdza to routing najemcy, obsługę tokenów SSO, przypisanie pochodzenia (origin pinning) oraz tworzenie użytkowników po stronie najemcy w jednym kontrolowanym kroku.

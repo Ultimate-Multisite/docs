@@ -1,132 +1,148 @@
 ---
-title: Internal Agents
+title: داخیلی عامل‌لر
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Yerleşik Agent'lar
+# ایچینده قورولموش Agent-لر {#built-in-agents}
 
-Gratis AI Agent v1.9.0, her biri belirli bir araç seti, özel bir sistem komutu (system prompt) ve o alandaki yaygın görevlere uygun başlangıç önerileriyle önceden yapılandırılmış beş yerleşik agent ile geliyor. Agent'lar arasında geçiş yapmak, asistanın ne yapabileceğini ve nasıl yanıt vereceğini değiştirir — sizin herhangi bir yapılandırma yapmanıza gerek kalmadan.
+Gratis AI Agent v1.9.0 بئش ایچینده قورولموش agent ایله گلیردی؛ هر بیری معین بیر آلتلر دسته‌سی، اویغونلاشدیرلمیش system prompt، و او ساحه‌ده یایغین ایشلره اویغون باشلانغیج پیشنهادلری ایله قاباقجادان تنظیم اولونوب. Agent-لر آراسیندا دَییشمک assistant-ین نه ائده بیله‌جه‌یینی و نئجه جواب وئره‌جه‌یینی دَییشیر — سیزین طرفینیزدن هیچ بیر تنظیم لازیم دئییل. Superdav AI Agent v1.18.0، باغلی integrations تنظیم اولوناندا، بو ایش آقیشلارینا زمانلامانی تانئان آلتلر، یادآوری قئیدلری، تایید قاپیلاری، و SMS بیلدیریشلری آرتیرا بیلر.
 
-## Agent Nedir?
+## Agent نه‌دیر؟ {#what-is-an-agent}
 
-Her agent, bir araya getirilmiş bir yapılandırma profili (configuration profile) olup şunları içerir:
+هر agent آدلانمیش بیر تنظیم پروفیلیدیر و بونلاری بیرلشدیرر:
 
-- **Tools (Araçlar)** — agent'ın kullanmasına izin verilen yetenekler (örneğin, bir İçerik Yazarı'nın gönderi oluşturma yeteneklerine erişimi vardır; bir Tasarım Stüdyosu ise CSS ve theme.json yeteneklerine erişime sahiptir)
-- **System prompt (Sistem komutu)** — agent'ın tonunu, önceliklerini ve kısıtlamalarını belirleyen talimatlar
-- **Suggestions (Öneriler)** — hızlı başlamanıza yardımcı olmak için sohbet arayüzünde gösterilen önceden yazılmış komutlar
+- **آلتلر** — agent-ین چاغیرماغینا ایجازه وئریلَن قابلیتلر (مثلاً Content Writer یازی یاراتما قابلیتلرینه گیریش آلار؛ Design Studio ایسه CSS و theme.json قابلیتلرینه گیریش آلار)
+- **System prompt** — agent-ین لحنی، اؤنجه‌لیک‌لری، و محدودیتلرینی تعیین ائدن تاپشیریقلار
+- **پیشنهادلر** — تئز باشلاماغینیزا کؤمک ائتمک اوچون چت آراوزونده گؤستریلَن قاباقجادان یازیلما prompt-لار
 
-## Agent Seçiciye Erişim
+## Agent Picker-ه گیریش {#accessing-the-agent-picker}
 
-1. WordPress yönetici kenar çubuğundaki **Gratis AI Agent** paneline gidin.
-2. Sohbet başlığının sol üst köşesindeki **agent simgesine** tıklayın (simge, aktif agent'ı yansıtacak şekilde değişir).
-3. **Agent Picker** bir form-tablo katmanı olarak açılır. Her agent, simgesi, adı ve tek satırlık bir açıklama ile listelenir.
-4. Bir agent satırına tıklayarak onu etkinleştirin. Sohbet başlığı hemen güncellenir.
+1. WordPress ایداره sidebar-یندا **Gratis AI Agent** پنلینی آچین.
+2. چت باشلیغینین سول-یوخاریسیندا **agent icon**-ونا کلیک ائدین (آیکون فعال agent-ی گؤسترمک اوچون دَییشیر).
+3. **Agent Picker** بیر form-table اؤرتویو کیمی آچیلیر. هر agent اؤز آیکونو، آدی، و بیر سطیرلیق توضیحی ایله لیست‌لنیر.
+4. فعال ائتمک اوچون بیر agent سطیرینه کلیک ائدین. چت باشلیغی درحال یئنیلنیر.
 
-Ayrıca konuşma sırasında agent değiştirebilirsiniz — yeni agent'ın sistem komutu bir sonraki mesajdan itibaren geçerli olur.
+سؤحبتین اورتاسیندا دا agent دَییشه بیلرسینیز — یئنی agent-ین system prompt-و نؤوبتی پیامدان اعتبارن اثره مینیر.
 
-## Beş Yerleşik Agent
+## بئش ایچینده قورولموش Agent {#the-five-built-in-agents}
 
-### Content Writer (İçerik Yazarı)
+### Content Writer {#content-writer}
 
-**Odak:** Gönderi, sayfa ve iletişim formları oluşturma ve düzenleme.
+**تمرکز:** یازیلار، صفحه‌لر، و علاقه فورملاری یاراتماق و دوزه‌لتمک.
 
-**Mevcut araçlar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**موجود آلتلر:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrations فعال اولاندا، تنظیم اولونموش calendar متنی، تایید قاپیلاری، یادآوریلار، و SMS بیلدیریش آلتلری ده تاییدلنمیش ایش آقیشلاری اوچون موجود اولا بیلر.
 
-**Nelerde başarılıdır:**
-- Bir özet veya taslaktan blog yazısı taslağı hazırlama ve yayınlama
-- Yeni bir site için toplu açılış sayfası (landing page) oluşturma
-- İletişim ve sorgulama formları oluşturma
-- Bir URL'den veya aramadan gönderilere öne çıkan görsel (featured image) atama
+**یاخشی گؤردویو ایشلر:**
+- بیر brief یا outline اساسینجا بلاگ یازیلاری حاضیرلاماق و یایینلاماق
+- یئنی بیر سایت اوچون landing page دسته‌لری یاراتماق
+- علاقه و سورغو فورملاری قورماق
+- یازیلارا URL یا آختاریشدان featured image تعیین ائتمک
+- تنظیم اولونموش Google Calendar متنیندن ایوند follow-up پیام‌لاری حاضیرلاماق، سونرا بیلدیریشلر گؤندرمکدن قاباق تایید اوچون دایانماق
 
-**Başlangıç önerileri:**
-- *WordPress multisite'ın faydaları hakkında 500 kelimelik bir blog yazısı yaz.*
-- *Bir Hakkımızda, Hizmetler ve İletişim sayfası oluştur ve yayınla.*
-- *İletişim sayfasına bir rezervasyon sorgulama formu ekle.*
-
----
-
-### Site Builder (Site Oluşturucu)
-
-**Odak:** Tek bir komutla uçtan uca web sitesi oluşturma.
-
-**Mevcut araçlar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Nelerde başarılıdır:**
-- Açıklanan bir iş türü için çok aşamalı bir site oluşturma planı oluşturma
-- Her aşamayı özerk bir şekilde yürütme — yapı, içerik, navigasyon, tasarım
-- Manuel müdahale gerektirmeden plan ortasında hatalardan kurtulma
-- Yapının bir parçası olarak önerilen eklentileri kurma
-- İletişim formlarını doğrudan sohbet arayüzünden oluşturma (Superdav AI Agent v1.10.0+)
-
-**Başlangıç önerileri:**
-- *Bir galeri gönderi türü, bir rezervasyon sayfası ve bir iletişim formu içeren bir fotoğrafçılık portfolyo sitesi oluştur.*
-- *Online menü, çalışma saatleri ve masa rezervasyonu sorgulama formu içeren bir restoran web sitesi oluştur.*
-- *Hizmet sayfaları, bir portfolyo bölümü ve bir blog içeren serbest danışmanlık sitesi kur.*
-- *Site oluşturucuyu kullanarak İletişim sayfasına bir iletişim formu ekle.*
+**باشلانغیج پیشنهادلری:**
+- *WordPress multisite-ین فایدالاری حاققیندا ۵۰۰ سؤزلوق بیر بلاگ یازیسی یاز.*
+- *About، Services، و Contact صفحه‌سی یارات و اونلاری یایینلا.*
+- *Contact صفحه‌سینه بیر booking enquiry form آرتیر.*
+- *صباحین تنظیم اولونموش calendar event-یندن قاتیلانلار اوچون بیر یادآوری حاضیرلا و گؤندرمکدن قاباق تایید گؤزله.*
 
 ---
 
-### Design Studio (Tasarım Stüdyosu)
+### Site Builder {#site-builder}
 
-**Odak:** Görsel özelleştirme — renkler, tipografi, CSS ve blok desenleri.
+**تمرکز:** تک بیر prompt-دان باشدان-سونا وب‌سایت یاراتماق.
 
-**Mevcut araçlar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**موجود آلتلر:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 ایله، تنظیم اولونموش managed-service، تایید، یادآوری، calendar، و SMS آلتلری مدیرلر اونلاری فعال ائدن یئرلرده موجود اولا بیلر.
 
-**Nelerde başarılıdır:**
-- Adlandırılmış tema ön ayarlarını uygulama (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- theme.json aracılığıyla küresel tipografi ve renk paletlerini ince ayar yapma
-- Markaya özel geçersiz kılmalar için özel CSS enjekte etme
-- Bir sayfanın ekran görüntüsünü alıp tasarım sorunları açısından inceleme
+**یاخشی گؤردویو ایشلر:**
+- توضیح وئریلَن بیر ایش نوعی اوچون چوخ-مرحله‌لی سایت قورولوش پلانی یاراتماق
+- هر مرحله‌نی خودمختار یئرینه یئتیرمک — قورولوش، محتوا، یؤنلندیرمه، دیزاین
+- پلان اورتاسیندا خطالاردان ال ایله دخالت لازیم اولمادان دوزلمک
+- قورولوشون بیر حصه‌سی کیمی پیشنهاد اولونان plugin-لری قوراشدیرماق
+- علاقه فورملارینی بیر باشا چت آراوزوندن یاراتماق (Superdav AI Agent v1.10.0+)
+- تایید قاپیلاری و یادآوری قئیدلری فعال اولاندا، تکرار بیلدیریشلر اولمادان launch یادآوریلارینی یا قاتیلانلارا follow-up هماهنگ ائتمک
 
-**Başlangıç önerileri:**
-- *warm-editorial ön ayarını uygula ve ardından birincil rengi #2d6a4f olarak ayarla.*
-- *Ana sayfanın ekran görüntüsünü al ve neyi iyileştirebileceğimi söyle.*
-- *Tam genişlikte bir arka plan görseli ve ortalanmış bir başlık içeren yeniden kullanılabilir bir kahraman blok deseni oluştur.*
-
----
-
-### Plugin Manager (Eklenti Yöneticisi)
-
-**Odak:** WordPress eklentilerini keşfetme, kurma ve yönetme.
-
-**Mevcut araçlar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Nelerde başarılıdır:**
-- Açıklanan bir kullanım senaryosu için en iyi eklentiyi önerme
-- Kayıt defterindeki yetenek paketlerini kurma
-- Kategoriye göre mevcut yetenek kataloğunda gezinme
-
-**Başlangıç önerileri:**
-- *Üyelik dizini için en iyi eklenti nedir?*
-- *WooCommerce yetenek paketini kur.*
-- *Mevcut tüm e-ticaret yetenek paketlerini göster.*
+**باشلانغیج پیشنهادلری:**
+- *گالری post type، booking صفحه‌سی، و علاقه فورمی اولان بیر عکاسی پورتفولیو سایتی قور.*
+- *آنلاین منو، آچیلش ساعتلاری، و میز booking سورغو فورمی اولان بیر رستوران وب‌سایتی یارات.*
+- *خیدمت صفحه‌لری، پورتفولیو بؤلمه‌سی، و بلاگ ایله بیر آزاد مشاوره سایتی قور.*
+- *site builder ایله Contact صفحه‌سینه علاقه فورمی آرتیر.*
+- *سایت launch checklist تایید اولاندان سونرا، تنظیم اولونموش stakeholder علاقه‌سینه SMS یادآوری گؤندر.*
 
 ---
 
-### Support Assistant (Destek Asistanı)
+### Design Studio {#design-studio}
 
-**Odak:** Site içeriği, ayarlar ve WordPress yapılandırması hakkında soruları yanıtlama.
+**تمرکز:** گؤرونوش اؤزللشدیرمه‌سی — رنگلر، تایپوگرافی، CSS، و block pattern-لر.
 
-**Mevcut araçlar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**موجود آلتلر:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Nelerde başarılıdır:**
-- Mevcut site ayarlarını ve seçeneklerini kontrol etme
-- Sitede hangi gönderi türlerinin, taksonomilerin ve menülerin yapılandırıldığını açıklama
-- Canlı değerleri okuyarak "bu ayar ne işe yarıyor?" sorularını yanıtlama
-- Değişiklik yapmadan önce salt okunur bir teşhis katmanı görevi görme
+**یاخشی گؤردویو ایشلر:**
+- آدلانمیش theme preset-لری اویغولاماق (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json واسطه‌سیله عمومی تایپوگرافی و رنگ پالت‌لارینی دئییق ائتمک
+- برند-اوزل override-لار اوچون custom CSS دَخیل ائتمک
+- بیر صفحه‌دن screenshot آلماق و دیزاین مسئله‌لری اوچون اونونو گؤزدن کئچیرمک
 
-**Başlangıç önerileri:**
-- *Bu sitede şu anda hangi eklentiler ve ayarlar aktif?*
-- *Bu sitede kayıtlı tüm özel gönderi türlerini listele.*
-- *Hangi navigasyon menüleri var ve nereye atanmışlar?*
+**باشلانغیج پیشنهادلری:**
+- *warm-editorial preset-ینی اویغولا و سونرا اصلی رنگی #2d6a4f ائله.*
+- *homepage-ین screenshot-ونو آل و منه نه‌یی یاخشیلشدیره‌جه‌یینی دئ.*
+- *تام-ائنلی آرخا پلان تصویری و مرکزده باشلیغی اولان تکرار ایستیفاده ائدیله بیلن hero block pattern یارات.*
+
+### Plugin Manager {#plugin-manager}
+
+**تمرکز:** WordPress plugin-لرینی کشف ائتمک، قوراشدیرماق، و ایداره ائتمک.
+
+**موجود آلتلر:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**یاخشی گؤردویو ایشلر:**
+- توضیح وئریلَن ایستیفاده حالتی اوچون ان یاخشی plugin-ی پیشنهاد ائتمک
+- registry-دن ability pack-لری قوراشدیرماق
+- موجود ability catalog-ونو کاتگوریایه گؤره گزمک
+
+**باشلانغیج پیشنهادلری:**
+- *membership directory اوچون ان یاخشی plugin نه‌دیر؟*
+- *WooCommerce abilities pack-ینی قوراشدیر.*
+- *بوتون موجود ecommerce ability pack-لری منه گؤستر.*
 
 ---
 
-## Agent Özelleştirme
+### Support Assistant {#support-assistant}
 
-Her yerleşik agent, `gratis_ai_agent_agents` filtresi aracılığıyla genişletilebilir veya değiştirilebilir.
+**تمرکز:** سایت محتواسی، تنظیمات، و WordPress تنظیمی حاققیندا سواللارا جواب وئرمک.
 
-### Mevcut bir agent'a özel bir sistem komutu ekleme
+**موجود آلتلر:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**نه‌لری یاخشی گؤرور:**
+- ایندیکی سایت تنظیم‌لرینی و سئچیم‌لرینی تاپماق
+- سایتدا هانسی یازی نوعلاری، سینیف‌بندی‌لر و منولار قورولوب، آچیقلاماق
+- جانلی دَیَرلری اوخویا‌راق "بو تنظیم نه ایش گؤرور؟" سوآل‌لارینا جواب وئرمک
+- دَییشیکلیک ائتمزدن قاباق، فقط-اوخوما عیب‌یابی قاتی کیمی ایشلَمک
+
+**باشلاماق اوچون تکلیف‌لر:**
+- *بو سایتدا هانسی پلاگین‌لر و تنظیم‌لر ایندی فعالدیر؟*
+- *بو سایتدا قئید ائدیلمیش بوتون اؤزل یازی نوعلارینی لیستله.*
+- *هانسی یؤنلندیرمه منولاری وار و هارایا آیریلیبلار؟*
+
+---
+
+## Superdav اوتوماتلاشدیرما باغلانتی‌لاری {#superdav-automation-integrations}
+
+Superdav AI Agent v1.18.0 باغلانتی‌لاری قورولاندا، ایچری‌ده گلمه ایجنت‌لر داها گؤوه‌نلی و زمان‌جدولیندن آگاه اوتوماتلاشدیرما ایش آخیملاریندا ایشتیراک ائده بیلر:
+
+- **Google Calendar اوخوما آلَتلری** ایجنت‌لره ایمکان وئرر کی، آردیجیل ایشی حاضیرلامازد‌ان قاباق قورولموش تقویم‌لری و حادثه‌لری یوخلاسینلار.
+- **تماس و قاتیلان اویغونلاشدیرماسی** حادثه قاتیلانلارینی WordPress ایشلدن‌لرینه یا تانینان تماس‌لارا اویغونلاشدیرماغا کؤمک ائدیر.
+- **اینساضان تصدیق قاپیلاری** حساس عملیاتی ایجازه‌لی بیر ایشلدن باخیب تأیید ائدنکیمی ساخلیار.
+- **خاطیرلاتما قئیدلری** زمانلانمیش ایش‌لر یئنیدَن یوخلاناندا یا تکرار اولاندا، تکراری بیلدیریشلرین قارشی‌سینی آلیر.
+- **TextBee SMS بیلدیریشلری** SMS کیملیک بیلگی‌لری و ایش آخی‌می ایجازه‌لری فعال اولاندا، یالنیز قورولموش متن پیام‌لارینی گؤندرر.
+
+تؤوصیه اولونان ایش آخی‌می: ایجنت‌دن پیام یا عملی حاضیرلاماغی ایسته‌یین، تصدیق ایستگینی گؤزدن کئچیرین، سونرا تصدیق اولونموش عملین داوام ائتمسینه ایجازه وئرین. تکرارلانان خاطیرلاتمالار اوچون خاطیرلاتما تکرارینی آزالتما سئچیمینی فعال ساخلا‌یین کی، عینی حادثه یا تماس تکرا-تکرا بیلدیریش آلمسین.
+
+---
+
+## ایجنت‌لری اؤزللشدیرمک {#customising-agents}
+
+هر ایچری‌ده گلمه ایجنت `gratis_ai_agent_agents` فیلترینی ایشلده‌رک گئنیشله‌نیب یا دَییشدیریله بیلر.
+
+### وار اولان ایجنت‌ه اؤزل سیستم پرامپت آرتیرماق {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Yeni bir agent kaydetme
+### یئنی ایجنت قئید ائتمک {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Yeni agent, filtre çalıştıktan hemen sonra Agent Picker'da görünür.
+یئنی ایجنت فیلتر ایشلَیَندن درحال سونرا ایجنت سئچن‌ده گؤرونور.
 
-### Yerleşik bir agent'ı kaldırma
+### ایچری‌ده گلمه ایجنتی سیلمک {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

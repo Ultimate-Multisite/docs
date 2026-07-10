@@ -3,13 +3,13 @@ title: Migrado de Tria Parte Modo
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migriĝo al Modo de Tria Parte
+# Migriĝo al Modo de Tria Parte {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 ŝanĝas la maniron, kiel estas manebleti tripartajn kapablitajn funkciojn. **La modo de tria parte nun defaultas al auto**, permesante nativan integriĝon kun WordPress Abilities API sur WordPress 7.0+ sen manua konfigurita.
 
-## Kion ŝanĝis?
+## Kion ŝanĝis? {#what-changed}
 
-### Predvini v1.12.0
+### Predvini v1.12.0 {#before-v1120}
 
 Tria parta kapabilitaj funkcioj postuli manuan konfigurigon:
 
@@ -18,7 +18,7 @@ Tria parta kapabilitaj funkcioj postuli manuan konfigurigon:
 - Integrita kun WordPress Abilities API estis opciona
 - La senviga modo estis la defaulto
 
-### Post v1.12.0
+### Post v1.12.0 {#after-v1120}
 
 Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 
@@ -27,13 +27,13 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 - Sen manua konfigurigo bezonas necesiĝas sur WordPress 7.0+
 - La senviga modo estas tuta dispona por pli malaj versiojn de WordPress
 
-## Kuj estas afectati?
+## Kuj estas afectati? {#who-is-affected}
 
-### Novaj Instaloj (WordPress 7.0+)
+### Novaj Instaloj (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Neniu akcio bezonas fari.** La modo de tria parte estas aŭtomate sintonita al "auto", kaj kapabilitaj funkcioj funkcias sen manĝa.
 
-### Ekzistantaj Instaloj
+### Ekzistantaj Instaloj {#existing-installations}
 
 **Viaj ŝanĝoj estas konservitaj.** Se vi uzis:
 
@@ -41,7 +41,7 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 - **Manuan modon de tria parte**: Vi restas en manua modo (neniu ŝanĝo)
 - **Auto modon**: Vi kontinuisas kun auto modo (neniu ŝanĝo)
 
-### WordPress Versioj Predvini 7.0
+### WordPress Versioj Predvini 7.0 {#wordpress-versions-before-70}
 
 **La senviga modo estas tuta dispona.** Se vi estas sur WordPress 6.x aŭ pli malaj:
 
@@ -49,9 +49,9 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 - Vi povas manue aktivi la modon de tria parte, se vi tio ŝatas
 - Upgrade al WordPress 7.0+ por uzui nativan Abilities API
 
-## Kompreni la Modojn
+## Kompreni la Modojn {#understanding-the-modes}
 
-### Auto Modo (Nova Defaulto)
+### Auto Modo (Nova Defaulto) {#auto-mode-new-default}
 
 **Auto modo** uzas nativan integriĝon kun WordPress Abilities API:
 
@@ -62,7 +62,7 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 
 **Kiam uzati:** WordPress 7.0+ kun akablosajne abilites (third-party abilities)
 
-### Modo Manul (Manual Mode)
+### Modo Manul (Manual Mode) {#manual-mode}
 
 **Modo manul** bez specifika konfiguracioj vgreja:
 
@@ -73,7 +73,7 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 
 **Kiam uzati:** Testiro, selektiva porlado de abilites, aŭ personalizita konfiguracio.
 
-### Modo Legato (Legacy Mode)
+### Modo Legato (Legacy Mode) {#legacy-mode}
 
 **Modo legato** uzas la vétra sistemon treti strona abilites:
 
@@ -84,24 +84,24 @@ Tria partaj kapabilitaj funkcioj funkcias aŭtomate:
 
 **Kiam uzati:** WordPress 6.x aŭ pli mal, aŭ kiam vi bezonas legato kompatibilitate.
 
-## Kontrolado de Viaj Aktualna Modo
+## Kontrolado de Viaj Aktualna Modo {#checking-your-current-mode}
 
-### Per Panelu Administracio (Admin Panel)
+### Per Panelu Administracio (Admin Panel) {#via-admin-panel}
 
 1. Prisijete **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Paŝete pa la konfiguracion **Third-Party Mode**
 3. Vi vidos via aktualna modo kaj opcioj por ĝin ŝanĝi
 
-### Per Kodo (Via Code)
+### Per Kodo (Via Code) {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', aŭ 'legacy'
 ```
 
-## Ŝanĝado de Via Modo
+## Ŝanĝado de Via Modo {#changing-your-mode}
 
-### Migri al Auto Modo (Switch to Auto Mode)
+### Migri al Auto Modo (Switch to Auto Mode) {#switch-to-auto-mode}
 
 Se vi estas sur WordPress 7.0+ kaj volas uzi auto modon:
 
@@ -112,7 +112,7 @@ Se vi estas sur WordPress 7.0+ kaj volas uzi auto modon:
 
 Superdav AI Agent aŭtomate diskoveros kaj registros treti strona abilites.
 
-### Migri al Manul Modo (Switch to Manual Mode)
+### Migri al Manul Modo (Switch to Manual Mode) {#switch-to-manual-mode}
 
 Se vi volas kontroli manuele, kiuj abilites porladas:
 
@@ -122,7 +122,7 @@ Se vi volas kontroli manuele, kiuj abilites porladas:
 4. Klikete sur **Save**
 5. Redaktante via konfiguraciajn fajlon, specife kiu abilites ha porladas
 
-### Migri al Legato Modo (Switch to Legacy Mode)
+### Migri al Legato Modo (Switch to Legacy Mode) {#switch-to-legacy-mode}
 
 Se vi bezonas legato kompatibilitate:
 
@@ -131,9 +131,9 @@ Se vi bezonas legato kompatibilitate:
 3. Selectet **Legacy** (Vétaj)
 4. Clicket **Save** (Salva)
 
-## Beneficencoj Auto Modo
+## Beneficencoj Auto Modo {#benefits-of-auto-mode}
 
-### Automatica Diskovaro
+### Automatica Diskovaro {#automatic-discovery}
 
 Abilitate estas aŭtomatice diskertas de:
 
@@ -144,7 +144,7 @@ Abilitate estas aŭtomatice diskertas de:
 
 Neca necesi manuala registriĝo.
 
-### Nata Integrita
+### Nata Integrita {#native-integration}
 
 Abilitate integriĝas kun la WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Abilitate integriĝas kun la WordPress Abilities API:
 - Kompatabla kun aliaj pluginoj uzante Abilities API
 - Futura-protekta, ĉar WordPress evoluas
 
-### Simpligita Administrado
+### Simpligita Administrado {#simplified-management}
 
 - Sen konfigura kajoj por modifi
 - Sen manuala registriĝo de abilitate
 - Kontroloj de vidibilitate de abilitate funkcias aŭtomate
 - Adminnoticioj alertas vi al neklasifikitaj abilitate
 
-### Megata Performeco
+### Megata Performeco {#better-performance}
 
 - Abilitate estas cacheita
 - Lazi-loadita sur la peto
 - Optimizita por WordPress 7.0+
 
-## Migraja Via
+## Migraja Via {#migration-path}
 
-### Se Vi Estas sur WordPress 6.x
+### Se Vi Estas sur WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Upgradu al WordPress 7.0+** (kiam estas جاه)
 2. **Aktu Superdav AI Agent** al v1.12.0+
 3. **Mangi la tria-partan modon al Auto** (opcionala; legacy modo tut funkcias)
 4. **Revizi vidibilitate de abilitate** por certigi la ĝustajn kontrolojn de aliro
 
-### Se Vi Estas sur WordPress 7.0+
+### Se Vi Estas sur WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Aktu Superdav AI Agent** al v1.12.0+
 2. **Verifi ke la tria-parta modo estas sintonita al Auto** (ĝi devas esti tio per defolo)
 3. **Revizi vidibilitate de abilitate** por certigi la ĝustajn kontrolojn de aliro
 4. **Testu tria-partajn abilitate** por konfirmi, ke ili funkcias
 
-## Problemo-solviĝo (Troubleshooting)
+## Problemo-solviĝo (Troubleshooting) {#troubleshooting}
 
-### Abilitate ne ŝargas en auto modo
+### Abilitate ne ŝargas en auto modo {#abilities-arent-loading-in-auto-mode}
 
 - Verifi, ke vi estas sur WordPress 7.0+
 - Kontu, ke la tria-parta modo estas sintonita al "Auto"
 - Verifi, ke la plugino, kiu donas la abiliton, estas aktiva
 - Kontu la eraro-logoj de WordPress por registriĝo-eraro
 
-### Mi volami sekvi legacy modon
+### Mi volami sekvi legacy modon {#i-want-to-keep-legacy-mode}
 
 - Alti **Settings** $\rightarrow$ **Third-Party Mode** (Tria-parta Modo)
 - Selectet **Legacy** (Vétaj)
 - Clicket **Save** (Salva)
 - Legacy modo tut funkcias
 
-### Minaj personala kapablej ne montras
+### Minaj personala kapablej ne montras {#my-custom-abilities-arent-showing}
 
 - Verifuji, ke si registri per WordPress hooks
 - Kontroluji, ke si implementas la Abilities API korektajne
 - Reviziu losoj de erorlogoj de WordPress
 - Uzuuji la admin page **Ability Visibility** por vidi ĉiuj registritajn kapablejn
 
-### Mi ricevas notojn "unclassified ability" (neklasifikita kapablo)
+### Mi ricevas notojn "unclassified ability" (neklasifikita kapablo) {#im-getting-unclassified-ability-notices}
 
 - Tio estas norma por novaj tretiĝaj kapablaboj
 - Reviziu kaj klasifigu ilin en la admin notoj
 - Vidu **Ability Visibility** por detalojn pri klasifikado
 
-## Malversa Kompatibilitaj Periodo (Backward Compatibility)
+## Malversa Kompatibilitaj Periodo (Backward Compatibility) {#backward-compatibility}
 
-### Ekzistantaj Konfiguracioj
+### Ekzistantaj Konfiguracioj {#existing-configurations}
 
 Se vi havas ekzistantajn tretiĝajn kapablabajn konfiguraciojn:
 
@@ -223,27 +223,27 @@ Se vi havas ekzistantajn tretiĝajn kapablabajn konfiguraciojn:
 
 Por konservi vian personalan konfiguracion, restu en Manua aŭ Vétaj modo.
 
-### Deprecacia Tempora Planigo
+### Deprecacia Tempora Planigo {#deprecation-timeline}
 
 - **v1.12.0**: Vétaj kaj Manua modoj estas tute suportitaj
 - **v1.13.0+**: Vétaj modo povas montri deprecacia notojn
 - **v2.0.0**: Vétaj modo povus esti forigita (TBD)
 
-## La plej Bonaj Praktikoj (Best Practices)
+## La plej Bonaj Praktikoj (Best Practices) {#best-practices}
 
-### Por Novaj Instaloj
+### Por Novaj Instaloj {#for-new-installations}
 
 - Uzuu Auto mode ( ĝi estas la defaulto)
 - Permitigu al Superdav AI Agent diskuti kapablabojn aŭtomate
 - Uzuu Ability Visibility por kontroli aliron
 
-### Por Ekzistantaj Instaloj
+### Por Ekzistantaj Instaloj {#for-existing-installations}
 
 - Migru al WordPress 7.0+ kiam eble
 - Migri al Auto mode por simpligita administro
 - Reviziu kaj klasifigu kapablabojn uzante Ability Visibility
 
-### Por Personalaj Kapablej
+### Por Personalaj Kapablej {#for-custom-abilities}
 
 - Registri kapablabojn per WordPress hooks (Abilities API)
 - Evitu personalaj registroj de kapablaboj
@@ -255,7 +255,7 @@ Por konservi vian personalan konfiguracion, restu en Manua aŭ Vétaj modo.
 4. **Klasifi la kapablitajn**: Reviziĝu kaj klasifi ĉiuj neklasifizitaj kapabilitaj
 5. **Testi**: Verifikiĝu ke vian treta parte kapabilitaj funkcias ĝuste
 
-## Relacionaj Temoj
+## Relacionaj Temoj {#next-steps}
 
 - **Kapabilitato Vido (Ability Visibility)**: Kontroli, kie kapabilitaj estas eksponitaj
 - **WordPress Abilities API**: Studiu pri la nativa registriĝo de kapabilitaj WordPress

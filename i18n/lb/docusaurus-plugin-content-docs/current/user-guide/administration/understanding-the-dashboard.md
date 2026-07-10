@@ -3,31 +3,31 @@ title: Verständnis vom Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Versto de Ultimate Multisite Dashboard verstaan
+# Versto de Ultimate Multisite Dashboard verstaan {#understanding-the-ultimate-multisite-dashboard}
 
 Bevor mir in méi avansiert konfigurationsoptionen und de operationelle Aspekten vo Ultimate Multisite vertouchen, luege mer eus de dashboard a.
 
 Wie bi villne WordPress plugins erstellt Ultimate Multisite en Menü-Eintrag uf Netzwerksniveau mit em Titel **Ultimate Multisite** mit ere Reihe vo Untermenü-Einträgen drunder.
 
-## Network Dashboard Widgets
+## Network Dashboard Widgets {#network-dashboard-widgets}
 
 Ultimate Multisite füegt es paar nützlichi Widgets in de Netzwerk-Dashboard i. Das Dashboard findet mer, indem mir zu **My Sites → Network Admin → Dashboard** navigiere. D'Widgets sind so gmacht, dass sie en eifache Zuegang zu Informatione und übliche Operatione für de Netzwerkadministrator biete.
 
 ![Network Dashboard mit Ultimate Multisite Widgets](/img/admin/network-dashboard-full.png)
 
-### Ersti Schritt
+### Ersti Schritt {#first-steps}
 
 ![First Steps Widget](/img/admin/network-dashboard-first-steps.png)
 
 Das Widget erscheint bi ere frische Installation vo Ultimate Multisite und erinnert de Netzwerkadministrator dra, zusätzlechi Ufgabe abzschlüsse wie d'Konfigurierig vo ere Zahligsmethode und d'Erstellig vo eme Testkonto.
 
-### Zämmefassig (Summary)
+### Zämmefassig (Summary) {#summary}
 
 ![Summary Widget](/img/admin/network-dashboard-summary.png)
 
 S'Summary Widget berichtet über d'Anzahl vo de Registrierige und ihri Iikomme für de Tag. D'MRR (Monthly Recurring Revenue) zeigt en prognostizierte Gesamtbetrag a allne Kunde mit iikommensgenerierende Abonnements.
 
-### Aktivitätsstrom (Activity Stream)
+### Aktivitätsstrom (Activity Stream) {#activity-stream}
 
 ![Activity Stream Widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Das Widget berichtet über Ereignis uf Ultimate Multisite. Ereignis umfasse Regi
 
 Bitte luege Sie sich de Abschnitt Events i de Dokumentation für en detaillierti Beschriibig a.
 
-### Jetzt (Right Now)
+### Jetzt (Right Now) {#right-now}
 
 ![Right Now Widget](/img/admin/network-dashboard-right-now.png)
 
 Dëst Utility Widget zeigt en churtz Zämmefassig vo Benutzer und Site in de Netzwer. Handy Shortcuts obe laht dir druf mit eme Klick neui Site oder Benutzer z'erstelle.
 
-### News und Diskussione
+### News und Diskussione {#news-and-discussions}
 
 ![News and Discussions widget](/img/admin/network-dashboard-news.png)
 
 Dëst Widget holt und zeigt d'neuesti Ultimate Multisite News a. Halt en Auge druf für Infos über Updates, kritische Bugs und Sicherheitsfixes.
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#ultimate-multisite-dashboard}
 
 Wann s'Netzwerk-Level Dashboard ganz umfassendi Infos über s'Netzwerk zeigt, präsentiert s'Ultimate Multisite Dashboard (wo du am oberste Level vum Ultimate Multisite Menü findsch) Infos über de Service selber.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Monatliches wiederkehrendes Umsatzwachstum
+### Monatliches wiederkehrendes Umsatzwachstum {#monthly-recurring-revenue-growth}
 
 D'MRR (Monthly Recurring Revenue) Chart zeigt en monatliche Ufschlüssel vo de Iikomme über en 12-monatskalendärs Ziitruum a.
 
@@ -61,7 +61,7 @@ D'MRR (Monthly Recurring Revenue) Chart zeigt en monatliche Ufschlüssel vo de I
 
 Neui Iikomme wërd blau gfüehlt, wyl Abmeldungen in rot widergfüelet ginn.
 
-### Datumsspeichersupport
+### Datumsspeichersupport {#date-range-support}
 
 Je nach Anzahl vo Kunde und Aktivité chönne d'Statistike überwältigend wärde. D'Datumsspeichersupport, wo i de Dashboard integriert isch, laht em Netzwerkadministrator fokusier sinn op nur déi Infos a, déi er brucht an Zitruum.
 

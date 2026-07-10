@@ -3,7 +3,7 @@ title: Catatan Perubahan Agen Dukungan
 sidebar_position: 99
 _i18n_hash: 3eb988800ba5207fd2797d2539b1bc5b
 ---
-# Catatan Perubahan Support Agents
+# Catatan Perubahan Support Agents {#support-agents-changelog}
 
 Versi: 1.0.14 - Dirilis pada 2026-05-05
 * Perbaikan: Menambahkan header Requires Plugins untuk deklarasi dependensi plugin WordPress yang benar

@@ -1,26 +1,46 @@
 ---
-title: Manuál nastavení
+title: Reference nastavení
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Reference nastavení
+# Přehled nastavení {#settings-reference}
 
-Tato stránka sleduje nastavení, která ovlivňují každodenní administraci a nedávné změny chování v Ultimate Multisite.
+Tato stránka sleduje nastavení, která ovlivňují každodenní správu a nedávné změny chování v Ultimate Multisite.
 
-## Other Options
+## Další možnosti {#other-options}
 
-Sekce **Other Options** je umístěna pod **Ultimate Multisite > Settings > Login & Registration**.
+Oblast **Další možnosti** se zobrazuje v části **Ultimate Multisite > Settings > Login & Registration**.
 
 | Nastavení | Popis |
 |---|---|
-| **Enable Jumper** | Zobrazuje nástroj rychlé navigace Jumper v administraci. Použijte ho k přímému přesunu na obrazovky Ultimate Multisite, objekty sítě a podporované cíle administrace. Pokud nechcete tento zkratku vidit, vypněte ho. |
+| **Enable Jumper** | Zobrazuje nástroj Jumper pro rychlou navigaci v administrační oblasti. Použijte ho k přechodu přímo na obrazovky Ultimate Multisite, síťové objekty a podporované administrační cíle. Vypněte ho, pokud nechcete, aby byla tato zkratka viditelná. |
 
-## Error reporting and telemetry
+## Hlášení chyb a telemetrie {#error-reporting-and-telemetry}
 
-Dříve existující možnost volby pro hlášení chyb byla ze stránky nastavení odstraněna. Anonymní telemetrie je vypnutá a neexistuje uživatelské rozhraní pro její aktivaci.
+Předchozí nastavení přihlášení k hlášení chyb bylo ze stránky nastavení odstraněno. Anonymní telemetrie je vypnutá a neexistuje žádný přepínač v UI, kterým by ji bylo možné povolit.
 
-Pokud udržujete interní runbooky nebo snímky obrazovky pro stránku nastavení, odstraňte odkazy na staré pole pro volbu hlášení chyb, aby administrátoři neměli pocit, že hledají nastavení, které již neexistuje.
+Pokud udržujete interní runbooky nebo snímky obrazovky pro stránku nastavení, odstraňte odkazy na staré pole přihlášení k hlášení chyb, aby správci nehledali nastavení, které už není přítomné.
 
-## Import/Export settings
+## Nastavení importu/exportu {#importexport-settings}
 
-Karta **Import/Export** popisuje, která nastavení ovládá a přímo odkazuje na **Ultimate Multisite > Site Export** pro archivy webu i sítě. Použijte kartu nastavení pro konfiguraci importu/exportu, použijte **Tools > Export & Import** pro pracovní postup exportu/importu jedné webové instance a použijte nástroj Site Export, když potřebujete kompletní archiv exportu sítě.
+Karta nastavení **Import/Export** popisuje, která nastavení ovládá, a odkazuje přímo na **Ultimate Multisite > Site Export** pro archivy webu a sítě. Kartu nastavení použijte pro konfiguraci importu/exportu, **Tools > Export & Import** použijte pro workflow exportu/importu jednoho webu a nástroj Site Export použijte, když potřebujete úplný archiv Network Export.
+
+## Upozornění na zůstatek Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
+
+Když je addon Domain Seller připojen k HostAfrica, správci sítě nyní uvidí zavíratelné upozornění na nízký zůstatek, když je zůstatek účtu prodejce příliš nízký pro spolehlivé zpracování registrací nebo prodloužení domén.
+
+Berte toto oznámení jako provozní upozornění: doplňte zůstatek prodejce HostAfrica před přijímáním dalších placených registrací domén, poté se vraťte do nastavení Domain Seller nebo na obrazovku monitorování domén a potvrďte, že registrace a prodloužení mohou normálně pokračovat.
+
+## Nastavení konektorů poskytovatelů AI {#ai-provider-connector-settings}
+
+Nastavení konektorů poskytovatelů AI nyní zpřístupňují pouze podporované fondy OAuth účtů:
+
+| Poskytovatel | Průběh nastavení |
+|---|---|
+| **Anthropic Max** | Připojte jeden nebo více účtů Anthropic Max pomocí tlačítka OAuth. Použijte ruční záložní postup OAuth, když sandboxovaný prohlížeč nemůže automaticky dokončit přesměrování. |
+| **OpenAI ChatGPT/Codex** | Připojte účty ChatGPT prostřednictvím stejného workflow fondu OAuth. Operace podporované konektorem mohou po připojení účtu používat volání nástrojů ChatGPT Codex. |
+| **Google AI Pro** | Připojte účty Google AI Pro prostřednictvím OAuth a poté obnovte konektor, pokud se seznam účtů neaktualizuje okamžitě. |
+
+Cursor Pro už není podporovaný poskytovatel. Odstraňte staré interní snímky obrazovky, runbooky nebo kroky onboardingu, které zmiňují pole nastavení Cursor Pro nebo cesty konektoru.
+
+Při přidávání nebo odebírání účtů poskytovatele zadejte platnou e-mailovou adresu účtu, který se obnovuje nebo maže, a před testováním operací podporovaných konektorem uložte nastavení poskytovatele.

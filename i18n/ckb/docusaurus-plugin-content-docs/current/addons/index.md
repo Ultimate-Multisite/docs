@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# اضافات Ultimate Multisite
+# اضافات Ultimate Multisite {#ultimate-multisite-addons}
 
 إضافات (Addons) إضافية لـ Ultimate Multisite بتضيف ميزات وتكاملات جديدة للموقع بتاعك. أغلب الإضافات مدفوعة وممكن تشتريها من [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## نصب (Installation)
+## نصب (Installation) {#installation}
 
 ممكن تنصب الإضافات بطريقتين:
 
 1. **عن صفحة الإضافة (Via the Addon Page)** -- روح لصفحة إدارة الإضافات في لوحة تحكم ووردبريس بتاعتك
 2. **تنزيل يدوي (Manual Download)** -- نزل من [حسابك](https://ultimatemultisite.com/my-account/downloads/) وارفعها عن طريق Plugins > Add New
 
-## الإضافات المتاحة
+## الإضافات المتاحة {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

@@ -3,11 +3,11 @@ title: Domeenid tooted ja hinnad
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Dome produktsioonid ja hinnad
+# Dome produktsioonid ja hinnad {#domain-products-and-pricing}
 
 Dome produktsioonid on see, kuidas sa kontrollitad hinnatust, TLD-dokumente (top-level domain), WHOIS privaatsust ja pakutaja valimist. Iga dome produktsioon on standardne Multisite Ultimate toode lisaks **Domain Settings** tabile.
 
-## Dome produktsiooni loomine
+## Dome produktsiooni loomine {#creating-a-domain-product}
 
 1. Minenda **Network Admin › Ultimate Multisite › Products** sekkoni.
 2. Klõpsake **Add New** (Uus lisamine).
@@ -17,13 +17,13 @@ Dome produktsioonid on see, kuidas sa kontrollitad hinnatust, TLD-dokumente (top
 
 Dome produktsioonid ilmub toote loendis purpurise **Domain** badgeiga ja neid saab suunata kasutades **Domain Products** tabit.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Pakutaja
+### Pakutaja {#provider}
 
 Vali, milline registratsija registreerimise vastutab sellele tootelle. Oletuks on globaalne **Default provider**, mis on seostatud Domain Seller -seadistustega.
 
-### Toetatud TLD-dokumentid (Supported TLDs)
+### Toetatud TLD-dokumentid (Supported TLDs) {#supported-tlds}
 
 Jätke tühja, kui luua **catch-all product** (kõik vastav toode), mis kasutab kõik need TLD-dokumentid, mida teine toode ei vasta.
 
@@ -31,7 +31,7 @@ Sisesta kommaga eraldatud loend TLD-dokumentidest (nt `.com, .net, .org`) luua *
 
 **Kuidas toote vastamine toimib:** Kui klient otsib dome'i, lisamoodus valib kõige spetsiifsemalt vastavat toote. Toode, mille TLD-loendis on `.com`, on prioriteetiks catch-all tootile. Kui ei vasta mitte mingil TLD-spesifilisel tootega, kasutatakse catch-allit. Kui toote pole olemas, dome otsing ei näita.
 
-### Märkimise tüüp (Markup type)
+### Märkimise tüüp (Markup type) {#markup-type}
 
 Kolm režiimi kontrollivad, kuidas teie etalepriisi lasketakse wholesale hinnast:
 
@@ -41,11 +41,11 @@ Kolm režiimi kontrollivad, kuidas teie etalepriisi lasketakse wholesale hinnast
 | **Fiks hinnakord (Fixed markup)** | Lisab fikseeritud dollari väärtuse. $5 märkimine $10 dome'ile annab $15. |
 | **Fiks hinnakord (Fixed price)** | Igagi ignoreerib wholesale hinnaga. Lõpulemiseks esitab alati teie sisestatud summa. |
 
-### Sissejuhatav hindaostamine (Introductory pricing)
+### Sissejuhatav hindaostamine (Introductory pricing) {#introductory-pricing}
 
 Käivitamine disklaussitud esimese aasta hinnaga. Asetage eraldi **Sissejuhatuspris** (aasta 1 pris) seoses regulaarse **Uudiseerimisprisega** (aasta 2 ja pärast seda). Klient näeb mõlemad hinnad ostukorvuse ajal, et teada, mida uusimisel ootuda.
 
-### WHOIS privaatsus
+### WHOIS privaatsus {#whois-privacy}
 
 Kontrollib, kas domeenide jaoks selle toote abil pakutakse WHOIS privaatsus kaitse.
 
@@ -59,7 +59,7 @@ Namecheap kasutab WHOIS privaatsust WhoisGuardiga (alati tasuta). OpenSRS kasuta
 
 ---
 
-## TLD import ja synkronimine
+## TLD import ja synkronimine {#tld-import-and-sync}
 
 Domeenide tooted näitavad reaaliaikseid wholesale hinnakujutusi, mida on põlvestatud ühendatud tarjoja poolt. Selleks tuleb TLD-id imporda.
 
@@ -70,7 +70,7 @@ Synkronimise pärast siiruda domeeniprodukti Dome Settings tabile ja kasutada TL
 
 ---
 
-## Automaatiline uuendamine
+## Automaatiline uuendamine {#auto-renewal}
 
 Domeenide uudiseerimised on seotud kliendi li membershipi olekust:
 
@@ -88,7 +88,7 @@ Domeenide uudiseerimised on seotud kliendi li membershipi olekust:
 
 ---
 
-## Administratsioon: Manuaalne domeeni registreimine
+## Administratsioon: Manuaalne domeeni registreimine {#admin-manual-domain-registration}
 
 Domeeni tegelikuna klienta nimel registreima, ilma et klient läbi ostukogud (checkout) minna:
 

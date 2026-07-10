@@ -3,7 +3,7 @@ title: Gestionar Membresíes
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestió de membresdies
+# Gestió de membresdies {#managing-memberships}
 
 En Ultimate Multisite pots gestionar membresdies i accedir a totes les subscripcions de la teva xarxa. Revisa i edita detalls de subscripció com a plans i productes, el nombre de sites, la quantitat de facturació i la freqüència, l'historial de pagaments i els *timestamps*.
 

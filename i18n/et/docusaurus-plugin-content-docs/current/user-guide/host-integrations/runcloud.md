@@ -3,17 +3,17 @@ title: RunCloud integreerimine
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Integreerimine
+# RunCloud Integreerimine {#runcloud-integration}
 
-## Üldinekuvur
+## Üldinekuvur {#overview}
 RunCloud on pilutu põhine oleva serveri haldamise platvorm, mis võimaldab teil lihtsalt veebilehtide oma pilutena serveritele paigutada ja hallata. See integreerimine võimaldab automaatselt domeenid synkronida ja SSL-tööcertificate juhtida Ultimate Multisite'i ja RunCloudi vahel.
 
-## Funktsioonid
+## Funktsioonid {#features}
 - Domeeni automaatne synkronimine
 - SSL-tööcertificate juhtimine
 - Domeeni eemaldamine, kui märgistused (mappings) eemaldatakse
 
-## nõuded
+## nõuded {#requirements}
 Järgnev konstantsid tuleb definitsiona `wp-config.php` failis määrata:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Seadistamise juhised
+## Seadistamise juhised {#setup-instructions}
 
-### 1. Pide RunCloud API-kujundused (Credentials)
+### 1. Pide RunCloud API-kujundused (Credentials) {#1-get-your-runcloud-api-credentials}
 
 1. Logi sisse oma RunCloud dashboardile
 2. Minna "User Profile"i sekkoni (klõpsake oma profiilipilt ülemisel paremal poole)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Klõpsake "Generate API Key"t, kui teil ei ole seda juba
 5. Kopya oma API-key ja API-salakood
 
-### 2. Pide oma serveri ja app-IDd (App IDs)
+### 2. Pide oma serveri ja app-IDd (App IDs) {#2-get-your-server-and-app-ids}
 
 1. RunCloud dashboardis minna "Servers" sekkoni
 2. Valige server, kus teie WordPress multisite on paigutatud
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Minna "Web Applications" sekkoni ja valige oma WordPress app
 5. App-ID näed URL-is: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Lisage konstantsid wp-config.php'le
+### 3. Lisage konstantsid wp-config.php'le {#3-add-constants-to-wp-configphp}
 
 Lisage järgmised konstantsid oma `wp-config.php` failile:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Lülitage integreerimine sisse
+### 4. Lülitage integreerimine sisse {#4-enable-the-integration}
 
 1. WordPress adminisüsteemidesse pääset Ultimate Multisite > Settings menüüle
 2. Navigeerige "Domain Mapping" välilele
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Lülitage RunCloud integraalise aktiveerimise (Enable)
 5. Klõpsake "Save Changes" (Muutuste salvestamine)
 
-## Kuidas see toimib
+## Kuidas see toimib {#how-it-works}
 
 Kui domeen on Ultimate Multisite'is mappitud:
 
@@ -70,19 +70,19 @@ Kui domeen on Ultimate Multisite'is mappitud:
 
 Subdomiinpaigalduste korral integreaalise haldab automaatselt subdomeenide loomist RunCloudis uute sisse lisatavate platvormide puhul.
 
-## Probleemide lahendamine
+## Probleemide lahendamine {#troubleshooting}
 
-### API ühenduse probleemid
+### API ühenduse probleemid {#api-connection-issues}
 - Kontrollige, kas teie API kinnitused on õigud
 - Kontrollige, kas teie serveri ja app ID'd on õigud
 - Veenduge, et RunCloudi kontes on vajalikud lubanded (permissions)
 
-### SSL-sertifikaadega seotud probleemid
+### SSL-sertifikaadega seotud probleemid {#ssl-certificate-issues}
 - RunCloud võib SSL-sertifikaate väljastamiseks aega võtta
 - Kontrollige, kas teie domeenid viitavad õigutult serveri IP-adressile
 - Kontrollige RunCloudi SSL-seadistusi oma rakenduse kohta
 
-### Domeeni lisamata jäämine
+### Domeeni lisamata jäämine {#domain-not-added}
 - Kontrollige Ultimate Multisite logud vaimuudest (error messages)
 - Veenduge, et domeen ei ole juba RunCloudis lisatud
 - Veenduge, et teie RunCloudi plaan toetab mitmeid domeene

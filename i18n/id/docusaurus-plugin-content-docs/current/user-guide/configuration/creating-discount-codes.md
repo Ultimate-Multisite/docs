@@ -1,98 +1,106 @@
 ---
 title: Membuat Kode Diskon
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Membuat Kode Diskon (v2)
+# Membuat Kode Diskon (v2) {#creating-discount-codes-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Dengan Ultimate Multisite, Anda bisa membuat kode diskon untuk memberikan potongan harga kepada klien pada langganan mereka. Dan cara membuatnya sangat mudah!
+Dengan Ultimate Multisite Anda dapat membuat kode diskon untuk memberikan diskon kepada klien Anda pada langganan mereka. Dan membuatnya mudah!
 
-## Membuat dan Mengedit Kode Diskon
+## Membuat dan Mengedit Kode Diskon {#creating-and-editing-discount-codes}
 
 Untuk membuat atau mengedit kode diskon, buka **Ultimate Multisite > Discount Codes**.
 
-![](/img/config/discount-codes-list.png)
+![Daftar kode diskon — status kosong sebelum ada kode](/img/config/discount-codes-empty.png)
 
-Di sana Anda akan melihat daftar kode diskon yang sudah pernah dibuat.
+Di sana Anda akan memiliki daftar kode diskon yang sudah Anda buat.
 
-Anda bisa mengklik **Add Discount** **Code** untuk membuat kupon baru, atau mengedit yang sudah ada dengan mengarahkan kursor ke atasnya lalu mengklik **Edit**.
+Anda dapat mengklik **Add Discount** **Code** untuk membuat kupon baru atau Anda dapat mengedit yang sudah Anda miliki dengan mengarahkan kursor ke atasnya dan mengklik **Edit**.
 
-![Daftar kode diskon dengan aksi hover](/img/config/discount-codes-list.png)
+![Daftar kode diskon dengan tindakan saat kursor diarahkan yang menampilkan tautan Edit dan Delete](/img/config/discount-codes-list-hover.png)
 
-![Tombol Add Discount Code](/img/config/discount-codes-list.png)
+![Tombol Add Discount Code di header halaman](/img/config/discount-codes-add-button.png)
 
-Anda akan diarahkan ke halaman untuk membuat atau mengedit kode kupon. Pada contoh ini, kita akan membuat yang baru.
+Anda akan diarahkan ke halaman tempat Anda akan membuat atau mengedit kode kupon Anda. Pada contoh ini kita akan membuat yang baru.
 
-![Halaman edit kode diskon](/img/config/discount-codes-list.png)
+![Halaman edit kode diskon dengan semua bagian terlihat](/img/config/discount-code-edit.png)
 
 Mari kita lihat pengaturan yang tersedia di sini:
 
-**Enter Discount Code:** Ini hanyalah nama dari kode diskon Anda. Ini bukan kode yang perlu digunakan pelanggan di formulir checkout.
+**Enter Discount Code:** Ini hanyalah nama kode diskon Anda. Ini bukan kode yang perlu digunakan pelanggan Anda pada formulir checkout.
 
-**Description:** Di sini, Anda bisa menjelaskan secara singkat tujuan kupon ini.
+**Description:** Di sini, Anda dapat menjelaskan secara singkat untuk apa kupon ini.
 
-![Kolom nama dan deskripsi kode diskon](/img/config/discount-codes-list.png)
+![Kolom nama dan deskripsi kode diskon di bagian atas halaman edit](/img/config/discount-code-description.png)
 
-**Coupon code:** Di sinilah Anda menentukan kode yang harus dimasukkan pelanggan saat checkout.
+Anda juga dapat melihat kode diskon sebagai aktif atau tidak aktif:
 
-![Kolom kode kupon](/img/config/discount-codes-list.png)
+![Status aktif kode diskon](/img/config/discount-code-active.png)
 
-**Discount:** Di sini, Anda bisa mengatur **persentase** atau **jumlah tetap** uang untuk kode diskon Anda.
+**Coupon code:** Di sinilah Anda menentukan kode yang perlu dimasukkan pelanggan Anda selama checkout.
 
-![Pengaturan persentase atau jumlah tetap diskon](/img/config/discount-codes-list.png)
+![Kolom kode kupon tempat pelanggan memasukkan kode saat checkout](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Jika opsi ini dinonaktifkan, kode diskon hanya akan diterapkan pada **pembayaran pertama**. Semua pembayaran berikutnya tidak akan mendapat diskon. Jika opsi ini diaktifkan, kode diskon akan berlaku untuk semua pembayaran di masa mendatang.
+**Discount:** Di sini, Anda dapat mengatur **persentase** atau **jumlah tetap** uang untuk kode diskon Anda.
 
-**Setup fee discount:** Jika opsi ini dinonaktifkan, kode kupon **tidak akan memberikan diskon untuk biaya setup** dari pesanan. Jika opsi ini diaktifkan, Anda bisa mengatur diskon (persentase atau jumlah tetap) yang akan diterapkan kode kupon ini pada biaya setup dari paket Anda.
+![Pengaturan jumlah diskon dengan dropdown persentase atau jumlah tetap](/img/config/discount-code-amount.png)
 
-![Opsi apply to renewals dan setup fee discount](/img/config/discount-codes-list.png)
+**Apply to renewals:** Jika opsi ini dinonaktifkan, kode diskon ini hanya akan diterapkan pada **pembayaran pertama**. Semua pembayaran lainnya tidak akan mendapatkan diskon. Jika opsi ini diaktifkan, kode diskon akan berlaku untuk semua pembayaran mendatang.
+
+**Setup fee discount:** Jika opsi ini dinonaktifkan, kode kupon **tidak akan memberikan diskon apa pun untuk biaya setup** pesanan. Jika opsi ini diaktifkan, Anda dapat mengatur diskon (persentase atau jumlah tetap) yang akan diterapkan kode kupon ini pada biaya setup plan Anda.
+
+![Opsi toggle Apply to renewals dan setup fee discount](/img/config/discount-code-renewals.png)
 
 **Active:** Aktifkan atau nonaktifkan kode kupon ini secara manual.
 
-![Toggle aktif untuk kode diskon](/img/config/discount-codes-list.png)
+![Toggle Active untuk mengaktifkan atau menonaktifkan kode diskon secara manual](/img/config/discount-code-active.png)
 
-Di bagian **Advanced Optio** **ns**, kita memiliki pengaturan berikut:
+Di bawah **Advanced Options**, kami memiliki pengaturan berikut:
+
+![Opsi lanjutan kode diskon](/img/config/discount-code-advanced.png)
 
 **Limit uses:**
 
-  * **Uses:** Di sini, Anda bisa melihat berapa kali kode diskon sudah digunakan.
+  * **Uses:** Di sini, Anda dapat melihat berapa kali kode diskon digunakan.
 
-  * **Max uses:** Ini akan membatasi berapa kali pengguna bisa menggunakan kode diskon ini. Misalnya, jika Anda memasukkan angka 10 di sini, kupon hanya bisa digunakan 10 kali. Setelah batas ini tercapai, kode kupon tidak bisa digunakan lagi.
+  * **Max uses:** Ini akan membatasi jumlah kali pengguna dapat menggunakan kode diskon ini. Misalnya, jika Anda memasukkan 10 di sini, kupon hanya dapat digunakan 10 kali. Setelah batas ini, kode kupon tidak dapat digunakan lagi.
 
-![Pengaturan limit uses dengan kolom uses dan max uses](/img/config/discount-codes-list.png)**Start & expiration dates:** Di sini Anda bisa menambahkan tanggal mulai dan/atau tanggal kedaluwarsa untuk kupon Anda.
+![Pengaturan batas penggunaan dengan jumlah penggunaan saat ini dan kolom penggunaan maksimum](/img/config/discount-code-limit-uses.png)
 
-![Kolom tanggal mulai dan kedaluwarsa](/img/config/discount-codes-list.png)
+**Start & expiration dates:** Di sini Anda akan memiliki opsi untuk menambahkan tanggal mulai dan/atau tanggal kedaluwarsa ke kupon Anda.
 
-**Limit products:** Jika Anda mengaktifkan **Select products**, semua produk Anda akan ditampilkan. Anda bisa memilih secara manual (dengan mengaktifkan atau menonaktifkan) produk mana yang bisa menerima kode kupon ini. Produk yang dinonaktifkan di sini tidak akan menunjukkan perubahan apa pun jika pelanggan mencoba menggunakan kode kupon ini pada produk tersebut.
+![Kolom tanggal mulai dan kedaluwarsa untuk menjadwalkan kode diskon](/img/config/discount-code-dates.png)
 
-![Toggle pemilihan limit products](/img/config/discount-codes-list.png)
+**Limit products:** Jika Anda mengaktifkan **Select products**, semua produk Anda akan ditampilkan kepada Anda. Anda akan memiliki opsi untuk memilih secara manual (dengan mengaktifkan atau menonaktifkan) produk mana yang dapat menerima kode kupon ini. Produk yang dinonaktifkan di sini tidak akan menampilkan perubahan apa pun jika pelanggan Anda mencoba menggunakan kode kupon ini pada produk tersebut.
+
+![Bagian batas produk dengan sakelar toggle per produk](/img/config/discount-code-limit-products.png)
 
 Setelah mengatur semua opsi ini, klik **Save Discount Code** untuk menyimpan kupon Anda dan selesai!
 
-![Tombol Save Discount Code](/img/config/discount-codes-list.png)
+![Tombol Save Discount Code di bagian bawah halaman edit](/img/config/discount-code-save.png)
 
-Kupon sekarang sudah ada di daftar Anda dan dari sana, Anda bisa mengklik untuk **mengedit atau menghapusnya**.
+Kupon sekarang ada di daftar Anda dan, dari sana, Anda dapat mengklik untuk **mengedit atau menghapus** kupon tersebut.
 
-![Kode diskon dalam daftar dengan opsi edit dan delete](/img/config/discount-codes-list.png)
+![Baris kode diskon dalam daftar dengan tindakan Edit dan Delete saat kursor diarahkan](/img/config/discount-codes-list-hover.png)
 
-### 
+###
 
-### Menggunakan Parameter URL:
+### Menggunakan Parameter URL: {#using-url-parameters}
 
-Jika Anda ingin menyesuaikan tabel harga atau membuat halaman kode kupon yang menarik untuk website Anda dan ingin menerapkan kode diskon ke formulir checkout secara otomatis, Anda bisa melakukannya melalui parameter URL.
+Jika Anda ingin menyesuaikan tabel harga Anda atau membangun halaman kode kupon yang bagus untuk situs web Anda dan ingin menerapkan kode diskon ke formulir checkout Anda secara otomatis, Anda dapat melakukannya melalui parameter URL.
 
-Pertama, Anda perlu mendapatkan tautan yang bisa dibagikan untuk paket Anda. Untuk melakukan ini, buka **Ultimate Multisite > Products** dan pilih sebuah paket.
+Pertama, Anda perlu mendapatkan tautan yang dapat dibagikan untuk plan Anda. Untuk melakukan ini, buka **Ultimate Multisite > Products** dan pilih plan.
 
-Klik tombol **Click to Copy Shareable Link**. Ini akan memberikan Anda tautan yang bisa dibagikan untuk paket spesifik ini. Dalam contoh kita, tautan yang diberikan adalah [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+Klik tombol **Click to Copy Shareable Link**. Ini akan memberi Anda tautan yang dapat dibagikan ke plan spesifik ini. Dalam kasus kami, tautan yang dapat dibagikan yang diberikan adalah [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
 
-![Halaman produk dengan tombol shareable link](/img/config/products-list.png)
+![Halaman produk dengan tombol tautan yang dapat dibagikan](/img/config/products-list.png)
 
-Untuk menerapkan kode diskon Anda ke paket spesifik ini, cukup tambahkan parameter **?discount_code=XXX** ke URL. Di mana **XXX** adalah kode kupon.
+Untuk menerapkan kode diskon Anda ke plan spesifik ini, cukup tambahkan parameter **?discount_code=XXX** ke URL. Di mana **XXX** adalah kode kupon.
 
-Dalam contoh kita di sini, kita akan menerapkan kode kupon **50OFF** ke produk spesifik ini.
+Dalam contoh kami di sini, kami akan menerapkan kode kupon **50OFF** ke produk spesifik ini.
 
-URL untuk paket spesifik ini dengan kode diskon 50OFF yang diterapkan akan terlihat seperti: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+URL untuk plan spesifik ini dan dengan kode diskon 50OFF diterapkan akan terlihat seperti: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

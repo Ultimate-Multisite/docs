@@ -3,9 +3,9 @@ title: Migreer van V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migreer van V1
+# Migreer van V1 {#migrating-from-v1}
 
-## Ultimate Multisite het geskakel van sy oorspronklike 1.x vrystellingslyn na die 2.x vrystellingslyn.
+## Ultimate Multisite het geskakel van sy oorspronklike 1.x vrystellingslyn na die 2.x vrystellingslyn. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite weergawe 2.0 en hoër is 'n volledige herskrywing van die kodebasis, wat beteken dat daar baie min gedeel is tussen die ou weergawe en die nuwe. Om hierdie rede, wanneer jy van 1.x na 2.x opgradeer, sal jou data migreer word na 'n formaat wat die nuwe weergawe kan verstaan.
 
@@ -15,7 +15,7 @@ Hierdie les dek hoe die migrator werk, wat om te doen is in geval van mislukking
 
 _**BELANGRIK: Voordat jy begin om van weergawe 1.x na weergawe 2.0 op te gradeer, verseker asseblief dat jy 'n back-up van jou sywebwerkbasis skep**_
 
-## Eerste stappe
+## Eerste stappe {#first-steps}
 
 Die eerste stap is om die plugin .zip lêer te laai en weergawe 2.0 op jou network admin dashboard te installeer.
 
@@ -51,7 +51,7 @@ Nadat die lisensie geaktiveer is, kan jy die werklike installasie begin deur op 
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Nou, die migrasie
+## Nou, die migrasie {#now-the-migration}
 
 Die migrator het 'n ingeboude veiligheidsfunksie wat jou hele multisite sal nagaan om te verseker dat al jou Ultimate Multisite data gemigreer kan word sonder enige probleme. Klik op die **Run Check** knoppie om die proses te begin.
 
@@ -59,13 +59,13 @@ Die migrator het 'n ingeboude veiligheidsfunksie wat jou hele multisite sal naga
 
 Nadat die ondersoek gerun is, het jy twee moontlikhede: die resultaat kan óf **met** 'n fout óf **sonder 'n fout** wees.
 
-### Met Fout
+### Met Fout {#with-error}
 
 Indien jy 'n foutboodskap ontvang, sal jy die ondersteuningsspan moet kontak sodat hulle jou kan help om die fout reg te stel. Maak seker dat jy die **foutlog** verskaf wanneer jy 'n tiket skep. Jy kan die log afskakel of jy kan op die skakel klik wat sê kontak ons ondersteuningsspan. Dit sal die hulpwidget aan die regterkant van jou bladsy oopmaak met die velde wat vir jou vooraf gevul is, insluitend die foutlogboeke onder die beskrywing.
 
 _**Aangesien die stelsel 'n fout gevind het, sal jy nie kan voortgaan om na weergawe 2.0 te migreer nie. Jy kan dan terugrol na weergawe 1.x om jou netwerk te laat loop totdat die fout reggestel is.**_
 
-### Sonder Fout
+### Sonder Fout {#without-error}
 
 As die stelsel geen fout vind nie, sal jy 'n suksesboodskap en 'n **Migrate** knoppie onderaan sien wat jou sal laat voortgaan met die migrasie. Op hierdie bladsy sal jy herinner word om 'n back-up van jou database te skep voordat jy verder beweeg, wat ons sterk aanbeveel. Druk op **Migrate** as jy reeds 'n back-up het.
 

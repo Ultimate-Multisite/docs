@@ -3,15 +3,15 @@ title: 'Lliurada 11: Troballar clients'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Aula 11: Trobar Clients
+# Aula 11: Trobar Clients {#lesson-11-finding-customers}
 
 Una plataforma fantàstica sense clients és només un passatemps. Aquesta aula cobreix com adquirir clients en un vertical de nich — estratègies que funcionen específicament perquè et centres en una indústria.
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite està operatiu. Ara necessitem que els propietaris de centres de fitness ho trobin i s'hi registrin.
 
-## Per què és diferent l'adquisició de nich
+## Per què és diferent l'adquisició de nich {#why-niche-acquisition-is-different}
 
 Quan et venes a tothom, et competeixen l'atenció en un mercat ruidós. Quan et venes a un nich, tens avantatges:
 
@@ -19,17 +19,17 @@ Quan et venes a tothom, et competeixen l'atenció en un mercat ruidós. Quan et 
 - **El teu missatge ressona immediatament** — "situs web per a centres de fitness" atura a un propietari de gimnàsium a mitjà *scroll*
 - **Les recomanacions es multipliquen** — els propietaris de centres de fitness coneixen altres propietaris de centres de fitness
 
-## Canal 1: Contacte Directe
+## Canal 1: Contacte Directe {#channel-1-direct-outreach}
 
 El camí més ràpid cap als teus primers clients és el contacte personal i direct.
 
-### Trobar prospects
+### Trobar prospects {#find-prospects}
 
 - Busca a Google Maps centres de fitness, gimnàsiums i *personal trainers* de la teva zona
 - Visita els seus sitos web actuals (o nota que no en tenen)
 - Recollecciona informació de contacte dels seus perfils de Google Business o les seves xarxes socials
 
-### Avaluar la seva situació actual
+### Avaluar la seva situació actual {#evaluate-their-current-situation}
 
 Per cada prospecte, nota:
 
@@ -37,7 +37,7 @@ Per cada prospecte, nota:
 - **Web mala**: Prospect fort — mostra'ls com pot ser una millor opció
 - **Web bona**: Prospect feble — ja han resolt aquest problema
 
-### Establir contacte
+### Establir contacte {#make-contact}
 
 Envía un correu electrònic o missatge personalitzat:
 
@@ -48,7 +48,7 @@ Envía un correu electrònic o missatge personalitzat:
 
 No envies correus electrònics en massa. Un contacte personalitzat amb 20 prospects ben investigats superarà un *blast* genèric a 2.000.
 
-## Canal 2: Comunitats de Nich
+## Canal 2: Comunitats de Nich {#channel-2-niche-communities}
 
 Els propietaris de centres de fitness es reuneixen en llocs específics en línia:
 
@@ -57,7 +57,7 @@ Els propietaris de centres de fitness es reuneixen en llocs específics en líni
 - **Fòrums de l'industria** i quaderns de discussió
 - **Grups de LinkedIn** per a professionals del fitness
 
-### Com participar
+### Com participar {#how-to-participate}
 
 No et unesc i et llançis immediatament el teu producte. En comptes de canviar:
 
@@ -66,7 +66,7 @@ No et unesc i et llançis immediatament el teu producte. En comptes de canviar:
 3. **Comparteix quan és rellevant** — quan algú pregunta per sitos web, comparteix la teva plataforma de manera natural
 4. **Crea contingut útil** — escriu publicacions sobre "què fa un gran site web de centre de fitness" que portin naturalment a la teva plataforma
 
-## Canal 3: Marketing de Contingut
+## Canal 3: Marketing de Contingut {#channel-3-content-marketing}
 
 Crea contingut que els propietaris de centres de fitness busquin:
 
@@ -77,7 +77,7 @@ Crea contingut que els propietaris de centres de fitness busquin:
 
 Publica això al teu blog de marketing de FitSite. Amb el temps, aquest contingut es classifica en els motors de cerca i t'intruduïu trànsit orgànic de persones que busquen activament el que tu ofereixes.
 
-## Canal 4: Col·laboracions (Partnerships)
+## Canal 4: Col·laboracions (Partnerships) {#channel-4-partnerships}
 
 Col·labora amb empreses que ja serveixen els centres de fitness:
 
@@ -88,7 +88,7 @@ Col·labora amb empreses que ja serveixen els centres de fitness:
 
 Ofereix comissions per derivació o promoció recíproca. L'addon [AffiliateWP](/addons/affiliatewp) et pot ajudar a configurar un programa formal de derivació.
 
-## Canal 5: Esdeveniments de l'Industria
+## Canal 5: Esdeveniments de l'Industria {#channel-5-industry-events}
 
 Els esdeveniments de l'industria del fitness et posen davant centenars de potencials clients:
 
@@ -99,7 +99,7 @@ Els esdeveniments de l'industria del fitness et posen davant centenars de potenc
 
 No necessites un gran pressupost. Fins i tot assistir com a participant i tenir converses sobre el que fas pot generar *leads*.
 
-## Canal 6: Sires Exposició (Showcase Sites)
+## Canal 6: Sires Exposició (Showcase Sites) {#channel-6-showcase-sites}
 
 El teu millor marketing són els sitos web dels teus clients actuals. Amb permís:
 
@@ -108,7 +108,7 @@ El teu millor marketing són els sitos web dels teus clients actuals. Amb permí
 - Pedeix testimonis a clients satisfets
 - Anima els clients a mencionar FitSite quan es pregunta per el seu site web
 
-## Configurar un programa de derivació
+## Configurar un programa de derivació {#setting-up-a-referral-program}
 
 El boca a boca és el teu canal més potent en un nich. Formalitza-ho:
 
@@ -116,7 +116,7 @@ El boca a boca és el teu canal més potent en un nich. Formalitza-ho:
 2. Ofereix una recompensa als clients actuals per derivacions (un mes gratis, crèdit de compte, etc.)
 3. Fes-ho fàcil — dona-ls un enllaç de derivació i un missatge senzill que puguin reenviar
 
-## Seguir el que funciona
+## Seguir el que funciona {#tracking-what-works}
 
 Per a cada canal, registra:
 
@@ -126,7 +126,7 @@ Per a cada canal, registra:
 
 Aposta més en els canals que funcionen. Corta els canals que no.
 
-## Expectatives realistes
+## Expectatives realistes {#realistic-expectations}
 
 - **Mes 1-3**: 5-20 clients, majoritàriament de contacte direct i comunitats
 - **Mes 4-6**: 20-50 clients, el marketing de contingut comença a contribuir
@@ -134,7 +134,7 @@ Aposta més en els canals que funcionen. Corta els canals que no.
 
 Aquests números varien, però el patró és constant: els primers clients venen de l'esforç direct, els clients posteriors venen dels efectes acumulatius de contingut, derivacions i reputació.
 
-## El que vam construir en aquesta aula
+## El que vam construir en aquesta aula {#what-we-built-this-lesson}
 
 - **Seis canals d'adquisició** adaptats al nich de fitness
 - **Un procés de contacte direct** per obtenir els primers clients

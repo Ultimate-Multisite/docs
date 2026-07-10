@@ -3,13 +3,13 @@ title: Kesiliş kodlaryny döretmek
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kesdi Çünür Kodlar Dörmek (v2)
+# Kesdi Çünür Kodlar Dörmek (v2) {#creating-discount-codes-v2}
 
 _**ÖNEMLİ QAYDAMA: Bu məqalə Ultimate Multisite versiya 2.x-i nəzərdə tutur.**_
 
 Ultimate Multisite ilə müştərilərinizə abunəlikləri üzərində endirim vermək üçün çünür kodlar yarada bilərsiniz. Və onları yaratmaq asandır!
 
-## Çünür Kodları Yaratmaq və Redaktə Etmək
+## Çünür Kodları Yaratmaq və Redaktə Etmək {#creating-and-editing-discount-codes}
 
 Çünür kodu yaratmaq və ya redaktə etmək üçün **Ultimate Multisite > Discount Codes**-a gedin.
 
@@ -87,7 +87,7 @@ Kupon indi siziň listäňizde we, oradan onu **edit etmek ýa-da silmek** üçi
 
 ###
 
-### URL parametrelerini ulamak:
+### URL parametrelerini ulamak: {#using-url-parameters}
 
 Eger siz bahalaýjy tablisaňyzy özüňize laýyklaşdyrmak isleseňiz ýa-da web sahypanyňyz üçin gowy kupon kody sabyşy we checkout formanıza awtomatiki kesinti kodyny ulap bilmek isleýjiniz, bu zat URL parametreleri arkaly mümkin.
 

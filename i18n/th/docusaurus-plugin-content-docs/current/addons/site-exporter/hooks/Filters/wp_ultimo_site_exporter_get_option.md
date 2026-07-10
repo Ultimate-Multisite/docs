@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 ฟิลเตอร์นี้จะส่งค่าตัวเลือกของเครือข่ายที่ถูกแปลงเป็น slug กลับมา
 
-## พารามิเตอร์
+## พารามิเตอร์ {#parameters}
 
 | Name | Type | คำอธิบาย |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | ชื่อตัวเลือก |
 | $default | `mixed` | ค่าเริ่มต้น |
 
-### ตั้งแต่
+### ตั้งแต่ {#since}
 
 - 1.9.6
-### แหล่งที่มา
+### แหล่งที่มา {#source}
 
 กำหนดไว้ใน [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) บรรทัดที่ 126
 
 
-## ค่าที่ส่งกลับ
+## ค่าที่ส่งกลับ {#returns}
 ค่าตัวเลือกของเครือข่ายที่ถูกแปลงเป็น slug

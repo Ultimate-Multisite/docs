@@ -3,15 +3,15 @@ title: Jurnal de modificări al Faptelor Chuck Norris
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Jurnal de modificări Chuck Norris Facts
+# Jurnal de modificări Chuck Norris Facts {#chuck-norris-facts-changelog}
 
-### 1.0.1 - 2025-11-03
+### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * Adăugat: Funcționalitate de actualizare automată prin serverul de actualizare Ultimate Multisite
 * Actualizat: Testat până la WordPress 6.6
 * Actualizat: Structură îmbunătățită a plugin-ului cu autoloader-ul composer
 * Actualizat: Compatibilitate îmbunătățită cu instalările moderne WordPress
 
-### 1.0.0 - 2024-10-21
+### 1.0.0 - 2024-10-21 {#100---2024-10-21}
 * Lansare inițială
 * Peste 110 de fapte despre Chuck Norris
 * Suport complet pentru traduceri

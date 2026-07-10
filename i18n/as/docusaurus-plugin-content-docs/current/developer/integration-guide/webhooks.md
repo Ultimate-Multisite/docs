@@ -3,11 +3,11 @@ title: Webhook Handling
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ব্যৱস্থাপনা (Webhook Handling)
+# Webhook ব্যৱস্থাপনা (Webhook Handling) {#webhook-handling}
 
 বাহ্যিক সেৱাসমূহৰ পৰা ইভেন্ট গ্ৰহণ কৰিবলৈ আৰু Ultimate Multisite লগত ডেটা সিনক্ৰণ কৰিবলৈ কাস্টম webhook end-point সৃষ্টি কৰক।
 
-## কাস্টম Webhook End-point
+## কাস্টম Webhook End-point {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## নিৰাপত্তা বিবেচনা (Security Considerations)
+## নিৰাপত্তা বিবেচনা (Security Considerations) {#security-considerations}
 
 - HMAC বা এটা SHARED SECRET ব্যৱহাৰ কৰি সদায় webhook signature যাচাই কৰক।
 - আপোনাৰ REST route मा এটা `permission_callback` ব্যৱহাৰ কৰক — কেতিয়াও ইয়াক প্ৰডাকচনত `__return_true` সেট নকৰিব।

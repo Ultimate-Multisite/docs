@@ -4,11 +4,11 @@ title: செயல் - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 உள்நுழைவு அங்கீகார குக்கி அமைக்கப்படுவதற்கு இது உடனடியாக இயங்கும்.
 
-## அளவுருக்கள்
+## அளவுருக்கள் {#parameters}
 
 | Name | Type | விளக்கம் |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | அங்கீகார முறை. இயல்பாக 'logged_in'. |
 | $token | `string` | இந்த குக்கிக்கு பயன்படுத்த வேண்டிய பயனரின் அமர்வு டோக்கன். |
 
-### எப்போது இருந்து
+### எப்போது இருந்து {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> அளவுரு சேர்க்கப்பட்டது.
-### மூலம்
+### மூலம் {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) என்ற கோப்பில் 141 வரியில் வரையறுக்கப்பட்டுள்ளது.

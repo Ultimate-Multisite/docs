@@ -3,7 +3,7 @@ title: Hooks y Filtros
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ganchos y filtros de Ultimate Multisite
+# Ganchos y filtros de Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite está compuesto por una gran cantidad de funciones y consultas a la base de datos. Tiene ganchos y filtros que te permitirán modificar o añadir nuevo código a las funciones existentes.
 

@@ -2,23 +2,22 @@
 id: wp_ultimo_ptm_page_wizard_footer
 title: アクション - wp_ultimo_ptm_page_wizard_footer
 sidebar_label: wp_ultimo_ptm_page_wizard_footer
-_i18n_hash: be9fd3374dde4c26037a5932c79c0288
+_i18n_hash: 0a93f82818c02ba65b25dd74d3a5e45d
 ---
-# アクション: wp_ultimo_ptm_page_wizard_footer
+# Action: wp_ultimo_ptm_page_wizard_footer {#action-wpultimoptmpagewizardfooter}
 
-プラグイン開発者がページの下部にスクリプトを追加できるようにします
+plugin 開発者がページ下部にスクリプトを追加できるようにします
 
-## Parameters
+## パラメータ {#parameters}
 
-| 名前 | タイプ | 説明 |
+| Name | Type | Description |
 |------|------|-------------|
 | $ | `\WU_Page` | Multisite Ultimate Page インスタンス |
 
-### Since
+### 導入バージョン {#since}
 
 - 1.8.2
+### ソース {#source}
 
-### Source
-
-- 定義済み in [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) at line 137
-- 定義済み in [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) at line 163
+- [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L163) の 163 行目で定義
+- [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L137) の 137 行目で定義

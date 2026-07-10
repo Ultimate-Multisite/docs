@@ -3,7 +3,7 @@ title: የዕቅዶች ሊጋራ የሚችል ሊንኮችን ማስተዳደር
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# የፕላን ሊንኮችን መጋራት (መቆጣጠር)
+# የፕላን ሊንኮችን መጋራት (መቆጣጠር) {#managing-shareable-links-for-plans}
 
 Ultimate Multisite በደንበኞችዎ ዘንድ የፕላን ሊንኮችን በቀጥታ የመጋራት አማራጭ ይሰጣል። ይህንን ለማድረግ፣ ወደ ማንኛውም የፕላን ማረሚያ ገጽ (edit page) በመሄድ የ _Click to copy the Shareable Link_ የሚለውን ቁልፍ መጫን ያስፈልግዎታል።
 

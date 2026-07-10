@@ -1,119 +1,120 @@
 ---
-title: Kugadzirisa Zaka
+title: Mabatiro eMitero
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Kutiwe Kwotakisa Zaka (Tax Handling)
+# Kubata Mitero {#tax-handling}
 
-Ultimate Multisite inenge yakati ye plugin yedu inenge yakati kune chivimbo chekuti kunge kuita zaka dzinogona pa plans, packages ne services dzako, unogona kunoita zvakanaka pane kuti usazivikanwa kuita add-ons.
+Ultimate Multisite ine module yekuunganidza mutero yakavakirwa muplugin yedu yepakati, saka kana uchida kuunganidza mitero yekutengesa pazvirongwa zvako, mapakeji nemasevhisi, unogona kuzviita zviri nyore pasina kuisa chero maadd-on.
 
-Kune makomborero ekurimo Europe, tinotenderera **add-on** inenge inenge ine zvirimo nezvinhu zvakawanda kuti zvinenge zvichibatsira kudzidzisa VAT (Value Added Tax).
+Kumakambani ari muEurope, tinopa **add-on** rinowedzera maturusi nezvimiro kuti zvinyatsotsigira kutevedzera **VAT**.
 
-Ultimate Multisite haunenge mupfura kana kuita remittance dzakaaka paunenge wese. Tinenge tinenge tichibatsira kunge kuita zaka dzinogona paunenge unenge uchitenda panguva yekuti transaction ine. **Unofanira kuteenda zaka dzinogona wako wechokwadi.**
+Ultimate Multisite haifayeri kana kutumira mitero kuhurumende pachinzvimbo chako; isu tinongokubatsira kuunganidza mitero yakakodzera panguva yekutengeserana. **Ucharamba uchifanira kutumira mitero wega.**
 
-## Kuita Zaka Dzinogona (Enabling Tax Collection)
+## Kugonesa Kuunganidzwa kweMitero {#enabling-tax-collection}
 
-Kuti zaka dzinogona dzine zvichibvumira pane, unofanira kuenda ku **Ultimate Multisite > Settings > Taxes** uye kuita Enable Taxes seting.
+Kuunganidzwa kwemitero hakugoneswi nekusarudzika. Kuti uku ugonese, unofanira kuenda ku **Ultimate Multisite > Settings > Taxes** wobva wachinja kuti ugonese marongero eEnable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Chinja cheEnable Taxes pamusoro peji remarongero eMitero](/img/config/settings-taxes-enable.png)
 
-Iyi ndiyo nzira yakawanda yekuti onge kuona settings dzaka dzinogona:
+Heino maonero akazara epeji remarongero emitero:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Peji rakazara remarongero emitero](/img/config/settings-taxes-full.png)
 
-Unogonawo kunge kuona settings dzakaaka paunenge unenge uchitenda panguva yekuti products dzako dzine zaka.
+Unogonawo kuona marongero emitero ezvigadzirwa zvakasiyana:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Marongero emitero ezvigadzirwa](/img/config/settings-taxes.png)
 
-### Zaka dzinogona dzakave neZaka dzinogona (Tax excluded vs. Tax included)
+### Mutero usina kubatanidzwa vs. Mutero wakabatanidzwa {#tax-excluded-vs-tax-included}
 
-By default, zvose zvinhu zveprices dzako dzine zaka dzinogona dzakave neZaka dzinogona, izvi rinoreva kuti zaka **hanenge dziri kuita** muprice ya product. Kana tikagadzira kuti munhu anofanira kuita zaka pa transaction yakati, tinenge tichingira zaka **pamwe** nemashoko ekubatsirwa (subtotal).
+Nekusarudzika, mitengo yose yezvigadzirwa zvako haina mutero wakabatanidzwa, zvichireva kuti mitero **haina kubatanidzwa** mumutengo wechigadzirwa. Kana tikaona kuti mutengi anofanira kubhadhara mitero pakutenga kwakapiwa, tichawedzera mitero **pamusoro** pehuwandu hwepasi.
 
-Kana unoda kuti zaka dzinogona dzine zvakave neZaka dzinogona muprice ya product yako, unogona kunoita izvi nekuita Enable Inclusive Tax setting.
+Kana uchida kuti mitero ibatanidzwe mumutengo wechigadzirwa chako, unogona kuzviita nekugonesa marongero e **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Mutsara wechinja cheInclusive Tax pazasi pemarongero eEnable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Usazovikanwa kuita **save** (kufamba) zvinenge zvakagadzirwa.
+Usakanganwa **kuchengetedza** shanduko dzawaita.
 
 ###
 
-## Kuita Zaka Dzinogona (Creating Tax Rates)
+## Kugadzira Mareti eMitero {#creating-tax-rates}
 
-Apana unenge wakaita Enable Tax Collection, unofanira kuita rates dzaka dzinogona pa locations dzakasiyana-siyana nekuti unenge uchitenda zaka dzine zvinhu pane tax dzako mu tax rates editor.
+Mushure mekugonesa Kuunganidzwa kweMitero, uchafanira kugadzira mareti emitero enzvimbo dzakananga uchishandisa mupepeti wedu wemareti emitero.
 
-Unogona unogona wekuti unogona kuenda kune editori nekuti unokuti button **Manage Tax Rates** uyu sidebar ye page ya Tax settings.
+Unogona kuwana mupepeti nekudzvanya bhatani re **Manage Tax Rates** pasidebar repeji remarongero eMitero.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Link yeManage Tax Rates mupanel yeTax Rates papeji remarongero](/img/config/settings-taxes-manage-rates.png)
 
-Ku page ya tax rates editor, unogona kuenda kune Add new Row neku kuita irowu dzinotsi dzine **Add new Row** button.
+Papeji remupepeti wemareti emitero, unogona kuwedzera Tax Rates matsva nekudzvanya bhatani re **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tafura yemupepeti wemareti emitero ine bhatani reAdd new Row pamusoro](/img/config/tax-rates-editor.png)
 
-Unoda kuipa kila tax rate **title** (inogona kuita kune invoices). Ndapana, unogona kutenda **country** (unoda), **state**, uye **city** (zvinogone) inozivikanwa kuti iye tax izvi dzichigadzirwa. Hekuti zvakare, shandisa **tax rate in percents**.
+Uchafanira kupa reti yemutero imwe neimwe **zita** (rinoshandiswa pama invoice). Wobva wasarudza **nyika** (inodiwa), **dunhu,** uye **guta** (zvose zviviri hazvisungirwi) uko mutero uyu uchachajwa. Pakupedzisira, wedzera **reti yemutero muzvikamu kubva muzana**.
 
-### Tax Categories
+### Mapoka eMitero {#tax-categories}
 
-Unogona kuita ookikuru dze Tax Categories, kuti uipa rates dzakasiyana-siyana kune zvinoda dzinogona (products).
+Unogonawo kugadzira Mapoka eMitero akawanda, kuti uwedzere mareti emitero akasiyana kumhando dzakasiyana dzezvigadzirwa.
 
-Chinjisa kuti **Add new Tax Category**, ndipo unenge ukuti upere category yako nekuita **Create**.
+Dzvanya kuti **Add new Tax Category** , wobva wanyora zita reboka rako wodzvanya **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Bhatani reAdd new Tax Category pamusoro pemupepeti wemareti emitero](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Munda wekuisa Tax Category Name mumodal yekugadzira boka](/img/config/tax-categories-create-modal.png)
 
-Kuti uonde kuita browsing dze categories, chinjisa **Switch** uye chine select category unoda kuipa rates dzakasiyana-siyana.
+Kuti uongorore mumapoka, dzvanya **Switch** uye sarudza boka raunoda kuwedzera mitero mitsva kwariri.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Bhatani redropdown reSwitch rekuchinja pakati pemapoka emitero](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown yesarudzo yeboka remutero ichiratidza mapoka aripo](/img/config/tax-categories-select.png)
 
-Unogona kuita set tax category kune product yakati nekuenda kune **Product edit page** uye ndipo kune Taxes tab.
+Unogona kuseta boka remutero rechigadzirwa chakati nekuenda ku **Product edit page** wobva waenda kutab yeTaxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Tab yemitero yechigadzirwa ine boka remutero nechinja chetaxable](/img/config/product-taxes.png)
 
-Mune screen yese, unogona kuita off **Is Taxable?** toggle kuti Ultimate Multisite inoziva kuti haizvi dzinoda kutora taxes kune product iye.
+Pachiratidziro chimwe chete ichocho, unogona kudzima chinja che **Is Taxable?** kuti uzivise Ultimate Multisite kuti haifaniri kuunganidza mitero pachigadzirwa icho chakapiwa.
 
-## European VAT Support
+## Rutsigiro rweEuropean VAT {#european-vat-support}
 
-Kufanenge kuitika, tiriine kune add-on inotiriwe kuti vana vekuti vana vachine zvinoda zvinhu zvakawanda nekuda kweregalendero (VAT) ya Europa.
+Sezvambotaurwa, tine add-on riripo revatengi vari muEU vane zvinodiwa zvakawedzerwa nekuda kwemitemo yeEuropean VAT.
 
-Maitiro ekuti VAT tools dzinotenderera zvinhu zvakakosha:
+Maturusi edu eVAT anobatsira nezvinhu zviviri zvakakosha:
 
-  * Kuti utore zvinhu zveVAT ya EU zvinhu,
-  * Kutora nekuona VAT Number uye kuona kuti vana vanovaka (reverse charging) kune vanhu vanoita zvinotevera VAT (kune vanhu vanoita zvinotevera VAT, se kuratidza vanhu vanoita zvinotevera VAT).
+  * Kurodha nyore mareti eEU VAT;
 
-Kuti utore add-on iye, ndonga kuenda ku **Ultimate Multisite > Settings** uye ndonga kutaura link ya sidebar inoti **Check our Add-ons**.
+  * Kuunganidzwa nekusimbiswa kweVAT Number - uye reverse charging kune masangano asiri kubhadhariswa VAT (akadai semakambani ane nhamba dzeVAT dzinoshanda);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Kuti uise add-on iroro, enda ku **Ultimate Multisite > Settings** wobva wadzvanya link yepasidebar ye **Check our Add-ons**.
 
-Utaonekwa munyore wenyika wenyu we add-on. Pamusoro, unogona kutsvaga **Ultimate Multisite VAT add-on** uye utore iye.
+![Sidebar yepeji reSettings ine link yeCheck our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+Uchaendeswa kupeji redu readd-ons. Ipapo, unogona kutsvaga **Ultimate Multisite VAT add-on** woriisa.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Mufananidzo hausipo: tile yeVAT add-on papeji reAdd-ons -->
 
-Zvakanaka, ndonga kuenda ku **Network Admin > Plugins** uye tsanidza iye network-wide (kune nzvimbo yese).
+<!-- Mufananidzo hausipo: dialog yeInstall Now yeVAT add-on -->
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+Wobva waenda ku **Network Admin > Plugins** uye ugonese add-on iroro panetiweki yese.
 
-Kana uri kurema ku **Tax Settings tab**, uona zvinhu zvinotevera. Tsanidza option ya **Enable VAT Support** kuti utore VAT tools dzakare. Usi ngausina **save** settings yako!
+<!-- Mufananidzo hausipo: chiito cheNetwork Activate cheVAT add-on papeji rePlugins -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+Kana ukadzokera ku **Tax Settings tab** , uchaona sarudzo itsva dziripo. Chinja sarudzo ye **Enable VAT Support** kuti ugonese maturusi matsva eVAT. Usakanganwa **kuchengetedza** marongero ako!
 
-### Kuti unzire (Pulling on) ku Rates dzeVAT
+<!-- Mufananidzo hausipo: chinja cheEnable VAT Support mumarongero eMitero mushure mekugonesa add-on -->
 
-Moyo we tools inotendererwa neintegration yedu ndiri kutora rates dzeVAT dzemakore anonyanya. Izvi zvichitwa nekutenda page ya tax rates editor pangu pamusoro pekuita VAT support ya EU.
+### Kudhonza Mareti eVAT Tax {#pulling-on-vat-tax-rates}
 
-Muviri wechivho chekuche chakanangwa, muna kuona zvinovhu zveVAT (Value Added Tax). Kana uchigadzirisa uri wote (rate type) uye uingava uchikira button **Update EU VAT Rates**, izvi zvichakupa uye zvichakabatsira kutaura table nekuita rates dzemukati weEU. Ndiyo, unofanira kurasa chete.
+Rimwe rematurusi anowedzerwa neintegration yedu kugona kurodha mareti emitero enyika dziri nhengo dzeEU. Izvi zvinogona kuitwa nekushanyira peji remupepeti wemareti emitero mushure mekugonesa rutsigiro rweEU VAT.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+Pazasi peji, uchaona sarudzo dzekudhonza VAT. Kusarudza mhando yereti uye kudzvanya bhatani re **Update EU VAT Rates** kuchadhonza uye kuzadza tafura otomatiki nemareti emitero enyika imwe neimwe iri nhengo yeEU. Wobva wangoda kuichengetedza.
 
-Unogona kunge kuenda kutaura zvinhu panguva dzinovhu dzakubva. Kuti urambe iiri, ndichida kuti uedze line yekuita rudo raunoda uye uchikire kuti urase zvinhu zvinobva.
+![Bhatani reUpdate EU VAT Rates pazasi pemupepeti wemareti emitero](/img/config/tax-rates-vat-pull.png)
 
-### VAT Validation
+Unogonawo kugadzirisa mavalue mushure mekuadhonza. Kuti uzviite, ingogadzirisa mutsara wetafura waunoda wodzvanya kuti uchengetedze mavalue matsva.
 
-Kana support yeVAT inenge inogona kuenda, Ultimate Multisite ichakira field ingava inoshandiswa munzira dzekutaurira (checkout form), panguva dzinovhu dzemabasa (billing address field). Field iyi ichakupa chete kunyange vanhu vachiti vachipa EU.
+### Kusimbiswa kweVAT {#vat-validation}
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+Kana rutsigiro rweVAT rwagoneswa, Ultimate Multisite ichawedzera munda wekuwedzera kufomu rechekauti, pazasi pemunda wekero yekubhadharisa. Munda wacho ucharatidzwa chete kuvatengi vari muEU.
 
-Ultimate Multisite ichakira VAT Number uye kana inobva yakaita kuti iwe iwe ine zvinhu zvakanaka, mechanism yereverse charge inogadzirwa uye rate yaVAT inogadzirwa kuva 0% pamusoro peorder iyi.
+<!-- Mufananidzo hausipo: munda weVAT Number pafomu rechekauti refrotendi pazasi pekero yekubhadharisa -->
+
+Ultimate Multisite ichabva yasimbisa VAT Number uye kana ikadzoka iri inoshanda, nzira ye reverse charge inoshandiswa uye tax rate inoiswa ku0% paodha iyoyo.

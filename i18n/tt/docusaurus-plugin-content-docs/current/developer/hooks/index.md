@@ -1,0 +1,194 @@
+---
+title: Хуклар белешмәсе
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks белешмәсе {#hooks-reference}
+
+Ultimate Multisite эчендәге барлык **59 гамәл** һәм **118 фильтр** өчен автоматик рәвештә ясалган документация.
+
+## Гамәлләр {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Аутентификация юнәлтүе алдыннан эшли.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Аутентификация cookie урнаштырылыр алдыннан ук эшли.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Кергән кулланучы өчен аутентификация cookie урнаштырылыр алдыннан ук эшли.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Эшләүчеләргә wp плагиннары аша үз host provider интеграцияләрен өстәргә мөмкинлек бирә.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Барлык бәйлелекләр йөкләнгәч эшкә җибәрелә
+- [wu_activation](./Actions/wu_activation) — Плагинның башка өлешләренә активлаштыру өчен үз routineнарын беркетергә мөмкинлек бирә
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Плагин эшләүчеләренә кулланучы яки super admin сайт шаблонын алыштырганнан соң функцияләрне hook итәргә мөмкинлек бирә
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Кайбер очракларда гамәлләрне эшкәртү өчен өстәмә ресурс йөкләргә кирәк булачак.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Эзләү соравын эшкәртү алдыннан эшли.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Эшләүчеләргә checkout объектына өстәмә үзгәрешләр кертергә мөмкинлек бирә.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Эшләүчеләргә checkout объектына өстәмә үзгәрешләр кертергә мөмкинлек бирә.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Checkout формасына кыр өстәлер алдыннан эшли.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Эшләүчеләргә өстәмә hookларны эшкә җибәрергә мөмкинлек бирә.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Checkoutны эшкәрткәнче.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Checkout заказы тулысынча җыелганнан соң эшли.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Плагин эшләүчеләренә Network Dashboard Panelга виджетлар өстәргә мөмкинлек бирә.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Плагин эшләүчеләренә Network Dashboard Panelга виджетлар өстәргә мөмкинлек бирә.
+- [wu_deactivation](./Actions/wu_deactivation) — Плагинның башка өлешләренә деактивлаштыру өчен үз routineнарын беркетергә мөмкинлек бирә
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Плагин эшләүчеләренә бетерү процессына гамәлләр өстәргә мөмкинлек бирә
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Домен сайт өчен төп доменга әйләнгәндә эшли.
+- [wu_domain_created](./Actions/wu_domain_created) — Яңа домен бәйләү өстәлгәндә эшкә җибәрелә.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Безнең төп Domain Mapping йөкләнгәннән соң эшли
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Кайбер плагиннар URLны mapping актив булганчы саклаячак яки URLларны башкача, кертелмәгән ысул белән төзиячәк
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Эшләүчеләргә сайт күчермәләнгәннән соң hook итәргә мөмкинлек бирә.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Плагин эшләүчеләренә өстәмә hookлар өстәргә мөмкинлек бирә
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Өстәмә чистарту өчен hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Яңа домен өстәү modal соравын эшкәртү алдыннан эшли.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Плагин эшләүчеләренә, кирәк булса, meta мәгълүматны төрле ысуллар белән сакларга мөмкинлек бирә.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Плагин эшләүчеләренә, кирәк булса, кулланучы meta мәгълүматын төрле ысуллар белән сакларга мөмкинлек бирә.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Яраксыз magic link token очраганда эшли.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Кулланучы magic link аша кергәннән соң эшли.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Клиент өстәлгәндә плагин эшләүчеләренә өстәмә эшләр башкарырга мөмкинлек бирә.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Бер entity өчен MCP abilities теркәлгәннән соң эшли.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter инициализацияләнгәннән соң эшли.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Әгъзалык гамәлдән чыгарылганнан соң эшкә җибәрелә.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Әгъзалык яңартылганнан соң эшкә җибәрелә.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Әгъзалык гамәлдән чыгарылганчы эшкә җибәрелә.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Әгъзалык яңартылганчы эшкә җибәрелә.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Объект databaseка сакланганнан соң эшли.
+- [wu_page_added](./Actions/wu_page_added) — Плагин эшләүчеләренә битләр теркәлгәндә өстәмә эшләр башкарырга мөмкинлек бирә.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Плагин эшләүчеләренә битне бастырып чыгарганнан соң өстәмә эчтәлек өстәргә мөмкинлек бирә
+- [wu_page_before_render](./Actions/wu_page_before_render) — Плагин эшләүчеләренә битне бастырып чыгарганчы өстәмә эчтәлек өстәргә мөмкинлек бирә.
+- [wu_page_load](./Actions/wu_page_load) — Плагин эшләүчеләренә безнең битләргә өстәмә hookлар өстәргә мөмкинлек бирә.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Плагин эшләүчеләренә битне бастырып чыгарганнан соң өстәмә эчтәлек өстәргә мөмкинлек бирә
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Плагин эшләүчеләренә битне бастырып чыгарганчы өстәмә эчтәлек өстәргә мөмкинлек бирә.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Плагин эшләүчеләренә безнең битләргә өстәмә hookлар өстәргә мөмкинлек бирә.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Бу бит өчен виджетлар теркәлгәннән соң эшли.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addon-нарга интеграцияләргә мөмкинлек модульләрен беркетергә рөхсәт итү өчен эшли.
+- [wu_register_integrations](./Actions/wu_register_integrations) — интеграцияләргә үзләрен теркәргә рөхсәт итү өчен эшли.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — өстәмә маршрутларны теркәргә рөхсәт итә.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin эшләүчеләренә саклау процессына гамәлләр өстәргә рөхсәт итә
+- [wu_site_created](./Actions/wu_site_created) — сайт беренче тапкыр булдырылганнан соң эшли.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — кирәк булса, plugin эшләүчеләренә өстәмә hook-лар өстәргә рөхсәт итә.
+- [wu_template_previewer](./Actions/wu_template_previewer) — шаблонны алдан карау контексты эчендә булганда эшли.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook-ын эшләтеп җибәрә.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — объект мәгълүмат базасына сакланганнан соң эшли.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — объект мәгълүмат базасына сакланганнан соң эшли.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — объект мәгълүмат базасына сакланганнан соң эшли.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin эшләүчеләренә ачу процессына гамәлләр өстәргә рөхсәт итә.
+
+## Фильтрлар {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Аутентификация cookie-сының гамәлдән чыгу вакыты озынлыгын фильтрлый.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Аутентификация юнәлтү схемасын фильтрлый.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ышаныч өчен, монда оригиналь WP Filter-ны кабатлый.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Plugin эшләүчеләренә previewer-да кулланылган URL-ны фильтрларга мөмкинлек бирә
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Auth cookie бары тик HTTPS аша гына җибәрелергә тиешме икәнен фильтрлый.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Куркынычсыз аутентификация юнәлтүен кулланыргамы икәнен фильтрлый.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Кергән кулланучы cookie-сы бары тик HTTPS аша гына җибәрелергә тиешме икәнен фильтрлый.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Auth cookie-ларның чынлап та client-ка җибәрелүен булдырмаска мөмкинлек бирә.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Юнәлтү URL-ын билгели.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Фильтрлар аша өстәмә адымнар өсти
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Plugin эшләүчеләренә render контекстына глобаль рәвештә өстәмә үзгәрмә өстәргә мөмкинлек бирә.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Эшләүчеләргә бу тикшерүне кыскартып узарга мөмкинлек бирә.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Яңа домен өстәү modal-ы өчен кырларны фильтрлый.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Эшләүчеләргә көйләү түләве line item-ына үзгәрешләр кертергә мөмкинлек бирә.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Эшләүчеләргә Ultimate Multisite өстәгән admin белдерүләрен фильтрларга мөмкинлек бирә.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Үзгәртелгәннән соң фильтрлый.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Хәзер без барлык төрләр белән эш итәбез.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Plugin эшләүчеләренә чикләүләрне кыскартып узарга мөмкинлек бирә.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Signup түләве кулланылырга тиешме-түгелме икәнен фильтрлый.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Оригиналь api аргументларын фильтрлый.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Plugin эшләүчеләренә түләү адресы кырларын фильтрларга мөмкинлек бирә.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Эшләүчеләргә чыгаруны урап узарга һәм яңасын билгеләргә мөмкинлек бирә
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Эшләүчеләргә хәзерге кулланучыны юкка чыгару кодын урап узарга мөмкинлек бирә.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "recurring amount" гомуми суммасын фильтрлый.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "initial amount" гомуми суммасын фильтрлый.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "initial amount" гомуми суммасын фильтрлый.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Plugin эшләүчеләренә credit кыйммәте белән эш итәргә мөмкинлек бирә.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Mapped-domain язмаларына әйләнергә тиеш булмаган уртак checkout-form база доменнарын фильтрлый.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Яңа кыр template-лары өстәү өчен безнең APIs монда hook ясый.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Яңа кыр төрләре өстәү өчен безнең APIs монда hook ясый.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Хата хәбәрләрен фильтрлый.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Эшләүчеләргә кыр auto-submittable булса, тикшерүне урап узарга мөмкинлек бирә.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Plugin эшләүчеләренә форма validator-ында махсус alias-лар өстәргә мөмкинлек бирә.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Plugin эшләүчеләренә валидация кагыйдәләрен фильтрларга мөмкинлек бирә.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Кирәкмәгән Params-ларны бетерә.
+- [wu_contains_element](./Filters/wu_contains_element) — Эшләүчеләргә башлангыч эзләү нәтиҗәләрен үзгәртергә мөмкинлек бирә.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Host тәэмин итүчеләренә константаны башкача урнаштырырга мөмкинлек бирә.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Илнең административ бүлекчәләре өчен матур исемне кайтара.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Илдәге бер штат өчен шәһәрләр исемлеген кайтара.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Бу ил өчен штатлар исемлеген кайтара.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Эшләүчеләргә стандарт тәртипне үзгәртергә һәм хәзерге customer-ны башкача билгеләргә мөмкинлек бирә.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Эшләүчеләргә стандарт тәртипне үзгәртергә һәм хәзерге membership-ны башкача билгеләргә мөмкинлек бирә.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Эшләүчеләргә стандарт тәртипне үзгәртергә һәм хәзерге сайтны башкача билгеләргә мөмкинлек бирә.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Эшләүчеләргә сайт белән идарә итү URL параметрларын үзгәртергә мөмкинлек бирә.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Plugin эшләүчеләренә сылтамаларны фильтрларга мөмкинлек бирә.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Plugin эшләүчеләренә нәтиҗәләрне билгеләү өчен яңа тикшерүләр өстәргә мөмкинлек бирә.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Безгә соңрак өстәмә блоклар өстәргә кирәк булырга мөмкин.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Эшләүчеләргә бу анализлагычны өстәмә төзүчеләр яки плагиннар белән эшләү өчен киңәйтергә мөмкинлек бирүче гомуми фильтр өсти.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Өстәмә серсүз кагыйдәләрен мәҗбүри кулланыргамы-юкмы икәнен фильтрлый.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Генерацияләнгән клиент кулланучы исемен фильтрлый.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Плагин эшләүчеләргә түләүгә күчү бите алдан билгеләнгән көйләүләрен фильтрларга мөмкинлек бирә.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Эшләүчеләргә бу тәртипне урап узу өчен яңа форма slugs өстәргә мөмкинлек бирә.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Эшләүчеләргә һәм өстәмәләргә яңа миграция адымнары өстәргә мөмкинлек бирә
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Бу фильтр турында күбрәкне түбәндә, шул ук методта карагыз.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Эшләүчеләргә нинди язма төрләре күрсәтелергә тиешлеген сайларга мөмкинлек бирә.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Юлларны кайтара, фильтрлана ала
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Эшләүчеләргә домен/юл парларын үзгәртергә мөмкинлек бирә.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Хостинг интеграциясен көйләү өчен мастер бүлекләрен фильтрлый.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Формадагы кырларны фильтрлый. Форма фильтр исемендәге ID буенча таныла.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Мөстәкыйль хисаплашу цикллары булган продукт төрләрен фильтрлый.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Плагин эшләүчеләргә API өчен бирелгән халәтне мәҗбүри куярга мөмкинлек бирә.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Плагин эшләүчеләргә эшләү режимы өчен өстәмә тестлар өстәргә мөмкинлек бирә.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Плагин эшләүчеләргә MCP адаптеры өчен бирелгән халәтне мәҗбүри куярга мөмкинлек бирә.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Иминлек сәбәпләре аркасында, без тоташу өчен мөмкин гамәлләр санын чиклибез. Бу фильтр эшләүчеләргә киңәйтергә мөмкинлек бирә
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Бирелгән язма төре бу планда рөхсәт ителгәнме икәнен тикшерә; плагин эшләүчеләргә кайтарылган кыйммәтне фильтрларга мөмкинлек бирә
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP адресын тикшерүне мәҗбүри кулланыргамы-юкмы икәнен фильтрлый.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Кулланучы агентын тикшерүне мәҗбүри кулланыргамы-юкмы икәнен фильтрлый.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Генерацияләнгән тылсымлы сылтама URL-ен фильтрлый.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Тылсымлы сылтамалар кабызылганмы-юкмы икәнен фильтрлый.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Доменны төп итеп билгеләгәннән соң юнәлтү URL-ен фильтрлый.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Автоматик юнәлтүне булдырмый торган параметрларның искәрмә исемлеген төзи.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP мөмкинлеген кертү карарын яңадан билгеләү өчен фильтр.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Хисапланган тәмамлану датасын фильтрлый.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Яңартудан соң куелачак хисапланган тәмамлану датасын фильтрлый.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Эшләүчеләргә яңа яңарту форма slugs өстәргә мөмкинлек бирә.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Минималь серсүз озынлыгын фильтрлый.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Таләп ителгән минималь серсүз ныклыгын фильтрлый (zxcvbn бәясе).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Плагин эшләүчеләргә һәм үзебезгә безнең төзәтү битләренә гамәл сылтамалары өстәргә мөмкинлек бирә
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Серсүзләрдә кечкенә хәрефләр таләп ителәме-юкмы икәнен фильтрлый.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Серсүзләрдә саннар таләп ителәме-юкмы икәнен фильтрлый.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Серсүзләрдә махсус символлар таләп ителәме-юкмы икәнен фильтрлый.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Серсүзләрдә баш хәрефләр таләп ителәме-юкмы икәнен фильтрлый.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Кулланучыга көтелгән түләүләр турындагы хәбәрне үзгәртергә мөмкинлек бирә.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Планнар итеп каралырга тиешле продукт төрләрен фильтрлый.
+- [wu_post_count](./Filters/wu_post_count) — Плагин эшләүчеләргә гомуми санны үзгәртергә мөмкинлек бирә
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Плагин эшләүчеләргә нинди язма статусы саналырга тиешлеген үзгәртергә мөмкинлек бирә; килешү буенча, бастырылган һәм шәхси язмалар санала
+- [wu_post_default_status](./Filters/wu_post_default_status) — Объект мәгълүматларын базага сакланганчы фильтрлый.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Эшләүчеләргә көйләүләрне Ultimate Multisite тарафыннан сакланганчы фильтрларга мөмкинлек бирә.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Сорау белән дәвам итү рөхсәт ителәме-юкмы икәнен фильтрлый.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Сорау белән дәвам итү рөхсәт ителәме-юкмы икәнен фильтрлый.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Сорау белән дәвам итәргә рөхсәт ителәме-юкмы икәнен фильтрлый.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Сорау белән дәвам итәргә рөхсәт ителәме-юкмы икәнен фильтрлый.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Сорау белән дәвам итәргә рөхсәт ителәме-юкмы икәнен фильтрлый.
+- [wu_return_url](./Filters/wu_return_url) — Төзүчеләргә checkout процессларыннан соң кулланыла торган gateway кайту URL-ын үзгәртергә рөхсәт итә.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Plugin төзүчеләргә күбрәк эзләү модельләре функцияләрен өстәргә рөхсәт итә.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Төзүчеләргә өстәмә көйләү остасы адымнарын өстәргә рөхсәт итә.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Яңа төзелгән сайт өчен Ultimate Multisite домен язмасы булдырырга тиешме-юкмы икәнен фильтрлый.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Төзүчеләргә юнәлтүне кыска юл белән туктатырга, аның башкарылуын булдырмаска рөхсәт итә.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Эшкәрткечне яңадан язарга мөмкинлек бирә
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Сайтлар өчен мөмкин булган күмәк гамәлләрне фильтрлый.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Челтәр эчендә get pluginssites өчен кыйммәтне үзгәртү фильтры.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Доменара single-sign-on мөмкинлеген кабызу/сүндерү.
+- [wu_sso_url](./Filters/wu_sso_url) — Доменара клиент гамәлләре өчен кайтарылганчы, ясалган SSO URL-ларын фильтрлый.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription мәгълүматларын фильтрлый. success_url яки cancel_url-ны алыштыра ала.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Түләү нияте аргументларын фильтрлый.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Тикшереләчәк план ID-сын фильтрлый. Әгәр бу бар икән, яңа язылу бу планны кулланачак.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Тикшереләчәк продукт ID-сын фильтрлый. Әгәр бу бар икән, яңа язылу бу продуктны кулланачак.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge көйләнмәләре белән җибәрелгән idempotency_key кыйммәтен фильтрлый.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Бу webhook белән бәйле әгъзалык язмасын фильтрлый.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Мәгълүматлар базасына саклану өчен сериализацияләнгәнче, мәгълүмат meta-сын фильтрлый.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Мәгълүматлар базасына сакланганчы объект мәгълүматларын фильтрлый.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Төзүчеләргә ачу өчен upgrade URL-ын үзгәртергә рөхсәт итә
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping кулланылырга тиешме-юкмы икәнен билгели
+- [wu_username_from_email](./Filters/wu_username_from_email) — Яңа клиентның кулланучы исемен фильтрлый.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Төзүчеләргә әгъзалык кулланучылары лимиты турындагы хәбәрне үзгәртергә рөхсәт итә
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Төзүчеләргә алыштырыла торган исемлеккә өстәмә папкалар өстәргә мөмкинлек бирә.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Бу entity өчен кайсы sub_commands кабызылганын фильтрлый.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Без константаларыбызны кая кертеп була икәнен ачыкларга тырышканда өч pattern-ны тикшерәбез:

@@ -3,7 +3,7 @@ title: Kliendite juhtimine
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Klientide haldamine
+# Klientide haldamine {#managing-customers}
 
 **Klientide** lehel on nendelised teie võrku registreeritud liikmete loend. See lehel näidatakse põhjalik kasutaja infot, sealhulgas nime, e-posti aadressi, viimase logiini ja **liikuma** linki, mis võimaldab teil logida kasutaja alalehel administraatorina.
 

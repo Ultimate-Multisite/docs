@@ -3,7 +3,7 @@ title: Mavizara yeKugadzirisa Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite inoratir wizard inotir WordPress installation yakai kune into WordPress Multisite network. Izviro kuno kuita kuti uone kuti unenge ukati `wp-config.php` kana kurunika database commands.
 
@@ -11,13 +11,13 @@ Ultimate Multisite inoratir wizard inotir WordPress installation yakai kune into
 Kana WordPress yako inenge inogona ne network Multisite, unogona kuenda kupfuura iye step iye. Wizard inotopurwa chete kana Multisite haingakubviri.
 :::
 
-## Kana Wizard Inotopurwa?
+## Kana Wizard Inotopurwa? {#when-does-the-wizard-appear}
 
 Kana uri kuitira Ultimate Multisite pa WordPress installation yakai standard (non-Multisite), plugin inoziva kuti Multisite haingakubviri uye inokupa redirect ku Multisite Setup Wizard chete kunoona regular setup wizard.
 
 Unogona kuda kuenda nechekucheku **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Zvinotore Serudzo (Prerequisites)
+## Zvinotore Serudzo (Prerequisites) {#prerequisites}
 
 Panguva unenge ukaitira wizard, ndichida kuti uone:
 
@@ -29,7 +29,7 @@ Panguva unenge ukaitira wizard, ndichida kuti uone:
 Wizard inobva kuunda changes mufile wako `wp-config.php` uye inokupa new database tables. Ndinenge uita backup panguva unenge ukaitira izvi.
 :::
 
-## Step 1: Welcome (Kutangazara)
+## Step 1: Welcome (Kutangazara) {#step-1-welcome}
 
 Chikamu chekare chinobvunza kuti WordPress Multisite ndiyo, uye zvakaita wizard ichaita:
 
@@ -42,11 +42,11 @@ Chikamu chekare chinobvunza kuti WordPress Multisite ndiyo, uye zvakaita wizard 
 
 Chikamu chekare chiri **Continue** kuti uende.
 
-## Step 2: Network Configuration (Kutanga Settings dzemakore)
+## Step 2: Network Configuration (Kutanga Settings dzemakore) {#step-2-network-configuration}
 
 Iye iinoda kuti uita configuration yakanzvimbo dze network yako.
 
-### Site Structure (Mavhondso ekurimo)
+### Site Structure (Mavhondso ekurimo) {#site-structure}
 
 Chine chine kuti mweya wako we network dzachikwanisa kuva sei:
 
@@ -57,11 +57,11 @@ Chine chine kuti mweya wako we network dzachikwanisa kuva sei:
 Kana uchigona sub-domains, unofanira kuita configuration ya **wildcard DNS** uye **wildcard SSL certificate** kuti domain yako iwe. Vakaramba vashandisa WordPress vanovaka izvi zvakanzvimbo. Serudzo [Ultimate Multisite 101](./ultimate-multisite-101) kuti uve nekuona kuratidza zvakawanda.
 :::
 
-### Network Title
+### Network Title {#network-title}
 
 Chinjira zvinoda kunzwa (name) yenyaya yako ya network. Izvi zvichatanga nechinangwa chesite yako chero ne "Network" kuitika. Unogona kuva nekuura izvi panguva dzine kuratidza kubva munzira dzinotevera (network settings).
 
-### Network Admin Email
+### Network Admin Email {#network-admin-email}
 
 Email inoshandiswa kuti vhizha (notifications) dze network administration. Izvi zvichatanga neemail ya mutsavo wako.
 
@@ -69,7 +69,7 @@ Email inoshandiswa kuti vhizha (notifications) dze network administration. Izvi 
 
 Panguva unopfuura maitembe, ndichida kuti uita **Continue** kuti utangane.
 
-## Step 3: Installation
+## Step 3: Installation {#step-3-installation}
 
 Chinjira **Install** kuti utange. Wizard inaita zvinhu zviri kuita zvakawanda zvinotevera (automated steps) zvinoita zvakawanda, uye inokupa kuratidza kuratidza kwake mberi mberi:
 
@@ -104,7 +104,7 @@ Ushandisa iye kuti utatanga ne setup wizard ya Ultimate Multisite kuti uregure p
 Pasi ndapana nekuti kurulum ya multisite yakumbuka, browser yako idzobva kuparamu (redirect) kune network admin inoitwa. Unogona kuendawo login chete chete kana kuti unenge uchida login chete chete chete nekuti authentication cookies dzichineerwa kuti environment ya multisite ine.
 :::
 
-## Setup Yekuti Inenge Iri Kufamba NeChikoro (Manual Setup Fallback)
+## Setup Yekuti Inenge Iri Kufamba NeChikoro (Manual Setup Fallback) {#step-4-complete}
 
 Kana wizard haunogone kuenda kune file yako `wp-config.php` (kunezvinhu zvepermissions kana restrictions dzinogara munyoyo we server), idzobva kuona code yakakodzera kuti uingire nehanda:
 
@@ -113,9 +113,9 @@ Kana wizard haunogone kuenda kune file yako `wp-config.php` (kunezvinhu zvepermi
 
 Pasi kubva nekuita izvi zvinotamba, refresh page uye wizard idzobona kuti multisite inenge ine.
 
-## Kufamba NeChikoro (Troubleshooting)
+## Kufamba NeChikoro (Troubleshooting) {#manual-setup-fallback}
 
-### Wizard inoti wp-config.php haunogone kuwedzera (not writable)
+### Wizard inoti wp-config.php haunogone kuwedzera (not writable) {#troubleshooting}
 
 Process ya web server yako inoda iweya (write permission) kune file `wp-config.php`. Unogona:
 
@@ -127,7 +127,7 @@ kana
 - Kuenda neinstructions dzinotamba dzakazviratidzwa newizard
 - Kuti hosting provider yako inenge yakubatsira
 
-### Sites haziine kuita panguva kurulum (subdomains)
+### Sites haziine kuita panguva kurulum (subdomains) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Kana uingine subdomain structure, unofanira kune configuration ya **wildcard DNS** yekuti domain yako ine. Shanda record:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Tsvaga nehosting provider yako kana haunoziva kuti uingire sei izvi.
 
-### Masimba ekutambura panguva kurulum
+### Masimba ekutambura panguva kurulum {#sites-are-not-accessible-after-setup-subdomains}
 
 Kana uri kuenda out of login kana unenge uchida cookie errors panguva multisite setup:
 
@@ -147,7 +147,7 @@ Kana uri kuenda out of login kana unenge uchida cookie errors panguva multisite 
 2. Login chete chete chete chete kuti `yourdomain.com/wp-login.php`
 3. Kana masimba anogara, shanda kuti `wp-config.php` yako haine `COOKIE_DOMAIN` inoitwa `false` — iwe ndiri kunzwisisa izvi panguva multisite setup ya subdomain
 
-### Kuti Chii Chishanda Panguva Kuratidza (A step failed during installation)
+### Kuti Chii Chishanda Panguva Kuratidza (A step failed during installation) {#authentication-issues-after-setup}
 
 Kana chimwe zvinotarisirwa kubva munzira we kukura:
 

@@ -1,54 +1,100 @@
 ---
 title: 多网络
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
 
-# 多网络
+# Multi-Network {#multi-network}
 
-Ultimate Multisite: Multinetwork 插件扩展了您的 Multisite Ultimate 平台，提供强大的多网络功能。此插件使您的客户能够购买和管理完整的 WordPress 多站点网络，而不仅仅是单个站点。
+Ultimate Multisite: Multinetwork addon 为你的 Ultimate Multisite 平台扩展强大的多网络功能。此 addon 使你的客户能够购买和管理整个 WordPress multisite 网络，而不仅仅是单个站点。
 
-## 关键功能
+## 主要功能 {#key-features}
 
-* **网络部署**: 自动为您的客户创建并配置完整的 WordPress 多站点网络
-* **网络管理**: 为多网络环境提供完整的管理功能
-* **隔离网络**: 每个客户网络独立运行，拥有自己的数据库表和配置
-* **可扩展架构**: 通过优化资源分配，高效处理多个网络
-* **集成**: 与 Multisite Ultimate 的订阅和计费系统无缝集成
+* **网络配置开通**：自动为你的客户创建并配置完整的 WordPress multisite 网络
+* **网络模板**：让客户在注册前浏览、预览并选择预构建的网络模板
+* **网络管理**：为多网络环境提供完整的管理能力
+* **隔离网络**：每个客户网络都使用自己的数据库表和配置独立运行
+* **跨网络 SSO**：通过魔法链接身份验证，让客户无缝访问其子网络
+* **可扩展架构**：通过优化的资源分配高效处理多个网络
+* **集成**：与 Ultimate Multisite 的订阅和计费系统无缝集成
 
-## 用例
+## 使用场景 {#use-cases}
 
-* **白标托管**: 为客户提供自有品牌的多站点网络
-* **代理方案**: 使代理机构能够在单一平台上管理多个客户网络
-* **企业部署**: 支持大型组织的复杂多网络需求
-* **教育平台**: 为不同学校或部门创建独立网络
+* **白标托管**：为客户提供其自有品牌的 multisite 网络
+* **机构解决方案**：让机构能够从单一平台管理多个客户网络
+* **企业部署**：支持具有复杂多网络需求的大型组织
+* **教育平台**：为不同学校或部门创建独立网络
 
-## 需求
+## 要求 {#requirements}
 
-* Multisite Ultimate 2.0.0 或更高版本
+* Ultimate Multisite 2.0.0 或更高版本
 * WordPress Multisite 安装
 * PHP 7.4 或更高版本
 * MySQL 5.6 或更高版本
 
-## 安装
+## 安装 {#installation}
 
-1. 将插件文件上传到 `/wp-content/plugins/ultimate-multisite-multinetwork` 目录
-2. 在 WordPress 的 '插件' 页面激活插件
-3. 通过 Multisite Ultimate → 设置配置多网络设置
+1. 将 plugin 文件上传到 `/wp-content/plugins/ultimate-multisite-multinetwork` 目录
+2. 通过 WordPress 中的“插件”屏幕启用该 plugin
+3. 通过 Ultimate Multisite → 设置 配置多网络设置
 
-## 常见问题
+## 网络模板 {#network-templates}
 
-## 什么是多网络？
+版本 1.3.0 为购买新网络的客户新增了模板发现与选择流程。当你希望每个新的客户网络都从预先准备好的结构、设计、内容库或垂直行业专用设置开始时，请使用网络模板。
 
-多网络是 WordPress 的一项功能，允许您在单个 WordPress 安装中运行多个独立的多站点网络。
+### 模板预览器 {#template-previewer}
 
-## 这与普通多站点有何不同？
+网络模板预览器让客户可以在结账前浏览可用模板。每个模板都可以在实时预览面板中打开，因此客户可以在购买网络之前比较布局和内容。
 
-普通多站点允许在一个网络内拥有多个站点。多网络则允许多个网络，每个网络都有自己的站点，所有网络都在同一个 WordPress 安装中。
+使用预览器帮助客户：
 
-## 这需要特殊的服务器配置吗？
+* 查看每个可用网络模板的外观和结构
+* 在不离开购买流程的情况下比较多个模板
+* 在注册前选择最符合其使用场景的模板
 
-是的，多网络需要特定的服务器设置和配置。请参阅文档以获取详细的设置说明。
+请保持模板名称和描述对客户友好。当客户能够理解预期使用场景时，预览器最有用，例如机构网络、学校网络、特许经营网络或白标托管捆绑包。
+
+### 结账时的模板选择器 {#template-picker-at-checkout}
+
+模板选择器可以作为字段添加到注册结账流程中。配置后，客户会在结账期间选择他们想要的网络模板，并且所选模板会在其新网络配置开通时使用。
+
+要在结账流程中使用选择器：
+
+1. 准备你想作为模板提供的网络。
+2. 在相关注册或结账表单中启用 Multinetwork 模板选择字段。
+3. 选择哪些模板可用于该结账流程。
+4. 发布结账流程并测试一次注册，以确认所选模板已应用到新网络。
+
+如果某个结账流程只提供一个网络产品，选择器仍可作为引导式入门步骤发挥作用。对于多套餐漏斗，仅公开与所选产品或套餐兼容的模板。
+
+## 跨网络魔法链接 SSO {#cross-network-magic-link-sso}
+
+跨网络魔法链接 SSO 让客户能够在其主 Account 区域和子网络之间切换，而无需再次手动登录。当客户点击跨网络访问链接时，Ultimate Multisite 会生成一个有时限的魔法链接，并将客户身份验证到目标网络中。
+
+这改善了管理多个网络的客户体验，也让需要在购买后立即访问新克隆模板网络的客户获得更顺畅的体验。
+
+管理员检查清单：
+
+* 确认 Multinetwork addon 已在 WordPress multisite 安装中启用。
+* 在向客户提供跨网络链接之前，确保客户拥有正确的网络访问权限。
+* 保持网络域名和映射域名配置正确，以便魔法链接解析到预期的目标网络。
+* 在更改网络、域名或结账设置后，测试客户 dashboard 以及任何结账后访问按钮。
+
+魔法链接应被视为登录链接。它们旨在提供无缝的客户访问体验，不应在预期会话之外转发或重复使用。
+
+## 常见问题 {#frequently-asked-questions}
+
+### 什么是多网络？ {#what-is-multinetwork}
+
+多网络是 WordPress 的一项功能，允许你在单个 WordPress 安装上运行多个独立的 multisite 网络。
+
+### 这与常规 multisite 有何不同？ {#how-is-this-different-from-regular-multisite}
+
+常规 multisite 允许一个网络中包含多个站点。多网络允许存在多个网络，每个网络都有自己的站点，并且全部位于同一个 WordPress 安装中。
+
+### 这是否需要特殊服务器配置？ {#does-this-require-special-server-configuration}
+
+是的，多网络需要特定的服务器设置和配置。请查阅文档以获取详细的设置说明。

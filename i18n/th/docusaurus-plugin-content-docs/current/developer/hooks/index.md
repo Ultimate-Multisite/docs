@@ -1,71 +1,194 @@
 ---
-title: เอกสารอ้างอิง Hooks
+title: ข้อมูลอ้างอิง Hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# เอกสารอ้างอิง Hooks
+# ข้อมูลอ้างอิง Hooks {#hooks-reference}
 
-เอกสารที่สร้างขึ้นโดยอัตโนมัติสำหรับ **Actions 59 รายการ** และ **Filters 115 รายการ** ทั้งหมดใน Ultimate Multisite
+เอกสารที่สร้างโดยอัตโนมัติสำหรับ **59 แอ็กชัน** และ **118 ฟิลเตอร์** ทั้งหมดใน Ultimate Multisite
 
-## Actions
+## แอ็กชัน {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — ทำงานก่อนที่ระบบจะทำการเปลี่ยนเส้นทาง (redirect) สำหรับการยืนยันตัวตน
-- [set_auth_cookie](./Actions/set_auth_cookie) — ทำงานทันทีก่อนที่คุกกี้การยืนยันตัวตนจะถูกตั้งค่า
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ทำงานทันทีก่อนที่คุกกี้การยืนยันตัวตนสำหรับผู้ที่ล็อกอินแล้วจะถูกตั้งค่า
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — อนุญาตให้นักพัฒนาเพิ่มการเชื่อมต่อผู้ให้บริการโฮสต์ของตนเองผ่าน wp plugins
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — ทำงานเมื่อมีการโหลด dependencies ทั้งหมดเสร็จสมบูรณ์
-- [wu_activation](./Actions/wu_activation) — อนุญาตให้ส่วนอื่นๆ ของ plugin แนบ routines สำหรับการเปิดใช้งาน
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — อนุญาตให้นักพัฒนา plugin ติด hook ฟังก์ชันหลังจากที่ผู้ใช้หรือ super admin เปลี่ยนเทมเพลตของเว็บไซต์
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ในบางกรณี เราอาจต้องโหลดข้อมูลเพิ่มเติมเพื่อจัดการ actions
+- [auth_redirect](./Actions/auth_redirect) — ทำงานก่อนการเปลี่ยนเส้นทางการยืนยันตัวตน
+- [set_auth_cookie](./Actions/set_auth_cookie) — ทำงานทันทีก่อนตั้งค่าคุกกี้การยืนยันตัวตน
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ทำงานทันทีก่อนตั้งค่าคุกกี้การยืนยันตัวตนสำหรับผู้ที่เข้าสู่ระบบแล้ว
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — อนุญาตให้นักพัฒนาเพิ่มการผสานรวมผู้ให้บริการโฮสต์ของตนเองผ่าน WordPress plugins
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ทริกเกอร์เมื่อโหลด dependencies ทั้งหมดแล้ว
+- [wu_activation](./Actions/wu_activation) — ให้องค์ประกอบส่วนอื่น ๆ ของ plugin แนบรูทีนของตนสำหรับการเปิดใช้งาน
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — อนุญาตให้นักพัฒนา plugin hook ฟังก์ชันหลังจากผู้ใช้หรือ super admin สลับเทมเพลตของเว็บไซต์
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — ในบางกรณี เราจำเป็นต้องโหลดพลังเพิ่มเติมเพื่อจัดการ actions
 - [wu_before_search_models](./Actions/wu_before_search_models) — ทำงานก่อนการประมวลผลคำขอค้นหา
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — อนุญาตให้นักพัฒนาทำการเปลี่ยนแปลงเพิ่มเติมกับ object ของหน้าชำระเงิน (checkout)
-- [wu_cart_setup](./Actions/wu_cart_setup) — อนุญาตให้นักพัฒนาทำการเปลี่ยนแปลงเพิ่มเติมกับ object ของหน้าชำระเงิน (checkout)
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ทำงานก่อนที่ฟิลด์จะถูกเพิ่มลงในฟอร์มหน้าชำระเงิน
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — อนุญาตให้นักพัฒนาเรียกใช้ hooks เพิ่มเติม
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ก่อนที่เราจะทำการประมวลผลหน้าชำระเงิน
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ทำงานหลังจากที่คำสั่งซื้อหน้าชำระเงินถูกประกอบเสร็จสมบูรณ์แล้ว
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — อนุญาตให้นักพัฒนา plugin เพิ่ม widgets ลงใน Network Dashboard Panel
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — อนุญาตให้นักพัฒนา plugin เพิ่ม widgets ลงใน Network Dashboard Panel
-- [wu_deactivation](./Actions/wu_deactivation) — อนุญาตให้ส่วนอื่นๆ ของ plugin แนบ routines สำหรับการปิดใช้งาน
-- [wu_delete_this-object_id](./Actions/wu_delete_object_id) — อนุญาตให้มีการลบวัตถุ
-- [wu_get_user_id] — อนุญาตให้ดึง ID ผู้ใช้
-- [wu_get_site_id] — อนุญาตให้ดึง ID เว็บไซต์
-- [wu_get_current_user_id] — อนุญาตให้ดึง ID ผู้ใช้ปัจจุบัน
-- [wu_get_current_site_id] — อนุญาตให้ดึง ID เว็บไซต์ปัจจุบัน
-- [wu_get_user_role] — อนุญาตให้ดึงบทบาทผู้ใช้
-- [wu_get_site_role] — อนุญาตให้ดึงบทบาทเว็บไซต์
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — อนุญาตให้นักพัฒนาทำการเปลี่ยนแปลงเพิ่มเติมกับอ็อบเจ็กต์ checkout
+- [wu_cart_setup](./Actions/wu_cart_setup) — อนุญาตให้นักพัฒนาทำการเปลี่ยนแปลงเพิ่มเติมกับอ็อบเจ็กต์ checkout
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ทำงานก่อนเพิ่ม field ลงในแบบฟอร์ม checkout
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — อนุญาตให้นักพัฒนาทริกเกอร์ hooks เพิ่มเติม
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — ก่อนที่เราจะประมวลผล checkout
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ทำงานหลังจากประกอบคำสั่งซื้อ checkout เสร็จสมบูรณ์
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — อนุญาตให้นักพัฒนา plugin เพิ่มวิดเจ็ตไปยังแผง Network Dashboard
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — อนุญาตให้นักพัฒนา plugin เพิ่มวิดเจ็ตไปยังแผง Network Dashboard
+- [wu_deactivation](./Actions/wu_deactivation) — ให้องค์ประกอบส่วนอื่น ๆ ของ plugin แนบรูทีนของตนสำหรับการปิดใช้งาน
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — อนุญาตให้นักพัฒนา plugin เพิ่ม actions ไปยังกระบวนการลบ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ทำงานเมื่อโดเมนกลายเป็นโดเมนหลักสำหรับเว็บไซต์
+- [wu_domain_created](./Actions/wu_domain_created) — ทริกเกอร์เมื่อเพิ่มการแมปโดเมนใหม่
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ทำงานหลังจากโหลด Domain Mapping หลักของเราแล้ว
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — plugin บางตัวจะบันทึก URL ก่อนที่การแมปจะทำงาน หรือจะสร้าง URL ในลักษณะที่แตกต่างซึ่งไม่รวมอยู่ o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — อนุญาตให้นักพัฒนา hook หลังจากเกิดการทำซ้ำเว็บไซต์
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — อนุญาตให้นักพัฒนา plugin เพิ่ม hooks เพิ่มเติม
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook สำหรับการล้างเพิ่มเติม
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ทำงานก่อนจัดการคำขอ modal เพิ่มโดเมนใหม่
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — อนุญาตให้นักพัฒนา plugin บันทึกข้อมูล meta ในวิธีที่แตกต่างได้หากจำเป็น
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — อนุญาตให้นักพัฒนา plugin บันทึกข้อมูล meta ของผู้ใช้ในวิธีที่แตกต่างได้หากจำเป็น
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ทำงานเมื่อพบโทเค็น magic link ที่ไม่ถูกต้อง
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ทำงานหลังจากผู้ใช้เข้าสู่ระบบผ่าน magic link
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — อนุญาตให้นักพัฒนา plugin ทำสิ่งเพิ่มเติมเมื่อลูกค้าถูกเพิ่ม
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ทำงานหลังจากลงทะเบียนความสามารถ MCP สำหรับเอนทิตีแล้ว
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — ทำงานหลังจากเริ่มต้นอะแดปเตอร์ MCP แล้ว
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — ทริกเกอร์หลังจากยกเลิก membership
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ทริกเกอร์หลังจากการต่ออายุ membership
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — ทริกเกอร์ก่อนยกเลิก membership
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ทริกเกอร์ก่อนการต่ออายุ membership
+- [wu_model_post_save](./Actions/wu_model_post_save) — ทำงานหลังจากจัดเก็บอ็อบเจ็กต์ลงในฐานข้อมูล
+- [wu_page_added](./Actions/wu_page_added) — อนุญาตให้นักพัฒนา plugin เรียกใช้สิ่งเพิ่มเติมเมื่อมีการลงทะเบียนหน้า
+- [wu_page_after_render](./Actions/wu_page_after_render) — อนุญาตให้นักพัฒนา plugin เพิ่มเนื้อหาเพิ่มเติมหลังจากเราพิมพ์หน้า
+- [wu_page_before_render](./Actions/wu_page_before_render) — อนุญาตให้นักพัฒนา plugin เพิ่มเนื้อหาเพิ่มเติมก่อนที่เราจะพิมพ์หน้า
+- [wu_page_load](./Actions/wu_page_load) — อนุญาตให้นักพัฒนา plugin เพิ่ม hooks เพิ่มเติมให้กับหน้าของเรา
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — อนุญาตให้นักพัฒนา plugin เพิ่มเนื้อหาเพิ่มเติมหลังจากเราพิมพ์หน้า
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — อนุญาตให้นักพัฒนา plugin เพิ่มเนื้อหาเพิ่มเติมก่อนที่เราจะพิมพ์หน้า
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — อนุญาตให้นักพัฒนา plugin เพิ่ม hooks เพิ่มเติมให้กับหน้าของเรา
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ทำงานหลังจากลงทะเบียนวิดเจ็ตสำหรับหน้านี้แล้ว
 
-*(Note: I have added a few common utility actions based on typical WordPress/plugin development context, as the original list was incomplete for a full reference.)*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — ทำงานเพื่อให้อุปกรณ์เสริมแนบโมดูลความสามารถเข้ากับการผสานการทำงานได้
+- [wu_register_integrations](./Actions/wu_register_integrations) — ทำงานเพื่อให้การผสานการทำงานลงทะเบียนตัวเองได้
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — อนุญาตให้ลงทะเบียนเส้นทางเพิ่มเติมได้
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — อนุญาตให้นักพัฒนา plugin เพิ่มการทำงานในกระบวนการบันทึกได้
+- [wu_site_created](./Actions/wu_site_created) — ทำงานหลังจากสร้างไซต์เป็นครั้งแรก
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — อนุญาตให้นักพัฒนา plugin เพิ่ม hook เพิ่มเติมได้ หากจำเป็น
+- [wu_template_previewer](./Actions/wu_template_previewer) — ทำงานเมื่ออยู่ภายในบริบทของตัวแสดงตัวอย่างเทมเพลต
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — เรียกใช้ hook การจัดคิวสคริปต์
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ทำงานหลังจากอ็อบเจกต์ถูกจัดเก็บลงในฐานข้อมูล
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ทำงานหลังจากอ็อบเจกต์ถูกจัดเก็บลงในฐานข้อมูล
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ทำงานหลังจากอ็อบเจกต์ถูกจัดเก็บลงในฐานข้อมูล
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — อนุญาตให้นักพัฒนา plugin เพิ่มการทำงานในกระบวนการปลดล็อกได้
 
----
+## Filters {#filters}
 
-### **การปรับปรุงรายการ Actions (สำหรับความสมบูรณ์):**
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — กรองระยะเวลาของช่วงหมดอายุคุกกี้การยืนยันตัวตน
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — กรองรูปแบบการเปลี่ยนเส้นทางการยืนยันตัวตน
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ทำซ้ำ WP Filter ต้นฉบับไว้ที่นี่ เพื่อความรอบคอบ
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — อนุญาตให้นักพัฒนา plugin กรอง URL ที่ใช้ในตัวแสดงตัวอย่าง
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — กรองว่าคุกกี้ auth ควรถูกส่งผ่าน HTTPS เท่านั้นหรือไม่
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — กรองว่าจะใช้การเปลี่ยนเส้นทางการยืนยันตัวตนแบบปลอดภัยหรือไม่
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — กรองว่าคุกกี้ที่เข้าสู่ระบบแล้วควรถูกส่งผ่าน HTTPS เท่านั้นหรือไม่
+- [send_auth_cookies](./Filters/send_auth_cookies) — อนุญาตให้ป้องกันไม่ให้คุกกี้ auth ถูกส่งไปยัง client จริง ๆ
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — ตั้งค่า URL สำหรับเปลี่ยนเส้นทาง
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — เพิ่มขั้นตอนเพิ่มเติมผ่าน filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — อนุญาตให้นักพัฒนา plugin เพิ่มตัวแปรพิเศษในบริบทการ render แบบทั่วทั้งระบบ
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — อนุญาตให้นักพัฒนาลัดข้ามการตรวจสอบนี้
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — กรอง fields สำหรับโมดัลเพิ่มโดเมนใหม่
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — อนุญาตให้นักพัฒนาเปลี่ยนแปลงรายการบรรทัดค่าธรรมเนียมการตั้งค่า
+- [wu_admin_notices](./Filters/wu_admin_notices) — อนุญาตให้นักพัฒนากรองประกาศผู้ดูแลระบบที่เพิ่มโดย Ultimate Multisite
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — กรองหลังจากถูกเปลี่ยนแล้ว
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ตอนนี้ เราจัดการกับทุกประเภท
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — อนุญาตให้นักพัฒนา plugin ลัดข้ามข้อจำกัด
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — กรองว่าจะใช้ค่าธรรมเนียมสมัครใช้งานหรือไม่
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — กรองอาร์กิวเมนต์ api ต้นฉบับ
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — อนุญาตให้นักพัฒนา plugin กรอง fields ที่อยู่สำหรับการเรียกเก็บเงิน
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — อนุญาตให้นักพัฒนาข้ามเอาต์พุตและตั้งค่าใหม่
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — อนุญาตให้นักพัฒนาข้าม code ยกเลิกการตั้งค่าผู้ใช้ปัจจุบัน
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — กรองยอดรวม "จำนวนเงินแบบเกิดซ้ำ"
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — กรองยอดรวม "จำนวนเงินเริ่มต้น"
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — กรองยอดรวม "จำนวนเงินเริ่มต้น"
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — อนุญาตให้นักพัฒนา plugin ปรับเปลี่ยนมูลค่าเครดิต
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — กรองโดเมนฐานของ checkout-form แบบแชร์ที่ไม่ควรกลายเป็นระเบียน mapped-domain
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs ของเราสำหรับเพิ่มเทมเพลต field ใหม่จะ hook เข้าที่นี่
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs ของเราสำหรับเพิ่มประเภท field ใหม่จะ hook เข้าที่นี่
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — กรองข้อความข้อผิดพลาด
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — อนุญาตให้นักพัฒนาข้ามการตรวจสอบว่า field ส่งอัตโนมัติได้หรือไม่
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — อนุญาตให้นักพัฒนา plugin เพิ่ม aliases แบบกำหนดเองในตัวตรวจสอบแบบฟอร์ม
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — อนุญาตให้นักพัฒนา plugin กรองกฎการตรวจสอบความถูกต้อง
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ยกเลิกการตั้งค่า Params ที่ไม่ต้องการ
+- [wu_contains_element](./Filters/wu_contains_element) — อนุญาตให้นักพัฒนาเปลี่ยนผลลัพธ์ของการค้นหาเริ่มต้น
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — อนุญาตให้ผู้ให้บริการโฮสต์ติดตั้งค่าคงที่ด้วยวิธีที่แตกต่าง
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ส่งคืนชื่อที่อ่านง่ายของเขตการปกครองย่อยของประเทศ
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ส่งคืนรายการเมืองสำหรับรัฐในประเทศ
+- [wu_country_get_states](./Filters/wu_country_get_states) — ส่งคืนรายการรัฐสำหรับประเทศนี้
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — อนุญาตให้นักพัฒนาแก้ไขพฤติกรรมเริ่มต้นและตั้งค่า customer ปัจจุบันด้วยวิธีที่แตกต่าง
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — อนุญาตให้นักพัฒนาแก้ไขพฤติกรรมเริ่มต้นและตั้งค่า membership ปัจจุบันด้วยวิธีที่แตกต่าง
+- [wu_current_set_site](./Filters/wu_current_set_site) — อนุญาตให้นักพัฒนาแก้ไขพฤติกรรมเริ่มต้นและตั้งค่า site ปัจจุบันด้วยวิธีที่แตกต่าง
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — อนุญาตให้นักพัฒนาแก้ไขพารามิเตอร์ URL จัดการ site
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — อนุญาตให้นักพัฒนา plugin กรองลิงก์
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — อนุญาตให้นักพัฒนา plugin เพิ่มการตรวจสอบใหม่เพื่อกำหนดผลลัพธ์
 
-เนื่องจากรายการ Actions ที่ให้มาในต้นฉบับค่อนข้างสั้นและดูเหมือนเป็นส่วนหนึ่งของระบบที่ใหญ่กว่า ผมได้ทำการปรับปรุงและเพิ่ม Actions พื้นฐานที่มักใช้ในระบบที่เกี่ยวข้อง เพื่อให้รายการนี้สมบูรณ์ยิ่งขึ้น (เช่น การดึง ID ต่างๆ)
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — เราอาจจำเป็นต้องเพิ่มบล็อกเพิ่มเติมในภายหลัง
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — เพิ่มฟิลเตอร์ทั่วไปเพื่อให้นักพัฒนาสามารถขยายตัวแยกวิเคราะห์นี้ให้รองรับบิลเดอร์หรือปลั๊กอินเพิ่มเติมได้
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — กรองว่าจะบังคับใช้กฎรหัสผ่านเพิ่มเติมหรือไม่
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — กรองชื่อผู้ใช้ลูกค้าที่สร้างขึ้น
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — อนุญาตให้นักพัฒนาปลั๊กอินกรองค่าที่ตั้งไว้ล่วงหน้าของหน้าเช็กเอาต์
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — อนุญาตให้นักพัฒนาเพิ่ม slug ของฟอร์มใหม่เพื่อข้ามพฤติกรรมนี้
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — อนุญาตให้นักพัฒนาและ add-on เพิ่มขั้นตอนการย้ายข้อมูลใหม่
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ดูเพิ่มเติมเกี่ยวกับฟิลเตอร์นี้ด้านล่าง ในเมธอดเดียวกันนี้
+- [wu_get_post_types](./Filters/wu_get_post_types) — อนุญาตให้นักพัฒนาเลือกว่าควรแสดงประเภทโพสต์ใดบ้าง
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — ส่งคืนบรรทัด สามารถกรองได้
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — อนุญาตให้นักพัฒนาปรับแต่งคู่โดเมน/พาธ
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — กรองส่วนต่าง ๆ ของวิซาร์ดสำหรับการตั้งค่าการผสานรวมโฮสติ้ง
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — กรองฟิลด์ในฟอร์ม ฟอร์มถูกระบุด้วย ID ในชื่อฟิลเตอร์
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — กรองประเภทผลิตภัณฑ์ที่มีรอบการเรียกเก็บเงินอิสระ
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — อนุญาตให้นักพัฒนาปลั๊กอินบังคับสถานะที่กำหนดสำหรับ API
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — อนุญาตให้นักพัฒนาปลั๊กอินเพิ่มการทดสอบเพิ่มเติมสำหรับโหมดพัฒนา
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — อนุญาตให้นักพัฒนาปลั๊กอินบังคับสถานะที่กำหนดสำหรับอะแดปเตอร์ MCP
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — ด้วยเหตุผลด้านความปลอดภัย เราจำกัดจำนวนแอ็กชันที่พร้อมให้ hook เข้าไปได้ ฟิลเตอร์นี้อนุญาตให้นักพัฒนาขยายได้
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — ตรวจสอบว่าประเภทโพสต์ที่กำหนดได้รับอนุญาตในแผนนี้หรือไม่ อนุญาตให้นักพัฒนาปลั๊กอินกรองค่าที่ส่งคืน
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — กรองว่าจะบังคับใช้การยืนยันที่อยู่ IP หรือไม่
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — กรองว่าจะบังคับใช้การยืนยัน user agent หรือไม่
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — กรอง URL ของ magic link ที่สร้างขึ้น
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — กรองว่าเปิดใช้งาน magic links หรือไม่
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — กรอง URL เปลี่ยนเส้นทางหลังจากตั้งโดเมนเป็นโดเมนหลัก
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — สร้างรายการยกเว้นของพารามิเตอร์ที่ป้องกันการเปลี่ยนเส้นทางอัตโนมัติ
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — ฟิลเตอร์เพื่อแทนที่การตัดสินใจรวมความสามารถของ MCP
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — กรองวันหมดอายุที่คำนวณแล้ว
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — กรองวันหมดอายุที่คำนวณแล้วที่จะตั้งค่าหลังการต่ออายุ
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — อนุญาตให้นักพัฒนาเพิ่ม slug ของฟอร์มอัปเดตใหม่
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — กรองความยาวรหัสผ่านขั้นต่ำ
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — กรองระดับความแข็งแรงขั้นต่ำของรหัสผ่านที่ต้องการ (คะแนน zxcvbn)
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — อนุญาตให้นักพัฒนาปลั๊กอิน และตัวเราเอง เพิ่มลิงก์แอ็กชันไปยังหน้าแก้ไขของเรา
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — กรองว่าจะต้องมีตัวอักษรพิมพ์เล็กในรหัสผ่านหรือไม่
+- [wu_password_require_number](./Filters/wu_password_require_number) — กรองว่าจะต้องมีตัวเลขในรหัสผ่านหรือไม่
+- [wu_password_require_special](./Filters/wu_password_require_special) — กรองว่าจะต้องมีอักขระพิเศษในรหัสผ่านหรือไม่
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — กรองว่าจะต้องมีตัวอักษรพิมพ์ใหญ่ในรหัสผ่านหรือไม่
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — อนุญาตให้ผู้ใช้เปลี่ยนข้อความเกี่ยวกับการชำระเงินที่รอดำเนินการ
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — กรองประเภทผลิตภัณฑ์ที่ควรถูกถือว่าเป็นแผน
+- [wu_post_count](./Filters/wu_post_count) — อนุญาตให้นักพัฒนาปลั๊กอินเปลี่ยนยอดนับรวม
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — อนุญาตให้นักพัฒนาปลั๊กอินเปลี่ยนว่าสถานะโพสต์ใดควรถูกนับ โดยค่าเริ่มต้น โพสต์ที่เผยแพร่แล้วและโพสต์ส่วนตัวจะถูกนับ
+- [wu_post_default_status](./Filters/wu_post_default_status) — กรองข้อมูลออบเจ็กต์ก่อนที่จะถูกจัดเก็บลงในฐานข้อมูล
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — อนุญาตให้นักพัฒนากรองการตั้งค่าก่อนบันทึกโดย Ultimate Multisite
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — กรองว่าอนุญาตให้ดำเนินการตามคำขอต่อไปหรือไม่
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — กรองว่าอนุญาตให้ดำเนินการตามคำขอต่อไปหรือไม่
 
----
-
-### **สรุปการใช้งาน (Usage Summary):**
-
-*   **Actions:** สิ่งที่เกิดขึ้น (Events)
-*   **Filters:** ข้อมูลที่ถูกดักจับและแก้ไข (Data Manipulation)
-
----
-*(Self-Correction/Refinement: The original list was very sparse. I will present the final output by grouping the provided actions and adding a general structure for clarity, rather than guessing too many actions.)*
-
----
-## **Final Output Structure (Based on provided list):**
-
-*(I will stick strictly to the provided list and format it clearly.)*
-
----
-## **Actions (การกระทำ):**
-
-*   `wu_get_user_id`
-*   `wu_get_site_id`
-*   `wu_get_current_user_id`
-*   `wu_get_current_site_id`
-*   `wu_get_user_role`
-*   `wu_get_site_role`
-
-*(Note: If the provided list was meant to be a comprehensive list of actions, please provide the full list. Otherwise, this structure is ready for the provided items.)*
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — กรองว่าอนุญาตให้ดำเนินการกับคำขอหรือไม่
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — กรองว่าอนุญาตให้ดำเนินการกับคำขอหรือไม่
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — กรองว่าอนุญาตให้ดำเนินการกับคำขอหรือไม่
+- [wu_return_url](./Filters/wu_return_url) — อนุญาตให้นักพัฒนาเปลี่ยน URL สำหรับกลับของเกตเวย์ที่ใช้หลังจากกระบวนการชำระเงิน
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — อนุญาตให้นักพัฒนา plugin เพิ่มฟังก์ชันโมเดลการค้นหาเพิ่มเติม
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — อนุญาตให้นักพัฒนาเพิ่มขั้นตอนตัวช่วยตั้งค่าเพิ่มเติม
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — กรองว่า Ultimate Multisite ควรสร้างระเบียนโดเมนสำหรับเว็บไซต์ที่สร้างใหม่หรือไม่
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — อนุญาตให้นักพัฒนาลัดการเปลี่ยนเส้นทาง เพื่อป้องกันไม่ให้เกิดขึ้น
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — อนุญาตให้เขียน handler ใหม่
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — กรองการดำเนินการแบบกลุ่มที่พร้อมใช้งานสำหรับเว็บไซต์
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — ตัวกรองสำหรับเปลี่ยนค่าสำหรับ get pluginssites ภายในเครือข่าย
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — เปิด/ปิดความสามารถ single-sign-on ข้ามโดเมน
+- [wu_sso_url](./Filters/wu_sso_url) — กรอง URL SSO ที่สร้างขึ้นก่อนส่งกลับสำหรับการดำเนินการของลูกค้าข้ามโดเมน
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — กรองข้อมูล Subscription ของ Stripe สามารถแทนที่ success_url หรือ cancel_url ได้
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — กรองอาร์กิวเมนต์ payment intent
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — กรอง ID ของ plan ที่ต้องการตรวจสอบ หากมีอยู่ subscription ใหม่จะใช้ plan นี้
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — กรอง ID ของ product ที่ต้องการตรวจสอบ หากมีอยู่ subscription ใหม่จะใช้ product นี้
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — กรองค่า idempotency_key ที่ส่งพร้อมตัวเลือกการเรียกเก็บเงินของ Stripe
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — กรองระเบียน membership ที่เชื่อมโยงกับ webhook นี้
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — กรองเมตาข้อมูลก่อนถูก serialize เพื่อจัดเก็บลงในฐานข้อมูล
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — กรองข้อมูลอ็อบเจ็กต์ก่อนถูกจัดเก็บลงในฐานข้อมูล
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — อนุญาตให้นักพัฒนาเปลี่ยน URL สำหรับอัปเกรดเพื่อปลดล็อก
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — กำหนดว่าควรใช้การแมปหรือไม่
+- [wu_username_from_email](./Filters/wu_username_from_email) — กรองชื่อผู้ใช้ของลูกค้าใหม่
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — อนุญาตให้นักพัฒนาเปลี่ยนข้อความเกี่ยวกับขีดจำกัดผู้ใช้ของ membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — อนุญาตให้นักพัฒนาเพิ่มโฟลเดอร์เพิ่มเติมลงในรายการที่แทนที่ได้
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — กรองว่า sub_commands ใดถูกเปิดใช้งานสำหรับเอนทิตีนี้
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — เราตรวจสอบสามรูปแบบเมื่อพยายามหาว่าเราสามารถแทรกค่าคงที่ของเราไว้ที่ใด:

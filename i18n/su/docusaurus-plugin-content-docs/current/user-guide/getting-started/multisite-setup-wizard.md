@@ -3,7 +3,7 @@ title: Pituduh Panata Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Panduan Penyiapan Multisite
+# Panduan Penyiapan Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite ngabarkeun wizard anu aya di dalamnya anu otomatis ngubah instalasi WordPress biasa jadi jaringan WordPress Multisite. Ieu ngahapkeun kabutuhan pikeun ngedit `wp-config.php` atawa ngalaksanakeun perintah database secara manual.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ngabarkeun wizard anu aya di dalamnya anu otomatis ngubah ins
 Upami instalasi WordPress anjeun geus jalan salaku jaringan Multisite, anjeun bisa leuwihna léngkah ieu. Wizard ngan bakal muncul lamun Multisite teu kungsi diaktifkeun.
 :::
 
-## Imah Mana Wizard Mun Mun?
+## Imah Mana Wizard Mun Mun? {#when-does-the-wizard-appear}
 
 Lamun anjeun ngaktifkeun Ultimate Multisite dina instalasi WordPress biasa (non-Multisite), plugin éta bakal ngadeukeutan yén Multisite teu aktif terus ngarujuk anjeun ka Multisite Setup Wizard tibatan wizard panyiapan biasa.
 
 Anjeun ogé bisa langsung ngaksesna di **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Syarat-syarat Mun Diperyakeun (Prerequisites)
+## Syarat-syarat Mun Diperyakeun (Prerequisites) {#prerequisites}
 
 Samémang ngalaksanakeun wizard, pastikeun yén:
 
@@ -29,7 +29,7 @@ Samémang ngalaksanakeun wizard, pastikeun yén:
 Wizard ieu ngubah file `wp-config.php` anjeun sarta nyiptake tabel database anyar. Selalu jieun backup samémang neraskeun.
 :::
 
-## Léngkah 1: Salam (Welcome)
+## Léngkah 1: Salam (Welcome) {#step-1-welcome}
 
 Layar kahiji jelaskeun naon éta téh WordPress Multisite jeung naon anu bakal dilakukeun ku wizard:
 
@@ -42,11 +42,11 @@ Layar kahiji jelaskeun naon éta téh WordPress Multisite jeung naon anu bakal d
 
 Klik **Lanjut (Continue)** pikeun neraskeun.
 
-## Léngkah 2: Konfigurasi Jaringan (Network Configuration)
+## Léngkah 2: Konfigurasi Jaringan (Network Configuration) {#step-2-network-configuration}
 
 Léngkah ieu nanya anjeun pikeun ngatur pengaturan jaringan anjeun.
 
-### Struktur Situs (Site Structure)
+### Struktur Situs (Site Structure) {#site-structure}
 
 Pilih bagaimana situs jaringan Anda akan diorganisasi:
 
@@ -57,11 +57,11 @@ Pilih bagaimana situs jaringan Anda akan diorganisasi:
 Lamun Anda memilih sub-domain, Anda perlu mengatur **wildcard DNS** dan **wildcard SSL certificate** untuk domain Anda. Kebanyakan hosting WordPress yang dikelola akan menanganinya secara otomatis. Lihat [Ultimate Multisite 101](./ultimate-multisite-101) untuk perbandingan detailnya.
 :::
 
-### Judul Jaringan (Network Title)
+### Judul Jaringan (Network Title) {#network-title}
 
 Masukkan nama untuk jaringan Anda. Ini secara otomatis akan menggunakan judul situs Anda saat ini dengan tambahan "Network". Anda bisa mengubahnya nanti dari pengaturan jaringan.
 
-### Email Admin Jaringan (Network Admin Email)
+### Email Admin Jaringan (Network Admin Email) {#network-admin-email}
 
 Alamat email yang digunakan untuk notifikasi administrasi jaringan. Ini secara otomatis akan menggunakan alamat email pengguna saat ini.
 
@@ -69,7 +69,7 @@ Alamat email yang digunakan untuk notifikasi administrasi jaringan. Ini secara o
 
 Setelah mengisi kolom-kolom tersebut, klik **Lanjutkan** (Continue) untuk melanjutkan.
 
-## Langkah 3: Instalasi
+## Langkah 3: Instalasi {#step-3-installation}
 
 Klik tombol **Instal** (Install) untuk memulai. Wizard akan melakukan lima langkah otomatis secara berurutan, dan setiap langkah akan menunjukkan progresnya secara *real-time*:
 
@@ -96,7 +96,7 @@ Setelah semua langkah selesai dengan sukses, Anda akan melihat status hijau "Suc
 
 Wizard kemudian akan otomatis lanjut ke layar penyelesaian.
 
-## Langkah 4: Selesai
+## Langkah 4: Selesai {#step-4-complete}
 
 Setelah instalasi selesai, Anda akan melihat pesan sukses yang mengonfirmasi bahwa WordPress Multisite sudah aktif.
 
@@ -108,7 +108,7 @@ Anda sekarang bisa melanjutkan dengan wizard Ultimate Multisite untuk mengkonfig
 Sanggeunna instalasi multisite tos réngsé, browser anjeun bakal dialihkan ka admin jaringan anu geus diaktifkeun. Anjeun mungkin kudu login deui sabab cookie autentikasi geus diupdate pikeun lingkungan multisite.
 :::
 
-## Pilihan Setup Manual Salaku Cadangan (Manual Setup Fallback)
+## Pilihan Setup Manual Salaku Cadangan (Manual Setup Fallback) {#manual-setup-fallback}
 
 Lamun wizard teu bisa nulis kana file `wp-config.php` anjeun (alatan izin file atawa batasan server), éta bakal nunjukkeun kode persis anu kedah anjeun tambihan sacara manual:
 
@@ -117,9 +117,9 @@ Lamun wizard teu bisa nulis kana file `wp-config.php` anjeun (alatan izin file a
 
 Sanggeus ngalakukeun ganti manual éta, refresh halaman terus wizard bakal ngadeukeutan yén multisite geus aktif.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Wizard nyarios wp-config.php teu bisa ditulis (not writable)
+### Wizard nyarios wp-config.php teu bisa ditulis (not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proses web server anjeun butuh izin nulis ka file `wp-config.php`. Anjeun bisa:
 
@@ -127,7 +127,7 @@ Proses web server anjeun butuh izin nulis ka file `wp-config.php`. Anjeun bisa:
 - Ngagunakeun instruksi setup manual anu parantos dipasihkeun ku wizard
 - Nanya bantuan ka penyedia hosting anjeun
 
-### Situs teu bisa diakses sanggeus setup (subdomain)
+### Situs teu bisa diakses sanggeus setup (subdomain) {#sites-are-not-accessible-after-setup-subdomains}
 
 Lamun anjeun milih struktur subdomain, anjeun kudu ngatur **wildcard DNS** pikeun domain anjeun. Tambah record DNS:
 
@@ -139,7 +139,7 @@ Value: [IP server anjeun]
 
 Cek jeung penyedia hosting anjeun lamun anjeun teu yakin kumaha cara ngatur éta.
 
-### Masalah autentikasi sanggeus setup
+### Masalah autentikasi sanggeus setup {#authentication-issues-after-setup}
 
 Lamun anjeun geus logout atawa ngalaman error cookie sanggeus setup multisite:
 
@@ -147,7 +147,7 @@ Lamun anjeun geus logout atawa ngalaman error cookie sanggeus setup multisite:
 2. Login deui di `yourdomain.com/wp-login.php`
 3. Lamun masalahna masih aya, cek yén `wp-config.php` anjeun teu ngabogaan `COOKIE_DOMAIN` diatur jadi `false` — ieu mangrupa masalah anu geus kasohor dina instalasi multisite subdomain.
 
-### Aya langkah anu gagal dina instalasi
+### Aya langkah anu gagal dina instalasi {#a-step-failed-during-installation}
 
 Upami salah sahiji langkah instalasi nunjukkeun error:
 

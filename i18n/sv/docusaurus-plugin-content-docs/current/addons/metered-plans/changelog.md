@@ -3,7 +3,7 @@ title: Ändringslogg för Mätbaserade Planer
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Ändringslogg
+# Metered Plans Ändringslogg {#metered-plans-changelog}
 
 Version 1.1.0 - Släppt den 2026-05-05
 - Nytt: AI-token-fakturering för multisite-underplatser — spåra och fakturera användning av AI-tokens över kundsajter med konfigurerbara priser per token
@@ -14,17 +14,17 @@ Version 1.1.0 - Släppt den 2026-05-05
 - Fix: Löste fatala fel och problem med dubbelinitialisering vid plugin-laddning
 - Förbättrat: Lägger till check-env npm script så att utvecklingsmiljöer konfigurerar sig själva vid första körningen
 
-### 1.0.3
+### 1.0.3 {#103}
 * Uppdaterad till Plugin Update Checker v5
 * Tillagda moderna WordPress-plugin-headers
 * Förbättrad kompatibilitet med senaste WordPress-versionerna
 * Förbättrad prestanda för användningsspårning
 
-### 1.0.2
+### 1.0.2 {#102}
 * Buggfixar och prestandaförbättringar
 * Förbättrad rapportering av användning
 
-### 1.0.0
+### 1.0.0 {#100}
 * Initial utgivning
 * Kärnfunktionalitet för metrad fakturering
 * Användningsspårning och beräkning av överförbrukning

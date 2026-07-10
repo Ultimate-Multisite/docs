@@ -3,9 +3,9 @@ title: Atnaujinimo zapisai
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Atnaujimo atvejiniai
+# Atnaujimo atvejiniai {#release-notes}
 
-## Versija 2.13.0 — Išvedė 2026-06-05
+## Versija 2.13.0 — Išvedė 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 * Nauja: Prideta suverinio tenanto (sovereign-tenant) palaikymas klientų paskyrimams, kasinimo procesui, paskarbui, svetainėms, įtrybuiems ir domenų netyrinimui, kad tenanto tinklai galėtų atvežti klientus grįžti į pagrindinį svetainę valdyti veiksmus.
 * Nauja: Prideta atnaujinimų kredencijų patikrinimas ilgalaikiais prenumeratomis, kad gateway'ai galėtų išjungti automatiną atnaujinimą, jei trūksta išsaugoto paskarbų, prenumeratos ar vault tokeno.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 * Taikymas (Fix): Prenumeratų atnaujinimai, galiojimo rodyklos ir mokėjimo laikinai atvejai dabar vengia tiesioginės galiojimo, kritinių klaidos arba neprivalomųjų mokėjimų prarandimo.
 * Geriabai: WordPress sujungimas testuojamas iki 7.0 versijos, produktinis Vue asetas atnaujinama iš npm šaltinių, o Cypress end-to-end apimtis dabar daugiau apima kasinimo, įtrybimo, SSO ir gateway veiksmus.
 
-## Versija 2.12.0 — Išvedė 2026-05-15
+## Versija 2.12.0 — Išvedė 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Naujas: Prideguote Hostinger (hPanel) kaip palaikytą hostinga paslaugų tiekėją su domenų netyrinimu integracija.
 - Naujas: Site Exporter dabar tvarko tinklo importavimo paketus, o tai leidžia be problemų atnaujinti visą svetainę.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Korekcija: Site Exporter CLI dabar išlaiko tinkamos pagrindinės netyros svetainės pasirinkimo.
 - Pagrindinė įgamtas: Iš plugin paketą pašalytas grupavimas wp-cli, o tai padeda sumažinti plugino dydį.
 
-## Versija 2.11.0 — Išvedė 2026-05-11
+## Versija 2.11.0 — Išvedė 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Naujas: Site exportai dabar grupuoja savarankiškai įkrovamą `index.php` failą, o tai leidžia įdiegti ZIP failą naujam hostui be papildomos plugino įdiegimo.
 - Naujas: Tinklo eksportas leidžia administratoriams išsaugoti visus subsvetainis svetainis vienoje arhivuoje tiesiogiai iš Site Export admin puslapio.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Naujas: Skelbimų formos redaktoriuje perspėja, jei pridėta produktas be nustatytam reikalamu laiku.
 - Naujas: Import/Export nustatyjimo sąrašo poslaidos dabar aiškiai apibūdina savo ribas ir tiesiogiai susiję su Site Export įrankiu.
 
-## Versija 2.10.0 — Išvedė 2026-05-05
+## Versija 2.10.0 — Išvedė 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 Nowości: Nowy kreator konfiguracji z PayPal dla ręcznego wprowadzania danych uwierzytelniających z bramką OAuth, zapewniający płynną konfigurację bramki.
 Nowości: Panel klienta po przełączeniu szablonu przeprojektowany za pomocą karty current-template, stałej siatki i przycisku **Reset current template**.
@@ -52,7 +52,7 @@ Naprawy: Bieżące ładowanie na żądanie (lazy-loaded) odbywa się przed hook 
 Naprawy: Ścieżka SSO filtrowana jest respektowana we wszystkich przepływach logowania.
 Naprawy: Opcje tożsamości strony bez zawartości są zachowywane po zapisaniu.
 
-## Wersja 2.9.0 — Wydana 30.04.2026
+## Wersja 2.9.0 — Wydana 30.04.2026 {#version-290--released-on-2026-04-30}
 
 Nowości: Dodano eksport i import pojedynczej strony w sekcji **Narzędzia > Eksport i import**.
 Naprawy: Pliki ZIP są teraz serwowane za pośrednictwem uwierzytelnionego punktu pobierania.
@@ -66,7 +66,7 @@ Naprawy: Rozwiązano cykliczną zależność crona importu.
 Naprawy: ID turysty są normalizowane do podkreśleń w kluczach ustawień użytkownika.
 Poprawki: Zamiast Alchemy/Zippy używany jest teraz ZipArchive dla lepszej kompatybilności.
 
-## Wersja 2.8.0 — Wydana 29.04.2026
+## Wersja 2.8.0 — Wydana 29.04.2026 {#version-280--released-on-2026-04-29}
 
 * Nauja: Įjungti Jumper (skaitmenis) mygtuką pridėtas į UI nustatymų „Kiti pasirinkimai“ sekciją.
 * Nauja: Prideta status kolona į puslapio užsakymo formų sąrašą.

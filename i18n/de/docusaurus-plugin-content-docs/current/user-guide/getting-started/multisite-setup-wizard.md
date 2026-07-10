@@ -3,7 +3,7 @@ title: Multisite-Setup-Assistent
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite-Setup-Assistent
+# Multisite-Setup-Assistent {#multisite-setup-wizard}
 
 Ultimate Multisite enthält einen integrierten Assistenten, der eine Standard-WordPress-Installation automatisch in ein WordPress-Multisite-Netzwerk umwandelt. Dadurch entfällt die Notwendigkeit, `wp-config.php` manuell zu bearbeiten oder Datenbankbefehle auszuführen.
 
@@ -11,13 +11,13 @@ Ultimate Multisite enthält einen integrierten Assistenten, der eine Standard-Wo
 Wenn Ihre WordPress-Installation bereits als Multisite-Netzwerk läuft, können Sie diesen Schritt vollständig überspringen. Der Assistent erscheint nur, wenn Multisite noch nicht aktiviert ist.
 :::
 
-## Wann erscheint der Assistent?
+## Wann erscheint der Assistent? {#when-does-the-wizard-appear}
 
 Wenn Sie Ultimate Multisite auf einer Standard- (nicht-Multisite) WordPress-Installation aktivieren, erkennt das Plugin, dass Multisite nicht aktiviert ist, und leitet Sie automatisch zum Multisite-Setup-Assistenten weiter, anstatt zum regulären Setup-Assistenten.
 
 Sie können es auch direkt unter **WP Admin > Ultimate Multisite > Multisite Setup** aufrufen.
 
-## Voraussetzungen
+## Voraussetzungen {#prerequisites}
 
 Bevor Sie den Assistenten ausführen, stellen Sie sicher:
 
@@ -29,7 +29,7 @@ Bevor Sie den Assistenten ausführen, stellen Sie sicher:
 Der Assistent ändert Ihre `wp-config.php`-Datei und erstellt neue Datenbanktabellen. Erstellen Sie immer ein Backup, bevor Sie fortfahren.
 :::
 
-## Schritt 1: Willkommen
+## Schritt 1: Willkommen {#step-1-welcome}
 
 Der erste Bildschirm erklärt, was WordPress Multisite ist und was der Assistent tun wird:
 
@@ -42,11 +42,11 @@ Der erste Bildschirm erklärt, was WordPress Multisite ist und was der Assistent
 
 Klicken Sie auf **Weiter**, um fortzufahren.
 
-## Schritt 2: Netzwerk-Konfiguration
+## Schritt 2: Netzwerk-Konfiguration {#step-2-network-configuration}
 
 In diesem Schritt werden Sie aufgefordert, Ihre Netzwerkeinstellungen zu konfigurieren.
 
-### Seitenstruktur
+### Seitenstruktur {#site-structure}
 
 Wählen Sie, wie Ihre Netzwerkseiten organisiert werden sollen:
 
@@ -57,11 +57,11 @@ Wählen Sie, wie Ihre Netzwerkseiten organisiert werden sollen:
 Wenn Sie Subdomains wählen, müssen Sie **Wildcard-DNS** und ein **Wildcard-SSL-Zertifikat** für Ihre Domain konfigurieren. Die meisten verwalteten WordPress-Hosts erledigen dies automatisch. Sehen Sie sich [Ultimate Multisite 101](./ultimate-multisite-101) für einen detaillierten Vergleich an.
 :::
 
-### Netzwerk-Titel
+### Netzwerk-Titel {#network-title}
 
 Geben Sie einen Namen für Ihr Netzwerk ein. Standardmäßig wird der aktuelle Seitentitel mit „Network“ ergänzt. Sie können dies später in den Netzwerkeinstellungen ändern.
 
-### Netzwerk-Admin-E-Mail
+### Netzwerk-Admin-E-Mail {#network-admin-email}
 
 Die E-Mail-Adresse, die für Netzwerkadministrationsbenachrichtigungen verwendet wird. Standardmäßig wird die E-Mail-Adresse des aktuellen Benutzers verwendet.
 
@@ -69,7 +69,7 @@ Die E-Mail-Adresse, die für Netzwerkadministrationsbenachrichtigungen verwendet
 
 Nach Ausfüllen der Felder klicken Sie auf **Weiter**, um fortzufahren.
 
-## Schritt 3: Installation
+## Schritt 3: Installation {#step-3-installation}
 
 Klicken Sie auf die Schaltfläche **Installieren**, um zu beginnen. Der Assistent führt fünf automatisierte Schritte nacheinander aus, wobei jeder Schritt seinen Fortschritt in Echtzeit anzeigt:
 
@@ -96,7 +96,7 @@ Sobald alle Schritte erfolgreich abgeschlossen sind, sehen Sie für jedes Elemen
 
 Der Assistent führt dann automatisch zum Abschlussbildschirm weiter.
 
-## Schritt 4: Fertig
+## Schritt 4: Fertig {#step-4-complete}
 
 Sobald die Installation abgeschlossen ist, sehen Sie eine Erfolgsmeldung, die bestätigt, dass WordPress Multisite aktiviert wurde.
 
@@ -108,7 +108,7 @@ Sie können nun mit dem Ultimate Multisite-Setup-Assistenten fortfahren, um Ihre
 Nach Abschluss der Multisite-Installation leitet Ihr Browser über den neu aktivierten Netzwerk-Admin weiter. Möglicherweise müssen Sie sich erneut anmelden, da die Authentifizierungs-Cookies für die Multisite-Umgebung aktualisiert werden.
 :::
 
-## Manuelle Setup-Alternative
+## Manuelle Setup-Alternative {#manual-setup-fallback}
 
 Wenn der Assistent nicht in der Lage ist, in Ihre `wp-config.php`-Datei zu schreiben (aufgrund von Dateiberechtigungen oder Serverbeschränkungen), wird er den genauen Code anzeigen, den Sie manuell hinzufügen müssen:
 
@@ -117,9 +117,9 @@ Wenn der Assistent nicht in der Lage ist, in Ihre `wp-config.php`-Datei zu schre
 
 Nach den manuellen Änderungen die Seite aktualisieren, und der Assistent erkennt, dass Multisite jetzt aktiv ist.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-### Der Assistent sagt, wp-config.php sei nicht beschreibbar
+### Der Assistent sagt, wp-config.php sei nicht beschreibbar {#the-wizard-says-wp-configphp-is-not-writable}
 
 Der Prozess Ihres Webservers benötigt Schreibberechtigung für die Datei `wp-config.php`. Sie können entweder:
 
@@ -127,7 +127,7 @@ Der Prozess Ihres Webservers benötigt Schreibberechtigung für die Datei `wp-co
 - Die vom Assistenten bereitgestellten Anweisungen für die manuelle Setup-Alternative verwenden
 - Um Hilfe bitten
 
-### Seiten sind nach der Einrichtung nicht erreichbar (Subdomains)
+### Seiten sind nach der Einrichtung nicht erreichbar (Subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Wenn Sie die Subdomain-Struktur gewählt haben, müssen Sie **Wildcard-DNS** für Ihre Domain konfigurieren. Fügen Sie einen DNS-Eintrag hinzu:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Fragen Sie Ihren Hosting-Provider, wenn Sie unsicher sind, wie Sie dies konfigurieren.
 
-### Authentifizierungsprobleme nach der Einrichtung
+### Authentifizierungsprobleme nach der Einrichtung {#authentication-issues-after-setup}
 
 Wenn Sie abgemeldet sind oder nach der Multisite-Einrichtung Cookie-Fehler auftreten:
 
@@ -147,7 +147,7 @@ Wenn Sie abgemeldet sind oder nach der Multisite-Einrichtung Cookie-Fehler auftr
 2. Melden Sie sich erneut unter `yourdomain.com/wp-login.php` an
 3. Wenn das Problem weiterhin besteht, prüfen Sie, ob Ihre `wp-config.php` nicht `COOKIE_DOMAIN` auf `false` gesetzt hat — dies ist ein bekanntes Problem bei Subdomain-Multisite-Installationen
 
-### Ein Schritt ist während der Installation fehlgeschlagen
+### Ein Schritt ist während der Installation fehlgeschlagen {#a-step-failed-during-installation}
 
 Wenn einer der Installationsschritte einen Fehler anzeigt:
 

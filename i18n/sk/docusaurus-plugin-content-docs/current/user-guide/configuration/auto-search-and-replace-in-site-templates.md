@@ -3,7 +3,7 @@ title: Automatické vyhľadávanie a nahradenie v šablónach webových stránok
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatické vyhľadávanie a nahradenie v šablónach stránok (v2)
+# Automatické vyhľadávanie a nahradenie v šablónach stránok (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tento tutorial vyžaduje WP UItimo verzii 2.x.**_
 
@@ -17,7 +17,7 @@ Vtedy bude váš zákazník môcť toto pole vyplniť počas registráции.
 
 Ultimate Multisite potom automaticky nahradí zástupníky údajmi poskytnutými zákazníkom.
 
-## **Riešenie problému „šablóna plná zástupníkov“**
+## **Riešenie problému „šablóna plná zástupníkov“** {#solving-the-template-full-of-placeholders-problem}
 
 Všetko to je skvelé, ale gặpáme sa s neviditeľným problémom: teraz naše šablóny stránok – ktoré môžu navštíviť naši zákazníci – sú plné neviditeľných zástupnikov, ktoré nehovoria nič zaujímavé.
 

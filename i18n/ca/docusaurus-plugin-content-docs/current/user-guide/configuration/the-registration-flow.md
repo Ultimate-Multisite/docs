@@ -3,13 +3,13 @@ title: El Flux de Registració
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# El Flux de Registre (v2)
+# El Flux de Registre (v2) {#the-registration-flow-v2}
 
 _**NOTA IMPORTANT: Aquest article es refereix a Ultimate Multisite versió 2.x.**_
 
 Els usuaris poden registrar-se a la vostra xarxa de diverses maneres. Poden utilitzar el vostre formulari de registre o un enllaç compartible a un pla preseleccionat. Aquí us mostrarem com poden registrar-se els vostres clients a la vostra xarxa utilitzant els camins disponibles i què passa després de registrar-se.
 
-## Utilitzant el Formulari de Registre:
+## Utilitzant el Formulari de Registre: {#using-the-registration-form}
 
 Aquest és el procés de registre estàndard. Creu una pàgina de registre amb un **formulari de pagament** i és aquí on els vostres clients anaven a registrar-se a la vostra xarxa i a subscriure un pla. Podeu tenir múltiples pàgines de registre, cada una amb un formulari de registre diferent si ho desitgeu.
 
@@ -35,13 +35,13 @@ Si s'han registrat per un pla pagat o la verificació de correu electrònic no �
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Utilitzant un Enllaç Compartible:
+## Utilitzant un Enllaç Compartible: {#using-a-shareable-link}
 
 El procés de registre utilitzant un enllaç compartible és pràcticament el mateix que el formulari de registre; la única diferència és que, utilitzant un enllaç compartible, els vostres clients poden tenir un producte o una plantilla de lloc web preseleccionats al formulari de pagament (consultar la secció Pre-selecting products and templates via URL parameters) o potser un codi de cuon desdit (consultar la secció Using URL Parameters).
 
 El procés de registre serà el mateix: haurà de rellenar el seu nom, nom d'usuari, adreça de correu electrònic, nom del lloc web i títol, etc... però el pla o la plantilla del lloc web ja estarà preseleccionat per ell.
 
-### Registre utilitzant Pagaments Manuals:
+### Registre utilitzant Pagaments Manuals: {#registering-using-manual-payments}
 
 Si no voleu utilitzar PayPal, Stripe o qualsevol altre portal de pagament oferit per Ultimate Multisite o les seves integracions add-on, podeu utilitzar pagaments manuals per als vostres clients. D'aquesta manera, podeu generar una factura perquè paguin al vostre processador de pagament preferit després de registrar-se a la vostra xarxa.
 

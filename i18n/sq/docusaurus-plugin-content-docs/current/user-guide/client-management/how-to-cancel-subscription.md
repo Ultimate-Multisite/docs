@@ -3,7 +3,7 @@ title: Si të Anuloni një Abonim
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Si mund të ndaloj abonimin tim?
+# Si mund të ndaloj abonimin tim? {#how-can-i-cancel-my-subscription}
 
 Nëse keni licencën Ultimate Multisite, mund ta ndaloni rinovimin në çdo kohë që dëshironi. Thjesht ndiqni këto hapa:
 

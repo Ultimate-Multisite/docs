@@ -1,0 +1,150 @@
+---
+title: Shumëqiramarrje
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Shumëqiramarrja {#multi-tenancy}
+
+Shpërndani nënsajte nëpër serverë dhe baza të dhënash për performancë dhe siguri
+
+## Pikat kryesore të versionit 1.2.0 {#version-120-release-highlights}
+
+Shumëqiramarrja 1.2.0 shton bazën e qiramarrësit sovran për rrjedhat e punës të izolimit në prodhim:
+
+- Autologin pa gjendje për qiramarrësit me vizita SSO jetëshkurtra dhe të mbrojtura nga riprodhimi.
+- Izolim i bazës së të dhënave dhe i sistemit të skedarëve për çdo nënsajt për qiramarrësit sovranë.
+- Aftësi shumëqiramarrjeje Hostinger për sigurim qiramarrësish të vetëdijshëm për host-in.
+- Porta verifikimi të migrimit sovran për kontrolle të të dhënave të trashëguara dhe përpunim shtytjeje asinkrone.
+- Lidhje e konfigurueshme e host-it të bazës së të dhënave në të njëjtën makinë për instalime Bedrock, FrankenPHP dhe localhost.
+- Përmirësime në nisjen e qiramarrësit, shkruesin e bazës së të dhënave, nisjen e skemës dhe sigurimin e përdoruesve.
+- Çmontim më i sigurt sovran që pastron kredencialet e qiramarrësit.
+
+Shihni udhëzuesit e përdoruesit për [rrjedhën e punës së migrimit sovran](/user-guide/getting-started/sovereign-migration-workflow), [izolimin e shumëqiramarrjes](/user-guide/configuration/multi-tenancy-isolation) dhe [operacionet e qiramarrësit sovran](/user-guide/administration/sovereign-tenant-operations).
+
+## Kërkesat {#requirements}
+
+- WordPress 5.3 ose më i lartë
+- PHP 7.4 ose më i lartë
+- Shtojca Multisite Ultimate (aktive)
+
+## Instalimi {#installation}
+
+1. Ngarkoni skedarët e addon-it në direktorinë tuaj `/wp-content/plugins/`
+2. Aktivizoni shtojcën përmes menusë 'Plugins' në WordPress
+3. Konfiguroni cilësimet e addon-it në administrimin e rrjetit
+
+## Zhvillimi {#development}
+
+### Konfigurimi {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura e projektit {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Klasa PHP dhe përfshirje
+│   ├── class-multisite-ultimate-updater.php  # Trajtues përditësimi
+│   └── class-multi_tenancy-main.php             # Funksionaliteti kryesor
+├── tests/                        # Teste njësie
+│   ├── bootstrap.php            # Nisja e testit
+│   ├── class-*-base.php         # Klasa bazë e testit
+│   └── class-*-test.php         # Raste testimi
+├── views/                       # Skedarë shablloni
+├── assets/                      # Asete statike
+│   ├── css/                     # Fletëstile
+│   ├── js/                      # Skedarë JavaScript
+│   └── images/                  # Imazhe
+├── lang/                        # Skedarë gjuhe
+├── composer.json                # Varësi PHP
+├── package.json                 # Varësi Node.js
+├── phpunit.xml.dist             # Konfigurimi PHPUnit
+├── .phpcs.xml.dist              # Konfigurimi i standardeve të kodit
+└── rector.php                   # Rregulla për modernizimin e kodit
+```
+
+### Testimi {#testing}
+
+Addon-i përfshin një kornizë gjithëpërfshirëse testimi:
+
+- **Teste njësie**: Teste të bazuara në PHPUnit me paketën e testeve WordPress
+- **Klasa bazë e testit**: Ofron metoda ndihmëse për skenarë të zakonshëm testimi
+- **Mbulimi i testeve**: Konfiguruar për të gjurmuar mbulimin e kodit
+- **Testimi Multisite**: Testet ekzekutohen në mjedis multisite
+
+### Standardet e kodit {#code-standards}
+
+- **Standardet e kodimit WordPress**: Zbatohen përmes PHPCS
+- **Përputhshmëria me PHP 7.4+**: Mbështeten veçori moderne të PHP
+- **Analizë statike**: Integrim PHPStan për kontrollin e tipeve
+- **Modernizimi i kodit**: Rregulla Rector për përditësime PHP
+
+### Sistemi i ndërtimit {#build-system}
+
+- **Përpunimi i aseteve**: Minifikim për skedarët CSS/JS
+- **Përkthimi**: Gjenerim skedari POT
+- **Paketimi**: Krijim arkivi për shpërndarje
+- **Modaliteti i zhvillimit**: Asete të paminifikuara për korrigjim gabimesh
+
+## Konfigurimi {#configuration}
+
+Addon-i mbështet opsione të ndryshme konfigurimi të aksesueshme përmes ndërfaqes së administrimit të rrjetit.
+
+### Konfigurimi i qiramarrësit sovran {#sovereign-tenant-configuration}
+
+Për qiramarrësit sovranë, konfiguroni bazën e të dhënave të qiramarrësit, rrënjën e sistemit të skedarëve, lidhjen e host-it të bazës së të dhënave dhe aftësinë e host-it përpara se të drejtoni trafikun te qiramarrësi. Ekzekutoni verifikimin e migrimit pas çdo ndryshimi që ndikon te kredencialet e bazës së të dhënave, lidhja e host-it, rutimi ose sigurimi i përdoruesve.
+
+Përdorni `localhost` vetëm kur runtime-i i qiramarrësit dhe lejet e bazës së të dhënave presin socket lokal ose akses në të njëjtën makinë. Përdorni `127.0.0.1` ose një emër host-i shërbimi kur ai është host-i i lejes i konfiguruar nga ofruesi juaj.
+
+### Aftësia Hostinger {#hostinger-capability}
+
+Aftësia e shumëqiramarrjes Hostinger punon me token-in e përbashkët të integrimit Hostinger. Konfirmoni që domeni është i pranishëm në hPanel, DNS tregon te Account Hostinger dhe cilësimet e bazës së të dhënave të qiramarrësit përputhen me hPanel përpara verifikimit.
+
+## Hooks dhe Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - Aktivizohet pas inicializimit të addon-it
+- `ultimate-multisite-addon-template_loaded` - Aktivizohet pasi të gjithë skedarët e addon-it janë ngarkuar
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Modifikoni cilësimet e addon-it
+- `ultimate-multisite-addon-template_enabled` - Mbishkruani statusin aktiv/joaktiv të addon-it
+
+## Licenca {#license}
+
+Ky addon është i licencuar nën GPL v3 ose më vonë.
+
+## Mbështetje {#support}
+
+Për mbështetje dhe dokumentacion, vizitoni [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Versioni 1.2.0 (2026-06-03): shton autologin pa gjendje për qiramarrësit, aftësinë e shumëqiramarrjes Hostinger, izolimin e bazës së të dhënave dhe sistemit të skedarëve për çdo nënsajt, portat e verifikimit të migrimit sovran, përmirësime të nisjes së qiramarrësit/shkruesit të bazës së të dhënave, lidhje të konfigurueshme të host-it MySQL dhe çmontim më të sigurt sovran.
+
+- Versioni 1.0.1 (2025-09-28): riemërton prefiksin në ultimate-multisite; përditëson domenin e tekstit; rrit versionin.
+
+
+- Versioni  (2025-09-28): riemërton prefiksin në ultimate-multisite; përditëson domenin e tekstit; rrit versionin.

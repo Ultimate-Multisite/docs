@@ -4,23 +4,23 @@ title: Filtr - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filtr: wp_ultimo_site_exporter_url
+# Filtr: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Pozwala deweloperom zarządzać ścieżką względną do głównego katalogu pluginu.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
 | $dir | `string` | Ścieżka względna do katalogu, do którego chcesz uzyskać dostęp. |
 
-### Od wersji
+### Od wersji {#since}
 
 - 0.0.1
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) w linii 52
 
 
-## Zwraca
+## Zwraca {#returns}
 Ścieżkę względną do głównego katalogu pluginu.

@@ -1,154 +1,156 @@
 ---
-title: Sizning Ro'yxatlash Formangizni Moslashtirish
+title: قئیدیات فورمونوزو اؤزللشدیرمک
 sidebar_position: 17
-_i18n_hash: b0e3b7cddd099b4260e5cf01fead8685
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kayıt Formunuzu Özelleştirme
+# قئیید فورمونوزو اؤزللشدیرمک {#customizing-your-registration-form}
 
-Ağınızı, WordPress platformu üzerinde çalışan diğer tüm SaaS sitelerinden farklı ve eşsiz göstermek için, Ultimate Multisite, **Checkout Forms** özelliğimiz ile kayıt ve giriş sayfalarınızı özelleştirmenize olanak tanır.
+WordPress پلاتفورماسی اوستونده قورولان باشقا SaaS‌لاردان شبکه‌نیزی فرقلندیرمک اوچون، Ultimate Multisite سیزه **Checkout Forms** اؤزللیگی ایله قئیید و گیریش صفحه‌لرینیزی اؤزللشدیرمه ایمکانی وئریر.
 
-Yeni müşterileri dönüştürme yollarını denemek için kolay ve esnek bir yöntem olmalarına rağmen, bunlar çoğunlukla kişiselleştirilmiş kayıt formları oluşturmak için kullanılır. Bu makale, bunu nasıl yapabileceğinizi göstermeyi amaçlıyor.
+بو اؤزللیک، یئنی موشتریلری جذب ائتمک اوچون فرخلی یاناشمالاری سیناماقی آسان و اسنک ائدر، آنجاق داها چوخ شخصی‌لشدیرمیش قئیید فورملاری یاراتماق اوچون ایشلنیر. بو مقاله سیزه بونو نئجه ائده بیله‌جه‌یینیزی گؤسترمه‌یه چالیشیر.
 
-## Giriş ve kayıt sayfaları:
+## گیریش و قئیید صفحه‌لری: {#login-and-registration-pages}
 
-Ultimate Multisite kurulduğunda, ana sitenizde otomatik olarak özel giriş ve kayıt sayfaları oluşturur. Bu varsayılan sayfaları istediğiniz zaman, **Ultimate Multisite > Ayarlar > Giriş ve Kayıt** sayfanızdan değiştirerek güncelleyebilirsiniz.
+Ultimate Multisite قورولاندا، باش سایتینیزده اؤزل گیریش و قئیید صفحه‌لرینی اوز-اوزونه یارادیر. بو ایلکین صفحه‌لری هر واخت **Ultimate Multisite > Settings > Login & Registration** صفحه‌سینه گئده‌رک دگیشدیره بیله‌رسینیز.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![گیریش و قئیید تنظیمات صفحه‌سی](/img/config/settings-general.png)
 
-İşte giriş ve kayıt ayarları sayfasının tam görünümü:
+گیریش و قئیید تنظیمات صفحه‌سینین تام گؤرونوشو بودور:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![گیریش و قئیید تنظیمات تام صفحه‌سی](/img/config/settings-login-registration-full.png)
 
-**Giriş ve Kayıt** sayfasında özelleştirebileceğiniz her bir seçeneğe yakından bakalım:
+ایندی **Login & Registration** صفحه‌سینده اؤزللشدیره بیله‌جه‌یینیز هر بیر سئچنه‌یه باخاق:
 
-*   **Kayıt etkinleştir:** Bu seçenek, ağınızda kayıt özelliğini etkinleştirir veya devre dışı bırakır. Kapalı konuma getirilirse, müşterileriniz kayıt olup ürünlerinize abone olamayacaktır.
+  * **قئییدی فعال ائت:** بو سئچنک شبکه‌نیزده قئییدی فعال یا غیرفعال ائدر. اؤچورولسه، موشتریلرینیز قئییددن کئچه و محصوللارینیزا آبونه اولا بیلمه‌یه‌جکلر.
 
-*   **E-posta doğrulama etkinleştir:** Bu seçenek açık konuma getirilirse, ücretsiz plan veya deneme süreli ücretli plan için abone olan müşteriler bir doğrulama e-postası alır ve web siteleri oluşturulabilmesi için doğrulama bağlantısına tıklamaları gerekir.
+  * **ایمیل دوغرولاماسینی فعال ائت:** بو سئچنک آچیق اولسا، آزاده پلان یا سیناق مودتی اولان پوللو پلانا آبونه اولان موشتریلر دوغرولاما ایمیلی آلاجاق و وب‌سایتلرینین یارادیلماسی اوچون دوغرولاما باغلانتیسینا کلیک ائتمه‌لی اولاجاقلار.
 
-*   **Varsayılan kayıt sayfası:** Burası kayıt için varsayılan sayfadır. Bu sayfanın web sitenizde yayınlanmış olması ve bir kayıt formu (aynı zamanda checkout formu olarak da bilinir) içermesi gerekir; müşterilerinizin ürünlerinize abone olacağı yer burasıdır. İstediğiniz kadar çok kayıt sayfası ve checkout formu oluşturabilirsiniz, sadece checkout formunun kısa kodunu kayıt sayfasına eklemeyi unutmayın, aksi takdirde görünmeyecektir.
+  * **ایلکین قئیید صفحه‌سی:** بو، قئیید اوچون ایلکین صفحه‌دیر. بو صفحه وب‌سایتینیزده یایینلانمالی و قئیید فورمو (Checkout form کیمی ده تانینیر) داشیمالیدیر؛ موشتریلرینیز اورادا محصوللارینیزا آبونه اولاجاقلار. ایسته‌دیگینیز قدر قئیید صفحه‌سی و Checkout form یارادا بیله‌رسینیز، فقط یادینیزدا ساخلا‌یین کی، Checkout form shortcode‌ونو قئیید صفحه‌سینه قویمالیسینیز؛ یوخسا گؤرونمه‌یه‌جک.
 
-*   **Özel giriş sayfası kullan:** Bu seçenek, varsayılan `wp-login.php` sayfasından farklı, özelleştirilmiş bir giriş sayfası kullanmanıza olanak tanır. Bu seçenek açık konuma getirilirse, hangi sayfanın **Varsayılan giriş sayfası** seçeneğinde (hemen altında) kullanılacağını seçebilirsiniz.
+  * **اؤزل گیریش صفحه‌سیندن ایستیفاده ائت:** بو سئچنک، ایلکین wp-login.php صفحه‌سیندن باشقا، اؤزللشدیرمیش گیریش صفحه‌سی ایشلتمه‌یه ایمکان وئریر. بو سئچنک آچیق اولسا، **Default login page** سئچنه‌یینده (دقیقا آلتدا) گیریش اوچون هانسی صفحه‌نین ایشلنه‌جه‌یینی سئچه بیله‌رسینیز.
 
-*   **Orijinal giriş URL'sini (wp-login.php) gizle:** Orijinal giriş URL'sini gizlemek isterseniz, bu seçeneği açabilirsiniz. Bu, brute-force saldırılarını önlemek için kullanışlıdır. Bu seçenek etkinleştirilirse, Ultimate Multisite bir kullanıcı orijinal `wp-login.php` bağlantısına erişmeye çalıştığında 404 hatası gösterecektir.
+  * **اصلی گیریش آدرسینی گیزلت (wp-login.php)** : اصلی گیریش URL‌ینی گیزلتمک ایسته‌سنیز، بو سئچنه‌یی آچا بیله‌رسینیز. بو، brute-force هجوملارینین قاباغینی آلماق اوچون یارارلیدیر. بو سئچنک فعال اولسا، بیر ایستیفاده‌چی اصلی wp-login.php باغلانتیسینا گیریشمه‌یه چالیشاندا Ultimate Multisite 404 خطاسی گؤسترر
 
-*   **Senkron site yayınlamayı zorla:** Bir müşteri ağdaki bir ürüne abone olduktan sonra, yeni beklemede olan site gerçek bir ağ sitesine dönüştürülmelidir. Yayınlama süreci, Job Queue üzerinden, asenkron olarak gerçekleşir. Bu seçeneği etkinleştirerek yayınlamanın, kayıt işlemiyle aynı istekte gerçekleşmesini sağlayabilirsiniz.
+  * **سینکرون سایت یایینلاماسینی مجبور ائت:** موشتری شبکه‌ده بیر محصولا آبونه اولاندان سونرا، یئنی گؤزله‌ین سایت حقیقی شبکه سایتینا چئوریلمه‌لیدیر. یایینلاما پروسه‌سی Job Queue واسطه‌سیله، آسینکرون باش وئریر. یایینلامانین قئیید ایسته‌یی ایله عئینی درخواستدا باش وئرمسینی مجبور ائتمک اوچون بو سئچنه‌یی فعال ائدین.
 
-Şimdi, giriş ve kayıt süreciyle hala ilgili olan diğer seçeneklere bakalım. Bunlar, aynı Giriş ve kayıt sayfasındaki **Diğer seçenekler** bölümünün hemen altında yer almaktadır:
+ایندی گیریش و قئیید پروسه‌سینه باغلی قالان باشقا سئچنکلره باخاق. اونلار عئینی Login & registration صفحه‌سینده **Other options** آلتین‌دادیر:
 
-*   **Varsayılan rol:** Bu, müşterilerinizin kayıt işlemi sonrasında web sitelerinde sahip olacağı roldür.
+  * **ایلکین رول:** بو، قئیید پروسه‌سیندن سونرا موشتریلرینیزین وب‌سایتلرینده اولاجاق رولدور.
 
-*   **Jumper'ı etkinleştir:** Yönetici alanında Jumper kısayolunu etkinleştirir. Jumper, yöneticilerin her menüyü gezmek zorunda kalmadan Ultimate Multisite ekranlarına, ağ nesnelerine ve diğer desteklenen hedeflere hızlıca atlamasını sağlar. Bu hızlı navigasyon aracını yönetici arayüzünden gizlemeyi tercih ediyorsanız kapatın.
+  * **Jumper‌ا فعال ائت:** اداره ساحه‌سینده Jumper قیسا یولونو فعال ائدیر. Jumper مدیرلره هر منیودن کئچمه‌دن Ultimate Multisite صفحه‌لرینه، شبکه اوبژکتلرینه و باشقا دَسته‌کلنن مقصدلره تئز کئچمه‌یه ایمکان وئریر. بو تئز ناویقاسیا آلَتینی اداره اینترفئیسیندن گیزلتمک ایسته‌سنیز، اونو اؤچورون.
 
-*   **Kullanıcıları ana siteye de ekle:** Bu seçeneği etkinleştirmek, kayıt işleminden sonra kullanıcıyı ağınızın ana sitesine de ekleyecektir. Bu seçeneği etkinleştirirseniz, web sitenizdeki bu kullanıcıların **varsayılan rolünü** belirleme seçeneği de hemen altında görünecektir.
+  * **ایستیفاده‌چیلری باش سایتا دا اضافه ائت:** بو سئچنه‌یی فعال ائتمک، قئیید پروسه‌سیندن سونرا ایستیفاده‌چینی شبکه‌نیزین باش سایتینا دا اضافه ائده‌جک. بو سئچنه‌یی فعال ائتسنیز، بو ایستیفاده‌چیلرین وب‌سایتینیزده **ایلکین رول**‌ونو تنظیم ائتمک اوچون بیر سئچنک ده آلتدا گؤرونه‌جک.
 
-*   **Birden fazla hesap etkinleştir:** Kullanıcıların aynı e-posta adresiyle ağınızdaki farklı sitelerde hesap sahibi olmasına izin verir. Bu seçenek kapalıysa, müşterileriniz aynı e-posta adresiyle ağınızda çalışan başka web sitelerinde hesap oluşturamayacaktır.
+  * **چوخلو حسابلاری فعال ائت:** ایستیفاده‌چیلره عئینی ایمیل آدرسی ایله شبکه‌نیزین فرخلی سایتلرینده حسابلاری اولماق ایمکانی وئرین. بو سئچنک باغلی اولسا، موشتریلرینیز عئینی ایمیل آدرسی ایله شبکه‌نیزده ایشله‌ین باشقا وب‌سایتلرده حساب یارادا بیلمه‌یه‌جکلر.
 
-İşte özelleştirebileceğiniz giriş ve kayıt ile ilgili tüm seçenekler! Ayarlarınızı düzenlemeyi bitirdikten sonra kaydetmeyi unutmayın.
+اؤزللشدیره بیله‌جه‌یینیز گیریش و قئییدله باغلی سئچنکلرین هامیسى بودور! دَییشدیرمه‌لری بیتیرندن سونرا تنظیماتینیزی ذخیره ائتمه‌یی اونوتما‌یین.
 
-## Birden fazla kayıt formu kullanma:
+## چوخلو قئیید فورملاریندان ایستیفاده: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0, istediğiniz kadar çok form oluşturmanıza olanak tanıyan ve farklı alanlar, sunulan ürünler vb. eklemenize izin veren bir checkout form editörü sunar.
+Ultimate Multisite 2.0 بیر Checkout form ادیتورو تقدیم ائدیر؛ بونونلا فرخلی ساحه‌لر، تکلیف اولونان محصوللار و س. ایله ایسته‌دیگینیز قدر فورم یارادا بیله‌رسینیز.
 
-Hem giriş hem de kayıt sayfaları kısa kodlarla gömülüdür: giriş sayfasında **[wu_login_form]** ve kayıt sayfası için **[wu_checkout]**. Kayıt sayfasını, checkout formları oluşturarak daha da özelleştirebilirsiniz.
+هم گیریش، هم ده قئیید صفحه‌لری shortcode ایله یئرلشدیرلیب: گیریش صفحه‌سینده **[wu_login_form]** و قئیید صفحه‌سی اوچون**[wu_checkout]**. قئیید صفحه‌سینی Checkout form قورماق یا یاراتماقلا داها دا اؤزللشدیره بیله‌رسینیز.
 
-Bu özelliğe erişmek için sol kenar çubuğundaki **Checkout Forms** menüsüne gidin.
+بو اؤزللیگه چاتماق اوچون، سول یان چوبوقدان **Checkout Forms** منیوسونا گئدین.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![یان چوبوقدا Checkout Forms منیوسو](/img/config/checkout-forms-list.png)
 
-Bu sayfada sahip olduğunuz tüm checkout formlarını görebilirsiniz.
+بو صفحه‌ده، الده اولان بوتون Checkout form‌لاری گؤره بیله‌رسینیز.
 
-Yeni bir tane oluşturmak isterseniz, sayfanın üst kısmındaki **Add Checkout Form** butonuna tıklayın.
+یئنی بیرینی یاراتماق ایسته‌سنیز، صفحه‌نین یوخاریسیندا **Add Checkout Form** اوستونه کلیک ائدین.
 
-Başlangıç noktanız olarak bu üç seçenekten birini seçebilirsiniz: tek adımlı, çok adımlı veya boş. Ardından, **Editor'a Git** butonuna tıklayın.
+باشلانغیج نقطه‌سی کیمی بو اوچ سئچنکدن بیرینی سئچه بیله‌رسینیز: تک آدیم، چوخ آدیم یا بوش. سونرا **Go to the Editor** اوستونه کلیک ائدین.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![تک آدیم، چوخ آدیم یا بوش سئچنکلری ایله Add Checkout Form](/img/config/checkout-forms-list.png)
 
-Alternatif olarak, zaten sahip olduğunuz formları, adının altındaki seçeneklere tıklayarak düzenleyebilir veya çoğaltabilirsiniz. Orada ayrıca formun kısa kodunu kopyalama veya formu silme seçeneklerini de bulacaksınız.
+باشقا یوللا، الده اولان فورملاری آدلارینین آلتین‌داکی سئچنکلره کلیک ائده‌رک دَییشدیره یا چوخالدا بیله‌رسینیز. اورادا فورمون shortcode‌ونو کؤچورمک یا فورمو سیلمک سئچنکلرینی ده تاپاجاقسینیز.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![دَییشدیر، چوخالت و سیل ایله Checkout form اوزرینه گلنده‌کی عمللر](/img/config/checkout-form-hover-actions.png)
 
-Tek adımlı veya çok adımlı seçerseniz, checkout formu çalışması için temel adımlarla önceden doldurulmuş olacaktır. Ardından, isterseniz ona ek adımlar ekleyebilirsiniz.
+تک آدیم یا چوخ آدیم سئچسنیز، Checkout form ایشله‌مسی اوچون لازیم اولان اساسی آدیم‌لارلا قبلا دولدورولموش اولاجاق. سونرا ایسته‌سنیز، اونا اضافه آدیم‌لار آرتیرا بیله‌رسینیز.
 
-### Bir Checkout Formu Düzenleme:
+### بیر Checkout Form‌و دَییشدیرمک: {#editing-a-checkout-form}
 
-Daha önce bahsettiğimiz gibi, farklı amaçlar için checkout formları oluşturabilirsiniz. Bu örnekte bir kayıt formu üzerinde çalışacağız.
+قاباقجا دئدیگیمیز کیمی، فرخلی مقصدلر اوچون Checkout form‌لار یارادا بیله‌رسینیز. بو اؤرنه‌ده بیر قئیید فورمو اوستونده ایشله‌یه‌جه‌ییک.
 
-Checkout form editörüne gittikten sonra formunuza bir isim (yalnızca dahili referans için kullanılacak) ve bir slug (örneğin kısa kod oluşturmak için kullanılır) verin.
+Checkout form ادیتورونا کئچندن سونرا، فورمونوزا بیر آد وئرین (یالنیز ایچ مرجَع اوچون ایشلنه‌جک) و بیر slug وئرین (مثلا shortcode‌لار یاراتماق اوچون ایشلنیر).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![آد و slug ساحه‌لری ایله checkout فورم دؤزه‌لدیجی‌سی](/img/config/checkout-form-name-slug.png)
 
-Formlar adımlardan ve alanlardan oluşur. **Add New Checkout Step** butonuna tıklayarak yeni bir adım ekleyebilirsiniz.
+فورملار مرحله‌لر و ساحه‌لردن دوزلیر. **یئنی checkout مرحله‌سی آرتیر** اوستونه کلیک ائده‌رک یئنی بیر مرحله آرتیرا بیلرسینیز.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![یئنی checkout مرحله‌سی آرتیر دکمه‌سی](/img/config/checkout-form-add-step.png)
 
-Modal pencerenin ilk sekmesinde, formunuzun adım içeriğini doldurun. Ona bir ID, bir isim ve bir açıklama verin. Bu öğeler çoğunlukla dahili olarak kullanılır.
+مودال پنجره‌نین بیرینجی تب‌ینده، فورمونوزون مرحله محتو‌اسینی دولدورون. اونا بیر ID، بیر آد و بیر توضیح وئرین. بو موردلر چوخلو داخلی ایشلر اوچون قوللانیر.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![ID، آد و توضیح ایله checkout مرحله محتو‌ا تب‌ی](/img/config/checkout-form-step-content.png)
 
-Ardından, adımın görünürlüğünü ayarlayın. **Her zaman göster**, **Yalnızca giriş yapmış kullanıcılara göster** veya **Yalnızca misafirlere göster** seçeneklerinden birini seçebilirsiniz.
+سونرا مرحله‌نین گؤرونمه‌سینی تنظیم ائدین. **همیشه گؤستر**، **یالنیز گیریش ائتمیش ایشلده‌نلره گؤستر** یا **یالنیز قوناقلاره گؤستر** آراسین‌دان سئچه بیلرسینیز.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![checkout مرحله‌سی گؤرونمه سئچنه‌کلری](/img/config/checkout-form-step-visibility.png)
 
-Son olarak, adım stilini yapılandırın. Bunlar isteğe bağlı alanlardır.
+سوندا، مرحله اوسلوبونو تنظیم ائدین. بو ساحه‌لر اختیاری‌دیر.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![checkout مرحله‌سی اوسلوب تنظیمی](/img/config/checkout-form-step-style.png)
 
-Şimdi, ilk adımımıza alanlar ekleme zamanı. Sadece **Add New Field** butonuna tıklayın ve istediğiniz bölüm türünü seçin.
+ایندی، بیرینجی مرحله‌میزه ساحه‌لر آرتیرماق واختیدیر. فقط **یئنی ساحه آرتیر** اوستونه کلیک ائدین و ایسته‌دیگینیز بؤلمه نوعونو سئچین.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![یئنی ساحه آرتیر دکمه‌سی](/img/config/checkout-form-add-field-button.png)![ساحه نوعو سئچیم dropdown-و](/img/config/checkout-form-field-type-dropdown.png)
 
-Her alan doldurulması gereken farklı parametrelere sahiptir. Bu ilk giriş için **Kullanıcı Adı** alanını seçeceğiz.
+هر ساحه‌نین دولدورولمالی آییری پارامترلری وار. بو بیرینجی گئریش اوچون **ایشلده‌ن آدی** ساحه‌سینی سئچه‌جه‌ییک.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![ایشلده‌ن آدی ساحه‌سی تنظیمی](/img/config/checkout-form-username-content.png)![ایشلده‌ن آدی ساحه‌سی پارامترلری](/img/config/checkout-form-username-visibility.png)![ایشلده‌ن آدی ساحه‌سی اضافی تنظیم‌لری](/img/config/checkout-form-username-style.png)
 
-İhtiyacınız kadar çok adım ve alan ekleyebilirsiniz. Müşterilerinizin seçmesi için ürünlerinizi göstermek amacıyla Fiyat Tablosu (Pricing Table) alanını kullanın. Müşterilerinizin bir şablon seçmesine izin vermek isterseniz, Şablon Seçimi (Template Selection) alanını ekleyin. Ve benzeri.
+لازیم اولدوغو قدر مرحله و ساحه آرتیرا بیلرسینیز. موشتری‌لرینیزین بیرینی سئچمه‌سی اوچون محصوللارینیزی گؤسترمه‌یه، قیمت جدولی ساحه‌سیندن ایستیفاده ائدین. موشتری‌لرینیزه بیر قالب سئچدیرمک ایسته‌ییرسینیزسه، قالب سئچیمی ساحه‌سینی آرتیرین. و بو جور دوام ائدین.
 
-_**Not:** Checkout formunuzu oluşturduktan sonra bir ürün eklerseniz, ürünü Fiyat Tablosu bölümüne eklemeniz gerekecektir. Eklemeyi unutursanız, ürün müşterilerinize kayıt sayfasında görünmeyecektir._
+![قالب سئچیمی ساحه‌سی ایله checkout فورم دؤزه‌لدیجی‌سی](/img/config/checkout-form-with-template-field.png)
 
-_**Not 2:** checkout formu oluşturmak için kullanıcı adı, e-posta, şifre, site başlığı, site URL'si, sipariş özeti, ödeme ve gönder butonu zorunlu alanlardır._
+_**قئید:** اگر checkout فورمونوزو یاراتدیقدان سونرا بیر محصول یارادیرسینیزسا، محصولو قیمت جدولی بؤلمه‌سینه آرتیرمالیسینیز. اگر آرتیرماسانیز، محصول قئید صفحه‌سینده موشتری‌لرینیزه گؤرونمه‌یه‌جک._
 
-Checkout formunuz üzerinde çalışırken, müşterilerinizin formu nasıl göreceğini görmek için her zaman Önizle (Preview) butonunu kullanabilirsiniz. Ayrıca mevcut bir kullanıcı veya ziyaretçi olarak görünüm arasında geçiş yapabilirsiniz.
+_**قئید ۲:** ایشلده‌ن آدی، ایمیل، شفره، سایت باشلیغی، سایت URL-ی، سیفاریش خلاصه‌سی، اؤده‌مه و گؤندر دکمه‌سی checkout فورمو یاراتماق اوچون مجبوری ساحه‌لردیر._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+checkout فورمونوز اوزرینه ایشله‌دیگینیز زامان، موشتری‌لرینیزین فورمو نئجه گؤره‌جه‌یینی گؤرمک اوچون هر واخت اؤن‌باکیش دکمه‌سیندن ایستیفاده ائده بیلرسینیز. همچنین موجود ایشلده‌ن کیمی یا زئیارتچی کیمی گؤرونوش آراسین‌دا دَییشه بیلرسینیز.
 
-Son olarak, **Gelişmiş Seçenekler** bölümünde **Teşekkürler** sayfası için mesajı yapılandırabilir, dönüşümleri izlemek için kod parçacıkları ekleyebilir, checkout formunuza özel CSS ekleyebilir veya belirli ülkelere kısıtlayabilirsiniz.
+![checkout فورم دؤزه‌لدیجی‌سینده اؤن‌باکیش دکمه‌سی](/img/config/checkout-form-preview-button.png)![زئیارتچی یا موجود ایشلده‌ن کیمی checkout فورم اؤن‌باکیشی](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+سوندا، **ایرلی سئچنه‌کلر**ده **تشکر** صفحه‌سی اوچون پیغامی تنظیم ائده، دؤنوشوم‌لری ایزله‌مک اوچون snippet آرتیرا، checkout فورمونوزا اختصاصی CSS آرتیرا یا اونو بللی اؤلکه‌لره محدود ائده بیلرسینیز.
 
-Ayrıca, sağ sütundaki bu seçeneği açıp kapatarak veya formu kalıcı olarak silerek checkout formunuzu manuel olarak etkinleştirip devre dışı bırakabilirsiniz.
+![تشکر صفحه‌سی، دؤنوشوم ایزلنمه‌سی و اختصاصی CSS ایله ایرلی سئچنه‌کلر](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+همچنین ساق سوتونداکی بو سئچنه‌یی دَییشه‌رک checkout فورمونوزو الیله فعال یا غیرفعال ائده بیلرسینیز، یا فورمو دائمی سیله بیلرسینیز.
 
-Checkout formunuzu kaydetmeyi unutmayın!
+![checkout فورمو اوچون فعال دَییشدیرگه‌سی و سیلمک سئچنه‌یی](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+checkout فورمونوزو ذخیره ائتمه‌یی اونوت‌مایین!
 
-Formunuzun kısa kodunu almak için **Generate Shortcode** butonuna tıklayın ve modal pencerede gösterilen sonucu kopyalayın.
+![checkout فورمونو ذخیره ائت دکمه‌سی](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+فورمونوزون shortcode-ونو آلماق اوچون **Shortcode یارات** اوستونه کلیک ائدین و مودال پنجره‌ده گؤستریلن نتیجه‌نی کپی ائدین.
 
-_**Not:** Bu checkout formunun kayıt sayfanıza eklenmesi için bu kısa kodu kayıt sayfanıza eklemeniz gerekecektir._
+![کپی ائتمک اوچون shortcode ایله Shortcode یارات مودالی](/img/config/checkout-form-editor.png)
 
-## URL parametreleri aracılığıyla ürün ve şablon ön seçimi:
+_**قئید:** بو checkout فورمونون اونا آرتیریلماسی اوچون بو shortcode-و قئید صفحه‌نیزه آرتیرمالیسینیز._
 
-Ürünleriniz için özelleştirilmiş fiyat tabloları oluşturmak ve müşterinizin fiyat tablonuzdan veya şablonlarınız sayfanızdan seçtiği ürünü veya şablonu checkout formunda önceden seçmek isterseniz, bunun için URL parametrelerini kullanabilirsiniz.
+## URL پارامترلری ایله محصوللارین و قالیبلرین اؤن‌جه‌دن سئچیلمه‌سی: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### Planlar için:
+محصوللارینیز اوچون اختصاصی قیمت جدوللری یاراتماق و موشتری‌نیزین قیمت جدولینیزدان یا قالیبلر صفحه‌سیندن سئچدیگی محصولو یا قالیبی checkout فورموندا اؤن‌جه‌دن سئچمک ایسته‌ییرسینیزسه، بونون اوچون URL پارامترلریندن ایستیفاده ائده بیلرسینیز.
 
-**Ultimate Multisite > Ürünler > Bir plan seç** yolunu izleyin. Sayfanın üst kısmında **Paylaşılabilir Bağlantıyı Kopyala** butonunu görmelisiniz. Bu, bu özel planı checkout formunuzda önceden seçmek için kullanabileceğiniz bağlantıdır.
+### **طرحلار اوچون:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+**Ultimate Multisite > Products > Select a plan** یولونا گئدین. صفحه‌نین یوخاریسیندا **پایلاشیلا بیلن لینکی کپی ائتمک اوچون کلیک ائت** دکمه‌سینی گؤرمه‌لیسینیز. بو، checkout فورمونوزدا بو خاص طرحی اؤن‌جه‌دن سئچمک اوچون ایستیفاده ائده بیله‌جه‌یینیز لینک‌دیر.
 
-Bu paylaşılabilir bağlantının yalnızca **Planlar** için geçerli olduğunu unutmayın. Paketler veya hizmetler için paylaşılabilir bağlantı kullanamazsınız.
+![پایلاشیلا بیلن لینک دکمه‌سی ایله محصول صفحه‌سی](/img/config/products-list.png)
 
-### Şablonlar için:
+دقت ائدین کی، بو پایلاشیلا بیلن لینک یالنیز **طرحلار** اوچون کئچرلی‌دیر. بسته‌لر یا خیدمتلر اوچون پایلاشیلا بیلن لینک‌لردن ایستیفاده ائده بیلمزسینیز.
 
-Checkout formunuzda site şablonlarını önceden seçmek isterseniz, kayıt sayfanızın URL'sinde şu parametreyi kullanabilirsiniz: **?template_id=X**. "X" yerine **site şablonu ID numarası** gelmelidir. Bu numarayı almak için **Ultimate Multisite > Siteler** yolunu izleyin.
+### قالیبلر اوچون: {#for-templates}
 
-Kullanmak istediğiniz site şablonunun hemen altındaki **Yönet** butonuna tıklayın. SITE ID numarasını göreceksiniz. Bu numarayı, checkout formunuzda önceden seçilecek bu özel site şablonu için kullanın. Bu durumda, URL parametresi **?template_id=2** olacaktır.
+checkout فورمونوزدا سایت قالیبلرینی اؤن‌جه‌دن سئچمک ایسته‌ییرسینیزسه، قئید صفحه‌نیزین URL-ینده بو پارامتردن ایستیفاده ائده بیلرسینیز: **?template_id=X**. "X" **سایت قالیبی ID نومره‌سی** ایله عوض اولمالیدیر. بو نومره‌نی آلماق اوچون **Ultimate Multisite > Sites** یولونا گئدین.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+ایستیفاده ائتمک ایسته‌دیگینیز سایت قالیبینین درست آلتیندا **ایداره ائت** اوستونه کلیک ائدین. سایت ID نومره‌سینی گؤره‌جه‌کسینیز. checkout فورمونوزدا بو خاص سایت قالیبینین اؤن‌جه‌دن سئچیلمه‌سی اوچون فقط بو نومره‌دن ایستیفاده ائدین. بوراداکی مثالیمیزده، URL پارامتری **?template_id=2** اولاجاق.
 
-Diyelim ki ağ web sitemiz [**www.mynetwork.com**](http://www.mynetwork.com) ve checkout formumuzun bulunduğu kayıt sayfamız **/register** sayfasında yer alıyor. Bu site şablonu önceden seçilmiş tam URL şu şekilde görünecektir: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![سایت قالیبی ID-سینی گؤسترن سایتلر لیستی](/img/config/site-templates-list.png)
 
-İsterseniz hem ürünleri hem de şablonları checkout formunuza önceden seçebilirsiniz. Yapmanız gereken tek şey, planın paylaşılabilir bağlantısını kopyalayıp sonuna şablon parametresini yapıştırmaktır. Sonuç şu şekilde olacaktır: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+فرض ائدک کی شَبکه وب‌سایتیمیز [**www.mynetwork.com**](http://www.mynetwork.com) دیر و checkout فورموموز اولان قئید صفحه‌میز **/register** صفحه‌سینده یئرلشیر. بو سایت قالیبی اؤن‌جه‌دن سئچیل‌میش تام URL بئله گؤرونه‌جک: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+ایسته‌سینیز، checkout فورمونوزدا هم محصوللاری، هم ده قالیبلری اؤن‌جه‌دن سئچه بیلرسینیز. ائتمه‌لی اولدوغونوز تَک شی، طرحین پایلاشیلا بیلن لینکینی کپی ائتمک و قالیب پارامترینه سونونا یاپیشدیرماقدیر. بئله گؤرونه‌جک: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

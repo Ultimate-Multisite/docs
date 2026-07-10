@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Inkokhelo ye-GoCardless
+
+Vumela amakhasimende akho akhokhele ubulungu nemikhiqizo ye-Multisite Ultimate ngokudonswa okuqondile kwemali usebenzisa i-GoCardless!
+
+## Ukufaka {#installation}
+
+1. Layisha 'ultimate-multisite-gocardless' enkombeni ethi '/wp-content/plugins/'
+2. Yenza i-plugin isebenze ngemenyu ethi 'Plugins' ku-WordPress
+3. Landela i-Wizard yesinyathelo ngesinyathelo ukuze usethe i-plugin
+
+## Umhlahlandlela Wokusebenzisa {#usage-guide}
+
+_I-GoCardless_ iyisango lokukhokha elitholakala **eYurophu nase-UK** elivumela izinkokhelo **ngokudonswa okuqondile kwemali**.
+
+I-**Ultimate Multisite: Isango le-GoCardless** yengeza ukusekelwa kwe-_GoCardless_ ku-Ultimate Multisite, ikuvumela ukuthi ukhokhise amakhasimende akho akuleso sifunda usebenzisa ukudonswa okuqondile kwemali.
+
+Lesi sifundo sizohlanganisa indlela yokusetha i-_GoCardless_ ukuze uqale ukwamukela izinkokhelo ngayo kunethiwekhi yakho ye-Ultimate Multisite.
+
+_**Qaphela: I-GoCardless isebenza kuphela ngezimali ezilandelayo:**_ **EUR, GBP, AUD, SEK, no-DKK.**
+
+## Ukufaka Isengezo {#installing-the-add-on}
+
+Okokuqala, uzodinga ukufaka isengezo se-GoCardless se-Ultimate Multisite. Ungakwenza lokho ngokuya ku-**Ultimate Multisite > Izilungiselelo > Izengezo (kubha eseceleni)**. Bese ukhetha isengezo se-GoCardless kulolo hlu.
+
+Ngemva kokuba isengezo sesifakiwe futhi senziwe sasebenza, iya ku-**Ultimate Multisite > Izilungiselelo > Izinkokhelo**, vula inketho ye-GoCardless, bese ulondoloza.
+
+![Izilungiselelo zesango lokukhokha](/img/config/settings-payment-gateways.png)
+
+## Ukuthola Ithokheni Yokufinyelela {#getting-an-access-token}
+
+Dala i-akhawunti ku-_GoCardless_ (noma ku-_GoCardless_ sandbox, uma ufuna **ukuyihlola kuqala** , okunconywayo). Bese, ngemva kokungena ngemvume, uye entweni yemenyu ethi **Onjiniyela**.
+
+<!-- Isithombe-skrini asitholakali: i-Dashboard ye-GoCardless ibonisa indawo yemenyu ethi Onjiniyela -->
+
+Ekhasini elithi **Onjiniyela**, chofoza inkinobho ethi **Dala** ekhoneni eliphezulu kwesokudla lesikrini, bese uchofoza inketho ethi **Ithokheni Yokufinyelela**.
+
+<!-- Isithombe-skrini asitholakali: ikhasi le-GoCardless Onjiniyela elinenkinobho ethi Dala nenketho ethi Ithokheni Yokufinyelela -->
+
+Lokhu kuzovula iwindi elisha le-modal, likuvumele ukuthi udale ithokheni entsha. Yinike igama elibonakalayo futhi uqinisekise ukuthi ukhetha inketho ethi **Ukufinyelela kokufunda nokubhala** kumenyu ethi **Ububanzi**.
+
+<!-- Isithombe-skrini asitholakali: i-modal ye-GoCardless yokudala ithokheni entsha yokufinyelela enobubanzi bokufunda nokubhala -->
+
+Ithokheni yokufinyelela izovela esikrinini. Ikopishe bese uyinamathisela kumenyu yakho ethi **Ultimate Multisite > Izilungiselelo > Izinkokhelo > GoCardless**.
+
+Qiniseka ukuthi uyibeka enkambini efanele. Uma kuyi-**thokheni ebukhoma** **n** , cima **imodi ye-sandbox** ngaphambi kokunamathisela ithokheni.
+
+![Izilungiselelo zesango lokukhokha nge-GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Isithombe-skrini asitholakali: izinkambu zethokheni ye-GoCardless kuzilungiselelo zokukhokha ze-Ultimate Multisite -->
+
+Yilokho kwesinyathelo sokuqala. Okulandelayo, udinga ukusetha umlaleli we-webhook.
+
+## Ukusetha Umlaleli we-Webhook {#setting-up-the-webhook-listener}
+
+Lapho uphatha okubhaliselwe, i-Ultimate Multisite idinga ukuzwa ngezinguquko esimweni sokubhaliselwe, izinkokhelo ezintsha ezenziwayo, nezinye izinto ezinjalo.
+
+Indlela amasango okukhokha azisa ngayo i-Ultimate Multisite ngalezo zinguquko ukusebenzisa **izingcingo ze-webhook**. Ngaleso sizathu, ukuze ukuhlanganiswa kusebenze ngo-100%, sidinga ukutshela i-_GoCardless_ ukuthi iyiphi i-URL okufanele iyibize nayo yonke leyo mininingwane.
+
+Buyela kuphaneli yakho ethi **GoCardless > Onjiniyela** bese uchofoza inkinobho ethi Dala futhi, kodwa kulokhu, khetha inketho ethi **iphoyinti lokugcina le-webhook**.
+
+<!-- Isithombe-skrini asitholakali: ikhasi le-GoCardless Onjiniyela elinenketho yephoyinti lokugcina le-webhook -->Iwindi elisha lizovuleka nezinketho zephoyinti lokugcina le-webhook. Licela i-URL ye-webhook, ngakho buyela ku-**izilungiselelo ze-Ultimate Multisite > Izinkokhelo > GoCardless** bese ukopisha i-URL ye-webhook ebhalwe lapho:
+
+<!-- Isithombe-skrini asitholakali: izilungiselelo ze-Ultimate Multisite GoCardless ezibonisa i-URL ye-webhook -->
+
+Ngaphezu kwalokho, ungafaka **imfihlo ye-webhook** ezosetshenziswa ukusayina izingcingo zakho ze-webhook. Noma yini oyifaka kuleyo nkambu, uzodinga ukuyifaka naku-**nkambu ye-Ultimate Multisite Webhook Secret** futhi.
+
+<!-- Isithombe-skrini asitholakali: ifomu lokumisa iphoyinti lokugcina le-webhook le-GoCardless elinezinkambu ze-URL nemfihlo -->
+
+<!-- Isithombe-skrini asitholakali: inkambu yemfihlo ye-webhook ye-Ultimate Multisite GoCardless -->
+
+Qedela ngokulondoloza iphoyinti lokugcina ngokuchofoza inkinobho ethi **Dala iphoyinti lokugcina le-webhook** bese **ulondoloza nezilungiselelo zakho ze-Ultimate Multisite futhi**.
+
+Kufanele usukulungele ukwamukela i-_GoCardless_ manje!

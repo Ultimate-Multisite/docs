@@ -7,22 +7,22 @@ title: >-
 sidebar_label: wu_magic_link_enforce_user_agent
 _i18n_hash: 33252b9660851a8fe51ff7ed586d9cf2
 ---
-# Filtro: wu_magic_link_enforce_user_agent
+# Filtro: wu_magic_link_enforce_user_agent {#filter-wumagiclinkenforceuseragent}
 
 Filtrar si se debe forzar la verificación del agente de usuario.
 
 Establecerlo en falso permite que los tokens funcionen en diferentes navegadores/dispositivos. Esto reduce la seguridad pero aumenta la usabilidad.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |--------|------|-------------|
 | $enforce | `bool` | Si se debe exigir la coincidencia del agente de usuario. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L410) en la línea 410

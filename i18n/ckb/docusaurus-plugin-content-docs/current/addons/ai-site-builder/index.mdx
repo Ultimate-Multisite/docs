@@ -1,0 +1,124 @@
+---
+title: دروستکەری سایتی AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# دروستکەری سایتی AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## پێداویستییەکان {#requirements}
+
+- WordPress 5.3 یان بەرزتر
+- PHP 7.4 یان بەرزتر
+- پڵاگینی Multisite Ultimate (چالاک)
+
+## دامەزراندن {#installation}
+
+1. فایلەکانی پێوەکراوەکە باربکە بۆ بوخچەی `/wp-content/plugins/`
+2. پڵاگینەکە لە ڕێگەی مینیوی 'Plugins' لە WordPress چالاک بکە
+3. ڕێکخستنەکانی پێوەکراوەکە لە بەڕێوەبەری تۆڕ ڕێکبخە
+
+## گەشەپێدان {#development}
+
+### ڕێکخستن {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### پێکهاتەی پڕۆژە {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # پۆلەکانی PHP و تێخستنەکان
+│   ├── class-multisite-ultimate-updater.php  # بەڕێوەبەری نوێکردنەوە
+│   └── class-ai_site_builder-main.php             # کارایی سەرەکی
+├── tests/                        # تاقیکردنەوەی یەکە
+│   ├── bootstrap.php            # دەستپێکی تاقیکردنەوە
+│   ├── class-*-base.php         # پۆلی بنەڕەتی تاقیکردنەوە
+│   └── class-*-test.php         # حاڵەتەکانی تاقیکردنەوە
+├── views/                       # فایلەکانی قاڵب
+├── assets/                      # سەرچاوە نەگۆڕەکان
+│   ├── css/                     # پەڕەکانی ستایل
+│   ├── js/                      # فایلەکانی JavaScript
+│   └── images/                  # وێنەکان
+├── lang/                        # فایلەکانی زمان
+├── composer.json                # پێداویستییەکانی PHP
+├── package.json                 # پێداویستییەکانی Node.js
+├── phpunit.xml.dist             # ڕێکخستنی PHPUnit
+├── .phpcs.xml.dist              # ڕێکخستنی ستانداردەکانی کۆد
+└── rector.php                   # یاساکانی نوێکردنەوەی کۆد
+```
+
+### تاقیکردنەوە {#testing}
+
+ئەم پێوەکراوە چوارچێوەیەکی تەواوی تاقیکردنەوە لەخۆدەگرێت:
+
+- **تاقیکردنەوەکانی یەکە**: تاقیکردنەوەکانی پشتبەستوو بە PHPUnit لەگەڵ کۆمەڵە تاقیکردنەوەی WordPress
+- **پۆلی بنەڕەتی تاقیکردنەوە**: میتۆدە یارمەتیدەرەکان بۆ سیناریۆ باوەکانی تاقیکردنەوە دابین دەکات
+- **داپۆشینی تاقیکردنەوە**: ڕێکخراوە بۆ شوێنکەوتنی داپۆشینی کۆد
+- **تاقیکردنەوەی Multisite**: تاقیکردنەوەکان لە ژینگەی multisite ئەنجام دەدرێن
+
+### ستانداردەکانی کۆد {#code-standards}
+
+- **ستانداردەکانی کۆدنووسی WordPress**: لە ڕێگەی PHPCS جێبەجێ دەکرێت
+- **گونجاوی لەگەڵ PHP 7.4+**: تایبەتمەندییە مۆدێرنەکانی PHP پشتگیری دەکرێن
+- **شیکاریی جێگیر**: یەکخستنی PHPStan بۆ پشکنینی جۆر
+- **نوێکردنەوەی کۆد**: یاساکانی Rector بۆ بەرزکردنەوەکانی PHP
+
+### سیستەمی دروستکردن {#build-system}
+
+- **پرۆسێسکردنی سەرچاوەکان**: بچووککردنەوە بۆ فایلەکانی CSS/JS
+- **وەرگێڕان**: دروستکردنی فایلی POT
+- **پاکێجکردن**: دروستکردنی ئەرشیف بۆ دابەشکردن
+- **دۆخی گەشەپێدان**: سەرچاوە بچووک‌نەکراوەکان بۆ هەڵەدۆزینەوە
+
+## ڕێکخستن {#configuration}
+
+ئەم پێوەکراوە پشتگیری لە هەڵبژاردە ڕێکخستنە جۆراوجۆرەکان دەکات کە لە ڕووکارەکەی بەڕێوەبەری تۆڕەوە دەستپێگەیشتوون.
+
+## Hooks و Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - دوای دەستپێکردنی پێوەکراوەکە دەخرێتە کار
+- `ultimate-multisite-ai-site-builder_loaded` - دوای بارکردنی هەموو فایلەکانی پێوەکراوەکە دەخرێتە کار
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - گۆڕینی ڕێکخستنەکانی پێوەکراوەکە
+- `ultimate-multisite-ai-site-builder_enabled` - گۆڕینی دۆخی چالاک/ناچالاکی پێوەکراوەکە بەسەر دۆخی بنەڕەتیدا
+
+## مۆڵەت {#license}
+
+ئەم پێوەکراوە بە مۆڵەتی GPL v3 یان دواتر مۆڵەتدراوە.
+
+## پشتگیری {#support}
+
+بۆ پشتگیری و بەڵگەنامە، سەردانی [MultisiteUltimate.com](https://multisiteultimate.com) بکە
+## تۆماری گۆڕانکاری {#changelog}
+
+- وەشانی 1.0.1 (2025-09-28): پێشگر بۆ ultimate-multisite ناوبنێرەوە؛ text domain نوێ بکەرەوە؛ بەرزکردنەوەی وەشان.
+
+
+- وەشانی  (2025-09-28): پێشگر بۆ ultimate-multisite ناوبنێرەوە؛ text domain نوێ بکەرەوە؛ بەرزکردنەوەی وەشان.

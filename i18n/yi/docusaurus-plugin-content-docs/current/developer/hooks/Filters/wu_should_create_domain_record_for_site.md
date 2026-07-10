@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: פילטער - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# פֿילטער: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+פֿילטערט צי Ultimate Multisite זאָל שאַפֿן אַ דאָמיין־רעקאָרד פֿאַר אַ נײַ געשאַפֿענעם פּלאַץ.
+
+נוצט דעם פֿילטער צו פֿאַרמיידן אָדער אָפּשטופּן אויטאָמאַטישע שאַפֿונג פֿון דאָמיין־רעקאָרדס פֿאַר פלעצער וואָס נוצן אַ געמיינזאַמע checkout-form באַזע־דאָמיין, אַן אינערלעכן האָסט, אָדער אַ דאָמיין וואָס אַן אַנדערע אינטעגראַציע וועט פירן באַזונדער.
+
+## פּאַראַמעטערס {#parameters}
+
+| נאָמען | טיפּ | באַשרײַבונג |
+|------|------|-------------|
+| $create | `bool` | צי דער דאָמיין־רעקאָרד זאָל ווערן געשאַפֿן. |
+| $site | `WP_Site` | דער נײַ געשאַפֿענער פּלאַץ־אָביעקט. |
+
+### זינט {#since}
+
+- 2.13.0
+
+### מקור {#source}
+
+דעפֿינירט אין `inc/functions/domain.php`.
+
+
+## גיט צוריק {#returns}
+
+בולעאַן וואָס ווײַזט אָן צי צו שאַפֿן דעם דאָמיין־רעקאָרד.

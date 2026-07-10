@@ -1,0 +1,124 @@
+---
+title: AI vefsíðusmiður
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI vefsíðusmiður {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Kröfur {#requirements}
+
+- WordPress 5.3 eða nýrra
+- PHP 7.4 eða nýrra
+- Multisite Ultimate viðbót (virk)
+
+## Uppsetning {#installation}
+
+1. Hladdu viðbótarskránum upp í `/wp-content/plugins/` möppuna þína
+2. Virkjaðu viðbótina í gegnum 'Plugins' valmyndina í WordPress
+3. Stilltu viðbótarstillingarnar í netstjórnendaviðmótinu
+
+## Þróun {#development}
+
+### Uppsetning {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Verkefnaskipan {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klasar og innifaldar skrár
+│   ├── class-multisite-ultimate-updater.php  # Uppfærslumeðhöndlari
+│   └── class-ai_site_builder-main.php             # Aðalvirkni
+├── tests/                        # Einingapróf
+│   ├── bootstrap.php            # Prófaupphafsstilling
+│   ├── class-*-base.php         # Grunnprófunarklasi
+│   └── class-*-test.php         # Próftilvik
+├── views/                       # Sniðmátsskrár
+├── assets/                      # Stöðugar eignir
+│   ├── css/                     # Stílsnið
+│   ├── js/                      # JavaScript skrár
+│   └── images/                  # Myndir
+├── lang/                        # Tungumálaskrár
+├── composer.json                # PHP ósjálfstæði
+├── package.json                 # Node.js ósjálfstæði
+├── phpunit.xml.dist             # PHPUnit stillingar
+├── .phpcs.xml.dist              # Kóðastaðlastillingar
+└── rector.php                   # Reglur fyrir nútímavæðingu kóða
+```
+
+### Prófanir {#testing}
+
+Viðbótin inniheldur yfirgripsmikið prófunarkerfi:
+
+- **Einingapróf**: PHPUnit-byggð próf með WordPress prófunarsvítu
+- **Grunnprófunarklasi**: Býður upp á hjálparaðferðir fyrir algengar prófunaraðstæður
+- **Prófaþekja**: Stillt til að fylgjast með kóðaþekju
+- **Multisite prófanir**: Prófanir keyra í multisite umhverfi
+
+### Kóðastaðlar {#code-standards}
+
+- **WordPress kóðastaðlar**: Framfylgt með PHPCS
+- **PHP 7.4+ samhæfni**: Nútímalegir PHP eiginleikar studdir
+- **Stöðugreining**: PHPStan samþætting fyrir tegundaskoðun
+- **Nútímavæðing kóða**: Rector reglur fyrir PHP uppfærslur
+
+### Byggingarkerfi {#build-system}
+
+- **Eignavinnsla**: Smækkun fyrir CSS/JS skrár
+- **Þýðing**: POT skráargerð
+- **Pökkun**: Skjalasafnsgerð fyrir dreifingu
+- **Þróunarhamur**: Ósmækkaðar eignir fyrir villuleit
+
+## Stillingar {#configuration}
+
+Viðbótin styður ýmsa stillingarmöguleika sem eru aðgengilegir í gegnum netstjórnendaviðmótið.
+
+## Hooks og síur {#hooks-and-filters}
+
+### Aðgerðir {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Keyrt eftir frumstillingu viðbótar
+- `ultimate-multisite-ai-site-builder_loaded` - Keyrt eftir að allar viðbótarskrár hafa verið hlaðnar
+
+### Síur {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Breyta stillingum viðbótar
+- `ultimate-multisite-ai-site-builder_enabled` - Hnekkja virkjuðu/óvirku stöðu viðbótar
+
+## Leyfi {#license}
+
+Þessi viðbót er gefin út undir GPL v3 eða nýrra.
+
+## Aðstoð {#support}
+
+Fyrir aðstoð og skjölun, heimsæktu [MultisiteUltimate.com](https://multisiteultimate.com)
+## Breytingaskrá {#changelog}
+
+- Útgáfa 1.0.1 (2025-09-28): endurnefna forskeyti í ultimate-multisite; uppfæra text domain; útgáfuhækkun.
+
+
+- Útgáfa  (2025-09-28): endurnefna forskeyti í ultimate-multisite; uppfæra text domain; útgáfuhækkun.

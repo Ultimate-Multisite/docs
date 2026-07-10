@@ -1,132 +1,148 @@
 ---
-title: Yerleşik Ajanlar
+title: Yerleşik Aracılar
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Yerleşik Agent'lar
+# Yerleşik Agents {#built-in-agents}
 
-Gratis AI Agent v1.9.0, beş yerleşik agent ile geliyor. Her biri, belirli bir alana odaklanmış bir dizi araç, özel bir sistem komutu (system prompt) ve o alandaki yaygın görevlere uygun başlangıç önerileriyle önceden yapılandırılmıştır. Agent'lar arasında geçiş yapmak, asistanın ne yapabileceğini ve nasıl yanıt vereceğini değiştirir — sizin herhangi bir yapılandırma yapmanıza gerek kalmadan.
+Gratis AI Agent v1.9.0, her biri odaklanmış bir araç seti, özelleştirilmiş bir sistem istemi ve o alandaki yaygın görevlerle eşleşen başlangıç önerileriyle önceden yapılandırılmış beş yerleşik agents ile gelir. Agents arasında geçiş yapmak, assistant'ın ne yapabileceğini ve nasıl yanıt verdiğini değiştirir — sizin tarafınızda herhangi bir yapılandırma gerekmeden. Superdav AI Agent v1.18.0, ilgili entegrasyonlar yapılandırıldığında bu iş akışlarına takvim farkındalıklı araçlar, hatırlatıcı kayıtları, onay kapıları ve SMS bildirimleri ekleyebilir.
 
-## Agent Nedir?
+## Agent Nedir? {#what-is-an-agent}
 
-Her agent, bir araya getirdiği şu bileşenleri içeren adlandırılmış bir yapılandırma profili (configuration profile)dir:
+Her agent, şunları birleştiren adlandırılmış bir yapılandırma profilidir:
 
-- **Tools (Araçlar)** — Agent'ın kullanmasına izin verilen yetenekler (örneğin, bir İçerik Yazarı'nın gönderi oluşturma yeteneklerine; bir Tasarım Stüdyosu'nun ise CSS ve theme.json yeteneklerine erişimi vardır)
-- **System prompt (Sistem Komutu)** — Agent'ın tonunu, önceliklerini ve kısıtlamalarını belirleyen talimatlar
-- **Suggestions (Öneriler)** — Hızlı başlamanıza yardımcı olmak için sohbet arayüzünde gösterilen önceden yazılmış komutlar
+- **Araçlar** — agent'ın çağırmasına izin verilen yetenekler (örn. bir İçerik Yazarı gönderi oluşturma yeteneklerine erişebilir; bir Tasarım Stüdyosu CSS ve theme.json yeteneklerine erişebilir)
+- **Sistem istemi** — agent'ın tonunu, önceliklerini ve kısıtlarını belirleyen talimatlar
+- **Öneriler** — hızlı başlamanıza yardımcı olmak için sohbet arayüzünde gösterilen önceden yazılmış istemler
 
-## Agent Seçiciye Erişim
+## Agent Seçiciye Erişme {#accessing-the-agent-picker}
 
-1. WordPress admin kenar çubuğundaki **Gratis AI Agent** paneline gidin.
-2. Sohbet başlığının sol üst köşesindeki **agent simgesine** tıklayın (simge, aktif agent'ı yansıtacak şekilde değişir).
-3. **Agent Picker** (Agent Seçici), bir form-tablo katmanı olarak açılır. Her agent, simgesi, adı ve tek satırlık bir açıklamasıyla listelenir.
-4. Bir agent satırına tıklayarak onu etkinleştirin. Sohbet başlığı anında güncellenir.
+1. WordPress yönetici kenar çubuğunda **Gratis AI Agent** panelini açın.
+2. Sohbet başlığının sol üstündeki **agent simgesine** tıklayın (simge, aktif agent'ı yansıtacak şekilde değişir).
+3. **Agent Picker**, form-tablosu örtüsü olarak açılır. Her agent simgesi, adı ve tek satırlık açıklamasıyla listelenir.
+4. Etkinleştirmek için bir agent satırına tıklayın. Sohbet başlığı hemen güncellenir.
 
-Ayrıca konuşma sırasında agent değiştirebilirsiniz — yeni agent'ın sistem komutu, bir sonraki mesajdan itibaren geçerli olur.
+Agents arasında konuşmanın ortasında da geçiş yapabilirsiniz — yeni agent'ın sistem istemi bir sonraki mesajdan itibaren etkili olur.
 
-## Beş Yerleşik Agent
+## Beş Yerleşik Agents {#the-five-built-in-agents}
 
-### Content Writer (İçerik Yazarı)
+### İçerik Yazarı {#content-writer}
 
-**Odak:** Gönderi, sayfa ve iletişim formu oluşturma ve düzenleme.
+**Odak:** Gönderiler, sayfalar ve iletişim formları oluşturma ve düzenleme.
 
-**Mevcut araçlar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Kullanılabilir araçlar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 entegrasyonları etkinleştirildiğinde, yapılandırılmış takvim bağlamı, onay kapıları, hatırlatıcılar ve SMS bildirim araçları da onaylanmış iş akışları için kullanılabilir olabilir.
 
-**Nelerde başarılıdır:**
-- Bir özet veya taslaktan blog yazısı taslağı hazırlama ve yayınlama
-- Yeni bir site için toplu açılış sayfası (landing page) oluşturma
-- İletişim ve sorgulama formları oluşturma
-- Bir URL'den veya arama yaparak gönderilere öne çıkan görsel (featured image) atama
+**Neyi iyi yapar:**
+- Bir özet veya taslaktan blog gönderileri taslaklama ve yayımlama
+- Yeni bir site için toplu açılış sayfaları oluşturma
+- İletişim ve sorgu formları oluşturma
+- Bir URL veya aramadan gönderilerde öne çıkan görseller ayarlama
+- Yapılandırılmış Google Calendar bağlamından etkinlik takip mesajları taslaklama, ardından bildirimleri göndermeden önce onay için duraklama
 
 **Başlangıç önerileri:**
-- *WordPress multisite'ın faydaları hakkında 500 kelimelik bir blog yazısı yaz.*
-- *Bir Hakkımızda, Hizmetler ve İletişim sayfası oluştur ve yayınla.*
-- *İletişim sayfasına bir rezervasyon sorgulama formu ekle.*
+- *WordPress multisite avantajları hakkında 500 kelimelik bir blog gönderisi yaz.*
+- *Hakkında, Hizmetler ve İletişim sayfaları oluştur ve yayımla.*
+- *İletişim sayfasına bir rezervasyon sorgu formu ekle.*
+- *Yarınki yapılandırılmış takvim etkinliğindeki katılımcılar için bir hatırlatıcı taslağı hazırla ve göndermeden önce onay bekle.*
 
 ---
 
-### Site Builder (Site Oluşturucu)
+### Site Oluşturucu {#site-builder}
 
-**Odak:** Tek bir komuttan uçtan uca web sitesi oluşturma.
+**Odak:** Tek bir istemden uçtan uca web sitesi oluşturma.
 
-**Mevcut araçlar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Kullanılabilir araçlar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 ile, yöneticilerin etkinleştirdiği yerlerde yapılandırılmış yönetilen hizmet, onay, hatırlatıcı, takvim ve SMS araçları kullanılabilir olabilir.
 
-**Nelerde başarılıdır:**
-- Tanımlanan bir iş türü için çok aşamalı bir site oluşturma planı oluşturma
-- Her aşamayı özerk bir şekilde yürütme — yapı, içerik, navigasyon, tasarım
+**Neyi iyi yapar:**
+- Tanımlanan bir işletme türü için çok aşamalı bir site oluşturma planı üretme
+- Her aşamayı otonom olarak yürütme — yapı, içerik, gezinme, tasarım
 - Manuel müdahale gerektirmeden plan ortasında hatalardan kurtulma
-- Oluşturma sürecinin bir parçası olarak önerilen eklentileri kurma
-- İletişim formlarını doğrudan sohbet arayüzünden oluşturma (Superdav AI Agent v1.10.0+)
+- Oluşturmanın parçası olarak önerilen pluginler kurma
+- Sohbet arayüzünden doğrudan iletişim formları oluşturma (Superdav AI Agent v1.10.0+)
+- Onay kapıları ve hatırlatıcı kayıtları etkinleştirildiğinde yinelenen bildirimler olmadan lansman hatırlatıcılarını veya katılımcı takibini koordine etme
 
 **Başlangıç önerileri:**
-- *Bir galeri post tipi, bir rezervasyon sayfası ve bir iletişim formu içeren bir fotoğrafçılık portfolyo sitesi oluştur.*
-- *Online menü, çalışma saatleri ve masa rezervasyonu sorgulama formu içeren bir restoran web sitesi oluştur.*
-- *Hizmet sayfaları, bir portfolyo bölümü ve bir blog içeren serbest danışmanlık sitesi kur.*
+- *Galeri gönderi türü, rezervasyon sayfası ve iletişim formu olan bir fotoğraf portföyü sitesi oluştur.*
+- *Çevrimiçi menü, çalışma saatleri ve masa rezervasyonu sorgu formu olan bir restoran web sitesi oluştur.*
+- *Hizmet sayfaları, portföy bölümü ve blog içeren bir serbest danışmanlık sitesi kur.*
 - *Site oluşturucuyu kullanarak İletişim sayfasına bir iletişim formu ekle.*
+- *Site lansmanı kontrol listesi onaylandıktan sonra, yapılandırılmış paydaş kişisine bir SMS hatırlatıcısı gönder.*
 
 ---
 
-### Design Studio (Tasarım Stüdyosu)
+### Tasarım Stüdyosu {#design-studio}
 
 **Odak:** Görsel özelleştirme — renkler, tipografi, CSS ve blok desenleri.
 
-**Mevcut araçlar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Kullanılabilir araçlar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Nelerde başarılıdır:**
-- Adlandırılmış tema ön ayarlarını uygulama (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- theme.json aracılığıyla küresel tipografiyi ve renk paletlerini ayarlama
+**Neyi iyi yapar:**
+- Adlandırılmış theme ön ayarlarını uygulama (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json aracılığıyla global tipografi ve renk paletlerinde ince ayar yapma
 - Markaya özel geçersiz kılmalar için özel CSS enjekte etme
-- Bir sayfanın ekran görüntüsünü alıp tasarım sorunları açısından inceleme
+- Bir sayfanın ekran görüntüsünü alma ve tasarım sorunları açısından inceleme
 
 **Başlangıç önerileri:**
 - *warm-editorial ön ayarını uygula ve ardından birincil rengi #2d6a4f olarak ayarla.*
-- *Ana sayfanın ekran görüntüsünü al ve neyi iyileştirebileceğimi söyle.*
-- *Tam genişlikte bir arka plan görseli ve ortalanmış başlık içeren yeniden kullanılabilir bir kahraman blok deseni oluştur.*
+- *Ana sayfanın ekran görüntüsünü al ve bana neleri iyileştireceğini söyle.*
+- *Tam genişlikte arka plan görseli ve ortalanmış başlığı olan yeniden kullanılabilir bir hero blok deseni oluştur.*
 
----
+### Plugin Yöneticisi {#plugin-manager}
 
-### Plugin Manager (Eklenti Yöneticisi)
+**Odak:** WordPress pluginlerini keşfetme, kurma ve yönetme.
 
-**Odak:** WordPress eklentilerini keşfetme, kurma ve yönetme.
+**Kullanılabilir araçlar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Mevcut araçlar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Nelerde başarılıdır:**
-- Tanımlanan bir kullanım durumu için en iyi eklentiyi önerme
-- Kayıt defterindeki yetenek paketlerini kurma
-- Kategorilere göre mevcut yetenek kataloğunda gezinme
+**Neyi iyi yapar:**
+- Tanımlanan bir kullanım durumu için en iyi plugini önerme
+- Kayıt defterinden yetenek paketleri kurma
+- Kullanılabilir yetenek kataloğunu kategoriye göre gözden geçirme
 
 **Başlangıç önerileri:**
-- *Bir üyelik dizini için en iyi eklenti nedir?*
+- *Üyelik dizini için en iyi plugin nedir?*
 - *WooCommerce yetenek paketini kur.*
-- *Mevcut tüm e-ticaret yetenek paketlerini göster.*
+- *Bana kullanılabilir tüm e-ticaret yetenek paketlerini göster.*
 
 ---
 
-### Support Assistant (Destek Asistanı)
+### Destek Assistant {#support-assistant}
 
-**Odak:** Site içeriği, ayarlar ve WordPress yapılandırması hakkında soruları yanıtlama.
+**Odak:** Site içeriği, ayarları ve WordPress yapılandırması hakkındaki soruları yanıtlama.
 
-**Mevcut araçlar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Kullanılabilir araçlar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Nelerde başarılıdır:**
-- Mevcut site ayarlarını ve seçeneklerini kontrol etme
-- Sitede hangi post tiplerinin, taksonomilerin ve menülerin yapılandırıldığını açıklama
-- Canlı değerleri okuyarak "bu ayar ne işe yarıyor?" sorularını yanıtlama
-- Değişiklik yapmadan önce salt okunur bir teşhis katmanı görevi görme
+**Neyi iyi yapar:**
+- Mevcut site ayarlarını ve seçeneklerini aramak
+- Sitede hangi gönderi türlerinin, taksonomilerin ve menülerin yapılandırıldığını açıklamak
+- Canlı değerleri okuyarak "bu ayar ne işe yarar?" sorularını yanıtlamak
+- Değişiklik yapmadan önce salt okunur bir tanılama katmanı olarak hizmet vermek
 
 **Başlangıç önerileri:**
-- *Bu sitede şu anda hangi eklentiler ve ayarlar aktif?*
-- *Bu sitede kayıtlı tüm özel post tiplerini listele.*
-- *Hangi navigasyon menüleri var ve nereye atanmışlar?*
+- *Bu sitede şu anda hangi pluginler ve ayarlar etkin?*
+- *Bu sitede kayıtlı tüm özel gönderi türlerini listele.*
+- *Hangi gezinme menüleri var ve nereye atanmışlar?*
 
 ---
 
-## Agent'ları Özelleştirme
+## Superdav Otomasyon Entegrasyonları {#superdav-automation-integrations}
+
+Superdav AI Agent v1.18.0 entegrasyonları yapılandırıldığında, yerleşik agentlar daha güvenli, zamanlamaya duyarlı otomasyon iş akışlarına katılabilir:
+
+- **Google Calendar okuma araçları**, agentların takip çalışması taslağı hazırlamadan önce yapılandırılmış takvimleri ve etkinlikleri incelemesine olanak tanır.
+- **Kişi ve katılımcı eşleştirme**, etkinlik katılımcılarını WordPress kullanıcılarıyla veya bilinen kişilerle eşleştirmeye yardımcı olur.
+- **İnsan onayı kapıları**, yetkili bir kullanıcı bunları inceleyip onaylayana kadar hassas eylemleri duraklatır.
+- **Hatırlatıcı kayıtları**, zamanlanmış işler yeniden denendiğinde veya tekrarlandığında yinelenen bildirimleri önler.
+- **TextBee SMS bildirimleri**, SMS kimlik bilgileri ve iş akışı izinleri etkinleştirildiğinde yalnızca yapılandırılmış metin mesajları gönderir.
+
+Önerilen iş akışı: agentdan mesajı veya eylemi hazırlamasını isteyin, onay istemini inceleyin, ardından onaylanmış eylemin devam etmesine izin verin. Yinelenen hatırlatıcılar için, aynı etkinliğe veya kişiye tekrar tekrar bildirim gönderilmemesi adına hatırlatıcı tekilleştirmeyi etkin tutun.
+
+---
+
+## Agentları Özelleştirme {#customising-agents}
 
 Her yerleşik agent, `gratis_ai_agent_agents` filtresi aracılığıyla genişletilebilir veya değiştirilebilir.
 
-### Mevcut bir agent'a özel bir sistem komutu ekleme
+### Mevcut bir agenta özel sistem istemi ekleme {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Yeni bir agent kaydetme
+### Yeni bir agent kaydetme {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -158,7 +174,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 
 Yeni agent, filtre çalıştıktan hemen sonra Agent Picker'da görünür.
 
-### Yerleşik bir agent'ı kaldırma
+### Yerleşik bir agentı kaldırma {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

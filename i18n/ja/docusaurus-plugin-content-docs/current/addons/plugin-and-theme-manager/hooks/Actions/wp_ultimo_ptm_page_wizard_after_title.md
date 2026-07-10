@@ -2,23 +2,22 @@
 id: wp_ultimo_ptm_page_wizard_after_title
 title: アクション - wp_ultimo_ptm_page_wizard_after_title
 sidebar_label: wp_ultimo_ptm_page_wizard_after_title
-_i18n_hash: f05987b69d89de014373aa02f3182460
+_i18n_hash: 05cef71c323fd9abfc04591c823891a5
 ---
-# Action: wp_ultimo_ptm_page_wizard_after_title
+# Action: wp_ultimo_ptm_page_wizard_after_title {#action-wpultimoptmpagewizardaftertitle}
 
-プラグイン開発者がリストページに追加ボタンを追加できるようにする
+plugin 開発者が一覧ページに追加ボタンを追加できるようにします
 
-## Parameters
+## パラメーター {#parameters}
 
-| 名前 | タイプ | 説明 |
+| Name | Type | Description |
 |------|------|-------------|
-| $ | `\WU_Page` | マルチサイトUltimate Pageインスタンス |
+| $ | `\WU_Page` | Multisite Ultimate Page インスタンス |
 
-### Since
+### 導入バージョン {#since}
 
 - 1.8.2
+### ソース {#source}
 
-### Source
-
-- 定義済み [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L22) 行 22
-- 定義済み [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L22) 行 22
+- [`views/base/settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/settings.php#L22) の 22 行目で定義
+- [`views/base/wizard.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/wizard.php#L22) の 22 行目で定義

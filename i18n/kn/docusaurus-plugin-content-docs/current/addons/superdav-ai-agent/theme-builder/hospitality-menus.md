@@ -3,15 +3,15 @@ title: ಆತಿಥ್ಯ ಮೆನುಗಳು
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ಆತಿಥ್ಯ ಮೆನುಗಳು (Hospitality Menus)
+# ಆತಿಥ್ಯ ಮೆನುಗಳು (Hospitality Menus) {#hospitality-menus}
 
 **ಆತಿಥ್ಯ ಮೆನುಗಳು** ವೈಶಿಷ್ಟ್ಯವು Theme Builder ಅನ್ನು ಬಳಸಿಕೊಂಡು ನಿಮ್ಮ WordPress ಸೈಟ್‌ಗೆ ನೇರವಾಗಿ ರಚನಾತ್ಮಕ ಆಹಾರ ಮತ್ತು ಪಾನೀಯ ಮೆನು ಪುಟಗಳನ್ನು ರಚಿಸಲು ಮತ್ತು ಅಳವಡಿಸಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ.
 
-## ಅವಲೋಕನ (Overview)
+## ಅವಲೋಕನ (Overview) {#overview}
 
 Theme Builder ಈಗ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು, ಕೆಫೆಗಳು, ಬಾರ್‌ಗಳು ಮತ್ತು ಕ್ಯಾಟರಿಂಗ್ ಸೇವೆಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ಆತಿಥ್ಯ ವ್ಯವಹಾರಗಳಿಗೆ ವೃತ್ತಿಪರ, ರಚನಾತ್ಮಕ ಮೆನು ಪುಟಗಳನ್ನು ರಚಿಸಲು ಸಾಧ್ಯವಾಗಿದೆ. ಈ ಮೆನುಗಳು ನಿಮ್ಮ ಸೈಟ್‌ನ ವಿನ್ಯಾಸದೊಂದಿಗೆ ಸಂಪೂರ್ಣವಾಗಿ ಸಂಯೋಜಿತವಾಗಿರುತ್ತವೆ ಮತ್ತು ಸುಲಭವಾಗಿ ನವೀಕರಿಸಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು.
 
-## ಬೆಂಬಲಿತ ಆತಿಥ್ಯ ಪ್ರಕಾರಗಳು (Supported Hospitality Types)
+## ಬೆಂಬಲಿತ ಆತಿಥ್ಯ ಪ್ರಕಾರಗಳು (Supported Hospitality Types) {#supported-hospitality-types}
 
 - **ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು (Restaurants)** — ಸಂಪೂರ್ಣ ಸೇವೆ ನೀಡುವ ಊಟದ ಮೆನುಗಳು
 - **ಕೆಫೆಗಳು (Cafes)** — ಕಾಫಿ ಮತ್ತು ಲಘು ಉಪಾಹಾರದ ಮೆನುಗಳು
@@ -21,9 +21,9 @@ Theme Builder ಈಗ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು, ಕೆಫೆ
 - **ಫುಡ್ ಟ್ರಕ್‌ಗಳು (Food Trucks)** —เคลื่อนಚರ ಆಹಾರ ಸೇವೆಗಳ ಮೆನುಗಳು
 - **ಬ್ರೂವರಿ ಮತ್ತು ವೈನರಿಗಳು (Breweries and Wineries)** — ವಿವರಣೆಗಳೊಂದಿಗೆ ಪಾನೀಯ ಮೆನುಗಳು
 
-## ಮೆನು ರಚನೆ (Menu Structure)
+## ಮೆನು ರಚನೆ (Menu Structure) {#menu-structure}
 
-### ಮೆನು ವರ್ಗಗಳು (Menu Categories)
+### ಮೆನು ವರ್ಗಗಳು (Menu Categories) {#menu-categories}
 
 ಮೆನುಗಳನ್ನು ವರ್ಗಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ:
 
@@ -34,7 +34,7 @@ Theme Builder ಈಗ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು, ಕೆಫೆ
 - **ಪಾನೀಯಗಳು (Beverages)** — ಕುಡಿಯುವ ಪಾನೀಯಗಳು (ಮದ್ಯದ ಮತ್ತು ಮದ್ಯರಹಿತ)
 - **ವಿಶೇಷಗಳು (Specials)** — ದಿನನಿತ್ಯ ಅಥವಾ ಋತುವಾರು ವಿಶೇಷಗಳು
 
-### ಮೆನು ಐಟಂ ಫಾರ್ಮ್ಯಾಟ್ (Menu Item Format)
+### ಮೆನು ಐಟಂ ಫಾರ್ಮ್ಯಾಟ್ (Menu Item Format) {#menu-item-format}
 
 ಪ್ರತಿಯೊಂದು ಮೆನು ಐಟಂ ಈ ಕೆಳಗಿನ ಅಂಶಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ:
 
@@ -49,7 +49,7 @@ Theme Builder ಈಗ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು, ಕೆಫೆ
 }
 ```
 
-#### ಐಟಂ ಫೀಲ್ಡ್‌ಗಳು (Item Fields)
+#### ಐಟಂ ಫೀಲ್ಡ್‌ಗಳು (Item Fields) {#item-fields}
 
 | ಫೀಲ್ಡ್ (Field) | ಟೈಪ್ (Type) | ವಿವರಣೆ (Description) |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Theme Builder ಈಗ ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು, ಕೆಫೆ
 | `allergens` | array | ಸಾಮಾನ್ಯ ಅಲರ್ಜೆನ್ಗಳು (ಬಾದಾಮಿ, ಸಿಫೀಶ್, ಇತ್ಯಾದಿ) |
 | `availability` | string | ಯಾವಾಗ ಲಭ್ಯವಿದೆ (Daily, Seasonal, ಇತ್ಯಾದಿ) |
 
-## ಆತಿಥ್ಯ ಮೆನುಗಳನ್ನು ರಚಿಸುವುದು (Creating Hospitality Menus)
+## ಆತಿಥ್ಯ ಮೆನುಗಳನ್ನು ರಚಿಸುವುದು (Creating Hospitality Menus) {#creating-hospitality-menus}
 
-### ಹಂತ 1: ಮೆನು ಮಾಹಿತಿಯನ್ನು ನೀಡಿ (Step 1: Provide Menu Information)
+### ಹಂತ 1: ಮೆನು ಮಾಹಿತಿಯನ್ನು ನೀಡಿ (Step 1: Provide Menu Information) {#step-1-provide-menu-information}
 
 Theme Builder ಗೆ ನಿಮ್ಮ ಮೆನುವಿನ ಬಗ್ಗೆ ತಿಳಿಸಿ:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### ಹಂತ 2: Theme Builder ಮೆನುವನ್ನು ರಚಿಸುತ್ತದೆ (Step 2: Theme Builder Generates Menu)
+### ಹಂತ 2: Theme Builder ಮೆನುವನ್ನು ರಚಿಸುತ್ತದೆ (Step 2: Theme Builder Generates Menu) {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. ಬೆಲೆಗಳು ಮತ್ತು ವಿವರಣೆಗಳನ್ನು ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡುತ್ತದೆ
 5. ಆಹಾರದ ಮತ್ತು ಅಲರ್ಜೆನ್ ಮಾಹಿತಿಯನ್ನು ಸೇರಿಸುತ್ತದೆ
 
-### ಹಂತ 3: ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ (Step 3: Review and Customize)
+### ಹಂತ 3: ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ (Step 3: Review and Customize) {#step-3-review-and-customize}
 
 ನೀವು ಹೀಗೆ ಮಾಡಬಹುದು:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. ವಿವರಣೆಗಳು ಮತ್ತು ಆಹಾರದ ಮಾಹಿತಿಯನ್ನು ನವೀಕರಿಸಬಹುದು
 5. ಶೈಲಿ ಮತ್ತು ಲೇಔಟ್ ಅನ್ನು ಹೊಂದಿಸಬಹುದು
 
-## ಮೆನು ಪ್ರದರ್ಶನ ಆಯ್ಕೆಗಳು (Menu Display Options)
+## ಮೆನು ಪ್ರದರ್ಶನ ಆಯ್ಕೆಗಳು (Menu Display Options) {#menu-display-options}
 
-### ಸಂಪೂರ್ಣ ಮೆನು ಪುಟ (Full Menu Page)
+### ಸಂಪೂರ್ಣ ಮೆನು ಪುಟ (Full Menu Page) {#full-menu-page}
 
 ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಮೆನುವನ್ನು ಪ್ರದರ್ಶಿಸುವ ಮೀಸಲಾದ ಪುಟ:
 
@@ -102,7 +102,7 @@ Theme Builder:
 - ಪ್ರಿಂಟ್-ಸ್ನೇಹಿ ಲೇಔಟ್
 - ಮೊಬೈಲ್-ಪ್ರತಿಕ್ರಿಯಾತ್ಮಕ ವಿನ್ಯಾಸ (Mobile-responsive design)
 
-### ಮೆನು ವಿಜೆಟ್ (Menu Widget)
+### ಮೆನು ವಿಜೆಟ್ (Menu Widget) {#menu-widget}
 
 ಇತರ ಪುಟಗಳಲ್ಲಿ ಮೆನು ವಿಭಾಗಗಳನ್ನು ಅಳವಡಿಸಿ:
 
@@ -111,7 +111,7 @@ Theme Builder:
 - ಬಾರ್ ಪುಟದಲ್ಲಿ ಪಾನೀಯ ಮೆನು
 - ಫೂಟರ್‌ನಲ್ಲಿ ಸಿಹಿತಿಂಡಿ ಪ್ರದರ್ಶನ
 
-### ಮೆನು PDF (Menu PDF)
+### ಮೆನು PDF (Menu PDF) {#menu-pdf}
 
 ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದಾದ PDF ಮೆನುವನ್ನು ರಚಿಸಿ:
 
@@ -120,9 +120,9 @@ Theme Builder:
 - ಚಿತ್ರಗಳು ಮತ್ತು ವಿವರಣೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ
 - ಹಂಚಿಕೊಳ್ಳಲು ಮತ್ತು ಇಮೇಲ್ ಮಾಡಲು ಸುಲಭ
 
-## ಆಹಾರದ ಮತ್ತು ಅಲರ್ಜೆನ್ ಮಾಹಿತಿ (Dietary and Allergen Information)
+## ಆಹಾರದ ಮತ್ತು ಅಲರ್ಜೆನ್ ಮಾಹಿತಿ (Dietary and Allergen Information) {#dietary-and-allergen-information}
 
-### ಆಹಾರದ ಗುಣಲಕ್ಷಣಗಳು (Dietary Attributes)
+### ಆಹಾರದ ಗುಣಲಕ್ಷಣಗಳು (Dietary Attributes) {#dietary-attributes}
 
 ಐಟಂಗಳಿಗೆ ಆಹಾರದ ಮಾಹಿತಿಯನ್ನು ಗುರುತಿಸಿ:
 
@@ -134,7 +134,7 @@ Theme Builder:
 - **Low-Carb** — ಕಡಿಮೆ ಕಾರ್ಬೋಹೈಡ್ರೇಟ್‌ಗಳು
 - **High-Protein** — ಪ್ರೋಟೀನ್ ಸಮೃದ್ಧ
 
-### ಅಲರ್ಜೆನ್ ಎಚ್ಚರಿಕೆಗಳು (Allergen Warnings)
+### ಅಲರ್ಜೆನ್ ಎಚ್ಚರಿಕೆಗಳು (Allergen Warnings) {#allergen-warnings}
 
 ಸಾಮಾನ್ಯ ಅಲರ್ಜೆನ್ಗಳನ್ನು ಸೇರಿಸಿ:
 
@@ -147,9 +147,9 @@ Theme Builder:
 - **Gluten** — ಗೋಧಿ ಮತ್ತು ಗ್ಲೂಟನ್ ಹೊಂದಿರುವ ಧಾನ್ಯಗಳು
 - **Sesame** — ಎಳ್ಳು ಮತ್ತು ಎಣ್ಣೆ
 
-## ಮೆನು ನಿರ್ವಹಣೆ (Menu Management)
+## ಮೆನು ನಿರ್ವಹಣೆ (Menu Management) {#menu-management}
 
-### ಬೆಲೆಗಳನ್ನು ನವೀಕರಿಸುವುದು (Updating Prices)
+### ಬೆಲೆಗಳನ್ನು ನವೀಕರಿಸುವುದು (Updating Prices) {#updating-prices}
 
 ಮೆನು ಬೆಲೆಗಳನ್ನು ಸುಲಭವಾಗಿ ನವೀಕರಿಸಿ:
 
@@ -159,7 +159,7 @@ Theme Builder:
 4. ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ
 5. ಬದಲಾವಣೆಗಳು ತಕ್ಷಣವೇ ನಿಮ್ಮ ಸೈಟ್‌ನಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ
 
-### ಋತುಮಾನದ ಐಟಂಗಳನ್ನು ಸೇರಿಸುವುದು (Adding Seasonal Items)
+### ಋತುಮಾನದ ಐಟಂಗಳನ್ನು ಸೇರಿಸುವುದು (Adding Seasonal Items) {#adding-seasonal-items}
 
 ಋತುಮಾನದ ಮೆನು ವ್ಯತ್ಯಾಸಗಳನ್ನು ರಚಿಸಿ:
 
@@ -169,7 +169,7 @@ Theme Builder:
 4. ಲಭ್ಯತೆಯ ದಿನಾಂಕಗಳನ್ನು ನಿಗದಿಪಡಿಸಿ
 5. ಋತುವಿನ ಸಮಯದಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ
 
-### ವಿಶೇಷಗಳನ್ನು ನಿರ್ವಹಿಸುವುದು (Managing Specials)
+### ವಿಶೇಷಗಳನ್ನು ನಿರ್ವಹಿಸುವುದು (Managing Specials) {#managing-specials}
 
 ದಿನನಿತ್ಯ ಅಥವಾ ವಾರಕ್ಕೊಮ್ಮೆ ವಿಶೇಷಗಳನ್ನು ಪ್ರದರ್ಶಿಸಿ:
 
@@ -179,7 +179,7 @@ Theme Builder:
 4. ಪ್ರತಿದಿನ ಅಥವಾ ವಾರಕ್ಕೊಮ್ಮೆ ನವೀಕರಿಸಿ
 5. ಹಳೆಯ ವಿಶೇಷಗಳನ್ನು ಆರ್ಕೈವ್ ಮಾಡಿ
 
-## Theme Builder ಜೊತೆ ಏಕೀಕರಣ (Integration with Theme Builder)
+## Theme Builder ಜೊತೆ ಏಕೀಕರಣ (Integration with Theme Builder) {#integration-with-theme-builder}
 
 ಆತಿಥ್ಯ ಸೈಟ್‌ಗಳಿಗೆ Theme Builder ಅನ್ನು ಬಳಸುವಾಗ:
 
@@ -189,9 +189,9 @@ Theme Builder:
 4. **ಮೊಬೈಲ್ ಆಪ್ಟಿಮೈಸ್ (Mobile optimization)** — ಫೋನ್‌ಗಳಲ್ಲಿ ಮೆನುಗಳು ಸುಂದರವಾಗಿ ಪ್ರದರ್ಶನಗೊಳ್ಳುತ್ತವೆ
 5. **SEO ಆಪ್ಟಿಮೈಸ್ (SEO optimization)** — ಮೆನುಗಳು ಸರ್ಚ್-ಎಂಜಿನ್ ಸ್ನೇಹಿಯಾಗಿರುತ್ತವೆ
 
-## ಉತ್ತಮ ಅಭ್ಯಾಸಗಳು (Best Practices)
+## ಉತ್ತಮ ಅಭ್ಯಾಸಗಳು (Best Practices) {#best-practices}
 
-### ಮೆನು ವಿನ್ಯಾಸ (Menu Design)
+### ಮೆನು ವಿನ್ಯಾಸ (Menu Design) {#menu-design}
 
 - **ಸ್ಪಷ್ಟ ಸಂಘಟನೆ (Clear organization)** — ತಾರ್ಕಿಕ ವರ್ಗ ರಚನೆ
 - **ಓದಲು ಸಾಧ್ಯವಿರುವ ವಿವರಣೆಗಳು (Readable descriptions)** — ಆಕರ್ಷಕ ಮತ್ತು ಮಾಹಿತಿಪೂರ್ಣ
@@ -199,7 +199,7 @@ Theme Builder:
 - **ವೃತ್ತಿಪರ ಫೋಟೋಗಳು (Professional photos)** — ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಆಹಾರ ಚಿತ್ರಗಳು
 - **ఖాళಿ ಜಾಗ (Whitespace)** — ಪುಟವನ್ನು ತುಂಬಬೇಡಿ
 
-### ವಿಷಯ (Content)
+### ವಿಷಯ (Content) {#content}
 
 - **ನಿಖರ ವಿವರಣೆಗಳು (Accurate descriptions)** — ಐಟಂಗಳನ್ನು ನಿಖರವಾಗಿ ವಿವರಿಸಿ
 - **ವಿಶೇಷಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಿ (Highlight specials)** — ವಿಶೇಷಗಳನ್ನು ಎದ್ದು ಕಾಣುವಂತೆ ಮಾಡಿ
@@ -207,7 +207,7 @@ Theme Builder:
 - **ನಿಯಮಿತವಾಗಿ ನವೀಕರಿಸಿ (Update regularly)** — ಬೆಲೆಗಳು ಮತ್ತು ಐಟಂಗಳನ್ನು ಪ್ರಸ್ತುತವಾಗಿಡಿ
 - **ಆಕರ್ಷಕ ಭಾಷೆ ಬಳಸಿ (Use appetizing language)** — ಐಟಂಗಳನ್ನು ರುಚಿಕರವೆಂದು ತೋರಲು ಮಾಡಿ
 
-### ಪ್ರವೇಶಸಾಧ್ಯತೆ (Accessibility)
+### ಪ್ರವೇಶಸಾಧ್ಯತೆ (Accessibility) {#accessibility}
 
 - **ಓದಲು ಸಾಧ್ಯವಿರುವ ಫಾಂಟ್‌ಗಳು (Readable fonts)** — ಸ್ಪಷ್ಟ, ಓದಲು ಸಾಧ್ಯವಾಗುವ ಟೈಪೊಗ್ರಫಿಯನ್ನು ಬಳಸಿ
 - **ಸಾಕಷ್ಟು ವ್ಯತ್ಯಾಸ (Sufficient contrast)** — ಪಠ್ಯ ಓದಲು ಸಾಧ್ಯವಾಗಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ
@@ -215,9 +215,9 @@ Theme Builder:
 - **ಅಲರ್ಜೆನ್ ಎಚ್ಚರಿಕೆಗಳು (Allergen warnings)** — ಅಲರ್ಜೆನ್‌ಗಳನ್ನು ಪ್ರಮುಖವಾಗಿ ಪ್ರದರ್ಶಿಸಿ
 - **ಮೊಬೈಲ್-ಸ್ನೇಹಿ (Mobile-friendly)** — ಎಲ್ಲಾ ಸಾಧನಗಳಲ್ಲಿ ಪರೀಕ್ಷಿಸಿ
 
-## ಉದಾಹರಣೆಗಳು (Examples)
+## ಉದಾಹರಣೆಗಳು (Examples) {#examples}
 
-### ರೆಸ್ಟೋರೆಂಟ್ ಮೆನು ರಚನೆ (Restaurant Menu Structure)
+### ರೆಸ್ಟೋರೆಂಟ್ ಮೆನು ರಚನೆ (Restaurant Menu Structure) {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### ಕೆಫೆ ಮೆನು ರಚನೆ (Cafe Menu Structure)
+### ಕೆಫೆ ಮೆನು ರಚನೆ (Cafe Menu Structure) {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## ಸಂಬಂಧಿತ ವೈಶಿಷ್ಟ್ಯಗಳು (Related Features)
+## ಸಂಬಂಧಿತ ವೈಶಿಷ್ಟ್ಯಗಳು (Related Features) {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — ನ್ಯಾವಿಗೇಷನ್ ಮೆನುಗಳನ್ನು ರಚಿಸಿ
 - [Design Direction](./design-direction.md) — ನಿಮ್ಮ ಸೈಟ್‌ನ ವಿನ್ಯಾಸವನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ

@@ -3,14 +3,14 @@ title: 'Lezioa 14: Zer da irri?'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Urdiena 14: Zer da irri?
+# Urdiena 14: Zer da irri? {#lesson-14-what-comes-next}
 
 Zerbitzu bat oso-n-da web plateforma gurek eskaintzen duz. FitSite dagoen, fitness studioak ematen du eta aurrekontu jarraituko merkatua sortzen du. Hau da lehen ustez zer egin behar dugu.
 
-## Nondra dagoen jakinita
+## Nondra dagoen jakinita {#where-we-left-off}
 FitSitea bizitzeko negustea da, kliuntzak, operazioak eta aukera bat duen handia. Arriba da zer egin behar da irri.
 
-## FitSite-aren Network osoa
+## FitSite-aren Network osoa {#the-complete-fitsite-network}
 Hau da 14 lekurrian gaur duzue:
 
 FitSite Network (Eskaintza)
@@ -42,11 +42,11 @@ FitSite Network (Eskaintza)
     ├── Revenue optimization (upsells, annual conversion, new services)
     └── Team building roadmap
 
-## Opsioa 1: Niche-n gehi txertu
+## Opsioa 1: Niche-n gehi txertu {#option-1-go-deeper-in-your-niche}
 
 Nue niche-etan irudiak aurretik, fitness-ean gehi txertzea ikusi duzu:
 
-### Sub-Nicheak
+### Sub-Nicheak {#sub-niches}
 
 **Yoga studioak** -- moldakidetzaileak, meditatzi dira eta workshopak
 **CrossFit boxak** -- WOD (Workout of the Day) erregistroa, konturbazioaren rezultatuak, komunitatearen aukerak
@@ -55,7 +55,7 @@ Nue niche-etan irudiak aurretik, fitness-ean gehi txertzea ikusi duzu:
 
 Zuzendarri lekuak (sub-niche) guztiak bere moldakidetzaileak eta potensialki bere brandak izango dute, guztiz Ultimate Multisite arkitan funtzionatzen du.
 
-### Premium Funktioak
+### Premium Funktioak {#premium-features}
 
 Fitness studioek ezberduneak gehiago labazko iragatik dira:
 
@@ -64,14 +64,14 @@ Fitness studioek ezberduneak gehiago labazko iragatik dira:
 - **Fitness blog moldakidetzaileak** -- fitness kontu marketing-erako edukiak estruktura ezarrituta
 - **Social media integrazioa** -- klasearen bestelakoak eta update-ak awtomatiko postatzeko
 
-### Geografikoa Iterazioa
+### Geografikoa Iterazioa {#geographic-expansion}
 
 Localan hasi du, irakurri:
 
 - Iragile batzuk garrantzitsuak dira
 - Iragileek (Ultimate Multisite-ren [localization features](/user-guide/localization/translating) erabildu eta bestelako hizkuntzak suportatzeko)
 
-## Opszio 2: Iragileak Erreguntzeko
+## Opszio 2: Iragileak Erreguntzeko {#option-2-expand-to-adjacent-niches}
 
 Fitness studioekarekin egin zuen prozesua gure guztietan funtzionatzen du. Iragileko iragila hau lehenago daiteke, gehiago erraz dago because:
 
@@ -79,7 +79,7 @@ Fitness studioekarekin egin zuen prozesua gure guztietan funtzionatzen du. Iragi
 - Erabidezaren esperientzia
 - Probatutako planu bat
 
-### Fitness-eko Iragileak
+### Fitness-eko Iragileak {#adjacent-niches-to-fitness}
 
 **Wellness eta spa** -- masajeaileak, egunerako spa-etxeak, wellness sentroak
 **Eskaintzak sportikoak** -- amatalean jakinarazten dituzten taldeak, liga, distrakzio-sportiko klubak
@@ -87,7 +87,7 @@ Fitness studioekarekin egin zuen prozesua gure guztietan funtzionatzen du. Iragi
 
 Hau guztiek fitnessarekin aurrera egiten dute, zehatz, gure marketing eta partnizipazioak ezberdinetan iruditzen dira.
 
-### Niche guztiz berriak
+### Niche guztiz berriak {#completely-new-niches}
 
 Nola bat niche (espezialitatea) baten artean erraz egiteko frameworka (paradigma) Errek 2-an dagoen aplikatu:
 
@@ -104,7 +104,7 @@ Naharrak berriak bakoitzarekin behar dute:
 
 Plataforma irudinetza, billing (labiltzea) eta operazio prozesuak ezberdinak bat jarraitzen du.
 
-## Opsioa 3: Plataforma-plataforma-plataforma (Platform of Platforms)
+## Opsioa 3: Plataforma-plataforma-plataforma (Platform of Platforms) {#option-3-build-a-platform-of-platforms}
 
 Gaur egun, handi edo txiki baten maila daitean, niche-niche batzua Ultimate Multisite arrakastapeneko réseau batean eratu dezake:
 
@@ -114,11 +114,11 @@ Gaur egun, handi edo txiki baten maila daitean, niche-niche batzua Ultimate Mult
 
 Bestea baten templateak, planak eta marketingak ditu, baina irudinetza, billing eta operazio prozesuak jartzen dute. Hau da lekuan Ultimate Multisite-aren ekonomia oso potentzia izango du -- bat plataforma, asko vertikalak.
 
-### Multi-Network (Réseau Multibazaitasun)
+### Multi-Network (Réseau Multibazaitasun) {#multi-network}
 
 Niche-niche guztiz erraz ikusteko, [Multi-Network addon](/addons/multinetwork) ezarritzen dituen irudinetzaa ikusi: baten instalazio batetik WordPress réseau askoak eratu dezake.
 
-## Opsioa 4: Biznesa Saldu
+## Opsioa 4: Biznesa Saldu {#option-4-sell-the-business}
 
 Niche web platfoma bere haseraren merkatu, merkatu irrunak aurrera jarraitzen (recurring revenue), txiki erregulazioa (low churn) eta zehat merkatu posizioa duena da garrantzaria assetua. SaaS bizneak normalmenti urteko merkatu-irrunaren 3-5gik saldu dira.
 
@@ -130,7 +130,7 @@ FitSite-a, 200 klientu eta $89 ARPU (per capita annual revenue) duenean:
 
 Hau ez da eragiketa garbia, baina ondo jartu duen niche platfoma bere ona eragiketa da.
 
-## Zer Ezuta Eratu
+## Zer Ezuta Eratu {#what-you-have-learned}
 
 Hau kursoak iruditu duzu:
 
@@ -146,7 +146,7 @@ Hau kursoak iruditu duzu:
 
 Niche-k da estratezia. Platfoma-k da herramienta. Ultimate Multisite-ak ahalegin bat egiten dio. Niche-aren zehat jakinarazpena da bere garrantzia.
 
-## Aurrera egin Eratu
+## Aurrera egin Eratu {#start-building}
 
 FitSitearekin aurrera egin duzu, platfoma bat dagoen. Hau iruditu duzu zure nichea bilatzeko, [Lesson 2: Picking Your Niche](lesson-2-picking-your-niche) berriro jarraitu eta aukeratutako vertikalaren prozesua hasiatu.
 

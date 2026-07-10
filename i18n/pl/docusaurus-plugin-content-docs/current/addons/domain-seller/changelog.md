@@ -1,132 +1,153 @@
 ---
-title: Dziennik zmian Sprzedawcy Domen
+title: Dziennik zmian sprzedawcy domen
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Lista zmian dla Domain Seller
+# Dziennik zmian Domain Seller {#domain-seller-changelog}
+
+Wersja 1.3.0 - Wydana 2026-06-02
+- Nowe: Dodano ostrzeżenie network-admin, gdy saldo resellera HostAfrica staje się zbyt niskie
+- Nowe: Dodano automatyczne mapowanie nowo zarejestrowanych domen do witryny sieciowej
+- Poprawka: Zastosowano wymagania pól rejestrującego tylko podczas rejestrowania nowej domeny
+- Poprawka: Umożliwiono odrzucanie powiadomień o monitorowaniu salda
+- Poprawka: Zapewniono zachowanie danych rozliczeniowych rejestrującego WooCommerce
+- Poprawka: Wymuszono wymagania dotyczące kontaktu rejestrującego podczas rejestracji
+- Poprawka: Uniemożliwiono tworzenie produktów rejestracji domen z narzutem 0%
+- Poprawka: Zachowano wybory domen i ceny w trakcie przepływu sesji checkout
+- Poprawka: Ulepszono wyświetlanie waluty cen domen HostAfrica
+- Poprawka: Ulepszono zachowanie form-action checkout, aby zapobiec niezgodnościom query-var rdzenia WP
+- Ulepszono: Dodano link do dokumentacji konfiguracji resellera HostAfrica w wskazówkach konfiguracji
+
+Wersja 1.2.0 - Wydana 2026-05-25
+- Nowe: Dodano HostAfrica jako integrację sprzedaży domen z obsługą checkout, kreatora konfiguracji, wyszukiwania, TLD/cen, rejestracji, odnowienia, transferu, nameserver, DNS, kodu EPP, blokady rejestratora i ochrony ID
+- Nowe: Dodano Openprovider jako integrację sprzedaży domen z obsługą cen resellera, rejestracji, odnowienia, transferu, nameserver, DNS, kodu EPP, blokady rejestratora, prywatności WHOIS i synchronizacji TLD
+- Nowe: Dodano Hostinger jako integrację sprzedaży domen używającą współdzielonego tokenu API Hostinger z integracji rdzenia do sprawdzania dostępności, rejestracji, aktualizacji nameserver, blokady rejestratora i prywatności WHOIS
+- Ulepszono: Dodano docblocki akcji i filtrów cyklu życia domeny dla wskazówek integracyjnych dla deweloperów
+- Ulepszono: Zaktualizowano metadane zgodności pluginu do WordPress 7.0 w pliku readme dodatku
+- Ulepszono: Zaktualizowano szablony planowania używane do koordynacji nadchodzących wydań
 
 Wersja 1.1.0 - Wydana 2026-05-08
-- Nowość: Zaimplementowano tworzenie rekordów DNS (add_dns_record) dla rejestratorów ResellerClub, Enom i OpenSRS
-- Poprawka: Parser domyślnych rekordów DNS teraz toleruje tokeny {DOMAIN} i {SITE_URL}
-- Poprawka: Slugi pól wyboru domeny w koszyku zostały nazwane w sposób zapobiegający kolizjom ze `site_url`
+- Nowe: Tworzenie rekordów DNS (add_dns_record) wdrożone dla rejestratorów ResellerClub, Enom i OpenSRS
+- Poprawka: Domyślny parser rekordów DNS obsługuje teraz tokeny {DOMAIN} i {SITE_URL}
+- Poprawka: Slugi pól checkout wyboru domeny otrzymały przestrzeń nazw, aby zapobiec kolizji z site_url
 
 Wersja 1.0.8 - Wydana 2026-05-07
-- Poprawka: Cennik domen ResellerClub teraz pobiera aktualne ceny kosztowe z poprawnego endpointu API
+- Poprawka: Ceny domen ResellerClub pobierają teraz bieżące ceny kosztowe z prawidłowego endpointu API
 
 Wersja 1.0.7 - Wydana 2026-05-06
-* Poprawka: Testowe połączenie ResellerClub wysyła wymagany parametr tlds (#224)
+* Poprawka: ResellerClub test_connection wysyła wymagany parametr tlds (#224)
 
 Wersja 1.0.6 - Wydana 2026-05-05
-* Poprawka: Rejestracja domen ResellerClub działa poprawnie dzięki ulepszonemu obsłużeniu odpowiedzi API i routowaniu dostawców sterowanemu przez rejestr.
-* Poprawka: Ulepszenia UX na stronie administracyjnej Rejestracja Domen
+* Poprawka: Rejestracja domen ResellerClub działa teraz poprawnie dzięki ulepszonej obsłudze odpowiedzi API i routingowi dostawcy sterowanemu przez rejestr
+* Poprawka: Ulepszenia UX strony administracyjnej Register Domain
 * Usunięto: Integracja rejestratora CyberPanel
 
 Wersja 1.0.5 - Wydana 2026-04-02
-* Nowość: Integracja rejestratora GoDaddy do rejestracji i zarządzania domenami
-* Nowość: Integracja rejestratora NameSilo
-* Nowość: Integracja rejestratora ResellerClub
-* Nowość: Automatyczna weryfikacja wysyłanej domeny SES przy zakupie i mapowaniu
-* Poprawka: Stałe wartości (konstanty) w pluginie Guard chronione przed redefinicją w środowisku testowym
-* Poprawka: MySQL poprawnie rozdziela słowa w pliku install-wp-tests.sh
+* Nowe: Integracja rejestratora GoDaddy do rejestracji i zarządzania domenami
+* Nowe: Integracja rejestratora NameSilo
+* Nowe: Integracja rejestratora ResellerClub
+* Nowe: Automatyczna weryfikacja domeny wysyłkowej SES przy zakupie i mapowaniu domeny
+* Poprawka: Zabezpieczono stałe pluginu przed ponownym zdefiniowaniem w środowisku testowym
+* Poprawka: Flagi MySQL są poprawnie dzielone na słowa w install-wp-tests.sh
 
 Wersja 1.0.4 - Wydana 2026-03-14
-* **Poprawka:** Niektóre brakujące zasoby CSS
-* **Poprawka:** Błąd związany z niedostępnymi TLD
+* **Poprawka:** Niektóre brakujące zasoby css
+* **Poprawka:** Błąd związany z niedostępnymi tlds
 
 Wersja 1.0.3 - Wydana 2026-03-09
-* **Poprawka:** Błędy właściwości reaktywnej Vue (domain_option, selected_domain, domain_provider) przy użyciu starego szablonu rejestracji z krótkim kodem koszyka
-* **Poprawka:** Nieprawidłowe wyrównanie pola wprowadzania poddomen i zbyt duży tekst w polu wyboru domeny w koszyku
-* **Poprawka:** Ukrycie bloku podglądu „Twoja URL będzie” gdy obecne jest pole wyboru domeny
+* **Poprawka:** Błędy reaktywnych właściwości Vue (domain_option, selected_domain, domain_provider) podczas używania starszego szablonu rejestracji z shortcode checkout
+* **Poprawka:** Nieprawidłowe wyrównanie pola wprowadzania subdomeny i zbyt duży tekst w polu checkout wyboru domeny
+* **Poprawka:** Ukryj blok podglądu „Twój URL będzie” gdy obecne jest pole wyboru domeny
 
 Wersja 1.0.2 - Wydana 2026-03-01
-* **Ulepszenie:** Usunięto globalne ustawienia nadpisywania (markup) ze strony ustawień — cennik jest teraz wyłącznie na poziomie produktu
-* **Ulepszenie:** Dodano link „Zarządzaj produktami domen” na stronie ustawień dla szybkiej nawigacji
-* **Ulepszenie:** Jaśniejsze opisy pól i podpowiedzi dla ustawień produktu domen (catch-all vs TLD-specyficzne, typy nadpisywania, cennik wprowadzający)
-* **Ulepszenie:** Lepsze opisy na całej stronie ustawień (szukaj TLD, odnowienia, DNS, powiadomienia)
+* **Ulepszono:** Usunięto globalne ustawienia narzutu ze strony ustawień — ceny są teraz wyłącznie per produkt
+* **Ulepszono:** Dodano link „Zarządzaj produktami domen” na stronie ustawień do szybkiej nawigacji
+* **Ulepszono:** Jaśniejsze opisy pól i podpowiedzi dla ustawień produktu domeny (catch-all vs specyficzne dla TLD, typy narzutu, ceny wprowadzające)
+* **Ulepszono:** Lepsze opisy na całej stronie ustawień (wyszukiwanie TLD, odnowienia, DNS, powiadomienia)
 
 Wersja 1.0.1 - Wydana 2026-02-27
 
-* **Nowość:** Narzędzie do importu TLD do zarządzania cenami hurtowymi
-* **Nowość:** Obsługa cen wprowadzających dla produktów domen
-* **Nowość:** Zestaw testów E2E z Cypress
-* **Nowość:** Szablony e-mail do powiadomień o cyklu życia domeny
-* **Nowość:** Pola adresowe rejestratora na modalnym oknie rejestracji domen w panelu administracyjnym, wypełniane domyślnie z ustawień
-* **Nowość:** Interfejs zarządzania DNS dla klientów z obsługą dodawania, edytowania i usuwania rekordów
-* **Nowość:** Opcja „Własna domena” w koszyku z automatycznym mapowaniem domeny
-* **Nowość:** Automatyczne generowanie URL strony z nazwy domeny podczas realizacji zamówienia
-* **Nowość:** Domyślna konfiguracja nameserverów i rekordów DNS w ustawieniach
-* **Nowość:** Szczegóły rejestracji domeny i zarządzanie DNS na głównym widoku edycji domeny
-* **Nowość:** Asystent konfiguracji automatycznie tworzy domyślny produkt domenowy z rozsądnymi ustawieniami
-* **Nowość:** Codyczna automatyczna synchronizacja TLD za pomocą cron dla wszystkich skonfigurowanych dostawców
-* **Nowość:** Prywatność WHOIS z konfiguracją na poziomie produktu (zawsze włączone, wybór klienta lub wyłączone)
-* **Nowość:** Pole wyboru prywatności WHOIS w koszyku z wyświetlaniem cen i obsługą trybu ciemnego
-* **Nowość:** Strona administracyjna Rejestracja Domen do ręcznej rejestracji domen
-* **Nowość:** Automatyczne aktualizacje pluginów przez serwer aktualizacji Ultimate Multisite
-* **Nowość:** Zakładnik typu filtra produktu domenowego w tabeli listy produktów z stylizacją niebieskiej wstążki
-* **Nowość:** Pola kontaktowe rejestratora (imię, adres, miasto, stan, kod pocztowy, kraj, telefon) w formularzu koszyka domen
-* **Nowość:** Walidacja pól rejestratora przed wywołaniem API rejestratora z jasnymi komunikatami o błędach
-* **Nowość:** Kanały logowania specyficzne dla dostawcy dla zdarzeń rejestracji domen (np. domain-seller-namecheap.log)
-* **Nowość:** Pola kontaktowe rejestratora w głównym formularzu rejestracji/zamówienia (wyświetlane podczas rejestracji domeny)
-* **Ulepszenie:** Pole wyszukiwania domen w koszyku zastąpione unifikowanym polem wyboru domen wspierającym zakładki poddomena, rejestracja i istniejąca domena
-* **Ulepszenie:** Ustawienia produktu domenowego renderowane w linii na stronie edycji produktu za pomocą głównego systemu widgetów
-* **Ulepszenie:** Informacje o domenie klienta podłączone do głównego widgetu mapowania domen zamiast samodzielnego metaboxu
-* **Ulepszenie:** Asystent importu TLD uproszczony do synchronizacji jednym kliknięciem ze wszystkich dostawców
-* **Ulepszenie:** Dostępność domen Namecheap używa wywołania API wsadowego dla szybszego wyszukiwania
-* **Ulepszenie:** API cen Namecheap używa prawidłowych parametrów i parsowania odpowiedzi
-* **Ulepszenie:** Centralne przechowywanie TLD w jednej opcji sieciowej
-* **Ulepszenie:** Logowanie aktywności domen dla zmian DNS, transferów i zastosowania konfiguracji
-* **Ulepszenie:** Pełna synchronizacja TLD dla OpenSRS z wykorzystaniem głównej listy IANA i walidacją wsadową
-* **Ulepszenie:** Pełna synchronizacja TLD dla Namecheap z żądaniami API paginowanymi
-* **Ulepszenie:** Stare klasy dostawców zastąpione wzorcem Integration Registry
-* **Ulepszenie:** Panel ustawień z konfiguracją DNS i transferów
-* **Ulepszenie:** Numery telefonów automatycznie formatowane do formatu +CC.NNN rejestratora
-* **Ulepszenie:** Walidacja pola telefonu usuwa znaki formatujące przed wysłaniem
-* **Ulepszenie:** Wymaganie wersji podniesione do Ultimate Multisite 2.4.12 z jaśniejszym komunikatem
-* **Ulepszenie:** Workflow CI używa odpowiedniego koszyka zarówno dla pluginu dodatkowego, jak i głównego
-* **Ulepszenie:** prepare_registrant_info() odczytuje z metadanych użytkownika zapisanych w koszyku z fallbackiem na adres rozliczeniowy
-* **Naprawiono:** AJAX wyszukiwania domen zawodzi dla użytkowników nieściśle zalogowanych podczas realizacji zamówienia
-* **Naprawiono:** AJAX cen domen zawodzi dla użytkowników nieściśle zalogowanych podczas realizacji zamówienia
-* **Naprawiono:** Fatalny błąd redeklaracji klasy Spyc podczas uruchamiania poleceń WP-CLI
-* **Naprawiono:** Timeout API sandbox Namecheap zbyt krótki
-* **Naprawiono:** Tekst przycisku wyszukiwania domen nie był widoczny na zielonym tle
-* **Naprawiono:** Rejestracja domeny zawodzi z błędem „RegistrantFirstName is Missing” z powodu braku informacji kontaktowych
-* **Naprawiono:** Rekord domeny utworzony z blog_id=0, gdy strona nie istniała jeszcze w momencie realizacji zamówienia
-* **Naprawiono:** Ustawienia domyślnych TLD zwracane jako ciąg znaków zamiast sparsowanej tablicy
-* **Usunięto:** Samodzielna strona administracyjna Zarządzanie Domenami — teraz obsługiwana przez główne strony domen
+* **Nowe:** Narzędzie importu TLD do masowego zarządzania cenami
+* **Nowe:** Obsługa cen wprowadzających dla produktów domen
+* **Nowe:** Zestaw testów E2E z Cypress
+* **Nowe:** Szablony e-mail dla powiadomień o cyklu życia domeny
+* **Nowe:** Pola adresu rejestrującego w modalu administracyjnym rejestracji domeny, wstępnie wypełnione z ustawień
+* **Nowe:** Interfejs zarządzania DNS klienta z obsługą dodawania, edycji i usuwania rekordów
+* **Nowe:** Opcja checkout „Bring your own domain” z automatycznym mapowaniem domeny
+* **Nowe:** Automatyczne generowanie URL witryny z nazwy domeny podczas checkout
+* **Nowe:** Domyślna konfiguracja nameserverów i rekordów DNS w ustawieniach
+* **Nowe:** Szczegóły rejestracji domeny i zarządzanie DNS na głównej stronie edycji domeny
+* **Nowe:** Kreator konfiguracji automatycznie tworzy domyślny produkt domeny z rozsądnymi ustawieniami domyślnymi
+* **Nowe:** Codzienna automatyczna synchronizacja TLD przez cron u wszystkich skonfigurowanych dostawców
+* **Nowe:** Ochrona prywatności WHOIS z konfiguracją dla każdego produktu (zawsze włączona, wybór klienta lub wyłączona)
+* **Nowe:** Pole wyboru prywatności WHOIS w checkout z wyświetlaniem ceny i obsługą trybu ciemnego
+* **Nowe:** Strona administracyjna Register Domain do ręcznej rejestracji domeny
+* **Nowe:** Automatyczne aktualizacje pluginu przez serwer aktualizacji Ultimate Multisite
+* **Nowe:** Karta filtra typu produktu domeny w tabeli listy produktów ze stylizacją fioletowej odznaki
+* **Nowe:** Pola kontaktowe rejestrującego (imię i nazwisko, adres, miasto, stan, kod pocztowy, kraj, telefon) w formularzu checkout domeny
+* **Nowe:** Walidacja pól rejestrującego przed wywołaniem API rejestratora z jasnymi komunikatami błędów
+* **Nowe:** Kanały logów specyficzne dla dostawcy dla zdarzeń rejestracji domen (np. domain-seller-namecheap.log)
+* **Nowe:** Pola kontaktowe rejestrującego w głównym formularzu checkout rejestracji/signup (pokazywane podczas rejestrowania domeny)
+* **Ulepszone:** Zastąpiono pole checkout Domain Search ujednoliconym polem Domain Selection obsługującym karty subdomeny, rejestracji i istniejącej domeny
+* **Ulepszone:** Ustawienia produktu domeny renderują się inline na stronie edycji produktu przez główny system widgetów
+* **Ulepszone:** Informacje o domenie klienta podpinają się do głównego widgetu mapowania domen zamiast samodzielnego metaboxa
+* **Ulepszone:** Kreator importu TLD uproszczono do synchronizacji jednym kliknięciem od wszystkich dostawców
+* **Ulepszone:** Sprawdzanie dostępności domen Namecheap używa zbiorczego wywołania API dla szybszego wyszukiwania
+* **Ulepszone:** API cen Namecheap używa poprawnych parametrów i parsowania odpowiedzi
+* **Ulepszone:** Scentralizowane przechowywanie TLD w jednej opcji sieciowej
+* **Ulepszone:** Logowanie aktywności domen dla zmian DNS, transferów i zastosowania konfiguracji
+* **Ulepszone:** Pełna synchronizacja TLD dla OpenSRS z użyciem głównej listy IANA i walidacji zbiorczej
+* **Ulepszone:** Pełna synchronizacja TLD dla Namecheap z paginowanymi żądaniami API
+* **Ulepszone:** Zastąpiono przestarzałe klasy dostawców wzorcem Integration Registry
+* **Ulepszone:** Panel ustawień z konfiguracją DNS i transferów
+* **Ulepszone:** Numery telefonów automatycznie formatowane do formatu rejestratora +CC.NNN
+* **Ulepszone:** Walidacja pola telefonu usuwa znaki formatowania przed wysłaniem
+* **Ulepszone:** Wymaganie wersji podniesione do Ultimate Multisite 2.4.12 z jaśniejszym powiadomieniem
+* **Ulepszone:** Workflow CI używa poprawnego checkout zarówno dla addonu, jak i głównego pluginu
+* **Ulepszone:** prepare_registrant_info() odczytuje z metadanych użytkownika zapisanych z checkout z awaryjnym użyciem adresu rozliczeniowego
+* **Naprawione:** AJAX wyszukiwania domen nie działał dla niezalogowanych użytkowników podczas checkout
+* **Naprawione:** AJAX cen domen nie działał dla niezalogowanych użytkowników podczas checkout
+* **Naprawione:** Krytyczny błąd ponownej deklaracji klasy Spyc podczas uruchamiania poleceń WP-CLI
+* **Naprawione:** Zbyt krótki timeout API sandbox Namecheap
+* **Naprawione:** Tekst przycisku Select w wyszukiwaniu domen nie był widoczny na zielonym tle
+* **Naprawione:** Rejestracja domeny kończyła się błędem „RegistrantFirstName is Missing” z powodu brakujących informacji kontaktowych
+* **Naprawione:** Rekord domeny tworzony z blog_id=0, gdy witryna jeszcze nie istniała w momencie checkout
+* **Naprawione:** Ustawienie domyślnych TLD zwracane jako ciąg znaków zamiast sparsowanej tablicy
+* **Usunięte:** Samodzielna strona administracyjna Domain Management — teraz obsługiwana przez główne strony domen
 
 Wersja 1.0.0 - Wydana 2025-09-28
 
-**Duże przepisanie dla Ultimate Multisite v2**
+**Duża przebudowa dla Ultimate Multisite v2**
 
-* **Nowość:** Całkowite przepisanie z nowoczesną architekturą PHP 7.4+
-* **Nowość:** Bezproblemowa integracja z systemem koszyka Ultimate Multisite v2
-* **Nowość:** Zarządzanie produktami domenowymi z elastycznymi opcjami cenowymi
-* **Nowość:** Architektura obsługi wielu dostawców domen
-* **Nowość:** Integracja automatycznego odnawiania i subskrypcji
-* **Nowość:** Interfejs zarządzania domenami klientów
-* **Nowość:** Monitorowanie i logi domen administracyjnych
-* **Nowość:** Obsługa kuponów dla produktów domenowych
-* **Nowość:** Kompleksowe zarządzanie ustawieniami
-* **Nowość:** Kod źródłowy łatwy do rozszerzenia dla deweloperów
-* **Ulepszenie:** Zaktualizowany dostawca OpenSRS z pełnym wsparciem funkcji
-* **Ulepszenie:** Nowoczesny interfejs użytkownika zgodny z Ultimate Multisite v2
-* **Naprawiono:** Cały kod v1 przestarzały zaktualizowany do standardów v2
-* **Usunięto:** Kompatybilność z v1 (zmiana łamiąca)
+* **Nowe:** Kompletna przebudowa z nowoczesną architekturą PHP 7.4+
+* **Nowe:** Bezproblemowa integracja z systemem checkout Ultimate Multisite v2
+* **Nowe:** Zarządzanie produktami domen z elastycznymi opcjami cenowymi
+* **Nowe:** Architektura obsługi wielu dostawców domen
+* **Nowe:** Integracja automatycznego odnawiania i subskrypcji
+* **Nowe:** Interfejs zarządzania domenami klienta
+* **Nowe:** Administracyjne monitorowanie domen i logi
+* **Nowe:** Obsługa kuponów dla produktów domen
+* **Nowe:** Kompleksowe zarządzanie ustawieniami
+* **Nowe:** Przyjazna dla deweloperów, rozszerzalna baza kodu
+* **Ulepszone:** Zaktualizowany dostawca OpenSRS z pełną obsługą funkcji
+* **Ulepszone:** Nowoczesny UI spójny z Ultimate Multisite v2
+* **Naprawione:** Cały przestarzały kod v1 zaktualizowano do standardów v2
+* **Usunięte:** Zgodność ze starszą wersją v1 (zmiana niekompatybilna wstecz)
 
-### Poprzednie wersje (v1 Legacy)
+### Poprzednie wersje (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Wersja 0.0.3 - 20/08/2019
+### Wersja 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Naprawiono: Niekompatybilność z Groundhogg CRM
-* Uwaga: Było to ostatnie wydanie kompatybilne z v1
+* Naprawione: Niekompatybilność z Groundhogg CRM
+* Uwaga: To było ostatnie wydanie zgodne z v1
 
-### Wersja 0.0.2 - 07/12/2018
+### Wersja 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Naprawiono: Usunięte pole Klucz Licencyjny
-* Naprawiono: Zakładki planów brakujące, gdy aktywny jest plugin funkcyjny
-* Ulepszenie: Dodano przycisk pomijania w polu rejestracji
+* Naprawione: Usunięto pole License Key
+* Naprawione: Brakujące karty planów, gdy plugin funkcji jest aktywny
+* Ulepszone: Dodano przycisk pominięcia w polu rejestracji
 
-### Wersja 0.0.1 - Wydanie początkowe
+### Wersja 0.0.1 - Pierwsze wydanie {#version-001---initial-release}
 
 * Podstawowa integracja OpenSRS dla WP Ultimo v1
 * Proste wyszukiwanie i rejestracja domen

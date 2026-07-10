@@ -1,0 +1,116 @@
+---
+title: Comhoiriúnacht Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Breiseán WordPress a chuireann ceartúcháin chomhoiriúnachta le Tutor LMS i dtimpeallachtaí illáithreáin.
+
+## Cur síos {#description}
+
+Soláthraíonn an breiseán seo ceartúcháin chomhoiriúnachta riachtanacha chun Tutor LMS a rith ar líonraí illáithreáin WordPress. Láimhseálann sé clárú úsáideoirí, bainistíocht teagascóirí, teorainneacha cúrsaí, agus feidhmiúlacht eile atá sonrach d’illáithreáin.
+
+## Gnéithe {#features}
+
+- **Bainistíocht Táblaí Bunachair Sonraí**: Braithíonn agus cruthaíonn sé go huathoibríoch táblaí Tutor LMS atá ar iarraidh agus a theipeann mar gheall ar shrianta eochrach coigríche illáithreáin
+- **Clárú Úsáideoirí Illáithreáin**: Láimhseálaithe AJAX saincheaptha chun clárú úsáideoirí a bhainistiú thar shuíomhanna líonra
+- **Bainistíocht Róil Teagascóra**: Sannadh agus bainistíocht uathoibríoch róil teagascóra i dtimpeallachtaí illáithreáin
+- **Teorainneacha Cúrsaí**: Comhtháthú le Ultimate Multisite chun teorainneacha cruthaithe cúrsaí agus tonnadóirí a bhainistiú bunaithe ar phleananna suímh
+- **Amhairc Riaracháin Shaincheaptha**: Liosta teagascóirí agus comhéadan bainistíochta atá feasach ar illáithreáin
+- **Uirlisí Riaracháin**: Comhéadan bainistíochta bunachair sonraí do riarthóirí líonra agus suímh
+
+## Riachtanais {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Breiseán Tutor LMS (forfheidhmithe go huathoibríoch tríd an gceanntásc `Requires Plugins`)
+- Suiteáil WordPress Multisite
+- Breiseán Ultimate Multisite (le haghaidh feidhmiúlacht teorainneacha cúrsaí)
+
+## Suiteáil {#installation}
+
+1. Uaslódáil comhaid an bhreiseáin chuig `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Cinntigh go bhfuil Tutor LMS suiteáilte agus gníomhachtaithe
+3. Gníomhachtaigh an breiseán tríd an roghchlár 'Breiseáin' in WordPress
+4. Comhtháthóidh an breiseán go huathoibríoch le Tutor LMS
+
+## Struchtúr Comhad {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Feidhmiúlacht a Bogadh ón MU plugin {#functionality-moved-from-mu-plugin}
+
+Tá feidhmiúlacht sa bhreiseán seo a bhí roimhe seo in `wp-content/mu-plugins/daves.php`:
+
+- Teorainneacha ar athrú stádais cúrsa
+- Teorainneacha ar chruthú cúrsaí
+- Comhtháthú agus teorainneacha CartFlows
+- Bainistíocht róil teagascóra Tutor
+- Láimhseáil clárúcháin úsáideoirí illáithreáin
+- Taispeáint ID táirge cúrsa
+
+## Bainistíocht Bunachair Sonraí {#database-management}
+
+### An Fhadhb {#the-problem}
+
+I dtimpeallachtaí illáithreáin WordPress, teipeann ar chruthú táblaí Tutor LMS do tháblaí a bhfuil srianta eochrach coigríche acu chuig tábla na n-úsáideoirí. Tarlaíonn sé seo mar gheall ar:
+
+- Úsáideann táblaí atá sonrach do shuíomh réimíreanna cosúil le `wp_2_tutor_carts`
+- Tagraíonn eochracha coigríche do `wp_2_users` (nach bhfuil ann)
+- Is é `wp_users` an tábla úsáideoirí iarbhír (comhroinnte ar fud an líonra)
+
+### An Réiteach {#the-solution}
+
+Déanann an breiseán seo go huathoibríoch:
+
+1. **Braith Táblaí atá ar Iarraidh**: Seiceálann sé táblaí ar theip orthu a chruthú mar gheall ar shrianta eochrach coigríche
+2. **Cruthaigh Táblaí leis na Tagairtí Cearta**: Úsáideann sé an t-ainm ceart ar thábla úsáideoirí (`wp_users` in illáithreáin)
+3. **Láimhseálann sé Cásanna Ilghnéitheacha**:
+   - Gníomhachtú/athghníomhachtú breiseáin
+   - Cruthú suímh nua sa líonra
+   - Seiceáil táblaí de láimh tríd an gcomhéadan riaracháin
+
+### Táblaí lena mBaineann sé {#affected-tables}
+
+- `tutor_coupon_usages` - Tá eochair choigríche ann chuig tábla na n-úsáideoirí
+- `tutor_carts` - Tá eochair choigríche ann chuig tábla na n-úsáideoirí
+- `tutor_notification_preferences` - Tábla TutorPro le heochair choigríche chuig tábla na n-úsáideoirí
+
+### Comhéadan Riaracháin {#admin-interface}
+
+Faigh rochtain ar na huirlisí bainistíochta bunachair sonraí ag:
+
+- **Riarachán Líonra**: Socruithe → Tutor Multisite DB
+- **Riarachán Suímh**: Uirlisí → Tutor Multisite DB
+
+Ligeann an comhéadan duit:
+- Táblaí atá ar iarraidh a fheiceáil thar gach suíomh
+- Cruthú táblaí a thosú de láimh
+- Cumraíocht an bhunachair sonraí a sheiceáil
+- Faisnéis mhionsonraithe stádais a fheiceáil
+
+## Tacaíocht {#support}
+
+Tá an breiseán seo deartha go sonrach don ardán KursoPro. Le haghaidh tacaíocht theicniúil, déan teagmháil leis an bhfoireann forbartha.

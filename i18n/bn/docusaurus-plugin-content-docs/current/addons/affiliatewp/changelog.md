@@ -3,7 +3,7 @@ title: AffiliateWP Changelog
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP পরিবর্তন তালিকা
+# AffiliateWP পরিবর্তন তালিকা {#affiliatewp-changelog}
 
 সংস্করণ: 2.0.1 - প্রকাশিত হয়েছে 2025-09-28
 

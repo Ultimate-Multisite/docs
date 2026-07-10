@@ -1,134 +1,138 @@
 ---
-title: '# ドメインマッピングの設定方法'
+title: ドメインマッピングの設定方法
 sidebar_position: 6
-_i18n_hash: 749818bf3eca7ddb6e6bfae1ddb7926f
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ドメインマッピングの設定方法 (v2)
+# ドメインマッピングの設定方法 (v2) {#how-to-configure-domain-mapping-v2}
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-プレミアムネットワークの最も強力な機能の1つは、クライアントにトップレベルドメインをサイトに付与する機会を提供できることです。結局のところ、どちらがよりプロフェッショナルに見えるでしょうか: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) か [_**joesbikeshop.com**_](http://joesbikeshop.com)？ そのため、Ultimate Multisiteはサードパーティのプラグインを使用せずにその機能を組み込んで提供しています。
+プレミアムネットワークの最も強力な機能のひとつは、クライアントが自分のサイトにトップレベルドメインを紐づけられることです。結局、どちらがよりプロらしく見えるでしょうか。[_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) それとも [_**joesbikeshop.com**_](http://joesbikeshop.com) でしょうか。そのため Ultimate Multisite では、サードパーティ製プラグインを使わなくても、この機能を標準で提供しています。
 
-## ドメインマッピングとは？
+## ドメインマッピングとは？ {#whats-domain-mapping}
 
-名前が示すように、ドメインマッピングはUltimate Multisiteがカスタムドメインのリクエストを受け取り、そのドメインを付与したネットワーク内の該当サイトにマッピングする機能です。
+名前のとおり、ドメインマッピングとは、カスタムドメインへのリクエストを受け取り、そのドメインが紐づけられたネットワーク内の該当サイトへ対応付ける Ultimate Multisite の機能です。
 
-### How to setup domain mapping on your Ultimate Multisite Network
+### Ultimate Multisite ネットワークでドメインマッピングを設定する方法 {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-ドメインマッピングを機能させるには、設定が必要です。幸いなことに、Ultimate Multisiteはその作業を自動化してくれるので、簡単に要件を満たすことができます。
+ドメインマッピングを動作させるには、いくつかの設定が必要です。ありがたいことに、Ultimate Multisite が手間のかかる作業を自動化するため、要件を簡単に満たせます。
 
-During Ultimate Multisite installation, the wizard will automatically copy and install the **sunrise.php** to the designated folder. **The wizard won't allow you to proceed until this step is completed**.
+Ultimate Multisite のインストール中、ウィザードは **sunrise.php** を指定フォルダーへ自動的にコピーしてインストールします。**この手順が完了するまで、ウィザードは先へ進ませません**。
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-つまり、Ultimate Multisiteのインストールウィザードがネットワークの設定を完了したら、すぐにカスタムドメインのマッピングを開始できます。
+つまり、Ultimate Multisite のインストールウィザードがネットワークの設定を完了すれば、すぐにカスタムドメインのマッピングを開始できます。
 
-Note that domain mapping in Ultimate Multisite is not mandatory. You have an option to use WordPress Multisite native domain mapping function or any other domain mapping solution.
+Ultimate Multisite のドメインマッピングは必須ではありません。WordPress Multisite 標準のドメインマッピング機能、または他のドメインマッピングソリューションを使用する選択肢もあります。
 
-Should you need to disable Ultimate Multisite domain mapping to give way to other domain mapping solutions, you can disable this feature under **Ultimate Multisite > Settings > Domain Mapping**.
+他のドメインマッピングソリューションを使うために Ultimate Multisite のドメインマッピングを無効化する必要がある場合は、**Ultimate Multisite > 設定 > ドメインマッピング** でこの機能を無効化できます。
 
-![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
+![管理者リダイレクト、マッピングメッセージ、DNS オプションを表示するドメインマッピング設定ページ](/img/config/domain-mapping-settings.png)
 
-このオプションのすぐ下に **Force Admin Redirect** オプションがあります。このオプションは、顧客がカスタムドメインとサブドメインの両方で管理ダッシュボードにアクセスできるか、あるいはどちらか一方だけにアクセスできるかを制御します。
+このオプションのすぐ下には、**Force Admin Redirect** オプションもあります。このオプションでは、顧客がカスタムドメインとサブドメインの両方で管理 Dashboard にアクセスできるか、どちらか一方だけにするかを制御できます。
 
-If you select **Force redirect to mapped domain**, your customers will only be able to access their admin dashboard on their custom domains.
+**Force redirect to mapped domain** を選択すると、顧客はカスタムドメインでのみ管理 Dashboard にアクセスできます。
 
-The option **Force redirect to** **network domain** will do exactly the opposite - your customers will only be allowed to access their dashboards on their subdomain, even if trying to sign in on their custom domains.
+**Force redirect to** **network domain** オプションはその正反対です。顧客がカスタムドメインでサインインしようとしても、サブドメインでのみ Dashboard へのアクセスが許可されます。
 
-And the option **Allow access to the admin by both mapped domain domain and network domain** allows them to access their admin dashboards both on the subdomain and the custom domain.
+そして **Allow access to the admin by both mapped domain domain and network domain** オプションでは、サブドメインとカスタムドメインの両方で管理 Dashboard にアクセスできます。
 
-![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
+![3つのリダイレクトオプションを表示して展開された管理者リダイレクトのドロップダウン](/img/config/domain-mapping-redirect-options.png)
 
-カスタムドメインをマッピングする方法は2つあります。1つ目はネットワーク管理ダッシュボードからスーパ管理者としてドメイン名をマッピングする方法で、2つ目はアカウントページのサブサイト管理ダッシュボードから行う方法です。
+カスタムドメインをマッピングする方法は2つあります。ひとつ目は、スーパー管理者としてネットワーク管理 Dashboard からドメイン名をマッピングする方法です。ふたつ目は、サブサイトの管理 Dashboard の Account ページから行う方法です。
 
-But before you start mapping the custom domain to one of the subsites in your network, you will need to make sure that the **DNS settings** of the domain name are properly configured.
+ただし、ネットワーク内のいずれかのサブサイトにカスタムドメインをマッピングし始める前に、そのドメイン名の **DNS 設定** が正しく構成されていることを確認する必要があります。
 
-### 
+###
 
-### Making sure the domain DNS settings are properly configured
+### ドメインの DNS 設定が正しく構成されていることを確認する {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-マッピングを機能させるには、マッピング予定のドメインがネットワークのIPアドレスを指していることを確認する必要があります。Ultimate MultisiteがインストールされているドメインのIPアドレス（ネットワークIPアドレス）を使用し、マッピングしたいカスタムドメインのIPアドレスではありません。特定のドメインのIPアドレスを検索するには、例えば [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) にアクセスすることをお勧めします。
+マッピングを機能させるには、マッピングしようとしているドメインがネットワークの IP アドレスを指していることを確認する必要があります。必要なのはネットワークの IP アドレス、つまり Ultimate Multisite がインストールされているドメインの IP アドレスであり、マッピングしたいカスタムドメインの IP アドレスではありません。特定のドメインの IP アドレスを調べるには、たとえば [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) の利用をおすすめします。
 
-To correctly map the domain, you need to add an **A RECORD** on your **DNS** configuration pointing to that **IP address**. DNS management varies greatly between different domain registrars, but there's plenty of tutorials online covering that if you search for " _Creating A Record on XXXX_ " where XXXX is your domain registrar (ex.: " _Creating A Record on_ _GoDaddy_ ").
+ドメインを正しくマッピングするには、**DNS** 設定に、その **IP アドレス** を指す **A RECORD** を追加する必要があります。DNS 管理はドメイン登録事業者によって大きく異なりますが、XXXX をご利用のドメイン登録事業者に置き換えて「 _XXXX で A Record を作成_ 」のように検索すれば、オンラインに多くのチュートリアルがあります（例: 「 _GoDaddy で A Record を作成_ 」）。
 
-If you find yourself having trouble getting this to work, **contact your domain registrar support** and they will be able to help you with this part.
+うまく動作させるのが難しい場合は、**ドメイン登録事業者のサポートに連絡**してください。この部分について支援してもらえます。
 
-If you plan to allow your clients to map their own domains, they will have to do the work on this part themselves. Point them towards their registrar support system if they find themselves unable to create the A Record.
+クライアントが自分のドメインをマッピングできるようにする予定なら、この部分の作業はクライアント自身が行う必要があります。A Record を作成できない場合は、登録事業者のサポート窓口を案内してください。
 
-### Mapping custom domain name as Super Admin
+### Super Admin としてカスタムドメイン名をマッピングする {#mapping-custom-domain-name-as-super-admin}
 
-ネットワークでスーパ管理者としてログインしている場合、**Ultimate Multisite > Domains** に移動してカスタムドメイン名を簡単に追加・管理できます。
+ネットワークでスーパー管理者としてログインしている場合、**Ultimate Multisite > Domains** に移動すると、カスタムドメイン名を簡単に追加および管理できます。
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite の Domains 一覧ページ](/img/admin/domains-list.png)
 
-このページでは、上部の **Add Domain** ボタンをクリックすると、モーダルウィンドウが表示され、**custom domain name**、**適用したいサブサイト**、そしてそれを **primary domain** とするかどうかを設定できます（**1つのサブサイトに複数のドメイン名をマッピング**できることに注意してください）。
+このページでは、上部の **Add Domain** ボタンをクリックできます。するとモーダルウィンドウが表示され、**カスタムドメイン名**、そのカスタムドメイン名を適用したい **サブサイト** を設定して入力し、それを **プライマリドメイン** 名として設定するかどうかを決められます（**1つのサブサイトに複数のドメイン名をマッピング**できる点に注意してください）。
 
-![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
+![ドメイン名、サイト選択、プライマリドメイン切り替えを含む Add Domain モーダル](/img/admin/domain-add-modal.png)
 
-すべての情報を入力したら、下部の **Add Existing Domain** ボタンをクリックします。
+すべての情報を入力したら、下部の **Add Existing Domain** ボタンをクリックできます。
 
-![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
+これにより、カスタムドメインの DNS 情報を確認して取得する処理が開始されます。ページ下部にはログも表示され、進行中の処理を追跡できます。この処理が完了するまで数分かかる場合があります。
 
-これにより、カスタムドメインのDNS情報の検証と取得プロセスが開始されます。ページ下部にログが表示され、プロセスの進行状況を確認できます。このプロセスは完了まで数分かかる場合があります。
+Ultimate Multisite v2.13.0 では、サイト単位のドメインとして扱うべきホスト上に新しいサイトが作成されたとき、内部ドメインレコードも自動で作成されます。ホストがネットワークのプライマリドメインである場合、または **サイトURL** フィールドで設定された共有チェックアウトフォーム用のベースドメインのいずれかである場合は、自動的なマップ済みドメインレコードの作成はスキップされ、その共有ベースドメインを使用するすべてのサイトで引き続き利用できます。
 
-**Stage**（ステータス）は、すべてが正しく設定されている場合、**Checking DNS** から **Ready** に変わります。
+顧客が Domain Seller v1.3.0 以降で新しいドメインを登録すると、Ultimate Multisite は既定で、登録されたドメインを顧客のネットワークサイトに自動でマッピングします。管理者は、プライマリドメインのフラグ、有効化状態、SSL の扱いなどのオプションを調整したい場合を除き、登録成功後に別のマップ済みドメインレコードを追加する必要はなくなりました。
 
-![Domain with Ready status in domains list](/img/admin/domains-list.png)
+すべてが正しく設定されていれば、**ステージ** またはステータスは **DNS確認中** から **準備完了** に変わるはずです。
 
-![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-ドメイン名をクリックすると、いくつかのオプションが表示されます。簡単に見てみましょう：
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
+ドメイン名をクリックすると、その中にいくつかのオプションが表示されます。簡単に見てみましょう。
 
-**Stage:** これはドメインが現在あるステージです。ドメインを最初に追加すると、**Checking DNS** ステージにあるはずです。プロセスはDNSエントリを確認し、正しいかどうかを確認します。その後、ドメインは **Checking SSL** ステージに移行します。Ultimate MultisiteはドメインにSSLがあるかどうかを確認し、**Ready** または **Ready (without SSL)** と分類します。
+![ステージ、サイト、有効、プライマリ、SSL の切り替えがあるドメイン詳細ページ](/img/admin/domain-edit.png)
 
-**Site:** このドメインに関連付けられたサブドメインです。マッピングされたドメインは、この特定のサイトのコンテンツを表示します。
+**ステージ:** これはドメインが現在どの段階にあるかを示します。ドメインを最初に追加したときは、おそらく **DNS確認中** ステージになります。この処理では DNS エントリーを確認し、それらが正しいことを検証します。その後、ドメインは **SSL確認中** ステージに移ります。Ultimate Multisite はドメインに SSL があるかどうかを確認し、ドメインを **準備完了** または **準備完了（SSLなし）** に分類します。
 
-**Active:** このオプションをオン/オフに切り替えて、ドメインを有効/無効にできます。
+**サイト:** このドメインに関連付けられているサブドメインです。マップ済みドメインには、この特定のサイトのコンテンツが表示されます。
 
-**Is Primary Domain?:** 顧客は各サイトに複数のマッピングドメインを持つことができます。このオプションを使用して、特定のサイトのプライマリドメインかどうかを選択します。
+**有効:** このオプションをオンまたはオフに切り替えて、ドメインを有効化または無効化できます。
 
-**Is Secure?:** Ultimate MultisiteはドメインにSSL証明書があるかどうかを確認してから有効化しますが、手動でSSL証明書の有無でドメインを読み込むこともできます。ウェブサイトにSSL証明書がなく、SSLで強制読み込みを試みるとエラーが発生する場合があります。
+**プライマリドメインですか?:** 顧客は各サイトに対して複数のマップ済みドメインを持つことができます。この特定のサイトのプライマリドメインにするかどうかを選択するには、このオプションを使用します。
 
-### Mapping custom domain name as Subsite user
+**安全ですか?:** Ultimate Multisite はドメインを有効にする前に SSL 証明書があるかどうかを確認しますが、SSL 証明書ありまたはなしでドメインを読み込むよう手動で選択できます。Webサイトに SSL 証明書がない状態で SSL を強制して読み込もうとすると、エラーが発生する可能性があることに注意してください。
 
-サブサイト管理者は、サブサイト管理ダッシュボードからカスタムドメイン名をマッピングすることもできます。
+### Subsite ユーザーとしてカスタムドメイン名をマッピングする {#mapping-custom-domain-name-as-subsite-user}
 
-まず、**Domain mapping** 設定でこのオプションを有効にしていることを確認してください。下のスクリーンショットを参照してください。
+Subsite の管理者も、自分の Subsite 管理画面からカスタムドメイン名をマッピングできます。
 
-![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
+まず、**ドメインマッピング** 設定でこのオプションを有効にしていることを確認する必要があります。下のスクリーンショットを参照してください。
 
-また、**Ultimate Multisite > Products** の **Plan** レベルまたは製品オプションでこのオプションを設定または構成できます。
+<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-![Domains metabox on the subsite account page](/img/admin/domains-list.png)
+このオプションは、**プラン** レベル、または **Ultimate Multisite > 製品** の製品オプションでも設定または構成できます。
 
-これらのオプションが有効になり、サブサイトユーザーがカスタムドメイン名をマッピングできるようになった場合、サブサイトユーザーは **Account** ページに **Domains** というメタボックスを表示します。
+![製品編集ページのカスタムドメインセクション](/img/config/product-custom-domains.png)
 
-![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
+これらのオプションのいずれかが有効で、Subsite ユーザーがカスタムドメイン名をマッピングできる場合、Subsite ユーザーには **Account** ページの下に **ドメイン** というメタボックスが表示されるはずです。
 
-ユーザーは **Add Domain** ボタンをクリックすると、いくつかの指示が表示されたモーダルウィンドウが開きます。
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
+ユーザーが **ドメインを追加** ボタンをクリックすると、いくつかの手順が記載されたモーダルウィンドウが表示されます。
 
-ユーザーは **Next Step** をクリックしてカスタムドメイン名を追加できます。また、これがプライマリドメインになるかどうかを選択できます。
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-![Click Add Domain to start DNS verification](/img/admin/domains-list.png)Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
+その後、ユーザーは **次のステップ** をクリックして、カスタムドメイン名の追加に進めます。また、これをプライマリドメインにするかどうかも選択できます。
 
-![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-**Add Domain** をクリックすると、カスタムドメインのDNS情報の検証と取得プロセスが開始されます。
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-### About Domain Syncing
+**ドメインを追加** をクリックすると、カスタムドメインの DNS 情報を検証して取得する処理が開始されます。
 
-Domain Syncingは、Ultimate Multisiteがホスティングアカウントにカスタムドメイン名をアドオンドメインとして追加し、**ドメインマッピングを機能させる**プロセスです。
+### ドメイン同期について {#about-domain-syncing}
 
-ドメイン同期は、ホスティングプロバイダーがUltimate Multisiteのドメインマッピング機能と統合されている場合に自動的に行われます。現在、以下のホスティングプロバイダーが該当します：_Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ および _Cpanel._
+ドメイン同期とは、Ultimate Multisite がカスタムドメイン名をアドオンドメインとしてホスティングアカウントに追加し、**ドメインマッピングが機能するようにする** 処理です。
 
-この統合を有効にするには、Ultimate Multisiteの設定で **Integration** タブを使用します。
+ホスティングプロバイダーが Ultimate Multisite のドメインマッピング機能と連携している場合、ドメイン同期は自動で行われます。現在、対応しているホスティングプロバイダーは _Runcloud、Closte、WP Engine、Gridpane、WPMU Dev、Cloudways、_ および _Cpanel_ です。
 
-![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
+ホストプロバイダー連携が有効な場合、Ultimate Multisite は新しく作成されたサイトに対して、プロバイダー側の DNS またはサブドメイン作成タスクをキューに追加することもできます。そのタスクを受け取る連携がない場合は、何もしないキュー項目を避けるため、バックグラウンドジョブはスキップされます。マップ済みドメインの DNS と SSL の確認は、通常のドメインステージ処理を通じて引き続き実行されます。
 
-![Hosting provider integration configuration](/img/config/settings-domain-mapping.png)
+この連携は、Ultimate Multisite 設定の **連携** タブで有効化する必要があります。
 
-_注意: 上記のプロバイダーのいずれでもない場合は、**ホスティングアカウントにドメイン名を手動で同期または追加**する必要があります。_
+![ホスティングプロバイダーを表示している Ultimate Multisite 設定の連携タブ](/img/config/integrations-tab.png)
+
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+
+_ホスティングプロバイダーが上記のいずれにも該当しない場合は、**ドメイン名をホスティングアカウントに手動で同期または追加する必要があります**。_

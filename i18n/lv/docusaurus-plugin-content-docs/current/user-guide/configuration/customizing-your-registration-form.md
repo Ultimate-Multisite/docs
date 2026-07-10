@@ -1,152 +1,156 @@
 ---
-title: Pielaupīt jūsu reģistrācijas formulāru
+title: Reģistrācijas veidlapas pielāgošana
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Izvēlnes formātās personalizācija
+# Reģistrācijas veidlapas pielāgošana {#customizing-your-registration-form}
 
-Lai jūsu tīkls izskatu būtu unikāšs salīdzinājumā ar visiem citiem SaaS, kas ir izveidoti WordPress platformā, Ultimate Multisite ļauj jums personalizēt savas reģistrācijas un iekļuvejas lapas ar mūsu **Checkout Forms** funkciju.
+Lai jūsu tīkls izskatītos unikāls salīdzinājumā ar visiem pārējiem SaaS, kas veidoti uz WordPress platformas, Ultimate Multisite ļauj pielāgot reģistrācijas un pieteikšanās lapas ar mūsu **Checkout Forms** funkciju.
 
-Lai gan tās ir viegs un elastīgs veids eksperimentēt ar dažādām pieejām, mēģinot konvertēt jaunas klientus, tās galvenokārt tiek izmantotas personalizētu reģistrācijas formāru izveidē. Šajā rakstā mēs redzamam, kā to darīt.
+Lai gan tās ir vienkāršs un elastīgs veids, kā eksperimentēt ar dažādām pieejām, mēģinot pārvērst jaunus klientus, tās galvenokārt tiek izmantotas personalizētu reģistrācijas veidlapu izveidei. Šī raksta mērķis ir parādīt, kā to varat izdarīt.
 
-## Ījūves un reģistrācijas lapas:
+## Pieteikšanās un reģistrācijas lapas: {#login-and-registration-pages}
 
-Uz Ultimate Multisite instalācijas laikā tas automātiski izveido personalizētās iekļuvejas un reģistrācijas lapas jūsu galvenajā vietnē. Jūs varat mainīt šīs defaultas lapas jebkurā brīdī, dodoties uz savu **Ultimate Multisite > Settings > Login & Registration** lapu.
+Pēc Ultimate Multisite instalēšanas tas automātiski izveido pielāgotas pieteikšanās un reģistrācijas lapas jūsu galvenajā vietnē. Šīs noklusējuma lapas varat mainīt jebkurā laikā, dodoties uz savu **Ultimate Multisite > Settings > Login & Registration** lapu.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Pieteikšanās un reģistrācijas iestatījumu lapa](/img/config/settings-general.png)
 
-Šeit ir pilns skats uz iekļuvejas un reģistrācijas iestatījumu lapu:
+Šeit ir pilns pieteikšanās un reģistrācijas iestatījumu lapas skats:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Pieteikšanās un reģistrācijas iestatījumu pilna lapa](/img/config/settings-login-registration-full.png)
 
-Atspējiet katru opciju, ko varat personalizēt **Login & Registration** lapā:
+Apskatīsim katru no opcijām, ko varat pielāgot **Login & Registration** lapā:
 
-  * **Enable registration (Iespēju reģistrācija):** Šaļojums iespēj vai neiespēj reģistrāciju jūsu tīklā. Ja to izslēdzat, jūsu klientiem nevarēs reģistrēties un abonentēt jūsu produktus.
+  * **Iespējot reģistrāciju:** Šī opcija iespējos vai atspējos reģistrāciju jūsu tīklā. Ja tā ir izslēgta, jūsu klienti nevarēs reģistrēties un abonēt jūsu produktus.
 
-  * **Enable email verification (Iespēju e-pasta apstiprinājums):** Ja šaļojums ieslēdzas, klienti, kas abonentējas bezmaksas plānusa vai maksājams plānusa ar próbu periodu, saņems apstiprinājuma e-pastu un būs nepieciešami klikšķināt uz apstiprinājuma saiti saviem vietnīm izveidot.
+  * **Iespējot e-pasta verifikāciju:** Ja šī opcija ir ieslēgta, klienti, kas abonē bezmaksas plānu vai maksas plānu ar izmēģinājuma periodu, saņems verifikācijas e-pastu un viņiem būs jānoklikšķina uz verifikācijas saites, lai viņu vietnes tiktu izveidotas.
 
-* **Definīts reģistrācijas lapa:** Ševe ir defaultā lapa reģistrācijai. Šo lapas jāpublicē uz jūsu vietnē un tas jābūt ar reģistrācijas formu (ko arī var saucties par checkout formu) – kurie klienti abonentējas jūsu produktiem. Jūs varat izveidot cik vēlreiz reģistrācijas lapas un checkout formus, kā jums ir vajadzīgs, bet atcerieties, ka jāievieto checkout formus shortcode reģistrācijas lapā, nevis citādi tas neparādīsies.
+  * **Noklusējuma reģistrācijas lapa:** Šī ir noklusējuma lapa reģistrācijai. Šai lapai jābūt publicētai jūsu vietnē un tajā jābūt reģistrācijas veidlapai (pazīstamai arī kā checkout veidlapa) — vietai, kur jūsu klienti abonēs jūsu produktus. Varat izveidot tik daudz reģistrācijas lapu un checkout veidlapu, cik vēlaties; tikai atcerieties ievietot checkout veidlapas shortcode reģistrācijas lapā, pretējā gadījumā tā neparādīsies.
 
-  * **Izmantot personīgu iekļūsturi lapu:** Ša opsiija ļauj izmantot personalizētu iekļūsturu lapu, kas ir atšķirīga no defaultās wp-login.php lapas. Ja šo opciju ieslēdziet, jūs varat izvēlēties, kurā lapa tiks izmantota kā iekļūstura laika **Default login page** (tā ir tieši zemāk).
+  * **Izmantot pielāgotu pieteikšanās lapu:** Šī opcija ļauj izmantot pielāgotu pieteikšanās lapu, nevis noklusējuma wp-login.php lapu. Ja šī opcija ir ieslēgta, varat atlasīt, kura lapa tiks izmantota pieteikšanās vajadzībām, opcijā **Noklusējuma pieteikšanās lapa** (tieši zemāk).
 
-  * **Sīpēt oriģinālo iekļūsturu URL (wp-login.php):** Ja vēlaties slēpt oriģinālo iekļūsturu URL, varat ieslēdzēt šo opciju. Tas ir noderīgs, lai novērstu brute-force atakus. Ja ša opsiija ir aktivizēta, Ultimate Multisite parādīs 404 kļūdu, kad lietotā mēģina piekļūt oriģinālajai wp-login.php linkai.
+  * **Paslēpt sākotnējo pieteikšanās URL (wp-login.php)** : Ja vēlaties paslēpt sākotnējo pieteikšanās URL, varat ieslēgt šo opciju. Tas ir noderīgi, lai novērstu brute-force uzbrukumus. Ja šī opcija ir iespējota, Ultimate Multisite parādīs 404 kļūdu, kad lietotājs mēģinās piekļūt sākotnējai wp-login.php saitei
 
-  * **Izmantot sinkronu vietnes publicēšanu:** Pēc tam, kad kliente abonentējas produktam tīklā, ja jaunā nepieņemta lapa ir jāpārveido reāla tīkla lapa. Publicēšanas procesa notiek caur Job Queue, asincrono. Ieslēdziet šo opciju, lai priekšnoteiktu publicēšanu tajā pašā pieprasījumā kā reģistrācija.
+  * **Piespiest sinhronu vietnes publicēšanu:** Pēc tam, kad klients abonē produktu tīklā, jaunā gaidošā vietne ir jāpārveido par īstu tīkla vietni. Publicēšanas process notiek caur Job Queue asinhroni. Iespējojiet šo opciju, lai piespiestu publicēšanu notikt tajā pašā pieprasījumā kā reģistrēšanās.
 
-Tagad skatīsim citus opcijas, kas vēl ir aktīvas attiecībā uz iekļūsturu un reģistrācijas procesu. Tās atrodas zem **Other options** (Citas opcijas) tieši šajā iekļūstura un reģistrācijas lapā:
+Tagad apskatīsim citas opcijas, kas joprojām ir saistītas ar pieteikšanās un reģistrācijas procesu. Tās atrodas tieši zem **Citas opcijas** tajā pašā Login & registration lapā:
 
-  * **Default role:** Tas ir tā loma, kas jūsu klientiem būs uz viņu vietnē pēc reģistrācijas procesu.
+  * **Noklusējuma loma:** Šī ir loma, kas jūsu klientiem būs viņu vietnē pēc reģistrēšanās procesa.
 
-* **Iespējiet Jumper lietošanu:** Šis funkcija ļauj administratoriem ātri pāriet starp Ultimate Multisite ekrānus, tīkla objektiem un citiem atļautajiem vietām bez jāmeklē menu caur visu. Izslēdz šo, ja vēlaties slēpt šo ātrās navigācijas rīku no admin interfeisa.
+  * **Iespējot Jumper:** Iespējo Jumper saīsni administrēšanas zonā. Jumper ļauj administratoriem ātri pāriet uz Ultimate Multisite ekrāniem, tīkla objektiem un citiem atbalstītiem galamērķiem, nepārlūkojot katru izvēlni. Izslēdziet to, ja vēlaties paslēpt šo ātrās navigācijas rīku no administrēšanas saskarnes.
 
-* **Pievienojiet lietotājus arī galvenajā vietnē:** Iespējot šo opciju, lietotājs tiks pievienots jūsu tīkla galvenajai vietnei pēc reģistrācijas procesu. Ja ieslēdzat šo opciju, zem tā parādīsies iespēja noteikt šiem lietotājiem **vietas iestatīto lomu** jūsu vietnē.
+  * **Pievienot lietotājus arī galvenajai vietnei:** Šīs opcijas iespējošana pēc reģistrēšanās procesa pievienos lietotāju arī jūsu tīkla galvenajai vietnei. Ja iespējosiet šo opciju, tieši zemāk parādīsies arī opcija iestatīt šo lietotāju **noklusējuma lomu** jūsu vietnē.
 
-* **Iespējiet vairākus kontus:**Ļauj lietotājiem turēt kontus dažādās tīkla vietnēs ar vienu un tiem pašām e-pasta adresi. Ja šaļojums ir izslēdzts, jūsu klientiem nevarēs radīt kontus citās vietnēs, kas darbojas jūsu tīklā un kuram ir tāds pats e-pasta adrs.
+  * **Iespējot vairākus kontus:** Atļauj lietotājiem izveidot kontus dažādās jūsu tīkla vietnēs ar vienu un to pašu e-pasta adresi. Ja šī opcija ir izslēgta, jūsu klienti nevarēs izveidot kontu citās vietnēs, kas darbojas jūsu tīklā, ar to pašu e-pasta adresi.
 
-Un tas ir visas opcijas, kas saistītas ar iekopojumu un reģistrāciju, ko varat personalizēt! Neaizmirstiet saglabāt savas iestatījumus pēc tam, kad beidziet rediģēšanu.
+Un tās ir visas ar pieteikšanos un reģistrāciju saistītās opcijas, kuras varat pielāgot! Neaizmirstiet saglabāt iestatījumus pēc tam, kad būsiet pabeidzis tos rediģēt.
 
-## Vairāku reģistrācijas formām lietošana:
+## Vairāku reģistrācijas veidlapu izmantošana: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 piedāvā kasina formātu redaktoru, ar kuru varat izveidot cik vēl formām, kā jums ir nepieciešams, ar dažādām laukiem, produktiem un citām iespējām.
+Ultimate Multisite 2.0 piedāvā checkout veidlapu redaktoru, kas ļauj izveidot tik daudz veidlapu, cik vēlaties, ar dažādiem laukiem, piedāvātajiem produktiem utt.
 
-Gan iestatījumu (login) un reģistrācijas lapas iekopojums ir šo shortcodeji: **[wu_login_form]** login lapā un **[wu_checkout]** reģistrācijas lapā. Jūs varat vēl vairāk personalizēt reģistrācijas lapu, izveidojot vai radot formātus (checkout forms).
+Gan pieteikšanās, gan reģistrācijas lapas ir iegultas ar shortcode: **[wu_login_form]** pieteikšanās lapā un**[wu_checkout]** reģistrācijas lapai. Reģistrācijas lapu varat vēl vairāk pielāgot, veidojot vai izveidojot checkout veidlapas.
 
-Lai piekļūtu šai funkcijā, pārvietojieties uz menu **Checkout Forms**, kas atrodas labajā sarakstā.
+Lai piekļūtu šai funkcijai, dodieties uz **Checkout Forms** izvēlni kreisajā sānjoslā.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms izvēlne sānjoslā](/img/config/checkout-forms-list.png)
 
-Šajā lapā jūs varat redzēt visus savus checkout formātus.
+Šajā lapā varat redzēt visas jums pieejamās checkout veidlapas.
 
-Ja vēlaties izveidot jaunu, vienkārši noklikšķiniet uz **Add Checkout Form** (Pievienot checkout formātu) lapas augšējā daļā.
+Ja vēlaties izveidot jaunu, vienkārši noklikšķiniet uz **Pievienot Checkout Form** lapas augšdaļā.
 
-Jūs varat izvēlēties vienu no šiem trīs variantu kā sākumu: vienkāršu soļu, vairāku soļu vai tukšu. Pēc tam noklikšķiniet uz **Lietot redaktoru**.
+Kā sākumpunktu varat atlasīt vienu no šīm trim opcijām: viens solis, vairāki soļi vai tukša. Pēc tam noklikšķiniet uz **Doties uz redaktoru**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Pievienot Checkout Form ar viena soļa, vairāku soļu vai tukšām opcijām](/img/config/checkout-forms-list.png)
 
-Vai alternatīvi, jūs varat rediģēt vai duplikat formus, kas jums jau ir, noklikšķinot uz opcijām, kas atrodas formē nosaukuma zem. Tur jūs arī atrasties iespējas kopēt formē īsskodi vai izslēgt formu.
+Alternatīvi varat rediģēt vai dublēt jau esošās veidlapas, noklikšķinot uz opcijām zem tās nosaukuma. Tur atradīsiet arī opcijas, lai kopētu veidlapas shortcode vai dzēstu veidlapu.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Checkout veidlapas darbības, novietojot kursoru, ar rediģēšanu, dublēšanu un dzēšanu](/img/config/checkout-form-hover-actions.png)
 
-Ja jūs izvēlaties vienkāršu soļu vai vairāku soļu, checkout forma jau būs iepriekš iestatīta ar pamata soļus, lai tā varētu darboties. Tad, ja vēlaties, jūs varat pievienot papildu soļus.
+Ja atlasīsiet vienu soli vai vairākus soļus, checkout veidlapa jau būs iepriekš aizpildīta ar pamata soļiem, lai tā darbotos. Pēc tam, ja vēlaties, varat tai pievienot papildu soļus.
 
-### Checkout formē rediģēšana:
+### Checkout Form rediģēšana: {#editing-a-checkout-form}
 
-Kā mēs iepriekš minējām, varat izveidot checkout formas dažādiem mērķiem. Šajā piemēra mēs strādāsim ar reģistrācijas formu.
+Kā jau minējām iepriekš, varat izveidot checkout veidlapas dažādiem mērķiem. Šajā piemērā strādāsim ar reģistrācijas veidlapu.
 
-Pēc tam, kad navigāt uz checkout formē redaktoru, piedāvājiet formai nosaukumu (kas tiks lietots tikai iekšējai referenci) un slug (lietu īsskodiem, piemēram).
+Pēc pāriešanas uz checkout veidlapas redaktoru piešķiriet savai veidlapai nosaukumu (tas tiks izmantots tikai iekšējai atsaucei) un slug (izmantots, piemēram, shortcode izveidei).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Norēķinu veidlapas redaktors ar nosaukuma un īsvārda laukiem](/img/config/checkout-form-name-slug.png)
 
-Formas ir sastāv no soļiem un laukiem. Jūs varat pievienot jaunu soļu noklikšķinot uz **Pievienot jaunu checkout soļu**.
+Veidlapas sastāv no soļiem un laukiem. Varat pievienot jaunu soli, noklikšķinot uz **Pievienot jaunu norēķinu soli**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Poga Pievienot jaunu norēķinu soli](/img/config/checkout-form-add-step.png)
 
-Modalā loga pirmajā posmā aizpildiet formēsoja soļas saturu. Piedāvājiet tālnum, nosaukumu un aprakstu. Šie elementi galvenokārt lietojami iekšpusē.
+Modālā loga pirmajā cilnē aizpildiet savas veidlapas soļa saturu. Piešķiriet tam ID, nosaukumu un aprakstu. Šie elementi pārsvarā tiek izmantoti iekšēji.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Norēķinu soļa satura cilne ar ID, nosaukumu un aprakstu](/img/config/checkout-form-step-content.png)
 
-Tālāk, noteikiet soļas redzamību. Jūs varat izvēlēties starp **Vispirms parādīt**, **Parādīt tikai ienācējus** vai **Parādīt tikai viesiem**.
+Pēc tam iestatiet soļa redzamību. Varat izvēlēties starp **Vienmēr rādīt** , **Rādīt tikai lietotājiem, kas ir pierakstījušies** vai **Rādīt tikai viesiem**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Norēķinu soļa redzamības opcijas](/img/config/checkout-form-step-visibility.png)
 
-Visbeid konfigurējiet solīmes stili. Šie lauki ir v 선택i (optīvi).
+Visbeidzot konfigurējiet soļa stilu. Šie lauki nav obligāti.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Norēķinu soļa stila konfigurācija](/img/config/checkout-form-step-style.png)
 
-Tagad ir laiks pievienot laukus mūsu pirmās solīmei. Kļūsties uz **Pievienot jaunu lauku** un izvēlieties sekcijas veidu, ko vēlaties.
+Tagad ir laiks pievienot laukus mūsu pirmajam solim. Vienkārši noklikšķiniet uz **Pievienot jaunu lauku** un atlasiet vēlamo sadaļas tipu.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Poga Pievienot jaunu lauku](/img/config/checkout-form-add-field-button.png)![Lauka tipa izvēles nolaižamā izvēlne](/img/config/checkout-form-field-type-dropdown.png)
 
-Katram laukam ir atšķirīgi parametri, kas jāievada. Šajā pirmā ienākšanās mēs izvēlamies **Username** (Vārds lietotāja) lauku.
+Katram laukam ir atšķirīgi aizpildāmie parametri. Šim pirmajam ievades laukam atlasīsim lauku **Lietotājvārds**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Lietotājvārda lauka konfigurācija](/img/config/checkout-form-username-content.png)![Lietotājvārda lauka parametri](/img/config/checkout-form-username-visibility.png)![Lietotājvārda lauka papildu iestatījumi](/img/config/checkout-form-username-style.png)
 
-Jūs varat pievienot tantos solīmes un laukus, kā jums ir nepieciešams. Lai parādītu savus produktus klientiem, lai viņi izvēloties viens no tiem, izmantojiet **Pricing Table** (Cen sniegšanas tabulas) lauku. Ja vēlaties ļaut saviem klientiem izvēlēties šablonu, pievienojiet **Template Selection** (Šablonu izvēles) lauku un tā līdzīgus.
+Varat pievienot tik daudz soļu un lauku, cik nepieciešams. Lai parādītu savus produktus, no kuriem klienti var izvēlēties, izmantojiet cenu tabulas lauku. Ja vēlaties ļaut saviem klientiem izvēlēties veidni, pievienojiet veidnes atlases lauku. Un tā tālāk.
 
-_**Piezīme:** Ja jūs izveidat produktu pēc tam, kad veidats jūsu checkout formā, jums būs jāpievieno tas produktus Cen sniegšanas tabulas sekcijā. Ja jūs to nepievienojat, produkti neparādīsies klientiem reģistrācijas lapā._
+![Norēķinu veidlapas redaktors ar veidnes atlases lauku](/img/config/checkout-form-with-template-field.png)
 
-_**Piezīme 2:** username (vārds lietotāja), email, password (parole), site title (saites nosaukums), site URL (saites adrese), order summary (darba apkopojums), payment (maksājums) un submit button (ievadīt pogas) ir obligāti jāievada checkout formā._
+_**Piezīme:** Ja izveidojat produktu pēc norēķinu veidlapas izveides, produkts būs jāpievieno cenu tabulas sadaļā. Ja to nepievienosiet, produkts neparādīsies jūsu klientiem reģistrācijas lapā._
 
-Kamēr strādājat pie savas checkout formām, jūs vienmēr varat izmantot **Preview** (Pievades skatu) pogu, lai redzētu, kā klientiem parādīsies forma. Jūs varat arī mainīt skatu starp redzamību kā jau eksistents lietotājs vai apmeklētā.
+_**2. piezīme:** lietotājvārds, e-pasts, parole, vietnes nosaukums, vietnes URL, pasūtījuma kopsavilkums, maksājums un iesniegšanas poga ir obligāti lauki, lai izveidotu norēķinu veidlapu._
 
-![Preview butons piegriezums kasinātnes formulāra redaktētā](/img/config/checkout-form-preview-button.png)![Kasinātnes formulāra previews skatīšana kā apmeklējs vai jau eksistents lietotājs](/img/config/checkout-form-preview-modal.png)
+Kamēr strādājat ar savu norēķinu veidlapu, vienmēr varat izmantot priekšskatījuma pogu, lai redzētu, kā jūsu klienti redzēs veidlapu. Varat arī pārslēgt skatu kā esošs lietotājs vai apmeklētājs.
 
-Visbeidzot, **Attiliktās opcijas** (Advanced Options) jūs varat konfigurēt ziņojumu "Paldies" (Thank You) lapai, pievienot skriptus konversiju izsekošanai, pievienot personalizētu CSS stilu savam kasinātnes formulāram vai ierobežot to noteiktos valstīs.
+![Priekšskatījuma poga norēķinu veidlapas redaktorā](/img/config/checkout-form-preview-button.png)![Norēķinu veidlapas priekšskatījums kā apmeklētājam vai esošam lietotājam](/img/config/checkout-form-preview-modal.png)
 
-![Attiliktās opcijas ar Paldies lapas ziņojumu, konversijas sekošanu un personalizētu CSS](/img/config/checkout-form-advanced.png)
+Visbeidzot, sadaļā **Papildu opcijas** varat konfigurēt ziņojumu **Paldies** lapai, pievienot fragmentus reklāmguvumu izsekošanai, pievienot pielāgotu CSS savai norēķinu veidlapai vai ierobežot to noteiktām valstīm.
 
-Jūs varat arī manālie iestatīt vai izslēgt savu kasinātnes formulāru, atspējot šo opciju labajā kolonnā, vai noteikt puslapi formāri pastāvīgi.
+![Papildu opcijas ar Paldies lapu, reklāmguvumu izsekošanu un pielāgotu CSS](/img/config/checkout-form-advanced.png)
 
-![Aktīva pogas un izslēgšanas opcija kasinātnes formulāram](/img/config/checkout-form-active.png)
+Varat arī manuāli iespējot vai atspējot savu norēķinu veidlapu, pārslēdzot šo opciju labajā kolonnā, vai neatgriezeniski dzēst veidlapu.
 
-Neaizmirstiet saglabāt savu kasinātnes formulāru!
+![Aktīvs pārslēgs un dzēšanas opcija norēķinu veidlapai](/img/config/checkout-form-active.png)
 
-![Saglabāt kasinātnes formulāru pogas](/img/config/checkout-form-save.png)
+Neaizmirstiet saglabāt savu norēķinu veidlapu!
 
-Lai saņemtu jūsu formāras shortcode, noklikšķiniet uz **Izveidot shortcode** (Generate Shortcode) un kopējiet rezultātu, kas redzams modalā logā.
+![Poga Saglabāt norēķinu veidlapu](/img/config/checkout-form-save.png)
 
-![Shortcode izveidošanas modalais ar shortcode kopēšanai](/img/config/checkout-form-editor.png)
+Lai iegūtu savas veidlapas shortcode, noklikšķiniet uz **Ģenerēt shortcode** un nokopējiet rezultātu, kas redzams modālajā logā.
 
-_**Piezīme:** Jums būs jāpievieno šis shortcode savai reģistrācijas lapai, lai to kasinātnes formulārs varētu pievienot.*
+![Ģenerēt shortcode modālais logs ar kopējamu shortcode](/img/config/checkout-form-editor.png)
 
-## Presei produktu un templatizes ar URL parametrus:
+_**Piezīme:** Šis shortcode būs jāpievieno jūsu reģistrācijas lapai, lai šī norēķinu veidlapa tiktu tai pievienota._
 
-Ja vēlaties izveidot personalizētas cenas tabulas saviem produktiem un presei kasinātnes formulārā, jūs varat izmantot URL parametrus tam.
+## Produktu un veidņu iepriekšēja atlase, izmantojot URL parametrus: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Plānus (plans):**
+Ja vēlaties izveidot pielāgotas cenu tabulas saviem produktiem un norēķinu veidlapā iepriekš atlasīt produktu vai veidni, ko jūsu klients izvēlas no jūsu cenu tabulas vai veidņu lapas, šim nolūkam varat izmantot URL parametrus.
 
-Dodieties uz **Ultimate Multisite > Products > Select a plan**. Jums jāredzams pogas **Noklikšķiniet kopērt dalīšam saiti** (Click to copy Shareable Link) lapas augšpusē. Tas ir saite, ko varat izmantot, lai presei šo konkrētu plānu savā kasinātnes formulārā.
+### **Plāniem:** {#for-plans}
 
-![Produkta lapa ar dalīšanas saites pogu](/img/config/products-list.png)
+Dodieties uz **Ultimate Multisite > Produkti > Atlasīt plānu**. Lapas augšdaļā vajadzētu redzēt pogu **Noklikšķiniet, lai kopētu kopīgojamu saiti**. Šī ir saite, ko varat izmantot, lai savā norēķinu veidlapā iepriekš atlasītu šo konkrēto plānu.
 
-Piezīts, ka šis dalīšanās saite ir veidarbātīga tikai **Plāniem**. Nevarat izmantot dalīšanās saites paketēm vai pakalpojumiem.
+![Produkta lapa ar kopīgojamas saites pogu](/img/config/products-list.png)
 
-### Tempiem:
+Ņemiet vērā, ka šī kopīgojamā saite ir derīga tikai **Plāniem**. Kopīgojamās saites nevar izmantot paketēm vai pakalpojumiem.
 
-Ja vēlaties iepriekš izvēlēties vietnes tematas formā, kur jūs pieteikties apmeklējot šo URL adresi ar parametru: **?template_id=X**. "X" ir jāmaina ar **vietnes tematas ID numuru**. Šo numuru varat iegūt, dodieties uz **Ultimate Multisite > Sites**.
+### Veidnēm: {#for-templates}
 
-Noklikšķiniet uz **Manage** (Izvēlēties) tieši zem vietnes tēmas, ko vēlaties izmantot. Jūs redzēsiet SITE ID numuru. Izmantojiet šo numuru tikai šīs konkrētās vietnes tēmas prefrontā, lai to iepriekš izvēlotu formā apmeklējot. Mums šajā gadījumā URL parametrs būtu **?template_id=2**.
+Ja vēlaties savā norēķinu veidlapā iepriekš atlasīt vietņu veidnes, savas reģistrācijas lapas URL varat izmantot parametru: **?template_id=X**. "X" ir jāaizstāj ar **vietnes veidnes ID numuru**. Lai iegūtu šo numuru, dodieties uz **Ultimate Multisite > Vietnes**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Noklikšķiniet uz **Pārvaldīt** tieši zem tās vietnes veidnes, kuru vēlaties izmantot. Jūs redzēsiet SITE ID numuru. Vienkārši izmantojiet šo numuru šai konkrētajai vietnes veidnei, lai tā tiktu iepriekš atlasīta jūsu norēķinu veidlapā. Mūsu gadījumā šeit URL parametrs būtu **?template_id=2**.
 
-Izmantojiet, ja vēlaties iepriekš izvēlēties gan produktus un tematas formā apmeklējot. Visu, kas jums jādarīt, ir kopēt dalīšanās saites plāna un pievienot tēmas parametru beigās. Tas izskatīsies kā **www.mynetwork.com/register/premium-plan/?template**_id=2**.
+![Vietņu saraksts, kurā redzams vietnes veidnes ID](/img/config/site-templates-list.png)
+
+Pieņemsim, ka mūsu tīkla vietne ir [**www.mynetwork.com**](http://www.mynetwork.com) un mūsu reģistrācijas lapa ar norēķinu veidlapu atrodas lapā **/register**. Pilnais URL ar iepriekš atlasītu šo vietnes veidni izskatīsies šādi: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Un, ja vēlaties, varat savā norēķinu veidlapā iepriekš atlasīt gan produktus, gan veidnes. Viss, kas jums jādara, ir jānokopē plāna kopīgojamā saite un beigās jāielīmē veidnes parametrs. Tas izskatīsies šādi: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

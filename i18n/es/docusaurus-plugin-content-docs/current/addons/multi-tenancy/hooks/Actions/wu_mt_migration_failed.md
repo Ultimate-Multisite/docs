@@ -4,21 +4,21 @@ title: Acción - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# Acción: wu_mt_migration_failed
+# Acción: wu_mt_migration_failed {#action-wumtmigrationfailed}
 
 Se dispara cuando una migración falla.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $job | `\Migration_Job` | El trabajo de migración fallido. |
 | $message | `string` | Mensaje de error. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L720) en la línea 720

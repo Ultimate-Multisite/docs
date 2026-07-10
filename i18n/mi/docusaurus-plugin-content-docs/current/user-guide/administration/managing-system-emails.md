@@ -3,11 +3,11 @@ title: Karakia Email Whakamana
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kaha Whakamahinga Email System
+# Kaha Whakamahinga Email System {#managing-system-emails}
 
 Ultimate Multisite i whaiiroa email system mō ngā mahi pēnei i whakamārama i te whakapūmau o te whakatū, whakaotanga o rāhui, me ngā whakawhiti i te whānau. Kei te tino pai ki ahau ki te whakahou i ngā template email-i mō te whaiaro kia tutuki i te āhuatanga o koe.
 
-## Whakarongo i Email System
+## Whakarongo i Email System {#viewing-system-emails}
 
 Pāpā i **Ultimate Multisite → Settings** me whakamārama i te tab **Emails** kia whakaatu i ngā whakaritenga related ki ngā email.
 
@@ -21,7 +21,7 @@ E taea ai hoki i a koe te whakawhiti i ngā template email i roto i te whakamār
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Whakarāua Template Email Hou
+## Whakarāua Template Email Hou {#importing-new-email-templates}
 
 He mea nui, he pēnei i ngā wera hou o Ultimate Multisite me ngā add-ons hou, e taea ai ngā template email hou te roa mai i te whakatū. Hei whakatutuki i te mea he pai ana i te mea he tautoko, ka roto i te whakamahi manuia i te import (import) i ngā template hoki.
 
@@ -32,7 +32,7 @@ Mō te import o template email hou:
 3. Whakawhiti i te option **Import Emails** kia whakaatu i ngā template e kaha ana ki te whaiaro
 4. Select i ngā template kua whakatutuki koe me whakamana
 
-## Whakarāua Template Email
+## Whakarāua Template Email {#resetting-email-templates}
 
 Ko te mea, he tino pai te whakarāua (reset) i ngā template email kua whakahou koe kia whakaatu i te mea hou, he tino pai ana i te mea he tautoko. He pēnei i ngā onera rua:
 

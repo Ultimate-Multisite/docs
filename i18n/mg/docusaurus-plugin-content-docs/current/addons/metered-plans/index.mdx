@@ -1,0 +1,117 @@
+---
+title: Drafitra arakaraka ny fampiasana
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Drafitra Refesina {#metered-plans}
+
+Ny addon Ultimate Multisite: Metered Plans dia manova ny fomba andoavanao vola amin'ny mpanjifanao amin'ny alalan'ny fampidirana fahaiza-manao faktiora refesina azo ovaina. Raha tokony ho fetra hentitra tsy azo ihoarana izay manakana ny mpampiasa rehefa mihoatra, dia alefaso ny saram-pihoarana izay mampandoa ho azy ny mpanjifa amin'ny fampiasana fanampiny.
+
+## Endri-javatra fototra {#key-features}
+
+* **Faktiora Refesina**: Ampandoavy ny mpanjifa mifototra amin'ny fampiasana tena izy fa tsy amin'ny ambaratonga raikitra
+* **Fitantanana Pihoarana**: Ampandoavy ho azy ny fampiasana mihoatra ny fetran'ny drafitra
+* **Fanaraha-maso Fampiasana**: Araho maso amin'ny fotoana tena izy ny fanjifan'ny mpanjifa loharanon-karena
+* **Vidiny Azo Ovaina**: Mametraha sara manokana ho an'ny loharanon-karena samihafa (fitahirizana, bandwidth, tranonkala, sns.)
+* **Faktiora Token AI**: Araho sy ampandoavy ny token fidirana sy fivoahana ho an'ny fampiasana AI manerana ny zana-tranonkalan'ny mpanjifa
+* **Famoahana Faktiora Ho Azy**: Mamoròna faktiora ho azy rehefa mihoatra ny tokonan'ny fampiasana
+* **Tatitra Fampiasana**: Fanadihadiana sy tatitra antsipiriany momba ny fampiasana ho an'ny mpanjifa sy ny mpitantana
+
+## Tena Mety Ho An'ny {#perfect-for}
+
+* **Mpanome Hosting**: Manolora drafitra azo ampitomboina izay mitombo miaraka amin'ny filàn'ny mpanjifa
+* **Sehatra SaaS**: Ampandoavy mifototra amin'ny tena fanjifana loharanon-karena
+* **Tambajotran'Agence**: Modely vidiny azo ovaina ho an'ny tetikasan'ny mpanjifa
+* **Reseller Hosting**: Avelao ny mpiara-miombon'antoka hanolotra vidiny mifototra amin'ny fampiasana
+
+## Fomba Fiasany {#how-it-works}
+
+1. Amboary ny loharanon-karena refesina (habaka kapila, bandwidth, isan'ny tranonkala, sns.)
+2. Mametraha fetra fototra amin'ny drafitra sy sara pihoarana
+3. Manara-maso ho azy ny fampiasana manerana ny tambajotranao ny rafitra
+4. Rehefa mihoatra ny fetra ny mpanjifa dia kajiana ny saram-pihoarana
+5. Mamorona faktiora ho azy mifototra amin'ny tsingerin'ny faktiora
+6. Afaka mijery ny fampiasany sy ny sara ho avy amin'ny fotoana tena izy ny mpanjifa
+
+## Faktiora Token AI {#ai-token-billing}
+
+Ny kinova 1.1.0 dia manampy faktiora token AI ho an'ny tambajotra izay manolotra endri-javatra AI amin'ny alalan'ny WordPress AI Client SDK. Metered Plans dia mihaino fangatahana famoronana AI vita, mirakitra ny isan'ny token fidirana sy fivoahana ho an'ny zana-tranonkala ankehitriny, ary mamadika ireo token ireo ho fandaniana AI azo ampandoavina ho an'ny fe-potoana faktiora ankehitriny an'ny mpanjifa.
+
+Ampiasao ny faktiora token AI rehefa te hanolotra fitaovana AI amin'ny tranonkalan'ny mpanjifa ianao nefa tsy hitondra ny vidin'ny maodely tsy azo vinaniana. Ny fangatahana tsirairay dia ampifandraisina amin'ny zana-tranonkala, mpanjifa, membership, provider, ary maodely mba hahafahan'ny mpitantana manara-maso ny fampiasana, raha afaka mahita kosa ny mpanjifa ny fiantraikan'ny fanjifany AI amin'ny Account-ny.
+
+### Amboary ny Sara Isaky ny Token {#configure-per-token-rates}
+
+Ny sara AI dia amboarina isaky ny maodely ho sara fidirana sy fivoahana misaraka. Kajiana isaky ny token 1 tapitrisa ny sara, izay mifanaraka amin'ny pejin'ny vidin'ny mpanome AI mahazatra.
+
+1. Ao amin'ny mpitantana tambajotra, sokafy ny **Multisite Ultimate → Fikirana → Metered Plans**.
+2. Alefaso ny fandrefesana fandaniana AI ho an'ny vokatra na membership izay tokony hampandoa ny fampiasana AI.
+3. Ampio fidirana sara maodely amin'ny fampiasana ny ID maodely averin'ny connector-nao, toy ny `gpt-4o`, `gpt-4o-mini`, na mpamantatra maodely hafa mifanaraka amin'ny OpenAI.
+4. Ampidiro misaraka ny sanda **Sara Fidirana** sy **Sara Fivoahana** amin'ny volan'ny tranonkalanao isaky ny token 1 tapitrisa.
+5. Apetraho ny tambin-dandaniana AI tafiditra ho an'ny mpanjifa sy ny fitondran-tena amin'ny pihoarana ho an'ny drafitra.
+
+Rehefa tsy voaamboatra ny ID maodely tena izy, Metered Plans dia afaka mampifanaraka amin'ny alalan'ny tovona maodely. Ohatra, ny sara voaamboatra ho an'ny `claude-sonnet-4` dia afaka mihatra amin'ny ID maodely misy mari-potoana izay manomboka amin'io tovona io. Afaka manitsy koa ny tabilao sara farany amin'ny alalan'ny sivana [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) ny mpamorona.
+
+### Connector AI Tohanana {#supported-ai-connectors}
+
+Ny faktiora token AI dia miasa amin'ny connector izay mamoaka hetsika famoronana WordPress AI Client SDK ary mampiditra ny fampiasana token ao amin'ny metadata an'ny valiny. Tafiditra amin'izany ny fianakavian'ny connector Ultimate Multisite AI voarakitra eto:
+
+* [Ultimate AI Connector ho an'ny Endpoint Mifanaraka](../ultimate-ai-connector-compatible-endpoints/) ho an'ny API mifanaraka amin'ny OpenAI, ao anatin'izany ny OpenAI, Mistral, vavahady mifanaraka amin'ny Ollama, ary mpanome hafa izay mampiseho metadata fampiasana token mifanaraka
+* [Ultimate AI Connector ho an'ny WebLLM](../ultimate-ai-connector-webllm/) ho an'ny fampiasana WebLLM voajanahary amin'ny navigateur rehefa ampandalovina amin'ny fikorianan'ny hetsika AI Client SDK ny fangatahana
+* Connector mpanome AI ampiasain'ny [Gratis AI Agent](../gratis-ai-agent/) rehefa mitatitra ny isan'ny token prompt sy completion amin'ny alalan'ny SDK ny mpanome voafantina
+
+Afaka mandray anjara ny connector manokana amin'ny alalan'ny fandefasana ny hetsika mahazatra `wp_ai_client_before_generate_result` sy `wp_ai_client_after_generate_result` miaraka amin'ny metadata maodely, provider, ary fampiasana token. Ny fikirakiran'ny connector dia ampiharina avy amin'ny tranonkala fototra mankany amin'ny zana-tranonkala mba hampiasan'ny tranonkalan'ny mpanjifa ireo provider sy fetra nankatoavin'ny tambajotra.
+
+### Fampiasana Account an'ny Mpanjifa {#customer-account-usage}
+
+Hitan'ny mpanjifa miaraka amin'ireo loharanon-karena refesina hafa ao amin'ny faritra Account-ny ny fampiasana AI. Ny andalana fandaniana AI dia mampiseho ny fitambaran'ny fe-potoana faktiora ankehitriny azo avy amin'ny token prompt sy completion voarakitra, ny sara maodely voaamboatra, ary izay tambin-danjany tafiditra ao amin'ny drafitra.
+
+Raha manana fomba fandoavam-bola voatahiry ny mpanjifa, ny fampiasana mihoatra ny tambin-danjany tafiditra dia raisina ho pihoarana azo ampandoavina. Raha voaamboatra ho fanapahana hentitra ny drafitra ary tsy manana fomba fandoavam-bola misy ny mpanjifa, dia azo sakanana ny fangatahana AI rehefa tratra ny tambin-danjany ary angatahina ny mpanjifa hanampy antsipirian'ny fandoavam-bola alohan'ny hanohizana.
+
+## Loharanon-karena Tohanana {#supported-resources}
+
+* Fitahirizana kapila
+* Bandwidth/Famindrana angona
+* Isan'ny tranonkala
+* Isan'ny mpampiasa
+* Fampiasana token AI sy fandaniana AI
+* Karazana loharanon-karena manokana
+
+## Fepetra Takiana {#requirements}
+
+* Multisite Ultimate 2.0.0 na ambony
+* Fametrahana WordPress Multisite
+* PHP 7.4 na ambony
+
+## Fametrahana {#installation}
+
+1. Ampidiro any amin'ny `/wp-content/plugins/ultimate-multisite-metered-plans` ny rakitry ny fanitarana
+2. Alefaso ny fanitarana amin'ny alalan'ny efijery 'Fanitarana' ao amin'ny WordPress
+3. Mandehana any amin'ny Multisite Ultimate → Fikirana → Metered Plans
+4. Amboary ny loharanon-karena refesinao sy ny vidiny
+5. Alefaso ny faktiora refesina ho an'ny vokatra ao amin'ny mpanitsy vokatra
+
+## Fanontaniana Apetraka Matetika {#frequently-asked-questions}
+
+## Inona no mitranga rehefa mihoatra ny fetrany ny mpanjifa? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Raha tokony hanakana ny fidirana, ny rafitra dia manara-maso ny fihoarana ary manampy izany amin’ny faktiora manaraka azy ireo araka ny taha napetrakao.
+
+## Afaka mametraka taha fihoarana samihafa ho an’ny vokatra samihafa ve aho? {#can-i-set-different-overage-rates-for-different-products}
+
+Eny, ny vokatra tsirairay dia afaka manana loharano refesina sy vidin’ny fihoarana manokana.
+
+## Ahoana no ampahafantarana ny mpanjifa momba ny fampiasana? {#how-are-customers-notified-about-usage}
+
+Afaka mijery ny fampiasany amin’izao fotoana izao ao amin’ny dashboard-ny ny mpanjifa ary mahazo fampahafantarana tsy voatery rehefa manakaiky na mihoatra ny fetra.
+
+## Ahoana no fametrahana ny vidin’ny fampiasana token AI? {#how-is-ai-token-usage-priced}
+
+Ny fampiasana token AI dia vidiana avy amin’ny taha fidirana sy fivoahana voaendrika ho an’ilay maodely isaky ny token 1 tapitrisa. Metered Plans dia mampitombo ny isan’ny token prompt sy completion amin’ny fangatahana tsirairay amin’ireo taha ireo, manampy ny vokatra amin’ny fandaniana AI amin’ny vanim-potoana faktioran’ny mpanjifa amin’izao fotoana izao, ary mampihatra ny allowance na fitsipika fihoarana an’ilay drafitra.
+
+## Afaka mbola mampiasa fetra henjana ve aho? {#can-i-still-use-hard-limits}
+
+Eny, tsy voatery isaky ny vokatra ny billing refesina. Afaka mampifangaro vokatra misy fetra henjana nentim-paharazana amin’ny vokatra refesina ianao.

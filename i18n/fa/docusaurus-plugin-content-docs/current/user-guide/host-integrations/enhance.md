@@ -3,33 +3,33 @@ title: تقویت یکپارچه‌سازی پنل کنترل
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# یکپارچه‌سازی با کنترل پنل Enhance
+# یکپارچه‌سازی با کنترل پنل Enhance {#enhance-control-panel-integration}
 
-## نمای کلی
+## نمای کلی {#overview}
 Enhance یک کنترل پنل مدرن است که قابلیت‌های قدرتمندی برای اتوماسیون و مدیریت هاست ارائه می‌دهد. این یکپارچه‌سازی امکان همگام‌سازی خودکار دامنه و مدیریت گواهی SSL را بین Ultimate Multisite و کنترل پنل Enhance فراهم می‌کند.
 
 **بحث مرتبط:** برای نکات انجمن و اطلاعات بیشتر، [بحث #265 در GitHub](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) را ببینید.
 
-## ویژگی‌ها
+## ویژگی‌ها {#features}
 - همگام‌سازی خودکار دامنه هنگام mapping دامنه‌ها در Ultimate Multisite
 - صدور خودکار گواهی SSL از طریق LetsEncrypt پس از resolve شدن DNS
 - پشتیبانی از subdomain برای شبکه‌هایی که در حالت subdomain اجرا می‌شوند
 - حذف دامنه هنگام پاک شدن mapping‌ها
 - تست اتصال برای بررسی اعتبار API credentials
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
-### پیش‌نیازهای سیستم
+### پیش‌نیازهای سیستم {#system-requirements}
 - کنترل پنل Enhance نصب شده و قابل دسترسی
 - نصب WordPress Multisite که روی سرور Enhance میزبانی شده یا به آن متصل است
 - وب‌سرور Apache (Enhance در حال حاضر از تنظیمات Apache پشتیبانی می‌کند؛ LiteSpeed Enterprise با هزینه کمتر در دسترس است)
 
-### دسترسی API
+### دسترسی API {#api-access}
 برای ایجاد توکن‌های API باید دسترسی مدیریتی به کنترل پنل Enhance داشته باشید.
 
-## دریافت اطلاعات API
+## دریافت اطلاعات API {#getting-your-api-credentials}
 
-### ۱. ایجاد توکن API
+### ۱. ایجاد توکن API {#1-create-an-api-token}
 
 1. به عنوان مدیر وارد کنترل پنل Enhance شوید
 2. روی **Settings** در منوی ناوبری کلیک کنید
@@ -44,7 +44,7 @@ Enhance یک کنترل پنل مدرن است که قابلیت‌های قدر
 
 پس از ایجاد، **Access Token** و **Organization ID** شما نمایش داده می‌شود. **فوراً این‌ها را ذخیره کنید** چون توکن فقط یک‌بار نشان داده می‌شود.
 
-### ۲. دریافت Organization ID
+### ۲. دریافت Organization ID {#2-get-your-organization-id}
 
 Organization ID در صفحه Access Tokens در یک کادر اطلاعاتی آبی با برچسب "Org ID: {your_id}" نمایش داده می‌شود.
 
@@ -55,7 +55,7 @@ Organization ID یک UUID با فرمت مشابه این است: `d8554b6d-5d0d
 2. روی **Manage customer** برای مشتری مورد نظر کلیک کنید
 3. به URL نگاه کنید - Organization ID همان کاراکترهای الفبایی-عددی بعد از `/customers/` است
 
-### ۳. دریافت Server ID
+### ۳. دریافت Server ID {#3-get-your-server-id}
 
 برای پیدا کردن Server ID (که برای عملیات دامنه لازم است):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID از فرمت UUID پیروی می‌کند: `00000000-0000-0000-0000-000000000000`
 
-### ۴. دریافت URL API
+### ۴. دریافت URL API {#4-get-your-api-url}
 
 URL API شما همان URL کنترل پنل Enhance است که `/api/` به آن اضافه شده:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - استفاده از دامنه بدون `/api/`
 - استفاده از HTTP به جای HTTPS (HTTPS برای امنیت الزامی است)
 
-## پیکربندی
+## پیکربندی {#configuration}
 
-### ثابت‌های الزامی
+### ثابت‌های الزامی {#required-constants}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### راه‌اندازی از طریق ویزارد یکپارچه‌سازی
+### راه‌اندازی از طریق ویزارد یکپارچه‌سازی {#setup-via-integration-wizard}
 
 1. در پنل مدیریت WordPress، به **Ultimate Multisite** > **Settings** بروید
 2. به تب **Integrations** بروید
@@ -112,17 +112,17 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - اجازه دهید ویزارد ثابت‌ها را به‌صورت خودکار به فایل `wp-config.php` تزریق کند
 - تعریف ثابت‌ها را کپی کرده و به‌صورت دستی اضافه کنید
 
-## پیکربندی‌های اضافی WordPress
+## پیکربندی‌های اضافی WordPress {#additional-wordpress-configuration}
 
 بر اساس بازخورد انجمن ([بحث #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265))، ممکن است نیاز به پیکربندی این تنظیمات اضافی داشته باشید:
 
-### پیکربندی .htaccess
+### پیکربندی .htaccess {#htaccess-configuration}
 
 اگر با domain mapping مشکل دارید:
 1. فایل `.htaccess` اصلی Enhance را حذف کنید
 2. آن را با فایل `.htaccess` استاندارد WordPress Multisite جایگزین کنید
 
-### ثابت‌های Cookie
+### ثابت‌های Cookie {#cookie-constants}
 
 این ثابت‌ها را به `wp-config.php` اضافه کنید تا مدیریت صحیح cookie در دامنه‌های map شده تضمین شود:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## نحوه کار
+## نحوه کار {#how-it-works}
 
-### وقتی یک دامنه Map می‌شود
+### وقتی یک دامنه Map می‌شود {#when-a-domain-is-mapped}
 
 1. کاربر یک دامنه سفارشی را در Ultimate Multisite map می‌کند (یا یک سایت جدید در حالت subdomain ایجاد می‌شود)
 2. یکپارچه‌سازی یک درخواست POST به API Enhance ارسال می‌کند: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. وقتی DNS به سرور شما resolve می‌شود، Enhance به‌صورت خودکار یک گواهی SSL از طریق LetsEncrypt صادر می‌کند
 5. دامنه با HTTPS فعال می‌شود
 
-### وقتی یک دامنه حذف می‌شود
+### وقتی یک دامنه حذف می‌شود {#when-a-domain-is-removed}
 
 1. یک domain mapping در Ultimate Multisite حذف می‌شود
 2. یکپارچه‌سازی از Enhance برای پیدا کردن ID دامنه پرس‌وجو می‌کند
 3. یک درخواست DELETE به این آدرس ارسال می‌شود: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance دامنه را از پیکربندی سرور شما حذف می‌کند
 
-### بررسی DNS و SSL
+### بررسی DNS و SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 - می‌توانید فاصله بررسی را در **Domain Mapping Settings** پیکربندی کنید (پیش‌فرض: ۳۰۰ ثانیه/۵ دقیقه)
@@ -157,9 +157,9 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 - اعتبار گواهی SSL به‌صورت خودکار بررسی می‌شود
 - Enhance صدور SSL را به‌صورت خودکار انجام می‌دهد، بنابراین پیکربندی دستی SSL نیاز نیست
 
-## تأیید راه‌اندازی
+## تأیید راه‌اندازی {#verifying-setup}
 
-### تست اتصال
+### تست اتصال {#test-the-connection}
 
 1. در ویزارد یکپارچه‌سازی، از مرحله **Test Connection** استفاده کنید
 2. افزونه سعی می‌کند دامنه‌های روی سرور شما را لیست کند
@@ -169,7 +169,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
    - Server ID معتبر است
    - مجوزها به‌درستی تنظیم شده‌اند
 
-### پس از Map کردن یک دامنه
+### پس از Map کردن یک دامنه {#after-mapping-a-domain}
 
 1. یک دامنه تست در Ultimate Multisite map کنید
 2. لاگ‌های Ultimate Multisite را بررسی کنید (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
    - دامنه جدید باید در لیست ظاهر شود
 4. پس از انتشار DNS، بررسی کنید که SSL به‌صورت خودکار صادر شده است
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### مشکلات اتصال API
+### مشکلات اتصال API {#api-connection-issues}
 
 **خطا: "Failed to connect to Enhance API"**
 - بررسی کنید که `WU_ENHANCE_API_URL` شامل `/api/` در انتها باشد
@@ -198,7 +198,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 - مطمئن شوید که Server ID با فرمت UUID معتبر باشد
 - تأیید کنید که سرور در پنل Enhance شما وجود دارد
 
-### دامنه اضافه نشده
+### دامنه اضافه نشده {#domain-not-added}
 
 **لاگ‌ها را بررسی کنید:**
 1. به **Ultimate Multisite** > **Logs** بروید
@@ -211,7 +211,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 - مجوزهای API ناکافی (مطمئن شوید توکن نقش System Administrator دارد)
 - Server ID با سرور واقعی در Enhance مطابقت ندارد
 
-### مشکلات گواهی SSL
+### مشکلات گواهی SSL {#ssl-certificate-issues}
 
 **SSL صادر نمی‌شود:**
 - بررسی کنید که DNS به آدرس IP سرور شما اشاره می‌کند
@@ -225,7 +225,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 2. دامنه خود را پیدا کنید و وضعیت SSL آن را بررسی کنید
 3. در صورت نیاز می‌توانید صدور SSL را به‌صورت دستی فعال کنید
 
-### فاصله بررسی DNS
+### فاصله بررسی DNS {#dns-check-interval}
 
 اگر فعال‌سازی دامنه‌ها یا گواهی‌های SSL بیش از حد طول می‌کشد:
 1. به **Ultimate Multisite** > **Settings** > **Domain Mapping** بروید
@@ -233,7 +233,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 3. از مقدار پیش‌فرض ۳۰۰ ثانیه به مقدار کمتر تغییر دهید (حداقل: ۱۰ ثانیه)
 4. **توجه:** فواصل کمتر یعنی بررسی‌های مکررتر اما بار سرور بیشتر
 
-### خطاهای احراز هویت
+### خطاهای احراز هویت {#authentication-errors}
 
 **خطاهای HTTP 401/403:**
 - توکن API خود را در Enhance مجدداً ایجاد کنید
@@ -241,7 +241,7 @@ Ultimate Multisite شامل بررسی داخلی DNS و SSL است:
 - بررسی کنید که توکن منقضی نشده باشد
 - مطمئن شوید که از Organization ID صحیح استفاده می‌کنید (گرچه معمولاً در URL نیاز نیست)
 
-### تحلیل لاگ
+### تحلیل لاگ {#log-analysis}
 
 ثبت جزئیات بیشتر را فعال کنید:
 ```php
@@ -255,15 +255,15 @@ define('WP_DEBUG_LOG', true);
 - لاگ دیباگ WordPress: `wp-content/debug.log`
 - لاگ‌های پنل Enhance: در رابط مدیریت Enhance در دسترس است
 
-## مرجع API
+## مرجع API {#api-reference}
 
-### احراز هویت
+### احراز هویت {#authentication}
 تمام درخواست‌های API از احراز هویت Bearer token استفاده می‌کنند:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Endpoint‌های پرکاربرد
+### Endpoint‌های پرکاربرد {#common-endpoints-used}
 
 **لیست سرورها:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### مستندات کامل API
+### مستندات کامل API {#full-api-documentation}
 مستندات کامل API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## بهترین روش‌ها
+## بهترین روش‌ها {#best-practices}
 
-### امنیت
+### امنیت {#security}
 - **هرگز توکن‌های API را در version control کامیت نکنید**
 - توکن‌ها را در `wp-config.php` ذخیره کنید که باید از Git مستثنی شود
 - از توکن‌ها با مجوزهای مناسب استفاده کنید (System Administrator برای یکپارچه‌سازی کامل)
 - برای محیط‌های production تاریخ انقضا تنظیم کنید
 - توکن‌ها را به‌صورت دوره‌ای تغییر دهید
 
-### کارایی
+### کارایی {#performance}
 - از فاصله بررسی DNS پیش‌فرض (۳۰۰ ثانیه) استفاده کنید تا از تماس‌های بیش از حد API جلوگیری شود
 - منابع سرور Enhance را هنگام اجرای عملیات دامنه در مقیاس بزرگ نظارت کنید
 - اگر دامنه‌های زیادی را همزمان map می‌کنید، افزودن دامنه‌ها را پراکنده کنید
 
-### نظارت
+### نظارت {#monitoring}
 - به‌طور منظم لاگ‌های Ultimate Multisite را برای خطاهای یکپارچه‌سازی بررسی کنید
 - نظارت بر افزودن‌های ناموفق دامنه را راه‌اندازی کنید
 - بررسی کنید که گواهی‌های SSL به‌درستی صادر می‌شوند
 - ظرفیت سرور Enhance و محدودیت‌های دامنه را زیر نظر داشته باشید
 
-## منابع اضافی
+## منابع اضافی {#additional-resources}
 
 - **مستندات رسمی Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **مستندات API Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **بحث GitHub:** [Issue #265 - نکات یکپارچه‌سازی Enhance](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **راهنمای Domain Mapping Ultimate Multisite:** صفحه ویکی "How to Configure Domain Mapping v2" را ببینید
 
-## پشتیبانی
+## پشتیبانی {#support}
 
 اگر با مشکلی مواجه شدید:
 1. بخش عیب‌یابی بالا را بررسی کنید
@@ -326,7 +326,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 4. برای مشکلات مربوط به پنل، با پشتیبانی Enhance تماس بگیرید
 5. یک بحث جدید با لاگ‌های خطای دقیق برای کمک انجمن ایجاد کنید
 
-## یادداشت‌ها
+## یادداشت‌ها {#notes}
 
 - این یکپارچه‌سازی فقط alias‌های دامنه را مدیریت می‌کند؛ Enhance به‌صورت خودکار SSL را مدیریت می‌کند
 - یکپارچه‌سازی هم از domain mapping‌های سفارشی و هم از سایت‌های مبتنی بر subdomain پشتیبانی می‌کند

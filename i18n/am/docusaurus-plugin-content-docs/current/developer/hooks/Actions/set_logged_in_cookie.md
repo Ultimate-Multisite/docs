@@ -4,11 +4,11 @@ title: ድርጊት - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 የተመዘገበ የማረጋገጫ ኩኪ (cookie) ከመቅረጹ በፊት ወዲያውኑ ይሰራል።
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | የማረጋገጫ ስхема (Authentication scheme)። መነሻው 'logged_in' ነው። |
 | $token | `string` | ለዚህ ኩኪ የሚያገለግለው የተጠቃሚ የሴሽን ቶከን (session token)። |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> መለኪያው ተጨመረ።
-### Source
+### Source {#source}
 
 በ[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ላይ በ141ኛው መስመር ተገልጿል።

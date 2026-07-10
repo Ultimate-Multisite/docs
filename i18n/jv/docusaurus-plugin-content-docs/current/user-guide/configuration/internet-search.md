@@ -3,17 +3,17 @@ title: Pencarian Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Pencarian Internet
+# Pencarian Internet {#internet-search}
 
 Gratis AI Agent v1.5.0 nambah kemampuan **Internet Search** sing ngidini asisten AI njupuk informasi anyar saka web nalika lagi ngobrol karo kowe. Iki diwujudake nganggo [Brave Search API](https://brave.com/search/api/) utawa [Tavily API](https://tavily.com/).
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
 Nalika internet search diaktifake, asisten bisa otomatis nanya marang penyedia pencarian sing wis dikonfigurasi nalika dhewe ngerti yen sawijining pitakonan butuh informasi anyar utawa saka njaba — contone berita anyar, harga langsung (live pricing), utawa dokumentasi sing mungkin wis owah wiwit model kasebut dilatih.
 
 Hasil bakal dijangkau wektu nyata lan dimasukkan menyang konteks asisten sadurunge dhewe nggawe balesan. Asisten bakal nuduhake kapan dhewe wis nggunakake hasil pencarian kanggo mangsuli pitakonan.
 
-## Ngaktifake Internet Search
+## Ngaktifake Internet Search {#enabling-internet-search}
 
 Internet search mbutuh kunci API saka penyedia pencarian sing dipilih. Kanggo ngatur iki:
 
@@ -24,35 +24,35 @@ Internet search mbutuh kunci API saka penyedia pencarian sing dipilih. Kanggo ng
 
 Sawise kunci wis disimpan, kemampuan Internet Search otomatis wis bisa diakses dening asisten.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Nggoleki Kunci API Brave Search
+### Nggoleki Kunci API Brave Search {#obtaining-a-brave-search-api-key}
 
 1. Tindakake [Brave Search API page](https://brave.com/search/api/).
 2. Daftar kanggo paket. Ana tingkatan gratis sing duwe batas permintaan saben sasi.
 3. Salin kunci API-mu saka developer dashboard Brave Search.
 4. Tempelake ing kolom **Brave Search API Key** ing pengaturan Gratis AI Agent.
 
-### Batasan Penggunaan
+### Batasan Penggunaan {#usage-limits}
 
 Penggunaan dihitung berdasarkan jumlah kueri yang dibuat oleh Brave Search. Setiap respons AI yang memicu pencarian akan dihitung sebagai satu kueri. Pantau penggunaan Anda di [dashboard pengembang Brave Search](https://brave.com/search/api/) untuk menghindari biaya tak terduga.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0 menambahkan **Tavily** sebagai penyedia pencarian internet alternatif, yang menawarkan hasil pencarian lebih kaya dan kemampuan riset yang lebih canggih.
 
-### Mendapatkan Kunci API Tavily
+### Mendapatkan Kunci API Tavily {#obtaining-a-tavily-api-key}
 
 1. Kunjungi [halaman API Tavily](https://tavily.com/).
 2. Daftar untuk akun. Ada tingkatan gratis dengan batas permintaan bulanan.
 3. Salin kunci API Anda dari dashboard Tavily.
 4. Tempelkan ke kolom **Tavily API Key** di pengaturan Gratis AI Agent.
 
-### Batas Penggunaan
+### Batas Penggunaan {#usage-limits-1}
 
 Penggunaan dihitung berdasarkan jumlah panggilan API yang dibuat oleh Tavily. Setiap respons AI yang memicu pencarian akan dihitung sebagai satu panggilan. Pantau penggunaan Anda di [dashboard Tavily](https://tavily.com/) untuk menghindari biaya tak terduga.
 
-## Menonaktifkan Pencarian Internet
+## Menonaktifkan Pencarian Internet {#disabling-internet-search}
 
 Hapus kunci API dari kolom penyedia pencarian aktif dan simpan. Kemampuan Pencarian Internet tidak akan lagi ditawarkan kepada asisten.
 

@@ -1,22 +1,22 @@
 ---
 title: Kugadzirwa neHosteringer (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrasyon Hostinger (hPanel)
+# Integrasyon Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 Hostinger, modern bir kontrol paneli olan hPanel ile popüler bir web barındırma sağlayıcısıdır. Ultimate Multisite Hostinger entegrasyonu, Ultimate Multisite ve Hostinger'ın hPanel arasındaki alan adlarını otomatik senkronize etmenizi sağlar; böylece WordPress admin panelinizden alan adı eşleştirmelerini ve alt alan adlarını doğrudan yönetebilirsiniz.
 
-## Özellikler
+## Özellikler {#features}
 
 - hPanel'de otomatik eklenti alan adı oluşturma
 - hPanel'de otomatik alt alan adı oluşturma (alt alan adı multisite kurulumları için)
 - Eşleştirmeler silindiğinde alan adının kaldırılması
 - hPanel'in alan adı yönetim API'si ile sorunsuz entegrasyon
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 Hostinger entegrasyonunu kullanmak için şunlara ihtiyacınız var:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Varsayılan API uç noktası
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. Hostinger API Tokeninizi Oluşturun
+### 1. Hostinger API Tokeninizi Oluşturun {#1-generate-your-hostinger-api-token}
 
 1. Hostinger hesabınıza giriş yapın ve hPanel'e erişin
 2. **Hesap Ayarları** → **API Tokenleri** bölümüne gidin
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Varsayılan A
    - Alt alan adı yönetimi
 6. Oluşturulan tokeni kopyalayın ve güvenli bir yerde saklayın
 
-### 2. Hesap Kimliğinizi Bulun
+### 2. Hesap Kimliğinizi Bulun {#2-find-your-account-id}
 
 1. hPanel'de, **Hesap Ayarları** → **Hesap Bilgileri** bölümüne gidin
 2. Hesap Kimliğiniz bu sayfada gösterilir
 3. Bir sonraki adım için bu kimliği kopyalayın ve kaydedin
 
-### 3. wp-config.php'ye Sabitleri Ekleyin
+### 3. wp-config.php'ye Sabitleri Ekleyin {#3-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -69,7 +69,7 @@ Kana aka yako inoratidzo kuti ndiri munhu anogona kuva. Kana aka ya Hostinger ya
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Chivisa Integration (Enable the Integration)
+### 4. Chivisa Integration (Enable the Integration) {#4-enable-the-integration}
 
 1. Mu admin ya WordPress yako, ndirira ku **Ultimate Multisite > Settings**
 2. Ndira ku tab ye **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Chivisa integration ya **Hostinger (hPanel)**
 5. Click **Save Changes**
 
-## Izwi Inogona Kuenda Sei (How It Works)
+## Izwi Inogona Kuenda Sei (How It Works) {#how-it-works}
 
-### Addon Domains (Domains Zvinotevera)
+### Addon Domains (Domains Zvinotevera) {#addon-domains}
 
 Kana uri kutaura domain mu Ultimate Multisite:
 
@@ -90,11 +90,11 @@ Kana uri kutaura domain mu Ultimate Multisite:
 - Chinangwa kuti API token yako inenge nekuvaka zvinhu zvakakosha kune kuramba kwemudzi (domain management)
 - Chinjeni kuti account yako ya Hostinger inoratidza uye inenge yakapfuma
 
-### Domain Haingazovera
+### Domain Haingazovera {#subdomains}
 
 - Chinjeni Ultimate Multisite logs kuti pane matsviki ekutanga (error messages)
 - Chinangwa kuti domain haingazovera kuva kune akaunti yako ya Hostinger
 - Chinangwa kuti account yako ya Hostinger haingazovera kufika kuunwa kwake kweaddon domains
 - Chinjeni kuti domain inotevera zvakanaka ku nameservers dzako dzinoramba
 
-### Matambudziko ekuti SSL Certificate Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge In
+### Matambudziko ekuti SSL Certificate Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge Inenge In {#important-notes}

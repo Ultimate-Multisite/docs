@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite és un plugin de WordPress Multisite que et permet oferir un servei de Websites as a Service (WaaS) als teus clients. Abans de fer un meritat buceo per aprendre com Ultimate Multisite pot ajudar el teu negoci i els teus clients, hi ha coneixements fonamentals que hem de adquirir.
 
-## El WordPress Multisite
+## El WordPress Multisite {#the-wordpress-multisite}
 
 La major part de nosaltres estem familiaritzats amb l'instal·lació estàndard de WordPress. O ho crees a través del panell de control del teu proveïdor d'hosting o, per als més audents, et configura un nou servidor web i base de dades, descarregues els fitxers bàsics i et comences el procés d'instal·lació.
 
@@ -21,13 +21,13 @@ En essència, un WordPress multisite es pot considerar així: Una Universitat ma
 
 Per desglossar aquesta afirmació, examinem algun dels terminis bàsics que es troben no només en la documentació d'Ultimate Multisite, sinó també a nivell de la comunitat de WordPress.
 
-### La Xarxa (The Network)
+### La Xarxa (The Network) {#the-network}
 
 En termes de WordPress, una xarxa multisite és on es poden gestionar múltiples subsites des d'un únic dashboard. Tot i que crear una xarxa multisite difereix entre proveïdors d'hosting, el resultat final són normalment unes quantes directives addicionals al fitxer wp-config.php per fer saber a WordPress que està operant en aquest mode específic.
 
 Hi ha diverses diferències notables entre una xarxa multisite i una instal·lació de WordPress independent. Les discutirem breument.
 
-#### Subdomini vs. Subdirectori
+#### Subdomini vs. Subdirectori {#subdomain-vs-subdirectory}
 
 Una de les decisions més immediates que hauràs de prendre és si l'instal·lació multisite operarà amb _subdirectories_ o _subdomains_. Ultimate Multisite funciona igual de bé amb les dues opcions, però hi ha diferències arquitectòniques entre les dues configuracions.
 
@@ -43,7 +43,7 @@ En la configuració de _subdomain_, l'ús d'un certificat SSL wildcard és una d
 
 Tot i que existeixen altres opcions, aquestes sovint són limitades en qutde i aplicació i requereixen configuració i consideració addicionals en relació amb la seva adequació.
 
-#### Plugins i Temes
+#### Plugins i Temes {#plugins-and-themes}
 
 WordPress també ens dona i ens quita, almenys des de la perspectiva del client. En una instal·lació de WordPress independent, si l'administrador del site instal·la un plugin deficient o no manté la seva instal·lació actualitzada, l'únic víctima i la víctima d'aquest acte són els propis. No obstant això, un administrador del site que instal·la un plugin deficient en una instal·lació multisite crea una víctima per a cada site instal·lat a la xarxa.
 
@@ -51,47 +51,47 @@ Per aquesta raó, quan es configura com a multisite, WordPress elimina la capaci
 
 Aquest nivell, l'administrador de la xarxa és responsable de gestionar els plugins.
 
-#### 1. Configuració de la xarxa.
+#### 1. Configuració de la xarxa. {#users-and-administrators}
 
-#### 2. Configuració de la xarxa.
+#### 2. Configuració de la xarxa. {#media}
 
-#### 3. Configuració de la xarxa.
+#### 3. Configuració de la xarxa. {#permalinks}
 
-#### 4. Configuració de la xarxa.
+#### 4. Configuració de la xarxa. {#static-pages}
 
-#### 5. Configuració de la xarxa.
+#### 5. Configuració de la xarxa. {#registration}
 
-#### 6. Configuració de la xarxa.
+#### 6. Configuració de la xarxa. {#domain-and-ssl}
 
-#### 7. Configuració de la xarxa.
+#### 7. Configuració de la xarxa. {#ultimate-multisite}
 
-#### 8. Configuració de la xarxa.
+#### 8. Configuració de la xarxa. {#introduction}
 
-#### 9. Configuració de la xarxa.
+#### 9. Configuració de la xarxa. {#use-cases}
 
-#### 10. Configuració de la xarxa.
+#### 10. Configuració de la xarxa. {#case-1-an-agency}
 
-#### 11. Configuració de la xarxa.
+#### 11. Configuració de la xarxa. {#case-2-niche-provider}
 
-#### 12. Configuració de la xarxa.
+#### 12. Configuració de la xarxa. {#case-3-wordpress-web-hosting}
 
-#### 13. Configuració de la xarxa.
+#### 13. Configuració de la xarxa. {#architecture-considerations}
 
-#### 14. Configuració de la xarxa.
+#### 14. Configuració de la xarxa. {#shared-vs-dedicated-hosting}
 
-#### 15. Configuració de la xarxa.
+#### 15. Configuració de la xarxa. {#performance-considerations}
 
-#### 16. Configuració de la xarxa.
+#### 16. Configuració de la xarxa. {#backups}
 
-#### 17. Configuració de la xarxa.
+#### 17. Configuració de la xarxa. {#snapshots}
 
-#### 18. Configuració de la xarxa.
+#### 18. Configuració de la xarxa. {#external-scripts}
 
-#### 19. Configuració de la xarxa.
+#### 19. Configuració de la xarxa. {#plugins}
 
-#### 20. Configuració de la xarxa.
+#### 20. Configuració de la xarxa. {#domain-and-ssl-1}
 
-#### 21. Configuració de la xarxa.
+#### 21. Configuració de la xarxa. {#plugins-1}
 
 #### 22. Configuració de la xarxa.
 

@@ -3,7 +3,7 @@ title: Jak anulować subskrypcję
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Jak mogę anulować subskrypcję?
+# Jak mogę anulować subskrypcję? {#how-can-i-cancel-my-subscription}
 
 Jeśli posiadasz licencję Ultimate Multisite, możesz w dowolnym momencie anulować jej odnowienie. Wystarczy wykonać poniższe kroki:
 

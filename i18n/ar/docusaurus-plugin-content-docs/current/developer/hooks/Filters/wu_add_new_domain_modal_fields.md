@@ -4,22 +4,22 @@ title: فلتر - wu_add_new_domain_modal_fields
 sidebar_label: wu_add_new_domain_modal_fields
 _i18n_hash: 82538b8033ce3cb1a2d4e59881ac1358
 ---
-# Filter: wu_add_new_domain_modal_fields
+# Filter: wu_add_new_domain_modal_fields {#filter-wuaddnewdomainmodalfields}
 
 يُرشّح الحقول لمدال إضافة نطاق جديد.
 
 يسمح للإضافات (مثل Domain Seller) بتعديل أو استبدال حقول تسجيل النطاق.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $fields | `array` | حقول النموذج. |
 
-### Since
+### Since {#since}
 
 - 2.1.0
 
-### Source
+### Source {#source}
 
 Defined in [`inc/admin-pages/class-domain-list-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-domain-list-admin-page.php#L199) at line 199

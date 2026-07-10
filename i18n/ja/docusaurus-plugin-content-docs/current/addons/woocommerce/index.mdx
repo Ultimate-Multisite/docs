@@ -1,97 +1,109 @@
 ---
-title: WooCommerce統合
+title: WooCommerce 連携
 sidebar_position: 1
-_i18n_hash: 58f0a02be92223c785c1086def91b0fb
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce Integration {#woocommerce-integration}
 
-WooCommerce Integration は、Manual Gateway と非常に似た方法で動作します。  
-ユーザーに多くの柔軟性を提供し、WooCommerce のインストールで利用可能な支払いフォームのいずれかを選択できるようにします。  
-そしてシンプルです：ユーザーの請求期間が終了すると、ユーザーのサブスクリプションは保留状態になります。  
-同時に、ネットワークのメインサイトにある WooCommerce のインストールに注文が作成されます。  
-ユーザーはメールで請求書を受け取り、支払いを行うリンクが添付されます。  
-支払いが受領されると、サブスクリプションが更新されます。
+WooCommerce Integration は、私たちの手動ゲートウェイと非常によく似た仕組みで動作します。ユーザーに大きな柔軟性を提供し、WooCommerce インストールで利用可能な任意の支払いフォームを選べるようにします。仕組みはシンプルです。ユーザーの請求期間が終了すると、ユーザーのサブスクリプションは保留になります。同時に、ネットワークのメインサイトの WooCommerce インストール上に注文が作成されます。その後、ユーザーには支払い用リンク付きの請求書がメールで届きます。支払いを受け取ると、サブスクリプションが更新されます。
 
-## Features
+## 機能 {#features}
 
-- Ultimate Multisite と WooCommerce の簡単な統合
-- 複数の支払い方法が利用可能
-- WooCommerce Subscriptions を使用した完全自動化プロセス
+- Ultimate Multisite と WooCommerce の簡単な連携
+- 複数の支払い方法を利用可能
+- 同梱のサブスクリプションコアを使った自動継続請求。必要に応じて WooCommerce Subscriptions plugin の拡張機能も利用可能
+- Checkout 合計には、Ultimate Multisite の税金が非課税の WooCommerce 手数料行として個別に含まれるため、顧客は支払い前に税額を確認できます
 
-## Documentation
+## ドキュメント {#documentation}
 
-**Setting Up The WooCommerce Integration**  
-**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+**WooCommerce Integration の設定**
 
-## Installation
+**Ultimate Multisite で支払いオプションを拡張する: WooCommerce Integration**
 
-1. 『ultimate-multisite-woocommerce』を '/wp-content/plugins/' ディレクトリにアップロードします  
-2. WordPress の『Plugins』メニューからプラグインを有効化します  
-3. ウィザードに従ってプラグインを設定します
+## インストール {#installation}
 
-## Usage Guide
+1. 'ultimate-multisite-woocommerce' を '/wp-content/plugins/' ディレクトリにアップロードします
+2. WordPress の「プラグイン」メニューから plugin を有効化します
+3. 手順ごとのウィザードに従って plugin を設定します
 
-_**重要な注意：この記事は Ultimate Multisite バージョン 2.x を対象としています。**_  
-_**注意：Ultimate Multisite: WooCommerce Integration では、少なくともメインサイトで WooCommerce を有効化する必要があります。**_
+## 使用ガイド {#usage-guide}
 
-Stripe と PayPal が一部の国で利用できないことを理解しています。これにより、Ultimate Multisite のユーザーがプラグインを効果的に使用できなくなる場合があります。そこで、WooCommerce を統合するアドオンを作成しました。  
+_**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-WooCommerce は非常に人気のある eCommerce プラグインです。世界中の開発者がさまざまな支払いゲートウェイを統合するアドオンを作成しました。これを活用して、Ultimate Multisite の請求システムで使用できる支払いゲートウェイを拡張しました。
+_**注意:** Ultimate Multisite: WooCommerce Integration では、少なくともメインサイトで WooCommerce が有効化されている必要があります。_
 
-## Setting It Up
+一部の国では _Stripe_ と _PayPal_ を利用できず、Ultimate Multisite ユーザーが私たちの plugin を効果的に使ううえで制限や妨げになることがあります。そのため、私たちは **_WooCommerce_ と連携するアドオン**を作成しました。
 
-まず、ライセンスユーザー向けに **無料** の WooCommerce Integration アドオンをインストールする必要があります。インストールするには、スーパ管理者ダッシュボードで Ultimate Multisite をクリックし、**Add-ons** を選択します。  
+_WooCommerce_ は非常に人気のある eCommerce plugin です。世界中の開発者が、さまざまな支払いゲートウェイを連携するためのアドオンを作成しています。私たちはこれを活用し、Ultimate Multisite の請求システムで利用できる支払いゲートウェイを拡張しました。
 
-![Add-ons page](/img/admin/addons-page.png)
+## 設定方法 {#setting-it-up}
 
-ここで、Ultimate Multisite のすべてのアドオンを確認できます。**Ultimate Multisite: WooCommerce Integration** アドオンをクリックします。  
+まず、**ライセンスユーザーは無料**で利用できる WooCommerce Integration アドオンをインストールする必要があります。インストールするには、スーパー管理者 Dashboard で Ultimate Multisite をクリックし、**アドオン**を選択します。
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![アドオンページ](/img/admin/addons-page.png)
 
-アドオンの詳細が表示されたウィンドウがポップアップします。**Install Now** をクリックしてください。  
+ここで、すべての Ultimate Multisite アドオンを確認できます。**Ultimate Multisite: WooCommerce Integration** アドオンをクリックします。
+
+![WooCommerce Integration が表示されているアドオンページ](/img/admin/addons-page.png)
+
+アドオンの詳細が表示されたウィンドウが開きます。**今すぐインストール**をクリックするだけです *。*
 
 <!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-インストールが完了すると、プラグインページにリダイレクトされます。ここで、**Network Activate** をクリックすると、WooCommerce アドオンがネットワーク上で有効化されます。  
+インストールが完了すると、プラグインページにリダイレクトされます。ここで **ネットワークで有効化**をクリックすると、_WooCommerce_ アドオンがネットワークで有効化されます。
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-有効化後、まだ WooCommerce プラグインがサイトにインストールされていない場合は、**リマインダーが届きます**。  
+有効化後、Webサイトに WooCommerce plugin がまだインストールおよび有効化されていない場合、**リマインダーが表示されます**。
 
 <!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-インストール後、Ultimate Multisite の支払い設定に追加オプションが表示されます。そこで **WooCommerce** オプションを有効にできます。  
+インストールが完了すると、Ultimate Multisite の支払い設定に追加オプションが表示されます。そこから _WooCommerce_ オプションを**有効化**できます。
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![WooCommerce が有効化された Ultimate Multisite 支払いゲートウェイ設定](/img/addons/woocommerce-payment-gateway.png)
 
-フロントエンドに表示される表示名や、チェックアウトフローでユーザーを案内する指示など、基本設定を構成できます。次に、**メインサイトの WooCommerce 設定** に移動し、使用したい支払いゲートウェイを有効化して構成します。
+フロントエンドに表示される表示名や、ユーザーの Checkout フローを案内する説明など、基本設定を構成できます。その後、**メインサイトの _WooCommerce_ 設定**に移動し、使用したい支払いゲートウェイを有効化して設定できます。
 
-## How to manage the payment
+### Checkout 税金手数料行 {#checkout-tax-fee-lines}
 
-WooCommerce Integration は、Manual Gateway と非常に似た方法で動作します。欠点は、請求期間の終了時にすべての支払いを手動で行う必要があることです。フローは次のようになります：  
+Ultimate Multisite の Checkout に税金が含まれる場合、この連携は各 Ultimate Multisite 税額を、非課税の手数料行として WooCommerce Checkout に個別に追加します。これにより、支払い前に税金の合計が表示されたままになり、WooCommerce がその税金手数料に再度課税することを防ぎます。
 
-* ユーザーの請求サイクルが終了すると、メンバーシップは **保留** されます。同時に、ネットワークのメインサイトにある WooCommerce インストールに注文が作成されます。  
+## 支払いの管理方法 {#how-to-manage-the-payment}
 
-* ユーザーはメールで請求書を受け取り、支払いを行うリンク（リンクはサブサイトのダッシュボードの請求履歴にも表示されます）を受け取ります。そのリンクはユーザーを WooCommerce の **checkout** にリダイレクトし、そこでユーザーは **利用可能な WooCommerce ゲートウェイ** のいずれかを選択して支払いを処理できます。  
+WooCommerce Integration は、私たちの**手動ゲートウェイ**と非常によく似た仕組みで動作します。欠点は、すべての支払いを請求期間の終了時に手動で支払う必要があることです。流れは次のとおりです。
 
-* 支払いが受領されると、メンバーシップは **更新** され、支払いは Ultimate Multisite にログされ、注文は完了に設定されます。  
+  * ユーザーの請求サイクルが終了すると、メンバーシップは**保留**になります。同時に、ネットワークのメインサイトにある _WooCommerce_ インストール上に注文が作成されます。
 
-### Some Important Notes:
+  * その後、ユーザーには支払い用リンク付きの請求書がメールで届きます（そのリンクは、サブサイト Dashboard の請求履歴にも表示されます）。そのリンクはユーザーを _**WooCommerce**_ **Checkout** にリダイレクトし、ユーザーは支払いを処理するために、**利用可能な _WooCommerce_ ゲートウェイ**のいずれかを選択できます。
 
-* Ultimate Multisite のデフォルト機能は、この統合フォームでも動作します。たとえば、**Subscription Management** 画面から **返金** を発行すると、WooCommerce と通信して選択した支払いフォームを使用して返金が発行されます。  
+  * 支払いを受け取ると、メンバーシップが**更新**され、支払いが Ultimate Multisite に記録され、注文は完了に設定されます。
 
-* Ultimate Multisite: WooCommerce Integration は WP-Cron に依存しています。通常はうまく機能しますが、サイトのトラフィックが低い場合、cron がスケジュールされたイベントを確認するように促されず、イベントが見逃される可能性があり、実行遅延を引き起こすことがあります。  
+### 重要な注意事項: {#some-important-notes}
 
-## Woocommerce Subscriptions Plugin
+  * Ultimate Multisite のデフォルト機能は、この連携方式でも引き続き動作します。たとえば、**サブスクリプション管理**画面から**返金を実行**すると、WooCommerce と通信し、選択された支払いフォームを使って返金が行われます。
 
-毎月手動で支払いを開始することは、サブスクリプションが自動的に毎請求サイクルで繰り返されることを期待されるため、エンドユーザーにとって理想的ではありません。そこで、WooCommerce Integration アドオンを **WooCommerce Subscriptions プラグイン** を **サポート** するよう設計しました。これにより、支払いが自動化され、エンドユーザーにとって取引が容易になります。  
+  * Ultimate Multisite: WooCommerce Integration は動作に WP-Cron を利用します。ほとんどの場合は非常にうまく機能しますが、site のトラフィックが少ない場合、cron がスケジュール済みイベントを確認するよう促されず、イベントが見逃されることがあります。その結果、実行遅延が発生する可能性があります。
 
-必要なのは、Woocommerce Subscriptions プラグインを **インストール** し、メインサイトで **有効化** することです。次に、Ultimate Multisite の支払い設定に戻り、**統合** を有効にします。  
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
-そしてそれだけです。エンドユーザーは請求サイクルの終了時に手動で支払いを行う必要がなくなります。  
+毎月手動で支払いを開始することは、エンドユーザーにとって理想的ではありません。サブスクリプションは請求サイクルごとに自動的に継続されることが期待されるためです。WooCommerce Integration アドオンには現在、中核となるサブスクリプションコードが同梱されているため、継続課金の商品では常にサブスクリプションが使用されます。
 
-メインサイトの WooCommerce に注文が作成されるだけでなく、各アカウントにサブスクリプションも作成されます。
+この連携を通じて継続課金の商品を販売するために、別途 [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) を購入またはインストールする必要は**ありません**。その plugin が購入、インストールされ、メインサイトで利用可能な場合、Ultimate Multisite はそれを使用し、WooCommerce は追加のサブスクリプション管理機能を表示します。利用できない場合でも、同梱されたサブスクリプション中核機能が継続課金の商品を処理します。
+
+![WooCommerce サブスクリプション連携設定](/img/addons/woocommerce-subscription-integration.png)
+
+これで完了です。エンドユーザーは、継続課金商品の請求サイクル終了時に手動で支払いを行う必要がなくなります。
+
+メインサイトの _WooCommerce_ で注文が作成されるだけでなく、各 Account に対してサブスクリプションも作成されます。
+
+### 更新失敗時の停止動作 {#failed-renewal-suspension-behavior}
+
+既定では、WooCommerce Subscriptions が支払い失敗時の再試行スケジュールを処理している間、メンバーシップは有効なままです。これにより、通常の WooCommerce Subscriptions の猶予期間が維持され、復旧した更新によってサブスクリプションとメンバーシップを早期にアクセス中断することなく再同期できます。
+
+より厳格なアクセス制御を望む管理者は、WooCommerce Integration 設定で **更新失敗時にメンバーシップを直ちに停止** を有効にできます。この任意設定を有効にすると、Ultimate Multisite は WooCommerce Subscriptions の再試行処理完了を待たずに、更新支払いが失敗した時点で関連するメンバーシップを停止します。
+
+開発者は、`wu_woo_suspend_on_payment_failure` フィルターで同じ判断を上書きできます。フック参照ページはアドオンのソースから生成されるため、この概要では独自の停止ポリシー向けにフィルター名のみを示します。

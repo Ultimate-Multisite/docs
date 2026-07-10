@@ -3,18 +3,18 @@ title: Fahaizana an'ny Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Fahaiza Ahorana: Scaffold sy Aktiva Block Themes
+# Fahaiza Ahorana: Scaffold sy Aktiva Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Ny Superdav AI Agent v1.12.0 dia manolotra fahaizana roa mahery izay ahafahanao mamorona sy mampiasa block themes manokana mivantana amin'ny alalan'ny chat interface.
 
-## Famarahabana
+## Famarahabana {#overview}
 
 Ny fahaizana **scaffold-block-theme** sy **activate-theme** dia ahafahan'ny agents:
 - Mamorona block themes feno, vonona ho an'ny famokarana (production-ready) mifototra amin'ny fanazavanao
 - Manao aktiva ny themes ao amin'ny tranokalanare tsy mila fampindramam-pahefana manokana
 - Mamorona maha-izy azy ara-tsipika amin'ny alalan'ny fanapahan-kevitra famolavolana voarafo
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Ny fahaizana **scaffold-block-theme** dia mamorona block theme WordPress vaovao misy rafitry ny theme manontolo, anisan'izany:
 
@@ -23,7 +23,7 @@ Ny fahaizana **scaffold-block-theme** dia mamorona block theme WordPress vaovao 
 - Styles sy fomba hafa (variations) ho an'ny block manokana
 - Metadata ary fanambarana famahana ny theme
 
-### Ahoana no Atao
+### Ahoana no Atao {#how-to-invoke}
 
 Ao amin'ny chat anao miaraka amin'ny Superdav AI Agent, afaka mangataka famoronana theme ianao:
 
@@ -38,7 +38,7 @@ Ny agent dia hatao ireto:
 3. Mamorona ireo fichier theme ilaina rehetra
 4. Manomana ny theme ho an'ny fanatanterahana (activation)
 
-### Vokatry ny Fandikana
+### Vokatry ny Fandikana {#expected-output}
 
 Rehefa mandeha tsara ny fahaizana, dia hahita ireto:
 
@@ -56,11 +56,11 @@ Ohatra vokatry ny fandikana:
   Toerana: Vonona ho an'ny fanatanterahana
 ```
 
-## Aktiva Theme
+## Aktiva Theme {#activate-theme}
 
 Ny fahaizana **activate-theme** dia manova ny tranokalao ho theme vaovao na efa misy block theme.
 
-### Ahoana no Fampiasana azy
+### Ahoana no Fampiasana azy {#how-to-invoke-1}
 
 Rehefa nanao scaffolding (fanamboarana fototra) theme ianao, dia afaka mampiasa azy avy hatrany:
 
@@ -74,7 +74,7 @@ Na ampiana aiza na theme efa misy:
 "Mendrika ny Twentytwentyfour theme"
 ```
 
-### Vokatry ny Fandikana (Expected Output)
+### Vokatry ny Fandikana (Expected Output) {#expected-output-1}
 
 Rehefa mandeha tsara ny activation:
 
@@ -92,7 +92,7 @@ Ohatra vokatra:
   Fanamarihana: Jereo ny homepage anao mba hanamarinana ny endrika vaovao
 ```
 
-## Fomba Fiasa: Scaffolding sy Activation
+## Fomba Fiasa: Scaffolding sy Activation {#workflow-scaffold-and-activate}
 
 Ny fomba fiasana mahazatra dia mampifangaro ireo fahaizana roa ireo:
 
@@ -102,7 +102,7 @@ Ny fomba fiasana mahazatra dia mampifangaro ireo fahaizana roa ireo:
 4. **Activation**: "Ampiana an'ity theme ity izao"
 5. **Fanamarinana**: Mandehana any amin'ny tranokalao mba hanamafisana fa miasa ny endrika vaovao
 
-## Design Tokens sy Fanatsarana (Customization)
+## Design Tokens sy Fanatsarana (Customization) {#design-tokens-and-customization}
 
 Ny theme efa nanao scaffolding dia mampiasa design tokens an'i WordPress (amin'ny alalan'ny `theme.json`) ho an'izay manaraka:
 
@@ -114,14 +114,14 @@ Ny theme efa nanao scaffolding dia mampiasa design tokens an'i WordPress (amin'n
 
 Ireo tokens ireo dia mifantoka ao amin'ny `theme.json`, ka mora atao ny manova ny rafitry ny endrika rehetra avy amin'ny rakitra iray.
 
-## Fepetra sy Fanamarihana
+## Fepetra sy Fanamarihana {#limitations-and-notes}
 
 - Les thèmes dia fanamboatra ao `/wp-content/themes/` ary tsy maintsy manaraka ny fomba anaran'ny WordPress.
 - Ny activation (fanatanterahana) dia mitaky alalana mety amin'ny tranonkala WordPress anao.
 - Ny code PHP manokana ao anatin'ny thèmes dia kely ihany; ampiasao ireo plugins ho an'ny fiasa sarotra.
 - Ireo block themes dia miasa tsara indrindra amin'ny WordPress 5.9 sy aorian'izay.
 
-## Fandresena olana (Troubleshooting)
+## Fandresena olana (Troubleshooting) {#troubleshooting}
 
 **Tsy miseho ny thème aorian'ny famoronana azy (scaffolding)**
 - Jereo raha misy ny lalana (directory) an'ny thème ary manana alalana mety.
@@ -138,7 +138,7 @@ Ireo tokens ireo dia mifantoka ao amin'ny `theme.json`, ka mora atao ny manova n
 - Manadio (clear) ireo caching plugins rehetra.
 - Jereo raha mifanaraka amin'ny dikan-teny (version) WordPress anao ny tokens ampiasainao.
 
-## Dingana manaraka (Next Steps)
+## Dingana manaraka (Next Steps) {#next-steps}
 
 Aorian'ny activation ny thème anao, afaka:
 - Mampiasa ny **Design System Aesthetics skill** mba hanatsarana ny fomba fanoratana (typography), loko ary ny toerana misy zavatra (spacing).

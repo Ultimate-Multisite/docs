@@ -3,11 +3,11 @@ title: Ultimate Multisite-yň terjimesi
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite'i Soňurlyp Geçirilmesi
+# Ultimate Multisite'i Soňurlyp Geçirilmesi {#translating-ultimate-multisite}
 
 Ultimate Multisite İngyz dilinde döredilse-de, bu plugin doly terjime edilebilýär we biz terjime goşurlaryny aktif karşylýarys.
 
-## Esasy Plugin Terjime Edilmegi
+## Esasy Plugin Terjime Edilmegi {#core-plugin-translations}
 
 Esasy Ultimate Multisite pluginini resmi **WordPress.org terjime platformasy** arkaly terjime edilýär:
 
@@ -24,7 +24,7 @@ Bu standart WordPress jemgyýetçiliginiň terjime ulgamy. Terjime kesgitli tasd
 
 Eger siz öz diliniz üçin terjime ediji (terjime kesgitleýän) bolmak isleseňiz, [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) arkaly ýüz tuta bilersiňiz.
 
-## Addon Terjime Edilmegi
+## Addon Terjime Edilmegi {#addon-translations}
 
 Addon pluginleri aşakdaky ýerde aýry terjime edilýär:
 
@@ -32,11 +32,11 @@ Addon pluginleri aşakdaky ýerde aýry terjime edilýär:
 
 Addon terjimeleri şu wagtlar başlangyç nokady hasaplanýan AI arkaly döredilýär. Olar ähli goldaw berilen dillerini özlerinde saklap bilerler, ýöne olarda gysga we dogry bolmasa bolan ifadeler ýok bolmadyk. Olary has täsirli we dogry etmek üçin adam terjimeçilerini kabul edip gowusma teklip etmegi hoş görüp bileris.
 
-## Iki Dili Terjime Edilmegi
+## Iki Dili Terjime Edilmegi {#local-translations}
 
 Eger siz öz layığınız üçin lokal tarjimalar döretmek isleýärsiňiz, ýokary (upstream) katky bermek bilen baglanyp, iki opsiyany bar:
 
-### Poedit-i Ulanmak
+### Poedit-i Ulanmak {#using-poedit}
 
 Siz `.pot` faylyny tarjimalamak üçin **[Poedit](https://poedit.net)** desktop programmasyny ulanyp bilersiňiz:
 
@@ -47,6 +47,6 @@ Siz `.pot` faylyny tarjimalamak üçin **[Poedit](https://poedit.net)** desktop 
 
 5. Çykyş fayllary `lang` klasiýasynda ýerleşdiriň
 
-### Loco Translate-i Ulanmak
+### Loco Translate-i Ulanmak {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress pluginini ulanmagy bilen, siz desktop ulgamlaryna ehtiyac duymadan, jogapkärlik panelinden (admin panel) tarjimalary birleşip bilersiňiz. Ol size tarjimalar fayllaryny döretmek we derlemekde kömek edýär.

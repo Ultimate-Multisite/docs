@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp পরিবর্তন লগ
+# Mailchimp পরিবর্তন লগ {#mailchimp-changelog}
 
 সংস্করণ: 1.1.1 - প্রকাশিত হয়েছে 2025-09-28
 

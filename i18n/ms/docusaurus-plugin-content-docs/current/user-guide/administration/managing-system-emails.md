@@ -1,25 +1,29 @@
 ---
-title: Menguruskan E-mel Sistem
+title: Mengurus E-mel Sistem
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Mengurus E-mel Sistem
+# Mengurus E-mel Sistem {#managing-system-emails}
 
-Ultimate Multisite menghantar pelbagai e-mel sistem untuk peristiwa seperti pengesahan pendaftaran, resit pembayaran, dan perubahan keahlian. Anda boleh menyesuaikan templat e-mel ini agar sepadan dengan jenama anda.
+Ultimate Multisite menghantar pelbagai e-mel sistem untuk acara seperti pengesahan pendaftaran, resit pembayaran, dan perubahan keahlian. Anda boleh menyesuaikan templat e-mel ini agar sepadan dengan jenama anda.
 
-## Melihat E-mel Sistem
+## Melihat E-mel Sistem {#viewing-system-emails}
 
-Pergi ke **Ultimate Multisite → Settings** dan klik pada tab **Emails** untuk melihat tetapan berkaitan e-mel.
+Navigasi ke **Ultimate Multisite → Settings** dan klik pada tab **Emails** untuk melihat tetapan berkaitan e-mel.
 
-![Settings - Emails tab](/img/admin/settings-emails.png)
+![Tetapan - tab Emails](/img/admin/settings-emails.png)
 
 Dari situ, anda boleh mengakses halaman **System Emails** untuk melihat semua templat e-mel.
 
-![System Emails list](/img/admin/system-emails-list.png)
+![Senarai System Emails](/img/admin/system-emails-list.png)
 
-## Mengimport Templat E-mel Baharu
+Anda juga boleh mengedit templat e-mel individu menggunakan editor e-mel sistem:
 
-Versi baharu Ultimate Multisite dan add-on mungkin mendaftarkan templat e-mel baharu. Untuk mengelakkan konflik, templat baharu tidak ditambah secara automatik — anda perlu mengimportnya secara manual.
+![Editor e-mel sistem](/img/admin/system-email-editor.png)
+
+## Mengimport Templat E-mel Baharu {#importing-new-email-templates}
+
+Versi Ultimate Multisite baharu dan add-ons mungkin mendaftarkan templat e-mel baharu. Untuk mengelakkan konflik, templat baharu tidak ditambahkan secara automatik — anda perlu mengimportnya secara manual.
 
 Untuk mengimport templat e-mel baharu:
 
@@ -28,11 +32,11 @@ Untuk mengimport templat e-mel baharu:
 3. Togol pilihan **Import Emails** untuk melihat templat yang tersedia
 4. Pilih templat yang anda mahu import dan sahkan
 
-## Menetapkan Semula Templat E-mel
+## Menetapkan Semula Templat E-mel {#resetting-email-templates}
 
-Jika anda telah menyesuaikan templat e-mel dan mahu kembali kepada kandungan asal, anda mempunyai dua pilihan:
+Jika anda telah menyesuaikan templat e-mel dan mahu kembali kepada kandungan lalai, anda mempunyai dua pilihan:
 
-1. **Padam dan import semula** — Padam e-mel sistem tersebut dan importnya semula (ini akan memadamkan metrik penghantaran)
+1. **Padam dan import semula** — Padam e-mel sistem dan import semula (ini memadam metrik penghantaran)
 2. **Tetapkan semula melalui alat** — Gunakan alat **Reset & Import**, togol pilihan **Reset**, dan pilih e-mel yang anda mahu tetapkan semula
 
-Pilihan Reset adalah lebih baik kerana ia mengekalkan metrik penghantaran dan metadata lain sambil memulihkan kandungan asal.
+Pilihan Reset lebih disarankan kerana ia mengekalkan metrik penghantaran dan metadata lain sambil memulihkan kandungan lalai.

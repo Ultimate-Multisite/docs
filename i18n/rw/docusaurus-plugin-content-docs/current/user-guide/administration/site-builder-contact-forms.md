@@ -3,11 +3,11 @@ title: Urugero rw'Ubwumvikane bw'Uburyo bwo Gutegura Ubutaka
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Amakuru ya Formu za Kurwiza (Contact Forms)
+# Amakuru ya Formu za Kurwiza (Contact Forms) {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 yagira uburyo bwo gukora formu za kurwiza (contact forms) mu gihe cy'amaseke n'ubwujiza bw'umugambi w'ubwoko (Site Builder agent) mu chat interface. Ibi byagukora ubushobozi bwo gukoresha formu zikoreshwa neza ku rugero rwa page yose nta guhagarira mu chat.
 
-## Uburyo Bwo Gukoresha (Overview)
+## Uburyo Bwo Gukoresha (Overview) {#overview}
 
 Ubushobozi bwo Site Builder ku formu za kurwiza (`create_contact_form`) bishobora gushobora kumenya plugin ya formu w'ubwoko ugiye mu site cyane kandi bikora formu ya kurwiza uburyo bw'umugambi w'ubwoko (plugin) yayo. Plugins zikoreshwa zikoreshwa ni:
 
@@ -18,7 +18,7 @@ Ubushobozi bwo Site Builder ku formu za kurwiza (`create_contact_form`) bishobor
 
 Umuvugizi (assistant) uzakora uburyo bwo gukoresha plugin ya formu nziza cyane ku site yawe kandi uzakora formu ya kurwiza itandukanye na uko plugin yayo ikora.
 
-## Gukora Formu ya Kurwiza
+## Gukora Formu ya Kurwiza {#creating-a-contact-form}
 
 Kugira ngo ukore formu ya kurwiza uburyo bwo Site Builder:
 
@@ -34,7 +34,7 @@ Kugira ngo ukore formu ya kurwiza uburyo bwo Site Builder:
 
 4. Site Builder uzakora formu ya kurwiza kandi uzagufasha shortcode y'ubwoko bwo gusobanura (shortcode) w'uko uza gushyira mu page.
 
-## Gukoresha Shortcode Y'Ubujiza Bw'Ubwoko (Using the Generated Shortcode)
+## Gukoresha Shortcode Y'Ubujiza Bw'Ubwoko (Using the Generated Shortcode) {#using-the-generated-shortcode}
 
 Nyuma yo gukora formu ya kurwiza, Site Builder uzagufasha shortcode y'ubwoko bwo gusobanura (shortcode) (urugero, `[contact-form-7 id="123"]`). Uza kuba ufite uburyo bwo:
 
@@ -45,11 +45,11 @@ Nyuma yo gukora formu ya kurwiza, Site Builder uzagufasha shortcode y'ubwoko bwo
 
 3. **Gukoresha mu template** — Niba wumweze gukora PHP, uzaweza gukoresha shortcode muri file ya template y'umwezi (theme).
 
-## Gukoresha umuganda w'Urugero (Contact Form)
+## Gukoresha umuganda w'Urugero (Contact Form) {#customizing-the-contact-form}
 
 Nyuma yukoza Site Builder umuganda w'Urugero, uzafite uburyo bwo gukoresha mu buryo bw'ibindi:
 
-### Bishingiye ku Chat Interface
+### Bishingiye ku Chat Interface {#via-the-chat-interface}
 
 Ndinga Site Builder ko yagire uburyo bwo gukora umuganda:
 
@@ -57,7 +57,7 @@ Ndinga Site Builder ko yagire uburyo bwo gukora umuganda:
 
 Site Builder uzakora umuganda kandi uzagukira shortcode y'umuganda ugiye.
 
-### Bishingiye ku Admin Interface ya Form Plugin
+### Bishingiye ku Admin Interface ya Form Plugin {#via-the-form-plugins-admin-interface}
 
 Uzafite uburyo bwo gukoresha mu buryo bw'ibindi muri settings za form plugin yawe:
 
@@ -65,7 +65,7 @@ Uzafite uburyo bwo gukoresha mu buryo bw'ibindi muri settings za form plugin yaw
 2. Gutera umuganda w'Urugero ugiye.
 3. Gukoresha ibyo ushaka gukora umuganda, amakuru yo gukora (validation rules), kandi amakuru y'email cyangwa notification nk'uko ubikwiriye.
 
-## Form Plugins n'Ubwumvikane (Compatibility)
+## Form Plugins n'Ubwumvikane (Compatibility) {#form-plugins-and-compatibility}
 
 Site Builder ugiye gushobora kumenya form plugin y'umwezi wakoze muri site yawe kandi ugiye gukoresha ibyo kugira ngo umuganda w'Urugero utoretse. Niba hari form plugins nyinshi, Site Builder uzagira ubwumvikane mu buryo bwo gutera:
 
@@ -76,7 +76,7 @@ Site Builder ugiye gushobora kumenya form plugin y'umwezi wakoze muri site yawe 
 
 Niba nta hano zose za form plugins zishobora kugaragara, Site Builder uzakoresha gukorera gukoresha mbere y'umuganda w'Urugero kugira ngo utoretse.
 
-## Amakuru ya Email (Email Notifications)
+## Amakuru ya Email (Email Notifications) {#email-notifications}
 
 Umuganda w'Urugero ugiye gukora umakuru yo email ku admin ya site byo mu gihe cy'ibindi, mu gihe cy'ibindi. Uzafite uburyo bwo gukoresha email y'umukoresha kandi amakuru y'email nk'uko ubikwiriye:
 
@@ -91,21 +91,21 @@ Kuri gukoresha inama zikomeye, ugukoresha documentation ya form plugin y'umwezi 
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Uburyo mu Ikirimo y'Email (Example Use Cases)
+## Uburyo mu Ikirimo y'Email (Example Use Cases) {#example-use-cases}
 
-### Ikirimo y'Urugero rw'Ikirimo cy'Ubukoranyi (Simple Contact Form)
+### Ikirimo y'Urugero rw'Ikirimo cy'Ubukoranyi (Simple Contact Form) {#simple-contact-form}
 
 > "Gukora ukoranyi w'ikirimo cy'ubukoranyi ufite ubutumwa, email, n'ibyo ushaka kuvuga."
 
-### Ikirimo Cy'Urugero rw'Icyemezo (Multi-Step Form)
+### Ikirimo Cy'Urugero rw'Icyemezo (Multi-Step Form) {#multi-step-form}
 
 > "Gukora ukoranyi w'ikirimo ufite igice cy'ibanze cy'ubwujji bwo gukoresha, kandi uburyo buhuye mu gihe cy'ibindi."
 
-### Ikirimo Ufite Uburyo Bwo Gukoresha (Form with Conditional Logic)
+### Ikirimo Ufite Uburyo Bwo Gukoresha (Form with Conditional Logic) {#form-with-conditional-logic}
 
 > "Gukora ukoranyi w'ikirimo ufite ibintu bifite uburyo bwo gushobora guhuza, aho umuntu yashobora gukoresha igice cy'ibanze."
 
-### Ikirimo Ufite Gukoresha Icyerekezo (Form with File Upload)
+### Ikirimo Ufite Gukoresha Icyerekezo (Form with File Upload) {#form-with-file-upload}
 
 > "Gukora ukoranyi w'ikirimo ufite uburyo bwo gusubiza cyangwa guhagarika ibintu bifite ubwoko bw'inyandiko."
 

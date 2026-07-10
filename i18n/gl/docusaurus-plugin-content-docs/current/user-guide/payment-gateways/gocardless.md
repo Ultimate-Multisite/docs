@@ -3,7 +3,7 @@ title: GoCardless Gateway
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# Portal de Pagamentos GoCardless
+# Portal de Pagamentos GoCardless {#gocardless-gateway}
 
 Esta característica é fornecida pelo add-on **GoCardless**.
 

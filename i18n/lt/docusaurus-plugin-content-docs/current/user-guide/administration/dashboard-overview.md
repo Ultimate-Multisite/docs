@@ -3,11 +3,11 @@ title: Pagrindinio skelbimų peržiūra
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pagrindinis Vaizdo Matmenis
+# Pagrindinis Vaizdo Matmenis {#dashboard-overview}
 
 Ultimate Multisite turi özelą **Dashboard**, esantį Ultimate Multisite meniu, o taip pat pridėja widget'us prie Tūrinio Vaizdo Matmeninio (Network Dashboard). Šiame straipsnyje pateiksime, ką pamatysite abiejose vietoose.
 
-## Tūrinis Vaizdo Matmenis (The Network Dashboard)
+## Tūrinis Vaizdo Matmenis (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite įdiegia naudingus widget'us į tūrinio lygio vaizdo matmenį, esantįje vietoje **Mano Sistai → Tūrinio Administracija → Dashboard**.
 
@@ -35,7 +35,7 @@ Ultimate Multisite įdiegia naudingus widget'us į tūrinio lygio vaizdo matmen�
 
 ![Naujienų widgetis](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Vaizdo Matmenis (The Ultimate Multisite Dashboard)
+## Ultimate Multisite Vaizdo Matmenis (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 Nors tūrinis vaizdo matmenis pateikia visapibrėžianą informaciją apie tūrį, Ultimate Multisite vaizdo matmenis (esantys Ultimate Multisite meniu viršuje) pateikia informaciją apie paiektą paslaugą.
 

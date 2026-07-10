@@ -1,127 +1,135 @@
 ---
 title: ドメイン販売者
 sidebar_position: 1
-_i18n_hash: 5c8b8b2b64d22ad6e2ee561b985102e9
+_i18n_hash: 74562d4e09bdd5b6301fe67738fbd02c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
 
-# Domain Seller
+# Domain Seller {#domain-seller}
 
-**Multisite Ultimate: Domain Seller** は、WordPress Multisite ネットワークを強力なドメイン販売プラットフォームに変換します。このアドオンは、Multisite Ultimate v2 とシームレスに統合し、以下の機能を提供します：
+**Multisite Ultimate: Domain Seller** は、WordPress Multisite ネットワークを強力なドメイン販売プラットフォームに変えます。顧客は登録時または自分の Dashboard からカスタムドメインを直接登録でき、リアルタイムの空き状況確認と明確な料金表示を利用できます。
 
-### 主な機能
+### Domain Seller を選ぶ理由 {#why-domain-seller}
 
-#### **🌐 複数のドメインプロバイダーサポート**
+ドメイン登録は、あらゆる WaaS（ウェブサイト・アズ・ア・サービス）プラットフォームで最も要望の多い追加販売の一つです。顧客を外部のレジストラへ送る代わりに、ドメインを直接提供できます。これにより、ネットワーク内の収益を増やしながら、顧客にはスムーズな体験を提供できます。
 
-* **OpenSRS Integration** - OpenSRS ドメイン登録と管理を完全サポート
-* **Extensible Architecture** - Namecheap、GoDaddy、その他のプロバイダーを追加するためのフレームワーク
-* **Provider Testing** - 組み込みの接続テストと設定検証
-* **Failover Support** - 信頼性のためにプロバイダー間で自動フェイルオーバー
+### 主な機能 {#key-features}
 
-#### **💰 高度な価格設定と商品**
+#### 複数のドメインレジストラに対応 {#multiple-domain-registrar-support}
+* **OpenSRS** — 登録、更新、管理に完全対応
+* **Namecheap** — WhoisGuard とサンドボックステストを含む完全な連携
+* **HostAfrica** — Domains Reseller API によるドメイン検索、料金、登録、移管、DNS、ID 保護
+* **Openprovider** — リセラー料金、登録、更新、移管、DNS、WHOIS プライバシー、TLD 同期
+* **Hostinger** — 共有 Hostinger 連携トークンを使ったドメイン検索と登録
+* **拡張可能なアーキテクチャ** — Integration Registry パターンを基盤としており、プロバイダーを簡単に追加可能
+* **組み込みの接続テスト** — 本番公開前にプロバイダーの認証情報と接続性を検証
 
-* **Domain Products** - ドメイン用のネイティブ Multisite Ultimate v2 商品タイプ
-* **Flexible Markup** - 卸価格に対する固定額またはパーセンテージのマークアップ
-* **TLD-Specific Pricing** - TLD ごとの異なる価格戦略 (.com、.net など)
-* **Real-Time Pricing** - プロバイダーからのリアルタイム価格情報とインテリジェントキャッシュ
-* **Coupon Integration** - Multisite Ultimate のクーポンと割引を完全サポート
+#### ガイド付き設定ウィザード {#guided-setup-wizard}
+* **ワンクリックの初期設定** — プロバイダー設定、TLD インポート、ドメイン商品作成を順に案内
+* **自動 TLD 同期** — 接続済みプロバイダーから利用可能なすべての TLD と卸売料金をインポート
+* **既定の商品作成** — 実用的なマークアップ初期値を備えた、すぐに使えるドメイン商品を作成
 
-#### **🛒 シームレスなチェックアウト体験**
+#### 柔軟なドメイン料金 {#flexible-domain-pricing}
+* **3 つのマークアップ方式** — パーセントのマークアップ、固定マークアップ、または TLD ごとの固定価格
+* **TLD 別の商品** — 異なる TLD グループ（.com/.net、.io、国別コードなど）向けに個別のドメイン商品を作成
+* **初年度特別価格** — 新規登録を促すため、初年度の割引価格を提供
+* **リアルタイム料金** — インテリジェントなキャッシュを備えた、プロバイダーからのライブ卸売料金
+* **クーポン対応** — Multisite Ultimate の割引コードと完全互換
 
-* **Integrated Domain Search** - チェックアウト中にリアルタイムでドメインの利用可能性を確認
-* **AJAX-Powered Interface** - ページリロードなしで高速かつレスポンシブなドメイン検索
-* **Smart Suggestions** - 希望のドメインが利用できない場合の代替ドメイン提案
-* **Transparent Pricing** - マークアップの内訳付きで明確な価格表示
-* **One-Click Selection** - 簡単なドメイン選択とチェックアウトプロセス
+#### WHOIS プライバシー保護 {#whois-privacy-protection}
+* **商品ごとの設定** — WHOIS プライバシーを無効、常に含める、または顧客が選択に設定
+* **顧客のオプトイン** — 顧客が選択に設定すると、購入手続きのチェックボックスで顧客がプライバシー保護を追加可能
+* **設定可能な料金** — プライバシー追加機能の年額を設定、または無料で提供
+* **レジストラ連携** — 登録時に WhoisGuard（Namecheap）または WHOIS プライバシー（OpenSRS）を自動で有効化
 
-#### **🔄 インテリジェントな自動更新システム**
+#### 統一された購入手続き体験 {#unified-checkout-experience}
+* **3 つのドメインモード** — 顧客はサブドメイン（無料）、新規ドメインの登録、または既に所有している既存ドメインのマッピングから選択
+* **リアルタイムドメイン検索** — ページ再読み込みなしの AJAX による空き状況確認
+* **スマートな候補提示** — 希望ドメインが取得済みの場合に代替 TLD を提案
+* **明確な料金表示** — 登録価格、更新価格、任意の WHOIS プライバシー料金をわかりやすく表示
+* **登録者連絡先フィールド** — 購入手続き中に必要な登録者情報（氏名、住所、電話番号）をインラインで収集
+* **自動生成されるサイト URL** — 選択されたドメインからサイトアドレスを自動生成
 
-* **Membership Integration** - 顧客のメンバーシップステータスに連動したドメイン
-* **Automatic Scheduling** - 期限日を基にしたスマートな更新スケジューリング
-* **Payment Processing** - 既存の顧客ゲートウェイを通じた自動更新支払い
-* **Retry Logic** - 失敗した更新に対するインテリジェントなリトライシステム
-* **Notification System** - 更新、失敗、期限切れのメール通知
+#### 自動更新システム {#auto-renewal-system}
+* **メンバーシップ連動更新** — 顧客のメンバーシップが有効な間、ドメインを自動更新
+* **スマートなスケジュール設定** — ドメインの有効期限に基づいて更新ジョブをキューに登録
+* **再試行ロジック** — 更新失敗時にインテリジェントに再試行
+* **メール通知** — 近日中の更新、更新成功、失敗、有効期限切れのアラートを設定可能
 
-#### **👨‍💼 包括的な管理ツール**
+#### 顧客向け DNS 管理 {#customer-dns-management}
+* **セルフサービス DNS** — 顧客は Dashboard から DNS レコード（A、AAAA、CNAME、MX、TXT）を追加、編集、削除可能
+* **ドメイン状態** — 登録状態、有効期限、ネームサーバー情報をリアルタイム表示
+* **自動ドメインマッピング** — 登録済みまたは既存のドメインを顧客のサイトへ自動でマッピング
 
-* **Domain Management Dashboard** - 1つのインターフェースからすべての顧客ドメインを監視
-* **Provider Configuration** - ドメインプロバイダーの簡単な設定とテスト
-* **Manual Operations** - 手動でのドメイン登録、更新、管理
-* **Detailed Logging** - すべてのドメイン操作の完全な監査ログ
-* **Bulk Operations** - 複数のドメインを同時に処理
+#### 管理者ツール {#admin-tools}
+* **手動ドメイン登録** — 管理パネルから顧客に代わってドメインを登録
+* **ドメイン監視** — すべての顧客ドメイン、状態、有効期限を 1 ページで表示
+* **プロバイダー別ログ** — 各レジストラ用の個別ログチャンネル（例: domain-seller-namecheap.log）
+* **登録詳細** — コアのドメイン編集ページで登録者情報と登録データを表示
 
-#### **👤 強化された顧客体験**
+### 対応プロバイダー {#supported-providers}
 
-* **Customer Dashboard** - 自己サービス型ドメイン管理インターフェース
-* **Renewal Management** - 顧客が自動更新を閲覧・管理できる
-* **Domain Status** - リアルタイムのステータス更新と期限情報
-* **Transfer Tools** - ドメイン転送とDNS管理機能
+* **OpenSRS** — 登録、更新、DNS 管理、WHOIS プライバシーとの完全連携
+* **Namecheap** — 登録、更新、一括空き状況確認、無料 WhoisGuard との完全連携
+* **HostAfrica** — 登録、更新、移管、DNS 管理、EPP コード取得、レジストラロック、ID 保護
+* **Openprovider** — 登録、更新、移管、DNS 管理、EPP コード取得、レジストラロック、WHOIS プライバシー、リセラー TLD 同期
+* **Hostinger** — 登録、ドメイン検索、ネームサーバー更新、レジストラロック、WHOIS プライバシー。更新は Hostinger 自動更新で処理
+* **GoDaddy** — 登録と更新
+* **ResellerClub** — 登録、更新、DNS 管理
+* **NameSilo** — 登録と更新
+* **Enom** — 登録、更新、DNS 管理
 
-### 対応プロバイダー
+### 技術詳細 {#technical-details}
 
-* **OpenSRS** - 登録、更新、管理の完全統合
-* **Extensible Architecture** - 追加プロバイダーを簡単に追加可能
+* **必須:** PHP 7.4+、Multisite Ultimate 2.4.12+
+* **アーキテクチャ:** Domain_Selling_Capability interface を使用した Integration Registry パターン
+* **自動読み込み:** PSR-4 クラスマッピングを使用した Jetpack autoloader
+* **標準:** WordPress コーディング標準、厳密な型付け、プリペアドステートメント
 
-### 技術仕様
+## インストール {#installation}
 
-#### **🏗️ モダンアーキテクチャ**
+1. **Multisite Ultimate v2.4.12+** がインストールされ、ネットワーク有効化されていることを確認します
+2. plugin を `/wp-content/plugins/ultimate-multisite-domain-seller/` にアップロードします
+3. WordPress Network Admin の **Plugins** から plugin をネットワーク有効化します
+4. **Setup Wizard** は初回有効化時に自動で起動します — 手順に従って次を行います:
+   * ドメイン登録業者を接続する
+   * 接続をテストする
+   * 利用可能な TLD と卸価格をインポートする
+   * 価格上乗せを設定した最初のドメイン商品を作成する
+5. **Ultimate Multisite > Checkout Forms** で、チェックアウトフォームに **ドメイン選択** field を追加します
 
-* **PHP 7.4+ Compatibility** - 厳格な型付けと戻り値型を備えたモダンなコードベース
-* **PSR-4 Autoloading** - クリーンで整理されたクラス構造
-* **WordPress Standards** - WordPress コーディング標準とセキュリティベストプラクティスに準拠
-* **Multisite Optimized** - WordPress Multisite ネットワーク専用に設計
+## よくある質問 {#frequently-asked-questions}
 
-#### **🔧 統合ポイント**
+### 必要な Multisite Ultimate のバージョンは何ですか？ {#what-version-of-multisite-ultimate-is-required}
 
-* **Native Product Type** - ドメインは Multisite Ultimate のファーストクラス商品
-* **Checkout System** - v2 のチェックアウトとサインアップフローへの深い統合
-* **Payment Gateways** - すべての Multisite Ultimate 支払いゲートウェイと連携
-* **Membership System** - 顧客のメンバーシップとサブスクリプションとの完全統合
-* **Logging System** - Multisite Ultimate のロギングフレームワークを使用した包括的なログ
+バージョン 2.4.12 以上です。この addon は WP Ultimo v1.x または 2.4.12 未満の Ultimate Multisite バージョンには対応していません。
 
-#### **⚡ パフォーマンス機能**
+### どのドメインプロバイダーに対応していますか？ {#which-domain-providers-are-supported}
 
-* **Intelligent Caching** - プロバイダーの価格と可用性をキャッシュ
-* **Async Processing** - 更新とバルク操作のバックグラウンド処理
-* **Batch Operations** - 複数ドメインの効率的な処理
-* **Queue Management** - 失敗した操作のリトライキュー
+9 つの登録業者に対応しています: **OpenSRS**、**Namecheap**、**HostAfrica**、**Openprovider**、**Hostinger**、**GoDaddy**、**ResellerClub**、**NameSilo**、**Enom**。登録業者の API で公開される操作が異なるため、機能はプロバイダーによって異なります。プロバイダー別の概要はセットアップガイドを参照してください。この addon の Integration Registry アーキテクチャにより、カスタムプロバイダーを簡単に追加できます — [開発者ガイド](/developer/integration-guide/custom-registrar)を参照してください。
 
-### 開発者向け機能
+### WHOIS プライバシー保護を提供できますか？ {#can-i-offer-whois-privacy-protection}
 
-* モダンな PHP 7.4+ コードベースで厳格な型付け
-* 拡張可能なプロバイダーシステム
-* アクションとフィルターフックが全体に存在
-* PSR-4 オートローディング
-* 包括的なロギングとエラーハンドリング
+はい。各ドメイン商品には、無効、常に含める、顧客が選択、の 3 つのモードを持つ WHOIS プライバシー設定があります。顧客が選択に設定すると、チェックアウト時に価格（または Namecheap の WhoisGuard では「無料」）付きのチェックボックスが表示されます。プライバシーフラグは登録時に登録業者へ自動的に渡されます。
 
-## インストール
+### TLD ごとに異なる価格を設定できますか？ {#can-i-set-different-pricing-for-different-tlds}
 
-1. **Multisite Ultimate v2.0.0+** がインストールされ、アクティブになっていることを確認してください
-2. プラグインファイルを `/wp-content/plugins/ultimate-multisite-domain-seller/` にアップロードしてください
-3. WordPress ネットワーク管理者の 'Plugins' メニューからプラグインを有効化してください
-4. **Ultimate Multisite > Settings > Domain Seller** に移動し、プロバイダーを設定してください
-5. **Ultimate Multisite > Products** でドメイン商品を作成してください
+はい。異なる TLD グループ用に別々のドメイン商品を作成します。各商品には、独自の上乗せタイプ（割合、固定上乗せ、または固定価格）、対応 TLD、初回価格を設定できます。
 
-## よくある質問
+### 顧客にはどのようなチェックアウトオプションが表示されますか？ {#what-checkout-options-do-customers-see}
 
-## どのバージョンの Multisite Ultimate が必要ですか？
+ドメイン選択 field では、顧客に 3 つのタブが表示されます: **サブドメイン**（ネットワーク上の無料サブドメインを使用）、**新しいドメインを登録**（新しいドメインを検索して登録）、**既存のドメイン**（すでに所有しているドメインをマッピング）。有効にしたモードのみが表示されます。
 
-このアドオンは Multisite Ultimate バージョン 2.0.0 以上を必要とします。Ultimate Multisite v1.x には非対応です。
+### 自動更新に対応していますか？ {#does-it-support-automatic-renewals}
 
-## 対応しているドメインプロバイダーは何ですか？
+はい。ドメインは自動更新に設定でき、顧客のメンバーシップ状態に紐づきます。更新支払いは顧客の既存の決済ゲートウェイを通じて処理されます。
 
-現在、OpenSRS が完全にサポートされています。アドオンは追加プロバイダーを簡単にサポートできるように設計されており、将来のリリースでさらに追加されます。
+### 顧客は自分の DNS レコードを管理できますか？ {#can-customers-manage-their-dns-records}
 
-## 異なる TLD ごとに別々の価格設定はできますか？
+はい。顧客は自分の Dashboard で DNS 管理インターフェイスを利用し、A、AAAA、CNAME、MX、TXT レコードを追加、編集、削除できます。DNS 管理は OpenSRS、ResellerClub、Enom、HostAfrica、Openprovider で利用できます。ホストされているドメイン向けの Hostinger DNS は、コアの Hostinger ドメインマッピング連携によって処理されます。
 
-はい！異なる TLD グループごとに別々のドメイン商品を作成し、それぞれに独自の価格マークアップと設定を行うことができます。
+### セットアップウィザードはありますか？ {#is-there-a-setup-wizard}
 
-## 自動更新に対応していますか？
-
-はい、ドメインは自動更新に設定でき、顧客メンバーシップと連携してシームレスに請求できます。
-
-## 顧客は自分のドメインを管理できますか？
-
-はい、顧客はパネルにドメイン管理インターフェースを持ち、登録・更新日付などを確認できるようになります。
+はい。セットアップウィザードは初回有効化時に自動で実行され、登録業者の接続、TLD のインポート、最初のドメイン商品の作成を順に案内します。addon 設定からウィザードを再実行することもできます。

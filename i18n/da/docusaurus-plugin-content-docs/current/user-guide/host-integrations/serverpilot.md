@@ -3,17 +3,17 @@ title: ServerPilot integration
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot Integration
+# ServerPilot Integration {#serverpilot-integration}
 
-## Oversigt
+## Oversigt {#overview}
 ServerPilot er en cloud-service til hosting af WordPress og andre PHP-websteder på servere hos DigitalOcean, Amazon, Google eller enhver anden serverudbyder. Denne integration muliggør automatisk domænesynkronisering og styring af SSL-certifikater mellem Ultimate Multisite og ServerPilot.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk domænesynkronisering
 - Styring af SSL-certifikater med Let's Encrypt
 - Automatisk fornyelse af SSL
 
-## Krav
+## Krav {#requirements}
 Følgende konstanter skal defineres i din `wp-config.php` fil:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'din_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'din_app_id');
 ```
 
-## Opsætning
+## Opsætning {#setup-instructions}
 
-### 1. Få dine ServerPilot API-oplysninger
+### 1. Få dine ServerPilot API-oplysninger {#1-get-your-serverpilot-api-credentials}
 
 1. Log ind på dit ServerPilot dashboard
 2. Gå til "Account" > "API"
 3. Opret en ny API-nøgle, hvis du ikke allerede har en
 4. Kopier din Client ID og API Key
 
-### 2. Få din App ID
+### 2. Få din App ID {#2-get-your-app-id}
 
 1. I dit ServerPilot dashboard gå til "Apps"
 2. Vælg appen, hvor dit WordPress multisite er hostet
 3. App ID'et ses i URL'en: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. Tilføj konstanter til wp-config.php
+### 3. Tilføj konstanter til wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tilføj følgende konstanter til din `wp-config.php` fil:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'din_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'din_app_id');
 ```
 
-### 4. Aktiver integrationen
+### 4. Aktiver integrationen {#4-enable-the-integration}
 
 1. I dit WordPress admin, gå til Ultimate Multisite > Settings
 2. Naviger til fanen "Domain Mapping" (Domænemapping)
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'din_app_id');
 4. Aktiver ServerPilot-integrationen
 5. Klik på "Save Changes" (Gem ændringer)
 
-## Hvordan det virker
+## Hvordan det virker {#how-it-works}
 
-### Domænesynkronisering
+### Domænesynkronisering {#domain-syncing}
 
 Når et domæne er kortlagt i Ultimate Multisite:
 
@@ -66,7 +66,7 @@ Integrationen henter den aktuelle liste over domæner fra ServerPilot
 3. Den sender den opdaterede liste til ServerPilot via API
 4. ServerPilot opdaterer domænelisten for din applikation
 
-### SSL Certifikatstyring
+### SSL Certifikatstyring {#ssl-certificate-management}
 
 Efter at domæner er synkroniseret:
 
@@ -74,27 +74,27 @@ Efter at domæner er synkroniseret:
 2. ServerPilot håndterer udstedelse og installation af SSL-certifikater ved hjælp af Let's Encrypt
 3. ServerPilot håndterer også automatisk fornyelse af SSL-certifikater
 
-## SSL Certifikatverifikation
+## SSL Certifikatverifikation {#ssl-certificate-verification}
 
 Integrationen er konfigureret til at øge antallet af forsøg på SSL-certifikatverifikation for ServerPilot, da det kan tage tid for ServerPilot at udstede og installere SSL-certifikater. Som standard vil den prøve op til 5 gange, men dette kan justeres ved hjælp af filtre.
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
-### Problemer med API-forbindelse
+### Problemer med API-forbindelse {#api-connection-issues}
 - Tjek, at dit Client ID og API Key er korrekte
 - Kontroller, om dit App ID er korrekt
 - Sørg for, at din ServerPilot konto har de nødvendige rettigheder
 
-### SSL Certifikatproblemer
+### SSL Certifikatproblemer {#ssl-certificate-issues}
 - ServerPilot kræver, at domænerne har gyldige DNS-opslag, der peger på din server, før SSL-certifikater udstedes
 - Hvis SSL-certifikater ikke udstedes, tjek, at dine domæner korrekt peger på din servers IP-adresse
 - Det kan tage lidt tid for ServerPilot at udstede og installere SSL-certifikater (typisk 5-15 minutter)
 
-### Domæne tilføjet
+### Domæne tilføjet {#domain-not-added}
 - Tjek Ultimate Multisite logs efter eventuelle fejlmeddelelser
 - Bekræft, at domænet ikke allerede er tilføjet til ServerPilot
 - Sørg for, at din ServerPilot plan understøtter antallet af domæner, du tilføjer
 
-### Fjernelse af domæne
+### Fjernelse af domæne {#domain-removal}
 - I øjeblikket giver ServerPilot API'en ikke mulighed for at fjerne individuelle domæner.
 - Når en domænemapping fjernes i Ultimate Multisite, vil integrationen opdatere listen over domæner i ServerPilot til at udelukke den fjernede domæne.

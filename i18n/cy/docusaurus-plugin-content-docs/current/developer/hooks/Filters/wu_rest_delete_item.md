@@ -1,0 +1,24 @@
+---
+id: wu_rest_delete_item
+title: Hidlydd - wu_rest_delete_item
+sidebar_label: wu_rest_delete_item
+_i18n_hash: ea4a29625c1aef260edc421b300d59cc
+---
+# Hidlydd: wu_rest_delete_item {#filter-wurestdeleteitem}
+
+Yn hidlo a ganiateir parhau â’r cais ai peidio.
+
+## Paramedrau {#parameters}
+
+| Enw | Math | Disgrifiad |
+|------|------|-------------|
+| $allowed | `bool` | Gwerth dychwelyd cychwynnol. |
+| $rest_base | `array` | Slug endid. |
+| $this | `\Base_Manager` | Enghraifft y gwrthrych. |
+
+### Ers {#since}
+
+- 2.0.0
+### Ffynhonnell {#source}
+
+Diffinnir yn [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) ar linell 440

@@ -3,7 +3,7 @@ title: কাউণ্ট পেজলৈ প্ৰৱেশ কৰা
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# মই প্ৰথমবাৰৰ বাবে মোৰ একাউণ্ট পৃষ্ঠালৈ কেনেকৈ যাব পাৰোঁ?
+# মই প্ৰথমবাৰৰ বাবে মোৰ একাউণ্ট পৃষ্ঠালৈ কেনেকৈ যাব পাৰোঁ? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite লৈ স্বাগতম!
 

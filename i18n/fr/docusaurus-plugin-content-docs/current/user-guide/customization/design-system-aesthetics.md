@@ -3,11 +3,11 @@ title: Compétences en esthétique des systèmes de conception
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Maîtriser l'esthétique du système de design
+# Maîtriser l'esthétique du système de design {#design-system-aesthetics-skill}
 
 La **compétence Esthétique du système de design** est une approche guidée pour affiner l'identité visuelle de votre site. Elle vous aide à prendre des décisions cohérentes concernant la typographie, la couleur, l'espacement et les *tokens* de mouvement qui définissent votre système de design.
 
-## Qu'est-ce que l'esthétique du système de design ?
+## Qu'est-ce que l'esthétique du système de design ? {#what-is-design-system-aesthetics}
 
 L'esthétique du système de design est une compétence structurée qui couvre :
 
@@ -20,9 +20,9 @@ L'esthétique du système de design est une compétence structurée qui couvre :
 
 Ces décisions sont enregistrées dans le fichier `theme.json` de votre thème, créant ainsi un système visuel cohérent.
 
-## Pourquoi utiliser l'esthétique du système de design ?
+## Pourquoi utiliser l'esthétique du système de design ? {#why-use-design-system-aesthetics}
 
-### Cohérence
+### Cohérence {#consistency}
 
 Un système de design garantit que :
 
@@ -31,7 +31,7 @@ Un système de design garantit que :
 - L'espacement suit un modèle prévisible
 - Les animations semblent unifiées
 
-### Efficacité
+### Efficacité {#efficiency}
 
 Au lieu de prendre des décisions de design page par page, vous :
 
@@ -39,7 +39,7 @@ Au lieu de prendre des décisions de design page par page, vous :
 - Les appliquez partout
 - Les mettez à jour globalement en modifiant une seule valeur
 
-### Flexibilité
+### Flexibilité {#flexibility}
 
 Vous pouvez :
 
@@ -47,9 +47,9 @@ Vous pouvez :
 - Expérimenter avec différentes esthétiques
 - Maintenir la cohérence de la marque tout en évoluant
 
-## Déclencher la compétence Esthétique du système de design
+## Déclencher la compétence Esthétique du système de design {#triggering-the-design-system-aesthetics-skill}
 
-### Activation manuelle
+### Activation manuelle {#manual-activation}
 
 Vous pouvez démarrer la compétence à tout moment :
 
@@ -69,7 +69,7 @@ ou
 "Guidez-moi à travers les décisions de système de design"
 ```
 
-### Suggestions automatiques
+### Suggestions automatiques {#automatic-suggestions}
 
 Les agents peuvent suggérer d'utiliser cette compétence lorsque vous :
 
@@ -78,9 +78,9 @@ Les agents peuvent suggérer d'utiliser cette compétence lorsque vous :
 - Souhaitez améliorer la cohérence visuelle
 - Vous préparez à lancer votre site
 
-## Le processus d'esthétique du système de design
+## Le processus d'esthétique du système de design {#the-design-system-aesthetics-process}
 
-### Étape 1 : Typographie
+### Étape 1 : Typographie {#step-1-typography}
 
 L'agent vous pose des questions sur vos choix de polices :
 
@@ -110,7 +110,7 @@ L'agent définit ensuite :
 - **Échelle de graisse** : Graisses de police (régulier, moyen, gras, etc.)
 - **Interlignage** : Espacement entre les lignes pour une meilleure lisibilité
 
-### Étape 2 : Palette de couleurs
+### Étape 2 : Palette de couleurs {#step-2-color-palette}
 
 ```
 Définissons votre palette de couleurs.
@@ -140,7 +140,7 @@ L'agent crée une palette complète incluant :
 - Les couleurs sémantiques (succès, avertissement, erreur)
 - Les états de survol et actifs
 
-### Étape 3 : Espacement
+### Étape 3 : Espacement {#step-3-spacing}
 
 ```
 Combien d'espace de respiration souhaitez-vous ?
@@ -162,7 +162,7 @@ L'agent définit des *tokens* d'espacement :
 - Échelle : xs, sm, md, lg, xl, 2xl
 - Valeurs spécifiques pour le rembourrage, la marge, l'écart
 
-### Étape 4 : Bordures et ombres
+### Étape 4 : Bordures et ombres {#step-4-borders-and-shadows}
 
 ```
 Profondeur et définition visuelles :
@@ -185,7 +185,7 @@ L'agent crée :
 - Des *tokens* d'ombre pour les niveaux d'élévation
 - Des *tokens* de largeur de bordure
 
-### Étape 5 : Mouvement et animation
+### Étape 5 : Mouvement et animation {#step-5-motion-and-animation}
 
 ```
 Comment votre site doit-il se sentir lorsqu'il est interactif ?
@@ -207,9 +207,9 @@ L'agent définit :
 - Fonctions d'accélération (*easing functions*) (ease-in, ease-out, ease-in-out)
 - Images clés d'animation pour les interactions courantes
 
-## Appliquer l'esthétique du système de design
+## Appliquer l'esthétique du système de design {#applying-design-system-aesthetics}
 
-### Application automatique
+### Application automatique {#automatic-application}
 
 Après avoir terminé la compétence, l'agent :
 
@@ -218,7 +218,7 @@ Après avoir terminé la compétence, l'agent :
 3. Régénère les styles de blocs pour correspondre au nouveau système
 4. Active le thème mis à jour
 
-### Application manuelle
+### Application manuelle {#manual-application}
 
 Vous pouvez également modifier `theme.json` directement :
 
@@ -257,9 +257,9 @@ Vous pouvez également modifier `theme.json` directement :
 }
 ```
 
-## Visualiser votre système de design
+## Visualiser votre système de design {#viewing-your-design-system}
 
-### Demander à l'agent
+### Demander à l'agent {#ask-the-agent}
 
 ```
 "Montrez-moi mon système de design"
@@ -273,13 +273,13 @@ ou
 
 L'agent affichera votre typographie, vos couleurs, votre espacement et vos autres *tokens*.
 
-### Voir theme.json
+### Voir theme.json {#view-themejson}
 
 Ouvrez `/wp-content/themes/[theme-name]/theme.json` dans un éditeur de texte pour voir les définitions brutes des *tokens*.
 
-## Mettre à jour votre système de design
+## Mettre à jour votre système de design {#updating-your-design-system}
 
-### Mises à jour rapides
+### Mises à jour rapides {#quick-updates}
 
 Demandez à l'agent des changements spécifiques :
 
@@ -299,7 +299,7 @@ ou
 "Changer la police de titre pour une sérif"
 ```
 
-### Refonte complète
+### Refonte complète {#full-redesign}
 
 Relancez la compétence Esthétique du système de design :
 
@@ -309,7 +309,7 @@ Relancez la compétence Esthétique du système de design :
 
 Cela vous guidera à travers toutes les décisions, en partant de vos valeurs actuelles.
 
-### Mises à jour partielles
+### Mises à jour partielles {#partial-updates}
 
 Mettez à jour des aspects spécifiques :
 
@@ -317,15 +317,15 @@ Mettez à jour des aspects spécifiques :
 "Mettre à jour uniquement la palette de couleurs, garder le reste"
 ```
 
-## Bonnes pratiques du système de design
+## Bonnes pratiques du système de design {#design-system-best-practices}
 
-### Cohérence
+### Cohérence {#consistency-1}
 
 - Utiliser les mêmes *tokens* partout
 - Ne pas créer de couleurs ou de tailles ponctuelles
 - Faire référence aux *tokens* plutôt que de coder en dur des valeurs
 
-### Nommage
+### Nommage {#naming}
 
 Utiliser des noms clairs et sémantiques :
 
@@ -335,7 +335,7 @@ Utiliser des noms clairs et sémantiques :
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Évolutivité (Scalability)
+### Évolutivité (Scalability) {#scalability}
 
 Concevoir votre système pour qu'il puisse évoluer :
 
@@ -343,7 +343,7 @@ Concevoir votre système pour qu'il puisse évoluer :
 - Créer des échelles (xs, sm, md, lg, xl) plutôt que des valeurs arbitraires
 - Prévoir les ajouts futurs
 
-### Documentation
+### Documentation {#documentation}
 
 Documenter votre système de design :
 
@@ -351,9 +351,9 @@ Documenter votre système de design :
 - Quand utiliser chaque *token*
 - Les exceptions et cas limites
 
-## Schémas courants de système de design
+## Schémas courants de système de design {#common-design-system-patterns}
 
-### Minimaliste moderne
+### Minimaliste moderne {#modern-minimalist}
 
 - Typographie sans-sérif (Inter, Helvetica)
 - Palette de couleurs limitée (2-3 couleurs)
@@ -361,7 +361,7 @@ Documenter votre système de design :
 - Ombres subtiles
 - Animations fluides et rapides
 
-### Chaleureux et amical
+### Chaleureux et amical {#warm-and-friendly}
 
 - Mélange de sérif et sans-sérif
 - Palette de couleurs chaudes (oranges, gris chauds)
@@ -369,7 +369,7 @@ Documenter votre système de design :
 - Ombres douces
 - Animations ludiques
 
-### Corporate professionnel
+### Corporate professionnel {#professional-corporate}
 
 - Sans-sérif épuré (Roboto, Open Sans)
 - Palette neutre avec couleur d'accentuation
@@ -377,7 +377,7 @@ Documenter votre système de design :
 - Ombres minimales
 - Transitions subtiles
 
-### Créatif et audacieux
+### Créatif et audacieux {#creative-and-bold}
 
 - Typographie distinctive
 - Palette de couleurs audacieuse
@@ -385,7 +385,7 @@ Documenter votre système de design :
 - Ombres fortes
 - Animations perceptibles
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 **Mes changements de système de design ne s'affichent pas**
 - Vider le cache de votre navigateur
@@ -403,7 +403,7 @@ Documenter votre système de design :
 - Modifier manuellement `theme.json` avec les anciennes valeurs
 - Relancer la compétence avec des choix différents
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir défini votre système de design :
 

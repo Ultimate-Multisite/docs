@@ -1,105 +1,152 @@
 ---
-title: Gratis AI Agent Einstellungen
+title: Gratis AI Agent Astellungen
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Settings
+# Gratis AI Agent Astellungen {#gratis-ai-agent-settings}
 
-D'**Settings → Advanced**-scherm in Gratis AI Agent biedt Administrator-Level-Konfiguratiön für Backend-Integrationen, wo mit v1.5.0 eingeführt worde sind. Dë Page dokumentiert d'Felder vom **Feedback Endpoint** und de erwartete Format.
+Den **Astellungen → Erweidert**-Écran am Gratis AI Agent bitt Konfiguratioun op Administrateursniveau fir Backend-Integratiounen. Dës Säit dokumentéiert d'Weiderleedung vu Feedback, Schlëssele fir Sichubidder, d'Ariichtung vum verwaltete Superdav-Service, Google Calendar-Kontrollen, TextBee SMS-Astellungen an netzwäit Funktiouns-Flags.
 
-## Zuegang zu Settings
+## Zougrëff op Astellungen {#accessing-settings}
 
-1. Im WordPress Admin geet an **Gratis AI Agent → Settings**.
-2. Klicke uf de Tab **Advanced**.
+1. Am WordPress-Admin, gitt op **Gratis AI Agent → Astellungen**.
+2. Klickt op den Tab **Erweidert**.
 
-## Feedback Endpoint Konfiguratiön
+## Feedback-Ennpunkt-Konfiguratioun {#feedback-endpoint-configuration}
 
-De Feedback Endpoint empfangt POST-Requests vum AI Agent, wann e Benutzer Feedback über d'Daumen-nach-un Button, de Auto-Prompt Banner oder de `/report-issue` Befehl absendet.
+De Feedback-Ennpunkt kritt POST-Ufroe vum AI Agent, wann e Benotzer Feedback iwwer de Daumen-erof-Knäppchen, den Auto-Prompt-Banner oder de Kommando `/report-issue` ofgëtt.
 
-| Feld | Beschriwwungs |
+| Feld | Beschreiwung |
 |---|---|
-| **Feedback Endpoint URL** | D'URL, déi Feedback-Absendungen als HTTP POST Requests mit eme JSON Body empfangt. |
-| **Feedback API Key** | E Bearer Token, dem weier in de `Authorization` Header vun jeder Feedback-Request gesendet gëtt. Laach ihn leer la, wann din Endpoint ke Authentifizatioun brucht. |
+| **Feedback-Ennpunkt-URL** | D'URL, déi Feedback-Asendungen als HTTP POST-Ufroe mat engem JSON-Kierper kritt. |
+| **Feedback API Key** | E bearer token, deen am `Authorization` header vun all Feedback-Ufro geschéckt gëtt. Eidel loossen, wann Ären Ennpunkt keng Authentifikatioun verlaangt. |
 
-### Erwarteti JSON Payload
+### Erwaarte JSON-Notzlaascht {#expected-json-payload}
 
-Din Feedback Endpoint muss e JSON Body akzepté, de mindestens déi folgend Felder enthält:
+Äre Feedback-Ennpunkt muss e JSON-Kierper mat op d'mannst de folgende Felder akzeptéieren:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "D'Antwort war falsch wärend de Priisbestimmungen.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Zusätzlech Felder chënntet am Payload vorhanden sinn, abhängig vun der Konversatiounskontext.
+Zousätzlech Felder kënnen an der Notzlaascht enthale sinn, jee no Gespréichskontext.
 
-### `triage_category` Werten
+### `triage_category` Wäerter {#triagecategory-values}
 
-D'AI Triage-Schicht weist e vun de folgend Werten dem `triage_category` zue, bevor se de Payload wiiterleit:
+D'AI-Triage-Schicht weist `triage_category` ee vun de folgende Wäerter zou, ier d'Notzlaascht weidergeleet gëtt:
 
-| Wert | Bedéckung |
+| Wäert | Bedeitung |
 |---|---|
-| `factual_error` | De Assistent hat falsche Fakte gegeleit. |
-| `unhelpful_answer` | D'Antwort war technisch korrekt, aber nützlich. |
-| `inappropriate_content` | D'Antwort enthaitt Inhalt, de net a Benutzer gpaasse ass. |
-| `other` | De Feedback het ke bekannte Kategorie bedeit. |
+| `factual_error` | Den Assistant huet falsch faktuell Informatioune geliwwert. |
+| `unhelpful_answer` | D'Äntwert war technesch korrekt, awer net nëtzlech. |
+| `inappropriate_content` | D'Äntwert huet Inhalt enthalen, deen de Benotzer net soll gewise ginn. |
+| `other` | De Feedback huet keng bekannter Kategorie entsprach. |
 
-### Authentifizatioun
+### Authentifikatioun {#authentication}
 
-Wenn d'Endpoint vo Ihrem Endpunkt Authentifizierig brucht, setze s'Feld **Feedback API Key** uf Ihren Bearer Token. De Agent schickt:
+Wann Ären Ennpunkt Authentifikatioun verlaangt, setzt d'Feld **Feedback API Key** op Äre bearer token. Den Agent schéckt:
 
 ```
-Authorization: Bearer <ihre-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Wenn s'Feld **Feedback API Key** leer isch, wird kei `Authorization` Header gschickt.
+Wann d'Feld **Feedback API Key** eidel ass, gëtt keen `Authorization` header geschéckt.
 
-### Feedback-Sammlig deaktivierä
+### Feedback-Sammlung deaktivéieren {#disabling-feedback-collection}
 
-Lass sowohl s'Feld **Feedback Endpoint URL** als au s'Feld **Feedback API Key** leer. D'Daumen-runter-Schaltflächi und d'Feedback-UI bliebe für d'User sichtbar, aber d'Iisend vo de Feedback nöd a irgendeine externe Service wiitergäh.
+Loosst béid Felder **Feedback-Ennpunkt-URL** an **Feedback API Key** eidel. De Daumen-erof-Knäppchen an d'Feedback-UI bleiwen fir Benotzer siichtbar, mee Asendunge ginn net un en externen Déngscht weidergeleet.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Au im **Advanced** Tab isch s'Feld **Brave Search API Key** aktiv, wenn Sie d'Funktionalität vom [Internet Search](../configuration/internet-search) aktiviere wend.
+Och um Tab **Erweidert** aktivéiert d'Feld **Brave Search API Key** d'Fäegkeet [Internet-Sich](../configuration/internet-search).
 
-| Feld | Beschriibig |
+| Feld | Beschreiwung |
 |---|---|
-| **Brave Search API Key** | Ihr API-Schlüssel vo de Brave Search Developer Dashboard. Erforderlich, um s'Internet-Suchen im KI-Assistent z'aktivierä. |
+| **Brave Search API Key** | Ären API-Schlëssel aus dem Brave Search Entwéckler-Dashboard. Néideg, fir Internet-Sich am AI Assistant z'aktivéieren. |
 
-D'Feldbezeichnung enthält en klickbare Link zur Anmeldeseite für d'Brave Search API. Lassen Sie es leer, um s'Internet-Suchen z'deaktivierä.
+D'Feldbezeechnung enthält e klickbare Link op d'Brave Search API Umeldungssäit. Eidel loossen, fir Internet-Sich ze deaktivéieren.
 
-Siehe [Internet Search](../configuration/internet-search) für d'Dokumentation für Endbenutzer zu dere Funktionalität.
+Kuckt [Internet-Sich](../configuration/internet-search) fir Endbenotzer-Dokumentatioun zu dëser Funktioun.
 
-## Feature Flags
+## Verwaltete Superdav-Service {#managed-superdav-service}
 
-Au mit v1.9.0 eingeführt, bietet de Tab **Settings → Feature Flags** Schalter für optionali Funktionalitäte. Jede Flag isch entweder uf ganz Netzwiit aktiviert oder deaktiviert; es git im Momänt kei Möglichkeit, das pro Website z'überschriibe.
+Superdav AI Agent v1.18.0 füügt verwaltete Superdav-Service-Ennpunkten an automatesch Verbindungsbereetstellung fir ënnerstëtzt Websäiten derbäi. Benotzt dës Kontrollen, wann Är Websäit mam gehosteten Ubidder amplaz mat engem manuell konfiguréierte Service-Ennpunkt verbonne soll ginn.
 
-### Zugriff uf Feature Flags
+| Feld | Beschreiwung |
+|---|---|
+| **Verwaltete Superdav-Service** | Aktivéiert déi gehostete Superdav-Service-Verbindung fir ënnerstëtzt Websäiten. |
+| **Verbindung bereetstellen** | Start automatesch Ennpunkt- a Umeldungsinformatiouns-Bereetstellung. Benotzt dëst, nodeems Dir confirméiert hutt, datt d'Websäit de verwalteten Ubidder benotze soll. |
+| **Service-Ennpunkt / Verbindungsstatus** | Weist den aktuellen Ennpunkt oder Verbindungszoustand no der Bereetstellung. |
 
-1. Im WordPress Admin-Bereich gaht Sie zu **Gratis AI Agent → Settings**.
-2. Klicke Sie uf de Tab **Feature Flags**.
+No der Bereetstellung späichert d'Astellungen a kontrolléiert de Verbindungsstatus, ier Dir Iech op verwaltete-Service-Aarbechtsleef verloosst. Wann d'Bereetstellung feelt, iwwerpréift déi ugewisen Uleedung fir en neie Versuch a confirméiert, datt d'Websäit d'Erlaabnis huet, de gehosteten Ubidder ze benotzen.
 
-### Access Control Flags
+## Google Calendar Konfiguratioun {#google-calendar-configuration}
 
-| Flag | Standardwert | Beschriitig |
+Wann d'Kalennerfunktioune vu Superdav AI Agent v1.18.0 aktivéiert sinn, kann den Agent konfiguréiert Kalenneren an Eventdetailer liesen. Kalenner-Tools si liesorientéiert a sinn nëtzlech fir plangbewosst Erënnerungen, Nofroen bei Participanten a Kontaktzouuerdnung.
+
+| Feld | Beschreiwung |
+|---|---|
+| **Google Calendar Umeldungsinformatiounen** | Späichert d'Umeldungsinformatiounen oder d'Token-Verbindung, déi néideg ass, fir Kalennerdaten ze liesen. |
+| **Kalennerauswiel** | Limitéiert, wéi eng konfiguréiert Kalenneren den Agent däerf nokucken. |
+| **Kalenner-Verbindungsstatus** | Confirméiert, ob déi aktuell Umeldungsinformatiounen Kalenneren an Eventer liese kënnen. |
+
+Halt Kalenner-Umeldungsinformatiounen op déi Kalenneren limitéiert, déi den Agent brauch. Verbannt nei oder rotéiert Umeldungsinformatiounen, wann de Status en ofgelafenen Token ugëtt.
+
+## TextBee SMS-Benoriichtegungen {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 füügt TextBee als SMS-Ubidder fir konfiguréiert Benoriichtegungs-Aarbechtsleef derbäi. SMS-Benoriichtegunge solle mat mënschlechen Zoustëmmungs-Paarten fir sensibel oder benotzergeriicht Messagen gekoppelt ginn.
+
+| Feld | Beschreiwung |
+|---|---|
+| **TextBee API-Schlëssel** | Authentifizéiert Ufroen un den TextBee SMS-Ubidder. |
+| **TextBee Apparat / Sender** | Wielt den TextBee-Sender oder Apparat aus, dee fir ausgoend Messagen benotzt gëtt, wann dat vum Ubidder verlaangt gëtt. |
+| **SMS-Benoriichtegungen aktivéiert** | Erlaabt guttgeheescht Aarbechtsleef, Textnoriicht-Benoriichtegungen ze schécken. Deaktivéiert loossen, fir SMS-Verschécken ze verhënneren. |
+
+Schéckt eng Testnoriicht nëmmen un eng Nummer, déi engem Administrateur gehéiert, a confirméiert duerno d'Verhale vun der Zoustëmmungs-Paart, ier geplangten oder participantgeriicht Erënnerungen aktivéiert ginn.
+
+## Funktiouns-Flags {#feature-flags}
+
+Och agefouert an v1.9.0, bitt den Tab **Astellungen → Funktiouns-Flags** Umschalter fir optional Funktionalitéit. All Flag ass entweder aktivéiert oder netzwäit deaktivéiert; et gëtt de Moment keng Iwwerschreiwung pro Websäit.
+
+### Zougrëff op Funktiouns-Flags {#accessing-feature-flags}
+
+1. Am WordPress-Admin, gitt op **Gratis AI Agent → Astellungen**.
+2. Klickt op den Tab **Funktiouns-Flags**.
+
+### Zougrëffskontroll-Flags {#access-control-flags}
+
+| Flag | Standard | Beschreiwung |
 |---|---|---|
-| **Nur für Administratore beschränke** | Aus | Wenn aktiviert, chönne nur Benutzer mit de Rolle `administrator` de AI Agent Chat Panel öffne. Alli andere Rollen gsehnd e Nachricht wie "Kontaktieret Ihre Administrator". |
-| **Nur für Netzwerk-Admins beschränke** | Aus | Wenn das uf eme Multisite Network aktiviert isch, chönne nume Super Admins de Agent bruche. Einzelsite-Admins sind blockiert. Das het Vorrang vor "Nur für Administratore beschränke", wenn beidi aktiviert sind. |
-| **Abonnentenzugriff erlauben** | Aus | Wenn aktiviert, chönne Benutzer mit de Rolle `subscriber` d'Chat-Schnittstell bruche, aber si sind uf lesi-nami Fähigkeite beschränkt (kei Post-Erstellige oder Einstellungswiächsel). |
-| **Für Nicht-Mitglieder deaktivieren** | Aus | Integriert sich mit em Membership-Status vo Ultimate Multisite. Wenn aktiviert, wird de Chat für Sites versteckt, wo kei aktivi Mitgliedschaft händ. |
+| **Op Administrateure limitéieren** | Aus | Wann aktivéiert, kënnen nëmme Benotzer mat der Roll `administrator` de AI Agent-Chat-Panel opmaachen. All aner Rollen gesinn amplaz eng "Kontaktéiert Ären Administrateur"-Noriicht. |
+| **Op Network Admins limitéieren** | Aus | Wann op engem Multisite-Netzwierk aktivéiert, kënnen nëmme Super Admins den Agent benotzen. Eenzel Site-Administrateure gi blockéiert. Huet Virrang virun "Op Administrateure limitéieren", wann déi zwou aktivéiert sinn. |
+| **Subscriber-Zougang erlaben** | Aus | Wann aktivéiert, kënnen Benotzer mat der Roll `subscriber` d’Chat-Interface benotzen, mee si sinn op lies-nëmmen-Fäegkeete limitéiert (keng Erstellung vu Bäiträg oder Ännerunge vun Astellungen). |
+| **Fir Net-Memberen deaktivéieren** | Aus | Integréiert mam Ultimate Multisite-Memberschaftsstatus. Wann aktivéiert, gëtt de Chat fir Siten verstoppt, déi keng aktiv Memberschaft hunn. |
 
-### Branding Flags
+### Branding-Flags {#branding-flags}
 
-| Flag | Standardwert | Beschriitig |
+| Flag | Standard | Beschreiwung |
 |---|---|---|
-| **"Powered by Gratis AI Agent" Footer verbergen** | Aus | Entfernt d'Branding-Zueordnungslinie, wo am Bode vom Chat Widget zeigt wird. Empfehlenswert für White-Label-Implementierige. |
-| **Benutzername des Agents anpassen** | *(leer)* | Ersetzt de Standard-Label "Gratis AI Agent" im Chat-Header und im Admin-Menü dur Ihren eigene Produktname. Leer lassen, um de Standard z'bruche. |
-| **Agent-Auswahl verbergen** | Aus | Wenn aktiviert, chönne Benutzer nöd zwüsche de fünf integrierte Agents wächsle. De aktuelli Agent isch fix uf das gsetzt, was in Settings → General als Standard konfiguriert isch. |
-| **Webseiten-Icon als Chat-Avatar bruche** | Aus | Ersetzt s'Standard-AI-Icon im Chat Widget Header dur s'WordPress-Webseiten-Icon (gsetzt unter Appearance → Customize → Site Identity). |
+| **"Powered by Gratis AI Agent"-Footer verstoppen** | Aus | Entfernt d’Branding-Zouweisungszeil, déi ënnen am Chat-Widget ugewise gëtt. Recommandéiert fir White-Label-Deployementer. |
+| **Personaliséierten Agent-Numm** | *(eidel)* | Ersetzt de Standard-Label "Gratis AI Agent" am Chat-Header an am Admin-Menü duerch Ären eegene Produktnumm. Eidel loossen, fir de Standard ze benotzen. |
+| **Agent-Picker verstoppen** | Aus | Wann aktivéiert, kënnen d’Benotzer net tëschent de fënnef agebauten Agenten wiesselen. Den aktuelle Agent ass op dat festgeluecht, wat als Standard an Settings → General konfiguréiert ass. |
+| **Site-Icon als Chat-Avatar benotzen** | Aus | Ersetzt de Standard-AI-Icon am Header vum Chat-Widget duerch d’WordPress-Site-Icon (agesat ënner Appearance → Customize → Site Identity). |
 
-### Änderungen anwenden
+### Automatiséierungs-Sécherheets-Flags {#automation-safety-flags}
 
-Klicke uf **Einstellungen speichern**, nachdem du e Flag umgeschaltet häsch. D'Änderige sind sofort aktiv – es isch kei Cache-Leeren oder Plugin-Neustart nötig.
+Superdav AI Agent v1.18.0 féiert mënschlech Geneemegungs-Paarten an Erënnerungsopzeechnunge fir méi sécher Automatiséierungslaf an. Dës Kontrollen kënnen an de Feature-Flags oder an den erweiderten Automatiséierungsastellungen opdauchen, jee no installéiertem Package.
+
+| Flag | Standard | Beschreiwung |
+|---|---|---|
+| **Mënschlech Geneemegung erfuerderen** | Recommandéiert un | Pauséiert sensibel Automatiséierungen, bis en autoriséierte Benotzer déi virgeschloen Aktioun iwwerpréift a confirméiert. |
+| **Erënnerungs-Deduplicatioun** | Un | Späichert verschéckt Erënnerungen, sou datt Widderhuelungen oder geplangte Laf keng duebel Notifikatioune verschécken. |
+| **Kalenner-Tools aktivéieren** | Aus bis konfiguréiert | Erlaabt dem Agent, konfiguréiert Google-Kalenneren an Eventer ze liesen. |
+| **SMS-Notifikatiounen aktivéieren** | Aus bis konfiguréiert | Erlaabt geneemegt Workflows, TextBee-SMS-Notifikatiounen ze verschécken, nodeems d’Umeldedonnéeë gespäichert goufen. |
+
+### Ännerungen uwenden {#applying-changes}
+
+Klickt op **Save Settings**, nodeems Dir eng Flag ëmgeschalt hutt. Ännerunge ginn direkt a Kraaft — keng Cache-Eidelmaachung oder Plugin-Reaktivéierung ass erfuerderlech.

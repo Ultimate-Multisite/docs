@@ -3,11 +3,11 @@ title: Ndiine sei Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Chii chii Ultimate Multisite
+# Chii chii Ultimate Multisite {#why-ultimate-multisite}
 
 Kana wako uyu article unenge, zvinhasi zvakaitwa kuti mweya wako wekugara (business idea) unenge uchitika. Tinoramba kuti munenge nemazavantero anoziva pamusoro pei chinhu ichi chinotarisirwa.
 
-## Ultimate Multisite ndiri iye?
+## Ultimate Multisite ndiri iye? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ndiyo plugin ya WordPress Multisite inoshandisa kuti uone kuita WaaS (Website as a Service) kune vagariro vako. Neplugin yedu, unogona kuva ne-subscription tiers dzakasiyana uye vagariro vako vange vachipa mabhariro akasiyana kuti uve nesite inoshandiswa munzira yako ya Multisite network.
 
@@ -15,7 +15,7 @@ Ultimate Multisite inokupa zvakanaka kuti uone nharaunda dzako dzinogona kuita p
 
 Ndinenge iye kunge kuramba, nekuti unogona kuenda kupfuura functions dzake neadd-ons uye webhooks.
 
-## Zvinenge zvinhasi rinezvine
+## Zvinenge zvinhasi rinezvine {#other-features}
 
 Ultimate Multisite inopa zvinhasi izvi:
 
@@ -33,11 +33,11 @@ Nekuti zvinhasi zvakanyanya:
 
 * Search and Replace API: Unogonawo kuita search and replace API kune templates dze site nekubata placeholders zvakaita sei {{site_name}} uye kutenda izvi neSearch and Replace API kuti zvinoreva (auto-populate) nekuita zvemaoko, nekuisa nguva dzinotoro dziri kubva panguva yakanga vanhu vako vachireva zvinhu panguva yakanga vachireva.
 
-## Zvinhasi Zvinogona Kuita (Use cases)
+## Zvinhasi Zvinogona Kuita (Use cases) {#use-cases}
 
 Nekuti ndiri munenge unoziva, ndiri munenge unoziva zvinhasi zvinogone kuita neUltimate Multisite.
 
-### Case 1: Agency
+### Case 1: Agency {#case-1-an-agency}
 
 Nzvimbo, zvinhasi zveagency zvakakosha zvakaita sei kuita design dzemwebuse nekubata zvinhu sem hosting kana marketing kubva kuitendwa sezvinhu zvine zvinenge zviri kuita.
 
@@ -47,7 +47,7 @@ Kutenderera kwakawanda kunoita plugins na themes pane product (per-product) neku
 
 Agencies dzavo vakanaka neZuva nekuti Ultimate Multisite inokudzo kuno kuva kuti zvizivikanzi zvinodiwa - kuva nekuti vanoita zvakaita zvavo zvakasiyana - kuimba dzinogona kubatana.
 
-### Case 2: Mupfungwa Wenyaya (Niche Provider)
+### Case 2: Mupfungwa Wenyaya (Niche Provider) {#case-2-niche-provider}
 
 Kuna chibvumirano chakaita kuti, “Gara zvinhu zvimwe uye gara zvakanaka.” Kune vose vanoita zvakasiyana, izvi rinoreva kuita zvinhu zvine chinokosha chete.
 
@@ -57,7 +57,7 @@ Mupfungwa wakaunoda kuitira Ultimate Multisite, template site yekuona ndiyo inon
 
 Kune munhu anopinga sites neservices dzinogara (niche sites and services), izvi rinoreva kuti pane zvinokosha zvisina kuone kuti uwezera site yakakwana nemaplakiti uye design dzinezo. Munhu anoda kupfuura zvinhu zvakanaka chete kuitira service.
 
-### Case 3: WordPress Web Hosting
+### Case 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Kune nzira dzakawanda dzinogona kutanga (host) sites dzine WordPress, asi chiri kunoita kuti zvinhu zvinokwanisa kuva yakapfuura kubera kupfuura web space kune munhu neWordPress yakanaka yakashaya. Izvi rinoreva kuti zvakawanda zvinoda kuita nemazano uye kufamba zvakasiyana kuti uwezere service yakakosha.
 

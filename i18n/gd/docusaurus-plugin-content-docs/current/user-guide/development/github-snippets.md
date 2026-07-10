@@ -3,7 +3,7 @@ title: Sgàilid GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Conas a' sgrìobhaid na snippet-e Ultimate Multisite ar an rian GitHub a chàirinn
+# Conas a' sgrìobhaid na snippet-e Ultimate Multisite ar an rian GitHub a chàirinn {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Tha eadar-fhaigh code snippets aig rian GitHub a tha fada le fhaighinn de uisgeirichean Ultimate Multisite, a tha a' chleachdadh luchdair a tha a' gineadh faighinn fhaighinn fhaighinn Google Analytics script ar pàipean sign-up no a' chlàradh meta box a' chlàradh de dhâsgaid admin.
 
@@ -19,7 +19,7 @@ Tha 2 fhais airson a' chleachdadh an code seo:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Conas a chlàradh an snippet ar file functions.php a thàinig tòmaichean.
+# Conas a chlàradh an snippet ar file functions.php a thàinig tòmaichean. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Gnìomhach (Log in) do rian WordPress Network admin dashboard agus atharrich Themes > Theme Editor (Sealladh screenshot a tha a' chlàradh a tha a' chlàradh a' chlàradh).
 

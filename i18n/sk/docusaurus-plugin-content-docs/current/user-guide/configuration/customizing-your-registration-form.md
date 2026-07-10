@@ -1,154 +1,156 @@
 ---
-title: Prispôsobenie vášho formulára registráции
+title: Prispôsobenie vášho registračného formulára
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Prispôsobenie vášho formulára registrácii
+# Prispôsobenie vášho registračného formulára {#customizing-your-registration-form}
 
-Aby bol váš web unikátny vo vzťah k všetkým iným SaaS riešeniam na platforme WordPress, Ultimate Multisite vám umožňuje prispôsobiť vaše stránky pre prihlásenie a registrácia pomocou našej funkcie **Checkout Forms**.
+Aby vaša sieť vyzerala jedinečne oproti všetkým ostatným SaaS postaveným na platforme WordPress, Ultimate Multisite vám umožňuje prispôsobiť registračné a prihlasovacie stránky pomocou našej funkcie **Checkout Forms**.
 
-Hoci sú to jednoduchý a flexibilný spôsob experimentovania s rôznymi prístupmi pri snahe konvertovať nových zákazníkov, používajú sa ich hlavne na vytvorenie personalizovaných formulárov registrácii. Tento článok má za cieľ ukázať vám, ako to urobiť.
+Hoci sú jednoduchým a flexibilným spôsobom, ako experimentovať s rôznymi prístupmi pri snahe konvertovať nových zákazníkov, väčšinou sa používajú na vytváranie personalizovaných registračných formulárov. Cieľom tohto článku je ukázať vám, ako to môžete urobiť.
 
-## Stránky pre prihlásenie a registrácia:
+## Prihlasovacie a registračné stránky: {#login-and-registration-pages}
 
-Po nainštalovaní Ultimate Multisite automaticky vytvorí prispôsobené stránky pre prihlásenie a registrácia na vašej hlavnej sieti. Môžete tieto štandardné stránky v anytime zmeniť, navrhnutím do sekcie **Ultimate Multisite > Settings > Login & Registration**.
+Po inštalácii Ultimate Multisite automaticky vytvorí vlastné prihlasovacie a registračné stránky na vašej hlavnej lokalite. Tieto predvolené stránky môžete kedykoľvek zmeniť tak, že prejdete na stránku **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Stránka nastavení prihlásenia a registrácie](/img/config/settings-general.png)
 
-Tu je kompletný prehľad stránky nastavení pre prihlásenie a registrácia:
+Tu je úplný pohľad na stránku nastavení prihlásenia a registrácie:
 
-![Kompletná stránka nastavení prihlásenia a registrácie](/img/config/settings-login-registration-full.png)
+![Úplná stránka nastavení prihlásenia a registrácie](/img/config/settings-login-registration-full.png)
 
-Podime si pozrime každý z možností, ktoré môžete prispôsobiť na stránke **Login & Registration**:
+Pozrime sa na každú z možností, ktoré môžete prispôsobiť na stránke **Login & Registration**:
 
-  * **Enable registration (Umožniť registrácia):** Táto možnosť vojde alebo vypína registrácia v vašej sieti. Ak je vypnutá, zákazníci nemôžu sa zaregistrovať ani predpísabiť vaše produkty.
+  * **Enable registration:** Táto možnosť povolí alebo zakáže registráciu vo vašej sieti. Ak je vypnutá, vaši zákazníci sa nebudú môcť zaregistrovať a predplatiť si vaše produkty.
 
-  * **Enable email verification (Umožniť overenie e-mailom):** Ak je táto možnosť zapnutá, zákazníci, ktorí sa predpísajú na bezplatný plán alebo plný plán s skúšobnou ležiakou, dostanú overený e-mail a budú musieť kliknúť na linku pre overenie, aby sa ich web vytvoril.
+  * **Enable email verification:** Ak je táto možnosť zapnutá, zákazníci, ktorí si predplatia bezplatný plán alebo platený plán so skúšobným obdobím, dostanú overovací e-mail a budú musieť kliknúť na overovací odkaz, aby sa ich webové stránky vytvorili.
 
-* **Predvolaná registračná stránka:** Toto je štandardná stránka pre registráciu. Musíte ju publikovať na vašom webu a musí obsahovať formulár pre registráciu (ktorý sa tiež nazýva formulár pre pokladňovanie) – kde si vaši zákazníci predpíšu vaše produkty. Môžete vytvoriť quantoskoľvek registračné stránky a formulárov pre pokladňovanie, ak si to chcete, ale pamätajte, že musíte do registračnej stránky pridať shortcode pre formulár pre pokladňovanie, inak sa nebude zobrazovať.
+  * **Default registration page:** Toto je predvolená stránka pre registráciu. Táto stránka musí byť zverejnená na vašej webovej stránke a musí obsahovať registračný formulár (známy aj ako checkout formulár) – kde sa vaši klienti prihlásia na odber vašich produktov. Môžete vytvoriť toľko registračných stránok a checkout formulárov, koľko chcete, len nezabudnite vložiť shortcode checkout formulára na registračnú stránku, inak sa nezobrazí.
 
-* **Použiť vlastnú login stránku:** Táto možnosť vám umožňuje použiť prispôsobenú login stránku, iná ako štandardná stránka wp-login.php. Ak si toto zapne, môžete vybrať, ktorá stránka bude používaná na prihlásenie v možnosti **Predvolaná login stránka** (priamo pod ňou).
+  * **Use custom login page:** Táto možnosť vám umožňuje použiť prispôsobenú prihlasovaciu stránku namiesto predvolenej stránky wp-login.php. Ak je táto možnosť zapnutá, môžete vybrať, ktorá stránka sa použije na prihlásenie v možnosti **Default login page** (hneď nižšie).
 
-* **Zmaskovať pôvodnú URL pre prihlásenie (wp-login.php):** Ak chcete skryť pôvodnú URL pre prihlásenie, môžete zapnúť túto možnosť. Toto je užitočné na zobrazenie brute-force útokov. Ak si túto možnosť aktivujete, Ultimate Multisite zobrazí chybu 404, keď používateľ skúsi prístup k pôvodnému linku wp-login.php.
+  * **Obfuscate the original login url (wp-login.php)** : Ak chcete skryť pôvodnú prihlasovaciu URL, môžete túto možnosť zapnúť. Je to užitočné na prevenciu útokov hrubou silou. Ak je táto možnosť povolená, Ultimate Multisite zobrazí chybu 404, keď sa používateľ pokúsi pristúpiť k pôvodnému odkazu wp-login.php
 
-* **Nezamerne vynútiť synchronizovanú publikáciu stránky:** Po tom, čo zákazník predpíše produkt v sieti, nová stránka v stavu "pending" musí byť zmenená na reálnu sietičku. Proces publikovania sa vykonáva via Job Queue, asynchronicne. Zapnite túto možnosť, aby ste vynútili publikáciu v tom istom požiadaniu ako registracie.
+  * **Force synchronous site publication:** Keď si zákazník predplatí produkt v sieti, nová čakajúca lokalita sa musí skonvertovať na skutočnú sieťovú lokalitu. Proces zverejnenia prebieha cez Job Queue, asynchrónne. Povoľte túto možnosť, aby sa zverejnenie vynútilo v tej istej požiadavke ako registrácia.
 
-Teraz si podimeme iné možnosti, ktoré sú stále relevantné pre proces prihlásenia a registrácie. Sú tu nižšie u sekcie **Iné možnosti** na istej stránke Prihlásenie a registracie:
+Teraz sa pozrime na ďalšie možnosti, ktoré sú stále relevantné pre proces prihlásenia a registrácie. Nachádzajú sa hneď pod **Other options** na tej istej stránke Login & registration:
 
-* **Predvolaná rola:** Toto je rola, ktorú si vaši zákazníci budú mať na svojej webovej stránke po dokončení procesu registráции.
+  * **Default role:** Toto je rola, ktorú budú mať vaši zákazníci na svojej webovej stránke po procese registrácie.
 
-* **Aktívajte Jumper:** Umožňuje prístup k šortkodu Jumper v adminom paneli. Jumper vám umožňuje administrátorom rýchlo prejsť na obrazovky Ultimate Multisite, sieťové objekty a iné podporované destinácie bez toho, aby museli prechádzať cez každý menu. Vypnite ho, ak preferujete skryť nástroj rýchleho navigovania z adminového rozhrania.
+  * **Enable Jumper:** Povolí skratku Jumper v administračnej oblasti. Jumper umožňuje administrátorom rýchlo preskočiť na obrazovky Ultimate Multisite, sieťové objekty a ďalšie podporované ciele bez prechádzania každého menu. Vypnite ho, ak chcete tento nástroj rýchlej navigácie skryť z administračného rozhrania.
 
-* **Pridajte používateľov aj na hlavnú sieti:** Aktivácia tejto možnosti prispôsobuje používateľa aj k hlavnej sieti vašej siete po procese registrácii. Ak aktivujete túto možnosť, pod ňou sa zobrazí aj možnosť nastaviť **domási rôľu** týchto používateľov na vašom webovej stránke.
+  * **Add users to the main site as well:** Povolením tejto možnosti sa používateľ po procese registrácie pridá aj na hlavnú lokalitu vašej siete. Ak túto možnosť povolíte, hneď nižšie sa zobrazí aj možnosť nastaviť **predvolenú rolu** týchto používateľov na vašej webovej stránke.
 
-* **Aktívajte viac účtov:** Umožňuje používateľom mať účty v rôznych sietiach vašej siete s rovnakým adresou e-mailu. Ak je táto možnosť vypnutá, vaši zákazníci nemôžu na iných webových stránkach bežiacich na vašej sieti vytvoriť účet s rovnakým adresou e-mailu.
+  * **Enable multiple accounts:** Umožnite používateľom mať účty na rôznych lokalitách vašej siete s rovnakou e-mailovou adresou. Ak je táto možnosť vypnutá, vaši zákazníci si nebudú môcť vytvoriť účet na iných webových stránkach bežiacich vo vašej sieti s rovnakou e-mailovou adresou.
 
-A to sú všetky možnosti týkajúce sa prihlásenia a registrácii, ktoré môžete prispôsobiť! Nezabudnite uložiť svoje nastavenia po dokončení ich úpravy.
+A to sú všetky možnosti súvisiace s prihlásením a registráciou, ktoré môžete prispôsobiť! Po dokončení úprav nezabudnite uložiť svoje nastavenia.
 
-## Používanie viacerých formulárov registrácií:
+## Používanie viacerých registračných formulárov: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 ponúka editor formulára pre pokladňovanie (checkout form editor), ktorý vám umožňuje vytvárať quantoskoľvek formulárov, s rôznymi polmi, produktmi a inak.
+Ultimate Multisite 2.0 ponúka editor checkout formulárov, ktorý vám umožňuje vytvoriť toľko formulárov, koľko chcete, s rôznymi poľami, ponúkanými produktmi atď.
 
-Oba stránky prihlásenia a registrácii sú vložene s krátkymi kódmi: **[wu_login_form]** na stránke prihlásenia a **[wu_checkout]** pre stránku registrácii. Môžete si ďalej prispôsobiť stránku registrácií, vytvárajúc alebo upraviac formuláre pre pokladňovanie (checkout forms).
+Prihlasovacia aj registračná stránka sú vložené pomocou shortcodes: **[wu_login_form]** na prihlasovacej stránke a**[wu_checkout]** pre registračnú stránku. Registračnú stránku môžete ďalej prispôsobiť vytvorením alebo zostavením checkout formulárov.
 
-Aby ste sa dostali k tejto funkcii, prejdite do menu **Checkout Forms**, v ľavej lište.
+Ak chcete získať prístup k tejto funkcii, prejdite do menu **Checkout Forms** na ľavom bočnom paneli.
 
-![Menu Checkout Forms v lište](/img/config/checkout-forms-list.png)
+![Menu Checkout Forms v bočnom paneli](/img/config/checkout-forms-list.png)
 
-Na tejto stránke vidíte všetky formuláre pre pokladňovanie, ktoré máte.
+Na tejto stránke môžete vidieť všetky checkout formuláre, ktoré máte.
 
-Ak chcete vytvoriť nový, kliknite просто na **Add Checkout Form** (Pridať formulár pre pokladňovanie) v hornej časti stránky.
+Ak chcete vytvoriť nový, jednoducho kliknite na **Add Checkout Form** v hornej časti stránky.
 
-Môžete si vybrať jednu z týchto troch možností ako bod na začiatok: jednorazový krok, viacstupňový alebo prázdny. Potom kliknite na **Prejsť do editoru**.
+Ako východiskový bod si môžete vybrať jednu z týchto troch možností: jeden krok, viac krokov alebo prázdny formulár. Potom kliknite na **Go to the Editor**.
 
-![Pridanie formulára pokladne s možnosťami jednorazového kroku, viacstupňového alebo prázdneho](/img/config/checkout-forms-list.png)
+![Pridanie Checkout Form s možnosťami jeden krok, viac krokov alebo prázdny formulár](/img/config/checkout-forms-list.png)
 
-Alternatívne môžete upraviť alebo duplikovať formuláre, ktoré už máte, kliknutím na možnosti pod ich názvom. Tam nájdete aj možnosti, ako zkopírovať krátky kód (shortcode) formulára alebo ho odstrániť.
+Prípadne môžete upraviť alebo duplikovať formuláre, ktoré už máte, kliknutím na možnosti pod ich názvom. Nájdete tam aj možnosti na skopírovanie shortcode formulára alebo na odstránenie formulára.
 
-![Akcie pri prejeđaní formulára pokladne s úpravou, duplikáciou a odstránením](/img/config/checkout-form-hover-actions.png)
+![Akcie pri prejdení kurzorom nad checkout formulár s úpravou, duplikovaním a odstránením](/img/config/checkout-form-hover-actions.png)
 
-Ak si vyberiete jednorazový krok alebo viacstupňový, formulár pokladne bude už predpripravený s základnými krokvami pre jeho fungovanie. Potom, ak chcete, môžete pridať extra kroky.
+Ak vyberiete jeden krok alebo viac krokov, checkout formulár už bude vopred vyplnený základnými krokmi potrebnými na jeho fungovanie. Potom, ak chcete, doň môžete pridať ďalšie kroky.
 
-### Upravovanie formulára pokladne:
+### Úprava Checkout Form: {#editing-a-checkout-form}
 
-Ako sme to už skôr spomenuli, môžete vytvárať formuláre pokladne na rôzne účely. V tomto príklade sa budeme pýtať si registračný formulár.
+Ako sme už spomenuli, checkout formuláre môžete vytvárať na rôzne účely. V tomto príklade budeme pracovať na registračnom formulári.
 
-Po prejsť do editoru formulára pokladne mu dať názov (ktorý bude používať iba internú referenciu) a slug (používaný na vytvorenie krátkych kódov, napríklad).
+Po prechode do editora checkout formulára dajte svojmu formuláru názov (bude sa používať iba na internú referenciu) a slug (používaný napríklad na vytváranie shortcodes).
 
-![Editor formulára pokladne s polmi názvom a slugu](/img/config/checkout-form-editor.png)
+![Editor formulára pokladne s poľami názvu a slugu](/img/config/checkout-form-name-slug.png)
 
-Formuláre sú zložité krokov a polí. Nový krok môžete pridať kliknutím na **Pridať nový krok pokladne**.
+Formuláre sa skladajú z krokov a polí. Nový krok môžete pridať kliknutím na **Pridať nový krok pokladne**.
 
 ![Tlačidlo Pridať nový krok pokladne](/img/config/checkout-form-add-step.png)
 
-Na prvom záložke okna modálne formulujte obsah svojho kroku. Dať mu ID, názov a popis. Tieto položky sa väčšom najčastejšie používajú internom účelom.
+Na prvej karte modálneho okna vyplňte obsah kroku svojho formulára. Zadajte mu ID, názov a popis. Tieto položky sa väčšinou používajú interne.
 
-![Záložka obsahu kroku pokladne s ID, názvom a popisom](/img/config/checkout-form-step-content.png)
+![Karta obsahu kroku pokladne s ID, názvom a popisom](/img/config/checkout-form-step-content.png)
 
-Ďalej nastavte viditeľnosť kroku. Môžete si vybrať medzi **Vždy zobrazovať**, **Používať iba pre prihlásené používateľov** alebo **Používať iba pre hostov**.
+Ďalej nastavte viditeľnosť kroku. Môžete si vybrať medzi **Vždy zobraziť** , **Zobraziť iba prihláseným používateľom** alebo **Zobraziť iba hosťom**.
 
 ![Možnosti viditeľnosti kroku pokladne](/img/config/checkout-form-step-visibility.png)
 
-Nakoniec je čas skonfigurovať štýl kroku. Toto sú voliteľné polia.
+Nakoniec nakonfigurujte štýl kroku. Tieto polia sú voliteľné.
 
 ![Konfigurácia štýlu kroku pokladne](/img/config/checkout-form-step-style.png)
 
-Teraz je čas pridať polia k našemu prvomu kroku. Stačí kliknúť na **Pridať nové pole** a vybrať typ sekcie, ktorú chcete.
+Teraz je čas pridať polia do nášho prvého kroku. Stačí kliknúť na **Pridať nové pole** a vybrať typ sekcie, ktorý chcete.
 
-![Tlačidlo Pridať nové pole](/img/config/checkout-form-step-with-fields.png)![Výpadový menu výberu typu pola](/img/config/checkout-form-field-type-dropdown.png)
+![Tlačidlo Pridať nové pole](/img/config/checkout-form-add-field-button.png)![Rozbaľovací zoznam výberu typu poľa](/img/config/checkout-form-field-type-dropdown.png)
 
-Každé pole má rôzne parametre, ktoré musíte vyplniť. Pre tento prvý vstup vyberieme pole **Username** (Používateľské meno).
+Každé pole má rôzne parametre, ktoré je potrebné vyplniť. Pre tento prvý vstup vyberieme pole **Používateľské meno**.
 
-![Konfigurácia pola Username](/img/config/checkout-form-username-content.png)![Parametre pola Username](/img/config/checkout-form-username-visibility.png)![Dodatkové nastavenia pola Username](/img/config/checkout-form-username-style.png)
+![Konfigurácia poľa Používateľské meno](/img/config/checkout-form-username-content.png)![Parametre poľa Používateľské meno](/img/config/checkout-form-username-visibility.png)![Ďalšie nastavenia poľa Používateľské meno](/img/config/checkout-form-username-style.png)
 
-Môžete pridať quantos krokov a polí, ktoré potrebujete. Aby ste mohli zobraziť svoje produkty na výber pre zákazníkov, použite pole **Pricing Table** (Tabuľka cien). Ak chcete umožniť svojim klientom vybrať šablón, pridajte pole **Template Selection**. A tak ďalej.
+Môžete pridať toľko krokov a polí, koľko potrebujete. Ak chcete zobraziť svoje produkty, aby si vaši zákazníci mohli jeden vybrať, použite pole Cenová tabuľka. Ak chcete nechať svojich klientov vybrať si šablónu, pridajte pole Výber šablóny. A tak ďalej.
 
-_**Poznámka:** Ak vytvoríte produkt po vytvorení formulára pokladne, budete musieť ten produkt pridať do sekcie Tabuľka cien. Ak ho nepridáte, produkt sa zákazníkom na stránke registráции neobjaví._
+![Editor formulára pokladne s poľom výberu šablóny](/img/config/checkout-form-with-template-field.png)
 
-_**Poznámka 2:** username (používateľské meno), email, heslo, názov siete, URL siete, súhrn objednávky, platba a tlačidlo odoslať sú povinné polia pre vytvorenie formulára pokladne._
+_**Poznámka:** Ak vytvoríte produkt po vytvorení formulára pokladne, budete musieť produkt pridať v sekcii Cenová tabuľka. Ak ho nepridáte, produkt sa vašim zákazníkom na registračnej stránke nezobrazí._
 
-Kým pracujete na svojom formulári pokladne, môžete vždy použiť tlačidlo **Preview** (Predzobraziť), aby ste videli, ako to budú vziať vaši zákazníci. Môžete tiež prepínať medzi zobrazením ako existujúce používateľ alebo návštevca.
+_**Poznámka 2:** používateľské meno, e-mail, heslo, názov webu, URL webu, súhrn objednávky, platba a tlačidlo odoslania sú povinné polia na vytvorenie formulára pokladne._
 
-![Predpoveď tlačidlo v redktore formulára pokladne](/img/config/checkout-form-preview-button.png)![Predpoveď formulára pokladne ako návšteva alebo existujúci používateľ](/img/config/checkout-form-preview-modal.png)
+Počas práce na formulári pokladne môžete vždy použiť tlačidlo Náhľad a pozrieť si, ako budú formulár vidieť vaši klienti. Môžete tiež prepínať medzi zobrazením ako existujúci používateľ alebo návštevník.
 
-Nakoniec, v **Pokročilých možnostiach** si môžete nastaviť správu pre stránku **Ďakujeme**, pridať kód (snippets) na sledovanie konverzií, pridať vlastný CSS na váš formulár pokladne alebo ho obmedziť na určité krajiny.
+![Tlačidlo Náhľad v editore formulára pokladne](/img/config/checkout-form-preview-button.png)![Náhľad formulára pokladne ako návštevník alebo existujúci používateľ](/img/config/checkout-form-preview-modal.png)
 
-![Pokročilé možnosti s stránkou ďakujeme, sledovaním konverzie a vlastným CSS](/img/config/checkout-form-advanced.png)
+Nakoniec v časti **Pokročilé možnosti** môžete nakonfigurovať správu pre stránku **Ďakujeme**, pridať snippets na sledovanie konverzií, pridať vlastné CSS do formulára pokladne alebo ho obmedziť na určité krajiny.
 
-Môžete tiež manuálne zapnúť alebo vypnúť svoj formulár pokladne, premiňujúc túto možnosť v pravom sloupku, alebo ho trvalo odstrániť.
+![Pokročilé možnosti so stránkou Ďakujeme, sledovaním konverzií a vlastným CSS](/img/config/checkout-form-advanced.png)
 
-![Aktívny prepínač a možnosť odstrániť formulár pokladne](/img/config/checkout-form-active.png)
+Formulár pokladne môžete tiež manuálne povoliť alebo zakázať prepnutím tejto možnosti v pravom stĺpci, alebo formulár natrvalo odstrániť.
 
-Nezabudnite urobiť zálohu svojho formulára pokladne!
+![Prepínač aktívneho stavu a možnosť odstránenia formulára pokladne](/img/config/checkout-form-active.png)
+
+Nezabudnite uložiť svoj formulár pokladne!
 
 ![Tlačidlo Uložiť formulár pokladne](/img/config/checkout-form-save.png)
 
-Aby ste získali krátky kód (shortcode) vášho formulára, kliknite na **Generovať krátky kód** a skopírujte výsledok z okna modálneho okna.
+Ak chcete získať shortcode svojho formulára, kliknite na **Vygenerovať shortcode** a skopírujte výsledok zobrazený v modálnom okne.
 
-![Modálne okno Generovanie krátkeho kódu s krátkim kódom na skopírovanie](/img/config/checkout-form-editor.png)
+![Modálne okno Vygenerovať shortcode so shortcode na skopírovanie](/img/config/checkout-form-editor.png)
 
-_**Poznámka:** Musíte tento krátky kód pridať na svoju registračnú stránku, aby sa tento formulár pokladne do nej dostal._
+_**Poznámka:** Tento shortcode budete musieť pridať na svoju registračnú stránku, aby sa do nej pridal tento formulár pokladne._
 
-## Predvoliteľné produkty a šablóny pomocou parametrov URL:
+## Predvýber produktov a šablón pomocou URL parametrov: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Ak chcete vytvoriť prispôsobené tabuľky cien pre vaše produkty a predvoliť v formulári pokladne produkt alebo šablónu, ktorú zákazník vyberie z vašej tabuľky cien alebo stránky s šablónami, môžete použiť parametre URL.
+Ak chcete vytvoriť prispôsobené cenové tabuľky pre svoje produkty a vo formulári pokladne predvybrať produkt alebo šablónu, ktorú si zákazník vyberie z vašej cenovej tabuľky alebo stránky so šablónami, môžete na to použiť URL parametre.
 
-### **Pre plány:**
+### **Pre plány:** {#for-plans}
 
-Prejdite do **Ultimate Multisite > Products > Select a plan**. Mali by ste vidieť tlačidlo **Kliknutím na kopiť prenosný odkaz** v hornej časti stránky. Toto je odkaz, ktorý môžete použiť na predvolenie konkrétneho plánu v svojom formulári pokladne.
+Prejdite na **Ultimate Multisite > Produkty > Vybrať plán**. V hornej časti stránky by ste mali vidieť tlačidlo **Kliknutím skopírovať zdieľateľný odkaz**. Toto je odkaz, ktorý môžete použiť na predvýber tohto konkrétneho plánu vo svojom formulári pokladne.
 
-![Stránka produktu s tlačidlom prenosného odkazu](/img/config/products-list.png)
+![Stránka produktu s tlačidlom zdieľateľného odkazu](/img/config/products-list.png)
 
-Poznajte, že tento zdieľaný odkaz platí len pre **Plány**. Od linkov na shareovanie nemôžete používať balíčky ani služby.
+Upozorňujeme, že tento zdieľateľný odkaz je platný iba pre **Plány**. Zdieľateľné odkazy nemôžete používať pre balíky ani služby.
 
-### Pre šablóny (templates):
+### Pre šablóny: {#for-templates}
 
-Ak chcete predodlobiť si webové šablóny v formulári pri objednávke, môžete použiť parametre: **?template_id=X** na URL adresa vašej registračnej stránky. "X" musíte nahradiť **ID číslom šablóny**. Toto číslo nájdete v sekcii **Ultimate Multisite > Sites**.
+Ak chcete vo formulári pokladne predvybrať šablóny webu, môžete na URL registračnej stránky použiť parameter: **?template_id=X**. „X“ je potrebné nahradiť **ID číslom šablóny webu**. Ak chcete získať toto číslo, prejdite na **Ultimate Multisite > Weby**.
 
-Kliknite na **Manage** (Správa) pod šablónou webu, ktorú chcete použiť. Uvidíte ID URL. Použite toto číslo len pre túto konkrétnu šablónu webu, aby bola predodlobená v formulári pri objednávke. V našom prípade by parametre URL vyzerali takto: **?template_id=2**.
+Kliknite na **Spravovať** priamo pod šablónou webu, ktorú chcete použiť. Uvidíte číslo SITE ID. Stačí použiť toto číslo pre túto konkrétnu šablónu webu, aby bola predvybraná vo vašom formulári pokladne. V našom prípade tu bude URL parameter **?template_id=2**.
 
-![Zoznam sítí zobrazujúci ID šablóny](/img/config/site-templates-list.png)
+![Zoznam webov zobrazujúci ID šablóny webu](/img/config/site-templates-list.png)
 
-Predstavte si, že na našej sieti je web [**www.mynetwork.com**](http://www.mynetwork.com) a stránka registrácii s formulárom pri objednávke sa nachádza na stránke **/register**. Celý URL s predodlobenou šablónou webu bude vyzerať takto: [**www.mynetwork.com/register/?template_id=2**](http://www.mynetwork.com/register/?template)**_id=2**.
+Povedzme, že web našej siete je [**www.mynetwork.com**](http://www.mynetwork.com) a naša registračná stránka s formulárom pokladne sa nachádza na stránke **/register**. Celá URL s touto predvybranou šablónou webu bude vyzerať takto: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-A ak chcete, môžete predodlobiť ako produkty aj šablóny v formulári pri objednávke. Všetko, čo musíte urobiť, je skopírovať odkaz na shareovanie plánu a na konci ho vložiť parametre šablóny. Budú vyzerať takto: [**www.mynetwork.com/register/premium-plan/?template_id=2**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+A ak chcete, môžete vo svojom formulári pokladne predvybrať produkty aj šablóny. Stačí skopírovať zdieľateľný odkaz plánu a na koniec vložiť parameter šablóny. Bude to vyzerať takto: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

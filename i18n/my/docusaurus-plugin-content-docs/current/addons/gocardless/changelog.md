@@ -3,7 +3,7 @@ title: GoCardless ပြောင်းလဲမှု မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless ပြောင်းလဲမှုမှတ်တမ်း
+# GoCardless ပြောင်းလဲမှုမှတ်တမ်း {#gocardless-changelog}
 
 Version: 1.0.3 - 2026-05-05 တွင် ထုတ်ဝေခဲ့သည်
 * Fix: GoCardless အဖွဲ့ဝင်မှုကို pending သို့မဟုတ် on-hold အခြေအနေမှာ ပယ်ဖျက်လိုက်တဲ့အခါ ပစ်ကျနေတဲ့ (orphaned) pending site တွေကို အလိုအလျောက် ရှင်းလင်းပေးပါပြီ။

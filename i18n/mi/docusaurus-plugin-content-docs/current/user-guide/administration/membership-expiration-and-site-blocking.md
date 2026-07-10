@@ -3,11 +3,11 @@ title: Whakamutunga o te Whakawhanaungatanga me te Whakaraupoko Aotūroa
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Whakamutunga o Membership me Bloking o Site
+# Whakamutunga o Membership me Bloking o Site {#membership-expiration-and-site-blocking}
 
 Ko tēnei whakatairanga ahau e whakamārama ana i te kaha o Ultimate Multisite ki te whakahaere i te whakatutuki o membership, te whawhai o trial, me te whakahokingi (blocking) o site frontend. E whakatakotoria ko te whakatika o te maere o te membership mai active ki expired, ngā whakaritenga e whakatō ana ahau mō ā whaiaro, me te mea hei whakamārama i te mea ka mau te site he tino whakahoki i roto i te wā e whawhai i te membership.
 
-## Whakamutunga o te Status Membership
+## Whakamutunga o te Status Membership {#membership-status-lifecycle}
 
 He statusi tahi ko he tino nui (status) ana i every membership i Ultimate Multisite:
 
@@ -24,7 +24,7 @@ Ko ngā membership mō te free ka hoki mai i te ora automatically. E whakaaro Ul
 | **Expired** | He whawhai i te rā o te whakatutuki me te wāwhai (grace period) kia ora atu i te whakatū mai i te whakatika (without renewal) |
 | **Cancelled** | E whakawhanake ana e te customer pei i te admin (Explicitly cancelled by the customer or admin) |
 
-### He aha te whakatutuki o Membership ki te Expired?
+### He aha te whakatutuki o Membership ki te Expired? {#how-memberships-transition-to-expired}
 
 Ko Ultimate Multisite ka tino pakihi (background check) **every hour** kia whakatipu i ngā membership e tika ana i te whakamārama ahau ko he expired. Ko tēnei pakihi he fa'aahi i [Action Scheduler](https://actionscheduler.org/) (kua kore WP-Cron tekaupehe) me ka whakahaere ai i te scheduled action `wu_membership_check`.
 
@@ -34,7 +34,7 @@ He **wāwhai whakatutuki (grace period) mō 3 rā** e tino pakihi ana i te defau
 He whakamārama: He tino āhuatanga tēnei o te pēri (grace period) o 3 rā, he pēri āhua atu i te whakaritenga o te Frontend Block Grace Period e whakatōhia i runga i roto i te whakamārama i runga iho. Ko te pēri o te whakamārama o te pēri (expiration grace period) e whakatau i te wā nō te **whānui i te status** no active/on-hold ki expired. Ko te pēri o te blok frontend e whakatau i te wā nō te **whakawātea te wāhi** (site is blocked) i raro i te whakawhanakea i te status.
 :::
 
-#### Membership Non-Auto-Renewing vs. Auto-Renewing
+#### Membership Non-Auto-Renewing vs. Auto-Renewing {#auto-renewing-vs-non-auto-renewing-memberships}
 
 He tino mō te whakamārama i te whakataunga o te pēri:
 
@@ -42,7 +42,7 @@ He tino mō te whakamārama i te whakataunga o te pēri:
 
 - **Membership auto-renewing** (`auto_renew = true`): Ko te whakaoti o te cron expiration check **e whai i tēnei katoa**. Ko te gateway o te whakapākeha (Stripe, PayPal, etc.) e tika ana ia te whakamōhio ki Ultimate Multisite qua via webhooks i roto i te wā nō te pēri noho (subscription) he pēnei i te whakatū whakawhanakea (misconfigured endpoint), he whakatū whakawhanakea o te gateway, he heke o te rāhui he whai ake i te sistema -- ko te membership e taea te noho `active` i te awhi he nui i te wā i raro i te wā nō te pēri expired.
 
-### He aha ngā Wāhi Whakamārama (Trials) E Whakaritea?
+### He aha ngā Wāhi Whakamārama (Trials) E Whakaritea? {#how-trials-end}
 
 I roto i te wā nō te pēri o te whakatū whakawhanakea (trialing membership), ko te sistema e kore:
 
@@ -52,11 +52,11 @@ I roto i te wā nō te pēri o te whakatū whakawhanakea (trialing membership), 
 
 Ko te whakataunga ko pēnei i te wā ora (hourly schedule) o te whakaoti o te rāhui, engari **ko mō ngā membership non-auto-renewing anake**. Ko te gateway o te whakapākeha e whakahaa i te whakawhanakea noho (transition from trial to paid subscription).
 
-## Whakawātea te Wāhi Frontend
+## Whakawātea te Wāhi Frontend {#block-frontend-access}
 
 By default, akorua, i roto i te wā e whakatā koe i te membership (membership) he tino pai, **heke ana ko te wp-admin dashboard anake**. Ko te frontend o te waka (site) he puke ai katoa mō ngā manuhiri. Kei te mea kia whakaatu i te whakatā i te puke hoki mō ngā manuhiri, me tino whakatau i te whakaritenga **Block Frontend Access**.
 
-### Whakamahi te Whakaritenga
+### Whakamahi te Whakaritenga {#configuring-the-setting}
 
 Pāinga ki **Ultimate Multisite > Settings > Memberships** ā, whakatika ko **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ He takiwai whānui i ngā whakaritenga whai whenu e whakatika i tēnei whakataun
 | **Frontend Block Grace Period** | Ngā rā e whakamama ana i te whai ake i te whakatā i te membership mō ngā rā, mō te whakaheke. Whakawhiti ki `0` kia puke i runga i te wā. | 0 |
 | **Frontend Block Page** | He puta mai i te waka nui ki te manuhiri ki te whakatika i te mea he puke ko te waka. Ko te mea e pēnei, ngā manuhiri e whakaatu ana he "Site not available" (Waka nei he puke) mō te mea he kāore ia whakatika. | None |
 
-### He aha ngā mea e whakaatu i roto i te puta mai o te waka i puke ai
+### He aha ngā mea e whakaatu i roto i te puta mai o te waka i puke ai {#what-visitors-see-when-a-site-is-blocked}
 
 I roto i te wā e puke koe i te frontend, ngā manuhiri o te waka (site) e pēnei:
 
@@ -97,21 +97,21 @@ Ko te mea e pēnei i te "trial period" he whakatutuki, engari ko te membership e
 Ka whakawārite i ngā membership cancelled (whakamutunga) i roto i te wā whakawātea, i roto i ngaro i te rā o te whakamutanga, i roto i te mea e pēnei i te "Block Frontend Access" ana. Ko te Wā Whakawātea Block Frontend **kore** ka whakawārite ahau i ngā membership cancelled (whakamutunga).
 :::
 
-## Whakamohana: Iroha i Ngā Sites Ka Whakarite Ahau Iroa I Te Whakamutanga
+## Whakamohana: Iroha i Ngā Sites Ka Whakarite Ahau Iroa I Te Whakamutanga {#what-gets-blocked-and-when}
 
 Ko te mea e pēnei i te sites ka whai whakamārama i runga i te whakatutuki o ngā membership ka hoki ki te whakamahinga, he whakawhiti i ngā chaka i roto i te rā i roto:
 
-### 1. Whakawhanaungatanga i te Whakaritenga "Block Frontend Access"
+### 1. Whakawhanaungatanga i te Whakaritenga "Block Frontend Access" {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Pākehā ki **Ultimate Multisite > Settings > Memberships** ā, whakaae i te toggle **Block Frontend Access** he pēnei i te on. Ko te whakatutuki ko **off by default**, ko te mea e pēnei i te wp-admin ka whakawārite ahau i roto i te wā te membership e hoki ki te status inactive (kore e whakamahia).
 
-### 2. Pākehā i te Wā Whakawātea Block Frontend
+### 2. Pākehā i te Wā Whakawātea Block Frontend {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 I te puta no ahau i te whakataki i te whakamahi i te whakaaturanga (settings page) o te samea, he tino nui tō **Frontend Block Grace Period** (Wā o Whakamutunga Bloke Frontend). Ko te mea, ko te mea e pēnei i te whakatū i i 7 rā, ko te frontend ka wāhi i te whakamārama (not blocked) i muri i 7 rā noa i te ra राi o te mana (membership's expiration date) – he tū mai i roto i te mea he hoki ai te status o te membership (even if the membership status is already `expired`).
 
 Whakarite i te mea he `0` i te whakatū i ahau e tino whakaatu ana ko te whakamārama (immediate blocking) i muri i te mea ka whakahou te mana (membership becomes inactive).
 
-### 3. Whakawātea Koa He Whakatutuki i te Status o te Membership
+### 3. Whakawātea Koa He Whakatutuki i te Status o te Membership {#2-check-the-frontend-block-grace-period}
 
 Pāinga ki **Ultimate Multisite > Memberships** ā, he whakaahua i te status o te membership e hua ai. Ko te mea, ko he tino `active` ahau i roto i te mea kua whā mai te ra राi (despite the expiration date having passed), ko he tino whakatutuki i te whakawhanake status (status transition) ahau. Ngā mōhio nui:
 
@@ -119,7 +119,7 @@ Pāinga ki **Ultimate Multisite > Memberships** ā, he whakaahua i te status o t
 
 - **He pēnei i te cron job ka whai**: He whakaahua i te whakamārama i te whakamahinga i te whakamārama (next step).
 
-### 4. Whakawātea Koa He Action Scheduler Ka Whakarite
+### 4. Whakawātea Koa He Action Scheduler Ka Whakarite {#3-confirm-the-membership-status-has-actually-changed}
 
 Ko Ultimate Multisite e whakamahi i Action Scheduler mō tōna mga cron jobs. Pāinga ki **Tools > Scheduled Actions** i te network admin ā, he whakaahua i ko:
 
@@ -141,13 +141,13 @@ Kia tū i te whakamahi cron mō te whakamahi tino pai, kia whakatika he mahi cro
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Pāpā i Ngā Whainga Gateway Webhook (Auto-Renewing Memberships)
+### 5. Pāpā i Ngā Whainga Gateway Webhook (Auto-Renewing Memberships) {#4-verify-action-scheduler-is-running}
 
 Ko te membership ana e auto-renew ana me te subscription o te gateway he whakatika, ā, ka pēhea ka pēhea ka pēhea ka hoki mai ko ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka pēhea ka p
 
 Mauri whakamahi i te whakaritenga pēnitanga (default settings) me o pēnitanga 7 rā mo te mōhaka (frontend grace period), he taea ai te whakawhanake i te wāhanga site noho iho (site) i taro 10 rā i runga i te `date_expiration` i taro.
 
-### 7. Whakamutunga Manawa i Hebe (Manually Expire a Membership)
+### 7. Whakamutunga Manawa i Hebe (Manually Expire a Membership) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ko, ko te mea e hiahia ana koe ki te whakatū whakamutu site i runga i te wāhi, i roto i te wahi e hiahia ana koe ki te whakatū whakamutu site i runga i te wāhi, he taea ai te whakawhanake i te mōhaka (frontend block) i taro.
 
@@ -158,7 +158,7 @@ Ko, ko te mea e hiahia ana koe ki te whakatū whakamutu site i runga i te wāhi,
 
 Ko te whakamutu mōhaka (frontend block) e whai tikanga i te whakatū site noho iho (site) i taro (subject to the Frontend Block Grace Period mo ngā membership expired, hena i taro i runga i te cancelled).
 
-## Whakamahinga (Summary)
+## Whakamahinga (Summary) {#6-check-the-expiration-grace-period-cron-level}
 
 Ko te wāhi katoa mai i te rawa whakamutunga ki te whakatū site noho iho (site blocking):
 
@@ -190,7 +190,7 @@ Mo ngā membership e whakaa, ko te whakatika he pōuri:
   Site frontend is blocked immediately
 ```
 
-## Whakawhanake (Developer Reference)
+## Whakawhanake (Developer Reference) {#7-manually-expire-a-membership}
 
 Ko ngā hooks me filters i tēnei e hiahia ana koe ki te whakaiti i te whakatika whakamutunga me te whakatū mōhaka:
 

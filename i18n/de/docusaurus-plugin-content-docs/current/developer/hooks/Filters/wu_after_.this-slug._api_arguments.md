@@ -4,20 +4,20 @@ title: Filter - wu_after_ . $this->slug . _api_arguments
 sidebar_label: wu_after_ . $this->slug . _api_arguments
 _i18n_hash: 562602bab1532a31c4f5065a3a5f4a9f
 ---
-# Filter: wu_after_ . $this->slug . _api_arguments
+# Filter: wu_after_ . $this->slug . _api_arguments {#filter-wuafter--this-slug--apiarguments}
 
 Filter nach der Änderung.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $args | `array` | API-Argumente für diesen Manager. |
 | $this | `object` | Dieser Manager. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definiert in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L606) at line 606

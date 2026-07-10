@@ -3,11 +3,11 @@ title: Isolazzjoni Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolament Multi-Tenancy
+# Isolament Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 supporta isolament database u filesystem per subsite għall tenant sovrani (sovereign). Dan jippassiva dati tal-tenant b'mod separat, wa jippreserva l-provisioning ta' reġistrazzjoni n-network, il-billing u l-administrazzjoni.
 
-## Estrateġija tal-isolament
+## Estrateġija tal-isolament {#isolation-strategy}
 
 Uża l-isolament sovran (sovereign isolation) għall kliementi li għandhom bżonn separazzjoni aktar qawwija tal-data, storage filesystem dedikatu, jew ħdarja host separata.
 
@@ -18,7 +18,7 @@ Kull tenant sovran għandu:
 - Entry ta' reġistru tenant li jippaġġa is-sitemap mal-database tiegħu, il-root path, l-hostname u l-modu tal-isolament.
 - Risultatu verifikazzjoni tal-migrazzjoni qabel ma jkun il-tenant aktar (live).
 
-## Binding host database
+## Binding host database {#database-host-binding}
 
 Il-versjoni 1.2.0 tġiegħel xi mudelli default ta' binding host is-stess macchina għall installazzjonijiet sovran. Valuri is-stess macchina bħal `localhost` jkunyu normalizzati biex Bedrock, FrankenPHP u installazzjonijiet WordPress containerizzati jistgħu jgħintu u jverifikaw permess kontra l-string host li MySQL qed jara.
 
@@ -31,11 +31,11 @@ Meta tikkonga tenant sovran:
 
 Meta verifikazzjoni tipprovdi falli ta' grant, iqrar il-grant ta' l-user tal-DB tenant mal-binding host konfigurat. L-user li jgħin għal `user@localhost` huwa differenti min `user@127.0.0.1` jew `user@%`.
 
-## Root filesystem
+## Root filesystem {#filesystem-root}
 
 Jekk il root tal-tenant għandu jkun stabil b'mod li jipprovvdi (restart) u jiġi implementat (deploy). Evita l-temporary mount paths. B'installazzjonijiet stile Bedrock, konfirmaw li il tenant root jista' jgħaqod mal-WordPress web root li jista' aspettatt mill-bootstrap tal-tenant, mhux biss il project root.
 
-## Ordine ta provisionament (Provisioning order)
+## Ordine ta provisionament (Provisioning order) {#provisioning-order}
 
 B'mod kif jidħol tenants sovrani nuovi, użaw dan l-ordine:
 
@@ -49,7 +49,7 @@ B'mod kif jidħol tenants sovrani nuovi, użaw dan l-ordine:
 
 Dan l-ordine jipprevjeni li tenants mwettqaf b'mod parziale jieħdu traffiku qabel ma jkunu aktivi il writer tal-database, l-utenti u il filesystem.
 
-## Flussi tal-ġestjoni tal-customer sovran
+## Flussi tal-ġestjoni tal-customer sovran {#sovereign-customer-management-flows}
 Ultimate Multisite v2.13.0 jipprovvidi l-azioni tal-customer fuq is-siti primari meta jkun mode sovran tivveglat (enabled). Tenant x'inqasir jkun jiegħol bħal installazzjoni WordPress isolata, iżda l-azioni li jidawqa għall-customer u li jippid għall-network billing, membership, jew dati tal-account ġeneral għandhom jgħadu l-customer meta jgħandu l-siti primari invece ta' ma jipprovvdu l-azione f'mod interna tal-runtime tal-tenant.
 
 Il-flusso tal-siti primari japplika għal:

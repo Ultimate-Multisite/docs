@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 အတည်ပြုမှု (authentication) cookie ကို သတ်မှတ်ခါနီးမှာ ချက်ချင်း အလုပ်လုပ်တဲ့ လုပ်ဆောင်ချက်တစ်ခုပါ။
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | အတည်ပြုမှု စနစ်။ တန်ဖိုးတွေမှာ 'auth' ဒါမှမဟုတ် 'secure_auth' ပါဝင်ပါတယ်။ |
 | $token | `string` | ဒီ cookie အတွက် အသုံးပြုမယ့် အသုံးပြုသူရဲ့ session token ပါ။ |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> parameter ကို ထည့်သွင်းခဲ့ပါတယ်။
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) ရဲ့ ၁၂၄ လိုင်းမှာ သတ်မှတ်ထားပါတယ်။

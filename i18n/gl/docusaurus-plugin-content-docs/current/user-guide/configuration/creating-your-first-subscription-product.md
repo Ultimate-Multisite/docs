@@ -3,13 +3,13 @@ title: Creación do teu primeiro produto de suscripción
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Criar o seu Primeiro Produto de Subscrición (v2)
+# Criar o seu Primeiro Produto de Subscrición (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTA IMPORTANTE: Este artigo é apenas para utilizadores da versão 2.x do Ultimate Multisite. Se estiver a usar a versão 1.x,**_ **_ve este artigo**_**.
 
 Para começar a executar a súa rede e empezar a vender os seus servizos a usuarios potentiais, necesita ter diferentes opcións de subscrición. Como é que crea estes produtos? Que tipos de produtos pode ofrecer? Neste artigo, vamos cubrir todo o que necesita saber sobre os produtos.
 
-## Tipo de Produto
+## Tipo de Produto {#product-type}
 
 Con Ultimate Multisite pode ofrecer duas categorías de produtos aos seus clientes: **plans** (planos) e **add-ons** (extras/Order Bump). Os add-ons poden dividirse en dois tipos: **packages** (paquetes) e **services** (servizos). Veremos as suas diferencias e particularidades a continuación.
 
@@ -19,7 +19,7 @@ Con Ultimate Multisite pode ofrecer duas categorías de produtos aos seus client
 
   * **Services:** add-ons que non alteran as funcionalidades de Ultimate Multisite. Son tarefas que realizará para o seu cliente ademais ao plano que comprou. Por exemplo, o seu cliente pode comprar un plano que permite un único sitio e pagar unha servizo extra que fará ese diseño do sitio.
 
-## Gestionar Produtos
+## Gestionar Produtos {#managing-products}
 
 Para muitos, a aba **Products** no Ultimate Multisite **(Ultimate Multisite > Products)** pode ser comparada com os planos num ambiente de alojamento tradicional.
 
@@ -29,7 +29,7 @@ Esta secção irá guiar a sua compreensão deste pilar essencial do Ultimate Mu
 
 ![Products list page](/img/config/products-list.png)
 
-## Adicionar Produtos
+## Adicionar Produtos {#adding-products}
 
 Seja um plano, pacote ou serviço, o ponto de entrada para definir um novo item é através de **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ A interface contém duas secções principais. À esquerda, existem várias abas
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Descrição
+### Descrição {#description}
 
 A informação básica do produto pode ser definida fornecendo um nome de produto e uma descrição. Estes identificadores são exibidos onde a informação do produto é necessária, como na seleção de planos e preços, faturas, upgrades e assim por diante.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tipo de Preço
+### Tipo de Preço {#pricing-type}
 
 No lado direito da interface, o preço base pode ser definido.
 
@@ -53,7 +53,7 @@ No lado direito da interface, o preço base pode ser definido.
 
 O Ultimate Multisite suporta três tipos diferentes de preços. A opção **paid** solicita ao administrador da rede informações sobre o preço do produto e a frequência de faturação.
 
-### Preço
+### Preço {#pricing}
 
 O componente de preço define o preço base do produto e o intervalo de faturação.
 
@@ -61,7 +61,7 @@ O componente de preço define o preço base do produto e o intervalo de faturaç
 
 as tal, un exemplo de prezo de $29.99 con unha configuración de 1 mes se facturará $29.99 cada mes. Da mesma forma, un prezo de $89.97 con unha configuración de 3 meses se facturará ese importe cada trimestre.
 
-### Ciclos de Facturación
+### Ciclos de Facturación {#billing-cycles}
 
 A sección de ciclos de facturación especifica a frequência do intervalo de facturación mencionado e se entiende, en xeral, no contexto de contratos ou períodos fixos.
 
@@ -69,7 +69,7 @@ A sección de ciclos de facturación especifica a frequência do intervalo de fa
 
 Por exemplo, un prezo de produto de $29.99 con un intervalo de 1 mes e 12 ciclos de facturación se facturará $29.99 por mes para o produto durante os 12 meses seguintes. Ou outra forma de decirlo, esta configuración establecería un período de prezo fixo de $29.99 por mes durante 12 meses e despois cesaría a facturación.
 
-### Período de Proba (Trial Period)
+### Período de Proba (Trial Period) {#trial-period}
 
 Activar o interruptor da oferta de prueba permite ao administrador da rede definir un período de prueba para o produto.
 
@@ -77,7 +77,7 @@ Activar o interruptor da oferta de prueba permite ao administrador da rede defin
 
 Durante o período de prueba, os clientes están libres de usar o produto e non se les facturará hasta que o período de prueba se agote.
 
-### Tarifa de Configuración (Setup Fee)
+### Tarifa de Configuración (Setup Fee) {#setup-fee}
 
 Tamén podes aplicar unha tarifa de configuración ao teu plan.
 
@@ -85,7 +85,7 @@ Tamén podes aplicar unha tarifa de configuración ao teu plan.
 
 Isto significa que o teu cliente pagará un importe extra na primeira factura (adicional ao plan de prezo) que corresponde á tarifa que definiste en esta sección.
 
-### Activo (Active)
+### Activo (Active) {#active}
 
 O interruptor de activo define eficazmente se o produto está disponible para os clientes para novas inscricións.
 
@@ -93,13 +93,13 @@ O interruptor de activo define eficazmente se o produto está disponible para os
 
 Se hai clientes existentes neste plan, activar o toggle para o estado desativado equivale a "grandear" o plan, retirando-o das futuras subscrições. **Os clientes existentes no plan continuarão a ser cobrados** até serem transicionados para um novo plan ou removidos do plan.
 
-### Imagem do Produto
+### Imagem do Produto {#product-image}
 
 O botão **Upload Image** permite ao administrador da rede utilizar a biblioteca de mídia para selecionar ou carregar uma imagem do produto.
 
 ![Sección de imagen del producto](/img/config/product-image.png)
 
-### Eliminar
+### Eliminar {#delete}
 
 O botão **Delete Product** elimina o produto do sistema. Aparece assim que o produto for publicado.
 
@@ -107,11 +107,11 @@ O botão **Delete Product** elimina o produto do sistema. Aparece assim que o pr
 
 Diferentemente de outras eliminações, o produto não é colocado num estado de lixo. Assim, uma vez eliminado, a ação é irreversível.
 
-### Opções do Produto
+### Opções do Produto {#product-options}
 
 Depois de definida a informação básica do produto, as opções do produto ajudam o administrador da rede a definir os atributos específicos do produto.
 
-#### Geral
+#### Geral {#general}
 
 A aba **General** define os atributos gerais do produto que não se aplicam a nenhuma das outras abas específicas do produto.
 
@@ -125,7 +125,7 @@ O **Customer Role** especifica o papel que é atribuído ao cliente quando o sit
 
 ![Configuración de roles de cliente](/img/config/product-customer-role-settings.png)
 
-#### Subir y Bajar de Nivel (Up & Downgrades)
+#### Subir y Bajar de Nivel (Up & Downgrades) {#up--downgrades}
 
 Esta pestaña especifica las rutas de actualización y bajada disponibles para un cliente dentro de su nivel específico.
 
@@ -143,7 +143,7 @@ Para definir un grupo de planes, especifica los planes compatibles dentro de la 
 
 Ultimate Multisite también incluye una función de **subida de precio (order bump)** donde, cuando sea apropiado, se pueden añadir productos y servicios adicionales a los planes. Estos se ofrecen al cliente como artículos adicionales que se pueden añadir a los planes en el momento del pago o durante una actualización.
 
-#### Variaciones de Precio
+#### Variaciones de Precio {#price-variations}
 
 As variacións de prezo permiten ao administrador da rede especificar diferentes niveles de precios dependendo da duración. Esta configuración permite ofrecer períodos de facturación mensais, trimestrais, anuais ou cualquier outro para o mesmo produto. Por exemplo, podes configurar un produto a $29.99/mês con unha opción anual descontada a $249.99/año.
 
@@ -165,7 +165,7 @@ Por exemplo, se o prezo base do teu produto é de $29.99 por mes, podes añadir:
 As variacións de prezo por si só non añaden un interruptor ou switch ao checkout do frontend. Para permitir que os clientes pasen entre períodos de facturación (por exemplo, Mensual / Anual), necesitas añadir un campo **Period Selection** ao teu formulario de checkout. Vede [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) para as instrución paso a paso.
 :::
 
-#### Impostos
+#### Impostos {#taxes}
 
 A pestaña **Taxes** se alinea coas configuracións fiscais especificadas en **Ultimate Multisite > Settings > Taxes** e, de forma máis específica, coas taxas fiscais definidas. Para activar os impostos e definir as taxas aplicables, podes consultar a documentación en **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Uma vez que a taxa de imposto está definida en **Ultimate Multisite > Settings 
 
 Para indicar que un produto é móbil, pon o interruptor **Is Taxable** en activo e selecciona a taxa de imposto aplicable a partir do desplegable Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 En esencia, os site templates son sitios web completos de WordPress que se clonan ao sitio do cliente no inicio da súa suscripción.
 
@@ -201,7 +201,7 @@ Por último, **C** **hoose Available Site Templates** substitui os templates esp
 
 No final, se o administrador da rede desejar que a seleção de templates ocorra nos passos de checkout, a configuração ' _default_ ' será suficiente. Alternativamente, para remover e bloquear a seleção de templates e delegar a seleção às configurações do plano, as opções ' _assign new template_ ' ou ' _choose available site templates_ ' podem ser desejáveis.
 
-#### Sites
+#### Sites {#sites}
 
 A aba **Sites** faz parte da funcionalidade de limitações do Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Esta configuração especifica o número máximo de sites que um cliente pode cr
 
 Para ativar a limitação, defina o interruptor **limit sites** para o estado ativo e especifique o número máximo de sites no campo **site allowance**.
 
-#### Visitas
+#### Visitas {#visits}
 
 A aba **Visits** é outra parte do sistema de limitações do Ultimate Multisite. Esta configuração permite contabilizar e subsequentemente limitar os visitantes únicos do site de um cliente.
 
@@ -223,7 +223,7 @@ Para usar esta característica, pon o interruptor **limit unique visits** no est
 
 Una vez que este límite se alcance, Ultimate Multisite deixará de servir o sitio do cliente en lugar de mostrar unha mensaxe que indique que os límites se superaron.
 
-#### Usuarios
+#### Usuarios {#users}
 
 As limitacións de 'Users' de Ultimate Multisite permiten ao administrador da rede imponer límites ao número de usuarios que se poden crear e asignar a roles.
 
@@ -233,7 +233,7 @@ Para activar a característica de limitación, pon o interruptor **limit user** 
 
 A continuación, para cada rol que se limitar, pon o interruptor ao seu lado no estado activo e define o límite máximo en o campo apropiado.
 
-#### Tipos de Post
+#### Tipos de Post {#post-types}
 
 A pestaña **Post Types** permite ao administrador da rede imponer límites granulares na vasta colección de tipos de post dentro de WordPress.
 
@@ -245,7 +245,7 @@ Para activar este subsistema de limitacións, pon o interruptor **limit post typ
 
 A continuación, para cada tipo de post que se limite, activelo deslizando hacia la derecha y especifique o límite máximo en el campo correspondiente.
 
-#### Espacio en disco
+#### Espacio en disco {#disk-space}
 
 A esta pestaña **Disk Space** os permite aos administradores de rede restringir o espazo que os clientes consumen.
 
@@ -257,13 +257,13 @@ Para activar a limitación do uso do disco, estableza o interruptor **limit disk
 
 A continuación, especifique o límite máximo en megabytes no campo **disk space allowance**.
 
-#### Dominio personalizado
+#### Dominio personalizado {#custom-domain}
 
 Ao activar esta opción, pode permitir dominios personalizados só nón plan específico.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Temas
+#### Temas {#themes}
 
 A pestaña **Themes** dentro das opcións do produto permite ao administrador de rede que os temas estén dispoñibles para selección dos clientes e, opcionalmente, forzar o estado do tema.
 
@@ -281,7 +281,7 @@ A selección **behavior** permite ao administrador de rede definir o estado do t
 
 No estado **Disponível**, o tema fica disponível para que o cliente se ative sozinho. Por outro lado, no estado **Não Disponível**, remove-se ao cliente a capacidade de ativar o tema. Por último, a opção **Forçar Ativação** força a seleção e ativação do tema, definindo-o como padrão na criação do site.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Semelhante à aba Temas, o Ultimate Multisite permite que o administrador da rede defina a visibilidade dos plugins para os clientes, bem como o seu estado na criação de um novo site.
 
@@ -301,7 +301,7 @@ A configuración **Force Activate & Lock** funciona de maneira parecida, pero im
 
 O administrador da rede pode querer considerar as configurações Force Activate & Lock e Force Inactivate & Lock em conjunto com os templates do site como plugins, e os estados dos plugins dentro dos templates podem ser afetados por estas configurações se forem selecionadas.
 
-#### Limitações de Redefinição (Reset Limitations)
+#### Limitações de Redefinição (Reset Limitations) {#reset-limitations}
 
 A aba **Reset Limitations** redefine todos os limites personalizados definidos no produto. Para redefinir as limitações, clique no botão **reset limitations**.
 
@@ -311,7 +311,7 @@ Para confirmar a ação, deslize o interruptor **confirm reset** para o estado a
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Editar, Duplicar ou Apagar Produto
+## Editar, Duplicar ou Apagar Produto {#edit-duplicate-or-delete-product}
 
 Os produtos existentes podem ser editados, duplicados ou apagados navegando em **Ultimate Multisite > Products** e passando o rato sobre o nome do produto existente.
 

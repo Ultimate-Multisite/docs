@@ -4,22 +4,22 @@ title: Filtr - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filtr: ultimate_multisite_content_sync_url
+# Filtr: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 Pozwala deweloperom zarządzać ścieżką względną do głównego katalogu wtyczki.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
 | $dir | `string` | Ścieżka względna do głównego katalogu wtyczki, do której chcesz uzyskać dostęp. |
 
-### Od
+### Od {#since}
 
 - 1.0.0
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) w linii 52
 
-## Zwraca
+## Zwraca {#returns}
 Ścieżkę względną do głównego katalogu wtyczki.

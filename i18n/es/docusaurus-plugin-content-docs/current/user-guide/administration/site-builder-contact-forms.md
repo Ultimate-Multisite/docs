@@ -3,11 +3,11 @@ title: Formularios de contacto del constructor de sitios
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularios de contacto con el Constructor de Sitios
+# Formularios de contacto con el Constructor de Sitios {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 añade la capacidad de crear formularios de contacto directamente desde la interfaz de chat utilizando el agente Site Builder. Esto te permite añadir formularios de contacto totalmente funcionales a cualquier página sin salir del chat.
 
-## Descripción general
+## Descripción general {#overview}
 
 La capacidad de formularios de contacto del Constructor de Sitios (`create_contact_form`) detecta automáticamente el plugin de formularios que tienes instalado y crea un formulario de contacto utilizando las capacidades nativas de ese plugin. Los plugins de formularios compatibles incluyen:
 
@@ -18,7 +18,7 @@ La capacidad de formularios de contacto del Constructor de Sitios (`create_conta
 
 El asistente selecciona automáticamente el mejor plugin de formularios disponible en tu sitio y genera un formulario de contacto adaptado a ese plugin.
 
-## Creación de un formulario de contacto
+## Creación de un formulario de contacto {#creating-a-contact-form}
 
 Para crear un formulario de contacto usando el Constructor de Sitios:
 
@@ -34,7 +34,7 @@ Para crear un formulario de contacto usando el Constructor de Sitios:
 
 4. El Constructor de Sitios generará el formulario de contacto y devolverá un shortcode listo para incrustar.
 
-## Uso del shortcode generado
+## Uso del shortcode generado {#using-the-generated-shortcode}
 
 Después de que el Constructor de Sitios crea el formulario de contacto, devuelve un shortcode (por ejemplo, `[contact-form-7 id="123"]`). Puedes:
 
@@ -45,11 +45,11 @@ Después de que el Constructor de Sitios crea el formulario de contacto, devuelv
 
 3. **Usarlo en una plantilla** — Si te sientes cómodo con PHP, puedes añadir el shortcode a un archivo de plantilla del tema.
 
-## Personalización del formulario de contacto
+## Personalización del formulario de contacto {#customizing-the-contact-form}
 
 Después de que el Constructor de Sitios crea el formulario de contacto, puedes personalizarlo aún más:
 
-### A través de la interfaz de chat
+### A través de la interfaz de chat {#via-the-chat-interface}
 
 Pídele al Constructor de Sitios que modifique el formulario:
 
@@ -57,7 +57,7 @@ Pídele al Constructor de Sitios que modifique el formulario:
 
 El Constructor de Sitios actualizará el formulario y devolverá el shortcode actualizado.
 
-### A través del panel de administración del plugin de formularios
+### A través del panel de administración del plugin de formularios {#via-the-form-plugins-admin-interface}
 
 También puedes personalizar el formulario directamente en la configuración de tu plugin de formularios:
 
@@ -65,7 +65,7 @@ También puedes personalizar el formulario directamente en la configuración de 
 2. Encuentra el formulario creado por el Constructor de Sitios.
 3. Edita los campos del formulario, las reglas de validación y las notificaciones por correo electrónico según sea necesario.
 
-## Plugins de formularios y compatibilidad
+## Plugins de formularios y compatibilidad {#form-plugins-and-compatibility}
 
 El Constructor de Sitios detecta automáticamente qué plugin de formularios está instalado en tu sitio y lo utiliza para crear el formulario de contacto. Si hay varios plugins de formularios instalados, el Constructor de Sitios los prioriza en este orden:
 
@@ -76,7 +76,7 @@ El Constructor de Sitios detecta automáticamente qué plugin de formularios est
 
 Si no se ha instalado ninguno de estos plugins, el Constructor de Sitios recomendará instalar uno antes de crear el formulario de contacto.
 
-## Notificaciones por correo electrónico
+## Notificaciones por correo electrónico {#email-notifications}
 
 Los formularios de contacto creados por el Constructor de Sitios están configurados para enviar notificaciones por correo electrónico al administrador del sitio por defecto. Puedes personalizar la dirección de correo electrónico del destinatario y el mensaje de notificación:
 
@@ -91,21 +91,21 @@ Para obtener instrucciones detalladas, consulta la documentación de tu plugin d
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Casos de uso de ejemplo
+## Casos de uso de ejemplo {#example-use-cases}
 
-### Formulario de contacto simple
+### Formulario de contacto simple {#simple-contact-form}
 
 > "Crea un formulario de contacto simple con campos para nombre, correo electrónico y mensaje."
 
-### Formulario de varios pasos
+### Formulario de varios pasos {#multi-step-form}
 
 > "Crea un formulario de contacto con un primer paso para la información de contacto y un segundo paso para el mensaje y el método de contacto preferido."
 
-### Formulario con lógica condicional
+### Formulario con lógica condicional {#form-with-conditional-logic}
 
 > "Crea un formulario de contacto que muestre diferentes campos según la selección del usuario en un menú desplegable."
 
-### Formulario con carga de archivos
+### Formulario con carga de archivos {#form-with-file-upload}
 
 > "Crea un formulario de contacto que permita a los usuarios subir un archivo o adjunto."
 

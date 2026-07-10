@@ -1,136 +1,138 @@
 ---
-title: Conas aistriú a chur ar fáil an mhaithrún domáin
+title: Conas Mapáil Fearainn a Chumrú
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Conas an Mapeadh Domáin (v2)
+# Conas Mapáil Fearainn a Chumrú (v2) {#how-to-configure-domain-mapping-v2}
 
-_**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
+_**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do leagan 2.x de Ultimate Multisite.**_
 
-Is deán is fearr-chúram is fearr-chúram is éadúil de chuid na ngrúpaí le feic an am a thabhairt do chliantanna a bheith ag teacht ar domáin top-level ar na siopa. Nach bhfuil sé an-dúil: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) nó [_**joesbikeshop.com**_](http://joesbikeshop.com)? Is é sin a dhéanamh ar Ultimate Multisite, gan an taitneamh ag úsáid pluginí treoir.
+Ceann de na gnéithe is cumhachtaí de líonra préimhe ná an cumas deis a thabhairt dár gcliaint fearann barrleibhéil a cheangal lena suíomhanna. Tar éis an tsaoil, cé acu a bhfuil cuma níos gairmiúla air: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) nó [_**joesbikeshop.com**_](http://joesbikeshop.com)? Sin é an fáth a dtugann Ultimate Multisite an ghné sin ionsuite, gan gá le plugins tríú páirtí a úsáid.
 
-## Cad é domáin mapping?
+## Cad is mapáil fearainn ann? {#whats-domain-mapping}
 
-Mar a bhíonn an t-aonán ag curte, is domáin mapping is é an fhiosca a thabhairt de Ultimate Multisite chun cur isteach caidreamh ar domáin áitiúil agus a mapáil sin ar an siopa atá ag an grúpa le domáin a bheith ag teacht.
+Mar a thugann an t-ainm le fios, is éard atá i mapáil fearainn ná an cumas a chuireann Ultimate Multisite ar fáil iarratas ar fhearann saincheaptha a ghlacadh agus an t-iarratas sin a mhapáil chuig an suíomh comhfhreagrach sa líonra a bhfuil an fearann áirithe sin ceangailte leis.
 
-### Conas a chur i gceart domáin mapping ar do Grúpa Ultimate Multisite
+### Conas mapáil fearainn a shocrú ar do Líonra Ultimate Multisite {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Is é domáin mapping ag cur fáil ar do chuid chun é a bheith ag eolais. Go raibh maith agat, tá Ultimate Multisite ag cur an oibríochta go léir ar fáil leat chun na ríomhpháirtí a dhéanamh go héifeachtach.
+Éilíonn mapáil fearainn roinnt socraithe ar do thaobhsa chun oibriú. Ar ámharaí an tsaoil, uathoibríonn Ultimate Multisite an obair chrua duit ionas gur féidir leat na riachtanais a chomhlíonadh go héasca.
 
-Aghré sin, ag cur Ultimate Multisite i gceart, beidh an mhaothair ag coplú agus ag cur isteach **sunrise.php** i ardán a thugtar. **Ndiúlaterfidh an mhaothair agat a bheith ag teacht go dtí an áit seo.**
+Le linn suiteáil Ultimate Multisite, cóipeálfaidh agus suiteálfaidh an draoi **sunrise.php** go huathoibríoch chuig an bhfillteán ainmnithe. **Ní ligfidh an draoi duit dul ar aghaidh go dtí go mbeidh an chéim seo críochnaithe**.
 
-<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
+<!-- Níl gabháil scáileáin ar fáil: draoi suiteála Ultimate Multisite leis an gcéim sunrise.php -->
 
-Is é sin, nach bhfuil sé ag cur i gceart domáin mapping ar Ultimate Multisite. Tá tús maidir le cabhrú a bheith agat chun úsáid an fhoinnse WordPress Multisite nó aon soluín eile domáin mapping a bheith agat.
+Ciallaíonn sé seo, a luaithe a bheidh draoi suiteála Ultimate Multisite críochnaithe le do líonra a shocrú, gur féidir leat tosú ag mapáil an fhearainn shaincheaptha láithreach.
 
-An bhfuil tú ag iarraidh an mhaith agat a ghlúint (disable) an mapping deomáin Ultimate Multisite chun soluistaí mapping eile a bheith agat? Is féidir leat é seo a ghlúint i ngléas **Ultimate Multisite > Settings > Domain Mapping**.
+Tabhair faoi deara nach bhfuil mapáil fearainn in Ultimate Multisite éigeantach. Tá rogha agat feidhm dhúchasach mapála fearainn WordPress Multisite nó aon réiteach mapála fearainn eile a úsáid.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+Más gá duit mapáil fearainn Ultimate Multisite a dhíchumasú chun slí a thabhairt do réitigh eile mapála fearainn, is féidir leat an ghné seo a dhíchumasú faoi **Ultimate Multisite > Settings > Domain Mapping**.
 
-An taitneamh ar an bhfáil seo, is féidir leat a fheiceáil hefyd an option **Force Admin Redirect** (Ghlúint an chuidiú admin). Le tú a bheith ag an tairgseán seo, is féidir leat a chur ar fáil control ar an t-am chun a bheith agat i gceachtar do chustodiante a bheith ag cur isteach ar a dashboard admin both ar a deomáin custom agus ar a subdomain nó tar éinig ar aon dearmad.
+![Leathanach socruithe Mapáil Fearainn ag taispeáint atreorú admin, teachtaireacht mapála agus roghanna DNS](/img/config/domain-mapping-settings.png)
 
-Má chóir tú **Force redirect to mapped domain** (Ghlúint go dtí an deomáin mapeacht), beidh do chustodiante ag cur isteach ar a dashboard admin ach ar a deomáina custom.
+Díreach faoin rogha seo, is féidir leat an rogha **Force Admin Redirect** a fheiceáil freisin. Ligeann an rogha seo duit rialú a dhéanamh ar cibé acu an mbeidh do chustaiméirí in ann rochtain a fháil ar a dashboard admin ar a bhfearann saincheaptha agus ar a bhfofhearann araon, nó ar cheann amháin acu.
 
-An option **Force redirect to** **network domain** (Ghlúint go dtí an deomáin netwrík) leigeann é seo an t-am eile - beidh do chustodiante ag cur isteach ar a dashboard ach ar a subdomain, ag iarraidh cur isteach ar a deomáina custom.
+Má roghnaíonn tú **Force redirect to mapped domain** , ní bheidh do chustaiméirí in ann rochtain a fháil ar a dashboard admin ach ar a bhfearainn shaincheaptha.
 
-Agus an option **Allow access to the admin by both mapped domain domain and network domain** (Fhéadú cur isteach ar an admin ó deomáin mapeacht agus ó deomáin netwrík) leigeann sí do chustodiante cur isteach ar a dashboard admin ach ar a subdomain agus ar a deomáina custom.
+Déanfaidh an rogha **Force redirect to** **network domain** a mhalairt go díreach - ní cheadófar do do chustaiméirí rochtain a fháil ar a dashboards ach ar a bhfofhearann, fiú má dhéanann siad iarracht síniú isteach ar a bhfearainn shaincheaptha.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+Agus ligeann an rogha **Allow access to the admin by both mapped domain domain and network domain** dóibh rochtain a fháil ar a dashboards admin ar an bhfofhearann agus ar an bhfearann saincheaptha araon.
 
-Tá de dhuit conas atá a mapáil deomáin custom. An céad é, leat a mapáil an ainm deomáin ó chuid admin netwrík mar super admin agus an deá a chur ar fáil. An deá a chur ar fáil eile is go bhfuil sé ag an subsite admin dashboard oí cur isteach ar an curteoir (account page).
+![Roghchlár anuas Admin Redirect leathnaithe ag taispeáint na dtrí rogha atreoraithe](/img/config/domain-mapping-redirect-options.png)
 
-Ach ó shin, primaidh tú a bheith agat ar an t-am chun an **DNS settings** (caint DNS) deomáin a bheith ag cur isteach go ceart i bhfeidhm.
+Tá dhá bhealach ann chun fearann saincheaptha a mhapáil. Is é an chéad cheann ná ainm an fhearainn a mhapáil ó dashboard admin do líonra mar an super admin agus is é an dara ceann ná trí dashboard admin an fho-shuímh faoi leathanach an Account.
+
+Ach sula dtosaíonn tú ag mapáil an fhearainn shaincheaptha chuig ceann de na fo-shuímh i do líonra, beidh ort a chinntiú go bhfuil **socruithe DNS** ainm an fhearainn cumraithe i gceart.
 
 ###
 
-### A bheith cinnte go bhfuil an DNS settings deomáin curteacha go ceart
+### A chinntiú go bhfuil socruithe DNS an fhearainn cumraithe i gceart {#making-sure-the-domain-dns-settings-are-properly-configured}
 
+Chun go n-oibreoidh mapáil, ní mór duit a chinntiú go bhfuil an fearann atá beartaithe agat a mhapáil ag díriú ar sheoladh IP do Líonra. Tabhair faoi deara go bhfuil seoladh IP an Líonra ag teastáil uait - seoladh IP an fhearainn ina bhfuil Ultimate Multisite suiteáilte - ní seoladh IP an fhearainn shaincheaptha is mian leat a mhapáil. Chun seoladh IP fearainn ar leith a chuardach, molaimid dul chuig [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mar shampla.
 
+Chun an fearann a mhapáil i gceart, ní mór duit **A RECORD** a chur le do chumraíocht **DNS** ag díriú ar an **seoladh IP** sin. Athraíonn bainistíocht DNS go mór idir cláraitheoirí fearainn éagsúla, ach tá neart ranganna teagaisc ar líne a chlúdaíonn é sin má chuardaíonn tú " _Creating A Record on XXXX_ " áit arb é XXXX do chláraitheoir fearainn (m.sh.: " _Creating A Record on_ _GoDaddy_ ").
 
-Le linn réimse a bheith ag eolais, leat mé cur leat go bhfuil tú ag planáil an domáin atá ag cur ar an t-aistriú (map). Is é astú: ag cur an chéad IP address an ngrú (Network IP address) a bhféadfadh an domáin a bhfaidh tú ag cur ar an t-aistriú, agus níl é an IP address an domáin a bhfuil an Ultimate Multisite ar fáil ar. Mar chomhthéacs chun an IP address an domáin a bhfuil tú ag cur ar an t-aistriú a fháil, is féidir leat a bheith ag cur ar [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) (mar shamhsas).
+Má bhíonn deacracht agat é seo a chur ag obair, **déan teagmháil le tacaíocht do chláraitheora fearainn** agus beidh siad in ann cabhrú leat leis an gcuid seo.
 
-Chun cur an domán ar bheó go ceart, leat ag cur **A RECORD** ar do chuid rannpháirtí **DNS** a bhféadfadh é IP address a bhfaidh tú ag cur ar an t-aistriú. Déanann cur ann an t-aistriú DNS go léir go léir ar fáil ar na rannpháirtí domáin, ach tá cur ann tutorials online a chluaintear é seo má leann tú " _Creating A Record on XXXX_ ", agus is féidir leat a bheith ag cur ar an t-aistriú do rannpháirtí domáin (ex.: " _Creating A Record on_ _GoDaddy_ ").
+Má tá sé beartaithe agat ligean do do chliaint a bhfearainn féin a mhapáil, beidh orthu an obair ar an gcuid seo a dhéanamh iad féin. Treoraigh iad i dtreo chóras tacaíochta a gcláraitheora mura mbíonn siad in ann an A Record a chruthú.
 
-Má tá tú ag cur cur isteach agat i gcónaí, leat a chomhacht le support do rannpháirtí domáin agus beidh siad ag cur cur ar an t-aistriú seo ar fáil.
+### Ainm fearainn shaincheaptha a mhapáil mar Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Má bhfaigheann tú an t-aistriú A Record an t-aistriú atá ag cur ar an t-aistriú a chur isteach, leat a bheith ag cur cur isteach agat i gcónaí a chur ar an t-aistriú.
+Nuair atá tú logáilte isteach mar super admin ar do líonra, is féidir leat ainmneacha fearainn shaincheaptha a chur leis agus a bhainistiú go héasca trí dhul faoi **Ultimate Multisite > Domains**.
 
-### Cur domán atá ag cur ar an t-aistriú mar Super Admin
+![Leathanach liosta Fearann in Ultimate Multisite](/img/admin/domains-list.png)
 
-Nuair atá tú ag cur cur isteach mar Super Admin ar do ngrú, is féidir leat cur domáin atá ag cur ar an t-aistriú a chruinne agus a chairdeáil go ceart trí **Ultimate Multisite > Domains**.
+Faoin leathanach seo, is féidir leat cliceáil ar an gcnaipe **Add Domain** ag an mbarr agus osclóidh sé seo fuinneog mhódúil inar féidir leat **ainm fearainn saincheaptha** a shocrú agus a líonadh isteach, **an fo-shuíomh** ar mian leat an t-ainm fearainn saincheaptha a chur i bhfeidhm air, agus cinneadh a dhéanamh an mian leat é a shocrú mar ainm **fearainn phríomhúil** nó nach mian (tabhair faoi deara gur féidir leat **ilainmneacha fearainn a mhapáil chuig fo-shuíomh amháin**).
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Módúil Add Domain le hainm fearainn, roghnóir suímh agus lasc fearainn phríomhúil](/img/admin/domain-add-modal.png)
 
-Obráigh ar an cur síos seo, leat ormhaint ar bhfothair **Add Domain** ar uiríocht agus beidh sé ag tairiscint mo modal window a bhfuil tú ag setáil agus ag dlenadh **custom domain name**, **an subsite** atá tú ag iarraidh a bheith le custom domain name, agus a dhéanamh dearbhálach má thuigidh tú é mar **primary domain name** nó ní. (an chúram, leat féidir leat mapáil **multiple domain names** ar aon subsite).
+Tar éis duit an fhaisnéis go léir a chur isteach, is féidir leat cliceáil ansin ar an gcnaipe **Add Existing Domain** ag an mbun.
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+Cuirfidh sé seo tús leis an bpróiseas chun faisnéis DNS an fhearainn shaincheaptha a fhíorú agus a fháil. Feicfidh tú loga ag bun an leathanaigh freisin ionas gur féidir leat an próiseas atá ar siúl aige a leanúint. D’fhéadfadh go dtógfadh sé cúpla nóiméad an próiseas seo a chríochnú.
 
-Tar éis an tairiscint de uchadh gach chuid fada, leat ormhaint ar bhfothair **Add Existing Domain** ar an chuid uir.
+Cruthaíonn Ultimate Multisite v2.13.0 an taifead fearainn inmheánach go huathoibríoch freisin nuair a chruthaítear suíomh nua ar óstach ar cheart é a láimhseáil mar fhearann in aghaidh an tsuímh. Más é an t-óstach príomhfhearann an líonra, nó ceann de na bunfhearainn chomhroinnte don fhoirm checkout atá cumraithe ar réimse **Site URL**, scipeáiltear an taifead fearainn mhapáilte uathoibríoch ionas go bhfanfaidh an bunfhearann comhroinnte sin ar fáil do gach suíomh a úsáideann é.
 
-Beidh sé ag comhthéid an t-amach a bheith agat chun féachaint agus a laithreachú thôngas DNS ar an custom domain name. Beidh tú hefyd ag iarraidh log ar an cur síos ar an chuid uir chun an t-amach a bheith agat a bheith agat. Is féidir leis an t-amach seo a thógáil sa chuid fada.
+Nuair a chláraíonn custaiméir fearann nua trí Domain Seller v1.3.0 nó níos nuaí, mapálann Ultimate Multisite an fearann cláraithe go huathoibríoch chuig suíomh líonra an chustaiméara de réir réamhshocraithe. Ní gá do riarthóirí taifead fearainn mhapáilte ar leith a chur leis a thuilleadh tar éis clárú rathúil, mura dteastaíonn uathu roghanna a choigeartú amhail bratach an phríomhfhearainn, staid ghníomhachtaithe, nó láimhseáil SSL.
 
-Tá Ultimate Multisite v2.13.0 ag teacht le cur síos domhan intineach go dtí an t-amach nuair a bhíonn nua site ag cur isteach ar host atá ag bheith mar domain per-site. Má tá an host mar domain príomha na net, nó mar aon de do chuid domain base checkout-form a chur ar fáil ar **Site URL** field, níltear an cur síos domhan mapáilte go dtí an t-amach chun an domain base shared a bheith ag cur fáil ar chuid site a úsáideann é.
-
-Béal éifeachtúil (Stage) nó stát should change from **Checking DNS** to **Ready** if everything is properly set up.
+Ba cheart don **Chéim** nó don stádas athrú ó **Checking DNS** go **Ready** má tá gach rud socraithe i gceart.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Má leat ormhaint ar an domain name, beidh tú ag iarraidh féachaint ar chuid oifríngeartha sa chuid. Déanann méid a chur ar fáil:
+Má chliceálann tú ar ainm an fhearainn, beidh tú in ann roinnt roghanna a fheiceáil istigh ann. Breathnaímis go tapa orthu:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Leathanach sonraí fearainn le scoránaigh céime, suímh, gníomhachta, príomhúil agus SSL](/img/admin/domain-edit.png)
 
-**Stádas:** Tá sé seo an stáit atá an domáin. Nuair a bhíonn tú ag cur an domán ar an chéad, beirfidh sé bróinneadh ar stáit **Checking DNS**. Beidh an t-aontú ag iarraidh a bheith ar an stáit seo chun na chuid de DNS a shonraithe agus a fháil ar an t-aontú go bhfuil siad ceart. Ansin, beirfidh an domán ar stáit **Checking SSL**. Beidh Ultimate Multisite ag iarraidh a fheiceáil má tá an domán le SSL nó níl, agus beidh sé ag cur an domán agat mar **Ready** nó **Ready (without SSL)**.
+**Céim:** Seo an chéim ina bhfuil an fearann. Nuair a chuireann tú an fearann leis den chéad uair, is dócha go mbeidh sé ar an gcéim **Checking DNS**. Seiceálfaidh an próiseas na hiontrálacha DNS agus deimhneoidh sé go bhfuil siad ceart. Ansin, cuirfear an fearann ar an gcéim **Checking SSL**. Seiceálfaidh Ultimate Multisite an bhfuil SSL ag an bhfearann nó nach bhfuil agus catagóireoidh sé d’fhearann mar **Ready** nó **Ready (without SSL)**.
 
-**Site:** Is é an subdomain atá ag cur i gcomhthéacs le an domán seo. Beidh an domán a bhaineann leis an site seo ag sithiúl an curteacha seo.
+**Suíomh:** An fofhearann atá bainteach leis an bhfearann seo. Taispeánfaidh an fearann mapáilte ábhar an tsuímh shonraigh seo.
 
-**Active:** Is féidir leat an t-aontú seo a chruinneáil nó a chruinneáil chun an domán a chruinneáil nó a chruinneáil.
+**Gníomhach:** Is féidir leat an rogha seo a scoránú air nó as chun an fearann a ghníomhachtú nó a dhíghníomhachtú.
 
-**Is Primary Domain?:** Beirfidh do chuid oileach dóibh domáin mór ná aon fháin ar chuid site. Usearás an t-aontú seo chun seachaint an bhfuil sé an domán bunúsach (primary domain) do chuid site a bheith agat.
+**An é an Príomhfhearann é?:** Is féidir le do chustaiméirí níos mó ná fearann mapáilte amháin a bheith acu do gach suíomh. Úsáid an rogha seo chun a roghnú an é seo an príomhfhearann don suíomh sonrach.
 
-**Is Secure?:** Mar sin féin, mar áit a cheanglaíonn Ultimate Multisite an bhfuil an domán le cert SSL nó níl ar fáil primaill go háirit, is féidir leat é seo a chur ar fáil go mhaith nó níl ag cur an domán agat le cert SSL. Léimeann tú go bhfuil an website gan cert SSL agus má iarraidh tú é a chur ar fáil le cert SSL, is féidir leis é a thabhairt tú erraí.
+**An bhfuil sé Slán?:** Cé go seiceálann Ultimate Multisite an bhfuil teastas SSL ag an bhfearann nó nach bhfuil sula gcumasaíonn sé é, is féidir leat a roghnú de láimh an fearann a luchtú le teastas SSL nó gan teastas SSL. Tabhair faoi deara mura bhfuil teastas SSL ag an suíomh gréasáin agus má dhéanann tú iarracht iallach a chur air luchtú le SSL, d’fhéadfadh sé earráidí a thabhairt duit.
 
-### Cur an domán bunúsach mar Subsite user
+### Ainm fearainn saincheaptha a mhapáil mar úsáideoir Foshuímh {#mapping-custom-domain-name-as-subsite-user}
 
-Is féidir le curteacha subsite a cur i gcomhthéacs le domáin mór ná aon fháin ag cur i gcomhthéacs ar an dashboard de curteacht subsite.
+Is féidir le riarthóirí foshuímh ainmneacha fearainn saincheaptha a mhapáil óna Dashboard riaracháin foshuímh freisin.
 
-Ar anois, rud éigin is féidir leat a chur ar fáil nó a chruinneáil ar an stáit **Domain mapping** (Cur an domán) under settings. Léimeann tú an príomhshéimeann seo i ndá chuid screenshot:
+Ar dtús, ní mór duit a chinntiú go gcumasaíonn tú an rogha seo faoi na socruithe **Mapáil fearainn**. Féach an seat scáileáin thíos.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Is féidir leat é a chur ar fáil nó a chruinneáil under **Plan** level nó product options ar **Ultimate Multisite > Products**.
+Is féidir leat an rogha seo a shocrú nó a chumrú freisin ag leibhéal an **Plan** nó sna roghanna táirge ar **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Rannán Fearainn Shaincheaptha ar leathanach eagarthóireachta an táirge](/img/config/product-custom-domains.png)
 
-Nuair mé an t-aithneacha seo: Nu déanann tú aon cheadaí seo agus má tá spisiúntach (subsite) a ghlacadh chun domáin a mhaithrù (custom domain names) a mapáil, ba cheart go bhfuil mo chuid spisiúntach ag fheiceáil metabox ar an cur síos **Account** le cur isteach **Domains**.
+Nuair atá aon cheann de na roghanna sin cumasaithe agus nuair a cheadaítear d’úsáideoir foshuímh ainmneacha fearainn saincheaptha a mhapáil, ba cheart don úsáideoir foshuímh metabox a fheiceáil faoin leathanach **Account** darb ainm **Fearainn**.
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Is féidir leis an uchair a chluin **Add Domain** agus beidh sé ag tairgseáil mo modal window le caighdeáin.
+Is féidir leis an úsáideoir an cnaipe **Cuir Fearann Leis** a chliceáil agus tabharfaidh sé sin fuinneog mhódúil aníos le roinnt treoracha.
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Ansin is féidir leis an uchair a chluin **Next Step** agus a thaisrabháil chun domán mhaithrù a chuid a mapáil a chur i bhfeidhm. Is féidir leat a bheith ag cur isteach an t-aithneadh seo mar domán príomha (primary domain) nó ní.
+Is féidir leis an úsáideoir ansin **An Chéad Chéim Eile** a chliceáil agus leanúint ar aghaidh chun an t-ainm fearainn saincheaptha a chur leis. Is féidir leo a roghnú freisin an mbeidh sé seo mar phríomhfhearann nó nach mbeidh.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Chluin chun **Add Domain** a dhéanann an t-aithneadh a bheith ag cur isteach agus a fháil ar na noltóir DNS do domán mhaithrù.
+Má chliceálann tú **Cuir Fearann Leis**, cuirfear tús leis an bpróiseas chun faisnéis DNS an fhearainn shaincheaptha a fhíorú agus a fháil.
 
-### Déanann Domáin (Domain Syncing)
+### Maidir le Sioncronú Fearainn {#about-domain-syncing}
 
-Is é Déanann Domáin (Domain Syncing) ceangailte a bhfuil an t-aithneadh Ultimate Multisite ag cur isteach an domán mhaithrù i bhfaoiacht an cur síos agat mar domán add-on **chun a bheith an mapáil domáin ag eithrún**.
+Is próiseas é Sioncronú Fearainn ina gcuireann Ultimate Multisite an t-ainm fearainn saincheaptha le do chuntas óstála mar fhearann breise **ionas go n-oibreoidh an mhapáil fearainn**.
 
-Bíonn Déanann Domáin ag déanamh go dtí an t-aithneadh seo má tá cur síos agat le cur isteach (hosting provider) le cur isteach le feidhm mapála domáin Ultimate Multisite. Ag anois, is é roinnt cur síos seo _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ agus _Cpanel._
+Tarlaíonn sioncronú fearainn go huathoibríoch má tá comhtháthú ag do sholáthraí óstála le gné mhapála fearainn Ultimate Multisite. Faoi láthair, is iad na soláthraithe óstála seo _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ agus _Cpanel._
 
-Nuair a bheith cur isteos le cur síos, is féidir leis an t-aithneadh Ultimate Multisite ag cur isteach (enqueue) an t-aithneadh DNS nó an t-subdomain chun nualachaithe (newly created sites). Má níl aon cheangailt ag léamh an t-aithneadh seo, ba cheart a bhaint an job ag cur isteach go dtí chun no-op queue entries a shomis. Déanann na chraoin DNS agus SSL do domáin a mapáil go dtí an chur chuig an t-amach ar an chur chuig an amach domáin (domain-stage process).
+Nuair atá comhtháthú soláthraí óstála gníomhach, is féidir le Ultimate Multisite an tasc cruthaithe DNS nó fofhearainn ar thaobh an tsoláthraí a chur sa chiú freisin do shuímh nua-chruthaithe. Mura bhfuil aon chomhtháthú ag éisteacht leis an tasc sin, scipeáiltear an post cúlra chun iontrálacha ciú gan toradh a sheachaint. Leanann seiceálacha DNS agus SSL do fhearainn mhapáilte ag rith tríd an ngnáthphróiseas céime fearainn.
 
-Béal é seo: leat méid an t-aithreachais seo ag activaithe ar na réiteacha Ultimate Multisite i ngachaisle **Integration**.
+Beidh ort an comhtháthú seo a ghníomhachtú i socruithe Ultimate Multisite faoin gcluaisín **Comhtháthú**.
 
-![Tab Integrations i ngachaisle Ultimate Multisite a shomraithe curteoirí chomhthabhairt](/img/config/integrations-tab.png)
+![Cluaisín Comhtháthaithe i socruithe Ultimate Multisite ag taispeáint soláthraithe óstála](/img/config/integrations-tab.png)
 
-<!-- Screenshot unavailable: Línteacha curteoirí chomhthabhairt ar an tab Integrations -->
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Note go bhfuil sé ag teacht: má níl do curteoir chomhthabhairt aon de na curteoirí a chuir méid an t-aithreachais seo, **dúil leat sin a dhéanamh go mbeartach trí synch manuálta nó a chur ar fáil an teangail domhaint** i do chontacht chomhthabhairt._
+_Tabhair faoi deara mura bhfuil do sholáthraí óstála ar cheann de na soláthraithe sin a luadh thuas, **beidh ort an t-ainm fearainn a shioncronú nó a chur leis de láimh** i do chuntas óstála._

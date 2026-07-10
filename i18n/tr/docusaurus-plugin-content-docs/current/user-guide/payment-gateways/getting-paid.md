@@ -1,110 +1,126 @@
 ---
 title: Ödeme Alma
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödeme Alma (v2)
+# Ödeme Alma (v2) {#getting-paid-v2}
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne aittir.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
 
-Ultimate Multisite, yerleşik bir üyelik ve faturalandırma sistemine sahiptir. Faturalandırma sistemimizin çalışabilmesi için e-ticarette en yaygın kullanılan ödeme geçitlerini entegre ettik. Ultimate Multisite'daki varsayılan ödeme geçitleri _Stripe_, _PayPal_ ve Manuel Ödeme'dir. Ayrıca ilgili eklentileri kurarak _WooCommerce_, _GoCardless_ ve _Payfast_ ile de ödeme alabilirsiniz.
+Ultimate Multisite yerleşik bir üyelik ve faturalandırma sistemine sahiptir. Faturalandırma sistemimizin çalışması için e-ticarette kullanılan en yaygın ödeme ağ geçitlerini entegre ettik. Ultimate Multisite içindeki varsayılan ödeme ağ geçitleri _Stripe_ , _PayPal_ ve Manuel Ödeme’dir. Ayrıca ilgili add-on’larını kurarak ödeme almak için _WooCommerce_ , _GoCardless_ ve _Payfast_ de kullanabilirsiniz.
 
-## Temel Ayarlar
+## Temel Ayarlar {#basic-settings}
 
-Bu ödeme geçitlerinden herhangi birini Ultimate Multisite ödeme ayarlarından yapılandırabilirsiniz. **Ultimate Multisite menüsü > Ayarlar > Ödemeler** yolunu izleyerek bu sayfaya ulaşabilirsiniz.
+Bu ödeme ağ geçitlerinden herhangi birini Ultimate Multisite ödeme ayarları altında yapılandırabilirsiniz. Bunu **Ultimate Multisite menüsü > Settings > Payments** bölümüne giderek bulabilirsiniz.
 
-![Ultimate Multisite'da ödeme ayarları sayfası](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite içinde Payments panelini gösteren Payments ayarları sayfası](/img/config/payments-settings-page.png)
 
-Ödeme geçidinizi kurmadan önce, yapılandırabileceğiniz temel ödeme ayarlarına göz atın:
+Ödeme ağ geçidinizi kurmadan önce, lütfen yapılandırabileceğiniz temel ödeme ayarlarına göz atın:
 
-**Otomatik yenilemeyi zorunlu kıl:** Bu seçenek, kullanıcının seçtiği faturalandırma sıklığına bağlı olarak her faturalandırma döneminin sonunda ödemenin otomatik olarak tekrarlanmasını sağlar.
+**Otomatik yenilemeyi zorla** **:** Bu, kullanıcının seçtiği faturalandırma sıklığına bağlı olarak ödemenin her faturalandırma döngüsünün sonunda otomatik olarak tekrarlanmasını sağlar.
 
-![Otomatik yenilemeyi zorunlu kıl ayarı](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Ödeme yöntemi olmadan deneme süresine izin ver:** Bu seçenek etkinleştirildiğinde, müşterinizin kayıt işlemi sırasında herhangi bir finansal bilgi eklemesi gerekmez. Bu bilgi yalnızca deneme süresi sona erdiğinde istenir.
+Ultimate Multisite v2.13.0, otomatik yenileme etkinleştirilmiş yinelenen bir üyeliği kaydetmeden önce etkin gateway’in yeniden kullanılabilir bir yenileme kimlik bilgisine sahip olup olmadığını kontrol eder. Yenileme kimlik bilgisi bir gateway aboneliği, faturalandırma anlaşması, kaydedilmiş vault token veya eşdeğer yeniden kullanılabilir ödeme yöntemi olabilir. Gateway kullanılabilir bir kimlik bilgisi olmadığını bildirirse, Ultimate Multisite üyeliği kaydeder ancak otomatik yenilemeyi kapatır ve eksik kimlik bilgisi durumunu kaydeder; böylece bir yönetici veya destek akışı, yenileme tarihinden önce müşteriden ödemeyi yeniden yetkilendirmesini isteyebilir.
 
-![Ödeme yöntemi olmadan deneme süresine izin ver ayarı](/img/config/settings-payment-gateways.png)
+Bu, gateway yalnızca tek seferlik ödemeleri tahsil edebildiğinde bir üyeliğin otomatik yenilenecekmiş gibi görünmesini önler. Gateway add-on’ları, özellikle gateway hem tek seferlik tahsilat hem de vault/subscription ödeme modlarını desteklediğinde, yinelenen checkout’ların yeniden kullanılabilir bir kimlik bilgisi sakladığını doğrulamalıdır.
 
-**Ödeme onayında fatura gönder:** Bu seçenek, ödeme sonrasında fatura gönderilip gönderilmeyeceğini belirlemenizi sağlar. Kullanıcıların alt site panellerinden ödeme geçmişlerine erişebildiklerini unutmayın. Bu seçenek Manuel Geçit için geçerli değildir.
+**Ödeme olmadan denemelere izin ver** **yöntemi:** Bu seçenek etkinleştirildiğinde müşteriniz kayıt sürecinde herhangi bir finansal bilgi eklemek zorunda kalmaz. Bu yalnızca deneme süresi sona erdiğinde gerekli olur.
 
-![Ödeme onayında fatura gönder ayarı](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Fatura numaralandırma şeması:** Burada ödeme referans kodu veya sıralı numara şeması seçebilirsiniz. Faturalarınız için ödeme referans kodu kullanmayı tercih ederseniz, herhangi bir yapılandırma yapmanız gerekmez. Sıralı numara şeması kullanmayı tercih ederseniz, **sonraki fatura numarasını** (Bu numara, sistemde oluşturulacak bir sonraki fatura için fatura numarası olarak kullanılır. Her yeni fatura oluşturulduğunda bir artırılır. Fatura sıralı numarasını belirli bir değere sıfırlamak için değiştirebilir ve kaydedebilirsiniz) ve **fatura numarası ön ekini** yapılandırmanız gerekir.
+**Ödeme onayında fatura gönder:** Bu, ödeme sonrasında fatura gönderilip gönderilmeyeceğini seçme olanağı sağlar. Kullanıcıların ödeme geçmişlerine alt site dashboard’ları altında erişebileceğini unutmayın. Bu seçenek Manual Gateway için geçerli değildir.
 
-![Fatura numaralandırma şeması seçimi](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sıralı fatura numarası ve ön ek ayarları](/img/config/settings-payment-gateways.png)
+**Fatura numaralandırma şeması:** Burada, bir ödeme referans kodu veya sıralı numara şeması seçebilirsiniz. Faturalarınız için ödeme referans kodu kullanmayı seçerseniz herhangi bir şeyi yapılandırmanız gerekmez. Sıralı numara şeması kullanmayı seçerseniz **sonraki fatura numarası**nı (Bu numara, sistemde oluşturulan bir sonraki faturanın fatura numarası olarak kullanılacaktır. Her yeni fatura oluşturulduğunda bir artırılır. Fatura sıralı numarasını belirli bir değere sıfırlamak için bunu değiştirip kaydedebilirsiniz) ve **fatura numarası öneki**ni yapılandırmanız gerekir.
 
-## Ödeme geçitlerini nerede bulabilirsiniz:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Ödeme geçitlerini aynı sayfada (**Ultimate Multisite > Ayarlar > Ödemeler**) kurabilirsiniz. **Aktif ödeme geçitleri** bölümünün hemen altında şunları göreceksiniz: _Stripe_, _Stripe Checkout_, _PayPal_ ve _Manuel_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Aktif ödeme geçitleri listesi](/img/config/settings-payment-gateways.png)
+## Ağ geçitleri nerede bulunur: {#where-to-find-the-gateways}
 
-Her ödeme geçidi için kurulum adımlarında size rehberlik edecek ayrı bir makalemiz var. Bunlara aşağıdaki bağlantılardan ulaşabilirsiniz.
+Ödeme ağ geçitlerini aynı sayfada kurabilirsiniz ( **Ultimate Multisite > Settings > Payments**). **etkin ödeme ağ geçitleri** bölümünün hemen altında şunları görebilirsiniz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ve _Manual_.
 
-**Stripe geçidini kurma**
+![Stripe, Stripe Checkout, PayPal ve Manual listeleyen Active Payment Gateways bölümü](/img/config/payments-active-gateways.png)
 
-**PayPal geçidini kurma**
+Her ödeme ağ geçidi için, kurulum adımlarında size rehberlik edecek özel bir makalemiz var; bunları aşağıdaki bağlantılarda bulabilirsiniz.
 
-**Manuel ödemeleri kurma**
+Ödeme ayrıntılarını görüntüleyebilir ve düzenleyebilirsiniz:
 
-Şimdi, ödeme geçidiniz olarak _WooCommerce_, _GoCardless_ veya _Payfast_ kullanmak istiyorsanız, **ilgili eklentileri kurmanız ve yapılandırmanız gerekir**.
+![Ödeme düzenleme arayüzü](/img/admin/payment-edit.png)
 
-### WooCommerce eklentisi nasıl kurulur:
+Ödeme düzenleme sayfasının tam görünümü burada:
 
-_Stripe_ ve _PayPal_'ın bazı ülkelerde kullanılamadığının ve bunun Ultimate Multisite kullanıcılarının eklentimizi etkin bir şekilde kullanmasını sınırladığının veya engellediğinin farkındayız. Bu nedenle çok popüler bir e-ticaret eklentisi olan _WooCommerce_'i entegre etmek için bir eklenti oluşturduk. Dünya genelindeki geliştiriciler, farklı ödeme geçitlerini WooCommerce'e entegre etmek için eklentiler oluşturdu. Ultimate Multisite faturalandırma sistemiyle kullanabileceğiniz ödeme geçitlerini genişletmek için bundan faydalandık.
+![Ödeme düzenleme tam arayüzü](/img/admin/payment-edit-full.png)
 
-_**ÖNEMLİ:** Ultimate Multisite: WooCommerce Entegrasyonu, WooCommerce'in en azından ana sitenizde etkinleştirilmiş olmasını gerektirir._
+Ödeme ağ geçidi ayarlarının tam görünümü de burada:
 
-İlk olarak eklentiler sayfasına gidin. **Ultimate Multisite > Ayarlar** yolunu izleyerek bulabilirsiniz. **Eklentiler** tablosunu görmelisiniz. **Eklentilerimize Göz Atın** seçeneğine tıklayın.
+![Ödeme ağ geçidi ayarları tam sayfası](/img/config/settings-payments-gateways-full.png)
 
-![Eklentiler bölümü olan ayarlar sayfası](/img/config/settings-general.png)
+**Stripe gateway kurulumu**
 
-**Eklentilerimize Göz Atın** seçeneğine tıkladıktan sonra eklentiler sayfasına yönlendirileceksiniz. Burada tüm Ultimate Multisite eklentilerini bulabilirsiniz. **Ultimate Multisite: WooCommerce Integration** eklentisine tıklayın.
+**PayPal gateway kurulumu**** **
 
-![Mevcut eklentileri listeleyen eklentiler sayfası](/img/config/settings-general.png)
+**Manuel ödemelerin kurulumu**
 
-Eklenti detaylarını içeren bir pencere açılacaktır. **Şimdi Kur** seçeneğine tıklayın.
+Şimdi, ödeme ağ geçidiniz olarak _WooCommerce_ , _GoCardless_ veya _Payfast_ kullanmak istiyorsanız, **bunların add-on’larını kurmanız ve yapılandırmanız** gerekir.
 
-![WooCommerce eklentisi kurulum penceresi](/img/config/settings-general.png)
+### WooCommerce add-on nasıl kurulur: {#how-to-install-the-woocommerce-add-on}
 
-Kurulum tamamlandıktan sonra eklentiler sayfasına yönlendirileceksiniz. Burada **Ağ Genelinde Etkinleştir** seçeneğine tıklayın ve WooCommerce eklentisi ağınızda etkinleştirilecektir.
+_Stripe_ ve _PayPal_ bazı ülkelerde mevcut olmadığını, bunun da Ultimate Multisite kullanıcılarının plugin’imizi etkili şekilde kullanmasını sınırladığını veya engellediğini anlıyoruz. Bu yüzden çok popüler bir e-ticaret plugin’i olan _WooCommerce,_ ile entegrasyon için bir add-on oluşturduk. Dünyanın dört bir yanındaki geliştiriciler, farklı ödeme ağ geçitlerini buna entegre etmek için add-on’lar oluşturdu. Ultimate Multisite faturalandırma sistemiyle kullanabileceğiniz ödeme ağ geçitlerini genişletmek için bundan yararlandık.
 
-![WooCommerce eklentisini Ağ Genelinde Etkinleştir](/img/config/settings-general.png)
+_**ÖNEMLİ:** Ultimate Multisite: WooCommerce Integration, WooCommerce’in en azından ana sitenizde etkinleştirilmiş olmasını gerektirir._
 
-Etkinleştirdikten sonra, web sitenizde WooCommerce eklentisi henüz kurulu ve etkin değilse bir hatırlatma alacaksınız.
+Öncelikle lütfen add-on’lar sayfasına gidin. Bunu **Ultimate Multisite > Settings** bölümüne giderek bulabilirsiniz. **Add-ons** tablosunu görmelisiniz. **Add-on’larımızı kontrol edin** üzerine tıklayın.
 
-![WooCommerce etkinleştirme hatırlatma bildirimi](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-WooCommerce Entegrasyonu eklentisi hakkında daha fazla bilgi için **buraya tıklayın**.
+**Add-on’larımızı kontrol edin** üzerine tıkladıktan sonra add-on’lar sayfasına yönlendirileceksiniz. Burada tüm Ultimate Multisite add-on’larını bulabilirsiniz. **Ultimate Multisite: WooCommerce Integration** add-on’una tıklayın.
 
-### GoCardless eklentisi nasıl kurulur:
+![WooCommerce Integration dahil Ultimate Multisite add-on’larını listeleyen add-on’lar sayfası](/img/addons/addons-page.png)
 
-_GoCardless_ eklentisini kurma adımları _WooCommerce_ eklentisiyle hemen hemen aynıdır. Eklentiler sayfasına gidin ve **Ultimate Multisite: GoCardless Gateway** eklentisini seçin.
+Eklenti ayrıntılarını içeren bir pencere açılacak. Sadece **Şimdi Yükle** üzerine tıklayın.
 
-![Mevcut eklentileri listeleyen eklentiler sayfası](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: Şimdi Yükle düğmesini içeren Ultimate Multisite WooCommerce Integration eklenti ayrıntıları iletişim kutusu -->
 
-Eklenti penceresi açılacaktır. **Şimdi Kur** seçeneğine tıklayın.
+Kurulum tamamlandıktan sonra pluginler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir** üzerine tıklayın; WooCommerce eklentisi ağınızda etkinleştirilecektir.
 
-![GoCardless eklentisi kurulum penceresi](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: WooCommerce Integration eklentisi için Ağda Etkinleştir bağlantısını içeren pluginler sayfası -->
 
-Kurulum tamamlandıktan sonra eklentiler sayfasına yönlendirileceksiniz. Burada **Ağ Genelinde Etkinleştir** seçeneğine tıklayın ve _GoCardless_ eklentisi ağınızda etkinleştirilecektir.
+Etkinleştirdikten sonra, web sitenizde WooCommerce plugin hâlâ kurulu ve etkin değilse bir hatırlatma alırsınız.
 
-![GoCardless eklentisini Ağ Genelinde Etkinleştir](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: Yöneticiye WooCommerce pluginini kurup etkinleştirmesini hatırlatan yönetici bildirimi -->
 
-_GoCardless_ geçidini kullanmaya nasıl başlayacağınızı öğrenmek için **bu makaleyi okuyun**.
+WooCommerce Integration eklentisi hakkında daha fazla okumak için **buraya tıklayın**.
 
-### Payfast eklentisi nasıl kurulur:
+### GoCardless eklentisi nasıl kurulur: {#how-to-install-the-gocardless-add-on}
+
+_GoCardless_ eklentisini kurma adımları, _WooCommerce_ eklentisiyle büyük ölçüde aynıdır. Lütfen eklentiler sayfasına gidin ve **Ultimate Multisite: GoCardless Gateway** eklentisini seçin.
+
+<!-- Ekran görüntüsü mevcut değil: Ultimate Multisite GoCardless Gateway eklentisinin vurgulandığı eklentiler sayfası -->
+
+Eklenti penceresi açılacak. **Şimdi Yükle** üzerine tıklayın.
+
+<!-- Ekran görüntüsü mevcut değil: Şimdi Yükle düğmesini içeren Ultimate Multisite GoCardless Gateway eklenti ayrıntıları iletişim kutusu -->
+
+Kurulum tamamlandıktan sonra pluginler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir** üzerine tıklayın; _GoCardless_ eklentisi ağınızda etkinleştirilecektir.
+
+<!-- Ekran görüntüsü mevcut değil: GoCardless Gateway eklentisi için Ağda Etkinleştir bağlantısını içeren pluginler sayfası -->
+
+_GoCardless_ gateway ile nasıl başlayacağınızı öğrenmek için **bu makaleyi okuyun**.
+
+### Payfast eklentisi nasıl kurulur: {#how-to-install-the-payfast-add-on}
 
 Eklentiler sayfasına gidin ve **Ultimate Multisite: Payfast Gateway** eklentisini seçin.
 
-![Mevcut eklentileri listeleyen eklentiler sayfası](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: Ultimate Multisite Payfast Gateway eklentisinin vurgulandığı eklentiler sayfası -->
 
-Eklenti penceresi açılacaktır. **Şimdi Kur** seçeneğine tıklayın.
+Eklenti penceresi açılacak. **Şimdi Yükle** üzerine tıklayın.
 
-![Payfast eklentisi kurulum penceresi](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: Şimdi Yükle düğmesini içeren Ultimate Multisite Payfast Gateway eklenti ayrıntıları iletişim kutusu -->
 
-Kurulum tamamlandıktan sonra eklentiler sayfasına yönlendirileceksiniz. Burada **Ağ Genelinde Etkinleştir** seçeneğine tıklayın ve _Payfast_ eklentisi ağınızda etkinleştirilecektir.
+Kurulum tamamlandıktan sonra pluginler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir** üzerine tıklayın; _Payfast_ eklentisi ağınızda etkinleştirilecektir.
 
-![Payfast eklentisini Ağ Genelinde Etkinleştir](/img/config/settings-general.png)
+<!-- Ekran görüntüsü mevcut değil: Payfast Gateway eklentisi için Ağda Etkinleştir bağlantısını içeren pluginler sayfası -->

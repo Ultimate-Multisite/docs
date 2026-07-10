@@ -3,11 +3,11 @@ title: Domain Produkte und Preise
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain-Produkte und Preise
+# Domain-Produkte und Preise {#domain-products-and-pricing}
 
 Domain-Produkte bestimmen, wie Sie Preise, TLDs, WHOIS-Datenschutz und Anbieterauswahl steuern. Jedes Domain-Produkt ist ein Standard-Ultimate Multisite-Produkt mit einem zusätzlichen Tab namens **Domain-Einstellungen**.
 
-## Ein Domain-Produkt erstellen
+## Ein Domain-Produkt erstellen {#creating-a-domain-product}
 
 1. Gehen Sie zu **Network Admin › Ultimate Multisite › Products**
 2. Klicken Sie auf **Add New**
@@ -17,13 +17,13 @@ Domain-Produkte bestimmen, wie Sie Preise, TLDs, WHOIS-Datenschutz und Anbietera
 
 Domain-Produkte werden in der Produktliste mit einem lila **Domain**-Abzeichen angezeigt und können über den Tab **Domain Products** gefiltert werden.
 
-## Domain-Einstellungen-Tab
+## Domain-Einstellungen-Tab {#domain-settings-tab}
 
-### Anbieter
+### Anbieter {#provider}
 
 Wählen Sie hier aus, welcher Registrar die Registrierung für dieses Produkt übernimmt. Standardmäßig wird der globale **Default provider** aus den Domain Seller-Einstellungen verwendet.
 
-### Unterstützte TLDs
+### Unterstützte TLDs {#supported-tlds}
 
 Lassen Sie das Feld leer, um ein **Catch-all-Produkt** zu erstellen, das auf alle TLDs angewendet wird, die nicht von einem anderen Produkt abgedeckt sind.
 
@@ -31,7 +31,7 @@ Geben Sie eine durch Kommas getrennte Liste von TLDs ein (z. B. `.com, .net, .or
 
 **Wie die Produktzuordnung funktioniert:** Wenn ein Kunde nach einer Domain sucht, wählt das Addon das spezifischste passende Produkt. Ein Produkt mit `.com` in seiner TLD-Liste hat Vorrang vor einem Catch-all-Produkt. Wenn kein TLD-spezifisches Produkt passt, wird das Catch-all-Produkt verwendet. Existieren keine Produkte, wird die Domain-Suche nicht angezeigt.
 
-### Aufschlagart
+### Aufschlagart {#markup-type}
 
 Drei Modi bestimmen, wie Ihr Einzelhandelspreis aus den Einkaufskosten berechnet wird:
 
@@ -41,11 +41,11 @@ Drei Modi bestimmen, wie Ihr Einzelhandelspreis aus den Einkaufskosten berechnet
 | **Fester Aufschlag** | Fügt einen festen Geldbetrag hinzu. Ein Aufschlag von 5 $ auf eine Domain von 10 $ ergibt 15 $. |
 | **Festpreis** | Ignoriert die Einkaufskosten vollständig. Verlangt immer den von Ihnen eingegebenen Betrag. |
 
-### Einführungspreis
+### Einführungspreis {#introductory-pricing}
 
 Aktivieren Sie diesen Punkt, um einen vergünstigten Preis für das erste Jahr anzubieten. Legen Sie einen separaten **Introductory price** (den Preis für Jahr 1) neben den regulären **Renewal price** (ab Jahr 2) fest. Der Kunde sieht beide Preise während des Checkouts, damit er weiß, worauf er bei der Verlängerung zu erwarten ist.
 
-### WHOIS-Datenschutz
+### WHOIS-Datenschutz {#whois-privacy}
 
 Steuert, ob für Domains, die über dieses Produkt registriert werden, ein WHOIS-Datenschutz angeboten wird.
 
@@ -59,7 +59,7 @@ Für Namecheap verwendet WHOIS-Datenschutz WhoisGuard (immer kostenlos). Für Op
 
 ---
 
-## TLD-Import und Synchronisierung
+## TLD-Import und Synchronisierung {#tld-import-and-sync}
 
 Domain-Produkte zeigen Echtzeit-Einkaufspreise an, die vom verbundenen Anbieter abgerufen werden. Damit dies funktioniert, müssen TLDs importiert werden.
 
@@ -70,7 +70,7 @@ Nach einer Synchronisierung gehen Sie zum Tab **Domain-Einstellungen** eines bel
 
 ---
 
-## Auto-Verlängerung
+## Auto-Verlängerung {#auto-renewal}
 
 Domain-Verlängerungen sind an den Mitgliedsstatus des Kunden gebunden:
 
@@ -90,7 +90,7 @@ E-Mail-Template-IDs für Domain-Lebenszyklusereignisse:
 
 ---
 
-## Admin: Manuelle Domain-Registrierung
+## Admin: Manuelle Domain-Registrierung {#admin-manual-domain-registration}
 
 Um eine Domain im Namen eines Kunden zu registrieren, ohne dass dieser den Checkout durchführen muss:
 

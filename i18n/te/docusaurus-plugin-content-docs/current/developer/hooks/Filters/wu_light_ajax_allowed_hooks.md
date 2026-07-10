@@ -4,16 +4,16 @@ title: ఫిల్టర్ - wu_light_ajax_allowed_hooks
 sidebar_label: wu_light_ajax_allowed_hooks
 _i18n_hash: 667bcc67eb84d6a18008c7ffc283b19c
 ---
-# Filter: wu_light_ajax_allowed_hooks
+# Filter: wu_light_ajax_allowed_hooks {#filter-wulightajaxallowedhooks}
 
 భద్రతా కారణాల వల్ల, హుక్ చేయడానికి అందుబాటులో ఉన్న యాక్షన్ల సంఖ్యను మేము పరిమితం చేస్తాము. అవసరమైతే, ఆ జాబితాను విస్తరించడానికి ఈ ఫిల్టర్ డెవలపర్‌లకు అనుమతిస్తుంది.
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/class-light-ajax.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-light-ajax.php#L96) లోని 96వ లైన్‌లో నిర్వచించబడింది.
 
-## Returns
+## Returns {#returns}
 హుక్ జాబితాను.

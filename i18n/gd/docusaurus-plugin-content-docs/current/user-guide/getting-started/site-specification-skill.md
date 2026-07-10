@@ -3,11 +3,11 @@ title: Sgàil a' chluas an site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill Spèspefication an Site
+# Skill Spèspefication an Site {#site-specification-skill}
 
 Tha **Skill Spèspefication an Site** (Site Specification) is e churaidh a tha am pròiseas a tha a' tòiseachadh gu foirfeachdach airson a bhith a' tòiseachadh air sgàil, a ghrùdaidh, agus a chàrachd a th' site. Tha an fiosrachadh seo a' tòiseachadh anns an **site_brief** agad, a tha e sinne a' tòiseachadh gu foirfeachdach airson a bhith a' tòiseachadh air sgàil (agents) a' tòiseachadh air seannachdan airson a bhith ag obair.
 
-## Cò a tha Site Specification?
+## Cò a tha Site Specification? {#what-is-site-specification}
 
 Tha Site Specification gun obair:
 
@@ -18,13 +18,13 @@ Tha Site Specification gun obair:
 
 Tha an spèspefication seo a thar a bhith agad is **site_brief**, am prìobhais a tha a' tòiseachadh air sgàil (agents) a' tòiseachadh air a bhith a' faicinn an chùlnaidh a' site.
 
-## Cò a tha Site Specification a' tòiseachadh?
+## Cò a tha Site Specification a' tòiseachadh? {#why-use-site-specification}
 
-### Ag dtí Onboarding Theme Builder
+### Ag dtí Onboarding Theme Builder {#consistency-across-sessions}
 
 Tha Skill Spèspefication a' tòiseachadh gu foirfeachdach ag dtí **onboarding flow** a thàinig an **Theme Builder**. Tha an agent Setup Assistant a' toirt ceistean agus a' tòiseachadh air site_brief agad.
 
-### Tòiseachadh a' chùlnaidh (Manual Initiation)
+### Tòiseachadh a' chùlnaidh (Manual Initiation) {#better-recommendations}
 
 Is eadar an tairt a' chàrdainn a' chàrdainn?
 
@@ -38,9 +38,9 @@ amar
 "Help me create a site brief"
 ```
 
-## An t-saoghalach a' chàrdainn (The Site Specification Process)
+## An t-saoghalach a' chàrdainn (The Site Specification Process) {#faster-onboarding}
 
-### Step 1: Amasg an t-saoghalach (Site Purpose)
+### Step 1: Amasg an t-saoghalach (Site Purpose) {#initiating-site-specification}
 
 A thig an t-agent a' chruinn:
 
@@ -56,7 +56,7 @@ What is your site's primary purpose?
 
 Is eadar a' chàrdainn an t-saoghalach a tha thu?
 
-### Step 2: An t-saoghalach a' chàrdainn (Target Audience)
+### Step 2: An t-saoghalach a' chàrdainn (Target Audience) {#during-theme-builder-onboarding}
 
 ```
 Who is your primary audience?
@@ -71,7 +71,7 @@ What are their main needs?
 
 Cò a tha eirinn a' chàrdainn a' chù?
 
-### Step 3: Bràthn a' chàrdainn (Brand Identity)
+### Step 3: Bràthn a' chàrdainn (Brand Identity) {#manual-initiation}
 
 ```
 What are your brand colors?
@@ -89,7 +89,7 @@ How would you describe your brand tone?
 
 Cò a bheil thu a' chùinnean bràthn?
 
-### Step 4: Amasg a' chàrdainn (Business Goals)
+### Step 4: Amasg a' chàrdainn (Business Goals) {#the-site-specification-process}
 
 ```
 What does success look like for your site?
@@ -110,7 +110,7 @@ What's your primary metric?
 
 Cò a tha seacairteachd a' chàrdainn a' chùinnean?
 
-### Step 5: Struchtar an t-amasan (Content Structure)
+### Step 5: Struchtar an t-amasan (Content Structure) {#step-1-site-purpose}
 
 ```
 How is your content organized?
@@ -131,13 +131,13 @@ What content types do you use?
 
 Cò a tha eairinn a' chàrdainn a' chùinnean?
 
-## An t-saoghalach_brief (Your site_brief Memory)
+## An t-saoghalach_brief (Your site_brief Memory) {#step-2-target-audience}
 
 An dàta a tha thu a' chàrdainn a' chàrdainn a tha a' sgrùdhaidh mar **site_brief** anns an t-agent. Is e cheann a tha seo a' chùinnean:
 
-## A' Chlàradh agus a' chlàradh an t-sìbhir (Viewing and Updating Your site_brief)
+## A' Chlàradh agus a' chlàradh an t-sìbhir (Viewing and Updating Your site_brief) {#step-3-brand-identity}
 
-### A' chlàradh an t-sìbhir agad (View Your site_brief)
+### A' chlàradh an t-sìbhir agad (View Your site_brief) {#step-4-business-goals}
 
 Glaidh an agent:
 
@@ -155,7 +155,7 @@ mar
 
 Bhaidh an agent a' chlàradh an sàilbhir a tha agad.
 
-### A' chlàradh an t-sìbhir agad (Update Your site_brief)
+### A' chlàradh an t-sìbhir agad (Update Your site_brief) {#step-5-content-structure}
 
 Tha eadar-dhealaich a tha eich sìthair, leat thu a thabhair ùrachadh:
 
@@ -171,9 +171,9 @@ amar
 
 Bhaidh seo a' chlàradh an siùin Site Specification gu leathan, agus beidh eich sàilbhir a' chlàradh air a bhith mar amraitheachadh a' chlàradh.
 
-## Conaiche a tha a' chlàradh a' chlàradh (How Agents Use site_brief)
+## Conaiche a tha a' chlàradh a' chlàradh (How Agents Use site_brief) {#your-sitebrief-memory}
 
-### Cnòichean deasachaidh (Design Recommendations)
+### Cnòichean deasachaidh (Design Recommendations) {#viewing-and-updating-your-sitebrief}
 
 Nuair a thig a' chlàradh deasachaidh, tha an agent a' chlàradh air eich sàilbhir:
 

@@ -3,18 +3,18 @@ title: שילוב Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# אינטגרציה עם Closte
+# אינטגרציה עם Closte {#closte-integration}
 
-## סקירה כללית
+## סקירה כללית {#overview}
 Closte היא פלטפורמת אחסון WordPress מנוהלת, הבנויה על תשתית Google Cloud. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים וניהול תעודות SSL בין Ultimate Multisite לבין Closte.
 
-## תכונות
+## תכונות {#features}
 - סנכרון דומיינים אוטומטי
 - ניהול תעודות SSL
 - תמיכה בדומיינים מסוג wildcard
 - ללא צורך בהגדרות אם האתר מתארח ב-Closte
 
-## דרישות
+## דרישות {#requirements}
 יש להגדיר את הקבוע הבא בקובץ `wp-config.php` שלכם אם אתם משתמשים ב-Closte:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 קבוע זה בדרך כלל כבר מוגדר אם האתר שלכם מתארח ב-Closte.
 
-## הוראות התקנה
+## הוראות התקנה {#setup-instructions}
 
-### 1. אימות מפתח ה-API של Closte
+### 1. אימות מפתח ה-API של Closte {#1-verify-your-closte-api-key}
 
 אם האתר שלכם מתארח ב-Closte, הקבוע `CLOSTE_CLIENT_API_KEY` אמור להיות מוגדר כבר בקובץ `wp-config.php`. תוכלו לוודא זאת על ידי בדיקת קובץ `wp-config.php` שלכם.
 
-### 2. הפעלת האינטגרציה
+### 2. הפעלת האינטגרציה {#2-enable-the-integration}
 
 1. באזור הניהול של WordPress, עברו אל Ultimate Multisite > Settings
 2. נווטו ללשונית "Domain Mapping"
@@ -37,7 +37,7 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 4. הפעילו את האינטגרציה עם Closte
 5. לחצו על "Save Changes"
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
 כאשר דומיין ממופה ב-Ultimate Multisite:
 
@@ -47,26 +47,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 האינטגרציה עובדת גם עם הגדרת מרווח בדיקת ה-DNS ב-Ultimate Multisite, ומאפשרת לכם להגדיר באיזו תדירות המערכת בודקת את התפשטות ה-DNS והנפקת תעודת ה-SSL.
 
-## יצירת רשומת דומיין
+## יצירת רשומת דומיין {#domain-record-creation}
 
 אינטגרציה זו מבטיחה שכאשר אתר נוצר או משוכפל, רשומת דומיין נוצרת אוטומטית. זה חשוב במיוחד עבור האינטגרציה עם Closte, מכיוון שיצירת רשומת הדומיין מפעילה את ה-API של Closte ליצירת הדומיין ותעודת ה-SSL.
 
-## פתרון בעיות
+## פתרון בעיות {#troubleshooting}
 
-### בעיות חיבור ל-API
+### בעיות חיבור ל-API {#api-connection-issues}
 - ודאו שמפתח ה-API של Closte נכון
 - ודאו שלחשבון ה-Closte שלכם יש את ההרשאות הנדרשות
 
-### בעיות בתעודות SSL
+### בעיות בתעודות SSL {#ssl-certificate-issues}
 - ייתכן שייקח ל-Closte זמן מה להנפיק תעודות SSL (בדרך כלל 5-10 דקות)
 - ודאו שהדומיינים שלכם מצביעים כראוי לכתובת ה-IP של שרת ה-Closte שלכם
 - בדקו את רשומות ה-DNS של הדומיין שלכם כדי לוודא שהן מוגדרות נכון
 
-### הדומיין לא נוסף
+### הדומיין לא נוסף {#domain-not-added}
 - בדקו את הלוגים של Ultimate Multisite לאיתור הודעות שגיאה
 - ודאו שהדומיין לא נוסף כבר ל-Closte
 - ודאו שרשומות ה-DNS של הדומיין מוגדרות כראוי
 
-### מרווח בדיקת DNS
+### מרווח בדיקת DNS {#dns-check-interval}
 - אם הנפקת תעודות SSL לוקחת יותר מדי זמן, תוכלו לשנות את מרווח בדיקת ה-DNS בהגדרות Domain Mapping
 - מרווח ברירת המחדל הוא 300 שניות (5 דקות), אך ניתן להגדיר אותו עד ל-10 שניות לבדיקה מהירה יותר במהלך בדיקות

@@ -3,17 +3,17 @@ title: Eksport & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportér & Importer
+# Eksportér & Importer {#export--import}
 
 Ultimate Multisite 2.9.0 tilføjer et enkelt single-site **Eksportér & Importer** værktøj under **Værktøjer > Eksportér & Importer**. Brug det, når du skal pakke én WordPress-side som en ZIP-fil, gendanne den ZIP, eller flytte en side mellem kompatible Ultimate Multisite og single-site WordPress-installationer.
 
-## Nødvendige rettigheder
+## Nødvendige rettigheder {#required-permissions}
 
 Du skal være logget ind som administrator med adgang til **Værktøjer** menuen i WordPress på den side, du eksporterer fra eller importerer til. På et multisite netværk skal du bruge en netværksadministrator-konto, når du eksporterer eller importerer subsider fra netværksniveau Ultimate Multisite værktøjer.
 
 Eksportér ZIP-downloads serveres via et autentificeret download-endpoint, så hold admin-sessionen aktiv indtil downloaden er færdig, og del aldrig de genererede download-URL'er offentligt.
 
-## Eksport af en side til en ZIP
+## Eksport af en side til en ZIP {#exporting-a-site-to-a-zip}
 
 1. I WordPress-administratoren for den side, du vil kopiere, gå til **Værktøjer > Eksportér & Importer**.
 2. Åbn eksportområdet og vælg siden, du vil pakke.
@@ -23,7 +23,7 @@ Eksportér ZIP-downloads serveres via et autentificeret download-endpoint, så h
 
 Gem ZIP-filen på et sikkert sted. Den kan indeholde sidens indhold, indstillinger, mediefiler og valgte kodeaktiver.
 
-## Hvad eksporten inkluderer
+## Hvad eksporten inkluderer {#what-the-export-includes}
 
 En eksport ZIP kan indeholde:
 
@@ -34,7 +34,7 @@ En eksport ZIP kan indeholde:
 
 Den præcise ZIP-størrelse afhænger af mængden af medier, de valgte plugins og themes samt størrelsen på websitets database-tabeller.
 
-## Importere en side fra en ZIP
+## Importere en side fra en ZIP {#importing-a-site-from-a-zip}
 
 1. Gå til **Tools > Export & Import** på det destinations WordPress site.
 2. Åbn importområdet og uploader den ZIP, der er oprettet af Export & Import værktøjet.
@@ -46,7 +46,7 @@ Den præcise ZIP-størrelse afhænger af mængden af medier, de valgte plugins o
 
 På en enkelt-site WordPress installation erstatter import af en ZIP den nuværende side med den importerede side. Lav en fuld backup af målsiden, før du starter, og undgå at starte flere imports for samme site på samme tid.
 
-## Begrænsninger og kompatibilitetsnoter
+## Begrænsninger og kompatibilitetsnoter {#limitations-and-compatibility-notes}
 
 Store meget store uploadmapper eller medielagre kan skabe store ZIP-filer. Bekræft PHP's uploadgrænser, eksekveringsgrænser, diskplads, hukommelse og servertimeoutindstillinger, før du eksporterer eller importerer store sider.
 Meget store medielagre kan muligvis skulle flyttes i et lavtrafik vedligeholdelsesvindue.

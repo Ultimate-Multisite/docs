@@ -3,11 +3,11 @@ title: Flèch Migrasyon Souverain
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow de Migration Souveraine
+# Workflow de Migration Souveraine {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ajoute des portes de vérification de migration pour déplacer un sous-site standard vers une infrastructure de locataire souverain.
 
-## Avant de commencer
+## Avant de commencer {#before-you-start}
 
 Confirmez que vous avez :
 
@@ -17,7 +17,7 @@ Confirmez que vous avez :
 - Un lien d'hôte de base de données qui correspond à l'environnement de destination.
 - L'accès pour exécuter des commandes WP-CLI pour le réseau.
 
-## Workflow recommandé
+## Workflow recommandé {#recommended-workflow}
 
 1. Préparez la base de données et le système de fichiers du locataire de destination.
 2. Enregistrez ou mettez à jour les paramètres d'isolation du locataire.
@@ -28,7 +28,7 @@ Confirmez que vous avez :
 7. Visitez le locataire avec SSO.
 8. Changez DNS ou routage seulement après que la vérification soit passée.
 
-## Portes de vérification
+## Portes de vérification {#verification-gates}
 
 Le workflow de vérification contrôle la migration sous plusieurs angles :
 
@@ -40,6 +40,6 @@ Le workflow de vérification contrôle la migration sous plusieurs angles :
 
 Considérez les échecs de vérification comme des blocages avant le lancement. Corrigez le problème de base de données, d'utilisateur, de file ou de routage signalé, puis réexécutez la vérification avant d'exposer le locataire aux clients.
 
-## Première visite en production
+## Première visite en production {#first-production-visit}
 
 Après que la vérification soit passée, utilisez **Visit (SSO)** depuis l'écran de gestion du site pour la première visite administrateur. Cela confirme le routage du locataire, la gestion des jetons SSO, l'ancrage d'origine et le provisionnement des utilisateurs côté locataire en une seule étape contrôlée.

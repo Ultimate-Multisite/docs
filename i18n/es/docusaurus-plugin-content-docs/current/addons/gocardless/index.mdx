@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Payment
 
 ¡Permite a tus clientes pagar membresías y productos de Multisite Ultimate con domiciliación bancaria usando GoCardless!
 
-## Installation
+## Installation {#installation}
 
 1. Upload 'ultimate-multisite-gocardless' to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Follow the step by step Wizard to set the plugin up
 
-## Usage Guide
+## Usage Guide {#usage-guide}
 
 _GoCardless_ es una pasarela de pago disponible en **Europa y Reino Unido** que permite pagos mediante **Domiciliación Bancaria**.
 
@@ -29,7 +29,7 @@ Este tutorial cubrirá cómo configurar _GoCardless_ para comenzar a aceptar pag
 
 _**Nota: GoCardless solo funciona con las siguientes monedas:**_ **EUR, GBP, AUD, SEK y DKK.**
 
-## Installing the Add-on
+## Installing the Add-on {#installing-the-add-on}
 
 En primer lugar, necesitarás instalar el complemento GoCardless para Ultimate Multisite. Puedes hacerlo yendo a **Ultimate Multisite > Settings > Add-ons (en la barra lateral)** y seleccionando el complemento GoCardless en esa lista.
 
@@ -37,7 +37,7 @@ Una vez instalado y activado el complemento, ve a **Ultimate Multisite > Setting
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Getting an Access Token
+## Getting an Access Token {#getting-an-access-token}
 
 Crea una cuenta en _GoCardless_ (o en el sandbox de _GoCardless_, si quieres **probarlo primero**, lo cual se recomienda). Luego, después de iniciar sesión, navega al elemento de menú **Developers**.
 
@@ -53,7 +53,7 @@ Be sure to place it on the right field. If it's a **live token**, toggle the **s
 
 That's it for the first step. Next, you need to setup a webhook listener.
 
-## Setting up the Webhook Listener
+## Setting up the Webhook Listener {#setting-up-the-webhook-listener}
 
 Al tratar con suscripciones, Ultimate Multisite necesita recibir información sobre cambios en el estado de la suscripción, nuevos pagos realizados y otras cosas similares.
 

@@ -3,7 +3,7 @@ title: MailChimp إنتغريشنى
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# MailChimp bilan Birlashtirish (Integration)
+# MailChimp bilan Birlashtirish (Integration) {#mailchimp-integration}
 
 Bu xususiyat **Mailchimp** qo'shimcha orqali taqdim etiladi.
 

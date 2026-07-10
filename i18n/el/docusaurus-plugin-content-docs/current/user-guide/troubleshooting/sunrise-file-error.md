@@ -3,7 +3,7 @@ title: Σφάλμα Αρχείου Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Σφάλμα κατά την Εγκατάσταση του Αρχείου Sunrise
+# Σφάλμα κατά την Εγκατάσταση του Αρχείου Sunrise {#error-installing-the-sunrise-file}
 
 Το αρχείο sunrise.php είναι ένα ειδικό αρχείο που αναζητά το WordPress κατά την εκκίνησή του. Για να μπορέσει το WordPress να εντοπίσει το αρχείο sunrise.php, πρέπει να βρίσκεται μέσα στον **φάκελο wp-content**.
 

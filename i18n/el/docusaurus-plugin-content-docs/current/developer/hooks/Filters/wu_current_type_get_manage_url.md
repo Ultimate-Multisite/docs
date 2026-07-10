@@ -4,11 +4,11 @@ title: 'Φίλτρο - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Επιτρέπει στους προγραμματιστές να τροποποιήσουν τους παράγοντες της URL διαχείρισης του site.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | Ο αναγνωριστικός αριθμός του site. |
 | $site_hash | `string` | Το hash του site. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Ορίζεται στο [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) στην γραμμή 214
 
 
-## Returns
+## Returns {#returns}
 Τη τροποποιημένη URL διαχείρισης.

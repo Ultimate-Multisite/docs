@@ -3,7 +3,7 @@ title: Ngatur Situs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ngelola Situs
+# Ngelola Situs {#managing-sites}
 
 Situs (atau subsites) iku inti saka bisnis WaaS sampeyan. Ultimate Multisite duwe 3 jenis situs:
 
@@ -11,13 +11,13 @@ Situs (atau subsites) iku inti saka bisnis WaaS sampeyan. Ultimate Multisite duw
 - **Site Templates** — Situs sing wis disiapake dadi titik awal sing bisa dipilih dening pelanggan
 - **Main Site** — Situs jaringan utama sampeyan
 
-## Melihat Situs
+## Melihat Situs {#viewing-sites}
 
 Tuju menyang **Ultimate Multisite → Sites** kanggo ndeleng kabeh subsites ing jaringan sampeyan. Saben situs diwenehi label adhedhasar jenis lan sampeyan bisa filter nganggo Kabeh Situs, Customer-Owned, Templates, utawa Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Nambah Situs Anyar
+## Nambah Situs Anyar {#adding-a-new-site}
 
 Klik tombol **Add Site** kanggo nggawe situs anyar. Sampeyan bakal perlu menehi:
 
@@ -27,15 +27,15 @@ Klik tombol **Add Site** kanggo nggawe situs anyar. Sampeyan bakal perlu menehi:
 
 Opsi **Copy Site** ngidini sampeyan nggawe situs anyar adhedhasar template situs sing wis ana. Nalika diaktifake, sampeyan bisa milih template sing arep digunakake minangka titik awal. Pastikan **Copy Media on Duplication** aktif supaya file media uga kalebu.
 
-## Ngelola Situs Sing Ana
+## Ngelola Situs Sing Ana {#managing-an-existing-site}
 
 Klik **Manage** ing saben situs kanggo mbukak halaman **Edit Site**. Ing kene sampeyan bakal nemokake:
 
-### Informasi Dasar
+### Informasi Dasar {#basic-information}
 
 Jeneng situs, jenisnya, site ID, lan deskripsi. Sampeyan uga bakal weruh domain sing dipetakan, keanggotaan sing terkait, lan akun pelanggan sing duwe situs kasebut.
 
-### Opsi Situs
+### Opsi Situs {#site-options}
 
 Konfigurasi kemampuan lan batasan situs:
 
@@ -49,7 +49,7 @@ Konfigurasi kemampuan lan batasan situs:
 
 Secara *default*, situs akan mengikuti batasan yang sudah diatur di level keanggotaan (*membership*). Kalau kamu mengatur batas di level situs, itu akan menimpa pengaturan keanggotaan.
 
-### Hubungan (Associations)
+### Hubungan (Associations) {#associations}
 
 Di bawah pilihan situs, kamu bakal nemu informasi tentang:
 
@@ -57,7 +57,7 @@ Di bawah pilihan situs, kamu bakal nemu informasi tentang:
 - **Membership** tempat situs ini berada
 - **Customer account** yang terhubung dengan situs
 
-### Sidebar Kanan
+### Sidebar Kanan {#right-sidebar}
 
 Di sisi kanan kamu bisa:
 

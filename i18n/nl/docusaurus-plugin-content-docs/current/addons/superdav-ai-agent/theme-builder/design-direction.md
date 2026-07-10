@@ -3,17 +3,17 @@ title: Ontwerprichting
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction
+# Design Direction {#design-direction}
 
 De stap **Design Direction** stelt u in staat om het visuele ontwerp van uw thema te bekijken, te verfijnen en definitief te maken voordat Theme Builder het complete thema genereert.
 
-## Overzicht
+## Overzicht {#overview}
 
 Nadat u het Discovery Interview heeft voltooid, presenteert Theme Builder uw designrichting met een **desktop- en mobiele preview rendering**. Hiermee ziet u precies hoe uw ontwerp op verschillende apparaten zal worden weergegeven, voordat u zich committeert aan het thema.
 
-## Design Direction Componenten
+## Design Direction Componenten {#design-direction-components}
 
-### 1. Kleurenpalet
+### 1. Kleurenpalet {#1-color-palette}
 
 Het kleurenschema van uw thema, inclusief:
 
@@ -23,7 +23,7 @@ Het kleurenschema van uw thema, inclusief:
 - **Neutrale kleuren** — grijs- en witgradaties voor achtergronden en tekst
 - **Tekstkleur** — de primaire tekstkleur voor leesbaarheid
 
-### 2. Typografie
+### 2. Typografie {#2-typography}
 
 Lettertypekeuzes voor:
 
@@ -33,14 +33,14 @@ Lettertypekeuzes voor:
 - **Regelafstand** — de afstand tussen de regels voor leesbaarheid
 - **Lettergewichten** — vet, normaal en licht variaties
 
-### 3. Lay-out en Afstand
+### 3. Lay-out en Afstand {#3-layout-and-spacing}
 
 - **Containerbreedte** — de maximale breedte voor de inhoud
 - **Padding en marges** — de afstand rondom elementen
 - **Grid systeem** — de kolomindeling voor responsief ontwerp
 - **Componentafstand** — de afstand tussen UI-elementen
 
-### 4. Visuele Elementen
+### 4. Visuele Elementen {#4-visual-elements}
 
 - **Knopstijlen** — primaire, secundaire en tertiaire knopontwerpen
 - **Card ontwerpen** — lay-outs voor inhoudsblokken
@@ -48,9 +48,9 @@ Lettertypekeuzes voor:
 - **Randlijnen en schaduwen** — subtiele visuele diepte
 - **Hover effecten** — styling voor interactieve statussen
 
-## Preview Rendering
+## Preview Rendering {#preview-rendering}
 
-### Desktop Preview
+### Desktop Preview {#desktop-preview}
 
 De desktop preview toont uw ontwerp in volledige breedte (meestal 1200px of breder):
 
@@ -59,7 +59,7 @@ De desktop preview toont uw ontwerp in volledige breedte (meestal 1200px of bred
 - Grote typografie en afstand
 - Alle visuele elementen in volle grootte
 
-### Mobile Preview
+### Mobile Preview {#mobile-preview}
 
 De mobile preview toont uw ontwerp in mobiele breedte (meestal 375px):
 
@@ -68,7 +68,7 @@ De mobile preview toont uw ontwerp in mobiele breedte (meestal 375px):
 - Aangepaste typografie en afstand
 - Aanraakvriendelijke knopgroottes
 
-### Responsieve Breakpoints
+### Responsieve Breakpoints {#responsive-breakpoints}
 
 Theme Builder genereert previews op deze breakpoints:
 
@@ -79,9 +79,9 @@ Theme Builder genereert previews op deze breakpoints:
 | **Desktop** | 1200px | Volledige breedte desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Uw Ontwerp Verfijnen
+## Uw Ontwerp Verfijnen {#refining-your-design}
 
-### Aanpassingen Maken
+### Aanpassingen Maken {#making-adjustments}
 
 U kunt uw designrichting verfijnen door:
 
@@ -91,7 +91,7 @@ U kunt uw designrichting verfijnen door:
 4. **Lay-out bijwerken** — wijzig containerbreedtes en gridkolommen
 5. **Elementen aanpassen** — wijzig knopstijlen, card ontwerpen, enz.
 
-### Preview Updates
+### Preview Updates {#preview-updates}
 
 Wijzigingen worden in real-time weergegeven:
 
@@ -100,7 +100,7 @@ Wijzigingen worden in real-time weergegeven:
 - Alle responsieve breakpoints worden bijgewerkt
 - U kunt schakelen tussen previews om wijzigingen te verifiëren
 
-### Vergelijkingsweergave
+### Vergelijkingsweergave {#comparison-view}
 
 Vergelijk uw designrichting met:
 
@@ -108,7 +108,7 @@ Vergelijk uw designrichting met:
 - **Concurrentieontwerpen** — vergelijk met inspiratiesites
 - **Eerdere versies** — keer terug naar eerdere designrichtingen
 
-## Design Direction Goedkeuren
+## Design Direction Goedkeuren {#design-direction-approval}
 
 Zodra u tevreden bent met uw ontwerp:
 
@@ -118,7 +118,7 @@ Zodra u tevreden bent met uw ontwerp:
 4. **Bevestig de lay-out** — controleer de afstand en uitlijning
 5. **Ontwerp goedkeuren** — ga verder met de thema-generatie
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat u uw designrichting heeft goedgekeurd:
 
@@ -127,7 +127,7 @@ Nadat u uw designrichting heeft goedgekeurd:
 3. U kunt verder aanpassen met de WordPress customizer
 4. Ga verder naar [Hospitality Menus](./hospitality-menus.md) of andere functies
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Test op echte apparaten** — gebruik indien mogelijk echte telefoons en tablets
 - **Controleer de leesbaarheid** — zorg ervoor dat de tekst leesbaar is bij alle groottes
@@ -135,30 +135,30 @@ Nadat u uw designrichting heeft goedgekeurd:
 - **Denk aan prestaties** — optimaliseer afbeeldingen en lettertypen voor snelheid
 - **Plan de inhoud** — zorg ervoor dat de lay-out werkt met uw daadwerkelijke inhoud
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Preview Updateert Niet
+### Preview Updateert Niet {#preview-not-updating}
 
 - Vernieuw de pagina
 - Wis de browsercache
 - Probeer een andere browser
 - Controleer de internetverbinding
 
-### Kleuren Zien Anders Uit
+### Kleuren Zien Anders Uit {#colors-look-different}
 
 - Controleer de monitorkleurensinstellingen
 - Probeer op verschillende apparaten
 - Verifieer het kleurcontrast met toegankelijkheidstools
 - Overweeg kleurenblindheidssimulatoren
 
-### Typografische Problemen
+### Typografische Problemen {#typography-issues}
 
 - Verifieer of de lettertypebestanden laden
 - Controleer de lettergrootte bij verschillende breakpoints
 - Test met daadwerkelijke inhoud
 - Overweeg de regelbreedte voor leesbaarheid
 
-## Gerelateerde Documentatie
+## Gerelateerde Documentatie {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — verzamel designinformatie
 - [Hospitality Menus](./hospitality-menus.md) — creëer gestructureerde menu-pagina's

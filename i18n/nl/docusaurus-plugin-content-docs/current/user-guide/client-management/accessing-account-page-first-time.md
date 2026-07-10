@@ -1,22 +1,22 @@
 ---
-title: Toegang tot de accountpagina
+title: De Account-pagina openen
 sidebar_position: 3
-_i18n_hash: 0d69bbd563af0fecb531be89ea991f1f
+_i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hoe kan ik voor het eerst mijn accountpagina openen?
+# Hoe krijg ik voor het eerst toegang tot mijn accountpagina? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Welkom bij Ultimate Multisite!
 
-Toegang tot je accountpagina via de link die je per e-mail hebt ontvangen na het kopen van onze plugin:
+Open je accountpagina via de link die je in je e-mail hebt ontvangen na aankoop van onze plugin:
 
-<!-- Screenshot unavailable: Account page email with access link -->
+<!-- Screenshot unavailable: Accountpagina-e-mail met toegangslink -->
 
-Gebruik het e-mailadres dat je tijdens de aankoop hebt opgegeven en het wachtwoord dat je per e-mail hebt ontvangen.
+Gebruik het e-mailadres dat je tijdens de aankoop hebt opgegeven en het wachtwoord dat je in je e-mail hebt ontvangen.
 
-<!-- Screenshot unavailable: Login page with email and password fields -->
+<!-- Screenshot unavailable: Inlogpagina met velden voor e-mail en wachtwoord -->
 
-Aangezien dit je eerste keer is dat je inlogt op dit account, wordt je gevraagd om je wachtwoord te wijzigen. Wijzig het en klik op de _Save_-knop.
+Omdat dit de eerste keer is dat je inlogt op dit account, wordt je gevraagd je wachtwoord te wijzigen. Wijzig het en klik op de knop _Opslaan_.
 
-<!-- Screenshot unavailable: Change password form with Save button -->
+<!-- Screenshot unavailable: Formulier voor wachtwoord wijzigen met knop Opslaan -->
 
-Op je accountpagina kun je al je accountgegevens beheren, zoals facturatie, verlengingen, annuleringsopties en nog veel meer.
+Op je accountpagina kun je al je accountgegevens beheren, zoals factureringen, verlengingen, annuleringen en veel andere zaken.

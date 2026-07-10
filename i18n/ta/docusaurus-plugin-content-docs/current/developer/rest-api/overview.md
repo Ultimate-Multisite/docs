@@ -1,58 +1,58 @@
 ---
 title: REST API கண்ணோட்டம்
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API குறிப்பு
+# REST API குறிப்பு {#rest-api-reference}
 
-## அடிப்படை அமைப்பு
+## அடிப்படை கட்டமைப்பு {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**அங்கீகாரம் (Authentication):** API Key & Secret (HTTP Basic Auth அல்லது URL Parameters)
+**அடிப்படை URL:** `{site_url}/wp-json/wu/v2/`
+**அங்கீகாரம்:** API Key மற்றும் ரகசியம் (HTTP Basic Auth அல்லது URL அளவுருக்கள்)
 
-## அங்கீகரிப்பு
+## அங்கீகாரம் {#authentication}
 
-### API-ஐ இயக்குதல்
+### API-ஐ இயக்கு {#enable-api}
 ```php
-// Ultimate Multisite அமைப்புகள் அல்லது நிரல் மூலம் API-ஐ இயக்குதல்
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Credentials-ஐ பெறுதல்
+### API சான்றுகளைப் பெறுக {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### அங்கீகார முறைகள்
+### அங்கீகார முறைகள் {#authentication-methods}
 
 **HTTP Basic Auth (பரிந்துரைக்கப்படுகிறது):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL அளவுருக்கள்:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## முக்கிய Endpoints
+## முதன்மை முடிவுப்புள்ளிகள் {#core-endpoints}
 
-### 1. வாடிக்கையாளர்கள் API
+### 1. வாடிக்கையாளர்கள் API {#1-customers-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/customers`
+**அடிப்படை வழி:** `/customers`
 
-**அனைத்து வாடிக்கையாளர்களையும் பெறுதல்**
+**அனைத்து வாடிக்கையாளர்களையும் பெறுக**
 ```http
 GET /wu/v2/customers
 ```
 
-**ஒரு குறிப்பிட்ட வாடிக்கையாளரைப் பெறுதல்**
+**ஒற்றை வாடிக்கையாளரைப் பெறுக**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**வாடிக்கையாளரை உருவாக்குதல்**
+**வாடிக்கையாளரை உருவாக்கு**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**வாடிக்கையாளரைக் கையாளுதல் (Update)**
+**வாடிக்கையாளரைப் புதுப்பி**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**வாடிக்கையாளரைக் நீக்குதல்**
+**வாடிக்கையாளரை நீக்கு**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. தளங்கள் API
+### 2. தளங்கள் API {#2-sites-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/sites`
+**அடிப்படை வழி:** `/sites`
 
-**தளத்தை உருவாக்குதல்**
+**தளத்தை உருவாக்கு**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. உறுப்பினர் திட்டங்கள் API
+### 3. உறுப்பினர் சேர்க்கைகள் API {#3-memberships-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/memberships`
+**அடிப்படை வழி:** `/memberships`
 
-**உறுப்பினர் திட்டத்தை உருவாக்குதல்**
+**உறுப்பினர் சேர்க்கையை உருவாக்கு**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. தயாரிப்புகள் API
+### 4. தயாரிப்புகள் API {#4-products-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/products`
+**அடிப்படை வழி:** `/products`
 
-**அனைத்து தயாரிப்புகளையும் பெறுதல்**
+**அனைத்து தயாரிப்புகளையும் பெறுக**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. பணம் செலுத்தும் API
+### 5. கட்டணங்கள் API {#5-payments-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/payments`
+**அடிப்படை வழி:** `/payments`
 
-**பணம் செலுத்துதலை உருவாக்குதல்**
+**கட்டணத்தை உருவாக்கு**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. டொமைன்கள் API
+### 6. டொமைன்கள் API {#6-domains-api}
 
-**அடிப்படை வழித்தடம் (Base Route):** `/domains`
+**அடிப்படை வழி:** `/domains`
 
-**டொமைனை வரைபடமாக்குதல் (Map)**
+**டொமைனை இணை**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## பதிவு செய்யும் Endpoint
+## பதிவுசெய்தல் முடிவுப்புள்ளி {#registration-endpoint}
 
-`/register` endpoint என்பது ஒரு முழுமையான checkout/பதிவு செய்யும் செயல்முறையை வழங்குகிறது:
+`/register` முடிவுப்புள்ளி முழுமையான checkout/பதிவுசெய்தல் ஓட்டத்தை வழங்குகிறது:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**பதில் (Response):**
+**பதில்:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## பிழை பதில்கள்
+## சுயாட்சி tenant முடிவுப்புள்ளிகள் {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 தனிமைப்படுத்தப்பட்ட tenant-களை வழங்க, ஆய்வு செய்ய அல்லது சரிபார்க்கும் ஒருங்கிணைப்புகளுக்கான சுயாட்சி tenant REST கவரேஜைச் சேர்க்கிறது.
+
+துல்லியமான கோரிக்கை payload இயக்கப்பட்ட host திறனைப் பொறுத்தது. ஆனால் ஒருங்கிணைப்புகள் இந்த முடிவுப்புள்ளி குழுக்களை எதிர்பார்க்க வேண்டும்:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+tenant பதிவகம், தரவுத்தளம், கோப்பு முறைமை மற்றும் வழிமாற்று நிலையைத் தயாரிக்க bootstrap முடிவுப்புள்ளியைப் பயன்படுத்தவும். production போக்குவரத்தை மாற்றுவதற்கு முன் migration status மற்றும் verification முடிவுப்புள்ளிகளைப் பயன்படுத்தவும். sovereign teardown-க்கு deletion முடிவுப்புள்ளியைப் பயன்படுத்தவும்; இதனால் தரவுத்தள சான்றுகள் addon cleanup ஓட்டம் மூலம் அகற்றப்படும்.
+
+சாதாரண migration status பதில்களில் அடங்குபவை:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` என்பதை வெளியீட்டுக்கு முன் தடையாகக் கருதவும். சரிபார்ப்பு விவரங்களைப் பார்த்து, தரவுத்தள host binding, queue, பயனர் provisioning அல்லது routing சிக்கலைச் சரிசெய்து, பின்னர் verification-ஐ மீண்டும் முயலவும்.
+
+## பிழை பதில்கள் {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## பக்கப் பகுப்பாய்வு மற்றும் வடிகட்டுதல்
+## பக்கமாக்கல் மற்றும் வடிகட்டல் {#pagination-and-filtering}
 
-**Query Parameters:**
+**வினவல் அளவுருக்கள்:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-பொதுவான Parameters:
-- `per_page` - ஒரு பக்கத்தில் உள்ள பொருட்களின் எண்ணிக்கை (இயல்புநிலை: 20, அதிகபட்சம்: 100)
+பொதுவான அளவுருக்கள்:
+- `per_page` - ஒவ்வொரு பக்கத்திற்குமான உருப்படிகள் (இயல்புநிலை: 20, அதிகபட்சம்: 100)
 - `page` - பக்க எண்
 - `search` - தேடல் சொல்
-- `orderby` - வரிசைப்படுத்த வேண்டிய field
-- `order` - வரிசைப்படுத்தும் திசை (asc/desc)
-- `status` - நிலையின் அடிப்படையில் வடிகட்டுதல்
-- `date_created` - தேதி வரம்பின் அடிப்படையில் வடிகட்டுதல்
+- `orderby` - வரிசைப்படுத்தும் புலம்
+- `order` - வரிசை திசை (asc/desc)
+- `status` - நிலை அடிப்படையில் வடிகட்டு
+- `date_created` - தேதி வரம்பு அடிப்படையில் வடிகட்டு

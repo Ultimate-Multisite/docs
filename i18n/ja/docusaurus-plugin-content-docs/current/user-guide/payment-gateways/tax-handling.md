@@ -1,112 +1,120 @@
 ---
-title: 税金の取り扱い
+title: 税金処理
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 税金処理
+# 税の取り扱い {#tax-handling}
 
-Ultimate Multisiteには、コアプラグインに組み込まれた税金徴収モジュールがあり、プラン、パッケージ、サービスに対して売上税を徴収する必要がある場合、追加のアドオンをインストールせずに簡単に行うことができます。
+Ultimate Multisite には、コア plugin に税徴収モジュールが組み込まれています。そのため、プラン、パッケージ、サービスで売上税を徴収する必要がある場合でも、add-on をインストールせずに簡単に対応できます。
 
-ヨーロッパに拠点を置く企業向けに、**add-on**があり、VATコンプライアンスをよりよく**サポート**するツールと機能を追加します。
+ヨーロッパに所在する会社向けに、VAT 準拠をより適切に**サポート**するためのツールと機能を追加する **add-on** を提供しています。
 
-Ultimate Multisiteは、政府に代わって税金を申告したり納付したりしません。取引時に適切な税金を徴収するのをサポートするだけです。**あなた自身で税金を納付する必要があります。**
+Ultimate Multisite は、あなたに代わって政府へ税の申告や納付を行いません。取引時に適切な税を徴収できるよう支援するだけです。**税の納付は引き続きご自身で行う必要があります。**
 
-## 税金徴収の有効化
+## 税徴収を有効にする {#enabling-tax-collection}
 
-税金徴収はデフォルトで有効になっていません。これを有効にするには、**Ultimate Multisite > Settings > Taxes**に移動し、Enable Taxes設定を有効にするトグルを切り替えます。
+税徴収はデフォルトでは有効になっていません。有効にするには、**Ultimate Multisite > Settings > Taxes** に移動し、Enable Taxes 設定をオンに切り替える必要があります。
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![税設定ページ上部の Enable Taxes 切り替え](/img/config/settings-taxes-enable.png)
 
-### 税抜き vs. 税込
+税設定ページ全体は次のように表示されます。
 
-デフォルトでは、すべての製品価格は税抜きです。つまり、税金は製品価格に**含まれていません**。顧客が特定の購入に対して税金を支払う必要があると判断した場合、税金を小計の**上に**追加します。
+![税設定の全ページ](/img/config/settings-taxes-full.png)
 
-製品価格に税金を含めたい場合は、**Inclusive Tax**設定を有効にすることで実現できます。
+個別の商品ごとの税設定も確認できます。
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![商品の税設定](/img/config/settings-taxes.png)
 
-**保存**を忘れないでください。
+### 税抜きと税込み {#tax-excluded-vs-tax-included}
 
-### 
+デフォルトでは、すべての商品価格は税抜きです。つまり、商品の価格に税は**含まれていません**。特定の購入で顧客が税を支払うべきだと判断した場合、小計に税を**上乗せ**します。
 
-## 税率の作成
+商品の価格に税を含めたい場合は、**Inclusive Tax** 設定を有効にすることで対応できます。
 
-税金徴収を有効にした後、税率エディタを使用して特定の場所の税率を作成する必要があります。
+![Enable Taxes 設定の下にある Inclusive Tax 切り替え行](/img/config/settings-taxes-inclusive.png)
 
-税設定ページのサイドバーにある**Manage Tax Rates**ボタンをクリックすると、エディタにアクセスできます。
+行った変更を**保存**するのを忘れないでください。
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+###
 
-税率エディタページで、**Add new Row**ボタンをクリックして新しい税率を追加できます。
+## 税率を作成する {#creating-tax-rates}
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+Tax Collection を有効にした後は、税率エディターを使用して特定の地域向けの税率を作成する必要があります。
 
-各税率に**title**（請求書で使用）を付ける必要があります。次に、**country**（必須）、**state**、**city**（どちらも任意）を選択し、この税が課税される場所を指定します。最後に、**tax rate in percents**（税率をパーセントで）を追加します。
+Tax settings ページのサイドバーにある **Manage Tax Rates** ボタンをクリックすると、エディターにアクセスできます。
 
-### 税カテゴリ
+![設定ページの Tax Rates パネルにある Manage Tax Rates リンク](/img/config/settings-taxes-manage-rates.png)
 
-複数のTax Categoriesを作成して、異なる種類の製品に対して異なる税率を設定することもできます。
+税率エディターページでは、**Add new Row** ボタンをクリックして新しい Tax Rates を追加できます。
 
-**Add new Tax Category**をクリックし、カテゴリ名を入力して**Create**を押します。
+![上部に Add new Row ボタンがある税率エディターの表](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+各税率には、**タイトル**（請求書で使用）を指定する必要があります。次に、この税が課される**国**（必須）、**州、**および**市区町村**（どちらも任意）を選択できます。最後に、**税率をパーセントで**追加します。
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+### 税カテゴリ {#tax-categories}
 
-カテゴリを閲覧するには、**Switch**をクリックし、新しい税を追加したいカテゴリを選択します。
+複数の Tax Categories を作成して、商品の種類ごとに異なる税率を追加することもできます。
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+**Add new Tax Category** をクリックし、カテゴリ名を入力して **Create** を押します。
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![税率エディター上部の Add new Tax Category ボタン](/img/config/tax-categories-add.png)
 
-特定の製品の税カテゴリを設定するには、**Product edit page**に移動し、Taxesタブを開きます。
+![カテゴリ作成モーダルの Tax Category Name 入力欄](/img/config/tax-categories-create-modal.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+カテゴリを切り替えるには、**Switch** をクリックし、新しい税を追加したいカテゴリを選択します。
 
-同じ画面で、**Is Taxable?**トグルをオフにすると、Ultimate Multisiteにその製品に対して税金を徴収しないように指示できます。
+![税カテゴリを切り替える Switch ドロップダウンボタン](/img/config/tax-categories-switch.png)
 
-## 欧州VATサポート
+![利用可能なカテゴリを表示する税カテゴリ選択ドロップダウン](/img/config/tax-categories-select.png)
 
-前述のように、EUの顧客向けに、欧州のVAT規制により追加の要件がある場合に備えてアドオンを提供しています。
+特定の商品に税カテゴリを設定するには、**商品編集ページ**に移動し、Taxes タブを開きます。
 
-当社のVATツールは、以下の重要な点をサポートします：
+![税カテゴリと課税対象切り替えを含む商品の税タブ](/img/config/product-taxes.png)
 
-  * EU VAT率の簡単な読み込み;
+同じ画面で **Is Taxable?** 切り替えをオフにすると、その商品について税を徴収しないよう Ultimate Multisite に知らせることができます。
 
-  * VAT番号の収集と検証、およびVAT免税事業者（有効なVAT番号を持つ企業など）への逆課税;
+## ヨーロッパ VAT サポート {#european-vat-support}
 
-そのアドオンをインストールするには、**Ultimate Multisite > Settings**に移動し、サイドバーの**Check our Add-ons**リンクをクリックします。
+前述のとおり、European VAT 規制により追加要件がある EU の顧客向けに add-on を用意しています。
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+当社の VAT ツールは、いくつかの重要な点を支援します。
 
-アドオンページにリダイレクトされます。そこで、**Ultimate Multisite VAT add-on**を検索してインストールできます。
+  * EU VAT 税率の簡単な読み込み。
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+  * VAT 番号の収集と検証、および VAT 免除対象（有効な VAT 番号を持つ会社など）へのリバースチャージ。
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+この add-on をインストールするには、**Ultimate Multisite > Settings** に移動し、サイドバーの **Check our Add-ons** リンクをクリックします。
 
-次に、**Network Admin > Plugins**に移動し、アドオンをネットワーク全体で有効化します。
+![Check our Add-ons リンクがある Settings ページのサイドバー](/img/config/settings-taxes-addons-link.png)
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+add-ons ページにリダイレクトされます。そこで **Ultimate Multisite VAT add-on** を検索してインストールできます。
 
-**Tax Settings tab**に戻ると、新しいオプションが表示されます。**Enable VAT Support**オプションをトグルして新しいVATツールを有効にします。**保存**を忘れないでください！
+<!-- スクリーンショットなし: Add-ons ページの VAT add-on タイル -->
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+<!-- スクリーンショットなし: VAT add-on の Install Now ダイアログ -->
 
-### VAT税率の取得
+次に、**Network Admin > Plugins** に移動し、その add-on をネットワーク全体で有効化します。
 
-当社の統合で追加されるツールの1つは、EU加盟国の税率を読み込む機能です。これは、EU VATサポートを有効にした後、税率エディタページを訪問することで実行できます。
+<!-- スクリーンショットなし: Plugins ページの VAT add-on に対する Network Activate 操作 -->
 
-ページの下部にVATプルオプションが表示されます。レートタイプを選択し、**Update EU VAT Rates**ボタンをクリックすると、各EU加盟国の税率でテーブルが自動的に埋められます。その後、保存するだけです。
+**Tax Settings タブ**に戻ると、新しいオプションが表示されます。新しい VAT ツールを有効にするには、**Enable VAT Support** オプションをオンに切り替えます。設定を**保存**するのを忘れないでください。
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+<!-- スクリーンショットなし: add-on 有効化後の Tax 設定にある Enable VAT Support 切り替え -->
 
-プル後に値を編集することもできます。行を編集し、新しい値を保存するだけです。
+### VAT 税率を取得する {#pulling-on-vat-tax-rates}
 
-### VAT検証
+当社の連携が追加するツールの 1 つに、EU 加盟国の税率を読み込む機能があります。これは EU VAT サポートを有効にした後、税率エディターページにアクセスすることで実行できます。
 
-VATサポートが有効になると、Ultimate Multisiteはチェックアウトフォームに追加フィールドを追加し、請求先住所フィールドの下に表示します。このフィールドはEUに所在する顧客にのみ表示されます。
+ページ下部に VAT 取得オプションが表示されます。税率タイプを選択して **Update EU VAT Rates** ボタンをクリックすると、各 EU 加盟国の税率が取得され、表に自動入力されます。その後は保存するだけです。
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+![税率エディター下部の Update EU VAT Rates ボタン](/img/config/tax-rates-vat-pull.png)
 
-Ultimate MultisiteはVAT番号を検証し、有効であれば逆課税メカニズムが適用され、注文の税率が0％に設定されます。
+取得後に値を編集することもできます。必要な表の行を編集し、新しい値を保存するだけです。
+
+### VAT 検証 {#vat-validation}
+
+VAT サポートが有効な場合、Ultimate Multisite は checkout フォームの billing address 欄の下に追加の項目を追加します。この項目は EU に所在する顧客にのみ表示されます。
+
+<!-- スクリーンショットなし: billing address の下にあるフロントエンド checkout フォームの VAT Number 項目 -->
+
+Ultimate Multisite はその後 VAT 番号を検証し、有効な番号として返された場合はリバースチャージの仕組みが適用され、その注文の税率は 0% に設定されます。

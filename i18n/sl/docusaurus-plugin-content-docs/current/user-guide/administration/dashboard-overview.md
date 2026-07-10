@@ -3,11 +3,11 @@ title: Pregled dashboarda
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Pregled nad dashboardom
+# Pregled nad dashboardom {#dashboard-overview}
 
 Ultimate Multisite ima posvečen **Dashboard** pod menijem Ultimate Multisite, in tudi dodaje widgete na Network Dashboard. Ta članek pokriva, kaj boste videli obeh mestih.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite vstavlja uporabne widgete v network-level dashboard, ki se najde na **Moja spletna mesta → Admin omrežja → Dashboard**.
 
@@ -35,7 +35,7 @@ Tukaj je, kaj vsak widget ponuja:
 
 ![Widget Novice](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Medtem ko network dashboard prikazuje celovit informacije o omrežju, prikazuje ga dashboard Ultimate Multisite (na najvišji ravni menija Ultimate Multisite) informacije o storitvi.
 

@@ -1,32 +1,32 @@
 ---
 title: Översikt över REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referens
+# REST API-referens {#rest-api-reference}
 
-## Grundkonfiguration
+## Baskonfiguration {#base-configuration}
 
 **Bas-URL:** `{site_url}/wp-json/wu/v2/`
-**Autentisering:** API Key & Secret (HTTP Basic Auth eller URL-parametrar)
+**Autentisering:** API-nyckel och hemlighet (HTTP Basic Auth eller URL-parametrar)
 
-## Autentisering
+## Autentisering {#authentication}
 
-### Aktivera API
+### Aktivera API {#enable-api}
 ```php
-// Aktivera API i Ultimate Multisite-inställningarna eller programmeringsmässigt
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Hämta API-uppgifter
+### Hämta API-autentiseringsuppgifter {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Autentiseringsmetoder
+### Autentiseringsmetoder {#authentication-methods}
 
-**HTTP Basic Auth (Rekommenderas):**
+**HTTP Basic Auth (rekommenderas):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,18 +36,18 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kärn-endpoints
+## Kärnslutpunkter {#core-endpoints}
 
-### 1. Kunder API
+### 1. Kund-API {#1-customers-api}
 
-**Bas-rutt:** `/customers`
+**Basrutt:** `/customers`
 
 **Hämta alla kunder**
 ```http
 GET /wu/v2/customers
 ```
 
-**Hämta enskild kund**
+**Hämta en enskild kund**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP-kundanteckningar"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,9 +82,9 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Webbplatser API
+### 2. Webbplats-API {#2-sites-api}
 
-**Bas-rutt:** `/sites`
+**Basrutt:** `/sites`
 
 **Skapa webbplats**
 ```http
@@ -96,15 +96,15 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Min nya webbplats",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Medlemskap API
+### 3. Medlemskaps-API {#3-memberships-api}
 
-**Bas-rutt:** `/memberships`
+**Basrutt:** `/memberships`
 
 **Skapa medlemskap**
 ```http
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. Produkter API
+### 4. Produkt-API {#4-products-api}
 
-**Bas-rutt:** `/products`
+**Basrutt:** `/products`
 
 **Hämta alla produkter**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Betalningar API
+### 5. Betalnings-API {#5-payments-api}
 
-**Bas-rutt:** `/payments`
+**Basrutt:** `/payments`
 
 **Skapa betalning**
 ```http
@@ -150,9 +150,9 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domäner API
+### 6. Domän-API {#6-domains-api}
 
-**Bas-rutt:** `/domains`
+**Basrutt:** `/domains`
 
 **Mappa domän**
 ```http
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registrerings-endpoint
+## Registreringsslutpunkt {#registration-endpoint}
 
-Endpointet `/register` hanterar hela flödet för kassa/registrering:
+Slutpunkten `/register` tillhandahåller ett komplett kassa-/registreringsflöde:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Min nya webbplats",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Felmeddelanden
+## Slutpunkter för suveräna klientmiljöer {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 lägger till REST-täckning för suveräna klientmiljöer för integrationer som tillhandahåller, inspekterar eller verifierar isolerade klientmiljöer.
+
+Den exakta nyttolasten för begäran beror på den aktiverade värdfunktionaliteten, men integrationer bör förvänta sig dessa slutpunktsgrupper:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Använd bootstrap-slutpunkten för att förbereda klientmiljöregistret, databasen, filsystemet och routingtillståndet. Använd slutpunkterna för migreringsstatus och verifiering innan du växlar produktionstrafik. Använd borttagningsslutpunkten för suverän nedmontering så att databasautentiseringsuppgifter tas bort genom tilläggets rensningsflöde.
+
+Typiska svar för migreringsstatus inkluderar:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Behandla `ready: false` som en blockerare före lansering. Kontrollera verifieringsdetaljerna, åtgärda problemet med databasens värdbindning, kön, användartillhandahållandet eller routingen och försök sedan verifiera igen.
+
+## Felsvar {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Ogiltigt parametervärde",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Ogiltigt e-postformat"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginering och Filtrering
+## Paginering och filtrering {#pagination-and-filtering}
 
-**Query-parametrar:**
+**Frågeparametrar:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Vanliga parametrar:
-- `per_page` - Antal poster per sida (standard: 20, max: 100)
-- `page` - Sidanummer
+- `per_page` - Objekt per sida (standard: 20, max: 100)
+- `page` - Sidnummer
 - `search` - Sökterm
-- `orderby` - Fält att sortera efter
+- `orderby` - Sorteringsfält
 - `order` - Sorteringsriktning (asc/desc)
 - `status` - Filtrera efter status
 - `date_created` - Filtrera efter datumintervall

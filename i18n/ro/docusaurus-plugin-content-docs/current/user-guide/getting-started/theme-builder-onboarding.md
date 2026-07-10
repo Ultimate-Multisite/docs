@@ -3,11 +3,11 @@ title: Flux de onboarding pentru Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxul de Onboarding în Theme Builder
+# Fluxul de Onboarding în Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduce un **flux de onboarding în Theme Builder** ghidat care vă ajută să creați o temă personalizată bazată pe blocuri în timpul configurării inițiale. Acest lucru înlocuiește modul Site Builder (cel vechi) cu o abordare mai flexibilă, asistată de un agent.
 
-## Ce este Fluxul de Onboarding în Theme Builder?
+## Ce este Fluxul de Onboarding în Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Fluxul de onboarding în Theme Builder este un asistent de configurare interactiv care:
 
@@ -18,9 +18,9 @@ Fluxul de onboarding în Theme Builder este un asistent de configurare interacti
 
 Fluxul este alimentat de **agentul Setup Assistant**, care vă adresează întrebări de clarificare și vă construiește tema în etape.
 
-## Pornirea Onboarding-ului Theme Builder
+## Pornirea Onboarding-ului Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Configurare la prima utilizare
+### Configurare la prima utilizare {#first-run-setup}
 
 Când porniți Superdav AI Agent pentru prima dată pe o instalare nouă de WordPress, veți vedea:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Selectați **"Build a custom theme"** pentru a intra în fluxul de onboarding în Theme Builder.
 
-### Activare manuală
+### Activare manuală {#manual-activation}
 
 De asemenea, puteți începe onboarding-ul Theme Builder în orice moment solicitând:
 
@@ -49,9 +49,9 @@ sau
 "Help me create a custom theme"
 ```
 
-## Etapele Onboarding-ului
+## Etapele Onboarding-ului {#the-onboarding-steps}
 
-### Pasul 1: Selectarea Modului
+### Pasul 1: Selectarea Modului {#step-1-mode-selection}
 
 Agentul Setup Assistant vă întreabă despre preferințele dumneavoastră:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Modul ghidat (Guided mode)** este recomandat pentru majoritatea utilizatorilor; agentul face recomandări de design bazate pe industria și obiectivele dumneavoastră.
 
-### Pasul 2: Specificația Site-ului
+### Pasul 2: Specificația Site-ului {#step-2-site-specification}
 
 Veți primi întrebări despre site-ul dumneavoastră:
 
@@ -74,7 +74,7 @@ Veți primi întrebări despre site-ul dumneavoastră:
 
 Aceste informații sunt stocate în memoria dumneavoastră **site_brief**, pe care agentul o va consulta în sesiunile viitoare.
 
-### Pasul 3: Deciziile Sistemului de Design
+### Pasul 3: Deciziile Sistemului de Design {#step-3-design-system-decisions}
 
 Agentul vă ghidează prin selectarea token-urilor de design:
 
@@ -83,7 +83,7 @@ Agentul vă ghidează prin selectarea token-urilor de design:
 - **Spațiere**: Layout-uri compacte, normale sau spațioase
 - **Mișcare (Motion)**: Animații și tranziții (dacă este dorit)
 
-### Pasul 4: Generarea Temei
+### Pasul 4: Generarea Temei {#step-4-theme-generation}
 
 Agentul Setup Assistant vă creează structura (scaffolds) pentru tema personalizată bazată pe blocuri, incluzând:
 
@@ -92,7 +92,7 @@ Agentul Setup Assistant vă creează structura (scaffolds) pentru tema personali
 - Stiluri de blocuri personalizate care se potrivesc sistemului dumneavoastră de design
 - Metadate ale temei și declarații de suport WordPress
 
-### Pasul 5: Activarea și Verificarea
+### Pasul 5: Activarea și Verificarea {#step-5-activation-and-verification}
 
 Tema este activată automat și veți vedea:
 
@@ -107,7 +107,7 @@ Tema este activată automat și veți vedea:
 
 Apoi, puteți vizita site-ul pentru a verifica dacă tema afișează corect.
 
-## Specificația Site-ului și Memoria site_brief
+## Specificația Site-ului și Memoria site_brief {#site-specification-and-sitebrief-memory}
 
 În timpul onboarding-ului, agentul înregistrează specificațiile site-ului dumneavoastră într-o categorie de memorie numită **site_brief**. Aceasta include:
 
@@ -117,7 +117,7 @@ Apoi, puteți vizita site-ul pentru a verifica dacă tema afișează corect.
 - Preferințele de design
 - Structura conținutului
 
-### De ce contează site_brief
+### De ce contează site_brief {#why-sitebrief-matters}
 
 În sesiunile viitoare, agenții consultă site_brief pentru a:
 
@@ -126,7 +126,7 @@ Apoi, puteți vizita site-ul pentru a verifica dacă tema afișează corect.
 - Oferi recomandări contextuale
 - Evita repetarea întrebărilor de configurare
 
-### Vizualizarea site_brief-ului
+### Vizualizarea site_brief-ului {#viewing-your-sitebrief}
 
 Puteți cere agentului:
 
@@ -142,11 +142,11 @@ sau
 
 Agentul vă va afișa specificațiile site-ului stocate.
 
-## Personalizarea după Onboarding
+## Personalizarea după Onboarding {#customizing-after-onboarding}
 
 După ce onboarding-ul Theme Builder se încheie, puteți:
 
-### Folosi Skill-ul Estetic Design System
+### Folosi Skill-ul Estetic Design System {#use-the-design-system-aesthetics-skill}
 
 Solicitați rafinări de design:
 
@@ -162,7 +162,7 @@ sau
 
 **Skill-ul Estetic Design System** vă ghidează prin actualizări de design țintite.
 
-### Editați direct theme.json
+### Editați direct theme.json {#edit-themejson-directly}
 
 Pentru utilizatorii avansați, editați `/wp-content/themes/[theme-name]/theme.json` pentru a ajusta:
 
@@ -171,7 +171,7 @@ Pentru utilizatorii avansați, editați `/wp-content/themes/[theme-name]/theme.j
 - Valorile de spațiere
 - Definirile de bord și umbră
 
-### Creați Template-uri de Bloc Personalizate
+### Creați Template-uri de Bloc Personalizate {#create-custom-block-templates}
 
 Folosiți editorul de blocuri WordPress pentru a crea template-uri personalizate pentru:
 
@@ -180,7 +180,7 @@ Folosiți editorul de blocuri WordPress pentru a crea template-uri personalizate
 - Pagini de produs
 - Formulare de contact
 
-## Comparativ: Onboarding Vechi vs. Nou
+## Comparativ: Onboarding Vechi vs. Nou {#comparison-old-vs-new-onboarding}
 
 | Funcționalitate | Site Builder (Vechi) | Theme Builder (Nou) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Folosiți editorul de blocuri WordPress pentru a crea template-uri personalizate
 | Flexibilitate | Opțiuni fixe | Personalizabilă |
 | Actualizări viitoare | Nu sunt referențate | Stocate în site_brief |
 
-## Depanșare
+## Depanșare {#troubleshooting}
 
 **Fluxul de onboarding nu s-a finalizat**
 - Reporniți fluxul: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Folosiți editorul de blocuri WordPress pentru a crea template-uri personalizate
 - Cereți agentului să "regenerate the theme with [specific changes]"
 - Editați direct theme.json pentru un control precis
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 După finalizarea onboarding-ului Theme Builder:
 

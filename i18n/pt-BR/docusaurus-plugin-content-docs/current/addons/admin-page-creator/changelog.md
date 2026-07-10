@@ -3,9 +3,9 @@ title: Admin Page Creator Registro de alterações
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Registro de Alterações do Criador de Página Administrativa
+# Registro de Alterações do Criador de Página Administrativa {#admin-page-creator-changelog}
 
-### Versão 1.9.0 - Lançado em 2026-01-18
+### Versão 1.9.0 - Lançado em 2026-01-18 {#version-190---released-on-2026-01-18}
 
 * Corrigido: Erros fatais ao ativar.
 * Refatorado: Classes de origem de conteúdo para usar o trait Singleton com inicialização adequada do construtor pai.
@@ -21,89 +21,89 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 
 * Renomear prefixo para ultimate-multisite; atualizar domínio de texto; aumento de versão.
 
-### Versão 1.8.7 - 04/10/2023
+### Versão 1.8.7 - 04/10/2023 {#version-187---04102023}
 
 * Corrigido: Erro fatal ao tentar adicionar nova página administrativa.
 * Corrigido: Conflito com prefixo de folhas de estilo Oxygen.
 
-### Versão 1.8.6 - 09/08/2023
+### Versão 1.8.6 - 09/08/2023 {#version-186---09082023}
 
 * Adicionado: Opção para exibir dados do site principal ou do sub-site atual.
 * Adicionado: Suporte ao Editor de Blocos do WordPress (Gutenberg).
 * Corrigido: Problema com ativos de página Brizy não carregando.
 
-### Versão 1.8.5 - 09/12/2020
+### Versão 1.8.5 - 09/12/2020 {#version-185---09122020}
 
 * Corrigido: Problema com Opções de Tela para ocultar o menu que não desaparecia.
 
-### Versão 1.8.4 - 11/11/2020
+### Versão 1.8.4 - 11/11/2020 {#version-184---11112020}
 
 * Corrigido: Suporte ao Multisite Ultimate v2.
 
-### Versão 1.8.3 - 01/10/2020
+### Versão 1.8.3 - 01/10/2020 {#version-183---01102020}
 
 * Corrigido: Incompatibilidades com Beaver Builder da versão anterior.
 * Corrigido: Inconsistências de margem com WP 5.5.
 
-### Versão 1.8.2 - 21/09/2020
+### Versão 1.8.2 - 21/09/2020 {#version-182---21092020}
 
 * Corrigido: Pequenas incompatibilidades com WP 5.5.
 
-### Versão 1.8.1 - 05/08/2020
+### Versão 1.8.1 - 05/08/2020 {#version-181---05082020}
 
 * Corrigido: Incompatibilidade com Brizy 2.0.
 * Corrigido: Pequenos problemas de desempenho ao construir a lista de menu.
 
-### Versão 1.8.0 - 27/04/2020
+### Versão 1.8.0 - 27/04/2020 {#version-180---27042020}
 
 * Corrigido: Avisos sendo ocultados sob a barra superior quando nenhum modo de margem é selecionado.
 * Adicionado: Páginas personalizadas agora podem substituir múltiplas páginas administrativas de nível superior e subpáginas do WordPress ao mesmo tempo.
 * Adicionado: Administradores agora podem ocultar páginas administrativas usando WP Admin Pages PRO.
 
-### Versão 1.7.9 - 01/04/2020
+### Versão 1.7.9 - 01/04/2020 {#version-179---01042020}
 
 * Corrigido: Brizy 1.10.118 e superiores quebrando suporte a SVG em páginas administrativas.
 
-### Versão 1.7.8 - 26/03/2020
+### Versão 1.7.8 - 26/03/2020 {#version-178---26032020}
 
 * Corrigido: Erro de escape quebrando a página do Editor ao usar francês.
 
-### Versão 1.7.7 - 04/03/2020
+### Versão 1.7.7 - 04/03/2020 {#version-177---04032020}
 
 * Corrigido: Pequena incompatibilidade com Brizy Builder.
 * Melhorado: Atualizado Freemius SDK para 2.3.2.
 
-### Versão 1.7.6 - 10/02/2020
+### Versão 1.7.6 - 10/02/2020 {#version-176---10022020}
 
 * Corrigido: Botão de edição de Página Administrativa no canto inferior direito não funcionando em Widgets do Painel.
 * Corrigido: Pequena incompatibilidade com Astra.
 * Corrigido: Nova versão do Brizy quebrando compatibilidade.
 
-### Versão 1.7.5 - 14/12/2019
+### Versão 1.7.5 - 14/12/2019 {#version-175---14122019}
 
 * Corrigido: Adicionado um novo manipulador de caso extremo para popular itens de menu na opção Substituir Página.
 * Corrigido: Fontes Elementor não funcionando.
 * Melhorado: Atualizado o Freemius SDK para suportar ocultação de informações sensíveis na página de Conta.
 
-### Versão 1.7.4 - 29/11/2019
+### Versão 1.7.4 - 29/11/2019 {#version-174---29112019}
 
 * Corrigido: Incompatibilidade com WooCommerce Memberships.
 * Corrigido: Componente de aba do Oxygen Builder não funcionando.
 * Corrigido: Beaver Themer não funcionando.
 
-### Versão 1.7.3 - 12/07/2019
+### Versão 1.7.3 - 12/07/2019 {#version-173---12072019}
 
 * Corrigido: Páginas desaparecendo quando seu pai é convertido para outro tipo de página administrativa.
 * Melhorado: Divisores de tabela de lista melhores entre tipos de Página Administrativa.
 * Melhorado: Revisão de Segurança de todo o código do plugin.
 * Melhorado: Nota sobre aviso de separador de aba quando o recurso não está disponível para um determinado tipo de menu/fonte de conteúdo.
 
-### Versão 1.7.2 - 01/07/2019
+### Versão 1.7.2 - 01/07/2019 {#version-172---01072019}
 
 * Corrigido: Atualizada a versão do Freemius SDK para 2.3.0.
 * Corrigido: Problema de incompatibilidade com Flywheel.
 
-### Versão 1.7.1 - 27/06/2019
+### Versão 1.7.1 - 27/06/2019 {#version-171---27062019}
 
 * Corrigido: Widget de Boas-Vindas agora é exibido para todas as funções.
 * Corrigido: Opção de tela para ocultar/exibir o menu Páginas Administrativas não é adicionada se o menu estiver sendo ocultado via o filtro documentado em https://docs.wpadminpagespro.com/knowledge-base/hiding-wp-admin-pages-pro-from-your-users/
@@ -112,12 +112,12 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Adicionado: Opção para exibir páginas no site principal também.
 * Adicionado: Opção para renomear rótulos de menu de nível superior e subnível no modo Substituir.
 
-### Versão 1.7.0 - 04/06/2019
+### Versão 1.7.0 - 04/06/2019 {#version-170---04062019}
 
 * Corrigido: Problemas com modelos Oxygen não aparecendo.
 * Adicionado: Suporte à Criação de Widget!
 
-### Versão 1.6.1 - 22/05/2019
+### Versão 1.6.1 - 22/05/2019 {#version-161---22052019}
 
 * Corrigido: Erros de digitação.
 * Corrigido: Páginas de sub-menu sobrescrevendo itens de sub-menu anteriores com o mesmo valor de ordem.
@@ -125,40 +125,40 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Melhorado: Atualizados arquivos po pt_BR e es_ES.
 * Melhorado: Tabela de lista agora lista o nome de páginas personalizadas como páginas pai também.
 
-### Versão 1.6.0 - 21/05/2019
+### Versão 1.6.0 - 21/05/2019 {#version-160---21052019}
 
 * Adicionado: Links externos agora também suportam carregamento de iframe.
 
-### Versão 1.5.5 - 17/05/2019
+### Versão 1.5.5 - 17/05/2019 {#version-155---17052019}
 
 * Corrigido: Mensagem de aviso lançada quando uma página era excluída ou duplicada.
 * Corrigido: Configurações de permissão não sendo aplicadas aos Administradores.
 
-### Versão 1.5.4 - 08/05/2019
+### Versão 1.5.4 - 08/05/2019 {#version-154---08052019}
 
 * Corrigido: Incompatibilidades com Sliced Invoices.
 * Corrigido: Pequeno problema com o Oxygen.
 * Corrigido: Placeholder no campo de título de nova página administrativa não desaparecendo ao pressionar tecla.
 
-### Versão 1.5.3 - 03/05/2019
+### Versão 1.5.3 - 03/05/2019 {#version-153---03052019}
 
 * Corrigido: Incompatibilidade com páginas de opção Advanced Custom Field.
 * Adicionado: Opção para adicionar usuários específicos como alvos de páginas administrativas personalizadas.
 
-### Versão 1.5.2 - 30/04/2019
+### Versão 1.5.2 - 30/04/2019 {#version-152---30042019}
 
 * Corrigido: Incompatibilidades com versões mais recentes do Brizy.
 * Adicionado: Tradução em espanhol adicionada - cortesia de John Rozzo. Obrigado, John!
 * Adicionado: Suporte beta ao Oxygen Builder.
 
-### Versão 1.5.1 - 15/04/2019
+### Versão 1.5.1 - 15/04/2019 {#version-151---15042019}
 
 * Corrigido: Problema com placeholders nos editores Normal e HTML.
 * Corrigido: Páginas Administrativas não aparecendo em Ferramentas -> Exportar.
 * Corrigido: Carregamento de scripts e estilos apenas em nossas próprias páginas.
 * Adicionado: Super Administradores agora podem duplicar Páginas Administrativas.
 
-### Versão 1.5.0 - 29/03/2019
+### Versão 1.5.0 - 29/03/2019 {#version-150---29032019}
 
 * Corrigido: Pequenos bugs capturados pelo Sentry.
 * Corrigido: Botão de excluir não funcionando na tela de Edição de Página Administrativa.
@@ -166,7 +166,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Adicionado: Administradores podem definir a ordem dos submenus também.
 * Adicionado: Modo Substituir página agora tem suporte a todos os itens de menu disponíveis.
 
-### Versão 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on)
+### Versão 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on) {#version-140---14022019-stand-alone--27022019-add-on}
 
 * Adicionado: Lançado como plugin independente em https://wpadminpagespro.com
 * Adicionado: Opção para remover o item de menu Páginas Administrativas do menu após o processo de criação de página estar concluído.
@@ -176,7 +176,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Adicionado: Classe pai de origem de conteúdo consolidada para facilitar a adição de novos Page Builders/Fonte de Conteúdo no futuro.
 * Adicionado: Suporte a URLs externas.
 
-### Versão 1.3.0 - 15/01/2019
+### Versão 1.3.0 - 15/01/2019 {#version-130---15012019}
 
 * Corrigido: Páginas Administrativas não aparecem no site principal em ambientes multisite.
 * Melhorado: Removidos tipos de post personalizados Multisite Ultimate da tela de exportação de subsites.
@@ -184,29 +184,29 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Adicionado: INCRÍVEL! Suporte ao Elementor!
 * Adicionado: INCRÍVEL! Suporte ao Brizy!
 
-### Versão 1.2.1 - 17/11/2018
+### Versão 1.2.1 - 17/11/2018 {#version-121---17112018}
 
 * Corrigido: Tornando o plugin compatível com Multisite Ultimate 1.9.0.
 
-### Versão 1.2.0 - 10/09/2018
+### Versão 1.2.0 - 10/09/2018 {#version-120---10092018}
 
 * Adicionado: Suporte PHP adicionado se WU_APC_ALLOW_PHP_PROCESSING estiver definido como true em wp-config.php. Isso não usa eval do PHP, mas ainda pode levar a falhas de segurança. Use com cuidado.
 * Melhorado: Atualizador de plugin add-on.
 * Melhorado: Nova URL para o servidor de atualizações.
 
-### Versão 1.1.2 - 16/08/2018
+### Versão 1.1.2 - 16/08/2018 {#version-112---16082018}
 
 * Corrigido: Pequeno problema com WP Engine.
 
-### Versão 1.1.1 - 16/08/2018
+### Versão 1.1.1 - 16/08/2018 {#version-111---16082018}
 
 * Corrigido: Permissões não sendo aplicadas corretamente às páginas de substituição.
 
-### Versão 1.1.0 - 15/08/2018
+### Versão 1.1.0 - 15/08/2018 {#version-110---15082018}
 
 * Adicionado: Modelos Beaver Builder agora são suportados! Você pode usar seu page builder favorito para criar páginas administrativas personalizadas.
 * Adicionado: Agora é possível substituir o conteúdo das páginas administrativas padrão do WordPress também.
 * Adicionado: Agora é possível anexar o conteúdo criado ao topo ou fundo das páginas administrativas padrão do WordPress também.
 
-### 0.0.1
+### 0.0.1 {#001}
 - Lançamento inicial

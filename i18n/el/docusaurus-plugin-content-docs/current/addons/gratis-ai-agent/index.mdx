@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Το Gratis AI Agent είναι ένας αυτονομικός βοηθός AI για WordPress που μπορεί να σχεδιάζει, να κατασκευάζει και να διαχειρίζεται ολόκληρες ιστοσελίδες WordPress μέσω φυσικής γλώσσας. Εκθέτει ένα δομημένο σύνολο **ικανοτήτων (abilities)** — διακριτές, δοκιμαστέες ενέργειες που μπορεί να καλέσει ο βοηθός — καλύπτοντας τα πάντα, από τη διαχείριση περιεχομένου μέχρι την προσαρμογή του design system. Η έκδοση 1.9.0 προσθέτει ικανότητες δημιουργίας περιεχομένου, οπτική αναθεώρηση σελίδων μέσω client-side screenshots, πέντε ενσωματωμένους προφίλ βοηθού, και feature flags για τον έλεγχο πρόσβασης και το branding.
 
-## Βασικά Χαρακτηριστικά
+## Βασικά Χαρακτηριστικά {#key-features}
 
 - **System των Ικανοτήτων (Abilities system)** — ένα μοντέλλο, επεκτάσιμο καταλόγιο ενεργειών που μπορεί να καλέσει ο βοηθός στην εγκατάστασή σας του WordPress
 - **Διαχείριση Περιεχομένου (Content Management)** — δημιουργία άρθρων και σελίδων (συμπεριλαμβανομένης της καταχώρισης page templates), μαζική δημιουργία πολλαπλών άρθρων με μία κλήση, ρύθμιση featured images και κατασκευή contact forms
@@ -28,21 +28,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **Site Builder Orchestration v2** — σχέδια κατασκευής σελίδων με πολλαπλά βήματα, παρακολούθηση προόδου και ανάκτηση σφαλμάτων
 - **WP-CLI benchmark command** — εκτέλεση του benchmark suite των ικανοτήτων του βοηθού από την command line για CI και αξιολόγηση μοντέλου
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 
 - WordPress 6.0 ή νεότερη
 - PHP 8.1 ή νεότερη
 - WordPress Multisite (ενεργοποιημένο στο network) ή single-site εγκατάσταση
 - Ένα ενεργό plugin connector AI provider (Anthropic, OpenAI ή συμβατό)
 
-## Εγκατάσταση
+## Εγκατάσταση {#installation}
 
 1. Ανέβασμα των αρχείων του plugin στο `/wp-content/plugins/gratis-ai-agent`
 2. Ενεργοποίηση του plugin από την οθόνη **Plugins** στο WordPress
 3. Πλοήγηση στο **Gratis AI Agent → Settings** και σύνδεση του AI provider σας
 4. (Προαιρετικό) Περιήγηση στο **Abilities Registry** για εγκατάσταση επιπλέον πακέτων ικανοτήτων
 
-## Γρήγορη Εκκίνηση
+## Γρήγορη Εκκίνηση {#quick-start}
 
 Μόλις ενεργοποιηθεί και συνδεθεί σε έναν AI provider, ανοίξτε το πάνελ **Gratis AI Agent** στην πλαϊνή γραμμή του WordPress admin. Πληκτρολογήστε μια εντολή φυσικής γλώσσας και ο βοηθός θα σχεδιάσει και θα εκτελέσει τα απαιτούμενα βήματα χρησιμοποιώντας τις διαθέσιμες ικανότητές του.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Επισκόπηση Ικανοτήτων (Abilities Overview)
+## Επισκόπηση Ικανοτήτων (Abilities Overview) {#abilities-overview}
 
 Οι ικανότητες είναι οι ατομικές ενέργειες που μπορεί να εκτελέσει ο βοηθός. Κάθε ικανότητα είναι μια καταχωρημένη PHP class που εκθέτει ένα schema (παράμετροι και τύπους επιστροφής) που διαβάζει ο βοηθός κατά τη λειτουργία. Οι ικανότητες είναι ομαδοποιημένες σε λειτουργικές περιοχές:
 
@@ -79,7 +79,7 @@ Build a restaurant website with an online menu, booking form, and contact page.
 
 Δείτε την [Abilities Reference](./abilities) για πλήρη τεκμηρίωση παραμέτρων και παραδείγματα χρήσης.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Το Gratis AI Agent παρέχει μια οικογένεια εντολών `wp gratis-ai-agent` για την εκτέλεση benchmarks και τη διαχείριση ικανοτήτων από την command line. Δείτε την [WP-CLI Reference](./wp-cli) για την πλήρη λίστα εντολών.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Ρύθμιση (Configuration)
+## Ρύθμιση (Configuration) {#configuration}
 
 Όλες οι ρυθμίσεις βρίσκονται στο **Gratis AI Agent → Settings** στο WordPress admin:
 
@@ -106,7 +106,7 @@ wp gratis-ai-agent abilities install <slug>
 | **Ability Timeout** | Μέγιστος χρόνος σε δευτερόλεπτα που μπορεί να τρέξει μια μεμονωμένη ικανότητα (default 30) |
 | **Debug Logging** | Καταγραφή των κλήσεων ικανοτήτων και της λογικής του βοηθού στο debug log του WordPress |
 
-## Λίστα Ασφαλείας Διαχείρισης Επιλογών (Options Management Safety Blocklist)
+## Λίστα Ασφαλείας Διαχείρισης Επιλογών (Options Management Safety Blocklist) {#options-management-safety-blocklist}
 
 Η ικανότητα Options Management περιλαμβάνει μια ενσωματωμένη λίστα ασφαλείας που αποτρέπει από τον βοηθό να διαβάζει ή να γράφει ευαίσθης επιλογές του WordPress. Η προεπιλεγμένη λίστα ασφαλείας καλύπτει:
 
@@ -118,26 +118,26 @@ wp gratis-ai-agent abilities install <slug>
 
 Πρόσθετες καταχωρίσεις μπορούν να προστεθούν μέσω του filter `gratis_ai_agent_options_blocklist`.
 
-## Hooks και Filters
+## Hooks και Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — εκδίδεται μετά την καταχώριση μιας ικανότητας, λαμβάνει το όνομα class της ικανότητας
 - `gratis_ai_agent_plan_started` — εκδίδεται όταν ξεκινά η εκτέλεση ενός plan site builder
 - `gratis_ai_agent_plan_completed` — εκδίδεται όταν ολοκληρώνεται επιτυχώς ένα plan
 - `gratis_ai_agent_plan_failed` — εκδίδεται όταν ένα plan συναντά ένα μη ανακτήσιμο σφάλμα
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — τροποποιεί τη καταχωρημένη λίστα ικανοτήτων πριν φορτωθεί από τον βοηθό
 - `gratis_ai_agent_options_blocklist` — επεκτείνει ή μειώνει τη λίστα ασφαλείας των επιλογών
 - `gratis_ai_agent_benchmark_questions` — προσθέτει προσαρμοστικά ερωτήματα benchmark στο suite αξιολόγησης
 - `gratis_ai_agent_plan_plugins` — τροποποιεί τη λίστα ανακάλυψης plugins κατά τη δημιουργία του plan site
 
-## Υποστήριξη (Support)
+## Υποστήριξη (Support) {#support}
 
 Για υποστήριξη, επισκεφθείτε το [ultimatemultisite.com](https://ultimatemultisite.com) ή ανοίξτε ένα issue στο plugin repository.
 
-## Changelog
+## Changelog {#changelog}
 
 Δείτε το [Changelog](./changelog) για το πλήρες ιστορικό εκδόσεων.

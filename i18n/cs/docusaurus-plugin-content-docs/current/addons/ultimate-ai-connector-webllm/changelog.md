@@ -3,9 +3,9 @@ title: Ultimate AI Connector pro WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector pro WebLLM Seznam změn
+# Ultimate AI Connector pro WebLLM Seznam změn {#ultimate-ai-connector-for-webllm-changelog}
 
-## Verze 1.1.0 — Vydáno 9. 2026
+## Verze 1.1.0 — Vydáno 9. 2026 {#version-110--released-on-2026-04-09}
 
 * Novinka: Plakující chatovací widget s indikátorem stavu v admin panelu — jakýkoli přihlášený uživatel může přímo z frontendu odeslat dotaz k lokálnímu LLM.
 * Novinka: SharedWorker prostředí — engine MLC nyní běží v SharedWorkeru, takže více záložek sdílí jednu GPU sesí, místo aby si na ni bojovaly.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Oprava: WebLLM je nyní připojen (hookován) k filtru wpai_preferred_text_models, takže funkce AI Experiments směřuje k prohlížečovému enginu, když je nakonfigurován model.
 * Vylepšeno: Opravy související s cache-bustingem, normalizací obsahu a referencemi na hardware byly zjištěny během end-to-end testování.
 
-## Verze 1.0.0 — První vydání
+## Verze 1.0.0 — První vydání {#version-100--initial-release}

@@ -1,0 +1,117 @@
+---
+title: Plāni ar patēriņa uzskaiti
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Mērītie plāni {#metered-plans}
+
+Ultimate Multisite: Mērīto plānu papildinājums pārveido veidu, kā jūs izrakstāt rēķinus saviem klientiem, ieviešot elastīgas mērītās norēķinu iespējas. Stingru fiksētu ierobežojumu vietā, kas bloķē lietotājus, kad tie tiek pārsniegti, iespējojiet pārsnieguma maksas, kas automātiski izraksta klientiem rēķinu par papildu lietojumu.
+
+## Galvenās funkcijas {#key-features}
+
+* **Mērītie norēķini**: Iekasējiet maksu no klientiem, pamatojoties uz faktisko lietojumu, nevis fiksētiem līmeņiem
+* **Pārsniegumu pārvaldība**: Automātiski izrakstiet rēķinus par lietojumu, kas pārsniedz plāna ierobežojumus
+* **Lietojuma izsekošana**: Pārraugiet klientu resursu patēriņu reāllaikā
+* **Elastīga cenu noteikšana**: Iestatiet pielāgotas likmes dažādiem resursiem (krātuvei, joslas platumam, vietnēm utt.)
+* **AI tokenu norēķini**: Izsekojiet un izrakstiet rēķinus par ievades un izvades tokeniem AI lietojumam klientu apakšvietnēs
+* **Automātiska rēķinu izrakstīšana**: Automātiski ģenerējiet rēķinus, kad tiek pārsniegti lietojuma sliekšņi
+* **Lietojuma pārskati**: Detalizēta lietojuma analītika un atskaites klientiem un administratoriem
+
+## Ideāli piemērots {#perfect-for}
+
+* **Hostinga pakalpojumu sniedzējiem**: Piedāvājiet mērogojamus plānus, kas aug līdz ar klientu vajadzībām
+* **SaaS platformām**: Izrakstiet rēķinus, pamatojoties uz faktisko resursu patēriņu
+* **Aģentūru tīkliem**: Elastīgi cenu modeļi klientu projektiem
+* **Tālākpārdevēju hostingam**: Ļaujiet partneriem piedāvāt uz lietojumu balstītu cenu noteikšanu
+
+## Kā tas darbojas {#how-it-works}
+
+1. Konfigurējiet mērītos resursus (diska vietu, joslas platumu, vietņu skaitu utt.)
+2. Iestatiet pamatplāna ierobežojumus un pārsnieguma likmes
+3. Sistēma automātiski izseko lietojumu visā jūsu tīklā
+4. Kad klienti pārsniedz ierobežojumus, tiek aprēķinātas pārsnieguma maksas
+5. Rēķini tiek ģenerēti automātiski, pamatojoties uz norēķinu ciklu
+6. Klienti var reāllaikā skatīt savu lietojumu un gaidāmās maksas
+
+## AI tokenu norēķini {#ai-token-billing}
+
+Versija 1.1.0 pievieno AI tokenu norēķinus tīkliem, kas piedāvā AI funkcijas, izmantojot WordPress AI Client SDK. Mērītie plāni klausās pabeigtus AI ģenerēšanas pieprasījumus, reģistrē ievades un izvades tokenu skaitu pašreizējai apakšvietnei un pārvērš šos tokenus rēķināmā AI izdevumā klienta pašreizējam norēķinu periodam.
+
+Izmantojiet AI tokenu norēķinus, ja vēlaties piedāvāt AI rīkus klientu vietnēs, neuzņemoties neparedzamas modeļu izmaksas. Katrs pieprasījums tiek attiecināts uz apakšvietni, klientu, dalību, pakalpojumu sniedzēju un modeli, lai administratori varētu auditēt lietojumu, bet klienti varētu redzēt, kā viņu AI patēriņš ietekmē viņu kontu.
+
+### Konfigurējiet likmes katram tokenam {#configure-per-token-rates}
+
+AI likmes tiek konfigurētas katram modelim kā atsevišķas ievades un izvades likmes. Likmes tiek aprēķinātas par 1 miljonu tokenu, kas atbilst izplatītām AI pakalpojumu sniedzēju cenu lapām.
+
+1. Tīkla administrēšanā atveriet **Multisite Ultimate → Iestatījumi → Mērītie plāni**.
+2. Iespējojiet AI izdevumu mērīšanu produktam vai dalībai, kurai jāizraksta rēķins par AI lietojumu.
+3. Pievienojiet modeļu likmju ierakstus, izmantojot modeļu ID, ko atgriež jūsu savienotājs, piemēram, `gpt-4o`, `gpt-4o-mini` vai citu ar OpenAI saderīgu modeļa identifikatoru.
+4. Ievadiet atsevišķas **Ievades likmes** un **Izvades likmes** vērtības savas vietnes valūtā par 1 miljonu tokenu.
+5. Iestatiet klientam iekļauto AI izdevumu atļauto apjomu un pārsnieguma uzvedību plānam.
+
+Ja precīzs modeļa ID nav konfigurēts, Mērītie plāni var sakrist pēc modeļa prefiksa. Piemēram, likmi, kas konfigurēta `claude-sonnet-4`, var piemērot modeļu ID ar laika zīmogu, kas sākas ar šo prefiksu. Izstrādātāji var arī pielāgot galīgo likmju tabulu ar [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtru.
+
+### Atbalstītie AI savienotāji {#supported-ai-connectors}
+
+AI tokenu norēķini darbojas ar savienotājiem, kas emitē WordPress AI Client SDK ģenerēšanas notikumus un atbildes metadatos iekļauj tokenu lietojumu. Tas ietver šeit dokumentēto Ultimate Multisite AI savienotāju saimi:
+
+* [Ultimate AI Connector saderīgiem galapunktiem](../ultimate-ai-connector-compatible-endpoints/) ar OpenAI saderīgām API, tostarp OpenAI, Mistral, ar Ollama saderīgām vārtejām un citiem pakalpojumu sniedzējiem, kas nodrošina saderīgus tokenu lietojuma metadatus
+* [Ultimate AI Connector WebLLM](../ultimate-ai-connector-webllm/) pārlūkprogrammā vietējam WebLLM lietojumam, kad pieprasījumi tiek maršrutēti caur AI Client SDK notikumu plūsmu
+* AI pakalpojumu sniedzēju savienotāji, ko izmanto [Gratis AI Agent](../gratis-ai-agent/), kad izvēlētais pakalpojumu sniedzējs caur SDK ziņo uzvednes un pabeigšanas tokenu skaitu
+
+Pielāgoti savienotāji var piedalīties, izraisot standarta `wp_ai_client_before_generate_result` un `wp_ai_client_after_generate_result` notikumus ar modeļa, pakalpojumu sniedzēja un tokenu lietojuma metadatiem. Savienotāju iestatījumi tiek piemēroti no galvenās vietnes uz apakšvietnēm, lai klientu vietnes izmantotu tīkla apstiprinātos pakalpojumu sniedzējus un ierobežojumus.
+
+### Klienta konta lietojums {#customer-account-usage}
+
+Klienti redz AI lietojumu kopā ar citiem mērītajiem resursiem savā konta zonā. AI izdevumu rinda parāda pašreizējā norēķinu perioda kopsummu, kas iegūta no reģistrētajiem uzvednes un pabeigšanas tokeniem, konfigurētajām modeļu likmēm un jebkura plānā iekļautā atļautā apjoma.
+
+Ja klientam ir reģistrēta maksājuma metode, lietojums virs iekļautā atļautā apjoma tiek uzskatīts par rēķināmu pārsniegumu. Ja plāns ir konfigurēts ar stingru pārtraukšanu un klientam nav pieejamas maksājuma metodes, AI pieprasījumus var bloķēt, tiklīdz atļautais apjoms ir sasniegts, un klientam tiek piedāvāts pievienot maksājuma informāciju pirms turpināšanas.
+
+## Atbalstītie resursi {#supported-resources}
+
+* Diska krātuve
+* Joslas platums/datu pārsūtīšana
+* Vietņu skaits
+* Lietotāju skaits
+* AI tokenu lietojums un AI izdevumi
+* Pielāgoti resursu tipi
+
+## Prasības {#requirements}
+
+* Multisite Ultimate 2.0.0 vai jaunāka
+* WordPress Multisite instalācija
+* PHP 7.4 vai jaunāka
+
+## Instalēšana {#installation}
+
+1. Augšupielādējiet plugin failus uz `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivizējiet plugin caur WordPress ekrānu “Plugin”
+3. Dodieties uz Multisite Ultimate → Iestatījumi → Mērītie plāni
+4. Konfigurējiet savus mērītos resursus un cenu noteikšanu
+5. Iespējojiet mērītos norēķinus produktiem produktu redaktorā
+
+## Biežāk uzdotie jautājumi {#frequently-asked-questions}
+
+## Kas notiek, kad klients pārsniedz savu ierobežojumu? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Tā vietā, lai bloķētu piekļuvi, sistēma uzskaita pārsniegumu un pievieno to viņu nākamajam rēķinam, pamatojoties uz jūsu konfigurētajām likmēm.
+
+## Vai dažādiem produktiem varu iestatīt atšķirīgas pārsnieguma likmes? {#can-i-set-different-overage-rates-for-different-products}
+
+Jā, katram produktam var būt unikāli uzskaitāmie resursi un pārsnieguma cenas.
+
+## Kā klienti tiek informēti par lietojumu? {#how-are-customers-notified-about-usage}
+
+Klienti var skatīt savu pašreizējo lietojumu savā Dashboard un saņemt izvēles paziņojumus, kad tuvojas ierobežojumiem vai tos pārsniedz.
+
+## Kā tiek noteikta AI tokenu lietojuma cena? {#how-is-ai-token-usage-priced}
+
+AI tokenu lietojuma cena tiek noteikta pēc modeļa konfigurētajām ievades un izvades likmēm par 1 miljonu tokenu. Uzskaitītie plāni reizina katra pieprasījuma uzvednes un atbildes tokenu skaitu ar šīm likmēm, pievieno rezultātu klienta pašreizējā norēķinu perioda AI izdevumiem un piemēro plāna iekļautā apjoma vai pārsnieguma noteikumus.
+
+## Vai joprojām varu izmantot stingrus ierobežojumus? {#can-i-still-use-hard-limits}
+
+Jā, uzskaitītie norēķini katram produktam nav obligāti. Varat kombinēt tradicionālos produktus ar stingriem ierobežojumiem ar uzskaitītiem produktiem.

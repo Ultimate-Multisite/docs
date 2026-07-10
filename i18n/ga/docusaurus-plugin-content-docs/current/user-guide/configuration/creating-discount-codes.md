@@ -3,13 +3,13 @@ title: Creachtáil Codeanna Dáta
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creachtánna Discount Codes (v2)
+# Creachtánna Discount Codes (v2) {#creating-discount-codes-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 
 Leat Ultimate Multisite, is féidir leat curte discount codes chun scáthanna a chur ar na subscription-a do chliantacht. Agus curte sin curtha, is féidir é go fácil!
 
-## Creacht agus Déanamh ar Discount Codes
+## Creacht agus Déanamh ar Discount Codes {#creating-and-editing-discount-codes}
 
 Chun curte nó a athrú discount code, rag thar **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Tá an tairiscint ag cur isteach ar chuid dearmad agat, agus trí seo, is féidi
 
 ###
 
-### Aistriúar URL (URL Parameters):
+### Aistriúar URL (URL Parameters): {#using-url-parameters}
 
 Má tá tú ag iarraidh athrú an tairiscintacha do chuid tabhairtacha nó a chur ar fáil curteoir níos gole do do shábháil agus má tá tú ag iarraidh a chur i bhfeidm code tairiscint ar do form cheangailte, is féidir leat é seo a dhéanamh trí URL parameters.
 

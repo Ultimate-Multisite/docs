@@ -4,13 +4,13 @@ title: Φίλτρο - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Φίλτρο: wu_search_models_functions
+# Φίλτρο: wu_search_models_functions {#filter-wusearchmodelsfunctions}
 
 Επιτρέπει στους developers plugins να προσθέτουν περισσότερες συναρτήσεις μοντέλων αναζήτησης.
 
-### Από
+### Από {#since}
 
 - 2.0.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/class-ajax.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-ajax.php#L244) στην γραμμή 244

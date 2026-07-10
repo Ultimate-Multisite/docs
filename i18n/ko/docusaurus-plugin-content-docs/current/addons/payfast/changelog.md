@@ -3,7 +3,7 @@ title: PayFast 변경 로그
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast 변경 로그
+# PayFast 변경 로그 {#payfast-changelog}
 
 버전: 1.0.2 - 2025-09-28
 

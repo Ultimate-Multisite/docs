@@ -3,13 +3,13 @@ title: Paggawa ng Custom Registrar Integration
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Pagbuo ng Custom Registrar Integration
+# Pagbuo ng Custom Registrar Integration {#building-a-custom-registrar-integration}
 
 Gumagamit ang Domain Seller add-on ng pattern na tinatawag na **Integration Registry**. Ang bawat registrar ay isang PHP class na nagpapatupad (implements) ng `Domain_Selling_Capability` at nagre-register sa pamamagitan ng `wu_domain_seller_register_capabilities` action hook.
 
 Ipinapakita ng gabay na ito kung paano mag-wire in ng sarili mong custom registrar.
 
-## Ang Interface
+## Ang Interface {#the-interface}
 
 Dapat mag-implement ang iyong class ng `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` at mag-extend ng `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opsyonal na Methods
+### Opsyonal na Methods {#optional-methods}
 
 I-implement ang mga ito para ma-unlock ang mas maraming features. Nakikita ng add-on ang suporta sa pamamagitan ng `method_exists()`:
 
@@ -81,7 +81,7 @@ I-implement ang mga ito para ma-unlock ang mas maraming features. Nakikita ng ad
 | `get_epp_code(string $domain_name): array` | Domain transfer (outgoing) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transfer (incoming) |
 
-### Konbensyon ng Return Value
+### Konbensyon ng Return Value {#return-value-convention}
 
 Lahat ng methods ay nagbabalik ng array na mayroong `success` key bilang minimum:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Human-readable error'];
 
 ---
 
-## Pagre-register ng Iyong Capability
+## Pagre-register ng Iyong Capability {#registering-your-capability}
 
 I-register ang iyong class gamit ang `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Ang unang argument sa `add_capability()` ay ang **provider ID** — isang lowerc
 
 ---
 
-## Pagdaragdag ng Credential Fields sa Wizard
+## Pagdaragdag ng Credential Fields sa Wizard {#adding-credential-fields-to-the-wizard}
 
 Para payagan ang mga admin na maglagay ng credentials sa setup wizard, i-register ang iyong integration:
 
@@ -137,7 +137,7 @@ Ang mga credentials ay iniimbak bilang network options gamit ang field IDs bilan
 
 ---
 
-## Hooks para sa Post-Registration Actions
+## Hooks para sa Post-Registration Actions {#hooks-for-post-registration-actions}
 
 Gamitin ang mga actions na ito para mag-trigger ng webhooks, provisioning, notifications, o CRM updates:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Pag-log (Logging)
+## Pag-log (Logging) {#logging}
 
 Sumulat sa provider-specific log channel gamit ang `wu_log_add()`:
 

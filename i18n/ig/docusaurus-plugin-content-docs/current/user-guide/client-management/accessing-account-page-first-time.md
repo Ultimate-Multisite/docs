@@ -3,7 +3,7 @@ title: Nkwado na Akụkọ Ụgwọ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Ka na-eme m ga-akụziri akụkọ ọrụ m ma ọ bụ ebe a bụ?
+# Ka na-eme m ga-akụziri akụkọ ọrụ m ma ọ bụ ebe a bụ? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Nche gị n'Ultimate Multisite!
 

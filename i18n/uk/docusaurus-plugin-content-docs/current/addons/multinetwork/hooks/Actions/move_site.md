@@ -4,11 +4,11 @@ title: Дія - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Action: move_site
+# Action: move_site {#action-movesite}
 
 Викликається після того, як сайт було переміщено до нової мережі.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 | $old_network_id | `int` | ID початкової мережі для сайту. |
 | $new_network_id | `int` | ID мережі, до якої було переміщено сайт. |
 
-### Since
+### Since {#since}
 
 - 1.3.0
-### Source
+### Source {#source}
 
 Визначено в [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) на рядку 1587

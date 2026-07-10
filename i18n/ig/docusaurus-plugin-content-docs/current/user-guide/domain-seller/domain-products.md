@@ -3,11 +3,11 @@ title: Nkwado Ụlọ na Ịgba Ọnụiị
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produk TLDs na Domene na Giá
+# Produk TLDs na Domene na Giá {#domain-products-and-pricing}
 
 Produk Domain na cách bạn kiểm soát giá, các loại TLD (Top-Level Domains), quyền riêng tư WHOIS, và việc chọn nhà cung cấp dịch vụ. Mỗi sản phẩm Domain đều là một sản phẩm Ultimate Multisite tiêu chuẩn với một tab **Domain Settings** thêm vào.
 
-## Tạo sản phẩm domain
+## Tạo sản phẩm domain {#creating-a-domain-product}
 
 1. Đi đến **Network Admin › Ultimate Multisite › Products**
 2. Nhấn **Add New** (Thêm mới)
@@ -17,13 +17,13 @@ Produk Domain na cách bạn kiểm soát giá, các loại TLD (Top-Level Domai
 
 Các sản phẩm Domain sẽ xuất hiện với huy hiệu màu tím **Domain** trong danh sách sản phẩm và bạn có thể lọc chúng bằng tab **Domain Products**.
 
-## Tab cài đặt domain
+## Tab cài đặt domain {#domain-settings-tab}
 
-### Nhà cung cấp dịch vụ (Provider)
+### Nhà cung cấp dịch vụ (Provider) {#provider}
 
 Chọn nhà đăng ký nào sẽ xử lý việc đăng ký cho sản phẩm này. Mặc định là **Default provider** toàn cầu được thiết lập trong cài đặt Domain Seller.
 
-### Các TLD được hỗ trợ (Supported TLDs)
+### Các TLD được hỗ trợ (Supported TLDs) {#supported-tlds}
 
 Để trống để tạo một **catch-all product** (sản phẩm bao quát) áp dụng cho tất cả các TLD không khớp với sản phẩm nào khác.
 
@@ -31,7 +31,7 @@ Nhập danh sách các TLD cách nhau bằng dấu phẩy (ví dụ: `.com, .net
 
 **Cách hoạt động của việc khớp sản phẩm:** Khi khách hàng tìm kiếm một domain, addon sẽ chọn sản phẩm khớp cụ thể nhất. Một sản phẩm có `.com` trong danh sách TLD của nó sẽ được ưu tiên hơn so với sản phẩm bao quát. Nếu không có sản phẩm cụ thể theo TLD nào khớp, thì sản phẩm bao quát sẽ được sử dụng. Nếu không có sản phẩm nào tồn tại, tìm kiếm domain sẽ không hiển thị.
 
-### Loại đánh giá (Markup type)
+### Loại đánh giá (Markup type) {#markup-type}
 
 Ba chế độ kiểm soát cách giá bán lẻ của bạn được tính từ chi phí bán buôn:
 
@@ -41,11 +41,11 @@ Ba chế độ kiểm soát cách giá bán lẻ của bạn được tính từ
 | **Fixed markup** (Đánh giá cố định) | Cộng thêm một số tiền cố định bằng đô la. Một mức tăng giá $5 trên domain $10 sẽ có giá là $15. |
 | **Fixed price** (Giá cố định) | Hoàn toàn bỏ qua chi phí bán buôn. Luôn tính theo số tiền bạn nhập vào. |
 
-### Giá giới thiệu (Introductory pricing)
+### Giá giới thiệu (Introductory pricing) {#introductory-pricing}
 
 Maka ịgbanwe nkwado mfunwu ọlaị. Rịka **Introductory price** (nkwado nke na ọdịsanyụ 1) a dị n'ụlọ ọjọọ a n'ụlọ, karịta **Renewal price** (nkwado ọdịsanyụ 2+). Ọ bụrụ na ndị nkuzi na-agba obere ikiwa a dị n'ụlọ checkout, ha ga-enwe ike ịhụ obere ahụ mgbe ọdịsanyụ ọzọ.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Naa ihe na-akọwa ọ bụrụ na e ji nkwado WHOIS privacy anọchara maka domain ndị dị n'ụlọ a nwere.
 
@@ -59,7 +59,7 @@ Maka Namecheap, WHOIS privacy na-agbanwe WhoisGuard (dị mazi mgbe ọ bụla).
 
 ---
 
-## TLD import and sync
+## TLD import and sync {#tld-import-and-sync}
 
 Nkwado domain ndị a na-agba obere nkwado mfunwu dị n'ụlọ nke a na-akwụsị nkwado ọzọ dị ka onye na-agbanwe. Iji ịrụ ihe a, TLDs (Top-Level Domains) ga-anọchara.
 
@@ -70,7 +70,7 @@ Nkwado domain ndị a na-agba obere nkwado mfunwu dị n'ụlọ nke a na-akwụ
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Nkwado domain na-agbanwe na-agba obere nkwado nkuzi:
 
@@ -90,7 +90,7 @@ Email template IDs maka ihe ndị na-agbanwe domain:
 
 ---
 
-## Admin: Registration domain manual (Admin: Manual domain registration)
+## Admin: Registration domain manual (Admin: Manual domain registration) {#admin-manual-domain-registration}
 
 Na i mere nwere ịsị domain na aka customer mà dem ha kwesịrị checkout:
 

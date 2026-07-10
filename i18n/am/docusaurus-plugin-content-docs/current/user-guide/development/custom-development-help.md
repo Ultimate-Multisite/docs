@@ -3,13 +3,13 @@ title: የተበጀ ልማት ድጋፍ
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# ከCodeable የራሳቸውን የልማት እርዳታ እንዴት ማግኘት ይቻላል?
+# ከCodeable የራሳቸውን የልማት እርዳታ እንዴት ማግኘት ይቻላል? {#how-to-get-custom-development-help-from-codeable}
 
 አንዳንድ ጊዜ፣ የኔትወርክዬ በትክክል እንደምንፈልገው እንዲሰራ በጣም ጥሩ ማበጀት (customization) ያስፈልጋል። ይህን እየፈለጉ ከሆነ፣ በUltimate Multisite ልምድ ባላቸው ገንቢዎች ሊያገኙበት የሚችሉበት ቦታ የሆነውን [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) እንመክራለን።
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ደንበኞችን ከብቃት ባላቸው የWordPress ነፃ ገንቢዎች ጋር የሚያገናኝ መድረክ ሲሆን፣ በማንኛ የፕሮጀክት መጠን ላይም መስራት ይችላሉ። እርስዎ ባሰቡት ተግባር ላይ በተለይ ብቃት ባላቸው ባለሙያዎች እንዲገናኙ ለማድረግ ጥንቃቄ የተሞላበት የማመልከቻ ሂደት አላቸው።
 
-### በCodeable ፕሮጀክት እንዴት መፍጠር ይቻላል?
+### በCodeable ፕሮጀክት እንዴት መፍጠር ይቻላል? {#how-to-create-a-project-in-codeable}
 
 በመጀመሪያ፣ ወደ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ይሂዱ እና **Start a Project** የሚለውን ቁልፍ ይጫኑ።
 

@@ -3,11 +3,11 @@ title: Competenza Estetica del Sistema di Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Skill Estetica del Design System
+# Skill Estetica del Design System {#design-system-aesthetics-skill}
 
 Lo **Skill Estetica del Design System** è un approccio guidato per affinare l'identità visiva del tuo sito. Ti aiuta a prendere decisioni coerenti su tipografia, colore, spaziatura e i *token* di movimento che definiscono il tuo design system.
 
-## Cos'è l'Estetica del Design System?
+## Cos'è l'Estetica del Design System? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics è uno skill strutturato che copre:
 
@@ -20,9 +20,9 @@ Design System Aesthetics è uno skill strutturato che copre:
 
 Queste decisioni vengono salvate nel file `theme.json` del tuo tema, creando un sistema visivo coeso.
 
-## Perché usare l'Estetica del Design System?
+## Perché usare l'Estetica del Design System? {#why-use-design-system-aesthetics}
 
-### Coerenza
+### Coerenza {#consistency}
 
 Un design system assicura che:
 
@@ -31,7 +31,7 @@ Un design system assicura che:
 - La spaziatura segua un modello prevedibile
 - Le animazioni sembrino unificate
 
-### Efficienza
+### Efficienza {#efficiency}
 
 Invece di prendere decisioni di design pagina per pagina, tu:
 
@@ -39,7 +39,7 @@ Invece di prendere decisioni di design pagina per pagina, tu:
 - Li applichi ovunque
 - Li aggiorni globalmente modificando un singolo valore
 
-### Flessibilità
+### Flessibilità {#flexibility}
 
 Puoi:
 
@@ -47,9 +47,9 @@ Puoi:
 - Sperimentare diverse estetiche
 - Mantenere la coerenza del brand pur evolvendo
 
-## Attivare lo Skill Estetica del Design System
+## Attivare lo Skill Estetica del Design System {#triggering-the-design-system-aesthetics-skill}
 
-### Attivazione Manuale
+### Attivazione Manuale {#manual-activation}
 
 Puoi avviare lo skill in qualsiasi momento:
 
@@ -69,7 +69,7 @@ o
 "Guidami nelle decisioni sul design system"
 ```
 
-### Suggerimenti Automatici
+### Suggerimenti Automatici {#automatic-suggestions}
 
 Gli agenti potrebbero suggerire di usare lo skill quando tu:
 
@@ -78,9 +78,9 @@ Gli agenti potrebbero suggerire di usare lo skill quando tu:
 - Vuoi migliorare la coerenza visiva
 - Ti stai preparando per il lancio del sito
 
-## Il Processo Estetica del Design System
+## Il Processo Estetica del Design System {#the-design-system-aesthetics-process}
 
-### Passo 1: Tipografia
+### Passo 1: Tipografia {#step-1-typography}
 
 L'agente ti chiederà delle tue scelte di carattere:
 
@@ -110,7 +110,7 @@ L'agente definirà quindi:
 - **Scala dei pesi**: Pesi del carattere (regular, medium, bold, ecc.)
 - **Interlinea**: Spaziatura tra le righe per la leggibilità
 
-### Passo 2: Palette Colori
+### Passo 2: Palette Colori {#step-2-color-palette}
 
 ```
 Definiamo la tua palette colori.
@@ -140,7 +140,7 @@ L'agente creerà una palette completa che include:
 - Colori semantici (successo, avviso, errore)
 - Stati hover e attivo
 
-### Passo 3: Spaziatura
+### Passo 3: Spaziatura {#step-3-spacing}
 
 ```
 Quanto spazio di respiro desideri?
@@ -162,7 +162,7 @@ L'agente definisce i *token* di spaziatura:
 - Scala: xs, sm, md, lg, xl, 2xl
 - Valori specifici per padding, margin, gap
 
-### Passo 4: Bordi e Ombre
+### Passo 4: Bordi e Ombre {#step-4-borders-and-shadows}
 
 ```
 Profondità e definizione visiva:
@@ -185,7 +185,7 @@ L'agente crea:
 - Token per le ombre a vari livelli di elevazione
 - Token per la larghezza del bordo
 
-### Passo 5: Movimento e Animazione
+### Passo 5: Movimento e Animazione {#step-5-motion-and-animation}
 
 ```
 Come dovrebbe sentirsi il tuo sito quando è interattivo?
@@ -207,9 +207,9 @@ L'agente definisce:
 - Funzioni di easing (ease-in, ease-out, ease-in-out)
 - Keyframe di animazione per interazioni comuni
 
-## Applicare l'Estetica del Design System
+## Applicare l'Estetica del Design System {#applying-design-system-aesthetics}
 
-### Applicazione Automatica
+### Applicazione Automatica {#automatic-application}
 
 Dopo aver completato lo skill, l'agente:
 
@@ -218,7 +218,7 @@ Dopo aver completato lo skill, l'agente:
 3. Rigenera gli stili dei blocchi per adattarsi al nuovo sistema
 4. Attiva il tema aggiornato
 
-### Applicazione Manuale
+### Applicazione Manuale {#manual-application}
 
 Puoi anche modificare `theme.json` direttamente:
 
@@ -257,9 +257,9 @@ Puoi anche modificare `theme.json` direttamente:
 }
 ```
 
-## Visualizzare il tuo Design System
+## Visualizzare il tuo Design System {#viewing-your-design-system}
 
-### Chiedere all'Agente
+### Chiedere all'Agente {#ask-the-agent}
 
 ```
 "Mostrami il mio design system"
@@ -273,13 +273,13 @@ o
 
 L'agente visualizzerà la tua tipografia, i colori, la spaziatura e altri *token*.
 
-### Visualizzare theme.json
+### Visualizzare theme.json {#view-themejson}
 
 Apri `/wp-content/themes/[theme-name]/theme.json` in un editor di testo per vedere le definizioni grezze dei *token*.
 
-## Aggiornare il tuo Design System
+## Aggiornare il tuo Design System {#updating-your-design-system}
 
-### Aggiornamenti Rapidi
+### Aggiornamenti Rapidi {#quick-updates}
 
 Chiedi all'agente modifiche specifiche:
 
@@ -299,7 +299,7 @@ o
 "Cambia il carattere dei titoli in un serif"
 ```
 
-### Redesign Completo
+### Redesign Completo {#full-redesign}
 
 Esegui nuovamente lo skill Estetica del Design System:
 
@@ -309,7 +309,7 @@ Esegui nuovamente lo skill Estetica del Design System:
 
 Questo ti guiderà attraverso tutte le decisioni, partendo dai tuoi valori attuali.
 
-### Aggiornamenti Parziali
+### Aggiornamenti Parziali {#partial-updates}
 
 Aggiorna aspetti specifici:
 
@@ -317,15 +317,15 @@ Aggiorna aspetti specifici:
 "Aggiorna solo la palette colori, lascia tutto il resto"
 ```
 
-## Best Practices del Design System
+## Best Practices del Design System {#design-system-best-practices}
 
-### Coerenza
+### Coerenza {#consistency-1}
 
 - Usa sempre gli stessi *token* ovunque
 - Non creare colori o dimensioni "una tantum"
 - Fai riferimento ai *token* invece di codificare valori fissi
 
-### Nomenclatura
+### Nomenclatura {#naming}
 
 Usa nomi chiari e semantici:
 
@@ -335,7 +335,7 @@ Usa nomi chiari e semantici:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalabilità
+### Scalabilità {#scalability}
 
 Progetta il tuo sistema in modo che possa crescere:
 
@@ -343,7 +343,7 @@ Progetta il tuo sistema in modo che possa crescere:
 - Crea scale (xs, sm, md, lg, xl) invece di valori arbitrari
 - Pianifica le aggiunte future
 
-### Documentazione
+### Documentazione {#documentation}
 
 Documenta il tuo design system:
 
@@ -351,9 +351,9 @@ Documenta il tuo design system:
 - Quando usare ogni *token*
 - Eccezioni e casi limite
 
-## Pattern Comuni del Design System
+## Pattern Comuni del Design System {#common-design-system-patterns}
 
-### Minimalista Moderno
+### Minimalista Moderno {#modern-minimalist}
 
 - Tipografia sans-serif (Inter, Helvetica)
 - Palette colori limitata (2-3 colori)
@@ -361,7 +361,7 @@ Documenta il tuo design system:
 - Ombre sottili
 - Animazioni fluide e veloci
 
-### Caldo e Amichevole
+### Caldo e Amichevole {#warm-and-friendly}
 
 - Mix di serif e sans-serif
 - Palette colori calda (arancioni, grigi caldi)
@@ -369,7 +369,7 @@ Documenta il tuo design system:
 - Ombre morbide
 - Animazioni giocose
 
-### Corporate Professionale
+### Corporate Professionale {#professional-corporate}
 
 - Sans-serif pulito (Roboto, Open Sans)
 - Palette neutra con colore di accento
@@ -377,7 +377,7 @@ Documenta il tuo design system:
 - Ombre minime
 - Transizioni delicate
 
-### Creativo e Audace
+### Creativo e Audace {#creative-and-bold}
 
 - Tipografia distintiva
 - Palette colori audace
@@ -385,7 +385,7 @@ Documenta il tuo design system:
 - Ombre marcate
 - Animazioni evidenti
 
-## Risoluzione dei Problemi
+## Risoluzione dei Problemi {#troubleshooting}
 
 **Le modifiche al mio design system non vengono mostrate**
 - Cancella la cache del browser
@@ -403,7 +403,7 @@ Documenta il tuo design system:
 - Modifica manualmente `theme.json` con i valori precedenti
 - Riprova lo skill con scelte diverse
 
-## Prossimi Passi
+## Prossimi Passi {#next-steps}
 
 Dopo aver definito il tuo design system:
 

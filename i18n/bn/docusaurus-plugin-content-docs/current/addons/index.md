@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons অতিরিক্ত ফিচার এবং ইন্টিগ্রেশন দিয়ে Ultimate Multisite-কে আরও উন্নত করে। বেশিরভাগ অ্যাডঅন পেইড এবং [ultimatemultisite.com](https://ultimatemultisite.com) থেকে কেনা যায়।
 
-## ইনস্টলেশন
+## ইনস্টলেশন {#installation}
 
 অ্যাডঅনগুলো দুটি উপায়ে ইনস্টল করা যায়:
 
 ১. **অ্যাডন পেজের মাধ্যমে** -- ওয়ার্ডপ্রেস অ্যাডমিন প্যানেলে আপনার সাইটের অ্যাডন ম্যানেজমেন্ট পেজে যান
 ২. **ম্যানুয়াল ডাউনলোড** -- [your account](https://ultimatemultisite.com/my-account/downloads/) থেকে ডাউনলোড করুন এবং Plugins > Add New এর মাধ্যমে আপলোড করুন
 
-## উপলব্ধ অ্যাডঅনগুলো
+## উপলব্ধ অ্যাডঅনগুলো {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

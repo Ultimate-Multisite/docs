@@ -3,13 +3,13 @@ title: 커스텀 레지스트라 통합 구축하기
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# 사용자 지정 레지스트라 통합 구축하기
+# 사용자 지정 레지스트라 통합 구축하기 {#building-a-custom-registrar-integration}
 
 Domain Seller 애드온은 **통합 레지스트리(Integration Registry)** 패턴을 사용합니다. 각 레지스트라는 `Domain_Selling_Capability`를 구현하는 PHP 클래스이며, `wu_domain_seller_register_capabilities` 액션 훅을 통해 자신을 등록합니다.
 
 이 가이드는 사용자 지정 레지스트라를 연결하는 방법을 보여줍니다.
 
-## 인터페이스
+## 인터페이스 {#the-interface}
 
 사용자의 클래스는 `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability`를 구현하고 `WP_Ultimo\Integrations\Base_Capability_Module`을 상속받아야 합니다.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### 선택적 메서드
+### 선택적 메서드 {#optional-methods}
 
 이 메서드들을 구현하면 추가 기능을 활성화할 수 있습니다. 애드온은 `method_exists()`를 통해 지원 여부를 감지합니다.
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | 도메인 이전 (나가는 경우) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | 도메인 이전 (들어오는 경우) |
 
-### 반환 값 규칙
+### 반환 값 규칙 {#return-value-convention}
 
 모든 메서드는 최소한 `success` 키를 포함하는 배열을 반환해야 합니다.
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => '사람이 읽을 수 있는 오류 메
 
 ---
 
-## 기능 등록하기
+## 기능 등록하기 {#registering-your-capability}
 
 `wu_domain_seller_register_capabilities` 액션을 사용하여 클래스를 등록합니다.
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## 위자드에 자격 증명 필드 추가하기
+## 위자드에 자격 증명 필드 추가하기 {#adding-credential-fields-to-the-wizard}
 
 관리자가 설정 위자드를 통해 자격 증명을 입력할 수 있도록 하려면, 통합을 등록해야 합니다.
 
@@ -137,7 +137,7 @@ add_action('wu_domain_seller_register_integrations', function(\WP_Ultimo\Integra
 
 ---
 
-## 등록 후 액션용 훅(Hooks)
+## 등록 후 액션용 훅(Hooks) {#hooks-for-post-registration-actions}
 
 이 액션들을 사용하여 웹훅(webhook), 프로비저닝(provisioning), 알림 또는 CRM 업데이트를 트리거할 수 있습니다.
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## 로깅(Logging)
+## 로깅(Logging) {#logging}
 
 `wu_log_add()`를 사용하여 제공자별 로그 채널에 기록합니다.
 

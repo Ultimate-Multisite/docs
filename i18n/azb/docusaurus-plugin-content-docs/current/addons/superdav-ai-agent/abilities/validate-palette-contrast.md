@@ -3,15 +3,15 @@ title: Validate Palette Contrast
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Palet Kontrastını Doğrulama
+# Palet Kontrastını Doğrulama {#validate-palette-contrast}
 
 **Palet Kontrastını Doğrulama** özelliği, renklerinizi temanıza uygulamadan önce, tasarım paletinizdeki renk çiftlerini WCAG (Web İçeriği Erişilebilirlik Yönergeleri) uyumluluğu açısından kontrol eder.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 Bu özellik, sitenizin renk şemasının, metin ve arka plan renkleri arasındaki kontrast oranlarını doğrulayarak erişilebilirlik standartlarına uygun olmasını sağlar. Görme engelli kullanıcılar için okuması zor olabilecek renk kombinasyonlarını önlemeye yardımcı olur.
 
-## Giriş Formatı
+## Giriş Formatı {#input-format}
 
 Bu özellik, bir renk paleti girişi kabul eder:
 
@@ -35,7 +35,7 @@ Bu özellik, bir renk paleti girişi kabul eder:
 }
 ```
 
-### Parametreler
+### Parametreler {#parameters}
 
 | Parametre | Tip | Zorunlu | Açıklama |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Bu özellik, bir renk paleti girişi kabul eder:
 | `wcag_level` | string | Hayır | WCAG uyumluluk seviyesi: "A", "AA" (varsayılan) veya "AAA" |
 | `pairs_to_check` | array | Hayır | Doğrulanacak belirli renk çiftleri (örneğin, `["primary-text", "background-text"]`) |
 
-## Kontrol Edilen WCAG Seviyeleri
+## Kontrol Edilen WCAG Seviyeleri {#wcag-levels-checked}
 
 Bu özellik, WCAG standartlarına göre kontrast oranlarını doğrular:
 
@@ -56,7 +56,7 @@ Bu özellik, WCAG standartlarına göre kontrast oranlarını doğrular:
 - **Normal Metin** — 18pt'den küçük metin (veya 14pt kalın)
 - **Büyük Metin** — 18pt veya daha büyük metin (veya 14pt kalın veya daha büyük)
 
-## Çıkış Şeması
+## Çıkış Şeması {#output-schema}
 
 Bu özellik, ayrıntılı bir doğrulama raporu döndürür:
 
@@ -95,7 +95,7 @@ Bu özellik, ayrıntılı bir doğrulama raporu döndürür:
 }
 ```
 
-### Çıkış Alanları
+### Çıkış Alanları {#output-fields}
 
 | Alan | Tip | Açıklama |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Bu özellik, ayrıntılı bir doğrulama raporu döndürür:
 | `status` | string | Her çift için "pass" (geçti) veya "fail" (kaldı) |
 | `recommendations` | array | Başarısız olan çiftleri iyileştirmek için öneriler |
 
-## Kullanım Örneği
+## Kullanım Örneği {#usage-example}
 
 **İstem:**
 ```
@@ -119,7 +119,7 @@ Renk paletimin WCAG AA standartlarına uyup uymadığını kontrol edin. Birinci
 - ✅ Arka Plan + Metin: 12.1:1 oranı (WCAG AAA'yı geçiyor)
 - Genel: WCAG AA ile uyumlu
 
-## Tema Oluşturucu ile Entegrasyon
+## Tema Oluşturucu ile Entegrasyon {#integration-with-theme-builder}
 
 Tema Oluşturucu'nun tasarım yönü seçilirken, Palet Kontrastını Doğrulama özelliği:
 
@@ -129,7 +129,7 @@ Tema Oluşturucu'nun tasarım yönü seçilirken, Palet Kontrastını Doğrulama
 4. Uyumsuz çiftler için öneriler sunar
 5. Erişilemez renk şemalarının uygulanmasını engeller
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
 - **AA seviyesiyle başlayın** — WCAG AA, çoğu web sitesi için standarttır
 - **Uygulamadan önce test edin** — paletinizi bir tasarıma bağlı kalmadan önce doğrulayın
@@ -137,7 +137,7 @@ Tema Oluşturucu'nun tasarım yönü seçilirken, Palet Kontrastını Doğrulama
 - **Kullanıcı tercihlerini düşünün** — bazı kullanıcıların ek renk hassasiyetleri olabilir
 - **Kontrast kontrolörleri kullanın** — doğrulama için bu özelliği tarayıcı araçlarıyla birleştirin
 
-## Başarısız Çiftler ve Öneriler
+## Başarısız Çiftler ve Öneriler {#failing-pairs-and-recommendations}
 
 Bir renk çifti doğrulama testi başarısız olursa, özellik öneriler sunar:
 
@@ -155,7 +155,7 @@ Bir renk çifti doğrulama testi başarısız olursa, özellik öneriler sunar:
 }
 ```
 
-## İlgili Özellikler
+## İlgili Özellikler {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — doğruladığınız renk paletiyle logo oluşturun
 - [Create Menu](./create-menu.md) — erişilebilir renklerle navigasyon oluşturun

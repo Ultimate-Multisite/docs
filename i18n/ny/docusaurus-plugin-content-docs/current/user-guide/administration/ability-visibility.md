@@ -3,11 +3,11 @@ title: Kufuna Kutsogolera
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uvwe Wopse (Ability Visibility)
+# Uvwe Wopse (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 imapira **Ability Visibility** controls zomwe zikufuna kuti m'moyo wamene (surfaces) zimene zikufuna kudzera ndi chiyembekezo chomwe (ability). Izi zimapangitsa administrators kuti zikufunse bwino kuti zipi za zochitika za agent zikuperekedwa m'moyo wamene wosiyanasiyana, monga REST API, MCP servers, WooCommerce integrations, ndi m'moyo wosiyanasiyana.
 
-## Kodi Ability Visibility ndi chiyani?
+## Kodi Ability Visibility ndi chiyani? {#what-is-ability-visibility}
 
 Ability Visibility ndi mfundo ya kuugwira (permission system) yomwe imapangitsa kuti:
 
@@ -18,9 +18,9 @@ Ability Visibility ndi mfundo ya kuugwira (permission system) yomwe imapangitsa 
 
 Kukonse ability kumapereka nkhani ya kuwoneka yomwe imapangitsa kuti zikuperekedwa m'moyo wosiyanasiyana.
 
-## Mphindo za Kuwoneka (Visibility Levels)
+## Mphindo za Kuwoneka (Visibility Levels) {#visibility-levels}
 
-### Public (M'moyo Wosiyanasiyana)
+### Public (M'moyo Wosiyanasiyana) {#public}
 
 **Public abilities** zimapereka panthawi zonse:
 
@@ -32,7 +32,7 @@ Kukonse ability kumapereka nkhani ya kuwoneka yomwe imapangitsa kuti zikupereked
 
 Mifando: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (M'moyo Wosiyanasiyana M'moyo Wopulogera)
+### Internal (M'moyo Wosiyanasiyana M'moyo Wopulogera) {#internal}
 
 **Internal abilities** zimapereka m'moyo wanu wopulogera (WordPress installation):
 
@@ -43,7 +43,7 @@ Mifando: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Mifando: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner abilities** zimapereka kwa partners omwe ali opulogera (whitelisted):
 
@@ -54,7 +54,7 @@ Mifando: `manage-settings`, `view-analytics`, `export-data`
 
 Mifando: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Zikuyenera)
+### Disabled (Zikuyenera) {#disabled}
 
 **Disabled abilities** sikupereka panthawi zonse:
 
@@ -63,15 +63,15 @@ Mifando: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Sikuperekedwa m'admin panels
 - Zomwe zimaperekedwa kwambiri kapena zomwe zikuyenera kuwoneka (experimental abilities)
 
-## Kutsatira Kutsatira ya Ufufuza Ubwino wa Ufufuza (Managing Ability Visibility)
+## Kutsatira Kutsatira ya Ufufuza Ubwino wa Ufufuza (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Kutsatira Kutsatira ya Ufufuza Ubwino wa Ufufuza (Accessing Ability Visibility Settings)
+### Kutsatira Kutsatira ya Ufufuza Ubwino wa Ufufuza (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Tola ku **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Click tab ya **Abilities** (Ufufuzaji/Uwezo)
 3. Utavuta orodha ya ubwino wote uliowekwa na viwango vya utawala (visibility levels).
 
-### Kutsatira Ubwino wa Ufufuza (Viewing Ability Details)
+### Kutsatira Ubwino wa Ufufuza (Viewing Ability Details) {#viewing-ability-details}
 
 Click juu ya ubwino wowote ili kuona:
 
@@ -82,7 +82,7 @@ Click juu ya ubwino wowote ili kuona:
 - **Last updated**: Likuipitishwa wakati ubwino ulivyobadilika
 - **Status**: Umeainishwa au Usiainishwa
 
-### Kubadilisha Viwango vya Ubwino (Changing Visibility Levels)
+### Kubadilisha Viwango vya Ubwino (Changing Visibility Levels) {#changing-visibility-levels}
 
 Ili kubadilisha ubwino wa ubwino:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Kuendesha Hatua za Kila (Bulk Operations)
+### Kuendesha Hatua za Kila (Bulk Operations) {#bulk-operations}
 
 Ili kubadilisha ubwino kwa ubwino mwingi:
 
@@ -108,11 +108,11 @@ Ili kubadilisha ubwino kwa ubwino mwingi:
 2. Chagua kiwango kipya cha utawala kutoka dropdown ya hatua kubwa (bulk action)
 3. Click **Apply** (Tumia/Weka)
 
-## Orodha ya Wanafunzi wa Partner (Partner Allow-List)
+## Orodha ya Wanafunzi wa Partner (Partner Allow-List) {#partner-allow-list}
 
 **partner allow-list** inasimamia wanafunzi wapi wa nje wanaweza kufikia ubwino wa kiwango cha Partner.
 
-### Kuongeza Wanafunzi (Adding Partners)
+### Kuongeza Wanafunzi (Adding Partners) {#adding-partners}
 
 1. Tola ku **Superdav AI Agent** → **Settings** → **Partners**
 2. Click **Add Partner** (Ongeza Mwanafunzi)
@@ -120,7 +120,7 @@ Ili kubadilisha ubwino kwa ubwino mwingi:
 4. Chagua hiari kuongeza jina la partner na maelezo yake
 5. Click **Save** (Hifadhi)
 
-### Kuwapa Ubwino Wanafunzi kwa Wanafunzi (Assigning Abilities to Partners)
+### Kuwapa Ubwino Wanafunzi kwa Wanafunzi (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Baada ya kuongeza mwanafunzi:
 
@@ -130,7 +130,7 @@ Baada ya kuongeza mwanafunzi:
 4. Mu section ya "Partner allow-list", tenda boxes za partner aliyenera kuona
 5. Tenda **Save**
 
-### Kukhulitsa Access ya Partner
+### Kukhulitsa Access ya Partner {#revoking-partner-access}
 
 Kuti utere access ya partner:
 
@@ -140,11 +140,11 @@ Kuti utere access ya partner:
 
 Partner uli kukhala akukumbutsa access ya ability iyi m'maka.
 
-## Abilities Zosakhulidwa (Unclassified Abilities)
+## Abilities Zosakhulidwa (Unclassified Abilities) {#unclassified-abilities}
 
 Pamene utshatu ability yomwe Superdav AI Agent hazi, itshatira kuti ndi **Unclassified**.
 
-### Chidziwitso cha Admin kwa Abilities Zosakhulidwa
+### Chidziwitso cha Admin kwa Abilities Zosakhulidwa {#admin-notice-for-unclassified-abilities}
 
 Mutendera chidziwitso cha admin:
 
@@ -161,7 +161,7 @@ Tenda kuti muli kukhulitsa ndi kuphatikiza.
 [Review Abilities] [Dismiss]
 ```
 
-### Kukhulitsa Abilities Zosakhulidwa
+### Kukhulitsa Abilities Zosakhulidwa {#reviewing-unclassified-abilities}
 
 1. Tenda **Review Abilities** mu chidziwitso
 2. Kwa ability lina lina losakhulidwa, mutendera:
@@ -178,7 +178,7 @@ Tenda kuti muli kukhulitsa ndi kuphatikiza.
 
 4. Tenda **Classify** kuti mutseza chitsanzo chanu
 
-### Chifukwa chake kukhulitsa Abilities Zosakhulidwa?
+### Chifukwa chake kukhulitsa Abilities Zosakhulidwa? {#why-classify-unclassified-abilities}
 
 Kukhulitsa abilities:
 
@@ -189,9 +189,9 @@ Kukhulitsa abilities:
 
 
 
-## Ufufu kuoneka m'moyo wosayansi (Visibility in Different Surfaces)
+## Ufufu kuoneka m'moyo wosayansi (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Zomwe zikhoza kwa umwonekedwe (Public abilities)** zikhoza kupitirira kupakanyike ndi REST endpoints:
 
@@ -203,7 +203,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Zomwe zikhoza m'moyo wopansi (Internal and Partner abilities)** sikhoza kupitirira kupakanyike ndi REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Zomwe zikhoza kwa umwonekedwe (Public abilities)** zikhoza kupitirira kupakanyike ndi MCP:
 
@@ -219,7 +219,7 @@ Zomwe zikhoza:
 
 **Zomwe zikhoza kwa makubwera (Partner abilities)** zimene zikhoza kutayika ndi kukhala ndi credentials za makubwera.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Zomwe zikhoza kwa umwonekedwe (Public abilities)** zomwe zili poyenera WooCommerce zimene zikhoza kupitirira:
 
@@ -229,7 +229,7 @@ Zomwe zikhoza:
 
 **Zomwe zikhoza m'moyo wopansi (Internal abilities)** sikuphedwa kupitirira kwa WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Zomwe zonse** (Public, Internal, Partner) zimene zikhoza kukhala pansi pa chat, kukhala monga momwe munthu amene ali ndi umodzi wosayansi (user permissions):
 
@@ -237,34 +237,34 @@ Zomwe zikhoza:
 - Amene ali m'moyo wosayansi (Regular users) zimene zikhoza kuchita zokhoza kwa umwonekedwe (Public abilities) poyenera.
 - Makubwera zimene zikhoza kuchita zomwe zonse za umwonekedwe (Public + Partner abilities) (njelanso kuti zili wophedwa).
 
-## Zomwe Zili M'moyo Wosayansi (Security Best Practices)
+## Zomwe Zili M'moyo Wosayansi (Security Best Practices) {#security-best-practices}
 
-### Kukhala ndi Umodzi Wosayansi Kwambiri (Principle of Least Privilege)
+### Kukhala ndi Umodzi Wosayansi Kwambiri (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Limani zomwe zikhoza kukhala ndi umwonekedwe wopansi kwambiri komwe zimene zikhoza kuchitidwa.
 - Gumule kuti mwayi wa makubwera (Partner visibility) kuti mwayi wosayansi (sensitive operations).
 - Gumule zomwe simene kumakwera.
 
-### Kukhudza Zomwe Zili M'moyo Wopansi (Regular Audits)
+### Kukhudza Zomwe Zili M'moyo Wopansi (Regular Audits) {#regular-audits}
 
 - Limani umwonekedwe wa zomwe zikhoza m'moyo wosayansi m'mabiri m'mabiri.
 - Limani zomwe simene zikhoza kukhala ndi umwonekedwe osayenera (unclassified abilities).
 - Gumule mwayi wamwamba omwe simene kumakwera.
 
-### Kukhudza ndi Kupereka Data (Logging and Monitoring)
+### Kukhudza ndi Kupereka Data (Logging and Monitoring) {#logging-and-monitoring}
 
 - Limani zomwe zikhoza kutumikidwa kwambiri.
 - Limani mwayi wa makubwera kuti amene akupita bwanji.
 - Gumule pamene kukhala ndi umodzi wosayansi wosayenera (unusual ability usage).
 
-### Zomwe Zili M'moyo Wopansi (Third-Party Abilities)
+### Zomwe Zili M'moyo Wopansi (Third-Party Abilities) {#third-party-abilities}
 
 - Limani zomwe zili m'moyo wopansi poyenera kuchitidwa.
 - Limani bwino kuti zimene zikhoza kukhala ndi umwonekedwe osayenera (Classify them explicitly).
 - Mulani pa umwonekedwe wopansi kapena wa makubwera m'moyo wopansi poyenera kuchitidwa.
 - Limani kuti zimene zikhoza kukhala ndi umwonekedwe wosayansi (Public) pamene zimene zili wophedwa (Promote to Public only after vetting).
 
-## Kufunsa Matenda (Troubleshooting)
+## Kufunsa Matenda (Troubleshooting) {#troubleshooting}
 
 **Kufunsa kukhala kukhala ku list**
 - Kufuna kuti ability ikhulupuluka na ikhulupuluka
@@ -287,7 +287,7 @@ Zomwe zikhoza:
 - Kufuna kuti classification yanu imapereka
 - Kufuna kuti plugin lomwe limapereka ability lina limapereka
 
-## Kupitira Kuchokera kwa Mode Yosiyanasiyana (Migration from Legacy Mode)
+## Kupitira Kuchokera kwa Mode Yosiyanasiyana (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Ngati mukupitira kuchokera kwa version yomwe yomwe ya Superdav AI Agent:
 
@@ -297,7 +297,7 @@ Ngati mukupitira kuchokera kwa version yomwe yomwe ya Superdav AI Agent:
 
 Kufuna kuti muli ndi zambiri za kupitira **Third-Party Mode Migration** kuti muli ndi zambiri za kupitira kukhala mu API ya Abilities.
 
-## Zofunso Zikulu (Next Steps)
+## Zofunso Zikulu (Next Steps) {#next-steps}
 
 Panda mungapereke visibility ya ability:
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 يُقدم Ultimate AI Connector for WebLLM إمكانية تشغيل نماذج الذكاء الاصطناعي (AI inference) مباشرةً في متصفح المستخدم لشبكة WordPress Multisite الخاصة بك. فهو يشغّل نماذج اللغة الكبيرة (LLMs) بالكامل داخل المتصفح باستخدام WebLLM ومحرك MLC — لا يتطلب مفاتيح API، ولا يتطلب استدعاءات خارجية، ولا تغادر البيانات جهاز المستخدم.
 
-## الميزات الرئيسية
+## الميزات الرئيسية {#key-features}
 
 - **الاستدلال من جانب المتصفح (Browser-side inference)**: يعمل نموذج اللغة الكبير محليًا في متصفح الزائر عبر WebLLM/MLC — لا يتطلب وحدة معالجة رسوميات (GPU) على الخادم.
 - **أداة الدردشة العائمة (Floating chat widget)**: يمكن للمستخدمين المسجلين الدخول مطالبة نموذج اللغة الكبير من جانب المتصفح مباشرةً من الواجهة الأمامية للموقع.
@@ -22,28 +22,28 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **ذاكرة التخزين المؤقت IndexedDB**: تنجو عمليات تنزيل أوزان النموذج من إعادة توجيهات CDN التي تكسر مسار واجهة برمجة التطبيقات (Cache API) الافتراضي.
 - **تكامل فلتر wpai**: يتصل بفلتر `wpai_preferred_text_models` بحيث يتم توجيه ميزة تجارب الذكاء الاصطناعي (AI Experiments) إلى محرك المتصفح عند التكوين.
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - WordPress 5.3 أو أعلى
 - PHP 7.4 أو أعلى
 - إضافة Ultimate Multisite (نشطة)
 - متصفح يدعم WebGPU (Chrome 113+، Edge 113+، أو Firefox Nightly مع تفعيل WebGPU)
 
-## التثبيت
+## التثبيت {#installation}
 
 1. قم بتحميل ملفات الإضافة إلى دليل `/wp-content/plugins/` الخاص بك.
 2. قم بتفعيل الإضافة عبر قائمة 'Plugins' في WordPress.
 3. انتقل إلى **Ultimate Multisite → AI Connector** لتكوين الإضافة.
 
-## أداة الدردشة العائمة (Floating Chat Widget)
+## أداة الدردشة العائمة (Floating Chat Widget) {#floating-chat-widget}
 
 تسمح أداة الدردشة العائمة لأي مستخدم مسجل الدخول بالتفاعل مع نموذج اللغة الكبير من جانب المتصفح مباشرةً من الواجهة الأمامية لموقعك، دون مغادرة الصفحة التي يتواجد فيها.
 
-### ماذا تفعل؟
+### ماذا تفعل؟ {#what-it-does}
 
 عند تفعيلها، يظهر رمز دردشة في زاوية كل صفحة أمامية للمستخدمين المسجلين. يؤدي النقر على الرمز إلى فتح لوحة دردشة حيث يمكن للمستخدم كتابة المطالبات وتلقي الردود من نموذج WebLLM الذي يعمل محليًا. نظرًا لأن النموذج يعمل بالكامل داخل المتصفح، فإن الردود تكون خاصة ولا تتضمن أي معالجة من جانب الخادم.
 
-### مؤشر الحالة في شريط الإدارة (Admin-Bar Status Indicator)
+### مؤشر الحالة في شريط الإدارة (Admin-Bar Status Indicator) {#admin-bar-status-indicator}
 
 يتضمن شريط إدارة WordPress مؤشر حالة يوضح الحالة الحالية لمحرك WebLLM:
 
@@ -56,7 +56,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 يتم تحديث المؤشر في الوقت الفعلي دون الحاجة إلى إعادة تحميل الصفحة.
 
-### كيفية تفعيل أو إلغاء تفعيل الأداة
+### كيفية تفعيل أو إلغاء تفعيل الأداة {#how-to-enable-or-disable-the-widget}
 
 1. اذهب إلى **Ultimate Multisite → AI Connector** في لوحة تحكم الشبكة (network admin).
 2. ابحث عن لوحة **Connector**.
@@ -65,17 +65,17 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 يمكن أيضًا تفعيل أو إلغاء تفعيل الأداة لكل موقع على حدة من لوحة تحكم الموقع نفسه إذا منح مسؤول الشبكة هذه الصلاحية.
 
-## إعدادات الأداة (Widget Settings)
+## إعدادات الأداة (Widget Settings) {#widget-settings}
 
 تحتوي لوحة Connector في **Ultimate Multisite → AI Connector** على الإعدادات التالية لأداة الدردشة العائمة:
 
-### تفعيل أداة الدردشة العائمة (Enable Floating Chat Widget)
+### تفعيل أداة الدردشة العائمة (Enable Floating Chat Widget) {#enable-floating-chat-widget}
 
 يقوم بتبديل أداة الدردشة على أو إيقاف لجميع الشبكة. عند تعطيلها، لا تظهر الأداة على أي صفحة أمامية، بغض النظر عن دور المستخدم.
 
 **الافتراضي:** إيقاف (Off)
 
-### سلوك المطالبة التلقائية (Auto-Prompt Behaviour)
+### سلوك المطالبة التلقائية (Auto-Prompt Behaviour) {#auto-prompt-behaviour}
 
 يتحكم فيما إذا كانت أداة الدردشة ترسل مطالبة تلقائيًا عندما يفتحها المستخدم.
 
@@ -93,7 +93,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 **الافتراضي:** إيقاف (Disabled)
 
-## بيئة تشغيل SharedWorker (SharedWorker Runtime)
+## بيئة تشغيل SharedWorker (SharedWorker Runtime) {#sharedworker-runtime}
 
 يقدم الإصدار 1.1.0 بيئة تشغيل SharedWorker لمحرك MLC. في السابق، كانت كل علامة تبويب متصفح تستخدم WebLLM تقوم بتحميل نسختها الخاصة من النموذج، مما يتنافس على ذاكرة GPU ويسبب مشاكل في الأداء على الأجهزة ذات ذاكرة الوصول العشوائي (VRAM) المحدودة.
 
@@ -105,29 +105,29 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 تكون SharedWorker شفافة للمستخدمين. يعكس مؤشر حالة شريط الإدارة دائمًا حالة المحرك المشترك، وليس حالة علامة التبويب الفردية.
 
-## طبقة apiFetch Middleware
+## طبقة apiFetch Middleware {#apifetch-middleware}
 
 تقوم الإضافة بتثبيت طبقة `apiFetch` middleware التي تمنع طلبات واجهة برمجة تطبيقات WordPress REST التي تطابق نمط AI Client SDK. فبدلاً من إجراء طلب HTTP ذهاب وعودة إلى الخادم، يتم توجيه هذه الطلبات مباشرةً إلى وسيط WebLLM المحلي الذي يعمل في SharedWorker.
 
 هذا يعني أن الإضافات والقوالب التي تستخدم واجهة برمجة تطبيقات `apiFetch` القياسية في WordPress لاستدعاء نقاط نهاية الذكاء الاصطناعي ستستفيد تلقائيًا من النموذج الموجود في المتصفح عند توفره، دون الحاجة إلى تغيير أي كود.
 
-## الخطافات والفلاتر (Hooks and Filters)
+## الخطافات والفلاتر (Hooks and Filters) {#hooks-and-filters}
 
-### الفلاتر (Filters)
+### الفلاتر (Filters) {#filters}
 
 - `wpai_preferred_text_models` — تسجيل محرك المتصفح WebLLM كنموذج نصي مفضل. تقوم الإضافة بالاتصال بهذا الفلتر تلقائيًا عند تكوين المحرك وتوفره.
 - `ultimate_webllm_widget_enabled` — تجاوز حالة تفعيل الأداة لمستخدم أو سياق معين. يجب أن تعيد القيمة `true` أو `false`.
 - `ultimate_webllm_auto_prompt` — تعديل نص المطالبة التلقائية قبل إرسالها إلى الأداة. يستقبل سلسلة المطالبة وكائن `WP_Post` الحالي.
 
-## استكشاف الأخطاء وإصلاحها (Troubleshooting)
+## استكشاف الأخطاء وإصلاحها (Troubleshooting) {#troubleshooting}
 
-### لا تظهر أداة الدردشة
+### لا تظهر أداة الدردشة {#the-chat-widget-does-not-appear}
 
 - تأكد من أن المستخدم مسجل الدخول — تظهر الأداة للمستخدمين المصادق عليهم فقط.
 - تحقق من أن **Enable floating chat widget** (تفعيل أداة الدردشة العائمة) مُفعّل في لوحة Connector.
 - تحقق من أن متصفح المستخدم يدعم WebGPU (انظر المتطلبات أعلاه).
 
-### مؤشر شريط الإدارة يعرض "Error"
+### مؤشر شريط الإدارة يعرض "Error" {#the-admin-bar-indicator-shows-error}
 
 افتح وحدة تحكم المطور في المتصفح (F12) وابحث عن أخطاء متعلقة بـ WebLLM. الأسباب الشائعة:
 
@@ -135,10 +135,10 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - فشل تنزيل أوزان النموذج — تحقق من اتصال الشبكة وحاول مسح ذاكرة التخزين المؤقت IndexedDB في أدوات مطور المتصفح (Application → IndexedDB).
 - يمنع أحد إضافات المتصفح عمل SharedWorker.
 
-### تنزيل أوزان النموذج في كل مرة
+### تنزيل أوزان النموذج في كل مرة {#model-weights-download-every-time}
 
 تستخدم الإضافة IndexedDB كخلفية للتخزين المؤقت لضمان بقاء أوزان النموذج عبر إعادة توجيهات CDN. إذا كانت الأوزان تُعاد تنزيلها في كل زيارة، فتحقق من أن إعدادات الخصوصية أو الإضافات في المتصفح لا تقوم بمسح IndexedDB.
 
-## سجل التغييرات (Changelog)
+## سجل التغييرات (Changelog) {#changelog}
 
 راجع [Changelog](./changelog) لمعرفة سجل الإصدار الكامل.

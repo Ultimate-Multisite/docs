@@ -3,7 +3,7 @@ title: Қисмҳои код
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Қисмҳои код барои v2
+# Қисмҳои код барои v2 {#code-snippets-for-v2}
 
 Дар асл, фрагментҳои код барои **WordPress** барои иҷрои амалҳое истифода мешаванд ки ба ин онҳо метавонад тавассути як плагини махсуси хурдӣ ниёз дошта бошад. Ин фрагментҳои код дар яке аз файлони асосии WordPress ё тема (одатан файли `functions.php`и теме шумо) ҷойгир карда мешаванд ва ё метавонанд ҳамчун MU plugin истифода шаванд.
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
 * [**Ҳалли масъалаҳои CORS бо Font-Icons дар доменҳои пайвастшуда**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Тағйири мавқеи меъёри ҳисобот (Account menu item)
+## Тағйири мавқеи меъёри ҳисобот (Account menu item) {#changing-the-position-of-the-account-menu-item}
 
 Агар хоҳед мавқеи меъёри ҳисобот (Account menu item) дар дашбори муштаби худ тағйир диҳед, ин корро танҳо кодҳои зеринро ба файли `functions.php` ситҳи асосии темаи фаоли худ илова кунед. Инро инчунин метавонед дар яке аз плагиниҳои mu-и худатон ё плагиниҳои махсуси илова карда метавонед.
 
@@ -23,7 +23,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 add_filter('wu_my_account_menu_position', function() { return 10; // Ин арзиро тағйир диҳед, то меню дар мавқеи хоҳай дошташ ҷойгир шавад.
 ```
 
-## Чӣ тавр ба тасдиқ мерасонед, ки корбар дар сари ҳисоббарии муайян ва/ё сабскари фаоли дорад
+## Чӣ тавр ба тасдиқ мерасонед, ки корбар дар сари ҳисоббарии муайян ва/ё сабскари фаоли дорад {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 (Note: The original English text for this section was incomplete in the prompt, so I have translated what is provided.)
 
@@ -51,7 +51,7 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Насоишӣ аз мушкилоти CORS бо Font-Icons дар доменҳои пайвастшуда
+## Насоишӣ аз мушкилоти CORS бо Font-Icons дар доменҳои пайвастшуда {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Баъди он ки шумо як доменро ба сайт фармоиш (sub-site) мекунед, метавонед ин маълумот пайдо кунед, ки сайт дар ворид кардани шрифтҳои махсуси ӯ осорӣ надорад. Ин сабаби бло킹и кросс-орҷонӣ (cross-origin block) дар танзимоти сервери шумост.
 
@@ -59,13 +59,13 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 Ин аст кодҳои мувофиқ барои ислоҳ кардани масъала барои Apache ва NGINX. Ин тағйирот ба дониши амиқи тасвири конфигуратсияи серверҳо (.htaccess ва файлоҳои конфигуратсияи NGINX) ниёз дорад. Агар шумо аз тасвири онҳо сахт бошад, ин саҳифаро ҳангори дар ҳолати кӯмаки хостинг‌دهндагонӣ (hosting provider support agents) бисозед ва дар он пурсед.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Дар файли .htaccess-и худ инро илова кунед:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Дар файл конфигуратсияи сервер (ҷойи он аз сервер ба сервер фарқ мекунад), инро илова кунед:
 

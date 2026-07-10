@@ -1,105 +1,152 @@
 ---
-title: Setări AI Agent Gratuite
+title: Setări Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Setările Gratis AI Agent
+# Setări Gratis AI Agent {#gratis-ai-agent-settings}
 
-Ecranul **Setări → Avansat** din Gratis AI Agent oferă configurări de nivel administrator pentru integrările de backend introduse în v1.5.0. Această pagină documentează câmpurile **Feedback Endpoint** și formatul lor așteptat.
+Ecranul **Setări → Avansat** din Gratis AI Agent oferă configurare la nivel de administrator pentru integrări backend. Această pagină documentează redirecționarea feedbackului, cheile furnizorilor de căutare, configurarea serviciului Superdav gestionat, controalele Google Calendar, setările SMS TextBee și indicatorii de funcționalități la nivel de rețea.
 
-## Accesarea Setărilor
+## Accesarea setărilor {#accessing-settings}
 
-1. În panoul de administrare WordPress, accesați **Gratis AI Agent → Setări**.
-2. Faceți clic pe tab-ul **Avansat**.
+1. În administrarea WordPress, mergi la **Gratis AI Agent → Setări**.
+2. Fă clic pe fila **Avansat**.
 
-## Configurarea Feedback Endpoint-ului
+## Configurarea endpointului de feedback {#feedback-endpoint-configuration}
 
-Feedback endpoint-ul primește cereri POST de la agentul AI de fiecare dată când un utilizator trimite un feedback prin butonul de decontare (thumbs-down), banner-ul de auto-prompt sau comanda `/report-issue`.
+Endpointul de feedback primește cereri POST de la agentul AI ori de câte ori un utilizator trimite feedback prin butonul cu degetul în jos, bannerul de solicitare automată sau comanda `/report-issue`.
 
 | Câmp | Descriere |
 |---|---|
-| **Feedback Endpoint URL** | URL-ul care primește trimiterile de feedback ca cereri HTTP POST cu un corp JSON. |
-| **Feedback API Key** | Un token bearer trimis în antetul `Authorization` pentru fiecare cerere de feedback. Lăsați câmpul gol dacă endpoint-ul dumneavoastră nu necesită autentificare. |
+| **URL endpoint feedback** | URL-ul care primește trimiterile de feedback ca cereri HTTP POST cu un corp JSON. |
+| **Feedback API Key** | Un bearer token trimis în `Authorization` header al fiecărei cereri de feedback. Lasă necompletat dacă endpointul tău nu necesită autentificare. |
 
-### Payload JSON Așteptat
+### Payload JSON așteptat {#expected-json-payload}
 
-Endpoint-ul dumneavoastră de feedback trebuie să accepte un corp JSON cu cel puțin următoarele câmpuri:
+Endpointul tău de feedback trebuie să accepte un corp JSON cu cel puțin următoarele câmpuri:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Răspunsul era incorect cu privire la prețuri.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Pot fi prezente și alte câmpuri în payload, în funcție de contextul conversației.
+Pot fi prezente câmpuri suplimentare în payload, în funcție de contextul conversației.
 
-### Valorile `triage_category`
+### Valorile `triage_category` {#triagecategory-values}
 
-Stratul de triaj AI atribuie una dintre următoarele valori câmpului `triage_category` înainte de a transmite payload-ul:
+Stratul de triaj AI atribuie una dintre următoarele valori pentru `triage_category` înainte de a redirecționa payloadul:
 
 | Valoare | Semnificație |
 |---|---|
 | `factual_error` | Asistentul a furnizat informații factuale incorecte. |
 | `unhelpful_answer` | Răspunsul a fost corect din punct de vedere tehnic, dar nu a fost util. |
-| `inappropriate_content` | Răspunsul a conținut conținut care nu ar trebui arătat utilizatorilor. |
-| `other` | Feedback-ul nu a corespunde unei categorii cunoscute. |
+| `inappropriate_content` | Răspunsul a conținut conținut care nu ar trebui afișat utilizatorilor. |
+| `other` | Feedbackul nu s-a potrivit cu o categorie cunoscută. |
 
-### Autentificare
+### Autentificare {#authentication}
 
-Dacă endpoint-ul dumneavoastră necesită autentificare, setați câmpul **Feedback API Key** cu token-ul bearer. Agentul trimite:
+Dacă endpointul tău necesită autentificare, setează câmpul **Feedback API Key** la bearer token-ul tău. Agentul trimite:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Dacă câmpul **Feedback API Key** este gol, nu se trimite niciun antet `Authorization`.
+Dacă câmpul **Feedback API Key** este gol, nu este trimis niciun `Authorization` header.
 
-### Dezactivarea Colectării Feedback-ului
+### Dezactivarea colectării feedbackului {#disabling-feedback-collection}
 
-Lăsați câmpurile **Feedback Endpoint URL** și **Feedback API Key** goale. Butonul de decontare și interfața de feedback rămân vizibile utilizatorilor, dar trimiterile nu sunt redirecționate către niciun serviciu extern.
+Lasă goale atât câmpul **URL endpoint feedback**, cât și câmpul **Feedback API Key**. Butonul cu degetul în jos și interfața de feedback rămân vizibile pentru utilizatori, dar trimiterile nu sunt redirecționate către niciun serviciu extern.
 
-## Cheia API Brave Search
+## Brave Search API Key {#brave-search-api-key}
 
-De asemenea, pe tab-ul **Avansat**, câmpul **Brave Search API Key** activează capacitatea de [Căutare pe Internet](../configuration/internet-search).
+Tot în fila **Avansat**, câmpul **Brave Search API Key** activează capacitatea [Căutare pe internet](../configuration/internet-search).
 
 | Câmp | Descriere |
 |---|---|
-| **Brave Search API Key** | Cheia API dumneavoastră din dashboard-ul dezvoltator Brave Search. Este necesară pentru a activa căutarea pe internet în asistentul AI. |
+| **Brave Search API Key** | Cheia ta API din dashboardul pentru dezvoltatori Brave Search. Necesară pentru a activa căutarea pe internet în asistentul AI. |
 
-Eticheta câmpului include un link clicabil către pagina de înscriere pentru Brave Search API. Lăsați câmpul gol pentru a dezactiva căutarea pe internet.
+Eticheta câmpului include un link pe care se poate face clic către pagina de înscriere Brave Search API. Lasă necompletat pentru a dezactiva căutarea pe internet.
 
-Vezi [Căutare pe Internet](../configuration/internet-search) pentru documentația pentru utilizatorii finali despre această funcționalitate.
+Vezi [Căutare pe internet](../configuration/internet-search) pentru documentația destinată utilizatorilor finali despre această funcționalitate.
 
-## Feature Flags
+## Serviciu Superdav gestionat {#managed-superdav-service}
 
-De asemenea introduse în v1.9.0, tab-ul **Setări → Feature Flags** oferă comutatoare pentru funcționalități opționale. Fiecare flag este fie activat, fie dezactivat la nivel de rețea; în acest moment nu există o suprascriere la nivel de site.
+Superdav AI Agent v1.18.0 adaugă endpointuri pentru serviciul Superdav gestionat și provizionarea automată a conexiunii pentru site-uri acceptate. Folosește aceste controale când site-ul tău trebuie să se conecteze la furnizorul găzduit în locul unui endpoint de serviciu configurat manual.
 
-### Accesarea Feature Flags
+| Câmp | Descriere |
+|---|---|
+| **Serviciu Superdav gestionat** | Activează conexiunea la serviciul Superdav găzduit pentru site-uri acceptate. |
+| **Provizionează conexiunea** | Pornește provizionarea automată a endpointului și a acreditărilor. Folosește acest lucru după ce confirmi că site-ul ar trebui să folosească furnizorul gestionat. |
+| **Endpoint serviciu / Stare conexiune** | Afișează endpointul curent sau starea conexiunii după provizionare. |
 
-1. În panoul de administrare WordPress, accesați **Gratis AI Agent → Setări**.
-2. Faceți clic pe tab-ul **Feature Flags**.
+După provizionare, salvează setările și verifică starea conexiunii înainte de a te baza pe fluxuri de lucru cu serviciu gestionat. Dacă provizionarea eșuează, consultă recomandările de reîncercare afișate și confirmă că site-ul are permisiunea de a folosi furnizorul găzduit.
 
-### Feature Flags de Control al Accesului
+## Configurarea Google Calendar {#google-calendar-configuration}
 
-| Flag | Implicit | Descriere |
+Când funcționalitățile de calendar Superdav AI Agent v1.18.0 sunt activate, agentul poate citi calendarele configurate și detaliile evenimentelor. Instrumentele de calendar sunt orientate spre citire și sunt utile pentru mementouri conștiente de program, urmărirea participanților și potrivirea contactelor.
+
+| Câmp | Descriere |
+|---|---|
+| **Acreditări Google Calendar** | Stochează acreditările sau conexiunea prin token necesare pentru a citi datele calendarului. |
+| **Selecție calendar** | Limitează calendarele configurate pe care agentul le poate inspecta. |
+| **Stare conexiune calendar** | Confirmă dacă acreditările curente pot citi calendare și evenimente. |
+
+Păstrează acreditările calendarului limitate la calendarele de care agentul are nevoie. Reconectează sau rotește acreditările dacă starea indică un token expirat.
+
+## Notificări SMS TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 adaugă TextBee ca furnizor SMS pentru fluxurile de lucru de notificare configurate. Notificările SMS ar trebui asociate cu porți de aprobare umană pentru mesajele sensibile sau adresate utilizatorilor.
+
+| Câmp | Descriere |
+|---|---|
+| **Cheie API TextBee** | Autentifică cererile către furnizorul SMS TextBee. |
+| **Dispozitiv / expeditor TextBee** | Selectează expeditorul sau dispozitivul TextBee folosit pentru mesajele trimise, când este cerut de furnizor. |
+| **Notificări SMS activate** | Permite fluxurilor de lucru aprobate să trimită notificări prin mesaje text. Lasă dezactivat pentru a preveni trimiterile SMS. |
+
+Trimite un mesaj de test doar către un număr deținut de administrator, apoi confirmă comportamentul porții de aprobare înainte de a activa mementouri programate sau adresate participanților.
+
+## Indicatori de funcționalități {#feature-flags}
+
+Introdusă tot în v1.9.0, fila **Setări → Indicatori de funcționalități** oferă comutatoare pentru funcționalitate opțională. Fiecare indicator este fie activat, fie dezactivat la nivel de rețea; în acest moment nu există suprascriere per site.
+
+### Accesarea indicatorilor de funcționalități {#accessing-feature-flags}
+
+1. În administrarea WordPress, mergi la **Gratis AI Agent → Setări**.
+2. Fă clic pe fila **Indicatori de funcționalități**.
+
+### Indicatori de control al accesului {#access-control-flags}
+
+| Indicator | Implicit | Descriere |
 |---|---|---|
-| **Restrict to Administrators** | Off | Când este activat, doar utilizatorii cu rolul `administrator` pot deschide panoul de chat al AI Agent. Toate celelalte roluri văd în schimb un mesaj de tip „Contactați administratorul”. |
-| **Restrict to Network Admins** | Off | Când este activat pe o rețea multisite, doar Super Admin-ii pot folosi agentul. Administratorii de site individual sunt blocați. Are prioritate față de „Restrict to Administrators” dacă ambele sunt activate. |
-| **Allow Subscriber Access** | Off | Când este activat, utilizatorii cu rolul `subscriber` pot folosi interfața de chat, dar sunt limitați la capacități de citire (fără crearea de postări sau modificări de setări). |
-| **Disable for Non-Members** | Off | Se integrează cu statutul de membru Ultimate Multisite. Când este activat, chat-ul este ascuns pentru site-urile care nu au o adezizare activă. |
+| **Restricționează la Administratori** | Dezactivat | Când este activat, doar utilizatorii cu rolul `administrator` pot deschide panoul de chat al AI Agent. Toate celelalte roluri văd în schimb un mesaj „Contactează-ți administratorul”. |
+| **Restricționează la Network Admins** | Dezactivat | Când este activat într-o rețea multisite, doar Super Admins pot folosi agentul. Administratorii site-urilor individuale sunt blocați. Are prioritate față de „Restricționează la Administratori” dacă ambele sunt activate. |
+| **Permite accesul Subscriber** | Dezactivat | Când este activat, utilizatorii cu rolul `subscriber` pot folosi interfața de chat, dar sunt limitați la capacități doar în citire (fără creare de articole sau modificări ale setărilor). |
+| **Dezactivează pentru non-membri** | Dezactivat | Se integrează cu starea abonamentului Ultimate Multisite. Când este activat, chatul este ascuns pentru site-urile care nu au un abonament activ. |
 
-### Feature Flags de Branding
+### Indicatori de branding {#branding-flags}
 
-| Flag | Implicit | Descriere |
+| Indicator | Implicit | Descriere |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Elimină linia de atribuire a brandului afișată în partea de jos a widget-ului de chat. Recomandat pentru implementări white-label. |
-| **Custom Agent Name** | *(blank)* | Înlocuiește eticheta implicită „Gratis AI Agent” din antetul chat-ului și din meniul de administrare cu numele propriu de produs. Lăsați gol pentru a folosi implicitul. |
-| **Hide Agent Picker** | Off | Când este activat, utilizatorii nu pot comuta între cele cinci agenți încorporați. Agentul curent este fixat pe cel configurat ca implicit în Setări → General. |
-| **Use Site Icon as Chat Avatar** | Off | Înlocuiește iconița AI implicită din antetul widget-ului de chat cu iconița site-ului WordPress (setată în Apariție → Personalizare → Identitatea Site-ului). |
+| **Ascunde subsolul „Powered by Gratis AI Agent”** | Dezactivat | Elimină linia de atribuire a brandingului afișată în partea de jos a widgetului de chat. Recomandat pentru implementări white-label. |
+| **Nume personalizat al agentului** | *(gol)* | Înlocuiește eticheta implicită „Gratis AI Agent” din antetul chatului și meniul de administrare cu propriul tău nume de produs. Lasă gol pentru a folosi valoarea implicită. |
+| **Ascunde selectorul de agent** | Dezactivat | Când este activat, utilizatorii nu pot comuta între cei cinci agenți încorporați. Agentul curent este fixat la ceea ce este configurat ca implicit în Setări → General. |
+| **Folosește pictograma site-ului ca avatar de chat** | Dezactivat | Înlocuiește pictograma AI implicită din antetul widgetului de chat cu pictograma site-ului WordPress (setată în Aspect → Personalizează → Identitate site). |
 
-### Aplicarea Modificărilor
+### Indicatori de siguranță pentru automatizare {#automation-safety-flags}
 
-Faceți clic pe **Save Settings** după ce ați modificat oricare flag. Modificările intră în vigoare imediat — nu este necesară ștergerea cache-ului sau reactivarea plugin-ului.
+Superdav AI Agent v1.18.0 introduce porți de aprobare umană și înregistrări de mementouri pentru rulări de automatizare mai sigure. Aceste controale pot apărea în indicatorii de funcționalități sau în setările avansate de automatizare, în funcție de pachetul instalat.
+
+| Indicator | Implicit | Descriere |
+|---|---|---|
+| **Necesită aprobare umană** | Recomandat activat | Pune pe pauză automatizările sensibile până când un utilizator autorizat revizuiește și confirmă acțiunea propusă. |
+| **Deduplicarea mementourilor** | Activat | Înregistrează mementourile trimise, astfel încât reîncercările sau rulările programate să nu trimită notificări duplicate. |
+| **Activează instrumentele de calendar** | Dezactivat până la configurare | Permite agentului să citească calendarele și evenimentele Google configurate. |
+| **Activează notificările SMS** | Dezactivat până la configurare | Permite fluxurilor de lucru aprobate să trimită notificări SMS TextBee după salvarea acreditărilor. |
+
+### Aplicarea modificărilor {#applying-changes}
+
+Fă clic pe **Salvează setările** după comutarea oricărui indicator. Modificările intră în vigoare imediat — nu este necesară golirea cache-ului sau reactivarea pluginului.

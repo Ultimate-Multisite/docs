@@ -3,17 +3,17 @@ title: Směr návrhu
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Směr designu
+# Směr designu {#design-direction}
 
 Krok **Směr designu** vám umožňuje zkontrolovat, vylepšit a dokončit vizuální design vašeho tématu, než Theme Builder vygeneruje celé téma.
 
-## Přehled
+## Přehled {#overview}
 
 Po dokončení rozhovoru s prozkoumáním (Discovery Interview) vám Theme Builder předloží směr designu s **náhledem pro desktop a mobil**. To vám umožní vidět přesně, jak váš design vypadá na různých zařízeních, než se zavážete k tématu.
 
-## Složky směru designu
+## Složky směru designu {#design-direction-components}
 
-### 1. Barevná paleta
+### 1. Barevná paleta {#1-color-palette}
 
 Barevná schéma vašeho tématu, včetně:
 
@@ -23,7 +23,7 @@ Barevná schéma vašeho tématu, včetně:
 - **Neutrální barvy** — šedé a bílé barvy pro pozadí a text
 - **Barva textu** — primární barva textu pro čitelnost
 
-### 2. Typografie
+### 2. Typografie {#2-typography}
 
 Výběr fontů pro:
 
@@ -33,14 +33,14 @@ Výběr fontů pro:
 - **Řádková výška** — rozestup mezi řádky pro lepší čitelnost
 - **Tuhost fontu** — varianty tučné, normální a lehké
 
-### 3. Rozložení a rozestupy
+### 3. Rozložení a rozestupy {#3-layout-and-spacing}
 
 - **Šířka kontejneru** — maximální šířka obsahu
 - **Vyplňování a okraje** — rozestupy kolem prvků
 - **Síťový systém** — rozložení v sloupcích pro adaptivní design
 - **Rozestupy komponent** — vzdálenost mezi UI prvky
 
-### 4. Vizuální prvky
+### 4. Vizuální prvky {#4-visual-elements}
 
 - **Styl tlač buttonů** — design primárních, sekundárních a terciárních tlačítek
 - **Design karet** — rozložení pro bloky obsahu
@@ -48,9 +48,9 @@ Výběr fontů pro:
 - **Okraje a stíny** — jemná vizuální hloubka
 - **Efekty při přejezdu** — styl interaktivního stavu
 
-## Náhled renderingu
+## Náhled renderingu {#preview-rendering}
 
-### Desktopový náhled
+### Desktopový náhled {#desktop-preview}
 
 Desktopový náhled zobrazuje váš design v plné šířce (obvykle 1200px nebo více):
 
@@ -59,7 +59,7 @@ Desktopový náhled zobrazuje váš design v plné šířce (obvykle 1200px nebo
 - Velká typografie a rozestupy
 - Všechny vizuální prvky ve plné velikosti
 
-### Mobilní náhled
+### Mobilní náhled {#mobile-preview}
 
 Mobilní náhled zobrazuje váš design v mobilní šířce (obvykle 375px):
 
@@ -68,7 +68,7 @@ Mobilní náhled zobrazuje váš design v mobilní šířce (obvykle 375px):
 - Upravená typografie a rozestupy
 - Velikosti tlačítek přívětivé pro dotyk
 
-### Adaptivní body zlomu
+### Adaptivní body zlomu {#responsive-breakpoints}
 
 Theme Builder vykresluje náhledy v těchto bodech zlomu:
 
@@ -79,9 +79,9 @@ Theme Builder vykresluje náhledy v těchto bodech zlomu:
 | **Desktop** | 1200px | Plná šířka desktopu |
 | **Velký desktop** | 1920px | Ultraširoká obrazovka |
 
-## Vylepšování vašeho designu
+## Vylepšování vašeho designu {#refining-your-design}
 
-### Úpravy
+### Úpravy {#making-adjustments}
 
 Můžete svůj směr designu vylepšit tím, že:
 
@@ -91,7 +91,7 @@ Můžete svůj směr designu vylepšit tím, že:
 4. **Aktualizujete rozložení** — změňte šířky kontejnerů a sloupce sítě
 5. **Personalizujete prvky** — upravte styly tlačítek, design karet atd.
 
-### Aktualizace náhledů
+### Aktualizace náhledů {#preview-updates}
 
 Změny jsou zobrazeny v reálném čase:
 
@@ -100,7 +100,7 @@ Změny jsou zobrazeny v reálném čase:
 - Všechny adaptivní body zlomu jsou aktualizovány
 - Můžete přepínat mezi náhledy, abyste ověřili změny
 
-### Porovnávací zobrazení
+### Porovnávací zobrazení {#comparison-view}
 
 Porovnejte svůj směr designu s:
 
@@ -108,7 +108,7 @@ Porovnejte svůj směr designu s:
 - **Designy konkurence** — porovnejte s inspiračními stránkami
 - **Úředními verzemi** — vraťte se k předchozím směrovým pokusům
 
-## Schválení směru designu
+## Schválení směru designu {#design-direction-approval}
 
 Jakmile jste s designem spokojeni:
 
@@ -118,7 +118,7 @@ Jakmile jste s designem spokojeni:
 4. **Potvrďte rozložení** — zkontrolujte rozestupy a uspořádání
 5. **Schválte design** — pokračujte v generování tématu
 
-## Další kroky
+## Další kroky {#next-steps}
 
 Po schválení směru designu:
 
@@ -127,7 +127,7 @@ Po schválení směru designu:
 3. Můžete dále upravovat pomocí customizeru WordPressu
 4. Pokračujte k [Hospitality Menus](./hospitality-menus.md) nebo k jiným funkcím
 
-## Nejlepší praxe
+## Nejlepší praxe {#best-practices}
 
 - **Testujte na skutečných zařízeních** — pokud je to možné, použijte skutečné telefony a tablety
 - **Zkontrolujte čitelnost** — zajistěte, že je text čitelný ve všech velikostech
@@ -135,30 +135,30 @@ Po schválení směru designu:
 - **Zvažte výkon** — optimalizujte obrázky a fonty pro rychlost
 - **Plánujte obsah** — zajistěte, že rozložení funguje s vaším skutečným obsahem
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Náhled se neaktualizuje
+### Náhled se neaktualizuje {#preview-not-updating}
 
 - Obnovte stránku
 - Vymažte cache prohlížeče
 - Zkuste jiný prohlížeč
 - Zkontrolujte připojení k internetu
 
-### Barvy vypadají jinak
+### Barvy vypadají jinak {#colors-look-different}
 
 - Zkontrolujte nastavení barev monitoru
 - Zkuste na různých zařízeních
 - Ověřte barevný kontrast pomocí nástrojů pro přístupnost
 - Zvažte simulátory barové sleposti
 
-### Problémy s typografií
+### Problémy s typografií {#typography-issues}
 
 - Ověřte, že se fonty načítají
 - Zkontrolujte velikost fontu v různých bodech zlomu
 - Testujte se skutečným obsahem
 - Zvažte délku řádku pro čitelnost
 
-## Související dokumentace
+## Související dokumentace {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — sběr designových informací
 - [Hospitality Menus](./hospitality-menus.md) — vytváření strukturovaných stránek menu

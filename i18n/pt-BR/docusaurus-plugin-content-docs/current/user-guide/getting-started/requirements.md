@@ -3,11 +3,11 @@ title: Requisitos
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisitos do Ultimate Multisite
+# Requisitos do Ultimate Multisite {#ultimate-multisite-requirements}
 
 A primeira coisa que você pode se perguntar antes de comprar o Ultimate Multisite é quais são os requisitos para rodar nosso plugin. Bem, felizmente, existem apenas alguns requisitos básicos para executar o Ultimate Multisite: um **nome de domínio**, um bom **provedor de hospedagem** e uma instalação do WordPress **Multisite**. Isso é tudo que você precisa!
 
-## Nome de Domínio
+## Nome de Domínio {#domain-name}
 
 Primeiro, vamos falar sobre o nome de domínio.
 
@@ -17,7 +17,7 @@ Nosso plugin oferece serviços de assinatura, coleta de pagamentos, formulários
 
 Qualquer nicho que você escolher pode ser gerenciado usando nosso plugin, desde que você venda sites como serviço! Certifique-se de escolher um nome de domínio que corresponda ao seu plano de negócios.
 
-## Provedor de Hospedagem
+## Provedor de Hospedagem {#hosting-provider}
 
 Agora que você tem um nome de domínio atraente que representa seu nicho e negócio, precisará escolher uma boa empresa de hospedagem para hospedar sua rede com o Ultimate Multisite. Existem boas opções no mercado. Alguns provedores de hospedagem integram bem com o Ultimate Multisite, o que pode ser um fator decisivo dependendo do que você planeja construir.
 
@@ -25,7 +25,7 @@ O Ultimate Multisite deve funcionar em qualquer provedor de hospedagem. A única
 
 Quando se trata de especificações de servidor, não há uma fórmula específica, pois dependerá dos recursos e funções que você oferecerá e do tamanho da sua rede. Um hospedagem compartilhada pode ser um bom começo, mas assim que sua rede começar a crescer, provavelmente precisará de um VPS dedicado.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Agora, vamos falar um pouco sobre uma instalação do WordPress Multisite.
 

@@ -1,99 +1,152 @@
 ---
-title: Rannachais AI Agent fadaidh
+title: Roghainnean Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Settings AI Agent Grátis
+# Roghainnean Gratis AI Agent {#gratis-ai-agent-settings}
 
-An **Settings → Advanced** screen in Gratis AI Agent le cungrannach airson co-chùrsain chùrsain-a-steach (administrator-level configuration) airson co-chluasadh a tha wedi' sgaidh anns an v1.5.0. A gun seann seo a tha a' sgrùdadh na feidheil **Feedback Endpoint** agus fòmach air a tha a' gineadh.
+Tha an sgrìn **Roghainnean → Adhartach** ann an Gratis AI Agent a’ toirt seachad rèiteachadh aig ìre rianaire airson amalachadh backend. Tha an duilleag seo a’ mìneachadh cur-air-adhart fios-air-ais, iuchraichean solaraiche luirg, suidheachadh seirbheis Superdav stiùirichte, smachdan Google Calendar, roghainnean SMS TextBee, agus brataichean feart thar an lìonra.
 
-## Co-chlaidh Settings
+## A’ faighinn cothrom air Roghainnean {#accessing-settings}
 
-1. I admin WordPress, rinn gu **Gratis AI Agent → Settings**.
-2. Clicke ar tab **Advanced**.
+1. Ann an rianachd WordPress, rach gu **Gratis AI Agent → Roghainnean**.
+2. Briog air an taba **Adhartach**.
 
-## Co-chluasadh Feedback Endpoint
+## Rèiteachadh Endpoint Fios-air-ais {#feedback-endpoint-configuration}
 
-Tha an feedback endpoint a tharann de dhòigh POST requests a' sgàil airson an AI agent gu sònraich gu bheil seann a' chlàradh (thumbs-down button), bannar auto-prompt, no comadh `/report-issue`.
+Bidh an endpoint fios-air-ais a’ faighinn iarrtasan POST bhon AI agent gach uair a chuireas cleachdaiche fios-air-ais a-steach tron phutan òrdag-sìos, a’ bhratach fèin-bhrosnachaidh, no an àithne `/report-issue`.
 
-| Field | Aonnsaigh |
+| Raon | Tuairisgeul |
 |---|---|
-| **Feedback Endpoint URL** | An URL a tharann de dhòigh co-chluasadh a' sgail gu HTTP POST requests le seann JSON body. |
-| **Feedback API Key** | Tòisich air a tharann is dòigh bearer token anns an `Authorization` header a chùrsain a' chlàradh (feedback request) a chùrsain. Tòisich air a bhith fada air a tha thu endpoint agad a de uileidheachd a' gineadh. |
+| **URL Endpoint Fios-air-ais** | An URL a gheibh cuir-a-steach fios-air-ais mar iarrtasan HTTP POST le corp JSON. |
+| **Feedback API Key** | bearer token a thèid a chur ann an `Authorization` header gach iarrtais fios-air-ais. Fàg bàn e mura h-eil an endpoint agad ag iarraidh dearbhadh. |
 
-### Payload JSON Aonnsaigh
+### Payload JSON ris a bheil dùil {#expected-json-payload}
 
-Mus eirinn an feedback endpoint agad, mus am fòmach JSON le co-chluasadh a tha a' gineadh:
+Feumaidh an endpoint fios-air-ais agad gabhail ri corp JSON leis na raointean a leanas co-dhiù:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Bha an tairmheas air an t-uisge a' sgail.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Leum a tha fòmach eile ag obair anns an payload a' gineadh a' leidheachadh a' chùrsain.
+Dh’fhaodadh raointean a bharrachd a bhith an làthair anns a’ payload a rèir co-theacsa a’ chòmhraidh.
 
-### Airgead `triage_category`
+### Luachan `triage_category` {#triagecategory-values}
 
-Tha an slàinte AI a tharann aon de na fòmach uile seo air `triage_category` a' sgail gu bheil e a' chlàradh (payload) a' sgàil:
+Sònraichidh an còmhdach triage AI aon de na luachan a leanas do `triage_category` mus cuir e am payload air adhart:
 
-| Value | Aonnsaigh |
+| Luach | Ciall |
 |---|---|
-| `factual_error` | Bha an àiteach a' sgail de fòighinn-fòighinn airneachdach. |
-| `unhelpful_answer` | Bha an tairmheas airneachdach gu tecnicach ach ann an t-uisge. |
-| `inappropriate_content` | Bha an tairmheas a' gineadh seann a tha thu a' sgail do chùrsain. |
-| `other` | Bha an feedback a' leumh a' sgail air co-chluasadh a tha a' fada. |
+| `factual_error` | Thug an neach-cuideachaidh seachad fiosrachadh fìrinneach ceàrr. |
+| `unhelpful_answer` | Bha am freagairt ceart gu teicnigeach ach cha robh e feumail. |
+| `inappropriate_content` | Bha susbaint anns an fhreagairt nach bu chòir a shealltainn do chleachdaichean. |
+| `other` | Cha do fhreagair am fios-air-ais ri roinn aithnichte. |
 
-### Aonnsaigh (Authentication)
+### Dearbhadh {#authentication}
 
-Tha thuair a tha eich endpoint a'igeirich a tha aithreachadh, rinn an fhadraidh **Feedback API Key** gu eòganach (bearer token) agad. A' thann an agent:
+Ma tha an endpoint agad ag iarraidh dearbhadh, suidhich an raon **Feedback API Key** dhan bearer token agad. Cuiridh an agent:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Tha an **Feedback API Key** a'igeirich a tha a'igeirich, níl aon `Authorization` header a thann.
+Ma tha an raon **Feedback API Key** falamh, cha tèid `Authorization` header a chur.
 
-### A' guthachadh leatachadh (Disabling Feedback Collection)
+### A’ cur Cruinneachadh Fios-air-ais à comas {#disabling-feedback-collection}
 
-Latha an **Feedback Endpoint URL** agus an **Feedback API Key** gu eòganach. Tha an t-aon-fhaighinn (thumbs-down button) agus an UI fhadraidh a'igeirich airson na h-uilean, ach níl aon fhadraidh a thann air a' chluaintean a tha a'igeirich.
+Fàg an dà raon **URL Endpoint Fios-air-ais** agus **Feedback API Key** bàn. Bidh am putan òrdag-sìos agus UI fios-air-ais fhathast ri fhaicinn do chleachdaichean, ach cha tèid cuir-a-steach a chur air adhart gu seirbheis sam bith bhon taobh a-muigh.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Tha an **Brave Search API Key** aig an tab **Advanced** gu sònach, a tha a'igeirich a tha a'igeirich [Internet Search](../configuration/internet-search).
+Cuideachd air an taba **Adhartach**, tha an raon **Brave Search API Key** a’ cur an comas an comais [Lorg Eadar-lìn](../configuration/internet-search).
 
-| Field | Description |
+| Raon | Tuairisgeul |
 |---|---|
-| **Brave Search API Key** | An API key agad a' ghràdhachdaireachd Brave Search. Tha e aithreachaich airson a bhith a'igeirich internet search anns an AI assistant. |
+| **Brave Search API Key** | An iuchair API agad bho dashboard luchd-leasachaidh Brave Search. Riatanach gus lorg eadar-lìn a chur an comas san AI assistant. |
 
-Tha an t-aon-fhaighinn a'igeirich a tha le link a'igeirich gu pàipear sign-up API Brave Search. Latha an fhadraidh a'igeirich airson internet search.
+Tha bileag an raoin a’ gabhail a-steach ceangal briogail ri duilleag clàraidh Brave Search API. Fàg bàn e gus lorg eadar-lìn a chur à comas.
 
-Sealltainn [Internet Search](../configuration/internet-search) airson dacdaireachd uileach air an fhadraidh seo.
+Faic [Lorg Eadar-lìn](../configuration/internet-search) airson sgrìobhainnean cleachdaiche dheireannaich mun fheart seo.
 
-## Feature Flags
+## Seirbheis Superdav Stiùirichte {#managed-superdav-service}
 
-Tha e a' guthachadh gu sònach anns an v1.9.0, tha an tab **Settings → Feature Flags** a'igeirich tòrchaidhean (toggle switches) airson fhaighinn fhaighinn optional. Tha ch each flag a'igeirich a tha a'igeirich air an t-àiteach; tha e a'igeirich a tha a'igeirich ann an t-àiteach, tha e a'igeirich a tha a'igeirich ann an t-àiteach.
+Tha Superdav AI Agent v1.18.0 a’ cur endpointan seirbheis Superdav stiùirichte agus solarachadh ceangail fèin-obrachail ris airson làraichean le taic. Cleachd na smachdan seo nuair a bu chòir don làrach agad ceangal ris an t-solaraiche aoigheachd an àite endpoint seirbheis a chaidh a rèiteachadh le làimh.
 
-### A' ghlacadh Feature Flags (Accessing Feature Flags)
+| Raon | Tuairisgeul |
+|---|---|
+| **Seirbheis Superdav Stiùirichte** | A’ cur ceangal seirbheis Superdav aoigheachd an comas airson làraichean le taic. |
+| **Solarachadh Ceangail** | A’ tòiseachadh solarachadh fèin-obrachail endpoint agus teisteanasan. Cleachd seo às dèidh dhut dearbhadh gum bu chòir don làrach an solaraiche stiùirichte a chleachdadh. |
+| **Endpoint Seirbheis / Inbhe Ceangail** | A’ sealltainn an endpoint làithreach no staid a’ cheangail às dèidh solarachaidh. |
 
-1. I WordPress admin, rinn gu **Gratis AI Agent → Settings**.
-2. Cluich air an tab **Feature Flags**.
+Às dèidh solarachaidh, sàbhail na roghainnean agus dearbhaich inbhe a’ cheangail mus cuir thu earbsa ann an sruthan-obrach seirbheis stiùirichte. Ma dh’fhàilligear an solarachadh, thoir sùil air an stiùireadh ath-fheuchainn a tha air a thaisbeanadh agus dearbhaich gu bheil cead aig an làrach an solaraiche aoigheachd a chleachdadh.
 
-### Flaggaid airson raonachadh a' chluaintean (Access Control Flags)
+## Rèiteachadh Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Description |
+Nuair a tha feartan mìosachain Superdav AI Agent v1.18.0 air an cur an comas, faodaidh an agent mìosachain rèitichte agus mion-fhiosrachadh thachartasan a leughadh. Tha innealan mìosachain stèidhichte air leughadh agus tha iad feumail airson cuimhneachain mothachail air clàr-ama, leantainn suas le luchd-frithealaidh, agus maidseadh luchd-aithne.
+
+| Raon | Tuairisgeul |
+|---|---|
+| **Teisteanasan Google Calendar** | A’ stòradh nan teisteanasan no ceangal token a tha riatanach gus dàta mìosachain a leughadh. |
+| **Taghadh Mìosachain** | A’ cuingealachadh dè na mìosachain rèitichte as urrainn don agent sgrùdadh. |
+| **Inbhe Ceangail Mìosachain** | A’ dearbhadh an urrainn do na teisteanasan làithreach mìosachain agus tachartasan a leughadh. |
+
+Cùm teisteanasan mìosachain cuingealaichte ris na mìosachain a tha a dhìth air an agent. Ceangail a-rithist no cuairtich teisteanasan ma tha an inbhe a’ sealltainn token a dh’fhalbh an ùine.
+
+## Brathan SMS TextBee {#textbee-sms-notifications}
+
+Tha Superdav AI Agent v1.18.0 a’ cur TextBee ris mar sholaraiche SMS airson sruthan-obrach brath rèitichte. Bu chòir brathan SMS a chur còmhla ri geataichean ceadachaidh daonna airson teachdaireachdan mothachail no a tha ri fhaicinn do chleachdaichean.
+
+| Raon | Tuairisgeul |
+|---|---|
+| **Iuchair API TextBee** | A’ dearbhadh iarrtasan dhan t-solaraiche SMS TextBee. |
+| **Inneal / Neach-cuir TextBee** | A’ taghadh an neach-cuir no an inneal TextBee a thèid a chleachdadh airson teachdaireachdan a-mach, nuair a tha sin riatanach leis an t-solaraiche. |
+| **Brathan SMS Air an Comasachadh** | A’ leigeil le sruthan-obrach aontaichte brathan teachdaireachd-teacsa a chur. Fàg à comas e gus casg a chur air cur SMS. |
+
+Cuir teachdaireachd deuchainn dìreach gu àireamh aig a bheil rianaire na shealbhadair, agus an uair sin dearbhaich giùlan a’ gheata-cheadachaidh mus cuir thu cuimhneachain chlàraichte no a tha ri fhaicinn do luchd-frithealaidh an comas.
+
+## Brataichean Feart {#feature-flags}
+
+Air a thoirt a-steach cuideachd ann an v1.9.0, tha an taba **Roghainnean → Brataichean Feart** a’ toirt seachad suidsichean toglaidh airson comas-gnìomh roghainneil. Tha gach bratach an dàrna cuid air a comasachadh no air a cur à comas air feadh an lìonraidh; chan eil tar-sgrìobhadh gach-làraich ann aig an àm seo.
+
+### A’ faighinn cothrom air Brataichean Feart {#accessing-feature-flags}
+
+1. Ann an rianachd WordPress, rach gu **Gratis AI Agent → Roghainnean**.
+2. Briog air an taba **Brataichean Feart**.
+
+### Brataichean Smachd Ruigsinneachd {#access-control-flags}
+
+| Bratach | Bun-roghainn | Tuairisgeul |
 |---|---|---|
-| **Restrict to Administrators** | Off | Nuairinn a' chluarachadh do chluarachair. Nuair a tha seo a' tòiseachadh, faic an uisgeulachais leat a bhith ag fhaigh air an panel chat AI Agent gu sònraichte. Tha ealainn eile a' chluarachadh a' cleachdadh "Contact do do chluarachair". |
-| **Restrict to Network Admins** | Off | Nuair a tha seo a' tòiseachadh ar seòd multisite, tha Super Admins a' cleachdadh an agent gu sònraichte. Tha adhirinne site a' chluarachadh. Tha ealainn eile a' chluarachadh a' cleachdadh "Restrict to Administrators" a' chluarachadh air seòd multisite, agus tha seo a' tòiseachadh an uisgeulais. |
-| **Allow Subscriber Access** | Off | Nuair a tha seo a' tòiseachadh, caithedh na h-uilean leat a bhith ag fhaigh air an interface chat ach tha thu a' chluarachadh (no tha eadar-dheargadh postachnadh no atharrachadh seòilchnaichean). |
-| **Disable for Non-Members** | Off | Tha e a' ghnàthachadh le statantachd membership Ultimate Multisite. Nuair a tha seo a' tòiseachadh, tha an chat a' chluarachadh airson sitean a chanachd beatha (membership) a tha thu a' cleachdadh. |
+| **Cuingich ri Administrators** | Dheth | Nuair a tha seo an comas, chan urrainn ach luchd-cleachdaidh leis an dreuchd `administrator` pannal cabadaich an AI Agent fhosgladh. Chì a h-uile dreuchd eile teachdaireachd "Cuir fios chun administrator agad" na àite. |
+| **Cuingich ri Network Admins** | Dheth | Nuair a tha seo an comas air lìonra multisite, chan urrainn ach Super Admins an agent a chleachdadh. Tha admins làraich fa leth air am bacadh. Tha prìomhachas aige thairis air "Cuingich ri Administrators" ma tha an dà chuid an comas. |
+| **Ceadaich ruigsinneachd do Subscriber** | Dheth | Nuair a tha seo an comas, faodaidh luchd-cleachdaidh leis an dreuchd `subscriber` an eadar-aghaidh cabadaich a chleachdadh ach tha iad cuingichte ri comasan leughaidh a-mhàin (gun chruthachadh phuist no atharraichean roghainnean). |
+| **Cuir à comas do dhaoine nach eil nam buill** | Dheth | Amalgaimaichidh e le inbhe ballrachd Ultimate Multisite. Nuair a tha seo an comas, tha cabadaich falaichte do làraichean aig nach eil ballrachd ghnìomhach. |
 
-### Branding Flags
+### Brataichean branndaidh {#branding-flags}
 
-| Flag | Default | Description |
+| Bratach | Bun-roghainn | Tuairisgeul |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | A' chluarachadh an línte a' chluarachadh a tha a' tòiseachadh a' chluarachadh a tha a' cleachdadh. Tha ealainn leat a' cleachdadh airson deploiements leat a' chluarachadh. |
-| **Custom Agent Name** | *(blank)* | A' chluarachadh an "Gratis AI Agent" a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a' chluarachadh a'
+| **Falaich Footer "Powered by Gratis AI Agent"** | Dheth | Bheir e air falbh loidhne buileachaidh a’ bhrand a chithear aig bonn a’ widget cabadaich. Air a mholadh airson cleachdaidhean white-label. |
+| **Ainm Agent gnàthaichte** | *(bàn)* | Cuiridh e an t-ainm bathair agad fhèin an àite bileag bhunaiteach "Gratis AI Agent" ann am bann-cinn na cabadaich agus ann an clàr-taice an admin. Fàg bàn e gus a’ bhun-roghainn a chleachdadh. |
+| **Falaich roghnaiche an Agent** | Dheth | Nuair a tha seo an comas, chan urrainn do luchd-cleachdaidh gluasad eadar na còig agents togte. Tha an agent làithreach suidhichte ris na tha air a rèiteachadh mar bhun-roghainn ann an Settings → General. |
+| **Cleachd ìomhaigh an làraich mar avatar cabadaich** | Dheth | Cuiridh e ìomhaigh làraich WordPress (suidhichte fo Appearance → Customize → Site Identity) an àite ìomhaigh AI bhunaiteach ann am bann-cinn a’ widget cabadaich. |
+
+### Brataichean sàbhailteachd fèin-obrachais {#automation-safety-flags}
+
+Tha Superdav AI Agent v1.18.0 a’ toirt a-steach geataichean ceadachaidh daonna agus clàran chuimhneachain airson ruithichean fèin-obrachais nas sàbhailte. Dh’fhaodadh na smachdan seo nochdadh anns na brataichean feart no anns na roghainnean fèin-obrachais adhartach, a rèir a’ phacaid a chaidh a stàladh.
+
+| Bratach | Bun-roghainn | Tuairisgeul |
+|---|---|---|
+| **Feum air cead daonna** | Air a mholadh air | Cuiridh e fèin-obrachasan mothachail air stad gus an dèan neach-cleachdaidh ùghdarraichte lèirmheas agus dearbhadh air a’ ghnìomh a thathar a’ moladh. |
+| **Dì-dhùblachadh chuimhneachain** | Air | Clàraichidh e cuimhneachain a chaidh a chur gus nach cuir ath-oidhirpean no ruithichean clàraichte fiosan dùblaichte. |
+| **Cuir innealan mìosachain an comas** | Dheth gus am bi e air a rèiteachadh | Leigidh e leis an agent mìosachain agus tachartasan Google a chaidh a rèiteachadh a leughadh. |
+| **Cuir fiosan SMS an comas** | Dheth gus am bi e air a rèiteachadh | Leigidh e le sruthan-obrach ceadaichte fiosan SMS TextBee a chur às dèidh do theisteanasan a bhith air an sàbhaladh. |
+
+### A’ cur atharraichean an sàs {#applying-changes}
+
+Briog air **Save Settings** às dèidh bratach sam bith a thionndadh. Thig atharraichean gu buil sa bhad — chan eil feum air glanadh cache no ath-ghnìomhachadh plugin.

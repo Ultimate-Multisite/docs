@@ -3,15 +3,15 @@ title: 'Leksyon 5: Pagdisenyo sa Imong mga Plano'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Leksyon 5: Pagdisenyo sa Imong mga Plano
+# Leksyon 5: Pagdisenyo sa Imong mga Plano {#lesson-5-designing-your-plans}
 
 Ang imong mga plan tiers dili lang basta mga lebel sa presyo — kini nagpakita kung giun pa-andar ang atong target market nga kustomer. Sa leksyon ni, magdisenyo kita og product tiers nga mo-match sa tinuod nga panginahanglan sa mga fitness business sa lainlaing yugto.
 
-## Sa diin mi mihunong
+## Sa diin mi mihunong {#where-we-left-off}
 
 Ang FitSite adunay tulo ka templates nga andam na (Studio Essential, Gym Pro, Fitness Chain). Karon, maghimo kita sa mga plano nga magtino kung unsa ang ma-access sa kustomer ug unsa ilang bayran.
 
-## Paghunahuna isip Customer Segments
+## Paghunahuna isip Customer Segments {#thinking-in-customer-segments}
 
 Ang sayop nga gibuhat sa kadaghanan mao ang pagdisenyo og mga plano base sa technical features (storage, bandwidth, gidaghanon sa pages). Ang imong niche customers dili maghunahuna nianang termino. Ang usa ka gym owner naghunahuna bahin sa unsay iyang gikinahanglan aron padagan ang iyang negosyo.
 
@@ -25,11 +25,11 @@ Para sa fitness studios, adunay tulo ka natural nga segments:
 
 Ang imong mga plano kinahanglan nga mo-map niining mga segments, dili lang random nga pagpili og features.
 
-## Paghimo sa FitSite Plans
+## Paghimo sa FitSite Plans {#creating-the-fitsite-plans}
 
 adto sa **Ultimate Multisite > Products > Add Product** para sa matag usa ka plano.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Target**: Solo trainers ug small studios
 
@@ -59,7 +59,7 @@ adto sa **Ultimate Multisite > Products > Add Product** para sa matag usa ka pla
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Target**: Established single-location gyms
 
@@ -85,7 +85,7 @@ adto sa **Ultimate Multisite > Products > Add Product** para sa matag usa ka pla
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Target**: Multi-location fitness chains
 
@@ -109,7 +109,7 @@ adto sa **Ultimate Multisite > Products > Add Product** para sa matag usa ka pla
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Pag-set up sa Plan Group
+## Pag-set up sa Plan Group {#setting-up-the-plan-group}
 
 Ang plan group nagsiguro nga ang mga kustomer makapag-upgrade o makapag-downgrade lang sulod sa FitSite plan family. Sa **Up & Downgrades** tab sa matag plano:
 
@@ -118,7 +118,7 @@ Ang plan group nagsiguro nga ang mga kustomer makapag-upgrade o makapag-downgrad
 
 Kini magmugna og klaro nga upgrade path: Starter → Growth → Pro.
 
-## Pagdugang og Order Bumps
+## Pagdugang og Order Bumps {#adding-order-bumps}
 
 Ang order bumps mga add-on products nga ihatag atol sa checkout. Para sa FitSite, pagkonsiderar niining mga mosunod:
 
@@ -128,7 +128,7 @@ Ang order bumps mga add-on products nga ihatag atol sa checkout. Para sa FitSite
 
 Pagmugna niini isip mga produkto nga klase **Package** sa Ultimate Multisite ug i-associate kini sa may kalabutan nga mga plano.
 
-## Ngano Kini Kaepektibo ang Structure
+## Ngano Kini Kaepektibo ang Structure {#why-this-structure-works}
 
 - Ang **Starter** nagtangtang og babag aron magsugod — barato, simple nga paghatag, dali makapadagan online ang trainers
 - Ang **Growth** magdugang og features nga gipangayo gyud sa mga gym — booking, galleries, custom domains
@@ -136,7 +136,7 @@ Pagmugna niini isip mga produkto nga klase **Package** sa Ultimate Multisite ug 
 - Ang **Order bumps** makapahimo sa kustomer nga makacustomize nga dili makakumplikado ang core plans
 - Ang **Clear upgrade path** nagpasabot nga ang mga kustomer motubo uban kanimo imbis nga mobiya
 
-## Ang FitSite Network Hangtud Karon
+## Ang FitSite Network Hangtud Karon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Unsa ang Atong Gibuhat Niining Leksyon
+## Unsa ang Atong Gibuhat Niining Leksyon {#what-we-built-this-lesson}
 
 - **Tulo ka plan tiers** nga mo-map sa tinuod nga fitness business segments
 - **Feature gating** gamit ang plugin ug template controls sa Ultimate Multisite

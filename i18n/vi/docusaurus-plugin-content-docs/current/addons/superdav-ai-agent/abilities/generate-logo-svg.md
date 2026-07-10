@@ -3,15 +3,15 @@ title: Tạo Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Tạo Logo SVG
+# Tạo Logo SVG {#generate-logo-svg}
 
 Tính năng **Tạo Logo SVG** cho phép Theme Builder tạo và nhúng các logo SVG tùy chỉnh trực tiếp vào trang WordPress của bạn, kèm theo quá trình làm sạch (sanitisation) tự động và an toàn namespace.
 
-## Tổng quan
+## Tổng quan {#overview}
 
 Tính năng này tạo ra các logo đồ họa vector có thể mở rộng (SVG) dựa trên định hướng thương hiệu và sở thích thiết kế của trang web bạn. Các SVG được tạo ra sẽ được tự động làm sạch để đảm bảo chúng an toàn khi sử dụng trong WordPress mà vẫn giữ được tính toàn vẹn về mặt hình ảnh.
 
-## Tham số
+## Tham số {#parameters}
 
 | Tham số | Kiểu | Bắt buộc | Mô tả |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Tính năng này tạo ra các logo đồ họa vector có thể mở rộng (SV
 | `height` | number | No | Chiều cao SVG bằng pixel (mặc định: 200) |
 | `include_text` | boolean | No | Xác định xem có bao gồm tên trang web dưới dạng văn bản trong logo hay không (mặc định: true) |
 
-## Định dạng đầu ra
+## Định dạng đầu ra {#output-format}
 
 Tính năng này trả về một chuỗi SVG với cấu trúc sau:
 
@@ -36,7 +36,7 @@ Tính năng này trả về một chuỗi SVG với cấu trúc sau:
 }
 ```
 
-## Hành vi làm sạch SVG
+## Hành vi làm sạch SVG {#svg-sanitisation-behaviour}
 
 Các SVG được tạo ra sẽ trải qua quá trình làm sạch tự động và an toàn namespace để:
 
@@ -48,7 +48,7 @@ Các SVG được tạo ra sẽ trải qua quá trình làm sạch tự động 
 
 Điều này đảm bảo SVG an toàn để nhúng trực tiếp vào WordPress mà không cần yêu cầu làm sạch bổ sung.
 
-## Ví dụ sử dụng
+## Ví dụ sử dụng {#usage-example}
 
 **Lời nhắc (Prompt):**
 ```
@@ -62,7 +62,7 @@ Tính năng này tạo ra một logo SVG mà:
 - Tuân theo các nguyên tắc thiết kế hiện đại
 - Được tự động làm sạch và sẵn sàng để sử dụng
 
-## Tích hợp với Theme Builder
+## Tích hợp với Theme Builder {#integration-with-theme-builder}
 
 Khi sử dụng tính năng chọn định hướng thiết kế của Theme Builder, tính năng Tạo Logo SVG:
 
@@ -71,21 +71,21 @@ Khi sử dụng tính năng chọn định hướng thiết kế của Theme Bui
 3. Tự động nhúng logo vào khu vực header/thương hiệu của trang web bạn.
 4. Lưu SVG dưới dạng logo tùy chỉnh trong media của WordPress.
 
-## Các phương pháp tốt nhất
+## Các phương pháp tốt nhất {#best-practices}
 
 - **Cung cấp sở thích phong cách rõ ràng** — mô tả phong cách thiết kế bạn muốn (hiện đại, cổ điển, vui tươi, v.v.).
 - **Chỉ định màu sắc** — bao gồm các màu thương hiệu của bạn để đảm bảo tính nhất quán.
 - **Kiểm tra hiển thị** — xác minh logo hiển thị chính xác trên các kích thước màn hình khác nhau.
 - **Tùy chỉnh thêm** — sử dụng các công cụ tùy chỉnh logo của WordPress để điều chỉnh kích thước và vị trí.
 
-## Hạn chế
+## Hạn chế {#limitations}
 
 - Logo SVG được tạo dưới dạng đồ họa tĩnh (không phải hoạt hình).
 - Các logo phức tạp với nhiều yếu tố có thể yêu cầu tinh chỉnh thủ công.
 - Không hỗ trợ phông chữ tùy chỉnh; văn bản sử dụng phông chữ hệ thống.
 - Kích thước quá lớn hoặc quá nhỏ có thể ảnh hưởng đến chất lượng.
 
-## Các tính năng liên quan
+## Các tính năng liên quan {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — kiểm tra độ tương phản màu sắc để đảm bảo khả năng tiếp cận
 - [Create Menu](./create-menu.md) — tạo menu điều hướng cho trang web của bạn

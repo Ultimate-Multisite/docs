@@ -3,7 +3,7 @@ title: Kuthandiza API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API ya Ultimate Multisite Register
+# API ya Ultimate Multisite Register {#the-ultimate-multisite-register-api-endpoint}
 
 M'mwa m'mwa, mu tutorial uliyipeza kuti muli ndi chifukwa chomwe mudzindikire kuti muli bwanji muli ndi kukhazikira njira yomwe imapangidwa ndi Ultimate Multisite /register API endpoint. Kodi muli bwanji muli ndi Zapier?
 
@@ -29,11 +29,11 @@ Muli ndi **Enable API** ndipo mwagwira API credentials yanu.
 
 Nkhawa, tili ndi kukhazikira endpoint ndipo tikupatsa action ya registration m'Zapier.
 
-## Parameters za body ya endpoint
+## Parameters za body ya endpoint {#endpoint-body-parameters}
 
 Tili ndi chitsanzo cha zinthu zofunika kwambiri zomwe tikufunsa kuti tipangidwe ku endpoint. M'moyo wopereka, mudzindikira tsiku lomwe muli ndi call yomwe yomwe.
 
-### Customer
+### Customer {#customer}
 
 Iyi ndi mawu omwe ali kukhazikira kuti tipangidwe User ndi Customer wa Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Kodi yomwe kuli wosha ID wa mwanawo ulioperekera mu mtandawuni wanu. Ngati osali
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Chinthu cha m'malo chiyembekeza ndi Membership Status.
 
 "membership" { "status" : "string", // monga "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products zimaperekedwa array ndi ID ya product yomwe ndi 1 kapena zambiri ku mtandawuni wanu. Kuti mwayi, endpoint ili liyenera kuti mwayi kuti muwone bwino endpoint la kupanga products. Ngati mukuwona bwanji endpoint la kupanga products, mwayi Ultimate Multisite.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Monga ndi Membership, tikufuna status chake.
 
 **"payment" { "status" : "string", // monga "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Kuti tikhazikire, tikufuna URL ndi Titolo la site lili m'malo ndani ya Site object.
 
@@ -69,13 +69,13 @@ Kuti tikhazikire, tikufuna URL ndi Titolo la site lili m'malo ndani ya Site obje
 
 Mwayi wopereka (return) wa endpoint la register ulipereka array lomwe ndi membership info yomwe yaliyo yosha.
 
-## Kupanga action m'Zapier
+## Kupanga action m'Zapier {#creating-an-action-in-zapier}
 
 Ndi chifukwa cha kuperekera endpoint wosha ndi wamphamvu wopanga account, mudzakhala ndi action yosha m'Zapier.
 
 Mukuona bwanji mwayi ndi kusangalala ndi zomwe Zapier ya nyengo imapereka? Ngati mukuona bwanji, mwayi pano. (link?)
 
-### Kupanga action
+### Kupanga action {#creating-an-action}
 
 Kuti kuti mukuona bwanji momwe mungakuseka registration endpoint ndi Zapier? Tiyenera kupanga integration ndi Google Forms. Kuti nthawi zonse imene form ili yendweridwa ndipo maphunziro ali kukhazikidwa m'answer sheet ya form, kukhala membership watsopano mudzakhazikidwa m'Ultimate Multisite network.
 
@@ -105,7 +105,7 @@ Ndikupanga m'ndau, ndapita ku chitsogo chake. Ku chitsogo chake, muli mufufuza z
 
 Maphunza zapwiri (Zap) wanu ndikufufuze, ndipo kudzipereka kwake kuli ndi kuyendera bwino. Ngati muli ndi mavuto, muli mufufuza zonse za fields kuti zikupereke bwino. Kukhala ndi zinthu zingapo zambiri, chidziwitsa zomwe sikuyenera kupeza.
 
-### Zinthu zonse za endpoint parameters
+### Zinthu zonse za endpoint parameters {#complete-endpoint-parameters}
 
 Iyi ndi kulemba komanso zonse zomwe mungupereke.
 

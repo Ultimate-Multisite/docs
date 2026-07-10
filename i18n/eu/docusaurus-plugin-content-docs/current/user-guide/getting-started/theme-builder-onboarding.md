@@ -3,11 +3,11 @@ title: Tema Builder-aren introduktua flujoa
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduce batua **Theme Builder onboarding flow** (prozesua-erregistroa) eta gure lehen eskaintzaren artean, moduaa espezializatuta tema bat dezake duzun modu guiaatzen du. Horrek eskien Site Builder modua iragatik, agent-berri eta modu erabilgarri batekin erantzuten du.
 
-## Zer da Theme Builder Onboarding Flow?
+## Zer da Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow (prozesua-erregistroa) da interactive setup wizard bat da, zein:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow (prozesua-erregistroa) da interactive setup wizard
 
 Flowa **Setup Assistant agent** (Eskaintza Aurretarri agent) batekin erabil da, zein iragailu eta tema bat gradientean ezartzen du.
 
-## Theme Builder Onboarding-aren Hautala
+## Theme Builder Onboarding-aren Hautala {#starting-the-theme-builder-onboarding}
 
-### Lehen Erregistroa (First-Run Setup)
+### Lehen Erregistroa (First-Run Setup) {#first-run-setup}
 
 WordPress instalazio berria Superdav AI Agent lehen aldiz erabilduenean, hiru iragatik aurkitu duzu:
 
@@ -37,7 +37,7 @@ Zer egin nahi du?
 
 **"Tema bat dezake"** (Build a custom theme) aukera hautatu behar du Theme Builder onboarding flow-ra sartzeko.
 
-### Manual Aktibazioa
+### Manual Aktibazioa {#manual-activation}
 
 Bestean ere, edinean jakin denean Theme Builder onboarding-aren lehen aldiz erabil dezake:
 
@@ -51,9 +51,9 @@ edo
 "Help me create a custom theme"
 ```
 
-## Onboarding-aren Iragailuak (The Onboarding Steps)
+## Onboarding-aren Iragailuak (The Onboarding Steps) {#the-onboarding-steps}
 
-### Iragailua 1: Modua Hautzea (Mode Selection)
+### Iragailua 1: Modua Hautzea (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agenta iragailu du zure preferentziaz:
 
@@ -65,7 +65,7 @@ Zer moduan egin nahi du tema bat dezake?
 
 **Guia modu**a (Guided mode) gure erabiltzaile guztietatik hautatuta dago; agenta zure industria eta objetivo horiek onboatu design rekomendazioak ematen du.
 
-### Iragailua 2: Site-aren Espezifikazioa (Site Specification)
+### Iragailua 2: Site-aren Espezifikazioa (Site Specification) {#step-2-site-specification}
 
 Zure site berri ezagutzeko eskatzen da:
 
@@ -75,7 +75,7 @@ Zure site berri ezagutzeko eskatzen da:
 
 Hau informazioak **site_brief** memori-an ematen dira, zehar erabiliko dituzte.
 
-### Irrenditua 3: Design System erabakiak
+### Irrenditua 3: Design System erabakiak {#step-3-design-system-decisions}
 
 Agenteak design token-ekonbideak gurekin batzuk egitean induzirazten:
 
@@ -83,7 +83,7 @@ Agenteak design token-ekonbideak gurekin batzuk egitean induzirazten:
 - **Kolore paleta**: Nagusia, ikuspetsa, akentua eta neutral koloreak
 - **Espazioa**: Compactu, normal edo espazio handi layout-ek
 
-### Irrenditua 4: Theme Generazioa
+### Irrenditua 4: Theme Generazioa {#step-4-theme-generation}
 
 Setup Assistant agenteak design token guztietan hartuta irrenditua (scaffold) egiten duzu custom block theme-a:
 
@@ -92,7 +92,7 @@ Setup Assistant agenteak design token guztietan hartuta irrenditua (scaffold) eg
 - Design systemare ondikan batzen duen custom block style-ak
 - Theme metadata eta WordPress suporta deklarazioak
 
-### Irrenditua 5: Aktibazioa eta Bidezkaegia
+### Irrenditua 5: Aktibazioa eta Bidezkaegia {#step-5-activation-and-verification}
 
 Theme-ak otomatikoki aktibatzen dira, eta hiru iragatik erabiliz piztu duzu:
 
@@ -107,7 +107,7 @@ Theme-ak otomatikoki aktibatzen dira, eta hiru iragatik erabiliz piztu duzu:
 
 Ondore, theme-a lehenengatik erabiliz bidezkaegia daiteke ikustea.
 
-## Site Especificazioa eta site_brief Memoria
+## Site Especificazioa eta site_brief Memoria {#site-specification-and-sitebrief-memory}
 
 Onboarding-ean, agenteak sitearen spesifikazioa **site_brief** memori kategorian hartzen duzu. Horrek barne dut:
 
@@ -117,18 +117,18 @@ Onboarding-ean, agenteak sitearen spesifikazioa **site_brief** memori kategorian
 - Design preferentziak
 - Kontuentuaren estructura
 
-### Site_brief-ek zer eskerrak?
+### Site_brief-ek zer eskerrak? {#why-sitebrief-matters}
 
 Ondorekin, agenteak site_brief-era erabiliz:
 
-### Designa zeenezarearen daiteko
+### Designa zeenezarearen daiteko {#viewing-your-sitebrief}
 
 *   Aldakileetan diseinu batzuk onartu behar duzu.
 *   Site-aren objektuarekin batzuk jatorbatzen menn dizkio.
 *   Kontestu-erakundea onartzeko emateak egin dezakezu.
 *   Setup gailaupena ez duzu iradokizun berriz.
 
-### Site-aren txosten zehaztea ikusteko
+### Site-aren txosten zehaztea ikusteko {#customizing-after-onboarding}
 
 Agenteari gure site-aren txosten ezagututako informazioa galduria:
 
@@ -144,11 +144,11 @@ noki, edo
 
 Agentiaren daiteko site-aren zehaztea emateko.
 
-## Onboardingaren ondoren diseinatu
+## Onboardingaren ondoren diseinatu {#use-the-design-system-aesthetics-skill}
 
 Theme Builder onboardinga amaitu ondoren, hauek egin dezakezu:
 
-### Design System Aesthetics skill-a erabiliz
+### Design System Aesthetics skill-a erabiliz {#edit-themejson-directly}
 
 Diseinuak onartzeko eskatzen dituztezu:
 
@@ -164,7 +164,7 @@ noki, edo
 
 **Design System Aesthetics skill-a** daiteke ditu design update-ak targetatuta erabiliz.
 
-### theme.json-a direktu egiten
+### theme.json-a direktu egiten {#create-custom-block-templates}
 
 Advanced user-ek, `/wp-content/themes/[theme-name]/theme.json` editu dezake luzean:
 
@@ -173,7 +173,7 @@ Advanced user-ek, `/wp-content/themes/[theme-name]/theme.json` editu dezake luze
 *   Espazioen (spacing) jarduerak
 *   Bordes eta sombra definizioak
 
-### Custom Block Templates sortzeko
+### Custom Block Templates sortzeko {#comparison-old-vs-new-onboarding}
 
 WordPress block editora erabiliz sortu egin dezakezu custom templates hauek bitartean:
 
@@ -182,7 +182,7 @@ WordPress block editora erabiliz sortu egin dezakezu custom templates hauek bita
 *   Product pages
 *   Contact forms
 
-## Hautala: Begoera vs. Berria Onboardinga
+## Hautala: Begoera vs. Berria Onboardinga {#troubleshooting}
 
 | Karakteristika | Site Builder (Begoera) | Theme Builder (Berria) |
 | :--- | :--- | :--- |
@@ -192,7 +192,7 @@ WordPress block editora erabiliz sortu egin dezakezu custom templates hauek bita
 | Flexibilidad | Opsio batzuk fijoak | Erabiltzen dituen |
 | Update-ak iraupiztzeko | Ez dago referentzia | site_briefan ematen daiteke |
 
-## Problema ezarpenak (Troubleshooting)
+## Problema ezarpenak (Troubleshooting) {#next-steps}
 
 **Onboarding flowa amaitu ez du**
 *   Flowa berriro aurkitu: "Start the Theme Builder onboarding"

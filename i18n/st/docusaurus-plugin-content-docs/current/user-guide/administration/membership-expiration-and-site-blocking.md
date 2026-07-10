@@ -4,11 +4,11 @@ sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
 
-# Ho Felisoa ha Setho le Ho Thibela Sebaka sa Wepe
+# Ho Felisoa ha Setho le Ho Thibela Sebaka sa Wepe {#membership-expiration-and-site-blocking}
 
 Tataiso ena e hlalosa kamoo Ultimate Multisite e sebetsanang le ho fela ha setho, ho fela ha nako ea teko, le ho thibela frontend ea sebaka sa wepe. E akaretsa tsela eo setho se fetohang ka eona ho tloha ho `active` ho ea ho `expired`, litlhophiso tse laolang hore na libaka li thibeloa kapa che, le seo u lokelang ho se hlahloba ha sebaka se ntse se fumaneha le hoja setho se se se felile.
 
-## Mokhoa oa ho Fetoha ha Boemo ba Setho
+## Mokhoa oa ho Fetoha ha Boemo ba Setho {#membership-status-lifecycle}
 
 Setho ka seng sa Ultimate Multisite se na le e 'ngoe ea maemo ana:
 
@@ -25,7 +25,7 @@ Litshebeletso tsa mahala ha li fele ka boona. Ultimate Multisite e li nka e le p
 | **Expired** | E feta letsatsi la ho fela le nako ea mohau ntle le tefo |
 | **Cancelled** | E tlositsoe ka boomo ke moreki kapa mookameli |
 
-### Kamoo Setho se Fetohetseng ho Expired
+### Kamoo Setho se Fetohetseng ho Expired {#how-memberships-transition-to-expired}
 
 Ultimate Multisite e tsamaisa tlhahlobo e etsahalang **hora e 'ngoe le e 'ngoe** e shebang litshebeletso tse lokelang ho tšoauoa e le `expired`. Tlhahlobo ena e sebelisa [Action Scheduler](https://actionscheduler.org/) (eseng WP-Cron ka kotloloho) mme e tsamaisoa e le ketso e hlophisitsoeng `wu_membership_check`.
 
@@ -35,14 +35,14 @@ Tlhahlobo ea ho fela e na le **nako ea mohau ea matsatsi a 3** ka boiketsetso. S
 Nako ea mohau ea matsatsi a 3 e arohane le `Frontend Block Grace Period` e hlalositsoeng ka tlase. Nako ea mohau ea pele e laola hore na boemo bo fetoha neng ho tloha ho active/on-hold ho ea ho expired. Frontend block grace period e laola hore na **sebaka seo sa wepe** se koalloa neng kamora hore boemo bo se bo fetohe.
 :::
 
-#### Litshebeletso tsa Ho nchafatsoa ka boikhethelo vs tse sa nchafatsoang ka boikhethelo
+#### Litshebeletso tsa Ho nchafatsoa ka boikhethelo vs tse sa nchafatsoang ka boikhethelo {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Phapang ena e bohlokoa ho utloisisa boits'oaro ba ho fela:
 
 - **Litshebeletso tse sa inchafatseng ka bo tsona** (`auto_renew = false`): mosebetsi o etsahalang ka hora o laola tsela eohle -- o etsa litefo tsa nchafatso, o fetola setho ho `on-hold`, ebe qetellong o se tšoaea e le `expired` haeba tefo e sa amoheloe.
 - **Litshebeletso tse inchafatsang ka bo tsona** (`auto_renew = true`): tlhahlobo ea hora ea ho fela **e li tlohela ka ho feletseng**. Gateway ea tefo (Stripe, PayPal, jj.) e lokela ho tsebisa Ultimate Multisite ka webhook ha subscription e hloleha kapa e hlakoloa. Ha webhook e sa fihle (ha endpoint e sa hlophisoa hantle, gateway e e-na le bothata, kapa subscription e hlakotsoe kantle ho sistimi), setho se ka sala `active` ka nako e telele leha letsatsi la ho fela le se le fetile.
 
-### Kamoo Nako ea Teko e Felang
+### Kamoo Nako ea Teko e Felang {#how-trials-end}
 
 Ha setho se le `trialing` 'me nako ea sona ea teko e fela, sistimi e:
 
@@ -52,11 +52,11 @@ Ha setho se le `trialing` 'me nako ea sona ea teko e fela, sistimi e:
 
 Ts'ebetso ena e matha ka kemiso e tšoanang ea hora le tlhahlobo ea ho fela e tloaelehileng, empa **e sebetsa feela ho litshebeletso tse sa inchafatseng ka bo tsona**. Bakeng sa litshebeletso tse inchafatsang ka bo tsona, gateway ea tefo e laola phetoho ho tloha tekong ho ea ho subscription e lefuoang.
 
-## Ho thibela phihlello ea Frontend
+## Ho thibela phihlello ea Frontend {#block-frontend-access}
 
 Ka boiketsetso, ha setho se felile kapa se le `on-hold`, **dashboard ea wp-admin feela e thibeloa**. Frontend ea sebaka sa wepe e ntse e fumaneha ho baeti. Ho thibela le phihlello ea sechaba, o lokela ho kenya tshebetsong kgetho ea **Block Frontend Access**.
 
-### Ho Hlophisa Kgetho ena
+### Ho Hlophisa Kgetho ena {#configuring-the-setting}
 
 Eya ho **Ultimate Multisite > Settings > Memberships** ebe o kenya tshebetsong **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Litlhophiso tsena tse tharo tse amanang li laola boits’oaro bona:
 | **Frontend Block Grace Period** | Palo ea matsatsi a ho ema pele ho thibeloa kamora hore membership e se hlole e sebetsa. Beha `0` ho thibela hang-hang. | 0 |
 | **Frontend Block Page** | Leqephe la sebaka se seholo sa main site leo baeti ba tla romelloa ho lona ha sebaka se koetsoe. Ha e sa beoa, baeti ba bona molaetsa o ka sehloohong: "Site not available". | None |
 
-### Seo Baeti ba se Bonang ha Sebaka se Koetsoe
+### Seo Baeti ba se Bonang ha Sebaka se Koetsoe {#what-visitors-see-when-a-site-is-blocked}
 
 Ha frontend e koetsoe, baeti ba sebakeng ba tla fumana ho hong ho latelang:
 
@@ -83,7 +83,7 @@ Ha frontend e koetsoe, baeti ba sebakeng ba tla fumana ho hong ho latelang:
 
 Balaoli ba sebaka ba ntse ba ka kena -- leqephe la login ha le koaloe.
 
-### Ke eng e Thibetsweng le ka Nako efe
+### Ke eng e Thibetsweng le ka Nako efe {#what-gets-blocked-and-when}
 
 Boits’oaro ba thibelo bo itšetleha ka boemo ba setho:
 
@@ -104,28 +104,28 @@ Leha nako ea teko e se e feta, setho se nang le boemo `trialing` **se ke ke** sa
 Litshebeletso tse Cancelled li koetsoe kamehla hang ha letsatsi la ho fela le feta, ho sa tsotellehe hore `Block Frontend Access` e buletse kapa che. Nako ea mohau ea Frontend Block ha e sebelisoe bakeng sa litshebeletso tse Cancelled.
 :::
 
-## Ho Rarolla Mathata: Sebaka se ntse se fumaneha ka mor’a ho fela ha setho
+## Ho Rarolla Mathata: Sebaka se ntse se fumaneha ka mor’a ho fela ha setho {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ha sebaka se ntse se fumaneha phatlalatsa leha setho se se se felile, latela mehato ena ka tatellano:
 
-### 1. Netefatsa hore kgetho ea Block Frontend Access e kentsoe
+### 1. Netefatsa hore kgetho ea Block Frontend Access e kentsoe {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Eya ho **Ultimate Multisite > Settings > Memberships** mme u netefatse hore toggle ea **Block Frontend Access** e buletsoe. Ka boiketsetso, tlhophiso ena e **off**, ho bolelang hore ke wp-admin feela e thibeloang ha setho se se hlole se sebetsa.
 
-### 2. Lekola Frontend Block Grace Period
+### 2. Lekola Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Ho leqephe leo le tšoanang, hlahloba boleng ba **Frontend Block Grace Period**. Haeba e behiloe ho matsatsi a 7, joalo ka mohlala, frontend ha e koaloe hang ha setho se felile -- e nka matsatsi a 7 kamora letsatsi la ho fela, leha boemo bo se bo `expired`.
 
 Beha sena ho `0` haeba u batla hore thibelo e etsahale hanghang ha membership e se e sa sebetse.
 
-### 3. Netefatsa hore Boemo ba Setho bo Fetohile Kannete
+### 3. Netefatsa hore Boemo ba Setho bo Fetohile Kannete {#3-confirm-the-membership-status-has-actually-changed}
 
 Eya ho **Ultimate Multisite > Memberships** ebe u hlahloba boemo ba setho se amehang. Haeba bo ntse bo bontša `active` leha letsatsi la ho fela le se le fetile, phetoho ea boemo ha e so etsahale. Mabaka a tloaelehileng:
 
 - **Setho se inchafatsa ka bohona**: Hlahloba sebaka sa `auto_renew` ho leqephe la ho hlophisa setho. Ha auto-renew e buletsoe, cron ea ho fela e tlohela setho sena -- e itšetleha ka payment gateway ho tlaleha ho hloleha. Sheba dashboard ea gateway (Stripe, PayPal) ho netefatsa hore boemo ba subscription bo tsamaellana le seo Ultimate Multisite se bo bonts'ang.
 - **Cron job ha e so sebetse**: Bona mohato o latelang.
 
-### 4. Netefatsa hore Action Scheduler e sebetsa
+### 4. Netefatsa hore Action Scheduler e sebetsa {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite e sebelisa Action Scheduler bakeng sa cron jobs tsa eona. Eya ho **Tools > Scheduled Actions** ho network admin ebe u hlahloba:
 
@@ -147,7 +147,7 @@ Ho netefatsa hore cron e sebetsa ka nepo, hlophisa cron ea tsamaiso:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Hlahloba mathata a webhook a gateway (litshebeletso tse auto-renewing)
+### 5. Hlahloba mathata a webhook a gateway (litshebeletso tse auto-renewing) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ha setho se le auto-renewing 'me subscription ea gateway e hlakotsoe kapa e hlolehile, empa Ultimate Multisite e ntse e bontša `active`:
 
@@ -156,7 +156,7 @@ Ha setho se le auto-renewing 'me subscription ea gateway e hlakotsoe kapa e hlol
 
 Haeba gateway e bontša subscription e hlakotsoe empa Ultimate Multisite e se e sa e bontše, temoso ea webhook e ka be e lahlehile. O ka fetola boemo ba setho ka letsoho ho **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Hlahloba Grace Period ea ho fela (Boemong ba Cron)
+### 6. Hlahloba Grace Period ea ho fela (Boemong ba Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron check e na le nako ea eona ea mohau ka boiketsetso (ka boiketsetso: matsatsi a 3) pele e tšoaea setho e le expired. Sena se arohane le Frontend Block Grace Period. Nako e felletseng pele sebaka se koaloe e ka ba:
 
@@ -164,7 +164,7 @@ Cron check e na le nako ea eona ea mohau ka boiketsetso (ka boiketsetso: matsats
 
 Mohlala, haeba u na le maemo a tloaelehileng le frontend block grace period ea matsatsi a 7, ho ka nka matsatsi a 10 ka mor’a `date_expiration` pele sebaka sa wepe se thibeloa.
 
-### 7. Fetola setho ka letsoho
+### 7. Fetola setho ka letsoho {#7-manually-expire-a-membership}
 
 Haeba u hloka ho koalla sebaka ka potlako ntle le ho emela potoloho ea cron, u ka fetola boemo ba setho ka letsoho:
 
@@ -175,7 +175,7 @@ Haeba u hloka ho koalla sebaka ka potlako ntle le ho emela potoloho ea cron, u k
 
 Thibelo ea frontend e tla sebetsa ha leqephe le hlahisoa hape (e ka latela Frontend Block Grace Period bakeng sa expired, kapa hanghang bakeng sa cancelled).
 
-## Kakaretso
+## Kakaretso {#summary}
 
 Mokhoa o felletseng ho tloha ho letsatsi la ho fela ho ea ho koalo ea sebaka:
 
@@ -207,7 +207,7 @@ Bakeng sa litshebeletso tse Cancelled, tsela e khutšoanyane:
    Frontend e koaloa hanghang
 ```
 
-## Referense ea Moqapi
+## Referense ea Moqapi {#developer-reference}
 
 Litaelo le lifilters tse latelang li u thusa ho fetola boits'oaro ba ho fela le ho koaloa:
 

@@ -3,15 +3,15 @@ title: chuck norris तथ्ये बदल नोंदी
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts बदलांचा इतिहास
+# Chuck Norris Facts बदलांचा इतिहास {#chuck-norris-facts-changelog}
 
-### 1.0.1 - 2025-11-03
+### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * जोडले: Ultimate Multisite update server द्वारे स्वयंचलित अपडेट कार्यक्षमता
 * अद्ययावत केले: WordPress 6.6 पर्यंत चाचणी केली
 * अद्ययावत केले: composer autoloader सह प्लगइनची रचना सुधारली
 * अद्ययावत केले: आधुनिक WordPress इंस्टॉलेशनसह सुसंगतता वाढवली
 
-### 1.0.0 - 2024-10-21
+### 1.0.0 - 2024-10-21 {#100---2024-10-21}
 * पहिली आवृत्ती
 * ११०+ Chuck Norris facts
 * संपूर्ण भाषांतर समर्थन

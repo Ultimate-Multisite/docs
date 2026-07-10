@@ -3,11 +3,11 @@ title: Site Specificatie Vaardigheid
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specificatie Vaardigheid
+# Site Specificatie Vaardigheid {#site-specification-skill}
 
 De **Site Specificatie vaardigheid** is een gestructureerde aanpak om de doelen, de doelgroep en de merkidentiteit van je site vast te leggen. Deze informatie wordt opgeslagen in je **site_brief** geheugen, dat agenten gebruiken tijdens verschillende sessies om consistente, contextgerichte hulp te bieden.
 
-## Wat is Site Specificatie?
+## Wat is Site Specificatie? {#what-is-site-specification}
 
 Site Specificatie is het proces van het documenteren van:
 
@@ -19,9 +19,9 @@ Site Specificatie is het proces van het documenteren van:
 
 Deze specificatie wordt je **site_brief**, een blijvend geheugen dat agenten gebruiken om de context van je site te begrijpen.
 
-## Waarom Site Specificatie gebruiken?
+## Waarom Site Specificatie gebruiken? {#why-use-site-specification}
 
-### Consistentie over Sessies heen
+### Consistentie over Sessies heen {#consistency-across-sessions}
 
 Zonder site_brief zou je bij elke nieuwe sessie je site-doelstellingen opnieuw hoeven uit te leggen. Met deze brief begrijpen agenten onmiddellijk:
 
@@ -30,7 +30,7 @@ Zonder site_brief zou je bij elke nieuwe sessie je site-doelstellingen opnieuw h
 - Je contentstructuur
 - Je bedrijfsdoelstellingen
 
-### Betere Aanbevelingen
+### Betere Aanbevelingen {#better-recommendations}
 
 Agenten gebruiken je site_brief om:
 
@@ -39,17 +39,17 @@ Agenten gebruiken je site_brief om:
 - Ontwerpen voor te stellen die consistent zijn met je merk
 - Te voorkomen dat er incompatibele functionaliteiten worden voorgesteld
 
-### Snellere Opstarttijd
+### Snellere Opstarttijd {#faster-onboarding}
 
 Nieuwe agenten (of agenten in nieuwe sessies) kunnen snel op de hoogte zijn door je site_brief te lezen, in plaats van dat er verduidelijkende vragen gesteld moeten worden.
 
-## Site Specificatie starten
+## Site Specificatie starten {#initiating-site-specification}
 
-### Tijdens Theme Builder Onboarding
+### Tijdens Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 De Site Specificatie vaardigheid wordt automatisch gestart tijdens de **Theme Builder onboarding flow**. De Setup Assistant agent stelt vragen en bouwt je site_brief.
 
-### Handmatig starten
+### Handmatig starten {#manual-initiation}
 
 Je kunt Site Specificatie op elk moment starten:
 
@@ -63,9 +63,9 @@ of
 "Help me een site brief te creëren"
 ```
 
-## Het Site Specificatie Proces
+## Het Site Specificatie Proces {#the-site-specification-process}
 
-### Stap 1: Doel van de site
+### Stap 1: Doel van de site {#step-1-site-purpose}
 
 De agent vraagt:
 
@@ -81,7 +81,7 @@ Wat is het primaire doel van je site?
 
 Je kunt een categorie selecteren of je eigen doel beschrijven.
 
-### Stap 2: Doelgroep
+### Stap 2: Doelgroep {#step-2-target-audience}
 
 ```
 Wie is je primaire doelgroep?
@@ -94,7 +94,7 @@ Wie is je primaire doelgroep?
 Wat zijn hun belangrijkste behoeften?
 ```
 
-### Stap 3: Merkidentiteit
+### Stap 3: Merkidentiteit {#step-3-brand-identity}
 
 ```
 Wat zijn je merk-kleuren?
@@ -110,7 +110,7 @@ Hoe zou je je merktoon omschrijven?
 - Warm / vriendelijk
 ```
 
-### Stap 4: Bedrijfsdoelstellingen
+### Stap 4: Bedrijfsdoelstellingen {#step-4-business-goals}
 
 ```
 Hoe ziet succes eruit voor je site?
@@ -129,7 +129,7 @@ Wat is je primaire meetwaarde?
 - Anders
 ```
 
-### Stap 5: Contentstructuur
+### Stap 5: Contentstructuur {#step-5-content-structure}
 
 ```
 Hoe is je content georganiseerd?
@@ -148,7 +148,7 @@ Welke contenttypen gebruik je?
 - Anders
 ```
 
-## Je site_brief Geheugen
+## Je site_brief Geheugen {#your-sitebrief-memory}
 
 Nadat je de Site Specificatie hebt voltooid, wordt je informatie opgeslagen als **site_brief** in het geheugen van je agent. Dit is een gestructureerd record met:
 
@@ -169,9 +169,9 @@ Nadat je de Site Specificatie hebt voltooid, wordt je informatie opgeslagen als 
 }
 ```
 
-## Je site_brief bekijken en bijwerken
+## Je site_brief bekijken en bijwerken {#viewing-and-updating-your-sitebrief}
 
-### Je site_brief bekijken
+### Je site_brief bekijken {#view-your-sitebrief}
 
 Vraag de agent:
 
@@ -187,7 +187,7 @@ of
 
 De agent toont je opgespecificeerde informatie.
 
-### Je site_brief bijwerken
+### Je site_brief bijwerken {#update-your-sitebrief}
 
 Als je site verandert, kun je deze bijwerken:
 
@@ -203,9 +203,9 @@ of
 
 Dit voert de Site Specificatie vaardigheid opnieuw uit, waarbij je bestaande informatie als startpunt wordt gebruikt.
 
-## Hoe Agenten site_brief gebruiken
+## Hoe Agenten site_brief gebruiken {#how-agents-use-sitebrief}
 
-### Ontwerpaanbevelingen
+### Ontwerpaanbevelingen {#design-recommendations}
 
 Wanneer je om ontwerpwijzigingen vraagt, verwijst de agent naar je site_brief:
 
@@ -216,7 +216,7 @@ met een warm, ambachtelijk gevoel. Ik ga een ontwerp creëren dat
 jouw handgemaakte sieraden en duurzame waarden benadrukt."
 ```
 
-### Functionaliteit Suggesties
+### Functionaliteit Suggesties {#feature-suggestions}
 
 Agenten stellen functionaliteiten voor die aansluiten bij je doelen:
 
@@ -227,7 +227,7 @@ raad ik aan: een loyaliteitsprogramma, klantrecensies, een e-mailnieuwsbrief
 en productaanbevelingen."
 ```
 
-### Contentstructuur
+### Contentstructuur {#content-structure}
 
 Agenten stellen contentorganisatie voor op basis van je structuur:
 
@@ -238,16 +238,16 @@ om berichten te organiseren per productcategorie en 'stylinggidsen' te maken
 die meerdere producten samen tonen."
 ```
 
-## Beste Praktijken
+## Beste Praktijken {#best-practices}
 
-### Wees Specifiek
+### Wees Specifiek {#be-specific}
 
 In plaats van "algemeen publiek," beschrijf je je werkelijke doelgroep:
 
 - ✓ "Vrouwen van 25-45 jaar, geïnteresseerd in duurzame mode"
 - ✗ "Iedereen"
 
-### Regelmatig Bijwerken
+### Regelmatig Bijwerken {#update-regularly}
 
 Naarmate je site evolueert, update je je site_brief:
 
@@ -256,14 +256,14 @@ Naarmate je site evolueert, update je je site_brief:
 - Wanneer je merkidentiteit verandert
 - Wanneer je bedrijfsdoelstellingen verschuiven
 
-### Gebruik Consistente Terminologie
+### Gebruik Consistente Terminologie {#use-consistent-terminology}
 
 Gebruik dezelfde termen in verschillende sessies:
 
 - ✓ Zeg altijd "duurzaam sieraad" (niet "milieuvriendelijk sieraad" en "groene producten")
 - ✓ Verwijs consequent naar je doelgroep op dezelfde manier
 
-### Voeg Context Toe
+### Voeg Context Toe {#include-context}
 
 Geef achtergrondinformatie die agenten helpt bij het begrijpen van je beslissingen:
 
@@ -271,7 +271,7 @@ Geef achtergrondinformatie die agenten helpt bij het begrijpen van je beslissing
 - "Onze doelgroep is technisch onderlegd en verwacht modern design"
 - "We zijn een start-up met beperkt budget, dus we hebben kosteneffectieve oplossingen nodig"
 
-## Relatie tot Theme Builder Onboarding
+## Relatie tot Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 De Site Specificatie vaardigheid is geïntegreerd in de **Theme Builder onboarding flow**. Wanneer je de onboarding voltooit, wordt je site_brief automatisch aangemaakt met de informatie die je hebt verstrekt.
 
@@ -281,7 +281,7 @@ Je kunt Site Specificatie ook onafhankelijk uitvoeren als je dat wilt:
 - Je site brief bijwerken naarmate je site evolueert
 - Een gedetailleerde specificatie creëren voordat je met Theme Builder begint
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **Mijn site_brief wordt niet gebruikt**
 - Bevestig of de agent toegang heeft tot het geheugen
@@ -297,7 +297,7 @@ Je kunt Site Specificatie ook onafhankelijk uitvoeren als je dat wilt:
 - Update je site_brief als deze verouderd is
 - Geef aanvullende context in je verzoeken
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat je je site specificatie hebt gedefinieerd:
 

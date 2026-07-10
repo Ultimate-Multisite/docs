@@ -3,9 +3,9 @@ title: Kuhamia kutoka V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Kuhama kutoka V1
+# Kuhama kutoka V1 {#migrating-from-v1}
 
-## Ultimate Multisite imebadilika kutoka toleo la awali la 1.x hadi toleo la 2.x.
+## Ultimate Multisite imebadilika kutoka toleo la awali la 1.x hadi toleo la 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite toleo la 2.0 na zaidi ni uandikaji mpya kabisa wa msimbo, ikimaanisha kwamba hakuna mengi yanayofanana kati ya toleo la zamani na jipya. Kwa sababu hiyo, unapoboresha kutoka 1.x hadi 2.x, data yako itahitaji kuhamishwa kwenye muundo ambao matoleo mapya yanaweza kuelewa.
 
@@ -15,7 +15,7 @@ Somo hili linashughulikia jinsi kihamishaji kinavyofanya kazi, nini cha kufanya 
 
 _**MUHIMU: Kabla ya kuanza kuboresha kutoka toleo la 1.x hadi 2.0 tafadhali hakikisha umeunda nakala rudufu ya hifadhidata ya tovuti yako**_
 
-## Hatua za kwanza
+## Hatua za kwanza {#first-steps}
 
 Hatua ya kwanza ni kupakua faili ya .zip ya plugin na kusakinisha toleo la 2.0 kwenye dashibodi ya msimamizi wa mtandao wako.
 
@@ -51,7 +51,7 @@ Baada ya kuwezesha leseni, unaweza kuanza usakinishaji halisi kwa kubofya **Inst
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Sasa, uhamishaji
+## Sasa, uhamishaji {#now-the-migration}
 
 Kihamishaji kina kipengele cha usalama kilichojengwa ndani ambapo kitakagua multisite yako yote kuhakikisha kwamba data yako yote ya Ultimate Multisite inaweza kuhamishwa bila matatizo yoyote. Bofya kitufe cha **Run Check** ili kuanza mchakato.
 
@@ -59,13 +59,13 @@ Kihamishaji kina kipengele cha usalama kilichojengwa ndani ambapo kitakagua mult
 
 Baada ya kukagua, una uwezekano wa mambo mawili: matokeo yanaweza kuwa **na** hitilafu au **bila hitilafu**.
 
-### Na Hitilafu
+### Na Hitilafu {#with-error}
 
 Ikiwa utapata ujumbe wa hitilafu, utahitaji kuwasiliana na timu yetu ya msaada ili wakusaidie kurekebisha hitilafu hiyo. Hakikisha **unatoa kumbukumbu ya hitilafu** unapounda tiketi. Unaweza kupakua kumbukumbu au unaweza kubofya kiungo kinachosema contact our support team. Itafungua wijeti ya msaada upande wa kulia wa ukurasa wako na sehemu zilizojazwa tayari kwa ajili yako ambazo zinajumuisha kumbukumbu za hitilafu chini ya maelezo.
 
 _**Kwa kuwa mfumo umepata hitilafu, hutaweza kuendelea kuhama hadi toleo la 2.0. Unaweza kurudi nyuma hadi toleo la 1.x kuendelea kuendesha mtandao wako hadi hitilafu irekebishwe.**_
 
-### Bila Hitilafu
+### Bila Hitilafu {#without-error}
 
 Ikiwa mfumo haupati hitilafu yoyote, utaona ujumbe wa mafanikio na kitufe cha **Migrate** chini ambacho kitakuruhusu kuendelea na uhamishaji. Kwenye ukurasa huu, utakumbushwa kuunda nakala rudufu ya hifadhidata yako kabla ya kuendelea, jambo tunalolipendekezea sana. Bofya **Migrate** ikiwa tayari una nakala rudufu.
 

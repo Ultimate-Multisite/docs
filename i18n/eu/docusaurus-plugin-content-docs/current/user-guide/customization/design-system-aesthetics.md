@@ -3,11 +3,11 @@ title: Disain-sistema estetikak gogorpen artea
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Dizain Systemaren Estetika Jain
+# Dizain Systemaren Estetika Jain {#design-system-aesthetics-skill}
 
 **Design Systemaren Estetika** da metodo garrantzatu bat da irudiari sitiatun estetikak hobetzeko. Design systemaren definizioa dela ematen tipografia, kolorrak, espazioak eta motion tokens (erreguntzak) bidez erabaki egitean laguntzen du.
 
-## Zer da Design Systemaren Estetika?
+## Zer da Design Systemaren Estetika? {#what-is-design-system-aesthetics}
 
 Design Systemaren Estetika da espezifikatu bat da eta hiru-kurtu egiten du:
 
@@ -20,9 +20,9 @@ Design Systemaren Estetika da espezifikatu bat da eta hiru-kurtu egiten du:
 
 Haukin erabakiak irudiari sitiatun `theme.json` filean capture dira, estetikoa batena ematen sistema visuelua.
 
-## Zer da Design Systemaren Estetika erebutzea?
+## Zer da Design Systemaren Estetika erebutzea? {#why-use-design-system-aesthetics}
 
-### Kontsustazioa (Consistency)
+### Kontsustazioa (Consistency) {#consistency}
 
 Design systemaren kontsustazioa seguru egiten du:
 
@@ -31,7 +31,7 @@ Design systemaren kontsustazioa seguru egiten du:
 - Espazioak moldura bat erakusten duen moduan jarraitzen du
 - Animazioek batena sentitzen dira
 
-### Efizienz (Efficiency)
+### Efizienz (Efficiency) {#efficiency}
 
 Pagina zehar irudiari sitiatun erabaki ez egitean, daude:
 
@@ -39,7 +39,7 @@ Pagina zehar irudiari sitiatun erabaki ez egitean, daude:
 - Horrak guzti aplikatzen duzu
 - Batziki aldea aldatu behar dutenean, bat erreguntzak aldatuz globalean update egiten duzu
 
-### Flexibilita (Flexibility)
+### Flexibilita (Flexibility) {#flexibility}
 
 Eguna ez daude:
 
@@ -47,9 +47,9 @@ Eguna ez daude:
 - Estetikak onditu eta erérimentatu
 - Brandaren kontsustazioa jarraitu aldatzen ari den bitartean
 
-## Design Systemaren Estetika erebutzea (Triggering)
+## Design Systemaren Estetika erebutzea (Triggering) {#triggering-the-design-system-aesthetics-skill}
 
-### Aktibazio Manuala (Manual Activation)
+### Aktibazio Manuala (Manual Activation) {#manual-activation}
 
 Ezkutik gure skill-a hasten ezazu:
 
@@ -69,7 +69,7 @@ noki edo
 "Guide me through design system decisions"
 ```
 
-### Sugestionak Automatikak (Automatic Suggestions)
+### Sugestionak Automatikak (Automatic Suggestions) {#automatic-suggestions}
 
 Agenteak skill-a erebutzen dituz dira horrek egin dutenean:
 
@@ -78,9 +78,9 @@ Agenteak skill-a erebutzen dituz dira horrek egin dutenean:
 - Irudiari sitiatun kontsustazioa hobetzea nahi duzu
 - Sitea litzatean irakurri eta lan egiten ari zenean
 
-## Dizainaren Estetika Prozesua
+## Dizainaren Estetika Prozesua {#the-design-system-aesthetics-process}
 
-### Irrendi 1: Tipografia
+### Irrendi 1: Tipografia {#step-1-typography}
 
 Agenteak irudi duzu fontak ezagutzen ditu:
 
@@ -110,7 +110,7 @@ Agenteak ondoren definatzen ditu:
 - **Ponderazioaren eskala (Weight scale)**: Fonten ponderazioak (regulara, medium, bold, etc.)
 - **Linea handia (Line height)**: Lehenbaitua lehenbaituen arteko espazioa lehenbaitua dutela
 
-### Irrendi 2: Kolorearen Paleta
+### Irrendi 2: Kolorearen Paleta {#step-2-color-palette}
 
 ```
 Kolorearen paleta definizitzitu dezagun.
@@ -158,7 +158,7 @@ Agent-ek irriren token-ek ematen dira:
 - Maila: xs, sm, md, lg, xl, 2xl
 - Padding, margin eta gap-eko errespetu errespetuak
 
-### Irrenditua eta Sombraak (Borders and Shadows)
+### Irrenditua eta Sombraak (Borders and Shadows) {#step-3-spacing}
 
 ```
 Vizual lakuntza eta definizioa:
@@ -181,7 +181,7 @@ Agent-ek ematen da:
 - Elevazio lekuetara somorta tokenak
 - Border width tokenak
 
-### Irrenditua eta Animazioa (Motion and Animation)
+### Irrenditua eta Animazioa (Motion and Animation) {#step-4-borders-and-shadows}
 
 ```
 Interaktibo den bitartean zerbait izatea jakin nahi duzu?
@@ -203,9 +203,9 @@ Agent-ek ematen da:
 - Easing funkiotak (ease-in, ease-out, ease-in-out)
 - Komponbideko interakzioetan animazio keyframes
 
-## Disain Design Systemen Errespetu Mendatzea
+## Disain Design Systemen Errespetu Mendatzea {#step-5-motion-and-animation}
 
-### Automatikoa
+### Automatikoa {#applying-design-system-aesthetics}
 
 Skill-ek amaitu ondoren, agent-ek:
 
@@ -214,13 +214,13 @@ Skill-ek amaitu ondoren, agent-ek:
 3. Block styleak berri sistema-re onartzeko regeneratzen du
 4. Updateatutako theme-a aktibitzen du
 
-### Manuala
+### Manuala {#automatic-application}
 
 `theme.json`-a direktu zuzenean editatu ereiteko da:
 
-## Design Systemaren Ekitzea
+## Design Systemaren Ekitzea {#manual-application}
 
-### Agentea gaut
+### Agentea gaut {#viewing-your-design-system}
 
 ```
 "Meni design systema erakitu"
@@ -234,13 +234,13 @@ noki
 
 Agentea irudiatzen du diseinua, coloreak, espazioak eta beste tokenak.
 
-### theme.json ikustea
+### theme.json ikustea {#ask-the-agent}
 
 Raw token-ek identifikatzeko `/wp-content/themes/[theme-name]/theme.json` funtziari test editor batean aukeratu duzu.
 
-## Design Systemaren Aurreratzea
+## Design Systemaren Aurreratzea {#view-themejson}
 
-### Aurreratzea rapideak
+### Aurreratzea rapideak {#updating-your-design-system}
 
 Eskatu agenteari hasierako erregistroak:
 
@@ -260,7 +260,7 @@ noki
 "Tituluaren fonta serif bat bihurtu"
 ```
 
-### Redisein guztiz
+### Redisein guztiz {#quick-updates}
 
 Design System Aesthetics skill-a irudia:
 
@@ -270,7 +270,7 @@ Design System Aesthetics skill-a irudia:
 
 Hauzu hau da, aukera hauek gaur duzun erregistroakatik hasi eta erabaki guztietan.
 
-### Aurreratzea parte batzuk
+### Aurreratzea parte batzuk {#full-redesign}
 
 Eskatu erregistroaren bestelako parte hauek:
 
@@ -278,15 +278,15 @@ Eskatu erregistroaren bestelako parte hauek:
 "Paleta colorea update egin, beste guztia ez dut"
 ```
 
-## Design Systemaren Best Praktikak
+## Design Systemaren Best Praktikak {#partial-updates}
 
-### Ondo ikusi (Consistency)
+### Ondo ikusi (Consistency) {#design-system-best-practices}
 
 - Beste jardueretan beharko dituen tokenak jartzi duzu.
 - Ekin ez du bat-bat kolor edo eskala.
 - Erreguntzak erreguntzak erabiltu, erreguntzak hartzen ez du.
 
-### Nomenklatura (Naming)
+### Nomenklatura (Naming) {#consistency-1}
 
 Nomenklatutako irakurri eta hasierako emantza duten:
 
@@ -296,9 +296,9 @@ Nomenklatutako irakurri eta hasierako emantza duten:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Eskala (Scalability)
+### Eskala (Scalability) {#naming}
 
-### Dokumentazioa
+### Dokumentazioa {#scalability}
 
 Definizioztatu sistema diseinarenzu:
 
@@ -306,9 +306,9 @@ Definizioztatu sistema diseinarenzu:
 - Zerbiak zehaztu behar dira (Zer moduan erabiliz dut?).
 - Ezaugarriak eta ezaugarri edukiak.
 
-## Modu Design System Nagusiak
+## Modu Design System Nagusiak {#documentation}
 
-### Modern Minimalista
+### Modern Minimalista {#common-design-system-patterns}
 
 - Sans-serif tipografia (Inter, Helvetica)
 - Kolorearen limitatua paleta (2-3 kolore)
@@ -316,7 +316,7 @@ Definizioztatu sistema diseinarenzu:
 - Ezaugarriak ombreak
 - Lanbideko animazioak
 
-### Warm eta Lagunatu
+### Warm eta Lagunatu {#modern-minimalist}
 
 - Serif eta sans-serifen mezua
 - Kolorearen lagunatu paleta (oranjeak, grays lagunak)
@@ -324,7 +324,7 @@ Definizioztatu sistema diseinarenzu:
 - Ombreak malguneak
 - Lanbideko animazioak joko
 
-### Profesional Korporatibo
+### Profesional Korporatibo {#warm-and-friendly}
 
 - Sans-serifa handi eta lagunatu (Roboto, Open Sans)
 - Neutral paleta eta ezaugarri kolore bat
@@ -332,7 +332,7 @@ Definizioztatu sistema diseinarenzu:
 - Ombreak minimaliak
 - Transicionak malguneak
 
-### Kreatiba eta Boldua
+### Kreatiba eta Boldua {#professional-corporate}
 
 - Tipografia zehatza
 - Kolorearen boldua paleta
@@ -340,7 +340,7 @@ Definizioztatu sistema diseinarenzu:
 - Ombreak indartunak
 - Animazioak erakusten dituz
 
-## Problema Erregitzenak (Troubleshooting)
+## Problema Erregitzenak (Troubleshooting) {#creative-and-bold}
 
 **Design systemaren hasierak ez du ondorioa**
 - Browser cachea purtatu.
@@ -358,7 +358,7 @@ Definizioztatu sistema diseinarenzu:
 - `theme.json` da hasierako jarduerak edateko manual editatu.
 - Desberdinetako aukerak bidez skilla berri errun.
 
-## Irudi Mendiak (Next Steps)
+## Irudi Mendiak (Next Steps) {#troubleshooting}
 
 Design systemari definitu ondoren:
 

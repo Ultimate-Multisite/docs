@@ -3,7 +3,7 @@ title: Pazītas nekompatibilitātes
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Zināmi nekompatibilitates ar citi pluginus
+# Zināmi nekompatibilitates ar citi pluginus {#known-incompatibilities-with-other-plugins}
 
 Pēc Ultimate Multisite instalēšanas un aktivizēšanas jūs varat saskarties problēmām, jo ir neapstiprināti nekompatibilitates ar citajiem pluginus.
 

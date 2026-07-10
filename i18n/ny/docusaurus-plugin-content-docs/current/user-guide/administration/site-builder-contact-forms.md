@@ -3,11 +3,11 @@ title: Mawuwo kwa Site Builder Contact Forms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms za Kufotera kwa Tovuti (Site Builder)
+# Forms za Kufotera kwa Tovuti (Site Builder) {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 imezidiza uwezo wa kutengeneza forms za kufotera kupitia chat interface kwa kutumia Site Builder agent. Iziipanga kuti mupate forms za kufotera zenye utendaji wote kwenye ipanyiko lolote bila kuondoka kwenye chat.
 
-## Ufafanuzi (Overview)
+## Ufafanuzi (Overview) {#overview}
 
 Uwezo wa form ya Site Builder (`create_contact_form`) unajua kiotomatiki plugin yako ya form iliyosakinika na inatengeneza form ya kufotera kwa kutumia uwezo wa asili wa hiyo plugin. Plugins za form zinazosaidika ni:
 
@@ -18,7 +18,7 @@ Uwezo wa form ya Site Builder (`create_contact_form`) unajua kiotomatiki plugin 
 
 Msaidizi (assistant) utachagua kiplugin bora kilichopo kwenye tovuti yako na kutengeneza form ya kufotera inayofaa kwa hiyo plugin.
 
-## Kutengeneza Form ya Kufotera
+## Kutengeneza Form ya Kufotera {#creating-a-contact-form}
 
 Ili kutengeneza form ya kufotera kwa kutumia Site Builder:
 
@@ -34,7 +34,7 @@ Ili kutengeneza form ya kufotera kwa kutumia Site Builder:
 
 4. Site Builder itatengeneza form ya kufotera na kurudisha shortcode inayojali kuwekwa (ready to embed).
 
-## Kutumia Shortcode Iliyotengenezwa
+## Kutumia Shortcode Iliyotengenezwa {#using-the-generated-shortcode}
 
 Baada ya Site Builder kutengeneza form ya kufotera, inarudisha shortcode (kama vile, `[contact-form-7 id="123"]`). Unaweza:
 
@@ -45,11 +45,11 @@ Baada ya Site Builder kutengeneza form ya kufotera, inarudisha shortcode (kama v
 
 3. **Genda ku yomwe** — Ngati muli ndi kukhulupirira PHP, muli ndi ulemu woshipera shortcode ku file la template la theme.
 
-## Kufotokozera Contact Form
+## Kufotokozera Contact Form {#customizing-the-contact-form}
 
 Poyesa Site Builder kuti ikukwaniritseni contact form, muli ndi ulemu woshipera kwambiri:
 
-### Mwachidulembedwa (Via the Chat Interface)
+### Mwachidulembedwa (Via the Chat Interface) {#via-the-chat-interface}
 
 Makhulupirira Site Builder kuti awupatsire form:
 
@@ -57,7 +57,7 @@ Makhulupirira Site Builder kuti awupatsire form:
 
 Site Builder idzupatsa form ndikadza shortcode yomwe imaperekedwa.
 
-### Mwachidulembedwa (Via the Form Plugin's Admin Interface)
+### Mwachidulembedwa (Via the Form Plugin's Admin Interface) {#via-the-form-plugins-admin-interface}
 
 Muli ndi ulemu woshipera m'malo woperekedwa wa form plugin wanu:
 
@@ -65,7 +65,7 @@ Muli ndi ulemu woshipera m'malo woperekedwa wa form plugin wanu:
 2. Kuti mupatsire form yomwe Site Builder imaperekera.
 3. Upatsire mapulogalamu a form, zifukwa za kuyesa (validation rules), ndikufotokozera email monga momwe muli ndiwo.
 
-## Form Plugins ndi Kukhulupirira (Compatibility)
+## Form Plugins ndi Kukhulupirira (Compatibility) {#form-plugins-and-compatibility}
 
 Site Builder imapereka kwawo kuti ikudziwe form plugin yomwe imuli m'site wanu ndipo imaperekera kuti iye. Ngati pali form plugins pa nthawi yomwe zambiri, Site Builder idzakhulupirira m'malo ochepa:
 
@@ -76,7 +76,7 @@ Site Builder imapereka kwawo kuti ikudziwe form plugin yomwe imuli m'site wanu n
 
 Ngati pali form plugins onse osalimbikira, Site Builder idzakumbutsa kuti muwone kuperekera mwamaka poyesa contact form.
 
-## Email Notifications
+## Email Notifications {#email-notifications}
 
 Contact forms zomwe Site Builder imaperekera zimaperekedwa kuti zifotokozere email notifications kwa administrator wa site monga momwe muli ndiwo. Muli ndi ulemu woshipera m'malo woperekedwa wa email ndikufotokozera message ya notification:
 
@@ -91,21 +91,21 @@ Poyesa zambiri, muli ndi ulemu woshipera wa documentation ya form plugin yanu:
 - [Kufuta Barua za Fluent Forms](https://fluentforms.com/docs/)
 - [Kufuta Barua za Gravity Forms](https://docs.gravityforms.com/)
 
-## Mifano ya Matumizi
+## Mifano ya Matumizi {#example-use-cases}
 
-### Fomu Rahisi ya Mawasiliano
+### Fomu Rahisi ya Mawasiliano {#simple-contact-form}
 
 > "Fanya fomu rahisi ya mawasiliano yenye sehemu za jina, barua pepe, na ujumbe."
 
-### Fomu ya Hatua Nyingi (Multi-Step Form)
+### Fomu ya Hatua Nyingi (Multi-Step Form) {#multi-step-form}
 
 > "Fanya fomu ya mawasiliano yenye hatua ya kwanza kwa taarifa za mawasiliano na hatua ya pili kwa ujumbe na njia iliyopendeza ya kuwasiliana."
 
-### Fomu yenye Mantiki ya Kufanya Vifaa (Conditional Logic)
+### Fomu yenye Mantiki ya Kufanya Vifaa (Conditional Logic) {#form-with-conditional-logic}
 
 > "Fanya fomu ya mawasiliano inayonyesha sehemu tofauti kulingana na uchaguzi wa mtumiaji kwenye dropdown."
 
-### Fomu yenye Kuweka Faili (File Upload)
+### Fomu yenye Kuweka Faili (File Upload) {#form-with-file-upload}
 
 > "Fanya fomu ya mawasiliano inayoamuru watumiaji kuweka faili au kiambatisho."
 

@@ -1,93 +1,194 @@
 ---
-title: Referència de Hooks
+title: Referència de hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Referència de Hooks
+# Referència de hooks {#hooks-reference}
 
-Documentació generada automàticament per a les **59 accions** i **115 filtres** d'Ultimate Multisite.
+Documentació generada automàticament per a totes les **59 accions** i els **118 filtres** a Ultimate Multisite.
 
-## Accions
+## Accions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — S'executa abans del redireccionament d'autenticació.
-- [set_auth_cookie](./Actions/set_auth_cookie) — S'executa immediatament abans de configurar la cookie d'autenticació.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — S'executa immediatament abans de configurar la cookie d'autenticació de l'usuari identificat.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permet als desenvolupadors afegir les seves pròpies integracions de proveïdors d'hosting mitjançant plugins de WordPress.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — S'activa quan s'han carregat totes les dependències.
-- [wu_activation](./Actions/wu_activation) — Permet a altres parts del plugin adjuntar les seves rutines per a l'activació.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permet als desenvolupadors de plugins enganxar funcions després que un usuari o superadministrador canvi la plantilla del lloc.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — En alguns casos, necessitarem carregar energia addicional per gestionar les accions.
-- [wu_before_search_models](./Actions/wu_before_search_models) — S'executa abans del processament de la sol·licitud de cerca.
+- [auth_redirect](./Actions/auth_redirect) — S'activa abans de la redirecció d'autenticació.
+- [set_auth_cookie](./Actions/set_auth_cookie) — S'activa immediatament abans que s'estableixi la galeta d'autenticació.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — S'activa immediatament abans que s'estableixi la galeta d'autenticació d'usuari connectat.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permet als desenvolupadors afegir les seves pròpies integracions de proveïdors d'allotjament mitjançant plugins de wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — S'activa quan s'han carregat totes les dependències
+- [wu_activation](./Actions/wu_activation) — Permet que altres parts del plugin adjuntin les seves rutines d'activació
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permet als desenvolupadors de plugins enganxar funcions després que un usuari o superadministrador canviï la plantilla del lloc
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — En alguns casos, haurem de carregar recursos addicionals per gestionar accions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — S'activa abans del processament de la sol·licitud de cerca.
 - [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Permet als desenvolupadors fer canvis addicionals a l'objecte de checkout.
 - [wu_cart_setup](./Actions/wu_cart_setup) — Permet als desenvolupadors fer canvis addicionals a l'objecte de checkout.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — S'executa abans que s'afegeixi un camp al formulari de checkout.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permet als desenvolupadors activar accions addicionals.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Abans de processar el checkout.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — S'activa després que l'ordre de checkout s'ha assemblejat completament.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permet als desenvolupadors de plugins afegir widgets al Panell de Control de la Xarxa.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permet als desenvolupadors de plugins afegir widgets al Panell de Control de la Xarxa.
-- [wu_deactivation](./Actions/wu_deactivation) — Permet a altres parts del plugin adjuntar les seves rutines per a la desactivació.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permet als desenvolupadors de plugins afegir accions al procés de eliminació.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — S'activa abans que s'afegeixi un camp al formulari de checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permet als desenvolupadors activar hooks addicionals.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Abans que processem el checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — S'activa després que la comanda de checkout estigui completament muntada.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permet als desenvolupadors de plugins afegir widgets al tauler del Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permet als desenvolupadors de plugins afegir widgets al tauler del Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Permet que altres parts del plugin adjuntin les seves rutines de desactivació
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permet als desenvolupadors de plugins afegir accions al procés d'eliminació
 - [wu_domain_became_primary](./Actions/wu_domain_became_primary) — S'activa quan un domini esdevé el domini principal d'un lloc.
-- [wu_domain_created](./Actions/wu_domain_created) — S'activa quan s'afegeix un nou mapeig de domini.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — S'activa després que el nostre mapeig de domini central hagi estat carregat.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Alguns usos.
-- [wu_domain_get_id](./wu_domain_get_id)
-- [wu_domain_get_slug](./wu_domain_get_slug)
-- [wu_domain_get_permalink](./wu_domain_get_permalink)
-- [wu_domain_get_all](./wu_domain_get_all)
-- [wu_domain_get_by_slug](./wu_domain_get_by_slug)
-- [wu_domain_get_by_id](./wu_domain_get_by_id)
-- [wu_domain_get_by_permalink](./wu_domain_get_by_permalink)
-- [wu_domain_get_by_type](./wu_domain_get_by_type)
-- [wu_domain_get_by_status](./wu_domain_get_by_status)
-- [wu_domain_get_by_user_id](./wu_domain_get_by_user_id)
-- [wu_domain_get_by_post_type](./wu_domain_get_by_post_type)
-- [wu_domain_get_by_taxonomy](./wu_domain_get_by_taxonomy)
-- [wu_domain_get_by_meta_key](./wu_domain_get_by_meta_key)
-- [wu_domain_get_by_meta_value](./wu_domain_get_by_meta_value)
-- [wu_domain_get_by_parent_id](./wu_domain_get_by_parent_id)
-- [wu_domain_get_by_child_id](./wu_domain_get_by_child_id)
-- [wu_domain_get_by_parent_slug](./wu_domain_get_by_parent_slug)
-- [wu_domain_get_by_child_slug](./wu_domain_get_by_child_slug)
-- [wu_domain_get_by_parent_type](./wu_domain_get_by_parent_type)
-- [wu_domain_get_by_child_type](./wu_domain_get_by_child_type)
-- [wu_domain_get_by_all_parents](./wu_domain_get_by_all_parents)
-- [wu_domain_get_by_all_children](./wu_domain_get_by_all_children)
-- [wu_domain_get_by_all_descendants](./wu_domain_get_by_all_descendants)
-- [wu_domain_get_by_all_ancestors](./wu_domain_get_by_all_ancestors)
-- [wu_domain_get_by_all_related_domains](./wu_domain_get_by_all_related_domains)
-- [wu_domain_get_by_all_related_domains_by_slug](./wu_domain_get_by_all_related_domains_by_slug)
-- [wu_domain_get_by_all_related_domains_by_id](./wu_domain_get_by_all_related_domains_by_id)
-- [wu_domain_get_by_all_related_domains_by_parent_id](./wu_domain_get_by_all_related_domains_by_parent_id)
-- [wu_domain_get_by_all_related_domains_by_child_id](./wu_domain_get_by_all_related_domains_by_child_id)
-- [wu_domain_get_by_all_related_domains_by_parent_slug](./wu_domain_get_by_all_related_domains_by_parent_slug)
-- [wu_domain_get_by_all_related_domains_by_child_slug](./wu_domain_get_by_all_related_domains_by_child_slug)
-- [wu_domain_get_by_all_related_domains_by_parent_type](./wu_domain_get_by_all_related_domains_by_parent_type)
-- [wu_domain_get_by_all_related_domains_by_child_type](./wu_domain_get_by_all_related_domains_by_child_type)
-- [wu_domain_get_by_all_related_domains_by_all_parents](./wu_domain_get_by_all_related_domains_by_all_parents)
-- [wu_domain_get_by_all_related_domains_by_all_children](./wu_domain_get_by_all_related_domains_by_all_children)
-- [wu_domain_get_by_all_related_domains_by_all_descendants](./wu_domain_get_by_all_related_domains_by_all_descendants)
-- [wu_domain_get_by_all_related_domains_by_all_ancestors](./wu_domain_get_by_all_related_domains_by_all_ancestors)
-- [wu_domain_get_by_all_related_domains_by_all_related_domains](./wu_domain_get_by_all_related_domains_by_all_related_domains)
+- [wu_domain_created](./Actions/wu_domain_created) — S'activa quan s'afegeix un nou mapatge de domini.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — S'activa després que s'hagi carregat el nostre nucli de Domain Mapping
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Alguns plugins desaran l'URL abans que el mapatge estigui actiu o construiran URL d'una manera diferent que no s'inclou a
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Permet als desenvolupadors enganxar-se després que es produeixi una duplicació de lloc.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Permet als desenvolupadors de plugins afegir hooks addicionals
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook per a neteja addicional
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — S'activa abans de gestionar la sol·licitud del modal per afegir un domini nou.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Permet als desenvolupadors de plugins desar metadades de maneres diferents si ho necessiten.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Permet als desenvolupadors de plugins desar metadades d'usuari de maneres diferents si ho necessiten.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — S'activa quan es troba un token d'enllaç màgic no vàlid.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — S'activa després que un usuari hagi iniciat sessió mitjançant un enllaç màgic.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Permet als desenvolupadors de plugins fer coses addicionals quan s'afegeix el client.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — S'activa després que les capacitats MCP s'hagin registrat per a una entitat.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — S'activa després que l'adaptador MCP s'hagi inicialitzat.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — S'activa després que es cancel·li la subscripció.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — S'activa després de la renovació de la subscripció.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — S'activa abans que es cancel·li la subscripció.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — S'activa abans de la renovació de la subscripció.
+- [wu_model_post_save](./Actions/wu_model_post_save) — S'activa després que un objecte s'emmagatzemi a la base de dades.
+- [wu_page_added](./Actions/wu_page_added) — Permet als desenvolupadors de plugins executar coses addicionals quan es registren pàgines.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Permet als desenvolupadors de plugins afegir contingut addicional després que imprimim la pàgina
+- [wu_page_before_render](./Actions/wu_page_before_render) — Permet als desenvolupadors de plugins afegir contingut addicional abans que imprimim la pàgina.
+- [wu_page_load](./Actions/wu_page_load) — Permet als desenvolupadors de plugins afegir hooks addicionals a les nostres pàgines.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Permet als desenvolupadors de plugins afegir contingut addicional després que imprimim la pàgina
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Permet als desenvolupadors de plugins afegir contingut addicional abans que imprimim la pàgina.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Permet als desenvolupadors de plugins afegir hooks addicionals a les nostres pàgines.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — S'activa després que els widgets es registrin per a aquesta pàgina.
 
-(Note: The provided list seems to be a collection of functions related to domain management, which is highly specific and technical. I will treat this as a technical API/function list and provide a general summary based on the pattern observed.)
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — S'activa per permetre que els addons adjuntin mòduls de capacitats a les integracions.
+- [wu_register_integrations](./Actions/wu_register_integrations) — S'activa per permetre que les integracions es registrin.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Permet que es registrin rutes addicionals.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Permet als desenvolupadors de plugins afegir accions al procés de desament
+- [wu_site_created](./Actions/wu_site_created) — S'activa després que es creï un lloc per primera vegada.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Permet als desenvolupadors de plugins afegir hooks addicionals, si cal.
+- [wu_template_previewer](./Actions/wu_template_previewer) — S'executa quan és dins del context del previsualitzador de plantilles.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Activa el hook d'encuament de scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — S'activa després que un objecte s'emmagatzemi a la base de dades.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — S'activa després que un objecte s'emmagatzemi a la base de dades.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — S'activa després que un objecte s'emmagatzemi a la base de dades.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permet als desenvolupadors de plugins afegir accions al procés de desbloqueig.
 
-***
+## Filtres {#filters}
 
-## Summary of Functions
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtra la durada del període de caducitat de la galeta d’autenticació.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtra l’esquema de redirecció d’autenticació.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replica aquí el WP Filter original, per si de cas.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Permet als desenvolupadors de plugins filtrar l’URL utilitzat al previsualitzador
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtra si la galeta d’autenticació només s’ha d’enviar per HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtra si s’ha d’utilitzar una redirecció d’autenticació segura.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtra si la galeta d’usuari connectat només s’ha d’enviar per HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Permet evitar que les galetes d’autenticació s’enviïn realment al client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Defineix l’URL de redirecció.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Afegeix passos addicionals mitjançant filtres
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Permet als desenvolupadors de plugins afegir variables addicionals al context de renderització globalment.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Permet als desenvolupadors interrompre aquesta comprovació.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtra els camps del modal d’afegir un domini nou.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Permet als desenvolupadors fer canvis a la línia d’element de la quota de configuració.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Permet als desenvolupadors filtrar els avisos d’administració afegits per Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtra després d’haver estat canviat.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ara, gestionem tots els tipus.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Permet als desenvolupadors de plugins interrompre les limitacions.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtra si s’ha d’aplicar o no la quota de registre.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtra els arguments originals de l’api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Permet als desenvolupadors de plugins filtrar els camps de l’adreça de facturació.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Permet als desenvolupadors ometre la sortida i establir-ne una de nova
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Permet als desenvolupadors ometre el codi de desassignació de l’usuari actual.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtra el total de l’“import recurrent”.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtra el total de l’“import inicial”.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtra el total de l’“import inicial”.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Permet als desenvolupadors de plugins manipular el valor del crèdit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtra els dominis base compartits del formulari de pagament que no haurien de convertir-se en registres de domini mapat.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Les nostres APIs per afegir noves plantilles de camp s’enganxen aquí.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Les nostres APIs per afegir nous tipus de camp s’enganxen aquí.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtra els missatges d’error.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Permet als desenvolupadors ometre la comprovació si un camp és autoenviable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Permet als desenvolupadors de plugins afegir àlies personalitzats al validador de formularis.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Permet als desenvolupadors de plugins filtrar les regles de validació.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Desassigna els Params no desitjats.
+- [wu_contains_element](./Filters/wu_contains_element) — Permet als desenvolupadors canviar els resultats de la cerca inicial.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Permet als proveïdors d’allotjament instal·lar la constant de manera diferent.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Retorna el nom presentable de les subdivisions administratives del país.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Retorna la llista de ciutats d’un estat en un país.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Retorna la llista d’estats d’aquest país.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Permet als desenvolupadors modificar el comportament predeterminat i establir el client actual de manera diferent.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Permet als desenvolupadors modificar el comportament predeterminat i establir la subscripció actual de manera diferent.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Permet als desenvolupadors modificar el comportament predeterminat i establir el lloc actual de manera diferent.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Permet als desenvolupadors modificar els paràmetres de l’URL de gestió del lloc.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Permet als desenvolupadors de plugins filtrar els enllaços.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Permet als desenvolupadors de plugins afegir noves comprovacions per definir els resultats.
 
-The provided list appears to be a comprehensive set of functions, likely belonging to a **Domain Management API or Module**. These functions are designed to interact with and retrieve information about various types of domains, supporting complex hierarchical and relational queries.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Potser haurem d’afegir blocs addicionals més endavant.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Afegeix un filtre genèric per permetre que els desenvolupadors ampliïn aquest analitzador per gestionar builders o plugins addicionals.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtra si s’han d’aplicar regles de contrasenya addicionals.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtra el nom d’usuari del client generat.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Permet als desenvolupadors de plugins filtrar els valors predefinits d’una pàgina de checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Permet als desenvolupadors afegir nous slugs de formulari per ometre aquest comportament.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Permet als desenvolupadors i als add-ons afegir nous passos de migració
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Vegeu més informació sobre aquest filtre a continuació, en aquest mateix mètode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Permet als desenvolupadors seleccionar quins tipus d’entrades s’han de mostrar.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Retorna línies, filtrable
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Permet als desenvolupadors manipular les parelles domini/camí.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtra les seccions de l’assistent per a la configuració de la integració d’allotjament.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtra els camps d’un formulari. El formulari s’identifica per l’ID del nom del filtre.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtra els tipus de producte que tenen cicles de facturació independents.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Permet als desenvolupadors de plugins forçar un estat determinat per a l’API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Permet als desenvolupadors de plugins afegir proves addicionals per al mode de desenvolupament.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Permet als desenvolupadors de plugins forçar un estat determinat per a l’adaptador MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Per motius de seguretat, limitem el nombre d’accions disponibles per enganxar-s’hi. Aquest filtre permet als desenvolupadors ampliar
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Comprova si un tipus d’entrada determinat està permès en aquest pla. Permet als desenvolupadors de plugins filtrar el valor de retorn
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtra si s’ha d’aplicar la verificació de l’adreça IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtra si s’ha d’aplicar la verificació de l’agent d’usuari.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtra l’URL de l’enllaç màgic generat.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtra si els enllaços màgics estan activats.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtra l’URL de redirecció després de fer que un domini sigui primari.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Crea una llista d’exclusió de paràmetres que impedeixen la redirecció automàtica.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtre per sobreescriure la decisió d’inclusió d’una capacitat MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtra la data de caducitat calculada.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtra la data de caducitat calculada que s’ha d’establir després de la renovació.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Permet als desenvolupadors afegir nous slugs de formulari d’actualització.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtra la longitud mínima de la contrasenya.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtra la fortalesa mínima de la contrasenya requerida (puntuació zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Permet als desenvolupadors de plugins, i a nosaltres mateixos, afegir enllaços d’acció a les nostres pàgines d’edició
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtra si s’han de requerir lletres minúscules a les contrasenyes.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtra si s’han de requerir números a les contrasenyes.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtra si s’han de requerir caràcters especials a les contrasenyes.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtra si s’han de requerir lletres majúscules a les contrasenyes.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Permet a l’usuari canviar el missatge sobre els pagaments pendents.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtra els tipus de producte que s’han de tractar com a plans.
+- [wu_post_count](./Filters/wu_post_count) — Permet als desenvolupadors de plugins canviar el recompte total
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Permet als desenvolupadors de plugins canviar quin estat d’entrada s’ha de comptar. Per defecte, es compten les entrades publicades i privades
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtra les dades de l’objecte abans que s’emmagatzemi a la base de dades.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Permet als desenvolupadors filtrar la configuració abans que Ultimate Multisite la desi.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtra si es permet continuar amb la sol·licitud o no.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtra si es permet continuar amb la sol·licitud o no.
 
-### Key Functionality Areas:
-
-1.  **Basic Retrieval:** Functions to fetch a domain by its primary identifiers (ID, slug, permalink).
-2.  **Filtering/Querying:** Extensive methods to filter domains based on metadata, taxonomy, status, user ID, post type, etc.
-3.  **Hierarchical Relationships:** A robust set of functions to navigate the domain structure, allowing retrieval of ancestors, descendants, and related domains based on parent/child relationships.
-4.  **Advanced Relationship Mapping:** Highly specific functions to retrieve related domains across all levels of the hierarchy (e.g., related domains by all ancestors, all descendants, etc.).
-
-### Pattern Observation:
-
-The functions follow a highly consistent naming convention, indicating a structured, object-oriented approach to data retrieval, making it easy to understand the scope of the data being queried (e.g., `wu_domain_get_by_all_related_domains_by_all_ancestors`).
-
-**In essence, this module provides deep, multi-faceted querying capabilities for a domain structure, going far beyond simple lookups to map complex relationships.**
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtra si es permet continuar amb la sol·licitud o no.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtra si es permet continuar amb la sol·licitud o no.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtra si es permet continuar amb la sol·licitud o no.
+- [wu_return_url](./Filters/wu_return_url) — Permet als desenvolupadors canviar l’URL de retorn de la passarel·la utilitzada després dels processos de checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Permet als desenvolupadors de plugins afegir més funcions de models de cerca.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Permet als desenvolupadors afegir passos addicionals a l’assistent de configuració.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtra si Ultimate Multisite hauria de crear un registre de domini per a un site acabat de crear.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Permet als desenvolupadors interrompre la redirecció, evitant que es produeixi.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Permet reescriure el gestor
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtra les accions massives disponibles per als sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtre per canviar el valor de get pluginssites dins de la xarxa.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Activa/desactiva la capacitat d’inici de sessió únic entre dominis.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtra els URL SSO generats abans que es retornin per a accions de client entre dominis.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtra les dades de subscripció de Stripe. Pot sobreescriure success_url o cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtra els arguments de la intenció de pagament.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtra l’ID del pla que s’ha de comprovar. Si existeix, la nova subscripció utilitzarà aquest pla.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtra l’ID del producte que s’ha de comprovar. Si existeix, la nova subscripció utilitzarà aquest producte.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtra el valor idempotency_key enviat amb les opcions de càrrec de Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtra el registre de membresia associat amb aquest webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtra les metadades abans que se serialitzin per desar-les a la base de dades.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtra les dades de l’objecte abans que es desin a la base de dades.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Permet als desenvolupadors canviar l’URL d’actualització per desbloquejar
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Determina si s’hauria d’utilitzar un mapatge
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtra el nom d’usuari del nou client.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Permet als desenvolupadors canviar el missatge sobre el límit d’usuaris de la membresia
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Permet als desenvolupadors afegir carpetes addicionals a la llista substituïble.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtra quines sub_commands estan activades per a aquesta entitat.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Comprovem tres patrons quan intentem esbrinar on podem injectar les nostres constants:

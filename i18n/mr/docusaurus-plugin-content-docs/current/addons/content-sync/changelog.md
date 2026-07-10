@@ -3,9 +3,9 @@ title: सामग्री सिंक बदलांची नोंद
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync बदलांचा इतिहास
+# Content Sync बदलांचा इतिहास {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * नवीन: सर्व पोस्ट प्रकार (posts, pages, custom post types) सिंक करण्यासाठी समर्थन.
 * नवीन: कंटेंट निवड टप्प्यात पोस्ट प्रकार फिल्टरिंग.
 * नवीन: सोर्स साईट निवड टप्पा - केवळ मुख्य साईटवरून नाही, तर कोणत्याही साईटवरून सिंक करण्याची सुविधा.
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * बदलले: "Select Templates" टप्पाचे नाव बदलून "Select Data" केले.
 * सुधारित: Elementor-विशिष्ट कोड आता केवळ elementor_library पोस्ट प्रकारासाठी चालतो.
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * पहिली आवृत्ती (Initial release).
 * टेम्पलेट आणि साईट निवडण्यासाठी अनेक टप्प्यांचा विझार्ड (Multi-step wizard).
 * रिअल-टाइम प्रगती अभिप्रायसह बॅच प्रोसेसिंग (Batch processing).

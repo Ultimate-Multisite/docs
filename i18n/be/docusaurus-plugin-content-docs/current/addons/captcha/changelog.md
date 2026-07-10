@@ -3,7 +3,7 @@ title: Журнал змен для Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog
+# Captcha Changelog {#captcha-changelog}
 
 Version: 1.5.0 - Released on 2026-05-22
 * New: Hard-stop rate limiter — лічыць кожны GET і POST на спагадленых captcha-паверхнях (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) і адказвае HTTP 429, запіс `Retry-After` і рэалізоваваную "tarpit sleep" (1–5с, з максімум 15с).

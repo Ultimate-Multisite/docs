@@ -3,11 +3,11 @@ title: Tema izvēlnes procesa
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 ieviest jums ir vadīts **Theme Builder onboarding flow**, kas palīdz jums izveidot personizētu bloku tēmu pirmajā iestatījumos. Tas aizstāj senā Site Builder režīmu ar vairāk elastīvu, agenta palīdzamais pieeju.
 
-## Kas ir Theme Builder Onboarding Flow?
+## Kas ir Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow ir interaktīva iestatījumu viedoklis, kas:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow ir interaktīva iestatījumu viedoklis, kas:
 
 Flow tiek spēkots **Setup Assistant agenta** ar palīdzību, kas prasa klārinājumu jautājumus un būvē jūsu tēmu pa daudzumu.
 
-## Theme Builder Onboarding Sākums
+## Theme Builder Onboarding Sākums {#starting-the-theme-builder-onboarding}
 
-### Pirmais izveide
+### Pirmais izveide {#first-run-setup}
 
 Kad pirmo reizi sāc Superdav AI Agentu jauna WordPress instalācijā, jūs redziet:
 
@@ -35,7 +35,7 @@ Kas vēlaties darīt?
 
 Izvēlieties **"Izveidot personizētu tēmu"**, lai iepriekšietu Theme Builder onboarding flow.
 
-### Manāla aktivizācija
+### Manāla aktivizācija {#manual-activation}
 
 Jūs varat sākt Theme Builder onboarding jebkurā laikā, pieprasot:
 
@@ -49,9 +49,9 @@ vai
 "Palīdziet man izveidot personizētu tēmu"
 ```
 
-## Onboarding soļi
+## Onboarding soļi {#the-onboarding-steps}
 
-### 1. Režima izvēle
+### 1. Režima izvēle {#step-1-mode-selection}
 
 Setup Assistant agenta jautā par jūsu vēlmēm:
 
@@ -63,7 +63,7 @@ Kā vēlaties izveidot savu tēmu?
 
 **Vadīts režīms** ieteicams lielākajiem lietotājiem; agenta sniedz dizaina ieteikumus, kas balstīti jūsu industrijas un mērķiem.
 
-### 2. Vietnes specifikācija
+### 2. Vietnes specifikācija {#step-2-site-specification}
 
 Jums būs jautājumi par jūsu vietni:
 
@@ -74,7 +74,7 @@ Jums būs jautājumi par jūsu vietni:
 
 Šī informācija tiek saglabāta jūsu **site_brief** atmiņā, ko agenti izmanto nākamās sesijās.
 
-### 3. Dizaina sistēmas lēmumi (Design System Decisions)
+### 3. Dizaina sistēmas lēmumi (Design System Decisions) {#step-3-design-system-decisions}
 
 Agentis palīdz jums izvēlēties dizaina tokenus:
 
@@ -83,7 +83,7 @@ Agentis palīdz jums izvēlēties dizaina tokenus:
 - **Atstarpes (Spacing)**: Kompakti, normāli vai plaši dizains
 - **Kinetika (Motion)**: Animācijas un pārejas (ja tas ir nepieciešams)
 
-### 4. Tēmas generēšana (Theme Generation)
+### 4. Tēmas generēšana (Theme Generation) {#step-4-theme-generation}
 
 Iestatījumu asistentis agentis sagādā jums jūsu personālās bloka tēmu ar:
 
@@ -92,7 +92,7 @@ Iestatījumu asistentis agentis sagādā jums jūsu personālās bloka tēmu ar:
 - Personīgām bloku stili, kas atbilst jūsu dizaina sistēmai
 - Tēmas metadatus un WordPress atbalsta deklarācijas
 
-### 5. Aktivizācija un apstiprinājums (Activation and Verification)
+### 5. Aktivizācija un apstiprinājums (Activation and Verification) {#step-5-activation-and-verification}
 
 Tēma automātiski aktivizējas, un jūs redziet:
 
@@ -107,7 +107,7 @@ Tēma automātiski aktivizējas, un jūs redziet:
 
 Tad jūs varat apmeklēt savu vietni un apstiprināt, ka tēma parāda labi.
 
-## Vietnes specifikācija un site_brief atmiņa (Site Specification and site_brief Memory)
+## Vietnes specifikācija un site_brief atmiņa (Site Specification and site_brief Memory) {#site-specification-and-sitebrief-memory}
 
 Iestatījumos agentis saglabā jūsu vietnes specifikāciju **site_brief** atmiņas kategorijā. To ietver:
 
@@ -117,18 +117,18 @@ Iestatījumos agentis saglabā jūsu vietnes specifikāciju **site_brief** atmi�
 - Dizaina preferences (priekšnoteikumi)
 - Kontenta struktūra
 
-### Kāpēc site_brief ir svarīgs
+### Kāpēc site_brief ir svarīgs {#why-sitebrief-matters}
 
 Nākamās sesijās agenti izmanto jūsu **site_brief** šādi:
 
-### Uztveršanas drošība
+### Uztveršanas drošība {#viewing-your-sitebrief}
 
 *   Uzturiet dizaina vienādību visās izmaiņās.
 *   Ievadi funkcijas, kas atbilst jūsu vietnes mērčiem.
 *   Sniedz kontekstualizētus ieteikumus.
 *   Izvadi atkārtotas konfigurācijas jautājumus.
 
-### Skatīšanās uz jūsu site_brief
+### Skatīšanās uz jūsu site_brief {#customizing-after-onboarding}
 
 Jūs varat jautāt agentam:
 
@@ -144,11 +144,11 @@ vai
 
 Agentas parādīs jūsu saglabāto vietnes specifikāciju.
 
-## Ievadīšana pēc onboardinga (Onboarding)
+## Ievadīšana pēc onboardinga (Onboarding) {#use-the-design-system-aesthetics-skill}
 
 Pēc Theme Builder iedevidīšanas pabeigšanas jūs varat:
 
-### Izmantot Dizaina sistēmas estētikas prasmes (Design System Aesthetics skill)
+### Izmantot Dizaina sistēmas estētikas prasmes (Design System Aesthetics skill) {#edit-themejson-directly}
 
 Lūdziet dizaina uzlabojumus:
 
@@ -164,7 +164,7 @@ vai
 
 **Dizaina sistēmas estētikas prasme** palīdz jums veikt mērķtiecīgus dizaina atjauninājumus.
 
-### Direkti redi theme.json
+### Direkti redi theme.json {#create-custom-block-templates}
 
 Advanced lietotāji var izveidot `/wp-content/themes/[theme-name]/theme.json` failu, lai pielāgot:
 
@@ -173,7 +173,7 @@ Advanced lietotāji var izveidot `/wp-content/themes/[theme-name]/theme.json` fa
 *   Atstarpes vērtības (Spacing values)
 *   Iztarpes un gaismas efektu definīcijas (Border and shadow definitions)
 
-### Izveidot personīgās bloku šabloni (Custom Block Templates)
+### Izveidot personīgās bloku šabloni (Custom Block Templates) {#comparison-old-vs-new-onboarding}
 
 Izmantojiet WordPressa bloku redaktoru, lai izveidotu personīgās šablones:
 
@@ -182,7 +182,7 @@ Izmantojiet WordPressa bloku redaktoru, lai izveidotu personīgās šablones:
 *   Produktu lapām (Product pages)
 *   Kontaktu formām (Contact forms)
 
-## Salīdzinājums: Vecā vs. Jaunā iedevidīšana
+## Salīdzinājums: Vecā vs. Jaunā iedevidīšana {#troubleshooting}
 
 | Funkcija | Site Builder (Vecais) | Theme Builder (Jauns) |
 | :--- | :--- | :--- |
@@ -192,7 +192,7 @@ Izmantojiet WordPressa bloku redaktoru, lai izveidotu personīgās šablones:
 | Fleksibilitāte | Fiksēti opcijas | Pielietojami |
 | Nākotnes atjauninājumi | Nav referenci | Saglabāti site_briefā |
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#next-steps}
 
 **Onboardinga procesa nebeigās**
 *   Atgrieziet procesu: "Start the Theme Builder onboarding"

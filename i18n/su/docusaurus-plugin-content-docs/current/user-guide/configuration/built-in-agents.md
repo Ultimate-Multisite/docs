@@ -1,164 +1,180 @@
 ---
 title: Agen Bawaan
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agen Bawaan (Built-in Agents)
+# Agents Bawaan {#built-in-agents}
 
-Gratis AI Agent v1.9.0 ngirim lima agen bawaan, masing-masing sudah disiapkan dengan sekumpulan alat yang fokus, *system prompt* yang disesuaikan, dan saran awal yang cocok untuk tugas umum di bidang tersebut. Ganti antar agen akan mengubah apa saja yang bisa dilakukan asisten dan bagaimana responsnya — tanpa perlu konfigurasi dari pihak Anda.
+Gratis AI Agent v1.9.0 nyayagikeun lima agents bawaan, unggal-unggalna geus dikonfigurasi heula ku sakumpulan tools anu museur, system prompt anu disaluyukeun, jeung saran pamuka anu cocog jeung tugas umum dina widang éta. Ngalih antara agents ngarobah naon anu bisa dilakukeun ku assistant jeung kumaha résponna — tanpa konfigurasi naon waé ti pihak anjeun. Superdav AI Agent v1.18.0 bisa nambahkeun tools anu sadar jadwal, rékaman pangéling, approval gates, jeung béwara SMS kana workflows ieu lamun integrasi anu patali geus dikonfigurasi.
 
-## Naon éta Agent? (What Is an Agent?)
+## Naon Ari Agent? {#what-is-an-agent}
 
-Setiap agen itu profil konfigurasi yang diberi nama yang menggabungkan:
+Unggal agent nyaéta profil konfigurasi anu dingaranan anu ngahijikeun:
 
-- **Tools** — kemampuan yang diizinkan untuk dipanggil oleh agen (contohnya, seorang Content Writer punya akses ke kemampuan pembuatan postingan; sebuah Design Studio punya akses ke CSS dan theme.json).
-- **System prompt** — instruksi yang mengatur nada, prioritas, dan batasan agen.
-- **Suggestions** — *prompt* yang sudah ditulis sebelumnya yang ditampilkan di antarmuka obrolan untuk membantu Anda memulai dengan cepat.
+- **Tools** — kamampuhan anu diidinan pikeun dipaké ku agent (contona, Content Writer boga aksés ka kamampuhan nyieun tulisan; Design Studio boga aksés ka kamampuhan CSS jeung theme.json)
+- **System prompt** — parentah anu netepkeun nada, prioritas, jeung watesan agent
+- **Saran** — prompts anu geus ditulis saméméhna anu dipintonkeun dina antarbeungeut chat pikeun mantuan anjeun ngamimitian gancang
 
-## Cara Akses Agent Picker
+## Ngaksés Agent Picker {#accessing-the-agent-picker}
 
-1. Buka panel **Gratis AI Agent** di sidebar admin WordPress.
-2. Klik **ikon agen** di kiri atas header obrolan (ikonnya akan berubah sesuai agen yang aktif).
-3. **Agent Picker** akan terbuka sebagai *overlay* tabel formulir. Setiap agen terdaftar dengan ikon, nama, dan deskripsi satu baris.
-4. Klik baris agen untuk mengaktifkannya. Header obrolan langsung diperbarui.
+1. Buka panel **Gratis AI Agent** dina sidebar admin WordPress.
+2. Klik **ikon agent** di kénca luhur header chat (ikonna robah pikeun ngagambarkeun agent anu keur aktip).
+3. **Agent Picker** muka minangka overlay form-table. Unggal agent didaptarkeun jeung ikonna, ngaranna, sarta déskripsi hiji garis.
+4. Klik baris agent pikeun ngaktipkeunana. Header chat langsung ngamutahirkeun.
 
-Anda juga bisa mengganti agen di tengah percakapan — *system prompt* agen baru akan berlaku mulai pesan berikutnya.
+Anjeun ogé bisa ngalih agents di tengah paguneman — system prompt agent anyar mimiti jalan ti pesen salajengna.
 
-## Lima Agen Bawaan
+## Lima Agents Bawaan {#the-five-built-in-agents}
 
-### Content Writer (Penulis Konten)
+### Content Writer {#content-writer}
 
-**Fokus:** Membuat dan mengedit postingan, halaman, dan formulir kontak.
+**Fokus:** Nyieun jeung ngédit tulisan, kaca, jeung formulir kontak.
 
-**Alat yang tersedia:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Tools anu sayaga:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Kalawan integrasi Superdav AI Agent v1.18.0 diaktipkeun, konteks kalénder anu dikonfigurasi, approval gates, pangéling, jeung tools béwara SMS ogé bisa sayaga pikeun workflows anu disatujuan.
 
-**Naonna alusna:**
-- Ngadéngan jeung ngajual posting blog tina ring rangkuman atawa kerangka (outline)
-- Ngarancang sababaraha landing page pikeun situs anyar
-- Ngawangun form kontak jeur (contact forms)
-- Ngatur gambar unggulan (featured images) dina posting tina URL atawa pencarian
+**Anu bisa dilakukeun kalayan hadé:**
+- Nyusun draf jeung medarkeun tulisan blog tina ringkesan atawa outline
+- Nyieun kumpulan kaca landing pikeun situs anyar
+- Ngawangun formulir kontak jeung pananya
+- Nyetel gambar unggulan dina tulisan tina URL atawa pilarian
+- Nyusun draf pesen tindak lanjut acara tina konteks Google Calendar anu dikonfigurasi, tuluy eureun pikeun persetujuan saméméh ngirim béwara
 
-**Saran awal:**
-- *Tulis postingan blog 500 kecap ngeunaan mangpaat WordPress multisite.*
-- *Buat halaman Tentang Kami, Layanan, jeung Kontak terus publikasikan.*
-- *Tambah form tanya jadwal (booking enquiry form) dina halaman Kontak.*
-
----
-
-### Site Builder
-
-**Fokus:** Ngawangun situs end-to-end tina hiji perintah.
-
-**Alat anu aya:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Naonna alusna:**
-- Ngahasilkeun rencana bangun situs multi-tahap pikeun jenis usaha anu dijelaskeun
-- Ngajalankeun unggal tahapan secara mandiri — struktur, konten, navigasi, desain
-- Ngabéréskeun error di tengah rencana tanpa perlu intervensi manual
-- Nginstal plugin anu direkomendasikeun salaku bagian tina proses bangun situs
-- Ngadamel form kontak langsung tina antarmuka obrolan (chat interface) (Superdav AI Agent v1.10.0+)
-
-**Saran awal:**
-- *Bangun situs portofolio foto kalayan post type galeri, halaman booking, jeung form kontak.*
-- *Buat situs restoran kalayan menu online, jam buka, jeung form tanya jadwal meja (table-booking enquiry form).*
-- *Atur situs konsultasi lepas (freelance consulting site) kalayan halaman layanan, bagian portofolio, jeung blog.*
-- *Tambah form kontak dina halaman Kontak nganggo site builder.*
+**Saran pamuka:**
+- *Tulis tulisan blog 500 kecap ngeunaan mangpaat WordPress multisite.*
+- *Jieun kaca About, Services, jeung Contact sarta terbitkeun.*
+- *Tambahkeun formulir pananya booking kana kaca Contact.*
+- *Susun draf pangéling pikeun pamilon dina acara kalénder anu dikonfigurasi pikeun isukan jeung antosan persetujuan saméméh ngirimna.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**Fokus:** Ngatur tampilan visual — warna, tipografi, CSS, jeung pola blok.
+**Fokus:** Nyieun situs wéb ti tungtung ka tungtung tina hiji prompt.
 
-**Alat-alat anu Tersedia:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Tools anu sayaga:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Kalawan Superdav AI Agent v1.18.0, tools layanan-terkelola anu dikonfigurasi, persetujuan, pangéling, kalénder, jeung SMS bisa sayaga di tempat administrator ngaktipkeunana.
 
-**Naonna Alatan Ieu Bisa Ngajanin:**
-- Ngagunake preset tema anu aya (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Ngatur tipografi jeung palet warna global sacara leuwih rapi ngaliwatan theme.json
-- Ngajorake CSS kustom pikeun ganti gaya khusus brand
-- Ngambil screenshot hiji halaman sarta ngabahasna masalah desain
+**Anu bisa dilakukeun kalayan hadé:**
+- Ngahasilkeun rencana ngawangun situs multi-fase pikeun jinis usaha anu dijelaskeun
+- Ngajalankeun unggal fase sacara mandiri — struktur, eusi, navigasi, desain
+- Cageur tina kasalahan di tengah rencana tanpa merlukeun campur tangan manual
+- Masang plugins anu disarankeun salaku bagian tina wangunan
+- Nyieun formulir kontak langsung tina antarbeungeut chat (Superdav AI Agent v1.10.0+)
+- Ngordinasikeun pangéling peluncuran atawa tindak lanjut pamilon tanpa béwara duplikat lamun approval gates jeung rékaman pangéling diaktipkeun
 
-**Saran Awal:**
-- *Terapkeun preset warm-editorial terus atuh warna utama jadi #2d6a4f.*
-- *Ambil screenshot homepage jeung caritakeun naon anu anjeun anggap patut ditingkatkan.*
-- *Béda pola hero anu bisa dipaké deui (reusable) kalawan gambar latar nu ngagantungkeun leutik jeung judul anu di tengah.*
-
----
-
-### Plugin Manager
-
-**Fokus:** Ngajakake, ngalaksanakeun, sarta ngatur WordPress plugin.
-
-**Alat-alat anu Tersedia:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Naonna Alatan Ieu Bisa Ngajanin:**
-- Ngarekomendasi plugin panghadéna pikeun kasusageun (use case) anu dijelaskeun
-- Nginstal paket ability ti registry
-- Ngabahas katalog ability anu aya dumasar kategori
-
-**Saran Awal:**
-- *Naon plugin panghadéna keur direktori anggota (membership directory)?*
-- *Instal paket ability WooCommerce.*
-- *Tunjukeun sagala paket ability e-commerce anu aya.*
+**Saran pamuka:**
+- *Bangun situs portofolio fotografi kalayan jinis tulisan galeri, kaca booking, jeung formulir kontak.*
+- *Jieun situs wéb réstoran kalayan menu online, jam buka, jeung formulir pananya booking méja.*
+- *Setel situs konsultasi freelance kalayan kaca jasa, bagian portofolio, jeung blog.*
+- *Tambahkeun formulir kontak kana kaca Contact maké site builder.*
+- *Sanggeus daptar cek peluncuran situs disatujuan, kirim pangéling SMS ka kontak stakeholder anu dikonfigurasi.*
 
 ---
 
-### Support Assistant
+### Design Studio {#design-studio}
 
-**Fokus:** Ngajawab patarosan ngeunaan konten situs, pengaturan, jeung konfigurasi WordPress.
+**Fokus:** Kustomisasi visual — warna, tipografi, CSS, jeung pola blok.
 
-**Alat-alat anu Tersedia:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Tools anu sayaga:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Naonna alus:**
-- Ngabahas pengaturan situs jeung pilihan ayeuna.
-- Ngajelaskeun naon éta post types, taxonomies, jeung menus anu diatur dina situs.
-- Ngajawab patarosan "naon fungsi pengaturan ieu?" ku maca nilai langsung.
-- Jadi lapisan diagnostik ngan ukur maca saméméngan ngalakukeun ganti.
+**Anu bisa dilakukeun kalayan hadé:**
+- Nerapkeun preset theme anu dingaranan (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Ngaluyukeun tipografi global jeung palet warna sacara rinci ngaliwatan theme.json
+- Nyuntikkeun CSS kustom pikeun overrides anu husus mérek
+- Nyokot screenshot kaca sarta mariosna pikeun masalah desain
 
-**Saran awal:**
-- *Plugin jeung pengaturan naon waé anu keur aktif dina situs ieu?*
-- *Daftar sadaya custom post types anu geus didaftarkeun dina situs ieu.*
-- *Menu navigasi naon waé anu aya jeung di mana éta dipasang?*
+**Saran pamuka:**
+- *Terapkeun preset warm-editorial tuluy setel warna primér jadi #2d6a4f.*
+- *Candak screenshot homepage sarta béjakeun naon anu bakal anjeun ningkatkeun.*
+- *Jieun pola blok hero anu bisa dipaké deui kalayan gambar latar full-width jeung judul di tengah.*
+
+### Plugin Manager {#plugin-manager}
+
+**Fokus:** Manggihan, masang, jeung ngatur plugins WordPress.
+
+**Tools anu sayaga:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Anu bisa dilakukeun kalayan hadé:**
+- Nyarankeun plugin panghadéna pikeun use case anu dijelaskeun
+- Masang pakét kamampuhan tina registry
+- Ngajalajah katalog kamampuhan anu sayaga dumasar kategori
+
+**Saran pamuka:**
+- *Naon plugin panghadéna pikeun diréktori membership?*
+- *Pasang pakét kamampuhan WooCommerce.*
+- *Témbongkeun ka kuring sakabéh pakét kamampuhan ecommerce anu sayaga.*
 
 ---
 
-## Ngatur Agen (Customising Agents)
+### Support Assistant {#support-assistant}
 
-Sabaraha agen bawaan bisa dikembangkeun atawa diganti ngaliwatan filter `gratis_ai_agent_agents`.
+**Fokus:** Ngajawab patalékan ngeunaan eusi situs, setélan, jeung konfigurasi WordPress.
 
-### Nambah system prompt custom ka agen anu geus aya
+**Tools anu sayaga:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Nu hadé dilakukeun:**
+- Néangan setélan jeung pilihan situs ayeuna
+- Nerangkeun jinis tulisan, taksonomi, jeung ménu naon waé nu dikonpigurasikeun dina situs
+- Ngajawab patarosan "naon fungsi setélan ieu?" ku maca nilai langsung
+- Jadi lapisan diagnostik ukur-baca saméméh nyieun parobahan
+
+**Saran ngamimitian:**
+- *Plugin jeung setélan naon waé nu ayeuna aktip dina situs ieu?*
+- *Daptarkeun sakabéh jinis tulisan kustom nu kadaptar dina situs ieu.*
+- *Ménu navigasi naon waé nu aya jeung di mana ditugaskeunana?*
+
+---
+
+## Integrasi Otomatisasi Superdav {#superdav-automation-integrations}
+
+Nalika integrasi Superdav AI Agent v1.18.0 dikonpigurasikeun, agén bawaan bisa ilubiung dina alur gawé otomatisasi nu leuwih aman jeung sadar jadwal:
+
+- **Pakakas maca Google Calendar** ngamungkinkeun agén mariksa kalénder jeung acara nu dikonpigurasikeun saméméh nyusun pagawéan susulan.
+- **Pemetaan kontak jeung pamilon** mantuan nyocogkeun pamilon acara kana pamaké WordPress atawa kontak nu dipikawanoh.
+- **Gerbang persetujuan manusa** ngeureunkeun tindakan sénsitip nepi ka pamaké nu boga wewenang marios jeung mastikeunana.
+- **Catetan pangéling** nyegah béwara duplikat nalika pagawéan nu dijadwalkeun nyobian deui atawa diulang.
+- **Béwara SMS TextBee** ngirim pesen téks nu dikonpigurasikeun ngan lamun kredensial SMS jeung idin alur gawé diaktipkeun.
+
+Alur gawé nu disarankeun: ménta agén nyiapkeun pesen atawa tindakan, marios ajakan persetujuan, tuluy idinan tindakan nu disatujuan pikeun diteruskeun deui. Pikeun pangéling nu malikan, tetep aktipkeun deduplikasi pangéling supaya acara atawa kontak nu sarua teu dibéjaan sababaraha kali.
+
+---
+
+## Ngaropéa Agén {#customising-agents}
+
+Unggal agén bawaan bisa dilegaan atawa diganti ngaliwatan filter `gratis_ai_agent_agents`.
+
+### Nambahkeun prompt sistem kustom kana agén nu geus aya {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     if ( isset( $agents['content-writer'] ) ) {
-        $agents['content-writer']['system_prompt'] .= "\n\nSelalu tulisan dina Briyut English jeung nganggo Oxford comma.";
+        $agents['content-writer']['system_prompt'] .= "\n\nAlways write in British English and use the Oxford comma.";
     }
     return $agents;
 } );
 ```
 
-### Mendaftar agen anyar
+### Ngadaptarkeun agén anyar {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Ngoptimalkeun post je halaman pikeun mesin pencari.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Anjeun téh SEO specialist. Fokus kana optimalisasi kata kunci, meta description, jeung structured data.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Tinjau judul homepage je meta descriptionna.',
-            'Saran perbaikan title tag pikeun lima post pamungkas.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Agent anyar muncul di Agent Picker langsung setelah filter dijalankan.
+Agén anyar mucunghul dina Agent Picker langsung sanggeus filter dijalankeun.
 
-### Menghapus agen bawaan
+### Ngaleungitkeun agén bawaan {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

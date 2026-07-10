@@ -3,13 +3,13 @@ title: Hoosinta Qorshe
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Horumarinta qorshe (v2)
+# Horumarinta qorshe (v2) {#downgrading-a-plan-v2}
 
 _**Fadlan oo muhiim ah: Maqaalkan wuxuu la xiriira Ultimate Multisite version 2.x.**_
 
 Horumarinta ama beddelista qorshaha ama subscription-ka waa wax caadi ah oo macaamiisha ay samayn karaan haddii ay haystaan miisaan kooban ama ay go'aansadeen inay u baahanin ma laha wax badan oo loo isticmaalo in ay ku tiirsadaan subsite-kooda.
 
-## Sida loo horumariyo qorshe (downgrade)
+## Sida loo horumariyo qorshe (downgrade) {#how-to-downgrade-a-plan}
 
 Macmaaliyadu waxay horumari karaan qorshaha iyag markii ay galayaan dashboard-ka admin-ka subsite-kooda oo ay riixaan **Change** (Beddel) hoos ka dhaca bogga account-ka.
 
@@ -25,7 +25,7 @@ Si aad u sii socoto, isticmaaluhu wuxuu kaliya waa inuu riixdo badhanka **Comple
 
 ![Bogga account-ka oo muujinaya bandarwadda isbeddelka la filayo ee xubnaha](/img/account-page/pending-change.png)
 
-### Maxaa dhaca marka isticmaaluhu horumariyo qorshahiisa?
+### Maxaa dhaca marka isticmaaluhu horumariyo qorshahiisa? {#what-happens-when-a-user-downgrades-their-plan}
 
 Waa muhiim in la ogaado in horumarinta qorshaha ays wax ka beddelin qaabka hore ee ku jira subsite-kooda isticmaalaha.
 
@@ -37,7 +37,7 @@ Waxaa jira fursado saddex ah oo aad dooran karto marka maqaalka (posts) uu ka ba
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Maxaa dhaca lacag bixinta (payment)
+### Maxaa dhaca lacag bixinta (payment) {#what-happens-to-the-payment}
 
 In nooc 2.0, ma u baahanin in la hagaajiyo waxyaabaha lacag bixinta sida qaybinta lacagta (proration).
 

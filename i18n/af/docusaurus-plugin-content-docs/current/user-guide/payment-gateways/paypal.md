@@ -3,7 +3,7 @@ title: Installeer PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Opstel van die PayPal Gateway (v2)
+# Opstel van die PayPal Gateway (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
@@ -13,13 +13,13 @@ Net soos Stripe, word PayPal wyd vir aanlyn betalingsgebruik, veral op WordPress
 
 Onthou dat jy 'n **PayPal Business-rekening** benodig om die API-gegevens te verkry wat vir hierdie integrasie nodig is.
 
-## PayPal op jou netwerk aktiveer
+## PayPal op jou netwerk aktiveer {#enabling-paypal-on-your-network}
 
 Om PayPal as 'n beskikbare betalingsmetode op jou netwerk te aktiveer, gaan na **Ultimate Multisite > Settings > Payments** en trek die blokieie langs PayPal aan.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Gebruik die begeleide opstelwenaar
+## Gebruik die begeleide opstelwenaar {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 voeg 'n begeleide PayPal-opstelwenaar by die betalingsgateway-instellings. Nadat jy PayPal aktiveer, gebruik die wenaar op **Ultimate Multisite > Settings > Payments** om te kies hoe jy die gateway wil verbind en om te bevestig watter gegevens nog nodig is voordat jy spaar.
 
@@ -30,7 +30,7 @@ Die wenaar ondersteun twee opstelpaaie:
 
 As jy die OAuth-opsie nie in die wenaar sien nie, voltooi dan die handmatige invoer van gegevens-proses hieronder. Die gateway werk met dieselfde PayPal Business API-gegevens as vorige Ultimate Multisite 2.x-uitgawes.
 
-## Die PayPal API-gegevens verkry
+## Die PayPal API-gegevens verkry {#getting-the-paypal-api-credentials}
 
 Sodra PayPal as 'n betalingsgateway geaktiveer is, sal jy die velde vir PayPal API **Username**, PayPal API **Password** en PayPal API **Signature** moet invul.
 

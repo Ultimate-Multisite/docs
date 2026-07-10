@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Sinusuri (Filters) ang redirect URL pagkatapos gawing primary domain ang isang domain.
 
 Pinapayagan nito ang mga developer na i-customize kung saan ire-redirect ang mga user pagkatapos matagumpay na itakda ang isang domain bilang primary. Sa default, ire-redirect ito sa kasalukuyang URL sa main site, o sa admin URL ng site na binabago.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Pinapayagan nito ang mga developer na i-customize kung saan ire-redirect ang mga
 | $domain | `\Domain` | Ang domain object na ginawang primary. |
 | $old_primary_domains | `array` | Array ng mga ID ng mga domain na dati nang primary. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) at line 639
 
 
-## Returns
+## Returns {#returns}
 Ang na-filter na redirect URL.

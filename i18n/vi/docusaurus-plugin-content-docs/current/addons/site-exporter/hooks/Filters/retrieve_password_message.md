@@ -4,11 +4,11 @@ title: Bộ lọc - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Bộ lọc này dùng để lọc nội dung tin nhắn trong email đặt lại mật khẩu.
 
-## Tham số
+## Tham số {#parameters}
 
 | Tên | Kiểu dữ liệu | Mô tả |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Bộ lọc này dùng để lọc nội dung tin nhắn trong email đặt lại
 | $user_login | `string` | Tên người dùng. |
 | $user_data | `\WP_User` | Đối tượng WP_User. |
 
-### Từ phiên bản
+### Từ phiên bản {#since}
 
 - 2.8.0
 - 4.1.0: Đã thêm các tham số <code>$user_login</code> và <code>$user_data</code>.
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa tại [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) ở dòng 149
 
 
-## Trả về
+## Trả về {#returns}
 Nội dung email mặc định.

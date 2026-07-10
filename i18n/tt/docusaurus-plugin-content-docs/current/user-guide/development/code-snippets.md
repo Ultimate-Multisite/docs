@@ -3,7 +3,7 @@ title: Код фрагментлары
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 üçün Kod Kesitleri
+# v2 üçün Kod Kesitleri {#code-snippets-for-v2}
 
 Temelde, **WordPress** için kod kesitleri, normalde ayrı küçük bir eklenti gerektirebilecek belirli işlemleri yapmak için kullanılır. Bu tür kod kesitleri WordPress çekirdek dosyalarından veya temanızın (genellikle functions.php dosyası) içinde yer alabilir veya bir MU plugin olarak da kullanılabilirler.
 
@@ -15,13 +15,13 @@ Bu makalede, **Ultimate Multisite v2** ile kullanabileceğiniz üç kod kesitini
 
   * [Eşlenmiş alan adlarında Font-Icons ile CORS sorunlarını çözme](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Hesap menü öğesinin konumunu değiştirme
+## Hesap menü öğesinin konumunu değiştirme {#changing-the-position-of-the-account-menu-item}
 
 Müşterinizin Dashboard'undaki Hesap menü öğesinin konumunu değiştirmek için, aşağıdaki kod kesitini ana sitenizin aktif temasının functions.php dosyasına eklemeniz yeterlidir. Bu kesiti aynı zamanda bir mu-plugin veya özel eklentinizin içine de koyabilirsiniz.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Menüyü istediğiniz konuma yerleştirmek için bu değeri ayarlayın.
 
-## Kullanıcının belirli bir plan altında olup olmadığını ve/veya aktif bir aboneliği olup olmadığını kontrol etme
+## Kullanıcının belirli bir plan altında olup olmadığını ve/veya aktif bir aboneliği olup olmadığını kontrol etme {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Bir ağ yöneticisi olarak, abonelik durumlarına ve abone olduğu plana dayanarak temel işlemler gerçekleştiren veya bir hizmeti/özelliği seçilmiş bir abone grubu veya son kullanıcılar için mevcut hale getiren özel fonksiyonlar oluşturmanız gerekebilir.
 
@@ -45,8 +45,8 @@ Ulanyjylar diňe **Plan**lara, Paketlere ýa-da Hyzmatlara däl, sebäbi olar di
 
 ![Plan IDlerini görkezýän maglumat](/img/admin/products-list.png)
 
-## Maplan domainlerde Font-Icons bilen bagly CORS meselelerini çözmek
-## Maplan domainlerde Font-Icons bilen bagly CORS meselelerini çözmek
+## Maplan domainlerde Font-Icons bilen bagly CORS meselelerini çözmek {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Maplan domainlerde Font-Icons bilen bagly CORS meselelerini çözmek {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Bir domaini sub-site üçin maplaýandan soň, sahypa özüniň adat fontlaryny ýüklemegiňde kynçylyk çykaryp biljekdigini görseňiz. Bu server sozlamalarynda "cross-origin" bloklanmasundan sebäpdir.
 
@@ -58,7 +58,7 @@ Apache
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 На вашем конфигурационном файле сервера (местоположение зависит от сервера) добавьте:
 

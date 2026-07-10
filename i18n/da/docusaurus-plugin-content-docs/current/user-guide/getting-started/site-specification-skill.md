@@ -3,11 +3,11 @@ title: Hjemmeside-specifikation færdighed
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification færdighed
+# Site Specification færdighed {#site-specification-skill}
 
 **Site Specification færdigheden** er en struktureret måde at indfange dine websides mål, målgruppe og brandidentitet på. Denne information gemmes i din **site\_brief** hukommelse, som agenter refererer til på tværs af sessioner for at give konsistent, kontekstbevidst hjælp.
 
-## Hvad er Site Specification?
+## Hvad er Site Specification? {#what-is-site-specification}
 
 Site Specification er processen med at dokumentere:
 
@@ -19,9 +19,9 @@ Site Specification er processen med at dokumentere:
 
 Denne specifikation bliver din **site\_brief**, et vedvarende hukommelseslag, som agenter bruger til at forstå konteksten på din side.
 
-## Hvorfor bruge Site Specification?
+## Hvorfor bruge Site Specification? {#why-use-site-specification}
 
-### Konsistens på tværs af sessioner
+### Konsistens på tværs af sessioner {#consistency-across-sessions}
 
 Uden site\_brief skulle du forklare sidens formål igen hver gang du starter en ny session. Med den forstår agenter øjeblikkeligt:
 
@@ -30,7 +30,7 @@ Uden site\_brief skulle du forklare sidens formål igen hver gang du starter en 
 - Din indholdsstruktur
 - Dine forretningsmål
 
-### Bedre anbefalinger
+### Bedre anbefalinger {#better-recommendations}
 
 Agenter bruger din site\_brief til at:
 
@@ -39,17 +39,17 @@ Agenter bruger din site\_brief til at:
 - Foreslå designs, der er konsistente med dit brand
 - Undgå at foreslå uforenelige funktioner
 
-### Hurtigere onboarding
+### Hurtigere onboarding {#faster-onboarding}
 
 Nye agenter (eller agenter i nye sessioner) kan hurtigt komme op i gang ved at læse din site\_brief i stedet for at stille afklarende spørgsmål.
 
-## Start af Site Specification
+## Start af Site Specification {#initiating-site-specification}
 
-### Under Theme Builder Onboarding
+### Under Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 Site Specification færdigheden starter automatisk under **Theme Builder onboarding flow**. Setup Assistant agent stiller spørgsmål og bygger din site\_brief op.
 
-### Manuel start
+### Manuel start {#manual-initiation}
 
 Du kan starte Site Specification når som helst:
 
@@ -63,9 +63,9 @@ eller
 "Hjælp mig med at lave et siteskema"
 ```
 
-## Processen for Sitespecifikation
+## Processen for Sitespecifikation {#the-site-specification-process}
 
-### Trin 1: Websitets formål
+### Trin 1: Websitets formål {#step-1-site-purpose}
 
 Agenten spørger:
 
@@ -81,7 +81,7 @@ Hvad er dit websitets primære formål?
 
 Du kan vælge en kategori eller beskrive dit eget formål.
 
-### Trin 2: Målgruppe
+### Trin 2: Målgruppe {#step-2-target-audience}
 
 ```
 Hvem er din primære målgruppe?
@@ -94,7 +94,7 @@ Hvem er din primære målgruppe?
 Hvad er deres hovedbehov?
 ```
 
-### Trin 3: Brandidentitet
+### Trin 3: Brandidentitet {#step-3-brand-identity}
 
 ```
 Hvilke farver har dit brand?
@@ -110,7 +110,7 @@ Hvordan vil du beskrive din brands tone?
 - Varm / venlig
 ```
 
-### Trin 4: Forretningsmål
+### Trin 4: Forretningsmål {#step-4-business-goals}
 
 ```
 Hvordan ser succes ud for dit site?
@@ -129,7 +129,7 @@ Hvad er din primære metrik?
 - Andet
 ```
 
-### Trin 5: Indholdsstruktur
+### Trin 5: Indholdsstruktur {#step-5-content-structure}
 
 ```
 Hvordan er dit indhold organiseret?
@@ -148,13 +148,13 @@ Hvilke indholdstyper bruger du?
 - Andet
 ```
 
-## Din site_brief hukommelse
+## Din site_brief hukommelse {#your-sitebrief-memory}
 
 Efter at have gennemført Sitespecifikation, gemmes dine oplysninger som **site_brief** i din agents hukommelse. Dette er en struktureret registrering, der indeholder:
 
-## Sej og opdatering af din site_brief
+## Sej og opdatering af din site_brief {#viewing-and-updating-your-sitebrief}
 
-### Se din site_brief
+### Se din site_brief {#view-your-sitebrief}
 
 Spør agenten:
 
@@ -170,7 +170,7 @@ eller
 
 Agenten vil vise din gemte specifikation.
 
-### Opdater din site_brief
+### Opdater din site_brief {#update-your-sitebrief}
 
 Hvis din side udvikler sig, kan du opdatere den:
 
@@ -186,9 +186,9 @@ eller
 
 Dette vil genkøre Site Specification skill'en med dine eksisterende oplysninger som udgangspunkt.
 
-## Hvordan agenter bruger site_brief
+## Hvordan agenter bruger site_brief {#how-agents-use-sitebrief}
 
-### Designanbefalinger
+### Designanbefalinger {#design-recommendations}
 
 Når du beder om designændringer, henviser agenter til din site_brief:
 
@@ -197,7 +197,7 @@ Du: "Redesign min forside"
 Agent: "Baseret på din site brief målretter du kvinder i alderen 25-45 med en varm, håndværksmæssig tone. Jeg vil skabe et design, der fremhæver dit håndlavede smykker og dine bæredygtige værdier."
 ```
 
-### Funktionsforslag
+### Funktionsforslag {#feature-suggestions}
 
 Agenter foreslår funktioner i overensstemmelse med dine mål:
 
@@ -206,23 +206,23 @@ Du: "Hvilke funktioner skal jeg tilføje?"
 Agent: "For en e-handelsbutik fokuseret på kundeloyalitet vil jeg anbefale: et loyalitetsprogram, kundeanmeldelser, et e-mailnyhedsbrev og produktanbefalinger."
 ```
 
-### Indholdsstruktur
+### Indholdsstruktur {#content-structure}
 
 Agenter foreslår indholdsorganisering baseret på din struktur:
 
 Du: "Hvordan skal jeg organisere min blog?"
 Agent: "Da du bruger en produktkatalog med blog, vil jeg foreslå at organisere indlæggene efter produktkategori og oprette 'styling guides', der viser flere produkter sammen."
 
-## Bedste praksis
+## Bedste praksis {#best-practices}
 
-### Vær specifik
+### Vær specifik {#be-specific}
 
 I stedet for "generel målgruppe", beskriv din faktiske målgruppe:
 
 - ✓ "Kvinder i alderen 25-45, interesserede i bæredygtig mode"
 - ✗ "Alle"
 
-### Opdater regelmæssigt
+### Opdater regelmæssigt {#update-regularly}
 
 Efterhånden som dit site udvikler sig, opdater din `site_brief`:
 
@@ -231,14 +231,14 @@ Efterhånden som dit site udvikler sig, opdater din `site_brief`:
 - Når dit brandidentitet ændrer sig
 - Når dine forretningsmål skifter
 
-### Brug konsistent terminologi
+### Brug konsistent terminologi {#use-consistent-terminology}
 
 Brug de samme termer i alle sessioner:
 
 - ✓ Sig altid "bæredygtige smykker" (ikke "miljøvenlige smykker" og "grønne produkter")
 - ✓ Henvis til din målgruppe konsekvent på samme måde
 
-### Inkludér kontekst
+### Inkludér kontekst {#include-context}
 
 Giv baggrundsinformation, der hjælper agenter med at forstå dine beslutninger:
 
@@ -246,7 +246,7 @@ Giv baggrundsinformation, der hjælper agenter med at forstå dine beslutninger:
 - "Vores målgruppe er teknisk kyndige og forventer moderne design"
 - "Vi er en bootstrapped startup, så vi har brug for omkostningseffektive løsninger"
 
-## Forholdet til Theme Builder onboarding
+## Forholdet til Theme Builder onboarding {#relationship-to-theme-builder-onboarding}
 
 Site Specification færdigheden er integreret i **Theme Builder onboarding flow**. Når du gennemfører onboarding, oprettes din `site_brief` automatisk med de oplysninger, du har givet.
 
@@ -256,7 +256,7 @@ Du kan også køre Site Specification uafhængigt, hvis du ønsker at:
 - Opdatere din site brief, efter dit site udvikler sig
 - Oprette en detaljeret specifikation, før du starter Theme Builder
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
 **Min site_brief bliver ikke brugt**
 - Bekræft, at agenten har adgang til hukommelsen (memory)
@@ -272,7 +272,7 @@ Du kan også køre Site Specification uafhængigt, hvis du ønsker at:
 - Opdater din site\_brief, hvis den er udløbet
 - Giv yderligere kontekst i dine anmodninger
 
-## Næste skridt
+## Næste skridt {#next-steps}
 
 Efter du har defineret din site specification:
 

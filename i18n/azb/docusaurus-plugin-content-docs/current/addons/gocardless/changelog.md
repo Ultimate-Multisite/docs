@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless Değişiklik Günlüğü
+# GoCardless Değişiklik Günlüğü {#gocardless-changelog}
 
 Sürüm: 1.0.3 - Yayınlandı: 2026-05-05
 * Düzeltme: Bir GoCardless üyeliği beklemede veya askıda durumdayken iptal edildiğinde, terk edilmiş bekleyen siteler artık temizleniyor.

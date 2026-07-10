@@ -3,18 +3,18 @@ title: Capacitats del Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitats de Theme Builder: Estructurar i Activar Block Themes
+# Capacitats de Theme Builder: Estructurar i Activar Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 presenta dues capacitats potents que et permeten generar i desplegar block themes personalitzats directament des de l'interfície de xat.
 
-## Panllàstic
+## Panllàstic {#overview}
 
 Les capacitats **scaffold-block-theme** i **activate-theme** permeten als agents:
 - Generar block themes complets i preparats per a producció basats en les teves especificacions.
 - Activar els themes automàticament al teu lloc sense intervenció manual.
 - Crear identitats visuals cohesives mitjançant decisions de disseny guiades.
 
-## Estructurar Block Theme (Scaffold Block Theme)
+## Estructurar Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 La capacitat **scaffold-block-theme** genera un nou block theme de WordPress amb una estructura de tema completa, incloent:
 
@@ -23,7 +23,7 @@ La capacitat **scaffold-block-theme** genera un nou block theme de WordPress amb
 - Estils i variacions de blocks personalitzats.
 - Metadades i declaracions de suport del tema.
 
-### Com Activar-ho
+### Com Activar-ho {#how-to-invoke}
 
 Al teu xat amb Superdav AI Agent, pots sol·licitar la generació del tema:
 
@@ -38,7 +38,7 @@ L'agent:
 3. Crea tots els fitxers de tema necessaris.
 4. Prepara el tema per a l'activació.
 
-### Resultat Esperat
+### Resultat Esperat {#expected-output}
 
 Quan la capacitat s'executa amb èxit, veuràs:
 
@@ -56,11 +56,11 @@ Exemple de resultat:
   Status: Ready to activate
 ```
 
-## Activar Tema (Activate Theme)
+## Activar Tema (Activate Theme) {#activate-theme}
 
 La capacitat **activate-theme** canvieu el teu lloc cap a un block theme nou estructurat o existent.
 
-### Com Activar-ho
+### Com Activar-ho {#how-to-invoke-1}
 
 Després d'estructurar un tema, pots activar-lo immediatament:
 
@@ -74,7 +74,7 @@ O activar qualsevol tema existent:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Resultat Esperat
+### Resultat Esperat {#expected-output-1}
 
 Quan l'activació té èxit:
 
@@ -92,7 +92,7 @@ Exemple de resultat:
   Note: Check your homepage to verify the layout
 ```
 
-## Flux de Treball: Estructurar i Activar
+## Flux de Treball: Estructurar i Activar {#workflow-scaffold-and-activate}
 
 Un flux de treball típic combina ambdues capacitats:
 
@@ -102,7 +102,7 @@ Un flux de treball típic combina ambdues capacitats:
 4. **Activar**: "Activate the theme now"
 5. **Verificar**: Visita el teu lloc per confirmar que el nou disseny està actiu.
 
-## Design Tokens i Personalització
+## Design Tokens i Personalització {#design-tokens-and-customization}
 
 Els themes estructurats utilitzen els design tokens de WordPress (a través de `theme.json`) per a:
 
@@ -114,14 +114,14 @@ Els themes estructurats utilitzen els design tokens de WordPress (a través de `
 
 Aquests tokens estan centralitzats a `theme.json`, cosa que facilita ajustar tot el teu sistema de disseny des d'un únic fitxer.
 
-## Limitacions i Notes
+## Limitacions i Notes {#limitations-and-notes}
 
 - Els themes s'estructuraran a `/wp-content/themes/` i han de seguir les convencions de nomenclatura de WordPress.
 - L'activació requereix permisos adequats al teu lloc de WordPress.
 - El codi PHP personalitzat en els themes és mínim; utilitza plugins per a funcionalitats complexes.
 - Els block themes funcionen millor amb WordPress 5.9 i versions posteriors.
 
-## Solucionar Problemes (Troubleshooting)
+## Solucionar Problemes (Troubleshooting) {#troubleshooting}
 
 **El tema no apareix després d'estructurar-lo**
 - Verifica que el directori del tema existeixi i tingui els permisos adequats.
@@ -138,7 +138,7 @@ Aquests tokens estan centralitzats a `theme.json`, cosa que facilita ajustar tot
 - Barreja qualsevol plugin de caching.
 - Comprova que la teva versió de WordPress suporti els tokens que estàs utilitzant.
 
-## Pròxims Passos
+## Pròxims Passos {#next-steps}
 
 Després d'activar el teu tema, pots:
 - Utitzar la capacitat **Design System Aesthetics** per refinar tipografia, colors i espai.

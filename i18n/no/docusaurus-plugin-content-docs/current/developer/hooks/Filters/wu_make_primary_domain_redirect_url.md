@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filtrerer omdirigerings-URL-en etter at et domene blir satt som primært.
 
 Lar utviklere tilpasse hvor brukere blir omdirigert etter at de har satt et domene som primært. Som standard omdirigeres det til den nåværende URL-en på hovednettstedet, eller til admin-URL-en til nettstedet som blir endret.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Lar utviklere tilpasse hvor brukere blir omdirigert etter at de har satt et dome
 | $domain | `\Domain` | Domeneobjektet som ble satt som primært. |
 | $old_primary_domains | `array` | Array med ID-er til domener som tidligere var primære. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) på linje 639
 
 
-## Returnerer
+## Returnerer {#returns}
 Den filtrerte omdirigerings-URL-en.

@@ -1,28 +1,32 @@
 ---
 title: Betalingen en facturen beheren
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Beheren van betalingen en facturen
+# Betalingen en facturen beheren {#managing-payments-and-invoices}
 
-## Betalingsinstellingen
+## Betalingsinstellingen {#payment-settings}
 
-Voordat je begint met het ontvangen van betalingen, moet je de betalingsgerelateerde instellingen configureren. Navigeer naar **Ultimate Multisite → Settings** en klik op het **Payment** tabblad.
+Voordat je betalingen gaat ontvangen, moet je de betalingsgerelateerde instellingen configureren. Navigeer naar **Ultimate Multisite → Settings** en klik op het tabblad **Payment**.
 
-![Betaalinstellingen tab](/img/admin/settings-payments-top.png)
+![Tabblad Betalingsinstellingen](/img/admin/settings-payments-top.png)
 
-### Algemene betalingsopties
+Hier is een volledige weergave van de pagina met betalingsinstellingen:
 
-In de algemene instellingen kun je configureren:
+![Volledige pagina Betalingsinstellingen](/img/admin/settings-payments-full.png)
 
-- **Currency** — De standaardvaluta die voor transacties wordt gebruikt
-- **Currency Position** — Waar het valutapictogram verschijnt (voor/na het bedrag)
+### Algemene betalingsopties {#general-payment-options}
 
-![Betalingsgateway-instellingen](/img/admin/settings-payments-options.png)
+In de algemene instellingen kun je het volgende configureren:
 
-### Betalingsgateways
+- **Valuta** — De standaardvaluta die wordt gebruikt voor transacties
+- **Valutapositie** — Waar het valutasymbool verschijnt (vóór/na het bedrag)
 
-Ultimate Multisite ondersteunt meerdere betalingsgateways. Je kunt elke gateway inschakelen en configureren via het Betalingsinstellingen-tabblad.
+![Instellingen voor betalingsgateway](/img/admin/settings-payments-options.png)
+
+### Betalingsgateways {#payment-gateways}
+
+Ultimate Multisite ondersteunt meerdere betalingsgateways. Je kunt ze allemaal inschakelen en configureren via het tabblad Payment-instellingen.
 
 ![Configuratie van betalingsgateway](/img/admin/settings-payments-gateways.png)
 
@@ -30,17 +34,17 @@ Beschikbare gateways zijn onder andere:
 
 - **Stripe** — Creditcardbetalingen via Stripe
 - **PayPal** — PayPal-betalingen
-- **Manual** — Voor offline of aangepaste betalingsverwerking
+- **Handmatig** — Voor offline of aangepaste betalingsverwerking
 
-Elke gateway heeft een eigen configuratiesectie waarin je API-sleutels en andere instellingen invoert.
+Elke gateway heeft een eigen configuratiesectie waar je API keys en andere instellingen invoert.
 
-![Extra gateway-instellingen](/img/admin/settings-payments-gateways-2.png)
+![Aanvullende gateway-instellingen](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox-modus
+### Sandbox Mode {#sandbox-mode}
 
-Je kunt **Sandbox Mode** inschakelen om je betalingsintegratie te testen voordat je live gaat. Wanneer sandbox-modus actief is, worden er geen echte kosten in rekening gebracht.
+Je kunt **Sandbox Mode** inschakelen om je betalingsintegratie te testen voordat je live gaat. Wanneer Sandbox Mode actief is, worden er geen echte kosten in rekening gebracht.
 
-## Betalingen bekijken
+## Betalingen bekijken {#viewing-payments}
 
 Navigeer naar de pagina **Payments** onder Ultimate Multisite om alle transacties in je netwerk te zien.
 
@@ -48,17 +52,17 @@ Navigeer naar de pagina **Payments** onder Ultimate Multisite om alle transactie
 
 Je kunt betalingen filteren op status (voltooid, in behandeling, mislukt, terugbetaald) en zoeken naar specifieke transacties.
 
-Klik op een betaling om alle details te zien, inclusief de line items, bijbehorende lidmaatschap, klantinformatie en betalingsgatewaygegevens.
+Klik op een betaling om de volledige details te bekijken, inclusief de regelitems, bijbehorend lidmaatschap, klantinformatie en betalingsgatewaygegevens.
 
-## Facturen
+## Facturen {#invoices}
 
-Ultimate Multisite kan automatisch facturen genereren voor betalingen. Je kunt het factuursjabloon en het nummeringsformaat aanpassen via de Betalingsinstellingen.
+Ultimate Multisite kan automatisch facturen genereren voor betalingen. Je kunt de factuursjabloon en het nummeringsformaat aanpassen via de betalingsinstellingen.
 
-Factuuraanpassingsopties omvatten:
+Opties voor het aanpassen van facturen zijn onder andere:
 
-- **Company name and address** weergegeven op facturen
-- **Invoice numbering** formaat en volgorde
-- **Logo** weergegeven in de factuurheader
-- **Custom footer text** voor voorwaarden, notities of juridische informatie
+- **Bedrijfsnaam en adres** weergegeven op facturen
+- **Factuurnummering** formaat en volgorde
+- **Logo** weergegeven in de factuurkop
+- **Aangepaste voettekst** voor voorwaarden, opmerkingen of juridische informatie
 
-Om het factuursjabloon aan te passen, ga naar **Ultimate Multisite → Settings → Payment** en zoek naar de factuurgerelateerde instellingen.
+Om de factuursjabloon aan te passen, ga je naar **Ultimate Multisite → Settings → Payment** en zoek je naar de factuurgerelateerde instellingen.

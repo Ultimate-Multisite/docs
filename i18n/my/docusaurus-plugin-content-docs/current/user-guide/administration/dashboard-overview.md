@@ -3,11 +3,11 @@ title: ဒက်ရှ်ဘုတ် ခြုံငုံသုံးသပ်
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard ခြုံငုံသုံးသပ်ချက်
+# Dashboard ခြုံငုံသုံးသပ်ချက် {#dashboard-overview}
 
 Ultimate Multisite တွင် Ultimate Multisite မီနူးအောက်၌ သီးသန့် **Dashboard** တစ်ခုရှိပြီး Network Dashboard သို့လည်း widget များထပ်ထည့်ပေးပါသည်။ ဤဆောင်းပါးတွင် နေရာနှစ်ခုစလုံးတွင် သင်မြင်ရမည့်အရာများကို ရှင်းပြထားပါသည်။
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite သည် **My Sites → Network Admin → Dashboard** တွင်ရှိသော network-level dashboard ထဲသို့ အသုံးဝင်သော widget များထည့်သွင်းပေးပါသည်။
 
@@ -35,7 +35,7 @@ widget တစ်ခုချင်းစီက ဘာတွေပေးလဲဆ
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard သည် network တစ်ခုလုံးအကြောင်း ခြုံငုံအချက်အလက်များပြသနေချိန်တွင်၊ Ultimate Multisite dashboard (Ultimate Multisite မီနူး၏ အထက်ဆုံးအဆင့်တွင်) သည် ဝန်ဆောင်မှုအကြောင်း အချက်အလက်များပြသပါသည်။
 

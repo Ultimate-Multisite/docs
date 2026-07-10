@@ -4,11 +4,11 @@ title: 'Filter - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 یہ ڈیٹا میٹا کو فلٹر کرتا ہے اس سے پہلے کہ اسے ڈیٹا بیس میں محفوظ کرنے کے لیے سیریلائز کیا جائے۔
 
-## پیرامیٹرز
+## پیرامیٹرز {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | وہ آبجیکٹ ڈیٹا جو محفوظ کیا جائے گا۔ |
 | $this | `\Base_Model` | آبجیکٹ کا انسٹنس۔ |
 
-### سے
+### سے {#since}
 
 - 2.0.0
-### ماخذ
+### ماخذ {#source}
 
 [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) میں لائن 534 پر بیان کیا گیا ہے۔

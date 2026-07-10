@@ -4,11 +4,11 @@ title: फ़िल्टर - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# फ़िल्टर: wp_ultimo_render_vars
+# फ़िल्टर: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 यह प्लगइन डेवलपर्स को रेंडर कॉन्टेक्स्ट (render context) में वैश्विक स्तर पर अतिरिक्त वैरिएबल जोड़ने की अनुमति देता है।
 
-## पैरामीटर्स
+## पैरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,11 +16,11 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | उस व्यू का नाम जिसे रेंडर किया जाना है। |
 | $default_view | `string` | फ़ॉलबैक व्यू (fallback_view) का नाम। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) में लाइन 31 पर परिभाषित है।
 
-## Returns
+## Returns {#returns}

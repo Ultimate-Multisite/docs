@@ -3,7 +3,7 @@ title: Assistente de Configuração Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Assistente de Configuração Multisite
+# Assistente de Configuração Multisite {#multisite-setup-wizard}
 
 O Ultimate Multisite inclui um assistente integrado que converte automaticamente uma instalação padrão do WordPress em uma rede Multisite do WordPress. Isso elimina a necessidade de editar manualmente `wp-config.php` ou executar comandos no banco de dados.
 
@@ -11,13 +11,13 @@ O Ultimate Multisite inclui um assistente integrado que converte automaticamente
 Se sua instalação do WordPress já estiver funcionando como uma rede Multisite, você pode pular esta etapa completamente. O assistente só aparece quando o Multisite ainda não está habilitado.
 :::
 
-## Quando o Assistente Aparece?
+## Quando o Assistente Aparece? {#when-does-the-wizard-appear}
 
 Quando você ativa o Ultimate Multisite em uma instalação padrão (não Multisite) do WordPress, o plugin detecta que o Multisite não está habilitado e redireciona automaticamente você para o Assistente de Configuração Multisite em vez do assistente de configuração regular.
 
 Você também pode acessá-lo diretamente em **WP Admin > Ultimate Multisite > Configuração Multisite**.
 
-## Pré-requisitos
+## Pré-requisitos {#prerequisites}
 
 Antes de executar o assistente, certifique-se de que:
 
@@ -29,7 +29,7 @@ Antes de executar o assistente, certifique-se de que:
 O assistente modifica seu arquivo `wp-config.php` e cria novas tabelas no banco de dados. Sempre crie um backup antes de prosseguir.
 :::
 
-## Etapa 1: Boas-vindas
+## Etapa 1: Boas-vindas {#step-1-welcome}
 
 A primeira tela explica o que é o WordPress Multisite e o que o assistente fará:
 
@@ -42,11 +42,11 @@ A primeira tela explica o que é o WordPress Multisite e o que o assistente far�
 
 Clique em **Continuar** para prosseguir.
 
-## Etapa 2: Configuração da Rede
+## Etapa 2: Configuração da Rede {#step-2-network-configuration}
 
 Esta etapa pede que você configure as configurações da sua rede.
 
-### Estrutura do Site
+### Estrutura do Site {#site-structure}
 
 Escolha como os sites da sua rede serão organizados:
 
@@ -57,11 +57,11 @@ Escolha como os sites da sua rede serão organizados:
 Se você escolher subdomínios, precisará configurar **DNS wildcard** e um **certificado SSL wildcard** para seu domínio. A maioria dos hosts WordPress gerenciados lida com isso automaticamente. Veja [Ultimate Multisite 101](./ultimate-multisite-101) para uma comparação detalhada.
 :::
 
-### Título da Rede
+### Título da Rede {#network-title}
 
 Digite um nome para sua rede. O padrão é o título atual do seu site com "Rede" adicionado. Você pode alterar isso mais tarde nas configurações da rede.
 
-### E-mail do Administrador da Rede
+### E-mail do Administrador da Rede {#network-admin-email}
 
 O endereço de e-mail usado para notificações de administração da rede. O padrão é o endereço de e-mail do usuário atual.
 
@@ -69,7 +69,7 @@ O endereço de e-mail usado para notificações de administração da rede. O pa
 
 Depois de preencher os campos, clique em **Continuar** para prosseguir.
 
-## Etapa 3: Instalação
+## Etapa 3: Instalação {#step-3-installation}
 
 Clique no botão **Instalar** para começar. O assistente executa cinco etapas automatizadas em sequência, cada uma mostrando seu progresso em tempo real:
 
@@ -96,7 +96,7 @@ Quando todas as etapas forem concluídas com sucesso, você verá um status verd
 
 O assistente então prosseguirá automaticamente para a tela de conclusão.
 
-## Etapa 4: Concluído
+## Etapa 4: Concluído {#step-4-complete}
 
 Quando a instalação estiver concluída, você verá uma mensagem de sucesso confirmando que o WordPress Multisite foi habilitado.
 
@@ -108,7 +108,7 @@ Você pode agora continuar com o assistente de configuração do Ultimate Multis
 Após a conclusão da instalação multisite, seu navegador será redirecionado através do novo administrador de rede. Você pode precisar fazer login novamente, pois os cookies de autenticação são atualizados para o ambiente multisite.
 :::
 
-## Configuração Manual de Reserva
+## Configuração Manual de Reserva {#manual-setup-fallback}
 
 Se o assistente não puder escrever no seu arquivo `wp-config.php` (devido a permissões de arquivo ou restrições do servidor), ele exibirá o código exato que você precisa adicionar manualmente:
 
@@ -117,9 +117,9 @@ Se o assistente não puder escrever no seu arquivo `wp-config.php` (devido a per
 
 Depois de fazer as alterações manuais, atualize a página e o assistente detectará que o multisite agora está ativo.
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
-### O assistente diz que wp-config.php não é gravável
+### O assistente diz que wp-config.php não é gravável {#the-wizard-says-wp-configphp-is-not-writable}
 
 O processo do seu servidor web precisa de permissão de gravação no arquivo `wp-config.php`. Você pode:
 
@@ -127,7 +127,7 @@ O processo do seu servidor web precisa de permissão de gravação no arquivo `w
 - Usar as instruções de configuração manual de reserva fornecidas pelo assistente
 - Pedir assistência ao seu provedor de hospedagem
 
-### Sites não são acessíveis após a configuração (subdomínios)
+### Sites não são acessíveis após a configuração (subdomínios) {#sites-are-not-accessible-after-setup-subdomains}
 
 Se você escolheu a estrutura de subdomínio, precisa configurar o **DNS wildcard** para seu domínio. Adicione um registro DNS:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Verifique com seu provedor de hospedagem se você não tem certeza de como configurar isso.
 
-### Problemas de autenticação após a configuração
+### Problemas de autenticação após a configuração {#authentication-issues-after-setup}
 
 Se você foi desconectado ou está experimentando erros de cookie após a configuração multisite:
 
@@ -147,7 +147,7 @@ Se você foi desconectado ou está experimentando erros de cookie após a config
 2. Faça login novamente em `seudominio.com/wp-login.php`
 3. Se o problema persistir, verifique se seu `wp-config.php` não tem `COOKIE_DOMAIN` definido como `false` — isso é um problema conhecido em instalações multisite de subdomínio
 
-### Uma etapa falhou durante a instalação
+### Uma etapa falhou durante a instalação {#a-step-failed-during-installation}
 
 Se uma das etapas de instalação exibir um erro:
 

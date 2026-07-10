@@ -3,15 +3,15 @@ title: የፓሌት ንፅፅርን ያረጋግጡ
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# የፓሌት ንፅፅርን ማረጋገጥ
+# የፓሌት ንፅፅርን ማረጋገጥ {#validate-palette-contrast}
 
 **የፓሌት ንፅፅርን ማረጋገጥ** ችሎታ በንድፍ ፓሌትዎ ውስጥ ያሉ የቀለም ጥንዶች ለWCAG (የዌብ ይዘት ተደራሽነት መመሪያዎች) መሟላትን የሚፈትሽ ሲሆን፣ ከዚያም በጉዳዩ ላይ ከመተግበሩ በፊት ያረጋግጣል።
 
-## አጠቃላይ እይታ
+## አጠቃላይ እይታ {#overview}
 
 ይህ ችሎታ የጣቢያዎ የቀለም ስብስብ በጽሑፍ እና በጀርባ ቀለም መካከል ያለውን ንፅፅር ጥምርታ (contrast ratio) በማረጋገጥ፣ ተደራሽነት ደረጃዎችን የሚያሟላ መሆኑን ያረጋግጣል። ይህ ደግሞ የእይታ ችግር ያለባቸው ተጠቃሚዎች በቀላሉ ሊያነቡት የሚቸገሩባቸው የቀለም ጥምርቶችን መከላከል ይረዳል።
 
-## የግብዓት ቅርጸት (Input Format)
+## የግብዓት ቅርጸት (Input Format) {#input-format}
 
 ይህ ችሎታ የቀለም ፓሌትን እንደ ግብዓት ይቀበላል፦
 
@@ -35,7 +35,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### መለኪያዎች (Parameters)
+### መለኪያዎች (Parameters) {#parameters}
 
 | መለኪያ (Parameter) | አይነት (Type) | አስፈላጊ (Required) | መግለጫ (Description) |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `wcag_level` | string | አይ | የWCAG መሟላት ደረጃ፡ "A", "AA" (በቅድፋት)፣ ወይም "AAA" |
 | `pairs_to_check` | array | አይ | ሊረጋገጡ የሚፈልጉ የተወሰኑ የቀለም ጥንዶች (ለምሳሌ፡ `["primary-text", "background-text"]`) |
 
-## በየWCAG ደረጃ የተፈተኑት
+## በየWCAG ደረጃ የተፈተኑት {#wcag-levels-checked}
 
 ይህ ችሎታ ንፅፅር ጥምርታዎችን በWCAG ደረጃዎች መሠረት ያረጋግጣል፦
 
@@ -56,7 +56,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **መደበኛ ጽሑፍ** — ከ18pt በታች የሆነ ጽሑፍ (ወይም 14pt በደል)
 - **ትልቅ ጽሑፍ** — 18pt ወይም ከዚያ በላይ የሆነ ጽሑፍ (ወይም 14pt በደል ወይም ከዚያ በላይ)
 
-## የውጤት ስхема (Output Schema)
+## የውጤት ስхема (Output Schema) {#output-schema}
 
 ይህ ችሎታ ዝርዝር የማረጋገጫ ሪፖርት ይመልሳል፦
 
@@ -95,7 +95,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### የውጤት መስኮች (Output Fields)
+### የውጤት መስኮች (Output Fields) {#output-fields}
 
 | መስክ (Field) | አይነት (Type) | መግለጫ (Description) |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `status` | string | ለእያንዳንዱ ጥንድ "pass" ወይም "fail" |
 | `recommendations` | array | ያልተሳኩ ጥንዶችን ለማሻሻል የሚረዱ ሀሳቦች |
 
-## የአጠቃቀም ምሳሌ (Usage Example)
+## የአጠቃቀም ምሳሌ (Usage Example) {#usage-example}
 
 **ጥያቄ (Prompt):**
 ```
@@ -119,7 +119,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - ✅ Background + Text: 12.1:1 ጥምርታ (WCAG AAAን የሚያልፍ)
 - በአጠቃላይ፡ በWCAG AA ደረጃ ተስማሚ
 
-## ከTheme Builder ጋር ውህደት (Integration with Theme Builder)
+## ከTheme Builder ጋር ውህደት (Integration with Theme Builder) {#integration-with-theme-builder}
 
 የTheme Builderን የንድፍ አቅጣጫ ምርጫ ሲጠቀሙ፣ የValidate Palette Contrast ችሎታው የሚከተሉትን ያደርጋል፦
 
@@ -129,7 +129,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 4. ያልተሟሉ ጥንዶችን ምክረ ሃሳብ ይሰጣል
 5. ተደራሽ ያልሆኑ የቀለም ስብስቦችን ከመተግበሩ ይከላከላል
 
-## ምርጥ አሠራሮች (Best Practices)
+## ምርጥ አሠራሮች (Best Practices) {#best-practices}
 
 - **በAA ደረጃ ይጀምሩ** — WCAG AA ለአብዛኛዎቹ ድረ-ገጾች መመዘኛ ነው።
 - **ከመተግበሩ በፊት ይፈትሹ** — ለንድፍ ከመወሰንዎ በፊት ፓሌትዎን ያረጋግጡ።
@@ -137,7 +137,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - **የተጠቃሚ ምርጫዎችን ግምት ውስጥ ያስገቡ** — አንዳንድ ተጠቃሚዎች ተጨማሪ የቀለም ስሜት ሊኖራቸው ይችላል።
 - **የንፅፅር መፈተኛዎችን ይጠቀሙ** — ይህንን ችሎታ ከብራውዘር መሳሪያዎች ጋር በማጣመር ማረጋገጫ ያግኙ።
 
-## ያልተሳኩ ጥንዶች እና ምክረ ሃሳቦች (Failing Pairs and Recommendations)
+## ያልተሳኩ ጥንዶች እና ምክረ ሃሳቦች (Failing Pairs and Recommendations) {#failing-pairs-and-recommendations}
 
 የቀለም ጥንድ ማረጋገጫውን ካልተሳካ፣ ችሎታው ምክረ ሃሳቦችን ይሰጣል፦
 
@@ -155,7 +155,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 }
 ```
 
-## ተዛማጅ ችሎታዎች (Related Abilities)
+## ተዛማጅ ችሎታዎች (Related Abilities) {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — በየተረጋገጠው የቀለም ፓሌትዎ ሎጎዎችን ይፍጠሩ
 - [Create Menu](./create-menu.md) — ተደራሽ የቀለም አሰላለፍ በመጠቀም አሰሳ (navigation) ይገንቡ

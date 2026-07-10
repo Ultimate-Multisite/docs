@@ -1,146 +1,150 @@
 ---
 title: 站点模板
 sidebar_position: 4
-_i18n_hash: 05938a764a4fd230e32fa0ef39d35ebd
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# 站点模板 (v2) {#site-templates-v2}
 
-_**注意：本文涉及 Ultimate Multisite 2.x 版本。如果您使用的是 1.x 版本，**_ **请参阅此文章** _**。**_
+_**注意：本文适用于 Ultimate Multisite 版本 2.x。如果你使用的是版本 1.x，**_ **请参阅这篇文章** _**。**_
 
-我们的目标是在使用 Ultimate Multisite 创建高级网络时，尽可能自动化尽可能多的流程，同时为客户在创建网站时提供灵活性和多种选择。实现这种平衡的一种简单方法是使用 Ultimate Multisite 站点模板功能。
+我们在使用 Ultimate Multisite 创建高级网络时的目标，是尽可能自动化更多流程，同时在客户创建网站时为他们提供灵活性和不同选项。实现这种平衡的一种简单方法，就是使用 Ultimate Multisite 站点模板功能。
 
-## What is a Site Template?
+## 什么是站点模板？ {#what-is-a-site-template}
 
-正如其名称所示，站点模板是一种可用作创建网络中新站点基础的模板站点。
+顾名思义，站点模板是一个样板站点，可在你的网络中创建新站点时作为基础使用。
 
-这意味着您可以创建一个基础站点，激活不同的插件，设置一个活动主题，并按您喜欢的任何方式进行自定义。然后，当您的客户创建新账户时，他们不会得到一个没有任何有意义内容的默认 WordPress 站点，而是会得到一份包含所有自定义和内容的基础站点副本。
+这意味着你可以创建一个基础站点，启用不同的插件，设置一个启用中的主题，并按你喜欢的任何方式进行自定义。然后，当你的客户创建新的 Account 时，他们得到的就不是一个内部没有有意义内容的默认 WordPress 站点，而是你的基础站点副本，其中所有自定义设置和内容都已就位。
 
-听起来很棒，但我如何创建一个新的站点模板？这比任何可能的方式都要简单。
+这听起来很棒，但我要如何创建新的站点模板？它再简单不过了。
 
-## Creating and Editing a new Site Template
+## 创建和编辑新的站点模板 {#creating-and-editing-a-new-site-template}
 
-站点模板只是您网络中的普通站点。要创建新模板，您只需转到 **Network Admin > Ultimate Multisite > Sites > Add Site.**
+站点模板只是你网络中的普通站点。要创建新模板，你只需前往 **网络管理员 > Ultimate Multisite > 站点 > 添加站点。**
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![站点列表页面中的添加站点按钮](/img/config/site-templates-list.png)**
 
-这将打开一个模态窗口，询问 **Site title, Site Domain/path,** 和 **Site type**。在 **Site Type** 下拉字段中，请确保选择 **Site Template** *.*
+这将打开一个模态窗口，其中会要求填写**站点标题、站点域名/路径**和**站点类型**。在**站点类型**下拉字段中，请确保选择**站点模板** *。*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![带有站点类型下拉菜单的添加站点模板模态窗口](/img/config/site-templates-list.png)_
 
-在表单底部，您会注意到一个 **Copy Site** 切换开关。它将允许您基于现有站点模板创建一个新的站点模板，作为起点，帮助您节省时间，而不是从头开始创建站点模板。
+你还可以添加面向客户的描述，用于说明该模板包含的内容：
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![站点模板编辑界面上的站点模板描述字段](/img/config/site-template-edit-description.png)
 
-### Customizing the contents of a Site Template
+在表单底部，你会看到一个**复制站点**切换开关。这将允许你基于现有站点模板创建新的站点模板，作为起点以帮助你节省时间，而不必从头创建站点模板。
 
-要自定义您的站点模板，只需导航到其仪表盘面板并进行所需更改。您可以创建新文章、页面，激活插件并更改活动主题。您甚至可以进入自定义器，修改各种自定义选项。
+![带有复制站点切换开关的添加站点模板模态窗口](/img/config/site-templates-list.png)
 
-所有这些数据将在客户基于该站点模板创建新站点时被复制过来。
+### 自定义站点模板的内容 {#customizing-the-contents-of-a-site-template}
 
-### Advanced Options
+要自定义你的站点模板，只需导航到其 Dashboard 面板并进行所需更改。你可以创建新的文章、页面，启用插件并更改启用中的主题。你甚至可以进入自定义器并更改各种自定义选项。
 
-如果您熟悉一些自定义编码，您可以使用我们的搜索和替换 API，在新站点创建后自动替换信息。这对于替换关于页面上的公司名称、联系页面上的联系电子邮件等非常有用。
+![站点模板编辑界面](/img/config/site-template-edit.png)
 
-### Using Site Templates
+当客户基于该站点模板创建新站点时，所有这些数据都会被复制过去。
 
-好的，您已经创建了一堆不同设计、主题和设置的站点模板。现在如何让它们在您的网络中发挥作用？
+### 高级选项 {#advanced-options}
 
-基本上，您现在可以使用两种方法（不能同时使用）：
+如果你熟悉一些自定义编码，可以使用我们的搜索和替换 API，在新站点创建后自动替换其中的信息。这适用于诸如替换“关于”页面上的公司名称、替换“联系”页面上的联系邮箱等情况。
 
-  * 为每个计划附加一个站点模板
+### 使用站点模板 {#using-site-templates}
 
-**OR**
+好的，你已经创建了一批具有不同设计、主题和设置的站点模板。那么现在如何让它们在你的网络中发挥作用？
 
-  * 允许您的客户在注册时自行选择站点模板。
+基本上，你现在可以使用两种方法（不能同时使用）：
 
-#### Mode 1: Assign Site Template
+  * 将一个站点模板附加到你的每个方案
 
-在此模式下，您的客户在创建账户时无法选择模板，而是您将定义每个计划应使用的模板。
+**或者**
 
-为此，您需要转到 **Ultimate Multisite > Products > Edit**。
+  * 允许你的客户在注册期间自行选择站点模板。
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+#### 模式 1：分配站点模板 {#mode-1-assign-site-template}
 
-这将带您进入 **Edit Produc** t 页面。在 **Product Options** 部分，找到 **Site template** 选项卡，并从下拉字段中选择 **Assign Site** **Template** 选项。这将显示可用站点模板列表，并允许您仅为该产品选择一个专用站点模板。
+在此模式下，客户在创建 Account 时无法选择模板，而是由你定义每个方案应使用哪个模板。
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+为此，你需要前往 **Ultimate Multisite > 产品 > 编辑**。
 
-#### Mode 2: Choose Available Site Template
+![编辑产品以分配站点模板](/img/config/product-site-templates.png)
 
-在此模式下，您将在注册过程中为客户提供选择。客户将能够从您在产品设置中定义的不同站点模板中进行选择。您可以选择限制他们在所选产品下可选择的站点模板。这将使您能够在每个产品下拥有不同的站点模板集合，理想地突出更高价产品的不同功能和特性。
+这会将你带到**编辑产品**页面。在**产品选项**部分下，找到**站点模板**选项卡，并从下拉字段中选择**分配站点模板**选项。这会显示可用站点模板列表，并允许你只选择一个专用于该产品的站点模板。
 
-在 **Edit Product** 页面。在 **Product Options** 部分，找到 **Site template** 选项卡，并从下拉字段中选择 **Choose Available Site Template** 选项。这将显示可用站点模板列表，并允许您选择想要可用的站点模板。您可以通过选择其行为来完成此操作：**Available**（如果您希望站点模板包含在列表中）；_**Not Available**_（如果您希望站点模板不显示为选项）；以及 **Pre-selected**（如果您希望列表中的某个站点模板为默认选择）。
+![带有分配站点模板选项的产品站点模板选项卡](/img/config/product-site-templates.png)
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+#### 模式 2：选择可用站点模板 {#mode-2-choose-available-site-template}
 
-### Default Mode: Site template selection on the Checkout form
+在此模式下，你将在注册流程中为客户提供选择。他们将能够从你在产品设置下定义的不同站点模板中进行选择。你可以选择限制他们在所选产品下可选择的站点模板。这将允许你在每个产品下设置不同的站点模板集合，非常适合用于突出价格更高产品的不同功能和特性。
 
-如果您希望所有站点模板在注册期间都可用，或者不想在每个创建的产品下进行分配或指定站点模板的额外工作，那么您可以简单地在 **Checkout Form** 下设置站点模板选择。为此，您只需转到 **Ultimate Multisite > Checkout Forms**，然后点击您想要配置的表单下的 **Edit**。
+在**编辑产品**页面上。在**产品选项**部分下，找到**站点模板**选项卡，并从下拉字段中选择**选择可用站点模板**选项。这会显示可用站点模板列表，并允许你选择希望可用的站点模板。你可以通过选择其行为来完成：如果你希望该站点模板包含在列表中，请选择**可用**。如果你希望该站点模板不作为选项显示，请选择 _**不可用**_。如果你希望列出的某个站点模板成为默认选中项，请选择**预先选中**。
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+![带有行为选项的选择可用站点模板](/img/config/product-site-templates.png)
 
-这将打开 **Edit Checkout Form** 页面。找到 **Template Selection** 字段并点击其下方的 **Edit**。
+### 默认模式：结账表单上的站点模板选择 {#default-mode-site-template-selection-on-the-checkout-form}
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+如果你希望所有站点模板都在注册期间可用，或者不想在你创建的每个产品下额外执行分配或指定站点模板的工作。那么你可以直接在你的**结账表单**下设置站点模板选择。为此，请前往 **Ultimate Multisite > 结账表单**，并在你希望配置的表单下点击**编辑**。
 
-将出现一个模态窗口。在 **Template Sites** 字段下，您可以选择并列出所有希望在注册期间可用的站点模板。您在此处指定的站点模板将无论用户选择了哪个产品都可用。
+这会显示**编辑结账表单**页面。找到**模板选择**字段，并点击其下方的**编辑**。
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+将出现一个模态窗口。在 **Template Sites** 字段下，你可以选择并列出所有希望在注册期间可用的网站模板。你在此处指定的网站模板将可用，无论用户选择了什么产品。
 
-### Site Template Options
+![结账表单编辑器中的模板选择字段](/img/config/checkout-form-template-step.png)
 
-在 Ultimate Multisite 设置中还有其他可开启或关闭的站点模板功能。
+在前端，客户会在结账期间看到模板选择器，并可以为他们的新网站选择起始设计。
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![注册期间的前端模板选择器](/img/config/frontend-template-chooser.png)
 
-#### Allow Template Switching
+### 网站模板选项 {#site-template-options}
 
-启用此选项将允许您的客户在账户和站点创建后，在注册过程中切换他们选择的模板。这从客户的角度来看很有用，因为它允许他们在后来发现原始选择并非最适合其特定需求时重新选择模板。
+还有其他可在 Ultimate Multisite 设置下开启或关闭的网站模板功能。
 
-#### Allow Users to use their Site as templates
+![Ultimate Multisite 设置中的网站模板选项](/img/config/settings-sites-templates-section.png)
 
-由于子站点用户花时间构建和设计自己的站点，他们可能希望克隆并将其用作在您的网络上创建另一个子站点时可用的站点模板之一。此选项将使他们实现这一点。
+#### 允许切换模板 {#allow-template-switching}
 
-#### Copy Media on Template Duplication
+启用此选项将允许你的客户在 Account 和网站创建后，切换他们在注册流程中选择的模板。从客户的角度来看，这很有用，因为如果他们后来发现最初选择的模板并不最适合其特定需求，就可以重新选择模板。
 
-勾选此选项将把模板站点上上传的媒体复制到新创建的站点。此设置可在每个计划中被覆盖。
+#### 允许用户将其网站用作模板 {#allow-users-to-use-their-site-as-templates}
 
-#### **Prevent Search Engines from indexing Site Templates**
+由于子网站用户花时间构建和设计了自己的网站，他们可能希望在你的网络中创建另一个子网站时，克隆并将其用作可用的网站模板之一。此选项将允许他们实现这一点。
 
-如本文所述，站点模板是模板，但仍是您网络的一部分，这意味着它们仍可被搜索引擎发现。此选项将允许您隐藏站点模板，以便搜索引擎无法索引它们。
+#### 模板复制时复制媒体 {#copy-media-on-template-duplication}
 
-## Pre-populating Site Templates with auto search-and-replace
+勾选此选项会将模板网站上上传的媒体复制到新创建的网站。此设置可以在每个套餐中被覆盖。
 
-Ultimate Multisite 最强大的功能之一是能够在注册表单中添加任意文本、颜色和选择字段。一旦我们捕获到这些数据，我们就可以用它来预填充所选站点模板中某些部分的内容。然后，当新站点发布时，Ultimate Multisite 将用注册期间输入的实际信息替换占位符。
+#### **防止搜索引擎索引网站模板** {#prevent-search-engines-from-indexing-site-templates}
 
-例如，如果您希望在注册期间获取最终用户的公司名称并自动将公司名称放在首页。在您的模板站点首页，您需要添加占位符，如下图所示（占位符应被双大括号包围 - {{placeholder_name}}）。
+本文讨论的网站模板是样板内容，但仍然是你网络的一部分，这意味着搜索引擎仍然可以找到它们。此选项将允许你隐藏网站模板，以便搜索引擎可以索引它们。
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+## 使用自动搜索和替换预填充网站模板 {#pre-populating-site-templates-with-auto-search-and-replace}
 
-然后，您只需在结账表单中添加一个匹配的注册字段来捕获该数据：
+Ultimate Multisite 最强大的功能之一，是能够向注册表单添加任意文本、颜色和选择字段。一旦我们捕获了这些数据，就可以用它来预填充所选网站模板某些部分中的内容。然后，当新网站发布时，Ultimate Multisite 会将占位符替换为注册期间输入的实际信息。
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+例如，如果你希望在注册期间获取终端用户的公司名称，并自动将公司名称放到首页上。你需要在模板网站首页添加占位符，如下图所示（占位符应使用双大括号包围添加 - {{placeholder_name}}）。
 
-您的客户随后将能够在注册期间填写该字段。
+![带有大括号占位符文本的首页](/img/config/site-templates-list.png)
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+然后，你只需在结账表单上添加一个匹配的注册字段来捕获该数据。用于模板选择的同一个结账表单编辑器，也允许你将自定义字段与模板选择器放在一起：
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+![结账表单编辑器中的模板选择和注册字段](/img/config/checkout-form-template-step.png)
 
-Ultimate Multisite 将随后自动用客户提供的数据替换占位符。
+然后，你的客户就能在注册期间填写该字段。
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+![带有模板选择器的前端结账表单](/img/config/frontend-template-chooser.png)
 
-### Solving the "template full of placeholders" problem
+Ultimate Multisite 随后会自动将占位符替换为客户提供的数据。
 
-这一切都很好，但我们确实遇到了一个丑陋的问题：现在我们的站点模板——客户可以访问的——充满了无聊的占位符，无法提供太多信息。
+![网站上替换为客户数据的占位符](/img/config/site-templates-list.png)
 
-为了解决这个问题，我们提供了为占位符设置虚假值的选项，并在客户访问期间使用这些值在模板站点上搜索并替换其内容。
+### 解决“模板满是占位符”的问题 {#solving-the-template-full-of-placeholders-problem}
 
-您可以通过转到 **Ultimate Multisite > Settings > Sites** 并在侧边栏中点击 **Edit Placeholders** 链接来访问模板占位符编辑器。
+所有这些都很好，但我们确实会遇到一个不美观的问题：现在我们的网站模板——客户可以访问——充满了难看的占位符，且不能说明太多信息。
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+为了解决这个问题，我们提供了为占位符设置虚拟值的选项，并且在客户访问模板网站时，我们会使用这些值来搜索并替换模板网站上的内容。
 
-这将带您进入占位符内容编辑器，您可以在其中添加占位符及其相应内容。
+你可以前往 **Ultimate Multisite > Settings > Sites**，然后在侧边栏点击 **Edit Placeholders** 链接，访问模板占位符编辑器。
 
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Sites 设置页面下的网站模板设置](/img/config/settings-sites-templates-section.png)
+
+这会将你带到占位符内容编辑器，你可以在其中添加占位符及其对应内容。
+
+![模板占位符内容编辑器入口](/img/config/settings-sites-templates-section.png)

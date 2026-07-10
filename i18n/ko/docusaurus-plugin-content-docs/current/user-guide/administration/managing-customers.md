@@ -3,7 +3,7 @@ title: 고객 관리
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# 고객 관리
+# 고객 관리 {#managing-customers}
 
 **Customers** 페이지는 네트워크에 등록된 회원 목록을 보여줍니다. 이 페이지는 이름, 이메일 주소, 마지막 로그인 및 사용자의 하위 사이트에 사이트 관리자 권한으로 로그인할 수 있는 **switch to** 링크를 포함한 기본 사용자 정보를 표시합니다.
 

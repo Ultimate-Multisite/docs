@@ -3,13 +3,13 @@ title: Esimene subskriptiooniprodukti loomine
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Esimeseabõdu esimene subskriptiooniprodukti (v2)
+# Esimeseabõdu esimene subskriptiooniprodukti (v2) {#creating-your-first-subscription-product-v2}
 
 _**TÄHTIS NOTE: See artikkel on ainult Ultimate Multisite versiooni 2.x kasutajatele. Kui te kasutate versiooni 1.x,**_ **_vaata seda artiklit**_**.
 
 Võrgu käivitamiseks ja teenuste müügude algamise jaoks peab teil erinevaid subskriptioonivõimalusi. Kuidas luute neid artiste? Millise tüüpi artiste saate pakutada? Sellel artiklis käitemine on kõik, mida te peate teada nende kohta.
 
-## Artikkeltyüp
+## Artikkeltyüp {#product-type}
 
 Ultimate Multisite abil saate oma klientidele kaks kategorilist artiste pakkuda: **pläne** ja **add-ons (Order Bump)**. Add-onid saab jagada kaheks tüüpi: **pakettid** ja **teenused**. Näelame nende erinevusi ja eriklassid järgmises osas.
 
@@ -19,7 +19,7 @@ Ultimate Multisite abil saate oma klientidele kaks kategorilist artiste pakkuda:
 
   * **Teenused**: add-onid, mis ei muuta Ultimate Multisite funktsioone. Need on ülesanded, mida te suutate klientide jaoks plaaniga ostnud nende lisaks realiseerida. Näiteks võib teie klient osta plaani, mis võimaldab ühe veebilehti, ja samal ajal maksuda lisateenuse eest, mis selle veebilehe disaini teeb.
 
-## Artikkelide haldamine
+## Artikkelide haldamine {#managing-products}
 
 Paljudelised kasutajatele võib Ultimate Multisite-nimega **Products** tab (Ultimate Multisite > Products) võrrelda traditsioonilise hoolduskeskkonna plaanidega.
 
@@ -29,7 +29,7 @@ See osade juhendab teid selle olulise alustiku Ultimate Multisite-is.
 
 ![Products list page](/img/config/products-list.png)
 
-## Toote lisamine
+## Toote lisamine {#adding-products}
 
 Kas see plaan on, pakett või teenus, mis uue esinemise punkt on **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Aki sisaldab kaks peamist osakonda. Vasakul on mitu välilehte, mis aitavad toot
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Kirjeldus
+### Kirjeldus {#description}
 
 Alustava toote teavet saab definitsionaalselt seada antudes toote nimi ja kirjeldus. Need tunnused näidatakse igal kohas, kus on vaja toote teavet, nagu plaanide ja hinnakohitamise valikud, faktuurid, uuendused ja nii.
 
 ![Product description section](/img/config/product-description.png)
 
-### Hinnaklass
+### Hinnaklass {#pricing-type}
 
 Aki paremal pool on võimalik definitsionaalselt seada alustav hinda.
 
@@ -53,7 +53,7 @@ Aki paremal pool on võimalik definitsionaalselt seada alustav hinda.
 
 Ultimate Multisite toetab kolme erinevat hinnaklassi. **Paid** (maksutud) valik küsib võrkuadministraatorilt teavet toote hinnast ja lahkumise sagedustest.
 
-### Hinda seadmine
+### Hinda seadmine {#pricing}
 
 Hinda komponent määratleb alustava toote hinnan ja lahkumise intervallit.
 
@@ -61,7 +61,7 @@ Hinda komponent määratleb alustava toote hinnan ja lahkumise intervallit.
 
 seega näiteks $29,99 hinnaga ja 1 kuudise seadusega on lahendus iga jooni jooksul $29,99. Samuti $89,97 hinnaga ja 3 kuudise seadusega on selle summa iga kvartali jooksul.
 
-### Lahtimisajad (Billing Cycles)
+### Lahtimisajad (Billing Cycles) {#billing-cycles}
 
 Lahtimisajad osas määratavad eelmänel lahenduse sagedust ja mõistatakse üldiselt lepingute või fikseeritud perioodide kontekstis.
 
@@ -69,7 +69,7 @@ Lahtimisajad osas määratavad eelmänel lahenduse sagedust ja mõistatakse üld
 
 Näiteks, kui toote hind on $29,99 ja seadusega 1 kuu ja 12 lahtimisajad, siis toote eest tuleb iga jooni jooksul $29,99 kuud jooksul järgmiste 12 kuudise aja jooksul. Teiselt sõnastuselt see seaduseelade asub fikseeritud hinnakohana $29,99 kuud ja lõpetab lahtimise.
 
-### Protsessikord (Trial Period)
+### Protsessikord (Trial Period) {#trial-period}
 
 Offer trial toggle'i aktiveerimine võimaldab võrerekadministratoril määrata toote jaoks protsessikorda.
 
@@ -77,7 +77,7 @@ Offer trial toggle'i aktiveerimine võimaldab võrerekadministratoril määrata 
 
 Protsessikorda ajal on klient saab toote kasutada ja teda ei lahtita, kuni protsessikord on lõpetatud.
 
-### Seadistamise tasu (Setup Fee)
+### Seadistamise tasu (Setup Fee) {#setup-fee}
 
 Võite ka kohaldada seadistamise tasu oma plaanile.
 
@@ -85,7 +85,7 @@ Võite ka kohaldada seadistamise tasu oma plaanile.
 
 See tähendab, et teie klient maksab esimesel lahtimisega lisakohana (hinnakaasa hinnaplaani), mis vastab selle tasule, mida te definitsite selles osas.
 
-### Aktiivne (Active)
+### Aktiivne (Active) {#active}
 
 Aktiivse toggle'i aktiveerimine määratleb tõhusalt, kas toote on saadaval klientide uute registreerimist jaoks.
 
@@ -93,22 +93,22 @@ Aktiivse toggle'i aktiveerimine määratleb tõhusalt, kas toote on saadaval kli
 
 Kui on võimalik, et olemasoleva klientide korral selle plaan seadistuse sulgemine lüliti lahtumise asendab plaanid ja eemaldab selle tulevikus tulevate registreerimist. **Olemasolevad klientid plaanil jätkavad lahendamise** kuni nad on üülesõidu uue plaani või plaanist eemaldatud.
 
-### Toodebild
+### Toodebild {#product-image}
 **Upload Image** (Pildiku üleslaadimise) nupp võimaldab võrku administraatorit kasutada mediabibliot teadaid toote pildi valimiseks või üleslaadimiseks.
 
 ![Product image section](/img/config/product-image.png)
 
-### Eemaldamine
+### Eemaldamine {#delete}
 **Delete Product** (Toote eemaldamine) nupp eemaldab toote süsteemis. See ilmub pärast seda, kui toode on avaldatud.
 
 ![Delete product section](/img/config/product-delete.png)
 
 Eemaldamise tegemise puhul ei ole toodet paigutatud korvi osas. Seetõttu eemaldamine on ütlematav.
 
-### Toote valikud
+### Toote valikud {#product-options}
 Kui põhilisest toote teavet on määratletud, aitavad **Product Options** (Toote valikud) võrku administraatorit määrama toote spetsiifilisi omadusi.
 
-#### Üldised
+#### Üldised {#general}
 **General** (Üldised) tab määratleb ülestoote üldised omadused, mis ei ole kaasatud muid toote-spetsiifiliste tabidele.
 
 ![General tab](/img/config/product-general-tab.png)
@@ -121,7 +121,7 @@ Ultimate Multisite toetab mitmeid toote tüüpe: Plan (Plaani), Package (Pakendi
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Upgrade ja Allumise
+#### Upgrade ja Allumise {#up--downgrades}
 
 See tab määrab, millised allumise ja allaallumise võimalused on kaisa klientile oma konkreetse taseme jooksul saadaval.
 
@@ -139,7 +139,7 @@ Plaani pooli definointiks määrate kooskõlas olevad plaadid **plaani pooli** n
 
 Ultimate Multisite sisaldab ka **order bump** funktsiooni, kus sobivaid lisatooteid ja -teenuseid saab plaadidele lisada. Need pakutakse klientile lisateemena, mida saab lisada plaadidele kassas või allumise ajal.
 
-#### Hinnakohangud
+#### Hinnakohangud {#price-variations}
 
 Hindratevõtme võimaldavad võrkuadministraatoril määrata alternatiivseid hinnatseja taseme sõltuvalt ajast. See settring võimaldab pakkuda sama toote jaoks erinevaid lahkumiseaegusi, nagu kuudlik, kvartalik, aastane või misige muu lahkumiseaeg. Näiteks saate määrata toote $29.99/kuus hinnaga ja diskretsiooni aastale $249.99-ga.
 
@@ -161,7 +161,7 @@ Näiteks, kui teie põhitoote hind on $29.99 kuus, saate lisada:
 Hinnatseja variantid üksi väärtust ei lisa esitegevuskonna lahkumiseaegse seadistust. Et võimaldada kliendide vahetada lahkumiseaedade vahel (nt Kuudlik / Aastane), peate lisama lahkumiseaegse valikule **Period Selection** (Perioodi valik) sulgusevormi. Vaata [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) ülesande järgi samm-samme juhiste saamiseks.
 :::
 
-#### Kulud
+#### Kulud {#taxes}
 
 **Taxes** (Kulud) tabel on seotud kulude seadistustega, mida määratakse **Ultimate Multisite > Settings > Taxes** ja konkreetseks kulude hinnatustega. Kulude aktiveerimiseks ja kehtestuste määramiseks võite vaadata dokumentatsiooni [Ultimate Multisite: Settings] all.
 
@@ -175,7 +175,7 @@ Kui maksu tasand on määratud **Ultimate Multisite > Settings > Manage Tax Rate
 
 Et tähistada, et toode on maksetav, lülitage sisse **Is Taxable** -liit (toggle) ja valige kehtiv maksu tasand Tax Category -valikust.
 
-#### Sitatemaid (Site Templates)
+#### Sitatemaid (Site Templates) {#site-templates}
 
 Lõpulemaalt on sitatemaid täielikult WordPress-veebileht, mida klienti asutamise alguses klonitakse nende lehel.
 
@@ -197,7 +197,7 @@ Viimnis, **C** **Choose Available Site Templates** ületab vormi lahenduse sammu
 
 Lõpuks, kui võrkuadministrator soovib, et templati valikut toimuaks vormi lahenduse sammudel, siis ' _default_ ' nastub määratamine piisab. Alternatiivseks, et eemaldada ja luksta templati valikuvõtja ning delegereerida valikuvõtja plaanimäärustele, võivad olla soovitatavad ' _assign new template_ ' või ' _choose available site templates_ ' valikud.
 
-#### Sised
+#### Sised {#sites}
 
 **Sites** tab on Ultimate Multisite'i piirangute funktsionaalsuse osa.
 
@@ -207,7 +207,7 @@ See nastub määrab, kui palju sissejuhatatud kasutaja saab oma li membershipi a
 
 Piirangut aktiveerimiseks lülitage **limit sites** registre sulge (active state) ja määratage maksimaalne numberite site allowance -väljas.
 
-#### Kuidas
+#### Kuidas {#visits}
 
 **Visits** tab on Ultimate Multisite'i piirangute süsteemi lisakogus. See nastub võimaldab arvestada ja sellele järgnev lahendamine ainulaiste külastajate kasutaja veebile.
 
@@ -219,7 +219,7 @@ Selle funktsiooni kasutamiseks lülitage **limit unique visits** (unika külastu
 
 Kui see piir on ületatud, ei teenida Ultimate Multisite klientide veebileid, vaid näitab sõnumit selle kohta, et piired on ületatud.
 
-#### Kasutajad
+#### Kasutajad {#users}
 
 Ultimate Multisite'i 'Users' (Kasutajad) piirused võimaldavad networkadministratoril määrata piire kasutajate loomise ja rollide küsimise arvu.
 
@@ -229,7 +229,7 @@ Piirustamise funktsiooni aktiveerimiseks lülitage **limit user** (kasutaja piir
 
 Järgmine iga rolli piirustamiseks lülitage selle kõrval olev toggle sisse aktiivse oleku ja määratage maksimaalne ülemine piir vastuvõtva välja.
 
-#### Post Tüüpid
+#### Post Tüüpid {#post-types}
 
 **Post Types** (Sisu tüüpid) tab võimaldab networkadministratoril määrata üksikasjalisi piire WordPressi laialikust post tüüpide üle.
 
@@ -241,7 +241,7 @@ Selle piirustamise subsüsteemi aktiveerimiseks lülitage **limit post types** (
 
 Järgmine on iga posttüüpi jaoks piirustamise aktiveerimine: liige selle üles suunamiseks paremale ja määratage vastava välja maksimaalne ülemine väärtus õiguses oleva sälja.
 
-#### Diski ruumi
+#### Diski ruumi {#disk-space}
 
 **Disk Space** tab võimaldab võrerekendjate piirata klientide poolt kasutatavae ruumi.
 
@@ -253,13 +253,13 @@ Diski kasutamise piirustamiseks aktiveerige **limit disk size per site** liiguta
 
 Seededes määrate maksimaalse ülemine väärtus megabajtides **disk space allowance** välja.
 
-#### Kasutusdomaanid
+#### Kasutusdomaanid {#custom-domain}
 
 See valik aktiividesel aktiveerimisel saate võimaldada kasutusdomaane ainult selle plaanil.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Teemad
+#### Teemad {#themes}
 
 Toote valikute **Themes** tab võimaldab võrerekendjal piirata teemade kasutajatele valikuks ja valikult pakutada, samuti abiandlikult määratada teema oleku.
 
@@ -277,7 +277,7 @@ _**Märkus: Et teemad oleksid kasutajatele saadaval, tuleb neil aktivere võrere
 
 Käesoleva seisundisega on teema kaisa, et kasutaja saab seda itse aktiveerida. Küll aga ebatavaline seisund on sellel kasutajal võimaluse puudutamine tema aktiveerimiseks. Viimeks **Force Activate** valik pakuvad tema valimist ja aktiveerimise pakkuja poolt, seades selle oletuseks uue veebilehva loomisel.
 
-#### Pluginid
+#### Pluginid {#plugins}
 
 Samuti nagu Theme-välil, Ultimate Multisite võimaldab võrerekadministratoril määrata pluginide nähtavust klientidele samuti kui nende seisundit uue veebilehva loomisel.
 
@@ -297,7 +297,7 @@ Lülit **Force Activate & Lock** seade toimib samuti, kuid see vähendab kasutaj
 
 Võrreja võib arvestada Force Activate & Lock ja Force Inactivate & Lock seadeid koos veebilehja mallidega, kui pluginid on aktiveeritud, kuna need seaded võivad mõjutada mallide staatust, kui neid valitud.
 
-#### Tagastandimise piirangud
+#### Tagastandimise piirangud {#reset-limitations}
 
 **Reset Limitations** tab tagastab kõik sellele kasutaja määratud kogutud piirangud toote kohta. Piirangute tagastamiseks klõpsake **reset limitations** nupulile.
 
@@ -307,7 +307,7 @@ Tegevuse kinnitamiseks liiga **confirm reset** lühi seade parema olekuks ja kl�
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Toote muutmise, duplikat või eemaldamine
+## Toote muutmise, duplikat või eemaldamine {#edit-duplicate-or-delete-product}
 
 Käesolevaid toote saab muuta, duplikat või eemaldada navigeerides **Ultimate Multisite > Products** ja liigutades olemasoleva toote nime üle.
 

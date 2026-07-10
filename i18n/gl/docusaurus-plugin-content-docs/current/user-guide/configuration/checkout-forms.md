@@ -3,7 +3,7 @@ title: Formularios de pago
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularios de Pago (Checkout Forms)
+# Formularios de Pago (Checkout Forms) {#checkout-forms}
 
 Os Formularios de Pago son unha forma fácil e flexible de experimentar diferentes enfoques ao intentar converter novos clientes.
 
@@ -36,13 +36,13 @@ Alternativamente, podes editar ou duplicar os formularios que já tens facendo c
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Visión Geral do Editor de Formularios de Checkout
+#### Visión Geral do Editor de Formularios de Checkout {#checkout-form-editor-overview}
 
 O editor de formularios de checkout proporciona unha interfaz completa para construir os teus formularios de registo. Aquí tes unha visión geral do enxeito:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Editar un Formulario de Checkout
+### Editar un Formulario de Checkout {#editing-a-checkout-form}
 
 Podés crear formularios de checkout para diferentes propósitos. Neste exemplo traballaremos con un formulario de registo.
 
@@ -112,7 +112,7 @@ Para obter o shortcode do teu formulario, pulsa en "Generate Shortcode" (Xerar S
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### O Campo da Tabela de Precios
+### O Campo da Tabela de Precios {#the-pricing-table-field}
 
 O campo **Pricing Table** (Tabela de Precios) mostra os teus produtos no formulario de checkout para que os clientes puedan escoller un plan. Ao editar este campo, podes configurar varias opcións:
 
@@ -130,17 +130,17 @@ Así é como aparece a tabela de precios no formulario de registo do frontend:
 
 Se adicionares un produto á Tabela de Precios antes de que o formulario incluí os campos necesarios para completar o flujo de checkout daquele produto, o editor agora mostra unha advertencia. Usa esa advertencia para añadir o campo necesario que falta antes de publicar ou salvar as modificacións para un formulario de registo en vivo.
 
-### Añadir un Interruptor de Selección de Período
+### Añadir un Interruptor de Selección de Período {#adding-a-period-selection-toggle}
 
 Se asina configurado [Price Variations](creating-your-first-subscription-product#price-variations) nos tus produtos (por exemplo, precios mensuales y anuales), podes añadir un campo de **Selección de Período** ao teu formulario de checkout. Este campo mostra un interruptor que permite aos clientes cambiar entre períodos de facturación, e a tábula de precios actualiza dinamicamente en tempo real.
 
-#### Passo 1: Configurar as Variantes de Prezo nos Teus Produtos
+#### Passo 1: Configurar as Variantes de Prezo nos Teus Produtos {#step-1-set-up-price-variations-on-your-products}
 
 Antes de añadir o campo Selección de Período, asegúrate de que os teus produtos ten variantes de prezo configuradas. Ve a **Ultimate Multisite > Products**, edita un produto e navega á pestaña **Price Variations** para añadir períodos de facturación alternativos (por exemplo, Anual con un prezo descontado).
 
 ![Pestaña Price Variations en un producto](/img/config/product-price-variations-tab.png)
 
-#### Passo 2: Añadir o Campo Selección de Período ao Teu Formulario de Checkout
+#### Passo 2: Añadir o Campo Selección de Período ao Teu Formulario de Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Ve a **Ultimate Multisite > Checkout Forms** e edita o teu formulario de checkout.
 
@@ -163,13 +163,13 @@ Antes de añadir o campo Selección de Período, asegúrate de que os teus produ
 
 7. Clicar en **Save Field**.
 
-#### Passo 3: Posicionar o Campo Acima da Tabela de Preços
+#### Passo 3: Posicionar o Campo Acima da Tabela de Preços {#step-3-position-the-field-above-the-pricing-table}
 
 Para a melhor experiência do utilizador, certifique-se de que o campo Seleção de Período aparece **antes** do campo Tabela de Preços no seu passo de checkout. Pode arrastar os campos para reordená-los no editor do formulário de checkout. Desta forma, os clientes escolhem primeiro um período de fatura e depois veem os preços para esse período.
 
 ![Editor do formulário de checkout mostrando a ordem dos campos](/img/config/checkout-form-editor-with-fields.png)
 
-#### Como Funciona no Frontend
+#### Como Funciona no Frontend {#how-it-works-on-the-frontend}
 
 Depois de configurado, os clientes que visitarem a sua página de registo verão o seletor de período acima da tabela de preços. Quando clicam num período de fatura diferente:
 
@@ -177,7 +177,7 @@ Depois de configurado, os clientes que visitarem a sua página de registo verão
   * Se **Force Different Durations** estiver desativado no campo Tabela de Preços, os produtos sem variação de preço para o período selecionado ficarão ocultos.
   * Se **Force Different Durations** estiver ativado, todos os produtos permanecem visíveis mesmo que não tenham uma variação para o período selecionado (mostrarão o seu preço padrão).
 
-#### Pré-selecionar um Período de Fatura através da URL
+#### Pré-selecionar um Período de Fatura através da URL {#pre-selecting-a-billing-period-via-url}
 
 Também pode pré-selecionar um produto e um período de fatura através da URL. O Ultimate Multisite suporta estes padrões de URL:
 
@@ -185,11 +185,11 @@ Também pode pré-selecionar um produto e um período de fatura através da URL.
   * `/register/premium/12` — Pré-seleciona o produto e a duração de 12 meses
   * `/register/premium/1/year` — Pré-seleciona o produto com uma duração de 1 ano
 
-### O Campo de Seleção de Modelo (Template Selection Field)
+### O Campo de Seleção de Modelo (Template Selection Field) {#the-template-selection-field}
 
 O campo **Seleção de Modelo** permite aos clientes escolher um modelo de site durante o checkout. Este campo está agora incluído por padrão nos modelos de formulário de checkout de passo único (*single step*) e de múltiplos passos (*multi-step*) adicionados no Ultimate Multisite v2.6.1.
 
-#### Adicionar o campo manualmente
+#### Adicionar o campo manualmente {#adding-the-field-manually}
 
 Se estás a traballar con un formulario que se creou antes da v2.6.1, ou que se iniciou a partir de un modelo en branco:
 
@@ -200,11 +200,11 @@ Se estás a traballar con un formulario que se creou antes da v2.6.1, ou que se 
    - **Label** — O título que veen os clientes arriba da grelha de modelos (exemplo: "Escolña un modelo de sitio").
    - **Required** — Se os clientes deben seleccionar un modelo antes de continuar.
 
-#### Como funciona
+#### Como funciona {#how-it-works}
 
 Cando un cliente escolle un modelo durante o checkout, Ultimate Multisite usa ese modelo ao configurar o seu novo sitio. Os modelos que se mostran vixen da lista de **Site Templates** (**Ultimate Multisite > Site Templates**). Só os modelos marcados como dispoñibles para os clientes aparecen aquí.
 
-### Domínios base do formulario de checkout
+### Domínios base do formulario de checkout {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 trata os domínios configurados nos campos **Site URL** do formulario de checkout como domínios base de rede. Usa as configuración de dominio disponible do campo cando que queres que os clientes creen sitios en dominios de registo compartidos, como `example.com` e `sites.example.com`.
 
@@ -212,6 +212,6 @@ Os domínios base compartidos do formulario de checkout non se tratan como mapea
 
 Guarda os domínios personalizados para hosts mapeados por cliente, como `customer-example.com`. Guarda os domínios base do formulario de checkout para hosts de registo compartidos que moitos sitios poden usar.
 
-#### Remover o campo
+#### Remover o campo {#removing-the-field}
 
 Se non ofrezces plantillas de sitio, remove o campo Selección de Plantilla do teu formulario. Os clientes recibirán a plantilla predeterminada que este configurada en **Ultimate Multisite > Settings > Site Templates**.

@@ -3,32 +3,32 @@ title: 'Lektion 3: Ställa in ditt nätverk'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lektion 3: Sätta upp ditt nätverk
+# Lektion 3: Sätta upp ditt nätverk {#lesson-3-setting-up-your-network}
 
 Nu är det dags att bygga. I denna lektion installerar du Ultimate Multisite och konfigurerar grunden för FitSite-nätverket. Varje beslut här görs med fitnessbranschen i åtanke.
 
-## Var vi slutade
+## Var vi slutade {#where-we-left-off}
 
 Vi valde fitnessstudior som vår nisch och validerade möjligheten. Nu förvandlar vi den idén till en fungerande plattform.
 
-## Välja hosting
+## Välja hosting {#choosing-your-hosting}
 
 Ditt val av hosting är viktigare för en nischplattform än för en enskild webbplats. Du hostar inte bara en sida – du hostar ett nätverk som kommer att växa till dussintals eller hundratals sidor.
 
-### Vad du ska leta efter
+### Vad du ska leta efter {#what-to-look-for}
 
 - **WordPress Multisite-stöd**: Inte alla hosts hanterar multisite bra
 - **Wildcard SSL**: Avgörande för nätverk baserade på underdomäner
 - **Skalbara resurser**: Du behöver utrymme att växa utan att behöva migrera
 - **Ultimate Multisite-integration**: Automatisk domänmappning och SSL sparar betydande driftarbete
 
-### Rekommenderat tillvägagångssätt
+### Rekommenderat tillvägagångssätt {#recommended-approach}
 
 Välj en host från listan över [Kompatibla leverantörer](/user-guide/host-integrations/closte). Dessa har testats med Ultimate Multisite och erbjuder de integrationer du behöver för domänmappning och SSL-automatisering.
 
 För FitSite kommer vi att använda en underdomänkonfiguration. Det innebär att kundernas webbplatser initialt kommer att visas som `studionamn.fitsite.com` innan de eventuellt mappar sin egen domän.
 
-## Installera WordPress Multisite
+## Installera WordPress Multisite {#installing-wordpress-multisite}
 
 Om du ännu inte har en WordPress Multisite-installation:
 
@@ -40,7 +40,7 @@ Om du ännu inte har en WordPress Multisite-installation:
 Underdomäner ger varje kundsida sin egen unika adress (`studio.fitsite.com`) istället för en sökväg (`fitsite.com/studio`). Detta är mer professionellt för dina kunder och undviker konflikter i permalänkar. Se [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) för en detaljerad jämförelse.
 :::
 
-## Installera Ultimate Multisite
+## Installera Ultimate Multisite {#installing-ultimate-multisite}
 
 Följ guiden [Installera Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) för att:
 
@@ -53,11 +53,11 @@ Under setup wizard, tänk på FitSite-nischen:
 - **Företagsnamn**: "FitSite" (eller ditt valda varumärkesnamn)
 - **Företagets logotyp**: Ladda upp ditt varumärkeslogotyp – detta visas på fakturor och e-postmeddelanden
 
-## Konfigurera för fitnessnischen
+## Konfigurera för fitnessnischen {#configuring-for-the-fitness-niche}
 
 Med Ultimate Multisite installerat, gör dessa nischspecifika konfigurationsval:
 
-### Allmänna inställningar
+### Allmänna inställningar {#general-settings}
 
 Gå till **Ultimate Multisite > Settings** och konfigurera:
 
@@ -65,7 +65,7 @@ Gå till **Ultimate Multisite > Settings** och konfigurera:
 - **Standardroll**: Administrator – fitnessstudieägare behöver full kontroll över sitt innehåll
 - **Registrering**: Aktivera användarregistrering så att studieägare kan registrera sig själva
 
-### E-postkonfiguration
+### E-postkonfiguration {#email-configuration}
 
 Dina systeme-e-postmeddelanden ska tala språket i din nisch. Gå till **Ultimate Multisite > Settings > Emails** och anpassa:
 
@@ -75,7 +75,7 @@ Dina systeme-e-postmeddelanden ska tala språket i din nisch. Gå till **Ultimat
 
 Vi kommer att förfina dessa ytterligare i Lektion 8 (Kundonboarding), men att sätta tonen nu säkerställer att även tidiga testregistreringar känns nischspecifika.
 
-### Domänkonfiguration
+### Domänkonfiguration {#domain-configuration}
 
 Om du använder en kompatibel hostingleverantör, konfigurera domänmappningen nu:
 
@@ -85,7 +85,7 @@ Om du använder en kompatibel hostingleverantör, konfigurera domänmappningen n
 
 Detta säkerställer att när vi börjar skapa mallar och testwebbplatser i nästa lektion, fungerar allt från början till slutet.
 
-## FitSite-nätverket hittills
+## FitSite-nätverket hittills {#the-fitsite-network-so-far}
 
 I slutet av denna lektion har du:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Redo för webbplatsmallar (nästa lektion)
 ```
 
-## Vad vi byggde i denna lektion
+## Vad vi byggde i denna lektion {#what-we-built-this-lesson}
 
 - **En fungerande WordPress Multisite**-installation i underdomänläge
 - **Ultimate Multisite installerat** och konfigurerat med FitSite-varumärket

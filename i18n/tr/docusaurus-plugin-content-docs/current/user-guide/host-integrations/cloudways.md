@@ -1,21 +1,21 @@
 ---
 title: Cloudways Entegrasyonu
 sidebar_position: 3
-_i18n_hash: 931ac98efe704dc50c74537ea2676529
+_i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Entegrasyonu
+# Cloudways Entegrasyonu {#cloudways-integration}
 
-## Genel Bakış
-Cloudways, WordPress sitelerinizi DigitalOcean, AWS, Google Cloud ve daha birçok bulut sağlayıcısına deploy etmenizi sağlayan yönetilen bir bulut hosting platformudur. Bu entegrasyon, Ultimate Multisite ile Cloudways arasında otomatik alan adı senkronizasyonu ve SSL sertifika yönetimi yapmanızı sağlar.
+## Genel Bakış {#overview}
+Cloudways, WordPress sitelerini DigitalOcean, AWS, Google Cloud ve daha fazlası gibi çeşitli bulut sağlayıcılarında dağıtmanıza olanak tanıyan yönetilen bir bulut hosting platformudur. Bu entegrasyon, Ultimate Multisite ile Cloudways arasında otomatik alan adı senkronizasyonu ve SSL sertifika yönetimi sağlar.
 
-## Özellikler
+## Özellikler {#features}
 - Otomatik alan adı senkronizasyonu
 - SSL sertifika yönetimi
-- Ekstra alan adı desteği
+- Ek alan adları desteği
 - SSL sertifikaları için DNS doğrulaması
 
-## Gereksinimler
-Aşağıdaki sabitlerin `wp-config.php` dosyanızda tanımlanması gerekir:
+## Gereksinimler {#requirements}
+Aşağıdaki sabitler `wp-config.php` dosyanızda tanımlanmış olmalıdır:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -30,24 +30,24 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. Cloudways API Bilgilerinizi Alın
+### 1. Cloudways API Kimlik Bilgilerinizi Alın {#1-get-your-cloudways-api-credentials}
 
-1. Cloudways kontrol panelinize giriş yapın
-2. "Account" > "API Keys" bölümüne gidin
+1. Cloudways panonuza giriş yapın
+2. "Account" > "API Anahtarları" bölümüne gidin
 3. Henüz yoksa bir API anahtarı oluşturun
 4. E-posta adresinizi ve API anahtarınızı kopyalayın
 
-### 2. Sunucu ve Uygulama ID'lerinizi Alın
+### 2. Server ve Application ID'lerinizi Alın {#2-get-your-server-and-application-ids}
 
-1. Cloudways kontrol panelinizde "Servers" bölümüne gidin
+1. Cloudways panonuzda "Sunucular" bölümüne gidin
 2. WordPress multisite'ınızın barındırıldığı sunucuyu seçin
-3. Sunucu ID'si URL'de görünür: `https://platform.cloudways.com/server/{SERVER_ID}`
-4. "Applications" bölümüne gidin ve WordPress uygulamanızı seçin
-5. Uygulama ID'si URL'de görünür: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
+3. Server ID URL'de görünür: `https://platform.cloudways.com/server/{SERVER_ID}`
+4. "Uygulamalar" bölümüne gidin ve WordPress uygulamanızı seçin
+5. App ID URL'de görünür: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. wp-config.php Dosyasına Sabitleri Ekleyin
+### 3. Sabitleri wp-config.php'ye Ekleyin {#3-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -58,62 +58,102 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-Her zaman dahil edilmesi gereken ek alan adlarınız varsa:
+Cloudways takma adlar listesinde her zaman tutulması gereken ek **harici** alan adlarınız (multisite ağınızın dışında) varsa:
 
 ```php
-define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domain1.com,domain2.com,*.wildcard.com');
+define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ```
 
-### 4. Entegrasyonu Etkinleştirin
+:::warning Kendi ağınızın wildcard'ını eklemeyin
+`WU_CLOUDWAYS_EXTRA_DOMAINS` içine `*.your-network.com` (veya kendi ağınızın herhangi bir alt alan adı kalıbını)
+**eklemeyin**. Bunun kiracı başına SSL sertifikalarının verilmesini neden engellediğini görmek için aşağıdaki
+[Önemli — wildcard SSL tuzağı](#important--wildcard-ssl-pitfall) bölümüne bakın.
+:::
 
-1. WordPress yönetici panelinizde Ultimate Multisite > Settings bölümüne gidin
-2. "Domain Mapping" sekmesine gidin
-3. "Host Integrations" bölümüne kaydırın
+### 4. Entegrasyonu Etkinleştirin {#4-enable-the-integration}
+
+1. WordPress admin alanınızda Ultimate Multisite > Ayarlar bölümüne gidin
+2. "Alan Adı Eşleme" sekmesine gidin
+3. "Host Entegrasyonları" bölümüne kadar aşağı kaydırın
 4. Cloudways entegrasyonunu etkinleştirin
-5. "Save Changes" butonuna tıklayın
+5. "Değişiklikleri Kaydet"e tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Alan Adı Senkronizasyonu
+### Alan Adı Senkronizasyonu {#domain-syncing}
 
-Ultimate Multisite'ta bir alan adı eşlendiğinde:
+Ultimate Multisite içinde bir alan adı eşlendiğinde:
 
-1. Entegrasyon, mevcut tüm eşlenmiş alan adlarını alır
-2. Yeni alan adını listeye ekler (uygunsa www versiyonuyla birlikte)
-3. Tüm listeyi API aracılığıyla Cloudways'e gönderir
+1. Entegrasyon, şu anda eşlenmiş tüm alan adlarını alır
+2. Yeni alan adını listeye ekler (uygunsa bir www sürümüyle birlikte)
+3. Tam listeyi API aracılığıyla Cloudways'e gönderir
 4. Cloudways, uygulamanız için alan adı takma adlarını günceller
 
-Not: Cloudways API, tek tek alan adı eklemek veya kaldırmak yerine her seferinde alan adlarının tam listesinin gönderilmesini gerektirir.
+Not: Cloudways API, yalnızca tek tek alan adları eklemek veya kaldırmak yerine her seferinde alan adlarının tam listesinin gönderilmesini gerektirir.
 
-### SSL Sertifika Yönetimi
+### SSL Sertifika Yönetimi {#ssl-certificate-management}
 
 Alan adları senkronize edildikten sonra:
 
-1. Entegrasyon, hangi alan adlarının sunucunuzu gösteren geçerli DNS kayıtlarına sahip olduğunu kontrol eder
-2. Cloudways'e bu alan adları için Let's Encrypt SSL sertifikaları yüklemesi isteği gönderir
-3. Cloudways, SSL sertifikalarının oluşturulmasını ve yüklenmesini gerçekleştirir
+1. Entegrasyon, hangi alan adlarının sunucunuzu işaret eden geçerli DNS kayıtlarına sahip olduğunu kontrol eder
+2. Bu alan adları için Let's Encrypt SSL sertifikaları yüklemek üzere Cloudways'e bir istek gönderir
+3. Cloudways, SSL sertifikasının verilmesini ve kurulumunu gerçekleştirir
 
-## Ekstra Alan Adları
+Entegrasyon, Cloudways'ten her zaman **standart** (wildcard olmayan) Let's Encrypt sertifikaları ister. `WU_CLOUDWAYS_EXTRA_DOMAINS` içinde bir wildcard kalıbı sağlanırsa, SSL isteğinden önce baştaki
+`*.` kaldırılır — wildcard'ın kendisi bu entegrasyon tarafından asla kurulmaz. Cloudways üzerinde wildcard sertifika kullanmak için bunu
+manuel olarak kurmanız gerekir, ancak bunu yapmak eşlenen özel alan adları için alan adı başına Let's Encrypt verilmesini engeller
+(aşağıdaki tuzağa bakın).
 
-`WU_CLOUDWAYS_EXTRA_DOMAINS` sabiti, Cloudways ile senkronizasyon sırasında her zaman dahil edilmesi gereken ek alan adlarını belirtmenizi sağlar. Bu şunlar için kullanışlıdır:
+## Ek Alan Adları {#extra-domains}
 
-- Ultimate Multisite tarafından yönetilmeyen alan adları
-- Wildcard alan adları (örn. `*.example.com`)
-- Geliştirme veya staging alan adları
+`WU_CLOUDWAYS_EXTRA_DOMAINS` sabiti, Cloudways uygulamasının takma adlar listesinde her zaman tutulması gereken ek **harici**
+alan adlarını belirtmenize olanak tanır. Şunlar için kullanın:
 
-## Sorun Giderme
+- Ultimate Multisite tarafından yönetilmeyen harici alan adları (ör. aynı Cloudways uygulamasını paylaşan ayrı bir pazarlama sitesi)
+- Uygulama takma adlar listesinde tutulmasını istediğiniz park edilmiş veya staging alan adları
 
-### API Bağlantı Sorunları
-- E-posta adresinizin ve API anahtarınızın doğru olduğunu kontrol edin
-- Sunucu ve uygulama ID'lerinizin doğru olduğunu kontrol edin
-- Cloudways hesabınızın gerekli izinlere sahip olduğundan emin olun
+Bu sabiti kendi ağınızın alt alan adı wildcard'ı için **kullanmayın**
+(ör. `*.your-network.com`). Aşağıdaki wildcard SSL tuzağına bakın.
 
-### SSL Sertifika Sorunları
-- Cloudways, SSL sertifikası vermeden önce alan adlarının sunucunuzu gösteren geçerli DNS kayıtlarına sahip olmasını gerektirir
-- Entegrasyon, SSL sertifikası talep etmeden önce DNS kayıtlarını doğrular
-- SSL sertifikaları verilmiyorsa, alan adlarınızın sunucunuzun IP adresine doğru şekilde yönlendirildiğini kontrol edin
+## Önemli — Wildcard SSL Tuzağı {#important--wildcard-ssl-pitfall}
 
-### Alan Adı Eklenmiyor
-- Herhangi bir hata mesajı için Ultimate Multisite günlüklerini kontrol edin
-- Alan adının Cloudways'e zaten eklenmemiş olduğunu doğrulayın
-- Cloudways planınızın eklemeye çalıştığınız alan adı sayısını desteklediğinden emin olun
+Cloudways'in varsayılan kurulumunu izlerken sık yapılan bir hata,
+`WU_CLOUDWAYS_EXTRA_DOMAINS` içine `*.your-network.com` gibi bir wildcard eklemek veya bu wildcard için manuel olarak bir Cloudways
+wildcard SSL sertifikası kurmaktır.
+
+**Bunu yaparsanız Cloudways, Ultimate Multisite'ın eşlediği kiracı başına özel alan adları için Let's Encrypt sertifikaları vermeyi reddeder.** Cloudways, uygulamadaki etkin
+SSL sertifikasını her seferinde değiştirir ve uygulamada önceden var olan bir wildcard sertifikası, entegrasyonun dayandığı alan adı başına Let's Encrypt verilmesini engeller.
+
+### Ultimate Multisite ağı için önerilen Cloudways SSL kurulumu {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
+
+1. Cloudways uygulamasının **SSL Sertifikası** sekmesinde, yalnızca `your-network.com` ve `www.your-network.com`
+   alan adlarını kapsayan **standart bir Let's Encrypt sertifikası** kurun
+   — wildcard **değil**.
+2. `WU_CLOUDWAYS_EXTRA_DOMAINS` içine `*.your-network.com` (veya kendi ağınızın herhangi bir alt alan adı kalıbını)
+   **koymayın**. Bu sabiti yalnızca **harici** alan adları için ayırın.
+3. Kiracı başına alt alan adı wildcard'ını yalnızca **DNS** düzeyinde oluşturun (`*.your-network.com` için
+   Cloudways sunucu IP'nizi işaret eden bir `A` kaydı) böylece alt siteler çözümlenir. Tek tek eşlenen özel alan adları için SSL
+   daha sonra entegrasyon tarafından Let's Encrypt aracılığıyla otomatik olarak verilir.
+
+Kiracılarınızın özel domainleri SSL olmadan takılı kaldıysa Cloudways SSL sekmesini kontrol edin. Orada bir
+wildcard sertifika etkinse, onu kaldırın, yalnızca ana network domaini için standart bir Let's Encrypt
+sertifikasını yeniden düzenleyin ve `WU_CLOUDWAYS_EXTRA_DOMAINS` içinden tüm wildcard girişlerini kaldırın. Ardından bir domain eşlemesini yeniden tetikleyin (veya bir sonrakini bekleyin)
+ve entegrasyon tekrar domain başına sertifikalar düzenlemeye başlayacaktır.
+
+## Sorun Giderme {#troubleshooting}
+
+### API Bağlantı Sorunları {#api-connection-issues}
+- E-posta adresinizin ve API keyinizin doğru olduğunu doğrulayın
+- Server ve application ID'lerinizin doğru olduğunu kontrol edin
+- Cloudways Account'unuzun gerekli izinlere sahip olduğundan emin olun
+
+### SSL Sertifikası Sorunları {#ssl-certificate-issues}
+- Cloudways, SSL sertifikaları düzenlemeden önce domainlerin serverınıza işaret eden geçerli DNS kayıtlarına sahip olmasını gerektirir
+- Entegrasyon, SSL sertifikaları istemeden önce DNS kayıtlarını doğrular
+- SSL sertifikaları düzenlenmiyorsa, domainlerinizin serverınızın IP adresine düzgün şekilde işaret ettiğini kontrol edin
+- **Kiracı başına özel domainler SSL olmadan takılı mı kaldı?** Cloudways application'ının SSL Certificate sekmesini kontrol edin. Bir wildcard sertifika (elle yüklenmiş veya `*.your-network.com` kapsamını içeren) etkinse, Cloudways tek tek eşlenen özel domainler için Let's Encrypt sertifikaları düzenlemez. Bunu yalnızca ana network domainini (`your-network.com`, `www.your-network.com`) kapsayan standart bir Let's Encrypt sertifikasıyla değiştirin ve `WU_CLOUDWAYS_EXTRA_DOMAINS` içinden tüm wildcard girişlerini kaldırın. Ardından bir domain eşlemesini yeniden tetikleyin (veya bir sonrakini bekleyin) ve entegrasyon domain başına sertifikalar isteyecektir.
+
+### Domain Eklenmedi {#domain-not-added}
+- Herhangi bir hata mesajı için Ultimate Multisite kayıtlarını kontrol edin
+- Domainin Cloudways'e zaten eklenmemiş olduğunu doğrulayın
+- Cloudways planınızın eklediğiniz domain sayısını desteklediğinden emin olun

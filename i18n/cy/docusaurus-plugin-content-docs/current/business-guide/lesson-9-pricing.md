@@ -3,17 +3,17 @@ title: 'Dysgu 9: Prifyniadau ar gyfer profith'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lesiwn 9: Prysauidau ar gyfaoedd i gael cyfathrebu
+# Lesiwn 9: Prysauidau ar gyfaoedd i gael cyfathrebu {#lesson-9-pricing-for-profit}
 
 Yn Lesiwn 5, roeddwn ni'n setio prysau cyntaf ar y planau FitSite. Mae'r hyn yn dda, mae angen ni eto gwella'r strategais o prys gyda ffurfau sydd wedi'u llwybr yn cynyddu cyfathrebu, i gynnig cyflwyniadau (upgrades) a i ddifyn y chwarae (churn).
 
-## Oedd Ni wedi Cynhaltio
+## Oedd Ni wedi Cynhaltio {#where-we-left-off}
 
 Mae FitSite gyda planau, templateau, checkout, branding, a onboarding wedi'u setio. Roedd y prysau cyntaf yn $49/$99/$199 per mudiad. Mae'n dda i ni gwella'r prysau hyn i gweithio'n ddwfnach.
 
-## Prifau Prysau ar gyfer Platformau Niche
+## Prifau Prysau ar gyfer Platformau Niche {#pricing-principles-for-niche-platforms}
 
-### Pris ar Gyllygu, Nid Ar Cost
+### Pris ar Gyllygu, Nid Ar Cost {#price-on-value-not-cost}
 
 Gall costau eich hostiastio fod yn $5-15 per site o'r cyddee. Mae hyn nid yn golygu bod eich prys yn $20. Nid eich cynrychioliwch hostiastio. Rydych chi'n cynrychioliwch:
 
@@ -24,7 +24,7 @@ Gall costau eich hostiastio fod yn $5-15 per site o'r cyddee. Mae hyn nid yn gol
 
 Pris ar gyfer y gael eich cyflwyniadau, nid cost i'w cyflwyno.
 
-### Cyddeu â'r Alternaethau
+### Cyddeu â'r Alternaethau {#anchor-to-alternatives}
 
 Pan mae rhywun o'r rheolwr studio fithrin yn ddarparu FitSite, mae hi'n deimlo gyda:
 
@@ -34,7 +34,7 @@ Pan mae rhywun o'r rheolwr studio fithrin yn ddarparu FitSite, mae hi'n deimlo g
 
 Ar $49-$199/mudiad, mae FitSite yn isonol na chydlogi ddatblygweb, yn gael ei ffyddiad mwy o ddefnyddiol na dim ond arallt, a'r fawr iawn na'r siarad.
 
-## Cyflwyno Variadau Prys
+## Cyflwyno Variadau Prys {#implementing-price-variations}
 
 Mae gaelau pren blynyddol yn gofynol i'r cyflawniad ac yn gwella chwylio (churn). Navwch i tab **Price Variations** o bob plan a refwch opsiyn blynyddol:
 
@@ -46,12 +46,12 @@ Mae gaelau pren blynyddol yn gofynol i'r cyflawniad ac yn gwella chwylio (churn)
 
 Refwch field **Period Selection** i'r ffurf cheictw your gyda'r cyd-deithio rhwng gaelau blynyddol a blynyddol. Gweld [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Pam mae pren blynyddol yn weithio?
+### Pam mae pren blynyddol yn weithio? {#why-annual-pricing-works}
 
 - **Ar gyfer chi**: Cas o'r cyntaf, chwylio isel (mae chwaraeon sy'n dalu blynyddol yn llai yn cael eu tynnu yn y cyfnod canlynol)
 - **Ar gyfer nhw**: Cynlluniau gofynol, cyflawniad arian
 
-## Cyfeiriadau Rheoli (Setup Fees)
+## Cyfeiriadau Rheoli (Setup Fees) {#setup-fees}
 
 Gofynwch un cynllun cyfeiriad ar gyfer planau sy'n cynnwys cyflawniad o ddefnyddio:
 
@@ -61,7 +61,7 @@ Gofynwch un cynllun cyfeiriad ar gyfer planau sy'n cynnwys cyflawniad o ddefnydd
 
 Refwch cynlluniau cyfeiriad ar y sicr o bob plan. Gweld [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) i gael mwy o fanylion.
 
-## Cyfnodau Cynllun (Trial Periods)
+## Cyfnodau Cynllun (Trial Periods) {#trial-periods}
 
 Mae cynnig cyfnod cynllun yn llai'r chwaraeon i ddefnyddio ond mae'n cyflwyno risg o ddifynol. Ar gyfer FitSite:
 
@@ -70,11 +70,11 @@ Mae cynnig cyfnod cynllun yn llai'r chwaraeon i ddefnyddio ond mae'n cyflwyno ri
 
 Rheoli'r trial ar sicrwydd y plan Starter gan gyflwyno'r togg **Offer Trial** a setio'r amser i 7 ddiwrnod.
 
-### Cyfathogh i ddodynau (Trials Convert)
+### Cyfathogh i ddodynau (Trials Convert) {#making-trials-convert}
 
 Mae trial yn gweithio dim ond os mae'r cydweithredwr yn cael gael gwerth yn ystod y cyfnod trial. Mae eich sicrwydd y cyflwyno (Lesson 8) yn hanfodol yma -- dylai'r e-bostau cychweidiol cael eu cyfathogh i ddefnyddio'r amser o 7 diwrnod i gysylltu â'r gweithrediad.
 
-## Codau Disconwento (Discount Codes)
+## Codau Disconwento (Discount Codes) {#discount-codes}
 
 Creu codau disconwento strategol ar gyfer pethau penodol:
 
@@ -88,7 +88,7 @@ Mynol i **Ultimate Multisite > Discount Codes** i creu hyn. Gweld [Creating Disc
 Disconwentoedd dylai fod yn weithiau strategol, nid yn ffurfau diwyll. Os mae pob un yn cael disconwento, nid yw'n disconwento -- mae'n y prys gwirioneddol eich. Defnyddiw nhw ar gyfer camau penodol, golybusau cydweithredwyr, a promosi gyda amser hanes.
 :::
 
-## Cyfathogh o Tax (Tax Handling)
+## Cyfathogh o Tax (Tax Handling) {#tax-handling}
 
 Os ydych chi yn gweithio mewn y drefn sydd â'r cyflwyno tax:
 
@@ -98,7 +98,7 @@ Os ydych chi yn gweithio mewn y drefn sydd â'r cyflwyno tax:
 
 Gwylio [Tax Handling](/user-guide/payment-gateways/tax-handling) i gynnigau am ychwanegiadau. Os ydych chi'n gwasanaethu cleiention ar all-drydd, meddwch am ychwanegiad VAT (/addons/vat) i gydnabod EU.
 
-## Adfilio'r Prifyniad eich Prifyniadau
+## Adfilio'r Prifyniad eich Prifyniadau {#reviewing-your-pricing}
 
 Ar ôl ychwanegu, gwylio ar gyfer y prifyniadau yn cyntaf. Gwylio ar:
 
@@ -107,7 +107,7 @@ Ar ôl ychwanegu, gwylio ar gyfer y prifyniadau yn cyntaf. Gwylio ar:
 - **Churn gan plan**: Os mae cleiention annwsigol yn chwylio'n ddefnyddiol yn fwy, gwneudwch prifyniadau annwsigol yn ddefnyddiol yn fwy.
 - **Cyfrif y gweithwyr cymryd**: Beth yw'r ail-gwnaethau sy'n cyfrifio? A oes eich sicr yn cael ei leoli'n dda?
 
-## Y Cyd-gynllun SiteF yn Awyrol
+## Y Cyd-gynllun SiteF yn Awyrol {#the-fitsite-network-so-far}
 
 ---
 
@@ -132,7 +132,7 @@ FitSite Network
 │   └── Cyfathrebu'r teithio (Tax configuration)
 └── Barod i ddefnyddio (y dysgu nesaf)
 
-## Beth Rydyn Ni wedi Creu y Dysgu Hwn
+## Beth Rydyn Ni wedi Creu y Dysgu Hwn {#what-we-built-this-lesson}
 
 - **Cyfraddau blwyddynol** gyda 20% o ddisconcywn i gynnig y cydweithio
 - **Cyfraddau set-up** ar y planau uwch i sicrhau'r oryddu cynhwys

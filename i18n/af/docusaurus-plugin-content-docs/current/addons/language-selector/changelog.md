@@ -1,27 +1,15 @@
 ---
-title: Taalkeuse Veranderingslog
+title: Taalkieser-veranderingslogboek
 sidebar_position: 99
-_i18n_hash: 63075b8bf58719ee9250f9384e996b2f
+_i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Taalkeuse Veranderingslog
+# Taalkieser Veranderingslogboek {#language-selector-changelog}
 
-Weergawe: 1.1.1 - Uitgereik op 2025-12-10
-* Gerepareer: Fatale fout tydens nuwe installasie.
+Weergawe: 1.1.3 - Vrygestel op 2026-05-05
+* Regstelling: Invoerveranderlikes word nou gesuiwer en pasgemaakte hook-name word met prefikse voorsien om konflikte met derdeparty-inproppe te voorkom
 
-Weergawe: 1.1.0 - Uitgereik op 2025-12-09
-* Bygevoeg: Taalkeuse vormveld aan die afrekeningsvormbouer.
+Weergawe: 1.1.2 - Vrygestel op 2026-01-01
+* Verbeter: Verenigbaarheidsopdaterings en kodegehalteverbeterings
 
-Weergawe: 1.0.0 - Uitgereik op 2025-12-09
-* Gerepareer: Verouderingskennisgewings.
-* Gerepareer: Fatale fout wanneer geïnstalleer met ander addons.
-
-Weergawe: 0.0.4 - Uitgereik op 2025-09-28
-* Hernoem voorvoegsel na ultimate-multisite; werk teksdomein by; weergawe opgradering.
-
-Weergawe 0.0.3 - 20/08/2019
-* Gerepareer: Taalkeuse verskyn leeg op eerste loop in nie-Engelse WordPress-werke;
-
-Weergawe 0.0.2 - 17/07/2019
-* Gerepareer: Klein foutoplossings.
-
-0.0.1 - Eerste uitreiking (25/02/2019)
+Weergawe: 1.1.0 - Vrygestel op 2025-09-28
+* Hernoem prefiks na ultimate-multisite; werk teksdomein by; weergaweverhoging.

@@ -3,17 +3,17 @@ title: Kupfuura uye Kufamba
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 inoshi chine **Export & Import** tool under **Tools > Export & Import**. Unoda iye kana uchidzo kana iwe WordPress site yakachengeta ku ZIP file, ukubuyisa iZIP, kana kukumbuka site kupfuva kune WordPress installations ezine compatibility Ultimate Multisite ne single-site.
 
-## Required permissions
+## Required permissions {#required-permissions}
 
 Unofanira kuingidza seadministrator anogona kuita **Tools** menu ya WordPress pa site yakachengeta kana unokumbuka. Mu network multisite, unofanira kuita iaccount ye administrator ye network kana ukubuyisa kana kukumbuka subsites kubva ku tools ye Ultimate Multisite ye level ye network.
 
 Export ZIP downloads zvinoteverwa kupfungwa yekubhuyisa (authenticated download endpoint), zvinhu dzinofanira kuenda kune admin session yakachengeta kusvika pakupfungwa yekubhuyisa yakange yakaferera, uye ushanyisi URL dzakabhuyiswa kubva mu public.
 
-## Exporting a site to a ZIP
+## Exporting a site to a ZIP {#exporting-a-site-to-a-zip}
 
 1. Mu WordPress admin ye site yakachengeta kukumbuka, enda ku **Tools > Export & Import**.
 2. Funga area yekexport uye chine site unoda kuteerera (package).
@@ -23,7 +23,7 @@ Export ZIP downloads zvinoteverwa kupfungwa yekubhuyisa (authenticated download 
 
 Chingai iZIP munzvimbo inokumbwa. Inogona kuita content ya site, settings, media files, uye code assets dzakachingeri.
 
-## What the export includes
+## What the export includes {#what-the-export-includes}
 
 Export ZIP inogona kuita zvinhu izvi:
 
@@ -34,7 +34,7 @@ Export ZIP inogona kuita zvinhu izvi:
 
 Ukushumbura kwenziro dzakare dzinekuvimbiso zvinhu nezvekuita. Izvi zvinobva pamusoro pekuvaka media (media), plugins, themes, uye ukukurumidza we database tables ya site.
 
-## Kuimba site kubva mu ZIP
+## Kuimba site kubva mu ZIP {#importing-a-site-from-a-zip}
 
 1. Penda **Tools > Export & Import** pa WordPress site yakare.
 2. Funga chakanangwa cheimba (import area) uye shandisa ZIP yakakwanirwa neExport & Import tool.
@@ -46,7 +46,7 @@ Ukushumbura kwenziro dzakare dzinekuvimbiso zvinhu nezvekuita. Izvi zvinobva pam
 
 Pa WordPress installation ya single-site, imba (ZIP) inobadaite kubva pa site yakanaka. Panga backup yakare yese ye site yakatarwa panguva uingave kuita iye, uye usawane kuita import dzakawanda dzinotsanana dzinogona kutamba muimba (import) panguva dzinobva kubva muimba (import).
 
-## Zvinhu zviri kuita nekuita (Limitations and compatibility notes)
+## Zvinhu zviri kuita nekuita (Limitations and compatibility notes) {#limitations-and-compatibility-notes}
 
 Kutauriro dziri dzeupenyu dzakare. Kuratidza dziri dzeupenyu dzakare zvakawanda kana media libraries dzakare zvakawanda, zvichangopai kuti munoziva limits dzepfungwa (upload limits), limits dzepfungwa dzinogona kuenda (execution limits), space ya disk, memory, uye server timeout settings panguva unoti utaidzidzire kana utaidzidzire sitiri kana site.
 

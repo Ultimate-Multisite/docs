@@ -4,11 +4,11 @@ title: Filtru - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filtru: wu_rest_get_item
+# Filtru: wu_rest_get_item {#filter-wurestgetitem}
 
 Filtrează dacă este permisă efectuarea cererii sau nu.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrează dacă este permisă efectuarea cererii sau nu.
 | $rest_base | `array` | Slug-ul entității. |
 | $this | `\Base_Manager` | Instanța obiectului. |
 
-### De la versiunea
+### De la versiunea {#since}
 
 - 2.0.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) la linia 388

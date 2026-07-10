@@ -3,7 +3,7 @@ title: Configurar PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurar la Pasarela de Pago PayPal (v2)
+# Configurar la Pasarela de Pago PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
@@ -13,13 +13,13 @@ Al igual que Stripe, PayPal se utiliza ampliamente para pagos en línea, especia
 
 Ten en cuenta que necesitas tener una **cuenta de PayPal Business** para obtener las credenciales de la API necesarias para esta integración.
 
-## Habilitar PayPal en tu red
+## Habilitar PayPal en tu red {#enabling-paypal-on-your-network}
 
 Para habilitar PayPal como método de pago disponible en tu red, ve a **Ultimate Multisite > Settings > Payments** y marca la casilla junto a PayPal.
 
 ![Habilitando PayPal en pasarelas de pago activas](/img/config/settings-payment-gateways.png)
 
-## Usar el asistente de configuración guiado
+## Usar el asistente de configuración guiado {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 añade un asistente de configuración guiado para PayPal en la configuración de la pasarela de pago. Después de habilitar PayPal, usa el asistente en **Ultimate Multisite > Settings > Payments** para elegir cómo quieres conectar la pasarela y confirmar qué credenciales aún se necesitan antes de guardar.
 
@@ -30,7 +30,7 @@ El asistente admite dos rutas de configuración:
 
 Si no veus l'opció OAuth al wizard, completa el flux d'introducció manual de credencials a continuació. El gateway funciona amb les mateixes credencials API de PayPal Business que es van utilitzar en les anteriors versions Ultimate Multisite 2.x.
 
-## Obtenció de les credencials API de PayPal
+## Obtenció de les credencials API de PayPal {#getting-the-paypal-api-credentials}
 
 Una vegada has activat PayPal com a gateway de pagaments, t'ho cal complir els camps per al **Nom d'usuari API** (Username), la **Contrasenya API** (Password) i la **Firma API** (Signature) de PayPal.
 

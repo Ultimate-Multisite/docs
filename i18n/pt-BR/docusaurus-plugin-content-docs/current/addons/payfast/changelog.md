@@ -3,7 +3,7 @@ title: Changelog do PayFast
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# Registro de Alterações PayFast
+# Registro de Alterações PayFast {#payfast-changelog}
 
 Versão: 1.0.2 - Lançado em 2025-09-28
 

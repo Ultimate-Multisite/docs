@@ -1,98 +1,98 @@
 ---
-title: Zapier Integration
+title: การผสานการทำงานกับ Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# การเชื่อมต่อ Ultimate Multisite กับ Zapier
+# การผสาน Ultimate Multisite กับ Zapier {#integrating-ultimate-multisite-with-zapier}
 
-ในบทความก่อนหน้านี้ เราได้พูดถึง [Webhooks](webhooks.md) และวิธีการใช้งานเพื่อเชื่อมต่อกับแอปพลิเคชันภายนอก
+ในหนึ่งในบทความ เราได้พูดถึง [Webhooks](webhooks.md) และวิธีที่สามารถใช้เพื่อผสานกับแอปพลิเคชันของบุคคลที่สามได้
 
-การใช้ webhooks อาจค่อนข้างซับซ้อนเพราะต้องมีความรู้ขั้นสูงด้านการเขียนโค้ดและการรับ payload ข้อมูล การใช้ **Zapier** เป็นวิธีที่ช่วยให้คุณหลีกเลี่ยงความยุ่งยากเหล่านั้นได้
+การใช้ webhooks ค่อนข้างซับซ้อน เพราะต้องมีความรู้ขั้นสูงด้านการเขียนโค้ดและการรับ payloads การใช้ **Zapier** เป็นวิธีหนึ่งที่ช่วยให้คุณหลีกเลี่ยงความซับซ้อนนั้นได้
 
-Zapier สามารถเชื่อมต่อกับแอปกว่า 5,000 แอป ทำให้การสื่อสารระหว่างแอปพลิเคชันต่างๆ ง่ายขึ้นมาก
+Zapier มีการผสานกับแอปมากกว่า 5000+ แอป ซึ่งทำให้การสื่อสารระหว่างแอปพลิเคชันต่าง ๆ ง่ายขึ้น
 
-คุณสามารถสร้าง **Triggers** (ตัวกระตุ้น) ที่จะทำงานเมื่อมีเหตุการณ์เกิดขึ้นบนเครือข่ายของคุณ (เช่น เมื่อมีการสร้างบัญชีใหม่จะกระตุ้น event account_create) หรือสร้าง **Actions** (การดำเนินการ) บนเครือข่ายของคุณเพื่อตอบสนองต่อเหตุการณ์ภายนอก (เช่น สร้างสมาชิกบัญชีใหม่ในเครือข่าย Ultimate Multisite ของคุณ)
+คุณสามารถสร้าง **Triggers** ที่จะถูกเรียกใช้งานเมื่อมีเหตุการณ์เกิดขึ้นบนเครือข่ายของคุณ (เช่น Account ถูกสร้างและเรียกใช้งานเหตุการณ์ account_create) หรือสร้าง **Actions** บนเครือข่ายของคุณเพื่อตอบสนองต่อเหตุการณ์ภายนอก (เช่น สร้างสมาชิก Account ใหม่ในเครือข่าย Ultimate Multisite ของคุณ)
 
-สิ่งนี้เป็นไปได้เพราะ **triggers และ actions ของ Ultimate Multisite Zapier** ทำงานผ่าน [REST API](https://developer.ultimatemultisite.com/api/docs/)
+สิ่งนี้เป็นไปได้เพราะ **Triggers ของ Ultimate Multisite Zapier** และ Actions ขับเคลื่อนโดย [REST API](https://developer.ultimatemultisite.com/api/docs/)
 
-## เริ่มต้นใช้งาน
+## วิธีเริ่มต้น {#how-to-start}
 
-ขั้นแรก ค้นหา Ultimate Multisite ในรายการแอปของ Zapier หรือคุณสามารถคลิก[ลิงก์นี้](https://zapier.com/apps/wp-ultimo/integrations)ได้โดยตรง
+ก่อนอื่น ให้ค้นหา Ultimate Multisite ในรายการแอปของ Zapier หรือคุณสามารถคลิก [ลิงก์นี้](https://zapier.com/apps/wp-ultimo/integrations) ได้
 
-ไปที่ dashboard ของคุณแล้วกดปุ่ม **+** **Create Zap** ที่แถบด้านข้างซ้ายเพื่อตั้งค่า Zap ใหม่
+ไปที่ Dashboard ของคุณแล้วกดปุ่ม **+** **Create Zap** ที่แถบด้านข้างซ้ายเพื่อตั้งค่า Zap ใหม่
 
-![Zapier dashboard พร้อมปุ่ม Create Zap](/img/admin/webhooks-list.png)
+![Dashboard ของ Zapier พร้อมปุ่ม Create Zap](/img/admin/webhooks-list.png)
 
-คุณจะถูกนำไปยังหน้าสร้าง Zap
+คุณจะถูกเปลี่ยนเส้นทางไปยังหน้าสร้าง Zap
 
-ในช่องค้นหา พิมพ์ "wp ultimo" แล้วคลิกเลือกตัวเลือก **Beta**
+ในช่องค้นหา ให้พิมพ์ "wp ultimo" คลิกเพื่อเลือกตัวเลือกเวอร์ชัน **Beta**
 
-![การค้นหา WP Ultimo ในรายการแอป Zapier](/img/admin/webhooks-list.png)
+![การค้นหา WP Ultimo ในรายการแอปของ Zapier](/img/admin/webhooks-list.png)
 
-หลังจากเลือกแอปของเราแล้ว ให้เลือก event ที่มี: **New Ultimate Multisite Event**
+หลังจากเลือกแอปของเราแล้ว ให้เลือกเหตุการณ์ที่มีให้ใช้: **New Ultimate Multisite Event**
 
-![การเลือก trigger New Ultimate Multisite Event](/img/admin/webhooks-list.png)
+![การเลือก Trigger New Ultimate Multisite Event](/img/admin/webhooks-list.png)
 
-ตอนนี้เราต้องให้สิทธิ์ Zapier เข้าถึง**เครือข่ายของคุณ** การคลิกที่ **Sign in** จะเปิดหน้าต่างใหม่ที่ต้องใส่ **API credentials**
+ตอนนี้เราต้องให้ Zapier เข้าถึง **เครือข่ายของคุณ** การคลิกที่ **Sign in** จะเปิดหน้าต่างใหม่ที่ต้องใช้ **API credentials**
 
-![หน้าต่าง Sign in ของ Zapier สำหรับใส่ API credentials](/img/admin/webhooks-list.png)
+![ข้อความแจ้ง Sign in ของ Zapier สำหรับ API credentials](/img/admin/webhooks-list.png)
 
-ไปที่หน้าผู้ดูแลเครือข่ายของคุณแล้วไปที่ **Ultimate Multisite > Settings** > **API & Webhooks** และมองหาส่วน API Settings
+ไปที่แผงผู้ดูแลระบบเครือข่ายของคุณ แล้วไปที่ **Ultimate Multisite > Settings** > **API & Webhooks** และมองหาส่วน API Settings
 
-เลือกตัวเลือก **Enable API** เนื่องจากจำเป็นต้องเปิดใช้งานเพื่อให้การเชื่อมต่อทำงานได้
+เลือกตัวเลือก **Enable API** เนื่องจากจำเป็นสำหรับการเชื่อมต่อนี้ให้ทำงานได้
 
-![API Settings พร้อมตัวเลือก Enable API ใน Ultimate Multisite](/img/admin/webhooks-list.png)
+![การตั้งค่า API and Webhooks พร้อมตัวเลือก API Settings และ Enable API](/img/admin/settings-api-webhooks.png)
 
-ใช้ไอคอน **Copy to Clipboard** ในช่อง API Key และ API Secret แล้ววางค่าเหล่านั้นในหน้าจอการเชื่อมต่อ
+ใช้ไอคอน **Copy to Clipboard** บนช่อง API Key และ API Secret แล้ววางค่าเหล่านั้นบนหน้าจอการผสาน
 
-ในช่อง URL ให้ใส่ URL เต็มของเครือข่ายของคุณ รวมถึง protocol (HTTP หรือ HTTPS)
+ในช่อง URL ให้ใส่ URL เต็มของเครือข่ายของคุณ รวมถึงโปรโตคอล (HTTP หรือ HTTPS)
 
-![หน้าจอเชื่อมต่อ Zapier พร้อมช่อง API Key, Secret และ URL](/img/admin/webhooks-list.png)
+![หน้าจอการผสานของ Zapier พร้อมช่อง API Key, Secret และ URL](/img/admin/webhooks-list.png)
 
-คลิกปุ่ม **Yes, Continue** เพื่อไปยังขั้นตอนถัดไป หากทุกอย่างเรียบร้อย คุณจะเห็นบัญชีที่เชื่อมต่อใหม่ของคุณ! คลิก **Continue** เพื่อสร้าง trigger ใหม่
+คลิกปุ่ม **Yes, Continue** เพื่อไปยังขั้นตอนถัดไป หากทุกอย่างทำงานได้ คุณควรได้รับการต้อนรับด้วย Account ที่เชื่อมต่อใหม่ของคุณ! คลิก **Continue** เพื่อสร้าง Trigger ใหม่
 
-## วิธีสร้าง Trigger ใหม่
+## วิธีสร้าง Trigger ใหม่ {#how-to-create-a-new-trigger}
 
-เมื่อบัญชีของคุณเชื่อมต่อแล้ว คุณจะเห็น events ที่มีให้เลือก ในบทเรียนนี้เราจะเลือก event **payment_received**
+ตอนนี้ Account ของคุณเชื่อมต่อแล้ว คุณจะเห็นเหตุการณ์ที่มีให้ใช้ มาเลือกเหตุการณ์ **payment_received** สำหรับบทช่วยสอนนี้
 
-![การเลือก event payment_received ใน Zapier trigger](/img/admin/webhooks-list.png)
+![การเลือกเหตุการณ์ payment_received ใน Trigger ของ Zapier](/img/admin/webhooks-list.png)
 
-เมื่อเลือก event แล้วและคลิก **continue** จะปรากฏ **test step** (ขั้นตอนทดสอบ)
+เมื่อเลือกเหตุการณ์แล้วและคุณคลิก **continue** จะมี **ขั้นตอนทดสอบ** ปรากฏขึ้น
 
-![ขั้นตอนทดสอบ trigger ของ Zapier](/img/admin/webhooks-list.png)
+![ขั้นตอนทดสอบของ Zapier สำหรับ Trigger](/img/admin/webhooks-list.png)
 
-ในขั้นตอนนี้ Zapier จะทดสอบว่า Zap ของคุณสามารถ **ดึง payload ที่เฉพาะเจาะจงสำหรับ event นั้น** ได้หรือไม่ ใน events ครั้งต่อๆ ไปที่เป็นประเภทเดียวกัน ข้อมูลที่มีโครงสร้างแบบเดียวกันนี้จะถูกส่งมา
+ในขั้นตอนนี้ Zapier จะทดสอบว่า Zap ของคุณสามารถ **ดึง payload เฉพาะสำหรับเหตุการณ์นั้น** ได้หรือไม่ ในเหตุการณ์ในอนาคตที่เป็นประเภทเดียวกัน ข้อมูลที่มีโครงสร้างเดียวกันนี้จะถูกส่งไป
 
-![การทดสอบ trigger ของ Zapier สำเร็จพร้อม payload](/img/admin/webhooks-list.png)
+![การทดสอบ Trigger ของ Zapier เสร็จสมบูรณ์สำเร็จพร้อม payload](/img/admin/webhooks-list.png)
 
-ในบทเรียนของเรา การทดสอบ **เสร็จสมบูรณ์** และส่งกลับข้อมูลตัวอย่างของ payload ข้อมูลตัวอย่างนี้จะเป็นประโยชน์ในการแนะนำเราขณะสร้าง actions ตอนนี้ trigger ของคุณถูกสร้างขึ้นแล้วและพร้อมเชื่อมต่อกับแอปพลิเคชันอื่นๆ
+ในบทช่วยสอนของเรา การทดสอบ **เสร็จสมบูรณ์สำเร็จ** และส่งคืนข้อมูลตัวอย่าง payload ข้อมูลตัวอย่างนี้จะเป็นประโยชน์ในการช่วยแนะนำเราในขณะที่สร้าง Actions ตอนนี้ Trigger ของคุณถูกสร้างแล้วและพร้อมเชื่อมต่อกับแอปพลิเคชันอื่น ๆ
 
-## วิธีสร้าง Actions
+## วิธีสร้าง Actions {#how-to-create-actions}
 
-Actions ใช้ข้อมูลจาก triggers อื่นเพื่อสร้างรายการใหม่ในเครือข่ายของคุณ
+Actions ใช้ข้อมูลจาก Triggers อื่น ๆ เพื่อสร้างรายการใหม่ในเครือข่ายของคุณ
 
-ใน **ขั้นตอนการสร้าง action** คุณจะเลือก Ultimate Multisite **Beta** และตัวเลือก **Create Items on Ultimate Multisite**
+ใน **ขั้นตอนการสร้าง Action** คุณจะเลือก Ultimate Multisite **Beta** และตัวเลือก **Create Items on Ultimate Multisite**
 
-![การสร้าง action ด้วย Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![การสร้าง Action ด้วย Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-ในขั้นตอนถัดไป คุณจะต้องสร้างการยืนยันตัวตนใหม่ เหมือนที่เราทำใน **เริ่มต้นใช้งาน** หรือเลือกการยืนยันตัวตนที่สร้างไว้แล้ว ในบทเรียนนี้เราจะเลือกการยืนยันตัวตนที่สร้างไว้ก่อนหน้านี้
+ในขั้นตอนถัดไป คุณจะสร้างการยืนยันตัวตนของคุณ เช่นเดียวกับที่เราทำใน **วิธีเริ่มต้น** หรือเลือกการยืนยันตัวตนที่สร้างไว้แล้ว ในบทช่วยสอนนี้ เราจะเลือกการยืนยันตัวตนเดียวกันที่สร้างไว้ก่อนหน้านี้
 
-![การเลือกการยืนยันตัวตนสำหรับ Zapier action](/img/admin/webhooks-list.png)
+![การเลือกการยืนยันตัวตนสำหรับ Action ของ Zapier](/img/admin/webhooks-list.png)
 
-### การตั้งค่า Action
+### การตั้งค่า Action {#setting-up-the-action}
 
-นี่คือ **ขั้นตอนหลักของ action** และตรงนี้จะแตกต่างออกไปเล็กน้อย ข้อมูลแรกที่คุณจะเลือกคือ **Item** ซึ่ง Item คือ **รูปแบบข้อมูล** ของเครือข่ายของคุณ เช่น **Customers, Payments, Sites, Emails** และอื่นๆ
+นี่คือ **ขั้นตอนหลักของ Action** และตรงนี้สิ่งต่าง ๆ จะแตกต่างออกไปเล็กน้อย ข้อมูลแรกที่คุณจะเลือกคือ **Item** Item คือ **โมเดลข้อมูล** ของเครือข่ายของคุณ เช่น **Customers, Payments, Sites, Emails** และอื่น ๆ
 
-![การเลือกประเภท Item สำหรับ Zapier action](/img/admin/webhooks-list.png)
+![การเลือกประเภท Item สำหรับ Action ของ Zapier](/img/admin/webhooks-list.png)
 
-เมื่อเลือก item แล้ว ฟอร์มจะ **จัดเรียงใหม่เพื่อแสดงฟิลด์ที่จำเป็นและฟิลด์ที่เลือกได้** สำหรับ item ที่เลือก
+เมื่อเลือก Item แบบฟอร์มจะ **จัดเรียงใหม่เพื่อนำช่องที่จำเป็นและช่องที่ไม่บังคับ** สำหรับ Item ที่เลือกมาแสดง
 
-ตัวอย่างเช่น เมื่อเลือก item **Customer** ฟิลด์ในฟอร์มจะแสดงทุกอย่างที่จำเป็นต้องกรอกเพื่อสร้าง Customer ใหม่ในเครือข่าย
+ตัวอย่างเช่น เมื่อเลือก Item **Customer** ช่องแบบฟอร์มจะแสดงทุกอย่างที่จำเป็นต้องกรอกเพื่อสร้าง Customer ใหม่ในเครือข่าย
 
-![ฟิลด์ของ Customer item ในการตั้งค่า Zapier action](/img/admin/webhooks-list.png)
+![ช่อง Item Customer ในการตั้งค่า Action ของ Zapier](/img/admin/webhooks-list.png)
 
-หลังจากกรอกฟิลด์ทั้งหมดที่ระบุว่า **required** และคลิก continue หน้าจอสุดท้ายจะแสดงฟิลด์ที่กรอกแล้วและฟิลด์ที่ยังไม่ได้กรอก
+หลังจากกรอกทุกช่องที่ทำเครื่องหมายว่า **required** และคลิก continue หน้าจอสุดท้ายจะแสดงช่องที่กรอกแล้วและช่องที่เว้นว่างไว้ให้คุณดู
 
-![การทดสอบ Zapier action แสดงฟิลด์ที่กรอกแล้วและยังไม่ได้กรอก](/img/admin/webhooks-list.png)
+![การทดสอบ Action ของ Zapier ที่แสดงช่องที่กรอกแล้วและยังไม่ได้กรอก](/img/admin/webhooks-list.png)
 
-เมื่อการทดสอบเสร็จสิ้นและสำเร็จ action ของคุณก็ถูกตั้งค่าเรียบร้อยแล้ว สิ่งสำคัญคือควรตรวจสอบในเครือข่ายของคุณด้วยว่า item ถูกสร้างขึ้นจากการทดสอบ action ของคุณหรือไม่
+ทันทีที่การทดสอบของคุณเสร็จสมบูรณ์และสำเร็จ Action ของคุณก็จะถูกกำหนดค่าแล้ว นอกจากนี้ยังสำคัญที่ต้องตรวจสอบบนเครือข่ายของคุณว่า Item ถูกสร้างขึ้นด้วยการทดสอบ Action ของคุณหรือไม่

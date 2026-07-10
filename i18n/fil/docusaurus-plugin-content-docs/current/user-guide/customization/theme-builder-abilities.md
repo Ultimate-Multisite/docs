@@ -3,18 +3,18 @@ title: Kakayahan ng Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Kakayahan sa Theme Builder: Pag-scaffold at Pag-activate ng Block Themes
+# Kakayahan sa Theme Builder: Pag-scaffold at Pag-activate ng Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Ipinakilala ng Superdav AI Agent v1.12.0 ang dalawang makapangyarihang kakayahan na nagpapahintulot sa iyo na bumuo at mag-deploy ng custom block themes nang direkta mula sa chat interface.
 
-## Pangkalahatang Ideya (Overview)
+## Pangkalahatang Ideya (Overview) {#overview}
 
 Ang **scaffold-block-theme** at **activate-theme** abilities ay nagpapahintulot sa mga agent na:
 - Bumuo ng kumpleto, handa nang gamitin (production-ready) na block themes batay sa iyong mga detalye
 - Awtomatikong i-activate ang mga theme sa iyong site nang walang mano-manong pag-interbensyon
 - Lumikha ng magkakaugnay na visual identity sa pamamagitan ng gabay na pagdedesisyon sa disenyo
 
-## Pag-scaffold ng Block Theme (Scaffold Block Theme)
+## Pag-scaffold ng Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 Ang **scaffold-block-theme** ability ay bumubuo ng isang bagong WordPress block theme na may kumpletong istraktura ng theme, kasama ang:
 
@@ -23,7 +23,7 @@ Ang **scaffold-block-theme** ability ay bumubuo ng isang bagong WordPress block 
 - Custom block styles at variations
 - Theme metadata at support declarations
 
-### Paano Gamitin (How to Invoke)
+### Paano Gamitin (How to Invoke) {#how-to-invoke}
 
 Sa iyong chat sa Superdav AI Agent, maaari mong hilingin ang pagbuo ng theme:
 
@@ -38,7 +38,7 @@ Ang agent ay gagawin ang mga sumusunod:
 3. Lilikha ng lahat ng kinakailangang theme files
 4. Ihahanda ang theme para sa pag-activate
 
-### Inaasahang Output (Expected Output)
+### Inaasahang Output (Expected Output) {#expected-output}
 
 Kapag matagumpay na naisagawa ang ability, makikita mo ang:
 
@@ -56,11 +56,11 @@ Halimbawang output:
   Status: Ready to activate
 ```
 
-## Pag-activate ng Theme (Activate Theme)
+## Pag-activate ng Theme (Activate Theme) {#activate-theme}
 
 Ang **activate-theme** ability ay nagpapalit sa iyong site sa isang bagong na-scaffold o umiiral na block theme.
 
-### Paano Gamitin (How to Invoke)
+### Paano Gamitin (How to Invoke) {#how-to-invoke-1}
 
 Pagkatapos mag-scaffold ng theme, maaari mo itong i-activate kaagad:
 
@@ -74,7 +74,7 @@ O i-activate ang anumang umiiral na theme:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Inaasahang Output (Expected Output)
+### Inaasahang Output (Expected Output) {#expected-output-1}
 
 Kapag matagumpay ang pag-activate:
 
@@ -92,7 +92,7 @@ Halimbawang output:
   Note: Check your homepage to verify the layout
 ```
 
-## Workflow: Pag-scaffold at Pag-activate
+## Workflow: Pag-scaffold at Pag-activate {#workflow-scaffold-and-activate}
 
 Ang isang tipikal na workflow ay pinagsasama ang dalawang abilities:
 
@@ -102,7 +102,7 @@ Ang isang tipikal na workflow ay pinagsasama ang dalawang abilities:
 4. **I-activate**: "Activate the theme now"
 5. **Beripika**: Bisitahin ang iyong site para kumpirmahin na buhay na ang bagong disenyo
 
-## Design Tokens at Pag-customize
+## Design Tokens at Pag-customize {#design-tokens-and-customization}
 
 Ang mga na-scaffold na theme ay gumagamit ng WordPress design tokens (sa pamamagitan ng `theme.json`) para sa:
 
@@ -114,14 +114,14 @@ Ang mga na-scaffold na theme ay gumagamit ng WordPress design tokens (sa pamamag
 
 Ang mga token na ito ay sentralisado sa `theme.json`, kaya madaling i-adjust ang buong design system mo mula sa iisang file.
 
-## Limitasyon at Paalala (Limitations and Notes)
+## Limitasyon at Paalala (Limitations and Notes) {#limitations-and-notes}
 
 - Ang mga theme ay na-scaffold sa `/wp-content/themes/` at kailangang sumunod sa mga konbensyon ng pagpapangalan ng WordPress
 - Ang pag-activate ay nangangailangan ng angkop na pahintulot (permissions) sa iyong WordPress site
 - Ang custom PHP code sa mga theme ay minimal; gumamit ng plugins para sa mas kumplikadong functionality
 - Ang mga block themes ay pinakamahusay na gumagana sa WordPress 5.9 pataas
 
-## Pag-troubleshoot (Troubleshooting)
+## Pag-troubleshoot (Troubleshooting) {#troubleshooting}
 
 **Hindi lumalabas ang Theme pagkatapos mag-scaffold**
 - I-verify na umiiral ang theme directory at may tamang permissions
@@ -138,7 +138,7 @@ Ang mga token na ito ay sentralisado sa `theme.json`, kaya madaling i-adjust ang
 - Linisin ang anumang caching plugins
 - Tiyakin na sinusuportahan ng iyong WordPress version ang mga token na ginagamit mo
 
-## Susunod na Hakbang (Next Steps)
+## Susunod na Hakbang (Next Steps) {#next-steps}
 
 Pagkatapos i-activate ang iyong theme, maaari mong:
 - Gamitin ang **Design System Aesthetics skill** para pagandahin ang typography, kulay, at pagitan

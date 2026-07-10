@@ -3,15 +3,15 @@ title: 'Lekce 4: Vytváření nišových šablon'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekce 4: Vytváření nišových šablon
+# Lekce 4: Vytváření nišových šablon {#lesson-4-building-niche-templates}
 
 Šablony tvoří jádro vaší nišové nabídky. Vlastník fitness studia, který se zaregistruje a uvidí web, který vypadá jako web fitness studia – se jízdnými rozvrhy, profilem trenérů a správnou grafikou – má mnohem vyšší pravděpodobnost, že zůstane, než ten, který uvidí prázmný plátno.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 Máme funkční síť FitSite s nainstalovaným a nakonfigurovaným Ultimate Multisite. Nyní vytvoříme šablony, které činí FitSite tak, že se zdá, že je navržen speciálně pro fitness podniky.
 
-## Proč jsou nišové šablony důležité
+## Proč jsou nišové šablony důležité {#why-niche-templates-matter}
 
 Obecné šablony nutí vaše klienty k tvrdé práci: zjistit, jaké stránky potřebují, jaká struktura obsahu funguje a jak to vše vypadá správně pro jejich obor. Nišové šablony tento třecí moment eliminují.
 
@@ -24,11 +24,11 @@ Vlastník fitness studia, který se zaregistruje u FitSite, by měl vidět:
 
 Oni vyplní své detaily. Nezačínají od nuly.
 
-## Plánování šablon
+## Plánování šablon {#planning-your-templates}
 
 Před stavbou se rozhodněte, jaké šablony nabídnete. Pro FitSite vytvoříme tři:
 
-### Šablona 1: Studio Essential
+### Šablona 1: Studio Essential {#template-1-studio-essential}
 
 Pro malé studia a osobní trenéry.
 
@@ -39,7 +39,7 @@ Pro malé studia a osobní trenéry.
 - **Kontakt** stránka s mapou umístění a kontaktním formulářem
 - **Čistý, moderní design** s barevnou paletou vhodnou pro fitness
 
-### Šablona 2: Gym Pro
+### Šablona 2: Gym Pro {#template-2-gym-pro}
 
 Pro zavedené posilovny s více službami.
 
@@ -50,7 +50,7 @@ Pro zavedené posilovny s více službami.
 - **Osvědčení** sekce na úvodní stránce
 - **Více výrazných** možností značení (branding)
 
-### Šablona 3: Fitness Chain
+### Šablona 3: Fitness Chain {#template-3-fitness-chain}
 
 Pro provozovny s více pobočkami.
 
@@ -60,17 +60,17 @@ Pro provozovny s více pobočkami.
 - **Centralizované značení** s detaily specifickými pro pobočku
 - **Katalog zaměstnanců** pro všechny pobočky
 
-## Vytváření webu šablony
+## Vytváření webu šablony {#building-a-template-site}
 
 V Ultimate Multisite je šablona jednoduše web WordPress nakonfigurovaný tak, jak chcete, aby vypadaly nové zákaznické webové stránky. Zde je návod, jak vytvořit takovou:
 
-### Krok 1: Vytvořte web šablony
+### Krok 1: Vytvořte web šablony {#step-1-create-the-template-site}
 
 1. Přejděte do **Sites > Add New** v administraci sítě
 2. Vytvořte web s názvem `template-studio-essential`
 3. Tento web se stane vaším pracovním plátnem
 
-### Krok 2: Nainstalujte a nakonfigurujte téma
+### Krok 2: Nainstalujte a nakonfigurujte téma {#step-2-install-and-configure-the-theme}
 
 Přepněte se na dashboard webu šablony a:
 
@@ -82,7 +82,7 @@ Přepněte se na dashboard webu šablony a:
 Vyberte téma, které je dostatečně flexibilní, aby vypadalo dobře pro fitness, ale není tak složité, že by ho vaši zákazníci nemohli spravovat. Témata jako Astra, GeneratePress nebo Kadence fungují dobře, protože jsou lehké, přizpůsobitelné a dobře podporované.
 :::
 
-### Krok 3: Vytvořte stránky
+### Krok 3: Vytvořte stránky {#step-3-create-the-pages}
 
 Vybudujte každou stránku s:
 
@@ -92,7 +92,7 @@ Vybudujte každou stránku s:
 
 Dejte náhrubný obsah, kde je to možné, v kontextu návodu. Místo obecného vyplňovacího textu napište obsah jako: "Nahrazením krátkým popisem vašeho studia a toho, co ho činí zvláštním. Zmiňte svou tréninkovou filozofii, roky zkušeností nebo co mohou klienty očekávat."
 
-### Krok 4: Nakonfigurujte pluginy
+### Krok 4: Nakonfigurujte pluginy {#step-4-configure-plugins}
 
 Nainstalujte a aktivujte pluginy, které fitness studia potřebují:
 
@@ -100,7 +100,7 @@ Nainstalujte a aktivujte pluginy, které fitness studia potřebují:
 - Plugin pro kontaktní formulář
 - SEO plugin (předkonfigurovaný s nastavením relevantní pro fitness)
 
-### Krok 5: Označte jako šablonu
+### Krok 5: Označte jako šablonu {#step-5-mark-as-template}
 
 1. Přejděte do **Ultimate Multisite > Sites**
 2. Upravte web šablony
@@ -108,7 +108,7 @@ Nainstalujte a aktivujte pluginy, které fitness studia potřebují:
 
 Opakujte tento proces pro každou šablonu, kterou chcete nabídnout.
 
-## Kontrola kvality šablon
+## Kontrola kvality šablon {#template-quality-checklist}
 
 Než šablonu uvést k dispozici, ověřte:
 
@@ -121,7 +121,7 @@ Než šablonu uvést k dispozici, ověřte:
 - [ ] Žádné zlomené odkazy nebo chybějící soubory
 - [ ] Rychlost načítání stránky je přijatelná
 
-## Síť FitSite do teď
+## Síť FitSite do teď {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Co jsme v této lekci vytvořili
+## Co jsme v této lekci vytvořili {#what-we-built-this-lesson}
 
 - **Tři nišové šablony** navržené pro různé velikosti fitness podniků
 - **Obsah a grafiku vhodnou pro fitness**, které činí platformu tak, že se zdá, že je navržen speciálně

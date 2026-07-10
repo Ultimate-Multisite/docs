@@ -4,11 +4,11 @@ title: Filter - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Mengembalikan daftar kota untuk suatu negara bagian di suatu negara.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Mengembalikan daftar kota untuk suatu negara bagian di suatu negara.
 | $state_code | `string` | Kode ISO dua huruf untuk negara bagian. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instance dari kelas saat ini. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.11
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) pada baris 146
 
 
-## Mengembalikan
+## Mengembalikan {#returns}
 Daftar negara bagian yang sudah difilter.

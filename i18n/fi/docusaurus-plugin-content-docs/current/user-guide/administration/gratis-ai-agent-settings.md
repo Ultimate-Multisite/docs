@@ -1,105 +1,152 @@
 ---
-title: Ilmaiset tekoälyagentin asetukset
+title: Gratis AI Agent -asetukset
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Ilmaiset AI Agent -asetukset
+# Gratis AI Agent -asetukset {#gratis-ai-agent-settings}
 
-**Asetukset → Edistyneet (Settings → Advanced)** -sivu Gratis AI Agentissa tarjoaa ylläpitotason konfiguraation taustajärjestelmäintegraatioille, jotka on lisätty versio 1.5.0:ssa. Tällä sivulla dokumentoidaan **Palautepäätepisteen (Feedback Endpoint)** kentät ja niiden odotettu muoto.
+**Asetukset → Lisäasetukset** -näkymä Gratis AI Agentissa tarjoaa ylläpitäjätason määritykset backend-integraatioille. Tämä sivu dokumentoi palautteen välittämisen, hakupalveluntarjoajan avaimet, hallinnoidun Superdav-palvelun käyttöönoton, Google Calendar -hallinnat, TextBee SMS -asetukset ja verkonlaajuiset ominaisuusliput.
 
-## Asetusten avaaminen
+## Asetuksiin pääsy {#accessing-settings}
 
-1. WordPress-hallintapaneelissa siirry kohtaan **Gratis AI Agent → Asetukset**.
-2. Napsauta välilehteä **Edistyneet (Advanced)**.
+1. Siirry WordPress-ylläpidossa kohtaan **Gratis AI Agent → Asetukset**.
+2. Napsauta **Lisäasetukset**-välilehteä.
 
-## Palautepäätepisteen konfigurointi
+## Palautteen päätepisteen määritys {#feedback-endpoint-configuration}
 
-Palautepäätepiste vastaanottaa POST-pyyntöjä AI-agentilta aina, kun käyttäjä lähettää palautetta peukalo alaspäin -painikkeella, automaattisella kehotteella tai `/report-issue`-komennolla.
+Palautteen päätepiste vastaanottaa POST-pyyntöjä AI-agentilta aina, kun käyttäjä lähettää palautetta peukku alas -painikkeen, automaattisen kehotebannerin tai `/report-issue`-komennon kautta.
 
 | Kenttä | Kuvaus |
 |---|---|
-| **Feedback Endpoint URL** | URL, joka vastaanottaa palautteen POST-pyyntöinä JSON-runon (body) mukana. |
-| **Feedback API Key** | Bearer-token, joka lähetetään jokaisen palautepyyntöön `Authorization`-otsikossa. Jätä tyhjäksi, jos päätepisteesi ei vaadi tunnistautumista. |
+| **Palautteen päätepisteen URL** | URL, joka vastaanottaa palautelähetykset HTTP POST -pyyntöinä JSON-rungolla. |
+| **Feedback API Key** | bearer token, joka lähetetään kunkin palautepyynnön `Authorization` headerissa. Jätä tyhjäksi, jos päätepisteesi ei vaadi todennusta. |
 
-### Odotettu JSON-kuorma (Payload)
+### Odotettu JSON-hyötykuorma {#expected-json-payload}
 
-Palautepäätepisteen on hyväksyttävä JSON-runko, jossa on vähintään seuraavat kentät:
+Palautteen päätepisteesi on hyväksyttävä JSON-runko, jossa on vähintään seuraavat kentät:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Vastaus oli virheellinen hinnoittelun osalta.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Lisäkenttiä voi olla kuormassa riippuen keskustelun kontekstista.
+Hyötykuormassa voi olla lisäkenttiä keskustelun kontekstin mukaan.
 
-### `triage_category` -arvot
+### `triage_category`-arvot {#triagecategory-values}
 
-AI-triage-kerros määrittää seuraavista arvoista kentälle `triage_category` ennen kuorman lähetystä:
+AI-luokittelukerros määrittää yhden seuraavista arvoista kenttään `triage_category` ennen hyötykuorman välittämistä:
 
 | Arvo | Merkitys |
 |---|---|
-| `factual_error` | Avustaja antoi virheellistä fakto- tai tietoa. |
-| `unhelpful_answer` | Vastaus oli teknisesti oikein, mutta ei hyödyllinen. |
-| `inappropriate_content` | Vastauksessa oli sisältöä, jota ei tulisi näyttää käyttäjille. |
-| `other` | Palautteen ei vastaa tunnettua kategoriaa. |
+| `factual_error` | Avustaja antoi virheellistä faktatietoa. |
+| `unhelpful_answer` | Vastaus oli teknisesti oikein mutta ei hyödyllinen. |
+| `inappropriate_content` | Vastaus sisälsi sisältöä, jota ei pitäisi näyttää käyttäjille. |
+| `other` | Palaute ei vastannut tunnettua kategoriaa. |
 
-### Tunnistautuminen (Authentication)
+### Todennus {#authentication}
 
-Jos päätepiste vaatii tunnistautumista, aseta **Feedback API Key** -kenttä bearer-tokenisi arvoksi. Agenti viestii:
+Jos päätepisteesi vaatii todennusta, aseta **Feedback API Key** -kenttään bearer tokenisi. Agentti lähettää:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Jos **Feedback API Key** -kenttä on tyhjä, `Authorization`-otsikkoa ei lähetetä.
+Jos **Feedback API Key** -kenttä on tyhjä, `Authorization` headeria ei lähetetä.
 
-### Feedback-keruun poistaminen käytöstä
+### Palautteen keräämisen poistaminen käytöstä {#disabling-feedback-collection}
 
-Jätä sekä **Feedback Endpoint URL** että **Feedback API Key** -kentät tyhjäksi. Peukalo alaspäin -painike ja palautelomake pysyvät näkyvissä käyttäjille, mutta lähetyksiä ei lähetetä ulkoiseen palveluun.
+Jätä sekä **Palautteen päätepisteen URL**- että **Feedback API Key** -kentät tyhjiksi. Peukku alas -painike ja palautteen käyttöliittymä pysyvät käyttäjille näkyvissä, mutta lähetyksiä ei välitetä mihinkään ulkoiseen palveluun.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Samoin **Advanced**-välilehdellä **Brave Search API Key** -kenttä mahdollistaa [Internet Search](https://yourdomain.com/configuration/internet-search) -ominaisuuden käytön.
+Myös **Lisäasetukset**-välilehdellä oleva **Brave Search API Key** -kenttä ottaa käyttöön [Internet-haun](../configuration/internet-search) ominaisuuden.
 
 | Kenttä | Kuvaus |
 |---|---|
-| **Brave Search API Key** | API-avaimesi Brave Searchin kehittäjäportaalista. Tarvitaan internet-haun aktivoimiseksi tekoälyassistentissa. |
+| **Brave Search API Key** | API-avaimesi Brave Searchin kehittäjien Dashboardista. Vaaditaan internet-haun käyttöönottamiseksi AI-avustajassa. |
 
-Kentän tunniste sisältää klikattavan linkin Brave Search -API:n rekisteröintisivulle. Jätä tyhjäksi poistaaksesi internet-haku.
+Kentän otsikko sisältää napsautettavan linkin Brave Search API -rekisteröitymissivulle. Jätä tyhjäksi poistaaksesi internet-haun käytöstä.
 
-Katso [Internet Search](https://yourdomain.com/configuration/internet-search) saadaksesi käyttäjädokumentaation tästä ominaisuudesta.
+Katso tämän ominaisuuden loppukäyttäjädokumentaatio kohdasta [Internet-haku](../configuration/internet-search).
 
-## Feature Flags (Ominaisasetukset)
+## Hallinnoitu Superdav-palvelu {#managed-superdav-service}
 
-Lisäksi v1.9.0:ssa esitetyt **Settings → Feature Flags** -välilehti tarjoaa kytkinvaihtoehtoja valinnaisille toiminnallisuuksille. Jokainen flag on joko käytössä tai poistettu verkossa; tällä hetkellä ei ole mahdollisuutta ylittää tätä asetusta yksittäiselle sivustolle.
+Superdav AI Agent v1.18.0 lisää hallinnoidut Superdav-palvelun päätepisteet ja automaattisen yhteyden käyttöönoton tuetuille sivustoille. Käytä näitä hallintoja, kun sivustosi pitäisi yhdistää isännöityyn palveluntarjoajaan manuaalisesti määritetyn palvelupäätepisteen sijaan.
 
-### Feature Flags -asetusten avaaminen
+| Kenttä | Kuvaus |
+|---|---|
+| **Hallinnoitu Superdav-palvelu** | Ottaa käyttöön isännöidyn Superdav-palveluyhteyden tuetuille sivustoille. |
+| **Yhteyden käyttöönotto** | Käynnistää automaattisen päätepisteen ja tunnistetietojen käyttöönoton. Käytä tätä sen jälkeen, kun olet vahvistanut, että sivuston tulee käyttää hallinnoitua palveluntarjoajaa. |
+| **Palvelun päätepiste / yhteyden tila** | Näyttää nykyisen päätepisteen tai yhteyden tilan käyttöönoton jälkeen. |
 
-1. WordPress-hallintapaneelissa siirry **Gratis AI Agent → Settings** -osioon.
-2. Napsauta **Feature Flags** -välilehteä.
+Tallenna asetukset käyttöönoton jälkeen ja varmista yhteyden tila ennen kuin luotat hallinnoidun palvelun työnkulkuihin. Jos käyttöönotto epäonnistuu, tarkista näkyvissä olevat uudelleenyritysohjeet ja varmista, että sivustolla on lupa käyttää isännöityä palveluntarjoajaa.
 
-### Access Control Flags (Pääsynhallinta-asetukset)
+## Google Calendar -määritys {#google-calendar-configuration}
 
-| Lippu | Oletusarvo | Kuvaus |
+Kun Superdav AI Agent v1.18.0:n kalenteriominaisuudet ovat käytössä, agentti voi lukea määritettyjä kalentereita ja tapahtumatietoja. Kalenterityökalut ovat lukupainotteisia ja hyödyllisiä aikataulutietoisille muistutuksille, osallistujien seurannalle ja kontaktien täsmäytykselle.
+
+| Kenttä | Kuvaus |
+|---|---|
+| **Google Calendar -tunnistetiedot** | Tallentaa kalenteridatan lukemiseen vaadittavat tunnistetiedot tai token-yhteyden. |
+| **Kalenterin valinta** | Rajoittaa, mitä määritettyjä kalentereita agentti saa tarkastella. |
+| **Kalenteriyhteyden tila** | Vahvistaa, voivatko nykyiset tunnistetiedot lukea kalentereita ja tapahtumia. |
+
+Pidä kalenterin tunnistetiedot rajattuina kalentereihin, joita agentti tarvitsee. Yhdistä uudelleen tai kierrätä tunnistetiedot, jos tila osoittaa vanhentuneen tokenin.
+
+## TextBee SMS -ilmoitukset {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 lisää TextBeen SMS-palveluntarjoajaksi määritetyille ilmoitustyönkuluille. SMS-ilmoitukset tulisi yhdistää ihmisen hyväksyntäportteihin arkaluonteisissa tai käyttäjille näkyvissä viesteissä.
+
+| Kenttä | Kuvaus |
+|---|---|
+| **TextBee API -avain** | Todentaa pyynnöt TextBee SMS -palveluntarjoajalle. |
+| **TextBee-laite / lähettäjä** | Valitsee lähteville viesteille käytettävän TextBee-lähettäjän tai -laitteen, kun palveluntarjoaja sitä vaatii. |
+| **SMS-ilmoitukset käytössä** | Sallii hyväksyttyjen työnkulkujen lähettää tekstiviesti-ilmoituksia. Jätä pois käytöstä estääksesi SMS-lähetykset. |
+
+Lähetä testiviesti vain ylläpitäjän omistamaan numeroon ja vahvista sitten hyväksyntäportin toiminta ennen ajoitettujen tai osallistujille näkyvien muistutusten käyttöönottoa.
+
+## Ominaisuusliput {#feature-flags}
+
+Myös versiossa v1.9.0 esitelty **Asetukset → Ominaisuusliput** -välilehti tarjoaa vaihtokytkimet valinnaisille toiminnoille. Kukin lippu on joko käytössä tai pois käytöstä verkonlaajuisesti; sivustokohtaista ohitusta ei tällä hetkellä ole.
+
+### Ominaisuuslippuihin pääsy {#accessing-feature-flags}
+
+1. Siirry WordPress-ylläpidossa kohtaan **Gratis AI Agent → Asetukset**.
+2. Napsauta **Ominaisuusliput**-välilehteä.
+
+### Käyttöoikeuksien hallintaliput {#access-control-flags}
+
+| Lippu | Oletus | Kuvaus |
 |---|---|---|
-| **Rajoita ylläpitäjiin** | Pois päältä | Kun tämä on päällä, vain `administrator`-rooleilla olevat käyttäjät voivat avata AI Agent -chat-paneelin. Muut roolit näkevät "Ota yhteyttä ylläpitäjänne" -viestin. |
-| **Rajoita verkkoystävällisiin ylläpitäjiin** | Pois päältä | Kun tämä on päällä multisite-verkossa, vain Super Adminit voivat käyttää agenttia. Yksittäisten sivustojen ylläpitäjät ovat estetty. Tämä ohittaa "Rajoita ylläpitäjiin" -asetuksen, jos molemmat ovat päällä. |
-| **Salli tilaajien käyttö** | Pois päältä | Kun tämä on päällä, `subscriber`-rooleilla olevat käyttäjät voivat käyttää chat-käyttöliittymää, mutta heidän toimintansa on rajoitettu vain lukemiseen (ei postien luomista tai asetusten muuttamista). |
-| **Poista pois jäsenettömillä** | Pois päältä | Integroidaan Ultimate Multisite -jäsenyyden tilan kanssa. Kun tämä on päällä, chat piilotetaan sivustoille, joilla ei ole aktiivista jäsenyyttä. |
+| **Rajoita järjestelmänvalvojiin** | Pois | Kun käytössä, vain käyttäjät, joilla on `administrator`-rooli, voivat avata AI Agent -chat-paneelin. Kaikki muut roolit näkevät sen sijaan viestin "Ota yhteyttä järjestelmänvalvojaasi". |
+| **Rajoita Network Admins -käyttäjiin** | Pois | Kun käytössä multisite-verkossa, vain Super Admins voivat käyttää agenttia. Yksittäisten sivustojen järjestelmänvalvojat estetään. Tämä ohittaa "Rajoita järjestelmänvalvojiin" -asetuksen, jos molemmat ovat käytössä. |
+| **Salli Subscriber-käyttö** | Pois | Kun käytössä, käyttäjät, joilla on `subscriber`-rooli, voivat käyttää chat-käyttöliittymää, mutta heidät on rajoitettu vain luku -ominaisuuksiin (ei julkaisujen luontia tai asetusten muutoksia). |
+| **Poista käytöstä muilta kuin jäseniltä** | Pois | Integroituu Ultimate Multisite -jäsenyyden tilaan. Kun käytössä, chat piilotetaan sivustoilta, joilla ei ole aktiivista jäsenyyttä. |
 
-### Brändäysvalit
+### Brändäysliput {#branding-flags}
 
-| Lippu | Oletusarvo | Kuvaus |
+| Lippu | Oletus | Kuvaus |
 |---|---|---|
-| **Piilota "Powered by Gratis AI Agent" -alatunniste** | Pois päältä | Poistaa brändäyksen viivan, joka näkyy chat-widgetin alalaidassa. Suositeltavaa valkoisille merkinnöille (white-label) käyttötarkoituksiin. |
-| **Mukautettu agentin nimi** | *(tyhjä)* | Korvaa oletusmerkintä "Gratis AI Agent" chat-otsikossa ja ylläpitomenuussa omalla tuotenimelläsi. Jätä tyhjä, jos haluat käyttää oletusta. |
-| **Piilota agentin valitsin** | Pois päältä | Kun tämä on päällä, käyttäjät eivät voi vaihtaa neljän sisäänrakennetun agentin välillä. Nykyinen agentti pysyy samana kuin se on määritetty oletusarvoon Asetukset → Yleiset (Settings → General). |
-| **Käytä sivuston kuvaketta chat-avatarina** | Pois päältä | Korvaa chat-widgetin otsikon oletus-AI-kuvakkeen WordPress-sivuston kuvakkeella (asetettu ulkoasu → Mukauta → Sivuston identiteetti). |
+| **Piilota "Powered by Gratis AI Agent" -alatunniste** | Pois | Poistaa chat-widgetin alareunassa näytettävän brändäyksen viittausrivin. Suositellaan white-label-käyttöönottoihin. |
+| **Mukautettu agentin nimi** | *(tyhjä)* | Korvaa chat-otsikon ja admin-valikon oletusarvoisen "Gratis AI Agent" -nimikkeen omalla tuotenimelläsi. Jätä tyhjäksi käyttääksesi oletusta. |
+| **Piilota agentin valitsin** | Pois | Kun käytössä, käyttäjät eivät voi vaihtaa viiden sisäänrakennetun agentin välillä. Nykyinen agentti on kiinnitetty siihen, mikä on määritetty oletukseksi kohdassa Settings → General. |
+| **Käytä sivuston kuvaketta chat-avatarina** | Pois | Korvaa chat-widgetin otsikon oletusarvoisen AI-kuvakkeen WordPress-sivuston kuvakkeella (asetetaan kohdassa Appearance → Customize → Site Identity). |
 
-### Muutosten soveltaminen
+### Automaation turvallisuusliput {#automation-safety-flags}
 
-Napsauta **Tallenna asetukset** sen jälkeen, kun olet vaihtanut mitä tahansa lippua. Muutokset tulevat voimaan välittömästi – ei tarvita välimuistin tyhjentämistä tai pluginin uudelleenkäynnistämistä.
+Superdav AI Agent v1.18.0 tuo käyttöön ihmisen hyväksyntäportit ja muistutustietueet turvallisempia automaation suorituksia varten. Nämä hallinnat voivat näkyä ominaisuuslipuissa tai automaation lisäasetuksissa asennetusta paketista riippuen.
+
+| Lippu | Oletus | Kuvaus |
+|---|---|---|
+| **Vaadi ihmisen hyväksyntä** | Suositellaan käytettäväksi | Keskeyttää arkaluonteiset automaatiot, kunnes valtuutettu käyttäjä tarkistaa ja vahvistaa ehdotetun toiminnon. |
+| **Muistutusten deduplikointi** | Päällä | Tallentaa lähetetyt muistutukset, jotta uudelleenyritykset tai ajastetut suoritukset eivät lähetä päällekkäisiä ilmoituksia. |
+| **Ota käyttöön kalenterityökalut** | Pois, kunnes määritetty | Sallii agentin lukea määritettyjä Google-kalentereita ja tapahtumia. |
+| **Ota käyttöön SMS-ilmoitukset** | Pois, kunnes määritetty | Sallii hyväksyttyjen työnkulkujen lähettää TextBee SMS -ilmoituksia tunnistetietojen tallentamisen jälkeen. |
+
+### Muutosten käyttöönotto {#applying-changes}
+
+Napsauta **Tallenna asetukset** minkä tahansa lipun vaihtamisen jälkeen. Muutokset tulevat voimaan välittömästi — välimuistin tyhjennystä tai pluginin uudelleenaktivointia ei tarvita.

@@ -3,11 +3,11 @@ title: Isolàidhean Multi-tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolàidhean Multi-Tenancy
+# Isolàidhean Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 a tha a' gabhail e-beatha (per-subsite) agus isgidil (filesystem) idirich airson teann-dèidh (sovereign tenants). Tha seo a' cur seachdaidh dathan teann-dèidh air a' sgeulach, mar a tha an tòstáil (provisioning), an tasan (billing), agus an t-sgrùdadh (administration) de dhinn.
 
-## Stratégia isgidil
+## Stratégia isgidil {#isolation-strategy}
 
 Usgais isgidil sovereign airson earrachda a tha ag iarraidh seachdaidhean dathan a tha a' cruile, stòr isgidil air a tha a' sgeulach, no cur beann (host boundary) a tha a' sgeulach.
 
@@ -18,7 +18,7 @@ Tha chùl teann-dèidh sovereign de roc:
 - Earrachd teann-dèidh (tenant registry entry) a tha a' cur mheasg an site gu sin air a database, atharrach (root path), ainm host (hostname), agus model isgidil.
 - Seachdaidhean de chàrachadh (migration verification result) a tha a' cruile a' gach teann-dèidh a tha a' bheachd gu sin air a bhith 'live'.
 
-## Bheadaireachd host database
+## Bheadaireachd host database {#database-host-binding}
 
 Air an t-am 1.2.0, tha am fhaighinn (binding) host a tha a' sgeulach airson isgalladh sovereign a' leadhnaidh. Tha cur beann a tha a' sgeulach mar `localhost` air a chlàradh, agus tha sin a' cur seachdaidhean (normalize) gu bheil Bedrock, FrankenPHP, agus WordPress a tha a' bheachd a' gabhail agus a' dèanamh cinnteach de chàrachadh air an t-string host a tha MySQL a' faighinn.
 
@@ -31,11 +31,11 @@ Nuair a tha thuair an teann-dèidh sovereign:
 
 Tha seachdaidhean de chàrachadh a' cur faighnean (grant failures), is eadar a' cruile brèidhean DB teann-dèidh agus an fhaighinn host a tha a' sgeulach. Tha cur brèidhe air `user@localhost` a' tòiseachadh gu sin a' tòiseachadh air `user@127.0.0.1` neu `user@%`.
 
-## Roc isgidil (Filesystem root)
+## Roc isgidil (Filesystem root) {#filesystem-root}
 
 Rinn a chùlchna (tenant root) deug a' chluasach (restarts) agus deploiements. A' ghnìthich an amhach mòr (temporary mount paths). Para installaí a' chluasach mar Bedrock, dìng an tòiseachadh gu cunntas an amhach mòr a' tòiseachadh air an WordPress web root a tha a' sgaidh an chluasach, cha bhith e dìreach air an amhach project.
 
-## Ordraidh de dhìochainn (Provisioning order)
+## Ordraidh de dhìochainn (Provisioning order) {#provisioning-order}
 
 Para chluasach ùra sovereign, usa an ordraidh seo aig an tòiseachadh:
 
@@ -49,7 +49,7 @@ Para chluasach ùra sovereign, usa an ordraidh seo aig an tòiseachadh:
 
 Tha an ordraidh seo a' ghnìth an tòiseachadh gu robh na chluasach dìreach a fháil air a' chluasach gu bheil an dbhach writer, luchdair, agus an amhach mòr ready.
 
-## Fhlughainnean de chluasach sovereign (Sovereign customer management flows)
+## Fhlughainnean de chluasach sovereign (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 a' chluasach na h-aithreacha de chluasach ar an site mòr gu robh mode sovereign a' tòiseachadh. Is e cheann chluasach a' faighinn air a' sgaidh WordPress dìreach mar install chluasach, ach tha na h-aithreacha de chluasach a tha ag iarraidh amhriachtan neach-beulach (network billing), a' chluasach, no seòl-chluasach (shared account data) a' faighinn air an site mòr gu robh a' chluasach a' tòiseachadh a' chluasach a' chluasach a' chluasach.
 

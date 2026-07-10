@@ -3,7 +3,7 @@ title: Mailchimp יומן שינויים
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# יומן שינויים של Mailchimp
+# יומן שינויים של Mailchimp {#mailchimp-changelog}
 
 גרסה: 1.1.1 - שוחרר ב-2025-09-28
 

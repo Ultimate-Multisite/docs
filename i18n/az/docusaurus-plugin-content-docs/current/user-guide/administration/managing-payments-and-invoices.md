@@ -3,9 +3,9 @@ title: Ödənişlərin və Fakturaların İdarə Edilməsi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödənişləri və Fakturaları İdarə Etmək
+# Ödənişləri və Fakturaları İdarə Etmək {#managing-payments-and-invoices}
 
-## Ödəniş Ayarları
+## Ödəniş Ayarları {#payment-settings}
 
 Ödəniş qəbul etməyə başlamazdan əvvəl, ödənişlərlə bağlı ayarları qurmalısınız. **Ultimate Multisite → Settings** səhifəsinə keçin və **Payment** (Ödəniş) tabına klikləyin.
 
@@ -15,7 +15,7 @@ Bu, ödəniş ayarları səhifəsinin tam görünüşüdür:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Ümumi Ödəniş Seçimləri
+### Ümumi Ödəniş Seçimləri {#general-payment-options}
 
 Ümumi ayarlar hissəsində aşağıdakıları qurmaq mümkündür:
 
@@ -24,7 +24,7 @@ Bu, ödəniş ayarları səhifəsinin tam görünüşüdür:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ödəniş Şəbəkələri (Payment Gateways)
+### Ödəniş Şəbəkələri (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite bir neçə ödəniş şəbəkəsini dəstəkləyir. Hər birini Ödəniş ayarları tabından aktiv edə və qurula bilərsiniz.
 
@@ -40,11 +40,11 @@ Hər bir şəbəkənin öz konfiqurasiya bölməsi var ki, oraya API açarları 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Rejimi
+### Sandbox Rejimi {#sandbox-mode}
 
 Canlı istifadəyə keçməzdən əvvəl ödəniş inteqrasiyanızı test etmək üçün **Sandbox Mode** (Test Rejimi) aktiv edə bilərsiniz. Sandbox rejimi aktiv olduqda, heç bir real ödəniş cəbri edilməyəcək.
 
-## Ödənişləri Görüntülmə
+## Ödənişləri Görüntülmə {#viewing-payments}
 
 Bütün şəbəkənizdəki əməliyyatları görmək üçün Ultimate Multisite altındakı **Payments** (Ödənişlər) səhifəsinə keçin.
 
@@ -54,7 +54,7 @@ Bütün şəbəkənizdəki əməliyyatları görmək üçün Ultimate Multisite 
 
 Ətraflı məlumatları, o cümlədən xətt elementlərini, bağlı olan üzvlük məlumatını, müştəri məlumatlarını və ödəniş şəbəkəsi məlumatlarını görmək üçün bir ödənişə klikləyin.
 
-## Fakturalar (Invoices)
+## Fakturalar (Invoices) {#invoices}
 
 Ultimate Multisite ödənişlər üçün avtomatik olaraq fakturalar yarada bilər. Faktura şablonunu və nömrələndirmə formatını Ödəniş ayarlarından özünüz dəyişə bilərsiniz.
 

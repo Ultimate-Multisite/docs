@@ -4,13 +4,13 @@ title: Filter - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site
+# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Wordt uitgevoerd voordat een verlaten, wachtende site wordt verwijderd vanwege een geannuleerd GoCardless-lidmaatschap.
 
 Retourneer `false` vanuit dit filter om de verwijdering te voorkomen.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Retourneer `false` vanuit dit filter om de verwijdering te voorkomen.
 | $membership | `\WP_Ultimo\Models\Membership` | Het geannuleerde lidmaatschap. |
 | $old_status | `string` | De status vóór de annulering. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Geïndefinieerd in [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) op regel 1086

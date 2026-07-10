@@ -4,26 +4,26 @@ title: فلتر - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# عامل التصفية: wu_get_checkout_variables
+# عامل التصفية: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
 
 يتيح لمطوري الإضافات تصفية الإعدادات المسبقة لصفحة الدفع.
 
 احذر، فقد يؤدي فقدان المفاتيح إلى كسر عملية الدفع بالكامل على الواجهة الأمامية.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $variables | `array` | المتغيرات المترجمة. |
 | $checkout | `\Checkout` | فئة الدفع. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
-### المصدر
+### المصدر {#source}
 
 مُعرَّف في [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1970) في السطر 1970
 
 
-## الإرجاع
+## الإرجاع {#returns}
 مصفوفة المتغيرات الجديدة.

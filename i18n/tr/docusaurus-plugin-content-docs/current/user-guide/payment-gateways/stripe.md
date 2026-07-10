@@ -3,19 +3,19 @@ title: Stripe'ı Ayarlama
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Ödeme Yöntemini Kurma (v2)
+# Stripe Ödeme Yöntemini Kurma (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü kapsamaktadır.**_
 
 Ödeme ayarları sayfamızda dört farklı ödeme yöntemini etkinleştirebilirsiniz: Stripe, Stripe Checkout, PayPal ve Manuel. Bu makalede **Stripe** entegrasyonunun nasıl yapılacağını göreceğiz.
 
-## Stripe'ı Etkinleştirme
+## Stripe'ı Etkinleştirme {#enabling-stripe}
 
 Stripe'ı ağınızda kullanılabilir bir ödeme yöntemi olarak etkinleştirmek için **Ultimate Multisite > Settings > Payments** bölümüne gidin ve Aktif Ödeme Yöntemleri kısmında **Stripe** veya **Stripe Checkout** seçeneğinin yanındaki düğmeyi işaretleyin.
 
 ![Aktif ödeme yöntemlerinde Stripe'ı etkinleştirme](/img/config/settings-payment-gateways.png)
 
-### Stripe ile Stripe Checkout Arasındaki Fark:
+### Stripe ile Stripe Checkout Arasındaki Fark: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Bu yöntem, ödeme sırasında kredi kartı numarasının girileceği bir alan gösterir.
 
@@ -47,7 +47,7 @@ Stripe kontrol panelinizde sağ üst köşedeki **Developers** seçeneğine tık
 
 ![Ultimate Multisite ayarlarına Stripe anahtarlarını yapıştırma](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook Kurulumu
+## Stripe Webhook Kurulumu {#setting-up-stripe-webhook}
 
 Stripe, **Stripe hesabınızda** herhangi bir olay gerçekleştiğinde Ultimate Multisite'ı bilgilendiren webhook etkinlikleri gönderir.
 

@@ -3,17 +3,17 @@ title: 'Lliçó 12: Gestionar l''empresa'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Aula 12: Gestionar l'Empresa
+# Aula 12: Gestionar l'Empresa {#lesson-12-running-the-business}
 
 Una plataforma no és un projecte que es termini; és un negoci que es dirigeix. Aquesta aula cobreix les operacions del dia a dia per gestionar FitSite: suport, facturació, manteniment i mantenir els clients contents.
 
-## On acab vam
+## On acab vam {#where-we-left-off}
 
 FitSite ja està en línia i els clients estan inscrivint-se. Ara has de gestionar l'operació de manera sostenible.
 
-## Operacions Diàries
+## Operacions Diàries {#daily-operations}
 
-### Monitorització
+### Monitorització {#monitoring}
 
 Revisa aquests elements diàriament (o configura alertes):
 
@@ -22,7 +22,7 @@ Revisa aquests elements diàriament (o configura alertes):
 - **Pagaments fallits**: Hi ha fallades de pagament que requereixen atenció?
 - **Sol·licits de suport**: Hi ha preguntes de clients sense respondre?
 
-### Suport al Client
+### Suport al Client {#customer-support}
 
 El teu enfocament de niș és un avantatge aquí. Com que tots els teus clients són estudis de fitness, veuràs les mateixes preguntes repetidament:
 
@@ -36,7 +36,7 @@ El teu enfocament de niș és un avantatge aquí. Com que tots els teus clients 
 
 Construeix la teva base de coneixements (com va amb la Aula 8) al voltant de aquestes preguntes recurrents. Cada tiqueti de suport que podria ser un article de la base de coneixements és una senyal per escriure aquest article.
 
-### Nivells de Suport
+### Nivells de Suport {#support-tiers}
 
 A mesura que creixes, estructura el suport segons el pla:
 
@@ -48,9 +48,9 @@ A mesura que creixes, estructura el suport segons el pla:
 
 L'addon [Support Tickets](/addons/support-tickets) pot ajudar a gestionar els sol·licits de suport dins de la plataforma.
 
-## Operacions de Facturació
+## Operacions de Facturació {#billing-operations}
 
-### Pagaments Recurrents
+### Pagaments Recurrents {#recurring-payments}
 
 Ultimate Multisite gestiona la facturació recurrent automàticament a través de la teva passarela de pagament. El teu treball és monitoritzar:
 
@@ -58,7 +58,7 @@ Ultimate Multisite gestiona la facturació recurrent automàticament a través d
 - **Dunning**: Configura la lògica de riprovi automàtic a través de la teva passarela de pagament (Stripe ho gestiona molt bé).
 - **Sol·licits de cancel·lació**: Entén per què els clients marquen. Cada cancel·lació és un feedback.
 
-### Gestió de Membresíes
+### Gestió de Membresíes {#managing-memberships}
 
 Navega a **Ultimate Multisite > Memberships** per:
 
@@ -69,13 +69,13 @@ Navega a **Ultimate Multisite > Memberships** per:
 
 Consulta [Managing Memberships](/user-guide/administration/managing-memberships) per a la referència completa.
 
-### Facturació
+### Facturació {#invoicing}
 
 Assegura-te que les factures es generen correctament per a cada pagament. Els clients poden necessitar factures per informes de despeses empresarials. Consulta [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Manteniment de la Plataforma
+## Manteniment de la Plataforma {#platform-maintenance}
 
-### Actualitzacions de WordPress i Plugins
+### Actualitzacions de WordPress i Plugins {#wordpress-and-plugin-updates}
 
 Com administrador de la xarxa, ets responsable de:
 
@@ -88,14 +88,14 @@ Com administrador de la xarxa, ets responsable de:
 Una actualització fallida afecta a tots els sites de clients de la teva xarxa. Prova sempre les actualitzacions en una còpia d'entorn de prova de la teva xarxa abans.
 :::
 
-### Seguretat
+### Seguretat {#security}
 
 - Mantén tot el programari actualitzat
 - Utilitza contrasenyes fortes i autenticació de dos factors per comptes d'administració
 - Monitoritza activitats sospitoses
 - Ten un pla per incidents de seguretat
 
-### Rendiment
+### Rendiment {#performance}
 
 A mesura que la teva xarxa creix, monitoritza:
 
@@ -105,9 +105,9 @@ A mesura que la teva xarxa creix, monitoritza:
 
 Considera implementar *caching* (cache de pàgina, cache d'objecte) i un CDN si encara no ho has fet. L'addon [Cloudflare integration](/user-guide/host-integrations/cloudflare) gestiona gran part d'aquests aspectes.
 
-## Gestió del Cicle de Vida del Client
+## Gestió del Cicle de Vida del Client {#customer-lifecycle-management}
 
-### Reduir l'Abandó (Churn)
+### Reduir l'Abandó (Churn) {#reducing-churn}
 
 L'abandó és el percentatge de clients que cancelen cada mes. Per a un negoci de subscripcions, reduir l'abandó és tan important com adquirir clients nous.
 
@@ -119,7 +119,7 @@ L'abandó és el percentatge de clients que cancelen cada mes. Per a un negoci d
 - Van trobar una alternativa més barata → reforçar el valor de la teva nișa
 - El seu negoci va tancar → inevitable, però monitoritza-ho separatament
 
-### Incentivar les Actualitzacions
+### Incentivar les Actualitzacions {#encouraging-upgrades}
 
 Els clients de Starter que estan tenint èxit haurien de ser incentivats a actualitzar:
 
@@ -127,7 +127,7 @@ Els clients de Starter que estan tenint èxit haurien de ser incentivats a actua
 - Envía correus electrònics dirigits que destaquen les funcionalitats del pla Growth que els podrien beneficiar
 - Mostra el que han construït els clients de Growth/Pro
 
-### Campanyes de Recuperació (Win-Back)
+### Campanyes de Recuperació (Win-Back) {#win-back-campaigns}
 
 Quan un client cancela:
 
@@ -135,30 +135,30 @@ Quan un client cancela:
 2. Adreça la seva preocupació si és possible
 3. Ofereix un descompte per retornar (30-60 dies després de la cancel·lació)
 
-## Rutines Semanals i Mensuals
+## Rutines Semanals i Mensuals {#weekly-and-monthly-routines}
 
-### Semanalment
+### Semanalment {#weekly}
 
 - Revisar les noves inscripcions i cancel·lacions
 - Respondre a tots els tiquets de suport oberts
 - Comprovar el rendiment i l'uptime de la plataforma
 - Revisar qualsevol pagament fallit
 
-### Mensualment
+### Mensualment {#monthly}
 
 - Analitzar les mètriques clau (MRR, abandó, clients nous, actualitzacions)
 - Aplicar actualitzacions de WordPress i plugins (després de la prova en staging)
 - Revisar i actualitzar la base de coneixements basant-se en els patrons de suport
 - Enviar un *newsletter* o actualització als clients (noves funcionalitats, consells, notícies de l'industria del fitness)
 
-### Trimestralment
+### Trimestralment {#quarterly}
 
 - Revisar els preus comparant amb la competència i el feedback dels clients
 - Avaluar el disseny de les plantilles: cal refrescar-les?
 - Avaluar la capacitat d'hosting: cal escalar?
 - Revisar i millorar l'onboarding basant-se en les dades d'activació
 
-## El que vam construir en aquesta Aula
+## El que vam construir en aquesta Aula {#what-we-built-this-lesson}
 
 - **Rutines de monitorització diària** per a l'uptime, inscripcions, pagaments i suport
 - **Una estructura de suport escalonada** adaptada als nivells de pla

@@ -3,15 +3,15 @@ title: ਮਹਿਮਾਨ-ਨਵਾਜ਼ੀ ਦੇ ਮੈਨੂਸ
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Hospitality Menus
+# Hospitality Menus {#hospitality-menus}
 
 **Hospitality Menus** feature Theme Builder nu madad karda hai ki tusi apne WordPress site 'te vyavasthit khane aur peene (food and beverage) de menu pages bana sako aur unhe embed kar sako.
 
-## Overview
+## Overview {#overview}
 
 Theme Builder hun hospitality businesses, jismein restaurants, cafes, bars, aur catering services shamil hain, layi professional, vyavasthit menu pages bana sakda hai. Ye menu tusi apni site de design vich poori tarah se integrate kar sakde ho, aur innu update karna ya manage karna bahut aasan hai.
 
-## Supported Hospitality Types
+## Supported Hospitality Types {#supported-hospitality-types}
 
 - **Restaurants** — poore service de dining menu
 - **Cafes** — coffee aur halka khana (light fare) de menu
@@ -21,9 +21,9 @@ Theme Builder hun hospitality businesses, jismein restaurants, cafes, bars, aur 
 - **Food Trucks** — mobile food service menu
 - **Breweries and Wineries** — description naal pey de menu
 
-## Menu Structure
+## Menu Structure {#menu-structure}
 
-### Menu Categories
+### Menu Categories {#menu-categories}
 
 Menu categories vich organize kiye gaye hunde hain:
 
@@ -34,7 +34,7 @@ Menu categories vich organize kiye gaye hunde hain:
 - **Beverages** — pey (alcoholic aur non-alcoholic)
 - **Specials** — roz ya mausam ke hisaab naal khaas items
 
-### Menu Item Format
+### Menu Item Format {#menu-item-format}
 
 Har menu item vich yeh cheezein shamil hundiyan hain:
 
@@ -49,7 +49,7 @@ Har menu item vich yeh cheezein shamil hundiyan hain:
 }
 ```
 
-#### Item Fields
+#### Item Fields {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Har menu item vich yeh cheezein shamil hundiyan hain:
 | `allergens` | array | Saamaanya allergens (Nuts, Shellfish, etc.) |
 | `availability` | string | Kab uplabdh hai (Daily, Seasonal, etc.) |
 
-## Creating Hospitality Menus
+## Creating Hospitality Menus {#creating-hospitality-menus}
 
-### Step 1: Menu Information Dena
+### Step 1: Menu Information Dena {#step-1-provide-menu-information}
 
 Theme Builder nu apne menu baare mein dasso:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Step 2: Theme Builder Menu Banaunda Hai
+### Step 2: Theme Builder Menu Banaunda Hai {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Daam aur descriptions nu format karda hai
 5. Dietary aur allergen information jodda hai
 
-### Step 3: Review aur Customize Karna
+### Step 3: Review aur Customize Karna {#step-3-review-and-customize}
 
 Tusi kar sakde ho:
 
@@ -91,9 +91,9 @@ Tusi kar sakde ho:
 4. Descriptions aur dietary info update karna
 5. Styling aur layout adjust karna
 
-## Menu Display Options
+## Menu Display Options {#menu-display-options}
 
-### Full Menu Page
+### Full Menu Page {#full-menu-page}
 
 Ek khaas page jo tuhanu poora menu dikhaye:
 
@@ -102,7 +102,7 @@ Ek khaas page jo tuhanu poora menu dikhaye:
 - Print karne layi aasan layout
 - Mobile 'te chalne wala design
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Menu sections nu doosre pages 'te embed karna:
 
@@ -111,7 +111,7 @@ Menu sections nu doosre pages 'te embed karna:
 - Bar page 'te beverage menu
 - Footer 'te dessert showcase
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Ek download karne wala PDF menu generate karna:
 
@@ -120,9 +120,9 @@ Ek download karne wala PDF menu generate karna:
 - Images aur descriptions shamil
 - Share aur email karna aasan
 
-## Dietary and Allergen Information
+## Dietary and Allergen Information {#dietary-and-allergen-information}
 
-### Dietary Attributes
+### Dietary Attributes {#dietary-attributes}
 
 Items nu dietary information naal mark karna:
 
@@ -134,7 +134,7 @@ Items nu dietary information naal mark karna:
 - **Low-Carb** — kam carbohydrates
 - **High-Protein** — protein se bharpoor
 
-### Allergen Warnings
+### Allergen Warnings {#allergen-warnings}
 
 Saamaanya allergens shamil karna:
 
@@ -147,9 +147,9 @@ Saamaanya allergens shamil karna:
 - **Gluten** — gehun aur gluten wale anaaj
 - **Sesame** — til ke beej aur tel
 
-## Menu Management
+## Menu Management {#menu-management}
 
-### Updating Prices
+### Updating Prices {#updating-prices}
 
 Menu de daam aasaani naal update karna:
 
@@ -159,7 +159,7 @@ Menu de daam aasaani naal update karna:
 4. Changes save karna
 5. Changes turant tuhanu site 'te dikhange
 
-### Adding Seasonal Items
+### Adding Seasonal Items {#adding-seasonal-items}
 
 Mausam ke hisaab naal menu variations banana:
 
@@ -169,7 +169,7 @@ Mausam ke hisaab naal menu variations banana:
 4. Uplabdh hone de dates schedule karna
 5. Season da daura vich automatic display hona
 
-### Managing Specials
+### Managing Specials {#managing-specials}
 
 Roz ya hafte ke hisaab naal specials dikhana:
 
@@ -179,7 +179,7 @@ Roz ya hafte ke hisaab naal specials dikhana:
 4. Roz ya hafte ke hisaab naal update karna
 5. Purane specials archive karna
 
-## Integration with Theme Builder
+## Integration with Theme Builder {#integration-with-theme-builder}
 
 Jab tusi hospitality sites layi Theme Builder istemal karde ho:
 
@@ -189,9 +189,9 @@ Jab tusi hospitality sites layi Theme Builder istemal karde ho:
 4. **Mobile optimization** — menu phones 'te khoobsurat dikhde ne
 5. **SEO optimization** — menu search-engine friendly hunde ne
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Menu Design
+### Menu Design {#menu-design}
 
 - **Clear organization** — vyavasthit category structure
 - **Readable descriptions** — bhook laagne wale aur jaankari dene wale
@@ -199,7 +199,7 @@ Jab tusi hospitality sites layi Theme Builder istemal karde ho:
 - **Professional photos** — high-quality khane di tasveerein
 - **Whitespace** — page nu zyada bhare nahi
 
-### Content
+### Content {#content}
 
 - **Accurate descriptions** — items nu sahi tarah se describe karna
 - **Highlight specials** — specials nu alag dikhana
@@ -207,7 +207,7 @@ Jab tusi hospitality sites layi Theme Builder istemal karde ho:
 - **Update regularly** — daam aur items nu hamesha taaza rakhna
 - **Use appetizing language** — items nu swadisht lagane wali bhasha istemal karna
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Readable fonts** — saaf, padhne yogya typefaces istemal karna
 - **Sufficient contrast** — yakeen karna ki text padhne yogya hai
@@ -215,9 +215,9 @@ Jab tusi hospitality sites layi Theme Builder istemal karde ho:
 - **Allergen warnings** — allergens nu bade taur te dikhana
 - **Mobile-friendly** — saare devices 'te test karna
 
-## Examples
+## Examples {#examples}
 
-### Restaurant Menu Structure
+### Restaurant Menu Structure {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Cafe Menu Structure
+### Cafe Menu Structure {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Related Features
+## Related Features {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — navigation menus banana
 - [Design Direction](./design-direction.md) — apni site da design customize karna

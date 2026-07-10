@@ -1,58 +1,58 @@
 ---
-title: REST API ಪರಿಚಯ
+title: REST API ಅವಲೋಕನ
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ವಿವರಣೆ
+# REST API ಉಲ್ಲೇಖ {#rest-api-reference}
 
-## ಮೂಲ ಸೆಟಪ್ (Base Configuration)
+## ಮೂಲ ಸಂರಚನೆ {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key ಮತ್ತು Secret (HTTP Basic Auth ಅಥವಾ URL Parameters)
+**ಮೂಲ URL:** `{site_url}/wp-json/wu/v2/`
+**ದೃಢೀಕರಣ:** API Key ಮತ್ತು Secret (HTTP Basic Auth ಅಥವಾ URL ಪರಿಮಾಣಗಳು)
 
-## प्रमाणीकरण (Authentication)
+## ದೃಢೀಕರಣ {#authentication}
 
-### API ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದು (Enable API)
+### API ಸಕ್ರಿಯಗೊಳಿಸಿ {#enable-api}
 ```php
-// Ultimate Multisite ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಅಥವಾ ಪ್ರೋಗ್ರಾಮ್ಯಾಟಿಕ್‌ವಾಗಿ API ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ವಿವರಗಳನ್ನು ಪಡೆಯುವುದು (Get API Credentials)
+### API ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಪಡೆಯಿರಿ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### प्रमाणीकरण ವಿಧಾನಗಳು (Authentication Methods)
+### ದೃಢೀಕರಣ ವಿಧಾನಗಳು {#authentication-methods}
 
-**HTTP Basic Auth (ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ):**
+**HTTP Basic Auth (ಶಿಫಾರಸು):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL ಪರಿಮಾಣಗಳು:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ಮುಖ್ಯ ಎಂಡ್‌ಪಾಯಿಂಟ್‌ಗಳು (Core Endpoints)
+## ಮುಖ್ಯ ಅಂತಿಮ ಬಿಂದುಗಳು {#core-endpoints}
 
-### 1. ಗ್ರಾಹಕರು API (Customers API)
+### 1. ಗ್ರಾಹಕರ API {#1-customers-api}
 
-**Base Route:** `/customers`
+**ಮೂಲ ಮಾರ್ಗ:** `/customers`
 
-**ಎಲ್ಲಾ ಗ್ರಾಹಕರನ್ನು ಪಡೆಯುವುದು (Get All Customers)**
+**ಎಲ್ಲ ಗ್ರಾಹಕರನ್ನು ಪಡೆಯಿರಿ**
 ```http
 GET /wu/v2/customers
 ```
 
-**ಒಬ್ಬ ಗ್ರಾಹಕರನ್ನು ಪಡೆಯುವುದು (Get Single Customer)**
+**ಒಬ್ಬ ಗ್ರಾಹಕರನ್ನು ಪಡೆಯಿರಿ**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ಗ್ರಾಹಕರನ್ನು ರಚಿಸುವುದು (Create Customer)**
+**ಗ್ರಾಹಕರನ್ನು ರಚಿಸಿ**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**ಗ್ರಾಹಕರನ್ನು ನವೀಕರಿಸುವುದು (Update Customer)**
+**ಗ್ರಾಹಕರನ್ನು ನವೀಕರಿಸಿ**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**ಗ್ರಾಹಕರನ್ನು ಅಳಿಸುವುದು (Delete Customer)**
+**ಗ್ರಾಹಕರನ್ನು ಅಳಿಸಿ**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ಸೈಟ್‌ಗಳು API (Sites API)
+### 2. ತಾಣಗಳ API {#2-sites-api}
 
-**Base Route:** `/sites`
+**ಮೂಲ ಮಾರ್ಗ:** `/sites`
 
-**ಸೈಟ್ ರಚಿಸುವುದು (Create Site)**
+**ತಾಣವನ್ನು ರಚಿಸಿ**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. ಸದಸ್ಯತ್ವಗಳು API (Memberships API)
+### 3. ಸದಸ್ಯತ್ವಗಳ API {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**ಮೂಲ ಮಾರ್ಗ:** `/memberships`
 
-**ಸದಸ್ಯತ್ವವನ್ನು ರಚಿಸುವುದು (Create Membership)**
+**ಸದಸ್ಯತ್ವವನ್ನು ರಚಿಸಿ**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. ಉತ್ಪನ್ನಗಳು API (Products API)
+### 4. ಉತ್ಪನ್ನಗಳ API {#4-products-api}
 
-**Base Route:** `/products`
+**ಮೂಲ ಮಾರ್ಗ:** `/products`
 
-**ಎಲ್ಲಾ ಉತ್ಪನ್ನಗಳನ್ನು ಪಡೆಯುವುದು (Get All Products)**
+**ಎಲ್ಲ ಉತ್ಪನ್ನಗಳನ್ನು ಪಡೆಯಿರಿ**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. ಪಾವತಿಗಳು API (Payments API)
+### 5. ಪಾವತಿಗಳ API {#5-payments-api}
 
-**Base Route:** `/payments`
+**ಮೂಲ ಮಾರ್ಗ:** `/payments`
 
-**ಪಾವತಿಯನ್ನು ರಚಿಸುವುದು (Create Payment)**
+**ಪಾವತಿಯನ್ನು ರಚಿಸಿ**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. ಡೊಮೇನ್‌ಗಳು API (Domains API)
+### 6. ಡೊಮೇನ್‌ಗಳ API {#6-domains-api}
 
-**Base Route:** `/domains`
+**ಮೂಲ ಮಾರ್ಗ:** `/domains`
 
-**ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್ (Map Domain)**
+**ಡೊಮೇನ್ ನಕ್ಷೆ ಮಾಡಿ**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## ನೋಂದಣಿ ಎಂಡ್‌ಪಾಯಿಂಟ್ (Registration Endpoint)
+## ನೋಂದಣಿ ಅಂತಿಮ ಬಿಂದು {#registration-endpoint}
 
-`/register` ಎಂಡ್‌ಪಾಯಿಂಟ್ ಸಂಪೂರ್ಣ ಚೆಕ್‌ಔಟ್/ನೋಂದಣಿ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಒದಗಿಸುತ್ತದೆ:
+`/register` ಅಂತಿಮ ಬಿಂದುವು ಸಂಪೂರ್ಣ ಚೆಕ್‌ಔಟ್/ನೋಂದಣಿ ಹರಿವನ್ನು ಒದಗಿಸುತ್ತದೆ:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**ಪ್ರತಿಕ್ರಿಯೆ (Response):**
+**ಪ್ರತಿಕ್ರಿಯೆ:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## ದೋಷ ಪ್ರತಿಕ್ರಿಯೆಗಳು (Error Responses)
+## ಸ್ವಾಯತ್ತ ಟೆನಂಟ್ ಅಂತಿಮ ಬಿಂದುಗಳು {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 ಪ್ರತ್ಯೇಕ ಟೆನಂಟ್‌ಗಳನ್ನು ಒದಗಿಸುವ, ಪರಿಶೀಲಿಸುವ ಅಥವಾ ದೃಢಪಡಿಸುವ ಏಕೀಕರಣಗಳಿಗಾಗಿ ಸ್ವಾಯತ್ತ ಟೆನಂಟ್ REST ವ್ಯಾಪ್ತಿಯನ್ನು ಸೇರಿಸುತ್ತದೆ.
+
+ನಿಖರವಾದ ವಿನಂತಿ ಪೇಲೋಡ್ ಸಕ್ರಿಯಗೊಳಿಸಿದ ಹೋಸ್ಟ್ ಸಾಮರ್ಥ್ಯವನ್ನು ಅವಲಂಬಿಸುತ್ತದೆ, ಆದರೆ ಏಕೀಕರಣಗಳು ಈ ಅಂತಿಮ ಬಿಂದು ಗುಂಪುಗಳನ್ನು ನಿರೀಕ್ಷಿಸಬೇಕು:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+ಟೆನಂಟ್ ರಿಜಿಸ್ಟ್ರಿ, ಡೇಟಾಬೇಸ್, ಫೈಲ್‌ಸಿಸ್ಟಮ್ ಮತ್ತು ರೌಟಿಂಗ್ ಸ್ಥಿತಿಯನ್ನು ಸಿದ್ಧಪಡಿಸಲು bootstrap ಅಂತಿಮ ಬಿಂದುವನ್ನು ಬಳಸಿ. ಉತ್ಪಾದನಾ ಟ್ರಾಫಿಕ್ ಬದಲಾಯಿಸುವ ಮೊದಲು ವಲಸೆ ಸ್ಥಿತಿ ಮತ್ತು ದೃಢೀಕರಣ ಅಂತಿಮ ಬಿಂದುಗಳನ್ನು ಬಳಸಿ. ಸ್ವಾಯತ್ತ ತೆರವುಗೊಳಿಸುವಿಕೆಗೆ ಅಳಿಸುವ ಅಂತಿಮ ಬಿಂದುವನ್ನು ಬಳಸಿ, ಇದರಿಂದ ಡೇಟಾಬೇಸ್ ಪ್ರಮಾಣಪತ್ರಗಳು addon ಸ್ವಚ್ಛತಾ ಹರಿವಿನ ಮೂಲಕ ತೆಗೆದುಹಾಕಲ್ಪಡುತ್ತವೆ.
+
+ಸಾಮಾನ್ಯ ವಲಸೆ ಸ್ಥಿತಿ ಪ್ರತಿಕ್ರಿಯೆಗಳು ಇವುಗಳನ್ನು ಒಳಗೊಂಡಿರುತ್ತವೆ:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` ಅನ್ನು ಬಿಡುಗಡೆಗೂ ಮುಂಚಿನ ತಡೆ ಎಂದು ಪರಿಗಣಿಸಿ. ದೃಢೀಕರಣ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ, ಡೇಟಾಬೇಸ್ ಹೋಸ್ಟ್ ಬೈಂಡಿಂಗ್, ಕ್ಯೂ, ಬಳಕೆದಾರ ಒದಗಿಸುವಿಕೆ ಅಥವಾ ರೌಟಿಂಗ್ ಸಮಸ್ಯೆಯನ್ನು ಸರಿಪಡಿಸಿ, ನಂತರ ದೃಢೀಕರಣವನ್ನು ಮರುಪ್ರಯತ್ನಿಸಿ.
+
+## ದೋಷ ಪ್ರತಿಕ್ರಿಯೆಗಳು {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## ಪುಟೀಕರಣ ಮತ್ತು ಫಿಲ್ಟರಿಂಗ್ (Pagination and Filtering)
+## ಪುಟೀಕರಣ ಮತ್ತು ಶೋಧನೆ {#pagination-and-filtering}
 
-**Query Parameters:**
+**ಪ್ರಶ್ನಾ ಪರಿಮಾಣಗಳು:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-ಸಾಮಾನ್ಯ ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು (Common parameters):
-- `per_page` - ಪ್ರತಿ ಪುಟದಲ್ಲಿನ ಐಟಂಗಳು (default: 20, max: 100)
+ಸಾಮಾನ್ಯ ಪರಿಮಾಣಗಳು:
+- `per_page` - ಪ್ರತಿ ಪುಟದ ಅಂಶಗಳು (ಡೀಫಾಲ್ಟ್: 20, ಗರಿಷ್ಠ: 100)
 - `page` - ಪುಟ ಸಂಖ್ಯೆ
-- `search` - ಹುಡುಕಾಟ ಪದ (Search term)
-- `orderby` - ಆಯೋಜಿಸಲು ಫೀಲ್ಡ್ (Sort field)
-- `order` - ಆಯೋಜಿಸುವ ದಿಕ್ಕು (asc/desc)
-- `status` - ಸ್ಟೇಟಸ್ ಮೂಲಕ ಫಿಲ್ಟರ್ ಮಾಡಿ
-- `date_created` - ದಿನಾಂಕದ ವ್ಯಾಪ್ತಿಯ ಮೂಲಕ ಫಿಲ್ಟರ್ ಮಾಡಿ
+- `search` - ಹುಡುಕಾಟ ಪದ
+- `orderby` - ವಿಂಗಡಿಸುವ ಕ್ಷೇತ್ರ
+- `order` - ವಿಂಗಡಿಸುವ ದಿಕ್ಕು (asc/desc)
+- `status` - ಸ್ಥಿತಿಯ ಮೂಲಕ ಫಿಲ್ಟರ್ ಮಾಡಿ
+- `date_created` - ದಿನಾಂಕ ವ್ಯಾಪ್ತಿಯ ಮೂಲಕ ಫಿಲ್ಟರ್ ಮಾಡಿ

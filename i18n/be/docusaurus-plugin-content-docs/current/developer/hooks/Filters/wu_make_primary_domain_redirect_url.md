@@ -4,13 +4,13 @@ title: Фільтр - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Фільтруе URL перанаправлення пасля вызначэння домену галоўным.
 
 Дазваляе рэалізавальнікам наладзіць, куды будуць перанаправленне карыстальнікі пасля паспяховага вызначэння домену галоўным. Па ўстаноўкам, гэта перанапраўляе на бягучы URL на галоўным сайце або на адмін-URL сайта, які рэдагуецца.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | Об'ект домену, які вызначаецца галоўным. |
 | $old_primary_domains | `array` | Массив ID домен, якія раней былі галоўнымі. |
 
-### З
+### З {#since}
 
 - 2.0.0
-### Вынік
+### Вынік {#source}
 
 Вызначаны ў [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) на 639-й паўні.
 
 
-## Паказвае
+## Паказвае {#returns}
 Фільтраваны URL перанаправлення.

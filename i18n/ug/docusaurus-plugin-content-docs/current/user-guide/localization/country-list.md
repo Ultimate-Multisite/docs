@@ -3,7 +3,7 @@ title: Еллар рўйхати
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite ülkesini yeniden sıralama
+# Ultimate Multisite ülkesini yeniden sıralama {#re-ordering-the-ultimate-multisite-country-list}
 
 Ülke seçmek için açılan menü, ülkelerin İngilizce isimlerine göre alfabetik olarak sıralanır. Bu durum bazen şirketinizin veya müşterilerinizin ana ülkesinin ve/veya çoğu müşterinizin çok uzun bir ülke adı listesinin ortasında kalmasına neden olabilir.
 

@@ -1,128 +1,140 @@
 ---
-title: Klientkontoside
+title: Klientens Account-side
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Kundens kontoside (v2)
+# Din kundes Account-side (v2) {#your-clients-account-page-v2}
 
-_**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
+_**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
-Når kunder abonnerer på en plan i nettverket ditt, får de tilgang til en nettside og et dashbord med viktig informasjon om betalinger, medlemskap, domener, planbegrensninger og mer.
+Når kunder abonnerer på en plan i nettverket ditt, får de tilgang til et nettsted og dets Dashboard med viktig informasjon om betalinger, medlemskap, domener, planbegrensninger osv...
 
-I denne veiledningen tar vi deg gjennom kundens kontoside, slik at du ser hva kundene dine kan se og gjøre der.
+I denne veiledningen guider vi deg gjennom kundens Account-side, og du vil se hva kundene dine kan se og gjøre der inne.
 
-## Kontosiden
+## Account-siden {#the-account-page}
 
-Kontosiden er tilgjengelig ved å klikke på **Account** i kundens dashbord.
+Account-siden er tilgjengelig ved å klikke på **Account** inne i kundens Dashboard.
 
-![Kontomeny i kundedashbordet](/img/admin/dashboard.png)
+![Account-meny i kundens Dashboard](/img/account-page/account-menu.png)
 
-![Oversikt over kundens kontoside](/img/admin/dashboard.png)
+På suverene leietakernettverk beholder Ultimate Multisite v2.13.0 denne kundeadministrasjonsopplevelsen på hovednettstedet. Hvis en kunde åpner handlinger for konto, checkout, fakturering, faktura, nettstedadministrasjon, malbytte eller domenetilknytning fra en suveren leietaker, peker handlingen tilbake til kundepanelet på hovednettstedet, slik at nettverkets fakturerings- og medlemskapsoppføringer forblir autoritative.
 
-Når en kunde klikker på den, får de en oversikt over medlemskapet sitt, fakturaadresse, fakturaer, domener og nettstedsbegrensninger. De kan også endre **Site Template** (hvis dette er tillatt i nettverket ditt).
+Når kunden kommer fra en suveren leietaker, kan kundepanelet på hovednettstedet inkludere en returlenke tilbake til leietakernettstedet. Returlenken vises bare når Ultimate Multisite kan validere returmålet som ett av kundens nettsteder, noe som forhindrer vilkårlige omdirigeringer samtidig som leietakerarbeidsflyten bevares.
 
-De kan også bytte medlemskap til en annen plan, eller kjøpe en annen pakke eller tjeneste du tilbyr. La oss se nærmere på hver seksjon.
+![Oversikt over kundens Account-side](/img/account-page/overview.png)
 
-### Oversikt over medlemskapet ditt:
+Etter at en kunde klikker på den, vil de se en oversikt over medlemskapet sitt, faktureringsadresse, fakturaer, domener, nettstedsbegrensninger, og de vil også kunne endre ****Nettstedsmal** (hvis det er tillatt i nettverket ditt)**.
 
-Den første blokken rett under kundens nettstedsnavn viser en oversikt over gjeldende plan og tjenester/pakker som ble kjøpt med den. Blokken viser også medlemsnummer, det opprinnelige beløpet som ble betalt, hvor mye planen og eventuelle tjenester/pakker koster, og hvor mange ganger de har blitt fakturert for dette medlemskapet. De kan også se om medlemskapet er **Active**, **Expired** eller **Canceled**.
+De kan også endre medlemskapet til en annen plan, eller kjøpe en annen pakke eller tjeneste som du tilbyr. La oss se på hver seksjon separat.
 
-![Medlemskapsoversikt som viser plan, beløp og faktureringsdetaljer](/img/admin/memberships-list.png)
+### Oversikt over medlemskapet ditt: {#your-membership-overview}
 
-Rett under denne blokken kan kundene dine se blokkene **About This Site** og **Site Limits**. Disse blokkene viser dem alle begrensningene som følger med planen: diskplass, innlegg, sider, besøk og så videre. Disse grensene kan konfigureres på hver planside under **Ultimate Multisite > Products**.
+Den første blokken rett under kundenes nettstedsnavn viser en oversikt over deres nåværende plan og tjenester/pakker som ble kjøpt sammen med den. Blokken viser også medlemskapsnummeret, det opprinnelige beløpet som ble betalt for det, hvor mye planen og eventuelle tjenester/pakker koster, og hvor mange ganger de ble fakturert for dette medlemskapet. De kan også se om medlemskapet er **Aktivt** , **Utløpt** eller **Kansellert**.
 
-![About This Site- og Site Limits-blokkene som viser planbegrensninger](/img/admin/dashboard.png)
+![Medlemskapsoversikt som viser plan, beløp og faktureringsdetaljer](/img/account-page/membership-card.png)
 
-På høyre side av **Your Membership** kan kundene klikke på **Change**. Da vises alle tilgjengelige planer og pakker/tjenester. Hvis de velger en annen plan, vil begrensningene for den nye planen tre i kraft i stedet for de gjeldende begrensningene – uavhengig av om de nedgraderer eller oppgraderer.
+Rett under denne blokken kan kundene dine se blokkene **Om dette nettstedet** og **Nettstedsgrenser**. Disse blokkene viser dem alle begrensningene som følger med planen deres: diskplass, innlegg, sider, besøk osv... Disse grensene kan konfigureres på hver planside under **Ultimate Multisite > Produkter**.
 
-Hvis kundene dine velger å kjøpe pakker eller tjenester til det nåværende medlemskapet – som mer diskplass eller flere besøk – endres ikke det nåværende medlemskapet. Bare de nye pakkene legges til.
+![Blokkene Om dette nettstedet og Nettstedsgrenser som viser planbegrensninger](/img/account-page/site-limits.png)
 
-Merk at rabattkoder ikke kan legges til på denne siden for endring av medlemskap. Hvis kunden brukte en rabattkode ved første medlemskapskjøp, vil koden også gjelde for det nye medlemskapet.
+På høyre side av **Ditt medlemskap** kan kunder klikke på **Endre**. Dette vil vise dem alle tilgjengelige planer og pakker/tjenester. Hvis de velger en annen plan, vil begrensningene for planen gjelde i stedet for de nåværende begrensningene i medlemskapet – uansett om de nedgraderer eller oppgraderer det.
 
-### Oppdatere fakturaadresse:
+Hvis kundene dine nå velger å kjøpe pakker eller tjenester for dette nåværende medlemskapet – som mer diskplass eller flere besøk – vil det nåværende medlemskapet ikke bli endret, men bare de nye pakkene vil bli lagt til i det.
 
-På kontosiden kan kundene dine også oppdatere fakturaadressen sin. De trenger bare å klikke på **Update** ved siden av _Billing Address_.
+Merk at kupongkoder ikke kan legges til på denne siden for medlemskapsendring. Hvis kunden brukte en kupongkode ved det første medlemskapskjøpet, vil koden også gjelde for dette nye medlemskapet.
 
-![Fakturaadresse-seksjon med Oppdater-knapp](/img/admin/customers-list.png)
+### Oppdatere faktureringsadressen: {#updating-the-billing-address}
 
-Et nytt vindu åpnes for kunden. Alt de trenger å gjøre er å fylle inn den nye adressen og klikke på _Save Changes_.
+På Account-siden kan kundene dine også oppdatere faktureringsadressen sin. De trenger bare å klikke på **Oppdater** ved siden av _Faktureringsadresse_.
 
-![Skjema for oppdatering av fakturaadresse](/img/admin/customers-list.png)
+![Seksjonen Faktureringsadresse med Oppdater-knapp](/img/account-page/billing-address.png)
 
-### Bytte nettstedsmal:
+Et nytt vindu vil vises for kunden din. Alt vedkommende trenger å gjøre er å fylle inn den nye adressen og klikke på _Lagre endringer_.
 
-For å la kundene dine bytte nettstedsmaler, må du gå til **Ultimate Multisite > Settings > Sites** og slå på alternativet **Allow Template Switching**.
+![Skjema for oppdatering av faktureringsadresse](/img/account-page/billing-address-form.png)
 
-I tillegg, under **Ultimate Multisite > Products**, velger du planene dine og går til fanen **Site Templates**. Sørg for at alternativet **Allow Site Templates** er slått på, og at **Choose Available Site Templates** er valgt under **Site Template Selection Mode**.
+### Endre nettstedsmalen: {#changing-the-site-template}
 
-![Produktets nettstedsmaler-fane med valg av malmodus](/img/config/product-site-templates.png)
+For å la kundene dine endre nettstedsmalene sine, må du gå til **Ultimate Multisite > Innstillinger > Nettsteder** og slå på alternativet **Tillat malbytte**.
 
-Du vil kunne se alle tilgjengelige nettstedsmaler på nettsiden din. Velg hvilke du vil gjøre tilgjengelige og hvilke som ikke skal være tilgjengelige for kunder som abonnerer på denne planen. Merk at disse valgene også påvirker betalingsskjemaet, så maler som er merket som **Not Available** vil ikke vises på registreringssiden for denne planen.
+På **Ultimate Multisite > Produkter** velger du også planene dine og går til fanen **Nettstedsmaler**. Sørg for at alternativet **Tillat nettstedsmaler** er slått på, og at alternativet **Velg tilgjengelige nettstedsmaler** er valgt under **Valgmodus for nettstedsmal**.
 
-Nå kan kundene dine klikke på **Change Site Template** på kontosiden sin.
+![Produktets nettstedsmal-fane med valgmodus for mal](/img/config/product-site-templates.png)
 
-![Knapp for å bytte nettstedsmal på kontosiden](/img/admin/dashboard.png)
+Du vil kunne se alle tilgjengelige nettstedsmaler på nettstedet ditt. Velg hvilke du vil gjøre tilgjengelige, og hvilke du ikke vil gjøre tilgjengelige for kunder som abonnerer på denne planen. Merk at disse alternativene også påvirker checkout-skjemaet, så enhver mal som er valgt som **Ikke tilgjengelig**, vil ikke vises på registreringssiden for denne planen.
 
-En liste over alle tilgjengelige nettstedsmaler for denne planen vises for kunden.
+Nå kan kundene dine klikke på **Endre nettstedsmal** inne på Account-siden sin.
+
+![Knapp for Endre nettstedsmal på Account-siden](/img/account-page/change-template-button.png)
+
+Ultimate Multisite 2.10.0 viser et redesignet panel for malbytte. Panelet starter med et **kort for gjeldende mal**, slik at kunder kan se hvilken mal som er aktiv før de velger en erstatning.
+
+Et vedvarende rutenett med tilgjengelige nettstedsmaler forblir synlig mens kunder vurderer alternativene sine. Dette hjelper dem med å sammenligne malene som er tillatt for planen deres, uten å miste den nåværende valgte malen av syne.
 
 ![Liste over tilgjengelige nettstedsmaler for planen](/img/config/site-templates-list.png)
 
-Etter at de har valgt malen de vil bytte til, blir de bedt om å bekrefte endringen.
+Etter å ha valgt den de vil bytte til, blir de bedt om å bekrefte endringen.
 
-![Bekreftelsesdialog for bytte av nettstedsmal](/img/admin/dashboard.png)
+![Bekreftelsesdialog for bytte av nettstedsmal](/img/account-page/template-switch-confirm.png)
 
-Etter å ha slått på bekreftelsen og klikket på **Process Switch**, vil den nye nettstedsmalen tas i bruk på kundens nettside.
+Etter å ha slått på bekreftelsen og klikket på **Utfør bytte** , vil den nye nettstedsmalen bli brukt på kundens nettsted.
 
-### Legge til egne domener:
+Kunder kan også bruke **Tilbakestill gjeldende mal** fra dette panelet når de trenger å tilbakestille nettstedet tilbake til den nåværende tildelte malen. Som ved å bytte til en annen mal kan tilbakestilling av en mal overskrive nettstedsinnhold, så kunder bør bare bekrefte det når de forstår tilbakestillingshandlingen.
 
-Kundene dine har også mulighet til å legge til et eget domene for denne planen på kontosiden sin. For å la kundene dine bruke egne domener, gå til **Ultimate Multisite > Settings > Domain Mapping**.
+### Legge til egendefinerte domener: {#adding-custom-domains}
 
-Slå på alternativet **Enable Domain Mapping**. Dette lar kundene dine bruke egne domener på nettverksnivå.
+Kundene dine vil også ha muligheten til å legge til et egendefinert domene for denne planen på Account-siden sin. For å la kundene dine bruke egendefinerte domener, gå til **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-Ikke glem å også sjekke om domenetilordning er aktivert på produktnivå – fordi du kan begrense et produkt slik at kundene ikke kan bruke egne domener.
+Slå på alternativet **Enable Domain Mapping**. Dette vil la kundene dine bruke egendefinerte domener på nettverksnivå.
 
-Gå til **Ultimate Multisite > Products**. Velg planen du ønsker og gå til fanen **Custom Domains**. Slå på alternativet **Allow Custom Domains**.
+Ikke glem å også sjekke om domain mapping er aktivert per produkt – fordi du kan begrense et produkt slik at kundene dine ikke kan bruke egendefinerte domener.
 
-![Egne domener-fane med bryteren for å tillate egne domener](/img/config/product-custom-domains.png)
+Gå til **Ultimate Multisite > Products**. Velg planen du ønsker, og gå til fanen **Custom Domains**. Slå på alternativet **Allow Custom Domains**.
 
-Dette lar alle kunder som abonnerer på denne spesifikke planen bruke egne domener. Nå kan kundene dine legge til et eget domene på kontosiden ved å klikke på **Add Domain**.
+![Fanen Custom Domains med Allow Custom Domains-bryter](/img/config/product-custom-domains.png)
 
-![Legg til domene-knapp på kontosiden](/img/admin/domains-list.png)
+Dette vil la alle kunder som abonnerer på denne spesifikke planen bruke egendefinerte domener. Nå kan kundene dine, på Account-siden, legge til et egendefinert domene ved å klikke på **Add Domain**.
 
-Det første vinduet som åpnes, viser kundene dine en melding med instruksjoner om hvordan de oppdaterer DNS-postene sine for å få det egne domenet til å fungere i nettverket ditt.
+![Add Domain-knapp på Account-siden](/img/account-page/add-domain-button.png)
 
-![DNS-instruksjoner som vises når man legger til et eget domene](/img/admin/domains-list.png)
+Det første vinduet som åpnes, vil vise kundene dine en melding som instruerer dem i hvordan de oppdaterer DNS-oppføringene sine for å få dette egendefinerte domenet til å fungere på nettverket ditt.
 
-Denne meldingen kan redigeres (av deg) under **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+![DNS-instruksjoner som vises når et egendefinert domene legges til](/img/account-page/add-domain-dns.png)
 
-![Innstilling for instruksjoner om nye domener i Domain Mapping](/img/config/settings-domain-mapping.png)
+Denne meldingen kan redigeres (av deg) på **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-Etter å ha klikket på **Next Step**, kan kundene dine legge til sitt egne domenenavn og velge om dette domenet skal være hoveddomenet. Merk at kundene dine kan bruke mer enn ett eget domene for nettsidene sine, slik at de kan velge hvilket som skal være hoveddomenet.
+![Add New Domain Instructions-innstilling i Domain Mapping](/img/config/settings-domain-mapping.png)
 
-![Felt for egendefinert domenenavn med alternativ for hoveddomene](/img/admin/domains-list.png)
+Her er en full visning av innstillingssiden for domain mapping:
 
-Etter å ha klikket på **Add Domain**, legges domenet til i kundens konto. Alt de trenger å gjøre nå er å endre DNS-postene for dette egne domenet hos domeneregistraren sin.
+![Full side for domain mapping-innstillinger](/img/config/settings-domain-mapping-full.png)
 
-### Endre passord:
+Etter å ha klikket på **Next Step** , kan kundene dine legge til navnet på det egendefinerte domenet sitt og velge om dette egendefinerte domenet skal være det primære. Merk at kundene dine kan bruke mer enn ett egendefinert domene for nettstedene sine, så de kan velge hvilket som skal være det primære.
 
-På kontosiden kan kundene dine også endre passordet sitt ved å klikke på **Change Password**.
+![Inntasting av egendefinert domenenavn med alternativ for primært domene](/img/account-page/add-domain-primary.png)
 
-![Endre passord-knapp på kontosiden](/img/admin/dashboard.png)
+Etter å ha klikket på **Add Domain** , blir domenet lagt til i kundens konto. Alt de trenger å gjøre nå, er å endre DNS-oppføringene for dette egendefinerte domenet hos domeneregistratoren sin.
 
-Da vises et nytt vindu hvor kundene må fylle inn sitt nåværende passord og deretter det nye passordet de vil bruke.
+### Endre passord: {#changing-password}
 
-![Skjema for passordendring med felt for nåværende og nytt passord](/img/admin/dashboard.png)
+Inne i konto-Dashboard kan kundene dine også endre passordet sitt ved å klikke på **Change Password**.
 
-### Faresone:
+![Change Password-knapp på Account-side](/img/account-page/change-password-button.png)
 
-Vi har også to alternativer som vises i **Danger Zone**-delen: **Delete Site** og **Delete Account**. Begge er i faresonen fordi disse to handlingene er irreversible. Hvis kundene dine sletter nettsiden eller kontoen sin, kan de ikke gjenopprette dem.
+Dette vil vise et nytt vindu der kundene dine må fylle inn sitt nåværende passord og deretter fylle inn det nye passordet de vil bruke.
 
-![Faresone med alternativene Slett nettsted og Slett konto](/img/admin/dashboard.png)
+![Skjema for endring av passord med felt for nåværende og nytt passord](/img/account-page/change-password-form.png)
 
-Hvis kundene dine klikker på ett av disse to alternativene, vises et vindu hvor de må slå på alternativet for å fjerne nettsiden eller kontoen, og de blir advart om at denne handlingen ikke kan angres.
+### Faresone: {#danger-zone}
 
-![Bekreftelsesdialog for sletting av nettsted](/img/admin/dashboard.png)
+Vi har også to alternativer som vises i delen **Danger Zone**: **Delete Site** og **Delete Account**. De er begge i Danger Zone-delen fordi disse to handlingene er irreversible. Hvis kundene dine sletter nettstedet sitt eller kontoen sin, kan de ikke gjenopprette dem.
 
-![Bekreftelsesdialog for sletting av konto](/img/admin/dashboard.png)
+![Danger Zone med alternativene Delete Site og Delete Account](/img/account-page/danger-zone.png)
 
-Hvis de sletter nettsiden sin, vil kontoen og medlemskapet deres fortsatt være uberørt. De mister bare alt innholdet på nettsiden sin. Hvis de sletter kontoen sin, går alle nettsteder, medlemskap og informasjon knyttet til denne kontoen tapt.
+Hvis kundene dine klikker på ett av disse to alternativene, vil de få opp et vindu der de må slå på alternativet for å fjerne nettstedet eller kontoen, og de vil bli advart om at denne handlingen ikke kan angres.
+
+![Bekreftelsesdialog for Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Bekreftelsesdialog for Delete Account](/img/account-page/delete-account-confirm.png)
+
+Hvis de sletter nettstedet sitt, vil kontoen og medlemskapet deres fortsatt være uberørt. De vil bare miste alt innholdet på nettstedet sitt. Hvis de sletter kontoen sin, vil alle nettsteder, medlemskap og informasjon knyttet til denne kontoen gå tapt.

@@ -4,23 +4,23 @@ title: Филтър - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filter: wp_ultimo_site_exporter_url
+# Filter: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Позволява на разработчиците да управляват относителната пътека до корена на плагина.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $dir | `string` | Път относително към корена на плагина, до който искате да получите достъп. |
 
-### От версия
+### От версия {#since}
 
 - 0.0.1
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) на линия 52
 
 
-## Връща
+## Връща {#returns}
 Път относително към корена на плагина.

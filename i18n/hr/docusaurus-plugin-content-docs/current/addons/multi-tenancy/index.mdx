@@ -1,0 +1,150 @@
+---
+title: Višezakupništvo
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Višezakupnost {#multi-tenancy}
+
+Distribuirajte podstranice po poslužiteljima i bazama podataka radi performansi i sigurnosti
+
+## Najvažnije novosti izdanja verzije 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 dodaje temelj za suverene zakupce za radne tijekove izolacije u produkciji:
+
+- Bezstanje automatsko prijavljivanje zakupca s kratkotrajnim, od ponavljanja zaštićenim SSO posjetima.
+- Izolacija baze podataka i datotečnog sustava po podstranici za suverene zakupce.
+- Hostinger mogućnost višezakupnosti za dodjelu zakupaca svjesnu hosta.
+- Verifikacijske zapreke suverene migracije za provjere naslijeđenih podataka i asinkronu obradu slanja.
+- Podesivo vezanje hosta baze podataka na istom stroju za Bedrock, FrankenPHP i localhost instalacije.
+- Poboljšanja početnog pokretanja zakupca, zapisivača baze podataka, početnog pokretanja sheme i dodjele korisnika.
+- Sigurnije suvereno uklanjanje koje čisti vjerodajnice zakupca.
+
+Pogledajte korisničke vodiče za [radni tijek suverene migracije](/user-guide/getting-started/sovereign-migration-workflow), [izolaciju višezakupnosti](/user-guide/configuration/multi-tenancy-isolation) i [operacije suverenog zakupca](/user-guide/administration/sovereign-tenant-operations).
+
+## Zahtjevi {#requirements}
+
+- WordPress 5.3 ili noviji
+- PHP 7.4 ili noviji
+- Multisite Ultimate dodatak (aktivan)
+
+## Instalacija {#installation}
+
+1. Prenesite datoteke dodatka u svoj `/wp-content/plugins/` direktorij
+2. Aktivirajte dodatak putem izbornika 'Dodaci' u WordPressu
+3. Konfigurirajte postavke dodatka u mrežnoj administraciji
+
+## Razvoj {#development}
+
+### Postavljanje {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura projekta {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP klase i uključivanja
+│   ├── class-multisite-ultimate-updater.php  # Rukovatelj ažuriranjem
+│   └── class-multi_tenancy-main.php             # Glavna funkcionalnost
+├── tests/                        # Jedinični testovi
+│   ├── bootstrap.php            # Početno pokretanje testa
+│   ├── class-*-base.php         # Osnovna testna klasa
+│   └── class-*-test.php         # Testni slučajevi
+├── views/                       # Datoteke predložaka
+├── assets/                      # Statička sredstva
+│   ├── css/                     # Stylesheetovi
+│   ├── js/                      # JavaScript datoteke
+│   └── images/                  # Slike
+├── lang/                        # Jezične datoteke
+├── composer.json                # PHP ovisnosti
+├── package.json                 # Node.js ovisnosti
+├── phpunit.xml.dist             # PHPUnit konfiguracija
+├── .phpcs.xml.dist              # Konfiguracija standarda koda
+└── rector.php                   # Pravila modernizacije koda
+```
+
+### Testiranje {#testing}
+
+Dodatak uključuje sveobuhvatan okvir za testiranje:
+
+- **Jedinični testovi**: Testovi temeljeni na PHPUnit-u s WordPress testnim paketom
+- **Osnovna testna klasa**: Pruža pomoćne metode za uobičajene testne scenarije
+- **Pokrivenost testovima**: Konfigurirano za praćenje pokrivenosti koda
+- **Multisite testiranje**: Testovi se izvode u multisite okruženju
+
+### Standardi koda {#code-standards}
+
+- **WordPress standardi kodiranja**: Provode se putem PHPCS-a
+- **Kompatibilnost s PHP 7.4+**: Podržane su moderne PHP značajke
+- **Statička analiza**: PHPStan integracija za provjeru tipova
+- **Modernizacija koda**: Rector pravila za nadogradnje PHP-a
+
+### Sustav izgradnje {#build-system}
+
+- **Obrada sredstava**: Minifikacija CSS/JS datoteka
+- **Prijevod**: Generiranje POT datoteke
+- **Pakiranje**: Izrada arhive za distribuciju
+- **Razvojni način**: Neminificirana sredstva za otklanjanje pogrešaka
+
+## Konfiguracija {#configuration}
+
+Dodatak podržava različite opcije konfiguracije dostupne putem mrežnog administratorskog sučelja.
+
+### Konfiguracija suverenog zakupca {#sovereign-tenant-configuration}
+
+Za suverene zakupce konfigurirajte bazu podataka zakupca, korijen datotečnog sustava, vezanje hosta baze podataka i mogućnost hosta prije usmjeravanja prometa prema zakupcu. Pokrenite verifikaciju migracije nakon svake promjene koja utječe na vjerodajnice baze podataka, vezanje hosta, usmjeravanje ili dodjelu korisnika.
+
+Koristite `localhost` samo kada izvršno okruženje zakupca i ovlasti baze podataka očekuju lokalni socket ili pristup na istom stroju. Koristite `127.0.0.1` ili naziv hosta usluge kada je to host ovlasti konfiguriran od vašeg pružatelja.
+
+### Hostinger mogućnost {#hostinger-capability}
+
+Hostinger mogućnost višezakupnosti radi s dijeljenim Hostinger integracijskim tokenom. Potvrdite da je domena prisutna u hPanelu, da DNS pokazuje na Hostinger račun i da se postavke baze podataka zakupca podudaraju s hPanelom prije verifikacije.
+
+## Hookovi i filtri {#hooks-and-filters}
+
+### Radnje {#actions}
+
+- `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije dodatka
+- `ultimate-multisite-addon-template_loaded` - Pokreće se nakon što se učitaju sve datoteke dodatka
+
+### Filtri {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Izmijenite postavke dodatka
+- `ultimate-multisite-addon-template_enabled` - Nadjačajte status omogućavanja/onemogućavanja dodatka
+
+## Licenca {#license}
+
+Ovaj dodatak licenciran je pod GPL v3 ili novijom verzijom.
+
+## Podrška {#support}
+
+Za podršku i dokumentaciju posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Dnevnik promjena {#changelog}
+
+- Verzija 1.2.0 (2026-06-03): dodaje bezstanje automatsko prijavljivanje zakupca, Hostinger mogućnost višezakupnosti, izolaciju baze podataka i datotečnog sustava po podstranici, verifikacijske zapreke suverene migracije, poboljšanja početnog pokretanja zakupca/zapisivača baze podataka, podesivo vezanje MySQL hosta i sigurnije suvereno uklanjanje.
+
+- Verzija 1.0.1 (2025-09-28): preimenuje prefiks u ultimate-multisite; ažurira tekstualnu domenu; povećanje verzije.
+
+
+- Verzija  (2025-09-28): preimenuje prefiks u ultimate-multisite; ažurira tekstualnu domenu; povećanje verzije.

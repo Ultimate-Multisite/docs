@@ -3,11 +3,11 @@ title: Përdorimi i Paneli Administrativ
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Përmbledhja e Panelit Admin
+# Përmbledhja e Panelit Admin {#touring-the-admin-panel}
 
 Ultimate Multisite synon të jetë sa më i thjeshtë dhe i kuptueshëm si mund të jetë, por me një mjet kaq fuqishëm ai mund të ndihmojë në këtë. Le të shkojmë përmes faqeve admin për t'ju ndihmuar të qenit gati.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 **Dashboard** i Ultimate Multisite tregon raporte bazë dhe analitika duke përfshirë të ardhurat, aktivitetet e saj në site, rritjen e anëtarëve, numrat e vizitorëve dhe të dhënat gjeografike.
 
@@ -25,61 +25,61 @@ Këtu është gjithashtu një pamje e plotë e dashboard-it të rrjetit:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Formularët e Checkout-ut (Checkout Forms)
+## Formularët e Checkout-ut (Checkout Forms) {#checkout-forms}
 
 **Formularët e Checkout-ut** ju japin fleksibilitetin për të krijuar faqe regjistrimi tuaja personalizuara. Ju mund të personalizoni fushat, të vendosni klasa dhe skripte të personalizuara dhe të kufizoni aksesin bazuar në vendndodhjen e klientit ose vendin gjeografik.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Produkte (Products)
+## Produkte (Products) {#products}
 
 Seksioni **Produkte** është ku krijoni plane, paketa dhe shërbime të ndryshme për rrjetin tuaj. Përcaktoni çmimet, frekuencat e faturimit dhe kufizimet/quota-t në nivelin e produktit.
 
 ![Products list](/img/admin/products-list.png)
 
-## Anëtarët (Memberships)
+## Anëtarët (Memberships) {#memberships}
 
 Faqja **Anëtarësh** tregon të gjitha abonimet në rrjetin tuaj. Përgjigjuni dhe redaktoni detajet e abonimit duke përfshirë plane, produkte, shumat e faturimit dhe frekuencat, historikun e pagesave dhe kohdat (timestamps).
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Pagesa (Payments)
+## Pagesa (Payments) {#payments}
 
 Paguna **Payments** (Pages të Pagimeve) ju ofron një pamje të shpejtë të historikut të pagesave në të gjinian e rrjetit tuaj, me informacion detajuar mbi transaksione, duke përfshirë produkte dhe sasia specifike.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Customers (Klientët)
+## Customers (Klientët) {#customers}
 
 Paguna **Customers** tregon të gjithë anëtarët e regjistruar në rrjetin tuaj me informacion bazë të përdoruesit, duke përfshirë emrin, adresën e emailit, logimin më të fundit dhe një link "ndrysho te" (switch to) për hyrje në subsite-in e tyre.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites (Sitet)
+## Sites (Sitet) {#sites}
 
 Paguna **Sites** liston të gjitha subsitet në rrjetin tuaj, duke përfshirë shabllonet e saj dhe sitet që janë në pronësinë e klientit. Menaxhoni lehtë domenët e mapi, kufizimet & quota-të, pluginet dhe temat, si dhe thujnet (thumbnails) e sitëve.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains (Domene)
+## Domains (Domene) {#domains}
 
 Paguna **Domains** është e dedikuar domenave të personalizuara që janë të mapi me subsite. Si super admin, mund t'i shtoni ose i maponi emrat e domeneve të personalizuara dhe të shihni regjistrimet DNS dhe logjet.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Discount Codes (Kodi Uljes)
+## Discount Codes (Kodi Uljes) {#discount-codes}
 
 **Discount Codes** ju lejojnë të krijoni kode kuponi për t'u ofruar ulje ndaj përdoruesve tuaj finalë. Specifikoni vlerën e uljes dhe synoni përdorues ose grupe specifike.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts (Transmetimet)
+## Broadcasts (Transmetimet) {#broadcasts}
 
 **Broadcasts** është një mjet për të shpërndarë njoftime apo dërguar mesazhe private në përdoruesit e subsitet tuaj. Synoni grupe specifike të përdoruesve bazuar në planin ose produktin ku janë të abonuar.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Settings (Konfigurimet)
+## Settings (Konfigurimet) {#settings}
 
 Paguna **Settings** është kjo ku konfiguroni Ultimate Multisite — opsionet e regjistrimit, pagesat, API dhe webhooks, mapi domene dhe integrime të tjera.
 
@@ -109,13 +109,13 @@ Dhe faqen e konfigurimit të vendeve (sites):
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events (Ngjarje)
+## Events (Ngjarje) {#events}
 
 Faqja **Events** mban një regjistrim të të gjitha ngjarjeve dhe logjeve në rrjetin tuaj. Ajo ndjek aktivitete si ndryshimet e planit, regjistrimet dhe lëvizjet e tjera — shumë për monitorimin e multisite-t tuaj.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** ju lejojnë të dërgoni të dhëna në një aplikacion tjetër. I dobishëm për dërgimin e të dhënave nga Ultimate Multisite në platforma si Zapier.
 

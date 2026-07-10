@@ -1,0 +1,109 @@
+---
+title: WooCommerce integrācija
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce integrācija {#woocommerce-integration}
+
+WooCommerce integrācija darbojas ļoti līdzīgi tam, kā darbojas mūsu manuālā vārteja. Tā piedāvā jūsu lietotājiem ļoti lielu elastību, ļaujot viņiem izvēlēties jebkuru no maksājumu formām, kas pieejamas jūsu WooCommerce instalācijā. Un tas ir vienkārši: kad lietotāja norēķinu periods beidzas, lietotāja abonements tiek aizturēts. Tajā pašā laikā tīkla galvenās vietnes WooCommerce instalācijā tiks izveidots pasūtījums. Pēc tam lietotājs savā e-pastā saņem rēķinu ar saiti maksājuma veikšanai. Kad maksājums ir saņemts, abonements tiek atjaunots.
+
+## Funkcijas {#features}
+
+- Vienkārša integrācija starp Ultimate Multisite un WooCommerce
+- Pieejamas vairākas maksājumu metodes
+- Automatizēti periodiskie norēķini, izmantojot komplektā iekļauto abonementu kodolu, ar papildu WooCommerce Subscriptions plugin uzlabojumiem
+- Checkout kopsummās Ultimate Multisite nodokļi tiek iekļauti kā atsevišķas, neapliekamas WooCommerce maksas rindas, lai klienti pirms maksājuma varētu pārskatīt nodokļu summas
+
+## Dokumentācija {#documentation}
+
+**WooCommerce integrācijas iestatīšana**
+
+**Maksājumu opciju paplašināšana ar Ultimate Multisite: WooCommerce integrācija**
+
+## Instalēšana {#installation}
+
+1. Augšupielādējiet 'ultimate-multisite-woocommerce' direktorijā '/wp-content/plugins/'
+2. Aktivizējiet plugin, izmantojot WordPress izvēlni 'Plugins'
+3. Izpildiet soli pa solim vedni, lai iestatītu plugin
+
+## Lietošanas ceļvedis {#usage-guide}
+
+_**SVARĪGA PIEZĪME: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
+
+_**UZMANĪBU:** Ultimate Multisite: WooCommerce integrācijai nepieciešams, lai WooCommerce būtu aktivizēts vismaz jūsu galvenajā vietnē._
+
+Mēs saprotam, ka _Stripe_ un _PayPal_ dažās valstīs nav pieejami, kas ierobežo vai traucē Ultimate Multisite lietotājiem efektīvi izmantot mūsu plugin. Tāpēc mēs izveidojām **papildinājumu, lai integrētu _WooCommerce_**.
+
+_WooCommerce_ ir ļoti populārs e-komercijas plugin. Izstrādātāji visā pasaulē ir izveidojuši papildinājumus, lai tajā integrētu dažādas maksājumu vārtejas. Mēs izmantojām šo iespēju, lai paplašinātu maksājumu vārtejas, kuras varat izmantot Ultimate Multisite norēķinu sistēmā.
+
+## Iestatīšana {#setting-it-up}
+
+Vispirms jums jāinstalē WooCommerce integrācijas papildinājums, kas ir **bez maksas licencētiem lietotājiem**. Lai to instalētu, noklikšķiniet uz Ultimate Multisite savā super admin dashboard un atlasiet **Papildinājumi**.
+
+![Papildinājumu lapa](/img/admin/addons-page.png)
+
+Šeit varat atrast visus Ultimate Multisite papildinājumus. Noklikšķiniet uz **Ultimate Multisite: WooCommerce integrācija** papildinājuma.
+
+![Papildinājumu lapa, kurā redzama WooCommerce integrācija](/img/admin/addons-page.png)
+
+Parādīsies logs ar papildinājuma informāciju. Vienkārši noklikšķiniet uz **Instalēt tagad** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Kad instalēšana būs pabeigta, jūs tiksiet novirzīts uz plugin lapu. Šeit vienkārši noklikšķiniet uz **Aktivizēt tīklā**, un _WooCommerce_ papildinājums tiks aktivizēts jūsu tīklā.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Pēc tā aktivizēšanas, ja jūsu vietnē joprojām nav instalēts un aktivizēts WooCommerce plugin, **jūs saņemsiet atgādinājumu**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Kad tas būs instalēts, Ultimate Multisite maksājumu iestatījumos redzēsiet papildu opciju. Pēc tam no turienes varat **iespējot** _WooCommerce_ opciju.
+
+![Ultimate Multisite maksājumu vārtejas iestatījumi ar iespējotu WooCommerce](/img/addons/woocommerce-payment-gateway.png)
+
+Varat konfigurēt dažus pamata iestatījumus, piemēram, parādāmo nosaukumu, kas būs redzams priekšgalā, un instrukcijas, lai vadītu lietotājus viņu checkout plūsmā. Pēc tam varat doties uz savas **galvenās vietnes _WooCommerce_ iestatījumiem**, lai iespējotu un konfigurētu maksājumu vārteju, kuru vēlaties izmantot.
+
+### Checkout nodokļu maksas rindas {#checkout-tax-fee-lines}
+
+Kad Ultimate Multisite checkout ietver nodokļus, integrācija pievieno katru Ultimate Multisite nodokļa summu WooCommerce checkout kā atsevišķu, neapliekamu maksas rindu. Tas saglabā nodokļu kopsummu redzamu pirms maksājuma, vienlaikus neļaujot WooCommerce atkārtoti aplikt ar nodokli nodokļu maksu.
+
+## Kā pārvaldīt maksājumu {#how-to-manage-the-payment}
+
+WooCommerce integrācija darbojas ļoti līdzīgi tam, kā darbojas mūsu **manuālā vārteja**. Trūkums ir tāds, ka katrs maksājums norēķinu perioda beigās ir jāapmaksā manuāli. Lūk, kā darbojas plūsma:
+
+  * Kad lietotāja norēķinu cikls beidzas, dalība tiek **aizturēta**. Tajā pašā laikā _WooCommerce_ instalācijā jūsu tīkla galvenajā vietnē tiks izveidots pasūtījums.
+
+  * Pēc tam lietotāji savā e-pastā saņem rēķinu ar saiti maksājuma veikšanai (saite parādās arī viņu norēķinu vēsturē no viņu apakšvietnes dashboard). Šī saite novirza lietotāju uz _**WooCommerce**_ **checkout** , kur lietotāji varēs atlasīt vienu no **pieejamajām _WooCommerce_ vārtejām**, lai apstrādātu savu maksājumu.
+
+  * Kad maksājums ir saņemts, dalība tiek **atjaunota** , maksājums tiek reģistrēts Ultimate Multisite, un pasūtījums tiek atzīmēts kā pabeigts.
+
+### Dažas svarīgas piezīmes: {#some-important-notes}
+
+  * Ultimate Multisite noklusējuma funkcionalitāte joprojām darbojas ar šo integrācijas veidu. Piemēram, **atmaksu izsniegšana** no ekrāna **Abonementu pārvaldība** sazināsies ar WooCommerce, lai izsniegtu atmaksu, izmantojot atlasīto maksājuma formu.
+
+  * Ultimate Multisite: WooCommerce integrācija darbībai paļaujas uz WP-Cron. Lielākoties tas darbojas ļoti labi, taču, ja vietnei ir zema datplūsma, cron netiek pamudināts pārbaudīt ieplānotos notikumus un notikums tiek palaists garām, kas var izraisīt izpildes aizkaves.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Manuāla maksājuma sākšana katru mēnesi gala lietotājiem nav ideāla, jo abonementiem ir paredzēts atkārtoties automātiski katrā norēķinu ciklā. WooCommerce Integration papildinājums tagad ietver pamata abonementu kodu, tāpēc periodiski produkti vienmēr izmanto abonementus periodiskajiem norēķiniem.
+
+Jums **nav** jāiegādājas vai jāinstalē atsevišķais [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/), lai pārdotu periodiskus produktus, izmantojot šo integrāciju. Ja šis plugin ir iegādāts, instalēts un pieejams jūsu galvenajā vietnē, Ultimate Multisite to izmantos, un WooCommerce piedāvās papildu abonementu pārvaldības funkcijas. Ja tas nav pieejams, iekļautais abonementu kodols joprojām apstrādā periodiskus produktus.
+
+![WooCommerce abonementu integrācijas iestatījumi](/img/addons/woocommerce-subscription-integration.png)
+
+Un tas arī viss. Jūsu gala lietotājiem vairs nebūs manuāli jāveic maksājums norēķinu cikla beigās par periodiskiem produktiem.
+
+Papildus pasūtījuma izveidei jūsu galvenajā vietnē sadaļā _WooCommerce_, katram Account tiks izveidots arī abonements.
+
+### Neizdevušās atjaunošanas apturēšanas uzvedība {#failed-renewal-suspension-behavior}
+
+Pēc noklusējuma dalības paliek aktīvas, kamēr WooCommerce Subscriptions apstrādā savu neizdevušos maksājumu atkārtoto mēģinājumu grafiku. Tas saglabā parasto WooCommerce Subscriptions labvēlības periodu, lai atgūta atjaunošana varētu atkal sinhronizēt abonementu un dalību, priekšlaicīgi nepārtraucot piekļuvi.
+
+Administratori, kuri vēlas stingrāku piekļuves kontroli, WooCommerce Integration iestatījumos var iespējot **Suspend Memberships Immediately on Failed Renewals**. Kad šis izvēles iestatījums ir iespējots, Ultimate Multisite aptur saistīto dalību, tiklīdz atjaunošanas maksājums neizdodas, nevis gaida, līdz WooCommerce Subscriptions atkārtoto mēģinājumu apstrāde beidzas.
+
+Izstrādātāji var pārrakstīt to pašu lēmumu ar filtru `wu_woo_suspend_on_payment_failure`. Hook atsauces lapas tiek ģenerētas no papildinājuma avota, tāpēc šis pārskats tikai norāda filtra nosaukumu pielāgotām apturēšanas politikām.

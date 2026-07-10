@@ -3,13 +3,13 @@ title: Mtembo wa M'site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Iziyeleka izi zikufandra na Ultimate Multisite version 2.x. Mwena mukugwiritsa ntchito version 1.x,**_ **mwapereka kuzirozizi.**_**.**_
 
 Mwayi wathu pa kukhala network yomakono ndi Ultimate Multisite ndi kuchotsa zinthu zambiri kuti zikuyendetsedwe m'moyo (automate), komwe tikupereka anthu athu ulemu (clients) kusintha ndi mavuto ena omwe angayendetsa poyamba pamene akugwira website. Ndi njira yosavuta kukhala ndi zinthu zina, ndiyenera kugwiritsa ntchulo Ultimate Multisite Site Templates.
 
-## Kodi Site Template ndi chiyani?
+## Kodi Site Template ndi chiyani? {#what-is-a-site-template}
 
 Kodi muliyezi imene, Site Template ndi site lomaliza lomwe munggwaniridwe kuti muliyezi (base) pamene mukugwira sites zilembedwa m'moyo wanu.
 
@@ -17,7 +17,7 @@ Izi zimeneza kuti mungagwiritse site lomaliza, muliyezi zinthu zina (plugins), m
 
 Izi zimeneza kuti zikukhala zokuti zikukhala zokuti, koma ndikuwamedwa kuti ndikugwira Site Template yomwe yomwe? Kodi ndi luso lomwe limeneza.
 
-## Kugwira ndi Kufotokoza Site Template Yatsopano
+## Kugwira ndi Kufotokoza Site Template Yatsopano {#creating-and-editing-a-new-site-template}
 
 Site Templates ndi sites monga momwe muliyezi wanu pamene muliyezi (network). Muliyezi site yatsopano mungupereke m'njira yomwe imeneza **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ M'mulo mu mwambiri wa fomu, utavuta **Copy Site** toggle switch. Iyi zikukwera k
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Kufotokozera zinthu za Site Template
+### Kufotokozera zinthu za Site Template {#customizing-the-contents-of-a-site-template}
 
 Kuti utofotokereite site template yawo, utafutira dashboard panel yaayo ndi kukhala m'mulo woperekera zinthu zomwe mukufuna kukonza. Mutha kulemba posts, pages, kupeza plugins, ndikuyendetsa theme yomwe ikulimbikira. Mutha kuyenda ku Customizer ndikusonyeza zinthu zonse za kufotokozera.
 
@@ -43,7 +43,7 @@ Kuti utofotokereite site template yawo, utafutira dashboard panel yaayo ndi kukh
 
 Zinthu zonse zomwe muli ndi zinthu zina zimene zidzakhala m'mulo monga woperekera site template yekawo monga m'mulo woperekera Site Template.
 
-### Zinthu Zomwe Zina Kukhala Zomwe Zikuyenera (Advanced Options)
+### Zinthu Zomwe Zina Kukhala Zomwe Zikuyenera (Advanced Options) {#advanced-options}
 
 Ngati muli ndi chidziro kuchokera kwa kulemba code zina, muli ndi ulemu wathu wa Search and Replace API kuti muperekere zinthu monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'mulo monga m'm
 
@@ -63,7 +63,7 @@ Pa **Edit Product** page. Under the section ya **Product Options**, chulani tab 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form
+### Default Mode: Site template selection on the Checkout form {#using-site-templates}
 
 Ngati mukufuna kuti site templates zonse zikukhale m'malo pansi pa registration, kapena mukufuna kuti musonyeze kutengera zochitika zosonyeza site templates m'malo monga m'malo m'malo m'malo monga product onse muliotenga. Ngati izi ndi chiyembekezo cha iwo, muli ndi ulemu wosonyeza site template pansi pa **Checkout Form** yanu. Kuti mukufune kuti muli ndi izi, ndiupatsa ku **Ultimate Multisite > Checkout Forms** ndipo chokera **Edit** pansi pa form yomwe muliofuna kusintha.
 
@@ -77,29 +77,29 @@ Pa frontend, makalata akuti customers amakuthandizira template chooser pansi pa 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Mwaya za Template ya Site
+### Mwaya za Template ya Site {#mode-1-assign-site-template}
 
 Kuna mwaya zingine za template za site zikupatika ambayo unaweza kuziwasha au kuzizima chini ya mipangilio ya Ultimate Multisite.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Ruhusa kubadilisha Template
+#### Ruhusa kubadilisha Template {#mode-2-choose-available-site-template}
 
 Kuwasha hili chaguo litaruhusu wateja wako kubadilisha template wanayochagua wakati wa mchakato wa kujisajili baada ya akaunti na site kupatikana. Hii ni muhimu kwa mtazamo wa mteja kwa sababu inawawezesha kuchagua tena template ikiwa baadaye wajikuta kwamba chaguo lao la awali halikuwa bora kwa mahitaji yao maalum.
 
-#### Ruhusa Watumiaji kutumia Site zao kama templates
+#### Ruhusa Watumiaji kutumia Site zao kama templates {#default-mode-site-template-selection-on-the-checkout-form}
 
 Kwa kuwa watumiaji wa subsite walitumia muda kujenga na kubuni site yao wenyewe, wanaweza kutaka kunakili na kutumia kama moja ya template za site zinazopatikana wakati wa kuunda subsite nyingine kwenye mtandao wenu. Chaguo hili litawapa uwezo huo.
 
-#### Kunakili Media kwenye Kuongeza Template
+#### Kunakili Media kwenye Kuongeza Template {#site-template-options}
 
 Kukagua chaguo hili litakupatia uwezo wa kunakili media iliyolipwa kwenye site ya template kwenda kwenye site mpya iliyoundwa. Hii inaweza kubadilishwa kwenye mipango yote.
 
-#### **Kuzuia Engine za Utafiti (Search Engines) kutumia Site Templates**
+#### **Kuzuia Engine za Utafiti (Search Engines) kutumia Site Templates** {#allow-template-switching}
 
 Site templates kama zilizojadiliwa katika makala hii ni boilerplate lakini bado sehemu ya mtandao wako, ambayo inamaanisha bado zinaweza kupatikana kwa engine za utafiti. Chaguo hili litakuruhusu kuzificha site templates ili engine za utafiti ziweze kuzipata.
 
-## Kuandaa Site Templates kwa kutumia auto search-and-replace
+## Kuandaa Site Templates kwa kutumia auto search-and-replace {#allow-users-to-use-their-site-as-templates}
 
 Modziwone monga ya mphamvu ya Ultimate Multisite ndi ule wogonewo woperekera chinthu chosavuta, ndipo ndi ule wogonewo woperekera mawu, miyambo yomwezi (color), ndi ma-field omwe mungapereke. Pamene tikupereka data lanse, tingathe kutanthauza kuti tikutanthauze kukhala m'malo wamene tikachita content m'malo m'malo ya template yomweye. Pankuti site yomweyo yikuyendetsedwa, Ultimate Multisite idzakhazikitsa malo omwe tikapereka ndi mawu osati ndi data yomwe yachitidwa pamene muliwoneka.
 
@@ -119,7 +119,7 @@ Ultimate Multisite idzakhazikitsa malo omwe tikapereka ndi data yomwe woperekera
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Kukhala kwa ndalama "template lili ndi malo omwe si woperekera"
+### Kukhala kwa ndalama "template lili ndi malo omwe si woperekera" {#copy-media-on-template-duplication}
 
 Kuti zonse ndi zokonda, koma tikupereka ndalama yomwe si woperekera: template yathu - yomwe angathe kuwoneka ndi woperekera wathu - limene ndi malo omwe si woperekera kuti sikunthauze koma.
 

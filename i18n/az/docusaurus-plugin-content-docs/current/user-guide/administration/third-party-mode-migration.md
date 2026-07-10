@@ -3,13 +3,13 @@ title: Üçüncü Tərəf Rejimində Miqrasiya
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Üçüncü Tərəf Rejimi Keçidləri
+# Üçüncü Tərəf Rejimi Keçidləri {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə idarə olunduğunu dəyişir. **Üçüncü tərəf rejimi indi avtomatikə keçir**, bu da WordPress 7.0+ versiyalarında əl ilə konfiqurasiya etmədən yerli WordPress Abilities API inteqrasiyasına imkan verir.
 
-## Nə Dəyişdi?
+## Nə Dəyişdi? {#what-changed}
 
-### v1.12.0-dan Əvvəl
+### v1.12.0-dan Əvvəl {#before-v1120}
 
 Üçüncü tərəf imkanları əl ilə konfiqurasiya tələb edirdi:
 
@@ -18,7 +18,7 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 - WordPress Abilities API ilə inteqrasiya isteğe bağlı idi.
 - Varsayılan rejim köhnə (Legacy) rejimi idi.
 
-### v1.12.0-dan Sonra
+### v1.12.0-dan Sonra {#after-v1120}
 
 Üçüncü tərəf imkanları avtomatik işləyir:
 
@@ -27,13 +27,13 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 - WordPress 7.0+ üçün əl ilə konfiqurasiya tələb olunmur.
 - Köhnə rejim (Legacy mode) hələ də köhnə WordPress versiyaları üçün mövcuddur.
 
-## Kim Təsir Edir?
+## Kim Təsir Edir? {#who-is-affected}
 
-### Yeni Qurulmalar (WordPress 7.0+)
+### Yeni Qurulmalar (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Heç bir hərəkət tələb olunmur.** Üçüncü tərəf rejimi avtomatik olaraq "avto" (auto) olaraq təyin edilir və imkanlar qutu-qutu işləyir.
 
-### Mövcud Qurulmalar
+### Mövcud Qurulmalar {#existing-installations}
 
 **Ayarlarınız qorunur.** Əgər aşağıdakılardan istifadə edirdinizsə:
 
@@ -41,7 +41,7 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 - **Əl ilə üçüncü tərəf rejimi (Manual third-party mode)**: Siz əl ilə rejimdə qalacaqsınız (dəyişiklik yoxdur)
 - **Avto rejimi (Auto mode)**: Avto rejimdə davam edəcəksiniz (dəyişiklik yoxdur)
 
-### 7.0-dan Əvvəlki WordPress Versiyaları
+### 7.0-dan Əvvəlki WordPress Versiyaları {#wordpress-versions-before-70}
 
 **Köhnə rejim (Legacy mode) hələ də mövcuddur.** Əgər WordPress 6.x və ya daha köhnə versiyadadırsa:
 
@@ -49,9 +49,9 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 - İstənilərsə üçüncü tərəf rejimini əl ilə aktivləşdirə bilərsiniz.
 - Yerli Abilities API-dən istifadə etmək üçün WordPress 7.0+ versiyasına yüksəldin.
 
-## Rejimləri Anlamaq
+## Rejimləri Anlamaq {#understanding-the-modes}
 
-### Avto Rejimi (Yeni Varsayılan)
+### Avto Rejimi (Yeni Varsayılan) {#auto-mode-new-default}
 
 **Avto rejimi** yerli WordPress Abilities API inteqrasiyasından istifadə edir:
 
@@ -62,7 +62,7 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 
 **Nə vaxt istifadə etməli**: Üçüncü tərəf imkanları ilə WordPress 7.0+
 
-### Əl ilə Rejim (Manual Mode)
+### Əl ilə Rejim (Manual Mode) {#manual-mode}
 
 **Əl ilə rejim** açıq şəkildə konfiqurasiya tələb edir:
 
@@ -73,7 +73,7 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 
 **Nə vaxt istifadə etməli**: Test etmək, seçici imkan yükləmək və ya xüsusi konfiqurasiyalar.
 
-### Köhnə Rejim (Legacy Mode)
+### Köhnə Rejim (Legacy Mode) {#legacy-mode}
 
 **Köhnə rejim** köhnə üçüncü tərəf imkan sistemiindən istifadə edir:
 
@@ -84,24 +84,24 @@ Superdav AI Agent v1.12.0, üçüncü tərəf imkanlarının (abilities) necə i
 
 **Nə vaxt istifadə etməli**: WordPress 6.x və ya daha köhnə, və ya köhnə uyğunluğa ehtiyac duyursunuzsa.
 
-## Cari Rejiminizin Yoxlanılması
+## Cari Rejiminizin Yoxlanılması {#checking-your-current-mode}
 
-### Admin Panel vasitəsilə
+### Admin Panel vasitəsilə {#via-admin-panel}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings**-ə gedin.
 2. **Third-Party Mode** ayarını axtarın.
 3. Cari rejiminizi və dəyişdirmək üçün seçimləri görəcəksiniz.
 
-### Kod vasitəsilə
+### Kod vasitəsilə {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', və ya 'legacy'
 ```
 
-## Rejiminizi Dəyişmək
+## Rejiminizi Dəyişmək {#changing-your-mode}
 
-### Avto Rejimə Keçmək
+### Avto Rejimə Keçmək {#switch-to-auto-mode}
 
 Əgər WordPress 7.0+ versiyasında olduğunuz və avto rejimdən istifadə etmək istəyirsinizsə:
 
@@ -112,7 +112,7 @@ echo $mode; // 'auto', 'manual', və ya 'legacy'
 
 Superdav AI Agent avtomatik olaraq üçüncü tərəf imkanlarını aşkarlayacaq və qeydiyyatdan keçirəcək.
 
-### Əl ilə Rejimə Keçmək
+### Əl ilə Rejimə Keçmək {#switch-to-manual-mode}
 
 Hansı imkanların yüklənməsini əl ilə idarə etmək istəyirsinizsə:
 
@@ -122,7 +122,7 @@ Hansı imkanların yüklənməsini əl ilə idarə etmək istəyirsinizsə:
 4. **Save** düyməsinə basın.
 5. Hansı imkanların yüklənməsini göstərmək üçün konfiqurasiya faylınızı redaktə edin.
 
-### Köhnə Rejimə Keçmək
+### Köhnə Rejimə Keçmək {#switch-to-legacy-mode}
 
 Köhnə uyğunluğa ehtiyacınız varsa:
 
@@ -131,9 +131,9 @@ Köhnə uyğunluğa ehtiyacınız varsa:
 3. **Legacy**-ni seçin.
 4. **Save** düyməsinə basın.
 
-## Avto Rejiminin Faydaları
+## Avto Rejiminin Faydaları {#benefits-of-auto-mode}
 
-### Avtomatik Aşkarlama
+### Avtomatik Aşkarlama {#automatic-discovery}
 
 İmkanlar aşağıdakılardan avtomatik aşkarlanır:
 
@@ -144,7 +144,7 @@ Köhnə uyğunluğa ehtiyacınız varsa:
 
 Əl ilə qeydiyyat tələb olunmur.
 
-### Yerli İntegrasiya
+### Yerli İntegrasiya {#native-integration}
 
 İmkanlar WordPress Abilities API ilə inteqrasiya olunur:
 
@@ -153,67 +153,67 @@ Köhnə uyğunluğa ehtiyacınız varsa:
 - Abilities API istifadə edən digər pluginlər ilə uyğundur.
 - WordPress inkişaf etdikcə gələcəyə hazırlıqdır.
 
-### Sadələşdirilmiş İdarəetmə
+### Sadələşdirilmiş İdarəetmə {#simplified-management}
 
 - Redaktə ediləcək konfiqurasiya faylları yoxdur.
 - Əl ilə imkan qeydiyyatı yoxdur.
 - Ability Visibility kontrolleri avtomatik işləyir.
 - Admin bildirişləri sizə təsnifatlandırılmamış imkanlar haqqında xəbərdarlıq edir.
 
-### Daha Yaxşı Performans
+### Daha Yaxşı Performans {#better-performance}
 
 - İmkanlar cache edilir.
 - Tələb olunduqda tənbəl yüklənir (Lazy-loaded).
 - WordPress 7.0+ üçün optimallaşdırılıb.
 
-## Keçid Yolu
+## Keçid Yolu {#migration-path}
 
-### Əgər WordPress 6.x-dəsinizsə
+### Əgər WordPress 6.x-dəsinizsə {#if-youre-on-wordpress-6x}
 
 1. **WordPress 7.0+ versiyasına yüksəldin** (hazır olduqda).
 2. **Superdav AI Agent-i** v1.12.0+ versiyasına yeniləyin.
 3. **Üçüncü tərəf rejimini Avto-ya dəyişin** (isteğe bağlı; köhnə rejim hələ də işləyir).
 4. **İmkan görünürlüyünü (ability visibility)** nəzərdən keçirin ki, düzgün giriş kontrolleri təmin olunsun.
 
-### Əgər WordPress 7.0+ versiyasında olursunuzsa
+### Əgər WordPress 7.0+ versiyasında olursunuzsa {#if-youre-on-wordpress-70}
 
 1. **Superdav AI Agent-i** v1.12.0+ versiyasına yeniləyin.
 2. **Üçüncü tərəf rejiminin Avto-da təyin olunduğunu yoxlayın** (varsayılan olmalıdır).
 3. **İmkan görünürlüyünü** nəzərdən keçirin ki, düzgün giriş kontrolleri təmin olunsun.
 4. **Üçüncü tərəf imkanlarını test edin** ki, işlədiyini təsdiqləyin.
 
-## Problemlərin Həlli
+## Problemlərin Həlli {#troubleshooting}
 
-### Avto rejimdə imkanlar yüklənmir
+### Avto rejimdə imkanlar yüklənmir {#abilities-arent-loading-in-auto-mode}
 
 - WordPress 7.0+ versiyasında olduğunuzu yoxlayın.
 - Üçüncü tərəf rejiminin "Avto" (Auto) olaraq təyin edildiyini yoxlayın.
 - İmkanı təmin edən pluginin aktiv olduğunu yoxlayın.
 - Qeydiyyat xətaları üçün WordPress error loglarını yoxlayın.
 
-### Köhnə rejimi saxlamaq istəyirəm
+### Köhnə rejimi saxlamaq istəyirəm {#i-want-to-keep-legacy-mode}
 
 - **Settings** → **Third-Party Mode**-a gedin.
 - **Legacy**-ni seçin.
 - **Save** düyməsinə basın.
 - Köhnə rejim işləməyə davam edəcək.
 
-### Öz imkanlarım görünmür
+### Öz imkanlarım görünmür {#my-custom-abilities-arent-showing}
 
 - Onların WordPress hook-ları vasitəsilə qeydiyyatdan keçdiyini yoxlayın.
 - Abilities API-ni düzgün tətbiq etdiklərini yoxlayın.
 - WordPress error loglarını nəzərdən keçirin.
 - Bütün qeydiyyatdan keçmiş imkanları görmək üçün **Ability Visibility** admin səhifəsindən istifadə edin.
 
-### "Təsnifatlandırılmamış imkan" bildirişləri alıram
+### "Təsnifatlandırılmamış imkan" bildirişləri alıram {#im-getting-unclassified-ability-notices}
 
 - Bu, yeni üçüncü tərəf imkanları üçün normaldır.
 - Onları admin bildirişində nəzərdən keçirin və təsnifatlandırın.
 - Təsnifatlandırma haqqında detallar üçün **Ability Visibility**-ə baxın.
 
-## Geriyə Uyğunluq
+## Geriyə Uyğunluq {#backward-compatibility}
 
-### Mövcud Konfiqurasiyalar
+### Mövcud Konfiqurasiyalar {#existing-configurations}
 
 Əgər mövcud üçüncü tərəf imkan konfiqurasiyalarınız varsa:
 
@@ -223,33 +223,33 @@ Köhnə uyğunluğa ehtiyacınız varsa:
 
 Xüsusi konfiqurasiyanızı saxlamaq üçün Əl ilə və ya Köhnə rejimdə qalın.
 
-### Köhnəlmə Cədvəli
+### Köhnəlmə Cədvəli {#deprecation-timeline}
 
 - **v1.12.0**: Köhnə və Əl ilə rejimlər tam dəstəklənir.
 - **v1.13.0+**: Köhnə rejim köhnəlmə bildirişləri göstərə bilər.
 - **v2.0.0**: Köhnə rejim silinə bilər (TBD).
 
-## Ən Yaxşı Praktikalara Nəzarət
+## Ən Yaxşı Praktikalara Nəzarət {#best-practices}
 
-### Yeni Qurulmalar üçün
+### Yeni Qurulmalar üçün {#for-new-installations}
 
 - Avto rejimdən istifadə edin (bu varsayılandır).
 - Superdav AI Agent-dən imkanları avtomatik aşkarlamasını təmin edin.
 - Giriş nəzarətini idarə etmək üçün Ability Visibility-dən istifadə edin.
 
-### Mövcud Qurulmalar üçün
+### Mövcud Qurulmalar üçün {#for-existing-installations}
 
 - Mümkünsə WordPress 7.0+ versiyasına yüksəldin.
 - Sadələşdirilmiş idarəetmə üçün Avto rejimə keçin.
 - Ability Visibility istifadə edərək imkanları nəzərdən keçirin və təsnifatlandırın.
 
-### Xüsusi İmkanlar üçün
+### Xüsusi İmkanlar üçün {#for-custom-abilities}
 
 - İmkanları WordPress hook-ları vasitəsilə qeydiyyatdan keçirin (Abilities API).
 - Xüsusi imkan qeydiyyatlarından yayınmaq.
 - WordPress 7.0+ və Avto rejimdə test edin.
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
 1. **WordPress versiyanızı yoxlayın**: Avto rejimi üçün 7.0+ versiyasında olduğunuzdan əmin olun.
 2. **Üçüncü tərəf rejiminizə nəzər salın**: Settings-ə gedin və cari rejiminizi yoxlayın.
@@ -257,7 +257,7 @@ Xüsusi konfiqurasiyanızı saxlamaq üçün Əl ilə və ya Köhnə rejimdə qa
 4. **İmkanları təsnifatlandırın**: Təsnifatlandırılmamış imkanları nəzərdən keçirin və təsnifatlandırın.
 5. **Test edin**: Üçüncü tərəf imkanlarınızın düzgün işlədiyini yoxlayın.
 
-## Əlaqəli Mövzular
+## Əlaqəli Mövzular {#related-topics}
 
 - **Ability Visibility**: Hansı imkanların harada görünəcəyini idarə edin.
 - **WordPress Abilities API**: Yerli WordPress imkan qeydiyyatı haqqında öyrənin.

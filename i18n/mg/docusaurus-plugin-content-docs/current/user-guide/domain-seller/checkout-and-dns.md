@@ -3,13 +3,13 @@ title: Fampidirana Checkout sy DNS an'ny Mpanjifa
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Fomba Fandraisana Checkout sy Fitantanana DNS ho an'ny Mpanjifa
+# Fomba Fandraisana Checkout sy Fitantanana DNS ho an'ny Mpanjifa {#checkout-field-and-customer-dns-management}
 
-## Ny champ Domain Selection
+## Ny champ Domain Selection {#the-domain-selection-checkout-field}
 
 Ny **Domain Selection** dia zavatra eo amin'ny checkout izay manome safidy ny mpanjifa momba ny fomba hanomezany domain an'ny tranonkala. Ampiana azy ao amin'ny endrika checkout rehetra mba hahafahan'ny fivarotana domain izany.
 
-### Fametrahana ilay champ ao amin'ny endrika checkout
+### Fametrahana ilay champ ao amin'ny endrika checkout {#adding-the-field-to-a-checkout-form}
 
 1. Mandehana any amin'**Network Admin › Ultimate Multisite › Checkout Forms**
 2. Afaka manokatra na mamorona endrika checkout iray
@@ -18,7 +18,7 @@ Ny **Domain Selection** dia zavatra eo amin'ny checkout izay manome safidy ny mp
 5. Ataovy azo antoka ny fepetra ho an'ilay champ (jereo eto ambany)
 6. Tehirizo ny endrika
 
-### Fepetra ho an'ny champ
+### Fepetra ho an'ny champ {#field-options}
 
 **Domain modes** — Safidio izay tabilao hasehon'ny mpanjifa. Afaka azo ampiasaina na tsy ampiasaina isaky ny mode:
 
@@ -32,7 +32,7 @@ Ny **Domain Selection** dia zavatra eo amin'ny checkout izay manome safidy ny mp
 
 **Domain product** — Afaka manome fanasiana (pin) ity champ ity amin'ny vokatra domain manokana iray ianao. Raha tsy voafidy, dia safidy ho azy ilay addon mifanaraka amin'ilay TLD (Top-Level Domain) tadiavina ny mpanjifa.
 
-### Champ fifandraisana ho an'ny mpametraka (Registrant contact fields)
+### Champ fifandraisana ho an'ny mpametraka (Registrant contact fields) {#registrant-contact-fields}
 
 Rehefa misafidy ny tabilao **Register New Domain** ny mpanjifa, dia ampiana champ fifandraisana ho an'ny mpametraka ao amin'ny endrika checkout:
 
@@ -42,11 +42,11 @@ Rehefa misafidy ny tabilao **Register New Domain** ny mpanjifa, dia ampiana cham
 
 Ireto no voalohana ilaina amin'ny mpandefa (registrars) rehetra ary voamarina alohan'ny fampidirana ny API an'ny famarihana. Ny laharana finday dia voarafitra ho endrika iraisam-pirenena `+CC.NNN` izay andrasana avy amin'ny mpandefa.
 
-### URL an'ny tranokala voatavoara ho azy (Auto-generated site URL)
+### URL an'ny tranokala voatavoara ho azy (Auto-generated site URL) {#auto-generated-site-url}
 
 Rehefa misy mampiditra (register) na manome toerana (maps) domain ny mpanjifa, dia voasoratra ho azy ny laharana finday an'ny tranokala avy amin'ilay domain no safidy. Tsy mila mametraka laharana URL hafa izy ireo.
 
-### Fitadiavana (Search behaviour)
+### Fitadiavana (Search behaviour) {#search-behaviour}
 
 - Ny fahatapan'ny domain dia fantatra amin'ny fotoana tena izy (real-time) amin'ny alalan'ny AJAX rehefa mitady ny mpanjifa.
 - Azo atao ny manome fanazavana momba ny TLD hafa raha tsy misy ilay domain tian'izy ireo.
@@ -76,11 +76,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Fitantanana DNS ho an'ny mpanjifa (Customer DNS management)
+## Fitantanana DNS ho an'ny mpanjifa (Customer DNS management) {#customer-dns-management}
 
 Afaka mitantana ny fampahalalana DNS ho an'ireo domain nampidirina avy amin'ny pejy **My Account** izy ireo, eo ambanin'ny fidirany ao amin'ilay domain.
 
-### Karazan'ny fampahafantarana (Supported record types)
+### Karazan'ny fampahafantarana (Supported record types) {#supported-record-types}
 
 | Karazana | Fampiasana |
 |---|---|
@@ -90,11 +90,11 @@ Afaka mitantana ny fampahalalana DNS ho an'ireo domain nampidirina avy amin'ny p
 | **MX** | Mametraka ny server famandriana (mail exchange) |
 | **TXT** | Manampy SPF, DMARC, fanamarinana, na fampahalalana lahatsoratra hafa |
 
-### Inona no manome fanohanana fitantanana DNS?
+### Inona no manome fanohanana fitantanana DNS? {#which-providers-support-dns-management}
 
 Fitampanitantana ny fitantanana DNS (fanampiana, fanovana, famafana ny *record*) dia azo atao amin'ny alalan'ny **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, ary **Openprovider**. Ny domain an'i **Hostinger** dia afaka manavao ny *nameservers* amin'ny alalan'ny Domain Seller; ny DNS records ho an'ireo domain voalaza (hosted domains) dia vitan'ny fampifandraisana fototra (*core*) an'i Hostinger momba ny fametrahana domain. Ny domain an'i Namecheap, GoDaddy ary NameSilo dia mampiseho ny sata sy ny fotoana fahaverezany fa tsy maintsy idirana mivantana ao amin'ny *control panel* an'ilay registrar no fitantanana ny DNS.
 
-### DNS records fototra (*Default*)
+### DNS records fototra (*Default*) {#default-dns-records}
 
 Afaka mametraka DNS records fototra ianao izay ho voatanterana ho azy rehefa misy domain voarakitra. Mandehana any amin'i **Settings › Domain Seller › Default DNS Records**.
 
@@ -117,6 +117,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: fijerena sy fanovana DNS
+### Admin: fijerena sy fanovana DNS {#admin-viewing-and-editing-dns}
 
 Afaka mijery sy manova ny DNS records ho an'ny domain an'ilay mpanjifa rehetra ianao amin'ny alalan'ny pejy fanovana domain ao amin'i **Network Admin › Ultimate Multisite › Domains**.

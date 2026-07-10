@@ -3,11 +3,11 @@ title: Ngadamel terjemahan Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Menerjemahkan Ultimate Multisite
+# Menerjemahkan Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite dikembangkeun dina basa Inggris, tapi plugin ieu bisa diterjemah sacara lengkap jeung kami aktif ngahargaan kontribusi terjemahan.
 
-## Terjemahan Plugin Inti
+## Terjemahan Plugin Inti {#core-plugin-translations}
 
 Plugin inti Ultimate Multisite diterjemah ngaliwatan **platform terjemahan resmi WordPress.org**:
 
@@ -24,7 +24,7 @@ Ieu mangrupa sistem terjemahan komunitas WordPress anu standar. Nalika terjemaha
 
 Upami anjeun hayang jadi editor terjemahan pikeun basa anjeun (bisa nyetujui terjemahan), hubungi kami via [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Terjemahan Addon
+## Terjemahan Addon {#addon-translations}
 
 Plugin addon diterjemah pisah di:
 
@@ -32,11 +32,11 @@ Plugin addon diterjemah pisah di:
 
 Terjemahan addon ayeuna masih dibantu ku AI salaku titik awal. Ieu ngawengku sadaya basa anu didukung tapi sok aya ungkapan anu kurang pas atawa teu akurat. Kami ngahargaan pisan terjemahan ti manusa pikeun ngabédake jeung masaran pikeun ngajadikeun éta leuwih alami jeung bener.
 
-## Terjemahan Lokal
+## Terjemahan Lokal {#local-translations}
 
 Upami anjeun hoyongna, sorangan proyek keur sorangan terjemahan lokal nyieun tibatan ngabagi ka pihak lain (upstream), aya dua pilihan:
 
-### Ngagunake Poedit
+### Ngagunake Poedit {#using-poedit}
 
 Anjeun tiasa nganggo aplikasi desktop **[Poedit](https://poedit.net)** pikeun nerjemah file `.pot`:
 
@@ -46,6 +46,6 @@ Anjeun tiasa nganggo aplikasi desktop **[Poedit](https://poedit.net)** pikeun ne
 4. Simpan -- Poedit bakal ngajadikeun file `.po` jeung `.mo`
 5. Letakkeun file hasil terjemahan éta di folder `lang`
 
-### Ngagunake Loco Translate
+### Ngagunake Loco Translate {#using-loco-translate}
 
 Plugin WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** ngidinan anjeun nerjemah langsung ti admin panel tanpa perlu alat desktop. Plugin ieu bakal nguruskeun nyieun jeung ngompilasi file terjemahan pikeun anjeun.

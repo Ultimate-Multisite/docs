@@ -1,0 +1,116 @@
+---
+title: Fifanarahan'ny Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Fanitarana WordPress izay manampy fanitsiana fifanarahana ho an'ny Tutor LMS amin'ny tontolo multisite.
+
+## Famaritana {#description}
+
+Ity fanitarana ity dia manome fanitsiana fifanarahana ilaina amin'ny fampandehanana Tutor LMS amin'ny tambajotra WordPress multisite. Izy io dia mitantana ny fisoratana anaran'ny mpampiasa, ny fitantanana mpampianatra, ny famerana taranja, ary fiasa hafa manokana ho an'ny multisite.
+
+## Endri-javatra {#features}
+
+- **Fitantanana Latabatra Database**: Mamantatra ho azy sy mamorona latabatra Tutor LMS tsy hita izay tsy nahomby noho ny fameperana foreign key amin'ny multisite
+- **Fisoratana Anaran'ny Mpampiasa Multisite**: Mpitantana AJAX manokana ho an'ny fitantanana fisoratana anaran'ny mpampiasa manerana ireo tranonkala ao amin'ny tambajotra
+- **Fitantanana Anjara Asan'ny Mpampianatra**: Fanomezana sy fitantanana ho azy ny anjara asan'ny mpampianatra amin'ny tontolo multisite
+- **Famerana Taranja**: Fampifandraisana amin'ny Ultimate Multisite ho an'ny fitantanana ny fetran'ny famoronana taranja sy funnel mifototra amin'ny plan an'ny tranonkala
+- **Fijery Admin Manokana**: Lisitra mpampianatra sy interface fitantanana mahafantatra multisite
+- **Fitaovana Admin**: Interface fitantanana database ho an'ny mpitantana tambajotra sy tranonkala
+
+## Fepetra Takiana {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Fanitarana Tutor LMS (ampiharina ho azy amin'ny alalan'ny lohateny `Requires Plugins`)
+- Fametrahana WordPress Multisite
+- Fanitarana Ultimate Multisite (ho an'ny fiasa famerana taranja)
+
+## Fametrahana {#installation}
+
+1. Alefaso ny rakitra fanitarana ao amin'ny `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Ataovy azo antoka fa voapetraka sy navitrika ny Tutor LMS
+3. Avitrio ny fanitarana amin'ny alalan'ny menio 'Plugins' ao amin'ny WordPress
+4. Hifandray ho azy amin'ny Tutor LMS ilay fanitarana
+
+## Firafitry ny Rakitra {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Fiasa Nafindra avy amin'ny MU Plugin {#functionality-moved-from-mu-plugin}
+
+Ity fanitarana ity dia misy fiasa izay tao amin'ny `wp-content/mu-plugins/daves.php` taloha:
+
+- Famerana fanovana satan'ny taranja
+- Famerana famoronana taranja
+- Fampifandraisana sy fetra CartFlows
+- Fitantanana anjara asan'ny mpampianatra Tutor
+- Fitantanana fisoratana anaran'ny mpampiasa multisite
+- Fampisehoana ID vokatra taranja
+
+## Fitantanana Database {#database-management}
+
+### Ny Olana {#the-problem}
+
+Amin'ny tontolo WordPress multisite, tsy mahomby ny famoronana latabatra Tutor LMS ho an'ireo latabatra manana fameperana foreign key mankany amin'ny latabatry ny mpampiasa. Mitranga izany satria:
+
+- Mampiasa tovona toy ny `wp_2_tutor_carts` ny latabatra manokana ho an'ny tranonkala
+- Manondro `wp_2_users` ny foreign keys (izay tsy misy)
+- Ny tena latabatry ny mpampiasa dia `wp_users` (zaraina manerana ny tambajotra)
+
+### Ny Vahaolana {#the-solution}
+
+Ity fanitarana ity dia manao ho azy:
+
+1. **Mamantatra Latabatra Tsy Hita**: Manamarina ireo latabatra tsy voaforona noho ny fameperana foreign key
+2. **Mamorona Latabatra miaraka amin'ny Fanondroana Marina**: Mampiasa ny anaran'ny latabatry ny mpampiasa mety (`wp_users` amin'ny multisite)
+3. **Mitantana Toe-javatra Maro**:
+   - Fampavitrika/fampavitrika indray ny fanitarana
+   - Famoronana tranonkala vaovao ao amin'ny tambajotra
+   - Fanamarinana latabatra amin'ny tanana amin'ny alalan'ny interface admin
+
+### Latabatra Voakasika {#affected-tables}
+
+- `tutor_coupon_usages` - Misy foreign key mankany amin'ny latabatry ny mpampiasa
+- `tutor_carts` - Misy foreign key mankany amin'ny latabatry ny mpampiasa
+- `tutor_notification_preferences` - Latabatra TutorPro misy foreign key mankany amin'ny latabatry ny mpampiasa
+
+### Interface Admin {#admin-interface}
+
+Midira amin'ireo fitaovana fitantanana database eto:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Ny interface dia mamela anao:
+- Hijery ireo latabatra tsy hita manerana ny tranonkala rehetra
+- Hampandeha amin'ny tanana ny famoronana latabatra
+- Hanamarina ny fikirakirana database
+- Hijery fampahalalana satan'ny antsipiriany
+
+## Fanohanana {#support}
+
+Ity fanitarana ity dia natao manokana ho an'ny sehatra KursoPro. Raha mila fanohanana ara-teknika, mifandraisa amin'ny ekipa mpamolavola.

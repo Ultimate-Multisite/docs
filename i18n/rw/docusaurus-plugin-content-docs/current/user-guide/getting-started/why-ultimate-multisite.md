@@ -3,11 +3,11 @@ title: Kugira ngo Umeze Umuco w'Ubutumwa?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Nini Ubuto mu Ultimate Multisite
+# Nini Ubuto mu Ultimate Multisite {#why-ultimate-multisite}
 
 Uziye yifite ubutumwa bwo kumenya ko plugin yetu yashobora kuba ari usobanuro kugira ngo ubucuruzi bwawe bukurirwe. Turakoze ko wari ufite ibyo ukeneye ku gikorwa cy'ibindi byo mu gihe cy'ikiwe.
 
-## Icyo ni Ultimate Multisite?
+## Icyo ni Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ni plugin ya WordPress Multisite itanga uburyo bwo kugira umuntu yose ubushobozi bwo gutanga abakiriya WaaS (Website as a Service). Ndiho, n'ubwoko bw'ibinyabiko by'umukono kandi wiyumva umuntu atangira amafaranga menshi mu gihe cy'uko ufungura site yawe mu network ya Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite yifashisha ubushobozi bwo gutanga amafaranga ku buryo bushobo
 
 Kindi, iki ni igice cyiza kandi hari uburyo bwo kwerekana ibyo byari byiza n'ibindi byo mu gihe cy'ikiwe nk'uko wumva ko hari add-ons no webhooks.
 
-## Icyo gusa (Other features)
+## Icyo gusa (Other features) {#other-features}
 
 Ultimate Multisite yifashisha:
 
@@ -33,11 +33,11 @@ Na ibindi by'ingenzi cyane:
 
 * Search and Replace API: Mwe mushobora kandi gushyira inyandiko (placeholders) nk'{{site_name}} mu templates za site na gukoresha Search and Replace API kugira ngo yishobore gutanga inama zo mu gihe cyo gukoreshwa n'ubwo abakoresha wanyu bashobora gutanga inama zikoresho mu gihe cyo guhagarika, byiza kandi byiza.
 
-## Uburyo bwo gukoresha (Use cases)
+## Uburyo bwo gukoresha (Use cases) {#use-cases}
 
 Urugero rwa ibyo Ultimate Multisite yashobora gukoreshwa.
 
-### Icyiciro 1: Agency
+### Icyiciro 1: Agency {#case-1-an-agency}
 
 Gusa, uburyo bw'ubwoko bw'agency buri gihe bishobora kuba ari ugukoresha inyandiko zikoresho mu gushyira umwihariko wa website n'ibindi byo nk'uko yashobora guhagarika cyangwa gukoreshwa mu marketing.
 
@@ -47,7 +47,7 @@ Urugero rwa gukemura inkingi z'plugins n'themes runaka hariyo ku buryo bw'umwiha
 
 Agencies zizera urugero n'ubwoba ku Ultimate Multisite, aho bafasha gukora ibyo babayeho cyane - kwiga uburyo bwiza mu byo gukora websites.
 
-### Urugero 2: Umuntu wumva (Niche Provider)
+### Urugero 2: Umuntu wumva (Niche Provider) {#case-2-niche-provider}
 
 Hari igice cy'ubwujyu cyumva cyane kigaga ko, “Gukora ikintu cyiza kandi cyiza.” Ku rugero rwa abantu bashobora bafasha, ibyo bikunda byera gukora ikintu cyangwa uburyo bwiza mu gihe runaka.
 
@@ -55,7 +55,7 @@ Niba wumva ubwoba mu gutegura umuryango w'websites z'ubwujyu (niche), uzafasha k
 
 Icyo cyiza mu gihe cy'umuntu wumva umuryango w'websites n'ibyo babayeho, niho uzafasha gukora website yawe mu gihe runaka kandi ikoresha plugins n'ubwujyu. Icyo kera umuntu yenda ibyo atazwi (minimal input) kugira ngo yikoreshe ubuzima bwawe.
 
-### Urugero 3: Hosting ya WordPress
+### Urugero 3: Hosting ya WordPress {#case-3-wordpress-web-hosting}
 
 Hari uburyo bwinshi bwo gukora hosting ya WordPress, ariko cyane cyane ni urugero rwiza kumenya ko ni gukoresha amafaranga ku muntu kandi ukamara WordPress yari yashyiramo. Icyo ni cyiza kubera ko hari ibindi byinshi bikwiriye kwibanda kugira ngo umuntu ashobore gukora umuryango w'ibyo bishobora gutanga.
 

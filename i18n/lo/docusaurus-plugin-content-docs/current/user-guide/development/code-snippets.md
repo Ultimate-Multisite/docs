@@ -3,7 +3,7 @@ title: ບ່ອນຂຽນລະຫັດ
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets ສຳລັບ v2
+# Code Snippets ສຳລັບ v2 {#code-snippets-for-v2}
 
 ໂດຍພື້ນຖານແລ້ວ, code snippets ສຳລັບ **WordPress** ແມ່ນໃຊ້ເພື່ອເຮັດການກະທຳບາງຢ່າງທີ່ອາດຈະຕ້ອງການ plugin ຂະໜາດນ້ອຍສະເພາະ. ມັນສາມາດໃສ່ໃນໄຟລ໌ຫຼັກຂອງ WordPress ຫຼື theme (ໂດຍປົກກະຕິແມ່ນໄຟລ໌ functions.php ຂອງ theme ຂອງທ່ານ) ຫຼື ສາມາດໃຊ້ເປັນ MU plugin ກໍໄດ້.
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**ການແກ້ໄຂບັນຫາ CORS ກັບ Font-Icons ໃນ domain ທີ່ຖືກแมપ**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## ການປ່ຽນຕຳແໜ່ງຂອງເມນູ Account
+## ການປ່ຽນຕຳແໜ່ງຂອງເມນູ Account {#changing-the-position-of-the-account-menu-item}
 
 ເພື່ອປ່ຽນຕຳແໜ່ງຂອງເມນູ Account ໃນ Dashboard ຂອງລູກຄ້າ, ເພີ່ມ code snippet ນີ້ໃສ່ໃນໄຟລ໌ functions.php ຂອງ themeຫຼັກຂອງທ່ານໄດ້ເລີຍ. ທ່ານກໍສາມາດເອົາ snippet ນີ້ໃສ່ໃນ mu-plugin ຫຼື custom plugin ໃດໜຶ່ງຂອງທ່ານກໍໄດ້.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // ປັບຄ່າສະເພາະນີ້ເພື່ອຈັດວາງເມນູໃນຕຳແໜ່ງທີ່ຕ້ອງການ.
 
-## ວິທີກວດສອບວ່າຜູ້ໃຊ້ຢູ່ໃນແຜນທີ່ກຳນົດ ແລະ/ຫຼື ມີການສະໝັກໃຊ້ທີ່ເຄື່ອນໄຫວຢູ່ບໍ່
+## ວິທີກວດສອບວ່າຜູ້ໃຊ້ຢູ່ໃນແຜນທີ່ກຳນົດ ແລະ/ຫຼື ມີການສະໝັກໃຊ້ທີ່ເຄື່ອນໄຫວຢູ່ບໍ່ {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 ໃນຖານະ network admin, ທ່ານອາດຈະຕ້ອງສ້າງ custom functions ເພື່ອເຮັດການກະທຳພື້ນຖານ ຫຼື ເຮັດໃຫ້ບໍລິການ/ຟີເຈີໃດໜຶ່ງມີໃຫ້ກຸ່ມຜູ້ສະໝັກ ຫຼື end-users ທີ່ເລືອກໄວ້ໃຊ້ໄດ້, ຂຶ້ນກັບສະຖານະການສະໝັກໃຊ້ ແລະ ແຜນທີ່ເຂົາເຈົ້າສະໝັກຢູ່.
 
@@ -47,20 +47,20 @@ wu_has_plan($user_id, $plan_id)
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## ການແກ້ໄຂບັນຫາ CORS ກັບ Font-Icons ໃນ domain ທີ່ຖືກแมપ
-## Fixing CORS issues with Font-Icons in mapped domains
+## ການແກ້ໄຂບັນຫາ CORS ກັບ Font-Icons ໃນ domain ທີ່ຖືກแมપ {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Fixing CORS issues with Font-Icons in mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 ຫຼັງຈາກທີ່ເຈົ້າໄດ້ map domain ເປັນ sub-site ແລ້ວ, ເຈົ້າອາດຈະພົບວ່າເວັບໄຊນັ້ນມີບັນຫາໃນການໂຫຼດ font ທີ່ເປັນແບບ custom. ນີ້ເກີດມາຈາກການກีดກ້ອງຂ้ามຕົ້ນສະໜາມ (cross-origin block) ໃນການຕັ້ງຄ່າ server ຂອງເຈົ້າ.
 
 ເນື່ອງຈາກໄຟລ໌ font ສ່ວນໃຫຍ່ແມ່ນຖືກໂຫຼດໂດຍກົງຈາກ CSS, plugin map domain ຂອງເຮົາບໍ່ສາມາດຂຽນໃສ່ URL ເພື່ອໃຊ້ domain ທີ່ຖືກ map ແທນ domain ຕົ້ນສະບັບໄດ້, ດັ່ງນັ້ນເພື່ອແກ້ໄຂບັນຫານີ້, ເຈົ້າຈະຕ້ອງໄປแก้ไขໄຟລ໌ການຕັ້ງຄ່າ server ຂອງເຈົ້າ.
 
-### Apache
+### Apache {#apache}
 
 ในไฟล์ .htaccess ของคุณ ให้เพิ่มบรรทัดนี้เข้าไป:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 ในไฟล์ตั้งค่าเซิร์ฟเวอร์ของคุณ (ตำแหน่งจะแตกต่างกันไปตามเซิร์ฟเวอร์) ให้เพิ่มส่วนนี้เข้าไป:
 

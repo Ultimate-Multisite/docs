@@ -3,13 +3,13 @@ title: Istoric de modificări al biletelor de suport
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Jurnal de modificări pentru Ticket-uri de Suport
+# Jurnal de modificări pentru Ticket-uri de Suport {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Îmbunătățit: S-a eliminat directorul `vendor/` din urmărirea Git (acesta este deja acoperit de `.gitignore`), reducând dimensiunea repozitoriului.
 * Îmbunătățit: Testat până la WordPress 7.0.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Corectat: Acceptarea valorilor null în seterii modelului de ticket permis să fie null.
 * Corectat: Toate ticket-urile sunt acum stocate în tabele globale la nivel de rețea pentru o suportare corectă a multisite-ului.
 * Corectat: Ascunderea câmpurilor de personal și corectarea redirecționării paginii goale pe formularul de nou ticket al clientului.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Îmbunătățit: Încărcarea condițională a asset-urilor frontend doar pe paginile de ticket de suport.
 * Îmbunătățit: Sărit autoloader-ul pluginului atunci când autoloader-ul rădăcinii Bedrock a încărcat deja dependențele.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Adăugat: Funcționalitatea completă de vizualizare a ticket-urilor pentru admin și frontend.
 * Adăugat: Handler AJAX pentru trimiterea răspunsurilor la ticket.
 * Adăugat: Suport pentru funcționalitatea de răspuns la ticket cu gestionarea corectă a formularului.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Îmbunătățit: Structura bazei de date cu clase adecvate de interogare (query) și schemă pentru răspunsuri și atașamente.
 * Îmbunătățit: Migrarea către proprietăți reale în loc de atribute pentru modelele de ticket.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Actualizat: Prefixul a fost redenumit în `ultimate-multisite` pentru consistență.
 * Actualizat: Standardizarea domeniului de text.
 * Corectat: Corectări minore ale bug-urilor și îmbunătățiri.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Lansare inițială
 * Sistem complet de gestionare a ticket-urilor
 * Control de acces la mai multe niveluri

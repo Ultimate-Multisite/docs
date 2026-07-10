@@ -3,13 +3,13 @@ title: Mavhango ekunyangwe
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Iriko iri dziri ku Ultimate Multisite version 2.x. Kana uchiti version 1.x,**_ **shandisa iye ndiri pano.**_
 
 Chikoro chedu kana tikati rine premium neUltimate Multisite ndiri kuti tichivaka zvinhu zvakawanda zvinogona kuva zvakare (automate) uye tichipa mweya wenyu nekuti vanhu vachida kuratidza zvinhu vakasiita nekuti vanoone chokwadi chekuvaka website. Mweya yakapfura kuti tiipa iye nzira yekuti vanhu vatsanangura websitesavo. Iyi nzira yakapfura inogona kuva nekuita iye, uye ndiri kune zvinangwa zvakawanda.
 
-## Site Template ndiyo?
+## Site Template ndiyo? {#what-is-a-site-template}
 
 Kukwanisa kunzwa sei, Site Template ndiyo site yakapfura (boilerplate) inogona kushandiswa sebasei kana uchivaka sitesavo maviri munzira yako.
 
@@ -17,7 +17,7 @@ Izviro rinoreva kuti unogona kuita basei, kuva plugins dzakasiyana-siyana, kuita
 
 Izviro rinokwanisa kuva zvakanaka, asi ndiri kuti ndiri kundiite sei site template yepamusoro? Iyi nzira yakapfura nekuti iwe unogona kuratidza.
 
-## Kuita uye Kuratidza Site Template yepamusoro
+## Kuita uye Kuratidza Site Template yepamusoro {#creating-and-editing-a-new-site-template}
 
 Site Templates ndiyo sitesavo vachakasiyana munzira yako. Kushandisa template yepamusoro, unogona kuenda kune **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Pamweya, pano uona switch ya **Copy Site** (Kopya Site) pamusoro pe fomu. Izviro
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Kuwedzera zvinoreva Site Template
+### Kuwedzera zvinoreva Site Template {#customizing-the-contents-of-a-site-template}
 
 Kuti uwedzere site template yako, ndichine zvinhu: enda ku dashboard panel yake uye ushaye zvinhu zvako zvakakosha. Unogona kuita posts dzakare, pages, kuactivate plugins, uye kugara nemu theme inotamba. Unogona kuda kuenda kune Customizer uye kuwedzera zvinoreva zvinobva vose.
 
@@ -43,11 +43,11 @@ Kuti uwedzere site template yako, ndichine zvinhu: enda ku dashboard panel yake 
 
 Zvinhu zvose izvi zvichakopwa kana mutenda anogona kuita site wechinhu chinobva pa Site Template iye.
 
-### Zvinhu Zvinoreva Zvikuru (Advanced Options)
+### Zvinhu Zvinoreva Zvikuru (Advanced Options) {#advanced-options}
 
 Kana uri munhu anoziva kuchinjira kuratidza custom coding, unogona kuita zvinhu neSearch and Replace API yathu kuti uingane zvinhu pamusoro pe site yakare panguva inopfamba. Izvirozo zvinobatsira kune zvinhu zvakaita sei: kuingara dzina dzinoramba (company names) pa About page, kuingara email ya contact pa Contact page, uye zvinhu zvakasiyana-siyana.
 
-### Kuita Site Templates
+### Kuita Site Templates {#using-site-templates}
 
 Ok, unenge wakaipa site templates dzakawanda nehunhu hwakasiyana-siyana dzinobva vose nemafanana nekuti designs, themes, uye settings. Nkuita kuti zvinogone kuita zvinhu pamweye mu network yako, unenge uingane mitemo imave (two approaches) anogona kuita (pakati pei):
 
@@ -57,7 +57,7 @@ Ok, unenge wakaipa site templates dzakawanda nehunhu hwakasiyana-siyana dzinobva
 
   * Kuti makubatsiri vako vange kuita chine site templates vavo vechekera panguva vakare.
 
-#### Mode 1: Kuipa Site Template
+#### Mode 1: Kuipa Site Template {#mode-1-assign-site-template}
 
 Moni mweye, munhu wose haizozokwanisa template kana chine kuti vachikwanisa kuita account, asi iwe ndiriwo uchigadzirisa kuti template upi uyu uyu anogona kushandiswa muplanera dzako.
 
@@ -69,7 +69,7 @@ Izvi zvichakubudzisa ku page ya **Edit Product**. Pakati pe chine **Product Opti
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Chibvumirano Template Inogona Kuita
+#### Mode 2: Chibvumirano Template Inogona Kuita {#mode-2-choose-available-site-template}
 
 Mu mode iyi, unoziva vachikwanisa kuita chokwadi nguva yakanga vachikwanisa kuita account. Vachingoone kana kuti vanogona kuchinjira templates dzakasiyana dzinogadzirisa zvako pamusoro pe product settings. Unenge uine option yekuti usimbise (limit) template dzine kuita zvinogona kuita muunhu anogona kuita chokwadi chako. Izvi zochinja kuti uve ne seti dzakasiyana dzinogadzirisa pamusoro pe product iyu, zvichinguva yakawanda kune kuone nzira dzakasiyana-siyane dze functions uye features kune product inosanganisira mwayo.
 
@@ -77,7 +77,7 @@ Pa **Edit Product** page. Under section ya **Product Options**, ndichira **Site 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on Checkout form
+### Default Mode: Site template selection on Checkout form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Kana uchida site templates dzako dzese dzibe panyanya nguva dzinoratidzo munzira ya registration, kana unoda kuti usina kuita zvinangwa zvakawanda nekubvira kuteerera kana kuita specification ye site templates underi product unotanga kuita. Ndiyo, unogona kuita iye nekuita site template selection under **Checkout Form** yako. Kuti urambeise iye, enda ku **Ultimate Multisite > Checkout Forms** uye chibvumira **Edit** under form inotipa kuti uita configuration.
 
@@ -91,29 +91,29 @@ Panyanya, customers vanenge vachida template chooser during checkout uye vanogon
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Chagwuri za Template ya Website
+### Chagwuri za Template ya Website {#site-template-options}
 
 Kuna functions zingine za template za website zvinogona kuti utizire kana kuzivara chini ya Ultimate Multisite settings.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Kurwadzira Kuti Template Ibadhiriswe (Allow Template Switching)
+#### Kurwadzira Kuti Template Ibadhiriswe (Allow Template Switching) {#allow-template-switching}
 
 Kurwadzira hicho option kunoita kuti wamwe wakazi (clients) vave kuurwadzirisa template wanayo chine panguva ya kuregerwa (sign-up process) panguva yakagadzirwa akaunti newebsite. Izvi zvinogona kutendeka kwemwe munhu anomira, nekuti kunoita kuti vaone zvakare template kana vachigona kuenda ku template apo vanoziva kuti chine kuitira zvakanaka panguva yakare.
 
-#### Kurwadzira Kuti Vamwe Vaziveite Website Yavo Kubatana (Allow Users to use their Site as templates)
+#### Kurwadzira Kuti Vamwe Vaziveite Website Yavo Kubatana (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Kuti vamwe vaziveita subsite vave vakusimudzwa kuita uye kugadzirisa website yavo, vanogona kuti vachigone kupa (clone) uye kuenda kuita iye se template yakaita kuti vashandise apo vachigadzira subsite rine kuita panguva yakare munzvimbo dzakawanda dzinogona kuita. Hicho option chinogona kunoita izvi.
 
-#### Kurwadzira Media Kubatana Panguva Yakare (Copy Media on Template Duplication)
+#### Kurwadzira Media Kubatana Panguva Yakare (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Kurwadzira hicho option kunoita kuti media yakanzi yakaitwa panguva ya template iwe itanise ku website yakagadzirwa zvakare. Izvi zvinogona kutendeka panguva dzinogona dzine plans dzakawanda.
 
-#### **Kupanga Search Engines Kurwadzira Site Templates (Prevent Search Engines from indexing Site Templates)**
+#### **Kupanga Search Engines Kurwadzira Site Templates (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Site templates zvakaita zvakaita munyoyo wese (boilerplate) asi zvinhu zvinoita kuti zvinogone kuva panguva dzinogona dzine network yako, izviro chinogona kuitwa kuti search engines zvizivire. Hicho option chinogona kunoita kuti utave nekuvaka site templates kuti search engines zvigone kuzivire.
 
-## Kurwadzira Site Templates NeSearch-and-Replace Yechine Auto (Pre-populating Site Templates with auto search-and-replace)
+## Kurwadzira Site Templates NeSearch-and-Replace Yechine Auto (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Iyi chine chine zvinotevera dziri Ultimate Multisite ndiri kuita kuti uingane text, rangi, uye fields (zvinangwa) kune registration form. Ndapana iwe zvinhu izvi zvakabva kuita, tiri kuenda kutorera iwo kuti titorei content mumabhariro akasiitika (site template) yakagadzirwa. Ndipo, kana iye site yakagadzirwa inobururwa, Ultimate Multisite inozvisanisa placeholders nekuita zvinhu zvakare dzakagadzirwa munzira yakanaka.
 
@@ -133,7 +133,7 @@ Ultimate Multisite inozvisanisa placeholders nedata inosimbiswa neudzidzi automa
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Kuti ushaye "template inotevera placeholders" problem
+### Kuti ushaye "template inotevera placeholders" problem {#solving-the-template-full-of-placeholders-problem}
 
 Izvi zvakawanda zvinotevera, asi tiri kuona nzira yakare: template dzedu - dziri kuita neendaya dzeendaya (placeholders) dzakare dziri kune zvinhu hazvisonge.
 

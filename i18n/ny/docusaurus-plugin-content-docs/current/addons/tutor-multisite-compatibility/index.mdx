@@ -1,0 +1,116 @@
+---
+title: Kugwirizana kwa Mphunzitsi ndi Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Pulogalamu yowonjezera ya WordPress yomwe imawonjezera zokonza zogwirizana ndi Tutor LMS m'malo a multisite.
+
+## Kufotokozera {#description}
+
+Pulogalamu yowonjezera iyi imapereka zokonza zofunika zogwirizana poyendetsa Tutor LMS pa ma netiweki a WordPress multisite. Imasamalira kulembetsa kwa ogwiritsa ntchito, kasamalidwe ka aphunzitsi, malire a maphunziro, ndi magwiridwe ena okhudzana ndi multisite.
+
+## Zinthu Zake {#features}
+
+- **Kasamalidwe ka Matebulo a Nkhokwe ya Deta**: Imadziwa ndi kupanga yokha matebulo a Tutor LMS omwe akusowa chifukwa cha zoletsa za makiyi akunja za multisite
+- **Kulembetsa Ogwiritsa Ntchito pa Multisite**: Oyang'anira AJAX apadera osamalira kulembetsa kwa ogwiritsa ntchito m'masamba a netiweki
+- **Kasamalidwe ka Udindo wa Mphunzitsi**: Kupereka ndi kuyang'anira yokha udindo wa mphunzitsi m'malo a multisite
+- **Malire a Maphunziro**: Kuphatikizana ndi Ultimate Multisite posamalira malire opanga maphunziro ndi funnel kutengera mapulani a tsamba
+- **Mawonedwe Apadera a Woyang'anira**: Mndandanda wa aphunzitsi ndi mawonekedwe a kasamalidwe omwe amazindikira multisite
+- **Zida za Woyang'anira**: Mawonekedwe a kasamalidwe ka nkhokwe ya deta kwa oyang'anira netiweki ndi tsamba
+
+## Zofunikira {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Pulogalamu yowonjezera ya Tutor LMS (imakakamizidwa yokha kudzera pa mutu wa `Requires Plugins`)
+- Kuyika kwa WordPress Multisite
+- Pulogalamu yowonjezera ya Ultimate Multisite (pa magwiridwe a malire a maphunziro)
+
+## Kuyika {#installation}
+
+1. Kwezani mafayilo a pulogalamu yowonjezera ku `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Onetsetsani kuti Tutor LMS yayikidwa ndi kuyatsidwa
+3. Yatsani pulogalamu yowonjezera kudzera mu menyu ya 'Plugins' mu WordPress
+4. Pulogalamu yowonjezera idzaphatikizana yokha ndi Tutor LMS
+
+## Kapangidwe ka Mafayilo {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Magwiridwe Osunthidwa Kuchokera ku MU Plugin {#functionality-moved-from-mu-plugin}
+
+Pulogalamu yowonjezera iyi ili ndi magwiridwe omwe kale anali mu `wp-content/mu-plugins/daves.php`:
+
+- Malire osintha mkhalidwe wa maphunziro
+- Malire opanga maphunziro
+- Kuphatikizana ndi CartFlows ndi malire
+- Kasamalidwe ka udindo wa mphunzitsi wa Tutor
+- Kusamalira kulembetsa ogwiritsa ntchito pa multisite
+- Kuwonetsa ID ya chinthu cha maphunziro
+
+## Kasamalidwe ka Nkhokwe ya Deta {#database-management}
+
+### Vuto {#the-problem}
+
+M'malo a WordPress multisite, kupanga matebulo a Tutor LMS kumalephera pa matebulo okhala ndi zoletsa za makiyi akunja ku tebulo la ogwiritsa ntchito. Izi zimachitika chifukwa:
+
+- Matebulo enieni a tsamba amagwiritsa ntchito ma prefixes monga `wp_2_tutor_carts`
+- Makiyi akunja amalozera ku `wp_2_users` (lomwe kulibe)
+- Tebulo lenileni la ogwiritsa ntchito ndi `wp_users` (logawidwa pa netiweki yonse)
+
+### Yankho {#the-solution}
+
+Pulogalamu yowonjezera iyi imachita izi yokha:
+
+1. **Imadziwa Matebulo Osowa**: Imafufuza matebulo omwe sanapangidwe chifukwa cha zoletsa za makiyi akunja
+2. **Imapanga Matebulo ndi Zolozera Zolondola**: Imagwiritsa ntchito dzina loyenera la tebulo la ogwiritsa ntchito (`wp_users` mu multisite)
+3. **Imasamalira Zochitika Zosiyanasiyana**:
+   - Kuyatsa/kuyatsanso pulogalamu yowonjezera
+   - Kupanga tsamba latsopano mu netiweki
+   - Kufufuza matebulo pamanja kudzera mu mawonekedwe a woyang'anira
+
+### Matebulo Okhudzidwa {#affected-tables}
+
+- `tutor_coupon_usages` - Lili ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
+- `tutor_carts` - Lili ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
+- `tutor_notification_preferences` - Tebulo la TutorPro lokhala ndi kiyi wakunja ku tebulo la ogwiritsa ntchito
+
+### Mawonekedwe a Woyang'anira {#admin-interface}
+
+Pezani zida za kasamalidwe ka nkhokwe ya deta pa:
+
+- **Woyang'anira Netiweki**: Zokonda → Tutor Multisite DB
+- **Woyang'anira Tsamba**: Zida → Tutor Multisite DB
+
+Mawonekedwewa amakupatsani mwayi:
+- Kuwona matebulo osowa m'masamba onse
+- Kuyambitsa pamanja kupanga matebulo
+- Kufufuza kasinthidwe ka nkhokwe ya deta
+- Kuwona zambiri za mkhalidwe mwatsatanetsatane
+
+## Thandizo {#support}
+
+Pulogalamu yowonjezera iyi yapangidwa makamaka pa nsanja ya KursoPro. Kuti mupeze thandizo laukadaulo, funsani gulu la opanga.

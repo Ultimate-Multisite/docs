@@ -3,7 +3,7 @@ title: ማህበረሰብ
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Communityን እንዴት መቀላቀል እንደሚቻል
+# Ultimate Multisite Communityን እንዴት መቀላቀል እንደሚቻል {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community ሌሎች Ultimate Multisite ተጠቃሚዎች ጋር መገናኘት፣ ምክሮችን፣ ልምዶችን እና ሌሎችንም መጋራት የሚችሉበት ቦታ ነው። Ultimate Multisite Community ለመድረስ ወደ https://community.ultimatemultisite.com/home ይሂዱ።
 

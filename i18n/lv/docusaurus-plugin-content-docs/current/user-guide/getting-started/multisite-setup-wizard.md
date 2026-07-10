@@ -3,7 +3,7 @@ title: Multisīta iestatījumu palīdzības vārti
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Iestatījumu Viedoklis
+# Multisite Iestatījumu Viedoklis {#multisite-setup-wizard}
 
 Ultimate Multisite ietver ir iebūvēts viedoklis, kas automātiski pārvērš standarta WordPress instalāciju uz WordPress Multisite tīklu. Tas atrodas nepieciešamība maniski rediģēt `wp-config.php` vai veikt databāzes komandas bez nepieciežības.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ietver ir iebūvēts viedoklis, kas automātiski pārvērš s
 Ja jūsu WordPress instalācija jau darbojas kā Multisite tīkls, varat šo solījumus pilnībā izkļūt. Viedoklis parādās tikai tad, kad Multisite vēl nav aktivizēts.
 :::
 
-## Kad Parādās Viedoklis?
+## Kad Parādās Viedoklis? {#when-does-the-wizard-appear}
 
 Kad jūs aktivizējat Ultimate Multisite standarta (ne-Multisite) WordPress instalācijā, plāgiņš pamanās, ka Multisite nav aktivizēts, un automātiski novirzīja jūs uz Multisite Iestatījumu Viedokli instead of parastiem iestatījumu viedoklu.
 
 Tā var arī piekļūt tieši caur **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Priekšnoteikumi
+## Priekšnoteikumi {#prerequisites}
 
 Pirms, kad runāt viedokli, pārliecinieties, ka:
 
@@ -29,7 +29,7 @@ Pirms, kad runāt viedokli, pārliecinieties, ka:
 Viedoklis modifisē jūsu `wp-config.php` failu un izveido jaunas databāzes tabulas. Vienmēr veiciet kopēju rezerves kopi, pirms turpināt.
 :::
 
-## 1. Sveicieni
+## 1. Sveicieni {#step-1-welcome}
 
 Pirmais ekrāns iepina, kas ir WordPress Multisite un ko viedoklis darīs:
 
@@ -42,11 +42,11 @@ Pirmais ekrāns iepina, kas ir WordPress Multisite un ko viedoklis darīs:
 
 Noklikšķiniet uz **Turpināt** lai turpinātu.
 
-## 2. Tīkla Konfigurācija
+## 2. Tīkla Konfigurācija {#step-2-network-configuration}
 
 Šajā solūjumā jums ir jākonfiguro tīkla iestatījumi.
 
-### Vietas Struktūra
+### Vietas Struktūra {#site-structure}
 
 Izvēlieties, kā organizēt savus tīmekļa vietnes:
 
@@ -57,11 +57,11 @@ Izvēlieties, kā organizēt savus tīmekļa vietnes:
 Ja izvēlaties subdomēnus, jums būs jākonfigūrē **wildcard DNS** un **wildcard SSL sertifikāts** savam domēniem. Lielākā daļa administrētu WordPress hostu to automātiski pārvaldī. Skarieties [Ultimate Multisite 101](./ultimate-multisite-101) detalizētākai salīdzinājumam.
 :::
 
-### Tīkla nosaukums (Network Title)
+### Tīkla nosaukums (Network Title) {#network-title}
 
 Ievadieties nosaukumu savai tīklam. Šis pēc defaulta ir jūsu pašreizējā vietnes nosaukums ar pievienotu vārdu "Network". To varat mainīt vēlāk no tīkla iestatījumiem.
 
-### Tīkļa administratori e-pasta (Network Admin Email)
+### Tīkļa administratori e-pasta (Network Admin Email) {#network-admin-email}
 
 E-pasta adrese, kas tiek izmantota tīkla administrācijas paziņojumiem. Šis pēc defaulta ir pašreizējā lietotāja e-pasta adrese.
 
@@ -69,7 +69,7 @@ E-pasta adrese, kas tiek izmantota tīkla administrācijas paziņojumiem. Šis p
 
 Pēc laiku, kad ievadījis laukus, klikšķiniet uz **Continue** (Turpināt), lai turpinātu.
 
-## 3. Iestatījumi (Installation)
+## 3. Iestatījumi (Installation) {#step-3-installation}
 
 Klikšķiniet uz pogas **Install** (Iestatīt), lai sāktu. Wizard veic piecas automātiskās darbības sekvencē, katras parādīto savu progresu reālla laikā:
 
@@ -96,7 +96,7 @@ Kad visi kroki veiksmīgi pabeidz, jūs redziet zaļo "Success!" statusu katram 
 
 Pēc tam vizitgoste automātiski pārsniegs uz pabeigšanas ekrānu.
 
-## 4. Pabeigt
+## 4. Pabeigt {#step-4-complete}
 
 Kad instalācija beidzties, jūs redziet veiksmīgu ziņojumu, kas apstiprina, ka WordPress Multisite ir ieslēgts.
 
@@ -108,7 +108,7 @@ Tagad varat turpināt Ultimate Multisite vizitgostes konfigurēšanu, lai iestat
 Pēc tam, ja multisite instalācija beidzoties, jūsu pārlūkprogramma novirzīsies cauri jaunajiem aktivizēti tīkla administratori. Vist vai jums var būt jālogējas vēlreiz, jo autentifikācijas sīkdatnes tiek atjauninātas multisite vidi.
 :::
 
-## Manas instrukcijas alternatīva (Fallback)
+## Manas instrukcijas alternatīva (Fallback) {#manual-setup-fallback}
 
 Ja konfidenciālais palīdzības programmators (wizard) nevar rakstīt savā `wp-config.php` failā (dvišķu iestatas vai servera ierobežojumu dēļ), tas parādīs tieši kodu, ko jums ir jāpievieno manas rokas:
 
@@ -117,9 +117,9 @@ Ja konfidenciālais palīdzības programmators (wizard) nevar rakstīt savā `wp
 
 Pēc manas manuālās izmaiņu veidošanas atsaucies un palīdzības programmators pamanīs, ka multisite tagad ir aktīva.
 
-## Kļūdu likums (Troubleshooting)
+## Kļūdu likums (Troubleshooting) {#troubleshooting}
 
-### Palīdzības programmators saka, ka wp-config.php nav rakstams
+### Palīdzības programmators saka, ka wp-config.php nav rakstams {#the-wizard-says-wp-configphp-is-not-writable}
 
 Jums vajadzīgs raksts atļaupa `wp-config.php` failam. Jūs varat:
 
@@ -127,7 +127,7 @@ Jums vajadzīgs raksts atļaupa `wp-config.php` failam. Jūs varat:
 - Izmantot manas instrukcijas alternatīvas (fallback), kas sniegta palīdzības programmators
 - Lūdzu, jautāt savam hostings pakalpojumu nodrošinājumu par palīdzību
 
-### Vietnes nav pieejamas pēc instalācijas (subdomēni)
+### Vietnes nav pieejamas pēc instalācijas (subdomēni) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ja jūs izvēlējāt subdomēnu struktūru, jums ir jākonfiguriē **wildcard DNS** jūsu domāina. Pievienojiet DNS ierakstu:
 
@@ -139,7 +139,7 @@ Value: [jūsu servera IP adrese]
 
 Pārbaudiet ar savu hostings pakalpojumu, ja neesat droši, kā konfigūriēt to.
 
-### Autentifikācijas problēmas pēc instalācijas
+### Autentifikācijas problēmas pēc instalācijas {#authentication-issues-after-setup}
 
 Ja jūs esat atslēgts vai redziet sīkdatņu kļūdas pēc multisite instalācijas:
 
@@ -147,7 +147,7 @@ Ja jūs esat atslēgts vai redziet sīkdatņu kļūdas pēc multisite instalāci
 2. Logējas vēlreiz uz `yourdomain.com/wp-login.php`
 3. Ja problēma tur paliek, pārbaudiet, vai jūsu `wp-config.php` nav noteikts `COOKIE_DOMAIN` vērtība `false` — tas ir zināms problēma subdomēnu multisite instalācijās
 
-### Instalācijas laikā vienas darbības neizpildīšanās
+### Instalācijas laikā vienas darbības neizpildīšanās {#a-step-failed-during-installation}
 
 Ja ja, ja, ja! Ja vienkārši, ja jums palīdzēšu ar šiem situācijām:
 

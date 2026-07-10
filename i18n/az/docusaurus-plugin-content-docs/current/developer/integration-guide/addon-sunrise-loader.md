@@ -3,17 +3,17 @@ title: Sunrise Fayl Yükləyici Eklentisi
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise Fayl Yükləyicisi
+# Addon Sunrise Fayl Yükləyicisi {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0, add-onlar və custom MU-plugin inteqrasiyaları üçün bir sunrise extension loader əlavə edir. Bu, `wp-content/sunrise.php` faylını redaktə etmədən, WordPress sunrise bootstrapping zamanı işləməsi lazım olan hallarda istifadə olunur.
 
-## Nə vaxt istifadə etməli
+## Nə vaxt istifadə etməli {#when-to-use-it}
 
 Sunrise extension-dan istifadə etməlisiniz, inteqrasiyanızın adi pluginlər yüklənməzdən əvvəl işləməsi vacibdirsə. Məsələn: custom domain yönləndirməsi, host-a xas sorğu emalı və ya erkən network bootstrap tənzimləmələri.
 
 Normal inteqrasiyalar üçün isə adi WordPress pluginlərini, MU-pluginləri və sənədləşdirilmiş Ultimate Multisite hook-larını üstün tutun. Sunrise kodu çox erkən işləyir və kiçik, müdafiəli və asılılıqdan azad olmalıdır.
 
-## Fayl adlandırma konvensiyası
+## Fayl adlandırma konvensiyası {#file-naming-convention}
 
 `ultimate-multisite-` ilə başlayan adlı bir add-on kataloqunda `sunrise.php` adlı bir PHP faylı yaradın:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Uyğun gələn fayllar, add-on yoluna görə alfabetik sırayla yüklənir.
 
-## Faylı harada yerləşdirməli
+## Faylı harada yerləşdirməli {#where-to-place-the-file}
 
 Faylı, sunrise davranışına sahib olan add-onun kök kataloqunda yerləşdirin:
 
@@ -45,7 +45,7 @@ Skan, cari `WP_PLUGIN_DIR` dəyərinə deyil, `WP_CONTENT_DIR` nisbətində həl
 
 Birbaşa olaraq yaradılmış `wp-content/sunrise.php` faylını redaktə etməyin. Yükləyici, Ultimate Multisite tərəfindən quraşdırılan və yenilənən əsas sunrise faylını "fork" etmədən, custom kodun sunrise davranışını genişləndirməsinə imkan verir.
 
-## Mövcud hook və filter-lər
+## Mövcud hook və filter-lər {#hooks-and-filters-available}
 
 Addon sunrise faylları, Ultimate Multisite domain mapping yükləndikdən sonra və WordPress `ms_loaded` funksiyasını çağırmadan əvvəl işləyir. Bu mərhələdə bir sunrise faylı aşağıdakıları edə bilər:
 
@@ -58,7 +58,7 @@ Ultimate Multisite, sunrise yükləyicisi başa çatdıqdan sonra `wu_sunrise_lo
 
 Yalnız sunrise mərhələsində artıq yüklənmiş funksiyalara çağırın. Verilənlər bazası ilə bağlı ağır işlər, template render etmək, HTTP sorğuları və normal plugin yüklənmə sırasının tamamlandığını fərz edən koddan çəkinin.
 
-## Minimal nümunə
+## Minimal nümunə {#minimal-example}
 
 ```php
 <?php

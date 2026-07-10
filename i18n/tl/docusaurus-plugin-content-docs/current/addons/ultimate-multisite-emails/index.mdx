@@ -1,0 +1,197 @@
+---
+title: Mga email
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Mga Email {#emails}
+
+Ang Ultimate Multisite: Emails addon ay nagbibigay-daan sa mga may-ari ng network na mag-provision at mamahala ng mga email account ng customer kasabay ng mga site at membership. Nagdaragdag ang bersyon 1.1.0 ng pamamahala ng email account para sa customer, webmail single sign-on, suporta sa CyberPanel forwarder, at mga pagpapahusay sa provisioning sa oras ng checkout.
+
+## Pangunahing Tampok {#key-features}
+
+* **Widget ng email account ng customer**: Maaaring gumawa at mamahala ang mga customer ng mga mailbox mula sa kanilang pahina ng account pagkatapos nilang magkaroon ng aktibong email membership.
+* **Webmail SSO at mga magic link**: Maaaring buksan ng mga customer ang webmail direkta mula sa pahina ng account gamit ang one-click authentication kapag sinusuportahan ito ng provider.
+* **Mga pagbabago ng password**: Maaaring i-update ng mga customer at administrator ang mga password ng mailbox mula sa widget ng pamamahala ng email.
+* **Provisioning ng karapatan sa checkout**: Lumilikha ang checkout ng email membership, iniuugnay ito sa domain ng site ng customer, at ginagawang available ang mga tool ng mailbox sa pahina ng account.
+* **Mga CyberPanel forwarder**: Ang mga network na sinusuportahan ng CyberPanel ay maaaring gumawa at mamahala ng mga email forwarder bilang bahagi ng daloy ng serbisyo sa email.
+* **Mga setting na nakabatay sa provider**: Sinasala ng pahina ng settings ang mga provider sa aktibo at naka-configure na mga integrasyon upang makita lamang ng mga administrator ang mga magagamit na opsyon.
+
+## Mga Kinakailangan {#requirements}
+
+* Ultimate Multisite 2.0.0 o mas mataas
+* Pag-install ng WordPress Multisite
+* Hindi bababa sa isang naka-configure na integrasyon ng email provider
+* Mga kredensyal ng Provider API na may pahintulot na gumawa ng mga mailbox, magpalit ng mga password, at mag-isyu ng mga link sa access sa webmail kung saan sinusuportahan
+
+## Pag-install {#installation}
+
+1. I-upload ang mga file ng plugin sa `/wp-content/plugins/ultimate-multisite-emails`.
+2. I-activate sa network ang addon mula sa **Mga Plugin** sa WordPress network admin.
+3. Pumunta sa **Ultimate Multisite** > **Mga Setting** at buksan ang mga setting ng email ng addon.
+4. I-enable ang mga integrasyon ng email provider na gusto mong gamitin ng mga customer.
+5. I-save ang mga setting, pagkatapos ay subukan ang paggawa ng account gamit ang hindi production na customer o staging site.
+
+## Paano Gumagana ang Daloy ng Pagbebenta ng Email {#how-the-email-seller-flow-works}
+
+May dalawang magkahiwalay na layer ang pagbebenta ng email:
+
+1. **Karapatan** — isang Ultimate Multisite email produkto/membership na nagsasabing pinapayagan ang customer na gumamit ng email para sa partikular na domain ng site, provider, quota, at limitasyon ng account.
+2. **Paggawa ng mailbox** — ang aktuwal na mailbox ng provider, gaya ng `info@example.com`, na ginagawa kapag pinili ng customer o ng network administrator ang local part at password.
+
+Sa panahon ng checkout, ginagawa o ina-activate ng addon ang **email membership** at itinatala ang domain ng site at provider ng customer sa membership na iyon. Hindi ito nanghuhula ng pangalan ng mailbox o password. Pagkatapos makumpleto ang pagbili at mayroon nang konteksto ng site/domain, maaaring buksan ng customer ang pahina ng account at gawin ang mga pangalan ng mailbox na gusto nila.
+
+Ibig sabihin, ang normal na daloy ng customer ay:
+
+1. Bumibili ang customer ng site plan at nagdaragdag ng email produkto sa panahon ng checkout.
+2. Ginagawa ng Ultimate Multisite ang site membership at ang pangalawang email membership.
+3. Iniuugnay ng Emails addon ang email membership sa domain ng site at provider ng customer.
+4. Binubuksan ng customer ang **Account** sa kanilang dashboard.
+5. Lumilitaw ang panel na **Mga Email Account** para sa aktibong email membership na iyon.
+6. Iki-click ng customer ang **Gumawa ng Account**, ilalagay ang local part gaya ng `info`, magtatakda ng password, at gagawin ng addon ang `info@their-domain.com` sa naka-configure na provider.
+
+## Mag-configure ng Email Produkto {#configure-an-email-product}
+
+Gumawa ng isang email produkto para sa bawat email package na gusto mong ibenta o ipamigay. Kung bago ka sa pag-setup ng produkto, magsimula sa [Paggawa ng Iyong Unang Subscription Produkto](../../user-guide/configuration/creating-your-first-subscription-product) at pagkatapos ay bumalik dito para sa mga setting na partikular sa email.
+
+1. Pumunta sa **Network Admin > Ultimate Multisite > Mga Produkto > Magdagdag ng Produkto**.
+2. Itakda ang **Uri ng Produkto** sa **Email**.
+3. I-configure ang pagpepresyo. Gumamit ng bayad na umuulit na presyo para sa ibinebentang plan, o itakda ang produkto sa libre/zero-priced kung dapat itong maging komplimentaryong email plan.
+4. Buksan ang seksyong **Mga Setting ng Email**.
+5. Piliin ang naka-configure na **Email Provider**.
+6. Itakda ang **Bilang ng mga Account**, **Storage Quota (MB)**, mga limitasyon ng alias, mga forwarder, at autoresponder ayon sa kailangan.
+7. I-save ang produkto.
+
+Tanging mga provider na naka-enable at ganap na naka-configure sa pahina ng **Mga Integrasyon** ang lumilitaw sa selector ng provider. Kung walang laman ang selector, i-configure at subukan muna ang provider.
+
+## Magdagdag ng Email sa Checkout {#add-email-to-checkout}
+
+Karaniwang iniaalok ang mga email produkto bilang mga add-on sa isang site plan. Tingnan ang [Mga Checkout Form](../../user-guide/configuration/checkout-forms) para sa pangkalahatang daloy ng trabaho ng checkout editor.
+
+1. Gumawa o mag-edit ng site plan na unang binibili ng mga customer.
+2. Idagdag ang email produkto bilang available na add-on/order bump para sa daloy ng checkout na iyon.
+3. Kumpirmahing kasama pa rin sa checkout form ang normal na mga kinakailangang field ng site, lalo na ang field ng site URL/domain.
+4. Magpatakbo ng test checkout gamit ang staging customer.
+5. Pagkatapos ng checkout, buksan ang [pahina ng account](../../user-guide/client-management/account-page) ng customer at kumpirmahing lumilitaw ang panel na **Mga Email Account**.
+
+Kinukuha ang email domain mula sa domain ng site ng customer. Hindi inilalagay ng mga customer ang email domain sa hakbang ng email produkto.
+
+## Pamamahala ng Email sa Account ng Customer {#customer-account-email-management}
+
+Nagdaragdag ang bersyon 1.1.0 ng widget ng pamamahala ng email sa pahina ng account ng customer. Gamitin ito kapag dapat makagawa at makapagpanatili ang mga customer ng mailbox para sa sarili nilang mga site sa self-service na paraan.
+
+Mula sa pahina ng account, maaaring:
+
+1. Tingnan ng mga customer ang mga email account na konektado sa kanilang kasalukuyang email membership/domain ng site.
+2. Gumawa ng bagong mailbox kapag pinapayagan ng kanilang email produkto ang karagdagang mga account.
+3. Baguhin ang password ng umiiral na mailbox.
+4. Buksan ang mga sinusuportahang webmail provider sa pamamagitan ng SSO o magic-link login.
+
+Ginagamit ng widget ang sistema ng currents ng pahina ng account ng Ultimate Multisite, kaya ang mga aksyon ay naka-scope sa konteksto ng account na tinitingnan ng customer. Pinipigilan nito ang mga customer na mamahala ng mga email account na kabilang sa ibang membership o site.
+
+Kung hindi nakikita ng customer ang email panel, tingnan kung mayroon silang **active Email product membership**, kung na-link ang membership sa isang site domain, at kung may naka-configure na provider ang product.
+
+## Pagbibigay sa Customer ng Libreng Email Plan {#giving-a-customer-a-free-email-plan}
+
+Para bigyan ang customer ng email nang hindi sila sinisingil, ibigay muna ang **email entitlement**, pagkatapos ay gumawa o hayaan ang customer na gumawa ng mailbox.
+
+Mga inirerekomendang opsyon:
+
+* **Gumawa ng libreng email product**: itakda ang presyo ng email product sa libre/zero, pagkatapos ay magdagdag ng active membership para sa customer na iyon mula sa **Ultimate Multisite > Memberships > Add Membership**. Piliin ang email product at ang customer. Ang mga libreng membership ay panghabambuhay hanggang baguhin o kanselahin. Kung ang email membership ay nilalayong sumunod sa isang umiiral na site, tiyaking naka-link ito sa konteksto ng site/domain na iyon.
+* **Gumamit ng 100% discount o libreng checkout link**: hayaan ang customer na dumaan sa checkout upang awtomatikong gumawa ang Ultimate Multisite ng email membership at talaan ng pagbabayad.
+* **Admin-create ng mailbox**: pumunta sa **Ultimate Multisite > Email Accounts > Add Email Account** upang gumawa ng partikular na mailbox sa provider para sa isang customer. Kapaki-pakinabang ito para sa support, ngunit hindi nito pinapalitan ang email product membership na nagpapatakbo sa mga self-service account-page tool ng customer.
+
+Kung gusto mong pamahalaan ng customer ang mailbox mismo mula sa account page, tiyaking mayroon silang active email membership para sa domain. Maaaring umiral ang isang manu-manong ginawang provider mailbox nang walang membership na iyon, ngunit maaaring hindi makita ng customer ang self-service email panel para rito.
+
+## Mga Account na Ginawa ng Admin at "Walang Order Number" {#admin-created-accounts-and-no-order-number}
+
+Ang admin page ng **Email Accounts** ay gumagawa o nag-e-edit ng provider mailbox. Hindi ito ang unang hakbang para magbenta o magbigay ng email plan.
+
+Kapag nag-e-edit ng email account, naghahanap ang field na **Membership** ng mga umiiral na Ultimate Multisite membership ayon sa kanilang reference/order number. Kung susubukan mong magtalaga ng account bago magkaroon ang customer ng email membership, maaaring walang order number na mapili.
+
+Gamitin sa halip ang pagkakasunod-sunod na ito ng mga operasyon:
+
+1. Gumawa o hanapin ang email membership ng customer. Para sa mga pagbili, checkout ang gumagawa nito. Para sa komplimentaryong plan, manu-manong gawin ang membership mula sa [Memberships](../../user-guide/administration/managing-memberships) o ipadala ang customer sa libreng checkout.
+2. Kumpirmahing active ang membership at gumagamit ng Email product.
+3. Kumpirmahing naka-link ang email membership sa site domain/provider.
+4. Gumawa ng mailbox mula sa account page ng customer o mula sa **Ultimate Multisite > Email Accounts**.
+5. Kung kinakailangan, i-edit ang talaan ng mailbox at italaga ang customer, membership, at site.
+
+Kung kailangan mo lang gumawa ng provider mailbox para sa customer at hindi kailangan ang self-service na pamamahala sa account page, maaaring sapat na ang account na ginawa ng admin. Kung gusto mong makita at mapamahalaan ito ng customer sa Ultimate Multisite, gawin din ang email membership.
+
+## Webmail SSO at Magic-Link Login {#webmail-sso-and-magic-link-login}
+
+Nagbibigay ang Webmail SSO sa mga customer ng direktang aksyong **Open webmail** mula sa account page. Kapag sinusuportahan ng active provider, humihiling ang addon ng short-lived access URL at nire-redirect ang customer papasok sa webmail nang hindi sila hinihilingang kopyahin ang mga kredensyal ng mailbox.
+
+Maaaring mag-iba-iba ang pag-uugali ng provider:
+
+* Ang mga provider na may native SSO API ay maaaring gumawa ng direktang authenticated na webmail session.
+* Ang mga provider na may suporta sa magic-link ay maaaring bumuo ng time-limited login link.
+* Dapat pa ring ipakita ng mga provider na walang suporta sa SSO o magic-link ang mga detalye ng mailbox at mga aksyon sa pamamahala ng password, ngunit walang one-click webmail button.
+
+I-enable ang webmail access para lang sa mga provider kung saan na-configure mo ang kinakailangang API credentials. Kung nawawala ang aksyon para sa isang provider, kumpirmahin muna na active, naka-configure, at sumusuporta ang provider sa mga webmail login link.
+
+## Checkout Provisioning {#checkout-provisioning}
+
+Ipinoprovision ng addon ang email **membership context** habang checkout. Itinatala nito ang provider, account limit, quota, at site domain upang makagawa ang mga customer ng sarili nilang mga pangalan ng mailbox mula sa account page pagkatapos bumili.
+
+Inirerekomendang rollout:
+
+1. I-configure ang provider at mga limitasyon ng product bago ialok ang email product.
+2. Subukan ang pagbili gamit ang staging product at kumpirmahing nagawa ang email membership.
+3. Suriin ang account page ng customer upang kumpirmahing lumalabas ang widget na **Email Accounts** para sa domain.
+4. Gumawa ng test mailbox mula sa widget.
+5. Kumpirmahin ang mga aksyon sa pagpapalit ng password at webmail bago i-enable ang flow para sa production products.
+
+Kung mabigo ang provisioning, maaari pa ring umiral ang customer account at membership habang nangangailangan ng follow-up ng administrator ang email membership o provider mailbox. Tingnan ang mga activity log ng Ultimate Multisite at ang mga log ng provider bago subukang muli.
+
+## Mga Email Forwarder ng CyberPanel {#cyberpanel-email-forwarders}
+
+Para sa mga network na sinusuportahan ng CyberPanel, nagdaragdag ang version 1.1.0 ng suporta sa email forwarder. Gumamit ng mga forwarder kapag kailangan ng mga customer ng mga address tulad ng `info@customer-domain.test` upang i-redirect ang mail sa ibang inbox nang hindi gumagawa ng buong mailbox.
+
+Bago mag-alok ng mga forwarder, kumpirmahing naka-configure at naaabot ang CyberPanel integration. Tingnan ang gabay na [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) para sa kinakailangang host, username, password, at package constants.
+
+## Changelog {#changelog}
+
+### Version 1.1.0 - Inilabas noong 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Bago: Webmail SSO at magic-link login — maa-access ng mga customer ang webmail nang direkta mula sa kanilang Account gamit ang one-click authentication.
+* Bago: Idinagdag ang functionality sa pagpapalit ng password sa widget sa pamamahala ng email Account.
+* Bago: Suporta para sa CyberPanel email forwarder.
+* Bago: Widget sa pamamahala ng email sa pahina ng Account ng customer para sa sariling-serbisyong paggawa at pamamahala ng Account.
+* Bago: Customer email Account entitlement provisioning na isinama sa daloy ng checkout.
+* Ayos: Na-update ang hook ng widget sa pahina ng Account upang gamitin ang tamang pattern ng pagpaparehistro ng UMS.
+* Ayos: Pinalitan ang Create Account form ng vanilla JS at tamang buong output na HTML document.
+* Ayos: Ginagamit na ngayon ng widget sa pamamahala ng email ang UMS currents system para sa mga pahina ng admin Account.
+* Ayos: Kasama sa form sa paggawa ng email Account ng admin ang password field at gumagamit ng Email_Account_Manager.
+* Ayos: Inalis ang per-request log spam mula sa initialization ng Email_Account_Manager.
+* Pinahusay: Sinasala na ngayon ng pahina ng Settings upang ipakita lamang ang aktibo at na-configure na mga email provider.
+
+## Mga Madalas Itanong {#frequently-asked-questions}
+
+### Maaari bang gumawa ang mga customer ng sarili nilang mga email Account? {#can-customers-create-their-own-email-accounts}
+
+Oo. Kapag ang customer ay may aktibong email membership para sa isang domain at pinapayagan ng produkto ang karagdagang mga Account, maaaring gumawa at mamahala ang mga customer ng sarili nilang mga mailbox mula sa pahina ng Account.
+
+### Sinusuportahan ba ng bawat provider ang webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Hindi. Nakadepende ang suporta sa SSO at magic-link sa aktibong email provider. Maaari pa ring suportahan ng mga provider na walang access-link API ang paggawa ng mailbox at pagpapalit ng password.
+
+### Maaari bang gumawa ang mga administrator ng mga email Account para sa mga customer? {#can-administrators-create-email-accounts-for-customers}
+
+Oo. Maaaring gumawa ang mga administrator ng mga email Account mula sa admin interface, kabilang ang pagtatakda ng paunang password kapag gumagawa ng Account. Para sa sariling-serbisyong pamamahala ng customer, tiyakin din na ang customer ay may aktibong email membership para sa domain.
+
+### Maaari ba akong mamigay ng email Account nang libre? {#can-i-give-an-email-account-away-for-free}
+
+Oo. Gumawa ng libre/zero-priced na produkto ng Email at idagdag ito bilang aktibong membership para sa customer, o hayaan ang customer na kumpletuhin ang checkout gamit ang 100% discount. Pagkatapos umiral ang email membership, maaaring gawin ng customer o ng administrator ang aktuwal na mailbox.
+
+### Bakit humihingi ng order number ang pagtatalaga ng email Account? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Hinahanap ng Membership field ang umiiral na Ultimate Multisite membership sa pamamagitan ng reference/order number nito. Kung hindi bumili ang customer ng produkto ng email at hindi ka manu-manong gumawa ng email membership, walang email membership/order na maitatalaga. Gawin muna ang email membership, pagkatapos ay gawin o italaga ang mailbox.
+
+### Pareho ba ang mga forwarder sa mga mailbox? {#are-forwarders-the-same-as-mailboxes}
+
+Hindi. Nag-iimbak ng mail ang mailbox at may mga kredensyal sa pag-login. Nire-redirect ng forwarder ang mail sa ibang address at hindi ito nagbibigay ng hiwalay na inbox.

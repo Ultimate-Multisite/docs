@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: Фільтр - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# Фільтр: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+Фільтруе, ці павінен Ultimate Multisite стварыць запіс дамена для нядаўна створанага сайта.
+
+Выкарыстоўвайце гэты фільтр, каб адключыць або адкласці аўтаматычнае стварэнне запісу дамена для сайтаў, якія выкарыстоўваюць агульны базавы дамен формы афармлення замовы, унутраны хост або дамен, якім асобна будзе кіраваць іншая інтэграцыя.
+
+## Параметры {#parameters}
+
+| Назва | Тып | Апісанне |
+|------|------|-------------|
+| $create | `bool` | Ці павінен быць створаны запіс дамена. |
+| $site | `WP_Site` | Аб’ект нядаўна створанага сайта. |
+
+### З версіі {#since}
+
+- 2.13.0
+
+### Крыніца {#source}
+
+Вызначана ў `inc/functions/domain.php`.
+
+
+## Вяртае {#returns}
+
+Булевае значэнне, якое паказвае, ці ствараць запіс дамена.

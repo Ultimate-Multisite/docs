@@ -3,28 +3,28 @@ title: Hestia Kontrolepaneel Integrasie
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Kontrolepaneel Integrasie
+# Hestia Kontrolepaneel Integrasie {#hestia-control-panel-integration}
 
 Hierdie gids verduidelik hoe om die Ultimate Multisite Hestia-integrasie te konfigureer sodat gemapte domeine in u netwerk outomaties bygevoeg (en verwyder) word as Web Domein Aliases in Hestia.
 
 - Hestia CLI verwysing: v-add-web-domain-alias / v-delete-web-domain-alias
 - Amptelike REST API dokumentasie: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Wat Dit Doen
+## Wat Dit Doen {#what-it-does}
 - Wanneer 'n domein in Ultimate Multisite gemap word, roep die integrasie die Hestia API aan om te hardloop:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Wanneer 'n domeinmapping verwyder word, hardloop dit:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Voeg opsioneel die `www.` alias by/verwyder dit, afhangende van u “Auto-create www subdomain” instelling in die Domeinmapping-instellings.
 
-## Voorvereistes
+## Voorvereistes {#prerequisites}
 - 'n Bestaande Hestia Web Domein wat reeds na u WordPress-installasie wys. Die integrasie sal aliases aan hierdie basisdomein heg.
 - Hestia API-toegang is geaktiveer. U kan autentiseer met óf 'n wagwoord óf 'n API hash/token.
 
 Verwys na Hestia se REST API dokumentasie vir die aktivering van API-toegang en autentiseringsbesonderhede:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Konfigurasie (Wizard → Integrations → Hestia)
+## Konfigurasie (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Verskaf die volgende waardes:
 
 - `WU_HESTIA_API_URL` (verpligtend)
@@ -42,16 +42,16 @@ Verskaf die volgende waardes:
 
 U kan die wizard laat hierdie konstantes in `wp-config.php` insit, of u kan dit handmatig definieer.
 
-## Opstel Verifieer
+## Opstel Verifieer {#verifying-setup}
 - In die wizard se “Testing”-stap, roep die plugin `v-list-web-domains <WU_HESTIA_ACCOUNT> json` via die API aan. 'n Suksesvolle antwoord bevestig die konektiwiteit en autentisering.
 - Nadat u 'n domein gemap het, kyk in Hestia: Web > die basisdomein > Aliases. U behoort die nuwe alias bygevoeg te sien.
 
-## Notas & Wenke
+## Notas & Wenke {#notes--tips}
 - Maak seker dat `WU_HESTIA_WEB_DOMAIN` reeds bestaan en deur `WU_HESTIA_ACCOUNT` geëdig word.
 - Indien SSL nodig is, bestuur sertifikate by Hestia. Hierdie integrasie hanteer tans slegs aliases.
 - Die plugin kan ook `www.<domein>` by/verwyder, afhangende van u Domeinmapping “www subdomain”-instelling.
 
-## Voorbeeld API Oproep (cURL)
+## Voorbeeld API Oproep (cURL) {#example-api-call-curl}
 Hieronder is 'n konsepvoorbeeld (pas aan by u omgewing). Verwys na die amptelike dokumentasie vir presiese parameters.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Vir verwydering, gebruik `cmd=v-delete-web-domain-alias` en dieselfde argumente.
 
-## Foutopsporing
+## Foutopsporing {#troubleshooting}
 - HTTP fout van API: verifieer dat `WU_HESTIA_API_URL` bereikbaar is en `/api` insluit.
 - Autentiseringsfoute: bevestig `WU_HESTIA_API_USER` en óf `WU_HESTIA_API_PASSWORD` óf `WU_HESTIA_API_HASH`.
 - “Missing account/base domain” in logboeke: verseker dat `WU_HESTIA_ACCOUNT` en `WU_HESTIA_WEB_DOMAIN` ingestel en geldig is in Hestia.
 
-## Verwysings
+## Verwysings {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI Verwysing (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

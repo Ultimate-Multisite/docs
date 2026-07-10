@@ -3,11 +3,11 @@ title: ການແປ Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ການແປ Ultimate Multisite
+# ການແປ Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite ຖືກພັດທະນາເປັນພາສາອັງກິດ ແຕ່ plugin ນີ້ສາມາດແປໄດ້ຢ່າງເຕັມທີ່ ແລະ ພວກເຮົາຍິນດີຕ້ອນຮັບການປະກອບສ່ວນແປຂອງທຸກທ່ານ.
 
-## ການແປ Core Plugin
+## ການແປ Core Plugin {#core-plugin-translations}
 
 Plugin Ultimate Multisite ຫຼັກແມ່ນໄດ້ຖືກແປຜ່ານເວທີແປພາສາຢ່າງເປັນທາງການຂອງ **WordPress.org**:
 
@@ -24,7 +24,7 @@ Plugin Ultimate Multisite ຫຼັກແມ່ນໄດ້ຖືກແປຜ່
 
 ຖ້າທ່ານຢາກເປັນບັນນາທິການແປສຳລັບພາສາຂອງທ່ານ (ສາມາດອະນຸມັດການແປໄດ້), ສາມາດຕິດຕໍ່ຜ່ານ [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## ການແປ Addon
+## ການແປ Addon {#addon-translations}
 
 Addon plugins ຈະຖືກແປເບື້ອງຕົ້ນຢູ່ທີ່:
 
@@ -32,11 +32,11 @@ Addon plugins ຈະຖືກແປເບື້ອງຕົ້ນຢູ່ທີ
 
 ການແປ addon ໃນຕອນນີ້ແມ່ນສ້າງໂດຍ AI ເພື່ອເປັນຈຸດເລີ່ມຕົ້ນ. ມັນກວມເອົາພາສາທັງໝົດທີ່ຮອງຮັບ ແຕ່ອາດມີຄຳເວົ້າທີ່ບໍ່ເປັນທຳມະຊາດ ຫຼື ມີຂໍ້ຜິດພາດບາງຢ່າງ. ພວກເຮົາຕ້ອນຮັບນັກແປທີ່ເປັນມະນຸດມາທົບທວນ ແລະ ແນະນຳການປັບປຸງເພື່ອເຮັດໃຫ້ມັນເປັນທຳມະຊາດ ແລະ ຖືກຕ້ອງກວ່າເກົ່າ.
 
-## ການແປໃນທ້ອງຖິ່ນ
+## ການແປໃນທ້ອງຖິ່ນ {#local-translations}
 
 ຖ້າທ່ານຢາກຈະສ້າງຄຳແປເອງໃນໂຄງການຂອງຕົນເອງ ແທນທີ່ຈະປະກອບສ່ວນເຂົ້າໃນລະບົບຫຼັກ, ພວກເຮົາມີສອງທາງເລືອກ:
 
-### ການໃຊ້ Poedit
+### ການໃຊ້ Poedit {#using-poedit}
 
 ທ່ານສາມາດໃຊ້ໂປຣແກຣມ desktop ຊື່ **[Poedit](https://poedit.net)** ເພື່ອແປໄຟລ໌ `.pot` ໄດ້ດັ່ງນີ້:
 
@@ -46,6 +46,6 @@ Addon plugins ຈະຖືກແປເບື້ອງຕົ້ນຢູ່ທີ
 4. ເກັບຮັກສາ -- Poedit ຈະສ້າງໄຟລ໌ `.po` ແລະ `.mo` ໃຫ້ທ່ານໂດຍອັດຕະໂນມັດ
 5. ວາງໄຟລ໌ທີ່ໄດ້ຮັບຜົນມາໄວ້ໃນໂຟເल्ດ `lang`
 
-### ການໃຊ້ Loco Translate
+### ການໃຊ້ Loco Translate {#using-loco-translate}
 
 ສ່ວນ Plugin **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** ຂອງ WordPress ອະນຸຍາດໃຫ້ທ່ານແປໂດຍກົງຈາກ admin panel ໂດຍບໍ່ຕ້ອງໃຊ້ເຄື່ອງມື desktop ເລີຍ. ມັນຈະຈັດການສ້າງ ແລະ ຄompile (compile) ໄຟລ໌ແປໃຫ້ທ່ານທັງໝົດ.

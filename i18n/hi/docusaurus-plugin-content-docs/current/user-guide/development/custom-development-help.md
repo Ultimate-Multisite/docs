@@ -3,13 +3,13 @@ title: Custom Development Help
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable से कस्टम डेवलपमेंट सहायता कैसे प्राप्त करें?
+# Codeable से कस्टम डेवलपमेंट सहायता कैसे प्राप्त करें? {#how-to-get-custom-development-help-from-codeable}
 
 कभी-कभी, हमें अपने नेटवर्क फ्लो को बिल्कुल अपनी मर्जी के अनुसार बनाने के लिए कुछ शानदार कस्टमाइज़ेशन की जरूरत होती है। अगर आप यही ढूंढ रहे हैं, तो हम [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) की सलाह देते हैं, जहाँ आप Ultimate Multisite में विशेषज्ञता रखने वाले अनुभवी डेवलपर्स पा सकते हैं।
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) एक ऐसा प्लेटफॉर्म है जो ग्राहकों को योग्य WordPress फ्रीलांस डेवलपर्स से जोड़ता है, जो किसी भी आकार के प्रोजेक्ट पर काम कर सकते हैं। उनके पास एक सावधानीपूर्वक आवेदन प्रक्रिया है जो सुनिश्चित करती है कि आपको आपके मन में जो काम है उसके लिए विशेष रूप से योग्य विशेषज्ञों से जोड़ा जाए।
 
-### Codeable में प्रोजेक्ट कैसे बनाएं?
+### Codeable में प्रोजेक्ट कैसे बनाएं? {#how-to-create-a-project-in-codeable}
 
 सबसे पहले, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) पर जाएं और **Start a Project** बटन पर क्लिक करें।
 

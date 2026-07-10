@@ -1,44 +1,44 @@
 ---
 title: Menurunkan Paket
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Menurunkan paket (v2)
+# Menurunkan paket (v2) {#downgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Menurunkan paket atau langganan adalah tindakan yang umum dilakukan klien Anda jika mereka memiliki anggaran terbatas atau merasa tidak membutuhkan banyak resource untuk menjalankan subsite mereka.
+Menurunkan paket atau langganan adalah tindakan umum yang mungkin dilakukan klien Anda jika mereka memiliki anggaran terbatas atau mereka memutuskan bahwa mereka tidak memerlukan banyak sumber daya untuk menjalankan subsite mereka.
 
-## Cara menurunkan paket
+## Cara menurunkan paket {#how-to-downgrade-a-plan}
 
-Klien Anda dapat menurunkan paket kapan saja dengan masuk ke dashboard admin subsite mereka dan mengklik **Change** di halaman akun mereka.
+Klien Anda dapat menurunkan paket mereka kapan saja dengan masuk ke dashboard admin subsite mereka dan mengklik **Change** di bawah halaman Account mereka.
 
-![Halaman akun dengan tombol Change di bawah membership](/img/admin/memberships-list.png)
+![Halaman Account pelanggan dengan kartu Your Membership dan tombol Change](/img/account-page/membership-change-button.png)
 
-Setelah mengklik tombol **Change**, pengguna/klien akan diarahkan ke halaman checkout di mana mereka dapat memilih paket yang ingin mereka gunakan sebagai pengganti langganan saat ini.
+Setelah mengklik tombol **Change**, pengguna/klien akan diarahkan ke halaman checkout tempat mereka dapat memilih paket yang ingin mereka ubah untuk langganan mereka.
 
-![Halaman checkout menampilkan pilihan paket untuk downgrade](/img/admin/memberships-list.png)
+![Halaman opsi penurunan paket di sisi pelanggan](/img/account-page/downgrade-picker.png)
 
-Dalam contoh ini, kita menurunkan paket dari **Premium** ke **Free**.
+Dalam contoh ini, kami menurunkan paket dari **Premium** ke **Free**.
 
-Untuk melanjutkan, pengguna cukup mengklik tombol **Complete Checkout**. Setelah itu, mereka akan kembali ke halaman akun yang menampilkan pesan tentang perubahan yang tertunda untuk membership mereka. Perubahan akan berlaku pada **siklus penagihan berikutnya**.
+Untuk melanjutkan, pengguna hanya perlu mengklik tombol **Complete Checkout**. Ini kemudian akan membawa mereka kembali ke halaman Account yang menampilkan pesan tentang perubahan tertunda untuk membership. Perubahan akan berlaku pada **siklus penagihan berikutnya** pelanggan.
 
-![Halaman akun menampilkan pesan perubahan membership yang tertunda](/img/admin/memberships-list.png)
+![Halaman Account yang menampilkan banner perubahan membership tertunda](/img/account-page/pending-change.png)
 
-### Apa yang terjadi ketika pengguna menurunkan paket mereka
+### Apa yang terjadi ketika pengguna menurunkan paket mereka {#what-happens-when-a-user-downgrades-their-plan}
 
-Penting untuk diketahui bahwa menurunkan paket tidak mengubah konfigurasi yang sudah ada di subsite pengguna.
+Penting untuk dicatat bahwa menurunkan paket tidak mengubah konfigurasi yang ada di subsite pengguna.
 
-Sistem tidak secara otomatis mengubah template situs karena mengubah template situs akan menghapus dan mereset subsite sepenuhnya. Ini dilakukan untuk menghindari kehilangan data yang tidak perlu. Jadi ruang disk, tema, plugin, dan lainnya akan tetap utuh kecuali untuk post.
+Ini tidak secara otomatis mengubah template site karena mengubah template site akan sepenuhnya menghapus dan mereset subsite. Ini untuk menghindari kehilangan data yang tidak perlu. Jadi ruang disk, theme, plugin, dll. akan tetap utuh kecuali untuk posts.
 
-Kami memahami bahwa kekhawatiran utama Anda adalah batasan dan kuota yang Anda tetapkan di setiap paket, tetapi kami harus mempertimbangkan dampak yang akan terjadi pada subsite pengguna jika kami menghapus atau mengubah konfigurasinya.
+Kami memahami bahwa kekhawatiran utama Anda adalah batas dan kuota yang Anda tetapkan di bawah setiap paket, tetapi kami harus mempertimbangkan kerusakan yang akan terjadi pada subsite pengguna jika kami menghapus atau mengubah konfigurasi apa pun di dalamnya.
 
-Untuk post yang melebihi batas yang ditetapkan pada paket, Anda memiliki 3 pilihan berbeda: **Keep the posts as it** *,* **Move the posts to trash** *,* atau **Move the posts to draft** *.* Anda dapat mengonfigurasi ini di pengaturan Ultimate Multisite.
+Untuk posts yang melebihi batas yang ditetapkan pada paket, Anda memiliki 3 opsi berbeda: **Keep the posts as it** *,* **Move the posts to trash** *,* atau **Move the posts to draft** *.* Anda dapat mengonfigurasi ini di bawah pengaturan Ultimate Multisite.
 
-![Opsi batas post terlampaui di pengaturan Ultimate Multisite](/img/config/settings-sites.png)
+![Halaman Network Admin Settings Sites yang menampilkan opsi perilaku post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Apa yang terjadi dengan pembayaran
+### Apa yang terjadi pada pembayaran {#what-happens-to-the-payment}
 
-Di versi 2.0, sistem tidak lagi memerlukan penyesuaian pembayaran dalam hal proration.
+Di versi 2.0, ini tidak lagi memerlukan penyesuaian apa pun pada pembayaran dalam hal prorata.
 
-Ini karena sistem akan menunggu membership yang ada untuk **menyelesaikan siklus penagihannya** sebelum paket/membership baru berlaku. Jumlah tagihan baru untuk membership baru akan otomatis diterapkan dan ditagihkan pada siklus penagihan berikutnya.
+Ini karena sistem akan menunggu membership yang ada untuk **menyelesaikan siklus penagihannya sebelum** paket/membership baru berlaku. Jumlah penagihan baru untuk membership baru akan secara otomatis diterapkan dan ditagihkan pada siklus penagihan berikutnya.

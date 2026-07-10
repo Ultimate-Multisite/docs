@@ -1,58 +1,58 @@
 ---
-title: REST API चा परिचय
+title: REST API आढावा
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API संदर्भ
+# REST API संदर्भ {#rest-api-reference}
 
-## मूलभूत कॉन्फिगरेशन (Base Configuration)
+## मूलभूत कॉन्फिगरेशन {#base-configuration}
 
-**बेस URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key आणि Secret (HTTP Basic Auth किंवा URL Parameters)
+**मूलभूत URL:** `{site_url}/wp-json/wu/v2/`
+**प्रमाणीकरण:** API Key आणि Secret (HTTP Basic Auth किंवा URL पॅरामीटर्स)
 
-## Authentication
+## प्रमाणीकरण {#authentication}
 
-### API सक्षम करा (Enable API)
+### API सक्षम करा {#enable-api}
 ```php
-// Ultimate Multisite सेटिंग्जमध्ये किंवा प्रोग्रामॅटिकली API सक्षम करा
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API क्रेडेंशियल्स मिळवा (Get API Credentials)
+### API क्रेडेन्शियल्स मिळवा {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication पद्धती (Authentication Methods)
+### प्रमाणीकरण पद्धती {#authentication-methods}
 
 **HTTP Basic Auth (शिफारस केलेले):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL पॅरामीटर्स:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## मुख्य Endpoints (Core Endpoints)
+## मुख्य एंडपॉइंट्स {#core-endpoints}
 
-### १. Customers API
+### 1. ग्राहक API {#1-customers-api}
 
-**Base Route:** `/customers`
+**मूलभूत मार्ग:** `/customers`
 
-**सर्व ग्राहक मिळवा (Get All Customers)**
+**सर्व ग्राहक मिळवा**
 ```http
 GET /wu/v2/customers
 ```
 
-**एक विशिष्ट ग्राहक मिळवा (Get Single Customer)**
+**एक ग्राहक मिळवा**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ग्राहक तयार करा (Create Customer)**
+**ग्राहक तयार करा**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**ग्राहक अपडेट करा (Update Customer)**
+**ग्राहक अद्ययावत करा**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP ग्राहक नोट्स"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**ग्राहक हटवा (Delete Customer)**
+**ग्राहक हटवा**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### २. Sites API
+### 2. साइट्स API {#2-sites-api}
 
-**Base Route:** `/sites`
+**मूलभूत मार्ग:** `/sites`
 
-**साइट तयार करा (Create Site)**
+**साइट तयार करा**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "माझी नवीन साइट",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### ३. Memberships API
+### 3. सदस्यत्वे API {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**मूलभूत मार्ग:** `/memberships`
 
-**सदस्यता तयार करा (Create Membership)**
+**सदस्यत्व तयार करा**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### ४. Products API
+### 4. उत्पादने API {#4-products-api}
 
-**Base Route:** `/products`
+**मूलभूत मार्ग:** `/products`
 
-**सर्व उत्पादने मिळवा (Get All Products)**
+**सर्व उत्पादने मिळवा**
 ```http
 GET /wu/v2/products
 ```
 
-### ५. Payments API
+### 5. देयके API {#5-payments-api}
 
-**Base Route:** `/payments`
+**मूलभूत मार्ग:** `/payments`
 
-**पayment तयार करा (Create Payment)**
+**देयक तयार करा**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### ६. Domains API
+### 6. डोमेन्स API {#6-domains-api}
 
-**Base Route:** `/domains`
+**मूलभूत मार्ग:** `/domains`
 
-**डोमेन मॅप करा (Map Domain)**
+**डोमेन मॅप करा**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## नोंदणी एंडपॉइंट {#registration-endpoint}
 
-`/register` endpoint संपूर्ण चेकआउट/नोंदणी प्रक्रिया (checkout/registration flow) प्रदान करतो:
+`/register` एंडपॉइंट संपूर्ण checkout/नोंदणी प्रवाह पुरवतो:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "माझी नवीन साइट",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**प्रतिसाद:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## त्रुटी प्रतिसाद (Error Responses)
+## सार्वभौम भाडेकरू एंडपॉइंट्स {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 अशा इंटिग्रेशन्ससाठी सार्वभौम भाडेकरू REST कव्हरेज जोडते, जे विलग भाडेकरू प्रोव्हिजन, तपासणी किंवा पडताळणी करतात.
+
+अचूक विनंती पेलोड सक्षम केलेल्या होस्ट क्षमतेवर अवलंबून असतो, परंतु इंटिग्रेशन्सनी या एंडपॉइंट गटांची अपेक्षा करावी:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+भाडेकरू रजिस्ट्री, डेटाबेस, फाइलसिस्टम आणि रूटिंग स्थिती तयार करण्यासाठी bootstrap एंडपॉइंट वापरा. उत्पादन ट्रॅफिक स्विच करण्यापूर्वी मायग्रेशन स्थिती आणि पडताळणी एंडपॉइंट्स वापरा. सार्वभौम टीअरडाउनसाठी deletion एंडपॉइंट वापरा, जेणेकरून addon cleanup प्रवाहाद्वारे डेटाबेस क्रेडेन्शियल्स काढली जातील.
+
+सामान्य मायग्रेशन स्थिती प्रतिसादांमध्ये समाविष्ट असते:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` ला प्री-लाँच ब्लॉकर म्हणून माना. पडताळणी तपशील तपासा, डेटाबेस होस्ट बाइंडिंग, रांग, वापरकर्ता प्रोव्हिजनिंग किंवा रूटिंग समस्या दुरुस्त करा, नंतर पुन्हा पडताळणी करा.
+
+## त्रुटी प्रतिसाद {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "अवैध पॅरामीटर मूल्य (Invalid parameter value)",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "अवैध ईमेल स्वरूप (Invalid email format)"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Pagination आणि Filtering
+## पृष्ठांकन आणि फिल्टरिंग {#pagination-and-filtering}
 
-**Query Parameters:**
+**क्वेरी पॅरामीटर्स:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-सामान्य पॅरामीटर्स (Common parameters):
-- `per_page` - प्रति पृष्ठ आयटम (Items per page) (डीफॉल्ट: 20, कमाल: 100)
-- `page` - पृष्ठ क्रमांक (Page number)
-- `search` - शोध संज्ञा (Search term)
-- `orderby` - क्रमवारी लावण्यासाठी फील्ड (Sort field)
-- `order` - क्रमवारी दिशा (Sort direction) (asc/desc)
-- `status` - status नुसार फिल्टर करा (Filter by status)
-- `date_created` - तारखेच्या श्रेणीनुसार फिल्टर करा (Filter by date range)
+सामान्य पॅरामीटर्स:
+- `per_page` - प्रति पृष्ठ आयटम (डीफॉल्ट: 20, कमाल: 100)
+- `page` - पृष्ठ क्रमांक
+- `search` - शोध संज्ञा
+- `orderby` - क्रमवारी फील्ड
+- `order` - क्रमवारी दिशा (asc/desc)
+- `status` - स्थितीनुसार फिल्टर करा
+- `date_created` - तारीख श्रेणीनुसार फिल्टर करा

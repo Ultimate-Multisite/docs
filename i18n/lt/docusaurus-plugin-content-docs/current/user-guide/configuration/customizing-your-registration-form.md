@@ -1,152 +1,156 @@
 ---
-title: Jūsų registracijos formos personalizavimas
+title: Jūsų registracijos formos tinkinimas
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Jūsų Registracijos Formų Pridauginimas
+# Registracijos formos tinkinimas {#customizing-your-registration-form}
 
-Savo tinklo puslapiai unikalius padaryti vis kitose WordPress platformos buvusiose SaaS sistemose, Ultimate Multisite leidžia jums pritaikyti savo registracijos ir pranešimo puslapius naudojant mūsų **Checkout Forms** funkciją.
+Kad jūsų tinklas atrodytų išskirtinai tarp visų kitų SaaS, sukurtų WordPress platformoje, Ultimate Multisite leidžia tinkinti registracijos ir prisijungimo puslapius naudojant mūsų **Atsiskaitymo formų** funkciją.
 
-Nors jos yra lengvas ir fleksibilas būdas eksperimentuoti su skirtingais metodais, kai bandomas pasiekti naujus klientus, jos daugiausiai naudingos yra kurti personalizuotus registracijos formus. Šis straipsnis tiksluoja jums parodyti, kaip tai padaryti.
+Nors jos yra paprastas ir lankstus būdas eksperimentuoti su skirtingais metodais siekiant pritraukti naujų klientų, dažniausiai jos naudojamos suasmenintoms registracijos formoms kurti. Šio straipsnio tikslas – parodyti, kaip galite tai padaryti.
 
-## Pranešimo ir registracijos puslapiai:
+## Prisijungimo ir registracijos puslapiai: {#login-and-registration-pages}
 
-Ultimate Multisite įdalius instalavimu automatiškai sukuria jūsų pagrindiniame puslapyje pritaikomus loginimo ir registracijos puslapius. Jūs galite pakeisti šiuos pagrindinius puslapis bet kuriuo metu eikiant į savo puslapį **Ultimate Multisite > Settings > Login & Registration**.
+Įdiegus Ultimate Multisite, jis automatiškai sukuria pasirinktinius prisijungimo ir registracijos puslapius jūsų pagrindinėje svetainėje. Šiuos numatytuosius puslapius galite bet kada pakeisti nuėję į **Ultimate Multisite > Nustatymai > Prisijungimas ir registracija** puslapį.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Prisijungimo ir registracijos nustatymų puslapis](/img/config/settings-general.png)
 
-Štai visas vaizdas loginimo ir registracijos nustatymų puslapyje:
+Štai visas prisijungimo ir registracijos nustatymų puslapio vaizdas:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Visas prisijungimo ir registracijos nustatymų puslapis](/img/config/settings-login-registration-full.png)
 
-Patikrinkime kiekvieną jūsų pasirinkimą, kurį galite pritaikyti **Login & Registration** puslapyje:
+Pažvelkime į kiekvieną parinktį, kurią galite tinkinti **Prisijungimo ir registracijos** puslapyje:
 
-  * **Enable registration (Įjungti registraciją):** Šis nustatymas įjunkia arba išjungia registraciją jūsų tinklyje. Jei jis yra išjungtas, jūsų klientai nebus galini registruotis ir prekių pasirašyti.
+  * **Įjungti registraciją:** Ši parinktis įjungs arba išjungs registraciją jūsų tinkle. Jei ji išjungta, jūsų klientai negalės registruotis ir prenumeruoti jūsų produktų.
 
-  * **Enable email verification (Įjungti el. pašto patvirtinimą):** Jei šis nustatymas įjunkas, klientai, kurie pasirašys už nemokamą planą arba mokamą planą su mokymu laikotarpiu, gaus patvirtinimo el. laišką ir turės paspausti patvirtinimo nuorodą savo svetainų kūrimui.
+  * **Įjungti el. pašto patvirtinimą:** Jei ši parinktis įjungta, klientai, užsisakę nemokamą planą arba mokamą planą su bandomuoju laikotarpiu, gaus patvirtinimo el. laišką ir turės spustelėti patvirtinimo nuorodą, kad jų svetainės būtų sukurtos.
 
-* **Pagusa registracijos puslapis:** Tai yra pagrindinis puslapis registracijai. Šį puslapį reikia publikuoti ant jūsų svetainės ir turėti registracijos formą (kurios taip pat žinoma kaip kasos forma) – kurje jūsų klientai prekių užsiprenima. Jūs galite sukurti kitus registracijos puslapis ir kasos formas, kiek norite, bet suspektykite, kad įregistruota kasos forma turi būti įdėta kaip shortcode ant registracijos puslapio, kitaip ji nepasirodys.
+  * **Numatytasis registracijos puslapis:** Tai numatytasis registracijos puslapis. Šis puslapis turi būti paskelbtas jūsų svetainėje ir turėti registracijos formą (taip pat žinomą kaip atsiskaitymo forma) – vietą, kurioje jūsų klientai prenumeruos jūsų produktus. Galite sukurti tiek registracijos puslapių ir atsiskaitymo formų, kiek norite, tik nepamirškite įdėti atsiskaitymo formos trumpojo kodo registracijos puslapyje, kitaip ji nebus rodoma.
 
-* **Naudoti kiti loginimo puslapio:** Šis pasirinkimas leidžia naudoti pritaikytą loginimo puslapį, kuris bus kitas nei standartinis wp-login.php puslapis. Jei šią funkciją įjunkite, galite nustatyti, kuriam puslapui naudoti loginą (dešinėje pusėje yra „Default login page“ opsijos).
+  * **Naudoti pasirinktinį prisijungimo puslapį:** Ši parinktis leidžia naudoti tinkintą prisijungimo puslapį vietoje numatytojo wp-login.php puslapio. Jei ši parinktis įjungta, galite pasirinkti, kuris puslapis bus naudojamas prisijungimui, parinktyje **Numatytasis prisijungimo puslapis** (iškart žemiau).
 
-* **Slaptykite originalų loginimo URL (wp-login.php):** Jei norite sukleisti originalų loginimo URL, galite įjungti šią funkciją. Tai naudinga, kad būtų užtrinta brute-force atakų. Jei ši opsinė bus įjungta, Ultimate Multisite rodo 404 erorą, kai vartotojas bando pasiekti originalų wp-login.php linką.
+  * **Paslėpti originalų prisijungimo URL (wp-login.php)** : Jei norite paslėpti originalų prisijungimo URL, galite įjungti šią parinktį. Tai naudinga siekiant išvengti bruteforce atakų. Jei ši parinktis įjungta, Ultimate Multisite rodys 404 klaidą, kai naudotojas bandys pasiekti originalią wp-login.php nuorodą
 
-* **Prisijungti svetainę laiku (synchronous site publication):** Po to, kai klientas užsiprenima prekių tinkluose, nauji laukiamasis puslapis turi būti konvertuotas į realų tinklo puslapį. Publikavimo procesas vyksta asinkroniai per Job Queue. Įjunkite šią opsinę, kad praleistumėte publikavimą tą pačiu pasirinkimu kaip ir registraciją.
+  * **Priverstinis sinchroninis svetainės publikavimas:** Kai klientas užsisako produktą tinkle, nauja laukianti svetainė turi būti paversta tikra tinklo svetaine. Publikavimo procesas vyksta per Job Queue, asinchroniškai. Įjunkite šią parinktį, kad publikavimas įvyktų toje pačioje užklausoje kaip ir registracija.
 
-Dabar pamatome kitus variantus, kurie vis dar yra susiję su loginimo ir registracijos procesais. Jūs rasite juos po **Kiti opsijos** (Other options) ant toje samej loginimo ir registracijos puslapio:
+Dabar pažiūrėkime kitas parinktis, kurios vis dar susijusios su prisijungimo ir registracijos procesu. Jos yra tame pačiame Prisijungimo ir registracijos puslapyje, iškart po **Kitos parinktys**:
 
-* **Pagrindinė vaidmuo:** Tai yra vaidmuo, kurį jūsų klientai turės savo svetainėje po registracijos procesui.
+  * **Numatytasis vaidmuo:** Tai vaidmuo, kurį jūsų klientai turės savo svetainėje po registracijos proceso.
 
-* **Įjunkite Jumper:** Leina naudoti Jumper skiltyvę admin sąraube. Jumper leidžia administratoriams greitai perėjti į Ultimate Multisite ekranus, tinklo objektus ir kitus palaikomi vietos be visų meniu peržiūros. Išjunkite jį, jei norite sužudinti šią greitą navigacijos įrangą admin sąraube.
+  * **Įjungti Jumper:** Įjungia Jumper spartųjį klavišą administravimo srityje. Jumper leidžia administratoriams greitai pereiti į Ultimate Multisite ekranus, tinklo objektus ir kitas palaikomas paskirties vietas nenaršant per kiekvieną meniu. Išjunkite, jei norite paslėpti šį greitos navigacijos įrankį administravimo sąsajoje.
 
-* **Pridėkite vartotojus į pagrindinį svetainę:** Įjungdami šią funkciją, jūs pridėsite vartotoją ir prie tinklo pagrindinės svetainės po registracijos procesui. Jei įjunkite šią funkciją, tiesiai poje pasirodys pasirinkimas nustatyti **pagrindinę vaidmenį** (default role) šiem vartotojams jūsų svetainėje.
+  * **Taip pat pridėti naudotojus prie pagrindinės svetainės:** Įjungus šią parinktį, po registracijos proceso naudotojas taip pat bus pridėtas prie pagrindinės jūsų tinklo svetainės. Jei įjungsite šią parinktį, iškart žemiau taip pat pasirodys parinktis nustatyti šių naudotojų **numatytąjį vaidmenį** jūsų svetainėje.
 
-* **Įjunkite daug paskyrų:** Leiskite vartotojams turėti paskyras skirtingose tinklo svetainėse su vienodaliu el. pašto adresais. Jei šis pasirinkimas yra išjungtas, jūsų klientai nebus galini registruotis kitose tinklo svetainėse su vienodaliu el. pašto adresu.
+  * **Įjungti kelias paskyras:** Leiskite naudotojams turėti paskyras skirtingose jūsų tinklo svetainėse su tuo pačiu el. pašto adresu. Jei ši parinktis išjungta, jūsų klientai negalės sukurti paskyros kitose jūsų tinkle veikiančiose svetainėse naudodami tą patį el. pašto adresą.
 
-Ir tai yra visi nustatymai susiję su pradinimu ir registracija, kuriuos galite pakeisti! Neleidžkit pasakyti – išsaugokite savo nustatymus po to, kai baigsite juos redaguoti.
+Ir tai visos su prisijungimu ir registracija susijusios parinktys, kurias galite tinkinti! Nepamirškite išsaugoti nustatymų, kai baigsite juos redaguoti.
 
-## Daug slapta registracijos formų naudojimas:
+## Kelių registracijos formų naudojimas: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 siūlo skaitmenio kaso formų redaktorią, kuris leidžia sukurti tiek formų, kiek norite, su skirtingais laukais ir pasiūlymais produktų ir kitomis dalyklios.
+Ultimate Multisite 2.0 siūlo atsiskaitymo formų redaktorių, kuris leidžia sukurti tiek formų, kiek norite, su skirtingais laukais, siūlomais produktais ir pan.
 
-Visi pradiniai ir registracijos puslapiai yra įtraukti trumpiais kodais (shortcodes): **[wu_login_form]** pradinio puslapioje ir **[wu_checkout]** registracijos puslapioje. Jūs galite further sužudinti registracijos puslapį, kurdami arba sukurdami kaso formus.
+Tiek prisijungimo, tiek registracijos puslapiai įterpiami naudojant trumpuosius kodus: **[wu_login_form]** prisijungimo puslapyje ir**[wu_checkout]** registracijos puslapiui. Registracijos puslapį galite papildomai tinkinti kurdami atsiskaitymo formas.
 
-Sukurti šią funkciją, eikite į meniu **Checkout Forms**, esantį kairėje skelbimose (side-bar).
+Norėdami pasiekti šią funkciją, eikite į **Atsiskaitymo formos** meniu kairėje šoninėje juostoje.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Atsiskaitymo formų meniu šoninėje juostoje](/img/config/checkout-forms-list.png)
 
-Šiame puslapyje pakaite visus jūsų turimus kaso formas.
+Šiame puslapyje galite matyti visas turimas atsiskaitymo formas.
 
-Jei norite sukurti naują, atsirinkite **Add Checkout Form** (Pridėti kaso formą) viršuje puslapio.
+Jei norite sukurti naują, tiesiog spustelėkite **Pridėti atsiskaitymo formą** puslapio viršuje.
 
-Galite vieną iš šių trijų jūsų pradžios variantų: vienas žingsnis, daug žingmenų ar laukelis. Tada paspauskite, kad **Pasiektum Editorį**.
+Galite pasirinkti vieną iš šių trijų parinkčių kaip pradžios tašką: vieno žingsnio, kelių žingsnių arba tuščią. Tada spustelėkite **Eiti į redaktorių**.
 
-![Pridėti kasą formą su vienu žingsniu, daug žingmenų arba laukeliu](/img/config/checkout-forms-list.png)
+![Pridėti atsiskaitymo formą su vieno žingsnio, kelių žingsnių arba tuščiomis parinktimis](/img/config/checkout-forms-list.png)
 
-Alternatyviai galite redaguoti ar duplikuoti jau turimas formas, paspaudus ant jos pavadinimo nurodytus variantus. Tai taip pat leidžia jums kopijuoti formos shortcode arba ištrinti formą.
+Arba galite redaguoti ar dubliuoti jau turimas formas spustelėdami parinktis po jų pavadinimu. Ten taip pat rasite parinktis nukopijuoti formos trumpąjį kodą arba ištrinti formą.
 
-![Atsiliepimai dėl veiksmų su kasą forma redaguojant, duplikuojant ir trinkant](/img/config/checkout-form-hover-actions.png)
+![Atsiskaitymo formos užvedimo veiksmai su redagavimu, dubliavimu ir ištrynimu](/img/config/checkout-form-hover-actions.png)
 
-Jei pasirinksite vieną žingsnį ar daug žingmenų, kasą formą jau bus pre-pildyta pagrindiniais žingmenimis, kad ji galėtų veikti. Tada, jei norite, galite pridėti papildomus žingmenis.
+Jei pasirinksite vieno žingsnio arba kelių žingsnių parinktį, atsiskaitymo forma jau bus iš anksto užpildyta pagrindiniais žingsniais, reikalingais jai veikti. Tada, jei norėsite, galėsite pridėti papildomų žingsnių.
 
-### Kasą formos redaguoti:
+### Atsiskaitymo formos redagavimas: {#editing-a-checkout-form}
 
-Kaip minėjome anksčiau, galite sukurti kasas formos skirtingoms tikslams. Šiuose pavyzdžiu busime dirbti su registracijos forma.
+Kaip minėjome anksčiau, galite kurti atsiskaitymo formas skirtingiems tikslams. Šiame pavyzdyje dirbsime su registracijos forma.
 
-Po nurodymo į kasą formas editorį pateikite jūsų formai pavadinimą (jis bus naudojamas tik vidiniam referavimui) ir slug'ą (naudojamas shortcode'ų kūrimui, pavyzdžiui).
+Nuėję į atsiskaitymo formos redaktorių, suteikite savo formai pavadinimą (jis bus naudojamas tik vidinėms nuorodoms) ir slug (naudojamą, pavyzdžiui, trumpiesiems kodams kurti).
 
-![Kasos formas redaguojimo langas su laukais pavadinimas ir slug](/img/config/checkout-form-editor.png)
+![Atsiskaitymo formos redaktorius su pavadinimo ir slug laukais](/img/config/checkout-form-name-slug.png)
 
-Formos sudaro žingmenys ir laukai. Galite pridėti naują žingmenį paspaudus **Pridėti naują kasą žingmenį**.
+Formos sudarytos iš žingsnių ir laukų. Naują žingsnį galite pridėti spustelėję **Pridėti naują atsiskaitymo žingsnį**.
 
-![Klausa Pridėti naują kasą žingmenį mygtukas](/img/config/checkout-form-add-step.png)
+![Mygtukas Pridėti naują atsiskaitymo žingsnį](/img/config/checkout-form-add-step.png)
 
-Viename lango pirmaje vieto pasirinkite jūsų formos žingmenį turinį. Pateikite jam ID, pavadinimą ir aprašymą. Šie dalykai daugiausiai naudojami vidiniam tikslui.
+Pirmajame modalinio lango skirtuke užpildykite savo formos žingsnio turinį. Suteikite jam ID, pavadinimą ir aprašymą. Šie elementai dažniausiai naudojami viduje.
 
-![Kasos žingmenų turinio vieta su ID, pavadinimu ir aprašymu](/img/config/checkout-form-step-content.png)
+![Atsiskaitymo žingsnio turinio skirtukas su ID, pavadinimu ir aprašymu](/img/config/checkout-form-step-content.png)
 
-Tada nustatykite žingmenio matomumą. Galite pasirinkti tarp **Visada rodyti**, **Rodyti tik prisijungę vartotojams** arba **Rodyti tik nematems**.
+Toliau nustatykite žingsnio matomumą. Galite rinktis iš **Visada rodyti**, **Rodyti tik prisijungusiems naudotojams** arba **Rodyti tik svečiams**.
 
-![Opcionai matyti žingsnio stili](/img/config/checkout-form-step-style.png)
+![Atsiskaitymo žingsnio matomumo parinktys](/img/config/checkout-form-step-visibility.png)
 
-Laau, nustatykite žingsnio stilą. Tai yra valstybiniai laukai (jūs galite juos neįdėti).
+Galiausiai sukonfigūruokite žingsnio stilių. Tai neprivalomi laukai.
 
-![Žingsnio stiliai konfigūracija](/img/config/checkout-form-step-style.png)
+![Atsiskaitymo žingsnio stiliaus konfigūracija](/img/config/checkout-form-step-style.png)
 
-Dabar atvykime prie pridėjimo laukų mūsų pirmam žingui. Atidarykite, kad **Pridėti naują lauką** ir pasirinkite, kokio tipą sekcijos norite naudoti.
+Dabar laikas pridėti laukų prie mūsų pirmojo žingsnio. Tiesiog spustelėkite **Pridėti naują lauką** ir pasirinkite norimo skyriaus tipą.
 
-![Pridėti naują lauką mygtukas](/img/config/checkout-form-step-with-fields.png)![Laukų tipų pasirinkimo 드롭다운](/img/config/checkout-form-field-type-dropdown.png)
+![Mygtukas Pridėti naują lauką](/img/config/checkout-form-add-field-button.png)![Lauko tipo pasirinkimo išskleidžiamasis sąrašas](/img/config/checkout-form-field-type-dropdown.png)
 
-Kiekvienam laikui yra skirtingi parametrai, kuriuos reikia užpildyti. Šiuo metu mes pasirinksimos **Username** lauką.
+Kiekvienas laukas turi skirtingus parametrus, kuriuos reikia užpildyti. Šiam pirmajam įrašui pasirinksime lauką **Naudotojo vardas**.
 
-![Username lauko konfigūracija](/img/config/checkout-form-username-content.png)![Username lauko parametrai](/img/config/checkout-form-username-visibility.png)![Username lauko papildomi nustatymai](/img/config/checkout-form-username-style.png)
+![Naudotojo vardo lauko konfigūracija](/img/config/checkout-form-username-content.png)![Naudotojo vardo lauko parametrai](/img/config/checkout-form-username-visibility.png)![Papildomi naudotojo vardo lauko nustatymai](/img/config/checkout-form-username-style.png)
 
-Jūs galite pridėti tiek žingsnių, tiek laukų, kiek jums reikia. Jei norite parodyti savo produktus, kad klientai galėtų pasirinkti vieną, naudokite lauką **Pricing Table**. Jei norite leisti jūsų klientams pasirinkti šaltinį (template), pridėkite lauką **Template Selection**. Ir taip weiter.
+Galite pridėti tiek žingsnių ir laukų, kiek reikia. Norėdami rodyti savo produktus, kad klientai galėtų pasirinkti vieną, naudokite lauką Kainų lentelė. Jei norite leisti klientams pasirinkti šabloną, pridėkite lauką Šablono pasirinkimas. Ir taip toliau.
 
-_**Pastaba:** Jei pateiksite produktą po to, kai kursite savo checkout formą, jums reikės pridėti tą produktą į Pricing Table sekciją. Jei jį nepridėsite, produktas nepasirodys jūsų klientams registracijos pusėje._
+![Atsiskaitymo formos redaktorius su šablono pasirinkimo lauku](/img/config/checkout-form-with-template-field.png)
 
-_**Pastaba 2:** username, email, password, site title, site URL, order summary, payment ir submit mygtukai yra privalomi laukai, kad sukurtingumui checkout formos reikėtų._
+_**Pastaba:** Jei sukuriate produktą po to, kai sukūrėte atsiskaitymo formą, turėsite pridėti produktą Kainų lentelės skyriuje. Jei jo nepridėsite, produktas nebus rodomas jūsų klientams registracijos puslapyje._
 
-Kol dar workate prie savo checkout formos, galite visada naudoti **Preview** mygtuką, kad pamatytumėte, kaip jūsų klientai matys formą. Galite taip pat alternatyvų pasirinkti – peržiūrėti kaip esamasis vartotojas arba kaip nuolatinis asmuo (visitor).
+_**Pastaba 2:** naudotojo vardas, el. paštas, slaptažodis, svetainės pavadinimas, svetainės URL, užsakymo suvestinė, mokėjimas ir pateikimo mygtukas yra privalomi laukai norint sukurti atsiskaitymo formą._
 
-Ostatei,je **Advanced Options** pusite nustatyti pranešimą „Ačiū“ (Thank You) puslapyje, pridėti skriptus, kurie matros konversijas, pridėti kustominį CSS į savo užsakymo formą arba reikalauti ją tik tietymoms šalims.
+Dirbdami su savo atsiskaitymo forma, visada galite naudoti mygtuką Peržiūra, kad pamatytumėte, kaip jūsų klientai matys formą. Taip pat galite perjungti peržiūrą kaip esamas naudotojas arba lankytojas.
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+![Peržiūros mygtukas atsiskaitymo formos redaktoriuje](/img/config/checkout-form-preview-button.png)![Atsiskaitymo formos peržiūra kaip lankytojas arba esamas naudotojas](/img/config/checkout-form-preview-modal.png)
 
-Jau galite nustatyti ar išjungti savo užsakymo formą per šį laisvą pasirinkimą dešinėje kolonoje arba nepanaudoti ją permanentiškai.
+Galiausiai skiltyje **Išplėstinės parinktys** galite sukonfigūruoti pranešimą **Ačiū** puslapiui, pridėti fragmentų konversijoms stebėti, pridėti pasirinktinį CSS prie savo atsiskaitymo formos arba apriboti ją tam tikroms šalims.
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Išplėstinės parinktys su Ačiū puslapiu, konversijų stebėjimu ir pasirinktiniu CSS](/img/config/checkout-form-advanced.png)
 
-Neužakite jūsų užsakymo formos!
+Taip pat galite rankiniu būdu įjungti arba išjungti savo atsiskaitymo formą perjungdami šią parinktį dešiniajame stulpelyje arba visam laikui ištrinti formą.
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Aktyvumo perjungiklis ir atsiskaitymo formos ištrynimo parinktis](/img/config/checkout-form-active.png)
 
-Jums, kad gautumėte jūsų formos shortcode, paspauskite **Generate Shortcode** ir nukopijuokite rezultatą, kuris rodomas modala langelyje.
+Nepamirškite išsaugoti savo atsiskaitymo formos!
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Mygtukas Išsaugoti atsiskaitymo formą](/img/config/checkout-form-save.png)
 
-_**Pastaba:** Jums reikės pridėti šį shortcode į savo registracijos puslapį, kad jis būtų pridėtas prie jūsų užsakymo formos._
+Norėdami gauti savo formos trumpąjį kodą, spustelėkite **Generuoti trumpąjį kodą** ir nukopijuokite modaliniame lange parodytą rezultatą.
 
-## Prekės ir šablonų pasirinkimas per URL parametrus:
+![Modalinis langas Generuoti trumpąjį kodą su kopijuotinu trumpuoju kodu](/img/config/checkout-form-editor.png)
 
-Jei norite sukurti individualizuotas kainos lentelges savo produktams ir iš anksto pasirinkti už sakymo formą, kurį vartotojas pasirinks iš jūsų kainos lentelės ar šablonų puslapio, galite naudoti URL parametrus.
+_**Pastaba:** Turėsite pridėti šį trumpąjį kodą į savo registracijos puslapį, kad ši atsiskaitymo forma būtų į jį pridėta._
 
-### **Planams:**
+## Produktų ir šablonų išankstinis pasirinkimas naudojant URL parametrus: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Eikite į **Ultimate Multisite > Products > Select a plan**. Turėtumėte pamatyti mygtuką **Click to copy Shareable Link** virš puslapio. Tai yra linkas, kurį galite naudoti, kad iš anksto pasirinkotumėte šį konkretų planą savo užsakymo formoje.
+Jei norite sukurti pritaikytas kainų lenteles savo produktams ir atsiskaitymo formoje iš anksto pasirinkti produktą arba šabloną, kurį jūsų klientas pasirenka iš jūsų kainų lentelės arba šablonų puslapio, tam galite naudoti URL parametrus.
 
-![Product page with shareable link button](/img/config/products-list.png)
+### **Planams:** {#for-plans}
 
-Pagalba, šis pasidalinamas linki veikia tik **Planams**. Pasidalinami linkai negalite naudoti paketams ar paslaugoms.
+Eikite į **Ultimate Multisite > Produktai > Pasirinkite planą**. Puslapio viršuje turėtumėte matyti mygtuką **Spustelėkite, kad nukopijuotumėte bendrinamą nuorodą**. Tai nuoroda, kurią galite naudoti norėdami iš anksto pasirinkti šį konkretų planą savo atsiskaitymo formoje.
 
-### Templatui:
+![Produkto puslapis su bendrinamos nuorodos mygtuku](/img/config/products-list.png)
 
-Jei norite iš anksto pasirinkti svetainės šaltinius (templates) savo užsakymo formoje, galite naudoti parametrai: **?template_id=X** jūsų registracijos puslapio URL adresui. „X“ reikšmę reikia pakeisti **svetainės şaltinio ID numeriu**. Šį numerį galite gauti eiti į **Ultimate Multisite > Sites**.
+Atkreipkite dėmesį, kad ši bendrinama nuoroda galioja tik **Planams**. Negalite naudoti bendrinamų nuorodų paketams ar paslaugoms.
 
-Spauskite **Manage** (Tvarkyti) tiesiog po tą svetainės šaltiniu, kurį norite naudoti. Jūs pamatysITE SITE ID numerį. Nors naudokite šį numerį tik šiam specifiniam svetainės şaltiniui, kad jis būtų iš anksto pasirinktas jūsų užsakymo formoje. Mums šiuo atveju URL parametras bus **?template_id=2**.
+### Šablonams: {#for-templates}
 
-![Svetainų sąrašas rodo svetainės šaltinio ID](/img/config/site-templates-list.png)
+Jei norite iš anksto pasirinkti svetainės šablonus savo atsiskaitymo formoje, savo registracijos puslapio URL galite naudoti parametrą: **?template_id=X**. „X“ reikia pakeisti **svetainės šablono ID numeriu**. Norėdami gauti šį numerį, eikite į **Ultimate Multisite > Svetainės**.
 
-Patvarkykime, kad mūsų tinklo svetainė būtų [**www.mynetwork.com**](http://www.mynetwork.com), o mūsų registracijos puslapis su užsakymo formos yra /register puslapyje. Visas URL adresas su iš anksto pasirinktu šiuo svetainės şaltiniu atrodo taip: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Spustelėkite **Tvarkyti** tiesiai po svetainės šablonu, kurį norite naudoti. Pamatysite SITE ID numerį. Tiesiog naudokite šį numerį šiam konkrečiam svetainės šablonui, kad jis būtų iš anksto pasirinktas jūsų atsiskaitymo formoje. Mūsų atveju čia URL parametras būtų **?template_id=2**.
 
-Jei norite, galite iš anksto pasirinkti ir produktus, ir šaltinius į užsakymo formą. Visi, ką reikalinga, tai yra kopijuoti planą pasidalinamos linką ir įdėti şaltinio parametrai laisvai po jo. Tai atrodo taip: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+![Svetainių sąrašas, rodantis svetainės šablono ID](/img/config/site-templates-list.png)
+
+Tarkime, mūsų tinklo svetainė yra [**www.mynetwork.com**](http://www.mynetwork.com), o mūsų registracijos puslapis su atsiskaitymo forma yra **/register** puslapyje. Visas URL su iš anksto pasirinktu šiuo svetainės šablonu atrodys taip: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ir, jei norite, savo atsiskaitymo formoje galite iš anksto pasirinkti ir produktus, ir šablonus. Viskas, ką reikia padaryti, tai nukopijuoti plano bendrinamą nuorodą ir įklijuoti šablono parametrą pabaigoje. Tai atrodys taip: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

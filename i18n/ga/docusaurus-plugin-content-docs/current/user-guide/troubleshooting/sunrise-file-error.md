@@ -3,7 +3,7 @@ title: Erróir File Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Éirí an t-Aghram na File Sunrise
+# Éirí an t-Aghram na File Sunrise {#error-installing-the-sunrise-file}
 
 Tá an file sunrise.php ag curteoir spéiciálach a bhfaidh WordPress a bheith ag iarraidh go dtí sé a chroí (bootstraps). Chunntas faoi cheann WordPress a bheith ag é a chroí, caithfidh sé a bheith ag curteáil sa **folder wp-content**.
 

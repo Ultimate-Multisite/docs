@@ -1,120 +1,120 @@
 ---
-title: Ngajawab Pajak
+title: Pananganan Pajeg
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Penanganan Pajak
+# Ngatur Pajeg {#tax-handling}
 
-Ultimate Multisite geus aya modul ngumpulkeun pajak di plugin inti urang, jadi lamun anjeun peryogi ngumpulkeun pajak penjualan dina rencana, paket, jeung layanan anjeun, anjeun bisa gampang ngalakukeun éta tanpa kudu nginstalle add-on.
+Ultimate Multisite boga modul pangumpulan pajeg anu geus diwangun kana plugin inti kami, jadi lamun anjeun kudu ngumpulkeun pajeg penjualan dina rencana, pakét, jeung jasa anjeun, anjeun bisa gampang ngalakukeunana tanpa kudu masang tambahan naon waé.
 
-Keur perusahaan anu aya di Éropa, urang nawiskeun **add-on** anu nambahan alat jeung fitur pikeun ngabantosan leuwih hadé dina kepatuhan VAT (Value Added Tax).
+Pikeun pausahaan anu ayana di Éropa, kami nyadiakeun **tambahan** anu nambihan pakakas jeung fitur pikeun leuwih hadé **ngadukung VAT** compliance.
 
-Ultimate Multisite teu ngajual atawa ngirim pajak ka pamaréntah pikeun anjeun; urang ngan ukur ngabantosan anjeun ngumpulkeun pajak anu merenah waktu transaksi. **Anjeun tetep kudu ngirim pajak sorangan.**
+Ultimate Multisite henteu ngalaporkeun atawa nyetorkeun pajeg atas nama anjeun ka pamaréntah; kami ngan saukur ngabantu anjeun ngumpulkeun pajeg anu luyu dina waktu transaksi. **Anjeun tetep kudu nyetorkeun pajeg sorangan.**
 
-## Ngaktifkeun Pengumpulan Pajak
+## Ngaktipkeun Pangumpulan Pajeg {#enabling-tax-collection}
 
-Pengumpulan pajak teu aktif sacara default. Pikeun ngaktifkeunana, anjeun kedah ka **Ultimate Multisite > Settings > Taxes** teras ganti (toggle) pikeun ngaktifkeun pengaturan Enable Taxes.
+Pangumpulan pajeg henteu diaktipkeun sacara bawaan. Pikeun ngaktipkeunana, anjeun kudu buka **Ultimate Multisite > Setélan > Pajeg** jeung ngaganti pikeun ngaktipkeun setélan Aktipkeun Pajeg.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Toggle Aktipkeun Pajeg di luhur kaca setélan Pajeg](/img/config/settings-taxes-enable.png)
 
-Ieu mangrupa tampilan lengkap halaman pengaturan pajak:
+Ieu tampilan lengkep kaca setélan pajeg:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Kaca lengkep setélan pajeg](/img/config/settings-taxes-full.png)
 
-Anjeun ogé bisa ningali pengaturan pajak pikeun produk per individu:
+Anjeun ogé bisa ningali setélan pajeg pikeun produk individu:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Setélan pajeg pikeun produk](/img/config/settings-taxes.png)
 
-### Pajak teu kaasup vs. Pajak kaasup
+### Pajeg teu kaasup vs. Pajeg kaasup {#tax-excluded-vs-tax-included}
 
-Sacara default, sakabéh harga produk anjeun téh pajaknya teu kaasup (tax excluded), hartina pajak **teu aya** dina harga produk éta. Lamun urang nempo yén pelanggan kudu bayar pajak tina hiji pembelian, urang bakal nambahan pajak **di luhur** subtotalna.
+Sacara bawaan, sakabéh harga produk anjeun teu kaasup pajeg, hartina pajeg **henteu kaasup** dina harga produk. Lamun kami nangtukeun yén palanggan kudu mayar pajeg dina hiji pameseran, kami bakal nambihan pajeg **di luhureun** subtotal.
 
-Lamun anjeun milih pajaknya kaasup dina harga produk anjeun, anjeun bisa ngalakukeun éta ku ngaktifkeun pengaturan Inclusive Tax.
+Lamun anjeun leuwih resep pajeg kaasup dina harga produk anjeun, anjeun bisa ngalakukeunana ku ngaktipkeun setélan **Pajeg Inklusif**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Baris toggle Pajeg Inklusif di handapeun setélan Aktipkeun Pajeg](/img/config/settings-taxes-inclusive.png)
 
-Ulah poho pikeun **save** (simpan) perubahan anu anjeun geus lakar dilakukeun.
+Tong poho pikeun **nyimpen** parobahan anu geus anjeun jieun.
 
 ###
 
-## Ngadamel Tarif Pajak
+## Nyieun Tarif Pajeg {#creating-tax-rates}
 
-Sanggeus anjeun ngaktifkeun Pengumpulan Pajak, anjeun kedah ngadamel tarif pajak pikeun lokasi-lokasi tartamtu ku editor tarif pajak urang.
+Sanggeus anjeun ngaktipkeun Pangumpulan Pajeg, anjeun kudu nyieun tarif pajeg pikeun lokasi husus maké éditor tarif pajeg kami.
 
-Anjeun bisa buka editor ku klik tombol **Manage Tax Rates** di sidebar halaman pengaturan Pajak (Tax settings).
+Anjeun bisa ngaksés éditor ku ngaklik tombol **Atur Tarif Pajeg** dina sidebar kaca setélan Pajeg.
 
-![Link Manage Tax Rates di panel Tax Rates pada halaman pengaturan](/img/config/settings-taxes-manage-rates.png)
+![Tumbu Atur Tarif Pajeg dina panel Tarif Pajeg dina kaca setélan](/img/config/settings-taxes-manage-rates.png)
 
-Di halaman editor tarif pajak, anjeun bisa nambah Tarif Pajak anyar dengan klik tombol **Add new Row**.
+Dina kaca éditor tarif pajeg, anjeun bisa nambihan Tarif Pajeg anyar ku ngaklik tombol **Tambahkeun Baris anyar**.
 
-![Tabel editor tarif pajak dengan tombol Add new Row di atas](/img/config/tax-rates-editor.png)
+![Tabel éditor tarif pajeg jeung tombol Tambahkeun Baris anyar di luhur](/img/config/tax-rates-editor.png)
 
-Anjeun kudu ngasih **title** (dipaké dina invoice) ka tiap tarif pajak. Terus anjeun bisa milih **country** (wajib), **state**, jeung **city** (keduanya pilihan) di mana pajak ieu bakal dipiake. Terakhir, tambihan **tax rate dalam persen**.
+Anjeun kudu méré unggal tarif pajeg hiji **judul** (dipaké dina invoice). Teras anjeun bisa milih **nagara** (wajib), **nagara bagian,** jeung **kota** (duanana opsional) tempat pajeg ieu bakal ditagihkeun. Pamungkas, tambahkeun **tarif pajeg dina persen**.
 
-### Kategori Pajak (Tax Categories)
+### Kategori Pajeg {#tax-categories}
 
-Anjeun ogé bisa nyieun sababaraha Kategori Pajak, pikeun nambah tarif pajak nu béda keur jenis produk nu béda.
+Anjeun ogé bisa nyieun sababaraha Kategori Pajeg, pikeun nambihan tarif pajeg anu béda pikeun rupa-rupa produk.
 
-Klik **Add new Tax Category**, terus tulis ngaran kategori anjeun jeung pencet **Create**.
+Klik pikeun **Tambahkeun Kategori Pajeg anyar** , teras tulis ngaran kategori anjeun jeung pencét **Jieun**.
 
-![Tombol Add new Tax Category di atas editor tarif pajak](/img/config/tax-categories-add.png)
+![Tombol Tambahkeun Kategori Pajeg anyar di luhur éditor tarif pajeg](/img/config/tax-categories-add.png)
 
-![Input field Nama Kategori Pajak di modal buat nyieun kategori](/img/config/tax-categories-create-modal.png)
+![Widang input Ngaran Kategori Pajeg dina modal nyieun kategori](/img/config/tax-categories-create-modal.png)
 
-Kanggo ngabahas kategori, klik **Switch** terus pilih kategori nu rék anjeun tina mana pajak anyar téh dipasihan.
+Pikeun ngotéktak kategori, klik **Ganti** jeung pilih kategori anu rék anjeun tambahkeun pajeg anyar.
 
-![Tombol dropdown Switch pikeun ganti antar kategori pajak](/img/config/tax-categories-switch.png)
+![Tombol dropdown Ganti pikeun ngarobah antara kategori pajeg](/img/config/tax-categories-switch.png)
 
-![Dropdown selector kategori pajak nunjukkeun kategori nu aya](/img/config/tax-categories-select.png)
+![Dropdown pamilih kategori pajeg anu némbongkeun kategori anu aya](/img/config/tax-categories-select.png)
 
-Anjeun bisa ngatur kategori pajak keur hiji produk husus ku cara indit ka **Product edit page** terus ka tab Taxes.
+Anjeun bisa nyetél kategori pajeg pikeun hiji produk husus ku muka **Kaca édit produk** teras ka tab Pajeg.
 
-![Tab pajak produk dengan toggle kategori pajak jeung taxable](/img/config/product-taxes.png)
+![Tab pajeg produk jeung kategori pajeg sarta toggle kena pajeg](/img/config/product-taxes.png)
 
-Di layar nu sarua éta, anjeun bisa matikan (toggle off) tombol **Is Taxable?** sangkan Ultimate Multisite ngarti yén teu kudu ngumpulkeun pajak keur produk anu dituju éta.
+Dina layar anu sarua, anjeun bisa mareuman toggle **Kena Pajeg?** pikeun méré nyaho ka Ultimate Multisite yén éta henteu kudu ngumpulkeun pajeg dina produk éta.
 
-## Dukungan VAT Éropah
+## Pangrojong VAT Éropa {#european-vat-support}
 
-Saperti tadi, urang kulawarga di Uni Eropa anu boga syarat tambahan lantaran peraturan PPN (VAT) Eropa.
+Sakumaha geus disebutkeun saméméhna, kami boga tambahan anu sadia pikeun palanggan di EU anu boga sarat tambahan alatan aturan VAT Éropa.
 
-Alat PPN kami ngabantosan dina sababaraha hal penting:
+Pakakas VAT kami ngabantu sababaraha hal penting:
 
-  * Ngawangun tarif PPN EU anu gampang;
+  * Ngamuat tarif VAT EU kalayan gampang;
 
-  * Ngumpulkeun je validation Nomor PPN - sarta *reverse charging* pikeun entitas anu dibebaskeun PPN (saperti perusahaan anu boga nomer PPN valid);
+  * Ngumpulkeun jeung ngesahkeun Nomer VAT - sarta reverse charging pikeun éntitas anu dibébaskeun tina VAT (saperti pausahaan anu boga nomer VAT sah);
 
-Kanggo nginstal add-on éta, nyaéta ka **Ultimate Multisite > Settings** terus klik link sidebar **Check our Add-ons**.
+Pikeun masang tambahan éta, buka **Ultimate Multisite > Setélan** teras klik tumbu sidebar **Pariksa Tambahan Kami**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar kaca Setélan jeung tumbu Pariksa Tambahan Kami](/img/config/settings-taxes-addons-link.png)
 
-Anjeun bakal diarahkeun ka halaman add-on kami. Di dinya, anjeun bisa nyari **Ultimate Multisite VAT add-on** jeung nginstale éta.
+Anjeun bakal dialihkeun ka kaca tambahan kami. Di dinya, anjeun bisa néangan **Ultimate Multisite VAT add-on** jeung masangna.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Screenshot teu sadia: kotak VAT add-on dina kaca Tambahan -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot teu sadia: dialog Pasang Ayeuna VAT add-on -->
 
-Terus, ka **Network Admin > Plugins** terus aktifkeun add-on éta di sakuliah jaringan.
+Teras, buka **Network Admin > Plugins** jeung aktipkeun tambahan éta sakuliah jaringan.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Screenshot teu sadia: aksi Aktipkeun Jaringan pikeun VAT add-on dina kaca Plugins -->
 
-Lamun anjeun balik deui ka **Tax Settings tab**, anjeun bakal nempo pilihan anyar anu aya. Ganti (toggle) opsi **Enable VAT Support** pikeun ngaktifkeun alat PPN anyar éta. Tong hilap pikeun **save** pengaturan anjeun!
+Lamun anjeun balik deui ka **tab Setélan Pajeg** , anjeun bakal ningali pilihan anyar anu sadia. Aktipkeun pilihan **Aktipkeun Pangrojong VAT** pikeun ngaktipkeun pakakas VAT anyar. Tong poho pikeun **nyimpen** setélan anjeun!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Screenshot teu sadia: toggle Aktipkeun Pangrojong VAT dina setélan Pajeg sanggeus aktivasina tambahan -->
 
-### Ngambil Tarif Pajak PPN (Pulling on VAT Tax Rates)
+### Narik Tarif Pajeg VAT {#pulling-on-vat-tax-rates}
 
-Salah sahiji alat anu ditambihan ku integrasi kami nyaéta kemampuan pikeun ngawangun tarif pajak pikeun negara anggota EU. Ieu bisa dilakukeun ku cara kedatangan di halaman editor tarif pajak sanggeus ngaktifkeun dukungan PPN EU.
+Salah sahiji pakakas anu ditambihan ku integrasi kami nyaéta kamampuhan pikeun ngamuat tarif pajeg pikeun nagara anggota EU. Éta bisa dilakukeun ku nganjang ka kaca éditor tarif pajeg sanggeus ngaktipkeun pangrojong VAT EU.
 
-Di bagian paling bawah halaman, Anda akan lihat pilihan untuk menarik (pull) tarif PPN (VAT). Pilih jenis tarif dan klik tombol **Update EU VAT Rates** untuk menampilkan tabel dengan otomatis mengisi tarif pajak untuk setiap negara anggota Uni Eropa. Setelah itu, Anda hanya perlu menyimpannya saja.
+Di handapeun kaca, anjeun bakal ningali pilihan narik VAT. Milih jinis tarif jeung ngaklik tombol **Apdet Tarif VAT EU** bakal narik jeung ngeusian otomatis tabel ku tarif pajeg pikeun unggal nagara anggota EU. Teras, anjeun ngan kudu nyimpen éta.
 
-![Tombol Update EU VAT Rates di bagian bawah editor tarif pajak](/img/config/tax-rates-vat-pull.png)
+![Tombol Apdet Tarif VAT EU di handapeun éditor tarif pajeg](/img/config/tax-rates-vat-pull.png)
 
-Anda juga bisa mengedit nilainya setelah ditarik. Untuk melakukannya, cukup edit baris tabel yang Anda butuhkan dan klik untuk menyimpan nilai baru tersebut.
+Anjeun ogé bisa ngédit nilai sanggeus narik éta. Pikeun ngalakukeunana, cukup édit baris tabel anu anjeun peryogikeun jeung klik pikeun nyimpen nilai anyar.
 
-### Validasi PPN (VAT Validation)
+### Validasi VAT {#vat-validation}
 
-Ketika dukungan PPN diaktifkan, Ultimate Multisite akan menambahkan kolom tambahan pada formulir checkout, di bawah kolom alamat penagihan (billing address). Kolom ini hanya akan muncul bagi pelanggan yang berlokasi di Uni Eropa.
+Nalika pangrojong VAT diaktipkeun, Ultimate Multisite bakal nambihan widang tambahan kana formulir checkout, di handapeun widang alamat tagihan. Widang éta ngan bakal muncul pikeun palanggan anu aya di EU.
 
-<!-- Screenshot unavailable: Kolom Nomor PPN pada formulir checkout frontend di bawah alamat penagihan -->
+<!-- Screenshot teu sadia: widang Nomer VAT dina formulir checkout frontend di handapeun alamat tagihan -->
 
-Ultimate Multisite kemudian akan memvalidasi Nomor PPN dan jika hasilnya valid, mekanisme *reverse charge* (pembebanan balik) akan diterapkan dan tarif pajak diatur menjadi 0% untuk pesanan tersebut.
+Ultimate Multisite tuluy bakal marios VAT Number sarta lamun balikna sah, mékanisme reverse charge diterapkeun jeung tingkat pajeg disetél jadi 0% dina pesenan éta.

@@ -3,7 +3,7 @@ title: Siteňizi dolandyrmak
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Saytlaryni Dolandyrýan
+# Saytlaryni Dolandyrýan {#managing-sites}
 
 Saytlar (ýa-da subsaytlary) siziň WaaS işiňiziň esasy bölegidir. Ultimate Multisite üç görnüşde saytlara egedikdir:
 
@@ -11,13 +11,13 @@ Saytlar (ýa-da subsaytlary) siziň WaaS işiňiziň esasy bölegidir. Ultimate 
 - **Sayt Şablonlary** — Müşderilerin başlanmagy üçin saýlap biljek önceden müäyyendirilmiş saytlar
 - **Esasy Sayt** — Siziň esasy ulgamy saytyňyz
 
-## Saytlary Görmek
+## Saytlary Görmek {#viewing-sites}
 
 Ulgaňyzda size degişli ähli subsaytlary görmegi üçin **Ultimate Multisite → Sites** bilen girizdirsiň. Her bir sayt görnüşi bilen belgiýär we siz Olarykki Saytlary, Müşderiniki, Şablonlar ýa-da Bekläýän (Pending) bilen filtrlene bilersiňiz.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Täze Sayt Goşmak
+## Täze Sayt Goşmak {#adding-a-new-site}
 
 Täze sayt döretmek üçin **Add Site** düwmanyna basyň. Siz şu zatlary bermegiňiz gerek bilerisiz:
 
@@ -27,15 +27,15 @@ Täze sayt döretmek üçin **Add Site** düwmanyna basyň. Siz şu zatlary berm
 
 **Copy Site** opsiyasy size barada belli bir sayt şablonundan esaslanýan täze sayt döretmek mümkinçiligi berýär. Bu opsiyany işjeňleşdirseňiz, başlap ulanmak üçin haçan şablondan ulanylyp biljekdigini saýlaýarsyňyz. Media fayllaryny öz içine almagy üçin **Copy Media on Duplication**-y işjeňleşdirip bilýärsiňiz.
 
-## Barada Bolan Sayty Dolandyrmak
+## Barada Bolan Sayty Dolandyrmak {#managing-an-existing-site}
 
 Häzirki bir sayt üçin **Manage**-e basyp, **Edit Site** sagatyny açyp bilersiňiz. Bu ýerde size şu zatlary tapyp bilersiňiz:
 
-### Esasy Maglumatlar
+### Esasy Maglumatlar {#basic-information}
 
 Sayt ady, tgesi, sayt ID-si we beýan. Şol bilen birlikte, maplan edilen domen, bagly üje (membership) we saytyň ehsatçysy bolan müşderi hasaby hem görkezilip biler.
 
-### Sayt Opsionalary
+### Sayt Opsionalary {#site-options}
 
 Saytyň mümkinçiliklerini we çäklerini özüňiz üçin dolandyryp bilersiňiz:
 
@@ -47,7 +47,7 @@ Saytyň mümkinçiliklerini we çäklerini özüňiz üçin dolandyryp bilersiň
 
 Defaultda sayplar üsellik (membership) səviýinde goýlan limitlere laýyk gelipdir. Sayt səviýinde limitler goýmak, üsellik sozlamalaryny geçip biler.
 
-### Baglanyşyklary
+### Baglanyşyklary {#associations}
 
 Sayt opsionalaryndan aşakda şu maglumatlar taparsyňyz:
 
@@ -55,7 +55,7 @@ Sayt opsionalaryndan aşakda şu maglumatlar taparsyňyz:
 - Saytyň ýardam edýän **Membership** (Üsellik)
 - Sayta baglanyşykly **Customer account** (Müşderi hasaby)
 
-### Dogry Taraf Barlagy
+### Dogry Taraf Barlagy {#right-sidebar}
 
 Dogry tarapda size şu zatlar mümkin:
 

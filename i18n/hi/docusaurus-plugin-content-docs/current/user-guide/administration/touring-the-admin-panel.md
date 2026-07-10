@@ -1,86 +1,122 @@
 ---
-title: एडमिन पैनल का भ्रमण
+title: एडमिन पैनल का परिचय
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Panel की सैर
+# Admin Panel का परिचय {#touring-the-admin-panel}
 
-Ultimate Multisite को जितना संभव हो उतना सरल और समझने में आसान बनाया गया है, लेकिन इतने शक्तिशाली टूल के साथ एक गाइडेड टूर होना मददगार हो सकता है। आइए admin pages को समझते हैं ताकि आप इसे बेहतर तरीके से जान सकें।
+Ultimate Multisite को जितना संभव हो उतना सरल और अपने-आप समझ में आने वाला बनाया गया है, लेकिन इतने शक्तिशाली टूल के लिए एक मार्गदर्शित परिचय मददगार हो सकता है। आइए admin पृष्ठों को देखें ताकि आप आसानी से समझ सकें कि क्या कहाँ है।
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite का **Dashboard** बुनियादी रिपोर्ट्स और analytics दिखाता है जिसमें राजस्व, साइट गतिविधियाँ, membership वृद्धि, visitor संख्या, और भौगोलिक डेटा शामिल हैं।
+Ultimate Multisite **Dashboard** बुनियादी रिपोर्ट और विश्लेषण दिखाता है, जिनमें आय, साइट गतिविधियाँ, सदस्यता वृद्धि, विज़िटर संख्या और भौगोलिक डेटा शामिल हैं।
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+यहाँ Dashboard का पूरा दृश्य है:
 
-**Checkout Forms** आपको कस्टम registration pages बनाने की सुविधा देते हैं। आप fields को customize कर सकते हैं, custom classes और scripts डाल सकते हैं, और visitor के देश या location के आधार पर access को प्रतिबंधित कर सकते हैं।
+![Ultimate Multisite Dashboard पूरा पृष्ठ](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+और Dashboard का निचला भाग:
 
-## Products
+![Ultimate Multisite Dashboard निचला भाग](/img/admin/um-dashboard-bottom.png)
 
-**Products** सेक्शन वह जगह है जहाँ आप अपने network के लिए अलग-अलग plans, packages, और services बनाते हैं। Product स्तर पर कीमतें, billing की आवृत्ति, और limits व quotas तय करें।
+यहाँ network Dashboard का पूरा दृश्य भी है:
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard पूरा पृष्ठ](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## भुगतान फ़ॉर्म {#checkout-forms}
 
-**Memberships** पेज आपके network की सभी subscriptions दिखाता है। Subscription की जानकारी देखें और edit करें जिसमें plans, products, billing राशि और आवृत्ति, payment history, और timestamps शामिल हैं।
+**भुगतान फ़ॉर्म** आपको कस्टम पंजीकरण पृष्ठ बनाने की सुविधा देते हैं। आप फ़ील्ड अनुकूलित कर सकते हैं, कस्टम क्लास और स्क्रिप्ट जोड़ सकते हैं, और विज़िटर के देश या स्थान के आधार पर पहुँच सीमित कर सकते हैं।
 
-![Memberships list](/img/admin/memberships-list.png)
+![भुगतान फ़ॉर्म सूची](/img/admin/checkout-forms-list.png)
 
-## Payments
+## उत्पाद {#products}
 
-**Payments** पेज आपके पूरे network के payment history का त्वरित दृश्य प्रदान करता है, जिसमें विशिष्ट products और राशियों सहित विस्तृत transaction जानकारी होती है।
+**उत्पाद** अनुभाग वह जगह है जहाँ आप अपने नेटवर्क के लिए अलग-अलग प्लान, पैकेज और सेवाएँ बनाते हैं। उत्पाद स्तर पर कीमतें, बिलिंग आवृत्तियाँ, और सीमाएँ व कोटा तय करें।
 
-![Payments list](/img/admin/payments-list.png)
+![उत्पाद सूची](/img/admin/products-list.png)
 
-## Customers
+## सदस्यताएँ {#memberships}
 
-**Customers** पेज आपके network में registered सभी members को दिखाता है, जिसमें नाम, email address, last login, और उनकी subsite में login करने के लिए "switch to" link जैसी बुनियादी user जानकारी शामिल है।
+**सदस्यताएँ** पृष्ठ आपके नेटवर्क की सभी सदस्यताएँ दिखाता है। प्लान, उत्पाद, बिलिंग राशि और आवृत्ति, भुगतान इतिहास, और समय-चिह्नों सहित सदस्यता विवरणों की समीक्षा और संपादन करें।
 
-![Customers list](/img/admin/customers-list.png)
+![सदस्यताएँ सूची](/img/admin/memberships-list.png)
 
-## Sites
+## भुगतान {#payments}
 
-**Sites** पेज आपके network की सभी subsites की सूची दिखाता है जिसमें site templates और customer-owned sites शामिल हैं। Mapped domains, limits व quotas, plugins और themes, और site thumbnails को आसानी से manage करें।
+**भुगतान** पृष्ठ आपके पूरे नेटवर्क में भुगतान इतिहास का त्वरित दृश्य देता है, जिसमें खास उत्पादों और राशियों सहित विस्तृत लेन-देन जानकारी होती है।
 
-![Sites list](/img/admin/sites-list.png)
+![भुगतान सूची](/img/admin/payments-list.png)
 
-## Domains
+## ग्राहक {#customers}
 
-**Domains** पेज subsites से mapped custom domains के लिए समर्पित है। Super admin के रूप में, आप manually custom domain names जोड़ या map कर सकते हैं और DNS records व logs देख सकते हैं।
+**ग्राहक** पृष्ठ आपके नेटवर्क में पंजीकृत सभी सदस्यों को बुनियादी उपयोगकर्ता जानकारी के साथ दिखाता है, जिसमें नाम, ईमेल पता, अंतिम लॉगिन, और उनके सबसाइट में लॉगिन करने के लिए "स्विच करें" लिंक शामिल है।
 
-![Domains list](/img/admin/domains-list.png)
+![ग्राहक सूची](/img/admin/customers-list.png)
 
-## Discount Codes
+## साइटें {#sites}
 
-**Discount Codes** से आप अपने end-users को छूट देने के लिए coupon codes बना सकते हैं। Discount value निर्धारित करें और विशिष्ट users या groups को target करें।
+**साइटें** पृष्ठ आपके नेटवर्क की सभी सबसाइटों की सूची दिखाता है, जिसमें साइट टेम्पलेट और ग्राहकों के स्वामित्व वाली साइटें शामिल हैं। मैप किए गए डोमेन, सीमाएँ व कोटा, प्लगइन और थीम, तथा साइट थंबनेल आसानी से प्रबंधित करें।
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![साइटें सूची](/img/admin/sites-list.png)
 
-## Broadcasts
+## डोमेन {#domains}
 
-**Broadcasts** आपके subsite users को announcements भेजने या private messages देने का एक टूल है। उनके subscribed plan या product के आधार पर विशिष्ट user groups को target करें।
+**डोमेन** पृष्ठ सबसाइटों से मैप किए गए कस्टम डोमेन के लिए है। super admin के रूप में, आप कस्टम डोमेन नाम मैन्युअल रूप से जोड़ या मैप कर सकते हैं और DNS रिकॉर्ड व लॉग देख सकते हैं।
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![डोमेन सूची](/img/admin/domains-list.png)
 
-## Settings
+## छूट कोड {#discount-codes}
 
-**Settings** पेज वह जगह है जहाँ आप Ultimate Multisite को configure करते हैं — registration settings, payments, API और webhooks, domain mapping, और अन्य integrations।
+**छूट कोड** आपको अपने अंतिम उपयोगकर्ताओं को छूट देने के लिए कूपन कोड बनाने देते हैं। छूट का मूल्य तय करें और खास उपयोगकर्ताओं या समूहों को लक्षित करें।
 
-![Settings page](/img/admin/settings-general.png)
+![छूट कोड सूची](/img/admin/discount-codes-list.png)
 
-## Events
+## प्रसारण {#broadcasts}
 
-**Events** पेज आपके network के सभी events और logs का रिकॉर्ड रखता है। यह plan changes, signups, और अन्य गतिविधियों को track करता है — आपके multisite की निगरानी के लिए उपयोगी है।
+**प्रसारण** आपकी सबसाइट के उपयोगकर्ताओं को घोषणाएँ जारी करने या निजी संदेश भेजने का टूल है। वे जिस प्लान या उत्पाद की सदस्यता लेते हैं, उसके आधार पर खास उपयोगकर्ता समूहों को लक्षित करें।
 
-![Events list](/img/admin/events-list.png)
+![प्रसारण सूची](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## सेटिंग्स {#settings}
 
-**Webhooks** आपको दूसरे application को data deliver करने की सुविधा देते हैं। Ultimate Multisite से Zapier जैसे platforms पर data भेजने के लिए उपयोगी है।
+**सेटिंग्स** पृष्ठ वह जगह है जहाँ आप Ultimate Multisite को कॉन्फ़िगर करते हैं — पंजीकरण सेटिंग्स, भुगतान, API और webhooks, डोमेन मैपिंग, और अन्य एकीकरण।
 
-![Webhooks list](/img/admin/webhooks-list.png)
+AI कनेक्टर सेटिंग्स वर्तमान में समर्थित OAuth प्रदाता पूल दिखाती हैं: Anthropic Max, OpenAI ChatGPT/Codex, और Google AI Pro। हर प्रदाता कार्ड super admins को खाते जोड़ने, सहेजे गए खाते रीफ़्रेश करने, ईमेल से खाते हटाने, और sandboxed वातावरण द्वारा browser redirect ब्लॉक किए जाने पर मैन्युअल OAuth fallback इस्तेमाल करने देता है। Cursor Pro सेटअप विकल्प admin panel से हटा दिए गए हैं।
+
+ChatGPT/Codex खाते connector-backed टूल उपयोग का समर्थन करते हैं, जहाँ संचालन टूल की अनुमति देता है। इसलिए connector-supported संचालन पर निर्भर admin कार्यप्रवाह OpenAI खाता जुड़ने के बाद Codex टूल व्यवहार का उपयोग कर सकते हैं।
+
+![सेटिंग्स पृष्ठ](/img/admin/settings-general.png)
+
+यहाँ सामान्य सेटिंग्स पृष्ठ का पूरा दृश्य है:
+
+![सामान्य सेटिंग्स पूरा पृष्ठ](/img/admin/settings-general-full.png)
+
+और ईमेल सेटिंग्स पृष्ठ:
+
+![ईमेल सेटिंग्स पूरा पृष्ठ](/img/admin/settings-emails-full.png)
+
+और भुगतान सेटिंग्स पृष्ठ:
+
+![भुगतान सेटिंग्स पूरा पृष्ठ](/img/admin/settings-payments-full.png)
+
+और भुगतान सेटिंग्स का निचला भाग:
+
+![भुगतान सेटिंग्स निचला भाग](/img/admin/settings-payments-bottom.png)
+
+और साइट सेटिंग्स पृष्ठ:
+
+![साइट सेटिंग्स पूरा पृष्ठ](/img/admin/settings-sites-full.png)
+
+## घटनाएँ {#events}
+
+**घटनाएँ** पृष्ठ आपके नेटवर्क की सभी घटनाओं और लॉग का रिकॉर्ड रखता है। यह प्लान बदलाव, साइनअप, और अन्य गतिविधियों जैसी चीज़ों को ट्रैक करता है — आपके multisite की निगरानी के लिए उपयोगी।
+
+![घटनाएँ सूची](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks** आपको किसी अन्य एप्लिकेशन तक डेटा पहुँचाने देते हैं। Ultimate Multisite से Zapier जैसे प्लेटफ़ॉर्म पर डेटा भेजने के लिए उपयोगी।
+
+![Webhooks सूची](/img/admin/webhooks-list.png)

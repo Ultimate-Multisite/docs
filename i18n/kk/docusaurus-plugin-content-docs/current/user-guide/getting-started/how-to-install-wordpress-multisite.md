@@ -3,7 +3,7 @@ title: WordPress Multisite-ты қалай орнату керек
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-ты қалай орнатуға болады?
+# WordPress Multisite-ты қалай орнатуға болады? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite арқылы бір орнатуда сайттардың желісін құруға боласыз. Бұл стандартты функция, бірақ ол боджетінен қосылмаған.
 
@@ -57,7 +57,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# добавить завершающий слэш к /wp-admin
+# добавить завершающий слэш к /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -96,9 +96,9 @@ FTP клиентін немесе файл менеджерін (мысалы, c
 
 Өрістерді толтырғаннан кейін, "Add site" (Сайт қосу) батырмасын басыңыз. Жаңа субсайт жасалғаннан кейін, оның жұмыс істеп тұрғанын тексеру үшін оған кіріп көріңіз.
 
-## Көрінеті мәселелер:
+## Көрінеті мәселелер: {#common-problems}
 
-### 1. Мен жаңа сайттар құра аламын, бірақ олар қол жетімсіз.
+### 1. Мен жаңа сайттар құра аламын, бірақ олар қол жетімсіз. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Егер сіз субдомендерді таңдасаңыз, Multisite желіңіз үшін вайлд-субдомендерді де орнату қажет болады.
 

@@ -3,11 +3,11 @@ title: Gennemgang af administrationspanelet
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Gennemgang af Admin-panelet
+# Gennemgang af Admin-panelet {#touring-the-admin-panel}
 
 Ultimate Multisite sigter mod at være så simpelt og selvforklarende som muligt, men med et så kraftfuldt værktøj kan det hjælpe med en guidet tur. Lad os gå igennem de administrative sider for at hjælpe dig med at komme godt i gang.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ultimate Multisite **Dashboard** viser grundlæggende rapporter og analyser, herunder indtægter, sites aktiviteter, medlemsvækst, besøgsantal og geografiske data.
 
@@ -25,61 +25,61 @@ Her er også et fuldt overblik over netværksdashboardet:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 **Checkout Forms** giver dig fleksibiliteten til at oprette egne registreringssider. Du kan tilpasse felter, indsætte egne klasser og scripts samt begrænse adgangen baseret på besøgendes land eller placering.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Produkter
+## Produkter {#products}
 
 **Products** sektionen er der, hvor du opretter forskellige planer, pakker og tjenester til dit netværk. Definer priser, faktureringsfrekvenser samt grænser og kvoter på produktniveau.
 
 ![Products list](/img/admin/products-list.png)
 
-## Medlemskaber
+## Medlemskaber {#memberships}
 
 **Memberships** siden viser alle abonnementer i dit netværk. Gennemgå og rediger detaljer om abonnementerne, herunder planer, produkter, faktureringsbeløb og -frekvenser, betalhistorik samt tidsstempler.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Betalinger
+## Betalinger {#payments}
 
 Siden **Betalinger** giver et hurtigt overblik over betalingshistorikken på tværs af hele dit netværk, med detaljerede transaktionsoplysninger herunder specifikke produkter og beløb.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Brugere
+## Brugere {#customers}
 
 Siden **Brugere** viser alle medlemmer registreret i dit netværk med grundlæggende brugerinformation som navn, e-mailadresse, sidste login og et "skift til"-link til at logge ind på deres undersite.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sider
+## Sider {#sites}
 
 Siden **Sider** lister alle subsites i dit netværk op, herunder sidtempler og kundeejede sider. Administrer nemt kortlagte domæner, grænser & kvoter, plugins og themes samt side-thumbnails.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domæner
+## Domæner {#domains}
 
 Siden **Domæner** er dedikeret til custom domæner kortlagt til subsites. Som superadministrator kan du manuelt tilføje eller kortlægge custom domænenavne og se DNS-oplysninger samt logs.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Rabatkoder
+## Rabatkoder {#discount-codes}
 
 **Rabatkoder** giver dig mulighed for at oprette kuponkoder for at tilbyde rabatter til dine slutbrugere. Angiv rabatværdien og mål specifikke brugere eller grupper.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Udsendelser
+## Udsendelser {#broadcasts}
 
 **Udsendelser** er et værktøj til at udrulle meddelelser eller sende private beskeder til dine subsite-brugere. Mål specifikke brugergrupper baseret på planen eller produkt, de er abonnenter på.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Indstillinger
+## Indstillinger {#settings}
 
 Siden **Indstillinger** er her, hvor du konfigurerer Ultimate Multisite — registreringsindstillinger, betalinger, API og webhooks, domænekortlægning og andre integrationer.
 
@@ -109,13 +109,13 @@ Og sidindstillingssiden:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events
+## Events {#events}
 
 **Events** siden holder styr på alle hændelser og logs i dit netværk. Den sporer aktiviteter som planændringer, tilmeldingsprocesser og andre bevægelser – nyttigt til at overvåge dit multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 **Webhooks** giver dig mulighed for at levere data til en anden applikation. Det er nyttigt til at sende data fra Ultimate Multisite til platforme som Zapier.
 

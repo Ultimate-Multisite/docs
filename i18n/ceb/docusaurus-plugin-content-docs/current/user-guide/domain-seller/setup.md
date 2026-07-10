@@ -3,21 +3,21 @@ title: Pagtukod ug Konfigurasyon sa Provider
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup ug Configuration sa Provider
+# Domain Seller: Setup ug Configuration sa Provider {#domain-seller-setup-and-provider-configuration}
 
 Ang Domain Seller addon naa uban og guided setup wizard nga magatudlo nimo sa matag kinahanglan nimong lakang. Kining page naghisgot bahin sa daloy sa wizard ug unsaon pag-configure o pag-reconfigure sa mga provider pagkahuman.
 
-## Mga Kinahanglanon
+## Mga Kinahanglanon {#requirements}
 
 - **Multisite Ultimate** v2.4.12 o mas taas, network-activated
 - **PHP** 7.4+
 - API credentials para sa labing menos usa ka supported registrar
 
-## Unang setup wizard
+## Unang setup wizard {#first-run-setup-wizard}
 
 Ang setup wizard awtomatikong mo-launch sa unang higayon nga i-network activate nimo ang plugin. Mahimo usab kini gamiton bisan kanus-a gikan sa **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Lakang 1 — Pilia og provider
+### Lakang 1 — Pilia og provider {#step-1--choose-a-provider}
 
 Piliha ang registrar nga gusto nimong ikonekta. Mga suportadong opsyon:
 
@@ -33,7 +33,7 @@ Piliha ang registrar nga gusto nimong ikonekta. Mga suportadong opsyon:
 | NameSilo | Dili | Dili |
 | Enom | Oo | Dili |
 
-### Lakang 2 — Sugdi og credentials
+### Lakang 2 — Sugdi og credentials {#step-2--enter-credentials}
 
 Ang matag provider adunay lain nga mga field para sa credentials:
 
@@ -57,17 +57,17 @@ Ang matag provider adunay lain nga mga field para sa credentials:
 
 I-check ang **Sandbox mode** kung naa, para mag-test batok sa test environment sa provider sa dili pa mo-live.
 
-### Step 3 — I-test ang koneksyon
+### Step 3 — I-test ang koneksyon {#step-3--test-the-connection}
 
 I-click ang **Test Connection**. Ang wizard magpadala og gamay nga API call para ma-verify ang credentials ug connectivity. Ayuhon ang bisan unsang problema sa credentials sa dili pa magpadayon.
 
-### Step 4 — Import TLDs
+### Step 4 — Import TLDs {#step-4--import-tlds}
 
 I-click ang **Import TLDs** para kuha ang tanang available TLDs ug wholesale pricing gikan sa connected provider. Kini magpuno sa listahan sa TLD nga gigamit sa domain products. Ang import mahimong molungtad og 30–60 seconds para sa mga provider nga adunay dagkong catalog sa TLD.
 
 Ang mga TLD gi-resync usab awtomatiko usa ka beses kada adlaw pinaagi sa scheduled cron job.
 
-### Step 5 — Paghimo og domain product
+### Step 5 — Paghimo og domain product {#step-5--create-a-domain-product}
 
 Ang wizard maghimo og default catch-all domain product nga naay 10% markup. Mahimo nimong i-edit kining product dayon o palihog ug himuon ang mga products manually ubos sa **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Tan-awa ang [Domain Products and Pricing](./domain-products) para sa tibuok giya
 
 ---
 
-## Pag-reconfigure sa provider
+## Pag-reconfigure sa provider {#reconfiguring-a-provider}
 
 Padulong sa **Network Admin › Ultimate Multisite › Settings › Domain Seller** (o i-click ang **Settings** sa listahan sa plugin).
 
@@ -88,17 +88,17 @@ Ang settings page naglangkob sa:
 - **Manage domain products** — dali nga link padulong sa Products list
 - **Configure providers** — magbukas kini og Integration Wizard para magdagmo o mag-reconfigure og mga provider
 
-### Pagdugang og ikaduhang provider
+### Pagdugang og ikaduhang provider {#adding-a-second-provider}
 
 I-click ang **Configure providers** ug i-run pag-usab ang wizard para sa bag-ong registrar. Mahimo kang adunay daghang providers nga naka-configure sa samang higayon. Ihatag ang matag domain product ngadto sa usa ka specific provider, o biyaan kini sa default.
 
-### Manual Sync sa TLDs
+### Manual Sync sa TLDs {#syncing-tlds-manually}
 
 Sa settings page, i-click ang **Sync TLDs** tupad sa bisan unsang naka-configure nga provider para kuhaon ang pinakabag-ong presyo. Kini makatabang pagkahuman nga mag-update og wholesale pricing ang usa ka provider o magdugang og bag-ong TLDs.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Ang matag provider nag-isulat sa iyang kaugalingong log channel. Ang mga logs mahimong tan-awon ubos sa **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Ang matag provider nag-isulat sa iyang kaugalingong log channel. Ang mga logs ma
 
 ---
 
-## Mga nota bahin sa abilidad sa Provider
+## Mga nota bahin sa abilidad sa Provider {#provider-capability-notes}
 
 Dili tanan nga registrar API nagpakita og parehas nga mga operasyon. Ang addon magpakita sa mga operasyong dili suportado pinaagi sa klaro nga mga sayop nga makita sa admin, imbes nga hilom lang kini mapakyas.
 

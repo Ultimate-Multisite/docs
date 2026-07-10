@@ -3,11 +3,11 @@ title: Povratne informacije korisnika i prijavljivanje problema
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Povratne informacije i izvještavanje o problemima
+# Povratne informacije i izvještavanje o problemima {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 uvodi ugrađen sistem za prikupljanje povratnih informacija i izvještavanje o problemima, koji omogućava krajnjim korisnicima da označavaju odgovore kao nekorisne ili da izvještavaju o problemima direktno iz chat interfejsa. Ovaj sistem uključuje upravljanje pristankom, automatsnu naredbu za izvještavanje i asistirano triiranje (triage) na backendu.
 
-## Dugme "Ne sviđa mi se" (Thumbs-Down Button)
+## Dugme "Ne sviđa mi se" (Thumbs-Down Button) {#thumbs-down-button}
 
 Svaka poruka koju pošalje AI asistent prikazuje **dugme "Ne sviđa mi se"** (👎). Kada korisnik klikne na to dugme, može označiti odgovor kao nekorisan ili netačan.
 
@@ -15,7 +15,7 @@ Svaka poruka koju pošalje AI asistent prikazuje **dugme "Ne sviđa mi se"** (�
 - Klikom se otvara **Modal za pristanak na povratne informacije (Feedback Consent Modal)**.
 - Povratna informacija je povezana sa niti razgovora i specifičnom porukom.
 
-## Modal za pristanak na povratne informacije (Feedback Consent Modal)
+## Modal za pristanak na povratne informacije (Feedback Consent Modal) {#feedback-consent-modal}
 
 Kada korisnik klikne na dugme "Ne sviđa mi se", pojavljuje se modal za pristanak prije nego što se bilo kakvi podaci pošalju. Modal:
 
@@ -26,13 +26,13 @@ Kada korisnik klikne na dugme "Ne sviđa mi se", pojavljuje se modal za pristana
 
 Nije snimljena nijedna povratna informacija dok korisnik eksplicitno ne potvrdi.
 
-## Banner za povratne informacije iz auto-prompta (Auto-Prompt Feedback Banner)
+## Banner za povratne informacije iz auto-prompta (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Na kraju razgovora, asistent može prikazati **banner za povratne informacije iz auto-prompta** — neupadljiv poruku koja pita da li je sesija bila korisna.
 
 Ovaj banner se automatski pojavljuje na osnovu dužine i heuristika ishoda razgovora. Povezan je na isti tok povratnih informacija kao i dugme "Ne sviđa mi se". Korisnici mogu zatvoriti banner bez pružanja povratnih informacija.
 
-## Komanda `/report-issue` (Slash Command)
+## Komanda `/report-issue` (Slash Command) {#report-issue-slash-command}
 
 Korisnici mogu pokrenuti tok povratnih informacija direktno ukucavši `/report-issue` u polje za unos chata. Ova komanda:
 
@@ -42,7 +42,7 @@ Korisnici mogu pokrenuti tok povratnih informacija direktno ukucavši `/report-i
 
 Komanda `/report-issue` je dostupna u svim modovima chata (inline, floating widget, full-screen).
 
-## Asistirano triiranje (AI-Assisted Triage)
+## Asistirano triiranje (AI-Assisted Triage) {#ai-assisted-triage}
 
 Poslano izvještavanje se usmjerava na AI triiranje sloj koji:
 

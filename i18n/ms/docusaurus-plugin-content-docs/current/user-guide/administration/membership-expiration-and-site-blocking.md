@@ -3,11 +3,11 @@ title: Tamat Tempoh Keahlian dan Pemblokiran Laman
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Tamat Tempoh Keahlian dan Pemblokiran Laman
+# Tamat Tempoh Keahlian dan Pemblokiran Laman {#membership-expiration-and-site-blocking}
 
 Panduan ini menerangkan cara Ultimate Multisite mengendalikan tamat tempoh keahlian, tamat tempoh percubaan, dan pemblokiran laman di bahagian hadapan (frontend). Ia meliputi kitaran hayat keahlian dari aktif hingga tamat tempoh, tetapan yang mengawal sama ada laman akan diblokir, dan perkara yang perlu diperiksa apabila laman masih boleh diakses selepas keahlian tamat tempoh.
 
-## Kitaran Hayat Status Keahlian
+## Kitaran Hayat Status Keahlian {#membership-status-lifecycle}
 
 Setiap keahlian dalam Ultimate Multisite mempunyai salah satu status berikut:
 
@@ -24,7 +24,7 @@ Keahlian percuma tidak tamat tempoh secara automatik. Ultimate Multisite mengang
 | **Expired** | Melepasi tarikh tamat tempoh dan tempoh kelonggaran tanpa pembaharuan |
 | **Cancelled** | Dibatalkan secara eksplisit oleh pelanggan atau pentadbir |
 
-### Bagaimana Keahlian Beralih ke Status Tamat Tempoh
+### Bagaimana Keahlian Beralih ke Status Tamat Tempoh {#how-memberships-transition-to-expired}
 
 Ultimate Multisite menjalankan semakan latar belakang **setiap jam** yang mencari keahlian yang sepatutnya ditandakan sebagai tamat tempoh. Semakan ini menggunakan [Action Scheduler](https://actionscheduler.org/) (bukan WP-Cron secara langsung) dan berjalan sebagai tindakan terjadual `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Semakan tamat tempoh mempunyai **tempoh kelonggaran terbina dalam selama 3 hari*
 Tempoh kelonggaran tamat tempoh 3 hari ini berbeza daripada tetapan Tempoh Kelonggaran Pemblokiran Frontend yang diterangkan di bawah. Tempoh kelonggaran tamat tempoh mengawal bila **status berubah** dari aktif/on-hold kepada expired. Tempoh kelonggaran pemblokiran frontend mengawal bila **laman diblokir** selepas status telah berubah.
 :::
 
-#### Keahlian Pembaharuan Automatik vs. Bukan Pembaharuan Automatik
+#### Keahlian Pembaharuan Automatik vs. Bukan Pembaharuan Automatik {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Perbezaan ini sangat penting untuk memahami tingkah laku tamat tempoh:
 
@@ -42,7 +42,7 @@ Perbezaan ini sangat penting untuk memahami tingkah laku tamat tempoh:
 
 - **Keahlian pembaharuan automatik** (`auto_renew = true`): Semakan tamat tempoh cron **mengabaikan ini sepenuhnya**. Pintu gerbang pembayaran (Stripe, PayPal, dsb.) dijangka memberitahu Ultimate Multisite melalui webhooks apabila langganan gagal atau dibatalkan. Jika webhook tidak diterima — disebabkan oleh titik akhir yang salah konfigurasi, gangguan gerbang, atau langganan dibatalkan di luar sistem — keahlian mungkin kekal `active` tanpa had walaupun selepas tarikh tamat tempoh berlalu.
 
-### Bagaimana Percubaan Tamat
+### Bagaimana Percubaan Tamat {#how-trials-end}
 
 Apabila tempoh percubaan keahlian tamat, sistem:
 
@@ -52,11 +52,11 @@ Apabila tempoh percubaan keahlian tamat, sistem:
 
 Proses ini berjalan pada jadual setiap jam yang sama seperti semakan tamat tempoh biasa, tetapi **hanya untuk keahlian bukan pembaharuan automatik**. Untuk percubaan pembaharuan automatik, pintu gerbang pembayaran mengendalikan peralihan dari percubaan ke langganan berbayar.
 
-## Blok Akses Frontend
+## Blok Akses Frontend {#block-frontend-access}
 
 Secara lalai, apabila keahlian tamat tempoh atau berada dalam status on-hold, **hanya dashboard wp-admin yang dihadkan**. Bahagian hadapan awam laman masih boleh diakses oleh pelawat. Untuk menyekat akses awam juga, anda mesti mengaktifkan tetapan **Block Frontend Access**.
 
-### Mengkonfigurasi Tetapan
+### Mengkonfigurasi Tetapan {#configuring-the-setting}
 
 Pergi ke **Ultimate Multisite > Settings > Memberships** dan aktifkan **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tiga tetapan berkaitan mengawal tingkah laku ini:
 | **Frontend Block Grace Period** | Bilangan hari untuk menunggu selepas keahlian tidak aktif sebelum menyekat. Tetapkan kepada `0` untuk menyekat serta-merta. | 0 |
 | **Frontend Block Page** | Halaman pada laman utama untuk mengalihkan pelawat apabila laman diblokir. Jika tidak ditetapkan, pelawat akan melihat mesej "Site not available" generik. | None |
 
-### Apa yang Dilihat Pelawat Apabila Laman Diblokir
+### Apa yang Dilihat Pelawat Apabila Laman Diblokir {#what-visitors-see-when-a-site-is-blocked}
 
 Apabila akses frontend diblokir, pelawat ke laman tersebut akan sama ada:
 
@@ -83,7 +83,7 @@ Apabila akses frontend diblokir, pelawat ke laman tersebut akan sama ada:
 
 Pentadbir laman masih boleh log masuk — halaman log masuk tidak pernah diblokir.
 
-### Apa yang Diblokir dan Bila
+### Apa yang Diblokir dan Bila {#what-gets-blocked-and-when}
 
 Tingkah laku pemblokiran bergantung pada status keahlian:
 
@@ -104,21 +104,21 @@ Walaupun tempoh percubaan telah tamat, keahlian dengan status `trialing` **tidak
 Keahlian yang dibatalkan sentiasa diblokir sebaik sahaja tarikh tamat tempoh berlalu, tanpa mengira sama ada Block Frontend Access dihidupkan. Tempoh Kelonggaran Pemblokiran Frontend **tidak** terpakai kepada keahlian yang dibatalkan.
 :::
 
-## Penyelesaian Masalah: Laman Kekal Boleh Diakses Selepas Tamat Tempoh
+## Penyelesaian Masalah: Laman Kekal Boleh Diakses Selepas Tamat Tempoh {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Jika laman kekal boleh diakses secara awam selepas keahlian tamat tempoh, ikuti semakan ini mengikut urutan:
 
-### 1. Sahkan Tetapan Block Frontend Access Diaktifkan
+### 1. Sahkan Tetapan Block Frontend Access Diaktifkan {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Pergi ke **Ultimate Multisite > Settings > Memberships** dan sahkan toggle **Block Frontend Access** dihidupkan. Tetapan ini **mati secara lalai**, bermakna hanya wp-admin yang dihadkan apabila keahlian menjadi tidak aktif.
 
-### 2. Semak Tempoh Kelonggaran Pemblokiran Frontend
+### 2. Semak Tempoh Kelonggaran Pemblokiran Frontend {#2-check-the-frontend-block-grace-period}
 
 Pada halaman tetapan yang sama, semak nilai **Frontend Block Grace Period**. Jika ini ditetapkan kepada 7 hari, contohnya, bahagian hadapan tidak akan diblokir sehingga 7 hari selepas tarikh tamat tempoh keahlian — walaupun status keahlian sudah `expired`.
 
 Tetapkan ini kepada `0` jika anda mahu pemblokiran serta-merta selepas keahlian menjadi tidak aktif.
 
-### 3. Sahkan Status Keahlian Benar-benar Berubah
+### 3. Sahkan Status Keahlian Benar-benar Berubah {#3-confirm-the-membership-status-has-actually-changed}
 
 Pergi ke **Ultimate Multisite > Memberships** dan semak status keahlian yang terjejas. Jika ia masih menunjukkan `active` walaupun tarikh tamat tempoh telah berlalu, peralihan status belum berlaku. Punca biasa:
 
@@ -126,7 +126,7 @@ Pergi ke **Ultimate Multisite > Memberships** dan semak status keahlian yang ter
 
 - **Tugas cron belum berjalan**: Lihat langkah seterusnya.
 
-### 4. Sahkan Action Scheduler Berjalan
+### 4. Sahkan Action Scheduler Berjalan {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite menggunakan Action Scheduler untuk tugas cronnya. Pergi ke **Tools > Scheduled Actions** dalam pentadbir rangkaian dan cari:
 
@@ -148,7 +148,7 @@ Untuk memastikan pelaksanaan cron yang boleh dipercayai, sediakan tugas cron sis
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Semak Isu Webhook Gerbang (Keahlian Pembaharuan Automatik)
+### 5. Semak Isu Webhook Gerbang (Keahlian Pembaharuan Automatik) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Jika keahlian itu pembaharuan automatik dan langganan gerbang telah dibatalkan atau gagal, tetapi Ultimate Multisite masih menunjukkannya sebagai `active`:
 
@@ -157,7 +157,7 @@ Jika keahlian itu pembaharuan automatik dan langganan gerbang telah dibatalkan a
 
 Jika gerbang menunjukkan langganan dibatalkan tetapi Ultimate Multisite tidak, kemungkinan besar pemberitahuan webhook telah hilang. Anda boleh menukar status keahlian secara manual dalam **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Semak Tempoh Kelonggaran Tamat Tempoh (Peringkat Cron)
+### 6. Semak Tempoh Kelonggaran Tamat Tempoh (Peringkat Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Semakan cron mempunyai tempoh kelonggaran sendiri (lalai: 3 hari) sebelum menandakan keahlian sebagai tamat tempoh. Ini berbeza daripada tempoh kelonggaran pemblokiran frontend. Jumlah masa sebelum laman diblokir boleh jadi:
 
@@ -165,7 +165,7 @@ Semakan cron mempunyai tempoh kelonggaran sendiri (lalai: 3 hari) sebelum menand
 
 Contohnya, dengan tetapan lalai dan tempoh kelonggaran frontend 7 hari, ia boleh mengambil masa sehingga 10 hari selepas `date_expiration` sebelum laman itu benar-benar diblokir.
 
-### 7. Tamatkan Tempoh Keahlian Secara Manual
+### 7. Tamatkan Tempoh Keahlian Secara Manual {#7-manually-expire-a-membership}
 
 Jika anda perlu menyekat laman dengan serta-merta tanpa menunggu kitaran cron, anda boleh menukar status keahlian secara manual:
 
@@ -176,7 +176,7 @@ Jika anda perlu menyekat laman dengan serta-merta tanpa menunggu kitaran cron, a
 
 Pemblokiran frontend akan berkuat kuasa pada muat halaman seterusnya (tertakluk kepada Tempoh Kelonggaran Pemblokiran Frontend untuk keahlian tamat tempoh, atau serta-merta untuk keahlian yang dibatalkan).
 
-## Ringkasan
+## Ringkasan {#summary}
 
 Garis masa penuh dari tarikh tamat tempoh hingga pemblokiran laman:
 
@@ -208,7 +208,7 @@ Untuk keahlian yang dibatalkan, laluan adalah lebih pendek:
   Frontend laman diblokir serta-merta
 ```
 
-## Rujukan Pembangun
+## Rujukan Pembangun {#developer-reference}
 
 Hook dan filter berikut membolehkan anda menyesuaikan tingkah laku tamat tempoh dan pemblokiran:
 

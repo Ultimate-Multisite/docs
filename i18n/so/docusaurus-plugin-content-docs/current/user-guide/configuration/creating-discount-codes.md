@@ -3,13 +3,13 @@ title: Abuurista Code-yada Discountka
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Abuuristaan Koodyada Discount (v2)
+# Abuuristaan Koodyada Discount (v2) {#creating-discount-codes-v2}
 
 _**Fadlan oogu ogow: Maqaalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
 
 Ultimate Multisite-kaaga, waxaad samayn kartaa koodyada discount si aad u siiso macaamiisha rabitaanka (subscriptions) kuuma bixiso qiimo yar oo kala duwan. Waxayna fududahay in la sameeyo!
 
-## Abuurista iyo Wax Ka Bedelka Koodyada Discount
+## Abuurista iyo Wax Ka Bedelka Koodyada Discount {#creating-and-editing-discount-codes}
 
 Si aad samayso ama aad wax ka beddesho kood discount, u tag **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Coupon-ku hadda wuxuu ku jiraa liiskaaga, laga bilaabo xilligaas ayaad riixin ka
 
 ###
 
-### Isticmaalka URL Parameters:
+### Isticmaalka URL Parameters: {#using-url-parameters}
 
 Haddii aad rabto inaad u qaabaysato miisaska qiimahaaga ama aad dhisto bogka koodka coupon-kaaga qurux badan ee website-kaaga oo aad rabto inaad si toos ah ugu adeegsato koodka xisaabtaada foomka checkout-kaaga, waxaad sidaas samayn kartaa iyadoo la isticmaalayo URL parameters.
 

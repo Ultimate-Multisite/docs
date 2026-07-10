@@ -3,19 +3,19 @@ title: Stripe nustatymas
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe bramai (v2) nustatymas
+# Stripe bramai (v2) nustatymas {#setting-up-the-stripe-gateway-v2}
 
 _**SVIRTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
 Jūs galite aktyvuoti iki keturi mokėjimo būdų savo mokėjimų nustatymų puslapyje: Stripe, Stripe Checkout, PayPal ir Manualus. Šiame straipsnyje pateiksime, kaip integruoti su **Stripe**.
 
-## Stripe įjungimas
+## Stripe įjungimas {#enabling-stripe}
 
 Kad Stripe tiktų naudoti kaip mokėjimo būdas jūsų tinkluose, eikite į **Ultimate Multisite > Settings > Payments** ir pažymėkite šį mygtuką (toggle) prie **Stripe** arba **Stripe Checkout** laukimoje „Active Payment Gateways“ sekcijoje.
 
 ![Stripe įjungimas aktyviose mokėjimo būdadeis](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Šis būdas rodo vietą įdėti kredito kortelės numerį during checkout (pameistymo procesą).
 
@@ -25,7 +25,7 @@ Kad Stripe tiktų naudoti kaip mokėjimo būdas jūsų tinkluose, eikite į **Ul
 
 ![Stripe Checkout nukreipimo puslapis during checkout](/img/config/settings-payment-gateways.png)
 
-### Gaukite savo Stripe API raktus
+### Gaukite savo Stripe API raktus {#setting-up-stripe-webhook}
 
 Kai Stripe bus įjungtas kaip mokėjimo būdas, turėsite užpildyti laukus **Stripe Publishable Key** ir **Stripe Secret Key**. Jūs galite gauti šiuose duomenys prisijungiant prie savo Stripe paskyros.
 

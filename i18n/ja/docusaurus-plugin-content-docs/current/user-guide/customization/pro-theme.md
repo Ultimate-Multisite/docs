@@ -1,58 +1,58 @@
 ---
-title: PRO Theme
+title: PRO テーマ
 sidebar_position: 12
-_i18n_hash: 507d2050365bae06955e8492c3e645f7
+_i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PROテーマで管理パネルをカスタマイズする
+# PRO Theme で Admin Panel をカスタマイズする {#customizing-your-admin-panel-with-pro-theme}
 
-クライアント作業を行う際、WordPressの管理ダッシュボードでクライアントにカスタム体験を提供する必要が生じることがよくあります。よりプロフェッショナルな外観と感触を求めている場合、PROテーマが役立つかもしれません。
+クライアント案件では、WordPress の管理 Dashboard でクライアント向けに独自の体験を提供する必要がよくあります。よりプロフェッショナルな外観と使い心地を探しているなら、PRO Theme が役立つかもしれません。
 
-PROテーマは、クライアントのダッシュボードをカスタマイズする際に役立つように開発された管理テーマです。また、Ultimate Multisiteのプレミアムプラグインコアの一部でもあります。
+PRO Theme は、クライアントの Dashboard をカスタマイズする際に役立つよう開発された管理用テーマです。また、Ultimate Multisite のプレミアム plugins コアの一部でもあります。
 
-インストール後、_Plugins_ ページに移動し、ネットワーク上で有効化をクリックしてください。
+インストール後、_Plugins_ ページに移動し、Network で有効化するためにクリックします。
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
-_Pluginsページでネットワーク全体に有効化する_
+_Plugins ページでネットワーク全体に有効化します_
 
-_**NOTE:**_ _インストールしただけでは、クライアント側にテーマを追加するオプションが表示され、ユーザーにのみテーマを追加できるようにマークできます。_
+_**注:**_ _インストールしただけの場合、クライアント側には、そのユーザーだけにテーマを追加するために選択できるオプションとして表示されます。_
 
-これで管理インターフェースが完全に再設計されました！左側の列にPROテーマという新しいメニューも追加されます。
+これで、管理画面のインターフェースが完全に再設計されました！左カラムには PRO Theme という新しいメニューも追加されています。
 
 <!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
-管理パネルの全く新しい外観
+_Admin Panel のまったく新しい外観_
 
-このメニューでは、5つのタブにアクセスできます：
+このメニューでは、5 つのタブにアクセスできます。
 
 <!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
-スタイリング設定
+_スタイル設定_
 
 <!-- Screenshot unavailable: PRO Theme Functionality tab -->
 
-機能
+_機能_
 
 <!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
-カスタムCSS
+_カスタム CSS_
 
 <!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
-インポート/エクスポート
+_インポート/エクスポート_
 
 <!-- Screenshot unavailable: PRO Theme Activate tab -->
 
-PROテーマを有効化
+_PRO Theme を有効化_
 
-それぞれのタブで、スタイリング項目を有効/無効にしたり、機能を許可またはブロックしたり、ネットワーク上のサイトでクライアントが求めているカスタマイズを提供できます。
+各タブでは、スタイル項目の有効化と無効化、機能の許可またはブロックを行い、サイトのネットワーク上でクライアントが求めている可能性のあるカスタマイズを提供できます。
 
-調整後に得られる例を示します：
+いくつか調整すると、次のような結果が得られます。
 
 <!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
-クライアントのダッシュボード
+_クライアントの Dashboard_
 
 <!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
-カスタマイズされたログインページ
+_カスタマイズされたログインページ_

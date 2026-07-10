@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency giúp mạng lưới của bạn chấp nhận thanh toán bằng nhiều loại tiền tệ. Addon này tự động chuyển đổi giá bằng cách sử dụng tỷ giá hối đoái trực tiếp hoặc thủ công, cho phép bạn đặt giá chính xác theo từng sản phẩm cho bất kỳ loại tiền tệ nào, và phát hiện loại tiền tệ ưa thích của mỗi khách truy cập thông qua vị trí địa lý — tất cả được quản lý từ một bảng điều khiển admin duy nhất.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Automatic exchange rate conversion** — giá được chuyển đổi từ loại tiền tệ cơ sở của bạn bằng cách sử dụng tỷ giá lấy từ nhà cung cấp bạn chọn
 - **Per-product pricing overrides** — đặt giá cụ thể theo tiền tệ trên bất kỳ sản phẩm nào để bỏ qua việc chuyển đổi tự động
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency giúp mạng lưới của bạn chấp nhậ
 - **Geolocation-based currency detection** — tự động chọn trước loại tiền tệ phù hợp với quốc gia của khách truy cập
 - **Admin dashboard** — quản lý các loại tiền tệ đang hoạt động, tỷ giá hối đoái và cài đặt nhà cung cấp từ một nơi
 
-## Requirements
+## Requirements {#requirements}
 
 - Ultimate Multisite 2.0.0 hoặc cao hơn
 - Cài đặt WordPress Multisite
 - PHP 7.4 hoặc cao hơn
 
-## Installation
+## Installation {#installation}
 
 1. Tải các tệp plugin lên thư mục `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Kích hoạt plugin thông qua màn hình **Plugins** trong WordPress (Kích hoạt mạng lưới)
 3. Điều hướng đến **Ultimate Multisite → Multi-Currency** để mở bảng điều khiển admin
 4. Thêm các loại tiền tệ bạn muốn chấp nhận và cấu hình nhà cung cấp tỷ giá hối đoái
 
-## Configuration
+## Configuration {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Bảng điều khiển admin Multi-Currency (**Ultimate Multisite → Multi-Currency**) là nơi trung tâm để:
 
@@ -44,7 +44,7 @@ Bảng điều khiển admin Multi-Currency (**Ultimate Multisite → Multi-Curr
 - Xem lại các tỷ giá hiện tại cho tất cả các loại tiền tệ đang hoạt động
 - Đặt tỷ giá thủ công khi các nhà cung cấp tự động không phù hợp
 
-### Exchange Rate Providers
+### Exchange Rate Providers {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Bảng điều khiển admin Multi-Currency (**Ultimate Multisite → Multi-Curr
 
 Chọn nhà cung cấp của bạn tại **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Tỷ giá có thể được làm mới thủ công bất cứ lúc nào hoặc lên lịch để tự động cập nhật.
 
-### Per-Product Pricing Overrides
+### Per-Product Pricing Overrides {#per-product-pricing-overrides}
 
 Khi việc chuyển đổi tự động chưa đủ chính xác, bạn có thể đặt giá chính xác cho một loại tiền tệ cụ thể trên bất kỳ sản phẩm nào:
 
@@ -66,7 +66,7 @@ Khi việc chuyển đổi tự động chưa đủ chính xác, bạn có thể
 
 Các sản phẩm không có giá ghi đè sẽ sử dụng giá đã chuyển đổi từ loại tiền tệ cơ sở của bạn.
 
-### Currency Selector Signup Field
+### Currency Selector Signup Field {#currency-selector-signup-field}
 
 Trường chọn tiền tệ có thể được thêm vào quy trình đăng ký/thanh toán của bạn để khách hàng chọn loại tiền tệ ưa thích khi đăng ký:
 
@@ -76,7 +76,7 @@ Trường chọn tiền tệ có thể được thêm vào quy trình đăng ký
 
 Loại tiền tệ được chọn sẽ được lưu cùng với thông tin đăng ký và được sử dụng cho tất cả các lần thanh toán sau.
 
-### Geolocation-Based Currency Detection
+### Geolocation-Based Currency Detection {#geolocation-based-currency-detection}
 
 Khi tính năng phát hiện vị trí địa lý được bật, addon sẽ ánh xạ quốc gia của khách truy cập tới một loại tiền tệ và chọn trước loại tiền tệ đó trong trường chọn tiền tệ. Để bật tính năng này:
 
@@ -86,27 +86,27 @@ Khi tính năng phát hiện vị trí địa lý được bật, addon sẽ án
 
 Nếu không có ánh xạ nào cho quốc gia của khách truy cập, loại tiền tệ cơ sở của mạng lưới sẽ được sử dụng làm phương án dự phòng.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-### What happens if an exchange rate provider is unavailable?
+### What happens if an exchange rate provider is unavailable? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon sẽ tự động quay lại sử dụng các tỷ giá cuối cùng đã được lấy thành công. Nếu chưa bao giờ lấy được tỷ giá nào, nó sẽ sử dụng tỷ giá thủ công mà bạn đã cấu hình. Chúng tôi khuyến nghị bạn cấu hình tỷ giá thủ công như một biện pháp an toàn.
 
-### Can I use different providers for different currencies?
+### Can I use different providers for different currencies? {#can-i-use-different-providers-for-different-currencies}
 
 Không — chỉ có một nhà cung cấp hoạt động tại một thời điểm cho tất cả các loại tiền tệ. Hãy sử dụng **Manual** nếu bạn cần kiểm soát hoàn toàn các tỷ giá riêng lẻ.
 
-### Does geolocation require a separate plugin?
+### Does geolocation require a separate plugin? {#does-geolocation-require-a-separate-plugin}
 
 Không yêu cầu plugin vị trí địa lý bên ngoài nào. Addon sử dụng tính năng phát hiện IP-to-country tích hợp sẵn của WordPress. Để có độ chính xác cao hơn, bạn có thể tích hợp một dịch vụ vị trí địa lý chuyên dụng thông qua các hook bộ lọc được cung cấp.
 
-### Are per-product overrides applied before or after tax?
+### Are per-product overrides applied before or after tax? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Giá ghi đè theo sản phẩm đặt giá trước thuế bằng loại tiền tệ mục tiêu. Thuế được tính trên giá ghi đè bằng cách sử dụng cấu hình thuế hiện có của bạn.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Released on 2026-04-02
+### Version 1.0.0 — Released on 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - New: Hỗ trợ đa tiền tệ với chuyển đổi tỷ giá hối đoái tự động
 - New: Ghi đè giá theo từng sản phẩm cho giá tiền tệ chính xác

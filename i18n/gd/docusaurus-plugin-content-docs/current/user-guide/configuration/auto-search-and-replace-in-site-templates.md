@@ -3,7 +3,7 @@ title: Sealladh agus Ràdh a' chlàradh sitean
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tha se h-uile a' chruinne seo tha a' chruinne.**_
 
@@ -17,7 +17,7 @@ Air an sin, caithedh a' chruinne a' chruinne a' thàinig a' fhaighinn sin dàta 
 
 Air an sin, salaidh Ultimate Multisite an placeholders gu fhaidhe a' chruinne a' dhèanamh air an dàta a tha a' chruinne a' thàinig gu fhaidhe.
 
-## **A' chruinne "template full of placeholders" a' chruinne**
+## **A' chruinne "template full of placeholders" a' chruinne** {#solving-the-template-full-of-placeholders-problem}
 
 Tha sin gu math, ach tha sinn ag tairgseachadh gu ealaidh: tha faicinn an dàta a' chruinne - a tha a' chruinne a' thàinig - gu fhaidhe le placeholders a' chruinne a' chruinne a' dhèanamh.
 

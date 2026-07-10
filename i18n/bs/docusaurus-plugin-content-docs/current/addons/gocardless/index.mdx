@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: Plaćanje putem GoCardless-a
 
 Dozvolite svojim klijentima da plaćaju članarine i proizvode Ultimate Multisite putem Direktnog debita (Direct Debit) koristeći GoCardless!
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Upload fajl 'ultimate-multisite-gocardless' u direktorij `/wp-content/plugins/`
 2. Aktivizirajte plugin kroz meni 'Plugins' u WordPressu
 3. Pratite korak po korak Wizard da postavite plugin
 
-## Vodič za korištenje
+## Vodič za korištenje {#usage-guide}
 
 _GoCardless_ je gateway za plaćanje dostupan u **Europi i Ujedinjenom Kraljevstvu** koji omogućava plaćanja putem **Direktnog debita**.
 
@@ -29,7 +29,7 @@ Ovaj tutorijal će pokriti kako postaviti _GoCardless_ kako biste počeli primat
 
 _**Napomena: GoCardless radi samo sa sljedećim valutama:**_ **EUR, GBP, AUD, SEK i DKK.**
 
-## Instaliranje dodatka (Add-on)
+## Instaliranje dodatka (Add-on) {#installing-the-add-on}
 
 Prvo, morate instalirati GoCardless dodatak za Ultimate Multisite. To možete učiniti tako da idete na **Ultimate Multisite > Settings > Add-ons (na bočnom panelu)**. I da odaberete GoCardless dodatak sa te liste.
 
@@ -37,7 +37,7 @@ Nakon što je dodatak instaliran i aktiviran, idite na **Ultimate Multisite > Se
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Dobivanje Access Token-a
+## Dobivanje Access Token-a {#getting-an-access-token}
 
 Kreirajte račun na _GoCardless_ (ili na _GoCardless_ sandboxu, ako želite **prvo testirati**, što se preporučuje). Zatim, nakon prijave, navigirajte do stavke menija **Developers**.
 
@@ -61,7 +61,7 @@ Pazite da ga postavite u pravo polje. Ako je **živi token** (live token), isklj
 
 To je sve za prvi korak. Sljedeće, morate postaviti slušalicu za webhook (webhook listener).
 
-## Postavljanje Webhook Listener-a
+## Postavljanje Webhook Listener-a {#setting-up-the-webhook-listener}
 
 Kada se radi o pretplatama, Ultimate Multisite mora biti obaviješten o promjenama statusa pretplate, novim plaćanjima i sličnim stvarima.
 

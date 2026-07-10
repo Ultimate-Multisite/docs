@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent ass en autonomen WordPress-AI-Assistent, dee komplett WordPress-Säiten iwwer natierlechsproocheg Uweisunge plangen, bauen a verwalte kann. Hie stellt eng strukturéiert Rei vu **Fäegkeeten** bereet — eenzel, testbar Aktiounen, déi den Agent opruffe kann — a deckt alles of, vu Contenu-Verwaltung bis zur Upassung vum Design-System. Versioun 1.9.0 füügt Fäegkeete fir Contenu-Erstellung, visuell Säiteniwwerpréiwung iwwer client-säiteg Screenshots, fënnef agebaut Agent-Profiler a Feature Flags fir Zougrëffskontroll a Branding derbäi.
+
+## Haaptfunktiounen {#key-features}
+
+- **Fäegkeete-System** — e modulare, erweiderbare Katalog vun Aktiounen, déi den Agent op denger WordPress-Installatioun opruffe kann
+- **Contenu-Verwaltung** — Bäiträg a Säiten erstellen (inklusiv Zouweisung vu Säite-Virlagen), méi Bäiträg an engem Opruff batch-erstelle, Featured Images setzen a Kontaktformulairë bauen
+- **Visuell Iwwerpréiwung** — Screenshots vu Live-Säiten ophuelen, Virun-/No-Zoustänn vergläichen an eng AI-generéiert Design-Iwwerpréiwung kréien, déi Layout, Typographie, Faarf an Accessibilitéit ofdeckt
+- **Fënnef agebaut Agenten** — Contenu-Schreiwer, Säite-Builder, Design-Studio, Plugin-Manager a Support-Assistent; wiesselbar iwwer den Agent Picker am Chat-Header
+- **Feature Flags** — Schalter fir Zougrëffskontroll a Branding an Settings → Feature Flags fir Roll-Aschränkungen, White-Label-Benennung a Widget-Upassung
+- **Verwaltung vu Custom Post Types** — custom post types registréieren, oplëschten a läschen, mat Persistenz iwwer Neistarten ewech
+- **Verwaltung vu Custom Taxonomies** — custom taxonomies registréieren, oplëschten a läschen, mat Persistenz
+- **Design-System-Fäegkeeten** — eegene CSS afügen, kuratéiert Block-Muster verwalten, de Site-Logo setzen an theme.json-Presets uwenden
+- **Verwaltung vu Global Styles** — theme.json-Wäerter fir Faarfpaletten, Typographie, Ofstänn a méi liesen a schreiwen
+- **Verwaltung vu Navigatiounsmenüen** — Navigatiounsmenüen an hir Elementer programmatesch erstellen an aktualiséieren
+- **Optiounsverwaltung** — WordPress-Optioune liesen a schreiwen, mat enger agebauter Sécherheets-Blocklist fir kritesch Astellungen ze schützen
+- **Installéierbare Fäegkeete-Registry** — zousätzlech Fäegkeete-Päck entdecken an aktivéieren, ouni Kär-Plugin-Dateien z'änneren
+- **Site Builder-Orchestratioun v2** — méistufeg Site-Baupläng mat Plugin-Entdeckung, Fortschrëttsverfolgung a Feeler-Erhuelung
+- **WP-CLI-Benchmark-Kommando** — d'Benchmark-Suite fir Agent-Fäegkeeten aus der Kommandozeil fir CI a Modell-Evaluatioun ausféieren
+
+## Ufuerderungen {#requirements}
+
+- WordPress 6.0 oder méi héich
+- PHP 8.1 oder méi héich
+- WordPress Multisite (netzaktivéiert) oder Single-Site-Installatioun
+- En aktiven AI-Provider-Connector-Plugin (Anthropic, OpenAI oder kompatibel)
+
+## Installatioun {#installation}
+
+1. Luet d'Plugin-Dateien op `/wp-content/plugins/gratis-ai-agent` erop
+2. Aktivéiert de Plugin iwwer den **Plugins**-Bildschierm a WordPress
+3. Navigéiert op **Gratis AI Agent → Settings** a verbann däin AI-Provider
+4. (Optional) Duerchsich den **Abilities Registry**, fir zousätzlech Fäegkeete-Päck z'installéieren
+
+## Schnellstart {#quick-start}
+
+Soubal aktivéiert a mat engem AI-Provider verbonnen, méchs du de **Gratis AI Agent**-Panel an der WordPress-Admin-Säiteleescht op. Gëff eng natierlechsproocheg Uweisung an, an den Agent plangt a féiert déi néideg Schrëtt mat senge verfügbare Fäegkeeten aus.
+
+**Beispill-Uweisungen:**
+
+```
+Erstell e "Portfolio" custom post type mat enger "Project Category" taxonomy.
+```
+
+```
+Füügt eng Dark-Mode-Faarfpalette an den theme an a setz déi primär Faarf op #1a1a2e.
+```
+
+```
+Bau eng Restaurant-Websäit mat engem Online-Menü, Buchungsformulaire a Kontakt-Säit.
+```
+
+## Iwwersiicht iwwer d'Fäegkeeten {#abilities-overview}
+
+Fäegkeete sinn déi atomar Aktiounen, déi den Agent ausféiere kann. All Fäegkeet ass eng registréiert PHP-Klass, déi e Schema (Parameteren a Retour-Typen) bereetstellt, dat den Agent zur Lafzäit liest. Fäegkeete ginn a funktionell Beräicher gruppéiert:
+
+| Beräich | Fäegkeeten |
+|---|---|
+| **Contenu-Verwaltung** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuell Iwwerpréiwung** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design-System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigatiounsmenüen** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Optiounsverwaltung** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installéierbar Fäegkeeten** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Kuck d'[Fäegkeete-Referenz](./abilities) fir déi komplett Parameter-Dokumentatioun a Benotzungsbeispiller.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent liwwert eng `wp gratis-ai-agent`-Kommandofamill fir Benchmarks auszeféieren a Fäegkeeten aus der Kommandozeil ze verwalten. Kuck d'[WP-CLI-Referenz](./wp-cli) fir déi komplett Kommando-Lëscht.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguratioun {#configuration}
+
+All Astellunge sinn ënner **Gratis AI Agent → Settings** am WordPress-Admin:
+
+| Astellung | Beschreiwung |
+|---|---|
+| **AI-Provider** | Wielt a konfiguréiert den aktiven AI-Provider-Connector |
+| **Modell** | Wielt de Sproochmodell, dee fir Agent-Sessioune benotzt gëtt |
+| **Max Tokens** | Token-Budget pro Ufro (Standard 4096) |
+| **Ability Timeout** | Maximal Sekonnen, déi eng eenzel Fäegkeet lafe kann (Standard 30) |
+| **Debug Logging** | Fäegkeete-Opreeg an Agent-Reasoning an de WordPress-Debug-Log protokolléieren |
+
+## Sécherheets-Blocklist fir Optiounsverwaltung {#options-management-safety-blocklist}
+
+D'Fäegkeet fir Optiounen ze verwalten enthält eng agebaute Blocklëscht, déi verhënnert, datt den Agent sensibel WordPress-Optiounen liest oder schreift. D'Standard-Blocklëscht ëmfaasst:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-Optiounen — benotzt dofir en dedizéiert Migratiounsinstrument)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (geheim Schlësselen)
+- `active_plugins`, `template` (Plugin-/Theme-Aktivéierung — benotzt dedizéiert Fäegkeeten)
+- Bezuel-Gateway-Zougangsdaten an API-Schlësselen, déi vun installéierte Plugins registréiert goufen
+
+Zousätzlech Entréeë kënnen iwwer de `gratis_ai_agent_options_blocklist`-Filter derbäigesat ginn.
+
+## Hooks a Filteren {#hooks-and-filters}
+
+### Aktiounen {#actions}
+
+- `gratis_ai_agent_ability_registered` — gëtt ausgeléist, nodeems eng Fäegkeet registréiert gouf, a kritt den Numm vun der Fäegkeetsklass
+- `gratis_ai_agent_plan_started` — gëtt ausgeléist, wann e Websäit-Builder-Plang mat der Ausféierung ufänkt
+- `gratis_ai_agent_plan_completed` — gëtt ausgeléist, wann e Plang erfollegräich fäerdeg ass
+- `gratis_ai_agent_plan_failed` — gëtt ausgeléist, wann e Plang op en net erhuelbare Feeler stéisst
+
+### Filteren {#filters}
+
+- `gratis_ai_agent_abilities` — ännert déi registréiert Fäegkeetslëscht, ier den Agent se lued
+- `gratis_ai_agent_options_blocklist` — erweidert oder reduzéiert d'Sécherheets-Blocklëscht fir Optiounen
+- `gratis_ai_agent_benchmark_questions` — füügt personaliséiert Benchmark-Froen der Evaluatiounssuite bäi
+- `gratis_ai_agent_plan_plugins` — ännert d'Plugin-Entdeckungslëscht wärend der Generéierung vum Websäit-Plang
+
+## Support {#support}
+
+Fir Support, besicht [ultimatemultisite.com](https://ultimatemultisite.com) oder maacht en Issue am Plugin-Repository op.
+
+## Changelog {#changelog}
+
+Kuckt de [Changelog](./changelog) fir déi komplett Versiounsgeschicht.

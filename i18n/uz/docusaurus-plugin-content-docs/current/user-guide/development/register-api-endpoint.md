@@ -3,7 +3,7 @@ title: API Uchinchi Nuqtasini ro'yxatdan o'tkazish
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API nuqtai nazaridan
+# Ultimate Multisite Register API nuqtai nazaridan {#the-ultimate-multisite-register-api-endpoint}
 
 Bu tutorialda siz Ultimate Multisite /register API endpoint dan foydalanib, tarmohingizdagi yangi mijoz uchun butun onboarding (kirish) jarayonini qanday yaratishingizni va buni Zapier orqali qanday amalga oshirishni o'rganasiz.
 
@@ -29,11 +29,11 @@ Mana API sozlamalari sahifasining to'liq ko'rinishi:
 
 Endi, biz endpoint haqida ko'rib chiqamiz va Zapierda ro'yxatdan olinish harakatini yaratamiz.
 
-## Endpoint body parametrlari
+## Endpoint body parametrlari {#endpoint-body-parameters}
 
 Endpointga yuborishimiz kerak bo'lgan minimal ma'lumotlar haqida umumiy ko'rinishni ko'ramiz. Ushbu maqolaning oxirida to'liq chaqiruv (call) mavjud bo'ladi.
 
-### Customer (Mijoz)
+### Customer (Mijoz) {#customer}
 
 Buni foydalanuvchi va Ultimate Multisite Mijosi yaratish jarayoni uchun zarur bo'lgan ma'lumotlar quyidagilardir:
 
@@ -43,25 +43,25 @@ Sizning tarmoq (network)da yaratilgan mijoz ID'sini yuborish mumkin. Agar u yubo
 
 "customer" : { "user_id" : integer, "username" : "string", "password" : "string", "email" : "string" },
 
-### **A'zo bo'lish (Membership)**
+### **A'zo bo'lish (Membership)** {#membership}
 
 Bizning bu ob'ekt ichida kerak bo'ladigan yagona ma'lumot — A'zo bo'lish holati (Membership Status).
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" dan biri }
 
-### **Mahsulotlar**
+### **Mahsulotlar** {#products}
 
 Mahsulotlarga tarmog'ingizdagi bitta yoki undan ko'proq mahsulot ID-lari massivi beriladi. Ehtiyot bo'ling, bu endpoint mahsulotlarni yaratmaydi. Mahsulot yaratish endpointi haqida Ultimate Multisite hujjatlarini tekshirib ko'ring.
 
 **"products" : [1,2],**
 
-### To'lov (Payment)
+### To'lov (Payment) {#payment}
 
 Membership bilan bir xil, bizga faqat holati kerak bo'ladi.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" ichidan biri },**
 
-### Sayt (Site)
+### Sayt (Site) {#site}
 
 Va tanani yopish uchun saytning URL'si va Unvoni kerak, ikkalasi ham Site obyekti ichida bo'lishi kerak.
 
@@ -69,11 +69,11 @@ Va tanani yopish uchun saytning URL'si va Unvoni kerak, ikkalasi ham Site obyekt
 
 Register endpointi natijasi yangi yaratilgan membership ma'lumotlari bilan massiv sifatida qaytariladi.
 
-## Zapierda harakat (action) yaratish
+## Zapierda harakat (action) yaratish {#creating-an-action-in-zapier}
 
 Bu yangi va yanada mustahkam hisob yaratish nuqtasi bilan Zapier'da ham yangi harakatni ishlatishingiz mumkin bo'ladi. Yangi Zapier versiyasining barcha imkoniyatlaridan qanday foydalanish va zavqlanishni bilasizmi? Qayta o'rganing. (link?)
 
-### Harakat yaratish
+### Harakat yaratish {#creating-an-action}
 
 Zapier bilan ro'yxatdan o'tish nuqtasidan qanday foydalanishni yaxshiroq ko'rsatish uchun Google Forms bilan integratsiya yaratib ko'raylik. Bu forma har bir to'ldirilganda va ma'lumotlar formning javoblar yozuviga saqlanganda, Ultimate Multisite tarmog'ida yangi a'zo (membership) yaratiladi.
 
@@ -97,7 +97,7 @@ Ma'lumotlarni sozlaganingizdan so'ng, yakuniy testga o'ting. Oxirgi ekranda siz 
 
 Yangi Zapingizni sinab ko'ring, u muvaffaqiyatli yakunlanishi kerak. Agar qandaydir xato yuz bersa, barcha maydonlarni tekshiring va ular to'g'ri yuborilayotganligini ta'minlang. Ma'lumotlar juda ko'p bo'lgani uchun ba'zi narsalar sezilmasligi mumkin.
 
-### To'liq endpoint parametrlari
+### To'liq endpoint parametrlari {#complete-endpoint-parameters}
 
 Mana to'liq chaqiruv va yuborilishi mumkin bo'lgan maydonlarning barcha imkoniyatlari.
 

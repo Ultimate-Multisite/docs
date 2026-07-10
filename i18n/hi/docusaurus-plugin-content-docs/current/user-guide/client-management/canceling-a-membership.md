@@ -1,31 +1,32 @@
 ---
 title: सदस्यता रद्द करना
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# मेंबरशिप रद्द करना (v2)
+# Membership रद्द करना (v2) {#canceling-a-membership-v2}
 
-_**महत्वपूर्ण नोट: यह आर्टिकल Ultimate Multisite वर्जन 2.x के लिए है।**_
+_**महत्वपूर्ण नोट: यह लेख Ultimate Multisite संस्करण 2.x से संबंधित है।**_
 
-आपके ग्राहकों के लिए मेंबरशिप रद्द करना काफी आसान है।
+आपके ग्राहकों की ओर से membership रद्द करना बहुत आसान है।
 
-अगर आपका यूज़र अपनी मेंबरशिप रद्द करना चाहता है, तो उन्हें सबसे पहले अपने **Account** पेज पर जाना होगा।
+यदि आपका उपयोगकर्ता अपनी membership रद्द करना चाहता है, तो उसे पहले अपने ****Account**** पृष्ठ पर जाना चाहिए।
 
-वहाँ, उन्हें **Danger Zone** में जाना होगा और **Delete Account** पर क्लिक करना होगा।
+वहाँ, उसे **Danger Zone** पर जाना चाहिए और **Delete Account** पर क्लिक करना चाहिए।
 
-![Account पेज पर Danger Zone और Delete Account बटन](/img/admin/memberships-list.png)
+![Delete Account बटन के साथ Account पृष्ठ का Danger Zone](/img/account-page/danger-zone.png)
 
-एक पॉप-अप खुलेगा जो उनसे कन्फर्मेशन माँगेगा। उन्हें **Confirm Account Deletion** ऑप्शन को ऑन करना होगा और फिर **Delete Account** पर क्लिक करना होगा।
+एक मॉड्यूल खुलेगा, जो उनसे पुष्टि मांगेगा। उन्हें **Confirm Account Deletion** विकल्प चालू करना चाहिए और **Delete Account** पर क्लिक करना चाहिए।
 
-![Confirm Account Deletion डायलॉग](/img/admin/memberships-list.png)
+![Confirm Account Deletion संवाद](/img/account-page/delete-account-confirm.png)
 
-इससे वे साइट से लॉग आउट हो जाएँगे और आपके नेटवर्क पर उनकी मेंबरशिप रद्द हो जाएगी, साथ ही उनकी साइट भी आपके नेटवर्क से डिलीट हो जाएगी।
+इससे वे साइट से लॉग आउट हो जाएंगे और आपके नेटवर्क पर उनकी membership रद्द हो जाएगी, साथ ही उनकी साइट आपके नेटवर्क से हटा दी जाएगी।
 
-![अकाउंट डिलीट होने के बाद लॉग आउट](/img/admin/memberships-list.png)
+![Account हटाने के बाद लॉग आउट](/img/account-page/logged-out-after-delete.png)
 
-![मेंबरशिप रद्द होने की पुष्टि](/img/admin/memberships-list.png)
+![Membership रद्द होने की पुष्टि](/img/account-page/membership-canceled.png)
 
-**महत्वपूर्ण:** ध्यान दें कि इस एक्शन से ग्राहक आपके नेटवर्क से पूरी तरह हटेगा नहीं, क्योंकि एक ग्राहक के पास एक से ज़्यादा मेंबरशिप हो सकती हैं या कोई भी मेंबरशिप नहीं हो सकती।
+**महत्वपूर्ण:** ध्यान दें कि यह कार्रवाई ग्राहक को आपके नेटवर्क से बाहर नहीं करेगी, क्योंकि किसी ग्राहक के पास एक से अधिक membership हो सकती हैं या उससे कोई भी membership जुड़ी नहीं हो सकती।
 
-![रद्द करने के बाद भी ग्राहक नेटवर्क में मौजूद](/img/admin/memberships-list.png) | ![बिना एक्टिव मेंबरशिप वाला ग्राहक](/img/admin/memberships-list.png)  
----|---
+![रद्द करने के बाद भी ग्राहक नेटवर्क में मौजूद है](/img/admin/customer-after-cancel.png)
+
+![कोई सक्रिय membership न रखने वाला ग्राहक](/img/admin/memberships-customer-empty.png)

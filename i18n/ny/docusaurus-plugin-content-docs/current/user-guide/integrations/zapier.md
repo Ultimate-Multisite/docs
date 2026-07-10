@@ -3,7 +3,7 @@ title: Kukonza kwa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kukhaza Ultimate Multisite ndi Zapier
+# Kukhaza Ultimate Multisite ndi Zapier {#integrating-ultimate-multisite-with-zapier}
 
 M'moyo mwa maulendo, tulizama za [Webhooks](webhooks.md) ndipo tikufunsa kuti zikwanira kutumikidwa kudzera kwa applications zingine.
 
@@ -15,7 +15,7 @@ Mungathe kupanga **Triggers** zomwe zimapambana pamene zinthu zikuyenera pam'moy
 
 Izi zimakwanira chifukwa cha kuti **Ultimate Multisite Zapier's triggers** ndi actions zimapangidwa ndi [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kodi mungutse bwanji
+## Kodi mungutse bwanji {#how-to-start}
 
 Mmodzi, simukumbutsa Ultimate Multisite m'moyo wa Zapier. Mwachitsancho, mungupambane ku [this link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Kwenye sehemu ya URL, weka URL yako yote ya network, ikiwemo protocol (HTTP au H
 
 Chagua kitufe cha **Yes, Continue** ili kuendelea na hatua inayofuata. Kuti zote zikifanya kazi vizuri, utapokea salamu kutoka kwa akaunti yako mpya iliyounganishwa! Chagua **Continue** ili kutengeneza trigger mpya.
 
-## Ujuzi wa kutengeneza Trigger mpya
+## Ujuzi wa kutengeneza Trigger mpya {#how-to-create-a-new-trigger}
 
 Sasa uko na akaunti iliyounganishwa, unaweza kuona matukio yanayopatikana. Tuachue tukio la **payment_received** kwa ajili ya hapa tutorial hii.
 
@@ -67,7 +67,7 @@ Katika hatua hii, Zapier itachunguza kama unaweza **kupata payload maalum kwa tu
 
 M'mulo m'mulo, mu ntchito wa tutorial wathu, uli **ulopanga bwino** ndipo ulipereka mfundo za payload. Mfundo izi zikukonza kuti muwoneze mwayi pamene mukugwira actions. Trigger wanu umene wakhulupanga ndi kukhala wokhazikitsa ndi applications zina.
 
-## Kodi muli bwanji mwagwira Actions?
+## Kodi muli bwanji mwagwira Actions? {#how-to-create-actions}
 
 Actions zimayendetsa mwayi wathu monga momwe zikugwira triggers, kuti zikukonza zinthu zatsopano m'mwayi wanu.
 
@@ -79,7 +79,7 @@ M'mwayi wosiyanasi, muli ndi kuyesa authentication wanu, monga momwe tili yomwe 
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Kukhazikitsa Action
+### Kukhazikitsa Action {#setting-up-the-action}
 
 Iyi ndi **mwayi wofunika wa action** ndipo m'mwayi wosiyanasi, zinthu zimakhala ziri ndi momwe zikuyendetsa. Mfundo yoyamba yomwe mudzakhwera ndi **Item**. Item ndi **model ya mwayi wanu** monga **Customers, Payments, Sites, Emails** ndi zina.
 

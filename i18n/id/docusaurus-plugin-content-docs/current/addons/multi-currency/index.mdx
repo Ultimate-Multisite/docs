@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Mata Uang
+# Multi-Mata Uang {#multi-currency}
 
 Ultimate Multisite: Multi-Mata Uang memungkinkan jaringan Anda menerima pembayaran dalam berbagai mata uang. Ini secara otomatis mengonversi harga menggunakan nilai tukar langsung atau manual, memungkinkan Anda mengatur harga per produk yang tepat untuk mata uang apa pun, dan mendeteksi mata uang pilihan pengunjung melalui geolokasi — semuanya dikelola dari satu dashboard admin.
 
-## Fitur Utama
+## Fitur Utama {#key-features}
 
 - **Konversi nilai tukar otomatis** — harga dikonversi dari mata uang dasar Anda menggunakan nilai tukar yang diambil dari penyedia pilihan Anda
 - **Pengaturan harga per produk** — atur harga spesifik mata uang pada produk apa pun untuk melewati konversi otomatis
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Mata Uang memungkinkan jaringan Anda menerima pembayar
 - **Deteksi mata uang berbasis geolokasi** — secara otomatis memilih mata uang yang sesuai dengan negara pengunjung
 - **Dashboard admin** — kelola mata uang aktif, nilai tukar, dan pengaturan penyedia dari satu tempat
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - Ultimate Multisite 2.0.0 atau lebih tinggi
 - Instalasi WordPress Multisite
 - PHP 7.4 atau lebih tinggi
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file plugin ke `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktifkan plugin melalui layar **Plugins** di WordPress (Aktifkan Jaringan)
 3. Arahkan ke **Ultimate Multisite → Multi-Currency** untuk membuka dashboard admin
 4. Tambahkan mata uang yang ingin Anda terima dan konfigurasikan penyedia nilai tukar Anda
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
-### Dashboard Admin
+### Dashboard Admin {#admin-dashboard}
 
 Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Currency**) adalah tempat pusat untuk:
 
@@ -44,7 +44,7 @@ Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Currency**) adal
 - Meninjau nilai tukar saat ini untuk semua mata uang aktif
 - Mengatur nilai manual ketika penyedia otomatis tidak cocok
 
-### Penyedia Nilai Tukar
+### Penyedia Nilai Tukar {#exchange-rate-providers}
 
 | Penyedia | Deskripsi |
 |---|---|
@@ -55,7 +55,7 @@ Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Currency**) adal
 
 Pilih penyedia Anda di **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Nilai tukar dapat disegarkan secara manual kapan saja atau dijadwalkan untuk diperbarui secara otomatis.
 
-### Pengaturan Harga Per Produk
+### Pengaturan Harga Per Produk {#per-product-pricing-overrides}
 
 Ketika konversi otomatis tidak cukup akurat, Anda dapat mengatur harga yang tepat untuk mata uang tertentu pada produk apa pun:
 
@@ -66,7 +66,7 @@ Ketika konversi otomatis tidak cukup akurat, Anda dapat mengatur harga yang tepa
 
 Produk tanpa pengaturan ulang akan menggunakan harga yang dikonversi dari mata uang dasar Anda.
 
-### Kolom Pemilih Mata Uang Saat Pendaftaran
+### Kolom Pemilih Mata Uang Saat Pendaftaran {#currency-selector-signup-field}
 
 Kolom pemilih mata uang dapat ditambahkan ke alur pendaftaran/checkout Anda sehingga pelanggan memilih mata uang pilihan mereka saat mendaftar:
 
@@ -76,7 +76,7 @@ Kolom pemilih mata uang dapat ditambahkan ke alur pendaftaran/checkout Anda sehi
 
 Mata uang yang dipilih akan disimpan dengan langganan dan digunakan untuk semua penagihan berikutnya.
 
-### Deteksi Mata Uang Berbasis Geolokasi
+### Deteksi Mata Uang Berbasis Geolokasi {#geolocation-based-currency-detection}
 
 Ketika deteksi geolokasi diaktifkan, addon memetakan negara pengunjung ke mata uang dan memilihnya sebelumnya di kolom pemilih mata uang. Untuk mengaktifkan:
 
@@ -86,27 +86,27 @@ Ketika deteksi geolokasi diaktifkan, addon memetakan negara pengunjung ke mata u
 
 Jika tidak ada pemetaan untuk negara pengunjung, mata uang dasar jaringan akan digunakan sebagai cadangan.
 
-## Pertanyaan yang Sering Diajukan
+## Pertanyaan yang Sering Diajukan {#frequently-asked-questions}
 
-### Apa yang terjadi jika penyedia nilai tukar tidak tersedia?
+### Apa yang terjadi jika penyedia nilai tukar tidak tersedia? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon akan kembali menggunakan nilai tukar terakhir yang berhasil diambil. Jika nilai tukar belum pernah diambil, ia akan kembali menggunakan nilai manual yang telah Anda konfigurasikan. Disarankan untuk mengonfigurasi nilai manual sebagai jaring pengaman.
 
-### Bisakah saya menggunakan penyedia yang berbeda untuk mata uang yang berbeda?
+### Bisakah saya menggunakan penyedia yang berbeda untuk mata uang yang berbeda? {#can-i-use-different-providers-for-different-currencies}
 
 Tidak — satu penyedia aktif pada satu waktu untuk semua mata uang. Gunakan **Manual** jika Anda membutuhkan kendali penuh atas nilai individual.
 
-### Apakah geolokasi memerlukan plugin terpisah?
+### Apakah geolokasi memerlukan plugin terpisah? {#does-geolocation-require-a-separate-plugin}
 
 Tidak diperlukan plugin geolokasi eksternal. Addon menggunakan deteksi IP-ke-negara bawaan WordPress. Untuk akurasi yang lebih tinggi, layanan geolokasi khusus dapat diintegrasikan melalui hook filter yang disediakan.
 
-### Apakah pengaturan ulang per produk diterapkan sebelum atau sesudah pajak?
+### Apakah pengaturan ulang per produk diterapkan sebelum atau sesudah pajak? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Pengaturan ulang per produk menetapkan harga pra-pajak dalam mata uang target. Pajak dihitung di atas harga pengaturan ulang menggunakan konfigurasi pajak Anda yang sudah ada.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versi 1.0.0 — Dirilis pada 2026-04-02
+### Versi 1.0.0 — Dirilis pada 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Baru: Dukungan multi-mata uang dengan konversi nilai tukar otomatis
 - Baru: Pengaturan harga per produk untuk harga spesifik mata uang yang tepat

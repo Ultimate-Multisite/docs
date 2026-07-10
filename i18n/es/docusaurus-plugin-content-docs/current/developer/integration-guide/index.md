@@ -1,15 +1,17 @@
 ---
 title: Guía de integración
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guía de Integración
+# Guía de integración {#integration-guide}
 
-Esta guía cubre patrones comunes de integración con Ultimate Multisite, incluyendo la conexión a servicios externos, la creación de pasarelas de pago personalizadas y el manejo de webhooks.
+Esta guía cubre patrones comunes de integración con Ultimate Multisite, incluyendo la conexión con servicios externos, la creación de pasarelas de pago personalizadas y la gestión de webhooks.
 
-## Integración con CRM
+Para infraestructura de inquilinos aislada, consulta [Integración de Multi-Tenancy](./multi-tenancy) para obtener orientación sobre el arranque de inquilinos soberanos, la verificación de migraciones, SSO y la eliminación.
 
-Sincroniza los datos de los clientes con tu CRM cuando nuevos clientes se registren:
+## Integración con CRM {#crm-integration}
+
+Sincroniza los datos de clientes con tu CRM cuando se registren nuevos clientes:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integración de Analítica
+## Integración de Analytics {#analytics-integration}
 
 Rastrea eventos clave del negocio a lo largo del ciclo de vida del cliente:
 
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Próximos Pasos
+## Próximos pasos {#next-steps}
 
-- [Desarrollo de Pasarela Personalizada](./custom-gateway) — Construye tu propia pasarela de pago
-- [Manejo de Webhooks](./webhooks) — Crea puntos finales de webhook personalizados
+- [Desarrollo de pasarela personalizada](./custom-gateway) — Crea tu propia pasarela de pago
+- [Gestión de webhooks](./webhooks) — Crea endpoints de webhook personalizados
+- [Integración de Multi-Tenancy](./multi-tenancy) — Integra con flujos del ciclo de vida de inquilinos soberanos

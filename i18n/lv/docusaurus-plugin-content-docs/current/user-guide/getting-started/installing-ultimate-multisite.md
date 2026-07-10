@@ -3,13 +3,13 @@ title: Ultimate Multisite instalēšana
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite instalēšana
+# Ultimate Multisite instalēšana {#installing-ultimate-multisite}
 
 :::note
 Šī apmācība pieņem, ka jums jau ir instalēts un konfigurēts WordPress Multisite. Lai uzzinātu, kā to izdarīt, apskatiet šo WP Beginner apmācību: [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/).
 :::
 
-## Spraudņa instalēšana
+## Spraudņa instalēšana {#installing-the-plugin}
 
 Ultimate Multisite ir pieejams bez maksas vietnē [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Pēc aktivizācijas jūs automātiski tiksiet novirzīts uz iestatīšanas vedni
 
 ![Aktivizētais spraudnis un novirzīšana uz vedni](/img/installation/plugin-activated.png)
 
-## Iestatīšanas vednis
+## Iestatīšanas vednis {#setup-wizard}
 
 Iestatīšanas vednis palīdzēs jums konfigurēt Ultimate Multisite aptuveni 10 minūšu laikā.
 
-### Sākums
+### Sākums {#welcome}
 
 Noklikšķiniet uz **Sākt**, lai sāktu.
 
 ![Iestatīšanas vedņa sākuma ekrāns](/img/installation/wizard-welcome.png)
 
-### Pirmsinstalēšanas pārbaudes
+### Pirmsinstalēšanas pārbaudes {#pre-install-checks}
 
 Šajā solī tiek pārbaudīta jūsu sistēmas informācija un WordPress instalācija, lai pārliecinātos, ka tā atbilst Ultimate Multisite prasībām. Ja viss izskatās labi, noklikšķiniet uz **Doties uz nākamo soli**.
 
@@ -51,31 +51,31 @@ Ja Ultimate Multisite ir instalēts, bet **vēl nav aktivizēts visā tīklā** 
 Noklikšķinot uz **Aktivizēt visā tīklā**, spraudnis automātiski tiek aktivizēts visā jūsu daudzvietņu tīklā. Pēc aktivizācijas vednis turpina darboties kā parasti, pārejot pie instalēšanas soļa. Jums nav jāpamet vedni, lai labotu aktivizācijas statusu.
 :::
 
-### Instalēšana
+### Instalēšana {#installation}
 
 Instalētājs izveidos nepieciešamās datubāzes tabulas un instalēs failu `sunrise.php`, kas Ultimate Multisite darbībai ir nepieciešams. Noklikšķiniet uz **Instalēt**, lai turpinātu.
 
 ![Instalēšanas solis, kurā redzamas datubāzes tabulas un fails sunrise.php](/img/installation/wizard-installation.png)
 
-### Jūsu uzņēmums
+### Jūsu uzņēmums {#your-company}
 
 Aizpildiet savu uzņēmuma informāciju un iestatiet noklusējumu valūtu. Šī informācija tiks izmantota visā jūsu WaaS platformā. Kad esat pabeidzis, noklikšķiniet uz **Turpināt**.
 
 ![Jūsu uzņēmuma konfigurācijas solis](/img/installation/wizard-your-company.png)
 
-### Noklusējums saturs
+### Noklusējums saturs {#default-content}
 
 Šajā solī var instalēt iepriekš definētas veidnes, produktus un citu sākuma saturu. Tas ir lielisks veids, kā iepazīties ar Ultimate Multisite funkcijām. Noklikšķiniet uz **Instalēt**, lai pievienotu noklusējumu saturu, vai izlaidiet šo soli, ja vēlaties sākt no nulles.
 
 ![Noklusējuma satura instalēšanas solis](/img/installation/wizard-default-content.png)
 
-### Ieteicamie spraudņi
+### Ieteicamie spraudņi {#recommended-plugins}
 
 Pēc izvēles instalējiet ieteiktos papildspraudņus. Noklikšķiniet uz **Instalēt**, lai tos pievienotu, vai pārejiet tālāk.
 
 ![Ieteikto spraudņu solis](/img/installation/wizard-recommended-plugins.png)
 
-### Gatavs!
+### Gatavs! {#ready}
 
 Tas viss! Jūsu Ultimate Multisite instalēšana ir pabeigta. Tagad varat sākt izveidot savu Website as a Service platformu no **Tīkla administratora informācijas panelī**.
 

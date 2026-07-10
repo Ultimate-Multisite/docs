@@ -1,42 +1,46 @@
 ---
-title: Instellen van handmatige betalingen
+title: Handmatige betalingen instellen
 sidebar_position: 20
-_i18n_hash: a780a809c96da21ceb3ec6bb67a016d7
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Setting Up Manual Payments (v2)
+# Handmatige betalingen instellen (v2) {#setting-up-manual-payments-v2}
 
-_**BELANGRIJK: Deze artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Handmatige betalingen zijn een manier om u andere betaalmethoden aan te bieden als **Stripe** of **PayPal** niet beschikbaar zijn voor uw gebruikers. Het kan een overschrijving of bankoverschrijving zijn of een andere betaalmethode die lokaal beschikbaar is voor uw gebruikers.
+Handmatige betalingen zijn een manier om andere betaalmethoden aan te bieden als **Stripe** of **PayPal** niet beschikbaar is voor je gebruikers. Dit kan een overschrijving of bankoverschrijving zijn, of een andere betaalmethode die lokaal beschikbaar is voor je gebruikers.
 
-## Hoe handmatige betalingen inschakelen
+## Handmatige betalingen inschakelen {#how-to-enable-manual-payments}
 
-Het instellen van handmatige betalingen is heel eenvoudig. U hoeft het alleen te activeren onder betaalgateways en gedetailleerde instructies te geven over hoe de gebruiker de betaling moet doen.
+Het instellen van handmatige betaling is heel eenvoudig. Je hoeft het alleen in te schakelen onder betaalgateways en gedetailleerde instructies toe te voegen over hoe de gebruiker de betaling moet verzenden.
 
-Ga eerst naar **Ultimate Multisite > Settings > Payments**. Onder **Payment Gateways** schakelt u **Manual** in. U ziet dan een **Payment Instructions**-vak verschijnen.
+Ga eerst naar **Ultimate Multisite > Settings > Payments**. Schakel onder **Payment Gateways** **Manual** in. Je zult zien dat er een vak **Payment Instructions** voor je verschijnt.
 
-Voeg in dit vak de informatie toe die uw klant nodig heeft om de betaling te doen. Het kan uw bankrekeninggegevens en uw e-mailadres zijn, zodat de klant u de betalingsbevestiging kan sturen, bijvoorbeeld.
+Voeg in dit vak de informatie toe die je klant nodig heeft om de betaling uit te voeren. Dit kunnen bijvoorbeeld je bankrekeninggegevens en je e-mailadres zijn, zodat de klant je de betalingsbevestiging kan sturen.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Schakelaar voor handmatige betaalgateway met tekstgebied voor Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Na het instellen klikt u gewoon op **Save Settings** en het is klaar. Wanneer gebruikers zich registreren op uw netwerk, zien ze een bericht waarin staat dat ze uw instructies zullen ontvangen om de aankoop te voltooien.
+Hier is de instellingeninterface voor de handmatige gateway:
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Instellingen voor handmatige gateway](/img/config/manual-gateway-settings.png)
 
-En ze ontvangen ook een bericht op uw **Thank You**-pagina met uw betalingsinstructies.
+Klik na het instellen gewoon op **Save Settings** en het is klaar. Wanneer gebruikers zich registreren voor je netwerk, zien ze een bericht dat aangeeft dat ze je instructies zullen ontvangen om de aankoop te voltooien.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+![Registratiebevestigingsbericht dat de gebruiker vertelt dat hij betalingsinstructies zal ontvangen](/img/frontend/registration-manual-notice.png)
 
-## Handmatige betalingen bevestigen
+En ze ontvangen ook een bericht op je **Thank You**-pagina met je betalingsinstructies.
 
-Om een handmatige betaling te bevestigen, ga naar het **Payments**-menu aan de linkerkant. Daar ziet u alle betalingen op uw netwerk en hun details, inclusief hun **status**. Een handmatige betaling heeft altijd een **Pending**-status totdat u deze handmatig wijzigt.
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+## Handmatige betalingen bevestigen {#confirming-manual-payments}
 
-Ga naar de betalingspagina door op de **reference code** te klikken. Op deze pagina heeft u alle details van de lopende betaling, zoals referentie-ID, producten, tijdstempels en meer.
+Om een handmatige betaling te bevestigen, ga je naar het menu **Payments** in de linkerbalk. Daar kun je alle betalingen op je netwerk en hun details zien, inclusief hun **status**. Een handmatige betaling heeft altijd de status **Pending** totdat je deze handmatig wijzigt.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Betalingslijst met openstaande handmatige betaling](/img/admin/payments-list.png)
 
-Op de rechterkolom kunt u de status van de betaling wijzigen. Door deze te wijzigen naar **Completed** en de optie **Activate Membership** in te schakelen, wordt de site van uw klant geactiveerd en is hun lidmaatschap actief.
+Open de betaalpagina door op de **referentiecode** te klikken. Op deze pagina heb je alle details van de openstaande betaling, zoals referentie-ID, producten, tijdstempels en meer.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Pagina met betalingsdetails met referentiecode, producten en totalen](/img/admin/payment-edit.png)
+
+In de rechterkolom kun je de status van de betaling wijzigen. Door deze te wijzigen naar **Completed** en de optie **Activate Membership** in te schakelen, wordt de site van je klant ingeschakeld en wordt hun membership actief.
+
+![Pagina voor betalingsbewerking met Status ingesteld op Completed en schakelaar Activate Membership](/img/admin/payment-activate-membership.png)

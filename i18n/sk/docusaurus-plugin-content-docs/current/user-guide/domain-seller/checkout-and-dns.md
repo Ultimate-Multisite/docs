@@ -3,13 +3,13 @@ title: Pole pokladne a DNS zákazníka
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Správa políčka na platbu a DNS zákazníka
+# Správa políčka na platbu a DNS zákazníka {#checkout-field-and-customer-dns-management}
 
-## Pole Výber domény v pokladni
+## Pole Výber domény v pokladni {#the-domain-selection-checkout-field}
 
 Pole **Výber domény** je prvok v pokladni, ktorý zákazníkom umožňuje vybrať, ako si získa doménu pre svoj web. Pridajte ho do aknéhokoľvek formulára na platbu, aby ste umožnili predaj domén.
 
-### Pridanie pole do formulára na platbu
+### Pridanie pole do formulára na platbu {#adding-the-field-to-a-checkout-form}
 
 1. Prejdite do **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Otvorte alebo vytvorte formulár na platbu
@@ -18,7 +18,7 @@ Pole **Výber domény** je prvok v pokladni, ktorý zákazníkom umožňuje vybr
 5. Konfigurujte možnosti pola (vidieť nižšie)
 6. Uložte formulár
 
-### Možnosti pola
+### Možnosti pola {#field-options}
 
 **Doménové režimy** — Vyberte, ktoré záložky zákazník uvidí. Každý režim môžete vriadu zapnúť alebo vypnúť nezávisle:
 
@@ -32,7 +32,7 @@ Pole **Výber domény** je prvok v pokladni, ktorý zákazníkom umožňuje vybr
 
 **Produkt domény** — Moždenne pole pripävte (pin) k špecifickému produktovi domény. Ak nie je nastavené, doplnok automaticky vyberie zodpovedajúci produkt na základe TLD, ktoré zákazník hľadá.
 
-### Pole s kontaktnými údajmi registráta
+### Pole s kontaktnými údajmi registráta {#registrant-contact-fields}
 
 Keď si zákazník vyberie záložku **Register New Domain** (Registrovať novú doménu), formulár na platbu pridá pole s kontaktnými údajmi registráta in-line:
 
@@ -43,11 +43,11 @@ Keď si zákazník vyberie záložku **Register New Domain** (Registrovať novú
 
 Tieto sú vyžadované všetkými registrárami a validované pred vykonaním API volania na registrácia. Telefónne čísla sa automaticky formátujú do medzinárodného formátu `+CC.NNN`, ktorý očakávajú registrári.
 
-### Automaticky generovaná URL adresa webu
+### Automaticky generovaná URL adresa webu {#auto-generated-site-url}
 
 Keď zákazník zaregistruje alebo mapuje doménu, pole URL adresy webu sa automaticky vyplní z vybraného domény. Zákazníci si nemusí vyplnený samostatné pole pre URL adresu.
 
-### Chovanie vyhľadávania
+### Chovanie vyhľadávania {#search-behaviour}
 
 - Dostupnosť domény sa kontroluje v reálnom čase pomocou AJAX pri zadávaní zákazníkom textu
 - Keď je preferovaná doména nedostupná, zobrazujú sa návrhy alternatívnych TLD (doménových koncoviek)
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Správa DNS pre zákazníkov
+## Správa DNS pre zákazníkov {#customer-dns-management}
 
 Zákazníci si môžu spravovať záznamy DNS pre svoje zaregistrované domény z sekcie **Moje účto**, pod prístupom k ich doménovej položke.
 
-### Podporované typy záznamov
+### Podporované typy záznamov {#supported-record-types}
 
 | Typ | Použitie |
 |---|---|
@@ -91,11 +91,11 @@ Zákazníci si môžu spravovať záznamy DNS pre svoje zaregistrované domény 
 | **MX** | Nastavenie servera pre správu e-mailov |
 | **TXT** | Pridanie záznamov SPF, DMARC, overenia alebo iných textových záznamov |
 
-### Aké poskytovatele podporujú správu DNS?
+### Aké poskytovatele podporujú správu DNS? {#which-providers-support-dns-management}
 
 Správa DNS (pridanie, úprava, odstránenie záznamov) je dostupná s nástrojmi **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** a **Openprovider**. Domény Hostinger sa môžu aktualizovať pomocou Domain Seller. DNS záznamy pre hostované domény sú spravované integrovaním domain-mapping v jádre Hostinger. Domény Namecheap, GoDaddy a NameSilo zobrazujú stav a informácie o vypróvení, ale DNS musia byť spravovaný priamo v kontrolnom paneli registra.
 
-### Predvolené DNS záznamy
+### Predvolené DNS záznamy {#default-dns-records}
 
 Môžete skonfigurovať predvolené DNS záznamy, ktoré sa automaticky aplikujú, keď je doména zaregistrovaná. Prejdite do **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: zobrazenie a úprava DNS
+### Admin: zobrazenie a úprava DNS {#admin-viewing-and-editing-dns}
 
 Sieťoví administrátori môžu zobraziť a upraviť DNS záznamy pre akýkoľvek doménu zákazníka z editovanej stránky domény v **Network Admin › Ultimate Multisite › Domains**.

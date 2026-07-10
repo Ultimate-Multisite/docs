@@ -3,11 +3,11 @@ title: Feedback et Rapport Problemum Clientium
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback et Rapport de Problèmes des Clients
+# Feedback et Rapport de Problèmes des Clients {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduce un système intégré de retour d'information et de signalement de problèmes qui permet aux utilisateurs finaux de signaler les réponses inutiles et de rapporter directement les problèmes depuis l'interface de discussion. Ce système comprend la gestion du consentement, une commande de rapport automatisée et un triage assisté par IA en arrière-plan.
 
-## Bouton Pouce Baissé (Thumbs-Down Button)
+## Bouton Pouce Baissé (Thumbs-Down Button) {#thumbs-down-button}
 
 Chaque message envoyé par l'assistant IA affiche un bouton **pouce baissé** (👎). Lorsqu'un utilisateur clique dessus, il peut marquer une réponse comme inutile ou incorrecte.
 
@@ -15,7 +15,7 @@ Chaque message envoyé par l'assistant IA affiche un bouton **pouce baissé** (�
 - Cliquer dessus ouvre la fenêtre modale de **Consentement au Retour d'Information**.
 - Le retour d'information est associé au fil de conversation et au message spécifique.
 
-## Fenêtre Modale de Consentement au Retour d'Information (Feedback Consent Modal)
+## Fenêtre Modale de Consentement au Retour d'Information (Feedback Consent Modal) {#feedback-consent-modal}
 
 Lorsqu'un utilisateur clique sur le bouton pouce baissé, une fenêtre modale de consentement apparaît avant que toute donnée ne soit envoyée. La modale :
 
@@ -26,13 +26,13 @@ Lorsqu'un utilisateur clique sur le bouton pouce baissé, une fenêtre modale de
 
 Aucun retour d'information n'est enregistré tant que l'utilisateur ne confirme pas explicitement.
 
-## Bannière de Retour Automatique (Auto-Prompt Feedback Banner)
+## Bannière de Retour Automatique (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 À la fin d'une conversation, l'assistant peut afficher une **bannière de retour automatique** — un message non intrusif demandant si la session a été utile.
 
 Cette bannière apparaît automatiquement en fonction de la longueur et des heuristiques du résultat de la conversation. Elle renvoie au même flux de retour d'information que le bouton pouce baissé. Les utilisateurs peuvent fermer la bannière sans fournir de commentaires.
 
-## Commande Slash /report-issue
+## Commande Slash /report-issue {#report-issue-slash-command}
 
 Les utilisateurs peuvent déclencher directement le flux de retour en tapant `/report-issue` dans la zone de saisie de discussion. Cette commande :
 
@@ -42,7 +42,7 @@ Permette agli utenti di aggiungere dettagli aggiuntivi prima di inviare.
 
 Il comando `/report-issue` è disponibile in tutti i modi di chat (inline, widget fluttuante, schermo intero).
 
-## Triage Assistito dall'IA
+## Triage Assistito dall'IA {#ai-assisted-triage}
 
 I feedback inviati vengono indirizzati a un livello di triage AI che:
 

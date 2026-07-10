@@ -4,21 +4,21 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Acción: mu_migration/import/user/custom_data_after
+# Acción: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
 
 Se dispara después de exportar los datos personalizados del usuario.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $user_data | `array` | El array de datos del usuario. |
 | $user | `\WP_User` | El objeto del usuario. |
 
-### Desde
+### Desde {#since}
 
 - 0.1.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) en la línea 165

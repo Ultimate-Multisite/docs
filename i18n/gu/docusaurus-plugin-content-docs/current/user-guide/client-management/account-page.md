@@ -1,127 +1,140 @@
 ---
-title: ક્લાયન્ટ એકાઉન્ટ પેજ
+title: ક્લાયન્ટ Account પૃષ્ઠ
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# તમારા ગ્રાહકનું એકાઉન્ટ પેજ (v2)
+# તમારા ક્લાયન્ટનું Account પેજ (v2) {#your-clients-account-page-v2}
 
-_**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite વર્ઝન 2.x ને લગતો છે.**_
+_**મહત્વપૂર્ણ નોંધ: આ લેખ Ultimate Multisite આવૃત્તિ 2.x નો ઉલ્લેખ કરે છે.**_
 
-જ્યારે ગ્રાહકો તમારા નેટવર્ક પર કોઈ પ્લાન માટે સબ્સ્ક્રાઇબ કરે છે, ત્યારે તેમને એક વેબસાઇટ અને તેના dashboard ની એક્સેસ મળે છે જેમાં તેમની ચૂકવણીઓ, મેમ્બરશિપ, domains, પ્લાનની મર્યાદાઓ વગેરે વિશે મહત્વપૂર્ણ માહિતી હોય છે...
+જ્યારે ગ્રાહકો તમારા નેટવર્ક પર કોઈ પ્લાનમાં સબ્સ્ક્રાઇબ કરે છે, ત્યારે તેમને એક વેબસાઇટ અને તેના Dashboard ની ઍક્સેસ મળે છે, જેમાં તેમની ચુકવણીઓ, સભ્યતાઓ, ડોમેન્સ, પ્લાનની મર્યાદાઓ વગેરે વિશે મહત્વપૂર્ણ માહિતી હોય છે...
 
-આ ટ્યુટોરિયલમાં, અમે તમને ગ્રાહકના એકાઉન્ટ પેજ વિશે માર્ગદર્શન આપીશું અને તમે જોશો કે તમારા ગ્રાહકો તેમાં શું જોઈ અને કરી શકે છે.
+આ ટ્યુટોરીયલમાં, અમે તમને ગ્રાહકના Account પેજ વિશે માર્ગદર્શન આપીશું અને તમે જોઈ શકશો કે તમારા ગ્રાહકો તેની અંદર શું જોઈ અને કરી શકે છે.
 
-## એકાઉન્ટ પેજ
+## Account પેજ {#the-account-page}
 
-તમારા ગ્રાહકના dashboard માં **Account** પર ક્લિક કરીને એકાઉન્ટ પેજ એક્સેસ કરી શકાય છે.
+Account પેજ તમારા ગ્રાહકના Dashboard ની અંદર **Account** પર ક્લિક કરીને ઍક્સેસ કરી શકાય છે.
 
-![ગ્રાહક dashboard માં Account મેનૂ](/img/admin/dashboard.png)
+![ગ્રાહકના Dashboard માં Account મેનુ](/img/account-page/account-menu.png)
 
-![ગ્રાહક એકાઉન્ટ પેજનો overview](/img/admin/dashboard.png)
+સ્વાધીન ટેનન્ટ નેટવર્ક્સ પર, Ultimate Multisite v2.13.0 આ ગ્રાહક વ્યવસ્થાપન અનુભવને મુખ્ય સાઇટ પર રાખે છે. જો કોઈ ગ્રાહક સ્વાધીન ટેનન્ટમાંથી Account, ચેકઆઉટ, બિલિંગ, ઇન્વૉઇસ, સાઇટ-વ્યવસ્થાપન, ટેમ્પ્લેટ-સ્વિચિંગ અથવા ડોમેન-મેપિંગ ક્રિયાઓ ખોલે છે, તો ક્રિયા મુખ્ય-સાઇટ ગ્રાહક પેનલ તરફ પાછી નિર્દેશ કરે છે જેથી નેટવર્ક બિલિંગ અને સભ્યતા રેકોર્ડ્સ અધિકૃત રહે.
 
-જ્યારે ગ્રાહક તેના પર ક્લિક કરે છે, ત્યારે તેમને તેમની મેમ્બરશિપ, બિલિંગ સરનામું, invoices, domains, સાઇટ મર્યાદાઓનો overview દેખાશે, અને તેઓ **Site Template** પણ બદલી શકશે **(જો તમારા નેટવર્કમાં આની મંજૂરી હોય)**.
+જ્યારે ગ્રાહક સ્વાધીન ટેનન્ટમાંથી આવે છે, ત્યારે મુખ્ય-સાઇટ ગ્રાહક પેનલમાં ટેનન્ટ સાઇટ પર પાછા જવાની લિંક સામેલ હોઈ શકે છે. પરત જવાની લિંક માત્ર ત્યારે જ બતાવવામાં આવે છે જ્યારે Ultimate Multisite પરત જવાના લક્ષ્યને ગ્રાહકની સાઇટ્સમાંથી એક તરીકે માન્ય કરી શકે, જે ટેનન્ટ વર્કફ્લો જાળવી રાખતી વખતે મનસ્વી રીડાયરેક્ટ્સને અટકાવે છે.
 
-તેઓ મેમ્બરશિપને બીજા પ્લાનમાં બદલી શકે છે, અથવા તમે ઓફર કરો છો તે અન્ય package અથવા service ખરીદી શકે છે. ચાલો દરેક વિભાગને અલગથી જોઈએ.
+![ગ્રાહક Account પેજનો સારાંશ](/img/account-page/overview.png)
 
-### તમારી મેમ્બરશિપનો Overview:
+ગ્રાહક તેના પર ક્લિક કર્યા પછી, તેઓ તેમની સભ્યતા, બિલિંગ સરનામું, ઇન્વૉઇસેસ, ડોમેન્સ, સાઇટ મર્યાદાઓનો સારાંશ જોશે, અને ****સાઇટ ટેમ્પ્લેટ** (જો તમારા નેટવર્કમાં તેની મંજૂરી હોય)** બદલી પણ શકશે.
 
-તમારા ગ્રાહકોની વેબસાઇટના નામની નીચે પ્રથમ block તેમના વર્તમાન પ્લાન અને તેની સાથે ખરીદેલ services/packages નો overview બતાવે છે. block મેમ્બરશિપ નંબર, તેના માટે ચૂકવેલ પ્રારંભિક રકમ, પ્લાન અને કોઈપણ service/package ની કિંમત અને આ મેમ્બરશિપ માટે કેટલી વખત બિલ કરવામાં આવ્યું તે પણ બતાવે છે. તેઓ એ પણ જોઈ શકે છે કે મેમ્બરશિપ **Active**, **Expired** છે કે **Canceled**.
+તેઓ સભ્યતાને બીજા પ્લાનમાં બદલી શકે છે, અથવા તમે ઑફર કરો છો તે બીજું પેકેજ અથવા સેવા ખરીદી શકે છે. ચાલો દરેક વિભાગને અલગથી જોઈએ.
 
-![પ્લાન, રકમ અને બિલિંગ વિગતો દર્શાવતો મેમ્બરશિપ overview](/img/admin/memberships-list.png)
+### તમારી સભ્યતાનો સારાંશ: {#your-membership-overview}
 
-આ block ની નીચે, તમારા ગ્રાહકો **About This Site** અને **Site Limits** blocks જોઈ શકે છે. આ blocks તેમને તેમના પ્લાન સાથે આવતી બધી મર્યાદાઓ બતાવે છે: disk space, posts, pages, visits, વગેરે... આ મર્યાદાઓ **Ultimate Multisite > Products** પર દરેક પ્લાન પેજ પર configure કરી શકાય છે.
+તમારા ગ્રાહકોની વેબસાઇટના નામની નીચેનો પહેલો બ્લોક તેમના વર્તમાન પ્લાન અને તેની સાથે ખરીદેલી સેવાઓ/પેકેજોનો સારાંશ બતાવે છે. આ બ્લોક સભ્યતા નંબર, તેના માટે ચૂકવેલી પ્રારંભિક રકમ, પ્લાન અને કોઈપણ સેવા/પેકેજનો ખર્ચ કેટલો છે અને આ સભ્યતા માટે તેમને કેટલી વાર બિલ કરવામાં આવ્યું તે પણ બતાવે છે. તેઓ એ પણ જોઈ શકે છે કે સભ્યતા **સક્રિય** , **સમાપ્ત** અથવા **રદ** છે કે નહીં.
 
-![પ્લાન મર્યાદાઓ દર્શાવતા About This Site અને Site Limits blocks](/img/admin/dashboard.png)
+![પ્લાન, રકમ અને બિલિંગ વિગતો બતાવતો સભ્યતા સારાંશ](/img/account-page/membership-card.png)
 
-**Your Membership** ની જમણી બાજુએ, ગ્રાહકો **Change** પર ક્લિક કરી શકે છે. આ તેમને બધા ઉપલબ્ધ પ્લાન અને packages/services બતાવશે. જો તેઓ બીજો પ્લાન પસંદ કરે છે, તો તે પ્લાનની મર્યાદાઓ મેમ્બરશિપની વર્તમાન મર્યાદાઓની જગ્યાએ લાગુ થશે - ભલે તેઓ downgrade કરે કે upgrade.
+આ બ્લોકની નીચે, તમારા ગ્રાહકો **આ સાઇટ વિશે** અને **સાઇટ મર્યાદાઓ** બ્લોક્સ જોઈ શકે છે. આ બ્લોક્સ તેમને તેમના પ્લાન સાથે આવતી બધી મર્યાદાઓ બતાવે છે: ડિસ્ક સ્પેસ, પોસ્ટ્સ, પેજિસ, મુલાકાતો વગેરે... આ મર્યાદાઓ **Ultimate Multisite > ઉત્પાદનો** પર દરેક પ્લાન પેજ પર કૉન્ફિગર કરી શકાય છે.
 
-હવે, જો તમારા ગ્રાહકો આ વર્તમાન મેમ્બરશિપ માટે packages અથવા services ખરીદવાનું પસંદ કરે - જેમ કે વધુ disk space અથવા visits - તો વર્તમાન મેમ્બરશિપ બદલાશે નહીં પરંતુ ફક્ત નવા packages તેમાં ઉમેરાશે.
+![પ્લાન મર્યાદાઓ બતાવતા આ સાઇટ વિશે અને સાઇટ મર્યાદાઓ બ્લોક્સ](/img/account-page/site-limits.png)
 
-નોંધ કરો કે આ મેમ્બરશિપ બદલવાના પેજ પર coupon codes ઉમેરી શકાતા નથી. જો ગ્રાહકે પ્રથમ મેમ્બરશિપ ખરીદી પર coupon code વાપર્યો હતો, તો તે code આ નવી મેમ્બરશિપ પર પણ લાગુ થશે.
+**તમારી સભ્યતા** ની જમણી બાજુએ, ગ્રાહકો **બદલો** પર ક્લિક કરી શકે છે. આ તેમને ઉપલબ્ધ બધા પ્લાન અને પેકેજો/સેવાઓ બતાવશે. જો તેઓ બીજો પ્લાન પસંદ કરે છે, તો તે પ્લાનની મર્યાદાઓ સભ્યતાની વર્તમાન મર્યાદાઓને બદલે લાગુ થશે - તેઓ તેને ડાઉનગ્રેડ કરે કે અપગ્રેડ કરે તેનાથી ફરક પડતો નથી.
 
-### બિલિંગ સરનામું અપડેટ કરવું:
+હવે, જો તમારા ગ્રાહકો આ વર્તમાન સભ્યતા માટે પેકેજો અથવા સેવાઓ ખરીદવાનું પસંદ કરે - જેમ કે વધુ ડિસ્ક સ્પેસ અથવા મુલાકાતો - તો વર્તમાન સભ્યતા બદલાશે નહીં, પરંતુ માત્ર નવા પેકેજો તેમાં ઉમેરાશે.
 
-એકાઉન્ટ પેજ પર, તમારા ગ્રાહકો તેમનું બિલિંગ સરનામું પણ અપડેટ કરી શકે છે. તેમને ફક્ત _Billing Address_ ની બાજુમાં **Update** પર ક્લિક કરવાની જરૂર છે.
+ધ્યાન આપો કે આ સભ્યતા બદલવાના પેજ પર કૂપન કોડ્સ ઉમેરી શકાતા નથી. જો ગ્રાહકે પહેલી સભ્યતા ખરીદી વખતે કૂપન કોડનો ઉપયોગ કર્યો હોય, તો તે કોડ આ નવી સભ્યતા પર પણ લાગુ થશે.
 
-![Update બટન સાથે Billing Address વિભાગ](/img/admin/customers-list.png)
+### બિલિંગ સરનામું અપડેટ કરવું: {#updating-the-billing-address}
 
-તમારા ગ્રાહકને એક નવી window દેખાશે. તેમણે ફક્ત નવું સરનામું ભરવાનું છે અને _Save Changes_ પર ક્લિક કરવાનું છે.
+Account પેજ પર, તમારા ગ્રાહકો તેમનું બિલિંગ સરનામું પણ અપડેટ કરી શકે છે. તેમને ફક્ત _બિલિંગ સરનામું_ ની બાજુમાં **અપડેટ** પર ક્લિક કરવાની જરૂર છે.
 
-![બિલિંગ સરનામું અપડેટ કરવાનું form](/img/admin/customers-list.png)
+![અપડેટ બટન સાથે બિલિંગ સરનામું વિભાગ](/img/account-page/billing-address.png)
 
-### Site Template બદલવું:
+તમારા ગ્રાહકને એક નવી વિન્ડો દેખાશે. તેમને ફક્ત નવું સરનામું ભરવું અને _ફેરફારો સાચવો_ પર ક્લિક કરવું છે.
 
-તમારા ગ્રાહકોને તેમના site templates બદલવાની મંજૂરી આપવા માટે, તમારે **Ultimate Multisite > Settings > Sites** પર જવું પડશે અને **Allow Template Switching** option toggle on કરવો પડશે.
+![બિલિંગ સરનામું અપડેટ ફોર્મ](/img/account-page/billing-address-form.png)
 
-ઉપરાંત, **Ultimate Multisite > Products** પર, તમારા પ્લાન પસંદ કરો અને **Site Templates** tab પર જાઓ. ખાતરી કરો કે **Allow Site Templates** option toggle on છે અને **Site Template Selection Mode** પર, **Choose Available Site Templates** option પસંદ છે.
+### સાઇટ ટેમ્પ્લેટ બદલવું: {#changing-the-site-template}
 
-![Template selection mode સાથે Product site templates tab](/img/config/product-site-templates.png)
+તમારા ગ્રાહકોને તેમની સાઇટ ટેમ્પ્લેટ્સ બદલવાની મંજૂરી આપવા માટે, તમારે **Ultimate Multisite > સેટિંગ્સ > સાઇટ્સ** પર જવું અને **ટેમ્પ્લેટ સ્વિચિંગની મંજૂરી આપો** વિકલ્પ ચાલુ કરવો પડશે.
 
-તમે તમારી વેબસાઇટ પર બધા ઉપલબ્ધ site templates જોઈ શકશો. પસંદ કરો કે કયા templates તમે ઉપલબ્ધ કરાવવા માંગો છો અને કયા templates આ પ્લાન હેઠળ સબ્સ્ક્રાઇબ કરેલા તમારા ગ્રાહકો માટે ઉપલબ્ધ ન હોય. નોંધ કરો કે આ options checkout form ને પણ અસર કરે છે, તેથી **Not Available** તરીકે પસંદ કરેલ કોઈપણ template આ પ્લાન માટે registration page પર દેખાશે નહીં.
+સાથે જ, **Ultimate Multisite > ઉત્પાદનો** પર, તમારા પ્લાન પસંદ કરો અને **સાઇટ ટેમ્પ્લેટ્સ** ટૅબ પર જાઓ. ખાતરી કરો કે **સાઇટ ટેમ્પ્લેટ્સની મંજૂરી આપો** વિકલ્પ ચાલુ છે અને **સાઇટ ટેમ્પ્લેટ પસંદગી મોડ** પર, **ઉપલબ્ધ સાઇટ ટેમ્પ્લેટ્સ પસંદ કરો** વિકલ્પ પસંદ કરેલો છે.
 
-હવે તમારા ગ્રાહકો તેમના એકાઉન્ટ પેજની અંદર **Change Site Template** પર ક્લિક કરી શકે છે.
+![ટેમ્પ્લેટ પસંદગી મોડ સાથે ઉત્પાદન સાઇટ ટેમ્પ્લેટ્સ ટૅબ](/img/config/product-site-templates.png)
 
-![એકાઉન્ટ પેજ પર Change Site Template બટન](/img/admin/dashboard.png)  
-આ પ્લાન માટે બધા ઉપલબ્ધ Site Templates ની યાદી તમારા ગ્રાહકને દેખાશે.
+તમે તમારી વેબસાઇટ પર ઉપલબ્ધ બધી સાઇટ ટેમ્પ્લેટ્સ જોઈ શકશો. આ પ્લાન હેઠળ સબ્સ્ક્રાઇબ થયેલા તમારા ગ્રાહકો માટે કઈ ઉપલબ્ધ કરવી છે અને કઈ ઉપલબ્ધ ન રાખવી તે પસંદ કરો. ધ્યાન આપો કે આ વિકલ્પો ચેકઆઉટ ફોર્મને પણ અસર કરે છે, તેથી **ઉપલબ્ધ નથી** તરીકે પસંદ કરેલી કોઈપણ ટેમ્પ્લેટ આ પ્લાન માટેના નોંધણી પેજ પર દેખાશે નહીં.
 
-![પ્લાન માટે ઉપલબ્ધ site templates ની યાદી](/img/config/site-templates-list.png)
+હવે તમારા ગ્રાહકો તેમના Account પેજની અંદર **સાઇટ ટેમ્પ્લેટ બદલો** પર ક્લિક કરી શકે છે.
 
-જે template માં બદલવું છે તે પસંદ કર્યા પછી, તેમને ફેરફારની પુષ્ટિ કરવાનું કહેવામાં આવશે.
+![Account પેજ પર સાઇટ ટેમ્પ્લેટ બદલો બટન](/img/account-page/change-template-button.png)
 
-![Site template switch પુષ્ટિ dialog](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 ફરી ડિઝાઇન કરેલું ટેમ્પ્લેટ સ્વિચ પેનલ બતાવે છે. પેનલ **વર્તમાન-ટેમ્પ્લેટ કાર્ડ** સાથે શરૂ થાય છે જેથી ગ્રાહકો બદલી પસંદ કરે તે પહેલાં કઈ ટેમ્પ્લેટ સક્રિય છે તે જોઈ શકે.
 
-પુષ્ટિ toggle on કરીને અને **Process Switch** પર ક્લિક કર્યા પછી, નવો site template તમારા ગ્રાહકની વેબસાઇટ પર વપરાશે.
+ગ્રાહકો તેમના વિકલ્પોની સમીક્ષા કરે ત્યારે ઉપલબ્ધ સાઇટ ટેમ્પ્લેટ્સનું સ્થિર ગ્રીડ દેખાતું રહે છે. આ તેમને વર્તમાન પસંદગી નજર સામે રાખીને તેમના પ્લાન માટે મંજૂર ટેમ્પ્લેટ્સની તુલના કરવામાં મદદ કરે છે.
 
-### Custom Domains ઉમેરવા:
+![પ્લાન માટે ઉપલબ્ધ સાઇટ ટેમ્પ્લેટ્સની સૂચિ](/img/config/site-templates-list.png)
 
-તમારા ગ્રાહકો પાસે તેમના એકાઉન્ટ પેજ પર આ પ્લાન માટે custom domain ઉમેરવાનો વિકલ્પ પણ હશે. તમારા ગ્રાહકોને custom domains વાપરવાની મંજૂરી આપવા માટે, **Ultimate Multisite > Settings >** **Domain Mapping** પર જાઓ.
+તેઓ જે પર બદલવા માંગે છે તે પસંદ કર્યા પછી, તેમને ફેરફારની પુષ્ટિ કરવા માટે કહેવામાં આવશે.
 
-**Enable Domain Mapping** option toggle on કરો. આ તમારા ગ્રાહકોને network level પર custom domains વાપરવાની મંજૂરી આપશે.
+![સાઇટ ટેમ્પ્લેટ સ્વિચ પુષ્ટિ સંવાદ](/img/account-page/template-switch-confirm.png)
 
-એ પણ ચકાસવાનું ભૂલશો નહીં કે domain mapping product basis પર enabled છે કે નહીં - કારણ કે તમે product ને એવી રીતે limit કરી શકો છો કે તમારા ગ્રાહકો custom domains વાપરી ન શકે.
+પુષ્ટિ ચાલુ કર્યા પછી અને **સ્વિચ પ્રક્રિયા કરો** પર ક્લિક કર્યા પછી, નવી સાઇટ ટેમ્પ્લેટ તમારા ગ્રાહકની વેબસાઇટ પર ઉપયોગમાં લેવાશે.
 
-**Ultimate Multisite > Products** પર જાઓ. તમારી પસંદગીનો પ્લાન પસંદ કરો અને **Custom Domains** tab પર જાઓ. **Allow Custom Domains** option toggle on કરો.
+ગ્રાહકો આ પેનલમાંથી **Reset current template** પણ ઉપયોગ કરી શકે છે જ્યારે તેમને સાઇટને હાલમાં સોંપાયેલા template પર પાછી reset કરવાની જરૂર હોય. બીજા template પર સ્વિચ કરવાના જેવી જ રીતે, template reset કરવાથી સાઇટની સામગ્રી overwrite થઈ શકે છે, તેથી ગ્રાહકોએ reset ક્રિયા સમજતા હોય ત્યારે જ તેને confirm કરવી જોઈએ.
+
+### Custom Domains ઉમેરવું: {#adding-custom-domains}
+
+તમારા ગ્રાહકોને તેમના account પેજ પર આ plan માટે custom domain ઉમેરવાનો વિકલ્પ પણ મળશે. તમારા ગ્રાહકોને custom domains ઉપયોગ કરવાની મંજૂરી આપવા માટે, **Ultimate Multisite > Settings >** **Domain Mapping** પર જાઓ.
+
+**Enable Domain Mapping** વિકલ્પ toggle on કરો. આ તમારા ગ્રાહકોને network સ્તરે custom domains ઉપયોગ કરવાની મંજૂરી આપશે.
+
+product આધારે domain mapping enable છે કે નહીં તે પણ તપાસવાનું ભૂલશો નહીં - કારણ કે તમે કોઈ product ને તમારા ગ્રાહકોને custom domains ઉપયોગ કરવાની મંજૂરી ન આપવા માટે મર્યાદિત કરી શકો છો.
+
+**Ultimate Multisite > Products** પર જાઓ. તમારી પસંદગીનો plan પસંદ કરો અને **Custom Domains** tab પર જાઓ. **Allow Custom Domains** વિકલ્પ toggle on કરો.
 
 ![Allow Custom Domains toggle સાથે Custom Domains tab](/img/config/product-custom-domains.png)
 
-આ આ ચોક્કસ પ્લાન પર સબ્સ્ક્રાઇબ કરેલા બધા ગ્રાહકોને custom domains વાપરવાની મંજૂરી આપશે. હવે, Account page પર, તમારા ગ્રાહકો **Add Domain** પર ક્લિક કરીને custom domain ઉમેરી શકે છે.
+આ ચોક્કસ plan પર subscribed બધા ગ્રાહકોને custom domains ઉપયોગ કરવાની મંજૂરી આપશે. હવે, Account પેજ પર, તમારા ગ્રાહકો **Add Domain** પર click કરીને custom domain ઉમેરી શકે છે.
 
-![એકાઉન્ટ પેજ પર Add Domain બટન](/img/admin/domains-list.png)
+![account પેજ પર Add Domain button](/img/account-page/add-domain-button.png)
 
-ખુલતી પ્રથમ window તમારા ગ્રાહકોને એક message બતાવશે જે તેમને આ custom domain ને તમારા નેટવર્ક પર કામ કરાવવા માટે તેમના DNS records કેવી રીતે અપડેટ કરવા તેની સૂચનાઓ આપે છે.
+જે પ્રથમ window ખુલશે તે તમારા ગ્રાહકોને તમારા network પર આ custom domain કાર્યરત કરવા માટે તેમના DNS records કેવી રીતે update કરવા તે અંગે સૂચના આપતો message બતાવશે.
 
-![Custom domain ઉમેરતી વખતે દર્શાવેલી DNS સૂચનાઓ](/img/admin/domains-list.png)
+![custom domain ઉમેરતી વખતે બતાવવામાં આવેલી DNS સૂચનાઓ](/img/account-page/add-domain-dns.png)
 
-આ message (તમારા દ્વારા) **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** પર edit કરી શકાય છે.
+આ message **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** પર (તમારા દ્વારા) edit કરી શકાય છે.
 
 ![Domain Mapping માં Add New Domain Instructions setting](/img/config/settings-domain-mapping.png)
 
-**Next Step** પર ક્લિક કર્યા પછી, તમારા ગ્રાહકો તેમનું custom domain name ઉમેરી શકે છે અને પસંદ કરી શકે છે કે આ custom domain primary હશે કે નહીં. નોંધ કરો કે તમારા ગ્રાહકો તેમની વેબસાઇટ માટે એક કરતાં વધુ custom domain વાપરી શકે છે, તેથી તેઓ પસંદ કરી શકે છે કે કયું primary હશે.
+અહીં domain mapping settings પેજનું સંપૂર્ણ view છે:
 
-![Primary domain option સાથે Custom domain name entry](/img/admin/domains-list.png)
+![Domain mapping settings સંપૂર્ણ પેજ](/img/config/settings-domain-mapping-full.png)
 
-**Add Domain** પર ક્લિક કર્યા પછી, domain તમારા ગ્રાહકના એકાઉન્ટમાં ઉમેરાશે. હવે તેમણે ફક્ત તેમના domain registrar પર આ custom domain ના DNS records બદલવાના છે.
+**Next Step** પર click કર્યા પછી, તમારા ગ્રાહકો તેમનું custom domain name ઉમેરી શકે છે અને આ custom domain primary હશે કે નહીં તે પસંદ કરી શકે છે. નોંધ કરો કે તમારા ગ્રાહકો તેમની websites માટે એકથી વધુ custom domain ઉપયોગ કરી શકે છે, તેથી તેઓ કયું primary હશે તે પસંદ કરી શકે છે.
 
-### Password બદલવો:
+![primary domain option સાથે custom domain name entry](/img/account-page/add-domain-primary.png)
 
-એકાઉન્ટ dashboard ની અંદર, તમારા ગ્રાહકો **Change Password** પર ક્લિક કરીને તેમનો password પણ બદલી શકે છે.
+**Add Domain** પર click કર્યા પછી, domain તમારા ગ્રાહકના account માં ઉમેરાશે. હવે તેમને માત્ર તેમના domain registrar પર આ custom domain ના DNS records બદલવાના રહેશે.
 
-![એકાઉન્ટ પેજ પર Change Password બટન](/img/admin/dashboard.png)
+### Password બદલવો: {#changing-password}
 
-આ એક નવી window બતાવશે જ્યાં તમારા ગ્રાહકોએ તેમનો વર્તમાન password ભરવો પડશે અને પછી તેઓ જે નવો password વાપરવા માંગે છે તે ભરવો પડશે.
+account dashboard ની અંદર, તમારા ગ્રાહકો **Change Password** પર click કરીને તેમનો password પણ બદલી શકે છે.
 
-![વર્તમાન અને નવા password fields સાથે Change password form](/img/admin/dashboard.png)
+![account પેજ પર Change Password button](/img/account-page/change-password-button.png)
 
-### Danger Zone:
+આ એક નવી window બતાવશે જ્યાં તમારા ગ્રાહકોને તેમનો વર્તમાન password ભરવો પડશે અને પછી તેઓ ઉપયોગ કરવા માંગે છે તે નવો password ભરવો પડશે.
 
-અમારી પાસે **Danger Zone** ભાગમાં બે options પણ છે: **Delete Site** અને **Delete Account**. તેઓ બંને Danger Zone ભાગમાં છે કારણ કે આ બંને ક્રિયાઓ ઉલટાવી શકાતી નથી. જો તમારા ગ્રાહકો તેમની વેબસાઇટ અથવા તેમનું એકાઉન્ટ delete કરે છે, તો તેઓ તેને પાછું મેળવી શકતા નથી.
+![વર્તમાન અને નવા password fields સાથે change password form](/img/account-page/change-password-form.png)
 
-![Delete Site અને Delete Account options સાથે Danger Zone](/img/admin/dashboard.png)
+### Danger Zone: {#danger-zone}
 
-જો તમારા ગ્રાહકો આ બેમાંથી કોઈપણ option પર ક્લિક કરે છે, તો તેમને એક window બતાવવામાં આવશે જ્યાં તેમણે વેબસાઇટ અથવા એકાઉન્ટ remove કરવા માટે option toggle on કરવો પડશે અને તેમને ચેતવણી આપવામાં આવશે કે આ ક્રિયા undo કરી શકાતી નથી.
+અમારી પાસે બે વિકલ્પો પણ છે જે **Danger Zone** ભાગમાં બતાવવામાં આવે છે: **Delete Site** અને **Delete Account**. બંને Danger Zone ભાગમાં છે કારણ કે આ બે ક્રિયાઓ irreversible છે. જો તમારા ગ્રાહકો તેમની website અથવા તેમનું account delete કરે છે, તો તેઓ તેને પાછું recover કરી શકતા નથી.
 
-![Delete Site પુષ્ટિ dialog](/img/admin/dashboard.png)
+![Delete Site અને Delete Account વિકલ્પો સાથે Danger Zone](/img/account-page/danger-zone.png)
 
-![Delete Account પુષ્ટિ dialog](/img/admin/dashboard.png)
+જો તમારા ગ્રાહકો આ બે વિકલ્પોમાંથી કોઈ એક પર click કરે છે, તો તેમને એક window બતાવવામાં આવશે જ્યાં તેમને website અથવા account દૂર કરવા માટે વિકલ્પ toggle on કરવો પડશે અને તેમને ચેતવણી આપવામાં આવશે કે આ ક્રિયા પાછી ફેરવી શકાતી નથી.
 
-જો તેઓ તેમની વેબસાઇટ delete કરે છે, તો તેમનું એકાઉન્ટ અને મેમ્બરશિપ અકબંધ રહેશે. તેઓ ફક્ત તેમની વેબસાઇટ પરની બધી content ગુમાવશે. જો તેઓ તેમનું એકાઉન્ટ delete કરે છે, તો આ એકાઉન્ટ સંબંધિત બધી વેબસાઇટ, મેમ્બરશિપ અને માહિતી ગુમ થઈ જશે.
+![Delete Site confirmation dialog](/img/account-page/delete-site-confirm.png)
+
+![Delete Account confirmation dialog](/img/account-page/delete-account-confirm.png)
+
+જો તેઓ તેમની website delete કરે છે, તો તેમનું account અને membership અસ્પર્શિત રહેશે. તેઓ માત્ર તેમની website પરની બધી સામગ્રી ગુમાવશે. જો તેઓ તેમનું account delete કરે છે, તો આ account સંબંધિત બધી websites, memberships અને માહિતી ગુમાશે.

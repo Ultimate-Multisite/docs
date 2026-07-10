@@ -3,9 +3,9 @@ title: Mokėjimo ir paskolos valdymo<channel|>
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Apmontų ir įsipareigojimų valdymas
+# Apmontų ir įsipareigojimų valdymas {#managing-payments-and-invoices}
 
-## Mokyklos nustatymai
+## Mokyklos nustatymai {#payment-settings}
 
 Prieš pradėdami gauti mokėjimus, turite nustatyti mokėjimo susijusias nustatymus. Eikite į **Ultimate Multisite → Nustatymai** ir paspauskite **Mokėjimas** (Payment) posėdį.
 
@@ -15,7 +15,7 @@ Prieš pradėdami gauti mokėjimus, turite nustatyti mokėjimo susijusias nustat
 
 ![Mokėjimo nustatymų visiškai apibūdintasis puslapis](/img/admin/settings-payments-full.png)
 
-### Bendros mokėjimo opsijos
+### Bendros mokėjimo opsijos {#general-payment-options}
 
 Bendros nustatymuose galite nustatyti:
 
@@ -24,7 +24,7 @@ Bendros nustatymuose galite nustatyti:
 
 ![Mokėjimo įgaminimų nustatymai](/img/admin/settings-payments-options.png)
 
-### Mokėjimo įgaminimai (Payment Gateways)
+### Mokėjimo įgaminimai (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite palaiko kelis mokėjimo įgaminimus. Jūs galite įjungti ir nustatyti kiekvieną iš jų nustatymai Mokėjimo posėdijos puslapyje.
 
@@ -40,11 +40,11 @@ Kiekvienas įgaminimas turi savo nustatymų sekciją, kurioje įrašote API slap
 
 ![Papildomi įgaminimų nustatymai](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox režimas (Sandbox Mode)
+### Sandbox režimas (Sandbox Mode) {#sandbox-mode}
 
 Galite įjungti **Sandbox režimą**, kad išbandytum mokėjimo integraciją prieš įvedant sistemą į veiksmą. Kai sandbox režimas yra aktyvus, nebus atlikta realių sumamos.
 
-## Mokėjimų peržiūra
+## Mokėjimų peržiūra {#viewing-payments}
 
 Eikite į **Mokėjimai** (Payments) puslapį Ultimate Multisite, kad pamatytum visus transakcijas po savo tinklu.
 
@@ -54,7 +54,7 @@ Galite filtruoti mokėjimais pagal statusą (pabaigta, laukoma, nesėkminga, ats
 
 Spauskite mokamą transakciją, kad pamatyt jos visus detales, įskaitant sąskaitos eilutes, susijusię nuskaitą, klientų informaciją ir mokėjimo terminalo duomenis.
 
-## Sąskaitos
+## Sąskaitos {#invoices}
 
 Ultimate Multisite gali automatiškai generuoti sąskaitas už mokėjimą. Jūs galite pritaikyti sąskaitos šablono ir numeravimo formatą nustabdykite Mokėjimo nustatymuose (Payment settings).
 

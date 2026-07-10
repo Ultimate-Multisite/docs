@@ -3,11 +3,11 @@ title: ''
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Requirements
+# Ultimate Multisite Requirements {#ultimate-multisite-requirements}
 
 Die erste Frage, die Sie sich vor dem Kauf von Ultimate Multisite stellen könnten, ist, welche Anforderungen es gibt, um unser Plugin auszuführen. Glücklicherweise gibt es nur wenige grundlegende Anforderungen für die Ausführung von Ultimate Multisite: ein **Domainname**, ein guter **Hosting-Anbieter** und eine WordPress **Multisite**-Installation. Das ist alles, was Sie brauchen!
 
-## Domainname
+## Domainname {#domain-name}
 
 Zuerst sprechen wir über den Domainnamen.
 
@@ -17,7 +17,7 @@ Unser Plugin bietet Abonnementdienste, Zahlungsabwicklung, Checkout-Formulare, R
 
 Jede Nische, die Sie wählen, kann mit unserem Plugin verwaltet werden, solange Sie Websites als Dienstleistung verkaufen! Stellen Sie sicher, dass Sie einen Domainnamen wählen, der zu Ihrem Geschäftsplan passt.
 
-## Hosting-Anbieter
+## Hosting-Anbieter {#hosting-provider}
 
 Jetzt, da Sie einen ansprechenden Domainnamen haben, der Ihre Nische und Ihr Geschäft repräsentiert, müssen Sie ein gutes Webhosting-Unternehmen auswählen, um Ihr Netzwerk mit Ultimate Multisite zu hosten. Es gibt einige gute Optionen auf dem Markt. Einige Hosting-Anbieter integrieren sich gut mit Ultimate Multisite, was je nach geplantem Aufbau ein entscheidender Faktor sein kann.
 
@@ -25,7 +25,7 @@ Ultimate Multisite sollte in jedem Hosting-Anbieter funktionieren. Der einzige U
 
 Was die Server-Spezifikationen betrifft, gibt es keine spezifische Formel, da sie von den Funktionen und Merkmalen abhängen, die Sie anbieten, und von der Größe Ihres Netzwerks. Ein Shared Hosting kann ein guter Start sein, aber sobald Ihr Netzwerk zu wachsen beginnt, benötigen Sie wahrscheinlich einen dedizierten VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nun, lassen Sie uns ein wenig über eine WordPress Multisite-Installation sprechen. WordPress Multisite ermöglicht es Ihnen, ein Netzwerk von Websites in einer einzigen Installation zu haben. Dies ist ein integriertes Feature, aber es ist standardmäßig nicht aktiv. Sie müssen dieses Feature in Ihrer WordPress-Installation und im Webhosting-Kontrollpanel aktivieren.
 

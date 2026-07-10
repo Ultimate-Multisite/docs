@@ -3,9 +3,9 @@ title: Nkwado Ọrụ
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Ghi Ché Opụrụ (Release Notes)
+# Ghi Ché Opụrụ (Release Notes) {#release-notes}
 
-## Versi 2.13.0 — A nwereike na 2026-06-05
+## Versi 2.13.0 — A nwereike na 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Baru: Thêm hỗ trợ sovereign-tenant cho tài khoản khách hàng, thanh toán, hóa đơn, trang web, chuyển đổi mẫu (template switching) và ánh xạ tên miền để các mạng lưới tenant có thể hướng khách hàng quay lại trang chính cho các thao tác được quản lý.
 - Mới: Thêm kiểm tra thông tin gia hạn cho các gói thành viên định kỳ để các gateway có thể vô hiệu hóa tự động gia hạn khi thiếu thỏa thuận thanh toán, đăng ký hoặc mã kho (vault token) đã lưu.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa lỗi: Các trường hợp biên như gia hạn thành viên, hiển thị ngày hết hạn và thu tiền thanh toán hiện tránh được việc hết hạn ngay lập tức, sập hệ thống hoặc bỏ lỡ các khoản thanh toán bắt buộc.
 - Cải tiến: Khả năng tương thích với WordPress đã được kiểm tra đến phiên bản 7.0, tài sản Vue cho môi trường production được xây dựng lại từ nguồn npm, và phạm vi kiểm thử end-to-end của Cypress hiện thực hiện nhiều luồng thanh toán, thiết lập, SSO và gateway hơn.
 
-## Versi 2.12.0 — Phát hành vào ngày 15-05-2026
+## Versi 2.12.0 — Phát hành vào ngày 15-05-2026 {#version-2120--released-on-2026-05-15}
 
 - Mới: Đã thêm Hostinger (hPanel) làm nhà cung cấp host được hỗ trợ với tích hợp ánh xạ tên miền.
 - Mới: Site Exporter giờ xử lý các gói nhập mạng để khôi phục trang web trên toàn mạng một cách thuận tiện hơn.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa lỗi: CLI của Site Exporter giờ giữ lại lựa chọn mạng trang web mặc định chính xác.
 - Cải tiến: Đã loại bỏ wp-cli được đóng gói khỏi gói plugin, giúp giảm kích thước plugin.
 
-## Versi 2.11.0 — Phát hành vào ngày 11-05-2026
+## Versi 2.11.0 — Phát hành vào ngày 11-05-2026 {#version-2110--released-on-2026-05-11}
 
 - Mới: Các bản xuất trang web giờ sẽ đóng gói một file `index.php` tự khởi động để ZIP có thể được cài đặt trên host mới mà không cần cài đặt plugin riêng biệt.
 - Mới: Xuất mạng cho phép quản trị viên xuất tất cả các trang con trong một tệp lưu trữ duy nhất từ trang admin Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Mới: Trình chỉnh sửa biểu mẫu thanh toán sẽ cảnh báo khi thêm sản phẩm mà không cấu hình trường bắt buộc nào.
 - Mới: Tab cài đặt Nhập/Xuất giờ mô tả rõ phạm vi hoạt động và liên kết trực tiếp đến công cụ Site Export.
 
-## Versi 2.10.0 — Phát hành vào ngày 05-05-2026
+## Versi 2.10.0 — Phát hành vào ngày 05-05-2026 {#version-2100--released-on-2026-05-05}
 
 - Baru: Wizard setup PayPal manual credential entry na-with OAuth flag gate pour configuration gateway yang mulus.
 - Baru: Panel pelanggan ganti template didesain ulang dengan kartu current-template, grid yang tetap (persistent grid), dan tombol **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: SSO path yang difilter dihormati di semua alur login.
 - Perbaikan: Opsi identitas situs kosong tetap dipertahankan saat menyimpan.
 
-## Versi 2.9.0 — Dirilis pada 2026-04-30
+## Versi 2.9.0 — Dirilis pada 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Baru: Ekspor dan impor satu situs ditambahkan di bawah **Tools > Export & Import**.
 - Perbaikan: File ZIP ekspor sekarang disajikan melalui endpoint unduhan yang terautentikasi.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Tour IDs dinormalisasi menjadi garis bawah dalam kunci pengaturan pengguna.
 - Peningkatan: ZipArchive sekarang digunakan alih-alih Alchemy/Zippy untuk kompatibilitas yang lebih baik.
 
-## Versi 2.8.0 — Dirilis pada 2026-04-29
+## Versi 2.8.0 — Dirilis pada 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Baru: Enable Jumper toggle added to Other Options settings UI.
 - Baru: Status column added to checkout forms list table.

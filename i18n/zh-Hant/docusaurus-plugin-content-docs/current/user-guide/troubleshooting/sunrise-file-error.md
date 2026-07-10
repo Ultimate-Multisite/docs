@@ -3,7 +3,7 @@ title: 日出檔案錯誤
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# 安裝 Sunrise 檔案時發生錯誤
+# 安裝 Sunrise 檔案時發生錯誤 {#error-installing-the-sunrise-file}
 
 sunrise.php 是一個特殊檔案，WordPress 在啟動過程中會尋找這個檔案。為了讓 WordPress 能夠偵測到 sunrise.php 檔案，這個檔案必須放置在 **wp-content 資料夾**中。
 

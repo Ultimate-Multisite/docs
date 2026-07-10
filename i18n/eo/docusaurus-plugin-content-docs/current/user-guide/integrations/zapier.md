@@ -3,7 +3,7 @@ title: Integrado Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrado de Ultimate Multisite kun Zapier
+# Integrado de Ultimate Multisite kun Zapier {#integrating-ultimate-multisite-with-zapier}
 
 En una de las artiklojn, diskutamos [Webhooks](webhooks.md) kaj kiel ili povas esti uzata por integriĝi kun 3-a partaj aplikoj.
 
@@ -15,7 +15,7 @@ Vi povas krei **Trigerojn** kiuj iniciatas, kiam eventoj okazas en via reto (ekz
 
 Tio estas ebla ĉar **Ultimate Multisite Zapier's triggers** kaj actionoj estas provizitaj per la [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kiel komenci
+## Kiel komenci {#how-to-start}
 
 Unue, serĉu Ultimate Multisite en la listo de aplikoj de Zapier. Alternativ, vi povas kliki sur [ ĉi ti linko](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Sur la URL-kampo, mettu vian plena reto URL, inkluzive la protokolo (HTTP aŭ HT
 
 Klakitu la buton **Yes, Continue** por pasigi al la sekva paŝo. Se ĉio funkcias bone, vi devas vidi vian novan konektitan konton! Klikitu sur **Continue** por krei novan trigger.
 
-## Kiel krei novan Trigger
+## Kiel krei novan Trigger {#how-to-create-a-new-trigger}
 
 Sekure ke via konto estas konektita, vi povas vidi la disponiblajn eventojn. Kreu la eventon **payment_received** por ĉi tiu tutoria.
 
@@ -67,7 +67,7 @@ En ĉi tiu stadio, Zapier testos se via Zap povas **extrakti la specifan payload
 
 En nia tutoria test estis **kompletis sukcese** kaj retornos la ekzempla informo de la payload. Ĉi tiu ekzempla informo uzebla por gvidi nin pri kreado de agoj. Via trigger estas nun kreita kaj lista por esti konektita al aliaj aplikoj.
 
-## Kiel krei Actions
+## Kiel krei Actions {#how-to-create-actions}
 
 Actions uzas informojn de aliaj triggers por krei novajn enirojn en via retoj.
 
@@ -79,7 +79,7 @@ En la sekva paŝo vi aŭ kreis vian autentifikadon, kiel ni fariĝis en **Kiel k
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Konfigurado de la Action
+### Konfigurado de la Action {#setting-up-the-action}
 
 Tio estas la ** ĉefa paŝo de la action**, kaj ĉi tie thingaj estas unua pli malsamiĝantaj. La unua informo, kiun vi elektas, estas la **Item**. Item estas la **modelon de informoj** de via reto, kiel **Customers (Kastmelieroj), Payments (Pagoj), Sites (Sitoj), Emails (Emailoj)** kaj aliaj.
 

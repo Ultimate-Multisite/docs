@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency permite que tu red acepte pagos en múltiples monedas. Convierte automáticamente los precios utilizando tipos de cambio en tiempo real o manuales, te permite establecer precios exactos por producto para cualquier moneda y detecta la moneda preferida de cada visitante mediante geolocalización, todo gestionado desde un único panel de administración.
 
-## Características Clave
+## Características Clave {#key-features}
 
 - **Conversión automática de tipos de cambio** — los precios se convierten desde tu moneda base utilizando tipos de cambio obtenidos de tu proveedor seleccionado
 - **Anulación de precios por producto** — establece precios exactos específicos de la moneda en cualquier producto para saltarse la conversión automática
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency permite que tu red acepte pagos en múltiples
 - **Detección de moneda basada en geolocalización** — preselecciona automáticamente la moneda que coincide con el país del visitante
 - **Panel de administración** — gestiona las monedas activas, los tipos de cambio y la configuración del proveedor desde un solo lugar
 
-## Requisitos
+## Requisitos {#requirements}
 
 - Ultimate Multisite 2.0.0 o superior
 - Instalación de WordPress Multisite
 - PHP 7.4 o superior
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube los archivos del plugin a `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activa el plugin desde la pantalla **Plugins** de WordPress (Activar en Red)
 3. Navega a **Ultimate Multisite → Multi-Currency** para abrir el panel de administración
 4. Añade las monedas que deseas aceptar y configura tu proveedor de tipos de cambio
 
-## Configuración
+## Configuración {#configuration}
 
-### Panel de Administración
+### Panel de Administración {#admin-dashboard}
 
 El panel de administración de Multi-Currency (**Ultimate Multisite → Multi-Currency**) es el lugar central para:
 
@@ -44,7 +44,7 @@ El panel de administración de Multi-Currency (**Ultimate Multisite → Multi-Cu
 - Revisar los tipos actuales para todas las monedas activas
 - Establecer tipos manuales cuando los proveedores automáticos no son adecuados
 
-### Proveedores de Tipos de Cambio
+### Proveedores de Tipos de Cambio {#exchange-rate-providers}
 
 | Provider | Descripción |
 |---|---|
@@ -55,7 +55,7 @@ El panel de administración de Multi-Currency (**Ultimate Multisite → Multi-Cu
 
 Selecciona tu proveedor en **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Los tipos de cambio se pueden actualizar manualmente en cualquier momento o programar para que se actualicen automáticamente.
 
-### Anulación de Precios por Producto
+### Anulación de Precios por Producto {#per-product-pricing-overrides}
 
 Cuando la conversión automática no es lo suficientemente precisa, puedes establecer un precio exacto para una moneda específica en cualquier producto:
 
@@ -66,7 +66,7 @@ Cuando la conversión automática no es lo suficientemente precisa, puedes estab
 
 Los productos sin anulación utilizan el precio convertido de tu moneda base.
 
-### Campo Selector de Moneda en el Registro
+### Campo Selector de Moneda en el Registro {#currency-selector-signup-field}
 
 El campo selector de moneda se puede añadir a tu flujo de registro/pago para que los clientes elijan su moneda preferida al registrarse:
 
@@ -76,7 +76,7 @@ El campo selector de moneda se puede añadir a tu flujo de registro/pago para qu
 
 La moneda seleccionada se almacena con la suscripción y se utiliza para todas las facturaciones posteriores.
 
-### Detección de Moneda Basada en Geolocalización
+### Detección de Moneda Basada en Geolocalización {#geolocation-based-currency-detection}
 
 Cuando la detección de geolocalización está activada, el complemento mapea el país del visitante a una moneda y la preselecciona en el campo selector de moneda. Para activarlo:
 
@@ -86,27 +86,27 @@ Cuando la detección de geolocalización está activada, el complemento mapea el
 
 Si no existe un mapeo para el país del visitante, se utiliza la moneda base de la red como alternativa.
 
-## Preguntas Frecuentes
+## Preguntas Frecuentes {#frequently-asked-questions}
 
-### ¿Qué sucede si un proveedor de tipos de cambio no está disponible?
+### ¿Qué sucede si un proveedor de tipos de cambio no está disponible? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 El complemento recurre a los últimos tipos de cambio obtenidos con éxito. Si nunca se han obtenido tipos, recurre a los tipos manuales que has configurado. Se recomienda configurar tipos manuales como red de seguridad.
 
-### ¿Puedo usar proveedores diferentes para diferentes monedas?
+### ¿Puedo usar proveedores diferentes para diferentes monedas? {#can-i-use-different-providers-for-different-currencies}
 
 No; un proveedor está activo a la vez para todas las monedas. Usa **Manual** si necesitas control total sobre los tipos individuales.
 
-### ¿Requiere la geolocalización un plugin separado?
+### ¿Requiere la geolocalización un plugin separado? {#does-geolocation-require-a-separate-plugin}
 
 No se requiere ningún plugin de geolocalización externo. El complemento utiliza la detección de IP a país integrada de WordPress. Para una mayor precisión, se puede integrar un servicio de geolocalización dedicado a través de los *hooks* de filtro proporcionados.
 
-### ¿Se aplican las anulaciones de productos antes o después de impuestos?
+### ¿Se aplican las anulaciones de productos antes o después de impuestos? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Las anulaciones de productos establecen el precio antes de impuestos en la moneda objetivo. El impuesto se calcula sobre el precio anulado utilizando tu configuración de impuestos existente.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versión 1.0.0 — Lanzada el 2026-04-02
+### Versión 1.0.0 — Lanzada el 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nuevo: Soporte multi-moneda con conversión automática de tipos de cambio
 - Nuevo: Anulación de precios por producto para precios exactos específicos de la moneda

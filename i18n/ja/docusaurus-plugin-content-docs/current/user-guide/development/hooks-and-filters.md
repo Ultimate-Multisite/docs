@@ -3,7 +3,7 @@ title: フックとフィルター
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite フックとフィルタ
+# Ultimate Multisite フックとフィルタ {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite は多くの関数とデータベースクエリで構成されています。フックとフィルタを使用すると、既存の関数に新しいコードを追加したり、変更したりできます。
 

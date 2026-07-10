@@ -3,33 +3,33 @@ title: Bæta viðskiptaþjónustuáætlun
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Styrk innvegna panel
+# Styrk innvegna panel {#enhance-control-panel-integration}
 
-## Áttekking
+## Áttekking {#overview}
 Enhance er nútíma kontrollpanel sem býður upp um sterk automatískum leiðang og stjórnunarferli fyrir vefsítana. Þessi tenging gerir mögulegt að sjálfsviðskipti domænum og stjórnun SSL-tækilorðanna á milli Ultimate Multisite og Enhance Control Panel.
 
 **Tengd viðmiðing:** Sjá [GitHub Diskussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) fyrir samfélagsþekkingar og vöxtu upplýsingar.
 
-## Stöðvar
+## Stöðvar {#features}
 - Sjálfsviðskipti domænum þegar domænum eru mappa í Ultimate Multisite
 - Sjálfsviðskipti SSL-tækilorða með LetsEncrypt þegar DNS er lösgæð
 - Stöðvar fyrir subdomænu net sem renna í subdomænu leiðum
 - Fjármun domænsins þegar mappa eru fjarlægðar
 - Tengingstesting til að staðfesta API-tækilorðin
 
-## Kreftingar
+## Kreftingar {#requirements}
 
-### Systemkreftingar
+### Systemkreftingar {#system-requirements}
 - Enhance Control Panel er installað og aðgengilegt
 - WordPress Multisite installation er hostað á eða tengd við Enhance server
 - Apache vefsérfur (Enhance stendur með Apache uppsetningum; LiteSpeed Enterprise er til við sjaldandi verði)
 
-### API Aðgangur
+### API Aðgangur {#api-access}
 Þú þarft að hafa administratoraðgangur í Enhance Control Panel til að skapa API token.
 
-## Skráning API-tækilorða þina
+## Skráning API-tækilorða þina {#getting-your-api-credentials}
 
-### 1. Skapa API Token
+### 1. Skapa API Token {#1-create-an-api-token}
 
 1. Logga inn í Enhance Control Panel sem administrator
 2. Klikka á **Settings** (Innstillingar) í menúinn fyrir leiðang
@@ -45,7 +45,7 @@ Enhance er nútíma kontrollpanel sem býður upp um sterk automatískum leiðan
 
 Eftir að þú hefur skráð það, verður **Access Token** og **Organization ID** sýnd **eftir**. **Skrá þessar strax** þar sem tokeninn mun ekki sýnast aftur.
 
-### 2. Fáðu eigin Organization ID
+### 2. Fáðu eigin Organization ID {#2-get-your-organization-id}
 
 Organization ID er sýnt á síðunni Access Tokens í blá upplýsingabokkinni merkt "Org ID: {your_id}".
 
@@ -56,7 +56,7 @@ Organization ID er UUID formátt sem: `d8554b6d-5d0d-6719-009b-fec1189aa8f3`
 2. Klikka á **Manage customer** (Styri viðskiptavinann) fyrir viðkomandi viðskiptavinann
 3. Sjáðu í URL - Organization ID er alfanumerískir teikn sem eru eftir `/customers/`
 
-### 3. Fáðu eigin Server ID
+### 3. Fáðu eigin Server ID {#3-get-your-server-id}
 
 Til að finna þennan Server ID (sem er nauðsynlegur fyrir að stýra domænum):
 
@@ -73,7 +73,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID fylgir UUID formátt: `00000000-0000-0000-0000-000000000000`
 
-### 4. Fáðu eigin API URL
+### 4. Fáðu eigin API URL {#4-get-your-api-url}
 
 API URL þinn er URL Enhance Control Panel þinn með `/api/` viðbúið:
 
@@ -85,9 +85,9 @@ https://your-enhance-panel.com/api/
 - Notkun bara domænsins án `/api/`
 - Notkun HTTP í stað HTTPS (HTTPS er nauðsynlegt fyrir öryggi)
 
-## Configuration
+## Configuration {#configuration}
 
-### Required Constants
+### Required Constants {#required-constants}
 
 Blaðni eftirfarandi konstantar í skrá `wp-config.php`:
 
@@ -96,7 +96,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### Uppsetning með Integrations Wizard
+### Uppsetning með Integrations Wizard {#setup-via-integration-wizard}
 1. Í WordPress admin, gae til **Ultimate Multisite** > **Settings**
 2. Navigdu yfir í flugvinnu **Integrations** (Integrations)
 3. Finndu **Enhance Control Panel Integration** og klikktu á **Configuration** (Uppsetning)
@@ -110,15 +110,15 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - Látandi vinnarstigið sjálft innihelda þessar constantar í `wp-config.php` skrifstafinn með sjálfu
 - Kopuna constantar og bætt við þær manuelle
 
-## Aðgerðir á WordPress
+## Aðgerðir á WordPress {#additional-wordpress-configuration}
 Með tengingum frá samfélögum ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) þarf þér að geta uppsetta þessar viðbótarsetningar:
 
-### Uppsetning .htaccess
+### Uppsetning .htaccess {#htaccess-configuration}
 Ef þú ert með því að upplifa þrýstingur á mappaðir domænar (domain mapping):
 1. Drauma úr upprunalegu Enhance `.htaccess` skrifstafinu
 2. Skynja það með standard WordPress Multisite `.htaccess` skrifstafi
 
-### Cookie Constantar
+### Cookie Constantar {#cookie-constants}
 Bættu þessar constantar í `wp-config.php` til að tryggja rétt handlun með cookie-um á mappaðir domænum:
 
 ```php
@@ -127,9 +127,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Hvernig það virkar
+## Hvernig það virkar {#how-it-works}
 
-### Þegar domæna er mappað
+### Þegar domæna er mappað {#when-a-domain-is-mapped}
 
 
 1. Notkunirðilli notkunarann tengist sérsniðnum domæni í Ultimate Multisite (eða nýtt svið er skiptist í subdomain mode)
@@ -138,14 +138,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Þegar DNS-tengslanir leiða til serverinn þinn, aðaddar Enhance sjálf automatisk SSL-sertifikat með LetsEncrypt
 5. Domænið verður aktivt með HTTPS
 
-### Þegar domæni er fjarlægð
+### Þegar domæni er fjarlægð {#when-a-domain-is-removed}
 
 1. Fjarlægja domænin tengingu í Ultimate Multisite
 2. Tengingin spyrir Enhance eftir ID domænsins
 3. DELETE-skynstild sendur til: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance fjarlægðar domænið úr uppsetningu serverinnar þín
 
-### DNS og SSL tölvunarmiðlun
+### DNS og SSL tölvunarmiðlun {#dns-and-ssl-checking}
 
 Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 - Þú getur sett upp tölvunarmiðlunartíma í **Domain Mapping Settings** (eða Domænin tengingu settar) (eða mótum: 300 sekúnd/5 mínútur)
@@ -153,9 +153,9 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 - Validitet SSL-sertifikat er skynst í sjálf
 - Enhance tekur hálfgerðina fyrir SSL með sjálfum, svo þarf manuelle SSL-tölvunarmiðlun ekki
 
-## Verifisering uppsetningar
+## Verifisering uppsetningar {#verifying-setup}
 
-### Prófa tengingu
+### Prófa tengingu {#test-the-connection}
 
 1. Í Integration Wizard (Tengingshættustíð) nota **Test Connection** skrefið
 2. Addoninn reynir að lista domæni á serverinn þínum
@@ -165,7 +165,7 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
    - Server ID er réttur
    - Aðgengi er sett rétt
 
-### Í eftir tengingu domænsins
+### Í eftir tengingu domænsins {#after-mapping-a-domain}
 
 1. Tengi prófanlegum domæni í Ultimate Multisite
 2. Skynst Ultimate Multisite logs (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -175,9 +175,9 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 
 4. Eftir að DNS er þróun, verifisð að SSL sé að addast sjálf
 
-## Feilanirfar villur
+## Feilanirfar villur {#troubleshooting}
 
-### Vantennu á API tengingu
+### Vantennu á API tengingu {#api-connection-issues}
 
 **Vantenn:** "Failed to connect to Enhance API" (Feilanngið ekki tengja sér við Enhance API)
 - Staða `WU_ENHANCE_API_URL` er í endinni `/api/`.
@@ -195,7 +195,7 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 - Vantenn, að Server ID sé rétt UUID formáttur.
 - Vantenn, að serverinn sé til staðar í Enhance panelinu þínu.
 
-### Domæni ekki viðbúið
+### Domæni ekki viðbúið {#domain-not-added}
 
 **Vantenn á loggum:**
 1. Gangi **Ultimate Multisite** > **Logs**.
@@ -208,7 +208,7 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 - Ítrúleg skilyrði fyrir API (vitið það að tokenin sé með rólina System Administrator).
 - Server ID er ekki tónn við raunverulegan server í Enhance.
 
-### Vantenn á SSL kerfi
+### Vantenn á SSL kerfi {#ssl-certificate-issues}
 
 **SSL er ekki viðbúið:**
 - Staða, að DNS sé reiknað til IP hefðar þín.
@@ -222,7 +222,7 @@ Ultimate Multisite hefur innbyggd tölvunarmiðlun fyrir DNS og SSL:
 2. Finndu domænið og skoða staðleika SSL þess.
 3. Þú getur manningastartað viðbúning SSL ef það er nauðsynlegt.
 
-### Tími fyrir DNS-skilblaði
+### Tími fyrir DNS-skilblaði {#dns-check-interval}
 
 Ef domænir eða SSL-certifikat eru að því að taka yfir of mikið tíma:
 1. Gangi í **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -230,7 +230,7 @@ Ef domænir eða SSL-certifikat eru að því að taka yfir of mikið tíma:
 3. Breyti þennan verdi frá skrefum 300 (sekundir) til einn lítillari gildi (minimum: 10 sekúndur)
 4. **Athugið:** Lítilari timalegni þýða fleiri skilningarnir, en mögulegt er að það hækki sjálfshlutlanum á serveri.
 
-### Skilningartryggingarsvæði (Authentication Errors)
+### Skilningartryggingarsvæði (Authentication Errors) {#authentication-errors}
 
 **HTTP 401/403 villur:**
 - Uppfráðu API tokeninn þinn í Enhance
@@ -238,7 +238,7 @@ Ef domænir eða SSL-certifikat eru að því að taka yfir of mikið tíma:
 - Þýðu að tokenin hefur ekki laukið
 - Staðfesti að þú notar rétt Organization ID (þótt það er oft ekki nauðsynlegt í URL)
 
-### Skilningarskýrslur (Log Analysis)
+### Skilningarskýrslur (Log Analysis) {#log-analysis}
 
 Aktiva detallda skýrslur:
 ```php
@@ -252,15 +252,15 @@ define('WP_DEBUG_LOG', true);
 - WordPress debug logginn: `wp-content/debug.log`
 - Enhance panel skýrslur: Til að finna þau í admin interface Enhances
 
-## API Viðmið (API Reference)
+## API Viðmið (API Reference) {#api-reference}
 
-### Skilningartryggingarsvæði (Authentication)
+### Skilningartryggingarsvæði (Authentication) {#authentication}
 Allar API-skynstök nota Bearer token authentication:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Almenn endepunkt sem notarðu (Common Endpoints Used)
+### Almenn endepunkt sem notarðu (Common Endpoints Used) {#common-endpoints-used}
 
 **Listar servera:**
 ```
@@ -283,30 +283,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Full API Dokumentation
+### Full API Dokumentation {#full-api-documentation}
 Full API dokumentation: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Trygging (Security)
+### Trygging (Security) {#security}
 - **Kom aldrei leggja API-token í version control**
 - Skrá token á `wp-config.php` sem þarf að vera útskipt í Git
 - Nota token með viðeigandi réttum (System Administrator fyrir fullan tengingu)
 - Setu tíðar fyrir lauxið token í produktionsemnum
 - Hlutta token periodically
 
-### Árangur (Performance)
+### Árangur (Performance) {#performance}
 - Nota almenn DNS skekkju-tíma (300 sekund) til að undirbúa yfirborga API-samtök
 - Fylgjast með Enhance server okkar þegar við framkvæmum stóru domén-aukningarnar
 - Hugsa um að byrja á nýjum doménaukinum ef þú mappa mikið af doménum á einu tíma
 
-### Fylgja (Monitoring)
+### Fylgja (Monitoring) {#monitoring}
 - Fylgjast reglulega með Ultimate Multisite logs fyrir tengingarfarhverfisvanda
 - Set upp fylgja fyrir felaðar doménaukinar
 - Staða SSL-tífa til að sjá hvort þau séu sett upp rétt
 - Fylgjast með fjölda og hámarkshættu Enhance server okkar
 
-## Aðferðarleiðar (Additional Resources)
+## Aðferðarleiðar (Additional Resources) {#additional-resources}
 
 - **Enhance Officiell Leiðarleiðar:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Leiðarleiðar:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -314,7 +314,7 @@ Full API dokumentation: [https://apidocs.enhance.com](https://apidocs.enhance.co
 - **GitHub Samræmi:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Guide fyrir Doménaukinningu Ultimate Multisite:** Sjá wiki-sida "Hvernig að uppsetja doménaukinningu v2"
 
-## Stöðun (Support)
+## Stöðun (Support) {#support}
 
 Ef þú ert í vanda:
 1. Fylgja með ágreiningarhlutstriðum ofan
@@ -323,7 +323,7 @@ Ef þú ert í vanda:
 4. Tengjast Enhance stöðun fyrir vanda í sérstökum panel-i
 5. Skapa nýja ágreiningu með nákvæmum villu-logs fyrir samfélagshjálp
 
-## Athugasemdir (Notes)
+## Athugasemdir (Notes) {#notes}
 
 Þessi tengingur huleur aðeins fyrir domænsalias; Enhance stýrir SSL-skiptum sjálf um.
 Tengingin stendurðar gegn bæði sérsniðnum domænsmápningum og vísafyrirbáta síðum (subdomain-based sites).

@@ -3,11 +3,11 @@ title: Пашыраваныя прыклады кода
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Пашыраныя прыклады кода
+# Пашыраныя прыклады кода {#advanced-code-examples}
 
 Тут прадстаўлены прыклады, якія паказваюць пашыраныя сцэнарыі інтэграцыі з Ultimate Multisite.
 
-## Дрыўны раслічэнні цаны (Dynamic Pricing Engine)
+## Дрыўны раслічэнні цаны (Dynamic Pricing Engine) {#dynamic-pricing-engine}
 
 Раслічэнні цаны на аснове правілаў, якія ўлічваюць аб'ём, лояльнасць і сезонныя зніжкі:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Пашыраельнае наладжанне сайта (Advanced Site Provisioning)
+## Пашыраельнае наладжанне сайта (Advanced Site Provisioning) {#advanced-site-provisioning}
 
 Аўтаматычна наладжаць новыя сайты з плагінамі, SSL, CDN, бэкапа ў адпаведнасці з функцыяналаўкай плана:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Сістэма карыстальніцкіх абмежаванняў (Custom Limitations System)
+## Сістэма карыстальніцкіх абмежаванняў (Custom Limitations System) {#custom-limitations-system}
 
 Адлік і фарсіванне абмежаванняў рэсурсаў з папярэднікамі пра карыстанне:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Атмарны лічыльнік з BerlinDB з `increment_item()`
+## Атмарны лічыльнік з BerlinDB з `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 дадаў мэты `increment_item()` да класа `Query` BerlinDB. Выкарыстоўвайце яго для выканання бяспечных, атмарных павелічэнняў лічбавых слупцаў, не выкарыстоўваючы рызыку гонкі (read-modify-write races) — гэта вельмі карысна для лічбы, квотаў карыстання і праверкі лімітаў па патрабаванні ў адначасовасці.
 
-### Сігнатура мэты
+### Сігнатура мэты {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 дадаў мэты `increment_item()` да класа
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Базавае выкарыстанне
+### Базавае выкарыстанне {#basic-usage}
 
 ```php
 // Дадаць 1 да слупца `api_calls` для ідэнтыфікатара абонавання 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Адлік API карыстання па абнававанні
+### Адлік API карыстання па абнававанні {#tracking-api-usage-per-membership}
 
 Практычны сцэнар для фарсівання лімітаў API па абнававанні:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Прычому `increment_item()` абраць, а не `update_item()`
+### Прычому `increment_item()` абраць, а не `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Просты падыход "прачытанне-абнаўленне-запіс" (read-modify-write) не бяспечны пры адначасовасці патрабаванняў:
 

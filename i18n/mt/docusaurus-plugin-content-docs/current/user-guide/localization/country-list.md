@@ -3,7 +3,7 @@ title: Lista dei pajar
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Riordien il lista dei panni del paese di Ultimate Multisite
+# Riordien il lista dei panni del paese di Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Il menu a tendina per selezionare un paese è ordinato in base all'alfabeto delle varianti inglesi dei nomi dei paesi. Questo può significare che, a volte, il paese della vostra azienda e/o la maggior parte dei vostri clienti potessero finire nascosti nel mezzo di una lista enorme di nomi dei paesi.
 

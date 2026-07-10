@@ -3,7 +3,7 @@ title: Kusimamia Wateja
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kusimamia Wateja
+# Kusimamia Wateja {#managing-customers}
 
 Ukurasa wa **Customers** unaonyesha orodha ya wanachama waliosajiliwa katika mtandao wako. Ukurasa huu unaonyesha taarifa za msingi za mtumiaji ikiwa ni pamoja na jina, anwani ya barua pepe, muda wa mwisho wa kuingia, na kiungo cha **switch to** kinachokuruhusu kuingia kwenye tovuti ndogo ya mtumiaji kama msimamizi wa tovuti.
 

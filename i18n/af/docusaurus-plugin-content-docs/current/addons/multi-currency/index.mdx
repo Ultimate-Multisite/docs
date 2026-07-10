@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency laat jou netwerk toe om betalings in verskeie valuut te aanvaar. Dit konverteer pryse outomaties met behulp van live of handmatige wisselkoerse, laat jou om presiese prys per produk vir enige valuut te stel, en detecteer elke besoeker se voorkeurvaluut via geolokasie — alles bestuur vanaf een enkele admin dashboard.
 
-## Sleutelkenmerke
+## Sleutelkenmerke {#key-features}
 
 - **Outomatiese wisselkoerskonversie** — pryse word van jou basisvaluut gekonverteer met behulp van koerse wat van jou gekose verskaffer verkry word
 - **Oortredings van prys per produk** — stel presiese valuut-spesifieke pryse op enige produk om outomatiese konversie te omseil
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency laat jou netwerk toe om betalings in verskeie
 - **Valuutdeteksie gebaseer op geolokasie** — stel outomaties die valuut in wat by die besoeker se land pas
 - **Admin dashboard** — bestuur aktiewe valuut, wisselkoerse en verskafferinstellings vanaf een plek
 
-## Vereistes
+## Vereistes {#requirements}
 
 - Ultimate Multisite 2.0.0 of hoër
 - WordPress Multisite installasie
 - PHP 7.4 of hoër
 
-## Instalering
+## Instalering {#installation}
 
 1. Laai die plugin-lêre op na `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktiveer die plugin deur die **Plugins** skerm in WordPress (Netwerk Aktiveer)
 3. Navigeer na **Ultimate Multisite → Multi-Currency** om die admin dashboard oop te maak
 4. Voeg die valuut by wat jy wil aanvaar en konfigureer jou wisselkoersverskaffer
 
-## Konfigurasie
+## Konfigurasie {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Die Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) is die sentrale plek om:
 
@@ -44,7 +44,7 @@ Die Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) i
 - Huidige koerse vir alle aktiewe valuut te hersien
 - Handmatige koerse te stel wanneer outomatiese verskaffers nie geskik is nie
 
-### Wisselkoersverskaffers
+### Wisselkoersverskaffers {#exchange-rate-providers}
 
 | Verskaffer | Beskrywing |
 |---|---|
@@ -55,7 +55,7 @@ Die Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) i
 
 Kies jou verskaffer onder **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Koerse kan op enige tyd handmatig verfris word of geskeduleer word om outomaties op te dateer.
 
-### Oortredings van Prys per Produk
+### Oortredings van Prys per Produk {#per-product-pricing-overrides}
 
 Wanneer outomatiese konversie nie presies genoeg is nie, kan jy 'n presiese prys vir 'n spesifieke valuut op enige produk stel:
 
@@ -66,7 +66,7 @@ Wanneer outomatiese konversie nie presies genoeg is nie, kan jy 'n presiese prys
 
 Produkte sonder 'n oortreding gebruik die gekonverteerde prys van jou basisvaluut.
 
-### Valuutkiezer-Registrasieveld
+### Valuutkiezer-Registrasieveld {#currency-selector-signup-field}
 
 Die valuutkiezerveld kan by jou registrasie/afrekening-proses bygevoeg word sodat kliënte hul voorkeurvaluut by registrasie kies:
 
@@ -76,7 +76,7 @@ Die valuutkiezerveld kan by jou registrasie/afrekening-proses bygevoeg word soda
 
 Die gekose valuut word gestoor met die inskrywing en gebruik vir alle daaropvolgende fakturering.
 
-### Valuutdeteksie Gebaseer op Geolokasie
+### Valuutdeteksie Gebaseer op Geolokasie {#geolocation-based-currency-detection}
 
 Wanneer geolokasie-deteksie geaktiveer is, kaart die addon die besoeker se land aan 'n valuut en stel dit vooraf in die valuutkiezerveld. Om dit te aktiveer:
 
@@ -86,27 +86,27 @@ Wanneer geolokasie-deteksie geaktiveer is, kaart die addon die besoeker se land 
 
 As geen kaarting bestaan vir 'n besoeker se land nie, word die netwerk se basisvaluut as die terugval gebruik.
 
-## Algemene Vrae
+## Algemene Vrae {#frequently-asked-questions}
 
-### Wat gebeur as 'n wisselkoersverskaffer nie beskikbaar is nie?
+### Wat gebeur as 'n wisselkoersverskaffer nie beskikbaar is nie? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Die addon val terug op die laaste suksesvol verkryde koerse. As nog koerse verkry is, val dit terug op die handmatige koerse wat jy gekonfigureer het. Dit word aanbeveel om handmatige koerse as 'n veiligheidsnet te konfigureer.
 
-### Kan ek verskillende verskaffers vir verskillende valuut gebruik?
+### Kan ek verskillende verskaffers vir verskillende valuut gebruik? {#can-i-use-different-providers-for-different-currencies}
 
 Nee — een verskaffer is op enige oomblik aktief vir alle valuut. Gebruik **Handmatig** as jy volledige beheer oor individuele koerse benodig.
 
-### Vereis geolokasie 'n aparte plugin?
+### Vereis geolokasie 'n aparte plugin? {#does-geolocation-require-a-separate-plugin}
 
 Geen eksterne geolokasie plugin is nodig nie. Die addon gebruik WordPress se ingeboude IP-na-land deteksie. Vir hoër akkuraatheid kan 'n toegewyde geolokasie diens geïntegreer word via die voorsiene filter-hooks.
 
-### Word prys-oortredings toegepas voor of na belasting?
+### Word prys-oortredings toegepas voor of na belasting? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Prys-oortredings stel die prys voor belasting in die teikenvaluut. Belasting word bereken op die oortredingsprys met behulp van jou bestaande belastingkonfigurasie.
 
-## Changelog
+## Changelog {#changelog}
 
-### Weergawe 1.0.0 — Vrygestel op 2026-04-02
+### Weergawe 1.0.0 — Vrygestel op 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nuut: Multi-valuut ondersteuning met outomatiese wisselkoerskonversie
 - Nuut: Oortredings van prys per produk vir presiese valuut-spesifieke pryse

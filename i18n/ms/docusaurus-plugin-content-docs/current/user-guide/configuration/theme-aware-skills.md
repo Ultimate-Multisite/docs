@@ -3,11 +3,11 @@ title: Kemahiran Sedar Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kemahiran Berdasarkan Tema (Theme-Aware Skills)
+# Kemahiran Berdasarkan Tema (Theme-Aware Skills) {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 memperkenalkan empat kemahiran terbina dalam baharu yang peka tema (theme-aware). Kemahiran ini secara automatik menyesuaikan diri dengan tema WordPress anda yang sedang aktif. Kemahiran ini menyediakan panduan dan keupayaan khusus yang disesuaikan dengan seni bina dan ciri tema anda.
 
-## Apakah Kemahiran Berdasarkan Tema?
+## Apakah Kemahiran Berdasarkan Tema? {#what-are-theme-aware-skills}
 
 Kemahiran berdasarkan tema ialah pangkalan pengetahuan dan set alat yang telah dikonfigurasi terlebih dahulu yang akan dipilih secara automatik oleh pembantu AI berdasarkan tema WordPress yang sedang aktif di laman web anda. Apabila anda menukar tema, kemahiran yang tersedia untuk pembantu akan dikemas kini secara automatik — anda tidak perlu membuat konfigurasi manual.
 
@@ -18,9 +18,9 @@ Setiap kemahiran merangkumi:
 - **Contoh penyesuaian** — cebisan kod dan corak konfigurasi untuk tugas biasa
 - **Amalan terbaik** — cadangan untuk seni bina dan aliran kerja tema
 
-## Kemahiran Berdasarkan Tema yang Tersedia
+## Kemahiran Berdasarkan Tema yang Tersedia {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Berkenaan dengan:** Tema yang menggunakan seni bina berasaskan blok WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Kemahiran Block Themes menyediakan panduan tentang:
 
 **Diaktifkan secara automatik apabila:** Tema aktif anda ialah tema blok (menyokong ciri `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Berkenaan dengan:** Tema WordPress tradisional yang menggunakan templat PHP dan editor klasik.
 
@@ -48,7 +48,7 @@ Kemahiran Classic Themes menyediakan panduan tentang:
 
 **Diaktifkan secara automatik apabila:** Tema aktif anda ialah tema klasik (bukan blok).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Berkenaan dengan:** Laman web yang menggunakan plugin Kadence Blocks untuk reka bentuk berasaskan blok yang canggih.
 
@@ -62,7 +62,7 @@ Kemahiran Kadence Blocks menyediakan panduan tentang:
 
 **Diaktifkan secara automatik apabila:** Plugin Kadence Blocks aktif di laman web anda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Berkenaan dengan:** Laman web yang menggunakan tema Kadence untuk reka bentuk dan penyesuaian berasaskan blok.
 
@@ -76,15 +76,15 @@ Kemahiran Kadence Theme menyediakan panduan tentang:
 
 **Diaktifkan secara automatik apabila:** Tema Kadence ialah tema aktif anda.
 
-## Cara Kemahiran Dipilih
+## Cara Kemahiran Dipilih {#how-skills-are-selected}
 
 Pembantu akan mengesan tema aktif dan plugin yang dipasang secara automatik pada setiap mesej. Jika kemahiran berdasarkan tema yang sepadan tersedia, ia akan dimuatkan ke dalam konteks pembantu secara automatik. Anda tidak perlu mengaktifkan atau menukar kemahiran secara manual.
 
-### Pelbagai Kemahiran
+### Pelbagai Kemahiran {#multiple-skills}
 
 Jika pelbagai kemahiran terpakai pada laman web anda (contohnya, jika anda mempunyai Kadence Blocks dan Kadence Theme yang aktif), pembantu mempunyai akses kepada semua kemahiran yang berkenaan dan boleh merujuk panduan daripada setiap satunya.
 
-### Menukar Tema
+### Menukar Tema {#switching-themes}
 
 Apabila anda menukar tema aktif anda, kemahiran yang tersedia untuk pembantu akan dikemas kini secara automatik pada mesej seterusnya. Contohnya:
 
@@ -92,11 +92,11 @@ Apabila anda menukar tema aktif anda, kemahiran yang tersedia untuk pembantu aka
 2. Anda menukar kepada tema klasik.
 3. Pada mesej anda yang seterusnya, kemahiran **Classic Themes** akan dimuatkan secara automatik, dan kemahiran **Block Themes** tidak lagi tersedia.
 
-## Menggunakan Kemahiran Berdasarkan Tema
+## Menggunakan Kemahiran Berdasarkan Tema {#using-theme-aware-skills}
 
 Untuk memanfaatkan kemahiran berdasarkan tema, cukup huraikan apa yang anda ingin lakukan dalam antara muka sembang. Pembantu akan merujuk panduan kemahiran yang sesuai secara automatik.
 
-### Contoh Prompts
+### Contoh Prompts {#example-prompts}
 
 **Untuk Block Themes:**
 > "Cipta bahagian hero dengan imej latar belakang dan teks berpusat menggunakan corak blok."

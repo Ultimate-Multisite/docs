@@ -3,27 +3,27 @@ title: Kupfuura Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Kusarera Kwesaiti (Site Export)
+# Kusarera Kwesaiti (Site Export) {#site-export}
 
 Peji readmin **Site Export** inabva admin page inabva kune administrators ve network kuti vapaone site imwe, kana nzvimbo yese ye network yakaiwa ku archive inogona kutorera kupenyu yekutanga (migration), backup, kana kunge kubatsirwa.
 
-## Kusarera Site Imwe
+## Kusarera Site Imwe {#exporting-one-site}
 
 Enda ku **Ultimate Multisite > Site Export** uye chine chine **Generate new Site Export**. Chibvumira subsite unoda kusarerwa, ndipo chine kutaura kuti archive inofanira kuva ne uploads, plugins, uye themes.
 
 Nekuti kusarera kunokura, tora ZIP kubva mu list ya **Existing Exports**. ZIPs dzakasarera zvinhu zvinogona kutorera `index.php` inosimbisa yakanzwisisa (self-booting) uye `readme.txt`, izvi zvinoita kuti archive inogone kuitorerwa kune host chinobva nekuita kunyanya plugin ya importer pane kukanga iwe utange kubata importer plugin inotanga.
 
-## Kusarera Network Yese
+## Kusarera Network Yese {#exporting-the-whole-network}
 
 Gara sei **Network Export** pa Site Export page kana unoda archive imwe inosimbisa subsites zvose mu network yako. Izvi zvinogona kuita kuti zvinhu zvakaita se host migrations, drills dze disaster-recovery, kana staging rebuilds where subsite dzese dzinofanira kutamba pamwechete.
 
 Kuti Network export inga kuitika pane site imwe yakawanda kupfuura kusarera site imwe, tora iye nguva inenge yakanyanya kuita (low-traffic window) uye tsanidza kuti target storage inenge inazo free space yakaiwa kutorera uploads, plugins, themes, uye ZIP files dzakasarera.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Kutanga neUltimate Multisite 2.12.0, Site Exporter inogona kuita **network import bundles** — archive dzine zvinangwa (specialized archives) dzine kukosha kune kutanga kubva kwe network yese ye site restoration. Network import bundle inosimbisa zvinhu zvose zvakakosha uye metadata kuti utange kubva ne subsites dzakawanda ku installation ya network yakare.
 
-#### Kusarera Network Import Bundle
+#### Kusarera Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Penda ku **Ultimate Multisite > Site Export**
 2. Klik **Generate new Network Export**
@@ -32,7 +32,7 @@ Kutanga neUltimate Multisite 2.12.0, Site Exporter inogona kuita **network impor
 5. Klik **Generate**
 6. Download bundle ZIP yevakundwa (Existing Exports)
 
-#### Kuti unoreda (Restore) kubva munzira yakare (Network Import Bundle)
+#### Kuti unoreda (Restore) kubva munzira yakare (Network Import Bundle) {#restoring-from-a-network-import-bundle}
 
 Kuti urere sites kubva munzira yakare (network import bundle):
 
@@ -53,7 +53,7 @@ Network import bundles dzichingoshandisa:
 - Media uploads (kuti zvakanyorwa munzira yakare)
 - Custom database tables uye data
 
-## Kurere ZIP inochinjwa yechidzidzo chake (self-booting export ZIP)
+## Kurere ZIP inochinjwa yechidzidzo chake (self-booting export ZIP) {#installing-a-self-booting-export-zip}
 
 Kuti urere ZIP inochinjwa yechidzidzo chake pa host wese wekufamba (fresh host):
 

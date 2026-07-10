@@ -3,25 +3,25 @@ title: 插件模板
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# 插件模板
+# 插件模板 {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## 需求
+## 需求 {#requirements}
 
 - WordPress 5.3 或更高
 - PHP 7.4 或更高
 - Multisite Ultimate plugin（已激活）
 
-## 安装
+## 安装 {#installation}
 
 1. 将插件文件上传到您的 `/wp-content/plugins/` 目录
 2. 通过 WordPress 的 '插件' 菜单激活插件
 3. 在网络管理后台配置插件设置
 
-## 开发
+## 开发 {#development}
 
-### 设置
+### 设置 {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### 项目结构
+### 项目结构 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### 测试
+### 测试 {#testing}
 
 插件包含一个全面的测试框架：
 
@@ -75,45 +75,45 @@ ultimate-multisite-addon-template/
 - **测试覆盖率**：已配置以跟踪代码覆盖率
 - **多站点测试**：在多站点环境中运行测试
 
-### 代码规范
+### 代码规范 {#code-standards}
 
 - **WordPress 编码规范**：通过 PHPCS 强制执行
 - **PHP 7.4+ 兼容性**：支持现代 PHP 功能
 - **静态分析**：集成 PHPStan 进行类型检查
 - **代码现代化**：使用 Rector 规则进行 PHP 升级
 
-### 构建系统
+### 构建系统 {#build-system}
 
 - **资产处理**：对 CSS/JS 文件进行压缩
 - **翻译**：生成 POT 文件
 - **打包**：创建归档文件以供分发
 - **开发模式**：未压缩的资产用于调试
 
-## 配置
+## 配置 {#configuration}
 
 插件支持多种可通过网络管理界面访问的配置选项。
 
-## 挂钩与过滤器
+## 挂钩与过滤器 {#hooks-and-filters}
 
-### 动作
+### 动作 {#actions}
 
 - `ultimate-multisite-addon-template_init` - Fired after addon initialization
 - `ultimate-multisite-addon-template_loaded` - Fired after all addon files are loaded
 
-### 过滤器
+### 过滤器 {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modify addon settings
 - `ultimate-multisite-addon-template_enabled` - Override addon enable/disable status
 
-## 许可证
+## 许可证 {#license}
 
 此插件采用 GPL v3 或更高版本授权。
 
-## 支持
+## 支持 {#support}
 
 如需支持和文档，请访问 [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## 变更日志
+## 变更日志 {#changelog}
 
 - 版本 1.0.1 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。
 

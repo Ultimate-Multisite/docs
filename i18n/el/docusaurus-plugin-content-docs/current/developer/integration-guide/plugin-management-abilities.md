@@ -3,11 +3,11 @@ title: Ικανότητες Διαχείρισης Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Ικανότητες Διαχείρισης Plugins
+# Ικανότητες Διαχείρισης Plugins {#plugin-management-abilities}
 
 Το Gratis AI Agent v1.5.0 διαθέτει **7 ικανότητες διαχείρισης plugins** που το AI assistant μπορεί να καλέσει κατά τη διάρκεια μιας συνομιλίας. Αυτές οι ικανότητες παρέχουν προγραμματιστικό έλεγχο των plugins WordPress που έχουν εγκατασταθεί μέσω του [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Γενική Επισκόπηση Ικανοτήτων
+## Γενική Επισκόπηση Ικανοτήτων {#abilities-overview}
 
 | Ικανότητα | Slug | Περιγραφή |
 |---|---|---|
@@ -19,7 +19,7 @@ _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 | Install Plugin | `install_plugin` | Εγκαθιστά ένα plugin που βρίσκεται στο sandbox στο live directory των plugins του WordPress. |
 | Activate Plugin | `activate_plugin` | Ενεργοποιεί ένα plugin που βρίσκεται στο sandbox στο περιβάλλον sandbox του wp-env. |
 
-## API Εγκατάστασης Plugins
+## API Εγκατάστασης Plugins {#plugin-installer-api}
 
 Ο μηχανισμός εγκατάστασης plugins διαχειρίζεται τις λειτουργίες του file system όταν εγκαθιστά ή αφαιρεί plugins. Οι βασικές λειτουργίες είναι:
 
@@ -28,7 +28,7 @@ _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 - **Ενημέρωση (Update)**: Αντικαθιστά τα υπάρχοντα αρχεία του plugin. Απενεργοποιεί το plugin πριν από τη συγγραφή για να αποφευχθούν τα σφάλματα με μερικό state.
 - **Διαγραφή βάσει slug**: Εντοπίζει τον κατάλογο του plugin βάσει slug, το απενεργοποιεί σε όλα τα sites, και στη συνέχεια αφαιρεί τον κατάλογο.
 
-### Καταγραφή Χειριστή Προσαρμοσμένης Εγκατάστασης
+### Καταγραφή Χειριστή Προσαρμοσμένης Εγκατάστασης {#registering-a-custom-install-handler}
 
 Μπορείτε να συνδέσετε (hook) στον κύκλο ζωής της εγκατάστασης χρησιμοποιώντας τις ενέργειες `gratis_ai_plugin_installer_before_install` και `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Κατάλογος Οικοσυστήματος (Ecosystem Registry)
+## Κατάλογος Οικοσυστήματος (Ecosystem Registry) {#ecosystem-registry}
 
 Οι ικανότητες καταγράφονται μέσω του **καταλόγου οικοσυστήματος plugins**. Ο κατάλογος αντιστοιχίζει τα slugs των ικανοτήτων στις κλάσεις των χειριστών τους και τα εκθέτει στον διαχειριστή εργαλείων (tool dispatcher) του AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Ενσωμάτωση HookScanner
+## Ενσωμάτωση HookScanner {#hookscanner-integration}
 
 Οι ικανότητες `create_plugin` και `update_plugin` εκτελούν αυτόματα το **HookScanner** έναντι του νέου κώδικα. Το HookScanner επιστρέφει μια λίστα με τα action και filter hooks του WordPress που έχουν καταγραφεί από το plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Το HookScanner παρακάμπτει αυτόματα τους καταλόγους `vendor/` και `node_modules/`.
 
-## Αρχιτεκτονική Ασύγχρονων Εργασιών (Async Job Architecture)
+## Αρχιτεκτονική Ασύγχρονων Εργασιών (Async Job Architecture) {#async-job-architecture}
 
 Οι μακροχρόνιες λειτουργίες των plugins (δημιουργία, εγκατάσταση) αποστέλλονται ως **async jobs** με παρακολούθηση της πρόοδου σε πραγματικό χρόνο. Η διεπαφή chat του AI κάνει polling για την πρόοδο και μεταδίδει ενημερώσεις κατάστασης στον χρήστη:
 

@@ -3,25 +3,25 @@ title: Dodatni šablon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 5.3 ili noviji
 - PHP 7.4 ili noviji
 - Multisite Ultimate plugin (aktiviran)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Učitajte fajlove addona u direktorij `/wp-content/plugins/`
 2. Aktivirajte plugin putem menija 'Plugins' u WordPressu
 3. Podesite postavke addona u administraciji mreže (network admin)
 
-## Razvoj
+## Razvoj {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Project Structure {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravila modernizacije koda
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
 Addon uključuje sveobuhvatni okvir za testiranje:
 
@@ -75,44 +75,44 @@ Addon uključuje sveobuhvatni okvir za testiranje:
 - **Pokrivenost testovima**: Konfigurisano za praćenje pokrivenosti koda
 - **Testiranje u Multisite okruženju**: Testovi se pokreću u multisite okruženju
 
-### Standardi koda
+### Standardi koda {#code-standards}
 
 - **WordPress Coding Standards**: Implementirani putem PHPCS-a
 - **PHP 7.4+ Kompatibilnost**: Podržane su moderne PHP značajke
 - **Statistička analiza**: Integracija PHPStan-a za provjeru tipova
 - **Modernizacija koda**: Rector pravila za nadogradnju PHP-a
 
-### Sistem izgradnje (Build System)
+### Sistem izgradnje (Build System) {#build-system}
 
 - **Obrađivanje resursa**: Minifikacija za CSS/JS fajlove
 - **Prevođenje**: Generisanje POT fajlova
 - **Pakovanje**: Kreiranje arhive za distribuciju
 - **Režim razvoja**: Neminifikovani resursi za debugovanje
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Addon podržava različite opcije konfiguracije dostupne putem interfejsa za administraciju mreže (network admin).
 
-## Hooks i Filteri
+## Hooks i Filteri {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije addona
 - `ultimate-multisite-addon-template_loaded` - Pokreće se nakon učitavanja svih fajlova addona
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifikovanje postavki addona
 - `ultimate-multisite-addon-template_enabled` - Prekrivanje statusa omogućavanja/onemogućavanja addona
 
-## Licenca
+## Licenca {#license}
 
 Ovaj addon je licenciran pod GPL v3 ili novijom verzijom.
 
-## Podrška
+## Podrška {#support}
 
 Za podršku i dokumentaciju, posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verzija 1.0.1 (2025-09-28): preimenovanje prefiksa na ultimate-multisite; ažuriranje domena teksta; povećanje verzije.
 

@@ -3,11 +3,11 @@ title: Prečo Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Prečo Ultimate Multisite
+# Prečo Ultimate Multisite {#why-ultimate-multisite}
 
 Ak ste na tejto stránke, pravdepodobne počuli, že náš plugin môže byť riešením, ktoré vám pomôže skutočnúť vašu obchodnú myšlienku. Nádejme si, že na konci tohto článku budete mať všetky potrebné odpovede.
 
-## Čo je Ultimate Multisite?
+## Čo je Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite je WordPress Multisite plugin, ktorý vám umožňuje ponúkať zákazníkom WaaS (Website as a Service – webovú službu). S našim pluginom môžete mať rôzne úrovne predplatného a zákazníci si za pravidelné poplatky platia za to, aby mali stránku hostenú v vašej Multisite sieti.
 
@@ -15,7 +15,7 @@ Ultimate Multisite vám umožňuje prijímať platby cez rôzne gateway (ako je 
 
 A to je len začiatok, pretože jeho funkcie môžete rozšíriť pomocou add-onov a webhooks.
 
-## Iné vlastnosti
+## Iné vlastnosti {#other-features}
 
 Ultimate Multisite ponúka aj:
 
@@ -33,11 +33,11 @@ A ešte viac pokročilé funkcie:
 
 * API Hľadaní a Vymenenia (Search and Replace API): Môžete tiež anotovať webové šablóny pomocou placeholderov ako `{{site_name}}` a použiť API Hľadaní a Vymenenia na automatické vyplnenie týchto placeholderov informáciami poskytnutými vašim zákazníkom hneď po registrácii.
 
-## Použitia
+## Použitia {#use-cases}
 
 Teraz je čas zobraziť niektoré možná použitia Ultimate Multisite.
 
-### Predajca (Agency)
+### Predajca (Agency) {#case-1-an-agency}
 
 Typické základné zručnosti agentúry sú navrhovanie webových stránok s aspekтами ako ich hostovanie alebo marketing uvedené ako doplnkové služby.
 
@@ -47,7 +47,7 @@ Stredné ovládanie pluginov a tém je zachované na úrovni jednotlivých produ
 
 Agencie si s Ultimate Multisite vám dá pokoj, aby ste mohli robiť to, čo robíte najlepšie – navracať výnimočné webové stránky.
 
-### Študium 2: Špecializovaný poskytovateľ
+### Študium 2: Špecializovaný poskytovateľ {#case-2-niche-provider}
 
 Existuje stará poviedka, ktorá hovorí: „Urob jedno a urob to dobre“. Pre mnohých špecialistov to znamená vytvoriť produkt alebo službu okolo jedného základného nápadu.
 
@@ -57,7 +57,7 @@ Jedná z inovatívnych vlastností Ultimate Multisite – šablónová stránka 
 
 Pre poskytovateľa študnej siete a služieb to je neporovnateľná výhoda v schopnosti okamžite vytvoriť stránku pripravenú na použitie s prispôsobenými pluginmi a dizajnom. Zákazník potrebuje len minimálny vstup, aby dokončil službu.
 
-### Študium 3: Web hostovanie WordPressu
+### Študium 3: Web hostovanie WordPressu {#case-3-wordpress-web-hosting}
 
 Existuje neviemocné množstvo spôsobov hostovania WordPress stránok, ale zriedkavé je to tak jednoduché ako poskytnúť zákazníkovi webové priestory s predinstalovanou verziou WordPressu. To je preto, že potrebuje sa spárovať niekoľko rozhodnutí a ohľadov na poskytnutie významnej služby.
 

@@ -3,9 +3,9 @@ title: Журнал изменений синхронизации контент
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Content Sync Changelog
+# Content Sync Changelog {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * New: Поддержка синхронизации всех типов записей (posts, pages, custom post types)
 * New: Фильтрация типов записей на шаге выбора контента
 * New: Шаг выбора исходного сайта — синхронизация с любого сайта, а не только с основного
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Changed: Шаг "Select Templates" переименован в "Select Data"
 * Improved: Код, специфичный для Elementor, теперь выполняется только для типа записи elementor_library
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * Первоначальная версия
 * Многошаговый мастер для выбора шаблона и сайта
 * Пакетная обработка с обратной связью о прогрессе в реальном времени

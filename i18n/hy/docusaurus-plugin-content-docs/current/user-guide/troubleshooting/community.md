@@ -3,7 +3,7 @@ title: Համայնք
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite համայնքին միանալու համար
+# Ultimate Multisite համայնքին միանալու համար {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community-ը այն տեղն է, որտեղ կարող եք կապ հաստատել մյուս Ultimate Multisite օգտվողների հետ և փոխանակել խորհուրդներ, փորձառություններ և այլ բան։ Ultimate Multisite Community-ում մուտք գործելու համար գնացեք https://community.ultimatemultisite.com/home:
 

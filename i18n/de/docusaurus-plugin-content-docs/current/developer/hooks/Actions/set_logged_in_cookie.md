@@ -6,7 +6,7 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
 Löst unmittelbar aus, bevor das eingeloggt-Authentifizierungs-Cookie gesetzt wird.
 
-## Parameter
+## Parameter {#action-setloggedincookie}
 
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
@@ -17,11 +17,11 @@ Löst unmittelbar aus, bevor das eingeloggt-Authentifizierungs-Cookie gesetzt wi
 | $scheme | `string` | Authentifizierungs-Schema. Standardmäßig 'logged_in'. |
 | $token | `string` | Benutzersitzungstoken, das für dieses Cookie verwendet wird. |
 
-### Seit
+### Seit {#parameters}
 
 - 2.6.0
 - 4.9.0: Der <code>$token</code>-Parameter wurde hinzugefügt.
 
-### Quelle
+### Quelle {#since}
 
 Definiert in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) bei Zeile 141

@@ -1,140 +1,192 @@
 ---
-title: Aanknopings Verwysing
+title: Hooks-verwysing
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks Verwysing
+# Hooks-verwysing {#hooks-reference}
 
-Outomaties gegenereerde dokumentasie vir al **59 aksies** en **115 filters** in Ultimate Multisite.
+Outomaties gegenereerde dokumentasie vir al **59 actions** en **118 filters** in Ultimate Multisite.
 
-## Aksies
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Word geaktiveer voor die werksbeveiliging-herroeping.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Word onmiddellik geaktiveer voordat die werksbeveiligingkoekie gestel word.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Word onmiddellik geaktiveer voordat die ingelogde werksbeveiligingkoekie gestel word.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Laat ontwikkelaars toe om hul eie host-verskaffer-integrasies via wp plugins by te voeg.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Word geaktiveer wanneer al die afhanklikhede gelaai is.
-- [wu_activation](./Actions/wu_activation) — Laat ander dele van die plugin toe om hul roetines vir aktivering aan te heg.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Laat plugin-ontwikkelaars toe om funksies aan te koppel nadat 'n gebruiker of super-admin die webwerf-sjabloon verander het.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — In sommige gevalle sal ons ekstra "sap" moet laai om aksies te hanteer.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Word geaktiveer voor die verwerking van die soekversoek.
+- [auth_redirect](./Actions/auth_redirect) — Word uitgevoer voor die verifikasie-herleiding.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Word onmiddellik uitgevoer voordat die verifikasie-cookie gestel word.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Word onmiddellik uitgevoer voordat die aangemelde verifikasie-cookie gestel word.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Laat ontwikkelaars toe om hul eie gasheerverskaffer-integrasies via wp plugins by te voeg.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Word geaktiveer wanneer al die afhanklikhede gelaai is
+- [wu_activation](./Actions/wu_activation) — Laat ander dele van die plugin hul roetines vir aktivering heg
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Laat plugin-ontwikkelaars toe om funksies te hook nadat ’n gebruiker of super-admin die site-sjabloon verander
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — In sommige gevalle sal ons ekstra krag moet laai om actions te hanteer.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Word uitgevoer voor die verwerking van die soekversoek.
 - [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Laat ontwikkelaars toe om bykomende veranderinge aan die checkout-objek te maak.
 - [wu_cart_setup](./Actions/wu_cart_setup) — Laat ontwikkelaars toe om bykomende veranderinge aan die checkout-objek te maak.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Word geaktiveer voor 'n veld by die checkout-form bygevoeg word.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Word uitgevoer voordat ’n veld by die checkout-vorm gevoeg word.
 - [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Laat ontwikkelaars toe om bykomende hooks te aktiveer.
 - [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Voordat ons die checkout verwerk.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Word geaktiveer nadat die checkout-bestelling volledig saamgestel is.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Laat plugin-ontwikkelaars toe om widgets by die Network Dashboard Panel by te voeg.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Laat plugin-ontwikkelaars toe om widgets by die Network Dashboard Panel by te voeg.
-- [wu_deactivation](./Actions/wu_deactivation) — Laat ander dele van die plugin toe om hul roetines vir deaktivering aan te heg.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Laat plugin-ontwikkelaars toe om aksies aan die verwyderingsproses by te voeg.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Word geaktiveer wanneer 'n domein die primêre domein vir 'n webwerf word.
-- [wu_domain_created](./Actions/wu_domain_created) — Word geaktiveer wanneer 'n nuwe domeinmappering bygevoeg word.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Word geaktiveer wanneer die domein word.
-- [wu_user_added_to_role]
-- [wu_user_removed_from_role]
-- [wu_user_updated_role]
-- [wu_user_deleted]
-- [wu_user_updated]
-- [wu_user_created]
-- [wu_user_deleted_role]
-- [wu_user_added_role]
-- [wu_user_removed_role]
-- [wu_user_updated_role]
-- [wu_user_created_role]
-- [wu_user_deleted_role_action]
-- [wu_user_added_role_action]
-- [wu_user_removed_role_action]
-- [wu_user_updated_role_action]
-- [wu_user_created_role_action]
-- [wu_user_deleted_role_action_action]
-- [wu_user_added_role_action_action]
-- [wu_user_removed_role_action_action]
-- [wu_user_updated_role_action_action]
-- [wu_user_created_role_action_action]
-- [wu_user_deleted_role_action_action_action]
-- [wu_user_added_role_action_action_action]
-- [wu_user_removed_role_action_action_action]
-- [wu_user_updated_role_action_action_action]
-- [wu_user_created_role_action_action_action]
-- [wu_user_deleted_role_action_action_action_action]
-- [wu_user_added_role_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action]
-- [wu_user_created_role_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_added_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_removed_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_updated_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_created_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
-- [wu_user_deleted_role_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action_action]
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Word uitgevoer nadat die checkout-bestelling volledig saamgestel is.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Laat plugin-ontwikkelaars toe om widgets by Network Dashboard Panel te voeg.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Laat plugin-ontwikkelaars toe om widgets by Network Dashboard Panel te voeg.
+- [wu_deactivation](./Actions/wu_deactivation) — Laat ander dele van die plugin hul roetines vir deaktivering heg
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Laat plugin-ontwikkelaars toe om actions by die uitveeproses te voeg
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Word uitgevoer wanneer ’n domein die primêre domein vir ’n site word.
+- [wu_domain_created](./Actions/wu_domain_created) — Word geaktiveer wanneer ’n nuwe domeinkartering bygevoeg word.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Uitgevoer nadat ons kern-domeinkartering gelaai is
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Sommige plugins sal URL stoor voordat die kartering aktief was of sal URLs op ’n ander manier bou wat nie ingesluit is nie o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Laat ontwikkelaars toe om te hook nadat ’n site-duplisering plaasvind.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Laat plugin-ontwikkelaars toe om bykomende hooks by te voeg
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook vir bykomende skoonmaak
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Word uitgevoer voordat die versoek vir die modal om ’n nuwe domein by te voeg, hanteer word.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Laat plugin-ontwikkelaars toe om metadata op verskillende maniere te stoor indien hulle moet.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Laat plugin-ontwikkelaars toe om gebruikersmetadata op verskillende maniere te stoor indien hulle moet.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Word uitgevoer wanneer ’n ongeldige magic link-token teëgekom word.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Word uitgevoer nadat ’n gebruiker via magic link aangemeld is.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Laat plugin-ontwikkelaars toe om bykomende dinge te doen wanneer die klant bygevoeg word.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Word uitgevoer nadat MCP-vermoëns vir ’n entiteit geregistreer is.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Word uitgevoer nadat die MCP-adapter geïnisialiseer is.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Word geaktiveer nadat die lidmaatskap gekanselleer is.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Word geaktiveer ná die lidmaatskaphernuwing.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Word geaktiveer voordat die lidmaatskap gekanselleer word.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Word geaktiveer voor die lidmaatskaphernuwing.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Word uitgevoer nadat ’n objek in die database gestoor is.
+- [wu_page_added](./Actions/wu_page_added) — Laat plugin-ontwikkelaars toe om bykomende dinge uit te voer wanneer bladsye geregistreer word.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Laat plugin-ontwikkelaars toe om bykomende inhoud by te voeg nadat ons die bladsy druk
+- [wu_page_before_render](./Actions/wu_page_before_render) — Laat plugin-ontwikkelaars toe om bykomende inhoud by te voeg voordat ons die bladsy druk.
+- [wu_page_load](./Actions/wu_page_load) — Laat plugin-ontwikkelaars toe om bykomende hooks by ons bladsye te voeg.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Laat plugin-ontwikkelaars toe om bykomende inhoud by te voeg nadat ons die bladsy druk
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Laat plugin-ontwikkelaars toe om bykomende inhoud by te voeg voordat ons die bladsy druk.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Laat plugin-ontwikkelaars toe om bykomende hooks by ons bladsye te voeg.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Word uitgevoer nadat widgets vir hierdie bladsy geregistreer is.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Word uitgevoer om addons toe te laat om vermoë-modules aan integrasies te heg.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Word uitgevoer om integrasies toe te laat om hulself te registreer.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Laat bykomende roetes toe om geregistreer te word.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Laat plugin-ontwikkelaars toe om actions by die stoorproses te voeg
+- [wu_site_created](./Actions/wu_site_created) — Word uitgevoer nadat ’n site vir die eerste keer geskep is.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Laat plugin-ontwikkelaars toe om bykomende hooks by te voeg, indien nodig.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Loop wanneer binne die sjabloonvoorskouer-konteks.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Aktiveer die enqueue scripts-hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Word uitgevoer nadat ’n objek in die database gestoor is.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Word uitgevoer nadat ’n objek in die database gestoor is.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Word uitgevoer nadat ’n objek in die database gestoor is.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Laat plugin-ontwikkelaars toe om actions by die ontsluitproses te voeg.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtreer die duur van die verifikasiekoekie se vervaltydperk.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtreer die verifikasie-herleidingskema.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Herhaal die oorspronklike WP Filter hier, vir goeie maat.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Laat plugin-ontwikkelaars toe om die URL te filtreer wat in die voorskouer gebruik word
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtreer of die auth-koekie slegs oor HTTPS gestuur moet word.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtreer of ’n veilige verifikasieherleiding gebruik moet word.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtreer of die aangemelde-koekie slegs oor HTTPS gestuur moet word.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Laat toe dat auth-koekies verhoed word om werklik na die kliënt gestuur te word.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Stel die herleidings-URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Voeg bykomende stappe via filters by
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Laat plugin-ontwikkelaars toe om ekstra veranderlikes globaal by die weergawe-konteks te voeg.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Laat ontwikkelaars toe om hierdie kontrole kort te sluit.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtreer die velde vir die voeg-nuwe-domein-modal.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Laat ontwikkelaars toe om veranderinge aan die opstelkostelynitem te maak.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Laat ontwikkelaars toe om admin-kennisgewings wat deur Ultimate Multisite bygevoeg is, te filtreer.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtreer nadat dit verander is.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nou hanteer ons al die tipes.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Laat plugin-ontwikkelaars toe om die beperkings kort te sluit.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtreer of die aansluitingsfooi toegepas moet word of nie.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtreer die oorspronklike api-argumente.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Laat plugin-ontwikkelaars toe om die faktuuradresvelde te filtreer.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Laat ontwikkelaars toe om die uitvoer te omseil en ’n nuwe een te stel
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Laat ontwikkelaars toe om die kode wat die huidige gebruiker ontstel, te omseil.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtreer die "herhalende bedrag"-totaal.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtreer die "aanvanklike bedrag"-totaal.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtreer die "aanvanklike bedrag"-totaal.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Laat plugin-ontwikkelaars toe om met die kredietwaarde te peuter.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtreer gedeelde checkout-vorm-basisdomeine wat nie gekarteerde-domein-rekords moet word nie.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Ons API's om nuwe veldsjablone by te voeg, haak hier in.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Ons API's om nuwe veldtipes by te voeg, haak hier in.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtreer die foutboodskappe.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Laat ontwikkelaars toe om die kontrole te omseil as ’n veld outomaties indienbaar is.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Laat plugin-ontwikkelaars toe om pasgemaakte aliasse in die vormvalideerder by te voeg.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Laat plugin-ontwikkelaars toe om die valideringsreëls te filtreer.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Ontstel ongewenste Params.
+- [wu_contains_element](./Filters/wu_contains_element) — Laat ontwikkelaars toe om die resultate van die aanvanklike soektog te verander.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Laat gasheerverskaffers toe om die konstante anders te installeer.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Gee die mooi naam van die land se administratiewe onderverdelings terug.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Gee die lys stede vir ’n staat in ’n land terug.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Gee die lys state vir hierdie land terug.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Laat ontwikkelaars toe om die verstekgedrag te wysig en die huidige kliënt anders te stel.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Laat ontwikkelaars toe om die verstekgedrag te wysig en die huidige lidmaatskap anders te stel.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Laat ontwikkelaars toe om die verstekgedrag te wysig en die huidige werf anders te stel.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Laat ontwikkelaars toe om die bestuur-werf-URL-parameters te wysig.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Laat plugin-ontwikkelaars toe om die skakels te filtreer.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Laat plugin-ontwikkelaars toe om nuwe kontroles by te voeg om die resultate te definieer.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Ons sal dalk later bykomende blokke moet byvoeg.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Voeg ’n generiese filter by om ontwikkelaars toe te laat om hierdie ontleder uit te brei om bykomende bouers of plugins te hanteer.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtreer of bykomende wagwoordreëls afgedwing moet word.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtreer gegenereerde kliëntgebruikersnaam.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Laat plugin-ontwikkelaars toe om die voorafinstellings van ’n checkout-bladsy te filtreer.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Laat ontwikkelaars toe om nuwe vorm-slugs by te voeg om hierdie gedrag te omseil.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Laat ontwikkelaars en byvoegings toe om nuwe migrasiestappe by te voeg
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Sien meer oor hierdie filter hieronder, op hierdie selfde metode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Laat ontwikkelaars toe om te kies watter plasingtipes vertoon moet word.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Gee reëls terug, filtreerbaar
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Laat ontwikkelaars toe om die domein/pad-pare te manipuleer.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtreer die towenaar-afdelings vir hosting-integrasie-opstelling.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtreer die velde op ’n vorm. Die vorm word deur die ID in die filternaam geïdentifiseer.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtreer die produktipes wat onafhanklike faktuursiklusse het.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Laat plugin-ontwikkelaars toe om ’n gegewe toestand vir die API af te dwing.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Laat plugin-ontwikkelaars toe om bykomende toetse vir ontwikkelingsmodus by te voeg.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Laat plugin-ontwikkelaars toe om ’n gegewe toestand vir die MCP-adapter af te dwing.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Om veiligheidsredes beperk ons die aantal aksies wat beskikbaar is om in te haak. Hierdie filter laat ontwikkelaars toe om uit te brei
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontroleer of ’n gegewe plasingtipe op hierdie plan toegelaat word Laat plugin-ontwikkelaars toe om die terugkeerwaarde te filtreer
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtreer of IP-adresverifikasie afgedwing moet word.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtreer of user agent-verifikasie afgedwing moet word.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtreer die gegenereerde magic link-URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtreer of magic links geaktiveer is.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtreer die herleidings-URL nadat ’n domein primêr gemaak is.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Skep ’n uitsluitingslys van parameters wat die outo-herleiding voorkom.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter om die MCP-vermoë-insluitingsbesluit te oorheers.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtreer die berekende vervaldatum.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtreer die berekende vervaldatum wat ná die hernuwing gestel moet word.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Laat ontwikkelaars toe om nuwe opdateringsvorm-slugs by te voeg.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtreer die minimum wagwoordlengte.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtreer die minimum vereiste wagwoordsterkte (zxcvbn-telling).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Laat plugin-ontwikkelaars, en onsself, toe om aksieskakels by ons wysigbladsye te voeg
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtreer of kleinletters in wagwoorde vereis moet word.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtreer of syfers in wagwoorde vereis moet word.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtreer of spesiale karakters in wagwoorde vereis moet word.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtreer of hoofletters in wagwoorde vereis moet word.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Laat gebruiker toe om die boodskap oor die hangende betalings te verander.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtreer die produktipes wat as planne behandel moet word.
+- [wu_post_count](./Filters/wu_post_count) — Laat plugin-ontwikkelaars toe om die tellingtotaal te verander
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Laat plugin-ontwikkelaars toe om te verander watter plasingstatus getel moet word By verstek word gepubliseerde en private plasings getel
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtreer die objekdata voordat dit in die databasis gestoor word.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Laat ontwikkelaars toe om instellings voor stoor deur Ultimate Multisite te filtreer.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtreer of dit toegelaat word om met die versoek voort te gaan of nie.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtreer of dit toegelaat word om met die versoek voort te gaan of nie.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filter of dit toegelaat word om met die versoek voort te gaan of nie.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filter of dit toegelaat word om met die versoek voort te gaan of nie.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filter of dit toegelaat word om met die versoek voort te gaan of nie.
+- [wu_return_url](./Filters/wu_return_url) — Laat ontwikkelaars toe om die gateway-terugkeer-URL te verander wat ná checkout-prosesse gebruik word.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Laat plugin-ontwikkelaars toe om meer soekmodel-funksies by te voeg.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Laat ontwikkelaars toe om bykomende setup wizard-stappe by te voeg.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filter of Ultimate Multisite ’n domeinrekord vir ’n nuutgeskepte webwerf moet skep.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Laat ontwikkelaars toe om die herleiding kort te sluit en te voorkom dat dit gebeur.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Laat handler-herskryf toe
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filter die massa-aksies wat vir webwerwe beskikbaar is.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter om die waarde vir get pluginssites binne die netwerk te verander.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Aktiveer/deaktiveer kruisdomein-enkeltekenaan-vermoë.
+- [wu_sso_url](./Filters/wu_sso_url) — Filter gegenereerde SSO-URLs voordat hulle vir kruisdomein-kliëntaksies teruggestuur word.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filter Stripe Subscription-data. Kan success_url of cancel_url oorheers.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filter die payment intent-argumente.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filter die ID van die plan waarvoor nagegaan moet word. As dit bestaan, sal die nuwe subscription hierdie plan gebruik.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filter die ID van die produk waarvoor nagegaan moet word. As dit bestaan, sal die nuwe subscription hierdie produk gebruik.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filter die idempotency_key-waarde wat saam met die Stripe-heffingsopsies gestuur word.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filter die lidmaatskaprekord wat met hierdie webhook geassosieer word.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filter die data-meta voordat dit geserialiseer word om in die databasis gestoor te word.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filter die objekdata voordat dit in die databasis gestoor word.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Laat ontwikkelaars toe om die opgradeer-om-te-ontsluit-URL te verander
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Bepaal of ’n kartering gebruik moet word
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filter nuwe kliëntgebruikersnaam.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Laat ontwikkelaars toe om die boodskap oor die lidmaatskapgebruikerslimiet te verander
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Laat ontwikkelaars toe om bykomende vouers by die vervangbare lys te voeg.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filter watter sub_commands vir hierdie entiteit geaktiveer is.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Ons kyk vir drie patrone wanneer ons probeer uitvind waar ons ons konstantes kan inspuit:

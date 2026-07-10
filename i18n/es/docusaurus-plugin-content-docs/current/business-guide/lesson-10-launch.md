@@ -3,19 +3,19 @@ title: 'Lección 10: Día de lanzamiento'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lección 10: Día del Lanzamiento
+# Lección 10: Día del Lanzamiento {#lesson-10-launch-day}
 
 Ya está todo construido. Antes de abrir las puertas, esta lección recorre la lista de verificación previa al lanzamiento para asegurarse de que nada esté roto, faltando o sea vergonzoso.
 
-## Dónde nos quedamos
+## Dónde nos quedamos {#where-we-left-off}
 
 FitSite tiene plantillas, planes, checkout, branding, onboarding y precios configurados. Ahora verificamos que todo funcione y lanzamos el servicio.
 
-## Lista de verificación previa al lanzamiento
+## Lista de verificación previa al lanzamiento {#pre-launch-checklist}
 
 Recorre cada elemento. No omitas ninguno.
 
-### Infraestructura de la plataforma
+### Infraestructura de la plataforma {#platform-infrastructure}
 
 - [ ] El hosting es estable y funciona bien bajo carga
 - [ ] El Wildcard SSL está activo y todos los subdominios se sirven a través de HTTPS
@@ -23,7 +23,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] Los backups están configurados y probados (restaura al menos uno para verificar)
 - [ ] El monitoreo está implementado: sabrás si la plataforma se cae
 
-### Plantillas
+### Plantillas {#templates}
 
 - [ ] Las tres plantillas cargan correctamente en sitios nuevos
 - [ ] El contenido de marcador de posición es útil y está libre de errores tipográficos
@@ -32,7 +32,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] La velocidad de carga de la página es aceptable (prueba con una herramienta como GTmetrix o PageSpeed Insights)
 - [ ] No hay enlaces rotos ni activos faltantes en ninguna plantilla
 
-### Planes y productos
+### Planes y productos {#plans-and-products}
 
 - [ ] Los tres planes están activos y visibles
 - [ ] Las descripciones de los planes son precisas y específicas del nicho
@@ -42,7 +42,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] Los *order bumps* aparecen correctamente durante el checkout
 - [ ] Las limitaciones de plugin y tema se aplican correctamente por plan
 
-### Flujo de checkout
+### Flujo de checkout {#checkout-flow}
 
 - [ ] Completa un registro de prueba completo en cada plan (usa modo de pago de prueba)
 - [ ] La selección de plantillas muestra las plantillas correctas por plan
@@ -52,7 +52,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] El cliente puede iniciar sesión en su nuevo sitio inmediatamente
 - [ ] Los códigos de descuento funcionan correctamente
 
-### Branding
+### Branding {#branding}
 
 - [ ] La página de inicio de sesión muestra el branding de FitSite
 - [ ] El dashboard de administración muestra el branding de FitSite
@@ -60,7 +60,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] Las facturas se muestran correctamente con los detalles de tu negocio
 - [ ] El sitio de marketing está activo y enlaza al formulario de checkout
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] El widget Quick Start aparece en los dashboards de los clientes nuevos
 - [ ] Todos los enlaces Quick Start apuntan a las páginas correctas
@@ -68,7 +68,7 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] Los artículos de la base de conocimientos están publicados y accesibles
 - [ ] La página de cuenta muestra la información correcta del plan y las opciones de mejora
 
-### Legal y negocio
+### Legal y negocio {#legal-and-business}
 
 - [ ] Los términos de servicio están publicados y enlazados desde el checkout
 - [ ] La política de privacidad está publicada y accesible
@@ -77,11 +77,11 @@ Recorre cada elemento. No omitas ninguno.
 - [ ] La pasarela de pago está en modo en vivo (no en modo de prueba)
 - [ ] La configuración fiscal es correcta para tu jurisdicción
 
-## Lanzamiento suave vs. Lanzamiento completo
+## Lanzamiento suave vs. Lanzamiento completo {#soft-launch-vs-hard-launch}
 
 Considera un lanzamiento en dos fases:
 
-### Fase 1: Lanzamiento suave (Soft Launch)
+### Fase 1: Lanzamiento suave (Soft Launch) {#phase-1-soft-launch}
 
 Invita a 5-10 dueños de estudios de fitness a registrarse antes del lanzamiento público. Estos son tus clientes beta. Ofréceles un descuento significativo (50% de por vida, o 3 meses gratis) a cambio de:
 
@@ -91,7 +91,7 @@ Invita a 5-10 dueños de estudios de fitness a registrarse antes del lanzamiento
 
 Esto te proporciona comentarios reales de clientes y sitios activos para exhibir antes de abrir al público.
 
-### Fase 2: Lanzamiento público (Public Launch)
+### Fase 2: Lanzamiento público (Public Launch) {#phase-2-public-launch}
 
 Una vez que se hayan incorporado los comentarios del lanzamiento suave:
 
@@ -100,7 +100,7 @@ Una vez que se hayan incorporado los comentarios del lanzamiento suave:
 - Comienza la adquisición de clientes (Lección 11)
 - Anúncialo en canales relevantes de la industria del fitness
 
-## Acciones del día del lanzamiento
+## Acciones del día del lanzamiento {#launch-day-actions}
 
 El día que lo hagas público:
 
@@ -110,7 +110,7 @@ El día que lo hagas público:
 4. **Mantente disponible** — tus primeros clientes reales pueden necesitar ayuda, y una respuesta rápida genera confianza
 5. **Celebra brevemente** — y luego vuelve al trabajo
 
-## Qué puede salir mal
+## Qué puede salir mal {#what-can-go-wrong}
 
 Prepárate para:
 
@@ -120,7 +120,7 @@ Prepárate para:
 - **Rendimiento bajo carga**: Si recibes un pico de tráfico, saber cómo escalar tu hosting
 - **Confusión del cliente**: Ten lista tu base de conocimientos y tus canales de soporte
 
-## La red FitSite hasta ahora
+## La red FitSite hasta ahora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Lo que construimos en esta lección
+## Lo que construimos en esta lección {#what-we-built-this-lesson}
 
 - **Una lista de verificación previa al lanzamiento completa** que cubre infraestructura, contenido, pagos y aspectos legales
 - **Una estrategia de lanzamiento suave** para obtener comentarios reales antes de hacerlo público

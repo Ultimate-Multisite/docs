@@ -1,86 +1,122 @@
 ---
-title: '# 管理パネルのツアー'
+title: 管理パネルを見て回る
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Touring the Admin Panel
+# 管理パネルのツアー {#touring-the-admin-panel}
 
-Ultimate Multisite はできるだけシンプルで自明性を持たせることを目指していますが、こうした強力なツールではガイド付きツアーがあると役立ちます。管理ページを一緒に見て、環境に慣れる手助けをしましょう。
+Ultimate Multisite は、できる限りシンプルで分かりやすいことを目指していますが、これほど強力なツールではガイド付きツアーが役立ちます。管理ページを一緒に見て、全体像を把握しましょう。
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite の **Dashboard** は、収益、サイト活動、会員増加、訪問者数、地理情報などの基本的なレポートと分析を表示します。
+Ultimate Multisite **Dashboard** には、収益、サイトのアクティビティ、会員数の増加、訪問者数、地域データなどの基本的なレポートと分析が表示されます。
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Dashboard の全体表示はこちらです。
 
-**Checkout Forms** は、カスタム登録ページを作成する柔軟性を提供します。フィールドをカスタマイズし、カスタムクラスやスクリプトを挿入し、訪問者の国や場所に応じてアクセスを制限できます。
+![Ultimate Multisite Dashboard 全ページ](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+Dashboard の下部セクションはこちらです。
 
-## Products
+![Ultimate Multisite Dashboard 下部セクション](/img/admin/um-dashboard-bottom.png)
 
-**Products** セクションでは、ネットワーク用にさまざまなプラン、パッケージ、サービスを作成します。価格、請求頻度、制限・クォータを製品レベルで定義します。
+ネットワーク Dashboard の全体表示もこちらです。
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard 全ページ](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## チェックアウトフォーム {#checkout-forms}
 
-**Memberships** ページでは、ネットワーク内のすべてのサブスクリプションを表示します。プラン、製品、請求金額と頻度、支払い履歴、タイムスタンプなどのサブスクリプション詳細を確認・編集できます。
+**チェックアウトフォーム**では、カスタム登録ページを柔軟に作成できます。フィールドをカスタマイズし、カスタムクラスやスクリプトを挿入し、訪問者の国や所在地に基づいてアクセスを制限できます。
 
-![Memberships list](/img/admin/memberships-list.png)
+![チェックアウトフォーム一覧](/img/admin/checkout-forms-list.png)
 
-## Payments
+## 商品 {#products}
 
-**Payments** ページでは、ネットワーク全体の支払い履歴を迅速に確認でき、特定の製品と金額を含む詳細な取引情報が表示されます。
+**商品**セクションでは、ネットワーク向けのさまざまなプラン、パッケージ、サービスを作成します。商品レベルで価格、請求頻度、制限とクォータを定義します。
 
-![Payments list](/img/admin/payments-list.png)
+![商品一覧](/img/admin/products-list.png)
 
-## Customers
+## メンバーシップ {#memberships}
 
-**Customers** ページでは、ネットワークに登録されたすべてのメンバーを表示し、名前、メールアドレス、最終ログイン、サブサイトへのログイン用「切り替え」リンクなどの基本的なユーザー情報が含まれます。
+**メンバーシップ**ページには、ネットワーク内のすべてのサブスクリプションが表示されます。プラン、商品、請求金額と頻度、支払い履歴、タイムスタンプなどのサブスクリプション詳細を確認・編集できます。
 
-![Customers list](/img/admin/customers-list.png)
+![メンバーシップ一覧](/img/admin/memberships-list.png)
 
-## Sites
+## 支払い {#payments}
 
-**Sites** ページでは、ネットワーク内のすべてのサブサイト（サイトテンプレートや顧客所有サイトを含む）を一覧表示します。マッピングされたドメイン、制限・クォータ、プラグインとテーマ、サイトサムネイルを簡単に管理できます。
+**支払い**ページでは、ネットワーク全体の支払い履歴をすばやく確認できます。特定の商品や金額を含む詳細な取引情報も表示されます。
 
-![Sites list](/img/admin/sites-list.png)
+![支払い一覧](/img/admin/payments-list.png)
 
-## Domains
+## 顧客 {#customers}
 
-**Domains** ページは、サブサイトにマッピングされたカスタムドメイン専用です。スーパ管理者として、カスタムドメイン名を手動で追加またはマッピングし、DNS レコードとログを表示できます。
+**顧客**ページには、ネットワークに登録されたすべてのメンバーが表示されます。名前、メールアドレス、最終ログイン、サブサイトにログインするための「切り替え」リンクなど、基本的なユーザー情報が含まれます。
 
-![Domains list](/img/admin/domains-list.png)
+![顧客一覧](/img/admin/customers-list.png)
 
-## Discount Codes
+## サイト {#sites}
 
-**Discount Codes** は、エンドユーザーに割引を提供するためのクーポンコードを作成できます。割引額を指定し、特定のユーザーまたはグループを対象にします。
+**サイト**ページには、サイトテンプレートや顧客所有のサイトを含む、ネットワーク内のすべてのサブサイトが一覧表示されます。マッピング済みドメイン、制限とクォータ、プラグインとテーマ、サイトサムネイルを簡単に管理できます。
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![サイト一覧](/img/admin/sites-list.png)
 
-## Broadcasts
+## ドメイン {#domains}
 
-**Broadcasts** は、アナウンスメントを展開したり、サブサイトユーザーにプライベートメッセージを送信したりするためのツールです。サブスクライブしているプランや製品に基づいて特定のユーザーグループを対象にします。
+**ドメイン**ページは、サブサイトにマッピングされたカスタムドメイン専用です。スーパー管理者として、カスタムドメイン名を手動で追加またはマッピングし、DNS レコードとログを表示できます。
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![ドメイン一覧](/img/admin/domains-list.png)
 
-## Settings
+## 割引コード {#discount-codes}
 
-**Settings** ページでは、Ultimate Multisite の設定（登録設定、支払い、API と Webhook、ドメインマッピング、その他の統合）を行います。
+**割引コード**では、エンドユーザーに割引を提供するためのクーポンコードを作成できます。割引額を指定し、特定のユーザーまたはグループを対象にできます。
 
-![Settings page](/img/admin/settings-general.png)
+![割引コード一覧](/img/admin/discount-codes-list.png)
 
-## Events
+## ブロードキャスト {#broadcasts}
 
-**Events** ページは、ネットワーク内のすべてのイベントとログを記録します。プラン変更、サインアップ、その他の動きなどの活動を追跡し、マルチサイトの監視に役立ちます。
+**ブロードキャスト**は、お知らせの配信や、サブサイトユーザーへの非公開メッセージ送信に使うツールです。購読しているプランや商品に基づいて、特定のユーザーグループを対象にできます。
 
-![Events list](/img/admin/events-list.png)
+![ブロードキャスト一覧](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## 設定 {#settings}
 
-**Webhooks** は、データを別のアプリケーションに送信できるようにします。Ultimate Multisite から Zapier などのプラットフォームへデータを送信する際に便利です。
+**設定**ページでは、Ultimate Multisite を設定します。登録設定、支払い、API と Webhook、ドメインマッピング、その他の連携を設定できます。
 
-![Webhooks list](/img/admin/webhooks-list.png)
+AI コネクター設定には、現在サポートされている OAuth プロバイダープールである Anthropic Max、OpenAI ChatGPT/Codex、Google AI Pro が一覧表示されます。各プロバイダーカードでは、スーパー管理者が Account を接続し、保存済み Account を更新し、メールアドレスで Account を削除し、サンドボックス環境でブラウザーリダイレクトがブロックされる場合に手動 OAuth フォールバックを使用できます。Cursor Pro のセットアップオプションは管理パネルから削除されました。
+
+ChatGPT/Codex Account は、操作がツールを許可している場合、コネクターに支えられたツール使用をサポートします。そのため、コネクター対応操作に依存する管理ワークフローでは、OpenAI Account の接続後に Codex のツール動作を使用できます。
+
+![設定ページ](/img/admin/settings-general.png)
+
+一般設定ページの全体表示はこちらです。
+
+![一般設定 全ページ](/img/admin/settings-general-full.png)
+
+メール設定ページはこちらです。
+
+![メール設定 全ページ](/img/admin/settings-emails-full.png)
+
+支払い設定ページはこちらです。
+
+![支払い設定 全ページ](/img/admin/settings-payments-full.png)
+
+支払い設定の下部セクションはこちらです。
+
+![支払い設定 下部セクション](/img/admin/settings-payments-bottom.png)
+
+サイト設定ページはこちらです。
+
+![サイト設定 全ページ](/img/admin/settings-sites-full.png)
+
+## イベント {#events}
+
+**イベント**ページでは、ネットワーク内のすべてのイベントとログを記録します。プラン変更、登録、その他の動きなどのアクティビティを追跡し、マルチサイトの監視に役立ちます。
+
+![イベント一覧](/img/admin/events-list.png)
+
+## Webhook {#webhooks}
+
+**Webhook**を使うと、別のアプリケーションへデータを送信できます。Ultimate Multisite から Zapier のようなプラットフォームへデータを送る場合に便利です。
+
+![Webhook 一覧](/img/admin/webhooks-list.png)

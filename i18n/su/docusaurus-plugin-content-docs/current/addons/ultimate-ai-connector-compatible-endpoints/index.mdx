@@ -1,0 +1,111 @@
+---
+title: Konektor AI Pamungkas pikeun Endpoint anu Cocog
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector pikeun Titik Ahir anu Cocog {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector pikeun Titik Ahir anu Cocog ngahijikeun API panyadia AI anu cocog jeung OpenAI kana jaringan multisite WordPress anjeun. Konpigurasikeun sababaraha panyadia AI — masing-masing miboga endpoint URL, API key, jeung modél standar sorangan — sarta arahkeun pamundut kalayan fallback otomatis nalika hiji panyadia teu sadia.
+
+## Fitur Utama {#key-features}
+
+- **Pangrojong multi-panyadia**: Tambahkeun sababaraha kartu panyadia AI, masing-masing miboga endpoint URL, API key, jeung modél standar sorangan
+- **Séred pikeun nyusun deui**: Atur panyadia dumasar prioritas ngagunakeun gagang cekelan dina unggal kartu; pamundut ngagunakeun panyadia nurutkeun runtuyan
+- **Pangiriman fallback otomatis**: Lamun panyadia utama teu sadia, pamundut otomatis dialihkeun ka panyadia salajengna anu geus dikonpigurasikeun
+- **Konfigurasi per panyadia**: Unggal panyadia dikonpigurasikeun sacara mandiri kalayan kredénsial jeung pilihan modél sorangan
+- **UI setélan dumasar kartu**: Diwangun dina komponén Card WordPress 6.9+ anu stabil (CardBody, CardHeader, CardDivider)
+- **Ngalegaan otomatis nalika ditambahkeun**: Kartu panyadia anyar ngalegaan otomatis supaya anjeun bisa langsung ngeusian rincianna
+- **Ngabatalkeun cache skrip**: Skrip panyadia dibatalkeun cache-na nalika plugin diropéa pikeun mastikeun vérsi panganyarna dimuat
+
+## Sarat {#requirements}
+
+- WordPress 5.3 atawa leuwih luhur
+- PHP 7.4 atawa leuwih luhur
+- Plugin Ultimate Multisite (aktip)
+- Endpoint API anu cocog jeung OpenAI (di-host sorangan atawa pihak katilu)
+
+## Pamasangan {#installation}
+
+1. Unggah berkas tambahan ka diréktori `/wp-content/plugins/` anjeun
+2. Aktipkeun plugin ngaliwatan ménu 'Plugins' dina WordPress
+3. Buka **Ultimate Multisite → AI Connector** pikeun ngonpigurasikeun tambahan
+
+## Konfigurasi {#configuration}
+
+### Setélan Multi-Panyadia {#multi-provider-setup}
+
+Layar konfigurasi ngagunakeun tata perenah dumasar kartu, dimana unggal kartu ngawakilan hiji panyadia AI. Anjeun bisa nambahkeun sabaraha waé panyadia anu diperlukeun.
+
+#### Nambahkeun Panyadia {#adding-a-provider}
+
+1. Buka **Ultimate Multisite → AI Connector** dina admin jaringan
+2. Klik **Tambahkeun Panyadia**
+3. Kartu panyadia anyar mucunghul jeung ngalegaan otomatis
+4. Eusian rincian panyadia:
+   - **Ngaran Panyadia** — labél pikeun ngaidéntifikasi panyadia ieu (contona "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — URL dasar tina API anu cocog jeung OpenAI (contona `https://api.openai.com/v1`)
+   - **API Key** — API key anjeun pikeun panyadia ieu
+   - **Modél Standar** — idéntifikasi modél anu dipaké sacara standar pikeun panyadia ieu (contona `gpt-4o`, `mistral-small`)
+5. Klik **Simpen Setélan**
+
+#### Mupus Panyadia {#removing-a-provider}
+
+Klik tombol **Pupus** dina kartu panyadia mana waé pikeun mupusna. Simpen setélan pikeun nerapkeun parobahan.
+
+#### Nyusun Deui Panyadia {#reordering-providers}
+
+Séred ikon cekelan (⣿) di sisi kénca kartu panyadia mana waé pikeun nyusun deui. Runtuyan nangtukeun prioritas fallback: pamundut dikirim ka panyadia kahiji sarta dialihkeun ka panyadia salajengna lamun hiji pamundut gagal.
+
+### Pangiriman Fallback {#fallback-routing}
+
+Nalika pamundut ka panyadia utama gagal — kusabab timeout, wates laju, atawa gangguan layanan — connector otomatis nyobian deui ku panyadia salajengna dina daptar. Ieu diteruskeun sapanjang daptar nepi ka aya panyadia anu hasil atawa sadaya panyadia geus dicoba.
+
+| Skenario | Paripolah |
+|----------|-----------|
+| Panyadia utama méré réspon | Pamundut dilayanan sacara normal |
+| Panyadia utama gagal | Pamundut dicoba deui ku panyadia salajengna |
+| Sadaya panyadia gagal | Kasalahan dipulangkeun ka anu nelepon |
+
+Fallback transparan pikeun plugin atawa theme anu nelepon — aranjeunna nampa réspon anu hasil atawa kasalahan ahir, henteu paduli sabaraha loba panyadia anu geus dicoba.
+
+### Rujukan Konfigurasi Panyadia {#provider-configuration-reference}
+
+| Widang | Diperyogikeun | Pedaran |
+|-------|----------|-------------|
+| Ngaran Panyadia | Enya | Labél tampilan pikeun panyadia ieu |
+| Endpoint URL | Enya | URL dasar tina API anu cocog jeung OpenAI |
+| API Key | Enya | Konci auténtikasi pikeun panyadia ieu |
+| Modél Standar | Enya | Idéntifikasi modél anu dipaké nalika euweuh modél anu ditangtukeun dina pamundut |
+
+## Ngungkulan Masalah {#troubleshooting}
+
+### Euweuh panyadia anu didaptarkeun {#no-providers-are-listed}
+
+Lamun daptar panyadia kosong sanggeus nyimpen, pastikeun yén:
+
+- Anjeun geus ngaklik **Simpen Setélan** sanggeus nambahkeun panyadia
+- Browser anjeun henteu meungpeuk kaca setélan tina nyimpen (pariksa konsol browser pikeun kasalahan JavaScript)
+- Plugin aktip sarta anjeun aya dina layar admin jaringan
+
+### Pamundut gagal pikeun sadaya panyadia {#requests-are-failing-for-all-providers}
+
+- Pastikeun endpoint URL unggal panyadia bisa dihontal tina server anjeun (henteu ngan tina browser anjeun)
+- Pariksa yén unggal API key valid jeung can kadaluwarsa
+- Tinjau status wates laju jeung kuota panyadia dina dashboard maranéhna
+- Aktipkeun logging debug WordPress (`WP_DEBUG_LOG`) pikeun nyekel pesen kasalahan anu rinci tina connector
+
+### Hiji panyadia henteu dipaké pikeun fallback {#a-provider-is-not-being-used-for-fallback}
+
+Séred pikeun nyusun deui ngarobah runtuyan fallback. Pastikeun panyadia anu anjeun harepkeun pikeun narima pamundut fallback diposisikeun leres dina daptar sarta endpoint URL jeung API key-na bener.
+
+### Kartu panyadia anyar henteu ngalegaan otomatis {#new-provider-card-does-not-expand-automatically}
+
+Ngalegaan otomatis merlukeun JavaScript diaktipkeun dina browser anjeun. Lamun kartu henteu ngalegaan nalika diklik, pariksa konsol browser pikeun kasalahan. Eusi kartu salawasna bisa diaksés ku ngaklik lulugu kartu sanajan ngalegaan otomatis henteu micu.
+
+## Catetan Parobahan {#changelog}
+
+Tingali [Catetan Parobahan](./changelog) pikeun sajarah vérsi lengkep.

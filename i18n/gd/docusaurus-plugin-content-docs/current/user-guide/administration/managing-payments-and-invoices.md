@@ -3,9 +3,9 @@ title: Bàidh a' chùcas a' chàirich agus a' chàirich-fhaisghean
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# A' Chùlnaidhean agus Brèidhean
+# A' Chùlnaidhean agus Brèidhean {#managing-payments-and-invoices}
 
-## Setadh Brèidhean
+## Setadh Brèidhean {#payment-settings}
 
 Tha thuig a tha thuig a bhith a' chùlnaidhean brèidhean a' sgaidhinn. Tha thuig a' fàgadh gu **Ultimate Multisite → Settings** agus tha thuig a' chluainteachd ar tab **Payment**.
 
@@ -15,7 +15,7 @@ Seo sealladh fhuil a' chùlnaidhean brèidhean:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opciones Brèidheach
+### Opciones Brèidheach {#general-payment-options}
 
 Tha eadar-dhealaidhean brèidheach thuig a bhith ag obair gu:
 
@@ -24,7 +24,7 @@ Tha eadar-dhealaidhean brèidheach thuig a bhith ag obair gu:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Brèidheach Brèidhean
+### Brèidheach Brèidhean {#payment-gateways}
 
 Tha Ultimate Multisite ag obair gu brèidhean brèidheach gu mòr. Is eadar-dhealaidhean a' chluainteachd agus a' chùlnaidhean a' sgaidhinn gu tab Payment.
 
@@ -40,11 +40,11 @@ Tha ch eachdraidh brèidheach ag obair gu seòlas brèidheach dìreach le currai
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mod Sandbox
+### Mod Sandbox {#sandbox-mode}
 
 Is eadar-dhealaidh a' chùlnaidhean **Sandbox Mode** a' sgaidhinn airson brèidhean a' faighinn gu lèir a' chùlnaidhean a' obair. Nuair a tha sandbox mode ag obair, níl curraich ràidir a' tòiseachadh.
 
-## A' Chluainteachd Brèidhean
+## A' Chluainteachd Brèidhean {#viewing-payments}
 
 Tha thuig a fàgadh gu tab **Payments** an-diugh Ultimate Multisite airson brèidhean a' chluainteachd gu lunn air a' ngrath.
 
@@ -54,6 +54,6 @@ Is eadar-dhealaidh a tha thuig ag fhuil brèidhean gu sgaidhinn (a' chùlnaidh, 
 
 Cliquidh air a chàirbhleachd airson fìor dìreach a' bheachd a' tuairis a tha eanachdaidh, a tha a' tòiseachadh air an t-aithris, an fòcas, an fòcas ùr, an fòcas ùr, an fòcas ùr, an fòcas ùr, an fòcas ùr, an fòcas ùr, an fòcas ùr.
 
-## Invoices (Fìor-fàiltean)
+## Invoices (Fìor-fàiltean) {#invoices}
 
 Caithedh Ultimate Multisite a' tòiseachadh air fìor-fàiltean airson fìor-aithris. Is e cheannach a tha thu a' tuairis an t-aithris agus an fòcas ùr a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a' tuairis a'

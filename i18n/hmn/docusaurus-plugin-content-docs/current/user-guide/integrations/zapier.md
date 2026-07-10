@@ -3,7 +3,7 @@ title: Zapier Integration
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite Lojol Bvim Bvim Nuam Zapier
+# Ultimate Multisite Lojol Bvim Bvim Nuam Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Ha uas tswb, thav tsim ha [Webhooks](webhooks.md) thiab tau txais ti ua li yuav tuaj yeem siv rau cov app tshiab.
 
@@ -15,7 +15,7 @@ Koj yuav tsim **Triggers** uas yuav tsim kom tsim los thaum muaj yam dab tsi thi
 
 Yuav tsim tau vim ti **Ultimate Multisite Zapier's triggers** thiab actions muaj ob chaw tsim los ntawm [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Ua li yuav rooj
+## Ua li yuav rooj {#how-to-start}
 
 Tsis tas, hais rau Ultimate Multisite hauv Zapier app list. Loss yog koj yuav tsim siv [no link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Ha URL field, hais tias koj yuav tsum tuaj lub full URL ntawm network, loj hlob 
 
 Click **Yes, Continue** button los rau qhov chaw tsis tas. Yog ti muaj txhua yam ua haujlwm zoo, koj yuav tau txais account tshiab uas koj connection. Click **Continue** los tsim trigger tshiab.
 
-## Tsim trigger tshiab li cas
+## Tsim trigger tshiab li cas {#how-to-create-a-new-trigger}
 
 Thaum koj connection tau, koj yuav paub events uas muaj. Kuv yuav thov siv **payment_received** event rau tutorial no.
 
@@ -67,7 +67,7 @@ Ha qhov no, Zapier yuav tes tswj siab ti koj Zap yuav **fetch the specific paylo
 
 Trong bài hướng dẫn của chúng ta, bài kiểm tra đã **hoàn thành thành công** và trả về thông tin ví dụ về payload. Thông tin ví dụ này sẽ hữu ích để hướng dẫn chúng ta khi tạo các hành động (actions). Trigger của bạn giờ đã được tạo và sẵn sàng để kết nối với các ứng dụng khác rồi.
 
-## Cách tạo Actions
+## Cách tạo Actions {#how-to-create-actions}
 
 Actions sử dụng thông tin từ các trigger khác để tạo các mục mới trong mạng lưới của bạn.
 
@@ -79,7 +79,7 @@ Trong phần **tạo một action step**, bạn sẽ chọn Ultimate Multisite *
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Thiết lập Action
+### Thiết lập Action {#setting-up-the-action}
 
 Đây là **bước chính của action** và ở đây mọi thứ hơi khác một chút. Thông tin đầu tiên bạn sẽ chọn là **Item**. Item là **mô hình thông tin (information model)** của mạng lưới của bạn như **Customers, Payments, Sites, Emails** và các loại khác.
 

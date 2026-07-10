@@ -3,9 +3,9 @@ title: Journal des modifications du créateur de page d'administration
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Créateur de pages d'administration Journal des modifications
+# Créateur de pages d'administration Journal des modifications {#admin-page-creator-changelog}
 
-### Version 1.9.0 - Publié le 2026-01-18
+### Version 1.9.0 - Publié le 2026-01-18 {#version-190---released-on-2026-01-18}
 
 * Correction : Erreurs fatales lors de l'activation.
 * Refactorisé : Les classes de source de contenu utilisent le trait Singleton avec une initialisation correcte du constructeur parent.
@@ -17,52 +17,52 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Amélioration : Organisation et minification des ressources JavaScript.
 * Amélioration : Compatibilité avec les dernières versions de WordPress et des constructeurs de pages.
 
-### Version 1.8.0 - Publié le 2025-12-10
+### Version 1.8.0 - Publié le 2025-12-10 {#version-187---04102023}
 
 * Ajout : Les pages personnalisées peuvent désormais remplacer plusieurs pages d'administration WordPress de niveau supérieur et sous-pages en même temps.
 * Ajout : Les administrateurs peuvent désormais masquer les pages d'administration en utilisant WP Admin Pages PRO.
 
-### Version 1.7.0 - Publié le 2025-11-05
+### Version 1.7.0 - Publié le 2025-11-05 {#version-186---09082023}
 
 * Correction : Brizy 1.10.118 et supérieurs cassant le support SVG sur les pages d'administration.
 * Correction : Erreur d'échappement cassant la page d'édition lorsqu'on utilise le français.
 
-### Version 1.6.0 - Publié le 2025-10-01
+### Version 1.6.0 - Publié le 2025-10-01 {#version-185---09122020}
 
 * Correction : Petite incompatibilité avec Brizy Builder.
 * Amélioration : SDK Freemius mis à jour vers 2.3.2.
 
-### Version 1.5.0 - Publié le 2025-09-15
+### Version 1.5.0 - Publié le 2025-09-15 {#version-184---11112020}
 
 * Correction : Bouton d'édition de page d'administration dans le coin inférieur droit ne fonctionne pas sur les widgets du tableau de bord.
 * Correction : Petite incompatibilité avec Astra.
 * Correction : Nouvelle version de Brizy cassant la compatibilité.
 
-### Version 1.4.0 - Publié le 2025-08-20
+### Version 1.4.0 - Publié le 2025-08-20 {#version-183---01102020}
 
 * Correction : Ajout d'un gestionnaire de cas limites pour remplir les éléments de menu sur l'option Remplacer la page.
 * Correction : Polices Elementor ne fonctionnent pas.
 * Amélioration : SDK Freemius mis à jour pour masquer les informations sensibles de la page Compte.
 
-### Version 1.3.0 - Publié le 2025-07-30
+### Version 1.3.0 - Publié le 2025-07-30 {#version-182---21092020}
 
 * Correction : Incompatibilité avec WooCommerce Memberships.
 * Correction : Composant d'onglet Oxygen Builder ne fonctionne pas.
 * Correction : Beaver Themer ne fonctionne pas.
 
-### Version 1.2.0 - Publié le 2025-06-25
+### Version 1.2.0 - Publié le 2025-06-25 {#version-181---05082020}
 
 * Correction : Pages disparaissant lorsque leur parent est converti en un autre type de page d'administration.
 * Amélioration : Meilleurs séparateurs de tableau de liste entre les types de page d'administration.
 * Amélioration : Revue de sécurité de l'ensemble du code du plugin.
 * Amélioration : Note sur l'avertissement de l'onglet Séparateur lorsque la fonction n'est pas disponible pour un type de menu/source de contenu donné.
 
-### Version 1.1.0 - Publié le 2025-05-15
+### Version 1.1.0 - Publié le 2025-05-15 {#version-180---27042020}
 
 * Correction : Version du SDK Freemius mise à jour vers 2.3.0.
 * Correction : Problème d'incompatibilité avec Flywheel.
 
-### Version 1.0.0 - Publié le 2025-04-10
+### Version 1.0.0 - Publié le 2025-04-10 {#version-179---01042020}
 
 * Correction : Widget de bienvenue désormais affiché à tous les rôles.
 * Correction : Option d'écran pour masquer/afficher le menu Pages d'administration n'est pas ajoutée si le menu est masqué via le filtre documenté sur https://docs.wpadminpagespro.com/knowledge-base/hiding-wp-admin-pages-pro-from-your-users/.
@@ -71,12 +71,12 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Ajout : Option pour afficher les pages sur le site principal également.
 * Ajout : Option pour renommer les libellés de menu de niveau supérieur et inférieur en mode Remplacer.
 
-### Version 0.9.0 - Publié le 2025-03-01
+### Version 0.9.0 - Publié le 2025-03-01 {#version-178---26032020}
 
 * Correction : Problèmes avec les modèles Oxygen non affichés.
 * Ajout : Support à la création de widgets !
 
-### Version 0.8.0 - Publié le 2025-02-15
+### Version 0.8.0 - Publié le 2025-02-15 {#version-177---04032020}
 
 * Correction : Fautes de frappe.
 * Correction : Pages de sous-menu écrasant les éléments de sous-menu précédents avec la même valeur d'ordre.
@@ -84,40 +84,40 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Amélioration : Fichiers po pt_BR et es_ES mis à jour.
 * Amélioration : Le tableau de liste affiche désormais le nom des pages personnalisées comme pages parentes.
 
-### Version 0.7.0 - Publié le 2025-01-10
+### Version 0.7.0 - Publié le 2025-01-10 {#version-176---10022020}
 
 * Ajout : Les liens externes prennent désormais en charge le chargement d'iframe.
 
-### Version 0.6.0 - Publié le 2024-12-05
+### Version 0.6.0 - Publié le 2024-12-05 {#version-175---14122019}
 
 * Correction : Message d'avertissement généré lorsqu'une page était supprimée ou dupliquée.
 * Correction : Paramètres de permission non appliqués aux administrateurs.
 
-### Version 0.5.0 - Publié le 2024-11-01
+### Version 0.5.0 - Publié le 2024-11-01 {#version-174---29112019}
 
 * Correction : Incompatibilités avec Sliced Invoices.
 * Correction : Petite erreur avec Oxygen.
 * Correction : Le champ de titre de la page d'administration ne se met pas à jour lors de la saisie.
 
-### Version 0.4.0 - Publié le 2024-10-01
+### Version 0.4.0 - Publié le 2024-10-01 {#version-173---12072019}
 
 * Correction : Incompatibilité avec les pages d'options Advanced Custom Field.
 * Ajout : Option pour ajouter des utilisateurs spécifiques comme cibles des pages d'administration personnalisées.
 
-### Version 0.3.0 - Publié le 2024-09-01
+### Version 0.3.0 - Publié le 2024-09-01 {#version-172---01072019}
 
 * Correction : Incompatibilités avec les nouvelles versions de Brizy.
 * Ajout : Traduction espagnole ajoutée - grâce à John Rozzo. Merci, John !
 * Ajout : Support bêta pour Oxygen Builder.
 
-### Version 0.2.0 - Publié le 2024-08-01
+### Version 0.2.0 - Publié le 2024-08-01 {#version-171---27062019}
 
 * Correction : Problèmes de place-holders dans les éditeurs Normal et HTML.
 * Correction : Pages d'administration non affichées dans Outils -> Export.
 * Correction : Les scripts et styles ne sont chargés que sur nos propres pages.
 * Ajout : Les super administrateurs peuvent désormais dupliquer les pages d'administration.
 
-### Version 0.1.0 - Publié le 2024-07-01
+### Version 0.1.0 - Publié le 2024-07-01 {#version-170---04062019}
 
 * Correction : Petits bugs détectés par Sentry.
 * Correction : Bouton de suppression ne fonctionne pas sur l'écran d'édition de la page d'administration.
@@ -125,6 +125,6 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Ajout : Les administrateurs peuvent désormais définir l'ordre des sous-menus.
 * Ajout : Le mode de remplacement de page prend désormais en charge tous les éléments de menu disponibles.
 
-### Version 0.0.1 - Version initiale
+### Version 0.0.1 - Version initiale {#version-161---22052019}
 
 0.0.1 - Version initiale

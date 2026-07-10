@@ -4,16 +4,16 @@ title: Filter - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Filter: network_options_to_copy
+# Filter: network_options_to_copy {#filter-networkoptionstocopy}
 
 ডিফল্ট নেটওয়ার্ক অপশনগুলো কপি করার জন্য এটি ফিল্টার করে।
 
-### Since
+### Since {#since}
 
 - 1.3.0
-### Source
+### Source {#source}
 
 [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1649)-এ লাইন ১৬৪৯-এ সংজ্ঞায়িত।
 
-## Returns
+## Returns {#returns}
 নেটওয়ার্ক $option_name => $option_label পেয়ারের একটি তালিকা।

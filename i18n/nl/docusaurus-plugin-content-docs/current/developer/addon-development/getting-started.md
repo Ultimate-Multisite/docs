@@ -1,27 +1,27 @@
 ---
-title: Aan de slag met Add-on-ontwikkeling
+title: Aan de slag met add-onontwikkeling
 sidebar_position: 1
-_i18n_hash: 6294ba16ad98639b569346a763824ad3
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon-ontwikkeling
+# Addon-ontwikkeling {#addon-development}
 
-## Addon-structuur
+## Addon-structuur {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file
+├── my-addon.php                 # Hoofdplug-inbestand
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class
-│   ├── admin-pages/             # Admin interface
-│   ├── models/                  # Custom data models
-│   └── integrations/            # Third-party integrations
+│   ├── class-my-addon.php       # Hoofdklasse van addon
+│   ├── admin-pages/             # Admininterface
+│   ├── models/                  # Aangepaste datamodellen
+│   └── integrations/            # Integraties van derden
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files
+└── templates/                   # Templatebestanden
 ```
 
-## Hoofdaddon-bestandsjabloon
+## Template voor hoofdbestand van addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Voorbeeld van een aangepast model
+## Voorbeeld van aangepast model {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integratie van adminpagina
+## Integratie van adminpagina {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testen van uw addon
+## Je addon testen {#testing-your-addon}
 
 ```php
 <?php
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Volgende stappen
+## v2.13.0-uitbreidingspunten {#v2130-extension-points}
+
+Ultimate Multisite v2.13.0 voegt verschillende uitbreidingspunten toe die nuttig zijn voor addons die integreren met soevereine tenants, checkout-domeinen of DNS-automatisering van hostproviders.
+
+### SSO- en beheer-URL's van de hoofdsite {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Basisdomeinen voor checkout-formulieren {#checkout-form-base-domains}
+
+Gebruik `wu_checkout_form_base_domains` wanneer je addon extra gedeelde basisdomeinen biedt die zich moeten gedragen als checkout-formulier-**Site URL**-domeinen in plaats van aangepaste mappings per site:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite normaliseert deze hosts en slaat automatische mapped-domain-records per site voor deze hosts over.
+
+### Automatische aanmaak van domeinrecords {#automatic-domain-record-creation}
+
+Gebruik `wu_should_create_domain_record_for_site` wanneer je addon de automatische aanmaak van domeinrecords voor een nieuw aangemaakte site moet onderdrukken of uitstellen:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Hostprovider-integraties die naar `wu_add_subdomain` luisteren, kunnen DNS-records aan providerzijde aanmaken wanneer sites worden aangemaakt. Als er geen integratie voor die actie is geregistreerd, slaat Ultimate Multisite de lege achtergrondtaak over.
+
+## Volgende stappen {#next-steps}
 
 - Bekijk de [Hooks Reference](/developer/hooks) voor beschikbare acties en filters
-- Controleer de [REST API Overview](/developer/rest-api/overview) voor API-integratie
-- Gebruik de [Addon Template](/addons/addon-template) als een startschakel
+- Bekijk het [REST API Overview](/developer/rest-api/overview) voor API-integratie
+- Gebruik de [Addon Template](/addons/addon-template) als startscaffold

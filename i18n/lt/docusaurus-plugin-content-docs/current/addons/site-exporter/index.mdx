@@ -1,0 +1,101 @@
+---
+title: Svetainės eksportuotojas
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Svetainės eksportuotojas {#site-exporter}
+
+## Turinys {#content}
+
+Suprantame poreikį turėti galimybę perkelti antrines svetaines savo tinkle į vienos svetainės diegimą ir atvirkščiai, jei jūsų klientas nuspręstų migruoti savo svetainę. Svetainių eksportuotojo ir importuotojo priedas palengvina šią užduotį. Šis įrankis eksportuoja ir importuoja svetaines naudodamas zip failus, kurie taip pat gali būti naudojami kaip atsarginė kopija.
+
+## Funkcijos {#features}
+
+* Eksportuokite ir importuokite svetaines
+
+* Lengvai naudojama sąsaja
+
+* Sukurkite svetainės atsarginę kopiją
+
+## Dokumentacija {#documentation}
+**Kaip eksportuoti ir importuoti svetainę**
+
+## Diegimas {#installation}
+
+1. Įkelkite **ultimate-multisite-site-exporter** į **/wp-content/plugins/** katalogą
+2. Aktyvuokite įskiepį per **Įskiepių** meniu WordPress
+3. Vykdykite nuoseklų vedlį, kad sukonfigūruotumėte įskiepį
+
+## Naudojimo vadovas {#usage-guide}
+
+Naudodami Ultimate Multisite galite eksportuoti svetainę iš savo tinklo arba importuoti svetainę į savo multisite ar vienos svetainės diegimą.
+
+Norėdami pradėti procesą, eikite į mūsų priedų puslapį ir įdiekite Ultimate Multisite: svetainių eksportuotojo ir importuotojo priedą.![Priedų puslapis](/img/admin/addons-page.png)
+
+![Priedų puslapis su diegimo parinktimi](/img/admin/addons-page.png)
+
+Eikite į savo įskiepių puslapį ir spustelėkite **Aktyvuoti tinkle** ką tik įdiegtą priedą.<!-- Ekrano kopija nepasiekiama: WP įskiepių puslapis, kuriame rodomas Site Exporter priedo mygtukas Aktyvuoti tinkle -->
+
+Parinktį **Eksportas ir importas** rasite Ultimate Multisite meniu kairėje.
+
+<!-- Ekrano kopija nepasiekiama: Ultimate Multisite meniu, kuriame rodoma parinktis Eksportas ir importas -->
+
+## Kaip eksportuoti svetainę {#how-to-export-a-site}
+
+Norėdami eksportuoti svetainę iš savo tinklo, eikite į **Eksportas ir importas** Ultimate Multisite meniu ir skirtuke **Eksportuoti svetaines** spustelėkite **Generuoti naują svetainės eksportą**.
+
+<!-- Ekrano kopija nepasiekiama: skirtukas Eksportuoti svetaines su mygtuku Generuoti naują svetainės eksportą -->
+
+Ieškokite svetainės, kurią norite eksportuoti, ir pasirinkite elementus, kuriuos norite įtraukti į eksportuojamą failą. Galite įtraukti temas, įskiepius ir įkėlimus. Jei jūsų svetainė per didelė, galite pasirinkti vykdyti eksportavimo procesą fone.<!-- Ekrano kopija nepasiekiama: svetainės eksporto parinktys su svetainės paieška, temų / įskiepių / įkėlimų įtraukimo žymimaisiais langeliais -->
+
+Spustelėkite mygtuką **Eksportuoti svetainę**. Jūsų eksportuota svetainė bus pasiekiama sąraše **Esami eksportai**. Spustelėkite mygtuką **Atsisiųsti ZIP**, kad atsisiųstumėte failą. Eksporto ZIP archyvuose yra savarankiškai paleidžiamas `index.php` ir `readme.txt`, todėl juos galima įdiegti naujame serveryje prieš tai neįdiegiant atskiro importuotojo įskiepio.<!-- Ekrano kopija nepasiekiama: esamų eksportų sąrašas su mygtuku Atsisiųsti ZIP -->
+
+## Kaip eksportuoti visą tinklą {#how-to-export-the-whole-network}
+
+Norėdami eksportuoti visas antrines svetaines kartu, eikite į **Eksportas ir importas** Ultimate Multisite meniu ir eksporto ekrane naudokite parinktį **Tinklo eksportas**. Sugeneruotame archyve yra visos antrinės svetainės viename ZIP faile, skirtame prieglobos migracijoms, testavimo aplinkos atkūrimui arba tinklo lygio atsarginėms kopijoms.
+
+Tinklo eksportai gali būti dideli. Vykdykite juos tada, kai srautas mažas, ir įsitikinkite, kad serveryje yra pakankamai vietos archyvui ir visiems įtrauktiems įkėlimams, įskiepiams bei temoms.
+
+## Kaip importuoti svetainę {#how-to-import-a-site}
+
+Norėdami importuoti svetainę, eikite į skirtuką **Importuoti svetainę** ir įkelkite svetainės, kurią norite importuoti, .zip failą. Galite pakeisti URL į naują arba palikti seną URL, palikdami lauką tuščią. Taip pat galite pažymėti langelį, kad po importo .zip failas būtų ištrintas iš jūsų diegimo. Tada spustelėkite **Pradėti importą**.
+
+<!-- Ekrano kopija nepasiekiama: skirtukas Importuoti svetainę su zip įkėlimo lauku ir mygtuku Pradėti importą -->
+
+Procesas gali šiek tiek užtrukti. Sąraše po importuotoju matysite laukiantį importą.
+
+<!-- Ekrano kopija nepasiekiama: laukiantis importas sąraše po importuotoju -->
+
+Galite sustabdyti procesą spustelėdami **Atšaukti importą**.
+
+<!-- Ekrano kopija nepasiekiama: mygtukas Atšaukti importą importavimo procesui sustabdyti -->
+
+Kai procesas bus baigtas, jūsų svetainė jau bus pasiekiama jūsų tinkle.
+
+## Kaip importuoti svetainę į vienos svetainės diegimą {#how-to-import-a-site-on-a-single-install}
+
+Norėdami importuoti svetainę į savo vienos svetainės diegimą, pirmiausia įdiekite ir aktyvuokite importuotoją savo svetainėje. Nuorodą jam atsisiųsti rasite eksportuotojo skirtuke.
+
+<!-- Ekrano kopija nepasiekiama: eksportuotojo skirtukas su nuoroda atsisiųsti vienos svetainės importuotoją -->
+
+Importuotoją rasite **Įrankių** meniu kairėje, poskyryje **Eksportas ir importas**.
+
+<!-- Ekrano kopija nepasiekiama: vienos svetainės Įrankių meniu, kuriame rodomas Eksporto ir importo submeniu -->
+
+Įkelkite svetainės, kurią norite importuoti, .zip failą. Galite pakeisti URL į naują arba palikti seną URL, palikdami lauką tuščią. Taip pat galite pažymėti langelį, kad po importo .zip failas būtų ištrintas iš jūsų diegimo. Tada spustelėkite **Pradėti importą**.
+
+<!-- Ekrano kopija nepasiekiama: vienos svetainės importavimo forma su zip įkėlimu ir mygtuku Pradėti importą -->
+
+Procesas gali šiek tiek užtrukti. Sąraše po importuotoju matysite laukiantį importą.
+
+<!-- Ekrano kopija nepasiekiama: vienos svetainės laukiantis importas sąraše -->
+
+Galite sustabdyti procesą spustelėdami **Atšaukti importą**.
+
+<!-- Ekrano kopija nepasiekiama: mygtukas Atšaukti importą importavimo procesui sustabdyti -->
+
+Kai procesas bus baigtas, jūsų svetainė bus pakeista ką tik importuota svetaine.

@@ -1,78 +1,78 @@
 ---
 title: 从 V1 迁移
 sidebar_position: 17
-_i18n_hash: ab3379eeae93ce385ad01c599fc181cb
+_i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# 从 V1 迁移
+# 从 V1 迁移 {#migrating-from-v1}
 
-## Ultimate Multisite 已经从其原始的 1.x 版本系列切换到 2.x 版本系列。
+## Ultimate Multisite 已从最初的 1.x 版本系列切换到 2.x 版本系列。 {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
-Ultimate Multisite 2.0 及以上版本是代码库的完整重写，这意味着旧版本与新版本之间几乎没有共享内容。因此，在从 1.x 升级到 2.x 时，您的数据需要迁移到新版本能够理解的格式。
+Ultimate Multisite 2.0 及以上版本是对代码库的完全重写，这意味着旧版本与新版本之间几乎没有共享内容。因此，从 1.x 升级到 2.x 时，您的数据需要迁移到新版本能够理解的格式。
 
-幸运的是，Ultimate Multisite 2.0+ **附带了一个迁移器**，内置于核心，能够检测旧版本的数据并将其转换为新格式。此迁移发生在 2.0+ 版本的 **Setup Wizard** 期间。
+值得庆幸的是，Ultimate Multisite 2.0+ **在核心中内置了迁移器**，能够检测旧版本的数据并将其转换为新格式。此迁移会在 2.0+ 版本的**设置向导**中进行。
 
-本节内容涵盖迁移器的工作原理、失败时的处理方法以及在此过程中可能出现的问题的排查方法。
+本课将介绍迁移器的工作方式、失败时该怎么做，以及如何排查此过程中可能出现的问题。
 
-_**重要提示：在开始从 1.x 升级到 2.0 之前，请确保已备份您的站点数据库**_
+_**重要：在您开始从 1.x 版本升级到 2.0 版本之前，请务必为您的站点数据库创建备份**_
 
-## 第一步
+## 第一步 {#first-steps}
 
-第一步是下载插件 .zip 文件，并在您的网络管理员仪表盘上安装 2.0 版本。
+第一步是下载插件 .zip 文件，并在您的网络管理员 Dashboard 中安装 2.0 版本。
 
-在您 [安装并激活 2.0 版本](../getting-started/installing-ultimate-multisite.md) 后，系统将自动检测到您的 Multisite 正在运行旧版，并且您将在插件页面顶部看到此消息。
+在您[安装并启用 2.0 版本](../getting-started/installing-ultimate-multisite.md)后，系统会自动检测到您的 Multisite 正在运行旧版，您将在插件页面顶部看到此消息。
 
-_**注意：**如果您在 Multisite 上安装了 Ultimate Multisite 1.x，您将有机会用刚刚下载的版本替换插件。请继续点击 **Replace current with uploaded**。_
+_**注意：** 如果您的 Multisite 上安装了 Ultimate Multisite 1.x，您将可以选择用刚刚下载的版本替换该插件。请继续点击**用上传的版本替换当前版本**。_
 
-<!-- Screenshot unavailable: Plugin page showing option to replace v1 with uploaded v2 version -->
+<!-- 截图不可用：插件页面显示用已上传的 v2 版本替换 v1 的选项 -->
 
-下一页将告诉您与版本 1.x 一起安装的旧版插件。它会说明您使用的版本是否与 2.0 兼容，或者在迁移后是否需要安装升级版插件。
+下一页会告知您随 1.x 版本一起安装了哪些旧版附加组件。页面会提供说明，告知您正在使用的版本是否与 2.0 版本兼容，或者您是否需要在迁移后安装该附加组件的升级版本。
 
-<!-- Screenshot unavailable: Message on the top of the plugins page about updating to v2.0, with list of add-ons that need updating -->
+<!-- 截图不可用：插件页面顶部关于更新到 v2.0 的消息，并列出需要更新的附加组件 -->
 
-当您准备继续时，可以点击按钮 **Visit the Installer to finish the upgrade**。
+准备好继续后，您可以点击写有**访问安装程序以完成升级**的按钮。
 
-<!-- Screenshot unavailable: Button saying Visit the Installer to finish the upgrade -->
+<!-- 截图不可用：写有“访问安装程序以完成升级”的按钮 -->
 
-随后它会将您带到安装向导页面，并显示一些欢迎信息。您只需点击 **Get Started** 进入下一页。
+随后会带您进入安装向导页面，其中包含一些欢迎消息。您只需点击**开始使用**即可进入下一页。
 
-<!-- Screenshot unavailable: Setup Wizard welcoming page with Get Started button -->
+<!-- 截图不可用：设置向导欢迎页面，带有“开始使用”按钮 -->
 
-点击 **Get Started** 后，它会重定向到 Pre-install Checks_._。这将向您展示系统信息和 WordPress 安装，并告诉您它是否满足 **Ultimate Multisite's requirements**。
+点击**开始使用**后，它会将您重定向到预安装检查_。_ 这将显示您的系统信息和 WordPress 安装情况，并告诉您它是否满足 **Ultimate Multisite 的要求**。
 
-<!-- Screenshot unavailable: Pre-install Checks page showing system requirements confirmation -->
+<!-- 截图不可用：预安装检查页面显示系统要求确认 -->
 
-下一步是输入您的 Ultimate Multisite 许可证密钥并激活插件。这将确保所有功能，包括插件，都可在您的站点上使用。
+下一步是输入您的 Ultimate Multisite 许可证密钥并启用插件。这将确保所有功能（包括附加组件）都可在您的站点上使用。
 
-<!-- Screenshot unavailable: License activation page with license key input and Agree and Activate button -->
+<!-- 截图不可用：许可证启用页面，带有许可证密钥输入框和“同意并启用”按钮 -->
 
-输入密钥后，点击 **Agree & Activate**。
+输入密钥后，点击**同意并启用**。
 
-在许可证激活后，您可以通过点击下一页的 **Install** 开始实际安装。这将自动创建 2.0 运行所需的必要文件和数据库。
+许可证启用后，您可以在下一页点击**安装**来开始实际安装。这会自动创建 2.0 版本运行所需的必要文件和数据库。
 
-<!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
+<!-- 截图不可用：安装页面显示将使用“安装”按钮更新的内容 -->
 
-## 现在，进行迁移
+## 现在，开始迁移 {#now-the-migration}
 
-迁移器具有内置的安全功能，它会检查整个 multisite，确保所有 Ultimate Multisite 数据可以无问题迁移。点击 **Run Check** 按钮开始流程。
+迁移器内置了安全功能，会检查您的整个多站点，以确保所有 Ultimate Multisite 数据都可以顺利迁移。点击**运行检查**按钮开始该过程。
 
-<!-- Screenshot unavailable: Migration page with Run Check button to verify data can be converted -->
+<!-- 截图不可用：迁移页面带有“运行检查”按钮，用于验证数据是否可以转换 -->
 
-检查完成后，您会得到两种结果：**出现错误** 或 **无错误**。
+运行检查后，可能有两种结果：结果可能是**有**错误，也可能是**没有错误**。
 
-### 出现错误
+### 有错误 {#with-error}
 
-如果出现错误信息，您需要联系支持团队，让他们协助您修复错误。请在创建工单时**提供错误日志**。您可以下载日志，或者点击链接“contact our support team”。它会在页面右侧打开帮助窗口，并预填字段，其中包含错误日志。
+如果您收到错误消息，您需要联系我们的支持团队，以便他们协助您修复错误。创建工单时，请务必**提供错误日志**。您可以下载日志，也可以点击写有联系支持团队的链接。它会在您页面右侧打开帮助小工具，并为您预先填写字段，其中在描述下包含错误日志。
 
-_**由于系统检测到错误，您将无法继续迁移到 2.0 版本。您可以回滚到 1.x 以继续运行网络，直到错误修复。**_
+_**由于系统发现了错误，您将无法继续迁移到 2.0 版本。然后您可以回滚到 1.x 版本，以便在错误修复之前继续运行您的网络。**_
 
-### 无错误
+### 没有错误 {#without-error}
 
-如果系统未发现错误，您将看到成功信息和底部的 **Migrate** 按钮，允许您继续迁移。在此页面，您将被提醒在继续之前备份数据库，我们强烈建议您这样做。若已备份，请点击 **Migrate**。
+如果系统没有发现任何错误，您将看到成功消息，以及底部的**迁移**按钮，该按钮允许您继续进行迁移。在此页面上，系统会提醒您在继续之前创建数据库备份，我们强烈建议这样做。如果您已经有备份，请点击**迁移**。
 
-<!-- Screenshot unavailable: Migration page showing success message and backup recommendation -->
+<!-- 截图不可用：迁移页面显示成功消息和备份建议 -->
 
-<!-- Screenshot unavailable: Migrate button on the bottom-right corner -->
+<!-- 截图不可用：右下角的“迁移”按钮 -->
 
-这就是全部！
+这就是全部所需的操作！
 
-您可以继续运行 Wizard 向导来更新网络上的徽标和其他项目，或者开始浏览 Ultimate Multisite 2.0 菜单及其新界面。请继续，玩得开心。
+您可以继续运行向导设置来更新网络上的 logo 和其他内容，也可以开始浏览您的 Ultimate Multisite 2.0 版本菜单及其新界面。尽情体验吧。

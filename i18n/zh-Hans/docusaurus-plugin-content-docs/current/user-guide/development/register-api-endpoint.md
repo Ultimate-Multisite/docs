@@ -1,9 +1,9 @@
 ---
 title: 注册 API 端点
 sidebar_position: 6
-_i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite 注册 API 端点
+# Ultimate Multisite 注册 API 端点 {#the-ultimate-multisite-register-api-endpoint}
 
 在本教程中，您将学习如何使用 Ultimate Multisite /register API 端点为网络中的新客户创建完整的入职流程，并了解如何使用 Zapier 实现此功能。
 
@@ -17,15 +17,20 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 要完成此流程，您需要 API 凭据。获取凭据，请前往网络管理员面板，导航至 **Ultimate Multisite > Settings** > **API & Webhooks**，并查找 API 设置部分。
 
 ![API Settings section in Ultimate Multisite](/img/config/settings-api.png)
+
+以下是 API 设置页面的完整视图：
+
+![API 设置完整页面](/img/config/settings-api-full.png)
+
 选择 **Enable API** 并获取您的 API 凭据。
 
 现在，让我们先了解该端点，然后在 Zapier 中创建注册操作。
 
-## 端点请求体参数
+## 端点请求体参数 {#endpoint-body-parameters}
 
 让我们先了解发送到端点所需的最小信息。本文末尾将给出完整调用示例。
 
-### 客户
+### 客户 {#customer}
 
 以下信息是创建用户和 Ultimate Multisite 客户所必需的：
 
@@ -39,7 +44,7 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 ```
 
-### **会员**
+### **会员** {#membership}
 
 此对象中唯一需要的信息是会员状态。
 
@@ -47,19 +52,19 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 ```
 
-### **产品**
+### **产品** {#products}
 
 产品以包含 1 个或多个网络中产品 ID 的数组形式提供。请注意，该端点不会创建产品。请查看 Ultimate Multisite 文档以更好地了解产品创建端点。
 
 **"products" : [1,2],**
 
-### 支付
+### 支付 {#payment}
 
 与会员类似，我们只需要状态。
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### 站点
+### 站点 {#site}
 
 最后，正文中需要站点的 URL 和标题，均包含在 Site 对象中。
 
@@ -67,13 +72,13 @@ _i18n_hash: 8185a928b84bdc9e5563d14f7ddbe7d7
 
 注册端点的返回将是包含新创建会员信息的数组。
 
-## 在 Zapier 中创建操作
+## 在 Zapier 中创建操作 {#creating-an-action-in-zapier}
 
 随着此新且更强大的账户创建端点的推出，您还将获得 Zapier 中的新操作。
 
 您是否了解如何使用并享受 Zapier 新版本提供的所有功能？在此了解更多信息。（链接？）
 
-### 创建操作
+### 创建操作 {#creating-an-action}
 
 为更好地说明如何在 Zapier 中使用注册端点，让我们创建一个与 Google 表单的集成。每当此表单被填写并将信息保存在表单答案表中时，Ultimate Multisite 网络中将创建一个新会员。
 
@@ -107,7 +112,7 @@ With the information set up, proceed to the final test. On the last screen you c
 
 测试您的新 Zap，应该能成功完成。如果出现任何错误，请检查所有字段是否已正确发送。由于信息量大，某些细节可能被忽略。
 
-### 完整端点参数
+### 完整端点参数 {#complete-endpoint-parameters}
 
 以下是完整调用以及可发送的所有字段可能性。
 

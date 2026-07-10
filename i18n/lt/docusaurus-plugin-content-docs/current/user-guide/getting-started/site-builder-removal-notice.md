@@ -3,13 +3,13 @@ title: Pranešimas apie Site Builder Mode pašalinimą
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Powiadomimas dėl usitvirtinimo režimo pašalinimo
+# Powiadomimas dėl usitvirtinimo režimo pašalinimo {#site-builder-mode-removal-notice}
 
 **Usitvirtinimo režimas buvo pašalytas Superdav AI Agent v1.12.0.** Jei naudojote Site Builder režimą, turite pereiti prie **Setup Assistant agent** (Asistentio agentas) kūrimui temų ir svetainės nustatymams.
 
-## Kas įvyko?
+## Kas įvyko? {#what-happened}
 
-### Site Builder režimas (senasis)
+### Site Builder režimas (senasis) {#site-builder-mode-legacy}
 
 Site Builder režimas buvo vizualizuotas procesas (wizard), skirtas:
 
@@ -18,7 +18,7 @@ Site Builder režimas buvo vizualizuotas procesas (wizard), skirtas:
 - Temų pasirinkimui
 - Pradarginio turinio nustatymui
 
-### Kas jį atliko?
+### Kas jį atliko? {#what-replaced-it}
 
 **Setup Assistant agent** dabar tvarko visą Site Builder funkcijų su:
 
@@ -27,15 +27,15 @@ Site Builder režimas buvo vizualizuotas procesas (wizard), skirtas:
 - Integracija su Theme Builder įkurimo procesą
 - Persistente `site_brief` sąmoningumu ateityrinkiniams sesijoms
 
-## Jei naudojote Site Builder režimą
+## Jei naudojote Site Builder režimą {#if-you-were-using-site-builder-mode}
 
-### Jūsų svetainės yra saugos
+### Jūsų svetainės yra saugos {#your-sites-are-safe}
 
 - Su Site Builder režimu sukurtos esamos svetainės vis dar veiks
 - Nėra duomenų praradimo ar svetainės neradų
 - Galite toliau normaliai valdyti savo svetainis
 
-### Pereikite prie Setup Assistant agent
+### Pereikite prie Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Naujų svetaini nustatymui arba temų pakeitimams naudokite Setup Assistant agent:
 
@@ -51,7 +51,7 @@ ar
 
 Setup Assistant agent siūlo tą pačią funkcijų, bet su didesniam judėjimo laiku.
 
-## Palyginimas: Site Builder vs. Setup Assistant
+## Palyginimas: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Pavadinimas | Site Builder ( pašalytas) | Setup Assistant (naujas) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent siūlo tą pačią funkcijų, bet su didesniam judėjimo l
 | Ateityrinkinis sesijai | Įvaizduojama nustatymas | Naudokite išsaugotą `site_brief` |
 | Elgimys | Fixed workflow (fiksuotas procesas) | Adaptiutinis pokalbis |
 
-## Pereikimas prie Setup Assistant agent
+## Pereikimas prie Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### Naujoms svetainėms
+### Naujoms svetainėms {#for-new-sites}
 
 Nenaikite vietojant svetaininką (Site Builder mode):
 
@@ -76,7 +76,7 @@ Nenaikite vietojant svetaininką (Site Builder mode):
    - Temų generavimas
    - Pradinis nustatymas
 
-### Esamų svetainių przypadku
+### Esamų svetainių przypadku {#for-existing-sites}
 
 Jei turite esamą svetainę, kuri buvo sujungta svetaininkio režimu (Site Builder mode):
 
@@ -85,7 +85,7 @@ Jei turite esamą svetainę, kuri buvo sujungta svetaininkio režimu (Site Build
 3. Nustatymo asistentas agentas padės jums sukurti naują temą
 4. Jūsų svetainės duomenys bus likti nepasikeisti
 
-### Temų pakeitimai
+### Temų pakeitimai {#for-theme-changes}
 
 Nenaikite svetaininkio režimo temų pasirinkimą:
 
@@ -95,9 +95,9 @@ Nenaikite svetaininkio režimo temų pasirinkimą:
    - Generuoti pritaikytą temą
    - Aktyvuoti ją jūsų svetainėje
 
-## Pagrindiniai skirtumai
+## Pagrindiniai skirtumai {#key-differences}
 
-### Svetaininkio režimas (Site Builder Mode)
+### Svetaininkio režimas (Site Builder Mode) {#site-builder-mode}
 
 ```
 1. Pasirinkite šabloną
@@ -106,7 +106,7 @@ Nenaikite svetaininkio režimo temų pasirinkimą:
 4. Apiegamoma
 ```
 
-### Nustatymo asistentas agentas (Setup Assistant Agent)
+### Nustatymo asistentas agentas (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Apibūdinkite jūsų svetainės tikslą
@@ -118,42 +118,42 @@ Nenaikite svetaininkio režimo temų pasirinkimą:
 
 ```
 
-## Nustatymo asistento agentaro naudingumas
+## Nustatymo asistento agentaro naudingumas {#benefits-of-setup-assistant-agent}
 
-### Labiau įtrauklingas
+### Labiau įtrauklingas {#more-flexible}
 
 - Apibūdinkite savo svetainę natūraliu kalbu
 - Gaukite pritaikytus pasiūlymus
 - Prisigręžkite prie jūsų specifinių poreikių
 
-### Geresnis personalizavimas
+### Geresnis personalizavimas {#better-customization}
 
 - Pritaikytos temų generavimas
 - Dizaino sistemos sprendimai
 - Persistenti dizaino tokenai
 
-### Persistente sąmena
+### Persistente sąmena {#persistent-memory}
 
 - Jūsų `site_brief` saugomas
 - Ateityji agentai supranta jūsų svetainę
 - Nenaudojami naujai nustatymo informacijos repetavimas
 
-### Integruotas procesas
+### Integruotas procesas {#integrated-workflow}
 
 - Temų kūrimo įtraukimas (Theme Builder onboarding)
 - Dizaino sistemos estetiikos įgūdžius
 - Matomumo kontrolės galimybė
 - Visi darbai veikia kartu be problemų
 
-## Problemos atšalinimas
+## Problemos atšalinimas {#troubleshooting}
 
-### Negaukia svetaininkio režimo (Site Builder mode)
+### Negaukia svetaininkio režimo (Site Builder mode) {#i-cant-find-site-builder-mode}
 
 Svetaininkio režimas buvo pašalintas. Nuaikite nustatymo asistentą agentą:
 
 "Pagalmas, kaip galėčiau nustatyti naują svetainę?"
 
-### Noriu atnaujinti svetainę iš Site Builder
+### Noriu atnaujinti svetainę iš Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Jūs galite ją atnaujinti su agentu Setup Assistant:
 
@@ -162,7 +162,7 @@ Jūs galite ją atnaujinti su agentu Setup Assistant:
 3. Agentas sukuria panašų temą
 4. Jūsų `site_brief` bus išsaugotas ateitymo atsakymui
 
-### Mano esamoji Site Builder svetainė ne veikia
+### Mano esamoji Site Builder svetainė ne veikia {#my-existing-site-builder-site-isnt-working}
 
 Esančios svetainės, kurios sukurtos naudojant Site Builder režimą, vis dar veikia. Jei susiraupytum problemas:
 
@@ -171,7 +171,7 @@ Esančios svetainės, kurios sukurtos naudojant Site Builder režimą, vis dar v
 3. Patikrinkite WordPress erorodžius (error logs)
 4. Susisiekite su pagalba, jei problemos laiko nebuvą
 
-### Ar galėčiau naudoti mano senus Site Builder šablonus?
+### Ar galėčiau naudoti mano senus Site Builder šablonus? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder šablonai dabar nėra gyvykiami. Tačiau:
 
@@ -179,14 +179,14 @@ Site Builder šablonai dabar nėra gyvykiami. Tačiau:
 - Jūs galite sukurti panašias svetainės su agentu Setup Assistant
 - Agentas Setup Assistant siūlo daugiau nustatymų variantų
 
-## Ką daryti toliau
+## Ką daryti toliau {#next-steps}
 
 1. **Nauji svetainės**: Naudokite agentą Setup Assistant
 2. **Esamos svetainės**: Toliau naudokite juos kaip yra
 3. **Temų keitimas**: Prašykite pagalbos nuo agento Setup Assistant
 4. **Dizaino tobulinimas**: Naudokite įgūdžių Design System Aesthetics
 
-## Susiję su temomis
+## Susiję su temomis {#related-topics}
 
 - **Theme Builder Onboarding**: Paskutinis nustatymas kurti pritaikytą temą
 - **Setup Assistant Agent**: Svetainės nustatymas pagal agento vadovimą

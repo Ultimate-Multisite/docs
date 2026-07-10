@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Laat ontwikkelaars die finale inhoud manipuleer.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Laat ontwikkelaars die finale inhoud manipuleer.
 | $to_replace | `array` | 'Array' wat die placeholders bevat wat vervang moet word. |
 | $placeholder_count | `int` | Aantal gevind placeholders. |
 
-### Sedert
+### Sedert {#since}
 
 - 1.4.0
-### Bron
+### Bron {#source}
 
 Gebewe in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) op lyn 46
 
-## Gee Terug
+## Gee Terug {#returns}
 Inhoud na modifikasie.

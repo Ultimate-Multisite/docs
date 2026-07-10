@@ -4,15 +4,15 @@ title: Action - wp_ultimo_site_exporter_load
 sidebar_label: wp_ultimo_site_exporter_load
 _i18n_hash: e1d2f39218c054e1b4125480b93fe5aa
 ---
-# Action: wp_ultimo_site_exporter_load
+# Action: wp_ultimo_site_exporter_load {#action-wpultimositeexporterload}
 
 Tüm bağımlılıklar yüklendiğinde tetiklenir.
 
 Eklenti geliştiricilerinin yeni işlevsellikler eklemesine olanak tanır. Örneğin, yeni hosting sağlayıcıları için destek eklemek gibi.
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 [inc/class-wp-ultimo-site-exporter.php](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-wp-ultimo-site-exporter.php#L112) dosyasında 112. satırda tanımlanmıştır.

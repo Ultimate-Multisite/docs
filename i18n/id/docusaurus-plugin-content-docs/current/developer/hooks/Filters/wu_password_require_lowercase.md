@@ -4,20 +4,20 @@ title: Filter - wu_password_require_lowercase
 sidebar_label: wu_password_require_lowercase
 _i18n_hash: 5afaa63a8b318dc2167edd1bba3e0b27
 ---
-# Filter: wu_password_require_lowercase
+# Filter: wu_password_require_lowercase {#filter-wupasswordrequirelowercase}
 
 Memfilter apakah huruf kecil diwajibkan dalam kata sandi.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
 | $require | `bool` | Apakah huruf kecil diwajibkan. Default `true` saat aturan diberlakukan. |
 | $defender_active | `bool` | Apakah Defender Pro Strong Password aktif. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.4.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L563) pada baris 563

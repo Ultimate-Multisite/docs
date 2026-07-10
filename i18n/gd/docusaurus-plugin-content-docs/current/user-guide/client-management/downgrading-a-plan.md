@@ -3,13 +3,13 @@ title: A' chlàradh tairm
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan a' chùin (v2)
+# Plan a' chùin (v2) {#downgrading-a-plan-v2}
 
 _**NOTE CRÍTAL: Tha seann seo tha a' chluainn Ultimate Multisite version 2.x.**_
 
 Tha tòiseachadh de plan no sgrùdadh (downgrading) is eadar-dheargais a tha eigeil airson eadar-dheargais a tha a' chluainn uile a thgoinn mar tha iad le buidhinn beag.
 
-## Conaichean airson plan a chùin
+## Conaichean airson plan a chùin {#how-to-downgrade-a-plan}
 
 Caithedh na chluainn a bhith ag fhaighinn air an plan a chùin gu am beò, gu sònraichte, gu dìreach a bhith a' chluainn iad air an dashboard admin de subsite a tha a' chluainn agus a bhith a' cluich **Change** (A' chùin) a' chùin air an seannach.
 
@@ -29,7 +29,7 @@ Air faighinn a bharrachd air an lìm a tha agad air a thabhairt air an plan, tha
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Cè an t-sgaidhinn
+### Cè an t-sgaidhinn {#what-happens-when-a-user-downgrades-their-plan}
 
 Air version 2.0, cha tha thuig a bhith ag iarraidh aon chlàradh air an t-sgaidhinn mar proration.
 

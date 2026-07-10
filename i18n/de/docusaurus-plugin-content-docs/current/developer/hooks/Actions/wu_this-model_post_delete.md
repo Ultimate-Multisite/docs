@@ -4,22 +4,22 @@ title: 'Aktion - wu_{$this->model}_post_delete'
 sidebar_label: 'wu_{$this->model}_post_delete'
 _i18n_hash: 723d566c67fd82808273b2eb42c96d73
 ---
-# Aktion: wu_\{$this->model\}_post_delete
+# Aktion: wu_\{$this->model\}_post_delete {#action-wuthis-modelpostdelete}
 
 Ausgelöst, nachdem ein Objekt in die Datenbank gespeichert wurde.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
 | $result | `bool` | Wahr, wenn das Objekt erfolgreich gelöscht wurde. |
 | $this | `\Base_Model` | Die Objektinstanz. |
 
-### Seit
+### Seit {#since}
 
 - 2.0.0
 
-### Quelle
+### Quelle {#source}
 
 - Definiert in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L663) bei Zeile 663
 - Definiert in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1503) bei Zeile 1503

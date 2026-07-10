@@ -1,15 +1,17 @@
 ---
-title: Konektiv Rehberi
+title: بیرلشدیرمه قولاووزو
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Entegrasyon Kılavuzu
+# بیرلشدیرمه قولاوزو {#integration-guide}
 
-Bu kılavuz, Ultimate Multisite ile yaygın entegrasyon yöntemlerini kapsıyor; bu yöntemler harici servislere bağlanmaktan, özel ödeme ağ geçitleri oluşturmaya ve webhook'ları yönetmeye kadar uzanıyor.
+بو قولاوز Ultimate Multisite ایله یایغین بیرلشدیرمه الگو‌لاری‌نی اؤرتور؛ ائشیق سرویس‌لره باغلانماق، اؤزل اؤدنیش gateway-لری قورماق، و webhook-لاری ایداره ائتمک ده داخیل‌دیر.
 
-## CRM Entegrasyonu
+آیری tenant آلت‌یاپیسی اوچون، sovereign tenant bootstrap، migration verification، SSO و teardown قولاوزلوغو اوچون [Multi-Tenancy Integration](./multi-tenancy) بؤلومونه باخین.
 
-Yeni müşteriler kaydolduğunda müşteri verilerini CRM'inize senkronize edin:
+## CRM بیرلشدیرمه‌سی {#crm-integration}
+
+یئنی موشتریلر قئیددن کئچنده، موشتری بیلگی‌لرینی CRM-ینیزه sync ائدین:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitik Entegrasyonu
+## Analytics بیرلشدیرمه‌سی {#analytics-integration}
 
-Müşteri yaşam döngüsü boyunca önemli iş olaylarını takip edin:
+موشتری lifecycle بویونجا اساس بیزنس اولایلاری‌نی ایزله‌یین:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Sonraki Adımlar
+## سونراکی آددیملار {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Kendi ödeme ağ geçidinizi oluşturun
-- [Webhook Handling](./webhooks) — Özel webhook uç noktaları oluşturun
+- [اؤزل Gateway گلیشدیرمه‌سی](./custom-gateway) — اؤز اؤدنیش gateway-ینیزی قورون
+- [Webhook ایداره‌سی](./webhooks) — اؤزل webhook endpoint-لری یارادین
+- [Multi-Tenancy Integration](./multi-tenancy) — sovereign tenant lifecycle آخین‌لاری ایله بیرلشدیرین

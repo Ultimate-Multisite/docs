@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Kev sib txuas nrog Mailchimp
+
+Txuas koj lub network Multisite Ultimate rau koj lub Mailchimp. Koj tuaj yeem txuas qee cov plans rau Mailchimp Lists thiab cia li ntxiv subscribers rau cov lists ntawd thaum signup.
+
+## Kev nruab {#installation}
+
+1. Upload 'ultimate-multisite-mailchimp' rau hauv directory '/wp-content/plugins/'
+2. Activate lub plugin los ntawm menu 'Plugins' hauv koj WordPress Network Admin
+
+## Phau ntawv qhia siv {#usage-guide}
+
+Kev sync cov emails ntawm subscribers nrog koj cov MailChimp lists yog yooj yim heev nrog peb Ultimate Multisite: MailChimp Integration Add-on. Zaj qhia no yuav pab koj teeb txhua yam kom tiav!
+
+## Tau txais API key {#getting-an-api-key}
+
+Ua ntej peb pib nkag mus rau cov settings sib txawv uas muaj, peb xav tau ib MailChimp API key. Qhov no yuav cia Ultimate Multisite tham nrog MailChimp API kom retrieve lists, groups, thiab ntxiv email addresses rau cov lists thiab groups ntawd thaum users sign up.
+
+Ua raws zaj qhia no kom tau koj tus kheej MailChimp API key: [Hais txog API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Ntxiv koj tus MailChimp API key rau_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Hom kev sib txuas {#integration-mode}
+
+MailChimp Integration add-on muaj ob “integration modes”, uas txhais tau tias muaj ob txoj kev sib txawv uas koj siv tau add-on no los sync email addresses.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Ob hom kev sib txuas kom yoog tau ntau dua!_
+
+### Hom 1: Ntau Lists {#mode-1-multiple-lists}
+
+Hom default siv **Multiple Lists**. Hom no yuav cia koj xaiv ntau MailChimp lists rau txhua plan. Qhov no yog qhov kev xaiv zoo tshaj yog tias koj faib koj cov users rau hauv cov lists sib txawv.
+
+Piv txwv, cia xav tias koj muaj 3 lists sib txawv hauv koj MailChimp account: **Newsletter** , **Plan A** , thiab **Plan B**. Koj xav kom tag nrho users, tsis hais lawv plan twg, kuj nyob hauv Newsletter list thiab, kom lawv tsis txhob nco koj cov updates.
+
+Kom ua tau li ntawd, koj siv tau Multiple Lists mode los ntxiv ob lists **Newsletter** thiab **Plan A** rau Plan A MailChimp Settings, thiab **Newsletter** thiab **Plan B** rau Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Xaiv cov default lists rau accounts tshiab thiab rau accounts uas raug canceled_
+
+### Hom 2: Ib List + Ntau Groups {#mode-2-single-list--multiple-groups}
+
+MailChimp cia koj faib koj list rau hauv cov pawg users me dua hu ua **Groups**. Qhov no cia koj tswj tau ntau dua vim koj tuaj yeem xa ib campaign rau ib pab tshwj xeeb ntawm koj cov subscribers yam tsis tas tsim ntau daim copies ntawm tib campaign ntawd hauv MailChimp (uas ua rau nyuaj los tshuaj xyuas cov metrics ntawm campaign ntawd tom qab).
+
+Piv txwv, koj tuaj yeem muaj ib list hu ua **My Network Subscribers,** thiab hauv nws muaj groups rau **Plan A** thiab **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Xaiv cov default lists thiab groups, yog siv “single list + multiple groups” integration mode_
+
+## Cov Default Lists thiab Groups {#default-lists-and-groups}
+
+Tom qab koj xaiv integration mode twg thiaj haum tshaj rau koj qhov use case tshwj xeeb, ces txog sij hawm xaiv cov default lists (thiab groups, nyob ntawm hom). Default list yuav raug siv thaum ib plan twg tsis muaj ib List tshwj xeeb raug xaiv.
+
+Koj kuj xaiv tau default list rau accounts uas raug canceled. Thaum twg ib user xaus nws subscription thiab tshem nws account tawm ntawm koj network, nws email address yuav raug muab txav mus rau list uas teeb rau accounts uas raug canceled.
+
+## Qhib Double Subscription {#enabling-double-subscription}
+
+Nyob rau tib nplooj settings, koj yuav qhib tau **Double Subscription**. Qhov option no yuav ntxiv user rau ob qho tib si: default list uas xaiv THIAB list uas xaiv rau user ntawd lub plan. Yog tias option no tsis qhib, user yuav tsuas raug ntxiv rau list uas xaiv rau user lub plan xwb. Yog tsis muaj ib qho teeb rau plan ntawd, ces user yuav raug ntxiv rau default list uas xaiv.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Koj cia tau koj cov users subscribed rau ob qho tib si default list thiab plan lub list thaum sign-up_
+
+## Xaiv Lists thiab Groups rau txhua lub Plans {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Mus rau koj **Plans** thiab xaiv plan uas koj xav kho. Nco ntsoov tias hauv **Advanced Options** meta-box, yuav muaj ib tab tshiab hu ua MailChimp.
+
+Hauv tab ntawd, koj yuav xaiv tau ntau lists lossis ib list thiab ntau groups (nyob ntawm integration mode) rau plan ntawd.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Xaiv cov Lists thiab Groups uas koj xav siv rau txhua lub plans ntawm koj_
+
+Thaum ib user tshiab sign-up rau plan ntawd, nws email address yuav raug ntxiv rau cov lists thiab groups uas xaiv!

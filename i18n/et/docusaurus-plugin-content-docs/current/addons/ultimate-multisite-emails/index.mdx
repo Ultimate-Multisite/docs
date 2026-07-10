@@ -1,0 +1,197 @@
+---
+title: E-kirjad
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-post {#emails}
+
+Ultimate Multisite: Emails lisamoodul võimaldab võrgu omanikel luua ja hallata klientide e-posti kontosid koos saitide ja liikmesustega. Versioon 1.1.0 lisab kliendile suunatud e-posti konto halduse, webmaili ühekordse sisselogimise, CyberPaneli edasisuunajate toe ja kassas loomise täiustused.
+
+## Peamised funktsioonid {#key-features}
+
+* **Kliendi e-posti konto vidin**: kliendid saavad pärast aktiivse e-posti liikmesuse olemasolu oma konto lehelt postkaste luua ja hallata.
+* **Webmail SSO ja maagilised lingid**: kliendid saavad webmaili avada otse konto lehelt ühe klõpsuga autentimisega, kui teenusepakkuja seda toetab.
+* **Paroolimuudatused**: kliendid ja administraatorid saavad e-posti halduse vidinast postkastide paroole uuendada.
+* **Kassa õiguste loomine**: kassa loob e-posti liikmesuse, seob selle kliendi saidi domeeniga ja teeb konto lehe postkastitööriistad kättesaadavaks.
+* **CyberPaneli edasisuunajad**: CyberPanelil põhinevad võrgud saavad e-posti teenusevoo osana e-posti edasisuunajaid luua ja hallata.
+* **Teenusepakkujateadlikud sätted**: sätete leht filtreerib teenusepakkujad aktiivsete, seadistatud integratsioonideni, et administraatorid näeksid ainult kasutatavaid valikuid.
+
+## Nõuded {#requirements}
+
+* Ultimate Multisite 2.0.0 või uuem
+* WordPress Multisite paigaldus
+* Vähemalt üks seadistatud e-posti teenusepakkuja integratsioon
+* Teenusepakkuja API mandaadid õigusega luua postkaste, muuta paroole ja väljastada webmaili juurdepääsulinke seal, kus see on toetatud
+
+## Paigaldamine {#installation}
+
+1. Laadi plugina failid üles asukohta `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktiveeri lisamoodul võrgus WordPressi võrgu administraatori jaotises **Pluginad**.
+3. Mine jaotisse **Ultimate Multisite** > **Sätted** ja ava lisamooduli e-posti sätted.
+4. Luba e-posti teenusepakkuja integratsioonid, mida soovid klientidel kasutada.
+5. Salvesta sätted ja testi seejärel konto loomist mitte-tootmiskliendi või testsaidiga.
+
+## Kuidas e-posti müügivoog töötab {#how-the-email-seller-flow-works}
+
+E-posti müümisel on kaks eraldi kihti:
+
+1. **Õigus** — Ultimate Multisite e-posti toode/liikmesus, mis ütleb, et kliendil on lubatud kasutada e-posti konkreetse saidi domeeni, teenusepakkuja, kvoodi ja kontolimiidi jaoks.
+2. **Postkasti loomine** — tegelik teenusepakkuja postkast, näiteks `info@example.com`, mis luuakse siis, kui klient või võrgu administraator valib kohaliku osa ja parooli.
+
+Kassa ajal loob või aktiveerib lisamoodul **e-posti liikmesuse** ning salvestab sellele liikmesusele kliendi saidi domeeni ja teenusepakkuja. See ei arva ära postkasti nime ega parooli. Pärast ostu lõpuleviimist ja saidi/domeeni konteksti olemasolu saab klient avada konto lehe ja luua soovitud postkastinimed.
+
+See tähendab, et tavaline kliendivoog on järgmine:
+
+1. Klient ostab saidipaketi ja lisab kassas e-posti toote.
+2. Ultimate Multisite loob saidi liikmesuse ja teisese e-posti liikmesuse.
+3. Emails lisamoodul seob e-posti liikmesuse kliendi saidi domeeni ja teenusepakkujaga.
+4. Klient avab oma Dashboardis **Account**.
+5. Selle aktiivse e-posti liikmesuse jaoks kuvatakse paneel **E-posti kontod**.
+6. Klient klõpsab **Loo konto**, sisestab kohaliku osa, näiteks `info`, määrab parooli ja lisamoodul loob seadistatud teenusepakkuja juures aadressi `info@their-domain.com`.
+
+## Seadista e-posti toode {#configure-an-email-product}
+
+Loo üks e-posti toode iga e-posti paketi jaoks, mida soovid müüa või tasuta anda. Kui oled toodete seadistamises uus, alusta juhendist [Esimese tellimustoote loomine](../../user-guide/configuration/creating-your-first-subscription-product) ja naase seejärel siia e-posti spetsiifiliste sätete juurde.
+
+1. Mine jaotisse **Võrgu administraator > Ultimate Multisite > Tooted > Lisa toode**.
+2. Määra **Toote tüübiks** **E-post**.
+3. Seadista hinnastus. Kasuta müüdava paketi jaoks tasulist korduvat hinda või määra toode tasuta/nullhinnaga tooteks, kui see peaks olema tasuta e-posti pakett.
+4. Ava jaotis **E-posti sätted**.
+5. Vali seadistatud **E-posti teenusepakkuja**.
+6. Määra **Kontode arv**, **Salvestusruumi kvoot (MB)**, aliase limiidid, edasisuunajad ja automaatvastajad vastavalt vajadusele.
+7. Salvesta toode.
+
+Teenusepakkuja valikus kuvatakse ainult need teenusepakkujad, mis on **Integratsioonide** lehel lubatud ja täielikult seadistatud. Kui valik on tühi, seadista ja testi kõigepealt teenusepakkujat.
+
+## Lisa e-post kassasse {#add-email-to-checkout}
+
+E-posti tooteid pakutakse tavaliselt saidipaketi lisanditena. Üldise kassa redaktori töövoo kohta vaata [Kassavormid](../../user-guide/configuration/checkout-forms).
+
+1. Loo või muuda saidipaketti, mille kliendid esmalt ostavad.
+2. Lisa e-posti toode selle kassavoo saadaoleva lisandi/tellimuse täienduspakkumisena.
+3. Veendu, et kassavorm sisaldab endiselt tavapäraseid nõutavaid saidivälju, eriti saidi URL-i/domeeni välja.
+4. Tee testkassa testkliendiga.
+5. Pärast kassat ava kliendi [konto leht](../../user-guide/client-management/account-page) ja veendu, et paneel **E-posti kontod** kuvatakse.
+
+E-posti domeen võetakse kliendi saidi domeenist. Kliendid ei sisesta e-posti domeeni e-posti toote etapis.
+
+## Kliendi konto e-posti haldus {#customer-account-email-management}
+
+Versioon 1.1.0 lisab kliendi konto lehele e-posti halduse vidina. Kasuta seda siis, kui kliendid peaksid saama oma saitide jaoks postkastide loomist ja hooldust ise teha.
+
+Konto lehelt saavad kliendid:
+
+1. Vaadata e-posti kontosid, mis on seotud nende praeguse e-posti liikmesuse/saidi domeeniga.
+2. Luua uue postkasti, kui nende e-posti toode lubab lisakontosid.
+3. Muuta olemasoleva postkasti parooli.
+4. Avada toetatud webmaili teenusepakkujaid SSO või maagilise lingiga sisselogimise kaudu.
+
+Vidin kasutab Ultimate Multisite konto lehe jooksvate valikute süsteemi, nii et toimingud on piiratud konto kontekstiga, mida klient vaatab. See takistab klientidel hallata e-posti kontosid, mis kuuluvad teisele liikmesusele või saidile.
+
+Kui klient ei näe e-posti paneeli, kontrolli, et tal oleks **aktiivne e-posti toote liikmesus**, et liikmesus oleks lingitud saidi domeeniga ning et tootel oleks seadistatud teenusepakkuja.
+
+## Kliendile tasuta e-posti plaani andmine {#giving-a-customer-a-free-email-plan}
+
+Et anda kliendile e-posti ilma tasu võtmata, anna esmalt **e-posti õigus**, seejärel loo postkast või lase kliendil see luua.
+
+Soovitatud valikud:
+
+* **Loo tasuta e-posti toode**: määra e-posti toote hind tasuta/nulliks, seejärel lisa sellele kliendile aktiivne liikmesus asukohast **Ultimate Multisite > Memberships > Add Membership**. Vali e-posti toode ja klient. Tasuta liikmesused kehtivad eluaegselt, kuni neid muudetakse või tühistatakse. Kui e-posti liikmesus peab järgima olemasolevat saiti, veendu, et see oleks lingitud selle saidi/domeeni kontekstiga.
+* **Kasuta 100% allahindlust või tasuta checkout-linki**: lase kliendil läbida checkout, et Ultimate Multisite looks e-posti liikmesuse ja maksekirje automaatselt.
+* **Loo postkast administraatorina**: mine asukohta **Ultimate Multisite > Email Accounts > Add Email Account**, et luua kliendile teenusepakkuja juures konkreetne postkast. See on kasulik toe jaoks, kuid see ei asenda e-posti toote liikmesust, mis annab kliendi iseteeninduse konto lehe tööriistad.
+
+Kui soovid, et klient haldaks postkasti ise konto lehelt, veendu, et tal oleks domeeni jaoks aktiivne e-posti liikmesus. Käsitsi loodud teenusepakkuja postkast ilma selle liikmesuseta võib olemas olla, kuid klient ei pruugi selle jaoks iseteeninduse e-posti paneeli näha.
+
+## Administraatori loodud kontod ja „tellimuse numbrit pole“ {#admin-created-accounts-and-no-order-number}
+
+Administraatori leht **Email Accounts** loob või muudab teenusepakkuja postkasti. See ei ole esimene samm e-posti plaani müümiseks või andmiseks.
+
+E-posti kontot muutes otsib väli **Membership** olemasolevaid Ultimate Multisite liikmesusi nende viite-/tellimuse numbri järgi. Kui proovid konto määrata enne, kui kliendil on e-posti liikmesus, ei pruugi valimiseks tellimuse numbrit olla.
+
+Kasuta selle asemel järgmist toimingute järjekorda:
+
+1. Loo või leia kliendi e-posti liikmesus. Ostude puhul teeb seda checkout. Tasuta plaani puhul loo liikmesus käsitsi jaotisest [Liikmesused](../../user-guide/administration/managing-memberships) või saada klient läbi tasuta checkouti.
+2. Kinnita, et liikmesus on aktiivne ja kasutab e-posti toodet.
+3. Kinnita, et e-posti liikmesus on lingitud saidi domeeni/teenusepakkujaga.
+4. Loo postkast kliendi konto lehelt või asukohast **Ultimate Multisite > Email Accounts**.
+5. Vajaduse korral muuda postkasti kirjet ja määra klient, liikmesus ning sait.
+
+Kui pead kliendile looma ainult teenusepakkuja postkasti ega vaja konto lehe iseteeninduslikku haldust, võib administraatori loodud kontost piisata. Kui soovid, et klient näeks ja haldaks seda Ultimate Multisite’is, loo ka e-posti liikmesus.
+
+## Webmail SSO ja magic-link sisselogimine {#webmail-sso-and-magic-link-login}
+
+Webmail SSO annab klientidele konto lehelt otsese toimingu **Ava webmail**. Kui aktiivne teenusepakkuja seda toetab, taotleb lisamoodul lühiajalise ligipääsu URL-i ja suunab kliendi webmaili, palumata tal postkasti sisselogimisandmeid kopeerida.
+
+Teenusepakkujate käitumine võib erineda:
+
+* Teenusepakkujad, kellel on natiivsed SSO API-d, saavad luua otsese autenditud webmaili seansi.
+* Teenusepakkujad, kellel on magic-link tugi, saavad genereerida ajaliselt piiratud sisselogimislingi.
+* Teenusepakkujad, kellel pole SSO või magic-link tuge, peaksid siiski näitama postkasti üksikasju ja paroolihalduse toiminguid, kuid mitte ühe klõpsuga webmaili nuppu.
+
+Luba webmaili ligipääs ainult nende teenusepakkujate puhul, kelle jaoks oled seadistanud nõutavad API mandaatandmed. Kui toiming teenusepakkuja puhul puudub, kinnita esmalt, et teenusepakkuja on aktiivne, seadistatud ja toetab webmaili sisselogimislinke.
+
+## Checkouti provisionimine {#checkout-provisioning}
+
+Lisamoodul provisionib e-posti **liikmesuse konteksti** checkouti ajal. See salvestab teenusepakkuja, kontolimiidi, kvoodi ja saidi domeeni, et kliendid saaksid pärast ostu konto lehelt ise oma postkastinimesid luua.
+
+Soovitatud kasutuselevõtt:
+
+1. Seadista teenusepakkuja ja toote limiidid enne e-posti toote pakkumist.
+2. Testi ostu staging-tootega ja kinnita, et e-posti liikmesus luuakse.
+3. Vaata kliendi konto leht üle, et kinnitada, et domeeni jaoks kuvatakse vidin **Email Accounts**.
+4. Loo vidinast testpostkast.
+5. Kinnita parooli muutmise ja webmaili toimingud enne voo lubamist tootmiskeskkonna toodetele.
+
+Kui provisionimine ebaõnnestub, võivad kliendi konto ja liikmesus siiski olemas olla, samal ajal kui e-posti liikmesus või teenusepakkuja postkast vajab administraatori järeltegevust. Enne uuesti proovimist kontrolli Ultimate Multisite tegevuslogisid ja teenusepakkuja logisid.
+
+## CyberPaneli e-posti edasisuunajad {#cyberpanel-email-forwarders}
+
+CyberPaneli-põhiste võrkude jaoks lisab versioon 1.1.0 e-posti edasisuunajate toe. Kasuta edasisuunajaid siis, kui klientidel on vaja aadresse nagu `info@customer-domain.test`, et suunata kirjad teise postkasti ilma täispikka postkasti loomata.
+
+Enne edasisuunajate pakkumist kinnita, et CyberPaneli integratsioon on seadistatud ja kättesaadav. Vajaliku hosti, kasutajanime, parooli ja paketikonstantide kohta vaata juhendit [CyberPaneli integratsioon](../../user-guide/administration/cyberpanel-integration).
+
+## Muudatuste logi {#changelog}
+
+### Versioon 1.1.0 - Välja antud 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Uus: Webmail SSO ja magic-link sisselogimine — kliendid saavad webmailile ligi otse oma Accountilt ühe klõpsuga autentimisega.
+* Uus: E-posti konto haldamise vidinale lisati parooli muutmise funktsionaalsus.
+* Uus: CyberPaneli e-posti edasisuunajate tugi.
+* Uus: E-posti haldamise vidin kliendi Accounti lehel iseteeninduslikuks konto loomiseks ja haldamiseks.
+* Uus: Kliendi e-posti konto õiguste eraldamine integreeritud kassaprotsessi.
+* Parandus: Accounti lehe vidina hook uuendati kasutama õiget UMS-i registreerimismustrit.
+* Parandus: Create Account vorm asendati vanilla JS-iga ja õige täieliku HTML-dokumendi väljundiga.
+* Parandus: E-posti haldamise vidin kasutab nüüd admini konto lehtedel UMS currents süsteemi.
+* Parandus: Admini e-posti konto loomise vorm sisaldab paroolivälja ja kasutab Email_Account_Manageri.
+* Parandus: Päringupõhine logirämps eemaldati Email_Account_Manageri lähtestamisest.
+* Täiustatud: Settingsi leht filtreerib nüüd nii, et kuvatakse ainult aktiivsed ja seadistatud e-posti pakkujad.
+
+## Korduma kippuvad küsimused {#frequently-asked-questions}
+
+### Kas kliendid saavad luua oma e-posti kontosid? {#can-customers-create-their-own-email-accounts}
+
+Jah. Kui kliendil on domeeni jaoks aktiivne e-posti liikmesus ja toode lubab lisakontosid, saavad kliendid Accounti lehelt luua ja hallata oma postkaste.
+
+### Kas iga teenusepakkuja toetab webmail SSO-d? {#does-every-provider-support-webmail-sso}
+
+Ei. SSO ja magic-linki tugi sõltub aktiivsest e-posti teenusepakkujast. Teenusepakkujad, kellel puudub ligipääsulingi API, saavad siiski toetada postkasti loomist ja paroolimuudatusi.
+
+### Kas administraatorid saavad klientidele e-posti kontosid luua? {#can-administrators-create-email-accounts-for-customers}
+
+Jah. Administraatorid saavad adminiliidesest luua e-posti kontosid, sealhulgas määrata konto loomisel algse parooli. Kliendi iseteenindusliku haldamise jaoks veendu ka, et kliendil oleks domeeni jaoks aktiivne e-posti liikmesus.
+
+### Kas saan e-posti konto tasuta ära anda? {#can-i-give-an-email-account-away-for-free}
+
+Jah. Loo tasuta/nullhinnaga e-posti toode ja lisa see kliendile aktiivse liikmesusena või lase kliendil lõpetada kassaprotsess 100% allahindlusega. Pärast e-posti liikmesuse olemasolu saab klient või administraator luua tegeliku postkasti.
+
+### Miks küsib e-posti konto määramine tellimuse numbrit? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Liikmesuse väli otsib olemasolevat Ultimate Multisite liikmesust selle viite-/tellimusnumbri järgi. Kui klient ei ostnud e-posti toodet ja sa ei ole e-posti liikmesust käsitsi loonud, pole määramiseks e-posti liikmesust/tellimust. Loo esmalt e-posti liikmesus, seejärel loo või määra postkast.
+
+### Kas edasisuunajad on sama mis postkastid? {#are-forwarders-the-same-as-mailboxes}
+
+Ei. Postkast salvestab kirju ja sellel on sisselogimisandmed. Edasisuunaja suunab kirjad teisele aadressile ega paku eraldi postkasti.

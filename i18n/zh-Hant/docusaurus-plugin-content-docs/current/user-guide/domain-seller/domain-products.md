@@ -3,11 +3,11 @@ title: 網域產品與定價
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# 網域產品與定價
+# 網域產品與定價 {#domain-products-and-pricing}
 
 網域產品是用來控制定價、TLD、WHOIS 隱私和服務提供商選擇的方式。每個網域產品都是一個標準的 Ultimate Multisite 產品，但額外增加了一個 **網域設定 (Domain Settings)** 標籤頁。
 
-## 建立網域產品
+## 建立網域產品 {#creating-a-domain-product}
 
 1. 前往 **Network Admin › Ultimate Multisite › Products**
 2. 點擊 **Add New**
@@ -17,13 +17,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 網域產品會在產品列表中顯示一個紫色的 **Domain** 徽章，並且可以使用 **Domain Products** 標籤頁進行篩選。
 
-## 網域設定標籤頁
+## 網域設定標籤頁 {#domain-settings-tab}
 
-### Provider（服務提供商）
+### Provider（服務提供商） {#provider}
 
 選擇負責處理此產品註冊的註冊商。預設為 Domain Seller 設定中的全域 **Default provider**。
 
-### Supported TLDs（支援的 TLD）
+### Supported TLDs（支援的 TLD） {#supported-tlds}
 
 留空可以建立一個 **萬用產品 (catch-all product)**，適用於所有未被其他產品匹配到的 TLD。
 
@@ -31,7 +31,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 **產品匹配原理：** 當客戶搜尋網域時，外掛會選擇最精確匹配的產品。如果產品的 TLD 清單包含 `.com`，它會優先於萬用產品。如果沒有特定 TLD 產品匹配，則使用萬用產品。如果沒有任何產品，則不會顯示網域搜尋結果。
 
-### Markup type（加價類型）
+### Markup type（加價類型） {#markup-type}
 
 以下三種模式控制您的零售價格如何從進貨成本計算得出：
 
@@ -41,11 +41,11 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 | **Fixed markup（固定加價）** | 增加一個固定的美元金額。在 $10 的網域上加價 $5，就會變成 $15。 |
 | **Fixed price（固定價格）** | 完全忽略進貨成本。總是收取您輸入的金額。 |
 
-### Introductory pricing（入門定價）
+### Introductory pricing（入門定價） {#introductory-pricing}
 
 啟用此功能可以提供折扣的第一年價格。您需要在常規的 **Renewal price**（第二年及以後）旁邊設定一個單獨的 **Introductory price**（第一年價格）。客戶在結帳時會看到這兩個價格，這樣他們就知道續約時預期會是什麼。
 
-### WHOIS privacy（WHOIS 隱私）
+### WHOIS privacy（WHOIS 隱私） {#whois-privacy}
 
 控制是否為透過此產品註冊的網域提供 WHOIS 隱私保護。
 
@@ -59,7 +59,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## TLD 匯入與同步
+## TLD 匯入與同步 {#tld-import-and-sync}
 
 網域產品會顯示從連接的服務提供商獲取的即時進貨價格。為此功能運作，必須匯入 TLD。
 
@@ -70,7 +70,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## 自動續約
+## 自動續約 {#auto-renewal}
 
 網域續約與客戶的會員狀態掛鉤：
 
@@ -90,7 +90,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ---
 
-## 管理員：手動網域註冊
+## 管理員：手動網域註冊 {#admin-manual-domain-registration}
 
 若要在客戶未經過結帳流程的情況下為其註冊網域：
 

@@ -3,7 +3,7 @@ title: وب‌هوک‌ها
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks-رېښته (v2)
+# Webhooks-رېښته (v2) {#a-first-look-on-webhooks-v2}
 
 _**تنبيه: یاد کړئ چې دا خصه یا مقاله د تخصص کارکوونکو لپاره ده.**_
 
@@ -11,7 +11,7 @@ _**تنبيه: یاد کړئ چې دا خصه یا مقاله د تخصص کار
 
 دا هغه صورتحال ګټور دی که تاسو باید Ultimate Multisite څخه ځینې داده نورو CRM یا سیسټمونه ته منتقل کړئ چې هر وخت有个نۍ پیښه (event) ترڅنګ. د مثال په توګه، که تاسو هر وخت چې یو نوی کارونکي حساب جوړوي، باید کارونکي نوم او ایمیل همد یو لیست ته پخسئ.
 
-## webhook څنګه جوړ کړئ
+## webhook څنګه جوړ کړئ {#how-to-create-a-webhook}
 
 که تاسو غواړئ webhook جوړ کړئ، خپل network admin dashboard ته لاړ شئ. **Ultimate Multisite > Webhooks > Add New Webhook** باندې کلیک وکړئ.
 

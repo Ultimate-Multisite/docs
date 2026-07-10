@@ -3,11 +3,11 @@ title: Domainak eta prezioak
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Produkzio eta Prezioak
+# Domain Produkzio eta Prezioak {#domain-products-and-pricing}
 
 Domain produkzioak daude horrek kontrolatzen duzu prezioak, TLD-ak (Top-Level Domains), WHOIS gizaldia eta proveedorak (provider) aukeratu. Domain product batek Multisite Ultimate standard product bat da, baina bereziki **Domain Settings** tab bat ez du.
 
-## Domain product bat sortzea
+## Domain product bat sortzea {#creating-a-domain-product}
 
 1. **Network Admin › Ultimate Multisite › Products** funtziara jarraitu.
 2. **Add New** (Leitu bera) klikatu.
@@ -17,13 +17,13 @@ Domain produkzioak daude horrek kontrolatzen duzu prezioak, TLD-ak (Top-Level Do
 
 Domain produkzioak product listan purpuru **Domain** badge bat du eta **Domain Products** tabia erabiliz filtratuta daitezke.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Provider (Proveedora)
+### Provider (Proveedora) {#provider}
 
 Zer registrarraren (registrarearen) aurrera egin behar duen aukeratu. Default batez, Domain Seller settings-ean ematen **Default provider** globala da.
 
-### Supported TLDs (TLD-ak suportatuak)
+### Supported TLDs (TLD-ak suportatuak) {#supported-tlds}
 
 Ez lekuan izatea da, hau da **catch-all product** bat sortzeko, zehatzen ez duten TLD guztietan aplikatuz.
 
@@ -31,7 +31,7 @@ TLD-ak (adibidez: `.com, .net, .org`) erlistak koma-erlistatu eta ematen duzu be
 
 **Product matching (Produktuen jatorpokoa) ondo jakinarazteko:** Kudeatzaile bat domain bat bilatzen duenean, addon-ek lehen aurkitutako produktuaren espezifikoen produkua ematen du. TLD erlistan `.com` duen produktuak catch-all product batek aldiz gehiago prioritatea hartzen du. TLD-specific product ez aurkitu nahi du, hori erabiltzen da. Produktuak ez dagoenean, domain bilapilduak ez erakusten dira.
 
-### Markup type (Prezioa sortzeko modua)
+### Markup type (Prezioa sortzeko modua) {#markup-type}
 
 Wholesale cost (wholesola kostua) gabe prezio handia kalkulatzen duen modua tresna bat du:
 
@@ -41,11 +41,11 @@ Wholesale cost (wholesola kostua) gabe prezio handia kalkulatzen duen modua tres
 | **Fixed markup** (Prezio handia ezarrituta) | Prezioa ezarritutako dollar betikoa gehitu du. $10 domain batean $5 markup bat ematen du $15. |
 | **Fixed price** (Prezio ezarrituta) | Wholesale cost-a guztiz ignora du. Hau da zure erabilduko zehaztuaren betalu. |
 
-### Introductory pricing (Introduktori prezioak)
+### Introductory pricing (Introduktori prezioak) {#introductory-pricing}
 
 Discount offered to offer a prezzioa de primeiro año. Establezca un **Precio introductorio** (el precio del primer año) aparte del **Precio de renovación** regular (año 2+). El cliente verá ambos precios mostrados durante el pago para saber qué esperar al renovar.
 
-### Privacidad WHOIS
+### Privacidad WHOIS {#whois-privacy}
 
 Controla si se ofrece protección de privacidad WHOIS para los dominios registrados a través de este producto.
 
@@ -59,7 +59,7 @@ Para Namecheap, la privacidad WHOIS utiliza WhoisGuard (siempre gratuita). Para 
 
 ---
 
-## Importación y sincronización de TLD
+## Importación y sincronización de TLD {#tld-import-and-sync}
 
 Los productos de dominio muestran precios al por mayor en tiempo real obtenidos del proveedor conectado. Para que esto funcione, los TLD deben importarse.
 
@@ -70,7 +70,7 @@ Después de una sincronización, vaya a la pestaña Configuración del Dominio d
 
 ---
 
-## Renovación automática
+## Renovación automática {#auto-renewal}
 
 Las renovaciones de dominios están vinculadas al estado de membresía del cliente:
 
@@ -90,7 +90,7 @@ IDs de plantillas de correo electrónico para eventos del ciclo de vida del domi
 
 ---
 
-## Administrazioa: Manual domain registroatu
+## Administrazioa: Manual domain registroatu {#admin-manual-domain-registration}
 
 Kunde bat iriketa egin behar baduzu, eta checkout-a ez egin behar benetan:
 

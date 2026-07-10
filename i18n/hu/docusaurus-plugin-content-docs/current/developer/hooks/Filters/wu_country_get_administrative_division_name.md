@@ -4,11 +4,11 @@ title: Filter - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Visszaadja az ország adminisztratív egységeinek szép nevének a változatát.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Visszaadja az ország adminisztratív egységeinek szép nevének a változatát
 | $ucwords | `bool` | Ha nagybetűre írjuk a szavakat. |
 | $current_country | `\WP_Ultimo\Country\Country` | Az aktuális osztály példányát. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.11
-### Forrás
+### Forrás {#source}
 
 Definíciója található [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) fájlban a 250-edik sorban.
 
 
-## Visszaadja
+## Visszaadja {#returns}
 A módosított egységnevet.

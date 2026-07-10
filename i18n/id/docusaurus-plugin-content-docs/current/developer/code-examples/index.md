@@ -3,11 +3,11 @@ title: Contoh Kode Tingkat Lanjut
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Contoh Kode Tingkat Lanjut
+# Contoh Kode Tingkat Lanjut {#advanced-code-examples}
 
 Contoh-contoh ini menunjukkan pola integrasi tingkat lanjut dengan Ultimate Multisite.
 
-## Mesin Harga Dinamis
+## Mesin Harga Dinamis {#dynamic-pricing-engine}
 
 Mesin penetapan harga berbasis aturan yang menerapkan diskon volume, loyalitas, dan musiman:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Provisioning Situs Tingkat Lanjut
+## Provisioning Situs Tingkat Lanjut {#advanced-site-provisioning}
 
 Mengonfigurasi situs baru secara otomatis dengan plugin, SSL, CDN, backup, dan monitoring berdasarkan fitur paket:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem Batasan Kustom
+## Sistem Batasan Kustom {#custom-limitations-system}
 
 Melacak dan menegakkan batas sumber daya dengan peringatan penggunaan:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Atomic Counter BerlinDB dengan `increment_item()`
+## Atomic Counter BerlinDB dengan `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 menambahkan metode `increment_item()` ke kelas `Query` BerlinDB. Gunakan ini untuk melakukan peningkatan (increment) yang aman dan atomik pada kolom numerik tanpa mengalami *race condition* saat baca-modifikasi-tulis — berguna untuk penghitung (counter), kuota penggunaan, dan pemeriksaan *rate-limiting* yang berjalan di bawah permintaan bersamaan.
 
-### Tanda Tangan Metode
+### Tanda Tangan Metode {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 menambahkan metode `increment_item()` ke kelas `Query`
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Penggunaan Dasar
+### Penggunaan Dasar {#basic-usage}
 
 ```php
 // Menambahkan 1 ke kolom `api_calls` untuk membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Melacak Penggunaan API per Membership
+### Melacak Penggunaan API per Membership {#tracking-api-usage-per-membership}
 
 Pola praktis untuk menegakkan batas *rate* API per membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Mengapa `increment_item()` daripada `update_item()`
+### Mengapa `increment_item()` daripada `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Pendekatan baca-modifikasi-tulis (read-modify-write) yang naif tidak aman di bawah permintaan bersamaan:
 

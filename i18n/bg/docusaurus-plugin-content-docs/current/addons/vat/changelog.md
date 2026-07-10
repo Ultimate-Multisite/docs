@@ -3,7 +3,7 @@ title: Изменения в VAT
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# Журнал на промените на ДДС
+# Журнал на промените на ДДС {#vat-changelog}
 
 Version 1.0.7 - Публикувано на 2026-02-03
 

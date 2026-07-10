@@ -4,11 +4,11 @@ title: Filtre - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filtre : wu_rest_create_item
+# Filtre : wu_rest_create_item {#filter-wurestcreateitem}
 
 Filtre pour déterminer si la requête peut être traitée ou non.
 
-## Paramètres
+## Paramètres {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtre pour déterminer si la requête peut être traitée ou non.
 | $rest_base | `array` | Slug de l'entité. |
 | $this | `\Base_Manager` | L'instance de l'objet. |
 
-### Depuis
+### Depuis {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) à la ligne 362

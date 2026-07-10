@@ -3,15 +3,15 @@ title: 'धडा ६: नोंदणी अनुभव'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lesson 6: The Signup Experience
+# Lesson 6: The Signup Experience {#lesson-6-the-signup-experience}
 
 चेकआउट फ्लो (checkout flow) हे ठिकाण आहे जिथे केवळ रुची (interest) महसुलात (revenue) बदलते. जर साइनअप प्रक्रिया गोंधळात टाकणारी किंवा सामान्य असेल, तर ग्राहक दूर जातात. जी प्रक्रिया विशिष्ट क्षेत्रासाठी (niche-specific) बनवलेली असेल आणि जी त्यांच्या भाषेत बोलावी व सहज वाटली पाहिजे, ती ग्राहक रूपांतरित (convert) करते.
 
-## Where We Left Off
+## Where We Left Off {#where-we-left-off}
 
 FitSite मध्ये टेम्पलेट्स आणि प्लॅन्स कॉन्फिगर केलेले आहेत. आता आपण नोंदणी (registration) आणि चेकआउट अनुभव तयार करूया, ज्यामुळे फिटनेस स्टुडिओचे मालक पैसे देणारे ग्राहक बनतील.
 
-## Understanding the Registration Flow
+## Understanding the Registration Flow {#understanding-the-registration-flow}
 
 Ultimate Multisite चे चेकआउट फॉर्म हे पूर्णपणे कस्टमाइजेबल (customizable) अनेक-टप्प्यांची फॉर्म आहेत. FitSite साठी, आम्हाला असा फ्लो हवा आहे जो:
 
@@ -21,11 +21,11 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 
 संपूर्ण तांत्रिक माहितीसाठी [The Registration Flow](/user-guide/configuration/the-registration-flow) पहा.
 
-## Designing the FitSite Checkout
+## Designing the FitSite Checkout {#designing-the-fitsite-checkout}
 
 **Ultimate Multisite > Checkout Forms** वर जा आणि एक नवीन फॉर्म तयार करा.
 
-### Step 1: Plan Selection
+### Step 1: Plan Selection {#step-1-plan-selection}
 
 फिटनेस स्टुडिओच्या मालकाला सर्वात आधी जे दिसावे, ते म्हणजे प्लॅन्स, जे अशा भाषेत सादर केले जावेत जी त्यांना समजेल.
 
@@ -37,7 +37,7 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 "1 GB storage" म्हणजे जिम मालकाला काहीच कळणार नाही. "तुमच्या व्यावसायिक स्टुडिओ वेबसाइटसाठी आवश्यक सर्व काही" याचा अर्थ सर्व काही आहे. प्लॅनचे वर्णन तुमच्या ग्राहकांच्या भाषेत लिहा.
 :::
 
-### Step 2: Template Selection
+### Step 2: Template Selection {#step-2-template-selection}
 
 प्लॅन निवडल्यानंतर, ग्राहक त्यांचा सुरुवातीचा टेम्पलेट निवडतो.
 
@@ -45,7 +45,7 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 - उपलब्ध टेम्पलेट्स, त्यांनी निवडलेल्या प्लॅननुसार फिल्टर होतील (Lesson 5 मध्ये कॉन्फिगर केलेले)
 - प्रत्येक टेम्पलेटमध्ये फिटनेस-विशिष्ट डिझाइन दाखवणारे एक प्रीव्ह्यू इमेज असावे.
 
-### Step 3: Account Creation
+### Step 3: Account Creation {#step-3-account-creation}
 
 हे अगदी कमी ठेवा. फक्त खालील गोष्टी गोळा करा:
 
@@ -55,27 +55,27 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 
 साइनअप करताना तुम्हाला आवश्यक नसलेली कोणतीही माहिती विचारू नका. प्रत्येक अतिरिक्त फील्डमुळे कन्वर्जन कमी होते.
 
-### Step 4: Site Setup
+### Step 4: Site Setup {#step-4-site-setup}
 
 - **Site title**: Step 3 मध्ये एंटर केलेल्या स्टुडिओच्या नावावरून आपोआप भरा (Pre-fill)
 - **Site URL**: स्टुडिओच्या नावावरून आपोआप तयार करा (उदा. `ironworks.fitsite.com`)
 
-### Step 5: Payment
+### Step 5: Payment {#step-5-payment}
 
 - **Payment** फील्ड जोडा
 - तुमचे पेमेंट गेटवे कॉन्फिगर करा ([Stripe](/user-guide/payment-gateways/stripe) सबस्क्रिप्शन बिलिंगसाठी शिफारसित आहे)
 - जर तुम्ही Lesson 5 मध्ये ऑर्डर बंप (order bumps) तयार केले असतील, तर पेमेंट स्टेपच्या आधी एक **Order Bump** फील्ड जोडा
 
-### Step 6: Confirmation
+### Step 6: Confirmation {#step-6-confirmation}
 
 - फिटनेस-विशिष्ट भाषेत पुष्टीकरण संदेश (confirmation message) कस्टमाइझ करा
 - उदाहरण: "तुमची फिटनेस स्टुडिओ वेबसाइट तयार केली जात आहे. काही सेकंदात तुम्हाला तुमच्या नवीन साइटवर रीडायरेक्ट केले जाईल."
 
-## Adding a Period Selection Toggle
+## Adding a Period Selection Toggle {#adding-a-period-selection-toggle}
 
 जर तुम्ही तुमच्या प्लॅन्समध्ये किंमत बदल (price variations) सेट केले असतील (मासिक वि. वार्षिक), तर चेकआउट फॉर्ममध्ये एक **Period Selection** फील्ड जोडा जेणेकरून ग्राहक बिलिंग कालावधीमध्ये टॉगल करू शकतील. सूचनांसाठी [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) पहा.
 
-## Configuring Payment
+## Configuring Payment {#configuring-payment}
 
 जर तुम्ही अजून पेमेंट गेटवे सेट केले नसेल:
 
@@ -85,7 +85,7 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 
 पैसे तुमच्या खात्यात कसे येतात याबद्दल तपशील हवा असल्यास [Getting Paid](/user-guide/payment-gateways/getting-paid) पहा.
 
-## Testing the Flow
+## Testing the Flow {#testing-the-flow}
 
 पुढे जाण्यापूर्वी, एक संपूर्ण टेस्ट साइनअप पूर्ण करा:
 
@@ -105,7 +105,7 @@ Ultimate Multisite चे चेकआउट फॉर्म हे पूर्
 - [ ] ग्राहक निवडलेल्या टेम्पलेटसह कार्यरत साइटवर पोहोचतो
 - [ ] पुष्टीकरण ईमेलमध्ये फिटनेस-विशिष्ट भाषा वापरली जाते
 
-## The FitSite Network So Far
+## The FitSite Network So Far {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## What We Built This Lesson
+## What We Built This Lesson {#what-we-built-this-lesson}
 
 - फिटनेस स्टुडिओच्या मालकांसाठी तयार केलेला **अनेक-टप्प्यांचा चेकआउट फॉर्म**
 - साइनअप फ्लोमध्ये संपूर्ण **विशिष्ट क्षेत्रासाठी भाषा**

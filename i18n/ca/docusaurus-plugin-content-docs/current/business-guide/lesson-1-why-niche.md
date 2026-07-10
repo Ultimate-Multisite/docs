@@ -3,11 +3,11 @@ title: 'Lliçó 1: Per què el Niche guanya'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lliçó 1: Per què el nich és la clau
+# Lliçó 1: Per què el nich és la clau {#lesson-1-why-niche-wins}
 
 Abans de tocar qualsevol programari, has de comprendre per què construir per un públic específic és la decisió més important que feràs.
 
-## El problema de vendre websites genèrics
+## El problema de vendre websites genèrics {#the-problem-with-selling-generic-websites}
 
 Si ofereixes "websites per a tothom", estàs competint amb:
 
@@ -17,11 +17,11 @@ Si ofereixes "websites per a tothom", estàs competint amb:
 
 No pots guanyar per preu. No pots guanyar per funcionalitats. El mercat de websites genèrics és una carrera cap al fons.
 
-## Què canvia quan et quedes amb un nich
+## Què canvia quan et quedes amb un nich {#what-changes-when-you-pick-a-niche}
 
 Quan construyes una plataforma específicament per a estudis de fitness (o qualsevol nich), tot es mou a tu a favor:
 
-### Solucioneu problemes reals
+### Solucioneu problemes reals {#you-solve-real-problems}
 
 Un propietari d'estudi de fitness no vol "un website". Vol:
 

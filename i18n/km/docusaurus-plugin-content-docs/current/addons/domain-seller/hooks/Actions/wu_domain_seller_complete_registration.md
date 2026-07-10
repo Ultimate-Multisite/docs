@@ -1,0 +1,23 @@
+---
+id: wu_domain_seller_complete_registration
+title: សកម្មភាព - wu_domain_seller_complete_registration
+sidebar_label: wu_domain_seller_complete_registration
+_i18n_hash: 0bd00822989aa5b0dbda498ef5e69848
+---
+# សកម្មភាព៖ wu_domain_seller_complete_registration {#action-wudomainsellercompleteregistration}
+
+ដំណើរការ​នៅពេល​ការទូទាត់​ប្តូរ​ទៅ​ស្ថានភាព​ដែល​គួរ​ជំរុញ​ឱ្យ​ចុះឈ្មោះ​ដែន។
+
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
+
+| ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
+|------|------|-------------|
+| $payment | `\WP_Ultimo\Models\Payment` | វត្ថុ​ការទូទាត់។ |
+| $old_status | `string` | ស្ថានភាព​ការទូទាត់​មុនពេល​ប្តូរ។ |
+
+### ចាប់តាំងពី {#since}
+
+- 2.0.0
+### ប្រភព {#source}
+
+បាន​កំណត់​នៅក្នុង [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L266) នៅ​បន្ទាត់ 266

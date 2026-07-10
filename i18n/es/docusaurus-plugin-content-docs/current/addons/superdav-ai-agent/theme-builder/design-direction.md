@@ -3,17 +3,17 @@ title: Dirección de Diseño
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Dirección de Diseño
+# Dirección de Diseño {#design-direction}
 
 El paso de **Dirección de Diseño** le permite revisar, refinar y finalizar el diseño visual de su tema antes de que Theme Builder genere el tema completo.
 
-## Resumen
+## Resumen {#overview}
 
 Después de completar la Entrevista de Descubrimiento, Theme Builder presenta su dirección de diseño con **previsualización de renderizado para escritorio y móvil**. Esto le permite ver exactamente cómo se verá su diseño en diferentes dispositivos antes de comprometerse con el tema.
 
-## Componentes de la Dirección de Diseño
+## Componentes de la Dirección de Diseño {#design-direction-components}
 
-### 1. Paleta de Colores
+### 1. Paleta de Colores {#1-color-palette}
 
 El esquema de color de su tema, que incluye:
 
@@ -23,7 +23,7 @@ El esquema de color de su tema, que incluye:
 - **Colores neutros** — grises y blancos para fondos y texto
 - **Color de texto** — color de texto principal para la legibilidad
 
-### 2. Tipografía
+### 2. Tipografía {#2-typography}
 
 Selecciones de fuentes para:
 
@@ -33,14 +33,14 @@ Selecciones de fuentes para:
 - **Interlineado** — espaciado entre líneas para mejorar la lectura
 - **Pesos de fuente** — variaciones negrita, regular y ligera
 
-### 3. Diseño y Espaciado
+### 3. Diseño y Espaciado {#3-layout-and-spacing}
 
 - **Ancho del contenedor** — ancho máximo para el contenido
 - **Relleno y márgenes** — espaciado alrededor de los elementos
 - **Sistema de cuadrícula** — diseño de columnas para un diseño adaptable
 - **Espaciado de componentes** — distancia entre elementos de la interfaz de usuario
 
-### 4. Elementos Visuales
+### 4. Elementos Visuales {#4-visual-elements}
 
 - **Estilos de botones** — diseños de botones primarios, secundarios y terciarios
 - **Diseños de tarjetas** — diseños para bloques de contenido
@@ -48,9 +48,9 @@ Selecciones de fuentes para:
 - **Bordes y sombras** — profundidad visual sutil
 - **Efectos al pasar el ratón (Hover effects)** — estilos de estado interactivo
 
-## Previsualización de Renderizado
+## Previsualización de Renderizado {#preview-rendering}
 
-### Previsualización de Escritorio
+### Previsualización de Escritorio {#desktop-preview}
 
 La previsualización de escritorio muestra su diseño en ancho completo (típicamente 1200px o más):
 
@@ -59,7 +59,7 @@ La previsualización de escritorio muestra su diseño en ancho completo (típica
 - Tipografía y espaciado grandes
 - Todos los elementos visuales a tamaño completo
 
-### Previsualización de Móvil
+### Previsualización de Móvil {#mobile-preview}
 
 La previsualización de móvil muestra su diseño en ancho móvil (típicamente 375px):
 
@@ -68,7 +68,7 @@ La previsualización de móvil muestra su diseño en ancho móvil (típicamente 
 - Tipografía y espaciado ajustados
 - Tamaños de botones aptos para tacto
 
-### Puntos de Interrupción Adaptativos (Responsive Breakpoints)
+### Puntos de Interrupción Adaptativos (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder renderiza previsualizaciones en estos puntos de interrupción:
 
@@ -79,9 +79,9 @@ Theme Builder renderiza previsualizaciones en estos puntos de interrupción:
 | **Escritorio** | 1200px | Escritorio de ancho completo |
 | **Escritorio Grande** | 1920px | Pantalla ultraancha |
 
-## Refinando su Diseño
+## Refinando su Diseño {#refining-your-design}
 
-### Realizando Ajustes
+### Realizando Ajustes {#making-adjustments}
 
 Puede refinar su dirección de diseño mediante:
 
@@ -91,7 +91,7 @@ Puede refinar su dirección de diseño mediante:
 4. **Actualizar diseño** — cambie los anchos del contenedor y las columnas de la cuadrícula
 5. **Personalizar elementos** — modifique estilos de botones, diseños de tarjetas, etc.
 
-### Actualizaciones de Previsualización
+### Actualizaciones de Previsualización {#preview-updates}
 
 Los cambios se reflejan en tiempo real:
 
@@ -100,7 +100,7 @@ Los cambios se reflejan en tiempo real:
 - Todos los puntos de interrupción adaptativos se actualizan
 - Puede cambiar entre previsualizaciones para verificar los cambios
 
-### Vista de Comparación
+### Vista de Comparación {#comparison-view}
 
 Compare su dirección de diseño con:
 
@@ -108,7 +108,7 @@ Compare su dirección de diseño con:
 - **Diseños de la competencia** — compare con sitios de inspiración
 - **Versiones anteriores** — revierta a direcciones de diseño anteriores
 
-## Aprobación de la Dirección de Diseño
+## Aprobación de la Dirección de Diseño {#design-direction-approval}
 
 Una vez que esté satisfecho con su diseño:
 
@@ -118,7 +118,7 @@ Una vez que esté satisfecho con su diseño:
 4. **Confirme el diseño** — revise el espaciado y la alineación
 5. **Aprobar diseño** — proceda a la generación del tema
 
-## Próximos Pasos
+## Próximos Pasos {#next-steps}
 
 Después de aprobar su dirección de diseño:
 
@@ -127,7 +127,7 @@ Después de aprobar su dirección de diseño:
 3. Puede personalizar más usando el customizer de WordPress
 4. Proceda a [Hospitality Menus](./hospitality-menus.md) u otras funciones
 
-## Mejores Prácticas
+## Mejores Prácticas {#best-practices}
 
 - **Probar en dispositivos reales** — use teléfonos y tabletas reales si es posible
 - **Verificar la legibilidad** — asegúrese de que el texto sea legible en todos los tamaños
@@ -135,30 +135,30 @@ Después de aprobar su dirección de diseño:
 - **Considerar el rendimiento** — optimice imágenes y fuentes para la velocidad
 - **Planificar el contenido** — asegúrese de que el diseño funcione con su contenido real
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
-### La Previsualización No Se Actualiza
+### La Previsualización No Se Actualiza {#preview-not-updating}
 
 - Actualice la página
 - Borre la caché del navegador
 - Intente un navegador diferente
 - Verifique la conexión a internet
 
-### Los Colores Se Ven Diferentes
+### Los Colores Se Ven Diferentes {#colors-look-different}
 
 - Verifique la configuración de color del monitor
 - Intente en diferentes dispositivos
 - Verifique el contraste de color con herramientas de accesibilidad
 - Considere simuladores de daltonismo
 
-### Problemas de Tipografía
+### Problemas de Tipografía {#typography-issues}
 
 - Verifique que los archivos de fuente se estén cargando
 - Compruebe el tamaño de la fuente en diferentes puntos de interrupción
 - Pruebe con contenido real
 - Considere la longitud de la línea para la legibilidad
 
-## Documentación Relacionada
+## Documentación Relacionada {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — recopile información de diseño
 - [Hospitality Menus](./hospitality-menus.md) — cree páginas de menú estructuradas

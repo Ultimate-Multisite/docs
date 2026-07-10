@@ -1,133 +1,154 @@
 ---
-title: Dnevnik promjena za prodavce domena
+title: Dnevnik promjena Domain Seller
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Dnevnik promjena za Domain Seller
+# Dnevnik promjena Domain Seller {#domain-seller-changelog}
 
-Verzija 1.1.0 - Obraćeno 2026-05-08
-- Novo: Implementirano kreiranje DNS zapisa (add_dns_record) za registrere ResellerClub, Enom i OpenSRS
-- Popravak: Parser podrazum DNS zapisa sada toleriše tokene {DOMAIN} i {SITE_URL}
-- Popravak: Slugi za polje izbora domena na checkout stranici namespaced su kako bi se spriječio sukob sa site_url
+Verzija 1.3.0 - Objavljeno 2026-06-02
+- Novo: Dodano upozorenje u network-adminu kada stanje HostAfrica preprodavača postane prenisko
+- Novo: Dodano automatsko mapiranje novoregistrovanih domena na mrežnu stranicu
+- Ispravka: Zahtjevi za polja registranta primijenjeni samo pri registraciji nove domene
+- Ispravka: Omogućeno odbacivanje obavještenja o praćenju stanja
+- Ispravka: Osigurano očuvanje WooCommerce podataka registranta za naplatu
+- Ispravka: Provedeni zahtjevi za kontakt registranta tokom registracije
+- Ispravka: Spriječeno kreiranje proizvoda za registraciju domena s 0% marže
+- Ispravka: Očuvani odabiri domena i cijene kroz tok sesije naplate
+- Ispravka: Poboljšan prikaz valute cijena HostAfrica domena
+- Ispravka: Poboljšano ponašanje akcije obrasca naplate radi sprečavanja WP-core nepodudarnosti query-var
+- Poboljšano: Povezana dokumentacija konfiguracije HostAfrica preprodavača u uputama za postavljanje
 
-Verzija 1.0.8 - Obraćeno 2026-05-07
-- Popravak: Cjenovna politika za domene ResellerClub sada dohvaća trenutne troškove sa ispravnog API endpoint-a
+Verzija 1.2.0 - Objavljeno 2026-05-25
+- Novo: Dodan HostAfrica kao integracija za prodaju domena s podrškom za naplatu, čarobnjak za postavljanje, pretragu, TLD/cijene, registraciju, obnovu, transfer, nameserver, DNS, EPP kod, registrar lock i ID zaštitu
+- Novo: Dodan Openprovider kao integracija za prodaju domena s podrškom za cijene za preprodavače, registraciju, obnovu, transfer, nameserver, DNS, EPP kod, registrar lock, WHOIS privatnost i TLD sinhronizaciju
+- Novo: Dodan Hostinger kao integracija za prodaju domena koja koristi dijeljeni Hostinger API token iz osnovne integracije za provjere dostupnosti, registraciju, ažuriranja nameservera, registrar lock i WHOIS privatnost
+- Poboljšano: Dodani docblockovi za akcije i filtere životnog ciklusa domena za smjernice developerske integracije
+- Poboljšano: Ažurirani metapodaci kompatibilnosti plugin-a na WordPress 7.0 u readme datoteci dodatka
+- Poboljšano: Ažurirani predlošci planiranja korišteni za koordinaciju nadolazećeg izdanja
 
-Verzija 1.0.7 - Obraćeno 2026-05-06
-* Popravak: Test_connection za ResellerClub šalje potreban parametar tlds (#224)
+Verzija 1.1.0 - Objavljeno 2026-05-08
+- Novo: Kreiranje DNS zapisa (add_dns_record) implementirano za ResellerClub, Enom i OpenSRS registrare
+- Ispravka: Podrazumijevani parser DNS zapisa sada toleriše {DOMAIN} i {SITE_URL} tokene
+- Ispravka: Slugovi polja za odabir domene pri naplati namespacovani su kako bi se spriječio sudar sa site_url
 
-Verzija 1.0.6 - Obraćeno 2026-05-05
-* Popravak: Registracija domena za ResellerClub sada radi ispravno uz poboljšano rukovanje odgovorima API-ja i rutiranje provajdera bazirano na registru
-* Popravak: Poboljšanja korisničkog iskustva (UX) na stranici za administraciju domena
-* Uklonjeno: Integracija registra CyberPanel
+Verzija 1.0.8 - Objavljeno 2026-05-07
+- Ispravka: Cijene ResellerClub domena sada dohvaćaju trenutne troškovne cijene s ispravnog API endpointa
 
-Verzija 1.0.5 - Obraćeno 2026-04-02
-* Novo: Integracija registra GoDaddy za registraciju i upravljanje domenima
-* Novo: Integracija registra NameSilo
-* Novo: Integracija registra ResellerClub
-* Novo: Automatska provjera domena za slanje SES prilikom kupovine i mapiranja domena
-* Popravak: Konstante plugin-a Guard za zaštitu od ponovne definicije u test okruženju
-* Popravak: MySQL zastavice pravilno razdvajaju riječi u install-wp-tests.sh
+Verzija 1.0.7 - Objavljeno 2026-05-06
+* Ispravka: ResellerClub test_connection šalje obavezni parametar tlds (#224)
 
-Verzija 1.0.4 - Obraćeno 2026-03-14
-* **Popravak:** Neki nedostajući CSS resursi
-* **Popravak:** Greška vezana za nedostupne TLD-ove
+Verzija 1.0.6 - Objavljeno 2026-05-05
+* Ispravka: Registracija ResellerClub domena sada radi ispravno uz poboljšano rukovanje API odgovorima i usmjeravanje provajdera vođeno registrom
+* Ispravka: Poboljšanja UX-a administratorske stranice Register Domain
+* Uklonjeno: CyberPanel integracija registrara
 
-Verzija 1.0.3 - Obraćeno 2026-03-09
-* **Popravak:** Greške Vue reaktivnih svojstava (domain_option, selected_domain, domain_provider) prilikom korištenja starog signup šablona sa checkout shortcode-om
-* **Popravak:** Neusklađenost polja za unos poddomena i prevelik tekst u polju za izbor domena na checkout stranici
-* **Popravak:** Sakrivanje bloka pregleda "Vaš URL će biti" kada je polje za izbor domena prisutno
+Verzija 1.0.5 - Objavljeno 2026-04-02
+* Novo: GoDaddy integracija registrara za registraciju i upravljanje domenama
+* Novo: NameSilo integracija registrara
+* Novo: ResellerClub integracija registrara
+* Novo: Automatska verifikacija SES domene za slanje pri kupovini i mapiranju domene
+* Ispravka: Zaštićene konstante plugin-a od ponovnog definisanja u testnom okruženju
+* Ispravka: MySQL zastavice se ispravno razdvajaju po riječima u install-wp-tests.sh
 
-Verzija 1.0.2 - Obraćeno 2026-03-01
-* **Poboljšano:** Uklonjene globalne postavke markupa sa stranice postavki — cjenovna politika je sada isključivo po proizvodu
-* **Poboljšano:** Dodana veza "Upravljanje domenima proizvoda" na stranici postavki za brzu navigaciju
-* **Poboljšano:** Jasnije opisi polja i alati za napredne informacije (tooltips) za postavke domena proizvoda (catch-all naspram TLD-specifičnih, tipovi markupa, početna cjena)
-* **Poboljšano:** Bolji opisi širom stranice postavki (pretraživanje TLD-ova, obnove, DNS, obavještenja)
+Verzija 1.0.4 - Objavljeno 2026-03-14
+* **Ispravka:** Neki nedostajući css resursi
+* **Ispravka:** Greška povezana s nedostupnim tlds
 
-Verzija 1.0.1 - Obraćeno 2026-02-27
+Verzija 1.0.3 - Objavljeno 2026-03-09
+* **Ispravka:** Greške Vue reaktivnih svojstava (domain_option, selected_domain, domain_provider) pri korištenju naslijeđenog predloška za prijavu s kratkim kodom za naplatu
+* **Ispravka:** Neusklađenost polja za unos poddomene i prevelik tekst u polju za odabir domene pri naplati
+* **Ispravka:** Sakriven blok pregleda "Vaš URL će biti" kada je prisutno polje za odabir domene
+
+Verzija 1.0.2 - Objavljeno 2026-03-01
+* **Poboljšano:** Uklonjene globalne postavke marže sa stranice postavki — cijene su sada isključivo po proizvodu
+* **Poboljšano:** Dodan link "Upravljaj proizvodima domena" na stranici postavki za brzu navigaciju
+* **Poboljšano:** Jasniji opisi polja i tooltipovi za postavke proizvoda domena (sveobuhvatno naspram specifično za TLD, tipovi marže, uvodne cijene)
+* **Poboljšano:** Bolji opisi kroz cijelu stranicu postavki (pretraga TLD-ova, obnove, DNS, obavještenja)
+
+Verzija 1.0.1 - Objavljeno 2026-02-27
 
 * **Novo:** Alat za uvoz TLD-ova za masovno upravljanje cijenama
-* **Novo:** Podrška za početne cjenovne pakete za domene proizvode
-* **Novo:** E2E test suite sa Cypress-om
-* **Novo:** Email šabloni za obavještenja o životnom ciklusu domena
-* **Novo:** Polja adrese registratora na modalu za administraciju domena, popunjena podacima iz postavki
-* **Novo:** Interfejs za upravljanje DNS-om klijenta sa podrškom za dodavanje, uređivanje i brisanje zapisa
-* **Novo:** Opcija "Nosite svoj domen" na checkout stranici sa automatskim mapiranjem domena
-* **Novo:** Automatsko generisanje URL-a sajta iz imena domena tokom checkout procesa
-* **Novo:** Podrazumevani nameserver i konfiguracija DNS zapisa u postavkama
-* **Novo:** Detalji o registraciji domena i upravljanje DNS-om na osnovnoj stranici uređivanja domena
-* **Novo:** Setup wizard automatski kreira podrazumevani domen proizvod sa razumnim podrazumevanim vrijednostima
-* **Novo:** Dnevni automatski sink TLD-ova putem cron-a za sve konfigurirane provajdere
-* **Novo:** WHOIS privatnost zaštita sa konfiguracijom po proizvodu (uvijek uključeno, izbor klijenta ili onemogućeno)
-* **Novo:** Polje za čekiranje WHOIS privatnosti na checkout stranici sa prikazom cijene i podrškom za tamni režim
-* **Novo:** Administracija za registraciju domena na stranici za administraciju domena za ručnu registraciju
-* **Novo:** Automatsko ažuriranje plugin-a putem Ultimate Multisite update server-a
-* **Novo:** Filter tab za tip domena proizvoda u tabeli sa listom proizvoda sa ljubičastim badge stiliziranjem
-* **Novo:** Polja kontakta registratora (ime, adresa, grad, država, poštanski broj, zemlja, telefon) na checkout formi za domene
-* **Novo:** Validacija polja registratora prije pozivanja API-ja registra sa jasnim porukama o greškama
-* **Novo:** Specifični kanali logova provajdera za događaje registracije domena (npr. domain-seller-namecheap.log)
-* **Novo:** Polja kontakta registratora na glavnoj checkout formi za registraciju/signup (prikazana prilikom registracije domena)
-* **Poboljšano:** Polje za pretragu domena na checkout stranici zamijenjeno jedinstvenim poljem za izbor domena koje podržava tabove za poddomenu, registraciju i postojeći domen
-* **Poboljšano:** Postavke domena proizvoda prikazuju se inline na stranici uređivanja proizvoda putem osnovnog widget sistema
-* **Poboljšano:** Informacije o klijentskom domenu se spajaju u osnovni widget za mapiranje domena umjesto u samostalnog metaboksa
-* **Poboljšano:** Wizard za uvoz TLD-ova pojednostavljen na sink jednim klikom sa svih provajdera
-* **Poboljšano:** Dostupnost domena Namecheap koristi batch API poziv za brže pretraživanje
-* **Poboljšano:** API za cjenovna paketa Namecheap koristi ispravne parametre i parsiranje odgovora
-* **Poboljšano:** Centralizovano skladištenje TLD-ova u jednom network option-u
-* **Poboljšano:** Logovanje aktivnosti domena za promjene DNS-a, transfere i primjenu konfiguracije
-* **Poboljšano:** Potpun sink TLD-ova za OpenSRS koristeći IANA master list sa batch validacijom
-* **Poboljšano:** Potpun sink TLD-ova za Namecheap sa paginiranim API zahtjevima
-* **Poboljšano:** Zamijenjene su stare provajderske klase sa Integration Registry pattern-a
-* **Poboljšano:** Panel postavki sa konfiguracijom DNS-a i transfere
-* **Poboljšano:** Brojevi telefona automatski formatirani u +CC.NNN format registra
-* **Poboljšano:** Validacija polja telefona uklanja formatirajuće znakove prije slanja
-* **Poboljšano:** Zahtjev za verziju povećan na Ultimate Multisite 2.4.12 sa jasnijim upozorenjem
-* **Poboljšano:** CI workflow koristi odgovarajući checkout za dodatak i osnovni plugin
-* **Poboljšano:** prepare_registrant_info() čita iz korisničke meta podataka sačuvanih na checkout-u sa fallback-om na adresu za naplatu
-* **Popravljeno:** AJAX pretraga domena ne radi za korisnike koji nisu prijavljeni tokom checkout-a
-* **Popravljeno:** AJAX cjenovna politika domena ne radi za korisnike koji nisu prijavljeni tokom checkout-a
-* **Popravljeno:** Fatalna greška ponovne deklaracije klase Spyc prilikom pokretanja WP-CLI komandi
-* **Popravljeno:** Timeout API-ja sandboksa Namecheap je previše kratak
-* **Popravljeno:** Tekst dugmeta za izbor domena nije vidljiv na zelenom pozadinjama
-* **Popravljeno:** Registracija domena ne uspijeva sa greškom "RegistrantFirstName is Missing" zbog nedostajućih podataka o kontaktima
-* **Popravljeno:** Domen je kreiran sa blog_id=0 kada sajt nije postojao na vrijeme checkout-a
-* **Popravljeno:** Postavke podrazumevanih TLD-ova vraćene kao string umjesto parsiranog niza
-* **Uklonjeno:** Samostalna stranica za upravljanje domenima — sada se obrađuje putem osnovnih stranica domena
+* **Novo:** Podrška za uvodne cijene za domenske proizvode
+* **Novo:** E2E testni paket s Cypress
+* **Novo:** Email predlošci za obavještenja o životnom ciklusu domena
+* **Novo:** Polja adrese registranta u admin modalu za registraciju domena, unaprijed popunjena iz postavki
+* **Novo:** Interfejs za upravljanje DNS-om za korisnike s podrškom za dodavanje, uređivanje i brisanje zapisa
+* **Novo:** Opcija naplate "Donesite vlastitu domenu" s automatskim mapiranjem domena
+* **Novo:** Automatsko generisanje URL-a sajta iz naziva domene tokom naplate
+* **Novo:** Zadana konfiguracija nameservera i DNS zapisa u postavkama
+* **Novo:** Detalji registracije domene i upravljanje DNS-om na osnovnoj stranici za uređivanje domene
+* **Novo:** Čarobnjak za postavljanje automatski kreira zadani domenski proizvod s razumnim zadanim vrijednostima
+* **Novo:** Dnevna automatska sinhronizacija TLD-ova putem crona preko svih konfigurisanih provajdera
+* **Novo:** WHOIS zaštita privatnosti s konfiguracijom po proizvodu (uvijek uključena, izbor korisnika ili onemogućena)
+* **Novo:** WHOIS privacy polje za potvrdu na naplati s prikazom cijene i podrškom za tamni režim
+* **Novo:** Admin stranica Registruj domenu za ručnu registraciju domena
+* **Novo:** Automatska ažuriranja plugina putem Ultimate Multisite servera za ažuriranja
+* **Novo:** Kartica filtera tipa domenskog proizvoda u tabeli liste proizvoda sa stilizovanjem ljubičaste oznake
+* **Novo:** Kontakt polja registranta (ime, adresa, grad, država/pokrajina, poštanski broj, zemlja, telefon) na obrascu za naplatu domene
+* **Novo:** Validacija polja registranta prije pozivanja registrar API-ja s jasnim porukama o greškama
+* **Novo:** Kanali dnevnika specifični za provajdera za događaje registracije domena (npr. domain-seller-namecheap.log)
+* **Novo:** Kontakt polja registranta na glavnom obrascu za registraciju/prijavu i naplatu (prikazuju se pri registraciji domene)
+* **Poboljšano:** Zamijenjeno polje za pretragu domena na naplati jedinstvenim poljem za izbor domene koje podržava kartice za poddomenu, registraciju i postojeću domenu
+* **Poboljšano:** Postavke domenskog proizvoda prikazuju se inline na stranici za uređivanje proizvoda putem osnovnog sistema widgeta
+* **Poboljšano:** Informacije o domeni korisnika povezuju se s osnovnim widgetom za mapiranje domena umjesto samostalnog metaboxa
+* **Poboljšano:** Čarobnjak za uvoz TLD-ova pojednostavljen je na sinhronizaciju jednim klikom od svih provajdera
+* **Poboljšano:** Namecheap provjera dostupnosti domena koristi batch API poziv za bržu pretragu
+* **Poboljšano:** Namecheap API za cijene koristi ispravne parametre i parsiranje odgovora
+* **Poboljšano:** Centralizovana pohrana TLD-ova u jednoj mrežnoj opciji
+* **Poboljšano:** Evidentiranje aktivnosti domena za DNS promjene, transfere i primjenu konfiguracije
+* **Poboljšano:** Puna TLD sinhronizacija za OpenSRS koristeći IANA glavnu listu s batch validacijom
+* **Poboljšano:** Puna TLD sinhronizacija za Namecheap s paginiranim API zahtjevima
+* **Poboljšano:** Naslijeđene klase provajdera zamijenjene obrascem Integration Registry
+* **Poboljšano:** Panel postavki s DNS i konfiguracijom transfera
+* **Poboljšano:** Telefonski brojevi se automatski formatiraju u +CC.NNN format registrara
+* **Poboljšano:** Validacija polja telefona uklanja znakove formatiranja prije slanja
+* **Poboljšano:** Zahtjev za verziju podignut na Ultimate Multisite 2.4.12 s jasnijom obavijesti
+* **Poboljšano:** CI tok rada koristi ispravan checkout i za addon i za osnovni plugin
+* **Poboljšano:** prepare_registrant_info() čita iz korisničke mete sačuvane tokom naplate, uz rezervnu opciju adrese za naplatu
+* **Ispravljeno:** Domain search AJAX nije uspijevao za neprijavljene korisnike tokom naplate
+* **Ispravljeno:** Domain pricing AJAX nije uspijevao za neprijavljene korisnike tokom naplate
+* **Ispravljeno:** Fatalna greška ponovne deklaracije Spyc klase pri pokretanju WP-CLI komandi
+* **Ispravljeno:** Namecheap sandbox API timeout je bio prekratak
+* **Ispravljeno:** Tekst dugmeta Select u pretrazi domena nije bio vidljiv na zelenoj pozadini
+* **Ispravljeno:** Registracija domene nije uspijevala s greškom "RegistrantFirstName is Missing" zbog nedostajućih kontakt informacija
+* **Ispravljeno:** Zapis domene kreiran s blog_id=0 kada sajt još nije postojao u trenutku naplate
+* **Ispravljeno:** Zadana postavka TLD-ova vraćala se kao string umjesto parsiranog niza
+* **Uklonjeno:** Samostalna admin stranica za upravljanje domenama — sada se obrađuje kroz osnovne stranice domena
 
-Verzija 1.0.0 - Obraćeno 2025-09-28
+Verzija 1.0.0 - Objavljeno 2025-09-28
 
-**Velika preprava za Ultimate Multisite v2**
+**Veliko prepisivanje za Ultimate Multisite v2**
 
-* **Novo:** Potpuna preprava sa modernom PHP 7.4+ arhitekturom
-* **Novo:** Besprekorna integracija sa Ultimate Multisite v2 checkout sistemom
-* **Novo:** Upravljanje domenima proizvoda sa fleksibilnim opcijama cjenovnika
+* **Novo:** Potpuno prepisivanje s modernom PHP 7.4+ arhitekturom
+* **Novo:** Besprijekorna integracija s Ultimate Multisite v2 sistemom naplate
+* **Novo:** Upravljanje domenskim proizvodima s fleksibilnim opcijama cijena
 * **Novo:** Arhitektura podrške za više provajdera domena
-* **Novo:** Integracija automatskog obnove i pretplate
-* **Novo:** Interfejs za upravljanje domenima klijenta
-* **Novo:** Nadzor i logovi administracije domena
-* **Novo:** Podrška za kuponi za domene proizvode
+* **Novo:** Integracija automatske obnove i pretplate
+* **Novo:** Interfejs za upravljanje domenama za korisnike
+* **Novo:** Admin nadzor domena i dnevnici
+* **Novo:** Podrška za kupone za domenske proizvode
 * **Novo:** Sveobuhvatno upravljanje postavkama
-* **Novo:** Kod baza koji je prilagođen za razvoj i proširiv
-* **Poboljšano:** Ažurirana podrška za OpenSRS provajdera sa punom podrškom funkcija
-* **Poboljšano:** Moderni UI konzistentan sa Ultimate Multisite v2
-* **Popravljeno:** Sve deprecirane v1 kodove ažurirano na v2 standarde
-* **Uklonjeno:** Kompatibilnost sa starom v1 (prekoračena promjena)
+* **Novo:** Proširiva baza koda prilagođena developerima
+* **Poboljšano:** Ažuriran OpenSRS provajder s punom podrškom za funkcije
+* **Poboljšano:** Moderan UI usklađen s Ultimate Multisite v2
+* **Ispravljeno:** Sav zastarjeli v1 kod ažuriran na v2 standarde
+* **Uklonjeno:** Naslijeđena v1 kompatibilnost (promjena koja narušava kompatibilnost)
 
-### Prethodne verzije (v1 Legacy)
+### Prethodne verzije (v1 naslijeđe) {#previous-versions-v1-legacy}
 
-### Verzija 0.0.3 - 20/08/2019
+### Verzija 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Popravak: Nepodudarnost sa Groundhogg CRM
-* Napomena: Ovo je bila posljednja v1 kompatibilna verzija
+* Ispravljeno: Nekompatibilnost s Groundhogg CRM
+* Napomena: Ovo je bilo posljednje izdanje kompatibilno s v1
 
-### Verzija 0.0.2 - 07/12/2018
+### Verzija 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Popravak: Uklonjeno polje za ključ licenciranja
-* Popravak: Tabovi planova nedostaju kada je plugin sa funkcijom aktivan
-* Poboljšano: Dodano dugme za preskakanje na polje za registraciju
+* Ispravljeno: Uklonjeno polje License Key
+* Ispravljeno: Kartice planova nedostaju kada je plugin funkcije aktivan
+* Poboljšano: Dodano dugme za preskakanje na registracijskom polju
 
-### Verzija 0.0.1 - Početna izdanje
+### Verzija 0.0.1 - Početno izdanje {#version-001---initial-release}
 
-* Osnovna integracija OpenSRS za WP Ultimo v1
+* Osnovna OpenSRS integracija za WP Ultimo v1
 * Jednostavna pretraga i registracija domena
-* Dopuštenja domena bazirana na planu
+* Dozvole za domene zasnovane na planu

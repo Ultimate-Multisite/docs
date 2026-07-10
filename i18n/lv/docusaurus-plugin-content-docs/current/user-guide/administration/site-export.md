@@ -3,27 +3,27 @@ title: Saites izveide
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Cita attērs
+# Cita attērs {#site-export}
 
 Administrētāja lapā **Cita attērs** (Site Export) tīkla administratorji var ielikt vienu vietni, vai visu tīklu, iecienīto arkīvā, lai to izmantotu migrācijām, backupiem vai pārdošanu darbiem.
 
-## Vienas vietnes eksportēšana
+## Vienas vietnes eksportēšana {#exporting-one-site}
 
 Dodieties uz **Ultimate Multisite > Cita attērs** un izvēlieties **Izveidot jaunu Cita attēra**. Izvēlieties subvietni, ko vēlaties eksportēt, pēc tam izvēlieties, vai arkīvai jāiekļauj uzlādējumi (uploads), plugins un tēmas.
 
 Kad eksportēšana beidzties, lejupielādējiet ZIP failu no **Eksistenti attēriem** saraksta. Eksportēti ZIP faili tagad ietver pašizturīgu `index.php` un `readme.txt`, tāpēc arkīvi var uzlādēt jaunam hosta un sākt bez pirmās instalācijas atsevišķas ievades plugins.
 
-## Visas tīkla eksportēšana
+## Visas tīkla eksportēšana {#exporting-the-whole-network}
 
 Izmantojiet **Tīkla eksportēšanu** (Network Export) Cita attēra lapā, ja jums ir nepieciešams vienas arkīva, kas ietver visus subvietus tīklā. Tas ir noderīgs pirms hosta migrācijām, katastrofas atgriešanas praktiskajiem uzdevumiem vai stāģu atkārtotas izveidojumiem, kur katrs subviets jātransportē kopā.
 
 Tā kā tīkla eksportēšana var būt daudz lielāka nekā vienas vietnes eksportēšana, veiciet to laikā ar zema trafika laiku un apstipriniet, ka mērķa glabātājam ir pietiekami brīvi vietas uzlādēm, plugins, tēmām un izveidoti ZIP failiem.
 
-### Tīkla ievades pakuoles (Network Import Bundles)
+### Tīkla ievades pakuoles (Network Import Bundles) {#network-import-bundles}
 
 Sākot no Ultimate Multisite 2.12.0 Cita attēra var izveidot **tīkla ievades pakuoles** (network import bundles) — īpaši arkīvas, kas paredzētas tīkliskai vietnes atjaunošanai. Tīkla ievades pakūle ietver visus nepieciešamos failus un metadatus, lai atjaunotu vairākus vietnes jaunam tīkla instalācijā.
 
-#### Tīkla ievades pakūles izveide
+#### Tīkla ievades pakūles izveide {#generating-a-network-import-bundle}
 
 1. Ieiet **Ultimate Multisite > Site Export** ienk.
 2. Nospieci **Generate new Network Export**.
@@ -32,7 +32,7 @@ Sākot no Ultimate Multisite 2.12.0 Cita attēra var izveidot **tīkla ievades p
 5. Nospieci **Generate**.
 6. Lejiet lejupielādēt ZIP paku, kas atrodas sarakstā **Existing Exports**.
 
-#### Atjaunošana no Network Import Bundle
+#### Atjaunošana no Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Atjaunošanu no network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles saglabā:
 - Mediju uzlādējumus (ja tie ir iekļauti paku)
 - Custom databāzes tabulas un dati
 
-## Uzstādīt pašizpildīgo izpauksta ZIP failu
+## Uzstādīt pašizpildīgo izpauksta ZIP failu {#installing-a-self-booting-export-zip}
 
 Atjaunošanu no pašizpildīgo ZIP faila jaunam hosti:
 

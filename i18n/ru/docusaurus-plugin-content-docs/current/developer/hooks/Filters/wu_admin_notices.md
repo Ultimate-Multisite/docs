@@ -1,29 +1,29 @@
 ---
 id: wu_admin_notices
-title: Фильтр - wu_admin_notices
+title: Фильтр — wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Фильтр: wu_admin_notices
+# Фильтр: wu_admin_notices {#filter-wuadminnotices}
 
-Позволяет разработчикам фильтровать административные уведомления, добавленные Ultimate Multisite.
+Позволяет разработчикам фильтровать уведомления администратора, добавленные Ultimate Multisite.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
-| $notices | `array` | Список уведомлений для конкретной панели. |
-| $all_notices | `array` | Список добавленных уведомлений, разделенных по панелям. |
-| $panel | `string` | Панель, для которой нужно получить уведомления. |
-| $filter | `string` | Если удаляемые уведомления были отфильтрованы. |
-| $dismissed_messages | `array` | Список ключей удаленных уведомлений. |
+| $notices | `array` | List of notices for that particular panel. |
+| $all_notices | `array` | List of notices added, segregated by panel. |
+| $panel | `string` | Panel to retrieve the notices. |
+| $filter | `string` | If the dismissable notices have been filtered out. |
+| $dismissed_messages | `array` | List of dismissed notice keys. |
 
-### С версии
+### Начиная с версии {#since}
 
 - 2.0.0
+### Источник {#source}
 
-### Источник
+Определено в [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) в строке 121
 
-Определено в [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) на строке 121
 
-## Возвращает
+## Возвращает {#returns}

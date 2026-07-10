@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Pagbutang sa Ads sa imong network gamit ang Ultimate Multisite: Ad Injector
+# Pagbutang sa Ads sa imong network gamit ang Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ang Ultimate Multisite: Ad Injector usa ka **libre nga add-on** nga naghatag kanimo og mga gamit aron magbutang og ads sa imong mga plano direkta gikan sa ilang edit page.
 
@@ -35,7 +35,7 @@ Mahimo usab nimong maglakip og ads sa header sa Admin Pages para sa mga user sa 
 
 _Adto sa Admin Panel Ad Code option kung gusto nimo ipakita ang ads sa back-end sa imong user_
 
-### Labaw pa sa Advertising
+### Labaw pa sa Advertising {#beyond-advertising}
 
 Mahimo usab nimong gamiton ang Ultimate Multisite: Ad Injector aron maghatag og suporta sa high-tier plans.
 

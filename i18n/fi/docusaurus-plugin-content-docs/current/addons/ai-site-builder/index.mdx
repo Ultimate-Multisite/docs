@@ -1,0 +1,124 @@
+---
+title: AI-sivustonrakentaja
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI-sivustonrakentaja {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Vaatimukset {#requirements}
+
+- WordPress 5.3 tai uudempi
+- PHP 7.4 tai uudempi
+- Multisite Ultimate -plugin (aktiivinen)
+
+## Asennus {#installation}
+
+1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
+2. Aktivoi plugin WordPressin Plugins-valikon kautta
+3. Määritä lisäosan asetukset verkon ylläpidossa
+
+## Kehitys {#development}
+
+### Määritys {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projektin rakenne {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP-luokat ja sisällytykset
+│   ├── class-multisite-ultimate-updater.php  # Päivityskäsittelijä
+│   └── class-ai_site_builder-main.php             # Päätoiminnallisuus
+├── tests/                        # Yksikkötestit
+│   ├── bootstrap.php            # Testien alustuskoodi
+│   ├── class-*-base.php         # Testien perusluokka
+│   └── class-*-test.php         # Testitapaukset
+├── views/                       # Mallitiedostot
+├── assets/                      # Staattiset resurssit
+│   ├── css/                     # Tyylitiedostot
+│   ├── js/                      # JavaScript-tiedostot
+│   └── images/                  # Kuvat
+├── lang/                        # Kielitiedostot
+├── composer.json                # PHP-riippuvuudet
+├── package.json                 # Node.js-riippuvuudet
+├── phpunit.xml.dist             # PHPUnit-määritys
+├── .phpcs.xml.dist              # Koodistandardien määritys
+└── rector.php                   # Koodin modernisointisäännöt
+```
+
+### Testaus {#testing}
+
+Lisäosa sisältää kattavan testauskehyksen:
+
+- **Yksikkötestit**: PHPUnit-pohjaiset testit WordPress-testipaketilla
+- **Testien perusluokka**: Tarjoaa apumenetelmiä yleisiin testiskenaarioihin
+- **Testikattavuus**: Määritetty seuraamaan koodin kattavuutta
+- **Multisite-testaus**: Testit suoritetaan multisite-ympäristössä
+
+### Koodistandardit {#code-standards}
+
+- **WordPress-koodistandardit**: Valvotaan PHPCS:n kautta
+- **PHP 7.4+ -yhteensopivuus**: Modernit PHP-ominaisuudet tuettu
+- **Staattinen analyysi**: PHPStan-integraatio tyyppitarkistusta varten
+- **Koodin modernisointi**: Rector-säännöt PHP-päivityksiä varten
+
+### Koontijärjestelmä {#build-system}
+
+- **Resurssien käsittely**: CSS/JS-tiedostojen minimointi
+- **Käännös**: POT-tiedoston luonti
+- **Paketointi**: Arkiston luonti jakelua varten
+- **Kehitystila**: Minimoimattomat resurssit virheenkorjausta varten
+
+## Määritys {#configuration}
+
+Lisäosa tukee erilaisia määritysvaihtoehtoja, jotka ovat käytettävissä verkon ylläpitokäyttöliittymän kautta.
+
+## Hookit ja suodattimet {#hooks-and-filters}
+
+### Toiminnot {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Suoritetaan lisäosan alustuksen jälkeen
+- `ultimate-multisite-ai-site-builder_loaded` - Suoritetaan, kun kaikki lisäosan tiedostot on ladattu
+
+### Suodattimet {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Muokkaa lisäosan asetuksia
+- `ultimate-multisite-ai-site-builder_enabled` - Ohita lisäosan käyttöönotto-/poistotila
+
+## Lisenssi {#license}
+
+Tämä lisäosa on lisensoitu GPL v3 -lisenssillä tai uudemmalla.
+
+## Tuki {#support}
+
+Tukea ja dokumentaatiota varten käy osoitteessa [MultisiteUltimate.com](https://multisiteultimate.com)
+## Muutosloki {#changelog}
+
+- Versio 1.0.1 (2025-09-28): nimeä etuliite uudelleen muotoon ultimate-multisite; päivitä text domain; versiopäivitys.
+
+
+- Versio  (2025-09-28): nimeä etuliite uudelleen muotoon ultimate-multisite; päivitä text domain; versiopäivitys.

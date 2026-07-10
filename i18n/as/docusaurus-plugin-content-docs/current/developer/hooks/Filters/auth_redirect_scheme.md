@@ -4,19 +4,19 @@ title: Filter - auth_redirect_scheme
 sidebar_label: auth_redirect_scheme
 _i18n_hash: ee5939a809512404b9c380dd2125ce98
 ---
-# Filter: auth_redirect_scheme
+# Filter: auth_redirect_scheme {#filter-authredirectscheme}
 
 প্ৰমাণীকৰণ ৰিডাইৰেক্ট স্কীম ফিল্টাৰ কৰে।
 
-## প্যারামিটাৰসমূহ
+## প্যারামিটাৰসমূহ {#parameters}
 
 | Name | Type | বৰ্ণনা |
 |------|------|-------------|
 | $scheme | `string` | প্ৰমাণীকৰণ ৰিডাইৰেক্ট স্কীম। ডিফল্টভাৱে খালি। |
 
-### কিমানৰ পৰা
+### কিমানৰ পৰা {#since}
 
 - 2.9.0
-### উৎস
+### উৎস {#source}
 
 [https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L212) ত ২১২ নং শাৰীত সংজ্ঞায়িত কৰা হৈছে।

@@ -1,255 +1,277 @@
 ---
-title: Utiylo va Konfiguratsiya
+title: آلتلر و تنظیمات
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Araçlar ve Yapılandırma
+# آلتلر و قۇرولوش {#tools-and-configuration}
 
-Theme Builder, WordPress sitenizi analiz etmek, tasarlamak ve oluşturmak için bir dizi araç kullanır. 1.16.0 sürümünde, **sd-ai-agent/site-scrape artık Seviye 1 bir araçtır**, bu sayede Theme Builder'da varsayılan olarak kullanıma hazırdır.
+Theme Builder، WordPress سایتینیزی تحلیل ائتمک، دیزاین ائتمک و قورماق اوچون بیر سیرا آلتلردن ایستیفاده ائدیر. 1.16.0 نوسخه‌سینده، **sd-ai-agent/site-scrape ایندی Tier 1 آلتیدیر**، بو دا اونو Theme Builder ایچینده اؤن‌فرض ال‌چاتان ائدیر. Superdav AI Agent v1.18.0 هم ائتیبارلی گلیشدیرن ایش آخی‌شلاری اوچون آیری یاییلان Advanced یان پاکتینی تانیدیر؛ بو آلتلر WordPress.org نین اصلی پاکتینین بیر پارچاسی دئییل و آیری قورولوب آیری ایجازه‌لندیریلمه‌لیدیر.
 
-## Mevcut Araçlar
+## ال‌چاتان آلتلر {#available-tools}
 
-### Seviye 1 Araçlar (Her Zaman Kullanılabilir)
+### Tier 1 آلتلری (همیشه ال‌چاتان) {#tier-1-tools-always-available}
 
-Seviye 1 araçlar, ek bir yapılandırmaya gerek kalmadan Theme Builder'da varsayılan olarak mevcuttur.
+Tier 1 آلتلری، هیچ بیر علاوه قورولوش اولمادان، Theme Builder ایچینده اؤن‌فرض ال‌چاتاندیر.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Amacı:** Mevcut web sitelerini analiz ederek tasarım ilhamı, içerik yapısı ve işlevsellik çıkarmak.
+**مقصد:** موجوود وب‌سایتلری تحلیل ائدیب دیزاین الهامی، ایچریک قورولوشو و ایشله‌کی استخراج ائتمک.
 
-**Yetenekleri:**
+**قابیلیت‌لر:**
 
-- **Web sitesi analizi** — Rakip veya ilham verici web sitelerini tarar ve analiz eder
-- **Tasarım çıkarma** — Renkleri, yazı tiplerini ve düzen kalıplarını belirler
-- **İçerik yapısı** — Sayfa organizasyonunu ve hiyerarşiyi anlar
-- **Özellik tespiti** — Plugin'leri ve işlevselliği belirler
-- **Performans analizi** — Sayfa hızını ve optimizasyonunu kontrol eder
-- **SEO analizi** — Meta etiketleri ve yapılandırılmış verileri inceler
+- **وب‌سایت تحلیلی** — رقیب یا الهام‌وئرن وب‌سایتلری scrape و تحلیل ائتمک
+- **دیزاین استخراجی** — رنگلری، فونتلاری و دوزولوش الگو‌لارینی تانیماغ
+- **ایچریک قورولوشو** — صفحه دوزنینی و سلسله‌مراتبی باشا دوشمک
+- **اؤزللیک تاپما** — plugin-لری و ایشله‌کی تانیماغ
+- **پرفورمانس تحلیلی** — صفحه سورعتینی و بهینه‌لشمه‌نی یوخلاماق
+- **SEO تحلیلی** — meta tag-لری و قورولوشلو داده‌لری گؤزدن کئچیرمک
 
-**Kullanımı:**
+**ایستیفاده:**
 
 ```
-example.com'un tasarımını analiz et ve bunu sitem için ilham kaynağı olarak kullan.
+example.com-ون دیزاینینی تحلیل ائت و اونو منیم سایتیم اوچون الهام کیمی ایستیفاده ائت.
 ```
 
-**Neler Çıkarır:**
+**نه‌لری استخراج ائدیر:**
 
-- Renk paleti ve renk kullanımı
-- Tipografi (yazı tipleri ve boyutlar)
-- Düzen yapısı ve boşluklar
-- Navigasyon kalıpları
-- İçerik organizasyonu
-- Görseller ve medya kullanımı
-- Etkileşimli öğeler
-- Mobil uyumluluk
+- رنگ پالیتراسی و رنگ ایستیفاده‌سی
+- تایپوگرافی (فونتلار و اؤلچولر)
+- دوزولوش قورولوشو و آرا مسافه‌سی
+- گزی‌نمه الگو‌لاری
+- ایچریک دوزنی
+- تصویرلر و مدیا ایستیفاده‌سی
+- اینتراکتیو عنصرلر
+- موبایل اویغونلوغو
 
-**Sınırlamaları:**
+**محدودیت‌لر:**
 
-- Şifre korumalı siteleri tarayamaz
-- robots.txt ve site politikalarına saygı duyar
-- Dinamik içeriği yakalayamayabilir
-- JavaScript ağırlıklı sitelerde analiz sınırlı olabilir
-- Büyük siteler analiz edilmesi daha uzun sürebilir
+- شفره ایله قورونان سایتلری scrape ائده بیلمز
+- robots.txt و سایت سیاستلرینه رعایت ائدیر
+- دینامیک ایچریگی توتmaya بیلر
+- JavaScript-ی چوخ اولان سایتلرده تحلیل محدود اولا بیلر
+- بؤیوک سایتلرین تحلیلی داها چوخ واخت آپارا بیلر
 
-### Seviye 2 Araçlar (İsteğe Bağlı)
+### Tier 2 آلتلری (اختیاری) {#tier-2-tools-optional}
 
-Seviye 2 araçlar, Theme Builder ayarlarında açıkça etkinleştirildiğinde kullanılabilir.
+Tier 2 آلتلری Theme Builder قورولوشلاریندا آچیقجا فعال ائدیلنده ال‌چاتان اولور.
 
-#### Advanced Analytics
+#### پیشرفته Analytics {#advanced-analytics}
 
-Detaylı performans metrikleri sağlar:
+تفصیلی پرفورمانس اؤلچولری وئریر:
 
-- Sayfa yükleme süreleri
+- صفحه یوکلنمه واختلاری
 - Core Web Vitals
-- SEO puanı
-- Erişilebilirlik puanı
-- En iyi uygulamalar puanı
+- SEO نمره‌سی
+- ال‌چاتانلیق نمره‌سی
+- ائن یاخشی قایدالار نمره‌سی
 
-#### Content Optimizer
+#### ایچریک بهینه‌لشدیرن {#content-optimizer}
 
-Aşağıdakiler için analiz yapar ve iyileştirme önerileri sunar:
+بونلار اوچون تحلیل ائدیر و یاخشیلاشما تکلیف ائدیر:
 
-- Okunabilirlik
-- SEO optimizasyonu
-- Anahtar kelime kullanımı
-- İçerik yapısı
-- Harekete geçirici mesaj (CTA) yerleşimi
+- اوخونولماق آسانلیغی
+- SEO بهینه‌لشمه‌سی
+- آچار سؤز ایستیفاده‌سی
+- ایچریک قورولوشو
+- Call-to-action یئرلشمه‌سی
 
-### Seviye 3 Araçlar (Premium)
+### Tier 3 آلتلری (Premium) {#tier-3-tools-premium}
 
-Seviye 3 araçlar ek yapılandırma veya premium özellikler gerektirir.
+Tier 3 آلتلری علاوه قورولوش یا premium اؤزللیک‌لر ایسته‌ییر.
 
-#### AI Content Generator
+#### AI ایچریک یارادان {#ai-content-generator}
 
-Aşağıdaki içerikleri oluşturur:
+بونلار اوچون ایچریک یارادیر:
 
-- Ürün açıklamaları
-- Hizmet sayfaları
-- Blog yazıları
-- Meta açıklamaları
-- Harekete geçirici mesaj (CTA) metinleri
+- محصول توضیحاتلاری
+- خیدمت صفحه‌لری
+- وبلاگ یازیلاری
+- Meta توضیحاتلاری
+- Call-to-action متنی
 
-#### Advanced Design Tools
+#### پیشرفته دیزاین آلتلری {#advanced-design-tools}
 
-Gelişmiş tasarım yetenekleri sağlar:
+پیشرفته دیزاین قابیلیت‌لری وئریر:
 
-- Özel CSS oluşturma
-- Animasyon oluşturma
-- Etkileşimli öğe tasarımı
-- Gelişmiş renk teorisi
-- Tipografi optimizasyonu
+- اؤزل CSS یاراتما
+- انیمیشن یاراتما
+- اینتراکتیو عنصر دیزاینی
+- پیشرفته رنگ نظریه‌سی
+- تایپوگرافی بهینه‌لشدیرمه‌سی
 
-## Araç Yapılandırması
+### پیشرفته یان آلتلر (آیری پاکت) {#advanced-companion-tools-separate-package}
 
-### Araçları Etkinleştirme
+Advanced یان پاکتی اصلی Superdav AI Agent یاییمیندان آیری یاییلیر. بو پاکت، ایداره‌چی‌لرین agent-ه یوکسک تأثیرلی آلتلردن ایستیفاده ائتمه‌یه آچیقجا ایجازه وئردیگی ائتیبارلی گلیشدیرن و سایت صاحیبی محیط‌لری اوچون نظری توتولوب.
 
-Theme Builder'da ek araçları etkinleştirmek için:
+Advanced یان قابیلیت‌لری بونلاری ایچره آلا بیلر:
 
-1. **Gratis AI Agent → Settings** yolunu izleyin
-2. **Theme Builder → Tools** bölümüne gidin
-3. İhtiyaca göre araçları aç/kapa yapın
-4. Ayarları kaydedin
+- **فایل‌سیستم آلتلری** — ائتیبارلی محیط‌لرده تأیید اولونموش فایللاری یوخلاماق و دَییشدیرمک
+- **داده‌تابانی آلتلری** — آچیقجا ایجازه وئریلنده سایت داده‌لرینی سورغولاماق یا یئنی‌لمک
+- **WP-CLI آلتلری** — WordPress ساخلاما و یوخلاما امرلرینی ایشلتmek
+- **REST dispatcher آلتلری** — قېید اولونموش REST endpoint-لرینه کنترللو dispatch ایش آخی‌شلاری ایله چاغیریش ائتمک
+- **Plugin قوران آلتلر** — plugin کودونو اسکلت‌لندیرمک و تکرارلا گلیشدیرمک
+- **Git snapshot آلتلری** — ریسکلی گلیشدیرن عمللریندن اؤنجه snapshot یاراتماق
+- **ایستیفاده‌چی ایداره‌سی آلتلری** — ایجازه اولان یئرلرده ایستیفاده‌چی قېیدلرینی گؤزدن کئچیرمه‌یه یا دوزلتمه‌یه کؤمک ائتمک
+- **Benchmark آلتلری** — گلیشدیرمه گؤزدن کئچیرمه‌سی اوچون پرفورمانس یا قابیلیت benchmark-لاری ایشلتmek
 
-### Araç İzinleri
+بونلاری هر قورولوشدا عمومی ال‌چاتان Theme Builder آلتلری کیمی سندلشدیرمه‌یین. اونلار یالنیز Advanced یان پاکتی قورولوب، فعال ائدیلیب و ائتیبارلی ایداره‌چی‌لره محدودلاشدیریلنده ال‌چاتاندیر.
 
-Bazı araçlar izin gerektirir:
+## آلت قورولوشو {#tool-configuration}
 
-- **Site tarama** — internet erişimi gerektirir
-- **Analitik** — Google Analytics entegrasyonu gerektirir
-- **İçerik oluşturma** — API anahtarları gerektirir
-- **Gelişmiş özellikler** — premium abonelik gerektirebilir
+### آلتلری فعال ائتمک {#enabling-tools}
 
-### API Anahtarları ve Kimlik Bilgileri
+Theme Builder-ده علاوه آلتلری فعال ائتمک اوچون:
 
-Bunları gerektiren araçlar için API anahtarlarını yapılandırın:
+1. **Gratis AI Agent → Settings**-ه گئدین
+2. **Theme Builder → Tools**-ه گئدین
+3. لازیم اولدوغو کیمی آلتلری آچین/باغلایین
+4. قورولوشلاری ساخلايین
 
-1. **Gratis AI Agent → Settings → API Keys** yoluna gidin
-2. Her araç için kimlik bilgilerini girin
-3. Bağlantıyı test edin
-4. Güvenli bir şekilde kaydedin
+### آلت ایجازه‌لری {#tool-permissions}
 
-## sd-ai-agent/site-scrape Kullanımı
+بعضی آلتلر ایجازه ایسته‌ییر:
 
-### Temel Kullanım
+- **سایت scrape ائتمه** — اینترنته چاتیم ایسته‌ییر
+- **Analytics** — Google Analytics اینتگراسیاسی ایسته‌ییر
+- **ایچریک یاراتما** — API آچارلاری ایسته‌ییر
+- **پیشرفته اؤزللیک‌لر** — premium آبونه‌لییی ایسته‌یه بیلر
+- **Advanced یان آلتلری** — آیری یاییلان Advanced پاکتینی و ایداره‌چی‌نین آچیق ائتیبارینی ایسته‌ییر
 
-Theme Builder'dan bir web sitesini analiz etmesini isteyin:
+### API آچارلاری و گؤونجلیک بیلگی‌لری {#api-keys-and-credentials}
 
-```
-competitor.com adresindeki rakip sitemin tasarımını analiz et
-ve sitem için tasarım iyileştirmeleri öner.
-```
+ایسته‌یه‌ن آلتلر اوچون API آچارلاری قورون:
 
-### Belirli Analiz
+1. **Gratis AI Agent → Settings → API Keys**-ه گئدین
+2. هر آلت اوچون گؤونجلیک بیلگی‌لرینی گیریش ائدین
+3. باغلانتی‌نی سینایین
+4. گؤونلی شکلده ساخلايین
 
-Belirli analiz türleri talep edin:
+### Advanced یان پاکتینین قورولماسی {#installing-the-advanced-companion-package}
 
-```
-example.com'dan renk paletini çıkar ve bunu ilham kaynağı olarak kullan.
-```
+Advanced یان پاکتی WordPress.org اصلی ZIP-یندن آیری یاییملانیر. اونو یالنیز همون یاییم اوچون رسمی پروژه یاییم کانالیندان قورون، سونرا چاتیمی ائتیبارلی ایداره‌چی‌لره محدودلاشدیرین. تولید سایتینی‌ده فایل‌سیستم، داده‌تابانی، WP-CLI، REST dispatcher، plugin قوران، ایستیفاده‌چی ایداره‌سی، یا benchmark آلتلرینی فعال ائتمزدن اؤنجه انسان تأییدی قاپیلارینی و git snapshot داورانیشینی گؤزدن کئچیرین.
 
-```
-example.com'un navigasyon yapısını analiz et ve benzer bir
-organizasyonu siteme uygula.
-```
+## sd-ai-agent/site-scrape ایستیفاده‌سی {#using-sd-ai-agentsite-scrape}
 
-```
-example.com'un mobil uyumluluğunu kontrol et ve sitemin de
-aynı derecede uyumlu olduğundan emin ol.
-```
+### سادە ایستیفاده {#basic-usage}
 
-### Karşılaştırmalı Analiz
-
-Birden fazla siteyi karşılaştırın:
+Theme Builder-دن بیر وب‌سایتی تحلیل ائتمه‌سینی ایسته‌یین:
 
 ```
-site1.com ve site2.com'un tasarımlarını karşılaştır ve her ikisinin de
-en iyi unsurlarını birleştiren bir tasarım oluştur.
+competitor.com-دا اولان رقیبیمین سایتینین دیزاینینی تحلیل ائت
+و منیم سایتیم اوچون دیزاین یاخشیلاشمالاری تکلیف ائت.
 ```
 
-## Araç Sınırlamaları ve Dikkat Edilmesi Gerekenler
+### اؤزل تحلیل {#specific-analysis}
 
-### Hız Sınırlaması (Rate Limiting)
+اؤزل تحلیل نؤولری ایسته‌یین:
 
-- Sunucu aşırı yüklenmesini önlemek için tarama hız sınırlıdır
-- Aynı siteye yapılan birden fazla istek kısıtlanabilir
-- Büyük siteler analiz edilmesi daha uzun sürebilir
+```
+example.com-دان رنگ پالیتراسینی استخراج ائت و اونو الهام کیمی ایستیفاده ائت.
+```
 
-### İçerik Doğruluğu
+```
+example.com-ون گزی‌نمه قورولوشونو تحلیل ائت و اوخشار
+دوزنی منیم سایتیمه تطبیق ائت.
+```
 
-- Dinamik içerik tam olarak yakalanamayabilir
-- JavaScript ile oluşturulan içerik eksik olabilir
-- Gerçek zamanlı veriler yansıtılmayabilir
-- Bazı içerikler ücretli duvarların arkasında olabilir
+```
+example.com-ون موبایل اویغونلوغونو یوخلا و منیم سایتیمین
+همین قدر اویغون اولدوغونا امین اول.
+```
 
-### Yasal ve Etik Hususlar
+### مقایسه تحلیلی {#comparison-analysis}
 
-- robots.txt ve site politikalarına saygı gösterin
-- Telif hakkıyla korunan içeriği çoğaltmak için taramayın
-- Analizi kopyalamak için değil, ilham almak için kullanın
-- Çıkarılan içeriği kullanma hakkınız olduğundan emin olun
-- Analiz edilen sitelerin hizmet şartlarına uyun
+بیر نئچه سایتی مقایسه ائدین:
 
-### Performans Etkisi
+```
+site1.com و site2.com دیزاینلرینی مقایسه ائت و هر ایکیسینین ائن یاخشی عنصرلرینی
+بیرلشدیرن بیر دیزاین یارات.
+```
 
-- Büyük siteleri taramak zaman alabilir
-- Birden fazla eş zamanlı tarama daha yavaş olabilir
-- Ağ bağlantısı hızı etkiler
-- Büyük veri kümeleri daha fazla işlem gerektirebilir
+## آلت محدودیت‌لری و دقت ائدیله‌جه‌ک‌لر {#tool-limitations-and-considerations}
 
-## En İyi Uygulamalar
+### سورعت محدودلاشدیرما {#rate-limiting}
 
-### Site Analizi Kullanımı
+- اسکرپینگ سرورون چوخ یوکلنمه‌سینین قاباغینی آلماق اوچون محدودلاشدیریلیر
+- عینی سایتا بیر نئچه ایستک گؤنده‌ریلسه، سورعتی آزالدیلابیلر
+- بؤیوک سایتلارین تحلیل ائدیلمه‌سی داها چوخ واخت آپارا بیلر
 
-1. **Birden fazla siteyi analiz edin** — birkaç kaynaktan ilham toplayın
-2. **Yapıya odaklanın** — düzen ve organizasyon kalıplarını öğrenin
-3. **Renkleri çıkarın** — renk paletlerini başlangıç noktası olarak kullanın
-4. **Tipografiyi inceleyin** — beğendiğiniz yazı tipi kombinasyonlarını belirleyin
-5. **Navigasyonu gözden geçirin** — menü organizasyonunu anlayın
+### ایچریکین دقتی {#content-accuracy}
 
-### Etik Tarama
+- دینامیک ایچریک تام توتولمایا بیلر
+- JavaScript ایله گؤستریلن ایچریک ناقص قالا بیلر
+- آنی معلوماتلار عاکس اولونمایا بیلر
+- بعضی ایچریکلر پوللو گئچیدین آردیندا اولا بیلر
 
-1. **robots.txt'ye saygı gösterin** — site yönergelerine uyun
-2. **İçerik kopyalamayın** — analizi sadece ilham için kullanın
-3. **Hakları doğrulayın** — çıkarılan içeriği kullanabileceğinizden emin olun
-4. **Kaynakları belirtin** — ilham kaynaklarına atıfta bulunun
-5. **Şartlara uyun** — site hizmet şartlarına uyun
+### قانونی و اخلاقی ملاحظات {#legal-and-ethical-considerations}
 
-### Araç Etkinliğini En Üst Düzeye Çıkarma
+- robots.txt و سایت سیاستلرینه حرمت ائدین
+- مولف حاققی اولان ایچریکی یئنیدن یایماق اوچون اسکرپ ائتمه‌یین
+- تحلیلی کؤچورمه‌ک اوچون یوخ، الهام اوچون قوللانین
+- چیخاریلان ایچریکی ایشلتمه‌یه حاققینیز اولدوغونو یوخلایین
+- تحلیل ائدیلن سایتلارین خدمت شرطلرینه عمل ائدین
 
-1. **Spesifik olun** — belirli analiz türleri isteyin
-2. **Bağlam sağlayın** — sitenizin amacını açıklayın
-3. **Beklentiler belirleyin** — tasarım hedeflerinizi anlatın
-4. **Tekrarlayın** — sonuçlara göre iyileştirin
-5. **Araçları birleştirin** — kapsamlı analiz için birden fazla araç kullanın
+### پرفورمانسا تاثیر {#performance-impact}
 
-## Sorun Giderme
+- بؤیوک سایتلارین اسکرپ ائدیلمه‌سی واخت آپارا بیلر
+- عینی آندا بیر نئچه اسکرپ داها یاواش اولا بیلر
+- شَبَکه باغلانتیسی سورعته تاثیر ائدیر
+- بؤیوک وئری توپلاملاری داها چوخ ایشلمه طلب ائده بیلر
 
-### Site Taranmıyor
+## ان یاخشی قایدالار {#best-practices}
 
-- Sitenin genel kullanıma açık olup olmadığını kontrol edin
-- robots.txt'nin taramaya izin verdiğini doğrulayın
-- Farklı bir site deneyin
-- İnternet bağlantısını kontrol edin
-- Sorun devam ederse destekle iletişime geçin
+### سایت تحلیلیندن ایستیفاده {#using-site-analysis}
 
-### Eksik Analiz
+1. **بیر نئچه سایتی تحلیل ائدین** — بیر نئچه قایناقدان الهام توپlayین
+2. **قورولوشا دیقت ائدین** — دوزولوش و تشکیلات الگو‌لارینی اؤیرنین
+3. **رنگلری چیخارین** — رنگ پالت‌لارینی باشلانغیج نقطه‌سی کیمی قوللانین
+4. **تیپوگرافی‌نی اؤیرنین** — بگندیگینیز فونت ترکیبلرینی تانین
+5. **ناویقاسیانی گؤزدن کئچیرین** — منو تشکیلاتینی باشا دوشون
 
-- Site dinamik içerik barındırıyor olabilir
-- JavaScript tam olarak işlenmemiş olabilir
-- Büyük siteler zaman aşımına uğrayabilir
-- Bunun yerine belirli sayfaları analiz etmeyi deneyin
-- Belirli analiz türleri isteyin
+### اخلاقی اسکرپینگ {#ethical-scraping}
 
-### Yavaş Performans
+1. **robots.txt-یه حرمت ائدین** — سایت گؤستریشلرینه عمل ائدین
+2. **ایچریکی کؤچورمه‌یین** — تحلیلی یالنیز الهام اوچون قوللانین
+3. **حاقلاری یوخلایین** — چیخاریلان ایچریکی ایشلده بیله‌جه‌یینیزه امین اولون
+4. **قایناقلاری گؤسترین** — الهام قایناقلارینا اعتبار وئرین
+5. **شرطلره عمل ائدین** — سایتین خدمت شرطلرینه اویغون داورانین
 
-- Büyük siteleri analiz etmek daha uzun sürer
-- Birden fazla eş zamanlı tarama daha yavaştır
-- Ağ bağlantısı hızı etkiler
-- Yoğun olmayan saatlerde denemeyi deneyin
-- Önce daha küçük bölümleri analiz edin
+### آلَتین تاثیرینی آرتیرماق {#maximizing-tool-effectiveness}
 
-## İlgili Belgeler
+1. **دقیق اولون** — تحلیلین مشخص نوعلرینی ایسته‌یین
+2. **باغلام وئرین** — سایتینیزین مقصدینی آچیقلایین
+3. **گؤزلنتیلری تعیین ائدین** — دیزاین هدفلرینیزی تعریف ائدین
+4. **تکرارلا دوزلدین** — نتیجه‌لره اساسن داهادا یخشیلاش دیرین
+5. **آلَتلری بیرلشدیرین** — گئنیش تحلیل اوچون بیر نئچه آلَت قوللانین
 
-- [Discovery Interview](./discovery-interview.md) — tasarım bilgisi toplama
-- [Design Direction](./design-direction.md) — tasarımınızı iyileştirme
-- [Hospitality Menus](./hospitality-menus.md) — menü sayfaları oluşturma
+## مشکللرین حلی {#troubleshooting}
+
+### سایت اسکرپ اولمور {#site-wont-scrape}
+
+- سایتین عمومی اَلچاتان اولوب-اولمادیغینی یوخلایین
+- robots.txt-ین اسکرپینگ‌ه ایجازه وئردیگینی یوخلایین
+- باشقا بیر سایتی یوخلایین
+- اینترنت باغلانتیسینی یوخلایین
+- مشکل داوام ائدرسه، پشتیبانی ایله علاقه ساخlayین
+
+### ناقص تحلیل {#incomplete-analysis}
+
+- سایتدا دینامیک ایچریک اولا بیلر
+- JavaScript تام رندر ائدیلمه‌یه بیلر
+- بؤیوک سایتلار timeout اولا بیلر
+- عوضینه مشخص صفحه‌لری تحلیل ائتمه‌یه چالیشین
+- مشخص تحلیل نوعلری ایسته‌یین
+
+### یاواش پرفورمانس {#slow-performance}
+
+- بؤیوک سایتلارین تحلیلی داها چوخ واخت آپاریر
+- عینی آندا بیر نئچه اسکرپ داها یاواش اولور
+- شَبَکه باغلانتیسی سورعته تاثیر ائدیر
+- ترافیکین آز اولدوغو ساعاتلاردا یوخلایین
+- اؤنجه داها کیچیک بؤلمه‌لری تحلیل ائدین
+
+## باغلی سندلر {#related-documentation}
+
+- [کشف مصاحبه‌سی](./discovery-interview.md) — دیزاین معلوماتی توپlayین
+- [دیزاین یؤنو](./design-direction.md) — دیزاینینیزی داهادا دقیشدیرین
+- [قوناق‌پذیرلیک منولاری](./hospitality-menus.md) — منو صفحه‌لری یارادین

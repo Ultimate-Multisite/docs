@@ -3,15 +3,15 @@ title: 'Lehena-lehenaren: Klientela ondo jartzea'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Lehen 8: Onboarding Nagusia
+# Lehen 8: Onboarding Nagusia {#lesson-8-customer-onboarding}
 
 Kunde bat inscrepsioa egin da, baina hori jardueraren half-a lailea leku dago. Horrek logiatu du, ez daite iradatzera eta ez daiterren itzalean joaten, hori haserri duzu. Hau eskaera designatzen da erregistro berria aktibo eta inbertsio bat izateko.
 
-## Nondokiak Onde Zuztuta Itzalean
+## Nondokiak Onde Zuztuta Itzalean {#where-we-left-off}
 
 FitSitea guztiz brandatuta dago eta funtzionatzen duen checkout flow-a ditu. Arriba, fitnes studio dueño bere inscrepsioa amaitu du eta bere web berri edatean aurkitzen da. Horrek zer egiten da iragailu eta inbertsio bat izateko.
 
-## Onboarding-ak Zergatik Importantea da?
+## Onboarding-ak Zergatik Importantea da? {#why-onboarding-matters}
 
 Inskripzioaren ondorioz 30 minian erabakitzten da zer geratzen da edo hori itzalean aukeratzen da (churn). Fitnes studio dueño bere:
 
@@ -21,9 +21,9 @@ Inskripzioaren ondorioz 30 minian erabakitzten da zer geratzen da edo hori itzal
 
 Nire niche templateak (Lehen 4) lehen puntua eskaintzen dira. Hau eskaera ikustea garrantzitsuena da.
 
-## Lehen Logiatuaren Erfuerdia
+## Lehen Logiatuaren Erfuerdia {#the-first-login-experience}
 
-### Welcome Dashboard Widgeta
+### Welcome Dashboard Widgeta {#welcome-dashboard-widget}
 
 Erregistro berri kliente bat ezagutzeko eta setup-ean induzizteko custom dashboard widget batekin zure web designatu. Horrek bere lehen logiatzen duenean prominentia eratu behar da.
 
@@ -45,29 +45,29 @@ Ekinak guzti ez dute WordPress menuko item guztietan ikusten behar. Mendatzen du
 
 [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addon-ek erabiltarrie guztiak kontrolatzeko lagundu.
 
-## Welcome Email Sequence (Meilua-serebidea)
+## Welcome Email Sequence (Meilua-serebidea) {#simplify-the-dashboard}
 
 Meilua bat ez du. Erabiltarriak bere unea lehenak gure webgunean eginduz duen erreguntzak leitu dituen serebidea ezartu:
 
-### Meilua 1: Welcome (Signuparen hemenan)
+### Meilua 1: Welcome (Signuparen hemenan) {#welcome-email-sequence}
 
 - Titulu: "FitSite-ra etorri duzu -- studio webguneak iragatik dago"
 - Kontentua: Login linka, hasten jakinarazpenak, laguntza resursosetari linka
 - Tonua: Erreguntua, emanzantza duen, fitness-eragiketa espezial bat
 
-### Meilua 2: Quick Wins (Egun 1)
+### Meilua 2: Quick Wins (Egun 1) {#email-1-welcome-immediately-after-signup}
 
 - Titulu: "FitSitean lehenago egin behar dituen 3 beste"
 - Kontentua: Logoa gehitu, homepage-aren hero imagena iruditu, klaseak erregistroa
 - Klikatu beharko dituzten lugarak erakusten screenshot-ek barrukatzea
 
-### Meilua 3: Make It Yours (Egun 3)
+### Meilua 3: Make It Yours (Egun 3) {#email-2-quick-wins-day-1}
 
 - Titulu: "Fitsite-n zehatzatu"
 - Kontentua: Koloreak aukeratu, entrenador-pertsonalak gehitu, studio-aren historia eskrita
 - Plataforma-re magatutako fitness webguneen erabilgarriak erekusten linka
 
-### Meilua 4: Go Live (Egun 7)
+### Meilua 4: Go Live (Egun 7) {#email-3-make-it-yours-day-3}
 
 - Titulo: "Preparados arekin ir fitSitea munduan?"
 - Kontinuazioa: Errekari bat zehazteko da, ir aurrera egitean jakinarazteko eta sozialak argitzea (social sharing) arteko ideiak.
@@ -76,11 +76,11 @@ Meilua bat ez du. Erabiltarriak bere unea lehenak gure webgunean eginduz duen er
 [Webhooks](/user-guide/integrations/webhooks) edo [Zapier](/user-guide/integrations/zapier) erabili da, ir email marketing platforma bidez ir mailak irikitzeko. Horrek aukera ematen du horiek nabarmendua kontrolatzeko eta zehazteko.
 :::
 
-## Aurreratutako Ekinak (Help Resources)
+## Aurreratutako Ekinak (Help Resources) {#email-4-go-live-day-7}
 
 Fitness studio dueñoak ezagutzen dituen jarduera-erako garrantzitsu emailak ereizten ditu:
 
-### Knowledge Base Artikulua (Knowledge Base Articles)
+### Knowledge Base Artikulua (Knowledge Base Articles) {#help-resources}
 
 - "Esketza-erren planifikazioa onartzeko"
 - "Trainer profila hasi eta mugitzen"
@@ -90,7 +90,7 @@ Fitness studio dueñoak ezagutzen dituen jarduera-erako garrantzitsu emailak ere
 
 Hau hauek tekniko ezagutza ez duen pertsonalari eta errekariak gisa eskatzen dituz. Skurtshot (screenshots) erabili. WordPress jargonak ez duzu erabiltzea.
 
-### Video Aurreratutako Indikazioak (Video Walkthroughs)
+### Video Aurreratutako Indikazioak (Video Walkthroughs) {#knowledge-base-articles}
 
 Mundia iruditzen den (2-3 min) ekranak ikusten dituz:
 
@@ -101,7 +101,7 @@ Mundia iruditzen den (2-3 min) ekranak ikusten dituz:
 
 Hau hauek polidako produktibo behar dira. Klaruak, laguntzak eta errekariak gisa eskatzen dituz da.
 
-## Kontua Pagaintzeko Hirugarte (The Account Page)
+## Kontua Pagaintzeko Hirugarte (The Account Page) {#video-walkthroughs}
 
 Ultimate Multisite-ek klientzak kontu egiten duen [Account Page](/user-guide/client-management/account-page) du, hori erabiltzaileak bere abonazioa mugitzen dute. Horrek aldatu dezakezu:
 
@@ -110,7 +110,7 @@ Ultimate Multisite-ek klientzak kontu egiten duen [Account Page](/user-guide/cli
 - Fakturaren historia eta faktura bat daudien downloadak emateko
 - Aurreratutako resursosetari linka
 
-## Onboardingaren Mehatzeko Indikazioak
+## Onboardingaren Mehatzeko Indikazioak {#the-account-page}
 
 Onboarding-ek funtzionatzen duen jakinarazteko indicador hauek ez egiaztatu:
 
@@ -119,7 +119,7 @@ Onboarding-ek funtzionatzen duen jakinarazteko indicador hauek ez egiaztatu:
 - **Berri kliurietatik suporta testiak**: Handiaren volumena daude, zerbait gapak dituzte onboarding-ek.
 - **Trial-den paidizera konvertazioa**: Trialak ematen dutenean, zein %-ren konvertatzen dira?
 
-## FitSite Networkaren Aktualak
+## FitSite Networkaren Aktualak {#measuring-onboarding-success}
 
 ```
 FitSite Network
@@ -140,7 +140,7 @@ FitSite Network
 └── Prezio estrategiari arte (irrenditua lekurri)
 ```
 
-## Zer Ekitzen Ditugu Hau Lehen Lekurrian
+## Zer Ekitzen Ditugu Hau Lehen Lekurrian {#the-fitsite-network-so-far}
 
 - **Prozesua orientatua le kontraktiaren lehen inguruko** Quick Start widget batekin bestela
 - **Dashboard bat eraginkorrak** fitness webgune administrazio eta gestionaizun task-ek onartu duena

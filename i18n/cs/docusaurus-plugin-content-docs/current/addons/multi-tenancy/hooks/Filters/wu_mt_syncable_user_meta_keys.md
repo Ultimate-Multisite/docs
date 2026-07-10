@@ -4,19 +4,19 @@ title: Filter - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Filtr: wu_mt_syncable_user_meta_keys
+# Filtr: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
 
 Filtruje seznam klíčů uživatelských metadat, které by měly být synchronizovány na vzdálené uzly.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
 | $syncable_keys | `array` | Výchozí meta klíče pro synchronizaci. |
 
-### Od verze
+### Od verze {#since}
 
 - 1.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/users/class-network-user-sync.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L296) na řádku 296

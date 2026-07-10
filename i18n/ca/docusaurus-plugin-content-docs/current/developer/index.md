@@ -3,11 +3,11 @@ title: Documentació per a desenvolupadors
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Documentació per a desenvolupadors
+# Documentació per a desenvolupadors {#developer-documentation}
 
 Aquesta guia proporciona als desenvolupadors tot el que necessiten per integrar-se, estendre o desenvolupar addons per Ultimate Multisite. Ultimate Multisite transforma una xarxa WordPress Multisite en una plataforma Website-as-a-Service (WaaS).
 
-## Què hi ha disponible
+## Què hi ha disponible {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Operacions CRUD completes per a totes les entitats (clients, sites, membres, pagaments, productes, domínis) amb autenticació per clau API
 - **[Hooks Reference](./hooks/guide)** — Més de 200 hooks d'acció i més de 280 hooks de filtre per a esdeveniments del cicle de vida i personalització
@@ -15,13 +15,13 @@ Aquesta guia proporciona als desenvolupadors tot el que necessiten per integrar-
 - **[Code Examples](./code-examples/)** — Patrons avançats per a preus dinàmics, aprovisionament de sites, limitacions personalitzades i processament multi-passarela
 - **[Addon Development](./addon-development/getting-started)** — Marco estructurat per construir plugins d'addons
 
-## Requisits
+## Requisits {#requirements}
 
 - Instal·lació de WordPress Multisite
 - PHP 7.4 o més recent
 - Plugin Ultimate Multisite activat
 
-## Instal·lació amb Composer / Bedrock
+## Instal·lació amb Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite està disponible a [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) com a `ultimate-multisite/ultimate-multisite`. Aquest és el mètode d'instal·lació recomanat per a configuracions WordPress basades en [Bedrock](https://roots.io/bedrock/) i altres entorns gestionats per Composer.
 
@@ -45,15 +45,15 @@ O, si estem carregant el plugin com a plugin imprescindible (must-use) mitjança
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Com començar ràpidament
+## Com començar ràpidament {#quick-start}
 
-### Utilitzar la REST API
+### Utilitzar la REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Connectar-se a esdeveniments (Hooks)
+### Connectar-se a esdeveniments (Hooks) {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {

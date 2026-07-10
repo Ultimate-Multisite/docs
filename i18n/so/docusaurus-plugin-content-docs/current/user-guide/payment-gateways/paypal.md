@@ -3,7 +3,7 @@ title: Wax-soo-dhinta PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Wax-sareynta PayPal Gateway-ga (v2)
+# Wax-sareynta PayPal Gateway-ga (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**Fadlan Muhiim Ah: Qoraalkan wuxuu la xiriira Ultimate Multisite nooca 2.x.**_
 
@@ -13,13 +13,13 @@ Sida Stripe, PayPal si ballaaran ayaa loo isticmaalaa lacag bixinta online-ka ah
 
 Xusuusnow inaad u baahan tahay **PayPal Business account** si aad u hesho API credential-ka loo baahan yahay isku xirtaalkaasi.
 
-## Furitaanka PayPal-ka shabakadahaaga
+## Furitaanka PayPal-ka shabakadahaaga {#enabling-paypal-on-your-network}
 
 Si aad u furto PayPal sidii hab lacag bixinta la heli karo shabakadahaaga, tag **Ultimate Multisite > Settings > Payments** tab-ka oo ku calaamadii (tick) ee dhanka PayPal.
 
 ![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
 
-## Isticmaalka wizard-ka hagaajinta
+## Isticmaalka wizard-ka hagaajinta {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 wuxuu ku daray wizard-ka hagaajinta (setup wizard) ee PayPal-ka lacag bixinta settings-ka gateway-ga. Marka aad furto PayPal, isticmaal wizard-ka **Ultimate Multisite > Settings > Payments** si aad u doorato sida aad rabto in la xiriirto gateway-ga iyo inaad xaqiijiso nooca credential-ka ee weli loo baahan yahay ka hor intaadan kaydin.
 
@@ -30,7 +30,7 @@ Wizard-ku wuxuu taageera laba hab oo hagaajin ah:
 
 Haddii aadan arki karin fursadda OAuth ee wizard-ka, dhammaystir flow-ga gacanta loo galo macluumaadka hoose. Gateway-gu wuxuu shaqeeyaa si la mid ah PayPal Business API credentials-ka kuwa hore ee Ultimate Multisite 2.x.
 
-## Helitaanka PayPal API credentials
+## Helitaanka PayPal API credentials {#getting-the-paypal-api-credentials}
 
 Marka aad fuliso (enable) PayPal sidii gateway lacagti, waxaad u baahan doontaa inaad buuxisato meelaha Username-ka API ee PayPal, Password-ka API ee PayPal iyo Signature-ka API ee PayPal.
 

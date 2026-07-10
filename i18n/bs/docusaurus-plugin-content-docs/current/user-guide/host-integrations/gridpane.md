@@ -3,17 +3,17 @@ title: Integracija GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integracija sa GridPane-om
+# Integracija sa GridPane-om {#gridpane-integration}
 
-## Pregled
+## Pregled {#overview}
 GridPane je specijalizovani kontrolni panel za hosting WordPressa, napravljen za ozbiljne WordPress profesionalce. Ova integracija omogućava automatsku sinhronizaciju domena i upravljanje SSL certifikatima između Ultimate Multisite-a i GridPane-a.
 
-## Funkcionalnosti
+## Funkcionalnosti {#features}
 - Automatska sinhronizacija domena
 - Upravljanje SSL certifikatima
 - Automatska konfiguracija SUNRISE konstante
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 U vašu `wp-config.php` datoteku moraju biti definirane sljedeće konstante:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Upute za postavljanje
+## Upute za postavljanje {#setup-instructions}
 
-### 1. Dohvatite GridPane API vjerodajnice
+### 1. Dohvatite GridPane API vjerodajnice {#1-get-your-gridpane-api-credentials}
 
 1. Prijavite se na vaš GridPane dashboard
 2. Idite na "Settings" > "API"
 3. Generišite API ključ ako ga već nemate
 4. Kopirajte svoj API ključ
 
-### 2. Dohvatite ID servera i ID lokacije (Site ID)
+### 2. Dohvatite ID servera i ID lokacije (Site ID) {#2-get-your-server-and-site-ids}
 
 1. U vašem GridPane dashboard-u, idite na "Servers"
 2. Odaberite server na kojem je vaš WordPress multisite hostovan
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Idite na "Sites" i odaberite svoju WordPress lokaciju
 5. Zapišite Site ID (vidljiv u URL-u ili na stranici detalja o lokaciji)
 
-### 3. Dodajte konstante u wp-config.php
+### 3. Dodajte konstante u wp-config.php {#3-add-constants-to-wp-configphp}
 
 Dodajte sljedeće konstante u vašu `wp-config.php` datoteku:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Omogućite integraciju
+### 4. Omogućite integraciju {#4-enable-the-integration}
 
 1. U vašem WordPress adminu, idite na Ultimate Multisite > Settings
 2. Navigirajte do kartice "Domain Mapping"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Omogućite integraciju GridPane
 5. Pritisnite "Save Changes"
 
-## Kako funkcioniše
+## Kako funkcioniše {#how-it-works}
 
 Kada se domen mapira u Ultimate Multisite-u:
 
@@ -69,23 +69,23 @@ Kada se domen mapira u Ultimate Multisite-u:
 
 Integracija takođe automatski upravlja konstantom SUNRISE u vašoj `wp-config.php` datoteci, što je neophodno da bi mapiranje domena pravilno funkcionisalo.
 
-## Upravljanje SUNRISE konstantom
+## Upravljanje SUNRISE konstantom {#sunrise-constant-management}
 
 Jedna jedinstvena značajka GridPane integracije je što automatski vraća SUNRISE konstantu u `wp-config.php` kako bi spriječila sukobe sa vlastitim sistemom mapiranja domena GridPane-a. Ovo osigurava da oba sistema mogu raditi zajedno bez problema.
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Problemi sa API vezom
+### Problemi sa API vezom {#api-connection-issues}
 - Provjerite da li je vaš API ključ ispravan
 - Provjerite da li su vaši ID servera i ID lokacije ispravni
 - Osigurajte da vaš GridPane račun ima potrebne dozvole
 
-### Problemi sa SSL certifikatima
+### Problemi sa SSL certifikatima {#ssl-certificate-issues}
 - GridPane može potrajati s dodjeljivanjem SSL certifikata
 - Provjerite da li su vaši domeni pravilno usmjereni na IP adresu vašeg servera
 - Provjerite SSL postavke GridPane-a za vašu lokaciju
 
-### Domen nije dodan
+### Domen nije dodan {#domain-not-added}
 - Provjerite logove Ultimate Multisite-a radi bilo kakvih poruka o greškama
 - Provjerite da li domen već nije dodan u GridPane
 - Osigurajte da su DNS zapisi vašeg domena pravilno konfigurisani

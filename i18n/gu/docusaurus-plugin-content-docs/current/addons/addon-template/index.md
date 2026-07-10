@@ -3,25 +3,25 @@ title: એડ-ઓન ટેમ્પલેટ
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# એડન ટેમ્પલેટ
+# એડન ટેમ્પલેટ {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## જરૂરીયાતો
+## જરૂરીયાતો {#requirements}
 
 - WordPress 5.3 અથવા તેનાથી ઉપર
 - PHP 7.4 અથવા તેનાથી ઉપર
 - Multisite Ultimate પ્લગઇન (એક્ટિવ)
 
-## ઇન્સ્ટોલેશન
+## ઇન્સ્ટોલેશન {#installation}
 
 1. એડન ફાઇલોને તમારા `/wp-content/plugins/` ડિરેક્ટરીમાં અપલોડ કરો
 2. વર્ડપ્રેસમાં 'Plugins' મેનુ દ્વારા પ્લગઇન એક્ટિવેટ કરો
 3. નેટવર્ક એડમિનમાં એડન સેટિંગ્સ કન્ફિગર કરો
 
-## ડેવલપમેન્ટ
+## ડેવલપમેન્ટ {#development}
 
-### સેટઅપ
+### સેટઅપ {#setup}
 
 ```bash
 # ડિપેન્ડન્સીઝ ઇન્સ્ટોલ કરો
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### પ્રોજેક્ટ સ્ટ્રક્ચર
+### પ્રોજેક્ટ સ્ટ્રક્ચર {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # કોડ મોડર્નાઇઝેશન નિયમો
 ```
 
-### ટેસ્ટિંગ
+### ટેસ્ટિંગ {#testing}
 
 આ એડનમાં એક વ્યાપક ટેસ્ટિંગ ફ્રેમવર્ક શામેલ છે:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **ટેસ્ટ કવરેજ**: કોડ કવરેજ ટ્રેક કરવા માટે કન્ફિગર કરેલ છે
 - **મલ્ટિસાઇટ ટેસ્ટિંગ**: ટેસ્ટ મલ્ટિસાઇટ એન્વાયર્નમેન્ટમાં ચાલે છે
 
-### કોડ સ્ટાન્ડર્ડ્સ
+### કોડ સ્ટાન્ડર્ડ્સ {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS દ્વારા લાગુ કરવામાં આવે છે
 - **PHP 7.4+ Compatibility**: આધુનિક PHP ફીચર્સને સપોર્ટ કરે છે
 - **Static Analysis**: ટાઇપ ચેકિંગ માટે PHPStan ઇન્ટિગ્રેશન
 - **Code Modernization**: PHP અપગ્રેડ માટે Rector નિયમો
 
-### બિલ્ડ સિસ્ટમ
+### બિલ્ડ સિસ્ટમ {#build-system}
 
 - **Asset Processing**: CSS/JS ફાઇલો માટે મિનિફિકેશન
 - **Translation**: POT ફાઇલ જનરેશન
 - **Packaging**: ડિસ્ટ્રિબ્યુશન માટે આર્કાઇવ બનાવવું
 - **Development Mode**: ડીબગીંગ માટે અનમિનિફાઇડ એસેટ્સ
 
-## કન્ફિગરેશન
+## કન્ફિગરેશન {#configuration}
 
 આ એડન નેટવર્ક એડમિન ઇન્ટરફેસ દ્વારા ઉપલબ્ધ વિવિધ કન્ફિગરેશન વિકલ્પોને સપોર્ટ કરે છે.
 
-## હૂક્સ અને ફિલ્ટર્સ
+## હૂક્સ અને ફિલ્ટર્સ {#hooks-and-filters}
 
-### એક્શન્સ
+### એક્શન્સ {#actions}
 
 - `ultimate-multisite-addon-template_init` - એડન ઇનિશિયલાઇઝેશન પછી ટ્રિગર થાય છે
 - `ultimate-multisite-addon-template_loaded` - બધા એડન ફાઇલો લોડ થયા પછી ટ્રિગર થાય છે
 
-### ફિલ્ટર્સ
+### ફિલ્ટર્સ {#filters}
 
 - `ultimate-multisite-addon-template_settings` - એડન સેટિંગ્સમાં ફેરફાર કરો
 - `ultimate-multisite-addon-template_enabled` - એડન એનેબલ/ડિસેબલ સ્ટેટસને ઓવરરાઇડ કરો
 
-## લાયસન્સ
+## લાયસન્સ {#license}
 
 આ એડન GPL v3 અથવા તેના પછીના વર્ઝન હેઠળ લાયસન્સ પ્રાપ્ત છે.
 
-## સપોર્ટ
+## સપોર્ટ {#support}
 
 સપોર્ટ અને ડોક્યુમેન્ટેશન માટે, [MultisiteUltimate.com](https://multisiteultimate.com) ની મુલાકાત લો
-## ચેન્જલોગ
+## ચેન્જલોગ {#changelog}
 
 - Version 1.0.1 (2025-09-28): પ્રીફિક્સને ultimate-multisite માં નામ બદલ્યું; ટેક્સ્ટ ડોમેન અપડેટ કર્યું; વર્ઝન બમ્પ.
 

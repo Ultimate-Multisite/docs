@@ -4,11 +4,11 @@ title: Фільтр - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Фільтруе тэкст паведамлення пра аднаўленне пароля.
 
-## Паметры
+## Паметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | Нікнейм карыстальніка. |
 | $user_data | `\WP_User` | Объект WP_User. |
 
-### З
+### З {#since}
 
 - 2.8.0
 - 4.1.0: Дададзеныя паметры <code>$user_login</code> і <code>$user_data</code>.
-### Выказчык
+### Выказчык {#source}
 
 Вызначаны ў [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) у 149-й пасылцы.
 
 
-## Павяртоўвае
+## Павяртоўвае {#returns}
 Пачатковы тэкст паведамлення.

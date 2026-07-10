@@ -3,17 +3,17 @@ title: 'Somada 12: Kuendesha Biashara'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Somo la 12: Kuendesha Biashara
+# Somo la 12: Kuendesha Biashara {#lesson-12-running-the-business}
 
 Platform si mradi unaoumalisha—ni biashara unayoiendesha. Somo hili linazungumzia shughuli za kila siku za kudhibiti FitSite: usaidizi, malipo, matengenezo, na kuwafanya wateja wajisikie kuridhika.
 
-## Popo Tulipoacha
+## Popo Tulipoacha {#where-we-left-off}
 
 FitSite imefika na wateja wanajiandikisha. Sasa unahitaji kuendesha shughuli hii kwa njia endelevu.
 
-## Shughuli za Kila Siku
+## Shughuli za Kila Siku {#daily-operations}
 
-### Ufuatiliaji (Monitoring)
+### Ufuatiliaji (Monitoring) {#monitoring}
 
 Angalia hizi kila siku (au weka mifumo ya taarifa za dharura):
 
@@ -22,7 +22,7 @@ Angalia hizi kila siku (au weka mifumo ya taarifa za dharura):
 - **Malipo Yaliyoshindikana**: Je, kuna malipo yaliyoshindikana yanayohitaji uangalizi?
 - **Ombi la Usaidizi**: Je, kuna maswali ya wateja ambayo hayajajibiwa?
 
-### Usaidizi kwa Wateja (Customer Support)
+### Usaidizi kwa Wateja (Customer Support) {#customer-support}
 
 Kuzingatia eneo lako (niche) ni faida hapa. Kwa kuwa wateja wako wote ni studios za mazoezi, utaona maswali yanayojirudia mara kwa mara:
 
@@ -36,7 +36,7 @@ Kuzingatia eneo lako (niche) ni faida hapa. Kwa kuwa wateja wako wote ni studios
 
 Jenga maktaba yako ya maarifa (iliyokuwa imefanywa katika Somo la 8) kuzunguka maswali haya yanayojirudia. Kila tiketi ya usaidizi ambayo inaweza kuwa makala ya maktaba ya maarifa ni ishara ya kuandika makala hiyo.
 
-### Viwango vya Usaidizi (Support Tiers)
+### Viwango vya Usaidizi (Support Tiers) {#support-tiers}
 
 Unapokua, panga usaidizi kulingana na mpango:
 
@@ -48,9 +48,9 @@ Unapokua, panga usaidizi kulingana na mpango:
 
 [Addon ya Support Tickets](/addons/support-tickets) inaweza kukusaidia kudhibiti maombi ya usaidizi ndani ya platform.
 
-## Shughuli za Malipo (Billing Operations)
+## Shughuli za Malipo (Billing Operations) {#billing-operations}
 
-### Malipo Yanayojirudia (Recurring Payments)
+### Malipo Yanayojirudia (Recurring Payments) {#recurring-payments}
 
 Ultimate Multisite inashughulikia malipo yanayojirudia kiotomatiki kupitia lango lako la malipo. Kazi yako ni kufuatilia:
 
@@ -58,7 +58,7 @@ Ultimate Multisite inashughulikia malipo yanayojirudia kiotomatiki kupitia lango
 - **Dunning**: Weka mfumo wa kujaribu upya kiotomatiki kupitia lango lako la malipo (Stripe inashughulikia hili vizuri)
 - **Ombi la Kufuta**: Elewa kwa nini wateja wanatoka. Kila kufuta ni maoni.
 
-### Kudhibiti Uanachama (Managing Memberships)
+### Kudhibiti Uanachama (Managing Memberships) {#managing-memberships}
 
 Nenda kwenye **Ultimate Multisite > Memberships** ili:
 
@@ -69,13 +69,13 @@ Nenda kwenye **Ultimate Multisite > Memberships** ili:
 
 Tazama [Managing Memberships](/user-guide/administration/managing-memberships) kwa rejea kamili.
 
-### Anwani za Malipo (Invoicing)
+### Anwani za Malipo (Invoicing) {#invoicing}
 
 Hakikisha anwani za malipo zinatolewa kwa usahihi kwa kila malipo. Wateja wanaweza kuhitaji anwani za malipo kwa ajili ya kuripoti matumizi ya biashara. Tazama [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Matengenezo ya Platform
+## Matengenezo ya Platform {#platform-maintenance}
 
-### Updates za WordPress na Plugin
+### Updates za WordPress na Plugin {#wordpress-and-plugin-updates}
 
 Kama msimamizi wa mtandao, wewe ni anayehusika na:
 
@@ -88,14 +88,14 @@ Kama msimamizi wa mtandao, wewe ni anayehusika na:
 Update iliyoharibika inathiri kila tovuti ya mteja kwenye mtandao wako. Daima jaribu updates kwenye nakala ya majaribio ya mtandao wako kwanza.
 :::
 
-### Usalama (Security)
+### Usalama (Security) {#security}
 
 - Weka programu zote zikiwa za kisasa
 - Tumia nywila imara na uthibitisho wa hatua mbili (two-factor authentication) kwa akaunti za admin
 - Fuatilia shughuli yoyote ya mashaka
 - Kuwa na mpango kwa ajili ya matukio ya usalama
 
-### Utendaji (Performance)
+### Utendaji (Performance) {#performance}
 
 Unapokuwa mtandao wako unakua, fuatilia:
 
@@ -105,9 +105,9 @@ Unapokuwa mtandao wako unakua, fuatilia:
 
 Fikiria kutekeleza caching (page cache, object cache) na CDN ikiwa bado hujafanya hivyo. [Cloudflare integration](/user-guide/host-integrations/cloudflare) inashughulikia sehemu kubwa ya hili.
 
-## Kudhibiti Mzunguko wa Mteja (Customer Lifecycle Management)
+## Kudhibiti Mzunguko wa Mteja (Customer Lifecycle Management) {#customer-lifecycle-management}
 
-### Kupunguza Churn (Kupoteza Wateja)
+### Kupunguza Churn (Kupoteza Wateja) {#reducing-churn}
 
 Churn ni asilimia ya wateja wanaowakataa huduma kila mwezi. Kwa biashara ya usajili, kupunguza churn ni muhimu kama kupata wateja wapya.
 
@@ -119,7 +119,7 @@ Churn ni asilimia ya wateja wanaowakataa huduma kila mwezi. Kwa biashara ya usaj
 - Walipata njia mbadala ya bei nafuu → imarisha thamani ya eneo lako (niche)
 - Biashara yao ilifungwa → haikuepukika, lakini fuatilia hii kivyake
 
-### Kuhamasisha Kuboresha (Encouraging Upgrades)
+### Kuhamasisha Kuboresha (Encouraging Upgrades) {#encouraging-upgrades}
 
 Wateja waliopo kwenye Starter ambao wanafanikiwa wanapaswa kuhamasishwa kuboresha:
 
@@ -127,7 +127,7 @@ Wateja waliopo kwenye Starter ambao wanafanikiwa wanapaswa kuhamasishwa kuboresh
 - Tuma barua pepe zilizolengwa zinazoangazia vipengele vya mpango wa Growth ambavyo wanapofaidika
 - Onyesha kile ambacho wateja wa Growth/Pro wamejenga
 
-### Kampeni za Kurudisha Wateja (Win-Back Campaigns)
+### Kampeni za Kurudisha Wateja (Win-Back Campaigns) {#win-back-campaigns}
 
 Wakati mteja anafuta:
 
@@ -135,30 +135,30 @@ Wakati mteja anafuta:
 2. Shughulikia wasiwasi wao ikiwezekana
 3. Toa punguzo la bei ili warudi (baada ya siku 30-60 za kufuta)
 
-## Ratiba za Wiki na Mwezi
+## Ratiba za Wiki na Mwezi {#weekly-and-monthly-routines}
 
-### Kila Wiki
+### Kila Wiki {#weekly}
 
 - Pitia wateja wapya na wale waliokata huduma
 - Jibu tiketi zote za usaidizi zilizofunguliwa
 - Angalia utendaji wa platform na uptime
 - Pitia malipo yoyote yaliyoshindikana
 
-### Kila Mwezi
+### Kila Mwezi {#monthly}
 
 - Changanua vipimo muhimu (MRR, churn, wateja wapya, upgrades)
 - Tumia updates za WordPress na plugin (baada ya jaribio la staging)
 - Pitia na booresha maktaba ya maarifa kulingana na mifumo ya usaidizi
 - Tuma gazeti la habari au taarifa kwa wateja (vipengele vipya, vidokezo, habari za biashara ya mazoezi)
 
-### Kila Robo (Quarterly)
+### Kila Robo (Quarterly) {#quarterly}
 
 - Pitia bei kulinganisha na washindani na maoni ya wateja
 - Tathmini miundo ya templates -- je, inahitaji kufanywa upya?
 - Tathmini uwezo wa hosting -- je, unahitaji kupanua?
 - Pitia na booresha kuanzisha (onboarding) kulingana na data ya uanzishaji
 
-## Niliyojenga Somo Hili
+## Niliyojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Utaratibu wa ufuatiliaji wa kila siku** kwa uptime, usajili, malipo, na usaidizi
 - **Muundo wa usaidizi wenye viwango** unaolingana na viwango vya mpango

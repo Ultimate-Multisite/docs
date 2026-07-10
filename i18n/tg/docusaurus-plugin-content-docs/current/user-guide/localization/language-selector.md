@@ -3,7 +3,7 @@ title: Интелектуалӣ
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Индексатор забон
+# Индексатор забон {#language-selector}
 
 Ин хусусият аз аддоси **Language Selector** пешниҳод мешавад.
 

@@ -3,11 +3,11 @@ title: Stadi Zinazojitambua Kulingana na Mandhari
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Stadi Zinazojua Mandhari
+# Stadi Zinazojua Mandhari {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 inatuma stadi nne mpya zilizojengwa ndani na zinazojua mandhari (theme-aware) ambazo hurekebishwa kiotomatiki kulingana na mandhari yako ya WordPress linalotumika. Stadi hizi hutoa mwongozo na uwezo maalum ulioundwa kulingana na muundo na vipengele vya mandhari yako.
 
-## Stadi Zinazojua Mandhari ni Nini?
+## Stadi Zinazojua Mandhari ni Nini? {#what-are-theme-aware-skills}
 
 Stadi zinazojua mandhari ni maktaba za maarifa na seti za zana ambazo msaidizi wa AI anazochagua kiotomatiki kulingana na mandhari ya WordPress linalotumika kwenye tovuti yako. Unapobadilisha mandhari, stadi zinazopatikana za msaidizi huwekwa masasisho kiotomatiki — hakuna haja ya kuweka mipangilio ya mikono.
 
@@ -18,9 +18,9 @@ Kila stadi inajumuisha:
 - **Mifano ya kubadilisha** — vipande vya code na mifumo ya mipangilio kwa kazi za kawaida
 - **Mazoea bora** — mapendekezo kwa muundo na mtiririko wa kazi wa mandhari
 
-## Stadi Zinazojua Mandhari Zinazopatikana
+## Stadi Zinazojua Mandhari Zinazopatikana {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Inatumika kwa:** Mandhari yanayotumia muundo wa blocks wa WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Stadi ya Block Themes inatoa mwongozo kuhusu:
 
 **Inawashughulisha kiotomatiki wakati:** Mandhari yako linalotumika ni block theme (linasaidia kipengele cha `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Inatumika kwa:** Mandhari za jadi za WordPress zinazotumia PHP templates na classic editor.
 
@@ -48,7 +48,7 @@ Stadi ya Classic Themes inatoa mwongozo kuhusu:
 
 **Inawashughulisha kiotomatiki wakati:** Mandhari yako linalotumika ni mandhari ya jadi (siyo ya blocks).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Inatumika kwa:** Tovuti zinazotumia plugin ya Kadence Blocks kwa ajili ya muundo wa blocks wa hali ya juu.
 
@@ -62,7 +62,7 @@ Stadi ya Kadence Blocks inatoa mwongozo kuhusu:
 
 **Inawashughulisha kiotomatiki wakati:** Plugin ya Kadence Blocks inatumika kwenye tovuti yako.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Inatumika kwa:** Tovuti zinazotumia mandhari ya Kadence kwa ajili ya muundo na kubadilisha kwa blocks.
 
@@ -76,15 +76,15 @@ Stadi ya Kadence Theme inatoa mwongozo kuhusu:
 
 **Inawashughulisha kiotomatiki wakati:** Mandhari ya Kadence ni mandhari yako linalotumika.
 
-## Jinsi Stadi Zinavyochaguliwa
+## Jinsi Stadi Zinavyochaguliwa {#how-skills-are-selected}
 
 Msaidizi anitambua kiotomatiki mandhari yako linalotumika na plugins zilizosakinishwa kwenye kila ujumbe. Ikiwa stadi inayolingana na mandhari inapatikana, inapakuliwa kwenye muktadha wa msaidizi kiotomatiki. Huna haja ya kuwezesha au kubadilisha stadi kwa mikono.
 
-### Stadi Nyingi
+### Stadi Nyingi {#multiple-skills}
 
 Ikiwa stadi nyingi zinatumika kwenye tovuti yako (kwa mfano, ikiwa una Kadence Blocks na Kadence Theme zote zimefunguliwa), msaidizi anapata ufikiaji wa stadi zote zinazohitajika na anaweza kurejelea mwongozo kutoka kila moja.
 
-### Kubadilisha Mandhari
+### Kubadilisha Mandhari {#switching-themes}
 
 Unapobadilisha mandhari lako linalotumika, stadi zinazopatikana za msaidizi huwekwa masasisho kiotomatiki kwenye ujumbe ujao. Kwa mfano:
 
@@ -92,11 +92,11 @@ Unapobadilisha mandhari lako linalotumika, stadi zinazopatikana za msaidizi huwe
 2. Unabadilisha kwenda mandhari ya jadi.
 3. Kwenye ujumbe wako ujao, stadi ya **Classic Themes** inapakuliwa kiotomatiki, na stadi ya **Block Themes** haipo tena.
 
-## Kutumia Stadi Zinazojua Mandhari
+## Kutumia Stadi Zinazojua Mandhari {#using-theme-aware-skills}
 
 Ili kutumia stadi inayojua mandhari, elezea tu unachotaka kufanya kwenye kiolesura cha chat. Msaidizi atarejelea mwongozo wa stadi inayofaa kiotomatiki.
 
-### Mifano ya Maagizo (Prompts)
+### Mifano ya Maagizo (Prompts) {#example-prompts}
 
 **Kwa Block Themes:**
 > "Tengeneza sehemu ya hero na picha ya background na maandishi yaliyotengwa katikati kwa kutumia block patterns."

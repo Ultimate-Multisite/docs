@@ -4,20 +4,20 @@ title: 过滤器 - secure_auth_redirect
 sidebar_label: secure_auth_redirect
 _i18n_hash: 34c76378864becbfb9c09111120607d3
 ---
-# Filter: secure_auth_redirect
+# Filter: secure_auth_redirect {#filter-secureauthredirect}
 
 过滤是否使用安全身份验证重定向。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $secure | `bool` | 是否使用安全身份验证重定向。默认值为 false。 |
 
-### Since
+### Since {#since}
 
 - 3.1.0
 
-### Source
+### Source {#source}
 
 在 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L190) 的第 190 行定义

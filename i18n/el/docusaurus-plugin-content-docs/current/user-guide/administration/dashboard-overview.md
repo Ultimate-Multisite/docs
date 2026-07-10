@@ -3,11 +3,11 @@ title: Επισκόπηση Πίνακα Ελέγχου
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Επισκόπηση του Πίνακα Ελέγχου
+# Επισκόπηση του Πίνακα Ελέγχου {#dashboard-overview}
 
 Το Ultimate Multisite διαθέτει έναν ειδικό **Πίνακα Ελέγχου** στο μενού Ultimate Multisite, ενώ προσθέτει και widgets στον Πίνακα Ελέγχου Δικτύου. Αυτό το άρθρο καλύπτει τι θα δείτε και στα δύο σημεία.
 
-## Ο Πίνακας Ελέγχου Δικτύου
+## Ο Πίνακας Ελέγχου Δικτύου {#the-network-dashboard}
 
 Το Ultimate Multisite εισάγει χρήσιμα widgets στον πίνακα ελέγχου επιπέδου δικτύου που βρίσκεται στο **Οι Ιστότοποί μου → Διαχείριση Δικτύου → Πίνακας Ελέγχου**.
 
@@ -35,7 +35,7 @@ _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 
 ![Widget Νέων](/img/admin/network-dashboard-news.png)
 
-## Ο Πίνακας Ελέγχου του Ultimate Multisite
+## Ο Πίνακας Ελέγχου του Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Ενώ ο πίνακας ελέγχου δικτύου παρουσιάζει συνολικές πληροφορίες για το δίκτυο, ο πίνακας ελέγχου του Ultimate Multisite (στο ανώτερο επίπεδο του μενού Ultimate Multisite) παρουσιάζει πληροφορίες για την υπηρεσία.
 

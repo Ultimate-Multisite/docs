@@ -4,13 +4,13 @@ title: Φίλτρο - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Φιλτράρει τη διεύθυνση ανακατεύθυνσης (redirect URL) αφού γίνει ένα domínio κύριο.
 
 Επιτρέπει στους developers να προσαρμόσουν σε ποια διεύθυνση ανακατεύθνονται οι χρήστες αφού καταφέρουν να ορίσουν ένα domínio ως κύριο. Προε default, η ανακατεύθυνση γίνεται στην τρέχουσα URL της κύριας σελίδας, ή στην admin URL της σελίδας που τροποποιείται.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Όνομα | Τύπος | Περιγραφή |
 |------|------|-------------|
@@ -19,12 +19,12 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | Το αντικείμενο domínio που έγινε κύριο. |
 | $old_primary_domains | `array` | Πίνακας (array) των IDs των τομέων που ήταν προηγουμένως κύριοι. |
 
-### Από
+### Από {#since}
 
 - 2.0.0
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) στην γραμμή 639
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Τη φιλτραρισμένη διεύθυνση ανακατεύθυνσης.

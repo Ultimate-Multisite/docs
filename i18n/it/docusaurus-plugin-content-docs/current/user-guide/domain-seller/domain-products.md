@@ -3,11 +3,11 @@ title: Prodotti e Prezzi per Dominio
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Prodotti e Prezzi dei Domini
+# Prodotti e Prezzi dei Domini {#domain-products-and-pricing}
 
 I prodotti per i domini sono il modo in cui gestisci i prezzi, i TLD, la privacy WHOIS e la selezione del provider. Ogni prodotto per dominio è un prodotto standard di Ultimate Multisite con una scheda aggiuntiva chiamata **Domain Settings**.
 
-## Creare un prodotto per dominio
+## Creare un prodotto per dominio {#creating-a-domain-product}
 
 1. Vai su **Network Admin › Ultimate Multisite › Products**
 2. Clicca **Add New**
@@ -17,13 +17,13 @@ I prodotti per i domini sono il modo in cui gestisci i prezzi, i TLD, la privacy
 
 I prodotti per dominio appaiono con un badge viola **Domain** nell'elenco dei prodotti e possono essere filtrati utilizzando la scheda **Domain Products**.
 
-## Scheda impostazioni dominio
+## Scheda impostazioni dominio {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Seleziona quale registrar gestisce l'iscrizione per questo prodotto. Di default, viene utilizzato il **Default provider** globale impostato nelle impostazioni di Domain Seller.
 
-### TLD supportati
+### TLD supportati {#supported-tlds}
 
 Lascia vuoto per creare un **prodotto "catch-all"** che si applica a tutti i TLD non corrispondenti a un altro prodotto.
 
@@ -31,7 +31,7 @@ Inserisci un elenco di TLD separati da virgole (es. `.com, .net, .org`) per crea
 
 **Come funziona la corrispondenza dei prodotti:** Quando un cliente cerca un dominio, l'addon seleziona il prodotto corrispondente più specifico. Un prodotto con `.com` nella sua lista TLD ha la precedenza su un prodotto catch-all. Se nessun prodotto specifico per TLD corrisponde, viene utilizzato il catch-all. Se non esistono prodotti, la ricerca del dominio non viene visualizzata.
 
-### Tipo di markup
+### Tipo di markup {#markup-type}
 
 Tre modalità controllano come viene calcolato il tuo prezzo di vendita a partire dal costo all'ingrosso:
 
@@ -41,11 +41,11 @@ Tre modalità controllano come viene calcolato il tuo prezzo di vendita a partir
 | **Fixed markup** | Aggiunge un importo fisso in dollari. Un markup di $5 su un dominio di $10 dà $15. |
 | **Fixed price** | Ignora completamente il costo all'ingrosso. Addebita sempre l'importo che inserisci. |
 
-### Prezzi introduttivi
+### Prezzi introduttivi {#introductory-pricing}
 
 Abilita questa opzione per offrire un prezzo scontato per il primo anno. Imposta un **Introductory price** separato (il prezzo per l'anno 1) insieme al regolare **Renewal price** (anno 2+). Il cliente visualizza entrambi i prezzi durante il checkout, così sa cosa aspettarsi al rinnovo.
 
-### Privacy WHOIS
+### Privacy WHOIS {#whois-privacy}
 
 Controlla se viene offerta la protezione della privacy WHOIS per i domini registrati tramite questo prodotto.
 
@@ -59,7 +59,7 @@ Per Namecheap, la privacy WHOIS utilizza WhoisGuard (sempre gratuita). Per OpenS
 
 ---
 
-## Importazione e sincronizzazione TLD
+## Importazione e sincronizzazione TLD {#tld-import-and-sync}
 
 I prodotti per i domini visualizzano i prezzi all'ingrosso in tempo reale recuperati dal provider collegato. Per farlo, è necessario importare i TLD.
 
@@ -70,7 +70,7 @@ Dopo una sincronizzazione, vai sulla scheda Domain Settings di qualsiasi prodott
 
 ---
 
-## Rinnovo automatico
+## Rinnovo automatico {#auto-renewal}
 
 I rinnovi dei domini sono collegati allo stato di iscrizione del cliente:
 
@@ -90,7 +90,7 @@ ID dei modelli email per gli eventi del ciclo di vita del dominio:
 
 ---
 
-## Admin: Registrazione manuale del dominio
+## Admin: Registrazione manuale del dominio {#admin-manual-domain-registration}
 
 Per registrare un dominio per conto di un cliente senza che debba passare dal checkout:
 

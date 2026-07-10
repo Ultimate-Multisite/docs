@@ -3,7 +3,7 @@ title: சமூகம்
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite சமூகத்தில் இணைவது எப்படி
+# Ultimate Multisite சமூகத்தில் இணைவது எப்படி {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite சமூகம் என்பது மற்ற Ultimate Multisite பயனர்களுடன் தொடர்பில் இருந்து, குறிப்புகள், அனுபவங்கள் மற்றும் பலவற்றைப் பகிர்ந்து கொள்ளக்கூடிய ஒரு இடம். Ultimate Multisite சமூகத்தை அணுக https://community.ultimatemultisite.com/home க்குச் செல்லுங்கள்.
 

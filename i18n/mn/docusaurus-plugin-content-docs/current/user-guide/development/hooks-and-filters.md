@@ -3,7 +3,7 @@ title: Хук ба Шүүлтүүр
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks ба filters
+# Ultimate Multisite Hooks ба filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite нь олон функц болон өгөгдлийн хайлт (database queries)-аар бүтсэн юм. Энэ нь таны байгаа функцуудыг өөрчлөх эсвэл шинэ код нэмэх боломжийг олгодог hooks ба filters-ийг агуулдаг.
 

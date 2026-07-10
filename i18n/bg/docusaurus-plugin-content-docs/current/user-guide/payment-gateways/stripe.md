@@ -3,19 +3,19 @@ title: Настройване на Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Настройване на Stripe Gateway (v2)
+# Настройване на Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ВАЖНО ЗАБЕЛЕЖКА: Тази статия се отнася до Ultimate Multisite версия 2.x.**_
 
 Можете да активирате до четири метода на плащане в страницата за настройки на плащанията ни: Stripe, Stripe Checkout, PayPal и ръчно (Manual). В тази статия ще видим как да интегрирате с **Stripe**.
 
-## Активиране на Stripe
+## Активиране на Stripe {#enabling-stripe}
 
 За да активирате Stripe като наличен платежен шлюз за вашата мрежа (network), отидете на **Ultimate Multisite > Settings > Payments** и отбелете превключвателя до **Stripe** или **Stripe Checkout** в секцията Active Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe срещу Stripe Checkout:
+### Stripe срещу Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Този метод ще покаже място за въвеждане на номера на кредитна карта по време на процеса на плащане (checkout).
 
@@ -47,7 +47,7 @@ _**Забележка:** можете да активирате **Sandbox mode**
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Настройване на Stripe Webhook
+## Настройване на Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe изпраща webhook събития, които уведомяват Ultimate Multisite всеки път, когато възникне събитие във **вашия Stripe account**.
 

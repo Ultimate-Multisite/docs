@@ -1,97 +1,123 @@
 ---
-title: Cloudflare Integration
+title: אינטגרציית Cloudflare
 sidebar_position: 16
-_i18n_hash: 41bd975db7c89a129f5f880b439a8f2f
+_i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# אינטגרציה עם Cloudflare
+# שילוב Cloudflare {#cloudflare-integration}
 
-## סקירה כללית
-Cloudflare היא ספקית מובילה של רשת אספקת תוכן (CDN) ושירותי אבטחה, המסייעת להגן על אתרים ולהאיץ אותם. אינטגרציה זו מאפשרת ניהול אוטומטי של דומיינים בין Ultimate Multisite ל-Cloudflare, במיוחד עבור התקנות multisite מבוססות תת-דומיין.
+## סקירה כללית {#overview}
+Cloudflare היא רשת אספקת תוכן (CDN) וספקית אבטחה מובילה שעוזרת להגן על אתרים ולהאיץ אותם. שילוב זה מאפשר ניהול דומיינים אוטומטי בין Ultimate Multisite לבין Cloudflare, במיוחד עבור התקנות multisite בתת־דומיינים.
 
-## תכונות
-- יצירה אוטומטית של תת-דומיינים ב-Cloudflare
-- תמיכה בתת-דומיינים עם proxy
+## תכונות {#features}
+- יצירת תת־דומיינים אוטומטית ב-Cloudflare
+- תמיכה בתת־דומיינים דרך פרוקסי
 - ניהול רשומות DNS
-- תצוגה משופרת של רשומות DNS בממשק הניהול של Ultimate Multisite
+- תצוגת רשומות DNS משופרת באזור הניהול של Ultimate Multisite
 
-## דרישות
-יש להגדיר את הקבועים הבאים בקובץ `wp-config.php` שלכם:
+## דרישות {#requirements}
+יש להגדיר את הקבועים הבאים בקובץ `wp-config.php` שלך:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## הוראות הגדרה
+## הוראות התקנה {#setup-instructions}
 
-### 1. קבלת מפתח ה-API של Cloudflare
+### 1. קבלת מפתח API של Cloudflare {#1-get-your-cloudflare-api-key}
 
-1. התחברו ללוח הבקרה של Cloudflare
-2. עברו ל-"My Profile" (לחצו על כתובת האימייל שלכם בפינה הימנית העליונה)
-3. בחרו "API Tokens" מהתפריט
-4. צרו API token חדש עם ההרשאות הבאות:
-   - Zone.Zone: Read
-   - Zone.DNS: Edit
-5. העתיקו את ה-API token
+1. התחבר אל לוח הבקרה שלך ב-Cloudflare
+2. עבור אל "הפרופיל שלי" (לחץ על כתובת האימייל שלך בפינה הימנית העליונה)
+3. בחר "API Tokens" מהתפריט
+4. צור אסימון API חדש עם ההרשאות הבאות:
+   - Zone.Zone: קריאה
+   - Zone.DNS: עריכה
+5. העתק את אסימון ה-API שלך
 
-### 2. קבלת ה-Zone ID
+### 2. קבלת מזהה ה-Zone שלך {#2-get-your-zone-id}
 
-1. בלוח הבקרה של Cloudflare, בחרו את הדומיין שברצונכם להשתמש בו
-2. ה-Zone ID מוצג בלשונית "Overview", בסרגל הצד הימני תחת "API"
-3. העתיקו את ה-Zone ID
+1. בלוח הבקרה שלך ב-Cloudflare, בחר את הדומיין שבו ברצונך להשתמש
+2. מזהה ה-Zone גלוי בלשונית "סקירה כללית", בסרגל הצד הימני תחת "API"
+3. העתק את מזהה ה-Zone
 
-### 3. הוספת הקבועים ל-wp-config.php
+### 3. הוספת קבועים ל-wp-config.php {#3-add-constants-to-wp-configphp}
 
-הוסיפו את הקבועים הבאים לקובץ `wp-config.php` שלכם:
+הוסף את הקבועים הבאים לקובץ `wp-config.php` שלך:
 
 ```php
 define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. הפעלת האינטגרציה
+### 4. הפעלת השילוב {#4-enable-the-integration}
 
-1. בממשק הניהול של WordPress, עברו אל Ultimate Multisite > Settings
-2. נווטו ללשונית "Domain Mapping"
-3. גללו למטה אל "Host Integrations"
-4. הפעילו את אינטגרציית Cloudflare
-5. לחצו על "Save Changes"
+1. באזור הניהול של WordPress, עבור אל Ultimate Multisite > הגדרות
+2. נווט ללשונית "מיפוי דומיינים"
+3. גלול מטה אל "שילובי מארחים"
+4. הפעל את השילוב עם Cloudflare
+5. לחץ על "שמור שינויים"
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
-### ניהול תת-דומיינים
+### ניהול תת־דומיינים {#subdomain-management}
 
-כאשר אתר חדש נוצר בהתקנת multisite מבוססת תת-דומיין:
+כאשר נוצר אתר חדש בהתקנת multisite בתת־דומיינים:
 
-1. האינטגרציה שולחת בקשה ל-API של Cloudflare להוספת רשומת CNAME עבור תת-הדומיין
-2. תת-הדומיין מוגדר כברירת מחדל לעבור דרך ה-proxy של Cloudflare (ניתן לשנות זאת באמצעות filters)
-3. כאשר אתר נמחק, האינטגרציה תסיר את תת-הדומיין מ-Cloudflare
+1. השילוב שולח בקשה אל ה-API של Cloudflare כדי להוסיף רשומת CNAME עבור תת־הדומיין
+2. תת־הדומיין מוגדר כברירת מחדל לעבור דרך פרוקסי של Cloudflare (ניתן לשנות זאת באמצעות מסננים)
+3. כאשר אתר נמחק, השילוב יסיר את תת־הדומיין מ-Cloudflare
 
-### תצוגת רשומות DNS
+### תצוגת רשומות DNS {#dns-record-display}
 
-האינטגרציה משפרת את תצוגת רשומות ה-DNS בממשק הניהול של Ultimate Multisite על ידי:
+השילוב משפר את תצוגת רשומות ה-DNS באזור הניהול של Ultimate Multisite על ידי:
 
 1. שליפת רשומות DNS ישירות מ-Cloudflare
-2. הצגה האם רשומות עוברות דרך proxy או לא
+2. הצגה אם הרשומות עוברות דרך פרוקסי או לא
 3. הצגת מידע נוסף על רשומות ה-DNS
 
-## הערות חשובות
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
-בעקבות עדכונים אחרונים של Cloudflare, תמיכה ב-proxy עבור wildcard זמינה כעת לכל הלקוחות. משמעות הדבר היא שאינטגרציית Cloudflare פחות קריטית להתקנות multisite מבוססות תת-דומיין מאשר בעבר, מכיוון שניתן פשוט להגדיר רשומת DNS מסוג wildcard ב-Cloudflare.
+**Cloudflare Custom Hostnames** (נקראה בעבר "Cloudflare for SaaS") היא תכונה של Cloudflare שמאפשרת ללקוחות שלך להשתמש בדומיינים שלהם עם SSL ברשת ה-multisite שלך. זו הגישה המומלצת להתקנות multisite עם מיפוי דומיינים שמשתמשות ב-Cloudflare, מכיוון ש-Cloudflare מנהלת באופן אוטומטי את הנפקת וחידוש תעודות ה-SSL עבור כל דומיין מותאם אישית.
 
-## פתרון בעיות
+### במה היא שונה מהשילוב הסטנדרטי של Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
-### בעיות חיבור ל-API
-- ודאו שה-API token שלכם נכון ויש לו את ההרשאות הנדרשות
-- בדקו שה-Zone ID נכון
-- ודאו שלחשבון ה-Cloudflare שלכם יש את ההרשאות הנדרשות
+| | שילוב סטנדרטי | Cloudflare Custom Hostnames |
+|---|---|---|
+| **מטרה** | יצירה אוטומטית של רשומות DNS עבור תת־דומיינים | מאפשרת דומיינים מותאמים אישית (ממופים) עם SSL בניהול Cloudflare |
+| **המתאים ביותר עבור** | multisite בתת־דומיינים | multisite עם מיפוי דומיינים |
+| **SSL** | מטופל בנפרד | מנוהל אוטומטית על ידי Cloudflare |
 
-### תת-דומיין לא נוסף
-- בדקו את הלוגים של Ultimate Multisite לאיתור הודעות שגיאה
-- ודאו שתת-הדומיין לא נוסף כבר ל-Cloudflare
-- ודאו שתוכנית ה-Cloudflare שלכם תומכת במספר רשומות ה-DNS שאתם יוצרים
+### הגדרת Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
-### בעיות proxy
-- אם אינכם רוצים שתת-דומיינים יעברו דרך proxy, תוכלו להשתמש ב-filter בשם `wu_cloudflare_should_proxy`
-- חלק מהתכונות עשויות לא לעבוד כראוי כאשר הן עוברות דרך proxy (למשל, פונקציות מסוימות בממשק הניהול של WordPress)
-- שקלו להשתמש ב-Page Rules של Cloudflare כדי לעקוף את ה-cache עבור דפי ניהול
+1. בלוח הבקרה שלך ב-Cloudflare, פתח את ה-zone עבור הדומיין הראשי שלך.
+2. עבור אל **SSL/TLS > Custom Hostnames**.
+3. הוסף מקור גיבוי שמצביע אל כתובת ה-IP או שם המארח של השרת שלך.
+4. עבור כל דומיין לקוח שממופה ב-Ultimate Multisite, הוסף רשומת Custom Hostname ב-Cloudflare. ניתן להפוך שלב זה לאוטומטי באמצעות ה-API של Cloudflare.
+5. Cloudflare מנפיקה ומחדשת תעודות TLS עבור כל שם מארח מותאם אישית באופן אוטומטי לאחר שה-DNS של הלקוח מופנה אל הרשת שלך.
+
+לעיון מלא ב-API, ראה [תיעוד Cloudflare Custom Hostnames](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/domain-support/).
+
+:::note עדכון מונחים
+החל מ-Ultimate Multisite v2.6.1, תכונה זו נקראת **Cloudflare Custom Hostnames** בכל הגדרות ותוויות התוסף. גרסאות מוקדמות יותר השתמשו בשם "Cloudflare for SaaS", שהוא שם המוצר הבסיסי של Cloudflare.
+:::
+
+## הערות חשובות {#important-notes}
+
+בעקבות העדכונים האחרונים של Cloudflare, פרוקסי בתווים כלליים זמין כעת לכל הלקוחות. המשמעות היא ששילוב ה-DNS הסטנדרטי של Cloudflare פחות קריטי להתקנות multisite בתת־דומיינים מבעבר, מכיוון שניתן פשוט להגדיר רשומת DNS בתווים כלליים ב-Cloudflare.
+
+## פתרון בעיות {#troubleshooting}
+
+### בעיות חיבור ל-API {#api-connection-issues}
+- ודא שאסימון ה-API שלך נכון ושיש לו את ההרשאות הנדרשות
+- בדוק שמזהה ה-Zone שלך נכון
+- ודא של-Account שלך ב-Cloudflare יש את ההרשאות הנדרשות
+
+### תת־דומיין לא נוסף {#subdomain-not-added}
+- בדוק את יומני Ultimate Multisite עבור הודעות שגיאה כלשהן
+- ודא שתת־הדומיין עדיין לא נוסף ל-Cloudflare
+- ודא שהתוכנית שלך ב-Cloudflare תומכת במספר רשומות ה-DNS שאתה יוצר
+
+### בעיות פרוקסי {#proxying-issues}
+- אם אינך רוצה שתת־דומיינים יעברו דרך פרוקסי, ניתן להשתמש במסנן `wu_cloudflare_should_proxy`
+- ייתכן שחלק מהתכונות לא יעבדו כראוי כאשר הן עוברות דרך פרוקסי (לדוגמה, פונקציות ניהול מסוימות של WordPress)
+- שקול להשתמש ב-Page Rules של Cloudflare כדי לעקוף את המטמון עבור דפי ניהול

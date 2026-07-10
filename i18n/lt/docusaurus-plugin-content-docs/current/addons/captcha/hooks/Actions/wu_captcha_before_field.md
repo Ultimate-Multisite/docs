@@ -1,0 +1,22 @@
+---
+id: wu_captcha_before_field
+title: Veiksmas - wu_captcha_before_field
+sidebar_label: wu_captcha_before_field
+_i18n_hash: cc5a0e4190ba583d6677451cb3e43234
+---
+# Veiksmas: wu_captcha_before_field {#action-wucaptchabeforefield}
+
+Suveikia prieš atvaizduojant captcha lauką.
+
+## Parametrai {#parameters}
+
+| Pavadinimas | Tipas | Aprašymas |
+|------|------|-------------|
+| $args | `array` | Atvaizdavimo argumentai. |
+
+### Nuo {#since}
+
+- 1.2.0
+### Šaltinis {#source}
+
+Apibrėžta [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L127) 127 eilutėje

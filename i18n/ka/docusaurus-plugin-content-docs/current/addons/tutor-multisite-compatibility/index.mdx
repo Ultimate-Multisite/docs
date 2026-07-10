@@ -1,0 +1,116 @@
+---
+title: Tutor-ის Multisite-თან თავსებადობა
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress plugin, რომელიც ამატებს თავსებადობის შესწორებებს Tutor LMS-ისთვის multisite გარემოებში.
+
+## აღწერა {#description}
+
+ეს plugin უზრუნველყოფს აუცილებელ თავსებადობის შესწორებებს Tutor LMS-ის გასაშვებად WordPress multisite ქსელებში. ის ამუშავებს მომხმარებლის ჩარიცხვას, ინსტრუქტორების მართვას, კურსების შეზღუდვებს და სხვა multisite-სპეციფიკურ ფუნქციონალს.
+
+## ფუნქციები {#features}
+
+- **მონაცემთა ბაზის ცხრილების მართვა**: ავტომატურად აღმოაჩენს და ქმნის გამოტოვებულ Tutor LMS ცხრილებს, რომელთა შექმნაც ვერ ხერხდება multisite foreign key შეზღუდვების გამო
+- **Multisite მომხმარებლის ჩარიცხვა**: მორგებული AJAX დამმუშავებლები ქსელის საიტებს შორის მომხმარებლის ჩარიცხვის სამართავად
+- **ინსტრუქტორის როლის მართვა**: ინსტრუქტორის როლის ავტომატური მინიჭება და მართვა multisite გარემოებში
+- **კურსების შეზღუდვები**: ინტეგრაცია Ultimate Multisite-თან კურსებისა და გაყიდვების ძაბრების შექმნის ლიმიტების სამართავად საიტის გეგმების მიხედვით
+- **მორგებული ადმინისტრატორის ხედები**: multisite-ისთვის გათვალისწინებული ინსტრუქტორების სია და მართვის ინტერფეისი
+- **ადმინისტრატორის ხელსაწყოები**: მონაცემთა ბაზის მართვის ინტერფეისი ქსელისა და საიტის ადმინისტრატორებისთვის
+
+## მოთხოვნები {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (ავტომატურად იძულებით მოწმდება `Requires Plugins` header-ის მეშვეობით)
+- WordPress Multisite ინსტალაცია
+- Ultimate Multisite plugin (კურსების შეზღუდვების ფუნქციონალისთვის)
+
+## ინსტალაცია {#installation}
+
+1. ატვირთეთ plugin-ის ფაილები `/wp-content/plugins/tutor-multisite-compatibility/`-ში
+2. დარწმუნდით, რომ Tutor LMS დაინსტალირებული და გააქტიურებულია
+3. გააქტიურეთ plugin WordPress-ის 'Plugins' მენიუდან
+4. plugin ავტომატურად ინტეგრირდება Tutor LMS-თან
+
+## ფაილების სტრუქტურა {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## ფუნქციონალი, რომელიც გადმოტანილია MU plugin-იდან {#functionality-moved-from-mu-plugin}
+
+ეს plugin შეიცავს ფუნქციონალს, რომელიც ადრე იყო `wp-content/mu-plugins/daves.php`-ში:
+
+- კურსის სტატუსის შეცვლის შეზღუდვები
+- კურსის შექმნის შეზღუდვები
+- CartFlows ინტეგრაცია და ლიმიტები
+- Tutor ინსტრუქტორის როლის მართვა
+- Multisite მომხმარებლის ჩარიცხვის დამუშავება
+- კურსის პროდუქტის ID-ის ჩვენება
+
+## მონაცემთა ბაზის მართვა {#database-management}
+
+### პრობლემა {#the-problem}
+
+WordPress multisite გარემოებში Tutor LMS ცხრილების შექმნა ვერ ხერხდება იმ ცხრილებისთვის, რომლებსაც აქვთ foreign key შეზღუდვები მომხმარებლების ცხრილზე. ეს ხდება იმიტომ, რომ:
+
+- საიტის სპეციფიკური ცხრილები იყენებს პრეფიქსებს, როგორიცაა `wp_2_tutor_carts`
+- Foreign key-ები მიუთითებს `wp_2_users`-ზე (რომელიც არ არსებობს)
+- რეალური მომხმარებლების ცხრილია `wp_users` (გაზიარებულია მთელ ქსელში)
+
+### გადაწყვეტა {#the-solution}
+
+ეს plugin ავტომატურად:
+
+1. **აღმოაჩენს გამოტოვებულ ცხრილებს**: ამოწმებს ცხრილებს, რომელთა შექმნაც ვერ მოხერხდა foreign key შეზღუდვების გამო
+2. **ქმნის ცხრილებს სწორი მითითებებით**: იყენებს მომხმარებლების ცხრილის სწორ სახელს (`wp_users` multisite-ში)
+3. **ამუშავებს მრავალ სცენარს**:
+   - Plugin-ის გააქტიურება/ხელახლა გააქტიურება
+   - ახალი საიტის შექმნა ქსელში
+   - ცხრილების ხელით შემოწმება ადმინისტრატორის ინტერფეისის მეშვეობით
+
+### ზეგავლენის ქვეშ მყოფი ცხრილები {#affected-tables}
+
+- `tutor_coupon_usages` - შეიცავს foreign key-ს მომხმარებლების ცხრილზე
+- `tutor_carts` - შეიცავს foreign key-ს მომხმარებლების ცხრილზე
+- `tutor_notification_preferences` - TutorPro ცხრილი foreign key-ით მომხმარებლების ცხრილზე
+
+### ადმინისტრატორის ინტერფეისი {#admin-interface}
+
+მონაცემთა ბაზის მართვის ხელსაწყოებზე წვდომა:
+
+- **ქსელის ადმინისტრატორი**: Settings → Tutor Multisite DB
+- **საიტის ადმინისტრატორი**: Tools → Tutor Multisite DB
+
+ინტერფეისი საშუალებას გაძლევთ:
+- ნახოთ გამოტოვებული ცხრილები ყველა საიტზე
+- ხელით გაუშვათ ცხრილების შექმნა
+- შეამოწმოთ მონაცემთა ბაზის კონფიგურაცია
+- ნახოთ დეტალური სტატუსის ინფორმაცია
+
+## მხარდაჭერა {#support}
+
+ეს plugin სპეციალურად შექმნილია KursoPro პლატფორმისთვის. ტექნიკური მხარდაჭერისთვის დაუკავშირდით დეველოპერთა გუნდს.

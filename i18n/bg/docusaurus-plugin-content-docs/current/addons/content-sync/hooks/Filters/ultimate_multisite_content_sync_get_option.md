@@ -4,11 +4,11 @@ title: Филтър - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Филтър: ultimate_multisite_content_sync_get_option
+# Филтър: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Връща слешфийдираната стойност на опцията на мрежата.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 | $option_name | `string` | Името на опцията. |
 | $default | `mixed` | Стойността по подразбиране. |
 
-### От версия
+### От версия {#since}
 
 - 1.0.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) на линия 126
 
 
-## Връща
+## Връща {#returns}
 Слешфийдираната стойност на опцията на мрежата.

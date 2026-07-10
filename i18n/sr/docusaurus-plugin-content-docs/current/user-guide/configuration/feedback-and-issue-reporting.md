@@ -3,11 +3,11 @@ title: Povratne informacije od kupaca i prijavljivanje problema
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Povratne informacije i prijavljivanje problema
+# Povratne informacije i prijavljivanje problema {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 ugrađuje sistem za povratne informacije i prijavljivanje problema koji omogućava krajnjim korisnicima da označavaju nekorisne odgovore i direktno prijave probleme iz chata interfejsa. Ovaj sistem uključuje upravljanje saglasnošću, automatsnu komandu za prijavu i AI-pomoćatni triage na backendu.
 
-## Dugme sa palcem nadole (Thumbs-Down Button)
+## Dugme sa palcem nadole (Thumbs-Down Button) {#thumbs-down-button}
 
 Svak poruka koju pošalje AI asistent prikazuje dugme sa palcem nadole (👎). Kada korisnik klikne na njega, može označiti odgovor kao nekorisan ili pogrešan.
 
@@ -15,7 +15,7 @@ Svak poruka koju pošalje AI asistent prikazuje dugme sa palcem nadole (👎). K
 - Klikom ga otvara se **Modal za saglasnost za povratne informacije (Feedback Consent Modal)**.
 - Povratna informacija je vezana za temu razgovora i specifičnu poruku.
 
-## Modal za saglasnost za povratne informacije (Feedback Consent Modal)
+## Modal za saglasnost za povratne informacije (Feedback Consent Modal) {#feedback-consent-modal}
 
 Kada korisnik klikne na dugme sa palcem nadole, pojavi se modal za saglasnost pre nego što bilo kakva podaci budu poslati. Ovaj modal:
 
@@ -26,13 +26,13 @@ Kada korisnik klikne na dugme sa palcem nadole, pojavi se modal za saglasnost pr
 
 Povratna informacija se ne beleži dok korisnik eksplicitno potvrdi.
 
-## Banner sa automatskom povratnom informacijom
+## Banner sa automatskom povratnom informacijom {#auto-prompt-feedback-banner}
 
 Na kraju razgovora, asistent može prikazati **banner sa automatskom povratnom informacijom** — neinvazivnu poruku koja pita da li je sesija bila korisna.
 
 Ovaj banner se pojavljuje automatski na osnovu dužine razgovora i heuristika ishoda. Povezuje se sa istim tok povratne informacije kao dugme sa palcem nadole. Korisnici mogu zatvoriti banner bez davanja povratne informacije.
 
-## Komanda /report-issue Slash Command
+## Komanda /report-issue Slash Command {#report-issue-slash-command}
 
 Korisnici mogu direktno pokrenuti tok povratne informacije tako što ukucaju `/report-issue` u polje za unos chata. Ova komanda:
 
@@ -42,7 +42,7 @@ Korisnici mogu direktno pokrenuti tok povratne informacije tako što ukucaju `/r
 
 Команда `/report-issue` је доступна у свим чат модовима (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Примарни приступ за класификацију)
+## AI-Assisted Triage (Примарни приступ за класификацију) {#ai-assisted-triage}
 
 Подате повратне информације се преучавају на слој AI триажа који:
 
@@ -52,7 +52,7 @@ Korisnici mogu direktno pokrenuti tok povratne informacije tako što ukucaju `/r
 
 Ово смањује време ручне провере јер најкритичнији проблеми су први што се појављују.
 
-## Settings > Advanced {#settings-advanced} (Подешавања > Напредности)
+## Settings > Advanced {#settings-advanced} (Подешавања > Напредности) {#settings--advanced}
 
 Да бисте омогућили backend за повратне информације, конфигуришу 다음 полија под **Gratis AI Agent → Settings → Advanced**:
 

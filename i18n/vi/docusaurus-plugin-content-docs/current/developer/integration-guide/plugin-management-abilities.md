@@ -3,11 +3,11 @@ title: Khả năng quản lý plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Khả năng Quản lý Plugin
+# Khả năng Quản lý Plugin {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 đi kèm với **7 khả năng quản lý plugin** mà trợ lý AI có thể gọi trong quá trình trò chuyện. Các khả năng này cung cấp khả năng kiểm soát lập trình đối với các plugin WordPress được cài đặt thông qua [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Tổng quan về Khả năng
+## Tổng quan về Khả năng {#abilities-overview}
 
 | Khả năng | Slug | Mô tả |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 đi kèm với **7 khả năng quản lý plugin** mà tr
 | Install Plugin | `install_plugin` | Triển khai một plugin trong sandbox vào thư mục plugin WordPress thực tế. |
 | Activate Plugin | `activate_plugin` | Kích hoạt một plugin trong sandbox trong môi trường sandbox wp-env. |
 
-## API Cài đặt Plugin
+## API Cài đặt Plugin {#plugin-installer-api}
 
 Bộ cài đặt plugin xử lý các thao tác hệ thống tệp khi triển khai hoặc xóa plugin. Các hành vi chính bao gồm:
 
@@ -28,7 +28,7 @@ Bộ cài đặt plugin xử lý các thao tác hệ thống tệp khi triển k
 - **Cập nhật (Update)**: Thay thế các tệp plugin hiện có. Nó sẽ hủy kích hoạt plugin trước khi ghi để tránh lỗi trạng thái một phần.
 - **Xóa theo slug (Delete by slug)**: Định vị thư mục plugin bằng slug, hủy kích hoạt trên tất cả các trang web, sau đó xóa thư mục.
 
-### Đăng ký Bộ xử lý Cài đặt Tùy chỉnh
+### Đăng ký Bộ xử lý Cài đặt Tùy chỉnh {#registering-a-custom-install-handler}
 
 Bạn có thể móc nối vào vòng đời cài đặt bằng cách sử dụng các action `gratis_ai_plugin_installer_before_install` và `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registry Hệ sinh thái (Ecosystem Registry)
+## Registry Hệ sinh thái (Ecosystem Registry) {#ecosystem-registry}
 
 Các khả năng được đăng ký thông qua **registry hệ sinh thái plugin**. Registry này ánh xạ các slug khả năng tới các lớp xử lý (handler classes) của chúng và cung cấp chúng cho bộ điều phối công cụ (tool dispatcher) của agent AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Tích hợp HookScanner
+## Tích hợp HookScanner {#hookscanner-integration}
 
 Các khả năng `create_plugin` và `update_plugin` tự động chạy **HookScanner** trên mã được tạo mới. HookScanner sẽ trả về danh sách các hook action và filter của WordPress được đăng ký bởi plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner tự động bỏ qua các thư mục `vendor/` và `node_modules/`.
 
-## Kiến trúc Công việc Bất đồng bộ (Async Job Architecture)
+## Kiến trúc Công việc Bất đồng bộ (Async Job Architecture) {#async-job-architecture}
 
 Các thao tác plugin chạy lâu (tạo, cài đặt) được gửi đi dưới dạng **công việc bất đồng bộ (async jobs)** với khả năng theo dõi tiến độ trực tiếp. Giao diện chat AI sẽ thăm dò (poll) tiến độ và truyền luồng (stream) các cập nhật trạng thái đến người dùng:
 

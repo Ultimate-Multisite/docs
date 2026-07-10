@@ -1,133 +1,154 @@
 ---
-title: Changelog ng Domain Seller
+title: Talaan ng Pagbabago ng Nagbebenta ng Domain
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Kasaysayan ng Pagbabago ng Domain Seller
+# Talaan ng Pagbabago ng Domain Seller {#domain-seller-changelog}
 
-Version 1.1.0 - Inilabas noong 2026-05-08
-- Bago: Nag-implement ng paggawa ng DNS record (add_dns_record) para sa mga registrar na ResellerClub, Enom, at OpenSRS
-- Ayos: Ang default DNS Records parser ay ngayon ay tumatanggap na ng {DOMAIN} at {SITE_URL} tokens
-- Ayos: Ang mga slug ng field sa domain selection checkout ay na-namespace para maiwasan ang pagbangga sa site_url
+Bersyon 1.3.0 - Inilabas noong 2026-06-02
+- Bago: Nagdagdag ng babala sa network-admin kapag masyadong bumababa ang balanse ng HostAfrica reseller
+- Bago: Nagdagdag ng awtomatikong pagmamapa ng mga bagong rehistradong domain sa site ng network
+- Ayos: Inilapat ang mga kinakailangan sa field ng registrant lamang kapag nagrerehistro ng bagong domain
+- Ayos: Ginawang maaaring i-dismiss ang mga abiso sa pagmonitor ng balanse
+- Ayos: Tiniyak na napapanatili ang mga detalye ng pagsingil ng WooCommerce registrant
+- Ayos: Ipinatupad ang mga kinakailangan sa contact ng registrant habang nagrerehistro
+- Ayos: Pinigilan ang mga produkto para sa pagpaparehistro ng domain na magawa nang may 0% markup
+- Ayos: Pinanatili ang mga pagpili ng domain at pagpepresyo sa daloy ng session ng pag-checkout
+- Ayos: Pinahusay ang pagpapakita ng currency ng pagpepresyo ng domain ng HostAfrica
+- Ayos: Pinahusay ang gawi ng form-action sa pag-checkout upang maiwasan ang mga hindi pagtutugma ng query-var ng WP-core
+- Pinahusay: Ini-link ang dokumentasyon ng configuration ng HostAfrica reseller sa gabay sa pag-setup
 
-Version 1.0.8 - Inilabas noong 2026-05-07
-- Ayos: Ang pagpepresyo ng domain sa ResellerClub ay ngayon ay kumukuha na ng live cost prices mula sa tamang API endpoint
+Bersyon 1.2.0 - Inilabas noong 2026-05-25
+- Bago: Idinagdag ang HostAfrica bilang integration para sa pagbebenta ng domain na may suporta sa pag-checkout, setup wizard, lookup, TLD/pagpepresyo, pagpaparehistro, pag-renew, paglipat, nameserver, DNS, EPP code, registrar lock, at ID protection
+- Bago: Idinagdag ang Openprovider bilang integration para sa pagbebenta ng domain na may suporta sa pagpepresyo ng reseller, pagpaparehistro, pag-renew, paglipat, nameserver, DNS, EPP code, registrar lock, WHOIS privacy, at TLD sync
+- Bago: Idinagdag ang Hostinger bilang integration para sa pagbebenta ng domain gamit ang nakabahaging Hostinger API token mula sa core integration para sa mga pagsusuri ng availability, pagpaparehistro, mga update sa nameserver, registrar lock, at WHOIS privacy
+- Pinahusay: Nagdagdag ng mga docblock para sa action at filter ng lifecycle ng domain para sa gabay sa integration ng developer
+- Pinahusay: In-update ang metadata ng compatibility ng plugin sa WordPress 7.0 sa readme ng addon
+- Pinahusay: In-update ang mga template sa pagpaplano na ginagamit para sa koordinasyon ng paparating na release
 
-Version 1.0.7 - Inilabas noong 2026-05-06
-* Ayos: Ang test_connection ng ResellerClub ay nagpapadala na ng kinakailangang tlds parameter (#224)
+Bersyon 1.1.0 - Inilabas noong 2026-05-08
+- Bago: Naipatupad ang paggawa ng DNS record (add_dns_record) para sa mga registrar na ResellerClub, Enom, at OpenSRS
+- Ayos: Natitiis na ngayon ng default na parser ng DNS Records ang mga token na {DOMAIN} at {SITE_URL}
+- Ayos: Nilagyan ng namespace ang mga slug ng field sa pag-checkout para sa pagpili ng domain upang maiwasan ang salpukan sa site_url
 
-Version 1.0.6 - Inilabas noong 2026-05-05
-* Ayos: Ang pagrehistro ng domain sa ResellerClub ay gumagana na nang tama ngayon sa pamamagitan ng pinabuting paghawak ng API response at registry-driven provider routing
-* Ayos: Pagpapaganda ng UX sa admin page ng Register Domain
-* Tinanggal: Ang integrasyon ng CyberPanel registrar
+Bersyon 1.0.8 - Inilabas noong 2026-05-07
+- Ayos: Kinukuha na ngayon ng pagpepresyo ng domain ng ResellerClub ang live na mga cost price mula sa tamang API endpoint
 
-Version 1.0.5 - Inilabas noong 2026-04-02
-* Bago: Integrasyon ng registrar na GoDaddy para sa pagrehistro at pamamahala ng domain
-* Bago: Integrasyon ng registrar na NameSilo
-* Bago: Integrasyon ng registrar na ResellerClub
-* Bago: Awtomatikong pag-verify ng SES sending domain sa pagbili at pag-map ng domain
-* Ayos: Pag-iingat sa mga constant ng plugin na Guard laban sa redefinition sa test environment
-* Ayos: Tama nang na-split ng MySQL flags sa install-wp-tests.sh
+Bersyon 1.0.7 - Inilabas noong 2026-05-06
+* Ayos: Nagpapadala ang ResellerClub test_connection ng kinakailangang parameter na tlds (#224)
 
-Version 1.0.4 - Inilabas noong 2026-03-14
-* **Ayos:** May ilang nawawalang css assets
-* **Ayos:** Error na may kaugnayan sa hindi available na tlds
+Bersyon 1.0.6 - Inilabas noong 2026-05-05
+* Ayos: Gumagana na ngayon nang tama ang pagpaparehistro ng domain sa ResellerClub gamit ang pinahusay na paghawak sa tugon ng API at routing ng provider na pinapatakbo ng registry
+* Ayos: Mga pagpapahusay sa UX ng admin page na Register Domain
+* Inalis: Integration ng CyberPanel registrar
 
-Version 1.0.3 - Inilabas noong 2026-03-09
-* **Ayos:** Mga error sa Vue reactive property (domain_option, selected_domain, domain_provider) kapag ginagamit ang legacy signup template kasama ang checkout shortcode
-* **Ayos:** Pag-aayos ng misalignment ng input field ng subdomain at sobrang laki ng text sa domain selection checkout field
-* **Ayos:** Itinatago ang "Your URL will be" preview block kapag naroroon ang domain selection field
+Bersyon 1.0.5 - Inilabas noong 2026-04-02
+* Bago: Integration ng GoDaddy registrar para sa pagpaparehistro at pamamahala ng domain
+* Bago: Integration ng NameSilo registrar
+* Bago: Integration ng ResellerClub registrar
+* Bago: Awtomatikong i-verify ang domain na nagpapadala ng SES sa pagbili at pagmamapa ng domain
+* Ayos: Pinrotektahan ang mga constant ng plugin laban sa muling pagde-define sa test environment
+* Ayos: Tama nang nahahati sa salita ang mga flag ng MySQL sa install-wp-tests.sh
 
-Version 1.0.2 - Inilabas noong 2026-03-01
-* **Pinaganda:** Tinanggal ang global markup settings mula sa settings page — ang pagpepresyo ay eksklusibong per-product na ngayon
-* **Pinaganda:** Nagdagdag ng link na "Manage Domain Products" sa settings page para sa mabilis na pag-navigate
-* **Pinaganda:** Mas malinaw na paglalarawan ng field at tooltips para sa domain product settings (catch-all vs TLD-specific, markup types, introductory pricing)
-* **Pinaganda:** Mas mahusay na paglalarawan sa buong settings page (search TLDs, renewals, DNS, notifications)
+Bersyon 1.0.4 - Inilabas noong 2026-03-14
+* **Ayos:** Ilang nawawalang css asset
+* **Ayos:** Error na may kaugnayan sa mga hindi available na tld
 
-Version 1.0.1 - Inilabas noong 2026-02-27
+Bersyon 1.0.3 - Inilabas noong 2026-03-09
+* **Ayos:** Mga error sa reactive property ng Vue (domain_option, selected_domain, domain_provider) kapag ginagamit ang legacy signup template kasama ang checkout shortcode
+* **Ayos:** Maling pagkakahanay ng input field ng subdomain at sobrang laki ng teksto sa field ng pag-checkout para sa pagpili ng domain
+* **Ayos:** Itago ang preview block na "Ang iyong URL ay magiging" kapag naroroon ang field ng pagpili ng domain
 
-* **Bago:** TLD import tool para sa bulk pricing management
-* **Bago:** Suporta sa introductory pricing para sa domain products
+Bersyon 1.0.2 - Inilabas noong 2026-03-01
+* **Pinahusay:** Inalis ang global na mga setting ng markup mula sa settings page — ang pagpepresyo ay eksklusibo na ngayong per-product
+* **Pinahusay:** Nagdagdag ng link na "Pamahalaan ang mga Produkto ng Domain" sa settings page para sa mabilis na pag-navigate
+* **Pinahusay:** Mas malinaw na mga paglalarawan ng field at tooltip para sa mga setting ng produkto ng domain (catch-all kumpara sa partikular sa TLD, mga uri ng markup, panimulang pagpepresyo)
+* **Pinahusay:** Mas magagandang paglalarawan sa buong settings page (paghahanap ng mga TLD, mga pag-renew, DNS, mga notification)
+
+Bersyon 1.0.1 - Inilabas noong 2026-02-27
+
+* **Bago:** TLD import tool para sa maramihang pamamahala ng presyo
+* **Bago:** Suporta sa panimulang presyo para sa mga produktong domain
 * **Bago:** E2E test suite gamit ang Cypress
-* **Bago:** Email templates para sa domain lifecycle notifications
-* **Bago:** Registrant address fields sa admin domain registration modal, na pre-populated mula sa settings
-* **Bago:** Customer DNS management interface na may suporta sa pagdagdag, pag-edit, at pagtanggal ng record
-* **Bago:** "Bring your own domain" checkout option na may awtomatikong domain mapping
-* **Bago:** Awtomatikong pag-generate ng site URL mula sa domain name habang nasa checkout
-* **Bago:** Default nameserver at DNS record configuration sa settings
-* **Bago:** Domain registration details at DNS management sa core domain edit page
-* **Bago:** Ang setup wizard ay awtomatikong lumilikha ng default domain product na may makatuwirang defaults
-* **Bago:** Pang-araw-araw na awtomatikong TLD sync via cron sa lahat ng naka-configure na providers
-* **Bago:** WHOIS privacy protection na may per-product configuration (always on, customer choice, o disabled)
-* **Bago:** WHOIS privacy checkout checkbox na may pagpapakita ng pagpepresyo at suporta sa dark mode
-* **Bago:** Admin page ng Register Domain para sa manual domain registration
-* **Bago:** Awtomatikong pag-update ng plugin via Ultimate Multisite update server
-* **Bago:** Domain product type filter tab sa product list table na may purple badge styling
-* **Bago:** Registrant contact fields (name, address, city, state, postal code, country, phone) sa domain checkout form
-* **Bago:** Registrant field validation bago tawagin ang registrar API na may malinaw na error messages
-* **Bago:** Provider-specific log channels para sa domain registration events (hal. domain-seller-namecheap.log)
-* **Bago:** Registrant contact fields sa main registration/signup checkout form (ipinapakita kapag nagre-register ng domain)
-* **Pinaganda:** Pinalitan ang Domain Search checkout field ng unified Domain Selection field na sumusuporta sa subdomain, register, at existing domain tabs
-* **Pinaganda:** Ang domain product settings ay ipinapakita nang inline sa product edit page sa pamamagitan ng core widget system
-* **Pinaganda:** Ang customer domain info ay kumokonekta sa core domain mapping widget sa halip na standalone metabox
-* **Pinaganda:** Ang TLD import wizard ay pinasimple sa one-click sync mula sa lahat ng providers
-* **Pinaganda:** Gumagamit ng batch API call ang Namecheap domain availability para sa mas mabilis na paghahanap
-* **Pinaganda:** Gumagamit ng tamang parameters at response parsing ang Namecheap pricing API
-* **Pinaganda:** Sentralisadong TLD storage sa isang network option
-* **Pinaganda:** Domain activity logging para sa mga pagbabago sa DNS, transfers, at paglalapat ng config
-* **Pinaganda:** Buong TLD sync para sa OpenSRS gamit ang IANA master list na may batch validation
-* **Pinaganda:** Buong TLD sync para sa Namecheap na may pag-page ng API requests
-* **Pinaganda:** Pinalitan ang legacy provider classes ng Integration Registry pattern
-* **Pinaganda:** Settings panel na may DNS at transfer configuration
-* **Pinaganda:** Ang mga numero ng telepono ay awtomatikong naka-format sa +CC.NNN registrar format
-* **Pinaganda:** Ang field validation ng telepono ay nagtatanggal ng formatting characters bago ang pagpasa (submission)
-* **Pinaganda:** Ang version requirement ay itinaas sa Ultimate Multisite 2.4.12 na may mas malinaw na notice
-* **Pinaganda:** Ang CI workflow ay gumagamit ng tamang checkout para sa addon at core plugin
-* **Pinaganda:** Ang prepare_registrant_info() ay kumukuha mula sa checkout-saved user meta na may billing address fallback
-* **Naayos:** Ang Domain search AJAX ay nagkakaroon ng failure para sa mga user na hindi naka-log-in habang nasa checkout
-* **Naayos:** Ang Domain pricing AJAX ay nagkakaroon ng failure para sa mga user na hindi naka-log-in habang nasa checkout
-* **Naayos:** Ang Spyc class redeclaration fatal error kapag nagpapatakbo ng WP-CLI commands
-* **Naayos:** Ang Namecheap sandbox API timeout ay masyadong maikli
-* **Naayos:** Ang text ng Select button ng Domain search ay hindi nakikita sa green background
-* **Naayos:** Ang pagrehistro ng domain ay nagkakaroon ng failure na may error na "RegistrantFirstName is Missing" dahil sa nawawalang contact info
-* **Naayos:** Ang domain record ay nililikha na may blog_id=0 kapag hindi pa umiiral ang site sa oras ng checkout
-* **Naayos:** Ang default TLDs setting ay ibinabalik bilang string sa halip na parsed array
-* **Tinanggal:** Ang standalone Domain Management admin page — ngayon ay hinahawakan sa pamamagitan ng core domain pages
+* **Bago:** Mga email template para sa mga abiso sa lifecycle ng domain
+* **Bago:** Mga field ng address ng registrant sa admin domain registration modal, paunang napunan mula sa settings
+* **Bago:** Interface sa pamamahala ng DNS ng customer na may suporta sa pagdagdag, pag-edit, at pagtanggal ng record
+* **Bago:** Opsyon sa checkout na "Dalhin ang sarili mong domain" na may awtomatikong domain mapping
+* **Bago:** Awtomatikong pagbuo ng URL ng site mula sa pangalan ng domain habang nagche-checkout
+* **Bago:** Default na nameserver at configuration ng DNS record sa settings
+* **Bago:** Mga detalye ng pagpaparehistro ng domain at pamamahala ng DNS sa pangunahing pahina ng pag-edit ng domain
+* **Bago:** Setup wizard na awtomatikong gumagawa ng default na produktong domain na may makatuwirang mga default
+* **Bago:** Araw-araw na awtomatikong TLD sync sa pamamagitan ng cron sa lahat ng naka-configure na provider
+* **Bago:** Proteksyon sa privacy ng WHOIS na may configuration kada produkto (palaging naka-on, pagpili ng customer, o naka-disable)
+* **Bago:** Checkbox ng WHOIS privacy sa checkout na may pagpapakita ng presyo at suporta sa dark mode
+* **Bago:** Admin page na Register Domain para sa manu-manong pagpaparehistro ng domain
+* **Bago:** Awtomatikong plugin updates sa pamamagitan ng Ultimate Multisite update server
+* **Bago:** Tab ng filter para sa uri ng produktong domain sa talahanayan ng listahan ng produkto na may purple badge styling
+* **Bago:** Mga field ng contact ng registrant (pangalan, address, lungsod, estado, postal code, bansa, telepono) sa checkout form ng domain
+* **Bago:** Pag-validate ng field ng registrant bago tawagin ang registrar API na may malinaw na mga mensahe ng error
+* **Bago:** Mga log channel na partikular sa provider para sa mga kaganapan sa pagpaparehistro ng domain (hal. domain-seller-namecheap.log)
+* **Bago:** Mga field ng contact ng registrant sa pangunahing registration/signup checkout form (ipinapakita kapag nagpaparehistro ng domain)
+* **Pinahusay:** Pinalitan ang checkout field na Domain Search ng pinag-isang field na Domain Selection na sumusuporta sa mga tab para sa subdomain, register, at existing domain
+* **Pinahusay:** Ipinapakita nang inline ang settings ng produktong domain sa pahina ng pag-edit ng produkto sa pamamagitan ng core widget system
+* **Pinahusay:** Ang impormasyon ng domain ng customer ay nakakabit sa core domain mapping widget sa halip na standalone metabox
+* **Pinahusay:** Pinasimple ang TLD import wizard sa one-click sync mula sa lahat ng provider
+* **Pinahusay:** Gumagamit ang availability ng Namecheap domain ng batch API call para sa mas mabilis na paghahanap
+* **Pinahusay:** Gumagamit ang Namecheap pricing API ng tamang mga parameter at pag-parse ng response
+* **Pinahusay:** Sentralisadong imbakan ng TLD sa iisang network option
+* **Pinahusay:** Pag-log ng aktibidad ng domain para sa mga pagbabago sa DNS, mga transfer, at paglalapat ng config
+* **Pinahusay:** Buong TLD sync para sa OpenSRS gamit ang IANA master list na may batch validation
+* **Pinahusay:** Buong TLD sync para sa Namecheap na may paginated API requests
+* **Pinahusay:** Pinalitan ang mga lumang provider class ng Integration Registry pattern
+* **Pinahusay:** Settings panel na may configuration ng DNS at transfer
+* **Pinahusay:** Awtomatikong nafo-format ang mga numero ng telepono sa format ng registrar na +CC.NNN
+* **Pinahusay:** Tinatanggal ng validation ng phone field ang mga character sa formatting bago isumite
+* **Pinahusay:** Itinaas ang kinakailangang version sa Ultimate Multisite 2.4.12 na may mas malinaw na abiso
+* **Pinahusay:** Gumagamit ang CI workflow ng tamang checkout para sa parehong addon at core plugin
+* **Pinahusay:** Binabasa ng prepare_registrant_info() ang user meta na na-save sa checkout na may fallback sa billing address
+* **Naayos:** Nabibigo ang AJAX ng paghahanap ng domain para sa mga user na hindi naka-log in habang nagche-checkout
+* **Naayos:** Nabibigo ang AJAX ng presyo ng domain para sa mga user na hindi naka-log in habang nagche-checkout
+* **Naayos:** Fatal error sa redeclaration ng Spyc class kapag nagpapatakbo ng mga WP-CLI command
+* **Naayos:** Masyadong maikli ang timeout ng Namecheap sandbox API
+* **Naayos:** Hindi nakikita ang text ng button na Select sa paghahanap ng domain sa berdeng background
+* **Naayos:** Nabibigo ang pagpaparehistro ng domain dahil sa error na "RegistrantFirstName is Missing" dulot ng nawawalang impormasyon sa contact
+* **Naayos:** Nagawa ang domain record na may blog_id=0 kapag hindi pa umiiral ang site sa oras ng checkout
+* **Naayos:** Ibinalik ang default TLDs setting bilang string sa halip na parsed array
+* **Inalis:** Standalone na admin page na Domain Management — ngayon ay pinangangasiwaan sa pamamagitan ng mga pangunahing pahina ng domain
 
 Version 1.0.0 - Inilabas noong 2025-09-28
 
-**Major Rewrite para sa Ultimate Multisite v2**
+**Malaking Pagsulat Muli para sa Ultimate Multisite v2**
 
-* **Bago:** Kumpletong rewrite gamit ang modern PHP 7.4+ architecture
-* **Bago:** Seamless integration sa Ultimate Multisite v2 checkout system
-* **Bago:** Domain product management na may flexible pricing options
-* **Bago:** Multiple domain provider support architecture
-* **Bago:** Auto-renewal at subscription integration
-* **Bago:** Customer domain management interface
-* **Bago:** Admin domain monitoring at logs
-* **Bago:** Coupon support para sa domain products
-* **Bago:** Comprehensive settings management
-* **Bago:** Developer-friendly extensible codebase
-* **Pinaganda:** In-update ang OpenSRS provider na may full feature support
-* **Pinaganda:** Modern UI na consistent sa Ultimate Multisite v2
-* **Naayos:** Lahat ng deprecated v1 code ay na-update sa v2 standards
-* **Tinanggal:** Legacy v1 compatibility (breaking change)
+* **Bago:** Kumpletong pagsulat muli gamit ang modernong arkitektura ng PHP 7.4+
+* **Bago:** Seamless na integrasyon sa checkout system ng Ultimate Multisite v2
+* **Bago:** Pamamahala ng produktong domain na may flexible na mga opsyon sa pagpepresyo
+* **Bago:** Arkitektura ng suporta para sa maraming domain provider
+* **Bago:** Integrasyon ng auto-renewal at subscription
+* **Bago:** Interface ng customer para sa pamamahala ng domain
+* **Bago:** Pagsubaybay at mga log ng admin domain
+* **Bago:** Suporta sa coupon para sa mga produktong domain
+* **Bago:** Komprehensibong pamamahala ng settings
+* **Bago:** Codebase na extensible at maginhawa para sa developer
+* **Pinahusay:** Na-update na OpenSRS provider na may buong suporta sa feature
+* **Pinahusay:** Modernong UI na pare-pareho sa Ultimate Multisite v2
+* **Naayos:** Lahat ng deprecated na v1 code ay na-update sa mga pamantayan ng v2
+* **Inalis:** Legacy v1 compatibility (breaking change)
 
-### Mga Nakaraang Bersyon (v1 Legacy)
+### Mga Nakaraang Version (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
 * Naayos: Incompatibility sa Groundhogg CRM
-* Paalala: Ito ang huling v1-compatible release
+* Tala: Ito ang huling release na compatible sa v1
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Naayos: Tinanggal ang License Key field
-* Naayos: Ang Plan tabs ay nawawala kapag active ang feature plugin
-* Pinaganda: Nagdagdag ng skip button sa registration field
+* Naayos: Inalis ang field na License Key
+* Naayos: Nawawala ang mga tab ng plan kapag aktibo ang feature plugin
+* Pinahusay: Nagdagdag ng skip button sa field ng pagpaparehistro
 
-### Version 0.0.1 - Initial Release
+### Version 0.0.1 - Paunang Release {#version-001---initial-release}
 
-* Basic OpenSRS integration para sa WP Ultimo v1
-* Simple domain search at registration
-* Plan-based domain permissions
+* Pangunahing integrasyon ng OpenSRS para sa WP Ultimo v1
+* Simpleng paghahanap at pagpaparehistro ng domain
+* Mga pahintulot sa domain na batay sa plan

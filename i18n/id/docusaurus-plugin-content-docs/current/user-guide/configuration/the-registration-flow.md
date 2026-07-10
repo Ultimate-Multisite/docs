@@ -1,72 +1,76 @@
 ---
 title: Alur Pendaftaran
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Alur Pendaftaran (v2)
+# Alur Pendaftaran (v2) {#the-registration-flow-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Pengguna dapat mendaftar ke jaringan Anda dengan berbagai cara. Mereka bisa menggunakan formulir pendaftaran Anda atau tautan yang bisa dibagikan ke paket yang sudah dipilih sebelumnya. Di sini kami akan menunjukkan bagaimana pelanggan Anda dapat mendaftar di jaringan Anda menggunakan jalur yang tersedia dan apa yang terjadi setelah mereka mendaftar di jaringan Anda.
+Pengguna dapat mendaftar ke jaringan Anda dengan berbagai cara. Mereka dapat menggunakan formulir pendaftaran Anda atau tautan yang dapat dibagikan ke paket yang sudah dipilih sebelumnya. Di sini kami akan menunjukkan bagaimana pelanggan Anda dapat mendaftar di jaringan Anda menggunakan jalur yang tersedia dan apa yang terjadi setelah mereka mendaftar di jaringan Anda.
 
-## Menggunakan Formulir Pendaftaran:
+## Menggunakan Formulir Pendaftaran: {#using-the-registration-form}
 
-Ini adalah proses pendaftaran standar. Anda membuat halaman pendaftaran dengan **formulir checkout** dan di sinilah pelanggan Anda akan pergi untuk mendaftar di jaringan Anda dan berlangganan paket. Anda dapat memiliki beberapa halaman pendaftaran, masing-masing dengan formulir pendaftaran yang berbeda jika Anda mau.
+Ini adalah proses pendaftaran standar. Anda membuat halaman pendaftaran dengan **formulir pembayaran** dan di sinilah pelanggan Anda akan mendaftar di jaringan Anda serta berlangganan sebuah paket. Anda dapat memiliki beberapa halaman pendaftaran, masing-masing dengan formulir pendaftaran yang berbeda jika Anda mau.
 
-Halaman default untuk pendaftaran adalah [_**domainanda.com/register**_](http://yourdomain.com/register), tetapi Anda dapat mengubahnya kapan saja di **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Halaman default untuk pendaftaran adalah [_**yourdomain.com/register**_](http://yourdomain.com/register), tetapi Anda dapat mengubahnya kapan saja di **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Setelah pengguna sampai di halaman pendaftaran Anda (biasanya dengan mengklik tombol **Sign in** atau **Beli sekarang**), mereka akan melihat formulir pendaftaran Anda di sana.
+Setelah pengguna membuka halaman pendaftaran Anda (biasanya dengan mengeklik tombol **Masuk** atau **Beli sekarang**), mereka akan melihat formulir pendaftaran Anda di sana.
 
-![Formulir pendaftaran ditampilkan di halaman pendaftaran](/img/config/checkout-forms-list.png)
+![Formulir pendaftaran yang ditampilkan di halaman pendaftaran](/img/frontend/registration-form.png)
 
-Yang perlu mereka lakukan hanyalah mengisi semua kolom wajib - email, username, password, dll... - dan membayar paket tersebut atau mengonfirmasi alamat email mereka jika mereka mendaftar untuk paket gratis atau paket berbayar dengan periode trial tanpa informasi pembayaran.
+Berikut adalah contoh formulir pembayaran seperti yang muncul di frontend:
 
-Di halaman "Terima Kasih", mereka akan melihat pesan yang memberitahu apakah mereka perlu mengonfirmasi alamat email mereka atau apakah situs web mereka sudah diaktifkan dan mereka bisa mulai menggunakannya.
+![Formulir pendaftaran pembayaran frontend](/img/config/checkout-frontend-registration.png)
 
-![Halaman Terima Kasih setelah pendaftaran](/img/config/checkout-form-editor.png)
+Yang perlu mereka lakukan hanyalah mengisi semua bidang wajib - email, nama pengguna, kata sandi, dll... - dan membayar paket tersebut atau mengonfirmasi alamat email mereka jika mereka mendaftar untuk paket gratis atau paket berbayar dengan masa percobaan tanpa informasi pembayaran.
 
-Jika konfirmasi alamat email diperlukan, mereka perlu membuka kotak masuk email mereka dan mengklik tautan verifikasi. Situs web mereka tidak akan diaktifkan jika alamat email mereka tidak terverifikasi.
+Di halaman "Terima kasih", mereka akan melihat pesan yang memberi tahu apakah mereka perlu mengonfirmasi alamat email mereka atau apakah website mereka sudah diaktifkan dan mereka dapat mulai menggunakannya.
 
-Jika mereka mendaftar pada paket berbayar atau verifikasi email tidak wajib di jaringan Anda, situs web mereka akan diaktifkan langsung setelah checkout dan mereka akan ditampilkan tautan untuk masuk ke dashboard mereka.
+![Halaman Terima Kasih setelah pendaftaran](/img/frontend/registration-thank-you.png)
 
-![Situs diaktifkan dengan tautan untuk masuk ke dashboard](/img/config/checkout-form-editor.png)
+Jika konfirmasi alamat email diperlukan, mereka harus membuka kotak masuk email mereka dan mengeklik tautan verifikasi. Website mereka tidak akan diaktifkan jika alamat email mereka tidak diverifikasi.
 
-## Menggunakan Tautan yang Dapat Dibagikan:
+Jika mereka telah mendaftar pada paket berbayar atau verifikasi email tidak wajib di jaringan Anda, website mereka akan langsung diaktifkan setelah pembayaran dan mereka akan ditampilkan tautan untuk masuk ke dashboard mereka.
 
-Proses pendaftaran menggunakan tautan yang dapat dibagikan pada dasarnya sama dengan formulir pendaftaran, satu-satunya perbedaan adalah dengan menggunakan tautan yang dapat dibagikan, pelanggan Anda dapat memiliki produk atau template situs web yang sudah dipilih sebelumnya di formulir checkout (lihat bagian Pre-selecting products and templates via URL parameters) atau mungkin kode kupon yang sudah ditambahkan (lihat bagian Using URL Parameters).
+![Situs diaktifkan dengan tautan untuk masuk ke dashboard](/img/frontend/site-activated.png)
 
-Proses pendaftarannya akan sama: mereka perlu mengisi nama, username, alamat email, nama dan judul situs web, dll... tetapi paket atau template situs sudah dipilih sebelumnya untuk mereka.
+## Menggunakan Tautan yang Dapat Dibagikan: {#using-a-shareable-link}
 
-### Mendaftar Menggunakan Pembayaran Manual:
+Proses pendaftaran menggunakan tautan yang dapat dibagikan pada dasarnya sama dengan formulir pendaftaran, satu-satunya perbedaan adalah bahwa dengan menggunakan tautan yang dapat dibagikan, pelanggan Anda dapat memiliki produk atau templat website yang sudah dipilih sebelumnya pada formulir pembayaran (lihat bagian Memilih produk dan templat terlebih dahulu melalui parameter URL) atau mungkin kode kupon yang ditambahkan (lihat bagian Menggunakan Parameter URL).
 
-Jika Anda tidak ingin menggunakan PayPal, Stripe atau gateway pembayaran lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-on-nya, Anda dapat menggunakan pembayaran manual untuk pelanggan Anda. Dengan cara ini, Anda dapat membuat invoice untuk mereka bayar di pemroses pembayaran pilihan Anda setelah mereka mendaftar di jaringan Anda.
+Proses pendaftarannya akan sama: mereka perlu mengisi nama, nama pengguna, alamat email, nama dan judul website, dll... tetapi paket atau templat situs sudah dipilih sebelumnya untuk mereka.
+
+### Mendaftar Menggunakan Pembayaran Manual: {#registering-using-manual-payments}
+
+Jika Anda tidak ingin menggunakan PayPal, Stripe, atau gateway pembayaran lain yang ditawarkan oleh Ultimate Multisite atau integrasi add-on-nya, Anda dapat menggunakan pembayaran manual untuk pelanggan Anda. Dengan cara ini, Anda dapat membuat faktur untuk mereka bayar melalui pemroses pembayaran pilihan Anda setelah mereka mendaftar di jaringan Anda.
 
 Proses pendaftarannya akan persis sama seperti di atas, tetapi di halaman pendaftaran pelanggan Anda akan melihat pesan yang menyatakan bahwa mereka akan menerima email dengan instruksi lebih lanjut untuk menyelesaikan pembayaran.
 
-![Pesan pembayaran manual saat pendaftaran](/img/config/settings-payment-gateways.png)
+![Pesan pembayaran manual saat pendaftaran](/img/frontend/registration-manual-notice.png)
 
 Dan setelah pendaftaran selesai, mereka akan melihat instruksi pembayaran yang Anda tetapkan (dan juga menerimanya di email mereka).
 
-![Instruksi pembayaran ditampilkan setelah pendaftaran](/img/config/settings-payment-gateways.png)
+![Instruksi pembayaran yang ditampilkan setelah pendaftaran](/img/frontend/registration-payment-instructions.png)
 
 Instruksi pembayaran dapat diubah di **Ultimate Multisite > Settings > Payments** setelah mengaktifkan opsi pembayaran **Manual**:
 
-![Toggle pembayaran manual dengan kolom instruksi pembayaran](/img/config/settings-payment-gateways.png)
+![Toggle pembayaran manual dengan bidang instruksi pembayaran](/img/config/manual-gateway-settings.png)
 
-Setelah pelanggan Anda menyelesaikan pembayaran manual dan mengirimkan konfirmasi kepada Anda, Anda perlu **mengonfirmasi pembayaran secara manual** untuk mengaktifkan keanggotaan dan situs web pelanggan.
+Setelah pelanggan Anda menyelesaikan pembayaran manual dan mengirimkan konfirmasi kepada Anda, Anda perlu **mengonfirmasi pembayaran secara manual** untuk mengaktifkan keanggotaan dan website pelanggan.
 
-Untuk melakukan ini, buka **Ultimate Multisite > Payments** dan temukan pembayaran pelanggan tersebut. Status seharusnya masih menunjukkan **Pending**.
+Untuk melakukannya, buka **Ultimate Multisite > Payments** dan temukan pembayaran pelanggan. Statusnya seharusnya masih menunjukkan **Pending**.
 
-![Daftar pembayaran dengan pembayaran manual pending](/img/admin/payments-list.png)
+![Daftar pembayaran dengan pembayaran manual yang tertunda](/img/admin/payments-list.png)
 
-Klik pada nomor pembayaran dan Anda akan dapat mengubah statusnya menjadi **Completed**.
+Klik nomor pembayaran dan Anda akan dapat mengubah statusnya menjadi **Completed**.
 
-![Halaman detail pembayaran](/img/admin/payments-list.png)
+![Halaman detail pembayaran](/img/admin/payment-edit.png)
 
-![Mengubah status pembayaran menjadi Completed](/img/admin/payments-list.png)
+![Mengubah status pembayaran menjadi Completed](/img/admin/payment-status-completed.png)
 
-Setelah mengubah statusnya menjadi **Completed**, Anda akan melihat pesan **Activate membership**. Aktifkan opsi ini untuk mengaktifkan keanggotaan dan situs web yang terkait dengan pelanggan ini. Kemudian, klik **Save Payment**.
+Setelah mengubah statusnya menjadi **Completed** , Anda akan melihat pesan **Activate membership**. Aktifkan opsi ini **on** untuk mengaktifkan keanggotaan dan website yang terkait dengan pelanggan ini. Lalu, klik **Save Payment**.
 
-![Toggle Activate membership dan tombol Save Payment](/img/admin/payments-list.png)
+![Toggle Activate membership dan tombol Save Payment](/img/admin/payment-activate-membership.png)
 
-Pelanggan Anda sekarang seharusnya dapat mengakses dashboard dan semua fitur yang mereka langganan.
+Pelanggan Anda sekarang seharusnya dapat mengakses dashboard dan semua fitur yang mereka langgani.

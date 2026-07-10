@@ -1,85 +1,217 @@
 ---
-title: チェックアウトフォーム
+title: 購入手続きフォーム
 sidebar_position: 19
-_i18n_hash: 66bfff807dcb07f2c495741a4fa601b9
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# チェックアウトフォーム
+# Checkout Forms {#checkout-forms}
 
-Checkout Formsは、新規顧客を獲得する際にさまざまなアプローチを試すための簡単で柔軟な方法です。  
-Ultimate Multisite 2.0では、Checkout Formエディタを提供しており、必要に応じて任意の数のフォームを作成でき、さまざまなフィールドや提供される商品などを設定できます。  
+Checkout Forms は、新規顧客の獲得を目指す際に、さまざまなアプローチを試すための簡単で柔軟な方法です。
 
-この機能にアクセスするには、左側のサイドバーにあるCheckout Formsメニューに移動します。  
+Ultimate Multisite 2.0 には Checkout Form エディターがあり、必要なだけフォームを作成できます。項目や提供する商品なども変えられます。
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+この機能にアクセスするには、左サイドバーの Checkout Forms メニューに移動します。
 
-このページでは、作成済みのすべてのチェックアウトフォームを確認できます。  
+![Checkout Forms 一覧](/img/config/checkout-forms-list.png)
 
-新しいフォームを作成したい場合は、ページ上部の **Add Checkout Form** をクリックしてください。  
+このページでは、所有しているすべてのチェックアウトフォームを確認できます。
 
-開始点として、**single step**、**multi-step**、**blank** の3つのオプションから選択できます。次に、**Go to the Editor** をクリックします。  
+一覧テーブルには **ステータス** 列があり、各フォームが現在顧客に利用可能かどうかを確認できます。
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+| ステータス | 意味 |
+|---|---|
+| **有効** | そのショートコードまたは登録ページが公開されている場所なら、どこでもフォームを使用できます。 |
+| **無効** | フォームは保存されていますが無効化されています。再度有効にするまで、顧客はこのフォームでチェックアウトを完了できません。 |
 
-また、既存のフォームの下にあるオプションをクリックして編集または複製することもできます。そこでは、フォームのショートコードをコピーするオプションやフォームを削除するオプションも確認できます。  
+公開中の登録フローを編集する前に、ステータス列を使用してください。特に、下書きや季節限定のチェックアウトフォームを本番用フォームと並べて保持している場合に役立ちます。
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+新しく作成する場合は、ページ上部の Add Checkout Form をクリックするだけです。
 
-### チェックアウトフォームの編集
+開始点として、単一ステップ、複数ステップ、空白の 3 つのオプションから 1 つを選択できます。その後、Go to the Editor をクリックします。
 
-チェックアウトフォームはさまざまな目的で作成できます。この例では、登録フォームを作成します。  
+開始点として**単一ステップ**または**複数ステップ**を選ぶと、フォームテンプレートには標準で**テンプレート選択**フィールドが含まれるようになりました。このフィールドにより、顧客は登録手続き中にサイトテンプレートを選択できます。エディター内の他のフィールドと同じように、そのまま残すことも、削除することも、位置を変更することもできます。
 
-チェックアウトフォームエディタに移動したら、フォームに名前（内部参照のみで使用）とスラッグ（ショートコード作成などに使用）を付けます。  
+![チェックアウトフォームエディター](/img/config/checkout-form-editor.png)
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+または、名前の下にあるオプションをクリックして、既存のフォームを編集または複製できます。そこには、フォームのショートコードをコピーするオプションや、フォームを削除するオプションもあります。
 
-フォームはステップとフィールドで構成されます。**Add New Checkout Step** をクリックして新しいステップを追加できます。  
+![チェックアウトフォームのホバー操作](/img/config/checkout-form-hover-actions.png)
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+#### チェックアウトフォームエディターの概要 {#checkout-form-editor-overview}
 
-モーダルウィンドウの最初のタブで、フォームステップの内容を入力します。ID、名前、説明を設定します。これらの項目は主に内部で使用されます。  
+チェックアウトフォームエディターは、登録フォームを作成するための包括的なインターフェースを提供します。エディターのレイアウト概要は次のとおりです。
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![チェックアウトフォームエディターの概要](/img/config/checkout-form-editor-overview.png)
 
-次に、ステップの表示設定を行います。「Always show」「Only show for logged in users」「Only show for guests」のいずれかを選択できます。  
+### チェックアウトフォームの編集 {#editing-a-checkout-form}
 
-![Checkout form step](/img/config/checkout-form-step.png)
+さまざまな目的に合わせてチェックアウトフォームを作成できます。この例では登録フォームを扱います。
 
-最後に、ステップのスタイルを設定します。これらは任意の項目です。  
+チェックアウトフォームエディターに移動したら、フォームに名前（内部参照にのみ使用）とスラッグ（ショートコードの作成などに使用）を付けます。
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![チェックアウトフォームエディター](/img/config/checkout-form-editor.png)
 
-次に、最初のステップにフィールドを追加します。**Add New Field** をクリックし、追加したいセクションのタイプを選択します。  
+フォームはステップとフィールドで構成されます。新しいステップを追加するには、Add New Checkout Step をクリックします。
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![新しいチェックアウトステップを追加](/img/config/checkout-form-add-step.png)
 
-各フィールドには入力すべきパラメータが異なります。最初の入力では「Username」フィールドを選択します。  
+モーダルウィンドウの最初のタブで、フォームのステップ内容を入力します。ID、名前、説明を設定してください。これらの項目は主に内部で使用されます。
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![購入手続きフォームのステップ内容タブ](/img/config/checkout-form-step-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+次に、ステップの表示条件を設定します。「常に表示」、「ログイン中のユーザーのみに表示」、「ゲストのみに表示」から選択できます。
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![購入手続きフォームのステップ表示条件タブ](/img/config/checkout-form-step-visibility.png)
 
-必要に応じてステップやフィールドを追加できます。顧客が選択できるように商品を表示するには、**Pricing Table** フィールドを使用します。クライアントにテンプレートを選択させたい場合は、**Template Selection** フィールドを追加します。その他も同様です。  
+最後に、ステップのスタイルを設定します。これらは任意項目です。
 
-_**注意:** username、email、password、site title、site URL、order summary、payment、submit button はチェックアウトフォームを作成する際に必須フィールドです。_
+![購入手続きフォームのステップスタイルタブ](/img/config/checkout-form-step-style.png)
 
-チェックアウトフォームを作成中は、**Preview** ボタンを使用してクライアントがフォームをどのように見るか確認できます。また、既存ユーザーとしての表示と訪問者としての表示を切り替えることもできます。  
+これで、最初のステップにフィールドを追加できます。Add New Field をクリックして、必要なセクションの種類を選択してください。
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+![フィールド付き購入手続きフォームステップ](/img/config/checkout-form-step-with-fields.png)
 
-最後に、**Advanced Options** で「Thank You」ページのメッセージを設定したり、コンバージョン追跡用のスニペットを追加したり、チェックアウトフォームにカスタム CSS を追加したり、特定の国に限定したりできます。  
+各フィールドには、入力するパラメーターが異なります。最初の入力項目として、「ユーザー名」フィールドを選択します。
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![フィールドタイプ選択ドロップダウン](/img/config/checkout-form-field-type-dropdown.png)
 
-右側の列でこのオプションを切り替えて、チェックアウトフォームを手動で有効または無効にすることも、フォームを完全に削除することもできます。  
+![ユーザー名フィールドの内容設定](/img/config/checkout-form-username-content.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+![ユーザー名フィールドの表示条件設定](/img/config/checkout-form-username-visibility.png)
 
-チェックアウトフォームを保存するのを忘れないでください！  
+![ユーザー名フィールドのスタイル設定](/img/config/checkout-form-username-style.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+必要なだけステップとフィールドを追加できます。顧客が選ぶための商品を表示するには、Pricing Table フィールドを使用します。クライアントにテンプレートを選ばせたい場合は、Template Selection フィールドを追加します。ほかも同様です。
 
-フォームのショートコードを取得するには、**Generate Shortcode** をクリックし、モーダルウィンドウに表示された結果をコピーします。  
+![新しい項目を追加ダイアログ](/img/config/checkout-form-add-field-dialog.png)
 
-![Save button](/img/config/checkout-form-save.png)
+_**注:** ユーザー名、メール、パスワード、サイトタイトル、サイトURL、注文概要、支払い、送信ボタンは、決済フォームを作成するための必須項目です。_
+
+決済フォームを作成している間は、いつでもプレビューボタンを使って、クライアントにフォームがどのように表示されるかを確認できます。既存ユーザーとして表示するか、訪問者として表示するかを切り替えることもできます。
+
+![決済フォームのプレビューボタン](/img/config/checkout-form-preview-button.png)
+
+![決済フォームのプレビューモーダル](/img/config/checkout-form-preview-modal.png)
+
+最後に、詳細オプションでは、「ありがとうございます」ページのメッセージを設定したり、コンバージョンを追跡するスニペットを追加したり、決済フォームにカスタムCSSを追加したり、特定の国に制限したりできます。
+
+![詳細オプション](/img/config/checkout-form-advanced.png)
+
+右側の列にあるこのオプションを切り替えることで、決済フォームを手動で有効または無効にすることも、フォームを完全に削除することもできます。
+
+![有効切り替え](/img/config/checkout-form-active.png)
+
+フォームを削除するには、フォーム操作内の削除オプションをクリックします。
+
+![決済フォームの削除オプション](/img/config/checkout-form-delete.png)
+
+決済フォームの保存を忘れないでください！
+
+![保存ボタン](/img/config/checkout-form-save.png)
+
+フォームのショートコードを取得するには、「ショートコードを生成」をクリックし、モーダルウィンドウに表示された結果をコピーします。
+
+![ショートコード付き保存ボタン](/img/config/checkout-form-save.png)
+
+### 料金表項目 {#the-pricing-table-field}
+
+**料金表**フィールドは、購入手続きフォームに商品を表示し、顧客がプランを選べるようにします。このフィールドを編集すると、いくつかのオプションを設定できます。
+
+![料金表フィールド設定](/img/config/pricing-table-field-settings.png)
+
+フロントエンドの登録フォームでは、料金表は次のように表示されます。
+
+![フロントエンドの購入手続き料金表](/img/config/frontend-checkout-pricing-table.png)
+
+  * **商品**: 表示する商品と表示順を選択します。
+  * **異なる期間を強制**: 有効にすると、現在選択されている請求期間に一致する価格バリエーションがあるかどうかに関係なく、すべての商品が表示されます。無効（初期設定）の場合、選択した期間のバリエーションがない商品は非表示になります。
+    ![料金表の期間強制オプション](/img/config/pricing-table-force-durations.png)
+  * **事前選択時に非表示**: URL（例: `/register/premium`）経由でプランがすでに選択されている場合、料金表を非表示にします。
+  * **料金表テンプレート**: 料金表の見た目のテンプレート（シンプルリスト、レガシーなど）を選択します。
+
+フォームにその商品の購入手続きを完了するために必要なフィールドが含まれる前に商品を料金表へ追加すると、エディターに警告が表示されます。本番の登録フォームを公開または変更保存する前に、この警告を使って不足している必須フィールドを追加してください。
+
+### 期間選択切り替えの追加 {#adding-a-period-selection-toggle}
+
+商品に[価格バリエーション](creating-your-first-subscription-product#price-variations)（例: 月額料金と年額料金）を設定している場合、チェックアウトフォームに**期間選択**フィールドを追加できます。このフィールドは、顧客が請求期間を切り替えられるトグルを表示し、価格表はリアルタイムで動的に更新されます。
+
+#### ステップ 1: 商品に価格バリエーションを設定する {#step-1-set-up-price-variations-on-your-products}
+
+期間選択フィールドを追加する前に、商品に価格バリエーションが設定されていることを確認してください。**Ultimate Multisite > 商品**に移動し、商品を編集して、**価格バリエーション**タブを開き、別の請求期間（例: 割引価格の年額）を追加します。
+
+![商品の価格バリエーションタブ](/img/config/product-price-variations-tab.png)
+
+#### ステップ 2: チェックアウトフォームに期間選択フィールドを追加する {#step-2-add-the-period-selection-field-to-your-checkout-form}
+
+1. **Ultimate Multisite > チェックアウトフォーム**に移動し、チェックアウトフォームを編集します。
+
+2. **価格表**フィールドを含むステップまで下にスクロールし、**新規フィールドを追加**をクリックします。
+
+3. フィールド種別の選択ダイアログで、**期間選択**をクリックします。
+
+![期間選択を表示している新規フィールド追加ダイアログ](/img/config/checkout-form-add-field-dialog.png)
+
+4. 期間オプションを設定します。各オプションには次が必要です:
+   * **期間**: 数値（例: `1`）
+   * **期間単位**: 期間の種別（日、週、月、または年）
+   * **ラベル**: 顧客に表示されるテキスト（例: 「月額」、「年額」）
+
+5. **+ Add Option**をクリックして、期間の選択肢をさらに追加します。これらの選択肢は、商品で設定した価格バリエーションと一致している必要があります。
+
+![期間選択フィールド設定](/img/config/period-selection-field-settings.png)
+
+6. **Period Selector Template**を選択します（Clean が初期設定で、カスタムCSSに対応したシンプルなスタイル付きセレクターを表示します）。
+
+7. **Save Field**をクリックします。
+
+#### ステップ3：Pricing Tableの上にフィールドを配置する {#step-3-position-the-field-above-the-pricing-table}
+
+最適なユーザー体験のため、チェックアウト手順で Period Selection フィールドが Pricing Table フィールドの**前**に表示されるようにしてください。チェックアウトフォームエディターでフィールドをドラッグして並べ替えられます。これにより、顧客はまず請求期間を選び、その期間の価格を確認できます。
+
+![フィールド順序を表示しているチェックアウトフォームエディター](/img/config/checkout-form-editor-with-fields.png)
+
+#### フロントエンドでの動作 {#how-it-works-on-the-frontend}
+
+設定が完了すると、登録ページを訪れた顧客には、価格表の上に期間セレクターが表示されます。別の請求期間をクリックすると、次のように動作します。
+
+  * 価格表は即座に更新され、選択した期間の価格が表示されます（ページの再読み込みは不要です）。
+  * Pricing Table フィールドで **Force Different Durations** が無効になっている場合、選択した期間の価格バリエーションがない商品は非表示になります。
+  * **Force Different Durations** が有効になっている場合、選択した期間のバリエーションがない商品でも、すべての商品が表示されたままになります（初期設定の価格が表示されます）。
+
+#### URLで請求期間を事前選択する {#pre-selecting-a-billing-period-via-url}
+
+URL から製品と請求期間を事前選択することもできます。Ultimate Multisite は次の URL パターンに対応しています。
+
+  * `/register/premium` — 「Premium」製品のみを事前選択します
+  * `/register/premium/12` — 製品と 12 か月の期間を事前選択します
+  * `/register/premium/1/year` — 製品と 1 年の期間を事前選択します
+
+### テンプレート選択フィールド {#the-template-selection-field}
+
+**テンプレート選択**フィールドでは、購入手続き中に顧客がサイトテンプレートを選べます。Ultimate Multisite v2.6.1 で追加された**単一ステップ**および**複数ステップ**の購入手続きフォームテンプレートには、現在は標準で含まれています。
+
+#### フィールドを手動で追加する {#adding-the-field-manually}
+
+v2.6.1 より前に作成されたフォームを使用している場合、または空のテンプレートから始めた場合は、次の手順を行います。
+
+1. **Ultimate Multisite > 購入手続きフォーム**に移動し、購入手続きフォームを編集します。
+2. サイト詳細を収集するステップで、**新しいフィールドを追加**をクリックします。
+3. フィールドタイプのダイアログから**テンプレート選択**を選択します。
+4. フィールドを設定します。
+   - **ラベル** — テンプレートグリッドの上に顧客へ表示される見出しです（例：「サイトテンプレートを選択」）。
+   - **必須** — 先に進む前に顧客がテンプレートを選択する必要があるかどうかです。
+
+#### 仕組み {#how-it-works}
+
+顧客が購入手続き中にテンプレートを選ぶと、Ultimate Multisite は新しいサイトをプロビジョニングする際にそれを使用します。表示されるテンプレートは、**サイトテンプレート**一覧（**Ultimate Multisite > サイトテンプレート**）から取得されます。顧客が利用可能としてマークされたテンプレートのみがここに表示されます。
+
+### 購入手続きフォームのベースドメイン {#checkout-form-base-domains}
+
+Ultimate Multisite v2.13.0 は、checkout フォームの **サイト URL** フィールドに設定されたドメインをネットワークのベースドメインとして扱います。`example.com` や `sites.example.com` のように、1 つ以上の共有登録ドメイン配下で顧客にサイトを作成させたい場合は、そのフィールドの利用可能ドメイン設定を使用してください。
+
+共有 checkout フォームのベースドメインは、サイトごとのカスタムドメインマッピングとしては扱われません。顧客がそれらのベースのいずれかにサブディレクトリサイトを作成しても、Ultimate Multisite は、その共有ホストをその 1 つのサイトだけに所属させるマッピング済みドメインレコードを作成しません。共有ホストは、同じ checkout フォームベースを使う兄弟サイトでも引き続き利用できます。
+
+`customer-example.com` のような顧客ごとのマッピング済みホストには、カスタムドメインを使用してください。多くのサイトで使える共有登録ホストには、checkout フォームのベースドメインを使用してください。
+
+#### フィールドの削除 {#removing-the-field}
+
+サイトテンプレートを提供しない場合は、フォームからテンプレート選択フィールドを削除してください。顧客には、**Ultimate Multisite > 設定 > サイトテンプレート** で設定されている既定のテンプレートが割り当てられます。

@@ -3,7 +3,7 @@ title: Cara Memasang WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Bagaimana untuk Memasang WordPress Multisite?
+# Bagaimana untuk Memasang WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite membolehkan anda mempunyai rangkaian laman web dalam satu pemasangan. Ini adalah ciri terbina dalam, tetapi ia tidak aktif secara lalai.
 
@@ -61,7 +61,7 @@ Dan kod ini, juga disediakan oleh WordPress, ke dalam fail _**.htaccess**_ anda:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Untuk mencipta subsite:
 
 Selepas mengisi medan-medan tersebut, klik butang "Add site". Setelah subsite baharu dicipta, akses subsite tersebut untuk memastikan ia berfungsi dengan baik.
 
-## Masalah Lazim:
+## Masalah Lazim: {#common-problems}
 
-### 1\. Saya boleh mencipta laman baharu tetapi ia tidak boleh diakses.
+### 1\. Saya boleh mencipta laman baharu tetapi ia tidak boleh diakses. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Jika anda memilih subdomain, anda juga perlu menyediakan wildcard subdomains untuk rangkaian multisite anda.
 

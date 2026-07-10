@@ -3,13 +3,13 @@ title: Kugabanya Urugero
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kumenya uburyo (v2)
+# Kumenya uburyo (v2) {#downgrading-a-plan-v2}
 
 _**Urugero Uburyo: Icyo cyacu cyerekana kuri Ultimate Multisite version 2.x.**_
 
 Gukora uburyo cyangwa gukoresha uburenganzira bwo kubyara (downgrading a plan or subscription) ni ikintu cyihutirwa cyane mu gihe abakoresha bafite ubushobozi bw'ubwoko cy'uburyo cyangwa bakigishije ko batagukunda uburyo bwo gukora subsite yabo.
 
-## Uburyo bwo kubyara uburyo (How to downgrade a plan)
+## Uburyo bwo kubyara uburyo (How to downgrade a plan) {#how-to-downgrade-a-plan}
 
 Abakoresha bafite ubushobozi bari babishobora kubyara uburyo cyangwa uburyo bwo gukoresha mu gihe cyose bafite uburyo bwo kumenya (logging in) ku dashboard y'admin ya subsite yabo kandi bakoresha **Change** kuri ipfupi y'account.
 
@@ -25,7 +25,7 @@ Kugenda, umuntu wumva gukora **Complete Checkout**. Iyo, izera yaba yugisha muho
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Icyo kigira kwitwa iyo umuntu yibara uburyo (What happens when a user downgrades their plan)
+### Icyo kigira kwitwa iyo umuntu yibara uburyo (What happens when a user downgrades their plan) {#what-happens-when-a-user-downgrades-their-plan}
 
 Ni ikintu runaka cyane ko kubyara uburyo bwo kubyara ntabwo kibyara uburyo bwo gukora mu gihe cy'uburyo bw'umuntu.
 
@@ -37,7 +37,7 @@ Ku guhindura cyangwa gukoresha ibyo mu gihe cyo, uba hari uburyo runaka 3: **Kug
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Icyo kishobora kwitwa ku gukoresha amafaranga (What happens to the payment)
+### Icyo kishobora kwitwa ku gukoresha amafaranga (What happens to the payment) {#what-happens-to-the-payment}
 
 Mu version 2.0, nta ngombwa ukwibanda cyangwa guhindura ibyo mu gihe cyo kubara amafaranga (proration).
 

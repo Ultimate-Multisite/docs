@@ -3,7 +3,7 @@ title: Fähigkeiten-Referenz
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Fähigkeiten-Referenz
+# Fähigkeiten-Referenz {#abilities-reference}
 
 Fähigkeiten sind die atomaren Aktionen, die der Gratis AI Agent auf Ihrer WordPress-Installation ausführen kann. Jede Fähigkeit ist eine registrierte PHP-Klasse, die ein JSON-Schema bereitstellt – der Agent liest dieses Schema zur Laufzeit aus, um zu verstehen, welche Parameter erforderlich sind und was die Fähigkeit zurückgibt.
 
@@ -11,11 +11,11 @@ Diese Seite dokumentiert alle Fähigkeiten, die mit Gratis AI Agent v1.9.0 gelie
 
 ---
 
-## Benutzerdefinierte Beitragstypen (Custom Post Types)
+## Benutzerdefinierte Beitragstypen (Custom Post Types) {#custom-post-types}
 
 Diese Fähigkeiten verwalten benutzerdefinierte Beitragstypen (CPTs), die über den Agenten registriert wurden. Die Registrierungen werden in der WordPress-Optionstabelle gespeichert, sodass sie auch nach Deaktivierung und Reaktivierung des Plugins bestehen bleiben.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registriert einen neuen benutzerdefinierten Beitragstyp.
 
@@ -50,7 +50,7 @@ Registriert einen neuen benutzerdefinierten Beitragstyp.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Gibt alle vom Agenten registrierten benutzerdefinierten Beitragstypen zurück.
 
@@ -73,7 +73,7 @@ Gibt alle vom Agenten registrierten benutzerdefinierten Beitragstypen zurück.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Deaktiviert einen zuvor vom Agenten registrierten benutzerdefinierten Beitragstyp. Bestehende Beiträge dieses Typs bleiben in der Datenbank erhalten, sind aber über den Beitragstyp nicht mehr zugänglich.
 
@@ -87,11 +87,11 @@ Deaktiviert einen zuvor vom Agenten registrierten benutzerdefinierten Beitragsty
 
 ---
 
-## Benutzerdefinierte Taxonomien (Custom Taxonomies)
+## Benutzerdefinierte Taxonomien (Custom Taxonomies) {#custom-taxonomies}
 
 Diese Fähigkeiten verwalten benutzerdefinierte Taxonomien. Genau wie CPTs werden auch die Registrierungen gespeichert.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registriert eine neue benutzerdefinierte Taxonomie.
 
@@ -123,7 +123,7 @@ Registriert eine neue benutzerdefinierte Taxonomie.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Gibt alle vom Agenten registrierten benutzerdefinierten Taxonomien zurück.
 
@@ -146,7 +146,7 @@ Gibt alle vom Agenten registrierten benutzerdefinierten Taxonomien zurück.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Deaktiviert eine zuvor vom Agenten registrierte benutzerdefinierte Taxonomie.
 
@@ -160,11 +160,11 @@ Deaktiviert eine zuvor vom Agenten registrierte benutzerdefinierte Taxonomie.
 
 ---
 
-## Designsystem (Design System)
+## Designsystem (Design System) {#design-system}
 
 Fähigkeiten des Designsystems modifizieren die visuelle Darstellung der WordPress-Seite – von benutzerdefiniertem CSS über Blockmuster bis hin zum Seitensymbol.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Fügt CSS über `wp_add_inline_style` in den `<head>` der Seite hinzu. Das CSS wird in der Option `gratis_ai_agent_custom_css` gespeichert und sauber entfernt, wenn die Fähigkeit zurückgesetzt wird.
 
@@ -190,7 +190,7 @@ Fügt CSS über `wp_add_inline_style` in den `<head>` der Seite hinzu. Das CSS w
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registriert ein wiederverwendbares Blockmuster in der WordPress Pattern Library.
 
@@ -209,13 +209,13 @@ Registriert ein wiederverwendbares Blockmuster in der WordPress Pattern Library.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Listet alle vom Agenten registrierten Blockmuster auf.
 
 **Parameter** — keine
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Setzt das WordPress-Webseiten-Logo auf eine bestimmte Attachment-ID oder eine entfernte Bild-URL. Wenn eine URL angegeben wird, wird das Bild heruntergeladen und in der Media Library importiert.
 
@@ -232,7 +232,7 @@ Einer von `attachment_id` oder `url` muss angegeben werden.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Wendet ein benanntes Farbbe-/Typografie-Preset auf die `theme.json` (oder `global-styles`) des aktiven Themes an. Presets sind gebündelte Sammlungen, die vom Gratis AI Agent Team gepflegt werden.
 
@@ -257,11 +257,11 @@ Wendet ein benanntes Farbbe-/Typografie-Preset auf die `theme.json` (oder `globa
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Global Styles ermöglichen das Lesen und Schreiben von `theme.json`-Werten über die WordPress Global Styles API, was alle Blöcke und Vorlagen sitewide beeinflusst.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Gibt die aktuelle Konfiguration der globalen Styles zurück.
 
@@ -275,7 +275,7 @@ Gibt die aktuelle Konfiguration der globalen Styles zurück.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Aktualisiert einen oder mehrere Werte in der globalen Styles-Konfiguration.
 
@@ -302,7 +302,7 @@ Aktualisiert einen oder mehrere Werte in der globalen Styles-Konfiguration.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Setzt alle vom Agent angewendeten globalen Styles-Änderungen zurück und stellt die Standardeinstellungen des Themes wieder her.
 
@@ -312,11 +312,11 @@ Setzt alle vom Agent angewendeten globalen Styles-Änderungen zurück und stellt
 
 ---
 
-## Navigation Menüs
+## Navigation Menüs {#navigation-menus}
 
 Navigation Menü-Funktionen erstellen und verwalten WordPress Navigationsmenüs und deren Elemente.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Erstellt ein neues WordPress Navigationsmenü.
 
@@ -331,7 +331,7 @@ Erstellt ein neues WordPress Navigationsmenü.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Benennt ein Menü um oder weist es einem Theme-Standort neu zu.
 
@@ -347,7 +347,7 @@ Benennt ein Menü um oder weist es einem Theme-Standort neu zu.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Fügt einen Eintrag zu einem bestehenden Navigationsmenü hinzu.
 
@@ -367,7 +367,7 @@ Fügt einen Eintrag zu einem bestehenden Navigationsmenü hinzu.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Entfernt einen Eintrag aus einem Navigationsmenü.
 
@@ -381,7 +381,7 @@ Entfernt einen Eintrag aus einem Navigationsmenü.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Listet alle WordPress Navigationsmenüs auf, einschließlich ihrer zugewiesenen Theme-Standorte.
 
@@ -404,11 +404,11 @@ Listet alle WordPress Navigationsmenüs auf, einschließlich ihrer zugewiesenen 
 
 ---
 
-## Options Management
+## Options Management {#options-management}
 
 Optionen-Funktionen lesen und schreiben WordPress-Optionen über `get_option` / `update_option`. Ein integrierter Sicherheitsblocklist verhindert versehentliche Änderungen an kritischen Einstellungen.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Liest eine WordPress-Option.
 
@@ -424,7 +424,7 @@ Gibt einen Fehler zurück, wenn `option_name` auf der Sicherheitsblockliste steh
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Schreibt eine WordPress-Option.
 
@@ -442,7 +442,7 @@ Gibt einen Fehler zurück, wenn `option_name` auf der Sicherheitsblockliste steh
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Löscht eine WordPress-Option.
 
@@ -458,7 +458,7 @@ Gibt einen Fehler zurück, wenn `option_name` auf der Sicherheitsblockliste steh
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Listet WordPress-Optionen auf, die einem Muster entsprechen.
 
@@ -482,11 +482,11 @@ Listet WordPress-Optionen auf, die einem Muster entsprechen.
 
 ---
 
-## Content Management
+## Content Management {#content-management}
 
 Content Management-Funktionen ermöglichen das Erstellen und Bearbeiten von WordPress-Posts und Seiten. Post-IDs werden zurückgegeben, damit nachfolgende Schritte in Multi-Ability-Plänen auf den erstellten Inhalt verweisen können.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Erstellt einen neuen WordPress-Post, eine Seite oder einen Eintrag für einen benutzerdefinierten Post-Typ.
 
@@ -521,7 +521,7 @@ Erstellt einen neuen WordPress-Post, eine Seite oder einen Eintrag für einen be
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Aktualisiert einen bestehenden WordPress-Post oder eine Seite.
 
@@ -551,7 +551,7 @@ Aktualisiert einen bestehenden WordPress-Post oder eine Seite.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Erstellt mehrere Posts in einem einzigen Aufruf der Fähigkeit, um Round-Trips bei der Website-Erstellung oder dem Bulk-Content-Import zu reduzieren. Die Posts werden nacheinander erstellt; wenn einer fehlschlägt, fahren die anderen fort und der Fehler wird im Ergebnisarray gemeldet.
 
@@ -603,7 +603,7 @@ Erstellt mehrere Posts in einem einzigen Aufruf der Fähigkeit, um Round-Trips b
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Weist ein Vorschaubild (Post-Thumbnail) einem bestehenden Post oder einer Seite zu. Es akzeptiert eine vorhandene ID aus der Media Library oder eine entfernte Bild-URL; wenn eine URL angegeben wird, wird das Bild automatisch heruntergeladen und importiert.
 
@@ -622,17 +622,17 @@ Eines von `attachment_id` oder `url` muss angegeben werden.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Erstellt ein Kontaktformular unter Verwendung des aktiven Formular-Plugins (Contact Form 7, WPForms, Fluent Forms oder Gravity Forms, je nachdem, welches installiert ist). Es gibt einen Shortcode zurück, der in jedem Post oder jeder Seite eingebettet werden kann.
 
 **Parameter**
 
-## Visuelle Überprüfung
+## Visuelle Überprüfung {#visual-review}
 
 Die Funktion Visual Review ermöglicht es dem Agenten, Screenshots von Live-Seiten aufzunehmen und diese zu analysieren. Dadurch können Design-Überprüfungen autonom durchgeführt werden, Vergleiche vor und nach Änderungen sowie visuelle Regressionsprüfungen – ganz ohne dass Sie eine Browser-Erweiterung installieren müssen.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Diese Funktion nimmt einen Screenshot einer WordPress-Seite an einer bestimmten URL mithilfe eines serverseitigen Headless Browsers auf. Das Bild wird in der Media Library gespeichert und es wird eine CDN-URL zurückgegeben.
 
@@ -661,7 +661,7 @@ Diese Funktion nimmt einen Screenshot einer WordPress-Seite an einer bestimmten 
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Diese Funktion nimmt zwei Screenshots auf und gibt einen visuellen Differenzwert sowie ein Differenzbild zurück, das die geänderten Bereiche hervorhebt. Sie ist nützlich, um zu bestätigen, dass eine Designänderung das erwartete Ergebnis erzielt hat, oder um unbeabsichtigte Regressionsfehler zu erkennen.
 
@@ -691,7 +691,7 @@ Ein `diff_score` von `0.0` bedeutet keine sichtbare Änderung; `1.0` bedeutet, d
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Diese Funktion nimmt einen Screenshot einer Seite auf und sendet ihn an das Sprachmodell zur visuellen Analyse. Sie gibt eine strukturierte Bewertung zurück, die Layout, Typografie, Farbverwendung und Barrierefreiheitsaspekte abdeckt.
 
@@ -722,11 +722,11 @@ Diese Funktion nimmt einen Screenshot einer Seite auf und sendet ihn an das Spra
 
 ---
 
-## Installierbare Fähigkeiten
+## Installierbare Fähigkeiten {#installable-abilities}
 
 Das Register installierbarer Fähigkeiten ermöglicht es Ihnen, den Agenten mit zusätzlichen Fähigkeitspaketen zu erweitern, die als WordPress-Plugins verteilt werden. Jedes Paket registriert eine oder mehrere Fähigkeiten mithilfe der Standard-Ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Gibt das Katalog der Fähigkeitspakete zurück, die aus dem Register zur Installation verfügbar sind.
 
@@ -755,7 +755,7 @@ Gibt das Katalog der Fähigkeitspakete zurück, die aus dem Register zur Install
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Lädt und aktiviert ein Ability Pack aus dem Registry herunter.
 
@@ -769,7 +769,7 @@ Lädt und aktiviert ein Ability Pack aus dem Registry herunter.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Abfragt das Ability Registry nach dem besten Plugin für einen beschriebenen Anwendungsfall und installiert es optional.
 

@@ -1,133 +1,154 @@
 ---
-title: Změny v prodejci domén
+title: Seznam změn Prodejce domén
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Seznam změn pro Domain Seller
+# Changelog Domain Seller {#domain-seller-changelog}
 
-Verze 1.1.0 - Vydáno 8. 5. 2026
-* Nové: Implementace vytváření DNS záznamů (add_dns_record) pro registrátory ResellerClub, Enom a OpenSRS
-* Oprava: Parser výchozích DNS záznamů nyní toleruje tokeny {DOMAIN} a {SITE_URL}
-* Oprava: Slugi pole výběru domény v checkoutu byly zasíleny do namespace, aby se zabránilo kolizi s `site_url`
+Verze 1.3.0 - Vydáno 2026-06-02
+- Nové: Přidáno upozornění pro správu sítě, když zůstatek prodejce HostAfrica klesne příliš nízko
+- Nové: Přidáno automatické mapování nově registrovaných domén na síťový web
+- Oprava: Požadavky na pole registranta použity pouze při registraci nové domény
+- Oprava: Upozornění na sledování zůstatku je nyní možné zavřít
+- Oprava: Zajištěno zachování fakturačních údajů registranta ve WooCommerce
+- Oprava: Vynuceny požadavky na kontakt registranta během registrace
+- Oprava: Zabráněno vytváření produktů pro registraci domén s 0% marží
+- Oprava: Zachován výběr domén a ceny v průběhu relace checkoutu
+- Oprava: Vylepšeno zobrazení měny u cen domén HostAfrica
+- Oprava: Vylepšeno chování form-action v checkout formuláři, aby se předešlo neshodám query-var v jádru WP
+- Vylepšeno: Propojena dokumentace konfigurace prodejce HostAfrica v pokynech k nastavení
 
-Verze 1.0.8 - Vydáno 7. 5. 2026
-* Oprava: Cenotvorba domény ResellerClub nyní načítá aktuální spotřebitelské ceny z правильного API endpointu
+Verze 1.2.0 - Vydáno 2026-05-25
+- Nové: Přidána HostAfrica jako integrace pro prodej domén s podporou checkoutu, průvodce nastavením, vyhledávání, TLD/cen, registrace, obnovení, převodu, nameserveru, DNS, EPP code, registrar lock a ochrany ID
+- Nové: Přidán Openprovider jako integrace pro prodej domén s podporou cen pro prodejce, registrace, obnovení, převodu, nameserveru, DNS, EPP code, registrar lock, WHOIS privacy a synchronizace TLD
+- Nové: Přidán Hostinger jako integrace pro prodej domén využívající sdílený Hostinger API token z hlavní integrace pro kontroly dostupnosti, registraci, aktualizace nameserverů, registrar lock a WHOIS privacy
+- Vylepšeno: Přidány docblocky akcí a filtrů životního cyklu domény pro pokyny k integraci pro vývojáře
+- Vylepšeno: Aktualizována metadata kompatibility pluginu na WordPress 7.0 v readme doplňku
+- Vylepšeno: Aktualizovány plánovací šablony používané pro koordinaci nadcházejícího vydání
 
-Verze 1.0.7 - Vydáno 6. 5. 2026
-* Oprava: Testovací připojení domény ResellerClub odesílá požadovaný parametr tlds (#224)
+Verze 1.1.0 - Vydáno 2026-05-08
+- Nové: Vytváření DNS záznamů (add_dns_record) implementováno pro registrátory ResellerClub, Enom a OpenSRS
+- Oprava: Výchozí parser DNS Records nyní toleruje tokeny {DOMAIN} a {SITE_URL}
+- Oprava: Slugy polí checkoutu pro výběr domény mají namespace, aby se předešlo kolizi se site_url
 
-Verze 1.0.6 - Vydáno 5. 5. 2026
-* Oprava: Registrace domény ResellerClub nyní funguje správně díky vylepšené manipulaci s odpověďmi API a směrování poskytovatelů řízené registrem
-* Oprava: Vylepšení uživatelského rozhraní (UX) stránky administrace pro registraci domény
-* Odebráno: Integrace registrátora CyberPanel
+Verze 1.0.8 - Vydáno 2026-05-07
+- Oprava: Ceny domén ResellerClub nyní načítají aktuální nákladové ceny ze správného API endpointu
 
-Verze 1.0.5 - Vydáno 2. 4. 2026
+Verze 1.0.7 - Vydáno 2026-05-06
+* Oprava: ResellerClub test_connection odesílá požadovaný parametr tlds (#224)
+
+Verze 1.0.6 - Vydáno 2026-05-05
+* Oprava: Registrace domén ResellerClub nyní funguje správně díky vylepšenému zpracování odpovědí API a směrování poskytovatele podle registru
+* Oprava: Vylepšení UX admin stránky Register Domain
+* Odstraněno: Integrace registrátora CyberPanel
+
+Verze 1.0.5 - Vydáno 2026-04-02
 * Nové: Integrace registrátora GoDaddy pro registraci a správu domén
 * Nové: Integrace registrátora NameSilo
 * Nové: Integrace registrátora ResellerClub
-* Nové: Automatické ověření odesílající domény SES při nákupu a při přiřazení
-* Oprava: Konstanty pluginu Guard proti opětovné definici v testovacím prostředí
-* Oprava: MySQL správně rozděluje slova v install-wp-tests.sh
+* Nové: Automatické ověření odesílací domény SES při nákupu a mapování domény
+* Oprava: Ochrana konstant pluginu proti opětovné definici v testovacím prostředí
+* Oprava: MySQL flags se v install-wp-tests.sh správně rozdělují na slova
 
-Verze 1.0.4 - Vydáno 14. 3. 2026
-* **Oprava:** Některé chybějící CSS assety
+Verze 1.0.4 - Vydáno 2026-03-14
+* **Oprava:** Některé chybějící css assety
 * **Oprava:** Chyba související s nedostupnými tlds
 
-Verze 1.0.3 - Vydáno 9. 3. 2026
-* **Oprava:** Chyby reaktivní vlastnosti Vue (domain_option, selected_domain, domain_provider) při použití zastaralého formuláře pro registraci s krátkým kódem checkoutu
-* **Oprava:** Vyrovnání pole pro zadání poddomény a příliš velký text v poli výběru domény v checkoutu
-* **Oprava:** Skrytí bloku „Vaše URL bude“ za předpokladu, že je přítomno pole výběru domény
+Verze 1.0.3 - Vydáno 2026-03-09
+* **Oprava:** Chyby reaktivních vlastností Vue (domain_option, selected_domain, domain_provider) při použití starší šablony registrace se shortcode checkoutu
+* **Oprava:** Nesprávné zarovnání vstupního pole subdomény a příliš velký text v poli checkoutu pro výběr domény
+* **Oprava:** Skrýt náhledový blok „Vaše URL bude“, když je přítomno pole pro výběr domény
 
-Verze 1.0.2 - Vydáno 1. 3. 2026
-* **Vylepřeno:** Globální nastavení značky odstraněno ze stránky nastavení — cenotvorba je nyní výhradně na úrovni produktu
-* **Vylepřeno:** Přidán odkaz „Spravovat produkty domény“ na stránce nastavení pro rychlou navigaci
-* **Vylepřeno:** Jasnější popisy polí a tipy pro nastavení produktů domény (catch-all vs TLD-specifické, typy značky, úvodní ceny)
-* **Vylepřeno:** Lepší popisy po celém panelu nastavení (hledání TLD, obnovy, DNS, upozornění)
+Verze 1.0.2 - Vydáno 2026-03-01
+* **Vylepšeno:** Odstraněna globální nastavení marže ze stránky nastavení — ceny jsou nyní výhradně podle produktu
+* **Vylepšeno:** Přidán odkaz „Spravovat doménové produkty“ na stránku nastavení pro rychlou navigaci
+* **Vylepšeno:** Jasnější popisy polí a tooltipy pro nastavení doménových produktů (catch-all vs specifické pro TLD, typy marže, úvodní ceny)
+* **Vylepšeno:** Lepší popisy napříč stránkou nastavení (vyhledávání TLD, obnovení, DNS, oznámení)
 
-Verze 1.0.1 - Vydáno 27. 2. 2026
+Verze 1.0.1 - Vydáno 2026-02-27
 
-* **Nové:** Nástroj pro import TLD pro masivní správu cen
-* **Nové:** Podpora úvodních cen pro produkty domény
-* **Nové:** E2E testovací sada pomocí Cypress
-* **Nové:** E-mailové šablony pro upozornění na životní cyklus domény
-* **Nové:** Pole adresy registranta na modalu administrace pro registraci domény, předvyplněné z nastavení
-* **Nové:** Uživatelské rozhraní pro správu DNS zákazníka s podporou přidání, úpravy a mazání záznamů
-* **Nové:** Možnost checkoutu „Přineste svou vlastní doménu“ s automatickým přiřazením domény
-* **Nové:** Automatické generování URL stránky z názvu domény během checkoutu
-* **Nové:** Výchozí konfigurace nameserverů a DNS záznamů v nastavení
-* **Nové:** Detaily o registraci domény a správu DNS na hlavní stránce úpravy domény
-* **Nové:** Setup Wizard automaticky vytváří výchozí produkt domény s rozumnými výchozími hodnotami
-* **Nové:** Denná automatická synchronizace TLD pomocí cron pro všechny nakonfigurované poskytovatele
-* **Nové:** Ochrana WHOIS s konfigurací na úrovni produktu (vždy zapnuté, volba zákazníka nebo vypnuté)
-* **Nové:** Kontrolka pro ochranu WHOIS v checkoutu s zobrazením cen a podporou tmavého režimu
-* **Nové:** Administrační stránka pro registraci domény pro manuální registraci domény
-* **Nové:** Automatické aktualizace pluginů přes Ultimate Multisite update server
-* **Nové:** Filtrační záložka typu produktu domény v tabulce seznamu produktů s purple badge styling
-* **Nové:** Pole kontaktů registranta (jméno, adresa, město, stát, poštovní směrovací číslo, krajina, telefon) na formuláři checkoutu domény
-* **Nové:** Validace polí registranta před voláním API registrátora s jasnými chybovými hláškami
-* **Nové:** Kanály logování specifické pro poskytovatele pro události registraci domény (např. domain-seller-namecheap.log)
-* **Nové:** Pole kontaktů registranta na hlavní formulář pro registraci/signup (zobrazeno při registraci domény)
-* **Vylepřeno:** Pole výběru domény v checkoutu nahrazeno jednotným polem výběru domény, které podporuje záložky poddoména, registraci a stávající doména
-* **Vylepřeno:** Nastavení produktů domény se vykresluje inline na stránce úpravy produktu pomocí core widget systému
-* **Vylepřeno:** Informace o doméně zákazníka se připojují k jádrovému widgetu přiřazení domény namísto samostatného metaboxu
-* **Vylepřeno:** Wizard pro import TLD zjednodušen na jednoklikovou synchronizaci ze všech poskytovatelů
-* **Vylepřeno:** Kontrola dostupnosti domény Namecheap používá dávkové volání API pro rychlejší vyhledávání
-* **Vylepřeno:** API pro ceny Namecheap používá správné parametry a parsování odpovědi
-* **Vylepřeno:** Centralizované úložiště TLD v jediné network option
-* **Vylepřeno:** Protokolování aktivit domény pro změny DNS, převody a aplikaci konfigurace
-* **Vylepřeno:** Plná synchronizace TLD pro OpenSRS pomocí IANA master list s dávkovou validací
-* **Vylepřeno:** Plná synchronizace TLD pro Namecheap s paginovanými API požadavky
-* **Vylepřeno:** Zastaralé třídy poskytovatelů nahrazeny vzorem Integration Registry
-* **Vylepřeno:** Panel nastavení s konfigurací DNS a převodů
-* **Vylepřeno:** Telefonní čísla automaticky formátována na +CC.NNN formát registrátora
-* **Vylepřeno:** Validace pole telefonu odstraňuje formátovací znaky před odesláním
-* **Vylepřeno:** Požadavek na verzi zvýšen na Ultimate Multisite 2.4.12 s jasnějším upozorněním
-* **Vylepřeno:** CI workflow používá správný checkout jak pro addon, tak pro jádrový plugin
-* **Vylepřeno:** prepare_registrant_info() čte z uživatelského meta uloženého v checkoutu s fallbackem na adresu fakturace
-* **Opraveno:** AJAX vyhledávání domény selhává pro uživatele, kteří nejsou přihlášeni během checkoutu
-* **Opraveno:** AJAX cenotvorba domény selhává pro uživatele, kteří nejsou přihlášeni během checkoutu
-* **Opraveno:** Fatální chyba opětovné definice třídy Spyc při spouštění WP-CLI příkazů
-* **Opraveno:** Time-out sandbox API Namecheap příliš krátký
-* **Opraveno:** Text tlačítka výběru domény v vyhledávání domény není viditelný na zeleném pozadí
-* **Opraveno:** Registrace domény selhává s chybou „RegistrantFirstName is Missing“ kvůli chybějícím kontaktním informacím
-* **Opraveno:** Doména je vytvořena s blog_id=0, když neexistoval ještě obsah na stránce během checkoutu
-* **Opraveno:** Nastavení výchozích TLD je vraceno jako řetězec namísto zparsedého pole
-* **Odebráno:** Samostatní administrace pro správu domény — nyní řešeno přes jádrové stránky domény
+* **Nové:** Nástroj pro import TLD pro hromadnou správu cen
+* **Nové:** Podpora zaváděcích cen pro doménové produkty
+* **Nové:** Sada E2E testů s Cypress
+* **Nové:** E-mailové šablony pro oznámení životního cyklu domény
+* **Nové:** Pole adresy registranta v administračním modálním okně registrace domény, předvyplněná z nastavení
+* **Nové:** Rozhraní pro správu DNS zákazníkem s podporou přidávání, úprav a mazání záznamů
+* **Nové:** Možnost checkoutu „Přinést vlastní doménu“ s automatickým mapováním domény
+* **Nové:** Automatické generování URL webu z názvu domény během checkoutu
+* **Nové:** Konfigurace výchozího nameserveru a DNS záznamu v nastavení
+* **Nové:** Podrobnosti registrace domény a správa DNS na základní stránce úprav domény
+* **Nové:** Průvodce nastavením automaticky vytváří výchozí doménový produkt s rozumnými výchozími hodnotami
+* **Nové:** Denní automatická synchronizace TLD přes cron napříč všemi nakonfigurovanými poskytovateli
+* **Nové:** Ochrana soukromí WHOIS s konfigurací pro jednotlivé produkty (vždy zapnuto, volba zákazníka nebo vypnuto)
+* **Nové:** Zaškrtávací políčko soukromí WHOIS v checkoutu se zobrazením ceny a podporou tmavého režimu
+* **Nové:** Administrační stránka Registrace domény pro ruční registraci domény
+* **Nové:** Automatické aktualizace pluginu přes aktualizační server Ultimate Multisite
+* **Nové:** Záložka filtru typu doménového produktu v tabulce seznamu produktů s fialovým stylem štítku
+* **Nové:** Pole kontaktních údajů registranta (jméno, adresa, město, stát, PSČ, země, telefon) ve formuláři checkoutu domény
+* **Nové:** Ověření polí registranta před voláním API registrátora s jasnými chybovými zprávami
+* **Nové:** Logovací kanály specifické pro poskytovatele pro události registrace domény (např. domain-seller-namecheap.log)
+* **Nové:** Pole kontaktních údajů registranta v hlavním registračním/přihlašovacím checkout formuláři (zobrazí se při registraci domény)
+* **Vylepšeno:** Pole checkoutu Vyhledávání domény nahrazeno sjednoceným polem Výběr domény podporujícím záložky subdomény, registrace a existující domény
+* **Vylepšeno:** Nastavení doménového produktu se vykreslují přímo na stránce úprav produktu prostřednictvím základního systému widgetů
+* **Vylepšeno:** Informace o doméně zákazníka se napojují na základní widget mapování domény místo samostatného metaboxu
+* **Vylepšeno:** Průvodce importem TLD zjednodušen na synchronizaci ze všech poskytovatelů jedním kliknutím
+* **Vylepšeno:** Dostupnost domény Namecheap používá dávkové volání API pro rychlejší vyhledávání
+* **Vylepšeno:** Cenové API Namecheap používá správné parametry a parsování odpovědi
+* **Vylepšeno:** Centralizované úložiště TLD v jedné síťové volbě
+* **Vylepšeno:** Protokolování aktivity domén pro změny DNS, převody a aplikaci konfigurace
+* **Vylepšeno:** Úplná synchronizace TLD pro OpenSRS pomocí hlavního seznamu IANA s dávkovým ověřením
+* **Vylepšeno:** Úplná synchronizace TLD pro Namecheap se stránkovanými API požadavky
+* **Vylepšeno:** Starší třídy poskytovatelů nahrazeny vzorem Integration Registry
+* **Vylepšeno:** Panel nastavení s konfigurací DNS a převodů
+* **Vylepšeno:** Telefonní čísla se automaticky formátují do formátu registrátora +CC.NNN
+* **Vylepšeno:** Ověření telefonního pole před odesláním odstraňuje formátovací znaky
+* **Vylepšeno:** Požadavek na verzi zvýšen na Ultimate Multisite 2.4.12 s jasnějším upozorněním
+* **Vylepšeno:** CI workflow používá správný checkout pro addon i základní plugin
+* **Vylepšeno:** prepare_registrant_info() čte z uživatelských metadat uložených při checkoutu se záložním použitím fakturační adresy
+* **Opraveno:** Domain search AJAX selhával pro nepřihlášené uživatele během checkoutu
+* **Opraveno:** Domain pricing AJAX selhával pro nepřihlášené uživatele během checkoutu
+* **Opraveno:** Fatální chyba opětovné deklarace třídy Spyc při spouštění příkazů WP-CLI
+* **Opraveno:** Timeout Namecheap sandbox API byl příliš krátký
+* **Opraveno:** Text tlačítka Vybrat při vyhledávání domény nebyl viditelný na zeleném pozadí
+* **Opraveno:** Registrace domény selhávala s chybou „RegistrantFirstName is Missing“ kvůli chybějícím kontaktním údajům
+* **Opraveno:** Doménový záznam vytvořen s blog_id=0, když web v době checkoutu ještě neexistoval
+* **Opraveno:** Nastavení výchozích TLD se vracelo jako řetězec místo parsovaného pole
+* **Odstraněno:** Samostatná administrační stránka Správa domén — nyní řešeno přes základní stránky domén
 
-Verze 1.0.0 - Vydáno 28. 9. 2025
+Verze 1.0.0 - Vydáno 2025-09-28
 
-**Velká revize pro Ultimate Multisite v2**
+**Zásadní přepsání pro Ultimate Multisite v2**
 
-* **Nové:** Kompletní přepsání moderní architekturou PHP 7.4+
-* **Nové:** Bezproblémová integrace s systémem checkoutu Ultimate Multisite v2
-* **Nové:** Správa produktů domény s flexibilními cenovými možnostmi
-* **Nové:** Architektura podpory více poskytovatelů domény
-* **Nové:** Integrace automatické obnovy a předplatného
-* **Nové:** Uživatelské rozhraní pro správu domény zákazníka
-* **Nové:** Monitorování a logy administrátorských domén
-* **Nové:** Podpora kupónů pro produkty domény
+* **Nové:** Kompletní přepsání s moderní architekturou PHP 7.4+
+* **Nové:** Bezproblémová integrace se systémem checkoutu Ultimate Multisite v2
+* **Nové:** Správa doménových produktů s flexibilními cenovými možnostmi
+* **Nové:** Architektura podpory více poskytovatelů domén
+* **Nové:** Integrace automatického obnovení a předplatného
+* **Nové:** Rozhraní pro správu domén zákazníkem
+* **Nové:** Administrační monitorování domén a logy
+* **Nové:** Podpora kupónů pro doménové produkty
 * **Nové:** Komplexní správa nastavení
-* **Nové:** Developer-friendly rozšiřitelný kód
-* **Vylepřeno:** Aktualizovaný poskytovatel OpenSRS s plnou podporou funkcí
-* **Vylepřeno:** Moderní UI konzistentní s Ultimate Multisite v2
-* **Opraveno:** Všechny zastaralé kódy v1 aktualizovány na standardy v2
-* **Odebráno:** Kompatibilita se starší verzí v1 (změna, která narušuje fungování)
+* **Nové:** Rozšiřitelná kódová základna přívětivá pro vývojáře
+* **Vylepšeno:** Aktualizovaný poskytovatel OpenSRS s plnou podporou funkcí
+* **Vylepšeno:** Moderní UI konzistentní s Ultimate Multisite v2
+* **Opraveno:** Veškerý zastaralý kód v1 aktualizován na standardy v2
+* **Odstraněno:** Kompatibilita se starší v1 (nekompatibilní změna)
 
-### Předchozí verze (v1 Legacy)
+### Předchozí verze (starší v1) {#previous-versions-v1-legacy}
 
-### Verze 0.0.3 - 20. 8. 2019
+### Verze 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Opraveno: Nezpůsobilost kompatibility s Groundhogg CRM
-* Poznámka: Toto byla poslední verze kompatibilní s v1
+* Opraveno: Nekompatibilita s Groundhogg CRM
+* Poznámka: Toto bylo poslední vydání kompatibilní s v1
 
-### Verze 0.0.2 - 7. 12. 2018
+### Verze 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Opraveno: Odebráno pole klíče licence
-* Opraveno: Záložky plánů chyběly, když byl aktivní plugin funkce
-* Vylepřeno: Přidáno tlačítko „Přeskočit“ na pole registraci
+* Opraveno: Odstraněno pole License Key
+* Opraveno: Záložky plánů chyběly, když byl aktivní funkční plugin
+* Vylepšeno: Přidáno tlačítko přeskočení v registračním poli
 
-### Verze 0.0.1 - Počáteční vydání
+### Verze 0.0.1 - První vydání {#version-001---initial-release}
 
 * Základní integrace OpenSRS pro WP Ultimo v1
-* Jednoduché vyhledávání a registraci domény
-* Přístupy k doménám založené na pláne
+* Jednoduché vyhledávání a registrace domén
+* Oprávnění domén založená na plánech

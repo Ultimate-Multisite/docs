@@ -4,13 +4,13 @@ title: Action - wp_ultimo_payfast_activation
 sidebar_label: wp_ultimo_payfast_activation
 _i18n_hash: fd15759aa132be74dc9b66985104ce4e
 ---
-# Action: wp_ultimo_payfast_activation
+# Action: wp_ultimo_payfast_activation {#action-wpultimopayfastactivation}
 
 به بخش‌های دیگر پلاگین اجازه می‌دهد تا کدهای مربوط به فعال‌سازی خود را متصل کنند.
 
-### Since
+### Since {#since}
 
 - 1.9.6
-### Source
+### Source {#source}
 
 در [inc/class-hooks.php](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-hooks.php#L83) در خط ۸۳ تعریف شده است.

@@ -3,15 +3,15 @@ title: 호스피탈리티 메뉴
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 레스토랑 메뉴
+# 레스토랑 메뉴 {#hospitality-menus}
 
 **Hospitality Menus** 기능은 Theme Builder가 구조화된 음식 및 음료 메뉴 페이지를 워드프레스 사이트에 직접 생성하고 삽입할 수 있도록 합니다.
 
-## 개요
+## 개요 {#overview}
 
 Theme Builder를 사용하면 레스토랑, 카페, 바, 케이터링 서비스 등 접객 업종을 위한 전문적이고 구조화된 메뉴 페이지를 만들 수 있습니다. 이 메뉴들은 사이트 디자인에 완벽하게 통합되며, 쉽게 업데이트하고 관리할 수 있습니다.
 
-## 지원되는 접객 유형
+## 지원되는 접객 유형 {#supported-hospitality-types}
 
 - **레스토랑(Restaurants)** — 풀 서비스 다이닝 메뉴
 - **카페(Cafes)** — 커피 및 가벼운 식사 메뉴
@@ -21,9 +21,9 @@ Theme Builder를 사용하면 레스토랑, 카페, 바, 케이터링 서비스 
 - **푸드 트럭(Food Trucks)** — 이동식 음식 서비스 메뉴
 - **양조장 및 와이너리(Breweries and Wineries)** — 설명이 포함된 음료 메뉴
 
-## 메뉴 구조
+## 메뉴 구조 {#menu-structure}
 
-### 메뉴 카테고리
+### 메뉴 카테고리 {#menu-categories}
 
 메뉴는 다음과 같은 카테고리로 구성됩니다.
 
@@ -34,7 +34,7 @@ Theme Builder를 사용하면 레스토랑, 카페, 바, 케이터링 서비스 
 - **음료(Beverages)** — 음료 (알코올 및 비알코올)
 - **스페셜(Specials)** — 일일 또는 계절별 특별 메뉴
 
-### 메뉴 항목 형식
+### 메뉴 항목 형식 {#menu-item-format}
 
 각 메뉴 항목은 다음 정보를 포함합니다.
 
@@ -49,7 +49,7 @@ Theme Builder를 사용하면 레스토랑, 카페, 바, 케이터링 서비스 
 }
 ```
 
-#### 항목 필드
+#### 항목 필드 {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Theme Builder를 사용하면 레스토랑, 카페, 바, 케이터링 서비스 
 | `allergens` | array | 일반 알레르기 유발 물질 (견과류, 해산물 등) |
 | `availability` | string | 이용 가능 시기 (Daily, Seasonal 등) |
 
-## 레스토랑 메뉴 만들기
+## 레스토랑 메뉴 만들기 {#creating-hospitality-menus}
 
-### 1단계: 메뉴 정보 제공
+### 1단계: 메뉴 정보 제공 {#step-1-provide-menu-information}
 
 Theme Builder에게 메뉴에 대해 알려주세요.
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### 2단계: Theme Builder가 메뉴 생성
+### 2단계: Theme Builder가 메뉴 생성 {#step-2-theme-builder-generates-menu}
 
 Theme Builder는 다음 작업을 수행합니다.
 
@@ -81,7 +81,7 @@ Theme Builder는 다음 작업을 수행합니다.
 4. 가격과 설명을 형식화합니다.
 5. 식단 및 알레르기 정보를 추가합니다.
 
-### 3단계: 검토 및 사용자 지정
+### 3단계: 검토 및 사용자 지정 {#step-3-review-and-customize}
 
 다음과 같은 작업을 할 수 있습니다.
 
@@ -91,9 +91,9 @@ Theme Builder는 다음 작업을 수행합니다.
 4. 설명과 식단 정보를 업데이트합니다.
 5. 스타일과 레이아웃을 조정합니다.
 
-## 메뉴 표시 옵션
+## 메뉴 표시 옵션 {#menu-display-options}
 
-### 전체 메뉴 페이지
+### 전체 메뉴 페이지 {#full-menu-page}
 
 전체 메뉴를 표시하는 전용 페이지입니다.
 
@@ -102,7 +102,7 @@ Theme Builder는 다음 작업을 수행합니다.
 - 인쇄에 용이한 레이아웃
 - 모바일 반응형 디자인
 
-### 메뉴 위젯
+### 메뉴 위젯 {#menu-widget}
 
 다른 페이지에 메뉴 섹션을 삽입할 수 있습니다.
 
@@ -111,7 +111,7 @@ Theme Builder는 다음 작업을 수행합니다.
 - 바 페이지의 음료 메뉴
 - 푸터의 디저트 쇼케이스
 
-### 메뉴 PDF
+### 메뉴 PDF {#menu-pdf}
 
 다운로드 가능한 PDF 메뉴를 생성합니다.
 
@@ -120,9 +120,9 @@ Theme Builder는 다음 작업을 수행합니다.
 - 이미지 및 설명 포함
 - 공유 및 이메일 전송이 용이함
 
-## 식단 및 알레르기 정보
+## 식단 및 알레르기 정보 {#dietary-and-allergen-information}
 
-### 식단 속성
+### 식단 속성 {#dietary-attributes}
 
 항목에 식단 정보를 표시합니다.
 
@@ -134,7 +134,7 @@ Theme Builder는 다음 작업을 수행합니다.
 - **Low-Carb** — 탄수화물 감소
 - **High-Protein** — 단백질 풍부
 
-### 알레르기 경고
+### 알레르기 경고 {#allergen-warnings}
 
 일반 알레르기 유발 물질을 포함합니다.
 
@@ -147,9 +147,9 @@ Theme Builder는 다음 작업을 수행합니다.
 - **Gluten** — 밀 및 글루텐 함유 곡물
 - **Sesame** — 참깨 및 참기름
 
-## 메뉴 관리
+## 메뉴 관리 {#menu-management}
 
-### 가격 업데이트
+### 가격 업데이트 {#updating-prices}
 
 메뉴 가격을 쉽게 업데이트할 수 있습니다.
 
@@ -159,7 +159,7 @@ Theme Builder는 다음 작업을 수행합니다.
 4. 변경 사항을 저장합니다.
 5. 변경 사항이 사이트에 즉시 반영됩니다.
 
-### 계절 메뉴 추가
+### 계절 메뉴 추가 {#adding-seasonal-items}
 
 계절별 메뉴 변형을 만듭니다.
 
@@ -169,7 +169,7 @@ Theme Builder는 다음 작업을 수행합니다.
 4. 이용 가능 날짜를 예약합니다.
 5. 시즌 동안 자동으로 표시됩니다.
 
-### 스페셜 관리
+### 스페셜 관리 {#managing-specials}
 
 일일 또는 주간 스페셜을 표시합니다.
 
@@ -179,7 +179,7 @@ Theme Builder는 다음 작업을 수행합니다.
 4. 매일 또는 매주 업데이트합니다.
 5. 오래된 스페셜은 보관합니다.
 
-## Theme Builder와의 통합
+## Theme Builder와의 통합 {#integration-with-theme-builder}
 
 Hospitality 사이트에 Theme Builder를 사용할 때:
 
@@ -189,9 +189,9 @@ Hospitality 사이트에 Theme Builder를 사용할 때:
 4. **모바일 최적화(Mobile optimization)** — 휴대폰에서 메뉴가 아름답게 표시됩니다.
 5. **SEO 최적화(SEO optimization)** — 메뉴가 검색 엔진 친화적입니다.
 
-## 모범 사례
+## 모범 사례 {#best-practices}
 
-### 메뉴 디자인
+### 메뉴 디자인 {#menu-design}
 
 - **명확한 구성** — 논리적인 카테고리 구조
 - **읽기 쉬운 설명** — 식욕을 돋우고 정보가 풍부함
@@ -199,7 +199,7 @@ Hospitality 사이트에 Theme Builder를 사용할 때:
 - **전문 사진** — 고품질 음식 이미지
 - **여백(Whitespace)** — 페이지를 너무 빽빽하게 채우지 않기
 
-### 콘텐츠
+### 콘텐츠 {#content}
 
 - **정확한 설명** — 항목을 정확하게 설명합니다.
 - **스페셜 강조** — 스페셜 메뉴를 눈에 띄게 만듭니다.
@@ -207,7 +207,7 @@ Hospitality 사이트에 Theme Builder를 사용할 때:
 - **정기적인 업데이트** — 가격과 항목을 최신 상태로 유지합니다.
 - **식욕을 돋우는 언어 사용** — 항목이 맛있게 들리도록 합니다.
 
-### 접근성
+### 접근성 {#accessibility}
 
 - **읽기 쉬운 글꼴** — 명확하고 읽기 쉬운 글꼴을 사용합니다.
 - **충분한 대비** — 텍스트가 읽기 쉬운지 확인합니다.
@@ -215,9 +215,9 @@ Hospitality 사이트에 Theme Builder를 사용할 때:
 - **알레르기 경고** — 알레르기 유발 물질을 눈에 띄게 표시합니다.
 - **모바일 친화적** — 모든 장치에서 테스트합니다.
 
-## 예시
+## 예시 {#examples}
 
-### 레스토랑 메뉴 구조
+### 레스토랑 메뉴 구조 {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### 카페 메뉴 구조
+### 카페 메뉴 구조 {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## 관련 기능
+## 관련 기능 {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — 내비게이션 메뉴 생성
 - [Design Direction](./design-direction.md) — 사이트 디자인 사용자 지정

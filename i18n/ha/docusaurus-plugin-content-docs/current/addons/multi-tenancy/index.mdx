@@ -1,0 +1,150 @@
+---
+title: Hayar-Masu-Amfani-Da-Yawa
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Masu haya da yawa {#multi-tenancy}
+
+Rarraba ƙananan shafuka a kan sabobin da databases don inganci da tsaro
+
+## Muhimman abubuwan fitowar sigar 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 yana ƙara tubalin tenant mai cin gashin kai don ayyukan warewa a samarwa:
+
+- Autologin na tenant mara riƙe yanayi tare da ziyarar SSO masu gajeren rai da kariya daga sake kunnawa.
+- Ware database da tsarin fayil ga kowane ƙaramin shafi don tenants masu cin gashin kai.
+- Ƙwarewar Hostinger multi-tenancy don samar da tenant da ke la’akari da host.
+- Ƙofofin tabbatar da ƙaura ta cin gashin kai don binciken tsohon bayanai da sarrafa turawa na async.
+- Daidaitaccen ɗaure host na database a na’ura ɗaya don shigarwar Bedrock, FrankenPHP, da localhost.
+- Ingantawa ga fara tenant, marubucin database, fara schema, da samar da masu amfani.
+- Rushewar cin gashin kai mafi aminci da ke share bayanan shaidar tenant.
+
+Duba jagororin mai amfani don [tsarin aikin ƙaura ta cin gashin kai](/user-guide/getting-started/sovereign-migration-workflow), [warewar multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), da [ayyukan tenant mai cin gashin kai](/user-guide/administration/sovereign-tenant-operations).
+
+## Bukatu {#requirements}
+
+- WordPress 5.3 ko sama
+- PHP 7.4 ko sama
+- Multisite Ultimate plugin (a kunne)
+
+## Shigarwa {#installation}
+
+1. Loda fayilolin addon zuwa kundin adireshinka na `/wp-content/plugins/`
+2. Kunna plugin ta menu na 'Plugins' a cikin WordPress
+3. Daidaita saitunan addon a cikin admin na network
+
+## Haɓakawa {#development}
+
+### Saitawa {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Tsarin Aiki {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Ajin PHP da haɗawa
+│   ├── class-multisite-ultimate-updater.php  # Mai sarrafa sabuntawa
+│   └── class-multi_tenancy-main.php             # Babban aiki
+├── tests/                        # Gwaje-gwajen unit
+│   ├── bootstrap.php            # Fara gwaji
+│   ├── class-*-base.php         # Ajin gwaji na tushe
+│   └── class-*-test.php         # Lamuran gwaji
+├── views/                       # Fayilolin samfuri
+├── assets/                      # Kayayyakin static
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Fayilolin JavaScript
+│   └── images/                  # Hotuna
+├── lang/                        # Fayilolin harshe
+├── composer.json                # Dogaro na PHP
+├── package.json                 # Dogaro na Node.js
+├── phpunit.xml.dist             # Daidaitawar PHPUnit
+├── .phpcs.xml.dist              # Daidaitawar ƙa’idojin code
+└── rector.php                   # Dokokin zamanantar da code
+```
+
+### Gwaji {#testing}
+
+Addon ɗin ya haɗa da cikakken tsarin gwaji:
+
+- **Gwaje-gwajen Unit**: Gwaje-gwaje masu tushen PHPUnit tare da tarin gwajin WordPress
+- **Ajin Gwaji na Tushe**: Yana samar da hanyoyin taimako don yanayin gwaji na gama gari
+- **Rufe Gwaji**: An daidaita shi don bin diddigin rufe code
+- **Gwajin Multisite**: Gwaje-gwaje suna gudana a muhallin multisite
+
+### Ƙa’idojin Code {#code-standards}
+
+- **Ƙa’idojin Rubuta Code na WordPress**: Ana tilasta su ta PHPCS
+- **Daidaituwa da PHP 7.4+**: Ana tallafa wa fasalolin PHP na zamani
+- **Binciken Static**: Haɗin PHPStan don duba nau’i
+- **Zamanantar da Code**: Dokokin Rector don haɓaka PHP
+
+### Tsarin Gina {#build-system}
+
+- **Sarrafa Kayayyaki**: Rage girman fayilolin CSS/JS
+- **Fassara**: Samar da fayil ɗin POT
+- **Kunshin Kaya**: Ƙirƙirar archive don rabawa
+- **Yanayin Haɓakawa**: Kayayyaki marasa rage girma don gano matsala
+
+## Daidaitawa {#configuration}
+
+Addon ɗin yana tallafa wa zaɓuɓɓukan daidaitawa daban-daban da ake samu ta hanyar mu’amalar admin na network.
+
+### Daidaitawar tenant mai cin gashin kai {#sovereign-tenant-configuration}
+
+Don tenants masu cin gashin kai, daidaita database na tenant, tushen tsarin fayil, ɗaure host na database, da ƙwarewar host kafin tura zirga-zirga zuwa tenant. Gudanar da tabbatar da ƙaura bayan kowane canji da ke shafar bayanan shaidar database, ɗaure host, routing, ko samar da masu amfani.
+
+Yi amfani da `localhost` kawai lokacin da runtime na tenant da izinin database ke buƙatar socket na gida ko samun dama a na’ura ɗaya. Yi amfani da `127.0.0.1` ko sunan host na sabis lokacin da shi ne grant host da mai samar da sabis ɗinka ya daidaita.
+
+### Ƙwarewar Hostinger {#hostinger-capability}
+
+Ƙwarewar Hostinger multi-tenancy tana aiki da token na haɗin Hostinger na bai ɗaya. Tabbatar cewa domain yana nan a hPanel, DNS yana nuni zuwa Account na Hostinger, kuma saitunan database na tenant sun dace da hPanel kafin tabbatarwa.
+
+## Hooks da Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - Ana ƙaddamarwa bayan fara addon
+- `ultimate-multisite-addon-template_loaded` - Ana ƙaddamarwa bayan an loda duk fayilolin addon
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Gyara saitunan addon
+- `ultimate-multisite-addon-template_enabled` - Sauya matsayin kunna/kashe addon
+
+## Lasisi {#license}
+
+Wannan addon yana ƙarƙashin lasisin GPL v3 ko daga baya.
+
+## Tallafi {#support}
+
+Don tallafi da takardu, ziyarci [MultisiteUltimate.com](https://multisiteultimate.com)
+## Tarihin Canje-canje {#changelog}
+
+- Siga 1.2.0 (2026-06-03): ƙara autologin na tenant mara riƙe yanayi, ƙwarewar Hostinger multi-tenancy, ware database da tsarin fayil ga kowane ƙaramin shafi, ƙofofin tabbatar da ƙaura ta cin gashin kai, ingantawa ga fara tenant/marubucin database, daidaitaccen ɗaure host na MySQL, da rushewar cin gashin kai mafi aminci.
+
+- Siga 1.0.1 (2025-09-28): sake suna prefix zuwa ultimate-multisite; sabunta text domain; ɗaga siga.
+
+
+- Siga  (2025-09-28): sake suna prefix zuwa ultimate-multisite; sabunta text domain; ɗaga siga.

@@ -3,7 +3,7 @@ title: Formularium de cassa
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formulari de Checkout
+# Formulari de Checkout {#checkout-forms}
 
 Formulari de Checkout sunt o modalitate ușoară și flexibilă pentru a experimenta diferite abordări atunci când încercați să convertiți noi clienți.
 
@@ -36,13 +36,13 @@ Alternativ, potes formas quae iam habes editare vel duplicare per cliquem in opt
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Visio Editoris Formae Checkout
+#### Visio Editoris Formae Checkout {#checkout-form-editor-overview}
 
 Editor formae checkout daret tibi interface completum ad constructionem formarum registrationium tuarum. Hinc visio dispositionis editoris:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Editio Formae Checkout
+### Editio Formae Checkout {#editing-a-checkout-form}
 
 Formas checkout pro diversis finibus facere possis. In hoc exemplo in forma registrationis laboramus.
 
@@ -112,7 +112,7 @@ Ad obtinendum shortcode formae, clica in Genera Shortcode et copia rezultatum sh
 
 ![Pulsus salvandi cum shortcode](/img/config/checkout-form-save.png)
 
-### Campo Tabulae Precursorum (Pricing Table Field)
+### Campo Tabulae Precursorum (Pricing Table Field) {#the-pricing-table-field}
 
 Campo **Tabulae Precursorum** (Pricing Table) tuos productos in formam checkout ostendit ut clienti planem eligant. Cum hoc campo edes, diversas optiones configurare possuris:
 
@@ -130,17 +130,17 @@ Hoc est quommodo tabula precursorum appareat in formam registrationis frontend:
 
 Si productum in Tabulam Precursorum addis antequam forma includat campos necessarios ad completum fluxum checkout huius producti, editor nunc advertentiam ostendit. Hoc advertentiam ut usas ad additionem campi requisiti missingi ante publicationem vel salvandum mutationes formae registrationis vivendi.
 
-### Aditio Interruttore Selectio Periodi
+### Aditio Interruttore Selectio Periodi {#adding-a-period-selection-toggle}
 
 Si habes configurato [Price Variations](creating-your-first-subscription-product#price-variations) in productis tuis (e.g., pretium mensuale et annuum), potes adde **Period Selection** in formam tuae checkout. Hoc campo ostendit un interruttorem qui permittit clientes mutare inter perioda facturationis, et tabula pretius se actualizatur dynamice in tempore reali.
 
-#### Gradus 1: Configura Price Variations in Productibus Tuendis
+#### Gradus 1: Configura Price Variations in Productibus Tuendis {#step-1-set-up-price-variations-on-your-products}
 
 Ante additionem campi Period Selection, assura te quod producta tua habent price variations configuratas. Ipse ad **Ultimate Multisite > Products** adde, edit productum, et ad tabulam **Price Variations** naviga ut perioda facturationis alterni addas (e.g., Annuum cum pretiis concessis).
 
 ![Tabula Price Variations in productore](/img/config/product-price-variations-tab.png)
 
-#### Gradus 2: Adde Field Period Selection ad Formam Tuam Checkout
+#### Gradus 2: Adde Field Period Selection ad Formam Tuam Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Ad **Ultimate Multisite > Checkout Forms** adde et edit formam tuam checkout.
 
@@ -163,13 +163,13 @@ Ante additionem campi Period Selection, assura te quod producta tua habent price
 
 7. Clicare **Save Field**.
 
-#### Paso 3: Coloca el Campo Arriba de la Tabla de Precios
+#### Paso 3: Coloca el Campo Arriba de la Tabla de Precios {#step-3-position-the-field-above-the-pricing-table}
 
 Para que los usuarios tengan la mejor experiencia, asegúrate de que el campo Selección de Periodo aparezca **antes** del campo Tabla de Precios en tu paso de pago (checkout). Puedes arrastrar campos para cambiar su orden en el editor del formulario de pago. De esta manera, los clientes primero eligen un periodo de facturación y luego ven los precios para ese periodo.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Cómo Funciona en el Frontend
+#### Cómo Funciona en el Frontend {#how-it-works-on-the-frontend}
 
 Una vez configurado, los clientes que visiten tu página de registro verán el selector de periodo encima de la tabla de precios. Cuando hagan clic en un periodo de facturación diferente:
 
@@ -177,7 +177,7 @@ Una vez configurado, los clientes que visiten tu página de registro verán el s
   * Si **Force Different Durations** está desactivado en el campo Tabla de Precios, los productos sin variación de precio para el periodo seleccionado se ocultarán.
   * Si **Force Different Durations** está activado, todos los productos seguirán visibles incluso si no tienen una variación para el periodo seleccionado (mostrarán su precio predeterminado).
 
-#### Preseleccionar un Periodo de Facturación a través de la URL
+#### Preseleccionar un Periodo de Facturación a través de la URL {#pre-selecting-a-billing-period-via-url}
 
 También puedes preseleccionar un producto y un periodo de facturación mediante la URL. Ultimate Multisite soporta estos patrones de URL:
 
@@ -185,11 +185,11 @@ También puedes preseleccionar un producto y un periodo de facturación mediante
   * `/register/premium/12` — Preselecciona el producto y la duración de 12 meses
   * `/register/premium/1/year` — Preselecciona el producto con una duración de 1 año
 
-### El Campo de Selección de Plantilla (Template Selection Field)
+### El Campo de Selección de Plantilla (Template Selection Field) {#the-template-selection-field}
 
 El campo **Selección de Plantilla** permite a los clientes elegir una plantilla de sitio durante el pago. Ahora está incluido por defecto en las plantillas de formulario de pago de paso único y de múltiples pasos añadidas en Ultimate Multisite v2.6.1.
 
-#### Añadir el campo manualmente
+#### Añadir el campo manualmente {#adding-the-field-manually}
 
 Si trabajas con un formulario creado antes de la versión v2.6.1, o que se inició desde una plantilla en blanco:
 
@@ -200,11 +200,11 @@ Si trabajas con un formulario creado antes de la versión v2.6.1, o que se inici
    - **Label** (Etiqueta) — El encabezado que ven los clientes encima de la cuadrícula de plantillas (ejemplo: "Elige una plantilla de sitio").
    - **Required** (Requerido) — Si los clientes deben seleccionar una plantilla antes de continuar.
 
-#### Cómo funciona
+#### Cómo funciona {#how-it-works}
 
 Cuando un cliente elige una plantilla durante el pago, Ultimate Multisite la utiliza al configurar su nuevo sitio. Las plantillas mostradas provienen de tu lista de **Site Templates** (Plantillas de Sitio) (**Ultimate Multisite > Site Templates**). Solo aparecen aquí las plantillas marcadas como disponibles para los clientes.
 
-### Dominios base del formulario de pago (Checkout-form base domains)
+### Dominios base del formulario de pago (Checkout-form base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 trata los dominios configurados en los campos **Site URL** del formulario de pago como dominios base de red. Utiliza la configuración de dominio disponible del campo cuando quieras que los clientes creen sitios bajo uno o más dominios de registro compartidos, como `example.com` y `sites.example.com`.
 
@@ -212,6 +212,6 @@ Los dominios base del formulario de pago compartidos no se tratan como mapeos de
 
 Mantén los dominios personalizados para hosts mapeados por cliente individual, como `customer-example.com`. Mantén los dominios base del formulario de pago para hosts de registro compartidos que muchos sitios puedan usar.
 
-#### Eliminar el campo
+#### Eliminar el campo {#removing-the-field}
 
 Si no ofreces plantillas de sitio, elimina el campo Selección de Plantilla de tu formulario. Los clientes recibirán la plantilla predeterminada que esté configurada en **Ultimate Multisite > Settings > Site Templates**.

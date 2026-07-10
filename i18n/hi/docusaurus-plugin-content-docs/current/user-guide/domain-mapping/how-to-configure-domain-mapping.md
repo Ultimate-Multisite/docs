@@ -1,130 +1,138 @@
 ---
 title: डोमेन मैपिंग कैसे कॉन्फ़िगर करें
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapping कैसे Configure करें (v2)
+# डोमेन मैपिंग कॉन्फ़िगर कैसे करें (v2) {#how-to-configure-domain-mapping-v2}
 
-_**महत्वपूर्ण नोट: यह लेख Ultimate Multisite version 2.x के लिए है।**_
+_**महत्वपूर्ण नोट: यह लेख Ultimate Multisite संस्करण 2.x से संबंधित है।**_
 
-एक premium network की सबसे powerful features में से एक है अपने clients को उनकी sites पर top-level domain जोड़ने का विकल्प देना। आखिर कौन ज़्यादा professional लगता है: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) या [_**joesbikeshop.com**_](http://joesbikeshop.com)? इसीलिए Ultimate Multisite यह feature built-in देता है, बिना किसी third-party plugin की ज़रूरत के।
+प्रीमियम नेटवर्क की सबसे शक्तिशाली सुविधाओं में से एक यह है कि हम अपने clients को उनकी साइटों से टॉप-लेवल डोमेन जोड़ने का मौका दे सकते हैं। आखिर, कौन सा अधिक पेशेवर दिखता है: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) या [_**joesbikeshop.com**_](http://joesbikeshop.com)? इसी कारण Ultimate Multisite यह सुविधा पहले से देता है, बिना किसी तीसरे-पक्ष के plugins का उपयोग किए।
 
-## Domain mapping क्या है?
+## डोमेन मैपिंग क्या है? {#whats-domain-mapping}
 
-जैसा कि नाम से पता चलता है, domain mapping Ultimate Multisite की वह सुविधा है जो किसी custom domain के request को लेकर उसे network में उस particular domain से जुड़ी संबंधित site पर map कर देती है।
+जैसा नाम से पता चलता है, डोमेन मैपिंग Ultimate Multisite द्वारा दी जाने वाली वह क्षमता है जिसमें custom domain के अनुरोध को लिया जाता है और उस अनुरोध को नेटवर्क में उसी विशेष डोमेन से जुड़े संबंधित साइट से मैप किया जाता है।
 
-### अपने Ultimate Multisite Network पर domain mapping कैसे setup करें
+### अपने Ultimate Multisite नेटवर्क पर डोमेन मैपिंग कैसे सेट करें {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping के लिए आपको कुछ setup करना होगा। अच्छी बात यह है कि Ultimate Multisite कठिन काम आपके लिए automate कर देता है ताकि आप आसानी से requirements पूरी कर सकें।
+डोमेन मैपिंग को काम करने के लिए आपकी ओर से कुछ सेटिंग की आवश्यकता होती है। अच्छी बात यह है कि Ultimate Multisite कठिन काम आपके लिए अपने-आप कर देता है, ताकि आप आवश्यकताओं को आसानी से पूरा कर सकें।
 
-Ultimate Multisite installation के दौरान, wizard automatically **sunrise.php** को designated folder में copy और install कर देगा। **जब तक यह step पूरा नहीं होता, wizard आपको आगे नहीं बढ़ने देगा**।
+Ultimate Multisite installation के दौरान, wizard अपने-आप **sunrise.php** को निर्धारित फ़ोल्डर में कॉपी और install करेगा। **यह चरण पूरा होने तक wizard आपको आगे बढ़ने नहीं देगा**।
 
-![Ultimate Multisite installation wizard with sunrise.php step](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-इसका मतलब है कि जैसे ही Ultimate Multisite installation wizard आपका network setup कर लेता है, आप तुरंत custom domain mapping शुरू कर सकते हैं।
+इसका मतलब है कि Ultimate Multisite installation wizard द्वारा आपका नेटवर्क सेट करने के बाद, आप तुरंत custom domain मैप करना शुरू कर सकते हैं।
 
-ध्यान दें कि Ultimate Multisite में domain mapping अनिवार्य नहीं है। आपके पास WordPress Multisite के native domain mapping function या किसी अन्य domain mapping solution का उपयोग करने का विकल्प है।
+ध्यान दें कि Ultimate Multisite में डोमेन मैपिंग अनिवार्य नहीं है। आपके पास WordPress Multisite की native डोमेन मैपिंग सुविधा या किसी अन्य डोमेन मैपिंग समाधान का उपयोग करने का विकल्प है।
 
-अगर आपको अन्य domain mapping solutions के लिए Ultimate Multisite domain mapping को disable करना हो, तो आप इस feature को **Ultimate Multisite > Settings > Domain Mapping** में जाकर disable कर सकते हैं।
+यदि आपको अन्य डोमेन मैपिंग समाधानों के लिए Ultimate Multisite डोमेन मैपिंग बंद करनी हो, तो आप इस सुविधा को **Ultimate Multisite > सेटिंग्स > डोमेन मैपिंग** के अंतर्गत बंद कर सकते हैं।
 
-![Domain Mapping settings with enable toggle](/img/config/settings-domain-mapping.png)
+![डोमेन मैपिंग सेटिंग्स पृष्ठ जिसमें admin redirect, mapping message और DNS विकल्प दिख रहे हैं](/img/config/domain-mapping-settings.png)
 
-इस option के ठीक नीचे, आप **Force Admin Redirect** का option भी देख सकते हैं। यह option आपको control करने देता है कि आपके customers अपने admin dashboard को custom domain और subdomain दोनों पर access कर पाएंगे या सिर्फ एक पर।
+इस विकल्प के ठीक नीचे, आप **Force Admin Redirect** विकल्प भी देख सकते हैं। यह विकल्प आपको यह नियंत्रित करने देता है कि आपके ग्राहक अपने custom domain और subdomain दोनों पर अपने admin Dashboard तक पहुंच पाएंगे या केवल उनमें से किसी एक पर।
 
-अगर आप **Force redirect to mapped domain** select करते हैं, तो आपके customers सिर्फ अपने custom domains पर ही admin dashboard access कर पाएंगे।
+यदि आप **Force redirect to mapped domain** चुनते हैं, तो आपके ग्राहक केवल अपने custom domains पर ही अपने admin Dashboard तक पहुंच पाएंगे।
 
-**Force redirect to network domain** option इसके बिल्कुल विपरीत काम करता है - आपके customers सिर्फ अपने subdomain पर ही dashboards access कर पाएंगे, भले ही वे custom domains पर sign in करने की कोशिश करें।
+**Force redirect to** **network domain** विकल्प ठीक उल्टा करेगा - आपके ग्राहकों को केवल अपने subdomain पर अपने Dashboard तक पहुंचने की अनुमति होगी, भले ही वे अपने custom domains पर sign in करने की कोशिश करें।
 
-और **Allow access to the admin by both mapped domain and network domain** option उन्हें subdomain और custom domain दोनों पर admin dashboards access करने देता है।
+और **Allow access to the admin by both mapped domain domain and network domain** विकल्प उन्हें subdomain और custom domain दोनों पर अपने admin Dashboard तक पहुंचने देता है।
 
-![Force Admin Redirect options for domain mapping](/img/config/settings-domain-mapping.png)
+![Admin Redirect dropdown खुला हुआ है, जिसमें तीन redirect विकल्प दिख रहे हैं](/img/config/domain-mapping-redirect-options.png)
 
-Custom domain map करने के दो तरीके हैं। पहला है super admin के रूप में network admin dashboard से domain name map करना और दूसरा है subsite admin dashboard में account page के through।
+custom domain मैप करने के दो तरीके हैं। पहला, super admin के रूप में अपने network admin Dashboard से डोमेन नाम मैप करना, और दूसरा, Account पृष्ठ के अंतर्गत subsite admin Dashboard से।
 
-लेकिन इससे पहले कि आप अपने network की किसी subsite पर custom domain map करना शुरू करें, आपको यह सुनिश्चित करना होगा कि domain name की **DNS settings** सही तरीके से configure की गई हैं।
+लेकिन अपने नेटवर्क के किसी subsite से custom domain मैप करना शुरू करने से पहले, आपको यह सुनिश्चित करना होगा कि डोमेन नाम की **DNS सेटिंग्स** सही तरीके से कॉन्फ़िगर की गई हैं।
 
-### 
+###
 
-### यह सुनिश्चित करना कि domain DNS settings सही तरीके से configure हैं
+### यह सुनिश्चित करना कि डोमेन DNS सेटिंग्स सही तरीके से कॉन्फ़िगर हैं {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Mapping काम करे इसके लिए, आपको यह सुनिश्चित करना होगा कि जिस domain को आप map करना चाहते हैं वह आपके Network के IP address पर point कर रहा है। ध्यान दें कि आपको Network IP address चाहिए - यानी उस domain का IP address जहां Ultimate Multisite installed है - न कि उस custom domain का IP address जिसे आप map करना चाहते हैं। किसी specific domain का IP address खोजने के लिए, हम [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) जैसी site पर जाने की सलाह देते हैं।
+मैपिंग के काम करने के लिए, आपको यह सुनिश्चित करना होगा कि जिस डोमेन को आप मैप करने की योजना बना रहे हैं, वह आपके नेटवर्क के IP पते की ओर pointing कर रहा है। ध्यान दें कि आपको नेटवर्क IP पता चाहिए - उस डोमेन का IP पता जहां Ultimate Multisite installed है - न कि उस custom domain का IP पता जिसे आप मैप करना चाहते हैं। किसी विशेष डोमेन का IP पता खोजने के लिए, उदाहरण के लिए हम [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) पर जाने का सुझाव देते हैं।
 
-Domain को सही से map करने के लिए, आपको अपनी **DNS** configuration में उस **IP address** की ओर point करता हुआ एक **A RECORD** add करना होगा। DNS management अलग-अलग domain registrars में काफी अलग होती है, लेकिन अगर आप "_Creating A Record on XXXX_" search करें जहां XXXX आपका domain registrar है (जैसे: "_Creating A Record on GoDaddy_"), तो online बहुत सारे tutorials मिल जाएंगे।
+डोमेन को सही तरीके से मैप करने के लिए, आपको अपने **DNS** कॉन्फ़िगरेशन में एक **A RECORD** जोड़ना होगा, जो उस **IP पते** की ओर pointing करे। DNS प्रबंधन अलग-अलग डोमेन registrars में काफी अलग होता है, लेकिन यदि आप " _Creating A Record on XXXX_ " खोजें, जहां XXXX आपका डोमेन registrar है (उदा.: " _Creating A Record on_ _GoDaddy_ "), तो इसके लिए ऑनलाइन बहुत सारे tutorials मिल जाएंगे।
 
-अगर आपको इसे काम करने में परेशानी हो रही है, तो **अपने domain registrar support से संपर्क करें** और वे इस हिस्से में आपकी मदद कर पाएंगे।
+यदि आपको इसे काम कराने में परेशानी हो रही है, तो **अपने डोमेन registrar support से संपर्क करें** और वे इस भाग में आपकी मदद कर पाएंगे।
 
-अगर आप अपने clients को खुद के domains map करने की अनुमति देने की योजना बना रहे हैं, तो उन्हें इस हिस्से का काम खुद करना होगा। अगर वे A Record create करने में असमर्थ हों, तो उन्हें उनके registrar support system की ओर guide करें।
+यदि आप अपने clients को अपने डोमेन स्वयं मैप करने की अनुमति देना चाहते हैं, तो उन्हें इस भाग का काम स्वयं करना होगा। यदि वे A Record नहीं बना पा रहे हैं, तो उन्हें उनके registrar support system की ओर निर्देशित करें।
 
-### Super Admin के रूप में custom domain name map करना
+### Super Admin के रूप में custom domain नाम मैप करना {#mapping-custom-domain-name-as-super-admin}
 
-जब आप अपने network पर super admin के रूप में logged in हों, तो आप **Ultimate Multisite > Domains** में जाकर आसानी से custom domain names add और manage कर सकते हैं।
+जब आप अपने नेटवर्क पर super admin के रूप में logged in होते हैं, तो आप **Ultimate Multisite > Domains** के अंतर्गत जाकर custom domain names आसानी से जोड़ और प्रबंधित कर सकते हैं।
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite में Domains सूची पृष्ठ](/img/admin/domains-list.png)
 
-इस page पर, आप ऊपर **Add Domain** button पर click कर सकते हैं और यह एक modal window लाएगा जहां आप **custom domain name**, जिस **subsite** पर आप custom domain name apply करना चाहते हैं, और यह decide कर सकते हैं कि इसे **primary domain** name बनाना है या नहीं (ध्यान दें कि आप **एक subsite पर multiple domain names map** कर सकते हैं)।
+इस पृष्ठ के अंतर्गत, आप ऊपर **डोमेन जोड़ें** बटन पर क्लिक कर सकते हैं। इससे एक modal window खुलेगी, जहां आप **custom domain name**, **वह subsite** जिसे आप custom domain name लागू करना चाहते हैं, सेट और भर सकते हैं, और तय कर सकते हैं कि आप इसे **primary domain** नाम बनाना चाहते हैं या नहीं (ध्यान दें कि आप **एक subsite से कई domain names मैप** कर सकते हैं)।
 
-![Add Domain modal with domain name and site fields](/img/admin/domains-list.png)
+![Add Domain modal जिसमें domain name, site picker और primary domain toggle है](/img/admin/domain-add-modal.png)
 
-सारी जानकारी भरने के बाद, आप नीचे **Add Existing Domain** button पर click कर सकते हैं।
+सभी जानकारी डालने के बाद, आप नीचे **मौजूदा डोमेन जोड़ें** बटन पर क्लिक कर सकते हैं।
 
-यह custom domain की DNS information verify और fetch करने की process शुरू कर देगा। Page के नीचे आपको एक log भी दिखेगा जिससे आप process को follow कर सकते हैं। इस process को पूरा होने में कुछ मिनट लग सकते हैं।
+इससे custom domain की DNS जानकारी सत्यापित और fetch करने की प्रक्रिया शुरू होगी। पृष्ठ के नीचे आपको एक log भी दिखाई देगा, जिससे आप चल रही प्रक्रिया का पालन कर सकेंगे। इस प्रक्रिया को पूरा होने में कुछ मिनट लग सकते हैं।
 
-अगर सब कुछ सही से set up है, तो **Stage** या status **Checking DNS** से बदलकर **Ready** हो जाना चाहिए।
+Ultimate Multisite v2.13.0 नया साइट बनाए जाने पर आंतरिक डोमेन रिकॉर्ड भी अपने-आप बनाता है, यदि होस्ट को प्रति-साइट डोमेन माना जाना चाहिए। यदि होस्ट नेटवर्क का प्राथमिक डोमेन है, या **Site URL** फ़ील्ड पर कॉन्फ़िगर किए गए साझा चेकआउट-फ़ॉर्म बेस डोमेन में से एक है, तो अपने-आप बनने वाला मैप्ड-डोमेन रिकॉर्ड छोड़ दिया जाता है, ताकि साझा बेस डोमेन उसका उपयोग करने वाली हर साइट के लिए उपलब्ध रहे।
 
-![Domain stage changing from Checking DNS to Ready](/img/admin/domains-list.png)
+जब कोई ग्राहक Domain Seller v1.3.0 या नए संस्करण के माध्यम से नया डोमेन पंजीकृत करता है, तो Ultimate Multisite डिफ़ॉल्ट रूप से पंजीकृत डोमेन को ग्राहक की नेटवर्क साइट से अपने-आप मैप कर देता है। सफल पंजीकरण के बाद प्रशासकों को अब अलग मैप्ड-डोमेन रिकॉर्ड जोड़ने की ज़रूरत नहीं है, जब तक वे प्राथमिक-डोमेन फ़्लैग, सक्रियण स्थिति या SSL हैंडलिंग जैसे विकल्प बदलना न चाहें।
 
-![Domain with Ready status in domains list](/img/admin/domains-list.png)
+यदि सब कुछ सही तरीके से सेट है, तो **चरण** या स्थिति **DNS जाँचा जा रहा है** से बदलकर **तैयार** हो जानी चाहिए।
 
-अगर आप domain name पर click करते हैं, तो आप इसके अंदर कुछ options देख पाएंगे। आइए इन पर एक नज़र डालते हैं:
+<!-- स्क्रीनशॉट उपलब्ध नहीं: डोमेन सूची में DNS जाँचा जा रहा है चरण दिखाने वाली डोमेन पंक्ति -->
 
-![Domain detail page with stage, site, active, and SSL options](/img/admin/domains-list.png)
+<!-- स्क्रीनशॉट उपलब्ध नहीं: हरे स्थिति संकेतक के साथ तैयार चरण दिखाने वाली डोमेन पंक्ति -->
 
-**Stage:** यह वह stage है जिस पर domain है। जब आप पहली बार domain add करते हैं, तो यह शायद **Checking DNS** stage पर होगा। Process DNS entries check करेगी और confirm करेगी कि वे सही हैं। फिर, domain को **Checking SSL** stage पर रखा जाएगा। Ultimate Multisite check करेगा कि domain में SSL है या नहीं और आपके domain को **Ready** या **Ready (without SSL)** के रूप में categorize करेगा।
+यदि आप डोमेन नाम पर क्लिक करते हैं, तो आपको उसके अंदर कुछ विकल्प दिखाई देंगे। आइए उन पर जल्दी से नज़र डालते हैं:
 
-**Site:** वह subdomain जो इस domain से associated है। Mapped domain इस specific site का content दिखाएगा।
+![चरण, साइट, सक्रिय, प्राथमिक और SSL टॉगल के साथ डोमेन विवरण पृष्ठ](/img/admin/domain-edit.png)
 
-**Active:** आप domain को activate या deactivate करने के लिए इस option को on या off toggle कर सकते हैं।
+**चरण:** यह वह चरण है जिस पर डोमेन मौजूद है। जब आप पहली बार डोमेन जोड़ते हैं, तो वह संभवतः **DNS जाँचा जा रहा है** चरण पर होगा। प्रक्रिया DNS प्रविष्टियों की जाँच करेगी और पुष्टि करेगी कि वे सही हैं। फिर डोमेन को **SSL जाँचा जा रहा है** चरण में रखा जाएगा। Ultimate Multisite जाँच करेगा कि डोमेन में SSL है या नहीं और आपके डोमेन को **तैयार** या **तैयार (SSL के बिना)** के रूप में वर्गीकृत करेगा।
 
-**Is Primary Domain?:** आपके customers के पास हर site के लिए एक से ज़्यादा mapped domains हो सकते हैं। इस option का उपयोग करके select करें कि यह specific site के लिए primary domain है या नहीं।
+**साइट:** वह सबडोमेन जो इस डोमेन से संबद्ध है। मैप्ड डोमेन इसी विशिष्ट साइट की सामग्री दिखाएगा।
 
-**Is Secure?:** भले ही Ultimate Multisite domain को enable करने से पहले check करता है कि उसमें SSL certificate है या नहीं, आप manually select कर सकते हैं कि domain को SSL certificate के साथ load करना है या बिना। ध्यान दें कि अगर website में SSL certificate नहीं है और आप SSL के साथ force load करने की कोशिश करते हैं, तो errors आ सकती हैं।
+**सक्रिय:** आप डोमेन को सक्रिय या निष्क्रिय करने के लिए इस विकल्प को चालू या बंद कर सकते हैं।
 
-### Subsite user के रूप में custom domain name map करना
+**क्या प्राथमिक डोमेन है?:** आपके ग्राहकों के पास प्रत्येक साइट के लिए एक से अधिक मैप्ड डोमेन हो सकते हैं। यह चुनने के लिए इस विकल्प का उपयोग करें कि यह विशिष्ट साइट के लिए प्राथमिक डोमेन है या नहीं।
 
-Subsite administrators भी अपने subsite admin dashboard से custom domain names map कर सकते हैं।
+**क्या सुरक्षित है?:** Ultimate Multisite डोमेन को सक्षम करने से पहले जाँचता है कि उसमें SSL प्रमाणपत्र है या नहीं, फिर भी आप मैन्युअल रूप से चुन सकते हैं कि डोमेन को SSL प्रमाणपत्र के साथ या बिना लोड करना है। ध्यान दें कि यदि वेबसाइट में SSL प्रमाणपत्र नहीं है और आप उसे SSL के साथ ज़बरदस्ती लोड करने की कोशिश करते हैं, तो आपको त्रुटियाँ मिल सकती हैं।
 
-सबसे पहले, आपको यह सुनिश्चित करना होगा कि आपने **Domain mapping** settings में इस option को enable किया है। नीचे screenshot देखें।
+### सबसाइट उपयोगकर्ता के रूप में कस्टम डोमेन नाम मैप करना {#mapping-custom-domain-name-as-subsite-user}
 
-![Domain mapping settings allowing subsite users to map domains](/img/config/settings-domain-mapping.png)
+सबसाइट प्रशासक अपने सबसाइट admin Dashboard से भी कस्टम डोमेन नाम मैप कर सकते हैं।
 
-आप इस option को **Ultimate Multisite > Products** में **Plan** level या product options के अंतर्गत भी set या configure कर सकते हैं।
+सबसे पहले, आपको यह सुनिश्चित करना होगा कि आप **डोमेन मैपिंग** सेटिंग्स के अंतर्गत यह विकल्प सक्षम करें। नीचे दिया गया स्क्रीनशॉट देखें।
 
-![Product custom domains option in product settings](/img/config/settings-domain-mapping.png)
+<!-- स्क्रीनशॉट उपलब्ध नहीं: Customer DNS Management टॉगल के माध्यम से सबसाइट उपयोगकर्ताओं को डोमेन मैप करने की अनुमति देने वाली डोमेन मैपिंग सेटिंग्स -->
 
-जब इनमें से कोई भी option enabled हो और subsite user को custom domain names map करने की अनुमति हो, तो subsite user को **Account** page में **Domains** नाम का एक metabox दिखना चाहिए।
+आप इस विकल्प को **योजना** स्तर या **Ultimate Multisite > उत्पाद** पर उत्पाद विकल्पों के अंतर्गत भी सेट या कॉन्फ़िगर कर सकते हैं।
 
-![Domains metabox on the subsite account page](/img/admin/domains-list.png)
+![उत्पाद संपादन पृष्ठ पर कस्टम डोमेन अनुभाग](/img/config/product-custom-domains.png)
 
-User **Add Domain** button पर click कर सकता है और यह कुछ instructions के साथ एक modal window लाएगा।
+जब इनमें से कोई भी विकल्प सक्षम हो और सबसाइट उपयोगकर्ता को कस्टम डोमेन नाम मैप करने की अनुमति हो, तो सबसाइट उपयोगकर्ता को **Account** पृष्ठ के अंतर्गत **डोमेन** नामक मेटाबॉक्स दिखना चाहिए।
 
-![Add Domain modal with DNS instructions for subsite users](/img/admin/domains-list.png)
+<!-- स्क्रीनशॉट उपलब्ध नहीं: डोमेन जोड़ें बटन के साथ सबसाइट Account पृष्ठ पर डोमेन मेटाबॉक्स -->
 
-User फिर **Next Step** पर click करके custom domain name add करने के लिए आगे बढ़ सकता है। वे यह भी choose कर सकते हैं कि यह primary domain होगा या नहीं।
+उपयोगकर्ता **डोमेन जोड़ें** बटन पर क्लिक कर सकता है और इससे कुछ निर्देशों वाली एक मोडल विंडो खुलेगी।
 
-![Add custom domain name field with primary domain option](/img/admin/domains-list.png)
+<!-- स्क्रीनशॉट उपलब्ध नहीं: सबसाइट उपयोगकर्ताओं के लिए DNS A-record निर्देश दिखाने वाला डोमेन जोड़ें मोडल -->
 
-![Click Add Domain to start DNS verification](/img/admin/domains-list.png)**Add Domain** पर click करने से custom domain की DNS information verify और fetch करने की process शुरू हो जाएगी।
+इसके बाद उपयोगकर्ता **अगला चरण** पर क्लिक करके कस्टम डोमेन नाम जोड़ने के लिए आगे बढ़ सकता है। वे यह भी चुन सकते हैं कि यह प्राथमिक डोमेन होगा या नहीं।
 
-### Domain Syncing के बारे में
+<!-- स्क्रीनशॉट उपलब्ध नहीं: कस्टम डोमेन नाम फ़ील्ड और प्राथमिक डोमेन टॉगल के साथ डोमेन जोड़ें फ़ॉर्म -->
 
-Domain Syncing एक process है जहां Ultimate Multisite custom domain name को आपके hosting account में add-on domain के रूप में add करता है **ताकि domain mapping काम करे**।
+<!-- स्क्रीनशॉट उपलब्ध नहीं: DNS सत्यापन शुरू करने वाला डोमेन जोड़ें पुष्टिकरण चरण -->
 
-अगर आपके hosting provider का Ultimate Multisite domain mapping feature के साथ integration है, तो Domain syncing automatically होती है। वर्तमान में, ये hosting providers हैं _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ और _Cpanel._
+**डोमेन जोड़ें** पर क्लिक करने से कस्टम डोमेन की DNS जानकारी सत्यापित और प्राप्त करने की प्रक्रिया शुरू होगी।
 
-आपको इस integration को Ultimate Multisite settings में **Integration** tab के अंतर्गत activate करना होगा।
+### डोमेन सिंकिंग के बारे में {#about-domain-syncing}
 
-![Integration tab in Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
+डोमेन सिंकिंग वह प्रक्रिया है जिसमें Ultimate Multisite कस्टम डोमेन नाम को आपके होस्टिंग Account में ऐड-ऑन डोमेन के रूप में जोड़ता है, **ताकि डोमेन मैपिंग काम कर सके**।
 
-![Hosting provider integration settings for domain syncing](/img/config/settings-domain-mapping.png)
+यदि आपके होस्टिंग प्रदाता का Ultimate Multisite डोमेन मैपिंग सुविधा के साथ एकीकरण है, तो डोमेन सिंकिंग अपने-आप होती है। वर्तमान में ये होस्टिंग प्रदाता _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ और _Cpanel_ हैं।
 
-_ध्यान दें कि अगर आपका hosting provider ऊपर बताए गए providers में से नहीं है, तो **आपको manually domain name को अपने hosting account में sync या add करना होगा**।_
+जब होस्ट-प्रदाता एकीकरण सक्रिय होता है, तो Ultimate Multisite नई बनाई गई साइटों के लिए प्रदाता-पक्ष DNS या सबडोमेन निर्माण कार्य को भी कतार में जोड़ सकता है। यदि कोई एकीकरण उस कार्य को नहीं सुन रहा है, तो नो-ऑप कतार प्रविष्टियों से बचने के लिए पृष्ठभूमि कार्य छोड़ दिया जाता है। मैप्ड डोमेन के लिए DNS और SSL जाँच सामान्य डोमेन-चरण प्रक्रिया के माध्यम से चलती रहती है।
+
+आपको Ultimate Multisite सेटिंग्स में **एकीकरण** टैब के अंतर्गत इस एकीकरण को सक्रिय करना होगा।
+
+![होस्टिंग प्रदाताओं को दिखाने वाला Ultimate Multisite सेटिंग्स में एकीकरण टैब](/img/config/integrations-tab.png)
+
+<!-- स्क्रीनशॉट उपलब्ध नहीं: एकीकरण सेटिंग्स टैब पर होस्टिंग प्रदाता कॉन्फ़िगरेशन लिंक -->
+
+_ध्यान दें कि यदि आपका होस्टिंग प्रदाता ऊपर बताए गए प्रदाताओं में से एक नहीं है, तो **आपको डोमेन नाम को अपने होस्टिंग Account में मैन्युअल रूप से सिंक या जोड़ना होगा**._

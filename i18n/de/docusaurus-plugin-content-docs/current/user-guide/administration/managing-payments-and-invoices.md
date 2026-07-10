@@ -1,30 +1,34 @@
 ---
-title: Verwaltung von Zahlungen und Rechnungen
+title: Zahlungen und Rechnungen verwalten
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Verwaltung von Zahlungen und Rechnungen
+# Zahlungen und Rechnungen verwalten {#managing-payments-and-invoices}
 
-## Zahlungseinstellungen
+## Zahlungseinstellungen {#payment-settings}
 
-Bevor Sie mit dem Empfang von Zahlungen beginnen, müssen Sie die zahlungsbezogenen Einstellungen konfigurieren. Navigieren Sie zu **Ultimate Multisite → Einstellungen** und klicken Sie auf die Registerkarte **Zahlung**.
+Bevor du Zahlungen empfangen kannst, musst du die zahlungsbezogenen Einstellungen konfigurieren. Navigiere zu **Ultimate Multisite → Einstellungen** und klicke auf den Tab **Payment**.
 
-![Payment settings tab](/img/admin/settings-payments-top.png)
+![Tab für Zahlungseinstellungen](/img/admin/settings-payments-top.png)
 
-### Allgemeine Zahlungseinstellungen
+Hier ist eine vollständige Ansicht der Seite mit den Zahlungseinstellungen:
 
-In den allgemeinen Einstellungen können Sie konfigurieren:
+![Vollständige Seite der Zahlungseinstellungen](/img/admin/settings-payments-full.png)
 
-- **Currency** — Die Standardwährung für Transaktionen
-- **Currency Position** — Wo das Währungssymbol erscheint (vor/nach dem Betrag)
+### Allgemeine Zahlungsoptionen {#general-payment-options}
 
-![Payment gateway settings](/img/admin/settings-payments-options.png)
+In den allgemeinen Einstellungen kannst du Folgendes konfigurieren:
 
-### Zahlungs-Gateways
+- **Währung** — Die Standardwährung, die für Transaktionen verwendet wird
+- **Währungsposition** — Wo das Währungssymbol erscheint (vor/nach dem Betrag)
 
-Ultimate Multisite unterstützt mehrere Zahlungs-Gateways. Sie können jedes einzelne von der Registerkarte Zahlungseinstellungen aus aktivieren und konfigurieren.
+![Einstellungen für Zahlungsgateways](/img/admin/settings-payments-options.png)
 
-![Payment gateway configuration](/img/admin/settings-payments-gateways.png)
+### Payment Gateways {#payment-gateways}
+
+Ultimate Multisite unterstützt mehrere Zahlungsgateways. Du kannst jedes einzelne über den Tab Payment-Einstellungen aktivieren und konfigurieren.
+
+![Konfiguration von Zahlungsgateways](/img/admin/settings-payments-gateways.png)
 
 Verfügbare Gateways umfassen:
 
@@ -32,33 +36,33 @@ Verfügbare Gateways umfassen:
 - **PayPal** — PayPal-Zahlungen
 - **Manual** — Für Offline- oder benutzerdefinierte Zahlungsabwicklung
 
-Jedes Gateway hat einen eigenen Konfigurationsbereich, in dem Sie API-Schlüssel und andere Einstellungen eingeben.
+Jedes Gateway hat einen eigenen Konfigurationsbereich, in dem du API-Schlüssel und andere Einstellungen eingibst.
 
-![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
+![Zusätzliche Gateway-Einstellungen](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox-Modus
+### Sandbox-Modus {#sandbox-mode}
 
-Sie können den Sandbox-Modus aktivieren, um Ihre Zahlungsintegration vor dem Live-Betrieb zu testen. Wenn der Sandbox-Modus aktiv ist, werden keine echten Gebühren berechnet.
+Du kannst den **Sandbox-Modus** aktivieren, um deine Zahlungsintegration zu testen, bevor sie live geht. Wenn der Sandbox-Modus aktiv ist, werden keine echten Abbuchungen vorgenommen.
 
-## Zahlungen anzeigen
+## Zahlungen anzeigen {#viewing-payments}
 
-Navigieren Sie zur Seite **Zahlungen** unter Ultimate Multisite, um alle Transaktionen in Ihrem Netzwerk anzuzeigen.
+Navigiere zur Seite **Payments** unter Ultimate Multisite, um alle Transaktionen in deinem Netzwerk zu sehen.
 
-![Payments list](/img/admin/payments-list.png)
+![Zahlungsliste](/img/admin/payments-list.png)
 
-Sie können Zahlungen nach Status (abgeschlossen, ausstehend, fehlgeschlagen, erstattet) filtern und nach bestimmten Transaktionen suchen.
+Du kannst Zahlungen nach Status filtern (abgeschlossen, ausstehend, fehlgeschlagen, erstattet) und nach bestimmten Transaktionen suchen.
 
-Klicken Sie auf eine Zahlung, um alle Details einschließlich der Positionen, der zugehörigen Mitgliedschaft, Kundeninformationen und Zahlungs-Gateway-Daten anzuzeigen.
+Klicke auf eine Zahlung, um die vollständigen Details einschließlich der Positionen, der zugehörigen Mitgliedschaft, der Kundeninformationen und der Zahlungsgateway-Daten zu sehen.
 
-## Rechnungen
+## Rechnungen {#invoices}
 
-Ultimate Multisite kann automatisch Rechnungen für Zahlungen erstellen. Sie können die Rechnungsvorlage und das Nummerierungsformat in den Zahlungseinstellungen anpassen.
+Ultimate Multisite kann automatisch Rechnungen für Zahlungen erstellen. Du kannst die Rechnungsvorlage und das Nummerierungsformat in den Payment-Einstellungen anpassen.
 
-Anpassungsoptionen für Rechnungen umfassen:
+Optionen zur Rechnungsanpassung umfassen:
 
-- **Company name and address** angezeigt auf Rechnungen
-- **Invoice numbering** Format und Sequenz
-- **Logo** angezeigt im Rechnungsheader
-- **Custom footer text** für Bedingungen, Notizen oder rechtliche Informationen
+- **Firmenname und Adresse**, die auf Rechnungen angezeigt werden
+- **Rechnungsnummerierung**: Format und Reihenfolge
+- **Logo**, das in der Kopfzeile der Rechnung angezeigt wird
+- **Benutzerdefinierter Fußzeilentext** für Bedingungen, Hinweise oder rechtliche Informationen
 
-Um die Rechnungsvorlage anzupassen, gehen Sie zu **Ultimate Multisite → Einstellungen → Zahlung** und suchen Sie nach den rechnungsbezogenen Einstellungen.
+Um die Rechnungsvorlage anzupassen, gehe zu **Ultimate Multisite → Einstellungen → Payment** und suche nach den rechnungsbezogenen Einstellungen.

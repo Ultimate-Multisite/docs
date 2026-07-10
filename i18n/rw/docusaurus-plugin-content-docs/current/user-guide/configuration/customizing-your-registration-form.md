@@ -1,154 +1,156 @@
 ---
-title: Gukoresha Uburyo Bwanyu Bwumva
+title: Gutunganya ifishi yawe yo kwiyandikisha
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Gukoresha w'Urugero wawe
+# Guhindura uko Ifishi yawe yo Kwiyandikisha imeze {#customizing-your-registration-form}
 
-Kugira ngo uburyo bwawe bw'ubwujgwa buvugwa mu gihe cyose ku ntego z'ibindi SaaS zifite kuri WordPress, Ultimate Multisite yagushobora kugira ubwujgwa bwawe mu gukoresha amagambo ya **Checkout Forms** zacu.
+Kugira ngo urubuga rwawe rugaragare rwihariye ugereranyije n’izindi SaaS zose zubatswe kuri platform ya WordPress, Ultimate Multisite igufasha guhindura impapuro zawe zo kwiyandikisha no kwinjira ukoresheje umwihariko wacu wa **Checkout Forms**.
 
-Ntabwo ni uburyo mwiza kandi wibonye kandi wibonyeho kumenya ibintu bitandukanye itewe n'uburyo mwe yashobora gukora umuyobozi n'abakoresha bafite uburyo bwawe, ariko mu gihe cyinshi ni kuburira amagambo ya registration zikoreshwa mu gutera abakoresha bafite uburyo bwawe. Igihe cyacu ni gukwibwira uburyo mwe yashobora gukora ibi.
+Nubwo ari uburyo bworoshye kandi bworohereza kugerageza inzira zitandukanye mu gihe ushaka guhindura abakiriya bashya, ahanini bukoreshwa mu gukora amafishi yo kwiyandikisha yihariye. Iyi ngingo igamije kukwereka uko wabikora.
 
-## Amagambo y'Urugero n'Urugero:
+## Impapuro zo kwinjira no kwiyandikisha: {#login-and-registration-pages}
 
-Icyiza cyane mu gihe utangira Ultimate Multisite, igaragaza amagambo ya login n'registration zikoreshwa ku siti runaka ryawe. Ufite uburyo bwawe gukora ibi mu gihe cyose ukaba kuri ipage ya **Ultimate Multisite > Settings > Login & Registration**.
+Iyo Ultimate Multisite imaze gushyirwamo, ihita ikora impapuro zihariye zo kwinjira no kwiyandikisha ku rubuga rwawe nyamukuru. Ushobora guhindura izi mpapuro zisanzwe igihe icyo ari cyo cyose ujya kuri paji yawe ya **Ultimate Multisite > Settings > Login & Registration**.
 
-![Ipage y'Urugero n'Urugero](/img/config/settings-general.png)
+![Paji y’igenamiterere ryo Kwinjira no Kwiyandikisha](/img/config/settings-general.png)
 
-Dore umbwire wose w'ipage ya login n'registration:
+Dore ishusho yuzuye ya paji y’igenamiterere ryo kwinjira no kwiyandikisha:
 
-![Ipage y'Urugero n'Urugero ibyo byose](/img/config/settings-login-registration-full.png)
+![Paji yuzuye y’igenamiterere ryo Kwinjira no Kwiyandikisha](/img/config/settings-login-registration-full.png)
 
-Tugereye gukwibwira uburyo bwa amagambo mwe yashobora kubonjya ku ipage ya **Login & Registration**:
+Reka turebe buri kimwe mu byo ushobora guhindura kuri paji ya **Login & Registration**:
 
-  * **Kugera umuyobozi (Enable registration):** Icyo cyo kugaragaza cyangwa kwigera umuyobozi mu gukoresha kuri network yawe. Niba ugiye kugira ngo ubone, abakoresha bafite uburyo bwawe batagashobora gukora registration kandi batagashobora gukoresha ibintu byawe.
+  * **Enable registration:** Iri hitamo rizafungura cyangwa rifunge kwiyandikisha ku rubuga rwawe. Niryazimwa, abakiriya bawe ntibazashobora kwiyandikisha no gufata ifatabuguzi ku bicuruzwa byawe.
 
-  * **Kugera umwujiza (Enable email verification):** Niba ugiye kugira ngo ubone, abakoresha bashobora gukoresha uburyo bwawe mu gihe cy'ibintu by'ubwujgwa bw'umwujiza, batagira email y'ubwujgwa kandi bakwibonyeho gukorera link ya ubwujgwa kugira siti zabo zikoreshwa.
+  * **Enable email verification:** Iri hitamo nirifungurwa, abakiriya bafata ifatabuguzi rya plan y’ubuntu cyangwa plan yishyurwa ifite igihe cy’igerageza bazakira email yo kugenzura, kandi bazasabwa gukanda ku ihuza ryo kugenzura kugira ngo imbuga zabo zikorerwe.
 
-* **Ururu mu gukoresha (Default registration page):** Iki ni uburyo bwo gukoresha (registration) kuri WordPress. Uburyo nkozi ukoreshwa ari uko wumva umwe muri urugero rwawe kandi uba ubufasha ku muryango wawe. Ukenya uburyo bwo gukoresha uburyo bwo gukoresha (checkout form) - aho abakoresha bakoze bakora subscription kuri ibintu byawe. Ufite ubushobozi wubwira uburyo bwo gukoresha uburyo bwo gukoresha (checkout form) cyane ku urugero rwawe, ariko ugukoreshe u shortcode wa checkout form ku rubuga rwa registration, mu gihe nta ko uzabona.
+  * **Default registration page:** Iyi ni paji isanzwe yo kwiyandikisha. Iyi paji igomba kuba yatangajwe ku rubuga rwawe kandi ikagira ifishi yo kwiyandikisha (nanone izwi nka checkout form) - aho abakiriya bawe bazafatira ifatabuguzi ku bicuruzwa byawe. Ushobora gukora impapuro zo kwiyandikisha n’ama checkout forms uko ubishaka kose, gusa ujye wibuka gushyira shortcode ya checkout form kuri paji yo kwiyandikisha, bitabaye ibyo ntizagaragara.
 
-* **Gukoresha urugero rwa login rwawe (Use custom login page):** Iki kintu kishobora kugufasha gukoresha urugero rwa login rwawe ry'ibyo bindi byo, kandi si wp-login.php. Niba uba wumva iki kintu, uza kuba ufite ubushobozi bwo gukoresha urugero rwa login ku **Urugero rwa login rwa default** (uri hejuru mu gihe cy'ibyo byo).
+  * **Use custom login page:** Iri hitamo rigufasha gukoresha paji yo kwinjira yahinduwe uko ubyifuza, itandukanye na paji isanzwe ya wp-login.php. Iri hitamo nirifungurwa, ushobora guhitamo paji izakoreshwa mu kwinjira mu ihitamo rya **Default login page** (riri hasi gato).
 
-* **Gukoresha URL y'ubwoko bw'ibanire (Obfuscate the original login url (wp-login.php))**: Niba wumva ko wifasha gukoresha URL ya login ya mbere, uza kuba ufite ubushobozi bwo gukoresha iki kintu. Iki kintu kishobora kubaho mu gihe cy'ubwoko bw'ibanire (brute-force attacks). Niba uba wumva iki kintu, Ultimate Multisite izabona error ya 404 itewe igikorwa cyo gukoresha wp-login.php.
+  * **Obfuscate the original login url (wp-login.php)** : Niba ushaka guhisha URL y’umwimerere yo kwinjira, ushobora gufungura iri hitamo. Ibi bifasha gukumira ibitero bya brute-force. Iri hitamo nirifungurwa, Ultimate Multisite izerekana ikosa rya 404 igihe umukoresha agerageje kugera ku ihuza ry’umwimerere rya wp-login.php
 
-* **Gukora guhindura gukoresha site mu gihe cy'ubwoko (Force synchronous site publication)**: Nyuma yuko umwe muri muryango wacu yagize subscription kuri ibintu, urugero rwawe rwa mbere ryabaye site ya muryango itegeje. Icyo gukora guhindura gukoresha site kigira uburyo bwo gukorwa mu gihe cy'ubwoko (Job Queue), cyangwa mu gihe cy'ubwoko (asynchronously). Gukoresha iki kintu bizabasha gukora guhindura gukoresha site mu gihe cy'umwanya w'ibyo byo.
+  * **Force synchronous site publication:** Nyuma y’uko umukiriya afashe ifatabuguzi ku gicuruzwa kuri network, site nshya itegereje igomba guhindurwa site nyayo ya network. Igikorwa cyo gutangaza kiba binyuze muri Job Queue, mu buryo butagendera icyarimwe. Fungura iri hitamo kugira ngo gutangaza bibe mu busabe bumwe no kwiyandikisha.
 
-Ubu, twishobora kubona ibindi byo byiza ku gukoresha login n'ubwoko (registration). Bifuza bifuza bifite ubushobozi bwo gukoresha iki kintu: **Other options** kuri urugero rwa Login & registration.
+Noneho, reka turebe andi mahitamo agifitanye isano n’igikorwa cyo kwinjira no kwiyandikisha. Ari munsi gato ya **Other options** kuri iyo paji imwe ya Login & registration:
 
-* **Ururo rwa mbere (Default role):** Iki ni uru ro mu muryango wawe uza kuba ufite ku website yawe nyuma yuko umwe yagize subscription.
+  * **Default role:** Uru ni uruhare abakiriya bawe bazagira ku rubuga rwabo nyuma y’igikorwa cyo kwiyandikisha.
 
-* **Koresha Jumper:** Icyiza u Jumper mu admin area. Jumper yagira abashinzwe gukora urugero rw'Ultimate Multisite, network objects, n'ibindi by'ubwoko bwa mbere kandi byo bitanga, nta kumenya imenyinshi ya menu. Yitera n'iyo nshobora kugira ngo nishobore kubyara uwo tool w'ubwoko bw'umukono mu admin interface.
+  * **Enable Jumper:** Ifungura shortcut ya Jumper mu gice cy’ubuyobozi. Jumper ifasha abayobozi guhita bajya vuba kuri screens za Ultimate Multisite, objects za network, n’ahandi hantu hashyigikiwe batiriwe banyura muri buri menu. Yizimye niba wifuza guhisha icyo gikoresho cyihuse cyo kugendagenda muri admin interface.
 
-  * **Gusobanura abantu ku site y'inganda kandi:** Kugira ngo ushobore gukoresha iyo option, ibyo bishobora gukora ni gukoresha umuntu uyu mu site ya mbere ya network yawe nyuma yagera ku cyemezo cyo gushyira. Niba ushobora gukoresha iyo option, hari igice cyo gushyira **default role** y'abantu bishobora kubaho kuri website yawe kera ku mwezi.
+  * **Add users to the main site as well:** Gufungura iri hitamo bizongera no gushyira umukoresha kuri site nyamukuru ya network yawe nyuma y’igikorwa cyo kwiyandikisha. Nufungura iri hitamo, ihitamo ryo gushyiraho **default role** y’aba bakoresha ku rubuga rwawe na ryo rizagaragara hasi gato.
 
-  * **Gusobanura akazi nyinshi:** Yagira ngo abantu bashobore kugira akazi mu sites bitandukanye mu network yawe n'ibyo byo gushyira email yashya. Niba iyo option itera, abakiriya bishobora gufata akazi ku websites bitandukanye bitanga mu network yawe n'email yashya.
+  * **Enable multiple accounts:** Emerera abakoresha kugira accounts ku mbuga zitandukanye za network yawe bakoresheje aderesi ya email imwe. Iri hitamo nirizima, abakiriya bawe ntibazashobora gukora account ku zindi mbuga zikora kuri network yawe bakoresheje aderesi ya email imwe.
 
-Ibi ni ibyo byose byo ubwoko bw'ubwoko bwa login no registration cyangwa uwo gushyira umuntu ushobora gukoresha! Usaba kwisobanura ibyo uko wari utera mu gihe cyose ugiye gukemura.
+Kandi ibyo ni byo byose bijyanye n’amahitamo yo kwinjira no kwiyandikisha ushobora guhindura! Ntuzibagirwe kubika igenamiterere ryawe nyuma yo kurangiza kurihindura.
 
-## Gukoresha forms zikomeye (multiple registration forms):
+## Gukoresha amafishi menshi yo kwiyandikisha: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 yifashije editor ya checkout form itanga kugira ngo ushaye forms nyinshi uhoze, n'ibyo bitandukanye mu gihe cyo gushyira, ibintu byo kubyara, n'ibindi.
+Ultimate Multisite 2.0 itanga editor ya checkout form igufasha gukora amafishi uko uyashaka kose, afite fields zitandukanye, ibicuruzwa bitangwa, n’ibindi.
 
-Urugero rwa login no registration yifashishijwe n'shortcodes: **[wu_login_form]** kuri page ya login kandi **[wu_checkout]** ku page ya registration. Ushobora gukoresha ibyo byo gushyira umuntu mu registration cyangwa gukora forms zikomeye.
+Impapuro zombi zo kwinjira no kwiyandikisha zashyizwemo shortcodes: **[wu_login_form]** kuri paji yo kwinjira na**[wu_checkout]** ku paji yo kwiyandikisha. Ushobora kurushaho guhindura paji yo kwiyandikisha wubaka cyangwa ukora checkout forms.
 
-Kugira ngo ushaye iyo feature, gukora ugiye menu ya **Checkout Forms**, kuri side-bar y'igice cyo mbere.
+Kugira ngo ugere kuri uyu mwihariko, jya kuri menu ya **Checkout Forms**, ku ruhande rw’ibumoso.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menu ya Checkout Forms muri sidebar](/img/config/checkout-forms-list.png)
 
-Ku gihe cyo, ushobora kubona forms zose za checkout wari utera.
+Kuri iyi paji, ushobora kubona checkout forms zose ufite.
 
-Niba ushaka gukora uwo hwizera, usaba gukoresha **Add Checkout Form** ku gice cyo mbere y'page.
+Niba ushaka gukora nshya, kanda gusa kuri **Add Checkout Form** hejuru ya paji.
 
-Woweza uburyo mu mwezi w'ubwujgwa (single step), uburyo bishobora kubyara (multi-step) cyangwa ubwujgwa bw'umutwe (blank) nk'uko uburyo bwo kwiga. Nyuma, ugukora umuntu kugira ngo **Go to the Editor**.
+Ushobora guhitamo rimwe muri aya mahitamo atatu nk’aho uhera: intambwe imwe, intambwe nyinshi cyangwa ubusa. Hanyuma, kanda kuri **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Kongeramo Checkout Form ifite amahitamo y’intambwe imwe, intambwe nyinshi, cyangwa ubusa](/img/config/checkout-forms-list.png)
 
-Urugero, ushobora gukora cyangwa gukoresha mu gihe ugiye ku byiciro byo mu gihe w'ubwujgwa bwawe bwari bafite, uburenganzira ukoresheje uburyo bwo kubyara. Mu gihe runaka, ushobora gukora umuntu kugira ngo ushyire cyangwa ugusubire (duplicate) uburyo bwawe bwari bafite mu gihe ugiye ku byiciro byo mu gihe w'ubwujgwa bwawe. Mu gihe runaka, ushobora gukoresha uburyo bwo kubyara cyangwa kugusubira (duplicate) shortcode ya form cyangwa gufata umuntu.
+Ubundi buryo, ushobora guhindura cyangwa gukoporora amafishi usanzwe ufite ukanda ku mahitamo ari munsi y’izina ryayo. Aho, uzahasanga kandi amahitamo yo gukoporora shortcode y’ifishi cyangwa gusiba ifishi.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Ibikorwa bigaragara iyo unyuze hejuru ya checkout form birimo guhindura, gukoporora, no gusiba](/img/config/checkout-form-hover-actions.png)
 
-Muri uburyo bwo kubyara mu mwezi w'ubwujgwa (single step) cyangwa uburyo bishobora kubyara (multi-step), umusaruro wa form yashobora kuba yari yagize ibyiciro by'ubwujgwa bw'umutwe bafite mu gihe runaka. Nyuma, niba wifuza, ushobora gushyira ibyo byo ku mwezi w'ubwujgwa (extra steps) cyangwa ubyara.
+Nuhitamo intambwe imwe cyangwa intambwe nyinshi, checkout form izaba yamaze kuzuzwa mbere intambwe z’ibanze ziyifasha gukora. Hanyuma, niba ubishaka, ushobora kuyongeraho izindi ntambwe.
 
-### Gukora umusaruro wa form:
+### Guhindura Checkout Form: {#editing-a-checkout-form}
 
-Nko twari tewe n'ibyo twagaragaje mbere, ushobora gukora umusaruro wa form mu gihe runaka bishobora kuba bifite ibyo byo kwiga. Mu gihe runaka, twandukira ku mwezi w'ubwujgwa (registration form).
+Nk’uko twabivuze mbere, ushobora gukora checkout forms ku ntego zitandukanye. Muri uru rugero turakora ku ifishi yo kwiyandikisha.
 
-Nyuma yuko ugiye ku editor ya usaruro wa form, ugize umuri mu cyerekezo (name) (uhoza gukoreshwa mu gihe runaka gusa) n'umutwe (slug) (uhoza gukoreshwa mu gutera shortcodes, umusaruro).
+Nyuma yo kujya muri editor ya checkout form, ha ifishi yawe izina (rizakoreshwa gusa nk’icyerekezo cy’imbere) na slug (ikoreshwa mu gukora shortcodes, urugero).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Muhinduzi w'ifishi yo kwishyura ufite imyanya y'izina na slug](/img/config/checkout-form-name-slug.png)
 
-Forms yari yagize ibyiciro byo kubyara n'ibyo byo kwiga (fields). Ushobora gushyira mwezi w'ubwujgwa (new step) bishobora kuba bifite mu gihe ugiye ku **Add New Checkout Step**.
+Amafishi agizwe n’intambwe n’imyanya. Ushobora kongeramo intambwe nshya ukanze kuri **Ongeraho Intambwe Nshya yo Kwishyura**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Buto yo Ongeraho Intambwe Nshya yo Kwishyura](/img/config/checkout-form-add-step.png)
 
-Mu gihe runaka cyo mbere cyo modal window, gukoresha ibyo byo form yawe. Gize ID (umwihariko), izina n'ubwumvikane (description). Ibi bintu byari bifite mu gihe runaka gusa.
+Ku gice cya mbere cy’idirishya rya modal, shyiramo ibikubiye mu ntambwe y’ifishi yawe. Yiha ID, izina n’ibisobanuro. Ibi bintu akenshi bikoreshwa imbere muri sisitemu.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Agace k'ibikubiye mu ntambwe yo kwishyura gafite ID, izina n'ibisobanuro](/img/config/checkout-form-step-content.png)
 
-Nyuma, gukora umusaruro wa mwezi w'ubwujgwa (visibility). Ushobora gukoresha ibyo byo: **Always show** (Gushyira mu gihe runaka), **Only show for logged in users** (Gushyira ku bantu bafite aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka aka
+Hanyuma, shiraho uko intambwe igaragara. Ushobora guhitamo hagati ya **Buri gihe yerekane** , **Yerekane gusa ku bakoresha binjiye** cyangwa **Yerekane gusa ku bashyitsi**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Amahitamo y'ukugaragara kw'intambwe yo kwishyura](/img/config/checkout-form-step-visibility.png)
 
-Urugero, konfigurera indwara (step style). Ibi ni byo mu gihe (optional fields).
+Hanyuma, tunganya imiterere y’intambwe. Iyi myanya kuyuzuza si itegeko.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Igenamiterere ry'imiterere y'intambwe yo kwishyura](/img/config/checkout-form-step-style.png)
 
-Icyo, ni igihe cyo gushyira ibintu ku ndwara ya mbere. Gukoresha **Add New Field** kandi ugereye ku gukoresha uburyo bwo section wifuza.
+Ubu, igihe kirageze cyo kongera imyanya ku ntambwe yacu ya mbere. Kanda gusa kuri **Ongeraho Umwanya Mushya** maze uhitemo ubwoko bw’igice ushaka.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Buto yo Ongeraho Umwanya Mushya](/img/config/checkout-form-add-field-button.png)![Urutonde rumanuka rwo guhitamo ubwoko bw'umwanya](/img/config/checkout-form-field-type-dropdown.png)
 
-Icyo cyo gukoresha umbwereze (parameters) mu gihe cy'ibintu byiza. Ku gihe cyo mbere, twagira **Username** field.
+Buri mwanya ufite ibipimo bitandukanye bigomba kuzuzwa. Kuri iyi nyongera ya mbere, tuzahitamo umwanya wa **Izina ry'ukoresha**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Igenamiterere ry'ibikubiye mu mwanya w'izina ry'ukoresha](/img/config/checkout-form-username-content.png)![Ibipimo by'umwanya w'izina ry'ukoresha](/img/config/checkout-form-username-visibility.png)![Igenamiterere ry'inyongera ry'umwanya w'izina ry'ukoresha](/img/config/checkout-form-username-style.png)
 
-Ushobora gushyira indwara n'ibintu byiza cyane uzi. Kugira ngo umuyobozi wako yoroshye abakoresha bwo gukoresha ibyo, gukoresha Pricing Table field. He uzi ko wifuza abakoresha bwa template, shyira Template Selection field. kandi ibindi.
+Ushobora kongeramo intambwe n’imyanya byinshi uko ukeneye. Kugira ngo wereke abakiriya bawe ibicuruzwa byawe bahitemo kimwe, koresha umwanya w’Imbonerahamwe y’Ibiciro. Niba ushaka kureka abakiriya bawe bagahitamo inyandikorugero, ongeramo umwanya wo Guhitamo Inyandikorugero. N’ibindi.
 
-_**Urugero:** Iyo utera product nyuma y'uko wifashije checkout form, uza gutera product mu Pricing table section. Niba ushyira, product uzagira umuntu ku registration page.*
+![Muhinduzi w'ifishi yo kwishyura ufite umwanya wo guhitamo inyandikorugero](/img/config/checkout-form-with-template-field.png)
 
-_**Urugero 2:** username, email, password, site title, site URL, order summary, payment, kandi submit button ni ibintu byiza (mandatory fields) kugira ngo utera checkout form.*
+_**Icyitonderwa:** Niba ukoze igicuruzwa nyuma yo gukora ifishi yawe yo kwishyura, uzakenera kongera icyo gicuruzwa mu gice cy’Imbonerahamwe y’ibiciro. Nutacyongeramo, icyo gicuruzwa ntikizagaragara ku bakiriya bawe ku rupapuro rwo kwiyandikisha._
 
-Iyo ugiye gukora checkout form yawe, ushobora gukoresha Preview button kugira ngo umuyobozi wako yoroshye kumenya uko abakoresha bwo gushobora kubona form. Ushobora kandi guhindura hagati yuko umuntu ari umuryango wariye cyangwa umuntu wariye mu gihe cyo gukoresha.
+_**Icyitonderwa 2:** izina ry’ukoresha, email, password, umutwe w’urubuga, URL y’urubuga, incamake y’itegeko, ubwishyu, na buto yo kohereza ni imyanya itegekwa kugira ngo ukore ifishi yo kwishyura._
 
-![Button ya kuona uburyo bw'umuganda w'urugero rwa checkout](/img/config/checkout-form-preview-button.png)![Gushobora kumenya uburyo bwo gushobora umuganda w'urugero rwa checkout n'umuntu w'ubwujere cyangwa umuntu w'ubwujere kandi yashobora kuba yashobora kubona](/img/config/checkout-form-preview-modal.png)
+Mu gihe uri gukora ku ifishi yawe yo kwishyura, ushobora buri gihe gukoresha buto yo Kureba Mbere kugira ngo urebe uko abakiriya bawe bazabona ifishi. Ushobora kandi guhinduranya hagati yo kureba nk’umukoresha usanzweho cyangwa umushyitsi.
 
-Urugero, ku **Advanced Options** (Icyiciro Cy'ingenzi), uza kuba ufite uburyo bwo gukoresha amakuru ku cyerekezo cy'umuganda w'ubwujere (Thank You page), kugabanya ibyerekezo by'ubwujere, gushyira CSS cy'umuganda w'urugero rwa checkout cyangwa kwibanda ku nzego z'ubwujere.
+![Buto yo Kureba Mbere kuri muhinduzi w'ifishi yo kwishyura](/img/config/checkout-form-preview-button.png)![Kureba mbere ifishi yo kwishyura nk'umushyitsi cyangwa umukoresha usanzweho](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options n'ibyo bindi bikurikira: uburyo bw'umuganda w'ubwujere, gushyira ibyerekezo by'ubwujere, no CSS cy'umuganda w'urugero rwa checkout](/img/config/checkout-form-advanced.png)
+Hanyuma, kuri **Amahitamo Ateye Imbere** ushobora gutunganya ubutumwa bw’urupapuro rwa **Murakoze**, kongeramo snippets zo gukurikirana conversions, kongeramo CSS yihariye ku ifishi yawe yo kwishyura cyangwa kuyigarukira ku bihugu runaka.
 
-Uza kuba ufite uburyo bwo gukoresha umuganda w'urugero rwa checkout kandi uza kuba ufite uburyo bwo guhagarara cyangwa guhagarara umuganda w'urugero rwa checkout ubwo ugiye ku column ya mbere, cyangwa ugashobora gusohora mu gihe cy'ibindi.
+![Amahitamo Ateye Imbere afite urupapuro rwa Murakoze, gukurikirana conversions, na CSS yihariye](/img/config/checkout-form-advanced.png)
 
-![Urugero rw'umuganda w'urugero rwa checkout kandi uburyo bwo guhagarara cyangwa guhagarara umuganda w'urugero rwa checkout](/img/config/checkout-form-active.png)
+Ushobora kandi gufungura cyangwa gufunga ifishi yawe yo kwishyura intoki uhinduranya iri hitamo riri mu nkingi y’iburyo, cyangwa ugasiba burundu iyo fishi.
 
-Usaba ko usahije umuganda w'urugero rwa checkout!
+![Toggle ikora n'ihitamo ryo gusiba ifishi yo kwishyura](/img/config/checkout-form-active.png)
 
-![Button ya gushyira umuganda w'urugero rwa checkout](/img/config/checkout-form-save.png)
+Ntiwibagirwe kubika ifishi yawe yo kwishyura!
 
-Kugira shortcode cy'umuganda wako, ugashobora gukoresha **Generate Shortcode** (Gukoresha Shortcode) kandi uburyo bwo gushyira mu shortcode yose igice cyiza cyangwa seka uburyo bwa modal window.
+![Buto yo Kubika Ifishi yo Kwishyura](/img/config/checkout-form-save.png)
 
-![Modal ya Generate Shortcode n'umuganda w'urugero rwa checkout kugira ngo usohore](/img/config/checkout-form-editor.png)
+Kugira ngo ubone shortcode y’ifishi yawe kanda kuri **Kora Shortcode** maze ukoporore igisubizo kigaragazwa mu idirishya rya modal.
 
-_**Urugero:** Uza kuba ufite ubushobozi bwo gushyira shortcode uyu mu registration page yawe kugira ngo umuganda w'urugero rwa checkout uyu yashobore guhagarara kuri iyo page._
+![Modal yo Kora Shortcode ifite shortcode yo gukoporora](/img/config/checkout-form-editor.png)
 
-## Gukoresha amakuru (URL parameters) kugira ngo utangire ubwoko bw'ibintu n'ibyo bishobora kuboneka mu URL:
+_**Icyitonderwa:** Uzakenera kongera iyi shortcode ku rupapuro rwawe rwo kwiyandikisha kugira ngo iyi fishi yo kwishyura yongerwemo._
 
-Iyo wumva ko wumva gukora ibyo, uza kuba ufite uburyo bwo gukoresha amakuru (URL parameters) kugira ngo ushage amafaranga y'ubwoko ku bijyanye n'ibintu by'ubwoko mu checkout form cyangwa seka umuntu w'ubwujere yashobora kubona ibyo abantu bafite mu pricing table cyangwa templates page.
+## Guhitamo mbere ibicuruzwa n’inyandikorugero ukoresheje ibipimo bya URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Kwa plans (Uburyo bwo gukoresha amakuru ku plans):**
+Niba ushaka gukora imbonerahamwe z’ibiciro zihariye ku bicuruzwa byawe no guhitamo mbere ku ifishi yo kwishyura igicuruzwa cyangwa inyandikorugero umukiriya wawe ahitamo avuye ku mbonerahamwe y’ibiciro yawe cyangwa ku rupapuro rw’inyandikorugero, ushobora kubikoresha ukoresheje ibipimo bya URL.
 
-Gukoresha **Ultimate Multisite > Products > Select a plan**. Uza kumenya uburyo bwo gushobora kubona button ya **Click to copy Shareable Link** (Koresha uburyo bwo gushyira link yashobora guhagarara) ku cyerekezo cy'iyo page. Iyo ni uburyo ushobora gukoresha kugira ngo ushage plan igihariye kuri checkout form yawe.
+### **Kuri gahunda:** {#for-plans}
 
-![Product page n'ubwo bwoko bwa shareable link](/img/config/products-list.png)
+Jya kuri **Ultimate Multisite > Ibicuruzwa > Hitamo gahunda**. Wagombye kubona buto ya **Kanda ukoporore Link Isangizwa** hejuru y’urupapuro. Iyi ni link ushobora gukoresha kugira ngo uhitemo mbere iyi gahunda yihariye ku ifishi yawe yo kwishyura.
 
-Urahindwe uyuha umukono w'ubwujaji uyuha **Plans** gusa. Ntuzuye uyuha ubwujaji bwo muco cyangwa ibikorwa.
+![Urupapuro rw'igicuruzwa rufite buto ya link isangizwa](/img/config/products-list.png)
 
-### Ku bwoko (templates):
+Menya ko iyi link isangizwa ikora gusa kuri **Gahunda**. Ntushobora gukoresha links zisangizwa ku mapaki cyangwa serivisi.
 
-Iyo wumva kugira ngo utangire gukoresha templates z'ibanga ku gihe cyo ugenda mu checkout form yawe, uba mushobora gukoresha parameter: **?template_id=X** kuri URL yawe y'ubwujaji. Uyu "X" ukenewe guhindurwa n'umwihariko w'ibanga (site template ID number). Kugira ngo uhereye uyu numero, genda ku **Ultimate Multisite > Sites**.
+### Ku nyandikorugero: {#for-templates}
 
-Gukoresha **Manage** cyangwa **Urugero** kera mu gihe cyo ugomba gukoresha site template ukenewe. Uba mufite numero ya SITE ID. Gukoresha uyu numero gusa kugira ngo umwe site template w'ibanga yose yoroshye gukoreshwa ku checkout form yawe. Mu gihe cyacu, parameter ya URL itera ku **?template_id=2**.
+Niba ushaka guhitamo mbere inyandikorugero z’urubuga ku ifishi yawe yo kwishyura, ushobora gukoresha igipimo: **?template_id=X** kuri URL y’urupapuro rwawe rwo kwiyandikisha. "X" igomba gusimbuzwa **inomero ya ID y'inyandikorugero y'urubuga**. Kugira ngo ubone iyi nomero, jya kuri **Ultimate Multisite > Imbuga**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Kanda kuri **Gucunga** munsi neza y’inyandikorugero y’urubuga ushaka gukoresha. Uzabona inomero ya SITE ID. Koresha gusa iyi nomero kuri iyi nyandikorugero y’urubuga yihariye kugira ngo ihitwemo mbere ku ifishi yawe yo kwishyura. Muri uru rugero rwacu hano, igipimo cya URL cyaba **?template_id=2**.
 
-Muri uburyo bwo kuvuga, website y'urugendo rwawe ni [**www.mynetwork.com**](http://www.mynetwork.com) kandi igice cyo gukoresha checkout form yawe kigira ku gihe cyo **/register**. URL yose itera ku site template ukenewe yoroshye gukoreshwa izaba ikomeye nk'iki: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Urutonde rw'imbuga rwerekana ID y'inyandikorugero y'urubuga](/img/config/site-templates-list.png)
 
-Kindi, niba wumva kugira ngo utangire gukoresha ibintu byose (products) n'ibanga (templates) ku checkout form yawe, ukenewe gukora iki: gukopya shareable link y'ibanga kandi ukugira mu gihe cyo gufata parameter ya template ku mwera. Izaba ikomeye nk'iki: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Reka tuvuge ko urubuga rwacu rwa network ari [**www.mynetwork.com**](http://www.mynetwork.com) kandi urupapuro rwacu rwo kwiyandikisha rufite ifishi yacu yo kwishyura ruherereye ku rupapuro rwa **/register**. URL yose ifite iyi nyandikorugero y’urubuga yahiswemo mbere izasa na [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Kandi niba ubishaka, ushobora guhitamo mbere ibicuruzwa n’inyandikorugero byombi ku ifishi yawe yo kwishyura. Icyo ukeneye gukora ni ugukoporora link isangizwa ya gahunda maze ugashyira igipimo cy’inyandikorugero ku mpera. Izasa na [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

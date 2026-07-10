@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Ìsanwó GoCardless
+
+Gba àwọn oníbàárà rẹ láyè láti sanwó fún àwọn ìforúkọsílẹ̀ ọmọ ẹgbẹ́ àti àwọn ọjà Multisite Ultimate pẹ̀lú Debit Taara ní lílo GoCardless!
+
+## Fífì sílẹ̀ {#installation}
+
+1. Ṣe ìgbéjáde 'ultimate-multisite-gocardless' sí àkójọ '/wp-content/plugins/'
+2. Mú àfikún náà ṣiṣẹ́ nípasẹ̀ àkojọ 'Àwọn àfikún' nínú WordPress
+3. Tẹ̀lé Wizard ìgbésẹ̀-ní-ìgbésẹ̀ láti ṣètò àfikún náà
+
+## Ìtọ́nisọ́nà Lílo {#usage-guide}
+
+_GoCardless_ jẹ́ ẹnu-ọ̀nà ìsanwó tó wà ní **Yúróòpù àti ní UK** tó gba àwọn ìsanwó **Debit Taara** láyè.
+
+**Ultimate Multisite: GoCardless Gateway** ṣàfikún àtìlẹ́yìn _GoCardless_ sí Ultimate Multisite, ó ń jẹ́ kí o gba owó lọ́wọ́ àwọn oníbàárà rẹ ní agbègbè yẹn ní lílo Debit Taara.
+
+Ìkọ́nisọ́nà yìí yóò ṣàlàyé bí a ṣe ń ṣètò _GoCardless_ láti bẹ̀rẹ̀ sí í gba àwọn ìsanwó nípasẹ̀ rẹ̀ lórí nẹ́tíwọ́ọ̀kì Ultimate Multisite rẹ.
+
+_**Àkíyèsí: GoCardless ń ṣiṣẹ́ pẹ̀lú àwọn owó wọ̀nyí nìkan:**_ **EUR, GBP, AUD, SEK, àti DKK.**
+
+## Fífì Àfikún náà sílẹ̀ {#installing-the-add-on}
+
+Ní àkọ́kọ́, o ní láti fi àfikún GoCardless fún Ultimate Multisite sílẹ̀. O lè ṣe bẹ́ẹ̀ nípa lílọ sí **Ultimate Multisite > Ètò > Àwọn àfikún (lórí pẹpẹ ẹ̀gbẹ́)**. Kí o sì yan àfikún GoCardless lórí àtòkọ yẹn.
+
+Lẹ́yìn tí a bá ti fi àfikún náà sílẹ̀ tí a sì ti mú un ṣiṣẹ́, lọ sí **Ultimate Multisite > Ètò > Àwọn ìsanwó**, yí aṣayan GoCardless padà, kí o sì fi pamọ́.
+
+![Àwọn ètò ẹnu-ọ̀nà ìsanwó](/img/config/settings-payment-gateways.png)
+
+## Gbígba Access Token {#getting-an-access-token}
+
+Ṣẹ̀dá àkántì kan lórí _GoCardless_ (tàbí lórí sandbox _GoCardless_, bí o bá fẹ́ **dán an wò lákọ̀ọ́kọ́** , èyí tí a dámọ̀ràn). Lẹ́yìn náà, lẹ́yìn ìwọlé, lọ sí ohun àkojọ **Àwọn olùgbéejáde**.
+
+<!-- Àwòrán kò sí: Dashboard GoCardless tó ń fi ipò àkojọ Àwọn olùgbéejáde hàn -->
+
+Lórí ojúewé **Àwọn olùgbéejáde**, tẹ bọ́tìnì **Ṣẹ̀dá** ní igun ọ̀tún-ókè iboju, lẹ́yìn náà tẹ aṣayan **Access Token**.
+
+<!-- Àwòrán kò sí: Ojúewé Àwọn olùgbéejáde GoCardless pẹ̀lú bọ́tìnì Ṣẹ̀dá àti aṣayan Access Token -->
+
+Èyí yóò ṣí fèrèsé modal tuntun, yóò jẹ́ kí o ṣẹ̀dá token tuntun. Fún un ní orúkọ tí a lè dá mọ̀, kí o sì rí i dájú pé o yan aṣayan **Ìráyè kà-kọ** nínú àkojọ **Scope**.
+
+<!-- Àwòrán kò sí: Modal GoCardless fún ṣíṣẹ̀dá access token tuntun pẹ̀lú scope kà-kọ -->
+
+Access token náà yóò hàn lórí iboju. Ṣàdàkọ èyí, kí o sì lẹ̀ ẹ́ mọ́ àkojọ **Ultimate Multisite > Ètò > Àwọn ìsanwó > GoCardless** rẹ.
+
+Rí i dájú pé o fi sí field tó tọ́. Tí ó bá jẹ́ **toke ìgbésí-ayé** **n** , pa **ipò sandbox** kí o tó lẹ token náà mọ́.
+
+![Àwọn ètò ẹnu-ọ̀nà ìsanwó pẹ̀lú GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Àwòrán kò sí: Àwọn field token GoCardless nínú àwọn ètò ìsanwó Ultimate Multisite -->
+
+Ìyẹn ni fún ìgbésẹ̀ àkọ́kọ́. Tó kàn, o ní láti ṣètò olùgbọ́ webhook kan.
+
+## Ṣíṣètò Olùgbọ́ Webhook {#setting-up-the-webhook-listener}
+
+Nígbà tí a bá ń bá àwọn ìforúkọsílẹ̀ ṣiṣẹ́, Ultimate Multisite nílò láti gbọ́ nípa àwọn ìyípadà nínú ipò ìforúkọsílẹ̀, àwọn ìsanwó tuntun tí a ń ṣe, àti àwọn nǹkan mìíràn bẹ́ẹ̀.
+
+Ọ̀nà tí àwọn ẹnu-ọ̀nà ìsanwó fi ń sọ fún Ultimate Multisite nípa àwọn ìyípadà wọ̀nyẹn ni lílo **àwọn ìpè webhook**. Fún ìdí yẹn, kí ìṣàkóso pọ̀ náà lè ṣiṣẹ́ 100%, a nílò láti sọ fún _GoCardless_ URL wo ni kí ó pè pẹ̀lú gbogbo ìwífún yẹn.
+
+Padà sí pánẹ́lì **GoCardless > Àwọn olùgbéejáde** rẹ, kí o sì tún tẹ bọ́tìnì Ṣẹ̀dá, ṣùgbọ́n ní ìgbà yìí, yan aṣayan **endpoint Webhook**.
+
+<!-- Àwòrán kò sí: Ojúewé Àwọn olùgbéejáde GoCardless pẹ̀lú aṣayan endpoint Webhook -->Fèrèsé tuntun yóò ṣí pẹ̀lú àwọn aṣayan endpoint webhook. Ó béèrè fún URL webhook náà, nítorí náà padà sí **àwọn ètò Ultimate Multisite > Àwọn ìsanwó > GoCardless** rẹ, kí o sì ṣàdàkọ URL webhook tí a ṣe àkójọ níbẹ̀:
+
+<!-- Àwòrán kò sí: Àwọn ètò GoCardless Ultimate Multisite tó ń fi URL webhook hàn -->
+
+Ní àfikún, o lè tẹ **aṣírí webhook** kan tí a ó lò láti fọwọ́ sí àwọn ìpè webhook rẹ. Ohunkóhun tí o bá tẹ sí field yẹn, ìwọ yóò tún ní láti tẹ sí **field Aṣírí Webhook Ultimate Multisite** pẹ̀lú.
+
+<!-- Àwòrán kò sí: Fọ́ọ̀mù ìṣètò endpoint webhook GoCardless pẹ̀lú URL àti àwọn field aṣírí -->
+
+<!-- Àwòrán kò sí: Field aṣírí webhook GoCardless Ultimate Multisite -->
+
+Parí rẹ̀ nípa fífi endpoint náà pamọ́ nípa títẹ bọ́tìnì **Ṣẹ̀dá endpoint webhook** àti lẹ́yìn náà **fi àwọn ètò Ultimate Multisite rẹ pamọ́ pẹ̀lú**.
+
+Ó yẹ kí o ti ṣetán láti gba _GoCardless_ báyìí!

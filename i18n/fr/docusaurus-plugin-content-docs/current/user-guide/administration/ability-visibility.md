@@ -3,11 +3,11 @@ title: Visibilité des capacités
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilité des capacités
+# Visibilité des capacités {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduit les contrôles de **Visibilité des capacités** (*Ability Visibility*) qui déterminent quelles interfaces exposent chaque capacité. Cela permet aux administrateurs d'affiner les capacités de l'agent disponibles via les API REST, les serveurs MCP, les intégrations WooCommerce et autres interfaces.
 
-## Qu'est-ce que la Visibilité des capacités ?
+## Qu'est-ce que la Visibilité des capacités ? {#what-is-ability-visibility}
 
 La Visibilité des capacités est un système de permission qui contrôle :
 
@@ -18,9 +18,9 @@ La Visibilité des capacités est un système de permission qui contrôle :
 
 Chaque capacité possède un niveau de visibilité qui détermine sa disponibilité sur différentes interfaces.
 
-## Niveaux de visibilité
+## Niveaux de visibilité {#visibility-levels}
 
-### Public
+### Public {#public}
 
 Les **capacités publiques** sont disponibles partout :
 
@@ -32,7 +32,7 @@ Les **capacités publiques** sont disponibles partout :
 
 Exemple : `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interne
+### Interne {#internal}
 
 Les **capacités internes** ne sont disponibles que dans votre installation WordPress :
 
@@ -43,7 +43,7 @@ Les **capacités internes** ne sont disponibles que dans votre installation Word
 
 Exemple : `manage-settings`, `view-analytics`, `export-data`
 
-### Partenaire
+### Partenaire {#partner}
 
 Les **capacités partenaires** ne sont disponibles que pour les partenaires mis sur liste blanche :
 
@@ -54,7 +54,7 @@ Les **capacités partenaires** ne sont disponibles que pour les partenaires mis 
 
 Exemple : `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Désactivé
+### Désactivé {#disabled}
 
 Les **capacités désactivées** ne sont disponibles nulle part :
 
@@ -63,15 +63,15 @@ Les **capacités désactivées** ne sont disponibles nulle part :
 - Non disponibles dans les panneaux d'administration
 - Utile pour les capacités obsolètes ou expérimentales
 
-## Gestion de la visibilité des capacités
+## Gestion de la visibilité des capacités {#managing-ability-visibility}
 
-### Accéder aux paramètres de visibilité des capacités
+### Accéder aux paramètres de visibilité des capacités {#accessing-ability-visibility-settings}
 
 1. Allez dans **Administration WordPress** → **Superdav AI Agent** → **Paramètres**
 2. Cliquez sur l'onglet **Capacités** (*Abilities*)
 3. Vous verrez une liste de toutes les capacités installées avec leurs niveaux de visibilité
 
-### Visualiser les détails d'une capacité
+### Visualiser les détails d'une capacité {#viewing-ability-details}
 
 Cliquez sur une capacité pour voir :
 
@@ -82,7 +82,7 @@ Cliquez sur une capacité pour voir :
 - **Dernière mise à jour** (*Last updated*) : Quand la visibilité a été modifiée pour la dernière fois
 - **Statut** (*Status*) : Reconnue ou Non classifiée
 
-### Modifier les niveaux de visibilité
+### Modifier les niveaux de visibilité {#changing-visibility-levels}
 
 Pour modifier la visibilité d'une capacité :
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Opérations en masse
+### Opérations en masse {#bulk-operations}
 
 Pour modifier la visibilité de plusieurs capacités :
 
@@ -108,11 +108,11 @@ Pour modifier la visibilité de plusieurs capacités :
 2. Sélectionnez un nouveau niveau de visibilité dans le menu déroulant des actions en masse
 3. Cliquez sur **Appliquer** (*Apply*)
 
-## Liste d'autorisation des partenaires
+## Liste d'autorisation des partenaires {#partner-allow-list}
 
 La **liste d'autorisation des partenaires** (*partner allow-list*) contrôle quels partenaires externes peuvent accéder aux capacités de niveau Partenaire.
 
-### Ajouter des partenaires
+### Ajouter des partenaires {#adding-partners}
 
 1. Allez dans **Superdav AI Agent** → **Paramètres** → **Partenaires**
 2. Cliquez sur **Ajouter un partenaire** (*Add Partner*)
@@ -120,7 +120,7 @@ La **liste d'autorisation des partenaires** (*partner allow-list*) contrôle que
 4. Ajoutez optionnellement un nom et une description du partenaire
 5. Cliquez sur **Enregistrer** (*Save*)
 
-### Attribuer des capacités aux partenaires
+### Attribuer des capacités aux partenaires {#assigning-abilities-to-partners}
 
 Après avoir ajouté un partenaire :
 
@@ -130,7 +130,7 @@ Après avoir ajouté un partenaire :
 4. Dans la section "Liste d'autorisation des partenaires", cochez les cases des partenaires qui doivent y avoir accès
 5. Cliquez sur **Enregistrer** (*Save*)
 
-### Révoquer l'accès des partenaires
+### Révoquer l'accès des partenaires {#revoking-partner-access}
 
 Pour supprimer l'accès d'un partenaire :
 
@@ -140,11 +140,11 @@ Pour supprimer l'accès d'un partenaire :
 
 Le partenaire perdra immédiatement l'accès à cette capacité.
 
-## Capacités non classifiées
+## Capacités non classifiées {#unclassified-abilities}
 
 Lorsque vous installez une capacité tierce que Superdav AI Agent ne reconnaît pas, elle est marquée comme **Non classifiée** (*Unclassified*).
 
-### Notification d'administration pour les capacités non classifiées
+### Notification d'administration pour les capacités non classifiées {#admin-notice-for-unclassified-abilities}
 
 Vous verrez une notification d'administration :
 
@@ -161,7 +161,7 @@ Veuillez les examiner et les classifier.
 [Examiner les capacités] [Ignorer]
 ```
 
-### Examiner les capacités non classifiées
+### Examiner les capacités non classifiées {#reviewing-unclassified-abilities}
 
 1. Cliquez sur **Examiner les capacités** (*Review Abilities*) dans la notification
 2. Pour chaque capacité non classifiée, vous verrez :
@@ -178,7 +178,7 @@ Veuillez les examiner et les classifier.
 
 4. Cliquez sur **Classifier** (*Classify*) pour enregistrer votre décision
 
-### Pourquoi classifier les capacités non classifiées ?
+### Pourquoi classifier les capacités non classifiées ? {#why-classify-unclassified-abilities}
 
 Classifier les capacités :
 
@@ -187,9 +187,9 @@ Classifier les capacités :
 - **Active des fonctionnalités** : Une fois classifiée, la capacité devient disponible
 - **Documente les décisions** : Vos choix sont enregistrés à des fins d'audit
 
-## Visibilité dans différentes interfaces
+## Visibilité dans différentes interfaces {#visibility-in-different-surfaces}
 
-### API REST
+### API REST {#rest-api}
 
 Les **capacités publiques** sont disponibles via les points de terminaison REST :
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 Les **capacités internes et partenaires** ne sont pas disponibles via l'API REST.
 
-### Serveurs MCP
+### Serveurs MCP {#mcp-servers}
 
 Les **capacités publiques** sont disponibles via MCP :
 
@@ -217,7 +217,7 @@ Les **capacités internes** ne sont pas exposées via MCP.
 
 **Les capacités partenaires** ne sont disponibles qu'avec les identifiants du partenaire.
 
-### Intégration WooCommerce
+### Intégration WooCommerce {#woocommerce-integration}
 
 Les **capacités publiques** liées à WooCommerce sont disponibles :
 
@@ -227,7 +227,7 @@ Les **capacités publiques** liées à WooCommerce sont disponibles :
 
 Les **capacités internes** ne sont pas exposées à WooCommerce.
 
-### Interface de chat
+### Interface de chat {#chat-interface}
 
 **Toutes les capacités** (Publiques, Internes, Partenaires) sont disponibles dans le chat, selon les permissions de l'utilisateur :
 
@@ -235,34 +235,34 @@ Les **capacités internes** ne sont pas exposées à WooCommerce.
 - Les utilisateurs réguliers ne voient que les capacités Publiques
 - Les partenaires voient les capacités Publiques + Partenaires (si mis sur liste blanche)
 
-## Bonnes pratiques de sécurité
+## Bonnes pratiques de sécurité {#security-best-practices}
 
-### Principe du moindre privilège
+### Principe du moindre privilège {#principle-of-least-privilege}
 
 - Définissez les capacités avec le niveau de visibilité le plus restrictif qui permet toujours leur utilisation
 - Utilisez la visibilité Partenaire pour les opérations sensibles
 - Désactivez les capacités que vous n'utilisez pas
 
-### Audits réguliers
+### Audits réguliers {#regular-audits}
 
 - Examinez la visibilité des capacités chaque mois
 - Vérifiez les capacités non classifiées
 - Supprimez l'accès pour les partenaires inutilisés
 
-### Journalisation et surveillance
+### Journalisation et surveillance {#logging-and-monitoring}
 
 - Surveillez quelles capacités sont les plus utilisées
 - Suivez les modèles d'accès des partenaires
 - Alertez en cas d'utilisation inhabituelle des capacités
 
-### Capacités tierces
+### Capacités tierces {#third-party-abilities}
 
 - Examinez les capacités tierces avant de les activer
 - Classifiez-les explicitement
 - Commencez avec une visibilité Interne ou Partenaire
 - Ne pas promouvoir en Public qu'après vérification
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
 **Une capacité n'apparaît pas dans la liste**
 - Vérifiez que la capacité est installée et active
@@ -285,7 +285,7 @@ Les **capacités internes** ne sont pas exposées à WooCommerce.
 - Vérifiez que votre classification a été enregistrée
 - Vérifiez que le plugin fournissant la capacité est à jour
 
-## Migration du mode hérité
+## Migration du mode hérité {#migration-from-legacy-mode}
 
 Si vous effectuez une mise à niveau d'une ancienne version de Superdav AI Agent :
 
@@ -295,7 +295,7 @@ Si vous effectuez une mise à niveau d'une ancienne version de Superdav AI Agent
 
 Consultez **Migration du mode tiers** (*Third-Party Mode Migration*) pour plus de détails sur la transition vers l'intégration native de l'API des capacités.
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 Après avoir configuré la visibilité des capacités :
 

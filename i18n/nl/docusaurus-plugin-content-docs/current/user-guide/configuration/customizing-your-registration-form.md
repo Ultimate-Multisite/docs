@@ -1,148 +1,156 @@
 ---
-title: Aanpassen van uw registratieformulier
+title: Je registratieformulier aanpassen
 sidebar_position: 17
-_i18n_hash: f060f881656e229e05b8d6f83a85bd84
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Het aanpassen van je registratieformulier
+# Je registratieformulier aanpassen {#customizing-your-registration-form}
 
-Om je netwerk uniek te laten lijken ten opzichte van alle andere SaaS die op het WordPress-platform zijn gebouwd, stelt Ultimate Multisite je in staat om je registratie- en inlogpagina's aan te passen met onze functie **Checkout Forms**.
+Om je netwerk er uniek uit te laten zien ten opzichte van alle andere SaaS die op het WordPress-platform zijn gebouwd, kun je met Ultimate Multisite je registratie- en inlogpagina’s aanpassen met onze functie **Checkout Forms**.
 
-Hoewel ze een gemakkelijke en flexibele manier zijn om verschillende benaderingen uit te proberen bij het converteren van nieuwe klanten, worden ze vooral gebruikt om gepersonaliseerde registratieformulieren te maken. Dit artikel laat zien hoe je dat kunt doen.
+Hoewel ze een eenvoudige en flexibele manier zijn om te experimenteren met verschillende benaderingen bij het converteren van nieuwe klanten, worden ze vooral gebruikt om gepersonaliseerde registratieformulieren te maken. Dit artikel laat zien hoe je dat kunt doen.
 
-## Login en registratiepagina's:
+## Inlog- en registratiepagina’s: {#login-and-registration-pages}
 
-Bij de installatie van Ultimate Multisite worden automatisch aangepaste inlog- en registratiepagina's op je hoofdsit gemaakt. Je kunt deze standaardpagina's op elk moment wijzigen via je **Ultimate Multisite > Settings > Login & Registration** pagina.
+Bij de installatie van Ultimate Multisite worden automatisch aangepaste inlog- en registratiepagina’s op je hoofdsite aangemaakt. Je kunt deze standaardpagina’s op elk moment wijzigen via je pagina **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Instellingenpagina voor inloggen en registratie](/img/config/settings-general.png)
 
-Laten we elk van de opties bekijken die je kunt aanpassen op de **Login & Registration** pagina:
+Hier is een volledig overzicht van de instellingenpagina voor inloggen en registratie:
 
-  * **Enable registration:** Deze optie schakelt de registratie op je netwerk in of uit. Als deze is uitgeschakeld, kunnen je klanten zich niet registreren en abonneren op je producten.
+![Volledige instellingenpagina voor inloggen en registratie](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Als deze optie is ingeschakeld, ontvangen klanten die zich abonneren op een gratis plan of een betaald plan met een proefperiode een verificatie-e-mail en moeten ze op de verificatielink klikken om hun websites te laten aanmaken.
+Laten we kijken naar elk van de opties die je kunt aanpassen op de pagina **Login & Registration**:
 
-  * **Default registration page:** Dit is de standaardpagina voor registratie. Deze pagina moet gepubliceerd zijn op je website en een registratieformulier (ook bekend als checkoutformulier) bevatten - waar je klanten zich kunnen abonneren op je producten. Je kunt zo veel registratiepagina's en checkoutformulieren maken als je wilt, maar vergeet niet de shortcode van het checkoutformulier op de registratiepagina te plaatsen, anders verschijnt het niet.
+  * **Registratie inschakelen:** Met deze optie schakel je registratie op je netwerk in of uit. Als deze is uitgeschakeld, kunnen je klanten zich niet registreren en zich niet abonneren op je producten.
 
-  * **Use custom login page:** Deze optie laat je een aangepaste inlogpagina gebruiken, anders dan de standaard wp-login.php-pagina. Als deze optie is ingeschakeld, kun je kiezen welke pagina wordt gebruikt voor inloggen op de optie **Default login page** (rechtsonder).
+  * **E-mailverificatie inschakelen:** Als deze optie is ingeschakeld, ontvangen klanten die zich abonneren op een gratis abonnement of een betaald abonnement met een proefperiode een verificatie-e-mail en moeten ze op de verificatielink klikken voordat hun websites worden aangemaakt.
 
-  * **Obfuscate the original login url (wp-login.php)** : Als je de oorspronkelijke inlog-URL wilt verbergen, kun je deze optie inschakelen. Dit is handig om brute‑force aanvallen te voorkomen. Als deze optie is ingeschakeld, toont Ultimate Multisite een 404‑fout wanneer een gebruiker probeert de oorspronkelijke wp-login.php-link te openen.
+  * **Standaard registratiepagina:** Dit is de standaardpagina voor registratie. Deze pagina moet op je website gepubliceerd zijn en een registratieformulier bevatten (ook bekend als checkoutformulier) - waar je klanten zich op je producten abonneren. Je kunt zoveel registratiepagina’s en checkoutformulieren maken als je wilt; vergeet alleen niet de shortcode van het checkoutformulier op de registratiepagina te plaatsen, anders verschijnt het niet.
 
-  * **Force synchronous site publication:** Nadat een klant zich heeft geabonneerd op een product op een netwerk, moet de nieuwe wachtende site worden omgezet in een echte netwerksite. Het publicatieproces gebeurt via Job Queue, asynchroon. Schakel deze optie in om de publicatie te forceren in dezelfde aanvraag als de registratie.
+  * **Aangepaste inlogpagina gebruiken:** Met deze optie kun je een aangepaste inlogpagina gebruiken in plaats van de standaard wp-login.php-pagina. Als deze optie is ingeschakeld, kun je selecteren welke pagina wordt gebruikt voor inloggen via de optie **Default login page** (direct hieronder).
 
-Nu bekijken we andere opties die nog steeds relevant zijn voor het inlog- en registratieproces. Ze staan recht onder **Other options** op dezelfde Login & registration pagina:
+  * **De oorspronkelijke inlog-URL verbergen (wp-login.php)** : Als je de oorspronkelijke inlog-URL wilt verbergen, kun je deze optie inschakelen. Dit is handig om brute-force-aanvallen te voorkomen. Als deze optie is ingeschakeld, toont Ultimate Multisite een 404-fout wanneer een gebruiker de oorspronkelijke wp-login.php-link probeert te openen
 
-  * **Default role:** Dit is de rol die je klanten op hun website krijgen na het registratieproces.
+  * **Synchrone sitepublicatie afdwingen:** Nadat een klant zich op een product in een netwerk abonneert, moet de nieuwe in behandeling zijnde site worden omgezet naar een echte netwerksite. Het publicatieproces gebeurt via Job Queue, asynchroon. Schakel deze optie in om af te dwingen dat de publicatie in hetzelfde verzoek als de aanmelding plaatsvindt.
 
-  * **Add users to the main site as well:** Het inschakelen van deze optie voegt de gebruiker ook toe aan de hoofdsit van je netwerk na het registratieproces. Als je deze optie inschakelt, verschijnt er ook een optie om de **default role** van deze gebruikers op je website in te stellen, recht hieronder.
+Laten we nu andere opties bekijken die nog steeds relevant zijn voor het inlog- en registratieproces. Ze staan direct onder **Other options** op dezelfde Login & registration-pagina:
 
-  * **Enable multiple accounts:** Sta gebruikers toe om accounts te hebben op verschillende sites van je netwerk met hetzelfde e-mailadres. Als deze optie uitgeschakeld is, kunnen je klanten geen account aanmaken op andere websites die op je netwerk draaien met hetzelfde e-mailadres.
+  * **Standaardrol:** Dit is de rol die je klanten op hun website hebben na het aanmeldproces.
 
-En dat zijn alle opties met betrekking tot inloggen en registreren die je kunt aanpassen! Vergeet niet je instellingen op te slaan nadat je klaar bent met bewerken.
+  * **Jumper inschakelen:** Schakelt de Jumper-snelkoppeling in het beheergedeelte in. Met Jumper kunnen beheerders snel naar Ultimate Multisite-schermen, netwerkobjecten en andere ondersteunde bestemmingen springen zonder door elk menu te bladeren. Schakel dit uit als je dat snelle navigatiehulpmiddel liever uit de beheerinterface verbergt.
 
-## Meerdere registratieformulieren gebruiken:
+  * **Gebruikers ook toevoegen aan de hoofdsite:** Als je deze optie inschakelt, wordt de gebruiker na het aanmeldproces ook toegevoegd aan de hoofdsite van je netwerk. Als je deze optie inschakelt, verschijnt direct hieronder ook een optie om de **standaardrol** van deze gebruikers op je website in te stellen.
 
-Ultimate Multisite 2.0 biedt een checkoutformulier-editor waarmee je zo veel formulieren kunt maken als je wilt, met verschillende velden, aangeboden producten, enz.
+  * **Meerdere accounts inschakelen:** Sta gebruikers toe om accounts te hebben op verschillende sites van je netwerk met hetzelfde e-mailadres. Als deze optie is uitgeschakeld, kunnen je klanten geen Account aanmaken op andere websites die op je netwerk draaien met hetzelfde e-mailadres.
 
-Beide inlog- en registratiepagina's bevatten shortcodes: **[wu_login_form]** op de inlogpagina en **[wu_checkout]** voor de registratiepagina. Je kunt de registratiepagina verder aanpassen door checkoutformulieren te bouwen of te maken.
+En dat zijn alle opties met betrekking tot inloggen en registratie die je kunt aanpassen! Vergeet niet je instellingen op te slaan nadat je klaar bent met bewerken.
 
-Om toegang te krijgen tot deze functie, ga naar het **Checkout Forms** menu, aan de linkerkant.
+## Meerdere registratieformulieren gebruiken: {#using-multiple-registration-forms}
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Ultimate Multisite 2.0 biedt een checkoutformulier-editor waarmee je zoveel formulieren kunt maken als je wilt, met verschillende velden, aangeboden producten, enzovoort.
 
-Op deze pagina zie je alle checkoutformulieren die je hebt.
+Zowel de inlog- als de registratiepagina’s zijn ingesloten met shortcodes: **[wu_login_form]** op de inlogpagina en**[wu_checkout]** voor de registratiepagina. Je kunt de registratiepagina verder aanpassen door checkoutformulieren te bouwen of te maken.
 
-Wil je er een nieuwe maken, klik dan op **Add Checkout Form** bovenaan de pagina.
+Om deze functie te openen, ga je naar het menu **Checkout Forms** in de linkerzijbalk.
 
-Je kunt een van deze drie opties kiezen als startpunt: single step, multi-step of blank. Klik vervolgens op **Go to the Editor**.
+![Checkout Forms-menu in de zijbalk](/img/config/checkout-forms-list.png)
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Op deze pagina kun je alle checkoutformulieren zien die je hebt.
+
+Als je een nieuwe wilt maken, klik je gewoon bovenaan de pagina op **Add Checkout Form**.
+
+Je kunt een van deze drie opties als startpunt selecteren: één stap, meerdere stappen of leeg. Klik daarna op **Go to the Editor**.
+
+![Checkoutformulier toevoegen met opties voor één stap, meerdere stappen of leeg](/img/config/checkout-forms-list.png)
 
 Je kunt ook de formulieren die je al hebt bewerken of dupliceren door op de opties onder de naam te klikken. Daar vind je ook de opties om de shortcode van het formulier te kopiëren of het formulier te verwijderen.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Hoveracties voor checkoutformulier met bewerken, dupliceren en verwijderen](/img/config/checkout-form-hover-actions.png)
 
-Als je single step of multi-step kiest, wordt het checkoutformulier al vooraf ingevuld met de basisstappen om te werken. Vervolgens kun je, indien gewenst, extra stappen toevoegen.
+Als je één stap of meerdere stappen selecteert, is het checkoutformulier al vooraf ingevuld met de basisstappen die nodig zijn om te werken. Daarna kun je, als je wilt, extra stappen toevoegen.
 
-### Een checkoutformulier bewerken:
+### Een Checkout Form bewerken: {#editing-a-checkout-form}
 
-Zoals we eerder al zeiden, kun je checkoutformulieren maken voor verschillende doeleinden. In dit voorbeeld werken we aan een registratieformulier.
+Zoals we eerder noemden, kun je checkoutformulieren maken voor verschillende doeleinden. In dit voorbeeld werken we aan een registratieformulier.
 
-Na het navigeren naar de checkoutformulier-editor, geef je het formulier een naam (die alleen intern wordt gebruikt) en een slug (bijvoorbeeld om shortcodes te maken).
+Nadat je naar de checkoutformulier-editor bent gegaan, geef je je formulier een naam (die alleen voor interne referentie wordt gebruikt) en een slug (bijvoorbeeld gebruikt om shortcodes te maken).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Checkoutformuliereditor met naam- en slugvelden](/img/config/checkout-form-name-slug.png)
 
 Formulieren bestaan uit stappen en velden. Je kunt een nieuwe stap toevoegen door op **Add New Checkout Step** te klikken.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Knop Add New Checkout Step](/img/config/checkout-form-add-step.png)
 
-Op het eerste tabblad van het modale venster vul je de inhoud van de stap van je formulier in. Geef het een ID, een naam en een beschrijving. Deze items worden voornamelijk intern gebruikt.
+Vul op het eerste tabblad van het modale venster de inhoud van de stap van je formulier in. Geef deze een ID, een naam en een beschrijving. Deze items worden meestal intern gebruikt.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Tabblad met inhoud van checkoutstap met ID, naam en beschrijving](/img/config/checkout-form-step-content.png)
 
-Stel vervolgens de zichtbaarheid van de stap in. Je kunt kiezen tussen **Always show**, **Only show for logged in users** of **Only show for guests**.
+Stel vervolgens de zichtbaarheid van de stap in. Je kunt kiezen tussen **Always show** , **Only show for logged in users** of **Only show for guests**.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Zichtbaarheidsopties voor checkoutstap](/img/config/checkout-form-step-visibility.png)
 
-Ten slotte configureer je de stijl van de stap. Dit zijn optionele velden.
+Configureer ten slotte de stijl van de stap. Dit zijn optionele velden.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Stijlconfiguratie van checkoutstap](/img/config/checkout-form-step-style.png)
 
-Nu is het tijd om velden toe te voegen aan onze eerste stap. Klik op **Add New Field** en selecteer het type sectie dat je wilt.
+Nu is het tijd om velden aan onze eerste stap toe te voegen. Klik gewoon op **Add New Field** en selecteer het type sectie dat je wilt.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Knop Add New Field](/img/config/checkout-form-add-field-button.png)![Keuzemenu voor veldtype](/img/config/checkout-form-field-type-dropdown.png)
 
-Elk veld heeft verschillende parameters om in te vullen. Voor deze eerste invoer kiezen we het **Username** veld.
+Elk veld heeft verschillende parameters die ingevuld moeten worden. Voor deze eerste invoer selecteren we het veld **Username**.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Configuratie van Username-veld](/img/config/checkout-form-username-content.png)![Parameters van Username-veld](/img/config/checkout-form-username-visibility.png)![Aanvullende instellingen van Username-veld](/img/config/checkout-form-username-style.png)
 
-Je kunt zo veel stappen en velden toevoegen als je nodig hebt. Om je producten voor je klanten zichtbaar te maken zodat ze er een kunnen kiezen, gebruik je het Pricing Table veld. Als je wilt dat je klanten een sjabloon kiezen, voeg je het Template Selection veld toe. En zo verder.
+Je kunt zoveel stappen en velden toevoegen als je nodig hebt. Gebruik het veld Pricing Table om je producten weer te geven zodat je klanten er één kunnen kiezen. Als je je klanten een template wilt laten kiezen, voeg dan het veld Template Selection toe. Enzovoort.
 
-_**Opmerking:** Als je een product maakt na het maken van je checkoutformulier, moet je het product toevoegen in de Pricing table sectie. Als je het niet toevoegt, verschijnt het product niet bij je klanten op de registratiepagina._
+![Checkoutformuliereditor met template-selectieveld](/img/config/checkout-form-with-template-field.png)
 
-_**Opmerking 2:** username, email, password, site title, site URL, order summary, payment, en submit button zijn verplichte velden om een checkoutformulier te maken._
+_**Opmerking:** Als je een product aanmaakt nadat je je checkoutformulier hebt gemaakt, moet je het product toevoegen in de sectie Pricing table. Als je het niet toevoegt, verschijnt het product niet voor je klanten op de registratiepagina._
 
-Terwijl je aan je checkoutformulier werkt, kun je altijd de Preview-knop gebruiken om te zien hoe je klanten het formulier zien. Je kunt ook wisselen tussen weergave als bestaande gebruiker of bezoeker.
+_**Opmerking 2:** gebruikersnaam, e-mail, wachtwoord, sitetitel, site-URL, besteloverzicht, betaling en verzendknop zijn verplichte velden om een checkoutformulier te maken._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Terwijl je aan je checkoutformulier werkt, kun je altijd de Preview-knop gebruiken om te zien hoe je klanten het formulier zullen zien. Je kunt ook wisselen tussen weergave als bestaande gebruiker of als bezoeker.
 
-Ten slotte kun je op **Advanced Options** het bericht voor de **Thank You** pagina configureren, snippets toevoegen om conversies te volgen, aangepaste CSS toevoegen aan je checkoutformulier of het beperken tot bepaalde landen.
+![Preview-knop in de checkoutformuliereditor](/img/config/checkout-form-preview-button.png)![Voorbeeld van checkoutformulier als bezoeker of bestaande gebruiker](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Ten slotte kun je bij **Advanced Options** het bericht voor de **Thank You**-pagina configureren, snippets toevoegen om conversies bij te houden, aangepaste CSS aan je checkoutformulier toevoegen of het beperken tot bepaalde landen.
 
-Je kunt je checkoutformulier ook handmatig inschakelen of uitschakelen door deze optie in de rechterkolom in te schakelen, of het formulier permanent verwijderen.
+![Advanced Options met Thank You-pagina, conversietracking en aangepaste CSS](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Je kunt je checkoutformulier ook handmatig inschakelen of uitschakelen door deze optie in de rechterkolom om te schakelen, of het formulier permanent verwijderen.
+
+![Actieve schakelaar en verwijderoptie voor checkoutformulier](/img/config/checkout-form-active.png)
 
 Vergeet niet je checkoutformulier op te slaan!
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Knop Save Checkout Form](/img/config/checkout-form-save.png)
 
-Om de shortcode van je formulier te krijgen, klik op **Generate Shortcode** en kopieer het resultaat dat in het modale venster wordt weergegeven.
+Om de shortcode van je formulier te krijgen, klik je op **Generate Shortcode** en kopieer je het resultaat dat in het modale venster wordt getoond.
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Generate Shortcode-modal met shortcode om te kopiëren](/img/config/checkout-form-editor.png)
 
-_**Opmerking:** Je moet deze shortcode toevoegen aan je registratiepagina om dit checkoutformulier toe te voegen._
+_**Opmerking:** Je moet deze shortcode aan je registratiepagina toevoegen om dit checkoutformulier eraan toe te voegen._
 
-## Producten en sjablonen vooraf selecteren via URL‑parameters:
+## Producten en templates vooraf selecteren via URL-parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Als je aangepaste prijstabellen voor je producten wilt maken en vooraf het product of sjabloon op het checkoutformulier wilt selecteren dat je klant kiest uit je prijstabel of sjabloonpagina, kun je URL‑parameters gebruiken hiervoor.
+Als je aangepaste prijstabellen voor je producten wilt maken en op het checkoutformulier het product of de template die je klant kiest vanaf je prijstabel- of templatespagina vooraf wilt selecteren, kun je hiervoor URL-parameters gebruiken.
 
-### **Voor plannen:**
+### **Voor abonnementen:** {#for-plans}
 
-Ga naar **Ultimate Multisite > Products > Select a plan**. Je zou de knop **Click to copy Shareable Link** bovenaan de pagina moeten zien. Dit is de link die je kunt gebruiken om dit specifieke plan vooraf te selecteren op je checkoutformulier.
+Ga naar **Ultimate Multisite > Products > Select a plan**. Je zou bovenaan de pagina de knop **Click to copy Shareable Link** moeten zien. Dit is de link die je kunt gebruiken om dit specifieke abonnement vooraf te selecteren op je checkoutformulier.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![Productpagina met knop voor deelbare link](/img/config/products-list.png)
 
-Let op dat deze shareable link alleen geldig is voor **Plans**. Je kunt shareable links niet gebruiken voor pakketten of diensten.
+Let op dat deze deelbare link alleen geldig is voor **Plans**. Je kunt geen deelbare links gebruiken voor pakketten of diensten.
 
-### Voor sjablonen:
+### Voor templates: {#for-templates}
 
-Als je site‑sjablonen vooraf wilt selecteren op je checkoutformulier, kun je de parameter **?template_id=X** gebruiken op de URL van je registratiepagina. De 'X' moet worden vervangen door het **site template ID number**. Om dit nummer te krijgen, ga je naar **Ultimate Multisite > Sites**.
+Als je site templates vooraf wilt selecteren op je checkoutformulier, kun je de parameter **?template_id=X** gebruiken in de URL van je registratiepagina. De "X" moet worden vervangen door het **ID-nummer van de site template**. Ga naar **Ultimate Multisite > Sites** om dit nummer te krijgen.
 
-Klik op **Manage** recht onder het site‑sjabloon dat je wilt gebruiken. Je ziet het SITE ID nummer. Gebruik dit nummer gewoon voor dit specifieke site‑sjabloon om vooraf te selecteren op je checkoutformulier. In ons geval hier, zou de URL‑parameter **?template_id=2** zijn.
+Klik op **Manage** direct onder de site template die je wilt gebruiken. Je ziet het SITE ID-nummer. Gebruik dit nummer gewoon voor deze specifieke site template om deze vooraf te laten selecteren op je checkoutformulier. In ons geval hier zou de URL-parameter **?template_id=2** zijn.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+![Lijst met Sites die site template-ID toont](/img/config/site-templates-list.png)
 
-Stel dat onze netwerkwebsite [**www.mynetwork.com**](http://www.mynetwork.com) is en onze registratiepagina met ons checkoutformulier zich bevindt op de **/register** pagina. De volledige URL met dit site‑sjabloon vooraf geselecteerd ziet er uit als [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Stel dat onze netwerkwebsite [**www.mynetwork.com**](http://www.mynetwork.com) is en onze registratiepagina met ons checkoutformulier zich op de pagina **/register** bevindt. De volledige URL met deze vooraf geselecteerde site template ziet eruit als [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
 
-En als je wilt, kun je zowel producten als sjablonen vooraf selecteren voor je checkoutformulier. Alles wat je hoeft te doen is de shareable link van het plan kopiëren en de sjabloonparameter aan het einde plakken. Het ziet er uit als [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+En als je wilt, kun je zowel producten als templates vooraf selecteren voor je checkoutformulier. Je hoeft alleen maar de deelbare link van het abonnement te kopiëren en de template-parameter aan het einde te plakken. Het ziet eruit als [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

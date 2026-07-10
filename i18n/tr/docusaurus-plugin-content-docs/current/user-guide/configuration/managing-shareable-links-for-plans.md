@@ -3,7 +3,7 @@ title: Planlar için Paylaşılabilir Bağlantıları Yönetme
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Planlar için Paylaşılabilir Bağlantıları Yönetme
+# Planlar için Paylaşılabilir Bağlantıları Yönetme {#managing-shareable-links-for-plans}
 
 Ultimate Multisite, plan bağlantılarını doğrudan müşterilerinizle paylaşmanıza olanak tanır. Bunu yapmak için herhangi bir planınızın düzenleme sayfasına gidin ve _Paylaşılabilir Bağlantıyı Kopyalamak için Tıklayın_ butonuna tıklayın.
 

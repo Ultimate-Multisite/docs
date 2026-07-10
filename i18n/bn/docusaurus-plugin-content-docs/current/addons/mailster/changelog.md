@@ -3,9 +3,9 @@ title: Mailster পরিবর্তনের লগ
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster পরিবর্তন লগ
+# Mailster পরিবর্তন লগ {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * প্রথম রিলিজ
 * সাইনআপ বা পেমেন্টের সময় স্বয়ংক্রিয় সাবস্ক্রাইবার সিঙ্ক
 * পণ্য-নির্দিষ্ট তালিকা বরাদ্দ (Product-specific list assignments)

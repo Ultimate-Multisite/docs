@@ -4,13 +4,13 @@ title: Φίλτρο - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Φίλτρο: wu_gococardless_cleanup_pending_site
+# Φίλτρο: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 Εκτελείται πριν από τη διαγραφή ενός αποκομμένου site σε κατάσταση αναμονής που σχετίζεται με μια ακυρωμένη συνδρομή GoCardless.
 
 Για να αποτρέψετε τη διαγραφή, επιστρέψτε `false` από αυτό το φίλτρο.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 | $membership | `\WP_Ultimo\Models\Membership` | Η ακυρωμένη συνδρομή. |
 | $old_status | `string` | Η κατάσταση πριν την ακύρωση. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Ορίζεται στο [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) στην γραμμή 1086

@@ -3,11 +3,11 @@ title: Fàilbreachd a' chluaintean agus a' sgrùdadh earrachdaireach
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback a Chùiridh agus Sealladh Earrachdaichean
+# Feedback a Chùiridh agus Sealladh Earrachdaichean {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 a thann sin a tha deàtaichean sealladh agus sealladh earrachdaichean a tha a' chluainteachd, a leum nas fhaighinn na nàdarachdheanan a tha a' tòrraidh agus a sealladh problidhean gu sònraich frith air an chluainte. Tha an sistem seo a' tòrraidh comhionadh, amaidheachais sealladh, agus AI-aistriú ar an leathanach a tha a' tòrraidh.
 
-## Button Thumbs-Down (A' Chùiridh)
+## Button Thumbs-Down (A' Chùiridh) {#thumbs-down-button}
 
 Tha chùiridh **thumbs-down** (👎) a' tòrraidh air a chluainteachd a thonn a chluainte a thonn a' chluainte a thonn a chluainte. Nuair a tha an ùr a' chluainte a thonn, cuir sinn e air a bhith a' tòrraidh mar 'un fhaighinn' no 'fàil'.
 
@@ -23,7 +23,7 @@ Tha chùiridh **thumbs-down** (👎) a' tòrraidh air a chluainteachd a thonn a 
 - Tha an chùiridh a' chluainte air a' chluainte a thonn.
 - Nuair a tha thuair a' chluainte a thonn, cuir sinn e air a bhith a' tòrraidh mar 'un fhaighinn' no 'fàil'.
 
-## Modal Comhionadh Sealladh (Feedback Consent Modal)
+## Modal Comhionadh Sealladh (Feedback Consent Modal) {#feedback-consent-modal}
 
 Nuair a tha thuair a' chluainte a thonn, cuir sinn modal comhionadh a' chluainte air a bhith a' tòrraidh gu bheil data a' chluainte a thonn. Tha an modal:
 
@@ -34,7 +34,7 @@ Nuair a tha thuair a' chluainte a thonn, cuir sinn modal comhionadh a' chluainte
 
 Tha an sealladh a' tòrraidh gu bheil data a' chluainte a thonn.
 
-## Banner Sealladh Amhaidheach (Auto-Prompt Feedback Banner)
+## Banner Sealladh Amhaidheach (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Air a' chluainte a tha a' chluainte, eirinn a' chluainte a' tòrraidh sealladh amhaidheach — sealladh a tha a' chluainte a' tòrraidh mar 'a tha an seisiún a' tòrraidh'.
 
@@ -44,7 +44,7 @@ Tha an sealladh seo a' tòrraidh gu bheil fhaighinn a tha a' chluainte a thonn. 
 
 Tha an sealladh seo a' tòrraidh gu bheil fhaighinn a tha a' chluainte a thonn. Thuair a' chluainte a' tòrraidh air a bhith a' tòrraidh mar 'a tha an seisiún a' tòrraidh'.
 
-## Slash Command /report-issue
+## Slash Command /report-issue {#report-issue-slash-command}
 
 Leum nach eil thuair a' chluainte a' tòrraidh gu sònraich air a chur, air a bhith a' chluainte `/report-issue` a' chluainte. Tha an amradh seo:
 
@@ -54,7 +54,7 @@ Leum nach eil thuair a' chluainte a' tòrraidh gu sònraich air a chur, air a bh
 
 Tha an fhaighinn `/report-issue` aig an tatean chat (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Triage le Còmhraidh AI)
+## AI-Assisted Triage (Triage le Còmhraidh AI) {#ai-assisted-triage}
 
 Tha fhaighinn a' chùisg a' chluasadh gu le torcha do chàrrta triage AI a tha:
 
@@ -64,6 +64,6 @@ Tha fhaighinn a' chùisg a' chluasadh gu le torcha do chàrrta triage AI a tha:
 
 Tha seo a' leicinn tairmneachais a' chluasadh gu fhaod a' chluasadh na chùisg is dòidhchealaiche an uair.
 
-## Settings > Advanced {#settings-advanced} (Taisinean > Advanced)
+## Settings > Advanced {#settings-advanced} (Taisinean > Advanced) {#settings--advanced}
 
 Chan eil eadar-dheargadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chluasadh a' chlu

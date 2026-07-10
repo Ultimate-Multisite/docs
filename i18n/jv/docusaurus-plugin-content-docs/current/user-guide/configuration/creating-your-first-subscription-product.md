@@ -3,13 +3,13 @@ title: Nggawe Produk Langganan Pertama Sampeyan
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Nggawe Produk Langganan Pertama Sampeyan (v2)
+# Nggawe Produk Langganan Pertama Sampeyan (v2) {#creating-your-first-subscription-product-v2}
 
 _**CATATAN PENTING: Artikel iki mung kanggo pengguna Ultimate Multisite versi 2.x. Yen sampeyan nggunakake versi 1.x,**_ **_**deloken artikel iki**_**.
 
 Kanggo miwiti ngoperasikake jaringan sampeyan lan wiwit ngedol layanan marang calon pangguna, sampeyan perlu duwe pilihan langganan sing beda-beda. Kepiye carane nggawe produk-produk iki? Apa wae jenis produk sing bisa ditawari? Ing artikel iki, kita bakal bahas kabeh sing perlu sampeyan suwuni babagan produk.
 
-## Jenis Produk
+## Jenis Produk {#product-type}
 
 Kanthi Ultimate Multisite, sampeyan bisa nawakake rong kategori produk marang klienmu: **plans** lan **add-ons (Order Bump)**. Add-ons bisa dibagi dadi loro jenis: **packages** lan **services**. Kita bakal deloken bedane lan ciri khasé sabanjure.
 
@@ -19,7 +19,7 @@ Kanthi Ultimate Multisite, sampeyan bisa nawakake rong kategori produk marang kl
 
   * **Services:** add-ons sing ora ngowahi fungsi Ultimate Multisite. Iki tugas-tugas sing bakal sampeyan lakoni kanggo klienmu saliyane plan sing dibeli. Contone, pelangganmu mungkin tuku plan sing ngidini siji situs lan uga mbayar layanan tambahan sing bakal nggawe desain situs iki.
 
-## Ngelola Produk
+## Ngelola Produk {#managing-products}
 
 Kanggo akeh wong, tab **Products** ing Ultimate Multisite **(Ultimate Multisite > Products)** bisa diibaratake rencana (plans) ing lingkungan hosting tradisional.
 
@@ -29,7 +29,7 @@ Bagian iki bakal nuntun pemahamanmu babagan landasan penting saka Ultimate Multi
 
 ![Products list page](/img/config/products-list.png)
 
-## Nambah Produk (Adding Products)
+## Nambah Produk (Adding Products) {#adding-products}
 
 Apa wae, rencana, paket, utawa layanan sing dadi titik awal kanggo ngartikake barang anyar ya liwat **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Antarmuka iki duwe rong bagian utama. Ing sisih kiwa ana sawetara tab sing mbant
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Deskripsi (Description)
+### Deskripsi (Description) {#description}
 
 Informasi produk dasar bisa ditentokake kanthi menehi nama produk lan deskripsine. Identifikasi iki bakal ditampilkan ing ngendi wae informasi produk dibutuhake, kaya pilihan rencana lan harga, faktur, upgrade, lan semacamé.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tipe Harga (Pricing Type)
+### Tipe Harga (Pricing Type) {#pricing-type}
 
 Ing sisih tengen antarmuka, rega dasar bisa ditentokake.
 
@@ -53,7 +53,7 @@ Ing sisih tengen antarmuka, rega dasar bisa ditentokake.
 
 Ultimate Multisite ndhukung telung tipe harga sing beda. Pilihan **paid** bakal njaluk administrator jaringan informasi babagan rega lan frekuensi penagihan produk kasebut.
 
-### Harga (Pricing)
+### Harga (Pricing) {#pricing}
 
 Komponen harga ngartikake rega dasar produk lan interval penagihane.
 
@@ -61,7 +61,7 @@ Komponen harga ngartikake rega dasar produk lan interval penagihane.
 
 dadi, contone conto harga contoh $29.99 karo pengaturan 1 bulan bakal ditagih $29.99 saben bulan. Padha kaya ngono, harga $89.97 karo pengaturan 3 bulan bakal ditagih jumlah itu saben kuartal.
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Bagian siklus penagihan ini nunjukake seberapa sering interval penagihan yang disebut di atas terjadi, lan biasane dipahami berdasarkan kontrak utawa jangka waktu tetap.
 
@@ -69,7 +69,7 @@ Bagian siklus penagihan ini nunjukake seberapa sering interval penagihan yang di
 
 Contone, harga produk $29.99 karo interval 1 bulan lan 12 siklus penagihan bakal ditagih $29.99 saben bulan kanggo produk kuwi selama 12 bulan berikutnya. Sing artine, pengaturan kaya ngono bakal nggawe jangka waktu harga tetap $29.99 saben bulan kanggo 12 bulan lan banjur berhenti ditagih.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 Nyalak tombol trial offer ngidini administrator jaringan ngatur periode percobaan kanggo produk kuwi.
 
@@ -77,7 +77,7 @@ Nyalak tombol trial offer ngidini administrator jaringan ngatur periode percobaa
 
 Selama periode percobaan, pelanggan bebas nggunakake produk lan ora bakal ditagih nganti periode percobaan wis rampung.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Sampeyan uga bisa nerapake biaya setup kanggo rencana sampeyan.
 
@@ -85,7 +85,7 @@ Sampeyan uga bisa nerapake biaya setup kanggo rencana sampeyan.
 
 Iki tegese, klien sampeyan bakal bayar jumlah tambahan ing pembayaran pertama (salajur tambah harga rencana) sing cocog karo biaya sing sampeyan tentokake ing bagian iki.
 
-### Active
+### Active {#active}
 
 Tombol aktif efektif nentokake apa produk kuwi wis bisa diakses dening pelanggan kanggo pendaftaran anyar.
 
@@ -93,13 +93,13 @@ Tombol aktif efektif nentokake apa produk kuwi wis bisa diakses dening pelanggan
 
 Yen ana pelanggan wis ana ing paket iki, ngeklik toggle menyang status disabled iku intine ngarepake paket kuwi ilang kanggo pendaftaran sing arep teka maneh. **Pelanggan sing wis ana ing paket bakal terus ditagih** nganti diowahi menyang paket anyar utawa diangkat saka paket.
 
-### Gambar Produk
+### Gambar Produk {#product-image}
 
 Tombol **Upload Image** ngenani admin jaringan bisa nggunakake media library kanggo milih utawa ngunggah gambar produk.
 
 ![Product image section](/img/config/product-image.png)
 
-### Hapus
+### Hapus {#delete}
 
 Tombol **Delete Product** bakal ngapus produk saka sistem. Iki bakal muncul sawise produk wis dipublikasikake.
 
@@ -107,11 +107,11 @@ Tombol **Delete Product** bakal ngapus produk saka sistem. Iki bakal muncul sawi
 
 Beda karo penghapusan liyane, produk iki ora ana ing status sampah (trash). Dadi sawise dihapus, tindakan kuwi ora bisa diulangi maneh.
 
-### Opsi Produk
+### Opsi Produk {#product-options}
 
 Sawise informasi dasar produk wis ditentokake, opsi produk mbantu admin jaringan kanggo nentokake atribut spesifik produk luwih jero.
 
-#### Umum
+#### Umum {#general}
 
 Tab **General** ngandharake atribut umum produk sing ora ana gandheng cenenge karo tab-tab spesifik produk liyane.
 
@@ -125,7 +125,7 @@ Ultimate Multisite ndukung sawetara jenis produk yaiku Plan, Package, lan Servic
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Naik lan Turun (Up & Downgrades)
+#### Naik lan Turun (Up & Downgrades) {#up--downgrades}
 
 Tab iki ngatur jalur naik lan turun (upgrade and downgrade paths) sing bisa diakses pelanggan ing tingkatan (tier) khususé.
 
@@ -143,7 +143,7 @@ Kanggo ngrungokake grup rencana (plan group), sebutna rencana-rencana sing cocok
 
 Ultimate Multisite uga kalebu fitur **order bump**, ing ngendi produk lan layanan tambahan sing cocog bisa ditambahi menyang rencana. Iki ditawari marang pelanggan minangka barang tambahan sing bisa ditambahake menyang rencana nalika checkout utawa nalika upgrade.
 
-#### Variasi Harga (Price Variations)
+#### Variasi Harga (Price Variations) {#price-variations}
 
 Variasi harga memungkinkan administrator jaringan untuk menentukan tingkatan harga alternatif tergantung durasinya. Pengaturan ini membuat mungkin untuk menawarkan periode penagihan bulanan, triwulanan, tahunan, atau periode penagihan lainnya untuk produk yang sama. Misalnya, Anda bisa mengatur produk seharga $29.99/bulan dengan opsi tahunan diskon seharga $249.99/tahun.
 
@@ -165,7 +165,7 @@ Misalnya, jika harga produk dasar Anda adalah $29.99 per bulan, Anda mungkin men
 Variasi harga saja tidak menambahkan tombol atau saklar ke checkout frontend. Untuk mengizinkan pelanggan beral antara periode penagihan (misalnya Bulanan / Tahunan), Anda perlu menambahkan bidang **Period Selection** ke formulir checkout Anda. Lihat [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) untuk petunjuk langkah demi langkahnya.
 :::
 
-#### Pajak
+#### Pajak {#taxes}
 
 Tab **Taxes** menyesuaikan pengaturan pajak yang ditentukan di **Ultimate Multisite > Settings > Taxes** dan lebih spesifik lagi tarif pajak yang didefinisikan. Untuk mengaktifkan pajak dan menentukan tarif pajak yang berlaku, silakan lihat dokumentasi di **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Sawise tarif pajak wis diwenehake nang **Ultimate Multisite > Settings > Manage 
 
 Kanggo nuduhake yen sawijining produk iku kena pajak, setel toggle **Is Taxable** dadi aktif lan pilih tarif pajak sing pas saka dropdown Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Intine, site templates kuwi kaya website WordPress lengkap sing di-clone kanggo situs pelanggan nalika wiwitan langganan.
 
@@ -201,7 +201,7 @@ Pungkasan, **C** **hoose Available Site Templates** ngalahake template sing wis 
 
 Intine, yen administrator jaringan kepengin pemilihan template kedadeyan ing langkah-langkah checkout, pengaturan '_default_' cukup. Alternatif kanggo ngilangake lan ngunci pemilihan template lan mendeleke pemilihan marang pengaturan rencana yaiku pilihan '_assign new template_' utawa '_choose available site templates_'.
 
-#### Sites
+#### Sites {#sites}
 
 Tab **Sites** iku bagian saka fungsionalitas batasan (limitasi) Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Pengaturan iki nentokake jumlah maksimum situs sing bisa digawe pelanggan ing ba
 
 Kanggo ngaktifake batasan, setel toggle **limit sites** menyang keadaan aktif lan tentokake jumlah maksimum situs ing kolom **site allowance**.
 
-#### Visits
+#### Visits {#visits}
 
 Tab **Visits** iku bagian liyane saka sistem batasan Ultimate Multisite. Pengaturan iki menehi kesempatan kanggo ngitung lan nggoleki (throttling) pengunjung unik marang situs pelanggan.
 
@@ -223,7 +223,7 @@ Buat pakai fitur ini, atur toggle **limit unique visits** ke status aktif dan te
 
 Begitu batas ini tercapai, Ultimate Multisite tidak akan lagi melayani situs pelanggan, tapi malah menampilkan pesan kalau batas sudah terlampaui.
 
-#### Pengguna (Users)
+#### Pengguna (Users) {#users}
 
 Batasan 'Users' di Ultimate Multisite memungkinkan admin jaringan buat pasang batasan jumlah pengguna yang bisa dibuat dan diberi peran.
 
@@ -233,7 +233,7 @@ Buat mengaktifkan fitur pembatasan ini, atur toggle **limit user** ke status akt
 
 Selanjutnya untuk setiap peran yang mau dibatasi, atur toggle di sebelahnya ke status aktif dan tentukan batas atas maksimal di kolom yang sesuai.
 
-#### Tipe Postingan (Post Types)
+#### Tipe Postingan (Post Types) {#post-types}
 
 Tab **Post Types** memungkinkan admin jaringan buat pasang batasan detail pada berbagai macam tipe postingan di WordPress.
 
@@ -245,7 +245,7 @@ Buat mengaktifkan subsistem batasan ini, atur toggle **limit post types** ke sta
 
 Selanjutnya, untuk setiap post type yang ingin dibatasi, aktifkan dengan menggesernya ke kanan dan tentukan batas atas maksimum di kolom yang sesuai.
 
-#### Disk Space
+#### Disk Space {#disk-space}
 
 Tab **Disk Space** memungkinkan admin jaringan membatasi ruang yang digunakan oleh pelanggan.
 
@@ -257,13 +257,13 @@ Untuk mengaktifkan pembatasan penggunaan disk, atur toggle **limit disk size per
 
 Selanjutnya, tentukan batas atas maksimum dalam megabyte di kolom **disk space allowance**.
 
-#### Custom Domain
+#### Custom Domain {#custom-domain}
 
 Dengan mengaktifkan opsi ini, Anda dapat mengizinkan domain kustom pada paket ini secara spesifik.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#themes}
 
 Tab **Themes** di dalam opsi produk memungkinkan admin jaringan menyediakan tema untuk dipilih oleh pelanggan dan secara opsional memaksa status (state) tema tersebut.
 
@@ -281,7 +281,7 @@ Pilihan **behavior** memungkinkan admin jaringan untuk menentukan status tema sa
 
 Ing status **Available**, tema bisa diakses sama pelanggan untuk mengaktifkannya sendiri. Sebaliknya, status **Not Available** akan menghilangkan kemampuan pelanggan untuk mengaktifkan tema tersebut. Terakhir, opsi **Force Activate** memaksa pemilihan dan aktivasi tema, sehingga menjadi default saat pembuatan situs.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Sama seperti tab Themes, Ultimate Multisite memungkinkan administrator jaringan menentukan visibilitas plugin kepada pelanggan serta statusnya saat membuat situs baru.
 
@@ -301,7 +301,7 @@ Pengaturan **Force Activate & Lock** kerjanya mirip tapi mencegah status plugin 
 
 Administrator jaringan mungkin ingin mempertimbangkan pengaturan Force Activate & Lock dan Force Inactivate & Lock bersama dengan template situs sebagai plugin dan status plugin di dalam template bisa terpengaruh oleh pengaturan ini jika dipilih.
 
-#### Batasan Reset
+#### Batasan Reset {#reset-limitations}
 
 Tab **Reset Limitations** akan mereset semua batasan kustom yang sudah didefinisikan pada produk. Untuk mereset batasan, klik tombol **reset limitations**.
 
@@ -311,7 +311,7 @@ Untuk mengonfirmasi tindakan, geser toggle **confirm reset** ke status aktif di 
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Edit, Duplikat, atau Hapus Produk
+## Edit, Duplikat, atau Hapus Produk {#edit-duplicate-or-delete-product}
 
 Produk yang sudah ada bisa diedit, diduplikasi, atau dihapus dengan menavigasi ke **Ultimate Multisite > Products** dan mengarahkan kursor (hover) pada nama produk yang sudah ada.
 

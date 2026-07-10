@@ -1,0 +1,16 @@
+---
+id: wp_ultimo_support_agents_deactivation
+title: عمل - wp_ultimo_support_agents_deactivation
+sidebar_label: wp_ultimo_support_agents_deactivation
+_i18n_hash: b4bf701b5c76f76afe09fe84e58456f6
+---
+# عمل: wp_ultimo_support_agents_deactivation {#action-wpultimosupportagentsdeactivation}
+
+plugin جي ٻين حصن کي غيرفعال ڪرڻ لاءِ پنهنجا معمول ڳنڍڻ ڏيو
+
+### کان وٺي {#since}
+
+- 1.9.6
+### ذريعو {#source}
+
+[`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-hooks.php#L101) ۾ قطار 101 تي بيان ڪيل آهي

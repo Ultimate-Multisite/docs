@@ -3,7 +3,7 @@ title: Halaman Akun Klien
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Halaman Akun Klien Anda (v2)
+# Halaman Akun Klien Anda (v2) {#your-clients-account-page-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
@@ -11,7 +11,7 @@ Ketika pelanggan berlangganan paket di jaringan Anda, mereka akan mendapatkan ak
 
 Dalam tutorial ini, kami akan memandu Anda melalui halaman akun pelanggan dan Anda akan melihat apa yang bisa dilihat dan dilakukan pelanggan di dalamnya.
 
-## Halaman Akun (The Account Page)
+## Halaman Akun (The Account Page) {#the-account-page}
 
 Halaman akun bisa diakses dengan mengklik **Account** di dalam dasbor pelanggan Anda.
 
@@ -27,7 +27,7 @@ Setelah pelanggan mengkliknya, mereka akan melihat gambaran umum tentang keanggo
 
 Mereka juga bisa mengubah keanggotaan ke paket lain, atau membeli paket atau layanan lain yang Anda tawarkan. Mari kita lihat setiap bagian secara terpisah.
 
-### Tinjauan Keanggotaan Sampeyan:
+### Tinjauan Keanggotaan Sampeyan: {#your-membership-overview}
 
 Blok pertama tepat di bawah nama website pelanggan nun bakal ngeni ringkasan rencana dan layanan/paket sing wis dibeli bareng karo itu. Blok kuwi uga nuduhake nomor keanggotaan, jumlah awal sing wis dibayar kanggo keanggotaan kuwi, piye rega rencana lan layanan/paket kasebut, lan berapa kali pembayaran kanggo keanggotaan iki. Pelanggan uga bisa weruh yen keanggotaan kuwi **Aktif**, **Kedaluwarsa** utawa **Dibatalkan**.
 
@@ -43,7 +43,7 @@ Saiki, yen pelanggan milih kanggo tuku paket utawa layanan kanggo keanggotaan sa
 
 Cathetan, kode kupon ora bisa ditambah ing halaman perubahan keanggotaan iki. Yen pelanggan wis nganggo kode kupon nalika tuku keanggotaan pertama, kode kupon kasebut uga bakal berlaku kanggo keanggotaan anyar iki.
 
-### Ngupdate Alamat Penagihan:
+### Ngupdate Alamat Penagihan: {#updating-the-billing-address}
 
 Ing halaman akun, pelangganmu uga bisa ngubah alamat penagihan (billing address). Mereka cukup klik **Update** di sebelah _Billing Address_.
 
@@ -53,7 +53,7 @@ Jendela baru akan muncul ke pelangganmu. Yang perlu mereka lakukan cuma mengisi 
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Mengubah Template Situs:
+### Mengubah Template Situs: {#changing-the-site-template}
 
 Supaya pelanggan bisa ganti template situsnya, kamu perlu masuk ke **Ultimate Multisite > Settings > Sites** terus nyalakan opsi **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Setelah Anda menyalakan konfirmasi dan mengklik **Process Switch**, template sit
 
 Pelanggan juga bisa menggunakan **Reset current template** dari panel ini ketika mereka perlu mengatur ulang situs kembali ke template yang saat ini ditetapkan. Seperti saat beralih ke template lain, mereset template bisa menimpa konten situs, jadi pelanggan hanya boleh mengonfirmasinya jika mereka mengerti tindakan reset tersebut.
 
-### Menambahkan Domain Kustom:
+### Menambahkan Domain Kustom: {#adding-custom-domains}
 
 Pelanggan Anda juga akan punya pilihan untuk menambahkan domain kustom untuk paket ini di halaman akun mereka. Untuk mengizinkan pelanggan Anda menggunakan domain kustom, buka **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Sawise klik **Next Step**, pelangganmu bisa nambah nama domain kustom lan milih 
 
 Sawise klik **Add Domain**, domain bakal ditambahi ing akun pelangganmu. Kabeh sing kudu ditindakake saiki yaiku ngowahi catatan DNS saka domain kustom iki ing registrar domain dewe.
 
-### Ngowahi Password:
+### Ngowahi Password: {#changing-password}
 
 Ing dashboard akun, pelangganmu uga bisa ngowahi password kanthi klik **Change Password**.
 
@@ -125,7 +125,7 @@ Iki bakal nampilake jendela anyar sing kudu diisi dening pelanggan sampeyan kant
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Zona Bahaya:
+### Zona Bahaya: {#danger-zone}
 
 Kita uga duwe rong pilihan sing ditunjuka ing bagian **Danger Zone**: **Hapus Situs** lan **Hapus Akun**. Keduanya ana ing bagian Danger Zone amarga tindakan iki ora bisa diulangi maneh. Yen pelanggan ngapus situs utawa akuné, dhewe ora bakal bisa bali maneh.
 

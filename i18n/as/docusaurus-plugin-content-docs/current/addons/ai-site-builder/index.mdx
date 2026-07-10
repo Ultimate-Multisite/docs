@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## সফলতাৰ বাবে প্ৰয়োজনীয়তা (Requirements)
+## সফলতাৰ বাবে প্ৰয়োজনীয়তা (Requirements) {#requirements}
 
 - WordPress ৫.৩ বা তাৰ অধিক
 - PHP ৭.৪ বা তাৰ অধিক
 - Multisite Ultimate plugin (সক্ৰিয়)
 
-## স্থাপন (Installation)
+## স্থাপন (Installation) {#installation}
 
 ১. অ্যাডন ফাইলবোৰ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপলোড কৰক।
 ২. WordPress-ৰ 'Plugins' মেনুৰ মাজেৰে plugin টি active কৰক।
 ৩. network admin ত অ্যাডনৰ settings configure কৰক।
 
-## ডেভেলপমেন্ট (Development)
+## ডেভেলপমেন্ট (Development) {#development}
 
-### সেটআপ (Setup)
+### সেটআপ (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### প্ৰজেক্টৰ গঠন (Project Structure)
+### প্ৰজেক্টৰ গঠন (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### টেস্টিং (Testing)
+### টেস্টিং (Testing) {#testing}
 
 এই অ্যাডনটোৱে এটা বিস্তৃত টেস্টিং framework অন্তৰ্ভুক্ত কৰে:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: code coverage ট্ৰেক কৰিবলৈ configure কৰা হৈছে।
 - **Multisite Testing**: টেস্টিংবোৰ multisite environment ত চলি।
 
-### কোড মানদণ্ড (Code Standards)
+### কোড মানদণ্ড (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS মাজেৰে বলবৎ কৰা হয়।
 - **PHP ৭.৪+ Compatibility**: আধুনিক PHP features সমৰ্থন কৰে।
 - **Static Analysis**: type checking-ৰ বাবে PHPStan ইন্টিগ্ৰেচন।
 - **Code Modernization**: PHP upgrades-ৰ বাবে Rector rules।
 
-### বিল্ড ছিষ্টেম (Build System)
+### বিল্ড ছিষ্টেম (Build System) {#build-system}
 
 - **Asset Processing**: CSS/JS ফাইলবোৰৰ বাবে Minification।
 - **Translation**: POT file generation।
 - **Packaging**: বিতৰণৰ বাবে Archive সৃষ্টি।
 - **Development Mode**: Debugging-ৰ বাবে Unminified assets।
 
-## কনফিগাৰেচন (Configuration)
+## কনফিগাৰেচন (Configuration) {#configuration}
 
 এই অ্যাডনটোৱে network admin interface মাজেৰে উপলব্ধ বিভিন্ন কনফিগাৰেচন বিকল্প সমৰ্থন কৰে।
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - অ্যাডন initialize হোৱাৰ পাছত trigger হয়।
 - `ultimate-multisite-ai-site-builder_loaded` - সকলো অ্যাডন ফাইল load হোৱাৰ পাছত trigger হয়।
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - অ্যাডনৰ settings modify কৰিব পাৰে।
 - `ultimate-multisite-ai-site-builder_enabled` - অ্যাডন enable/disable status-ক override কৰিব পাৰে।
 
-## লাইচেঞ্চ (License)
+## লাইচেঞ্চ (License) {#license}
 
 এই অ্যাডনটো GPL v3 বা তাৰ অধিকৰ অধীনত লাইচেঞ্চ কৰা হৈছে।
 
-## সহায় (Support)
+## সহায় (Support) {#support}
 
 সহায় আৰু ডকুমেন্টেশ্যনৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) লওক।
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix 'ultimate-multisite' লৈ rename কৰা হ'ল; text domain update কৰা হ'ল; version bump।
 

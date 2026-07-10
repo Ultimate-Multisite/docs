@@ -1,105 +1,152 @@
 ---
-title: Pengaturan AI Agent Gratis
+title: Gratis AI Agent Setélan
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Pengaturan Gratis AI Agent Gratis
+# Setélan Gratis AI Agent {#gratis-ai-agent-settings}
 
-Layar **Settings → Advanced** di Gratis AI Agent ngasih pengaturan tingkat admin kanggo integrasi backend sing wis diperkenalkan ing v1.5.0. Halaman iki mendokumentasikan kolom **Feedback Endpoint** lan format sing ditunggu.
+Layar **Settings → Advanced** dina Gratis AI Agent nyadiakeun konfigurasi tingkat administrator pikeun integrasi backend. Kaca ieu ngadokuméntasikeun pangalihan feedback, konci panyadia pilarian, panyetelan layanan Superdav anu dikokolakeun, kontrol Google Calendar, setélan SMS TextBee, jeung flag fitur sakuliah jaringan.
 
-## Akses Pengaturan
+## Ngaksés Setélan {#accessing-settings}
 
-1. Ing admin WordPress, tindakake **Gratis AI Agent → Settings**.
+1. Dina admin WordPress, buka **Gratis AI Agent → Settings**.
 2. Klik tab **Advanced**.
 
-## Konfigurasi Feedback Endpoint
+## Konfigurasi Endpoint Feedback {#feedback-endpoint-configuration}
 
-Feedback endpoint bakal nampa POST request saka AI agent saben user ngirim feedback liwat tombol jempol turun (thumbs-down button), banner auto-prompt, utawa perintah `/report-issue`.
+Endpoint feedback narima pamundut POST ti AI agent iraha waé pamaké ngirim feedback liwat tombol jempol-handap, banner auto-prompt, atawa paréntah `/report-issue`.
 
-| Field | Deskripsi |
+| Widang | Pedaran |
 |---|---|
-| **Feedback Endpoint URL** | URL sing nampa pengiriman feedback minangka HTTP POST request kanthi isi JSON. |
-| **Feedback API Key** | bearer token sing dikirim ing header `Authorization` saben permintaan feedback. Wangun kosong yen endpoint sampeyan ora mbutuh otentikasi. |
+| **Feedback Endpoint URL** | URL anu narima kiriman feedback salaku pamundut HTTP POST kalayan eusi JSON. |
+| **Feedback API Key** | bearer token anu dikirim dina `Authorization` header unggal pamundut feedback. Kosongkeun lamun endpoint anjeun teu merlukeun auténtikasi. |
 
-### Payload JSON Sing Ditunggu
+### Payload JSON anu Dipiharep {#expected-json-payload}
 
-Feedback endpoint sampeyan kudu nampa isi JSON kanthi minimal kolom-kolom iki:
+Endpoint feedback anjeun kudu narima eusi JSON kalayan sahenteuna widang-widang ieu:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Jawabané salah babagan harga.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Kolom tambahan bisa ana ing payload gumantung konteks obrolan.
+Widang tambahan bisa aya dina payload gumantung kana kontéks paguneman.
 
-### Nilai `triage_category`
+### Nilai `triage_category` {#triagecategory-values}
 
-Lapisan triage AI ngasih salah siji nilai iki marang `triage_category` sadurunge ngirim payload:
+Lapisan triage AI netepkeun salah sahiji nilai di handap ieu ka `triage_category` saméméh ngalihkeun payload:
 
-| Value | Arti |
+| Nilai | Harti |
 |---|---|
-| `factual_error` | Asisten wis menehi informasi faktual sing salah. |
-| `unhelpful_answer` | Responé bener saka teknis nanging ora migunani. |
-| `inappropriate_content` | Responé ngandhut konten sing ora becik ditunjuka marang user. |
-| `other` | Feedback ora cocok karo kategori sing wis dikenal. |
+| `factual_error` | Asistén masihan informasi faktual anu salah. |
+| `unhelpful_answer` | Réspon sacara téknis bener tapi teu mangpaat. |
+| `inappropriate_content` | Réspon ngandung eusi anu teu sakuduna ditingalikeun ka pamaké. |
+| `other` | Feedback teu cocog jeung kategori anu dipikawanoh. |
 
-### Otentikasi
+### Auténtikasi {#authentication}
 
-Upami endpoint anjeuh butuh otentikasi, tetepkeun kolom **Feedback API Key** jadi bearer token anjeun. Agen bakal ngirim:
+Lamun endpoint anjeun merlukeun auténtikasi, setel widang **Feedback API Key** kana bearer token anjeun. Agent ngirim:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Lamun kolom **Feedback API Key** kosong, teu aya header `Authorization` anu dikirim.
+Lamun widang **Feedback API Key** kosong, euweuh `Authorization` header anu dikirim.
 
-### Nonaktifkeun Pengumpulan Feedback
+### Nonaktipkeun Pangumpulan Feedback {#disabling-feedback-collection}
 
-Tinggali waé kolom **Feedback Endpoint URL** jeung **Feedback API Key**. Tombol jempol turun (thumbs-down) jeung UI feedback tetep katingali ku pengguna, tapi kirimanana teu dikirim ka layanan luar naon-na.
+Kosongkeun boh widang **Feedback Endpoint URL** boh **Feedback API Key**. Tombol jempol-handap jeung UI feedback tetep katingali ku pamaké, tapi kiriman teu dialihkeun ka layanan éksternal mana waé.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Di tab **Advanced** ogé, kolom **Brave Search API Key** ngaktifkeun kemampuan [Internet Search](../configuration/internet-search).
+Ogé dina tab **Advanced**, widang **Brave Search API Key** ngaktipkeun kamampuhan [Pilarian Internét](../configuration/internet-search).
 
-| Field | Deskripsi |
+| Widang | Pedaran |
 |---|---|
-| **Brave Search API Key** | Kunci API anjeun ti dashboard pengembang Brave Search. Diperlukan pikeun ngaktifkeun pencarian internet dina asisten AI. |
+| **Brave Search API Key** | API key anjeun ti dashboard pamekar Brave Search. Diperyogikeun pikeun ngaktipkeun pilarian internét dina AI assistant. |
 
-Label kolom ieu aya tautan klik ka halaman pendaftaran Brave Search API. Tinggali waé (leave blank) pikeun nonaktifkeun pencarian internet.
+Label widang ngawengku tautan anu bisa diklik ka kaca daptar Brave Search API. Kosongkeun pikeun nonaktipkeun pilarian internét.
 
-Tingali [Internet Search](../configuration/internet-search) pikeun dokumentasi panglengkepan pikeun pengguna ngeunaan fitur ieu.
+Tingali [Pilarian Internét](../configuration/internet-search) pikeun dokuméntasi pamaké ahir ngeunaan fitur ieu.
 
-## Feature Flags
+## Layanan Superdav anu Dikokolakeun {#managed-superdav-service}
 
-Ogé diperkenalkan dina v1.9.0, tab **Settings → Feature Flags** nyediake saklar (toggle switches) pikeun fungsionalitas pilihan. Unggal flag téh aktif atawa nonaktif di sakuliah jaringan; ayeuna teu aya opsi override per-situs.
+Superdav AI Agent v1.18.0 nambahkeun endpoints layanan Superdav anu dikokolakeun jeung panyadiaan sambungan otomatis pikeun situs anu dirojong. Paké kontrol ieu lamun situs anjeun kudu nyambung ka panyadia hosted tibatan endpoint layanan anu dikonfigurasi sacara manual.
 
-### Ngakses Feature Flags
+| Widang | Pedaran |
+|---|---|
+| **Managed Superdav Service** | Ngaktipkeun sambungan layanan Superdav hosted pikeun situs anu dirojong. |
+| **Provision Connection** | Ngamimitian panyadiaan endpoint jeung kredénsial otomatis. Paké ieu sanggeus mastikeun situs kudu maké panyadia anu dikokolakeun. |
+| **Service Endpoint / Connection Status** | Némbongkeun endpoint atawa kaayaan sambungan ayeuna sanggeus panyadiaan. |
 
-1. Di admin WordPress, pergi ka **Gratis AI Agent → Settings**.
+Sanggeus panyadiaan, simpen setélan jeung pariksa status sambungan saméméh ngandelkeun alur gawé layanan-anu-dikokolakeun. Lamun panyadiaan gagal, tingali deui pituduh cobian-deui anu dipintonkeun jeung pastikeun situs boga idin pikeun maké panyadia hosted.
+
+## Konfigurasi Google Calendar {#google-calendar-configuration}
+
+Lamun fitur kalénder Superdav AI Agent v1.18.0 diaktipkeun, agent bisa maca kalénder anu dikonfigurasi jeung wincikan acara. Parabot kalénder berorientasi maca sarta mangpaat pikeun panginget anu sadar jadwal, tindak lanjut pamilon, jeung nyocogkeun kontak.
+
+| Widang | Pedaran |
+|---|---|
+| **Google Calendar Credentials** | Nyimpen kredénsial atawa sambungan token anu diperyogikeun pikeun maca data kalénder. |
+| **Calendar Selection** | Ngawatesan kalénder anu dikonfigurasi mana anu meunang dipariksa ku agent. |
+| **Calendar Connection Status** | Mastikeun naha kredénsial ayeuna bisa maca kalénder jeung acara. |
+
+Jaga kredénsial kalénder diwatesan kana kalénder anu diperyogikeun ku agent. Sambungkeun deui atawa rotasi kredénsial lamun status nunjukkeun token geus kadaluwarsa.
+
+## Béwara SMS TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 nambahkeun TextBee salaku panyadia SMS pikeun alur gawé béwara anu dikonfigurasi. Béwara SMS kudu dipasangkeun jeung gerbang persetujuan manusa pikeun pesen anu sénsitip atawa nyanghareup ka pamaké.
+
+| Widang | Pedaran |
+|---|---|
+| **TextBee API Key** | Ngaoténtikasi pamundut ka panyadia SMS TextBee. |
+| **TextBee Device / Sender** | Milih pangirim atawa alat TextBee anu dipaké pikeun pesen kaluar, lamun diperyogikeun ku panyadia. |
+| **SMS Notifications Enabled** | Ngidinan alur gawé anu disatujuan pikeun ngirim béwara pesen téks. Tinggalkeun nonaktip pikeun nyegah pangiriman SMS. |
+
+Kirim pesen uji ngan ka nomer anu dipiboga ku administrator, tuluy pastikeun paripolah gerbang-persetujuan saméméh ngaktipkeun panginget anu dijadwalkeun atawa anu nyanghareup ka pamilon.
+
+## Flag Fitur {#feature-flags}
+
+Ogé diwanohkeun dina v1.9.0, tab **Settings → Feature Flags** nyadiakeun saklar toggle pikeun fungsionalitas opsional. Unggal flag boh diaktipkeun boh dinonaktipkeun sakuliah jaringan; ayeuna teu aya override per-situs.
+
+### Ngaksés Flag Fitur {#accessing-feature-flags}
+
+1. Dina admin WordPress, buka **Gratis AI Agent → Settings**.
 2. Klik tab **Feature Flags**.
 
-### Access Control Flags
+### Flag Kontrol Aksés {#access-control-flags}
 
-| Flag | Default | Deskripsi |
+| Flag | Default | Pedaran |
 |---|---|---|
-| **Batasi Hanya Administrator** | Mati (Off) | Lamun diaktifkeun, ngan ukur pengguna kalawan peran `administrator` anu bisa muka panel obrolan AI Agent. Peran lianna bakal ningali pesan "Hubungi administrator anjeun" saeutik. |
-| **Batasi Ka Admin Jaringan** | Mati (Off) | Lamun diaktifkeun dina jaringan multisite, ngan Super Admin anu bisa ngagunake agent. Admin situs individu diblokir. Ieu leuwih diprioritaskeun tibatan "Batasi Hanya Administrator" lamun duana aktif. |
-| **Izin Akses Subscriber** | Mati (Off) | Lamun diaktifkeun, pengguna kalawan peran `subscriber` bisa ngagunake antarmuka obrolan tapi dibatasi kana kemampuan maca waé (henteun kagiatan nyiptake posting atawa ngarobah pengaturan). |
-| **Nonaktifkeun pikeun Non-Anggota** | Mati (Off) | Ngajalin koneksi jeung status keanggotaan Ultimate Multisite. Lamun diaktifkeun, obrolan bakal disumputkeun pikeun situs anu teu boga keanggotaan aktif. |
+| **Batesan ka Administrator** | Pareum | Lamun diaktipkeun, ngan pamaké jeung peran `administrator` nu bisa muka panel obrolan AI Agent. Peran séjénna bakal ningali pesen "Taroskeun ka administrator anjeun" gantina. |
+| **Batesan ka Network Admins** | Pareum | Lamun diaktipkeun dina jaringan multisite, ngan Super Admins nu bisa maké agent. Admin situs individu diblokir. Ieu leuwih diutamakeun tibatan "Batesan ka Administrator" lamun duanana diaktipkeun. |
+| **Idinan Aksés Subscriber** | Pareum | Lamun diaktipkeun, pamaké jeung peran `subscriber` bisa maké antarmuka obrolan tapi diwatesan kana kamampuh baca-wungkul (teu bisa nyieun tulisan atawa ngarobah setélan). |
+| **Nonaktipkeun pikeun Nu Lain Anggota** | Pareum | Ngahijikeun jeung status kaanggotaan Ultimate Multisite. Lamun diaktipkeun, obrolan disumputkeun pikeun situs nu teu boga kaanggotaan aktif. |
 
-### Bendera Branding (Branding Flags)
+### Flag Branding {#branding-flags}
 
-| Flag | Default | Deskripsi |
+| Flag | Default | Pedaran |
 |---|---|---|
-| **Sembunyikan Footer "Powered by Gratis AI Agent"** | Mati (Off) | Ngahapus baris atribusi branding anu ditunjuke di handap widget obrolan. Dipikawanoh pikeun deployment white-label. |
-| **Nama Agent Kustom** | *(kosong)* | Ngaganti label default "Gratis AI Agent" dina header obrolan jeung menu admin ku ngagunake nama produk anjeun sorangan. Tinggal kosong lamun hoyong nganggo anu default. |
-| **Sembunyikan Pemilih Agent** | Mati (Off) | Lamun diaktifkeun, pengguna teu bisa ganti-ganti antara lima agent bawaan. Agent ayeuna bakal tetep dina naon waé anu dikonfigurasi salaku default dina Settings → General. |
-| **Gunakan Ikon Situs Salaku Avatar Obrolan** | Mati (Off) | Ngaganti ikon AI default dina header widget obrolan ku ikon situs WordPress (diatur di bawah Appearance → Customize → Site Identity). |
+| **Sumputkeun Footer "Powered by Gratis AI Agent"** | Pareum | Miceun garis atribusi branding nu dipidangkeun di handapeun widget obrolan. Disarankeun pikeun deployment white-label. |
+| **Ngaran Agent Kustom** | *(kosong)* | Ngaganti labél standar "Gratis AI Agent" dina header obrolan jeung ménu admin ku ngaran produk anjeun sorangan. Keun kosong pikeun maké standar. |
+| **Sumputkeun Pamilih Agent** | Pareum | Lamun diaktipkeun, pamaké teu bisa ngalih antara lima agent bawaan. Agent ayeuna dikonci kana naon waé nu dikonfigurasi minangka standar dina Settings → General. |
+| **Paké Ikon Situs minangka Avatar Obrolan** | Pareum | Ngaganti ikon AI standar dina header widget obrolan ku ikon situs WordPress (disetél dina Appearance → Customize → Site Identity). |
 
-### Ngagunake Perubahan
+### Flag Kasalametan Otomatisasi {#automation-safety-flags}
 
-Klik **Save Settings** sanggeus ngalawan (toggling) sababaraha bendera. Perubahan bakal langsung éfékt — teu perlu nge-flush cache atawa ngaktifkeun deui plugin.
+Superdav AI Agent v1.18.0 ngenalkeun gerbang persetujuan manusa jeung catetan pangéling pikeun jalan otomatisasi nu leuwih aman. Kontrol ieu bisa mucunghul dina feature flags atawa setélan otomatisasi canggih, gumantung kana pakét nu dipasang.
+
+| Flag | Default | Pedaran |
+|---|---|---|
+| **Merlukeun Persetujuan Manusa** | Disarankeun hurung | Nunda otomatisasi sénsitip nepi ka pamaké nu boga wewenang marios jeung mastikeun tindakan nu diajukeun. |
+| **Deduplicate Pangéling** | Hurung | Nyatet pangéling nu geus dikirim supaya usaha deui atawa jalan nu dijadwalkeun teu ngirim béwara duplikat. |
+| **Aktipkeun Calendar Tools** | Pareum nepi ka dikonfigurasi | Ngidinan agent maca kalénder jeung acara Google nu geus dikonfigurasi. |
+| **Aktipkeun Béwara SMS** | Pareum nepi ka dikonfigurasi | Ngidinan alur gawé nu disatujuan pikeun ngirim béwara SMS TextBee sanggeus kredensial disimpen. |
+
+### Nerapkeun Parobahan {#applying-changes}
+
+Klik **Save Settings** sanggeus ngarobah flag naon waé. Parobahan langsung berlaku — teu perlu cache flush atawa ngaktipkeun deui plugin.

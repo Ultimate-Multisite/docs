@@ -4,11 +4,11 @@ title: פילטר - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 מחזיר את ערך אפשרות הרשת המומר ל-slug.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | תיאור |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | שם האפשרות. |
 | $default | `mixed` | ערך ברירת המחדל. |
 
-### מאז
+### מאז {#since}
 
 - 1.9.6
-### מקור
+### מקור {#source}
 
 מוגדר ב-[`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) בשורה 126
 
 
-## הערך המוחזר
+## הערך המוחזר {#returns}
 ערך אפשרות הרשת המומר ל-slug.

@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filter: wu_apc_get_meta_content_default_content
+# Filter: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 ডেভেলপারদের ডিফল্ট মানগুলো ফিল্টার করার সুযোগ দেয়।
 
-## প্যারামিটার
+## প্যারামিটার {#parameters}
 
 | Name | Type | বিবরণ |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | যে মেটা ডেটা পুনরুদ্ধার করা হবে তার ধরন। |
 | $meta_key | `string` | মেটা ফিল্ডের নাম। |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68)-এ লাইন ৬৮-এ সংজ্ঞায়িত।
 
-## Returns
+## Returns {#returns}
 নতুন ডিফল্ট মান।

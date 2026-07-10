@@ -3,13 +3,13 @@ title: Zgjidhja e një planit në vijim
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgradhja një plan (v2)
+# Downgradhja një plan (v2) {#downgrading-a-plan-v2}
 
 _**SHËNJSË E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
 Downgradhja e një plani ose abonimi është një veprim i zakonshëm që klientët tuaj mund të bëjnë nëse kanë buxhet të kufizuar ose vendoset se nuk do të keni nevojë për shumë burime për të menaxhu subsite-in e tyre.
 
-## Si të downgradhoni një plan
+## Si të downgradhoni një plan {#how-to-downgrade-a-plan}
 
 Klientët mund të downgradhrojnë planin çdo kohë duke hyrë në dashboardin e adminit të subsite-it të tyre dhe duke klikuar **Change** (Ndrysho) në seksionin e llogarisë.
 
@@ -25,7 +25,7 @@ Për të vazhduar, përdoruesi thjesht duhet të klikojë butonin **Complete Che
 
 ![Paga e llogarisë që tregon bannernd ndryshimi të nëndetjes të merrufes](/img/account-page/pending-change.png)
 
-### Çfarë ndodh kur një përdorues downgradhoni planin e tij
+### Çfarë ndodh kur një përdorues downgradhoni planin e tij {#what-happens-when-a-user-downgrades-their-plan}
 
 Është e rëndësishme të vërehet se downgradhja e planit nuk ndryshon konfiguratën ekzistuese në subsite-in e përdoruesit.
 
@@ -37,7 +37,7 @@ Për postimet që tejkalojnë kufirin e vendosur në plan, keni 3 opsione: **Rua
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Çfarë ndodh me pagesën
+### Çfarë ndodh me pagesën {#what-happens-to-the-payment}
 
 Në versionin 2.0, nuk kërkon më asnjë rregullim në pagesë në lidhje me proration (ndarja e pagës).
 

@@ -3,11 +3,11 @@ title: Kutanga Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Kurudzira Ultimate Multisite
+# Kurudzira Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite inenge yakagadzirwa muisi, asi plugin iyi ine chokwadi chinogona kuwedzera uye tinokurudzira zvakasiyana-siyana dzinotsanangura.
 
-## Kurudzira Zvinorekiro (Core Plugin Translations)
+## Kurudzira Zvinorekiro (Core Plugin Translations) {#core-plugin-translations}
 
 Plugin ya Ultimate Multisite inoswanirwa kuparamwa kupfungwa pfungwa **WordPress.org translation platform**:
 
@@ -24,7 +24,7 @@ Iyi ndiyo nzira yakakwana ya kurudzira WordPress community. Kana kurudzira kuva 
 
 Kana uchida kuva mupfumbiro wekurudzira kwako (unogona kutsimbira kurudzira), ndichida kuti uyuu kana GitHub Discussions [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Kurudzira Zvinorekiro dzine Zvinhu Zvinotsanangura (Addon Translations)
+## Kurudzira Zvinorekiro dzine Zvinhu Zvinotsanangura (Addon Translations) {#addon-translations}
 
 Plugin dzine addon dziri kuwedzerwa zvose mu:
 
@@ -32,11 +32,11 @@ Plugin dzine addon dziri kuwedzerwa zvose mu:
 
 Kurudzira dzine addon zvinogona kuita neAI seunyangana. Zvinosanganisira nzira dzinotsanangurwa dzese, asi zvichakanaka kuti mutaurire vatsanangura vanhu kuti vashandise uye vashandise zvinhu zviri kuitika uye zvinogona kuita zvakanaka.
 
-## Kurudzira Zvakaipa (Local Translations)
+## Kurudzira Zvakaipa (Local Translations) {#local-translations}
 
 Kana uri pano unoda kuita translations mune project yako wechishandisi wako, munenge neoption mbiri:
 
-### Kutenda Poedit
+### Kutenda Poedit {#using-poedit}
 
 Unogona kuitenda application ya desktop **[Poedit](https://poedit.net)** kuti utranslate file yekuita `.pot`:
 
@@ -46,6 +46,6 @@ Unogona kuitenda application ya desktop **[Poedit](https://poedit.net)** kuti ut
 4. Save -- Poedit inagera files `.po` na `.mo`
 5. Chira output files mu folder ya `lang`
 
-### Kutenda Loco Translate
+### Kutenda Loco Translate {#using-loco-translate}
 
 Plugin ya WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** inakuita kutranslate kupiwa kubva mu admin panel chekuti usina kuendesa desktop tools. Inakuita kupa na kukompila translation files kwawe.

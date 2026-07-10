@@ -4,11 +4,11 @@ title: 过滤器 - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# 过滤器: wu_wp_cli_enabled_sub_commands
+# 过滤器: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 过滤器：此实体启用的 sub_commands。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -16,10 +16,10 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | 在根目录之后命令中使用的基础。 |
 | $this | `\Base_Manager` | 对象实例。 |
 
-### 自
+### 自 {#since}
 
 - 2.0.0
 
-### 来源
+### 来源 {#source}
 
 定义在 [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) 第 198 行。

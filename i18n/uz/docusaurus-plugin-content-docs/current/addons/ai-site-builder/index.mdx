@@ -1,0 +1,124 @@
+---
+title: AI Sayt yaratuvchi
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Sayt Quruvchi {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Talablar {#requirements}
+
+- WordPress 5.3 yoki undan yuqori
+- PHP 7.4 yoki undan yuqori
+- Multisite Ultimate plagini (faol)
+
+## O‘rnatish {#installation}
+
+1. Addon fayllarini `/wp-content/plugins/` katalogingizga yuklang
+2. WordPress ichidagi 'Plugins' menyusi orqali plaginni faollashtiring
+3. Tarmoq adminida addon sozlamalarini sozlang
+
+## Ishlab chiqish {#development}
+
+### Sozlash {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Loyiha tuzilmasi {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klasslari va include fayllar
+│   ├── class-multisite-ultimate-updater.php  # Yangilash ishlovchisi
+│   └── class-ai_site_builder-main.php             # Asosiy funksionallik
+├── tests/                        # Unit testlar
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Asosiy test klassi
+│   └── class-*-test.php         # Test holatlari
+├── views/                       # Shablon fayllari
+├── assets/                      # Statik resurslar
+│   ├── css/                     # Stylesheetlar
+│   ├── js/                      # JavaScript fayllari
+│   └── images/                  # Rasmlar
+├── lang/                        # Til fayllari
+├── composer.json                # PHP bog‘liqliklari
+├── package.json                 # Node.js bog‘liqliklari
+├── phpunit.xml.dist             # PHPUnit konfiguratsiyasi
+├── .phpcs.xml.dist              # Kod standartlari konfiguratsiyasi
+└── rector.php                   # Kodni zamonaviylashtirish qoidalari
+```
+
+### Testlash {#testing}
+
+Addon keng qamrovli testlash freymvorkini o‘z ichiga oladi:
+
+- **Unit Testlar**: WordPress test to‘plami bilan PHPUnit asosidagi testlar
+- **Asosiy Test Klassi**: Umumiy test ssenariylari uchun yordamchi usullarni taqdim etadi
+- **Test Qamrovi**: Kod qamrovini kuzatish uchun sozlangan
+- **Multisite Testlash**: Testlar multisite muhitida ishlaydi
+
+### Kod Standartlari {#code-standards}
+
+- **WordPress Kodlash Standartlari**: PHPCS orqali majburiy qo‘llanadi
+- **PHP 7.4+ Mosligi**: Zamonaviy PHP funksiyalari qo‘llab-quvvatlanadi
+- **Statik Tahlil**: Tur tekshiruvi uchun PHPStan integratsiyasi
+- **Kodni Zamonaviylashtirish**: PHP yangilanishlari uchun Rector qoidalari
+
+### Yig‘ish Tizimi {#build-system}
+
+- **Resurslarni Qayta Ishlash**: CSS/JS fayllari uchun minifikatsiya
+- **Tarjima**: POT fayl yaratish
+- **Paketlash**: Tarqatish uchun arxiv yaratish
+- **Ishlab Chiqish Rejimi**: Nosozliklarni tuzatish uchun minifikatsiya qilinmagan resurslar
+
+## Konfiguratsiya {#configuration}
+
+Addon tarmoq admin interfeysi orqali kirish mumkin bo‘lgan turli konfiguratsiya variantlarini qo‘llab-quvvatlaydi.
+
+## Hooklar va Filtrlar {#hooks-and-filters}
+
+### Actionlar {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Addon ishga tushirilgandan keyin ishga tushiriladi
+- `ultimate-multisite-ai-site-builder_loaded` - Barcha addon fayllari yuklangandan keyin ishga tushiriladi
+
+### Filtrlar {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Addon sozlamalarini o‘zgartirish
+- `ultimate-multisite-ai-site-builder_enabled` - Addonni yoqish/o‘chirish holatini bekor qilib belgilash
+
+## Litsenziya {#license}
+
+Ushbu addon GPL v3 yoki undan keyingi versiya ostida litsenziyalangan.
+
+## Qo‘llab-quvvatlash {#support}
+
+Qo‘llab-quvvatlash va hujjatlar uchun [MultisiteUltimate.com](https://multisiteultimate.com) saytiga tashrif buyuring
+## O‘zgarishlar jurnali {#changelog}
+
+- Versiya 1.0.1 (2025-09-28): prefixni ultimate-multisite ga o‘zgartirish; text domainni yangilash; versiyani oshirish.
+
+
+- Versiya  (2025-09-28): prefixni ultimate-multisite ga o‘zgartirish; text domainni yangilash; versiyani oshirish.

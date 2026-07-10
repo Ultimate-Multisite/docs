@@ -3,18 +3,18 @@ title: Aftësitë e Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Aftësitë e Theme Builder: Scaffolding dhe Aktivizimi i Temave me Blloqe
+# Aftësitë e Theme Builder: Scaffolding dhe Aktivizimi i Temave me Blloqe {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 prezanton dy aftësi të fuqishme që ju lejojnë të gjeneroni dhe të vendosni theme me blloqe të personalizuara direkt nga interfejsi i bisedës.
 
-## Përmbledhje
+## Përmbledhje {#overview}
 
 Aftësitë **scaffold-block-theme** dhe **activate-theme** lehtëson agentët të:
 - Gjenerojnë tema komplekse, gati për prodhim, bazuar në specifikimet tuaja
 - Aktivizojnë automatikisht tema në faqen tuaj pa ndërhyrje manuale
 - Krijojnë identitete vizuale kohezytë përmes vendimeve të udhëzuara të dizajnit
 
-## Scaffolding i Temës me Blloqe (Scaffold Block Theme)
+## Scaffolding i Temës me Blloqe (Scaffold Block Theme) {#scaffold-block-theme}
 
 Aftësia **scaffold-block-theme** gjeneron një temë të re WordPress me strukturë komplekse, duke përfshirë:
 
@@ -23,7 +23,7 @@ Aftësia **scaffold-block-theme** gjeneron një temë të re WordPress me strukt
 - Stile dhe variacione të blloqeve të personalizuara
 - Metadaten e temës dhe deklaratat e mbështetjes
 
-### Si ta Kërkoni (How to Invoke)
+### Si ta Kërkoni (How to Invoke) {#how-to-invoke}
 
 Në bisedën tuaj me Superdav AI Agent, mund të kërkoni gjenerimin e temës:
 
@@ -38,7 +38,7 @@ Agenti do të bëjë këtë:
 3. Do krijojë të gjitha filrat e nevojshëm të temës
 4. Do përgatisë temën për aktivizim
 
-### Output i Pritshëm (Expected Output)
+### Output i Pritshëm (Expected Output) {#expected-output}
 
 Kur aftësia ekzekutohet me sukses, do të shihni:
 
@@ -56,11 +56,11 @@ Shembull i output:
   Status: Gata për aktivizim
 ```
 
-## Aktivizimi i Temës (Activate Theme)
+## Aktivizimi i Temës (Activate Theme) {#activate-theme}
 
 Aftësia **activate-theme** e ndryshon faqen tuaj në një temë bloku të krijuar ose ekzistuese.
 
-### Si ta Kërkosh (Si ta Aktivizosh)
+### Si ta Kërkosh (Si ta Aktivizosh) {#how-to-invoke-1}
 
 Pas kur keni krijuar një temë, mund ta aktivizoni menjëherë:
 
@@ -74,7 +74,7 @@ Ose aktivizoni çdo temë ekzistuese:
 "Ndrysho në temën Twentytwentyfour"
 ```
 
-### Rezultati i Pritshëm
+### Rezultati i Pritshëm {#expected-output-1}
 
 Kur aktivizimi ka sukses:
 
@@ -92,7 +92,7 @@ Shembull i rezultati:
   Shënim: Kontrollo faqen tuaj kryesore për të verifikuar dizajnin
 ```
 
-## Procesi: Krijo dhe Aktivizo (Scaffold and Activate)
+## Procesi: Krijo dhe Aktivizo (Scaffold and Activate) {#workflow-scaffold-and-activate}
 
 Një proces tipik përfshin të dy aftësitë:
 
@@ -102,7 +102,7 @@ Një proces tipik përfshin të dy aftësitë:
 4. **Aktivizim**: "Aktivizo temën tani"
 5. **Verifikim**: Vizitoni faqen tuaj për të konfirmuar se dizajni i ri është i funksionaluar
 
-## Tokenet e Dizajnit dhe Personalizimi (Design Tokens and Customization)
+## Tokenet e Dizajnit dhe Personalizimi (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Temat e krijuara përdorin tokenet e dizajnit të WordPress-it (përmes `theme.json`) për:
 
@@ -114,14 +114,14 @@ Temat e krijuara përdorin tokenet e dizajnit të WordPress-it (përmes `theme.j
 
 Këto tokenet janë të centralizuara në `theme.json`, duke e bërë lehtë këtë për t'u përshtatur gjithë sistemit tuaj të dizajnit nga një skedar vetëm.
 
-## Kufizimet dhe Shënimet
+## Kufizimet dhe Shënimet {#limitations-and-notes}
 
 Temat janë ndërtuar në `/wp-content/themes/` dhe duhet të ndjekin konvencione të emërtimit të WordPress.
 Aktivimi kërkon leje të duhura në faqen tuaj të WordPress.
 Kodi PHP i përshtatshëm në teme është minimal; përdorni pluginet për funksionalitete komplekse.
 Temat me bloka funksionojnë më mirë me WordPress 5.9 dhe më të ri.
 
-## Zgjidhja e problemeve (Troubleshooting)
+## Zgjidhja e problemeve (Troubleshooting) {#troubleshooting}
 
 **Tema nuk shfaqet pas ndërtimit (scaffolding)**
 - Kontrolloni nëse direktoria e temës ekziston dhe ka leje të duhura.
@@ -138,7 +138,7 @@ Temat me bloka funksionojnë më mirë me WordPress 5.9 dhe më të ri.
 - Fshij çdo plugin cache (caching) që keni instaluar.
 - Kontrolloni nëse versioni i WordPress ju mbështet tokenet që po përdorni.
 
-## Hapat e Ardhshëm
+## Hapat e Ardhshëm {#next-steps}
 
 Pas aktivizimit të temës, mund të bëni:
 - Përdorni aftësinë **Design System Aesthetics** për të përmirësuar tipografinë, ngjyrat dhe hapësirat (spacing).

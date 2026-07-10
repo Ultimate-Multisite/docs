@@ -3,9 +3,9 @@ title: Stjórnun betalingar og vöndu skjalanna
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Stjórnun greiðslum og faktu
+# Stjórnun greiðslum og faktu {#managing-payments-and-invoices}
 
-## Greiðslustillingar
+## Greiðslustillingar {#payment-settings}
 
 Fyrir að þú byrjar að fá greiðslur þarftu að stilla greiðslustillingarinn. Navigera í **Ultimate Multisite → Settings** og klikka á flugvötti **Payment**.
 
@@ -15,7 +15,7 @@ Hér er fullt sýn á síðunni fyrir greiðslustillingar:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Almennar greiðslustillingar
+### Almennar greiðslustillingar {#general-payment-options}
 
 Í almennum stillingunum geturð þú stillt:
 
@@ -24,7 +24,7 @@ Hér er fullt sýn á síðunni fyrir greiðslustillingar:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Greiðslustöðvar (Payment Gateways)
+### Greiðslustöðvar (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite stendur fyrir fleiri greiðslustöðvum. Þú getur aktivert og stillt hverja þær úr flugvötti **Payment**.
 
@@ -40,11 +40,11 @@ Hver stöðva hefur sína eigin skiptingarskilninga fyrir þar sem þú skilur A
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode (Teststöð)
+### Sandbox Mode (Teststöð) {#sandbox-mode}
 
 Þú getur aktivert **Sandbox Mode** til að prófa greiðslustöðva þín áður en þú byrjar við. Þegar sandbox mode er á, verða ekki framkvæmdar raunverulegar greiðslur.
 
-## Sjá greiðslur
+## Sjá greiðslur {#viewing-payments}
 
 Navigera í **Payments** síðuna undir Ultimate Multisite til að sjá allar skiptingarnir yfir nýtinguna þína.
 
@@ -54,7 +54,7 @@ Navigera í **Payments** síðuna undir Ultimate Multisite til að sjá allar sk
 
 Klikk á betalningu til að sjá allar upplýsingar um hana, sérstaklega liðin í reikningum, tengd lánning/meðferðir, viðskiptavarkupplunar og upplýsingar um betalingsvegi.
 
-## Reikningar (Invoices)
+## Reikningar (Invoices) {#invoices}
 
 Ultimate Multisite getur sjálft aðgengst að skráningum fyrir betalingar. Þú getur sérsniðið mallinn reikninga og formáttir númerunar með innstillingunum fyrir betalingar.
 

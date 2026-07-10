@@ -4,11 +4,11 @@ title: 过滤器 - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# 过滤器: ultimate_multisite_content_sync_get_option
+# 过滤器: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 返回已slug化的网络选项值。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 | $option_name | `string` | 选项名称。 |
 | $default | `mixed` | 默认值。 |
 
-### 自
+### 自 {#since}
 
 - 1.0.0
 
-### 来源
+### 来源 {#source}
 
 在 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) 中定义，位于第 126 行
 
-## 返回
+## 返回 {#returns}
 
 slugfield 网络选项值。

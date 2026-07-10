@@ -1,0 +1,111 @@
+---
+title: Ultimate AI konektor pre kompatibilné koncové body
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector for Compatible Endpoints integruje API poskytovateľov AI kompatibilné s OpenAI s vašou multisite sieťou WordPress. Nakonfigurujte viacerých poskytovateľov AI — každého s vlastnou URL koncového bodu, API kľúčom a predvoleným modelom — a smerujte požiadavky s automatickým záložným prepnutím, keď poskytovateľ nie je dostupný.
+
+## Kľúčové funkcie {#key-features}
+
+- **Podpora viacerých poskytovateľov**: Pridajte viacero kariet poskytovateľov AI, každú s vlastnou URL koncového bodu, API kľúčom a predvoleným modelom
+- **Presúvanie potiahnutím**: Usporiadajte poskytovateľov podľa priority pomocou úchytu na každej karte; požiadavky používajú poskytovateľov v poradí
+- **Automatické záložné smerovanie**: Ak primárny poskytovateľ nie je dostupný, požiadavky sa automaticky presmerujú na ďalšieho nakonfigurovaného poskytovateľa
+- **Konfigurácia pre každého poskytovateľa**: Každý poskytovateľ je konfigurovaný nezávisle s vlastnými prihlasovacími údajmi a výberom modelu
+- **Používateľské rozhranie nastavení založené na kartách**: Postavené na stabilných komponentoch Card vo WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Automatické rozbalenie po pridaní**: Nové karty poskytovateľov sa automaticky rozbalia, aby ste mohli okamžite vyplniť podrobnosti
+- **Obídenie cache skriptov**: Skripty poskytovateľov dostanú pri aktualizácii pluginu nové cache označenie, aby sa zaistilo načítanie najnovšej verzie
+
+## Požiadavky {#requirements}
+
+- WordPress 5.3 alebo vyšší
+- PHP 7.4 alebo vyšší
+- plugin Ultimate Multisite (aktívny)
+- API koncový bod kompatibilný s OpenAI (vlastne hostovaný alebo od tretej strany)
+
+## Inštalácia {#installation}
+
+1. Nahrajte súbory addonu do svojho adresára `/wp-content/plugins/`
+2. Aktivujte plugin cez menu „Pluginy“ vo WordPress
+3. Prejdite na **Ultimate Multisite → AI Connector** a nakonfigurujte addon
+
+## Konfigurácia {#configuration}
+
+### Nastavenie viacerých poskytovateľov {#multi-provider-setup}
+
+Obrazovka konfigurácie používa rozloženie založené na kartách, kde každá karta predstavuje jedného poskytovateľa AI. Môžete pridať toľko poskytovateľov, koľko potrebujete.
+
+#### Pridanie poskytovateľa {#adding-a-provider}
+
+1. Prejdite na **Ultimate Multisite → AI Connector** v správe siete
+2. Kliknite na **Pridať poskytovateľa**
+3. Zobrazí sa nová karta poskytovateľa a automaticky sa rozbalí
+4. Vyplňte podrobnosti poskytovateľa:
+   - **Názov poskytovateľa** — označenie na identifikáciu tohto poskytovateľa (napr. „OpenAI“, „Mistral“, „Local Ollama“)
+   - **URL koncového bodu** — základná URL API kompatibilného s OpenAI (napr. `https://api.openai.com/v1`)
+   - **API kľúč** — váš API kľúč pre tohto poskytovateľa
+   - **Predvolený model** — identifikátor modelu, ktorý sa má predvolene používať pre tohto poskytovateľa (napr. `gpt-4o`, `mistral-small`)
+5. Kliknite na **Uložiť nastavenia**
+
+#### Odstránenie poskytovateľa {#removing-a-provider}
+
+Kliknutím na tlačidlo **Odstrániť** na ľubovoľnej karte poskytovateľa ho odstránite. Uložte nastavenia, aby sa zmena použila.
+
+#### Zmena poradia poskytovateľov {#reordering-providers}
+
+Potiahnutím ikony úchytu (⣿) na ľavej strane ľubovoľnej karty poskytovateľa zmeníte jej poradie. Poradie určuje prioritu záložného prepnutia: požiadavky sa odosielajú prvému poskytovateľovi a pri zlyhaní požiadavky prechádzajú na nasledujúcich poskytovateľov.
+
+### Záložné smerovanie {#fallback-routing}
+
+Keď požiadavka na primárneho poskytovateľa zlyhá — z dôvodu časového limitu, limitu počtu požiadaviek alebo výpadku služby — konektor ju automaticky skúsi znova s ďalším poskytovateľom v zozname. Toto pokračuje nadol zoznamom, kým niektorý poskytovateľ neuspeje alebo kým sa nevyskúšajú všetci poskytovatelia.
+
+| Scenár | Správanie |
+|----------|-----------|
+| Primárny poskytovateľ odpovedá | Požiadavka sa obslúži normálne |
+| Primárny poskytovateľ zlyhá | Požiadavka sa skúsi znova s ďalším poskytovateľom |
+| Všetci poskytovatelia zlyhajú | Volajúcemu sa vráti chyba |
+
+Záložné prepnutie je transparentné pre volajúci plugin alebo tému — dostanú buď úspešnú odpoveď, alebo konečnú chybu bez ohľadu na to, koľko poskytovateľov bolo vyskúšaných.
+
+### Referencia konfigurácie poskytovateľa {#provider-configuration-reference}
+
+| Pole | Povinné | Popis |
+|-------|----------|-------------|
+| Názov poskytovateľa | Áno | Zobrazované označenie pre tohto poskytovateľa |
+| URL koncového bodu | Áno | Základná URL API kompatibilného s OpenAI |
+| API kľúč | Áno | Autentifikačný kľúč pre tohto poskytovateľa |
+| Predvolený model | Áno | Identifikátor modelu použitý, keď v požiadavke nie je uvedený žiadny model |
+
+## Riešenie problémov {#troubleshooting}
+
+### Nie sú uvedení žiadni poskytovatelia {#no-providers-are-listed}
+
+Ak je zoznam poskytovateľov po uložení prázdny, overte, že:
+
+- Klikli ste na **Uložiť nastavenia** po pridaní poskytovateľov
+- Váš prehliadač nezablokoval uloženie stránky nastavení (skontrolujte konzolu prehliadača, či neobsahuje chyby JavaScriptu)
+- Plugin je aktívny a nachádzate sa na obrazovke správy siete
+
+### Požiadavky zlyhávajú pre všetkých poskytovateľov {#requests-are-failing-for-all-providers}
+
+- Overte, že URL koncového bodu každého poskytovateľa je dostupná z vášho servera (nielen z vášho prehliadača)
+- Skontrolujte, či je každý API kľúč platný a nevypršala jeho platnosť
+- Skontrolujte stav limitov požiadaviek a kvót poskytovateľa v ich dashboarde
+- Povoľte protokolovanie ladenia WordPress (`WP_DEBUG_LOG`), aby ste zachytili podrobné chybové správy z konektora
+
+### Poskytovateľ sa nepoužíva na záložné prepnutie {#a-provider-is-not-being-used-for-fallback}
+
+Zmena poradia potiahnutím mení poradie záložného prepnutia. Overte, že poskytovateľ, od ktorého očakávate prijímanie záložných požiadaviek, je v zozname umiestnený správne a že jeho URL koncového bodu a API kľúč sú správne.
+
+### Nová karta poskytovateľa sa automaticky nerozbalí {#new-provider-card-does-not-expand-automatically}
+
+Automatické rozbalenie vyžaduje, aby bol vo vašom prehliadači povolený JavaScript. Ak sa karta po kliknutí nerozbalí, skontrolujte konzolu prehliadača, či neobsahuje chyby. Obsah karty je vždy dostupný kliknutím na hlavičku karty, aj keď sa automatické rozbalenie nespustí.
+
+## Zoznam zmien {#changelog}
+
+Úplnú históriu verzií nájdete v časti [Zoznam zmien](./changelog).

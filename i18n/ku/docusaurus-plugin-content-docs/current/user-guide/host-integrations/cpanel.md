@@ -3,17 +3,17 @@ title: یکردنەوەی cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrationi cPanel
+# Integrationi cPanel {#cpanel-integration}
 
-## Pêşknowsî (Overview)
+## Pêşknowsî (Overview) {#overview}
 cPanel ewerî ji ek bira panela kontrolî web hosting ye ku gelek pênasekên hostingên payewe (shared) û dede (dedicated) li parastina ve yên gelek kes hatine li ser. Ev integrasyon gelek xwediyê ye ku ji bo hinekî bi rastî (automatic) bikin domain alias û subdomain ji bo hesabê cPanel yê we bi rastî zêde bikin.
 
-## Xwediyariyên (Features)
+## Xwediyariyên (Features) {#features}
 - Çêkirina otomatik addon domain di cPanel de
 - Çêkirina otomatik subdomain di cPanel de (bo li ser enstalevanên subdomain multisite)
 - Hêzbûnê ji berdexabûna mappings (domain alias'ên)
 
-## Pêşrevî (Requirements)
+## Pêşrevî (Requirements) {#requirements}
 Pêşkoşên lêkolîn yên diove neviştin di dosyeya `wp-config.php` de:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Rêveke ji 2083 e
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Rêveka ji /public_html e
 ```
 
-## Nîşankirina (Setup Instructions)
+## Nîşankirina (Setup Instructions) {#setup-instructions}
 
-### 1. Xwata xwe yên cPanel bidin
+### 1. Xwata xwe yên cPanel bidin {#1-get-your-cpanel-credentials}
 
 1. Username û password yê cPanel-ê xwe ji pênasekên hostingê xwe ji we re bipêjin.
 2. Host yê cPanel yê we debaşa bixwazin (bi gelemeyî `cpanel.yourdomain.com` an jî `yourdomain.com:2083`).
 
-### 2. Konstanta di wp-config.php de bişorîn bikin
+### 2. Konstanta di wp-config.php de bişorîn bikin {#2-add-constants-to-wp-configphp}
 
 Konstanta yên lêkolîn de li dosyeya `wp-config.php` de bişorîn bikin:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Eguverê ji bo gelekên cPanel ku hevbeş ne
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Eguverê ji bo root directory yê dökümanan
 ```
 
-### 3. Integrasyonê vekirin
+### 3. Integrasyonê vekirin {#3-enable-the-integration}
 
 ١. لە ئیدارەی WordPress، بگواشبە Ultimate Multisite > Settings (سەرکردایەتی)
 ٢. بۆ لایەنەکە بگواشبە "Domain Mapping" (پێناسەکردنی دامێنی)
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Eguverê ji bo root directory y
 ٤. Enable the cPanel integration (فعۆڕ کردن یەکگرتووی cPanel)
 ٥. Click "Save Changes" (گواهی گۆڕانکارییەکان هەڵبژێرە)
 
-## چۆنیوە کار دەکات
+## چۆنیوە کار دەکات {#how-it-works}
 
-### Addon Domains (دامێنیی پاشەکەوتکراو)
+### Addon Domains (دامێنیی پاشەکەوتکراو) {#addon-domains}
 
 کاتێک دامێنێکی لە Ultimate Multisite دا پێناسە دەکرێت:
 
@@ -71,7 +71,7 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Eguverê ji bo root directory y
 ٢. دامێنەکە ڕێکدەخرێت کە ئاماژەی بە دایرێکتۆری سەرەکی (root directory) بدات
 ٣. کاتێک پێناسەکردنی دامێنی لەناوچێت، یەکگرتوو ئەو addon domainە لە cPanel دەداتەوە
 
-### Subdomains (دامێنەکانی ژێرنووس)
+### Subdomains (دامێنەکانی ژێرنووس) {#subdomains}
 
 بۆ جۆرەکانی Multisite کە بە subdomain کار دەکەیت، کاتێک سایتێکی نوێ دروست دەکەیت:
 
@@ -79,28 +79,28 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Eguverê ji bo root directory y
 ٢. داواکارییەک بۆ APIی cPanel دەبینێت تا ئەو subdomainە زیاد بکات
 ٣. subdomainەکە ڕێکدەخرێت کە ئاماژەی بە دایرێکتۆری سەرەکی (root directory) بدات
 
-## تێبینییە گرنگان
+## تێبینییە گرنگان {#important-notes}
 
 - یەکگرتوو لە کارکردن لەگەڵ API2ی cPanel بۆ پەیوەندی لەگەڵ هەژمارەکەت بەکاردێت
 - هەژمارەکەی cPanel دەبێت ڕێگەپێردنی زیادکردنی addon domains و subdomains هەبێت
 - چەندین پڕۆڤایدر هاستکردن دەتوانن ژمارەی addons یان subdomainەکانت سنووردار بکەن کە دەتوانیت دروست بکەیت
 - یەکگرتوو بەڕێوەبردنی DNS (DNS configuration) ناکات؛ تۆ هێشتا دەبێت دامێنەکانت بۆ IPی خەریکی خۆت ڕێکبخەیت
 
-## چارەسەرکردنی کێشەکان (Troubleshooting)
+## چارەسەرکردنی کێشەکان (Troubleshooting) {#troubleshooting}
 
-### کێشەی پەیوەندی بە API
+### کێشەی پەیوەندی بە API {#api-connection-issues}
 
 - دڵنیا بەوەی کە ناوی کاربری و وشکەری cPanel دروستنە
 - چاک بکە کە هاستکردنی cPanel تۆ دروستە و دەتوانیت بەکاری بهێنیت
 - دڵنیا بەوەی کە هەژمارەکەی cPanel ڕێگەپێردنی پێویست هەیە
 
-### دامێنەکە زیاد نەکراوە
+### دامێنەکە زیاد نەکراوە {#domain-not-added}
 
 - لە لاگەکانی Ultimate Multisite بۆ هەر پەیامێکی هەڵە چاک بکە
 - دڵنیا بەوەی کە دامێنەکە پێشتر لە cPanel دا زیاد نییە
 - دڵنیا بەوەی کە هەژمارەکەی cPanel سنوور بۆ addon domains یان subdomain هاودا ناییکراوە
 
-### پروبیز سسڵ سرتیفیکات (SSL Certificate Issues)
+### پروبیز سسڵ سرتیفیکات (SSL Certificate Issues) {#ssl-certificate-issues}
 - ئەم یەکۆلینە ئەو کارانەی کە بەدەستهێنانەوەی SSL certificate ناهێنێت.
 - بۆ ئەوەی SSL certificates بۆ دۆمەینەکانت دەستنیشانی، پێویستە لە ئامرازەکانی cPanel یان تایبەتمەندی AutoSSL بەکاربهێنیت.
 - بە شێوەیەکی دیکە، دەتوانیت سیستیمی وەک Let's Encrypt بەکاربهێنیت لەگەڵ AutoSSLی cPanelدا.

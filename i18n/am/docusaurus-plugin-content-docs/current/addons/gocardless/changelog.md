@@ -3,7 +3,7 @@ title: GoCardless የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# የGoCardless የለውጥ መዝገብ
+# የGoCardless የለውጥ መዝገብ {#gocardless-changelog}
 
 Version: 1.0.3 - የተለቀቀበት ቀን 2026-05-05
 * ስህተት: GoCardless አባልነት በመጠባበቂያ ወይም በማቆያ ሁኔታ ሲሰረዝ፣ ተበላሽተው የሚጠብቁ ድረ-ገጾች አሁን በራስ-ሰር ይጽዳሉ።

@@ -3,19 +3,19 @@ title: Kafa Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Shiga Stripe Gateway (v2)
+# Shiga Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**MUHIMMANA MA'ALAKA: Wannan makala ya danganta Ultimate Multisite versiyau 2.x.**_
 
 Za ka iya samar da hanyoyi huɗu na karɓar kuɗi a shafin tsarin kuɗinmu: Stripe, Stripe Checkout, PayPal da Manual. A wannan makalan, za mu gani yadda ake haɗawa da **Stripe**.
 
-## Shiga Stripe
+## Shiga Stripe {#enabling-stripe}
 
 Don ƙarfafa Stripe a matsayin hanyar karɓar kuɗi da ke nan a cikin shafin ka, tafiya zuwa **Ultimate Multisite > Settings > Payments** kuma ka danna toggle (wanda ke nuna) da ke kusa da **Stripe** ko **Stripe Checkout** a sashi na Active Payment Gateways.
 
 ![Shiga Stripe a hanyoyin karɓar kuɗi masu aiki](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Wannan hanya za ta nuna wuri don shigar lambar katin kuɗi bayan an fara sayarwa (checkout).
 
@@ -47,7 +47,7 @@ Kopi ƙima daga **Publishable key** da **Secret key**, daga sashi na **Token** k
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Shigar Stripe Webhook
+## Shigar Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe yana aiko wa hotun webhook (webhook events) wanda ke sanin Ultimate Multisite duk lokacin da wani abu ya faru a **kaunanki na stripe**.
 

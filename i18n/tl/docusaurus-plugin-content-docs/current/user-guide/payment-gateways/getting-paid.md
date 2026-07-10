@@ -1,126 +1,126 @@
 ---
-title: Pagkakuha ng Bayad
+title: Pagtanggap ng Bayad
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Pagkolekta ng Bayad (v2)
+# Pagbabayad (v2) {#getting-paid-v2}
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
+_**MAHALAGANG TALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
-Mayroon ang Ultimate Multisite na built-in na sistema para sa membership at billing. Para gumana ang ating billing system, isinama natin ang pinakakaraniwang payment gateways na ginagamit sa e-commerce. Ang default na mga payment gateway sa Ultimate Multisite ay _Stripe_, _PayPal_, at Manual Payment. Maaari mo ring gamitin ang _WooCommerce_, _GoCardless_ at _Payfast_ para tumanggap ng bayad sa pamamagitan ng pag-install ng kani-kanilang add-ons.
+Ang Ultimate Multisite ay may built-in na sistema para sa membership at billing. Para gumana ang aming sistema ng billing, isinama namin ang pinakakaraniwang mga gateway ng pagbabayad na ginagamit sa e-commerce. Ang mga default na gateway ng pagbabayad sa Ultimate Multisite ay _Stripe_ , _PayPal_ , at Manwal na Pagbabayad. Maaari mo ring gamitin ang _WooCommerce_ , _GoCardless_ at _Payfast_ upang tumanggap ng mga bayad sa pamamagitan ng pag-install ng kani-kanilang mga add-on.
 
-## Mga Pangunahing Setting
+## Mga Pangunahing Setting {#basic-settings}
 
-Maaari mong i-configure ang alinman sa mga payment gateway na ito sa ilalim ng Ultimate Multisite payment settings. Makikita mo ito sa pamamagitan ng pagpunta sa **Ultimate Multisite menu > Settings > Payments.**
+Maaari mong i-configure ang alinman sa mga gateway ng pagbabayad na ito sa ilalim ng mga setting ng pagbabayad ng Ultimate Multisite. Mahahanap mo ito sa pamamagitan ng pagpunta sa **Ultimate Multisite menu > Settings > Payments.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Pahina ng mga setting ng pagbabayad sa Ultimate Multisite na nagpapakita ng panel ng Payments](/img/config/payments-settings-page.png)
 
-Bago ka mag-setup ng iyong payment gateway, tingnan muna ang mga pangunahing setting ng bayad na maaari mong i-configure:
+Bago mo i-setup ang iyong gateway ng pagbabayad, pakitingnan ang mga pangunahing setting ng pagbabayad na maaari mong i-configure:
 
-**Force auto-rene** **w:** Titiyakin nito na awtomatikong uulit ang bayad sa pagtatapos ng bawat billing cycle depende sa frequency ng billing na pinili ng user.
+**Pilitin ang auto-rene** **w:** Titiyakin nito na awtomatikong mauulit ang pagbabayad sa katapusan ng bawat billing cycle depende sa dalas ng billing na pinili ng user.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Sinusuri ng Ultimate Multisite v2.13.0 kung mayroon bang reusable renewal credential ang aktibong gateway bago i-save ang recurring membership na may auto-renewal na naka-enable. Ang renewal credential ay maaaring isang gateway subscription, billing agreement, saved vault token, o katumbas na reusable payment method. Kung ang gateway ay nag-uulat na walang usable credential, ise-save ng Ultimate Multisite ang membership ngunit patayin ang auto-renewal at itatala ang estado ng kulang na credential para mapayuhan ng administrator o support flow ang customer na muling mag-authorize ng bayad bago ang petsa ng renewal.
+Sinusuri ng Ultimate Multisite v2.13.0 kung ang aktibong gateway ay may reusable renewal credential bago i-save ang umuulit na membership na naka-enable ang auto-renewal. Ang renewal credential ay maaaring gateway subscription, billing agreement, naka-save na vault token, o katumbas na reusable na paraan ng pagbabayad. Kung iuulat ng gateway na walang magagamit na credential, ise-save ng Ultimate Multisite ang membership ngunit io-off ang auto-renewal at itatala ang missing-credential state upang makahingi ang administrator o support flow sa customer na muling pahintulutan ang pagbabayad bago ang petsa ng renewal.
 
-Pinipigilan nito na lumabas ang isang membership na awtomatikong magre-renew kapag ang gateway ay tumatanggap lamang ng one-time payments. Dapat tiyakin ng mga gateway add-on na ang recurring checkouts ay nag-iimbak ng reusable credential, lalo na kung sinusuportahan ng gateway ang parehong one-time capture at vaulted/subscription payment modes.
+Pinipigilan nito ang isang membership na magmukhang mag-a-auto-renew kapag ang gateway ay makakakolekta lamang ng mga one-time payment. Dapat kumpirmahin ng mga gateway add-on na ang mga umuulit na checkout ay nag-iimbak ng reusable credential, lalo na kapag sinusuportahan ng gateway ang parehong one-time capture at vaulted/subscription na mga mode ng pagbabayad.
 
-**Payagan ang trials nang walang method:** Sa pag-enable ng opsyong ito, hindi na kailangang maglagay ng anumang impormasyong pinansyal ang iyong kliyente sa proseso ng registration. Ito ay kakailanganin lamang kapag natapos ang trial period.
+**Payagan ang mga trial nang walang paraan ng pagbabayad:** Kapag naka-enable ang opsyong ito, hindi na kailangang magdagdag ng iyong client ng anumang impormasyong pinansyal habang nasa proseso ng registration. Kakailanganin lamang ito kapag nag-expire na ang trial period.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Magpadala ng invoice pagkatapos ng confirmation ng payment:** Nagbibigay ito sa iyo ng opsyon kung magpapadala ka ba ng invoice pagkatapos magbayad o hindi. Tandaan na ang mga user ay magkakaroon ng access sa kanilang payment history sa ilalim ng dashboard ng kanilang subsite. Ang opsyong ito ay hindi naaangkop sa Manual Gateway.
+**Magpadala ng invoice kapag nakumpirma ang pagbabayad:** Binibigyan ka nito ng opsyon kung magpapadala o hindi ng invoice pagkatapos ng pagbabayad. Tandaan na magkakaroon ang mga user ng access sa kanilang kasaysayan ng pagbabayad sa ilalim ng kanilang subsite dashboard. Hindi nalalapat ang opsyong ito sa Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** Dito, maaari kang pumili ng payment reference code o isang sequential number scheme. Kung pipiliin mong gumamit ng payment reference code para sa iyong mga invoice, hindi mo na kailangang mag-configure ng kahit ano. Kung pipiliin mong gumamit ng sequential number scheme, kailangan mong i-configure ang **next invoice number** (Ang numerong ito ay gagamitin bilang invoice number para sa susunod na invoice na gagawin sa system. Ito ay tataas ng isa bawat paglikha ng bagong invoice. Maaari mo itong baguhin at i-save upang i-reset ang sequential number ng invoice sa isang partikular na halaga) at ang **invoice number prefix**.
+**Skema ng pagnunumero ng invoice:** Dito, maaari kang pumili ng alinman sa payment reference code o sequential number scheme. Kung pipiliin mong gumamit ng payment reference code para sa iyong mga invoice, wala kang kailangang i-configure. Kung pipiliin mong gumamit ng sequential number scheme, kakailanganin mong i-configure ang **susunod na numero ng invoice** (Gagamitin ang numerong ito bilang numero ng invoice para sa susunod na invoice na gagawin sa sistema. Nadadagdagan ito ng isa tuwing may bagong invoice na nililikha. Maaari mo itong baguhin at i-save upang i-reset ang sunod-sunod na numero ng invoice sa isang partikular na halaga) at ang **prefix ng numero ng invoice.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-<!-- Screenshot unavailable: Ipinapakita ang mga field para sa susunod na numero ng invoice at unan ng numero ng invoice kapag pinili ang Sequential Number -->
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Saan makikita ang mga gateway:
+## Saan mahahanap ang mga gateway: {#where-to-find-the-gateways}
 
-Maaari mong i-setup ang payment gateways sa iisang page ( **Ultimate Multisite > Settings > Payments**). Sa ibaba mismo ng **active payment gateways**, makikita mo ang: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ at _Manual_.
+Maaari mong i-setup ang mga gateway ng pagbabayad sa parehong pahina ( **Ultimate Multisite > Settings > Payments**). Sa mismong ibaba ng **mga aktibong gateway ng pagbabayad** , makikita mo ang: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ at _Manual_.
 
-![Seksyon ng Active Payment Gateways na naglilista ng Stripe, Stripe Checkout, PayPal at Manual](/img/config/payments-active-gateways.png)
+![Seksyon ng mga Aktibong Gateway ng Pagbabayad na naglilista ng Stripe, Stripe Checkout, PayPal at Manual](/img/config/payments-active-gateways.png)
 
-Mayroon kaming nakalaang article para sa bawat payment gateway na gagabay sa iyo sa mga hakbang ng pag-set up nito na matatagpuan mo sa mga link sa ibaba.
+Mayroon kaming nakalaang artikulo para sa bawat gateway ng pagbabayad na gagabay sa iyo sa mga hakbang ng pag-setup nito, na mahahanap mo sa mga link sa ibaba.
 
-Maaari mong tingnan at i-edit ang mga detalye ng bayad:
+Maaari mong tingnan at i-edit ang mga detalye ng pagbabayad:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Interface ng pag-edit ng pagbabayad](/img/admin/payment-edit.png)
 
-Narito ang buong tanawin ng payment edit page:
+Narito ang buong view ng pahina ng pag-edit ng pagbabayad:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Buong interface ng pag-edit ng pagbabayad](/img/admin/payment-edit-full.png)
 
-Narito rin ang buong tanawin ng mga setting ng payment gateways:
+Narito rin ang buong view ng mga setting ng mga gateway ng pagbabayad:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Buong pahina ng mga setting ng mga gateway ng pagbabayad](/img/config/settings-payments-gateways-full.png)
 
-**Pag-set up ng Stripe gateway**
+**Pag-setup ng Stripe gateway**
 
-**Pag-set up ng PayPal gateway**** **
+**Pag-setup ng PayPal gateway**** **
 
-**Pag-set up ng manual payments**
+**Pag-setup ng mga manwal na pagbabayad**
 
-Ngayon, kung gusto mong gamitin ang _WooCommerce_ , _GoCardless_ o _Payfast_ bilang iyong payment gateway, kailangan mo munang **i-install at i-configure ang kanilang mga add-on**.
+Ngayon, kung gusto mong gamitin ang _WooCommerce_ , _GoCardless_ o _Payfast_ bilang iyong gateway ng pagbabayad, kakailanganin mong **i-install at i-configure ang kanilang mga add-on**.
 
-### Paano mag-install ng WooCommerce add-on:
+### Paano i-install ang WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
-Naiintindihan namin na hindi available ang _Stripe_ at _PayPal_ sa ilang bansa na naglilimita o humahadlang sa Ultimate Multisite users na epektibong gamitin ang aming plugin. Kaya gumawa kami ng isang add-on para i-integrate ang _WooCommerce_, na isa ring napakasikat na e-commerce plugin. Ang mga developer sa buong mundo ay gumagawa ng mga add-on upang i-integrate ang iba't ibang payment gateway dito. Ginagamit namin ito upang palawakin ang mga payment gateway na maaari mong gamitin kasama ang Ultimate Multisite billing system.
+Nauunawaan namin na ang _Stripe_ at _PayPal_ ay hindi available sa ilang bansa, na naglilimita o nakahahadlang sa mga user ng Ultimate Multisite na epektibong magamit ang aming plugin. Kaya gumawa kami ng add-on upang i-integrate ang _WooCommerce,_ na isang napakasikat na e-commerce plugin. Gumawa ang mga developer sa buong mundo ng mga add-on upang i-integrate dito ang iba’t ibang gateway ng pagbabayad. Sinamantala namin ito upang palawakin ang mga gateway ng pagbabayad na maaari mong gamitin sa sistema ng billing ng Ultimate Multisite.
 
-_**MAHALAGANG PA:** Ang Ultimate Multisite: WooCommerce Integration ay nangangailangan na ang WooCommerce ay naka-activate kahit sa iyong pangunahing site._
+_**MAHALAGA:** Kinakailangan ng Ultimate Multisite: WooCommerce Integration na naka-activate ang WooCommerce kahit man lang sa iyong pangunahing site._
 
-Una, pumunta ka muna sa page ng add-ons. Makikita mo ito sa pamamagitan ng pagpunta sa **Ultimate Multisite > Settings**. Dapat makakita ka ng talahanayan ng **Add-ons**. I-click ang **Check our Add-ons**.
+Una, pumunta sa pahina ng mga add-on. Mahahanap mo ito sa pamamagitan ng pagpunta sa **Ultimate Multisite > Settings**. Dapat mong makita ang talahanayan ng **Add-ons**. I-click ang **Tingnan ang aming mga Add-on**.
 
-<!-- Screenshot unavailable: Talahanayan ng mga Add-on sa Ultimate Multisite Settings sidebar na may link na Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Pagkatapos mag-click sa **Check our Add-ons**, i-redirect ka sa add-ons page. Dito mo makikita ang lahat ng Ultimate Multisite add-on. I-click ang add-on na **Ultimate Multisite: WooCommerce Integration**.
+Pagkatapos i-click ang **Tingnan ang aming mga Add-on** , ire-redirect ka sa pahina ng mga add-on. Dito mo mahahanap ang lahat ng add-on ng Ultimate Multisite. I-click ang **Ultimate Multisite: WooCommerce Integration** add-on.
 
-![Add-ons page na naglilista ng mga Ultimate Multisite add-on kasama ang WooCommerce Integration](/img/addons/addons-page.png)
+![Pahina ng mga add-on na naglilista ng mga add-on ng Ultimate Multisite kabilang ang WooCommerce Integration](/img/addons/addons-page.png)
 
-May lalabas na window na may detalye ng add-on. I-click mo lang ang **Install Now**.
+May lalabas na bintana na may mga detalye ng karagdagan. I-click lang ang **I-install Ngayon**.
 
-<!-- Screenshot unavailable: Dialog ng detalye ng Ultimate Multisite WooCommerce Integration add-on na may Install Now button -->
+<!-- Hindi available ang screenshot: dialog ng mga detalye ng karagdagang Ultimate Multisite WooCommerce Integration na may button na I-install Ngayon -->
 
-Pagkatapos ma-install, i-redirect ka sa plugins page. Dito, i-click mo lang ang **Network Activate** at a-activate ang WooCommerce add-on sa iyong network.
+Pagkatapos ng pag-install, ire-redirect ka sa pahina ng mga pandugtong. Dito, i-click lang ang **I-activate sa Network** at maa-activate ang karagdagang WooCommerce sa iyong network.
 
-<!-- Screenshot unavailable: Plugins page na may link na Network Activate para sa WooCommerce Integration add-on -->
+<!-- Hindi available ang screenshot: Pahina ng mga pandugtong na may link na I-activate sa Network para sa karagdagang WooCommerce Integration -->
 
-Pagkatapos ma-activate ito, kung wala ka pa ring installed at naka-activate na WooCommerce plugin sa iyong website, makakatanggap ka ng paalala.
+Pagkatapos itong i-activate, kung wala ka pa ring naka-install at naka-activate na pandugtong na WooCommerce sa iyong websayt, makakatanggap ka ng paalala.
 
-<!-- Screenshot unavailable: Admin notice na nagpapaalala sa administrator na mag-install at i-activate ang WooCommerce plugin -->
+<!-- Hindi available ang screenshot: Paunawa ng admin na nagpapaalala sa tagapangasiwa na i-install at i-activate ang pandugtong na WooCommerce -->
 
-Para sa mas maraming impormasyon tungkol sa WooCommerce Integration add-on, **i-click mo rito**.
+Para magbasa pa tungkol sa karagdagang WooCommerce Integration, **i-click dito**.
 
-### Paano mag-install ng GoCardless add-on:
+### Paano i-install ang karagdagang GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Ang mga hakbang para i-install ang _GoCardless_ add-on ay halos pareho lang sa _WooCommerce_ add-on. Pumunta ka sa page ng add-ons at piliin ang **Ultimate Multisite: GoCardless Gateway** add-on.
+Ang mga hakbang para i-install ang karagdagang _GoCardless_ ay halos kapareho ng sa karagdagang _WooCommerce_. Mangyaring pumunta sa pahina ng mga karagdagan at piliin ang karagdagang **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Hindi available ang screenshot: Pahina ng mga karagdagan na may naka-highlight na karagdagang Ultimate Multisite GoCardless Gateway -->
 
-Lalabas ang window ng add-on. I-click ang **Install Now**.
+Lalabas ang bintana ng karagdagan. I-click ang **I-install Ngayon**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Hindi available ang screenshot: dialog ng mga detalye ng karagdagang Ultimate Multisite GoCardless Gateway na may button na I-install Ngayon -->
 
-Pagkatapos ma-install, i-redirect ka sa plugins page. Dito lang, i-click mo ang **Network Activate** at aaktibahin na ang _GoCardless_ add-on sa network mo.
+Pagkatapos ng pag-install, ire-redirect ka sa pahina ng mga pandugtong. Dito, i-click lang ang **I-activate sa Network** at maa-activate ang karagdagang _GoCardless_ sa iyong network.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Hindi available ang screenshot: Pahina ng mga pandugtong na may link na I-activate sa Network para sa karagdagang GoCardless Gateway -->
 
-Para malaman kung paano magsimula gamit ang _GoCardless_ gateway, **basahin itong artikulo**.
+Para matutunan kung paano magsimula sa gateway na _GoCardless_, **basahin ang artikulong ito**.
 
-### Paano i-install ang Payfast add-on:
+### Paano i-install ang karagdagang Payfast: {#how-to-install-the-payfast-add-on}
 
-Pumunta ka sa page ng add-ons at piliin ang **Ultimate Multisite: Payfast Gateway** add-on.
+Pumunta sa pahina ng mga karagdagan at piliin ang karagdagang **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Hindi available ang screenshot: Pahina ng mga karagdagan na may naka-highlight na karagdagang Ultimate Multisite Payfast Gateway -->
 
-Lalabas ang window ng add-on. I-click ang **Install Now**.
+Lalabas ang bintana ng karagdagan. I-click ang **I-install Ngayon.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Hindi available ang screenshot: dialog ng mga detalye ng karagdagang Ultimate Multisite Payfast Gateway na may button na I-install Ngayon -->
 
-Pagkatapos ma-install, i-redirect ka sa plugins page. Dito lang, i-click mo ang **Network Activate** at aaktibahin na ang _Payfast_ add-on sa network mo.
+Pagkatapos ng pag-install, ire-redirect ka sa pahina ng mga pandugtong. Dito, i-click lang ang **I-activate sa Network** at maa-activate ang karagdagang _Payfast_ sa iyong network.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Hindi available ang screenshot: Pahina ng mga pandugtong na may link na I-activate sa Network para sa karagdagang Payfast Gateway -->

@@ -3,11 +3,11 @@ title: Aestetika Dizajni Sistemit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Aftësia e Estetikës së Sistemit Dizajni (Design System Aesthetics Skill)
+# Aftësia e Estetikës së Sistemit Dizajni (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 **Aftësia e estetikës së sistemit dizajni** është një mënyrë udhëzuese për të përmirësuar identitetin vizual të faqes suaj. Ajo ju ndihmon të merrni vendime të qëndrueshme rreth tipografisë, ngjyrave, hapësirës (spacing) dhe token-eve të lëvizjes (motion tokens) që përcaktojnë sistemin tuaj dizajni.
 
-## Çfarë është Aftësia e Estetikës së Sistemit Dizajni?
+## Çfarë është Aftësia e Estetikës së Sistemit Dizajni? {#what-is-design-system-aesthetics}
 
 Aftësia e estetikës së sistemit dizajni është një aftësi e strukturuar që mbulon:
 
@@ -20,9 +20,9 @@ Aftësia e estetikës së sistemit dizajni është një aftësi e strukturuar q�
 
 Këto vendime ruhen në skurtin `theme.json` të temës suaj, duke krijuar një sistem vizual të bashkuar.
 
-## Pse duhet të përdorni Aftësinë e Estetikës së Sistemit Dizajni?
+## Pse duhet të përdorni Aftësinë e Estetikës së Sistemit Dizajni? {#why-use-design-system-aesthetics}
 
-### Konsistenca (Consistency)
+### Konsistenca (Consistency) {#consistency}
 
 Një sistem dizajni siguron:
 
@@ -31,7 +31,7 @@ Një sistem dizajni siguron:
 - Hapësira ndjek një model të parashikueshëm.
 - Animacionet duken të bashkuara.
 
-### Efektivitet (Efficiency)
+### Efektivitet (Efficiency) {#efficiency}
 
 Në vend që të bëni vendime dizajni për faqe por faqe, ju:
 
@@ -39,7 +39,7 @@ Në vend që të bëni vendime dizajni për faqe por faqe, ju:
 - I aplikoni ato gjith në vende.
 - Ju përditësoni globalisht duke ndryshuar një vlerë të vetme.
 
-### Fleksibilitet (Flexibility)
+### Fleksibilitet (Flexibility) {#flexibility}
 
 Ju mund të:
 
@@ -47,9 +47,9 @@ Ju mund të:
 - Eksperoni me estetikë të ndryshme.
 - Mbani konsistencën e markës ndërsa ju zhvilloheni.
 
-## Aktivizimi i Aftësisë së Estetikës së Sistemit Dizajni
+## Aktivizimi i Aftësisë së Estetikës së Sistemit Dizajni {#triggering-the-design-system-aesthetics-skill}
 
-### Aktivizim Manual
+### Aktivizim Manual {#manual-activation}
 
 Ju mund të nisni aftësinë në çdo kohë:
 
@@ -69,7 +69,7 @@ ose
 "Më udhëho në vendimet e sistemit dizajni"
 ```
 
-### Sugjerimet Automatique (Automatic Suggestions)
+### Sugjerimet Automatique (Automatic Suggestions) {#automatic-suggestions}
 
 Agjentët mund të sugjerojnë përdorimin e aftësisë kur ju:
 
@@ -78,9 +78,9 @@ Agjentët mund të sugjerojnë përdorimin e aftësisë kur ju:
 - Dëshironi të përmirësoni konsistencën vizuale.
 - Jeni duke përgatitur për lëshimin e faqes suaj.
 
-## Procesi Estetika i Dizajni Sistemi
+## Procesi Estetika i Dizajni Sistemi {#the-design-system-aesthetics-process}
 
-### Hapi 1: Tipografia
+### Hapi 1: Tipografia {#step-1-typography}
 
 Agjenti pyet për zgjedhjet e fontit tuaj:
 
@@ -110,7 +110,7 @@ Marrëpas tymi, agjenti përcakton:
 - **Skala e peshës (Weight scale)**: Pesha e fontit (regular, medium, bold, etj.).
 - **Shkikës e vijave (Line height)**: Hapësira midis rreshtave për lexueshmëri.
 
-### Hapi 2: Paleta e Ngjyrave
+### Hapi 2: Paleta e Ngjyrave {#step-2-color-palette}
 
 ```
 Le të përcaktojmë paletën tuaj të ngjyrave.
@@ -140,7 +140,7 @@ Agjenti krijon një paletë të plotë duke përfshirë:
 - Ngjyrat semantike (sukcesi, paralajmërimi, gabimi).
 - Stative për hover dhe aktivitet (hover and active states).
 
-### Hapi 3: Hapësira (Spacing)
+### Hapi 3: Hapësira (Spacing) {#step-3-spacing}
 
 Sa sa ne hapësirë frymëmarrje dëshiron?
 
@@ -160,7 +160,7 @@ Agjenti përcakton tokenet e ndarjes (spacing tokens):
 - Skala: xs, sm, md, lg, xl, 2xl
 - Vlera specifike për padding, margin, gap
 
-### Hapi 4: Brirrat dhe Hapi (Borders and Shadows)
+### Hapi 4: Brirrat dhe Hapi (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Thellësia vizuale dhe definimi:
@@ -183,7 +183,7 @@ Agjenti krijon:
 - Tokenet e hapit për nivelet e lartësisë (elevation levels)
 - Tokenet e gjerësisë së brirës (Border width tokens)
 
-### Hapi 5: Lëvizja dhe Animacioni (Motion and Animation)
+### Hapi 5: Lëvizja dhe Animacioni (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Si duhet të ndihet faqja juaj kur është interaktive?
@@ -205,9 +205,9 @@ Agjenti përcakton:
 - Funksionet e ndryshimit (ease-in, ease-out, ease-in-out)
 - Keyframes animacioni për interaksione të zakonshme
 
-## Aplikimi i Estetikës së Sistemit Dizajni (Applying Design System Aesthetics)
+## Aplikimi i Estetikës së Sistemit Dizajni (Applying Design System Aesthetics) {#applying-design-system-aesthetics}
 
-### Aplikim Automatike (Automatic Application)
+### Aplikim Automatike (Automatic Application) {#automatic-application}
 
 Pas përfundimit të aftësisë, agjenti:
 
@@ -216,13 +216,13 @@ Pas përfundimit të aftësisë, agjenti:
 3. Rregjigjen stilizimeve të blokuve (block styles) për të përshtitur me sistemin e ri
 4. Aktivizon temën e përditësuar
 
-### Aplikim Manual (Manual Application)
+### Aplikim Manual (Manual Application) {#manual-application}
 
 Ju mund ta redaktoni drejtpërdrejt `theme.json`:
 
-## Përdorimi i Sistemit të Dizajnit Tuaj
+## Përdorimi i Sistemit të Dizajnit Tuaj {#viewing-your-design-system}
 
-### Pyet Agentit
+### Pyet Agentit {#ask-the-agent}
 
 ```
 "Më shfaq sistemin e dizajnit tim"
@@ -236,13 +236,13 @@ ose
 
 Agenti do t'ju tregoj tipografinë, ngjyrat, hapësirat dhe tokenet e tjera.
 
-### Shikoni theme.json
+### Shikoni theme.json {#view-themejson}
 
 Hapni `/wp-content/themes/[theme-name]/theme.json` në një redaktor tekst për të parë definicionet bazë të tokenëve.
 
-## Përditësimi i Sistemit të Dizajnit Tuaj
+## Përditësimi i Sistemit të Dizajnit Tuaj {#updating-your-design-system}
 
-### Përditësime të Shpejta
+### Përditësime të Shpejta {#quick-updates}
 
 Kërkoni nga agenti ndryshime specifike:
 
@@ -262,7 +262,7 @@ ose
 "Ndrysho fontin e titujve në një serif"
 ```
 
-### Redizajn i Plotë
+### Redizajn i Plotë {#full-redesign}
 
 Rishkoni aftësinë (skill) të Estetikës së Sistemit të Dizajnit:
 
@@ -272,7 +272,7 @@ Rishkoni aftësinë (skill) të Estetikës së Sistemit të Dizajnit:
 
 Kjo do t'ju udhëzoj përsëri në të gjitha vendimet, duke filluar me vlerat tuaja aktuale.
 
-### Përditësime Parçësore
+### Përditësime Parçësore {#partial-updates}
 
 Përditësoni aspekte specifike:
 
@@ -280,15 +280,15 @@ Përditësoni aspekte specifike:
 "Vetëm përditëso paletën e ngjyrave, mbaj gjithçka tjetër si është"
 ```
 
-## Praktikat më të Mira të Sistemit të Dizajnit
+## Praktikat më të Mira të Sistemit të Dizajnit {#design-system-best-practices}
 
-### Konsistenca
+### Konsistenca {#consistency-1}
 
 - Përdorni të njëjtat tokenë kudo.
 - Mos krijoni ngjyra ose madhësi të veçanta.
 - Referoni tokenet në vend që t'i kodoni vlerat drejtpërdrejt.
 
-### Emërtimi
+### Emërtimi {#naming}
 
 Përdorni emra të qartë dhe semantike:
 
@@ -298,7 +298,7 @@ Përdorni emra të qartë dhe semantike:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalueshmëria
+### Skalueshmëria {#scalability}
 
 Dokumentoni sistemin e dizajnit:
 
@@ -306,9 +306,9 @@ Dokumentoni sistemin e dizajnit:
 - Kur të pëdohet çdo token
 - Përjashtime dhe raste të kufizuara
 
-## Mode të zakonshme të Dizajnit të Sistemit
+## Mode të zakonshme të Dizajnit të Sistemit {#documentation}
 
-### Modern Minimalist
+### Modern Minimalist {#common-design-system-patterns}
 
 - Tipografi sans-serif (Inter, Helvetica)
 - Paletë ngjashme me 2-3 ngjyra
@@ -316,7 +316,7 @@ Dokumentoni sistemin e dizajnit:
 - Hapi i lehtë
 - Animacione të buta dhe të shpejta
 
-### Ngrohtë dhe Miqësor
+### Ngrohtë dhe Miqësor {#modern-minimalist}
 
 - Përzierje midis serif dhe sans-serif
 - Paletë ngjashme me ngjyra të ngrohta (portokalli, gri të ngrohtë)
@@ -324,7 +324,7 @@ Dokumentoni sistemin e dizajnit:
 - Hapi i lehtë
 - Animacione luapti
 
-### Korporativ Profesional
+### Korporativ Profesional {#warm-and-friendly}
 
 - Sans-serif i pastër (Roboto, Open Sans)
 - Paletë neutrale me një ngjyrë aksentore
@@ -332,7 +332,7 @@ Dokumentoni sistemin e dizajnit:
 - Hapi minimal
 - Transicionet të buta
 
-### Kreativ dhe i Fortë
+### Kreativ dhe i Fortë {#professional-corporate}
 
 - Tipografi e veçantë
 - Paletë ngjashme me ngjyra të fortë
@@ -340,7 +340,7 @@ Dokumentoni sistemin e dizajnit:
 - Hapi i fortë
 - Animacione të dukshme
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#creative-and-bold}
 
 **Ndryshimet e sistemit tim të dizajnit nuk po shfaqen**
 - Fshij cache-in e browserit
@@ -358,7 +358,7 @@ Dokumentoni sistemin e dizajnit:
 - Redigoni manual theme.json me vlerat e mëparshme
 - Rilanzoni aftësinë me zgjedhje të ndryshme
 
-## Hapat Të Ardhshëm
+## Hapat Të Ardhshëm {#troubleshooting}
 
 Pas përcaktimit të sistemit tuaj të dizajnit:
 

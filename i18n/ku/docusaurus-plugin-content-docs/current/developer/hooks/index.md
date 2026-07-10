@@ -1,0 +1,194 @@
+---
+title: Referansa Hookan
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referansa Hookan {#hooks-reference}
+
+Belgekirina xweber ji bo hemû **59 çalakiyan** û **118 fîlteran** di Ultimate Multisite de.
+
+## Çalakî {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Berî beralîkirina piştrastkirinê dixebite.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Rast berî ku cookie ya piştrastkirinê were danîn dixebite.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Rast berî ku cookie ya piştrastkirina têketî were danîn dixebite.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Destûrê dide pêşdebirên ku entegrasyonên dabînkerên hostê yên xwe bi rêya wp pêvekan lê zêde bikin.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Dema hemû girêdan hatin barkirin tê xebitandin
+- [wu_activation](./Actions/wu_activation) — Destûrê dide beşên din ên pêvekê ku rûtînên xwe yên çalakkirinê pê ve girêdin
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Destûrê dide pêşdebirên pêvekê ku piştî ku bikarhênerek an super admin qalibê malperê biguhezîne, fonksiyonan girêdin
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Di hin rewşan de, em ê hewce bibin hêzek zêde bar bikin da ku çalakiyan bi rê ve bibin.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Berî pêvajoya daxwaza lêgerînê dixebite.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Destûrê dide pêşdebirên ku guhartinên din li objeya pêvajoya kirînê bikin.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Destûrê dide pêşdebirên ku guhartinên din li objeya pêvajoya kirînê bikin.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Berî ku qadek li forma pêvajoya kirînê were zêdekirin dixebite.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Destûrê dide pêşdebirên ku hookên zêde bixebitînin.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Berî ku em pêvajoya kirînê bi rê ve bibin.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Piştî ku fermana pêvajoya kirînê bi tevahî tê amadekirin dixebite.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Destûrê dide pêşdebirên pêvekê ku widgetan li Panela Dashboard a Torê zêde bikin.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Destûrê dide pêşdebirên pêvekê ku widgetan li Panela Dashboard a Torê zêde bikin.
+- [wu_deactivation](./Actions/wu_deactivation) — Destûrê dide beşên din ên pêvekê ku rûtînên xwe yên neçalakkirinê pê ve girêdin
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Destûrê dide pêşdebirên pêvekê ku çalakiyan li pêvajoya jêbirinê zêde bikin
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Dema domainek dibe domaina sereke ya malperekê dixebite.
+- [wu_domain_created](./Actions/wu_domain_created) — Dema nexşandineke domaina nû tê zêdekirin tê xebitandin.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Piştî ku Nexşandina Domainê ya bingehîn a me hatiye barkirin dixebite
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Hin pêvek dê URLê berî ku nexşandin çalak bibe tomar bikin an jî URLan bi awayekî cuda ava bikin ku tê de nehatibe cih kirin o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Destûrê dide pêşdebirên ku piştî ducarîkirina malperê hook bikin.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Destûrê dide pêşdebirên pêvekê ku hookên zêde lê zêde bikin
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook ji bo paqijkirina zêde
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Berî rêvebirina daxwaza modala zêdekirina domaina nû dixebite.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Destûrê dide pêşdebirên pêvekê ku heke pêwîst be daneên meta bi awayên cuda tomar bikin.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Destûrê dide pêşdebirên pêvekê ku heke pêwîst be daneên meta yên bikarhêner bi awayên cuda tomar bikin.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Dema tokenekî magic link ê nederbasdar tê dîtin dixebite.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Piştî ku bikarhênerek bi magic link têkeve dixebite.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Destûrê dide pêşdebirên pêvekê ku dema mişterî tê zêdekirin tiştên zêde bikin.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Piştî ku şiyanên MCP ji bo hebûnekê hatin tomar kirin dixebite.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Piştî ku adaptera MCP tê destpêkirin dixebite.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Piştî ku endamtiyê tê betalkirin tê xebitandin.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Piştî nûkirina endamtiyê tê xebitandin.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Berî ku endamtiyê were betalkirin tê xebitandin.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Berî nûkirina endamtiyê tê xebitandin.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Piştî ku objeyek di databaseê de tê hilanîn dixebite.
+- [wu_page_added](./Actions/wu_page_added) — Destûrê dide pêşdebirên pêvekê ku dema rûpel têne tomar kirin tiştên zêde bixebitînin.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Destûrê dide pêşdebirên pêvekê ku piştî ku em rûpelê çap dikin naveroka zêde lê zêde bikin
+- [wu_page_before_render](./Actions/wu_page_before_render) — Destûrê dide pêşdebirên pêvekê ku berî ku em rûpelê çap dikin naveroka zêde lê zêde bikin.
+- [wu_page_load](./Actions/wu_page_load) — Destûrê dide pêşdebirên pêvekê ku hookên zêde li rûpelên me lê zêde bikin.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Destûrê dide pêşdebirên pêvekê ku piştî ku em rûpelê çap dikin naveroka zêde lê zêde bikin
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Destûrê dide pêşdebirên pêvekê ku berî ku em rûpelê çap dikin naveroka zêde lê zêde bikin.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Destûrê dide pêşdebirên pêvekê ku hookên zêde li rûpelên me lê zêde bikin.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Piştî ku widget ji bo vê rûpelê hatin tomar kirin dixebite.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Tê xebitandin da ku addons bikarin modulên şiyanê bi yekbûnên xwe ve girê bidin.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Tê xebitandin da ku yekbûn bikarin xwe tomar bikin.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Destûrê dide ku riyên zêde bên tomarkirin.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Destûrê dide pêşdebirên plugin ku çalakiyan li pêvajoya tomarkirinê zêde bikin
+- [wu_site_created](./Actions/wu_site_created) — Piştî ku malperek cara yekem tê afirandin tê xebitandin.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Destûrê dide pêşdebirên plugin ku heke pêwîst be hooksên zêde zêde bikin.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Dema ku di çarçoveya pêşdîtina şablonê de ye dixebite.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Hooka enqueue scriptsê dest pê dike.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Piştî ku tiştek di databaseê de tê tomarkirin tê xebitandin.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Piştî ku tiştek di databaseê de tê tomarkirin tê xebitandin.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Piştî ku tiştek di databaseê de tê tomarkirin tê xebitandin.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Destûrê dide pêşdebirên plugin ku çalakiyan li pêvajoya vekirinê zêde bikin.
+
+## Parzûnlar {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Dirêjahiya dema qedandina cookie ya piştrastkirinê filter dike.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Şemaya redirect a piştrastkirinê filter dike.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ji bo ewlehiyê, WP Filter ya resen li vir dubare dike.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Destûrê dide pêşdebirên plugin ku URL ya di previewer de tê bikaranîn filter bikin
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filter dike ka auth cookie tenê divê bi HTTPS were şandin an na.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filter dike ka redirecteke ewle ya piştrastkirinê were bikaranîn an na.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filter dike ka cookie ya têketî tenê divê bi HTTPS were şandin an na.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Destûrê dide ku pêşî li şandina rastîn a auth cookies ji client re were girtin.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — URL ya redirect saz bike.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Gavên zêde bi rêya filters lê zêde bike
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Destûrê dide pêşdebirên plugin ku variable ya zêde bi awayekî giştî li render contextê zêde bikin.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Destûrê dide pêşdebirên ku vê kontrolê kurt bikin.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Fieldên modalê ya lêzêdekirina domaina nû filter dike.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Destûrê dide pêşdebirên ku guhertinan li line item a heqê setup bikin.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Destûrê dide pêşdebirên ku admin notices yên ji aliyê Ultimate Multisite ve hatine zêdekirin filter bikin.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Piştî guhertinê filter dike.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Niha em bi hemû cureyan re kar dikin.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Destûrê dide pêşdebirên plugin ku sînordariyan kurt bikin.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filter dike ka heqê signup were sepandin an na.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Argumentên api yên resen filter dike.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Destûrê dide pêşdebirên plugin ku fieldên navnîşana billing filter bikin.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Destûrê dide pêşdebirên ku output derbas bikin û yeke nû saz bikin
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Destûrê dide pêşdebirên ku koda unset current user derbas bikin.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Tevahiya "recurring amount" filter dike.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Tevahiya "initial amount" filter dike.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Tevahiya "initial amount" filter dike.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Destûrê dide pêşdebirên plugin ku bi nirxa krediyê re destwerdan bikin.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Domainên bingehîn ên checkout-form yên parvekirî filter dike ku divê nebin tomarên mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIyên me ji bo zêdekirina şablonên field yên nû li vir têne girêdan.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIyên me ji bo zêdekirina cureyên field yên nû li vir têne girêdan.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Peyamên xeletiyê filter bike.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Destûrê dide pêşdebirên ku kontrolê derbas bikin heke fieldek auto-submittable be.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Destûrê dide pêşdebirên plugin ku di validatorê formê de aliasên xweser zêde bikin.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Destûrê dide pêşdebirên plugin ku qaîdeyên validationê filter bikin.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Paramên nexwestî unset dike.
+- [wu_contains_element](./Filters/wu_contains_element) — Destûrê dide pêşdebirên ku encamên lêgerîna destpêkê biguherînin.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Destûrê dide peydakerên host ku constant bi awayekî cuda saz bikin.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Navê xweş ê dabeşên rêveberî yên welêt vedigerîne.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Lîsteya bajaran ji bo stateek di welatekî de vedigerîne.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Lîsteya stateyan ji bo vî welatî vedigerîne.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Destûrê dide pêşdebirên ku tevgera standard biguherînin û customerê niha bi awayekî cuda saz bikin.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Destûrê dide pêşdebirên ku tevgera standard biguherînin û membershipa niha bi awayekî cuda saz bikin.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Destûrê dide pêşdebirên ku tevgera standard biguherînin û site a niha bi awayekî cuda saz bikin.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Destûrê dide pêşdebirên ku parameterên URL ya birêvebirina site biguherînin.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Destûrê dide pêşdebirên plugin ku girêdanan filter bikin.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Destûrê dide pêşdebirên plugin ku kontrolên nû zêde bikin da ku encaman diyar bikin.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Dibe ku paşê pêwîst be blokên zêde lê zêde bikin.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Parzûna giştî zêde dike da ku pêşdebir karibin vê parserê fireh bikin û bi builder an pêvekên zêde re bixebitin.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Parzûn bike ka divê qaîdeyên zêde yên şîfreyê bên ferzkirin an na.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Navê bikarhênerê mişterî yê hatî çêkirin parzûn bike.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Destûr dide pêşdebirên pêvekê ku amadekiriyên berê yên rûpela dayînê parzûn bikin.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Destûr dide pêşdebirên ku slugên forma nû zêde bikin da ku ev tevger were derbaskirin.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Destûr dide pêşdebir û pêvekên zêde ku gavên koçberiyê yên nû zêde bikin
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Li jêr, li ser heman rêbazê, zêdetir li ser vê parzûnê bibîne.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Destûr dide pêşdebirên ku hilbijêrin kîjan cureyên nivîsê bêne nîşandan.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Rêzan vedigerîne, dikare bê parzûnkirin
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Destûr dide pêşdebirên ku cotên domain/path biguherînin.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Beşên wizardê ji bo sazkarina yekgirtina hostingê parzûn dike.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Zeviyên li ser formekê parzûn dike. Form bi ID-ya di navê parzûnê de tê nasîn.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Cureyên berhemê ku xwedî çerxên hesabkirina serbixwe ne parzûn bike.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Destûr dide pêşdebirên pêvekê ku rewşeke diyarkirî ji bo API bi zorê danîn.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Destûr dide pêşdebirên pêvekê ku ceribandinên zêde ji bo moda pêşvebirinê zêde bikin.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Destûr dide pêşdebirên pêvekê ku rewşeke diyarkirî ji bo adaptekerê MCP bi zorê danîn.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Ji ber sedemên ewlehiyê, em hejmara kiryarên berdest ji bo girêdanê sînordar dikin. Ev parzûn destûr dide pêşdebirên ku fireh bikin
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontrol dike ka cureyekî nivîsê yê diyarkirî li ser vê planê destûr heye an na. Destûr dide pêşdebirên pêvekê ku nirxa vegerê parzûn bikin
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Parzûn bike ka divê piştrastkirina navnîşana IP were ferzkirin an na.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Parzûn bike ka divê piştrastkirina user agent were ferzkirin an na.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — URL-a lînka sêhrî ya hatî çêkirin parzûn bike.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Parzûn bike ka lînkên sêhrî çalak in an na.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — URL-a vegerandinê piştî ku domainek bibe sereke parzûn dike.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Lîsteyeke derxistinê ya parametreyan çêbike ku vegerandina xweber asteng dikin.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Parzûn ji bo sererastkirina biryara tevlêkirina şiyana MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Dîroka bidawîbûnê ya hesabkirî parzûn dike.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Dîroka bidawîbûnê ya hesabkirî ku piştî nûkirinê were danîn parzûn dike.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Destûr dide pêşdebirên ku slugên forma nûkirinê yên nû zêde bikin.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Dirêjahiya herî kêm a şîfreyê parzûn bike.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Hêza herî kêm a şîfreyê ya pêwîst (zxcvbn score) parzûn bike.
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Destûr dide pêşdebirên pêvekê û me bi xwe ku lînkên kiryarê li rûpelên guherandina me zêde bikin
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Parzûn bike ka di şîfreyan de tîpên biçûk pêwîst in an na.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Parzûn bike ka di şîfreyan de hejmar pêwîst in an na.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Parzûn bike ka di şîfreyan de karakterên taybet pêwîst in an na.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Parzûn bike ka di şîfreyan de tîpên mezin pêwîst in an na.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Destûr dide bikarhêner ku peyama derbarê dayînên li bendê de biguherîne.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Cureyên berhemê ku divê wek plan bên hesibandin parzûn bike.
+- [wu_post_count](./Filters/wu_post_count) — Destûr dide pêşdebirên pêvekê ku tevahiya hejmartinê biguherînin
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Destûr dide pêşdebirên pêvekê ku biguherînin kîjan rewşa nivîsê divê were hejmartin. Bi standard, nivîsên weşandî û taybet tên hejmartin
+- [wu_post_default_status](./Filters/wu_post_default_status) — Daneyên heyberê berî ku di danegehê de were tomarkirin parzûn dike.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Destûr dide pêşdebirên ku mîhengan berî tomarkirina ji aliyê Ultimate Multisite ve parzûn bikin.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Parzûn dike ka destûr heye ku daxwazê bidomîne an na.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Parzûn dike ka destûr heye ku daxwazê bidomîne an na.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Parzûn dike ka destûr heye ku daxwazê bidomîne an na.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Parzûn dike ka destûr heye ku daxwazê bidomîne an na.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Parzûn dike ka destûr heye ku daxwazê bidomîne an na.
+- [wu_return_url](./Filters/wu_return_url) — Destûr dide pêşdebirên ku URL-a vegerê ya dergehê ku piştî pêvajoyên checkout tê bikaranîn biguherînin.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Destûr dide pêşdebirên plugin ku fonksiyonên zêdetir ên modelên lêgerînê lê zêde bikin.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Destûr dide pêşdebirên ku gavên zêdetir ên setup wizard lê zêde bikin.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Parzûn dike ka Ultimate Multisite divê ji bo site-eke nû hatî çêkirin tomarek domain çêbike an na.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Destûr dide pêşdebirên ku veguhastinê kurt bikin û nehêlin ew çêbibe.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Ji bo nivîsandina nû ya handler destûr dide
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Kiryarên komî yên ji bo site-an berdest in parzûn bike.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Parzûn ji bo guhertina nirxa get pluginssites di hundirê torê de.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Şiyana single-sign-on a navbera domain-an çalak/neçalak bike.
+- [wu_sso_url](./Filters/wu_sso_url) — URL-yên SSO yên hatine çêkirin berî ku ji bo kiryarên mişterî yên navbera domain-an bên vegerandin parzûn dike.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Daneyên Subscription ên Stripe parzûn bike. Dikare success_url an cancel_url biguherîne.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Argumanên niyeta dayînê parzûn dike.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ID-ya plan-a ku were kontrolkirin parzûn dike. Heke ev hebe, subscription-a nû dê vê plan-ê bi kar bîne.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ID-ya product-a ku were kontrolkirin parzûn dike. Heke ev hebe, subscription-a nû dê vê product-ê bi kar bîne.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Nirxa idempotency_key ya bi vebijêrkên barkirina Stripe re tê şandin parzûn dike.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Tomara endamtiyê ya bi vê webhook-ê ve girêdayî ye parzûn dike.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Meta ya daneyê berî ku serialize bibe û di database de were hilanîn parzûn dike.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Daneyên objeyê berî ku di database de were hilanîn parzûn dike.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Destûr dide pêşdebirên ku URL-a upgrade to unlock biguherînin
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Diyarkirin ka mapping divê were bikaranîn an na
+- [wu_username_from_email](./Filters/wu_username_from_email) — Navê bikarhêner ê mişteriyê yê nû parzûn bike.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Destûr dide pêşdebirên ku peyama derbarê sînorê bikarhênerên endamtiyê biguherînin
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Destûr dide pêşdebirên ku peldankên zêdetir li lîsteya cihguhêzbar zêde bikin.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Parzûn dike kîjan sub_commands ji bo vê yekeyê çalak in.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Em sê şêwazan kontrol dikin dema ku hewl didin fêm bikin li ku derê em dikarin sabitên xwe têxin:

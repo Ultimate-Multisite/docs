@@ -1,46 +1,46 @@
 ---
-title: የበይበጅ ክፍያዎችን ማዘጋጀት
+title: የእጅ ክፍያዎችን ማዋቀር
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# በእጅ የሚደረጉ ክፍያዎችን ማዘጋጀት (v2)
+# በእጅ የሚደረጉ ክፍያዎችን ማዋቀር (v2) {#setting-up-manual-payments-v2}
 
-_**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+_**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 
-የእጅ ክፍያዎች (Manual payments) ማለት ተጠቃሚዎችዎ የ **Stripe** ወይም **PayPal** አገልግሎት ባይጠቀሙበት ጊዜ፣ ሌላ የክፍያ ዘዴ ሊያቀርቡበት የሚረዳ መንገድ ነው። ይህ የባንክ ዝውውር (wire transfer)፣ የባንክ ክፍያ ወይም ተጠቃሚዎችዎ በአካባቢያቸው ሊጠቀሙበት የሚችሉ ሌላ ማንኛውም የክፍያ ዘዴ ሊሆን ይችላል።
+**Stripe** ወይም **PayPal** ለተጠቃሚዎችዎ የማይገኝ ከሆነ፣ በእጅ የሚደረጉ ክፍያዎች ሌሎች የክፍያ ዘዴዎችን ለማቅረብ የሚያስችሉዎት መንገድ ናቸው። የገንዘብ ወይም የባንክ ማስተላለፍ፣ ወይም በአካባቢያቸው ለተጠቃሚዎችዎ የሚገኝ ማንኛውም ሌላ የክፍያ ዘዴ ሊሆን ይችላል።
 
-## በእጅ ክፍያዎችን እንዴት ማብራት ይቻላል
+## በእጅ የሚደረጉ ክፍያዎችን እንዴት ማንቃት እንደሚቻል {#how-to-enable-manual-payments}
 
-የእጅ ክፍያዎችን ማዘጋጀት በጣም ቀላል ነው። በክፍያ መግቢያዎች (payment gateways) ውስጥ በመግባት 'Manual' የሚለውን አማራጭ በማብራት እና ተጠቃሚው ክፍያውን እንዴት መላክ እንዳለበት ዝርዝር መመሪያዎችን በመስጠት ብቻ ነው።
+በእጅ የሚደረግ ክፍያን ማዋቀር በጣም ቀላል ነው። በክፍያ መግቢያዎች ስር ማንቃት እና ተጠቃሚው ክፍያውን እንዴት መላክ እንዳለበት ዝርዝር መመሪያዎችን ማስገባት ብቻ ያስፈልግዎታል።
 
-በመጀመሪያ፣ ወደ **Ultimate Multisite > Settings > Payments** ይሂዱ። ከ **Payment Gateways** ስር፣ **Manual** የሚለውን አማራጭ ያብሩ (toggle on)። ከዚያም **Payment Instructions** የሚል ሳጥን ይታያል።
+መጀመሪያ፣ ወደ **Ultimate Multisite > Settings > Payments** ይሂዱ። ከ **Payment Gateways** በታች፣ **Manual**ን ያብሩ። ለእርስዎ **Payment Instructions** ሳጥን እንደሚታይ ያያሉ።
 
-በዚህ ሳጥን ውስጥ ደንበኛው ክፍያውን እንዲፈጽም የሚያስፈልገውን መረጃ ይጨምሩ። ለምሳሌ፣ የባንክ አካውንት ዝርዝሮችዎ እና ደንበኛው የክፍያ ማረጋገጫ እንዲልኩልዎት የኢሜል አድራሻዎ ሊሆን ይችላል።
+ደንበኛዎ ክፍያውን ለመፈጸም የሚያስፈልገውን መረጃ ወደዚህ ሳጥን ያክሉ። ለምሳሌ፣ ደንበኛው የክፍያ ማረጋገጫውን እንዲልክልዎ የባንክ መለያ ዝርዝሮችዎን እና ኢሜይልዎን ሊሆን ይችላል።
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Payment Instructions የጽሑፍ ቦታ ያለው በእጅ የክፍያ መግቢያ ማብሪያ](/img/config/manual-gateway-expanded.png)
 
-ይህ የክፍያ መግቢያዎች (manual gateway) ቅንብሮች ገጽ ነው፦
+የበእጅ መግቢያ ቅንብሮች በይነገጽ ይህ ነው፦
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![በእጅ መግቢያ ቅንብሮች](/img/config/manual-gateway-settings.png)
 
-ከማዘጋጀ በኋላ፣ በ **Save Settings** ላይ በመጫን ተከናውኗል። ተጠቃሚዎች ወደ ኔትወርክዎ ሲመዘገቡ፣ ግዢውን ለማጠናቀቅ መመሪያዎችን እንደሚቀበሉ የሚያሳውቃቸው መልዕክት ያያሉ።
+ካዋቀሩት በኋላ፣ በቀላሉ **Save Settings** ላይ ጠቅ ያድርጉ እና ይጠናቀቃል። ተጠቃሚዎች ወደ ኔትወርክዎ ሲመዘገቡ፣ ግዢውን ለማጠናቀቅ መመሪያዎችዎን እንደሚቀበሉ የሚነግራቸውን መልዕክት ያያሉ።
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![ተጠቃሚው የክፍያ መመሪያዎችን እንደሚቀበል የሚነግር የምዝገባ ማረጋገጫ መልዕክት](/img/frontend/registration-manual-notice.png)
 
-እንዲሁም፣ በ **Thank You** ገጽዎ ላይ የክፍያ መመሪያዎችዎ የሚታዩበት መልዕክት ይቀበላሉ።
+እንዲሁም በ **Thank You** ገጽዎ ላይ ከክፍያ መመሪያዎችዎ ጋር መልዕክት ይቀበላሉ።
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## በእጅ ክፍያዎችን ማረጋገጥ
+## በእጅ የሚደረጉ ክፍያዎችን ማረጋገጥ {#confirming-manual-payments}
 
-የእጅ ክፍያዎችን ለማረጋገጥ፣ በግራ በኩል ባለው **Payments** ሜኑ ላይ ይሂዱ። እዚያ በኔትወርክዎ ላይ ያሉትን ሁሉንም ክፍያዎች እና ዝርዝራቸውን፣ የ**ሁኔታ (status)** ምንነትን ጨምሮ፣ ማየት ይችላሉ። በእጅ የሚደረግ ክፍያ እርስዎ በበይይት ባይቀይሩት ሁልጊዜ **Pending** (በመጠባበቅ ላይ) ሁኔታ ይኖረዋል።
+በእጅ የሚደረግ ክፍያን ለማረጋገጥ፣ በግራ አሞሌ ላይ ወዳለው **Payments** ምናሌ ይሂዱ። እዚያ በኔትወርክዎ ላይ ያሉ ሁሉንም ክፍያዎች እና ዝርዝሮቻቸውን፣ **status**ንም ጨምሮ፣ ማየት ይችላሉ። በእጅ የሚደረግ ክፍያ እርስዎ በእጅ እስኪቀይሩት ድረስ ሁልጊዜ **Pending** ሁኔታ ይኖረዋል።
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![በመጠባበቅ ላይ ያለ በእጅ ክፍያን የሚያሳይ የክፍያዎች ዝርዝር](/img/admin/payments-list.png)
 
-በ**reference code** ላይ በመጫን ወደ ክፍያው ዝርዝር ገጽ ይግቡ። በዚህ ገጽ ላይ እንደ ማጣቀሻ መለያ (reference ID)፣ ምርቶች (products)፣ የጊዜ ምልክቶች (timestamps) እና ሌላ ተጨማሪ ዝርዝሮች ሁሉ ይገኛሉ።
+**reference code**ን ጠቅ በማድረግ ወደ ክፍያው ገጽ ይግቡ። በዚህ ገጽ ላይ እንደ ማጣቀሻ ID፣ ምርቶች፣ የጊዜ ማህተሞች እና ሌሎችም ያሉ የበመጠባበቅ ላይ ያለው ክፍያ ሁሉም ዝርዝሮች አሉዎት።
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![የማጣቀሻ ኮድ፣ ምርቶች እና ድምሮችን የሚያሳይ የክፍያ ዝርዝሮች ገጽ](/img/admin/payment-edit.png)
 
-በቀኝ ዓምድ፣ የክፍያውን ሁኔታ መቀየር ይችላሉ። ሁኔታውን ወደ **Completed** በማቀየር እና **Activate Membership** አማራጩን በማብራት፣ የደንበኛዎ ድረ-ገጽ ይከፈታል እና የአባልነታቸው ሁኔታም ይንቀሳቀሳል።
+በቀኝ አምድ ላይ፣ የክፍያውን ሁኔታ መቀየር ይችላሉ። ወደ **Completed** መቀየር እና **Activate Membership** አማራጭን ማብራት የደንበኛዎን ጣቢያ ያነቃል እና አባልነታቸው ንቁ ይሆናል።
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Status ወደ Completed የተቀናበረበት እና Activate Membership ማብሪያ ያለው የክፍያ ማስተካከያ ገጽ](/img/admin/payment-activate-membership.png)

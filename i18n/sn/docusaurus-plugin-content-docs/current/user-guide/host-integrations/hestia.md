@@ -3,28 +3,28 @@ title: Kugadzirwa kweHestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integration neHestia Control Panel
+# Integration neHestia Control Panel {#hestia-control-panel-integration}
 
 Iyi ndiri kuunza iinguva yakawanda yekuti unenge uchigona kuita configuration kweUltimate Multisite Hestia integration. Izvi zvinobva kudzidzisa sei kuti domain dzine mapping mumapuro dzako dzinogadzirwa (mapped domains) dzichigadzirwa nekuti dzichagadzirwa (added) uye dzichakazvinarwa (removed) se Web Domain Aliases muHestia.
 
 - Hestia CLI reference: v-add-web-domain-alias / v-delete-web-domain-alias
 - Official REST API doc: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Izvi Zvinotora
+## Izvi Zvinotora {#what-it-does}
 - Kana domain yakagadzirwa (mapped) muUltimate Multisite, integration inokosha Hestia API kuti itire:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Kana mapping ye domain ikadzidzwa (removed), inotire:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Kuti unenge uita/kudzidzwa alias ya `www.` kana kuti usina, izvi zvinobva kudzidzisa zvinhu zvakakosha mumapuro ekugadzirisa (Domain Mapping settings) pane "Auto-create www subdomain" yako.
 
-## Zvinhu Zvinoregererwa
+## Zvinhu Zvinoregererwa {#prerequisites}
 - Domain Web dzine Hestia yakagara iyi uye inogadzirisa WordPress yako. Integration inozvaka aliases kune domain iyi.
 - API access ya Hestia inenge yakagadzirwa. Unogona kuita authentication nekubata (password) kana nehash/token ya API.
 
 Ongore Hestia REST API docs kuti uita API access uye zvinotora dziri sei:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Configuration (Wizard → Integrations → Hestia)
+## Configuration (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Tsvaka izvi zvinhu:
 
 - `WU_HESTIA_API_URL` (chii)
@@ -42,16 +42,16 @@ Tsvaka izvi zvinhu:
 
 Unogona kunge kuita kuti wizard inenge inyira constants iyi mu `wp-config.php`, kana kuwedzera zvakanaka.
 
-## Kuti Unzire Setup
+## Kuti Unzire Setup {#verifying-setup}
 - Mu step ya “Testing” ye wizard, plugin inosimbisa `v-list-web-domains <WU_HESTIA_ACCOUNT> json` kupi API. Response ya success inokumbira kuti connectivity uye authentication dzakazotora zvakanaka.
 - Panguva unowanikira domain, chii muHestia: Web > base domain > Aliases. Unogona kuona alias yakashandiswa.
 
-## Zvinangwa neTips
+## Zvinangwa neTips {#notes--tips}
 - Kuona kuti `WU_HESTIA_WEB_DOMAIN` inenge yakaita nekuti inogara uye inogarawe ne `WU_HESTIA_ACCOUNT`.
 - Kana SSL inoda, ndonga certificates muHestia. Integration iyi inosimbisa aliases chete nguva iyi.
 - Plugin inogona kuwedzera/kudza `www.<domain>` kana kuti kudza zvakare nekuti unenge uri munzira yakaita "www subdomain" ya Domain Mapping yako.
 
-## Example API Call (cURL)
+## Example API Call (cURL) {#example-api-call-curl}
 Panguva iwe, iye ndiri example inosimbisa (adjust kune environment yako). Rurimi rine official doc kuti parameters dzakakosha.
 
 ```sh

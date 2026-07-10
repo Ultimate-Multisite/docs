@@ -3,11 +3,11 @@ title: Kontakt obrasci za web stranice
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontakt obrasca za web stranicu
+# Kontakt obrasca za web stranicu {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 dodaje mogućnost kreiranja kontakt formulara direktno iz chat sučelja pomoću Site Builder agenta. To vam omogućuje da dodate potpuno funkcionalne kontakt forme na bilo koju stranicu bez napuštanja chata.
 
-## Pregled
+## Pregled {#overview}
 
 Mogućnost kreiranja kontakt formulara putem Site Buildera (`create_contact_form`) automatski prepoznaje vaš instalirani plugin za forme i kreira kontakt formular koriste nativne mogućnosti tog plugin-a. Podržani form pluginovi uključuju:
 
@@ -18,7 +18,7 @@ Mogućnost kreiranja kontakt formulara putem Site Buildera (`create_contact_form
 
 Asistent će automatski odabrati najbolji dostupni form plugin na vašem sajtu i generirati kontakt formular prilagođen tom pluginu.
 
-## Kreiranje kontakt formulara
+## Kreiranje kontakt formulara {#creating-a-contact-form}
 
 Da biste kreirali kontakt formular koristeći Site Builder:
 
@@ -34,7 +34,7 @@ Da biste kreirali kontakt formular koristeći Site Builder:
 
 4. Site Builder će generirati kontakt formular i vratiti shortcode spremni za ugradnju.
 
-## Korištenje generiranog shortcodea
+## Korištenje generiranog shortcodea {#using-the-generated-shortcode}
 
 Nakon što Site Builder kreira kontakt formular, on vraća shortcode (na primjer, `[contact-form-7 id="123"]`). Možete:
 
@@ -45,11 +45,11 @@ Nakon što Site Builder kreira kontakt formular, on vraća shortcode (na primjer
 
 3. **Koristite ga šablona** — Ako ste sgodni na PHP-u, možete dodati shortcode u datoteku tematskog šablona.
 
-## Prilagođavanje kontakt forme
+## Prilagođavanje kontakt forme {#customizing-the-contact-form}
 
 Nakon što Site Builder napravi kontakt formu, možete je dalje prilagoditi:
 
-### Kroz chat sučelje
+### Kroz chat sučelje {#via-the-chat-interface}
 
 Pitajte Site Builder da izmijeni formu:
 
@@ -57,7 +57,7 @@ Pitajte Site Builder da izmijeni formu:
 
 Site Builder će ažurirati formu i vratiti ažurirani shortcode.
 
-### Kroz admin sučelje dodatka za formu (Form Plugin)
+### Kroz admin sučelje dodatka za formu (Form Plugin) {#via-the-form-plugins-admin-interface}
 
 Možete prilagoditi formu direktno u postavkama vašeg dodatka za formu:
 
@@ -65,7 +65,7 @@ Možete prilagoditi formu direktno u postavkama vašeg dodatka za formu:
 2. Pronađite formu koju je napravio Site Builder.
 3. Uredite polja forme, pravila validacije i e-mail obavijesti kako god je potrebno.
 
-## Dodaci za forme i kompatibilnost
+## Dodaci za forme i kompatibilnost {#form-plugins-and-compatibility}
 
 Site Builder automatski prepoznaje koji dodatak za formu je instaliran na vašem sajtu i koristi ga za kreiranje kontakt forme. Ako je instalirano više dodataka za forme, Site Builder im daje prioritet u sljedećem redoslijedu:
 
@@ -76,7 +76,7 @@ Site Builder automatski prepoznaje koji dodatak za formu je instaliran na vašem
 
 Ako nijedan od ovih dodataka nije instaliran, Site Builder će preporučiti da ga instalirate prije kreiranja kontakt forme.
 
-## E-mail obavijesti
+## E-mail obavijesti {#email-notifications}
 
 Kontakt forme koje je napravio Site Builder su po defaultu konfigurirane za slanje e-mail obavijesti administratori sajta. Možete prilagoditi e-mail adresu primaoca i poruku obavijesti:
 
@@ -91,21 +91,21 @@ Za detaljna uputstva, pogledajte dokumentaciju vašeg dodatka za formu:
 - [Obavijesti putem e-maila za Fluent Forms](https://fluentforms.com/docs/)
 - [Obavijesti putem e-maila za Gravity Forms](https://docs.gravityforms.com/)
 
-## Primjeri upotrebe
+## Primjeri upotrebe {#example-use-cases}
 
-### Jednostavni kontakt formular
+### Jednostavni kontakt formular {#simple-contact-form}
 
 > "Kreirajte jednostavan kontakt formular s poljima za ime, e-mail i poruku."
 
-### Form s više koraka
+### Form s više koraka {#multi-step-form}
 
 > "Kreirajte kontakt formular s prvim korakom za informacije o kontaktu i drugim korakom za poruku i preferirani način kontakta."
 
-### Form s uslovnom logikom
+### Form s uslovnom logikom {#form-with-conditional-logic}
 
 > "Kreirajte kontakt formular koji prikazuje različita polja ovisno o izboru korisnika u padajućem meniju."
 
-### Form s uploadom datoteka
+### Form s uploadom datoteka {#form-with-file-upload}
 
 > "Kreirajte kontakt formular koji omogućuje korisnicima da otporuče datoteku ili prilog."
 

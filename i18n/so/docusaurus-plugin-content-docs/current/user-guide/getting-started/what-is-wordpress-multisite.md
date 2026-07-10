@@ -3,7 +3,7 @@ title: Waa maxay WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Maxafka Multisite waa maxay?
+# Maxafka Multisite waa maxay? {#what-is-wordpress-multisite}
 
 WordPress-ka aasaasiga ah, waxaa jira oo loo yaqaano "Multisite" (Waddan-site), kaas oo ka soo bilaabo sanadkii 2010 markii la bilaabay WordPress 3.0. Inta badan, waxa uu la qaaday hagaajinro badan si loogu daro astaamo cusub iyo si loo xoojiyo amniga.
 
@@ -11,7 +11,7 @@ Si kooban, Multisite-ka WordPress waxaa loo arki kara sida kan: Jaamacadda waxay
 
 ##
 
-## Maxay Tahay Si Gaaban Multisite-ka WordPress?
+## Maxay Tahay Si Gaaban Multisite-ka WordPress? {#what-exactly-is-wordpress-multisite}
 
 Multisite waa astaamaha WordPress ee u oggolaanaya in meel badan oo website lahayd ay wadaagaan installation kaliya oo WordPress ah. Marka aad furto multisite, installation-ka asalka ah ee WordPress waxaa loo beddelayaa si uu taageero waxa caadiga ah loo tixgeliyaa **"shabakad websites" (network of sites)**.
 
@@ -23,7 +23,7 @@ Ficilkan waa faa'iidada ugu weyn ee multisite, sababtoo ah waxay kuu oggolaaneys
 
 ##
 
-## Subdomain mise Subdirectory?
+## Subdomain mise Subdirectory? {#subdomain-or-subdirectory}
 
 Waxaa jira laba hab oo lagu fuliyo Multisite WordPress – waxaadna dooranaysaa mid ka mid ah marka aad ka beddesho installation-ka WordPress-kaaga caadiga ah si uu u noqdo multisite:
 
@@ -49,7 +49,7 @@ Halistaarada ugu weyn ee ku la socda habka subdomain mode waa helitaanka SSL (HT
 
 In kantiina habka subdirectory mode, subsites-ka ku jira shabakadaha ku salaysan subdomain waxaa aragti suuqgeynta (search engines) inay yihiin website-yo kala duwan, taasoo macnaheedu yahay in wax kasta oo ku jiro subsite hal ma saameeyo performance-ka SEO ee subsites kale.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Waxaa jira install-ka WordPress ee hal website ah oo kuu oggolaanaya inaad ku dari karto isticmaalaya (users) aan la xaddidan oo aad siin karto kuwaas doorashooyin isbeddel ah oo u kala duwan (user roles) iyo fursado kala duwan.
 
@@ -63,7 +63,7 @@ Plugins iyo themes-ka waxaa kaliya la soo saari karo ama la ka saari karaa netwo
 
 _Fadlan: sida aad u soo martiiso qofka shabakadahaaga oo aad siinayso mustaqbalka super admin, waxay siisaa isticmaalayaashaada xakamaynta buuxda shabakaddaada. Sida tusaale, kuwa kale ee super admin-ka ayaa lagaa ka saari karin mustaqbalka super admin-kaaga, taasoo si waxtar leh u xiraysa inaad ka fogaato dashboard-ka maamulka shabkaddaada. Si aan u oggolaano macaamiisha Ultimate Multisite inay helaan xakamayn faahfaahsan oo ku saabsan waxa super admin-yada kale ay samayn karaan, waxaan leenahay add-on la yiraahdo Support Agents. Add-onkan wuxuu kuu oggolaanayaa inaad samayso nooc kale oo isticmaalayaal ah – agent – iyadoo la siinayo hakan kuwo uusan helin in ay qabta ay u baahan yihiin inay fuliyaan hawlaha ay shabkadda ka shaqeeyaan._
 
-## Waa maxay waxa wadaagga ah ee subsites-ka iyo waxa aan la wadaagin
+## Waa maxay waxa wadaagga ah ee subsites-ka iyo waxa aan la wadaagin {#what-is-shared-among-subsites-and-what-is-not}
 
 Sida hore ayaanu sheegnay, faa'iidada ugu weyn ee WordPress multisite waa in dhammaan subsites-yadu ay wadaagaan isku midka ah qaabinta (configurations), faylasha muhiimka ah (core files), themes, plugins, faylasha asalka ah ee WordPress, iwm.
 
@@ -75,7 +75,7 @@ Si kastaba ha ahaatee, waxaa jira qaybo si qurux badan loo kala saaray iyadoo la
 
 - Inta badan database tables-ka waxaa loo abuuraa subsite kasta, taasoo macnaheedu yahay in posts, comments, pages, settings, iwm ay si gaar ah u kala saaran yihiin subsite kasta.
 
-## Maamulka isticmaalayaasha WordPress Multisite
+## Maamulka isticmaalayaasha WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Mawduuca aad u daciifka ah ee WordPress multisite waa maamulka isticmaalayaasha (user management). Dashboard-kaistada WordPress (WordPress user table) waa mid ka mid ah kuwa yar ee la wadaaggaa dhammaan subsites.
 
@@ -99,7 +99,7 @@ _Fadlan ogow: Waxaan fahannaa sida ay tani u kugu xun tahay iyadoo ku xiran macm
 
 In kasta ah in kastoo laba-galka isticmaaluhu ay la wadaagaan, dadka ayaa lagu dari karaa ama laga saari karaa subsites-yada oo ay admins-ka subsite-yada ama super admin-ku samayn karaan, sidoo kale waxay leeyihiin doorashooyin isticmaaliye (user roles) kala duwan oo ku jira subsites kala duwan.
 
-## Tixgelinta waxqabadka (Performance considerations)
+## Tixgelinta waxqabadka (Performance considerations) {#performance-considerations}
 
 WordPress multisite waa mid aad u xooggan marka la eego tirada websites-ka ay taageeri karaan. Waxaa lagu hubin karaa arrintan sababtoo ah [WordPress.com](https://WordPress.com), Edublogs, iyo Campuspress waxay dhammaantood yihiin adeegyo ku salaysan multisite, oo ay barnaamij kasta ka qabsado boqolkiyo websites.
 

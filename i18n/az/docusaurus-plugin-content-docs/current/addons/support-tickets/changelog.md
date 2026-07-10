@@ -3,13 +3,13 @@ title: Dəstək Tiketləri Changelog
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Dəstək Tiketləri Yeniləmə Qeydi
+# Dəstək Tiketləri Yeniləmə Qeydi {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Təkmilləşdirildi: `vendor/` qovluğundan Git izləməsindən çıxarıldı (bu artıq `.gitignore` ilə əhatə olunur), bu da repozitoriya ölçüsünü azaldır.
 * Təkmilləşdirildi: WordPress 7.0-a qədər test edildi.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Düzəldildi: Null dəyərləri qəbul etmək üçün boş dəyər qəbul edən tiket modelinin setter funksiyaları.
 * Düzəldildi: Düzgün multisite dəstəyi üçün bütün tiketlər global, şəbətnə yayılmış cədvəllərdə saxlanılır.
 * Düzəldildi: İşçi sahələri gizlədilmiş və müştəri yeni tiket formunda boş səhifəyə yönləndirmə problemi aradan qaldırıldı.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Təkmilləşdirildi: Frontend aktivləri yalnız dəstək tiketi səhifələrində şərti yüklənməsi.
 * Təkmilləşdirildi: Bedrock kök autoloader-ı artıq asılılıqları yükləmişsə, plugin autoloader-ı atlayır.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Əlavə edildi: Admin və frontend üçün tam tiket görüntüleme funksionallığı.
 * Əlavə edildi: Tiket cavab göndərilməsi üçün AJAX handler.
 * Əlavə edildi: Düzgün form idarəetməsi ilə tiket cavabı funksionallığı dəstəklənməsi.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Təkmilləşdirildi: Cavablar və əlavələr üçün düzgün sorğu və sxema siniflərini olan verilənlər bazası strukturu.
 * Təkmilləşdirildi: Tiket modelləri üçün atributlar əvəzinə real xüsusiyyətlərə miqrasiya.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Yeniləndi: Tutarlılıq üçün prefiks `ultimate-multisite` olaraq adlandırıldı.
 * Yeniləndi: Mətn domeninin standartlaşdırılması.
 * Düzəldildi: Kiçik bug düzəlişləri və təkmilləşdirmələr.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * İlkin buraxılış
 * Tam tiket idarəetmə sistemi
 * Çox səviyyəli giriş nəzarəti

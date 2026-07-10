@@ -3,7 +3,7 @@ title: Pielāgojums uz konta lapas
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kā kārtot savam konta lapai pirmo reizi?
+# Kā kārtot savam konta lapai pirmo reizi? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Laiks labienīja Ultimate Multisite!
 

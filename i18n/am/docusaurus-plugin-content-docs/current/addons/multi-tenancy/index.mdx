@@ -1,31 +1,45 @@
 ---
-title: ባለብዙ ተጠቃሚነት
+title: ባለብዙ ተከራይነት
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# ብዙ ተጠቃሚዎችን በአንድ ላይ ማስተናገጃ (Multi-Tenancy)
+# ባለብዙ-ተከራይነት {#multi-tenancy}
 
-የአፈጻጸም እና የደህንነት ደረጃን ለማረጋገጥ ንዑስ ጣቢያዎችን (subsites) በተለያዩ ሰርቨሮች እና ዳታቤዝዎች ላይ መከፋፈል።
+ለአፈጻጸም እና ለደህንነት ንዑስ ጣቢያዎችን በአገልጋዮች እና በውሂብ ጎታዎች ላይ ያሰራጩ
 
-## የሚያስፈልጉ ነገሮች (Requirements)
+## Version 1.2.0 የልቀት ዋና ዋና ነጥቦች {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 ለምርት መነጠል የስራ ፍሰቶች የሉዓላዊ ተከራይ መሠረትን ያክላል፦
+
+- ሁኔታ-አልባ የተከራይ ራስ-ሰር መግቢያ ከአጭር ዕድሜ እና ዳግም-መጫወት-የተጠበቁ SSO ጉብኝቶች ጋር።
+- ለሉዓላዊ ተከራዮች በእያንዳንዱ ንዑስ ጣቢያ የውሂብ ጎታ እና የፋይል ስርዓት መነጠል።
+- ለአስተናጋጅ-አዋቂ የተከራይ ማዘጋጀት የHostinger ባለብዙ-ተከራይነት ችሎታ።
+- ለቆዩ ውሂብ ምርመራዎች እና async ግፊት ማስኬድ የሉዓላዊ ማዛወር ማረጋገጫ በሮች።
+- ለBedrock፣ FrankenPHP እና localhost ጭነቶች የሚዋቀር በተመሳሳይ-ማሽን የውሂብ ጎታ አስተናጋጅ ማሰር።
+- የተከራይ መነሻ ማስጀመር፣ የውሂብ ጎታ ጸሐፊ፣ የschema መነሻ ማስጀመር እና የተጠቃሚ ማዘጋጀት ማሻሻያዎች።
+- የተከራይ ምስክርነቶችን የሚያጸዳ ይበልጥ ደህንነቱ የተጠበቀ ሉዓላዊ ማፍረስ።
+
+ለ[የሉዓላዊ ማዛወር የስራ ፍሰት](/user-guide/getting-started/sovereign-migration-workflow)፣ [የባለብዙ-ተከራይነት መነጠል](/user-guide/configuration/multi-tenancy-isolation) እና [የሉዓላዊ ተከራይ ክወናዎች](/user-guide/administration/sovereign-tenant-operations) የተጠቃሚ መመሪያዎችን ይመልከቱ።
+
+## መስፈርቶች {#requirements}
 
 - WordPress 5.3 ወይም ከዚያ በላይ
 - PHP 7.4 ወይም ከዚያ በላይ
-- Multisite Ultimate plugin (በሥራ ላይ መሆን አለበት)
+- Multisite Ultimate plugin (ንቁ)
 
-## መጫን (Installation)
+## መጫን {#installation}
 
-1. የፕልጊኑን ፋይሎች ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
-2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጊኑን ያንቁ (Activate)።
-3. የፕልጊኑን ቅንብሮች በኔትወርክ አድሚን (network admin) ውስጥ ያዘጋጁ።
+1. የaddon ፋይሎችን ወደ `/wp-content/plugins/` ማውጫዎ ይስቀሉ
+2. በWordPress ውስጥ በ'Plugins' ምናሌ በኩል pluginን ያንቁ
+3. በኔትወርክ አስተዳዳሪ ውስጥ የaddon ቅንብሮችን ያዋቅሩ
 
-## ልማት (Development)
+## ልማት {#development}
 
-### ዝግጅት (Setup)
+### ማዋቀር {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### የፕሮጀክት አወቃቀር (Project Structure)
+### የፕሮጀክት መዋቅር {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # የPHP ክፍሎች እና የቅንብሮች ቦታ
-│   ├── class-multisite-ultimate-updater.php  # የআপডেট አያያዥ (Update handler)
-│   └── class-multi_tenancy-main.php             # ዋና ተግባር (Main functionality)
-├── tests/                        # የዩኒት ሙከራዎች (Unit tests)
-│   ├── bootstrap.php            # የሙከራ ማስጀመሪያ (Test bootstrap)
-│   ├── class-*-base.php         # መሰረታዊ የሙከራ ክፍል (Base test class)
-│   └── class-*-test.php         # የሙከራ ሁኔታዎች (Test cases)
-├── views/                       # የቴምፕሌት ፋይሎች (Template files)
-├── assets/                      # ስታቲክ ፋይሎች (Static assets)
-│   ├── css/                     # የቅጥ መጽሐፍት (Stylesheets)
-│   ├── js/                      # የJavaScript ፋይሎች
-│   └── images/                  # ምስሎች (Images)
-├── lang/                        # የቋንቋ ፋይሎች (Language files)
-├── composer.json                # የPHP ጥገኝነቶች (PHP dependencies)
-├── package.json                 # የNode.js ጥገኝነቶች (Node.js dependencies)
-├── phpunit.xml.dist             # የPHPUnit ቅንብር (PHPUnit configuration)
-├── .phpcs.xml.dist              # የኮድ ደረጃዎች ቅንብር (Code standards configuration)
-└── rector.php                   # የኮድ ዘመናዊነት ህጎች (Code modernization rules)
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-multi_tenancy-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
 ```
 
-### ሙከራ (Testing)
+### መሞከር {#testing}
 
-ይህ አድኦን ሁሉን አቀፍ የሙከራ ፍሬምወርክን ያካትታል፡
+addon ሁሉን አቀፍ የሙከራ መዋቅር ያካትታል፦
 
-- **Unit Tests**: በWordPress test suite ላይ የተመሰረቱ የPHPUnit ሙከራዎች።
-- **Base Test Class**: ለተለመዱ የሙከራ ሁኔታዎች የሚረዱ ተጨማሪ ዘዴዎችን (helper methods) ይሰጣል።
-- **Test Coverage**: የኮድ ሽፋን (code coverage) ለመከታተል ተዋቅሯል።
-- **Multisite Testing**: ሙከራዎች በብዙ ተጠቃሚዎች (multisite) አካባቢ ይካሄዳሉ።
+- **ዩኒት ሙከራዎች**፦ በPHPUnit ላይ የተመሠረቱ ሙከራዎች ከWordPress የሙከራ ስብስብ ጋር
+- **መሠረታዊ የሙከራ ክፍል**፦ ለተለመዱ የሙከራ ሁኔታዎች አጋዥ ዘዴዎችን ይሰጣል
+- **የሙከራ ሽፋን**፦ የኮድ ሽፋንን ለመከታተል ተዋቅሯል
+- **Multisite መሞከር**፦ ሙከራዎች በmultisite አካባቢ ውስጥ ይሰራሉ
 
-### የኮድ ደረጃዎች (Code Standards)
+### የኮድ መስፈርቶች {#code-standards}
 
-- **WordPress Coding Standards**: በPHPCS አማካይነት ይተገበራል።
-- **PHP 7.4+ Compatibility**: ዘመናዊ የPHP ባህሪያት ይደገፋሉ።
-- **Static Analysis**: ለዓይነት ፍተሻ (type checking) PHPStanን ያካትታል።
-- **Code Modernization**: ለPHP ማሻሻያ (upgrades) Rector ህጎችን ይጠቀማል።
+- **WordPress የኮድ መስፈርቶች**፦ በPHPCS በኩል ይተገበራል
+- **PHP 7.4+ ተኳኋኝነት**፦ ዘመናዊ የPHP ባህሪያት ይደገፋሉ
+- **Static Analysis**፦ ለአይነት ምርመራ የPHPStan ውህደት
+- **የኮድ ዘመናዊकरण**፦ ለPHP ማሻሻያዎች የRector ደንቦች
 
-### የብልት ሥርዓት (Build System)
+### የግንባታ ስርዓት {#build-system}
 
-- **Asset Processing**: ለCSS/JS ፋይሎች አነስተኛ ማድረግ (Minification)።
-- **Translation**: POT ፋይል መፍጠር።
-- **Packaging**: ለማሰራጨት የፋይል ማከማቻ (Archive) መፍጠር።
-- **Development Mode**: ለዲባጅንግ (debugging) ያልተቀነሱ (Unminified) ፋይሎች።
+- **የንብረት ማስኬድ**፦ ለCSS/JS ፋይሎች ማነስ
+- **ትርጉም**፦ የPOT ፋይል ማመንጨት
+- **ማሸግ**፦ ለስርጭት የarchive መፍጠር
+- **የልማት ሁነታ**፦ ለdebugging ያልተቀነሱ ንብረቶች
 
-## ቅንብር (Configuration)
+## ውቅር {#configuration}
 
-ይህ አድኦን በኔትወርክ አድሚን በኩል ሊገኙ የሚችሉ የተለያዩ የቅንብር አማራጮችን ይደግፋል።
+addon በኔትወርክ አስተዳዳሪ በይነገጽ በኩል የሚደረሱ የተለያዩ የውቅር አማራጮችን ይደግፋል።
 
-## Hooks እና Filters
+### የሉዓላዊ ተከራይ ውቅር {#sovereign-tenant-configuration}
 
-### Actions (ድርጊቶች)
+ለሉዓላዊ ተከራዮች፣ ትራፊክን ወደ ተከራዩ ከማዞርዎ በፊት የተከራይ ውሂብ ጎታ፣ የፋይል ስርዓት ስር፣ የውሂብ ጎታ አስተናጋጅ ማሰር እና የአስተናጋጅ ችሎታን ያዋቅሩ። የውሂብ ጎታ ምስክርነቶች፣ የአስተናጋጅ ማሰር፣ ማዞር ወይም የተጠቃሚ ማዘጋጀትን የሚነካ እያንዳንዱ ለውጥ በኋላ የማዛወር ማረጋገጫ ያስኪዱ።
 
-- `ultimate-multisite-addon-template_init` - የአድኦኑ መጀመር ከተጠናቀቀ በኋላ ይተነፍሳል።
-- `ultimate-multisite-addon-template_loaded` - ሁሉም የአድኦን ፋይሎች ከተጫኑ በኋላ ይተነፍሳል።
+የተከራይ runtime እና የውሂብ ጎታ grants አካባቢያዊ socket ወይም ተመሳሳይ-ማሽን መዳረሻን ሲጠብቁ ብቻ `localhost` ይጠቀሙ። በአቅራቢዎ የተዋቀረው grant host ያ ከሆነ `127.0.0.1` ወይም የአገልግሎት አስተናጋጅ ስም ይጠቀሙ።
 
-### Filters (ማጣሪያዎች)
+### Hostinger ችሎታ {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - የአድኦን ቅንብሮችን ለመቀየር።
-- `ultimate-multisite-addon-template_enabled` - የአድኦን መብራት/ማጥፋት ሁኔታን ለመተካት።
+የHostinger ባለብዙ-ተከራይነት ችሎታ ከተጋራው የHostinger ውህደት token ጋር ይሰራል። ከማረጋገጫ በፊት domainው በhPanel ውስጥ መኖሩን፣ DNS ወደ Hostinger account መጠቆሙን እና የተከራይ ውሂብ ጎታ ቅንብሮች ከhPanel ጋር መዛመዳቸውን ያረጋግጡ።
 
-## ፈቃድ (License)
+## Hooks እና Filters {#hooks-and-filters}
 
-ይህ አድኦን በGPL v3 ወይም ከዚያ በኋላ ባለው ፈቃድ ላይ የተመሰረተ ነው።
+### Actions {#actions}
 
-## ድጋፍ (Support)
+- `ultimate-multisite-addon-template_init` - ከaddon መነሻ ማስጀመር በኋላ ይተኮሳል
+- `ultimate-multisite-addon-template_loaded` - ሁሉም የaddon ፋይሎች ከተጫኑ በኋላ ይተኮሳል
 
-ለድጋፍ እና ሰነድ ለማግኘት [MultisiteUltimate.com](https://multisiteultimate.com) ይጎብኙ።
-## የለውጥ ታሪክ (Changelog)
+### Filters {#filters}
 
-- Version 1.0.1 (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተቀይሯል፤ የጽሑፍ ስፋት (text domain) ተዘምኗል፤ የversion ቁጥር ተጨመረ።
+- `ultimate-multisite-addon-template_settings` - የaddon ቅንብሮችን ያሻሽሉ
+- `ultimate-multisite-addon-template_enabled` - የaddon ማንቃት/ማሰናከል ሁኔታን ይተኩ
+
+## ፈቃድ {#license}
+
+ይህ addon በGPL v3 ወይም ከዚያ በኋላ ፈቃድ ተሰጥቶታል።
+
+## ድጋፍ {#support}
+
+ለድጋፍ እና ሰነድ፣ [MultisiteUltimate.com](https://multisiteultimate.com)ን ይጎብኙ
+## የለውጥ መዝገብ {#changelog}
+
+- Version 1.2.0 (2026-06-03): ሁኔታ-አልባ የተከራይ ራስ-ሰር መግቢያ፣ የHostinger ባለብዙ-ተከራይነት ችሎታ፣ በእያንዳንዱ ንዑስ ጣቢያ የውሂብ ጎታ እና የፋይል ስርዓት መነጠል፣ የሉዓላዊ ማዛወር ማረጋገጫ በሮች፣ የተከራይ መነሻ ማስጀመር/የውሂብ ጎታ ጸሐፊ ማሻሻያዎች፣ የሚዋቀር MySQL አስተናጋጅ ማሰር እና ይበልጥ ደህንነቱ የተጠበቀ ሉዓላዊ ማፍረስን ያክሉ።
+
+- Version 1.0.1 (2025-09-28): ቅድመ-ቅጥያውን ወደ ultimate-multisite ዳግም ሰይም፤ የጽሑፍ domainን አዘምን፤ version bump።
 
 
-- Version (2025-09-28): ቅድመ-ጽሑፍን (prefix) ወደ ultimate-multisite ተቀይሯል፤ የጽሑፍ ስፋት (text domain) ተዘምኗል፤ የversion ቁጥር ተጨመረ።
+- Version  (2025-09-28): ቅድመ-ቅጥያውን ወደ ultimate-multisite ዳግም ሰይም፤ የጽሑፍ domainን አዘምን፤ version bump።

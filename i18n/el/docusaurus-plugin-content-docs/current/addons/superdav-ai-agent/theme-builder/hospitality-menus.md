@@ -3,15 +3,15 @@ title: Μενού Υποδοχής
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Μενού Εστίασης
+# Μενού Εστίασης {#hospitality-menus}
 
 Το χαρακτηριστικό **Μενού Εστίασης** επιτρέπει στο Theme Builder να δημιουργεί και να ενσωματώνει δομημένα μενού φαγητού και ποτών απευθείας στην ιστοσελίδα σας στο WordPress.
 
-## Γενική Επισκόπηση
+## Γενική Επισκόπηση {#overview}
 
 Το Theme Builder μπορεί πλέον να δημιουργεί επαγγελματικά, δομημένα μενού για επιχειρήσεις εστίασης, όπως εστιατόρια, καφέ, μπαρ και υπηρεσίες κاترਿੰγκ. Αυτά τα μενού ενσωματώνονται πλήρως στο design της ιστοσελίδας σας και μπορούν να ενημερωθούν και να διαχειριστούν εύκολα.
 
-## Υποστηριζόμενοι Τύποι Εστίασης
+## Υποστηριζόμενοι Τύποι Εστίασης {#supported-hospitality-types}
 
 - **Εστιατόρια** — μενού πλήρους εξυπηρέτησης
 - **Καφέ** — μενού καφέ και ελαφρών γευμάτων
@@ -21,9 +21,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Food Trucks** — μενού κινητής εξυπηρέτησης φαγητού
 - **Μυροποιεία και Οινοποιεία** — μενού ποτών με περιγραφές
 
-## Δομή Μενού
+## Δομή Μενού {#menu-structure}
 
-### Κατηγορίες Μενού
+### Κατηγορίες Μενού {#menu-categories}
 
 Τα μενού οργανώνονται σε κατηγορίες:
 
@@ -34,7 +34,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Ποτά** — ποτά (αλκοολούχα και μη αλκοολούχα)
 - **Σπεσιαλια** — καθημερινά ή εποχιακά σπεσιαλια
 
-### Μορφή Μενού Αντικειμένου
+### Μορφή Μενού Αντικειμένου {#menu-item-format}
 
 Κάθε μενού αντικείμενο περιλαμβάνει:
 
@@ -49,7 +49,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 }
 ```
 
-#### Πεδία Αντικειμένου
+#### Πεδία Αντικειμένου {#item-fields}
 
 | Πεδίο | Τύπος | Περιγραφή |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 | `allergens` | array | Συνηθισμένα αλλεργιογόνα (Nuts, Shellfish, κ.λπ.) |
 | `availability` | string | Πότε είναι διαθέσιμο (Daily, Seasonal, κ.λπ.) |
 
-## Δημιουργία Μενού Εστίασης
+## Δημιουργία Μενού Εστίασης {#creating-hospitality-menus}
 
-### Βήμα 1: Παροχή Πληροφοριών Μενού
+### Βήμα 1: Παροχή Πληροφοριών Μενού {#step-1-provide-menu-information}
 
 Πείτε στο Theme Builder για το μενού σας:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Βήμα 2: Δημιουργία Μενού από το Theme Builder
+### Βήμα 2: Δημιουργία Μενού από το Theme Builder {#step-2-theme-builder-generates-menu}
 
 Το Theme Builder:
 
@@ -81,7 +81,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. Μορφοποιεί τις τιμές και τις περιγραφές
 5. Προσθέτει διατροφικές και αλλεργιογόνες πληροφορίες
 
-### Βήμα 3: Αναθεώρηση και Προσαρμογή
+### Βήμα 3: Αναθεώρηση και Προσαρμογή {#step-3-review-and-customize}
 
 Μπορείτε να:
 
@@ -91,9 +91,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. Ενημερώνετε τις περιγραφές και τις διατροφικές πληροφορίες
 5. Προσαρμόζετε το styling και το layout
 
-## Επιλογές Εμφάνισης Μενού
+## Επιλογές Εμφάνισης Μενού {#menu-display-options}
 
-### Πλήρες Μπλοκ Μενού (Full Menu Page)
+### Πλήρες Μπλοκ Μενού (Full Menu Page) {#full-menu-page}
 
 Μια αφιερωμένη σελίδα που εμφανίζει το πλήρες μενού σας:
 
@@ -102,7 +102,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - Layout κατάλληλο για εκτύπωση
 - Σχεδιασμένο για κινητά (Mobile-responsive)
 
-### Widget Μενού (Menu Widget)
+### Widget Μενού (Menu Widget) {#menu-widget}
 
 Ενσωματώνετε τμήματα μενού σε άλλες σελίδες:
 
@@ -111,7 +111,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - Μενού ποτών στη σελίδα του μπαρ
 - Παρδειγμα γλυκών στο footer
 
-### Μενού PDF (Menu PDF)
+### Μενού PDF (Menu PDF) {#menu-pdf}
 
 Δημιουργείτε ένα قابل λήψης μενού σε μορφή PDF:
 
@@ -120,9 +120,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - Περιλαμβάνει εικόνες και περιγραφές
 - Εύκολο να μοιραστείτε και να στείλετε μέσω email
 
-## Διατροφικές και Αλλεργιογόνες Πληροφορίες
+## Διατροφικές και Αλλεργιογόνες Πληροφορίες {#dietary-and-allergen-information}
 
-### Διατροφικές Ιδιότητες
+### Διατροφικές Ιδιότητες {#dietary-attributes}
 
 Ετικετοποιείτε τα αντικείμενα με διατροφικές πληροφορίες:
 
@@ -134,7 +134,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **Low-Carb** — με μειωμένα 탄수διακείμενα
 - **High-Protein** — πλούσιο σε πρωτεΐνη
 
-### Προειδοποιήσεις Αλλεργιογόνων
+### Προειδοποιήσεις Αλλεργιογόνων {#allergen-warnings}
 
 Ενσωματώνετε συνηθισμένα αλλεργιογόνα:
 
@@ -147,9 +147,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **Gluten** — ψωμί και δημητριακά που περιέχουν gluten
 - **Sesame** — σουσάμι και λάδι σουσάμι
 
-## Διαχείριση Μενού
+## Διαχείριση Μενού {#menu-management}
 
-### Ενημέρωση Τιμών
+### Ενημέρωση Τιμών {#updating-prices}
 
 Ενημερώστε εύκολα τις τιμές του μενού:
 
@@ -159,7 +159,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. Αποθηκεύστε τις αλλαγές
 5. Οι αλλαγές εμφανίζονται αμέσως στην ιστοσελίδα σας
 
-### Προσθήκη Εποχιακών Αντικειμένων
+### Προσθήκη Εποχιακών Αντικειμένων {#adding-seasonal-items}
 
 Δημιουργήστε εποχιακές παραλλαγές μενού:
 
@@ -169,7 +169,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. Προγραμματίστε τις ημερομηνίες διαθεσιμότητας
 5. Εμφανίζονται αυτόματα κατά τη διάρκεια της εποχής
 
-### Διαχείριση Σπεσιαλια
+### Διαχείριση Σπεσιαλια {#managing-specials}
 
 Εμφανίστε καθημερινά ή εβδομαδιαία σπεσιαλια:
 
@@ -179,7 +179,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. Ενημερώστε καθημερινά ή εβδομαδιαίως
 5. Αρχειοθετήστε τα παλιά σπεσιαλια
 
-## Ενσωμάτωση με το Theme Builder
+## Ενσωμάτωση με το Theme Builder {#integration-with-theme-builder}
 
 Όταν χρησιμοποιείτε το Theme Builder για ιστοσελίδες εστίασης:
 
@@ -189,9 +189,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 4. **Mobile optimization** — τα μενού εμφανίζονται υπέροχα σε κινητά
 5. **SEO optimization** — τα μενού είναι φιλικά προς τις μηχανές αναζήτησης
 
-## Βέλτιστες Πρακτικές
+## Βέλτιστες Πρακτικές {#best-practices}
 
-### Σχεδιασμός Μενού
+### Σχεδιασμός Μενού {#menu-design}
 
 - **Διαφανής οργάνωση** — λογική δομή κατηγοριών
 - **Εύκολα διαβreadable περιγραφές** — να είναι να appetising και ενημερωτικές
@@ -199,7 +199,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **Επαγγελματικές φωτογραφίες** — εικόνες φαγητού υψηλής ποιότητας
 - **Κενά (Whitespace)** — μην υπερφορτώνετε τη σελίδα
 
-### Περιεχόμενο
+### Περιεχόμενο {#content}
 
 - **Ακριβείς περιγραφές** — περιγράψτε τα αντικείμενα με ακρίβεια
 - **Βγάλτε τα σπεσιαλια σε εμφανή θέση** — κάντε τα σπεσιαλια να ξεχωρίζουν
@@ -207,7 +207,7 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **Ενημερώνετε τακτικά** — κρατήστε τις τιμές και τα αντικείμενα ενημερωμένα
 - **Χρησιμοποιήστε appetising γλώσσα** — κάντε τα αντικείμενα να ακούγονται νόστιμα
 
-### Προσβασιμότητα
+### Προσβασιμότητα {#accessibility}
 
 - **Εύκολα διαβreadable γραμματοσειρές** — χρησιμοποιήστε καθαρές, ευανάγνωστες γραμματοσειρές
 - **Παράsufficient αντίθεση** — βεβαιωθείτε ότι το κείμενο είναι ευανάγνωστο
@@ -215,9 +215,9 @@ pasta dishes, main courses, and desserts. Include prices and descriptions.
 - **Προειδοποιήσεις αλλεργιογόνων** — εμφανίστε τα αλλεργιογόνα εμφανώς
 - **Φιλικό προς κινητά** — δοκιμάστε σε όλες τις συσκευές
 
-## Παραδείγματα
+## Παραδείγματα {#examples}
 
-### Δομή Μενού Εστιατορίου
+### Δομή Μενού Εστιατορίου {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Δομή Μενού Καφέ
+### Δομή Μενού Καφέ {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Σχετικά Χαρακτηριστικά
+## Σχετικά Χαρακτηριστικά {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — δημιουργία πλοήγητικών μενού
 - [Design Direction](./design-direction.md) — προσαρμογή του design της ιστοσελίδας σας

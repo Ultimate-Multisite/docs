@@ -3,9 +3,9 @@ title: Upravljanje plaćanjima i računima
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Upravljanje plaćanjima i računima
+# Upravljanje plaćanjima i računima {#managing-payments-and-invoices}
 
-## Postavke plaćanja
+## Postavke plaćanja {#payment-settings}
 
 Prije nego što počnete primati plaćanja, morat ćete podesiti postavke vezane za plaćanja. Idite na **Ultimate Multisite → Settings** i kliknite na karticu **Payment**.
 
@@ -15,7 +15,7 @@ Ovo je pregled stranice postavki plaćanja:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opće opcije plaćanja
+### Opće opcije plaćanja {#general-payment-options}
 
 U općim postavkama možete podesiti:
 
@@ -24,7 +24,7 @@ U općim postavkama možete podesiti:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Plačilne kapije (Payment Gateways)
+### Plačilne kapije (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite podržava više plaćilnih kapija. Možete aktivirati i podesiti svaku od njih s kartice Postavke plaćanja.
 
@@ -40,11 +40,11 @@ Svaka kapija ima vlastiti odjeljak za konfiguraciju gdje unosite API ključeve i
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox režim
+### Sandbox režim {#sandbox-mode}
 
 Možete aktivirati **Sandbox Mode** kako biste testirali integraciju plaćanja prije nego što je pokrenete u stvarnom okruženju. Kada je sandbox režim aktivan, neće se izvršiti stvarni naplati.
 
-## Pregled plaćanja
+## Pregled plaćanja {#viewing-payments}
 
 Idite na stranicu **Payments** unutar Ultimate Multisite kako biste vidjeli sve transakcije na cijeloj vašoj mreži.
 
@@ -54,7 +54,7 @@ Možete filtrirati plaćanja po statusu (zaključano, u čekanju, neuspješno, p
 
 Kliknite na plaćanje kako biste vidjeli sve detalje, uključujući stavke računa, povezano članstvo, informacije o klijentu i podatke o plaćalnoj kapiji.
 
-## Računi (Invoices)
+## Računi (Invoices) {#invoices}
 
 Ultimate Multisite može automatski generirati račune za plaćanja. Možete prilagoditi predložak računa i format brojanja iz Postavki plaćanja.
 

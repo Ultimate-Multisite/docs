@@ -1,154 +1,156 @@
 ---
-title: Registreerimise formaadi personaliseerimine
+title: Registreerimisvormi kohandamine
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Registreerforma kohandlustamine
+# Registreerimisvormi kohandamine {#customizing-your-registration-form}
 
-Et siis teie võrku tegemist sellega, et see näha erinevalt kõigustest muudelt WordPress platvormil loodud SaaS-laikplatest, võimaldab Ultimate Multisite oma **Checkout Forms** funktsiooniga registreerimise ja logiini lehekülte kohandada.
+Et muuta sinu võrgustik kõigi teiste WordPress platvormile ehitatud SaaS-lahenduste seast ainulaadseks, võimaldab Ultimate Multisite kohandada registreerimis- ja sisselogimislehti meie **Checkout Forms** funktsiooniga.
 
-Kuigi need on lihtne ja jäykuse korral tegemiseks erinevate lähenemiste proovimiseks uute klientide konversioonile pystyt, neid kasutatakse pääsutult isenditavate registreerimise vormide loomiseks. See artikli eesmärk on näidata teil, kuidas seda teha.
+Kuigi need on lihtne ja paindlik viis katsetada erinevaid lähenemisi uute klientide konverteerimiseks, kasutatakse neid enamasti isikupärastatud registreerimisvormide loomiseks. Selle artikli eesmärk on näidata, kuidas seda teha.
 
-## Logiini ja registreerimise leheküled:
+## Sisselogimis- ja registreerimislehed: {#login-and-registration-pages}
 
-Ultimate Multisite paigaldamise korral luuub see automaatselt oma pealele oleva sitele isikupärastatud logiini- ja registreerimise leheküled. Saate neid olles igal ajal muuta, minnes **Ultimate Multisite > Settings > Login & Registration** lehel.
+Ultimate Multisite paigaldamisel loob see automaatselt kohandatud sisselogimis- ja registreerimislehed sinu peamisele saidile. Neid vaikelehti saad igal ajal muuta, minnes lehele **Ultimate Multisite > Settings > Login & Registration**.
 
-![Logiini ja registreerimise seadistuste lehekülje](/img/config/settings-general.png)
+![Sisselogimise ja registreerimise seadete leht](/img/config/settings-general.png)
 
-Siin on logiini ja registreerimise seadistuste täielik vaade:
+Siin on sisselogimise ja registreerimise seadete lehe täielik vaade:
 
-![Logiini ja registreerimise seadistuste täielik lehekülje](/img/config/settings-login-registration-full.png)
+![Sisselogimise ja registreerimise seadete täisleht](/img/config/settings-login-registration-full.png)
 
-Vaatame nüüd iga valikut, mida saate **Login & Registration** lehel kohandada:
+Vaatame iga valikut, mida saad **Login & Registration** lehel kohandada:
 
-  * **Registreerimise aktiveerimine:** See valik aktiveerib või deaktiveerib registreerimise teie võrku jaoks. Kui see on välja lülitatud, ei saa teie klientid oma toote kasutamiseks registreeruda ega abonnireeruda.
+  * **Luba registreerimine:** See valik lubab või keelab registreerimise sinu võrgustikus. Kui see on välja lülitatud, ei saa sinu kliendid registreeruda ega sinu tooteid tellida.
 
-  * **E-posti autentimise aktiveerimine:** Kui see valik on sisse lülitatud, saab tasuta plaani või proovivajadusega maksutulise plaani abonnireerivad klientid autentimispilt e-posti ja peavad klikkima autentimelinkile oma veebilehtide loomiseks.
+  * **Luba e-posti kinnitamine:** Kui see valik on sisse lülitatud, saavad kliendid, kes tellivad tasuta paketi või tasulise paketi prooviperioodiga, kinnituskirja ning peavad klõpsama kinnituslingil, et nende veebisaidid loodaks.
 
-* **Olet pooltide registreeriminu:** See on pooltide registririmisvahetuslehe. Sellele lehe tuleb publikua anda teie veebilehel ja sellel peab olema registreerimiform (teutakse ka ostukorvi forma), kus teie kliendid jälgivad oma toote. Saate luua kui palju registreerimise lehti ja ostukorviformid soovite, kuid mäletage, et tuleb asutada ostukorvi forma shortcode registreerimislehelele, elluti see ei ilmune.
+  * **Vaikimisi registreerimisleht:** See on registreerimise vaikeleht. See leht peab olema sinu veebisaidil avaldatud ja sisaldama registreerimisvormi (tuntud ka kui checkout-vorm) – kus sinu kliendid tellivad sinu tooteid. Saad luua nii palju registreerimislehti ja checkout-vorme, kui soovid; pea lihtsalt meeles lisada checkout-vormi shortcode registreerimislehele, muidu seda ei kuvata.
 
-  * **Kasutage oma kasutajale tehtud sisse logi:** See võimaldab kasutada kaunistatud sisselogi lehte, mis on erinev pooltide `wp-login.php` lehelt. Kui seda valikule lülitate sisse, saate välja, millist lehte kasutatakse sisselogi jaoks **Pooltide sisselogile** (koja on just allpool).
+  * **Kasuta kohandatud sisselogimislehte:** See valik võimaldab kasutada kohandatud sisselogimislehte, mis erineb vaikimisi wp-login.php lehest. Kui see valik on sisse lülitatud, saad valida, millist lehte kasutatakse sisselogimiseks valikus **Default login page** (kohe allpool).
 
-  * **Küülatud sisselogi URL-i salvestamine (`wp-login.php`):** Kui soovite salvestada originaalse sisselogi URL, saate seda valikule lülitate sisse. See on kasulik brute-force-takaamise vältimiseks. Kui see valik on aktiveeritud, pooltide Ultimate Multisite näitab 404 viga, kui kasutaja proovib päästa oma originaalse `wp-login.php` linki.
+  * **Peida algne sisselogimise URL (wp-login.php)** : Kui soovid algse sisselogimise URL-i peita, saad selle valiku sisse lülitada. See on kasulik jõurünnakute vältimiseks. Kui see valik on lubatud, kuvab Ultimate Multisite 404 vea, kui kasutaja üritab avada algset wp-login.php linki
 
-  * **Küülatud veebilehe publikatsioon:** Klient saab toote võtta veekonnale, ja uus ootav veebilehe tuleb muuta tõelise pooltide veebileheks. Publikatsioon protsess toimub Job Queue abil asünkrooniliselt. Lülitage see valik, et pakutada publikatsioon toimuks samas käskudes kui registreerimine.
+  * **Sunni sünkroonset saidi avaldamist:** Pärast seda, kui klient tellib võrgustikus toote, tuleb uus ootel sait teisendada päris võrgustiku saidiks. Avaldamisprotsess toimub Job Queue kaudu asünkroonselt. Luba see valik, et sundida avaldamist toimuma samas päringus nagu registreerumine.
 
-Nüüd vaadime teisi valikuid, mis on edelleen olulised sisselogi ja registreerimise protsessile seoses. Need on allpool **Teised valikud** sellele sama Sisselogi & registreerimise lehel:
+Nüüd vaatame teisi valikuid, mis on endiselt sisselogimis- ja registreerimisprotsessi jaoks asjakohased. Need asuvad samal Login & registration lehel jaotise **Other options** all:
 
-  * **Pooltide roll:** See on see roll, mida teie kliendid oma veebilehel saavad registreerimise pärast.
+  * **Vaikeroll:** See on roll, mis sinu klientidel pärast registreerumisprotsessi oma veebisaidil on.
 
-* **Jumperi aktiveerimine:** Aktiveerib Jumper kiiraltikuks (shortcut) admini juures. Jumper võimaldab administraatorit kiiresti hüpata Ultimate Multisite ekrane, võrkoobjektidele ja teist toetatud kohakojudele ilma iga menüü läbi hoitamata. Lülita see välja, kui soovite seda kiiret navigatsioonivara admini liidesest varjuta.
+  * **Luba Jumper:** Lubab Jumper otsetee adminialas. Jumper võimaldab administraatoritel kiiresti liikuda Ultimate Multisite ekraanidele, võrgustiku objektidele ja muudesse toetatud sihtkohtadesse, ilma et peaks iga menüüd läbi sirvima. Lülita see välja, kui eelistad selle kiire navigeerimistööriista adminiliidesest peita.
 
-* **Kasutajate lisamine peale site:** Selle valik aktiveerimine lisab kasutaja samuti teie võrku peale oleva sitele registreerumise pärast. Kui aktiveerite selle valiku, ilmub kohe all võimalus määrata nende kasutajate **oletulet role** teie veebilehel.
+  * **Lisa kasutajad ka peamisele saidile:** Selle valiku lubamine lisab kasutaja pärast registreerumisprotsessi ka sinu võrgustiku peamisele saidile. Kui lubad selle valiku, ilmub kohe allpool ka valik määrata nende kasutajate **vaikeroll** sinu veebisaidil.
 
-* **Paljude kontode aktiveerimine:** Luba kasutajatele saada kontod võrku erinevatele sitele samal e-posti aadressiga. Kui see valik on välja lülitatud, ei saa teie kliendid luua konti teistest võrku veebileheladel samal e-posti aadressiga.
+  * **Luba mitu kontot:** Luba kasutajatel omada kontosid sinu võrgustiku erinevatel saitidel sama e-posti aadressiga. Kui see valik on välja lülitatud, ei saa sinu kliendid sama e-posti aadressiga luua kontot teistel sinu võrgustikus töötavatel veebisaitidel.
 
-See on kõik võimalused, mida saate isendita sisse logi ja registreerimise seadistustes! Lühlemata muudke oma seadistusi pärast seda, kui olete neid lõpetanud.
+Ja need ongi kõik sisselogimise ja registreerimisega seotud valikud, mida saad kohandada! Ära unusta pärast muutmise lõpetamist oma seadeid salvestada.
 
-## Paljude registreerimiformide kasutamine:
+## Mitme registreerimisvormi kasutamine: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 pakub kassapult-redaktori, mis võimaldab teil luua nii palju formeid nagu soovite, erinevate väljakohikute ja pakkumiste toodete abil.
+Ultimate Multisite 2.0 pakub checkout-vormi redaktorit, mis võimaldab luua nii palju vorme, kui soovid, erinevate väljade, pakutavate toodete jne jaoks.
 
-Mõlemad logi- ja registreerimispoolid on sisse laaditud skortkodega: **[wu_login_form]** logi poolil ja **[wu_checkout]** registreerimise poolile. Saate registreerimise lehte lisaks isendita kassapult-forme või neid luua.
+Nii sisselogimis- kui ka registreerimislehed on manustatud shortcodidega: **[wu_login_form]** sisselogimislehel ja**[wu_checkout]** registreerimislehe jaoks. Saad registreerimislehte veelgi kohandada, ehitades või luues checkout-vorme.
 
-Selle funktsiooni kasutamiseks külastage vasakust navigatsiooni menüü **Checkout Forms**.
+Selle funktsiooni avamiseks mine vasakpoolsel külgribal menüüsse **Checkout Forms**.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms menüü külgribal](/img/config/checkout-forms-list.png)
 
-Seele lehel näete kõik teie olemasolevad kassapult-forme.
+Sellel lehel näed kõiki oma checkout-vorme.
 
-Kui soovite uut luua, klõpsake lihtsalt sellele lehe ülaosas **Add Checkout Form** (Lisaindige kassapult-form).
+Kui soovid luua uue, klõpsa lihtsalt lehe ülaosas **Add Checkout Form**.
 
-Võimalik on valida ühtest needa kolmest variantist algupunktina: üksik küsimus, mitmeküsimus või tühja. Seejärel klõpsake, et **Minu lehega lahendada**.
+Saad valida lähtepunktiks ühe neist kolmest valikust: ühe sammuga, mitme sammuga või tühi. Seejärel klõpsa **Go to the Editor**.
 
-![Lisa kassakogumise vorm üheksik küsimusega, mitmeküsimusega või tühjaga variantidega](/img/config/checkout-forms-list.png)
+![Lisa Checkout Form ühe sammu, mitme sammu või tühja valikuga](/img/config/checkout-forms-list.png)
 
-Alternatiivselt saate muuta või duplikat vorme, mida te juba oma poolt luudete, klõpsates selle nime all olevat valikuid. Seal leiate ka võimalusi kopienda vormi shortcode või vormi eemaldada.
+Teise võimalusena saad juba olemasolevaid vorme muuta või dubleerida, klõpsates nende nime all olevatel valikutel. Sealt leiad ka valikud vormi shortcode’i kopeerimiseks või vormi kustutamiseks.
 
-![Kassakogumise vormi hover-toimised editimise, duplikat ja eemaldamise jaoks](/img/config/checkout-form-hover-actions.png)
+![Checkout-vormi hõljutustoimingud muutmise, dubleerimise ja kustutamisega](/img/config/checkout-form-hover-actions.png)
 
-Kui valite üksik küsimust või mitmeküsimust, kassakogumise forma on juba ettevalmistatud alusel basic ülesandeid selle tööks vajalikuks. Seejärel saate, kui soovite, lisada sellele lisaks ülesandeid.
+Kui valid ühe sammu või mitme sammuga variandi, on checkout-vorm juba eeltäidetud põhisammudega, et see toimiks. Seejärel saad soovi korral sellele lisasamme lisada.
 
-### Kassakogumise vormi muutmise:
+### Checkout Formi muutmine: {#editing-a-checkout-form}
 
-Kideses mainisime, et saate luua kassakogumise vorme erinevate eesmärkide jaoks. Selle näites kasutame registreerimise forma.
+Nagu varem mainisime, saad luua checkout-vorme erinevateks eesmärkideks. Selles näites töötame registreerimisvormiga.
 
-Navigeerides kassakogumise forma redigeerimisruumi juurde, annate forme nime (mis kasutatakse ainult sisemiseks viidiks) ja slugi (mis kasutatakse shortcode loomiseks, näiteks).
+Pärast checkout-vormi redaktorisse liikumist anna vormile nimi (mida kasutatakse ainult sisemiseks viiteks) ja slug (kasutatakse näiteks shortcode’ide loomiseks).
 
-![Kassakogumise vormi redigeerimisu ruum nimi- ja slugi valikudega](/img/config/checkout-form-editor.png)
+![Checkout-vormi redaktor nime ja slug’i väljadega](/img/config/checkout-form-name-slug.png)
 
-Formad on ülesandeid ja väljaküsimusi kokku pandud. Saate uue ülesande lisada klõpsates **Lisa uus kassakogumise ülesande**.
+Vormid koosnevad sammudest ja väljadest. Saate lisada uue sammu, klõpsates **Lisa uus checkout’i samm**.
 
-![Uue kassakogumise ülesande lisäämine nupp](/img/config/checkout-form-add-step.png)
+![Lisa uus checkout’i samm nupp](/img/config/checkout-form-add-step.png)
 
-Modal-aruudu esimesel tabis täidate forme ülesande sisu. Annate sellele ID, nime ja kirjelduse. Need osad kasutatakse pääsutult sisemiseks.
+Modaaliakna esimesel vahekaardil täitke oma vormi sammu sisu. Andke sellele ID, nimi ja kirjeldus. Neid elemente kasutatakse enamasti sisemiselt.
 
-![Kassakogumise ülesande sisu tabID, nimi ja kirjeldusega](/img/config/checkout-form-step-content.png)
+![Checkout’i sammu sisu vahekaart ID, nime ja kirjeldusega](/img/config/checkout-form-step-content.png)
 
-Järgmine on ülesande nähtavuse seadistamine. Saate valida **Alati näha**, **Näita ainult logitud kasutajatele** või **Näita ainult külalestele**.
+Järgmisena määrake sammu nähtavus. Saate valida **Näita alati** , **Näita ainult sisse logitud kasutajatele** või **Näita ainult külalistele**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Checkout’i sammu nähtavuse valikud](/img/config/checkout-form-step-visibility.png)
 
-Lõpuks konfigurige sammide stiil. See on valikuline sisse seadistus.
+Lõpuks seadistage sammu stiil. Need on valikulised väljad.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Checkout’i sammu stiili seadistus](/img/config/checkout-form-step-style.png)
 
-Nüüd on aeg lisada väljeid meie esimesele sammule. Klõpsake **Lisainiku** (Add New Field) ja valige soovitud osakonna tüüp.
+Nüüd on aeg lisada väljad meie esimesse sammu. Klõpsake lihtsalt **Lisa uus väli** ja valige soovitud jaotise tüüp.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Lisa uus väli nupp](/img/config/checkout-form-add-field-button.png)![Välja tüübi valiku rippmenüü](/img/config/checkout-form-field-type-dropdown.png)
 
-Iga väljendil on erinevad parametrid, mida tuleb täita. Esimese sissepääsu jaoks valime **Username** (Käitja nimi) välja.
+Igal väljal on erinevad parameetrid, mis tuleb täita. Selle esimese sisestuse jaoks valime välja **Kasutajanimi**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Kasutajanime välja seadistus](/img/config/checkout-form-username-content.png)![Kasutajanime välja parameetrid](/img/config/checkout-form-username-visibility.png)![Kasutajanime välja lisaseaded](/img/config/checkout-form-username-style.png)
 
-Saate lisada nii palju sammude ja väljeid, kui vajad. Kui soovite esitada oma toote klientidele valikuna, kasutage **Pricing Table** (Hindamine tabel) väljekonfiguratsiooni. Kui soovite, et teie kliendid valiksid šabloni, lisa **Template Selection** (Šabloni valik) väljend. Ja nii edasi.
+Saate lisada nii palju samme ja välju, kui vajate. Selleks, et kuvada oma tooteid klientidele valimiseks, kasutage hinnatabeli välja. Kui soovite lasta oma klientidel valida malli, lisage mallivaliku väli. Ja nii edasi.
 
-_**Märkus:** Kui luute toote pärast sissepääsuformaali loomist, pead seda lisama Hindamine tabeli osas. Kui te seda ei lise, toote ei ilmune klientidele registreerimispoolil._
+![Checkout-vormi redaktor mallivaliku väljaga](/img/config/checkout-form-with-template-field.png)
 
-_**Märkus 2:** username (käitja nimi), email, password (parool), site title (sitiutitel), site URL (siti ümber) ja order summary (tellisüht) on pakkuformaali loomiseks peamised väljed._
+_**Märkus:** Kui loote toote pärast checkout-vormi loomist, peate lisama toote hinnatabeli jaotisse. Kui te seda ei lisa, ei ilmu toode teie klientidele registreerimislehel._
 
-Teuidas töötamise ajal saate alati kasutada **Preview** (Eelvaate) nupud, et näha, kuidas teie klientidele formaal ilmub. Saate ka vaheldada erinevate kasutajate ja külastuste vahel.
+_**Märkus 2:** kasutajanimi, e-post, parool, saidi pealkiri, saidi URL, tellimuse kokkuvõte, makse ja esitamisnupp on checkout-vormi loomiseks kohustuslikud väljad._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Checkout-vormi kallal töötades saate alati kasutada eelvaate nuppu, et näha, kuidas teie kliendid vormi näevad. Samuti saate vahetada vaadet olemasoleva kasutaja ja külastaja vahel.
 
-Lõpuks **Advanced Options** väljas ootate konfigurida sõnumi **Thank You** lehel, lisada sissekujundite jälgimiseks snippetsid, lisada oma checkout formile saadud CSS või piirata seda teatud riikidele.
+![Eelvaate nupp checkout-vormi redaktoris](/img/config/checkout-form-preview-button.png)![Checkout-vormi eelvaade külastajana või olemasoleva kasutajana](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Lõpuks saate jaotises **Täpsemad valikud** seadistada **Aitäh** lehe sõnumi, lisada koodijuppe konversioonide jälgimiseks, lisada oma checkout-vormile kohandatud CSS-i või piirata seda teatud riikidega.
 
-Võite ka käsitsemata või välja lülitada oma checkout formi antkadesse selle valiku abil paremas kolonn on, või eemaldu oma formi pysseliselt.
+![Täpsemad valikud koos Aitäh lehe, konversioonide jälgimise ja kohandatud CSS-iga](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Samuti saate oma checkout-vormi käsitsi lubada või keelata, lülitades selle valiku parempoolses veerus sisse või välja, või vormi jäädavalt kustutada.
 
-Ära unustige salvestada oma checkout form!
+![Aktiivsuse lüliti ja kustutamisvalik checkout-vormi jaoks](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ärge unustage oma checkout-vormi salvestada!
 
-Formi shortcode saamiseks klõpsake **Generate Shortcode** (Shortcode genereerimine) ja kopige modal finestra loomist näidatud tulemus.
+![Salvesta checkout-vorm nupp](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Vormi lühikoodi saamiseks klõpsake **Genereeri lühikood** ja kopeerige modaaliaknas kuvatud tulemus.
 
-_**Märkus:** See shortcode peate lisama oma registreerimispoolile, et see checkout formi sellele lisata saaks._
+![Genereeri lühikood modaal lühikoodiga, mida kopeerida](/img/config/checkout-form-editor.png)
 
-## Toote ja mallide ettevalikamine URL parametrite abil:
+_**Märkus:** Peate lisama selle lühikoodi oma registreerimislehele, et see checkout-vorm sinna lisataks._
 
-Kui soovite luua kohandatud hinnatavastikke teie toodetele ja ettevalida checkout formil toote või malli, mida klient valib oma hinnatavastikute või mallide lehtest, saate selleks kasutada URL parametreid.
+## Toodete ja mallide eelvalimine URL-i parameetrite kaudu: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Plänide jaoks:**
+Kui soovite luua oma toodetele kohandatud hinnatabeleid ja eelvalida checkout-vormil toote või malli, mille teie klient valib teie hinnatabelist või mallide lehelt, saate selleks kasutada URL-i parameetreid.
 
-Minimeerige **Ultimate Multisite > Products > Select a plan**. Peal lehel peaks teile näha **Click to copy Shareable Link** (Kopija ja jagamise linki) nuppu. See on link, mida saate kasutada selle spetsiifilise plaaniga ettevalimiseks oma checkout formil.
+### **Plaanide jaoks:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Minge jaotisse **Ultimate Multisite > Tooted > Vali plaan**. Lehe ülaosas peaksite nägema nuppu **Klõpsa jagatava lingi kopeerimiseks**. See on link, mida saate kasutada selle konkreetse plaani eelvalimiseks oma checkout-vormil.
 
-Päriselt see jaotav link on ainult **Plänidele** kehtiv. Jaotavate linkidega ei saa kasutada pakette või teenuse jaoks.
+![Tooteleht jagatava lingi nupuga](/img/config/products-list.png)
 
-### Mallide jaoks:
+Pange tähele, et see jagatav link kehtib ainult **plaanide** jaoks. Te ei saa kasutada jagatavaid linke pakettide või teenuste jaoks.
 
-Kui soovite valitud veebilehva malle juba ostukorvi vormis ette määrata, saate kasutada parametrit: **?template_id=X** registreerimise lehekülje URL-is. "X" tuleb asendada **veebimalli ID numberiga**. Selle numbrist saate päästa **Ultimate Multisite > Sites** sekkoni.
+### Mallide jaoks: {#for-templates}
 
-Klõpsake **Manage** (Hallinta) nupul veebimalli all, mida soovite kasutada. Siis näete SITE ID numberi. Kasutage seda numbril ainult selle konkreetse veebimalli jaoks, et see oleks ette määratud ostukorvi vormis. Meie juhul URL-parameter oleks **?template_id=2**.
+Kui soovite checkout-vormil saidi malle eelvalida, saate oma registreerimislehe URL-is kasutada parameetrit: **?template_id=X**. "X" tuleb asendada **saidi malli ID-numbriga**. Selle numbri saamiseks minge jaotisse **Ultimate Multisite > Saidid**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Klõpsake **Halda** kohe selle saidi malli all, mida soovite kasutada. Näete SITE ID numbrit. Kasutage lihtsalt seda numbrit selle konkreetse saidi malli jaoks, et see oleks teie checkout-vormil eelvalitud. Meie näites oleks URL-i parameeter **?template_id=2**.
 
-Lõpulemiseks, kui meie võrku veebilehva on [**www.mynetwork.com**](http://www.mynetwork.com) ja registreerimise lehekülje koos ostukorvi vormiga asub /register lehel. Kogu URL-i, kus see veebimalli ette määratud on, ilmub näiteks [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Saitide loend saidi malli ID-ga](/img/config/site-templates-list.png)
 
-Ja kui soovite, saate et ette määrata nii toote kui ka malli ostukorvi vormis. Kõige, mida peate teema on kopienda plaanidele ja liigutada malli parameter endile lõppu. See ilmub näiteks nagu [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Oletame, et meie võrgustiku veebisait on [**www.mynetwork.com**](http://www.mynetwork.com) ja meie registreerimisleht koos checkout-vormiga asub lehel **/register**. Kogu URL selle eelvalitud saidi malliga näeb välja selline: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ja kui soovite, saate checkout-vormil eelvalida nii tooted kui ka mallid. Kõik, mida peate tegema, on kopeerida plaani jagatav link ja kleepida malli parameeter selle lõppu. See näeb välja selline: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

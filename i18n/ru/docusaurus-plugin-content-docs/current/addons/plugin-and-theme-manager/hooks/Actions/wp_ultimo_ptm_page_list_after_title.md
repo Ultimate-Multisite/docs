@@ -4,20 +4,20 @@ title: Действие - wp_ultimo_ptm_page_list_after_title
 sidebar_label: wp_ultimo_ptm_page_list_after_title
 _i18n_hash: 10c518d81a33e5d7d9eb0885d5179484
 ---
-# Действие: wp_ultimo_ptm_page_list_after_title
+# Действие: wp_ultimo_ptm_page_list_after_title {#action-wpultimoptmpagelistaftertitle}
 
 Позволяет разработчикам плагинов добавлять дополнительные кнопки на страницы списка
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $ | `\WU_Page` | Экземпляр Multisite Ultimate Page |
 
-### С версии
+### С версии {#since}
 
 - 1.8.2
 
-### Источник
+### Источник {#source}
 
 Определено в [`views/base/list.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-plugin-and-theme-manager/blob/main/views/base/list.php#L47) на строке 47

@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Changelog
+# Ultimate AI Connector for WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — Released on 2026-04-09
+## Version 1.1.0 — Released on 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **نیا:** ایڈمن بار اسٹیٹس انڈیکیٹر کے ساتھ تیرتا ہوا چیٹ وِجٹ — اب کوئی بھی لاگ ان صارف فرنٹ اینڈ سے براہ راست براؤزر سائیڈ LLM کو پرامپٹ دے سکتا ہے۔
 * **نیا:** SharedWorker رن ٹائم — اب MLC engine ایک SharedWorker میں چلتا ہے، جس کی وجہ سے متعدد ٹیبز ایک ہی GPU سیشن شیئر کرتے ہیں بجائے اس کے کہ وہ اس پر ایک دوسرے سے تصادم کریں۔
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **فکس:** WebLLM کو wpai_preferred_text_models فلٹر میں جوڑا گیا تاکہ AI Experiments فیچر، جب کوئی ماڈل ترتیب دیا جائے، تو براؤزر انجن کی طرف ریٹ کرے۔
 * **بہتر کیا گیا:** اینڈ-ٹو-اینڈ ٹیسٹنگ کے دوران کیش-باستنگ، کنٹینٹ نارملائزیشن، اور ہارڈویئر-ریفرنس کے مسائل کو حل کیا گیا۔
 
-## Version 1.0.0 — Initial Release
+## Version 1.0.0 — Initial Release {#version-100--initial-release}

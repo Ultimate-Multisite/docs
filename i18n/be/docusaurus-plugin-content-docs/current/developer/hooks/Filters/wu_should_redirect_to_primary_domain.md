@@ -4,21 +4,21 @@ title: Фільтр - wu_should_redirect_to_primary_domain
 sidebar_label: wu_should_redirect_to_primary_domain
 _i18n_hash: 6e085e579f17d09e630f12f429cc413b
 ---
-# Filter: wu_should_redirect_to_primary_domain
+# Filter: wu_should_redirect_to_primary_domain {#filter-wushouldredirecttoprimarydomain}
 
 Дазваляе рэалізавальнікам спыніць (short-circuit) перанакіраванне, захаваўшы яго ад адбыцця.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $should_redirect | `bool` | Ці трэба перанакіраваць, яшчэ ні. |
 
-### З
+### З {#since}
 
 - 2.0.0
-### Вынік
+### Вынік {#source}
 
 Вызначаны ў [`inc/domain-mapping/class-primary-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-primary-domain.php#L79) на 79-й кропцы.
 
-## Павяртае
+## Павяртае {#returns}

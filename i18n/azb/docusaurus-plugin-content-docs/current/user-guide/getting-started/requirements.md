@@ -3,11 +3,11 @@ title: Nekva'ra
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Gereksinimleri
+# Ultimate Multisite Gereksinimleri {#ultimate-multisite-requirements}
 
 Ultimate Multisite'ı satın almadan önce kendinize sorabileceğiniz ilk şey, eklentimizi çalıştırmak için ne gibi gereksinimler var? Neyse ki, Ultimate Multisite'ı çalıştırmak için sadece birkaç temel gereksinim var: bir **domain adı**, iyi bir **barındırma sağlayıcısı** ve bir WordPress **Multisite** kurulumu. Hepsi bu kadar!
 
-## Domain Adı
+## Domain Adı {#domain-name}
 
 Öncelikle domain adından bahsedelim.
 
@@ -17,7 +17,7 @@ Eklentimiz abonelik hizmetleri, ödeme toplama, satın alma formları, indirim k
 
 Hangi nişi seçerseniz seçin, siteleri bir hizmet olarak satabildiğiniz sürece eklentimizle yönetebilirsiniz! İş planınıza uygun bir domain adı seçtiğinizden emin olun.
 
-## Barındırma Sağlayıcısı
+## Barındırma Sağlayıcısı {#hosting-provider}
 
 Artık nişinizi ve işinizi temsil eden dikkat çekici bir domain adınız olduğuna göre, Ultimate Multisite ile ağınızı barındırmak için iyi bir web barındırma şirketi seçmeniz gerekecek. Piyasada bazı iyi seçenekler var. Bazı barındırma sağlayıcıları Ultimate Multisite ile iyi entegre oluyor; bu, ne planladığınıza bağlı olarak belirleyici bir faktör olabilir.
 
@@ -25,7 +25,7 @@ Ultimate Multisite herhangi bir barındırma sağlayıcısında çalışmalıdı
 
 Sunucu özelliklerine gelince, belirli bir formül yok çünkü bu, sunacağınız özelliklere ve işlevlere ve ağınızın büyüklüğüne bağlı olacaktır. Paylaşımlı bir barındırma iyi bir başlangıç olabilir, ancak ağınız büyümeye başladığı anda muhtemelen özel bir VPS'a ihtiyacınız olacaktır.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Şimdi, bir WordPress Multisite kurulumundan biraz bahsedelim.
 

@@ -1,86 +1,122 @@
 ---
-title: ಅಡ್ಮಿನ್ ಪ್ಯಾನೆಲ್ ಪ್ರವಾಸ
+title: ನಿರ್ವಾಹಕ ಫಲಕದ ಪರಿಚಯ
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# ಅಡ್ಮಿನ್ ಪ್ಯಾನೆಲ್ ಪರಿಚಯ
+# Admin Panel ಅನ್ನು ವೀಕ್ಷಿಸುವುದು {#touring-the-admin-panel}
 
-Ultimate Multisite ಸಾಧ್ಯವಾದಷ್ಟು ಸರಳ ಮತ್ತು ಸ್ವಯಂ-ವಿವರಣಾತ್ಮಕವಾಗಿರಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ, ಆದರೆ ಇಷ್ಟು ಶಕ್ತಿಶಾಲಿ ಸಾಧನದೊಂದಿಗೆ ಒಂದು ಮಾರ್ಗದರ್ಶಿ ಪ್ರವಾಸ ಸಹಾಯಕವಾಗಬಹುದು. ನಿಮಗೆ ಪರಿಚಯ ಮಾಡಿಕೊಡಲು ಅಡ್ಮಿನ್ ಪುಟಗಳನ್ನು ಒಂದೊಂದಾಗಿ ನೋಡೋಣ.
+Ultimate Multisite ಸಾಧ್ಯವಾದಷ್ಟು ಸರಳವಾಗಿಯೂ ಸ್ವಯಂ-ವಿವರಣಾತ್ಮಕವಾಗಿಯೂ ಇರಲು ಉದ್ದೇಶಿಸಿದೆ. ಆದರೆ ಇಷ್ಟು ಶಕ್ತಿಶಾಲಿ ಸಾಧನಕ್ಕೆ ಮಾರ್ಗದರ್ಶಿತ ಪರಿಚಯ ಸಹಾಯಕವಾಗಬಹುದು. ನೀವು ಸುಲಭವಾಗಿ ಹೊಂದಿಕೊಳ್ಳಲು admin ಪುಟಗಳನ್ನು ನೋಡೋಣ.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite **Dashboard** ಆದಾಯಗಳು, ಸೈಟ್ ಚಟುವಟಿಕೆಗಳು, ಸದಸ್ಯತ್ವ ಬೆಳವಣಿಗೆ, ಸಂದರ್ಶಕರ ಸಂಖ್ಯೆ, ಮತ್ತು ಭೌಗೋಳಿಕ ಮಾಹಿತಿ ಸೇರಿದಂತೆ ಮೂಲಭೂತ ವರದಿಗಳು ಮತ್ತು ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ತೋರಿಸುತ್ತದೆ.
+Ultimate Multisite **Dashboard** ಆದಾಯ, site ಚಟುವಟಿಕೆಗಳು, membership ಬೆಳವಣಿಗೆ, visitor ಸಂಖ್ಯೆಗಳು ಮತ್ತು ಭೌಗೋಳಿಕ data ಸೇರಿದಂತೆ ಮೂಲ ವರದಿಗಳು ಮತ್ತು analytics ತೋರಿಸುತ್ತದೆ.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Dashboard ನ ಸಂಪೂರ್ಣ ನೋಟ ಇಲ್ಲಿದೆ:
 
-**Checkout Forms** ನಿಮಗೆ ಕಸ್ಟಮ್ ನೋಂದಣಿ ಪುಟಗಳನ್ನು ರಚಿಸುವ ನಮ್ಯತೆಯನ್ನು ನೀಡುತ್ತವೆ. ನೀವು ಫೀಲ್ಡ್‌ಗಳನ್ನು ಕಸ್ಟಮೈಜ್ ಮಾಡಬಹುದು, ಕಸ್ಟಮ್ ಕ್ಲಾಸ್‌ಗಳು ಮತ್ತು ಸ್ಕ್ರಿಪ್ಟ್‌ಗಳನ್ನು ಸೇರಿಸಬಹುದು, ಮತ್ತು ಸಂದರ್ಶಕರ ದೇಶ ಅಥವಾ ಸ್ಥಳದ ಆಧಾರದ ಮೇಲೆ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಬಹುದು.
+![Ultimate Multisite Dashboard ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+ಮತ್ತು Dashboard ನ ಕೆಳಗಿನ ವಿಭಾಗ:
 
-## Products
+![Ultimate Multisite Dashboard ಕೆಳಗಿನ ವಿಭಾಗ](/img/admin/um-dashboard-bottom.png)
 
-**Products** ವಿಭಾಗದಲ್ಲಿ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ಗಾಗಿ ವಿವಿಧ ಯೋಜನೆಗಳು, ಪ್ಯಾಕೇಜ್‌ಗಳು, ಮತ್ತು ಸೇವೆಗಳನ್ನು ರಚಿಸಬಹುದು. ಉತ್ಪನ್ನ ಮಟ್ಟದಲ್ಲಿ ಬೆಲೆಗಳು, ಬಿಲ್ಲಿಂಗ್ ಆವರ್ತನಗಳು, ಮತ್ತು ಮಿತಿಗಳು & ಕೋಟಾಗಳನ್ನು ನಿರ್ಧರಿಸಿ.
+Network Dashboard ನ ಸಂಪೂರ್ಣ ನೋಟವೂ ಇಲ್ಲಿದೆ:
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Checkout Forms {#checkout-forms}
 
-**Memberships** ಪುಟವು ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಚಂದಾದಾರಿಕೆಗಳನ್ನು ತೋರಿಸುತ್ತದೆ. ಯೋಜನೆಗಳು, ಉತ್ಪನ್ನಗಳು, ಬಿಲ್ಲಿಂಗ್ ಮೊತ್ತಗಳು ಮತ್ತು ಆವರ್ತನಗಳು, ಪಾವತಿ ಇತಿಹಾಸ, ಮತ್ತು ಸಮಯ ಮುದ್ರೆಗಳು ಸೇರಿದಂತೆ ಚಂದಾದಾರಿಕೆ ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ.
+**Checkout Forms** ನಿಮಗೆ custom registration ಪುಟಗಳನ್ನು ರಚಿಸುವ ಲವಚಿಕತೆಯನ್ನು ನೀಡುತ್ತವೆ. ನೀವು fields ಅನ್ನು custom ಮಾಡಬಹುದು, custom classes ಮತ್ತು scripts ಸೇರಿಸಬಹುದು, ಮತ್ತು visitor ನ ದೇಶ ಅಥವಾ ಸ್ಥಳದ ಆಧಾರದ ಮೇಲೆ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಬಹುದು.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Checkout Forms ಪಟ್ಟಿ](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Products {#products}
 
-**Payments** ಪುಟವು ನಿರ್ದಿಷ್ಟ ಉತ್ಪನ್ನಗಳು ಮತ್ತು ಮೊತ್ತಗಳನ್ನು ಒಳಗೊಂಡಂತೆ ವಿವರವಾದ ವಹಿವಾಟು ಮಾಹಿತಿಯೊಂದಿಗೆ ನಿಮ್ಮ ಇಡೀ ನೆಟ್‌ವರ್ಕ್‌ನಾದ್ಯಂತ ಪಾವತಿ ಇತಿಹಾಸದ ತ್ವರಿತ ನೋಟವನ್ನು ಒದಗಿಸುತ್ತದೆ.
+**Products** ವಿಭಾಗದಲ್ಲಿ ನಿಮ್ಮ network ಗಾಗಿ ವಿಭಿನ್ನ plans, packages ಮತ್ತು services ರಚಿಸುತ್ತೀರಿ. Product ಮಟ್ಟದಲ್ಲಿ ಬೆಲೆಗಳು, billing frequencies, ಹಾಗೂ limits & quotas ಅನ್ನು ನಿರ್ಧರಿಸಿ.
 
-![Payments list](/img/admin/payments-list.png)
+![Products ಪಟ್ಟಿ](/img/admin/products-list.png)
 
-## Customers
+## Memberships {#memberships}
 
-**Customers** ಪುಟವು ಹೆಸರು, ಇಮೇಲ್ ವಿಳಾಸ, ಕೊನೆಯ ಲಾಗಿನ್, ಮತ್ತು ಅವರ ಸಬ್‌ಸೈಟ್‌ಗೆ ಲಾಗಿನ್ ಆಗಲು "switch to" ಲಿಂಕ್ ಸೇರಿದಂತೆ ಮೂಲಭೂತ ಬಳಕೆದಾರ ಮಾಹಿತಿಯೊಂದಿಗೆ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ನೋಂದಾಯಿತ ಎಲ್ಲಾ ಸದಸ್ಯರನ್ನು ತೋರಿಸುತ್ತದೆ.
+**Memberships** ಪುಟವು ನಿಮ್ಮ network ನಲ್ಲಿರುವ ಎಲ್ಲಾ subscriptions ತೋರಿಸುತ್ತದೆ. Plans, products, billing amounts ಮತ್ತು frequencies, payment history, ಹಾಗೂ timestamps ಸೇರಿದಂತೆ subscription ವಿವರಗಳನ್ನು ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸಂಪಾದಿಸಿ.
 
-![Customers list](/img/admin/customers-list.png)
+![Memberships ಪಟ್ಟಿ](/img/admin/memberships-list.png)
 
-## Sites
+## Payments {#payments}
 
-**Sites** ಪುಟವು ಸೈಟ್ ಟೆಂಪ್ಲೇಟ್‌ಗಳು ಮತ್ತು ಗ್ರಾಹಕ-ಮಾಲೀಕತ್ವದ ಸೈಟ್‌ಗಳು ಸೇರಿದಂತೆ ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿರುವ ಎಲ್ಲಾ ಸಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. ಮ್ಯಾಪ್ ಮಾಡಿದ ಡೊಮೇನ್‌ಗಳು, ಮಿತಿಗಳು & ಕೋಟಾಗಳು, plugins ಮತ್ತು themes, ಮತ್ತು ಸೈಟ್ ಥಂಬ್‌ನೇಲ್‌ಗಳನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಿ.
+**Payments** ಪುಟವು ನಿಮ್ಮ ಸಂಪೂರ್ಣ network ನ payment history ಯ ತ್ವರಿತ ನೋಟವನ್ನು ನೀಡುತ್ತದೆ. ನಿರ್ದಿಷ್ಟ products ಮತ್ತು amounts ಸೇರಿದಂತೆ ವಿವರವಾದ transaction ಮಾಹಿತಿ ಇದರಲ್ಲಿ ಇರುತ್ತದೆ.
 
-![Sites list](/img/admin/sites-list.png)
+![Payments ಪಟ್ಟಿ](/img/admin/payments-list.png)
 
-## Domains
+## Customers {#customers}
 
-**Domains** ಪುಟವು ಸಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ಮ್ಯಾಪ್ ಮಾಡಲಾದ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳಿಗೆ ಮೀಸಲಾಗಿದೆ. ಸೂಪರ್ ಅಡ್ಮಿನ್ ಆಗಿ, ನೀವು ಕಸ್ಟಮ್ ಡೊಮೇನ್ ಹೆಸರುಗಳನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ಸೇರಿಸಬಹುದು ಅಥವಾ ಮ್ಯಾಪ್ ಮಾಡಬಹುದು ಮತ್ತು DNS ದಾಖಲೆಗಳು ಮತ್ತು ಲಾಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಬಹುದು.
+**Customers** ಪುಟವು ನಿಮ್ಮ network ನಲ್ಲಿ registered ಆಗಿರುವ ಎಲ್ಲಾ members ಅನ್ನು ತೋರಿಸುತ್ತದೆ. ಹೆಸರು, email address, last login, ಮತ್ತು ಅವರ subsite ಗೆ login ಆಗಲು "switch to" link ಸೇರಿದಂತೆ ಮೂಲ user ಮಾಹಿತಿ ಇದರಲ್ಲಿ ಇರುತ್ತದೆ.
 
-![Domains list](/img/admin/domains-list.png)
+![Customers ಪಟ್ಟಿ](/img/admin/customers-list.png)
 
-## Discount Codes
+## Sites {#sites}
 
-**Discount Codes** ನಿಮ್ಮ ಅಂತಿಮ ಬಳಕೆದಾರರಿಗೆ ರಿಯಾಯಿತಿಗಳನ್ನು ನೀಡಲು ಕೂಪನ್ ಕೋಡ್‌ಗಳನ್ನು ರಚಿಸಲು ಅನುಮತಿಸುತ್ತದೆ. ರಿಯಾಯಿತಿ ಮೌಲ್ಯವನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಿ ಮತ್ತು ನಿರ್ದಿಷ್ಟ ಬಳಕೆದಾರರು ಅಥವಾ ಗುಂಪುಗಳನ್ನು ಗುರಿಯಾಗಿಸಿ.
+**Sites** ಪುಟವು site templates ಮತ್ತು customer-owned sites ಸೇರಿದಂತೆ ನಿಮ್ಮ network ನಲ್ಲಿರುವ ಎಲ್ಲಾ subsites ಅನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. Mapped domains, limits & quotas, plugins ಮತ್ತು themes, ಹಾಗೂ site thumbnails ಅನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಿ.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Sites ಪಟ್ಟಿ](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domains {#domains}
 
-**Broadcasts** ನಿಮ್ಮ ಸಬ್‌ಸೈಟ್ ಬಳಕೆದಾರರಿಗೆ ಪ್ರಕಟಣೆಗಳನ್ನು ಹೊರಡಿಸಲು ಅಥವಾ ಖಾಸಗಿ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು ಒಂದು ಸಾಧನವಾಗಿದೆ. ಅವರು ಚಂದಾದಾರರಾಗಿರುವ ಯೋಜನೆ ಅಥವಾ ಉತ್ಪನ್ನದ ಆಧಾರದ ಮೇಲೆ ನಿರ್ದಿಷ್ಟ ಬಳಕೆದಾರ ಗುಂಪುಗಳನ್ನು ಗುರಿಯಾಗಿಸಿ.
+**Domains** ಪುಟವು subsites ಗೆ mapped ಆಗಿರುವ custom domains ಗಾಗಿ ಮೀಸಲಾಗಿದೆ. Super admin ಆಗಿ, ನೀವು custom domain names ಅನ್ನು ಕೈಯಾರೆ ಸೇರಿಸಬಹುದು ಅಥವಾ map ಮಾಡಬಹುದು, ಮತ್ತು DNS records ಹಾಗೂ logs ನೋಡಬಹುದು.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Domains ಪಟ್ಟಿ](/img/admin/domains-list.png)
 
-## Settings
+## Discount Codes {#discount-codes}
 
-**Settings** ಪುಟದಲ್ಲಿ ನೀವು Ultimate Multisite ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡುತ್ತೀರಿ — ನೋಂದಣಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಪಾವತಿಗಳು, API ಮತ್ತು webhooks, ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್, ಮತ್ತು ಇತರ ಇಂಟಿಗ್ರೇಷನ್‌ಗಳು.
+**Discount Codes** ನಿಮ್ಮ end-users ಗೆ discounts ನೀಡಲು coupon codes ರಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. Discount value ಅನ್ನು ಸೂಚಿಸಿ, ನಿರ್ದಿಷ್ಟ users ಅಥವಾ groups ಅನ್ನು ಗುರಿಯಾಗಿಸಿ.
 
-![Settings page](/img/admin/settings-general.png)
+![Discount Codes ಪಟ್ಟಿ](/img/admin/discount-codes-list.png)
 
-## Events
+## Broadcasts {#broadcasts}
 
-**Events** ಪುಟವು ನಿಮ್ಮ ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿನ ಎಲ್ಲಾ ಈವೆಂಟ್‌ಗಳು ಮತ್ತು ಲಾಗ್‌ಗಳ ದಾಖಲೆಯನ್ನು ಇಟ್ಟುಕೊಳ್ಳುತ್ತದೆ. ಇದು ಯೋಜನೆ ಬದಲಾವಣೆಗಳು, ಸೈನ್‌ಅಪ್‌ಗಳು, ಮತ್ತು ಇತರ ಚಲನವಲನಗಳಂತಹ ಚಟುವಟಿಕೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡುತ್ತದೆ — ನಿಮ್ಮ ಮಲ್ಟಿಸೈಟ್ ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಉಪಯುಕ್ತವಾಗಿದೆ.
+**Broadcasts** ನಿಮ್ಮ subsite users ಗೆ announcements ಹೊರತರುವ ಅಥವಾ private messages ಕಳುಹಿಸುವ ಸಾಧನವಾಗಿದೆ. ಅವರು subscribed ಆಗಿರುವ plan ಅಥವಾ product ಆಧಾರದ ಮೇಲೆ ನಿರ್ದಿಷ್ಟ user groups ಅನ್ನು ಗುರಿಯಾಗಿಸಿ.
 
-![Events list](/img/admin/events-list.png)
+![Broadcasts ಪಟ್ಟಿ](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Settings {#settings}
 
-**Webhooks** ಮತ್ತೊಂದು ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಡೇಟಾವನ್ನು ತಲುಪಿಸಲು ನಿಮಗೆ ಅನುಮತಿಸುತ್ತವೆ. Ultimate Multisite ನಿಂದ Zapier ನಂತಹ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್‌ಗಳಿಗೆ ಡೇಟಾ ಕಳುಹಿಸಲು ಉಪಯುಕ್ತವಾಗಿದೆ.
+**Settings** ಪುಟದಲ್ಲಿ ನೀವು Ultimate Multisite ಅನ್ನು configure ಮಾಡುತ್ತೀರಿ — registration settings, payments, API ಮತ್ತು webhooks, domain mapping, ಹಾಗೂ ಇತರ integrations.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+AI connector settings ಪ್ರಸ್ತುತ ಬೆಂಬಲಿತ OAuth provider pools ಅನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತವೆ: Anthropic Max, OpenAI ChatGPT/Codex, ಮತ್ತು Google AI Pro. ಪ್ರತಿಯೊಂದು provider card super admins ಗೆ accounts connect ಮಾಡಲು, saved accounts refresh ಮಾಡಲು, email ಮೂಲಕ accounts remove ಮಾಡಲು, ಮತ್ತು sandboxed environment browser redirect ಅನ್ನು block ಮಾಡಿದಾಗ manual OAuth fallback ಬಳಸಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ. Cursor Pro setup options ಅನ್ನು admin panel ನಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
+
+ChatGPT/Codex accounts connector-backed tool use ಅನ್ನು ಬೆಂಬಲಿಸುತ್ತವೆ, operation tools ಅನ್ನು ಅನುಮತಿಸುವಲ್ಲಿ. ಆದ್ದರಿಂದ connector-supported operations ಮೇಲೆ ಅವಲಂಬಿತವಾದ admin workflows, OpenAI account connect ಆದ ನಂತರ Codex tool behavior ಅನ್ನು ಬಳಸಬಹುದು.
+
+![Settings ಪುಟ](/img/admin/settings-general.png)
+
+General settings ಪುಟದ ಸಂಪೂರ್ಣ ನೋಟ ಇಲ್ಲಿದೆ:
+
+![Settings general ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/settings-general-full.png)
+
+ಮತ್ತು emails settings ಪುಟ:
+
+![Settings emails ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/settings-emails-full.png)
+
+ಮತ್ತು payments settings ಪುಟ:
+
+![Settings payments ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/settings-payments-full.png)
+
+ಮತ್ತು payments settings ನ ಕೆಳಗಿನ ವಿಭಾಗ:
+
+![Settings payments ಕೆಳಗಿನ ವಿಭಾಗ](/img/admin/settings-payments-bottom.png)
+
+ಮತ್ತು sites settings ಪುಟ:
+
+![Settings sites ಸಂಪೂರ್ಣ ಪುಟ](/img/admin/settings-sites-full.png)
+
+## Events {#events}
+
+**Events** ಪುಟವು ನಿಮ್ಮ network ನಲ್ಲಿನ ಎಲ್ಲಾ events ಮತ್ತು logs ಗಳ ದಾಖಲೆಯನ್ನು ಇಡುತ್ತದೆ. Plan changes, signups, ಮತ್ತು ಇತರ movements ಮುಂತಾದ activities ಅನ್ನು ಇದು track ಮಾಡುತ್ತದೆ — ನಿಮ್ಮ multisite ಅನ್ನು monitor ಮಾಡಲು ಉಪಯುಕ್ತ.
+
+![Events ಪಟ್ಟಿ](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks** ನಿಮಗೆ data ಅನ್ನು ಇನ್ನೊಂದು application ಗೆ deliver ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತವೆ. Ultimate Multisite ನಿಂದ Zapier ಮುಂತಾದ platforms ಗೆ data ಕಳುಹಿಸಲು ಉಪಯುಕ್ತ.
+
+![Webhooks ಪಟ್ಟಿ](/img/admin/webhooks-list.png)

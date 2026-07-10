@@ -3,13 +3,13 @@ title: Site-Templates
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Dëst Artikel verwiist uf Ultimate Multisite version 2.x. Wenn Dir Version 1.x bruchet,**_ **luegt Sie sich dëse Artikel a.**_
 
 Ois mir Ziel bi de Erschaffung vun eme Premium Netzmatrik mit Ultimate Multisite isch, so vill Prozess wie möglich z'automatisé, wërend mir üsne Kunde Flexibilität und verschiduni Option gänd, wéi si sine Websites erschaffe. E eifach Weg, dëse Usglich z'erreiche, isch d'Nutzung vun de Ultimate Multisite Site Templates Funktio.
 
-## Wat isch en Site Template?
+## Wat isch en Site Template? {#what-is-a-site-template}
 
 Wie de Name scho seit, isch en Site Template en Boilerplate-Site, wo als Basis brucht kann, wenn si neui Sites in Ihrer Netz erschafft.
 
@@ -17,7 +17,7 @@ Dat heisst, Sie chönne e Basis-Site erschaffe, verschiduni Plugins aktiviere, e
 
 Dat tönt super, aber wie erschafft mer en neui Site Template? Es isch so eifach wie möglich.
 
-## Erschaffe und Bearbeite vo eme neue Site Template
+## Erschaffe und Bearbeite vo eme neue Site Template {#creating-and-editing-a-new-site-template}
 
 Site Templates sind einfach normali Sites in Ihrer Netz. Um en neui Template z'erschaffe, müesse Sie eifach uf **Network Admin > Ultimate Multisite > Sites > Add Site** go.
 
@@ -35,7 +35,7 @@ Am de fon vom Form, gsehnd Sie en **Copy Site** toggle switch. Dat erlaubt Ihne,
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Inhalt vo ere Site Template aapasse
+### Inhalt vo ere Site Template aapasse {#customizing-the-contents-of-a-site-template}
 
 Um Ihre site template azpasse, navigiere Sie eifach zu sin Dashboard panel und machend die Änderige, wo Sie bruche. Sie chönne neui posts, seite aktiviere, plugins aktiviere und s'aktivi Theme ändere. Sie chönne sogar zum Customizer goh und alli Art vo Aapassprochtione ändere.
 
@@ -43,11 +43,11 @@ Um Ihre site template azpasse, navigiere Sie eifach zu sin Dashboard panel und m
 
 All die Date wärde kopiert, wenn en Kunde e neie site uf Basis dere Site Template erstellt.
 
-### Fortgschritteni Optionne
+### Fortgschritteni Optionne {#advanced-options}
 
 Wenn Sie mit chli Custom Coding vertraut sind, chönne Sie d'Search and Replace API nutze, um Informatione automatisch uf de neue site nach ere Erschaffig z'ersetze. Das isch nützlich für Sache wie s'Ersetze vo Firmenname ufere About Page oder s'Ersetze vo de Kontakt-E-Mail ufere Kontakt Page, usw.
 
-### Site Templates bruche
+### Site Templates bruche {#using-site-templates}
 
 Okay, Sie händ also e Hauf vo verschiedene Site Templates mit unterschiedliche Designs, Themes und Iistellige erstellt. Wie machend Sie die jetzt nützlich für Ihr Netzwerk?
 
@@ -59,7 +59,7 @@ Im Grund git's jetz zwei Aasätz, wo Sie chönne bruche (nöd glichzitig):
 
   * Ihri Kunde d'Site Templates selber wähle loh während de Registrierig.
 
-#### Modus 1: Site Template zuewiese
+#### Modus 1: Site Template zuewiese {#mode-1-assign-site-template}
 
 In dem Modus chönne dini Kunde kei Template wähle, wenn si es Konto erstelle, sondern du definiersch, welchi Template für jede vo dine Pläne brucht wird.
 
@@ -71,7 +71,7 @@ Das bringt dich zur Seite **Edit Product**. Unter em Abschnitt **Product Options
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modus 2: Verfüegbari Site Template wähle
+#### Modus 2: Verfüegbari Site Template wähle {#mode-2-choose-available-site-template}
 
 In däm Modus gibsch du dine Kunde e Wahl während em Registrierigs-Prozess. Si chönne us de verschiedene Site Templates, wo du unter de Produkt-Einstellungen definiert hesch, wähle. Du häsch d'Möglichkeit, z'begrenze, welchi Site Template si wähle chönne, unter em ausgewählte Produkt. Das erlaubt dir, für jedes Produkt verschiedeni Sets vo Site Templates z'ha, was ideal isch, um verschideni Funktionä und Features für es höcherpriisigs Produkt hervorzhäbe.
 
@@ -79,7 +79,7 @@ Auf de **Produkt bearbeite** Seite. Unter em Abschnitt **Product Options**, find
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Standardmodus: Site template uswahl im Checkout Form
+### Standardmodus: Site template uswahl im Checkout Form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Wenn Sie all Ihre Site Templates während de Registrierig verfügbar ha wend, oder wenn Sie nöd wend, dass Sie extra Arbet mached, um Site Templates unter jedem Produkt z'zuegnäh oder z'spezifiziere. Denn chönne Sie d'Site Template Uswahl under Ihrem **Checkout Form** festlege. Um das z'mache, gahts zu **Ultimate Multisite > Checkout Forms** und klicke uf **Edit** unter em Form, wo Sie konfiguriere wend.
 
@@ -93,29 +93,29 @@ Am Frontend gsehnd d'Kunde de Template-Wähler während em Checkout und chönne 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Site Template Options
+### Site Template Options {#site-template-options}
 
 Es git anderi andere Site Template Functions verfügbar, wo Sie unter de Ultimate Multisite Settings iischalte oder usschalte chönd.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Template-Wechsel zuelouene
+#### Template-Wechsel zuelouene {#allow-template-switching}
 
 Wenn Sie die Option iischalte, dörfe Ihre Kunde s'Template wähle, wo sie während em Registrierigs-Prozess wähle chönd, nachdem s'Konto und Site erstellt isch. Das isch für de Kunde guet, will er s'Template no chönnt neu wähle, wenn er später merkt, dass sini ursprüngle Wahl nöd die beschti für sini spezielle Bedürfnis gsi isch.
 
-#### Benutzer dörfe ihri Site als Template bruche
+#### Benutzer dörfe ihri Site als Template bruche {#allow-users-to-use-their-site-as-templates}
 
 Will Subsite-Benutzer Ziit investiert händ i de Bau und Design vo sine eigene Sites, wend sie villicht s'eigene Site kopiere und es als eis vo de verfügbare Site Templates nutze, wenn sie e anderi Subsite uf Ihrem Netzwerk erstellt. Die Option dörfe ihne das ermögliche.
 
-#### Media bi Template-Duplizierig kopiere
+#### Media bi Template-Duplizierig kopiere {#copy-media-on-template-duplication}
 
 Wenn Sie die Option iischalte, wird s'Media, wo uf de Template-Site hochglade isch, uf d'neu erstellti Site kopiert. Das chann uf jedem Plan überschribe werde.
 
-#### **Suchmaschine verhindere, dass sie Site Templates indexiere**
+#### **Suchmaschine verhindere, dass sie Site Templates indexiere** {#prevent-search-engines-from-indexing-site-templates}
 
 Site Templates wie in däm Artikel besproche sind zwar Standardvorlagen (Boilerplates), aber sie sind immer no Teil vo Ihrem Netzwerk, was bedütet, dass Suchmaschine sie au finde chönnt. Die Option erlaubt Ihnen, die Site Templates z'verstecke, damit Suchmaschine sie indexiere chönd.
 
-## Pre-füllig vo Site Templates mit Auto Search-and-Replace
+## Pre-füllig vo Site Templates mit Auto Search-and-Replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Einer vo de mächtigste Funktione vo Ultimate Multisite isch d Möglichkeit, willi beliebigi Text, Farbe und Feld uf s'Registrierigsform z'füege. Sobald mir die Date erfasst händ, chönd mir sie bruche, um Inhalt in bestimmte Teile vom Site-Template z'vorbefülle. Denn, wenn d'neui Site publiziert wird, ersetzt Ultimate Multisite die Platzhalter mit de tatsächliche Informatione, wo während de Registrierig igfüegt worde sind.
 
@@ -135,7 +135,7 @@ Ultimate Multisite ersetzt denn die Platzhalter automatisch mit de Date, wo de K
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### D'Lösig für s'Problem "Template voller Platzhalter"
+### D'Lösig für s'Problem "Template voller Platzhalter" {#solving-the-template-full-of-placeholders-problem}
 
 All das isch super, aber mir stossed uf es hässigs Problem: Jetzt sind üsi Site-Templates – wo vo üsne Kunde bsuecht werde chönd – voll mit hässige Platzhalter, wo nöd vill verzelle.
 

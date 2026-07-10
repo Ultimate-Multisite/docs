@@ -3,11 +3,11 @@ title: Документация за разработчици
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Документация за разработчици
+# Документация за разработчици {#developer-documentation}
 
 Този гайд предоставя на разработчиците всичко необходимо за интегриране, разширяване или разработване на аддонове за Ultimate Multisite. Ultimate Multisite превръща WordPress Multisite мрежа в платформа за уебсайтове като услуга (Website-as-a-Service, WaaS).
 
-## Какво е налично
+## Какво е налично {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Пълни CRUD операции за всички обекти (клиенти, сайтове, членства, плащания, продукти, домейни) с автентикация чрез API ключ
 - **[Hooks Reference](./hooks/guide)** — Над 200 action хука и над 280 filter хука за събития в жизнения цикъл и персонализация
@@ -15,13 +15,13 @@ _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 - **[Code Examples](./code-examples/)** — Напреднали модели за динамично ценообразуване, предоставяне на сайтове, персонализирани ограничения и обработка на множество пейджи
 - **[Addon Development](./addon-development/getting-started)** — Структуриран фреймуърк за изграждане на аддон плагини
 
-## Изисквания
+## Изисквания {#requirements}
 
 - Инсталация на WordPress Multisite
 - PHP 7.4 или по-висок
 - Активиран плагин Ultimate Multisite
 
-## Инсталация с Composer / Bedrock
+## Инсталация с Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite е наличен в [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) като `ultimate-multisite/ultimate-multisite`. Това е препоръчителният метод за инсталация за настройки на WordPress, базирани на [Bedrock](https://roots.io/bedrock/)- и други среди, управлявани от Composer.
 
@@ -45,15 +45,15 @@ wp plugin activate ultimate-multisite --network
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Бързо започване
+## Бързо започване {#quick-start}
 
-### Използване на REST API
+### Използване на REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Хукане към събития
+### Хукане към събития {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {

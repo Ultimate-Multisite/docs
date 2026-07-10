@@ -1,42 +1,40 @@
 ---
-title: Zaregistrovat účet přes Zapier
+title: Zaregistrovat Account přes Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Událost: Registrace účtu pomocí Zapier
+# Událost: Registrace Account přes Zapier {#event-register-an-account-via-zapier}
 
-V článku [Integrace Ultimate Multisite se Zapier](zapier.md) jsme si ukázali, jak pomocí Zapier provádět různé akce v Ultimate Multisite na základě triggerů a událostí. V tomto článku vám ukážeme, jak můžete integrovat aplikace třetích stran. Jako zdroj dat použijeme Google Sheets a informace odešleme do Ultimate Multisite pro registraci účtu.
+V článku [Integrace Ultimate Multisite se Zapier](zapier.md) jsme probrali, jak používat Zapier k provádění různých akcí v Ultimate Multisite na základě triggerů a událostí. V tomto článku ukážeme, jak můžete integrovat aplikace třetích stran. Jako zdroj dat použijeme Google Sheets a odešleme informace do Ultimate Multisite k registraci Account.
 
-Nejprve si na Google Drive vytvořte **Google Sheet**. Dbejte na správné pojmenování jednotlivých sloupců, abyste později mohli snadno namapovat data.
+Před připojením Zapier přejděte do **Ultimate Multisite > Settings > API & Webhooks** a potvrďte, že API je povoleno. Zkopírujte API Key a API Secret z této obrazovky, až se Zapier zeptá na přihlašovací údaje k Ultimate Multisite Account.
 
-![Google Sheet se sloupci pro zákaznická data](/img/admin/webhooks-list.png)Po vytvoření Google Sheetu se přihlaste do svého účtu Zapier a začněte vytvářet zap.
+![Nastavení API a Webhooks s možnostmi API Key, API Secret a Enable API](/img/admin/settings-api-webhooks.png)
 
-![Dashboard Zapier pro vytvoření nového zapu](/img/admin/webhooks-list.png)Do vyhledávacího pole **„App event"** zadejte **„Google Sheets"**
+Nejprve musíte vytvořit **Google Sheet** ve svém Google Drive. Ujistěte se, že správně definujete každý sloupec, abyste mohli data později snadno namapovat.
 
-![Výběr Google Sheets jako události aplikace](/img/admin/webhooks-list.png)
+Po vytvoření Google sheet se můžete přihlásit ke svému Zapier Account a začít vytvářet zap.
 
-Poté v poli „**Event**" vyberte „**New spreadsheet row**" a klikněte na „**Continue**"
+Pod vyhledávacím polem pro **"App event"** vyberte **"Google Sheets"**
 
-![Výběr události New spreadsheet row v Zapier](/img/admin/webhooks-list.png)V dalším kroku budete vyzváni k výběru **účtu Google**, kde je **Google Sheet** uložen. Ujistěte se, že je vybrán správný účet Google.
 
-![Výběr účtu Google pro Google Sheet](/img/admin/webhooks-list.png)
+Poté pro pole "**Event** " vyberte "**New spreadsheet row** " a stiskněte "**Continue** "
 
-V části „**Set up trigger**" vyberte a určete tabulku a list Google, ze kterých budou data pocházet. Vyplňte potřebné údaje a klikněte na „**Continue**"
+V dalším kroku budete vyzváni k výběru **Google Account**, ve kterém je **Google Sheet** uložen. Jen se tedy ujistěte, že je zadán správný Google Account.
 
-![Nastavení triggeru s výběrem tabulky a listu](/img/admin/webhooks-list.png)Dalším krokem je „**test your trigger**", abyste se ujistili, že je váš Google Sheet správně propojený.
 
-![Krok testování triggeru v Zapier](/img/admin/webhooks-list.png)Pokud je test úspěšný, měli byste vidět výsledek s některými hodnotami z vaší tabulky. Pokračujte kliknutím na „**Continue**".
+V části **"Set up trigger** " budete muset vybrat a zadat Google spreadsheet a worksheet, které budete používat a ze kterých budou data pocházet. Vyplňte je a stiskněte "**Continue** "
 
-![Úspěšný test triggeru zobrazující hodnoty z tabulky](/img/admin/webhooks-list.png)Dalším krokem je nastavení druhé akce, která vytvoří nebo zaregistruje účet v Ultimate Multisite. Do vyhledávacího pole zadejte „**Ultimate Multisite(2.0.2)**"
+Dále je potřeba "**test your trigger** ", abyste se ujistili, že je váš Google sheet správně připojen.
 
-![Výběr Ultimate Multisite jako aplikace pro akci](/img/admin/webhooks-list.png)
+Pokud je test úspěšný, měli byste vidět výsledek zobrazující některé hodnoty z vašich spreadsheetů. Klikněte na "**Continue** " a pokračujte.
 
-V poli „**Event**" vyberte „**Register an Account in Ultimate Multisite**" a klikněte na tlačítko „**Continue**".
+Dalším krokem je nastavit druhou akci, která vytvoří nebo zaregistruje Account v Ultimate Multisite. Ve vyhledávacím poli vyberte "**Ultimate Multisite(2.0.2)** "
 
-![Událost akce Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)V části „**Set up an action**" uvidíte různá pole pro zákaznická data, členství, produkty atd. Můžete namapovat hodnoty z vašeho Google Sheetu a přiřadit je do správných polí, kam mají být vyplněny, jak je znázorněno na obrázku níže.
 
-![Mapování hodnot z Google Sheet do polí Ultimate Multisite](/img/admin/webhooks-list.png)
+V poli "**Event** " vyberte "**Register an Account in Ultimate Multisite** " a poté klikněte na tlačítko "**Continue** ".
+
+V části "**Set up an action** " uvidíte různá pole dostupná pro data zákazníků, memberships, produkty atd. Hodnoty z Google sheet můžete namapovat a přiřadit je ke správnému poli, kde se mají vyplnit, jak je znázorněno na snímku obrazovky níže.
+
 
 Po namapování hodnot můžete akci otestovat.
-
-![Testování akce registrace účtu v Zapier](/img/admin/webhooks-list.png)

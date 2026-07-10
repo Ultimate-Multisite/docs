@@ -3,27 +3,27 @@ title: د سایت اخیست
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# سایت اکسبٹ کرنا (Site Export)
+# سایت اکسبٹ کرنا (Site Export) {#site-export}
 
 **سائٹ ایکسپورٹ** ایڈمن پیج نیٹ ورک ایڈمنز آپ کو ایک سائٹ، یا پورے نیٹ ورک کو، نقل و حرکت (migration)، بیک اپ، یا کسی دوسرے کام کے لیے ڈاؤن لوڈ کرنے کے قابل آرکائیو میں پیک کرنے کی سہولت دیتا ہے۔
 
-## ایک سائٹ کا ایکسپورٹ کرنا
+## ایک سائٹ کا ایکسپورٹ کرنا {#exporting-one-site}
 
 **Ultimate Multisite > Site Export** پر جائیں اور **Generate new Site Export** منتخب کریں۔ وہ سبسائٹ منتخب کریں جسے آپ ایکسپورٹ کرنا چاہتے ہیں، پھر یہ منتخب کریں کہ آرکائیو میں اپ لوڈز (uploads)، پلگ انز (plugins)، اور تھیمز (themes) شامل ہونے چاہئیں۔
 
 جب ایکسپورٹ مکمل ہو جائے تو **Existing Exports** لسٹ سے ZIP ڈاؤن لوڈ کریں۔ اب ایکسپورٹ شدہ ZIPs میں ایک خود چلنے والا `index.php` اور ایک `readme.txt` شامل ہوتے ہیں، تاکہ آرکائیو کو کسی نئے ہوسٹ پر اپ لوڈ کیا جا سکے اور پہلے کوئی الگ امپورٹر پلگ ان انسٹال کیے بغیر شروع کیا جا سکے۔
 
-## پورے نیٹ ورک کا ایکسپورٹ کرنا
+## پورے نیٹ ورک کا ایکسپورٹ کرنا {#exporting-the-whole-network}
 
 جب آپ کو اپنے پورے نیٹ ورک کے تمام سبسائٹس کو ایک ہی آرکائیو میں شامل کرنے کی ضرورت ہو تو Site Export پیج پر **Network Export** استعمال کریں۔ یہ ہوسٹ مائیگریشنز، ڈیزاسٹر ریکوری ڈرلز، یا اسٹیجنگ ریبوائل کے لیے بہت مفید ہے جہاں ہر سبسائٹ کو ایک ساتھ جانا پڑتا ہے۔
 
 چونکہ نیٹ ورک ایکسپورٹ ایک سنگل سائٹ ایکسپورٹ سے کہیں زیادہ بڑا ہو سکتا ہے، اسے کم ٹریفک والے وقت میں چلائیں اور یقینی بنائیں کہ ہدف اسٹوریج پر اپ لوڈز، پلگ انز، تھیمز، اور جنریٹ شدہ ZIP فائلوں کے لیے کافی خالی جگہ موجود ہے۔
 
-### نیٹ ورک امپورٹ بنڈلز (Network Import Bundles)
+### نیٹ ورک امپورٹ بنڈلز (Network Import Bundles) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0 سے شروع کرتے ہوئے، Site Exporter **network import bundles** بنا سکتا ہے — یہ خاص آرکائیو ہیں جو پورے نیٹ ورک پر سائٹ کی آسان بحالی کے لیے ڈیزائن کیے گئے ہیں۔ ایک نیٹ ورک امپورٹ بنڈل میں متعدد سائٹس کو نئے نیٹ ورک انسٹالیشن پر بحال کرنے کے لیے تمام ضروری فائلیں اور میٹا ڈیٹا شامل ہوتا ہے۔
 
-#### ایک نیٹ ورک امپورٹ بنڈل بنانا
+#### ایک نیٹ ورک امپورٹ بنڈل بنانا {#generating-a-network-import-bundle}
 
 ۱. **Ultimate Multisite > Site Export** ته ورته.
 ۲. **Generate new Network Export** دکمه یې په کلکه فشار ورکړئ.
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0 سے شروع کرتے ہوئے، Site Exporter **netw
 ۵. **Generate** د دခု کار کولو لپاره دکمه فشار ورکړئ.
 ۶. ZIP bundle یې له **Existing Exports** لیست څخه ډاونلوډ کړئ.
 
-#### د Network Import Bundle له بیا جوړولو لپاره
+#### د Network Import Bundle له بیا جوړولو لپاره {#restoring-from-a-network-import-bundle}
 
 د network import bundle له لارې سایتونه بیا جوړول:
 
@@ -52,7 +52,7 @@ Network import bundles په منځ کې ساتي:
 - Media uploads (if included in the bundle)
 - Custom database tables and data
 
-## د self-booting export ZIP نصبولو لپاره
+## د self-booting export ZIP نصبولو لپاره {#installing-a-self-booting-export-zip}
 
 په یو تازه host باندې self-booting ZIP بیا جوړول:
 

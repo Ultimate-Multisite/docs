@@ -3,9 +3,9 @@ title: Gukomera Icyemezo n'Inyandiko
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Gukoresha no Kwiboneka n'Inyandiko
+# Gukoresha no Kwiboneka n'Inyandiko {#managing-payments-and-invoices}
 
-## Icyemezo cyo Guhindura Ukozi n'Inyandiko
+## Icyemezo cyo Guhindura Ukozi n'Inyandiko {#payment-settings}
 
 Mbere y'uko ubatangira gukora inyandiko, ugomba guhindura ibyerekeye uko uboneza amafaranga. Gukoresha **Ultimate Multisite → Settings** kandi ukoresha tab ya **Payment**.
 
@@ -15,7 +15,7 @@ Iki ni uburyo bwo kubona uburyo bwose bw'ibyo bikorwa mu cyemezo cyo guhindura u
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Icyemezo cyo Guhindura Amafaranga (General Payment Options)
+### Icyemezo cyo Guhindura Amafaranga (General Payment Options) {#general-payment-options}
 
 Mu gihe cy'ibyo bikorwa mu cyemezo cyo guhindura, uza kuba ufite ubushobozi bwo gukora ibi:
 
@@ -24,7 +24,7 @@ Mu gihe cy'ibyo bikorwa mu cyemezo cyo guhindura, uza kuba ufite ubushobozi bwo 
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Icyemezo cyo Guhindura Inyandiko z'Ukozi (Payment Gateways)
+### Icyemezo cyo Guhindura Inyandiko z'Ukozi (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite yishobora gukoresha inyandiko z'ukozi nyinshi. Uza kuba ufite ubushobozi bwo guhindura kandi ukubwira uburyo bwose ku gihe cy'ibyo bikorwa mu tab ya Payment settings.
 
@@ -40,13 +40,13 @@ Urugero rwa inyandiko runaka rishobora gukoreshwa aho wiboneza API keys n'ibindi
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Ushobora gukoresha **Sandbox Mode** kugira ngo ubyumve uko inyandiko z'ukozi zikora mbere y'uko zishobora gukorwa mu gihe cy'ibyo bikorwa mu gihe cy'ubwoko bw'ibanze. Iyo Sandbox mode iriho, nta mafaranga y'ubwoko itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itandukanye itanduk
 
 Gukoresha umenyezi y'umutekano kugira ngo umbwire uburyo bwose bwo gukora (line items), ubushobozi bwa umuryango, ibyemezo mu gihe cy'umutekano n'ubwoko bw'umutekano.
 
-## Invoices (Inyemezo)
+## Invoices (Inyemezo) {#viewing-payments}
 
 Ultimate Multisite igaragaza inyemezo z'umutekano mu gihe uburyo bwo gukora umutekano. Ufashishijwe kugira ngo ushageza umutekano w'inyemezo n'ubwoko bw'ibyo byerekana ku Payment settings.
 

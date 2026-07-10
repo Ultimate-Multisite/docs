@@ -1,0 +1,116 @@
+---
+title: Tutor daudzvietņu saderība
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress spraudnis, kas pievieno saderības labojumus Tutor LMS multisite vidēs.
+
+## Apraksts {#description}
+
+Šis spraudnis nodrošina būtiskus saderības labojumus Tutor LMS darbināšanai WordPress multisite tīklos. Tas apstrādā lietotāju reģistrāciju kursos, instruktoru pārvaldību, kursu ierobežojumus un citu multisite specifisku funkcionalitāti.
+
+## Funkcijas {#features}
+
+- **Datubāzes tabulu pārvaldība**: Automātiski nosaka un izveido trūkstošās Tutor LMS tabulas, kuru izveide neizdodas multisite ārējo atslēgu ierobežojumu dēļ
+- **Multisite lietotāju reģistrācija kursos**: Pielāgoti AJAX apstrādātāji lietotāju reģistrācijas pārvaldībai tīkla vietnēs
+- **Instruktora lomas pārvaldība**: Automātiska instruktora lomas piešķiršana un pārvaldība multisite vidēs
+- **Kursu ierobežojumi**: Integrācija ar Ultimate Multisite kursu un piltuvju izveides ierobežojumu pārvaldībai, pamatojoties uz vietņu plāniem
+- **Pielāgoti administratora skati**: Multisite apzinošs instruktoru saraksts un pārvaldības saskarne
+- **Administratora rīki**: Datubāzes pārvaldības saskarne tīkla un vietņu administratoriem
+
+## Prasības {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS spraudnis (automātiski uzspiests, izmantojot `Requires Plugins` galveni)
+- WordPress Multisite instalācija
+- Ultimate Multisite spraudnis (kursu ierobežojumu funkcionalitātei)
+
+## Instalēšana {#installation}
+
+1. Augšupielādējiet spraudņa failus uz `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Pārliecinieties, ka Tutor LMS ir instalēts un aktivizēts
+3. Aktivizējiet spraudni, izmantojot WordPress izvēlni “Spraudņi”
+4. Spraudnis automātiski integrēsies ar Tutor LMS
+
+## Failu struktūra {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Funkcionalitāte, kas pārvietota no MU plugin {#functionality-moved-from-mu-plugin}
+
+Šis spraudnis satur funkcionalitāti, kas iepriekš bija `wp-content/mu-plugins/daves.php`:
+
+- Kursa statusa maiņas ierobežojumi
+- Kursu izveides ierobežojumi
+- CartFlows integrācija un ierobežojumi
+- Tutor instruktora lomas pārvaldība
+- Multisite lietotāju reģistrācijas kursos apstrāde
+- Kursa produkta ID attēlošana
+
+## Datubāzes pārvaldība {#database-management}
+
+### Problēma {#the-problem}
+
+WordPress multisite vidēs Tutor LMS tabulu izveide neizdodas tabulām ar ārējo atslēgu ierobežojumiem uz lietotāju tabulu. Tas notiek tāpēc, ka:
+
+- Vietnei specifiskas tabulas izmanto prefiksus, piemēram, `wp_2_tutor_carts`
+- Ārējās atslēgas atsaucas uz `wp_2_users` (kas nepastāv)
+- Faktiskā lietotāju tabula ir `wp_users` (koplietota visā tīklā)
+
+### Risinājums {#the-solution}
+
+Šis spraudnis automātiski:
+
+1. **Nosaka trūkstošās tabulas**: Pārbauda tabulas, kuru izveide neizdevās ārējo atslēgu ierobežojumu dēļ
+2. **Izveido tabulas ar pareizām atsaucēm**: Izmanto pareizo lietotāju tabulas nosaukumu (`wp_users` multisite gadījumā)
+3. **Apstrādā vairākus scenārijus**:
+   - Spraudņa aktivizēšana/atkārtota aktivizēšana
+   - Jaunas vietnes izveide tīklā
+   - Manuāla tabulu pārbaude, izmantojot administratora saskarni
+
+### Ietekmētās tabulas {#affected-tables}
+
+- `tutor_coupon_usages` - Satur ārējo atslēgu uz lietotāju tabulu
+- `tutor_carts` - Satur ārējo atslēgu uz lietotāju tabulu
+- `tutor_notification_preferences` - TutorPro tabula ar ārējo atslēgu uz lietotāju tabulu
+
+### Administratora saskarne {#admin-interface}
+
+Piekļūstiet datubāzes pārvaldības rīkiem šeit:
+
+- **Tīkla administrators**: Iestatījumi → Tutor Multisite DB
+- **Vietnes administrators**: Rīki → Tutor Multisite DB
+
+Saskarne ļauj jums:
+- Skatīt trūkstošās tabulas visās vietnēs
+- Manuāli palaist tabulu izveidi
+- Pārbaudīt datubāzes konfigurāciju
+- Skatīt detalizētu statusa informāciju
+
+## Atbalsts {#support}
+
+Šis spraudnis ir īpaši izstrādāts KursoPro platformai. Lai saņemtu tehnisko atbalstu, sazinieties ar izstrādes komandu.

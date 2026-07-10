@@ -3,13 +3,13 @@ title: Il-Fluss tal Registrazzjoni
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Il Flusso di Registrazzjoni (v2)
+# Il Flusso di Registrazzjoni (v2) {#the-registration-flow-v2}
 
 _**NOTA IMPORTANTI: Dan il artikolu jiferix għall-versjon 2.x ta Ultimate Multisite.**_
 
 L-utenti jistgħu jsir registrati b'modijiet differenti nida networks tiegħek. Huma jistgħu j묵u l-form ta registrazzjoni tiegħek jew link x-sharabbli għall-plan pre-selezzat. Hemmna nġib bik kif l-utenti tiegħek jistgħu jsir registrati fuq networks tiegħek u min għaddiem wara li jissir registrati fuq networks tiegħek.
 
-## L-Użu tal-Forma ta Registrazzjoni:
+## L-Użu tal-Forma ta Registrazzjoni: {#using-the-registration-form}
 
 Dan huwa l-proċediment standard ta registrazzjoni. Tista' tixgħelna una registrazzjoni b'una **checkout form** u dan huwa l-post li l-utenti tiegħek jmur biex jsir registrati fuq networks tiegħek u jisskrib għal plan. Tista' tkun għandek postijiet ta registrazzjoni multipli, kull unitie b'una forma ta registrazzjoni differenti jew għandek biex tgħmel dan.
 
@@ -35,13 +35,13 @@ Jekk huma registratu b'plan pagat jew il-verifikazzjoni tal-e-mail mhix obbligat
 
 ![Sit attivat mal-link biex jidħol għad dashboard](/img/frontend/site-activated.png)
 
-## Użu ta link ieħor (Shareable Link):
+## Użu ta link ieħor (Shareable Link): {#using-a-shareable-link}
 
 Il-proċess ta registrazzjoni u l-użu ta link shareable huwa sostanzjalment isiemaw l-form ta registrazzjoni, il-differenza hija li b'użu ta link shareable, il-klijenti tagħkom jistgħu jkollu template jew proddett pre-selekt għall-checkout form (refertu secunza Pre-selecting products and templates via URL parameters) jew meta kien ittrabja kodon coupon (refertu secunza Using URL Parameters).
 
 Il-proċess ta registrazzjoni se jkun isiemaw l-umhum: huma għandhom iġbeddu ism, username, adresi e-mail, isim il-sit u titoli, ecc... iżda il-plan jew template tal-sit jkun pre-selekt għalhom.
 
-### Registrazzjoni b'Metodi Pagamenti Manuali:
+### Registrazzjoni b'Metodi Pagamenti Manuali: {#registering-using-manual-payments}
 
 Jekk ma tistaqso u tebħu l-PayPal, Stripe jew qedwa minn gateway ta pagamenti ieħor offrot mill-Ultimate Multisite jew is-integrazzjonijiet tagħhom, tistaqsi u tebħu pagamenti manuali għall-klijenti tagħkom. B'mod dan, tistaqsi invoice għalhom biex jidawlu fuq proċessore ta pagamenti preferutu tiegħek wara li jirregistru fuq nnetz tiegħek.
 

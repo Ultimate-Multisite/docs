@@ -3,7 +3,7 @@ title: Konfigurimi i PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfigurimi i Gateway-të PayPal (v2)
+# Konfigurimi i Gateway-të PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Ashtu si Stripe, PayPal përdoret gjerësisht për pagesa online, veçanërisht 
 
 Shënim: Keni nevojë të keni një **konton Biznes PayPal** për të marrë kredencialet API që janë të nevojshme për këtë integrim.
 
-## Aktivizimi i PayPal-it në rrjetin tuaj
+## Aktivizimi i PayPal-it në rrjetin tuaj {#enabling-paypal-on-your-network}
 
 Për të aktivizuar PayPal si metodë pagese e disponueshme në rrjetin tuaj, shkoni te **Ultimate Multisite > Settings > Payments** dhe klikoni kutinë pranë PayPal.
 
 ![Aktivizimi i PayPal-it në gateway-të e pagesave aktive](/img/config/settings-payment-gateways.png)
 
-## Përdorimi i wizard-it të udhëhequr
+## Përdorimi i wizard-it të udhëhequr {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 shton një wizard (udhëzues) të udhëhequr për konfigurimin e PayPal-it në cilësimet e gateway-të së pagesave. Pasi ta aktivizoni PayPal-in, përdorni wizard-in te **Ultimate Multisite > Settings > Payments** për të zgjedhur se si dëshironi të lidhni gateway-n dhe për të konfirmuar cilat kredenciale janë ende të nevojshme para se të ruani.
 
@@ -30,7 +30,7 @@ Wizard-i mbështet dy rrugë konfigurimi:
 
 Nëse nuk e shihni opsionin OAuth në wizard, plotësoni procesin e hyrjes manuale të kredencialit më poshtë. Gateway-ja punon me të njëjtat kredencialet PayPal Business API siç ishin në versionet e mëparshme Ultimate Multisite 2.x.
 
-## Marrja e kredencialitëve PayPal API
+## Marrja e kredencialitëve PayPal API {#getting-the-paypal-api-credentials}
 
 Pasi PayPal të aktivizohet si gateway i pagesave, do të duhet të plotësoni fushat për **Username** API të PayPal, **Password** API të PayPal dhe **Signature** API të PayPal.
 

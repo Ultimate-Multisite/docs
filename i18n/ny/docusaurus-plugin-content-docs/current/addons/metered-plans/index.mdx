@@ -1,0 +1,117 @@
+---
+title: Mapulani olipiridwa malinga ndi kagwiritsidwe ntchito
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Mapulani Oyezera Kugwiritsa Ntchito {#metered-plans}
+
+Addon ya Ultimate Multisite: Mapulani Oyezera Kugwiritsa Ntchito imasintha momwe mumalipiritsira makasitomala anu mwa kuyambitsa kuthekera kosinthasintha kwa kulipiritsa motengera kugwiritsa ntchito. M'malo mwa malire okhwima omwe amatsekereza ogwiritsa ntchito akawadutsa, yambitsani zolipiritsa za kugwiritsa ntchito mopitirira zomwe zimalipiritsa makasitomala okha pa kugwiritsa ntchito kowonjezera.
+
+## Zinthu Zofunika Kwambiri {#key-features}
+
+* **Kulipiritsa Motengera Kugwiritsa Ntchito**: Lipiritsani makasitomala kutengera kugwiritsa ntchito kwenikweni m'malo mwa magawo okhazikika
+* **Kuwongolera Kugwiritsa Ntchito Mopitirira**: Lipiritsani zokha pa kugwiritsa ntchito kopitirira malire a pulani
+* **Kutsata Kugwiritsa Ntchito**: Onani kugwiritsa ntchito kwa zinthu za kasitomala munthawi yeniyeni
+* **Mitengo Yosinthika**: Khazikitsani mitengo yapadera ya zinthu zosiyanasiyana (malo osungira, bandwidth, masamba, ndi zina zotero)
+* **Kulipiritsa Ma Token a AI**: Tsatirani ndi kulipiritsa ma token olowa ndi otuluka pa kugwiritsa ntchito AI kudutsa masamba ang'onoang'ono a makasitomala
+* **Kupanga Ma Invoice Mwadzidzidzi**: Pangani ma invoice mwadzidzidzi pamene malire a kugwiritsa ntchito adutsa
+* **Malipoti a Kugwiritsa Ntchito**: Kuwunika mwatsatanetsatane kwa kugwiritsa ntchito ndi kupereka malipoti kwa makasitomala ndi oyang'anira
+
+## Zoyenera Kwambiri Kwa {#perfect-for}
+
+* **Opereka Hosting**: Perekani mapulani okula omwe amakula ndi zosowa za kasitomala
+* **Mapulatifomu a SaaS**: Lipiritsani kutengera kugwiritsa ntchito zinthu kwenikweni
+* **Ma Network a Agency**: Mitundu ya mitengo yosinthika ya mapulojekiti a makasitomala
+* **Reseller Hosting**: Thandizani anzanu kupereka mitengo yotengera kugwiritsa ntchito
+
+## Momwe Zimagwirira Ntchito {#how-it-works}
+
+1. Konzani zinthu zoyezedwa (malo a disk, bandwidth, chiwerengero cha masamba, ndi zina zotero)
+2. Khazikitsani malire a pulani yoyambira ndi mitengo ya kugwiritsa ntchito mopitirira
+3. Dongosololi limatsata zokha kugwiritsa ntchito kudutsa network yanu
+4. Makasitomala akadutsa malire, zolipiritsa za kugwiritsa ntchito mopitirira zimawerengedwa
+5. Ma invoice amapangidwa zokha kutengera billing cycle
+6. Makasitomala amatha kuona kugwiritsa ntchito kwawo ndi zolipiritsa zomwe zikubwera munthawi yeniyeni
+
+## Kulipiritsa Ma Token a AI {#ai-token-billing}
+
+Version 1.1.0 imawonjezera kulipiritsa ma token a AI kwa ma network omwe amapereka zinthu za AI kudzera mu WordPress AI Client SDK. Mapulani Oyezera Kugwiritsa Ntchito amamvera zopempha zomalizidwa zopanga AI, amalemba mawerengedwe a ma token olowa ndi otuluka pa subsite yapano, ndipo amasandutsa ma token amenewo kukhala ndalama za AI zolipiritsidwa pa nthawi ya billing yapano ya kasitomala.
+
+Gwiritsani ntchito kulipiritsa ma token a AI mukafuna kupereka zida za AI pa masamba a makasitomala popanda kutenga nokha ndalama za model zosadziwikiratu. Pempho lililonse limalumikizidwa ndi subsite, kasitomala, umembala, provider, ndi model kotero oyang'anira amatha kuwunika kugwiritsa ntchito pamene makasitomala amatha kuona momwe kugwiritsa ntchito kwawo AI kumakhudzira Account yawo.
+
+### Konzani Mitengo Pa Token Iliyonse {#configure-per-token-rates}
+
+Mitengo ya AI imakonzedwa pa model iliyonse ngati mitengo yosiyana ya zolowa ndi zotuluka. Mitengo imawerengedwa pa ma token 1 miliyoni, zomwe zimagwirizana ndi masamba a mitengo a AI provider wamba.
+
+1. Mu network admin, tsegulani **Multisite Ultimate → Settings → Metered Plans**.
+2. Yambitsani kuyeza ndalama za AI pa malonda kapena umembala womwe uyenera kulipiritsa kugwiritsa ntchito AI.
+3. Onjezani zolemba za mitengo ya model pogwiritsa ntchito ma ID a model omwe abwezedwa ndi connector yanu, monga `gpt-4o`, `gpt-4o-mini`, kapena chizindikiro china cha model chogwirizana ndi OpenAI.
+4. Lowetsani ma value osiyana a **Mtengo wa Zolowa** ndi **Mtengo wa Zotuluka** mu ndalama za site yanu pa ma token 1 miliyoni.
+5. Khazikitsani allowance ya ndalama za AI zomwe kasitomala amaphatikizidwa nazo ndi khalidwe la kugwiritsa ntchito mopitirira la pulaniyo.
+
+Pamene ID yeniyeni ya model sinakonzedwe, Mapulani Oyezera Kugwiritsa Ntchito angafanane ndi prefix ya model. Mwachitsanzo, mtengo wokonzedwa wa `claude-sonnet-4` ungagwiritsidwe ntchito pa ma ID a model okhala ndi timestamp omwe amayamba ndi prefix imeneyo. Opanga mapulogalamu amathanso kusintha tebulo lomaliza la mitengo ndi filter ya [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Ma AI Connectors Othandizidwa {#supported-ai-connectors}
+
+Kulipiritsa ma token a AI kumagwira ntchito ndi ma connector omwe amatulutsa zochitika za generation za WordPress AI Client SDK ndipo amaphatikiza kugwiritsa ntchito ma token mu metadata ya yankho. Izi zikuphatikiza banja la Ultimate Multisite AI connector lomwe lalembedwa pano:
+
+* [Ultimate AI Connector ya Ma Endpoint Ogwirizana](../ultimate-ai-connector-compatible-endpoints/) ya ma API ogwirizana ndi OpenAI, kuphatikiza OpenAI, Mistral, ma gateway ogwirizana ndi Ollama, ndi ma provider ena omwe amaonetsa metadata yogwirizana ya kugwiritsa ntchito ma token
+* [Ultimate AI Connector ya WebLLM](../ultimate-ai-connector-webllm/) ya kugwiritsa ntchito WebLLM kwa browser-native pamene zopempha zikuyendetsedwa kudzera mu event flow ya AI Client SDK
+* Ma connector a AI provider ogwiritsidwa ntchito ndi [Gratis AI Agent](../gratis-ai-agent/) pamene provider wosankhidwa amapereka mawerengedwe a ma token a prompt ndi completion kudzera mu SDK
+
+Ma connector apadera angatenge nawo mbali potulutsa zochitika za standard `wp_ai_client_before_generate_result` ndi `wp_ai_client_after_generate_result` ndi metadata ya model, provider, ndi kugwiritsa ntchito ma token. Zokonda za connector zimakakamizidwa kuchokera pa site yayikulu kupita ku subsites kuti masamba a makasitomala agwiritse ntchito ma provider ndi malire ovomerezedwa ndi network.
+
+### Kugwiritsa Ntchito kwa Account ya Kasitomala {#customer-account-usage}
+
+Makasitomala amaona kugwiritsa ntchito AI limodzi ndi zinthu zawo zina zoyezedwa m'dera la account yawo. Mzere wa ndalama za AI umaonetsa chiwerengero chonse cha nthawi ya billing yapano chochokera ku ma token a prompt ndi completion olembedwa, mitengo ya model yokonzedwa, ndi allowance iliyonse yophatikizidwa pa pulaniyo.
+
+Ngati kasitomala ali ndi njira yolipirira yosungidwa, kugwiritsa ntchito koposa allowance yophatikizidwa kumaonedwa ngati kugwiritsa ntchito mopitirira kolipiritsidwa. Ngati pulani yakonzedwa ndi kudula kolimba ndipo kasitomala alibe njira yolipirira yomwe ilipo, zopempha za AI zingatsekedwe allowance ikafika ndipo kasitomala amalimbikitsidwa kuwonjezera zambiri za malipiro asanapitirize.
+
+## Zinthu Zothandizidwa {#supported-resources}
+
+* Kusungira pa disk
+* Bandwidth/Kusamutsa data
+* Chiwerengero cha masamba
+* Chiwerengero cha ogwiritsa ntchito
+* Kugwiritsa ntchito ma token a AI ndi ndalama za AI
+* Mitundu yapadera ya zinthu
+
+## Zofunikira {#requirements}
+
+* Multisite Ultimate 2.0.0 kapena yapamwamba
+* Kuyika kwa WordPress Multisite
+* PHP 7.4 kapena yapamwamba
+
+## Kuyika {#installation}
+
+1. Kwezani mafayilo a plugin ku `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Yambitsani plugin kudzera pa screen ya 'Plugins' mu WordPress
+3. Pitani ku Multisite Ultimate → Settings → Metered Plans
+4. Konzani zinthu zanu zoyezedwa ndi mitengo
+5. Yambitsani kulipiritsa motengera kugwiritsa ntchito kwa malonda mu product editor
+
+## Mafunso Ofunsidwa Kawirikawiri {#frequently-asked-questions}
+
+## Chimachitika n'chiyani kasitomala akadutsa malire ake? {#what-happens-when-a-customer-exceeds-their-limit}
+
+M'malo motsekereza mwayi wolowa, dongosololi limatsatira kuchuluka kopitirira malire ndipo limawonjezera pa invoice yawo yotsatira kutengera mitengo yomwe mwakhazikitsa.
+
+## Kodi ndingakhazikitse mitengo yosiyanasiyana ya kuchuluka kopitirira malire pa zinthu zosiyanasiyana? {#can-i-set-different-overage-rates-for-different-products}
+
+Inde, chinthu chilichonse chingakhale ndi zinthu zoyezedwa zapadera ndi mitengo ya kuchuluka kopitirira malire.
+
+## Kodi makasitomala amadziwitsidwa bwanji za kugwiritsa ntchito? {#how-are-customers-notified-about-usage}
+
+Makasitomala angathe kuona kugwiritsa ntchito kwawo kwapano mu Dashboard yawo ndipo angalandire zidziwitso zosankha akamayandikira kapena kupitirira malire.
+
+## Kodi kugwiritsa ntchito ma AI token kumayikidwa mtengo bwanji? {#how-is-ai-token-usage-priced}
+
+Kugwiritsa ntchito ma AI token kumayikidwa mtengo kuchokera ku mitengo ya input ndi output yomwe yakonzedwa pa model pa token 1 miliyoni. Mapulani Oyezedwa amachulukitsa mawerengedwe a token a prompt ndi completion pa pempho lililonse ndi mitengoyo, amawonjezera zotsatira ku ndalama za AI za kasitomala pa nthawi yapano yolipira, ndipo amagwiritsa ntchito chilolezo cha pulaniyo kapena malamulo a kuchuluka kopitirira malire.
+
+## Kodi ndingagwiritsabe ntchito malire okhwima? {#can-i-still-use-hard-limits}
+
+Inde, kulipira koyezedwa ndi kosankha pa chinthu chilichonse. Mutha kusakaniza zinthu zachikhalidwe zokhala ndi malire okhwima ndi zinthu zoyezedwa.

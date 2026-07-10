@@ -1,31 +1,45 @@
 ---
 title: મલ્ટી-ટેનન્સી
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# મલ્ટી-ટેનન્સી (Multi-Tenancy)
+# બહુ-ટેનન્સી {#multi-tenancy}
 
-પ્રદર્શન (performance) અને સુરક્ષા (security) માટે સબસાઇટ્સને સર્વર અને ડેટાબેઝમાં વહેંચો.
+કાર્યક્ષમતા અને સુરક્ષા માટે ઉપસાઇટ્સને સર્વર્સ અને ડેટાબેઝમાં વિતરિત કરો
 
-## જરૂરીયાતો (Requirements)
+## આવૃત્તિ 1.2.0 રિલીઝના મુખ્ય મુદ્દા {#version-120-release-highlights}
 
-- WordPress 5.3 અથવા તેનાથી વધુ
-- PHP 7.4 અથવા તેનાથી વધુ
+Multi-Tenancy 1.2.0 ઉત્પાદન આઇસોલેશન વર્કફ્લોઝ માટે સ્વાયત્ત ટેનન્ટ આધાર ઉમેરે છે:
+
+- ટૂંકા સમય માટે માન્ય, રીપ્લે-સુરક્ષિત SSO મુલાકાતો સાથે સ્ટેટલેસ ટેનન્ટ સ્વચાલિત લોગિન.
+- સ્વાયત્ત ટેનન્ટ્સ માટે પ્રતિ-ઉપસાઇટ ડેટાબેઝ અને ફાઇલસિસ્ટમ આઇસોલેશન.
+- હોસ્ટ-જાગૃત ટેનન્ટ પ્રોવિઝનિંગ માટે Hostinger બહુ-ટેનન્સી ક્ષમતા.
+- લેગસી ડેટા તપાસો અને async પુશ પ્રોસેસિંગ માટે સ્વાયત્ત માઇગ્રેશન ચકાસણી ગેટ્સ.
+- Bedrock, FrankenPHP, અને localhost ઇન્સ્ટોલ્સ માટે રૂપરેખાંકિત કરી શકાય તેવું સમાન-મશીન ડેટાબેઝ હોસ્ટ બાઇન્ડિંગ.
+- ટેનન્ટ બૂટસ્ટ્રેપ, ડેટાબેઝ રાઇટર, સ્કીમા બૂટસ્ટ્રેપ, અને વપરાશકર્તા પ્રોવિઝનિંગ સુધારાઓ.
+- ટેનન્ટ ઓળખપત્રોને સાફ કરતું વધુ સુરક્ષિત સ્વાયત્ત ટિયરડાઉન.
+
+[સ્વાયત્ત માઇગ્રેશન વર્કફ્લો](/user-guide/getting-started/sovereign-migration-workflow), [બહુ-ટેનન્સી આઇસોલેશન](/user-guide/configuration/multi-tenancy-isolation), અને [સ્વાયત્ત ટેનન્ટ કામગીરીઓ](/user-guide/administration/sovereign-tenant-operations) માટે વપરાશકર્તા માર્ગદર્શિકાઓ જુઓ.
+
+## આવશ્યકતાઓ {#requirements}
+
+- WordPress 5.3 અથવા ઉચ્ચતર
+- PHP 7.4 અથવા ઉચ્ચતર
 - Multisite Ultimate plugin (સક્રિય)
 
-## ઇન્સ્ટોલેશન (Installation)
+## ઇન્સ્ટોલેશન {#installation}
 
-૧. એડ-ઓન ફાઇલોને તમારા `/wp-content/plugins/` ડિરેક્ટરીમાં અપલોડ કરો
-૨. WordPress માં 'Plugins' મેનુ દ્વારા પ્લગિન એક્ટિવેટ કરો
-૩. નેટવર્ક એડમિનમાં એડ-ઓન સેટિંગ્સ કન્ફિગર કરો
+1. addon ફાઇલો તમારી `/wp-content/plugins/` ડિરેક્ટરીમાં અપલોડ કરો
+2. WordPress માં 'Plugins' મેનુ દ્વારા plugin સક્રિય કરો
+3. નેટવર્ક એડમિનમાં addon સેટિંગ્સ રૂપરેખાંકિત કરો
 
-## ડેવલપમેન્ટ (Development)
+## વિકાસ {#development}
 
-### સેટઅપ (Setup)
+### સેટઅપ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### પ્રોજેક્ટ સ્ટ્રક્ચર (Project Structure)
+### પ્રોજેક્ટ રચના {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # PHP ક્લાસિસ અને includes
+│   ├── class-multisite-ultimate-updater.php  # અપડેટ હેન્ડલર
+│   └── class-multi_tenancy-main.php             # મુખ્ય કાર્યક્ષમતા
+├── tests/                        # યુનિટ ટેસ્ટ્સ
+│   ├── bootstrap.php            # ટેસ્ટ બૂટસ્ટ્રેપ
+│   ├── class-*-base.php         # આધાર ટેસ્ટ ક્લાસ
+│   └── class-*-test.php         # ટેસ્ટ કેસિસ
+├── views/                       # ટેમ્પલેટ ફાઇલો
+├── assets/                      # સ્ટેટિક એસેટ્સ
+│   ├── css/                     # સ્ટાઇલશીટ્સ
+│   ├── js/                      # JavaScript ફાઇલો
+│   └── images/                  # છબીઓ
+├── lang/                        # ભાષા ફાઇલો
+├── composer.json                # PHP નિર્ભરતાઓ
+├── package.json                 # Node.js નિર્ભરતાઓ
+├── phpunit.xml.dist             # PHPUnit રૂપરેખાંકન
+├── .phpcs.xml.dist              # કોડ ધોરણોનું રૂપરેખાંકન
+└── rector.php                   # કોડ આધુનિકીકરણ નિયમો
 ```
 
-### ટેસ્ટિંગ (Testing)
+### પરીક્ષણ {#testing}
 
-આ એડ-ઓન એક વ્યાપક ટેસ્ટિંગ ફ્રેમવર્ક સાથે આવે છે:
+addon માં વ્યાપક પરીક્ષણ ફ્રેમવર્ક શામેલ છે:
 
-- **યુનિટ ટેસ્ટ્સ (Unit Tests)**: WordPress ટેસ્ટ સ્યુટ સાથે PHPUnit-આધારિત ટેસ્ટ્સ
-- **બેઝ ટેસ્ટ ક્લાસ (Base Test Class)**: સામાન્ય ટેસ્ટ દૃશ્યો માટે મદદરૂપ પદ્ધતિઓ (helper methods) પ્રદાન કરે છે
-- **ટેસ્ટ કવરેજ (Test Coverage)**: કોડ કવરેજ ટ્રેક કરવા માટે કન્ફિગર કરેલ છે
-- **મલ્ટીસાઇટ ટેસ્ટિંગ (Multisite Testing)**: મલ્ટીસાઇટ એન્વાયર્નમેન્ટમાં ટેસ્ટ ચાલે છે
+- **યુનિટ ટેસ્ટ્સ**: WordPress ટેસ્ટ સ્યુટ સાથે PHPUnit-આધારિત ટેસ્ટ્સ
+- **આધાર ટેસ્ટ ક્લાસ**: સામાન્ય ટેસ્ટ પરિસ્થિતિઓ માટે સહાયક પદ્ધતિઓ પ્રદાન કરે છે
+- **ટેસ્ટ કવરેજ**: કોડ કવરેજ ટ્રેક કરવા માટે રૂપરેખાંકિત
+- **Multisite પરીક્ષણ**: ટેસ્ટ્સ multisite પર્યાવરણમાં ચાલે છે
 
-### કોડ સ્ટાન્ડર્ડ્સ (Code Standards)
+### કોડ ધોરણો {#code-standards}
 
-- **WordPress કોડિંગ સ્ટાન્ડર્ડ્સ (Coding Standards)**: PHPCS દ્વારા લાગુ કરવામાં આવે છે
-- **PHP 7.4+ સુસંગતતા (Compatibility)**: આધુનિક PHP સુવિધાઓને સપોર્ટ કરે છે
-- **સ્ટેટિક એનાલિસિસ (Static Analysis)**: ટાઇપ ચેકિંગ માટે PHPStan નું ઇન્ટિગ્રેશન
-- **કોડ મોડર્નાઇઝેશન (Code Modernization)**: PHP અપગ્રેડ માટે Rector નિયમો
+- **WordPress કોડિંગ ધોરણો**: PHPCS દ્વારા અમલમાં મૂકાયેલા
+- **PHP 7.4+ સુસંગતતા**: આધુનિક PHP સુવિધાઓ સમર્થિત
+- **સ્થિર વિશ્લેષણ**: પ્રકાર ચકાસણી માટે PHPStan ઇન્ટિગ્રેશન
+- **કોડ આધુનિકીકરણ**: PHP અપગ્રેડ્સ માટે Rector નિયમો
 
-### બિલ્ડ સિસ્ટમ (Build System)
+### બિલ્ડ સિસ્ટમ {#build-system}
 
-- **એસેટ પ્રોસેસિંગ (Asset Processing)**: CSS/JS ફાઇલો માટે મિનિફિકેશન (Minification)
-- **ભાષાંતર (Translation)**: POT ફાઇલ જનરેશન
-- **પેકેજિંગ (Packaging)**: વિતરણ માટે આર્કાઇવ બનાવવું
-- **ડેવલપમેન્ટ મોડ (Development Mode)**: ડિબગિંગ માટે અનમિનિફાઇડ એસેટ્સ
+- **એસેટ પ્રોસેસિંગ**: CSS/JS ફાઇલો માટે મિનિફિકેશન
+- **અનુવાદ**: POT ફાઇલ જનરેશન
+- **પેકેજિંગ**: વિતરણ માટે આર્કાઇવ બનાવવું
+- **વિકાસ મોડ**: ડિબગિંગ માટે અનમિનિફાઇડ એસેટ્સ
 
-## કન્ફિગરેશન (Configuration)
+## રૂપરેખાંકન {#configuration}
 
-આ એડ-ઓન નેટવર્ક એડમિન ઇન્ટરફેસ દ્વારા ઉપલબ્ધ વિવિધ કન્ફિગરેશન વિકલ્પોને સપોર્ટ કરે છે.
+addon નેટવર્ક એડમિન ઇન્ટરફેસ દ્વારા ઉપલબ્ધ વિવિધ રૂપરેખાંકન વિકલ્પોને સમર્થન આપે છે.
 
-## હૂક્સ અને ફિલ્ટર્સ (Hooks and Filters)
+### સ્વાયત્ત ટેનન્ટ રૂપરેખાંકન {#sovereign-tenant-configuration}
 
-### એક્શન્સ (Actions)
+સ્વાયત્ત ટેનન્ટ્સ માટે, ટેનન્ટ ડેટાબેઝ, ફાઇલસિસ્ટમ રૂટ, ડેટાબેઝ હોસ્ટ બાઇન્ડિંગ, અને હોસ્ટ ક્ષમતાને ટેનન્ટ તરફ ટ્રાફિક રૂટ કરતા પહેલા રૂપરેખાંકિત કરો. ડેટાબેઝ ઓળખપત્રો, હોસ્ટ બાઇન્ડિંગ, રૂટિંગ, અથવા વપરાશકર્તા પ્રોવિઝનિંગને અસર કરતા દરેક ફેરફાર પછી માઇગ્રેશન ચકાસણી ચલાવો.
 
-- `ultimate-multisite-addon-template_init` - એડ-ઓન શરૂ થયા પછી ટ્રિગર થાય છે
-- `ultimate-multisite-addon-template_loaded` - બધા એડ-ઓન ફાઇલો લોડ થયા પછી ટ્રિગર થાય છે
+`localhost` નો ઉપયોગ માત્ર ત્યારે કરો જ્યારે ટેનન્ટ રનટાઇમ અને ડેટાબેઝ grants સ્થાનિક સોકેટ અથવા સમાન-મશીન ઍક્સેસની અપેક્ષા રાખે. જ્યારે તમારા પ્રદાતા દ્વારા રૂપરેખાંકિત grant host તે હોય ત્યારે `127.0.0.1` અથવા સર્વિસ hostname નો ઉપયોગ કરો.
 
-### ફિલ્ટર્સ (Filters)
+### Hostinger ક્ષમતા {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - એડ-ઓન સેટિંગ્સમાં ફેરફાર કરો
-- `ultimate-multisite-addon-template_enabled` - એડ-ઓન enable/disable સ્ટેટસને ઓવરરાઇડ કરો
+Hostinger બહુ-ટેનન્સી ક્ષમતા શેર કરેલા Hostinger ઇન્ટિગ્રેશન token સાથે કામ કરે છે. ડોમેન hPanel માં હાજર છે, DNS Hostinger Account તરફ પોઇન્ટ કરે છે, અને ચકાસણી પહેલાં ટેનન્ટ ડેટાબેઝ સેટિંગ્સ hPanel સાથે મેળ ખાય છે તેની પુષ્ટિ કરો.
 
-## લાયસન્સ (License)
+## હૂક્સ અને ફિલ્ટર્સ {#hooks-and-filters}
 
-આ એડ-ઓન GPL v3 અથવા તેના પછીના સંસ્કરણ હેઠળ લાયસન્સ પ્રાપ્ત છે.
+### ક્રિયાઓ {#actions}
 
-## સપોર્ટ (Support)
+- `ultimate-multisite-addon-template_init` - addon આરંભ પછી ચલાવવામાં આવે છે
+- `ultimate-multisite-addon-template_loaded` - તમામ addon ફાઇલો લોડ થયા પછી ચલાવવામાં આવે છે
 
-સપોર્ટ અને ડોક્યુમેન્ટેશન માટે, [MultisiteUltimate.com](https://multisiteultimate.com) ની મુલાકાત લો
-## ચેન્જલોગ (Changelog)
+### ફિલ્ટર્સ {#filters}
 
-- વર્ઝન 1.0.1 (2025-09-28): પ્રીફિક્સને ultimate-multisite માં નામ બદલ્યું; ટેક્સ્ટ ડોમેન અપડેટ કર્યો; વર્ઝન વધાર્યું.
+- `ultimate-multisite-addon-template_settings` - addon સેટિંગ્સમાં ફેરફાર કરો
+- `ultimate-multisite-addon-template_enabled` - addon સક્ષમ/અક્ષમ સ્થિતિને ઓવરરાઇડ કરો
+
+## લાઇસન્સ {#license}
+
+આ addon GPL v3 અથવા પછીની આવૃત્તિ હેઠળ લાઇસન્સ ધરાવે છે.
+
+## સપોર્ટ {#support}
+
+સપોર્ટ અને દસ્તાવેજીકરણ માટે, [MultisiteUltimate.com](https://multisiteultimate.com) ની મુલાકાત લો
+## ફેરફાર નોંધ {#changelog}
+
+- આવૃત્તિ 1.2.0 (2026-06-03): સ્ટેટલેસ ટેનન્ટ સ્વચાલિત લોગિન, Hostinger બહુ-ટેનન્સી ક્ષમતા, પ્રતિ-ઉપસાઇટ ડેટાબેઝ અને ફાઇલસિસ્ટમ આઇસોલેશન, સ્વાયત્ત માઇગ્રેશન ચકાસણી ગેટ્સ, ટેનન્ટ બૂટસ્ટ્રેપ/ડેટાબેઝ રાઇટર સુધારાઓ, રૂપરેખાંકિત કરી શકાય તેવું MySQL હોસ્ટ બાઇન્ડિંગ, અને વધુ સુરક્ષિત સ્વાયત્ત ટિયરડાઉન ઉમેરો.
+
+- આવૃત્તિ 1.0.1 (2025-09-28): prefix ને ultimate-multisite માં નામ બદલો; ટેક્સ્ટ ડોમેન અપડેટ કરો; આવૃત્તિ વધારો.
 
 
-- વર્ઝન (2025-09-28): પ્રીફિક્સને ultimate-multisite માં નામ બદલ્યું; ટેક્સ્ટ ડોમેન અપડેટ કર્યો; વર્ઝન વધાર્યું.
+- આવૃત્તિ  (2025-09-28): prefix ને ultimate-multisite માં નામ બદલો; ટેક્સ્ટ ડોમેન અપડેટ કરો; આવૃત્તિ વધારો.

@@ -3,7 +3,7 @@ title: Ölkə siyahısı
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Ultimate Multisite ölkə siyahısının sıralamasını dəyişdirmək
+# Ultimate Multisite ölkə siyahısının sıralamasını dəyişdirmək {#re-ordering-the-ultimate-multisite-country-list}
 
 Ölkə seçmək üçün açılan menyu, ölkə adlarının İngiliscə versiyalarına əsasən alfabetik sırayla təşkil olunur. Bu o demək ola bilər ki, bəzən şirkətinizin yaşadığı ölkə və ya müştərilərinizin əksəriyyətinin yaşadığı ölkə böyük bir ölkə siyahısının ortasında gizlənmiş olur.
 

@@ -1,0 +1,111 @@
+---
+title: Kaihono AI Tino mō ngā pito mutunga hototahi
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ka kōtuitui te Ultimate AI Connector for Compatible Endpoints i ngā API kaiwhakarato AI e hototahi ana ki OpenAI ki tō whatunga pae maha WordPress. Whirihorahia ngā kaiwhakarato AI maha — kei ia mea tōna ake URL pito-mutunga, kī API, me te tauira taunoa — ā, arahia ngā tono mā te hoki-aunoa ina kore tētahi kaiwhakarato e wātea.
+
+## Ngā Āhuatanga Matua {#key-features}
+
+- **Tautoko kaiwhakarato-maha**: Tāpirihia ngā kāri kaiwhakarato AI maha, kei ia mea tōna ake URL pito-mutunga, kī API, me te tauira taunoa
+- **Tō-ki-te-whakaraupapa-anō**: Whakaraupapatia ngā kaiwhakarato mā te matua mā te whakamahi i te kakau pupuri i ia kāri; ka whakamahi ngā tono i ngā kaiwhakarato i runga i te raupapa
+- **Ararere hoki-aunoa**: Ki te kore te kaiwhakarato matua e wātea, ka hoki aunoa ngā tono ki te kaiwhakarato kua whirihorahia e whai ake nei
+- **Whirihoranga ā-kaiwhakarato**: Ka whirihorahia motuhaketia ia kaiwhakarato me ōna ake taipitopito uru me te kōwhiringa tauira
+- **UI tautuhinga kāri**: He mea hanga ki runga i ngā wae Card pūmau o WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Whakaroha-aunoa ina tāpiri**: Ka whakaroha aunoa ngā kāri kaiwhakarato hou kia taea ai e koe te whakakī wawe i ngā taipitopito
+- **Whakakore keteroki hōtuhi**: Ka whakakorea te keteroki o ngā hōtuhi kaiwhakarato i te whakahōutanga monomai kia utaina ai te putanga hou rawa
+
+## Ngā Whakaritenga {#requirements}
+
+- WordPress 5.3, teitei ake rānei
+- PHP 7.4, teitei ake rānei
+- Ultimate Multisite plugin (e hohe ana)
+- He pito-mutunga API e hototahi ana ki OpenAI (he mea whakahaere-ā-kiri, he rōpū-tuatoru rānei)
+
+## Tāutanga {#installation}
+
+1. Tukuatu ngā kōnae tāpiri ki tō whaiaronga `/wp-content/plugins/`
+2. Whakahohea te plugin mā te tahua 'Plugins' i WordPress
+3. Haere ki **Ultimate Multisite → AI Connector** hei whirihora i te tāpiri
+
+## Whirihoranga {#configuration}
+
+### Tatūnga Kaiwhakarato-Maha {#multi-provider-setup}
+
+Ka whakamahi te mata whirihoranga i tētahi tahora kāri, ā, ko ia kāri he māngai mō tētahi kaiwhakarato AI kotahi. Ka taea e koe te tāpiri i te maha o ngā kaiwhakarato e hiahiatia ana.
+
+#### Te Tāpiri Kaiwhakarato {#adding-a-provider}
+
+1. Haere ki **Ultimate Multisite → AI Connector** i te kaiwhakahaere whatunga
+2. Pāwhiritia **Tāpiri Kaiwhakarato**
+3. Ka puta tētahi kāri kaiwhakarato hou, ā, ka whakaroha aunoa
+4. Whakakīa ngā taipitopito kaiwhakarato:
+   - **Ingoa Kaiwhakarato** — he tapanga hei tautuhi i tēnei kaiwhakarato (hei tauira, "OpenAI", "Mistral", "Local Ollama")
+   - **URL Pito-mutunga** — te URL taketake o te API e hototahi ana ki OpenAI (hei tauira, `https://api.openai.com/v1`)
+   - **Kī API** — tō kī API mō tēnei kaiwhakarato
+   - **Tauira Taunoa** — te tautuhinga tauira hei whakamahi taunoa mō tēnei kaiwhakarato (hei tauira, `gpt-4o`, `mistral-small`)
+5. Pāwhiritia **Tiaki Tautuhinga**
+
+#### Te Tango Kaiwhakarato {#removing-a-provider}
+
+Pāwhiritia te pātene **Tango** i runga i tētahi kāri kaiwhakarato hei muku. Tiakina ngā tautuhinga hei whakamahi i te panonitanga.
+
+#### Te Whakaraupapa Anō i Ngā Kaiwhakarato {#reordering-providers}
+
+Tōia te ata pupuri (⣿) i te taha mauī o tētahi kāri kaiwhakarato hei whakaraupapa anō. Mā te raupapa e whakatau te matua hoki: ka tukuna ngā tono ki te kaiwhakarato tuatahi, ā, ka hoki ki ngā kaiwhakarato o muri mai mēnā ka rahua tētahi tono.
+
+### Ararere Hoki {#fallback-routing}
+
+Ina rahua tētahi tono ki te kaiwhakarato matua — nā te paunga wā, te tepenga auau, te aukatinga ratonga rānei — ka ngana anō aunoa te tūhono ki te kaiwhakarato e whai ake nei i te rārangi. Ka haere tonu tēnei ki raro i te rārangi kia angitū rā anō tētahi kaiwhakarato, kia whakamātauria rā anō rānei ngā kaiwhakarato katoa.
+
+| Āhuatanga | Whanonga |
+|----------|-----------|
+| Ka whakautu te kaiwhakarato matua | Ka tukuna te tono i runga i te tikanga noa |
+| Ka rahua te kaiwhakarato matua | Ka whakamātauria anō te tono ki te kaiwhakarato e whai ake nei |
+| Ka rahua ngā kaiwhakarato katoa | Ka whakahokia he hapa ki te kaitono |
+
+He pūataata te hoki ki te plugin, theme rānei e karanga ana — ka whiwhi rātou i tētahi whakautu angitū, i tētahi hapa whakamutunga rānei, ahakoa te maha o ngā kaiwhakarato i whakamātauria.
+
+### Tohutoro Whirihoranga Kaiwhakarato {#provider-configuration-reference}
+
+| Āpure | Me Whai | Whakaahuatanga |
+|-------|----------|-------------|
+| Ingoa Kaiwhakarato | Āe | Tapanga whakaatu mō tēnei kaiwhakarato |
+| URL Pito-mutunga | Āe | URL taketake o te API e hototahi ana ki OpenAI |
+| Kī API | Āe | Kī motuhēhēnga mō tēnei kaiwhakarato |
+| Tauira Taunoa | Āe | Tautuhinga tauira e whakamahia ana ina kāore he tauira i tohua i roto i te tono |
+
+## Raparongoā {#troubleshooting}
+
+### Kāore he kaiwhakarato i te rārangitia {#no-providers-are-listed}
+
+Mēnā he putu te rārangi kaiwhakarato i muri i te tiaki, whakaūngia ēnei:
+
+- I pāwhiri koe i **Tiaki Tautuhinga** i muri i te tāpiri kaiwhakarato
+- Kāore tō pūtirotiro i ārai i te whārangi tautuhinga kia tiakina (tirohia te papatohu pūtirotiro mō ngā hapa JavaScript)
+- Kei te hohe te plugin, ā, kei te mata kaiwhakahaere whatunga koe
+
+### Kei te rahua ngā tono mō ngā kaiwhakarato katoa {#requests-are-failing-for-all-providers}
+
+- Manatokohia ka taea te toro atu ki te URL pito-mutunga o ia kaiwhakarato mai i tō tūmau (ehara i tō pūtirotiro anake)
+- Tirohia kei te tika ia kī API, ā, kāore anō kia mōnehu
+- Arotakengia te tūnga tepenga-auau me te kōta a te kaiwhakarato i tō rātou Dashboard
+- Whakahohea te rangitaki patuiro WordPress (`WP_DEBUG_LOG`) hei hopu i ngā karere hapa taipitopito mai i te tūhono
+
+### Kāore tētahi kaiwhakarato e whakamahia ana mō te hoki {#a-provider-is-not-being-used-for-fallback}
+
+Ka panoni te tō-ki-te-whakaraupapa-anō i te raupapa hoki. Whakaūngia kei te tūnga tika i te rārangi te kaiwhakarato e tūmanakohia ana e koe kia whiwhi i ngā tono hoki, ā, kei te tika tana URL pito-mutunga me tana kī API.
+
+### Kāore te kāri kaiwhakarato hou e whakaroha aunoa {#new-provider-card-does-not-expand-automatically}
+
+Me whakahohe te JavaScript i tō pūtirotiro kia mahi ai te whakaroha-aunoa. Ki te kore te kāri e whakaroha ina pāwhiria, tirohia te papatohu pūtirotiro mō ngā hapa. Ka taea tonu ngā ihirangi kāri te toro mā te pāwhiri i te pane kāri ahakoa kāore te whakaroha-aunoa e tīmata.
+
+## Rangitaki Panoni {#changelog}
+
+Tirohia te [Rangitaki Panoni](./changelog) mō te hītori putanga katoa.

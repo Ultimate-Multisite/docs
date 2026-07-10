@@ -3,11 +3,11 @@ title: Monitenanttinen erottelu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Monitointi erillisyys (Multi-Tenancy Isolation)
+# Monitointi erillisyys (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 tukee per-subsite -tietokoneen ja tiedostojärjestelmän erillisyyden varmistamista itsenäisille vuokralaisille. Tämä pitää vuokralaisen datan erillään säilyttäen samalla verkko-tason tarjonnan, laskutuksen ja hallinnan.
 
-## Erillisyyden strategia (Isolation strategy)
+## Erillisyyden strategia (Isolation strategy) {#isolation-strategy}
 
 Käytä itsemääräistä erillisyysratkaisua asiakkaille, jotka vaativat vahvempaa datan erottelua, omistettua tiedostojärjestelmätilaa tai erillisen isäntärajapinnan.
 
@@ -18,7 +18,7 @@ Jokaisella itsemääräisellä vuokralaisella tulee olla:
 - Vuokralaisrekisterin merkintä, joka yhdistää sivuston tietokantaan, juurireittiin, isäntänimeen ja erillisyysmallin.
 - Migraation vahvistusarvo ennen kuin vuokralainen pidetään käytössä (live).
 
-## Tietokantojen isännän sitominen (Database host binding)
+## Tietokantojen isännän sitominen (Database host binding) {#database-host-binding}
 
 Versio 1.2.0 muuttaa oletuskäyttäytymistä samalla koneella olevan isännän sitomisessa itsemääräisissä asennuksissa. Saman koneen arvot, kuten `localhost`, normalisoidaan niin, että Bedrock-, FrankenPHP- ja konttoriin asennetut WordPress-asennukset voivat antaa ja vahvistaa oikeuksia isäntäkentän MySQL:n todellisen näkymän vastaanottamiseksi.
 
@@ -31,11 +31,11 @@ Kun määrität itsemääräisen vuokralaisen:
 
 Jos vahvistus raportoi pääsyvirheitä (grant failures), vertaa vuokralaisen tietokantayläkäyttäjien antamia oikeuksia määritettyyn isännän sitomiseen. Käyttäjälle annetut oikeudet `user@localhost`-muodossa eroavat käyttäjästä, jolle on annettu oikeudet `user@127.0.0.1` tai `user@%`.
 
-## Tiedostojärjestelmän juuri (Filesystem root)
+## Tiedostojärjestelmän juuri (Filesystem root) {#filesystem-root}
 
 Vuokran juurihakemisto (tenant root) tulisi olla vakaa uudelleenkäynnistysten ja käyttöönottojen välillä. Vältä väliaikaisia asennuspolkuja. Bedrock-tyylisissä asennuksissa varmista, että juurihakemisto osoittaa WordPressin verkkonjuureen, jota tenantin bootstrap odottaa, ei vain projektin juureen.
 
-## Tarjousjärjestys (Provisioning order)
+## Tarjousjärjestys (Provisioning order) {#provisioning-order}
 
 Uusille suvereenisille vuokralaisille käytä tätä järjestystä:
 
@@ -49,7 +49,7 @@ Uusille suvereenisille vuokralaisille käytä tätä järjestystä:
 
 Tämä järjestys estää osittain eristettyjä vuokralaisia vastaanottamasta liikennettä ennen kuin tietokantaykilönti, käyttäjät ja tiedostojärjestelmä ovat valmiita.
 
-## Suvereenisten asiakastilojen hallintajärjestelmät (Sovereign customer management flows)
+## Suvereenisten asiakastilojen hallintajärjestelmät (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 pitää asiakastilojen hallinnan toimenpiteet pääsivustolla, kun suvereeninen tila on käytössä. Tenant voi silti toimia erillisenä WordPress-asennuksena, mutta asiakasläheiset toiminnot, jotka riippuvat verkkojen laskutuksesta, jäsenyyksistä tai yhteisestä tilidataa, tulisi ohjata käyttäjä pääsivustolle sen sijaan, että yritettäisiin suorittaa toimintoja tenantin ajonaikana.
 

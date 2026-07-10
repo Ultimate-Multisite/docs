@@ -1,0 +1,194 @@
+---
+title: Referenco pri Hokoj
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referenco pri hokoj {#hooks-reference}
+
+Aŭtomate generita dokumentaro por ĉiuj **59 agoj** kaj **118 filtriloj** en Ultimate Multisite.
+
+## Agoj {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Ekfunkcias antaŭ la aŭtentiga alidirekto.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Ekfunkcias tuj antaŭ ol la aŭtentiga kuketo estas agordita.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Ekfunkcias tuj antaŭ ol la aŭtentiga kuketo de ensalutinto estas agordita.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permesas al programistoj aldoni siajn proprajn integriĝojn de gastigaj provizantoj per wp-kromprogramoj.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Ekfunkcias kiam ĉiuj dependecoj estas ŝargitaj
+- [wu_activation](./Actions/wu_activation) — Lasas aliajn partojn de la kromprogramo alkroĉi siajn rutinojn por aktivigo
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permesas al kromprogramaj programistoj alkroĉi funkciojn post kiam uzanto aŭ superadministranto ŝanĝas la retejan ŝablonon
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — En iuj kazoj, ni bezonos ŝargi kromajn rimedojn por trakti agojn.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Ekfunkcias antaŭ la prilaborado de la serĉpeto.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Permesas al programistoj fari aldonajn ŝanĝojn al la pagproceza objekto.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Permesas al programistoj fari aldonajn ŝanĝojn al la pagproceza objekto.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Ekfunkcias antaŭ ol kampo estas aldonita al la pagproceza formularo.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permesas al programistoj ekigi aldonajn hokojn.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Antaŭ ol ni prilaboras la pagprocezon.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Ekfunkcias post kiam la pagproceza mendo estas plene kunmetita.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permesas al kromprogramaj programistoj aldoni fenestraĵojn al la Reta Dashboard Panelo.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permesas al kromprogramaj programistoj aldoni fenestraĵojn al la Reta Dashboard Panelo.
+- [wu_deactivation](./Actions/wu_deactivation) — Lasas aliajn partojn de la kromprogramo alkroĉi siajn rutinojn por malaktivigo
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permesas al kromprogramaj programistoj aldoni agojn al la foriga procezo
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Ekfunkcias kiam domajno fariĝas la ĉefa domajno por retejo.
+- [wu_domain_created](./Actions/wu_domain_created) — Ekfunkcias kiam nova domajna mapado estas aldonita.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Ekfunkciigita post kiam nia kerna Domajna Mapado estas ŝargita
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Iuj kromprogramoj konservos URL antaŭ ol la mapado estis aktiva aŭ konstruos URL-ojn alimaniere, kiu ne estas inkluzivita aŭ
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Permesas al programistoj alkroĉi post kiam reteja duobligo okazas.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Permesas al kromprogramaj programistoj aldoni aldonajn hokojn
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hoko por aldona purigado
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Ekfunkcias antaŭ ol trakti la peton de modala fenestro por aldoni novan domajnon.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Permesas al kromprogramaj programistoj konservi metadatumojn malsammaniere se ili bezonas.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Permesas al kromprogramaj programistoj konservi uzantajn metadatumojn malsammaniere se ili bezonas.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Ekfunkcias kiam nevalida magia ligila ĵetono estas renkontita.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Ekfunkcias post kiam uzanto estas ensalutinta per magia ligilo.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Permesas al kromprogramaj programistoj fari aldonajn aferojn kiam la kliento estas aldonita.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Ekfunkcias post kiam MCP-kapabloj estas registritaj por ento.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Ekfunkcias post kiam la MCP-adaptilo estas pravalorizita.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Ekfunkcias post kiam la membreco estas nuligita.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Ekfunkcias post la renovigo de la membreco.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Ekfunkcias antaŭ ol la membreco estas nuligita.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Ekfunkcias antaŭ la renovigo de la membreco.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Ekfunkcias post kiam objekto estas konservita en la datumbazon.
+- [wu_page_added](./Actions/wu_page_added) — Permesas al kromprogramaj programistoj ruli aldonajn aferojn kiam paĝoj estas registritaj.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Permesas al kromprogramaj programistoj aldoni aldonan enhavon post kiam ni presas la paĝon
+- [wu_page_before_render](./Actions/wu_page_before_render) — Permesas al kromprogramaj programistoj aldoni aldonan enhavon antaŭ ol ni presas la paĝon.
+- [wu_page_load](./Actions/wu_page_load) — Permesas al kromprogramaj programistoj aldoni aldonajn hokojn al niaj paĝoj.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Permesas al kromprogramaj programistoj aldoni aldonan enhavon post kiam ni presas la paĝon
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Permesas al kromprogramaj programistoj aldoni aldonan enhavon antaŭ ol ni presas la paĝon.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Permesas al kromprogramaj programistoj aldoni aldonajn hokojn al niaj paĝoj.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Ekfunkcias post kiam fenestraĵoj estas registritaj por ĉi tiu paĝo.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Ekfunkcias por permesi al aldonaĵoj alligi kapablo-modulojn al integriĝoj.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Ekfunkcias por permesi al integriĝoj registri sin.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Permesas registri pliajn itinerojn.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Permesas al plugin-programistoj aldoni agojn al la konserva procezo
+- [wu_site_created](./Actions/wu_site_created) — Ekfunkcias post kiam retejo estas kreita por la unua fojo.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Permesas al plugin-programistoj aldoni pliajn hokojn, se bezonate.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Ruliĝas kiam ene de la kunteksto de la ŝablona antaŭrigardilo.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Ekigas la hokon por envicigi skriptojn.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Ekfunkcias post kiam objekto estas konservita en la datumbazon.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Ekfunkcias post kiam objekto estas konservita en la datumbazon.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Ekfunkcias post kiam objekto estas konservita en la datumbazon.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permesas al plugin-programistoj aldoni agojn al la malŝlosa procezo.
+
+## Filtriloj {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtras la daŭron de la aŭtentikiga kuketa eksvalidiĝa periodo.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtras la aŭtentikigan alidirektan skemon.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replikas la originalan WP-filtrilon ĉi tie, por bona mezuro.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Permesas al plugin-programistoj filtri la URL uzatan en la antaŭrigardilo
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtras ĉu la aŭtentikiga kuketo estu sendata nur per HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtras ĉu uzi sekuran aŭtentikigan alidirekton.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtras ĉu la ensalutinta kuketo estu sendata nur per HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Permesas malhelpi ke aŭtentikigaj kuketoj efektive estu sendataj al la kliento.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Agordu la alidirektan URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Aldonu kromajn paŝojn per filtriloj
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Permesas al plugin-programistoj aldoni ekstran variablon al la bildiga kunteksto tutmonde.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Permesas al programistoj mallongcirkviti ĉi tiun kontrolon.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtras la kampojn por la modala fenestro por aldoni novan domajnon.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Permesas al programistoj fari ŝanĝojn al la linia ero de la instal-kotizo.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Permesas al programistoj filtri administrajn avizojn aldonitajn de Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtru post kiam ĝi estis ŝanĝita.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nun ni traktas ĉiujn tipojn.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Permesas al plugin-programistoj mallongcirkviti la limigojn.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtras ĉu la aliĝ-kotizo estu aplikata aŭ ne.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtru la originalajn api-argumentojn.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Permesas al plugin-programistoj filtri la fakturadresajn kampojn.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Permesas al programistoj preteriri la eligon kaj agordi novan
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Permesas al programistoj preteriri la kodon por malagordi la nunan uzanton.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtras la totalon de la "ripetiĝanta kvanto".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtras la totalon de la "komenca kvanto".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtras la totalon de la "komenca kvanto".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Permesas al plugin-programistoj enmiksiĝi en la kreditvaloron.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtras komunajn bazajn domajnojn de checkout-formularo, kiuj ne fariĝu registroj de mapita domajno.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Niaj API-oj por aldoni novajn kampajn ŝablonojn alkroĉiĝas ĉi tie.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Niaj API-oj por aldoni novajn kampotipojn alkroĉiĝas ĉi tie.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtru la erarmesaĝojn.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Permesas al programistoj preteriri la kontrolon se kampo estas aŭtomate submitebla.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Permesas al plugin-programistoj aldoni proprajn aliasojn en formulara validigilo.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Permesas al plugin-programistoj filtri la validigajn regulojn.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Malagordu nedeziratajn parametrojn.
+- [wu_contains_element](./Filters/wu_contains_element) — Permesas al programistoj ŝanĝi la rezultojn de la komenca serĉo.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Permesas al gastigaj provizantoj instali la konstanton alimaniere.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Redonas belan nomon de la administraj subdividoj de la lando.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Redonas la liston de urboj por ŝtato en lando.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Redonas la liston de ŝtatoj por ĉi tiu lando.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Permesas al programistoj modifi la defaŭltan konduton kaj agordi la nunan klienton alimaniere.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Permesas al programistoj modifi la defaŭltan konduton kaj agordi la nunan membrecon alimaniere.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Permesas al programistoj modifi la defaŭltan konduton kaj agordi la nunan retejon alimaniere.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Permesas al programistoj modifi la URL-parametrojn por administri retejon.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Permesas al plugin-programistoj filtri la ligilojn.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Permesas al plugin-programistoj aldoni novajn kontrolojn por difini la rezultojn.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Ni eble bezonos aldoni pliajn blokojn poste.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Aldonas ĝeneralan filtrilon por permesi al programistoj etendi ĉi tiun analizilon por trakti pliajn konstruilojn aŭ plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtru ĉu devigi pliajn pasvortajn regulojn.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtru generitan klientan uzantnomon.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Permesu al plugin-programistoj filtri la antaŭagordojn de checkout-paĝo.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Permesu al programistoj aldoni novajn formularajn slugs por preteriri ĉi tiun konduton.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Permesu al programistoj kaj aldonaĵoj aldoni novajn migradajn paŝojn
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Vidu pli pri ĉi tiu filtrilo sube, en ĉi tiu sama metodo.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Permesu al programistoj elekti kiuj afiŝotipoj estu montrataj.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Redonu Liniojn, filtreblajn
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Permesu al programistoj manipuli la domajno/vojo-parojn.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtras la wizard-sekciojn por agordo de gastiga integriĝo.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtras la kampojn en formularo. La formularo estas identigita per la ID en la filtrila nomo.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtru la produktotipojn kiuj havas sendependajn fakturajn ciklojn.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Permesu al plugin-programistoj devigi donitan staton por la API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Permesu al plugin-programistoj aldoni pliajn testojn por evoluiga reĝimo.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Permesu al plugin-programistoj devigi donitan staton por la MCP-adaptilo.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Pro sekurecaj kialoj, ni limigas la nombron de agoj disponeblaj por alkroĉiĝi. Ĉi tiu filtrilo permesas al programistoj vastigi
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontrolas ĉu donita afiŝotipo estas permesita en ĉi tiu plano Permesu al plugin-programistoj filtri la revenan valoron
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtru ĉu devigi kontrolon de IP-adreso.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtru ĉu devigi kontrolon de uzanto-agento.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtru la generitan magian ligan URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtru ĉu magiaj ligiloj estas ebligitaj.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtras la alidirektan URL post igi domajnon ĉefa.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Kreu ekskludan liston de parametroj kiuj malhelpas la aŭtomatan alidirekton.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtrilo por superregi la decidon pri inkludo de MCP-kapablo.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtras la kalkulitan eksvalidiĝan daton.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtras la kalkulitan eksvalidiĝan daton por esti agordita post la renovigo.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Permesu al programistoj aldoni novajn ĝisdatigajn formularajn slugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtru la minimuman pasvortan longecon.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtru la minimuman postulatan pasvortan forton (zxcvbn-poentaro).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Permesu al plugin-programistoj, kaj al ni mem, aldoni agoligilojn al niaj redaktaj paĝoj
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtru ĉu postuli minusklajn literojn en pasvortoj.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtru ĉu postuli ciferojn en pasvortoj.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtru ĉu postuli specialajn signojn en pasvortoj.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtru ĉu postuli majusklajn literojn en pasvortoj.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Permesu al uzanto ŝanĝi la mesaĝon pri la pritraktataj pagoj.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtru la produktotipojn kiuj estu traktataj kiel planoj.
+- [wu_post_count](./Filters/wu_post_count) — Permesu al plugin-programistoj ŝanĝi la totalan nombron
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Permesu al plugin-programistoj ŝanĝi kiu afiŝostato estu kalkulata Defaŭlte, publikigitaj kaj privataj afiŝoj estas kalkulataj
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtras la objektajn datumojn antaŭ ol ili estas konservitaj en la datumbazon.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Permesu al programistoj filtri agordojn antaŭ konservado fare de Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtras ĉu estas permesite daŭrigi kun la peto aŭ ne.
+- [wu_return_url](./Filters/wu_return_url) — Permesas al programistoj ŝanĝi la gateway-revenan URL uzatan post kasaj procezoj.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Permesas al plugin-programistoj aldoni pliajn serĉmodelajn funkciojn.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Permesas al programistoj aldoni pliajn agord-sorĉistajn paŝojn.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtras ĉu Ultimate Multisite devus krei domajnan registron por nove kreita retejo.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Permesas al programistoj mallongcirkviti la alidirekton, malebligante ĝian okazon.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Permesas reverkadon de traktilo
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtras la amasajn agojn disponeblajn por retejoj.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtro por ŝanĝi la valoron por akiri plugin-retejojn ene de la reto.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Ebligi/malebligi transdomajnan unuopan ensalutan kapablon.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtras generitajn SSO-URL-ojn antaŭ ol ili estas resenditaj por transdomajnaj klientaj agoj.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtras Stripe-abonajn datumojn. Povas anstataŭigi success_url aŭ cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtras la argumentojn de la paga intenco.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtras la ID de la plano kontrolenda. Se ĉi tio ekzistas, la nova abono uzos ĉi tiun planon.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtras la ID de la produkto kontrolenda. Se ĉi tio ekzistas, la nova abono uzos ĉi tiun produkton.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtras la idempotency_key-valoron senditan kun la Stripe-ŝargaj opcioj.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtras la membrec-rekordon asociitan kun ĉi tiu webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtras la datumajn metadatumojn antaŭ ol ili estas seriigitaj por esti konservitaj en la datumbazo.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtras la objektajn datumojn antaŭ ol ili estas konservitaj en la datumbazo.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Permesas al programistoj ŝanĝi la URL-on por ĝisdatigi por malŝlosi
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Determinas ĉu mapado devus esti uzata
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtras novan klientan uzantnomon.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Permesas al programistoj ŝanĝi la mesaĝon pri la limo de membrecaj uzantoj
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Permesas al programistoj aldoni pliajn dosierujojn al la anstataŭigebla listo.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtras kiuj sub_commands estas ebligitaj por ĉi tiu ento.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Ni kontrolas tri ŝablonojn kiam ni provas eltrovi kie ni povas enmeti niajn konstantojn:

@@ -3,7 +3,7 @@ title: Ceannachadh Sitean
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Site a' Chùineachadh
+# Site a' Chùineachadh {#managing-sites}
 
 Tha sites (nawusitean) gu làidhinn a bhith na chùineadh de dhòchas a tha thu a' ghairm WaaS. Tha Ultimate Multisite de dhach ùir sitean:
 
@@ -11,13 +11,13 @@ Tha sites (nawusitean) gu làidhinn a bhith na chùineadh de dhòchas a tha thu 
 - **Site Templates** — Sites a tha de dhach pre-defined (a' chùineadh) a bheil na chùineòr-dhearg a h-uile a thgoinn.
 - **Main Site** — An site a tha thu a' ghairm buneachaidh.
 
-## A' Chluaintean Sites
+## A' Chluaintean Sites {#viewing-sites}
 
 Thànaidh do **Ultimate Multisite → Sites** chun a bhith a' chleachdadh a h-uile sitean a tha de dhach a thgoinn. Tha chada site a' chùineadh a' chùineadh agus is eadar thu a' chleachdadh le All Sites, Customer-Owned, Templates, no Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## A' Chluaintean Site ùr
+## A' Chluaintean Site ùr {#adding-a-new-site}
 
 Thànaidh do nút **Add Site** chun site ùr a thgoinn. Bidh thu ag iarraidh a bhith agad:
 
@@ -27,15 +27,15 @@ Thànaidh do nút **Add Site** chun site ùr a thgoinn. Bidh thu ag iarraidh a b
 
 Tha option **Copy Site** a' tuig a bhith ag creach site ùr air a thgoinn a' chùineadh site template a tha de dhach. Nuair a tha e a' chluainteachd, is féidir leat a thabhail an t-template a tha thu a' ghairm buneachaidh. Dearcich gu bheil **Copy Media on Duplication** a' chluainteachd airson a bhith a' tuig faighinn na fìrinn media.
 
-## A' Chùineadh Site a tha de dhach
+## A' Chùineadh Site a tha de dhach {#managing-an-existing-site}
 
 Thànaidh do nút **Manage** air aon site chun an seòl **Edit Site** a thgoinn. Anno, bheil thu ag faigh:
 
-### Inbhềidhean Bunnigheach
+### Inbhềidhean Bunnigheach {#basic-information}
 
 An t-aon fhaighinn an site, an t-aon chùineadh, an ID site, agus an t-aon fhaighinn. Bidh thu a' faigh an domain a tha a' chluainteachd, an t-aon membership a tha a' chluainteachd, agus an àite pàirt de chùineòr-dhearg a tha a' chluainteachd an site.
 
-### Opciones Sitean
+### Opciones Sitean {#site-options}
 
 A' chluainteachadh na fòcasan a tha an site agus na leimean:
 
@@ -47,7 +47,7 @@ A' chluainteachadh na fòcasan a tha an site agus na leimean:
 
 Ag còmhdhaidh, a' tha an sinnean a' tòiseachadh le na lìmhean a' th'ann amh a' chlàradh (membership level). Bidh setheann lìmhean ar fhaisg an sinnean a' chlàradh a' ghràdh an t-amh.
 
-### Co-fhacaisidhean (Associations)
+### Co-fhacaisidhean (Associations) {#associations}
 
 An tairmneachdairean a tha a' tòiseachadh a' creagadh:
 
@@ -55,7 +55,7 @@ An tairmneachdairean a tha a' tòiseachadh a' creagadh:
 - **Membership** a tha an sinnean a' tòiseachadh air
 - **Customer account** a tha a' tòiseachadh le an sinnean
 
-### Bhaileachd a' ghàid (Right Sidebar)
+### Bhaileachd a' ghàid (Right Sidebar) {#right-sidebar}
 
 Ar thàirn seallach, thu ar fadgaidh:
 

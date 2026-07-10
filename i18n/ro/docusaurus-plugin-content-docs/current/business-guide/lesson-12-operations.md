@@ -3,17 +3,17 @@ title: 'Lecția 12: Gestionarea Afacerii'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lecția 12: Rularea Afacerii
+# Lecția 12: Rularea Afacerii {#lesson-12-running-the-business}
 
 O platformă nu este un proiect pe care să-l termini, ci o afacere pe care o gestionezi. Această lecție acoperă operațiunile zilnice de management al FitSite: suport, facturare, mentenanță și menținerea clienților mulțumiți.
 
-## Unde Ne-am Întrerupt
+## Unde Ne-am Întrerupt {#where-we-left-off}
 
 FitSite este activ și clienții se înscriu. Acum trebuie să rulezi operațiunile în mod sustenabil.
 
-## Operațiuni Zilnice
+## Operațiuni Zilnice {#daily-operations}
 
-### Monitorizare
+### Monitorizare {#monitoring}
 
 Verifică aceste elemente zilnic (sau setează alerte):
 
@@ -22,7 +22,7 @@ Verifică aceste elemente zilnic (sau setează alerte):
 - **Plăți eșuate**: Există eșecuri de plată care necesită atenție?
 - **Solicitări de suport**: Există întrebări de la clienți fără răspuns?
 
-### Suport Clienți
+### Suport Clienți {#customer-support}
 
 Niche-ul tău de expertiză este un avantaj aici. Deoarece toți clienții tăi sunt studiouri de fitness, vei vedea aceleași întrebări în mod repetat:
 
@@ -36,7 +36,7 @@ Niche-ul tău de expertiză este un avantaj aici. Deoarece toți clienții tăi 
 
 Construiește baza de cunoștințe (începută în Lecția 8) în jurul acestor întrebări recurente. Fiecare ticket de suport care ar putea fi un articol din baza de cunoștințe este un semnal de a scrie acel articol.
 
-### Niveluri de Suport
+### Niveluri de Suport {#support-tiers}
 
 Pe măsură ce crești, structurează suportul în funcție de plan:
 
@@ -48,9 +48,9 @@ Pe măsură ce crești, structurează suportul în funcție de plan:
 
 Addon-ul [Support Tickets](/addons/support-tickets) poate ajuta la gestionarea solicitărilor de suport în cadrul platformei.
 
-## Operațiuni de Facturare
+## Operațiuni de Facturare {#billing-operations}
 
-### Plăți Recurente
+### Plăți Recurente {#recurring-payments}
 
 Ultimate Multisite gestionează facturarea recurentă automat prin gateway-ul tău de plăți. Rolul tău este de a monitoriza:
 
@@ -58,7 +58,7 @@ Ultimate Multisite gestionează facturarea recurentă automat prin gateway-ul t�
 - **Dunning**: Setează o logică automatizată de reîncercare prin gateway-ul tău de plăți (Stripe gestionează acest lucru foarte bine)
 - **Solicitări de anulare**: Înțelege de ce pleacă clienții. Fiecare anulare este un feedback.
 
-### Gestionarea Membratoriilor
+### Gestionarea Membratoriilor {#managing-memberships}
 
 Navighează la **Ultimate Multisite > Memberships** pentru a:
 
@@ -69,13 +69,13 @@ Navighează la **Ultimate Multisite > Memberships** pentru a:
 
 Vezi [Managing Memberships](/user-guide/administration/managing-memberships) pentru referința completă.
 
-### Facturare (Invoicing)
+### Facturare (Invoicing) {#invoicing}
 
 Asigură-te că facturile sunt generate corect pentru fiecare plată. Clienții pot avea nevoie de facturi pentru raportarea cheltuielilor de afaceri. Vezi [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Mentenanța Platformei
+## Mentenanța Platformei {#platform-maintenance}
 
-### Actualizări WordPress și Plugin-uri
+### Actualizări WordPress și Plugin-uri {#wordpress-and-plugin-updates}
 
 În calitate de administrator de rețea, ești responsabil pentru:
 
@@ -88,14 +88,14 @@ Asigură-te că facturile sunt generate corect pentru fiecare plată. Clienții 
 O actualizare defectă afectează fiecare site al clienților de pe rețeaua ta. Testează întotdeauna actualizările pe o copie de staging a rețelei tale.
 :::
 
-### Securitatea
+### Securitatea {#security}
 
 - Menține toate software-urile actualizate
 - Folosește parole puternice și autentificare cu doi factori pentru conturile de administrator
 - Monitorizează activitățile suspecte
 - Ai un plan pentru incidente de securitate
 
-### Performanța
+### Performanța {#performance}
 
 Pe măsură ce rețeaua ta crește, monitorizează:
 
@@ -105,9 +105,9 @@ Pe măsură ce rețeaua ta crește, monitorizează:
 
 Ia în considerare implementarea caching-ului (page cache, object cache) și a unui CDN dacă nu ai făcut deja. [Cloudflare integration](/user-guide/host-integrations/cloudflare) gestionează mult din asta.
 
-## Managementul Cicluului de Viață al Clientului
+## Managementul Cicluului de Viață al Clientului {#customer-lifecycle-management}
 
-### Reducerea Tăierii de Clienți (Churn)
+### Reducerea Tăierii de Clienți (Churn) {#reducing-churn}
 
 Churn este procentul de clienți care anulează în fiecare lună. Pentru o afacere bazată pe abonamente, reducerea churn-ului este la fel de importantă ca și achiziționarea de clienți noi.
 
@@ -119,7 +119,7 @@ Churn este procentul de clienți care anulează în fiecare lună. Pentru o afac
 - Au găsit o alternativă mai ieftină → consolidarea valorii nișei tale
 - Le-așă afacerea → inevitabil, dar monitorizează asta separat
 
-### Încurajarea Upgrade-urilor
+### Încurajarea Upgrade-urilor {#encouraging-upgrades}
 
 Clienții de pe planul Starter care reușesc ar trebui încurajați să facă upgrade:
 
@@ -127,7 +127,7 @@ Clienții de pe planul Starter care reușesc ar trebui încurajați să facă up
 - Trimite emailuri țintite care evidențiază funcționalitățile planului Growth de care ar beneficia
 - Prezintă ce au construit clienții cu planul Growth/Pro
 
-### Campanii de Re-acordare (Win-Back)
+### Campanii de Re-acordare (Win-Back) {#win-back-campaigns}
 
 Când un client anulează:
 
@@ -135,30 +135,30 @@ Când un client anulează:
 2. Abordează preocuparea lor, dacă este posibil
 3. Oferă o reducere pentru a reveni (30-60 de zile după anulare)
 
-## Rutine Săptămânale și Lunare
+## Rutine Săptămânale și Lunare {#weekly-and-monthly-routines}
 
-### Săptămânal
+### Săptămânal {#weekly}
 
 - Revizuiează înscrierile noi și anulările
 - Răspunde la toate ticket-urile de suport deschise
 - Verifică performanța și disponibilitatea platformei
 - Revizuiează orice plată eșuată
 
-### Lunar
+### Lunar {#monthly}
 
 - Analizează metricile cheie (MRR, churn, clienți noi, upgrade-uri)
 - Aplică actualizările WordPress și ale plugin-urilor (după testul de staging)
 - Revizuiește și actualizează baza de cunoștințe pe baza modelelor de suport
 - Trimite un newsletter sau o actualizare clienților (funcționalități noi, sfaturi, știri din industria fitness)
 
-### Trimestrial
+### Trimestrial {#quarterly}
 
 - Revizuiește prețurile în raport cu concurența și feedback-ul clienților
 - Evaluează design-urile template-urilor — au nevoie de reîmprospătare?
 - Evaluează capacitatea de găzduire — trebuie să scalezi?
 - Revizuiește și îmbunătățește onboarding-ul pe baza datelor de activare
 
-## Ce Am Construit în Această Lecție
+## Ce Am Construit în Această Lecție {#what-we-built-this-lesson}
 
 - **Rutine de monitorizare zilnică** pentru uptime, înscrieri, plăți și suport
 - **O structură de suport în paliere** potrivită nivelurilor de plan

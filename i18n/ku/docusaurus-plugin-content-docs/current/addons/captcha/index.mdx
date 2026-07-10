@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Botan rawestîne. Dahatê biparêze. Bê êşa mîhengkirinê.**
+
+Tora multisite bi domainên taybet dimeşînî? Tu êşê dizanî: Google reCAPTCHA û hCaptcha dixwazin ku tu *her domainê yek bi yek* di konsola rêvebirina wan de tomar bikî. Malpereke nû ya xerîdar zêde dikî? Config-a captcha nû bike. Domainekî taybet map dikî? Dîsa nû bike. Ev qet bi dawî nayê.
+
+**Ultimate Multisite: Captcha her tiştî diguherîne.**
+
+## Cap Captcha: Parastina Xwe-Mêvandar ku Tenê Dixebite {#cap-captcha-self-hosted-protection-that-just-works}
+
+Dabînkerê me yê nû **Cap Captcha** ji bo torên multisite guherînek mezin e:
+
+* **Bê Mîhengkirin** — Addon çalak bike û tu parastî yî. Bê API key, bê hesabê Google, bê dashboard-a hCaptcha, bê lîsteya spî ya domainan.
+* **Bi Xweber li Ser Her Domainê Dixebite** — Subdomain, domainên mapkirî, domainên xerîdaran—hemû yekser parastî ne.
+* **Xwe-Mêvandar û Taybet** — Daneyên te qet ji server-a te dernakevin. Bi tevahî li gor GDPR e û şopandina aliyê sêyem tune ye.
+* **Proof-of-Work-a Nepenî** — Bikarhêner di paşxanê de pirsgirêkeke hesabî çareser dikin. Bê klîkkirina ser fire hydrant-an, bê torên wêneyan ên acizker.
+* **Sivik** — Tenê 20KB. Checkout-a te hêdî nake.
+
+## Parastina Testkirina Kartan a WooCommerce {#woocommerce-card-testing-protection}
+
+Êrîşên testkirina kartan her sal bi milyaran ziyanê didin firoşkaran. Sextekar botan bi kar tînin da ku kartên krediyê yên dizî li hember checkout-a WooCommerce ya te rast bikin—tu xercên pêvajoyê didî, ew jî hejmarên kartên derbasdar digirin.
+
+**Em li cihê herî girîng parastinê dikin:**
+
+* **Parastina Store API** — Êrîşên botan li ser `/wp-json/wc/store/v1/checkout` asteng dike ku captcha-yên formên kevneşopî derbas dikin
+* **Bi PayPal Payments Re Guncaw** — Bi WooCommerce PayPal Payments re bêkêmasî dixebite
+* **Statîstîkên Di Demê Rast De** — Bibîne rast çend êrîşan tu asteng dikî
+
+## Hîn jî Google reCAPTCHA an hCaptcha Pêwîst e? {#still-need-google-recaptcha-or-hcaptcha}
+
+Me te girtî. Piştgiriya tam ji bo:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Li ser bingeha score)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Her dem ji mîhengên tora xwe re di navbera dabînkeran de biguherîne.
+
+## Ji Bo Mezinbûnê Hatî Çêkirin {#built-for-scale}
+
+* Mîhengên tevahiya torê bi override-ên li gor malperê
+* Dashboard-a statîstîkan ji bo şopandina parastinê
+* Asta ewlekariyê ya dikare were guherandin (Fast, Medium, Maximum)
+* Ji bo pêşvebirkeran guncaw, bi avakirina dabînkeran a dikare were firehkirin
+
+## Sazkirin {#installation}
+
+1. `ultimate-multisite-captcha` bar bike nav pelrêça xwe ya `/wp-content/plugins/`
+2. Plugin-ê li ser torê çalak bike
+3. **Evqas e. Tu parastî yî.**
+
+Cap Captcha bi xweber çalak dibe—mîheng tune ye ku were saz kirin, API key tune ye ku were têxistin. Her endpoint-a piştgirîkirî li ser tevahiya tora te di kêliya çalakkirinê de tê parastin.
+
+**Vebijêrkî:** Ji bo ku li şûna wê Google reCAPTCHA an hCaptcha bi kar bînî, biçin **Ultimate Multisite → Settings → Captcha** û dabînkerê xwe yê bijartî hilbijêre.
+
+## Pirsên Gelek Tên Pirsîn {#frequently-asked-questions}
+
+## Ma divê ez tiştekî mîheng bikim? {#do-i-need-to-configure-anything}
+
+Na! Dema tu addon çalak dikî, Cap Captcha bi xweber çalak dibe. Tevahiya tora te yekser parastî ye—mîheng tune ye ku were saz kirin, API key tune ye ku were têxistin.
+
+## Ma ji bo Cap Captcha API key pêwîst e? {#do-i-need-api-keys-for-cap-captcha}
+
+Na. Cap Captcha bi tevahî xwe-mêvandar e. Bê hesabên derve, bê tomarkirina domainê, bê serêşiyên mîhengkirinê.
+
+## Ma ev checkout-a min hêdî dike? {#will-this-slow-down-my-checkout}
+
+Cap Captcha tenê 20KB e û ceribandinên proof-of-work di paşxanê de dimeşîne. Xerîdarên te tu derengiyê nabînin.
+
+## Ma ev li dijî êrîşên testkirina kartan diparêze? {#does-this-protect-against-card-testing-attacks}
+
+Erê! Berevajî captcha-yên kevneşopî ku tenê formên HTML diparêzin, entegrasyona me ya WooCommerce rasterast xwe bi Store API ve girê dide da ku êrîşên botan li asta API asteng bike—li cihê ku piraniya êrîşên testkirina kartan çêdibin.
+
+## Ma ez dikarim li ser malperên cuda dabînkerên cuda yên captcha bi kar bînim? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Dabînkerê captcha li ser tevahiya torê tê danîn, lê tu dikarî li gor pêwîstiyên xwe mîhengên dijwariyê biguherînî.
+
+## Ma ev li gor GDPR e? {#is-this-gdpr-compliant}
+
+Cap Captcha 100% xwe-mêvandar e û ti dane ji bo xizmetên derve nayên şandin. Ji bo Google reCAPTCHA û hCaptcha, ji kerema xwe polîtîkayên wan ên taybetiyê bixwîne.
+
+## Sînordarkirina Rêjeyê {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 sînordarkerek rêjeyê ya rawestîna tund tîne ku tora te ji êrîşên brute-force û testkirina kartan diparêze.
+
+### Çawa Dixebite {#how-it-works}
+
+Sînordarkerê rêjeyê her daxwaza GET û POST li ser rûyên bi captcha parastî dihejêre:
+
+* **Endpoint-ên têketina WordPress** — wp-login, register, lost-password, comments
+* **Checkout-a WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Dema mêvanek sînorê rêjeyê derbas dike, plugin bi van tiştan bersiv dide:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header ku nîşan dide kengî dîsa were ceribandin
+* **Razandina tarpit a tesadufî** (bi standard 1–5 çirke, bi sînora hişk heta 15 çirke) da ku êrîşkar hêdî bibin
+
+### Mîhengkirin {#configuration}
+
+#### Demjimêra Tarpit {#tarpit-timing}
+
+Derengiya tesadufî ya li daxwazên bi rêje-sînorkirî tê bikaranîn kontrol bike:
+
+* **`cap_rate_limit_tarpit_min`** — Dirêjahiya herî kêm a razandinê bi çirkeyan (standard: 1)
+* **`cap_rate_limit_tarpit_max`** — Dirêjahiya herî zêde a razandinê bi çirkeyan (standard: 5, bi sînora hişk heta 15)
+
+Ev mîheng di **Ultimate Multisite → Settings → Captcha** de hene.
+
+### Firehkirin {#extensibility}
+
+#### Parzûna Lîsteya Spî ya IP {#ip-whitelist-filter}
+
+Rêzeyên IP yên pêbawer ji sînordarkirina rêjeyê derxe:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Çalakiya Berî Astengkirinê {#pre-block-action}
+
+Tavil berî ku astengkirina rêje-sînorê were şandin, lojîka xwerû bixebitîne:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Dîtina IP ya Client û Proxy-yên Pêbawer {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 dîtina client-IP ya li dijî sextekirinê xurt tîne. Metoda `Captcha_Core::get_client_ip()` niha çavkaniya yekane ya rastiyê ye ji bo veqetandina IP ya mêvanan li ser:
+
+* Kilîdên kovika sînorkirina rêje
+* Pêşkêşkarê Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hashên IP yên statîstîkan
+
+### Modela Baweriyê {#trust-model}
+
+Ev pêvek hiyerarşiyeke tund a baweriya IP pêk tîne:
+
+1. **REMOTE_ADDR** — Her dem pê bawer e (IP ya hevkarê yekser)
+2. **CF-Connecting-IP** — Tenê hingê tê qebûlkirin ku:
+   - Hevkarê yekser di nav rêza IP ya heyî ya Cloudflare de be
+   - `cap_trust_cloudflare_headers` çalak be (standard: OFF)
+3. **X-Forwarded-For** — Tenê hingê tê qebûlkirin ku:
+   - Hevkarê yekser di lîsteya proxyên pêbawer ên ku ji hêla rêvebirê te ve hatiye mîhengkirin de be
+   - Header ji rastê ber bi çepê ve tê şîrovekirin, hopên pêbawer/Cloudflare têne derbas kirin
+
+### Veavakirin {#configuration-1}
+
+#### Baweriya Header a Cloudflare {#cloudflare-header-trust}
+
+Baweriya header a Cloudflare ya `CF-Connecting-IP` çalak bike:
+
+* **`cap_trust_cloudflare_headers`** — Ji bo hilbijartina baweriya `CF-Connecting-IP` bike ON
+  - Standard: OFF (neçalak)
+  - Pêvek bi snapshoteke Cloudflare CIDR ya tevhev tê
+  - Rêzên CIDR her hefte bi rêya wp-cron têne nûkirin
+  - Ger nûkirin têk biçe, paşgira tevhev tê bikaranîn
+
+#### Veavakirina Proxy ya Pêbawer {#trusted-proxy-configuration}
+
+Proxy û load-balancerên xeta pêşîn a xwe diyar bike:
+
+* **`cap_trusted_proxies`** — Textarea ji CIDR an IPyên sade (her rêzek yek)
+  - Şîrove destûr in (rêzên ku bi `#` dest pê dikin)
+  - Bê vê mîhengê, `X-Forwarded-For` tê paşguhkirin, heta dema ku sînorkera rêje çalak be jî
+  - Mînak:
+    ```
+    # Load balancer a me
+    192.0.2.0/24
+
+    # Proxy ya paşgir
+    198.51.100.50
+    ```
+
+#### Dîtina Xweber a Cara Yekem a Çalakkirinê {#first-enable-auto-detection}
+
+Dema ku tu cara yekem sînorkera rêje çalak dikî, pêvek rewşa Cloudflare û proxy ya ku dibe ku hebe nas dike û hişyariyeke rêvebir ya yek-bitikandinê ya "Mîhengên hatine dîtin bisepîne" nîşan dide.
+
+* Pêvek **tu carî** nirxên te yên tomarkirî nanivîse
+* Ger trafîka paşê nîşan bide ku config êdî bi rastiyê re nayê hev (mînak, Cloudflare rêzên CIDR guhertin), hişyariyeke ne-veşartinbar ya nakokiyê nûkirina pêşniyarkirî derdixe pêş
+
+### Çima Ev Girîng e {#why-this-matters}
+
+Modeleke tund a baweriya IP rêgezekî xapandinê yê girîng digire: daxwazên rasterast ên servera bingehîn ku header a çêkirî ya `CF-Connecting-IP` hildigirtin, berê li gorî IP ya sexte dihatin kovikkirin, ne li gorî hevkarê rastîn. Ev bi taybetî ji bo van girîng e:
+
+* **Sînorkirina rêje** — Êrîşkar nikarin bi sextekirina IPyan sînoran derbas bikin
+* **Statîstîk** — Pîvanên êrîşê yên te IPyên rastîn ên ziyaretkaran nîşan didin, ne yên sexte
+* **Piştrastkirina Captcha** — Pêşkêşkar IP ya rast a ziyaretkar ji bo nirxandina metirsiyê werdigirin

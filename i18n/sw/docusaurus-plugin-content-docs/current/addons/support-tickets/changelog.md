@@ -3,13 +3,13 @@ title: Orodha ya Mabadiliko ya Tiketi za Usaidizi
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Historia ya Mabadiliko ya Tiketi za Msaada
+# Historia ya Mabadiliko ya Tiketi za Msaada {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Imeboreshwa: Imeondoa saraka ya vendor/ kutoka kwa ufuatiliaji wa Git (tayari inafunikwa na .gitignore), hivyo kupunguza ukubwa wa hifadhi.
 * Imeboreshwa: Imepimwa hadi WordPress 7.0.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Kurekebishwa: Kukubali thamani tupu (null values) katika sehemu za kuweka thamani za mfumo wa tiketi ambazo zinaweza kuwa tupu.
 * Kurekebishwa: Kuhifadhi tiketi zote katika meza za jumla zinazofika kote kwenye mtandao kwa usaidizi sahihi wa multisite.
 * Kurekebishwa: Kuficha sehemu za wafanyakazi na kurekebisha upirection wa kurudi kwenye ukurasa tupu kwenye fomu ya mteja ya tiketi mpya.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Imeboreshwa: Kuwaweka rasilimali za mbele (frontend assets) kwa masharti tu kwenye kurasa za tiketi za msaada.
 * Imeboreshwa: Kukwepa autoloader ya plugin wakati autoloader ya mzizi wa Bedrock tayari imeweka utegemaji.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Imeongezwa: Uwezo kamili wa kuangalia tiketi kwa ajili ya admin na sehemu ya mbele (frontend).
 * Imeongezwa: Matibabu ya AJAX kwa kutuma majibu ya tiketi.
 * Imeongezwa: Usaidizi kwa utendaji wa majibu ya tiketi na usimamizi sahihi wa fomu.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Imeboreshwa: Muundo wa database na madarasa sahihi ya utafiti na schema kwa majibu na kiambatisho.
 * Imeboreshwa: Kuhama kwa mali halisi (real properties) badala ya sifa (attributes) kwa mifumo ya tiketi.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Imosasishwa: Kiambatanisho (prefix) kimebadilishwa kuwa ultimate-multisite kwa ushindani.
 * Imosasishwa: Uwekaji viwango wa eneo la maandishi (Text domain standardization).
 * Kurekebishwa: Kurekebisha na kuboresha makosa madogo.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Toreo la kwanza
 * Mfumo kamili wa usimamizi wa tiketi
 * Udhibiti wa ufikiaji wa viwango mbalimbali

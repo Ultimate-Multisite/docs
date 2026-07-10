@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ang Ultimate Multisite: Multi-Currency nagtugot sa imong network nga makadawat og bayad sa daghang currency. Awto kining mag-convert sa mga presyo gamit ang live o manual exchange rates, gitugotan ka niini nga magtakda og eksaktong presyo kada produkto para sa bisan unsang currency, ug matukoy pa gani niya ang paborito nga currency sa bisita base sa iyang lokasyon — tanan kini gi-manage gikan sa usa lang ka admin dashboard.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Automatic exchange rate conversion** — Ang mga presyo ma-convert gikan sa imong base currency gamit ang rates nga nakuha gikan sa napili nimong provider
 - **Per-product pricing overrides** — Makatimbang og eksaktong presyo kada currency sa bisan unsang produkto aron malikayan ang awtomatikong pag-convert
@@ -20,22 +20,22 @@ Ang Ultimate Multisite: Multi-Currency nagtugot sa imong network nga makadawat o
 - **Geolocation-based currency detection** — Awto kining magpili sa currency nga mohaum sa nasud sa bisita
 - **Admin dashboard** — Pag-manage sa mga aktibong currencies, exchange rates, ug provider settings gikan sa usa ka lugar
 
-## Requirements
+## Requirements {#requirements}
 
 - Ultimate Multisite 2.0.0 or higher
 - WordPress Multisite installation
 - PHP 7.4 or higher
 
-## Installation
+## Installation {#installation}
 
 1. I-upload ang plugin files ngadto sa `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. I-activate ang plugin pinaagi sa **Plugins** screen sa WordPress (Network Activate)
 3. Adto sa **Ultimate Multisite → Multi-Currency** aron maabli ang admin dashboard
 4. Dugangi ang mga currencies nga gusto nimong dawaton ug i-configure ang imong exchange rate provider
 
-## Configuration
+## Configuration {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Ang Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) mao ang sentro nga lugar aron:
 
@@ -44,7 +44,7 @@ Ang Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) m
 - Pagreview sa kasamtangang rates para sa tanan nga aktibong currencies
 - Pagtakda og manual rates kon dili maayo ang awtomatikong providers
 
-### Exchange Rate Providers
+### Exchange Rate Providers {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Ang Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) m
 
 Pilia ang imong provider ubos sa **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ang mga rates mahimong i-refresh mano-mano bisan kanus-a o ma-schedule aron awtomatik nga mo-update.
 
-### Per-Product Pricing Overrides
+### Per-Product Pricing Overrides {#per-product-pricing-overrides}
 
 Kung dili kaayo tukma ang awtomatikong pag-convert, makatimbang ka og eksaktong presyo para sa usa ka specific currency sa bisan unsang produkto:
 
@@ -66,7 +66,7 @@ Kung dili kaayo tukma ang awtomatikong pag-convert, makatimbang ka og eksaktong 
 
 Ang mga produkto nga walay override mogamit sa na-convert nga presyo gikan sa imong base currency.
 
-### Currency Selector Signup Field
+### Currency Selector Signup Field {#currency-selector-signup-field}
 
 Ang field nga nagpili og currency mahimong idugang sa imong signup/checkout flow aron ang mga kustomer makapili sa ilang paborito nga currency pagparehistro:
 
@@ -76,7 +76,7 @@ Ang field nga nagpili og currency mahimong idugang sa imong signup/checkout flow
 
 Ang napili nga currency ma-store uban sa subscription ug mogamit para sa tanang mosunod nga billing.
 
-### Geolocation-Based Currency Detection
+### Geolocation-Based Currency Detection {#geolocation-based-currency-detection}
 
 Kung gi-enable ang geolocation detection, ang addon makakonekta sa nasud sa bisita ngadto sa usa ka currency ug awtomatik kining i-selekto sa currency selector field. Aron ma-enable:
 
@@ -86,27 +86,27 @@ Kung gi-enable ang geolocation detection, ang addon makakonekta sa nasud sa bisi
 
 Kon walay mapping para sa nasud sa bisita, gamiton ang base currency sa network isip fallback.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-### Unsa may mahitabo kon walay available nga exchange rate provider?
+### Unsa may mahitabo kon walay available nga exchange rate provider? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Ang addon mobalik sa pinaka-last nga malampuson nga nakuha nga rates. Kon wala pa gayoy na-fetch nga rates, mobalik kini sa manual rates nga imong gi-configure. Girekomenda nga mag-configure og manual rates isip safety net.
 
-### Makagamit ba ko og lain-laing providers para sa lahi-laing currencies?
+### Makagamit ba ko og lain-laing providers para sa lahi-laing currencies? {#can-i-use-different-providers-for-different-currencies}
 
 Dili — usa ka provider lang ang aktibo sa tanang currencies. Gamita ang **Manual** kon kinahanglan nimo ang bug-os nga kontrol sa matag rate.
 
-### Nagkinahanglan ba og separate plugin ang geolocation?
+### Nagkinahanglan ba og separate plugin ang geolocation? {#does-geolocation-require-a-separate-plugin}
 
 Walay gikinahanglang external geolocation plugin. Ang addon naggamit sa built-in IP-to-country detection sa WordPress. Para sa mas taas nga katumpakan, mahimong i-integrate ang usa ka dedicated geolocation service pinaagi sa gihatag nga filter hooks.
 
-### Ang per-product overrides ba maapil sa tax o pagkahuman sa tax?
+### Ang per-product overrides ba maapil sa tax o pagkahuman sa tax? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Ang per-product overrides nagtakda sa pre-tax price sa target currency. Ang Tax ma-calculate base sa override price gamit ang imong kasamtangang tax configuration.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Released on 2026-04-02
+### Version 1.0.0 — Released on 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - New: Multi-currency support with automatic exchange rate conversion
 - New: Per-product pricing overrides for exact currency-specific prices

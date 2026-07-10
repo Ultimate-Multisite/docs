@@ -3,7 +3,7 @@ title: Pāpe o te whānau
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# A Hua o Akounta o Koa Kōrero (v2)
+# A Hua o Akounta o Koa Kōrero (v2) {#your-clients-account-page-v2}
 
 _**NOTE WHAKANGA: Ko tēnei tikanga he tino mō Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ Iha whena i te whānau o ngā mea, ka whai i ngā mea katoa e pēnei ana ki te w
 
 I tēnei tutorial, ka tū mai mātou ki te whai i a koe i te hoa o akounta o te mea, ā, ka whakaatu ai i te mea e taea ana ngā hoa o koe te whakaaro me te whakamahi i te mea.
 
-## Te Hua o Akounta (The Account Page)
+## Te Hua o Akounta (The Account Page) {#the-account-page}
 
 He tino tika te whai i te **Account** i runga i te dashboard o tō hoa o akounta.
 
@@ -27,7 +27,7 @@ I ngā wā ka pahi i tēnei link, ka whakaatu ai ahau i te whakatutuki o tō mem
 
 Ka taea hoki koe te whakawhiti i tō membership ki he plan hou, ko te pēke hou, ko te service hou e kaha ai koe. Ka whakatika mātou i kuitia o te wiki mō paneke katoa.
 
-### Whakawhanaungatanga o Awahi Moea:
+### Whakawhanaungatanga o Awahi Moea: {#your-membership-overview}
 
 Te bloku tū-ā-tū i runga i te ingoa waka o ngā mea whai whānau (customers) e whakaatu ana i te whakataki mō te plan me ngā whakataunga/package (services/packages) kua oti he whaina. Ko te bloku hoki e whakaatu i te nambere o te membership, te whakahauata kete (initial amount paid) kua paia ahau, te kaha o te plan me ngā service/package, me te wā kua paia ahau mō tēnei membership. He taea ai whakamahi hoki he whakaahua ana ko te membership **Active** (māhi), **Expired** (whakamutai), he **Canceled** (whakawātea).
 
@@ -51,7 +51,7 @@ E tū mai i roto i pito whānui atu ki a koe he waka hou mō tō customer. He me
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Whakanui te Template o te Wāhi (Changing the Site Template):
+### Whakanui te Template o te Wāhi (Changing the Site Template): {#updating-the-billing-address}
 
 Kia tino pai ahau ki ngā customer atu whakaahu i ngā template o te wāhi, e hiahia ana koe ki te pito i **Ultimate Multisite > Settings > Sites** me te whakatipu i te option **Allow Template Switching**.
 
@@ -77,7 +77,7 @@ I tōna whakatū, ka whai koe i te whakamārama i te whakawhiti.
 
 I tōna whakatū, ka taea ai ngā mea e pēnei ana ki te whakamahi i **Reset current template** (Whakamutunga i te templat i te ao) i tēnei panel, ko te mea i roto i te wā e pēnei ana. He tino kaha te whakaahuatanga: he pēnei i te whakawhiti ki te templat hou, ka taea te whakatū i te templat hou i te wā e pēnei ana. Engari, he pēnei i te whakamutunga i te templat, ka taea te whakakaha i te mōhaka o te site, ko tēnā mea he tino kaha ahau ki te whakaahuatanga: me te whakatū i te whakamutunga i te wā e pēnei ana koe i te whakaaro i te mahi.
 
-### Whakamārama Domain Whakaahua (Adding Custom Domains):
+### Whakamārama Domain Whakaahua (Adding Custom Domains): {#changing-the-site-template}
 
 Ka taea ai ngā customer o koe te whakamahi i domain whakahou mo tēnei plan i tō account page. Ko te mea i roto i te wā e pēnei ana, he pēnei i te whakawhiti ki te templat hou: go **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -109,7 +109,7 @@ I heke ana ki te whakapichu **Next Step**, e taea ai ngā customer ahau te āwhi
 
 I heke ana ki te whakapichu **Add Domain**, ka puta te domain ki te account o tō customer. He mea katoa e hiahia ahau i te whakamahi, he whakawhiti i ngā DNS records o tēnei domain tuatahi i te domain registrar o tō customer.
 
-### Whakatika Password:
+### Whakatika Password: {#adding-custom-domains}
 
 I roto i te dashboard o te account, e taea ai ngā customer ahau te whakatika i te password ahau ma te whakapichu ki **Change Password**.
 
@@ -119,7 +119,7 @@ Koe ka whakaatu i pango whānui (new window) i te where mai ngā koutou mea whai
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Wāhi Ātanga Hauora:
+### Wāhi Ātanga Hauora: {#changing-password}
 
 He optiona rua mātou i whai ake ana i te wāhi **Danger Zone**: **Delete Site** (Whakamutunga Te Waka) me **Delete Account** (Whakamutunga Akau). Ko ngā mea e tēnei ana i te wāhi Danger Zone, ko te mea he pōtiki (irreversible) ngā ngā mahi ei whai whakaaro. Ko te mea, ko ahau i te whakatū mai i te waka o koutou ahau me te akau o koutou, ka taea e koutou te whakatū mai i ahau pōtiki (recover) i tēnei mea.
 

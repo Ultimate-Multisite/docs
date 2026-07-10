@@ -3,7 +3,7 @@ title: Céad Míneamh agus Déan ar Teampála Síti
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search agus Rinnúint i Site Templates (v2)
+# Auto Search agus Rinnúint i Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Is curteoir seo ag iarraidh WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Beidh Ultimate Multisite ag gúntú an t-amhasgacha le dath a chur ar fáil an c
 
 Ansin, beidh Ultimate Multisite ag gúntú an t-amhasgacha le dath a chur ar fáil an chuid custaimer go dtí an chéad áit.
 
-## **Ciorcaladh an "site template i bhfáthach placeholderacha"**
+## **Ciorcaladh an "site template i bhfáthach placeholderacha"** {#solving-the-template-full-of-placeholders-problem}
 
 Is é sin an talamhán, ach táimid ag iarraidh an t-amhasgacha a bheith i bhfáthach: an t-amhasgacha a bhaineann leat a chluainteáil - a bhíonn i bhfáthachacha fada agus níl é go léir.
 

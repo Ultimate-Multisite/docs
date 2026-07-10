@@ -1,61 +1,72 @@
 ---
 title: הגדרת PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# הגדרת שער התשלומים של PayPal (גרסה 2)
+# הגדרת שער PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
 
-ניתן להפעיל עד ארבע שיטות תשלום בדף הגדרות התשלומים שלנו: Stripe, Stripe Checkout, PayPal וידני. במאמר זה נראה כיצד לבצע אינטגרציה עם **PayPal**.
+ניתן להפעיל עד ארבע שיטות תשלום בעמוד הגדרות התשלום שלנו: Stripe, Stripe Checkout, PayPal וידני. במאמר זה נראה כיצד לבצע אינטגרציה עם **PayPal**.
 
-בדומה ל-Stripe, גם PayPal נמצא בשימוש נרחב לתשלומים מקוונים, במיוחד באתרי WordPress. מאמר זה ידריך אתכם כיצד להשתמש ב-PayPal כאמצעי תשלום זמין ברשת שלכם.
+בדומה ל-Stripe, ‏PayPal נמצא בשימוש נרחב לתשלומים מקוונים, במיוחד באתרי WordPress. מאמר זה ינחה אותך כיצד להשתמש ב-PayPal כשיטת תשלום זמינה ברשת שלך.
 
-שימו לב שאתם צריכים **חשבון PayPal עסקי** כדי לקבל את פרטי ה-API הנדרשים לאינטגרציה זו.
+שים לב שעליך להיות בעל **PayPal Business account** כדי לקבל את פרטי ה-API הנדרשים לאינטגרציה זו.
 
-## הפעלת PayPal ברשת שלכם
+## הפעלת PayPal ברשת שלך {#enabling-paypal-on-your-network}
 
-כדי להפעיל את PayPal כאמצעי תשלום זמין ברשת שלכם, עברו אל **Ultimate Multisite > Settings > Payments** וסמנו את התיבה ליד PayPal.
+כדי להפעיל את PayPal כשיטת תשלום זמינה ברשת שלך, עבור ללשונית **Ultimate Multisite > Settings > Payments** וסמן את התיבה שליד PayPal.
 
-![הפעלת PayPal בשערי התשלומים הפעילים](/img/config/settings-payment-gateways.png)
+![הפעלת PayPal בשערי תשלום פעילים](/img/config/settings-payment-gateways.png)
 
-## קבלת פרטי ה-API של PayPal
+## שימוש באשף ההגדרה המונחה {#using-the-guided-setup-wizard}
 
-לאחר שהפעלתם את PayPal כשער תשלומים, תצטרכו למלא את השדות עבור **Username** של PayPal API, **Password** של PayPal API ו-**Signature** של PayPal API.
+Ultimate Multisite 2.10.0 מוסיף אשף הגדרת PayPal מונחה להגדרות שער התשלום. לאחר הפעלת PayPal, השתמש באשף ב-**Ultimate Multisite > Settings > Payments** כדי לבחור כיצד ברצונך לחבר את השער ולאשר אילו פרטי גישה עדיין נדרשים לפני השמירה.
 
-תוכלו לקבל פרטים אלה על ידי התחברות לחשבון PayPal שלכם ב-[Live](https://www.paypal.com/home) או ב-[Sandbox](https://www.sandbox.paypal.com/home).
+האשף תומך בשני מסלולי הגדרה:
 
-(זכרו שניתן להשתמש ב-**sandbox mode** כדי לבדוק תשלומים ולוודא שהשער מוגדר כראוי. פשוט הפעילו את הסעיף המתאים.)
+* **הזנה ידנית של פרטי גישה**: השתמש במסלול זה כאשר כבר יש לך פרטי API של PayPal, כאשר הגדרת OAuth אינה זמינה עבור החשבון שלך, או כאשר אתה מעדיף להעתיק את פרטי הגישה מ-PayPal בעצמך. הזן את שם המשתמש של ה-API, סיסמת ה-API וחתימת ה-API בשדות PayPal, ולאחר מכן שמור את הגדרות התשלום.
+* **שער חיבור OAuth**: השתמש במסלול זה רק כאשר אפשרות OAuth זמינה ומופעלת עבור ההתקנה שלך. האשף מציג את תהליך OAuth מאחורי דגל תכונה, כך שרשתות ללא הדגל ממשיכות להשתמש בשדות ההזנה הידנית של פרטי הגישה.
 
-![שדות פרטי API של PayPal ומתג sandbox mode](/img/config/settings-payment-gateways.png)
+אם אינך רואה את אפשרות OAuth באשף, השלם את תהליך ההזנה הידנית של פרטי הגישה שלהלן. השער עובד עם אותם פרטי API של PayPal Business כמו במהדורות קודמות של Ultimate Multisite 2.x.
 
-כדי לבקש פרטי API Signature או Certificate עבור חשבון PayPal שלכם:
+## קבלת פרטי ה-API של PayPal {#getting-the-paypal-api-credentials}
 
-  1. עברו אל [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
+לאחר ש-PayPal מופעל כשער תשלום, תצטרך למלא את השדות עבור PayPal API **Username** , ‏PayPal API **Password** ו-PayPal API **Signature**.
 
-  2. בסעיף **API access**, לחצו על **Update**.  
-![הגדרות חשבון PayPal עם סעיף API access](/img/config/settings-payment-gateways.png)
+אפשר לקבל זאת באמצעות התחברות לחשבון PayPal [Live](https://www.paypal.com/home) או [Sandbox](https://www.sandbox.paypal.com/home) שלך.
 
-  3. תחת **NVP/SOAP API integration (Classic)**, לחצו על **Manage API credentials**.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+(זכור שניתן להשתמש ב-**מצב sandbox** כדי לבדוק תשלומים ולראות אם השער מוגדר כראוי. פשוט הפעל את המתג בחלק המתאים.)
 
-     * אם כבר יצרתם API Signature או Certificate, תועברו לדף שבו תוכלו למצוא את הפרטים שלכם.
+![שדות פרטי API של PayPal ומתג מצב sandbox](/img/config/settings-payment-gateways.png)
 
-     * _**הערה:** אם תתבקשו לאמת את חשבון PayPal שלכם, עקבו אחר ההוראות על המסך._
+כדי לבקש פרטי API Signature או Certificate עבור חשבון PayPal שלך:
 
-  4. בחרו _אחת_ מהאפשרויות הבאות, ולאחר מכן לחצו על **Agree and Submit**.
+  1. עבור אל [הגדרות Account](https://www.paypal.com/businessmanage/account/accountAccess).
 
-     * **Request API Signature** – בחרו לאימות באמצעות API Signature.
+  2. בסעיף **גישת API**, לחץ על **עדכן**.
+![הגדרות Account של PayPal עם סעיף גישת API](/img/config/settings-payment-gateways.png)
 
-     * **Request API Certificate** – בחרו לאימות באמצעות API Certificate.
+  3. תחת **אינטגרציית NVP/SOAP API (Classic)** , לחץ על **נהל פרטי API**.
+![אינטגרציית NVP/SOAP API של PayPal ניהול פרטי API](/img/config/settings-payment-gateways.png)
 
-  5. PayPal מייצר את פרטי ה-API שלכם כדלקמן:  
+     * אם כבר יצרת API Signature או Certificate, תופנה לעמוד שבו ניתן למצוא את פרטי הגישה שלך.
+
+     * _**הערה:** אם תתבקש לאמת את חשבון PayPal שלך, עקוב אחר ההוראות שעל המסך._
+
+  4. בחר _אחת_ מהאפשרויות הבאות, ולאחר מכן לחץ על **הסכם ושלח**.
+
+     * **בקש API Signature** – בחר עבור אימות באמצעות API Signature.
+
+     * **בקש API Certificate** – בחר עבור אימות באמצעות API Certificate.
+
+  5. PayPal מייצרת את פרטי ה-API שלך כך:
 ![פרטי API שנוצרו על ידי PayPal](/img/config/settings-payment-gateways.png)
 
-     * **פרטי API Signature** כוללים API Username, API Password ו-Signature, שאינם פגים. ערכים אלה מוסתרים כברירת מחדל לאבטחה נוספת. לחצו על **Show/Hide** כדי להציג או להסתיר אותם. בסיום, לחצו על **Done**.
+     * **פרטי API Signature** כוללים API Username,‏ API Password ו-Signature, שאינם פגים. ערכים אלה מוסתרים כברירת מחדל לצורך אבטחה מוגברת. לחץ על **הצג/הסתר** כדי להפעיל ולכבות את התצוגה שלהם. בסיום, לחץ על **סיום**.
 
-     * **פרטי API Certificate** כוללים API Username, API Password ו-Certificate, שפג תוקפו אוטומטית לאחר שלוש שנים. לחצו על **Download Certificate** כדי לשמור את ה-API Certificate לשולחן העבודה שלכם.
+     * **פרטי API Certificate** כוללים API Username,‏ API Password ו-Certificate, שפג תוקפו אוטומטית לאחר שלוש שנים. לחץ על **הורד Certificate** כדי לשמור את ה-API Certificate לשולחן העבודה שלך.
 
-זהו, אינטגרציית התשלומים שלכם עם PayPal הושלמה!
+זהו, אינטגרציית התשלום שלך עם PayPal הושלמה!
 
-אם יש לכם שאלות בנוגע להגדרות PayPal, תוכלו לעיין ב-[מרכז העזרה](https://www.paypal.com/br/smarthelp/home) של PayPal.
+אם יש לך שאלות כלשהן לגבי הגדרות PayPal, ניתן לעיין ב-[מרכז העזרה](https://www.paypal.com/br/smarthelp/home) של PayPal.

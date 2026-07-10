@@ -3,15 +3,15 @@ title: मेन्यू बनाएँ
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# मेन्यू बनाएं
+# मेन्यू बनाएं {#create-menu}
 
 **मेन्यू बनाने** की सुविधा का उपयोग करके आप WordPress नेविगेशन मेन्यू बना सकते हैं, जिसमें पेज के टाइटल से अलग विशिष्ट नेविगेशन लेबल का समर्थन होता है।
 
-## अवलोकन (Overview)
+## अवलोकन (Overview) {#overview}
 
 यह सुविधा मानक मेन्यू बनाने की कार्यक्षमता को बढ़ाती है, जिसमें `navigation_label` पैरामीटर निर्दिष्ट करने की क्षमता होती है। यह आपको ऐसे मेन्यू बनाने की अनुमति देता है जहां नेविगेशन में प्रदर्शित लेबल पेज के टाइटल से अलग हो, जिससे साइट की संरचना और उपयोगकर्ता अनुभव में अधिक लचीलापन मिलता है।
 
-## पैरामीटर्स (Parameters)
+## पैरामीटर्स (Parameters) {#parameters}
 
 | पैरामीटर | टाइप | आवश्यक | विवरण |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | नहीं | इस मेन्यू को असाइन करने के लिए थीम लोकेशन, उदाहरण के लिए: `primary` |
 | `navigation_label` | string | नहीं | नेविगेशन में प्रदर्शित होने वाला लेबल (पेज टाइटल से अलग) |
 
-## रिटर्न वैल्यू (Return Value)
+## रिटर्न वैल्यू (Return Value) {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## नेविगेशन लेबल बनाम पेज टाइटल (Navigation Label vs Page Title)
+## नेविगेशन लेबल बनाम पेज टाइटल (Navigation Label vs Page Title) {#navigation-label-vs-page-title}
 
 `navigation_label` पैरामीटर आपको आंतरिक मेन्यू नाम को उपयोगकर्ताओं को प्रदर्शित होने वाले लेबल से अलग करने की अनुमति देता है:
 
@@ -43,9 +43,9 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 - आपको विभिन्न लेबल लंबाई के साथ कई भाषाओं का समर्थन करने की आवश्यकता हो
 - आप विशिष्ट क्षेत्रों या उपयोगकर्ता समूहों के लिए मेन्यू बना रहे हों
 
-## उपयोग के उदाहरण (Usage Examples)
+## उपयोग के उदाहरण (Usage Examples) {#usage-examples}
 
-### उदाहरण 1: नेविगेशन लेबल के साथ साधारण मेन्यू
+### उदाहरण 1: नेविगेशन लेबल के साथ साधारण मेन्यू {#example-1-simple-menu-with-navigation-label}
 
 **प्रॉम्प्ट:**
 ```
@@ -62,7 +62,7 @@ Create a primary navigation menu called "Main Navigation" with the navigation la
 }
 ```
 
-### उदाहरण 2: विशिष्ट थीम लोकेशन के लिए मेन्यू
+### उदाहरण 2: विशिष्ट थीम लोकेशन के लिए मेन्यू {#example-2-menu-for-specific-theme-location}
 
 **प्रॉम्प्ट:**
 ```
@@ -80,7 +80,7 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 }
 ```
 
-## थीम बिल्डर के साथ एकीकरण (Integration with Theme Builder)
+## थीम बिल्डर के साथ एकीकरण (Integration with Theme Builder) {#integration-with-theme-builder}
 
 जब आप Theme Builder का उपयोग करते हैं, तो Create Menu सुविधा:
 
@@ -89,13 +89,13 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 3. मेन्यू को सही थीम लोकेशन पर असाइन करती है
 4. निर्माण के बाद मेन्यू आइटम जोड़ने का समर्थन करती है
 
-## संबंधित सुविधाएँ (Related Abilities)
+## संबंधित सुविधाएँ (Related Abilities) {#related-abilities}
 
 - **`add_menu_item`** — मौजूदा मेन्यू में आइटम जोड़ें
 - **`update_menu`** — मेन्यू का नाम बदलें या इसे थीम लोकेशन पर पुनः असाइन करें
 - **`delete_menu`** — अपनी साइट से मेन्यू हटाएँ
 
-## सर्वोत्तम अभ्यास (Best Practices)
+## सर्वोत्तम अभ्यास (Best Practices) {#best-practices}
 
 - **स्पष्ट नेविगेशन लेबल का उपयोग करें** — लेबल को उपयोगकर्ताओं के लिए संक्षिप्त और वर्णनात्मक रखें
 - **थीम लोकेशन से मिलान करें** — उचित प्रदर्शन के लिए मेन्यू को सही थीम लोकेशन पर असाइन करें
@@ -103,14 +103,14 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 - **रिस्पॉन्सिवनेस का परीक्षण करें** — सत्यापित करें कि मेन्यू मोबाइल उपकरणों पर सही ढंग से प्रदर्शित होते हैं
 - **लेबल का स्थानीयकरण करें** — विभिन्न भाषा संस्करणों के लिए अलग नेविगेशन लेबल का उपयोग करें
 
-## सीमाएँ (Limitations)
+## सीमाएँ (Limitations) {#limitations}
 
 - नेविगेशन लेबल केवल प्रदर्शन के लिए होते हैं; आंतरिक `name` का उपयोग अभी भी WordPress पहचान के लिए किया जाता है
 - थीम समर्थन भिन्न होता है; सभी थीम सभी मेन्यू लोकेशन का समर्थन नहीं करते हैं
 - मेन्यू आइटम को मेन्यू बनाने के बाद अलग से जोड़ा जाना चाहिए
 - नेविगेशन लेबल बदलने के लिए मेन्यू को अपडेट करना आवश्यक है
 
-## संबंधित सुविधाएँ (Related Abilities)
+## संबंधित सुविधाएँ (Related Abilities) {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — अपनी साइट हेडर के लिए लोगो बनाएं
 - [Validate Palette Contrast](./validate-palette-contrast.md) — सुलभ रंग योजना सुनिश्चित करें

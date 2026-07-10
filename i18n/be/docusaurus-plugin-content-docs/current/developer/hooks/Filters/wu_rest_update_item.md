@@ -4,11 +4,11 @@ title: Фільтр - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Фільтруе, ці дазволена працягваць патрабанне ці ні.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісанне |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 46a659e3004edbe285434103f81bd733
 | $rest_base | `array` | Слог сутэнства (entity slug). |
 | $this | `\Base_Manager` | Экземпляр аб'екта. |
 
-### З
+### З {#since}
 
 - 2.0.0
-### Шторышча
+### Шторышча {#source}
 
 Вызначаны ў [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) у 414-й пасылцы.

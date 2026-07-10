@@ -3,7 +3,7 @@ title: ការស្វែងរក និងជំនួសដោយស្វ
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# ការស្វែងរកដោយស្វ័យប្រវត្តិ និងការជំនួសនៅក្នុង Site Templates (v2)
+# ការស្វែងរកដោយស្វ័យប្រវត្តិ និងការជំនួសនៅក្នុង Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**មគ្គុទ្ទេសក៍នេះទាមទារ WP UItimo version 2.x។**_
 
@@ -17,7 +17,7 @@ _**មគ្គុទ្ទេសក៍នេះទាមទារ WP UItimo ver
 
 Ultimate Multisite នឹងជំនួស placeholders ដោយទិន្នន័យដែលផ្តល់ដោយអតិថិជនដោយស្វ័យប្រវត្តិ។
 
-## **ការដោះស្រាយបញ្ហា "template ពោរពេញទៅដោយ placeholders"**
+## **ការដោះស្រាយបញ្ហា "template ពោរពេញទៅដោយ placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 ទាំងអស់នេះគឺល្អណាស់ ប៉ុន្តែយើងជួបបញ្ហាមួយដ៏គួរឱ្យមិនរីករាយ៖ ឥឡូវនេះ template site របស់យើង - ដែលអតិថិជនអាចចូលមើលបាន - ពោរពេញទៅដោយ placeholders ដ៏គួរឱ្យស្អប់ខ្ពើមដែលមិនផ្តល់ព័ត៌មានច្រើន។
 

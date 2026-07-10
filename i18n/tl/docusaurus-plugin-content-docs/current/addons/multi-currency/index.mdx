@@ -1,0 +1,117 @@
+---
+title: Multi-Currency
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency {#multi-currency}
+
+Ultimate Multisite: Multi-Currency ay nagpapahintulot sa iyong network na tumanggap ng mga bayad sa maraming pera. Awtomatiko nitong kino-convert ang mga presyo gamit ang live o manual na exchange rate, pinapayagan kang magtakda ng eksaktong presyo kada produkto para sa anumang pera, at natutukoy ang ginustong pera ng bawat bisita sa pamamagitan ng geolocation — lahat ay pinamamahalaan mula sa iisang admin Dashboard.
+
+## Mahahalagang Tampok {#key-features}
+
+- **Awtomatikong conversion ng exchange rate** — kino-convert ang mga presyo mula sa iyong base currency gamit ang mga rate na kinuha mula sa napili mong provider
+- **Mga override ng presyo kada produkto** — magtakda ng eksaktong presyong partikular sa pera sa anumang produkto upang laktawan ang awtomatikong conversion
+- **Field ng currency selector sa pag-signup** — pinapayagan ang mga customer na piliin ang kanilang ginustong pera habang nagche-checkout/nagsa-signup
+- **Maraming exchange rate provider** — ECB, Frankfurter, Stripe, o ganap na manual na mga rate
+- **Pagtukoy ng pera batay sa geolocation** — awtomatikong paunang pinipili ang pera na tumutugma sa bansa ng bisita
+- **Admin Dashboard** — pamahalaan ang mga aktibong pera, exchange rate, at setting ng provider mula sa iisang lugar
+
+## Mga Kinakailangan {#requirements}
+
+- Ultimate Multisite 2.0.0 o mas mataas
+- Pag-install ng WordPress Multisite
+- PHP 7.4 o mas mataas
+
+## Pag-install {#installation}
+
+1. I-upload ang mga file ng plugin sa `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. I-activate ang plugin sa pamamagitan ng screen na **Plugins** sa WordPress (Network Activate)
+3. Pumunta sa **Ultimate Multisite → Multi-Currency** upang buksan ang admin Dashboard
+4. Idagdag ang mga perang gusto mong tanggapin at i-configure ang iyong exchange rate provider
+
+## Configuration {#configuration}
+
+### Admin Dashboard {#admin-dashboard}
+
+Ang admin Dashboard ng Multi-Currency (**Ultimate Multisite → Multi-Currency**) ang pangunahing lugar upang:
+
+- Magdagdag, mag-enable, o mag-disable ng mga pera
+- Pumili ng exchange rate provider at i-refresh ang mga rate kapag kinakailangan
+- Suriin ang kasalukuyang mga rate para sa lahat ng aktibong pera
+- Magtakda ng manual na mga rate kapag hindi angkop ang mga awtomatikong provider
+
+### Mga Exchange Rate Provider {#exchange-rate-providers}
+
+| Provider | Paglalarawan |
+|---|---|
+| **ECB** | European Central Bank — libreng araw-araw na mga rate para sa mga network na nakabatay sa EUR |
+| **Frankfurter** | Open-source na ECB mirror API — libre, walang kinakailangang API key |
+| **Stripe** | Gumagamit ng live FX rates ng Stripe — nangangailangan ng aktibong Stripe integration |
+| **Manual** | Direktang ikaw ang maglalagay ng mga rate; walang external API calls |
+
+Piliin ang iyong provider sa ilalim ng **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Maaaring i-refresh nang manual ang mga rate anumang oras o i-schedule na awtomatikong mag-update.
+
+### Mga Override ng Presyo Kada Produkto {#per-product-pricing-overrides}
+
+Kapag hindi sapat ang katumpakan ng awtomatikong conversion, maaari kang magtakda ng eksaktong presyo para sa partikular na pera sa anumang produkto:
+
+1. Buksan ang editor ng produkto (**Ultimate Multisite → Products → Edit**)
+2. Mag-scroll sa seksyong **Currency Pricing**
+3. Ilagay ang eksaktong presyo para sa bawat perang gusto mong i-override
+4. I-save ang produkto
+
+Ang mga produktong walang override ay gumagamit ng na-convert na presyo mula sa iyong base currency.
+
+### Field ng Currency Selector sa Pag-signup {#currency-selector-signup-field}
+
+Maaaring idagdag ang field ng currency selector sa iyong daloy ng pag-signup/pag-checkout upang piliin ng mga customer ang kanilang ginustong pera sa pagpaparehistro:
+
+1. Pumunta sa **Ultimate Multisite → Multi-Currency → Settings**
+2. I-enable ang **Show currency selector on signup**
+3. Opsyonal na magtakda ng default na pera o hayaang tukuyin ng geolocation ang paunang napiling value
+
+Ang napiling pera ay iniimbak kasama ng subscription at ginagamit para sa lahat ng susunod na billing.
+
+### Pagtukoy ng Pera Batay sa Geolocation {#geolocation-based-currency-detection}
+
+Kapag naka-enable ang geolocation detection, itinutugma ng addon ang bansa ng bisita sa isang pera at paunang pinipili ito sa field ng currency selector. Upang i-enable:
+
+1. Pumunta sa **Ultimate Multisite → Multi-Currency → Settings**
+2. I-enable ang **Detect currency from visitor location**
+3. I-map ang mga bansa sa mga pera sa talahanayang **Geolocation Mapping**
+
+Kung walang umiiral na mapping para sa bansa ng isang bisita, ginagamit ang base currency ng network bilang fallback.
+
+## Mga Madalas Itanong {#frequently-asked-questions}
+
+### Ano ang mangyayari kung hindi available ang exchange rate provider? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Babalik ang addon sa huling matagumpay na nakuha na mga rate. Kung wala pang anumang rate na nakuha kailanman, babalik ito sa mga manual na rate na na-configure mo. Inirerekomendang mag-configure ng manual na mga rate bilang safety net.
+
+### Maaari ba akong gumamit ng iba't ibang provider para sa iba't ibang pera? {#can-i-use-different-providers-for-different-currencies}
+
+Hindi — isang provider lang ang aktibo sa isang pagkakataon para sa lahat ng pera. Gamitin ang **Manual** kung kailangan mo ng ganap na kontrol sa indibidwal na mga rate.
+
+### Nangangailangan ba ang geolocation ng hiwalay na plugin? {#does-geolocation-require-a-separate-plugin}
+
+Walang kinakailangang external geolocation plugin. Ginagamit ng addon ang built-in na IP-to-country detection ng WordPress. Para sa mas mataas na katumpakan, maaaring i-integrate ang isang nakalaang geolocation service sa pamamagitan ng ibinigay na filter hooks.
+
+### Inilalapat ba ang mga override kada produkto bago o pagkatapos ng buwis? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Itinatakda ng mga override kada produkto ang pre-tax na presyo sa target na pera. Kinakalkula ang buwis sa ibabaw ng override price gamit ang iyong kasalukuyang tax configuration.
+
+## Changelog {#changelog}
+
+### Bersyon 1.0.0 — Inilabas noong 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Bago: Suporta sa multi-currency na may awtomatikong conversion ng exchange rate
+- Bago: Mga override ng presyo kada produkto para sa eksaktong presyong partikular sa pera
+- Bago: Field ng currency selector sa pag-signup para sa daloy ng pag-checkout
+- Bago: Mga exchange rate provider: ECB, Frankfurter, Stripe, at manual
+- Bago: Pagtukoy ng pera batay sa geolocation
+- Bago: Admin Dashboard para sa pamamahala ng mga pera at exchange rate
+- Ayos: Dashboard na laging nagpapakita ng mga presyo sa base currency anuman ang napiling pera

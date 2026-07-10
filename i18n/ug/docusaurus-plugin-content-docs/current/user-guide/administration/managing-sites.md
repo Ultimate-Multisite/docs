@@ -3,7 +3,7 @@ title: Saytlarni boshqarish
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Saytlarni Boshqarish
+# Saytlarni Boshqarish {#managing-sites}
 
 Saytlar (yoki subsaytlari) sizning WaaS biznesingizning asosidir. Ultimate Multisite da 3 turdagi sayt mavjud:
 
@@ -11,13 +11,13 @@ Saytlar (yoki subsaytlari) sizning WaaS biznesingizning asosidir. Ultimate Multi
 - **Sayt Shabloni (Site Templates)** — Mijozlar boshlash nuqtasi sifatida tanlaydigan oldindan belgilangan saytlar
 - **Asosiy Sayt (Main Site)** — Sizning asosiy tarmoq saytingiz
 
-## Saytlarni Ko'rish
+## Saytlarni Ko'rish {#viewing-sites}
 
 Tarmoqdagi barcha subsaytlarni ko'rish uchun **Ultimate Multisite → Sites** ga o'ting. Har bir sayt turiga ko'ra belgilangan bo'ladi va siz ularni Barcha Saytlar, Mijozga tegishli, Shabloni yoki Kutib turuvchi (Pending) bo'yicha filtrlashingiz mumkin.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Yangi Sayt Qo'shish
+## Yangi Sayt Qo'shish {#adding-a-new-site}
 
 Yangi sayt yaratish uchun **Add Site** tugmasini bosing. Siz quyidagilarni taqdim etishingiz kerak bo'ladi:
 
@@ -27,15 +27,15 @@ Yangi sayt yaratish uchun **Add Site** tugmasini bosing. Siz quyidagilarni taqdi
 
 **Copy Site** seçeneği, mevcut bir site şablonuna dayanarak yeni bir site oluşturmanıza olanak tanır. Bu seçenek etkinleştirildiğinde, başlangıç noktası olarak hangi şablonu kullanacağınızı seçebilirsiniz. Medya dosyalarını dahil etmek için **Copy Media on Duplication**'ın etkinleştirildiğinden emin olun.
 
-## Mevcut Bir Siteyi Yönetme
+## Mevcut Bir Siteyi Yönetme {#managing-an-existing-site}
 
 Herhangi bir siteye tıklayarak **Manage** (Yönet) butonuna basarsanız, **Edit Site** (Siteyi Düzenle) sayfasına girersiniz. Burada şunları bulabilirsiniz:
 
-### Temel Bilgiler
+### Temel Bilgiler {#basic-information}
 
 Sitenin adı, türü, site ID'si ve açıklaması. Ayrıca eşlenmiş alan adı, ilişkili üyelik bilgileri ve siteyi sahip olan müşteri hesabını da görebilirsiniz.
 
-### Site Seçenekleri
+### Site Seçenekleri {#site-options}
 
 Sitenin yeteneklerini ve sınırlarını yapılandırın:
 
@@ -47,7 +47,7 @@ Sitenin yeteneklerini ve sınırlarını yapılandırın:
 
 به صورت پیش‌فرض، سایت‌ها محدودیت‌های تعیین شده در سطح عضویت را دنبال می‌کنند. اگر محدودیت‌ها را در سطح سایت ayarlarsanız، این تنظیمات بر روی تنظیمات عضویت غلبه خواهد کرد.
 
-### ارتباطات (Associations)
+### ارتباطات (Associations) {#associations}
 
 زیر گزینه‌های سایت، اطلاعات مربوط به موارد زیر را پیدا خواهید کرد:
 
@@ -55,7 +55,7 @@ Sitenin yeteneklerini ve sınırlarını yapılandırın:
 * **عضویت (Membership)** که سایت تحت آن قرار دارد
 * **حساب مشتری (Customer account)** متصل به سایت
 
-### نوار کناری سمت راست (Right Sidebar)
+### نوار کناری سمت راست (Right Sidebar) {#right-sidebar}
 
 در سمت راست می‌توانید موارد زیر را انجام دهید:
 

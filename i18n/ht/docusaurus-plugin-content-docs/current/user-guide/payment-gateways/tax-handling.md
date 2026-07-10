@@ -1,120 +1,120 @@
 ---
-title: Jere Taks
+title: Jesyon taks
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Jeremanaj Tax
+# Jesyon Taks {#tax-handling}
 
-Ultimate Multisite gen yon modil pou kole tès sou plan ou yo, pake ou yo ak sèvis ou yo, kidonk si ou bezwen kole tès vann sou plan ou yo, pake ou yo ak sèvis ou yo, ou ka fè sa fasil san ou pa bezwen mete okenn add-on.
+Ultimate Multisite gen yon modil koleksyon taks ki entegre nan plugin prensipal nou an, kidonk si ou bezwen kolekte taks sou lavant sou plan, pakè ak sèvis ou yo, ou ka fè sa fasil san ou pa bezwen enstale okenn ekstansyon.
 
-Pou konpayi ki nan Ewòp, nou ofri yon **add-on** ki ajoute zouti ak fonksyon pou amelyore **sout VAT** (Value Added Tax) konfòmite a pi byen.
+Pou konpayi ki sitiye an Ewòp, nou ofri yon **ekstansyon** ki ajoute zouti ak fonksyonalite pou pi byen **sipòte VAT** konfòmite.
 
-Ultimate Multisite pa fè oswa bay tès yo ba gouvènman sou non ou; nou jis ede w kole tès apwopriye a nan moman tranzaksyon an. **Ou pral bezwen tou pou bay tès la ou menm.**
+Ultimate Multisite pa ranpli ni voye taks bay gouvènman an nan non ou; nou senpleman ede ou kolekte taks ki apwopriye yo nan moman tranzaksyon an. **Ou ap toujou bezwen voye taks yo poukont ou.**
 
-## Kòman kòmanse kole tès
+## Aktive Koleksyon Taks {#enabling-tax-collection}
 
-Kole tès pa aktif de fèt. Pou aktive li, ou dwe ale nan **Ultimate Multisite > Settings > Taxes** epi swiv switch "Enable Taxes" (Aktive Tès).
+Koleksyon taks pa aktive pa defo. Pou aktive li, ou bezwen ale nan **Ultimate Multisite > Paramèt > Taks** epi aktive paramèt Aktive Taks yo.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Aktive bouton Taks yo anlè paj paramèt Taks yo](/img/config/settings-taxes-enable.png)
 
-Men yon gade konplè sou paj konfigirasyon tès la:
+Men yon vizyon konplè paj paramèt taks yo:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Paj konplè paramèt taks yo](/img/config/settings-taxes-full.png)
 
-Ou ka tou wè konfigirasyon tès pou chak pwodwi:
+Ou kapab wè tou paramèt taks yo pou pwodwi endividyèl yo:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Paramèt taks pou pwodwi yo](/img/config/settings-taxes.png)
 
-### Tès esklisyè vs. Tès enkli
+### Taks eskli vs. Taks enkli {#tax-excluded-vs-tax-included}
 
-De fèt, tout pri pwodwi ou yo se esklisyè tès (tax excluded), sa vle di tès **pa genyen** nan pri pwodpwi a. Si nou deside ke yon kliyan dwe peye tès sou yon achte espesifik la, nou pral ajoute tès **sou tè** subtotal la.
+Pa defo, tout pri pwodwi ou yo eskli taks, sa vle di taks yo **pa enkli** nan pri pwodwi a. Si nou detèmine ke yon kliyan ta dwe peye taks sou yon acha espesifik, n ap ajoute taks yo **anplis** sou soutotal la.
 
-Si ou prefere pou tès yo enkli nan pri pwodpwi ou an, ou ka fè sa lè w aktive switch "Inclusive Tax" (Tès Enkli).
+Si ou prefere pou taks yo enkli nan pri pwodwi ou a, ou ka fè sa lè ou aktive paramèt **Taks Enklizif** la.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Liy bouton Taks Enklizif anba paramèt Aktive Taks yo](/img/config/settings-taxes-inclusive.png)
 
-Pa bliye **save** chanjman ou te fè yo.
+Pa bliye **sove** chanjman ou fè yo.
 
 ###
 
-## Kreye tès
+## Kreye To Taks {#creating-tax-rates}
 
-Apou kòmanse, apre w fin aktive Kole Tès la, ou pral bezwen kreye tès pou chak nan kote espesifik yo itilize edat tès nou an (tax rates editor).
+Apre ou aktive Koleksyon Taks, w ap bezwen kreye to taks pou kote espesifik lè ou itilize editè to taks nou an.
 
-Ou ka aksé éditeur la lè ou klike sou bouton **Manage Tax Rates** sou sidebar paj tax settings la.
+Ou ka jwenn aksè ak editè a lè ou klike sou bouton **Jere To Taks** la nan ba bò paj paramèt Taks yo.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Lyen Jere To Taks nan panèl To Taks sou paj paramèt yo](/img/config/settings-taxes-manage-rates.png)
 
-Sou paj éditeur tax rates la, ou kapab ajoute nouvo Tax Rates lè ou klike sou bouton **Add new Row**.
+Sou paj editè to taks la, ou ka ajoute nouvo To Taks lè ou klike sou bouton **Ajoute nouvo Ranje** a.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tablo editè to taks ak bouton Ajoute nouvo Ranje anlè](/img/config/tax-rates-editor.png)
 
-Ou pral bezwen ba chak tax rate yon **title** (ki itilize sou faktura). Apre sa, ou ka chwazi **country** (obligatwa), **state**, ak **city** (poupareman) kote tax sa a ap chaje. Finalman, ajoute **tax rate an pènt**.
+W ap bezwen bay chak to taks yon **tit** (yo itilize sou fakti). Apre sa, ou ka chwazi **peyi** a (obligatwa), **eta a,** ak **vil** la (toude opsyonèl) kote taks sa a pral chaje. Finalman, ajoute **to taks la an pousantaj**.
 
-### Tax Categories
+### Kategori Taks {#tax-categories}
 
-Ou kapab tou kreye plizyè Tax Categories, pou ajoute diferan tax rates pou diferan kalite pwodwi.
+Ou kapab kreye plizyè Kategori Taks tou, pou ajoute diferan to taks pou diferan kalite pwodwi.
 
-Klike sou **Add new Tax Category**, apre ou ekri non kategori ou a epi klike sou **Create**.
+Klike pou **Ajoute nouvo Kategori Taks** , apre sa ekri non kategori ou a epi peze **Kreye**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Bouton Ajoute nouvo Kategori Taks anlè editè to taks la](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Chan antre Non Kategori Taks nan fenèt modal kreyasyon kategori a](/img/config/tax-categories-create-modal.png)
 
-Pou gade kategori yo, klike sou **Switch** epi chwazi kategori ou vle ajoute nouvo tax la.
+Pou navige atravè kategori yo, klike sou **Chanje** epi chwazi kategori kote ou vle ajoute nouvo taks yo.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Bouton meni deroulan Chanje pou chanje ant kategori taks yo](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Meni deroulan selektè kategori taks ki montre kategori ki disponib yo](/img/config/tax-categories-select.png)
 
-Ou kapab mete tax category pou yon pwodwi espesifik lè ou ale sou **Product edit page** epi apre sa nan onglet Taxes la.
+Ou ka fikse kategori taks la pou yon pwodwi espesifik lè ou ale nan **paj modifikasyon Pwodwi** a epi apre sa nan onglet Taks yo.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Onglet taks pwodwi ak kategori taks ak bouton taksab](/img/config/product-taxes.png)
 
-Sou menm ekran sa a, ou ka dekoupe (toggle off) switch **Is Taxable?** pou fè Ultimate Multisite konnen li pa dwe koleksyon tax sou pwodwi la la.
+Sou menm ekran sa a, ou ka dezaktive bouton **Èske li Taksab?** la pou fè Ultimate Multisite konnen li pa ta dwe kolekte taks sou pwodwi espesifik sa a.
 
-## European VAT Support
+## Sipò VAT Ewopeyen {#european-vat-support}
 
-Kòm mwen te mansyone anvan, nou gen yon add-on pou kliyan ki nan UE ki gen mandats adisyonèl ak regilasyon TVA Ewòpyen yo.
+Jan nou te mansyone anvan, nou gen yon ekstansyon ki disponib pou kliyan nan Inyon Ewopeyen an ki gen kondisyon adisyonèl akoz règleman VAT Ewopeyen yo.
 
-Zouti TVA nou yo ede w fè kèk bagay enpòtan:
+Zouti VAT nou yo ede ak kèk bagay enpòtan:
 
-  * Chaje fasil ranmè tarif TVA EU;
+  * Chajman fasil to VAT Inyon Ewopeyen yo;
 
-  * Koleksyon ak validasyon nimewo TVA - epi chaj revès (reverse charging) pou entite ki eksime de TVA (tankou konpayi ki gen nimewo TVA valide).
+  * Koleksyon ak validasyon Nimewo VAT - ak chajman ranvèse pou antite ki egzante VAT (tankou konpayi ki gen nimewo VAT valab);
 
-Pou mete add-on sa a, ale nan **Ultimate Multisite > Settings** epi klike sou link sidebar la **Check our Add-ons**.
+Pou enstale ekstansyon sa a, ale nan **Ultimate Multisite > Paramèt** epi apre sa klike sou lyen ba bò **Tcheke Ekstansyon nou yo**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Ba bò paj paramèt ak lyen Tcheke Ekstansyon nou yo](/img/config/settings-taxes-addons-link.png)
 
-Ou pral redirekti ou nan paj add-on nou an. La, ou ka chèche **Ultimate Multisite VAT add-on** epi mete l enstale.
+Yo pral redirije ou sou paj ekstansyon nou an. La, ou ka chèche **ekstansyon VAT Ultimate Multisite** la epi enstale li.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Ekran pa disponib: kare ekstansyon VAT sou paj Ekstansyon yo -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Ekran pa disponib: dyalòg Enstale Kounye a pou ekstansyon VAT la -->
 
-Lè sa fini, ale nan **Network Admin > Plugins** epi aktive add-on sa a pou tout rezo a.
+Apre sa, ale nan **Administrasyon Rezo > Plugins** epi aktive ekstansyon sa a sou tout rezo a.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Ekran pa disponib: aksyon Aktive sou Rezo pou ekstansyon VAT la sou paj Plugins la -->
 
-Si ou tounen nan **Tax Settings tab**, ou pral wè nouvo opsyon ki disponib. Mete switch la **Enable VAT Support** pou aktive zouti TVA yo. Pa bliye pou w **save** konfigirasyon ou!
+Si ou retounen nan **onglet Paramèt Taks** la, w ap wè nouvo opsyon ki disponib. Aktive opsyon **Aktive Sipò VAT** la pou aktive nouvo zouti VAT yo. Pa bliye **sove** paramèt ou yo!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Ekran pa disponib: bouton Aktive Sipò VAT nan paramèt Taks yo apre aktivasyon ekstansyon an -->
 
-### Chèche Tarif TVA
+### Rale To Taks VAT yo {#pulling-on-vat-tax-rates}
 
-Youn nan zouti ki ajoute entegrasyon nou an se kapasite pou chaje tarif tès pou peyi manm EU yo. Sa ka fèt lè ou ale vizite paj editeur tarif tè a apre w fin aktive sipò TVA EU la.
+Youn nan zouti entegrasyon nou an ajoute yo se kapasite pou chaje to taks pou eta manm Inyon Ewopeyen yo. Sa ka fèt lè ou vizite paj editè to taks la apre ou fin aktive sipò EU VAT.
 
-Anwo an bas de bout paj la, ou pral wè opsyon pou tire (pull) VAT. Lè ou chwazi yon kalite ranmè epi klike sou bouton **Update EU VAT Rates**, li pral montre ak otomatikman remplenumi tab la ak ranmè tax yo pou chak eta manm EU. Apre sa, ou sèlman bezwen kayann li.
+Anba paj la, w ap wè opsyon pou rale VAT yo. Lè ou chwazi yon kalite to epi klike sou bouton **Mete To EU VAT yo Ajou** a, sa pral rale epi ranpli tablo a otomatikman ak to taks pou chak eta manm Inyon Ewopeyen. Apre sa, ou sèlman bezwen sove li.
 
-![Bouton Update EU VAT Rates an bas editeur ranmè tax](/img/config/tax-rates-vat-pull.png)
+![Bouton Mete To EU VAT yo Ajou anba editè to taks la](/img/config/tax-rates-vat-pull.png)
 
-Ou ka tou edite valè yo apre ou te tire yo. Pou fè sa, senpleman edite liy tab ou bezwen epi klike pou kayann nouvo valè yo.
+Ou ka modifye valè yo tou apre ou fin rale yo. Pou fè sa, senpleman modifye liy tablo ou bezwen an epi klike pou sove nouvo valè yo.
 
-### Validasyon VAT
+### Validasyon VAT {#vat-validation}
 
-Lè sipò VAT aktif, Ultimate Multisite ap ajoute yon lòt fye a fòm chwote (checkout form), anba fye adrès faktura a. Fye sa a sèlman montre pou kliyan ki nan EU.
+Lè sipò VAT aktive, Ultimate Multisite pral ajoute yon chan adisyonèl nan fòm checkout la, anba chan adrès faktirasyon an. Chan an ap parèt sèlman pou kliyan ki sitiye nan Inyon Ewopeyen an.
 
-<!-- Screenshot unavailable: Fye Nimewo VAT sou fòm chwote frontend anba adrès faktura -->
+<!-- Ekran pa disponib: chan Nimewo VAT sou fòm checkout frontend la anba adrès faktirasyon an -->
 
-Ultimate Multisite ap valide Nimewo VAT la epi si li retounen kòm yon nimewo valide, mekanism revers charge a ap aplike e ranmè tax la ap mete 0% sou lòd sa a.
+Ultimate Multisite pral verifye Nimewo VAT la epi si li retounen kòm youn ki valab, mekanis reverse charge la ap aplike epi to taks la mete a 0% sou kòmann sa a.

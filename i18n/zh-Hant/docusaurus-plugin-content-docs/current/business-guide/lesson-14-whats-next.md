@@ -3,15 +3,15 @@ title: 課程 14：接下來是什麼
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# 第 14 課：下一步該怎麼走？
+# 第 14 課：下一步該怎麼走？ {#lesson-14-what-comes-next}
 
 您已經從零開始建立了一個利基網站平台。FitSite 已經上線，為健身工作室提供服務，並產生了經常性收入。本課是最後一課，將為您探討接下來的發展方向。
 
-## 我們停在哪裡
+## 我們停在哪裡 {#where-we-left-off}
 
 FitSite 已經是一個運營中的業務，擁有客戶、營運流程和成長軌跡。現在，讓我們思考下一步該做什麼。
 
-## 完整的 FitSite 網路
+## 完整的 FitSite 網路 {#the-complete-fitsite-network}
 
 以下是我們在 14 課中建立的所有內容：
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## 選項 1：深入您的利基市場
+## 選項 1：深入您的利基市場 {#option-1-go-deeper-in-your-niche}
 
 在擴展到新的利基市場之前，可以考慮在健身領域更深入：
 
-### 子利基市場 (Sub-Niches)
+### 子利基市場 (Sub-Niches) {#sub-niches}
 
 - **瑜伽工作室** -- 專門的模板，包含冥想、靜修和工作坊功能
 - **CrossFit 訓練館** -- WOD 追蹤、比賽結果、社群功能
@@ -59,7 +59,7 @@ FitSite Network (Complete)
 
 每個子利基市場都可以擁有自己的模板，甚至可以擁有自己的品牌，但所有這些都運行在同一個 Ultimate Multisite 網路上。
 
-### 高級功能 (Premium Features)
+### 高級功能 (Premium Features) {#premium-features}
 
 建立健身工作室願意額外付費的功能：
 
@@ -68,14 +68,14 @@ FitSite Network (Complete)
 - **健身部落格模板** -- 為健身內容行銷預建的內容結構
 - **社群媒體整合** -- 自動發布課程排程和更新
 
-### 地理擴展
+### 地理擴展 {#geographic-expansion}
 
 如果您最初只在本地經營，可以擴展到：
 
 - 您國家/地區的其他城市
 - 其他國家（使用 Ultimate Multisite 的 [本地化功能](/user-guide/localization/translating) 來支援多種語言）
 
-## 選項 2：擴展到相鄰的利基市場
+## 選項 2：擴展到相鄰的利基市場 {#option-2-expand-to-adjacent-niches}
 
 您為健身工作室遵循的流程，適用於任何利基市場。您的第二個利基市場會更容易，因為您已經具備：
 
@@ -83,7 +83,7 @@ FitSite Network (Complete)
 - 營運經驗
 - 一套成熟的營運手冊 (playbook)
 
-### 健身相關的相鄰利基市場
+### 健身相關的相鄰利基市場 {#adjacent-niches-to-fitness}
 
 - **健康與水療中心 (Wellness and spa)** -- 按摩治療師、日式水療中心、健康中心
 - **體育俱樂部 (Sports clubs)** -- 業餘體育隊、聯賽、休閒俱樂部
@@ -91,7 +91,7 @@ FitSite Network (Complete)
 
 這些市場與健身有重疊的受眾，因此您的行銷和合作夥伴關係可以沿用。
 
-### 完全新的利基市場
+### 完全新的利基市場 {#completely-new-niches}
 
 應用第 2 課的框架來評估任何利基市場：
 
@@ -108,7 +108,7 @@ FitSite Network (Complete)
 
 平台基礎設施、計費和營運流程保持不變。
 
-## 選項 3：建立平台級的平台 (Platform of Platforms)
+## 選項 3：建立平台級的平台 (Platform of Platforms) {#option-3-build-a-platform-of-platforms}
 
 當規模擴大時，您可以在單一的 Ultimate Multisite 網路上運行多個利基品牌：
 
@@ -118,11 +118,11 @@ FitSite Network (Complete)
 
 每個品牌都有自己的模板、方案和行銷，但它們共享基礎設施、計費和營運流程。這就是 Ultimate Multisite 經濟效益強大的地方——一個平台，多個垂直領域。
 
-### 多網路 (Multi-Network)
+### 多網路 (Multi-Network) {#multi-network}
 
 如果需要為不同利基市場實現完全的隔離，可以考慮 [Multi-Network addon](/addons/multinetwork)，它允許您從單一安裝中運行多個 WordPress 網路。
 
-## 選項 4：出售業務
+## 選項 4：出售業務 {#option-4-sell-the-business}
 
 一個擁有經常性收入、低流失率和明確市場定位的利基網站平台，是一項有價值的資產。SaaS 業務通常會以 3-5 倍的年收入出售。
 
@@ -134,7 +134,7 @@ FitSite Network (Complete)
 
 這並非保證的結果，但對於一個運營良好的利基平台來說，這是非常現實的可能性。
 
-## 您學到了什麼
+## 您學到了什麼 {#what-you-have-learned}
 
 本課程教會了您一個可重複的流程：
 
@@ -150,7 +150,7 @@ FitSite Network (Complete)
 
 利基市場是策略。平台是工具。Ultimate Multisite 使這個工具成為可能。您對利基市場的理解，使其具有價值。
 
-## 開始建構
+## 開始建構 {#start-building}
 
 如果您跟著 FitSite 進行了實作，您現在就有了一個可運行的平台。如果您是為了找到自己的利基市場而閱讀到這裡，請回到 [Lesson 2: Picking Your Niche](lesson-2-picking-your-niche)，並為您選擇的垂直領域開始這個流程。
 

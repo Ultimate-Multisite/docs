@@ -3,9 +3,9 @@ title: Id-Dimamjar tal-Pagamenti u l-Fatturi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Aħjar tal-Pagamenti u L-Fatturi
+# Aħjar tal-Pagamenti u L-Fatturi {#managing-payments-and-invoices}
 
-## Iswitti tal-Iskartament ta Pagamenti
+## Iswitti tal-Iskartament ta Pagamenti {#payment-settings}
 
 Qabel ma tibda tirri b'pagamenti, għandek li tsetConfiga l-istabbilimenti relatati mal-pagamenti. Naviga għal **Ultimate Multisite → Settings** u għippja fuq l-tab **Payment**.
 
@@ -15,7 +15,7 @@ Hawn huwa l-vista kollha tal-paġna tal-istabbilimenti ta'pagamenti:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Opzjonijiet Generali ta'Pagament
+### Opzjonijiet Generali ta'Pagament {#general-payment-options}
 
 F'iżgogni generali tista' tgħallib:
 
@@ -24,7 +24,7 @@ F'iżgogni generali tista' tgħallib:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Ultimate Multisite tiffaqa b'molti payment gateways. Tista' tagħmel aktiva u tgħallib għal kull unit mill-tab tal-Payment settings.
 
@@ -40,11 +40,11 @@ Kulle gateway għandu sezzjoni konfigurazzjonali proprja li tiddir fejn tiġi l-
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Tista' tagħmel aktiva l-**Sandbox Mode** biex ti testi l-integrazzjoni tal-pagamenti tiegħek qabel ma tibda l-live. Meta sandbox mode huwa aktiva, la tiddirxxixxx xogħli reelli.
 
-## Viewing Payments (Tista' tgħallib Pagamenti)
+## Viewing Payments (Tista' tgħallib Pagamenti) {#viewing-payments}
 
 Naviga għall-paġna **Payments** taħt Ultimate Multisite biex tara kull transazzjonijiet f'netwerk tiegħek.
 
@@ -54,7 +54,7 @@ Tista' tfiltri l-pagamenti b'status (completed, pending, failed, refunded) u tg�
 
 קליקו על תשלום כדי לראות את הפרטים המלאים שלו כולל פריטי ההזמנה, החברות הקשורות, מידע על הלקוח ונתוני שער התשלום (payment gateway).
 
-## חשבוניות (Invoices)
+## חשבוניות (Invoices) {#invoices}
 
 Ultimate Multisite יכול ליצור אוטומטית חשבוניות עבור תשלומים. תוכל להתאים את תבנית החשבונית ואת פורמט המספור מהגדרות התשלום (Payment settings).
 

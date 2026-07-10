@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Kwụsị Bots. Chebe Ego Mbata. Enweghị Nsogbu Nhazi.**
+
+Ị na-agba netwọkụ ọtụtụ saịtị nwere ngalaba ahaziri iche? Ị maara mgbu ya: Google reCAPTCHA na hCaptcha chọrọ ka ị debanye *ngalaba ọ bụla n'otu n'otu* na admin console ha. Tinye saịtị onye ahịa ọhụrụ? Melite nhazi captcha. Jikọọ ngalaba ahaziri iche? Melite ọzọ. Ọ naghị akwụsị.
+
+**Ultimate Multisite: Captcha na-agbanwe ihe niile.**
+
+## Cap Captcha: Nchedo A Na-akwado N’onwe Ya Nke Na-arụ Ọrụ Ozugbo {#cap-captcha-self-hosted-protection-that-just-works}
+
+Onye na-eweta ọrụ **Cap Captcha** ọhụrụ anyị bụ ihe na-agbanwe egwuregwu maka netwọkụ ọtụtụ saịtị:
+
+* **Enweghị Nhazi** — Mee addon ahụ ka ọ rụọ ọrụ, a ga-echebekwa gị. Enweghị API keys, enweghị Google account, enweghị hCaptcha dashboard, enweghị idebanye ngalaba ndepụta ndị a kwadoro.
+* **Na-arụ Ọrụ Na Ngalaba Ọ bụla Na-akpaghị Aka** — Subdomains, ngalaba ejikọrọ, ngalaba ndị ahịa—echekwara ha niile ozugbo.
+* **A Na-akwado Ya N’onwe Ya & Nkeonwe** — Data gị anaghị apụ na sava gị. Dakọtara GDPR kpamkpam na-enweghị nsuso ndị ọzọ.
+* **Ihe Akaebe-ọrụ A Na-adịghị Ahụ Anya** — Ndị ọrụ na-edozi mgbagwoju anya kọmputa n’azụ. Enweghị ịpị hydrants ọkụ, enweghị grid onyonyo na-akpasu iwe.
+* **Dị Mfe** — Naanị 20KB. Agaghị eme ka checkout gị dị nwayọọ.
+
+## Nchedo Nnwale Kaadị WooCommerce {#woocommerce-card-testing-protection}
+
+Mwakpo nnwale kaadị na-efu ndị na-azụ ahịa ijeri kwa afọ. Ndị aghụghọ na-eji bots iji nyochaa kaadị kredit e zuru ezu megide WooCommerce checkout gị—ị na-akwụ ụgwọ nhazi, ha na-enweta nọmba kaadị ziri ezi.
+
+**Anyị na-echebe ebe ọ kacha mkpa:**
+
+* **Nchedo Store API** — Na-egbochi mwakpo bot na `/wp-json/wc/store/v1/checkout` nke na-agafe captcha ụdị fọm ọdịnala
+* **Dakọtara na PayPal Payments** — Na-arụ ọrụ n’enweghị nsogbu na WooCommerce PayPal Payments
+* **Ọnụọgụ Oge-Ozugbo** — Hụ kpọmkwem ole mwakpo ị na-egbochi
+
+## Ka Chọrọ Google reCAPTCHA ma ọ bụ hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Anyị ekpuchila gị. Nkwado zuru oke maka:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Gbanwee n’etiti ndị na-eweta ọrụ oge ọ bụla site na ntọala netwọkụ gị.
+
+## Ewuru Maka Ịbawanye {#built-for-scale}
+
+* Ntọala netwọkụ niile nwere mgbanwe pụrụ iche maka saịtị ọ bụla
+* Dashboard ọnụọgụ iji nyochaa nchedo
+* Ọkwa nchekwa a pụrụ ịgbanwe (Ngwa ngwa, Ọkara, Kachasị)
+* Dịịrị ndị mmepe mfe site na owuwu onye na-eweta ọrụ a pụrụ ịgbatị
+
+## Ntinye {#installation}
+
+1. Bulite `ultimate-multisite-captcha` na ndekọ `/wp-content/plugins/` gị
+2. Mee ka plugin rụọ ọrụ na netwọkụ
+3. **Ọ bụ ya. Echekwara gị.**
+
+Cap Captcha na-arụ ọrụ na-akpaghị aka—enweghị ntọala ị ga-ahazi, enweghị API keys ị ga-etinye. Endpoint ọ bụla akwadoro gafee netwọkụ gị niile na-echebe ozugbo ị mere ka ọ rụọ ọrụ.
+
+**Nhọrọ:** Iji Google reCAPTCHA ma ọ bụ hCaptcha kama, gaa na **Ultimate Multisite → Settings → Captcha** ma họrọ onye na-eweta ọrụ masịrị gị.
+
+## Ajụjụ A Na-ajụkarị {#frequently-asked-questions}
+
+## Achọrọ m ịhazi ihe ọ bụla? {#do-i-need-to-configure-anything}
+
+Mba! A na-eme ka Cap Captcha rụọ ọrụ na-akpaghị aka mgbe ị mere addon ahụ ka ọ rụọ ọrụ. A na-echebe netwọkụ gị niile ozugbo—enweghị ntọala ị ga-ahazi, enweghị API keys ị ga-etinye.
+
+## Achọrọ m API keys maka Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Mba. Cap Captcha bụ nke a na-akwado n’onwe ya kpamkpam. Enweghị akaụntụ mpụga, enweghị ndebanye ngalaba, enweghị isi ọwụwa nhazi.
+
+## Nke a ọ ga-eme ka checkout m dị nwayọọ? {#will-this-slow-down-my-checkout}
+
+Cap Captcha bụ naanị 20KB ma na-agba ihe ịma aka proof-of-work n’azụ. Ndị ahịa gị agaghị ahụ igbu oge ọ bụla.
+
+## Nke a ọ na-echebe megide mwakpo nnwale kaadị? {#does-this-protect-against-card-testing-attacks}
+
+Ee! N’adịghị ka captchas ọdịnala nke na-echebe naanị fọm HTML, njikọta WooCommerce anyị na-ejikọ ozugbo na Store API iji gbochie mwakpo bot n’ogo API—ebe ọtụtụ mwakpo nnwale kaadị na-eme.
+
+## Enwere m ike iji ndị na-eweta captcha dị iche na saịtị dị iche? {#can-i-use-different-captcha-providers-on-different-sites}
+
+A na-ahazi onye na-eweta captcha n’ogo netwọkụ niile, mana ị nwere ike ịgbanwe ntọala ike dabere na mkpa gị.
+
+## Nke a ọ dakọtara GDPR? {#is-this-gdpr-compliant}
+
+Cap Captcha bụ 100% a na-akwado n’onwe ya na-enweghị iziga data na ọrụ mpụga. Maka Google reCAPTCHA na hCaptcha, biko nyochaa amụma nzuzo ha n’otu n’otu.
+
+## Ibelata Ọnụego {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 na-ewebata onye na-egbochi ọnụego siri ike nke na-echebe netwọkụ gị pụọ na mwakpo brute-force na card-testing.
+
+### Otu O Si Arụ Ọrụ {#how-it-works}
+
+Onye na-egbochi ọnụego na-agụta arịrịọ GET na POST ọ bụla n’elu ebe captcha chebere:
+
+* **Endpoints nbanye WordPress** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Mgbe onye ọbịa gafere oke ọnụego, plugin na-aza na:
+
+* **HTTP 429 (Arịrịọ Karịrị Ókè)** status code
+* **Retry-After** header na-egosi mgbe a ga-anwale ọzọ
+* **Ụra tarpit a họpụtara n’enweghị usoro** (sekọnd 1–5 na ndabara, ejiri ike mechie na sekọnd 15) iji mee ka ndị mwakpo dị nwayọọ
+
+### Nhazi {#configuration}
+
+#### Oge Tarpit {#tarpit-timing}
+
+Jikwaa igbu oge a họpụtara n’enweghị usoro nke etinyere na arịrịọ e belatara ọnụego:
+
+* **`cap_rate_limit_tarpit_min`** — Oge ụra kacha nta na sekọnd (ndabara: 1)
+* **`cap_rate_limit_tarpit_max`** — Oge ụra kacha ukwuu na sekọnd (ndabara: 5, ejiri ike mechie na 15)
+
+Ntọala ndị a dị na **Ultimate Multisite → Settings → Captcha**.
+
+### Ịgbatị {#extensibility}
+
+#### Nzacha IP Whitelist {#ip-whitelist-filter}
+
+Wee pụọ n’ibelata ọnụego maka mpaghara IP a tụkwasịrị obi:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Omume Tupu Mgbochi {#pre-block-action}
+
+Mee ezi uche ahaziri iche ozugbo tupu eziga mgbochi oke-ọnụego:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Nchọpụta IP Onye Ahịa & Proxies A Tụkwasịrị Obi {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 na-ewebata nchọpụta client-IP na-eguzogide spoofing. Usoro `Captcha_Core::get_client_ip()` bụzi otu isi eziokwu maka ikenye IP onye ọbịa gafee:
+
+* Igodo bucket maka ịmachi ọnụego
+* Onye na-eweta Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hash IP maka ọnụ ọgụgụ
+
+### Ụkpụrụ Ntụkwasị Obi {#trust-model}
+
+Ngwa mgbakwunye a na-amanye usoro ntụkwasị obi IP siri ike:
+
+1. **REMOTE_ADDR** — A na-atụkwasị ya obi mgbe niile (IP nke onye njikọ ozugbo)
+2. **CF-Connecting-IP** — A na-anabata ya naanị mgbe:
+   - Onye njikọ ozugbo nọ n'ime oke IP Cloudflare dị ugbu a
+   - `cap_trust_cloudflare_headers` agbanyere (ndabara: OFF)
+3. **X-Forwarded-For** — A na-anabata ya naanị mgbe:
+   - Onye njikọ ozugbo nọ na ndepụta proxy ndị a tụkwasịrị obi nke admin haziri
+   - A na-agụ header ahụ site n'aka nri gaa n'aka ekpe, na-awụli hops ndị a tụkwasịrị obi/Cloudflare
+
+### Nhazi {#configuration-1}
+
+#### Ntụkwasị Obi Header Cloudflare {#cloudflare-header-trust}
+
+Mee ka ntụkwasị obi na header `CF-Connecting-IP` nke Cloudflare rụọ ọrụ:
+
+* **`cap_trust_cloudflare_headers`** — Tọọ ka ọ bụrụ ON iji họrọ ịtụkwasị `CF-Connecting-IP` obi
+  - Ndabara: OFF (agbanyụrụ)
+  - Ngwa mgbakwunye a na-abịa na snapshot Cloudflare CIDR agbakwunyere
+  - A na-emegharị oke CIDR kwa izu site na wp-cron
+  - A na-eji fallback agbakwunyere ma ọ bụrụ na mmegharị ahụ ada
+
+#### Nhazi Proxy A Tụkwasịrị Obi {#trusted-proxy-configuration}
+
+Kọwaa proxies na load-balancers gị dị n’ihu:
+
+* **`cap_trusted_proxies`** — Ogige ederede nke CIDRs ma ọ bụ IP nkịtị (otu n’ahịrị)
+  - A na-ekwe ka comments dị (ahịrị ndị na-amalite na `#`)
+  - Enweghị ntọala a, a na-eleghara `X-Forwarded-For` anya ọbụlagodi mgbe rate limiter agbanyere
+  - Ọmụmaatụ:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Nchọpụta Akpaaka Mgbe Agbanyere Mbụ {#first-enable-auto-detection}
+
+Mgbe ị na-agbanye rate limiter na mbụ, ngwa mgbakwunye ahụ na-achọpụta ọnọdụ Cloudflare na proxy gị nwere ike ịdị, wee gosipụta ọkwa admin nke otu-pịa "Tinye ntọala achọpụtara".
+
+* Ngwa mgbakwunye ahụ **anaghị edegharị** ụkpụrụ echekwara gị
+* Ọ bụrụ na traffic na-esote na-egosi na nhazi gị adabaghịzi n’eziokwu (dịka ọmụmaatụ, Cloudflare gbanwere oke CIDR), ọkwa enweghị ike iwepụ maka enweghị nkwekọ na-eweta mmelite a tụrụ aro
+
+### Ihe Mere Nke A Ji Dị Mkpa {#why-this-matters}
+
+Ụkpụrụ ntụkwasị obi IP siri ike na-emechi ụzọ spoofing dị oke mkpa: arịrịọ kpọmkwem na origin-server nke na-ebu header `CF-Connecting-IP` e megharịrị adịgboroja gaara ebu ụzọ tinye n’ime bucket site na IP adịgboroja kama IP nke onye njikọ n’eziokwu. Nke a dị mkpa karịsịa maka:
+
+* **Ịmachi ọnụego** — Ndị mwakpo enweghị ike izere oke site n’ịme IP adịgboroja
+* **Ọnụ ọgụgụ** — Metrik mwakpo gị na-egosi IP ndị ọbịa n’eziokwu, ọ bụghị ndị adịgboroja
+* **Nnyocha Captcha** — Ndị na-eweta ya na-enweta IP onye ọbịa ziri ezi maka nyocha ihe ize ndụ

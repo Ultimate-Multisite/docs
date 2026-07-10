@@ -3,19 +3,19 @@ title: 'Lesson 2: Choosing Your Niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Ders 2: Nişinizi Belirleme
+# Ders 2: Nişinizi Belirleme {#lesson-2-picking-your-niche}
 
 Ders 1'de nişin neden genel olmaktan daha iyi olduğunu öğrendik. Şimdi sıra sizin nişinizi seçmekte. Bu ders, zaman harcayıp bir şey inşa etmeden önce bir niş bulmanız ve bunu doğrulamanız için bir çerçeve sunuyor.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite konseptini tanımladık: fitness stüdyoları için bir web sitesi platformu. Peki, özellikle fitness stüdyolarına nasıl odaklandık? Bu ders, bu süreci adım adım anlatıyor, böylece kendi nişinizi bulmak için bu adımları uygulayabilirsiniz.
 
-## Üç Kriter
+## Üç Kriter {#the-three-criteria}
 
 Bir web sitesi platformu için iyi bir niş, üç koşulu karşılar:
 
-### 1. Web Sitesine İhtiyaç Duyuyor Ama İyi Bir Site Yapmakta Zorlanıyorlar
+### 1. Web Sitesine İhtiyaç Duyuyor Ama İyi Bir Site Yapmakta Zorlanıyorlar {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Şu endüstrileri arayın:
 
@@ -26,7 +26,7 @@ Bir web sitesi platformu için iyi bir niş, üç koşulu karşılar:
 
 **Fitness stüdyoları uyuyor**: üyeler online olarak ders programlarını, fiyatlandırmayı ve rezervasyon yapmayı bekliyor. Çoğu stüdyo web sitesi güncel değil veya amaçlarına hizmet etmeyen genel şablonlar üzerine kurulmuş.
 
-### 2. İşletmeler Aylık Abonelik Ödeyebilecek Durumda
+### 2. İşletmeler Aylık Abonelik Ödeyebilecek Durumda {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Hedef müşterilerinizin:
 
@@ -36,7 +36,7 @@ Hedef müşterilerinizin:
 
 **Fitness stüdyoları uyuyor**: zaten rezervasyon yazılımı, ödeme işlemleri ve pazarlama araçları için ödeme yapıyorlar. Bir web sitesi aboneliği doğal bir ekleme oluyor.
 
-### 3. Birbirleriyle İletişim Kuruyorlar
+### 3. Birbirleriyle İletişim Kuruyorlar {#3-they-talk-to-each-other}
 
 En iyi nişler şunlara sahiptir:
 
@@ -46,9 +46,9 @@ En iyi nişler şunlara sahiptir:
 
 **Fitness stüdyoları uyuyor**: stüdyo sahipleri fitness endüstrisi etkinliklerine katılıyor, çevrimiçi topluluklarda yer alıyor ve araçları/hizmetleri sık sık meslektaşlarıyla paylaşıyor.
 
-## Niş Adayları Nasıl Bulunur
+## Niş Adayları Nasıl Bulunur {#how-to-find-niche-candidates}
 
-### Bildiklerinizle Başlayın
+### Bildiklerinizle Başlayın {#start-with-what-you-know}
 
 Mevcut deneyiminiz bir avantajdır. Şunları düşünün:
 
@@ -56,7 +56,7 @@ Mevcut deneyiminiz bir avantajdır. Şunları düşünün:
 - Topluluğu anladığınız hobiler veya ilgi alanları
 - Halihazırda üye olduğunuz profesyonel ağlar
 
-### Sorun İşaretleri Arayın
+### Sorun İşaretleri Arayın {#look-for-pain-signals}
 
 Bir nişteki işletmelerin web siteleri konusunda zorlandığına dair kanıt arayın:
 
@@ -65,7 +65,7 @@ Bir nişteki işletmelerin web siteleri konusunda zorlandığına dair kanıt ar
 - Nişteki gerçek web sitelerine bakın — çoğu kötü mü?
 - Rakip olup olmadığını ve pazara ne kadar iyi hizmet verdiklerini kontrol edin
 
-### Ekonomik Durumu Değerlendirin
+### Ekonomik Durumu Değerlendirin {#evaluate-the-economics}
 
 Her aday niş için şunları tahmin edin:
 
@@ -73,11 +73,11 @@ Her aday niş için şunları tahmin edin:
 - **Ödeme istekliliği**: Benzer araçlara şu anda ne kadar harcıyorlar?
 - **Ömür boyu değer potansiyeli**: Bu işletmeler istikrarlı mı, yoksa çabuk mı terk ediyorlar?
 
-## Nişinizi Doğrulama
+## Nişinizi Doğrulama {#validating-your-niche}
 
 Bir şey inşa etmeden önce, talebi doğrulayın:
 
-### Potansiyel Müşterilerle Konuşun
+### Potansiyel Müşterilerle Konuşun {#talk-to-potential-customers}
 
 Hedef nişinizdeki 10-15 iş sahibiyle iletişime geçin. Şu soruları sorun:
 
@@ -88,17 +88,17 @@ Hedef nişinizdeki 10-15 iş sahibiyle iletişime geçin. Şu soruları sorun:
 
 Henüz satış yapmıyorsunuz. Dinliyorsunuz.
 
-### Rakip Manzarasını Kontrol Edin
+### Rakip Manzarasını Kontrol Edin {#check-competitor-landscape}
 
 - **Rakip yok**: Bu, talep olmadığı anlamına gelebilir veya keşfedilmemiş bir fırsat anlamına gelebilir. Müşteri konuşmaları hangisinin olduğunu söyleyecektir.
 - **Birkaç rakip**: İyi bir işaret. Talebi doğruluyor. Nelerde iyi olduklarını ve nelerde eksik kaldıklarını inceleyin.
 - **Çok fazla rakip**: Girmek daha zor, ama net bir şekilde farklılaşabilirseniz hala mümkün.
 
-### Bir Açılış Sayfası Oluşturun
+### Bir Açılış Sayfası Oluşturun {#build-a-landing-page}
 
 Platformu inşa etmeden önce, niş çözümünüzü anlatan basit bir açılış sayfası oluşturun ve e-posta kaydı toplayın. İlgi test etmek için küçük bir hedefli reklam verin. İnsanlar kaydolursa, elinizde bir doğrulama var demektir.
 
-## Bunu FitSite'a Uygulama
+## Bunu FitSite'a Uygulama {#applying-this-to-fitsite}
 
 FitSite'ın kriterlere göre nasıl puanladığı aşağıdadır:
 
@@ -112,7 +112,7 @@ FitSite'ın kriterlere göre nasıl puanladığı aşağıdadır:
 
 Doğrulama, fırsatı teyit etti. Şimdi inşa ediyoruz.
 
-## Dikkate Alınabilecek Niş Fikirleri
+## Dikkate Alınabilecek Niş Fikirleri {#niche-ideas-to-consider}
 
 Eğer fitness sizin pazarınız değilse, kriterleri karşılayan başka nişler şunlardır:
 
@@ -127,7 +127,7 @@ Eğer fitness sizin pazarınız değilse, kriterleri karşılayan başka nişler
 
 Bunların her birinin aynı özellikleri var: net web sitesi ihtiyaçları, ödeme gücü ve topluluk ağzıyla pazarlama.
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - **Bir niş seçme çerçevesi**: Her nişi değerlendirmek için üç kriter
 - **Doğrulama yöntemleri**: Müşteri görüşmeleri, rakip analizi, açılış sayfası testi

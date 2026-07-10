@@ -3,7 +3,7 @@ title: Magister Configurandi Multisitus
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Guía de Configuración del Asistente Multisite
+# Guía de Configuración del Asistente Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite incluye un asistente incorporado que convierte automáticamente una instalación estándar de WordPress en una red WordPress Multisite. Esto elimina la necesidad de editar manualmente `wp-config.php` o ejecutar comandos de base de datos.
 
@@ -11,13 +11,13 @@ Ultimate Multisite incluye un asistente incorporado que convierte automáticamen
 Si tu instalación de WordPress ya está funcionando como una red Multisite, puedes omitir este paso por completo. El asistente solo aparece cuando Multisite aún no está habilitado.
 :::
 
-## ¿Cuándo Aparece el Asistente?
+## ¿Cuándo Aparece el Asistente? {#when-does-the-wizard-appear}
 
 Cuando activas Ultimate Multisite en una instalación estándar (no Multisite) de WordPress, el plugin detecta que Multisite no está habilitado y te redirige automáticamente al Asistente de Configuración de Multisite en lugar del asistente de configuración regular.
 
 También puedes acceder a él directamente en **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Requisitos Previos
+## Requisitos Previos {#prerequisites}
 
 Antes de ejecutar el asistente, asegúrate de que:
 
@@ -29,7 +29,7 @@ Antes de ejecutar el asistente, asegúrate de que:
 El asistente modifica tu archivo `wp-config.php` y crea nuevas tablas de base de datos. Siempre crea una copia de seguridad antes de continuar.
 :::
 
-## Paso 1: Bienvenida
+## Paso 1: Bienvenida {#step-1-welcome}
 
 La primera pantalla explica qué es WordPress Multisite y lo que hará el asistente:
 
@@ -42,11 +42,11 @@ La primera pantalla explica qué es WordPress Multisite y lo que hará el asiste
 
 Haz clic en **Continuar** para seguir adelante.
 
-## Paso 2: Configuración de la Red
+## Paso 2: Configuración de la Red {#step-2-network-configuration}
 
 Este paso te pide que configures los ajustes de tu red.
 
-### Estructura del Sitio
+### Estructura del Sitio {#site-structure}
 
 Scegli come organizaris vesteri siti:
 
@@ -57,11 +57,11 @@ Scegli come organizaris vesteri siti:
 Se scegli i subdomini, dovrai configurare un **DNS wildcard** e un **certificato SSL wildcard** per il tuo dominio. La maggior parte degli hosting WordPress gestiti lo fa automaticamente. Consulta [Ultimate Multisite 101](./ultimate-multisite-101) per un confronto dettagliato.
 :::
 
-### Titolo della Rete (Network Title)
+### Titolo della Rete (Network Title) {#network-title}
 
 Inserisci un nome per la tua rete. Questo predefinito è il titolo del tuo sito attuale con "Network" aggiunto. Puoi cambiarlo in seguito dalle impostazioni della rete.
 
-### Email Amministratore Rete (Network Admin Email)
+### Email Amministratore Rete (Network Admin Email) {#network-admin-email}
 
 L'indirizzo email usato per le notifiche di amministrazione della rete. Questo predefinito è l'indirizzo email dell'utente corrente.
 
@@ -69,7 +69,7 @@ L'indirizzo email usato per le notifiche di amministrazione della rete. Questo p
 
 Dopo aver compilato i campi, clicca su **Continua** per procedere.
 
-## Passo 3: Installazione (Installation)
+## Passo 3: Installazione (Installation) {#step-3-installation}
 
 Clicca sul pulsante **Installa** per iniziare. Il wizard esegue cinque passaggi automatici in sequenza, mostrando ogni progresso in tempo reale:
 
@@ -96,7 +96,7 @@ Una vez que todos los pasos se completen con éxito, verás un estado verde de "
 
 Luego, el asistente procederá automáticamente a la pantalla de finalización.
 
-## Paso 4: Completar
+## Paso 4: Completar {#step-4-complete}
 
 Una vez que la instalación esté terminada, verás un mensaje de éxito confirmando que WordPress Multisite ha sido habilitado.
 
@@ -108,7 +108,7 @@ Ahora puedes continuar con el asistente de configuración de Ultimate Multisite 
 Postquam completatio installationis multisite terminat, browser tuus per novum network admin habilitatum redirebit. Possuitne necesse est redi uti, quia cookies authenticationes ad environem multisite novi sunt.
 :::
 
-## Fallback Configuratio Manualis
+## Fallback Configuratio Manualis {#manual-setup-fallback}
 
 Si wizard non potest in tuum `wp-config.php` scriptum scribere (propter permissiones file vel restrictions server), hoc codicem exactum ostendit quod manu addere debet:
 
@@ -117,9 +117,9 @@ Si wizard non potest in tuum `wp-config.php` scriptum scribere (propter permissi
 
 Post facto modificationes manuales fecisse, paginam refresce et wizard detectabit quod multisite nunc activum est.
 
-## Solutio Problematum
+## Solutio Problematum {#troubleshooting}
 
-### Wizard dicit quod wp-config.php non est scriptum
+### Wizard dicit quod wp-config.php non est scriptum {#the-wizard-says-wp-configphp-is-not-writable}
 
 Processus server tuus necessitatem ad scriptum `wp-config.php` habet. Possuitis:
 
@@ -127,7 +127,7 @@ Processus server tuus necessitatem ad scriptum `wp-config.php` habet. Possuitis:
 - Instrucciones fallbak manuales quae wizard praebet uti
 - Tuo fornitorem hosting assistance petere
 
-### Situa non sunt accessibilia post setup (subdomain)
+### Situa non sunt accessibilia post setup (subdomain) {#sites-are-not-accessible-after-setup-subdomains}
 
 Si structuram subdomain eligisti, **wildcard DNS** ad tuum dominio configurare necesse est. Record DNS addere:
 
@@ -139,7 +139,7 @@ Value: [tuus server IP]
 
 Cum tuo fornitorem hosting consultare si non scis quomodo hoc configurari debet.
 
-### Problematicae authenticationes post setup
+### Problematicae authenticationes post setup {#authentication-issues-after-setup}
 
 Si es logged out vel error cookies experiebatur post setup multisite:
 
@@ -147,7 +147,7 @@ Si es logged out vel error cookies experiebatur post setup multisite:
 2. Redi uti in `yourdomain.com/wp-login.php`
 3. Si opus manet, verifica quod `COOKIE_DOMAIN` in tuo `wp-config.php` non est ad `false` setum — hoc est nota problematica in installationibus multisite subdomain.
 
-### Un step fallax fuit durante installationem
+### Un step fallax fuit durante installationem {#a-step-failed-during-installation}
 
 Si uno de los pasos de instalación muestra un error:
 

@@ -1,120 +1,120 @@
 ---
-title: Steuerbehandligung
+title: Steierbehandlung
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Steuerbehandlung
+# Steierbehandlung {#tax-handling}
 
-Ultimate Multisite het Steuererhebungsmodul isch in üsere Kern-Plugin integriert. Falls Sie Verkaufssteuern uf Ihre Plän, Pakete und Dienstleistige erheben müesse, chönd Sie das ganz eifach mache, ohni dass Sie irgendwelchi Add-ons installiere müesse.
+Ultimate Multisite huet e Modul fir d'Steiererhiewung an eisem Core plugin agebaut, sou datt wann Dir Verkafssteieren op Äre Pläng, Packagen a Servicer erhiewe musst, Dir dat einfach maache kënnt, ouni iergendwellech Add-ons installéieren ze mussen.
 
-Für Firme i Europa bietet mir en **Add-on**, wo Tools und Funktione hinzufügt, um d'**VAT**-Konformität besser z'unterstütze.
+Fir Firmen, déi an Europa lokaliséiert sinn, bidde mir en **add-on** un, dat Tools a Funktiounen derbäisetzt, fir d'Konformitéit mat der **VAT z'ënnerstëtzen**.
 
-Ultimate Multisite rechnet Steuere nöd für Sie mit oder überweist sie a d'Regierig; mir helfe Ihnen eifach debi, d'passendi Steuere zum Ziit vom Transaktions mache. **Sie müesse d'Steuere trotzdem selber überwiise.**
+Ultimate Multisite deklaréiert oder iwwerweist keng Steieren an Ärem Numm un d'Regierung; mir hëllefen Iech einfach, déi passend Steieren zum Zäitpunkt vun der Transaktioun ze erhiewen. **Dir musst d'Steieren nach ëmmer selwer iwwerweisen.**
 
-## Steuererhebung aktivieren
+## Steiererhiewung aktivéieren {#enabling-tax-collection}
 
-D'Steuererhebung isch standardmässig nöd aktiviert. Um sie z'aktivierä, müesse Sie zu **Ultimate Multisite > Settings > Taxes** go und d'Einstellung Enable Taxes umschalte.
+Steiererhiewung ass net standardméisseg aktivéiert. Fir se z'aktivéieren, musst Dir op **Ultimate Multisite > Settings > Taxes** goen an d'Astellung Enable Taxes aktivéieren.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Enable Taxes-Schalter uewen op der Säit mat de Steierastellungen](/img/config/settings-taxes-enable.png)
 
-Hier isch en vollständige Überblick über d'Steuer-Settings-Seite:
+Hei ass eng komplett Vue vun der Säit mat de Steierastellungen:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Komplett Säit mat de Steierastellungen](/img/config/settings-taxes-full.png)
 
-Sie chönd au d'Steuer-Settings für einzelni Produkt aaluege:
+Dir kënnt och d'Steierastellunge fir eenzel Produkter ukucken:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Steierastellunge fir Produkter](/img/config/settings-taxes.png)
 
-### Steuer exkludiert vs. Steuer inbegriffen
+### Steier ausgeschloss vs. Steier abegraff {#tax-excluded-vs-tax-included}
 
-Standardmässig sind alli Ihre Produktpriise steuerexkludiert, was bedütet, dass d'Steuere **nöd im Produktpriis drin sind**. Falls mir feststelle, dass en Kunde Steuere uf en bestimmte Kauf zahle muess, füege mir die Steuere **ufem Betrag ob** hinzu.
+Standardméisseg sinn all Är Produktpräisser ouni Steier, dat heescht d'Steiere **sinn net abegraff** am Präis vum Produkt. Wa mir feststellen, datt e Client Steiere fir e bestëmmte Kaf bezuele soll, addéiere mir d'Steieren **uewendrop** op den Zwëschebetrag.
 
-Falls Sie wend, dass d'Steuere scho im Produktpriis inbegriffe sind, chönd Sie das mache, indem Sie d'Einstellung Inclusive Tax aktivieren.
+Wann Dir léiwer hutt, datt d'Steieren am Präis vun Ärem Produkt abegraff sinn, kënnt Dir dat maachen, andeems Dir d'Astellung **Inclusive Tax** aktivéiert.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Inclusive Tax-Schalterzeil ënner der Enable Taxes-Astellung](/img/config/settings-taxes-inclusive.png)
 
-Vergässed nöd, d'Änderige z'**speichere**.
+Vergiesst net, d'Ännerungen, déi Dir gemaach hutt, ze **späicheren**.
 
 ###
 
-## Steuerquoten erstellen
+## Steiersätz erstellen {#creating-tax-rates}
 
-Nachdem Sie d'Steuererhebung aktiviert händ, müesse Sie mit üsem Steuerquotene-Editor Steuerquotene für spezifischi Ort erstelle.
+Nodeems Dir Tax Collection aktivéiert hutt, musst Dir Steiersätz fir spezifesch Plaze mat eisem Steiersaz-Editor erstellen.
 
-Sie chönne de Editor über de **Manage Tax Rates**-Knopf uf de Sidebar vo de Tax settings page ufrufe.
+Dir kënnt op den Editor zougräifen, andeems Dir op de Knäppchen **Manage Tax Rates** an der Säitebar vun der Säit mat de Steierastellunge klickt.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Manage Tax Rates-Link am Tax Rates-Panel op der Astellungssäit](/img/config/settings-taxes-manage-rates.png)
 
-U de editorpage für Tax rates chönne Sie neui Tax Rates bi em Klick uf de **Add new Row**-Knopf dezuefüege.
+Op der Säit vum Steiersaz-Editor kënnt Dir nei Steiersätz derbäisetzen, andeems Dir op de Knäppchen **Add new Row** klickt.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tabell vum Steiersaz-Editor mam Add new Row-Knäppchen uewen](/img/config/tax-rates-editor.png)
 
-Sie müesse jedem Tax Rate en **Titel** (wird uf Rechnige brucht) gäh. Dänn chönne Sie s'**Land** (obligatorisch), de **Staat** und d'**Stadt** (beide optional) wähle, wo die Tax verrechnet wird. Zuerst füege Sie abschliessend de **Tax Rate in Prozent** dezue.
+Dir musst all Steiersaz en **Titel** ginn (deen op Rechnunge benotzt gëtt). Duerno kënnt Dir d'**Land** (obligatoresch), de **Bundesstaat,** an d'Stad (béid optional) auswielen, wou dës Steier berechent gëtt. Zum Schluss füügt de **Steiersaz a Prozent** derbäi.
 
-### Tax Categories
+### Steierkategorien {#tax-categories}
 
-Sie chönne au mehri Tax Categories erstelle, um verschiedeni Tax Rates für verschideni Produkt z'füege.
+Dir kënnt och méi Steierkategorien erstellen, fir verschidde Steiersätz fir verschidden Zorte vu Produkter derbäizesetzen.
 
-Klicke uf **Add new Tax Category**, gäh Sie denn de Name vo Ihrer Kategorie i und drücke **Create**.
+Klickt op **Add new Tax Category** , schreift dann den Numm vun Ärer Kategorie a dréckt **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Add new Tax Category-Knäppchen uewen am Steiersaz-Editor](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Tax Category Name-Agabefeld am Modal fir d'Kategorie ze erstellen](/img/config/tax-categories-create-modal.png)
 
-Um dur d'Kategorie z'blättere, klicke Sie uf **Switch** und wähle d'Kategorie us, zu de neui Taxes Sie dezuefüege wend.
+Fir duerch Kategorien ze bliederen, klickt op **Switch** a wielt d'Kategorie aus, zu där Dir nei Steiere wëllt derbäisetzen.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Switch-Dropdown-Knäppchen, fir tëscht Steierkategorien ze wiesselen](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown fir d'Steierkategorie-Auswiel, deen disponibel Kategorien weist](/img/config/tax-categories-select.png)
 
-Sie chönne d'Tax Category für es bestimmes Produkt festlege, indem Sie zur **Product edit page** gönd und denn uf de Taxes Tab wächsle.
+Dir kënnt d'Steierkategorie fir e bestëmmt Produkt festleeën, andeems Dir op d'**Product edit page** gitt an duerno op den Taxes-Tab.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Produkt-Steieren-Tab mat Steierkategorie a taxable-Schalter](/img/config/product-taxes.png)
 
-U dere gliiche Bildschirm chönne Sie de **Is Taxable?**-Schalter usschalte, damit Ultimate Multisite weiss, dass es für das bestimmti Produkt kei Taxes verrechne soll.
+Op deem selwechten Ecran kënnt Dir de Schalter **Is Taxable?** ausschalten, fir Ultimate Multisite matzedeelen, datt et keng Steieren op dat bestëmmt Produkt erhiewe soll.
 
-## European VAT Support
+## Ënnerstëtzung fir europäesch VAT {#european-vat-support}
 
-Wie scho vorher erwähnt, hämmer en Add-on zur Verfüegung gstellt für Kunde in de EU, wo wäge europäische Mehrwertsteuerregle zusätzlechi Aaforderige hend.
+Wéi virdru gesot, hu mir en add-on verfügbar fir Clienten an der EU, déi wéinst den europäesche VAT-Reglementer zousätzlech Ufuerderungen hunn.
 
-Unsere VAT-Tools helfe bi es paar wichtige Sache:
+Eis VAT-Tools hëllefe bei e puer wichtege Saachen:
 
-  * Eifachi Uflade vo de EU-VAT-Sätze;
+  * Einfach Luede vun EU VAT-Sätz;
 
-  * Sammle und Validierig vo de VAT-Nummere – und Rückberechnig für steuerbefreite Unternehme (wie Firme mit gültige VAT-Nummere).
+  * Sammelen a Validéiere vun der VAT-Nummer - an Ëmkéiere vun der Steierlaascht fir VAT-befreit Entitéiten (wéi Firmen mat valabelen VAT-Nummeren);
 
-Um die Add-on z'installiere, gaht uf **Ultimate Multisite > Settings** und klickt denn uf de Link i de Sidebar "Check our Add-ons".
+Fir dëst add-on z'installéieren, gitt op **Ultimate Multisite > Settings** a klickt dann op de Säitebar-Link **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Säitebar vun der Astellungssäit mam Check our Add-ons-Link](/img/config/settings-taxes-addons-link.png)
 
-Du wirst uf d'Add-ons-Seite umgleitet. Dort chasch de **Ultimate Multisite VAT add-on** sueche und installiere.
+Dir gitt op eis Add-ons-Säit weidergeleet. Do kënnt Dir no dem **Ultimate Multisite VAT add-on** sichen an et installéieren.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Dänn gaht uf **Network Admin > Plugins** und aktiviere die Add-on über s'ganze Netzwerk.
+Da gitt op **Network Admin > Plugins** an aktivéiert dat add-on network-wide.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Wenn du zrugg uf de **Tax Settings tab** gaasch, gsehsch nöi Optionne zur Verfüegig. Schalte d'Option "Enable VAT Support" i, um die nöie VAT-Tools z'aktiviere. Vergiss nöd dini Einstellungen z'speichere!
+Wann Dir zréck op den **Tax Settings tab** gitt, gesitt Dir nei Optiounen. Aktivéiert d'Optioun **Enable VAT Support**, fir déi nei VAT-Tools z'aktivéieren. Vergiesst net, Är Astellungen ze **späicheren**!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### VAT-Steuersätze uufhole
+### VAT-Steiersätz eroflueden {#pulling-on-vat-tax-rates}
 
-Einer vo de Tools, wo üsi Integration hinzufügt, isch d'Möglichkeit, d'Steuersätze für EU-Mitgliedsstaate z'lade. Das chasch du mache, indem du nach de Aktivierig vo de EU-VAT-Unterstützig uf d'Tax Rates Editor Page gaasch.
+Ee vun den Tools, déi eis Integratioun derbäisetzt, ass d'Méiglechkeet, d'Steiersätz fir EU-Memberstaaten ze lueden. Dat kann gemaach ginn, andeems Dir d'Säit vum Steiersaz-Editor besicht, nodeems EU VAT-Support aktivéiert gouf.
 
-Am de de Seite gsehnd Sie d'Optionen zum Ziehe vo de Mehrwertsteuersatz (VAT). Wänn Sie en Satztyp wähle und uf de Knopf **Update EU VAT Rates** klicke, wird d'Tabelle mit de Steuersätze für jede EU-Mitgliedstaat automatisch ufgfült. Dänn müesse Sie nur no speichere.
+Um Enn vun der Säit gesitt Dir d'Optioune fir VAT erofzelueden. Wann Dir en Taux-Typ auswielt an op de Knäppchen **Update EU VAT Rates** klickt, gëtt d'Tabell mat de Steiersätz fir all EU-Memberstaat opgeruff an automatesch ausgefëllt. Duerno musst Dir se just nach späicheren.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Update EU VAT Rates-Knäppchen ënnen am Steiersaz-Editor](/img/config/tax-rates-vat-pull.png)
 
-Sie chönne d'Werte au nach em Ziehe ändere. Zum do z'mache, muesse Sie eifach d'Zeile i de Tabelle bearbeite, wo Sie wend, und druf klicke zum neui Werte speichere.
+Dir kënnt d'Wäerter och änneren, nodeems Dir se erofgelueden hutt. Fir dat ze maachen, ännert einfach déi Tabellzeil, déi Dir braucht, a klickt fir déi nei Wäerter ze späicheren.
 
-### VAT Validierig
+### VAT-Validéierung {#vat-validation}
 
-Wänn d'VAT-Unterstützig aktiviert isch, füegt Ultimate Multisite es zusätzlechs Feld zur Checkout-Form bi de Rechnigsadresse dezue, unter em Feld für d'Rechnigsadresse. S'Feld wird nur für Chunde aazeigt, wo i de EU sind.
+Wann VAT-Support aktivéiert ass, setzt Ultimate Multisite en zousätzlecht Feld an de Checkout-Formulaire derbäi, ënner dem Feld fir d'Rechnungsadress. D'Feld gëtt nëmme fir Clienten ugewisen, déi an der EU lokaliséiert sinn.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite validiert denn d'VAT-Nummer und wänn die als gültig zrugg chunnt, wird de Umkehrungsmechanismus (reverse charge mechanism) angewendet und de Steuersatz uf 0% für die Bestellung gsetzt.
+Ultimate Multisite validéiert dann d’TVA-Nummer, a wann se als valabel zeréckkënnt, gëtt de Reverse-Charge-Mechanismus ugewannt an de Steiersaz fir déi Bestellung op 0% gesat.

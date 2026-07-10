@@ -3,7 +3,7 @@ title: Abonementni qanday bekor qilish kerak
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Abonamentimni qanday bekor qilishim mumkin?
+# Abonamentimni qanday bekor qilishim mumkin? {#how-can-i-cancel-my-subscription}
 
 Agar sizda Ultimate Multisite litsenziyasi bo'lsa, uni qayta yangilashni istalgan vaqtda bekor qilishingiz mumkin. Faqat quyidagi qadamlarni bajaring:
 

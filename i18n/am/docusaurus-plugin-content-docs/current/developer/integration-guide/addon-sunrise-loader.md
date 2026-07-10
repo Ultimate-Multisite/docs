@@ -3,17 +3,17 @@ title: ተጨማሪ ፀሐይ መውጣት ፋይል መጫኛ
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# የአድ-ኦን የሰንጋው (Sunrise) ፋይል መጫኛ
+# የአድ-ኦን የሰንጋው (Sunrise) ፋይል መጫኛ {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 ለአድ-ኦኖች እና ለተራቀቁ MU-plugin ውህደቶች (integrations) የሰንጋው (sunrise) ማስፋፊያ መጫኛን ይጨምራል። ይህ መጫኛ የሰንጋው ማስጀመር ሂደት በWordPress ውስጥ የሚከናወን ሲሆን፣ በዚህም ምክንያት የተፈጠረውን `wp-content/sunrise.php` ፋይል ሳያርትዑ ኮድ እንዲሰሩ ያስችላል።
 
-## መቼ መጠቀም ይቻላል
+## መቼ መጠቀም ይቻላል {#when-to-use-it}
 
 የሰንጋው ማስፋፊያ (sunrise extension) መጠቀም ያለብዎት ጊዜ፣ ውህደታቸው ከመደበኛ ፕልጊኖች ከመጫናቸው በፊት መሥራት ያለበት ከሆነ ነው። ለምሳሌ፡ የባለቤትነት ድረ-ገጽ አቅጣጫ ማስያዝ (custom domain routing)፣ በ호ስ (host) ላይ የተመሠረተ የጥያቄ አያያዝ (request handling)፣ ወይም ቀደምት የኔትወርክ ማስጀመር ማስተካከያዎችን ማድረግ።
 
 ለተለመዱ ውህደቶች ግን፣ መደበኛ የWordPress ፕልጊኖችን፣ MU-pluginsን፣ እና በሰነዱ ውስጥ የተገለጹትን የUltimate Multisite hooks መጠቀም ይመከራል። የሰንጋው ኮድ በጣም ቀደም ብሎ ስለሚሰራ፣ ትንሽ፣ ጥበቃ ያለው (defensive) እና ምንም εξተናጋሪ (dependency-free) መሆን አለበት።
 
-## የፋይል ስያሜ አወጣጥ (File naming convention)
+## የፋይል ስያሜ አወጣጥ (File naming convention) {#file-naming-convention}
 
 የሚከተሉትን ስያሜ ያላቸውን የPHP ፋይል ይፍጠሩ፡ `sunrise.php`። ይህ ፋይልም በስሙ የሚጀምረው በ`ultimate-multisite-` በሚል ስም ባለው የአድ-ኦን ዳይሬክቶሪ ውስጥ መሆን አለበት።
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 የሚገኙ ፋይሎች በየአድ-ኦን የዳይሬክቶሪ መንገድ (addon path) መሠረት በፊደል ቅደም ተከተል ይጫናሉ።
 
-## ፋይሉ የት ማስቀመጥ አለብኝ
+## ፋይሉ የት ማስቀመጥ አለብኝ {#where-to-place-the-file}
 
 ፋይሉን በሰንጋው ባህሪው ባለቤት በሆነው የአድ-ኦን ዋና ዳይሬክቶሪ ውስጥ ያስቀምጡት።
 
@@ -45,7 +45,7 @@ wp-content/
 
 የተፈጠረውን `wp-content/sunrise.php` ፋይል በቀጥታ አያርትዑ። ይህ መጫኛ (loader) Ultimate Multisite የሚያስቀምጠውን እና የሚያዘምነውን ዋና የሰንጋው ፋይል ሳይቀይሩ፣ ለተጠቃሚው ኮድ የሰንጋው ባህሪ እንዲሰፋ ያስችላል።
 
-## የሚገኙ Hooks እና Filters
+## የሚገኙ Hooks እና Filters {#hooks-and-filters-available}
 
 የአድ-ኦን የሰንጋው ፋይሎች ከUltimate Multisite የባለቤትነት ድረ-ገጽ ካርታ (domain mapping) ከተጫነ በኋላ እና WordPress `ms_loaded` ከመተላለፉ በፊት ይሰራሉ። በዚህ ጊዜ የሰንጋው ፋይል የሚከተሉትን ማድረግ ይችላል፦
 
@@ -58,7 +58,7 @@ Ultimate Multisite የሰንጋው መጫኛው ሲጠናቀቅ `wu_sunrise_load
 
 በሰንጋው ደረጃ ቀድሞ ከተጫኑባቸው ተግባራት (functions) ብቻ ይጠራሉ። በመረጃ ቋት ላይ ብዙ የሚጠይቅ ስራ፣ የቴምፕሌት ማሳያ (template rendering)፣ የHTTP ጥያቄዎች (HTTP requests) እና መደበኛ የፕልጊን የጭነት ቅደም ተከተል እንደተጠናቀቀ የሚያስበውን ኮድ ያስወግዱ።
 
-## አነስተኛ ምሳሌ (Minimal example)
+## አነስተኛ ምሳሌ (Minimal example) {#minimal-example}
 
 ```php
 <?php

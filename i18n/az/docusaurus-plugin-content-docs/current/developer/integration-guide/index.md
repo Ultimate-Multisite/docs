@@ -1,15 +1,17 @@
 ---
-title: İnteqrasiya Təlimatı
+title: İnteqrasiya bələdçisi
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# İntegrasiya Təlimatı
+# İnteqrasiya Bələdçisi {#integration-guide}
 
-Bu təlimat Ultimate Multisite ilə ən çox istifadə olunan inteqrasiya nümunələrini əhatə edir. Bunlara xarici xidmətlərə qoşulmaq, özəl ödəniş qapıları yaratmaq və webhook-ları idarə etmək daxildir.
+Bu bələdçi Ultimate Multisite ilə ümumi inteqrasiya nümunələrini əhatə edir, o cümlədən xarici xidmətlərə qoşulma, fərdi ödəniş gateway-lərinin qurulması və webhook-ların idarə edilməsi.
 
-## CRM İntegrasiyası
+İzolyasiya olunmuş tenant infrastrukturu üçün suveren tenant bootstrap-u, miqrasiya yoxlaması, SSO və söndürmə üzrə təlimatlar üçün [Multi-Tenancy İnteqrasiyası](./multi-tenancy) bölməsinə baxın.
 
-Yeni müştərilər qeydiyyatdan keçdikdə, müştəri məlumatlarını CRM-inizlə sinxronlaşdırın:
+## CRM İnteqrasiyası {#crm-integration}
+
+Yeni müştərilər qeydiyyatdan keçdikdə müştəri məlumatlarını CRM-inizlə sinxronlaşdırın:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitika İntegrasiyası
+## Analytics İnteqrasiyası {#analytics-integration}
 
-Müştəri dövrü boyu əsas biznes hadisələrini izləyin:
+Müştəri həyat dövrü boyunca əsas biznes hadisələrini izləyin:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Növbəti Addımlar
+## Növbəti Addımlar {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Öz ödəniş qapınızı yaradın
-- [Webhook Handling](./webhooks) — Özəl webhook nöqtələri yaradın
+- [Fərdi Gateway İnkişafı](./custom-gateway) — Öz ödəniş gateway-inizi yaradın
+- [Webhook İdarəetməsi](./webhooks) — Fərdi webhook endpoint-ləri yaradın
+- [Multi-Tenancy İnteqrasiyası](./multi-tenancy) — Suveren tenant həyat dövrü axınları ilə inteqrasiya edin

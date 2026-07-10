@@ -1,23 +1,23 @@
 ---
 id: add_network
-title: Ação - add_network
+title: Ação - adicionar_rede
 sidebar_label: add_network
 _i18n_hash: 1e206f428089b68f471fdbd1c645f858
 ---
-# Action: add_network
+# Action: add_network {#action-addnetwork}
 
-Dispara após uma nova rede ter sido adicionada.
+Disparada após uma nova rede ter sido adicionada.
 
-## Parameters
+## Parâmetros {#parameters}
 
-| Name | Type | Description |
+| Nome | Tipo | Descrição |
 |------|------|-------------|
-| $new_network_id | `int` | ID da rede adicionada. |
-| $r | `array` | Array associativo completo dos argumentos da rede. |
+| $new_network_id | `int` | ID of the added network. |
+| $r | `array` | Full associative array of network arguments. |
 
-### Since
+### Desde {#since}
 
 - 1.3.0
-### Source
+### Fonte {#source}
 
-Definido em [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) na linha 1304
+Definida em [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1304) na linha 1304

@@ -1,0 +1,117 @@
+---
+title: Lacago Badan
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Lacago Badan {#multi-currency}
+
+Ultimate Multisite: Lacago Badan wuxuu u suurtageliyaa shabakaddaada inay aqbasho lacag-bixinno ku baxa lacago badan. Waxay si otomaatig ah u beddeshaa qiimaha iyadoo adeegsanaysa sarif nool ama gacanta lagu dejiyo, waxay kuu oggolaanaysaa inaad dejiso qiimayaal sax ah oo badeecad kasta u gaar ah lacag kasta, waxayna ogaataa lacagta uu booqde kastaa doorbidayo iyadoo loo marayo goob-ogaansho — dhammaantoodna waxaa laga maamulaa hal admin dashboard.
+
+## Astaamaha Muhiimka ah {#key-features}
+
+- **Beddelidda sarifka si otomaatig ah** — qiimayaasha waxaa laga beddelaa lacagtaada aasaasiga ah iyadoo la adeegsanayo sarifyo laga soo qaado bixiyaha aad dooratay
+- **Ka-dhaafitaanno qiimeyn badeecad kasta** — dejiso qiimayaal sax ah oo lacag gaar ah ku salaysan badeecad kasta si looga gudbo beddelidda otomaatigga ah
+- **Goobta xulashada lacagta ee isdiiwaangelinta** — waxay macaamiisha u oggolaanaysaa inay doortaan lacagta ay doorbidayaan inta lagu jiro bixinta/isdiiwaangelinta
+- **Bixiyeyaal sarif oo badan** — ECB, Frankfurter, Stripe, ama sarifyo si buuxda gacanta loogu dejiyo
+- **Ogaanshaha lacagta ee ku salaysan goob-ogaansho** — si otomaatig ah ayuu u sii doortaa lacagta ku habboon dalka booqdaha
+- **Admin dashboard** — hal meel ka maamul lacagaha firfircoon, sarifyada, iyo dejimaha bixiyaha
+
+## Shuruudaha {#requirements}
+
+- Ultimate Multisite 2.0.0 ama ka sarreeya
+- Rakibid WordPress Multisite
+- PHP 7.4 ama ka sarreeya
+
+## Rakibidda {#installation}
+
+1. U rar faylasha plugin-ka `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Ka hawlgeli plugin-ka shaashadda **Plugins** ee WordPress (Network Activate)
+3. U gudub **Ultimate Multisite → Lacago Badan** si aad u furto admin dashboard
+4. Ku dar lacagaha aad rabto inaad aqbasho oo habee bixiyahaaga sarifka
+
+## Habaynta {#configuration}
+
+### Admin Dashboard {#admin-dashboard}
+
+Admin dashboard-ka Lacago Badan (**Ultimate Multisite → Lacago Badan**) waa meesha dhexe ee lagu:
+
+- Ku daro, lagu hawlgeliyo, ama lagu damiyo lacagaha
+- Lagu doorto bixiye sarif oo lagu cusboonaysiiyo sarifyada marka loo baahdo
+- Lagu eego sarifyada hadda jira ee dhammaan lacagaha firfircoon
+- Lagu dejiyo sarifyada gacanta marka bixiyeyaasha otomaatigga ahi aysan ku habboonayn
+
+### Bixiyeyaasha Sarifka {#exchange-rate-providers}
+
+| Bixiye | Sharaxaad |
+|---|---|
+| **ECB** | Bangiga Dhexe ee Yurub — sarifyo maalinle ah oo bilaash ah oo loogu talagalay shabakadaha EUR-ku-salaysan |
+| **Frankfurter** | API muraayad ECB oo il-furan — bilaash, uma baahna API key |
+| **Stripe** | Wuxuu adeegsadaa sarifyada FX ee nool ee Stripe — wuxuu u baahan yahay isku-xir Stripe oo firfircoon |
+| **Gacanta** | Adiga ayaa si toos ah u gelinaya sarifyada; ma jiraan wicitaanno API dibadeed |
+
+Ka dooro bixiyahaaga hoosta **Ultimate Multisite → Lacago Badan → Dejimo → Bixiyaha Sarifka**. Sarifyada waxaa gacanta lagu cusboonaysiin karaa wakhti kasta ama waxaa loo jadwalayn karaa inay si otomaatig ah u cusboonaysmaan.
+
+### Ka-dhaafitaannada Qiimeynta Badeecad Kasta {#per-product-pricing-overrides}
+
+Marka beddelidda otomaatigga ahi aysan ku filnayn saxnaanta, waxaad dejin kartaa qiime sax ah oo lacag gaar ah u ah badeecad kasta:
+
+1. Fur tifaftiraha badeecadda (**Ultimate Multisite → Badeecado → Tafatir**)
+2. Hoos ugu rog qaybta **Qiimeynta Lacagta**
+3. Geli qiimaha saxda ah ee lacag kasta oo aad rabto inaad ka dhaafto
+4. Kaydi badeecadda
+
+Badeecadaha aan lahayn ka-dhaafitaan waxay adeegsadaan qiimaha laga beddelay lacagtaada aasaasiga ah.
+
+### Goobta Xulashada Lacagta ee Isdiiwaangelinta {#currency-selector-signup-field}
+
+Goobta xulashada lacagta waxaa lagu dari karaa socodkaaga isdiiwaangelinta/bixinta si macaamiishu u doortaan lacagta ay doorbidayaan marka ay isdiiwaangelinayaan:
+
+1. Tag **Ultimate Multisite → Lacago Badan → Dejimo**
+2. Hawlgeli **Muuji xulashada lacagta marka la isdiiwaangelinayo**
+3. Ikhtiyaar ahaan dejiso lacag caadi ah ama u daa goob-ogaanshaha inuu go'aamiyo qiimaha horay loo doortay
+
+Lacagta la doortay waxaa lagu kaydiyaa rukunsashada waxaana loo adeegsadaa dhammaan biilasha xiga.
+
+### Ogaanshaha Lacagta ee Ku Salaysan Goob-ogaansho {#geolocation-based-currency-detection}
+
+Marka ogaanshaha goob-ogaanshaha la hawlgeliyo, addon-ku wuxuu dalka booqdaha ku beegaa lacag wuxuuna horay uga doortaa goobta xulashada lacagta. Si aad u hawlgeliso:
+
+1. Tag **Ultimate Multisite → Lacago Badan → Dejimo**
+2. Hawlgeli **Ka ogow lacagta goobta booqdaha**
+3. Dalalka ugu beeg lacagaha miiska **Khariidaynta Goob-ogaanshaha**
+
+Haddii aysan jirin khariidad u taal dalka booqdaha, lacagta aasaasiga ah ee shabakadda ayaa loo adeegsadaa beddel ahaan.
+
+## Su'aalaha Inta Badan La Isweydiiyo {#frequently-asked-questions}
+
+### Maxaa dhacaya haddii bixiyaha sarifku aan la heli karin? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addon-ku wuxuu dib ugu noqdaa sarifyadii ugu dambeeyay ee si guul leh loo soo qaaday. Haddii aan waligood sarifyo la soo qaadin, wuxuu dib ugu noqdaa sarifyada gacanta ee aad habaysay. Waxaa lagu talinayaa in la habeeyo sarifyo gacanta ah oo noqda shabakad badbaado.
+
+### Ma u adeegsan karaa bixiyeyaal kala duwan lacago kala duwan? {#can-i-use-different-providers-for-different-currencies}
+
+Maya — hal bixiye ayaa firfircoon markiiba dhammaan lacagaha. Adeegso **Gacanta** haddii aad u baahan tahay xakameyn buuxda oo ku saabsan sarifyada gaarka ah.
+
+### Goob-ogaanshuhu ma u baahan yahay plugin gaar ah? {#does-geolocation-require-a-separate-plugin}
+
+Looma baahna plugin goob-ogaansho dibadeed. Addon-ku wuxuu adeegsadaa ogaanshaha IP-ilaa-dal ee ku dhex-dhisan WordPress. Saxnaan ka sarreysa awgeed, adeeg goob-ogaansho oo gaar ah waxaa lagu dhex dari karaa filter hooks-ka la bixiyay.
+
+### Ka-dhaafitaannada badeecad kasta ma la dabaqaa ka hor mise ka dib cashuurta? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Ka-dhaafitaannada badeecad kasta waxay dejinayaan qiimaha ka hor cashuurta ee lacagta bartilmaameedka ah. Cashuurta waxaa lagu xisaabiyaa dusha qiimaha ka-dhaafitaanka iyadoo la adeegsanayo habayntaada cashuurta ee jirta.
+
+## Diiwaanka Isbeddellada {#changelog}
+
+### Nooca 1.0.0 — La sii daayay 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Cusub: Taageero lacago badan leh beddelid sarif otomaatig ah
+- Cusub: Ka-dhaafitaanno qiimeyn badeecad kasta oo loogu talagalay qiimayaal sax ah oo lacag gaar ah ku salaysan
+- Cusub: Goob xulasho lacag oo isdiiwaangelin ah oo loogu talagalay socodka bixinta
+- Cusub: Bixiyeyaal sarif: ECB, Frankfurter, Stripe, iyo gacanta
+- Cusub: Ogaanshaha lacagta ee ku salaysan goob-ogaansho
+- Cusub: Admin dashboard loogu talagalay maareynta lacagaha iyo sarifyada
+- Hagaajin: Dashboard-ka oo had iyo jeer ku muujinayay qiimayaasha lacagta aasaasiga ah iyadoo aan loo eegin lacagta la doortay

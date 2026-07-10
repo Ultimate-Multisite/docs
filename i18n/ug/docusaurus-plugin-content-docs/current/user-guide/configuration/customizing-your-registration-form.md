@@ -1,154 +1,156 @@
 ---
-title: سجلmenizni özelleştirmek
+title: تىزىملىتىش فورمىڭىزنى خاسلاشتۇرۇش
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Registration Formınızı Özelleştirme
+# تىزىملىتىش جەدۋىلىڭىزنى خاسلاشتۇرۇش {#customizing-your-registration-form}
 
-Aynı WordPress platformunda kurulu diğer tüm SaaS'lardan farklı görünmek için Ultimate Multisite, **Checkout Forms** özelliğimizle kayıt ve giriş sayfalarınızı özelleştirmenize olanak tanır.
+WordPress سۇپىسىدا قۇرۇلغان باشقا بارلىق SaaS لاردىن تورىڭىزنى ئۆزگىچە كۆرسىتىش ئۈچۈن، Ultimate Multisite بىزنىڭ **ھېسابات قىلىش جەدۋەللىرى** ئىقتىدارىمىز ئارقىلىق تىزىملىتىش ۋە كىرىش بەتلىرىڭىزنى خاسلاشتۇرۇشىڭىزغا يول قويىدۇ.
 
-Bunlar yeni müşterileri dönüştürmek için farklı yaklaşımları denemek istediğinizde kullanabileceğiniz kolay ve esnek bir yol olsa da, çoğunlukla kişiselleştirilmiş kayıt formları oluşturmak için kullanılırlar. Bu makale size bunu nasıl yapabileceğinizi göstermeyi amaçlıyor.
+ئۇلار يېڭى خېرىدارلارنى ئايلاندۇرۇشقا ئۇرۇنغاندا ئوخشىمىغان ئۇسۇللارنى سىناپ بېقىشنىڭ ئاسان ۋە جانلىق يولى بولسىمۇ، كۆپىنچە خاسلاشتۇرۇلغان تىزىملىتىش جەدۋەللىرىنى قۇرۇشقا ئىشلىتىلىدۇ. بۇ ماقالە سىزگە بۇنى قانداق قىلالايدىغانلىقىڭىزنى كۆرسىتىشنى مەقسەت قىلىدۇ.
 
-## Giriş ve kayıt sayfaları:
+## كىرىش ۋە تىزىملىتىش بەتلىرى: {#login-and-registration-pages}
 
-Ultimate Multisite kurulduğunda, ana sitenizde otomatik olarak özel giriş ve kayıt sayfaları oluşturur. Bu varsayılan sayfaları **Ultimate Multisite > Settings > Login & Registration** sayfasından istediğiniz zaman değiştirebilirsiniz.
+Ultimate Multisite ئورنىتىلغاندىن كېيىن، ئۇ ئاساسىي تور بېكىتىڭىزدە خاس كىرىش ۋە تىزىملىتىش بەتلىرىنى ئاپتوماتىك قۇرىدۇ. بۇ كۆڭۈلدىكى بەتلەرنى خالىغان ۋاقىتتا **Ultimate Multisite > تەڭشەكلەر > كىرىش ۋە تىزىملىتىش** بېتىڭىزگە كىرىپ ئۆزگەرتەلەيسىز.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![كىرىش ۋە تىزىملىتىش تەڭشەكلىرى بېتى](/img/config/settings-general.png)
 
-İşte giriş ve kayıt ayarlarının tam görünümü:
+مانا كىرىش ۋە تىزىملىتىش تەڭشەكلىرى بېتىنىڭ تولۇق كۆرۈنۈشى:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![كىرىش ۋە تىزىملىتىش تەڭشەكلىرى تولۇق بېتى](/img/config/settings-login-registration-full.png)
 
-**Login & Registration** sayfasındaki özelleştirebileceğiniz her bir seçeneğe bir göz atalım:
+**كىرىش ۋە تىزىملىتىش** بېتىدە خاسلاشتۇرالايدىغان ھەر بىر تاللاشنى كۆرۈپ باقايلى:
 
-  * **Enable registration (Kayıt etmeyi etkinleştir):** Bu seçenek, ağınızda kaydı açar veya kapatır. Kapalıysa, müşterileriniz ürünlerinize kayıt olamaz ve abone olamazlar.
+  * **تىزىملىتىشنى قوزغىتىش:** بۇ تاللاش تورىڭىزدا تىزىملىتىشنى قوزغىتىدۇ ياكى توختىتىدۇ. ئەگەر ئۇ ئۆچۈرۈلگەن بولسا، خېرىدارلىرىڭىز تىزىملىتىپ مەھسۇلاتلىرىڭىزغا مۇشتەرى بولالمايدۇ.
 
-  * **Enable email verification (E-posta doğrulamayı etkinleştir):** Bu seçenek açık olduğunda, ücretsiz bir plan için veya deneme süreli ücretli bir planla abone olan müşteriler doğrulama e-postası alacak ve web sitelerinin oluşturulması için doğrulama bağlantısına tıklamaları gerekecek.
+  * **ئېلخەت دەلىللەشنى قوزغىتىش:** ئەگەر بۇ تاللاش قوزغىتىلغان بولسا، ھەقسىز پىلانغا ياكى سىناق مۇددىتى بار ھەقلىق پىلانغا مۇشتەرى بولغان خېرىدارلار دەلىللەش ئېلخېتىنى تاپشۇرۇۋالىدۇ ۋە تور بېكەتلىرى قۇرۇلۇشى ئۈچۈن دەلىللەش ئۇلانمىسىنى چېكىشى كېرەك.
 
-* **پیش‌فرض صفحه ثبت‌نام (Default registration page):** این صفحه برای ثبت‌نام پیش‌فرض است. شما باید این صفحه را در وب‌سایت خود منتشر کنید و یک فرم ثبت‌نام (که به آن چک‌اوت فرم هم می‌گویند) داشته باشید - جایی که مشتریان شما محصولاتتان را مشترک خواهند شد. می‌توانید هر تعداد صفحه ثبت‌نام و فرم چک‌اوت ایجاد کنید، فقط یادتان باشد که شورت‌کد فرم چک‌اوت را در صفحه ثبت‌نام قرار دهید، وگرنه نمایش داده نخواهد شد.
+  * **كۆڭۈلدىكى تىزىملىتىش بېتى:** بۇ تىزىملىتىش ئۈچۈن كۆڭۈلدىكى بەت. بۇ بەت تور بېكىتىڭىزدە ئېلان قىلىنغان بولۇشى ۋە تىزىملىتىش جەدۋىلى (ھېسابات قىلىش جەدۋىلى دەپمۇ ئاتىلىدۇ) بولۇشى كېرەك - بۇ يەردە خېرىدارلىرىڭىز مەھسۇلاتلىرىڭىزغا مۇشتەرى بولىدۇ. خالىغانچە كۆپ تىزىملىتىش بەتلىرى ۋە ھېسابات قىلىش جەدۋەللىرىنى قۇرالايسىز، پەقەت ھېسابات قىلىش جەدۋىلى shortcodeىنى تىزىملىتىش بېتىگە قويۇشنى ئۇنتۇماڭ، بولمىسا ئۇ كۆرۈنمەيدۇ.
 
-* **استفاده از صفحه ورود سفارشی (Use custom login page):** این گزینه به شما اجازه می‌دهد از یک صفحه ورود سفارشی استفاده کنید، غیر از صفحه پیش‌فرض wp-login.php. اگر این گزینه را روشن کنید، می‌توانید انتخاب کنید که کدام صفحه برای ورود در گزینه **Default login page** (که درست زیر آن قرار دارد) استفاده شود.
+  * **خاس كىرىش بېتىنى ئىشلىتىش:** بۇ تاللاش كۆڭۈلدىكى wp-login.php بېتىدىن باشقا، خاسلاشتۇرۇلغان كىرىش بېتىنى ئىشلىتىشىڭىزگە يول قويىدۇ. ئەگەر بۇ تاللاش قوزغىتىلغان بولسا، **كۆڭۈلدىكى كىرىش بېتى** تاللىشىدا (دەل تۆۋەندە) كىرىش ئۈچۈن قايسى بەت ئىشلىتىلىدىغانلىقىنى تاللىيالايسىز.
 
-* **مخفی کردن آدرس اصلی ورود (wp-login.php):** اگر می‌خواهید آدرس اصلی ورود را پنهان کنید، می‌توانید این گزینه را روشن کنید. این کار برای جلوگیری از حملات brute-force مفید است. اگر این گزینه فعال باشد، Ultimate Multisite زمانی که کاربر سعی کند به لینک اصلی wp-login.php دسترسی پیدا کند، خطای 404 نمایش می‌دهد.
+  * **ئەسلى كىرىش urlىنى (wp-login.php) يوشۇرۇش** : ئەگەر ئەسلى كىرىش URLىنى يوشۇرماقچى بولسىڭىز، بۇ تاللاشنى قوزغىتالايسىز. بۇ brute-force ھۇجۇملىرىنىڭ ئالدىنى ئېلىشقا پايدىلىق. ئەگەر بۇ تاللاش قوزغىتىلغان بولسا، ئىشلەتكۈچى ئەسلى wp-login.php ئۇلانمىسىغا كىرمەكچى بولغاندا Ultimate Multisite 404 خاتالىقىنى كۆرسىتىدۇ
 
-* **اجبار به انتشار همزمان سایت (Force synchronous site publication):** بعد از اینکه یک مشتری در یک شبکه محصول مشترک شد، سایت جدید و در انتظار نیاز دارد تبدیل به یک سایت واقعی شبکه شود. این فرآیند انتشار از طریق Job Queue به صورت ناهمزمان انجام می‌شود. فعال کردن این گزینه باعث می‌شود که انتشار دقیقاً در همان درخواست ثبت‌نام اتفاق بیفتد.
+  * **ماس قەدەملىك تور بېكەت ئېلان قىلىشنى مەجبۇرلاش:** خېرىدار توردا مەھسۇلاتقا مۇشتەرى بولغاندىن كېيىن، يېڭى كۈتۈۋاتقان تور بېكەت ھەقىقىي تور بېكىتىگە ئايلاندۇرۇلۇشى كېرەك. ئېلان قىلىش جەريانى Job Queue ئارقىلىق، ماس قەدەمسىز ھالدا يۈز بېرىدۇ. تىزىملىتىش بىلەن ئوخشاش تەلەپ ئىچىدە ئېلان قىلىشنىڭ يۈز بېرىشىنى مەجبۇرلاش ئۈچۈن بۇ تاللاشنى قوزغىتىڭ.
 
-حالا بیایید ببینیم سایر گزینه‌هایی که هنوز برای فرآیند ورود و ثبت‌نام مرتبط هستند چه هستند. آن‌ها درست زیر **Other options** (گزینه‌های دیگر) در همان صفحه Login & registration قرار دارند:
+ئەمدى كىرىش ۋە تىزىملىتىش جەريانىغا يەنىلا مۇناسىۋەتلىك باشقا تاللاشلارنى كۆرەيلى. ئۇلار ئوخشاش كىرىش ۋە تىزىملىتىش بېتىدىكى **باشقا تاللاشلار** نىڭ دەل ئاستىدا:
 
-* **نقش پیش‌فرض (Default role):** این نقشی است که مشتریان شما پس از فرآیند ثبت‌نام روی وب‌سایت خود خواهند داشت.
+  * **كۆڭۈلدىكى رول:** بۇ تىزىملىتىش جەريانىدىن كېيىن خېرىدارلىرىڭىزنىڭ ئۆز تور بېكىتىدە ئىگە بولىدىغان رولى.
 
-* **Jumper'ı Etkinleştirme:** Bu ayar, admin alanında Jumper kısayolunu etkinleştirir. Jumper sayesinde yöneticiler, her menüyü tek tek taramadan Ultimate Multisite ekranlarına, ağ nesnelerine ve diğer desteklenen yerlere hızlıca atlayabilirler. Eğer bu hızlı gezinme aracını admin arayüzünden gizlemek isterseniz, bunu kapatabilirsiniz.
+  * **Jumper نى قوزغىتىش:** باشقۇرۇش رايونىدا Jumper قىسقارتمىسىنى قوزغىتىدۇ. Jumper باشقۇرغۇچىلارنىڭ ھەر بىر تىزىملىكتىن ئۆتۈپ يۈرمەي، Ultimate Multisite ئېكرانلىرىغا، تور ئوبيېكتلىرىغا ۋە قوللىنىدىغان باشقا نىشانلارغا تېز سەكرىشىگە يول قويىدۇ. ئەگەر بۇ تېز يول باشلاش قورالىنى باشقۇرۇش ئارايۈزىدىن يوشۇرۇشنى خالىسىڭىز، ئۇنى ئۆچۈرۈڭ.
 
-* **Ana siteye kullanıcı ekleme:** Bu seçeneği etkinleştirirseniz, kayıt işlemi bittikten sonra kullanıcıyı ağınızın ana sitesine de eklersiniz. Bu seçeneği etkinleştirirseniz, bu kullanıcıların web sitenizdeki **varsayılan rolünü** belirlemek için hemen altında bir seçenek de görünecektir.
+  * **ئىشلەتكۈچىلەرنى ئاساسىي تور بېكەتكىمۇ قوشۇش:** بۇ تاللاشنى قوزغاتسىڭىز، تىزىملىتىش جەريانىدىن كېيىن ئىشلەتكۈچى تورىڭىزنىڭ ئاساسىي تور بېكىتىگىمۇ قوشۇلىدۇ. ئەگەر بۇ تاللاشنى قوزغاتسىڭىز، بۇ ئىشلەتكۈچىلەرنىڭ تور بېكىتىڭىزدىكى **كۆڭۈلدىكى رول**ىنى تەڭشەش تاللىشىمۇ دەل ئاستىدا كۆرۈنىدۇ.
 
-* **Birden fazla hesabı etkinleştirme:** Kullanıcıların aynı e-posta adresiyle ağınızdaki farklı sitelerde hesaplara sahip olmalarına izin verir. Bu seçeneği kapalı tutarsanız, müşterileriniz ağınızda çalışan aynı e-posta adresine sahip diğer web sitelerinde hesap oluşturamayacaklardır.
+  * **كۆپ ھېساباتنى قوزغىتىش:** ئىشلەتكۈچىلەرنىڭ ئوخشاش ئېلخەت ئادرېسى بىلەن تورىڭىزدىكى ئوخشىمىغان تور بېكەتلەردە ھېساباتلارغا ئىگە بولۇشىغا يول قويۇڭ. ئەگەر بۇ تاللاش ئۆچۈرۈلگەن بولسا، خېرىدارلىرىڭىز ئوخشاش ئېلخەت ئادرېسى بىلەن تورىڭىزدا ئىجرا بولۇۋاتقان باشقا تور بېكەتلەردە ھېسابات قۇرالمايدۇ.
 
-Ve bu, giriş ve kayıtla ilgili özelleştirebileceğiniz tüm seçenekler! Düzenlemeyi bitirdikten sonra ayarlarınızı kaydetmeyi unutmayın.
+خاسلاشتۇرالايدىغان كىرىش ۋە تىزىملىتىشكە مۇناسىۋەتلىك تاللاشلارنىڭ ھەممىسى مۇشۇ! ئۇلارنى تەھرىرلەپ بولغاندىن كېيىن تەڭشەكلىرىڭىزنى ساقلاشنى ئۇنتۇماڭ.
 
-## Birden Fazla Kayıt Formu Kullanma:
+## كۆپ تىزىملىتىش جەدۋىلىنى ئىشلىتىش: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0, istediğiniz kadar farklı alanlar, ürünler vb. ile formlar oluşturmanıza olanak tanıyan bir ödeme formu düzenleyici sunar.
+Ultimate Multisite 2.0 سىزگە خالىغانچە كۆپ جەدۋەل قۇرۇشقا، ئوخشىمىغان ساھەلەر، تەمىنلىنىدىغان مەھسۇلاتلار قاتارلىقلار بىلەن تەمىنلەيدىغان ھېسابات قىلىش جەدۋىلى تەھرىرلىگۈچىسىنى تەمىنلەيدۇ.
 
-Hem giriş hem de kayıt sayfaları kısa kodlarla gömülüdür: giriş sayfasında **[wu_login_form]** ve kayıt sayfası için **[wu_checkout]**. Kayıt sayfasını, ödeme formları oluşturarak veya tasarlayarak daha da özelleştirebilirsiniz.
+كىرىش ۋە تىزىملىتىش بەتلىرىنىڭ ھەر ئىككىسى shortcodeلار بىلەن سىڭدۈرۈلگەن: كىرىش بېتىدە **[wu_login_form]** ۋە تىزىملىتىش بېتى ئۈچۈن**[wu_checkout]**. تىزىملىتىش بېتىنى ھېسابات قىلىش جەدۋەللىرىنى ياساش ياكى قۇرۇش ئارقىلىق تېخىمۇ خاسلاشتۇرالايسىز.
 
-Bu özelliğe erişmek için sol taraftaki yan menüdeki **Checkout Forms** (Ödeme Formları) menüsüne gidin.
+بۇ ئىقتىدارغا كىرىش ئۈچۈن، سول يان بالداقتىكى **ھېسابات قىلىش جەدۋەللىرى** تىزىملىكىگە كىرىڭ.
 
-![Sidebar'daki Checkout Forms menüsü](/img/config/checkout-forms-list.png)
+![يان بالداقتىكى ھېسابات قىلىش جەدۋەللىرى تىزىملىكى](/img/config/checkout-forms-list.png)
 
-Bu sayfada sahip olduğunuz tüm ödeme formlarını görebilirsiniz.
+بۇ بەتتە، سىزدە بار بارلىق ھېسابات قىلىش جەدۋەللىرىنى كۆرەلەيسىز.
 
-Yeni bir tane oluşturmak isterseniz, sayfanın en üstündeki **Add Checkout Form** (Ödeme Formu Ekle) butonuna tıklamanız yeterlidir.
+ئەگەر يېڭى بىرنى قۇرماقچى بولسىڭىز، بەتنىڭ ئۈستىدىكى **ھېسابات قىلىش جەدۋىلى قوشۇش** نى چېكىڭ.
 
-شما این سه گزینه را به عنوان نقطه شروع انتخاب می‌کنید: تک مرحله‌ای (single step)، چند مرحله‌ای (multi-step) یا خالی (blank). سپس، روی آن کلیک کنید تا به **ویرایشگر (Editor)** بروید.
+باشلىنىش نۇقتىڭىز سۈپىتىدە بۇ ئۈچ تاللاشنىڭ بىرىنى تاللىيالايسىز: يەككە قەدەم، كۆپ قەدەم ياكى بوش. ئاندىن، **تەھرىرلىگۈچكە بېرىش** نى چېكىڭ.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![يەككە قەدەم، كۆپ قەدەم ياكى بوش تاللاشلىرى بىلەن ھېسابات قىلىش جەدۋىلى قوشۇش](/img/config/checkout-forms-list.png)
 
-به طور alternatīو، می‌توانید با کلیک روی گزینه‌های زیر نام فرم موجود خود را ویرایش یا کپی کنید و یا از آن دو نسخه دیگر بسازید (duplicate). در آنجا، همچنین گزینه‌هایی برای کپی کردن shortcode فرم یا حذف فرم وجود دارد.
+ئۇنىڭ ئورنىغا، نامىنىڭ ئاستىدىكى تاللاشلارنى چېكىپ ئاللىقاچان بار جەدۋەللەرنى تەھرىرلىيەلەيسىز ياكى كۆپەيتەلەيسىز. ئۇ يەردە، جەدۋەلنىڭ shortcodeىنى كۆچۈرۈش ياكى جەدۋەلنى ئۆچۈرۈش تاللاشلىرىنىمۇ تاپالايسىز.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![تەھرىرلەش، كۆپەيتىش ۋە ئۆچۈرۈش بار ھېسابات قىلىش جەدۋىلى hover مەشغۇلاتلىرى](/img/config/checkout-form-hover-actions.png)
 
-اگر تک مرحله‌ای یا چند مرحله‌ای را انتخاب کنید، فرم پرداخت از قبل با مراحل اساسی که برای کار کردن لازم است پر شده است. سپس، اگر بخواهید می‌توانید مراحل اضافی به آن اضافه کنید.
+ئەگەر يەككە قەدەم ياكى كۆپ قەدەمنى تاللىسىڭىز، ھېسابات قىلىش جەدۋىلى ئۇنىڭ ئىشلىشى ئۈچۈن كېرەكلىك ئاساسىي قەدەملەر بىلەن ئالدىن تولدۇرۇلغان بولىدۇ. ئاندىن، خالىسىڭىز، ئۇنىڭغا قوشۇمچە قەدەملەرنى قوشالايسىز.
 
-### ویرایش یک فرم پرداخت:
+### ھېسابات قىلىش جەدۋىلىنى تەھرىرلەش: {#editing-a-checkout-form}
 
-همانطور که قبلاً گفتیم، شما می‌توانید فرم‌های پرداخت را برای اهداف مختلف بسازید. در این مثال، ما روی یک فرم ثبت‌نام کار خواهیم کرد.
+ئىلگىرى تىلغا ئالغىنىمىزدەك، ئوخشىمىغان مەقسەتلەر ئۈچۈن ھېسابات قىلىش جەدۋەللىرىنى قۇرالايسىز. بۇ مىسالدا بىز تىزىملىتىش جەدۋىلى ئۈستىدە ئىشلەيمىز.
 
-پس از رفتن به ویرایشگر فرم پرداخت، نامی به فرم خود بدهید (که فقط برای ارجاع داخلی استفاده می‌شود) و یک slug (که برای ساخت shortcode استفاده می‌شود، مثلاً).
+ھېسابات قىلىش جەدۋىلى تەھرىرلىگۈچىسىگە يۆتكەلگەندىن كېيىن، جەدۋىلىڭىزگە نام (پەقەت ئىچكى پايدىلىنىش ئۈچۈن ئىشلىتىلىدۇ) ۋە slug (مەسىلەن، shortcodeلارنى قۇرۇشقا ئىشلىتىلىدۇ) بېرىڭ.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![نام ۋە slug ساھەلىرى بار چىقىم قىلىش جەدۋىلى تەھرىرلىگۈچى](/img/config/checkout-form-name-slug.png)
 
-فرم‌ها از مراحل و فیلدها تشکیل شده‌اند. می‌توانید با کلیک روی **Add New Checkout Step** (افزودن مرحله جدید فرم پرداخت)، یک مرحله جدید اضافه کنید.
+جەدۋەللەر باسقۇچلار ۋە ساھەلەردىن تۈزۈلىدۇ. **يېڭى چىقىم قىلىش باسقۇچى قوشۇش** نى چېكىپ يېڭى باسقۇچ قوشالايسىز.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![يېڭى چىقىم قىلىش باسقۇچى قوشۇش كۇنۇپكىسى](/img/config/checkout-form-add-step.png)
 
-در تب اول پنجره مودال، محتوای مرحله فرم خود را پر کنید. به آن یک ID، نام و توضیحات بدهید. این موارد بیشتر برای استفاده داخلی هستند.
+مودال كۆزنەكنىڭ بىرىنچى بەتكۈچىدە، جەدۋىلىڭىزنىڭ باسقۇچ مەزمۇنىنى تولدۇرۇڭ. ئۇنىڭغا ID، نام ۋە چۈشەندۈرۈش بېرىڭ. بۇ تۈرلەر كۆپىنچە ئىچكى جەھەتتە ئىشلىتىلىدۇ.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![ID، نام ۋە چۈشەندۈرۈش بار چىقىم قىلىش باسقۇچى مەزمۇن بەتكۈچى](/img/config/checkout-form-step-content.png)
 
-سپس، دید (visibility) مرحله را تنظیم کنید. شما می‌توانید بین **Always show** (همیشه نمایش داده شود)، **Only show for logged in users** (فقط برای کاربران وارد شده نمایش داده شود) یا **Only show for guests** (فقط برای مهمان‌ها نمایش داده شود) یکی را انتخاب کنید.
+كېيىن، باسقۇچنىڭ كۆرۈنۈشچانلىقىنى بەلگىلەڭ. **ھەمىشە كۆرسەت**، **پەقەت كىرگەن ئىشلەتكۈچىلەرگە كۆرسەت** ياكى **پەقەت مېھمانلارغا كۆرسەت** ئارىسىدىن تاللىيالايسىز.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![چىقىم قىلىش باسقۇچى كۆرۈنۈشچانلىق تاللانمىلىرى](/img/config/checkout-form-step-visibility.png)
 
-آخر، مرحله‌ی استایل (style) رو تنظیم کنید. این‌ها فیلدهای اختیاری هستن.
+ئاخىرىدا، باسقۇچ ئۇسلۇبىنى سەپلەڭ. بۇلار ئىختىيارىي ساھەلەر.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![چىقىم قىلىش باسقۇچى ئۇسلۇب سەپلىمىسى](/img/config/checkout-form-step-style.png)
 
-حالا وقت اضافه کردن فیلدها به اولین مرحله‌مون رسیده. فقط روی **Add New Field** کلیک کنید و نوع بخشی که می‌خواید رو انتخاب کنید.
+ئەمدى بىرىنچى باسقۇچىمىزغا ساھەلەر قوشۇش ۋاقتى كەلدى. پەقەت **يېڭى ساھە قوشۇش** نى چېكىپ، خالىغان بۆلەك تۈرىنى تاللاڭ.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![يېڭى ساھە قوشۇش كۇنۇپكىسى](/img/config/checkout-form-add-field-button.png)![ساھە تۈرى تاللاش چۈشۈرۈلمە تىزىملىكى](/img/config/checkout-form-field-type-dropdown.png)
 
-هر فیلدی پارامترهای متفاوتی داره که باید پر بشن. برای این ورود اول، ما فیلد **Username** رو انتخاب می‌کنیم.
+ھەر بىر ساھەدە تولدۇرۇلىدىغان ئوخشىمىغان پارامېتىرلار بار. بۇ تۇنجى كىرىش ئۈچۈن، **ئىشلەتكۈچى نامى** ساھەسىنى تاللايمىز.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![ئىشلەتكۈچى نامى ساھە سەپلىمىسى](/img/config/checkout-form-username-content.png)![ئىشلەتكۈچى نامى ساھە پارامېتىرلىرى](/img/config/checkout-form-username-visibility.png)![ئىشلەتكۈچى نامى ساھە قوشۇمچە تەڭشەكلىرى](/img/config/checkout-form-username-style.png)
 
-می‌تونید هر تعداد مرحله و فیلد که نیاز دارید اضافه کنید. برای نمایش محصولاتتون به مشتری‌ها تا یکی رو انتخاب کنن، از فیلد **Pricing Table** استفاده کنید. اگه می‌خواید اجازه بدید مشتری قالب (template) رو انتخاب کنه، فیلد **Template Selection** رو اضافه کنید. و همین‌طور...
+ئېھتىياجىڭىزغا قاراپ خالىغانچە باسقۇچ ۋە ساھە قوشالايسىز. خېرىدارلىرىڭىزنىڭ تاللىشى ئۈچۈن مەھسۇلاتلىرىڭىزنى كۆرسىتىشتە باھا جەدۋىلى ساھەسىنى ئىشلىتىڭ. ئەگەر خېرىدارلىرىڭىزغا قېلىپ تاللاش ئىمكانىيىتى بەرمەكچى بولسىڭىز، قېلىپ تاللاش ساھەسىنى قوشۇڭ. شۇنىڭغا ئوخشاش داۋاملىشىدۇ.
 
-_**توجه:** اگر بعد از ساخت فرم تسویه حساب (checkout form)، محصولی بسازید، باید اون محصول رو در بخش جدول قیمت‌گذاری (Pricing table section) اضافه کنید. اگه اضافه نکنید، محصول برای مشتری‌ها در صفحه ثبت نام نمایش داده نمی‌شه._
+![قېلىپ تاللاش ساھەسى بار چىقىم قىلىش جەدۋىلى تەھرىرلىگۈچى](/img/config/checkout-form-with-template-field.png)
 
-_**توجه ۲:** username، email، password، site title، site URL، order summary، payment و submit button فیلدهای اجباری هستن تا یک فرم تسویه حساب ساخته بشه._
+_**ئەسكەرتىش:** ئەگەر چىقىم قىلىش جەدۋىلىڭىزنى قۇرغاندىن كېيىن مەھسۇلات قۇرسىڭىز، مەھسۇلاتنى باھا جەدۋىلى بۆلىكىگە قوشۇشىڭىز كېرەك. ئەگەر ئۇنى قوشمىسىڭىز، مەھسۇلات تىزىملىتىش بېتىدە خېرىدارلىرىڭىزغا كۆرۈنمەيدۇ._
 
-در حالی که روی فرم تسویه حساب خود کار می‌کنید، همیشه می‌تونید از دکمه **Preview** استفاده کنید تا ببینید مشتری‌ها فرم رو چطور خواهند دید. همچنین می‌تونید بین حالت مشاهده به عنوان کاربر موجود (existing user) یا بازدیدکننده (visitor) جابه‌جا بشید.
+_**ئەسكەرتىش 2:** ئىشلەتكۈچى نامى، ئېلخەت، پارول، تور بېكەت ماۋزۇسى، تور بېكەت URL، زاكاز خۇلاسىسى، چىقىم قىلىش ۋە يوللاش كۇنۇپكىسى چىقىم قىلىش جەدۋىلى قۇرۇش ئۈچۈن مەجبۇرىي ساھەلەردۇر._
 
-![Checkout form preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Visitor or existing user checkout form preview](/img/config/checkout-form-preview-modal.png)
+چىقىم قىلىش جەدۋىلىڭىز ئۈستىدە ئىشلەۋاتقاندا، خېرىدارلىرىڭىزنىڭ جەدۋەلنى قانداق كۆرىدىغانلىقىنى كۆرۈش ئۈچۈن ھەر ۋاقىت ئالدىن كۆرۈش كۇنۇپكىسىنى ئىشلىتەلەيسىز. شۇنداقلا مەۋجۇت ئىشلەتكۈچى ياكى زىيارەتچى سۈپىتىدە كۆرۈش ئارىسىدا ئالماشتۇرالايسىز.
 
-آخر، **Advanced Options** (پیشنهادهای پیشرفته) bölümünden, **Thank You** (تشکر) sayfası için mesajı ayarlayabilir, dönüşümleri takip etmek için قطعات (snippets) ekleyebilir, چک‌आउट فرمınıza (checkout form) özel CSS ekleyebilir veya آن را مشخص کشورlere محدود edebilirsiniz.
+![چىقىم قىلىش جەدۋىلى تەھرىرلىگۈچىدىكى ئالدىن كۆرۈش كۇنۇپكىسى](/img/config/checkout-form-preview-button.png)![چىقىم قىلىش جەدۋىلىنى زىيارەتچى ياكى مەۋجۇت ئىشلەتكۈچى سۈپىتىدە ئالدىن كۆرۈش](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+ئاخىرىدا، **ئىلغار تاللانمىلار** دا **رەھمەت** بېتى ئۈچۈن ئۇچۇرنى سەپلىيەلەيسىز، ئۆزگىرىشلەرنى ئىز قوغلاش ئۈچۈن پارچىلارنى قوشالايسىز، چىقىم قىلىش جەدۋىلىڭىزگە خاس CSS قوشالايسىز ياكى ئۇنى مەلۇم دۆلەتلەر بىلەن چەكلىيەلەيسىز.
 
-شما همچنین می‌توانید با کلیک کردن این گزینه در ستون سمت راست، فرم چک‌اوت خود را دستی فعال یا غیرفعال کنید، یا آن را به طور دائم حذف نمایید.
+![رەھمەت بېتى، ئۆزگىرىش ئىز قوغلاش ۋە خاس CSS بار ئىلغار تاللانمىلار](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+ئوڭ ستوندىكى بۇ تاللانمىنى ئالماشتۇرۇش ئارقىلىق چىقىم قىلىش جەدۋىلىڭىزنى قولدا قوزغىتالايسىز ياكى توختىتالايسىز، ياكى جەدۋەلنى مەڭگۈلۈك ئۆچۈرەلەيسىز.
 
-فرم چک‌اوت خود را ذخیره کردن یادتان نرود!
+![چىقىم قىلىش جەدۋىلى ئۈچۈن ئاكتىپ ئالماشتۇرغۇچ ۋە ئۆچۈرۈش تاللانمىسى](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+چىقىم قىلىش جەدۋىلىڭىزنى ساقلاشنى ئۇنتۇپ قالماڭ!
 
-برای گرفتن شورت‌کد (shortcode) فرم خود، روی **Generate Shortcode** کلیک کنید و نتیجه‌ای که در پنجره مودال (modal window) نشان داده می‌شود را کپی نمایید.
+![چىقىم قىلىش جەدۋىلىنى ساقلاش كۇنۇپكىسى](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+جەدۋىلىڭىزنىڭ shortcodeىنى ئېلىش ئۈچۈن **Shortcode ھاسىللاش** نى چېكىپ، مودال كۆزنەكتە كۆرسىتىلگەن نەتىجىنى كۆچۈرۈڭ.
 
-_**توجه:** برای اینکه این فرم چک‌اوت به صفحه ثبت نام شما اضافه شود، باید این شورت‌کد را در صفحه ثبت نام خود اضافه کنید._
+![كۆچۈرۈش ئۈچۈن shortcode بار Shortcode ھاسىللاش مودالى](/img/config/checkout-form-editor.png)
 
-## پیش از انتخاب محصولات و قالب‌ها از طریق پارامترهای URL:
+_**ئەسكەرتىش:** بۇ چىقىم قىلىش جەدۋىلىنى تىزىملىتىش بېتىڭىزگە قوشۇش ئۈچۈن، بۇ shortcodeنى تىزىملىتىش بېتىڭىزگە قوشۇشىڭىز كېرەك._
 
-اگر می‌خواهید جداول قیمت سفارشی (customized pricing tables) برای محصولاتتان ایجاد کنید و در فرم چک‌اوت، محصول یا قالبی که مشتری از جدول قیمت یا صفحه قالب‌های شما انتخاب می‌کند را از قبل انتخاب کنید، می‌توانید از پارامترهای URL برای این کار استفاده کنید.
+## URL پارامېتىرلىرى ئارقىلىق مەھسۇلاتلار ۋە قېلىپلارنى ئالدىن تاللاش: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **برای طرح‌ها (plans):**
+ئەگەر مەھسۇلاتلىرىڭىز ئۈچۈن خاسلاشتۇرۇلغان باھا جەدۋەللىرى قۇرماقچى ۋە خېرىدارىڭىز باھا جەدۋىلىڭىز ياكى قېلىپلار بېتىڭىزدىن تاللىغان مەھسۇلات ياكى قېلىپنى چىقىم قىلىش جەدۋىلىدە ئالدىن تاللىماقچى بولسىڭىز، بۇنىڭ ئۈچۈن URL پارامېتىرلىرىنى ئىشلىتەلەيسىز.
 
-به مسیر **Ultimate Multisite > Products > Select a plan** بروید. باید دکمه **Click to copy Shareable Link** در بالای صفحه را ببینید. این لینکی است که می‌توانید از آن، این طرح خاص را روی فرم چک‌اوت خود از قبل انتخاب کنید.
+### **پىلانلار ئۈچۈن:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+**Ultimate Multisite > مەھسۇلاتلار > پىلان تاللاش** قا كىرىڭ. بەتنىڭ ئۈستىدە **ھەمبەھىرلىنىدىغان ئۇلانمىنى كۆچۈرۈش ئۈچۈن چېكىڭ** كۇنۇپكىسىنى كۆرۈشىڭىز كېرەك. بۇ، چىقىم قىلىش جەدۋىلىڭىزدە مۇشۇ كونكرېت پىلاننى ئالدىن تاللاش ئۈچۈن ئىشلىتەلەيدىغان ئۇلانمىدۇر.
 
-Ətraflı Qeyd: Bu paylaşılabilir link yalnız **Planlar** üçün keçərlıdır. Paketlər və ya xidmətlər üçün paylaşılabilir linklərdən istifadə edə bilməzsiniz.
+![ھەمبەھىرلىنىدىغان ئۇلانما كۇنۇپكىسى بار مەھسۇلات بېتى](/img/config/products-list.png)
 
-### Şablonlar (templates) üçün:
+دىققەت قىلىڭكى، بۇ ھەمبەھىرلىنىدىغان ئۇلانما پەقەت **پىلانلار** ئۈچۈنلا كۈچكە ئىگە. بولاقلار ياكى مۇلازىمەتلەر ئۈچۈن ھەمبەھىرلىنىدىغان ئۇلانمىلارنى ئىشلىتەلمەيسىز.
 
-Əgər ödəniş formanızda sayt şablonlarını əvvəlcədən seçmək istəyirsinizsə, qeydiyyat səhifəsi URL-inizdə **?template_id=X** parametridən istifadə edə bilərsiniz. "X" yerinə **sayt şablonunun ID nömrəsi** yazılmalıdır. Bu nömrəni almaq üçün **Ultimate Multisite > Sites** bölməsinə gedin.
+### قېلىپلار ئۈچۈن: {#for-templates}
 
-İstifadə etmək istədiyiniz sayt şablonunun hemen altında **Manage**-ə klikləyin. Orada SITE ID nömrəsini görəcəksiniz. Bu nömrəni yalnız bu müəyyən sayt şablonu üçün ödəniş formanızda əvvəlcədən seçilməsi üçün istifadə edin. Bizim halımızda URL parametrləri **?template_id=2** olacaq.
+ئەگەر چىقىم قىلىش جەدۋىلىڭىزدە تور بېكەت قېلىپلىرىنى ئالدىن تاللىماقچى بولسىڭىز، تىزىملىتىش بېتىڭىزنىڭ URLىدا بۇ پارامېتىرنى ئىشلىتەلەيسىز: **?template_id=X**. "X" نى **تور بېكەت قېلىپى ID نومۇرى** بىلەن ئالماشتۇرۇش كېرەك. بۇ نومۇرنى ئېلىش ئۈچۈن، **Ultimate Multisite > تور بېكەتلەر** گە كىرىڭ.
 
-![Sayt siyahısı, sayt şablonu ID-si göstərir](/img/config/site-templates-list.png)
+ئىشلىتىشنى خالايدىغان تور بېكەت قېلىپىنىڭ دەل ئاستىدىكى **باشقۇرۇش** نى چېكىڭ. SITE ID نومۇرىنى كۆرىسىز. چىقىم قىلىش جەدۋىلىڭىزدە بۇ كونكرېت تور بېكەت قېلىپىنى ئالدىن تاللاش ئۈچۈن پەقەت مۇشۇ نومۇرنى ئىشلىتىڭ. بۇ يەردىكى ئەھۋالىمىزدا، URL پارامېتىرى **?template_id=2** بولىدۇ.
 
-Gəlin deyək ki, bizim şəbəkə veb saytımız [**www.mynetwork.com**](http://www.mynetwork.com) olsun və ödəniş formamızla qeydiyyat səhifəmiz **/register** səhifəsində yerləşsin. Bu sayt şablonu əvvəlcədən seçilmiş bütün URL, [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2** ) kimi görünəcək.
+![تور بېكەت قېلىپى IDسىنى كۆرسىتىدىغان تور بېكەتلەر تىزىملىكى](/img/config/site-templates-list.png)
 
-Və əgər istəsəniz, həm məhsulları (products) həm də şablonları ödəniş formanızda əvvəlcədən seçmək istəyirsinizsə. Yalnız planın paylaşılabilir linkini kopyalayıb şablon parametrinə sonda yapışdırmanız kifayətdir. Bu belə görünəcək: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**
+تور بېكىتىمىز [**www.mynetwork.com**](http://www.mynetwork.com)، چىقىم قىلىش جەدۋىلىمىز بار تىزىملىتىش بېتىمىز **/register** بېتىدە دەپ پەرەز قىلايلى. بۇ تور بېكەت قېلىپى ئالدىن تاللانغان تولۇق URL مۇنداق كۆرۈنىدۇ: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+ئەگەر خالىسىڭىز، چىقىم قىلىش جەدۋىلىڭىزگە مەھسۇلاتلارنىمۇ، قېلىپلارنىمۇ ئالدىن تاللىيالايسىز. قىلىشىڭىز كېرەك بولغىنى پىلاننىڭ ھەمبەھىرلىنىدىغان ئۇلانمىسىنى كۆچۈرۈپ، قېلىپ پارامېتىرىنى ئاخىرىغا چاپلاش. ئۇ مۇنداق كۆرۈنىدۇ: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

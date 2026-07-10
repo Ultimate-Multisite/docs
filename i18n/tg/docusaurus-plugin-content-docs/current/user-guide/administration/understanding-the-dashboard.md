@@ -3,31 +3,31 @@ title: Фаҳмидани дашборд
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Фаҳми корторҷи Ultimate Multisite Dashboard
+# Фаҳми корторҷи Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
 
 Пеш аз он ки ба танзимотҳои мураккаби интихобҳо ва ҷанбаҳои амалии Ultimate Multisite ворид шавем, биёвед ба дашборӣ назар кунем.
 
 Ба монанди бисёр плагини WordPress, Ultimate Multisite як менюи сатҳи шабакаро бо номи **Ultimate Multisite** ва якчанд элементҳои подвигари зери он месозад.
 
-## Вижитҳои дашборӣ (Dashboard)и шабака
+## Вижитҳои дашборӣ (Dashboard)и шабака {#network-dashboard-widgets}
 
 Ultimate Multisite якчанд вижити муфидро ба дашборӣ дар сатҳи шабака ворид мекунад. Ин дашборӣ бо раванд **My Sites → Network Admin → Dashboard** пайдо мешавад. Ин вижитҳо барои додани дастрасии осон ба иттилоот ва амалиёти умумиро барои администратори шабака таҳия шудаанд.
 
 ![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-### Қадамҳои аввал (First Steps)
+### Қадамҳои аввал (First Steps) {#first-steps}
 
 ![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
 Ин вижит дар инсталлирании навтарин Ultimate Multisite пайдо мешавад ва администратори шабакаро хотира месозад, ки вазифаҳои иловагӣ аз онҳо иборат аст, ба монанди таҳияи усули масоҳат (payment method) ва эҷоди ҳисоби санҷиш.
 
-### Хулоса (Summary)
+### Хулоса (Summary) {#summary}
 
 ![Summary widget](/img/admin/network-dashboard-summary.png)
 
 Вижити Хулоса дар бораи шумораи ройгонӣ ва даромадҳои онҳо барои рӯз маълумот медиҳад. MRR (даромад이 муайяншудаи моҳӣ) маҷмӯи тақдириро ба тамоми муштариён, ки аз ҳисоби усули дастгирии даромад баргарӣ мекунанд, нишон медиҳад.
 
-### ҷараёни фаъолият (Activity Stream)
+### ҷараёни фаъолият (Activity Stream) {#activity-stream}
 
 ![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Ultimate Multisite якчанд вижити муфидро ба дашборӣ 
 
 Барои тавсифи муфассалтар ба қисми Events дар ҳуҷҷатҳо истифода кунед.
 
-### Ҳоло (Right Now)
+### Ҳоло (Right Now) {#right-now}
 
 ![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
 Инструмент виджет информирует о кратком обзоре пользователей и сайтов в сети. Удобные ярлыки вверху позволяют одним кликом создавать новые сайты или пользователей.
 
-### Новости и обсуждения
+### Новости и обсуждения {#news-and-discussions}
 
 ![Виджет Новостей и Обсуждений](/img/admin/network-dashboard-news.png)
 
 Этот виджет получает и отображает последние новости Ultimate Multisite. Следите за этим виджетом, чтобы получать информацию о обновлениях, критических ошибках и исправлениях безопасности.
 
-## Панель управления Ultimate Multisite Dashboard
+## Панель управления Ultimate Multisite Dashboard {#ultimate-multisite-dashboard}
 
 В то время как панель уровня сети представляет целостную информацию о сети, панель управления Ultimate Multisite (расположенная в верхней части меню Ultimate Multisite) предоставляет информацию об услуге.
 
 ![Панель управления Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Рост ежемесячного повторяющегося дохода (MRR)
+### Рост ежемесячного повторяющегося дохода (MRR) {#monthly-recurring-revenue-growth}
 
 График MRR показывает ежемесячную разбивку доходов за 12-месячный календарный период.
 
@@ -61,7 +61,7 @@ Ultimate Multisite якчанд вижити муфидро ба дашборӣ 
 
 Новый доход отслеживается синим цветом, а отмены отражаются красным.
 
-### Поддержка диапазонов дат
+### Поддержка диапазонов дат {#date-range-support}
 
 В зависимости от количества клиентов и активности статистика может стать слишком большой. Поддержка диапазонов дат, встроенная в панель управления, позволяет администратору сети сосредоточиться только на необходимой информации и временном периоде.
 

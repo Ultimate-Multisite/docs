@@ -3,13 +3,13 @@ title: د سایت جوړولو مود د حذف اعلان
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Site Builder Mode Removal Notice
+# Site Builder Mode Removal Notice {#site-builder-mode-removal-notice}
 
 **Site Builder mode Superdav AI Agent v1.12.0-এ সরিয়ে ফেলা হয়েছে।** আপনি যদি সাইট বিল্ডার মোড ব্যবহার করতেন, তবে থিম তৈরি এবং সাইট সেটআপের জন্য **Setup Assistant agent** এর দিকে যেতে পারেন।
 
-## কী হয়েছিল?
+## কী হয়েছিল? {#what-happened}
 
-### সাইট বিল্ডার মোড (পুরানো)
+### সাইট বিল্ডার মোড (পুরানো) {#site-builder-mode-legacy}
 
 সাইট বিল্ডার মোড ছিল নিচের কাজগুলোর জন্য একটি উইজার্ড-ভিত্তিক ইন্টারফেস:
 
@@ -18,7 +18,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - থিম নির্বাচন করা
 - প্রাথমিক কন্টেন্ট সেটআপ করা
 
-### এর বদলে কী এসেছে?
+### এর বদলে কী এসেছে? {#what-replaced-it}
 
 এখন **Setup Assistant agent** সাইট বিল্ডারের সব কাজ নিচের উপায়ে পরিচালনা করে:
 
@@ -27,15 +27,15 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - Theme Builder অনবোর্ডিংয়ের সাথে ইন্টিগ্রেশন
 - ভবিষ্যতের সেশনের জন্য স্থায়ী site_brief মেমরি
 
-## আপনি যদি সাইট বিল্ডার মোড ব্যবহার করতেন
+## আপনি যদি সাইট বিল্ডার মোড ব্যবহার করতেন {#if-you-were-using-site-builder-mode}
 
-### আপনার সাইটগুলো নিরাপদ
+### আপনার সাইটগুলো নিরাপদ {#your-sites-are-safe}
 
 - Site Builder মোডে তৈরি করা বিদ্যমান সাইটগুলো কাজ করতে থাকবে
 - কোনো ডেটা লস বা সাইটের কোনো সমস্যা হবে না
 - আপনি স্বাভাবিকভাবে আপনার সাইটগুলো পরিচালনা করতে পারবেন
 
-### Setup Assistant Agent এর দিকে যান
+### Setup Assistant Agent এর দিকে যান {#migrate-to-setup-assistant-agent}
 
 নতুন সাইট সেটআপ বা থিম পরিবর্তনের জন্য, Setup Assistant agent ব্যবহার করুন:
 
@@ -51,7 +51,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 
 Setup Assistant agent একই কাজ আরও বেশি নমনীয়তার সাথে করে দেবে।
 
-## তুলনা: Site Builder বনাম Setup Assistant
+## তুলনা: Site Builder বনাম Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | বৈশিষ্ট্য | Site Builder (সরিয়ে ফেলা হয়েছে) | Setup Assistant (নতুন) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 | ভবিষ্যতের সেশন | আবার সেটআপ করতে হয় | সংরক্ষিত site_brief ব্যবহার করুন |
 | নমনীয়তা | স্থির কাজের ধারা | অভিযোজিত কথোপকথন |
 
-## Setup Assistant Agent এর দিকে মাইগ্রেট করা
+## Setup Assistant Agent এর দিকে মাইগ্রেট করা {#migrating-to-setup-assistant-agent}
 
-### নতুন সাইটের জন্য
+### নতুন সাইটের জন্য {#for-new-sites}
 
 سایت ساز حالت کا استعمال نہ کریں:
 
@@ -76,7 +76,7 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
    - تھیم جنریشن (Theme generation)
    - ابتدائی ترتیب (Initial configuration)
 
-### موجودہ سائٹس کے لیے
+### موجودہ سائٹس کے لیے {#for-existing-sites}
 
 اگر آپ کے پاس سائٹ بلڈر موڈ سے کوئی موجودہ سائٹ ہے:
 
@@ -85,7 +85,7 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 ۳. سیٹ اپ اسسٹنٹ ایجنٹ آپ کو ایک نیا تھیم بنانے میں مدد کرے گا
 ۴. آپ کی سائٹ کا ڈیٹا تبدیل نہیں ہوگا
 
-### تھیم تبدیلیوں کے لیے
+### تھیم تبدیلیوں کے لیے {#for-theme-changes}
 
 سائٹ بلڈر موڈ کے تھیم انتخاب کے بجائے:
 
@@ -95,9 +95,9 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
    - ایک کسٹم تھیم تیار کرے گا
    - اسے آپ کی سائٹ پر فعال (Activate) کر دے گا
 
-## اہم فرق
+## اہم فرق {#key-differences}
 
-### سائٹ بلڈر موڈ
+### سائٹ بلڈر موڈ {#site-builder-mode}
 
 ```
 ۱. ٹیمپلیٹ کا انتخاب کریں
@@ -106,7 +106,7 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 ۴. ہو گیا
 ```
 
-### سیٹ اپ اسسٹنٹ ایجنٹ
+### سیٹ اپ اسسٹنٹ ایجنٹ {#setup-assistant-agent}
 
 ```
 ۱. اپنی سائٹ کے مقصد کی وضاحت کریں
@@ -117,42 +117,42 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 ۶. مستقبل کے سیشنز کے لیے سائٹ بریف محفوظ کیا جائے گا
 ```
 
-## سیٹ اپ اسسٹنٹ ایجنٹ کے فوائد
+## سیٹ اپ اسسٹنٹ ایجنٹ کے فوائد {#benefits-of-setup-assistant-agent}
 
-### زیادہ لچکدار (More Flexible)
+### زیادہ لچکدار (More Flexible) {#more-flexible}
 
 - اپنی سائٹ کی وضاحت قدرتی زبان میں کریں
 - کسٹم سفارشات حاصل کریں
 - آپ کی مخصوص ضروریات کے مطابق ڈھل جائیں
 
-### بہتر کسٹمائزیشن (Better Customization)
+### بہتر کسٹمائزیشن (Better Customization) {#better-customization}
 
 - کسٹم تھیم جنریشن
 - ڈیزائن سسٹم کے فیصلے
 - مستقل ڈیزائن ٹوکنز (Persistent design tokens)
 
-### مستقل یادداشت (Persistent Memory)
+### مستقل یادداشت (Persistent Memory) {#persistent-memory}
 
 - آپ کا `site_brief` محفوظ رہتا ہے
 - مستقبل کے ایجنٹ آپ کی سائٹ کو سمجھ جاتے ہیں
 - سیٹ اپ کی معلومات دہرانے کی ضرورت نہیں پڑتی
 
-### مربوط ورک فلو (Integrated Workflow)
+### مربوط ورک فلو (Integrated Workflow) {#integrated-workflow}
 
 - تھیم بلڈر آن بورڈنگ
 - ڈیزائن سسٹم جمالیات کا ہنر (Design System Aesthetics skill)
 - ویزیبلٹی کنٹرولز کی صلاحیت
 - سب چیزیں بغیر کسی رکاوٹ کے ایک ساتھ کام کرتی ہیں
 
-## مسائل حل کرنا (Troubleshooting)
+## مسائل حل کرنا (Troubleshooting) {#troubleshooting}
 
-### مجھے سائٹ بلڈر موڈ نہیں مل رہا
+### مجھے سائٹ بلڈر موڈ نہیں مل رہا {#i-cant-find-site-builder-mode}
 
 سائٹ بلڈر موڈ ہٹا دیا گیا ہے۔ اس کے بجائے سیٹ اپ اسسٹنٹ ایجنٹ کا استعمال کریں:
 
 "زه ورኩڵێکی نوێ دامەزراوەم"
 
-### من دایمەک لە Site Builderەوە دەبێتەوە
+### من دایمەک لە Site Builderەوە دەبێتەوە {#i-want-to-recreate-a-site-from-site-builder}
 
 دەتوانیت بە ئامۆژگاری Setup Assistant agent ئەوەی دروستکردنی سایتەکەدا بیکەیت:
 
@@ -161,7 +161,7 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 3. Agent یەکەم فۆرمێک دروست دەکات کە هاوشێوەی سایتەکەت دەبێت
 4. `site_brief` یەکەت بۆ بیرکردنەوە لە داهاتوودا هەڵدەگرێت
 
-### سایتەکە بەکارخستنی Site Builder کار ناکات
+### سایتەکە بەکارخستنی Site Builder کار ناکات {#my-existing-site-builder-site-isnt-working}
 
 سایتەکان کە پێشتر بە Mode ی Site Builder دروستکراون بەردەوام دەبن کار بکەن. ئەگەر کێشەیەک هەبوو:
 
@@ -170,7 +170,7 @@ Setup Assistant agent একই কাজ আরও বেশি নমনীয
 3. Error logی WordPress (ڕێکخستنی هەڵەی وۆردپرێس) لێکۆڵ بکە.
 4. ئەگەر کێشەکە بەردەوام بوو، پەیوەندی بە پشتیوانی داواکاری بکە.
 
-### ئایا دەتوانم Template (نموونەکانی پێشوو) ی Site Builder بەکاربهێنم؟
+### ئایا دەتوانم Template (نموونەکانی پێشوو) ی Site Builder بەکاربهێنم؟ {#can-i-still-use-my-old-site-builder-templates}
 
 Template (نموونەکانی پێشوو) ی Site Builder زیاتر نییە. بەڵام:
 
@@ -178,14 +178,14 @@ Template (نموونەکانی پێشوو) ی Site Builder زیاتر نییە. 
 - دەتوانیت سایتە هاوشێوەکان بە Setup Assistant agent دروست بکەیت
 - Setup Assistant agent کەرەستنێکی زیاتر بۆ تۆ دابین دەکات
 
-## هەنگاوەکانی دوای ئەمە (Next Steps)
+## هەنگاوەکانی دوای ئەمە (Next Steps) {#next-steps}
 
 1. **بۆ سایتە نوێیەکان**: بیکە Setup Assistant agent بەکار.
 2. **بۆ سایتەکان کە هەیان پێشوویت**: بە شێوەی خۆیان بەردەوام بەکاربهێنەرەوە.
 3. **بۆ گۆڕینی Theme (فۆرمەکە)**: داواکاری یارمەتی لە Setup Assistant agent بکە.
 4. **بۆ باشترکردنی دیزاین**: Skill ی Design System Aesthetics بەکاربهێنە.
 
-## بابەتەکانی پەیوەندیدار (Related Topics)
+## بابەتەکانی پەیوەندیدار (Related Topics) {#related-topics}
 
 - **Theme Builder Onboarding**: ڕێنمایی دامەزراوە بۆ Theme (فۆرمەکان) تایبەت
 - **Setup Assistant Agent**: دامەزراوەی سایتەکە بە یارمەتی Agent

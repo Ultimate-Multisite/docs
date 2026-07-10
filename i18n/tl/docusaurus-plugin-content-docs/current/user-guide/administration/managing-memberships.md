@@ -3,7 +3,7 @@ title: Pamamahala ng mga Miyembro
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Pamamahala ng Membership
+# Pamamahala ng Membership {#managing-memberships}
 
 Sa Ultimate Multisite, maaari mong pamahalaan ang mga membership at ma-access lahat ng subscription sa iyong network. Maaari mong suriin at i-edit ang mga detalye ng subscription tulad ng mga plano at produkto, bilang ng sites, halaga ng billing at dalas, kasaysayan ng bayad, at mga timestamp.
 

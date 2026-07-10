@@ -1,216 +1,274 @@
 ---
-title: REST-API-Übersicht
+title: REST API-Überblick
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-**REST‑API‑Dokumentation – Kunden‑ und Adress‑Service**
+# REST-API-Referenz {#rest-api-reference}
 
----
+## Basiskonfiguration {#base-configuration}
 
-## 1.  Basis‑URL
+**Basis-URL:** `{site_url}/wp-json/wu/v2/`
+**Authentifizierung:** API-Schlüssel & Secret (HTTP Basic Auth oder URL-Parameter)
 
-```
-https://api.example.com/v1
-```
+## Authentifizierung {#authentication}
 
-Alle Endpunkte sind relativ zu dieser Basis‑URL zu verstehen.
-
----
-
-## 2.  Authentifizierung
-
-Die API verwendet **OAuth 2.0**.  
-Für jede Anfrage muss ein gültiger Access‑Token im Header übergeben werden:
-
-```
-Authorization: Bearer <access_token>
+### API aktivieren {#enable-api}
+```php
+// Enable API in Ultimate Multisite settings or programmatically
+wu_save_setting('enable_api', true);
 ```
 
----
+### API-Zugangsdaten abrufen {#get-api-credentials}
+```php
+$api_key = wu_get_setting('api_key');
+$api_secret = wu_get_setting('api_secret');
+```
 
-## 3.  Fehler‑Antworten
+### Authentifizierungsmethoden {#authentication-methods}
 
-| HTTP‑Status | Code | Beschreibung |
-|-------------|------|--------------|
-| 400 | `bad_request` | Ungültige Parameter oder fehlende Pflichtfelder |
-| 401 | `unauthorized` | Kein oder abgelaufenes Token |
-| 403 | `forbidden` | Unzureichende Berechtigung |
-| 404 | `not_found` | Ressource nicht gefunden |
-| 500 | `internal_error` | Server‑seitiger Fehler |
+**HTTP Basic Auth (empfohlen):**
+```bash
+curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
+```
 
-Antwortkörper (JSON):
+**URL-Parameter:**
+```bash
+curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
+```
 
-```json
+## Kern-Endpunkte {#core-endpoints}
+
+### 1. Kunden-API {#1-customers-api}
+
+**Basisroute:** `/customers`
+
+**Alle Kunden abrufen**
+```http
+GET /wu/v2/customers
+```
+
+**Einzelnen Kunden abrufen**
+```http
+GET /wu/v2/customers/{id}
+```
+
+**Kunden erstellen**
+```http
+POST /wu/v2/customers
+Content-Type: application/json
+
 {
-  "error": {
-    "code": "bad_request",
-    "message": "Invalid request payload",
-    "details": [
-      {
-        "field": "email",
-        "issue": "missing"
-      }
-    ]
-  }
+    "user_id": 123,
+    "email_verification": "verified",
+    "type": "customer",
+    "has_trialed": false,
+    "vip": false
 }
 ```
 
----
+**Kunden aktualisieren**
+```http
+PUT /wu/v2/customers/{id}
+Content-Type: application/json
 
-## 4.  Kunden‑Endpunkte
-
-| Methode | Pfad | Zweck | Beispiel‑Request | Beispiel‑Response |
-|---------|------|-------|------------------|-------------------|
-| **GET** | `/customers` | Alle Kunden abrufen (mit Pagination) | `GET /customers?limit=20&page=2` | `200 OK` + JSON‑Array |
-| **GET** | `/customers/{id}` | Einzelnen Kunden abrufen | `GET /customers/123` | `200 OK` + JSON‑Objekt |
-| **POST** | `/customers` | Neuen Kunden anlegen | `POST /customers` + JSON‑Body | `201 Created` + JSON‑Objekt |
-| **PUT** | `/customers/{id}` | Kunden vollständig aktualisieren | `PUT /customers/123` + JSON‑Body | `200 OK` + JSON‑Objekt |
-| **PATCH** | `/customers/{id}` | Teilweise Aktualisierung | `PATCH /customers/123` + JSON‑Body | `200 OK` + JSON‑Objekt |
-| **DELETE** | `/customers/{id}` | Kunden löschen | `DELETE /customers/123` | `204 No Content` |
-
-### Beispiel‑Payload (Kunde)
-
-```json
 {
-  "first_name": "Max",
-  "last_name": "Mustermann",
-  "email": "max.mustermann@example.com",
-  "phone": "+49 123 4567890",
-  "address_id": 42
+    "vip": true,
+    "extra_information": "VIP customer notes"
 }
 ```
 
-### Beispiel‑Response (Kunde)
+**Kunden löschen**
+```http
+DELETE /wu/v2/customers/{id}
+```
 
-```json
+### 2. Websites-API {#2-sites-api}
+
+**Basisroute:** `/sites`
+
+**Website erstellen**
+```http
+POST /wu/v2/sites
+Content-Type: application/json
+
 {
-  "id": 123,
-  "first_name": "Max",
-  "last_name": "Mustermann",
-  "email": "max.mustermann@example.com",
-  "phone": "+49 123 4567890",
-  "address_id": 42,
-  "created_at": "2024-01-01T12:34:56Z",
-  "updated_at": "2024-01-01T12:34:56Z"
+    "customer_id": 5,
+    "membership_id": 10,
+    "domain": "example.com",
+    "path": "/",
+    "title": "My New Site",
+    "template_id": 1,
+    "type": "customer_owned"
 }
 ```
 
----
+### 3. Mitgliedschaften-API {#3-memberships-api}
 
-## 5.  Adress‑Endpunkte
+**Basisroute:** `/memberships`
 
-| Methode | Pfad | Zweck | Beispiel‑Request | Beispiel‑Response |
-|---------|------|-------|------------------|-------------------|
-| **GET** | `/addresses` | Alle Adressen abrufen | `GET /addresses?limit=20&page=1` | `200 OK` + JSON‑Array |
-| **GET** | `/addresses/{id}` | Einzelne Adresse abrufen | `GET /addresses/42` | `200 OK` + JSON‑Objekt |
-| **POST** | `/addresses` | Neue Adresse anlegen | `POST /addresses` + JSON‑Body | `201 Created` + JSON‑Objekt |
-| **PUT** | `/addresses/{id}` | Adresse vollständig aktualisieren | `PUT /addresses/42` + JSON‑Body | `200 OK` + JSON‑Objekt |
-| **PATCH** | `/addresses/{id}` | Teilweise Aktualisierung | `PATCH /addresses/42` + JSON‑Body | `200 OK` + JSON‑Objekt |
-| **DELETE** | `/addresses/{id}` | Adresse löschen | `DELETE /addresses/42` | `204 No Content` |
+**Mitgliedschaft erstellen**
+```http
+POST /wu/v2/memberships
+Content-Type: application/json
 
-### Beispiel‑Payload (Adresse)
-
-```json
 {
-  "street": "Musterstraße 1",
-  "city": "Berlin",
-  "postal_code": "10115",
-  "country": "DE"
+    "customer_id": 5,
+    "plan_id": 3,
+    "status": "active",
+    "gateway": "stripe",
+    "gateway_subscription_id": "sub_1234567890",
+    "auto_renew": true
 }
 ```
 
-### Beispiel‑Response (Adresse)
+### 4. Produkte-API {#4-products-api}
 
-```json
+**Basisroute:** `/products`
+
+**Alle Produkte abrufen**
+```http
+GET /wu/v2/products
+```
+
+### 5. Zahlungen-API {#5-payments-api}
+
+**Basisroute:** `/payments`
+
+**Zahlung erstellen**
+```http
+POST /wu/v2/payments
+Content-Type: application/json
+
 {
-  "id": 42,
-  "street": "Musterstraße 1",
-  "city": "Berlin",
-  "postal_code": "10115",
-  "country": "DE",
-  "created_at": "2024-01-01T12:34:56Z",
-  "updated_at": "2024-01-01T12:34:56Z"
+    "customer_id": 5,
+    "membership_id": 10,
+    "status": "completed",
+    "gateway": "stripe",
+    "gateway_payment_id": "pi_1234567890",
+    "total": 29.99,
+    "currency": "USD"
 }
 ```
 
----
+### 6. Domains-API {#6-domains-api}
 
-## 6.  Pagination
+**Basisroute:** `/domains`
 
-Alle Listen‑Endpunkte unterstützen die Parameter `limit` (Anzahl pro Seite) und `page` (Seitennummer).  
-Antworten enthalten zusätzlich ein `meta`‑Objekt:
+**Domain zuordnen**
+```http
+POST /wu/v2/domains
+Content-Type: application/json
 
-```json
 {
-  "data": [ ... ],
-  "meta": {
-    "total": 125,
-    "limit": 20,
-    "page": 2,
-    "pages": 7
-  }
+    "domain": "custom-domain.com",
+    "customer_id": 5,
+    "primary_domain": 1,
+    "stage": "domain-mapping"
 }
 ```
 
----
+## Registrierungs-Endpunkt {#registration-endpoint}
 
-## 7.  Filter‑ und Sortier‑Parameter
+Der `/register`-Endpunkt bietet einen vollständigen Checkout-/Registrierungsablauf:
 
-| Parameter | Typ | Beschreibung |
-|-----------|-----|--------------|
-| `search` | string | Freitextsuche (Name, Email, etc.) |
-| `sort_by` | string | Feld, nach dem sortiert werden soll (z. B. `last_name`) |
-| `sort_order` | string | `asc` oder `desc` (Standard: `asc`) |
-| `created_after` | ISO‑8601‑Datum | Nur Kunden/Adressen ab diesem Datum |
-| `created_before` | ISO‑8601‑Datum | Nur Kunden/Adressen bis zu diesem Datum |
+```http
+POST /wu/v2/register
+Content-Type: application/json
 
-Beispiel: `GET /customers?search=Max&sort_by=last_name&sort_order=desc`
+{
+    "customer": {
+        "username": "newuser",
+        "password": "securepass123",
+        "email": "user@example.com"
+    },
+    "products": ["basic-plan"],
+    "duration": 1,
+    "duration_unit": "month",
+    "auto_renew": true,
+    "site": {
+        "site_url": "mynewsite",
+        "site_title": "My New Site",
+        "template_id": 1
+    },
+    "payment": {
+        "status": "completed"
+    },
+    "membership": {
+        "status": "active"
+    }
+}
+```
 
----
+**Antwort:**
+```json
+{
+    "customer": { ... },
+    "membership": { ... },
+    "payment": { ... },
+    "site": { "id": 123 }
+}
+```
 
-## 8.  Beispiel‑Workflow
+## Sovereign-Tenant-Endpunkte {#sovereign-tenant-endpoints}
 
-1. **Kundenliste abrufen**  
-   `GET https://api.example.com/v1/customers?limit=10&page=1`
+Ultimate Multisite: Multi-Tenancy 1.2.0 fügt souveräne Tenant-REST-Abdeckung für Integrationen hinzu, die isolierte Tenants bereitstellen, prüfen oder verifizieren.
 
-2. **Neuen Kunden anlegen**  
-   ```http
-   POST https://api.example.com/v1/customers
-   Content-Type: application/json
-   Authorization: Bearer <token>
+Die genaue Anfrage-Nutzlast hängt von der aktivierten Host-Fähigkeit ab, aber Integrationen sollten diese Endpunktgruppen erwarten:
 
-   {
-     "first_name": "Anna",
-     "last_name": "Schmidt",
-     "email": "anna.schmidt@example.com",
-     "phone": "+49 987 6543210",
-     "address_id": 56
-   }
-   ```
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
 
-3. **Adresse aktualisieren**  
-   ```http
-   PATCH https://api.example.com/v1/addresses/56
-   Content-Type: application/json
-   Authorization: Bearer <token>
+Verwende den Bootstrap-Endpunkt, um Tenant-Registry, Datenbank, Dateisystem und Routing-Zustand vorzubereiten. Verwende die Migrationsstatus- und Verifizierungs-Endpunkte, bevor du Produktions-Traffic umschaltest. Verwende den Lösch-Endpunkt für den souveränen Abbau, damit Datenbank-Zugangsdaten über den Add-on-Bereinigungsablauf entfernt werden.
 
-   {
-     "city": "Hamburg"
-   }
-   ```
+Typische Migrationsstatus-Antworten umfassen:
 
-4. **Kunden löschen**  
-   `DELETE https://api.example.com/v1/customers/123`
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
 
----
+Behandle `ready: false` als Blocker vor dem Launch. Prüfe die Verifizierungsdetails, behebe das Datenbank-Host-Binding, die Queue, die Benutzerbereitstellung oder das Routing-Problem und versuche die Verifizierung anschließend erneut.
 
-## 9.  Rate‑Limiting
+## Fehlerantworten {#error-responses}
 
-- **Anzahl**: 1000 Anfragen pro Stunde pro Token
-- **Header**: `X-RateLimit-Remaining`, `X-RateLimit-Reset`
+```json
+{
+    "code": "wu_rest_invalid_parameter",
+    "message": "Invalid parameter value",
+    "data": {
+        "status": 400,
+        "params": {
+            "email": "Invalid email format"
+        }
+    }
+}
+```
 
----
+## Paginierung und Filterung {#pagination-and-filtering}
 
-## 10.  Kontakt
+**Abfrageparameter:**
+```http
+GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
+```
 
-Bei Fragen oder Problemen wenden Sie sich bitte an den Support unter `support@example.com`.
+Häufige Parameter:
+- `per_page` - Elemente pro Seite (Standard: 20, max.: 100)
+- `page` - Seitennummer
+- `search` - Suchbegriff
+- `orderby` - Sortierfeld
+- `order` - Sortierrichtung (asc/desc)
+- `status` - Nach Status filtern
+- `date_created` - Nach Datumsbereich filtern

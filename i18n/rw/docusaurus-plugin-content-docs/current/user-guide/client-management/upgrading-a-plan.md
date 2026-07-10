@@ -3,7 +3,7 @@ title: Gukoresha uburyo bwo gukoresha impamvu
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Kumenya Icyemezo (v2)
+# Kumenya Icyemezo (v2) {#upgrading-a-plan-v2}
 
 _**Icyemezo: Inyandiko irereye ku Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ Nyuma yuko checkout yishobye, ibintu by'umutera (products) by'ibyo bishobye byiz
 
 ##
 
-## Uburyo bwo gukora Upgrade na Downgrade
+## Uburyo bwo gukora Upgrade na Downgrade {#upgrade-and-downgrade-paths}
 
 Ku gihe cy'ubwujisoro w'ibyo byizera, uza kubona tab ya **Up & Downgrades** kuri buri mutera. Icyo cyo mbere ku tab ni ikoranabuhinduzi cyo mu gihe cy'ubwujisoro (Plan Group).
 

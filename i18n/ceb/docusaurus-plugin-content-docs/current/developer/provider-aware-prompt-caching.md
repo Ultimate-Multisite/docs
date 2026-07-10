@@ -3,11 +3,11 @@ title: Pagtipig sa Prompt nga Nakaalam sa Provider
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Pag-save sa Prompt Base sa Provider
+# Pag-save sa Prompt Base sa Provider {#provider-aware-prompt-caching}
 
 Ang Superdav AI Agent v1.12.0 nagpaila og **provider-aware prompt caching**, nga makapahimo og pag-optimize sa gasto sa API ug latency pinaagi sa pag-cache sa mga prompts gikan sa lainlaing LLM providers. Ang matag provider adunay lahi kaayo nga mekanismo ug configuration sa caching.
 
-## Overview
+## Overview {#overview}
 
 Ang prompt caching nagtugot kanimo sa:
 
@@ -23,11 +23,11 @@ Lahi ang paagi sa pagpatuman og caching sa lainlaing providers:
 - **OpenRouter**: Caching nga espesipiko sa provider
 - **Vertex Anthropic**: Prompt caching uban ang cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Naghatag ang Google Gemini og klaro nga pagdumala sa cache pinaagi sa `cachedContents` API.
 
-### Configuration
+### Configuration {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Paghimo og Na-cache nga Prompt
+### Paghimo og Na-cache nga Prompt {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returns: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Paggamit sa Na-cache nga Prompt
+### Paggamit sa Na-cache nga Prompt {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache Lifecycle
+### Cache Lifecycle {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Best Practices para sa Gemini
+### Best Practices para sa Gemini {#best-practices-for-gemini}
 
 - **I-set ang saktong TTL**: Balanseha ang pagtipig og gasto batok sa ka-karaan (staleness) sa cache.
 - **I-cache ang system prompts**: Gamita pag-usab ang parehas nga system prompt sa tanang requests.
 - **Monitor ang paggamit sa cache**: Bantayi kung unsang mga cache ang kasagaran gigamit.
 - **Limpyohan ang expired caches**: Regular kining i-delete ang mga cache nga wala na magamit.
 
-## Azure OpenAI: Prompt Caching
+## Azure OpenAI: Prompt Caching {#azure-openai-prompt-caching}
 
 Gisuportahan sa Azure OpenAI ang prompt caching uban ang automatic TTL management.
 
-### Configuration
+### Configuration {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Pagpahaktol sa Caching
+### Pagpahaktol sa Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache Headers
+### Cache Headers {#cache-headers}
 
 Naggamit ang Azure OpenAI og HTTP headers para sa cache control:
 
@@ -152,7 +152,7 @@ Mga suportado nga values:
 - `no_cache`: Ayaw i-cache kining request.
 - `no_store`: Ayaw i-cache ug ayaw usab kini gamiton pag-usab.
 
-### Pagmonitor sa Cache Usage
+### Pagmonitor sa Cache Usage {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Best Practices para sa Azure OpenAI
+### Best Practices para sa Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Gamit og consistent nga prompts**: Ang parehas nga prompts makabenepisyo gikan sa caching.
 - **I-set ang rasonable nga TTL**: Balanseha ang gasto batok sa pagka-fresh (freshness).
 - **Monitor ang cache metrics**: Bantayi ang paghimo ug paggamit sa cache.
 - **Batch og susama nga requests**: Igrupo ang mga request aron ma-maximize ang cache hits.
 
-## OpenRouter: Provider-Specific Caching
+## OpenRouter: Provider-Specific Caching {#openrouter-provider-specific-caching}
 
 Gisuportahan sa OpenRouter ang caching pinaagi sa underlying providers (OpenAI, Anthropic, etc.).
 
-### Configuration
+### Configuration {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Paggamit sa OpenRouter Caching
+### Paggamit sa OpenRouter Caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Provider-Specific Options
+### Provider-Specific Options {#provider-specific-options}
 
 Lahi ang mekanismo sa caching sa lainlaing providers:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Best Practices para sa OpenRouter
+### Best Practices para sa OpenRouter {#best-practices-for-openrouter}
 
 - **Kahibalo sa caching sa provider**: Lahi ang mekanismo sa matag provider.
 - **Test sa behavior sa caching**: Siguroha nga naglihok og maayo ang caching uban sa imong napili nga provider.
 - **Monitor ang gasto**: Bantayi ang pagtipig gikan sa caching.
 - **Gamit og consistent models**: Ang pagbalhin sa modelo makapabagsak sa cache hits.
 
-## Vertex Anthropic: Prompt Caching with Cache Control
+## Vertex Anthropic: Prompt Caching with Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Gisuportahan sa Vertex Anthropic (Google Cloud) ang prompt caching uban ang klaro nga cache control.
 
-### Configuration
+### Configuration {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Paggamit sa Vertex Anthropic Caching
+### Paggamit sa Vertex Anthropic Caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Control Types
+### Cache Control Types {#cache-control-types}
 
 - **ephemeral**: I-cache sulod sa panahon sa request (default).
 - **persistent**: I-cache sa daghang requests (kon gisuportahan).
 
-### Pagmonitor sa Cache Usage
+### Pagmonitor sa Cache Usage {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Best Practices para sa Vertex Anthropic
+### Best Practices para sa Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Gamit og ephemeral caching**: Maayo kini alang sa single-session caching.
 - **I-set ang max_tokens nga saktong paagi**: Balanseha ang gidak-on sa cache batok sa gasto.
 - **Monitor ang cache metrics**: Bantayi ang kaepektibo sa cache.
 - **Test uban sa imong workload**: Siguroha nga makabenepisyo ang caching sa imong kasamtangang gamit.
 
-## Cross-Provider Caching Strategy
+## Cross-Provider Caching Strategy {#cross-provider-caching-strategy}
 
-### Unified Configuration
+### Unified Configuration {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Provider Detection
+### Provider Detection {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Use provider-specific caching configuration
 ```
 
-### Fallback Strategy
+### Fallback Strategy {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Cost Optimization
+## Cost Optimization {#cost-optimization}
 
-### Calculate Savings
+### Calculate Savings {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Optimization Tips
+### Optimization Tips {#optimization-tips}
 
 - **I-cache ang dagkong system prompts**: Kini ang pinakadako nga makatipig og gasto.
 - **Gamit pag-usab sa context**: I-cache ang mga context document nga kasagaran gigamit.
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Monitor ang kaepektibo sa cache**: Bantayi ang aktwal nga makatipig nga kwarta.
 - **I-adjust ang TTL**: Balanseha ang gasto batok sa pagka-freshness.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Cache not being used (Wala gigamit ang Cache)
+### Cache not being used (Wala gigamit ang Cache) {#cache-not-being-used}
 
 - Siguroha nga naka-enable ang caching sa configuration.
 - Susihon nga parehas gyud ang mga prompts (kinahanglan og exact match ang caching).
 - I-verify nga wala pa ka-expire ang cache.
 - Susihon ang limitasyon sa cache nga espesipiko sa provider.
 
-### Cache creation failing (Nawala ang paghimo sa Cache)
+### Cache creation failing (Nawala ang paghimo sa Cache) {#cache-creation-failing}
 
 - Siguroha nga anaa pa sa provider limits ang gidak-on sa cache.
 - Susihon nga husto ang syntax sa cache control.
 - Siguroha nga gisuportahan sa provider ang caching para sa imong model.
 - Basaha ang dokumentasyon sa provider bahin sa mga limitasyon.
 
-### Unexpected costs (Dili ma-expect nga gasto)
+### Unexpected costs (Dili ma-expect nga gasto) {#unexpected-costs}
 
 - Monitor ang paghimo ug pagbasa sa cache tokens.
 - I-verify nga gigamit gyud ang cache.
 - Susihon kung aduna bay cache misses tungod sa kalainan sa prompts.
 - Konsideraha ang pag-adjust sa TTL o sa caching strategy.
 
-## Provider Comparison
+## Provider Comparison {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Cost reduction | 90% | 90% | Provider-dependent | 90% |
 | Monitoring | Detailed | Via metrics | Provider-dependent | Via usage |
 
-## Next Steps
+## Next Steps {#next-steps}
 
 1. **Pilia ang imong provider**: Pagpili base sa imong panginahanglan.
 2. **I-configure ang caching**: I-set up ang cache nga espesipiko sa provider.

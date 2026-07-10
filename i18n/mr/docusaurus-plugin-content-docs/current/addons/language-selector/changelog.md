@@ -3,7 +3,7 @@ title: भाषा निवडक बदलांचा इतिहास
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# भाषा निवडक बदलांचा इतिहास (Language Selector Changelog)
+# भाषा निवडक बदलांचा इतिहास (Language Selector Changelog) {#language-selector-changelog}
 
 Version: 1.1.3 - रिलीझ केल्याची तारीख: 2026-05-05
 * दुरुस्ती: इनपुट व्हेरिएबल्स आता sanitize केले जातात आणि थर्ड-पार्टी प्लगइन्ससोबत संघर्ष टाळण्यासाठी कस्टम हुक नावांना प्रीफिक्स जोडले.

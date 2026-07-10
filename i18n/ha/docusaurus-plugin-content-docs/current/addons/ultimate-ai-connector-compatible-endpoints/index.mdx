@@ -1,0 +1,111 @@
+---
+title: Mai Haɗa AI na Ultimate don Endpoints Masu Jituwa
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector don Wuraren Ƙarshe Masu Jituwa {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector don Wuraren Ƙarshe Masu Jituwa yana haɗa API na masu samar da AI masu jituwa da OpenAI da hanyar sadarwar WordPress multisite ɗinka. Saita masu samar da AI da yawa — kowanne da nasa URL na wurin ƙarshe, mabudin API, da samfurin tsoho — sannan a tura buƙatu tare da komawa ta atomatik idan mai samarwa bai samu ba.
+
+## Muhimman Fasali {#key-features}
+
+- **Tallafin masu samarwa da yawa**: Ƙara katunan masu samar da AI da yawa, kowanne da nasa URL na wurin ƙarshe, mabudin API, da samfurin tsoho
+- **Ja-don-sake-tsarawa**: Tsara masu samarwa bisa fifiko ta amfani da abin riƙewa a kan kowanne kati; buƙatu suna amfani da masu samarwa bisa tsari
+- **Tura buƙatu ta komawa ta atomatik**: Idan babban mai samarwa bai samu ba, buƙatu suna komawa ta atomatik zuwa mai samarwa na gaba da aka saita
+- **Saitin kowane mai samarwa daban**: Ana saita kowane mai samarwa da kansa tare da nasa shaidun shiga da zaɓin samfur
+- **UI na saituna bisa kati**: An gina shi a kan tsayayyun abubuwan Card na WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Faɗaɗawa ta atomatik lokacin ƙarawa**: Sabbin katunan masu samarwa suna faɗaɗa ta atomatik don ka iya cike bayanai nan take
+- **Karyar cache na script**: Ana karya cache na scripts na mai samarwa lokacin sabunta plugin don tabbatar da cewa an loda sabon sigar
+
+## Bukatu {#requirements}
+
+- WordPress 5.3 ko sama da haka
+- PHP 7.4 ko sama da haka
+- Ultimate Multisite plugin (mai aiki)
+- Wurin ƙarshe na API mai jituwa da OpenAI (wanda aka karɓi bakuncinsa da kanka ko na ɓangare na uku)
+
+## Shigarwa {#installation}
+
+1. Loda fayilolin addon zuwa kundin `/wp-content/plugins/` ɗinka
+2. Kunna plugin ta cikin menu na 'Plugins' a WordPress
+3. Je zuwa **Ultimate Multisite → AI Connector** don saita addon
+
+## Saiti {#configuration}
+
+### Saitin Masu Samarwa da Yawa {#multi-provider-setup}
+
+Allon saitin yana amfani da shimfiɗa bisa kati inda kowanne kati yake wakiltar mai samar da AI guda ɗaya. Za ka iya ƙara masu samarwa gwargwadon bukata.
+
+#### Ƙara Mai Samarwa {#adding-a-provider}
+
+1. Je zuwa **Ultimate Multisite → AI Connector** a cikin gudanarwar hanyar sadarwa
+2. Danna **Ƙara Mai Samarwa**
+3. Sabon katin mai samarwa zai bayyana kuma ya faɗaɗa ta atomatik
+4. Cika bayanan mai samarwa:
+   - **Sunan Mai Samarwa** — lakabi don gane wannan mai samarwa (misali "OpenAI", "Mistral", "Local Ollama")
+   - **URL na Wurin Ƙarshe** — tushen URL na API mai jituwa da OpenAI (misali `https://api.openai.com/v1`)
+   - **Mabudin API** — mabudin API ɗinka na wannan mai samarwa
+   - **Samfurin Tsoho** — alamar samfurin da za a yi amfani da ita ta tsoho ga wannan mai samarwa (misali `gpt-4o`, `mistral-small`)
+5. Danna **Ajiye Saituna**
+
+#### Cire Mai Samarwa {#removing-a-provider}
+
+Danna maɓallin **Cire** a kan kowanne katin mai samarwa don share shi. Ajiye saituna don aiwatar da canjin.
+
+#### Sake Tsara Masu Samarwa {#reordering-providers}
+
+Ja alamar riƙewa (⣿) a gefen hagu na kowanne katin mai samarwa don sake tsara shi. Tsarin yana ƙayyade fifikon komawa: ana aika buƙatu zuwa mai samarwa na farko sannan a koma zuwa masu samarwa na gaba idan buƙata ta gaza.
+
+### Tura Buƙatu ta Komawa {#fallback-routing}
+
+Lokacin da buƙata zuwa babban mai samarwa ta gaza — saboda ƙarewar lokaci, iyakar yawan buƙatu, ko katsewar sabis — connector zai sake gwadawa ta atomatik da mai samarwa na gaba a jerin. Wannan yana ci gaba a cikin jerin har sai wani mai samarwa ya yi nasara ko an gwada duk masu samarwa.
+
+| Yanayi | Hali |
+|----------|-----------|
+| Babban mai samarwa ya amsa | Ana biya buƙatar yadda aka saba |
+| Babban mai samarwa ya gaza | Ana sake gwada buƙatar da mai samarwa na gaba |
+| Duk masu samarwa sun gaza | Ana mayar da kuskure ga mai kira |
+
+Komawa ba ya bayyana ga plugin ko theme da ke kira — suna karɓar ko dai amsa mai nasara ko kuskuren ƙarshe, ba tare da la’akari da yawan masu samarwa da aka gwada ba.
+
+### Bayanin Saitin Mai Samarwa {#provider-configuration-reference}
+
+| Fili | Ana buƙata | Bayani |
+|-------|----------|-------------|
+| Sunan Mai Samarwa | Eh | Lakabin nunawa ga wannan mai samarwa |
+| URL na Wurin Ƙarshe | Eh | Tushen URL na API mai jituwa da OpenAI |
+| Mabudin API | Eh | Mabudin tabbatarwa ga wannan mai samarwa |
+| Samfurin Tsoho | Eh | Alamar samfurin da ake amfani da ita idan ba a bayyana samfur a cikin buƙatar ba |
+
+## Warware Matsaloli {#troubleshooting}
+
+### Ba a jera masu samarwa ba {#no-providers-are-listed}
+
+Idan jerin masu samarwa ya zama fanko bayan ajiyewa, tabbatar cewa:
+
+- Ka danna **Ajiye Saituna** bayan ƙara masu samarwa
+- Burauzarka bai hana shafin saituna yin ajiya ba (duba console na burauza don kurakuran JavaScript)
+- Plugin yana aiki kuma kana kan allon gudanarwar hanyar sadarwa
+
+### Buƙatu suna gazawa ga duk masu samarwa {#requests-are-failing-for-all-providers}
+
+- Tabbatar cewa URL na wurin ƙarshe na kowane mai samarwa yana iya kaiwa daga sabar ɗinka (ba kawai daga burauzarka ba)
+- Duba cewa kowane mabudin API yana da inganci kuma bai ƙare ba
+- Duba matsayin iyakar yawan buƙatu da rabon mai samarwa a cikin dashboard ɗinsu
+- Kunna rajistar gyaran WordPress (`WP_DEBUG_LOG`) don ɗaukar cikakkun saƙonnin kuskure daga connector
+
+### Ba a amfani da wani mai samarwa don komawa {#a-provider-is-not-being-used-for-fallback}
+
+Ja-don-sake-tsarawa yana canza tsarin komawa. Tabbatar cewa mai samarwar da kake sa ran ya karɓi buƙatun komawa yana a madaidaicin matsayi a cikin jerin kuma cewa URL na wurin ƙarshe da mabudin API nasa daidai ne.
+
+### Sabon katin mai samarwa ba ya faɗaɗa ta atomatik {#new-provider-card-does-not-expand-automatically}
+
+Faɗaɗawa ta atomatik na buƙatar JavaScript ya kasance a kunne a cikin burauzarka. Idan katin bai faɗaɗa lokacin dannawa ba, duba console na burauza don kurakurai. Abubuwan cikin katin koyaushe suna samuwa ta danna kan katin ko da faɗaɗawa ta atomatik ba ta faru ba.
+
+## Kundin Canje-canje {#changelog}
+
+Duba [Kundin Canje-canje](./changelog) don cikakken tarihin sigogi.

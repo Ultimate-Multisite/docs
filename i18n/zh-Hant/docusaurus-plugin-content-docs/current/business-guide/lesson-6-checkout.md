@@ -3,15 +3,15 @@ title: 第六課：註冊體驗
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# 第六課：註冊體驗
+# 第六課：註冊體驗 {#lesson-6-the-signup-experience}
 
 結帳流程是將興趣轉化為收入的關鍵環節。一個混亂或籠統的註冊流程會流失客戶。一個能說出客戶語言、讓他們感覺毫不費力的利基市場專屬流程，才能成功完成轉換。
 
-## 我們上次停在哪裡
+## 我們上次停在哪裡 {#where-we-left-off}
 
 FitSite 已經配置了模板和方案。現在，我們要建立註冊和結帳體驗，將健身工作室的擁有者轉變為付費客戶。
 
-## 了解註冊流程
+## 了解註冊流程 {#understanding-the-registration-flow}
 
 Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 FitSite 來說，我們需要的流程必須：
 
@@ -21,11 +21,11 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 
 請參閱 [The Registration Flow](/user-guide/configuration/the-registration-flow) 以了解完整的技術參考資料。
 
-## 設計 FitSite 結帳頁面
+## 設計 FitSite 結帳頁面 {#designing-the-fitsite-checkout}
 
 導航至 **Ultimate Multisite > Checkout Forms** 並建立一個新的表單。
 
-### 步驟 1：方案選擇
+### 步驟 1：方案選擇 {#step-1-plan-selection}
 
 健身工作室的擁有者首先看到的，應該是他們能理解的方案，而不是技術術語。
 
@@ -37,7 +37,7 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 「1 GB 儲存空間」對健身房老闆來說毫無意義。「您專業工作室網站所需的一切」則代表一切。請用客戶的語言來撰寫方案描述。
 :::
 
-### 步驟 2：模板選擇
+### 步驟 2：模板選擇 {#step-2-template-selection}
 
 客戶在選擇了方案之後，會挑選他們的起始模板。
 
@@ -45,7 +45,7 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 - 可用的模板會根據他們選擇的方案（在第 5 課配置）進行篩選
 - 每個模板都應該配有預覽圖片，展示一個與健身相關的設計
 
-### 步驟 3：帳戶建立
+### 步驟 3：帳戶建立 {#step-3-account-creation}
 
 保持這個步驟盡可能簡潔。只收集以下資訊：
 
@@ -55,27 +55,27 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 
 不要詢問您在註冊時不需要的資訊。每個額外的欄位都會降低轉換率。
 
-### 步驟 4：網站設定
+### 步驟 4：網站設定 {#step-4-site-setup}
 
 - **Site title**：預設填入步驟 3 輸入的工作室名稱
 - **Site URL**：根據工作室名稱自動生成（例如：`ironworks.fitsite.com`）
 
-### 步驟 5：付款
+### 步驟 5：付款 {#step-5-payment}
 
 - 新增 **Payment** 欄位
 - 配置您的支付閘道（建議使用 [Stripe](/user-guide/payment-gateways/stripe) 進行訂閱帳單）
 - 如果您在第 5 課創建了訂單加購品（Order Bumps），請在付款步驟前新增一個 **Order Bump** 欄位
 
-### 步驟 6：確認
+### 步驟 6：確認 {#step-6-confirmation}
 
 - 使用與健身相關的語言客製化確認訊息
 - 範例：「您的健身工作室網站正在建立中。幾秒後您將被重定向到您的新網站。」
 
-## 新增週期選擇開關
+## 新增週期選擇開關 {#adding-a-period-selection-toggle}
 
 如果您在方案中設定了價格變動（例如：月付 vs. 年付），請在結帳表單中新增一個 **Period Selection** 欄位，讓客戶可以在計費週期之間切換。請參閱 [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) 了解操作說明。
 
-## 配置付款
+## 配置付款 {#configuring-payment}
 
 如果您尚未設定支付閘道：
 
@@ -85,7 +85,7 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 
 請參閱 [Getting Paid](/user-guide/payment-gateways/getting-paid) 了解付款如何進入您的帳戶。
 
-## 測試流程
+## 測試流程 {#testing-the-flow}
 
 在繼續之前，請完成一次完整的測試註冊：
 
@@ -105,7 +105,7 @@ Ultimate Multisite 的結帳表單是完全可自訂的多步驟表單。對於 
 - [ ] 客戶是否能進入一個已運作的網站，且模板正確
 - [ ] 確認電子郵件是否使用了健身相關的語言
 
-## FitSite 網路目前建置的內容
+## FitSite 網路目前建置的內容 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## 本課建置的內容
+## 本課建置的內容 {#what-we-built-this-lesson}
 
 - **一個為健身工作室擁有者量身打造的多步驟結帳表單**
 - **整個註冊流程中貫穿的利基市場專屬語言**

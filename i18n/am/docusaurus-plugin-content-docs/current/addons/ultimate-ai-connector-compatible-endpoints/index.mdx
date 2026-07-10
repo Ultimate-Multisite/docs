@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# ለተጣጣሙ Endpoints የሚሆን Ultimate AI Connector
+# ለተጣጣሙ Endpoints የሚሆን Ultimate AI Connector {#ultimate-ai-connector-for-compatible-endpoints}
 
 የUltimate AI Connector for Compatible Endpoints፣ የOpenAI-compatible AI አቅራቢ APIዎችን ከWordPress multisite ኔትወርክዎ ጋር ያዋህዳል። በርካታ AI አቅራቢዎችን (Providers) — እያንዳንዳቸው የራሳቸው Endpoint URL፣ API key እና የቅጽበታዊ ሞዴል (default model) ያላቸው — በማዋቀር፣ አንድ አቅራቢ ባይሰራም በራስ-ሰር ወደ ሌላው የሚሄድበትን መንገድ (fallback) ይፈጥራል።
 
-## ቁልፍ ባህሪያት (Key Features)
+## ቁልፍ ባህሪያት (Key Features) {#key-features}
 
 - **በብዙ አቅራቢዎች ድጋፍ (Multi-provider support)**: እያንዳንዱ የራሱ Endpoint URL፣ API key እና የቅጽበታዊ ሞዴል ያለው በርካታ AI አቅራቢ ካርዶችን ይጨምሩ።
 - **በስጎንጎን የማደራጀት አቅም (Drag-to-reorder)**: አቅራቢዎችን በቅድሚያ የሚሰሩበት ቅደም ተከተል (priority) በየካርዱ ላይ ባለው የያዘበት አዝራር (grip handle) በመጠቀም ያደራጁ። ጥያቄዎች በአቅራቢዎች ቅደም ተከተል ይሄዳሉ።
@@ -21,26 +21,26 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **በማከል ጊዜ በራስ-ሰር ማስፋት (Auto-expand on add)**: አዲስ የአቅራቢ ካርድ ሲጨመር በራስ-ሰር ይከፈታል፣ ስለዚህ ዝርዝሮችን ወዲያውኑ መሙላት ይችላሉ።
 - **የስክሪፕት ካሽ መበላሸት (Script cache busting)**: የአቅራቢ ስክሪፕቶች በፕልጋይኑ ሲዘመነ በካሽ (cache) መበላሸት ይደረጋል፣ ይህም የቅርብ ጊዜውን ስሪት መጫንን ያረጋግጣል።
 
-## መስፈርቶች (Requirements)
+## መስፈርቶች (Requirements) {#requirements}
 
 - WordPress 5.3 ወይም ከዚያ በላይ
 - PHP 7.4 ወይም ከዚያ በላይ
 - Ultimate Multisite ፕልጋይን (በሥራ ላይ መሆን አለበት)
 - የOpenAI-compatible API endpoint (በራስ-ሰር የተስተናገደ ወይም የሶስተኛ ወገን)
 
-## መጫን (Installation)
+## መጫን (Installation) {#installation}
 
 1. የፕልጋይኑ ፋይሎችን ወደ `/wp-content/plugins/` ዳይሬክቶሪዎ ይጫኑ።
 2. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት ፕልጋይኑን ያንቁ።
 3. አድናጓልን (addon) ለማዋቀር ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
 
-## ቅንብር (Configuration)
+## ቅንብር (Configuration) {#configuration}
 
-### የብዙ አቅራቢዎች ዝግጅት (Multi-Provider Setup)
+### የብዙ አቅራቢዎች ዝግጅት (Multi-Provider Setup) {#multi-provider-setup}
 
 የቅንብር ስክሪኑ እያንዳንዱ ካርድ አንድ AI አቅራቢን የሚወክል የካርድ-ተኮር አቀማመጥን ይጠቀማል። የሚያስፈልጉት አቅራቢዎች ብዛት ሁሉ መጨመር ይችላሉ።
 
-#### አቅራቢን መጨመር (Adding a Provider)
+#### አቅራቢን መጨመር (Adding a Provider) {#adding-a-provider}
 
 1. በኔትወርክ አድሚን ውስጥ ወደ **Ultimate Multisite → AI Connector** ይሂዱ።
 2. **Add Provider** የሚለውን ይጫኑ።
@@ -52,15 +52,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
    - **Default Model** — ለዚህ አቅራቢ በቅጽበታዊ ሞዴል (model) ባይገለጽበት ጊዜ በነባሪነት ጥቅም ላይ የሚውለው ሞዴል መለያ (ለምሳሌ፡ `gpt-4o`, `mistral-small`)
 5. **Save Settings** የሚለውን ይጫኑ።
 
-#### አቅራቢን ማስወገድ (Removing a Provider)
+#### አቅራቢን ማስወገድ (Removing a Provider) {#removing-a-provider}
 
 አንድን የአቅራቢ ካርድ ላይ ያለውን **Remove** አዝራር በመጫን ማስወገድ ይችላሉ። ለውጡን ለማስኬድ ቅንብሮችን ያስቀምጡ።
 
-#### አቅራቢዎችን እንደገና ማደራጀት (Reordering Providers)
+#### አቅራቢዎችን እንደገና ማደራጀት (Reordering Providers) {#reordering-providers}
 
 የማንኛውንም የአቅራቢ ካርድ በግራ በኩል ያለውን የያዘበት አዶ (⣿) በመጎተት ቦታውን መቀየር ይችላሉ። ቅደም ተከተሉ የFallback ቅድሚያውን ይወስናል፡ ጥያቄዎች ወደ የመጀመሪያው አቅራቢ ይላካሉ፣ ጥያቄው ቢሳሳት ወደ ተከታይ አቅራቢዎች ይወርዳል።
 
-### የFallback መስመር (Fallback Routing)
+### የFallback መስመር (Fallback Routing) {#fallback-routing}
 
 ወደ ዋናው አቅራቢ የሚላከው ጥያቄ በጊዜ መብቃት (timeout)፣ በጥሪ ገደብ (rate limit) ወይም በአገልግሎት መቋረጥ ምክንያት ቢሳሳት፣ ኮንነክተሩ በራስ-ሰር በሚቀጥለው የአቅራቢዎች ዝርዝር ይሞክራል። ይህ ሂደት አቅራቢው እስኪሳካ ወይም ሁሉም አቅራቢዎች እስኪሞከሩ ድረስ ይቀጥላል።
 
@@ -72,7 +72,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 Fallback የሚደረገው ለጥሪ ሰጪው ፕልጋይን ወይም ቴም የሚታወቅ አይደለም — ምንም እንኳን ምን ያህል አቅራቢዎች ቢሞከሩ፣ ስኬታማ ምላሽ ወይም የመጨረሻ ስህተት ይቀበላሉ።
 
-### የአቅራቢ ቅንብር ማጣቀሻ (Provider Configuration Reference)
+### የአቅራቢ ቅንብር ማጣቀሻ (Provider Configuration Reference) {#provider-configuration-reference}
 
 | መስክ (Field) | አስፈላጊ ነው? (Required) | መግለጫ (Description) |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Fallback የሚደረገው ለጥሪ ሰጪው ፕልጋይን ወይም ቴም
 | API Key | አዎ (Yes) | ለዚህ አቅራቢ የማረጋገጫ ቁልፍ (Authentication key) |
 | Default Model | አዎ (Yes) | በጥያቄው ውስጥ ሞዴል ባይገለጽበት ጊዜ ጥቅም ላይ የሚውለው ሞዴል መለያ |
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### አቅራቢዎች አልተዘረዘሩም (No providers are listed)
+### አቅራቢዎች አልተዘረዘሩም (No providers are listed) {#no-providers-are-listed}
 
 አቅራቢዎች ዝርዝር ከተዘጋ በኋላ ባዶ ከሆነ፣ የሚከተሉትን ያረጋግጡ፦
 
@@ -91,21 +91,21 @@ Fallback የሚደረገው ለጥሪ ሰጪው ፕልጋይን ወይም ቴም
 - አሳሽዎ የቅንብር ገጹን እንዳይድን (save) ባልከለከሉበት መሆኑን ያረጋግጡ (በአሳሽ ኮንሶል ውስጥ የJavaScript ስህተቶችን ይፈትሹ)።
 - ፕልጋይኑ በሥራ ላይ መሆኑን እና በኔትወርክ አድሚን ስክሪን ላይ መሆናችሁን ያረጋግጡ።
 
-### ጥያቄዎች ለሁሉም አቅራቢዎች እየሳሳቱ ነው (Requests are failing for all providers)
+### ጥያቄዎች ለሁሉም አቅራቢዎች እየሳሳቱ ነው (Requests are failing for all providers) {#requests-are-failing-for-all-providers}
 
 - እያንዳንዱ የአቅራቢ Endpoint URL ከሰርቨርዎ ሊደረስበት የሚችል መሆኑን ያረጋግጡ (ከአሳሽዎ ብቻ ሳይሆን)።
 - እያንዳንዱ API key ትክክለኛ መሆኑን እና ጊዜው ባለማለቁ መሆኑን ያረጋግጡ።
 - የአቅራቢውን የጥሪ ገደብ (rate-limit) እና የክውታ (quota) ሁኔታ በዳሽቦርዱ ውስጥ ይገምግሙ።
 - የኮንነክተሩን ዝርዝር የስህተት መልዕክቶች ለመያዝ የWordPress debug logging (`WP_DEBUG_LOG`) ያንቁ።
 
-### አቅራቢ በአቅራቢነት (fallback) ጥቅም ላይ አይውልም (A provider is not being used for fallback)
+### አቅራቢ በአቅራቢነት (fallback) ጥቅም ላይ አይውልም (A provider is not being used for fallback) {#a-provider-is-not-being-used-for-fallback}
 
 በስጎንጎን ማደራጀት (Drag-to-reorder) የfallback ቅደም ተከተልን ይለውጣል። የfallback ጥያቄዎች እንደሚደርስበት የሚጠብቁት አቅራቢ በዝርዝሩ ውስጥ በትክክለኛው ቦታ ላይ መሆኑን እና የEndpoint URL እና API key-ው ትክክል መሆኑን ያረጋግጡ።
 
-### አዲስ የአቅራቢ ካርድ በራስ-ሰር አይከፈትም (New provider card does not expand automatically)
+### አዲስ የአቅራቢ ካርድ በራስ-ሰር አይከፈትም (New provider card does not expand automatically) {#new-provider-card-does-not-expand-automatically}
 
 በራስ-ሰር ማስፋት (Auto-expand) በአሳሽዎ ውስጥ JavaScript መብራት መሆኑን ይጠይቃል። ካርዱ በክሊክ ጊዜ ካልተከፈተ፣ በአሳሽ ኮንሶል ውስጥ ስህተቶችን ይፈትሹ። የካርዱ ይዘት በራስ-ሰር ማስፋት ባይከሰትም እንኳ ካርዱን በመጫን ሁልጊዜ ተደራሽ ነው።
 
-## የለውጥ ታሪክ (Changelog)
+## የለውጥ ታሪክ (Changelog) {#changelog}
 
 ሙሉ የቨርዥን ታሪክን ለማየት [Changelog](./changelog) ይመልከቱ።

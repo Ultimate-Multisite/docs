@@ -1,0 +1,197 @@
+---
+title: इमेलहरू
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# इमेलहरू {#emails}
+
+Ultimate Multisite: इमेलहरू एडअनले network मालिकहरूलाई sites र memberships सँगै ग्राहकका इमेल खाताहरू provision र व्यवस्थापन गर्न दिन्छ। संस्करण 1.1.0 ले ग्राहक-समक्ष इमेल खाता व्यवस्थापन, webmail single sign-on, CyberPanel forwarder समर्थन, र checkout-समय provisioning सुधारहरू थप्छ।
+
+## मुख्य विशेषताहरू {#key-features}
+
+* **ग्राहक इमेल खाता widget**: ग्राहकहरूले सक्रिय इमेल membership पाएपछि आफ्नो account पृष्ठबाट mailboxes सिर्जना र व्यवस्थापन गर्न सक्छन्।
+* **Webmail SSO र magic links**: प्रदायकले समर्थन गर्दा ग्राहकहरूले एक-क्लिक प्रमाणीकरणसँग account पृष्ठबाट सिधै webmail खोल्न सक्छन्।
+* **Password परिवर्तनहरू**: ग्राहकहरू र administrators ले इमेल व्यवस्थापन widget बाट mailbox passwords अद्यावधिक गर्न सक्छन्।
+* **Checkout entitlement provisioning**: Checkout ले इमेल membership सिर्जना गर्छ, त्यसलाई ग्राहकको site domain सँग लिंक गर्छ, र account-पृष्ठ mailbox tools उपलब्ध गराउँछ।
+* **CyberPanel forwarders**: CyberPanel-आधारित networks ले इमेल service flow को भागको रूपमा इमेल forwarders सिर्जना र व्यवस्थापन गर्न सक्छन्।
+* **Provider-aware settings**: Settings पृष्ठले providers लाई सक्रिय, configured integrations मा filter गर्छ ताकि administrators ले प्रयोग गर्न मिल्ने options मात्र देखून्।
+
+## आवश्यकताहरू {#requirements}
+
+* Ultimate Multisite 2.0.0 वा उच्च
+* WordPress Multisite installation
+* कम्तीमा एउटा configured इमेल provider integration
+* Mailboxes सिर्जना गर्न, passwords परिवर्तन गर्न, र समर्थित ठाउँमा webmail access links जारी गर्न अनुमति भएका provider API credentials
+
+## Installation {#installation}
+
+1. Plugin files लाई `/wp-content/plugins/ultimate-multisite-emails` मा upload गर्नुहोस्।
+2. WordPress network admin मा **Plugins** बाट addon लाई network activate गर्नुहोस्।
+3. **Ultimate Multisite** > **Settings** मा जानुहोस् र addon इमेल settings खोल्नुहोस्।
+4. ग्राहकहरूले प्रयोग गरून् भन्ने इमेल provider integrations enable गर्नुहोस्।
+5. Settings save गर्नुहोस्, त्यसपछि non-production ग्राहक वा staging site सँग account creation test गर्नुहोस्।
+
+## इमेल विक्रेता flow कसरी काम गर्छ {#how-the-email-seller-flow-works}
+
+इमेल बिक्रीका दुई अलग layers छन्:
+
+1. **Entitlement** — Ultimate Multisite इमेल product/membership जसले ग्राहकलाई specific site domain, provider, quota, र account limit का लागि इमेल प्रयोग गर्न अनुमति छ भनेर जनाउँछ।
+2. **Mailbox creation** — वास्तविक provider mailbox, जस्तै `info@example.com`, जुन ग्राहक वा network administrator ले local part र password छान्दा सिर्जना हुन्छ।
+
+Checkout को समयमा, addon ले **इमेल membership** सिर्जना वा activate गर्छ र त्यो membership मा ग्राहकको site domain र provider record गर्छ। यसले mailbox name वा password अनुमान गर्दैन। Purchase पूरा भएपछि र site/domain context उपलब्ध भएपछि, ग्राहकले account page खोल्न र आफूले चाहेका mailbox names सिर्जना गर्न सक्छन्।
+
+यसको अर्थ सामान्य ग्राहक flow यस्तो हुन्छ:
+
+1. ग्राहकले site plan किन्छ र checkout को समयमा इमेल product थप्छ।
+2. Ultimate Multisite ले site membership र secondary इमेल membership सिर्जना गर्छ।
+3. Emails addon ले इमेल membership लाई ग्राहकको site domain र provider सँग link गर्छ।
+4. ग्राहकले आफ्नो dashboard मा **Account** खोल्छ।
+5. त्यो सक्रिय इमेल membership का लागि **Email Accounts** panel देखिन्छ।
+6. ग्राहकले **Create Account** क्लिक गर्छ, `info` जस्तो local part प्रविष्ट गर्छ, password सेट गर्छ, र addon ले configured provider मा `info@their-domain.com` सिर्जना गर्छ।
+
+## इमेल product configure गर्नुहोस् {#configure-an-email-product}
+
+तपाईंले बेच्न वा निःशुल्क दिन चाहेको प्रत्येक इमेल package का लागि एउटा इमेल product सिर्जना गर्नुहोस्। यदि तपाईं product setup मा नयाँ हुनुहुन्छ भने, [आफ्नो पहिलो subscription product सिर्जना गर्दै](../../user-guide/configuration/creating-your-first-subscription-product) बाट सुरु गर्नुहोस् र त्यसपछि इमेल-विशेष settings का लागि यहाँ फर्कनुहोस्।
+
+1. **Network Admin > Ultimate Multisite > Products > Add Product** मा जानुहोस्।
+2. **Product Type** लाई **Email** मा सेट गर्नुहोस्।
+3. Pricing configure गर्नुहोस्। बेचिने plan का लागि paid recurring price प्रयोग गर्नुहोस्, वा यो complimentary इमेल plan हुनुपर्ने भए product लाई free/zero-priced मा सेट गर्नुहोस्।
+4. **Email Settings** section खोल्नुहोस्।
+5. Configured **Email Provider** चयन गर्नुहोस्।
+6. आवश्यकता अनुसार **Number of Accounts**, **Storage Quota (MB)**, alias limits, forwarders, र autoresponders सेट गर्नुहोस्।
+7. Product save गर्नुहोस्।
+
+**Integrations** पृष्ठमा enable र पूर्ण रूपमा configured भएका providers मात्र provider selector मा देखिन्छन्। Selector खाली छ भने, पहिले provider configure र test गर्नुहोस्।
+
+## Checkout मा इमेल थप्नुहोस् {#add-email-to-checkout}
+
+इमेल products सामान्यतया site plan का add-ons का रूपमा प्रस्ताव गरिन्छन्। सामान्य checkout editor workflow का लागि [Checkout Forms](../../user-guide/configuration/checkout-forms) हेर्नुहोस्।
+
+1. ग्राहकहरूले पहिले किन्ने site plan सिर्जना वा edit गर्नुहोस्।
+2. त्यो checkout flow का लागि उपलब्ध add-on/order bump को रूपमा इमेल product थप्नुहोस्।
+3. Checkout form मा अझै पनि सामान्य required site fields, विशेषगरी site URL/domain field, समावेश छ भनेर पुष्टि गर्नुहोस्।
+4. Staging customer सँग test checkout चलाउनुहोस्।
+5. Checkout पछि, ग्राहकको [account page](../../user-guide/client-management/account-page) खोल्नुहोस् र **Email Accounts** panel देखिन्छ भनेर पुष्टि गर्नुहोस्।
+
+इमेल domain ग्राहकको site domain बाट लिइन्छ। ग्राहकहरूले इमेल product step मा इमेल domain प्रविष्ट गर्दैनन्।
+
+## ग्राहक Account इमेल व्यवस्थापन {#customer-account-email-management}
+
+संस्करण 1.1.0 ले ग्राहक account पृष्ठमा इमेल व्यवस्थापन widget थप्छ। ग्राहकहरूले आफ्नै sites का लागि mailbox creation र maintenance self-service गर्नुपर्ने हुँदा यसलाई प्रयोग गर्नुहोस्।
+
+Account पृष्ठबाट, ग्राहकहरूले गर्न सक्छन्:
+
+1. आफ्नो current इमेल membership/site domain सँग जोडिएका इमेल accounts हेर्न।
+2. आफ्नो इमेल product ले additional accounts अनुमति दिँदा नयाँ mailbox सिर्जना गर्न।
+3. विद्यमान mailbox password परिवर्तन गर्न।
+4. SSO वा magic-link login मार्फत supported webmail providers खोल्न।
+
+Widget ले Ultimate Multisite account-page currents system प्रयोग गर्छ, त्यसैले actions ग्राहकले हेरिरहेको account context मा scoped हुन्छन्। यसले ग्राहकहरूलाई अर्को membership वा site सँग सम्बन्धित इमेल accounts व्यवस्थापन गर्नबाट रोक्छ।
+
+यदि ग्राहकले इमेल प्यानल देख्दैनन् भने, उनीहरूसँग **सक्रिय इमेल उत्पादन सदस्यता** छ कि छैन, त्यो सदस्यता कुनै साइट डोमेनसँग जोडिएको छ कि छैन, र उत्पादनमा कन्फिगर गरिएको प्रदायक छ कि छैन जाँच गर्नुहोस्।
+
+## ग्राहकलाई नि:शुल्क इमेल योजना दिने {#giving-a-customer-a-free-email-plan}
+
+ग्राहकलाई शुल्क नलगाई इमेल दिन, पहिले **इमेल हक** प्रदान गर्नुहोस्, त्यसपछि मेलबक्स सिर्जना गर्नुहोस् वा ग्राहकलाई सिर्जना गर्न दिनुहोस्।
+
+सिफारिस गरिएका विकल्पहरू:
+
+* **नि:शुल्क इमेल उत्पादन सिर्जना गर्नुहोस्**: इमेल उत्पादनको मूल्य नि:शुल्क/शून्यमा सेट गर्नुहोस्, त्यसपछि **Ultimate Multisite > सदस्यताहरू > सदस्यता थप्नुहोस्** बाट त्यस ग्राहकका लागि सक्रिय सदस्यता थप्नुहोस्। इमेल उत्पादन र ग्राहक चयन गर्नुहोस्। नि:शुल्क सदस्यताहरू परिवर्तन वा रद्द नगरिएसम्म आजीवन हुन्छन्। यदि इमेल सदस्यता कुनै विद्यमान साइटलाई पछ्याउनुपर्ने हो भने, त्यो साइट/डोमेन सन्दर्भसँग जोडिएको छ भनी सुनिश्चित गर्नुहोस्।
+* **१००% छुट वा नि:शुल्क चेकआउट लिङ्क प्रयोग गर्नुहोस्**: ग्राहकलाई चेकआउटबाट अघि बढ्न दिनुहोस् ताकि Ultimate Multisite ले इमेल सदस्यता र भुक्तानी अभिलेख स्वचालित रूपमा सिर्जना गर्छ।
+* **प्रशासकबाट मेलबक्स सिर्जना गर्नुहोस्**: ग्राहकका लागि प्रदायकमा विशिष्ट मेलबक्स सिर्जना गर्न **Ultimate Multisite > इमेल खाताहरू > इमेल खाता थप्नुहोस्** मा जानुहोस्। यो सहयोगका लागि उपयोगी हुन्छ, तर यसले ग्राहकको स्व-सेवा खाता-पृष्ठ उपकरणहरू चलाउने इमेल उत्पादन सदस्यतालाई प्रतिस्थापन गर्दैन।
+
+यदि तपाईं ग्राहकले खाता पृष्ठबाट मेलबक्स आफैं व्यवस्थापन गरून् भन्ने चाहनुहुन्छ भने, उनीहरूसँग डोमेनका लागि सक्रिय इमेल सदस्यता छ भनी सुनिश्चित गर्नुहोस्। त्यो सदस्यता बिना पनि म्यानुअल रूपमा सिर्जना गरिएको प्रदायक मेलबक्स रहन सक्छ, तर ग्राहकले त्यसका लागि स्व-सेवा इमेल प्यानल नदेख्न सक्छन्।
+
+## प्रशासकद्वारा सिर्जित खाताहरू र "अर्डर नम्बर छैन" {#admin-created-accounts-and-no-order-number}
+
+**इमेल खाताहरू** प्रशासक पृष्ठले प्रदायक मेलबक्स सिर्जना वा सम्पादन गर्छ। यो इमेल योजना बिक्री वा प्रदान गर्ने पहिलो चरण होइन।
+
+इमेल खाता सम्पादन गर्दा, **सदस्यता** फिल्डले आफ्ना सन्दर्भ/अर्डर नम्बरद्वारा विद्यमान Ultimate Multisite सदस्यताहरू खोज्छ। यदि ग्राहकसँग इमेल सदस्यता हुनु अघि तपाईंले खाता तोक्ने प्रयास गर्नुभयो भने, चयन गर्न कुनै अर्डर नम्बर नहुन सक्छ।
+
+यसको सट्टा यो कार्यक्रम प्रयोग गर्नुहोस्:
+
+1. ग्राहकको इमेल सदस्यता सिर्जना गर्नुहोस् वा फेला पार्नुहोस्। खरिदका लागि, चेकआउटले यो गर्छ। पूरक योजनाका लागि, [सदस्यताहरू](../../user-guide/administration/managing-memberships) बाट सदस्यता म्यानुअल रूपमा सिर्जना गर्नुहोस् वा ग्राहकलाई नि:शुल्क चेकआउटबाट पठाउनुहोस्।
+2. सदस्यता सक्रिय छ र इमेल उत्पादन प्रयोग गर्छ भनी पुष्टि गर्नुहोस्।
+3. इमेल सदस्यता साइट डोमेन/प्रदायकसँग जोडिएको छ भनी पुष्टि गर्नुहोस्।
+4. ग्राहक खाता पृष्ठबाट वा **Ultimate Multisite > इमेल खाताहरू** बाट मेलबक्स सिर्जना गर्नुहोस्।
+5. आवश्यक भएमा, मेलबक्स अभिलेख सम्पादन गर्नुहोस् र ग्राहक, सदस्यता, र साइट तोक्नुहोस्।
+
+यदि तपाईंलाई ग्राहकका लागि प्रदायक मेलबक्स मात्र सिर्जना गर्न आवश्यक छ र स्व-सेवा खाता-पृष्ठ व्यवस्थापन आवश्यक छैन भने, प्रशासकद्वारा सिर्जित खाता पर्याप्त हुन सक्छ। यदि तपाईं ग्राहकले यसलाई Ultimate Multisite मा देखून् र व्यवस्थापन गरून् भन्ने चाहनुहुन्छ भने, इमेल सदस्यता पनि सिर्जना गर्नुहोस्।
+
+## वेबमेल SSO र Magic-Link लगइन {#webmail-sso-and-magic-link-login}
+
+वेबमेल SSO ले ग्राहकहरूलाई खाता पृष्ठबाट सिधै **वेबमेल खोल्नुहोस्** कार्य दिन्छ। सक्रिय प्रदायकले समर्थन गर्दा, एडअनले छोटो-अवधिको पहुँच URL अनुरोध गर्छ र ग्राहकलाई मेलबक्स प्रमाणहरू प्रतिलिपि गर्न नभनी वेबमेलमा रिडाइरेक्ट गर्छ।
+
+प्रदायकको व्यवहार फरक हुन सक्छ:
+
+* नेटिभ SSO API भएका प्रदायकहरूले सिधा प्रमाणीकरण गरिएको वेबमेल सत्र सिर्जना गर्न सक्छन्।
+* Magic-Link समर्थन भएका प्रदायकहरूले समय-सीमित लगइन लिङ्क उत्पन्न गर्न सक्छन्।
+* SSO वा Magic-Link समर्थन नभएका प्रदायकहरूले अझै पनि मेलबक्स विवरणहरू र पासवर्ड-व्यवस्थापन कार्यहरू देखाउनुपर्छ, तर एक-क्लिक वेबमेल बटन हुँदैन।
+
+तपाईंले आवश्यक API प्रमाणहरू कन्फिगर गर्नुभएको प्रदायकहरूका लागि मात्र वेबमेल पहुँच सक्षम गर्नुहोस्। यदि कुनै प्रदायकका लागि कार्य हराइरहेको छ भने, पहिले प्रदायक सक्रिय, कन्फिगर गरिएको, र वेबमेल लगइन लिङ्कहरू समर्थन गर्छ भनी पुष्टि गर्नुहोस्।
+
+## चेकआउट प्रावधान {#checkout-provisioning}
+
+एडअनले चेकआउटका क्रममा इमेल **सदस्यता सन्दर्भ** प्रावधान गर्छ। यसले प्रदायक, खाता सीमा, कोटा, र साइट डोमेन अभिलेख गर्छ ताकि ग्राहकहरूले खरिदपछि खाता पृष्ठबाट आफ्नै मेलबक्स नामहरू सिर्जना गर्न सक्छन्।
+
+सिफारिस गरिएको कार्यान्वयन:
+
+1. इमेल उत्पादन प्रस्ताव गर्नु अघि प्रदायक र उत्पादन सीमाहरू कन्फिगर गर्नुहोस्।
+2. स्टेजिङ उत्पादनसँग खरिद परीक्षण गर्नुहोस् र इमेल सदस्यता सिर्जना भएको पुष्टि गर्नुहोस्।
+3. डोमेनका लागि **इमेल खाताहरू** विजेट देखिन्छ भनी पुष्टि गर्न ग्राहक खाता पृष्ठ समीक्षा गर्नुहोस्।
+4. विजेटबाट परीक्षण मेलबक्स सिर्जना गर्नुहोस्।
+5. उत्पादन उत्पादनहरूका लागि प्रवाह सक्षम गर्नु अघि पासवर्ड-परिवर्तन र वेबमेल कार्यहरू पुष्टि गर्नुहोस्।
+
+यदि प्रावधान असफल भयो भने, इमेल सदस्यता वा प्रदायक मेलबक्सका लागि प्रशासकको पछ्याइ आवश्यक हुँदा पनि ग्राहक खाता र सदस्यता रहन सक्छन्। पुन: प्रयास गर्नु अघि Ultimate Multisite गतिविधि लगहरू र प्रदायक लगहरू जाँच गर्नुहोस्।
+
+## CyberPanel इमेल फर्वार्डरहरू {#cyberpanel-email-forwarders}
+
+CyberPanel-आधारित नेटवर्कहरूका लागि, संस्करण 1.1.0 ले इमेल फर्वार्डर समर्थन थप्छ। ग्राहकहरूलाई पूर्ण मेलबक्स सिर्जना नगरी `info@customer-domain.test` जस्ता ठेगानाबाट इमेल अर्को इनबक्समा रिडाइरेक्ट गर्न आवश्यक हुँदा फर्वार्डरहरू प्रयोग गर्नुहोस्।
+
+फर्वार्डरहरू प्रस्ताव गर्नु अघि, CyberPanel एकीकरण कन्फिगर गरिएको र पहुँचयोग्य छ भनी पुष्टि गर्नुहोस्। आवश्यक होस्ट, प्रयोगकर्तानाम, पासवर्ड, र प्याकेज स्थिरांकहरूका लागि [CyberPanel एकीकरण](../../user-guide/administration/cyberpanel-integration) मार्गदर्शिका हेर्नुहोस्।
+
+## परिवर्तन विवरण {#changelog}
+
+### संस्करण 1.1.0 - 2026-05-05 मा जारी गरियो {#version-110---released-on-2026-05-05}
+
+* नयाँ: Webmail SSO र magic-link login — ग्राहकहरूले one-click प्रमाणीकरणसहित आफ्नो Account बाट सिधै webmail पहुँच गर्न सक्छन्।
+* नयाँ: email account व्यवस्थापन widget मा password परिवर्तन गर्ने कार्यक्षमता थपियो।
+* नयाँ: CyberPanel email forwarder समर्थन।
+* नयाँ: self-service account सिर्जना र व्यवस्थापनका लागि customer Account पृष्ठमा email व्यवस्थापन widget।
+* नयाँ: ग्राहक email account entitlement provisioning checkout flow मा एकीकृत गरियो।
+* समाधान: Account पृष्ठ widget hook सही UMS registration pattern प्रयोग गर्न अद्यावधिक गरियो।
+* समाधान: Account सिर्जना form vanilla JS र सही पूर्ण HTML document output ले प्रतिस्थापन गरियो।
+* समाधान: Email व्यवस्थापन widget ले अब admin account पृष्ठहरूका लागि UMS currents system प्रयोग गर्छ।
+* समाधान: Admin email account सिर्जना form मा password field समावेश छ र Email_Account_Manager प्रयोग गर्छ।
+* समाधान: Email_Account_Manager initialization बाट per-request log spam हटाइयो।
+* सुधारिएको: Settings पृष्ठले अब केवल active र configured email providers देखाउन filter गर्छ।
+
+## बारम्बार सोधिने प्रश्नहरू {#frequently-asked-questions}
+
+### के ग्राहकहरूले आफ्नै email accounts सिर्जना गर्न सक्छन्? {#can-customers-create-their-own-email-accounts}
+
+हो। जब ग्राहकसँग कुनै domain का लागि active email membership हुन्छ र product ले additional accounts अनुमति दिन्छ, ग्राहकहरूले Account पृष्ठबाट आफ्नै mailboxes सिर्जना र व्यवस्थापन गर्न सक्छन्।
+
+### के प्रत्येक provider ले webmail SSO समर्थन गर्छ? {#does-every-provider-support-webmail-sso}
+
+होइन। SSO र magic-link समर्थन active email provider मा निर्भर हुन्छ। access-link API नभएका providers ले पनि mailbox सिर्जना र password परिवर्तन समर्थन गर्न सक्छन्।
+
+### के administrators ले ग्राहकहरूका लागि email accounts सिर्जना गर्न सक्छन्? {#can-administrators-create-email-accounts-for-customers}
+
+हो। Administrators ले admin interface बाट email accounts सिर्जना गर्न सक्छन्, account सिर्जना गर्दा initial password सेट गर्नेसहित। ग्राहक self-service व्यवस्थापनका लागि, ग्राहकसँग domain का लागि active email membership छ भनेर पनि सुनिश्चित गर्नुहोस्।
+
+### के म email account नि:शुल्क दिन सक्छु? {#can-i-give-an-email-account-away-for-free}
+
+हो। free/zero-priced Email product सिर्जना गर्नुहोस् र त्यसलाई ग्राहकका लागि active membership का रूपमा थप्नुहोस्, वा ग्राहकलाई 100% discount सहित checkout पूरा गर्न दिनुहोस्। email membership बनेपछि, ग्राहक वा administrator ले वास्तविक mailbox सिर्जना गर्न सक्छन्।
+
+### email account assign गर्दा order number किन मागिन्छ? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Membership field ले यसको reference/order number द्वारा अवस्थित Ultimate Multisite membership खोज्छ। यदि ग्राहकले email product खरिद गरेको छैन र तपाईंले manually email membership सिर्जना गर्नुभएको छैन भने, assign गर्न कुनै email membership/order हुँदैन। पहिले email membership सिर्जना गर्नुहोस्, त्यसपछि mailbox सिर्जना वा assign गर्नुहोस्।
+
+### के forwarders mailboxes जस्तै हुन्? {#are-forwarders-the-same-as-mailboxes}
+
+होइन। mailbox ले mail भण्डारण गर्छ र login credentials हुन्छन्। forwarder ले mail अर्को address मा redirect गर्छ र छुट्टै inbox प्रदान गर्दैन।

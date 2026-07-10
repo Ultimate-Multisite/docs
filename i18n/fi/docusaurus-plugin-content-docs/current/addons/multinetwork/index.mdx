@@ -1,0 +1,100 @@
+---
+title: Moniverkko
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network {#multi-network}
+
+Ultimate Multisite: Multinetwork -lisäosa laajentaa Ultimate Multisite -alustasi tehokkaalla multinetwork-toiminnallisuudella. Tämä lisäosa mahdollistaa asiakkaillesi kokonaisten WordPress multisite -verkostojen ostamisen ja hallinnan, ei vain yksittäisten sivustojen.
+
+## Keskeiset ominaisuudet {#key-features}
+
+* **Verkoston käyttöönotto**: Luo ja määritä asiakkaillesi automaattisesti kokonaisia WordPress multisite -verkostoja
+* **Verkostomallit**: Anna asiakkaiden selata, esikatsella ja valita valmiiksi rakennettu verkostomalli ennen rekisteröitymistä
+* **Verkoston hallinta**: Täydet hallintaominaisuudet multinetwork-ympäristöihin
+* **Eristetyt verkostot**: Jokainen asiakasverkosto toimii itsenäisesti omilla tietokantatauluillaan ja määrityksillään
+* **Verkostojen välinen SSO**: Anna asiakkaille saumaton pääsy heidän aliverkostoihinsa magic-link-todennuksella
+* **Skaalautuva arkkitehtuuri**: Käsittele useita verkostoja tehokkaasti optimoidulla resurssien kohdennuksella
+* **Integraatio**: Integroituu saumattomasti Ultimate Multisite -tilaus- ja laskutusjärjestelmiin
+
+## Käyttötapaukset {#use-cases}
+
+* **White label -hosting**: Tarjoa asiakkaille heidän omia brändättyjä multisite-verkostojaan
+* **Toimistoratkaisut**: Mahdollista toimistoille useiden asiakasverkostojen hallinta yhdeltä alustalta
+* **Yritystason käyttöönotot**: Tue suuria organisaatioita, joilla on monimutkaisia moniverkostovaatimuksia
+* **Koulutusalustat**: Luo erillisiä verkostoja eri kouluille tai osastoille
+
+## Vaatimukset {#requirements}
+
+* Ultimate Multisite 2.0.0 tai uudempi
+* WordPress Multisite -asennus
+* PHP 7.4 tai uudempi
+* MySQL 5.6 tai uudempi
+
+## Asennus {#installation}
+
+1. Lataa plugin-tiedostot hakemistoon `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivoi plugin WordPressin Plugins-näytön kautta
+3. Määritä multinetwork-asetukset kohdassa Ultimate Multisite → Settings
+
+## Verkostomallit {#network-templates}
+
+Versio 1.3.0 lisää mallien löytämis- ja valintapolun asiakkaille, jotka ostavat uusia verkostoja. Käytä verkostomalleja, kun haluat jokaisen uuden asiakasverkoston alkavan valmistellusta rakenteesta, suunnittelusta, sisältökirjastosta tai tietylle toimialalle tarkoitetusta asetelmasta.
+
+### Mallin esikatselin {#template-previewer}
+
+Verkostomallien esikatselin antaa asiakkaiden selata saatavilla olevia malleja ennen checkoutia. Jokainen malli voidaan avata live-esikatselupaneelissa, jotta asiakkaat voivat vertailla asetteluja ja sisältöä ennen verkoston ostamista.
+
+Käytä esikatselinta auttaaksesi asiakkaita:
+
+* Tarkistamaan kunkin saatavilla olevan verkostomallin ulkoasun ja rakenteen
+* Vertailemaan useita malleja poistumatta ostopolusta
+* Valitsemaan mallin, joka sopii parhaiten heidän käyttötapaukseensa ennen rekisteröitymistä
+
+Pidä mallien nimet ja kuvaukset asiakasystävällisinä. Esikatselin on hyödyllisimmillään, kun asiakkaat ymmärtävät tarkoitetun käyttötapauksen, kuten toimistoverkostot, kouluverkostot, franchising-verkostot tai white-label-hosting-paketit.
+
+### Mallin valitsin checkoutissa {#template-picker-at-checkout}
+
+Mallin valitsin voidaan lisätä rekisteröitymisen checkout-polkuun kenttänä. Kun se on määritetty, asiakkaat valitsevat checkoutin aikana haluamansa verkostomallin, ja valittua mallia käytetään, kun heidän uusi verkostonsa otetaan käyttöön.
+
+Valitsimen käyttäminen checkout-polussa:
+
+1. Valmistele verkostot, joita haluat tarjota malleina.
+2. Ota Multinetwork-mallin valintakenttä käyttöön asiaankuuluvassa rekisteröitymis- tai checkout-lomakkeessa.
+3. Valitse, mitkä mallit ovat saatavilla kyseisessä checkout-polussa.
+4. Julkaise checkout-polku ja testaa rekisteröityminen varmistaaksesi, että valittu malli otetaan käyttöön uudessa verkostossa.
+
+Jos checkout-polku tarjoaa vain yhden verkostotuotteen, valitsin voi silti olla hyödyllinen ohjattuna perehdytysvaiheena. Usean planin myyntipoluissa näytä vain ne mallit, jotka ovat yhteensopivia valitun tuotteen tai planin kanssa.
+
+## Verkostojen välinen Magic Link SSO {#cross-network-magic-link-sso}
+
+Verkostojen välinen magic link SSO antaa asiakkaiden siirtyä ensisijaisen Account-alueensa ja aliverkostojen välillä kirjautumatta manuaalisesti uudelleen sisään. Kun asiakas seuraa verkostojen välistä käyttölinkkiä, Ultimate Multisite luo ajallisesti rajoitetun magic linkin ja todentaa asiakkaan kohdeverkostoon.
+
+Tämä parantaa kokemusta asiakkaille, jotka hallitsevat useampaa kuin yhtä verkostoa tai joiden täytyy päästä juuri kloonattuihin malliverkostoihin heti ostoksen jälkeen.
+
+Ylläpitäjän tarkistuslista:
+
+* Varmista, että Multinetwork-lisäosa on aktiivinen koko WordPress multisite -asennuksessa.
+* Varmista, että asiakkailla on oikea verkostopääsy ennen kuin heille tarjotaan verkostojen välisiä linkkejä.
+* Pidä verkostodomainit ja kartoitetut domainit oikein määritettyinä, jotta magic linkit ohjautuvat tarkoitettuun kohdeverkostoon.
+* Testaa asiakkaan dashboard ja mahdolliset checkoutin jälkeiset käyttöpainikkeet verkosto-, domain- tai checkout-asetusten muuttamisen jälkeen.
+
+Magic linkejä tulee käsitellä kirjautumislinkkeinä. Ne on suunniteltu saumattomaan asiakaspääsyyn, eikä niitä tule välittää eteenpäin tai käyttää uudelleen tarkoitetun istunnon ulkopuolella.
+
+## Usein kysytyt kysymykset {#frequently-asked-questions}
+
+### Mikä on multinetwork? {#what-is-multinetwork}
+
+Multinetwork on WordPress-ominaisuus, jonka avulla voit käyttää useita itsenäisiä multisite-verkostoja yhdessä WordPress-asennuksessa.
+
+### Miten tämä eroaa tavallisesta multisite-ratkaisusta? {#how-is-this-different-from-regular-multisite}
+
+Tavallinen multisite sallii useita sivustoja yhdessä verkostossa. Multinetwork sallii useita verkostoja, joista jokaisella on omat sivustonsa, kaikki yhdessä WordPress-asennuksessa.
+
+### Vaatiiko tämä erityisiä palvelinmäärityksiä? {#does-this-require-special-server-configuration}
+
+Kyllä, multinetwork vaatii tietyn palvelinasetelman ja määrityksen. Katso dokumentaatiosta yksityiskohtaiset asennusohjeet.

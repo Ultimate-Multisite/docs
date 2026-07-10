@@ -3,11 +3,11 @@ title: سائٽ اسڪيل
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# साइट स्पेसिफिकेसन سكيل (Site Specification Skill)
+# साइट स्पेसिफिकेसन سكيل (Site Specification Skill) {#site-specification-skill}
 
 **साइट स्पेसिफिकेसन سكيل** آپ کی سائٹ کے مقاصد، سامعین اور برانڈ کی شناخت کو سمجھنے کا ایک منظم طریقہ ہے۔ یہ معلومات آپ کی **site_brief** میموری میں محفوظ ہوتی ہے، جس کا استعمال ایجنٹس مختلف سیشنز میں مستقل اور سیاق و سباق سے آگاہی فراہم کرنے کے لیے کرتے ہیں۔
 
-## سائٹ سپیسیفیکیشن کیا ہے؟ (What is Site Specification?)
+## سائٹ سپیسیفیکیشن کیا ہے؟ (What is Site Specification?) {#what-is-site-specification}
 
 سائٹ سپیسیفیکیشن یہ دستاویز کرنے کا عمل ہے:
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 یہ سپیسیفیکیشن آپ کی **site_brief** بن جاتی ہے، ایک مستقل یادداشت جس کا استعمال ایجنٹس آپ کی سائٹ کے سیاق و سباق کو سمجھنے کے لیے کرتے ہیں۔
 
-## سائٹ سپیسیفیکیشن کیوں استعمال کریں؟ (Why Use Site Specification?)
+## سائٹ سپیسیفیکیشن کیوں استعمال کریں؟ (Why Use Site Specification?) {#why-use-site-specification}
 
-### سیشنز میں ہم آہنگی (Consistency Across Sessions)
+### سیشنز میں ہم آہنگی (Consistency Across Sessions) {#consistency-across-sessions}
 
 اگر site_brief نہ ہو، تو ہر بار نیا سیشن شروع کرنے پر آپ کو اپنی سائٹ کے مقصد کی دوبارہ وضاحت کرنی پڑے گی۔ اس کے ساتھ، ایجنٹس فوری طور پر سمجھ جاتے ہیں:
 
@@ -30,7 +30,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - آپ کا مواد کا ڈھانچہ۔
 - آپ کے کاروباری مقاصد۔
 
-### بہتر سفارشات (Better Recommendations)
+### بہتر سفارشات (Better Recommendations) {#better-recommendations}
 
 ایجنٹس اپنی site_brief کا استعمال یہ کرنے کے لیے کرتے ہیں:
 
@@ -39,17 +39,17 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - اپنے برانڈ کے مطابق ڈیزائن تجویز کرنا۔
 - غیر مطابقت رکھنے والے فیچرز تجویز کرنے سے بچنا۔
 
-### تیز آن بورڈنگ (Faster Onboarding)
+### تیز آن بورڈنگ (Faster Onboarding) {#faster-onboarding}
 
 نئے ایجنٹس (یا نئے سیشنز میں آنے والے ایجنٹس) آپ کی سائٹ کے بارے میں وضاحت طلب سوالات پوچھنے کے بجائے، اپنی site_brief پڑھ کر جلدی سمجھ سکتے ہیں۔
 
-## سائٹ سپیسیفیکیشن شروع کرنا (Initiating Site Specification)
+## سائٹ سپیسیفیکیشن شروع کرنا (Initiating Site Specification) {#initiating-site-specification}
 
-### تھیم بلڈر آن بورڈنگ کے دوران (During Theme Builder Onboarding)
+### تھیم بلڈر آن بورڈنگ کے دوران (During Theme Builder Onboarding) {#during-theme-builder-onboarding}
 
 **تھیم بلڈر آن بورڈنگ فلو** کے دوران **Site Specification skill** خود بخود شروع ہو جاتا ہے۔ سیٹ اپ اسسٹنٹ ایجنٹ سوالات پوچھتا ہے اور آپ کی site_brief تیار کرتا ہے۔
 
-### دستی آغاز (Manual Initiation)
+### دستی آغاز (Manual Initiation) {#manual-initiation}
 
 توهان جي سائي اسڪيپيشن ڪڏهن به شروع ڪري سگهو ٿا:
 
@@ -63,9 +63,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 "من کي هڪ سائي بريف ٺاهڻ ۾ مدد ڪريو"
 ```
 
-## سائي اسڪيپيشن جي عمل
+## سائي اسڪيپيشن جي عمل {#the-site-specification-process}
 
-### قدم 1: سائي جو مقصد (Site Purpose)
+### قدم 1: سائي جو مقصد (Site Purpose) {#step-1-site-purpose}
 
 ايجنت پڇندو آهي:
 
@@ -81,7 +81,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 توهان هڪ ڪائدي کي چونڊي سگهو ٿا يا پنهنجي مقصد جو بيان ڪري سگهو ٿا.
 
-### قدم 2: هاڻي جي سامعندي (Target Audience)
+### قدم 2: هاڻي جي سامعندي (Target Audience) {#step-2-target-audience}
 
 ```
 توهان جي بنيادي سامعندي ڪهڙي آهي؟
@@ -94,7 +94,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 توهان جي اهم ضرورتون ڇا آهن؟
 ```
 
-### قدم 3: برانڊ جي شناخت (Brand Identity)
+### قدم 3: برانڊ جي شناخت (Brand Identity) {#step-3-brand-identity}
 
 ```
 توهان جا برانڊ جا رنگ ڪهڙا آهن؟
@@ -110,7 +110,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - گرم / دوستانه
 ```
 
-### قدم 4: ڪاروباري مقصد (Business Goals)
+### قدم 4: ڪاروباري مقصد (Business Goals) {#step-4-business-goals}
 
 ```
 توهان جي سائي لاءِ ڪاميابي ڪهڙي ڏس ٿي؟
@@ -129,7 +129,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - ٻيو
 ```
 
-### قدم 5: مواد جو ڈھانجو (Content Structure)
+### قدم 5: مواد جو ڈھانجو (Content Structure) {#step-5-content-structure}
 
 ```
 توهان جو مواد ڪيئن منظم آهي؟
@@ -148,13 +148,13 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - ٻيو
 ```
 
-## توهان جي site_brief ذاڪيري (Memory)
+## توهان جي site_brief ذاڪيري (Memory) {#your-sitebrief-memory}
 
 سائي اسڪيپيشن کي ختم ڪرڻ کان پوءِ، توهان جي معلومات **site_brief** طور توهان جي ايجنت جي هميشه ۾ محفوظ ٿيندي آهي. هي هڪ منظم رڪارڊ آهي جنه ان ٺاهي ٿو:
 
-## توهان جي سائيٽ جو خلاصو ڏسڻ ۽ اپڊيٽ ڪرڻ
+## توهان جي سائيٽ جو خلاصو ڏسڻ ۽ اپڊيٽ ڪرڻ {#viewing-and-updating-your-sitebrief}
 
-### پنهنجي سائيٽ جو خلاصو ڏسو
+### پنهنجي سائيٽ جو خلاصو ڏسو {#view-your-sitebrief}
 
 ايجنت کي پڇيو:
 
@@ -170,7 +170,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 ايجنت توهان جي محفوظ ڪيل مخصوص معلومات ڏيکاري ٿو.
 
-### پنهنجي سائيٽ جو خلاصو اپڊيٽ ڪرڻ
+### پنهنجي سائيٽ جو خلاصو اپڊيٽ ڪرڻ {#update-your-sitebrief}
 
 جيڪڏهن توهان جي سائيٽ وڌندي آهي، ته توهان ان کي اپڊيٽ ڪري سگهو ٿا:
 
@@ -186,9 +186,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 هي توهان جي موجودہ معلومات کي شروع نقطي طور تي استعمال ڪندي Site Specification اسڪل کي ٻيهر چالو ڪندو.
 
-## ايجنتس سائيٽ جو خلاصو ڪيئن استعمال ڪن ٿا
+## ايجنتس سائيٽ جو خلاصو ڪيئن استعمال ڪن ٿا {#how-agents-use-sitebrief}
 
-### تصميماتي سفارشون (Design Recommendations)
+### تصميماتي سفارشون (Design Recommendations) {#design-recommendations}
 
 جيڪڏهن توهان تصميمات ۾ تبديلي طلب ڪندا آهيو، ته ايجنت پنهنجي سائيٽ جو خلاصو ڏسي ٿو:
 
@@ -197,7 +197,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ايجنت: "توهان جي سائيٽ جو خلاصو ڏسڻ تي ٻڌل، توهان 25-45 سالن ونيت کي گرم، فنڪار انداز (artisanal tone) سان ڇاڳي رهيا. مان هڪ اهڙو تصميم ڪندس جيڪو توهان جي هٿ سان بڻايو ٿيل جوهر ۽ پائيدار قيمتن تي زور ڏئي."
 ```
 
-### خصوصيتون جو مشورہ (Feature Suggestions)
+### خصوصيتون جو مشورہ (Feature Suggestions) {#feature-suggestions}
 
 ايجنت توهان جي مقصدن سان مطابقت رکڻ وارن خصوصيتن جو مشورہ ڏين ٿا:
 
@@ -206,23 +206,23 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ايجنت: "ڪسٽمر جي وفاداري تي ڌيان ڏيڻ واري اي ڪورم اسٽور لاءِ، مان هي سفارش ڪندس: لاءلجي پروگرام (loyalty program)، ڪسٽمرن جا ريويوز، ايميل نيٽسليئر، ۽ پروڊڪٽ جو سفارش."
 ```
 
-### مواد جو ڈھانجو (Content Structure)
+### مواد جو ڈھانجو (Content Structure) {#content-structure}
 
 ايجنت توهان جي سائيٽ جو هيكل ڏسي ٿو ته مواد کي ڪيئن منظم ڪرڻ آهي:
 
 توهان: "من کي پنهنجي بلاگ کي ڪيئن منظم ڪرڻ گهرجي؟"
 جوابدار: "چونکہ توهان وٽ پروڪٽ ڪٽالو (product catalog) ۽ بلاگ آهي، مان مشورو ڏيان ٿو ته پوسٽن کي پروڪٽ جي ڪٽني (category) جي لحاظ کان منظم ڪريو ۽ 'اسٽائلنگ گائڊز' (styling guides) banaيو جيڪي متعدد پروڪٽن کي هڪ ئي ڏيکاريون."
 
-## بهترين عمليون (Best Practices)
+## بهترين عمليون (Best Practices) {#best-practices}
 
-### خاص رهيو (Be Specific)
+### خاص رهيو (Be Specific) {#be-specific}
 
 "عام سامعن" جي جاءِ تي، پنهنجي اصل سامعن جو بيان ڪريو:
 
 - ✓ "25-45 سالن ونيتيا، جيڪي پائيدار فیشن ۾ دلچسپي رکندا"
 - ✗ "هر ڪنهن کي"
 
-### باقاعدي اپڊيٽ ڪريو (Update Regularly)
+### باقاعدي اپڊيٽ ڪريو (Update Regularly) {#update-regularly}
 
 جڏهن توهان جي سائيٽ ارتقاء ٿيندي آهي، ته پنهنجي `site_brief` کي اپڊيٽ ڪريو:
 
@@ -231,14 +231,14 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - جڏهن توهان جي برانڊ جي شناخت ۾ تبديلي اچي
 - جڏهن توهان جي ڪاروباري مقصد تبديل ٿيندي
 
-### هڪجهڙا اصطلاحات استعمال ڪريو (Use Consistent Terminology)
+### هڪجهڙا اصطلاحات استعمال ڪريو (Use Consistent Terminology) {#use-consistent-terminology}
 
 هيٺ ڏنل سيسشنن ۾ هڪ ئي اصطلاحات جو استعمال ڪريو:
 
 - ✓ هميشه "پائيدار جواهرجيري" (sustainable jewelry) چيو (نه "ايڪو-فريينڊ جواهرجيري" ۽ "گرين پروڊڪٽس")
 - ✓ پنهنجي سامعن کي هڪ ئي طرح refer ڪريو
 
-### سياق شامل ڪريو (Include Context)
+### سياق شامل ڪريو (Include Context) {#include-context}
 
 هي معلومات فراهم ڪريو جيڪا ايجنت کي توهان جي فيصلي جو مطلب سمجھڻ ۾ مدد ڪندي:
 
@@ -246,7 +246,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - "هڪڙي طرح، اسان جو سامعن جديد تصميم ۽ نئين انداز جي توقع رکندا آهن"
 - "اسان هڪ بوتراپ اسٽارٽ اپ آهي، تنهن ڪري اسان کي سستا حل گهرجن"
 
-## ٿيم بلڊر انبورڊنگ سان تعلق (Relationship to Theme Builder Onboarding)
+## ٿيم بلڊر انبورڊنگ سان تعلق (Relationship to Theme Builder Onboarding) {#relationship-to-theme-builder-onboarding}
 
 سائٽ اسپيسفڪيشن (Site Specification) جو ڪارڪردہ **Theme Builder onboarding flow** ۾ شامل آهي. جڏهن توهان ان بورڊنگ پورو ڪري ويندا آهيو، ته توهان جي `site_brief` خود بخود ان معلومات سان ٺهي ويندي آهي جيڪا توهان فراهم ڪئي هجي.
 
@@ -256,7 +256,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - جڏهن توهان جي سائيٽ ارتقاء ٿيندي آهي ته پنهنجي site brief کي اپڊيٽ ڪريو
 - Theme Builder شروع ڪرڻ کان اڳ هڪ تفصيلي اسپيسفڪيشن banaيو
 
-## گلاهمي (Troubleshooting)
+## گلاهمي (Troubleshooting) {#troubleshooting}
 
 **منهنجي site_brief جو استعمال نه ٿي رهيو**
 - تصديق ڪريو ته ايجنت کي memory تک رسائي آهي
@@ -272,7 +272,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - Agar aapka site\_brief purana hai to use update karein
 - Apne requests mein mazeed context (taqreeb) faraham karein
 
-## Agle Qadamat (Next Steps)
+## Agle Qadamat (Next Steps) {#next-steps}
 
 Apna site specification define karne ke baad:
 

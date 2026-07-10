@@ -3,7 +3,7 @@ title: Журнал зменаў Мэнэджара плагінаў і тэма
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Журнал змены Plugin & Theme Manager
+# Журнал змены Plugin & Theme Manager {#plugin--theme-manager-changelog}
 
 Версія: 2.0.8 - Выпушчана 2026-05-05
 * Удосканалена: Спіс плагінаў цяпер выкарыстоўвае site cache, каб зрабіць менш пытаў да базы дадзеных і палепшыць прадуктыўнасць.

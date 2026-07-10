@@ -3,11 +3,11 @@ title: Konesans ki konpayi ak tem
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Compétences Sensibles au Thème
+# Compétences Sensibles au Thème {#theme-aware-skills}
 
 La Superdav AI Agent v1.10.0 déploie quatre nouvelles compétences intégrées sensibles au thème qui s'adaptent automatiquement à votre thème WordPress actif. Ces compétences offrent des conseils et des capacités spécialisées adaptées à l'architecture et aux fonctionnalités de votre thème.
 
-## Qu'est-ce que les Compétences Sensibles au Thème ?
+## Qu'est-ce que les Compétences Sensibles au Thème ? {#what-are-theme-aware-skills}
 
 Les compétences sensibles au thème sont des bases de connaissances et des ensembles d'outils préconfigurés que l'assistant IA sélectionne automatiquement en fonction du thème WordPress actuellement actif sur votre site. Lorsque vous changez de thème, les compétences disponibles de l'assistant se mettent à jour automatiquement — pas besoin de configuration manuelle.
 
@@ -18,9 +18,9 @@ Chaque compétence comprend :
 - **Exemples de personnalisation** — extraits de code et schémas de configuration pour les tâches courantes
 - **Meilleures pratiques** — recommandations pour l'architecture et le flux de travail du thème
 
-## Compétences Sensibles au Thème Disponibles
+## Compétences Sensibles au Thème Disponibles {#available-theme-aware-skills}
 
-### Thèmes Basés sur les Blocs (Block Themes)
+### Thèmes Basés sur les Blocs (Block Themes) {#block-themes}
 
 **S'applique à :** Les thèmes qui utilisent l'architecture basée sur les blocs WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ La compétence Block Themes fournit des conseils sur :
 
 **Activée automatiquement lorsque :** Votre thème actif est un thème basé sur les blocs (supporte la fonctionnalité `block-templates`).
 
-### Thèmes Classiques (Classic Themes)
+### Thèmes Classiques (Classic Themes) {#classic-themes}
 
 **S'applique à :** Les thèmes WordPress traditionnels qui utilisent des modèles PHP et l'éditeur classique.
 
@@ -48,7 +48,7 @@ Konprann iyerihie thèm ak tag template
 
 **Aktive otomatikman lè:** Thèm aktif ou se yon thèm klasik (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Aplike pou:** Sit ki itilize plugin Kadence Blocks pou konsepsyon avanse baze sou blok.
 
@@ -62,7 +62,7 @@ Sktil Kadence Blocks la bay gid sou:
 
 **Aktive otomatikman lè:** Plugin Kadence Blocks la aktif sou sit ou.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Aplike pou:** Sit ki itilize thèm Kadence pou konsepsyon baze sou blok ak kustomizasyon.
 
@@ -76,15 +76,15 @@ Sktil Kadence Theme la bay gid sou:
 
 **Aktive otomatikman lè:** Thèm Kadence la se thèm aktif ou.
 
-## Kijan Sktil Yo Chwazi
+## Kijan Sktil Yo Chwazi {#how-skills-are-selected}
 
 Asistan an otomatikman detekte thèm aktif ou ak plugin ki enstale sou chak mesaj. Si yon skil ki konpayi ak thèm a disponib, li pral telechaje nan kontèks asistan an otomatikman. Ou pa bezwen aktive oswa chanje skil yo menm.
 
-### Plizyè Sktil
+### Plizyè Sktil {#multiple-skills}
 
 Si anpil konpetans ak sit ou a (pa egzanp, si ou gen Kadence Blocks ak Kadence Theme aktif), asistan an gen aksè nan tout konpetans ki aplikab epi li ka referans gwovan gidans soti chak.
 
-### Chanje Tema
+### Chanje Tema {#switching-themes}
 
 Lè ou chanje tema ki aktif la, konpetans asistan yo disponib otomatikman monte pou mesaj ankò a. Pa egzanp:
 
@@ -92,11 +92,11 @@ Lè ou chanje tema ki aktif la, konpetans asistan yo disponib otomatikman monte 
 2. Ou chanje nan yon tema klasik.
 3. Nan mesaj ou answit la, konpetans **Classic Themes** yo pral telechaje otomatikman, epi konpetans **Block Themes** pa gen disponib ankò.
 
-## Itilize Konpetans ki Konpayi ak Tema a (Theme-Aware Skills)
+## Itilize Konpetans ki Konpayi ak Tema a (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Pou itilize yon konpetans ki konpayi ak tema a, senpleman dekri sa ou vle fè nan entèfas chat la. Asistan an ap referans gidans konpetans ki apwopriye otomatikman.
 
-### Egzanp Prompt yo
+### Egzanp Prompt yo {#example-prompts}
 
 **Pou Block Themes:**
 > "Kreye yon seksyon hero ak yon imaj fon ak tèks santre itilize modèl blòk."

@@ -3,13 +3,13 @@ title: Verwijderingsmelding Site Builder Mode
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Verwijdering van Site Builder Mode
+# Verwijdering van Site Builder Mode {#site-builder-mode-removal-notice}
 
 **Site Builder mode is verwijderd in Superdav AI Agent v1.12.0.** Als u Site Builder mode gebruikte, moet u migreren naar de **Setup Assistant agent** voor thema- en site-opzet.
 
-## Wat is er gebeurd?
+## Wat is er gebeurd? {#what-happened}
 
-### Site Builder Mode (Legacy)
+### Site Builder Mode (Legacy) {#site-builder-mode-legacy}
 
 Site Builder mode was een wizard-gebaseerde interface voor:
 
@@ -18,7 +18,7 @@ Site Builder mode was een wizard-gebaseerde interface voor:
 - Het kiezen van een thema
 - Het instellen van initiële content
 
-### Wat heeft het vervangen?
+### Wat heeft het vervangen? {#what-replaced-it}
 
 De **Setup Assistant agent** neemt nu alle functionaliteit van Site Builder over met:
 
@@ -27,15 +27,15 @@ De **Setup Assistant agent** neemt nu alle functionaliteit van Site Builder over
 - Integratie met Theme Builder onboarding
 - Persistent site_brief geheugen voor toekomstige sessies
 
-## Als u Site Builder Mode gebruikte
+## Als u Site Builder Mode gebruikte {#if-you-were-using-site-builder-mode}
 
-### Uw sites zijn veilig
+### Uw sites zijn veilig {#your-sites-are-safe}
 
 - Bestaande sites die met Site Builder mode zijn gemaakt, blijven werken
 - Geen gegevensverlies of site-onderbreking
 - U kunt uw sites normaal blijven beheren
 
-### Migreer naar Setup Assistant Agent
+### Migreer naar Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Voor nieuwe site-opzet of themawijzigingen, gebruik de Setup Assistant agent:
 
@@ -51,7 +51,7 @@ of
 
 De Setup Assistant agent biedt dezelfde functionaliteit, maar dan met meer flexibiliteit.
 
-## Vergelijking: Site Builder vs. Setup Assistant
+## Vergelijking: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Feature | Site Builder (Verwijderd) | Setup Assistant (Nieuw) |
 |---------|--------------------------|------------------------|
@@ -62,9 +62,9 @@ De Setup Assistant agent biedt dezelfde functionaliteit, maar dan met meer flexi
 | Future sessions | Repeat setup | Use stored site_brief |
 | Flexibility | Fixed workflow | Adaptive conversation |
 
-## Migreren naar Setup Assistant Agent
+## Migreren naar Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Voor nieuwe sites
+### Voor nieuwe sites {#for-new-sites}
 
 In plaats van Site Builder mode te gebruiken:
 
@@ -76,7 +76,7 @@ In plaats van Site Builder mode te gebruiken:
    - De thema-generatie
    - De initiële configuratie
 
-### Voor bestaande sites
+### Voor bestaande sites {#for-existing-sites}
 
 Als u een bestaande site heeft die met Site Builder mode is gemaakt:
 
@@ -85,7 +85,7 @@ Als u een bestaande site heeft die met Site Builder mode is gemaakt:
 3. De Setup Assistant agent helpt u een nieuw thema te creëren
 4. De gegevens van uw site blijven ongewijzigd
 
-### Voor themawijzigingen
+### Voor themawijzigingen {#for-theme-changes}
 
 In plaats van de thema-selectie van Site Builder mode:
 
@@ -95,9 +95,9 @@ In plaats van de thema-selectie van Site Builder mode:
    - Een custom thema genereren
    - Dit activeren op uw site
 
-## Belangrijkste verschillen
+## Belangrijkste verschillen {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Choose a template
@@ -106,7 +106,7 @@ In plaats van de thema-selectie van Site Builder mode:
 4. Done
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Describe your site's purpose
@@ -117,36 +117,36 @@ In plaats van de thema-selectie van Site Builder mode:
 6. Site brief stored for future sessions
 ```
 
-## Voordelen van Setup Assistant Agent
+## Voordelen van Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Flexibeler
+### Flexibeler {#more-flexible}
 
 - Beschrijf uw site in natuurlijke taal
 - Ontvang custom aanbevelingen
 - Past zich aan uw specifieke behoeften aan
 
-### Betere Customization
+### Betere Customization {#better-customization}
 
 - Custom thema-generatie
 - Beslissingen over het design system
 - Persistent design tokens
 
-### Persistent Memory
+### Persistent Memory {#persistent-memory}
 
 - Uw site_brief wordt opgeslagen
 - Toekomstige agents begrijpen uw site
 - U hoeft de opzetinformatie niet opnieuw te geven
 
-### Geïntegreerde Workflow
+### Geïntegreerde Workflow {#integrated-workflow}
 
 - Theme Builder onboarding
 - Design System Aesthetics skill
 - Ability Visibility controls
 - Alles werkt naadloos samen
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Ik kan Site Builder mode niet vinden
+### Ik kan Site Builder mode niet vinden {#i-cant-find-site-builder-mode}
 
 Site Builder mode is verwijderd. Gebruik in plaats daarvan de Setup Assistant agent:
 
@@ -154,7 +154,7 @@ Site Builder mode is verwijderd. Gebruik in plaats daarvan de Setup Assistant ag
 "Help me set up a new site"
 ```
 
-### Ik wil een site opnieuw creëren vanuit Site Builder
+### Ik wil een site opnieuw creëren vanuit Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 U kunt dit opnieuw creëren met de Setup Assistant agent:
 
@@ -163,7 +163,7 @@ U kunt dit opnieuw creëren met de Setup Assistant agent:
 3. De agent zal een vergelijkbaar thema genereren
 4. Uw site_brief wordt opgeslagen voor toekomstige referentie
 
-### Mijn bestaande Site Builder site werkt niet
+### Mijn bestaande Site Builder site werkt niet {#my-existing-site-builder-site-isnt-working}
 
 Bestaande sites die met Site Builder mode zijn gemaakt, blijven werken. Als u problemen ondervindt:
 
@@ -172,7 +172,7 @@ Bestaande sites die met Site Builder mode zijn gemaakt, blijven werken. Als u pr
 3. Controleer de WordPress error logs
 4. Neem contact op met de support als de problemen aanhouden
 
-### Kan ik nog mijn oude Site Builder templates gebruiken?
+### Kan ik nog mijn oude Site Builder templates gebruiken? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder templates zijn niet langer beschikbaar. Echter:
 
@@ -180,14 +180,14 @@ Site Builder templates zijn niet langer beschikbaar. Echter:
 - U kunt vergelijkbare sites opnieuw creëren met de Setup Assistant agent
 - De Setup Assistant agent biedt meer aanpassingsmogelijkheden
 
-## Volgende stappen
+## Volgende stappen {#next-steps}
 
 1. **Voor nieuwe sites**: Gebruik de Setup Assistant agent
 2. **Voor bestaande sites**: Blijf ze gebruiken zoals ze zijn
 3. **Voor themawijzigingen**: Vraag hulp aan de Setup Assistant agent
 4. **Voor designverfijning**: Gebruik de Design System Aesthetics skill
 
-## Gerelateerde onderwerpen
+## Gerelateerde onderwerpen {#related-topics}
 
 - **Theme Builder Onboarding**: Geleide opzet voor custom themes
 - **Setup Assistant Agent**: Agent-geleide site-opzet

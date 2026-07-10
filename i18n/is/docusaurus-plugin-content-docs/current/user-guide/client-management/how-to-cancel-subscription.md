@@ -3,7 +3,7 @@ title: Hvernig skal einloka skráningu
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hvernig get ég kannla þennan skýrslu?
+# Hvernig get ég kannla þennan skýrslu? {#how-can-i-cancel-my-subscription}
 
 Ef þér er Ultimate Multisite lísen, geturðu kannla uppfærslu á því hvorkeri sem vilja þú. Fátt bara eftir að fylgja eftir stega hér:
 

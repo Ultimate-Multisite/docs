@@ -3,7 +3,7 @@ title: Membershipu cancelatzea
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membershiparen cancelatzea (v2)
+# Membershiparen cancelatzea (v2) {#canceling-a-membership-v2}
 
 _**IMPORTANTE NOTA: Horri referentzia Ultimate Multisite bertsio 2.x iritzitzen da.**_
 

@@ -4,23 +4,23 @@ title: Filtrační - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
 _i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filter: mu_migration/export/user/data
+# Filter: mu_migration/export/user/data {#filter-mumigrationexportuserdata}
 
 Filtruje výchozí soubor uživatelských údajů, které mají být exportovány nebo importovány.
 
-## Parametry
+## Parametry {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $custom_user_data | `array` | Pole s vlastními uživatelskými daty. |
 | $user | `\WP_User` | Objekt uživatele. |
 
-### Od
+### Od {#since}
 
 - 0.1.0
-### Zdroj
+### Zdroj {#source}
 
 - Definováno v [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L335) na řádku 335
 - Definováno v [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) na řádku 147
-## Vrací
+## Vrací {#returns}
 Pole s daty uživatele.

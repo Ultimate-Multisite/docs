@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Slugified ağ seçeneği değerini döndürür.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Türü | Açıklama |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Slugified ağ seçeneği değerini döndürür.
 | $option_name | `string` | Seçenek adı. |
 | $default | `mixed` | Varsayılan değer. |
 
-### Ne zaman
+### Ne zaman {#since}
 
 - 1.9.6
-### Kaynak
+### Kaynak {#source}
 
 [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) dosyasında 126. satırda tanımlanmıştır.
 
 
-## Döndürür
+## Döndürür {#returns}
 Slugfield ağ seçeneği değerini.

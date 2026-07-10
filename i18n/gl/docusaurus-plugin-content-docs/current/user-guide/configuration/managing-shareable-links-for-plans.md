@@ -3,7 +3,7 @@ title: Xestión de enlaces partilhables para planes
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gestionar Enlaces Compartibles para Planes
+# Gestionar Enlaces Compartibles para Planes {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ofrece a ti a opción de compartir enlaces de planes directamente con os clientes. Para hacer isto, ve a calquera das páxinas de edición dos teus planes e pulsa no botón _Click to copy the Shareable Link_ (Clic para copiar o Enlace Compartible).
 

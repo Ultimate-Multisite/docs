@@ -3,7 +3,7 @@ title: Iskrivi l-endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint API Register ta l-Ultimate Multisite
+# Endpoint API Register ta l-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 F'dieturja li t-tutorial dan, tmur impiegaw l-endpoint API /register tal-Ultimate Multisite biex tgħin il proċess kollu ta onboarding għal magħrupp ġdid fil-network tiegħek u kif tista tfarmi dan ma' Zapier.
 
@@ -29,11 +29,11 @@ Iżgħar għal **Enable API** u jaffil il-credentials API tiegħek.
 
 Morn, nistessporli l-endpoint u poi nifhmu kif tista tgħmli l-action ta registrazzjoni f'Zapier.
 
-## Parament tal-korpo tal-endpoint (Endpoint body parameters)
+## Parament tal-korpo tal-endpoint (Endpoint body parameters) {#endpoint-body-parameters}
 
 Niddeħħol għall-vista minnna dwar il-informazzjoni minimja li għandna trid naċċetta biex niffili l-endpoint. F'edda dan, tmur tikkung il-chiamata kollha.
 
-### Customer
+### Customer {#customer}
 
 Dan huwa l-informazzjoni li hija preżeduta biex jiemmu creat l-User u l-Customer tal-Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Il huwa possibile inviare l'ID tal-klijenti creatu fl-network tiegħek. Jekk ma 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 L-informazzjoni li nitħobb f'dinja dan l-objett hija il-Status tal-Membership.
 
 "membership" { "status" : "string", // wieħed minn "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Il-prodotti jgħandu array li jista' jkun b'1 jew aktar ID tal-prodott mill-network tiegħek. Attentjoni, dan l-endpoint ma jcrea prodottix. Iċċekkja l-dokumentazzjoni ta Ultimate Multisite biex tfittex aħjar biex tifhem l-endpoint li jcrea prodotti.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Kif ma għandna mal-Membership, nitħobb biss is-status.
 
 **"payment" { "status" : "string", // wieħed minn "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 U biex nġib l-kunsill, nitħobb l-URL u it-Titlu tal-site f'dinja dan l-objett.
 
@@ -69,13 +69,13 @@ U biex nġib l-kunsill, nitħobb l-URL u it-Titlu tal-site f'dinja dan l-objett.
 
 Irriżult tal-endpoint ta registrazzjoni se jkun array b'informazzjoni tal-membership li tistabbiluta.
 
-## Kreaw l-azione f Zapier
+## Kreaw l-azione f Zapier {#creating-an-action-in-zapier}
 
 Ma għall-introduzzjoni tal-endpoint ġdid u aktar robust għat-crea konti, tieq il-nuove azzjoni f Zapier.
 
 Tgħinni kif tista' u tiftaħ biex tiġi l-nuvina ta Zapier? Tgħallem aktar hemm l-link. (link?)
 
-### Kreaw l-azione
+### Kreaw l-azione {#creating-an-action}
 
 Għal tfassli b'mod aktar ben kif tista' uża l-endpoint ta registrazzjoni mal-Zapier, n-nittba integrazzjoni ma' Google Forms. Matul is-form huwa jmull jgħleb u l-informazzjoni giċċertja fl-sheet tal-risposta tal-form, se jkun newti membership جديد f'network Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Mentre li informazzjoni hija impostata, procedi għall-test finali. Mall-screen 
 
 Test il-Zap tiegħek u jista' jkomplettu b'suċċess. Jekk ġejjeb qualche errore, tikkontrolla kull field u se qed jiġi trassett mill-mod corretto. Għandna ħafna informazzjoni, għoli xi ħaġa tista' la jgħidha.
 
-### Parametri kumpli tal-endpoint
+### Parametri kumpli tal-endpoint {#complete-endpoint-parameters}
 
 Hawn huwa l-chiam tal-call kumpli u kull possibilità tal-fields li jista' jiġu trassetti.
 

@@ -3,17 +3,17 @@ title: Ekspor & Impor
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Ekspor & Impor
+# Ekspor & Impor {#export--import}
 
 Ultimate Multisite 2.9.0 menambahkan alat **Ekspor & Impor** untuk situs tunggal di bawah **Tools > Export & Import**. Gunakan alat ini jika Anda perlu mengemas satu situs WordPress sebagai file ZIP, memulihkan ZIP tersebut, atau memindahkan situs antara instalasi WordPress Ultimate Multisite dan situs tunggal yang kompatibel.
 
-## Izin yang Diperlukan
+## Izin yang Diperlukan {#required-permissions}
 
 Anda harus masuk sebagai administrator yang dapat mengakses menu **Tools** WordPress pada situs yang akan diekspor atau diimpor. Pada jaringan multisite, gunakan akun administrator jaringan saat mengekspor atau mengimpor subsites dari alat Ultimate Multisite tingkat jaringan.
 
 Unduhan ZIP ekspor disajikan melalui *endpoint* unduhan terautentikasi, jadi pastikan sesi admin tetap aktif sampai unduhan selesai dan jangan membagikan URL unduhan yang dihasilkan secara publik.
 
-## Mengekspor situs ke ZIP
+## Mengekspor situs ke ZIP {#exporting-a-site-to-a-zip}
 
 1. Di admin WordPress untuk situs yang ingin Anda salin, buka **Tools > Export & Import**.
 2. Buka area ekspor dan pilih situs yang ingin Anda kemas.
@@ -23,7 +23,7 @@ Unduhan ZIP ekspor disajikan melalui *endpoint* unduhan terautentikasi, jadi pas
 
 Simpan ZIP di lokasi yang aman. File ini dapat berisi konten situs, pengaturan, file media, dan aset kode yang dipilih.
 
-## Apa yang disertakan dalam ekspor
+## Apa yang disertakan dalam ekspor {#what-the-export-includes}
 
 ZIP ekspor dapat berisi:
 
@@ -34,7 +34,7 @@ ZIP ekspor dapat berisi:
 
 Ukuran ZIP yang tepat tergantung pada jumlah media, plugin dan tema yang dipilih, serta ukuran tabel database situs.
 
-## Mengimpor situs dari ZIP
+## Mengimpor situs dari ZIP {#importing-a-site-from-a-zip}
 
 1. Buka **Tools > Export & Import** pada situs WordPress tujuan.
 2. Buka area impor dan unggah ZIP yang dibuat oleh alat Export & Import.
@@ -46,7 +46,7 @@ Ukuran ZIP yang tepat tergantung pada jumlah media, plugin dan tema yang dipilih
 
 Pada instalasi WordPress situs tunggal, mengimpor ZIP akan mengganti situs saat ini dengan situs yang diimpor. Buat cadangan penuh (*full backup*) dari situs target sebelum Anda mulai, dan hindari memulai beberapa impor untuk situs yang sama pada waktu yang bersamaan.
 
-## Batasan dan catatan kompatibilitas
+## Batasan dan catatan kompatibilitas {#limitations-and-compatibility-notes}
 
 - Direktori unggahan atau pustaka media yang sangat besar dapat menghasilkan file ZIP yang besar. Konfirmasikan batas unggahan PHP, batas eksekusi, ruang disk, memori, dan pengaturan *timeout* server sebelum mengekspor atau mengimpor situs besar.
 - Pustaka media yang sangat besar mungkin perlu dipindahkan selama jendela pemeliharaan dengan lalu lintas rendah.

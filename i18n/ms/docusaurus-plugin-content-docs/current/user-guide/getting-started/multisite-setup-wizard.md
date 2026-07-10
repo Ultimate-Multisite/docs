@@ -3,7 +3,7 @@ title: Wizard Persediaan Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Wizard Persediaan Multisite
+# Wizard Persediaan Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite dilengkapi dengan wizard terbina dalam yang menukar pemasangan WordPress standard kepada rangkaian WordPress Multisite secara automatik. Ini menghapuskan keperluan untuk mengedit `wp-config.php` secara manual atau menjalankan arahan pangkalan data.
 
@@ -11,13 +11,13 @@ Ultimate Multisite dilengkapi dengan wizard terbina dalam yang menukar pemasanga
 Jika pemasangan WordPress anda sudah beroperasi sebagai rangkaian Multisite, anda boleh langkau langkah ini sepenuhnya. Wizard ini hanya muncul apabila Multisite belum diaktifkan.
 :::
 
-## Bilakah Wizard Ini Muncul?
+## Bilakah Wizard Ini Muncul? {#when-does-the-wizard-appear}
 
 Apabila anda mengaktifkan Ultimate Multisite pada pemasangan WordPress standard (bukan Multisite), plugin akan mengesan bahawa Multisite tidak diaktifkan dan secara automatik mengalihkan anda ke Wizard Persediaan Multisite dan bukannya wizard persediaan biasa.
 
 Anda juga boleh mengaksesnya secara terus di **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prasyarat
+## Prasyarat {#prerequisites}
 
 Sebelum menjalankan wizard, pastikan:
 
@@ -29,7 +29,7 @@ Sebelum menjalankan wizard, pastikan:
 Wizard ini mengubah suai fail `wp-config.php` anda dan mencipta jadual pangkalan data baharu. Sentiasa buat sandaran sebelum meneruskan.
 :::
 
-## Langkah 1: Selamat Datang
+## Langkah 1: Selamat Datang {#step-1-welcome}
 
 Skrin pertama menerangkan apa itu WordPress Multisite dan apa yang akan dilakukan oleh wizard:
 
@@ -42,11 +42,11 @@ Skrin pertama menerangkan apa itu WordPress Multisite dan apa yang akan dilakuka
 
 Klik **Continue** untuk meneruskan.
 
-## Langkah 2: Konfigurasi Rangkaian
+## Langkah 2: Konfigurasi Rangkaian {#step-2-network-configuration}
 
 Langkah ini meminta anda untuk mengkonfigurasi tetapan rangkaian anda.
 
-### Struktur Laman
+### Struktur Laman {#site-structure}
 
 Pilih bagaimana laman rangkaian anda akan disusun:
 
@@ -57,11 +57,11 @@ Pilih bagaimana laman rangkaian anda akan disusun:
 Jika anda memilih sub-domain, anda perlu mengkonfigurasi **wildcard DNS** dan **sijil SSL wildcard** untuk domain anda. Kebanyakan hos WordPress terurus mengendalikan ini secara automatik. Lihat [Ultimate Multisite 101](./ultimate-multisite-101) untuk perbandingan terperinci.
 :::
 
-### Tajuk Rangkaian
+### Tajuk Rangkaian {#network-title}
 
 Masukkan nama untuk rangkaian anda. Ini ditetapkan secara lalai kepada tajuk laman semasa anda dengan "Network" ditambah di hujung. Anda boleh mengubahnya kemudian dari tetapan rangkaian.
 
-### E-mel Pentadbir Rangkaian
+### E-mel Pentadbir Rangkaian {#network-admin-email}
 
 Alamat e-mel yang digunakan untuk pemberitahuan pentadbiran rangkaian. Ini ditetapkan secara lalai kepada alamat e-mel pengguna semasa.
 
@@ -69,7 +69,7 @@ Alamat e-mel yang digunakan untuk pemberitahuan pentadbiran rangkaian. Ini ditet
 
 Selepas mengisi ruangan, klik **Continue** untuk meneruskan.
 
-## Langkah 3: Pemasangan
+## Langkah 3: Pemasangan {#step-3-installation}
 
 Klik butang **Install** untuk memulakan. Wizard melaksanakan lima langkah automatik secara berurutan, setiap satu menunjukkan kemajuannya secara masa nyata:
 
@@ -96,7 +96,7 @@ Sebaik sahaja semua langkah berjaya diselesaikan, anda akan melihat status hijau
 
 Wizard kemudian akan meneruskan secara automatik ke skrin penyelesaian.
 
-## Langkah 4: Selesai
+## Langkah 4: Selesai {#step-4-complete}
 
 Sebaik sahaja pemasangan selesai, anda akan melihat mesej kejayaan yang mengesahkan bahawa WordPress Multisite telah diaktifkan.
 
@@ -108,7 +108,7 @@ Anda kini boleh meneruskan dengan wizard persediaan Ultimate Multisite untuk men
 Selepas pemasangan multisite selesai, pelayar anda akan dialihkan melalui pentadbir rangkaian yang baru diaktifkan. Anda mungkin perlu log masuk semula kerana kuki pengesahan dikemas kini untuk persekitaran multisite.
 :::
 
-## Persediaan Manual Sebagai Alternatif
+## Persediaan Manual Sebagai Alternatif {#manual-setup-fallback}
 
 Jika wizard tidak dapat menulis ke fail `wp-config.php` anda (disebabkan kebenaran fail atau sekatan pelayan), ia akan memaparkan kod tepat yang perlu anda tambah secara manual:
 
@@ -117,9 +117,9 @@ Jika wizard tidak dapat menulis ke fail `wp-config.php` anda (disebabkan kebenar
 
 Selepas membuat perubahan manual, muat semula halaman dan wizard akan mengesan bahawa multisite kini aktif.
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
-### Wizard menyatakan wp-config.php tidak boleh ditulis
+### Wizard menyatakan wp-config.php tidak boleh ditulis {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proses pelayan web anda memerlukan kebenaran menulis ke fail `wp-config.php`. Anda boleh sama ada:
 
@@ -127,7 +127,7 @@ Proses pelayan web anda memerlukan kebenaran menulis ke fail `wp-config.php`. An
 - Menggunakan arahan persediaan manual alternatif yang disediakan oleh wizard
 - Meminta bantuan daripada penyedia hosting anda
 
-### Laman tidak boleh diakses selepas persediaan (subdomain)
+### Laman tidak boleh diakses selepas persediaan (subdomain) {#sites-are-not-accessible-after-setup-subdomains}
 
 Jika anda memilih struktur subdomain, anda perlu mengkonfigurasi **wildcard DNS** untuk domain anda. Tambah rekod DNS:
 
@@ -139,7 +139,7 @@ Value: [IP pelayan anda]
 
 Semak dengan penyedia hosting anda jika anda tidak pasti cara mengkonfigurasi ini.
 
-### Masalah pengesahan selepas persediaan
+### Masalah pengesahan selepas persediaan {#authentication-issues-after-setup}
 
 Jika anda dilog keluar atau mengalami ralat kuki selepas persediaan multisite:
 
@@ -147,7 +147,7 @@ Jika anda dilog keluar atau mengalami ralat kuki selepas persediaan multisite:
 2. Log masuk semula di `yourdomain.com/wp-login.php`
 3. Jika masalah berterusan, semak bahawa `wp-config.php` anda tidak mempunyai `COOKIE_DOMAIN` ditetapkan kepada `false` — ini adalah isu yang diketahui pada pemasangan multisite subdomain
 
-### Satu langkah gagal semasa pemasangan
+### Satu langkah gagal semasa pemasangan {#a-step-failed-during-installation}
 
 Jika salah satu langkah pemasangan menunjukkan ralat:
 

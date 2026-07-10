@@ -1,22 +1,22 @@
 ---
 title: Cothromacht Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Intégráid le Hostinger (hPanel)
+# Intégráid le Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Oibríocht
+## Oibríocht {#overview}
 
 Is é Hostinger curte oiriún web hosting le panel cothromach a cheart go léir, againn an hPanel. Féachfaidh an intégráid Ultimate Multisite Hostinger a fáil amach na sincontróin domáin go hiomlán idir Ultimate Multisite agus an hPanel de Hostinger, ag fáil amach ar chuid mapping domáin agus subdomáin go díreach ó chuid admin WordPress.
 
-## Feicharásanna
+## Feicharásanna {#features}
 
 - Creátiún domáin adda in hPanel
 - Creátiún subdomáin adda in hPanel (do chuid instaltaí multisite subdomain)
 - Taispeán domáin nuair a bhfáineann curruin mapping
 - Intégráid leatla leatla le hAIP de haghaidh curruin domáin de Hostinger
 
-## Cuidiúir
+## Cuidiúir {#requirements}
 
 Leat a bheith ag úsáid an intégráid Hostinger, ag teacht duit:
 
@@ -35,9 +35,9 @@ Ar chuid optional, leat a fáil amach:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API de chuid default
 ```
 
-## Cuidiúir Setup
+## Cuidiúir Setup {#setup-instructions}
 
-### 1. Déan Token API Hostinger atá
+### 1. Déan Token API Hostinger atá {#1-generate-your-hostinger-api-token}
 
 1. Login go do account Hostinger agus fáil access ar an hPanel
 2. Taispeáin go **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API 
    - Subdomain management
 6. Coptaigh an token a bhfáineadh agus storaigh é go séalaidh
 
-### 2. Fáil an ID do Account
+### 2. Fáil an ID do Account {#2-find-your-account-id}
 
 1. In hPanel, go **Account Settings** → **Account Information**
 2. Tá an ID do Account ag tairgseán ar an cur chuireann seo
 3. Coptaigh agus storaigh an ID seo leat do chuid chéadain
 
-### 3. Add Constants i wp-config.php
+### 3. Add Constants i wp-config.php {#3-add-constants-to-wp-configphp}
 
 Add na cosaint seo i do `wp-config.php`:
 
@@ -69,7 +69,7 @@ Má tá an account Hostinger agat API endpoint eile, leat tú é a chur chuim:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Fáilte ar an Iompair
+### 4. Fáilte ar an Iompair {#4-enable-the-integration}
 
 1. Ag cur in admin WordPress agat **Ultimate Multisite > Settings**
 2. Cur isteach i **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Fáilte ar an iompair **Hostinger (hPanel)**
 5. Cliog ar **Save Changes**
 
-## Conas Tá É seo Ag Bhéid
+## Conas Tá É seo Ag Bhéid {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Nuair a mapáir tú domain ag Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Nuair a mapáir tú domain ag Ultimate Multisite:
 2. Beann an domain a chur ar an cur (root directory) agat
 3. Nuair a bhíonn an mapáir domain ag cur isteach, beann an iompair a bhaint an addon domain ar hPanel go hiomlán
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Para installation multisite ar subdomain, nuair a chruthúla site nua:
 
@@ -95,7 +95,7 @@ Para installation multisite ar subdomain, nuair a chruthúla site nua:
 2. Bidd cur isteach ar API Hostinger chun an subdomain a chuid féach ar addon domain
 3. Beann an subdomain a chur ar an cur (root directory) agat
 
-## Note Dáibh
+## Note Dáibh {#important-notes}
 
 - Bú tá an iompair ag úsáid REST API Hostinger chun cur chuim leat ar do account
 - Is féidir leis an api token atá ag cur fhéachanna ag cur fhéachanna ag cur chuim ar domain agus ar subdomain
@@ -103,33 +103,33 @@ Para installation multisite ar subdomain, nuair a chruthúla site nua:
 
 - Bidd cur isteach ar HTTPS go cur fhéachán ar an api token agat agus níl aon phostáil é ar chuid fhocaldaí.
 
-## Treoirí
+## Treoirí {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 
 - Déanáil an t-token API a bhfuil sé go bhfuil sé ceart agus níl sé deachailte
 - Déan cinnte go bhfuil an ID Account agat ceart
 - Déan cinnte go bhfuil an t-token API ag cur fhéidiríocht ag cur mhaith leis an dómhaín
 - Déan cinnte go bhfuil an account Hostinger agat ábraint agus ag cur mhaith
 
-### Dómhaín Níl Ag Cur
+### Dómhaín Níl Ag Cur {#domain-not-added}
 
 - Déan ar chuid log Ultimate Multisite chun aon rud éifeachtach a bheith ag cur fhéidiríocht
 - Déan cinnte go níl an dómhaín ag cur fhéidiríocht agat ag cur mhaith i do account Hostinger
 - Déan cinnte go bhfuil an account Hostinger agat níl ag cur leath an talamh ar chuid domáin addann
 - Déan cinnte go bhfuil an dómhaín ag cur cur fhéidiríocht go ceart ar do nameservers Hostinger
 
-### Cisteanna SSL
+### Cisteanna SSL {#ssl-certificate-issues}
 
 - Níl an cur chuig an t-token API ag cur fhéidiríocht cisteanna SSL
 - Tugann Hostinger tí ar chuid cisteanna SSL freé ag AutoSSL
 - Is féidir leat cur rialacha cisteanna SSL go díreach i hPanel ar **SSL/TLS**
 - Mar chuid eile, úsáid Let's Encrypt le feidhm AutoSSL de Hostinger
 
-## Cuimhneacháin
+## Cuimhneacháin {#support}
 
 For cur fhéidiríocht eile le cur Hostinger, le ghnáthach ar:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

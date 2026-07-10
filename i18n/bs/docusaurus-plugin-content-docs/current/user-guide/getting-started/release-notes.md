@@ -1,82 +1,96 @@
 ---
-title: Napomene o izdanju
+title: Bilješke o izdanju
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Napredne napomene (Release Notes)
+# Bilješke o izdanju {#release-notes}
 
-## Verzija 2.12.0 — Obraćeno 2026-05-15
+## Verzija 2.13.0 — Objavljeno 2026-06-05 {#version-2130--released-on-2026-06-05}
 
-- Novo: Dodali smo Hostinger (hPanel) kao podržan provajder hostinga sa integracijom mapiranja domena.
-- Novo: Site Exporter sada rukuje paketima za uvoz na nivou mreže, što pojednostavljuje obnavljanje sajtova na cijeloj mreži.
-- Popravak: Email-i za BCC broadcast sada koriste zaglavlje `undisclosed-recipients` kako bi spriječili otkrivanje adresa primaoca.
-- Popravak: Datum isteka članstva više nije oštećen prilikom spremanja sa ne-datum vrijednošću.
-- Popravak: Ažuriranja članstva za Stripe sada ispravno brišu popuste bez pozivanja zastarjelog `deleteDiscount` API-ja.
-- Popravak: SSO preusmjeravanja na sajtovima mapiranih domena sada su ograničena kako bi spriječili beskonačne petlje preusmjeravanja.
-- Popravak: Odabir slike u setup wizardu sada ispravno ažurira osnovni model podataka.
-- Popravak: Site Exporter CLI sada zadržava ispravan podrazumevani izbor sajta na nivou mreže.
-- Poboljšano: Uklonjen je pakovani `wp-cli` iz paketa plugin-a, smanjivanjem veličine plugin-a.
+- Novo: Dodana je podrška za sovereign-tenant za tokove korisničkog accounta, checkouta, naplate, stranice, fakture, prebacivanja templatea i mapiranja domena kako bi tenant mreže mogle usmjeriti korisnike nazad na glavnu stranicu za upravljane radnje.
+- Novo: Dodane su provjere vjerodajnica za obnovu za ponavljajuća članstva kako bi gatewayi mogli onemogućiti automatsku obnovu kada nedostaje sačuvani ugovor o naplati, pretplata ili vault token.
+- Novo: Dodano je HMAC-verificirano loopback objavljivanje za kreiranje stranice na čekanju kako bi provisioning od checkouta do stranice bio pouzdaniji na hostovima gdje pozadinski poslovi kasne.
+- Novo: Dodane su razvojne tačke proširenja za SSO URL-ove, bazne domene checkout-forme i automatsko kreiranje zapisa domena.
+- Ispravka: SSO je pouzdaniji preko mapiranih domena, anonimnih posjeta brokera, odjave i konflikata zavisnosti između plugina.
+- Ispravka: Kreiranje stranice na čekanju sada se oporavlja od zastarjelih oznaka objave i izbjegava da korisnici ostanu zaglavljeni na ekranu za kreiranje stranice.
+- Ispravka: Zapisi domena se više ne kreiraju za zajedničke bazne domene checkout-forme, a neiskorišteni pozadinski poslovi host-providera se preskaču kada nijedna integracija nije aktivna.
+- Ispravka: Rubni slučajevi checkouta, adrese za naplatu, resetovanja lozinke, verifikacije emaila, prebacivanja templatea, obilazaka i korisničkog dashboarda više ne blokiraju normalne korisničke tokove.
+- Ispravka: Broadcast emailovi sada čuvaju primaoce privatnim, a istovremeno izbjegavaju fatalne SMTP/plugin greške kada liste primalaca ili mail transporti zakažu.
+- Ispravka: Rubni slučajevi obnova članstva, prikaza isteka i naplate plaćanja sada izbjegavaju trenutne isteke, rušenja ili propuštena obavezna plaćanja.
+- Poboljšano: WordPress kompatibilnost je testirana do verzije 7.0, produkcijski Vue asseti su ponovo izgrađeni iz npm izvora, a Cypress end-to-end pokrivenost sada testira više checkout, setup, SSO i gateway tokova.
 
-## Verzija 2.11.0 — Obraćeno 2026-05-11
+## Verzija 2.12.0 — Objavljeno 2026-05-15 {#version-2120--released-on-2026-05-15}
 
-- Novo: Izvoz sajtova sada pakuje samostalno pokretni `index.php`, tako da se ZIP može instalirati na novom hostu bez zasebnog instaliranja plugin-a.
-- Novo: Izvoz na nivou mreže omogućava administratorima da izvezu sve podsajtove u jednom arhivu sa stranice za administraciju Site Export-a.
-- Novo: Omogućavanje prekida (toggle) Site Templates plan sada je primijenjeno putem lanca fallback-a, pravilno ograničavajući dostupnost šablona za ograničenja plana.
-- Novo: Uređivač formulara za checkout upozorava kada se dodaje proizvod bez konfigurisanog obaveznog polja.
-- Novo: Tab za postavke Uvoz/Izvoz sada jasno opisuje svoj opseg i direktno vodi do alata Site Export.
+- Novo: Dodan je Hostinger (hPanel) kao podržani host provider s integracijom mapiranja domena
+- Novo: Site Exporter sada obrađuje pakete za mrežni uvoz radi pojednostavljene obnove stranica na nivou cijele mreže
+- Ispravka: BCC broadcast emailovi sada koriste zaglavlje undisclosed-recipients kako bi se spriječilo otkrivanje adresa primalaca
+- Ispravka: Datum isteka članstva se više ne oštećuje pri čuvanju s vrijednošću koja nije datum
+- Ispravka: Stripe ažuriranja članstva sada ispravno uklanjaju popuste bez pozivanja zastarjelog deleteDiscount API-ja
+- Ispravka: SSO preusmjeravanja na stranicama s mapiranim domenima sada su ograničena kako bi se spriječile beskonačne petlje preusmjeravanja
+- Ispravka: Odabir u image pickeru setup wizarda sada ispravno ažurira osnovni model podataka
+- Ispravka: Site Exporter CLI sada čuva ispravan izbor zadane mrežne stranice
+- Poboljšano: Uklonjen je uključeni wp-cli iz paketa plugina, čime je smanjena veličina plugina
 
-## Verzija 2.10.0 — Obraćeno 2026-05-05
+## Verzija 2.11.0 — Objavljeno 2026-05-11 {#version-2110--released-on-2026-05-11}
 
-- Novo: Vođeni setup wizard za PayPal omogućava ručni unos vjerodajnica, sa OAuth flag gate-om za neprekidnu konfiguraciju gateway-a.
-- Novo: Panel za klijente za prebacivanje šablona (Template switch) revidiran je sa karticom trenutnog šablona, trajnim gridom i dugmetom **Reset current template** (Resetovanje trenutnog šablona).
-- Popravak: Prebacivanje šablona više ne dovodi do zamrzavanja korisničkog interfejsa (UI) u slučaju AJAX neuspjeha.
-- Popravak: Statusi dozvole za prebacivanje šablona osigurani su protiv neovlaštenog pristupa.
-- Popravak: Unosi nadjačavanja sajta (Site override inputs) validirani su prije spremanja.
-- Popravak: Prompt za adresi za naplatu sada se prikazuje kada je adresa prazna.
-- Popravak: Riješeni su upozorenja o deprecaciji (PHP 8.1 null-to-string).
-- Popravak: Currents učitava se putem lazy-loaded before init hook-a kako bi spriječio vremenske probleme.
-- Popravak: Filtrirani SSO put (path) poštuje se kroz sve tokove prijave.
-- Popravak: Opcije za prazan identitet sajta (Blank site identity) zadržane su prilikom spremanja.
+- Novo: Izvozi stranica sada uključuju self-booting `index.php` tako da se ZIP može instalirati na svjež host bez zasebne instalacije plugina.
+- Novo: Mrežni izvoz omogućava administratorima da izvezu sve podstranice u jednoj arhivi sa stranice za administraciju Site Export.
+- Novo: Prekidač plana Allow Site Templates sada se provodi putem fallback lanca, ispravno ograničavajući dostupnost templatea prema limitima plana.
+- Novo: Editor checkout forme upozorava kada se proizvod doda bez konfigurisanog obaveznog polja.
+- Novo: Kartica postavki Import/Export sada jasno opisuje svoj opseg i direktno povezuje na alat Site Export.
 
-## Verzija 2.9.0 — Obraćeno 2026-04-30
+## Verzija 2.10.0 — Objavljeno 2026-05-05 {#version-2100--released-on-2026-05-05}
 
-- Novo: Dodali smo izvoz i uvoz pojedinačnog sajta pod **Tools > Export & Import**.
-- Popravak: ZIP fajlovi za izvoz sada se serviraju putem autentificiranog endpoint-a za preuzimanje.
-- Popravak: Ispravljen rizik od SQL injekcije i problemi sa upitima u pending izvoz/uvoz upitima.
-- Popravak: Pending sajt se ne objavljuje kada administrator ručno provjeri email klijenta.
-- Popravak: Čisteći su se "sirovi" (orphan) zapisi `pending_site` kada nedostaje članstvo.
-- Popravak: Ispravljen padding navigacije postavki i navigacija sidrom za pretragu.
-- Popravak: Pending sajtovi sada se prikazuju prvi u prikazu "All Sites" (Svi sajtovi).
-- Popravak: Dodat User-Agent zaglavlje za provajdera snimaka ekrana (mShots) kako bi se spriječili 403 errori.
-- Popravak: Riješena je kružna zavisnost (circular dependency) za cron raspored uvoza.
-- Popravak: ID-ovi za ture (Tour IDs) normalizovani su na podvučnike u ključevima postavki korisnika.
-- Poboljšano: Umjesto Alchemy/Zippy, sada se koristi ZipArchive za bolju kompatibilnost.
+- Novo: PayPal vođeni setup wizard za ručni unos vjerodajnica s OAuth flag gateom za besprijekornu konfiguraciju gatewaya.
+- Novo: Korisnički panel za prebacivanje templatea redizajniran je s karticom trenutnog templatea, trajnom mrežom i dugmetom **Reset current template**.
+- Ispravka: Prebacivanje templatea više ne blokira UI pri AJAX neuspjehu.
+- Ispravka: Stanja dozvola za prebacivanje templatea osigurana su protiv neovlaštenog pristupa.
+- Ispravka: Unosi za nadjačavanje stranice validirani su prije čuvanja.
+- Ispravka: Upit za adresu za naplatu sada se prikazuje kada je adresa prazna.
+- Ispravka: PHP 8.1 obavještenja o zastarjelosti null-to-string su riješena.
+- Ispravka: Currents se lazy-loaduju prije init hooka kako bi se spriječili problemi s tajmingom.
+- Ispravka: Filtrirana SSO putanja poštuje se u svim tokovima prijave.
+- Ispravka: Prazne opcije identiteta stranice čuvaju se pri spremanju.
 
-## Verzija 2.8.0 — Obraćeno 2026-04-29
+## Verzija 2.9.0 — Objavljeno 2026-04-30 {#version-290--released-on-2026-04-30}
 
-- Novo: Dodali smo preklopnik (toggle) 'Enable Jumper' u UI za opcije 'Other Options' (Ostale opcije).
-- Novo: Dodana je kolona statusa u tabelu sa listom formulara za checkout.
-- Novo: Dodat addon sunrise file loader za prilagođene MU-plugin sunrise ekstenzije.
-- Poboljšano: Uklonjena je opcija za uključivanje izvještavanja o greškama sa stranice postavki.
-- Popravak: Kartica sajta na stranici "Hvala" — slika sada je ograničena i linkovi pravilno stilizovani.
-- Popravak: Provajder snimaka ekrana prebačen je sa thum.io na WordPress.com mShots.
-- Popravak: Enable Registration i Default Role sada postavljaju ispravne podrazumevane vrijednosti na novoj instalaciji.
-- Popravak: `get_site_url()` više ne vraća prazno kada domen uključuje port.
-- Popravak: Kopiranje media fajlova sada se ispravno kopira kada je postavka `copy_media` bila prazna.
-- Popravak: Object cache se sada ispravno poništava nakon pisanja sitemeta putem `network-activate`.
-- Popravak: Custom domen automatski se unapređuje u primarni na DNS provjeri za domene sa 3 dijela.
-- Popravak: Pending članstvo otkazano je kada se čisti istekao plaćanje.
-- Popravak: Provera snage lozinke ponovno se vezuje nakon što se zatvori inline login prompt.
-- Popravak: Zaustavljeno je beskonačno ponovno učitavanje stranice na stranici "Hvala" kada je sajt već kreiran.
-- Popravak: Opcija registracije WP core sinkronizovana je prilikom aktivacije plugin-a i spremanja postavki.
-- Popravak: Dodata je zaštita od null vrijednosti u `calculate_expiration` za kompatibilnost sa PHP 8.4.
-- Popravak: Dupli registracije blokirani su kada klijent već ima aktivno članstvo.
-- Popravak: Dodata je provjera null za `date_expiration` u checkout-u.
-- Popravak: Hardened je provizija sajta — ograničenja, inferencija članstva, promocija domena.
-- Popravak: Status oznake pre-instalacije ispravljen je na NOT Activated kada provera ne uspije.
-- Popravak: Domen checkout-a korišten za URL-ove za provjeru emaila.
-- Popravak: Auto-login nakon checkout-a kada nema polja za lozinku.
-- Popravak: Besplatno članstvo više ne ističe — tretira se kao doživotno.
-- Popravak: Email verifikacioni gate zadržava objavljivanje sajta dok klijent ne provjeri email.
-- Popravak: Ispravljen je bazni put i ruta identiteta za SES v2 API endpoint.
-- Popravak: Hook `wu_inline_login_error` emitovan je u pre-submit catch bloku.
+- Novo: Izvoz i uvoz jedne stranice dodani su pod **Alati > Izvoz i uvoz**.
+- Ispravka: Export ZIP fajlovi sada se isporučuju preko autentificiranog endpointa za preuzimanje.
+- Ispravka: Rizik od SQL injectiona i problemi s upitima u upitima za izvoz/uvoz na čekanju su ispravljeni.
+- Ispravka: Stranica na čekanju se ne objavljuje kada admin ručno verificira korisnikov email.
+- Ispravka: Siročad pending_site zapisi se čiste kada članstvo nedostaje.
+- Ispravka: Padding navigacije postavki i navigacija preko sidra pretrage su ispravljeni.
+- Ispravka: Stranice na čekanju sada se prikazuju prve u prikazu All Sites.
+- Ispravka: Screenshot provideru (mShots) dodan je User-Agent header kako bi se spriječile 403 greške.
+- Ispravka: Riješena je kružna zavisnost cron rasporeda uvoza.
+- Ispravka: Tour ID-jevi normalizirani su na donje crte u ključevima korisničkih postavki.
+- Poboljšano: ZipArchive se sada koristi umjesto Alchemy/Zippy za bolju kompatibilnost.
+
+## Verzija 2.8.0 — Objavljeno 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- Novo: Prekidač Enable Jumper dodan u korisničko sučelje postavki Other Options.
+- Novo: Kolona statusa dodana u tabelu liste obrazaca za checkout.
+- Novo: Addon sunrise učitavač datoteka za prilagođene MU plugin sunrise ekstenzije.
+- Poboljšano: Uklonjena postavka za uključivanje prijavljivanja grešaka sa stranice postavki.
+- Ispravka: Kartica stranice za zahvalu — slika je sada ograničena, a linkovi ispravno stilizirani.
+- Ispravka: Pružalac screenshotova prebačen sa thum.io na WordPress.com mShots.
+- Ispravka: Enable Registration i Default Role sada postavljaju ispravne zadane vrijednosti pri svježoj instalaciji.
+- Ispravka: `get_site_url()` više ne vraća prazno kada domen uključuje port.
+- Ispravka: Klonirane medijske datoteke sada se ispravno kopiraju kada je postavka `copy_media` bila prazna.
+- Ispravka: Object cache ispravno invalidiran nakon network-activate upisa sitemeta.
+- Ispravka: Prilagođeni domen automatski unaprijeđen u primarni pri DNS verifikaciji za trodijelne domene.
+- Ispravka: Članstvo na čekanju otkazano kada se istekla uplata očisti.
+- Ispravka: Provjerivač jačine lozinke ponovo povezan nakon odbacivanja inline upita za prijavu.
+- Ispravka: Beskonačno ponovno učitavanje stranice zaustavljeno na stranici zahvale kada je stranica već kreirana.
+- Ispravka: WP core opcija registracije sinhronizirana pri aktivaciji plugin-a i spremanju postavki.
+- Ispravka: Zaštita od null isteka dodana u `calculate_expiration` radi kompatibilnosti s PHP 8.4.
+- Ispravka: Duplirane prijave blokirane kada kupac već ima aktivno članstvo.
+- Ispravka: Null provjera dodana za `date_expiration` u checkoutu.
+- Ispravka: Obezbjeđivanje stranice ojačano — ograničenja, zaključivanje članstva, unapređenje domena.
+- Ispravka: Oznaka statusa provjere prije instalacije ispravljena na NOT Activated kada provjera ne uspije.
+- Ispravka: Checkout domen korišten za URL-ove verifikacije emaila.
+- Ispravka: Automatska prijava nakon checkouta kada polje za lozinku nije prisutno.
+- Ispravka: Besplatna članstva više ne ističu — tretiraju se kao doživotna.
+- Ispravka: Kapija za verifikaciju emaila zadržava objavu stranice dok kupac ne verificira email.
+- Ispravka: SES v2 API endpoint osnovna putanja i ruta identiteta ispravljeni.
+- Ispravka: `wu_inline_login_error` hook emitovan u pre-submit catch bloku.

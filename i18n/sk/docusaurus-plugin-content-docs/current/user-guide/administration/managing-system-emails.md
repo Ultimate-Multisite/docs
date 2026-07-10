@@ -3,11 +3,11 @@ title: Správa e-mailov systému
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Správa systémových e-mailov
+# Správa systémových e-mailov {#managing-system-emails}
 
 Ultimate Multisite posiela rôzne systémové e-maily pre udalosti ako potvrdenia o registrácii, potvrdenia o platbe a zmeny členstva. Môžete si tieto šablóny e-mailov prispôsobiť na odpoveď vašej značky.
 
-## Zobrazenie systémových e-mailov
+## Zobrazenie systémových e-mailov {#viewing-system-emails}
 
 Pre to sa naviga do **Ultimate Multisite → Settings** a kliknete na záložku **Emails**, aby ste videli nastavenia súvisiace s e-mailom.
 
@@ -21,7 +21,7 @@ Môžete tiež upraviť jednotlivé šablóny e-mailov pomocou redaktóra systé
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Import nových šablón e-mailov
+## Import nových šablón e-mailov {#importing-new-email-templates}
 
 Nové verzie Ultimate Multisite a doplnky môžu registrovať nové šablóny e-mailov. Aby ste zabránili konfliktom, nové šablóny sa nepridávajú automaticky — musíte ich importovať manuálne.
 
@@ -32,7 +32,7 @@ Aby ste mohli importovať nové šablóny e-mailov:
 3. Premienie (toggle) možnosť **Import Emails**, aby ste videli dostupné šablóny
 4. Vyberte šablóny, ktoré chcete importovať, a potvrdíte
 
-## Resetovanie šablón e-mailov
+## Resetovanie šablón e-mailov {#resetting-email-templates}
 
 Ak ste prispôsobil jeden šablón e-mailu a chcete vrátiť sa k pôvodnému obsahu, máte dve možnosti:
 

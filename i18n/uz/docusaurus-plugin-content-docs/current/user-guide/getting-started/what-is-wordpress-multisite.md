@@ -3,7 +3,7 @@ title: WordPress Multisite nima?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite nima?
+# WordPress Multisite nima? {#what-is-wordpress-multisite}
 
 WordPressning asosiy qismida "Multisite" degan xususiyat mavjud bo'lib, u 2010-yilda WordPress 3.0 ishga tushganda boshlanganidan kelib chiqadi. Shundan beri yangi xususiyatlarni joriy etish va xavfsizlikni mustahkamlash maqsadida bir nechta takomillashtirishlar o'tkazilgan.
 
@@ -11,7 +11,7 @@ Asosiy jihatdan, WordPress multisite quyidagicha tasvirlanishi mumkin: Bir unive
 
 ##
 
-## WordPress Multisite aslida nima?
+## WordPress Multisite aslida nima? {#what-exactly-is-wordpress-multisite}
 
 Multisite — bu WordPressning bir nechta saytlarning yagona WordPress o'rnatmasidan foydalanishini ta'minlovchi xususiyatidir. Multisite faollashtirilganda, asl WordPress sayti odatda **saytlar tarmog'i** deb ataladigan narsani qo'llab-quvvatlash uchun o'zgartiriladi.
 
@@ -23,7 +23,7 @@ Bu fakt multisitening asosiy afzalliklaridan biri bo'lib, siz boshqaradigan sayt
 
 ##
 
-## Subdomain yoki Subdirectory?
+## Subdomain yoki Subdirectory? {#subdomain-or-subdirectory}
 
 WordPress multisite ishga tushirishning ikkita rejasi mavjud — va siz odatiy WordPress o'rnatmasini multisite o'rnatmasiga aylantirayotganda birini tanlashingiz kerak:
 
@@ -49,7 +49,7 @@ Subdomain modini sozlashdagi asosiy muammolardan biri butun tarmoq uchun SSL qam
 
 Subdirektoriy moddan (subdirectory mode) aksiga qarama-qarshi turib, subdomain asosidagi tarmoqdagi subsaitlar qidiruv tizimlari tomonidan alohida veb-saytlar sifatida ko'riladi, bu esa bitta subsaytda mavjud bo'lgan kontent boshqa subsaitlarning SEO samaradorligiga hech qanday ta'sir qilmaydi degani.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Bitta saytli WordPress o'rnatmalarida siz cheksiz miqdordagi foydalanuvchilarni qo'shishingiz va ularga turli foydalanuvchi rollari bilan turli ruxsatlarni berishingiz mumkin.
 
@@ -63,7 +63,7 @@ Pluginlar va temalar faqatgina super adminlar tomonidan network admin panelidan 
 
 _Izoh: Ko'r ko'ring, kimdir sizning tarmoqqa taklif qilsangiz va unga super admin statusini berganingiz, bu foydalanuvchiga tarmoqingiz bo'yicha to'liq nazorat beradi. Masalan, boshqa super adminlar hatto sizning super admin statusingizni olib tashlashi mumkin, bu esa sizni o'zingizning tarmoq administrator panelingizdan samarali chiqarib yuboradi. Ultimate Multisite mijozlari uchun qo'shimcha super adminlar nima qilishlari mumkinligi haqida batafsil nazoratga ega bo'lishini ta'minlash uchun biz Support Agents degan add-onni yaratganmiz. Bu add-on sizga tarmoqda vazifalarni bajarish uchun kerak bo'ladigan imkoniyatlarga ega bo'lgan faqatgina agentlar kabi boshqa turdagi foydalanuvchilarni yaratish imkonini beradi._
 
-## Subsite'lar o'rtasida nima umumiy va nima umumiy emas
+## Subsite'lar o'rtasida nima umumiy va nima umumiy emas {#what-is-shared-among-subsites-and-what-is-not}
 
 Oldin aytib o'tganimizdek, WordPress multisite'ning asosiy afzalliklaridan biri shundaki, barcha subsaitlar bir xil konfiguratsiyalarni, asosiy fayllarni, temalarni, pluginlarni, WordPress asosiy fayllarini va boshqalar ularda baham ko'rishadi.
 
@@ -73,7 +73,7 @@ Biroq, har bir subsait uchun aniq chegaralangan elementlar mavjud.
 - Har bir subsaitning o'ziga xos admin paneli mavjud va u super admin tomonidan tarmoqda faollashtirilmagan bo'lsa, pluginlar yoki temalarni faollashtirishi yoki o'chirish imkoniyatiga ega.
 - Ko'pgina ma'lumotlar bazasi jadvallari har bir subsait uchun yaratiladi, bu esa postlar, izohlar, sahifalar, sozlamalar va boshqalar har bir subsaitga xos bo'lishini anglatadi.
 
-## WordPress Multisite'da foydalanuvchilarni boshqarish
+## WordPress Multisite'da foydalanuvchilarni boshqarish {#user-management-on-wordpress-multisite}
 
 WordPress multisite'dagi nozik mavzu — bu foydalanuvchilarni boshqarish. WordPress foydalanuvchisi jadvali barcha subsaitlar o'rtasida baham ko'riladigan kam sonli jadvallardan biridir.
 
@@ -97,7 +97,7 @@ _Eslatma: Biz bu qanday yomon bo'lishi mumkinligini tushundik, shuning uchun Ult
 
 Hatto foydalanuvchi jadval ulashilgan bo'lsa ham, subsite administratorlari yoki super administratorlar orqali foydalanuvchilarni subsitega qo'shish va olib tashlash mumkin, shuningdek, ular turli subsite-larda turli foydalanuvchi rollariga ega bo'lishi mumkin.
 
-## Ishlash samaradorligi haqida e'tibor bering
+## Ishlash samaradorligi haqida e'tibor bering {#performance-considerations}
 
 WordPress multisite ko'p saytlarni qo'llab-quvvatlash bo'yicha juda kuchli hisoblanadi. Buni [WordPress.com](https://WordPress.com), Edublogs va Campuspress kabi xizmatlar ham multisite asosida ishlaydi va har bir hosting shaxsi minglab saytlarni joylashtiradi degan jihatdan tekshirish mumkin.
 

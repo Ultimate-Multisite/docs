@@ -3,13 +3,13 @@ title: چیک آؤٹ فیلڈ ۽ ڪسٽمر DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# چیک آؤٹ چیک فیلڈ ۽ ڪسٽمر DNS مانيجمنٽ
+# چیک آؤٹ چیک فیلڈ ۽ ڪسٽمر DNS مانيجمنٽ {#checkout-field-and-customer-dns-management}
 
-## دومين اسڪلڪشن چیک آؤٹ فیلڊ
+## دومين اسڪلڪشن چیک آؤٹ فیلڊ {#the-domain-selection-checkout-field}
 
 **Domain Selection** فیلڊ هڪ اهڙو عنصر آهي جيڪو گهڻن کيس کي اهو چونڊ ڏئي ٿو ته هو پنهنجي سائيٽ جو دومين ڪيئن حاصل ڪري. دومين بڪري (domain selling) فعال ڪرڻ لاءِ ان کي ڪنهن به چیک آؤٹ فارم ۾ شامل ڪريو.
 
-### فیلڊ کي چیک آؤٹ فارم ۾ شامل ڪرڻ
+### فیلڊ کي چیک آؤٹ فارم ۾ شامل ڪرڻ {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** تي وڃو
 2. هڪ چیک آؤٹ فارم खोलो يا بنائ
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. فیلڊ جا خيار ترتیب ڏيو (نيڪس ۾ ڏسو)
 6. فارم کي محفوظ ڪريو
 
-### فیلڊ جا خيار
+### فیلڊ جا خيار {#field-options}
 
 **Domain modes** — چنو ته ڪهڙا ٽئب کيس ڏسڻ گهرجن. هر موڊ کي آزادانه فعال يا بند ڪجي سگهي ٿو:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain product** — اختياري طور تي ان فیلڊ کي هڪ خاص دومين پروڊڪٽ سان جوڙ ڪريو. جيڪڏهن اهو نه رکيو وڃي ته، اضافي (addon) خود مطابق TLD جي بنياد تي مطابقت رکڻ لاءِ مناسب پروڊڪٽ خود چونڊي ڇڏي ويندو آهي.
 
-### ريجيسٽرنٽ کانٽاڪٽ فیلڊز
+### ريجيسٽرنٽ کانٽاڪٽ فیلڊز {#registrant-contact-fields}
 
 جڏهن ڪسٽمر **Register New Domain** ٽيپ چونڊي ٿو، ته چیک آؤٹ فارم ۾ ريجيسٽرنٽ کانٽاڪٽ جا فیلڊز خود شامل ٿين ٿا:
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 تمام رجسٹرارز جي لاءِ هيء مطلوب آهي ۽ ان کي ريجيسٽريشن API کال ڪرڻ کان اڳ تصديق ڪيو ويندو آهي. فون نمبرز خود بخود `+CC.NNN` الدولي فارمٽ ۾ ٺهندا آهن جيڪو رجسٹرارز توقع ڪن ٿا.
 
-### خود هيٺ ڏنل سائيٽ URL (Auto-generated site URL)
+### خود هيٺ ڏنل سائيٽ URL (Auto-generated site URL) {#auto-generated-site-url}
 
 جڏهن ڪو گراهڪ ريجيسٽر ڪري ٿو يا هڪ دومين جي مئپ ڪري ٿو، ته سائيٽ URL جو فیلڊ خود چُونئي واري دومين کان خود پورو ٿي ويندو آهي. گراهڪن کي الگ URL فیلڊ پورو ڪرڻ جي ضرورت نه آهي.
 
-### سرچ جو عمل (Search behaviour)
+### سرچ جو عمل (Search behaviour) {#search-behaviour}
 
 - جڏهن ڪو صارف ٽائپ ڪري ٿو ته AJAX سان ريل-ٽائم ۾ دومين جي موجود هجڻ جي تصديق ڪئي ويندي آهي
 - جيڪڏهن ترجيح ڪندڙ دومين موجود نه هجي ته بيان ڪيا ويندا آهن ته ٻيا TLD (Top Level Domain) جو تجويز آهي
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## گراهڪ جي DNS جو انتظام (Customer DNS management)
+## گراهڪ جي DNS جو انتظام (Customer DNS management) {#customer-dns-management}
 
 گراهڪ پنهنجي ريجيسٽري ٿيل دومين لاءِ **My Account** صفح کان، ان دومين جي entry تحت، DNS رڪارڊز کي منظم ڪري سگهن ٿا.
 
-### سنڌو ڪيل رڪارڊ جا قسم (Supported record types)
+### سنڌو ڪيل رڪارڊ جا قسم (Supported record types) {#supported-record-types}
 
 | قسم | استعمال |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | مييل ايڪسچينج سرور مقرر ڪرڻ |
 | **TXT** | SPF، DMARC، تصديق يا ٻيا text رڪارڊز شامل ڪرڻ |
 
-### ڪهڙا فراهم ڪندڙ DNS جو انتظام سنڀال ٿي ٿو؟
+### ڪهڙا فراهم ڪندڙ DNS جو انتظام سنڀال ٿي ٿو؟ {#which-providers-support-dns-management}
 
 DNS مینجمنٹ (ریکارڈز شامل کرنا، ایڈٹ کرنا، ڈیلیٹ کرنا) کے لیے **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, اور **Openprovider** دستیاب ہیں۔ **Hostinger** ڈومینز کو ڈومین سیلر کے ذریعے نیم سرورز اپ ڈیٹ کر سکتے ہیں؛ ہوسٹ شدہ ڈومینز کے DNS ریکارڈز کا انتظام کور Hostinger ڈومین-매핑 انٹیگریشن کے ذریعے کیا جاتا ہے۔ Namecheap، GoDaddy، اور NameSilo ڈومینز اپنی اسٹیٹس اور ایکسپائری کی معلومات دکھاتے ہیں لیکن DNS کو براہ راست رجسٹرار کے کنٹرول پینل میں مینج کرنا ضروری ہے۔
 
-### ڈیفالٹ DNS ریکارڈز
+### ڈیفالٹ DNS ریکارڈز {#default-dns-records}
 
 آپ ڈیفالٹ DNS ریکارڈز ترتیب دے سکتے ہیں جو کسی ڈومین رجسٹر ہونے پر خود بخود لاگو ہوتے ہیں۔ **Settings › Domain Seller › Default DNS Records** پر جائیں۔
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### ایڈمن: DNS دیکھنا اور ایڈٹ کرنا
+### ایڈمن: DNS دیکھنا اور ایڈٹ کرنا {#admin-viewing-and-editing-dns}
 
 نیٹ ورک ایڈمنز کسی بھی کسٹمر ڈومین کے لیے اس کی ایڈیٹ پیج سے DNS ریکارڈز کو دیکھ اور ایڈٹ کر سکتے ہیں، جو **Network Admin › Ultimate Multisite › Domains** میں پایا جاتا ہے۔

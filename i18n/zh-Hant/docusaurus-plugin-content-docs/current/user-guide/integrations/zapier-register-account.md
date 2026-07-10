@@ -1,42 +1,40 @@
 ---
-title: 透過 Zapier 註冊帳戶
+title: 透過 Zapier 註冊 Account
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# 事件：透過 Zapier 註冊帳號
+# 事件：透過 Zapier 註冊 Account {#event-register-an-account-via-zapier}
 
-在 [整合 Ultimate Multisite 與 Zapier](zapier.md) 這篇文章中，我們介紹了如何使用 Zapier 根據觸發條件和事件，在 Ultimate Multisite 中執行不同的操作。在本文中，我們將示範如何整合第三方應用程式。我們會以 Google Sheets 作為資料來源，將資訊傳送到 Ultimate Multisite 來註冊帳號。
+在文章 [整合 Ultimate Multisite 與 Zapier](zapier.md) 中，我們討論了如何使用 Zapier 根據觸發條件與事件，在 Ultimate Multisite 內執行不同動作。在本文中，我們將示範如何整合第三方應用程式。我們將使用 Google Sheets 作為資料來源，並將資訊傳送到 Ultimate Multisite 以註冊 Account。
 
-首先，你需要在 Google Drive 中建立一個 **Google Sheet**。請確保每個欄位都有明確的定義，這樣之後對應資料時會比較方便。
+在連接 Zapier 之前，請前往 **Ultimate Multisite > Settings > API & Webhooks**，並確認 API 已啟用。當 Zapier 要求 Ultimate Multisite Account 憑證時，請從此畫面複製 API Key 與 API Secret。
 
-![Google Sheet 顯示客戶資料欄位](/img/admin/webhooks-list.png)建立 Google Sheet 後，你可以登入 Zapier 帳號並開始建立一個 zap。
+![包含 API Key、API Secret 與 Enable API 選項的 API and Webhooks 設定](/img/admin/settings-api-webhooks.png)
 
-![Zapier 儀表板，開始建立 zap](/img/admin/webhooks-list.png)在「**App event**」的搜尋欄位中，選擇「**Google Sheets**」
+首先，你需要在 Google Drive 下建立一個 **Google Sheet**。請確保你正確定義每一欄，以便稍後可以輕鬆對應資料。
 
-![選擇 Google Sheets 作為 app event](/img/admin/webhooks-list.png)
+建立 Google sheet 後，你可以登入你的 Zapier Account 並開始建立 zap。
 
-接著在「**Event**」欄位中選擇「**New spreadsheet row**」，然後點擊「**Continue**」
+在 **"App event"** 的搜尋欄位下，選取 **"Google Sheets"**
 
-![在 Zapier 中選擇 New spreadsheet row 事件](/img/admin/webhooks-list.png)下一步會要求你選擇儲存 **Google Sheet** 的 **Google 帳號**。請確認選擇的是正確的 Google 帳號。
 
-![選擇 Google Sheet 所在的 Google 帳號](/img/admin/webhooks-list.png)
+接著在「**Event**」欄位選取「**New spreadsheet row**」，然後按下「**Continue**」
 
-在「**Set up trigger**」中，你需要選擇並指定要使用的 Google 試算表和工作表，這是資料的來源。填寫完成後點擊「**Continue**」
+下一步會要求你選取儲存 **Google Sheet** 的 **Google Account**。因此，只要確保已指定正確的 google account。
 
-![設定觸發條件，選擇試算表和工作表](/img/admin/webhooks-list.png)接下來是「**test your trigger**」，確保你的 Google Sheet 已正確連接。
 
-![Zapier 中的測試觸發條件步驟](/img/admin/webhooks-list.png)如果測試成功，你會看到結果顯示試算表中的一些數值。點擊「**Continue**」繼續進行。
+在「**Set up trigger**」下，你需要選取並指定將作為資料來源的 google spreadsheet 與 worksheet。請繼續填寫這些項目，然後按下「**Continue**」
 
-![觸發條件測試成功，顯示試算表數值](/img/admin/webhooks-list.png)下一步是設定第二個動作，在 Ultimate Multisite 中建立或註冊帳號。在搜尋欄位中選擇「**Ultimate Multisite(2.0.2)**」
+接下來是「**test your trigger**」，以確保你的 google sheet 已正確連接。
 
-![選擇 Ultimate Multisite 作為動作應用程式](/img/admin/webhooks-list.png)
+如果測試成功，你應該會看到結果顯示試算表中的一些值。點擊「**Continue**」繼續。
 
-在「**Event**」欄位中，選擇「**Register an Account in Ultimate Multisite**」，然後點擊「**Continue**」按鈕。
+下一步是設定第二個動作，用於在 Ultimate Multisite 中建立或註冊 Account。在搜尋欄位選取「**Ultimate Multisite(2.0.2)**」
 
-![Register an Account in Ultimate Multisite 動作事件](/img/admin/webhooks-list.png)在「**Set up an action**」中，你會看到客戶資料、會員資格、產品等不同欄位。你可以將 Google Sheet 中的數值對應到適當的欄位，如下方截圖所示。
 
-![將 Google Sheet 數值對應到 Ultimate Multisite 欄位](/img/admin/webhooks-list.png)
+在「**Event**」欄位下，選取「**Register an Account in Ultimate Multisite**」，然後點擊「**Continue**」按鈕。
 
-完成數值對應後，你可以測試這個動作。
+在「**Set up an action**」下，你會看到可用於客戶資料、memberships、產品等的不同欄位。你可以對應 google sheet 下的值，並將它們指定到應填入的適當欄位，如下方螢幕截圖所示。
 
-![測試註冊帳號的 Zapier 動作](/img/admin/webhooks-list.png)
+
+對應值之後，你可以測試該動作。

@@ -3,7 +3,7 @@ title: Pamamahala ng mga Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Pamamahala ng mga Site
+# Pamamahala ng mga Site {#managing-sites}
 
 Ang mga site (o subsite) ang pundasyon ng iyong WaaS na negosyo. May 3 uri ng site ang Ultimate Multisite:
 
@@ -11,13 +11,13 @@ Ang mga site (o subsite) ang pundasyon ng iyong WaaS na negosyo. May 3 uri ng si
 - **Site Templates** — Mga naka-handa nang site na pwedeng piliin ng mga customer bilang panimulang punto
 - **Main Site** — Ang pangunahing site ng iyong network
 
-## Pagtingin sa mga Site
+## Pagtingin sa mga Site {#viewing-sites}
 
 Pumunta sa **Ultimate Multisite → Sites** para makita ang lahat ng subsite sa iyong network. Bawat site ay may label ayon sa uri at pwede mong i-filter ayon sa All Sites, Customer-Owned, Templates, o Pending.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Pagdagdag ng Bagong Site
+## Pagdagdag ng Bagong Site {#adding-a-new-site}
 
 I-click ang **Add Site** na button para gumawa ng bagong site. Kailangan mong ibigay ang:
 
@@ -27,15 +27,15 @@ I-click ang **Add Site** na button para gumawa ng bagong site. Kailangan mong ib
 
 Ang **Copy Site** na opsyon ay nagbibigay-daan sa iyong gumawa ng bagong site batay sa isang kasalukuyang site template. Kapag naka-enable ito, pwede kang pumili kung aling template ang gagamitin bilang panimulang punto. Siguraduhing naka-enable ang **Copy Media on Duplication** para maisama ang mga media file.
 
-## Pamamahala ng Kasalukuyang Site
+## Pamamahala ng Kasalukuyang Site {#managing-an-existing-site}
 
 I-click ang **Manage** sa kahit anong site para buksan ang **Edit Site** na page. Makikita mo rito ang:
 
-### Pangunahing Impormasyon
+### Pangunahing Impormasyon {#basic-information}
 
 Ang pangalan ng site, uri, site ID, at paglalarawan. Makikita mo rin ang naka-map na domain, kaugnay na membership, at ang customer account na nagmamay-ari ng site.
 
-### Mga Opsyon ng Site
+### Mga Opsyon ng Site {#site-options}
 
 I-configure ang mga kakayahan at limitasyon ng site:
 
@@ -47,7 +47,7 @@ I-configure ang mga kakayahan at limitasyon ng site:
 
 Bilang default, sinusunod ng mga site ang mga limitasyong nakatakda sa antas ng membership. Ang pagtatakda ng mga limitasyon sa antas ng site ay magso-override sa mga setting ng membership.
 
-### Mga Kaugnayan
+### Mga Kaugnayan {#associations}
 
 Sa ibaba ng mga opsyon ng site, makikita mo ang impormasyon tungkol sa:
 
@@ -55,7 +55,7 @@ Sa ibaba ng mga opsyon ng site, makikita mo ang impormasyon tungkol sa:
 - **Membership** kung saan nasa ilalim ang site
 - **Customer account** na naka-link sa site
 
-### Kanang Sidebar
+### Kanang Sidebar {#right-sidebar}
 
 Sa kanang bahagi, pwede mong:
 

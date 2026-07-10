@@ -3,15 +3,15 @@ title: Hooks 使用指南
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# 钩子使用指南
+# 钩子使用指南 {#hooks-usage-guide}
 
 Ultimate Multisite 提供 200+ 个动作钩子和 280+ 个过滤钩子。本页涵盖了最常用的钩子，并提供实用示例。若需完整的自动生成参考，请浏览本节的其他页面。
 
-## 动作钩子
+## 动作钩子 {#action-hooks}
 
-### 客户生命周期
+### 客户生命周期 {#customer-lifecycle}
 
-#### 客户创建后
+#### 客户创建后 {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### 客户状态变更
+#### 客户状态变更 {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### 站点钩子
+### 站点钩子 {#site-hooks}
 
-#### 站点发布后
+#### 站点发布后 {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### 模板应用前
+#### 模板应用前 {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### 会员钩子
+### 会员钩子 {#membership-hooks}
 
-#### 状态转换
+#### 状态转换 {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### 支付钩子
+### 支付钩子 {#payment-hooks}
 
-#### 支付完成 / 失败
+#### 支付完成 / 失败 {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### 结账钩子
+### 结账钩子 {#checkout-hooks}
 
-#### 处理前 / 完成后
+#### 处理前 / 完成后 {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### 域名钩子
+### 域名钩子 {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## 过滤钩子
+## 过滤钩子 {#filter-hooks}
 
-### 价格过滤器
+### 价格过滤器 {#pricing-filters}
 
-#### 购物车总额
+#### 购物车总额 {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### 税率
+#### 税率 {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### 模板过滤器
+### 模板过滤器 {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### 限制过滤器
+### 限制过滤器 {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### 网关过滤器
+### 网关过滤器 {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### 结账表单字段
+### 结账表单字段 {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### 邮件内容
+### 邮件内容 {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

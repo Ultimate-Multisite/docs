@@ -3,13 +3,13 @@ title: Tàmacan site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Template Sitean (v2)
+# Template Sitean (v2) {#site-templates-v2}
 
 _**NOTE: An tòran seo a' tòiseachadh ar Ultimate Multisite version 2.x. Se sin tha thu a' faighinn air an tòiseachadh seo.**_
 
 Tha am cumhachd gu rathach a dhèanamh air seòluchnaichean le Ultimate Multisite, agus a thabhairt fòcas agus fìor-fhaighinn do chliachanna agus fìor-fhaighinn fìor-fhaighinn a thabhairt agad gu sònraichte gu lèir. Am fhaighinn sin an tòiseachadh seo, tha eanach air a' mhobail a dhèanamh air seòluchnaichean le Ultimate Multisite.
 
-## Cò a tha Template Sitean?
+## Cò a tha Template Sitean? {#what-is-a-site-template}
 
 Mar a tha an t-ainm a' tosaich, tha Template Sitean (Site Templates) làimh-fhaighinn a tha a' tòiseachadh gu sònraichte air seòluchnaichean a tha a' faighinn air a bhith a' chlàradh.
 
@@ -17,7 +17,7 @@ Air a' cheann, tha thu ag obair seòl a tha a' tòiseachadh, tha thu a' gineadh 
 
 Tha seo a' fàilte, ach ciamar a tha mi a' cheann template sitean ùr a thabhairt? Tha eanach air a bhith a' fhaighinn gu sònraichte.
 
-## Creachadh agus Ath-ghinneadh Template Sitean ùr
+## Creachadh agus Ath-ghinneadh Template Sitean ùr {#creating-and-editing-a-new-site-template}
 
 Tha Template Sitean gu làimh-fhaighinn seòluchnaichean normal air a chlàradh. Gu dearbh, thu leicidh thu gu **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ An tòr chùl mun fòram, tha thuir thuair **Copy Site** toggle switch a fheuchd
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### A' chlàradh de dhòigh an t-sìt template
+### A' chlàradh de dhòigh an t-sìt template {#customizing-the-contents-of-a-site-template}
 
 Machainn a' chlàradh air a' chlàradh, tha thuir a' chlàradh air a' chlàradh agus a' chlàradh a' chlàradh. Is e cheann a' chlàradh ùr, a' chlàradh a' chlàradh, a' chlàradh a' chlàradh, a' chlàradh a' chlàradh. Thuair thuir a' chlàradh air a' chlàradh agus a' chlàradh a' chlàradh a' chlàradh.
 
@@ -43,15 +43,15 @@ Machainn a' chlàradh air a' chlàradh, tha thuir a' chlàradh air a' chlàradh 
 
 Bidh an tatean seo a' chlàradh gu robh thu a thrascall air ùr site a' chlàradh mar am bith a' chlàradh a' chlàradh.
 
-### Opciones a' chlàradh
+### Opciones a' chlàradh {#advanced-options}
 
 Tha thuair a' chlàradh a' chlàradh a' chlàradh, tha thuir a' chlàradh air a' chlàradh a' chlàradh a' chlàradh a' chlàradh. Thuair thuir a' chlàradh air a' chlàradh agus a' chlàradh a' chlàradh a' chlàradh.
 
-### A' chlàradh de dhòigh an t-sìt template
+### A' chlàradh de dhòigh an t-sìt template {#using-site-templates}
 
 Tha thuair a' chlàradh a' chlàradh a' chlàradh, tha thuir a' chlàradh air a' chlàradh a' chlàradh. Thuair thuir a' chlàradh air a' chlàradh agus a' chlàradh a' chlàradh a' chlàradh.
 
-### A' chlàradh de dhòigh an t-sìt template
+### A' chlàradh de dhòigh an t-sìt template {#mode-1-assign-site-template}
 
 Tha thuair a' chlàradh a' chlàradh a' chlàradh, tha thuir a' chlàradh air a' chlàradh a' chlàradh. Thuair thuir a' chlàradh air a' chlàradh agus a' chlàradh a' chlàradh a' chlàradh.
 
@@ -65,7 +65,7 @@ Chan eil seo a' tuiteam a' chùlchnaich gu **Edit Product** page. An t-seachdaid
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modh 2: Tòiseachadh air Site Template a tha a' fhaighinn
+#### Modh 2: Tòiseachadh air Site Template a tha a' fhaighinn {#mode-2-choose-available-site-template}
 
 Drie modh, chan thu a' tuiteam a' chliachdan a bhith ag iarraidh tòiseachadh air an t-template gu sònraichte nuair a thonn an t-account. Chan eil iad a' leideinn a' chùlchnaich frum site templates fhaighinn a tha thu a' deabhach a' leideinn a' chluinadh a' tuiteam. Tha thu a' leideinn a' fhadraidh an t-option airson site templates a tha a' faighinn air an product a tha a' leideinn a' chluinadh. Chan eil seo a' tuiteam a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich. Chan eil seo a' tuiteam a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich. Chan eil seo a' tuiteam a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich. Chan eil seo a' tuiteam a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich. Chan eil seo a' tuiteam a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich a' leideinn a' chùlchnaich.
 
@@ -73,7 +73,7 @@ Ar **Edit Product** page ar. A'n sectiùr **Product Options**, tha thuinn a' chl
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Mode a' chlàradh: Seilidh site template ar fòm Checkout
+### Mode a' chlàradh: Seilidh site template ar fòm Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Tha thu a' faicinn gu bheil a gcothrom site templates air a bhith air a' chlàradh a dh'fhàilteachadh, no bi thu a' faicinn a' tòiseachadh air dìreach a' leasachadh mòr de dhòigh a' chlàradh air a' chlàradh a tha thu a' faicinn a' tòiseachadh. Tha thu a' faicinn seo gu sgaidh an seilidh site template air a bhith ar fòm **Checkout Form** a tha thu a' faicinn a' tòiseachadh. Gus a' cheann thu, rinn gu **Ultimate Multisite > Checkout Forms** agus sceilidh **Edit** a' chlàradh a tha thu a' faicinn a' tòiseachadh.
 
@@ -87,13 +87,13 @@ Ar an fhaighinn, tha na gcothrom a' faicinn an chooser template gu sgaidh thu a'
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opciones de Template Site
+### Opciones de Template Site {#site-template-options}
 
 Tha thaistean de template site eile a las ealaiche a las ealaiche a las setadh de Ultimate Multisite a las ealaiche a las onròth a' sgeuladh an tòiseachadh.
 
 ![Opciones de template site a las setadh de Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Ball a' chlàradh template (Allow Template Switching)
+#### Ball a' chlàradh template (Allow Template Switching) {#allow-template-switching}
 
 Ball a' chlàradh seo a' ball a' chlàradh do ealaiche a' chlàradh a th'ann am faighinn a' chlàradh a th'ann siubail a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a' chlàradh a tha a
 
@@ -115,7 +115,7 @@ An uair sin, rinn Ultimate Multisite an fhaighinntean a shàbhaladh gu daccais a
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### A' ghràdh "template full of placeholders" a chlàradh
+### A' ghràdh "template full of placeholders" a chlàradh {#allow-users-to-use-their-site-as-templates}
 
 Tha sin gu daccais, ach tha sinn ag tòiseachadh air sealladh: an tòiseachadh thuiteachdaichean (site templates) - a tha thuiteachdaich a thannach a bhith a' tòiseachadh de chùlann-chùlann (customers) - tha gu fhaighinntean dubh-curlaidh a thannach, agus cha tha sinn a' tòiseachadh gu mòr.
 

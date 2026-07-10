@@ -1,19 +1,19 @@
 ---
 id: wu_users_membership_limit_message
-title: フィルタ - wu_users_membership_limit_message
+title: フィルター - wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# フィルタ: wu_users_membership_limit_message
+# Filter: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
-開発者がメンバーシップユーザー制限に関するメッセージを変更できるようにする
+開発者が membership ユーザー上限に関するメッセージを変更できるようにします
 
-## Parameters
+## パラメーター {#parameters}
 
-| Name | Type | Description |
+| 名前 | タイプ | 説明 |
 |------|------|-------------|
-| $message | `string` | 画面に表示するメッセージ。 |
+| $message | `string` | The message to print in screen. |
 
-### Source
+### ソース {#source}
 
-定義は [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) の72行目にあります
+[`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) の 72 行目で定義されています

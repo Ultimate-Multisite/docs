@@ -3,11 +3,11 @@ title: Orodha ya mabadiliko
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Iliachiriwa tarehe 2026-04-28
+## 1.9.0 — Iliachiriwa tarehe 2026-04-28 {#190--released-on-2026-04-28}
 
-### Vipya
+### Vipya {#new}
 
 - **Uwezo wa `create_contact_form`** — unaunda fomu ya mawasiliano kwa kutumia plugin ya fomu iliyoaktifishwa (Contact Form 7, WPForms, Fluent Forms, au Gravity Forms) na inarejesha shortcode tayari ya kuwekwa kwenye chapisho au ukurasa wowote.
 - **Uwezo wa `set_featured_image`** — unatoa picha kuu (featured image) kwenye chapisho au ukurasa kutoka kwa ID ya kiambatisho ilipo ya Media Library au kutoka URL ya mbali; unapakua picha kiotomatiki wakati URL inatolewa.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kurejesha kikao cha mwisho (Restore last session)** — sehemu ya chat sasa inapakia mazungumzo ya hivi karibuni kiotomatiki wakati wa kupakia ukurasa na wakati wa kufungua widget, kwa hivyo muktadha haupotei kamwe kupitia urambazishaji wa kurasa.
 - **Viungo vya kitendo cha plugin (Plugin action links)** — viungo vya haraka kwenda Settings na Abilities Registry sasa vinaonekana kwenye skrini ya WordPress **Plugins → Installed Plugins** chini ya maelezo ya plugin.
 
-### Imerekebishwa
+### Imerekebishwa {#improved}
 
 - **Jaribio la upya la chanzo cha picha (Image source retry)** — ajenti sasa inajaribu upya vyanzo vyote vilivyowekwa vya picha huru kabla ya kurudi kwenye picha iliyotokana na AI wakati wa kushindwa kwa upakaji.
 - **Panel ya taarifa ya mfumo (Model info panel)** — inaonekana kila wakati kwenye kichwa cha chat; haionekani tena baada ya ujumbe wa kwanza.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Kubadilisha muundo wa widget ya chat (Chat widget redesign)** — icon ya AI iliyounganishwa inachukua nafasi ya avatar ya awali iliyobadilishwa; inalingana na mfumo wa ajenti uliunjengwa ndani.
 - **Kuunda viungo vya URL (URL linkification)** — URL zinazoonekana kwenye ujumbe wa mfumo na kwenye bubbles za ujumbe wa makosa sasa zinaonyeshwa kama viungo vinavyobonyezwa.
 
-### Kurekebishwa
+### Kurekebishwa {#fixed}
 
 - **Uwezo wa kugundua abilities (Ability discoverability)** — maelezo, marejeleo ya prompt ya mfumo, na mpangilio wa nafasi (namespace) zimekorekebishwa ili uwezo wote waonekane kwenye orodha ya zana ya ajenti kwa uhakika.
 - **Cache ya Providers** — providers sasa zimehifadhiwa kwa kiwango cha tovuti kupitia kaunta ya toleo, kuzuia matatizo ya providers zilizopitwa muda wake kwenye mitandao ya multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Iliachiriwa tarehe 2026-04-09
+## 1.4.0 — Iliachiriwa tarehe 2026-04-09 {#140--released-on-2026-04-09}
 
-### Vipya
+### Vipya {#new-1}
 
 - **Amri ya vipimo vya WP-CLI** (`wp gratis-ai-agent benchmark`) — inatendesha seti ya vipimo vya Agent Capabilities v1 kutoka kwenye mstari wa amri kwa ajili ya CI pipelines na kazi za tathmini ya mfumo. Inasaidia kuendesha kwa kila swali, kubadilisha providers/models, na matokeo ya JSON/CSV.
 - **Seti ya vipimo vya Agent Capabilities v1** — seti iliyopangwa ya prompts tata, zenye hatua nyingi zinazofanya mazoezi ya uwezo wote, na ripoti ya alama na token/muda.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Swali la vipimo vya tovuti ya mgahawa** (`q-restaurant-website`) — jaribio la mwisho hadi mwisho linalofunika usajili wa CPT, design system, urambazaji, na kugundua plugins.
 - **Plugins za muunganishi wa AI provider** zimeongezwa kwenye blueprints za WordPress Playground kwa kuweka upatikanaji wa eneo la maendeleo ya ndani.
 
-### Imerekebishwa
+### Imerekebishwa {#improved-1}
 
 - README imosasishwa na hati za muunganishi wa AI provider na maelekezo ya kuweka.
 
-### Kurekebishwa
+### Kurekebishwa {#fixed-1}
 
 - Kushindwa kwa vipimo 25 vya PHPUnit kwenye tawi la `main` vimekorekebishwa.
 - Muundo wa URL ya matoleo ya GitHub katika `blueprint.json` umerekebishwa.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Maelezo ya matoleo ya awali yanadumishwa kwenye repository ya plugin._

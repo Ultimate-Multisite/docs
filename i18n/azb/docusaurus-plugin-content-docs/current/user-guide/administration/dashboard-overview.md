@@ -3,11 +3,11 @@ title: Kontrol Paneli Genel Bakış
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview
+# Dashboard Overview {#dashboard-overview}
 
 Ultimate Multisite-da Ultimate Multisite menüsü altında özel bir **Dashboard** bulunur ve ayrıca Network Dashboard'a widget'lar ekler. Bu makale, her iki yerde neler göreceğinizi anlatıyor.
 
-## The Network Dashboard
+## The Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite, network seviyesindeki dashboard'a, yani **My Sites → Network Admin → Dashboard** adresinde bulunan yere kullanışlı widget'lar ekler.
 
@@ -35,7 +35,7 @@ Her widget'ın ne sağladığı aşağıda listelenmiştir:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## The Ultimate Multisite Dashboard
+## The Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Network dashboard genel bir bakış sunarken, Ultimate Multisite dashboard'u (Ultimate Multisite menüsünün en üst seviyesinde bulunur) hizmetle ilgili bilgileri sunar.
 

@@ -3,11 +3,11 @@ title: Opinie klientów i zgłaszanie problemów
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Informacja zwrotna i zgłaszanie problemów
+# Informacja zwrotna i zgłaszanie problemów {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 wprowadza wbudowany system zbierania informacji zwrotnych i zgłaszania problemów, który pozwala użytkownikom końcowym oznaczać nieprzydatne odpowiedzi oraz zgłaszać problemy bezpośrednio z interfejsu czatu. System ten obejmuje zarządzanie zgodą, automatyczne polecenie zgłoszenia oraz wstępną kategoryzację (triage) wspomaganą przez AI na backendzie.
 
-## Przycisk „Kciuk w dół”
+## Przycisk „Kciuk w dół” {#thumbs-down-button}
 
 Każda wiadomość wysłana przez asystenta AI wyświetla przycisk **„kciuk w dół”** (👎). Kliknięcie go pozwala użytkownikowi oznaczyć odpowiedź jako nieprzydatną lub nieprawidłową.
 
@@ -15,7 +15,7 @@ Każda wiadomość wysłana przez asystenta AI wyświetla przycisk **„kciuk w 
 - Kliknięcie otwiera **Modal Zgody na Informację Zwrotną**.
 - Informacja zwrotna jest powiązana z wątkiem konwersacji i konkretną wiadomością.
 
-## Modal Zgody na Informację Zwrotną
+## Modal Zgody na Informację Zwrotną {#feedback-consent-modal}
 
 Gdy użytkownik kliknie przycisk kciuk w dół, zanim zostaną przesłane jakiekolwiek dane, pojawi się modal z prośbą o zgodę. Modal ten:
 
@@ -26,13 +26,13 @@ Gdy użytkownik kliknie przycisk kciuk w dół, zanim zostaną przesłane jakiek
 
 Żadna informacja zwrotna nie zostanie zapisana, dopóki użytkownik nie potwierdzi tego wyraźnie.
 
-## Baner Informacji Zwrotnej z Auto-Promptem
+## Baner Informacji Zwrotnej z Auto-Promptem {#auto-prompt-feedback-banner}
 
 Pod koniec konwersacji asystent może wyświetlić **baner informacji zwrotnej z auto-promptem** — nieinwazyjną wiadomość pytającą, czy sesja była pomocna.
 
 Baner ten pojawia się automatycznie na podstawie długości i wyników konwersacji. Łączy się z tym samym procesem zbierania informacji zwrotnych co przycisk kciuk w dół. Użytkownicy mogą zamknąć baner, nie podając żadnej informacji zwrotnej.
 
-## Polecenie `/report-issue`
+## Polecenie `/report-issue` {#report-issue-slash-command}
 
 Użytkownicy mogą uruchomić proces informacji zwrotnej, wpisując bezpośrednio w pole czatu polecenie `/report-issue`. To polecenie:
 
@@ -42,7 +42,7 @@ Użytkownicy mogą uruchomić proces informacji zwrotnej, wpisując bezpośredni
 
 Polecenie `/report-issue` jest dostępne we wszystkich trybach czatu (inline, pływający widget, pełny ekran).
 
-## Wstępna Kategoryzacja (Triage) Wspomagana przez AI
+## Wstępna Kategoryzacja (Triage) Wspomagana przez AI {#ai-assisted-triage}
 
 Przesłana informacja zwrotna trafia do warstwy wstępnej kategoryzacji (triage) wspomaganej przez AI, która:
 

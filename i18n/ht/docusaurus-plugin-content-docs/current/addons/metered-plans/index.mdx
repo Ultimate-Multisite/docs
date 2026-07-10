@@ -1,0 +1,117 @@
+---
+title: Plan ak itilizasyon mezire
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Plan Mezire {#metered-plans}
+
+Addon Ultimate Multisite: Plan Mezire a transfòme fason ou faktire kliyan ou yo lè li ajoute kapasite faktirasyon mezire ki fleksib. Olye de limit rijid ki bloke itilizatè yo lè yo depase yo, aktive frè depasman ki faktire kliyan yo otomatikman pou itilizasyon anplis.
+
+## Fonksyonalite Kle {#key-features}
+
+* **Faktirasyon Mezire**: Faktire kliyan yo selon itilizasyon reyèl olye de nivo fiks
+* **Jesyon Depasman**: Faktire otomatikman pou itilizasyon ki depase limit plan yo
+* **Swivi Itilizasyon**: Siveye konsomasyon resous kliyan yo an tan reyèl
+* **Pri Fleksib**: Mete tarif pèsonalize pou diferan resous (depo, bandwidth, sit, elatriye)
+* **Faktirasyon Token AI**: Swiv epi faktire token antre ak sòti pou itilizasyon AI atravè sous-sit kliyan yo
+* **Fakti Otomatik**: Jenere fakti otomatikman lè papòt itilizasyon yo depase
+* **Rapò Itilizasyon**: Analiz itilizasyon detaye ak rapò pou kliyan ak administratè yo
+
+## Ideyal Pou {#perfect-for}
+
+* **Founisè Hosting**: Ofri plan evolitif ki grandi ak bezwen kliyan yo
+* **Platfòm SaaS**: Faktire selon konsomasyon resous reyèl
+* **Rezo Ajans**: Modèl pri fleksib pou pwojè kliyan yo
+* **Hosting Revandè**: Pèmèt patnè yo ofri pri ki baze sou itilizasyon
+
+## Kijan Li Fonksyone {#how-it-works}
+
+1. Konfigire resous mezire yo (espas disk, bandwidth, kantite sit, elatriye)
+2. Mete limit plan baz yo ak tarif depasman yo
+3. Sistèm nan swiv otomatikman itilizasyon atravè rezo ou a
+4. Lè kliyan yo depase limit yo, frè depasman yo kalkile
+5. Fakti yo jenere otomatikman selon sik faktirasyon an
+6. Kliyan yo ka wè itilizasyon yo ak frè k ap vini yo an tan reyèl
+
+## Faktirasyon Token AI {#ai-token-billing}
+
+Vèsyon 1.1.0 ajoute faktirasyon token AI pou rezo ki ofri fonksyonalite AI atravè WordPress AI Client SDK. Plan Mezire koute demann jenerasyon AI ki fini yo, anrejistre kantite token antre ak sòti pou sous-sit aktyèl la, epi konvèti token sa yo an depans AI ki ka faktire pou peryòd faktirasyon aktyèl kliyan an.
+
+Sèvi ak faktirasyon token AI lè ou vle ofri zouti AI sou sit kliyan yo san ou pa absòbe depans modèl ki pa previzib. Chak demann atribye ak sous-sit la, kliyan an, manm lan, founisè a, ak modèl la pou administratè yo ka verifye itilizasyon pandan kliyan yo ka wè kijan konsomasyon AI yo afekte Account yo.
+
+### Konfigire Tarif Pa Token {#configure-per-token-rates}
+
+Tarif AI yo konfigire pou chak modèl kòm tarif antre ak sòti separe. Tarif yo kalkile pou chak 1 milyon token, sa ki koresponn ak paj pri founisè AI komen yo.
+
+1. Nan administrasyon rezo a, ouvri **Multisite Ultimate → Settings → Metered Plans**.
+2. Aktive mezi depans AI pou pwodwi oswa manm ki dwe faktire itilizasyon AI a.
+3. Ajoute antre tarif modèl lè w sèvi ak ID modèl konektè ou a retounen yo, tankou `gpt-4o`, `gpt-4o-mini`, oswa yon lòt idantifyan modèl konpatib ak OpenAI.
+4. Antre valè **Tarif Antre** ak **Tarif Sòti** separe nan lajan sit ou a pou chak 1 milyon token.
+5. Mete alokasyon depans AI ki enkli pou kliyan an ak konpòtman depasman pou plan an.
+
+Lè yon ID modèl egzak pa konfigire, Plan Mezire ka matche selon prefiks modèl la. Pa egzanp, yon tarif ki konfigire pou `claude-sonnet-4` ka aplike pou ID modèl ki gen dat ak lè epi ki kòmanse ak prefiks sa a. Devlopè yo kapab ajiste tou tablo tarif final la ak filtè [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Konektè AI Ki Sipòte {#supported-ai-connectors}
+
+Faktirasyon token AI fonksyone ak konektè ki emèt evènman jenerasyon WordPress AI Client SDK epi ki enkli itilizasyon token nan metadata repons lan. Sa enkli fanmi konektè AI Ultimate Multisite ki dokimante isit la:
+
+* [Konektè Ultimate AI pou Endpoint Konpatib](../ultimate-ai-connector-compatible-endpoints/) pou API konpatib ak OpenAI, ki enkli OpenAI, Mistral, pasrèl konpatib ak Ollama, ak lòt founisè ki ekspoze metadata itilizasyon token konpatib
+* [Konektè Ultimate AI pou WebLLM](../ultimate-ai-connector-webllm/) pou itilizasyon WebLLM natif-navigatè lè demann yo pase atravè koule evènman AI Client SDK la
+* Konektè founisè AI [Gratis AI Agent](../gratis-ai-agent/) itilize lè founisè yo chwazi a rapòte kantite token prompt ak completion atravè SDK la
+
+Konektè pèsonalize yo ka patisipe lè yo lanse evènman estanda `wp_ai_client_before_generate_result` ak `wp_ai_client_after_generate_result` yo ak metadata modèl, founisè, ak itilizasyon token. Paramèt konektè yo aplike soti nan sit prensipal la rive nan sous-sit yo pou sit kliyan yo itilize founisè ak limit rezo a apwouve yo.
+
+### Itilizasyon Account Kliyan {#customer-account-usage}
+
+Kliyan yo wè itilizasyon AI ansanm ak lòt resous mezire yo nan zòn Account yo. Ranje depans AI a montre total peryòd faktirasyon aktyèl la ki sòti nan token prompt ak completion ki anrejistre yo, tarif modèl ki konfigire yo, ak nenpòt alokasyon ki enkli nan plan an.
+
+Si yon kliyan gen yon metòd peman nan dosye, itilizasyon ki depase alokasyon ki enkli a trete kòm depasman ki ka faktire. Si plan an konfigire pou yon koupe rijid epi kliyan an pa gen okenn metòd peman disponib, demann AI yo ka bloke lè alokasyon an rive nan limit li, epi yo mande kliyan an ajoute detay peman anvan li kontinye.
+
+## Resous Ki Sipòte {#supported-resources}
+
+* Depo disk
+* Bandwidth/Transfè done
+* Kantite sit
+* Kantite itilizatè
+* Itilizasyon token AI ak depans AI
+* Kalite resous pèsonalize
+
+## Kondisyon {#requirements}
+
+* Multisite Ultimate 2.0.0 oswa pi wo
+* Enstalasyon WordPress Multisite
+* PHP 7.4 oswa pi wo
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye plugin yo nan `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktive plugin nan atravè ekran 'Plugins' nan WordPress
+3. Ale nan Multisite Ultimate → Settings → Metered Plans
+4. Konfigire resous mezire ou yo ak pri yo
+5. Aktive faktirasyon mezire pou pwodwi yo nan editè pwodwi a
+
+## Kesyon Yo Poze Souvan {#frequently-asked-questions}
+
+## Kisa k ap pase lè yon kliyan depase limit li? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Olye pou sistèm nan bloke aksè, li swiv depasman an epi li ajoute li sou pwochen fakti yo dapre tarif ou te konfigire yo.
+
+## Èske mwen ka mete tarif depasman diferan pou diferan pwodwi? {#can-i-set-different-overage-rates-for-different-products}
+
+Wi, chak pwodwi ka gen resous mezire ak pri depasman pa li.
+
+## Kijan yo notifye kliyan yo sou itilizasyon? {#how-are-customers-notified-about-usage}
+
+Kliyan yo ka wè itilizasyon aktyèl yo nan Dashboard yo epi resevwa notifikasyon opsyonèl lè yo ap pwoche limit yo oswa lè yo depase yo.
+
+## Kijan yo fikse pri itilizasyon token AI? {#how-is-ai-token-usage-priced}
+
+Yo fikse pri itilizasyon token AI apati tarif antre ak sòti modèl la konfigire pou chak 1 milyon token. Plan Mezire yo miltipliye kantite token prompt ak completion chak demann pa tarif sa yo, ajoute rezilta a nan depans AI aktyèl kliyan an pou peryòd faktirasyon an, epi aplike alokasyon plan an oswa règ depasman yo.
+
+## Èske mwen ka toujou itilize limit di? {#can-i-still-use-hard-limits}
+
+Wi, faktirasyon mezire opsyonèl pou chak pwodwi. Ou ka melanje pwodwi tradisyonèl ki gen limit di ak pwodwi mezire.

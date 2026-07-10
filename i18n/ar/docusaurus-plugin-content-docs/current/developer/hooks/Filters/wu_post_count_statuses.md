@@ -4,25 +4,25 @@ title: Filter - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filter: wu_post_count_statuses
+# Filter: wu_post_count_statuses {#filter-wupostcountstatuses}
 
 Allow plugin developers to change which post status should be counted. By default, published and private posts are counted.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | `$post_status` | `array` | The list of post statuses |
 | `$post_type` | `string` | The post type slug |
 
-### Since
+### Since {#since}
 
 - 1.9.1
 
-### Source
+### Source {#source}
 
 Defined in [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L119) at line 119
 
-## Returns
+## Returns {#returns}
 
 New array of post status.

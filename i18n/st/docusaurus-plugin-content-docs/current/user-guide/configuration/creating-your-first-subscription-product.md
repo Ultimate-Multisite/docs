@@ -3,13 +3,13 @@ title: Ho hlola mo morao wa ho fana ka tšhobo ea hau e liti
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ho Hlobo ea Seboho sehle (v2)
+# Ho Hlobo ea Seboho sehle (v2) {#creating-your-first-subscription-product-v2}
 
 _**SEBO HO KOTSI: Le nako ena e fana ka Ultimate Multisite v2.x fapaneng. Ha u sebelisa v1.x,**_ **_ha u le tla hlalosa seboho sehle.**_
 
 Ho fana ka ho fana le nnete ea hau le ho fana ka ho fana ka litšepo tse fapaneng tsa subscription. O fana ka ho fetola litšepo tse fapaneng? Litšepo tse kang fa o ka ho fana ka? Ka lenyalo ena, re tla ba le leboholo le sebotso sa tsela e tsoang ea litšepo.
 
-# Tlhopha ea Sehlopha
+# Tlhopha ea Sehlopha {#product-type}
 
 **Tlhahlobo:** Ke sehlopha sefapaneng sa ho ba le ka lebaka la hore na le kae e fana ka.
 
@@ -21,7 +21,7 @@ Le Ultimate Multisite, u ka nthela mo litlhahlo tse pedi tsa boikotso ba hau le 
 
 * **Services:** add-ons tse di fetang boithuti jo bo fana ka ho fetola bonnuma ba Ultimate Multisite. Ho le tla ba litlhaloso tsa hau le mofatso o o bua le mongane oa hau ho feta se se ne e bua ka moho ea plan a hae. Ho ntlha, mongane oa hau a ka khona ho buyela plan e tsoela site e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le e le
 
-## Hohohohohohohohohohohohohohohohohohohohohohohohohohohohohohohoho
+## Hohohohohohohohohohohohohohohohohohohohohohohohohohohohohohohoho {#managing-products}
 
 Mo lapa la Products ka Ultimate Multisite lebohlokoa hore ho hlalosetsa sehlopha le litlhokomelo tse di fetang ho morao o site ea product kapa serivisi e kholo. Se hloka ho fana ka ho morao, tsamo ya product/serivisi, tsamo ya tsela (price), taxes, le permissions.
 
@@ -29,7 +29,7 @@ Tshoa le sefalo se tla u thusa ho utloa sefalo seholo sa Ultimate Multisite.
 
 ![Products list page](/img/config/products-list.png)
 
-## Ho Ntsa Sefalo (Adding Products)
+## Ho Ntsa Sefalo (Adding Products) {#adding-products}
 
 Ho fana'a hore o tla fetola ntlha e ntlha ya go dira sebaka se se tloha, ho sebelisa **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Mofuta o le lengolo le le fetang le mofuta o le mong. Le lefelong la lehle (left
 
 ![Tšepo ea lekhotso la ho lekanya sebopeho](/img/config/product-edit-full.png)
 
-### Lehetseng (Description)
+### Lehetseng (Description) {#description}
 
 Motsheo o motheo oa ho hlalosa bohlokoa ba mokete o ka hlaloswa ka ho fana ka leela la mokete le sebope. Leela le tseba tse di bonah fa mokete o tla hlokomelwa kaofiri, joalo ka ho utloa le ho tsamaisa, invoices, upgrades, le tse ling.
 
 ![Sekolo sa tsela le ho hlaloswa haholo tsa mokgwa](/img/config/product-description.png)
 
-### Ditiya ea Tsela (Pricing Type)
+### Ditiya ea Tsela (Pricing Type) {#pricing-type}
 
 Ha e le teng ka phethahalo ea interface, u ka hlalosa ditiya tse tantso tsa pele (base pricing).
 
@@ -53,7 +53,7 @@ Ha e le teng ka phethahalo ea interface, u ka hlalosa ditiya tse tantso tsa pele
 
 Ultimate Multisite e tšoa ditiro tse fapaneng tsa tsena. Opioneng wa **paid** o bua le mofatso oa baetso ea litiho (network administrator) ka litlhahlo la tsena ya sefaka le tsela ea ho rata (billing frequency).
 
-### Ditiro
+### Ditiro {#pricing}
 
 Boitshwaro ea tsena e hlompha tsotlhe ea rona ea litietsi le tsela ea ho rata.
 
@@ -61,7 +61,7 @@ Boitshwaro ea tsena e hlompha tsotlhe ea rona ea litietsi le tsela ea ho rata.
 
 Mohlomang, ke le fa sebope seo sebope sa phatseng sa $29.99 se se tla tshepa ka $29.99 ka mantswe a le mong. Leha ho se se se fana ka sebope sa $89.97 se se tla tshepa ka sebope se se fetang sa qare.
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Sekolo sa tšhobo (Billing Cycles) se batla ka mofuta o motlha wa tšhobo e leng, le bone go bona ka ho fana ka litshobelo tsa litshobelo kapa tsela e ntsha ya tšhobo.
 
@@ -69,7 +69,7 @@ Sekolo sa tšhobo (Billing Cycles) se batla ka mofuta o motlha wa tšhobo e leng
 
 Ho ntlha, se ka re bolela ka lebaka le thata. Ho na le rona sehlopha se fetang sa phatso ea sefapso se fanaang le $29.99, le ho na le tsela e fetang ea 1 mngwe le sikolo sa 12 sa tsamaea. Eona ke ho ba le ho ba le phatso ea $29.99 mngwe mngwe mngwe ho naha ea mngwe a tsamaea. Ho na le sehlopha se fetang, se tla ba le phatso se fetang sa $29.99 mngwe mngwe mngwe ho tloha ka mngwe mngwe.
 
-### Le Tlalo la Ho Baetsa (Trial Period)
+### Le Tlalo la Ho Baetsa (Trial Period) {#trial-period}
 
 Ho baetsa tsela ya ho fana ka offer trial, bo ntho e fana ka leba la admin wa network ho bona le ho dira tsela ea ho setso tsela ea ho baetsa (trial period) ho lona.
 
@@ -77,7 +77,7 @@ Ho baetsa tsela ya ho fana ka offer trial, bo ntho e fana ka leba la admin wa ne
 
 Mmelelo ea ho fana ka tsela ebe a le mofuta oa hau (trial period), ba le tsela ho sebelisa mofuta oa hau ha ba le ho fihlela tsela ebe ya mofuta o tla fihla.
 
-### Set-up Fee (Tshameko ea ho setela)
+### Set-up Fee (Tshameko ea ho setela) {#setup-fee}
 
 U ka sebelisa tshameko ea ho setela (setup fee) ho mofuta oa hau.
 
@@ -85,7 +85,7 @@ U ka sebelisa tshameko ea ho setela (setup fee) ho mofuta oa hau.
 
 Ena e bolela hore mohlokanyetsi oa hau o tla rata tšepetso e leng ntlha (mofumong le phantso ea plan) e ntse e fana ka tsela e fetang le tsela e ntse e fapaneng eo u e dirile ho setso ea rona.
 
-### Active
+### Active {#active}
 
 Le toggle e le fetang (active toggle) e bolela kae hore na boikotso (product) bo ikemisetse ho ba le khona ho ba leliho ba morao a ntlha.
 
@@ -93,13 +93,13 @@ Le toggle e le fetang (active toggle) e bolela kae hore na boikotso (product) bo
 
 Ha ho na boikotso ba bang, ha u fana ka tshepa (toggle) e e le e ntse e tsamaisang, o tla thusa ho feta boikotso (plan) ho fana ka boikotso (disabled state), o tla fetola boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state), o tla feta boikotso (plan) ho fana ka boikotso (disabled state). **Bang ba bang ba na le boikotso ba boikotso ba boikotso, ba tla fana ka boikotso ba boikotso ba boikotso, ba tla fana ka boikotso ba boikotso ba boikotso, ba tla fana ka boikotso ba boikotso ba boikotso, ba tla fana ka boikotso ba boikotso ba boikotso.**
 
-### Sikupeya Sebope (Product Image)
+### Sikupeya Sebope (Product Image) {#product-image}
 
 Le **Upload Image** button le ntho e tšepang ba administrator wa netwoka ho u sebelise media library ho seleketsa kapa ho u-upload sebope sa sebope.
 
 ![Product image section](/img/config/product-image.png)
 
-### Sikupeya (Delete)
+### Sikupeya (Delete) {#delete}
 
 Le boikotso ea sehlopha sa **Delete Product** sefaka mokhoa oa sehlopha sa ho fihla ka sistema. Se tla bona ha sehlopha se fihile.
 
@@ -107,11 +107,11 @@ Le boikotso ea sehlopha sa **Delete Product** sefaka mokhoa oa sehlopha sa ho fi
 
 Ho fana'a le dikgwetlho tse ling, sehlopha se se fetilwe se ne se na le tsela efelelo (trash). Ka nako fa se fetilwe, ho na le tsela e fetileng.
 
-### Product Options
+### Product Options {#product-options}
 
 Ha o ka fana fa mofuta oa boikotso ea liti le liti le liti le li fetang, mofuta oa boikotso o tholo ha ba ntlha ea liti e tla thusa ba ntloba ea liti ho fana ka litšomo tse ling tsa mofuta.
 
-#### Ho Lapa (General)
+#### Ho Lapa (General) {#general}
 
 Tab ya **General** e hlatsa litlhahlo tse ntlha tsa botshelo (attributes) tse di tlhokotsang le di tsamaisang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang le mme a tlhokotsang.
 
@@ -125,7 +125,7 @@ Ultimate Multisite e tšoa dikotso tse dintsi tsa lapa le lapa (product types) t
 
 ![Setso sa tsela ea morao o leboho /img/config/product-customer-role-settings.png]
 
-#### Ho fana ka ho tsamaea (Up & Downgrades)
+#### Ho fana ka ho tsamaea (Up & Downgrades) {#up--downgrades}
 
 Tse tab ena e bolela tsela ea ho tsamaea le ho fana ka ho tsamaea (upgrade and downgrade paths) tse fapaneng tse ka ba le morao oa morao oa hau mo tsela ea hau.
 
@@ -141,7 +141,7 @@ Ho ho, go ba leboetso la plan group, o tla batla ka monate (compatible plans) mo
 
 Ka Ultimate Multisite e na le litaba la **order bump**, sefapso se fanaang ka ntlha ea hore baithuti ba tlhokotsa (add-on products) le litaba tsa khompho (services) haholo ba kae ba ka fetola ho ba le ka monate. Ho fanaang ho baithuti le ho ba le ka monate, e reka ho feta ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate a tlhokotsa (add-on products) le litaba tsa khompho (services) haholo ba kae ba ka fetola ho ba le ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka monate ka
 
-#### Hoelo ea Litshoa
+#### Hoelo ea Litshoa {#price-variations}
 
 Ke tla re le kae hore o le ka fana ka litshoa tse fapaneng.
 
@@ -171,7 +171,7 @@ Re tla re bontša hore na lefa nako e ntse e le mofuta o o tsamaisang oa billing
 **Ka Morero:**
 O batla hore ba-user ba ka bona nako e ntse e le mofuta o o tsamaisang oa billing, kapa hore ba ka qala ho uba le mofuta o o tsamaisang.
 
-### 1. Ho Baola Tšobo ea Mofuta (Displaying the Toggle)
+### 1. Ho Baola Tšobo ea Mofuta (Displaying the Toggle) {#taxes}
 
 Ho baola tšobong (toggle) ea mofuta o o tsamaisang, o tla hlokomisa li-PHP le CSS ho fana ka sehlopha sefapso se fana ka tsela ea ho ba le ka bonolo.
 
@@ -222,7 +222,7 @@ Ho ba le bonolo, o tla hlokomisa sehlopha sefapso (CSS) se fana ka tsela ea ho b
 }
 ```
 
-### 2. Ho Baola Tšobo ea Mofuta (Displaying the Toggle) ka WooCommerce
+### 2. Ho Baola Tšobo ea Mofuta (Displaying the Toggle) ka WooCommerce {#site-templates}
 
 Ha u ba le ho setso oa WooCommerce, o tla hlokomisa sehlopha sefapso se fana ka tsela ea ho ba le ka bonolo:
 
@@ -256,7 +256,7 @@ O tla hlokomisa sehlopha sefapso (CSS) se fana ka tsela ea ho ba le ka bonolo, e
 }
 ```
 
-### 3. Ho Baola Tšobo ea Mofuta (Displaying the Toggle) ka Ultimate Multisite
+### 3. Ho Baola Tšobo ea Mofuta (Displaying the Toggle) ka Ultimate Multisite {#sites}
 
 Ha u ba le ho setso oa Ultimate Multisite, o tla hlokomisa sehlopha sefapso se fana ka tsela ea ho ba le ka bonolo:
 
@@ -292,7 +292,7 @@ O tla hlokomisa sehlopha sefapso (CSS) se fana ka tsela ea ho ba le ka bonolo, e
 
 Ho litshwalo tsa tshena ha li fana ka toggle kapa switch le fetoga (switch) le frontend checkout. Ho ntsha bohlokoa ba magakgogolo ho fetola tsela efe ea tsena (e.g. Monthly / Annual), o hloka ho ntsa sehlopha sa **Period Selection** ho form ya hau ya checkout. Ho bona [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) ho tsela-tsela efe ea ho ntsa le tsela-tsela (step-by-step instructions).
 
-#### Taxa (Taxes)
+#### Taxa (Taxes) {#visits}
 
 Tab ya **Taxes** e le teng le litlhahlo tsa tshepa tse di dirileng ka tsela e e leng ka tsela eo e dirileng ka **Ultimate Multisite > Settings > Taxes** le ho fana ka litlhahlo tsa tshepa tse di hlalosang. Ho ba le le tshepa le ho dira litlhahlo tsa tshepa tse di fetogileng, le ho dira litlhahlo tsa tshepa tse di fetogileng, ho bala dokumenta a **Ultimate Multisite: Settings**.
 
@@ -326,7 +326,7 @@ Ho fela, **C ho hloba Template a leholo a tsamaea** ho reka template tse di tsam
 
 Ho ntlha, ha se a re batla ba leba ba tlhoka ho seleksona sa template ka mofuta oa checkout steps, setso ea '_default_' o tla ba lehlopha. Ka lebo la ho fana ka ho laola le ho faka seleksona sa template le ho fana ka setso sa plan, e le thata ho sebelisa opshoni ' _assign new template_ ' kapa ' _choose available site templates_ '.
 
-#### Sites
+#### Sites {#users}
 
 Taba ya **Sites** e dirwa ka mekgwa ea fanaang le tsela e tsoang ka Ultimate Multisite.
 
@@ -336,7 +336,7 @@ Tsebo ena e bolela sebopeletso se fetang sebopeletso sa site e e ka e hlalosang 
 
 Ho ba lehlelo, u rata ho setse toggel ya **limit sites** ebe a le teng (active) le u batse se sefaneha sa mantsi a le thata sa mantsi a ka fana ka morao ha le **site allowance**.
 
-#### Mantsi a lethateng
+#### Mantsi a lethateng {#post-types}
 
 Tab ya **Visits** ke mofuta o fanaang le ho fetoga la Ultimate Multisite. Ho dira ka tsela ena, u ka rekala le ho fana ka tsela efe (throttling) ba batho ba fapaneng ba tla ka site ea sebope.
 
@@ -348,7 +348,7 @@ Ho bala le fa u batla ho sebelisa tsela ena, u rata ho feta (set) toggling ea **
 
 Ha o fihla le liti, Ultimate Multisite ha ho tla sirreba site ea morao oa morao oa hau, empa ho tla bonela litšomo tse bontšang hore liti li fetileng.
 
-#### Baalagi (Users)
+#### Baalagi (Users) {#disk-space}
 
 Ho fana'a le ho fana'a ka, "Users" ea Ultimate Multisite e le sefalo sa baetso ba network administrator ho fana'a ho fana'a le ho fana'a lehlakanya leboho baetso ba ba ka fetola le ho fana'a lehlakanya leboho ba etsa.
 
@@ -358,7 +358,7 @@ Ho ba lehleletse fa felaetso la limitation (limit user), u tshepe **limit user**
 
 Ho fana'a ho ntlha ho ea liti tse ling, etsa le toggling e teng ho feta li lehle, le re tshepe ho setse limetso le liti tse fapaneng fa sefalo se tshepelo.
 
-#### Post Types
+#### Post Types {#custom-domain}
 
 Tab ea **Post Types** e tsoela ba leba bohlokoa ba admin oa sebopeho ho fana ka litlhaloso tse ntle (granular limits) tsa dits'etso tsa post types tse fapaneng ka WordPress.
 
@@ -370,7 +370,7 @@ Ho hoho ho fana ka tsela eona, ho ba le bohlokoa hore u lae **limit post types**
 
 Ho fela, ho feta moo ho ba le tsela efe ea post type e tla ba le li-limit, u na le ho tsamaetsa (toggle) ka ho tsamaetsa ho le lina le le fetileng le ho hlalosa sefapeng sefetso se fetileng.
 
-#### Disk Space
+#### Disk Space {#themes}
 
 Tab ya **Disk Space** e tlhokotsa ba leba la mofuta (network administrators) ho fana ka ho fana ka sebope se se fetang ke ba leba.
 
@@ -382,13 +382,13 @@ Ho ba lehleletse ho fetola sefapso sa disk (disk usage limitation), ule **limit 
 
 Ke tla hlalosa sefapso se se fana ka ho fetola sefapso sa disk, se tla lehleletse **disk space allowanc** e.
 
-#### Custom Domain
+#### Custom Domain {#plugins}
 
 Ho fana ka ho tsamaisa tsela ena, u ka sa madiri domain e fetang (custom domains) ho tsela ea lona ea pele.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes
+#### Themes {#reset-limitations}
 
 Tab ya **Themes** mo dikgomo tsa boikotso (product options) e tšoa ba le baithuti ba network ho ba ntlha ba themes ho ba leba ba baithuti ho ba leba ho ba leba ho ba leba ho ba leba.
 
@@ -404,7 +404,7 @@ Ho fihla **behavior** (sebelo), bo ntho e tšoa ba leba le ba ntlha ho ba leba s
 
 Mora le thata e **A vakaai**, se fana ka motho ho ba le bone ho ba le bone (self-activation). Le tsela e **E ne e fana**, e fana ka motho ho fana ka bone theme. Ho tsamaea, opshoni ea **Force Activate** e fana ka ho tsamaea le ho fana ka bone theme, ho e dira e le default ho site e fetang.
 
-#### Plugins
+#### Plugins {#edit-duplicate-or-delete-product}
 
 Ka sefalo le Theme tab, Ultimate Multisite e tšoa ba admin (network administrator) ho ba le bonelelo ba plugins ho batho (customers) le bohlokoa ba li ka nako ea site e ntlha e fetang.
 

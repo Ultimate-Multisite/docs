@@ -2,24 +2,23 @@
 id: signup_get_available_languages
 title: 过滤器 - signup_get_available_languages
 sidebar_label: signup_get_available_languages
-_i18n_hash: abfd9a9381c23503be93e034d42f32c8
+_i18n_hash: 8e47c618635cf9564c3c2d2864b47529
 ---
-# Filter: signup_get_available_languages
+# 筛选器： signup_get_available_languages {#filter-signupgetavailablelanguages}
 
-过滤前端站点注册时可用语言的列表。
+筛选前端站点注册可用语言列表。
 
-传递一个空数组给此钩子将禁用注册表单中该设置的输出，并在创建站点时使用默认语言。未安装的语言将被剔除。
+向此钩子传递空数组将禁用注册表单上该设置的输出，并在创建站点时使用默认语言。尚未安装的语言将被移除。
 
-## Parameters
+## 参数 {#parameters}
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 |------|------|-------------|
 | $available_languages | `array` | 可用语言。 |
 
-### Since
+### 自 {#since}
 
 - 4.4.0
+### 来源 {#source}
 
-### Source
-
-Defined in [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L125) at line 125
+定义于 [`ultimate-multisite-language-selector.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-language-selector/blob/main/ultimate-multisite-language-selector.php#L117) 第 117 行

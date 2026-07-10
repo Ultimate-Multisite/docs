@@ -4,11 +4,11 @@ title: Действие - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Действие: wu_membership_pre_renew
+# Действие: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Триггер до обновления членства.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 | $membership_id | `int` | ID членства. |
 | $membership | `\Membership` | Объект членства. |
 
-### С версии
+### С версии {#since}
 
 - 2.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) на строке 2204

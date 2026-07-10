@@ -3,7 +3,7 @@ title: Šta je WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Šta je WordPress Multisite?
+# Šta je WordPress Multisite? {#what-is-wordpress-multisite}
 
 U svojoj osnovi, WordPress nudi značajnost nazvanu ‘Multisite’ čije korijeni sežu do 2010. godine, kada je lansiran WordPress 3.0. Od tada je prošao kroz niz revizija koje su ciljane na uvođenje novih značajnosti i pojačavanje sigurnosti.
 
@@ -11,7 +11,7 @@ U suštini, WordPress multisite se može zamisliti ovako: Univerzitet održava j
 
 ##
 
-## Šta je tačno WordPress Multisite?
+## Šta je tačno WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite je značajnost WordPressa koja omogućava više sajtova da dijele jednu WordPress instalaciju. Kada se multisite aktivira, originalni WordPress sajt se konvertuje da podrži ono što se obično naziva **mreža sajtova**.
 
@@ -23,7 +23,7 @@ Ovo je jedna od glavnih prednosti multisitea, jer vam omogućava da povećate br
 
 ##
 
-## Poddomena ili poddirektorijum?
+## Poddomena ili poddirektorijum? {#subdomain-or-subdirectory}
 
 Postoje dva načina za pokretanje WordPress multisitea – i morate odabrati jedan kada konvertujete svoju regularnu WordPress instalaciju u multisite instalaciju:
 
@@ -49,7 +49,7 @@ Jedan od glavnih izazova u postavljanju režima poddomena je pokrivenost SSL-om 
 
 Za razliku od režima poddirektorijuma, subsajte na mreži baziranoj na poddomenama smatraju tražilice kao zasebne web sajtove, što znači da sadržaj prisutan na jednom subsajtu ne utječe na SEO performanse drugih subsajta.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Single-site WordPress instalacije omogućavaju dodavanje neograničenog broja korisnika i davanje tim korisnicima različitih uloga sa različitim dozvolama.
 
@@ -63,7 +63,7 @@ Pluginove i teme mogu instalirati ili deinstalirati samo sa network admin panela
 
 _Napomena: kako vidite, pozivanje nekoga u vašu mrežu i davanje mu statusa super admina daje ovom korisniku potpunu kontrolu nad vašom mrežom. Kao primjer, drugi super admini čak mogu ukloniti vaš super admin status, efektivno vas zaključavajući iz vašeg vlastitog network admin panela. Da bismo omogućili korisnicima Ultimate Multisite da imaju granuliranu kontrolu nad onim što drugi super admini mogu učiniti, imamo dodatak nazvan Support Agents. Ovaj dodatak vam omogućava da kreirate još jedan tip korisnika – agenta – sa samo dozvolama koje bi možda trebali za obavljanje svojih zadataka na mreži._
 
-## Šta je dijeljeno između subsajta i šta nije
+## Šta je dijeljeno između subsajta i šta nije {#what-is-shared-among-subsites-and-what-is-not}
 
 Kao što smo ranije spomenuli, jedna od ključnih prednosti WordPress multisitea je što svi subsajte dijele iste konfiguracije, osnovne datoteke, teme, pluginove, osnovne WordPress datoteke, itd.
 
@@ -75,7 +75,7 @@ Međutim, postoje elementi koji su lijepo ograničeni na nivou svakog subsajta.
 
 - Većina tabela baze podataka kreirana je za svaki subsajt, što znači da su postovi, komentari, stranice, postavke i slično ograničeni za svaki subsajt.
 
-## Upravljanje korisnicima na WordPress Multisiteu
+## Upravljanje korisnicima na WordPress Multisiteu {#user-management-on-wordpress-multisite}
 
 Jedva osjetljiv tema na WordPress multisiteu je upravljanje korisnicima. WordPress korisnička tabela je jedna od rijetkih koje se dijele među svim subsajtovima.
 
@@ -99,7 +99,7 @@ _Napomena: shvatamo koliko to može biti loše ovisno o vašoj upotrebi, pa Ulti
 
 Iako je korisnička tabela dijeljena, korisnike mogu dodavati i uklanjati subsajte subsite admini ili super admin, i mogu imati različite uloge na različitim subsajtovima.
 
-## Razmatranja performansi
+## Razmatranja performansi {#performance-considerations}
 
 WordPress multisite je zaista moćan kada je u pitanju broj sajtova koje može podržati. To se može testirati činjenicom da su [WordPress.com](https://WordPress.com), Edublogs i Campuspress sve multisite bazirani servisi i svaki hostuju hiljade sajtova.
 

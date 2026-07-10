@@ -3,15 +3,15 @@ title: 'Leçon 11 : Trouver des clients'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leçon 11 : Trouver des clients
+# Leçon 11 : Trouver des clients {#lesson-11-finding-customers}
 
 Une excellente plateforme sans clients n'est qu'un passe-temps. Cette leçon explique comment acquérir des clients dans une niche verticale — des stratégies qui fonctionnent spécifiquement parce que vous vous concentrez sur un seul secteur d'activité.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite est en ligne. Maintenant, nous avons besoin que les propriétaires de studios de fitness le trouvent et s'inscrivent.
 
-## Pourquoi l'acquisition de niche est différente
+## Pourquoi l'acquisition de niche est différente {#why-niche-acquisition-is-different}
 
 Lorsque vous vendez à tout le monde, vous vous battez pour l'attention dans un marché bruyant. Lorsque vous vendez à une niche, vous avez des avantages :
 
@@ -19,17 +19,17 @@ Lorsque vous vendez à tout le monde, vous vous battez pour l'attention dans un 
 - **Votre message résonne immédiatement** — « des sites web pour studios de fitness » arrête l'attention d'un propriétaire de salle de sport en pleine navigation
 - **Les références se multiplient** — les propriétaires de studios de fitness connaissent d'autres propriétaires de studios de fitness
 
-## Canal 1 : Prospection directe
+## Canal 1 : Prospection directe {#channel-1-direct-outreach}
 
 Le chemin le plus rapide vers vos premiers clients est la prospection directe et personnelle.
 
-### Trouver des prospects
+### Trouver des prospects {#find-prospects}
 
 - Recherchez sur Google Maps des studios de fitness, des salles de sport et des entraîneurs personnels de votre région
 - Visitez leurs sites web actuels (ou notez qu'ils n'en ont pas)
 - Collectez les coordonnées à partir de leurs profils Google Business ou de leurs réseaux sociaux
 
-### Évaluer leur situation actuelle
+### Évaluer leur situation actuelle {#evaluate-their-current-situation}
 
 Pour chaque prospect, notez :
 
@@ -37,7 +37,7 @@ Pour chaque prospect, notez :
 - **Mauvais site web** : Prospect solide — montrez-leur à quoi ressemble une meilleure option
 - **Bon site web** : Prospect faible — ils ont déjà résolu ce problème
 
-### Prendre contact
+### Prendre contact {#make-contact}
 
 Envoyez un e-mail ou un message personnalisé :
 
@@ -48,7 +48,7 @@ Envoyez un e-mail ou un message personnalisé :
 
 N'envoyez pas d'e-mails de masse. Une prospection personnalisée auprès de 20 prospects bien documentés sera plus efficace qu'un envoi générique à 2 000 personnes.
 
-## Canal 2 : Communautés de niche
+## Canal 2 : Communautés de niche {#channel-2-niche-communities}
 
 Les propriétaires de studios de fitness se rassemblent dans des endroits spécifiques en ligne :
 
@@ -57,7 +57,7 @@ Les propriétaires de studios de fitness se rassemblent dans des endroits spéci
 - **Forums** et tableaux de discussion de l'industrie
 - **Groupes LinkedIn** pour les professionnels du fitness
 
-### Comment participer
+### Comment participer {#how-to-participate}
 
 Ne rejoignez pas un groupe pour y vendre immédiatement votre produit. Au lieu de cela :
 
@@ -66,7 +66,7 @@ Ne rejoignez pas un groupe pour y vendre immédiatement votre produit. Au lieu d
 3. **Partagez quand c'est pertinent** — lorsqu'on vous pose des questions sur les sites web, partagez votre plateforme naturellement
 4. **Créez du contenu utile** — rédigez des publications sur « ce qui fait un excellent site web pour un studio de fitness » qui mènent naturellement à votre plateforme
 
-## Canal 3 : Marketing de contenu
+## Canal 3 : Marketing de contenu {#channel-3-content-marketing}
 
 Créez du contenu que les propriétaires de studios de fitness recherchent :
 
@@ -77,7 +77,7 @@ Créez du contenu que les propriétaires de studios de fitness recherchent :
 
 Publiez cela sur le blog marketing de FitSite. Avec le temps, ce contenu sera classé dans les moteurs de recherche et attirera un trafic organique de personnes qui recherchent activement ce que vous proposez.
 
-## Canal 4 : Partenariats
+## Canal 4 : Partenariats {#channel-4-partnerships}
 
 Collaborez avec des entreprises qui servent déjà les studios de fitness :
 
@@ -88,7 +88,7 @@ Collaborez avec des entreprises qui servent déjà les studios de fitness :
 
 Proposez des commissions de parrainage ou une promotion réciproque. L'[AffiliateWP addon](/addons/affiliatewp) peut vous aider à mettre en place un programme de parrainage formel.
 
-## Canal 5 : Événements de l'industrie
+## Canal 5 : Événements de l'industrie {#channel-5-industry-events}
 
 Les événements de l'industrie du fitness vous mettent en contact avec des centaines de clients potentiels :
 
@@ -99,7 +99,7 @@ Les événements de l'industrie du fitness vous mettent en contact avec des cent
 
 Vous n'avez pas besoin d'un grand budget. Même y assister en tant que participant et avoir des conversations sur ce que vous faites peut générer des pistes.
 
-## Canal 6 : Sites vitrines (Showcase Sites)
+## Canal 6 : Sites vitrines (Showcase Sites) {#channel-6-showcase-sites}
 
 Votre meilleur marketing est constitué des sites de vos clients existants. Avec leur permission :
 
@@ -108,7 +108,7 @@ Votre meilleur marketing est constitué des sites de vos clients existants. Avec
 - Demandez des témoignages aux clients satisfaits
 - Encouragez les clients à mentionner FitSite lorsqu'on leur demande des nouvelles de leur site web
 
-## Mise en place d'un programme de parrainage
+## Mise en place d'un programme de parrainage {#setting-up-a-referral-program}
 
 Le bouche-à-oreille est votre canal le plus puissant dans une niche. Formalisez-le :
 
@@ -116,7 +116,7 @@ Le bouche-à-oreille est votre canal le plus puissant dans une niche. Formalisez
 2. Offrez aux clients existants une récompense pour les parrainages (un mois gratuit, un crédit de compte, etc.)
 3. Facilitez-le — donnez-leur un lien de parrainage et un message simple qu'ils peuvent transférer
 
-## Suivre ce qui fonctionne
+## Suivre ce qui fonctionne {#tracking-what-works}
 
 Pour chaque canal, suivez :
 
@@ -126,7 +126,7 @@ Pour chaque canal, suivez :
 
 Concentrez-vous sur les canaux qui fonctionnent. Coupez ceux qui ne fonctionnent pas.
 
-## Attentes réalistes
+## Attentes réalistes {#realistic-expectations}
 
 - **Mois 1-3** : 5 à 20 clients, principalement grâce à la prospection directe et aux communautés
 - **Mois 4-6** : 20 à 50 clients, le marketing de contenu commence à contribuer
@@ -134,7 +134,7 @@ Concentrez-vous sur les canaux qui fonctionnent. Coupez ceux qui ne fonctionnent
 
 Ces chiffres varient, mais le schéma est constant : les premiers clients proviennent de l'effort direct, les clients suivants proviennent des effets cumulatifs du contenu, des références et de la réputation.
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Six canaux d'acquisition** adaptés à la niche du fitness
 - **Un processus de prospection directe** pour trouver les premiers clients

@@ -3,13 +3,13 @@ title: Meldig über d'Entfernung vom Site Builder Modus
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Hinweis zur Entfernung des Site Builder Modus
+# Hinweis zur Entfernung des Site Builder Modus {#site-builder-mode-removal-notice}
 
 **Der Site Builder Modus wurde in Superdav AI Agent v1.12.0 entfernt.** Wenn Sie den Site Builder Modus verwendet haben, sollten Sie auf den **Setup Assistant agent** für Theme-Erstellung und Seitenaufbau umsteigen.
 
-## Was ist passiert?
+## Was ist passiert? {#what-happened}
 
-### Site Builder Modus (Legacy)
+### Site Builder Modus (Legacy) {#site-builder-mode-legacy}
 
 Der Site Builder Modus war eine Wizard-basierte Oberfläche für:
 
@@ -18,7 +18,7 @@ Der Site Builder Modus war eine Wizard-basierte Oberfläche für:
 - Auswahl eines Themes
 - Einrichten des ersten Inhalts
 
-### Was hat ihn ersetzt?
+### Was hat ihn ersetzt? {#what-replaced-it}
 
 Der **Setup Assistant agent** übernimmt jetzt alle Funktionen des Site Builders mit:
 
@@ -27,15 +27,15 @@ Der **Setup Assistant agent** übernimmt jetzt alle Funktionen des Site Builders
 - Integration in die Theme Builder Onboarding
 - Persistenter `site_brief` Speicher für zukünftige Sitzungen
 
-## Wenn Sie den Site Builder Modus verwendet haben
+## Wenn Sie den Site Builder Modus verwendet haben {#if-you-were-using-site-builder-mode}
 
-### Ihre Seiten sind sicher
+### Ihre Seiten sind sicher {#your-sites-are-safe}
 
 - Bestehende Seiten, die mit dem Site Builder Modus erstellt wurden, funktionieren weiterhin einwandfrei.
 - Kein Datenverlust oder Unterbrechung der Seitenverwaltung.
 - Sie können Ihre Seiten wie gewohnt weiter verwalten.
 
-### Wechseln Sie zum Setup Assistant Agent
+### Wechseln Sie zum Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Für den Aufbau neuer Seiten oder Theme-Änderungen verwenden Sie bitte den Setup Assistant agent:
 
@@ -51,7 +51,7 @@ oder
 
 Der Setup Assistant agent bietet dieselbe Funktionalität, aber mit mehr Flexibilität.
 
-## Vergleich: Site Builder vs. Setup Assistant
+## Vergleich: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Feature | Site Builder (Entfernt) | Setup Assistant (Neu) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Der Setup Assistant agent bietet dieselbe Funktionalität, aber mit mehr Flexibi
 | Zukünftige Sitzungen | Wiederholte Einrichtung | Nutzung des gespeicherten `site_brief` |
 | Flexibilität | Fester Arbeitsablauf | Anpassungsfähiges Gespräch |
 
-## Migration zum Setup Assistant Agent
+## Migration zum Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Für neue Seiten
+### Für neue Seiten {#for-new-sites}
 
 Anstatt den Site Builder Modus zu verwenden:
 
@@ -76,7 +76,7 @@ Anstatt den Site Builder Modus zu verwenden:
    - Theme-Generierung
    - Erste Konfiguration
 
-### Für bestehende Seiten
+### Für bestehende Seiten {#for-existing-sites}
 
 Wenn du eine bestehende Seite aus dem Site Builder Modus hast:
 
@@ -85,7 +85,7 @@ Wenn du eine bestehende Seite aus dem Site Builder Modus hast:
 3. Der Setup Assistant Agent hilft dir dabei, ein neues Theme zu erstellen
 4. Deine Seitendaten bleiben unverändert
 
-### Für Theme-Änderungen
+### Für Theme-Änderungen {#for-theme-changes}
 
 Anstelle der Theme-Auswahl im Site Builder Modus:
 
@@ -95,9 +95,9 @@ Anstelle der Theme-Auswahl im Site Builder Modus:
    - Ein benutzerdefiniertes Theme generieren
    - Es auf deiner Seite aktivieren
 
-## Hauptunterschiede
+## Hauptunterschiede {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Vorlage wählen
@@ -106,7 +106,7 @@ Anstelle der Theme-Auswahl im Site Builder Modus:
 4. Fertig
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Beschreibe den Zweck deiner Seite
@@ -117,42 +117,42 @@ Anstelle der Theme-Auswahl im Site Builder Modus:
 6. Kurzbeschreibung der Seite wird für zukünftige Sitzungen gespeichert
 ```
 
-## Vorteile des Setup Assistant Agents
+## Vorteile des Setup Assistant Agents {#benefits-of-setup-assistant-agent}
 
-### Flexibler
+### Flexibler {#more-flexible}
 
 - Beschreibe deine Seite in natürlicher Sprache
 - Erhalte individuelle Empfehlungen
 - Passe dich deinen spezifischen Bedürfnissen an
 
-### Bessere Anpassungsmöglichkeiten
+### Bessere Anpassungsmöglichkeiten {#better-customization}
 
 - Generierung eines benutzerdefinierten Themes
 - Entscheidungen über das Designsystem
 - Persistente Design-Tokens
 
-### Persistentes Gedächtnis
+### Persistentes Gedächtnis {#persistent-memory}
 
 - Deine `site_brief` wird gespeichert
 - Zukünftige Agent verstehen deine Seite
 - Du musst Setup-Informationen nicht wiederholen
 
-### Integrierter Workflow
+### Integrierter Workflow {#integrated-workflow}
 
 - Onboarding des Theme Builders
 - Fähigkeit zur Ästhetik des Design Systems
 - Möglichkeit, Sichtbarkeitskontrollen zu nutzen
 - Alles arbeitet nahtlos zusammen
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-### Ich finde den Site Builder Modus nicht
+### Ich finde den Site Builder Modus nicht {#i-cant-find-site-builder-mode}
 
 Der Site Builder Modus wurde entfernt. Verwende stattdessen den Setup Assistant Agent:
 
 "Hilf mir, e neui Site ufbaue"
 
-### Ich wott e Site vo eme Site Builder neu mache
+### Ich wott e Site vo eme Site Builder neu mache {#i-want-to-recreate-a-site-from-site-builder}
 
 Du chasch sie mit em Setup Assistant Agent neu ufbaue:
 
@@ -161,7 +161,7 @@ Du chasch sie mit em Setup Assistant Agent neu ufbaue:
 3. De Agent generiert en ähnliche Theme
 4. Din `site_brief` wird für zukünftigi Referenz gspeicheret
 
-### Mini bestehendi Site Builder Site funktioniert nöd
+### Mini bestehendi Site Builder Site funktioniert nöd {#my-existing-site-builder-site-isnt-working}
 
 Bestehende Sites, wo mit em Site Builder Modus erstellt worde sind, wiiterhin funktioniere. Falls du Problem hesch:
 
@@ -170,7 +170,7 @@ Bestehende Sites, wo mit em Site Builder Modus erstellt worde sind, wiiterhin fu
 3. Prüef d'WordPress Error Logs
 4. Kontaktier de Support, falls d'Problem wiiterhärblebe
 
-### Chann ich mini alte Site Builder Templates no bruche?
+### Chann ich mini alte Site Builder Templates no bruche? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder Templates sind nümme verfügbar. Aber:
 
@@ -178,14 +178,14 @@ Site Builder Templates sind nümme verfügbar. Aber:
 - Du chasch ähnlechi Sites mit em Setup Assistant Agent neu ufbaue
 - De Setup Assistant Agent bietet meh Anpassigsmöglichkeite
 
-## Nächsti Schritt
+## Nächsti Schritt {#next-steps}
 
 1. **Für neui Sites**: Bruuch de Setup Assistant Agent
 2. **Für bestehendi Sites**: Halt wiiterhin so, wie sie sind
 3. **Für Theme-Änderige**: Frag de Setup Assistant Agent um Hilf
 4. **Für Design-Verfeinerig**: Bruuch d'Design System Aesthetics Skill
 
-## Verwandti Themen
+## Verwandti Themen {#related-topics}
 
 - **Theme Builder Onboarding**: Gfüehrti Ufbau für benutzerdefinierti Themes
 - **Setup Assistant Agent**: Site-Ufbau mit Agent-Leitig

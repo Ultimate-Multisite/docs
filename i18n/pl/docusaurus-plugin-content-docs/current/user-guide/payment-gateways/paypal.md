@@ -1,61 +1,72 @@
 ---
-title: Konfiguracja PayPal
+title: Konfigurowanie PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Konfiguracja bramki PayPal (v2)
+# Konfigurowanie bramki PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
 
-Na stronie ustawień płatności możesz aktywować do czterech metod płatności: Stripe, Stripe Checkout, PayPal oraz płatność ręczną. W tym artykule pokażemy, jak zintegrować **PayPal**.
+Na naszej stronie ustawień płatności możesz aktywować do czterech metod płatności: Stripe, Stripe Checkout, PayPal i Ręczna. W tym artykule zobaczymy, jak zintegrować się z **PayPal**.
 
-Podobnie jak Stripe, PayPal jest powszechnie używany do płatności online, szczególnie na stronach WordPress. Ten artykuł przeprowadzi Cię przez proces konfiguracji PayPal jako metody płatności dostępnej w Twojej sieci.
+Podobnie jak Stripe, PayPal jest szeroko używany do płatności online, zwłaszcza na stronach WordPress. Ten artykuł pokaże Ci, jak używać PayPal jako metody płatności dostępnej w Twojej sieci.
 
-Pamiętaj, że do uzyskania danych API potrzebnych do tej integracji musisz posiadać **konto PayPal Business**.
+Pamiętaj, że musisz mieć **konto PayPal Business**, aby uzyskać dane uwierzytelniające API potrzebne do tej integracji.
 
-## Włączanie PayPal w Twojej sieci
+## Włączanie PayPal w Twojej sieci {#enabling-paypal-on-your-network}
 
-Aby włączyć PayPal jako dostępną metodę płatności w Twojej sieci, przejdź do **Ultimate Multisite > Ustawienia > Płatności** i zaznacz pole obok PayPal.
+Aby włączyć PayPal jako dostępną metodę płatności w Twojej sieci, przejdź do karty **Ultimate Multisite > Ustawienia > Płatności** i zaznacz pole obok PayPal.
 
 ![Włączanie PayPal w aktywnych bramkach płatności](/img/config/settings-payment-gateways.png)
 
-## Uzyskiwanie danych API PayPal
+## Korzystanie z prowadzonego kreatora konfiguracji {#using-the-guided-setup-wizard}
 
-Po włączeniu PayPal jako bramki płatności musisz wypełnić pola: **Nazwa użytkownika** API PayPal, **Hasło** API PayPal oraz **Podpis** API PayPal.
+Ultimate Multisite 2.10.0 dodaje prowadzony kreator konfiguracji PayPal do ustawień bramki płatności. Po włączeniu PayPal użyj kreatora w **Ultimate Multisite > Ustawienia > Płatności**, aby wybrać, jak chcesz połączyć bramkę, i potwierdzić, które dane uwierzytelniające są nadal potrzebne przed zapisaniem.
+
+Kreator obsługuje dwie ścieżki konfiguracji:
+
+* **Ręczne wprowadzanie danych uwierzytelniających**: Użyj tej ścieżki, gdy masz już dane uwierzytelniające PayPal API, gdy konfiguracja OAuth nie jest dostępna dla Twojego konta albo gdy wolisz samodzielnie skopiować dane uwierzytelniające z PayPal. Wprowadź API Username, API Password i API Signature w polach PayPal, a następnie zapisz ustawienia płatności.
+* **Brama połączenia OAuth**: Użyj tej ścieżki tylko wtedy, gdy opcja OAuth jest dostępna i włączona dla Twojej instalacji. Kreator pokazuje przepływ OAuth za flagą funkcji, więc sieci bez tej flagi nadal używają pól ręcznego wprowadzania danych uwierzytelniających.
+
+Jeśli nie widzisz opcji OAuth w kreatorze, wykonaj poniższy przepływ ręcznego wprowadzania danych uwierzytelniających. Bramka działa z tymi samymi danymi uwierzytelniającymi PayPal Business API co poprzednie wydania Ultimate Multisite 2.x.
+
+## Uzyskiwanie danych uwierzytelniających PayPal API {#getting-the-paypal-api-credentials}
+
+Gdy PayPal zostanie włączony jako bramka płatności, musisz wypełnić pola PayPal API **Username**, PayPal API **Password** i PayPal API **Signature**.
 
 Możesz je uzyskać, logując się na swoje konto PayPal [Live](https://www.paypal.com/home) lub [Sandbox](https://www.sandbox.paypal.com/home).
 
-(Pamiętaj, że możesz użyć **trybu sandbox**, aby przetestować płatności i sprawdzić, czy bramka jest poprawnie skonfigurowana. Wystarczy włączyć odpowiednią opcję.)
+(Pamiętaj, że możesz użyć **trybu sandbox**, aby przetestować płatności i sprawdzić, czy bramka jest poprawnie skonfigurowana. Wystarczy włączyć odpowiednią sekcję.)
 
-![Pola danych API PayPal i przełącznik trybu sandbox](/img/config/settings-payment-gateways.png)
+![Pola danych uwierzytelniających PayPal API i przełącznik trybu sandbox](/img/config/settings-payment-gateways.png)
 
-Aby uzyskać dane API Signature lub Certificate dla swojego konta PayPal:
+Aby poprosić o dane uwierzytelniające API Signature lub Certificate dla swojego konta PayPal:
 
-  1. Przejdź do [Ustawień konta](https://www.paypal.com/businessmanage/account/accountAccess).
+  1. Przejdź do [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
-  2. W sekcji **Dostęp do API** kliknij **Aktualizuj**.  
-![Ustawienia konta PayPal z sekcją dostępu do API](/img/config/settings-payment-gateways.png)
+  2. W sekcji **Dostęp API** kliknij **Aktualizuj**.
+![PayPal Account Settings z sekcją dostępu API](/img/config/settings-payment-gateways.png)
 
-  3. W sekcji **Integracja NVP/SOAP API (Classic)** kliknij **Zarządzaj danymi API**.  
-![Integracja NVP/SOAP API PayPal – Zarządzaj danymi API](/img/config/settings-payment-gateways.png)
+  3. W obszarze **Integracja NVP/SOAP API (Classic)** kliknij **Zarządzaj danymi uwierzytelniającymi API**.
+![Integracja PayPal NVP/SOAP API — Zarządzaj danymi uwierzytelniającymi API](/img/config/settings-payment-gateways.png)
 
-     * Jeśli wcześniej wygenerowałeś już API Signature lub Certificate, zostaniesz przekierowany na stronę, gdzie znajdziesz swoje dane.
+     * Jeśli masz już wygenerowany API Signature lub Certificate, zostaniesz przekierowany na stronę, na której znajdziesz swoje dane uwierzytelniające.
 
-     * _**Uwaga:** Jeśli pojawi się prośba o weryfikację konta PayPal, postępuj zgodnie z instrukcjami na ekranie._
+     * _**Uwaga:** Jeśli zostaniesz poproszony o zweryfikowanie swojego konta PayPal, postępuj zgodnie z instrukcjami wyświetlanymi na ekranie._
 
   4. Wybierz _jedną_ z poniższych opcji, a następnie kliknij **Zgadzam się i wyślij**.
 
-     * **Żądaj API Signature** – Wybierz, aby korzystać z uwierzytelniania przez API Signature.
+     * **Poproś o API Signature** – Wybierz do uwierzytelniania API Signature.
 
-     * **Żądaj API Certificate** – Wybierz, aby korzystać z uwierzytelniania przez API Certificate.
+     * **Poproś o API Certificate** – Wybierz do uwierzytelniania API Certificate.
 
-  5. PayPal wygeneruje Twoje dane API w następujący sposób:  
-![Wygenerowane dane API PayPal](/img/config/settings-payment-gateways.png)
+  5. PayPal generuje Twoje dane uwierzytelniające API w następujący sposób:
+![Wygenerowane dane uwierzytelniające PayPal API](/img/config/settings-payment-gateways.png)
 
-     * **Dane API Signature** obejmują nazwę użytkownika API, hasło API oraz podpis, które nie wygasają. Te wartości są domyślnie ukryte ze względów bezpieczeństwa. Kliknij **Pokaż/Ukryj**, aby je wyświetlić lub ukryć. Po zakończeniu kliknij **Gotowe**.
+     * **Dane uwierzytelniające API Signature** obejmują API Username, API Password i Signature, który nie wygasa. Te wartości są domyślnie ukryte dla zwiększenia bezpieczeństwa. Kliknij **Pokaż/Ukryj**, aby je włączać i wyłączać. Po zakończeniu kliknij **Gotowe**.
 
-     * **Dane API Certificate** obejmują nazwę użytkownika API, hasło API oraz certyfikat, który wygasa automatycznie po trzech latach. Kliknij **Pobierz certyfikat**, aby zapisać certyfikat API na swoim komputerze.
+     * **Dane uwierzytelniające API Certificate** obejmują API Username, API Password i Certificate, który automatycznie wygasa po trzech latach. Kliknij **Pobierz Certificate**, aby zapisać API Certificate na swoim komputerze.
 
-To wszystko – integracja płatności PayPal jest gotowa!
+To wszystko, Twoja integracja płatności PayPal jest ukończona!
 
-Jeśli masz pytania dotyczące ustawień PayPal, możesz zajrzeć do [Centrum pomocy](https://www.paypal.com/br/smarthelp/home) PayPal.
+Jeśli masz jakiekolwiek pytania dotyczące ustawień PayPal, możesz skorzystać z [Centrum pomocy](https://www.paypal.com/br/smarthelp/home) PayPal.

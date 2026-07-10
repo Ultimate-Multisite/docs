@@ -3,11 +3,11 @@ title: Viditeľnosť schopnosti
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Viditeľnosť schopností (Ability Visibility)
+# Viditeľnosť schopností (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 spúšťa novú funkciu **Viditeľnosť schopností** (Ability Visibility), ktorá určuje, ktoré rozhranie (surfaces) zobrazia každú schopnosť. To umožňuje administrátorom do finálnej nastavenia, aké schopnosti agentov sú prístupné cez REST API, MCP server, integrácie s WooCommerce a iné rozhranie.
 
-## Čo je Viditeľnosť schopností?
+## Čo je Viditeľnosť schopností? {#what-is-ability-visibility}
 
 Viditeľnosť schopností je systém práv, ktorý ovláda:
 
@@ -18,9 +18,9 @@ Viditeľnosť schopností je systém práv, ktorý ovláda:
 
 Každá schopnosť má stupeň viditeľnosti, ktorý určuje jej dostupnosť na rôznych rozhraniách.
 
-## Stupeň viditeľnosti
+## Stupeň viditeľnosti {#visibility-levels}
 
-### Verebná (Public)
+### Verebná (Public) {#public}
 
 **Verebné schopnosti** sú prístupné všade:
 
@@ -32,7 +32,7 @@ Každá schopnosť má stupeň viditeľnosti, ktorý určuje jej dostupnosť na 
 
 Príklad: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interná (Internal)
+### Interná (Internal) {#internal}
 
 **Interné schopnosti** sú prístupné len v rámci vašej WordPress inštalácie:
 
@@ -43,7 +43,7 @@ Príklad: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Príklad: `manage-settings`, `view-analytics`, `export-data`
 
-### Partnerová (Partner)
+### Partnerová (Partner) {#partner}
 
 **Partnerové schopnosti** sú prístupné len pre partnerov uvedené v allow-liste:
 
@@ -54,7 +54,7 @@ Príklad: `manage-settings`, `view-analytics`, `export-data`
 
 Príklad: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Vypnutá (Disabled)
+### Vypnutá (Disabled) {#disabled}
 
 **Vypnuté schopnosti** nie sú prístupné nikde:
 
@@ -63,15 +63,15 @@ Príklad: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Nie sú dostupné v admin paneloch
 - Užitečné pre zastarané alebo experimentálne schopnosti
 
-## Správa viditeľnosti schopností
+## Správa viditeľnosti schopností {#managing-ability-visibility}
 
-### Prístup k nastaveniam viditeľnosti schopností
+### Prístup k nastaveniam viditeľnosti schopností {#accessing-ability-visibility-settings}
 
 1. Prejdite do **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Kliknite na záložku **Abilities** (Schopnosti)
 3. Uvidíte zoznam všetkých nainštalovaných schopností s ich úrovňami viditeľnosti
 
-### Zobrazenie detailov schopností
+### Zobrazenie detailov schopností {#viewing-ability-details}
 
 Kliknite na akúkoľvek schopnosť, aby ste uvideli:
 
@@ -82,7 +82,7 @@ Kliknite na akúkoľvek schopnosť, aby ste uvideli:
 - **Last updated** (Posledne aktualizované): Kedy sa viditeľnosť poslednýkrát zmenila
 - **Status** (Stav): Rozpoznaná alebo Unclassified (Nezohaspkaná)
 
-### Zmena úrovní viditeľnosti
+### Zmena úrovní viditeľnosti {#changing-visibility-levels}
 
 Aby ste zmenili viditeľnosť schopnosti:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Hromadné operácie
+### Hromadné operácie {#bulk-operations}
 
 Aby ste zmenili viditeľnosť viacerých schopností naraz:
 
@@ -108,11 +108,11 @@ Aby ste zmenili viditeľnosť viacerých schopností naraz:
 2. Vyberte novú úroveň viditeľnosti z rozbaľovacieho menu pre hromadnú akciu
 3. Kliknite na **Apply** (Aplikovať)
 
-## Zoznam prístupných partnerov (Partner Allow-List)
+## Zoznam prístupných partnerov (Partner Allow-List) {#partner-allow-list}
 
 **Zoznam prístupných partnerov** ovláda, ktoré externí partneri môžu pristupovať k schopnostiam úrovne Partner.
 
-### Pridanie partnerov
+### Pridanie partnerov {#adding-partners}
 
 1. Prejdite do **Superdav AI Agent** → **Settings** → **Partners**
 2. Kliknite na **Add Partner** (Pridať partnera)
@@ -120,7 +120,7 @@ Aby ste zmenili viditeľnosť viacerých schopností naraz:
 4. Voliteľne pridalte názov a popis partnera
 5. Kliknite na **Save** (Uložiť)
 
-### Pridanie schopností pre partnerov
+### Pridanie schopností pre partnerov {#assigning-abilities-to-partners}
 
 Po pridaní partnera:
 
@@ -130,7 +130,7 @@ Po pridaní partnera:
 4. V sekcii „Partner allow-list“ označte políčka pre partnerov, ktorí by mali prístup
 5. Kliknite na **Save** (Uložiť)
 
-### Odpoveď na prístup partnerov
+### Odpoveď na prístup partnerov {#revoking-partner-access}
 
 Aby ste odstránili prístup partnera:
 
@@ -140,11 +140,11 @@ Aby ste odstránili prístup partnera:
 
 Partner okamžite stráca prístup k tejto možnosti.
 
-## Neusk분에 klasifikované možnosti (**Unclassified Abilities**)
+## Neusk분에 klasifikované možnosti (**Unclassified Abilities**) {#unclassified-abilities}
 
 Keď nainštalujete externú možnosť, ktorú Superdav AI Agent nepozná, je ona označená ako **Neusk분에 klasifikovaná** (Unclassified).
 
-### Informácia pre adminov o neusk분에 klasifikovaných možností
+### Informácia pre adminov o neusk분에 klasifikovaných možností {#admin-notice-for-unclassified-abilities}
 
 Uvidíte administratívnu informáciu:
 
@@ -161,7 +161,7 @@ Prosím, prejdite ich a klasifikujte.
 [Prejsť na možnosti] [Odmietnuť]
 ```
 
-### Prezeranie neusk분에 klasifikovaných možností
+### Prezeranie neusk분에 klasifikovaných možností {#reviewing-unclassified-abilities}
 
 1. Kliknite na **Review Abilities** (Prezeraj možnosti) v upozornení
 2. Pre každú neusk분에 klasifikovanú možnosť uvidíte:
@@ -178,7 +178,7 @@ Prosím, prejdite ich a klasifikujte.
 
 4. Kliknite na **Classify** (Klasifikovať) na uloženie svojej rozhodnutia
 
-### Prečo klasifikať neusk분에 klasifikované možnosti?
+### Prečo klasifikať neusk분에 klasifikované možnosti? {#why-classify-unclassified-abilities}
 
 Klasifikovanie možností:
 
@@ -187,9 +187,9 @@ Klasifikovanie možností:
 - **Umožňuje funkcie**: Po klasifikácii sa možnosť stane dostupnou
 - **Dokumentuje rozhodnutia**: Vaše voľby sú zaznamenané na účely auditu
 
-## Viditeľnosť na rôznych povrchoch
+## Viditeľnosť na rôznych povrchoch {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Verejné schopnosti** sú prístupné cez REST endpointy:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Vnútorné a partner schopnosti** nie sú prístupné cez REST API.
 
-### MCP Servery
+### MCP Servery {#mcp-servers}
 
 **Verejné schopnosti** sú prístupné cez MCP:
 
@@ -217,7 +217,7 @@ Dostupné schopnosti:
 
 **Partner schopnosti** sú prístupné len s partnerovými údajmi prihlasovania.
 
-### Integrácia s WooCommerce
+### Integrácia s WooCommerce {#woocommerce-integration}
 
 **Verejné schopnosti** sú k WooCommerce prístupné:
 
@@ -227,7 +227,7 @@ Dostupné schopnosti:
 
 **Vnútorné schopnosti** nie sú exponované pre WooCommerce.
 
-### Chat rozhranie
+### Chat rozhranie {#chat-interface}
 
 **Všetky schopnosti** (verejné, vnútorné, partner) sú prístupné v chate, v závislosti od práv používateľa:
 
@@ -235,34 +235,34 @@ Dostupné schopnosti:
 - Bežní používatelia vidia len verejné schopnosti
 - Partneri vidia verejné + partner schopnosti (ak sú na zozname)
 
-## Najlepšie praxe bezpečnosti
+## Najlepšie praxe bezpečnosti {#security-best-practices}
 
-### Princíp najmenšej prívody (Principle of Least Privilege)
+### Princíp najmenšej prívody (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Nastavte schopnosti na najobmedzenjšiu viditeľnosť, ktorá ich stále umožňuje použiť
 - Používajte partnerovú viditeľnosť pre citlivé operácie
 - Vypnite schopnosti, ktoré nebudete používať
 
-### Pravidelné audity
+### Pravidelné audity {#regular-audits}
 
 - Prejdite viditeľnosť schopností mesačne
 - Skontrolujte neklassifikované schopnosti
 - Odstránte prístup pre nevyužívané partnerov
 
-### Logovanie a monitorovanie
+### Logovanie a monitorovanie {#logging-and-monitoring}
 
 - Monitorujte, ktoré schopnosti sa najčastejšie používajú
 - Sledujte vzorce prístupu partnerov
 - Alertujte na neobvyklé použitie schopností
 
-### Tretí strójské schopnosti (Third-Party Abilities)
+### Tretí strójské schopnosti (Third-Party Abilities) {#third-party-abilities}
 
 - Prejdite tretí strójské schopnosti pred ich aktiváciou
 - Explicitne ich klasifikujte
 - Začnite s vnútornou alebo partnerovou viditeľnosťou
 - Promovujte na verejnú len po overení
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
 **Možnost se neobjevuje v seznamu**
 - Ověřte, že možnost je nainstalována a aktivní
@@ -285,7 +285,7 @@ Dostupné schopnosti:
 - Ověřte, že vaše klasifikace byla uložena
 - Zkontrolujte, zda poskytovatel možnosti je aktuální
 
-## Migrace z Legacy režimu
+## Migrace z Legacy režimu {#migration-from-legacy-mode}
 
 Pokud si aktualizujete starší verzi Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Pokud si aktualizujete starší verzi Superdav AI Agent:
 
 Pro více informací o přechodu na integraci s native Abilities API se podívejte do **Migrace z režimu třetích stran (Third-Party Mode Migration)**.
 
-## Další kroky
+## Další kroky {#next-steps}
 
 Po nakonfigurování viditelnosti možností:
 

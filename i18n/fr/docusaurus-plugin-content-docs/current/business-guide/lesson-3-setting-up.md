@@ -3,32 +3,32 @@ title: 'Leçon 3 : Configurer votre réseau'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Leçon 3 : Configuration de votre réseau
+# Leçon 3 : Configuration de votre réseau {#lesson-3-setting-up-your-network}
 
 Il est temps de construire. Dans cette leçon, vous allez installer Ultimate Multisite et configurer les fondations du réseau FitSite. Chaque décision prise ici est pensée pour la niche du fitness.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 Nous avons choisi les studios de fitness comme niche et validé l'opportunité. Maintenant, nous transformons cette idée en une plateforme fonctionnelle.
 
-## Choisir votre hébergement
+## Choisir votre hébergement {#choosing-your-hosting}
 
 Votre choix d'hébergement est plus important pour une plateforme de niche que pour un site web unique. Vous n'hébergez pas un seul site ; vous hébergez un réseau qui pourrait atteindre des dizaines, voire des centaines de sites.
 
-### Ce qu'il faut rechercher
+### Ce qu'il faut rechercher {#what-to-look-for}
 
 - **Prise en charge de WordPress Multisite** : Tous les hébergeurs ne gèrent pas bien le multisite.
 - **SSL avec caractère générique (Wildcard SSL)** : Essentiel pour les réseaux basés sur des sous-domaines.
 - **Ressources évolutives** : Vous avez besoin de marge de manœuvre pour grandir sans avoir à migrer.
 - **Intégration Ultimate Multisite** : Le mappage de domaine et l'automatisation du SSL vous font gagner un temps opérationnel considérable.
 
-### Approche recommandée
+### Approche recommandée {#recommended-approach}
 
 Choisissez un hébergeur dans la liste des [Fournisseurs compatibles](/user-guide/host-integrations/closte). Ils ont été testés avec Ultimate Multisite et offrent les intégrations nécessaires pour le mappage de domaine et l'automatisation du SSL.
 
 Pour FitSite, nous allons utiliser une configuration de sous-domaine. Cela signifie que les sites clients apparaîtront initialement sous la forme `nomdusite.fitsite.com` avant qu'ils ne mappent optionnellement leur propre domaine.
 
-## Installation de WordPress Multisite
+## Installation de WordPress Multisite {#installing-wordpress-multisite}
 
 Si vous n'avez pas encore d'installation WordPress Multisite :
 
@@ -40,7 +40,7 @@ Si vous n'avez pas encore d'installation WordPress Multisite :
 Les sous-domaines donnent à chaque site client son propre adresse distincte (`studio.fitsite.com`) plutôt qu'un chemin (`fitsite.com/studio`). C'est plus professionnel pour vos clients et cela évite les conflits de permaliens. Consultez [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) pour une comparaison détaillée.
 :::
 
-## Installation d'Ultimate Multisite
+## Installation d'Ultimate Multisite {#installing-ultimate-multisite}
 
 Suivez le guide [Installer Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) pour :
 
@@ -53,11 +53,11 @@ Pendant l'assistant de configuration, gardez à l'esprit la niche FitSite :
 - **Nom de l'entreprise (Company name)** : "FitSite" (ou le nom de marque que vous avez choisi).
 - **Logo de l'entreprise (Company logo)** : Téléchargez votre logo de marque — il apparaîtra sur les factures et les e-mails.
 
-## Configuration pour la niche fitness
+## Configuration pour la niche fitness {#configuring-for-the-fitness-niche}
 
 Une fois Ultimate Multisite installé, effectuez ces choix de configuration spécifiques à la niche :
 
-### Paramètres généraux
+### Paramètres généraux {#general-settings}
 
 Accédez à **Ultimate Multisite > Settings** et configurez :
 
@@ -65,7 +65,7 @@ Accédez à **Ultimate Multisite > Settings** et configurez :
 - **Rôle par défaut (Default role)** : Administrateur — les propriétaires de studios de fitness ont besoin d'un contrôle total sur le contenu de leur site.
 - **Inscription (Registration)** : Activez l'inscription des utilisateurs afin que les propriétaires de studios puissent s'inscrire eux-mêmes.
 
-### Configuration des e-mails
+### Configuration des e-mails {#email-configuration}
 
 Les e-mails de votre système doivent parler le langage de votre niche. Accédez à **Ultimate Multisite > Settings > Emails** et personnalisez :
 
@@ -75,7 +75,7 @@ Les e-mails de votre système doivent parler le langage de votre niche. Accédez
 
 Nous affinerons cela dans la Leçon 8 (Intégration client), mais définir le ton dès maintenant garantit que même les premières inscriptions de test semblent spécifiques à la niche.
 
-### Configuration des domaines
+### Configuration des domaines {#domain-configuration}
 
 Si vous utilisez un hébergeur compatible, configurez le mappage de domaine dès maintenant :
 
@@ -85,7 +85,7 @@ Si vous utilisez un hébergeur compatible, configurez le mappage de domaine dès
 
 Cela garantit que lorsque nous commencerons à créer des modèles et des sites de test dans la prochaine leçon, tout fonctionnera de bout en bout.
 
-## Le réseau FitSite jusqu'à présent
+## Le réseau FitSite jusqu'à présent {#the-fitsite-network-so-far}
 
 À la fin de cette leçon, voici ce que vous avez :
 
@@ -99,7 +99,7 @@ Réseau FitSite
 └── Prêt pour les modèles de sites (prochaine leçon)
 ```
 
-## Ce que nous avons construit cette leçon
+## Ce que nous avons construit cette leçon {#what-we-built-this-lesson}
 
 - **Une installation WordPress Multisite fonctionnelle** en mode sous-domaine.
 - **Ultimate Multisite installé** et configuré avec l'identité de marque FitSite.

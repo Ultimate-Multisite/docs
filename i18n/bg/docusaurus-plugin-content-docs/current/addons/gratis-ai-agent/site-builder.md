@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (представена в Gratis AI Agent v1.4.0) е двигателят, който задвижва създаването на многостъпни уебсайтове. Когато поискате от агента да „изгради ресторантски уебсайт“ или „създаде портфолио с блог“, оркестраторът разбива тази обща цел на структуриран **план**, открива необходимите плагини за изпълнение на тази цел, изпълнява всеки етап последователно, проследява напредъка и се възстановява от грешки автономно.
 
 ---
 
-## Как Работи
+## Как Работи {#how-it-works}
 
-### 1. Генериране на План
+### 1. Генериране на План {#1-plan-generation}
 
 Когато агентът получи инструкция за изграждане на сайт, той извиква способността `create_site_plan`, за да генерира JSON **план на сайта**. Планът описва:
 
@@ -61,7 +61,7 @@ Site Builder Orchestration v2 (представена в Gratis AI Agent v1.4.0)
 }
 ```
 
-### 2. Откриване на Плагини (Plugin Discovery)
+### 2. Откриване на Плагини (Plugin Discovery) {#2-plugin-discovery}
 
 Преди да започне изпълнението, оркестраторът сканира `plugin_requirements` в плана и проверява кои плагини вече са активни. За липсващи плагини той:
 
@@ -71,7 +71,7 @@ Site Builder Orchestration v2 (представена в Gratis AI Agent v1.4.0)
 
 Неуспехите при откриването на плагини не са критични — оркестраторът маркира засегнатите стъпки като `skipped` (пропуснати) и продължава с останалата част от плана.
 
-### 3. Изпълнение на Плана (Plan Execution)
+### 3. Изпълнение на Плана (Plan Execution) {#3-plan-execution}
 
 Оркестраторът извиква `execute_site_plan` с ID на плана. Изпълнението протича фаза по фаза, стъпка по стъпка:
 
@@ -79,7 +79,7 @@ Site Builder Orchestration v2 (представена в Gratis AI Agent v1.4.0)
 - **Паралелни стъпки** — стъпките в рамките на една и съща фаза, които нямат взаимни зависимости, се изпращат едновременно, когато е зададен флагът `parallel`.
 - **Изтичане на стъпка (Step timeout)** — всяка стъпка има индивидуално време за изпълнение (по подразбиране: настройката `Ability Timeout`). Стъпка, която е изтекла по време, се маркира като `failed` (неуспешна) и планът продължава.
 
-### 4. Проследяване на Напредъка (Progress Tracking)
+### 4. Проследяване на Напредъка (Progress Tracking) {#4-progress-tracking}
 
 Извикайте `get_plan_progress` по всяко време, за да проверите статуса на изпълнението:
 
@@ -104,7 +104,7 @@ Site Builder Orchestration v2 (представена в Gratis AI Agent v1.4.0)
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Възстановяване след Грешка (Error Recovery)
+### 5. Възстановяване след Грешка (Error Recovery) {#5-error-recovery}
 
 Когато една стъпка се провали, оркестраторът проверява дали има **резервен план (fallback)**, дефиниран в плана:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Abilities за Планиране на Сайтове (Site Plan Abilities)
+## Abilities за Планиране на Сайтове (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Генерира структуриран план на сайта от описание на цел на естествен език.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Започва изпълнението на предварително генериран план на сайта.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Връща текущия статус на изпълнение на плана на сайта.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ръчно разрешава провалена стъпка и възобновява изпълнението на плана от следващата стъпка. Използвайте това, когато автоматичното възстановяване не е било възможно и искате да 개върнете.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Сравнение на v1 и v2
+## Сравнение на v1 и v2 {#comparing-v1-and-v2}
 
 | Характеристика | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI Команди за Планове
+## WP-CLI Команди за Планове {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Генерира план на сайта от описание на цел.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Изпълнява предварително генериран план.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Показва текущия напредък за изпълняващ се или завършен план.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Изброява всички планове на сайтове (в процес на обработка, в ход и завършени).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Презаписва провален план в състояние `pending`, така че да може да бъде изпълнен отново от началото.
 

@@ -3,9 +3,9 @@ title: Ultimate AI Connector za kompatibilne endpoint-e Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Dnevnik promjena za Ultimate AI Connector za kompatibilne endpoint-e
+# Dnevnik promjena za Ultimate AI Connector za kompatibilne endpoint-e {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Verzija 2.0.0 — Objavljeno 2026-04-24
+## Verzija 2.0.0 — Objavljeno 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Novo: Podrška za više pružatelja — možete konfigurirati više AI endpoint-a i usmjeravati zahtjeve sa automatskim fallback-om između pružatelja.
 * Popravak: Integracija Multi-provider SDK-a sa ispravnim ID-jima pružatelja, URL-ovima za registraciju i opsegom HTTP filtera po pružatelju.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Popravak: Uklonjen je blokirajući HTTP zahtjev koji je se izvršavao pri svakom učitavanju stranice.
 * Unapređeno: Radni tokovi GitHub Actions nadograđeni na Node.js 24.
 
-## Verzija 1.0.0 — Prva izdanje
+## Verzija 1.0.0 — Prva izdanje {#version-100--initial-release}

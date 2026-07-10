@@ -3,9 +3,9 @@ title: Nhật ký thay đổi Mailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Nhật ký thay đổi Mailster
+# Nhật ký thay đổi Mailster {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Phát hành ban đầu
 * Đồng bộ người đăng ký tự động khi đăng ký hoặc thanh toán
 * Gán danh sách theo từng sản phẩm

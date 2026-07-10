@@ -1,0 +1,109 @@
+---
+title: Integrasyon ng WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrasyon ng WooCommerce {#woocommerce-integration}
+
+Gumagana ang Integrasyon ng WooCommerce sa paraang halos kapareho ng paggana ng aming Manual Gateway. Nag-aalok ito ng napakaraming kakayahang umangkop para sa iyong mga user, na nagpapahintulot sa kanila na pumili ng alinman sa mga form ng pagbabayad na available sa iyong WooCommerce install. At simple ito: kapag natapos na ang panahon ng pagsingil ng user, inilalagay ang subscription ng user sa hold. Kasabay nito, gagawa ng order sa WooCommerce install ng pangunahing site ng network. Pagkatapos ay makakatanggap ang user ng invoice sa kanilang email, na may link para isagawa ang pagbabayad. Kapag natanggap na ang pagbabayad, nare-renew ang subscription.
+
+## Mga Tampok {#features}
+
+- Madaling integrasyon sa pagitan ng Ultimate Multisite at WooCommerce
+- Ilang paraan ng pagbabayad na available
+- Awtomatikong paulit-ulit na pagsingil gamit ang kasamang subscriptions core, na may opsyonal na mga pagpapahusay ng WooCommerce Subscriptions plugin
+- Kasama sa mga kabuuan ng checkout ang mga buwis ng Ultimate Multisite bilang magkakahiwalay, hindi nabubuwisang linya ng fee sa WooCommerce upang masuri ng mga customer ang mga halaga ng buwis bago magbayad
+
+## Dokumentasyon {#documentation}
+
+**Pagse-set Up ng Integrasyon ng WooCommerce**
+
+**Pagpapalawak ng iyong mga Opsyon sa Pagbabayad gamit ang Ultimate Multisite: Integrasyon ng WooCommerce**
+
+## Pag-install {#installation}
+
+1. I-upload ang 'ultimate-multisite-woocommerce' sa direktoryong '/wp-content/plugins/'
+2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
+3. Sundin ang step by step Wizard para i-set up ang plugin
+
+## Gabay sa Paggamit {#usage-guide}
+
+_**MAHALAGANG TALA: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
+
+_**PAUNAWA:** Kinakailangan ng Ultimate Multisite: WooCommerce Integration na naka-activate ang WooCommerce kahit man lang sa iyong pangunahing site._
+
+Nauunawaan namin na ang _Stripe_ at _PayPal_ ay hindi available sa ilang bansa na naglilimita o humahadlang sa mga user ng Ultimate Multisite na epektibong magamit ang aming plugin. Kaya gumawa kami ng **add-on para i-integrate ang _WooCommerce_**.
+
+Ang _WooCommerce_ ay isang napakapopular na eCommerce plugin. Gumawa ang mga developer sa buong mundo ng mga add-on para i-integrate dito ang iba't ibang payment gateway. Sinamantala namin ito upang palawakin ang mga payment gateway na maaari mong gamitin sa billing system ng Ultimate Multisite.
+
+## Pagse-set Up Nito {#setting-it-up}
+
+Una, kailangan mong i-install ang WooCommerce Integration add-on na **libre para sa mga lisensyadong user**. Para i-install ito, mag-click sa Ultimate Multisite sa iyong super admin dashboard at piliin ang **Add-ons**.
+
+![Pahina ng mga add-on](/img/admin/addons-page.png)
+
+Dito mo mahahanap ang lahat ng Ultimate Multisite add-on. Mag-click sa add-on na **Ultimate Multisite: WooCommerce Integration**.
+
+![Pahina ng mga add-on na nagpapakita ng WooCommerce Integration](/img/admin/addons-page.png)
+
+May lalabas na window na may mga detalye ng add-on. I-click lang ang **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Pagkatapos ng pag-install, ire-redirect ka sa pahina ng mga plugin. Dito, i-click lang ang **Network Activate** at maa-activate ang _WooCommerce_ add-on sa iyong network.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Pagkatapos itong i-activate, kung wala ka pa ring WooCommerce plugin na naka-install at naka-activate sa iyong website, **makakatanggap ka ng paalala**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Kapag na-install na, makakakita ka ng karagdagang opsyon sa ilalim ng mga setting ng pagbabayad ng Ultimate Multisite. Maaari mo nang **i-enable** ang opsyong _WooCommerce_ mula roon.
+
+![Mga setting ng payment gateway ng Ultimate Multisite na naka-enable ang WooCommerce](/img/addons/woocommerce-payment-gateway.png)
+
+Maaari mong i-configure ang ilang pangunahing setting tulad ng display name na lalabas sa front end at mga tagubilin upang gabayan ang iyong mga user sa kanilang checkout flow. Pagkatapos ay maaari kang pumunta sa **mga setting ng _WooCommerce_ ng iyong Pangunahing site** upang i-enable at i-configure ang payment gateway na gusto mong gamitin.
+
+### Mga linya ng fee para sa buwis sa checkout {#checkout-tax-fee-lines}
+
+Kapag may kasamang mga buwis ang checkout ng Ultimate Multisite, idinaragdag ng integrasyon ang bawat halaga ng buwis ng Ultimate Multisite sa WooCommerce checkout bilang hiwalay, hindi nabubuwisang linya ng fee. Pinananatili nitong nakikita ang kabuuang buwis bago ang pagbabayad habang pinipigilan ang WooCommerce na buwisan muli ang tax fee.
+
+## Paano pamahalaan ang pagbabayad {#how-to-manage-the-payment}
+
+Gumagana ang WooCommerce Integration sa paraang halos kapareho ng paggana ng aming **Manual Gateway**. Ang kahinaan nito ay kailangang bayaran nang manu-mano ang bawat pagbabayad sa katapusan ng panahon ng pagsingil. Ganito gumagana ang daloy:
+
+  * Kapag natapos na ang billing cycle ng user, inilalagay ang membership **on hold**. Kasabay nito, gagawa ng order sa _WooCommerce_ install sa pangunahing site ng iyong network.
+
+  * Pagkatapos ay makakatanggap ang mga user ng invoice sa kanilang email, na may link para isagawa ang pagbabayad (lumalabas din ang link sa kanilang billing history mula sa kanilang subsite dashboard). Ire-redirect ng link na iyon ang user sa _**WooCommerce**_ **checkout** , kung saan makakapili ang mga user ng isa sa mga **available na _WooCommerce_ gateway** upang iproseso ang kanilang pagbabayad.
+
+  * Kapag natanggap na ang pagbabayad, ang membership ay **nare-renew** , nala-log ang pagbabayad sa Ultimate Multisite at itinatakda ang order bilang kumpleto.
+
+### Ilang Mahahalagang Tala: {#some-important-notes}
+
+  * Gumagana pa rin ang default na functionality ng Ultimate Multisite sa form ng integrasyong ito. Halimbawa, ang **pag-isyu ng mga refund** mula sa screen ng **Subscription Management** ay makikipag-ugnayan sa WooCommerce upang i-isyu ang refund gamit ang napiling form ng pagbabayad.
+
+  * Umaasa ang Ultimate Multisite: WooCommerce Integration sa WP-Cron upang gumana. Gumagana ito nang napakahusay sa karamihan ng pagkakataon, ngunit kung mababa ang traffic ng site, hindi napapa-prompt ang cron na tingnan ang mga naka-schedule na event at nalalagpasan ang event, na maaaring magdulot ng mga pagkaantala sa pagpapatupad.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Ang manu-manong pagsisimula ng bayad bawat buwan ay hindi angkop para sa mga end-user dahil inaasahang awtomatikong umuulit ang mga subscription sa bawat billing cycle. Ang WooCommerce Integration add-on ngayon ay may kasamang core subscriptions code, kaya palaging gumagamit ng subscriptions ang mga umuulit na produkto para sa umuulit na billing.
+
+**Hindi** mo kailangang bilhin o i-install ang hiwalay na [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) para magbenta ng mga umuulit na produkto sa pamamagitan ng integration na ito. Kung ang plugin na iyon ay binili, in-install, at available sa iyong pangunahing site, gagamitin ito ng Ultimate Multisite at maglalabas ang WooCommerce ng karagdagang mga subscription management feature. Kapag hindi ito available, pinangangasiwaan pa rin ng kasamang subscriptions core ang mga umuulit na produkto.
+
+![Mga setting ng WooCommerce subscription integration](/img/addons/woocommerce-subscription-integration.png)
+
+At iyon na. Hindi na kakailanganin ng iyong mga end-user na manu-manong magbayad sa katapusan ng kanilang billing cycle para sa mga umuulit na produkto.
+
+Bukod sa isang order na nalilikha sa iyong pangunahing site sa ilalim ng _WooCommerce_, lilikha rin ito ng subscription para sa bawat Account.
+
+### Gawi ng pagsuspinde sa bigong renewal {#failed-renewal-suspension-behavior}
+
+Bilang default, nananatiling aktibo ang mga membership habang pinoproseso ng WooCommerce Subscriptions ang failed-payment retry schedule nito. Pinapanatili nito ang normal na grace window ng WooCommerce Subscriptions upang ang isang nabawing renewal ay makapagbalik ng subscription at membership sa pagkakasabay nang hindi napaaga ang pagputol ng access.
+
+Maaaring paganahin ng mga administrator na nais ng mas mahigpit na access control ang **Suspend Memberships Immediately on Failed Renewals** sa mga setting ng WooCommerce Integration. Kapag pinagana ang opt-in setting na ito, isinususpinde ng Ultimate Multisite ang kaugnay na membership sa sandaling mabigo ang bayad sa renewal sa halip na hintaying matapos ang retry handling ng WooCommerce Subscriptions.
+
+Maaaring i-override ng mga developer ang parehong desisyon gamit ang `wu_woo_suspend_on_payment_failure` filter. Ang mga hook reference page ay ginagawa mula sa source ng add-on, kaya binabanggit lamang ng overview na ito ang pangalan ng filter para sa mga custom na suspension policy.

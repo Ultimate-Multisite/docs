@@ -1,29 +1,29 @@
 ---
-title: مفتوحی اي اي ايجنت جيٽنگ
+title: Gratis AI Agent سيٽنگون
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# مفت AI ایجن سیٹنگز
+# Gratis AI Agent سيٽنگون {#gratis-ai-agent-settings}
 
-Gratis AI Agent ۾ **Settings → Advanced** سکرین توهان کي v1.5.0 کان شروع ٿيل بيك اينڊ انٽيغريشنز لاءِ ادميني سطح تي ڪيفيڪيشن (configuration) فراهم ڪري ٿو. هي صفحو **Feedback Endpoint** فیلڊز ۽ انهن جي توقع ڪيل فارميٽ جو بيان ڪري ٿو.
+Gratis AI Agent ۾ **Settings → Advanced** اسڪرين backend انضمامن لاءِ منتظم-سطح جي ترتيب مهيا ڪري ٿي. هي صفحو feedback forwarding، search provider keys، managed Superdav service setup، Google Calendar controls، TextBee SMS settings، ۽ network-wide feature flags کي دستاويز ڪري ٿو.
 
-## Settings تک رسائي
+## سيٽنگن تائين رسائي {#accessing-settings}
 
-1. WordPress admin ۾، **Gratis AI Agent → Settings** ڏانهان وڃو.
-2. **Advanced** ٽاب تي ڪلڪ ڪريو.
+1. WordPress admin ۾، **Gratis AI Agent → Settings** ڏانهن وڃو.
+2. **Advanced** ٽيب تي ڪلڪ ڪريو.
 
-## Feedback Endpoint کانفيڪيشن
+## Feedback Endpoint ترتيب {#feedback-endpoint-configuration}
 
-Feedback endpoint انهن وقت POST requests وصول ڪري ٿو جڏهن ڪا صارف thumbs-down بٽون، آٽو-پروپمٽ بينر، يا `/report-issue` ڪمان استعمال ڪري feedback ڏيندي.
+feedback endpoint AI agent کان POST درخواستون وصول ڪري ٿو جڏهن به ڪو استعمال ڪندڙ thumbs-down بٽڻ، auto-prompt banner، يا `/report-issue` command ذريعي feedback جمع ڪرائي ٿو.
 
-| فیلڊ | وضاحت |
+| Field | Description |
 |---|---|
-| **Feedback Endpoint URL** | هي URL آهي جيڪو HTTP POST requests جي صورت ۾ JSON body سان feedback submissions وصول ڪري ٿو. |
-| **Feedback API Key** | هي هر feedback request جي `Authorization` header ۾ هڪ bearer token طور ڇلائي ويندي آهي. جيڪڏهن توهان جي endpoint کي تصديق (authentication) جي ضرورت نه هجي ته ان کي خالي رکجو. |
+| **Feedback Endpoint URL** | اهو URL جيڪو JSON body سان HTTP POST درخواستن طور feedback جمع ڪرايون وصول ڪري ٿو. |
+| **Feedback API Key** | هر feedback درخواست جي `Authorization` header ۾ موڪليل bearer token. جيڪڏهن توهان جي endpoint کي authentication جي ضرورت ناهي ته خالي ڇڏي ڏيو. |
 
-### توقع ڪيل JSON Payload
+### متوقع JSON Payload {#expected-json-payload}
 
-توهان جي feedback endpoint کي هيٺ ڏنل فیلڊز سان گهٽ ۾ گهاٽ هيٺ ڏنل JSON body قبول ڪرڻو آهي:
+توهان جي feedback endpoint کي گهٽ ۾ گهٽ هيٺين fields سان JSON body قبول ڪرڻ گهرجي:
 
 ```json
 {
@@ -34,72 +34,119 @@ Feedback endpoint انهن وقت POST requests وصول ڪري ٿو جڏهن ڪ
 }
 ```
 
-ڳالهه جي سياق (context) جي لحاظ کان payload ۾ اضافي فیلڊز موجود ٿي سگهن ٿا.
+Payload ۾ ڳالهه ٻولهه جي context تي دارومدار رکندي اضافي fields موجود ٿي سگهن ٿا.
 
-### `triage_category` جا قيمت (Values)
+### `triage_category` قدر {#triagecategory-values}
 
-AI triage لير هيٺ ڏنل قيمتن مان هڪ کي `triage_category` کي مڪمل ڪرڻ کان اڳ payload کي فارورڊ ڪرڻ کان سواءِ مقرر ڪري ٿو:
+AI triage layer payload کي اڳتي موڪلڻ کان اڳ `triage_category` کي هيٺين قدرن مان هڪ ڏئي ٿو:
 
-| قيمت | مطلب |
+| Value | Meaning |
 |---|---|
-| `factual_error` | اسستاوني طرفان غلط واقعي معلومات ڏني. |
-| `unhelpful_answer` | جواب تقني طور صحيح هو پر مددگار نه هو. |
-| `inappropriate_content` | جواب ۾ هيٺ ڏنل مواد شامل هو جو صارف کي ڏيکاري نه پڻي وڃي. |
-| `other` | feedback ڪنه سمجهيل ڪٽي سان مطابقت نه رکيو. |
+| `factual_error` | assistant غلط حقيقتي معلومات فراهم ڪئي. |
+| `unhelpful_answer` | جواب فني طور صحيح هو پر ڪارائتو نه هو. |
+| `inappropriate_content` | جواب ۾ اهڙو مواد شامل هو جيڪو استعمال ڪندڙن کي نه ڏيکارڻ گهرجي. |
+| `other` | feedback ڪنهن ڄاتل category سان نه مليو. |
 
-### تصديق (Authentication)
+### Authentication {#authentication}
 
-اگر آپ کا اینڈ پوائنٹ کسی تصدیق (authentication) کی مانگ کرتا ہے، تو **Feedback API Key** فیلڈ میں اپنا bearer token ڈال دیں۔ ایجنٹ یہ بھیجتا ہے:
+جيڪڏهن توهان جي endpoint کي authentication جي ضرورت آهي، ته **Feedback API Key** field کي پنهنجي bearer token تي سيٽ ڪريو. agent موڪلي ٿو:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-اگر **Feedback API Key** فیلڈ خالی ہو، تو کوئی `Authorization` ہیڈر نہیں بھیجا جاتا۔
+جيڪڏهن **Feedback API Key** field خالي آهي، ته ڪو به `Authorization` header نه موڪليو ويندو.
 
-### فیڈ بیک کلیکشن کو بند کرنا (Disabling Feedback Collection)
+### Feedback گڏ ڪرڻ بند ڪرڻ {#disabling-feedback-collection}
 
-دونوں **Feedback Endpoint URL** اور **Feedback API Key** فیلڈز کو خالی چھوڑ دیں۔ تھمب ڈاؤن بٹن اور فیڈ بیک UI صارفین کے لیے نظر آتا رہے گا، لیکن جمع کرانے کی معلومات کسی بھی بیرونی سروس پر آگے نہیں بھیجی جائیں گی۔
+**Feedback Endpoint URL** ۽ **Feedback API Key** ٻنهي fields کي خالي ڇڏي ڏيو. thumbs-down بٽڻ ۽ feedback UI استعمال ڪندڙن لاءِ نظر ايندا رهندا، پر جمع ڪرايون ڪنهن به ٻاهرين service ڏانهن اڳتي نه موڪليون وينديون.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-اسی **Advanced** ٹیب میں، **Brave Search API Key** فیلڈ انٹرنیٹ سرچ کرنے کی صلاحیت [Internet Search](../configuration/internet-search) کو فعال کرتا ہے۔
+**Advanced** ٽيب تي پڻ، **Brave Search API Key** field [Internet Search](../configuration/internet-search) صلاحيت کي فعال ڪري ٿو.
 
-| فیلڈ | تفصیل |
+| Field | Description |
 |---|---|
-| **Brave Search API Key** | Brave Search ڈویلپر ڈیش بورڈ سے آپ کا API key۔ AI اسسٹنٹ میں انٹرنیٹ سرچ کے لیے ضروری ہے۔ |
+| **Brave Search API Key** | Brave Search developer dashboard مان توهان جي API key. AI assistant ۾ internet search فعال ڪرڻ لاءِ گهربل. |
 
-فیلڈ کے لیبل میں Brave Search API سائن اپ پیج کا کلک کرنے والا لنک شامل ہے۔ انٹرنیٹ سرچ کو غیر فعال کرنے کے لیے اسے خالی چھوڑ دیں۔
+field label ۾ Brave Search API sign-up صفحي ڏانهن clickable link شامل آهي. internet search بند ڪرڻ لاءِ خالي ڇڏي ڏيو.
 
-اس فیچر پر اینڈ یوزر دستاویزات کے لیے [Internet Search](../configuration/internet-search) دیکھیں۔
+هن feature بابت end-user documentation لاءِ [Internet Search](../configuration/internet-search) ڏسو.
 
-## فیچر فلگز (Feature Flags)
+## Managed Superdav Service {#managed-superdav-service}
 
-یہ v1.9.0 میں بھی متعارف کرایا گیا ہے، **Settings → Feature Flags** ٹیب اختیاری فنکشنلٹی کے لیے ٹوگل سوئچز فراہم کرتا ہے۔ ہر فلگ یا تو پورے نیٹ ورک پر فعال ہوتا ہے یا غیر فعال؛ اس وقت سائٹ کے لحاظ سے کوئی اووررائڈ نہیں ہوتا۔
+Superdav AI Agent v1.18.0 supported sites لاءِ managed Superdav service endpoints ۽ automatic connection provisioning شامل ڪري ٿو. اهي controls تڏهن استعمال ڪريو جڏهن توهان جي site کي manually configured service endpoint بدران hosted provider سان ڳنڍجڻ گهرجي.
 
-### فیچر فلگز تک رسائی (Accessing Feature Flags)
+| Field | Description |
+|---|---|
+| **Managed Superdav Service** | supported sites لاءِ hosted Superdav service connection فعال ڪري ٿو. |
+| **Provision Connection** | automatic endpoint ۽ credential provisioning شروع ڪري ٿو. site کي managed provider استعمال ڪرڻ گهرجي، اها تصديق ڪرڻ کان پوءِ هي استعمال ڪريو. |
+| **Service Endpoint / Connection Status** | provisioning کان پوءِ موجوده endpoint يا connection state ڏيکاري ٿو. |
 
-1. ورڈپریس ایڈمن میں، **Gratis AI Agent → Settings** پر جائیں۔
-2. **Feature Flags** ٹیب پر کلک کریں۔
+provisioning کان پوءِ، settings محفوظ ڪريو ۽ managed-service workflows تي ڀاڙڻ کان اڳ connection status جي تصديق ڪريو. جيڪڏهن provisioning ناڪام ٿئي، ته ڏيکاريل retry guidance جو جائزو وٺو ۽ تصديق ڪريو ته site کي hosted provider استعمال ڪرڻ جي اجازت آهي.
 
-### ایکسس کنٹرول فلگز (Access Control Flags)
+## Google Calendar ترتيب {#google-calendar-configuration}
+
+جڏهن Superdav AI Agent v1.18.0 calendar features فعال هجن، agent configured calendars ۽ event details پڙهي سگهي ٿو. Calendar tools read-oriented آهن ۽ schedule-aware reminders، attendee follow-up، ۽ contact matching لاءِ ڪارائتا آهن.
+
+| Field | Description |
+|---|---|
+| **Google Calendar Credentials** | calendar data پڙهڻ لاءِ گهربل credentials يا token connection محفوظ ڪري ٿو. |
+| **Calendar Selection** | محدود ڪري ٿو ته agent ڪهڙا configured calendars inspect ڪري سگهي ٿو. |
+| **Calendar Connection Status** | تصديق ڪري ٿو ته موجوده credentials calendars ۽ events پڙهي سگهن ٿا يا نه. |
+
+calendar credentials کي انهن calendars تائين محدود رکو جن جي agent کي ضرورت آهي. جيڪڏهن status expired token ڏيکاري، ته credentials کي ٻيهر connect يا rotate ڪريو.
+
+## TextBee SMS Notifications {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 configured notification workflows لاءِ TextBee کي SMS provider طور شامل ڪري ٿو. SMS notifications کي حساس يا user-facing messages لاءِ human approval gates سان گڏ رکڻ گهرجي.
+
+| Field | Description |
+|---|---|
+| **TextBee API Key** | TextBee SMS provider ڏانهن درخواستن کي authenticate ڪري ٿو. |
+| **TextBee Device / Sender** | جڏهن provider کي ضرورت هجي، outgoing messages لاءِ استعمال ٿيندڙ TextBee sender يا device چونڊي ٿو. |
+| **SMS Notifications Enabled** | approved workflows کي text-message notifications موڪلڻ جي اجازت ڏئي ٿو. SMS sends روڪڻ لاءِ disabled ڇڏي ڏيو. |
+
+test message صرف administrator-owned number ڏانهن موڪليو، پوءِ scheduled يا attendee-facing reminders فعال ڪرڻ کان اڳ approval-gate behaviour جي تصديق ڪريو.
+
+## Feature Flags {#feature-flags}
+
+v1.9.0 ۾ پڻ متعارف ڪرايل، **Settings → Feature Flags** ٽيب optional functionality لاءِ toggle switches مهيا ڪري ٿو. هر flag يا ته network-wide enabled آهي يا disabled؛ هن وقت per-site override موجود ناهي.
+
+### Feature Flags تائين رسائي {#accessing-feature-flags}
+
+1. WordPress admin ۾، **Gratis AI Agent → Settings** ڏانهن وڃو.
+2. **Feature Flags** ٽيب تي ڪلڪ ڪريو.
+
+### Access Control Flags {#access-control-flags}
 
 | Flag | Default | Description |
 |---|---|---|
-| **Restrict to Administrators** | Off | جڏهن هي آن ڪريو، صرف `administrator` رول وارن بس AI Agent چیٹ پینل کي खोल्न سکندا. ٻيا سڀ رول "Contact your administrator" جو پیغام ڏسندا آهن. |
-| **Restrict to Network Admins** | Off | جڏهن هي multisite network تي آن ڪريو، صرف Super Admins ئي ايجن استعمال ڪري سگهن ٿا. انفرادي سائيٽ ادمينيشن کي روڪيو ويندو آهي. جيڪڏهن ٻئي ٻنهي آن آهن ته "Restrict to Administrators" کان وڌيڪ اهميت رکي ٿو. |
-| **Allow Subscriber Access** | Off | جڏهن هي آن ڪريو، `subscriber` رول وارن چیٹ انٽر فیس کي استعمال ڪري سگهندا آهن پر انهن جي صلاحيت صرف پڙهڻ (read-only) تائين محدود آهي (پوس کرينا يا سیٹنگز بدلائڻ نه سکندا). |
-| **Disable for Non-Members** | Off | هي Ultimate Multisite جي ممبرشپ جي حالت سان جڙيل آهي. جڏهن هي آن ڪريو، ان سائيٽن لاءِ چیٹ چھپائي ويندي آهي جن کي فعال ممبرشپ ناهي. |
+| **انتظام ڪندڙن تائين محدود ڪريو** | بند | جڏهن فعال ڪيو وڃي، صرف `administrator` ڪردار وارا واپرائيندڙ AI Agent چيٽ پينل کولي سگهن ٿا. ٻيا سڀ ڪردار ان جي بدران "پنهنجي انتظام ڪندڙ سان رابطو ڪريو" پيغام ڏسن ٿا. |
+| **Network Admins تائين محدود ڪريو** | بند | جڏهن multisite network تي فعال ڪيو وڃي، صرف Super Admins agent استعمال ڪري سگهن ٿا. انفرادي site admins کي روڪيو ويندو آهي. جيڪڏهن ٻئي فعال هجن ته "انتظام ڪندڙن تائين محدود ڪريو" تي ترجيح رکي ٿو. |
+| **Subscriber رسائي جي اجازت ڏيو** | بند | جڏهن فعال ڪيو وڃي، `subscriber` ڪردار وارا واپرائيندڙ چيٽ interface استعمال ڪري سگهن ٿا پر صرف پڙهڻ جي صلاحيتن تائين محدود هوندا آهن (ڪا post creation يا settings تبديل نه). |
+| **غير ميمبرن لاءِ غيرفعال ڪريو** | بند | Ultimate Multisite membership status سان ضم ٿئي ٿو. جڏهن فعال ڪيو وڃي، چيٽ انهن سائيٽن لاءِ لڪايل هوندي آهي جن وٽ فعال membership ناهي. |
 
-### Branding Flags
+### Branding Flags {#branding-flags}
 
 | Flag | Default | Description |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | چیٹ وِجٹ جي نچي ڏيڪر ڪيل برانڊنگ معلومات کي ختم ڪري ڇڏين ٿا. 화이트-ليبل (white-label) deployment لاءِ هي سفارش ڪئي ويندي آهي. |
-| **Custom Agent Name** | *(blank)* | چیٹ هڊر ۽ ادمينيشن منيو ۾ default "Gratis AI Agent" جي جاءِ تي پنهنجي پروڊڪٽ جو نالو رکجو. blank ركهڻ بجي default استعمال ٿيندو. |
-| **Hide Agent Picker** | Off | جڏهن هي آن ڪريو، صارف اڳتي واري پنج built-in ايجنن (agents) جو وچ ۾ بدل نه ڪري سگهندا. موجوده ايجن ان حد رکي ويندي آهي جيڪا Settings → General ۾ default طور تي ڪيئن مقرر ڪئي آهي. |
-| **Use Site Icon as Chat Avatar** | Off | چیٹ وِجٽ هڊر ۾ default AI آئڪن جي جاءِ تي WordPress سائيٽ جو آئڪن رکجو (Appearance → Customize → Site Identity ۾ set ڪيل). |
+| **"Powered by Gratis AI Agent" Footer لڪايو** | بند | چيٽ widget جي تري ۾ ڏيکاريل branding attribution line هٽائي ٿو. white-label deployments لاءِ سفارش ٿيل آهي. |
+| **Custom Agent Name** | *(خالي)* | چيٽ header ۽ admin menu ۾ default "Gratis AI Agent" label کي توهان جي پنهنجي product name سان بدلائي ٿو. default استعمال ڪرڻ لاءِ خالي ڇڏيو. |
+| **Agent Picker لڪايو** | بند | جڏهن فعال ڪيو وڃي، واپرائيندڙ پنج built-in agents جي وچ ۾ مٽائي نٿا سگهن. موجوده agent اهو ئي مقرر رهندو جيڪو Settings → General ۾ default طور configured آهي. |
+| **Site Icon کي Chat Avatar طور استعمال ڪريو** | بند | چيٽ widget header ۾ default AI icon کي WordPress site icon سان بدلائي ٿو (Appearance → Customize → Site Identity هيٺ مقرر ٿيل). |
 
-### Applying Changes
+### Automation Safety Flags {#automation-safety-flags}
 
-هي ڪا به flag آن ڪرڻ کان پوءِ **Save Settings** ڇڪيو. تبديلين فوري اثر ٿينديون آهن — ڪنهن به cache کي صاف ڪرڻ يا plugin کي دوبارہ فعال ڪرڻ جي ضرورت نه آهي.
+Superdav AI Agent v1.18.0 وڌيڪ محفوظ automation runs لاءِ انساني منظوري جا gates ۽ reminder records متعارف ڪرائي ٿو. اهي controls feature flags يا advanced automation settings ۾ ظاهر ٿي سگهن ٿا، installed package تي دارومدار رکندي.
+
+| Flag | Default | Description |
+|---|---|---|
+| **انساني منظوري گهربل** | سفارش ٿيل فعال | حساس automations کي روڪي ٿو جيستائين هڪ مجاز واپرائيندڙ تجويز ڪيل عمل جو جائزو وٺي ۽ تصديق ڪري. |
+| **Reminder Deduplication** | فعال | موڪليل reminders کي record ڪري ٿو ته جيئن retries يا scheduled runs duplicate notifications نه موڪلين. |
+| **Calendar Tools فعال ڪريو** | configured ٿيڻ تائين بند | agent کي configured Google calendars ۽ events پڙهڻ جي اجازت ڏئي ٿو. |
+| **SMS Notifications فعال ڪريو** | configured ٿيڻ تائين بند | credentials محفوظ ٿيڻ کان پوءِ approved workflows کي TextBee SMS notifications موڪلڻ جي اجازت ڏئي ٿو. |
+
+### تبديليون لاڳو ڪرڻ {#applying-changes}
+
+ڪنهن به flag کي toggle ڪرڻ کان پوءِ **Save Settings** تي ڪلڪ ڪريو. تبديليون فوراً اثر وٺن ٿيون — ڪا cache flush يا plugin reactivation گهربل ناهي.

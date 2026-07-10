@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ailinnachadh diughan ar adairtean ar ealaiannach agad le Ultimate Multisite: Ad Injector
+# Ailinnachadh diughan ar adairtean ar ealaiannach agad le Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Is e **add-on fada** a tha Ultimate Multisite: Ad Injector, a tha a' tola do chruinneachadh airson adairtean ar ealaiannach agad gu sùile a' chlàradh de luchd air a' thar.
 
@@ -35,7 +35,7 @@ Is e am fhaighinn luchd air a bhith agad airson adairtean ar an sealladh (header
 
 _Cloich air an nút 'Admin Panel Ads' gu bheil thu a' fhéin adairtean ar an sealladh de luchd agad._
 
-### An t-uisge a tha a' leathanach
+### An t-uisge a tha a' leathanach {#beyond-advertising}
 
 Is e am fhaighinn luchd air a bhith agad airson a' tola cuideachd a' chùl support do pàipear uile.
 

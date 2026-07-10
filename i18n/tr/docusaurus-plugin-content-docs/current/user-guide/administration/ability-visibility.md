@@ -3,11 +3,11 @@ title: Yetenek Görünürlüğü
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Yetenek Görünürlüğü
+# Yetenek Görünürlüğü {#ability-visibility}
 
 Superdav AI Agent v1.12.0, hangi yüzeylerin hangi yeteneği göstereceğini yöneten **Yetenek Görünürlüğü** kontrollerini getiriyor. Bu, yöneticilerin hangi agent yeteneklerinin REST API'ler, MCP sunucuları, WooCommerce entegrasyonları ve diğer arayüzler aracılığıyla kullanılabilirliğini detaylıca ayarlamasına olanak tanır.
 
-## Yetenek Görünürlüğü Nedir?
+## Yetenek Görünürlüğü Nedir? {#what-is-ability-visibility}
 
 Yetenek Görünürlüğü, şunları kontrol eden bir izin sistemidir:
 
@@ -18,9 +18,9 @@ Yetenek Görünürlüğü, şunları kontrol eden bir izin sistemidir:
 
 Her yetenek, farklı yüzeylerdeki kullanılabilirliğini belirleyen bir görünürlük seviyesine sahiptir.
 
-## Görünürlük Seviyeleri
+## Görünürlük Seviyeleri {#visibility-levels}
 
-### Public (Herkese Açık)
+### Public (Herkese Açık) {#public}
 
 **Public yetenekler** her yerde mevcuttur:
 
@@ -32,7 +32,7 @@ Her yetenek, farklı yüzeylerdeki kullanılabilirliğini belirleyen bir görün
 
 Örnek: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Dahili)
+### Internal (Dahili) {#internal}
 
 **Internal yetenekler** yalnızca WordPress kurulumunuz içinde mevcuttur:
 
@@ -43,7 +43,7 @@ Her yetenek, farklı yüzeylerdeki kullanılabilirliğini belirleyen bir görün
 
 Örnek: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner yetenekler** yalnızca beyaz listelenmiş partnerlere açıktır:
 
@@ -54,7 +54,7 @@ Her yetenek, farklı yüzeylerdeki kullanılabilirliğini belirleyen bir görün
 
 Örnek: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Devre Dışı)
+### Disabled (Devre Dışı) {#disabled}
 
 **Disabled yetenekler** hiçbir yerde mevcut değildir:
 
@@ -63,15 +63,15 @@ Her yetenek, farklı yüzeylerdeki kullanılabilirliğini belirleyen bir görün
 - Yönetici panellerinde kullanılamaz
 - Kullanımdan kaldırılmış veya deneysel yetenekler için kullanışlıdır
 
-## Yetenek Görünürlüğünü Yönetme
+## Yetenek Görünürlüğünü Yönetme {#managing-ability-visibility}
 
-### Yetenek Görünürlüğü Ayarlarına Erişim
+### Yetenek Görünürlüğü Ayarlarına Erişim {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** yolunu izleyin
 2. **Abilities** sekmesine tıklayın
 3. Yüklü tüm yeteneklerin bir listesini ve bunların görünürlük seviyelerini göreceksiniz
 
-### Yetenek Detaylarını Görüntüleme
+### Yetenek Detaylarını Görüntüleme {#viewing-ability-details}
 
 Herhangi bir yeteneğe tıklayarak şunları görebilirsiniz:
 
@@ -82,7 +82,7 @@ Herhangi bir yeteneğe tıklayarak şunları görebilirsiniz:
 - **Last updated**: Görünürlüğün en son ne zaman değiştirildiği
 - **Status**: Recognized (Tanınmış) veya Unclassified (Tanınmamış)
 
-### Görünürlük Seviyelerini Değiştirme
+### Görünürlük Seviyelerini Değiştirme {#changing-visibility-levels}
 
 Bir yeteneğin görünürlüğünü değiştirmek için:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Toplu İşlemler
+### Toplu İşlemler {#bulk-operations}
 
 Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 
@@ -108,11 +108,11 @@ Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 2. Toplu işlem açılır menüsünden yeni bir görünürlük seviyesi seçin
 3. **Apply** (Uygula) butonuna tıklayın
 
-## Partner İzin Listesi
+## Partner İzin Listesi {#partner-allow-list}
 
 **Partner izin listesi**, hangi harici partnerlerin Partner düzeyindeki yeteneklere erişebileceğini kontrol eder.
 
-### Partner Ekleme
+### Partner Ekleme {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** yolunu izleyin
 2. **Add Partner** (Partner Ekle) butonuna tıklayın
@@ -120,7 +120,7 @@ Birden fazla yeteneğin görünürlüğünü değiştirmek için:
 4. İsteğe bağlı olarak bir partner adı ve açıklama ekleyin
 5. **Save** (Kaydet) butonuna tıklayın
 
-### Yetenekleri Partnerlere Atama
+### Yetenekleri Partnerlere Atama {#assigning-abilities-to-partners}
 
 Bir partner ekledikten sonra:
 
@@ -130,7 +130,7 @@ Bir partner ekledikten sonra:
 4. "Partner allow-list" bölümünde, erişimi olması gereken partnerlerin kutucuklarını işaretleyin
 5. **Save** (Kaydet) butonuna tıklayın
 
-### Partner Erişimi Kaldırma
+### Partner Erişimi Kaldırma {#revoking-partner-access}
 
 Bir partnerin erişimini kaldırmak için:
 
@@ -140,11 +140,11 @@ Bir partnerin erişimini kaldırmak için:
 
 Partner, o yeteneğe erişimini anında kaybedecektir.
 
-## Tanınmamış Yetenekler
+## Tanınmamış Yetenekler {#unclassified-abilities}
 
 Superdav AI Agent'ın tanımadığı üçüncü taraf bir yetenek yüklediğinizde, bu **Unclassified** (Tanınmamış) olarak işaretlenir.
 
-### Tanınmamış Yetenekler İçin Yönetici Bildirimi
+### Tanınmamış Yetenekler İçin Yönetici Bildirimi {#admin-notice-for-unclassified-abilities}
 
 Aşağıdaki yönetici bildirimini göreceksiniz:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Tanınmamış Yetenekleri Gözden Geçirme
+### Tanınmamış Yetenekleri Gözden Geçirme {#reviewing-unclassified-abilities}
 
 1. Bildirimdeki **Review Abilities** (Yetenekleri Gözden Geçir) butonuna tıklayın
 2. Her tanınmamış yetenek için şunları göreceksiniz:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Kararınızı kaydetmek için **Classify** (Sınıflandır) butonuna tıklayın
 
-### Tanınmamış Yetenekleri Neden Sınıflandırmalıyız?
+### Tanınmamış Yetenekleri Neden Sınıflandırmalıyız? {#why-classify-unclassified-abilities}
 
 Yetenekleri sınıflandırmak:
 
@@ -187,9 +187,9 @@ Yetenekleri sınıflandırmak:
 - **Özellikleri etkinleştirir**: Sınıflandırıldıktan sonra yetenek kullanılabilir hale gelir
 - **Kararları belgelendirir**: Seçimleriniz denetim amaçlı kaydedilir
 
-## Farklı Yüzeylerde Görünürlük
+## Farklı Yüzeylerde Görünürlük {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Public yetenekler** REST uç noktaları üzerinden kullanılabilir:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal ve Partner yetenekler** REST API üzerinden kullanılamaz.
 
-### MCP Sunucuları
+### MCP Sunucuları {#mcp-servers}
 
 **Public yetenekler** MCP üzerinden kullanılabilir:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner yetenekler** yalnızca partner kimlik bilgileriyle kullanılabilir.
 
-### WooCommerce Entegrasyonu
+### WooCommerce Entegrasyonu {#woocommerce-integration}
 
 WooCommerce ile ilgili **Public yetenekler** kullanılabilir:
 
@@ -227,7 +227,7 @@ WooCommerce ile ilgili **Public yetenekler** kullanılabilir:
 
 **Internal yetenekler** WooCommerce'a açık değildir.
 
-### Sohbet Arayüzü
+### Sohbet Arayüzü {#chat-interface}
 
 **Tüm yetenekler** (Public, Internal, Partner), kullanıcı izinlerine bağlı olarak sohbette kullanılabilir:
 
@@ -235,34 +235,34 @@ WooCommerce ile ilgili **Public yetenekler** kullanılabilir:
 - Normal kullanıcılar yalnızca Public yetenekleri görür
 - Partnerler Public + Partner yeteneklerini görür (beyaz listelenmişse)
 
-## Güvenlik En İyi Uygulamaları
+## Güvenlik En İyi Uygulamaları {#security-best-practices}
 
-### En Az Ayrıcalık Prensibi
+### En Az Ayrıcalık Prensibi {#principle-of-least-privilege}
 
 - Kullanımına devam etmesi gereken en kısıtlayıcı görünürlük seviyesini ayarlayın
 - Hassas işlemler için Partner görünürlüğünü kullanın
 - Kullanmadığınız yetenekleri devre dışı bırakın
 
-### Düzenli Denetimler
+### Düzenli Denetimler {#regular-audits}
 
 - Yetenek görünürlüğünü aylık olarak gözden geçirin
 - Tanınmamış yetenekler olup olmadığını kontrol edin
 - Kullanılmayan partnerler için erişimi kaldırın
 
-### Günlük Tutma ve İzleme
+### Günlük Tutma ve İzleme {#logging-and-monitoring}
 
 - Hangi yeteneklerin en çok kullanıldığını izleyin
 - Partner erişim kalıplarını takip edin
 - Olağandışı yetenek kullanımında uyarı alın
 
-### Üçüncü Taraf Yetenekler
+### Üçüncü Taraf Yetenekler {#third-party-abilities}
 
 - Etkinleştirmeden önce üçüncü taraf yetenekleri gözden geçirin
 - Onları açıkça sınıflandırın
 - Internal veya Partner görünürlüğü ile başlayın
 - Yalnızca kontrol edildikten sonra Public'e yükseltin
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **Bir yetenek listede görünmüyor**
 - Yeteneğin yüklü ve aktif olduğundan emin olun
@@ -285,7 +285,7 @@ WooCommerce ile ilgili **Public yetenekler** kullanılabilir:
 - Sınıflandırmanızın kaydedildiğinden emin olun
 - Yeteneği sağlayan eklentinin güncel olduğundan emin olun
 
-## Eski Moddan Geçiş
+## Eski Moddan Geçiş {#migration-from-legacy-mode}
 
 Superdav AI Agent'ın eski bir sürümünden yükseltme yapıyorsanız:
 
@@ -295,7 +295,7 @@ Superdav AI Agent'ın eski bir sürümünden yükseltme yapıyorsanız:
 
 Geçişle ilgili daha fazla ayrıntı için **Third-Party Mode Migration** (Üçüncü Taraf Mod Geçişi) bölümüne bakın.
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Yetenek görünürlüğünü yapılandırdıktan sonra:
 

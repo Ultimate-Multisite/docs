@@ -3,11 +3,11 @@ title: 디자인 시스템 미학 기술
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# 디자인 시스템 미학 스킬
+# 디자인 시스템 미학 스킬 {#design-system-aesthetics-skill}
 
 **디자인 시스템 미학 스킬**은 웹사이트의 시각적 정체성을 다듬기 위한 체계적인 접근 방식입니다. 이 스킬은 디자인 시스템을 정의하는 타이포그래피, 색상, 간격, 모션 토큰에 대해 일관된 결정을 내릴 수 있도록 도와줍니다.
 
-## 디자인 시스템 미학이란 무엇인가요?
+## 디자인 시스템 미학이란 무엇인가요? {#what-is-design-system-aesthetics}
 
 디자인 시스템 미학은 다음 항목들을 다루는 구조화된 스킬입니다:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 이러한 결정들은 테마의 `theme.json` 파일에 기록되어 통일성 있는 시각 시스템을 만듭니다.
 
-## 디자인 시스템 미학을 사용해야 하는 이유
+## 디자인 시스템 미학을 사용해야 하는 이유 {#why-use-design-system-aesthetics}
 
-### 일관성 (Consistency)
+### 일관성 (Consistency) {#consistency}
 
 디자인 시스템은 다음을 보장합니다:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 간격이 예측 가능한 패턴을 따릅니다.
 - 애니메이션이 통일된 느낌을 줍니다.
 
-### 효율성 (Efficiency)
+### 효율성 (Efficiency) {#efficiency}
 
 페이지별로 디자인 결정을 내리는 대신, 다음을 수행할 수 있습니다:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 모든 곳에 적용합니다.
 - 하나의 값만 변경하여 전역적으로 업데이트합니다.
 
-### 유연성 (Flexibility)
+### 유연성 (Flexibility) {#flexibility}
 
 다음과 같은 작업을 할 수 있습니다:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 다양한 미학을 실험해 볼 수 있습니다.
 - 진화하면서도 브랜드 일관성을 유지할 수 있습니다.
 
-## 디자인 시스템 미학 스킬 실행하기
+## 디자인 시스템 미학 스킬 실행하기 {#triggering-the-design-system-aesthetics-skill}
 
-### 수동 활성화
+### 수동 활성화 {#manual-activation}
 
 언제든지 이 스킬을 시작할 수 있습니다:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "디자인 시스템 결정 과정을 안내해 주세요"
 ```
 
-### 자동 제안
+### 자동 제안 {#automatic-suggestions}
 
 다음과 같은 상황에서 에이전트가 이 스킬 사용을 제안할 수 있습니다:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 시각적 일관성을 개선하고 싶을 때
 - 사이트 출시를 준비할 때
 
-## 디자인 시스템 미학 프로세스
+## 디자인 시스템 미학 프로세스 {#the-design-system-aesthetics-process}
 
-### 1단계: 타이포그래피
+### 1단계: 타이포그래피 {#step-1-typography}
 
 에이전트가 글꼴 선택에 대해 질문합니다:
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **굵기 스케일(Weight scale)**: 글꼴 굵기 (regular, medium, bold 등)
 - **줄 높이(Line height)**: 가독성을 위한 줄 간격
 
-### 2단계: 색상 팔레트
+### 2단계: 색상 팔레트 {#step-2-color-palette}
 
 ```
 색상 팔레트를 정의해 봅시다.
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 의미론적 색상 (성공, 경고, 오류)
 - 호버 및 활성 상태
 
-### 3단계: 간격
+### 3단계: 간격 {#step-3-spacing}
 
 ```
 얼마나 많은 여백을 원하시나요?
@@ -162,7 +162,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 스케일: xs, sm, md, lg, xl, 2xl
 - 패딩, 마진, 간격에 대한 특정 값
 
-### 4단계: 테두리 및 그림자
+### 4단계: 테두리 및 그림자 {#step-4-borders-and-shadows}
 
 ```
 시각적 깊이와 정의:
@@ -185,7 +185,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 높이 레벨에 대한 그림자 토큰
 - 테두리 너비 토큰
 
-### 5단계: 모션 및 애니메이션
+### 5단계: 모션 및 애니메이션 {#step-5-motion-and-animation}
 
 ```
 사이트가 상호작용할 때 어떤 느낌이어야 할까요?
@@ -207,9 +207,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 이징 함수 (ease-in, ease-out, ease-in-out)
 - 일반적인 상호작용을 위한 애니메이션 키프레임
 
-## 디자인 시스템 미학 적용하기
+## 디자인 시스템 미학 적용하기 {#applying-design-system-aesthetics}
 
-### 자동 적용
+### 자동 적용 {#automatic-application}
 
 스킬을 완료하면 에이전트가 다음을 수행합니다:
 
@@ -218,7 +218,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 3. 새로운 시스템에 맞게 블록 스타일을 재생성합니다.
 4. 업데이트된 테마를 활성화합니다.
 
-### 수동 적용
+### 수동 적용 {#manual-application}
 
 `theme.json`을 직접 편집할 수도 있습니다:
 
@@ -257,9 +257,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 }
 ```
 
-## 디자인 시스템 보기
+## 디자인 시스템 보기 {#viewing-your-design-system}
 
-### 에이전트에게 요청하기
+### 에이전트에게 요청하기 {#ask-the-agent}
 
 ```
 "내 디자인 시스템을 보여주세요"
@@ -273,13 +273,13 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 에이전트는 타이포그래피, 색상, 간격 및 기타 토큰을 표시합니다.
 
-### theme.json 보기
+### theme.json 보기 {#view-themejson}
 
 텍스트 편집기에서 `/wp-content/themes/[theme-name]/theme.json`을 열어 원시 토큰 정의를 확인하세요.
 
-## 디자인 시스템 업데이트하기
+## 디자인 시스템 업데이트하기 {#updating-your-design-system}
 
-### 빠른 업데이트
+### 빠른 업데이트 {#quick-updates}
 
 에이전트에게 특정 변경 사항을 요청하세요:
 
@@ -299,7 +299,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "제목 글꼴을 세리프로 변경해주세요"
 ```
 
-### 전체 재디자인
+### 전체 재디자인 {#full-redesign}
 
 디자인 시스템 미학 스킬을 다시 실행합니다:
 
@@ -309,7 +309,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 이것은 현재 값을 시작으로 모든 결정 과정을 다시 안내합니다.
 
-### 부분 업데이트
+### 부분 업데이트 {#partial-updates}
 
 특정 측면만 업데이트합니다:
 
@@ -317,15 +317,15 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "색상 팔레트만 업데이트하고 나머지는 그대로 유지해주세요"
 ```
 
-## 디자인 시스템 모범 사례
+## 디자인 시스템 모범 사례 {#design-system-best-practices}
 
-### 일관성
+### 일관성 {#consistency-1}
 
 - 모든 곳에서 동일한 토큰을 사용하세요.
 - 일회성 색상이나 크기를 만들지 마세요.
 - 값을 하드코딩하는 대신 토큰을 참조하세요.
 
-### 명명 규칙 (Naming)
+### 명명 규칙 (Naming) {#naming}
 
 명확하고 의미론적인 이름을 사용하세요:
 
@@ -335,7 +335,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### 확장성 (Scalability)
+### 확장성 (Scalability) {#scalability}
 
 확장할 수 있도록 시스템을 설계하세요:
 
@@ -343,7 +343,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 임의의 값 대신 스케일(xs, sm, md, lg, xl)을 만드세요.
 - 미래의 추가 사항을 계획하세요.
 
-### 문서화 (Documentation)
+### 문서화 (Documentation) {#documentation}
 
 디자인 시스템을 문서화하세요:
 
@@ -351,9 +351,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 각 토큰을 언제 사용해야 하는지
 - 예외 사항 및 엣지 케이스
 
-## 일반적인 디자인 시스템 패턴
+## 일반적인 디자인 시스템 패턴 {#common-design-system-patterns}
 
-### 모던 미니멀리스트 (Modern Minimalist)
+### 모던 미니멀리스트 (Modern Minimalist) {#modern-minimalist}
 
 - 산세리프 타이포그래피 (Inter, Helvetica)
 - 제한된 색상 팔레트 (2~3가지 색상)
@@ -361,7 +361,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 은은한 그림자
 - 부드럽고 빠른 애니메이션
 
-### 따뜻하고 친근함 (Warm and Friendly)
+### 따뜻하고 친근함 (Warm and Friendly) {#warm-and-friendly}
 
 - 세리프와 산세리프의 혼합
 - 따뜻한 색상 팔레트 (주황색, 따뜻한 회색)
@@ -369,7 +369,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 부드러운 그림자
 - 재미있는 애니메이션
 
-### 전문적인 기업용 (Professional Corporate)
+### 전문적인 기업용 (Professional Corporate) {#professional-corporate}
 
 - 깔끔한 산세리프 (Roboto, Open Sans)
 - 강조 색상이 있는 중립 팔레트
@@ -377,7 +377,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 최소한의 그림자
 - 은은한 전환 효과
 
-### 창의적이고 대담함 (Creative and Bold)
+### 창의적이고 대담함 (Creative and Bold) {#creative-and-bold}
 
 - 개성 있는 타이포그래피
 - 대담한 색상 팔레트
@@ -385,7 +385,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 강한 그림자
 - 눈에 띄는 애니메이션
 
-## 문제 해결 (Troubleshooting)
+## 문제 해결 (Troubleshooting) {#troubleshooting}
 
 **디자인 시스템 변경 사항이 보이지 않아요**
 - 브라우저 캐시를 지우세요.
@@ -403,7 +403,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - `theme.json`을 수동으로 이전 값으로 편집하세요.
 - 다른 선택 사항으로 스킬을 다시 실행하세요.
 
-## 다음 단계
+## 다음 단계 {#next-steps}
 
 디자인 시스템을 정의한 후:
 

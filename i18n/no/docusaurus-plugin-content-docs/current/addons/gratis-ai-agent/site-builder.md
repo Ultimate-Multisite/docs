@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introduert i Gratis AI Agent v1.4.0) er motoren som driver flertrinnskaps nettsidebygging. Når du ber agenten om å "bygge en restaurantnettside" eller "lage en portefølje med blogg", bryter orkestratoren ned dette høynivåmålet i en strukturert **plan**, oppdager hvilke plugins som trengs for å oppfylle det, utfører hvert trinn i sekvens, sporer fremdrift og gjenoppretter seg autonomt ved feil.
 
 ---
 
-## Hvordan det fungerer
+## Hvordan det fungerer {#how-it-works}
 
-### 1. Planutvikling (Plan Generation)
+### 1. Planutvikling (Plan Generation) {#1-plan-generation}
 
 Når agenten mottar en instruksjon om å bygge en nettside, kaller den `create_site_plan`-funksjonaliteten for å produsere en JSON **site plan**. Planen beskriver:
 
@@ -61,7 +61,7 @@ Når agenten mottar en instruksjon om å bygge en nettside, kaller den `create_s
 }
 ```
 
-### 2. Plugin Discovery
+### 2. Plugin Discovery {#2-plugin-discovery}
 
 Før utførelsen starter, skanner orkestratoren `plugin_requirements` i planen og sjekker hvilke plugins som allerede er aktive. For manglende plugins:
 
@@ -71,7 +71,7 @@ Før utførelsen starter, skanner orkestratoren `plugin_requirements` i planen o
 
 Feil under plugin discovery er ikke kritiske — orkestratoren merker de berørte trinnene som `skipped` og fortsetter med resten av planen.
 
-### 3. Plan Execution
+### 3. Plan Execution {#3-plan-execution}
 
 Orkestratoren kaller `execute_site_plan` med plan-ID-en. Utførelsen skjer fase for fase, trinn for trinn:
 
@@ -79,7 +79,7 @@ Orkestratoren kaller `execute_site_plan` med plan-ID-en. Utførelsen skjer fase 
 - **Parallel steps** — trinn innenfor samme fase som ikke har avhengigheter av hverandre, sendes ut samtidig når flagget `parallel` er satt.
 - **Step timeout** — hvert trinn har en individuell tidsbegrensning (standard: `Ability Timeout`-innstillingen). Et trinn som utløper for tiden, merkes som `failed` og planen fortsetter.
 
-### 4. Progress Tracking
+### 4. Progress Tracking {#4-progress-tracking}
 
 Kall `get_plan_progress` når som helst for å sjekke utførelsesstatus:
 
@@ -104,7 +104,7 @@ Brukere av WP-CLI kan overvåke fremdriften med:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Error Recovery
+### 5. Error Recovery {#5-error-recovery}
 
 Når et trinn feiler, sjekker orkestratoren etter et **fallback**-trinn definert i planen:
 
@@ -115,9 +115,9 @@ Agenten rapporterer alle feil i den endelige planoppsummeringen og kan foreslå 
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Genererer en strukturert site plan fra en naturlig språkbeskrivelse av et mål.
 
@@ -134,7 +134,7 @@ Genererer en strukturert site plan fra en naturlig språkbeskrivelse av et mål.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Starter utførelsen av en tidligere generert site plan.
 
@@ -150,7 +150,7 @@ Starter utførelsen av en tidligere generert site plan.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Returnerer gjeldende utførelsesstatus for en site plan.
 
@@ -164,7 +164,7 @@ Returnerer gjeldende utførelsesstatus for en site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Løser manuelt et feilet trinn og gjenopptar planutførelsen fra neste trinn. Bruk dette når automatisk gjenoppretting ikke var mulig, og du ønsker å gripe inn.
 
@@ -180,7 +180,7 @@ Løser manuelt et feilet trinn og gjenopptar planutførelsen fra neste trinn. Br
 
 ---
 
-## Sammenligning av v1 og v2
+## Sammenligning av v1 og v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Løser manuelt et feilet trinn og gjenopptar planutførelsen fra neste trinn. Br
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Genererer en site plan fra en målbeskrivelse.
 
@@ -205,7 +205,7 @@ Genererer en site plan fra en målbeskrivelse.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Utfør en tidligere generert plan.
 
@@ -213,7 +213,7 @@ Utfør en tidligere generert plan.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Viser gjeldende fremdrift for en kjørende eller fullført plan.
 
@@ -221,7 +221,7 @@ Viser gjeldende fremdrift for en kjørende eller fullført plan.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lister alle site plans (ventende, i gang og fullførte).
 
@@ -229,7 +229,7 @@ Lister alle site plans (ventende, i gang og fullførte).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Tilbakestiller en feilet plan til `pending` slik at den kan kjøres på nytt fra begynnelsen.
 

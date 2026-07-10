@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Atal Bots. Diogelu Refeniw. Dim Trafferth Ffurfweddu.**
+
+Yn rhedeg rhwydwaith aml-safle gyda pharthau personol? Rydych chi'n gwybod y boen: mae Google reCAPTCHA a hCaptcha yn mynnu eich bod yn cofrestru *pob parth unigol* yn eu consol gweinyddu. Ychwanegu safle cwsmer newydd? Diweddaru'r ffurfweddiad captcha. Mapio parth personol? Diweddaru eto. Nid yw byth yn dod i ben.
+
+**Ultimate Multisite: Mae Captcha yn newid popeth.**
+
+## Cap Captcha: Diogelwch Hunangynhaliol Sy'n Gweithio {#cap-captcha-self-hosted-protection-that-just-works}
+
+Mae ein darparwr **Cap Captcha** newydd yn newid y gêm ar gyfer rhwydweithiau aml-safle:
+
+* **Dim Ffurfweddu** — Gweithredwch yr ategyn ac rydych chi wedi'ch diogelu. Dim allweddi API, dim cyfrif Google, dim Dashboard hCaptcha, dim rhestr wen parthau.
+* **Yn Gweithio ar Bob Parth yn Awtomatig** — Is-barthau, parthau wedi'u mapio, parthau cwsmeriaid—maent i gyd wedi'u diogelu ar unwaith.
+* **Hunangynhaliol a Phreifat** — Nid yw eich data byth yn gadael eich gweinydd. Yn cydymffurfio'n llawn â GDPR heb olrhain trydydd parti.
+* **Prawf-o-Waith Anweledig** — Mae defnyddwyr yn datrys pos cyfrifiadol yn y cefndir. Dim clicio hydrantau tân, dim gridiau delweddau rhwystredig.
+* **Ysgafn** — Dim ond 20KB. Ni fydd yn arafu eich checkout.
+
+## Diogelwch Rhag Profi Cardiau WooCommerce {#woocommerce-card-testing-protection}
+
+Mae ymosodiadau profi cardiau yn costio biliynau i fasnachwyr bob blwyddyn. Mae twyllwyr yn defnyddio bots i ddilysu cardiau credyd wedi'u dwyn yn erbyn eich checkout WooCommerce—chi sy'n talu'r ffioedd prosesu, maen nhw'n cael rhifau cardiau dilys.
+
+**Rydym yn diogelu lle mae bwysicaf:**
+
+* **Diogelwch Store API** — Yn blocio ymosodiadau bot ar `/wp-json/wc/store/v1/checkout` sy'n osgoi captchas ffurflenni traddodiadol
+* **Cydnaws â PayPal Payments** — Yn gweithio'n ddi-dor gyda WooCommerce PayPal Payments
+* **Ystadegau Amser Real** — Gweld yn union faint o ymosodiadau rydych chi'n eu blocio
+
+## Dal Angen Google reCAPTCHA neu hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Rydym wedi'ch cynnwys. Cefnogaeth lawn ar gyfer:
+
+* Google reCAPTCHA v2 (Blwch Ticio)
+* Google reCAPTCHA v2 (Anweledig)
+* Google reCAPTCHA v3 (Yn seiliedig ar sgôr)
+* hCaptcha (Safonol)
+* hCaptcha (Anweledig)
+
+Newidiwch rhwng darparwyr unrhyw bryd o osodiadau eich rhwydwaith.
+
+## Wedi'i Adeiladu ar gyfer Graddfa {#built-for-scale}
+
+* Gosodiadau ar draws y rhwydwaith gyda gor-reoliadau fesul safle
+* Dashboard ystadegau i fonitro diogelwch
+* Lefelau diogelwch addasadwy (Cyflym, Canolig, Uchaf)
+* Cyfeillgar i ddatblygwyr gyda phensaernïaeth darparwr estynadwy
+
+## Gosod {#installation}
+
+1. Uwchlwythwch `ultimate-multisite-captcha` i'ch cyfeiriadur `/wp-content/plugins/`
+2. Gweithredwch y plugin ar draws y rhwydwaith
+3. **Dyna ni. Rydych chi wedi'ch diogelu.**
+
+Mae Cap Captcha yn gweithredu'n awtomatig—dim gosodiadau i'w ffurfweddu, dim allweddi API i'w rhoi. Mae pob endpoint a gefnogir ar draws eich rhwydwaith cyfan wedi'i ddiogelu'r eiliad rydych chi'n gweithredu.
+
+**Dewisol:** I ddefnyddio Google reCAPTCHA neu hCaptcha yn lle hynny, ewch i **Ultimate Multisite → Settings → Captcha** a dewiswch eich darparwr dewisol.
+
+## Cwestiynau Cyffredin {#frequently-asked-questions}
+
+## Oes angen i mi ffurfweddu unrhyw beth? {#do-i-need-to-configure-anything}
+
+Nac oes! Mae Cap Captcha wedi'i alluogi'n awtomatig pan fyddwch yn gweithredu'r addon. Mae eich rhwydwaith cyfan wedi'i ddiogelu ar unwaith—dim gosodiadau i'w ffurfweddu, dim allweddi API i'w rhoi.
+
+## Oes angen allweddi API arnaf ar gyfer Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Nac oes. Mae Cap Captcha yn gwbl hunangynhaliol. Dim cyfrifon allanol, dim cofrestru parthau, dim trafferthion ffurfweddu.
+
+## A fydd hyn yn arafu fy checkout? {#will-this-slow-down-my-checkout}
+
+Dim ond 20KB yw Cap Captcha ac mae'n rhedeg heriau prawf-o-waith yn y cefndir. Ni fydd eich cwsmeriaid yn sylwi ar unrhyw oedi.
+
+## A yw hyn yn diogelu rhag ymosodiadau profi cardiau? {#does-this-protect-against-card-testing-attacks}
+
+Ydy! Yn wahanol i captchas traddodiadol sy'n diogelu ffurflenni HTML yn unig, mae ein hintegreiddiad WooCommerce yn cysylltu'n uniongyrchol â'r Store API i flocio ymosodiadau bot ar lefel yr API—lle mae'r rhan fwyaf o ymosodiadau profi cardiau'n digwydd.
+
+## A allaf ddefnyddio darparwyr captcha gwahanol ar safleoedd gwahanol? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Mae'r darparwr captcha wedi'i osod ar draws y rhwydwaith, ond gallwch addasu gosodiadau anhawster yn seiliedig ar eich anghenion.
+
+## A yw hyn yn cydymffurfio â GDPR? {#is-this-gdpr-compliant}
+
+Mae Cap Captcha yn 100% hunangynhaliol heb unrhyw ddata'n cael ei anfon i wasanaethau allanol. Ar gyfer Google reCAPTCHA a hCaptcha, adolygwch eu polisïau preifatrwydd priodol.
+
+## Cyfyngu Cyfradd {#rate-limiting}
+
+Mae Ultimate Multisite: Captcha v1.5.0 yn cyflwyno cyfyngwr cyfradd atal caled sy'n diogelu eich rhwydwaith rhag ymosodiadau grym crai a phrofi cardiau.
+
+### Sut Mae'n Gweithio {#how-it-works}
+
+Mae'r cyfyngwr cyfradd yn cyfrif pob cais GET a POST ar arwynebau sydd wedi'u diogelu gan captcha:
+
+* **Endpoints mewngofnodi WordPress** — wp-login, cofrestru, cyfrinair coll, sylwadau
+* **Checkout WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Pan fydd ymwelydd yn mynd dros y terfyn cyfradd, mae'r plugin yn ymateb gyda:
+
+* Cod statws **HTTP 429 (Gormod o Geisiadau)**
+* Header **Retry-After** sy'n nodi pryd i roi cynnig arall
+* **Cwsg tarpit ar hap** (1–5 eiliad yn ddiofyn, wedi'i gapio'n galed ar 15 eiliad) i arafu ymosodwyr
+
+### Ffurfweddu {#configuration}
+
+#### Amseru Tarpit {#tarpit-timing}
+
+Rheolwch yr oedi ar hap a gymhwysir i geisiadau sydd wedi'u cyfyngu gan gyfradd:
+
+* **`cap_rate_limit_tarpit_min`** — Isafswm hyd cwsg mewn eiliadau (rhagosodiad: 1)
+* **`cap_rate_limit_tarpit_max`** — Uchafswm hyd cwsg mewn eiliadau (rhagosodiad: 5, wedi'i gapio'n galed ar 15)
+
+Mae'r gosodiadau hyn ar gael yn **Ultimate Multisite → Settings → Captcha**.
+
+### Estynadwyedd {#extensibility}
+
+#### Hidlydd Rhestr Wen IP {#ip-whitelist-filter}
+
+Eithriwch ystodau IP dibynadwy rhag cyfyngu cyfradd:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Gweithred Cyn Bloc {#pre-block-action}
+
+Gweithredwch resymeg bersonol yn syth cyn i floc cyfyngiad cyfradd gael ei anfon:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Canfod IP Cleientiaid a Dirprwyon Dibynadwy {#client-ip-detection--trusted-proxies}
+
+Mae Ultimate Multisite: Captcha v1.5.0 yn cyflwyno canfod IP cleient sy'n gwrthsefyll ffugio. Y dull `Captcha_Core::get_client_ip()` yw'r unig ffynhonnell wirionedd bellach ar gyfer priodoli IP ymwelwyr ar draws:
+
+* Allweddi bwcedi cyfyngu cyfradd
+* Darparwr Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hashes IP ystadegau
+
+### Model Ymddiriedaeth {#trust-model}
+
+Mae'r ategyn yn gorfodi hierarchaeth ymddiriedaeth IP lem:
+
+1. **REMOTE_ADDR** — Bob amser yn ymddiried ynddo (IP y cymar uniongyrchol)
+2. **CF-Connecting-IP** — Yn cael ei barchu dim ond pan:
+   - Mae'r cymar uniongyrchol o fewn ystod IP Cloudflare gyfredol
+   - Mae `cap_trust_cloudflare_headers` wedi'i alluogi (diofyn: OFF)
+3. **X-Forwarded-For** — Yn cael ei barchu dim ond pan:
+   - Mae'r cymar uniongyrchol yn eich rhestr dirprwyon dibynadwy sydd wedi'i ffurfweddu gan weinyddwr
+   - Mae'r pennyn yn cael ei ddosrannu o'r dde i'r chwith, gan hepgor hopiau dibynadwy/Cloudflare
+
+### Ffurfweddiad {#configuration-1}
+
+#### Ymddiriedaeth Pennyn Cloudflare {#cloudflare-header-trust}
+
+Galluogwch ymddiriedaeth ym mhennyn `CF-Connecting-IP` Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Gosodwch i ON i ddewis ymddiriedaeth `CF-Connecting-IP`
+  - Diofyn: OFF (analluog)
+  - Mae'r ategyn yn dod gyda chiplun CIDR Cloudflare wedi'i gynnwys
+  - Mae ystodau CIDR yn cael eu hadnewyddu'n wythnosol drwy wp-cron
+  - Defnyddir y copi wrth gefn wedi'i gynnwys os bydd yr adnewyddu'n methu
+
+#### Ffurfweddiad Dirprwy Dibynadwy {#trusted-proxy-configuration}
+
+Diffiniwch eich dirprwyon rheng flaen a'ch cydbwyswyr llwyth:
+
+* **`cap_trusted_proxies`** — Ardal destun o CIDRs neu IPs plaen (un fesul llinell)
+  - Caniateir sylwadau (llinellau sy'n dechrau gyda `#`)
+  - Heb y gosodiad hwn, anwybyddir `X-Forwarded-For` hyd yn oed pan fydd y cyfyngydd cyfradd wedi'i alluogi
+  - Enghraifft:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Canfod Awtomatig Wrth Alluogi am y Tro Cyntaf {#first-enable-auto-detection}
+
+Pan fyddwch yn galluogi'r cyfyngydd cyfradd am y tro cyntaf, mae'r ategyn yn canfod eich ystum Cloudflare a dirprwy tebygol ac yn dangos hysbysiad gweinyddol un clic "Cymhwyso gosodiadau a ganfuwyd".
+
+* Nid yw'r ategyn **byth yn trosysgrifo** eich gwerthoedd wedi'u cadw
+* Os bydd traffig dilynol yn awgrymu nad yw eich ffurfweddiad bellach yn cyfateb i realiti (e.e., newidiodd Cloudflare ystodau CIDR), bydd hysbysiad anghydweddu na ellir ei ddiystyru yn amlygu'r diweddariad a argymhellir
+
+### Pam Mae Hyn yn Bwysig {#why-this-matters}
+
+Mae model ymddiriedaeth IP lem yn cau fector ffugio hollbwysig: byddai ceisiadau uniongyrchol at weinydd tarddiad sy'n cario pennyn `CF-Connecting-IP` ffug o'r blaen wedi cael eu rhoi mewn bwced yn ôl yr IP ffug yn hytrach na'r cymar go iawn. Mae hyn yn arbennig o bwysig ar gyfer:
+
+* **Cyfyngu cyfradd** — Ni all ymosodwyr osgoi terfynau drwy ffugio IPs
+* **Ystadegau** — Mae eich metrigau ymosodiadau yn adlewyrchu IPs ymwelwyr go iawn, nid rhai ffug
+* **Dilysu Captcha** — Mae darparwyr yn derbyn IP cywir yr ymwelydd ar gyfer asesu risg

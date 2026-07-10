@@ -3,7 +3,7 @@ title: Ondo irizten dezake abonamentu bat cancelatzea
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Ondo ez dauden abonazioa cancelatu?
+# Ondo ez dauden abonazioa cancelatu? {#how-can-i-cancel-my-subscription}
 
 Ultimate Multisite lisentzia duzuz, hori zehar gurean jakin duen abantzukiz cancelatuta ditzake. Lehen daude askotan:
 

@@ -4,19 +4,19 @@ title: ક્રિયા - wu_cart_after_setup
 sidebar_label: wu_cart_after_setup
 _i18n_hash: 459ba15bb46b3a95ef6fc7235337601a
 ---
-# Action: wu_cart_after_setup
+# Action: wu_cart_after_setup {#action-wucartaftersetup}
 
 ડેવલપર્સને ચેકઆઉટ ઓબ્જેક્ટમાં વધારાના ફેરફારો કરવાની મંજૂરી આપે છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $this | `` | \WP_Ultimo\Checkout\Cart કાર્ટ ઓબ્જેક્ટ. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L388) માં લાઇન 388 પર વ્યાખ્યાયિત છે

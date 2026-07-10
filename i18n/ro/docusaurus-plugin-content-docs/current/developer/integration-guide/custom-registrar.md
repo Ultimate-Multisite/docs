@@ -3,13 +3,13 @@ title: Construirea unei Integrari de Registrar Personalizate
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Crearea unei Integrari Custom de Registrare de Domenii
+# Crearea unei Integrari Custom de Registrare de Domenii {#building-a-custom-registrar-integration}
 
 Addon-ul Domain Seller folosește un model numit **Integration Registry**. Fiecare registrar este o clasă PHP care implementează `Domain_Selling_Capability` și se înregistrează prin hook-ul de acțiune `wu_domain_seller_register_capabilities`.
 
 Acest ghid vă arată cum să conectați un registrar custom.
 
-## Interfața
+## Interfața {#the-interface}
 
 Clasa dumneavoastră trebuie să implementeze `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` și să extindă `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metode opționale
+### Metode opționale {#optional-methods}
 
 Implementați aceste metode pentru a debloca funcționalități suplimentare. Addon-ul detectează suportul prin `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementați aceste metode pentru a debloca funcționalități suplimentare. Ad
 | `get_epp_code(string $domain_name): array` | Transferul domeniului (de ieșire) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transferul domeniului (de intrare) |
 
-### Convenția valorii de returnare
+### Convenția valorii de returnare {#return-value-convention}
 
 Toate metodele returnează un array care conține, minimum, o cheie `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Eroare citibilă pentru om'];
 
 ---
 
-## Înregistrarea capacității dumneavoastră
+## Înregistrarea capacității dumneavoastră {#registering-your-capability}
 
 Înregistrați clasa folosind acțiunea `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argumentul primul pentru `add_capability()` este **provider ID** — un slug min
 
 ---
 
-## Adăugarea câmpurilor de credențiale în wizard
+## Adăugarea câmpurilor de credențiale în wizard {#adding-credential-fields-to-the-wizard}
 
 Pentru a permite administratorilor să introducă credențialele prin wizard-ul de configurare, înregistrați integrarea:
 
@@ -137,7 +137,7 @@ Credențialele sunt stocate ca opțiuni de rețea, folosind ID-urile câmpurilor
 
 ---
 
-## Hooks pentru acțiuni post-înregistrare
+## Hooks pentru acțiuni post-înregistrare {#hooks-for-post-registration-actions}
 
 Folosiți aceste acțiuni pentru a declanșa webhooks, provisionare, notificări sau actualizări CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logarea (Jurnalizarea)
+## Logarea (Jurnalizarea) {#logging}
 
 Scrieți în canalul de log specific provider-ului folosind `wu_log_add()`:
 

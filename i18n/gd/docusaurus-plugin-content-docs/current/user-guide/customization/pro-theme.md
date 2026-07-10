@@ -3,7 +3,7 @@ title: Thème PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Aistilidh a ghràdhachd nan Panel Admin agad le PRO Theme
+# Aistilidh a ghràdhachd nan Panel Admin agad le PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Air a' chùis, nuair a' faighinn ealaidh airson earbsaichd le clientan, tha sinn ag iarraidh a bhith ag tòiseachadh na h-admin dashboard de WordPress agad. Mar a tha thu a' tòiseachadh air an t-uisge a tha fìor, thàinig PRO Theme a losgadh tu.
 

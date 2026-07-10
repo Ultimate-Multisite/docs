@@ -3,7 +3,7 @@ title: اکاؤنٹ پیج تک رسائی
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# میں اپنے اکاؤنٹ پیج تک پہلی بار کیسے رسائی حاصل کروں؟
+# میں اپنے اکاؤنٹ پیج تک پہلی بار کیسے رسائی حاصل کروں؟ {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite میں خوش آمدید!
 

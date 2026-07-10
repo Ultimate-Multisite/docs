@@ -3,17 +3,17 @@ title: Integrasi cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integrasi cPanel
+# Integrasi cPanel {#cpanel-integration}
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 cPanel iku salah satu panel kontrol hosting paling populer sing digunakake akeh penyedia hosting shared lan dedicated. Integrasi iki bisa nggawe sinkronisasi domain otomatis antara Ultimate Multisite lan cPanel, ngidini sampeyan nambah alias domain lan subdomain ing akun cPanel-mu kanthi otomatis.
 
-## Fitur
+## Fitur {#features}
 - Pembuatan addon domain otomatis ing cPanel
 - Pembuatan subdomain otomatis ing cPanel (kanggo instalasi subdomain multisite)
 - Penghapusan domain nalika pemetaan dihapus
 
-## Persyaratan
+## Persyaratan {#requirements}
 Konstanta iki kudu didefinisikake ing file `wp-config.php` sampeyan:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default-e ya 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default-e ya /public_html
 ```
 
-## Instruksi Setup
+## Instruksi Setup {#setup-instructions}
 
-### 1. Dapatkan Kredensial cPanel Sampeyan
+### 1. Dapatkan Kredensial cPanel Sampeyan {#1-get-your-cpanel-credentials}
 
 1. Dapatkan username lan password cPanel sampeyan saka penyedia hostingmu
 2. Tentukan host cPanel sampeyan (biasane `cpanel.yourdomain.com` utawa `yourdomain.com:2083`)
 
-### 2. Tambahkan Konstanta ke wp-config.php
+### 2. Tambahkan Konstanta ke wp-config.php {#2-add-constants-to-wp-configphp}
 
 Tambahkan konstanta iki ing file `wp-config.php` sampeyan:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Ubah yen cPanel sampeyan nggunakake port liya
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Ubah yen folder dokumen sampeyan beda
 ```
 
-### 3. Aktifkan Integrasi
+### 3. Aktifkan Integrasi {#3-enable-the-integration}
 
 1. Ing admin WordPress sampeyan, tindakake menyang Ultimate Multisite > Settings
 2. Tindakake menyang tab "Domain Mapping"
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Ubah yen folder dokumen sampeya
 4. Aktifke integrasi cPanel
 5. Klik "Save Changes"
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Nalika domain dipetakan ing Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Nalika domain dipetakan ing Ultimate Multisite:
 2. Domain kase dikonfigurasi supaya nunjuk marang direktori utama (root directory) sampeyan
 3. Nalika pemetaan domain dihapus, integrasi kuwi bakal ngapus addon domain saka cPanel
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Kanggo instalasi subdomain multisite, nalika situs anyar digawe:
 
@@ -79,27 +79,27 @@ Kanggo instalasi subdomain multisite, nalika situs anyar digawe:
 2. Integrasi kuwi ngirim request menyang API cPanel kanggo nambah subdomain kase
 3. Subdomain kase dikonfigurasi supaya nunjuk marang direktori utama (root directory) sampeyan
 
-## Cathetan Penting
+## Cathetan Penting {#important-notes}
 
 - Integrasi iki nganggo API2 saka cPanel kanggo komunikasi karo akun cPanel panjenengan
 - Akun cPanel panjenengan kudu duwe izin kanggo nambah addon domains lan subdomain
 - Sawetara penyedia hosting mungkin mbates jumlah addon domain utawa subdomain sing bisa sampeyan gawe
 - Integrasi iki ora ngurus konfigurasi DNS; sampeyan isih perlu nunjukake domain marang IP address server panjenengan
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Verifikasi yen username lan password cPanel panjenengan bener
 - Cek yen host cPanel panjenengan bener lan bisa diakses
 - Pastikan akun cPanel panjenengan duwe izin sing dibutuhake
 - Coba nganggo URL lengkap kanggo host (contone, `https://cpanel.yourdomain.com`)
 
-### Domain Ora Ditambah
+### Domain Ora Ditambah {#domain-not-added}
 - Cek log Ultimate Multisite kanggo pesan error apa wae
 - Verifikasi yen domain kase durung ana ing cPanel
 - Pastikan akun cPanel panjenengan ora wis nggoleki batas kanggo addon domains utawa subdomain
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 - Integrasi iki ora ngurus penerbitan sertifikat SSL.
 - Kowe bakal perlu nggunakake alat SSL/TLS saka cPanel utawa fitur AutoSSL kanggo nggawe sertifikat SSL kanggo domainmu.
 - Alternatifé, kowe bisa nggunakake layanan kaya Let's Encrypt karo AutoSSL saka cPanel.

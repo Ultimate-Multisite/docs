@@ -3,7 +3,7 @@ title: Mwayi wa PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Kufunsa Panel Yanu ndi PRO Theme
+# Kufunsa Panel Yanu ndi PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Mmodzi pamene mukuyenda ndi zinthu za wamene amagwira ntchito, tikufunsa kuti tiye mwayi wosonyeza (custom experience) m'dashboard ya WordPress kwa wamene atili. Ngati mukuphunzira mpaka mwayi wosonyeza wopambana kwambiri, PRO Theme mungathandize.
 

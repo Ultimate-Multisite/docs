@@ -3,27 +3,27 @@ title: Webwerf Eksport
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Witwis-uitvoer
+# Witwis-uitvoer {#site-export}
 
 Die **Site Export** administrasiebladsy laat netwerkadministrateurs toe om een witwis, of die hele netwerk, in 'n aflaaibare argief te pak vir migrasie, 'n agtergrond, of oordragwerk.
 
-## Witwis uitvoer
+## Witwis uitvoer {#exporting-one-site}
 
 Gaan na **Ultimate Multisite > Site Export** en kies **Generate new Site Export**. Kies die subwerf wat jy wil uitvoer, en kies dan of die argief laadevandelaars, plugins en temas moet insluit.
 
 Wanneer die uitvoer voltooi is, laai die ZIP van die **Existing Exports** lys af. Uitvoer ZIP's sluit nou 'n self-boot `index.php` en 'n `readme.txt` in, sodat die argief op 'n nuwe werf opgelaai en begin kan word sonder om eers 'n aparte importer-plugin te installeer.
 
-## Die hele netwerk uitvoer
+## Die hele netwerk uitvoer {#exporting-the-whole-network}
 
 Gebruik **Network Export** op die Site Export bladsy wanneer jy 'n enkele argief benodig wat al die subwerwe in die netwerk bevat. Dit is nuttig voor werfmigrasies, rampherstel-oefeninge, of staging-herbou waar elke subwerf saam moet reis.
 
 Aangesien 'n netwerkuitvoer baie groter kan wees as 'n enkele-witwis-uitvoer, voer dit uit tydens 'n lae-verkeer venster en bevestig dat die teikenopbergruimte genoeg vrye plek het vir laadevandelaars, plugins, temas en gegenereerde ZIP-lêers.
 
-### Netwerk-import-bundels
+### Netwerk-import-bundels {#network-import-bundles}
 
 Vanaf Ultimate Multisite 2.12.0 kan Site Exporter **network import bundles** genereer — gespesialiseerde argiewe wat ontwerp is vir gestroomlyn netwerk-wyd witwisherstel. 'n Netwerk-import-bundel bevat al die nodige lêers en metadata om verskeie werwe na 'n nuwe netwerk-installasie te herstel.
 
-#### Genereer 'n Netwerk-import-bundel
+#### Genereer 'n Netwerk-import-bundel {#generating-a-network-import-bundle}
 
 1. Gaan na **Ultimate Multisite > Site Export**
 2. Klik op **Generate new Network Export**
@@ -32,7 +32,7 @@ Vanaf Ultimate Multisite 2.12.0 kan Site Exporter **network import bundles** gen
 5. Klik op **Generate**
 6. Laai die bundel ZIP van die **Existing Exports** lys af
 
-#### Herstel vanaf 'n Netwerk-import-bundel
+#### Herstel vanaf 'n Netwerk-import-bundel {#restoring-from-a-network-import-bundle}
 
 Om werwe uit 'n netwerk-import-bundel te herstel:
 
@@ -52,7 +52,7 @@ Netwerk-import-bundels bewaar:
 - Media-laadevandelaars (indien ingesluit in die bundel)
 - Aangepaste databasis-tabels en data
 
-## Installeer 'n self-boot uitvoer ZIP
+## Installeer 'n self-boot uitvoer ZIP {#installing-a-self-booting-export-zip}
 
 Om 'n self-boot ZIP op 'n nuwe werf te herstel:
 

@@ -3,11 +3,11 @@ title: Kundfeedback och felrapportering
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Återkoppling och felrapportering från användare
+# Återkoppling och felrapportering från användare {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introducerar ett inbyggt system för återkoppling och felrapportering som låter slutanvändare flagga svar som inte var hjälpsamma och rapportera problem direkt från chattgränssnittet. Detta system inkluderar hantering av samtycke, ett automatiserat rapporteringskommando och AI-assisterad sortering i bakgrunden.
 
-## Tummen ner-knappen
+## Tummen ner-knappen {#thumbs-down-button}
 
 Varje meddelande som skickas av AI-assistenten visar en **tummen ner** (👎)-knapp. När en användare klickar på den kan de markera ett svar som ohjälpsamt eller felaktigt.
 
@@ -15,7 +15,7 @@ Varje meddelande som skickas av AI-assistenten visar en **tummen ner** (👎)-kn
 - Ett klick öppnar **Feedback Consent Modal** (Samtyckesmodalen för återkoppling).
 - Återkopplingen kopplas till konversationsflödet och det specifika meddelandet.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 När en användare klickar på tummen ner-knappen visas en samtyckesmodal innan någon data skickas. Modalens funktion är att:
 
@@ -26,13 +26,13 @@ När en användare klickar på tummen ner-knappen visas en samtyckesmodal innan 
 
 Ingen återkoppling sparas förrän användaren uttryckligen bekräftar.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 I slutet av en konversation kan assistenten visa en **auto-prompt feedback banner** – ett diskret meddelande som frågar om sessionen var hjälpsam.
 
 Denna banner visas automatiskt baserat på konversationslängd och utfallshypoteser. Den länkar till samma återkopplingsflöde som tummen ner-knappen. Användare kan stänga bannern utan att ge återkoppling.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Användare kan trigga återkopplingsflödet direkt genom att skriva `/report-issue` i chattinmatningen. Detta kommando:
 
@@ -42,7 +42,7 @@ Användare kan trigga återkopplingsflödet direkt genom att skriva `/report-iss
 
 Kommandot `/report-issue` är tillgängligt i alla chattlägen (inline, flytande widget, fullskärm).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Inlämnad återkoppling skickas till ett AI-sorteringslager som:
 

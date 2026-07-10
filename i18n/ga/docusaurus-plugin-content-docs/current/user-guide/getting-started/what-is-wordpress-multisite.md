@@ -3,7 +3,7 @@ title: Cad é an WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Cad é WordPress Multisite?
+# Cad é WordPress Multisite? {#what-is-wordpress-multisite}
 
 Intrínce am WordPress, fornece unha característica chamada ‘Multisite’ que remonta ao ano 2010, no lanzamiento do WordPress 3.0. Desde entonces, ha recibido varias revisiões con o fin de introducir novas características e fortalecer a seguridade.
 
@@ -11,7 +11,7 @@ En esencia, un multisite de WordPress pode pensar como isto: Un Universidade man
 
 ##
 
-## Que é exactamente o WordPress Multisite?
+## Que é exactamente o WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite é unha característica do WordPress que permite que múltiples sitios compartan unha única instalación de WordPress. Cando se activa o multisite, o sitio original de WordPress se converte para soportar o que se refíre habitualmente como unha **rede de sitios**.
 
@@ -23,7 +23,7 @@ Este feito é unha das principais ventajas do multisite, pois permite que aument
 
 ##
 
-## Subdomínio ou Subdirectorio?
+## Subdomínio ou Subdirectorio? {#subdomain-or-subdirectory}
 
 Existe hai moitos modos de operar un WordPress multisite – e hai que escoller uno cando converts a tua instalación normal de WordPress en unha instalación multisite:
 
@@ -47,7 +47,7 @@ Amhán na roinnt de chuidéirí bunaithe ar an t-aistriú (subdomain mode) is é
 
 Ag cur iad ar chuid deiríobhacha (subdirectory mode), is é na subsites ar an t-aill bunaithe ar an t-aistriú a bheith ag cur isteach ag searchéinigí mar fáilteanna, rud a ndéanann go bhfuil curtha ceangailte ar aon subsít ag cur isteach ní a bhfeicne ar an chuid SEO de na subsites eile.
 
-## An Super Admin
+## An Super Admin {#the-super-admin}
 
 Leat do chuid iarrachta WordPress a bheith ar aon-aill (single-site) a chur ar fáil liosta níos mó de uirlis agus a chur ar fáil rôl uirlis éasca le roinnt féin.
 
@@ -59,7 +59,7 @@ Ag cur iad ar fáil ar aon-aill WordPress a bhaint as multisite, tá an admin ar
 
 _Note: mar a bhfá, mar atá thuair, a chomhartha é seo leat a bheith ag cur isteach duine ar do netwrk agus a chur i bhfeicim super admin. Is é seo an t-aontáil chontrait leat ar fáil ar fáil ar chuid de chuid netwrk. Mar shampla, is féidir leis na super admins eile até n-aonadh do status super admin, ag iarraidh go bhfuil tú gníomhach in a panel admin do do netwrk. Mar chun cinnte a bheith leat ag fáil control granarúil ar an rud éigin a féidir leat do chuid super admins eile a dhéanamh, táimid add-on a cheart go cur isteach leis, a cheannach Support Agents. Cén fáth a bhfuil an add-on seo ag fáil? Is féidir leat a bheith ag creón duine eile – un agent – le gníomhaíocht atá tú ag iarraidh a dhéanamh ar an netwrk._
 
-## Cad a bhíonn curtha cúpla leat agus cad níl
+## Cad a bhíonn curtha cúpla leat agus cad níl {#what-is-shared-among-subsites-and-what-is-not}
 
 Mar a bhaineann amach, éad an chuid is mó de WordPress multisite go bhfuil sé sin go bhfuil gach subsite ag teilteadh na héifeachtaithe, fáil ar chuid faighneacha, themes, plugins, core files WordPress, etc.
 
@@ -69,7 +69,7 @@ Mar ábhairt, tá rud éigin atá curtha cúpla leat ar fáil ar fáil ar chuid 
 - Tá panel admin idirbhí do chuid subsite agus is féidir leat pluginí nó themes a chloisteáil nó a deabháil an t-aonadh, má bhí siad gníomhach in a netwrk de chuid super admin.
 - Tá daoine talún (database tables) curtha cúpla leat ar fáil ar fáil ar chuid subsite, rud é sin curtha cúpla leat ar fáil ar fáil ar chuid subsite. Is é sin, tá posts, comments, pages, settings, agus eile curtha cúpla leat ar fáil ar fáil ar chuid subsite.
 
-## Cur na húsáilte ar WordPress Multisite
+## Cur na húsáilte ar WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Tá rud beag a bhíonn ag curtha cúpla leat ar fáil ar fáil ar chuid de chuid netwrk: cur na húsáilte. Tá an t-aontaithe úsáidór WordPress ag cur isteach ar fáil ar fáil ar chuid de chuid subsite.
 
@@ -93,7 +93,7 @@ _Note: Tá sé ag cur isteach conas an-chuid éigin a bheith go hiontach ar fái
 
 Nó bhfuil an táirgeur úsáideoirí (user table) gcomhsháthach, ach le túaí subsite admins nó super admin, is féidir iad a chur i bhfeicre agus a glabháil ó chuid subsites, agus is féidir badachtáin úsáideora ag cur isteach agus an t-amháin a glabháil. Is féidir leis sin éastáil rôlú úsáideoirí eile ar subsites eile.
 
-## Cuidiúir foirme (Performance considerations)
+## Cuidiúir foirme (Performance considerations) {#performance-considerations}
 
 Is é WordPress multisite go leor spioradach chun an t-amháin na siti atá is féidir é a chur i bhfeicre. Is féidir é a shonraithe go léir ná [WordPress.com](https://WordPress.com), Edublogs, agus Campuspress, a bhaineann leis an multisite, agus a chomhfaidh sé thús na thuairiscí (hosts) táiteanna ar pholas.
 

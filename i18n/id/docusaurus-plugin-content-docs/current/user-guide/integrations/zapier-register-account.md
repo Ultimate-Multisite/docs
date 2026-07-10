@@ -1,42 +1,40 @@
 ---
-title: Daftarkan Akun melalui Zapier
+title: Daftarkan Account melalui Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Mendaftarkan akun melalui Zapier
+# Peristiwa: Mendaftarkan Account melalui Zapier {#event-register-an-account-via-zapier}
 
-Di artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kita sudah membahas cara menggunakan Zapier untuk melakukan berbagai tindakan di Ultimate Multisite berdasarkan trigger dan event. Di artikel ini, kita akan menunjukkan cara mengintegrasikan aplikasi pihak ketiga. Kita akan menggunakan Google Sheets sebagai sumber data dan mengirim informasinya ke Ultimate Multisite untuk mendaftarkan akun.
+Dalam artikel [Mengintegrasikan Ultimate Multisite dengan Zapier](zapier.md), kita membahas cara menggunakan Zapier untuk melakukan berbagai tindakan di dalam Ultimate Multisite berdasarkan pemicu dan peristiwa. Dalam artikel ini, kami akan menunjukkan bagaimana Anda dapat mengintegrasikan aplikasi pihak ketiga. Kami akan menggunakan Google Sheets sebagai sumber data dan mengirimkan informasi ke Ultimate Multisite untuk mendaftarkan Account.
 
-Pertama, Anda perlu membuat **Google Sheet** di Google Drive Anda. Pastikan setiap kolom diberi nama dengan jelas agar nantinya Anda bisa memetakan data dengan mudah.
+Sebelum menghubungkan Zapier, buka **Ultimate Multisite > Pengaturan > API & Webhooks** dan pastikan API diaktifkan. Salin API Key dan API Secret dari layar ini saat Zapier meminta kredensial Account Ultimate Multisite.
 
-![Google Sheet dengan kolom untuk data pelanggan](/img/admin/webhooks-list.png)Setelah membuat Google Sheet, Anda bisa masuk ke akun Zapier dan mulai membuat zap.
+![Pengaturan API dan Webhooks dengan opsi API Key, API Secret, dan Enable API](/img/admin/settings-api-webhooks.png)
 
-![Dashboard Zapier untuk mulai membuat zap](/img/admin/webhooks-list.png)Di kolom pencarian untuk **"App event"**, pilih **"Google Sheets"**
+Pertama, Anda perlu membuat **Google Sheet** di Google Drive Anda. Pastikan Anda mendefinisikan setiap kolom dengan benar sehingga Anda dapat dengan mudah memetakan data nanti.
 
-![Memilih Google Sheets sebagai app event](/img/admin/webhooks-list.png)
+Setelah membuat Google sheet, Anda dapat masuk ke Account Zapier Anda dan mulai membuat zap.
 
-Kemudian di kolom "**Event**", pilih "**New spreadsheet row**" dan klik "**Continue**"
+Di bawah bidang pencarian untuk **"Peristiwa aplikasi"** pilih **"Google Sheets"**
 
-![Memilih event New spreadsheet row di Zapier](/img/admin/webhooks-list.png)Langkah selanjutnya akan meminta Anda memilih **Google Account** tempat **Google Sheet** disimpan. Pastikan akun Google yang dipilih sudah benar.
 
-![Memilih Google Account untuk Google Sheet](/img/admin/webhooks-list.png)
+Kemudian untuk bidang "**Peristiwa** " pilih "**Baris spreadsheet baru** " dan tekan "**Lanjutkan** "
 
-Di bagian **"Set up trigger"**, Anda perlu memilih dan menentukan spreadsheet serta worksheet Google yang akan digunakan sebagai sumber data. Silakan isi kolom-kolom tersebut dan klik "**Continue**"
+Langkah berikutnya akan meminta Anda memilih **Google Account** tempat **Google Sheet** disimpan. Jadi pastikan Account google yang benar telah ditentukan.
 
-![Set up trigger dengan pilihan spreadsheet dan worksheet](/img/admin/webhooks-list.png)Selanjutnya adalah "**test your trigger**" untuk memastikan Google Sheet Anda terhubung dengan benar.
 
-![Langkah test your trigger di Zapier](/img/admin/webhooks-list.png)Jika pengujian berhasil, Anda akan melihat hasil yang menampilkan beberapa nilai dari spreadsheet Anda. Klik "**Continue**" untuk melanjutkan.
+Di bawah **"Siapkan pemicu** ", Anda perlu memilih dan menentukan google spreadsheet dan worksheet yang akan Anda gunakan sebagai sumber data. Silakan isi semuanya dan tekan "**Lanjutkan** "
 
-![Pengujian trigger berhasil menampilkan nilai spreadsheet](/img/admin/webhooks-list.png)Langkah berikutnya adalah menyiapkan action kedua yang akan membuat atau mendaftarkan akun di Ultimate Multisite. Di kolom pencarian, pilih "**Ultimate Multisite(2.0.2)**"
+Berikutnya adalah "**uji pemicu Anda** " untuk memastikan google sheet Anda terhubung dengan benar.
 
-![Memilih Ultimate Multisite sebagai action app](/img/admin/webhooks-list.png)
+Jika pengujian Anda berhasil, Anda akan melihat hasil yang menampilkan beberapa nilai dari spreadsheet Anda. Klik "**Lanjutkan** " untuk melanjutkan.
 
-Di kolom "**Event**", pilih "**Register an Account in Ultimate Multisite**" lalu klik tombol "**Continue**".
+Langkah berikutnya adalah menyiapkan tindakan kedua yang akan membuat atau mendaftarkan Account di Ultimate Multisite. Pada bidang pencarian pilih "**Ultimate Multisite(2.0.2)** "
 
-![Action event Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)Di bagian "**Set up an action**", Anda akan melihat berbagai kolom yang tersedia untuk data pelanggan, membership, produk, dan lainnya. Anda bisa memetakan nilai dari Google Sheet dan menempatkannya di kolom yang sesuai seperti yang ditunjukkan pada screenshot di bawah ini.
 
-![Memetakan nilai Google Sheet ke kolom Ultimate Multisite](/img/admin/webhooks-list.png)
+Di bawah bidang "**Peristiwa** ", pilih "**Daftarkan Account di Ultimate Multisite** " lalu klik tombol "**Lanjutkan** ".
 
-Setelah memetakan nilai-nilainya, Anda bisa menguji action tersebut.
+Di bawah "**Siapkan tindakan** ", Anda akan melihat berbagai bidang yang tersedia untuk data pelanggan, keanggotaan, produk, dll. Anda dapat memetakan nilai di bawah google sheet Anda dan menetapkannya ke bidang yang tepat tempat nilai tersebut harus diisi seperti yang ditunjukkan pada tangkapan layar di bawah ini.
 
-![Menguji action register account di Zapier](/img/admin/webhooks-list.png)
+
+Setelah memetakan nilai, Anda dapat menguji tindakan.

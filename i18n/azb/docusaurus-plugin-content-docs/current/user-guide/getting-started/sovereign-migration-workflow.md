@@ -3,11 +3,11 @@ title: Azb Migrasi İş Akışı
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini sovereign kiracı altyapısına taşımak için geçiş doğrulama kapıları ekledi.
 
-## Başlamadan Önce
+## Başlamadan Önce {#before-you-start}
 
 Şunların olduğundan emin olun:
 
@@ -17,7 +17,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini sovereign kira
 - Ağ için hedef ortamla eşleşen bir veritabanı sunucu bağlaması (binding).
 - Ağ için WP-CLI komutlarını çalıştırma erişimi.
 
-## Önerilen İş Akışı
+## Önerilen İş Akışı {#recommended-workflow}
 
 1. Hedef kiracı veritabanını ve dosya sistemini hazırla.
 2. Kiracı izolasyon ayarlarını kaydet veya güncelle.
@@ -28,7 +28,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini sovereign kira
 7. SSO ile kiracıya git.
 8. Doğrulama başarılı olduktan sonra DNS'i veya yönlendirmeyi değiştir.
 
-## Doğrulama Kapıları
+## Doğrulama Kapıları {#verification-gates}
 
 Doğrulama iş akışı geçişi birkaç açıdan kontrol eder:
 
@@ -40,6 +40,6 @@ Doğrulama iş akışı geçişi birkaç açıdan kontrol eder:
 
 Doğrulama hatalarını lansman öncesi engel olarak gör. Bildirilen veritabanı, kullanıcı, kuyruk veya yönlendirme sorununu düzelt, ardından kiracıyı müşterilere açmadan tekrar doğrulama yap.
 
-## İlk Üretim Ziyareti
+## İlk Üretim Ziyareti {#first-production-visit}
 
 Doğrulama başarılı olduktan sonra, ilk yönetici ziyareti için site yönetim ekranından **Ziyaret Et (SSO)** özelliğini kullan. Bu, kiracı yönlendirmesini, SSO token işlemlerini, kaynak sabitlemeyi ve kiracı tarafı kullanıcı sağlama işlemini tek bir kontrollü adımda doğrular.

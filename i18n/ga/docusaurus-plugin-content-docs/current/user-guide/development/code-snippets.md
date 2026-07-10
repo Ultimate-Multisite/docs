@@ -3,7 +3,7 @@ title: Cúpla Clios Code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets para v2
+# Code Snippets para v2 {#code-snippets-for-v2}
 
 An gcuid code snippets ar used chun eol chuid áiteann atá fáil ag cur isteach, a bhphiú mar atá ag iarraidh plugin eile a bheith ar fáil. Is gcinneann code snippets a chur iad sa chuid core WordPress nó an t-theme (goinnte functions.php dearg), nó is féidir a úsáid mar MU plugin.
 
@@ -15,7 +15,7 @@ Agus seo, beidh mé a chur chun cinn trí chuid code snippets a bhí ag cur iste
 
   * [**An t-amhasadh CORS issues le Font-Icons i ddomáina a bhfáthaithe**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Changadh an áit ar an meán Account menu item
+## Changadh an áit ar an meán Account menu item {#changing-the-position-of-the-account-menu-item}
 
 Leat a bheith ag cur isteach an áit ar an meán Account menu item ar Dashboard na chliant, anseo, cur an t-amhasadh code seo i functions.php dearg an theme bunaithe dearg do site bunaithe. Is féidir leat hefyd a chur an t-amhasadh snippet seo sa chuid mu-plugins nó plugin custom.
 
@@ -37,8 +37,8 @@ Is é an t-amásán: is féidir leis na chuid a bheith ag cur chun cinn ar **Pla
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Cuimhneachais CORS le Font-Icons i domáin a chomhtháirta
-## Cuimhneachais CORS le Font-Icons i domáin a chomhtháirta
+## Cuimhneachais CORS le Font-Icons i domáin a chomhtháirta {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Cuimhneachais CORS le Font-Icons i domáin a chomhtháirta {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Tar comhtháir an domáin ar scroinn, is féidir leat a bheith ag iarraidh go bhfuil an scroinn ag cur isteach font chúac. Is é sin ag cur isteach bloc cross-origin ar do chuid rathúil.
 
@@ -46,13 +46,13 @@ Mar go bhfuil na fáil fonta ag cur isteach go dtí CSS de dhuit, ní féidir le
 
 An seo a chomh tábhachtach é an tairiscintí code seo chun an t-éifeadúcth a cheartadh le Apache agus NGINX. Is gcurraíonn an thabhairtanna seo do chuid fada chuid eolais ar na cur síosail oifigréid (na .htaccess files agus na config files de NGINX). Má tá tú gan fáil samhla leis an t-éifeadúcth a dhéanamh go dtí, cúise an cur síosail seo do chuid agents support an chéad a bhfaidh tú le cabhrú.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Ar do .htaccess file, add an seo:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Ar do config file de server (an t-amhlaigh cur síosail seo ó server go server), add an seo:
 

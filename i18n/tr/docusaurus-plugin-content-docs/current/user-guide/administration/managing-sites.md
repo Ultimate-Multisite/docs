@@ -3,7 +3,7 @@ title: Siteleri Yönetme
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Siteleri Yönetme
+# Siteleri Yönetme {#managing-sites}
 
 Siteler (veya alt siteler), WaaS işinizin temelini oluşturur. Ultimate Multisite'ta 3 tür site bulunur:
 
@@ -11,13 +11,13 @@ Siteler (veya alt siteler), WaaS işinizin temelini oluşturur. Ultimate Multisi
 - **Site Şablonları** — Müşterilerin başlangıç noktası olarak seçebileceği önceden tanımlanmış siteler
 - **Ana Site** — Birincil ağ siteniz
 
-## Siteleri Görüntüleme
+## Siteleri Görüntüleme {#viewing-sites}
 
 Ağınızdaki tüm alt siteleri görmek için **Ultimate Multisite → Sites** bölümüne gidin. Her site türüne göre etiketlenmiştir ve Tüm Siteler, Müşteriye Ait, Şablonlar veya Beklemede seçeneklerine göre filtreleme yapabilirsiniz.
 
 ![Site listesi sayfası](/img/admin/sites-list.png)
 
-## Yeni Site Ekleme
+## Yeni Site Ekleme {#adding-a-new-site}
 
 Yeni bir site oluşturmak için **Add Site** düğmesine tıklayın. Şu bilgileri girmeniz gerekecek:
 
@@ -27,15 +27,15 @@ Yeni bir site oluşturmak için **Add Site** düğmesine tıklayın. Şu bilgile
 
 **Copy Site** seçeneği, mevcut bir site şablonuna dayalı yeni bir site oluşturmanızı sağlar. Bu seçenek etkinleştirildiğinde, başlangıç noktası olarak hangi şablonu kullanacağınızı seçebilirsiniz. Medya dosyalarını da dahil etmek için **Copy Media on Duplication** seçeneğinin etkin olduğundan emin olun.
 
-## Mevcut Bir Siteyi Yönetme
+## Mevcut Bir Siteyi Yönetme {#managing-an-existing-site}
 
 Herhangi bir sitede **Manage** düğmesine tıklayarak **Edit Site** sayfasını açın. Burada şunları bulacaksınız:
 
-### Temel Bilgiler
+### Temel Bilgiler {#basic-information}
 
 Site adı, türü, site kimliği ve açıklaması. Ayrıca eşlenmiş alan adını, ilişkili üyeliği ve siteye sahip olan müşteri hesabını da göreceksiniz.
 
-### Site Seçenekleri
+### Site Seçenekleri {#site-options}
 
 Sitenin özelliklerini ve limitlerini yapılandırın:
 
@@ -47,7 +47,7 @@ Sitenin özelliklerini ve limitlerini yapılandırın:
 
 Varsayılan olarak siteler, üyelik seviyesinde belirlenen limitleri takip eder. Site seviyesinde limit belirlemek, üyelik ayarlarını geçersiz kılar.
 
-### İlişkilendirmeler
+### İlişkilendirmeler {#associations}
 
 Site seçeneklerinin altında şu bilgileri bulacaksınız:
 
@@ -55,7 +55,7 @@ Site seçeneklerinin altında şu bilgileri bulacaksınız:
 - Sitenin bağlı olduğu **üyelik**
 - Siteyle bağlantılı **müşteri hesabı**
 
-### Sağ Kenar Çubuğu
+### Sağ Kenar Çubuğu {#right-sidebar}
 
 Sağ tarafta şunları yapabilirsiniz:
 

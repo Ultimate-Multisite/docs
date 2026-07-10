@@ -1,154 +1,156 @@
 ---
-title: Innviðing á skráningarskjumnum þínum
+title: Að sérsníða skráningareyðublaðið þitt
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Innstilla þig í skráningarsíðu
+# Sérsníða skráningareyðublaðið þitt {#customizing-your-registration-form}
 
-Til að gera netverk þitt einstakt frá öllum öðrum SaaS sem eru byggð á WordPress, leysir Ultimate Multisite þér möguleika á að breyta skráningarsíðunni og innri síðuna með eigin **Checkout Forms** eiginleika.
+Til að láta netið þitt líta einstakt út miðað við öll önnur SaaS sem byggð eru á WordPress-vettvanginum, gerir Ultimate Multisite þér kleift að sérsníða skráningar- og innskráningarsíðurnar þínar með **Checkout Forms** eiginleikanum okkar.
 
-Þótt þær séu einfald og hlutverk til að prófa mikið við mörgu tengingu þegar þú reynir að breyta nýjum viðskiptavinum, eru þær að hlutgað til að skapa persónulega skráningarsíður. Þessi grein hefur tilgangi að sýna þér hvernig þú getur þetta gerð.
+Þótt þau séu auðveld og sveigjanleg leið til að prófa mismunandi nálganir þegar reynt er að breyta nýjum viðskiptavinum, eru þau aðallega notuð til að búa til persónusniðin skráningareyðublöð. Þessi grein miðar að því að sýna þér hvernig þú getur gert það.
 
-## Innri og skráningarsíður:
+## Innskráningar- og skráningarsíður: {#login-and-registration-pages}
 
-Þegar þú notar Ultimate Multisite, skapar það sjálft sér persónuleða innri og skráningarsíður á hlutina þín. Þú getur breytt þessar vinnuferli einafni með því að ferðast í **Ultimate Multisite > Settings > Login & Registration** síðuna.
+Við uppsetningu Ultimate Multisite býr það sjálfkrafa til sérsniðnar innskráningar- og skráningarsíður á aðalvefnum þínum. Þú getur breytt þessum sjálfgefnu síðum hvenær sem er með því að fara á **Ultimate Multisite > Settings > Login & Registration** síðuna þína.
 
-![Skráningarsíða settir](/img/config/settings-general.png)
+![Stillingasíða innskráningar og skráningar](/img/config/settings-general.png)
 
-Hér er fullt sýn á settum innri og skráningarsíðunni:
+Hér er heildarsýn af stillingasíðu innskráningar og skráningar:
 
-![Full síða settir innri og skráningarsíðunni](/img/config/settings-login-registration-full.png)
+![Heildarsíða stillinga innskráningar og skráningar](/img/config/settings-login-registration-full.png)
 
-Látum okkur skoða hverja valkost í **Login & Registration** síðunni sem þú getur breytt:
+Skoðum hvern valkost sem þú getur sérsniðið á **Login & Registration** síðunni:
 
-  * **Enable registration (Skráning):** Þetta valkostur mun leyfa eða neita skráning á netverk þínu. Ef það er slått af, gæti ekki viðskiptavinir þín skráð sig og tekið þá þá þínum vörum.
+  * **Virkja skráningu:** Þessi valkostur virkjar eða óvirkjar skráningu á netinu þínu. Ef slökkt er á honum geta viðskiptavinir þínir ekki skráð sig og gerst áskrifendur að vörunum þínum.
 
-  * **Enable email verification (Skráning með tölvupósti):** Ef þetta valkostur er slått á, munu viðskiptavinir sem tekja þá frekari plan eða betalsplan með prófanir fá tölvupóst til staðar og verða að klikka á staðsetningu til að skrá sínum vörfum.
+  * **Virkja staðfestingu tölvupósts:** Ef kveikt er á þessum valkosti fá viðskiptavinir sem gerast áskrifendur að ókeypis áskriftarleið eða greiddri áskriftarleið með prufutímabili staðfestingartölvupóst og þurfa að smella á staðfestingartengilinn til að vefsvæðin þeirra verði búin til.
 
-* **Standard enskráningasíða (Default registration page):** Þetta er standardíð fyrir enskráningu. Þessi síða þarf að vera upplýst á netasíðuna þinni og hafa enskráningarskjali (sem er kennt sem checkout form) - þar sem viðskiptavinir þín eru að teikna sig inn í vörum þínum. Þú getur skráð þér með hversu mikið enskráningasíða og checkout forms þú vilja, en hugsa það: þú verður að setja shortcode fyrir checkout forminn á enskráningarsíðuna, annars mun hann ekki sýnast.
+  * **Sjálfgefin skráningarsíða:** Þetta er sjálfgefna síðan fyrir skráningu. Þessi síða þarf að vera birt á vefsvæðinu þínu og hafa skráningareyðublað (einnig þekkt sem checkout form) - þar sem viðskiptavinir þínir gerast áskrifendur að vörunum þínum. Þú getur búið til eins margar skráningarsíður og checkout forms og þú vilt, mundu bara að setja shortcode fyrir checkout form á skráningarsíðuna, annars birtist það ekki.
 
-* **Notkun sérsniðnu innskráningarsíðu (Use custom login page):** Þessi valkostur leyfir þér að nota sérsniðnu innskráningarsíða, sem er annar en standardíðina wp-login.php. Ef þetta valkostur er á hlutinn "on", geturðu velja hvern síðu sem skal nota í innskráningu á valkostnum **Standard innskráningasíða** (nánast undir).
+  * **Nota sérsniðna innskráningarsíðu:** Þessi valkostur gerir þér kleift að nota sérsniðna innskráningarsíðu, aðra en sjálfgefnu wp-login.php síðuna. Ef kveikt er á þessum valkosti geturðu valið hvaða síða verður notuð fyrir innskráningu í **Default login page** valkostinum (beint fyrir neðan).
 
-* **Hýra upprunalega innskráningarsíðuna (Obfuscate the original login url (wp-login.php))**: Ef þú vilt hýra upprunalega innskráningarsíðuna, geturðu velja þetta valkostur á "on". Þetta er gagnlegt til að koma í veg fyrir brute-force áhættu. Ef þessi valkostur er á "on", mun Ultimate Multisite sýna 404 villu þegar notari reynir að hleðja upprunalega wp-login.php linkinn.
+  * **Dylja upprunalegu innskráningarslóðina (wp-login.php)** : Ef þú vilt fela upprunalegu innskráningar-URL geturðu kveikt á þessum valkosti. Þetta er gagnlegt til að koma í veg fyrir brute-force árásir. Ef þessi valkostur er virkjaður mun Ultimate Multisite birta 404 villu þegar notandi reynir að opna upprunalega wp-login.php tengilinn
 
-* **Forna samkvæmt síðaupplýsingum (Force synchronous site publication)**: Í eftir því sem viðskiptavinur teiknar sig inn í vöru á netverk, þarf nýr undirbúið síti að breytast í verkelegt netverkssíti. Lausnaraferðin fer með Job Queue, asynkrónlega. Skilið þetta valkostur til að forna upplýsinguna til að hleðja upp á sama skipti sem enskráningin er starfð.
+  * **Þvinga samstillta birtingu vefsvæðis:** Eftir að viðskiptavinur gerist áskrifandi að vöru á neti þarf að breyta nýja vefsvæðinu í bið í raunverulegt netvefsvæði. Birtingarferlið gerist í gegnum Job Queue, ósamstillt. Virkjaðu þennan valkost til að þvinga birtinguna til að gerast í sömu beiðni og skráningin.
 
-En nú sjáum okkur andre valkostum sem eru enn mjög mikilvæg fyrir innskráningu og enskráningartilboð: Þau eru undir **Örvefni** á sama síðu Innskráningu og enskráningarsíða:
+Nú skulum við skoða aðra valkosti sem tengjast enn innskráningar- og skráningarferlinu. Þeir eru beint fyrir neðan **Other options** á sömu Login & registration síðu:
 
-* **Standard hlutverk (Default role):** Þetta er hlutverki sem viðskiptavinir þín munu hafa á síðunni sínum eftir að enskráningaraferðin hefur verið starfð.
+  * **Sjálfgefið hlutverk:** Þetta er hlutverkið sem viðskiptavinir þínir munu hafa á vefsvæðinu sínu eftir skráningarferlið.
 
-* **Aktiva Jumper:** Aktivar þetta ger Jumper shortcutinn í administrasjónuna að gildi. Jumper leyfir administratorum að spjalla raskt til skrána fyrir Ultimate Multisite, netverkstafna og övrantar stöðuvar, án þess að þurfa ferðast á hverjum menulinum. Skipti það af í gegnum ef þú vilt hýða þetta hraða nákvæmandi verkfæri frá administrasjónunni.
+  * **Virkja Jumper:** Virkjar Jumper flýtileiðina á stjórnandasvæðinu. Jumper gerir stjórnendum kleift að hoppa hratt á Ultimate Multisite skjái, nethluti og aðra studda áfangastaði án þess að fletta í gegnum hverja valmynd. Slökktu á því ef þú vilt frekar fela þetta hraðleiðsagnartól úr stjórnandaviðmótinu.
 
-  * **Blaði við notendur í hlutina að hópnum:** Aktivað þessi valmið mun einnig bæta notandann við hvatninguna fyrir hópinn á hvíli sínu netverk eftir að skráningin er starfð. Ef þú aktivarð þetta valmið, mun valkostur til að setja **default role** þessar notendur á vefsíðunni þinni sýna sér strax undir.
+  * **Bæta notendum einnig við aðalvefinn:** Með því að virkja þennan valkost verður notandanum einnig bætt við aðalvef netsins þíns eftir skráningarferlið. Ef þú virkjar þennan valkost birtist einnig valkostur til að stilla **sjálfgefið hlutverk** þessara notenda á vefsvæðinu þínu beint fyrir neðan.
 
-  * **Aktiva fleiri reikninga:** Leita fyrir notendum að hafa reikninga í öllum hlutum netverkinn með sama tölvupóstfanni. Ef þetta valkostur er afskipti, gæti ekki viðskiptavinir þín skapað reikning á övrum vefsíðunum sem renna á netverkinn þínum með sama tölvupóstfanni.
+  * **Virkja marga reikninga:** Leyfðu notendum að hafa reikninga á mismunandi vefsvæðum netsins þíns með sama netfangi. Ef slökkt er á þessum valkosti geta viðskiptavinir þínir ekki búið til reikning á öðrum vefsvæðum sem keyra á netinu þínu með sama netfangi.
 
-Og það eru þessar allar valkostir sem tengjast inniheldingu og skráningu sem þú getur breytt! Hugsi ekki að spara settum þínum eftir að þú ert farnið í breytinguna.
+Og þetta eru allir valkostirnir sem tengjast innskráningu og skráningu sem þú getur sérsniðið! Ekki gleyma að vista stillingarnar þínar þegar þú hefur lokið við að breyta þeim.
 
-## Notkun fleiri skráningartífa:
+## Nota mörg skráningareyðublöð: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 býður upp á efni fyrir bráðskipti (checkout form editor) sem leyfir þér að skapa hvaða fjölda tífa sem þú vilt, með öllum skilaboðum og vörum sem eru til við salg, osbn.
+Ultimate Multisite 2.0 býður upp á ritil fyrir checkout form sem gerir þér kleift að búa til eins mörg eyðublöð og þú vilt, með mismunandi reitum, vörum í boði o.s.frv.
 
-Báta inniheldingu og skráningarsíðu eru innbyggðar með shortcodes: **[wu_login_form]** á skráningarsíðuna og **[wu_checkout]** fyrir skráningarsíðuna. Þú getur vafinn further breytt skráningarsíðuna með því að byggja eða skapa bráðskipti tífa (checkout forms).
+Bæði innskráningar- og skráningarsíðurnar eru felldar inn með shortcodes: **[wu_login_form]** á innskráningarsíðunni og**[wu_checkout]** fyrir skráningarsíðuna. Þú getur sérsniðið skráningarsíðuna frekar með því að byggja eða búa til checkout forms.
 
-Til að komast í þennan eiginleika, ferst til menulinum **Checkout Forms** á vinstri hítli.
+Til að fá aðgang að þessum eiginleika skaltu fara í **Checkout Forms** valmyndina, á vinstri hliðarstikunni.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms valmynd í hliðarstikunni](/img/config/checkout-forms-list.png)
 
-Á þessum síðu geturð að sjá allar bráðskipti tífa sem þú hefur.
+Á þessari síðu geturðu séð öll checkout forms sem þú átt.
 
-Ef þú vilt skapa nýtt, bara klikka á **Add Checkout Form** uppstofa á síðuna.
+Ef þú vilt búa til nýtt skaltu einfaldlega smella á **Add Checkout Form** efst á síðunni.
 
-Þú getur velja eina af þessum þrem mögulegum aðferðum sem byrjun: single step (einnstigi), multi-step (fleiri stig) eða blank (eng). Þar eftir, klikka á **Go to the Editor** (Gangi í vísarbandann).
+Þú getur valið einn af þessum þremur valkostum sem upphafspunkt: eitt skref, mörg skref eða autt. Smelltu síðan á **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Bæta við Checkout Form með valkostunum eitt skref, mörg skref eða autt](/img/config/checkout-forms-list.png)
 
-Einnig geturðu breytt eða upplýst formin sem þú hefur að búa á með því að klikka á möguleikana undir nafni þeirra. Þar finnurðu persónustöðvar til að kopya shortcode formans eða til að slette formann.
+Að öðrum kosti geturðu breytt eða afritað eyðublöðin sem þú ert þegar með með því að smella á valkostina fyrir neðan nafn þeirra. Þar finnurðu einnig valkostina til að afrita shortcode eyðublaðsins eða eyða eyðublaðinu.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Aðgerðir þegar sveimað er yfir checkout form, með breyta, afrita og eyða](/img/config/checkout-form-hover-actions.png)
 
-Ef þú velur single step (einnstigi) eða multi-step (fleiri stig), er checkout forminn jákvæð með grunnstígum sem þarf til að hann verki. Þar eftir, ef þú vilt, geturðu bætt við extra stigi í honum.
+Ef þú velur eitt skref eða mörg skref verður checkout form nú þegar forútfyllt með grunnskrefunum sem þarf til að það virki. Síðan, ef þú vilt, geturðu bætt við aukaskrefum.
 
-### Breytt checkout form:
+### Breyta Checkout Form: {#editing-a-checkout-form}
 
-Eins og við nefndum áður, geturðu skapa checkout forms fyrir ólíkt lehli. Í þessum dæmi verður við að breyttum um skráningarskjali (registration form).
+Eins og við nefndum áður geturðu búið til checkout forms í mismunandi tilgangi. Í þessu dæmi munum við vinna með skráningareyðublað.
 
-Á meðan þú ferst í editor checkout formans, gefðu formi nafn (sem notarð til innri vísunar) og slug (sem notarð til að skapa shortcakes, t.d.).
+Eftir að hafa farið í ritil checkout form skaltu gefa eyðublaðinu þínu nafn (sem verður aðeins notað til innri tilvísunar) og slug (notað til að búa til shortcodes, til dæmis).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Ritill fyrir greiðsluform með reitum fyrir nafn og slug](/img/config/checkout-form-name-slug.png)
 
-Forms eru sett saman af stígum og felta (fields). Þú getur bætt nýjum stigum í við með því að klikka á **Add New Checkout Step** (Bæta nýjan checkout step).
+Form eru gerð úr skrefum og reitum. Þú getur bætt við nýju skrefi með því að smella á **Bæta við nýju skrefi í greiðsluferli**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Hnappur til að bæta við nýju skrefi í greiðsluferli](/img/config/checkout-form-add-step.png)
 
-Á fyrra tabinn í modal window, fylli inn innihaldi stigs formans þíns. Gefðu þessum ID, nafn og skýring (description). Þessi hlutir eru aðeins notað innri vísunar.
+Á fyrsta flipa sprettigluggans skaltu fylla út efni skrefsins í forminu þínu. Gefðu því ID, nafn og lýsingu. Þessir hlutir eru að mestu notaðir innanhúss.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Efnisflipi skrefs í greiðsluformi með ID, nafni og lýsingu](/img/config/checkout-form-step-content.png)
 
-Næst, setðu sýnarlög stigsins. Þú getur veldur milli **Always show** (Sjá alltaf), **Only show for logged in users** (Sjá aðeins fyrir skráðar notendur) eða **Only show for guests** (Sjá aðeins fyrir gjestar).
+Næst skaltu stilla sýnileika skrefsins. Þú getur valið á milli **Sýna alltaf** , **Sýna aðeins fyrir innskráða notendur** eða **Sýna aðeins fyrir gesti**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Sýnileikavalkostir skrefs í greiðsluformi](/img/config/checkout-form-step-visibility.png)
 
-Lokaðu að setja stigi-stíl. Þetta eru valfræðar feldi.
+Að lokum skaltu stilla útlit skrefsins. Þessir reitir eru valfrjálsir.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Stillingar fyrir útlit skrefs í greiðsluformi](/img/config/checkout-form-step-style.png)
 
-En þá er komið að bæta feldi í fyrsta stigum okkar. Klikka bara á **Add New Field** (Bæta nýtt feld) og veldu hvern eiginleika fyrir hluta sem þú vilt.
+Nú er kominn tími til að bæta reitum við fyrsta skrefið okkar. Smelltu einfaldlega á **Bæta við nýjum reit** og veldu þá tegund hluta sem þú vilt.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Hnappur til að bæta við nýjum reit](/img/config/checkout-form-add-field-button.png)![Fellivalmynd fyrir val á reitategund](/img/config/checkout-form-field-type-dropdown.png)
 
-Hvert feldi hefur annarra þáttana sem þarf að fylla út. Til þessum fyrstu innleiðingu veljum við **Username** (Notkunannafn) feldið.
+Hver reitur hefur mismunandi færibreytur sem þarf að fylla út. Fyrir þessa fyrstu færslu veljum við **Notandanafn**-reitinn.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Stillingar fyrir Notandanafn-reit](/img/config/checkout-form-username-content.png)![Færibreytur Notandanafn-reits](/img/config/checkout-form-username-visibility.png)![Viðbótarstillingar fyrir Notandanafn-reit](/img/config/checkout-form-username-style.png)
 
-Þú getur lagt í þá fjölda stigi og feldi sem þér þarf. Til að sýna vörumerðina þína fyrir viðskiptavili til að velja eitthva, nota **Pricing Table** (Verðlisti) feldið. Ef þú vilt leita þínum viðskiptavinum í skrefvalknir, bætu í **Template Selection** (Val á skammtstíl) feldið og svo framferð.
+Þú getur bætt við eins mörgum skrefum og reitum og þú þarft. Til að birta vörurnar þínar svo viðskiptavinir geti valið eina skaltu nota Verðtöflu-reitinn. Ef þú vilt leyfa viðskiptavinum þínum að velja sniðmát skaltu bæta við Sniðmátsvals-reitnum. Og svo framvegis.
 
-_**Athugi:** Ef þú tengst vöru eftir að þú hefur skráð ferlið fyrir viðskiptavinum, þurfa þú að bæta vöruna í hluta **Pricing Table**. Ef þú hefur ekki bætt hana í, mun vöruna ekki sýna sér fyrir viðskiptavili á skráningasíðunni._
+![Ritill fyrir greiðsluform með reit fyrir val á sniðmáti](/img/config/checkout-form-with-template-field.png)
 
-_**Athugi 2:** username (notkunannafn), email (tölvupóstur), password (lösenord), site title (steypna námskeiðsnafni), site URL (námskeiðsvefsstaður), order summary (samantekt á bestelli), payment (greiðsla) og submit button (skilja knappinn) eru nauðsynleg feldi til að skapa ferli fyrir viðskiptavinum._
+_**Athugið:** Ef þú býrð til vöru eftir að þú hefur búið til greiðsluformið þitt þarftu að bæta vörunni við í Verðtöflu-hlutanum. Ef þú bætir henni ekki við mun varan ekki birtast viðskiptavinum þínum á skráningarsíðunni._
 
-Þegar þú ert að vinnu á ferli fyrir viðskiptavinum, geturð alltaf nota **Preview** (Fyrirspat) knappa til að sjá hvernig viðskiptavinir sjá ferlið. Þú getur einnig skipt í sýningu sem núverandi notandinn eða gjurfélagi.
+_**Athugið 2:** notandanafn, netfang, lykilorð, heiti síðu, URL síðu, pöntunaryfirlit, greiðsla og senda-hnappur eru skyldureitir til að búa til greiðsluform._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Á meðan þú vinnur í greiðsluforminu þínu geturðu alltaf notað Forskoða-hnappinn til að sjá hvernig viðskiptavinir þínir munu sjá formið. Þú getur líka skipt á milli þess að skoða sem núverandi notandi eða gestur.
 
-Loptuð, í **Advanced Options** geturðu stilla textann fyrir **Thank You** síðuna, bæta sniðum til að fylgjast með konversjunum (conversions), bæta sérstök CSS í skilaboðinn á greðslustafnum þínum eða hætta við formann til sérstökna lands.
+![Forskoða-hnappur í ritli greiðsluforms](/img/config/checkout-form-preview-button.png)![Forskoðun greiðsluforms sem gestur eða núverandi notandi](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Að lokum, í **Ítarlegir valkostir** geturðu stillt skilaboðin fyrir **Þakka þér**-síðuna, bætt við kóðabútum til að rekja viðskipti, bætt sérsniðnu CSS við greiðsluformið þitt eða takmarkað það við ákveðin lönd.
 
-Þú getur einnig mannvætt sett upp eða slá úr því sett upp greðslustafninn með því að skipta þessum valkostningi á hreyfistjörnu í höfrüfn, eða sýna formann sem er litið af.
+![Ítarlegir valkostir með Þakka þér-síðu, viðskiptarakningu og sérsniðnu CSS](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Þú getur einnig virkjað eða afvirkjað greiðsluformið þitt handvirkt með því að víxla þessum valkosti í hægri dálkinum, eða eytt forminu varanlega.
 
-Gleymdu ekki að hafa hugsað til að hefja greðslustafninn þinn!
+![Virknirofi og eyðingarvalkostur fyrir greiðsluform](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Ekki gleyma að vista greiðsluformið þitt!
 
-Til að fá kortlið þess þíns formans, klikka á **Generate Shortcode** og kopla úr niðurstöðuna sem sýnist í modalu glugga.
+![Vista greiðsluform-hnappur](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Til að fá shortcode formsins þíns skaltu smella á **Búa til Shortcode** og afrita niðurstöðuna sem birtist í sprettiglugganum.
 
-_**Athugi:** Þú þarft að bæta þessum kortliði í skráningasíðuna þína til að bæta þessum greðslustafn með því._
+![Búa til Shortcode-sprettigluggi með shortcode til að afrita](/img/config/checkout-form-editor.png)
 
-## Forbestilling hugtaka og mallar með URL-parametrimum:
+_**Athugið:** Þú þarft að bæta þessu shortcode við skráningarsíðuna þína til að bæta þessu greiðsluformi við hana._
 
-Ef þú vilt skapa sérsniðna príslisti fyrir hugtakið þitt og forbestilla á greðslustafnið eða mallann sem viðskiptavinurinn velur úr príslistanum eða mallar sínu, geturðu nota URL-parametrimum til þess.
+## Forval á vörum og sniðmátum með URL-færibreytum: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Fyrir plan:**
+Ef þú vilt búa til sérsniðnar verðtöflur fyrir vörurnar þínar og forvelja í greiðsluforminu þá vöru eða það sniðmát sem viðskiptavinurinn velur af verðtöflunni þinni eða sniðmátasíðunni, geturðu notað URL-færibreytur fyrir þetta.
 
-Gangi í **Ultimate Multisite > Products > Select a plan**. Þar þarftu að sjá knappa sem heitið **Click to copy Shareable Link** uppstofa á toppum síðunnar. Þetta er linkurinn sem þú getur notað til forbestilling þess sérstaka plans á greðslustafni þínum.
+### **Fyrir áskriftarleiðir:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Farðu í **Ultimate Multisite > Vörur > Veldu áskriftarleið**. Þú ættir að sjá **Smelltu til að afrita deilanlegan hlekk**-hnappinn efst á síðunni. Þetta er hlekkurinn sem þú getur notað til að forvelja þessa tilteknu áskriftarleið í greiðsluforminu þínu.
 
-Merkurið er aðeins viðeigandi fyrir **Plans**. Þú getur ekki notað shareable links fyrir pakka eða þjónustu.
+![Vörusíða með hnappi fyrir deilanlegan hlekk](/img/config/products-list.png)
 
-### Til skipti með temblitum (templates):
+Athugaðu að þessi deilanlegi hlekkur gildir aðeins fyrir **Áskriftarleiðir**. Þú getur ekki notað deilanlega hlekki fyrir pakka eða þjónustur.
 
-Ef þú vilt framkvæmt ákveðna síti-temblita á skjama kaupumanna í formi, geturðu notað parametrinn: **?template_id=X** á URL-inni yfirmskyrslu þín. "X" þarf að skipta fyrir **ID-númer temblitsins**. Til að fá þennan númerið, ferðu í **Ultimate Multisite > Sites**.
+### Fyrir sniðmát: {#for-templates}
 
-Klikkaðu á **Manage** (Styring) undir síti-tembliti sem þú vilt nota. Þar sjáðu SITE ID númer. Notaðu bara þetta númer fyrir þennan sérstaka síti-tembli til að það sé framkvæmt á skjama kaupumanna þínum. Í okkar tilfelli mun URL-parametrinn verið **?template_id=2**.
+Ef þú vilt forvelja síðusniðmát í greiðsluforminu þínu geturðu notað færibreytuna: **?template_id=X** á URL skráningarsíðunnar þinnar. Skipta þarf "X" út fyrir **ID-númer síðusniðmátsins**. Til að fá þetta númer skaltu fara í **Ultimate Multisite > Síður**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Smelltu á **Stjórna** rétt fyrir neðan síðusniðmátið sem þú vilt nota. Þú munt sjá SITE ID-númerið. Notaðu einfaldlega þetta númer fyrir þetta tiltekna síðusniðmát til að láta forvelja það í greiðsluforminu þínu. Í okkar tilviki hér væri URL-færibreytan **?template_id=2**.
 
-Látum segja að netverkssíti okkar sé [**www.mynetwork.com**](http://www.mynetwork.com) og síti yfirmskyrslu með formi kaupanna sé á `/register` síðu. Heildar URL-in með þessum framkvæmt tembliti sem er framkvæmt á skjama kaupumanna mun líta eins og [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Síðulisti sem sýnir ID síðusniðmáts](/img/config/site-templates-list.png)
 
-Og ef þú vilt, geturðu framkvæmt ákveðna vörumer og temblit á skjama kaupumanna þínum. Allt sem þú þarft að gera er að kopya shareable link fyrir planinn og setja template-parametrann í endan. Það mun líta eins og [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Segjum að netvefurinn okkar sé [**www.mynetwork.com**](http://www.mynetwork.com) og skráningarsíðan okkar með greiðsluforminu okkar sé staðsett á **/register**-síðunni. Heildar-URL með þessu síðusniðmáti forvöldu mun líta svona út: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Og ef þú vilt geturðu forvalið bæði vörur og sniðmát í greiðsluforminu þínu. Allt sem þú þarft að gera er að afrita deilanlega hlekkinn fyrir áskriftarleiðina og líma sniðmátsfæribreytuna aftast. Það mun líta svona út: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

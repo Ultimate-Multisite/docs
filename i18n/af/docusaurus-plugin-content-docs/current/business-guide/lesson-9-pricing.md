@@ -3,17 +3,17 @@ title: 'Les 9: Prysgstelling vir Wins'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Les 9: Prysing vir Wins
+# Les 9: Prysing vir Wins {#lesson-9-pricing-for-profit}
 
 In Les 5 het ons die aanvanklike pryse vir FitSite-planne vasgestel. Nou verfyn ons die prysstrategie met tegnieke wat die inkomste verhoog, opgraderings aanmoedig en die verlies van kliënte (churn) verminder.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite het planne, templates, checkout, branding en onboarding op plek. Die aanvanklike prysing was $49/$99/$199 per maand. Nou laat ons daardie prysing harder werk.
 
-## Prysieringsbeginsprinsipes vir Niche-platforms
+## Prysieringsbeginsprinsipes vir Niche-platforms {#pricing-principles-for-niche-platforms}
 
-### Prys op Waarde, Nie Kos Nie
+### Prys op Waarde, Nie Kos Nie {#price-on-value-not-cost}
 
 Jou hostingkoste mag $5-$15 per kliëntwebwerf wees. Dit beteken nie dat jou prys $20 moet wees nie. Jy verkoop nie hosting nie. Jy verkoop:
 
@@ -24,7 +24,7 @@ Jou hostingkoste mag $5-$15 per kliëntwebwerf wees. Dit beteken nie dat jou pry
 
 Prys op grond van die waarde wat jy lewer, nie die koste om dit te lewer nie.
 
-### Veranker teen Alternatiewe
+### Veranker teen Alternatiewe {#anchor-to-alternatives}
 
 Wanneer 'n fitnessstudio-eienaar FitSite evalueer, vergelyk hulle dit met:
 
@@ -34,7 +34,7 @@ Wanneer 'n fitnessstudio-eienaar FitSite evalueer, vergelyk hulle dit met:
 
 Teen $49-$199/maand is FitSite goedkoper as 'n ontwikkelaar, meer bekwaam as algemene builders, en oneindig beter as geen webwerf nie.
 
-## Implementering van Prysvariasies
+## Implementering van Prysvariasies {#implementing-price-variations}
 
 Jaarlikse prysing moedig verbintenis aan en verminder churn. Navigeer na die **Price Variations**-tab van elke plan en voeg jaarlikse opsies by:
 
@@ -46,12 +46,12 @@ Jaarlikse prysing moedig verbintenis aan en verminder churn. Navigeer na die **P
 
 Voeg 'n **Period Selection**-veld by jou checkout-formulier sodat kliënte tussen maandelikse en jaarlikse fakturering kan skakel. Kyk na [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Hoekom Jaarlikse Prysing Werk
+### Hoekom Jaarlikse Prysing Werk {#why-annual-pricing-works}
 
 - **Vir jou**: Vooraf geld, laer churn (kliënte wat jaarliks betaal, is minder geneig om mid-term te kanselleer)
 - **Vir hulle**: Ware besparings, begrotingsvoorspelbaarheid
 
-## Opstelgelde
+## Opstelgelde {#setup-fees}
 
 Oorweeg 'n eenmalige opstelgeld vir planne wat handmatige konfigurasie insluit:
 
@@ -61,7 +61,7 @@ Oorweeg 'n eenmalige opstelgeld vir planne wat handmatige konfigurasie insluit:
 
 Konfigureer opstelgelde op die prysgedeelte van elke plan. Kyk na [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) vir besonderhede.
 
-## Proefperiodes
+## Proefperiodes {#trial-periods}
 
 Die aanbieding van 'n proefperiode verminder registrasie-wrijving, maar stel die risiko van nie-konversie bloot. Vir FitSite:
 
@@ -70,11 +70,11 @@ Die aanbieding van 'n proefperiode verminder registrasie-wrijving, maar stel die
 
 Konfigureer die proefperiode op die Starter-plan se prysgedeelte deur die **Offer Trial**-skakelaar te aktiveer en die duur op 7 dae te stel.
 
-### Hoe om Proefperiodes te Laat Konverteer
+### Hoe om Proefperiodes te Laat Konverteer {#making-trials-convert}
 
 'n Proefperiode werk net as die kliënt waarde ervaar gedurende die proefperiode. Jou onboarding-reeks (Les 8) is hier kritiek – die welkomst-e-posse moet getyd word om betrokkenheid binne die 7-dae venster te stimuleer.
 
-## Kortingskodes
+## Kortingskodes {#discount-codes}
 
 Skep strategiese kortingskodes vir spesifieke doeleindes:
 
@@ -88,7 +88,7 @@ Navigeer na **Ultimate Multisite > Discount Codes** om hierdie te skep. Kyk na [
 Afslag moet strategiese gereedskap wees, nie permanente kenmerke nie. As almal 'n afslag kry, is dit nie 'n afslag nie – dit is jou werklike prys. Gebruik dit vir spesifieke veldtogte, verwysings en tydbeperkte promosies.
 :::
 
-## Belastinghantering
+## Belastinghantering {#tax-handling}
 
 As jy in 'n jurisdiksie opereer wat belastingbydraes vereis:
 
@@ -98,7 +98,7 @@ As jy in 'n jurisdiksie opereer wat belastingbydraes vereis:
 
 Kyk na [Tax Handling](/user-guide/payment-gateways/tax-handling) vir gedetailleerde konfigurasie. As jy internasionale kliënte bedien, oorweeg die [VAT addon](/addons/vat) vir EU-nakoming.
 
-## Jou Prysing Hersiening
+## Jou Prysing Hersiening {#reviewing-your-pricing}
 
 Nadat die aanloop plaasgevind het, besoek jy pryse kwartaalliks. Kyk na:
 
@@ -107,7 +107,7 @@ Nadat die aanloop plaasgevind het, besoek jy pryse kwartaalliks. Kyk na:
 - **Churn per plan**: As jaarlikse kliënte minder churn, druk dan harder op jaarlikse prysing
 - **Mededingersprysing**: Wat vra alternatiewe? Is jy korrek geposisioneer?
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Gereed vir aanloop (volgende les)
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **Jaarlikse prysing** met 20% afslag om verbintenis aan te moedig
 - **Opstelgelde** op hoër vlakke om onboarding-inspanning te dek

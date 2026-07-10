@@ -1,0 +1,124 @@
+---
+title: AI Site Builder
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Konstriktè sit AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Egzijans {#requirements}
+
+- WordPress 5.3 oswa pi wo
+- PHP 7.4 oswa pi wo
+- plugin Multisite Ultimate (aktif)
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye addon yo nan repètwa `/wp-content/plugins/` ou a
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
+3. Konfigire paramèt addon yo nan admin rezo a
+
+## Devlopman {#development}
+
+### Konfigirasyon {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Estrikti pwojè {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Klas PHP ak enkli yo
+│   ├── class-multisite-ultimate-updater.php  # Jesyon mizajou
+│   └── class-ai_site_builder-main.php             # Fonksyonalite prensipal
+├── tests/                        # Tès inite
+│   ├── bootstrap.php            # Demaraj tès
+│   ├── class-*-base.php         # Klas tès baz
+│   └── class-*-test.php         # Ka tès
+├── views/                       # Fichye modèl
+├── assets/                      # Resous estatik
+│   ├── css/                     # Fèy estil
+│   ├── js/                      # Fichye JavaScript
+│   └── images/                  # Imaj
+├── lang/                        # Fichye lang
+├── composer.json                # Depandans PHP
+├── package.json                 # Depandans Node.js
+├── phpunit.xml.dist             # Konfigirasyon PHPUnit
+├── .phpcs.xml.dist              # Konfigirasyon estanda kòd
+└── rector.php                   # Règ modènizasyon kòd
+```
+
+### Tès {#testing}
+
+Addon nan gen ladan yon kad tès konplè:
+
+- **Tès inite**: Tès ki baze sou PHPUnit ak seri tès WordPress
+- **Klas tès baz**: Bay metòd èd pou senaryo tès komen
+- **Kouvèti tès**: Konfigire pou swiv kouvèti kòd
+- **Tès Multisite**: Tès yo kouri nan anviwònman multisite
+
+### Estanda kòd {#code-standards}
+
+- **Estanda kodaj WordPress**: Aplike atravè PHPCS
+- **Konpatibilite PHP 7.4+**: Fonksyonalite PHP modèn sipòte
+- **Analiz estatik**: Entegrasyon PHPStan pou verifikasyon tip
+- **Modènizasyon kòd**: Règ Rector pou mizajou PHP
+
+### Sistèm konstriksyon {#build-system}
+
+- **Pwosesis resous**: Minifikasyon pou fichye CSS/JS
+- **Tradiksyon**: Jenerasyon fichye POT
+- **Anbalaj**: Kreyasyon achiv pou distribisyon
+- **Mòd devlopman**: Resous ki pa minifye pou debogaj
+
+## Konfigirasyon {#configuration}
+
+Addon nan sipòte plizyè opsyon konfigirasyon ki aksesib atravè entèfas admin rezo a.
+
+## Hooks ak Filters {#hooks-and-filters}
+
+### Aksyon {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Deklanche apre inisyalizasyon addon nan
+- `ultimate-multisite-ai-site-builder_loaded` - Deklanche apre tout fichye addon yo chaje
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifye paramèt addon yo
+- `ultimate-multisite-ai-site-builder_enabled` - Ranplase estati aktive/dezaktive addon nan
+
+## Lisans {#license}
+
+Addon sa a gen lisans anba GPL v3 oswa pi resan.
+
+## Sipò {#support}
+
+Pou sipò ak dokimantasyon, vizite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Chanjman {#changelog}
+
+- Vèsyon 1.0.1 (2025-09-28): chanje non prefiks la pou ultimate-multisite; mete domèn tèks la ajou; ogmante vèsyon an.
+
+
+- Vèsyon  (2025-09-28): chanje non prefiks la pou ultimate-multisite; mete domèn tèks la ajou; ogmante vèsyon an.

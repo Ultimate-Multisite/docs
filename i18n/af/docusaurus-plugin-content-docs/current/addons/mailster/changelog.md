@@ -3,9 +3,9 @@ title: Mailster Veranderlikheidslog
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster Veranderingslog
+# Mailster Veranderingslog {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Eerste uitgawe
 * Outomatiese inskrywer-sinchronisasie by registrasie of betaling
 * Produk-spesifieke lys-toewysings

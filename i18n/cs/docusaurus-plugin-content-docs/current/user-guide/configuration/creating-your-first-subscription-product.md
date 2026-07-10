@@ -1,306 +1,318 @@
 ---
-title: Vytvoření vašeho prvního předplatného produktu
+title: Vytvoření prvního produktu s předplatným
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Vytvoření vašeho prvního předplatného produktu (v2)
+# Vytvoření vašeho prvního produktu s předplatným (v2) {#creating-your-first-subscription-product-v2}
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek je určen pouze pro uživatele Ultimate Multisite verze 2.x. Pokud používáte verzi 1.x,**_ **_**podívejte se na tento článek**_**.
+_**DŮLEŽITÁ POZNÁMKA: Tento článek je určen pouze pro uživatele Ultimate Multisite verze 2.x. Pokud používáte verzi 1.x,**_ **_**přečtěte si tento článek**_**.
 
-Abyste mohli provozovat svou síť a začít nabízet služby potenciálním uživatelům, potřebujete mít různé možnosti předplatného. Jak takové produkty vytvořit? Jaké typy produktů můžete nabízet? V tomto článku se dozvíte vše potřebné o produktech.
+Abyste mohli začít provozovat svou síť a začít prodávat své služby potenciálním uživatelům, potřebujete mít různé možnosti předplatného. Jak tyto produkty vytvoříte? Jaké typy produktů můžete nabízet? V tomto článku probereme vše, co potřebujete o produktech vědět.
 
-## Typ produktu
+## Typ produktu {#product-type}
 
-S Ultimate Multisite můžete svým klientům nabízet dvě kategorie produktů: **plány** a **doplňky** **(Order Bump)**. Doplňky se dělí na dva typy: **balíčky** a **služby**. Jejich rozdíly a specifika si ukážeme dále.
+S Ultimate Multisite můžete svým klientům nabízet dvě kategorie produktů: **plány** a **doplňky** **(Order Bump)**. Doplňky lze rozdělit na dva typy:**balíčky** a **služby**. Dále se podíváme na jejich rozdíly a specifika.
 
-  * **Plány**: základní produkt Ultimate Multisite. Váš klient může mít členství pouze tehdy, pokud je připojeno k plánu. Plán poskytuje vašim klientům jeden nebo více webů (záleží na konfiguraci plánu) s omezeními, která nastavíte na stránce úprav produktu.
+  * **Plány** : základní produkt Ultimate Multisite. Váš klient může mít členství pouze tehdy, pokud je připojeno k plánu. Plán poskytuje vašim klientům jeden nebo více webů (záleží na konfiguracích vašeho plánu) s omezeními, která nastavíte na stránce úprav produktu.
 
-  * **Balíčky**: doplňky, které přímo ovlivňují funkce plánů Ultimate Multisite. Mění omezení nebo přidávají nové zdroje, pluginy či šablony k původnímu plánu, který si klient zakoupil. Například základní plán může umožňovat 1 000 návštěv měsíčně a vy můžete nabídnout balíček, který tento počet rozšíří na 10 000.
+  * **Balíčky** : doplňky, které přímo ovlivňují funkcionality plánů Ultimate Multisite. Mění omezení nebo přidávají nové zdroje, pluginy nebo šablony k původnímu plánu, který si váš klient koupil. Například základní plán může umožňovat 1 000 návštěv měsíčně a vy můžete zpřístupnit balíček, který toto číslo rozšíří na 10 000.
 
-  * **Služby**: doplňky, které nemění funkce Ultimate Multisite. Jsou to úkoly, které provedete pro klienta navíc k zakoupenému plánu. Například váš zákazník si může koupit plán umožňující jeden web a zároveň zaplatit za extra službu vytvoření designu tohoto webu.
+  * **Služby:** doplňky, které nemění funkcionality Ultimate Multisite. Jsou to úkoly, které pro svého klienta provedete navíc k plánu, který si koupil. Například váš zákazník si může koupit plán, který umožňuje jeden web, a také zaplatit za dodatečnou službu, která vytvoří design tohoto webu.
 
-## Správa produktů
+## Správa produktů {#managing-products}
 
-Pro mnohé lze záložku **Produkty** v Ultimate Multisite **(Ultimate Multisite > Products)** přirovnat k plánům v tradičním hostingovém prostředí.
+Pro mnohé lze kartu **Products** v Ultimate Multisite **(Ultimate Multisite > Products)** přirovnat k plánům v tradičním hostingovém prostředí.
 
-V Ultimate Multisite záložka Produkty definuje strukturu a omezení platná pro konkrétní produkt nebo službu. Tyto struktury zahrnují popis produktu nebo služby, cenu, daně a oprávnění.
+V rámci Ultimate Multisite karta Products definuje strukturu a omezení použitelná pro konkrétní produkt nebo službu. Takové struktury zahrnují popis produktu nebo služby, cenu, daně a oprávnění.
 
-Tato sekce vám pomůže pochopit tento základní pilíř Ultimate Multisite.
+Tato část vás provede pochopením tohoto zásadního základního kamene Ultimate Multisite.
 
 ![Stránka se seznamem produktů](/img/config/products-list.png)
 
-## Přidání produktů
+## Přidávání produktů {#adding-products}
 
-Ať už jde o plán, balíček nebo službu, vstupním bodem pro definici nové položky je **Ultimate Multisite > Products > Add Product**.
+Ať už jde o plán, balíček nebo službu, vstupním bodem pro definování nové položky je **Ultimate Multisite > Products > Add Product**.
 
 ![Tlačítko Přidat produkt](/img/config/product-add-button.png)
 
-Rozhraní obsahuje dvě hlavní sekce. Vlevo je několik záložek, které pomáhají s definicí produktu, a vpravo několik sekcí pro nastavení základní ceny produktu, jeho aktivního stavu a obrázku produktu.
+Rozhraní obsahuje dvě hlavní části. Vlevo je několik karet, které pomáhají s definicí produktu, a vpravo je několik sekcí pro definování základní ceny produktu, jeho aktivního stavu a obrázku produktu.
 
 ![Přehled stránky úprav produktu](/img/config/product-edit-full.png)
 
-### Popis
+### Popis {#description}
 
-Základní informace o produktu můžete definovat zadáním názvu a popisu produktu. Tyto identifikátory se zobrazují všude, kde jsou vyžadovány informace o produktu – například při výběru plánu a ceny, na fakturách, při upgradech a podobně.
+Základní informace o produktu lze definovat zadáním názvu produktu a popisu. Tyto identifikátory se zobrazují všude, kde jsou informace o produktu vyžadovány, například při výběru plánu a cen, na fakturách, při upgradech a podobně.
 
 ![Sekce popisu produktu](/img/config/product-description.png)
 
-### Typ ceny
+### Typ cen {#pricing-type}
 
-Na pravé straně rozhraní lze definovat základní cenu.
+Na pravé straně rozhraní lze definovat základní ceny.
 
-![Sekce ceny a uložení](/img/config/product-pricing-save.png)
+![Sekce cen a uložení](/img/config/product-pricing-save.png)
 
-Ultimate Multisite podporuje tři různé typy cen. Volba **paid** (placený) vyzve správce sítě k zadání informací o ceně produktu a frekvenci fakturace.
+Ultimate Multisite podporuje tři různé typy cen. Možnost **placené** vyzve správce sítě k zadání informací o ceně produktu a frekvenci fakturace.
 
-### Cena
+### Ceny {#pricing}
 
 Komponenta ceny definuje základní cenu produktu a fakturační interval.
 
-![Sekce ceny a uložení](/img/config/product-pricing-save.png)
+![Sekce cen a uložení](/img/config/product-pricing-save.png)
 
-Například cena 29,99 $ s nastavením 1 měsíc bude účtovat 29,99 $ každý měsíc. Obdobně cena 89,97 $ s nastavením 3 měsíce bude účtovat tuto částku každé čtvrtletí.
+tedy příklad ceny $29.99 s nastavením 1 měsíc bude účtovat $29.99 každý měsíc. Podobně cena $89.97 s nastavením 3 měsíce bude účtovat tuto částku každé čtvrtletí.
 
-### Fakturační cykly
+### Fakturační cykly {#billing-cycles}
 
-Sekce fakturačních cyklů určuje frekvenci výše zmíněného fakturačního intervalu a obecně se chápe v kontextu smluv nebo pevných období.
+Sekce fakturačních cyklů určuje frekvenci výše uvedeného fakturačního intervalu a obecně se chápe ve světle smluv nebo pevných období.
 
-![Sekce ceny a uložení](/img/config/product-pricing-save.png)
+![Sekce cen a uložení](/img/config/product-pricing-save.png)
 
-Například cena produktu 29,99 $ s intervalem 1 měsíc a 12 fakturačními cykly bude účtovat 29,99 $ měsíčně za produkt po následujících 12 měsíců. Jinými slovy, takové nastavení vytvoří pevnou cenovou podmínku 29,99 $ měsíčně po dobu 12 měsíců a poté se fakturace zastaví.
+Například cena produktu $29.99 s intervalem 1 měsíc a 12 fakturačními cykly by účtovala $29.99 měsíčně za produkt po následujících 12 měsíců. Jinými slovy, takové nastavení by stanovilo pevně dané cenové období $29.99 měsíčně na 12 měsíců a poté by fakturace skončila.
 
-### Zkušební období
+### Zkušební období {#trial-period}
 
-Zapnutí přepínače nabídky zkušebního období umožňuje správci sítě definovat zkušební dobu pro produkt.
+Zapnutí přepínače nabídky zkušebního období umožňuje správci sítě definovat zkušební období pro produkt.
 
-![Sekce ceny a uložení](/img/config/product-pricing-save.png)
+![Sekce cen a uložení](/img/config/product-pricing-save.png)
 
-Během zkušebního období mohou zákazníci produkt volně používat a nebude jim účtováno, dokud zkušební období neskončí.
+Během zkušebního období mohou zákazníci produkt zdarma používat a nebude jim účtováno, dokud zkušební období neskončí.
 
-### Aktivační poplatek
+### Zřizovací poplatek {#setup-fee}
 
-K vašemu plánu můžete také přidat aktivační poplatek.
+Ke svému plánu můžete také přidat zřizovací poplatek.
 
-![Sekce ceny a uložení](/img/config/product-pricing-save.png)
+![Sekce cen a uložení](/img/config/product-pricing-save.png)
 
-To znamená, že váš klient zaplatí při první platbě extra částku (navíc k ceně plánu), která odpovídá poplatku definovanému v této sekci.
+To znamená, že váš klient zaplatí při první platbě dodatečnou částku (navíc k cenovému plánu), která odpovídá poplatku, který jste definovali v této sekci.
 
-### Aktivní
+### Aktivní {#active}
 
-Přepínač aktivní efektivně určuje, zda je produkt dostupný zákazníkům pro nové registrace.
+Přepínač aktivního stavu efektivně určuje, zda je produkt dostupný zákazníkům pro nové registrace.
 
-![Přepínač Aktivní](/img/config/product-active.png)
+![Přepínač aktivního stavu](/img/config/product-active.png)
 
-Pokud jsou na tomto plánu stávající zákazníci, nastavení přepínače do vypnutého stavu plán prakticky „zakonzervuje" a odstraní ho z budoucích registrací. **Stávajícím zákazníkům na plánu bude nadále účtováno**, dokud nebudou převedeni na nový plán nebo z plánu odstraněni.
+Pokud u tohoto plánu existují stávající zákazníci, nastavení přepínače do deaktivovaného stavu fakticky zachová plán pro stávající zákazníky a odstraní jej z budoucích registrací. **Stávající zákazníci v plánu budou nadále fakturováni**, dokud nebudou převedeni na nový plán nebo z plánu odstraněni.
 
-### Obrázek produktu
+### Obrázek produktu {#product-image}
 
 Tlačítko **Upload Image** umožňuje správci sítě využít knihovnu médií k výběru nebo nahrání obrázku produktu.
 
 ![Sekce obrázku produktu](/img/config/product-image.png)
 
-### Smazání
+### Smazat {#delete}
 
-Tlačítko **Delete Product** smaže produkt ze systému. Objeví se po publikování produktu.
+Tlačítko **Delete Product** smaže produkt ze systému. Zobrazí se, jakmile je produkt publikován.
 
 ![Sekce smazání produktu](/img/config/product-delete.png)
 
-Na rozdíl od jiných smazání není produkt přesunut do koše. Po smazání je akce nevratná.
+Na rozdíl od jiných smazání není produkt umístěn do žádného stavu koše. Jakmile je tedy smazán, akce je nevratná.
 
-### Možnosti produktu
+### Možnosti produktu {#product-options}
 
-Jakmile jsou definovány základní informace o produktu, možnosti produktu pomáhají správci sítě dále specifikovat konkrétní atributy produktu.
+Jakmile jsou definovány základní informace o produktu, možnosti produktu pomáhají správci sítě dále určit konkrétní atributy produktu.
 
-#### Obecné
+#### Obecné {#general}
 
-Záložka **General** definuje obecné atributy produktu, které nespadají do žádné z dalších specifických záložek produktu.
+Karta **Obecné** definuje obecné atributy produktu, které se nevztahují na žádnou z ostatních karet specifických pro produkt.
 
-![Záložka Obecné](/img/config/product-general-tab.png)
+![Karta Obecné](/img/config/product-general-tab.png)
 
-Samovysvětlující **product slug** definuje slug, kterým je produkt identifikován v URL adresách a dalších oblastech Ultimate Multisite.
+Samovysvětlující **slug produktu** definuje slug, kterým je produkt identifikován v URL a dalších oblastech Ultimate Multisite.
 
-Ultimate Multisite podporuje několik typů produktů, jmenovitě Plan, Package a Service. Záložky **Product Options** se dynamicky upravují podle zvoleného typu produktu.
+Ultimate Multisite podporuje několik typů produktů, konkrétně Plan, Package a Service. Karty **Možnosti produktu** se dynamicky upravují podle zadaného typu produktu.
 
-**Customer Role** určuje roli, která je zákazníkovi přiřazena při vytvoření webu. Pro většinu správců sítě to bude výchozí role Ultimate Multisite nebo Administrator. Výchozí roli Ultimate Multisite lze nastavit v **Ultimate Multisite > Settings > Login & Registration**.
+**Role zákazníka** určuje roli, která je zákazníkovi při vytvoření webu přiřazena. Pro většinu správců sítě to obvykle bude výchozí role Ultimate Multisite nebo Administrator. Výchozí roli Ultimate Multisite lze nastavit v **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Nastavení role zákazníka](/img/config/product-customer-role-settings.png)
 
-#### Upgrady a downgrady
+#### Upgrady a downgrady {#up--downgrades}
 
-Tato záložka určuje cesty upgradu a downgradu dostupné zákazníkovi v rámci jeho konkrétní úrovně.
+Tato karta určuje cesty upgradu a downgradu dostupné zákazníkovi v rámci jeho konkrétní úrovně.
 
-Pro pochopení tohoto konceptu si představte příklad, kdy specializovaná instalace Ultimate Multisite poskytuje svým zákazníkům řešení pro správu vzdělávání. K dosažení tohoto cíle jsou definovány tři plány (Basic, Plus a Premium) a pro každý plán jsou aktivovány specifické pluginy (návod na aktivaci pluginů najdete dále v této sekci).
+Pro pochopení tohoto konceptu zvažte příklad, kdy specializovaná instalace Ultimate Multisite poskytuje svým zákazníkům řešení pro správu vzdělávání. K dosažení toho jsou definovány tři plány (Basic, Plus a Premium) a pro každý plán jsou aktivovány konkrétní pluginy (pokyny k aktivaci pluginů najdete dále v této části).
 
-Pokud instalace Ultimate Multisite obsluhuje také firemní weby nebo e-commerce weby, tyto plány mohou vyžadovat instalaci a aktivaci jiných pluginů.
+Pokud instalace Ultimate Multisite obsluhuje také firemní weby nebo eCommerce weby, mohou tyto plány vyžadovat instalaci a aktivaci jiných pluginů.
 
-V tomto rozsahu by bylo nežádoucí a problematické umožnit zákazníkům e-learningu přechod na e-commerce plány, protože tyto plány, ceny a omezení nemusí být vhodné.
+Z tohoto důvodu by bylo nežádoucí a problematické umožnit zákazníkům eLearningu přechod na eCommerce plány, protože tyto plány, ceny a omezení pro ně nemusí být vhodné.
 
-Proto může správce sítě definovat skupinu plánů a v rámci této skupiny specifikovat plány, na které může zákazník přejít, čímž omezí cestu zákazníka a předejde incidentům.
+Aby tedy správce sítě omezil cestu zákazníka a předešel incidentům, může definovat skupinu plánů a v rámci této skupiny určit plány, na které může zákazník přejít.
 
-![Záložka Upgrady a downgrady](/img/config/product-upgrades.png)
+![Karta Upgrady a downgrady](/img/config/product-upgrades.png)
 
-Pro definici skupiny plánů specifikujte kompatibilní plány v seznamu **plan group**. **Product order** určuje, jak jsou plány seřazeny a zobrazeny od nejnižšího po nejvyšší.
+Chcete-li definovat skupinu plánů, zadejte kompatibilní plány v seznamu **skupina plánů**. **Pořadí produktu** určuje, jak jsou plány seřazeny a zobrazeny od nejnižšího po nejvyšší.
 
-Ultimate Multisite také obsahuje funkci **order bump**, kde lze k plánům přidat vhodné doplňkové produkty a služby. Ty jsou zákazníkovi nabízeny jako dodatečné položky, které lze přidat k plánům při platbě nebo během upgradu.
+Ultimate Multisite také obsahuje funkci **order bump**, kde lze k plánům přidat vhodné doplňkové produkty a služby. Ty jsou zákazníkovi nabízeny jako další položky, které lze přidat k plánům při checkoutu nebo během upgradu.
 
-#### Cenové varianty
+#### Cenové varianty {#price-variations}
 
-Cenové varianty umožňují správci sítě specifikovat alternativní cenové úrovně v závislosti na délce trvání. Toto nastavení umožňuje vytvořit cenové úrovně pro 3 měsíce, 6 měsíců nebo roční předplatné, případně jakoukoli jinou délku a frekvenci podle konkrétního případu použití.
+Cenové varianty umožňují správci sítě zadat alternativní cenové úrovně podle délky trvání. Toto nastavení umožňuje nabídnout pro stejný produkt měsíční, čtvrtletní, roční nebo jakékoli jiné fakturační období. Například můžete nastavit produkt za $29.99/měsíc se zvýhodněnou roční možností za $249.99/rok.
 
-![Záložka Cenové varianty](/img/config/product-price-variations.png)
+![Karta Cenové varianty](/img/config/product-price-variations-tab.png)
 
-Pro nastavení cenových variant přepněte **enable price variations** do aktivního stavu a klikněte na tlačítko **Add new Price Variation**.
+Chcete-li vytvořit cenové varianty, nastavte přepínač **Povolit cenové varianty** jako aktivní a klikněte na tlačítko **Přidat novou cenovou variantu**.
 
-Pro zadání varianty nastavte délku, období a cenu varianty. Další varianty lze zadat opětovným kliknutím na tlačítko.
+![Cenové varianty produktu](/img/config/product-price-variations.png)
 
-![Záložka Cenové varianty](/img/config/product-price-variations.png)
+Chcete-li zadat variantu, nastavte délku trvání, období a cenu varianty. Další varianty lze zadat opětovným kliknutím na tlačítko.
 
-#### Daně
+Například pokud je základní cena vašeho produktu $29.99 měsíčně, můžete přidat:
 
-Záložka **Taxes** odpovídá nastavení daní specifikovanému v **Ultimate Multisite > Settings > Taxes** a konkrétněji definovaným daňovým sazbám. Pro povolení daní a definici platných daňových sazeb si prosím prostudujte dokumentaci **Ultimate Multisite: Settings**
+  * **3 měsíce** za $79.99 (malá sleva oproti měsíční platbě)
+  * **1 rok** za $249.99 (výrazná sleva za roční závazek)
 
-![Záložka Daně](/img/config/product-taxes.png)
+:::tip Zobrazení přepínače fakturačního období na frontendu
 
-V předchozím příkladu jsme definovali místní daňovou sazbu 7,25 % platnou pro zákazníky v Kalifornii (Spojené státy americké).
+Samotné cenové varianty nepřidávají na frontend checkoutu žádný přepínač ani switch. Aby zákazníci mohli přepínat mezi fakturačními obdobími (např. měsíční / roční), musíte do svého checkout formuláře přidat pole **Výběr období**. Podrobné pokyny najdete v části [Checkout formuláře: Přidání přepínače výběru období](checkout-forms#adding-a-period-selection-toggle).
+:::
+
+#### Daně {#taxes}
+
+Karta **Daně** odpovídá nastavením daní zadaným v **Ultimate Multisite > Settings > Taxes** a konkrétněji definovaným daňovým sazbám. Informace o povolení daní a definování použitelných daňových sazeb najdete v dokumentaci v části **Ultimate Multisite: Settings**
+
+![Karta Daně](/img/config/product-taxes.png)
+
+V předchozím příkladu jsme definovali místní daňovou sazbu 7,25 % vztahující se na zákazníky v Kalifornii (Spojené státy americké).
 
 Jakmile je daňová sazba definována v **Ultimate Multisite > Settings > Manage Tax Rates**, lze ji vybrat na úrovni produktu.
 
-![Záložka Daně](/img/config/product-taxes.png)
+![Karta Daně](/img/config/product-taxes.png)
 
-Pro označení produktu jako zdanitelné položky přepněte **Is Taxable** do aktivního stavu a vyberte příslušnou daňovou sazbu z rozbalovací nabídky Tax Category.
+Chcete-li označit produkt jako zdanitelnou položku, nastavte přepínač **Je zdanitelný** jako aktivní a vyberte použitelnou daňovou sazbu z rozbalovací nabídky Tax Category.
 
-#### Šablony webů
+#### Šablony webů {#site-templates}
 
-Šablony webů jsou v podstatě kompletní WordPress weby, které jsou naklonovány na web zákazníka na začátku jeho předplatného.
+Šablony webů jsou v podstatě kompletní WordPress weby, které jsou při zahájení předplatného naklonovány na web zákazníka.
 
-![Záložka Šablony webů](/img/config/product-site-templates.png)
+![Karta Šablony webů](/img/config/product-site-templates.png)
 
-Správce sítě vytvoří a nakonfiguruje šablonu webu jako běžný WordPress web s aktivovanými a nakonfigurovanými šablonami vzhledu, pluginy a obsahem. Šablona webu je zákazníkovi naklonována doslovně.
+Správce sítě vytvoří a nakonfiguruje šablonový web jako běžný WordPress web s aktivovanými a nakonfigurovanými motivy, pluginy a obsahem. Šablonový web je zákazníkovi naklonován beze změn.
 
-Tato záložka umožňuje správci sítě specifikovat chování šablon webů při novém předplatném. Pro použití šablon webů přepněte **allow site templates** do aktivního stavu.
+Tato karta umožňuje správci sítě určit chování šablon webů při novém předplatném. Chcete-li pro tento plán využívat šablony webů, nastavte přepínač **Povolit šablony webů** do aktivního stavu.
 
-**Site template selection mode** definuje chování šablon webů během procesu předplatného.
+Když je **Povolit šablony webů** vypnuto, zákazníci v daném plánu nemohou vybírat šablony, i kdyby je jinak zpřístupňoval checkout formulář, sdílitelný odkaz nebo parametr URL. Ultimate Multisite nyní toto omezení vynucuje prostřednictvím záložního řetězce napříč dostupnými vstupními body: nejprve se kontrolují nastavení plánu, poté nastavení šablon checkout formuláře a následně předem vybrané nebo přes URL poskytnuté šablony. Tím se zachovává konzistence omezení plánů a brání se zobrazování šablon u produktů, které je nemají nabízet.
 
-Nastavení **Default** následuje kroky ve formuláři objednávky. Pokud správce sítě definoval krok výběru šablony v procesu objednávky a krok byl definován se šablonami, toto nastavení bude respektovat direktivy stanovené v kroku objednávky.
+**Režim výběru šablony webu** definuje chování šablon webu během procesu předplatného.
 
-Volba **Assign Site Template** vynutí výběr specifikované šablony. V důsledku toho jsou všechny kroky výběru šablony v procesu objednávky odstraněny.
+Nastavení **D** **efault** postupuje podle kroků ve formuláři checkout. Pokud správce sítě definoval krok výběru šablony v procesu checkout a tento krok byl definován se šablonami, toto nastavení bude respektovat pokyny stanovené v kroku checkout.
 
-A konečně **Choose Available Site Templates** přepíše šablony specifikované v kroku objednávky šablonami vybranými v tomto nastavení. Lze také definovat předvybranou šablonu, která zákazníkovi usnadní výběr.
+Zadání **A** **ssign Site Template** vynutí výběr zadané šablony. V důsledku toho jsou odstraněny všechny kroky výběru šablony v procesu checkout.
 
-Pokud si správce sítě přeje, aby výběr šablony probíhal v krocích objednávky, postačí nastavení „_default_". Alternativně pro odstranění a uzamčení výběru šablony a delegování výběru na nastavení plánu mohou být žádoucí možnosti „_assign new template_" nebo „_choose available site templates_".
+Nakonec **C** **hoose Available Site Templates** přepíše šablony zadané v kroku checkout šablonami vybranými v tomto nastavení. Lze také definovat předem vybranou šablonu, která zákazníkovi usnadní výběr.
 
-#### Weby
+Pokud si správce sítě nakonec přeje, aby výběr šablony probíhal v krocích checkout, postačí nastavení ' _default_ '. Alternativně, chcete-li odebrat a uzamknout výběr šablony a delegovat výběr na nastavení plánu, mohou být vhodné možnosti ' _assign new template_ ' nebo ' _choose available site templates_ '.
 
-Záložka **Sites** je součástí funkcionality omezení Ultimate Multisite.
+#### Weby {#sites}
 
-![Záložka Weby](/img/config/product-sites.png)
+Karta **Weby** je součástí funkce omezení Ultimate Multisite.
 
-Toto nastavení specifikuje maximální počet webů, které může zákazník vytvořit v rámci svého členství.
+![Karta Weby](/img/config/product-sites.png)
 
-Pro povolení omezení přepněte **limit sites** do aktivního stavu a specifikujte maximální počet webů v poli **site allowance**.
+Toto nastavení určuje maximální počet webů, které může zákazník vytvořit v rámci svého členství.
 
-#### Návštěvy
+Chcete-li omezení povolit, nastavte přepínač **omezit weby** do aktivního stavu a zadejte maximální počet webů do pole **limit webů**.
 
-Záložka **Visits** je další součástí systému omezení Ultimate Multisite. Toto nastavení umožňuje sledování a následné omezování unikátních návštěvníků webu zákazníka.
+#### Návštěvy {#visits}
 
-![Záložka Návštěvy](/img/config/product-visits.png)
+Karta **Návštěvy** je další součástí systému omezení Ultimate Multisite. Toto nastavení umožňuje započítávání a následné omezování unikátních návštěvníků webu zákazníka.
 
-Z marketingového pohledu mohou správci sítě využít toto nastavení jako prostředek k povzbuzení zákazníků k upgradu plánu po dosažení limitů. Toto nastavení může také pomoci správci sítě omezit a zabránit nadměrnému provozu na webech a zachovat systémové zdroje.
+![Karta Návštěvy](/img/config/product-visits.png)
 
-Pro využití této funkce přepněte **limit unique visits** do aktivního stavu a specifikujte maximální počet unikátních návštěvníků v poli **unique visits quota**.
+Z marketingového hlediska mohou správci sítě toto nastavení využít jako prostředek, jak povzbudit zákazníky k upgradu jejich plánu po dosažení limitů. Toto nastavení může správci sítě také pomoci omezit a zabránit nadměrnému provozu na webech, aby se šetřily systémové prostředky.
 
-Po dosažení tohoto limitu Ultimate Multisite přestane zobrazovat web zákazníka a místo toho zobrazí zprávu o překročení limitů.
+Chcete-li tuto funkci využít, nastavte přepínač **omezit unikátní návštěvy** do aktivního stavu a zadejte maximální počet unikátních návštěvníků do pole **kvóta unikátních návštěv**.
 
-#### Uživatelé
+Jakmile bude tohoto limitu dosaženo, Ultimate Multisite přestane web zákazníka obsluhovat namísto zobrazení zprávy informující, že limity byly překročeny.
 
-Omezení „Users" v Ultimate Multisite umožňují správci sítě stanovit limity na počet uživatelů, kteří mohou být vytvořeni a přiřazeni k rolím.
+#### Uživatelé {#users}
 
-![Záložka Uživatelé](/img/config/product-users.png)
+Omezení 'Uživatelé' v Ultimate Multisite umožňují správci sítě uvalit limity na počet uživatelů, které lze vytvořit a přiřadit k rolím.
 
-Pro povolení funkce omezení přepněte **limit user** do aktivního stavu posunutím doprava.
+![Karta Uživatelé](/img/config/product-users.png)
 
-Dále pro každou roli, která má být omezena, přepněte přepínač vedle ní do aktivního stavu a definujte maximální horní limit v příslušném poli.
+Chcete-li funkci omezení povolit, nastavte přepínač **omezit uživatele** do aktivního stavu posunutím doprava.
 
-#### Typy příspěvků
+Dále pro každou roli, která má být omezena, nastavte přepínač vedle ní do aktivního stavu a v příslušném poli definujte maximální horní limit.
 
-Záložka **Post Types** umožňuje správci sítě stanovit detailní limity na rozsáhlou škálu typů příspěvků v rámci WordPress.
+#### Typy příspěvků {#post-types}
 
-![Záložka Typy příspěvků](/img/config/product-post-types.png)
+Karta **Typy příspěvků** umožňuje správci sítě uvalit podrobné limity na rozsáhlou škálu typů příspěvků v rámci WordPress.
 
-Vzhledem ke konstrukci WordPress jsou příspěvky a typy příspěvků významnou součástí jeho základní funkcionality, a proto je systém omezení Ultimate Multisite navržen tak, aby pomohl správci sítě při stanovení a udržování limitů.
+![Karta Typy příspěvků](/img/config/product-post-types.png)
 
-Pro povolení tohoto subsystému omezení přepněte **limit post types** do aktivního stavu posunutím doprava.
+Vzhledem ke konstrukci WordPress jsou příspěvky a typy příspěvků významnou součástí jeho základní funkčnosti, a proto je systém omezení Ultimate Multisite navržen tak, aby správci sítě pomáhal se stanovováním a udržováním limitů.
 
-Dále pro každý typ příspěvku, který má být omezen, jej zapněte posunutím doprava a specifikujte maximální horní limit v příslušném poli.
+Chcete-li tento subsystém limitů povolit, nastavte přepínač **omezit typy příspěvků** do aktivního stavu posunutím doprava.
 
-#### Diskový prostor
+Dále pro každý typ příspěvku, který má být omezen, jej zapněte posunutím přepínače doprava a zadejte maximální horní limit v příslušném poli.
 
-Záložka **Disk Space** umožňuje správcům sítě omezit prostor spotřebovávaný zákazníky.
+#### Diskový prostor {#disk-space}
 
-![Záložka Diskový prostor](/img/config/product-disk-space.png)
+Karta **Diskový prostor** umožňuje správcům sítě omezit prostor spotřebovaný zákazníky.
 
-Typicky ve WordPress multisite jsou základní soubory sdíleny mezi všemi weby a pro soubory médií a uploady jsou vytvořeny individuální adresáře, na které se tato nastavení a omezení vztahují.
+![Karta Diskový prostor](/img/config/product-disk-space.png)
 
-Pro povolení omezení využití disku přepněte **limit disk size per site** do aktivního stavu posunutím doprava.
+Typicky jsou ve WordPress multisite základní soubory sdíleny mezi všemi weby a pro mediální soubory a nahrávky jsou vytvářeny jednotlivé adresáře, na které se tato nastavení a omezení vztahují.
 
-Dále specifikujte maximální horní limit v megabajtech v poli **disk space allowance**.
+Chcete-li povolit omezení využití disku, nastavte přepínač **omezit velikost disku na web** do aktivního stavu posunutím doprava.
 
-#### Vlastní doména
+Dále zadejte maximální horní limit v megabajtech do pole **povolený diskový prostor**.
 
-Přepnutím této možnosti můžete povolit vlastní domény konkrétně na tomto plánu.
+#### Vlastní doména {#custom-domain}
 
-![Záložka Vlastní domény](/img/config/product-custom-domains.png)
+Přepnutím této možnosti můžete povolit vlastní domény konkrétně v tomto plánu.
 
-#### Šablony vzhledu
+![Karta Vlastní domény](/img/config/product-custom-domains.png)
 
-Záložka **Themes** v možnostech produktu umožňuje správci sítě zpřístupnit šablony vzhledu zákazníkům pro výběr a volitelně vynutit stav šablony.
+#### Šablony {#themes}
 
-![Záložka Šablony vzhledu](/img/config/product-themes.png)
+Karta **Šablony** v rámci možností produktu umožňuje správci sítě zpřístupnit šablony zákazníkům k výběru a volitelně vynutit stav šablony.
 
-_**Poznámka: Aby byly šablony vzhledu dostupné zákazníkům, musí být povoleny na úrovni sítě správcem sítě.**_
+![Karta Šablony](/img/config/product-themes.png)
 
-![Stránka síťových šablon vzhledu](/img/config/product-themes-network-enabled.png)
+_**Poznámka: Aby byly šablony zákazníkům dostupné, musí je správce sítě povolit na úrovni sítě.**_
 
-Možnost **visibility** definuje, zda je tato šablona vzhledu viditelná pro zákazníka při prohlížení záložky **Appearance > Themes** na jejich webu. Nastavení této možnosti na **Hidden** odstraní šablonu z pohledu a tím omezí možnost jejího výběru a aktivace.
+![Stránka síťových šablon](/img/config/product-themes-network-enabled.png)
 
-![Záložka Šablony vzhledu](/img/config/product-themes.png)
+Možnost **viditelnost** definuje, zda je tato šablona viditelná zákazníkovi při zobrazení karty **Vzhled > Šablony** v rámci jeho webu. Nastavení této možnosti na **Skryté** odstraní šablonu ze zobrazení, a tím omezí možnost ji vybrat a aktivovat.
 
-Výběr **behavior** umožňuje správci sítě definovat stav šablony vzhledu při vytvoření webu zákazníka.
+![Karta Šablony](/img/config/product-themes.png)
 
-Ve stavu **Available** je šablona vzhledu zpřístupněna zákazníkovi pro vlastní aktivaci. Naopak stav **Not Available** odebírá zákazníkovi možnost aktivovat šablonu. A konečně možnost **Force Activate** vynutí výběr a aktivaci šablony, čímž ji nastaví jako výchozí při vytvoření webu.
+Výběr **chování** umožňuje správci sítě definovat stav šablony při vytvoření zákaznického webu.
 
-#### Pluginy
+Ve stavu **A** **vailable** je šablona zpřístupněna zákazníkovi pro vlastní aktivaci. Naopak stav **Not Available** zákazníkovi odebere možnost šablonu aktivovat. Nakonec možnost **Force Activate** vynutí výběr a aktivaci šablony, čímž ji při vytvoření webu nastaví jako výchozí.
 
-Podobně jako záložka Themes, Ultimate Multisite umožňuje správci sítě definovat viditelnost pluginů pro zákazníky i jejich stav při vytvoření nového webu.
+#### Pluginy {#plugins}
 
-![Záložka Pluginy](/img/config/product-plugins.png)
+Podobně jako karta Šablony umožňuje Ultimate Multisite správci sítě definovat viditelnost pluginů pro zákazníky i jejich stav při vytvoření nového webu.
 
-Rozbalovací nabídka **visibility** umožňuje plugin buď zobrazit, nebo skrýt před zákazníkem při zobrazení na jeho webu prostřednictvím možnosti menu Plugins.
+![Karta Pluginy](/img/config/product-plugins.png)
 
-Správce sítě může dále manipulovat s chováním pluginů pomocí možností v rozbalovací nabídce behavior.
+Rozbalovací nabídka **viditelnost** umožňuje, aby byl plugin pro zákazníka buď viditelný, nebo skrytý při zobrazení na jeho webu prostřednictvím možnosti nabídky Pluginy.
 
-![Záložka Pluginy](/img/config/product-plugins.png)
+Správce sítě může dále upravovat chování pluginů pomocí možností v rozbalovacím seznamu chování.
 
-Výběr **Default** respektuje stav pluginu definovaný v šabloně webu vybrané zákazníkem. Pluginy aktivované v šabloně tedy zůstanou aktivované, když je šablona naklonována na web zákazníka.
+![Karta Pluginy](/img/config/product-plugins.png)
 
-**Force Activate** uvede plugin do aktivního stavu při vytvoření webu a naopak **Force Inactivate** deaktivuje plugin při vytvoření webu. V obou těchto případech může zákazník ručně změnit stav pluginu prostřednictvím menu WordPress Plugins.
+Volba **Default** respektuje stav pluginu definovaný v šabloně webu vybrané zákazníkem. Pluginy, které jsou v šabloně aktivované, tak zůstanou aktivované i po naklonování šablony na web zákazníka.
 
-Nastavení **Force Activate & Lock** funguje podobně, ale zabraňuje zákazníkovi ve změně stavu pluginu. Nastavení Force Activate and Lock tedy vynutí plugin do jeho aktivního stavu a zabrání zákazníkovi v jeho deaktivaci. Podobně nastavení **Force Inactivate & Lock** vynutí plugin do jeho neaktivního stavu a zabrání uživateli v aktivaci pluginu.
+Volba **Force Activate** uvede plugin při vytvoření webu do aktivního stavu a naopak **Force Inactivate** plugin při vytvoření webu deaktivuje. V obou těchto případech může zákazník stav pluginu ručně změnit prostřednictvím své nabídky Pluginy ve WordPress.
 
-Správce sítě může zvážit nastavení Force Activate & Lock a Force Inactivate & Lock v kombinaci se šablonami webů, protože pluginy a stavy pluginů v šablonách mohou být těmito nastaveními ovlivněny, pokud jsou vybrány.
+Nastavení **Force Activate & Lock** funguje podobně, ale zabrání zákazníkovi změnit stav pluginu. Nastavení Force Activate and Lock tedy vynutí aktivní stav pluginu a zabrání zákazníkovi jej deaktivovat. Podobně nastavení **Force Inactivate & Lock** vynutí neaktivní stav pluginu a zabrání uživateli plugin aktivovat.
 
-#### Reset omezení
+Správce sítě může zvážit nastavení Force Activate & Lock a Force Inactivate & Lock ve spojení se šablonami webů, protože pluginy a stavy pluginů v šablonách mohou být těmito nastaveními ovlivněny, pokud jsou vybrána.
 
-Záložka **Reset Limitations** resetuje všechny vlastní limity definované na produktu. Pro reset omezení klikněte na tlačítko **reset limitations**.
+#### Reset omezení {#reset-limitations}
 
-![Záložka Reset omezení](/img/config/product-reset-limitations.png)
+Karta **Reset omezení** resetuje všechny vlastní limity definované u produktu. Chcete-li omezení resetovat, klikněte na tlačítko **resetovat omezení**.
 
-Pro potvrzení akce přepněte **confirm reset** do aktivního stavu vpravo a klikněte na tlačítko **reset limitations**.
+![Karta Reset omezení](/img/config/product-reset-limitations.png)
 
-![Záložka Reset omezení](/img/config/product-reset-limitations.png)
+Pro potvrzení akce přepněte přepínač **potvrdit reset** doprava do aktivního stavu a klikněte na tlačítko **resetovat omezení**.
 
-## Úprava, duplikování nebo smazání produktu
+![Karta Reset omezení](/img/config/product-reset-limitations.png)
 
-Existující produkty lze upravovat, duplikovat nebo mazat přechodem na **Ultimate Multisite > Products** a najetím myší na název existujícího produktu.
+## Upravit, duplikovat nebo smazat produkt {#edit-duplicate-or-delete-product}
+
+Stávající produkty lze upravit, duplikovat nebo smazat tak, že přejdete na **Ultimate Multisite > Products** a najedete myší na název stávajícího produktu.
 
 ![Akce při najetí na produkt](/img/config/product-hover-actions.png)

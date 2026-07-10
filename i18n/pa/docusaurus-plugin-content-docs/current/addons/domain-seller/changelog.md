@@ -1,133 +1,154 @@
 ---
-title: ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਚੇਂਜ ਲੌਗ
+title: ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਤਬਦੀਲੀ ਲਾਗ
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Updates Ki Soochi (Changelog)
+# ਡੋਮੇਨ ਵਿਕਰੇਤਾ ਚੇਂਜਲੌਗ {#domain-seller-changelog}
 
-Version 1.1.0 - 2026-05-08 nu release hoya
-- Naya: ResellerClub, Enom, aur OpenSRS registrars ke liye DNS record banane ka option (add_dns_record) add kiya gaya
-- Fix: Default DNS Records parser ab {DOMAIN} aur {SITE_URL} tokens ko bhi handle kar leta hai
-- Fix: Domain selection checkout field ke slugs ko naam diya gaya (namespaced) taaki woh site_url se takra naein
+ਵਰਜਨ 1.3.0 - 2026-06-02 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+- ਨਵਾਂ: HostAfrica reseller ਬੈਲੈਂਸ ਬਹੁਤ ਘੱਟ ਹੋਣ ਤੇ network-admin ਚੇਤਾਵਨੀ ਜੋੜੀ
+- ਨਵਾਂ: ਨਵੇਂ ਰਜਿਸਟਰ ਕੀਤੇ ਡੋਮੇਨਾਂ ਦੀ network ਸਾਈਟ ਨਾਲ ਆਟੋਮੈਟਿਕ ਮੈਪਿੰਗ ਜੋੜੀ
+- ਸੁਧਾਰ: ਰਜਿਸਟਰੈਂਟ ਫੀਲਡ ਲੋੜਾਂ ਸਿਰਫ਼ ਨਵਾਂ ਡੋਮੇਨ ਰਜਿਸਟਰ ਕਰਦੇ ਸਮੇਂ ਲਾਗੂ ਕੀਤੀਆਂ
+- ਸੁਧਾਰ: ਮਾਨੀਟਰ ਬੈਲੈਂਸ ਨੋਟਿਸਾਂ ਨੂੰ ਖਾਰਜ ਕਰਨ ਯੋਗ ਬਣਾਇਆ
+- ਸੁਧਾਰ: ਯਕੀਨੀ ਬਣਾਇਆ ਕਿ WooCommerce ਰਜਿਸਟਰੈਂਟ ਬਿਲਿੰਗ ਵੇਰਵੇ ਸੁਰੱਖਿਅਤ ਰਹਿਣ
+- ਸੁਧਾਰ: ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਦੌਰਾਨ ਰਜਿਸਟਰੈਂਟ ਸੰਪਰਕ ਲੋੜਾਂ ਲਾਗੂ ਕੀਤੀਆਂ
+- ਸੁਧਾਰ: ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਉਤਪਾਦਾਂ ਨੂੰ 0% ਮਾਰਕਅੱਪ ਨਾਲ ਬਣਨ ਤੋਂ ਰੋਕਿਆ
+- ਸੁਧਾਰ: ਚੈਕਆਉਟ ਸੈਸ਼ਨ ਫਲੋ ਰਾਹੀਂ ਡੋਮੇਨ ਚੋਣਾਂ ਅਤੇ ਕੀਮਤਾਂ ਸੁਰੱਖਿਅਤ ਰੱਖੀਆਂ
+- ਸੁਧਾਰ: HostAfrica ਡੋਮੇਨ ਕੀਮਤ ਮੁਦਰਾ ਡਿਸਪਲੇ ਬਿਹਤਰ ਕੀਤਾ
+- ਸੁਧਾਰ: WP-core query-var ਅਣਮੈਲਾਂ ਨੂੰ ਰੋਕਣ ਲਈ ਚੈਕਆਉਟ ਫਾਰਮ-ਐਕਸ਼ਨ ਵਿਹਾਰ ਬਿਹਤਰ ਕੀਤਾ
+- ਬਿਹਤਰ ਕੀਤਾ: ਸੈਟਅੱਪ ਮਾਰਗਦਰਸ਼ਨ ਵਿੱਚ HostAfrica reseller ਕਨਫਿਗਰੇਸ਼ਨ ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਲਿੰਕ ਕੀਤਾ
 
-Version 1.0.8 - 2026-05-07 nu release hoya
-- Fix: ResellerClub domain pricing ab sahi API endpoint se live cost prices laata hai
+ਵਰਜਨ 1.2.0 - 2026-05-25 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+- ਨਵਾਂ: HostAfrica ਨੂੰ ਚੈਕਆਉਟ, ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ, ਲੁੱਕਅੱਪ, TLD/ਕੀਮਤ, ਰਜਿਸਟ੍ਰੇਸ਼ਨ, ਨਵੀਨੀਕਰਨ, ਟ੍ਰਾਂਸਫਰ, ਨੇਮਸਰਵਰ, DNS, EPP ਕੋਡ, ਰਜਿਸਟਰਾਰ ਲੌਕ, ਅਤੇ ID ਸੁਰੱਖਿਆ ਸਹਾਇਤਾ ਨਾਲ ਡੋਮੇਨ-ਵਿਕਰੀ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਵਜੋਂ ਜੋੜਿਆ
+- ਨਵਾਂ: Openprovider ਨੂੰ reseller ਕੀਮਤ, ਰਜਿਸਟ੍ਰੇਸ਼ਨ, ਨਵੀਨੀਕਰਨ, ਟ੍ਰਾਂਸਫਰ, ਨੇਮਸਰਵਰ, DNS, EPP ਕੋਡ, ਰਜਿਸਟਰਾਰ ਲੌਕ, WHOIS ਗੋਪਨੀਯਤਾ, ਅਤੇ TLD ਸਿੰਕ ਸਹਾਇਤਾ ਨਾਲ ਡੋਮੇਨ-ਵਿਕਰੀ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਵਜੋਂ ਜੋੜਿਆ
+- ਨਵਾਂ: Hostinger ਨੂੰ ਉਪਲਬਧਤਾ ਜਾਂਚਾਂ, ਰਜਿਸਟ੍ਰੇਸ਼ਨ, ਨੇਮਸਰਵਰ ਅੱਪਡੇਟਾਂ, ਰਜਿਸਟਰਾਰ ਲੌਕ, ਅਤੇ WHOIS ਗੋਪਨੀਯਤਾ ਲਈ ਕੋਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਤੋਂ ਸਾਂਝੇ Hostinger API ਟੋਕਨ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਡੋਮੇਨ-ਵਿਕਰੀ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਵਜੋਂ ਜੋੜਿਆ
+- ਬਿਹਤਰ ਕੀਤਾ: ਡਿਵੈਲਪਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਮਾਰਗਦਰਸ਼ਨ ਲਈ ਡੋਮੇਨ ਲਾਈਫਸਾਈਕਲ ਐਕਸ਼ਨ ਅਤੇ ਫਿਲਟਰ docblocks ਜੋੜੇ
+- ਬਿਹਤਰ ਕੀਤਾ: ਐਡਆਨ readme ਵਿੱਚ ਪਲੱਗਇਨ ਅਨੁਕੂਲਤਾ ਮੈਟਾਡਾਟਾ WordPress 7.0 ਤੱਕ ਅੱਪਡੇਟ ਕੀਤਾ
+- ਬਿਹਤਰ ਕੀਤਾ: ਆਉਣ ਵਾਲੀ ਰਿਲੀਜ਼ ਸਮਨਵਯ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਯੋਜਨਾ ਟੈਂਪਲੇਟ ਅੱਪਡੇਟ ਕੀਤੇ
 
-Version 1.0.7 - 2026-05-06 nu release hoya
-* Fix: ResellerClub test_connection ko zaroori tlds parameter (#224) bhejna shamil kiya gaya
+ਵਰਜਨ 1.1.0 - 2026-05-08 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+- ਨਵਾਂ: DNS ਰਿਕਾਰਡ ਬਣਾਉਣਾ (add_dns_record) ResellerClub, Enom, ਅਤੇ OpenSRS ਰਜਿਸਟਰਾਰਾਂ ਲਈ ਲਾਗੂ ਕੀਤਾ ਗਿਆ
+- ਸੁਧਾਰ: ਡਿਫਾਲਟ DNS ਰਿਕਾਰਡ ਪਾਰਸਰ ਹੁਣ {DOMAIN} ਅਤੇ {SITE_URL} ਟੋਕਨਾਂ ਨੂੰ ਸਹਿਣ ਕਰਦਾ ਹੈ
+- ਸੁਧਾਰ: site_url ਨਾਲ ਟਕਰਾਅ ਰੋਕਣ ਲਈ ਡੋਮੇਨ ਚੋਣ ਚੈਕਆਉਟ ਫੀਲਡ ਸਲੱਗਾਂ ਨੂੰ ਨੇਮਸਪੇਸ ਕੀਤਾ ਗਿਆ
 
-Version 1.0.6 - 2026-05-05 nu release hoya
-* Fix: ResellerClub domain registration ab behtar API response handling aur registry-driven provider routing ke saath sahi tarah se kaam karta hai
-* Fix: Register Domain admin page par user experience (UX) mein sudhaar
-* Removed: CyberPanel registrar integration
+ਵਰਜਨ 1.0.8 - 2026-05-07 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+- ਸੁਧਾਰ: ResellerClub ਡੋਮੇਨ ਕੀਮਤ ਹੁਣ ਸਹੀ API ਐਂਡਪੌਇੰਟ ਤੋਂ ਲਾਈਵ ਲਾਗਤ ਕੀਮਤਾਂ ਲਿਆਉਂਦੀ ਹੈ
 
-Version 1.0.5 - 2026-04-02 nu release hoya
-* Naya: Domain registration aur management ke liye GoDaddy registrar integration
-* Naya: NameSilo registrar integration
-* Naya: ResellerClub registrar integration
-* Naya: Domain kharidne aur map karne par auto-verify SES sending domain
-* Fix: Test environment mein Guard plugin constants ko redefinition se bachaya gaya
-* Fix: MySQL flags word-split ko install-wp-tests.sh mein sahi tarah se karta hai
+ਵਰਜਨ 1.0.7 - 2026-05-06 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* ਸੁਧਾਰ: ResellerClub test_connection ਲੋੜੀਂਦਾ tlds ਪੈਰਾਮੀਟਰ ਭੇਜਦਾ ਹੈ (#224)
 
-Version 1.0.4 - 2026-03-14 nu release hoya
-* **Fix:** Kuch missing css assets ko theek kiya gaya
-* **Fix:** Unavailable tlds se related error ko theek kiya gaya
+ਵਰਜਨ 1.0.6 - 2026-05-05 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* ਸੁਧਾਰ: ResellerClub ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਹੁਣ ਬਿਹਤਰ API ਜਵਾਬ ਹੈਂਡਲਿੰਗ ਅਤੇ ਰਜਿਸਟਰੀ-ਚਲਿਤ ਪ੍ਰਦਾਤਾ ਰੂਟਿੰਗ ਨਾਲ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰਦੀ ਹੈ
+* ਸੁਧਾਰ: Register Domain ਐਡਮਿਨ ਸਫ਼ਾ UX ਸੁਧਾਰ
+* ਹਟਾਇਆ: CyberPanel ਰਜਿਸਟਰਾਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
 
-Version 1.0.3 - 2026-03-09 nu release hoya
-* **Fix:** Checkout shortcode ke saath legacy signup template istemal karte waqt Vue reactive property errors (domain_option, selected_domain, domain_provider) ko theek kiya gaya
-* **Fix:** Domain selection checkout field mein subdomain input field ki misalignment aur zyada size ka text theek kiya gaya
-* **Fix:** Jab domain selection field maujood ho, toh "Your URL will be" preview block ko chhipa diya gaya
+ਵਰਜਨ 1.0.5 - 2026-04-02 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* ਨਵਾਂ: ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅਤੇ ਪ੍ਰਬੰਧਨ ਲਈ GoDaddy ਰਜਿਸਟਰਾਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* ਨਵਾਂ: NameSilo ਰਜਿਸਟਰਾਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* ਨਵਾਂ: ResellerClub ਰਜਿਸਟਰਾਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* ਨਵਾਂ: ਡੋਮੇਨ ਖਰੀਦ ਅਤੇ ਮੈਪਿੰਗ ਤੇ SES ਭੇਜਣ ਵਾਲੇ ਡੋਮੇਨ ਦੀ ਆਟੋ-ਪੁਸ਼ਟੀ
+* ਸੁਧਾਰ: ਟੈਸਟ ਵਾਤਾਵਰਣ ਵਿੱਚ ਪਲੱਗਇਨ ਕਾਂਸਟੈਂਟਾਂ ਨੂੰ ਦੁਬਾਰਾ ਪਰਿਭਾਸ਼ਿਤ ਹੋਣ ਤੋਂ ਬਚਾਇਆ
+* ਸੁਧਾਰ: MySQL ਫਲੈਗ install-wp-tests.sh ਵਿੱਚ ਠੀਕ ਤਰ੍ਹਾਂ ਸ਼ਬਦ-ਵੰਡੇ ਜਾਂਦੇ ਹਨ
 
-Version 1.0.2 - 2026-03-01 nu release hoya
-* **Improved:** Settings page se global markup settings hata diye gaye — ab pricing sirf product-wise hai
-* **Improved:** Settings page par quick navigation ke liye "Manage Domain Products" link add kiya gaya
-* **Improved:** Domain product settings ke liye zyada saaf field descriptions aur tooltips (catch-all vs TLD-specific, markup types, introductory pricing)
-* **Improved:** Settings page par behtar descriptions (search TLDs, renewals, DNS, notifications)
+ਵਰਜਨ 1.0.4 - 2026-03-14 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* **ਸੁਧਾਰ:** ਕੁਝ ਗੁੰਮ css ਐਸੈੱਟ
+* **ਸੁਧਾਰ:** ਅਣਉਪਲਬਧ tlds ਨਾਲ ਸੰਬੰਧਿਤ ਗਲਤੀ
 
-Version 1.0.1 - 2026-02-27 nu release hoya
+ਵਰਜਨ 1.0.3 - 2026-03-09 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* **ਸੁਧਾਰ:** ਚੈਕਆਉਟ shortcode ਨਾਲ legacy signup ਟੈਂਪਲੇਟ ਵਰਤਦੇ ਸਮੇਂ Vue reactive property ਗਲਤੀਆਂ (domain_option, selected_domain, domain_provider)
+* **ਸੁਧਾਰ:** ਡੋਮੇਨ ਚੋਣ ਚੈਕਆਉਟ ਫੀਲਡ ਵਿੱਚ ਸਬਡੋਮੇਨ ਇਨਪੁੱਟ ਫੀਲਡ ਦੀ ਗਲਤ ਅਲਾਈਨਮੈਂਟ ਅਤੇ ਬਹੁਤ ਵੱਡਾ ਟੈਕਸਟ
+* **ਸੁਧਾਰ:** ਜਦੋਂ ਡੋਮੇਨ ਚੋਣ ਫੀਲਡ ਮੌਜੂਦ ਹੋਵੇ ਤਾਂ "ਤੁਹਾਡਾ URL ਹੋਵੇਗਾ" ਪ੍ਰੀਵਿਊ ਬਲਾਕ ਲੁਕਾਓ
 
-* **New:** Bulk pricing management ke liye TLD import tool
-* **New:** Domain products ke liye introductory pricing support
-* **New:** Cypress ke saath E2E test suite
-* **New:** Domain lifecycle notifications ke liye Email templates
-* **New:** Admin domain registration modal par Registrant address fields, jo settings se pre-populate hote hain
-* **New:** Add, edit, aur delete record support ke saath Customer DNS management interface
-* **New:** Automatic domain mapping ke saath "Bring your own domain" checkout option
-* **New:** Checkout ke dauran domain name se auto-generate site URL
-* **New:** Settings mein default nameserver aur DNS record configuration
-* **New:** Core domain edit page par Domain registration details aur DNS management
-* **New:** Setup wizard ek default domain product auto-create karta hai jismein samajhdari se default values hoti hain
-* **New:** Sabhi configured providers par cron ke zariye daily automatic TLD sync
-* **New:** Per-product configuration ke saath WHOIS privacy protection (hamesha on, customer choice, ya disabled)
-* **New:** Pricing display aur dark mode support ke saath WHOIS privacy checkout checkbox
-* **New:** Manual domain registration ke liye Register Domain admin page
-* **New:** Ultimate Multisite update server ke zariye automatic plugin updates
-* **New:** Product list table mein domain product type filter tab jiske saath purple badge styling hai
-* **New:** Domain checkout form par Registrant contact fields (name, address, city, state, postal code, country, phone)
-* **New:** Registrar API ko call karne se pehle Registrant field validation, jiske saath saaf error messages hain
-* **New:** Domain registration events ke liye provider-specific log channels (jaise. domain-seller-namecheap.log)
-* **New:** Main registration/signup checkout form par Registrant contact fields (jab domain register kiya ja raha ho toh dikhte hain)
-* **Improved:** Domain Search checkout field ko unified Domain Selection field se badla gaya, jo subdomain, register, aur existing domain tabs ko support karta hai
-* **Improved:** Domain product settings ko product edit page par core widget system ke zariye inline render kiya gaya
-* **Improved:** Customer domain info ko standalone metabox ki jagah core domain mapping widget mein hook kiya gaya
-* **Improved:** TLD import wizard ko sabhi providers se ek-click sync tak saral banaya gaya
-* **Improved:** Namecheap domain availability ab tez search ke liye batch API call istemal karta hai
-* **Improved:** Namecheap pricing API sahi parameters aur response parsing istemal karta hai
-* **Improved:** TLD storage ko ek single network option mein centralize kiya gaya
-* **Improved:** DNS changes, transfers, aur config application ke liye Domain activity logging
-* **Improved:** OpenSRS ke liye IANA master list ke saath full TLD sync aur batch validation
-* **Improved:** Namecheap ke liye paginated API requests ke saath full TLD sync
-* **Improved:** Legacy provider classes ko Integration Registry pattern se badla gaya
-* **Improved:** DNS aur transfer configuration ke saath Settings panel
-* **Improved:** Phone numbers ko automatically +CC.NNN registrar format mein format kiya gaya
-* **Improved:** Phone field validation submission se pehle formatting characters hata deta hai
-* **Improved:** Version requirement ko Ultimate Multisite 2.4.12 tak badhaya gaya jiske saath saaf notice hai
-* **Improved:** CI workflow addon aur core plugin dono ke liye proper checkout istemal karta hai
-* **Improved:** prepare_registrant_info() checkout-saved user meta se padhta hai, jismein billing address fallback hai
-* **Fixed:** Checkout ke dauran non-logged-in users ke liye Domain search AJAX fail ho raha tha
-* **Fixed:** Checkout ke dauran non-logged-in users ke liye Domain pricing AJAX fail ho raha tha
-* **Fixed:** Spyc class redeclaration fatal error jab WP-CLI commands chalaye jaate hain
-* **Fixed:** Namecheap sandbox API timeout bahut kam tha
-* **Fixed:** Domain search Select button text green background par visible nahi tha
-* **Fixed:** Domain registration "RegistrantFirstName is Missing" error ke saath fail ho raha tha kyunki contact info missing thi
-* **Fixed:** Domain record blog_id=0 ke saath create ho raha tha jab checkout time par site maujood nahi thi
-* **Fixed:** Default TLDs setting ko parsed array ki jagah string ke roop mein return kiya ja raha tha
-* **Removed:** Standalone Domain Management admin page — ab core domain pages ke zariye handle hota hai
+ਵਰਜਨ 1.0.2 - 2026-03-01 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
+* **ਬਿਹਤਰ ਕੀਤਾ:** ਸੈਟਿੰਗਾਂ ਸਫ਼ੇ ਤੋਂ ਗਲੋਬਲ ਮਾਰਕਅੱਪ ਸੈਟਿੰਗਾਂ ਹਟਾਈਆਂ — ਕੀਮਤ ਹੁਣ ਸਿਰਫ਼ ਪ੍ਰਤੀ-ਉਤਪਾਦ ਹੈ
+* **ਬਿਹਤਰ ਕੀਤਾ:** ਤੇਜ਼ ਨੇਵੀਗੇਸ਼ਨ ਲਈ ਸੈਟਿੰਗਾਂ ਸਫ਼ੇ ਤੇ "ਡੋਮੇਨ ਉਤਪਾਦ ਪ੍ਰਬੰਧਿਤ ਕਰੋ" ਲਿੰਕ ਜੋੜਿਆ
+* **ਬਿਹਤਰ ਕੀਤਾ:** ਡੋਮੇਨ ਉਤਪਾਦ ਸੈਟਿੰਗਾਂ ਲਈ ਹੋਰ ਸਪਸ਼ਟ ਫੀਲਡ ਵੇਰਵੇ ਅਤੇ ਟੂਲਟਿਪਸ (catch-all ਵਿਰੁੱਧ TLD-ਖਾਸ, ਮਾਰਕਅੱਪ ਕਿਸਮਾਂ, ਪਰਿਚਯਾਤਮਕ ਕੀਮਤ)
+* **ਬਿਹਤਰ ਕੀਤਾ:** ਸੈਟਿੰਗਾਂ ਸਫ਼ੇ ਭਰ ਵਿੱਚ ਬਿਹਤਰ ਵੇਰਵੇ (TLDs ਖੋਜ, ਨਵੀਨੀਕਰਨ, DNS, ਸੂਚਨਾਵਾਂ)
 
-Version 1.0.0 - 2025-09-28 nu release hoya
+ਵਰਜਨ 1.0.1 - 2026-02-27
 
-**Ultimate Multisite v2 ke liye Major Rewrite**
+* **ਨਵਾਂ:** ਬਲਕ ਕੀਮਤ ਪ੍ਰਬੰਧਨ ਲਈ TLD ਆਯਾਤ ਟੂਲ
+* **ਨਵਾਂ:** ਡੋਮੇਨ ਉਤਪਾਦਾਂ ਲਈ ਪਰਿਚਯਾਤਮਕ ਕੀਮਤ ਸਹਾਇਤਾ
+* **ਨਵਾਂ:** Cypress ਨਾਲ E2E ਟੈਸਟ ਸੂਟ
+* **ਨਵਾਂ:** ਡੋਮੇਨ ਜੀਵਨਚੱਕਰ ਸੂਚਨਾਵਾਂ ਲਈ ਈਮੇਲ ਟੈਮਪਲੇਟ
+* **ਨਵਾਂ:** ਐਡਮਿਨ ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਮੋਡਲ ਉੱਤੇ ਰਜਿਸਟਰੈਂਟ ਪਤਾ ਖੇਤਰ, ਸੈਟਿੰਗਾਂ ਤੋਂ ਪਹਿਲਾਂ-ਭਰੇ ਹੋਏ
+* **ਨਵਾਂ:** ਰਿਕਾਰਡ ਜੋੜਨ, ਸੋਧਣ ਅਤੇ ਮਿਟਾਉਣ ਦੀ ਸਹਾਇਤਾ ਨਾਲ ਗਾਹਕ DNS ਪ੍ਰਬੰਧਨ ਇੰਟਰਫੇਸ
+* **ਨਵਾਂ:** ਆਪਣੇ ਆਪ ਡੋਮੇਨ ਮੈਪਿੰਗ ਨਾਲ "ਆਪਣਾ ਡੋਮੇਨ ਲਿਆਓ" ਚੈਕਆਉਟ ਵਿਕਲਪ
+* **ਨਵਾਂ:** ਚੈਕਆਉਟ ਦੌਰਾਨ ਡੋਮੇਨ ਨਾਮ ਤੋਂ ਆਪਣੇ ਆਪ ਸਾਈਟ URL ਬਣਾਓ
+* **ਨਵਾਂ:** ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਡਿਫਾਲਟ ਨੇਮਸਰਵਰ ਅਤੇ DNS ਰਿਕਾਰਡ ਕਨਫਿਗਰੇਸ਼ਨ
+* **ਨਵਾਂ:** ਕੋਰ ਡੋਮੇਨ ਸੋਧ ਪੰਨੇ ਉੱਤੇ ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਵੇਰਵੇ ਅਤੇ DNS ਪ੍ਰਬੰਧਨ
+* **ਨਵਾਂ:** ਸੈਟਅੱਪ ਵਿਜ਼ਾਰਡ ਸਮਝਦਾਰ ਡਿਫਾਲਟਾਂ ਨਾਲ ਇੱਕ ਡਿਫਾਲਟ ਡੋਮੇਨ ਉਤਪਾਦ ਆਪਣੇ ਆਪ ਬਣਾਉਂਦਾ ਹੈ
+* **ਨਵਾਂ:** ਸਾਰੇ ਕਨਫਿਗਰ ਕੀਤੇ ਪ੍ਰਦਾਤਾਵਾਂ ਵਿੱਚ cron ਰਾਹੀਂ ਰੋਜ਼ਾਨਾ ਆਪਣੇ ਆਪ TLD ਸਿੰਕ
+* **ਨਵਾਂ:** ਪ੍ਰਤੀ-ਉਤਪਾਦ ਕਨਫਿਗਰੇਸ਼ਨ ਨਾਲ WHOIS ਪਰਦੇਦਾਰੀ ਸੁਰੱਖਿਆ (ਹਮੇਸ਼ਾ ਚਾਲੂ, ਗਾਹਕ ਦੀ ਚੋਣ, ਜਾਂ ਅਯੋਗ)
+* **ਨਵਾਂ:** ਕੀਮਤ ਦਿਖਾਵਟ ਅਤੇ ਡਾਰਕ ਮੋਡ ਸਹਾਇਤਾ ਨਾਲ WHOIS ਪਰਦੇਦਾਰੀ ਚੈਕਆਉਟ ਚੈਕਬਾਕਸ
+* **ਨਵਾਂ:** ਮੈਨੂਅਲ ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਲਈ Register Domain ਐਡਮਿਨ ਪੰਨਾ
+* **ਨਵਾਂ:** Ultimate Multisite ਅਪਡੇਟ ਸਰਵਰ ਰਾਹੀਂ ਆਪਣੇ ਆਪ plugin ਅਪਡੇਟ
+* **ਨਵਾਂ:** ਉਤਪਾਦ ਸੂਚੀ ਟੇਬਲ ਵਿੱਚ ਜਾਮਨੀ ਬੈਜ ਸਟਾਈਲਿੰਗ ਨਾਲ ਡੋਮੇਨ ਉਤਪਾਦ ਕਿਸਮ ਫਿਲਟਰ ਟੈਬ
+* **ਨਵਾਂ:** ਡੋਮੇਨ ਚੈਕਆਉਟ ਫਾਰਮ ਉੱਤੇ ਰਜਿਸਟਰੈਂਟ ਸੰਪਰਕ ਖੇਤਰ (ਨਾਮ, ਪਤਾ, ਸ਼ਹਿਰ, ਸੂਬਾ, ਡਾਕ ਕੋਡ, ਦੇਸ਼, ਫੋਨ)
+* **ਨਵਾਂ:** ਸਪਸ਼ਟ ਗਲਤੀ ਸੁਨੇਹਿਆਂ ਨਾਲ ਰਜਿਸਟਰਾਰ API ਨੂੰ ਕਾਲ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਰਜਿਸਟਰੈਂਟ ਖੇਤਰ ਵੈਲੀਡੇਸ਼ਨ
+* **ਨਵਾਂ:** ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਘਟਨਾਵਾਂ ਲਈ ਪ੍ਰਦਾਤਾ-ਖਾਸ ਲੌਗ ਚੈਨਲ (ਜਿਵੇਂ domain-seller-namecheap.log)
+* **ਨਵਾਂ:** ਮੁੱਖ ਰਜਿਸਟ੍ਰੇਸ਼ਨ/ਸਾਈਨਅੱਪ ਚੈਕਆਉਟ ਫਾਰਮ ਉੱਤੇ ਰਜਿਸਟਰੈਂਟ ਸੰਪਰਕ ਖੇਤਰ (ਡੋਮੇਨ ਰਜਿਸਟਰ ਕਰਦੇ ਸਮੇਂ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ)
+* **ਸੁਧਾਰਿਆ:** Domain Search ਚੈਕਆਉਟ ਖੇਤਰ ਨੂੰ ਇਕਸਾਰ Domain Selection ਖੇਤਰ ਨਾਲ ਬਦਲਿਆ, ਜੋ ਸਬਡੋਮੇਨ, ਰਜਿਸਟਰ ਅਤੇ ਮੌਜੂਦਾ ਡੋਮੇਨ ਟੈਬਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ
+* **ਸੁਧਾਰਿਆ:** ਡੋਮੇਨ ਉਤਪਾਦ ਸੈਟਿੰਗਾਂ ਕੋਰ ਵਿਜੇਟ ਸਿਸਟਮ ਰਾਹੀਂ ਉਤਪਾਦ ਸੋਧ ਪੰਨੇ ਉੱਤੇ ਇਨਲਾਈਨ ਰੈਂਡਰ ਹੁੰਦੀਆਂ ਹਨ
+* **ਸੁਧਾਰਿਆ:** ਗਾਹਕ ਡੋਮੇਨ ਜਾਣਕਾਰੀ ਸਟੈਂਡਅਲੋਨ ਮੈਟਾਬਾਕਸ ਦੀ ਬਜਾਏ ਕੋਰ ਡੋਮੇਨ ਮੈਪਿੰਗ ਵਿਜੇਟ ਵਿੱਚ ਹੁੱਕ ਹੁੰਦੀ ਹੈ
+* **ਸੁਧਾਰਿਆ:** TLD ਆਯਾਤ ਵਿਜ਼ਾਰਡ ਸਾਰੇ ਪ੍ਰਦਾਤਾਵਾਂ ਤੋਂ ਇੱਕ-ਕਲਿੱਕ ਸਿੰਕ ਲਈ ਸਰਲ ਕੀਤਾ ਗਿਆ
+* **ਸੁਧਾਰਿਆ:** Namecheap ਡੋਮੇਨ ਉਪਲਬਧਤਾ ਤੇਜ਼ ਖੋਜ ਲਈ ਬੈਚ API ਕਾਲ ਵਰਤਦੀ ਹੈ
+* **ਸੁਧਾਰਿਆ:** Namecheap ਕੀਮਤ API ਸਹੀ ਪੈਰਾਮੀਟਰ ਅਤੇ ਜਵਾਬ ਪਾਰਸਿੰਗ ਵਰਤਦੀ ਹੈ
+* **ਸੁਧਾਰਿਆ:** TLD ਸਟੋਰੇਜ ਨੂੰ ਇੱਕੋ ਨੈੱਟਵਰਕ ਵਿਕਲਪ ਵਿੱਚ ਕੇਂਦਰੀਕ੍ਰਿਤ ਕੀਤਾ
+* **ਸੁਧਾਰਿਆ:** DNS ਬਦਲਾਵਾਂ, ਟ੍ਰਾਂਸਫਰਾਂ ਅਤੇ ਕਨਫਿਗਰੇਸ਼ਨ ਲਾਗੂ ਕਰਨ ਲਈ ਡੋਮੇਨ ਗਤੀਵਿਧੀ ਲੌਗਿੰਗ
+* **ਸੁਧਾਰਿਆ:** ਬੈਚ ਵੈਲੀਡੇਸ਼ਨ ਨਾਲ IANA ਮਾਸਟਰ ਸੂਚੀ ਵਰਤਦੇ ਹੋਏ OpenSRS ਲਈ ਪੂਰਾ TLD ਸਿੰਕ
+* **ਸੁਧਾਰਿਆ:** ਪੇਜੀਨੇਟ ਕੀਤੀਆਂ API ਬੇਨਤੀਆਂ ਨਾਲ Namecheap ਲਈ ਪੂਰਾ TLD ਸਿੰਕ
+* **ਸੁਧਾਰਿਆ:** ਲੈਗੇਸੀ ਪ੍ਰਦਾਤਾ ਕਲਾਸਾਂ ਨੂੰ Integration Registry ਪੈਟਰਨ ਨਾਲ ਬਦਲਿਆ
+* **ਸੁਧਾਰਿਆ:** DNS ਅਤੇ ਟ੍ਰਾਂਸਫਰ ਕਨਫਿਗਰੇਸ਼ਨ ਨਾਲ ਸੈਟਿੰਗਾਂ ਪੈਨਲ
+* **ਸੁਧਾਰਿਆ:** ਫੋਨ ਨੰਬਰ ਆਪਣੇ ਆਪ +CC.NNN ਰਜਿਸਟਰਾਰ ਫਾਰਮੈਟ ਵਿੱਚ ਫਾਰਮੈਟ ਕੀਤੇ ਜਾਂਦੇ ਹਨ
+* **ਸੁਧਾਰਿਆ:** ਫੋਨ ਖੇਤਰ ਵੈਲੀਡੇਸ਼ਨ ਜਮ੍ਹਾਂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਫਾਰਮੈਟਿੰਗ ਅੱਖਰ ਹਟਾਉਂਦੀ ਹੈ
+* **ਸੁਧਾਰਿਆ:** ਵਰਜਨ ਲੋੜ ਨੂੰ ਹੋਰ ਸਪਸ਼ਟ ਨੋਟਿਸ ਨਾਲ Ultimate Multisite 2.4.12 ਤੱਕ ਵਧਾਇਆ ਗਿਆ
+* **ਸੁਧਾਰਿਆ:** CI ਵਰਕਫਲੋ ਐਡਆਨ ਅਤੇ ਕੋਰ plugin ਦੋਵਾਂ ਲਈ ਢੁੱਕਵਾਂ ਚੈਕਆਉਟ ਵਰਤਦਾ ਹੈ
+* **ਸੁਧਾਰਿਆ:** prepare_registrant_info() ਬਿਲਿੰਗ ਪਤਾ ਫਾਲਬੈਕ ਨਾਲ ਚੈਕਆਉਟ-ਸੰਭਾਲੇ ਯੂਜ਼ਰ ਮੈਟਾ ਤੋਂ ਪੜ੍ਹਦਾ ਹੈ
+* **ਠੀਕ ਕੀਤਾ:** ਚੈਕਆਉਟ ਦੌਰਾਨ ਲੌਗਇਨ ਨਾ ਕੀਤੇ ਯੂਜ਼ਰਾਂ ਲਈ ਡੋਮੇਨ ਖੋਜ AJAX ਫੇਲ੍ਹ ਹੋ ਰਹੀ ਸੀ
+* **ਠੀਕ ਕੀਤਾ:** ਚੈਕਆਉਟ ਦੌਰਾਨ ਲੌਗਇਨ ਨਾ ਕੀਤੇ ਯੂਜ਼ਰਾਂ ਲਈ ਡੋਮੇਨ ਕੀਮਤ AJAX ਫੇਲ੍ਹ ਹੋ ਰਹੀ ਸੀ
+* **ਠੀਕ ਕੀਤਾ:** WP-CLI ਕਮਾਂਡਾਂ ਚਲਾਉਂਦੇ ਸਮੇਂ Spyc ਕਲਾਸ ਮੁੜ-ਘੋਸ਼ਣਾ ਘਾਤਕ ਗਲਤੀ
+* **ਠੀਕ ਕੀਤਾ:** Namecheap ਸੈਂਡਬਾਕਸ API ਟਾਈਮਆਉਟ ਬਹੁਤ ਛੋਟਾ ਸੀ
+* **ਠੀਕ ਕੀਤਾ:** ਡੋਮੇਨ ਖੋਜ Select ਬਟਨ ਦਾ ਟੈਕਸਟ ਹਰੇ ਪਿਛੋਕੜ ਉੱਤੇ ਦਿਖਾਈ ਨਹੀਂ ਦੇ ਰਿਹਾ ਸੀ
+* **ਠੀਕ ਕੀਤਾ:** ਸੰਪਰਕ ਜਾਣਕਾਰੀ ਗੁੰਮ ਹੋਣ ਕਰਕੇ "RegistrantFirstName is Missing" ਗਲਤੀ ਨਾਲ ਡੋਮੇਨ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਫੇਲ੍ਹ ਹੋ ਰਹੀ ਸੀ
+* **ਠੀਕ ਕੀਤਾ:** ਜਦੋਂ ਚੈਕਆਉਟ ਵੇਲੇ ਸਾਈਟ ਹਾਲੇ ਮੌਜੂਦ ਨਹੀਂ ਸੀ, ਡੋਮੇਨ ਰਿਕਾਰਡ blog_id=0 ਨਾਲ ਬਣਾਇਆ ਗਿਆ
+* **ਠੀਕ ਕੀਤਾ:** ਡਿਫਾਲਟ TLDs ਸੈਟਿੰਗ ਪਾਰਸ ਕੀਤੀ ਐਰੇ ਦੀ ਬਜਾਏ ਸਟਰਿੰਗ ਵਜੋਂ ਵਾਪਸ ਆਈ
+* **ਹਟਾਇਆ:** ਸਟੈਂਡਅਲੋਨ Domain Management ਐਡਮਿਨ ਪੰਨਾ — ਹੁਣ ਕੋਰ ਡੋਮੇਨ ਪੰਨਿਆਂ ਰਾਹੀਂ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ
 
-* **New:** Modern PHP 7.4+ architecture ke saath poora rewrite
-* **New:** Ultimate Multisite v2 checkout system ke saath seamless integration
-* **New:** Flexible pricing options ke saath Domain product management
-* **New:** Multiple domain provider support architecture
-* **New:** Auto-renewal aur subscription integration
-* **New:** Customer domain management interface
-* **New:** Admin domain monitoring aur logs
-* **New:** Domain products ke liye Coupon support
-* **New:** Comprehensive settings management
-* **New:** Developer-friendly extensible codebase
-* **Improved:** OpenSRS provider ko full feature support ke saath update kiya gaya
-* **Improved:** Ultimate Multisite v2 ke saath consistent modern UI
-* **Fixed:** Saare deprecated v1 code ko v2 standards tak update kiya gaya
-* **Removed:** Legacy v1 compatibility (breaking change)
+ਵਰਜਨ 1.0.0 - 2025-09-28 ਨੂੰ ਜਾਰੀ ਕੀਤਾ ਗਿਆ
 
-### Previous Versions (v1 Legacy)
+**Ultimate Multisite v2 ਲਈ ਵੱਡਾ ਮੁੜ-ਲਿਖਾਅ**
 
-### Version 0.0.3 - 20/08/2019
+* **ਨਵਾਂ:** ਆਧੁਨਿਕ PHP 7.4+ ਆਰਕੀਟੈਕਚਰ ਨਾਲ ਪੂਰਾ ਮੁੜ-ਲਿਖਾਅ
+* **ਨਵਾਂ:** Ultimate Multisite v2 ਚੈਕਆਉਟ ਸਿਸਟਮ ਨਾਲ ਬਿਨਾ ਰੁਕਾਵਟ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* **ਨਵਾਂ:** ਲਚਕੀਲੇ ਕੀਮਤ ਵਿਕਲਪਾਂ ਨਾਲ ਡੋਮੇਨ ਉਤਪਾਦ ਪ੍ਰਬੰਧਨ
+* **ਨਵਾਂ:** ਕਈ ਡੋਮੇਨ ਪ੍ਰਦਾਤਾਵਾਂ ਦੀ ਸਹਾਇਤਾ ਆਰਕੀਟੈਕਚਰ
+* **ਨਵਾਂ:** ਆਟੋ-ਰੀਨਿਊਅਲ ਅਤੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* **ਨਵਾਂ:** ਗਾਹਕ ਡੋਮੇਨ ਪ੍ਰਬੰਧਨ ਇੰਟਰਫੇਸ
+* **ਨਵਾਂ:** ਐਡਮਿਨ ਡੋਮੇਨ ਨਿਗਰਾਨੀ ਅਤੇ ਲੌਗ
+* **ਨਵਾਂ:** ਡੋਮੇਨ ਉਤਪਾਦਾਂ ਲਈ ਕੂਪਨ ਸਹਾਇਤਾ
+* **ਨਵਾਂ:** ਵਿਸਤ੍ਰਿਤ ਸੈਟਿੰਗਾਂ ਪ੍ਰਬੰਧਨ
+* **ਨਵਾਂ:** ਡਿਵੈਲਪਰ-ਅਨੁਕੂਲ ਵਿਸਤਾਰਯੋਗ ਕੋਡਬੇਸ
+* **ਸੁਧਾਰਿਆ:** ਪੂਰੀ ਫੀਚਰ ਸਹਾਇਤਾ ਨਾਲ OpenSRS ਪ੍ਰਦਾਤਾ ਅਪਡੇਟ ਕੀਤਾ
+* **ਸੁਧਾਰਿਆ:** Ultimate Multisite v2 ਨਾਲ ਸੰਗਤ ਆਧੁਨਿਕ UI
+* **ਠੀਕ ਕੀਤਾ:** ਸਾਰਾ ਅਪ੍ਰਚਲਿਤ v1 ਕੋਡ v2 ਮਿਆਰਾਂ ਅਨੁਸਾਰ ਅਪਡੇਟ ਕੀਤਾ
+* **ਹਟਾਇਆ:** ਲੈਗੇਸੀ v1 ਅਨੁਕੂਲਤਾ (ਤੋੜੂ ਬਦਲਾਵ)
 
-* Fixed: Groundhogg CRM ke saath incompatibility
-* Note: Yeh aakhri v1-compatible release tha
+### ਪਿਛਲੇ ਵਰਜਨ (v1 ਲੈਗੇਸੀ) {#previous-versions-v1-legacy}
 
-### Version 0.0.2 - 07/12/2018
+### ਵਰਜਨ 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Fixed: License Key field hata diya gaya
-* Fixed: Plan tabs missing the jab feature plugin active hota hai
-* Improved: Registration field par skip button add kiya gaya
+* ਠੀਕ ਕੀਤਾ: Groundhogg CRM ਨਾਲ ਅਣਅਨੁਕੂਲਤਾ
+* ਨੋਟ: ਇਹ ਆਖਰੀ v1-ਅਨੁਕੂਲ ਰਿਲੀਜ਼ ਸੀ
 
-### Version 0.0.1 - Initial Release
+### ਵਰਜਨ 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* WP Ultimo v1 ke liye basic OpenSRS integration
-* Simple domain search aur registration
-* Plan-based domain permissions
+* ਠੀਕ ਕੀਤਾ: License Key ਖੇਤਰ ਹਟਾਇਆ
+* ਠੀਕ ਕੀਤਾ: ਜਦੋਂ ਫੀਚਰ plugin ਸਰਗਰਮ ਹੁੰਦਾ ਹੈ ਤਾਂ ਪਲਾਨ ਟੈਬਾਂ ਗੁੰਮ ਹੁੰਦੀਆਂ ਹਨ
+* ਸੁਧਾਰਿਆ: ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਖੇਤਰ ਉੱਤੇ ਇੱਕ ਸਕਿਪ ਬਟਨ ਜੋੜਿਆ
+
+### ਵਰਜਨ 0.0.1 - ਸ਼ੁਰੂਆਤੀ ਰਿਲੀਜ਼ {#version-001---initial-release}
+
+* WP Ultimo v1 ਲਈ ਬੁਨਿਆਦੀ OpenSRS ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+* ਸਧਾਰਣ ਡੋਮੇਨ ਖੋਜ ਅਤੇ ਰਜਿਸਟ੍ਰੇਸ਼ਨ
+* ਪਲਾਨ-ਅਧਾਰਤ ਡੋਮੇਨ ਇਜਾਜ਼ਤਾਂ

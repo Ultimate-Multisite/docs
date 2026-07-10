@@ -3,21 +3,21 @@ title: Ho fana'a le cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ho Lihlelo le cPanel
+# Ho Lihlelo le cPanel {#cpanel-integration}
 
 Ho fana ka tsela efe ho ba le sehlopha sa cPanel.
 
-## Le Litsoiso
+## Le Litsoiso {#overview}
 
 cPanel ke e le seka se ka leboha seka se ka seka se ka seka se ka seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka seka se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka leboha se ka le
 
-## Boitshwaro
+## Boitshwaro {#features}
 
 - Hoetsoho ho fetola domain e le add-on ka cPanel
 - Hoetsoho ho fetola subdomain ka cPanel (ho baithuti tsa subdomain multisite)
 - Ho faka domain haholo ha mapping a fetolwa
 
-## Hoelo
+## Hoelo {#requirements}
 
 Hoelo le fa tsela e fana ka ho ba le hoelo ea hau ka file ya hau ya `wp-config.php`:
 
@@ -34,16 +34,16 @@ define('WU_CPANEL_PORT', 2083); // Le tšepo e le 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Le tšepo e le /public_html
 ```
 
-## Litlhokwa tsa ho Setela (Setup Instructions)
+## Litlhokwa tsa ho Setela (Setup Instructions) {#setup-instructions}
 
-### 1. Get Credentials ea cPanel ea hau
+### 1. Get Credentials ea cPanel ea hau {#1-get-your-cpanel-credentials}
 
 (Le tla go thusa ho utloha litšepo tsa hau tsa cPanel.)
 
 1. Oa le tsela ho utloa leana la username le password ea hau ho ba le bohlokoa ka sebediso sa hau sa hosting.
 2. Utloi leana la cPanel (cPanel host) haholo (o le thata `cpanel.yourdomain.com` kapa `yourdomain.com:2083`).
 
-### 2. Thaba Constants ho wp-config.php
+### 2. Thaba Constants ho wp-config.php {#2-add-constants-to-wp-configphp}
 
 ```php
 // Custom logic when checkout completes
@@ -70,7 +70,7 @@ define('WU_CPANEL_PORT', 2083); // Fetola ha u fetola ha cPanel ea hau e u rata 
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Fetola ha u fetola ha directory ya document e fapaneng
 ```
 
-### 3. Baile ho Ho Hlahlobo (Enable the Integration)
+### 3. Baile ho Ho Hlahlobo (Enable the Integration) {#3-enable-the-integration}
 
 1. Ha le WordPress admin ya hau, fana ka Ultimate Multisite > Settings.
 2. Leha sefana la "Domain Mapping" (Mapping ea Domain).
@@ -78,9 +78,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Fetola ha u fetola ha directory
 4. Baile integration ya cPanel.
 5. Leha sefana la "Save Changes" (Ho Hlahloba Changelo).
 
-## Eona e Ho Baola Kae (How It Works)
+## Eona e Ho Baola Kae (How It Works) {#how-it-works}
 
-### Domain e Tlhaloso (Addon Domains)
+### Domain e Tlhaloso (Addon Domains) {#addon-domains}
 
 Ha o fana fa domain e hlophiswe ka Ultimate Multisite:
 
@@ -88,7 +88,7 @@ Ha o fana fa domain e hlophiswe ka Ultimate Multisite:
 2. Domain e fetoga ho fana ka direre la hau (root directory).
 3. Ha domain mapping e fetoga, ho fana'a (integration) ho fetoga domain e le addon domain ho cPanel.
 
-### Subdomaine
+### Subdomaine {#subdomains}
 
 Ho lona le tsela e ntle ho fana ka monate oa subdomaine. Ho feta moo sefapiso se se fapaneng sa site se se fetola:
 
@@ -96,7 +96,7 @@ Ho lona le tsela e ntle ho fana ka monate oa subdomaine. Ho feta moo sefapiso se
 2. E fana'a tšepo (request) ho cPanel API ho fana'a leela la subdomain.
 3. Subdomain e fana'a ho fana'a leela la directory la hau (root directory).
 
-## Litlhaka tse mmele (Important Notes)
+## Litlhaka tse mmele (Important Notes) {#important-notes}
 
 Ho fana'a le ho fetola:
 
@@ -106,9 +106,9 @@ Ho fana'a le ho fetola:
 
 Ho fana'a le ho fetola (integration) haholo ka tsela ea DNS. Ho hloka ho fana ka domain ea hau ka IP address ea server ea hau.
 
-## Ho Fetola (Troubleshooting)
+## Ho Fetola (Troubleshooting) {#troubleshooting}
 
-### Morero le Hoelo ea API
+### Morero le Hoelo ea API {#api-connection-issues}
 
 - Rehle hore o re le thata hore lemoho la username le password ea cPanel e le eona.
 - Rehle hore o re le thata hore lemoho la host ea cPanel e le eona le ho fihlela ka bonako.
@@ -116,13 +116,13 @@ Ho fana'a le ho fetola (integration) haholo ka tsela ea DNS. Ho hloka ho fana ka
 
 - A reka le ho batla hore u tle u sebelise URL efe le fetolehang ea host (e.a., `https://cpanel.yourdomain.com`).
 
-### Domain E ne a fetileng
+### Domain E ne a fetileng {#domain-not-added}
 
 - Re le log (logs) ea Ultimate Multisite ho hlola sehlopha se leboho.
 - Re le fa domain e ne e fetileng ka cPanel.
 - Re le fa akao ea cPanel ea hau e ne e fetileng ka limit ea addon domains kapa subdomains.
 
-### Moruo a Sertifikati (SSL)
+### Moruo a Sertifikati (SSL) {#ssl-certificate-issues}
 
 - Ho fana'a le ho fana'a sertifikati (SSL) haholo.
 - O tla hloka ho u sebelise zitsela tsa cPanel tsa SSL/TLS kapa tsela ya AutoSSL ho fana'a sertifikati tsa domain ea hau.

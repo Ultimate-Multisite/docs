@@ -3,13 +3,13 @@ title: Tilpasset udvikling hjælp
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sådan får du specialiseret udviklingshjælp fra Codeable?
+# Sådan får du specialiseret udviklingshjælp fra Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Nogle gange har vi virkelig brug for nogle fantastiske tilpasninger for at få vores netværksflows præcis, som vi ønsker dem. Hvis det er det, du leder efter, anbefaler vi [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), et sted hvor du kan finde erfarne udviklere med ekspertise inden for Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) er en platform, der forbinder kunder med kvalificerede WordPress freelance-udviklere, som kan arbejde på projekter af enhver størrelse. De har en grundig ansøgningsproces for at sikre, at du bliver matchet med eksperter, der specifikt er kvalificeret til den opgave, du har i tankerne.
 
-### Sådan opretter du et projekt i Codeable?
+### Sådan opretter du et projekt i Codeable? {#how-to-create-a-project-in-codeable}
 
 Først skal du gå til [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) og klikke på knappen **Start a Project** (Start et projekt).
 

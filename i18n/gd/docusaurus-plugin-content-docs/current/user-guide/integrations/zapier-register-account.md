@@ -61,7 +61,7 @@ title: >-
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Register an account via Zapier
+# Event: Register an account via Zapier {#event-register-an-account-via-zapier}
 
 An article a' chleachdadh [Integrating Ultimate Multisite with Zapier](zapier.md) a' cheannachadh am fhaighinn a' chùineachadh le Zapier airson ealaichean cumhachdach ann an Ultimate Multisite gu fìor. San article seo, rinn am fhaighinn a' chùineachadh le app-ealaichean a tha sealltainn. Bidh sinn a' faighinn Google Sheets a bhith mar sinneadh datha agus a sgaidh an fhaighinn sin dhan Ultimate Multisite airson a fhaighinn a' chùineachadh.
 

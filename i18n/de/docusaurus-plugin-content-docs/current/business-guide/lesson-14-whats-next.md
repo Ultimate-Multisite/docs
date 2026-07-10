@@ -3,15 +3,15 @@ title: 'Lektion 14: Was als Nächstes kommt'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lektion 14: Was kommt als Nächstes
+# Lektion 14: Was kommt als Nächstes {#lesson-14-what-comes-next}
 
 Sie haben eine Nischen-Website-Plattform von Grund auf aufgebaut. FitSite ist live, bedient Fitnessstudios und generiert wiederkehrende Einnahmen. Diese letzte Lektion zeigt Ihnen, wie Sie von hier aus weiter vorgehen können.
 
-## Wo wir aufgehört haben
+## Wo wir aufgehört haben {#where-we-left-off}
 
 FitSite ist ein laufendes Geschäft mit Kunden, Betriebsabläufen und einem Wachstumspotenzial. Jetzt überlegen wir uns, was als Nächstes kommt.
 
-## Das komplette FitSite-Netzwerk
+## Das komplette FitSite-Netzwerk {#the-complete-fitsite-network}
 
 Hier ist alles, was wir in 14 Lektionen aufgebaut haben:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Option 1: Vertiefen Sie sich in Ihre Nische
+## Option 1: Vertiefen Sie sich in Ihre Nische {#option-1-go-deeper-in-your-niche}
 
 Bevor Sie sich auf neue Nischen ausweiten, sollten Sie in der Fitnessbranche tiefer graben:
 
-### Unter-Nischen
+### Unter-Nischen {#sub-niches}
 
 - **Yoga-Studios** – Spezialisierte Templates mit Funktionen für Meditation, Retreats und Workshops
 - **CrossFit-Boxen** – WOD-Tracking, Wettbewerbsresultate, Community-Funktionen
@@ -59,7 +59,7 @@ Bevor Sie sich auf neue Nischen ausweiten, sollten Sie in der Fitnessbranche tie
 
 Jede Unter-Nische kann ihre eigenen Templates und potenziell ihre eigene Marke haben, die alle im selben Ultimate Multisite-Netzwerk laufen.
 
-### Premium-Funktionen
+### Premium-Funktionen {#premium-features}
 
 Bauen Sie Funktionen, für die Fitnessstudios bereit sind, extra zu bezahlen:
 
@@ -68,14 +68,14 @@ Bauen Sie Funktionen, für die Fitnessstudios bereit sind, extra zu bezahlen:
 - **Fitness-Blog-Templates** – Vorgefertigte Content-Strukturen für Fitness-Content-Marketing
 - **Social-Media-Integration** – Automatisches Posten von Kursplänen und Updates
 
-### Geografische Expansion
+### Geografische Expansion {#geographic-expansion}
 
 Wenn Sie lokal begonnen haben, erweitern Sie sich auf:
 
 - Andere Städte in Ihrem Land
 - Andere Länder (verwenden Sie die [Lokalisierungsfunktionen](/user-guide/localization/translating) von Ultimate Multisite, um mehrere Sprachen zu unterstützen)
 
-## Option 2: Expansion auf angrenzende Nischen
+## Option 2: Expansion auf angrenzende Nischen {#option-2-expand-to-adjacent-niches}
 
 Der Prozess, den Sie für Fitnessstudios verfolgt haben, funktioniert für jede Nische. Ihre zweite Nische ist einfacher, weil Sie bereits verfügen über:
 
@@ -83,7 +83,7 @@ Der Prozess, den Sie für Fitnessstudios verfolgt haben, funktioniert für jede 
 - Betriebserfahrung
 - Ein erprobtes Vorgehen (Playbook)
 
-### Angrenzende Nischen zu Fitness
+### Angrenzende Nischen zu Fitness {#adjacent-niches-to-fitness}
 
 - **Wellness und Spa** – Massage-Therapeuten, Day-Spas, Wellness-Zentren
 - **Sportvereine** – Amateur-Sportteams, Ligen, Freizeitsportvereine
@@ -91,7 +91,7 @@ Der Prozess, den Sie für Fitnessstudios verfolgt haben, funktioniert für jede 
 
 Diese teilen einen Zielgruppen-Überlappung mit Fitness, sodass Ihr Marketing und Ihre Partnerschaften übertragbar sein können.
 
-### Komplett neue Nischen
+### Komplett neue Nischen {#completely-new-niches}
 
 Wenden Sie das Framework aus Lektion 2 an, um jede Nische zu bewerten:
 
@@ -108,7 +108,7 @@ Jede neue Nische benötigt:
 
 Die Plattforminfrastruktur, die Abrechnung und die Betriebsabläufe bleiben gleich.
 
-## Option 3: Aufbau einer Plattform von Plattformen
+## Option 3: Aufbau einer Plattform von Plattformen {#option-3-build-a-platform-of-platforms}
 
 Im großen Maßstab können Sie mehrere Nischenmarken auf einem einzigen Ultimate Multisite-Netzwerk betreiben:
 
@@ -118,11 +118,11 @@ Im großen Maßstab können Sie mehrere Nischenmarken auf einem einzigen Ultimat
 
 Jede Marke hat ihre eigenen Templates, Pläne und ihr Marketing, teilt aber die Infrastruktur, die Abrechnung und die Betriebsabläufe. Hier werden die wirtschaftlichen Vorteile von Ultimate Multisite stark – eine Plattform, viele Vertikale.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Für eine vollständige Trennung zwischen Nischen sollten Sie das [Multi-Network Addon](/addons/multinetwork) in Betracht ziehen, mit dem Sie mehrere WordPress-Netzwerke von einer einzigen Installation aus betreiben können.
 
-## Option 4: Das Geschäft verkaufen
+## Option 4: Das Geschäft verkaufen {#option-4-sell-the-business}
 
 Eine Nischen-Website-Plattform mit wiederkehrenden Einnahmen, geringer Abwanderung und einer klaren Marktposition ist ein wertvolles Gut. SaaS-Unternehmen werden typischerweise mit 3–5x dem Jahresumsatz verkauft.
 
@@ -134,7 +134,7 @@ Ein FitSite mit 200 Kunden bei 89 ARPU:
 
 Dies ist kein garantiertes Ergebnis, aber ein realistisches für eine gut geführte Nischenplattform.
 
-## Was Sie gelernt haben
+## Was Sie gelernt haben {#what-you-have-learned}
 
 Dieser Kurs hat Ihnen einen wiederholbaren Prozess beigebracht:
 
@@ -150,7 +150,7 @@ Dieser Kurs hat Ihnen einen wiederholbaren Prozess beigebracht:
 
 Die Nische ist die Strategie. Die Plattform ist das Werkzeug. Ultimate Multisite macht das Werkzeug möglich. Ihr Verständnis der Nische macht es wertvoll.
 
-## Beginnen Sie mit dem Bauen
+## Beginnen Sie mit dem Bauen {#start-building}
 
 Wenn Sie bei FitSite dabei waren, haben Sie eine funktionierende Plattform. Wenn Sie bis hierher gelesen haben, um Ihre eigene Nische zu finden, gehen Sie zurück zu [Lektion 2: Ihre Nische wählen](lesson-2-picking-your-niche) und beginnen Sie den Prozess für Ihre gewählte Branche.
 

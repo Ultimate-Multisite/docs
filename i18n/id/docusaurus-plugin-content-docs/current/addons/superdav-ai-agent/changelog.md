@@ -1,46 +1,68 @@
 ---
-title: Catatan Perubahan
+title: Changelog
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Catatan Perubahan
+# Log Perubahan {#changelog}
 
-## 1.16.0 — Dirilis pada 2026-05-20
+## 1.18.0 — Dirilis pada 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Baru
+### Baru {#new}
 
-- **Fitur pembuatan logo SVG** — Theme Builder kini dapat menghasilkan dan menyematkan SVG logo kustom dengan sanitasi yang aman dari namespace.
-- **Unggah Foto dalam Wawancara Penemuan** — Wawancara penemuan Theme Builder kini menyertakan langkah unggah foto untuk konteks desain yang lebih kaya.
-- **Kemampuan Validasi Kontras Palet** — Periksa pasangan warna untuk kepatuhan WCAG sebelum diterapkan ke tema.
-- **Menu Perhotelan** — Theme Builder kini dapat menghasilkan halaman menu makanan dan minuman yang terstruktur untuk bisnis perhotelan.
-- **Rendering Pratinjau Desktop dan Seluler** — Pratinjau desain Anda di perangkat desktop dan seluler selama pemilihan arah desain.
-- **Parameter Label Navigasi** — Kemampuan Buat Menu kini mendukung `navigation_label` yang berbeda dan terpisah dari judul halaman.
-- **Ketersediaan Alat Tingkat 1** — sd-ai-agent/site-scrape kini menjadi alat Tingkat 1 yang tersedia secara default di Theme Builder.
+- **Alat Google Calendar** — membaca kalender dan acara yang dikonfigurasi untuk otomatisasi yang sadar jadwal
+- **Pemetaan kontak dan pembantu peserta** — mencocokkan peserta kalender dengan pengguna dan kontak situs
+- **Gerbang persetujuan manusia dan catatan pengingat** — menjeda otomatisasi untuk peninjauan dan menghindari notifikasi duplikat
+- **Penyedia SMS TextBee** — mengirim notifikasi pesan teks yang dikonfigurasi melalui TextBee
+- **Paket pendamping Advanced** — menambahkan alat filesystem pengembang tepercaya, database, WP-CLI, dispatcher REST, pembuat plugin, snapshot git, manajemen pengguna, dan benchmark yang didistribusikan terpisah dari build WordPress.org
 
-### Diperbaiki
+### Ditingkatkan {#improved}
 
-- **Cache Klien AI** — kini didukung oleh *transients* untuk persistensi lintas permintaan, mencegah kehilangan data pada tugas agen yang berjalan lama.
-- **Tautan Aksi Baris Plugin** — diperbaiki dan diganti nama agar lebih jelas.
+- **Penyiapan layanan Superdav terkelola** — menambahkan endpoint layanan hosted dan penyediaan koneksi otomatis untuk situs yang didukung
+- **Pengemasan rilis** — membangun ZIP inti dan Advanced terpisah, menerbitkan keduanya di GitHub, dan hanya mengirim paket inti ke WordPress.org
 
-## 1.10.0 — Dirilis pada 2026-05-05
+### Diperbaiki {#fixed}
 
-### Baru
+- **Keandalan permintaan AI** — meningkatkan pemilihan model, timeout permintaan, model penyiapan default, penanganan teks penalaran, dan panduan percobaan ulang untuk pemanggilan alat yang tidak valid
+- **Penguatan kalender dan pengingat** — memperkuat token Google Calendar dan deduplikasi pengingat
+- **Onboarding dan kelanjutan persetujuan** — memperbaiki peluncuran onboarding frontend dan kelanjutan kemampuan yang dikonfirmasi
+- **Masalah tinjauan pengemasan WordPress.org** — menangani masukan tinjauan pengemasan untuk rilis inti
 
-- **Pencarian Internet Tavily** — menambahkan Tavily sebagai penyedia pencarian untuk hasil pencarian internet yang lebih kaya, bersama dengan Brave Search.
-- **Keterampilan Bawaan Sadar Tema** — Panduan keterampilan untuk Block Themes, Classic Themes, Kadence Blocks, dan Kadence Theme kini disertakan dengan plugin.
-- **Kemampuan Formulir Kontak Pembuat Situs** — menambahkan formulir kontak ke halaman mana pun langsung dari antarmuka obrolan.
+## 1.16.0 — Dirilis pada 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Ditingkatkan
+### Baru {#new-1}
 
-- **Integrasi WooCommerce Direfaktor** — kini menggunakan API WooCommerce asli untuk keandalan dan kompatibilitas yang lebih baik.
-- **Daftar Penyedia Menyegarkan Otomatis** — ketika plugin apa pun diaktifkan atau dinonaktifkan.
+- **Kemampuan Generate Logo SVG** — Theme Builder kini dapat menghasilkan dan menyematkan SVG logo kustom dengan sanitasi yang aman terhadap namespace
+- **Unggah foto dalam wawancara discovery** — wawancara discovery Theme Builder kini menyertakan langkah unggah foto untuk konteks desain yang lebih kaya
+- **Kemampuan Validate Palette Contrast** — memeriksa pasangan warna untuk kepatuhan WCAG sebelum diterapkan ke theme
+- **Menu hospitality** — Theme Builder kini dapat menghasilkan halaman menu makanan dan minuman terstruktur untuk bisnis hospitality
+- **Rendering pratinjau desktop dan seluler** — pratinjau desain Anda di perangkat desktop dan seluler selama pemilihan arah desain
+- **Parameter label navigasi** — kemampuan Create Menu kini mendukung `navigation_label` yang berbeda dan terpisah dari judul halaman
+- **Ketersediaan alat Tier 1** — sd-ai-agent/site-scrape kini menjadi alat Tier 1 yang tersedia secara default di Theme Builder
 
-### Diperbaiki
+### Diperbaiki {#fixed-1}
 
-- **Kemampuan navigate-to** — memperbaiki *infinite reload loop* pada beberapa halaman admin.
-- **Kemampuan list-posts** — kini menyelesaikan nama kategori dan tag ke *slug* dengan benar.
-- **Perintah WP-CLI** — memulihkan alias namespace yang hilang setelah refaktor sebelumnya.
-- **Otomasi Event** — menangani situs dengan anggun di mana tabel otomatisasi belum dibuat.
-- **Kemampuan memory-save** — kini menggunakan awalan namespace yang benar di *system instruction builder*.
-- **Hasil Alat Scalar** — kini dibungkus dengan benar sebelum dikembalikan ke AI.
-- **Statistik Penggunaan** — kini menangani format kunci kemampuan lama dengan benar saat peningkatan dari versi yang lebih lama.
+- **Cache AI Client** — kini didukung oleh transient untuk persistensi lintas-permintaan, mencegah kehilangan data pada tugas agent yang berjalan lama
+- **Tautan tindakan baris plugin** — diperbaiki dan diganti namanya agar lebih jelas
+
+## 1.10.0 — Dirilis pada 2026-05-05 {#1100--released-on-2026-05-05}
+
+### Baru {#new-2}
+
+- **Pencarian internet Tavily** — menambahkan Tavily sebagai penyedia pencarian untuk hasil pencarian internet yang lebih kaya bersama Brave Search
+- **Skill bawaan yang sadar theme** — panduan skill Block Themes, Classic Themes, Kadence Blocks, dan Kadence Theme kini disertakan dengan plugin
+- **Kemampuan formulir kontak pembuat situs** — menambahkan formulir kontak ke halaman mana pun langsung dari antarmuka chat
+
+### Ditingkatkan {#improved-1}
+
+- **Integrasi WooCommerce direfaktor** — kini menggunakan API native WooCommerce untuk keandalan dan kompatibilitas yang lebih baik
+- **Daftar penyedia disegarkan otomatis** — saat plugin apa pun diaktifkan atau dinonaktifkan
+
+### Diperbaiki {#fixed-2}
+
+- **Kemampuan navigate-to** — memperbaiki loop muat ulang tak terbatas pada beberapa halaman admin
+- **Kemampuan list-posts** — kini dengan benar menyelesaikan nama kategori dan tag menjadi slug
+- **Perintah WP-CLI** — memulihkan alias namespace yang hilang setelah refactor sebelumnya
+- **Otomatisasi acara** — menangani situs dengan baik ketika tabel otomatisasi belum dibuat
+- **Kemampuan memory-save** — kini menggunakan prefix namespace yang benar dalam pembuat instruksi sistem
+- **Hasil alat skalar** — kini dibungkus dengan benar sebelum dikembalikan ke AI
+- **Statistik penggunaan** — kini menangani format kunci kemampuan lama dengan benar saat upgrade dari versi lama

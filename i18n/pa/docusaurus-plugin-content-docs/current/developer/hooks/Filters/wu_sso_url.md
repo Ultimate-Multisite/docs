@@ -1,0 +1,33 @@
+---
+id: wu_sso_url
+title: ਫਿਲਟਰ - wu_sso_url
+sidebar_label: wu_sso_url
+_i18n_hash: a369dcf0f4cab1f5941c82ac58286155
+---
+# ਫਿਲਟਰ: wu_sso_url {#filter-wussourl}
+
+ਕਰਾਸ-ਡੋਮੇਨ ਗਾਹਕ ਕਾਰਵਾਈਆਂ ਲਈ ਵਾਪਸ ਕੀਤੇ ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ ਬਣਾਏ ਗਏ SSO URLs ਨੂੰ ਫਿਲਟਰ ਕਰਦਾ ਹੈ।
+
+ਇਹ ਫਿਲਟਰ ਉਦੋਂ ਵਰਤੋ ਜਦੋਂ ਕਿਸੇ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਨੂੰ ਸਾਰਵਭੌਮ-ਟੈਨੈਂਟ SSO ਲਿੰਕ ਵਿੱਚ ਭਰੋਸੇਯੋਗ ਸੰਦਰਭ ਜੋੜਣ ਦੀ ਲੋੜ ਹੋਵੇ ਜਾਂ Ultimate Multisite ਦੀ ਟੋਕਨ ਤਸਦੀਕ ਨੂੰ ਬਰਕਰਾਰ ਰੱਖਦੇ ਹੋਏ broker URL ਨੂੰ ਬਦਲਣਾ ਹੋਵੇ।
+
+## ਪੈਰਾਮੀਟਰ {#parameters}
+
+| ਨਾਮ | ਕਿਸਮ | ਵੇਰਵਾ |
+|------|------|-------------|
+| $sso_url | `string` | ਬਣਾਇਆ ਗਿਆ SSO URL। |
+| $user | `WP_User` | ਉਹ ਯੂਜ਼ਰ ਜਿਸਦੀ SSO ਵਿਜ਼ਿਟ ਰਾਹੀਂ ਤਸਦੀਕ ਕੀਤੀ ਜਾਵੇਗੀ। |
+| $site_id | `int` | ਵਿਜ਼ਿਟ ਲਈ ਟੀਚਾ ਸਾਈਟ ID। |
+| $redirect_to | `string` | ਸਫਲ SSO ਤਸਦੀਕ ਤੋਂ ਬਾਅਦ ਮੰਜ਼ਿਲ URL। |
+
+### ਤੋਂ {#since}
+
+- 2.13.0
+
+### ਸਰੋਤ {#source}
+
+`inc/sso/class-sso.php` ਵਿੱਚ ਪਰਿਭਾਸ਼ਿਤ।
+
+
+## ਵਾਪਸੀ {#returns}
+
+ਫਿਲਟਰ ਕੀਤਾ SSO URL।

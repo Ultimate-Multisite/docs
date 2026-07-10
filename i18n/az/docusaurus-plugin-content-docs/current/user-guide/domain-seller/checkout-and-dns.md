@@ -1,69 +1,69 @@
 ---
-title: Ödəniş Sahəsi və Müştəri DNS-i
+title: Sifariş rəsmiləşdirmə sahəsi və Müştəri DNS-i
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Sahəsi və Müştəri DNS İdarəetməsi
+# Ödəniş sahəsi və müştəri DNS idarəetməsi {#checkout-field-and-customer-dns-management}
 
-## Domen Seçimi checkout sahəsi
+## Domen seçimi ödəniş sahəsi {#the-domain-selection-checkout-field}
 
-**Domain Selection** sahəsi, müştərilərə sayt domenini necə əldə edəcəkləri barədə seçim imkanı verən bir checkout elementidir. Domen satma funksionallığını aktivləşdirmək üçün onu istənilən checkout formasına əlavə edin.
+**Domen seçimi** sahəsi müştərilərə saytlarının domenini necə əldə edəcəklərini seçmək imkanı verən ödəniş elementidir. Domen satışını aktivləşdirmək üçün onu istənilən ödəniş formasına əlavə edin.
 
-### Sahəni checkout formasına əlavə etmək
+### Sahəni ödəniş formasına əlavə etmək {#adding-the-field-to-a-checkout-form}
 
-1. **Network Admin › Ultimate Multisite › Checkout Forms** yoluna keçin.
-2. Bir checkout forması açın və ya yaradın.
-3. Checkout redaktoru içində **Add Field** düymasına basın.
-4. Sahələr siyahısından **Domain Selection** seçin.
-5. Sahə parametrlərini təyin edin (aşağıya baxın).
-6. Formanı yadda saxlayın.
+1. **Şəbəkə Admini › Ultimate Multisite › Ödəniş Formaları** bölməsinə keçin
+2. Ödəniş formasını açın və ya yaradın
+3. Ödəniş redaktorunda **Sahə əlavə et** düyməsinə klikləyin
+4. Sahə siyahısından **Domen seçimi** seçin
+5. Sahə seçimlərini konfiqurasiya edin (aşağıya baxın)
+6. Formanı yadda saxlayın
 
-### Sahə parametrləri
+### Sahə seçimləri {#field-options}
 
-**Domain modes** — Müştərinin hansı tabları görəcəyini seçirsiniz. Hər bir rejim müstəqil şəkildə aktiv və ya deaktiv edilə bilər:
+**Domen rejimləri** — Müştərinin hansı tabları görəcəyini seçin. Hər rejim müstəqil şəkildə aktiv və ya deaktiv edilə bilər:
 
-| Mode | Nə edir |
+| Rejim | Nə edir |
 |---|---|
-| **Subdomain** | Müştəri şəbəkənizdə pulsuz bir alt domen istifadə edir (məsələn, `mysite.yournetwork.com`). Ödəniş tələb edilmir. |
-| **Register New Domain** | Müştəri yeni bir domen axtarır və onu təyin edilmiş provayderiniz vasitəsilə qeydiyyatdan keçirir. Qiymətləndirmə üçün uyğun gələn domen məhsulundan istifadə edir. |
-| **Existing Domain** | Müştəri artıq sahib olduğu bir domeni əlaqələndirir. Qeydiyyat haqqı yoxdur. Domen avtomatik olaraq onun saytına əlaqələndirilir. |
+| **Subdomen** | Müştəri şəbəkənizdə pulsuz subdomendən istifadə edir (məs., `mysite.yournetwork.com`). Ödəniş tələb olunmur. |
+| **Yeni domen qeydiyyatdan keçir** | Müştəri yeni domen axtarır və onu konfiqurasiya etdiyiniz provayder vasitəsilə qeydiyyatdan keçirir. Qiymətləndirmə üçün uyğun domen məhsulundan istifadə edir. |
+| **Mövcud domen** | Müştəri artıq sahib olduğu domeni xəritələndirir. Qeydiyyat haqqı yoxdur. Domen avtomatik olaraq onun saytına xəritələndirilir. |
 
-**Default mode** — Üç rejim aktiv olduqda, hansı tab ilk açılacaq. Domen qeydiyyatını isteğe bağlı saxlamaq üçün **Subdomain** olaraq, və ya alış-verişi təşviq etmək üçün **Register New Domain** olaraq təyin edin.
+**Standart rejim** — Hər üç rejim aktiv olduqda, ilk hansı tabın açılacağını müəyyən edir. Domen qeydiyyatını istəyə bağlı saxlamaq üçün **Subdomen** seçin, satınalmaları təşviq etmək üçün isə **Yeni domen qeydiyyatdan keçir** seçin.
 
-**Domain product** — İsteğe bağlı olaraq bu sahəni müəyyən bir domen məhsuluna bağlayın. Təyin edilməsə də, addon müştərinin axtardığı TLD-yə əsaslanaraq uyğun gələn məhsulu avtomatik seçir.
+**Domen məhsulu** — İstəyə bağlı olaraq bu sahəni konkret domen məhsuluna bağlayın. Təyin edilməyibsə, addon müştərinin axtardığı TLD əsasında uyğun məhsulu avtomatik seçir.
 
-### Registrant əlaqə sahələri
+### Qeydiyyatçı əlaqə sahələri {#registrant-contact-fields}
 
-Müştəri **Register New Domain** tabını seçdikdə, checkout forması inline şəkildə registrant əlaqə sahələri əlavə edir:
+Müştəri **Yeni domen qeydiyyatdan keçir** tabını seçdikdə, ödəniş forması qeydiyyatçı əlaqə sahələrini eyni sətirdə əlavə edir:
 
 - Ad / Soyad
 - E-poçt ünvanı
-- Ünvan (1-ci sətir, şəhər, vilayət/eyalet, poçt kodu, ölkə)
+- Ünvan (sətir 1, şəhər, ştat/vilayət, poçt indeksi, ölkə)
 - Telefon nömrəsi
 
-Bunlar bütün qeydiyyatçılar üçün vacibdir və qeydiyyat API çağırışı edilməzdən əvvəl yoxlanılır. Telefon nömrələri qeydiyyatçılar tərəfindən gözlənilən `+CC.NNN` beynəlxalq formatına avtomatik formatlanır.
+Bunlar bütün qeydiyyatçılar tərəfindən tələb olunur və qeydiyyat API çağırışı edilməzdən əvvəl yoxlanılır. Telefon nömrələri qeydiyyatçıların gözlədiyi `+CC.NNN` beynəlxalq formatına avtomatik formatlanır.
 
-### Avtomatik yaradılan sayt URL-i
+### Avtomatik yaradılan sayt URL-i {#auto-generated-site-url}
 
-Müştəri domen qeydiyyatdan keçirdikdə və ya onu əlaqələndirdikdə, sayt URL sahəsi seçilmiş domenə əsasən avtomatik doldurulur. Müştərilərin ayrıca bir URL sahəsi doldurmasına ehtiyacı yoxdur.
+Müştəri domeni qeydiyyatdan keçirdikdə və ya xəritələndirdikdə, sayt URL sahəsi seçilmiş domen əsasında avtomatik doldurulur. Müştərilərin ayrıca URL sahəsini doldurmasına ehtiyac yoxdur.
 
-### Axtarış davranışı
+### Axtarış davranışı {#search-behaviour}
 
-- Müştəri yazarkən domen mövcudluğu AJAX ilə real vaxtda yoxlanılır.
-- Təcihl edilmiş domen mövcud olmadıqda alternativ TLD təklifləri göstərilir.
-- Qiymətlər canlı olaraq alınır və aydın şəkildə göstərilir (qeydiyyat qiyməti, yeniləmə qiyməti, isteğe bağlı WHOIS məxfiliyi haqqı).
-- Kupon kodları domen məhsullarına hər hansı digər məhsul kimi tətbiq olunur.
+- Domen əlçatanlığı müştəri yazdıqca AJAX ilə real vaxtda yoxlanılır
+- Üstün tutulan domen əlçatan olmadıqda alternativ TLD təklifləri göstərilir
+- Qiymətlər canlı şəkildə alınır və aydın göstərilir (qeydiyyat qiyməti, yeniləmə qiyməti, istəyə bağlı WHOIS məxfilik haqqı)
+- Kupon kodları domen məhsullarına digər məhsullarla eyni şəkildə tətbiq olunur
 
-**Axtarış cavabdehliyini tənzimləmək:**
+**Axtarış cavab sürətinin tənzimlənməsi:**
 
 ```php
-// API çağırışlarını ləng bağlantılarda azaltmaq üçün debounce gecikməsini (milisaniyə) artırın
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Domen axtarış formasına xüsusi sahələr əlavə etmək:**
+**Domen axtarış formasına fərdi sahələr əlavə etmək:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Müştəri DNS idarəetməsi
+## Müştəri DNS idarəetməsi {#customer-dns-management}
 
-Müştərilər qeydiyyatdan keçirdikleri domenlər üçün DNS rekordlarını **My Account** səhifəsindən, domeninin girişində idarə edə bilərlər.
+Müştərilər qeydiyyatdan keçirdikləri domenlər üçün DNS qeydlərini **My Account** səhifəsindən, domenlərinin qeydi altında idarə edə bilərlər.
 
-### Dəstəklənən rekord növləri
+### Dəstəklənən qeyd növləri {#supported-record-types}
 
-| Type | İstifadəsi |
+| Növ | İstifadə |
 |---|---|
-| **A** | Hostname-i IPv4 ünvanına əlaqələndirir |
-| **AAAA** | Hostname-i IPv6 ünvanına əlaqələndirir |
-| **CNAME** | Başqa bir hostname-ə işarə edən bir alias yaradır |
+| **A** | Host adını IPv4 ünvanına xəritələndirir |
+| **AAAA** | Host adını IPv6 ünvanına xəritələndirir |
+| **CNAME** | Başqa host adına yönələn alias yaradır |
 | **MX** | Poçt mübadiləsi serverini təyin edir |
-| **TXT** | SPF, DMARC, yoxlama və ya digər mətn rekordları əlavə edir |
+| **TXT** | SPF, DMARC, doğrulama və ya digər mətn qeydləri əlavə edir |
 
-### Hansı provayderlər DNS idarəetməsinə malikdir?
+### Hansı provayderlər DNS idarəetməsini dəstəkləyir? {#which-providers-support-dns-management}
 
-DNS idarəetməsi (rekord əlavə etmək, redaktə etmək, silmək) **OpenSRS**, **ResellerClub** və **Enom** ilə mövcuddur. Namecheap, GoDaddy və NameSilo domenləri status və bitmə tarixini göstərir, lakin DNS birbaşa qeydiyyatçının nəzarət panelində idarə edilməlidir.
+DNS idarəetməsi (qeydləri əlavə etmək, redaktə etmək, silmək) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** və **Openprovider** ilə əlçatandır. **Hostinger** domenləri Domain Seller vasitəsilə nameserver-ləri yeniləyə bilər; hostinq edilən domenlər üçün DNS qeydləri əsas Hostinger domen xəritələndirmə inteqrasiyası tərəfindən idarə olunur. Namecheap, GoDaddy və NameSilo domenləri status və bitmə tarixi məlumatlarını göstərir, lakin DNS birbaşa qeydiyyatçının idarə panelində idarə edilməlidir.
 
-### Default DNS rekordları
+### Standart DNS qeydləri {#default-dns-records}
 
-Domen qeydiyyatdan keçdikdə avtomatik tətbiq olunan default DNS rekordlarını təyin edə bilərsiniz. **Settings › Domain Seller › Default DNS Records** yoluna keçin.
+Domen qeydiyyatdan keçirildikdə avtomatik tətbiq olunan standart DNS qeydlərini konfiqurasiya edə bilərsiniz. **Parametrlər › Domain Seller › Standart DNS qeydləri** bölməsinə keçin.
 
-Default rekord dəyərləri iki tokeni dəstəkləyir:
+Standart qeyd dəyərləri iki tokeni dəstəkləyir:
 
-| Token | Nə ilə əvəz olunur |
+| Token | Bununla əvəz olunur |
 |---|---|
-| `{DOMAIN}` | Qeydiyyatdan keçmiş domen adı (məsələn, `example.com`) |
+| `{DOMAIN}` | Qeydiyyatdan keçirilmiş domen adı (məs., `example.com`) |
 | `{SITE_URL}` | Müştərinin saytı üçün WordPress sayt URL-i |
 
-**Nümunə — apex domen və www-ni server IP-nizə yönləndirmək:**
+**Nümunə — apex domenini və www-ni server IP-nizə yönəldin:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS-i görmə və redaktə etmə
+### Admin: DNS-ə baxmaq və redaktə etmək {#admin-viewing-and-editing-dns}
 
-Network adminlər **Network Admin › Ultimate Multisite › Domains**-də domeninin redaktə səhifəsindən istənilən müştəri domeninin DNS rekordlarını görə və redaktə edə bilərlər.
+Şəbəkə adminləri istənilən müştəri domeni üçün DNS qeydlərinə **Şəbəkə Admini › Ultimate Multisite › Domenlər** bölməsində domenin redaktə səhifəsindən baxa və onları redaktə edə bilərlər.

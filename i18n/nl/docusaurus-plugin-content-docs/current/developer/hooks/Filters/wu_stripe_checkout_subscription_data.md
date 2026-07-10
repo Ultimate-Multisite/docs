@@ -6,16 +6,16 @@ _i18n_hash: 974298c0105287786ac2a8f47914cdfe
 ---
 Filter Stripe-abonnement gegevens. Kan `success_url` of `cancel_url` overschrijven.
 
-## Parameters
+## Parameters {#filter-wustripecheckoutsubscriptiondata}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $subscription_data | `array` | Een array van parameters om door te geven aan Stripe. |
 | $gateway | `\Base_Gateway` | Het huidige Stripe Gateway object. |
 
-### Since
+### Since {#parameters}
 
 - 2.4.2
-### Source
+### Source {#since}
 
 Defined in [`inc/gateways/class-base-stripe-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-stripe-gateway.php#L298) at line 298

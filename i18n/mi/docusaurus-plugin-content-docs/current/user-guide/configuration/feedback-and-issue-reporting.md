@@ -3,11 +3,11 @@ title: Whakawhanaungatanga o te mea whai whakaaro i te mea whai pētranga
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Te Whakarongo o Ngā mea Whakamahi me Ngā Pānga
+# Te Whakarongo o Ngā mea Whakamahi me Ngā Pānga {#customer-feedback--issue-reporting}
 
 Ko Gratis AI Agent v1.5.0 e whakauru ahau i te system whakamahi me ngā pānga (feedback and issue reporting) ki te chat, i te hoki mai i ngā end-user. E kitea i tēnei system te whai whakaae mō te whakamahi, he command whakamārama mō te pūtaiao, me te triage (whakamārama/whakawhiti) e whakamahia ai te AI i te pō.
 
-## Button Whakarongo (Thumbs-Down Button)
+## Button Whakarongo (Thumbs-Down Button) {#thumbs-down-button}
 
 Ko every message e rite mai e te assistant AI e whakaatu i he button **thumbs-down** (👎). I roto i te wā e whakatipu te kaukau, he taea ahau ki te whakamārama i te waiata he hāpai atu ana pe he pēnei.
 
@@ -15,7 +15,7 @@ Ko every message e rite mai e te assistant AI e whakaatu i he button **thumbs-do
 - I roto i te whakatipu i a ia, ka puta te **Feedback Consent Modal**.
 - Ko te feedback e whai ana ki te thread o te korero me te message tika.
 
-## Feedback Consent Modal (Modal Whakarongo Whai Whakaae)
+## Feedback Consent Modal (Modal Whakarongo Whai Whakaae) {#feedback-consent-modal}
 
 I roto i te wā e whakatipu te user i te button thumbs-down, ka puta he modal mō te whakaaae (consent modal) i tēnei mea i te rite ki te data e hoki mai. Ko te modal:
 
@@ -26,13 +26,13 @@ I roto i te wā e whakatipu te user i te button thumbs-down, ka puta he modal m�
 
 E koahau koako ko feedback e whai ake i te whakamārama o te user.
 
-## Auto-Prompt Feedback Banner (Banner Whakarongo Ātomatico)
+## Auto-Prompt Feedback Banner (Banner Whakarongo Ātomatico) {#auto-prompt-feedback-banner}
 
 I te whāngai o te korero, he taea ai te assistant e whakaatu he **auto-prompt feedback banner** — he message e hoki mai ki te wairua (non-intrusive message) kia whakataki i te user mō te mea ko te session he hāpai atu ana.
 
 Ko te banner e puta anō automatically based on te whakatipu o te korero me ngā heuristics (rules of thumb) mō te outcome. E rite ki te flow o te feedback o te button thumbs-down. He taea ai te user te whakatika i te banner i roto i te waiho i te feedback.
 
-## /report-issue Slash Command (Command Whakarongo Pānga)
+## /report-issue Slash Command (Command Whakarongo Pānga) {#report-issue-slash-command}
 
 He taea ahau i te trigger te flow o te feedback i runga i te command `/report-issue` i te chat input. Ko te command này:
 
@@ -42,7 +42,7 @@ He taea ahau i te trigger te flow o te feedback i runga i te command `/report-is
 
 He pūmanawa (command) o `/report-issue` e pēnei i roto i ngā mode chat katoa (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Whakawhiti Pūrongo e Āwhina ai AI)
+## AI-Assisted Triage (Whakawhiti Pūrongo e Āwhina ai AI) {#ai-assisted-triage}
 
 Ko te pūrongo whakahouwha (feedback) e pēnei i te whaiaro ki te parato (triage layer) o AI, i te whakaputa i:
 

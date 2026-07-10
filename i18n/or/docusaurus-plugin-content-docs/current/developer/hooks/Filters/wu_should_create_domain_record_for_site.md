@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: ଫିଲ୍ଟର - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# ଫିଲ୍ଟର: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+ନୂଆକରି ସୃଷ୍ଟି ହୋଇଥିବା ସାଇଟ୍ ପାଇଁ Ultimate Multisite ଏକ ଡୋମେନ୍ ରେକର୍ଡ ସୃଷ୍ଟି କରିବ କି ନାହିଁ, ତାହା ଫିଲ୍ଟର କରେ।
+
+ସେୟାର୍ଡ ଚେକଆଉଟ୍-ଫର୍ମ ଆଧାର ଡୋମେନ୍, ଆଭ୍ୟନ୍ତରୀଣ ହୋଷ୍ଟ, କିମ୍ବା ଅନ୍ୟ କୌଣସି ଇଣ୍ଟେଗ୍ରେସନ୍ ପୃଥକ ଭାବେ ପରିଚାଳନା କରିବାକୁ ଥିବା ଡୋମେନ୍ ବ୍ୟବହାର କରୁଥିବା ସାଇଟ୍‌ଗୁଡ଼ିକ ପାଇଁ ସ୍ୱୟଂଚାଳିତ ଡୋମେନ୍-ରେକର୍ଡ ସୃଷ୍ଟିକୁ ଦମନ କିମ୍ବା ପଛକୁ ସ୍ଥଗିତ କରିବାକୁ ଏହି ଫିଲ୍ଟର ବ୍ୟବହାର କରନ୍ତୁ।
+
+## ପାରାମିଟରଗୁଡ଼ିକ {#parameters}
+
+| ନାମ | ପ୍ରକାର | ବର୍ଣ୍ଣନା |
+|------|------|-------------|
+| $create | `bool` | ଡୋମେନ୍ ରେକର୍ଡ ସୃଷ୍ଟି ହେବା ଉଚିତ କି ନାହିଁ। |
+| $site | `WP_Site` | ନୂଆକରି ସୃଷ୍ଟି ହୋଇଥିବା ସାଇଟ୍ ଅବଜେକ୍ଟ। |
+
+### ଠାରୁ {#since}
+
+- 2.13.0
+
+### ସ୍ରୋତ {#source}
+
+`inc/functions/domain.php` ରେ ପରିଭାଷିତ।
+
+
+## ଫେରାଇଥାଏ {#returns}
+
+ଡୋମେନ୍ ରେକର୍ଡ ସୃଷ୍ଟି କରିବା କି ନାହିଁ ସୂଚାଇଥିବା ବୁଲିୟନ।

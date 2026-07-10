@@ -1,31 +1,45 @@
 ---
 title: 多租户
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# 多租户
+# 多租户 {#multi-tenancy}
 
-将子站点分布在服务器和数据库中，以提升性能和安全性
+将子站点分布到多个服务器和数据库，以提升性能与安全性
 
-## Requirements
+## Version 1.2.0 发布亮点 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 为生产隔离工作流添加了主权租户基础：
+
+- 通过短生命周期、防重放保护的 SSO 访问实现无状态租户自动登录。
+- 为主权租户提供按子站点划分的数据库和文件系统隔离。
+- 面向感知主机的租户配置提供 Hostinger 多租户能力。
+- 用于旧数据检查和异步推送处理的主权迁移验证门控。
+- 可配置的同机数据库主机绑定，适用于 Bedrock、FrankenPHP 和 localhost 安装。
+- 租户引导、数据库写入器、架构引导和用户配置改进。
+- 更安全的主权拆除流程，会清理租户凭据。
+
+请参阅用户指南：[主权迁移工作流](/user-guide/getting-started/sovereign-migration-workflow)、[多租户隔离](/user-guide/configuration/multi-tenancy-isolation)和[主权租户操作](/user-guide/administration/sovereign-tenant-operations)。
+
+## 要求 {#requirements}
 
 - WordPress 5.3 或更高版本
 - PHP 7.4 或更高版本
-- Multisite Ultimate 插件（已激活）
+- Multisite Ultimate plugin（已启用）
 
-## Installation
+## 安装 {#installation}
 
-1. 将插件文件上传到您的 `/wp-content/plugins/` 目录
-2. 通过 WordPress 的 '插件' 菜单激活插件
-3. 在网络管理中配置插件设置
+1. 将 addon 文件上传到你的 `/wp-content/plugins/` 目录
+2. 通过 WordPress 中的“Plugins”菜单启用 plugin
+3. 在网络管理员中配置 addon 设置
 
-## Development
+## 开发 {#development}
 
-### Setup
+### 设置 {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### 项目结构 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # PHP 类和包含文件
+│   ├── class-multisite-ultimate-updater.php  # 更新处理程序
+│   └── class-multi_tenancy-main.php             # 主要功能
+├── tests/                        # 单元测试
+│   ├── bootstrap.php            # 测试引导
+│   ├── class-*-base.php         # 基础测试类
+│   └── class-*-test.php         # 测试用例
+├── views/                       # 模板文件
+├── assets/                      # 静态资源
+│   ├── css/                     # 样式表
+│   ├── js/                      # JavaScript 文件
+│   └── images/                  # 图片
+├── lang/                        # 语言文件
+├── composer.json                # PHP 依赖
+├── package.json                 # Node.js 依赖
+├── phpunit.xml.dist             # PHPUnit 配置
+├── .phpcs.xml.dist              # 代码标准配置
+└── rector.php                   # 代码现代化规则
 ```
 
-### Testing
+### 测试 {#testing}
 
-插件包含全面的测试框架：
+该 addon 包含一个全面的测试框架：
 
 - **单元测试**：基于 PHPUnit 的测试，使用 WordPress 测试套件
-- **基类测试**：提供常见测试场景的辅助方法
-- **测试覆盖率**：配置以跟踪代码覆盖率
-- **多站点测试**：在多站点环境中运行测试
+- **基础测试类**：为常见测试场景提供辅助方法
+- **测试覆盖率**：已配置用于跟踪代码覆盖率
+- **多站点测试**：测试在多站点环境中运行
 
-### Code Standards
+### 代码标准 {#code-standards}
 
-- **WordPress 编码规范**：通过 PHPCS 强制执行
-- **PHP 7.4+ 兼容性**：支持现代 PHP 特性
+- **WordPress 编码标准**：通过 PHPCS 强制执行
+- **PHP 7.4+ 兼容性**：支持现代 PHP 功能
 - **静态分析**：集成 PHPStan 进行类型检查
-- **代码现代化**：Rector 规则用于 PHP 升级
+- **代码现代化**：用于 PHP 升级的 Rector 规则
 
-### Build System
+### 构建系统 {#build-system}
 
-- **资产处理**：CSS/JS 文件的压缩
-- **翻译**：POT 文件生成
-- **打包**：分发归档创建
-- **开发模式**：调试用的未压缩资产
+- **资源处理**：对 CSS/JS 文件进行压缩
+- **翻译**：生成 POT 文件
+- **打包**：创建用于分发的归档文件
+- **开发模式**：用于调试的未压缩资源
 
-## Configuration
+## 配置 {#configuration}
 
-插件支持多种可通过网络管理界面访问的配置选项。
+该 addon 支持多种配置选项，可通过网络管理员界面访问。
 
-## Hooks and Filters
+### 主权租户配置 {#sovereign-tenant-configuration}
 
-### Actions
+对于主权租户，在将流量路由到租户之前，请配置租户数据库、文件系统根目录、数据库主机绑定和主机能力。每次更改影响数据库凭据、主机绑定、路由或用户配置时，都要运行迁移验证。
 
-- `ultimate-multisite-addon-template_init` - 插件初始化后触发
-- `ultimate-multisite-addon-template_loaded` - 所有插件文件加载后触发
+仅当租户运行时和数据库授权预期使用本地套接字或同机访问时，才使用 `localhost`。当你的提供商配置的授权主机是 `127.0.0.1` 或某个服务主机名时，请使用它们。
 
-### Filters
+### Hostinger 能力 {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - 修改插件设置
-- `ultimate-multisite-addon-template_enabled` - 覆盖插件启用/禁用状态
+Hostinger 多租户能力使用共享的 Hostinger 集成令牌。验证前，请确认该域名存在于 hPanel 中，DNS 指向 Hostinger 账户，并且租户数据库设置与 hPanel 匹配。
 
-## License
+## Hooks 和 Filters {#hooks-and-filters}
 
-此插件采用 GPL v3 或更高版本授权。
+### Actions {#actions}
 
-## Support
+- `ultimate-multisite-addon-template_init` - 在 addon 初始化后触发
+- `ultimate-multisite-addon-template_loaded` - 在所有 addon 文件加载后触发
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - 修改 addon 设置
+- `ultimate-multisite-addon-template_enabled` - 覆盖 addon 启用/禁用状态
+
+## 许可证 {#license}
+
+此 addon 根据 GPL v3 或更高版本授权。
+
+## 支持 {#support}
 
 如需支持和文档，请访问 [MultisiteUltimate.com](https://multisiteultimate.com)
+## 更新日志 {#changelog}
 
-## Changelog
+- Version 1.2.0 (2026-06-03)：添加无状态租户自动登录、Hostinger 多租户能力、按子站点划分的数据库和文件系统隔离、主权迁移验证门控、租户引导/数据库写入器改进、可配置的 MySQL 主机绑定，以及更安全的主权拆除。
 
-- 版本 1.0.1 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。
+- Version 1.0.1 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本提升。
 
-- 版本 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。
+
+- Version  (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本提升。

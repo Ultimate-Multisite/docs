@@ -3,18 +3,18 @@ title: Cloudflare integration
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integration
+# Cloudflare Integration {#cloudflare-integration}
 
-## Oversigt
+## Oversigt {#overview}
 Cloudflare er en førende content delivery network (CDN) og sikkerhedsudbyder, der hjælper med at beskytte og fremskynde websites. Denne integration muliggør automatisk domæneadministration mellem Ultimate Multisite og Cloudflare, især for subdomain multisite installationer.
 
-## Funktioner
+## Funktioner {#features}
 - Automatisk oprettelse af subdomæner i Cloudflare
 - Understøttelse af proxede subdomæner
 - DNS-recordstyring
 - Forbedret visning af DNS-records i Ultimate Multisite admin
 
-## Krav
+## Krav {#requirements}
 Følgende konstanter skal defineres i din `wp-config.php` fil:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'din_api_nøgle');
 define('WU_CLOUDFLARE_ZONE_ID', 'din_zone_id');
 ```
 
-## Opsætning
+## Opsætning {#setup-instructions}
 
-### 1. Få din Cloudflare API-nøgle
+### 1. Få din Cloudflare API-nøgle {#1-get-your-cloudflare-api-key}
 
 1. Log ind på dit Cloudflare dashboard
 2. Gå til "My Profile" (klik på din e-mail i øverste højre hjørne)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'din_zone_id');
    - Zone.DNS: Redigering (Edit)
 5. Kopier din API-token
 
-### 2. Få din Zone ID
+### 2. Få din Zone ID {#2-get-your-zone-id}
 
 1. I dit Cloudflare dashboard vælg domænet, du vil bruge
 2. Zone ID'et er synligt i fanen "Overview", i højre sidefelt under "API"
 3. Kopier Zone ID'et
 
-### 3. Tilføj konstanter til wp-config.php
+### 3. Tilføj konstanter til wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tilføj følgende konstanter til din `wp-config.php` fil:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'din_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'din_zone_id');
 ```
 
-### 4. Aktiver integrationen
+### 4. Aktiver integrationen {#4-enable-the-integration}
 
 1. I din WordPress admin, gå til Ultimate Multisite > Settings
 2. Naviger til fanen "Domain Mapping"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'din_zone_id');
 4. Aktiver Cloudflare-integrationen
 5. Klik på "Save Changes" (Gem ændringer)
 
-## Hvordan det virker
+## Hvordan det virker {#how-it-works}
 
-### Subdomæneadministration
+### Subdomæneadministration {#subdomain-management}
 
 Når en ny side oprettes i en subdomain multisite installation:
 
@@ -67,7 +67,7 @@ Når en ny side oprettes i en subdomain multisite installation:
 2. Underdomænet er konfigureret til som standard til at blive proxied gennem Cloudflare (dette kan ændres med filtre)
 3. Når en side slettes, vil integrationen fjerne underdomænet fra Cloudflare
 
-### DNS-indgangsvisning
+### DNS-indgangsvisning {#dns-record-display}
 
 Integrationen forbedrer visningen af DNS-indgange i Ultimate Multisite admin ved at:
 
@@ -75,11 +75,11 @@ Integrationen forbedrer visningen af DNS-indgange i Ultimate Multisite admin ved
 2. Vise om indgangene er proxied eller ej
 3. Vise yderligere information om DNS-indgangene
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (tidligere kaldet "Cloudflare for SaaS") er en funktion i Cloudflare, der giver dine kunder mulighed for at bruge deres egne domæner med SSL på dit multisite-netværk. Det anbefalede tilgang for multisite-installationer, der er kortlagt til domæner og bruger Cloudflare, fordi Cloudflare automatisk administrerer udstedelse og fornyelse af SSL-certifikatet for hver custom domæne.
 
-### Hvordan det adskiller sig fra standard Cloudflare integration
+### Hvordan det adskiller sig fra standard Cloudflare integration {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Standard integration | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Integrationen forbedrer visningen af DNS-indgange i Ultimate Multisite admin ved
 | **Bedst til** | Multisite baseret på underdomæner | Multisite kortlagt til domæner |
 | **SSL** | Håndteres separat | Administreres automatisk af Cloudflare |
 
-### Opsætning af Cloudflare Custom Hostnames
+### Opsætning af Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. I dit i din Cloudflare dashboard, å åbne zonen for din hoveddomæne.
 2. Gå til **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ For fuld API-reference ses [Cloudflare Custom Hostnames documentation](https://d
 Fra Ultimate Multisite v2.6.1 kaldes denne funktion nu **Cloudflare Custom Hostnames** i alle plugin-indstillinger og labels. Tidligere versioner brugte navnet "Cloudflare for SaaS", som er det underliggende Cloudflare produktnavn.
 :::
 
-## Vigtige bemærkninger
+## Vigtige bemærkninger {#important-notes}
 
 Fra Cloudflares seneste opdateringer er wildcard proxying nu tilgængeligt for alle kunder. Det betyder, at den standard Cloudflare DNS-integration er mindre kritisk for subdomain multisite installationer end før, da du blot kan opsætte en wildcard DNS-record i Cloudflare.
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
-### Problemer med API-forbindelse
+### Problemer med API-forbindelse {#api-connection-issues}
 - Tjek, at dit API token er korrekt og har de nødvendige tilladelser.
 - Kontroller, at din Zone ID er korrekt.
 - Sørg for, at din Cloudflare konto har de nødvendige rettigheder.
 
-### Subdomæne ikke tilføjet
+### Subdomæne ikke tilføjet {#subdomain-not-added}
 - Tjek Ultimate Multisite logs efter eventuelle fejlmeddelelser.
 - Bekræft, at subdomænet ikke allerede er tilføjet til Cloudflare.
 - Sørg for, at din Cloudflare plan understøtter antallet af DNS-records, du opretter.
 
-### Proxy-problemer
+### Proxy-problemer {#proxying-issues}
 - Hvis du ikke ønsker, at underdomæner skal blive proxied, kan du bruge filteret `wu_cloudflare_should_proxy`.
 - Nogle funktioner vil muligvis ikke virke korrekt, når de er proxied (f.eks. visse WordPress admin-funktioner).
 - Overvej at bruge Cloudflares Page Rules til at omgå cachen for admin-sider.

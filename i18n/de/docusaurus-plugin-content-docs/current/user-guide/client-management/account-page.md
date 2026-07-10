@@ -1,127 +1,140 @@
 ---
-title: Kundenkonto-Seite
+title: Kunden-Account-Seite
 sidebar_position: 14
-_i18n_hash: 92f8a44adfaf871b0a881fbc76bc0084
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ihre Kundenkonto-Seite (v2)
+# Die Account-Seite deines Kunden (v2) {#your-clients-account-page-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Wenn Kunden ein Paket in Ihrem Netzwerk abonnieren, erhalten sie Zugriff auf eine Website und deren Dashboard mit wichtigen Informationen zu ihren Zahlungen, Mitgliedschaften, Domains, Planbeschränkungen usw.
+Wenn Kunden in deinem Netzwerk einen Tarif abonnieren, erhalten sie Zugriff auf eine Website und deren Dashboard mit wichtigen Informationen zu ihren Zahlungen, Mitgliedschaften, Domains, Tarifbeschränkungen usw. ...
 
-In diesem Tutorial führen wir Sie durch die Kundenkonto-Seite und zeigen Ihnen, was Ihre Kunden dort sehen und tun können.
+In diesem Tutorial führen wir dich durch die Account-Seite des Kunden, und du siehst, was deine Kunden darin sehen und tun können.
 
-## Die Kontoseite
+## Die Account-Seite {#the-account-page}
 
-Die Kontoseite ist über **Account** im Dashboard Ihres Kunden zugänglich.
+Die Account-Seite ist zugänglich, indem du im Dashboard deines Kunden auf **Account** klickst.
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![Account-Menü im Kunden-Dashboard](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+In souveränen Mandantennetzwerken behält Ultimate Multisite v2.13.0 dieses Kundenverwaltungserlebnis auf der Hauptwebsite. Wenn ein Kunde Account-, Checkout-, Abrechnungs-, Rechnungs-, Website-Verwaltungs-, Template-Wechsel- oder Domain-Mapping-Aktionen von einem souveränen Mandanten aus öffnet, verweist die Aktion zurück auf das Kundenpanel der Hauptwebsite, damit die Abrechnungs- und Mitgliedschaftsdatensätze des Netzwerks maßgeblich bleiben.
 
-Nach dem Klick auf die Seite erhalten sie einen Überblick über ihre Mitgliedschaft, Rechnungsadresse, Rechnungen, Domains, Site-Limits und können auch das ****Site Template** ändern (falls es in Ihrem Netzwerk erlaubt ist)**.
+Wenn der Kunde von einem souveränen Mandanten kommt, kann das Kundenpanel der Hauptwebsite einen Rückkehr-Link zurück zur Mandanten-Website enthalten. Der Rückkehr-Link wird nur angezeigt, wenn Ultimate Multisite das Rückkehrziel als eine der Websites des Kunden validieren kann. Dadurch werden beliebige Weiterleitungen verhindert, während der Mandanten-Workflow erhalten bleibt.
 
-Sie können auch die Mitgliedschaft auf einen anderen Plan ändern oder ein weiteres Paket oder einen Service erwerben, den Sie anbieten. Schauen wir uns jeden Abschnitt einzeln an.
+![Übersicht der Kunden-Account-Seite](/img/account-page/overview.png)
 
-### Ihr Mitgliedschaftsüberblick:
+Nachdem ein Kunde darauf geklickt hat, sieht er eine Übersicht über seine Mitgliedschaft, Rechnungsadresse, Rechnungen, Domains, Website-Beschränkungen und kann außerdem die ****Website-Vorlage** ändern (wenn dies in deinem Netzwerk erlaubt ist)**.
 
-Der erste Block direkt unter dem Namen der Website Ihres Kunden zeigt einen Überblick über den aktuellen Plan und die mit diesem erworbenen Dienste/Pakete. Der Block zeigt auch die Mitgliedsnummer, den anfänglichen Betrag, der dafür bezahlt wurde, die Kosten des Plans und aller Dienste/Pakete sowie die Anzahl der Zahlungen für diese Mitgliedschaft. Sie können auch sehen, ob die Mitgliedschaft **Active**, **Expired** oder **Canceled** ist.
+Er kann die Mitgliedschaft auch auf einen anderen Tarif ändern oder ein anderes Paket oder einen anderen Service kaufen, den du anbietest. Sehen wir uns jeden Abschnitt separat an.
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+### Übersicht deiner Mitgliedschaft: {#your-membership-overview}
 
-Direkt unter diesem Block können Ihre Kunden die Blöcke **About This Site** und **Site Limits** sehen. Diese Blöcke zeigen ihnen alle Einschränkungen, die mit ihrem Plan verbunden sind: Speicherplatz, Beiträge, Seiten, Besuche usw. Diese Grenzen können auf jeder Plan-Seite unter **Ultimate Multisite > Products** konfiguriert werden.
+Der erste Block direkt unter dem Website-Namen deiner Kunden zeigt eine Übersicht ihres aktuellen Tarifs und der Services/Pakete, die damit gekauft wurden. Der Block zeigt außerdem die Mitgliedschaftsnummer, den dafür ursprünglich gezahlten Betrag, wie viel der Tarif und jeder Service/jedes Paket kostet und wie oft ihnen diese Mitgliedschaft in Rechnung gestellt wurde. Sie können auch sehen, ob die Mitgliedschaft **Aktiv**, **Abgelaufen** oder **Gekündigt** ist.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![Mitgliedschaftsübersicht mit Tarif, Betrag und Abrechnungsdetails](/img/account-page/membership-card.png)
 
-Auf der rechten Seite von **Your Membership** können Kunden auf **Change** klicken. Dies zeigt ihnen alle verfügbaren Pläne und Pakete/Services. Wenn sie einen anderen Plan wählen, gelten die Einschränkungen dieses Plans anstelle der aktuellen Einschränkungen der Mitgliedschaft – es spielt keine Rolle, ob sie downgraden oder upgraden.
+Direkt unter diesem Block können deine Kunden die Blöcke **Über diese Website** und **Website-Limits** sehen. Diese Blöcke zeigen ihnen alle Beschränkungen, die zu ihrem Tarif gehören: Speicherplatz, Beiträge, Seiten, Besuche usw. ... Diese Limits können auf jeder Tarifseite unter **Ultimate Multisite > Produkte** konfiguriert werden.
 
-Wenn Ihre Kunden nun Pakete oder Services für diese aktuelle Mitgliedschaft erwerben – z. B. mehr Speicherplatz oder Besuche – wird die aktuelle Mitgliedschaft nicht geändert, sondern nur die neuen Pakete werden hinzugefügt.
+![Blöcke „Über diese Website“ und „Website-Limits“ mit Tarifbeschränkungen](/img/account-page/site-limits.png)
 
-Beachten Sie, dass Gutscheincodes auf dieser Seite zur Änderung der Mitgliedschaft nicht hinzugefügt werden können. Wenn der Kunde beim ersten Kauf der Mitgliedschaft einen Gutscheincode verwendet hat, gilt dieser Code auch für die neue Mitgliedschaft.
+Auf der rechten Seite von **Deine Mitgliedschaft** können Kunden auf **Ändern** klicken. Dadurch werden ihnen alle verfügbaren Tarife und Pakete/Services angezeigt. Wenn sie einen anderen Tarif wählen, gelten die Beschränkungen dieses Tarifs anstelle der aktuellen Beschränkungen der Mitgliedschaft – unabhängig davon, ob sie ein Downgrade oder Upgrade durchführen.
 
-### Aktualisierung der Rechnungsadresse:
+Wenn deine Kunden nun Pakete oder Services für diese aktuelle Mitgliedschaft kaufen – etwa mehr Speicherplatz oder Besuche –, wird die aktuelle Mitgliedschaft nicht geändert; nur die neuen Pakete werden hinzugefügt.
 
-Auf der Kontoseite können Ihre Kunden ihre Rechnungsadresse ebenfalls aktualisieren. Sie müssen einfach auf **Update** neben _Billing Address_ klicken.
+Beachte, dass Gutscheincodes auf dieser Seite zum Ändern der Mitgliedschaft nicht hinzugefügt werden können. Wenn der Kunde beim ersten Kauf der Mitgliedschaft einen Gutscheincode verwendet hat, gilt der Code auch für diese neue Mitgliedschaft.
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+### Aktualisieren der Rechnungsadresse: {#updating-the-billing-address}
 
-Ein neues Fenster öffnet sich für Ihren Kunden. Er muss lediglich die neue Adresse eingeben und auf _Save Changes_ klicken.
+Auf der Account-Seite können deine Kunden auch ihre Rechnungsadresse aktualisieren. Sie müssen nur neben _Rechnungsadresse_ auf **Aktualisieren** klicken.
 
-![Update billing address form](/img/admin/customers-list.png)
+![Abschnitt „Rechnungsadresse“ mit Aktualisieren-Button](/img/account-page/billing-address.png)
 
-### Änderung des Site Templates:
+Ein neues Fenster wird deinem Kunden angezeigt. Er muss lediglich die neue Adresse eingeben und auf _Änderungen speichern_ klicken.
 
-Um Ihren Kunden die Änderung ihrer Site Templates zu ermöglichen, gehen Sie zu **Ultimate Multisite > Settings > Sites** und aktivieren die Option **Allow Template Switching**.
+![Formular zum Aktualisieren der Rechnungsadresse](/img/account-page/billing-address-form.png)
 
-Außerdem wählen Sie in **Ultimate Multisite > Products** Ihre Pläne aus und gehen zum Tab **Site Templates**. Stellen Sie sicher, dass die Option **Allow Site Templates** aktiviert ist und im **Site Template Selection Mode** die Option **Choose Available Site Templates** ausgewählt ist.
+### Ändern der Website-Vorlage: {#changing-the-site-template}
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+Um deinen Kunden zu erlauben, ihre Website-Vorlagen zu ändern, musst du zu **Ultimate Multisite > Einstellungen > Websites** gehen und die Option **Vorlagenwechsel erlauben** aktivieren.
 
-Sie können alle verfügbaren Site Templates auf Ihrer Website sehen. Wählen Sie, welche Sie verfügbar machen möchten und welche nicht für Ihre Kunden unter diesem Plan verfügbar sein sollen. Beachten Sie, dass diese Optionen auch das Checkout-Formular beeinflussen, sodass ein Template, das als **Not Available** ausgewählt ist, auf der Registrierungsseite für diesen Plan nicht angezeigt wird.
+Wähle außerdem unter **Ultimate Multisite > Produkte** deine Tarife aus und gehe zum Tab **Website-Vorlagen**. Stelle sicher, dass die Option **Website-Vorlagen erlauben** aktiviert ist und dass unter **Auswahlmodus für Website-Vorlagen** die Option **Verfügbare Website-Vorlagen auswählen** ausgewählt ist.
 
-Jetzt können Ihre Kunden auf **Change Site Template** in ihrer Kontoseite klicken.
+![Tab „Website-Vorlagen“ des Produkts mit Vorlagenauswahlmodus](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/admin/dashboard.png)
-Eine Liste aller verfügbaren Site Templates für diesen Plan erscheint Ihrem Kunden.
+Du kannst alle verfügbaren Website-Vorlagen auf deiner Website sehen. Wähle aus, welche du deinen Kunden, die diesen Tarif abonniert haben, verfügbar machen möchtest und welche nicht. Beachte, dass diese Optionen auch das Checkout-Formular beeinflussen; jede Vorlage, die als **Nicht verfügbar** ausgewählt ist, erscheint daher nicht auf der Registrierungsseite für diesen Tarif.
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Jetzt können deine Kunden innerhalb ihrer Account-Seite auf **Website-Vorlage ändern** klicken.
 
-Nach Auswahl des gewünschten Templates werden sie aufgefordert, die Änderung zu bestätigen.
+![Button „Website-Vorlage ändern“ auf der Account-Seite](/img/account-page/change-template-button.png)
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 zeigt ein neu gestaltetes Panel für den Vorlagenwechsel. Das Panel beginnt mit einer **current-template-Karte**, damit Kunden sehen können, welche Vorlage aktiv ist, bevor sie einen Ersatz auswählen.
 
-Nach Aktivierung der Bestätigung und Klicken auf **Process Switch** wird das neue Site Template auf der Website Ihres Kunden verwendet.
+Ein dauerhaftes Raster verfügbarer Website-Vorlagen bleibt sichtbar, während Kunden ihre Optionen prüfen. Dies hilft ihnen, die für ihren Tarif erlaubten Vorlagen zu vergleichen, ohne die aktuelle Auswahl aus dem Blick zu verlieren.
 
-### Hinzufügen von Custom Domains:
+![Liste verfügbarer Website-Vorlagen für den Tarif](/img/config/site-templates-list.png)
 
-Ihre Kunden haben ebenfalls die Möglichkeit, für diesen Plan auf ihrer Kontoseite eine Custom Domain hinzuzufügen. Um Ihren Kunden die Nutzung von Custom Domains zu ermöglichen, gehen Sie zu **Ultimate Multisite > Settings >** **Domain Mapping**.
+Nachdem sie die Vorlage ausgewählt haben, zu der sie wechseln möchten, werden sie gebeten, die Änderung zu bestätigen.
 
-Aktivieren Sie die Option **Enable Domain Mapping**. Dadurch können Ihre Kunden Custom Domains auf Netzwerkebene nutzen.
+![Bestätigungsdialog für den Website-Vorlagenwechsel](/img/account-page/template-switch-confirm.png)
 
-Vergessen Sie nicht, ebenfalls zu prüfen, ob die Domain Mapping auf Produktebene aktiviert ist – denn Sie können ein Produkt so einschränken, dass Ihre Kunden keine Custom Domains nutzen dürfen.
+Nachdem sie die Bestätigung aktiviert und auf **Wechsel verarbeiten** geklickt haben, wird die neue Website-Vorlage auf der Website deines Kunden verwendet.
 
-Gehen Sie zu **Ultimate Multisite > Products**. Wählen Sie den gewünschten Plan aus und gehen Sie zum Tab **Custom Domains**. Aktivieren Sie die Option **Allow Custom Domains**.
+Kunden können in diesem Panel auch **Reset current template** verwenden, wenn sie die Website auf das aktuell zugewiesene Template zurücksetzen müssen. Wie beim Wechsel zu einem anderen Template kann das Zurücksetzen eines Templates Website-Inhalte überschreiben. Daher sollten Kunden dies nur bestätigen, wenn sie die Zurücksetzungsaktion verstehen.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+### Benutzerdefinierte Domains hinzufügen: {#adding-custom-domains}
 
-Damit können alle Kunden, die diesen spezifischen Plan abonniert haben, Custom Domains nutzen. Auf der Kontoseite können Ihre Kunden nun eine Custom Domain hinzufügen, indem sie auf **Add Domain** klicken.
+Ihre Kunden haben außerdem die Möglichkeit, auf ihrer Account-Seite eine benutzerdefinierte Domain für diesen Plan hinzuzufügen. Damit Ihre Kunden benutzerdefinierte Domains verwenden können, gehen Sie zu **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+Aktivieren Sie die Option **Enable Domain Mapping**. Dadurch können Ihre Kunden benutzerdefinierte Domains auf Netzwerkebene verwenden.
 
-Das erste sich öffnende Fenster zeigt Ihren Kunden eine Nachricht, in der sie angewiesen werden, wie sie ihre DNS-Einträge aktualisieren, damit diese Custom Domain in Ihrem Netzwerk funktioniert.
+Vergessen Sie nicht, auch zu prüfen, ob das Domain Mapping auf Produktbasis aktiviert ist – denn Sie können ein Produkt so einschränken, dass Ihre Kunden keine benutzerdefinierten Domains verwenden dürfen.
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+Gehen Sie zu **Ultimate Multisite > Products**. Wählen Sie den Plan Ihrer Wahl aus und gehen Sie zum Tab **Custom Domains**. Aktivieren Sie die Option **Allow Custom Domains**.
+
+![Tab Custom Domains mit Umschalter Allow Custom Domains](/img/config/product-custom-domains.png)
+
+Dadurch können alle Kunden, die diesen bestimmten Plan abonniert haben, benutzerdefinierte Domains verwenden. Jetzt können Ihre Kunden auf der Account-Seite eine benutzerdefinierte Domain hinzufügen, indem sie auf **Add Domain** klicken.
+
+![Schaltfläche Add Domain auf der Account-Seite](/img/account-page/add-domain-button.png)
+
+Das erste Fenster, das sich öffnet, zeigt Ihren Kunden eine Nachricht mit Anweisungen, wie sie ihre DNS-Einträge aktualisieren müssen, damit diese benutzerdefinierte Domain in Ihrem Netzwerk funktioniert.
+
+![DNS-Anweisungen, die beim Hinzufügen einer benutzerdefinierten Domain angezeigt werden](/img/account-page/add-domain-dns.png)
 
 Diese Nachricht kann (von Ihnen) unter **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** bearbeitet werden.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![Einstellung Add New Domain Instructions in Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Nach dem Klicken auf **Next Step** können Ihre Kunden ihren Custom Domain Namen hinzufügen und wählen, ob diese Custom Domain die primäre sein soll. Beachten Sie, dass Ihre Kunden mehr als eine Custom Domain für ihre Websites nutzen können, sodass sie wählen können, welche die primäre sein soll.
+Hier ist eine vollständige Ansicht der Domain-Mapping-Einstellungsseite:
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+![Vollständige Seite der Domain-Mapping-Einstellungen](/img/config/settings-domain-mapping-full.png)
 
-Nach dem Klicken auf **Add Domain** wird die Domain zu Ihrem Kundenkonto hinzugefügt. Alles, was sie jetzt tun müssen, ist die DNS-Einträge dieser Custom Domain bei ihrem Domain-Registrar zu ändern.
+Nach dem Klick auf **Next Step** können Ihre Kunden ihren benutzerdefinierten Domainnamen hinzufügen und auswählen, ob diese benutzerdefinierte Domain die primäre sein soll. Beachten Sie, dass Ihre Kunden mehr als eine benutzerdefinierte Domain für ihre Websites verwenden können, sodass sie auswählen können, welche die primäre sein soll.
 
-### Passwort ändern:
+![Eingabe des benutzerdefinierten Domainnamens mit Option für primäre Domain](/img/account-page/add-domain-primary.png)
 
-Im Kontodashboard können Ihre Kunden ihr Passwort ebenfalls ändern, indem sie auf **Change Password** klicken.
+Nach dem Klick auf **Add Domain** wird die Domain dem Account Ihres Kunden hinzugefügt. Alles, was sie jetzt noch tun müssen, ist, die DNS-Einträge dieser benutzerdefinierten Domain bei ihrem Domain-Registrar zu ändern.
 
-![Change Password button on account page](/img/admin/dashboard.png)
+### Passwort ändern: {#changing-password}
 
-Dies öffnet ein neues Fenster, in dem Ihre Kunden ihr aktuelles Passwort eingeben und anschließend das neue Passwort, das sie verwenden möchten, eingeben müssen.
+Im Account-Dashboard können Ihre Kunden außerdem ihr Passwort ändern, indem sie auf **Change Password** klicken.
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+![Schaltfläche Change Password auf der Account-Seite](/img/account-page/change-password-button.png)
 
-### Gefahrenzone:
+Dadurch wird ein neues Fenster angezeigt, in dem Ihre Kunden ihr aktuelles Passwort eingeben und anschließend das neue Passwort eintragen müssen, das sie verwenden möchten.
 
-Wir haben außerdem zwei Optionen im **Danger Zone**: **Delete Site** und **Delete Account**. Beide befinden sich im Danger Zone, weil diese beiden Aktionen unwiderruflich sind. Wenn Ihre Kunden ihre Website oder ihr Konto löschen, können sie diese nicht wiederherstellen.
+![Formular zum Ändern des Passworts mit Feldern für aktuelles und neues Passwort](/img/account-page/change-password-form.png)
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+### Danger Zone: {#danger-zone}
 
-Wenn Ihre Kunden auf eine dieser beiden Optionen klicken, wird ihnen ein Fenster angezeigt, in dem sie die Option zum Entfernen der Website oder des Kontos aktivieren müssen, und sie werden darauf hingewiesen, dass diese Aktion nicht rückgängig gemacht werden kann.
+Wir haben außerdem zwei Optionen, die im Bereich **Danger Zone** angezeigt werden: **Delete Site** und **Delete Account**. Beide befinden sich im Bereich Danger Zone, weil diese beiden Aktionen unumkehrbar sind. Wenn Ihre Kunden ihre Website oder ihren Account löschen, können sie diese nicht wiederherstellen.
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Danger Zone mit den Optionen Delete Site und Delete Account](/img/account-page/danger-zone.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+Wenn Ihre Kunden auf eine dieser beiden Optionen klicken, wird ihnen ein Fenster angezeigt, in dem sie die Option zum Entfernen der Website oder des Accounts aktivieren müssen. Außerdem werden sie gewarnt, dass diese Aktion nicht rückgängig gemacht werden kann.
 
-Wenn sie ihre Website löschen, bleibt ihr Konto und ihre Mitgliedschaft unverändert. Sie verlieren lediglich alle Inhalte ihrer Website. Wenn sie ihr Konto löschen, gehen alle Websites, Mitgliedschaften und Informationen zu diesem Konto verloren.
+![Bestätigungsdialog Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Bestätigungsdialog Delete Account](/img/account-page/delete-account-confirm.png)
+
+Wenn sie ihre Website löschen, bleiben ihr Account und ihre Mitgliedschaft weiterhin unverändert. Sie verlieren nur alle Inhalte auf ihrer Website. Wenn sie ihren Account löschen, gehen alle Websites, Mitgliedschaften und Informationen zu diesem Account verloren.

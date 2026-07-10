@@ -3,18 +3,18 @@ title: Fähigkeiten des Theme Builders
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Fähigkeiten: Block-Themes erstellen und aktivieren
+# Theme Builder Fähigkeiten: Block-Themes erstellen und aktivieren {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 führt zwei leistungsstarke Fähigkeiten ein, mit denen Sie benutzerdefinierte Block-Themes direkt über die Chat-Oberfläche erstellen und einsetzen können.
 
-## Überblick
+## Überblick {#overview}
 
 Die Fähigkeiten **scaffold-block-theme** und **activate-theme** ermöglichen es Agenten, Folgendes zu tun:
 - Vollständige, produktionsreife Block-Themes basierend auf Ihren Vorgaben zu erstellen
 - Themes automatisch auf Ihrer Website zu aktivieren, ohne dass manuelle Eingriffe nötig sind
 - Durch geführte Designentscheidungen ein stimmiges visuelles Erscheinungsbild zu schaffen
 
-## Block-Theme erstellen (Scaffold Block Theme)
+## Block-Theme erstellen (Scaffold Block Theme) {#scaffold-block-theme}
 
 Die Fähigkeit **scaffold-block-theme** generiert ein neues WordPress Block-Theme mit einer vollständigen Theme-Struktur, einschließlich:
 
@@ -23,7 +23,7 @@ Die Fähigkeit **scaffold-block-theme** generiert ein neues WordPress Block-Them
 - Benutzerdefinierte Block-Styles und Variationen
 - Theme-Metadaten und Support-Deklarationen
 
-### Wie man es aufruft
+### Wie man es aufruft {#how-to-invoke}
 
 In Ihrem Chat mit Superdav AI Agent können Sie die Theme-Erstellung anfordern:
 
@@ -38,7 +38,7 @@ Der Agent wird:
 3. Alle notwendigen Theme-Dateien erstellen
 4. Das Theme für die Aktivierung vorbereiten
 
-### Erwartete Ausgabe
+### Erwartete Ausgabe {#expected-output}
 
 Wenn die Fähigkeit erfolgreich ausgeführt wird, sehen Sie:
 
@@ -56,11 +56,11 @@ Beispielausgabe:
   Status: Bereit zur Aktivierung
 ```
 
-## Theme aktivieren (Activate Theme)
+## Theme aktivieren (Activate Theme) {#activate-theme}
 
 Die Fähigkeit **activate-theme** schaltet Ihre Website auf ein neu erstelltes oder bereits existierendes Block-Theme um.
 
-### Wie man es aufruft
+### Wie man es aufruft {#how-to-invoke-1}
 
 Nachdem Sie ein Theme erstellt haben, können Sie es sofort aktivieren:
 
@@ -74,7 +74,7 @@ Oder ein beliebiges bestehendes Theme aktivieren:
 "Wechsle zum Theme Twentytwentyfour"
 ```
 
-### Erwartete Ausgabe
+### Erwartete Ausgabe {#expected-output-1}
 
 Wenn die Aktivierung erfolgreich ist:
 
@@ -92,7 +92,7 @@ Beispielausgabe:
   Hinweis: Überprüfen Sie Ihre Startseite, um das Layout zu verifizieren
 ```
 
-## Workflow: Erstellen und Aktivieren
+## Workflow: Erstellen und Aktivieren {#workflow-scaffold-and-activate}
 
 Ein typischer Workflow kombiniert beide Fähigkeiten:
 
@@ -102,7 +102,7 @@ Ein typischer Workflow kombiniert beide Fähigkeiten:
 4. **Aktivieren**: "Aktiviere das Theme jetzt"
 5. **Verifizieren**: Besuchen Sie Ihre Website, um zu bestätigen, dass das neue Design live ist
 
-## Design-Tokens und Anpassung
+## Design-Tokens und Anpassung {#design-tokens-and-customization}
 
 Erstellte Themes verwenden WordPress Design-Tokens (über `theme.json`) für:
 
@@ -114,14 +114,14 @@ Erstellte Themes verwenden WordPress Design-Tokens (über `theme.json`) für:
 
 Diese Tokens sind in `theme.json` zentralisiert, was es einfach macht, Ihr gesamtes Designsystem aus einer einzigen Datei anzupassen.
 
-## Einschränkungen und Hinweise
+## Einschränkungen und Hinweise {#limitations-and-notes}
 
 - Themes werden in `/wp-content/themes/` erstellt und müssen die WordPress-Namenskonventionen einhalten
 - Die Aktivierung erfordert entsprechende Berechtigungen auf Ihrer WordPress-Website
 - Benutzerdefinierter PHP-Code in Themes ist minimal; verwenden Sie Plugins für komplexe Funktionalität
 - Block-Themes funktionieren am besten mit WordPress 5.9 und neuer
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
 **Das Theme erscheint nicht nach der Erstellung**
 - Überprüfen Sie, ob das Theme-Verzeichnis existiert und die korrekten Berechtigungen hat
@@ -138,7 +138,7 @@ Diese Tokens sind in `theme.json` zentralisiert, was es einfach macht, Ihr gesam
 - Löschen Sie alle Caching-Plugins
 - Überprüfen Sie, ob Ihre WordPress-Version die verwendeten Tokens unterstützt
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 Nach der Aktivierung Ihres Themes können Sie:
 - Die **Design System Aesthetics skill** verwenden, um Typografie, Farben und Abstände zu verfeinern

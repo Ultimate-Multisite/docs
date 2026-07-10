@@ -3,7 +3,7 @@ title: WordPress Multisiteን እንዴት መጫን ይቻላል?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# የዎርድፕሬስ መልቲሳይት (Multisite) እንዴት እጫንዋለሁ?
+# የዎርድፕሬስ መልቲሳይት (Multisite) እንዴት እጫንዋለሁ? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite በአንድ ተከላ (installation) ላይ የብዙ ድረ-ገጽ አውታረ መረብ (network of sites) እንዲኖር ያስችላል። ይህ በተ組み込まል ባህሪ (built-in feature) ቢሆንም፣ በቅድፋት (default) አይሰራም።
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 መስኮቶቹን ከሞሉ በኋላ፣ "Add site" የሚለውን ቁልፍ ይጫኑ። አዲሱ ንዑስ ድረ-ገጽ ከተፈጠረ በኋላ፣ ንዑስ ድረ-ገጹ በትክክል እየሰራ መሆኑን ለማረጋገጥ ይጎበኙት።
 
-## የተለመዱ ችግሮች፦
+## የተለመዱ ችግሮች፦ {#common-problems}
 
-### 1. አዳዲስ ድረ-ገጾችን መፍጠር እችላለሁ ግን መድረስ አልችልም።
+### 1. አዳዲስ ድረ-ገጾችን መፍጠር እችላለሁ ግን መድረስ አልችልም። {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 ንዑስ ዶሜን (subdomains) ከመረጡ፣ ለመልቲሳይት አውታረ መረብዎ ዋይልድካርድ ንዑስ ዶሜን (wildcard subdomains) መዘርጋት አለብዎት።
 

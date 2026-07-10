@@ -3,7 +3,7 @@ title: WordPress Multisite Nasıl Kurulur
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite Nasıl Kurulur?
+# WordPress Multisite Nasıl Kurulur? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite, tek bir kurulumda birden fazla siteyi yönetebileceğiniz bir site ağı oluşturmanızı sağlar. Bu özellik WordPress'in içinde hazır olarak bulunur, ancak varsayılan olarak etkin değildir.
 
@@ -61,7 +61,7 @@ Yine WordPress'in sağladığı bu kodu da _**.htaccess**_ dosyanıza ekleyin:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin sonuna eğik çizgi ekle
+# /wp-admin sonuna eğik çizgi ekle {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Bir alt site oluşturmak için:
 
 Alanları doldurduktan sonra "Site ekle" düğmesine tıklayın. Yeni alt site oluşturulduktan sonra, alt sitenin düzgün çalıştığından emin olmak için siteye erişin ve test edin.
 
-## Sık Karşılaşılan Sorunlar:
+## Sık Karşılaşılan Sorunlar: {#common-problems}
 
-### 1\. Yeni siteler oluşturabiliyorum ama erişilemiyor.
+### 1\. Yeni siteler oluşturabiliyorum ama erişilemiyor. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Alt alan adlarını seçtiyseniz, multisite ağınız için joker karakter alt alan adları (wildcard subdomains) kurulumu da yapmanız gerekir.
 

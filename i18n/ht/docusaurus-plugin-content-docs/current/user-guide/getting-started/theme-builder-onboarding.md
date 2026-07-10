@@ -3,11 +3,11 @@ title: Flè de Inisyalizasyon Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Fluxyal Onboarding Flow pou Theme Builder
+# Fluxyal Onboarding Flow pou Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 bay yon **fluxyal onboarding flow** ki ede w kreye yon custom block theme pandan etap enpòtan an ou kòmanse. Sa a ranplase mod site legacy la ak yon apwòch ki pi fleksib, ki gen asistans nan agent la.
 
-## Ki sa se Fluxyal Onboarding Flow la?
+## Ki sa se Fluxyal Onboarding Flow la? {#what-is-the-theme-builder-onboarding-flow}
 
 Fluxyal onboarding flow la se yon wizard setup interaktif ki:
 
@@ -18,9 +18,9 @@ Fluxyal onboarding flow la se yon wizard setup interaktif ki:
 
 Flow la pouse pa **Setup Assistant agent** la, ki poze kesyon klarifikasyon ak bati theme ou etap pa etap.
 
-## Kòman kòmanse Fluxyal Onboarding la
+## Kòman kòmanse Fluxyal Onboarding la {#starting-the-theme-builder-onboarding}
 
-### Setup Premye Fwa (First-Run Setup)
+### Setup Premye Fwa (First-Run Setup) {#first-run-setup}
 
 Lè w lanse Superdav AI Agent pou premye fwa sou yon nou WordPress installation, ou pral wè sa a:
 
@@ -35,7 +35,7 @@ Kisa ou ta renmen fè?
 
 Chwazi **"Bati yon theme custom"** pou antre nan fluxyal onboarding flow la.
 
-### Aktive Manmanèl (Manual Activation)
+### Aktive Manmanèl (Manual Activation) {#manual-activation}
 
 Ou ka kòmanse fluxyal onboarding la nenpòt lè ou mande:
 
@@ -49,9 +49,9 @@ oswa
 "Help me create a custom theme"
 ```
 
-## Etap Onboarding la
+## Etap Onboarding la {#the-onboarding-steps}
 
-### Etap 1: Chwazi Mod (Mode Selection)
+### Etap 1: Chwazi Mod (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent la ap poze sou prefere ou:
 
@@ -63,7 +63,7 @@ Kijan ou ta renmen bati theme ou a?
 
 **Guided mode** la rekouvè pou pi gwo itilizatè; agent la fè rekòmande konsepsyon baze sou endistri ak objektif ou.
 
-### Etap 2: Spesifikasyon Sit la (Site Specification)
+### Etap 2: Spesifikasyon Sit la (Site Specification) {#step-2-site-specification}
 
 Ou pral mande sou sit ou a:
 
@@ -74,7 +74,7 @@ Ou pral mande sou sit ou a:
 
 Enfòmasyon sa a se estoke nan memwa **site_brief** ou a, ki genyen agent yo referansye nan sesyon kap vini yo.
 
-### Etap 3: Desizyon Sistèm Konpòtman (Design System Decisions)
+### Etap 3: Desizyon Sistèm Konpòtman (Design System Decisions) {#step-3-design-system-decisions}
 
 Agent la ap gide ou atravè chwazi token konsepsyon an:
 
@@ -83,7 +83,7 @@ Agent la ap gide ou atravè chwazi token konsepsyon an:
 - **Spacing**: Layout ki kout, normal, oswa espas la gwo
 - **Motion**: Animasyon ak transisyon (si ou vle)
 
-### Etap 4: Jenerasyon Thème (Theme Generation)
+### Etap 4: Jenerasyon Thème (Theme Generation) {#step-4-theme-generation}
 
 Agent Setup Assistant la ap bay ou yon thèm blòk koutmè ou a avèk:
 
@@ -92,7 +92,7 @@ Agent Setup Assistant la ap bay ou yon thèm blòk koutmè ou a avèk:
 - Estil blòk koutmè ki koresponn ak sistèm konsepsyon ou an
 - Metadata thèm ak deklarasyon sipò WordPress
 
-### Etap 5: Aktivasyon ak Verifikasyon (Activation and Verification)
+### Etap 5: Aktivasyon ak Verifikasyon (Activation and Verification) {#step-5-activation-and-verification}
 
 Thèm nan ap aktive otomatikman, epi ou pral wè sa a:
 
@@ -107,7 +107,7 @@ Thèm nan ap aktive otomatikman, epi ou pral wè sa a:
 
 Lè sa a, ou ka ale vizite sit ou pou w verifye ke thèm nan ap montre kòrèk.
 
-## Spesifikasyon Sit ak Memwa site_brief (Site Specification and site_brief Memory)
+## Spesifikasyon Sit ak Memwa site_brief (Site Specification and site_brief Memory) {#site-specification-and-sitebrief-memory}
 
 Pandyan ou ap fè onboarding la, agent la ap pran spesifikasyon sit ou an nan kategori memwa **site_brief**. Sa gen ladan:
 
@@ -117,11 +117,11 @@ Pandyan ou ap fè onboarding la, agent la ap pran spesifikasyon sit ou an nan ka
 - Pwèfans konsepsyon
 - Estrikti kontni
 
-### Poukisa site_brief enpòtan
+### Poukisa site_brief enpòtan {#why-sitebrief-matters}
 
 Nan sesyon kap vini yo, agent yo ap referansye site_brief ou a pou:
 
-### Konsolwayaj Site Brief ou Vizyè Site_brief la
+### Konsolwayaj Site Brief ou Vizyè Site_brief la {#viewing-your-sitebrief}
 
 Ou ka mande ajan an:
 
@@ -137,11 +137,11 @@ oswa
 
 Ajan an ap montre spesifikasyon site ou ki te estoke.
 
-## Kòmanize Apre Onboarding la
+## Kòmanize Apre Onboarding la {#customizing-after-onboarding}
 
 Malgre ke onboarding Theme Builder fini, ou ka:
 
-### Itilize Konpetans Design System Aesthetics Skill
+### Itilize Konpetans Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Mandate amelyorasyon design:
 
@@ -157,7 +157,7 @@ oswa
 
 **Design System Aesthetics skill** ap gide ou nan amelyorasyon design ki byen detaye.
 
-### Edite theme.json dirèkteman
+### Edite theme.json dirèkteman {#edit-themejson-directly}
 
 Pou itilizat avanse, edite `/wp-content/themes/[theme-name]/theme.json` pou ajiste:
 
@@ -166,7 +166,7 @@ Pou itilizat avanse, edite `/wp-content/themes/[theme-name]/theme.json` pou ajis
 - Spacing values
 - Border ak shadow definitions
 
-### Kreye Custom Block Templates
+### Kreye Custom Block Templates {#create-custom-block-templates}
 
 Itilize WordPress block editor la pou kreye template koutim pou:
 
@@ -175,7 +175,7 @@ Itilize WordPress block editor la pou kreye template koutim pou:
 - Paj pwodwi (Product pages)
 - Fòm kontak (Contact forms)
 
-## Konparezon: Anvan ak Apre Onboarding la
+## Konparezon: Anvan ak Apre Onboarding la {#comparison-old-vs-new-onboarding}
 
 | Caractéristique | Site Builder (Anvan) | Theme Builder (Apre) |
 |---------|----------------------|-------------------|
@@ -185,7 +185,7 @@ Itilize WordPress block editor la pou kreye template koutim pou:
 | Fleksibilite | Opsyon fiks | Koutimabilite |
 | Update nan lavni | Pa refi | Estoke nan site_brief |
 
-## Resous Solisyon (Troubleshooting)
+## Resous Solisyon (Troubleshooting) {#troubleshooting}
 
 **Onboarding la pa fini**
 - Rete kòmanse: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Itilize WordPress block editor la pou kreye template koutim pou:
 - Demande an l'agent pou li "regenerate the theme with [specific changes]"
 - Edite theme.json dirèkteman pou kontwole byen pres
 
-## Prochè Etapes (Next Steps)
+## Prochè Etapes (Next Steps) {#next-steps}
 
 Malgre ou fin konplè onboarding Theme Builder la:
 

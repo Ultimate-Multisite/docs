@@ -1,73 +1,194 @@
 ---
-title: Hooks အကိုးအကား
+title: Hooks ကိုးကားချက်
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks အကိုးအကား
+# Hooks ကိုးကားချက် {#hooks-reference}
 
-Ultimate Multisite မှာရှိတဲ့ Actions ၅၉ ခုနဲ့ Filters ၁၁၅ ခုလုံးအတွက် အလိုအလျောက် ထုတ်ပေးထားတဲ့ စာရွက်စာတမ်း ဖြစ်ပါတယ်။
+Ultimate Multisite ရှိ **59 actions** နှင့် **118 filters** အားလုံးအတွက် အလိုအလျောက်ထုတ်လုပ်ထားသော စာရွက်စာတမ်း။
 
-## Actions
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — အသုံးပြုသူ စစ်ဆေးပြီး redirect လုပ်မယ့် အချိန် မစခင်မှာ ခေါ်ပါတယ်။
-- [set_auth_cookie](./Actions/set_auth_cookie) — အသုံးပြုသူ စစ်ဆေးတဲ့ cookie ကို သတ်မှတ်ခါနီးမှာ ချက်ချင်း ခေါ်ပါတယ်။
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — အသုံးပြုသူ အကောင့်ဝင်ထားတဲ့ cookie ကို သတ်မှတ်ခါနီးမှာ ခေါ်ပါတယ်။
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Developer တွေအနေနဲ့ wp plugins တွေကနေ ကိုယ်ပိုင် host provider integration တွေ ထည့်သွင်းနိုင်ပါတယ်။
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — မူတည်မှုအားလုံး (dependencies) တင်ပြီးတဲ့အခါမှာ အလုပ်လုပ်စေပါတယ်။
-- [wu_activation](./Actions/wu_activation) — Plugin ရဲ့ အခြားအပိုင်းတွေက activation လုပ်တဲ့ လုပ်ဆောင်မှုတွေကို ချိတ်ဆက်နိုင်ပါတယ်။
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — အသုံးပြုသူ ဒါမှမဟုတ် super admin က site template ကို ပြောင်းလဲလိုက်တဲ့အခါမှာ plugin developer တွေက function တွေ ချိတ်ဆက်နိုင်ပါတယ်။
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — အချို့အခြေအနေတွေမှာ လုပ်ဆောင်မှုတွေကို ကိုင်တွယ်ဖို့ အပိုအကြောင်းအရာတွေ တင်ဖို့ လိုအပ်ပါတယ်။
-- [wu_before_search_models](./Actions/wu_before_search_models) — ရှာဖွေမှု (search) တောင်းဆိုမှုကို စတင်လုပ်ဆောင်ခါနီးမှာ ခေါ်ပါတယ်။
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Developer တွေအနေနဲ့ checkout object ကို အပိုအပြောင်းအလဲတွေ လုပ်နိုင်ပါတယ်။
-- [wu_cart_setup](./Actions/wu_cart_setup) — Developer တွေအနေနဲ့ checkout object ကို အပိုအပြောင်းအလဲတွေ လုပ်နိုင်ပါတယ်။
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form မှာ field တစ်ခု ထည့်သွင်းခါနီးမှာ ခေါ်ပါတယ်။
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Developer တွေအနေနဲ့ အပို hook တွေ ခေါ်နိုင်ပါတယ်။
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout ကို လုပ်ဆောင်ခါနီးမှာ ခေါ်ပါတယ်။
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order ကို အပြည့်အဝ စုစည်းပြီးတဲ့အခါမှာ ခေါ်ပါတယ်။
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab) — အခြား tab အတွက် widget များ ထည့်နိုင်ပါတယ်။
-- [wu_site_name] — ဝက်ဘ်ဆိုဒ်အမည်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_profile] — အသုံးပြုသူပရိုဖိုင်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_role] — အသုံးပြုသူအခန်းကဏ္ဍကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_status] — အသုံးပြုသူအခြေအနေကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_email] — အသုံးပြုသူအီးမေးလ်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_phone] — အသုံးပြုသူဖုန်းနံပါတ်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_address] — အသုံးပြုသူလိပ်စာကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_timezone] — အသုံးပြုသူအချိန်ဇုန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_language] — အသုံးပြုသူဘာသာစကားကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_currency] — အသုံးပြုသူငွေကြေးကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_country] — အသုံးပြုသူနိုင်ငံကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_city] — အသုံးပြုသူမြို့ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_zipcode] — အသုံးပြုသူဇစ်ကုဒ်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_salutation] — အသုံးပြုသူခေါ်ဝေါ်ပုံစံကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_first_name] — အသုံးပြုသူနာမည်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_last_name] — အသုံးပြုသူမျိုးရိုးနာမည်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_username] — အသုံးပြုသူအမည်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_password] — အသုံးပြုသူစကားဝှက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_email_confirmation] — အသုံးပြုသူအီးမေးလ်အတည်ပြုချက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_profile_picture] — အသုံးပြုသူပရိုဖိုင်ဓာတ်ပုံကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_account_status] — အသုံးပြုသူအကောင့်အခြေအနေကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_last_login] — အသုံးပြုသူနောက်ဆုံးဝင်ရောက်ချိန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_last_activity] — အသုံးပြုသူနောက်ဆုံးလှုပ်ရှားမှုကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_last_updated] — အသုံးပြုသူနောက်ဆုံးအပ်ဒိတ်ချိန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_last_modified] — အသုံးပြုသူနောက်ဆုံးပြင်ဆင်ချိန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_created] — အသုံးပြုသူဖန်တီးချိန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted] — အသုံးပြုသူဖျက်ချိန်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_by] — အသုံးပြုသူဖျက်သူကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_date] — အသုံးပြုသူဖျက်သည့်ရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_by] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းပေးသူကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_date] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_by_date] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းပေးသူရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_by_date_date] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းပေးသူရက်ရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_by_date_date] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းပေးသူရက်ရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
-- [wu_user_deleted_reason_by_date_date_date] — အသုံးပြုသူဖျက်ရသည့်အကြောင်းရင်းပေးသူရက်ရက်ကို ပြောင်းလဲနိုင်ပါတယ်။
+- [auth_redirect](./Actions/auth_redirect) — အထောက်အထားစိစစ်မှု redirect မတိုင်မီ လုပ်ဆောင်သည်။
+- [set_auth_cookie](./Actions/set_auth_cookie) — အထောက်အထားစိစစ်မှု cookie ကို သတ်မှတ်ရန် ချက်ချင်းမတိုင်မီ လုပ်ဆောင်သည်။
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — logged-in အထောက်အထားစိစစ်မှု cookie ကို သတ်မှတ်ရန် ချက်ချင်းမတိုင်မီ လုပ်ဆောင်သည်။
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — developer များအား wp plugin များမှတစ်ဆင့် ကိုယ်ပိုင် host provider ပေါင်းစည်းမှုများ ထည့်နိုင်စေသည်။
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — မှီခိုမှုအားလုံး တင်ပြီးသည့်အခါ လုပ်ဆောင်သည်။
+- [wu_activation](./Actions/wu_activation) — plugin ၏ အခြားအစိတ်အပိုင်းများကို activation အတွက် ကိုယ်ပိုင်လုပ်ငန်းစဉ်များ ချိတ်ဆက်နိုင်စေသည်။
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — အသုံးပြုသူ သို့မဟုတ် super admin က site template ပြောင်းပြီးနောက် plugin developer များ function များ ချိတ်နိုင်စေသည်။
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — အချို့အခြေအနေများတွင် action များကို ကိုင်တွယ်ရန် အပိုအားဖြည့်မှု တင်ရန် လိုအပ်ပါမည်။
+- [wu_before_search_models](./Actions/wu_before_search_models) — ရှာဖွေမှုတောင်းဆိုချက်ကို လုပ်ဆောင်မီ လုပ်ဆောင်သည်။
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — developer များအား checkout object တွင် ထပ်ဆောင်းပြောင်းလဲမှုများ ပြုလုပ်နိုင်စေသည်။
+- [wu_cart_setup](./Actions/wu_cart_setup) — developer များအား checkout object တွင် ထပ်ဆောင်းပြောင်းလဲမှုများ ပြုလုပ်နိုင်စေသည်။
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form ထဲသို့ field တစ်ခု မထည့်မီ လုပ်ဆောင်သည်။
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — developer များအား ထပ်ဆောင်း hook များကို လုပ်ဆောင်နိုင်စေသည်။
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout ကို မလုပ်ဆောင်မီ။
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order ကို အပြည့်အစုံ စုစည်းပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin developer များအား Network Dashboard Panel ထဲသို့ widget များ ထည့်နိုင်စေသည်။
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin developer များအား Network Dashboard Panel ထဲသို့ widget များ ထည့်နိုင်စေသည်။
+- [wu_deactivation](./Actions/wu_deactivation) — plugin ၏ အခြားအစိတ်အပိုင်းများကို deactivation အတွက် ကိုယ်ပိုင်လုပ်ငန်းစဉ်များ ချိတ်ဆက်နိုင်စေသည်။
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin developer များအား ဖျက်သိမ်းမှုလုပ်ငန်းစဉ်တွင် action များ ထည့်နိုင်စေသည်။
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — domain တစ်ခုသည် site တစ်ခုအတွက် အဓိက domain ဖြစ်လာသည့်အခါ လုပ်ဆောင်သည်။
+- [wu_domain_created](./Actions/wu_domain_created) — domain mapping အသစ်တစ်ခု ထည့်သည့်အခါ လုပ်ဆောင်သည်။
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ကျွန်ုပ်တို့၏ core Domain Mapping ကို တင်ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — အချို့ plugin များသည် mapping အသက်မဝင်မီ URL ကို သိမ်းမည် သို့မဟုတ် မပါဝင်သော ကွဲပြားသည့်နည်းလမ်းဖြင့် URL များ တည်ဆောက်မည်ဖြစ်သည် o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — site ပွားပြီးနောက် developer များ ချိတ်နိုင်စေသည်။
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin developer များအား ထပ်ဆောင်း hook များ ထည့်နိုင်စေသည်။
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — ထပ်ဆောင်းသန့်ရှင်းရေးအတွက် hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — domain အသစ်ထည့်ရန် modal တောင်းဆိုချက်ကို မကိုင်တွယ်မီ လုပ်ဆောင်သည်။
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — လိုအပ်ပါက plugin developer များအား meta data ကို ကွဲပြားသည့်နည်းလမ်းများဖြင့် သိမ်းနိုင်စေသည်။
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — လိုအပ်ပါက plugin developer များအား user meta data ကို ကွဲပြားသည့်နည်းလမ်းများဖြင့် သိမ်းနိုင်စေသည်။
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — မမှန်ကန်သော magic link token ကို တွေ့သည့်အခါ လုပ်ဆောင်သည်။
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — အသုံးပြုသူတစ်ဦး magic link မှတစ်ဆင့် ဝင်ရောက်ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer ထည့်သည့်အခါ plugin developer များအား ထပ်ဆောင်းအရာများ လုပ်နိုင်စေသည်။
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — entity တစ်ခုအတွက် MCP abilities များ မှတ်ပုံတင်ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter ကို စတင်ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership ကို ပယ်ဖျက်ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership renewal ပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership ကို မပယ်ဖျက်မီ လုပ်ဆောင်သည်။
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership renewal မတိုင်မီ လုပ်ဆောင်သည်။
+- [wu_model_post_save](./Actions/wu_model_post_save) — object တစ်ခုကို database ထဲတွင် သိမ်းပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_page_added](./Actions/wu_page_added) — page များ မှတ်ပုံတင်သည့်အခါ plugin developer များအား ထပ်ဆောင်းအရာများ လုပ်ဆောင်နိုင်စေသည်။
+- [wu_page_after_render](./Actions/wu_page_after_render) — page ကို ပရင့်ထုတ်ပြီးနောက် plugin developer များအား ထပ်ဆောင်း content ထည့်နိုင်စေသည်။
+- [wu_page_before_render](./Actions/wu_page_before_render) — page ကို ပရင့်မထုတ်မီ plugin developer များအား ထပ်ဆောင်း content ထည့်နိုင်စေသည်။
+- [wu_page_load](./Actions/wu_page_load) — plugin developer များအား ကျွန်ုပ်တို့၏ page များတွင် ထပ်ဆောင်း hook များ ထည့်နိုင်စေသည်။
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — page ကို ပရင့်ထုတ်ပြီးနောက် plugin developer များအား ထပ်ဆောင်း content ထည့်နိုင်စေသည်။
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — page ကို ပရင့်မထုတ်မီ plugin developer များအား ထပ်ဆောင်း content ထည့်နိုင်စေသည်။
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin developer များအား ကျွန်ုပ်တို့၏ page များတွင် ထပ်ဆောင်း hook များ ထည့်နိုင်စေသည်။
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ဤ page အတွက် widget များ မှတ်ပုံတင်ပြီးနောက် လုပ်ဆောင်သည်။
 
-(Note: The provided list seems to be a set of placeholder or dynamic variables, likely from a CMS or template engine, rather than standard text content.)
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons များက integrations များသို့ capability modules များ ချိတ်ဆက်နိုင်ရန် လုပ်ဆောင်သည်။
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations များက ကိုယ်တိုင် မှတ်ပုံတင်နိုင်ရန် လုပ်ဆောင်သည်။
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ထပ်ဆောင်း routes များကို မှတ်ပုံတင်ခွင့်ပြုသည်။
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin developer များက သိမ်းဆည်းမှု လုပ်ငန်းစဉ်တွင် actions များ ထည့်နိုင်ရန် ခွင့်ပြုသည်
+- [wu_site_created](./Actions/wu_site_created) — site တစ်ခု ပထမဆုံးအကြိမ် ဖန်တီးပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — လိုအပ်ပါက plugin developer များက ထပ်ဆောင်း hooks များ ထည့်နိုင်ရန် ခွင့်ပြုသည်။
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer context အတွင်း ရှိနေသောအခါ လုပ်ဆောင်သည်။
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook ကို စတင်လုပ်ဆောင်စေသည်။
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — object တစ်ခုကို database ထဲသို့ သိမ်းပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — object တစ်ခုကို database ထဲသို့ သိမ်းပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — object တစ်ခုကို database ထဲသို့ သိမ်းပြီးနောက် လုပ်ဆောင်သည်။
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin developer များက လော့ခ်ဖြည်မှု လုပ်ငန်းစဉ်တွင် actions များ ထည့်နိုင်ရန် ခွင့်ပြုသည်။
 
-**Summary of the provided data:**
-The data consists of a long list of variables, which appear to relate to user profiles and system metadata (e.g., `[wu_user_first_name]`, `[wu_user_last_name]`, `[wu_user_created]`).
+## Filters {#filters}
 
-**Action Taken:**
-Since the input is a list of variables and not natural language text, I have summarized what the variables represent.
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — အထောက်အထားပြ cookie သက်တမ်းကုန်ဆုံးကာလ၏ ကြာချိန်ကို filter လုပ်သည်။
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — အထောက်အထားပြ redirect scheme ကို filter လုပ်သည်။
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — သေချာစေရန် မူလ WP Filter ကို ဤနေရာတွင် ထပ်တူလုပ်ဆောင်ထားသည်။
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin ဖန်တီးသူများအား previewer တွင် အသုံးပြုသော URL ကို filter လုပ်ခွင့်ပြုသည်
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie ကို HTTPS မှတစ်ဆင့်သာ ပို့သင့်မသင့် filter လုပ်သည်။
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — လုံခြုံသော အထောက်အထားပြ redirect ကို အသုံးပြုသင့်မသင့် filter လုပ်သည်။
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — ဝင်ရောက်ထားသော cookie ကို HTTPS မှတစ်ဆင့်သာ ပို့သင့်မသင့် filter လုပ်သည်။
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies များကို client ထံ အမှန်တကယ် မပို့ရန် ကာကွယ်ခွင့်ပြုသည်။
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL ကို သတ်မှတ်သည်။
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters များမှတစ်ဆင့် နောက်ထပ် အဆင့်များ ထည့်သည်
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin ဖန်တီးသူများအား render context တွင် အပို variable ကို global အနေဖြင့် ထည့်ခွင့်ပြုသည်။
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ဖန်တီးသူများအား ဤစစ်ဆေးမှုကို short-circuit လုပ်ခွင့်ပြုသည်။
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — domain အသစ်ထည့်ရန် modal အတွက် fields များကို filter လုပ်သည်။
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ဖန်တီးသူများအား setup fee line item ကို ပြောင်းလဲခွင့်ပြုသည်။
+- [wu_admin_notices](./Filters/wu_admin_notices) — ဖန်တီးသူများအား Ultimate Multisite က ထည့်ထားသော admin notices များကို filter လုပ်ခွင့်ပြုသည်။
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ပြောင်းလဲပြီးနောက် filter လုပ်သည်။
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ယခု အမျိုးအစားအားလုံးကို ကိုင်တွယ်သည်။
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin ဖန်တီးသူများအား ကန့်သတ်ချက်များကို short-circuit လုပ်ခွင့်ပြုသည်။
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee ကို အသုံးချသင့်မသင့် filter လုပ်သည်။
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — မူလ api arguments များကို filter လုပ်သည်။
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin ဖန်တီးသူများအား billing address fields များကို filter လုပ်ခွင့်ပြုသည်။
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ဖန်တီးသူများအား output ကို ကျော်လွှားပြီး အသစ်တစ်ခု သတ်မှတ်ခွင့်ပြုသည်
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ဖန်တီးသူများအား unset current user code ကို ကျော်လွှားခွင့်ပြုသည်။
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "ထပ်တလဲလဲ ကျသင့်ငွေ" စုစုပေါင်းကို filter လုပ်သည်။
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "ကနဦး ကျသင့်ငွေ" စုစုပေါင်းကို filter လုပ်သည်။
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "ကနဦး ကျသင့်ငွေ" စုစုပေါင်းကို filter လုပ်သည်။
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin ဖန်တီးသူများအား credit တန်ဖိုးကို ဝင်ရောက်ပြင်ဆင်ခွင့်ပြုသည်။
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain records မဖြစ်သင့်သော shared checkout-form base domains များကို filter လုပ်သည်။
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — field templates အသစ်များ ထည့်ရန် ကျွန်ုပ်တို့၏ APIs များသည် ဤနေရာသို့ hook ချိတ်ဆက်သည်။
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — field types အသစ်များ ထည့်ရန် ကျွန်ုပ်တို့၏ APIs များသည် ဤနေရာသို့ hook ချိတ်ဆက်သည်။
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — error messages များကို filter လုပ်သည်။
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — field တစ်ခုသည် auto-submittable ဖြစ်မဖြစ် စစ်ဆေးမှုကို ဖန်တီးသူများအား ကျော်လွှားခွင့်ပြုသည်။
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin ဖန်တီးသူများအား form validator တွင် custom aliases များ ထည့်ခွင့်ပြုသည်။
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin ဖန်တီးသူများအား validation rules များကို filter လုပ်ခွင့်ပြုသည်။
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — မလိုလားသော Params များကို unset လုပ်သည်။
+- [wu_contains_element](./Filters/wu_contains_element) — ဖန်တီးသူများအား ကနဦးရှာဖွေမှု၏ ရလဒ်များကို ပြောင်းလဲခွင့်ပြုသည်။
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host providers များအား constant ကို မတူညီသောနည်းဖြင့် install လုပ်ခွင့်ပြုသည်။
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — နိုင်ငံ၏ အုပ်ချုပ်ရေးပိုင်းခွဲများအတွက် ကောင်းမွန်သောအမည်ကို ပြန်ပေးသည်။
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — နိုင်ငံတစ်ခုရှိ state တစ်ခုအတွက် မြို့များစာရင်းကို ပြန်ပေးသည်။
+- [wu_country_get_states](./Filters/wu_country_get_states) — ဤနိုင်ငံအတွက် states စာရင်းကို ပြန်ပေးသည်။
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ဖန်တီးသူများအား default လုပ်ဆောင်ပုံကို ပြင်ဆင်ပြီး current customer ကို မတူညီသောနည်းဖြင့် သတ်မှတ်ခွင့်ပြုသည်။
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ဖန်တီးသူများအား default လုပ်ဆောင်ပုံကို ပြင်ဆင်ပြီး current membership ကို မတူညီသောနည်းဖြင့် သတ်မှတ်ခွင့်ပြုသည်။
+- [wu_current_set_site](./Filters/wu_current_set_site) — ဖန်တီးသူများအား default လုပ်ဆောင်ပုံကို ပြင်ဆင်ပြီး current site ကို မတူညီသောနည်းဖြင့် သတ်မှတ်ခွင့်ပြုသည်။
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ဖန်တီးသူများအား site စီမံရန် URL parameters များကို ပြင်ဆင်ခွင့်ပြုသည်။
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin ဖန်တီးသူများအား links များကို filter လုပ်ခွင့်ပြုသည်။
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ရလဒ်များကို သတ်မှတ်ရန်အတွက် plugin ဖန်တီးသူများအား စစ်ဆေးမှုအသစ်များ ထည့်ခွင့်ပြုသည်။
 
-**If you intended to ask a question about this data (e.g., "What does this variable mean?" or "How do I use this?"), please provide the context or the question.**
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — နောက်ပိုင်းတွင် ထပ်တိုး block များ ထည့်ရန် လိုအပ်နိုင်သည်။
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — developer များအနေဖြင့် ဤ parser ကို ထပ်တိုး builder သို့မဟုတ် plugin များနှင့် ကိုင်တွယ်နိုင်ရန် တိုးချဲ့ခွင့်ပေးသော အထွေထွေ filter ကို ထည့်သည်။
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — ထပ်တိုး password စည်းမျဉ်းများကို မဖြစ်မနေ အသုံးပြုစေမည်/မစေမည်ကို filter လုပ်သည်။
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ဖန်တီးထားသော customer username ကို filter လုပ်သည်။
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — plugin developer များကို checkout စာမျက်နှာ၏ ကြိုတင်သတ်မှတ်ချက်များကို filter လုပ်ခွင့်ပေးသည်။
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ဤအပြုအမူကို ကျော်ရန် developer များကို form slug အသစ်များ ထည့်ခွင့်ပေးသည်။
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — developer များနှင့် add-on များကို migration အဆင့်အသစ်များ ထည့်ခွင့်ပေးသည်
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ဤ method အတူတူတွင် အောက်တွင် ဤ filter အကြောင်း ပိုမိုကြည့်ပါ။
+- [wu_get_post_types](./Filters/wu_get_post_types) — developer များကို မည်သည့် post type များ ပြသသင့်သည်ကို ရွေးချယ်ခွင့်ပေးသည်။
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — line များကို ပြန်ပေးသည်၊ filter လုပ်နိုင်သည်
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — developer များကို domain/path အတွဲများကို ပြင်ဆင်ခွင့်ပေးသည်။
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting ပေါင်းစည်းမှု setup အတွက် wizard section များကို filter လုပ်သည်။
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — form တစ်ခုရှိ field များကို filter လုပ်သည်။ form ကို filter အမည်ရှိ ID ဖြင့် သတ်မှတ်ထားသည်။
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — သီးခြား billing cycle များရှိသော product type များကို filter လုပ်သည်။
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — plugin developer များကို API အတွက် သတ်မှတ်ထားသော အခြေအနေတစ်ခုကို မဖြစ်မနေ သုံးစေခွင့်ပေးသည်။
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — plugin developer များကို development mode အတွက် ထပ်တိုး စစ်ဆေးမှုများ ထည့်ခွင့်ပေးသည်။
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — plugin developer များကို MCP adapter အတွက် သတ်မှတ်ထားသော အခြေအနေတစ်ခုကို မဖြစ်မနေ သုံးစေခွင့်ပေးသည်။
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — လုံခြုံရေးအကြောင်းများကြောင့် hook ချိတ်နိုင်သော action အရေအတွက်ကို ကျွန်ုပ်တို့ ကန့်သတ်ထားသည်။ ဤ filter သည် developer များကို တိုးချဲ့ခွင့်ပေးသည်
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — သတ်မှတ်ထားသော post type တစ်ခုကို ဤ plan တွင် ခွင့်ပြုထားခြင်းရှိမရှိ စစ်ဆေးသည်။ plugin developer များကို return value ကို filter လုပ်ခွင့်ပေးသည်
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP address အတည်ပြုမှုကို မဖြစ်မနေ ပြုလုပ်စေမည်/မစေမည်ကို filter လုပ်သည်။
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent အတည်ပြုမှုကို မဖြစ်မနေ ပြုလုပ်စေမည်/မစေမည်ကို filter လုပ်သည်။
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ဖန်တီးထားသော magic link URL ကို filter လုပ်သည်။
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic link များ ဖွင့်ထားခြင်းရှိမရှိ filter လုပ်သည်။
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — domain ကို primary ပြုလုပ်ပြီးနောက် redirect URL ကို filter လုပ်သည်။
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — အလိုအလျောက် redirect ကို ကာကွယ်သည့် parameter များ၏ exclusion list တစ်ခုကို ဖန်တီးသည်။
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability ထည့်သွင်းမှု ဆုံးဖြတ်ချက်ကို override လုပ်ရန် filter။
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — တွက်ချက်ထားသော သက်တမ်းကုန်ဆုံးရက်ကို filter လုပ်သည်။
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewal ပြီးနောက် သတ်မှတ်ရန် တွက်ချက်ထားသော သက်တမ်းကုန်ဆုံးရက်ကို filter လုပ်သည်။
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — developer များကို update form slug အသစ်များ ထည့်ခွင့်ပေးသည်။
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — အနည်းဆုံး password အရှည်ကို filter လုပ်သည်။
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — လိုအပ်သော အနည်းဆုံး password အားကောင်းမှု (zxcvbn score) ကို filter လုပ်သည်။
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — plugin developer များနှင့် ကျွန်ုပ်တို့ကို ကိုယ်ပိုင် edit စာမျက်နှာများသို့ action link များ ထည့်ခွင့်ပေးသည်
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — password များတွင် lowercase letter များ လိုအပ်မည်/မလိုအပ်မည်ကို filter လုပ်သည်။
+- [wu_password_require_number](./Filters/wu_password_require_number) — password များတွင် number များ လိုအပ်မည်/မလိုအပ်မည်ကို filter လုပ်သည်။
+- [wu_password_require_special](./Filters/wu_password_require_special) — password များတွင် special character များ လိုအပ်မည်/မလိုအပ်မည်ကို filter လုပ်သည်။
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — password များတွင် uppercase letter များ လိုအပ်မည်/မလိုအပ်မည်ကို filter လုပ်သည်။
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — pending payment များအကြောင်း message ကို user က ပြောင်းလဲခွင့်ပေးသည်။
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plan အဖြစ် သတ်မှတ်သင့်သော product type များကို filter လုပ်သည်။
+- [wu_post_count](./Filters/wu_post_count) — plugin developer များကို count စုစုပေါင်းကို ပြောင်းလဲခွင့်ပေးသည်
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — plugin developer များကို မည်သည့် post status ကို ရေတွက်သင့်သည်ကို ပြောင်းလဲခွင့်ပေးသည်။ မူလအတိုင်း published နှင့် private post များကို ရေတွက်ထားသည်
+- [wu_post_default_status](./Filters/wu_post_default_status) — database ထဲသို့ သိမ်းဆည်းမီ object data ကို filter လုပ်သည်။
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite ဖြင့် သိမ်းဆည်းမီ setting များကို developer များ filter လုပ်ခွင့်ပေးသည်။
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — request ကို ဆက်လက်လုပ်ဆောင်ခွင့်ရှိ/မရှိ filter လုပ်သည်။
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — request ကို ဆက်လက်လုပ်ဆောင်ခွင့်ရှိ/မရှိ filter လုပ်သည်။
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — request ဆက်လက်လုပ်ဆောင်ခွင့်ရှိမရှိကို စစ်ထုတ်သည်။
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — request ဆက်လက်လုပ်ဆောင်ခွင့်ရှိမရှိကို စစ်ထုတ်သည်။
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — request ဆက်လက်လုပ်ဆောင်ခွင့်ရှိမရှိကို စစ်ထုတ်သည်။
+- [wu_return_url](./Filters/wu_return_url) — checkout လုပ်ငန်းစဉ်များပြီးနောက် အသုံးပြုသည့် gateway ပြန်သွားမည့် URL ကို developer များ ပြောင်းလဲနိုင်စေသည်။
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin developer များကို search models function များ ပိုထည့်နိုင်စေသည်။
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — developer များကို setup wizard အဆင့်များ ထပ်ထည့်နိုင်စေသည်။
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — အသစ်ဖန်တီးထားသော site အတွက် Ultimate Multisite က domain record ဖန်တီးသင့်မသင့်ကို စစ်ထုတ်သည်။
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — developer များကို redirection ကို အတိုချုံးတားဆီးနိုင်စေပြီး ၎င်းဖြစ်ပေါ်ခြင်းကို ကာကွယ်ပေးသည်။
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler ကို ပြန်ရေးနိုင်စေသည်။
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — site များအတွက် ရရှိနိုင်သော bulk action များကို စစ်ထုတ်သည်။
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — network အတွင်းရှိ get pluginssites အတွက် တန်ဖိုးကို ပြောင်းလဲရန် စစ်ထုတ်သည်။
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on စွမ်းရည်ကို ဖွင့်/ပိတ်သည်။
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer action များအတွက် ပြန်မပို့မီ ဖန်တီးထားသော SSO URL များကို စစ်ထုတ်သည်။
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription ဒေတာကို စစ်ထုတ်သည်။ success_url သို့မဟုတ် cancel_url ကို override လုပ်နိုင်သည်။
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent argument များကို စစ်ထုတ်သည်။
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — စစ်ဆေးရန် plan ၏ ID ကို စစ်ထုတ်သည်။ ဤအရာရှိပါက subscription အသစ်သည် ဤ plan ကို အသုံးပြုမည်။
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — စစ်ဆေးရန် product ၏ ID ကို စစ်ထုတ်သည်။ ဤအရာရှိပါက subscription အသစ်သည် ဤ product ကို အသုံးပြုမည်။
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge option များနှင့်အတူ ပို့သော idempotency_key တန်ဖိုးကို စစ်ထုတ်သည်။
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — ဤ webhook နှင့် ဆက်စပ်နေသော membership record ကို စစ်ထုတ်သည်။
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — database ထဲသို့ သိမ်းဆည်းရန် serialize မလုပ်မီ data meta ကို စစ်ထုတ်သည်။
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — database ထဲသို့ သိမ်းဆည်းမီ object data ကို စစ်ထုတ်သည်။
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — developer များကို unlock လုပ်ရန် upgrade URL ကို ပြောင်းလဲနိုင်စေသည်။
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping ကို အသုံးပြုသင့်မသင့် သတ်မှတ်သည်။
+- [wu_username_from_email](./Filters/wu_username_from_email) — customer အသစ်၏ username ကို စစ်ထုတ်သည်။
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — developer များကို membership အသုံးပြုသူ ကန့်သတ်ချက်နှင့်ပတ်သက်သော မက်ဆေ့ခ်ျကို ပြောင်းလဲနိုင်စေသည်။
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — developer များကို replaceable list ထဲသို့ folder များ ထပ်ထည့်နိုင်စေသည်။
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ဤ entity အတွက် မည်သည့် sub_commands များ ဖွင့်ထားသည်ကို စစ်ထုတ်သည်။
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ကျွန်ုပ်တို့၏ constant များ ထည့်သွင်းနိုင်မည့်နေရာကို ရှာဖွေရာတွင် pattern သုံးမျိုးကို စစ်ဆေးသည်-

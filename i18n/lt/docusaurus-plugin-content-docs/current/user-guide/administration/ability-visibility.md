@@ -3,11 +3,11 @@ title: Matyti galimybė
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Pasirumo galimybė matyti (Ability Visibility)
+# Pasirumo galimybė matyti (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 įdaro **Pasirumo matyti** (Ability Visibility) kontrolges, kurios nurodo, kokie puslapiai atskleidžia kiekvieną galimybę. Tai leidžia administratoriams sukurti tikslines nustatymus dėl to, kokios agentų galimybės yra pasiekiamos REST API, MCP serveriuose, WooCommerce integracijose ir kitose sąsnykyse.
 
-## Kas tai yra Pasirumo matyti?
+## Kas tai yra Pasirumo matyti? {#what-is-ability-visibility}
 
 Pasirumo matyti yra leidimo sistema, kuri kontroliuoja:
 
@@ -18,9 +18,9 @@ Pasirumo matyti yra leidimo sistema, kuri kontroliuoja:
 
 Kiekviena galimybė turi matomumo lygį, kuris nurodo jos prieinamumą skirtingose puslapiuose.
 
-## Matomumo lygiai
+## Matomumo lygiai {#visibility-levels}
 
-### Public (Public)
+### Public (Public) {#public}
 
 **Public galimybės** yra pasiekiamos visur:
 
@@ -32,7 +32,7 @@ Kiekviena galimybė turi matomumo lygį, kuris nurodo jos prieinamumą skirtingo
 
 Pavyzdys: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Vidinis)
+### Internal (Vidinis) {#internal}
 
 **Internal galimybės** pasiekiamos tik jūsų WordPress instalacijoje:
 
@@ -43,7 +43,7 @@ Pavyzdys: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Pavyzdys: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partneris)
+### Partner (Partneris) {#partner}
 
 **Partner galimybės** pasiekiamos tik atsidarius partneriai:
 
@@ -54,7 +54,7 @@ Pavyzdys: `manage-settings`, `view-analytics`, `export-data`
 
 Pavyzdys: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Nenustatytas)
+### Disabled (Nenustatytas) {#disabled}
 
 **Nenustatytos galimybės** nėra pasiekiamos kurioje vietoje:
 
@@ -63,15 +63,15 @@ Pavyzdys: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Neįdiegta administratoriais paneliais
 - Naudojama senoms ar eksperimentinėms galimybėms
 
-## Apiegamumo matyti
+## Apiegamumo matyti {#managing-ability-visibility}
 
-### Priešyražti įrangos matymo nustatymus
+### Priešyražti įrangos matymo nustatymus {#accessing-ability-visibility-settings}
 
 1. Eikite į **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Paspauskite į languotą **Abilities** (Įrangos)
 3. Jūs pamatys sąrašą visų įdiegto įrangų ir jų matymo lygisais
 
-### Matyti įrangos detales
+### Matyti įrangos detales {#viewing-ability-details}
 
 Paspauskite bet kuriuo įrangai, kad pamatytumėte:
 
@@ -82,7 +82,7 @@ Paspauskite bet kuriuo įrangai, kad pamatytumėte:
 - **Last updated** (Kada buvo naujausia): Kada matymas buvo paskutinis keitimas
 - **Status** (Status): Pažymtas ar Nipažymtas
 
-### Keitimo lygio
+### Keitimo lygio {#changing-visibility-levels}
 
 Kad pakeisti įrangos matymo lygį:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Masinis veikimas
+### Masinis veikimas {#bulk-operations}
 
 Kad pakeisti matymą daugeliui įrangų:
 
@@ -108,11 +108,11 @@ Kad pakeisti matymą daugeliui įrangų:
 2. Pasirinkite naują matymo lygią iš išskirtinio meniu (dropdown) masinio veikimo skiltyje
 3. Paspauskite **Apply** (Taip patikrati)
 
-## Partnerių sąrašas (Partner allow-list)
+## Partnerių sąrašas (Partner allow-list) {#partner-allow-list}
 
 **Partnerių sąrašas** nustato, kuriems iştiepiami partneriai gali pasiekti Partner lygio įrangos.
 
-### Partnerių pridėjimas
+### Partnerių pridėjimas {#adding-partners}
 
 1. Eikite į **Superdav AI Agent** → **Settings** → **Partners**
 2. Paspauskite **Add Partner** (Pridėti partnerį)
@@ -120,7 +120,7 @@ Kad pakeisti matymą daugeliui įrangų:
 4. Valstybiškai pridėkite partnerio pavadinimą ir aprašymą
 5. Paspauskite **Save** (Išsaugoti)
 
-### Įrangos nurodymas partneriams
+### Įrangos nurodymas partneriams {#assigning-abilities-to-partners}
 
 Partnerį pridėję:
 
@@ -130,7 +130,7 @@ Partnerį pridėję:
 4. Visiame „Partner allow-list“ (partnerų sąrašas) skelbimose pažymėkite laukus tiems partneriams, kuriems turėtų būti pateikiami prieigos.
 5. Spauskite **Save** (Išsaugoti).
 
-### Partnerio prieigos atimimas
+### Partnerio prieigos atimimas {#revoking-partner-access}
 
 Kad pašalinti partnerio prieigą:
 
@@ -140,11 +140,11 @@ Kad pašalinti partnerio prieigą:
 
 Partnerius iš karto praradų prieigą šiai galimybai.
 
-## Nenumatomi galimybės (Unclassified Abilities)
+## Nenumatomi galimybės (Unclassified Abilities) {#unclassified-abilities}
 
 Kai įdėtumėte trečias pusės galimybę, kurią Superdav AI Agent nepažįsta, ji yra pažymta kaip **Unclassified** (Nenumatoma).
 
-### Administracijos pranešimas apie nenumatomas galimybes
+### Administracijos pranešimas apie nenumatomas galimybes {#admin-notice-for-unclassified-abilities}
 
 Jūs pamatys administracinį pranešimą:
 
@@ -161,7 +161,7 @@ Prašome peržiūrėti ir pažymėti.
 [Peržiūrėti galimybes] [Atmetti]
 ```
 
-### Nenumatomi galimybių peržiūra
+### Nenumatomi galimybių peržiūra {#reviewing-unclassified-abilities}
 
 1. Spauskite **Review Abilities** (Peržiūrėti galimybės) pranešime.
 2. Kiekvienai nenumatomai galimybai pamatys:
@@ -178,7 +178,7 @@ Prašome peržiūrėti ir pažymėti.
 
 4. Spauskite **Classify** (Pažymėti), kad išsaugotumėte savo sprendimą.
 
-### Kodėl pažymėti nenumatomas galimybes?
+### Kodėl pažymėti nenumatomas galimybes? {#why-classify-unclassified-abilities}
 
 Galimybės pažymėjimas:
 
@@ -187,9 +187,9 @@ Galimybės pažymėjimas:
 - **Leidžia naudoti funkcijas**: Kai pažymėta, galiba ji tampa prieinama
 - **Dokūruoja sprendimus**: Jūsų pasirinkimai registruojami audito tikslams
 
-## Paskyba skirtinguose
+## Paskyba skirtinguose {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Viešos galimybės** yra pasiekiamos per REST endpointus:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Vidinės ir partnerių galimybės** nėra pasiekiamos per REST API.
 
-### MCP Serveriai
+### MCP Serveriai {#mcp-servers}
 
 **Viešos galimybės** yra pasiekiamos per MCP:
 
@@ -217,7 +217,7 @@ Paskutinės galimybės:
 
 **Partnerių galimybės** pasiekiamos tik su partnerių kredencijomis.
 
-### WooCommerce Integracija
+### WooCommerce Integracija {#woocommerce-integration}
 
 **Viešos galimybės**, susijusios su WooCommerce, yra pasiekiamos:
 
@@ -227,7 +227,7 @@ Paskutinės galimybės:
 
 **Vidinis galimybės** nėra atskleiti WooCommerce.
 
-### Čato interfeys
+### Čato interfeys {#chat-interface}
 
 **Visos galimybės** (viešos, vidinės, partnerių) yra pasiekiamos čate, prieldant nuo vartotojo įsipareigojimų:
 
@@ -235,34 +235,34 @@ Paskutinės galimybės:
 - Reguliarijai vartotojai matyti tik viešas galimybes
 - Partneriai matyti viešas + partnerių galimybės (jei yra nurodyti)
 
-## Sauginimo geriausios praktikos
+## Sauginimo geriausios praktikos {#security-best-practices}
 
-### Mažiausio privilegijų principas
+### Mažiausio privilegijų principas {#principle-of-least-privilege}
 
 - Nustatykite galimybių visiems labiausiai restrigiestai, kuris leina jų naudoti
 - Naudokite partnerių galimybės jautrioms operacijoms
 - Išjunkite galimybes, kurias nenaudojate
 
-### Reguliariai auditoji patikra
+### Reguliariai auditoji patikra {#regular-audits}
 
 - Peržiūrėkite galimybių pasiekiamumą kas mėnesį
 - Patikrinkite neklassifikuotus galimybes
 - Atimkite prieigą nenaudojantiems partneriams
 
-### Logavimas ir stebėjimas (Logging and Monitoring)
+### Logavimas ir stebėjimas (Logging and Monitoring) {#logging-and-monitoring}
 
 - Stabdžykite, kurios galimybės naudojamos labiausiai
 - Sekkite partnerių prieiga modelius
 - Praneškite apie neapibrėžtą galimybių naudojimą
 
-### Trečiųjų šalių galimybės
+### Trečiųjų šalių galimybės {#third-party-abilities}
 
 - Peržiūrėkite trečiųjų šalių galimybes prieš įjungdami
 - Apsikirkite jas aiškiai
 - Pradėkite su vidiniais arba partnerių galimybėmis
 - Prieš pateikti viešas, patikrinkite jas
 
-## Rozvadinimas
+## Rozvadinimas {#troubleshooting}
 
 **Galiumas ne rodomas sąraše**
 - Patikrinkite, ar galiumas yra įdėtas ir aktyvus
@@ -285,7 +285,7 @@ Paskutinės galimybės:
 - Patikrinkite, ar jūsų klasifikacija buvo išsaugota
 - Patikrinkite, ar pluginas, kuris suteikia galiumą, yra naujausio versijos
 
-## Migracija iš senko režimo (Legacy Mode)
+## Migracija iš senko režimo (Legacy Mode) {#migration-from-legacy-mode}
 
 Jei atnaujinate Superdav AI Agent versiją iš vėjesnio versijos:
 
@@ -295,7 +295,7 @@ Jei atnaujinate Superdav AI Agent versiją iš vėjesnio versijos:
 
 Pateikime daugiau informacijos apie perėjimo į natūralią API integraciją galiumi **Third-Party Mode Migration**.
 
-## Kaltinis veiksniai (Next Steps)
+## Kaltinis veiksniai (Next Steps) {#next-steps}
 
 Po nustatytos galiumo matomumas:
 

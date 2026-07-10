@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Gibt den slugfied Netzwerkoption-Wert zurück.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
@@ -16,14 +16,14 @@ Gibt den slugfied Netzwerkoption-Wert zurück.
 | $option_name | `string` | Der Optionsname. |
 | $default | `mixed` | Der Standardwert. |
 
-### Seit
+### Seit {#since}
 
 - 1.9.6
 
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) bei Zeile 126
 
 
-## Gibt zurück
+## Gibt zurück {#returns}
 Der slugfield Netzwerkoption-Wert.

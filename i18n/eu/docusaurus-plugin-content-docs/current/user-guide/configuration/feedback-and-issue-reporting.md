@@ -3,11 +3,11 @@ title: Aldatutako informazioa eta problema-reportatzeko sistema
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Mendatutako Informazioa eta Problemaiko Iratsaldeak
+# Mendatutako Informazioa eta Problemaiko Iratsaldeak {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0-ek iratsalde bat daude, zein irudi ez duendu informazioa markatzeko eta zuzen arteko problemaiak chat interface-etik direktamente iratsaldean emateko sistema bat hasteraz. Hau sistema berehaldearen erantzunak ez duendu edo problemaak direla iratsaldean emateko prozesua, onarripen gestiona, automatikatu informazioa emateko komanda eta backend-eko AI-lerarekin laguntutako triaje (sortu-erregistro) berehaldeak.
 
-## Thumbs-Down Botonu
+## Thumbs-Down Botonu {#thumbs-down-button}
 
 AI asistentiaren artean aurkitutako leku guztietan **thumbs-down** (👎) botonu dago. Erregistro bat erabiltzailearen ikusteko, erantzun bat ez duendu edo ez daiko markatuko emateko prozesua.
 
@@ -15,7 +15,7 @@ AI asistentiaren artean aurkitutako leku guztietan **thumbs-down** (👎) botonu
 - Ikusteko, **Feedback Consent Modal**a iradokitu da.
 - Feedback-ek adierazten daiaren eta erantzunaren bestelako parte bat daude.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Erabiltzaileak thumbs-down botona ikusteko, datu edozein ematei aurretik modal bat iradokitu da. Modalak:
 
@@ -26,13 +26,13 @@ Erabiltzaileak thumbs-down botona ikusteko, datu edozein ematei aurretik modal b
 
 Erabiltzailearen aukerarekin konfirmatzen ez da iratsaldeak emateko.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Eskaintzen duen erantzunaren amaieran, asistentiaren lekuan **auto-prompt feedback banner** bat eradokia da — sesioa onartu edo ez duendu jakinarazten esaitzen informazio ez agintzen testua.
 
 Hau bannerak erantzunaren lungari eta rezultatuaren ereduak bidez automatikoki eradokia da. Thumbs-down botona erabiliko duen feedback prozesuarekin jota dago. Erabiltzaileak feedback ematei ezarritzeko bannerak ezarritzen dituzte.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Erabiltzaileak chat inputan `/report-issue` eskatzen badon, direktamente feedback prozesua hasi dezakete. Hau komandak:
 
@@ -42,7 +42,7 @@ Erabiltzaileak chat inputan `/report-issue` eskatzen badon, direktamente feedbac
 
 `/report-issue` komandua guztizko chat modueetan (inline, floating widget, full-screen) erabil daiteke.
 
-## AI-Assisted Triage (AI-sortu eta irudi)
+## AI-Assisted Triage (AI-sortu eta irudi) {#ai-assisted-triage}
 
 Bidututako horrekidetza informazioa AI sortu eta irudia lehiak duen layer-ra iriduta da, zehandiz:
 

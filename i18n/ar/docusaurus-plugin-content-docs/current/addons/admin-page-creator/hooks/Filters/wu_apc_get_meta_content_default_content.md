@@ -4,11 +4,11 @@ title: مرشح - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# تصفية: wu_apc_get_meta_content_default_content
+# تصفية: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 السماح للمطورين بتصفية القيم الافتراضية
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------|
@@ -16,13 +16,13 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | نوع بيانات الميتا التي سيتم استرجاعها. |
 | $meta_key | `string` | اسم حقل الميتا. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
 
-### Source
+### Source {#source}
 
 معرّف في `inc/wu-apc-functions.php` في السطر 68
 
-## Returns
+## Returns {#returns}
 قيمة افتراضية جديدة.

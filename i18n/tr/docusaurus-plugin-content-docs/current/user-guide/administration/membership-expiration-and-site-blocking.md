@@ -3,11 +3,11 @@ title: Üyelik Süresi Dolması ve Site Engelleme
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Üyelik Süresi Dolması ve Site Engelleme
+# Üyelik Süresi Dolması ve Site Engelleme {#membership-expiration-and-site-blocking}
 
 Bu rehber, Ultimate Multisite'ın üyelik süresi dolmasını, deneme süresi bitimini ve ön yüz (frontend) site engellemelerini nasıl yönettiğini açıklıyor. Bir üyeliğin aktif durumdan süresi dolmuş duruma geçiş yaşam döngüsünü, sitelerin engellenip engellenmeyeceğini kontrol eden ayarları ve bir üyelik süresi dolduktan sonra sitelerin neden hala erişilebilir kaldığını kontrol etmeniz gereken durumları ele alıyor.
 
-## Üyelik Durum Yaşam Döngüsü
+## Üyelik Durum Yaşam Döngüsü {#membership-status-lifecycle}
 
 Ultimate Multisite'taki her üyelik aşağıdaki durumlardan birine sahiptir:
 
@@ -24,7 +24,7 @@ Ultimate Multisite'taki her üyelik aşağıdaki durumlardan birine sahiptir:
 | **Expired** | Süresi dolma tarihini ve geçiş süresini yenileme yapılmadan geçti |
 | **Cancelled** | Müşteri veya yönetici tarafından açıkça iptal edildi |
 
-### Üyelikler Süresi Dolmuş Durumuna Nasıl Geçer
+### Üyelikler Süresi Dolmuş Durumuna Nasıl Geçer {#how-memberships-transition-to-expired}
 
 Ultimate Multisite, süresi dolması gereken üyelikleri arayan bir arka plan kontrolünü **her saat başı** çalıştırır. Bu kontrol, [Action Scheduler](https://actionscheduler.org/) kullanır (doğrudan WP-Cron değil) ve `wu_membership_check` adlı planlanmış bir eylem olarak çalışır.
 
@@ -34,7 +34,7 @@ Süre dolma kontrolünün varsayılan olarak **3 günlük yerleşik bir geçiş 
 3 günlük süresi dolma geçiş süresi, aşağıda açıklanan Ön Yüz Engelleme Geçiş Süresi ayarından ayrıdır. Süresi dolma geçiş süresi, **durumun** aktif/askıda durumdan süresi dolmuş duruma ne zaman değişeceğini kontrol eder. Ön yüz engelleme geçiş süresi ise, durum zaten değişmiş olsa bile **sitenin** ne zaman engelleneceğini kontrol eder.
 :::
 
-#### Otomatik Yenilenen ve Otomatik Yenilenmeyen Üyelikler
+#### Otomatik Yenilenen ve Otomatik Yenilenmeyen Üyelikler {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Bu ayrım, süresi dolma davranışını anlamak için kritik öneme sahiptir:
 
@@ -42,7 +42,7 @@ Bu ayrım, süresi dolma davranışını anlamak için kritik öneme sahiptir:
 
 - **Otomatik yenilenen üyelikler** (`auto_renew = true`): Cron süresi dolma kontrolü **bunları tamamen atlar**. Ödeme ağ geçidi (Stripe, PayPal vb.), bir abonelik başarısız olduğunda veya iptal edildiğinde Ultimate Multisite'a webhook aracılığıyla bildirim göndermesi beklenir. Webhook alınmazsa (yanlış yapılandırılmış bir uç nokta, ağ geçidi kesintisi veya sistem dışında iptal edilmiş bir abonelik nedeniyle), üyelik süresi dolma tarihini geçmesine rağmen sonsuza kadar `active` kalabilir.
 
-### Deneme Süreleri Nasıl Biter
+### Deneme Süreleri Nasıl Biter {#how-trials-end}
 
 Bir deneme süresi üyeliğinin deneme süresi sona erdiğinde, sistem:
 
@@ -52,11 +52,11 @@ Bir deneme süresi üyeliğinin deneme süresi sona erdiğinde, sistem:
 
 Bu süreç, düzenli süresi dolma kontrolüyle aynı saatlik programda çalışır, ancak **yalnızca otomatik yenilenmeyen üyelikler** için geçerlidir. Otomatik yenilenen denemeler için, ödeme ağ geçidi denemeden ücretli aboneliğe geçişi yönetir.
 
-## Ön Yüz Erişimi Engelleme
+## Ön Yüz Erişimi Engelleme {#block-frontend-access}
 
 Varsayılan olarak, bir üyelik süresi dolduğunda veya askıya alındığında, **yalnızca wp-admin kontrol paneli kısıtlanır**. Sitenin genel ön yüzü ziyaretçilere açık kalır. Genel erişimi de engellemek için **Ön Yüz Erişimi Engelleme** ayarını etkinleştirmeniz gerekir.
 
-### Ayarı Yapılandırma
+### Ayarı Yapılandırma {#configuring-the-setting}
 
 **Ultimate Multisite > Ayarlar > Üyelikler** sayfasına gidin ve **Ön Yüz Erişimi Engelleme**'yi etkinleştirin.
 
@@ -74,7 +74,7 @@ Bu davranışı kontrol eden üç ilgili ayar bulunmaktadır:
 | **Frontend Block Grace Period** | Üyelik pasif hale geldikten sonra engellemeden önce bekleyeceğiniz gün sayısı. Hemen engellemek için `0` olarak ayarlayın. | 0 |
 | **Frontend Block Page** | Bir site engellendiğinde ziyaretçileri yönlendireceğiniz ana sitedeki bir sayfa. Ayarlanmazsa, ziyaretçiler genel bir "Site şu anda kullanılamıyor" mesajı görür. | Yok |
 
-### Site Engellendiğinde Ziyaretçiler Ne Görür?
+### Site Engellendiğinde Ziyaretçiler Ne Görür? {#what-visitors-see-when-a-site-is-blocked}
 
 Ön yüz erişimi engellendiğinde, siteye gelen ziyaretçiler ya:
 
@@ -83,7 +83,7 @@ Bu davranışı kontrol eden üç ilgili ayar bulunmaktadır:
 
 Site yöneticileri hala giriş yapabilir; giriş sayfası asla engellenmez.
 
-### Ne Engellenir ve Ne Zaman
+### Ne Engellenir ve Ne Zaman {#what-gets-blocked-and-when}
 
 Engelleme davranışı üyelik durumuna bağlıdır:
 
@@ -104,21 +104,21 @@ Bir deneme süresi sona ermiş olsa bile, `trialing` durumundaki bir üyelik ön
 İptal edilmiş üyelikler, Ön Yüz Erişimi Engelleme etkinleştirilmiş olsa bile, süresi dolma tarihi geçtikten sonra her zaman engellenir. Ön Yüz Engelleme Geçiş Süresi, iptal edilmiş üyeliklere uygulanmaz.
 :::
 
-## Sorun Giderme: Süresi Dolmasına Rağmen Siteler Neden Erişilebilir Kalıyor
+## Sorun Giderme: Süresi Dolmasına Rağmen Siteler Neden Erişilebilir Kalıyor {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Bir üyelik süresi dolduktan sonra siteler hala genel kullanıma açık kalıyorsa, aşağıdaki kontrolleri sırayla yapın:
 
-### 1. Ön Yüz Erişimi Engelleme Ayarının Etkin Olduğunu Doğrulayın
+### 1. Ön Yüz Erişimi Engelleme Ayarının Etkin Olduğunu Doğrulayın {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 **Ultimate Multisite > Ayarlar > Üyelikler** sayfasına gidin ve **Ön Yüz Erişimi Engelleme** anahtarının açık olduğundan emin olun. Bu ayar **varsayılan olarak kapalıdır**, bu da bir üyelik pasif hale geldiğinde yalnızca wp-admin'in kısıtlandığı anlamına gelir.
 
-### 2. Ön Yüz Engelleme Geçiş Süresini Kontrol Edin
+### 2. Ön Yüz Engelleme Geçiş Süresini Kontrol Edin {#2-check-the-frontend-block-grace-period}
 
 Aynı ayarlar sayfasında **Ön Yüz Engelleme Geçiş Süresi** değerini kontrol edin. Örneğin, bu 7 gün olarak ayarlanmışsa, üyelik durumu zaten `expired` olsa bile, ön yüz 7 gün geçene kadar engellenmeyecektir.
 
 Üyelik pasif hale geldikten sonra hemen engellemek istiyorsanız bunu `0` olarak ayarlayın.
 
-### 3. Üyelik Durumunun Gerçekten Değiştiğini Onaylayın
+### 3. Üyelik Durumunun Gerçekten Değiştiğini Onaylayın {#3-confirm-the-membership-status-has-actually-changed}
 
 **Ultimate Multisite > Üyelikler** sayfasına gidin ve etkilenen üyeliğin durumunu kontrol edin. Süresi dolma tarihi geçmiş olmasına rağmen hala `active` görünüyorsa, durum geçişi gerçekleşmemiştir. Yaygın nedenler:
 
@@ -126,7 +126,7 @@ Aynı ayarlar sayfasında **Ön Yüz Engelleme Geçiş Süresi** değerini kontr
 
 - **Cron işi çalışmamış olabilir**: Bir sonraki adıma bakın.
 
-### 4. Action Scheduler'ın Çalıştığını Doğrulayın
+### 4. Action Scheduler'ın Çalıştığını Doğrulayın {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite, cron işleri için Action Scheduler kullanır. Ağ yöneticisindeki **Araçlar > Planlanmış Eylemler** bölümüne gidin ve şunları arayın:
 
@@ -148,7 +148,7 @@ Güvenilir cron çalıştırmasını sağlamak için bir sistem cron işi kurun:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://sizin-ağ-adresiniz.com
 ```
 
-### 5. Ağ Geçidi Webhook Sorunlarını Kontrol Edin (Otomatik Yenilenen Üyelikler)
+### 5. Ağ Geçidi Webhook Sorunlarını Kontrol Edin (Otomatik Yenilenen Üyelikler) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Üyelik otomatik yenileniyorsa ve ağ geçidi aboneliği iptal edilmiş veya başarısız olmuşsa, ancak Ultimate Multisite hala onu `active` olarak gösteriyorsa:
 
@@ -157,7 +157,7 @@ Güvenilir cron çalıştırmasını sağlamak için bir sistem cron işi kurun:
 
 Ağ geçidi aboneliği iptal edilmiş olarak gösteriyorsa ancak Ultimate Multisite göstermiyorsa, webhook bildirimi muhtemelen kaybolmuştur. Üyelik durumunu **Ultimate Multisite > Üyelikler > [Üyeliği Düzenle]** üzerinden manuel olarak değiştirebilirsiniz.
 
-### 6. Süresi Dolma Geçiş Süresini Kontrol Edin (Cron Seviyesi)
+### 6. Süresi Dolma Geçiş Süresini Kontrol Edin (Cron Seviyesi) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron kontrolünün kendi geçiş süresi vardır (varsayılan: 3 gün) ve bu, ön yüz engelleme geçiş süresinden ayrıdır. Bir sitenin engellenmesine kadar geçen toplam süre şunlardan oluşabilir:
 
@@ -165,7 +165,7 @@ Cron kontrolünün kendi geçiş süresi vardır (varsayılan: 3 gün) ve bu, ö
 
 Örneğin, varsayılan ayarlar ve 7 günlük bir ön yüz geçiş süresi ile, site aslında engellenmeden önce `date_expiration` tarihinden 10 güne kadar sürebilir.
 
-### 7. Bir Üyeliği Manuel Olarak Süresi Dolmuş Yapın
+### 7. Bir Üyeliği Manuel Olarak Süresi Dolmuş Yapın {#7-manually-expire-a-membership}
 
 Cron döngeresini beklemeden bir siteyi hemen engellemeniz gerekirse, üyelik durumunu manuel olarak değiştirebilirsiniz:
 
@@ -176,7 +176,7 @@ Cron döngeresini beklemeden bir siteyi hemen engellemeniz gerekirse, üyelik du
 
 Ön yüz engellemesi bir sonraki sayfa yüklemesinde geçerli olacaktır (süresi dolmuş üyelikler için Ön Yüz Engelleme Geçiş Süresine, iptal edilmiş üyelikler için ise hemen uygulanır).
 
-## Özet
+## Özet {#summary}
 
 Süre dolma tarihinden site engellenmesine kadar geçen tam zaman çizelgesi:
 
@@ -208,7 +208,7 @@ date_expiration geçer
   Site ön yüzü hemen engellenir
 ```
 
-## Geliştirici Referansı
+## Geliştirici Referansı {#developer-reference}
 
 Aşağıdaki hook'lar ve filtreler, süresi dolma ve engelleme davranışını özelleştirmenize olanak tanır:
 

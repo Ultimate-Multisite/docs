@@ -3,15 +3,15 @@ title: 'Leksyon 4: Paghimo og Niche Templates'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Paghimo og Niche Templates
+# Lesson 4: Paghimo og Niche Templates {#lesson-4-building-niche-templates}
 
 Ang mga templates kay mao ni gyud ang sentro sa pagka-unique sa atong serbisyo para sa usa ka specific nga industriya (niche value proposition). Ang tag-iya sa fitness studio nga mo-sign up ug makakita dayon og website nga morag fitness site na—nga naa nay class schedules, profile sa mga trainer, ug ang husto nga mga litrato—mas dako ang posibilidad nga magpabilin kaysa kanang nakakita lang og blank canvas.
 
-## Asa Kita Nahuman
+## Asa Kita Nahuman {#where-we-left-off}
 
 Naa na tay naglihok nga FitSite network nga dunay Ultimate Multisite nga gi-install ug gi-configure. Karon, himoon nato ang mga templates nga makapahimo sa FitSite nga morag gidesinyo gyud para sa fitness businesses.
 
-## Ngano Importante ang Niche Templates
+## Ngano Importante ang Niche Templates {#why-niche-templates-matter}
 
 Ang generic (kasagarang) templates nagpugos sa imong kustomer nga maghimo og lisod nga trabaho: pag-ila kung unsay mga pages nga ilang kinahanglan, unsa ka maayo nga content structure, ug giunsa kini pagpahimo nga husto para sa ilang industriya. Ang niche templates makapahupay niana nga kalisdanan (friction).
 
@@ -24,11 +24,11 @@ Ang tag-iya sa fitness studio nga mo-sign up sa FitSite dapat makakita:
 
 Sila lang ang magpuno sa ilang mga detalye. Dili sila magsugod gikan sa wala.
 
-## Pagplano sa Imong Templates
+## Pagplano sa Imong Templates {#planning-your-templates}
 
 Sa dili pa kita maghimo, pagdesisyona unsa nga templates ang atong ihatag. Para sa FitSite, makahimo kita og tulo:
 
-### Template 1: Studio Essential
+### Template 1: Studio Essential {#template-1-studio-essential}
 
 Para sa gagmayng studio ug personal trainers.
 
@@ -39,7 +39,7 @@ Para sa gagmayng studio ug personal trainers.
 - **Contact** page nga dunay location map ug form
 - **Clean, modern design** nga naa’y color scheme nga mohaum sa fitness
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Para sa mga established gyms nga adunay daghang serbisyo.
 
@@ -50,7 +50,7 @@ Para sa mga established gyms nga adunay daghang serbisyo.
 - **Testimonials** section sa homepage
 - **Mas prominenteng branding** options
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Para sa mga operasyon nga naa’y daghang lokasyon.
 
@@ -60,17 +60,17 @@ Para sa mga operasyon nga naa’y daghang lokasyon.
 - **Centralized branding** nga adunay detalye kada lokasyon
 - **Staff directory** sa tibuok mga lokasyon
 
-## Paghimo og Template Site
+## Paghimo og Template Site {#building-a-template-site}
 
 Sa Ultimate Multisite, ang template kay usa lang ka WordPress site nga gi-configure sa paagi nga gusto nimo nga magmukha ang bag-ong sites sa kustomer. Mao ni ang paagi pagmugna niini:
 
-### Step 1: Pagmugna sa Template Site
+### Step 1: Pagmugna sa Template Site {#step-1-create-the-template-site}
 
 1. I-navigate ngadto sa **Sites > Add New** sa imong network admin
 2. Maghimo og site nga gitawag og `template-studio-essential`
 3. Kini nga site mao ang imong working canvas
 
-### Step 2: Pag-install ug Pag-configure sa Theme
+### Step 2: Pag-install ug Pag-configure sa Theme {#step-2-install-and-configure-the-theme}
 
 Ibalhin sa template site dashboard ug:
 
@@ -82,7 +82,7 @@ Ibalhin sa template site dashboard ug:
 Pagpili og theme nga flexible enough aron nindot tan-awon para sa fitness pero dili kaayo komplikado nga dili ma-manage sa imong mga kustomer. Maayo ang mga themes sama sa Astra, GeneratePress, o Kadence kay lightweight sila, customizable, ug dunay suporta.
 :::
 
-### Step 3: Pagmugna sa Mga Pages
+### Step 3: Pagmugna sa Mga Pages {#step-3-create-the-pages}
 
 Himoa ang matag page uban niini:
 
@@ -92,7 +92,7 @@ Himoa ang matag page uban niini:
 
 Himoa kining placeholder content nga makatabang (instructional) kung mahimo. Imbes generic filler text, magsulat ka og sulod sama niini: "I-replace kini og mubo nga deskripsyon sa imong studio ug unsa ang nagpautbo niini. Isulti ang inyong training philosophy, katingbanan sa kasinatian, o unsa ang mahibal-an sa mga kliyente."
 
-### Step 4: Pag-configure sa Plugins
+### Step 4: Pag-configure sa Plugins {#step-4-configure-plugins}
 
 I-install ug i-activate ang plugins nga gikinahanglan sa fitness studios:
 
@@ -100,7 +100,7 @@ I-install ug i-activate ang plugins nga gikinahanglan sa fitness studios:
 - Usa ka contact form plugin
 - Usa ka SEO plugin (gi-pre-configure na og mga default nga may kalabutan sa fitness)
 
-### Step 5: Pagmarka isip Template
+### Step 5: Pagmarka isip Template {#step-5-mark-as-template}
 
 1. I-navigate ngadto sa **Ultimate Multisite > Sites**
 2. Edit ang template site
@@ -108,7 +108,7 @@ I-install ug i-activate ang plugins nga gikinahanglan sa fitness studios:
 
 Ibalik kining proseso para sa matag template nga gusto nimong ihatag.
 
-## Template Quality Checklist
+## Template Quality Checklist {#template-quality-checklist}
 
 Sa dili pa nimo himoon nga available ang usa ka template, i-verify kini:
 
@@ -121,7 +121,7 @@ Sa dili pa nimo himoon nga available ang usa ka template, i-verify kini:
 - [ ] Walay broken links o nawala nga assets
 - [ ] Maayo ang page load speed
 
-## Ang FitSite Network Karon
+## Ang FitSite Network Karon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Unsa ang Among Gihimo Niining Lesson
+## Unsa ang Among Gihimo Niining Lesson {#what-we-built-this-lesson}
 
 - **Tulo ka niche-specific templates** nga gidesinyo para sa nagkalainlaing gidak-on sa fitness business
 - **Fitness-appropriate content ug imagery** nga makapahimo sa platform nga morag purpose-built

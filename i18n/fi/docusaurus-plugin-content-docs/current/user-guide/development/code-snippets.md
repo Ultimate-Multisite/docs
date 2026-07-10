@@ -3,7 +3,7 @@ title: Koodinpätkät
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koodinpätkiä v2:lle
+# Koodinpätkiä v2:lle {#code-snippets-for-v2}
 
 Perusidea on, että **WordPress** -koodinpätkiä käytetään tekemään tiettyjä toimintoja, jotka muuten vaatisivat erillistä pienempää pluginia. Tällaisia koodinpätkiä sijoitetaan joko WordPressin ydintoimintojen tai teeman tiedostoihin (yleensä teeman `functions.php`-tiedostoon) tai ne voidaan käyttää MU-pluginina.
 
@@ -15,7 +15,7 @@ Tässä artikkelissa esitellään kolme koodinpätkkiä, joita voit käyttää *
 
   * [**CORS-ongelmien korjaaminen Font-Iconsilla mappatuissa domaineissa**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Tilauksen valikon sijainnin muuttaminen
+## Tilauksen valikon sijainnin muuttaminen {#changing-the-position-of-the-account-menu-item}
 
 Jotta voit muuttaa tilauksen valikon sijaintia asiakkaan Dashboardissa, lisää seuraava koodinpätkä teeman `functions.php`-tiedostoon pääsivustosi aktiivisessa teemassa. Voit myös sijoittaa koodinpätkän johonkin MU-plugin tai omaan pluginisi sisälle.
 
@@ -43,8 +43,8 @@ Huomaa, että käyttäjät voivat tilata vain **suunnitelman (Plan)**, eivät pa
 
 ![Tuotelistauksessa näkyvät suunnitelmien ID:t](/img/admin/products-list.png)
 
-## CORS-ongelmien korjaaminen Font-Iconsilla mappatuissa domaineissa
-## Fixing CORS issues with Font-Icons in mapped domains
+## CORS-ongelmien korjaaminen Font-Iconsilla mappatuissa domaineissa {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Fixing CORS issues with Font-Icons in mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Kun mappasit domeenin aliasitteeksi, saatat huomata, että sivustolla on ongelmia ulkoisten fonttien lataamisessa. Tämä johtuu ristikkopäätöksestä (cross-origin block) palvelinasetuksissasi.
 
@@ -56,7 +56,7 @@ Lisää .htaccess-tiedostoon seuraava rivi:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Lisää palvelimen konfiguraatiotiedostoon (sijainti vaihtelee palvelimesta toiseen) seuraava kohta:
 

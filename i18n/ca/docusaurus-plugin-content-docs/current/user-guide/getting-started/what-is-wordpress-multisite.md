@@ -3,7 +3,7 @@ title: Què és WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Què és WordPress Multisite?
+# Què és WordPress Multisite? {#what-is-wordpress-multisite}
 
 A nivell fonamental, WordPress ofereix una funcionalitat anomenada ‘Multisite’, que remunta les seves orígens al 2010, amb el llançament de WordPress 3.0. Desvinguts, ha rebut diverses revisions per introduir noves funcionalitats i reforçar la seguretat.
 
@@ -11,7 +11,7 @@ En essència, un WordPress multisite es pot imaginar així: una Universitat mant
 
 ##
 
-## Què és exactament WordPress Multisite?
+## Què és exactament WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite és una funcionalitat de WordPress que permet que múltiples llocs web comparteixin una única instal·lació de WordPress. Quan es activa multisite, el lloc web de WordPress original es converteix per suportar el que normalment es coneix com a **xarxa de llocs web**.
 
@@ -23,7 +23,7 @@ Aquest fet és un dels principals avantatges de multisite, ja que us permet fer 
 
 ##
 
-## Subdomini o Subdirectori?
+## Subdomini o Subdirectori? {#subdomain-or-subdirectory}
 
 Hi ha dos modes per executar un WordPress multisite, i ha de triar-ne un quan converteu la vostra instal·lació regular de WordPress en una instal·lació multisite:
 
@@ -49,7 +49,7 @@ Un dels principals reptes en la configuració del mode subdomini és la cobertur
 
 En contrast amb el mode subdirectori, els subsites d'una xarxa basada en subdominis són considerats pels motors de cerca com a llocs web separats, cosa que significa que el contingut present en un subsite no interferea en absolut amb el rendiment SEO d'altres subsites.
 
-## L'Super Admin
+## L'Super Admin {#the-super-admin}
 
 Les instal·lacions de WordPress de lloc únic us permeten afegir un nombre il·limitat d'usuàri i donar a aquests usuaris diferents rols d'usuari amb diferents permisos.
 
@@ -63,7 +63,7 @@ Els plugins i themes només poden instal·lar-se o desinstal·lar-se des del qua
 
 _Nota: com podeu veure, convidar algú a la vostra xarxa i concedir-li el estatut de super admin dona a aquest usuari control total sobre la vostra xarxa. Com exemple, altres super admins fins i tot poden eliminar el vostre estatut de super admin, bloquejant-vos efectivament l'accés al vostre propi quadre de control de la xarxa. Per permetre que els clients d'Ultimate Multisite tinguin un control granular sobre el que poden fer els altres super admins, tenim un addon anomenat Support Agents. Aquest addon us permet crear un altre tipus d'usuari – un agent – amb només els permisos que podrien necessitar per realitzar les seves tasques a la xarxa._
 
-## Què es comparteix entre els subsites i què no
+## Què es comparteix entre els subsites i què no {#what-is-shared-among-subsites-and-what-is-not}
 
 Com que vam mencionar abans, un dels principals avantatges de WordPress multisite és que tots els subsites comparteixen les mateixes configuracions, fitxers fonamentals, themes, plugins, fitxers fonamentals de WordPress, etc.
 
@@ -75,7 +75,7 @@ No obstant, hi ha elements que estan ben delimitats per subsite.
 
 - La majoria de les taules de la base de dades es creen per cada subsite, cosa que significa que les publicacions, els comentaris, les pàgines, les configuracions i més estan delimitats per cada subsite.
 
-## Gestió d'usuàri en WordPress Multisite
+## Gestió d'usuàri en WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Un subjecte delicat en WordPress multisite és la gestió d'usuàri. La taula d'usuàri de WordPress és una de les poques que es comparteixen entre tots els subsites.
 
@@ -99,7 +99,7 @@ _Nota: Reconem qu'és molt greu depenent del vostre cas d'ús, per tant, Ultimat
 
 Tot i que la taula d'usuàri es comparteixi, els usuaris poden ser afegits i eliminats dels subsites pels admins de subsites o l'super admin, i fins i tot poden tenir rols d'usuari diferents en diferents subsites.
 
-## Consideracions de rendiment
+## Consideracions de rendiment {#performance-considerations}
 
 WordPress multisite és molt potent quan es tracta del nombre de llocs que pot suportar. Això es pot comprovar amb el fet que [WordPress.com](https://WordPress.com), Edublogs i Campuspress són tots serveis basats en multisite i cada un allotja milers de llocs.
 

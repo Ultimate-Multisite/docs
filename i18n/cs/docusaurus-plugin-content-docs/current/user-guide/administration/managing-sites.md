@@ -3,7 +3,7 @@ title: Správa webů
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Správa webů
+# Správa webů {#managing-sites}
 
 Weby (nebo podweby) jsou základem vašeho WaaS podnikání. Ultimate Multisite rozlišuje 3 typy webů:
 
@@ -11,13 +11,13 @@ Weby (nebo podweby) jsou základem vašeho WaaS podnikání. Ultimate Multisite 
 - **Šablony webů** — Předpřipravené weby, které si zákazníci mohou vybrat jako výchozí bod
 - **Hlavní web** — Váš primární web v síti
 
-## Zobrazení webů
+## Zobrazení webů {#viewing-sites}
 
 Přejděte do **Ultimate Multisite → Sites** pro zobrazení všech podwebů ve vaší síti. Každý web je označen podle typu a můžete filtrovat podle kategorií Všechny weby, Zákaznické, Šablony nebo Čekající.
 
 ![Stránka se seznamem webů](/img/admin/sites-list.png)
 
-## Přidání nového webu
+## Přidání nového webu {#adding-a-new-site}
 
 Klikněte na tlačítko **Add Site** pro vytvoření nového webu. Budete muset zadat:
 
@@ -27,15 +27,15 @@ Klikněte na tlačítko **Add Site** pro vytvoření nového webu. Budete muset 
 
 Volba **Copy Site** vám umožní vytvořit nový web na základě existující šablony. Po jejím zapnutí si můžete vybrat, kterou šablonu použít jako výchozí bod. Ujistěte se, že máte zapnutou možnost **Copy Media on Duplication**, aby se zkopírovaly i mediální soubory.
 
-## Správa existujícího webu
+## Správa existujícího webu {#managing-an-existing-site}
 
 Klikněte na **Manage** u libovolného webu pro otevření stránky **Edit Site**. Zde najdete:
 
-### Základní informace
+### Základní informace {#basic-information}
 
 Název webu, typ, ID webu a popis. Uvidíte také namapovanou doménu, přiřazené členství a zákaznický účet, kterému web patří.
 
-### Nastavení webu
+### Nastavení webu {#site-options}
 
 Nastavte možnosti a limity webu:
 
@@ -47,7 +47,7 @@ Nastavte možnosti a limity webu:
 
 Ve výchozím nastavení weby přebírají limity nastavené na úrovni členství. Nastavení limitů na úrovni webu přepíše nastavení členství.
 
-### Přiřazení
+### Přiřazení {#associations}
 
 Pod nastavením webu najdete informace o:
 
@@ -55,7 +55,7 @@ Pod nastavením webu najdete informace o:
 - **Členství**, pod které web spadá
 - **Zákaznickém účtu** propojeném s webem
 
-### Pravý postranní panel
+### Pravý postranní panel {#right-sidebar}
 
 Na pravé straně můžete:
 

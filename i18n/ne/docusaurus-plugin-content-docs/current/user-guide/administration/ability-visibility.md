@@ -3,11 +3,11 @@ title: दृश्यता क्षमता
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# क्षमता दृश्यता (Ability Visibility)
+# क्षमता दृश्यता (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Ability Visibility)** नियन्त्रणहरू परिचय दिन्छ जसले कुन सतहहरूमा प्रत्येक क्षमता प्रदर्शन गरिनेछ भन्ने कुरालाई नियन्त्रण गर्दछ। यसले व्यवस्थापकहरूलाई REST API, MCP सर्भरहरू, WooCommerce एकीकरणहरू र अन्य इन्टरफेस मार्फत कुन एजेन्ट क्षमताहरू उपलब्ध छन् भनेर परिष्कृत गर्न अनुमति दिन्छ।
 
-## क्षमता दृश्यता के हो?
+## क्षमता दृश्यता के हो? {#what-is-ability-visibility}
 
 क्षमता दृश्यता (Ability Visibility) एक अनुमति प्रणाली हो जसले निम्न कुराहरू नियन्त्रण गर्दछ:
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 
 प्रत्येक क्षमताको एक दृश्यता स्तर हुन्छ जसले विभिन्न सतहहरूमा यसको उपलब्धता निर्धारण गर्दछ।
 
-## दृश्यता स्तरहरू (Visibility Levels)
+## दृश्यता स्तरहरू (Visibility Levels) {#visibility-levels}
 
-### सार्वजनिक (Public)
+### सार्वजनिक (Public) {#public}
 
 **सार्वजनिक क्षमताहरू** सबै ठाउँमा उपलब्ध छन्:
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 
 उदाहरण: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### आन्तरिक (Internal)
+### आन्तरिक (Internal) {#internal}
 
 **आन्तरिक क्षमताहरू** तपाईंको वर्डप्रेस इन्स्टलेसन भित्र मात्र उपलब्ध छन्:
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 
 उदाहरण: `manage-settings`, `view-analytics`, `export-data`
 
-### साझेदार (Partner)
+### साझेदार (Partner) {#partner}
 
 **साझेदार क्षमताहरू** केवल सफ्टलिस्ट गरिएका साझेदारहरूका लागि उपलब्ध छन्:
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 
 उदाहरण: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### अक्षम (Disabled)
+### अक्षम (Disabled) {#disabled}
 
 **अक्षम क्षमताहरू** कुनै पनि ठाउँमा उपलब्ध छैनन्:
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 - एडमिन प्यानेलमा उपलब्ध छैन
 - पुरानो वा प्रायोगिक क्षमताहरूको लागि उपयोगी
 
-## क्षमता दृश्य व्यवस्थापन (Managing Ability Visibility)
+## क्षमता दृश्य व्यवस्थापन (Managing Ability Visibility) {#managing-ability-visibility}
 
-### क्षमता दृश्य सेटिङहरूमा पहुँच गर्ने (Accessing Ability Visibility Settings)
+### क्षमता दृश्य सेटिङहरूमा पहुँच गर्ने (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 १. **WordPress Admin** → **Superdav AI Agent** → **Settings** मा जानुहोस्।
 २. **Abilities** ट्याबमा क्लिक गर्नुहोस्।
 ३. यहाँ तपाईंले इन्स्टल गरिएका सबै क्षमताहरूको सूची र तिनीहरूको दृश्यता स्तर देख्नुहुनेछ।
 
-### क्षमता विवरण हेर्ने (Viewing Ability Details)
+### क्षमता विवरण हेर्ने (Viewing Ability Details) {#viewing-ability-details}
 
 कुनै पनि क्षमतामा क्लिक गरेर निम्न कुराहरू हेर्न सक्नुहुन्छ:
 
@@ -82,7 +82,7 @@ Superdav AI Agent v1.12.0 ले **क्षमता दृश्यता (Abi
 - **Last updated**: अन्तिम पटक दृश्यता परिवर्तन कहिले गरियो
 - **Status**: पहिचान गरिएको (Recognized) वा अवर्गीकृत (Unclassified)
 
-### दृश्यता स्तर परिवर्तन गर्ने (Changing Visibility Levels)
+### दृश्यता स्तर परिवर्तन गर्ने (Changing Visibility Levels) {#changing-visibility-levels}
 
 कुनै पनि क्षमताको दृश्यता परिवर्तन गर्न:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### सामूहिक कार्यहरू (Bulk Operations)
+### सामूहिक कार्यहरू (Bulk Operations) {#bulk-operations}
 
 धेरै क्षमताहरूको दृश्यता परिवर्तन गर्न:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 २. सामूहिक कार्य (bulk action) ड्रपडाउनबाट नयाँ दृश्यता स्तर चयन गर्नुहोस्।
 ३. **Apply** मा क्लिक गर्नुहोस्।
 
-## पार्टनर अनुमति सूची (Partner Allow-List)
+## पार्टनर अनुमति सूची (Partner Allow-List) {#partner-allow-list}
 
 **पार्टनर अनुमति सूची** ले कुन बाह्य पार्टनरहरूले पार्टनर-स्तरका क्षमताहरूमा पहुँच गर्न सक्छन् भन्ने नियन्त्रण गर्दछ।
 
-### पार्टनर थप्ने (Adding Partners)
+### पार्टनर थप्ने (Adding Partners) {#adding-partners}
 
 १. **Superdav AI Agent** → **Settings** → **Partners** मा जानुहोस्।
 २. **Add Partner** मा क्लिक गर्नुहोस्।
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 ४. वैकल्पिक रूपमा, एक पार्टनरको नाम र विवरण थप्न सक्नुहुन्छ।
 ५. **Save** मा क्लिक गर्नुहोस्।
 
-### पार्टनरहरूलाई क्षमताहरू तोक्ने (Assigning Abilities to Partners)
+### पार्टनरहरूलाई क्षमताहरू तोक्ने (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 पार्टनर थपेपछि:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 ४. "Partner allow-list" सेक्सनमा, कुन पार्टनरलाई पहुँच दिनुपर्छ ती पार्टनरहरूको लागि चेकबक्सहरू चिन्ह लगाउनुहोस्
 ५. **Save** मा क्लिक गर्नुहोस्
 
-### पार्टनरको पहुँच हटाउने (Revoking Partner Access)
+### पार्टनरको पहुँच हटाउने (Revoking Partner Access) {#revoking-partner-access}
 
 पार्टनरको पहुँच हटाउनका लागि:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 पार्टनरले तुरुन्तै त्यो एबिलिटीमा पहुँच गुमाउनेछ।
 
-## वर्गीकरण नगरिएका एबिलिटीज (Unclassified Abilities)
+## वर्गीकरण नगरिएका एबिलिटीज (Unclassified Abilities) {#unclassified-abilities}
 
 जब तपाईं Superdav AI Agent ले चिन्न नसकेको कुनै थर्ड-पार्टी एबिलिटी इन्स्टल गर्नुहुन्छ, त्यसलाई **Unclassified** भनेर चिन्ह लगाइन्छ।
 
-### वर्गीकरण नगरिएका एबिलिटीजका लागि एडमिन सूचना (Admin Notice for Unclassified Abilities)
+### वर्गीकरण नगरिएका एबिलिटीजका लागि एडमिन सूचना (Admin Notice for Unclassified Abilities) {#admin-notice-for-unclassified-abilities}
 
 तपाईंले निम्न एडमिन सूचना देख्नुहुनेछ:
 
@@ -161,7 +161,7 @@ Partner allow-list: partner-123, partner-456
 [Review Abilities] [Dismiss]
 ```
 
-### वर्गीकरण नगरिएका एबिलिटीजको समीक्षा गर्ने (Reviewing Unclassified Abilities)
+### वर्गीकरण नगरिएका एबिलिटीजको समीक्षा गर्ने (Reviewing Unclassified Abilities) {#reviewing-unclassified-abilities}
 
 १. सूचनामा **Review Abilities** मा क्लिक गर्नुहोस्
 २. हरेक वर्गीकरण नगरिएको एबिलिटीको लागि, तपाईंले निम्न कुराहरू देख्नुहुनेछ:
@@ -178,7 +178,7 @@ Partner allow-list: partner-123, partner-456
 
 ४. आफ्नो निर्णय सुरक्षित गर्न **Classify** मा क्लिक गर्नुहोस्
 
-### वर्गीकरण नगरिएका एबिलिटीज किन वर्गीकृत गर्ने? (Why Classify Unclassified Abilities?)
+### वर्गीकरण नगरिएका एबिलिटीज किन वर्गीकृत गर्ने? (Why Classify Unclassified Abilities?) {#why-classify-unclassified-abilities}
 
 एबिलिटीजलाई वर्गीकरण गर्नुको कारणहरू:
 
@@ -187,9 +187,9 @@ Partner allow-list: partner-123, partner-456
 - **सुविधा सक्षम गर्छ**: एक पटक वर्गीकृत भएपछि, त्यो एबिलिटी उपलब्ध हुन्छ
 - **निर्णयहरूको दस्तावेज गर्छ**: लेखापरीक्षण (audit) प्रयोजनका लागि तपाईंको छनोटहरू रेकर्ड गरिन्छ
 
-## विभिन्न सतहहरूमा दृश्यता (Visibility in Different Surfaces)
+## विभिन्न सतहहरूमा दृश्यता (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **सार्वजनिक क्षमताहरू** REST endpoints मार्फत उपलब्ध छन्:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **आन्तरिक र पार्टनर क्षमताहरू** REST API मार्फत उपलब्ध छैनन्।
 
-### MCP सर्भरहरू (MCP Servers)
+### MCP सर्भरहरू (MCP Servers) {#mcp-servers}
 
 **सार्वजनिक क्षमताहरू** MCP मार्फत उपलब्ध छन्:
 
@@ -217,7 +217,7 @@ MCP Server: Superdav AI Agent
 
 **पार्टनर क्षमताहरू** केवल पार्टनर क्रेडेंशियल्सको साथ उपलब्ध छन्।
 
-### WooCommerce एकीकरण (WooCommerce Integration)
+### WooCommerce एकीकरण (WooCommerce Integration) {#woocommerce-integration}
 
 **WooCommerce सम्बन्धी सार्वजनिक क्षमताहरू** उपलब्ध छन्:
 
@@ -227,7 +227,7 @@ MCP Server: Superdav AI Agent
 
 **आन्तरिक क्षमताहरू** WooCommerce मा प्रदर्शन गरिएका छैनन्।
 
-### च्याट इन्टरफेस (Chat Interface)
+### च्याट इन्टरफेस (Chat Interface) {#chat-interface}
 
 प्रयोगकर्ता अनुमतिहरूमा निर्भर गर्दै **सबै क्षमताहरू** (सार्वजनिक, आन्तरिक, पार्टनर) च्याटमा उपलब्ध छन्:
 
@@ -235,34 +235,34 @@ MCP Server: Superdav AI Agent
 - सामान्य प्रयोगकर्ताहरूले केवल सार्वजनिक क्षमताहरू मात्र देख्छन्
 - पार्टनरहरूले सार्वजनिक + पार्टनर क्षमताहरू (यदिWHITELIST गरिएको छ भने) देख्छन्
 
-## सुरक्षा उत्तम अभ्यासहरू (Security Best Practices)
+## सुरक्षा उत्तम अभ्यासहरू (Security Best Practices) {#security-best-practices}
 
-### न्यूनतम विशेषाधिकारको सिद्धान्त (Principle of Least Privilege)
+### न्यूनतम विशेषाधिकारको सिद्धान्त (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - आफ्नो प्रयोगका लागि अनुमति दिने सबैभन्दा कम restricitive दृश्यता सेट गर्नुहोस्
 - संवेदनशील कार्यहरूको लागि पार्टनर दृश्यता प्रयोग गर्नुहोस्
 - तपाईंले प्रयोग नगर्ने क्षमताहरूलाई अक्षम गर्नुहोस्
 
-### नियमित लेखापरीक्षणहरू (Regular Audits)
+### नियमित लेखापरीक्षणहरू (Regular Audits) {#regular-audits}
 
 - मासिक रूपमा क्षमताको दृश्यताको समीक्षा गर्नुहोस्
 - अवर्गीकृत (unclassified) क्षमताहरूको जाँच गर्नुहोस्
 - प्रयोग नगरिएका पार्टनरहरूको पहुँच हटाउनुहोस्
 
-### लगिङ र निगरानी (Logging and Monitoring)
+### लगिङ र निगरानी (Logging and Monitoring) {#logging-and-monitoring}
 
 - कुन क्षमताहरू सबैभन्दा बढी प्रयोग गरिन्छ भनेर निगरानी गर्नुहोस्
 - पार्टनरको पहुँच ढाँचाहरू ट्र्याक गर्नुहोस्
 - असामान्य क्षमता प्रयोगमा अलर्ट गर्नुहोस्
 
-### तेस्रो-पक्ष क्षमताहरू (Third-Party Abilities)
+### तेस्रो-पक्ष क्षमताहरू (Third-Party Abilities) {#third-party-abilities}
 
 - सक्षम गर्नुअघि तेस्रो-पक्ष क्षमताहरूको समीक्षा गर्नुहोस्
 - तिनीहरूलाई स्पष्ट रूपमा वर्गीकरण गर्नुहोस्
 - आन्तरिक वा पार्टनर दृश्यताबाट सुरु गर्नुहोस्
 - जाँच गरिसकेपछि मात्र सार्वजनिक गर्न प्रवर्द्धन गर्नुहोस्
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
 **सूचीमा कुनै क्षमता देखिँदैन**
 - त्यो क्षमता इन्स्टल गरिएको छ र सक्रिय (active) छ कि छैन जाँच गर्नुहोस्।
@@ -285,7 +285,7 @@ MCP Server: Superdav AI Agent
 - तपाईंको वर्गीकरण सुरक्षित भएको छ कि छैन जाँच गर्नुहोस्।
 - त्यो क्षमता प्रदान गर्ने प्लगइन अद्यावधिक (up to date) छ वा छैन हेर्नुहोस्।
 
-## लेगेसी मोडबाट माइग्रेशन
+## लेगेसी मोडबाट माइग्रेशन {#migration-from-legacy-mode}
 
 यदि तपाईं Superdav AI Agent को पुरानो संस्करणबाट अपग्रेड गर्दै हुनुहुन्छ भने:
 
@@ -295,7 +295,7 @@ MCP Server: Superdav AI Agent
 
 नेटिभ Abilities API एकीकरणमा संक्रमणका बारेमा थप विवरणको लागि **Third-Party Mode Migration** हेर्नुहोस्।
 
-## आगामी चरणहरू
+## आगामी चरणहरू {#next-steps}
 
 क्षमता दृश्यता कन्फिगर गरेपछि:
 

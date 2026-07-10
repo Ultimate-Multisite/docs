@@ -1,132 +1,148 @@
 ---
 title: ඇතුළත් නියෝජිතයන්
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# අන්තර්ගත ඒජන්ට් (Built-in Agents)
+# අන්තර්ගත Agents {#built-in-agents}
 
-Gratis AI Agent v1.9.0 හි, සෑම ඒජන්ට් එකක්ම පෙර සැකසූ මෙවලම් සමූහයක්, විශේෂිත සිස්ටම් ප්‍රොම්ප්ට් එකක් සහ එම ක්ෂේත්‍රයේ පොදු කාර්යයන්ට ගැලපෙන ආරම්භක යෝජනා සහිතව පැමිණේ. ඒජන්ට් අතර මාරු වීමෙන් අනුකාරකයා (assistant) කළ හැකි දේ සහ එය ප්‍රතිචාර දැක්වීමට ඇති ආකාරය වෙනස් වේ — ඔබ කිසිදු සැකසීමක් නොමැතිව.
+Gratis AI Agent v1.9.0 හි අන්තර්ගත agents පහක් ඇතුළත් වේ. ඒ එක් එකක්ම එම ක්ෂේත්‍රයේ සාමාන්‍ය කාර්යයන්ට ගැළපෙන පරිදි, අවධානය යොමු කළ tools සමූහයකින්, සකස් කළ system prompt එකකින්, සහ ආරම්භක යෝජනාවලින් පෙර-සකසා ඇත. agents අතර මාරුවීමෙන් assistant කළ හැකි දේ සහ එය ප්‍රතිචාර දක්වන ආකාරය වෙනස් වේ — ඔබට කිසිදු configuration කිරීමක් අවශ්‍ය නැත. Superdav AI Agent v1.18.0 හට, අදාළ integrations සකසා ඇති විට, මෙම workflows වෙත කාලසටහන්-සංවේදී tools, reminder records, approval gates, සහ SMS notifications එකතු කළ හැක.
 
-## ඒජන්ට් එකක් කියන්නේ මොකක්ද? (What Is an Agent?)
+## Agent යනු කුමක්ද? {#what-is-an-agent}
 
-සෑම ඒජන්ට් එකක්ම නම් කරන ලද වින්‍යාස ප්‍රොෆයිලයක් වන අතර එය පහත දේ ඒකාබද්ධ කරයි:
+එක් එක් agent යනු පහත දෑ එකට ගලපන නාමිත configuration profile එකකි:
 
-- **Tools** — ඒජන්ට් එකට භාවිතා කිරීමට අවසර ඇති හැකියාවන් (උදාහරණයක් ලෙස, Content Writer කෙනෙකුට පෝස්ට් නිර්මාණය කිරීමේ හැකියාව ලැබේ; Design Studio එකකට CSS සහ theme.json හැකියාවන් ලැබේ).
-- **System prompt** — ඒජන්ට් එකේ ස්වරය, ප්‍රමුඛතා සහ සීමාවන් තීරණය කරන උපදෙස්.
-- **Suggestions** — ඉක්මනින් ආරම්භ කිරීමට ඔබට උදවු කිරීම සඳහා චැට් අතුරුමුහුණතේ පෙන්වන පෙර ලියන ලද ප්‍රොම්ප්ට් (prompts).
+- **Tools** — agent ට invoke කිරීමට අවසර ඇති හැකියාවන් (උදා. Content Writer කෙනෙකුට post නිර්මාණ හැකියාවන්ට ප්‍රවේශය ඇත; Design Studio කෙනෙකුට CSS සහ theme.json හැකියාවන්ට ප්‍රවේශය ඇත)
+- **System prompt** — agent ගේ ස්වරය, ප්‍රමුඛතා, සහ සීමා නියම කරන උපදෙස්
+- **යෝජනා** — ඔබට ඉක්මනින් ආරම්භ කිරීමට උදව් කිරීමට chat interface එකේ පෙන්වන පෙර-ලියූ prompts
 
-## ඒජන්ට් තෝරා ගැනීම වෙත පිවිසීම (Accessing the Agent Picker)
+## Agent Picker වෙත ප්‍රවේශ වීම {#accessing-the-agent-picker}
 
-1. WordPress admin sidebar එකේ **Gratis AI Agent** පැනලය විවෘත කරන්න.
-2. චැට් හෙඩර් එකේ ඉහළ වම් කෙළවරේ ඇති **agent icon** එක ක්ලික් කරන්න (ක්‍රියාකාරී ඒජන්ට් එක පිළිබිඹු වන පරිදි අයිකනය වෙනස් වේ).
-3. **Agent Picker** එක පෝරම-වගුව ලෙස විවෘත වේ. සෑම ඒජන්ට් එකක්ම එහි අයිකනය, නම සහ එක් පේළියක විස්තරයක් සමඟ ලැයිස්තුගත කර ඇත.
-4. ක්‍රියාත්මක කිරීමට ඔබට අවශ්‍ය ඒජන්ට් රේඛාව ක්ලික් කරන්න. චැට් හෙඩර් එක වහාම යාවත්කාලීන වේ.
+1. WordPress admin sidebar තුළ **Gratis AI Agent** panel එක විවෘත කරන්න.
+2. chat header හි ඉහළ-වම් පැත්තේ ඇති **agent icon** ක්ලික් කරන්න (සක්‍රීය agent අනුව icon එක වෙනස් වේ).
+3. **Agent Picker** form-table overlay එකක් ලෙස විවෘත වේ. එක් එක් agent එහි icon, නම, සහ එක්-පේළි විස්තරයක් සමඟ ලැයිස්තුගත වේ.
+4. එය සක්‍රීය කිරීමට agent row එකක් ක්ලික් කරන්න. chat header එක වහාම යාවත්කාලීන වේ.
 
-ඔබට සංවාදයේ අතරතුර පවා ඒජන්ට් මාරු කළ හැකිය — නව ඒජන්ට් එකේ සිස්ටම් ප්‍රොම්ප්ට් එක ඊළඟ පණිවිඩයෙන් ක්‍රියාත්මක වේ.
+ඔබට සංවාදයක් අතරතුරද agents මාරු කළ හැක — නව agent ගේ system prompt එක ඊළඟ පණිවිඩයෙන් බලපැවැත්වේ.
 
-## අන්තර්ගත ඒජන්ට් පහ (The Five Built-in Agents)
+## අන්තර්ගත Agents පහ {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
-**අවධානය:** පෝස්ට්, පිටු සහ සම්බන්ධතා පෝරම නිර්මාණය කිරීම සහ සංස්කරණය කිරීම.
+**අවධානය:** posts, pages, සහ contact forms නිර්මාණය කිරීම සහ සංස්කරණය කිරීම.
 
-**ලබා ගත හැකි මෙවලම්:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**ලබාගත හැකි tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrations සක්‍රීය කර ඇති විට, සකස් කළ calendar context, approval gates, reminders, සහ SMS notification tools ද අනුමත workflows සඳහා ලබාගත හැක.
 
-**එය හොඳින් කරන දේවල්:**
-- කෙටි සටහනකින් හෝ පිටපතකින් බ්ලොග් පෝස්ට් (blog posts) කෙටුම්පත් කිරීම සහ ප්‍රකාශනය කිරීම
-- නව වෙබ් අඩවියක් සඳහා ලෑන්ඩිං පිටු (landing pages) සමූහයක් නිර්මාණය කිරීම
-- සම්බන්ධතා සහ විමසීම් පෝරම (contact and enquiry forms) ගොඩනැගීම
-- URL එකකින් හෝ සෙවුමකින් ලැබෙන දේ මත පදනම්ව පෝස්ට් වල විශේෂිත රූප (featured images) සැකසීම
+**මෙය හොඳින් කරන දේ:**
+- brief එකක් හෝ outline එකකින් blog posts කෙටුම්පත් කර ප්‍රකාශයට පත් කිරීම
+- නව අඩවියක් සඳහා landing pages සමූහ නිර්මාණය කිරීම
+- contact සහ enquiry forms තැනීම
+- URL එකකින් හෝ search එකකින් posts මත featured images සැකසීම
+- සකසා ඇති Google Calendar context එකකින් event follow-up messages කෙටුම්පත් කර, notifications යැවීමට පෙර approval සඳහා නතර වීම
 
 **ආරම්භක යෝජනා:**
-- *WordPress multisite වල ප්‍රතිලාභ පිළිබඳ 500 වචනක් සහිත බ්ලොග් පෝස්ට් එකක් ලියන්න.*
-- *About, Services සහ Contact පිටුවක් සාදා ප්‍රකාශයට පත් කරන්න.*
-- *Contact පිටුවට වෙන් කිරීමේ විමසීම් පෝරමක් (booking enquiry form) එක් කරන්න.*
-
----
-
-### Site Builder
-
-**අවධානය:** එකම ප්‍රොම්ප්ට් එකකින් මුළු වෙබ් අඩවියම නිර්මාණය කිරීම.
-
-**ප්‍රවේශ විය හැකි මෙවලම්:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**එය හොඳින් කරන දේවල්:**
-- විස්තර කළ ව්‍යාපාර වර්ගයක් සඳහා බහු-අදියර වෙබ් අඩවි ගොඩනැගීමේ සැලැස්මක් (multi-phase site build plan) ජනනය කිරීම
-- සෑම අදියරක්ම ස්වයංක්‍රීයව ක්‍රියාත්මක කිරීම — ව්‍යුහය, අන්තර්ගතය, සංචාලනය සහ නිර්මාණය
-- සැලැස්ම අතරතුර දෝෂවලින් මිදීම (Recovering from errors) - අතින් මැදිහත්වීම් අවශ්‍ය නොකර
-- ගොඩනැගීමේ කොටසක් ලෙස නිර්දේශිත plugin ස්ථාපනය කිරීම
-- චැට් අතුරුමුහුණතෙන් කෙලින්ම සම්බන්ධතා පෝරම (contact forms) නිර්මාණය කිරීම (Superdav AI Agent v1.10.0+)
-
-**ආරම්භක යෝජනා:**
-- *ගැලරි post type එකක්, වෙන් කිරීමේ පිටුවක් සහ සම්බන්ධතා පෝරමක් සහිත ඡායාරූප කළඹ වෙබ් අඩවියක් ගොඩනඟන්න.*
-- *මාර්ගගත මෙනු (online menu), විවෘත වේලාවන් සහ මේස වෙන් කිරීමේ විමසීම් පෝරමක් සහිත අවන්හල වෙබ් අඩවියක් සාදන්න.*
-- *සේවා පිටු, කළඹ කොටසක් සහ බ්ලොග් එකක් සහිත නිදහස් උපදේශන (freelance consulting) වෙබ් අඩවියක් සකසන්න.*
-- *site builder භාවිතා කර Contact පිටුවට සම්බන්ධතා පෝරමක් එක් කරන්න.*
+- *WordPress multisite හි ප්‍රතිලාභ ගැන වචන 500ක blog post එකක් ලියන්න.*
+- *About, Services, සහ Contact page එකක් නිර්මාණය කර ඒවා ප්‍රකාශයට පත් කරන්න.*
+- *Contact page එකට booking enquiry form එකක් එක් කරන්න.*
+- *හෙට සකසා ඇති calendar event එකේ සහභාගීවන්නන් සඳහා reminder එකක් කෙටුම්පත් කර, එය යැවීමට පෙර approval සඳහා රැඳී සිටින්න.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**අවධානය:** දෘශ්‍ය වෙනස් කිරීම් — වර්ණ, අකුරු වර්ග (typography), CSS සහ කොටු රටා (block patterns).
+**අවධානය:** එක් prompt එකකින් මුල සිට අවසානය දක්වා වෙබ් අඩවි නිර්මාණය.
 
-**පවතින මෙවලම්:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**ලබාගත හැකි tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 සමඟ, administrators ඒවා සක්‍රීය කරන තැන්වල සකසා ඇති managed-service, approval, reminder, calendar, සහ SMS tools ලබාගත හැක.
 
-**මේවා හොඳින් කරන දේවල්:**
-- නාමගත තේමා ප්‍රස්ථර (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) යෙදීම.
-- theme.json හරහා ගෝලීය අකුරු සැකසුම් සහ වර්ණ මාලා සියුම් ලෙස සකස් කිරීම.
-- වෙළඳ නාමයට විශේෂිත වෙනස්කම් සඳහා custom CSS ඇතුළත් කිරීම.
-- පිටුවක ස්ක්‍රීන්ෂොට් එකක් ගැනීම සහ නිර්මාණ ගැටළු පරීක්ෂා කිරීම.
+**මෙය හොඳින් කරන දේ:**
+- විස්තර කළ ව්‍යාපාර වර්ගයක් සඳහා බහු-අදියර අඩවි ගොඩනැගීමේ සැලැස්මක් ජනනය කිරීම
+- එක් එක් අදියර ස්වයංක්‍රීයව ක්‍රියාත්මක කිරීම — ව්‍යුහය, අන්තර්ගතය, navigation, design
+- අතින් මැදිහත්වීම අවශ්‍ය නොකර, සැලැස්ම මැද errors වලින් නැවත යථා තත්ත්වයට පත්වීම
+- build එකේ කොටසක් ලෙස නිර්දේශිත plugins ස්ථාපනය කිරීම
+- chat interface එකෙන්ම contact forms නිර්මාණය කිරීම (Superdav AI Agent v1.10.0+)
+- approval gates සහ reminder records සක්‍රීය කර ඇති විට, duplicate notifications නොමැතිව launch reminders හෝ attendee follow-up සම්බන්ධීකරණය කිරීම
 
 **ආරම්භක යෝජනා:**
-- *warm-editorial preset එක යොදලා, ප්‍රාථමික වර්ණය #2d6a4f ලෙස සකසන්න.*
-- *homepage එකේ ස්ක්‍රීන්ෂොට් එකක් ගන්න แล้ว මට මොනවද වැඩිදියුණු කරන්න පුළුවන් කියලා කියන්න.*
-- *පූර්ණ පළල පසුබිම් රූපයක් සහ මැද තියෙන මාතෘකාවක් සහිත නැවත භාවිතා කළ හැකි hero block pattern එකක් සාදන්න.*
+- *gallery post type එකක්, booking page එකක්, සහ contact form එකක් සහිත photography portfolio site එකක් ගොඩනඟන්න.*
+- *online menu එකක්, opening hours, සහ table-booking enquiry form එකක් සහිත restaurant website එකක් නිර්මාණය කරන්න.*
+- *service pages, portfolio section එකක්, සහ blog එකක් සහිත freelance consulting site එකක් සකසන්න.*
+- *site builder භාවිතයෙන් Contact page එකට contact form එකක් එක් කරන්න.*
+- *site launch checklist එක approved වූ පසු, සකසා ඇති stakeholder contact වෙත SMS reminder එකක් යවන්න.*
 
 ---
 
-### Plugin Manager (ප්ලග්ඉන් කළමනාකරු)
+### Design Studio {#design-studio}
 
-**අවධානය:** WordPress ප්ලග්ඉන් සොයා ගැනීම, ස්ථාපනය කිරීම සහ කළමනාකරණය කිරීම.
+**අවධානය:** දෘශ්‍ය අභිරුචිකරණය — colours, typography, CSS, සහ block patterns.
 
-**පවතින මෙවලම්:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+**ලබාගත හැකි tools:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**මේවා හොඳින් කරන දේවල්:**
-- විස්තර කරන ලද භාවිත අවස්ථාව සඳහා හොඳම ප්ලග්ඉනය නිර්දේශ කිරීම.
-- registry එකෙන් ability packs ස්ථාපනය කිරීම.
-- කාණ්ඩ අනුව පවතින ability catalogue එක බැලීම.
+**මෙය හොඳින් කරන දේ:**
+- නම් කළ theme presets යෙදීම (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json හරහා global typography සහ colour palettes සූක්ෂ්මව සකස් කිරීම
+- brand-specific overrides සඳහා custom CSS ඇතුළත් කිරීම
+- පිටුවක screenshot එකක් ගෙන design issues සඳහා එය සමාලෝචනය කිරීම
 
 **ආරම්භක යෝජනා:**
-- *සාමාජික දත්ත ගබඩාවක් (membership directory) සඳහා හොඳම ප්ලග්ඉනය මොකක්ද?*
+- *warm-editorial preset එක යොදා, පසුව primary colour එක #2d6a4f ලෙස සකසන්න.*
+- *homepage එකේ screenshot එකක් ගෙන, ඔබ වැඩිදියුණු කරන දේ මට කියන්න.*
+- *full-width background image එකක් සහ centred heading එකක් සහිත නැවත භාවිත කළ හැකි hero block pattern එකක් නිර්මාණය කරන්න.*
+
+### Plugin Manager {#plugin-manager}
+
+**අවධානය:** WordPress plugins සොයාගැනීම, ස්ථාපනය කිරීම, සහ කළමනාකරණය කිරීම.
+
+**ලබාගත හැකි tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**මෙය හොඳින් කරන දේ:**
+- විස්තර කළ භාවිත අවස්ථාවක් සඳහා හොඳම plugin එක නිර්දේශ කිරීම
+- registry එකෙන් ability packs ස්ථාපනය කිරීම
+- category අනුව ලබාගත හැකි ability catalogue එක පිරික්සීම
+
+**ආරම්භක යෝජනා:**
+- *membership directory එකක් සඳහා හොඳම plugin එක කුමක්ද?*
 - *WooCommerce abilities pack එක ස්ථාපනය කරන්න.*
-- *පවතින සියලුම e-commerce ability packs මට පෙන්වන්න.*
+- *ලබාගත හැකි සියලු ecommerce ability packs මට පෙන්වන්න.*
 
 ---
 
-### Support Assistant (සහාය සහායකයා)
+### Support Assistant {#support-assistant}
 
-**අවධානය:** වෙබ් අඩවි අන්තර්ගතයන්, සැකසුම් සහ WordPress configuration ගැන ප්‍රශ්නවලට පිළිතුරු දීම.
+**අවධානය:** අඩවි අන්තර්ගතය, සැකසුම්, සහ WordPress configuration පිළිබඳ ප්‍රශ්නවලට පිළිතුරු දීම.
 
-**පවතින මෙවලම්:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**ලබාගත හැකි tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**එය හොඳින් කරන දේ:**
-- වර්තමාන වෙබ් අඩවි සැකසුම් සහ විකල්ප පරීක්ෂා කිරීම.
-- වෙබ් අඩවියේ ඇති post types, taxonomies සහ menus මොනවාද කියලා පැහැදිලි කිරීම.
-- සජීවී අගයන් කියවීමෙන් "මේ සැකසුම කරන්නේ මොකක්ද?" වැනි ප්‍රශ්නවලට පිළිතුරු දීම.
-- වෙනස්කම් කිරීමට පෙර කියවීමේ පමණක් (read-only) රෝග විනිශ්චය ස්ථරයක් ලෙස ක්‍රියා කිරීම.
+**මෙය හොඳින් කරන දේ:**
+- වත්මන් අඩවි සැකසුම් සහ විකල්ප සොයා බැලීම
+- අඩවියේ වින්‍යාස කර ඇති ලිපි වර්ග, වර්ගීකරණ සහ මෙනු පැහැදිලි කිරීම
+- සජීවී අගයන් කියවා "මෙම සැකසුම කරන්නේ කුමක්ද?" වැනි ප්‍රශ්නවලට පිළිතුරු දීම
+- වෙනස්කම් කිරීමට පෙර කියවීමට පමණක් වූ දෝෂ නිර්ණය ස්ථරයක් ලෙස ක්‍රියා කිරීම
 
 **ආරම්භක යෝජනා:**
-- *මේ වෙබ් අඩවියේ දැනට ක්‍රියාත්මක ප්ලග්ඉන් සහ සැකසුම් මොනවාද?*
-- *මේ වෙබ් අඩවිය සඳහා ලියාපදිංචි කර ඇති සියලුම custom post types (cpt) ලැයිස්තුගත කරන්න.*
-- *පවතින navigation menus මොනවාද සහ ඒවා කොතැනට සම්බන්ධ කර තිබේද?*
+- *මෙම අඩවියේ දැනට සක්‍රියව ඇති plugin සහ සැකසුම් මොනවාද?*
+- *මෙම අඩවියේ ලියාපදිංචි කර ඇති සියලු අභිරුචි ලිපි වර්ග ලැයිස්තුගත කරන්න.*
+- *පවතින සංචරණ මෙනු මොනවාද, ඒවා පැවරී ඇත්තේ කොතැනටද?*
 
 ---
 
-## Customising Agents (කාරකයන් වෙනස් කිරීම)
+## Superdav ස්වයංක්‍රීයකරණ ඒකාබද්ධකරණ {#superdav-automation-integrations}
 
-built-in agent එකක් ඕනෑම ෆිල්ටරයක් හරහා `gratis_ai_agent_agents` හරහා පුළුල් කළ හැකියි හෝ ප්‍රතිස්ථාපනය කළ හැකියි.
+Superdav AI Agent v1.18.0 ඒකාබද්ධකරණ වින්‍යාස කළ විට, ඇතුළත් නියෝජිතයන්ට කාලසටහන පිළිබඳව දැනුවත් වඩා ආරක්ෂිත ස්වයංක්‍රීයකරණ කාර්ය ප්‍රවාහවලට සහභාගී විය හැක:
 
-### පවතින agent එකකට custom system prompt එකක් එකතු කිරීම
+- **Google Calendar කියවීමේ මෙවලම්** පසුකාලීන වැඩ කෙටුම්පත් කිරීමට පෙර වින්‍යාස කළ දිනදර්ශන සහ සිදුවීම් පරීක්ෂා කිරීමට නියෝජිතයන්ට ඉඩ දෙයි.
+- **සම්බන්ධතා සහ සහභාගිවන්නන් ගැළපීම** සිදුවීම් සහභාගිවන්නන් WordPress පරිශීලකයන් හෝ දන්නා සම්බන්ධතා සමඟ ගැළපීමට උපකාරී වේ.
+- **මානව අනුමැති ද්වාර** අවසර ලත් පරිශීලකයෙකු සමාලෝචනය කර තහවුරු කරන තුරු සංවේදී ක්‍රියා විරාම කරයි.
+- **සිහිකැඳවීම් වාර්තා** කාලසටහන්ගත කාර්ය නැවත උත්සාහ කරන විට හෝ නැවත සිදුවන විට ද්විත්ව දැනුම්දීම් වැළැක්වෙයි.
+- **TextBee SMS දැනුම්දීම්** SMS අක්තපත්‍ර සහ කාර්ය ප්‍රවාහ අවසර සක්‍රිය කර ඇති විට පමණක් වින්‍යාස කළ පෙළ පණිවිඩ යවයි.
+
+නිර්දේශිත කාර්ය ප්‍රවාහය: පණිවිඩය හෝ ක්‍රියාව සූදානම් කිරීමට නියෝජිතයාගෙන් ඉල්ලන්න, අනුමැති විමසුම සමාලෝචනය කරන්න, ඉන්පසු අනුමත කළ ක්‍රියාව නැවත ආරම්භ වීමට ඉඩ දෙන්න. නැවත සිදුවන සිහිකැඳවීම් සඳහා, එකම සිදුවීම හෝ සම්බන්ධතාව නැවත නැවත දැනුම් නොදෙන ලෙස සිහිකැඳවීම් ද්විත්වකරණය වැළැක්වීම සක්‍රියව තබා ගන්න.
+
+---
+
+## නියෝජිතයන් අභිරුචිකරණය කිරීම {#customising-agents}
+
+සෑම ඇතුළත් නියෝජිතයෙකුම `gratis_ai_agent_agents` පෙරහන හරහා දිගු කළ හෝ ප්‍රතිස්ථාපනය කළ හැක.
+
+### පවතින නියෝජිතයෙකට අභිරුචි පද්ධති විමසුමක් එක් කිරීම {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### නව agent එකක් ලියාපදිංචි කිරීම
+### නව නියෝජිතයෙකු ලියාපදිංචි කිරීම {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-නව ඒජන්ට් එක ෆිල්ටරය පවත්වන විගසම Agent Picker එකේ දිස්වේ.
+පෙරහන ක්‍රියාත්මක වූ වහාම නව නියෝජිතයා නියෝජිත තේරීමේ පෙනේ.
 
-### අන්තර්ගත වූ (built-in) ඒජන්ට් එකක් ඉවත් කිරීම
+### ඇතුළත් නියෝජිතයෙකු ඉවත් කිරීම {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

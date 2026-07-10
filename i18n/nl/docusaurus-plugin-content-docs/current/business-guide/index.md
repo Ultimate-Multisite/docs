@@ -3,13 +3,13 @@ title: Bouw een Niche Website Bedrijf
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Bouw een Niche Website Bedrijf met Ultimate Multisite
+# Bouw een Niche Website Bedrijf met Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 De meeste mensen die proberen websites te verkopen, concurreren op prijs met Wix, Squarespace en duizenden freelancers. En ze verliezen. Degenen die winnen, kiezen een specifieke doelgroep, bouwen een oplossing die op maat is gemaakt voor die doelgroep, en rekenen de waarde die ze leveren.
 
 Deze cursus leert u precies dat te doen met behulp van Ultimate Multisite.
 
-## Wat U Zult Bouwen
+## Wat U Zult Bouwen {#what-you-will-build}
 
 Gedurende deze cursus bouwt u een echt, werkend netwerk genaamd **FitSite** – een websiteplatform dat specifiek is gebouwd voor fitnessstudio's, personal trainers en sportschooleigenaren.
 
@@ -23,7 +23,7 @@ Tegen de laatste les is FitSite een compleet nicheplatform met:
 
 U volgt stap voor stap mee, en aan het einde heeft u zowel een werkend platform als de kennis om dit proces te repliceren voor elke niche die u kiest.
 
-## Waarom Fitnessstudio's?
+## Waarom Fitnessstudio's? {#why-fitness-studios}
 
 We hadden een concreet voorbeeld nodig dat iedereen kon volgen. Fitnessstudio's werken omdat:
 
@@ -34,7 +34,7 @@ We hadden een concreet voorbeeld nodig dat iedereen kon volgen. Fitnessstudio's 
 
 Alles wat u leert met het bouwen van FitSite is direct toepasbaar op elke niche die u kiest: restaurants, makelaars, advocatenkantoren, kerken, aannemers of elke andere sector.
 
-## Cursusstructuur
+## Cursusstructuur {#course-structure}
 
 Elke les introduceert één concept, legt uit waarom het belangrijk is, en leidt u door de implementatie ervan in het FitSite-netwerk. Elke les bouwt voort op de vorige.
 
@@ -55,7 +55,7 @@ Elke les introduceert één concept, legt uit waarom het belangrijk is, en leidt
 | [13. Scaling Up](lesson-13-growth) | Groeien van de eerste klanten naar een echt bedrijf | FitSite groei- en automatiseringstrategie |
 | [14. What Comes Next](lesson-14-whats-next) | Uitbreiden naar aangrenzende niches en nieuwe kansen | Uw roadmap voorbij FitSite |
 
-## Vereisten
+## Vereisten {#prerequisites}
 
 - Een WordPress Multisite-installatie (of de bereidheid om er een op te zetten)
 - Een actieve Ultimate Multisite licentie
@@ -63,6 +63,6 @@ Elke les introduceert één concept, legt uit waarom het belangrijk is, en leidt
 
 Geen programmeerkennis vereist. Als u Ultimate Multisite nog nooit heeft gebruikt, is dat prima – Les 3 begint vanaf een frisse installatie.
 
-## Klaar?
+## Klaar? {#ready}
 
 Begin met [Les 1: Why Niche Wins](lesson-1-why-niche).

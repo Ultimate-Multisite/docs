@@ -3,7 +3,7 @@ title: Abonelik Nasıl İptal Edilir
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Aboneliğimi nasıl iptal edebilirim?
+# Aboneliğimi nasıl iptal edebilirim? {#how-can-i-cancel-my-subscription}
 
 Eğer bir Ultimate Multisite lisansınız varsa, yenileme işlemini istediğiniz zaman iptal edebilirsiniz. Aşağıdaki adımları takip etmeniz yeterli:
 

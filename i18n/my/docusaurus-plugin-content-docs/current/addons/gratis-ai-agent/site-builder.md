@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 တွင် မိတ်ဆက်ခဲ့သည်) သည် အဆင့်ဆင့် ဝဘ်ဆိုဒ်တည်ဆောက်ခြင်းကို စွမ်းဆောင်ပေးသည့် အင်ဂျင်တစ်ခုဖြစ်သည်။ အကယ်၍ သင်သည် agent ကို "စားသောက်ဆိုင် ဝဘ်ဆိုဒ်တစ်ခု တည်ဆောက်ပါ" သို့မဟုတ် "ဘလော့ဂ်ပါတဲ့ ပရိုဖိုင်တွဲတစ်ခု ဖန်တီးပါ" ဟု မေးမြန်းပါက၊ ဤ orchestrator သည် ထိုအဆင့်မြင့် ရည်ရွယ်ချက်ကို စနစ်တကျ **အစီအစဉ် (plan)** အဖြစ် ခွဲခြမ်းစိတ်ဖြာပေးသည်၊ ၎င်းကို အကောင်အထည်ဖော်ရန် လိုအပ်သည့် plugins များကို ရှာဖွေပေးသည်၊ အဆင့်တစ်ခုချင်းစီကို အစဉ်လိုက် လုပ်ဆောင်ပေးသည်၊ တိုးတက်မှုကို စောင့်ကြည့်ပေးသည်၊ နှင့် အမှားများမှ ကိုယ်ပိုင် ပြန်လည်ကောင်းမွန်စေသည်။
 
 ---
 
-## အလုပ်လုပ်ပုံ
+## အလုပ်လုပ်ပုံ {#how-it-works}
 
-### ၁။ အစီအစဉ် ဖန်တီးခြင်း (Plan Generation)
+### ၁။ အစီအစဉ် ဖန်တီးခြင်း (Plan Generation) {#1-plan-generation}
 
 agent သည် ဝဘ်ဆိုဒ်တည်ဆောက်ရန် ညွှန်ကြားချက်တစ်ခု ရရှိသည့်အခါ၊ ၎င်းသည် JSON **site plan** တစ်ခုထုတ်ပေးရန် `create_site_plan` စွမ်းရည်ကို ခေါ်ဆိုသည်။ ဤအစီအစဉ်တွင် အောက်ပါအချက်များ ပါဝင်သည်-
 
@@ -61,7 +61,7 @@ agent သည် ဝဘ်ဆိုဒ်တည်ဆောက်ရန် ညွ
 }
 ```
 
-### ၂။ Plugin ရှာဖွေခြင်း (Plugin Discovery)
+### ၂။ Plugin ရှာဖွေခြင်း (Plugin Discovery) {#2-plugin-discovery}
 
 အကောင်အထည်ဖော်မှု မစမီ၊ orchestrator သည် အစီအစဉ်၏ `plugin_requirements` ကို စစ်ဆေးပြီး မည်သည့် plugins များက အလုပ်လုပ်နေပြီလဲဆိုတာ စစ်ဆေးသည်။ ပျောက်ဆုံးနေသော plugins များအတွက်၊ ၎င်းသည်-
 
@@ -71,7 +71,7 @@ agent သည် ဝဘ်ဆိုဒ်တည်ဆောက်ရန် ညွ
 
 Plugin ရှာဖွေမှု အမှားများသည် အကြီးအကျယ် မပြဿနာဖြစ်စေသော အရာများဖြစ်သည်။ ၎င်းသည် ထိခိုက်မှုရှိသော အဆင့်များကို `skipped` အဖြစ် မှတ်သားပြီး အစီအစဉ်၏ ကျန်အပိုင်းများကို ဆက်လက်လုပ်ဆောင်သည်။
 
-### ၃။ အစီအစဉ် အကောင်အထည်ဖော်ခြင်း (Plan Execution)
+### ၃။ အစီအစဉ် အကောင်အထည်ဖော်ခြင်း (Plan Execution) {#3-plan-execution}
 
 orchestrator သည် plan ID ဖြင့် `execute_site_plan` ကို ခေါ်ဆိုသည်။ အကောင်အထည်ဖော်မှုသည် အဆင့်များအလိုက်၊ အဆင့်တစ်ခုချင်းစီအလိုက် ဆက်လက်လုပ်ဆောင်သည်။
 
@@ -79,7 +79,7 @@ orchestrator သည် plan ID ဖြင့် `execute_site_plan` ကို ခ
 - **Parallel steps** — အဆင့်များ တူညီသော အဆင့်အုပ်စုအတွင်းရှိပြီး အချင်းချင်း မှီခိုမှုမရှိသည့် အဆင့်များကို `parallel` flag ကို သတ်မှတ်ထားပါက တစ်ပြိုင်နက်တည်း ခွဲဝေပေးသည်။
 - **Step timeout** — အဆင့်တစ်ခုစီတွင် သီးခြား အချိန်ကန့်သတ်ချက် (default: `Ability Timeout` setting) ရှိသည်။ အချိန်ကုန်သွားသော အဆင့်ကို `failed` အဖြစ် မှတ်သားပြီး အစီအစဉ်သည် ဆက်လက်လုပ်ဆောင်သည်။
 
-### ၄။ တိုးတက်မှု ခြေရာခံခြင်း (Progress Tracking)
+### ၄။ တိုးတက်မှု ခြေရာခံခြင်း (Progress Tracking) {#4-progress-tracking}
 
 အကောင်အထည်ဖော်မှု အခြေအနေကို စစ်ဆေးရန် မည်သည့်အချိန်မဆို `get_plan_progress` ကို ခေါ်ဆိုပါ။
 
@@ -104,7 +104,7 @@ WP-CLI အသုံးပြုသူများသည် အောက်ပါ
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### ၅။ အမှား ပြန်လည်ဖြေရှင်းခြင်း (Error Recovery)
+### ၅။ အမှား ပြန်လည်ဖြေရှင်းခြင်း (Error Recovery) {#5-error-recovery}
 
 အဆင့်တစ်ခု ပျက်ကွက်ပါက၊ orchestrator သည် အစီအစဉ်တွင် သတ်မှတ်ထားသည့် **fallback** အဆင့်ကို စစ်ဆေးသည်။
 
@@ -115,9 +115,9 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 သဘာဝဘာသာစကား ရည်ရွယ်ချက်ဖော်ပြချက်မှ စနစ်တကျ ဝဘ်ဆိုဒ်အစီအစဉ်ကို ဖန်တီးပေးသည်။
 
@@ -134,7 +134,7 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 ယခင်က ဖန်တီးထားသော ဝဘ်ဆိုဒ်အစီအစဉ်ကို အကောင်အထည်ဖော်ခြင်းကို စတင်သည်။
 
@@ -150,7 +150,7 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 ဝဘ်ဆိုဒ်အစီအစဉ်၏ လက်ရှိ အကောင်အထည်ဖော်မှု အခြေအနေကို ပြန်ပေးသည်။
 
@@ -164,7 +164,7 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 ပျက်ကွက်သော အဆင့်တစ်ခုကို လက်ဖြင့် ဖြေရှင်းပြီး နောက်အဆင့်မှ အစီအစဉ် အကောင်အထည်ဖော်မှုကို ပြန်လည်စတင်သည်။ အလိုအလျောက် ပြန်လည်ကောင်းမွန်စေခြင်း မဖြစ်နိုင်ဘဲ သင်ကိုယ်တိုင် ကြားဝင်ဆောင်ရွက်လိုသည့်အခါ ဤအရာကို အသုံးပြုပါ။
 
@@ -180,7 +180,7 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-## v1 နှင့် v2 နှိုင်းယှဉ်ချက်
+## v1 နှင့် v2 နှိုင်းယှဉ်ချက် {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 ရည်ရွယ်ချက်ဖော်ပြချက်မှ ဝဘ်ဆိုဒ်အစီအစဉ်ကို ဖန်တီးပေးသည်။
 
@@ -205,7 +205,7 @@ agent သည် အမှားအားလုံးကို နောက်ဆ
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 ယခင်က ဖန်တီးထားသော အစီအစဉ်ကို အကောင်အထည်ဖော်သည်။
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 အကောင်အထည်ဖော်နေသော သို့မဟုတ် ပြီးစီးသွားသော အစီအစဉ်၏ လက်ရှိ တိုးတက်မှုကို ပြသသည်။
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 ဝဘ်ဆိုဒ်အစီအစဉ်အားလုံးကို (စောင့်ဆိုင်းနေသော၊ အကောင်အထည်ဖော်နေသော၊ နှင့် ပြီးစီးသော) စာရင်းပြုစုသည်။
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 ပျက်ကွက်သွားသော အစီအစဉ်ကို `pending` အဖြစ် ပြန်လည်သတ်မှတ်ပေးပြီး အစမှ ပြန်လည်အကောင်အထည်ဖော်နိုင်စေသည်။
 

@@ -3,7 +3,7 @@ title: Ho na le Site
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Ho Lona Sites
+# Ho Lona Sites {#managing-sites}
 
 Sites (le site tsa lapa le lapa tse fapaneng) ke tsela e ntlha ya goba ka WaaS yako. Ultimate Multisite e na le ditiro tse 3 tsa sites:
 
@@ -14,7 +14,7 @@ Ho fana ka **Ultimate Multisite → Sites** ho bona litsohle tsa subsites tsa ha
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Ho Hloboha Site Mole (Adding a New Site)
+## Ho Hloboha Site Mole (Adding a New Site) {#viewing-sites}
 
 Hloka le **Add Site** button ho fana ka site e kholo se se tsohle. O tla hloka ho fana ka:
 
@@ -24,15 +24,15 @@ Hloka le **Add Site** button ho fana ka site e kholo se se tsohle. O tla hloka h
 
 Opsionaleng **Copy Site** o le ka u fana ka ho fetola sekhate se se tloha se se lehlepe ka sekhate se se nang le template e neng. Le fa se se lehlepe, o ka utloa sekhate se se leng le se tla ba le media files. A re le thata hore **Copy Media on Duplication** e le fetileng ho fana ka media files.
 
-## Hoetla Site e Hlalosang
+## Hoetla Site e Hlalosang {#adding-a-new-site}
 
 Hloka **Manage** ka nako le site kungo ho hloka peje sehlopha sa **Edit Site**. Le tla bona tse dintsi:
 
-### Litlhahlo tsa Boemo (Basic Information)
+### Litlhahlo tsa Boemo (Basic Information) {#managing-an-existing-site}
 
 Le lela la sefapiso sa site, le tsoalo la sefapiso, ID ya site, le seo. Ho tla u bona domain e fetang, membership e fetang, le account ya mofuta o ntsang se site.
 
-### Site Options
+### Site Options {#basic-information}
 
 Ho fana ka boikotso ba site le boikotso ba ho itšoa:
 
@@ -45,7 +45,7 @@ Ho fana ka boikotso ba site le boikotso ba ho itšoa:
 
 Ka tsela e ntlha, sites li fana ka litlhaloso tse di setsoe ka level la membership. Ho setse litlhaloso ka level la site ho tla fetola litlhaloso tsa membership.
 
-### Hohoho (Associations)
+### Hohoho (Associations) {#site-options}
 
 Ka morao a tsela tsa site, u tla bona litlhahlo tse di fetang le:
 
@@ -53,7 +53,7 @@ Ka morao a tsela tsa site, u tla bona litlhahlo tse di fetang le:
 - **Membership** e e ntse e le teng le site
 - **Customer account** e e fetang le site
 
-### Sidebar ya Diku (Right Sidebar)
+### Sidebar ya Diku (Right Sidebar) {#associations}
 
 Ka tsela ya diku, u ka etsa:
 

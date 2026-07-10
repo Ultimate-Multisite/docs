@@ -3,11 +3,11 @@ title: การจัดการ Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Handling
+# Webhook Handling {#webhook-handling}
 
 สร้าง endpoint webhooks แบบกำหนดเองเพื่อรับเหตุการณ์ (events) จากบริการภายนอก และซิงค์ข้อมูลกับ Ultimate Multisite
 
-## Custom Webhook Endpoint
+## Custom Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - ควรตรวจสอบลายเซ็น (signature) ของ webhook เสมอ โดยใช้ HMAC หรือ Shared Secret
 - ใช้ `permission_callback` สำหรับ REST route ของคุณเสมอ — ห้ามตั้งค่าเป็น `__return_true` ในสภาพแวดล้อมจริง (production)

@@ -1,9 +1,9 @@
 ---
 title: 註冊 API 端點
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API 端點
+# Ultimate Multisite Register API 端點 {#the-ultimate-multisite-register-api-endpoint}
 
 在這篇教學中，你將學習如何使用 Ultimate Multisite 的 /register API 端點，為你網路中的新客戶建立完整的註冊流程，以及如何透過 Zapier 來實現這個功能。
 
@@ -19,16 +19,21 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 進行這個流程前，你需要取得 API 憑證。請前往網路管理後台，點選 **Ultimate Multisite > Settings** > **API & Webhooks**，找到 API Settings 區段。
 
-![Ultimate Multisite 中的 API Settings 區段](/img/config/settings-api.png)  
+![Ultimate Multisite 中的 API Settings 區段](/img/config/settings-api.png)
+
+以下是 API 設定頁面的完整畫面：
+
+![API 設定完整頁面](/img/config/settings-api-full.png)
+
 勾選 **Enable API** 並取得你的 API 憑證。
 
 現在，讓我們來了解這個端點，然後在 Zapier 中建立一個註冊動作。
 
-## 端點 body 參數
+## 端點 body 參數 {#endpoint-body-parameters}
 
 讓我們先概覽需要傳送給端點的最少資訊。本文結尾會提供完整的呼叫範例。
 
-### 客戶
+### 客戶 {#customer}
 
 以下是建立使用者和 Ultimate Multisite 客戶所需的資訊：
 
@@ -38,25 +43,25 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **會員資格**
+### **會員資格** {#membership}
 
 這個物件中唯一需要的資訊是會員資格狀態。
 
 "membership" { "status" : "string", // 可選值："pending"、"active"、"trialing"、"expired"、"on-hold"、"canceled" },
 
-### **產品**
+### **產品** {#products}
 
 產品以陣列形式提供，包含你網路中 1 個或多個產品 ID。請注意，這個端點不會建立產品。請參閱 Ultimate Multisite 的文件以深入了解產品建立端點。
 
 **"products" : [1,2],**
 
-### 付款
+### 付款 {#payment}
 
 與會員資格相同，我們只需要狀態。
 
 **"payment" { "status" : "string", // 可選值："pending"、"completed"、"refunded"、"partially-refunded"、"partially-paid"、"failed"、"canceled" },**
 
-### 網站
+### 網站 {#site}
 
 最後，在 body 結尾我們需要網站的 URL 和標題，這兩項都放在 Site 物件中。
 
@@ -64,13 +69,13 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 register 端點會回傳一個陣列，包含新建立的會員資格資訊。
 
-## 在 Zapier 中建立動作
+## 在 Zapier 中建立動作 {#creating-an-action-in-zapier}
 
 隨著這個更強大的帳戶建立端點推出，你也可以在 Zapier 中使用新的動作。
 
 你知道如何使用並充分享受新版 Zapier 提供的所有功能嗎？在這裡了解更多。(link?)
 
-### 建立動作
+### 建立動作 {#creating-an-action}
 
 為了更好地說明如何搭配 Zapier 使用註冊端點，讓我們建立一個與 Google Forms 的整合。每當表單被填寫且資訊儲存到表單的回應試算表時，Ultimate Multisite 網路就會建立一個新的會員資格。
 
@@ -100,7 +105,7 @@ register 端點會回傳一個陣列，包含新建立的會員資格資訊。
 
 測試你的新 Zap，它應該會順利完成。如果發生任何錯誤，請檢查所有欄位是否正確傳送。由於資訊量較大，有些細節可能會被忽略。
 
-### 完整端點參數
+### 完整端點參數 {#complete-endpoint-parameters}
 
 以下是完整的呼叫範例，以及所有可傳送的欄位。
 

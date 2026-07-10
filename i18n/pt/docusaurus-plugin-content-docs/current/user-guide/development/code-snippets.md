@@ -3,7 +3,7 @@ title: Trechos de código
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Trechos de Código para v2
+# Trechos de Código para v2 {#code-snippets-for-v2}
 
 Basicamente, os trechos de código para **WordPress** são usados para realizar certas ações que, de outra forma, poderiam exigir um plugin menor dedicado. Tais trechos de código são colocados em um dos arquivos principais do WordPress ou do tema (geralmente o arquivo functions.php do seu tema) ou podem ser usados como um MU plugin.
 
@@ -15,7 +15,7 @@ Neste artigo, mostraremos três trechos de código que podem ser usados com o **
 
   * [**Corrigindo problemas de CORS com Font-Icons em domínios mapeados**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Alterando a posição do item do menu Conta
+## Alterando a posição do item do menu Conta {#changing-the-position-of-the-account-menu-item}
 
 Para mudar a posição do item do menu Conta no Dashboard do seu cliente, basta adicionar o seguinte trecho de código ao functions.php do tema ativo do seu site principal. Você também pode colocar o trecho dentro de um dos seus mu-plugins ou plugins personalizados.
 
@@ -42,8 +42,8 @@ Note que os usuários só podem assinar um **Plano**, e não um Pacote ou Servi�
 
 ![Lista de produtos mostrando IDs de planos](/img/admin/products-list.png)
 
-## Corrigindo problemas de CORS com Font-Icons em domínios mapeados
-## Corrigindo problemas de CORS com Font-Icons em domínios mapeados
+## Corrigindo problemas de CORS com Font-Icons em domínios mapeados {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Corrigindo problemas de CORS com Font-Icons em domínios mapeados {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Depois de mapear um domínio para um subsítio, você pode descobrir que o site está com problemas para carregar fontes personalizadas. Isso é causado por um bloqueio de origem cruzada nas configurações do seu servidor.
 
@@ -51,13 +51,13 @@ Como os arquivos de fonte são quase sempre carregados diretamente do CSS, nosso
 
 Abaixo estão os trechos de código para corrigir o problema no Apache e no NGINX. Essas alterações exigem conhecimento avançado dos arquivos de configuração do servidor (.htaccess e arquivos de configuração do NGINX). Se você não se sentir confortável fazendo essas mudanças sozinho, envie esta página aos agentes de suporte da sua hospedagem quando precisar de ajuda.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 No seu arquivo .htaccess, adicione:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 No seu arquivo de configuração do servidor (o local varia de servidor para servidor), adicione:
 

@@ -1,46 +1,46 @@
 ---
-title: Nggatengin Pembayaran Manual
+title: Ngatur Pembayaran Manual
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Ngatur Pembayaran Manual (v2)
+# Ngatur Pembayaran Manual (v2) {#setting-up-manual-payments-v2}
 
-_**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
+_**CATETHAN WIGATI: Artikel iki ngrujuk marang Ultimate Multisite versi 2.x.**_
 
-Pembayaran manual itu cara buat sampeyan nawakake metode pembayaran liyane yen **Stripe** utawa **PayPal** ora ana kanggo pengguna sampeyan. Iki bisa berupa transfer kawat (wire) utawa bank utawa metode pembayaran liyane sing ana kanggo pengguna lokal sampeyan.
+Pembayaran manual iku cara supaya sampeyan bisa nawakake cara pembayaran liyane yen **Stripe** utawa **PayPal** ora kasedhiya kanggo pangguna sampeyan. Iki bisa awujud transfer kawat utawa transfer bank utawa cara pembayaran liyane sing kasedhiya sacara lokal kanggo pangguna sampeyan.
 
-## Cara ngaktifake Pembayaran Manual
+## Carane ngaktifake Pembayaran Manual {#how-to-enable-manual-payments}
 
-Ngatur pembayaran manual kuwi gampang banget. Sampeyan mung perlu ngaktifake nganggo payment gateways lan nulis instruksi rinci babagan kepiye carane pengguna kudu ngirim pembayaran.
+Ngatur pembayaran manual iku gampang banget. Sampeyan mung perlu ngaktifake ing sangisore gateway pembayaran lan nglebokake pandhuan rinci babagan carane pangguna kudu ngirim pembayaran.
 
-Pertama, tindakna menyang **Ultimate Multisite > Settings > Payments**. Ing bawah **Payment Gateways**, onjak tombol **Manual** dadi nyala (toggle). Sampeyan bakal weruh kotak **Payment Instructions** bakal muncul kanggo sampeyan.
+Pisanan, bukak **Ultimate Multisite > Setelan > Pembayaran**. Ing ngisor **Gateway Pembayaran** , aktifake **Manual**. Sampeyan bakal weruh manawa kothak **Pandhuan Pembayaran** bakal katon kanggo sampeyan.
 
-Tambahkan informasi sing dibutuhake pelanggan sampeyan kanggo nindakake pembayaran ing kotak iki. Iki bisa alamat rekening bank sampeyan lan email sampeyan supaya pelanggan bisa ngirim konfirmasi pembayaran marang sampeyan, contone.
+Tambahake menyang kothak iki informasi sing dibutuhake pelanggan kanggo nggawe pembayaran. Contone, bisa rincian akun bank lan email sampeyan supaya pelanggan bisa ngirim konfirmasi pembayaran marang sampeyan.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Tombol gateway pembayaran manual karo area teks Pandhuan Pembayaran](/img/config/manual-gateway-expanded.png)
 
-Iki tampilan pengaturan manual gateway:
+Iki antarmuka setelan gateway manual:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Setelan gateway manual](/img/config/manual-gateway-settings.png)
 
-Sawise diatur, cukup klik **Save Settings** lan wis rampung. Nalika pengguna daftar ing jaringan sampeyan, dheweke bakal weruh pesan sing ngandharake yen dheweke bakal nampa instruksi saka sampeyan kanggo ngrampungake tuku.
+Sawise wis diatur, mung klik **Simpen Setelan** lan wis rampung. Nalika pangguna ndhaptar menyang jaringan sampeyan, dheweke bakal weruh pesen sing ngandhani yen dheweke bakal nampa pandhuan saka sampeyan kanggo ngrampungake tuku.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Pesen konfirmasi pendaftaran sing ngandhani pangguna yen dheweke bakal nampa pandhuan pembayaran](/img/frontend/registration-manual-notice.png)
 
-Lan dheweke uga bakal nampa pesan ing halaman **Thank You** sampeyan kanthi instruksi pembayaran sampeyan.
+Lan dheweke uga bakal nampa pesen ing kaca **Matur Nuwun** sampeyan karo pandhuan pembayaran sampeyan.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konfirmasi pembayaran manual
+## Ngonfirmasi pembayaran manual {#confirming-manual-payments}
 
-Kanggo ngkonfirmasi pembayaran manual, tindakna menu **Payments** ing sisi kiwa. Ing kono sampeyan bisa ndelok kabeh pembayaran ing jaringan sampeyan lan detailé, kalebu **statusé**. Pembayaran manual mesthi bakal duwe status **Pending** nganti sampeyan ngowahi kanthi manual.
+Kanggo ngonfirmasi pembayaran manual, bukak menu **Pembayaran** ing bilah kiwa. Ing kana sampeyan bisa ndeleng kabeh pembayaran ing jaringan sampeyan lan rinciane, kalebu **status**-e. Pembayaran manual mesthi bakal duwe status **Ngenteni** nganti sampeyan ngganti kanthi manual.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Dhaptar pembayaran sing nuduhake pembayaran manual sing ngenteni](/img/admin/payments-list.png)
 
-Isi halaman pembayaran kanthi klik **reference code**. Ing halaman iki sampeyan bakal nemokake kabeh detail pembayaran sing lagi Pending, kaya ID referensi, produk, timestamp, lan liyane.
+Mlebu menyang kaca pembayaran kanthi ngeklik **kode referensi**. Ing kaca iki sampeyan duwe kabeh rincian pembayaran sing isih ngenteni, kayata ID referensi, produk, cap wektu lan liya-liyane.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Kaca rincian pembayaran sing nuduhake kode referensi, produk, lan total](/img/admin/payment-edit.png)
 
-Ing kolom tengen, sampeyan bisa ngowahi status pembayaran kuwi. Ngowah dadi **Completed** lan ngaktifake opsi **Activate Membership** bakal ngaktifake situs pelanggan lan keanggotaane bakal aktif.
+Ing kolom tengen, sampeyan bisa ngowahi status pembayaran. Ngganti dadi **Rampung** lan **ngaktifake opsi Aktifake Keanggotaan** bakal ngaktifake situs pelanggan sampeyan lan keanggotaan dheweke bakal aktif.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Kaca sunting pembayaran karo Status disetel dadi Rampung lan tombol Aktifake Keanggotaan](/img/admin/payment-activate-membership.png)

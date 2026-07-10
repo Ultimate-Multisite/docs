@@ -3,11 +3,11 @@ title: Per què Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Per què Ultimate Multisite
+# Per què Ultimate Multisite {#why-ultimate-multisite}
 
 Si has arribat a aquest article, probablement has escoltat que el nostre plugin pot ser la solució per fer realitat la idea del teu negoci. Esperem que trobis les respostes que necessites al final d'aquest article.
 
-## Què és Ultimate Multisite?
+## Què és Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite és un plugin de WordPress Multisite que et permet oferir als clients un WaaS (Website as a Service). Amb el nostre plugin, pots tenir diversos nivells d'abscripció i que els clients et paguin una quota recurrència per tenir un lloc web allotjat a la teva xarxa Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite et permet rebre els teus pagaments amb diferents *gateways* (
 
 I això és només l'inici, ja que pots estendre les seves funcions amb add-ons i webhooks.
 
-## Altres funcions
+## Altres funcions {#other-features}
 
 Ultimate Multisite també ofereix:
 
@@ -33,11 +33,11 @@ I coses encara més avançades:
 
 *   **API de Cerca i Subsubstitució (Search and Replace API):** També pots annotar els *templates* de lloc web amb *placeholders* com {{site_name}} i utilitzar l'API de Cerca i Subsubstitució per omplir automàticament aquests *placeholders* amb la informació proporcionada pel teu client just després de l'inscripció, automàticament.
 
-## Casos d'ús
+## Casos d'ús {#use-cases}
 
 Ara és hora de veure alguns dels possibles casos d'ús per a Ultimate Multisite.
 
-### Cas 1: Una Agència
+### Cas 1: Una Agència {#case-1-an-agency}
 
 Normalment, les habilitats principals d'una agència es centren en el disseny de llocs web, amb aspectes com l'allotjament o el *marketing* que es llisten com a serveis addicionals.
 
@@ -47,7 +47,7 @@ Es manté un control estricte sobre els plugins i els *themes* a nivell de produ
 
 Les agències trobaràna tranquil·litat amb Ultimate Multisite, ja que els permet fer el que millor saben: dissenyar llocs web excepcionals.
 
-### Cas 2: Proveïdor de Nicho
+### Cas 2: Proveïdor de Nicho {#case-2-niche-provider}
 
 Hi ha un dit que diu: "Fes una cosa i fèix-ho bé". Per a molts especialistes, això significa crear un producte o servei al voltant d'una única idea central.
 
@@ -57,7 +57,7 @@ Una de les funcions innovadores d'Ultimate Multisite, un *template site*, és un
 
 Per a un proveïdor de llocs i serveis de nich, això proporciona un avantatge incomparable en la capacitat de crear instantàniament un lloc preparat per utilitzar amb plugins i disseny personalitzats. El client només ha de proporcionar una mínima informació per completar el servei.
 
-### Cas 3: Allotjament Web WordPress
+### Cas 3: Allotjament Web WordPress {#case-3-wordpress-web-hosting}
 
 Hi hi ha una miríada de maneres d'allotjar llocs web de WordPress, però rarament és tan senzill com proporcionar espai web a un client amb una versió de WordPress preinstal·lada. Això és perquè un nombre de decisions i consideracions han de convergir per proporcionar un servei significatiu.
 

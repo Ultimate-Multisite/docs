@@ -3,11 +3,11 @@ title: Expiriunea Membraterii și Blocarea Site-ului
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expirarea Abonamentelor și Blocarea Site-ului
+# Expirarea Abonamentelor și Blocarea Site-ului {#membership-expiration-and-site-blocking}
 
 Acest ghid explică modul în care Ultimate Multisite gestionează expirarea abonamentelor, terminarea perioadelor de probă și blocarea site-ului la nivel de *frontend*. Acoperă ciclul de viață al unui abonament, de la activ la expirat, setările care controlează dacă site-urile sunt blocate și ce trebuie verificat atunci când site-urile rămân accesibile după expirarea unui abonament.
 
-## Ciclul de Viață al Statusului Abonamentului
+## Ciclul de Viață al Statusului Abonamentului {#membership-status-lifecycle}
 
 Fiecare abonament în Ultimate Multisite are unul dintre următoarele statusuri:
 
@@ -24,7 +24,7 @@ Abonamentele gratuite nu expiră automat. Ultimate Multisite le tratează ca acc
 | **Expired** | A depășit data de expirare și perioada de grație fără reînnoire |
 | **Cancelled** | Anulat explicit de client sau de administrator |
 
-### Cum Trează Abonamentele în Statusul Expirat
+### Cum Trează Abonamentele în Statusul Expirat {#how-memberships-transition-to-expired}
 
 Ultimate Multisite rulează o verificare în fundal **în fiecare oră** care caută abonamentele care ar trebui marcate ca expirate. Această verificare folosește [Action Scheduler](https://actionscheduler.org/) (nu WP-Cron direct) și rulează ca acțiunea programată `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Verificarea de expirare are o **perioadă de grație încorporată de 3 zile** c
 Perioada de grație de 3 zile pentru expirare este separată de setarea Perioada de Grație pentru Blocarea Frontend-ului, descrisă mai jos. Perioada de grație pentru expirare controlează când **statusul se schimbă** de la activ/în așteptare la expirat. Perioada de grație pentru blocarea frontend-ului controlează când **site-ul este blocat** după ce statusul a schimbat deja.
 :::
 
-#### Abonamentele cu Reînnoire Automată vs. Cele fără Reînnoire Automată
+#### Abonamentele cu Reînnoire Automată vs. Cele fără Reînnoire Automată {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Această distincție este crucială pentru înțelegerea comportamentului de expirare:
 
@@ -42,7 +42,7 @@ Această distincție este crucială pentru înțelegerea comportamentului de exp
 
 - **Abonamentele cu reînnoire automată** (`auto_renew = true`): Verificarea cron de expirare **sărită complet peste acestea**. Se așteaptă ca gateway-ul de plată (Stripe, PayPal etc.) să notifice Ultimate Multisite prin *webhooks* atunci când o abonament eșuează sau este anulat. Dacă webhook-ul nu este primit — din cauza unui *endpoint* configurat greșit, a unei întreruperi a gateway-ului sau a unui abonament anulat în afara sistemului — abonamentul poate rămâne `active` la infinit, chiar și după ce trece data de expirare.
 
-### Cum Termină Probele
+### Cum Termină Probele {#how-trials-end}
 
 Când perioada de probă a unui abonament *trialing* se termină, sistemul:
 
@@ -52,11 +52,11 @@ Când perioada de probă a unui abonament *trialing* se termină, sistemul:
 
 Acest proces rulează pe același program orar ca și verificarea regulată de expirare, dar **doar pentru abonamentele fără reînnoire automată**. Pentru probele cu reînnoire automată, gateway-ul de plată gestionează trecerea de la probă la abonament plătit.
 
-## Blocarea Accesului Frontend
+## Blocarea Accesului Frontend {#block-frontend-access}
 
 În mod implicit, atunci când un abonament expiră sau trece în statusul *on hold*, **este restricționat doar dashboard-ul wp-admin**. Frontend-ul public al site-ului rămâne accesibil vizitatorilor. Pentru a bloca și accesul public, trebuie să activați setarea **Block Frontend Access**.
 
-### Configurarea Setării
+### Configurarea Setării {#configuring-the-setting}
 
 Navigați la **Ultimate Multisite > Settings > Memberships** și activați **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Treita setări legate controlează acest comportament:
 | **Frontend Block Grace Period** | Numărul de zile de așteptare după ce abonamentul devine inactiv înainte de blocare. Setați la `0` pentru blocare imediată. | 0 |
 | **Frontend Block Page** | O pagină de pe site-ul principal către care sunt redirecționați vizitatorii atunci când un site este blocat. Dacă nu este setată, vizitatorii văd un mesaj generic de tip "Site-ul nu este disponibil". | Niciunul |
 
-### Ce Ved Vizitatorii Când un Site Este Blocat
+### Ce Ved Vizitatorii Când un Site Este Blocat {#what-visitors-see-when-a-site-is-blocked}
 
 Când accesul frontend este blocat, vizitatorii site-ului vor:
 
@@ -83,7 +83,7 @@ Când accesul frontend este blocat, vizitatorii site-ului vor:
 
 Administratorii site-urilor pot accesa totuși pagina de *login* — pagina de *login* nu este niciodată blocată.
 
-### Ce Se Blochează și Când
+### Ce Se Blochează și Când {#what-gets-blocked-and-when}
 
 Comportamentul de blocare depinde de statusul abonamentului:
 
@@ -104,21 +104,21 @@ Chiar dacă perioada de probă a expirat, un abonament cu statusul `trialing` **
 Abonamentele *cancelled* sunt întotdeauna blocate odată ce a trecut data de expirare, indiferent dacă Block Frontend Access este activat. Perioada de grație pentru blocarea frontend-ului **nu** se aplică abonamentelor *cancelled*.
 :::
 
-## Depanare: Site-uri care Rămân Accesibile După Expirare
+## Depanare: Site-uri care Rămân Accesibile După Expirare {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Dacă site-urile rămân accesibile public după expirarea unui abonament, urmați aceste verificări în ordine:
 
-### 1. Verificați dacă Setarea Block Frontend Access Este Activată
+### 1. Verificați dacă Setarea Block Frontend Access Este Activată {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Mergeți la **Ultimate Multisite > Settings > Memberships** și confirmați că comutatorul **Block Frontend Access** este activat. Această setare este **oprișă implicit**, ceea ce înseamnă că doar wp-admin este restricționat atunci când un abonament devine inactiv.
 
-### 2. Verificați Perioada de Grație pentru Blocarea Frontend-ului
+### 2. Verificați Perioada de Grație pentru Blocarea Frontend-ului {#2-check-the-frontend-block-grace-period}
 
 Pe aceeași pagină de setări, verificați valoarea **Frontend Block Grace Period**. Dacă aceasta este setată la 7 zile, de exemplu, frontend-ul nu va fi blocat până după 7 zile de la data de expirare a abonamentului — chiar dacă statusul abonamentului este deja `expired`.
 
 Setați acest lucru la `0` dacă doriți blocare imediată după ce abonamentul devine inactiv.
 
-### 3. Confirmați că Statusul Abonamentului S-a Schimbat Efectiv
+### 3. Confirmați că Statusul Abonamentului S-a Schimbat Efectiv {#3-confirm-the-membership-status-has-actually-changed}
 
 Mergeți la **Ultimate Multisite > Memberships** și verificați statusul abonamentului afectat. Dacă arată încă `active` deși a trecut data de expirare, tranziția de status nu a avut loc. Cauze comune:
 
@@ -126,7 +126,7 @@ Mergeți la **Ultimate Multisite > Memberships** și verificați statusul abonam
 
 - **Job-ul cron nu a rulat**: Vedeți următorul pas.
 
-### 4. Verificați dacă Action Scheduler Rulează
+### 4. Verificați dacă Action Scheduler Rulează {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite folosește Action Scheduler pentru job-urile sale cron. Mergeți la **Tools > Scheduled Actions** în admin-ul de rețea și căutați:
 
@@ -148,7 +148,7 @@ Pentru a asigura o execuție cron fiabilă, setați un job cron la nivel de sist
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Verificați Problemele Webhook-urilor Gateway-ului (Abonamente cu Reînnoire Automată)
+### 5. Verificați Problemele Webhook-urilor Gateway-ului (Abonamente cu Reînnoire Automată) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Dacă abonamentul este cu reînnoire automată și abonamentul gateway-ului a fost anulat sau a eșuat, dar Ultimate Multisite îl arată încă ca `active`:
 
@@ -157,7 +157,7 @@ Dacă abonamentul este cu reînnoire automată și abonamentul gateway-ului a fo
 
 Dacă gateway-ul arată abonamentul ca fiind anulat, dar Ultimate Multisite nu, notificarea webhook a fost probabil pierdută. Puteți schimba manual statusul abonamentului în **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Verificați Perioada de Grație a Expirării (Nivel Cron)
+### 6. Verificați Perioada de Grație a Expirării (Nivel Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Verificarea cron are propria sa perioadă de grație (implicit: 3 zile) înainte de a marca un abonament ca expirat. Aceasta este separată de perioada de grație pentru blocarea frontend-ului. Timpul total înainte ca un site să fie blocat poate fi:
 
@@ -165,7 +165,7 @@ Verificarea cron are propria sa perioadă de grație (implicit: 3 zile) înainte
 
 De exemplu, cu setările implicite și o perioadă de grație frontend de 7 zile, poate dura până la 10 zile după `date_expiration` înainte ca site-ul să fie blocat efectiv.
 
-### 7. Expirarea Manuală a unui Abonament
+### 7. Expirarea Manuală a unui Abonament {#7-manually-expire-a-membership}
 
 Dacă trebuie să blocați imediat un site fără a aștepta ciclul cron, puteți schimba manual statusul abonamentului:
 
@@ -176,7 +176,7 @@ Dacă trebuie să blocați imediat un site fără a aștepta ciclul cron, puteț
 
 Blocarea frontend-ului va intra în vigoare la următoarea încărcare a paginii (sub rezerva Perioadei de Grație pentru Blocarea Frontend-ului pentru abonamentele expirate, sau imediat pentru cele *cancelled*).
 
-## Rezumat
+## Rezumat {#summary}
 
 Linia de timp completă de la data de expirare până la blocarea site-ului:
 
@@ -208,7 +208,7 @@ Pentru abonamentele *cancelled*, calea este mai scurtă:
   Frontend-ul site-ului este blocat imediat
 ```
 
-## Referință pentru Dezvoltatori
+## Referință pentru Dezvoltatori {#developer-reference}
 
 Următoarele *hook*-uri și filtre vă permit să personalizați comportamentul de expirare și blocare:
 

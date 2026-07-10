@@ -1,124 +1,126 @@
 ---
-title: Ödenmek
+title: Töleg almak
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödeme Alma (v2)
+# Töleg almak (v2) {#getting-paid-v2}
 
-_**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiya 2.x-iňizi görkezýär.**_
+_**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
-Ultimate Multisite-da özü bilen üpjünlenmiş üje (membership) we hasaplaşma ulgam bar. Bizim hasaplaşma ulgamymyz işlemek üçin, e-ticaretde iň köp ulanylýan ödeme portalaryny goşdurmaga mümkinçilik berdik. Ultimate Multisite-da standart ödeme portalary _Stripe_, _PayPal_ we Manual Payment (Manual Ödeme) hasaplanýar. Siz şolara başga dogry addonlary (add-ons) kurmagy bilen hem _WooCommerce_, _GoCardless_ we _Payfast_-dan ödeme almak üçin ulanyp bilersiňiz.
+Ultimate Multisite içinde agzalyk we hasaplaşyk ulgamy bar. Hasaplaşyk ulgamymyzyň işlemegi üçin, e-commerce-de ulanylýan iň giň ýaýran töleg gateway-lerini birleşdirdik. Ultimate Multisite-de adaty töleg gateway-leri _Stripe_ , _PayPal_ , we El bilen tölegdir. Şeýle hem degişli add-onlaryny gurnap, tölegleri almak üçin _WooCommerce_ , _GoCardless_ we _Payfast_ ulanyp bilersiňiz.
 
-## Esasy Täsirişler (Basic Settings)
+## Esasy sazlamalar {#basic-settings}
 
-Bu ödeme portalaryny Ultimate Multisite hasaplaşma täsirişlerinde özüňiz görkezip bilersiňiz. Bu ýere gitmek üçin **Ultimate Multisite menýüsü > Settings (Täsirişler) > Payments (Ödemeler)** bilen barlanyp bilersiňiz.
+Bu töleg gateway-leriniň islendik birini Ultimate Multisite töleg sazlamalarynyň aşagynda sazlap bilersiňiz. Ony **Ultimate Multisite menu > Settings > Payments** boýunça girip tapyp bilersiňiz.
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Ultimate Multisite-de Payments panelini görkezýän töleg sazlamalary sahypasy](/img/config/payments-settings-page.png)
 
-Ödeme portalyny sozlamagyňdan öň, size sozlamaga mümkin bolan esasy ödeme täsirişlerini görkezmek üçin aşakdaky zatlary barlap geçiň:
+Töleg gateway-iňizi sazlamazdan öň, sazlap biljek esasy töleg sazlamalaryňyza serediň:
 
-**Force auto-rene (Otomatik beriji täzelenme güýjüni zorlamak):** Bu, hasaplaşma oralaryny we ulanyjynyň saýladan hasaplaşma ýörelgesine görä her bir hasaplaşma döwründäki ödemeni awtomatiki ýa-da täzelenip biljekdigini üpjün edýär.
+**Force auto-rene** **w:** Bu ulanyjynyň saýlan hasaplaşyk ýygylygyna baglylykda her hasaplaşyk döwrüniň ahyrynda tölegiň awtomatiki gaýtalanmagyny üpjün eder.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0, hasaplaşma döwrüni awtomatiki täzelenme bilen saklamak üçin aktif portalda täzelenip biljek beriji (renewal credential) barçaly bolup baýlanýanmy ýa-da dälini barlap geçýär. Täzelenip biljek beriji bolsa, portal subskripsiyasy, hasaplaşma kesloty, saklanan vault tokeni ýa-da deň derejeli täzelenip biljek ödeme usulydyr. Portal bu portalda ulanylan täzelenip biljek berijini tapyp bilmese diýse, Ultimate Multisite hasaby saklaýar, ýöne awtomatiki täzelenme güjüni üzeýär we eksik beriji döwrenini saklaýar. Bu bolsa administrator ýa-da goldaw ulgamynyň täzelenme tarapyndan täzelenme maglumatlaryny hasaplaşma sanawdan öň müşderini täzelenmek üçin soraýan ýagdaýy wezipesini görkezmegi mümkin.
+Ultimate Multisite v2.13.0 awtomatiki täzelenme açyk bolan gaýtalanýan agzalygy ýatda saklamazdan öň işjeň gateway-de gaýtadan ulanyp bolýan täzelenme ygtyýarlygynyň bardygyny barlaýar. Täzelenme ygtyýarlygy gateway subscription, billing agreement, saklanan vault token ýa-da şoňa deň gaýtadan ulanyp bolýan töleg usuly bolup biler. Eger gateway ulanyp boljak ygtyýarlygyň ýokdugyny habar berse, Ultimate Multisite agzalygy ýatda saklaýar, ýöne awtomatiki täzelenmäni öçürýär we administratoryň ýa-da goldaw akymynyň täzelenme senesinden öň müşderiden tölegi täzeden ygtyýarlylandyrmagy sorap bilmegi üçin ýetmeýän ygtyýarlyk ýagdaýyny ýazga alýar.
 
-**Ön ötemsiz denemeleri izin verin** **metodu:** Bu seçeneği etkinleştirdiğinizde, müştäri sizden qeydiyyat prosesi awşynda hiç mali maglumat bermek zorunda kalmaz. Bu diňe deneme süresini geçip geçse bir gezek talap edilmektir.
+Bu, gateway diňe bir gezeklik tölegleri ýygnap bilýän wagty agzalygyň awtomatiki täzelenýän ýaly görünmeginiň öňüni alýar. Gateway add-onlary, esasan hem gateway hem bir gezeklik capture, hem-de vaulted/subscription töleg režimlerini goldaýan ýagdaýynda, gaýtalanýan checkoutlaryň gaýtadan ulanyp bolýan ygtyýarlygy saklaýandygyny tassyklamalydyr.
+
+**Allow trials without payment** **method:** Bu opsiýa açyk bolanda, müşderiňiz hasaba alyş prosesinde hiç hili maliýe maglumatyny goşmaly bolmaz. Bu diňe synag möhleti gutarandan soň talap ediler.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Ödeme tasdiqianda hasylname göndermek:** Bu, ödenmeden soňra hasylname göndermegi we göndermegi mümkinçilikini berýär. Käbir ýalňyşlyk: Userlar öz subsite dashboardynda ödeme taryhyna girip biljekdigini ýatlasaň. Bu opsuna Manual Gateway (Manual Geçirici) üçin laýyk gelmez.
+**Send invoice on payment confirmation:** Bu tölegden soň invoice ibermek ýa-da ibermezlik mümkinçiligini berýär. Ulanyjylaryň töleg taryhyna öz subsite dashboardynyň aşagynda elýeterliligi boljakdygyny belläň. Bu opsiýa Manual Gateway-e degişli däldir.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Hasylname nömrələndirmesi skemasy:** Bu ýerde siz ödeme referensini kod ýa-da ardyn nömreler skemasyny saýla bilersiňiz. Eger hasylnamalar üçin ödeme referensini koddan ulanyp biljekdigiňizi saýlansaňyz, hiç zat goşmak gerek däl. Eger siz ardyn nömreler skemasyny ulanyp biljekdigiňizi saýlaňsaňyz, size **soňky hasylname nömrəsi** (Bu nömrä sistemde dörediljek soňky hasylnama üçin hasylnama nömrəsi hökmünde ulanylýar. Her soň yeni hasylnama döredilende birden artdyrylýar. Siz ony üýtgedip, hasylnama ardyn nömrüsini belli bir derejä göreç etmek üçin saklap bilersiňiz) we **hasylnama nömrəsi öňüsi** (invoice number prefix) goşmak gerek biler.
+**Invoice numbering scheme:** Bu ýerde, töleg salgylanma koduny ýa-da yzygiderli san shemasyny saýlap bilersiňiz. Eger invoice-laryňyz üçin töleg salgylanma koduny ulanmagy saýlasaňyz, hiç zat sazlamagyňyz gerek däl. Eger yzygiderli san shemasyny ulanmagy saýlasaňyz, **indiki invoice belgisi** (Bu san ulgamda döredilen indiki invoice üçin invoice belgisi hökmünde ulanylar. Täze invoice döredilende her gezek bir san artdyrylýar. Invoice yzygiderli belgisini belli bir baha täzeden sazlamak üçin ony üýtgedip we ýatda saklap bilersiňiz) we **invoice belgisi prefiksi** sazlamaly bolarsyňyz.
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-<!-- Screenshot unavailable: Sequential Number seçildiğinde nöbetli fatura numarası ve fatura numarası ön eki alanları gösterilir -->
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Gateway'leri nerede bulursunuz:
+## Gateway-leri nireden tapmaly: {#where-to-find-the-gateways}
 
-Ödeme gateway'lerini aynı sayfada kurabilirsiniz (**Ultimate Multisite > Settings > Payments**). **Active payment gateways** (Aktif ödeme gateway'leri) başlığının hemen altında şunları görebilirsiniz: _Stripe_, _Stripe_ Checkout, _PayPal_ ve _Manual_.
+Töleg gateway-lerini şol bir sahypada sazlap bilersiňiz ( **Ultimate Multisite > Settings > Payments**). **active payment gateways** -iň göni aşagynda şulary görüp bilersiňiz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ we _Manual_.
 
-![Stripe, Stripe Checkout, PayPal ve Manual'u listeliyän Active Payment Gateways bölümü](/img/config/payments-active-gateways.png)
+![Stripe, Stripe Checkout, PayPal we Manual görkezilen Active Payment Gateways bölümi](/img/config/payments-active-gateways.png)
 
-Her ödeme gateway'ini kurma adımlarını size göstermek için ayrı bir makalemiz var, bu linklere ulaşabilirsiniz.
+Her töleg gateway-i üçin ony sazlamak ädimlerinde size ýol görkezjek aýratyn makalamyz bar; olary aşakdaky linklerden tapyp bilersiňiz.
 
-Ödeme detaylarını görüntüleyebilir ve düzenleyebilirsiniz:
+Töleg jikme-jikliklerini görüp we redaktirläp bilersiňiz:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Töleg redaktirleme interfeýsi](/img/admin/payment-edit.png)
 
-Ödeme düzenleme sayfasının tam görünümü şudur:
+Ine, töleg redaktirleme sahypasynyň doly görnüşi:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Töleg redaktirleme doly interfeýsi](/img/admin/payment-edit-full.png)
 
-Ayrıca ödeme gateway'leri ayarlarının tam görünümünü de aşağıda bulabilirsiniz:
+Şeýle hem töleg gateway-leri sazlamalarynyň doly görnüşi:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Töleg gateway-leri sazlamalarynyň doly sahypasy](/img/config/settings-payments-gateways-full.png)
 
-**Stripe gateway'ini kurma**
+**Stripe gateway-ni sazlamak**
 
-**PayPal gateway'ini kurma**** **
+**PayPal gateway-ni sazlamak**** **
 
-**Manual ödemeleri kurma**
+**El bilen tölegleri sazlamak**
 
-Şimdi, _WooCommerce_, _GoCardless_ veya _Payfast_'ı ödeme gateway'iniz olarak kullanmak istiyorsanız, onlara ait eklentileri **kurup yapılandırmanız** gerekir.
+Indi, töleg gateway-iňiz hökmünde _WooCommerce_ , _GoCardless_ ýa-da _Payfast_ ulanmak isleseňiz, olaryň **add-onlaryny gurnap we sazlamaly** bolarsyňyz.
 
-### WooCommerce eklentisini nasıl kurarsınız:
+### WooCommerce add-onyny nädip gurnamaly: {#how-to-install-the-woocommerce-add-on}
 
-Bazı ülkelerde _Stripe_ ve _PayPal_'ın Ultimate Multisite kullanıcılarının bizim eklentimizi etkili bir şekilde kullanmasını kısıtlayan veya zorlaştıran yerlerde mevcut olmadığını anlıyoruz. Bu yüzden, çok popüler bir e-ticaret eklentisi olan _WooCommerce_'ı entegre etmek için bir eklenti (add-on) oluşturduk. Dünya genelindeki geliştiriciler, farklı ödeme gateway'lerini ona entegre etmek için eklentiler yapmışlardır. Biz de bu imkanlardan yararlanarak Ultimate Multisite faturalandırma sisteminizle kullanabileceğiniz ödeme gateway'lerini genişlettik.
+_Stripe_ we _PayPal_ käbir ýurtlarda elýeterli däldigine düşünýäris; bu bolsa Ultimate Multisite ulanyjylarynyň pluginimizi netijeli ulanmagyny çäklendirýär ýa-da päsgel berýär. Şonuň üçin biz örän meşhur e-commerce plugini bolan _WooCommerce,_ bilen birleşmek üçin add-on döretdik. Dünýäniň dürli ýerindäki işläp düzüjiler oňa dürli töleg gateway-lerini birleşdirmek üçin add-onlar döretdiler. Biz Ultimate Multisite hasaplaşyk ulgamy bilen ulanyp biljek töleg gateway-leriňizi giňeltmek üçin mundan peýdalandyk.
 
-**IMPORTANT:** Ultimate Multisite: WooCommerce entegratsy üçin sizde esasy saytınızda WooCommerce'i en az bir kez aktarmaniz gerekýär.
+_**MÖHÜM:** Ultimate Multisite: WooCommerce Integration üçin WooCommerce azyndan esasy saýtyňyzda işjeňleşdirilen bolmaly._
 
-Ilki, size add-ons (ek) sahypasyna gitmäge çalyşyň. Bu sahypa **Ultimate Multisite > Settings** bilen gitmek arkaly tapyp bilersiňiz. Sizde **Add-ons** tabagy görkeziljekdir. **Check our Add-ons** diýlip klikleň.
+Ilki bilen, add-onlar sahypasyna gidiň. Ony **Ultimate Multisite > Settings** boýunça girip tapyp bilersiňiz. **Add-ons** tablisasyny görmeli. **Check our Add-ons** üstüne basyň.
 
-<!-- Screenshot unavailable: Ultimate Multisite Settings sidebar-da Add-ons tabagy we Check our Add-ons linki -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-**Check our Add-ons** diýlip klikledikten soň, siz add-ons sahypasyna yöneltilip bilersiňiz. Bu ýerde ähli Ultimate Multisite add-onsyny tapyp bilersiňiz. **Ultimate Multisite: WooCommerce Integration** add-onuna klikleň.
+**Check our Add-ons** üstüne basanyňyzdan soň, add-onlar sahypasyna ugradylyp geçirilersiňiz. Bu ýerde ähli Ultimate Multisite add-onlaryny tapyp bilersiňiz. **Ultimate Multisite: WooCommerce Integration** add-onynyň üstüne basyň.
 
-![WooCommerce Integration bilen birlikde Ultimate Multisite add-onsy listlenýän add-ons sahypasy](/img/addons/addons-page.png)
+![WooCommerce Integration bilen birlikde Ultimate Multisite add-onlaryny görkezýän add-onlar sahypasy](/img/addons/addons-page.png)
 
-Add-on barada maglumatlar açylýan bir pencere açyljakdyr. Diňe **Install Now** diýlip klikleň.
+Goşmaça modulyň jikme-jiklikleri bilen penjire açylar. Diňe **Häzir gurna** düwmesine basyň.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on maglumatlary dialogynda Install Now düwmesi -->
+<!-- Ekran suraty elýeterli däl: Häzir gurna düwmesi bolan Ultimate Multisite WooCommerce Integration goşmaça modulynyň jikme-jiklikler dialogy -->
 
-Kurulmagyndan soň, siz plugins sahypasyna yöneltilip bilersiňiz. Bu ýerde diňe **Network Activate** diýlip klikleň we WooCommerce add-onuny ulgamyňyzda aktiwleşdirip bilersiňiz.
+Gurnama tamamlanandan soň, siz pluginler sahypasyna ugrukdyrylarsyňyz. Bu ýerde diňe **Tor boýunça işjeňleşdir** düwmesine basyň we WooCommerce goşmaça moduly toruňyzda işjeňleşdiriler.
 
-<!-- Screenshot unavailable: WooCommerce Integration add-on üçin Network Activate linki bilen plugins sahypasy -->
+<!-- Ekran suraty elýeterli däl: WooCommerce Integration goşmaça moduly üçin Tor boýunça işjeňleşdir baglanyşygy bolan pluginler sahypasy -->
 
-Onu aktiwleşdirip bilendsiz, eger siz web saytınızda WooCommerce pluginini halla kurmagyňyz we aktiwleşdirmegiňiz ýok bolsa, size habar beriljekdir.
+Ony işjeňleşdireniňizden soň, eger websaýtyňyzda WooCommerce plugin henizem gurnalan we işjeňleşdirilen bolmasa, size ýatlatma görkeziler.
 
-<!-- Screenshot unavailable: Administratora WooCommerce pluginini kurmagyny we aktiwleşdirmegini hatdat bilen bildiren administrator habary -->
+<!-- Ekran suraty elýeterli däl: Administratory WooCommerce pluginini gurnamaga we işjeňleşdirmäge ýatladýan admin habarnamasy -->
 
-WooCommerce Integration add-on barada has maglumat almak üçin **burdan klikleň**.
+WooCommerce Integration goşmaça moduly barada has köp okamak üçin **şu ýere basyň**.
 
-### GoCardless add-onuny nire kurmagy?
+### GoCardless goşmaça modulyny nädip gurnamaly: {#how-to-install-the-gocardless-add-on}
 
-_GoCardless_ add-onu nirekleme kademeleri _WooCommerce_ add-onu bilençli kademelerle birleşdirilendir. Add-ons saygyna çykalyň we **Ultimate Multisite: GoCardless Gateway** add-onunu saýlaň.
+_GoCardless_ goşmaça modulyny gurnamagyň ädimleri _WooCommerce_ goşmaça moduly bilen diýen ýaly birmeňzeş. Goşmaça modullar sahypasyna geçiň we **Ultimate Multisite: GoCardless Gateway** goşmaça modulyny saýlaň.
 
-<!-- Screenshot unavailable: Add-ons sayfası Ultimate Multisite GoCardless Gateway add-onu bilen ýerlendirilip görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: Ultimate Multisite GoCardless Gateway goşmaça moduly bellenen goşmaça modullar sahypasy -->
 
-Add-on penceresi açylmaga başlar. **Install Now** (Şolary Kurmak) düwmenine basyň.
+Goşmaça modul penjiresi açylar. **Häzir gurna** düwmesine basyň.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-onu detaller dialogaty Install Now düwmeni bilen görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: Häzir gurna düwmesi bolan Ultimate Multisite GoCardless Gateway goşmaça modulynyň jikme-jiklikler dialogy -->
 
-Kurmak tamamlanandan soň, siz pluginler saygyna yöneltilip geçersiňiz. Bu ýerde diňe **Network Activate** (Ulanyşyklary Aktiw etmek) düwmenine basyň we _GoCardless_ add-onu ulanyşyklaryňyzda aktiwde bolmaly.
+Gurnama tamamlanandan soň, siz pluginler sahypasyna ugrukdyrylarsyňyz. Bu ýerde diňe **Tor boýunça işjeňleşdir** düwmesine basyň we _GoCardless_ goşmaça moduly toruňyzda işjeňleşdiriler.
 
-<!-- Screenshot unavailable: Plugins sayfası GoCardless Gateway add-onu üçin Network Activate linki bilen görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: GoCardless Gateway goşmaça moduly üçin Tor boýunça işjeňleşdir baglanyşygy bolan pluginler sahypasy -->
 
-_GoCardless_ gateway bilen nädip başlap biljekdigini öwrenmek üçin, **bu makalany okap geçiň**.
+_GoCardless_ gateway bilen nähili başlamalydygyny öwrenmek üçin **şu makalany okaň**.
 
-### Payfast add-onu nirekleme:
+### Payfast goşmaça modulyny nädip gurnamaly: {#how-to-install-the-payfast-add-on}
 
-Add-ons saygyna çykaly we **Ultimate Multisite: Payfast Gateway** add-onunu saýlaň.
+Goşmaça modullar sahypasyna geçiň we **Ultimate Multisite: Payfast Gateway** goşmaça modulyny saýlaň.
 
-<!-- Screenshot unavailable: Add-ons sayfası Ultimate Multisite Payfast Gateway add-onu bilen ýerlendirilip görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: Ultimate Multisite Payfast Gateway goşmaça moduly bellenen goşmaça modullar sahypasy -->
 
-Add-on penceresi açylmaga başlar. **Install Now** (Şolary Kurmak) düwmenine basyň.
+Goşmaça modul penjiresi açylar. **Häzir gurna.** düwmesine basyň
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-onu detaller dialogaty Install Now düwmeni bilen görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: Häzir gurna düwmesi bolan Ultimate Multisite Payfast Gateway goşmaça modulynyň jikme-jiklikler dialogy -->
 
-Kurmak tamamlanandan soň, siz pluginler saygyna yöneltilip geçersiňiz. Bu ýerde diňe **Network Activate** (Ulanyşyklary Aktiw etmek) düwmenine basyň we _Payfast_ add-onu ulanyşyklaryňyzda aktiwde bolmaly.
+Gurnama tamamlanandan soň, siz pluginler sahypasyna ugrukdyrylarsyňyz. Bu ýerde diňe **Tor boýunça işjeňleşdir** düwmesine basyň we _Payfast_ goşmaça moduly toruňyzda işjeňleşdiriler.
 
-<!-- Screenshot unavailable: Plugins sayfası Payfast Gateway add-onu üçin Network Activate linki bilen görkezilen resminiz -->
+<!-- Ekran suraty elýeterli däl: Payfast Gateway goşmaça moduly üçin Tor boýunça işjeňleşdir baglanyşygy bolan pluginler sahypasy -->

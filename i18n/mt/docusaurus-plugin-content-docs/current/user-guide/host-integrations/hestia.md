@@ -3,28 +3,28 @@ title: Integrazzjoni ta' Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integrazzjoni mal-Hestia Control Panel
+# Integrazzjoni mal-Hestia Control Panel {#hestia-control-panel-integration}
 
 Dan it-dira li tispjega kif tista' tgħallma l-integrazzjoni ta' Ultimate Multisite Hestia biex domini ma mappati fil-network tiegħek jiġu aġġojati (u jipparxu) awtomatik bħala Web Domain Aliases f'Hestia.
 
 - Referenza tal-Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Dokumentazzjoni uffiċjali tal-REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## X'għandu
+## X'għandu {#what-it-does}
 - Meta dominu jomm mappat fil-Ultimate Multisite, l-integrazzjoni tiffaċċja l-Hestia API biex tgħmli:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Meta jomm eliminat mappatura tal-dominu, tiffaċċja l-qod:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - B'opzjoni, tiddir/teliminat l-alias `www.` b'mod meta għal impost tiegħek ta "Auto-create www subdomain" f'impostijiet tal-Domain Mapping.
 
-## Prerequisiti
+## Prerequisiti {#prerequisites}
 - Web Domain Hestia esistenti li jista' jkollu giàqqa għall-WordPress tiegħek. L-integrazzjoni tiddir alias b'dinja diġà.
 - Aċċess għall-Hestia API attivatu. Tista' tiauthentifika b'parola jew b'API hash/token.
 
 Vidi dokumentazzjoni REST API tal-Hestia biex tivveġi l-aċċess API u dettalji ta l-authentifikazzjoni:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Konfigurazzjoni (Wizard → Integrations → Hestia)
+## Konfigurazzjoni (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Fornis il-valuri fil-mejdan li jipprovvidi:
 
 - `WU_HESTIA_API_URL` (obbligatoriu)
@@ -42,16 +42,16 @@ Fornis il-valuri fil-mejdan li jipprovvidi:
 
 Tista' li permetti lill wizard injettare sti constants f `wp-config.php`, jew definirli manualmente.
 
-## Verifika l-Setup
+## Verifika l-Setup {#verifying-setup}
 - F'istad "Testing" tal-wizard, il plugin jiddefinis xi `v-list-web-domains <WU_HESTIA_ACCOUNT> json` via l'API. Risposta ta suċċess konferma l-konnettività u l-autentikazzjoni.
 - Dopo li mappi un domain, verifica f Hestia: Web > il domain base > Aliases. Dovrent l-alias nuġġi aġixxiat.
 
-## Nota & Consigli
+## Nota & Consigli {#notes--tips}
 - Assicurati li `WU_HESTIA_WEB_DOMAIN` jkun esistenti u possedut minn `WU_HESTIA_ACCOUNT`.
 - Se l-SSL huwa presi, gesti il certificati f Hestia. Il integrazzjoni hija attwali tiegħu għal alias oħra.
 - Il plugin xieq jiddejna/jixgħel `www.<domain>` b'modewq li għall-setting tal-Domain Mapping "www subdomain".
 
-## Eżempju Call API (cURL)
+## Eżempju Call API (cURL) {#example-api-call-curl}
 Qebla huwa eżempju konseptwali (aġjusta għall-ambiente tiegħek). Riferi l-dokumentazzjoni uffiċjali għall-parament egizi.
 
 POST https://your-hestia-host:8083/api/
@@ -68,11 +68,11 @@ cmd=v-add-web-domain-alias
 
 Biex tal-delete, uż `cmd=v-delete-web-domain-alias` u is-istess argomenti.
 
-## Problemi biex tiffaħu (Troubleshooting)
+## Problemi biex tiffaħu (Troubleshooting) {#troubleshooting}
 - Errat HTTP mill-API: verifika li `WU_HESTIA_API_URL` huwa jiddeħħol u jinkludi `/api`.
 - Errat ta l-autentikazzjoni: konferma `WU_HESTIA_API_USER` u sia `WU_HESTIA_API_PASSWORD` jew `WU_HESTIA_API_HASH`.
 - "Missing account/base domain" fil-logs: assorda li `WU_HESTIA_ACCOUNT` u `WU_HESTIA_WEB_DOMAIN` ma huma setti u validi f'Hestia.
 
-## Referenzi
+## Referenzi {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Referenza CLI tal-Hestia (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

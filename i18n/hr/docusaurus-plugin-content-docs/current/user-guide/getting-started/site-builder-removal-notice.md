@@ -3,13 +3,13 @@ title: Obavijest o uklanjanju načina za izgradnju stranice
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Obavijest o uklanjanju načina izgradnje stranica (Site Builder Mode)
+# Obavijest o uklanjanju načina izgradnje stranica (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **Način izgradnje stranica (Site Builder mode) je uklonjen u Superdav AI Agent v1.12.0.** Ako ste koristili način izgradnje stranica, trebali biste migrirati na **Setup Assistant agent** za kreiranje tema i postavljanje stranice.
 
-## Što se dogodilo?
+## Što se dogodilo? {#what-happened}
 
-### Način izgradnje stranica (Stari)
+### Način izgradnje stranica (Stari) {#site-builder-mode-legacy}
 
 Način izgradnje stranica bio je interfejs zasnovan na vodiču (wizard-based interface) za:
 
@@ -18,7 +18,7 @@ Način izgradnje stranica bio je interfejs zasnovan na vodiču (wizard-based int
 - Odabir teme
 - Postavljanje početnog sadržaja
 
-### Što ga zamjenjuje?
+### Što ga zamjenjuje? {#what-replaced-it}
 
 **Setup Assistant agent** sada obrađuje svu funkcionalnost načina izgradnje stranica s:
 
@@ -27,15 +27,15 @@ Način izgradnje stranica bio je interfejs zasnovan na vodiču (wizard-based int
 - Integracijom s onboardingom Theme Buildera
 - Trajnim memorijom `site_brief` za buduće sesije
 
-## Ako ste koristili način izgradnje stranica (Site Builder Mode)
+## Ako ste koristili način izgradnje stranica (Site Builder Mode) {#if-you-were-using-site-builder-mode}
 
-### Vaše stranice su sigurne
+### Vaše stranice su sigurne {#your-sites-are-safe}
 
 - Postojeće stranice kreirane pomoću načina izgradnje stranica i dalje rade
 - Bez gubitka podataka ili prekida rada stranice
 - Možete nastaviti normalno upravljati svojim stranicama
 
-### Migrirajte na Setup Assistant agent
+### Migrirajte na Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Za novo postavljanje stranice ili promjene teme, koristite Setup Assistant agent:
 
@@ -51,7 +51,7 @@ ili
 
 Setup Assistant agent nudi istu funkcionalnost s većom fleksibilnošću.
 
-## Poređenje: Site Builder vs. Setup Assistant
+## Poređenje: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funkcija | Site Builder (Uklonjen) | Setup Assistant (Novo) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent nudi istu funkcionalnost s većom fleksibilnošću.
 | Buduće sesije | Ponovni postavljanje | Korištenje pohranjenog site_briefa |
 | Fleksibilnost | Fiksni radni tok | Adaptivni razgovor |
 
-## Migracija na Setup Assistant agent
+## Migracija na Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### Za nove stranice
+### Za nove stranice {#for-new-sites}
 
 Umjesto korištenja načina Site Builder mode:
 
@@ -76,7 +76,7 @@ Umjesto korištenja načina Site Builder mode:
    - Generiranje teme
    - Početno konfiguriranje
 
-### Za postojeće sajtove
+### Za postojeće sajtove {#for-existing-sites}
 
 Ako imate postojeći sajt iz Site Builder mode:
 
@@ -85,7 +85,7 @@ Ako imate postojeći sajt iz Site Builder mode:
 3. Agent Pomoćnik za postavljanje će vam pomoći da kreirate novu temu
 4. Vaš podaci o sajtu ostaju nepromijenjeni
 
-### Za promjene teme
+### Za promjene teme {#for-theme-changes}
 
 Umjesto odabira teme u Site Builder modu:
 
@@ -95,9 +95,9 @@ Umjesto odabira teme u Site Builder modu:
    - Generirati prilagođenu temu
    - Aktivirati je na vašem sajtu
 
-## Ključne razlike
+## Ključne razlike {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Odaberite šablon
@@ -106,7 +106,7 @@ Umjesto odabira teme u Site Builder modu:
 4. Gotovo
 ```
 
-### Agent Pomoćnik za postavljanje (Setup Assistant Agent)
+### Agent Pomoćnik za postavljanje (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Opisz svrhu vašeg sajta
@@ -117,42 +117,42 @@ Umjesto odabira teme u Site Builder modu:
 6. Sažetak sajta se sprema za buduće sesije
 ```
 
-## Prednosti Agent Pomoćnika za postavljanje (Setup Assistant Agent)
+## Prednosti Agent Pomoćnika za postavljanje (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Više fleksibilno
+### Više fleksibilno {#more-flexible}
 
 - Opisujte svoj sajt prirodnim jezikom
 - Dobijate prilagođene preporuke
 - Prilagodite se svojim specifičnim potrebama
 
-### Bolja prilagodba
+### Bolja prilagodba {#better-customization}
 
 - Generiranje prilagođene teme
 - Odluke o dizajnom sustavu (Design System)
 - Trajno skladištenje dizajnih tokena (design tokens)
 
-### Trajna memorija
+### Trajna memorija {#persistent-memory}
 
 - Vaš `site_brief` se sprema
 - Budući agenti razumiju vaš sajt
 - Ne morate ponavljati informacije o postavljanju
 
-### Integrirani radni tok (Workflow)
+### Integrirani radni tok (Workflow) {#integrated-workflow}
 
 - Onboarding za Theme Builder
 - Vještina estetike Design Systema
 - Sposobnost kontrole vidljivosti (Visibility controls)
 - Sve zajedno rade bez zagušenja
 
-## Rješavanje problema (Troubleshooting)
+## Rješavanje problema (Troubleshooting) {#troubleshooting}
 
-### Ne mogu pronaći Site Builder mode
+### Ne mogu pronaći Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode je uklonjen. Umjesto njega koristite Agent Pomoćnik za postavljanje:
 
 "Pomođite mi postaviti novi sajt"
 
-### Želim ponovno napraviti sajt iz Site Buildera
+### Želim ponovno napraviti sajt iz Site Buildera {#i-want-to-recreate-a-site-from-site-builder}
 
 Možete ga ponovno napraviti pomoću agenta Setup Assistant:
 
@@ -161,7 +161,7 @@ Možete ga ponovno napraviti pomoću agenta Setup Assistant:
 3. Agent će generirati sličan tema
 4. Vaš `site_brief` će biti pohranjen za buduće reference
 
-### Moj postojeći sajt iz Site Buildera ne radi
+### Moj postojeći sajt iz Site Buildera ne radi {#my-existing-site-builder-site-isnt-working}
 
 Sajti napravljeni s Modele Site Buildera nastavljaju raditi. Ako imate problema:
 
@@ -170,7 +170,7 @@ Sajti napravljeni s Modele Site Buildera nastavljaju raditi. Ako imate problema:
 3. Provjerite WordPress logove grešaka
 4. Kontaktirajte podršku ako problemi nastavljaju
 
-### Možete li koristiti moje stare Site Builder šablone?
+### Možete li koristiti moje stare Site Builder šablone? {#can-i-still-use-my-old-site-builder-templates}
 
 Šabloni Site Buildera više nisu dostupni. Međutim:
 
@@ -178,14 +178,14 @@ Sajti napravljeni s Modele Site Buildera nastavljaju raditi. Ako imate problema:
 - Možete ponovno napraviti slične sajtove pomoću agenta Setup Assistant
 - Agent Setup Assistant nudi vam više opcija za prilagodbu
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 1. **Za nove sajtove**: Koristite agenta Setup Assistant
 2. **Za postojeće sajtove**: Nastavite ih koristiti onako kako su
 3. **Za promjene teme**: Zahtijevajte pomoć od agenta Setup Assistant
 4. **Za usavršavanje dizajna**: Koristite skill Design System Aesthetics
 
-## Srodne teme
+## Srodne teme {#related-topics}
 
 - **Theme Builder Onboarding**: Vođeno postavljanje za prilagođene teme
 - **Setup Assistant Agent**: Postavljanje sajta vođeno agentom

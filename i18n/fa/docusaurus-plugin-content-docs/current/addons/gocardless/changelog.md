@@ -3,7 +3,7 @@ title: گزارش تغییرات GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# گزارش تغییرات GoCardless
+# گزارش تغییرات GoCardless {#gocardless-changelog}
 
 نسخه: 1.0.3 - تاریخ انتشار 2026-05-05
 * رفع اشکال: اکنون، هنگامی که عضویت GoCardless در وضعیت معلق یا متوقف لغو شود، سایت‌های معلق رها شده نیز پاکسازی می‌شوند.

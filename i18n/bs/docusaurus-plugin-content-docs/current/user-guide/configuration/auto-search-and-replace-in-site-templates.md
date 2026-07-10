@@ -1,32 +1,32 @@
 ---
-title: Automatsko pretraživanje i zamjena u šablonima stranice
+title: Automatsko pretraživanje i zamjena u predlošcima web-lokacija
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatsko pretraživanje i zamjena u šablonima stranica (v2)
+# Automatsko pretraživanje i zamjena u predlošcima stranice (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**Za ovaj tutorijal je potrebna verzija 2.x WP UItimo.**_
+_**Ovaj vodič zahtijeva WP UItimo verziju 2.x.**_
 
-Jedna od najmoćnijih značajki Ultimate Multisite-a je mogućnost dodavanja proizvoljnog teksta, boje i polja za odabir na formular za registraciju. Kada prikupimo te podatke, možemo ih koristiti za popunjavanje sadržaja u određenim dijelovima šablona stranice. Zatim, kada se nova stranica objavi, Ultimate Multisite će zamijeniti *placeholdere* stvarnim informacijama koje su uneseni tokom registracije.
+Jedna od najmoćnijih funkcija Ultimate Multisite je mogućnost dodavanja proizvoljnog teksta, boje i polja za odabir u obrazac za registraciju. Kada zabilježimo te podatke, možemo ih koristiti za unaprijed popunjavanje sadržaja u određenim dijelovima odabranog predloška stranice. Zatim, kada nova stranica bude objavljena, Ultimate Multisite će zamijeniti rezervisana mjesta stvarnim informacijama unesenim tokom registracije.
 
-Na primjer, možete napraviti svoje šablone stranica koristeći *placeholdere*. *Placeholdere* treba dodati okružene dvostrukim vitičastim zagradama – `{{placeholder_name}}`.
+Na primjer, svoje predloške stranica možete napraviti s rezervisanim mjestima. Rezervisana mjesta treba dodati okružena dvostrukim vitičastim zagradama - {{placeholder_name}}.
 
-Zatim, jednostavno dodajte odgovarajuće polje za registraciju kako biste prikupili te podatke.
+Zatim možete jednostavno dodati odgovarajuće polje za registraciju kako biste prikupili te podatke
 
-Vaš klijent će tada moći popuniti to polje tokom registracije.
+Vaš kupac će zatim moći popuniti to polje tokom registracije.
 
-Ultimate Multisite će automatski zamijeniti *placeholdere* podacima koje je klijent dostavio.
+Ultimate Multisite će zatim automatski zamijeniti rezervisana mjesta podacima koje je kupac naveo.
 
-## **Rješavanje problema "šablon pun *placeholdera*"**
+## **Rješavanje problema "predložak pun rezervisanih mjesta"** {#solving-the-template-full-of-placeholders-problem}
 
-Sve je odlično, ali naiđemo na neugodan problem: naši šabloni stranica – koje mogu posjetiti naši klijenti – pune su neugodnih *placeholdera* koji ne govore ništa.
+Sve je to odlično, ali nailazimo na ružan problem: sada su naši predlošci stranica - koje naši kupci mogu posjetiti - puni ružnih rezervisanih mjesta koja ne govore mnogo.
 
-Da bismo to riješili, nudimo opciju postavljanja lažnih vrijednosti za *placeholdere*, i koristimo te vrijednosti za pretraživanje i zamjenu njihovog sadržaja na šablonima stranica dok klijenti posjećuju.
+Da bismo to riješili, nudimo opciju postavljanja lažnih vrijednosti za rezervisana mjesta, a te vrijednosti koristimo za pretraživanje i zamjenu njihovog sadržaja na predlošcima stranica dok ih vaši kupci posjećuju.
 
-Pristup *editoru* *placeholdera* možete dobiti tako što ćete otići na **Ultimate Multisite > Settings > Sites**, a zatim na bočnom panelu kliknuti na link Edit Placeholders.
+Uređivaču rezervisanih mjesta predložaka možete pristupiti tako što ćete otići na **Ultimate Multisite > Settings > Stranice**, pomaknuti se do područja Opcije predloška stranice, a zatim kliknuti na link **Uredi rezervisana mjesta**.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Područje Opcije predloška stranice na stranici postavki Stranice](/img/config/settings-sites-templates-section.png)
 
-To će vas odvesti do *editora* sadržaja *placeholdera*, gdje možete dodati *placeholdere* i njihov odgovarajući sadržaj.
+To će vas odvesti do uređivača sadržaja rezervisanih mjesta, gdje možete dodati rezervisana mjesta i njihov odgovarajući sadržaj.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![Ulazna tačka uređivača rezervisanih mjesta predložaka](/img/config/settings-sites-templates-section.png)

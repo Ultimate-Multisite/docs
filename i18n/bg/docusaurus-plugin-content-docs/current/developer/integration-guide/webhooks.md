@@ -3,11 +3,11 @@ title: Обработка на Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook Обработка
+# Webhook Обработка {#webhook-handling}
 
 Създайте персонализирани webhook крайни точки (endpoints), за да получавате събития от външни услуги и да синхронизирате данните с Ultimate Multisite.
 
-## Персонализирана Webhook Крайна Точка (Endpoint)
+## Персонализирана Webhook Крайна Точка (Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Съображения за Сигурността
+## Съображения за Сигурността {#security-considerations}
 
 - Винаги проверявайте webhook подписите, използвайки HMAC или споделена тайна (shared secret)
 - Използвайте `permission_callback` за вашия REST маршрут — никога не го задавайте на `__return_true` в продукционна среда

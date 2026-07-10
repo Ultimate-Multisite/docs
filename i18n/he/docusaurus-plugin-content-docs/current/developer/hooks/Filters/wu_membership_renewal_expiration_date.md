@@ -4,11 +4,11 @@ title: מסנן - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 מסנן את תאריך התפוגה המחושב, כדי לוודא שהוא מוגדר לאחר תאריך החידוש.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | תיאור |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 | $membership_id | `int` | מזהה המנוי. |
 | $membership | `\Membership` | אובייקט המנוי. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב-[inc/models/class-membership.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) בשורה 2192

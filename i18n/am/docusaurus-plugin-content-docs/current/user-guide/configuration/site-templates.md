@@ -1,152 +1,150 @@
 ---
-title: የድረገጽ አብነቶች
+title: የጣቢያ አብነቶች
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# የጣቢያ አብነቶች (Site Templates) (v2)
+# የጣቢያ አብነቶች (v2) {#site-templates-v2}
 
-_**ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው። version 1.x እየተጠቀሙ ከሆነ፣ እባክዎ ይህንን ጽሑፍ ይመልከቱ።**_
+_**ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል። ስሪት 1.x እየተጠቀሙ ከሆነ፣**_ **ይህን ጽሑፍ ይመልከቱ** _**.**_
 
-በUltimate Multisite የፕሪሚየም ኔትወርክ ስንፈጥር የምንፈልገው ነገር ቢኖር፣ ለደንበኞቻችን ድረ-ገጾችን በሚፈጥሩበት ጊዜ ብዙ አማራጮችን እና ተጣጣፊነትን እየሰጠን፣ በተቻለ መጠን ብዙ ሂደቶችን በራስ-ሰር ማስኬድ ነው። ይህን ሚዛን ለመጠበቅ ቀላል መንገድ የUltimate Multisite Site Templatesን ባህሪ መጠቀም ነው።
+በUltimate Multisite ፕሪሚየም ኔትወርክ ስንፈጥር ግባችን፣ ደንበኞቻችን ድረ-ገጾቻቸውን ሲፈጥሩ ተለዋዋጭነትና የሚመርጡባቸው የተለያዩ አማራጮችን እየሰጠን፣ በተቻለ መጠን ብዙ ሂደቶችን ራስ-ሰር ማድረግ ነው። ይህን ሚዛን ለማሳካት ቀላል መንገድ የUltimate Multisite የጣቢያ አብነቶች ባህሪን መጠቀም ነው።
 
-## Site Template ምንድነው?
+## የጣቢያ አብነት ምንድን ነው? {#what-is-a-site-template}
 
-ስሙ እንደሚያመለክተው፣ Site Template ማለት በኔትወርክዎ ውስጥ አዳዲስ ድረ-ገጾችን በሚፈጥሩበት ጊዜ እንደ መሰረት (base) ሊውል የሚችል የተዘጋጀ ድረ-ገጽ (boilerplate site) ነው።
+ስሙ እንደሚጠቁመው፣ የጣቢያ አብነት በኔትወርክዎ ውስጥ አዳዲስ ጣቢያዎችን ሲፈጥሩ እንደ መሠረት ሊጠቀሙበት የሚችሉ ቦይለርፕሌት ጣቢያ ነው።
 
-ይህ ማለት መሰረታዊ ድረ-ገጽ መፍጠር፣ የተለያዩ plugins ማብራት፣ ንቁ የሆነ theme መምረጥ እና በፈለጉት መንገድ ማበጀት ይችላሉ። ከዚያም ደንበኛዎ አዲስ አካውንት ሲፈጥር፣ ምንም ትርጉም ባልሰጠው ይዘት ባለው መደበኛ WordPress ድረ-ገጽ ከመቀበል ይልቅ፣ ሁሉም ማበበጅ እና ይዘት ቀድሞ በቦታው ባሉበት የመሰረታዊ ድረ-ገጽ ቅጂ ይቀበላል።
+ይህ ማለት መሠረታዊ ጣቢያ መፍጠር፣ የተለያዩ plugins ማንቃት፣ ንቁ theme ማዘጋጀት፣ እና በሚፈልጉት መንገድ ማበጀት ይችላሉ። ከዚያም፣ ደንበኛዎ አዲስ account ሲፈጥር፣ ውስጡ ጠቃሚ ይዘት የሌለው ነባሪ WordPress ጣቢያ ከማግኘት ይልቅ፣ ሁሉም ማበጀቶችና ይዘቶች አስቀድመው በቦታቸው ያሉበትን የመሠረታዊ ጣቢያዎን ቅጂ ያገኛሉ።
 
-ይህ ድንቅ ይመስላል፣ ግን አዲስ site template እንዴት እፈጥራለሁ? በጣም ቀላል ነው።
+ያ አስደናቂ ይመስላል፣ ግን አዲስ የጣቢያ አብነት እንዴት እፈጥራለሁ? ሊሆን በሚችለው መጠን ቀላል ነው።
 
-## አዲስ Site Template መፍጠር እና ማርትዕ
+## አዲስ የጣቢያ አብነት መፍጠርና ማርትዕ {#creating-and-editing-a-new-site-template}
 
-Site Templates በኔትወርክዎ ውስጥ ያሉ መደበኛ ድረ-ገጾች ናቸው። አዲስ template ለመፍጠር በቀላሉ ወደ **Network Admin > Ultimate Multisite > Sites > Add Site** መሄድ ይችላሉ።
+የጣቢያ አብነቶች በኔትወርክዎ ላይ ያሉ መደበኛ ጣቢያዎች ብቻ ናቸው። አዲስ አብነት ለመፍጠር በቀላሉ ወደ **የኔትወርክ አስተዳዳሪ > Ultimate Multisite > ጣቢያዎች > ጣቢያ አክል** መሄድ ይችላሉ።
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![በጣቢያዎች ዝርዝር ገጽ ውስጥ የጣቢያ አክል አዝራር](/img/config/site-templates-list.png)**
 
-ይህ የሞዳል መስኮት (modal window) ይከፍታል፣ እዚያም **Site title, Site Domain/path,** እና **Site type** እንዲያስገቡ ይጠይቃል። በ**Site Type** መውረድ በሚችል ሜዳ (drop-down field) ውስጥ **Site Template** መምረጥዎን ያረጋግጡ።
+ይህ **የጣቢያ ርዕስ፣ የጣቢያ Domain/path፣** እና **የጣቢያ ዓይነት** የሚጠይቅበትን modal መስኮት ይከፍታል። በ**የጣቢያ ዓይነት** ተቆልቋይ field ስር **የጣቢያ አብነት** *.* መርጠው መሆኑን ያረጋግጡ።
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![የጣቢያ ዓይነት ተቆልቋይ ያለው የጣቢያ አብነት ማከል modal](/img/config/site-templates-list.png)_
 
-የsite template መግለጫን (description) እንዲሁ ማየት ይችላሉ፦
+አብነቱ ምን እንደሚያካትት ለማብራራት ለደንበኛ የሚታይ መግለጫም ማከል ይችላሉ፦
 
-![Site template description](/img/config/site-template-description.png)
+![በጣቢያ አብነት ማርትዕ ስክሪን ላይ የጣቢያ አብነት መግለጫ field](/img/config/site-template-edit-description.png)
 
-በቅጹ (form) የታችኛው ክፍል ላይ፣ **Copy Site** የሚል መቀያየር (toggle switch) ታያላችሁ። ይህ ደግሞ አዲስ site template ከሌላ የsite template በመነሳት እንዲፈጥሩ ያስችልዎታል፣ ይህም ከባዶ site template ከመፍጠር ይልቅ ጊዜ እንዲቆጥቡ ይረዳዎታል።
+በቅጹ ግርጌ **ጣቢያ ቅዳ** የሚል toggle switch ያስተውላሉ። ይህ ከባዶ የጣቢያ አብነት ከመፍጠር ይልቅ ጊዜ ለመቆጠብ እንዲረዳዎት፣ ነባር የጣቢያ አብነትን እንደ መነሻ በመጠቀም አዲስ የጣቢያ አብነት እንዲፈጥሩ ያስችልዎታል።
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![የጣቢያ ቅዳ toggle ያለው የጣቢያ አብነት ማከል modal](/img/config/site-templates-list.png)
 
-### የSite Template ይዘቶችን ማበጀት
+### የጣቢያ አብነት ይዘቶችን ማበጀት {#customizing-the-contents-of-a-site-template}
 
-የsite templateዎን ይዘት ለማበጀት፣ በቀላሉ ወደ የዳሽቦርድ ፓነሉ በመሄድ የሚያስፈልጉትን ለውጦች ማድረግ ይችላሉ። አዳዲስ ፖስቶችን፣ ገጾችን መፍጠር፣ plugins ማብራት እና ንቁ የሆነ theme መቀየር ይችላሉ። አልፎ ተርፎም ወደ Customizer በመሄድ ሁሉንም ዓይነት የማበጀት አማራጮችን መቀየር ይችላሉ።
+የጣቢያ አብነትዎን ለማበጀት፣ በቀላሉ ወደ dashboard ፓነሉ ይሂዱ እና የሚፈልጉትን ለውጦች ያድርጉ። አዳዲስ ልጥፎችን፣ ገጾችን መፍጠር፣ plugins ማንቃት እና ንቁ themeን መቀየር ይችላሉ። እንዲሁም ወደ Customizer ሄደው ሁሉንም ዓይነት የማበጀት አማራጮች መቀየር ይችላሉ።
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![የጣቢያ አብነት ማርትዕ በይነገጽ](/img/config/site-template-edit.png)
 
-እነዚህ ሁሉ መረጃዎች ደንበኛ አዲስ site template በመጠቀም አዲስ ድረ-ገጽ ሲፈጥር ይገለበጣሉ።
+ደንበኛ በዚያ የጣቢያ አብነት ላይ የተመሠረተ አዲስ ጣቢያ ሲፈጥር ያ ሁሉ ውሂብ ይቀዳል።
 
-### የላቀ አማራጮች (Advanced Options)
+### የላቁ አማራጮች {#advanced-options}
 
-የተወሰነ የኮድ አጠቃቀም እውቀት ካለዎት፣ የSearch and Replace APIን በመጠቀም አዲሱ ድረ-ገጽ ከተፈጠረ በኋላ መረጃዎችን በራስ-ሰር መተካት ይችላሉ። ይህ ለምሳሌ በAbout page ላይ የኩባንያ ስም መተካት፣ በContact page ላይ የኢሜይል አድራሻ መተካት ወዘተ ባሉ ነገሮች 유용 ነው።
+በብጁ coding ዙሪያ እውቀት ካለዎት፣ አዲሱ ጣቢያ ከተፈጠረ በኋላ መረጃን ራስ-ሰር ለመተካት የእኛን Search and Replace API መጠቀም ይችላሉ። ይህ በAbout ገጽ ላይ የኩባንያ ስሞችን መተካት፣ በContact ገጽ ላይ የእውቂያ emailን መተካት፣ ወዘተ ለመሳሰሉት ጠቃሚ ነው።
 
-### Site Templatesን መጠቀም
+### የጣቢያ አብነቶችን መጠቀም {#using-site-templates}
 
-እሺ፣ የተለያዩ ዲዛይኖች፣ themes እና ቅንብሮች ባሉ ብዙ Site Templates ፈጥረዋል። አሁን በኔትወርክዎ ውስጥ እንዴት አጋርነት እንዲፈጥሩ ታደርጋላችሁ?
+እሺ፣ ስለዚህ በተለያዩ ዲዛይኖች፣ themes እና ቅንብሮች ያሉ ብዙ የተለያዩ የጣቢያ አብነቶችን ፈጥረዋል። አሁን በኔትወርክዎ ላይ እንዴት ጠቃሚ ያደርጓቸዋል?
 
-በመሰረቱ፣ አሁን ሊጠቀሙባቸው የሚችሉ ሁለት አቀራረቦች አሉ (በአንድ ጊዜ ሳይሆን):
+በመሠረቱ፣ አሁን ሊጠቀሙባቸው የሚችሉ ሁለት አቀራረቦች አሉ (በአንድ ጊዜ አይደለም)፦
 
-  * ለእያንዳንዱ Planዎ አንድ Site Template ማያያዝ
+  * አንድ የጣቢያ አብነት ከእያንዳንዱ Plansዎ ጋር ማያያዝ
 
 **ወይም**
 
-  * ደንበኞች በራሳቸው ጊዜ ሲመዘገቡ site templates እንዲመርጡ መፍቀድ።
+  * ደንበኞችዎ በምዝገባ ጊዜ የጣቢያ አብነቶችን ራሳቸው እንዲመርጡ መፍቀድ።
 
-#### ሁነኛ 1: Site Template መመደብ (Assign Site Template)
+#### ሁነታ 1፦ የጣቢያ አብነት መመደብ {#mode-1-assign-site-template}
 
-በዚህ ሁነታ፣ ደንበኞች አካውንት ሲፈጥሩ template መምረጥ አይችሉም፣ ይልቁንም እርስዎ ለእያንዳንዱ Plan ምን template ጥቅም ላይ መዋል እንዳለበት ይወስናሉ።
+በዚህ ሁነታ፣ ደንበኞችዎ account ሲፈጥሩ አብነት መምረጥ አይችሉም፤ ይልቁንም በእያንዳንዱ Plansዎ ላይ የትኛው አብነት መጠቀም እንዳለበት እርስዎ ይወስናሉ።
 
-ይህ ለማድረግ፣ ወደ **Ultimate Multisite > Products > Edit** መሄድ ያስፈልግዎታል።
+ይህን ለማድረግ፣ ወደ **Ultimate Multisite > ምርቶች > አርትዕ** መሄድ ያስፈልግዎታል።
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![የጣቢያ አብነት ለመመደብ ምርት አርትዕ](/img/config/product-site-templates.png)
 
-ይህ ወደ **Edit Product** ገጽ ይወስድዎታል። በ**Product Options** ክፍል ውስጥ፣ **Site template** የሚል ታብ (tab) አግኝተው ከውርርድ ሜዳ (drop-down field) ውስጥ **Assign Site** **Template** አማራጭ ይምረጡ። ይህ የሚገኙ የsite templates ዝርዝርን ያሳየዎታል እና ለምርቱ ብቻ የተመደበ አንድ site template እንዲመርጡ ያስችልዎታል።
+ይህ ወደ **ምርት አርትዕ** ገጽ ያመጣዎታል። በ**የምርት አማራጮች** ክፍል ስር፣ **የጣቢያ አብነት** ትርን ያግኙ እና ከተቆልቋይ field ውስጥ **የጣቢያ አብነት መመደብ** አማራጭን ይምረጡ። ይህ ያሉትን የጣቢያ አብነቶች ዝርዝር ያሳያል እና ለምርቱ የተወሰነ አንድ የጣቢያ አብነት ብቻ እንዲመርጡ ያስችልዎታል።
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![የጣቢያ አብነት መመደብ አማራጭ ያለው የምርት የጣቢያ አብነት ትር](/img/config/product-site-templates.png)
 
-#### ሁነኛ 2: የሚገኙ Site Templates እንዲመርጡ ማድረግ (Choose Available Site Template)
+#### ሁነታ 2፦ ያለውን የጣቢያ አብነት መምረጥ {#mode-2-choose-available-site-template}
 
-በዚህ ሁነታ፣ ደንበኞች በምዝገባ ሂደት ጊዜ ምርጫ ይሰጣቸዋል። በምርቱ ቅንብሮች ስር የሰጣችሁን የተለያዩ site templates መምረጥ ይችላሉ። በተመረጠው ምርት ስር ሊመርጡ የሚችሉትን site templates ለመገደብ አማራጭ አለዎት። ይህ ለእያንዳንዱ ምርት የተለያዩ የsite templates ስብስቦችን እንዲኖራችሁ ያስችላል፣ ይህም ለከፍተኛ ዋጋ ባለው ምርት የተለያዩ ተግባራትን እና ባህሪያትን ለማጉላት ተስማሚ ነው።
+በዚህ ሁነታ፣ በምዝገባ ሂደት ወቅት ለደንበኞችዎ ምርጫ ይሰጣሉ። በምርት ቅንብሮች ስር ከሚወስኗቸው የተለያዩ የጣቢያ አብነቶች መምረጥ ይችላሉ። በተመረጠው ምርት ስር ከሚመርጡት የጣቢያ አብነት ላይ ገደብ ማድረግ የሚያስችል አማራጭ አለዎት። ይህ በእያንዳንዱ ምርት ስር የተለያዩ የጣቢያ አብነቶች ስብስቦች እንዲኖሩዎት ያስችልዎታል፣ ይህም ለከፍተኛ ዋጋ ያለው ምርት የተለያዩ ተግባራትንና ባህሪያትን ለማጉላት ተስማሚ ነው።
 
-በ**Edit Product** ገጽ ላይ። በ**Product Options** ክፍል ውስጥ፣ **Site template** የሚል ታብ አግኝተው ከውርርድ ሜዳ ውስጥ **Choose Available Site Template** አማራጭ ይምረጡ። ይህ የሚገኙ የsite templates ዝርዝርን ያሳየዎታል እና ሊገኝ የሚፈልጉትን site template እንዲመርጡ ያስችልዎታል። ይህን ማድረግ የሚችሉት የባህሪውን (Behavior) በመምረጥ ነው፦ site template በዝርዝሩ ውስጥ እንዲካተት ከፈለጉ **Available** ይምረጡ። site template እንደ አማራጭ እንዳይታይ ከፈለጉ **Not Available** ይምረጡ። እና ከተዘረዘሩት site templates ውስጥ አንዱ መነሻ (default) እንዲሆን ከፈለጉ **Pre-selected** ይምረጡ።
+በ**ምርት አርትዕ** ገጽ ላይ። በ**የምርት አማራጮች** ክፍል ስር፣ **የጣቢያ አብነት** ትርን ያግኙ እና ከተቆልቋይ field ውስጥ **ያለውን የጣቢያ አብነት መምረጥ** አማራጭን ይምረጡ። ይህ ያሉትን የጣቢያ አብነቶች ዝርዝር ያሳያል እና እንዲገኝ የሚፈልጉትን የጣቢያ አብነት እንዲመርጡ ያስችልዎታል። ይህን ባህሪውን በመምረጥ ማድረግ ይችላሉ፦ የጣቢያ አብነቱ በዝርዝሩ ውስጥ እንዲካተት ከፈለጉ **ይገኛል**። የጣቢያ አብነቱ እንደ አማራጭ እንዳይታይ ከፈለጉ _**አይገኝም**_። እና ከተዘረዘሩት የጣቢያ አብነቶች አንዱ ነባሪ የተመረጠው እንዲሆን ከፈለጉ **ቀድሞ የተመረጠ**።
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![በባህሪ አማራጮች ያሉ ያሉትን የጣቢያ አብነቶች መምረጥ](/img/config/product-site-templates.png)
 
-### መደበኛ ሁነታ (Default Mode): በCheckout form ላይ የsite template ምርጫ
+### ነባሪ ሁነታ፦ በCheckout ቅጽ ላይ የጣቢያ አብነት ምርጫ {#default-mode-site-template-selection-on-the-checkout-form}
 
-ሁሉም site templatesዎ በምዝገባ ጊዜ እንዲገኙ ከፈለጉ፣ ወይም እያንዳንዱን የምትፈጥሩበት ምርት ስር site templates መመደብ ወይም መግለጽ ተጨማሪ ስራ እንደማይፈልጉ ከተሰማዎት። በምትኩ site template ምርጫን በ**Checkout Form**ዎ ላይ ማዘጋጀት ይችላሉ። ይህን ለማድረግ፣ ወደ **Ultimate Multisite > Checkout Forms** መሄድ ብቻ ያስፈልግዎታል። ከዚያም በቅንብሩ (form) ላይ **Edit** የሚለውን ይጫኑ።
+በምዝገባ ወቅት ሁሉም የጣቢያ አብነቶችዎ እንዲገኙ ከፈለጉ፣ ወይም ምናልባት በሚፈጥሩት እያንዳንዱ ምርት ስር የጣቢያ አብነቶችን የመመደብ ወይም የመግለጽ ተጨማሪ ሥራ መስራትን ካልመረጡ። ከዚያ በቀላሉ የጣቢያ አብነት ምርጫውን በ**Checkout ቅጽ**ዎ ስር ማዘጋጀት ይችላሉ። ይህን ለማድረግ፣ ወደ **Ultimate Multisite > Checkout ቅጾች** ይሂዱ እና ማዋቀር በሚፈልጉት ቅጽ ስር **አርትዕ** ይጫኑ።
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+ይህ **Checkout ቅጽ አርትዕ** ገጽን ያሳያል። **የአብነት ምርጫ** fieldን ያግኙ እና በእሱ ስር **አርትዕ** ይጫኑ።
 
-ይህ ወደ **Edit Checkout Form** ገጽ ይወስድዎታል። **Template Selection** የሚል መስክ አግኝተው በሱ ስር **Edit** የሚለውን ይጫኑ።
+አንድ ሞዳል መስኮት ይታያል። በ**የቴምፕሌት ጣቢያዎች** መስክ ስር፣ በምዝገባ ወቅት እንዲገኙ የሚፈልጉትን ሁሉንም የጣቢያ ቴምፕሌቶች መምረጥ እና መዘርዘር ይችላሉ። ከዚህ የሚገልጿቸው የጣቢያ ቴምፕሌቶች፣ ተጠቃሚው የመረጠው ምርት ምንም ይሁን ምን ይገኛሉ።
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![በcheckout ቅጽ አርታዒ ውስጥ የቴምፕሌት መምረጫ መስክ](/img/config/checkout-form-template-step.png)
 
-የሞዳል መስኮት ይከፈታል። በ**Template Sites** መስክ ውስጥ በምዝገባ ጊዜ እንዲገኙ የሚፈልጓቸውን ሁሉንም site templates መምረጥ እና መዘርዘር ይችላሉ። ከዚህ ስትገልጹት የsite templates፣ ተጠቃሚው የትኛውንም ምርት ቢመርጥም ምንም ሳይቀየር ይገኛሉ።
+በፊት-ገጽ ላይ፣ ደንበኞች በcheckout ወቅት የቴምፕሌት መምረጫውን ያያሉ እና ለአዲሱ ጣቢያቸው መነሻ ንድፍ መምረጥ ይችላሉ።
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![በምዝገባ ወቅት የፊት-ገጽ ቴምፕሌት መምረጫ](/img/config/frontend-template-chooser.png)
 
-### የSite Template አማራጮች (Site Template Options)
+### የጣቢያ ቴምፕሌት አማራጮች {#site-template-options}
 
-በUltimate Multisite settings ስር ማብራት ወይም ማጥፋት የሚችሏቸው ሌሎች የsite templates ተግባራት አሉ።
+በUltimate Multisite ቅንብሮች ስር ማብራት ወይም ማጥፋት የሚችሏቸው ሌሎች የጣቢያ ቴምፕሌት ተግባራት አሉ።
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![በUltimate Multisite ቅንብሮች ውስጥ የጣቢያ ቴምፕሌት አማራጮች](/img/config/settings-sites-templates-section.png)
 
-#### Template Switching መፍቀድ (Allow Template Switching)
+#### ቴምፕሌት መቀየርን ፍቀድ {#allow-template-switching}
 
-ይህ አማራጭን ማብራት ደንበኞች አካውንት እና site ከተፈጠረ በኋላ በምዝገባ ሂደት ወቅት የመረጡትን template እንዲቀይሩ ያስችላል። ይህ ለደንበኛ እይታ ጠቃሚ ነው፣ ምክንያቱም በኋላ ላይ የመጀመሪያ ምርጫቸው ለተለየ ፍላጎታቸው ምርጥ እንዳልሆነ ከተረዳ፣ template እንዲመርጡ ያስችላቸዋል።
+ይህን አማራጭ ማንቃት፣ Account እና ጣቢያው ከተፈጠሩ በኋላ ደንበኞችዎ በመመዝገቢያ ሂደት ወቅት የመረጡትን ቴምፕሌት እንዲቀይሩ ይፈቅዳል። ይህ ከደንበኛ እይታ ጠቃሚ ነው፣ ምክንያቱም በኋላ የመጀመሪያ ምርጫቸው ለልዩ ፍላጎታቸው ምርጡ እንዳልሆነ ካወቁ፣ ቴምፕሌትን እንደገና እንዲመርጡ ያስችላቸዋል።
 
-#### ተጠቃሚዎች የራሳቸውን Site template አድርገው እንዲጠቀሙ መፍቀድ (Allow Users to use their Site as templates)
+#### ተጠቃሚዎች ጣቢያቸውን እንደ ቴምፕሌቶች እንዲጠቀሙ ፍቀድ {#allow-users-to-use-their-site-as-templates}
 
-የsubsite ተጠቃሚዎች የራሳቸውን ድረ-ገጽ በመገንባት እና በማበጀት ጊዜ አሳልፈዋል፣ ስለዚህ በኔትወርክዎ ላይ ሌላ subsite ሲፈጥሩ እንደ site template አንዱ ሊገለብጡት ይፈልጉ ይሆናል። ይህ አማራጭ ይህን እንዲያሳኩ ያስችላቸዋል።
+የንዑስ ጣቢያ ተጠቃሚዎች የራሳቸውን ጣቢያ በመገንባት እና በመንደፍ ጊዜ ስለሚያሳልፉ፣ በኔትወርክዎ ላይ ሌላ ንዑስ ጣቢያ ሲፈጥሩ እንደሚገኙ የጣቢያ ቴምፕሌቶች አንዱ አድርገው ለመቅዳት እና ለመጠቀም ሊፈልጉ ይችላሉ። ይህ አማራጭ ያንን እንዲያሳኩ ይፈቅድላቸዋል።
 
-#### Template ሲገለበጥ ሚዲያ መቅዳት (Copy Media on Template Duplication)
+#### በቴምፕሌት ማባዛት ላይ ሚዲያ ቅዳ {#copy-media-on-template-duplication}
 
-ይህ አማራጭን መምረጥ የtemplate site ላይ የተ上传 ሚዲያ ወደ አዲስ በተፈጠረው site ይገለበጣል። ይህ በአንዲት Plan ላይ ሊተካ ይችላል።
+ይህን አማራጭ መምረጥ፣ በቴምፕሌት ጣቢያው ላይ የተሰቀለውን ሚዲያ ወደ አዲስ የተፈጠረው ጣቢያ ይቀዳል። ይህ በእያንዳንዱ ዕቅድ ላይ ሊሻር ይችላል።
 
-#### **የSite Templatesን ከ search engines እንዳይሰርጉ መከላከል (Prevent Search Engines from indexing Site Templates)**
+#### **የፍለጋ ሞተሮች የጣቢያ ቴምፕሌቶችን እንዳይመዘግቡ ከልክል** {#prevent-search-engines-from-indexing-site-templates}
 
-በዚህ ጽሑፍ እንደተብራራው የsite templates መሰረታዊ ቢሆኑም የኔትወርክዎ አካል ናቸው፣ ይህም ማለት ለ search engines እንዲገኙ አሁንም ይገኛሉ። ይህ አማራጭ site templates እንዲደበቁ ያስችልዎታል፣ ስለዚህ search engines ሊሰርጉ አይችሉም።
+በዚህ ጽሑፍ ውስጥ እንደተወያዩት የጣቢያ ቴምፕሌቶች መነሻ አብነቶች ናቸው፣ ግን አሁንም የኔትወርክዎ አካል ናቸው፣ ይህም ማለት ለፍለጋ ሞተሮች ሊገኙ ይችላሉ ማለት ነው። ይህ አማራጭ የጣቢያ ቴምፕሌቶቹን እንዲደብቁ ይፈቅድልዎታል፣ ስለዚህ የፍለጋ ሞተሮች ሊመዘግቧቸው ይችላሉ።
 
-## Site Templatesን በራስ-ሰር መፈለግ እና መተካት (auto search-and-replace) በማስጨመር መሙላት
+## በራስ-ሰር ፈልጎ-መተካት የጣቢያ ቴምፕሌቶችን ቀድሞ መሙላት {#pre-populating-site-templates-with-auto-search-and-replace}
 
-በUltimate Multisite በጣም ኃይለኛ ባህሪያት አንዱ በምዝገባ ቅጽ ላይ መዘረዝ የጽሑፍ፣ ቀለም እና የመምረጥ መስኮቶችን የመጨመር ችሎታ ነው። ያንን መረጃ ስንሰበስብ፣ በምርጫው የsite template ውስጥ ባሉ የተወሰኑ ክፍሎች ውስጥ ይዘትን ለመሙላት ልንጠቀምበት እንችላለን። ከዚያም አዲሱ site ሲታተም፣ Ultimate Multisite ቦታዎችን (placeholders) በምዝገባ ወቅት በተገባው ትክክለኛ መረጃ ይተካዋል።
+ከUltimate Multisite በጣም ኃይለኛ ባህሪያት አንዱ፣ በምዝገባ ቅጹ ላይ የፈለጉትን ጽሑፍ፣ ቀለም እና የመምረጫ መስኮች ማከል መቻሉ ነው። ያንን ውሂብ ካገኘን በኋላ፣ በተመረጠው የጣቢያ ቴምፕሌት ውስጥ በተወሰኑ ክፍሎች ላይ ያለውን ይዘት ቀድመን ለመሙላት ልንጠቀምበት እንችላለን። ከዚያ፣ አዲሱ ጣቢያ ሲታተም፣ Ultimate Multisite ቦታ-ያዦቹን በምዝገባ ወቅት በገባው ትክክለኛ መረጃ ይተካል።
 
-ለምሳሌ፣ በምዝገባ ወቅት የend-user የኩባንያ ስም እንዲያገኙ እና የኩባንያውን ስም በhomepage ላይ በራስ-ሰር ማስቀመጥ ከፈለጉ። በtemplate site homepageዎ ላይ፣ ከታች ባለው ምስል ላይ እንደሚታየው ቦታዎችን (placeholders) መጨመር አለብዎት (placeholders በሁለት ኩርባ ብራሴልስ - {{placeholder_name}} - መከበብ አለባቸው)።
+ለምሳሌ፣ በምዝገባ ወቅት የመጨረሻ ተጠቃሚዎን የኩባንያ ስም ለማግኘት እና የኩባንያውን ስም በመነሻ ገጹ ላይ በራስ-ሰር ለማስቀመጥ ከፈለጉ። በቴምፕሌት ጣቢያዎ መነሻ ገጽ ላይ ቦታ-ያዦቹን ማከል ያስፈልግዎታል፣ ከታች ባለው ምስል እንደሚታየው (ቦታ-ያዦች በድርብ ጠማማ ቅንፎች ተከበው መታከል አለባቸው - {{placeholder_name}})።
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![በጠማማ ቅንፎች ውስጥ የቦታ-ያዥ ጽሑፍ ያለው መነሻ ገጽ](/img/config/site-templates-list.png)
 
-ከዚያም፣ ያንን መረጃ ለመያዝ በcheckout formዎ ላይ የሚመሳሰል የምዝገባ መስክ መጨመር ይችላሉ፦
+ከዚያ፣ ያንን ውሂብ ለመያዝ በcheckout ቅጽዎ ላይ የሚዛመድ የምዝገባ መስክ በቀላሉ ማከል ይችላሉ። ለቴምፕሌት መምረጫ የተጠቀሙት ተመሳሳይ የcheckout ቅጽ አርታዒ፣ ብጁ መስኮችን ከቴምፕሌት መምረጫው ጋር አብረው እንዲያስቀምጡ ያስችልዎታል፦
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![በcheckout ቅጽ አርታዒ ውስጥ የቴምፕሌት መምረጫ እና የምዝገባ መስኮች](/img/config/checkout-form-template-step.png)
 
-ደንበኛዎ በምዝገባ ወቅት ያንን መስክ መሙላት ይችላል።
+ደንበኛዎ ከዚያ በምዝገባው ወቅት ያንን መስክ መሙላት ይችላል።
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![ከቴምፕሌት መምረጫ ጋር የፊት-ገጽ checkout ቅጽ](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite ከዚያ ቦታ-ያዦቹን በደንበኛው በተሰጠው ውሂብ በራስ-ሰር ይተካል።
 
-Ultimate Multisite ከዚያም ቦታዎችን በደንበኛው ባቀረበው መረጃ በራስ-ሰር ይተካዋል።
+![በጣቢያው ላይ በደንበኛ ውሂብ የተተኩ ቦታ-ያዦች](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### “በቦታ-ያዦች የተሞላ ቴምፕሌት” ችግርን መፍታት {#solving-the-template-full-of-placeholders-problem}
 
-### "በቦታዎች የተሞላ template" ችግርን መፍታት
+ያ ሁሉ ጥሩ ነው፣ ግን አስቀያሚ ችግር ያጋጥመናል፦ አሁን የጣቢያ ቴምፕሌቶቻችን - በደንበኞቻችን ሊጎበኙ የሚችሉ - ብዙ የማይነግሩ አስቀያሚ ቦታ-ያዦች ሞልተዋል።
 
-ይህ ሁሉ በጣም ጥሩ ነው፣ ግን የሚያጋጥመን የሚያምራ ችግር አለ፦ አሁን የsite templatesዎ - ደንበኞቻችን ሊጎበኙ የሚችሉበት - ብዙ ትርጉም የማይሰጡ አስቀያሚ ቦታዎች ተሞልተዋል።
+ያንን ለመፍታት፣ ለቦታ-ያዦቹ የሐሰት እሴቶችን የማቀናበር አማራጭ እናቀርባለን፣ እና ደንበኞችዎ ሲጎበኙ በቴምፕሌት ጣቢያዎች ላይ ያሉ ይዘቶቻቸውን ለመፈለግ እና ለመተካት እነዚያን እሴቶች እንጠቀማለን።
 
-ይህንን ለመፍታት፣ ለቦታዎቹ የውሸት ዋጋዎችን (fake values) የማዘጋጀት አማራጭ እናቀርባለን፣ እና ደንበኞች ሲጎበኙ በtemplate sites ላይ ይዘታቸውን ለማፈለግ እና ለመተካት እነዚህን ዋጋዎች እንጠቀማለን።
+ወደ **Ultimate Multisite > ቅንብሮች > ጣቢያዎች** በመሄድ፣ ከዚያም በጎን አሞሌው ላይ የ**ቦታ-ያዦችን አርትዕ** አገናኝን በመጫን፣ የቴምፕሌት ቦታ-ያዦች አርታዒን መድረስ ይችላሉ።
 
-የtemplate placeholders አርታኢ (editor) ላይ ለመድረስ ወደ **Ultimate Multisite > Settings > Sites** በመሄድ፣ ከዚያም በጎን አሞሌው (sidebar) ላይ **Edit Placeholders** ሊንክን መጫን ይችላሉ።
+![በጣቢያዎች ቅንብሮች ገጽ ስር የጣቢያ ቴምፕሌት ቅንብሮች](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+ይህ ወደ ቦታ-ያዦቹ የይዘት አርታዒ ይወስድዎታል፣ በዚያም ቦታ-ያዦችን እና የእነሱን ተዛማጅ ይዘት ማከል ይችላሉ።
 
-ይህ ወደ placeholders ይዘት አርታኢ (content editor) ይወስድዎታል፣ እዚያም placeholders እና ለእነሱ የሚሆኑ ይዘቶችን መጨመር ይችላሉ።
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![የቴምፕሌት ቦታ-ያዦች ይዘት አርታዒ መግቢያ ነጥብ](/img/config/settings-sites-templates-section.png)

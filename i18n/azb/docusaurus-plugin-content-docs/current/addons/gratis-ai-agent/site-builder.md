@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (Gratis AI Agent v1.4.0 ile tanıtıldı) çok adımlı web sitesi oluşturma sürecini yöneten ana motordur. Agent'a "bir restoran web sitesi oluştur" veya "bir blog'lu portfolyo yap" dediğinizde, orkestratör bu genel hedefi yapılandırılmış bir **plan** haline getirir, bunu gerçekleştirmek için gereken plugin'leri bulur, her adımı sırayla çalıştırır, ilerlemeyi takip eder ve hatalardan bağımsız olarak kurtulur.
 
 ---
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### 1. Plan Oluşturma
+### 1. Plan Oluşturma {#1-plan-generation}
 
 Agent, bir site oluşturma talimatı aldığında, bir JSON **site planı** üretmek için `create_site_plan` yeteneğini çağırır. Plan şunları tanımlar:
 
@@ -61,7 +61,7 @@ Agent, bir site oluşturma talimatı aldığında, bir JSON **site planı** üre
 }
 ```
 
-### 2. Plugin Keşfi
+### 2. Plugin Keşfi {#2-plugin-discovery}
 
 Yürütme başlamadan önce, orkestratör planın `plugin_requirements` kısmını tarar ve hangi plugin'lerin zaten aktif olduğunu kontrol eder. Eksik plugin'ler için şunları yapar:
 
@@ -71,7 +71,7 @@ Yürütme başlamadan önce, orkestratör planın `plugin_requirements` kısmın
 
 Plugin keşfi başarısız olursa bu kritik bir hata değildir — orkestratör etkilenen adımları `skipped` (atlandı) olarak işaretler ve planın geri kalanıyla devam eder.
 
-### 3. Plan Yürütme
+### 3. Plan Yürütme {#3-plan-execution}
 
 Orkestratör, plan ID'si ile `execute_site_plan` çağrısını yapar. Yürütme aşama aşama, adım adım ilerler:
 
@@ -79,7 +79,7 @@ Orkestratör, plan ID'si ile `execute_site_plan` çağrısını yapar. Yürütme
 - **Parallel steps (Paralel adımlar)** — aynı aşama içindeki ve birbirine bağımlılığı olmayan adımlar, `parallel` bayrağı ayarlandığında eş zamanlı olarak gönderilir.
 - **Step timeout (Adım zaman aşımı)** — her adımın ayrı bir zaman aşımı süresi vardır (varsayılan: `Ability Timeout` ayarı). Zaman aşımına uğrayan bir adım `failed` (başarısız) olarak işaretlenir ve plan devam eder.
 
-### 4. İlerleme Takibi
+### 4. İlerleme Takibi {#4-progress-tracking}
 
 Yürütme durumunu kontrol etmek için istediğiniz zaman `get_plan_progress` çağrısını yapın:
 
@@ -104,7 +104,7 @@ WP-CLI kullanıcıları ilerlemeyi şu komutla izleyebilir:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Hata Kurtarma
+### 5. Hata Kurtarma {#5-error-recovery}
 
 Bir adım başarısız olduğunda, orkestratör planda tanımlanmış bir **fallback** (geri dönüş) adımı arar:
 
@@ -115,9 +115,9 @@ Agent, tüm başarısızlıkları son plan özetinde raporlar ve kurtarılamayan
 
 ---
 
-## Site Plan Yetenekleri
+## Site Plan Yetenekleri {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Doğal dil hedef açıklamasından yapılandırılmış bir site planı oluşturur.
 
@@ -134,7 +134,7 @@ Doğal dil hedef açıklamasından yapılandırılmış bir site planı oluştur
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Daha önce oluşturulmuş bir site planını çalıştırmaya başlar.
 
@@ -150,7 +150,7 @@ Daha önce oluşturulmuş bir site planını çalıştırmaya başlar.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Bir site planının mevcut yürütme durumunu döndürür.
 
@@ -164,7 +164,7 @@ Bir site planının mevcut yürütme durumunu döndürür.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Başarısız bir adımı manuel olarak çözer ve plan yürütmesini bir sonraki adımdan devam ettirir. Otomatik kurtarma mümkün olmadığında ve müdahale etmek istediğinizde kullanılır.
 
@@ -180,7 +180,7 @@ Başarısız bir adımı manuel olarak çözer ve plan yürütmesini bir sonraki
 
 ---
 
-## v1 ve v2 Karşılaştırması
+## v1 ve v2 Karşılaştırması {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Başarısız bir adımı manuel olarak çözer ve plan yürütmesini bir sonraki
 
 ---
 
-## WP-CLI Plan Komutları
+## WP-CLI Plan Komutları {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Bir hedef açıklamasından site planı oluşturur.
 
@@ -205,7 +205,7 @@ Bir hedef açıklamasından site planı oluşturur.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Daha önce oluşturulmuş bir planı çalıştırır.
 
@@ -213,7 +213,7 @@ Daha önce oluşturulmuş bir planı çalıştırır.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Çalışan veya tamamlanmış bir planın mevcut ilerlemesini gösterir.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Tüm site planlarını (beklemede, devam ediyor ve tamamlanmış) listeler.
 
@@ -229,7 +229,7 @@ Tüm site planlarını (beklemede, devam ediyor ve tamamlanmış) listeler.
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Başarısız olan bir planı `pending` (beklemede) durumuna sıfırlar, böylece baştan çalıştırılabilir.
 

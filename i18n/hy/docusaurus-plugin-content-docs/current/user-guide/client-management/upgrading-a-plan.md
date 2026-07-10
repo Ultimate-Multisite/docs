@@ -3,7 +3,7 @@ title: Պլանի թարմացում
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Պլանի թարմացում (v2)
+# Պլանի թարմացում (v2) {#upgrading-a-plan-v2}
 
 _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ultimate Multisite-ի 2.x տարբերակին։**_
 
@@ -39,7 +39,7 @@ _**ԿԱՐԵՎՈՐ ՆՇՈՒՄ. Այս հոդվածը վերաբերում է Ulti
 
 ##
 
-## Ապերացիայի և Թվային Ճանապարհների (Upgrade and Downgrade Paths)
+## Ապերացիայի և Թվային Ճանապարհների (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Ձեր յուրաքանչյուր արտադրանքի համար կունենաք **Up & Downgrades** տաբը։ Այդ տաբի առաջին տարբերակն է **Plan Group** անվանված դաշտը։
 

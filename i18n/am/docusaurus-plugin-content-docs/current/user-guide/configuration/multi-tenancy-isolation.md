@@ -3,11 +3,11 @@ title: የብዙ ተጠቃሚ መለያ መለየት
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# በርካታ- किरायेदार መለያየት (Multi-Tenancy Isolation)
+# በርካታ- किरायेदार መለያየት (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከታዮች (sovereign tenants) በየ-subsite የውሂብ ጎታ እና የፋይል ሲስተም መለያየትን ይደግፋል። ይህ የደንበኛውን መረጃ በተናጠል እንዲቆይ በማድረግ፣ በኔትወርክ ደረጃ የሚደረጉ አሰጣጥ (provisioning)፣ ክፍያ (billing) እና አስተዳደር ሂደቶችን ይጠብቃል።
 
-## የመለያየት ስልት (Isolation strategy)
+## የመለያየት ስልት (Isolation strategy) {#isolation-strategy}
 
 ለጠንካራ የውሂብ መለያየት፣ ለተመደበ የፋይል ማከማቻ ወይም ለተለየ የ호ስት ድንበር የሚያስፈልጋቸው ደንበኞችን ጠንካራ መለያየት (sovereign isolation) ይጠቀሙ።
 
@@ -18,7 +18,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከታዮች (soverei
 - ጣቢያውን ወደ መረጃው፣ ዋና መንገድ (root path)፣ የ호ስት ስም (hostname) እና የመለያየት ሞዴል የሚያገናኝ የደንበኛ መዝገብ (tenant registry entry)።
 - ተከታዩ ከመጀመሩ በፊት የማሻሻያ ማረጋገጫ ውጤት (migration verification result)።
 
-## የውሂብ ጎታ 호ስት ማያያዝ (Database host binding)
+## የውሂብ ጎታ 호ስት ማያያዝ (Database host binding) {#database-host-binding}
 
 버전 1.2.0 ለሉዓላዊ መጫኖች (sovereign installs) በ ডিফল্ট ተመሳሳይ ማሽን ላይ የሚደረግ የ호ስት ማያያዝ ባህሪን ይለውጣል። እንደ `localhost` ያሉ ተመሳሳይ የማሽን እሴቶች Bedrock፣ FrankenPHP እና ወደ 컨ቴይነር የተጫኑ WordPress መጫኖች የMySQL የሚያዩትን 호ስት ስም በትክክል እንዲፈቅዱና ፈቃዶችን እንዲያረጋግጡ ያደርጋሉ።
 
@@ -31,11 +31,11 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከታዮች (soverei
 
 ማረጋገጫዎች ውድቀት (grant failures) ካሳዩ፣ የደንበኛውን DB ተጠቃሚ መብቶች (user grants) ከየተቀመጠው 호ስት ማያያዝ ጋር ያነፃፅሩ። ለ`user@localhost` የተሰጠው ተጠቃሚ ከ`user@127.0.0.1` ወይም `user@%` የተለየ ነው።
 
-## የፋይል ሥር (Filesystem root)
+## የፋይል ሥር (Filesystem root) {#filesystem-root}
 
 የተከራዩ ሩት (tenant root) በሪስታርት እና በዲፕሎይመንት ላይ የተረጋጋ መሆን አለበት። ጊዜያዊ ማውጫ መንገዶችን ያስወግዱ። ለBedrock-ዘይቤ ጭነቶች፣ የሩቱ根 (root) ወደ ተከራዩ ቡትስት የሚጠብቀውን WordPress የድር ሥር እንጂ ፕሮጀክት ሩቱን ብቻ እንዳይመጥን ያረጋግጡ።
 
-## የማዘጋጃ ቅደም ተከተል (Provisioning order)
+## የማዘጋጃ ቅደም ተከተል (Provisioning order) {#provisioning-order}
 
 ለአዳዲስ ሉዓላዊ ተከራዮች፣ ይህንን ቅደም ተከተል ይጠቀሙ፦
 
@@ -49,7 +49,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 ለሉዓላዊ ተከታዮች (soverei
 
 ይህ ቅደም ተከተል የዳታቤዝ ጸሐፊዎች፣ ተጠቃሚዎች እና የድር ስርዓት መረጃ ከመዘጋጋቸው በፊት የተከራዩ ተከፋፍሎ የሚመጡ ትራፊኮችን እንዳያገኙ ይከላከላል።
 
-## የሉዓላዊ ደንበኛ አስተዳደር ፍሰቶች (Sovereign customer management flows)
+## የሉዓላዊ ደንበኛ አስተዳደር ፍሰቶች (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 በሉዓላዊ ሁነታው (sovereign mode) ሲበራ፣ የደንበኛ አስተዳደር እርምጃዎችን በዋናው ጣቢያ ላይ ይይዛል። ተከራዩ እንደ የተገለለ WordPress ጭነት ሊሰራ ቢችልም፣ በኔትወርክ ክፍያ፣ አባልነት ወይም የጋራ መለያ መረጃ ላይ የሚመሰረቱ የደንበኛ ግንኙነት እርምጃዎች በተከራዩ ራንታይም ውስጥ ለማጠናቀቅ ከመሞከር ይልቅ ደንበኛውን ወደ ዋናው ጣቢያ እንዲመለሱ ማድረግ አለባቸው።
 

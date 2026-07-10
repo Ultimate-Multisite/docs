@@ -4,23 +4,23 @@ title: فیلتر - wu_is_development_mode
 sidebar_label: wu_is_development_mode
 _i18n_hash: 9bf3a80040f117df8f2c359224f41f44
 ---
-# فیلتر: wu_is_development_mode
+# فیلتر: wu_is_development_mode {#filter-wuisdevelopmentmode}
 
 این فیلتر به توسعه‌دهندگان پلاگین اجازه می‌دهد تا تست‌های اضافی برای حالت توسعه (development mode) اضافه کنند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
 | $is_development_mode | `bool` | وضعیت فعلی توسعه. |
 | $site_url | `string` | آدرس سایت. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/domain-mapping/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/domain-mapping/class-helper.php#L63) در خط ۶۳ تعریف شده است.
 
 
-## مقدار بازگشتی
+## مقدار بازگشتی {#returns}

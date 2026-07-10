@@ -3,18 +3,18 @@ title: Awoodda Theme Builderka
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Awooddaalinta Qalabka Theme Builder: Scaffold and Activate Block Themes
+# Awooddaalinta Qalabka Theme Builder: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 waxay soo bandhigtay laba awood oo xooggan oo kuu oggolaanaya inaad theme-yada block-ka gaarka ah (custom) si toos ah uga sameyso oo u soo dejisid interface-ka wada hadalka (chat).
 
-## Aragtida Guud (Overview)
+## Aragtida Guud (Overview) {#overview}
 
 Awoodaha **scaffold-block-theme** iyo **activate-theme** waxay u oggolaanayaan agents-ka inay:
 - Sameeyaan theme-yada block-ka oo dhammaystiran, diyaar u ah in la isticmaalo (production-ready) iyadoo ku salaysan waxaad sheegto.
 - Si toos ah ugu furayaan theme-yada website-kaaga iyadoon loo baahnayn in la qabto wax gacanta lagu sameeyo.
 - Waxay abuuraan muuqaallo isku mid ah iyadoo la raacayo go'aaminta naqshadaynta (design decisions).
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Awoodda **scaffold-block-theme** waxay samaynaysaa theme-ka block-ka cusub ee WordPress oo leh qaab dhismeed oo theme-ka dhammaystiran, oo ay ku jiraan:
 
@@ -23,7 +23,7 @@ Awoodda **scaffold-block-theme** waxay samaynaysaa theme-ka block-ka cusub ee Wo
 - Qaab-dhismeedka iyo isbeddellada gaarka ah ee block-ka.
 - Metadata-da theme-ka iyo sheekooyinka taageerada (support declarations).
 
-### Sida Loo Isticmaalo (How to Invoke)
+### Sida Loo Isticmaalo (How to Invoke) {#how-to-invoke}
 
 Haddii aad wada hadal lahayd Superdav AI Agent, waxaad codsan kartaa in la sameeyo theme:
 
@@ -38,7 +38,7 @@ Agent-ku wuxuu samayn doonaa:
 3. Wuxuu samayn doonaa dhammaan file-yada theme-ka ee loo baahan yahay.
 4. Wuxuu diyaarin doonaa theme-ka si la furayo (activation).
 
-### Waxa La Filayaa In Lagu Soo Bandhigo (Expected Output)
+### Waxa La Filayaa In Lagu Soo Bandhigo (Expected Output) {#expected-output}
 
 Marka awooddu si guuleystiran u fuliso, waxaad arki doontaa:
 
@@ -56,11 +56,11 @@ Tusaale oo soo baxaya:
   Status: Ready to activate
 ```
 
-## Activate Theme
+## Activate Theme {#activate-theme}
 
 اقتدار **activate-theme** wuxuu site-kaaga beddelayaa theme cusub oo la sameeyay ama jira, taasoo ah block theme.
 
-### Sida Loo Isticmaalo
+### Sida Loo Isticmaalo {#how-to-invoke-1}
 
 Marka aad theme samaysato (scaffolding), waxaad si degdeg ah u isticmaali kartaa:
 
@@ -74,7 +74,7 @@ Ama isticmaal inaad fuliso theme jira oo la haysto:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Waxa La Qiyaasi Karo (Expected Output)
+### Waxa La Qiyaasi Karo (Expected Output) {#expected-output-1}
 
 Marka fulintaadu si guuleed u dhacdo:
 
@@ -92,7 +92,7 @@ Tusaale oo natiijada ah:
   Fiiro: Hubi bogga ugu horreeya si aad u ogaato qaabdhismeedka cusub
 ```
 
-## Habka Shaqaynta (Workflow): Samaysi oo Fulid
+## Habka Shaqaynta (Workflow): Samaysi oo Fulid {#workflow-scaffold-and-activate}
 
 Habka caadiga ah wuxuu isku darayaa labada awoodood:
 
@@ -102,7 +102,7 @@ Habka caadiga ah wuxuu isku darayaa labada awoodood:
 4. **Fulid**: "Furi theme-ka hadda"
 5. **Hubi**: Tag site-kaaga si aad u hubiso in qaabdhismeedka cusub uu fuliyay
 
-## Design Tokens iyo Wax Ka Beddelid (Customization)
+## Design Tokens iyo Wax Ka Beddelid (Customization) {#design-tokens-and-customization}
 
 Theme-yada la samaynayay waxay isticmaalaan design tokens-ka WordPress (`theme.json`) ee:
 
@@ -114,14 +114,14 @@ Theme-yada la samaynayay waxay isticmaalaan design tokens-ka WordPress (`theme.j
 
 Tokens-kan waxaa lagu isku dhejiyay `theme.json`, taasoo fududaynaysa inaad hagaajiso dhammaan nidaamka design-kaaga iyadoo la isticmaalayo fayl hal ah.
 
-## Xaddidda iyo Fiiro Gaar Ah (Limitations and Notes)
+## Xaddidda iyo Fiiro Gaar Ah (Limitations and Notes) {#limitations-and-notes}
 
 - Themes-ka waxaa lagu dhigaa `/wp-content/themes/` waxayna inay raacayaan habka magaca WordPress (WordPress naming conventions).
 - Waxaa la baahan yahay inuu aad leeyahay fursadaha saxda ah ee website-kaaga si loo fuliyo Activation.
 - Koodhka PHP-ga gaarka ah ee ku jira themes-ka waa mid yar; isticmaal plugins haddii aad u baahan tahay waxa adag.
 - Block themes-ku waxay ugu fiican yihiin WordPress 5.9 iyo ka dambeeya.
 
-## Waxyaabaha La Dhaqso (Troubleshooting)
+## Waxyaabaha La Dhaqso (Troubleshooting) {#troubleshooting}
 
 **Theme-ka ma soo muuqdo ka dib marka la dhigo (scaffolding)**
 - Hubi in folder-ka theme-ka uu jiro oouu leeyahay fursadaha saxda ah.
@@ -138,7 +138,7 @@ Tokens-kan waxaa lagu isku dhejiyay `theme.json`, taasoo fududaynaysa inaad haga
 - Nadaafso dhammaan caching plugins-kaaga.
 - Hubi in nooca WordPress-kaagu taageero design tokens-ka aad isticmaalayso.
 
-## Tallaabooyinka Xiga ah (Next Steps)
+## Tallaabooyinka Xiga ah (Next Steps) {#next-steps}
 
 Marka aad theme-kaaga Activate gareyso, waxaad samayn kartaa:
 - Isticmaal **Design System Aesthetics skill** si aad u hagaajisid qaabka qoraalka (typography), midabada, iyo meelaha (spacing).

@@ -4,20 +4,20 @@ title: 'Acción - wu_checkout_add_field_{$field_class->get_type()}'
 sidebar_label: 'wu_checkout_add_field_{$field_class->get_type()}'
 _i18n_hash: 2cac4ddcc6228d9da73b73f6a58f3d2a
 ---
-# Acción: wu_checkout_add_field_\{$field_class->get_type()\}
+# Acción: wu_checkout_add_field_\{$field_class->get_type()\} {#action-wucheckoutaddfieldfieldclass-gettype}
 
 Se dispara antes de que se añada un campo al formulario de pago.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |--------|------|-------------|
 | $field_array | `array` | El campo que se insertará. |
 
-### Desde
+### Desde {#since}
 
 - 2.1.1
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/functions/checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/checkout.php#L134) en la línea 134

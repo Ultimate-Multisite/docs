@@ -3,15 +3,15 @@ title: Orkestracija Izgradnje Sajta v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestracija v2
+# Site Builder Orchestracija v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestracija v2 (uvedena sa Gratis AI Agent v1.4.0) je motor koji pokreće kreiranje web stranica u više koraka. Kada agentu kažete da "izgradi restoran web stranicu" ili "kreira portfolio sa blogom", orkestrator razbija taj cilj na visokom nivou u strukturiran **plan**, otkriva pluginove potrebne za njegovo ostvarenje, izvršava svaki korak sekvencijalno, prati napredak i autonomno se oporavlja od grešaka.
 
 ---
 
-## Kako Funkcioniše
+## Kako Funkcioniše {#how-it-works}
 
-### 1. Generisanje plana
+### 1. Generisanje plana {#1-plan-generation}
 
 Kada agent primi uputstvo za izgradnju stranice, on poziva sposobnost `create_site_plan` kako bi proizveo JSON **plan stranice**. Plan opisuje:
 
@@ -61,7 +61,7 @@ Kada agent primi uputstvo za izgradnju stranice, on poziva sposobnost `create_si
 }
 ```
 
-### 2. Otkrivanje pluginova
+### 2. Otkrivanje pluginova {#2-plugin-discovery}
 
 Prije nego što počne izvršavanje, orkestrator skenira `plugin_requirements` plana i proverava koji su pluginovi već aktivni. Za nedostajuće pluginove, on:
 
@@ -71,7 +71,7 @@ Prije nego što počne izvršavanje, orkestrator skenira `plugin_requirements` p
 
 Neuspešnost otkrivanja pluginova nije kritična — orkestrator označava pogođene korake kao `skipped` i nastavlja sa ostatkom plana.
 
-### 3. Izvršavanje plana
+### 3. Izvršavanje plana {#3-plan-execution}
 
 Orkestrator poziva `execute_site_plan` sa ID-jem plana. Izvršavanje se odvija fazom po fazu, korak po korak:
 
@@ -79,7 +79,7 @@ Orkestrator poziva `execute_site_plan` sa ID-jem plana. Izvršavanje se odvija f
 - **Paralelni koraci** — koraci unutar iste faze koji nemaju međusobnih ovisnosti pokreću se istovremeno kada je postavljena oznaka `parallel`.
 - **Timeout koraka** — svaki korak ima pojedinačan timeout (podrazumevano: podešavanje `Ability Timeout`). Korak koji je isteklo vrijeme označava se kao `failed` i plan nastavlja.
 
-### 4. Praćenje napretka
+### 4. Praćenje napretka {#4-progress-tracking}
 
 Pozovite `get_plan_progress` u bilo kojem trenutku da provjerite status izvršavanja:
 
@@ -104,7 +104,7 @@ Korisnici WP-CLI mogu pratiti napredak sa:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Oporavak od grešaka
+### 5. Oporavak od grešaka {#5-error-recovery}
 
 Kada korak ne uspije, orkestrator provjerava da li postoji **fallback** korak definisan u planu:
 
@@ -115,9 +115,9 @@ Agent izvještava sve neuspjehe u konačnom sažetku plana i može predložiti r
 
 ---
 
-## Sposnosti plana stranice (Site Plan Abilities)
+## Sposnosti plana stranice (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generiše strukturirani plan stranice iz opisa cilja na prirodnom jeziku.
 
@@ -134,7 +134,7 @@ Generiše strukturirani plan stranice iz opisa cilja na prirodnom jeziku.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Pokreće izvršavanje prethodno generisanog plana stranice.
 
@@ -150,7 +150,7 @@ Pokreće izvršavanje prethodno generisanog plana stranice.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Vraća trenutni status izvršavanja plana stranice.
 
@@ -164,7 +164,7 @@ Vraća trenutni status izvršavanja plana stranice.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ručno rješava neuspješan korak i nastavlja izvršavanje plana od sljedećeg koraka. Koristite ovo kada nije bio moguć automatski oporavak i želite da intervenišete.
 
@@ -180,7 +180,7 @@ Ručno rješava neuspješan korak i nastavlja izvršavanje plana od sljedećeg k
 
 ---
 
-## Poređenje v1 i v2
+## Poređenje v1 i v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ručno rješava neuspješan korak i nastavlja izvršavanje plana od sljedećeg k
 
 ---
 
-## WP-CLI Komande za Plan
+## WP-CLI Komande za Plan {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generiše plan stranice iz opisa cilja.
 
@@ -205,7 +205,7 @@ Generiše plan stranice iz opisa cilja.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Izvršava prethodno generisani plan.
 
@@ -213,7 +213,7 @@ Izvršava prethodno generisani plan.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Prikazuje trenutni napredak za izvršavan ili završen plan.
 
@@ -221,7 +221,7 @@ Prikazuje trenutni napredak za izvršavan ili završen plan.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lista svih planova stranica (u čekanju, u toku i završeni).
 
@@ -229,7 +229,7 @@ Lista svih planova stranica (u čekanju, u toku i završeni).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Resetuje neuspješan plan na `pending` kako bi ga bilo moguće ponovo izvršiti od početka.
 

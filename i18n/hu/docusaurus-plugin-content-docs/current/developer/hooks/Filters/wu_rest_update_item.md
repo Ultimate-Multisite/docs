@@ -4,11 +4,11 @@ title: Szűrő - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filter: wu_rest_update_item
+# Filter: wu_rest_update_item {#filter-wurestupdateitem}
 
 Megszűrő, amely meghatározza, hogy a kérés továbbadhatja-e vagy sem.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Megszűrő, amely meghatározza, hogy a kérés továbbadhatja-e vagy sem.
 | $rest_base | `array` | Entitás slugja. |
 | $this | `\Base_Manager` | Az objektum példánat. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
-### Forrás
+### Forrás {#source}
 
 Defined in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) at line 414

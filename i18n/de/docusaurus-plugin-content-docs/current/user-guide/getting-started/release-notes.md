@@ -1,82 +1,96 @@
 ---
 title: Versionshinweise
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Versionshinweise
+# Versionshinweise {#release-notes}
 
-## Version 2.12.0 — Veröffentlicht am 2026-05-15
+## Version 2.13.0 — Veröffentlicht am 2026-06-05 {#version-2130--released-on-2026-06-05}
 
-- Neu: Hostinger (hPanel) wurde als unterstützter Host-Anbieter mit Domain-Mapping-Integration hinzugefügt
-- Neu: Site Exporter verarbeitet nun Netzwerk-Import-Bundles, um eine optimierte Wiederherstellung der gesamten Website im Netzwerk zu ermöglichen
-- Behebung: BCC-Broadcast-E-Mails verwenden jetzt einen `undisclosed-recipients`-Header, um die Offenlegung der Empfängeradressen zu verhindern
-- Behebung: Das Ablaufdatum der Mitgliedschaft wird nicht mehr beschädigt, wenn mit einem Nicht-Datumswert gespeichert wird
-- Behebung: Stripe-Mitgliedschaftsaktualisierungen löschen nun korrekt Rabatte, ohne die veraltete deleteDiscount API aufzurufen
-- Behebung: SSO-Weiterleitungen auf domain-mapped Sites werden nun begrenzt, um unendliche Weiterleitungs-Schleifen zu verhindern
-- Behebung: Die Auswahl im Bild-Picker des Setup-Assistenten aktualisiert nun korrekt das zugrunde liegende Datenmodell
-- Behebung: Site Exporter CLI speichert nun die korrekte Standardauswahl der Netzwerkseite
-- Verbessert: Das gebündelte wp-cli wurde aus dem Plugin-Paket entfernt, wodurch die Plugin-Größe reduziert wird
+- Neu: Unterstützung für souveräne Mandanten für Abläufe rund um Kunden-Account, Kasse, Abrechnung, Website, Rechnung, Vorlagenwechsel und Domain-Zuordnung hinzugefügt, damit Mandantennetzwerke Kunden für verwaltete Aktionen zurück zur Haupt-Website leiten können.
+- Neu: Prüfungen für Verlängerungs-Zugangsdaten für wiederkehrende Mitgliedschaften hinzugefügt, damit Gateways die automatische Verlängerung deaktivieren können, wenn eine gespeicherte Abrechnungsvereinbarung, Subscription oder ein Vault-Token fehlt.
+- Neu: HMAC-verifizierte Loopback-Veröffentlichung für ausstehende Website-Erstellung hinzugefügt, um die Bereitstellung von der Kasse zur Website auf Hosts zuverlässiger zu machen, bei denen Hintergrundjobs verzögert sind.
+- Neu: Erweiterungspunkte für Entwickler für SSO-URLs, Basisdomains für Kassenformulare und automatische Erstellung von Domain-Einträgen hinzugefügt.
+- Fix: SSO ist über zugeordnete Domains, anonyme Broker-Besuche, Abmeldung und Abhängigkeitskonflikte zwischen Plugins hinweg zuverlässiger.
+- Fix: Ausstehende Website-Erstellung stellt sich jetzt von veralteten Veröffentlichungs-Flags wieder her und verhindert, dass Kunden auf dem Bildschirm zur Website-Erstellung festhängen.
+- Fix: Domain-Einträge werden nicht mehr für gemeinsam genutzte Basisdomains von Kassenformularen erstellt, und ungenutzte Hintergrundjobs von Host-Anbietern werden übersprungen, wenn keine Integration aktiv ist.
+- Fix: Grenzfälle bei Kasse, Rechnungsadresse, Passwort-Zurücksetzung, E-Mail-Verifizierung, Vorlagenwechsel, Touren und Kunden-Dashboard blockieren normale Kundenabläufe nicht mehr.
+- Fix: Rundsendungs-E-Mails halten Empfänger jetzt privat und vermeiden gleichzeitig fatale SMTP-/Plugin-Fehler, wenn Empfängerlisten oder Mail-Transporte fehlschlagen.
+- Fix: Grenzfälle bei Mitgliedschaftsverlängerungen, Ablaufanzeige und Zahlungseinzug vermeiden jetzt sofortige Abläufe, Abstürze oder verpasste erforderliche Zahlungen.
+- Verbessert: WordPress-Kompatibilität ist bis 7.0 getestet, produktive Vue-Assets werden aus npm-Quellen neu erstellt, und die Cypress-End-to-End-Abdeckung prüft jetzt mehr Kassen-, Einrichtungs-, SSO- und Gateway-Abläufe.
 
-## Version 2.11.0 — Veröffentlicht am 2026-05-11
+## Version 2.12.0 — Veröffentlicht am 2026-05-15 {#version-2120--released-on-2026-05-15}
 
-- Neu: Site-Exporte bündeln nun eine selbststartende `index.php`, sodass das ZIP ohne separate Plugin-Installation auf einem neuen Host installiert werden kann.
-- Neu: Der Netzwerk-Export ermöglicht es Administratoren, alle Subsites in einem einzigen Archiv von der Site Export Admin Seite aus zu exportieren.
-- Neu: Die Option „Allow Site Templates“ wird nun über eine Fallback-Kette durchgesetzt und schränkt die Verfügbarkeit von Templates bei Planlimits korrekt ein.
-- Neu: Der Checkout-Formular-Editor warnt, wenn ein Produkt hinzugefügt wird, ohne dass ein Pflichtfeld konfiguriert ist.
-- Neu: Der Tab „Import/Export-Einstellungen“ beschreibt nun klar seinen Umfang und verlinkt direkt auf das Site Export Tool.
+- Neu: Hostinger (hPanel) als unterstützter Host-Anbieter mit Integration für Domain-Zuordnung hinzugefügt
+- Neu: Website-Exporter verarbeitet jetzt Netzwerk-Importpakete für eine optimierte netzwerkweite Wiederherstellung von Websites
+- Fix: BCC-Rundsendungs-E-Mails verwenden jetzt einen Undisclosed-Recipients-Header, um die Offenlegung von Empfängeradressen zu verhindern
+- Fix: Ablaufdatum der Mitgliedschaft wird beim Speichern mit einem Nicht-Datumswert nicht mehr beschädigt
+- Fix: Stripe-Mitgliedschaftsaktualisierungen entfernen Rabatte jetzt korrekt, ohne die veraltete deleteDiscount API aufzurufen
+- Fix: SSO-Weiterleitungen auf Domain-zugeordneten Websites sind jetzt begrenzt, um unendliche Weiterleitungsschleifen zu verhindern
+- Fix: Auswahl in der Bildauswahl des Einrichtungsassistenten aktualisiert jetzt korrekt das zugrunde liegende Datenmodell
+- Fix: Website-Exporter-CLI behält jetzt die korrekte Standardauswahl der Netzwerk-Website bei
+- Verbessert: Gebündeltes wp-cli aus dem Plugin-Paket entfernt, wodurch die Plugin-Größe reduziert wird
 
-## Version 2.10.0 — Veröffentlicht am 2026-05-05
+## Version 2.11.0 — Veröffentlicht am 2026-05-11 {#version-2110--released-on-2026-05-11}
 
-- Neu: PayPal-Assistent für die Einrichtung bei manueller Eingabe von Anmeldeinformationen, mit einem OAuth-Flag-Gate für eine nahtlose Gateway-Konfiguration.
-- Neu: Das Kunden-Panel für den Template-Wechsel wurde mit einer „current-template“-Karte, einem persistenten Raster und einem **Reset current template**-Button überarbeitet.
-- Behebung: Der Template-Wechsel hängt die Benutzeroberfläche nicht mehr bei AJAX-Fehlern.
-- Behebung: Die Berechtigungszustände für den Template-Wechsel sind gegen unbefugten Zugriff gesichert.
-- Behebung: Site-Überschreibungs-Eingaben werden vor dem Speichern validiert.
-- Behebung: Die Aufforderung zur Rechnungsadresse wird nun angezeigt, wenn die Adresse leer ist.
-- Behebung: PHP 8.1 null-zu-string Deprecation Notices wurden behoben.
-- Behebung: Currents wird vor dem init-Hook lazy-loaded, um Timing-Probleme zu verhindern.
-- Behebung: Der gefilterte SSO-Pfad wird über alle Anmeldeflüsse hinweg respektiert.
-- Behebung: Leere Site-Identitätsoptionen werden beim Speichern beibehalten.
+- Neu: Website-Exporte bündeln jetzt eine selbststartende `index.php`, damit die ZIP-Datei auf einem frischen Host ohne separate Plugin-Installation installiert werden kann.
+- Neu: Netzwerkexport ermöglicht Administratoren, alle Unterwebsites in einem einzigen Archiv von der Admin-Seite für Website-Export zu exportieren.
+- Neu: Umschalter für den Plan „Website-Vorlagen erlauben“ wird jetzt über eine Fallback-Kette erzwungen, wodurch die Verfügbarkeit von Vorlagen für Plan-Limits korrekt eingeschränkt wird.
+- Neu: Editor für Kassenformulare warnt, wenn ein Produkt ohne konfiguriertes erforderliches Feld hinzugefügt wird.
+- Neu: Tab für Import-/Export-Einstellungen beschreibt jetzt klar seinen Umfang und verlinkt direkt zum Website-Export-Tool.
 
-## Version 2.9.0 — Veröffentlicht am 2026-04-30
+## Version 2.10.0 — Veröffentlicht am 2026-05-05 {#version-2100--released-on-2026-05-05}
 
-- Neu: Export und Import für einzelne Websites wurden unter **Tools > Export & Import** hinzugefügt.
-- Behebung: Export-ZIP-Dateien werden nun über einen authentifizierten Download-Endpunkt bereitgestellt.
-- Behebung: Das Risiko von SQL-Injection und Abfrageprobleme bei ausstehenden Export-/Import-Abfragen wurden korrigiert.
-- Behebung: Die Site wird nicht veröffentlicht, wenn der Administrator die E-Mail-Adresse des Kunden manuell überprüft.
-- Behebung: Verwaiste `pending_site`-Datensätze werden bereinigt, wenn die Mitgliedschaft fehlt.
-- Behebung: Die Padding-Navigation der Einstellungen und die Such-Anker-Navigation wurden korrigiert.
-- Behebung: Ausstehende Sites werden nun in der Ansicht „All Sites“ zuerst angezeigt.
-- Behebung: Für den Screenshot-Anbieter (mShots) wurde ein User-Agent-Header hinzugefügt, um 403-Fehler zu verhindern.
-- Behebung: Die kreisförmige Abhängigkeit des Import-Cron-Plans wurde behoben.
-- Behebung: Tour-IDs werden in den Benutzereinstellungen auf Unterstriche normalisiert.
-- Verbessert: Statt Alchemy/Zippy wird nun ZipArchive für bessere Kompatibilität verwendet.
+- Neu: Geführter PayPal-Einrichtungsassistent für manuelle Eingabe von Zugangsdaten mit OAuth-Flag-Gate für nahtlose Gateway-Konfiguration.
+- Neu: Kundenbereich für Vorlagenwechsel mit Karte für aktuelle Vorlage, dauerhaftem Raster und Button **Aktuelle Vorlage zurücksetzen** neu gestaltet.
+- Fix: Vorlagenwechsel lässt die UI bei AJAX-Fehlern nicht mehr hängen.
+- Fix: Berechtigungszustände beim Vorlagenwechsel gegen unbefugten Zugriff abgesichert.
+- Fix: Eingaben für Website-Überschreibungen vor dem Speichern validiert.
+- Fix: Aufforderung zur Rechnungsadresse wird jetzt angezeigt, wenn die Adresse leer ist.
+- Fix: PHP 8.1-Hinweise zur veralteten Null-zu-String-Umwandlung behoben.
+- Fix: Currents werden vor dem Init-Hook lazy-geladen, um Timing-Probleme zu verhindern.
+- Fix: Gefilterter SSO-Pfad wird in allen Anmeldeabläufen berücksichtigt.
+- Fix: Leere Optionen für Website-Identität bleiben beim Speichern erhalten.
 
-## Version 2.8.0 — Veröffentlicht am 2026-04-29
+## Version 2.9.0 — Veröffentlicht am 2026-04-30 {#version-290--released-on-2026-04-30}
 
-- Neu: Die Option „Enable Jumper“ wurde in die Einstellungen „Other Options“ hinzugefügt.
-- Neu: Eine Statusspalte wurde zur Liste der Checkout-Formulare hinzugefügt.
-- Neu: Ein Addon sunrise file loader für benutzerdefinierte MU-Plugin sunrise Erweiterungen.
-- Verbessert: Die Option zur Fehlerberichterstattung wurde von der Einstellungsseite entfernt.
-- Behebung: Die Site-Karte auf der Dankeschön-Seite — das Bild wird nun eingeschränkt und die Links korrekt gestylt.
-- Behebung: Der Screenshot-Anbieter wurde von thum.io auf WordPress.com mShots umgestellt.
-- Behebung: „Enable Registration“ und „Default Role“ werden bei einer Neuinstallation nun mit den korrekten Standardwerten gesetzt.
-- Behebung: `get_site_url()` gibt nicht mehr leer zurück, wenn die Domain einen Port enthält.
-- Behebung: Das Klonen von Mediendateien wird nun korrekt kopiert, wenn die Einstellung `copy_media` leer war.
-- Behebung: Der Object Cache wird nach dem Schreiben von sitemeta über network-activate korrekt invalidiert.
-- Behebung: Die benutzerdefinierte Domain wird bei der DNS-Verifizierung für 3-teilige Domains automatisch als primär hochgestuft.
-- Behebung: Die ausstehende Mitgliedschaft wird storniert, wenn eine abgelaufene Zahlung bereinigt wird.
-- Behebung: Der Passwort-Stärke-Prüfer wird nach Schließen des Inline-Login-Prompts wieder verbunden.
-- Behebung: Die unendliche Seiten-Neuladung auf der Dankeschön-Seite wird gestoppt, wenn die Site bereits erstellt wurde.
-- Behebung: Die WP core Registrierungsoption wird bei der Plugin-Aktivierung und beim Speichern der Einstellungen synchronisiert.
-- Behebung: Ein Null-Ablaufschutz wurde in `calculate_expiration` für die Kompatibilität mit PHP 8.4 hinzugefügt.
-- Behebung: Doppelte Anmeldungen werden blockiert, wenn der Kunde bereits eine aktive Mitgliedschaft besitzt.
-- Behebung: Ein Null-Check für `date_expiration` im Checkout wurde hinzugefügt.
-- Behebung: Die Site-Bereitstellung wurde gehärtet — Einschränkungen, Mitgliedschaftsableitung, Domain-Promotion.
-- Behebung: Der Status-Label des Vorinstallations-Checks wurde auf „NOT Activated“ korrigiert, wenn der Check fehlschlägt.
-- Behebung: Die Checkout-Domain wird für E-Mail-Verifizierungs-URLs verwendet.
-- Behebung: Auto-Login nach dem Checkout, wenn kein Passwortfeld vorhanden ist.
-- Behebung: Kostenlose Mitgliedschaften verfallen nicht mehr – sie werden als lebenslang behandelt.
-- Behebung: Das E-Mail-Verifizierungs-Gate hält die Site-Veröffentlichung, bis der Kunde die E-Mail verifiziert hat.
-- Behebung: Der Basispfad und der Identitäts-Pfad des SES v2 API Endpunkts wurden korrigiert.
-- Behebung: Der `wu_inline_login_error` Hook wird im pre-submit Catch-Block emittiert.
+- Neu: Export und Import einzelner Websites unter **Werkzeuge > Export & Import** hinzugefügt.
+- Fix: Export-ZIP-Dateien werden jetzt über einen authentifizierten Download-Endpoint bereitgestellt.
+- Fix: SQL-Injection-Risiko und Abfrageprobleme in Abfragen für ausstehende Exporte/Importe behoben.
+- Fix: Ausstehende Website wird nicht veröffentlicht, wenn der Administrator die Kunden-E-Mail manuell verifiziert.
+- Fix: Verwaiste pending_site-Einträge werden bereinigt, wenn die Mitgliedschaft fehlt.
+- Fix: Padding der Einstellungsnavigation und Navigation zu Suchankern korrigiert.
+- Fix: Ausstehende Websites werden jetzt zuerst in der Ansicht „Alle Websites“ angezeigt.
+- Fix: User-Agent header für Screenshot-Anbieter (mShots) hinzugefügt, um 403-Fehler zu verhindern.
+- Fix: Zirkuläre Abhängigkeit im Import-Cron-Zeitplan behoben.
+- Fix: Tour-IDs in Benutzereinstellungsschlüsseln auf Unterstriche normalisiert.
+- Verbessert: ZipArchive wird jetzt anstelle von Alchemy/Zippy für bessere Kompatibilität verwendet.
+
+## Version 2.8.0 — Veröffentlicht am 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- Neu: „Jumper aktivieren“-Umschalter zur Other Options-Einstellungs-UI hinzugefügt.
+- Neu: Statusspalte zur Listentabelle der Checkout-Formulare hinzugefügt.
+- Neu: Addon-sunrise-Datei-Loader für benutzerdefinierte MU plugin-sunrise-Erweiterungen.
+- Verbessert: Opt-in-Einstellung für Fehlerberichte von der Einstellungsseite entfernt.
+- Korrektur: Website-Karte der Dankeschön-Seite — Bild ist jetzt eingeschränkt und Links sind korrekt gestaltet.
+- Korrektur: Screenshot-Anbieter von thum.io auf WordPress.com mShots umgestellt.
+- Korrektur: Enable Registration und Default Role setzen jetzt bei einer Neuinstallation die korrekten Standardwerte.
+- Korrektur: `get_site_url()` gibt nicht mehr leer zurück, wenn die Domain einen Port enthält.
+- Korrektur: Geklonte Mediendateien werden jetzt korrekt kopiert, wenn die Einstellung `copy_media` leer war.
+- Korrektur: Objekt-Cache nach dem Schreiben von netzwerkaktivierten sitemeta korrekt invalidiert.
+- Korrektur: Benutzerdefinierte Domain wird bei DNS-Verifizierung für dreiteilige Domains automatisch zur primären Domain hochgestuft.
+- Korrektur: Ausstehende Mitgliedschaft wird storniert, wenn eine abgelaufene Zahlung bereinigt wird.
+- Korrektur: Passwortstärke-Prüfung wird nach dem Verwerfen der Inline-Anmeldeaufforderung erneut gebunden.
+- Korrektur: Endloses Neuladen der Seite auf der Dankeschön-Seite gestoppt, wenn die Website bereits erstellt wurde.
+- Korrektur: WP-Core-Registrierungsoption bei Plugin-Aktivierung und Speichern der Einstellungen synchronisiert.
+- Korrektur: Null-Ablaufwächter in `calculate_expiration` für PHP 8.4-Kompatibilität hinzugefügt.
+- Korrektur: Doppelte Registrierungen blockiert, wenn der Kunde bereits eine aktive Mitgliedschaft hat.
+- Korrektur: Null-Prüfung für `date_expiration` im Checkout hinzugefügt.
+- Korrektur: Website-Bereitstellung gehärtet — Einschränkungen, Mitgliedschaftsableitung, Domain-Hochstufung.
+- Korrektur: Statuslabel der Vorinstallationsprüfung auf NOT Activated korrigiert, wenn die Prüfung fehlschlägt.
+- Korrektur: Checkout-Domain für E-Mail-Verifizierungs-URLs verwendet.
+- Korrektur: Automatische Anmeldung nach Checkout, wenn kein Passwortfeld vorhanden ist.
+- Korrektur: Kostenlose Mitgliedschaften laufen nicht mehr ab — sie werden als lebenslang behandelt.
+- Korrektur: E-Mail-Verifizierungssperre hält die Veröffentlichung der Website zurück, bis der Kunde die E-Mail verifiziert.
+- Korrektur: SES-v2-API-Endpunkt-Basispfad und Identitätsroute korrigiert.
+- Korrektur: `wu_inline_login_error`-Hook im Pre-Submit-Catch-Block ausgelöst.

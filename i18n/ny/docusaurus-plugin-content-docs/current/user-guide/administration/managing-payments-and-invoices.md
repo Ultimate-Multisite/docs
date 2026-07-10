@@ -3,9 +3,9 @@ title: Kuyendetsa Mapemba ndi Zina
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Kufunira Mapempha ndi Invo
+# Kufunira Mapempha ndi Invo {#managing-payments-and-invoices}
 
-## Zinthu za Mapempha (Payment Settings)
+## Zinthu za Mapempha (Payment Settings) {#payment-settings}
 
 Mmodzi mwa kukhulupirira mapempha, mukufunika kuti muipatsire zinthu za mapempha. Ndipo mupita ku **Ultimate Multisite → Settings** ndipo mupitira tab ya **Payment**.
 
@@ -15,7 +15,7 @@ Izi ndi chithunzi chake cha tsiku lino la zinthu za mapempha:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Zinthu Zomwe Zili Kuti Mapempha (General Payment Options)
+### Zinthu Zomwe Zili Kuti Mapempha (General Payment Options) {#general-payment-options}
 
 M'malo wosangalala, muli ndi ulemu wopatsa:
 
@@ -24,7 +24,7 @@ M'malo wosangalala, muli ndi ulemu wopatsa:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Mapempha Awo (Payment Gateways)
+### Mapempha Awo (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite imapatsa mapempha omwe ndi ena. Muli ndi ulemu wopatsa ndi kukhazikitsa monga momwe mungukonze m'malo wa Payment settings tab.
 
@@ -40,11 +40,11 @@ Kukonza la mapempha lonse limuli ndi m'malo wopatsa pamene mukuwerenga API keys 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Mungathe kukhazikitsa **Sandbox Mode** kuti mupatsa mapempha m'malo monga momwe mungayambe kupanga. Pamene Sandbox mode imaphatikizidwa, kulibe ndalama zosiyanasiyana kudziwika.
 
-## Kukhudza Mapempha (Viewing Payments)
+## Kukhudza Mapempha (Viewing Payments) {#viewing-payments}
 
 Mupita ku tsiku la **Payments** m'malo wa Ultimate Multisite kuti mufunse mapempha onse m'malo wanu wosiyanasiyana.
 
@@ -54,7 +54,7 @@ Mungathe kuperekera mapempha monga momwe mungayambe (completed, pending, failed,
 
 Chonza kukhala mwayi wopempa kuti muone zinthu zonse za mwayi wopempa, kuphatikiza zinthu zomwe zimene, membership yomwe imaphatikiza, maphunziro a mwanawo, ndi data ya gateway ya mwayi wopempa.
 
-## Invoices (Mwayi Wopempa)
+## Invoices (Mwayi Wopempa) {#invoices}
 
 Ultimate Multisite imaphatikiza mwayi wopempa kuti ipereke invoices (mwayi wopempa). Mumwezi mungayesulure template ya invoice ndi njira yoperekera nkhani (numbering format) kuchokera kwa Payment settings.
 

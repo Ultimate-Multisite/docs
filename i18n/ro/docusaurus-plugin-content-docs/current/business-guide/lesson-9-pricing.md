@@ -3,17 +3,17 @@ title: 'Lecția 9: Prețuri pentru profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lecția 9: Prețuri pentru profit
+# Lecția 9: Prețuri pentru profit {#lesson-9-pricing-for-profit}
 
 În Lecția 5, am stabilit prețurile inițiale pentru planurile FitSite. Acum ne rafinăm strategia de prețuri cu tehnici care cresc veniturile, încurajează upgrade-urile și reduc rata de dezabonare (churn).
 
-## Unde ne-am oprit
+## Unde ne-am oprit {#where-we-left-off}
 
 FitSite are planuri, șabloane, checkout, branding și onboarding în locul lor. Prețul inițial era de $49/$99/$199 pe lună. Acum facem ca aceste prețuri să lucreze mai mult.
 
-## Principii de prețuri pentru platforme de nișă
+## Principii de prețuri pentru platforme de nișă {#pricing-principles-for-niche-platforms}
 
-### Preț pe valoare, nu pe cost
+### Preț pe valoare, nu pe cost {#price-on-value-not-cost}
 
 Costurile de găzduire (hosting) pot varia între $5 și $15 per site de client. Asta nu înseamnă că prețul tău ar trebui să fie $20. Tu nu vinzi găzduire. Tu vinzi:
 
@@ -24,7 +24,7 @@ Costurile de găzduire (hosting) pot varia între $5 și $15 per site de client.
 
 Prețuiește pe baza valorii pe care o livrezi, nu pe costul livrării acestei valori.
 
-### Ancorează prețul pe alternative
+### Ancorează prețul pe alternative {#anchor-to-alternatives}
 
 Când un proprietar de studio de fitness evaluează FitSite, îl compară cu:
 
@@ -34,7 +34,7 @@ Când un proprietar de studio de fitness evaluează FitSite, îl compară cu:
 
 La $49-$199/lună, FitSite este mai ieftin decât un dezvoltator, mai capabil decât constructorii generici și infinit mai bun decât lipsa unui website.
 
-## Implementarea variațiilor de preț
+## Implementarea variațiilor de preț {#implementing-price-variations}
 
 Prețurile anuale încurajează angajamentul și reduc rata de dezabonare. Navighează la tab-ul **Price Variations** (Variații de preț) al fiecărui plan și adaugă opțiunile anuale:
 
@@ -46,12 +46,12 @@ Prețurile anuale încurajează angajamentul și reduc rata de dezabonare. Navig
 
 Adaugă un câmp **Period Selection** (Selectarea perioadei) în formularul de checkout pentru ca clienții să poată comuta între facturarea lunară și cea anuală. Vezi [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### De ce funcționează prețurile anuale
+### De ce funcționează prețurile anuale {#why-annual-pricing-works}
 
 - **Pentru tine**: Bani upfront, rată de dezabonare mai mică (clienții care plătesc anual sunt mai puțin probabil să anuleze în perioada curentă)
 - **Pentru ei**: Economii reale, predictibilitate bugetară
 
-## Taxe de configurare (Setup Fees)
+## Taxe de configurare (Setup Fees) {#setup-fees}
 
 Ia în considerare o taxă de configurare unică pentru planurile care includ configurare manuală:
 
@@ -61,7 +61,7 @@ Ia în considerare o taxă de configurare unică pentru planurile care includ co
 
 Configurează taxele de configurare în secțiunea de prețuri a fiecărui plan. Vezi [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) pentru detalii.
 
-## Perioade de probă (Trial Periods)
+## Perioade de probă (Trial Periods) {#trial-periods}
 
 Oferirea unei perioade de probă reduce frecarea în înscriere, dar introduce riscul de neconversie. Pentru FitSite:
 
@@ -70,11 +70,11 @@ Oferirea unei perioade de probă reduce frecarea în înscriere, dar introduce r
 
 Configurează proba în secțiunea de prețuri a planului Starter, activând comutatorul **Offer Trial** și setând durata la 7 zile.
 
-### Cum faci ca probele să se converteze
+### Cum faci ca probele să se converteze {#making-trials-convert}
 
 O probă funcționează doar dacă clientul experimentează valoare în timpul perioadei de probă. Secvența ta de onboarding (Lecția 8) este critică aici — e-mailurile de bun venit ar trebui programate pentru a stimula implicarea în intervalul de 7 zile.
 
-## Coduri de reducere (Discount Codes)
+## Coduri de reducere (Discount Codes) {#discount-codes}
 
 Creează coduri de reducere strategice pentru scopuri specifice:
 
@@ -88,7 +88,7 @@ Navighează la **Ultimate Multisite > Discount Codes** pentru a le crea. Vezi [C
 Reducerile ar trebui să fie instrumente strategice, nu elemente permanente. Dacă toată lumea primește o reducere, nu este o reducere — este prețul tău real. Folosește-le pentru campanii specifice, recomandări și promoții limitate în timp.
 :::
 
-## Gestionarea taxelor
+## Gestionarea taxelor {#tax-handling}
 
 Dacă operezi într-o jurisdicție care necesită colectarea taxelor:
 
@@ -98,7 +98,7 @@ Dacă operezi într-o jurisdicție care necesită colectarea taxelor:
 
 Vezi [Tax Handling](/user-guide/payment-gateways/tax-handling) pentru configurare detaliată. Dacă servești clienți internațional, ia în considerare [VAT addon](/addons/vat) pentru conformitatea cu UE.
 
-## Revizuirea prețurilor tale
+## Revizuirea prețurilor tale {#reviewing-your-pricing}
 
 După lansare, revizuiește prețurile trimestrial. Observă:
 
@@ -107,7 +107,7 @@ După lansare, revizuiește prețurile trimestrial. Observă:
 - **Rata de dezabonare pe plan**: Dacă clienții anuali au o rată de dezabonare mai mică, promovează mai mult prețurile anuale
 - **Prețurile concurenților**: Ce taxează alternativele? Ești poziționat corect?
 
-## Rețeaua FitSite până acum
+## Rețeaua FitSite până acum {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Ce am construit în această lecție
+## Ce am construit în această lecție {#what-we-built-this-lesson}
 
 - **Prețuri anuale** cu o reducere de 20% pentru a încuraja angajamentul
 - **Taxe de configurare** la nivelurile superioare pentru a acoperi efortul de onboarding

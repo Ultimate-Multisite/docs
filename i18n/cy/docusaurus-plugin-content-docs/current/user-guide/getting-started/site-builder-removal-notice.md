@@ -3,13 +3,13 @@ title: Cyflwyniad Aros y Mod Gweithredwr Safon
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Mae Tystyrchu Moddoliad
+# Mae Tystyrchu Moddoliad {#site-builder-mode-removal-notice}
 
 **Mae moddoliad Site Builder wedi cael ei aros yn Superdav AI Agent v1.12.0.** Os ydych chi'n defnyddio moddoliad Site Builder, rhaid i chi ddilyn y **Setup Assistant agent** ar gyfer creu thymau ac amgylchynu y safle.
 
-## Beth oedd wedi digwydd?
+## Beth oedd wedi digwydd? {#what-happened}
 
-### Moddoliad Site Builder (Legacy)
+### Moddoliad Site Builder (Legacy) {#site-builder-mode-legacy}
 
 Roedd moddoliad Site Builder yn ffurf gweithredol (wizard-based interface) i:
 
@@ -18,7 +18,7 @@ Roedd moddoliad Site Builder yn ffurf gweithredol (wizard-based interface) i:
 - Dechrau'r thymau
 - Amgylchynu cynnwys cyntaf
 
-### Beth oedd wedi ei allw?
+### Beth oedd wedi ei allw? {#what-replaced-it}
 
 Mae'r **Setup Assistant agent** yn gwarchod pob ffurf Site Builder gyda:
 
@@ -27,15 +27,15 @@ Mae'r **Setup Assistant agent** yn gwarchod pob ffurf Site Builder gyda:
 - Cyfathogh gyda chwaraeon Theme Builder (Theme Builder onboarding)
 - Memoriad safle_brief parhaol ar gyfer cyfhau yn ddiweddarach
 
-## Os ydych chi'n defnyddio moddoliad Site Builder
+## Os ydych chi'n defnyddio moddoliad Site Builder {#if-you-were-using-site-builder-mode}
 
-### Mae eich safleoedd yn ddiogel
+### Mae eich safleoedd yn ddiogel {#your-sites-are-safe}
 
 - Safleoedd sydd wedi'u creu gyda moddoliad Site Builder yn parhau i weithio
 - Nid oes colli data neu drosed safle
 - Gallwch chi parhau i ddefnyddio eich safleoedd yn normol
 
-### Dilyn i Setup Assistant agent
+### Dilyn i Setup Assistant agent {#migrate-to-setup-assistant-agent}
 
 Ar gyfer amgylchynu safleoedd newydd neu newidi thymau, defnyddiwch y Setup Assistant agent:
 
@@ -51,9 +51,9 @@ neu
 
 Mae'r Setup Assistant agent yn rhoi'r fynnalion fel arall gyda chydweithrin mwy.
 
-## Cyflwyno i Setup Assistant agent
+## Cyflwyno i Setup Assistant agent {#comparison-site-builder-vs-setup-assistant}
 
-### Ar gyfer Safleoedd Newydd
+### Ar gyfer Safleoedd Newydd {#migrating-to-setup-assistant-agent}
 
 Nid yw'r Mod Site Builder yn cael ei defnyddio?
 
@@ -65,7 +65,7 @@ Nid yw'r Mod Site Builder yn cael ei defnyddio?
    - Cynllunio theme (Theme generation)
    - Cyflwyniad cychwynig
 
-### Ar gyfer Siat sy'n syrthio
+### Ar gyfer Siat sy'n syrthio {#for-new-sites}
 
 Os oes gennych siat sy'n syrthio o Mod Site Builder:
 
@@ -74,7 +74,7 @@ Os oes gennych siat sy'n syrthio o Mod Site Builder:
 3. Bydd y Agent Cyflwyniad Datblygu'r Siat yn helpu i chi creu theme newydd
 4. Mae data eich siat yn parhau i fod yn newid
 
-### Ar gyfer Mudiadau Theme
+### Ar gyfer Mudiadau Theme {#for-existing-sites}
 
 Ar ôl wybulliadau theme o Mod Site Builder:
 
@@ -84,9 +84,9 @@ Ar ôl wybulliadau theme o Mod Site Builder:
    - Creu theme newydd ar gyfer chi
    - Acti'r ei o hyd ar eich siat
 
-## Diffyniadau allweddol
+## Diffyniadau allweddol {#for-theme-changes}
 
-### Mod Site Builder
+### Mod Site Builder {#key-differences}
 
 ```
 1. Deilio template (template)
@@ -95,7 +95,7 @@ Ar ôl wybulliadau theme o Mod Site Builder:
 4. Rheoli
 ```
 
-### Agent Cyflwyniad Datblygu'r Siat
+### Agent Cyflwyniad Datblygu'r Siat {#site-builder-mode}
 
 ```
 1. Disgrifwch pethau eich siat
@@ -106,27 +106,27 @@ Ar ôl wybulliadau theme o Mod Site Builder:
 6. Mae briof y siat wedi'i storio ar gyfer cyfhau wedyn
 ```
 
-## Prifau o Agent Cyflwyniad Datblygu'r Siat
+## Prifau o Agent Cyflwyniad Datblygu'r Siat {#setup-assistant-agent}
 
-### Mwy Fwy Llywio (More Flexible)
+### Mwy Fwy Llywio (More Flexible) {#benefits-of-setup-assistant-agent}
 
 - Disgrifwch eich siat mewn iaith natural
 - Derbyn cyfaddodiadau newydd
 - Adapti i eich angen specyfigaidd
 
-### Customization Bytthrych (Better Customization)
+### Customization Bytthrych (Better Customization) {#more-flexible}
 
 - Creu theme newydd
 - Penderfyniadau system dylunio
 - Tokenau dylunio parhau
 
-### Memori Parhau (Persistent Memory)
+### Memori Parhau (Persistent Memory) {#better-customization}
 
 - Mae eich `site_brief` wedi'i storio
 - Mae'r agentau wedyn yn deall eich siat
 - Nid oes angen i ffrwm y gair cychwynig
 
-### Workflow Cyfathogh (Integrated Workflow)
+### Workflow Cyfathogh (Integrated Workflow) {#persistent-memory}
 
 - Cynllunio Onboarding Theme Builder
 - Gwirionedd System Dylunio Aesthetics skill
@@ -135,7 +135,7 @@ Ar ôl wybulliadau theme o Mod Site Builder:
 
 "Help wyneuddu'r siart new"
 
-### Rytffurfio'r siart o'r siart o'r Site Builder
+### Rytffurfio'r siart o'r siart o'r Site Builder {#integrated-workflow}
 
 Galluwch ei ddatblygu gyda'r agent Setup Assistant:
 
@@ -144,7 +144,7 @@ Galluwch ei ddatblygu gyda'r agent Setup Assistant:
 3. Bydd yr agent yn cyflymu thymau (theme) sydd yn cyfathrebu â'r siart
 4. Bydd eich site_brief wedi'i storio i ddefnyddio yn ymlaen
 
-### Mae fy siart Site Builder sydd yn neurol
+### Mae fy siart Site Builder sydd yn neurol {#troubleshooting}
 
 Mae siartau a ddarluwyd gyda modd Site Builder yn parhau i weithio. Os ydych chi'n mynychu anwylydiaid:
 
@@ -153,7 +153,7 @@ Mae siartau a ddarluwyd gyda modd Site Builder yn parhau i weithio. Os ydych chi
 3. Gwylio logau eror WordPress
 4. Contactwch y cefnogaeth os mae problemau'n parhau
 
-### Gallaf i mi ddefnyddio'r thymau Site Builder gyda fi?
+### Gallaf i mi ddefnyddio'r thymau Site Builder gyda fi? {#i-cant-find-site-builder-mode}
 
 Nid yw thymau Site Builder wedi cael eu cyflwyno anwy. Fodd bynnag:
 
@@ -161,7 +161,7 @@ Nid yw thymau Site Builder wedi cael eu cyflwyno anwy. Fodd bynnag:
 - Gallwch ddatblygu siartau sydd yn cyfathrebu â'r agent Setup Assistant
 - Mae'r agent Setup Assistant yn rhoi opsiynau ddatblygu mwy
 
-## Ymystyrau Canlynol
+## Ymystyrau Canlynol {#i-want-to-recreate-a-site-from-site-builder}
 
 - **Theme Builder Onboarding**: Ddatblygu ar gyfer thymau newydd
 - **Setup Assistant Agent**: Datblygu siart gyda chwarae'r agent

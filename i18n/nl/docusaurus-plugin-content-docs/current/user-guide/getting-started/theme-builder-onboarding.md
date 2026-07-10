@@ -3,11 +3,11 @@ title: Theme Builder Onboarding Flow
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introduceert een begeleide **Theme Builder onboarding flow** waarmee u tijdens de initiële setup een aangepast block theme kunt creëren. Dit vervangt de verouderde Site Builder-modus door een flexibelere, door een agent ondersteunde aanpak.
 
-## Wat is de Theme Builder Onboarding Flow?
+## Wat is de Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 De Theme Builder onboarding flow is een interactieve setup wizard die:
 
@@ -18,9 +18,9 @@ De Theme Builder onboarding flow is een interactieve setup wizard die:
 
 De flow wordt aangedreven door de **Setup Assistant agent**, die verduidelijkende vragen stelt en uw thema incrementeel opbouwt.
 
-## De Theme Builder Onboarding Starten
+## De Theme Builder Onboarding Starten {#starting-the-theme-builder-onboarding}
 
-### Eerste keer instellen
+### Eerste keer instellen {#first-run-setup}
 
 Wanneer u Superdav AI Agent voor het eerst op een nieuwe WordPress-installatie start, ziet u:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Selecteer **"Build a custom theme"** om de Theme Builder onboarding flow te starten.
 
-### Handmatige activatie
+### Handmatige activatie {#manual-activation}
 
 U kunt de Theme Builder onboarding ook op elk moment starten door te vragen:
 
@@ -49,9 +49,9 @@ of
 "Help me create a custom theme"
 ```
 
-## De Onboarding Stappen
+## De Onboarding Stappen {#the-onboarding-steps}
 
-### Stap 1: Modusselectie
+### Stap 1: Modusselectie {#step-1-mode-selection}
 
 De Setup Assistant agent vraagt naar uw voorkeur:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** wordt aanbevolen voor de meeste gebruikers; de agent geeft ontwerpaanbevelingen op basis van uw branche en doelen.
 
-### Stap 2: Site specificatie
+### Stap 2: Site specificatie {#step-2-site-specification}
 
 U wordt gevraagd naar uw site:
 
@@ -74,7 +74,7 @@ U wordt gevraagd naar uw site:
 
 Deze informatie wordt opgeslagen in uw **site_brief** geheugen, dat agents gebruiken in toekomstige sessies.
 
-### Stap 3: Beslissingen over het Design Systeem
+### Stap 3: Beslissingen over het Design Systeem {#step-3-design-system-decisions}
 
 De agent begeleidt u bij de selectie van design tokens:
 
@@ -83,7 +83,7 @@ De agent begeleidt u bij de selectie van design tokens:
 - **Spacing**: Compacte, normale of ruimtelijke lay-outs
 - **Motion**: Animaties en overgangen (indien gewenst)
 
-### Stap 4: Thema Generatie
+### Stap 4: Thema Generatie {#step-4-theme-generation}
 
 De Setup Assistant agent bouwt uw aangepaste block theme op met:
 
@@ -92,7 +92,7 @@ De Setup Assistant agent bouwt uw aangepaste block theme op met:
 - Aangepaste block stijlen die overeenkomen met uw design systeem
 - Thema metadata en WordPress support verklaringen
 
-### Stap 5: Activatie en Verificatie
+### Stap 5: Activatie en Verificatie {#step-5-activation-and-verification}
 
 Het thema wordt automatisch geactiveerd, en u ziet:
 
@@ -107,7 +107,7 @@ Het thema wordt automatisch geactiveerd, en u ziet:
 
 U kunt vervolgens uw site bezoeken om te verifiëren dat het thema correct wordt weergegeven.
 
-## Site Specificatie en site_brief Geheugen
+## Site Specificatie en site_brief Geheugen {#site-specification-and-sitebrief-memory}
 
 Tijdens de onboarding vangt de agent de specificatie van uw site op in een **site_brief** geheugen categorie. Dit omvat:
 
@@ -117,7 +117,7 @@ Tijdens de onboarding vangt de agent de specificatie van uw site op in een **sit
 - Ontwerpvoorkeuren
 - Contentstructuur
 
-### Waarom site_brief belangrijk is
+### Waarom site_brief belangrijk is {#why-sitebrief-matters}
 
 In toekomstige sessies verwijzen agents naar uw site_brief om:
 
@@ -126,7 +126,7 @@ In toekomstige sessies verwijzen agents naar uw site_brief om:
 - Contextbewuste aanbevelingen te geven
 - Het vermijden van het herhalen van setupvragen
 
-### Uw site_brief bekijken
+### Uw site_brief bekijken {#viewing-your-sitebrief}
 
 U kunt de agent vragen:
 
@@ -142,11 +142,11 @@ of
 
 De agent toont uw opgeslagen site specificatie.
 
-## Aanpassen na de Onboarding
+## Aanpassen na de Onboarding {#customizing-after-onboarding}
 
 Nadat de Theme Builder onboarding is voltooid, kunt u:
 
-### Gebruik de Design System Aesthetics Skill
+### Gebruik de Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Vraag om ontwerpverbeteringen:
 
@@ -162,7 +162,7 @@ of
 
 De **Design System Aesthetics skill** begeleidt u bij gerichte ontwerpupdates.
 
-### Bewerk theme.json Direct
+### Bewerk theme.json Direct {#edit-themejson-directly}
 
 Voor geavanceerde gebruikers, bewerk `/wp-content/themes/[theme-name]/theme.json` om aan te passen:
 
@@ -171,7 +171,7 @@ Voor geavanceerde gebruikers, bewerk `/wp-content/themes/[theme-name]/theme.json
 - Spacing values
 - Border and shadow definitions
 
-### Maak Aangepaste Block Templates
+### Maak Aangepaste Block Templates {#create-custom-block-templates}
 
 Gebruik de WordPress block editor om aangepaste templates te maken voor:
 
@@ -180,7 +180,7 @@ Gebruik de WordPress block editor om aangepaste templates te maken voor:
 - Productpagina's
 - Contactformulieren
 
-## Vergelijking: Oud vs. Nieuw Onboarding
+## Vergelijking: Oud vs. Nieuw Onboarding {#comparison-old-vs-new-onboarding}
 
 | Functie | Site Builder (Legacy) | Theme Builder (Nieuw) |
 |---------|----------------------|----------------------|
@@ -190,7 +190,7 @@ Gebruik de WordPress block editor om aangepaste templates te maken voor:
 | Flexibiliteit | Vaste opties | Aanpasbaar |
 | Toekomstige updates | Wordt niet verwezen naar | Opgeslagen in site_brief |
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **De onboarding flow is niet voltooid**
 - Start de flow opnieuw: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Gebruik de WordPress block editor om aangepaste templates te maken voor:
 - Vraag de agent om "regenerate the theme with [specific changes]"
 - Bewerk theme.json direct voor precieze controle
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat u de Theme Builder onboarding heeft voltooid:
 

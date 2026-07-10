@@ -3,7 +3,7 @@ title: Verwysings van Vermogens
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Vermogensreferens
+# Vermogensreferens {#abilities-reference}
 
 Vermogens is die atome aksies wat Gratis AI Agent op jou WordPress-installasie kan oproep. Elke vermoë is 'n geregistreerde PHP-klas wat 'n JSON skema blootstel — die agent lees hierdie skema tydens die uitvoering om te verstaan watter parameters nodig is en wat die vermoë teruggee.
 
@@ -11,11 +11,11 @@ Hierdie bladsy dokumenteer alle vermogens wat saam met Gratis AI Agent v1.9.0 ve
 
 ---
 
-## Spesiale Posttipes (Custom Post Types)
+## Spesiale Posttipes (Custom Post Types) {#custom-post-types}
 
 Hierdie vermogens bestuur spesiale posttipes (CPTs) wat deur die agent geregistreer is. Registrasies word aan die WordPress opsie-tafel behou sodat hulle oor plugin-deaktivering en heraktivering bly.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registreer 'n nuwe spesiale posttipe.
 
@@ -50,7 +50,7 @@ Registreer 'n nuwe spesiale posttipe.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Gee alle spesiale posttipes terug wat deur die agent geregistreer is.
 
@@ -73,7 +73,7 @@ Gee alle spesiale posttipes terug wat deur die agent geregistreer is.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Onregistreer 'n spesiale posttipe wat voorheen deur die agent geregistreer is. Beste posts van daardie tipe bly in die database, maar is nie meer via die posttipe toeganklik nie.
 
@@ -87,11 +87,11 @@ Onregistreer 'n spesiale posttipe wat voorheen deur die agent geregistreer is. B
 
 ---
 
-## Spesiale Taksonemies (Custom Taxonomies)
+## Spesiale Taksonemies (Custom Taxonomies) {#custom-taxonomies}
 
 Hierdie vermogens bestuur spesiale taksonemies. Soos CPT's word taksonemiese registrasies behou.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registreer 'n nuwe spesiale taksonomie.
 
@@ -123,7 +123,7 @@ Registreer 'n nuwe spesiale taksonomie.
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Gee alle spesiale taksonemies terug wat deur die agent geregistreer is.
 
@@ -146,7 +146,7 @@ Gee alle spesiale taksonemies terug wat deur die agent geregistreer is.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Onregistreer 'n spesiale taksonomie wat voorheen deur die agent geregistreer is.
 
@@ -160,11 +160,11 @@ Onregistreer 'n spesiale taksonomie wat voorheen deur die agent geregistreer is.
 
 ---
 
-## Ontwerpstelsel (Design System)
+## Ontwerpstelsel (Design System) {#design-system}
 
 Ontwerpstelsel vermogens wys die visuele vertoning van die WordPress-werf — van spesifieke CSS tot blokpatrone en die webwerf se logo.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Voeg CSS aan die `<head>` van die werf by via `wp_add_inline_style`. CSS word in die opsie `gratis_ai_agent_custom_css` gestoor en skoon verwyder wanneer die vermoë hergeset word.
 
@@ -190,7 +190,7 @@ Voeg CSS aan die `<head>` van die werf by via `wp_add_inline_style`. CSS word in
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Registreer 'n herbruikbare blokpatroon in die WordPress pattern biblioteki.
 
@@ -209,13 +209,13 @@ Registreer 'n herbruikbare blokpatroon in die WordPress pattern biblioteki.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Gee alle blokpatrone terug wat deur die agent geregistreer is.
 
 **Parameters** — geen
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Stel die WordPress-situslogo na 'n gegee attachment ID of 'n verre remote beeld URL. Wanneer 'n URL verskaf word, word die beeld gedownload en ingevoeg in die Media Library.
 
@@ -232,7 +232,7 @@ Een van `attachment_id` of `url` moet verskaf word.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Pas 'n genaamde kleur-/tipografie-preset toe op die aktiewe tema se `theme.json` (of `global-styles`). Presets is gekurateerde pakkies wat deur die Gratis AI Agent span gehandhaaf word.
 
@@ -257,11 +257,11 @@ Pas 'n genaamde kleur-/tipografie-preset toe op die aktiewe tema se `theme.json`
 
 ---
 
-## Globale Stye
+## Globale Stye {#global-styles}
 
 Globale Stye-vermoëns lees en skryf `theme.json` waardes deur die WordPress Global Styles API, wat alle blokke en temate se sitewys beïnvloed.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Gee die huidige globale stye-konfigurasie terug.
 
@@ -275,7 +275,7 @@ Gee die huidige globale stye-konfigurasie terug.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Maak een of meer waardes in die globale stye-konfigurasie op hoogte.
 
@@ -302,7 +302,7 @@ Maak een of meer waardes in die globale stye-konfigurasie op hoogte.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Herstel alle agent-toepaslike globale styeverandertjies en herstel die tema-standaarde.
 
@@ -312,11 +312,11 @@ Herstel alle agent-toepaslike globale styeverandertjies en herstel die tema-stan
 
 ---
 
-## Navigasie Menus
+## Navigasie Menus {#navigation-menus}
 
 Navigasie Menu-vermoëns skep en bestuur WordPress nav-menue en hul items.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Skep 'n nuwe WordPress navigasie menu.
 
@@ -331,7 +331,7 @@ Skep 'n nuwe WordPress navigasie menu.
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Verander die naam van 'n menu of herwis dit na 'n tema-lokasie.
 
@@ -347,7 +347,7 @@ Verander die naam van 'n menu of herwis dit na 'n tema-lokasie.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Voeg 'n item by 'n bestaande navigasie menu.
 
@@ -367,7 +367,7 @@ Voeg 'n item by 'n bestaande navigasie menu.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Verwyder 'n item uit 'n navigasie menu.
 
@@ -381,7 +381,7 @@ Verwyder 'n item uit 'n navigasie menu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 List al die WordPress navigasie menus, insluitend hul toegewys tema-lokasies.
 
@@ -404,11 +404,11 @@ List al die WordPress navigasie menus, insluitend hul toegewys tema-lokasies.
 
 ---
 
-## Opsies Bestuur
+## Opsies Bestuur {#options-management}
 
 Opsies-vermoëns lees en skryf WordPress opsies via `get_option` / `update_option`. 'n Ingeboude veiligheidsbloklys voorkom aksidentele wysiging van kritieke instellings.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Lees 'n WordPress opsie.
 
@@ -424,7 +424,7 @@ Gee 'n fout terug as `option_name` op die veiligheidsbloklys is.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Skryf 'n WordPress opsie.
 
@@ -442,7 +442,7 @@ Geeft 'n fout terug as `option_name` op die veiligheidsbloklys staan.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Verwyder 'n WordPress-opsie.
 
@@ -458,7 +458,7 @@ Geeft 'n fout terug as `option_name` op die veiligheidsbloklys staan.
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 List WordPress-opsies wat ooreenstem met 'n patroon.
 
@@ -482,11 +482,11 @@ List WordPress-opsies wat ooreenstem met 'n patroon.
 
 ---
 
-## Inhoudbestuur (Content Management)
+## Inhoudbestuur (Content Management) {#content-management}
 
 Inhoudbestuur-vermoëns skep en wys WordPress-posts en -bladsy's. Post-ID's word teruggegee sodat die volgende stappe in meervormige vermoënsplanne verwys na die geskep inhoud kan doen.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Skep 'n nuwe WordPress-post, bladsy of aangepaste post-tipe invoer.
 
@@ -521,7 +521,7 @@ Skep 'n nuwe WordPress-post, bladsy of aangepaste post-tipe invoer.
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Vervang 'n bestaande WordPress-post of bladsy.
 
@@ -551,7 +551,7 @@ Vervang 'n bestaande WordPress-post of bladsy.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Skep verskeie posts in 'n enkele vermoënsaanroep, wat rond-trips tydens webwerfbou of grootskaalse inhoud-import verlaag. Posts word in volgorde geskep; as een misluk, gaan die ander voort en die mislukking word in die resultaat-array gerapporteer.
 
@@ -603,7 +603,7 @@ Skep verskeie posts in 'n enkele vermoënsaanroep, wat rond-trips tydens webwerf
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 Koppel 'n hoofbeeld (post-thumbnail) aan 'n bestaande post of bladsy. Aanvaar 'n bestaande Media Library-aanheft-ID of 'n verre beeld-URL; wanneer 'n URL verskaf word, word die beeld outomaties gedownload en ingevoer.
 
@@ -622,17 +622,17 @@ Een van `attachment_id` of `url` moet verskaf word.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 Skep 'n kontak-vorm met die aktiewe vorm-plugin (Contact Form 7, WPForms, Fluent Forms of Gravity Forms, afhangende van watter een geïnstalleer is). Gee 'n kortkode terug wat in enige post of bladsy ingebed kan word.
 
 **Parameters**
 
-## Visuele Oorsiening
+## Visuele Oorsiening {#visual-review}
 
 Visuele Oorsieningsvermoë laat die agent skermopnames van lewende bladsye maak en dit analiseer, wat selfstandige ontwerp-oorwegings, voor/na vergelykings en visuele regressiekontrole moontlikmaak sonder dat jy enige blaaier-uitbreiding nodig het.
 
-### `capture_screenshot`
+### `capture_screenshot` {#capturescreenshot}
 
 Maak 'n skermopname van 'n WordPress-bladsy op 'n spesifieke URL met behulp van 'n server-side headless browser. Die beeld word in die Media Library gestoor en 'n CDN-URL word teruggegee.
 
@@ -661,7 +661,7 @@ Maak 'n skermopname van 'n WordPress-bladsy op 'n spesifieke URL met behulp van 
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#comparescreenshots}
 
 Neem twee skermopnames en gee 'n visuele verskilpunt (diff score) terug asook 'n verskilbeeld wat die veranderde areas beklemtoon. Nuttig om te bevestig dat 'n ontwerpverandering die verwagte resultaat veroorsaak het of om onbedoelde regressies te ontdek.
 
@@ -691,7 +691,7 @@ Neem twee skermopnames en gee 'n visuele verskilpunt (diff score) terug asook 'n
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#reviewpagedesign}
 
 Maak 'n skermopname van 'n bladsy en stuur dit na die taalmodel vir visuele analise. Gee 'n gestruktureerde beoordeling terug wat dekking, tipografie, kleurgebruik en toeganklikheidsbesoeke omskryf.
 
@@ -722,11 +722,11 @@ Maak 'n skermopname van 'n bladsy en stuur dit na die taalmodel vir visuele anal
 
 ---
 
-## Installeerbare Vermoëns
+## Installeerbare Vermoëns {#installable-abilities}
 
 Die Installeerbare Vermoëns Register laat jou toe om die agent met bykomende vermoënpakke uit te brei wat as WordPress plugins versprei word. Elke pakket registreer een of meer vermoëns deur die standaard ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#listavailableabilities}
 
 Gee die katalogus van vermoënpakke wat beskikbaar is vir installasie vanaf die register terug.
 
@@ -755,7 +755,7 @@ Gee die katalogus van vermoënpakke wat beskikbaar is vir installasie vanaf die 
 
 ---
 
-### `install_ability`
+### `install_ability` {#installability}
 
 Laai en aktiveer 'n ability pack van die registry af.
 
@@ -769,7 +769,7 @@ Laai en aktiveer 'n ability pack van die registry af.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#recommendplugin}
 
 Vra die ability registry na om die beste plugin vir 'n beskryfde gebruikssgeval te vind en, opsioneel, dit te installeer.
 

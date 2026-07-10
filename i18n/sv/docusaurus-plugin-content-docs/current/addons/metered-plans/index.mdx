@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Metered Plans {#metered-plans}
 
 Ultimate Multisite: Metered Plans-tillägget förändrar hur du fakturerar dina kunder genom att införa flexibla mätbara faktureringsmöjligheter. Istället för strikta hårdgränser som blockerar användare när de överskrids, aktiverar du överförbrukningsavgifter som automatiskt debiterar kunder för ytterligare användning.
 
-## Huvudfunktioner
+## Huvudfunktioner {#key-features}
 
 * **Mätbar fakturering (Metered Billing)**: Ta betalt från kunder baserat på faktisk användning snarare än fasta nivåer
 * **Överförbrukningshantering (Overage Management)**: Fakturera automatiskt för användning som överstiger planens gränser
@@ -21,14 +21,14 @@ Ultimate Multisite: Metered Plans-tillägget förändrar hur du fakturerar dina 
 * **Automatisk fakturering (Automatic Invoicing)**: Generera fakturor automatiskt när användningsgränser överskrids
 * **Användningsrapporter (Usage Reports)**: Detaljerad analys och rapportering av användning för kunder och administratörer
 
-## Perfekt för
+## Perfekt för {#perfect-for}
 
 * **Hosting-leverantörer**: Erbjud skalbara planer som växer med kundernas behov
 * **SaaS-plattformar**: Fakturera baserat på faktisk resursförbrukning
 * **Byrånätverk**: Flexibla prissättningsmodeller för kundprojekt
 * **Reseller Hosting**: Gör det möjligt för partners att erbjuda prissättning baserad på användning
 
-## Hur det fungerar
+## Hur det fungerar {#how-it-works}
 
 1. Konfigurera mätbara resurser (diskutrymme, bandbredd, antal webbplatser, etc.)
 2. Ställ in basplanens gränser och överförbrukningspriser
@@ -37,13 +37,13 @@ Ultimate Multisite: Metered Plans-tillägget förändrar hur du fakturerar dina 
 5. Fakturor genereras automatiskt baserat på faktureringscykeln
 6. Kunder kan se sin användning och kommande avgifter i realtid
 
-## AI Token Billing
+## AI Token Billing {#ai-token-billing}
 
 Version 1.1.0 lägger till AI-token-fakturering för nätverk som erbjuder AI-funktioner via WordPress AI Client SDK. Metered Plans lyssnar efter slutförda AI-genereringsförfrågningar, registrerar antalet in- och utgående tokens för den aktuella subwebbplatsen och omvandlar dessa tokens till fakturerbar AI-kostnad för kundens nuvarande faktureringsperiod.
 
 Använd AI-token-fakturering när du vill erbjuda AI-verktyg på kundernas webbplatser utan att behöva absorbera oförutsägbara modellkostnader. Varje förfrågan tillskrivs subwebbplatsen, kunden, medlemskapet, leverantören och modellen, så att administratörer kan granska användningen samtidigt som kunderna kan se hur deras AI-förbrukning påverkar deras konto.
 
-### Konfigurera priser per token
+### Konfigurera priser per token {#configure-per-token-rates}
 
 AI-priserna konfigureras per modell som separata in- och utgående priser. Priserna beräknas per 1 miljon tokens, vilket matchar vanliga AI-leverantörers prissättningssidor.
 
@@ -55,7 +55,7 @@ AI-priserna konfigureras per modell som separata in- och utgående priser. Prise
 
 Om ett exakt modell-ID inte är konfigurerat kan Metered Plans matcha baserat på modellprefix. Till exempel kan en taxa konfigurerad för `claude-sonnet-4` gälla för tidsstämplade modell-ID:er som börjar med det prefixet. Utvecklare kan också justera den slutliga taxa-tabellen med filtret [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
 
-### Stödde AI-konnektorer
+### Stödde AI-konnektorer {#supported-ai-connectors}
 
 AI-token-fakturering fungerar med konnektorer som skickar WordPress AI Client SDK-genereringshändelser och inkluderar tokenanvändning i svarmetadata. Detta inkluderar Ultimate Multisite AI-konnektorfamiljen dokumenterad här:
 
@@ -65,13 +65,13 @@ AI-token-fakturering fungerar med konnektorer som skickar WordPress AI Client SD
 
 Anpassade konnektorer kan delta genom att avfyra de standardiserade händelserna `wp_ai_client_before_generate_result` och `wp_ai_client_after_generate_result` med metadata om modell, leverantör och tokenanvändning. Konfigurationsinställningar för konnektorn tillämpas från huvudwebbplatsen till subwebbplatserna, så att kundwebbplatser använder nätverksgodkända leverantörer och gränser.
 
-### Användning på kundkontot
+### Användning på kundkontot {#customer-account-usage}
 
 Kunder ser AI-användningen tillsammans med sina andra mätbara resurser i sitt kontoområde. Raden för AI-kostnad visar den totala kostnaden för den aktuella faktureringsperioden, härledd från registrerade prompt- och slutförningstokens, de konfigurerade modellpriserna och eventuella inkluderade ersättningar i planen.
 
 Om en kund har ett betalningsmedel registrerat behandlas användning över den inkluderade ersättningen som fakturerbart överförbrukning. Om planen är konfigurerad med en hård gräns och kunden inte har något betalningsmedel tillgängligt kan AI-förfrågningar blockeras när ersättningen nås, och kunden uppmanas att lägga till betalningsuppgifter innan fortsättning.
 
-## Stödda resurser
+## Stödda resurser {#supported-resources}
 
 * Disklagring
 * Bandbredd/Dataöverföring
@@ -80,13 +80,13 @@ Om en kund har ett betalningsmedel registrerat behandlas användning över den i
 * AI-token-användning och AI-kostnad
 * Anpassade resurstyper
 
-## Krav
+## Krav {#requirements}
 
 * Multisite Ultimate 2.0.0 eller högre
 * WordPress Multisite-installation
 * PHP 7.4 eller högre
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp plugin-filerna till `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. Aktivera pluginet via fliken 'Plugins' i WordPress
@@ -94,24 +94,24 @@ Om en kund har ett betalningsmedel registrerat behandlas användning över den i
 4. Konfigurera dina mätbara resurser och prissättning
 5. Aktivera mätbar fakturering för produkter i produkteredigeraren
 
-## Vanliga frågor
+## Vanliga frågor {#frequently-asked-questions}
 
-## Vad händer när en kund överskrider sin gräns?
+## Vad händer när en kund överskrider sin gräns? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Istället för att blockera åtkomsten spårar systemet överförbrukningen och lägger till den i nästa faktura baserat på de priser du har konfigurerat.
 
-## Kan jag ställa in olika överförbrukningspriser för olika produkter?
+## Kan jag ställa in olika överförbrukningspriser för olika produkter? {#can-i-set-different-overage-rates-for-different-products}
 
 Ja, varje produkt kan ha unika mätbara resurser och överförbrukningsprissättning.
 
-## Hur informeras kunder om användningen?
+## Hur informeras kunder om användningen? {#how-are-customers-notified-about-usage}
 
 Kunder kan se sin nuvarande användning i sitt dashboard och få valfria notiser när de närmar sig eller överskrider gränserna.
 
-## Hur prissätts AI-token-användning?
+## Hur prissätts AI-token-användning? {#how-is-ai-token-usage-priced}
 
 AI-token-användning prissätts baserat på modellens konfigurerade in- och utgående priser per 1 miljon tokens. Metered Plans multiplicerar prompt- och slutförningstokens för varje förfrågan med dessa priser, lägger till resultatet i kundens nuvarande AI-kostnad för faktureringsperioden och tillämpar planens ersättning eller överförbrukningsregler.
 
-## Kan jag fortfarande använda hårdgränser?
+## Kan jag fortfarande använda hårdgränser? {#can-i-still-use-hard-limits}
 
 Ja, mätbar fakturering är valfritt per produkt. Du kan blanda traditionella produkter med hårdgränser med mätbara produkter.

@@ -3,11 +3,11 @@ title: Ganon an Overview
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Aperçu du Tableau de Bord
+# Aperçu du Tableau de Bord {#dashboard-overview}
 
 Ultimate Multisite genyen yon **Dashboard** dedye anba mennu Ultimate Multisite, epi li ajoute tou widgets nan Network Dashboard la. Artikel sa a kouvri sa ou pral wè nan de plas sa yo.
 
-## Network Dashboard la
+## Network Dashboard la {#the-network-dashboard}
 
 Ultimate Multisite mete widgets itil nan dashboard nivo rezo a ki jwenn nan **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Men sa chak widget bay ou:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard la
+## Ultimate Multisite Dashboard la {#the-ultimate-multisite-dashboard}
 
 Panday dashboard rezo a prezante enfòmasyon konplè sou rezo a, ultimate multisite dashboard la (nan nivo premye mennu Ultimate Multisite a) prezante enfòmasyon sou sèvis la.
 

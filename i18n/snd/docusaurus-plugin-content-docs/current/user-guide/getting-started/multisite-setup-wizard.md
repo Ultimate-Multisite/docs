@@ -3,7 +3,7 @@ title: 멀티사이트 سیٹ اپ ویزارد
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# מערणाली ترتیب ڏيندڙ ویزارد (Multisite Setup Wizard)
+# מערणाली ترتیب ڏيندڙ ویزارد (Multisite Setup Wizard) {#multisite-setup-wizard}
 
 Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي جيڪو هڪ عام WordPress installation کي خود بخود WordPress Multisite network ۾ تبديل ڪري ڇڏي ٿو. هي توهان کي `wp-config.php` جو مانيو ڪارن يا ڊيٽابيز كومانديون چلائڻ جي ضرورت ختم ڪري ڇڏيندو آهي.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 جيڪڏهن توهان جو WordPress installation اڳ ۾ ئي Multisite network طور چور رهيو آهي، ته توهان هن قدم کي پوري سکه سكه ٿا. ویزارد صرف تڏهن ظاهر ٿئي ٿو جڏهن Multisite فعال نه هجي.
 :::
 
-## ویزارد ڪڏهن ظاهر ٿئي ٿو؟
+## ویزارد ڪڏهن ظاهر ٿئي ٿو؟ {#when-does-the-wizard-appear}
 
 جڏهن توهان هڪ عام (غير-Multisite) WordPress installation تي Ultimate Multisite کي فعال ڪريو ٿا، ته پليجن کي اهو محسوس ٿيندو آهي ته Multisite غير فعال آهي ۽ هي توهان کي عام setup wizard جي بجاء Multisite Setup Wizard ڏانهن خود بخود ريڊيڪٽ ڪري ڇڏيندو آهي.
 
 توهان ان تک سڌي **WP Admin > Ultimate Multisite > Multisite Setup** تي به رسائي سگهو ٿا.
 
-## ضروري شروعات (Prerequisites)
+## ضروري شروعات (Prerequisites) {#prerequisites}
 
 ویزارد شروع ڪرڻ کان اڳ، هي ٺهيل ڏيو ته:
 
@@ -29,7 +29,7 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 ویزارد توهان جي `wp-config.php` فائل کي تبديل ڪري ٿو ۽ نيني ڊيٽابيز تيبلز کڻي ٿو. اڳتي وڌڻ کان سواءِ هميشه ڪا backup بنايو.
 :::
 
-## قدم 1: خوش آمديد (Welcome)
+## قدم 1: خوش آمديد (Welcome) {#step-1-welcome}
 
 پهرين سڪرين کي وضاحت ڪئي ويندي آهي ته WordPress Multisite के آهي ۽ ویزارد جو ڪم ڪندو ڇا:
 
@@ -42,11 +42,11 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 
 وڌيڪ لاءِ **Continue** ڇاڪاڻ ته وڌيڪ قدم کان اڳتي وڃڻ لاءِ ڪلڪ ڪريو.
 
-## قدم 2: network configuration (Network Configuration)
+## قدم 2: network configuration (Network Configuration) {#step-2-network-configuration}
 
 هي قدم توهان کي پنهنجي network جي setings configure ڪرڻ جو پوءِ پڇندو آهي.
 
-### Site Structure
+### Site Structure {#site-structure}
 
 توهان توهان جي نتيجا ڪيئن منظم ڪندا؟
 
@@ -57,11 +57,11 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 جيڪڏهن توهان sub-domains چئبو آهيو، ته توهان کي پنهنجي domain لاءِ **wildcard DNS** ۽ هڪ **wildcard SSL certificate** کان واقف ٿيڻ گهرجي. اڪثر مانيجڊ WordPress هاجس هن کي خود بخاري ڪري ڇڏيندي آهي. تفصيل سان مانيجڊ Ultimate Multisite 101 ڏسو ته [Ultimate Multisite 101](./ultimate-multisite-101).
 :::
 
-### Network Title (نٽ ورڪ جو عنوان)
+### Network Title (نٽ ورڪ جو عنوان) {#network-title}
 
 پنهنجي نٽ ورڪ لاءِ هڪ نالو داخل ڪريو. اهو عام طور تي توهان جي موجوده سائي جا عنوان ٿيندو آهي جنهن "Network" شامل ڪيو وڃي. توهان هن کي بعد مانيجڊ سٽنگز کان بدل سگهو ٿا.
 
-### Network Admin Email (نٽ ورڪ اديثيل اي ميل)
+### Network Admin Email (نٽ ورڪ اديثيل اي ميل) {#network-admin-email}
 
 نٽ ورڪ اديثيل نوٽيفڪشن لاءِ استعمال ٿيندڙ اي ميل adhesion. اهو عام طور تي موجوده صارف جي اي ميل adhesion آهي.
 
@@ -69,7 +69,7 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 
 فيلڊن پورو ڪرڻ کان پوءِ، اڳتي وڌڻ لاءِ **Continue** ڇاڪاڻ ته ڪلڪ ڪريو.
 
-## Step 3: Installation (مرحلو 3: تنصيب)
+## Step 3: Installation (مرحلو 3: تنصيب) {#step-3-installation}
 
 شروع ڪرڻ لاءِ **Install** بٽون تي ڪلڪ ڪريو. Wizard پنهنجي پنجن خود بخاري ڪيل قدمن کي ترتیب وارن انداز ۾ عمل ڪري ٿو، جنهن هر هڪ وقت سان گڏ پنهنجي ترقي ڏيکاري ٿو:
 
@@ -96,7 +96,7 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 
 پھر ويزر خود بخود پورو ٿي ويندو آهي.
 
-## قدم 4: پورو ڪريو (Complete)
+## قدم 4: پورو ڪريو (Complete) {#step-4-complete}
 
 جڏهن توهان لاري عمل پورو ڪري ويندا، تڏهن توهان هڪ ڪاميابي جو موجوده ڏسڻ جڳهه ڏسندا ته WordPress Multisite کي فعال ڪري ڇڏيو آهي.
 
@@ -108,7 +108,7 @@ Ultimate Multisite ۾ هڪ بيلٽ-ين (built-in) ویزارد شامل آهي
 Multisite इन्स्टलेसन पूरा हो जाने بعد، तपाईंको ब्राउजर नयाँ नेटवर्क एडमिन मार्फत रिडायरेक्ट हुनेछ। तपाईंलाई फेरि लगइन गर्नुपर्ने हुन सक्छ किनभने मल्टीसाइट वातावरणका लागि प्रमाणीकरण कुकीहरू अपडेट हुन्छन्।
 :::
 
-## म्यानुअल सेटअपको विकल्प (Manual Setup Fallback)
+## म्यानुअल सेटअपको विकल्प (Manual Setup Fallback) {#manual-setup-fallback}
 
 यदि विजुअल गाइडले तपाईंको `wp-config.php` फाइलमा लेख्न सक्दैन (फाइल अनुमति वा सर्भरको रोकका कारण), भने यसले तपाईंलाई मैन्युअल रूपमा थप्नुपर्ने सही कोड देखाउनेछ:
 
@@ -117,9 +117,9 @@ Multisite इन्स्टलेसन पूरा हो जाने بعد
 
 मैन्युअल परिवर्तन गरेपछि, पेज रिफ्रेश गर्नुहोस् र विजुअल गाइडले मल्टीसाइट अब सक्रिय भएको पत्ता लगाउनेछ।
 
-## समस्या समाधान (Troubleshooting)
+## समस्या समाधान (Troubleshooting) {#troubleshooting}
 
-### विजुअल गाइडले भन्छ कि wp-config.php लेख्न सकिँदैन
+### विजुअल गाइडले भन्छ कि wp-config.php लेख्न सकिँदैन {#the-wizard-says-wp-configphp-is-not-writable}
 
 तपाईंको वेब सर्भर प्रोसेसलाई `wp-config.php` फाइलमा लेख्ने अनुमति चाहिन्छ। तपाईं निम्न मध्ये कुनै एक गर्न सक्नुहुन्छ:
 
@@ -127,7 +127,7 @@ Multisite इन्स्टलेसन पूरा हो जाने بعد
 - विजुअल गाइडले दिएका म्यानुअल सेटअपको विकल्पहरू प्रयोग गर्नुहोस्
 - आफ्नो होस्टिङ प्रदायकलाई सहयोगको लागि सोध्नुहोस्
 
-### सेटअप पछि साइटहरू पहुँच गर्न सकिँदैन (सबडोमेन)
+### सेटअप पछि साइटहरू पहुँच गर्न सकिँदैन (सबडोमेन) {#sites-are-not-accessible-after-setup-subdomains}
 
 यदि तपाईंले सबडोमेन संरचना रोज्नुभएको छ भने, तपाईंले आफ्नो डोमेनको लागि **wildcard DNS** कन्फिगर गर्नुपर्छ। एउटा DNS रेकर्ड थप्नुहोस्:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 यो कसरी कन्फिगर गर्ने भन्ने बारे तपाईंलाई शंका भएमा आफ्नो होस्टिङ प्रदायकसँग जाँच गर्नुहोस्।
 
-### सेटअप पछि प्रमाणीकरण समस्याहरू
+### सेटअप पछि प्रमाणीकरण समस्याहरू {#authentication-issues-after-setup}
 
 यदि तपाईं लॉग आउट हुनुहुन्छ वा मल्टीसाइट सेटअप पछि कुकी त्रुटिहरू अनुभव गर्नुहुन्छ भने:
 
@@ -147,7 +147,7 @@ Value: [your server IP]
 २. `yourdomain.com/wp-login.php` मा फेरि लगइन गर्नुहोस्
 ३. यदि समस्या अझै छ भने, जाँच गर्नुहोस् कि तपाईंको `wp-config.php` मा `COOKIE_DOMAIN` लाई `false` सेट गरिएको छैन — यो सबडोमेन मल्टीसाइट इन्स्टलेसनमा एक ज्ञात समस्या हो।
 
-### इन्स्टलेसनको क्रममा एउटा चरण असफल भयो
+### इन्स्टलेसनको क्रममा एउटा चरण असफल भयो {#a-step-failed-during-installation}
 
 جيئن ڪا انٽالينگ سٽپ ۾ غلطي ڏئي ٿي ته:
 

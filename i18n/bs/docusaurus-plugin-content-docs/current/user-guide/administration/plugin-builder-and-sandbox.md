@@ -3,11 +3,11 @@ title: Builder i Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Izgradnja i Sandbox za Pluginove
+# Izgradnja i Sandbox za Pluginove {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 uvodi **Sistem za Izgradnju i Sandbox za Pluginove**, koji omogućava AI asistantu da generiše, aktivira i upravlja WordPress pluginovima na vašoj mreži — sve to kroz sigurno, izolirano sandbox okruženje.
 
-## Pregled
+## Pregled {#overview}
 
 Plugin Builder omogućava AI asistantu da piše prilagođene WordPress pluginove na osnovu zahtjeva prirodnim jezikom. Generisani pluginovi se validiraju, pohranjuju i aktiviraju unutar sandbox sloja prije nego što uopće utiču na funkcionalnost uživoog sajta.
 
@@ -17,7 +17,7 @@ Primjeri upotrebe uključuju:
 - Prototipisanje funkcionalnosti koje zahtijevaju WordPress hookove ili prilagođene tipove postova.
 - Kreiranje kratkoročnih skripti za automatizaciju za operacije u serijama.
 
-## Generisanje Plugin-a putem AI
+## Generisanje Plugin-a putem AI {#generating-a-plugin-via-ai}
 
 Da biste generisali plugin, otvorite chat interfejs Gratis AI Agent-a i opišite šta vam je potrebno. Na primjer:
 
@@ -32,7 +32,7 @@ AI će:
 
 Možete usavršiti rezultat nastavkom razgovora u istoj niti prije aktivacije.
 
-## Sandbox Aktivacija
+## Sandbox Aktivacija {#sandbox-activation}
 
 Aktivacija generisanog plugin-a u sandboxu je drugačija od aktivacije na uživooj mreži. Sandbox:
 
@@ -48,7 +48,7 @@ Da biste aktivirali plugin u sandboxu, kliknite na dugme **Activate in Sandbox**
 
 Statusna poruka potvrđuje je li aktivacija uspjela ili ne. U slučaju neuspjeha, log grešaka se prikazuje u chat niti.
 
-## Upravljanje Generisanim Pluginovima
+## Upravljanje Generisanim Pluginovima {#managing-generated-plugins}
 
 Generisani pluginovi su navedeni na lokaciji **Gratis AI Agent → Plugin Builder → Manage Plugins**. Sa ovog ekrana možete:
 
@@ -64,7 +64,7 @@ Generisani pluginovi su navedeni na lokaciji **Gratis AI Agent → Plugin Builde
 **Install on network** implementira generisani plugin na vašu uživo WordPress multisite mrežu. Pregledajte kod plugin-a prije nastavka. Gratis AI Agent će tražiti potvrdu prije završetka uživo instalacije.
 :::
 
-## Instalacija Generisanog Plugin-a na Mreži
+## Instalacija Generisanog Plugin-a na Mreži {#installing-a-generated-plugin-on-the-network}
 
 Kada ste zadovoljni pluginom u sandboxu, možete ga instalirati na uživooj mreži:
 
@@ -78,7 +78,7 @@ Alternativno, koristite slash komandu u chat interfejsu:
 /install-plugin <plugin-slug>
 ```
 
-## Ažuriranje Pluginova
+## Ažuriranje Pluginova {#plugin-updates}
 
 Da biste ažurirali generisani plugin, opišite promjenu AI asistantu u novom razgovoru:
 
@@ -86,7 +86,7 @@ Da biste ažurirali generisani plugin, opišite promjenu AI asistantu u novom ra
 
 AI generiše novu verziju, koja se pojavljuje u sandboxu pored trenutne verzije. Vi pregledate razlike (diff) i potvrdite prije nego što se ažuriranje primijeni.
 
-## Integracija HookScanner-a
+## Integracija HookScanner-a {#hookscanner-integration}
 
 Plugin Builder koristi integrisani **HookScanner** za analizu hookova i filtera koje registruje svaki generisani plugin. Izlaz HookScanner-a prikazuje se u odgovoru chata i uključuje:
 
@@ -96,7 +96,7 @@ Plugin Builder koristi integrisani **HookScanner** za analizu hookova i filtera 
 
 Ovo vam pomaže da razumijete ponašanje plugin-a prije nego što ga aktivirate.
 
-## Bezbednosne Napomene
+## Bezbednosne Napomene {#security-considerations}
 
 - Generisani pluginovi se skladište odvojeno od ručno instaliranih pluginova i nisu dostupni putem standardnog ekrana za upravljanje pluginovima WordPress-a sve dok ih eksplicitno ne instalirate na mrežu.
 - Sandbox koristi validaciju putanja kako bi spriječio pretraživanje direktorijuma prilikom pisanja plugin fajlova.

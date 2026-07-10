@@ -4,20 +4,20 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Action: mu_migration/import/user/custom_data_after
+# Action: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
 
 Tumakbo pagkatapos i-export ang custom user data.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Deskripsyon |
 |------|------|-------------|
 | $user_data | `array` | Ang array na naglalaman ng data ng user. |
 | $user | `\WP_User` | Ang object ng user. |
 
-### Mula pa noong
+### Mula pa noong {#since}
 
 - 0.1.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) sa linya 165

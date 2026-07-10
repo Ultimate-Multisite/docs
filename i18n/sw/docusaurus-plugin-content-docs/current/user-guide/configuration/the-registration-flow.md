@@ -1,72 +1,76 @@
 ---
 title: Mtiririko wa Usajili
 sidebar_position: 3
-_i18n_hash: 73484be47ec750747cb9d94ea874d97f
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Mchakato wa Usajili (v2)
+# Mtiririko wa Usajili (v2) {#the-registration-flow-v2}
 
-_**KUMBUKA MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
+_**KUMBUKA MUHIMU: Makala hii inarejelea Ultimate Multisite toleo la 2.x.**_
 
-Watumiaji wanaweza kujisajili kwenye mtandao wako kwa njia mbalimbali. Wanaweza kutumia fomu yako ya usajili au kiungo kinachoshirikiwa cha mpango uliochaguliwa mapema. Hapa tutakuonyesha jinsi wateja wako wanavyoweza kujisajili kwenye mtandao wako kwa kutumia njia zinazopatikana na kinachotokea baada ya kujisajili kwenye mtandao wako.
+Watumiaji wanaweza kujisajili kwenye mtandao wako kwa njia tofauti. Wanaweza kutumia fomu yako ya usajili au kiungo kinachoweza kushirikiwa cha plan iliyochaguliwa mapema. Hapa tutakuonyesha jinsi wateja wako wanavyoweza kujisajili kwenye mtandao wako kwa kutumia njia zilizopo na kinachotokea baada ya kujisajili kwenye mtandao wako.
 
-## Kutumia Fomu ya Usajili:
+## Kutumia Fomu ya Usajili: {#using-the-registration-form}
 
-Huu ni mchakato wa kawaida wa usajili. Unaunda ukurasa wa usajili wenye **fomu ya checkout** na hapa ndipo wateja wako watakapoenda kujisajili kwenye mtandao wako na kujiunga na mpango. Unaweza kuwa na kurasa nyingi za usajili, kila moja ikiwa na fomu tofauti ya usajili ukitaka.
+Huu ndio mchakato wa kawaida wa usajili. Unaunda ukurasa wa usajili wenye **fomu ya malipo** na hapa ndipo wateja wako watakapokwenda kujisajili kwenye mtandao wako na kujiunga na plan. Unaweza kuwa na kurasa nyingi za usajili, kila moja ikiwa na fomu tofauti ya usajili ikiwa unataka.
 
-Ukurasa wa kawaida wa usajili ni [_**yourdomain.com/register**_](http://yourdomain.com/register), lakini unaweza kubadilisha hii wakati wowote kwenye **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
+Ukurasa chaguomsingi wa usajili ni [_**yourdomain.com/register**_](http://yourdomain.com/register), lakini unaweza kubadilisha hili wakati wowote kwenye **Ultimate Multisite > Settings > Login & Registration > Default Registration Page**.
 
-Baada ya mtumiaji kufika kwenye ukurasa wako wa usajili (kawaida kwa kubofya kitufe cha **Sign in** au **Buy now**), wataona fomu yako ya usajili hapo.
+Baada ya mtumiaji kufika kwenye ukurasa wako wa usajili (kwa kawaida kwa kubofya kitufe cha **Ingia** au **Nunua sasa**), wataona fomu yako ya usajili hapo.
 
-![Fomu ya usajili inayoonyeshwa kwenye ukurasa wa usajili](/img/config/checkout-forms-list.png)
+![Fomu ya usajili iliyoonyeshwa kwenye ukurasa wa usajili](/img/frontend/registration-form.png)
 
-Wanachohitaji kufanya ni kujaza sehemu zote za lazima - barua pepe, jina la mtumiaji, nenosiri, n.k... - na kulipa mpango au kuthibitisha anwani yao ya barua pepe ikiwa wanajisajili kwa mpango wa bure au mpango wa kulipa wenye kipindi cha majaribio bila taarifa za malipo.
+Huu hapa ni mfano wa fomu ya malipo kama inavyoonekana kwenye frontend:
 
-Kwenye ukurasa wa "Asante", wataona ujumbe unaowaambia ikiwa wanahitaji kuthibitisha anwani yao ya barua pepe au ikiwa tovuti yao tayari imeamilishwa na wanaweza kuanza kuitumia.
+![Fomu ya usajili ya malipo ya frontend](/img/config/checkout-frontend-registration.png)
 
-![Ukurasa wa Asante baada ya usajili](/img/config/checkout-form-editor.png)
+Wanachopaswa kufanya ni kujaza sehemu zote za lazima - barua pepe, jina la mtumiaji, nenosiri, n.k... - na kulipia plan au kuthibitisha anwani yao ya barua pepe ikiwa wanajisajili kwa plan ya bure au plan ya kulipia yenye kipindi cha majaribio bila taarifa za malipo.
 
-Ikiwa uthibitisho wa anwani ya barua pepe unahitajika, watahitaji kwenda kwenye kikasha chao cha barua pepe na kubofya kiungo cha uthibitisho. Tovuti yao haitaamilishwa ikiwa anwani yao ya barua pepe haijathibitishwa.
+Kwenye ukurasa wa "Asante", wataona ujumbe unaowaambia ikiwa wanahitaji kuthibitisha anwani yao ya barua pepe au ikiwa tovuti yao tayari imewashwa na wanaweza kuanza kuitumia.
 
-Ikiwa wamejisajili kwenye mpango wa kulipa au uthibitisho wa barua pepe si wa lazima kwenye mtandao wako, tovuti yao itaamilishwa mara tu baada ya checkout na wataonyeshwa kiungo cha kuingia kwenye dashboard yao.
+![Ukurasa wa Asante baada ya usajili](/img/frontend/registration-thank-you.png)
 
-![Tovuti imeamilishwa na kiungo cha kuingia kwenye dashboard](/img/config/checkout-form-editor.png)
+Ikiwa uthibitisho wa anwani ya barua pepe unahitajika, watahitaji kwenda kwenye kikasha chao cha barua pepe na kubofya kiungo cha uthibitishaji. Tovuti yao haitawashwa ikiwa anwani yao ya barua pepe haijathibitishwa.
 
-## Kutumia Kiungo Kinachoshirikiwa:
+Ikiwa wamejisajili kwenye plan ya kulipia au uthibitishaji wa barua pepe si wa lazima kwenye mtandao wako, tovuti yao itawashwa mara tu baada ya malipo na wataonyeshwa kiungo cha kuingia kwenye Dashboard yao.
 
-Mchakato wa kujisajili kwa kutumia kiungo kinachoshirikiwa ni sawa na fomu ya usajili, tofauti pekee ni kwamba kwa kutumia kiungo kinachoshirikiwa, wateja wako wanaweza kuwa na bidhaa au kiolezo cha tovuti kilichochaguliwa mapema kwenye fomu ya checkout (angalia sehemu ya Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL) au labda msimbo wa kuponi umeongezwa (angalia sehemu ya Kutumia Vigezo vya URL).
+![Tovuti imewashwa ikiwa na kiungo cha kuingia kwenye Dashboard](/img/frontend/site-activated.png)
 
-Mchakato wa usajili utakuwa sawa: watahitaji kujaza jina lao, jina la mtumiaji, anwani ya barua pepe, jina la tovuti na kichwa, n.k... lakini mpango au kiolezo cha tovuti kitakuwa tayari kimechaguliwa kwao mapema.
+## Kutumia Kiungo Kinachoweza Kushirikiwa: {#using-a-shareable-link}
 
-### Kujisajili Kwa Kutumia Malipo ya Mikono:
+Mchakato wa kujisajili kwa kutumia kiungo kinachoweza kushirikiwa kimsingi ni sawa na fomu ya usajili, tofauti pekee ni kwamba kwa kutumia kiungo kinachoweza kushirikiwa, wateja wako wanaweza kuwa na bidhaa au kiolezo cha tovuti kilichochaguliwa mapema kwenye fomu ya malipo (rejelea sehemu ya Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL) au labda msimbo wa kuponi ulioongezwa (rejelea sehemu ya Kutumia Vigezo vya URL).
 
-Ikiwa hutaki kutumia PayPal, Stripe au lango lingine lolote la malipo linaloletwa na Ultimate Multisite au viunganishi vyake vya nyongeza, unaweza kutumia malipo ya mikono kwa wateja wako. Kwa njia hii, unaweza kutengeneza ankara kwao ili walipe kwenye processor yako unayoipendelea ya malipo baada ya kujisajili kwenye mtandao wako.
+Mchakato wa usajili utakuwa uleule: watahitaji kujaza jina lao, jina la mtumiaji, anwani ya barua pepe, jina na kichwa cha tovuti, n.k... lakini plan au kiolezo cha tovuti kitakuwa tayari kimechaguliwa mapema kwa ajili yao.
+
+### Kujisajili Kwa Kutumia Malipo ya Mkono: {#registering-using-manual-payments}
+
+Ikiwa hutaki kutumia PayPal, Stripe au lango lingine lolote la malipo linalotolewa na Ultimate Multisite au miunganisho yake ya add-on, unaweza kutumia malipo ya mkono kwa wateja wako. Kwa njia hii, unaweza kuwatengenezea ankara ili walipe kwenye kichakataji chako cha malipo unachopendelea baada ya kujisajili kwenye mtandao wako.
 
 Mchakato wa usajili utakuwa sawa kabisa na hapo juu, lakini kwenye ukurasa wa usajili wateja wako wataona ujumbe unaosema kwamba watapokea barua pepe yenye maelekezo zaidi ya kukamilisha malipo.
 
-![Ujumbe wa malipo ya mikono wakati wa usajili](/img/config/settings-payment-gateways.png)
+![Ujumbe wa malipo ya mkono wakati wa usajili](/img/frontend/registration-manual-notice.png)
 
-Na baada ya usajili kukamilika, wataona maelekezo ya malipo uliyoweka (na pia kuyapokea kwenye barua pepe yao).
+Na baada ya usajili kukamilika, wataona maelekezo ya malipo uliyoweka (na pia watayapokea kwenye barua pepe yao).
 
-![Maelekezo ya malipo yanayoonyeshwa baada ya usajili](/img/config/settings-payment-gateways.png)
+![Maelekezo ya malipo yanayoonyeshwa baada ya usajili](/img/frontend/registration-payment-instructions.png)
 
-Maelekezo ya malipo yanaweza kubadilishwa kwenye **Ultimate Multisite > Settings > Payments** baada ya kuwasha chaguo la malipo ya **Manual**:
+Maelekezo ya malipo yanaweza kubadilishwa kwenye **Ultimate Multisite > Settings > Payments** baada ya kuwasha chaguo la malipo la **Mkono**:
 
-![Kitufe cha malipo ya mikono na sehemu ya maelekezo ya malipo](/img/config/settings-payment-gateways.png)
+![Kiwashio cha malipo ya mkono chenye sehemu ya maelekezo ya malipo](/img/config/manual-gateway-settings.png)
 
-Baada ya wateja wako kukamilisha malipo ya mikono na kukutumia uthibitisho, unahitaji **kuthibitisha malipo kwa mikono** ili kuamilisha uanachama na tovuti ya mteja.
+Baada ya wateja wako kukamilisha malipo ya mkono na kukutumia uthibitisho, unahitaji **kuthibitisha malipo kwa mkono** ili kuamsha uanachama na tovuti ya mteja.
 
-Ili kufanya hivi, nenda kwenye **Ultimate Multisite > Payments** na utafute malipo ya mteja. Bado inapaswa kuonyesha hali ya **Pending**.
+Ili kufanya hivyo, nenda kwenye **Ultimate Multisite > Payments** na utafute malipo ya mteja. Bado yanapaswa kuonyesha hali ya **Inasubiri**.
 
-![Orodha ya malipo yenye malipo ya mikono yanayosubiri](/img/admin/payments-list.png)
+![Orodha ya malipo yenye malipo ya mkono yanayosubiri](/img/admin/payments-list.png)
 
-Bofya nambari ya malipo na utaweza kubadilisha hali yake kuwa **Completed**.
+Bofya nambari ya malipo na utaweza kubadilisha hali yake kuwa **Imekamilika**.
 
-![Ukurasa wa maelezo ya malipo](/img/admin/payments-list.png)
+![Ukurasa wa maelezo ya malipo](/img/admin/payment-edit.png)
 
-![Kubadilisha hali ya malipo kuwa Completed](/img/admin/payments-list.png)
+![Kubadilisha hali ya malipo kuwa Imekamilika](/img/admin/payment-status-completed.png)
 
-Baada ya kubadilisha hali yake kuwa **Completed**, unapaswa kuona ujumbe wa **Activate membership**. Washa chaguo hili ili kuamilisha uanachama na tovuti inayohusishwa na mteja huyu. Kisha, bofya **Save Payment**.
+Baada ya kubadilisha hali yake kuwa **Imekamilika** , unapaswa kuona ujumbe wa **Washa uanachama**. Washa chaguo hili **on** ili kuamsha uanachama na tovuti inayohusishwa na mteja huyu. Kisha, bofya **Hifadhi Malipo**.
 
-![Kitufe cha kuamilisha uanachama na kitufe cha Save Payment](/img/admin/payments-list.png)
+![Kiwashio cha Washa uanachama na kitufe cha Hifadhi Malipo](/img/admin/payment-activate-membership.png)
 
-Mteja wako sasa anapaswa kuweza kufikia dashboard na vipengele vyote walivyojisajili.
+Mteja wako sasa anapaswa kuweza kufikia Dashboard na vipengele vyote alivyojiunga navyo.

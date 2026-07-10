@@ -3,11 +3,11 @@ title: Mba fandikana ny Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Fanovana Ultimate Multisite
+# Fanovana Ultimate Multisite {#translating-ultimate-multisite}
 
 Ny Ultimate Multisite dia natao amin'ny teny anglisy, saingy azo adika tanteraka ny plugin ary manome fanohanana mavitrika antsika ho an'ny fampidirana fandikana.
 
-## Fandikana ny Plugin Fototra (Core)
+## Fandikana ny Plugin Fototra (Core) {#core-plugin-translations}
 
 Ny plugin fototra Ultimate Multisite dia adika amin'ny alalan'ny **[translate.wordpress.org/projects/wp-plugins/ultimate-multisite/](https://translate.wordpress.org/projects/wp-plugins/ultimate-multisite/)** ofisialy:
 
@@ -22,7 +22,7 @@ Ity no rafitry ny fandikana an'ny WordPress ho an'ny vondrom-piarahamonina manon
 
 Raha te-hizara anao ho mpandika editor ho an'ny fiteny iray ianao (afaka manome fanekena fandikan-teny), dia mifandraisa aminay mampiasa ny [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Fandikana ireo Addon Plugins
+## Fandikana ireo Addon Plugins {#addon-translations}
 
 Ny addon plugins dia adika amin'ny toerana hafa:
 
@@ -30,11 +30,11 @@ Ny addon plugins dia adika amin'ny toerana hafa:
 
 Amin'izao fotoana izao, ny fandikan-teny ho an'ireo addon dia natao avy amin'ny AI ho fanombohana. Manjary ireo fiteny rehetra voatantana izany fa mety misy fehezanteny tsy mazava na diso. Manome fanohanana antsika ny mpandika olombelona mba hijerena sy hanoro fomba fanatsarana azy ireo mba ho tena voajanahary sy marina kokoa.
 
-## Fandikana eo An-toerana (Local Translations)
+## Fandikana eo An-toerana (Local Translations) {#local-translations}
 
 Raha tianao ny mamorona fandikana anaty tetikasa manokana ianao fa tsy handray anjara amin'ny fanamboarana azy eo amin'ny vondrona lehibe (upstream), misy safidy roa:
 
-### Fampiasana Poedit
+### Fampiasana Poedit {#using-poedit}
 
 Afaka mampiasa ny rindrambaiko desktop **[Poedit](https://poedit.net)** ianao mba handikana ilay rakitra `.pot`:
 
@@ -44,6 +44,6 @@ Afaka mampiasa ny rindrambaiko desktop **[Poedit](https://poedit.net)** ianao mb
 4. Tehirizo -- Ny Poedit dia mamorona ny rakitra `.po` sy `.mo` ho anao
 5. Apetaho ireo rakitra vokatra ao amin'ny folder `lang`
 
-### Fampiasana Loco Translate
+### Fampiasana Loco Translate {#using-loco-translate}
 
 Ny *plugin* WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** dia ahafahanao mandika mivantana avy ao amin'ny admin panel ianao nefa tsy mila fitaovana desktop aho. Miantoka ny famoronana sy ny fanangonana ireo rakitra fandikana ho anao izy.

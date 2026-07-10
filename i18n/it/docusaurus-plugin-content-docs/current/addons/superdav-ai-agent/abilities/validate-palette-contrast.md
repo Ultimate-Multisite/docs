@@ -3,15 +3,15 @@ title: Valida il contrasto della palette
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valida il Contrasto della Palette
+# Valida il Contrasto della Palette {#validate-palette-contrast}
 
 La funzionalità **Valida il Contrasto della Palette** controlla le coppie di colori della tua palette di design per assicurarsi che siano conformi alle WCAG (Web Content Accessibility Guidelines) prima di applicarle al tuo tema.
 
-## Panoramica
+## Panoramica {#overview}
 
 Questa funzionalità garantisce che lo schema colori del tuo sito rispetti gli standard di accessibilità, validando i rapporti di contrasto tra i colori del testo e dello sfondo. Aiuta a prevenire combinazioni di colori che potrebbero risultare difficili da leggere per gli utenti con disabilità visive.
 
-## Formato Input
+## Formato Input {#input-format}
 
 La funzionalità accetta una palette di colori come input:
 
@@ -35,7 +35,7 @@ La funzionalità accetta una palette di colori come input:
 }
 ```
 
-### Parametri
+### Parametri {#parameters}
 
 | Parametro | Tipo | Richiesto | Descrizione |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ La funzionalità accetta una palette di colori come input:
 | `wcag_level` | string | No | Livello di conformità WCAG: "A", "AA" (predefinito), o "AAA" |
 | `pairs_to_check` | array | No | Coppie di colori specifiche da validare (es. `["primary-text", "background-text"]`) |
 
-## Livelli WCAG Controllati
+## Livelli WCAG Controllati {#wcag-levels-checked}
 
 La funzionalità valida i rapporti di contrasto secondo gli standard WCAG:
 
@@ -56,7 +56,7 @@ La funzionalità valida i rapporti di contrasto secondo gli standard WCAG:
 - **Testo Normale** — testo più piccolo di 18pt (o 14pt in grassetto)
 - **Testo Grande** — testo di 18pt o più (o 14pt in grassetto o più)
 
-## Schema Output
+## Schema Output {#output-schema}
 
 La funzionalità restituisce un rapporto di validazione dettagliato:
 
@@ -95,7 +95,7 @@ La funzionalità restituisce un rapporto di validazione dettagliato:
 }
 ```
 
-### Campi di Output
+### Campi di Output {#output-fields}
 
 | Campo | Tipo | Descrizione |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ La funzionalità restituisce un rapporto di validazione dettagliato:
 | `status` | string | "pass" o "fail" per ogni coppia |
 | `recommendations` | array | Suggerimenti per migliorare le coppie fallimentari |
 
-## Esempio di Utilizzo
+## Esempio di Utilizzo {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ La funzionalità valida tutte le combinazioni di colori e restituisce:
 - ✅ Sfondo + Testo: rapporto 12.1:1 (supera WCAG AAA)
 - Complessivo: Conforme a WCAG AA
 
-## Integrazione con Theme Builder
+## Integrazione con Theme Builder {#integration-with-theme-builder}
 
 Quando si utilizza la selezione della direzione di design di Theme Builder, la funzionalità Valida il Contrasto della Palette:
 
@@ -129,7 +129,7 @@ Quando si utilizza la selezione della direzione di design di Theme Builder, la f
 4. Fornisce raccomandazioni per le coppie non conformi
 5. Impedisce di applicare schemi di colori inaccessibili
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Inizia con il livello AA** — WCAG AA è lo standard per la maggior parte dei siti web
 - **Testa prima di applicare** — valida la tua palette prima di impegnarti in un design
@@ -137,7 +137,7 @@ Quando si utilizza la selezione della direzione di design di Theme Builder, la f
 - **Considera le preferenze dell'utente** — alcuni utenti potrebbero avere sensibilità cromatiche aggiuntive
 - **Usa i controllori di contrasto** — combina questa funzionalità con strumenti del browser per la verifica
 
-## Coppie Fallimentari e Raccomandazioni
+## Coppie Fallimentari e Raccomandazioni {#failing-pairs-and-recommendations}
 
 Se una coppia di colori fallisce la validazione, la funzionalità fornisce raccomandazioni:
 
@@ -155,7 +155,7 @@ Se una coppia di colori fallisce la validazione, la funzionalità fornisce racco
 }
 ```
 
-## Funzionalità Correlate
+## Funzionalità Correlate {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — crea loghi con la tua palette di colori validata
 - [Create Menu](./create-menu.md) — costruisci la navigazione con colori accessibili

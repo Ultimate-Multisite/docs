@@ -3,7 +3,7 @@ title: AffiliateWP Log Perubahan
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Log Perubahan AffiliateWP
+# Log Perubahan AffiliateWP {#affiliatewp-changelog}
 
 Versi: 2.0.1 - Dikeluarkan pada 2025-09-28
 

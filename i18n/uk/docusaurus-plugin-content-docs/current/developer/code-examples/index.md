@@ -3,11 +3,11 @@ title: Розширені приклади коду
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Розширені приклади коду
+# Розширені приклади коду {#advanced-code-examples}
 
 Ці приклади демонструють розширені шаблони інтеграції з Ultimate Multisite.
 
-## Динамічний двигун ціноутворення
+## Динамічний двигун ціноутворення {#dynamic-pricing-engine}
 
 Двигун ціноутворення на основі правил, який застосовує знижки за обсягом, лояльності та сезонності:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Розширене забезпечення сайтів
+## Розширене забезпечення сайтів {#advanced-site-provisioning}
 
 Автоматична конфігурація нових сайтів за допомогою плагінів, SSL, CDN, резервного копіювання та моніторингу на основі функцій плану:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Система кастомних обмежень
+## Система кастомних обмежень {#custom-limitations-system}
 
 Відстежуйте та забезпечуйте обмеження ресурсів із попередженнями про перевищення лімітів:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Атомний лічильник BerlinDB з `increment_item()`
+## Атомний лічильник BerlinDB з `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 додав метод `increment_item()` до класу `Query` BerlinDB. Використовуйте його для виконання безпечних, атомарних інкрементів у числові колонки без гонок читання-модифікації-запису (read-modify-write races) — це корисно для лічильників, квот використання та перевірок обмеження частоти запитів, які виконуються під час паралельних запитів.
 
-### Сигнатура методу
+### Сигнатура методу {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 додав метод `increment_item()` до клас
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Базове використання
+### Базове використання {#basic-usage}
 
 ```php
 // Додати 1 до колонки `api_calls` для membership ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Відстеження використання API за membership
+### Відстеження використання API за membership {#tracking-api-usage-per-membership}
 
 Практичний шаблон для забезпечення обмеження частоти запитів API для кожного membership:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Чому `increment_item()` замість `update_item()`
+### Чому `increment_item()` замість `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Простий підхід "читання-модифікація-запис" (read-modify-write) є небезпечним під час паралельних запитів:
 

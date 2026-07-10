@@ -1,0 +1,124 @@
+---
+title: Construtor de Sites com IA
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Construtor de Sites com IA {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Requisitos {#requirements}
+
+- WordPress 5.3 ou superior
+- PHP 7.4 ou superior
+- plugin Multisite Ultimate (ativo)
+
+## Instalação {#installation}
+
+1. Carregue os ficheiros do complemento para o seu diretório `/wp-content/plugins/`
+2. Ative o plugin através do menu 'Plugins' no WordPress
+3. Configure as definições do complemento na administração da rede
+
+## Desenvolvimento {#development}
+
+### Configuração {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Estrutura do Projeto {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Classes PHP e inclusões
+│   ├── class-multisite-ultimate-updater.php  # Gestor de atualizações
+│   └── class-ai_site_builder-main.php             # Funcionalidade principal
+├── tests/                        # Testes unitários
+│   ├── bootstrap.php            # Inicialização dos testes
+│   ├── class-*-base.php         # Classe base de teste
+│   └── class-*-test.php         # Casos de teste
+├── views/                       # Ficheiros de modelo
+├── assets/                      # Recursos estáticos
+│   ├── css/                     # Folhas de estilo
+│   ├── js/                      # Ficheiros JavaScript
+│   └── images/                  # Imagens
+├── lang/                        # Ficheiros de idioma
+├── composer.json                # Dependências PHP
+├── package.json                 # Dependências Node.js
+├── phpunit.xml.dist             # Configuração do PHPUnit
+├── .phpcs.xml.dist              # Configuração de padrões de código
+└── rector.php                   # Regras de modernização de código
+```
+
+### Testes {#testing}
+
+O complemento inclui uma estrutura de testes abrangente:
+
+- **Testes Unitários**: Testes baseados em PHPUnit com a suite de testes do WordPress
+- **Classe Base de Teste**: Fornece métodos auxiliares para cenários de teste comuns
+- **Cobertura de Testes**: Configurada para acompanhar a cobertura de código
+- **Testes Multisite**: Os testes são executados em ambiente multisite
+
+### Padrões de Código {#code-standards}
+
+- **Padrões de Codificação do WordPress**: Aplicados via PHPCS
+- **Compatibilidade com PHP 7.4+**: Funcionalidades modernas do PHP suportadas
+- **Análise Estática**: Integração com PHPStan para verificação de tipos
+- **Modernização de Código**: Regras do Rector para atualizações de PHP
+
+### Sistema de Build {#build-system}
+
+- **Processamento de Recursos**: Minificação para ficheiros CSS/JS
+- **Tradução**: Geração de ficheiro POT
+- **Empacotamento**: Criação de arquivo para distribuição
+- **Modo de Desenvolvimento**: Recursos não minificados para depuração
+
+## Configuração {#configuration}
+
+O complemento suporta várias opções de configuração acessíveis através da interface de administração da rede.
+
+## Hooks e Filtros {#hooks-and-filters}
+
+### Ações {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Disparada após a inicialização do complemento
+- `ultimate-multisite-ai-site-builder_loaded` - Disparada após todos os ficheiros do complemento serem carregados
+
+### Filtros {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Modificar as definições do complemento
+- `ultimate-multisite-ai-site-builder_enabled` - Substituir o estado de ativação/desativação do complemento
+
+## Licença {#license}
+
+Este complemento está licenciado sob a GPL v3 ou posterior.
+
+## Suporte {#support}
+
+Para suporte e documentação, visite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Registo de Alterações {#changelog}
+
+- Versão 1.0.1 (2025-09-28): renomear o prefixo para ultimate-multisite; atualizar o domínio de texto; incremento de versão.
+
+
+- Versão  (2025-09-28): renomear o prefixo para ultimate-multisite; atualizar o domínio de texto; incremento de versão.

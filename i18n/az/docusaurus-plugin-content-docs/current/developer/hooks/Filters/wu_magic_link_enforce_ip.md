@@ -4,21 +4,21 @@ title: Filter - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Filter: wu_magic_link_enforce_ip
+# Filter: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
 
 IP ünvanı yoxlamasını tətbiq edib-etməmək filtri.
 
 Tokenlərin fərqli şəbəkələrdən işləməsinə icazə vermək üçün bunu `false` olaraq təyin edin. Bu, təhlükəsizliyi azaldır, lakin istifadə rahatlığını artırır (məsələn, şəbəkələrini dəyişdirən mobil istifadəçilər üçün).
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $enforce | `bool` | IP ünvanı uyğunluğunu tətbiq edib-etməmək. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L422) at line 422

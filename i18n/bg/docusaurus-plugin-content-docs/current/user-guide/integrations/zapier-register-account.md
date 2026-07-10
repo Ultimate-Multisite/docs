@@ -1,42 +1,40 @@
 ---
-title: Регистриране на профил чрез Zapier
+title: Регистриране на Account чрез Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Събитие: Регистриране на акаунт чрез Zapier
+# Събитие: Регистриране на Account чрез Zapier {#event-register-an-account-via-zapier}
 
-В статията [Integrating Ultimate Multisite with Zapier](zapier.md) обсъдихме как да използвате Zapier, за да изпълните различни действия в Ultimate Multisite въз основа на тригери и събития. В тази статия ще покажем как можете да интегрирате приложения от трети страни. Ще използваме Google Sheets като източник на данни и ще изпратим информацията към Ultimate Multisite за регистриране на акаунт.
+В статията [Интегриране на Ultimate Multisite със Zapier](zapier.md) обсъдихме как да използвате Zapier, за да извършвате различни действия в Ultimate Multisite въз основа на тригери и събития. В тази статия ще покажем как можете да интегрирате приложения на трети страни. Ще използваме Google Sheets като източник на данни и ще изпратим информацията към Ultimate Multisite, за да регистрираме Account.
 
-Първо, трябва да създадете **Google Sheet** в Google Drive. Уверете се, че дефинирате правилно всяка колона, за да можете лесно да мапирате данните по-късно.
+Преди да свържете Zapier, отидете на **Ultimate Multisite > Настройки > API & Webhooks** и потвърдете, че API е активиран. Копирайте API Key и API Secret от този екран, когато Zapier поиска идентификационните данни за Ultimate Multisite Account.
 
-![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)След като създадете Google Sheet, можете да влезете във вашия Zapier акаунт и да започнете да създавате zap.
+![Настройки за API и Webhooks с опции API Key, API Secret и Enable API](/img/admin/settings-api-webhooks.png)
 
-![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)Под полето за търсене на **"App event"** изберете **"Google Sheets"**
+Първо трябва да създадете **Google Sheet** във вашия Google Drive. Уверете се, че сте дефинирали правилно всяка колона, за да можете лесно да съпоставите данните по-късно.
 
-![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
+След като създадете Google sheet, можете да влезете във вашия Zapier Account и да започнете да създавате zap.
 
-След това за полето "**Event** " изберете "**New spreadsheet row** " и натиснете "**Continue** "
+Под полето за търсене за **"Събитие на приложение"** изберете **"Google Sheets"**
 
-![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)Следващата стъпка ще ви помоли да изберете **Google Account**, където е запазен **Google Sheet**. Така че просто уверете се, че е посочен правилният Google account.
 
-![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
+След това за полето "**Събитие** " изберете "**Нов ред в електронна таблица** " и натиснете "**Продължи** "
 
-Под **"Set up trigger** ", трябва да изберете и да посочите Google Sheet и работен лист (worksheet), които ще използвате, от които ще идват данните. Просто попълнете тези полета и натиснете "**Continue** "
+Следващата стъпка ще ви помоли да изберете **Google Account**, в който е запазен **Google Sheet**. Така че просто се уверете, че е посочен правилният Google Account.
 
-![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)Следващото е да натиснете "**test your trigger** ", за да се уверите, че Google Sheet ви е правилно свързан.
 
-![Test your trigger step in Zapier](/img/admin/webhooks-list.png)Ако тестът ви е успешен, трябва да видите резултат, показващ някои стойности от вашите таблици. Натиснете "**Continue** " за продължаване.
+Под **"Настройване на тригер** " ще трябва да изберете и посочите Google електронната таблица и работния лист, които ще използвате и откъдето ще идват данните. Просто ги попълнете и натиснете "**Продължи** "
 
-![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)Следващата стъпка е да настроите второто действие, което ще създаде или регистрира акаунт в Ultimate Multisite. В полето за търсене изберете "**Ultimate Multisite(2.0.2)** "
+След това трябва да "**тествате вашия тригер** ", за да се уверите, че вашият Google sheet е правилно свързан.
 
-![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
+Ако тестът ви е успешен, трябва да видите резултат, показващ някои стойности от вашите електронни таблици. Щракнете върху "**Продължи** ", за да продължите.
 
-Под полето "**Event** " изберете "**Register an Account in Ultimate Multisite** " и след това кликнете върху бутона "**Continue** ".
+Следващата стъпка е да настроите второто действие, което ще създаде или регистрира Account в Ultimate Multisite. В полето за търсене изберете "**Ultimate Multisite(2.0.2)** "
 
-![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)Под "**Set up an action** ", ще видите различни полета, налични за данни на клиенти, членства, продукти и др. Можете да мапирате стойностите от Google Sheet си и да ги присвоите на подходящото поле, където трябва да бъдат попълнени, както е показано в екранален снимок по-долу.
 
-![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
+Под полето "**Събитие** " изберете "**Register an Account in Ultimate Multisite** ", след което щракнете върху бутона "**Продължи** ".
 
-След като мапирате стойностите, можете да тествате действието.
+Под "**Настройване на действие** " ще видите различни полета, налични за клиентски данни, членства, продукти и т.н. Можете да съпоставите стойностите от вашия Google sheet и да ги зададете към правилното поле, в което трябва да бъдат попълнени, както е показано на екранната снимка по-долу.
 
-![Testing the register account Zapier action](/img/admin/webhooks-list.png)
+
+След като съпоставите стойностите, можете да тествате действието.

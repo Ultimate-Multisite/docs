@@ -3,17 +3,17 @@ title: Integrasi RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Integrasi RunCloud
+# Integrasi RunCloud {#runcloud-integration}
 
-## Ringkasan
+## Ringkasan {#overview}
 RunCloud adalah platform manajemen server berbasis cloud yang memungkinkan Anda untuk dengan mudah mendeploy dan mengelola aplikasi web di server cloud Anda sendiri. Integrasi ini memungkinkan sinkronisasi domain otomatis dan manajemen sertifikat SSL antara Ultimate Multisite dan RunCloud.
 
-## Fitur
+## Fitur {#features}
 - Sinkronisasi domain otomatis
 - Manajemen sertifikat SSL
 - Penghapusan domain ketika pemetaan dihapus
 
-## Persyaratan
+## Persyaratan {#requirements}
 Konstanta berikut harus didefinisikan di file `wp-config.php` Anda:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Panduan Pengaturan
+## Panduan Pengaturan {#setup-instructions}
 
-### 1. Dapatkan Kredensial API RunCloud Anda
+### 1. Dapatkan Kredensial API RunCloud Anda {#1-get-your-runcloud-api-credentials}
 
 1. Masuk ke dashboard RunCloud Anda
 2. Buka "User Profile" (klik foto profil Anda di pojok kanan atas)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Klik "Generate API Key" jika Anda belum memilikinya
 5. Salin API Key dan API Secret Anda
 
-### 2. Dapatkan Server ID dan App ID Anda
+### 2. Dapatkan Server ID dan App ID Anda {#2-get-your-server-and-app-ids}
 
 1. Di dashboard RunCloud Anda, buka "Servers"
 2. Pilih server tempat WordPress multisite Anda dihosting
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Buka "Web Applications" dan pilih aplikasi WordPress Anda
 5. App ID terlihat di URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Tambahkan Konstanta ke wp-config.php
+### 3. Tambahkan Konstanta ke wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan konstanta berikut ke file `wp-config.php` Anda:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Aktifkan Integrasi
+### 4. Aktifkan Integrasi {#4-enable-the-integration}
 
 1. Di admin WordPress Anda, buka Ultimate Multisite > Settings
 2. Navigasi ke tab "Domain Mapping"
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Aktifkan integrasi RunCloud
 5. Klik "Save Changes"
 
-## Cara Kerjanya
+## Cara Kerjanya {#how-it-works}
 
 Ketika sebuah domain dipetakan di Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Ketika sebuah domain dipetakan di Ultimate Multisite:
 
 Untuk instalasi subdomain, integrasi akan secara otomatis menangani pembuatan subdomain di RunCloud ketika situs baru ditambahkan ke jaringan Anda.
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Pastikan kredensial API Anda benar
 - Periksa bahwa server ID dan app ID Anda benar
 - Pastikan akun RunCloud Anda memiliki izin yang diperlukan
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 - RunCloud mungkin memerlukan waktu untuk menerbitkan sertifikat SSL
 - Pastikan domain Anda sudah diarahkan dengan benar ke alamat IP server Anda
 - Periksa pengaturan SSL RunCloud untuk aplikasi Anda
 
-### Domain Tidak Ditambahkan
+### Domain Tidak Ditambahkan {#domain-not-added}
 - Periksa log Ultimate Multisite untuk pesan error
 - Pastikan domain belum ditambahkan ke RunCloud sebelumnya
 - Pastikan paket RunCloud Anda mendukung banyak domain

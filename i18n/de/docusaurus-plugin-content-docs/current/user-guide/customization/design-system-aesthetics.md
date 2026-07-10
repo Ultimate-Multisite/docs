@@ -3,11 +3,11 @@ title: Design System Ästhetik-Fähigkeit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Ästhetik-Skill
+# Design System Ästhetik-Skill {#design-system-aesthetics-skill}
 
 Der **Design System Ästhetik-Skill** ist ein geführter Ansatz, um die visuelle Identität Ihrer Website zu verfeinern. Er hilft Ihnen, konsistente Entscheidungen bezüglich Typografie, Farbe, Abstände und Bewegungselemente (Motion Tokens) zu treffen, die Ihr Design System definieren.
 
-## Was ist Design System Ästhetik?
+## Was ist Design System Ästhetik? {#what-is-design-system-aesthetics}
 
 Design System Ästhetik ist ein strukturiertes Skill, das folgende Bereiche abdeckt:
 
@@ -20,9 +20,9 @@ Design System Ästhetik ist ein strukturiertes Skill, das folgende Bereiche abde
 
 Diese Entscheidungen werden in der `theme.json` Ihres Themes gespeichert und schaffen so ein zusammenhängendes visuelles System.
 
-## Warum Design System Ästhetik nutzen?
+## Warum Design System Ästhetik nutzen? {#why-use-design-system-aesthetics}
 
-### Konsistenz
+### Konsistenz {#consistency}
 
 Ein Design System gewährleistet:
 
@@ -31,7 +31,7 @@ Ein Design System gewährleistet:
 - Dass Abstände einem vorhersehbaren Muster folgen
 - Dass Animationen einheitlich wirken
 
-### Effizienz
+### Effizienz {#efficiency}
 
 Anstatt Designentscheidungen Seite für Seite zu treffen, können Sie:
 
@@ -39,7 +39,7 @@ Anstatt Designentscheidungen Seite für Seite zu treffen, können Sie:
 - Sie überall anwenden
 - Global aktualisieren, indem Sie einen Wert ändern
 
-### Flexibilität
+### Flexibilität {#flexibility}
 
 Sie können:
 
@@ -47,9 +47,9 @@ Sie können:
 - Mit verschiedenen Ästhetiken experimentieren
 - Die Markenkonsistenz wahren und gleichzeitig weiterentwickeln
 
-## Auslösen des Design System Ästhetik Skills
+## Auslösen des Design System Ästhetik Skills {#triggering-the-design-system-aesthetics-skill}
 
-### Manuelle Aktivierung
+### Manuelle Aktivierung {#manual-activation}
 
 Sie können den Skill jederzeit starten:
 
@@ -69,7 +69,7 @@ oder
 "Führe mich durch die Design System Entscheidungen"
 ```
 
-### Automatische Vorschläge
+### Automatische Vorschläge {#automatic-suggestions}
 
 Agents können den Skill vorschlagen, wenn Sie:
 
@@ -78,9 +78,9 @@ Agents können den Skill vorschlagen, wenn Sie:
 - Die visuelle Konsistenz verbessern möchten
 - Sich auf den Launch Ihrer Website vorbereiten
 
-## Der Design System Ästhetik Prozess
+## Der Design System Ästhetik Prozess {#the-design-system-aesthetics-process}
 
-### Schritt 1: Typografie
+### Schritt 1: Typografie {#step-1-typography}
 
 Der Agent fragt nach Ihren Schriftwahlpräferenzen:
 
@@ -110,7 +110,7 @@ Der Agent definiert dann:
 - **Stärken-Skala (Weight scale)**: Schriftstärken (regular, medium, bold usw.)
 - **Zeilenhöhe (Line height)**: Abstand zwischen den Zeilen zur Verbesserung der Lesbarkeit
 
-### Schritt 2: Farbpalette
+### Schritt 2: Farbpalette {#step-2-color-palette}
 
 ```
 Lassen Sie uns Ihre Farbpalette definieren.
@@ -140,7 +140,7 @@ Der Agent erstellt eine vollständige Palette, einschließlich:
 - Semantische Farben (erfolg, warnung, fehler)
 - Hover- und aktiven Zuständen
 
-### Schritt 3: Abstände
+### Schritt 3: Abstände {#step-3-spacing}
 
 ```
 Wie viel „Atmen“ soll Ihre Seite haben?
@@ -162,7 +162,7 @@ Der Agent definiert Abstands-Tokens:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Spezifische Werte für Padding, Margin, Gap
 
-### Schritt 4: Bordüren und Schatten
+### Schritt 4: Bordüren und Schatten {#step-4-borders-and-shadows}
 
 ```
 Visuelle Tiefe und Definition:
@@ -185,7 +185,7 @@ Der Agent erstellt:
 - Schatten-Tokens für Höhenstufen
 - Border-Breiten-Tokens
 
-### Schritt 5: Bewegung und Animation
+### Schritt 5: Bewegung und Animation {#step-5-motion-and-animation}
 
 ```
 Wie soll sich Ihre Website anfühlen, wenn sie interaktiv ist?
@@ -207,9 +207,9 @@ Der Agent definiert:
 - Easing-Funktionen (ease-in, ease-out, ease-in-out)
 - Animation Keyframes für gängige Interaktionen
 
-## Design System Ästhetik anwenden
+## Design System Ästhetik anwenden {#applying-design-system-aesthetics}
 
-### Automatische Anwendung
+### Automatische Anwendung {#automatic-application}
 
 Nach Abschluss des Skills:
 
@@ -218,7 +218,7 @@ Nach Abschluss des Skills:
 3. Generiert Block-Styles neu, um sie an das neue System anzupassen
 4. Aktiviert das aktualisierte Theme
 
-### Manuelle Anwendung
+### Manuelle Anwendung {#manual-application}
 
 Sie können auch direkt `theme.json` bearbeiten:
 
@@ -257,9 +257,9 @@ Sie können auch direkt `theme.json` bearbeiten:
 }
 ```
 
-## Ihr Design System ansehen
+## Ihr Design System ansehen {#viewing-your-design-system}
 
-### Den Agenten fragen
+### Den Agenten fragen {#ask-the-agent}
 
 ```
 "Zeige mir mein Design System"
@@ -273,13 +273,13 @@ oder
 
 Der Agent zeigt Ihnen Ihre Typografie, Farben, Abstände und andere Tokens an.
 
-### theme.json ansehen
+### theme.json ansehen {#view-themejson}
 
 Öffnen Sie `/wp-content/themes/[theme-name]/theme.json` in einem Texteditor, um die rohen Token-Definitionen zu sehen.
 
-## Ihr Design System aktualisieren
+## Ihr Design System aktualisieren {#updating-your-design-system}
 
-### Schnelle Updates
+### Schnelle Updates {#quick-updates}
 
 Bitten Sie den Agenten um spezifische Änderungen:
 
@@ -299,7 +299,7 @@ oder
 "Ändere die Überschriftenschrift auf eine Serif"
 ```
 
-### Komplettes Redesign
+### Komplettes Redesign {#full-redesign}
 
 Führen Sie den Design System Ästhetik Skill erneut aus:
 
@@ -309,7 +309,7 @@ Führen Sie den Design System Ästhetik Skill erneut aus:
 
 Dies führt Sie erneut durch alle Entscheidungen, beginnend mit Ihren aktuellen Werten.
 
-### Teilweise Updates
+### Teilweise Updates {#partial-updates}
 
 Aktualisieren Sie spezifische Aspekte:
 
@@ -317,15 +317,15 @@ Aktualisieren Sie spezifische Aspekte:
 "Aktualisiere nur die Farbpalette, behalte alles andere bei"
 ```
 
-## Best Practices für Design Systeme
+## Best Practices für Design Systeme {#design-system-best-practices}
 
-### Konsistenz
+### Konsistenz {#consistency-1}
 
 - Verwenden Sie überall dieselben Tokens
 - Erstellen Sie keine einmaligen Farben oder Größen
 - Verweisen Sie auf Tokens, anstatt Werte hart zu codieren
 
-### Benennung
+### Benennung {#naming}
 
 Verwenden Sie klare, semantische Namen:
 
@@ -335,7 +335,7 @@ Verwenden Sie klare, semantische Namen:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalierbarkeit
+### Skalierbarkeit {#scalability}
 
 Gestalten Sie Ihr System für Skalierbarkeit:
 
@@ -343,7 +343,7 @@ Gestalten Sie Ihr System für Skalierbarkeit:
 - Erstellen Sie Skalen (xs, sm, md, lg, xl) anstelle willkürlicher Werte
 - Planen Sie zukünftige Erweiterungen ein
 
-### Dokumentation
+### Dokumentation {#documentation}
 
 Dokumentieren Sie Ihr Design System:
 
@@ -351,9 +351,9 @@ Dokumentieren Sie Ihr Design System:
 - Wann jeder Token zu verwenden ist
 - Ausnahmen und Randfälle
 
-## Häufige Design System Muster
+## Häufige Design System Muster {#common-design-system-patterns}
 
-### Modern Minimalistisch
+### Modern Minimalistisch {#modern-minimalist}
 
 - Sans-serif Typografie (Inter, Helvetica)
 - Begrenzte Farbpalette (2–3 Farben)
@@ -361,7 +361,7 @@ Dokumentieren Sie Ihr Design System:
 - Subtile Schatten
 - Sanfte, schnelle Animationen
 
-### Warm und Freundlich
+### Warm und Freundlich {#warm-and-friendly}
 
 - Mischung aus Serif und Sans-serif
 - Warme Farbpalette (Orange, warme Grautöne)
@@ -369,7 +369,7 @@ Dokumentieren Sie Ihr Design System:
 - Weiche Schatten
 - Verspielte Animationen
 
-### Professionell Corporate
+### Professionell Corporate {#professional-corporate}
 
 - Klare Sans-serif (Roboto, Open Sans)
 - Neutrale Palette mit Akzentfarbe
@@ -377,7 +377,7 @@ Dokumentieren Sie Ihr Design System:
 - Minimale Schatten
 - Subtile Übergänge
 
-### Kreativ und Kühn
+### Kreativ und Kühn {#creative-and-bold}
 
 - Charakteristische Typografie
 - Kräftige Farbpalette
@@ -385,7 +385,7 @@ Dokumentieren Sie Ihr Design System:
 - Starke Schatten
 - Auffällige Animationen
 
-## Fehlerbehebung (Troubleshooting)
+## Fehlerbehebung (Troubleshooting) {#troubleshooting}
 
 **Meine Design System Änderungen werden nicht angezeigt**
 - Löschen Sie den Browser-Cache
@@ -403,7 +403,7 @@ Dokumentieren Sie Ihr Design System:
 - Bearbeiten Sie `theme.json` manuell auf frühere Werte
 - Führen Sie den Skill mit anderen Entscheidungen erneut aus
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
 Nach der Definition Ihres Design Systems:
 

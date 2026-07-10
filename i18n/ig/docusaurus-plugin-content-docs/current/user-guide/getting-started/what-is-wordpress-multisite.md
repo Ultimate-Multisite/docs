@@ -3,7 +3,7 @@ title: Kedu ihe bụ WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kedu WordPress Multisite?
+# Kedu WordPress Multisite? {#what-is-wordpress-multisite}
 
 Na mme core-nya, WordPress na-eme feature na ọchị bụ ‘Multisite’ nke na-eme ihe dịkwa n'ụzọ 2010 na nwere launch na WordPress 3.0. Ndị ahụ onwe ya na nwere ụfọdụ re-revision ndị na-eme ihe ndị dị new na ịchekwa ike.
 
@@ -11,7 +11,7 @@ Na ọsọ, a chụrụ WordPress multisite na-eme ihe dịkwa na: Na-akpọ Uni
 
 ##
 
-## Kedu Ka bụ WordPress Multisite?
+## Kedu Ka bụ WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite na-eme ihe na WordPress na-eme ka site ndị ọzọ nwere ike ịgba n'ime installation WordPress ọ bụla. Mgbe multisite na-akpọ, site WordPress ọbụọ ahụ na-eme ihe dịkwa na akọrọ na **network of sites**.
 
@@ -35,7 +35,7 @@ Um dos maiores desafios khi thiết lập chế độ subdomain là việc có S
 
 Trái ngược với chế độ subdirectory (thư mục con), các subsites trên mạng dựa trên subdomain được công cụ tìm kiếm coi là các trang web riêng biệt, điều này có nghĩa là nội dung có trên một subsite sẽ không ảnh hưởng đến hiệu suất SEO của các subsite khác chút nào.
 
-## Super Admin
+## Super Admin {#subdomain-or-subdirectory}
 
 Các cài đặt WordPress đơn lẻ cho phép bạn thêm số lượng người dùng không giới hạn và cấp cho những người dùng đó các vai trò người dùng khác nhau với các quyền khác nhau.
 
@@ -49,7 +49,7 @@ Chỉ super admin mới có thể cài đặt hoặc gỡ bỏ plugin và theme 
 
 _Note: Ọ dị như bạn thấy, việc mời ai đó vào mạng lưới của bạn và cấp cho họ quyền super admin sẽ cho người dùng này toàn quyền kiểm soát mạng lưới của bạn. Ví dụ, các super admin khác thậm chí có thể gỡ bỏ trạng thái super admin của bạn, thực chất khóa bạn ra khỏi bảng quản trị mạng của chính mình. Để cho khách hàng Ultimate Multisite có thể kiểm soát chi tiết hơn về những gì các super admin bổ sung có thể làm được, chúng tôi có một add-on gọi là Support Agents. Add-on này cho phép bạn tạo một loại người dùng khác – một agent – chỉ với những quyền mà họ cần để thực hiện các tác vụ của mình trên mạng lưới._
 
-## Cái gì được chia sẻ giữa các subsites và cái gì không được chia sẻ
+## Cái gì được chia sẻ giữa các subsites và cái gì không được chia sẻ {#the-super-admin}
 
 Như chúng tôi đã nói trước, một trong những lợi thế chính của WordPress multisite là tất cả các subsites đều chia sẻ cùng các cấu hình, file cốt lõi, theme, plugin, các file cốt lõi của WordPress, v.v.
 
@@ -61,7 +61,7 @@ Tuy nhiên, có những yếu tố được phân định rõ ràng cho từng s
 
 - Hầu hết các bảng cơ sở dữ liệu đều được tạo cho mỗi subsite, nghĩa là bài viết (posts), bình luận (comments), trang (pages), cài đặt (settings), và nhiều thứ khác đều được phân định riêng cho từng subsite.
 
-## Quản lý người dùng trên WordPress Multisite
+## Quản lý người dùng trên WordPress Multisite {#what-is-shared-among-subsites-and-what-is-not}
 
 Một vấn đề khá nhạy cảm trên WordPress multisite là quản lý người dùng. Bảng người dùng WordPress là một trong số ít những bảng được chia sẻ giữa tất cả các subsites.
 
@@ -85,7 +85,7 @@ _Note: Anyị na-ahụ ike na ihe a dị obi dị ọ bụrụ na ọ bụrụ n
 
 Kamara user table-ah onye na-eme, subsite admins na super admin nwere ike anọrọ na anụkọ ndị ọzọ. Ọ dịarị ka ha na-enwe ama-ama (user roles) dị iche iche na subsites na-eme.
 
-## Nchegbu nchegbu (Performance considerations)
+## Nchegbu nchegbu (Performance considerations) {#user-management-on-wordpress-multisite}
 
 WordPress multisite bụ ihe dị mkpa ma ọ bụrụ na ị chọrọ ịnwụ site anya. Ọ ga-arị eji ihe ndị a: [WordPress.com](https://WordPress.com), Edublogs, na Campuspress bụ mmekọrịta multisite, na ọkụkọ ọ bụla na-enwe ngboy site ndị dị nchekwa (thousands of sites).
 

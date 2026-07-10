@@ -3,15 +3,15 @@ title: 'Dərslik 7: Özünə Uyğunlaşdırmaq'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Dərs 7: Özünüzün Etmək
+# Dərs 7: Özünüzün Etmək {#lesson-7-making-it-yours}
 
 Müştərilərinizin heç vaxt "bir WordPress plugin-indən" istifadə etdiklərini hiss etməmələri lazımdır. Onlar FitSite istifadə etdiklərini, yəni öz sənayələri üçün hazırlanmış bir platformadan istifadə etdiklərini hiss etməlidirlər. Bu dərs markalaşdırma, white-labeling (markanı özün əlavə etmə) və platformanı bir məhsul kimi hiss etdirməyi əhatə edir.
 
-## Harada Qaldıq
+## Harada Qaldıq {#where-we-left-off}
 
 FitSite, fitness studiyası sahiblərini plan seçməsindən canlı sayta keçirən işləyən bir checkout axınına malikdir. İndi isə bütün təcrübəni bir-bütöv, markalanmış bir məhsul kimi hiss etdiririk.
 
-## Platforma Domeniniz
+## Platforma Domeniniz {#your-platform-domain}
 
 Brendinizin təməli sizin domeninizdir. FitSite üçün:
 
@@ -19,7 +19,7 @@ Brendinizin təməli sizin domeninizdir. FitSite üçün:
 - **Müştəri saytları**: `studioname.fitsite.com` (alt-domenlər)
 - **Özəl domenlər**: Growth və Pro planlarına sahib müştərilər öz domenlərini bağlaya bilərlər.
 
-### Domeninizi Qurmaq
+### Domeninizi Qurmaq {#setting-up-your-domain}
 
 1. Platforma domeninizi qeydiyyatdan keçirin
 2. Onu hosting provayuderinə yönləndirin
@@ -28,11 +28,11 @@ Brendinizin təməli sizin domeninizdir. FitSite üçün:
 
 Ətraflı təlimatlar üçün [Domain Mapping-i Necə Konfiqurasiya Etmək](/user-guide/domain-mapping/how-to-configure-domain-mapping) hissəsinə baxın.
 
-## Admin Təcrübəsini White-Label Etmək
+## Admin Təcrübəsini White-Label Etmək {#white-labeling-the-admin-experience}
 
 Bir fitness studiyası sahibi öz saytının dashboard-una daxil olduqda, WordPress və ya Ultimate Multisite brendini deyil, sizin brendinizi görməlidir.
 
-### Xüsusi Login Səhifəsi
+### Xüsusi Login Səhifəsi {#custom-login-page}
 
 WordPress login səhifəsini aşağıdakıları göstərmək üçün fərdiləşdirin:
 
@@ -40,7 +40,7 @@ WordPress login səhifəsini aşağıdakıları göstərmək üçün fərdiləş
 - Fitness-ə uyğun fon şəkli
 - Brend rəngləriniz
 
-### Dashboard Brendi
+### Dashboard Brendi {#dashboard-branding}
 
 [Admin Page Creator](/addons/admin-page-creator) addonundan və ya xüsusi CSS-dən istifadə edərək:
 
@@ -48,7 +48,7 @@ WordPress login səhifəsini aşağıdakıları göstərmək üçün fərdiləş
 - Admin rəng sxemini brendinizə uyğunlaşdırın
 - Fitness-ə xas sürətli keçidlər və kömək resursları ilə xüsusi bir dashboard widget-ı əlavə edin
 
-### Xüsusi Admin Səhifələri
+### Xüsusi Admin Səhifələri {#custom-admin-pages}
 
 Fitness studiyası sahibləri üçün ən vacib əməliyyətləri önə çıxaran xüsusi admin səhifələri yaratmağı düşünün:
 
@@ -58,11 +58,11 @@ Fitness studiyası sahibləri üçün ən vacib əməliyyətləri önə çıxara
 
 Bu, standart WordPress menyusunda gizlətmək əvəzinə, nişə xas əməliyyətləri mərkəzləşdirdiyi üçün öyrənmə əyrisini azaldır.
 
-## Kommunikasiyalarınızda Brendləşdirmə
+## Kommunikasiyalarınızda Brendləşdirmə {#branding-your-communications}
 
 Hər bir e-poçt, faktura və bildiriş sizin brendinizi gücləndirməlidir.
 
-### Sistem E-poçtları
+### Sistem E-poçtları {#system-emails}
 
 **Ultimate Multisite > Settings > Emails** səhifəsinə keçin və bütün sistem e-poçtlarını fərdiləşdirin:
 
@@ -79,7 +79,7 @@ Fərdiləşdirilməsi vacib e-poçtlar:
 | Ödəniş qəbzi | "Ödəniş alındı" | "FitSite abunə ödənişi təsdiqləndi" |
 | Təcrübə bitməsi | "Təcrübəniz yaxın zamanda bitir" | "FitSite təcrübəniz 3 gün sonra bitir — studiya saytınızı yayında saxlayın" |
 
-### Fakturalar
+### Fakturalar {#invoices}
 
 Faktura şablonlarını aşağıdakılarla fərdiləşdirin:
 
@@ -87,7 +87,7 @@ Faktura şablonlarını aşağıdakılarla fərdiləşdirin:
 - Şirkət detallarınız
 - Fitness-ə xas məhsul adları (ümumi plan ID-ləri deyil)
 
-## Müştəri Tərəfindən Görünən Sayt
+## Müştəri Tərəfindən Görünən Sayt {#the-customer-facing-site}
 
 Əsas domeniniz (`fitsite.com`) platformanı satdıran bir marketinq saytına ehtiyac duyur. Bu, Ultimate Multisite şəbəkə admin panelindən ayrıdır — bu, biznesinizin ictimai üzüdür.
 
@@ -103,7 +103,7 @@ Faktura şablonlarını aşağıdakılarla fərdiləşdirin:
 Marketinq saytınızı öz şəbəkənizdə bir sayt kimi yaradın. Bu, onu eyni dashboard-dan idarə etməyinizə imkan verir və öz platformanızın imkanlıqlarını nümayiş etdirir.
 :::
 
-## Müştərilər üçün Xüsusi Domen
+## Müştərilər üçün Xüsusi Domen {#custom-domain-for-customers}
 
 Xüsusi domenlər daxil olan planlara sahib müştərilər üçün prosesi aydın şəkildə sənədləşdirin:
 
@@ -113,7 +113,7 @@ Xüsusi domenlər daxil olan planlara sahib müştərilər üçün prosesi aydı
 
 Bu proses üçün xüsusi bir kömək məqaləsi və ya bilik bazası girişi yaradın, bu məqalə texniki bilikləri olmayan fitness studiyası sahiblərinə yazılmalıdır.
 
-## FitSite Şəbəkəsi İndiki Vəziyyətdə
+## FitSite Şəbəkəsi İndiki Vəziyyətdə {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Onboarding axını üçün hazırdır (növbəti dərs)
 ```
 
-## Bu Dərsdə Nə Qurduq
+## Bu Dərsdə Nə Qurduq {#what-we-built-this-lesson}
 
 - Brendli təcrübə üçün konfiqurasiya edilmiş **Platforma domeni və DNS**
 - FitSite brendli **White-label edilmiş admin**

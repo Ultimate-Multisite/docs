@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Integrasjonslogg
+title: WooCommerce-integrasjonsendringslogg
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Endringslogg for WooCommerce Integration
+# WooCommerce Integration endringslogg {#woocommerce-integration-changelog}
 
-Version 2.0.6 - Utgitt 2026-01-16
-* Forbedring: Inkluderer kjerneabonnementer i tilleggspakken. Krever ikke lenger Woocommerce Subscriptions-tillegg.
+Versjon 2.2.0 - Utgitt 2026-07-01
+* Nytt: Ultimate Multisite skattebeløp vises nå som separate WooCommerce gebyrlinjer ved checkout, noe som gjør skattetotalene tydeligere før betaling.
+* Nytt: La til en valgfri innstilling for "Suspend Memberships Immediately on Failed Renewals" og filteret `wu_woo_suspend_on_payment_failure` for nettsteder som ønsker suspendering ved mislykket fornyelse i WooCommerce Subscriptions forsøksvindu.
+* Fiks: Avstemte WooCommerce Subscription-statuser som kunne forbli ute av synkronisering med Ultimate Multisite-medlemskap etter mislykkede eller gjenopprettede fornyelser.
+* Fiks: La til WooCommerce butikkvaluta i Ultimate Multisite valutaliste når den manglet.
+* Fiks: Bevarte kundens faktureringsdetaljer ved omdirigering av abonnenter til WooCommerce checkout.
+* Forbedret: La til kompatibilitet med Jetpack Autoloader 5.
+* Forbedret: Ryddet opp i generering av utgivelsespakke slik at GitHub- og markedsplass-zip-filer unngår nestede staging-mapper og utviklingsfiler.
 
-Version 2.0.5 - Utgitt 2026-01-09
-* Forbedring: Laster over oversettelser fra glotpress API.
-* Feilretting: Kritisk feil i noen page builders.
-* Feilretting: Uendelig omdirigering når kunden er medlem av hovednettstedet.
+Versjon 2.0.6 - Utgitt 2026-01-16
+* Forbedring: Inkluder kjerneabonnementer i tillegget. Krever ikke lenger Woocommerce Subscriptinos-utvidelsen.
 
-Version 2.0.4 - Utgitt 2025-11-14
+Versjon 2.0.5 - Utgitt 2026-01-09
+* Forbedring: Last inn oversettelser fra glotpress API.
+* Fiks: Kritisk feil i noen sidebyggere.
+* fiks: Uendelig omdirigering når kunden er medlem av hovednettstedet.
+
+Versjon 2.0.4 - Utgitt 2025-11-14
 * Lagt til: Oversettelser for mange flere språk.
 * Endret: Omdøpt til Ultimate Multisite: Woocommerce Integration.
 * Lagt til: Kompatibilitet med Woocommerce 10.2.1.
 * Lagt til: Kompatibilitet med Woocommerce Subscriptions 7.7.0.
-* Feilretting: Kompatibilitet med PHP 8.4
-* Feilretting: Omdirigerer, men når ingen WC-kontoside eksisterer.
+* Fiks: Kompatibilitet med PHP 8.4
+* Fiks: Omdiriger, men når ingen WC-kontoside finnes.
 
-Version 2.0.3 - Utgitt 2025-08-13
-* Endret: Aktiverte automatisk oppdatering med nytt marked.
+Versjon 2.0.3 - Utgitt 2025-08-13
+* Endret: Aktivert automatiske oppdateringer med ny markedsplass.
 
-Version 2.0.2 - Utgitt 2025-07-05
+Versjon 2.0.2 - Utgitt 2025-07-05
 * Endret: Omdøpt til Multisite Ultimate: Woocommerce Integration.
 * Lagt til: Kompatibilitet med Woocommerce 9.8.1.
 * Lagt til: Kompatibilitet med Woocommerce Subscriptions 7.3.0.
-* Feilretting: Kansellering av et abonnement av kunden.
-* Feilretting: Kritisk feil ved bruk av checkout-blokken.
+* Fiks: Kansellering av et abonnement av kunden.
+* Fiks: Kritisk feil ved bruk av checkout-blokk.
 * Forbedring: Nå kompatibel med Woocommerce high performance custom order tables.
-* Feilretting: Kansellering i WooCommerce checkout kan fortsatt oppgradere et medlemskap.
+* Fiks: Kansellering ved WooCommerce checkout kan fortsatt oppgradere et medlemskap.
 
-Version 2.0.1 - Utgitt 2023-08-09
+Versjon 2.0.1 - Utgitt 2023-08-09
 
 * Lagt til: Kompatibilitet med Woocommerce 7.9.0.
 * Lagt til: Kompatibilitet med Woocommerce Subscriptions 5.3.0.
-* Lagt til: Støtte for oppdatering av medlemskap.
-* Lagt til: Varsler om prøveperioder og oppsettgebyrer i Woocommerce.
-* Lagt til: Identifikasjon av Ultimate Multisite Woocommerce-produkter med en metaverdi.
-* Lagt til: Inkluderte en engangsløsning for å merke alle Ultimate Multisite-relaterte Woocommerce-produkter.
-* Lagt til: Fjernet Ultimate Multisite-opprettede produkter fra Woocommerce-listen.
-* Forbedring: Opprettet en ikke-gjentakende Woocommerce-rabatt for å anvende på handlekurven.
+* Lagt til: Støtte for medlemskapsoppdateringer.
+* Lagt til: Varsler om prøveperioder og oppstartsgebyrer i Woocommerce.
+* Lagt til: Identifisering av Ultimate Multisite Woocommerce-produkter med en metaverdi.
+* Lagt til: Satt inn en engangsfiks for å merke alle Ultimate Multisite-relaterte Woocommerce-produkter.
+* Lagt til: Fjernet produkter opprettet av Ultimate Multisite fra Woocommerce-listen.
+* Forbedring: Opprettet en ikke-gjentakende Woocommerce-rabatt som brukes på handlekurven.
 * Forbedring: Gjenopprettet den gjentakende rabatten til Woocommerce-produktet.
-* Forbedring: Lagt til en merkelapp for gjentakende rabatt på Woocommerce-produktet.
-* Forbedring: Sikret produktetypen i checkout.
-* Feilretting: Opprettholdt medlemskapsstatusen under nedgraderingsprosessen.
-* Feilretting: Sjekket om et abonnement eksisterer for å unngå feil under kanselleringsprosessen.
-* Feilretting: Lagt til startdato for abonnementet for bruk i Woocommerce subscriptions.
+* Forbedring: La til en etikett for gjentakende rabatt på Woocommerce-produktet.
+* Forbedring: Sikret produkttype ved checkout.
+* Fiks: Opprettholdt medlemskapsstatus under nedgraderingsprosessen.
+* Fiks: Sjekket om et abonnement finnes for å unngå feil under kanselleringsprosessen.
+* Fiks: La til startdato for abonnement til bruk i Woocommerce-abonnementer.
 * Internt: Implementerte en ny PHP 8.1 byggeprosess.
 
-Version 2.0.0 - Fullstendig omskriving.
+Versjon 2.0.0 - Fullstendig omskriving.
 
-* Lagt til: Prosess for kansellering for å fjerne woo-abonnementet ved bytte av betalingsgateway eller kansellering av medlemskapet;
-* Lagt til: Håndterer for nedgradering og oppgradering av medlemskap;
-* Forbedring: Laster woocommerce-avhengigheter på kundeoppdateringsskjemaet i subsites for å tillate kontooppdatering;
-* Forbedring: Korrekt laster Woocommerce-handlekurven hvis den ikke eksisterer;
-* Forbedring: Sikrer at vi er på hovednettstedets tabeller når vi behandler en kasse;
-* Forbedring: Gjør Ultimo-fornyelsesordren basert på Woocommerce-abonnementets verdi og ikke fra siste betaling;
-* Feilretting: Går til WU Membership-knapplenke;
-* Feilretting: Setter Ultimo-ordren som betalt når Woocommerce-abonnementets fornyelse er betalt;
-* Bygg: Legger til MPB som builder;
+* Lagt til: Prosess for kanselleringsmetode for å fjerne woo-abonnement når gateway endres eller medlemskapet kanselleres;
+* Lagt til: Håndterer for å nedgradere og oppgradere medlemskap;
+* Forbedring: Last inn woocommerce-avhengigheter på skjema for kundeoppdatering på undernettsteder for å tillate kontoopdatering;
+* Forbedring: Korrekt lasting av Woocommerce handlekurv hvis den ikke finnes;
+* Forbedring: Sørg for at vi er på hovednettstedets tabeller når en checkout behandles;
+* Forbedring: Gjør Ultimo fornyelsesordre basert på Woocommerce abonnementsordreverdi og ikke på siste betaling;
+* Fiks: Lenke for Gå til WU Membership-knapp;
+* Fiks: Sett Ultimo-ordre som betalt når Woocommerce subscriptions-fornyelse er betalt;
+* Bygg: Legg til MPB som bygger;
 
-Version 2.0.0-beta-5 - Utgitt 2022-01-21
+Versjon 2.0.0-beta-5 - Utgitt 2022-01-21
 
-* Internt: Lagt til hooks og filtergenerator;
-* Internt: Lagt til Ultimate Multisite stubs for utviklerens livskvalitet;
-* Rettet: Forhindrer opprettelse av flere produkter når det ikke er nødvendig;
+* Internt: La til generator for hooks og filtre;
+* Internt: La til Ultimate Multisite stubs for bedre utvikleropplevelse;
+* Fikset: Forhindre opprettelse av flere produkter når det ikke er nødvendig;
 
-Version 2.0.0-beta.4 - 2021-09-23
+Versjon 2.0.0-beta.4 - 2021-09-23
 
-* Feilretting: Krever at WooCommerce er nettverksaktiv i stedet for bare på hovednettstedet;
-* Forbedring: Lagt til filter for å tillate at tilleggspakken kan brukes som en mu-plugin;
+* Fiks: krever at WooCommerce er nettverksaktiv i stedet for kun på hovednettstedet;
+* Forbedring: la til filter for å tillate at tillegget brukes som en mu-plugin;
 
-Version 2.0.0-beta.3 - 2021-05-28
+Versjon 2.0.0-beta.3 - 2021-05-28
 
-* Feilretting: Dashboard-tilgangskontrollen var for aggressiv;
-* Forbedring: Lagt til WooCommerce hjelpelinker i Ultimate Multisite toppmeny;
+* Fiks: tilgangskontroll for Dashboard var for aggressiv;
+* Forbedring: La til WooCommerce hjelpelinker i Ultimate Multisite toppmeny;
 
-Version 2.0.0-beta.2 - 2021-05-04
+Versjon 2.0.0-beta.2 - 2021-05-04
 
-* Forbedring: Oppretter utestående betalinger i Ultimo ved opprettelse av WCS-fornyelsesordre;
-* Forbedring: Fyller ut faktureringsfelt med Ultimate Multisite kundeinformasjon;
-* Forbedring: Legger til faktureringsfelt for betalingsgatewayer;
+* Forbedring: oppretter ventende betalinger på Ultimo ved opprettelse av WCS fornyelsesordre;
+* Forbedring: forhåndsutfyller faktureringsfelter med Ultimate Multisite kundedata;
+* Forbedring: legger tilbake faktureringsfelter for gateways;
 
-Version 2.0.0-beta.1 - 2021-05-04
+Versjon 2.0.0-beta.1 - 2021-05-04
 
-* Innledende beta-utgivelse
+* Første beta-utgivelse
 
--- Eldre Versjoner --
+-- Eldre versjoner --
 
-Version 1.2.6 - 26/03/2020
+Versjon 1.2.6 - 26/03/2020
 
-* Rettet: Liten inkompatibilitet med nyere versjoner av WooCommerce Subscriptions;
+* Fikset: Liten inkompatibilitet med nyere versjoner av WooCommerce Subscriptions;
 
-Version 1.2.5 - 26/08/2019
+Versjon 1.2.5 - 26/08/2019
 
-* Rettet: Feil i forrige utgivelse;
+* Fikset: Feil i forrige utgivelse;
 
-Version 1.2.4 - 22/08/2019
+Versjon 1.2.4 - 22/08/2019
 
-* Forbedret: Lagt til mulighet for å omdirigere til WooCommerce kasseskjerm etter integrasjon umiddelbart;
+* Forbedret: La til alternativ for å omdirigere til WooCommerce checkout-skjerm umiddelbart etter integrering;
 
-Version 1.2.3 - 26/05/2019
+Versjon 1.2.3 - 26/05/2019
 
-* Rettet: Betalings-e-post for WooCommerce forsvant i noen grensetilfeller;
+* Fikset: Betalings-e-post for WooCommerce forsvant i noen grensetilfeller;
 
-Version 1.2.2 - 27/02/2019
+Versjon 1.2.2 - 27/02/2019
 
-* Lagt til: Støtte for oppsettgebyrer i WooCommerce Subscription-integrasjonen;
+* Lagt til: Støtte for oppstartsgebyrer i WooCommerce Subscription-integrasjonen;
 
-Version 1.2.1 - 17/11/2018
+Versjon 1.2.1 - 17/11/2018
 
-* Rettet: Kompatibilitetsproblemer med Ultimate Multisite versjon 1.9.0;
+* Fikset: Kompatibilitetsproblemer med Ultimate Multisite versjon 1.9.0;
 
-Version 1.2.0 - 10/09/2018
+Versjon 1.2.0 - 10/09/2018
 
-* Forbedret: Ny URL for oppdateringer for tilleggspakker;
-* Lagt til: Beta-støtte for WooCommerce Subscription;
+* Forbedret: Ny oppdaterings-URL for tillegg;
+* Lagt til: Betastøtte for WooCommerce Subscription;
 
-Version 1.1.2 - 11/02/2018
+Versjon 1.1.2 - 11/02/2018
 
-* Rettet: Lenken til Betalingsbetaling ble generert dynamisk for å respondere på endringer i WooCommerce-endepunkter;
-* Forbedret: Vi tvinger nå statusen "fullført" for våre ordrer når payment_completed kalles, for å sikre at våre fornyelseshooks kjører når de skal;
+* Fikset: Lenke til betaling genereres dynamisk for å reagere på endringer i WooCommerce endpoints;
+* Forbedret: Vi tvinger nå fullført status for ordrene våre når payment_completed kalles, for å sikre at fornyelses-hooks kjører når de skal;
 
 Version 1.1.1 - 24/01/2018
 
-* Rettet: Sjekker nå også om WooCommerce bare er aktivert på hovednettstedet;
-* Rettet: Inkluderte overbelastninger for å tillate at ordreopprettelse kan inkludere skatter;
+* Rettet: Nå sjekker den også om WooCommerce nettopp er aktivert på hovedsiden;
+* Rettet: Inkluderte overstyringer for å tillate ordreopprettelse å inkludere avgifter;
 
 Version 1.1.0 - 04/11/2017
 
-* Rettet: Merkelappen på integrasjonsknappen endres faktisk for å gjenspeile innstillingene. Krever Ultimate Multisite 1.5.0;
-* Rettet: WooCommerce Integration fungerer nå selv om WooCommerce ikke er nettverksaktiv og kun er aktivert på hovednettstedet;
+* Rettet: Nå endres etiketten på integrasjonsknappen faktisk for å gjenspeile innstillingene. Krever Ultimate Multisite 1.5.0;
+* Rettet: WooCommerce Integration fungerer nå selv om WooCommerce ikke er nettverksaktiv og bare aktivert på t^he hovedsiden;
 
-1.0.0 - Opprinnelig utgivelse
+1.0.0 - Første utgivelse

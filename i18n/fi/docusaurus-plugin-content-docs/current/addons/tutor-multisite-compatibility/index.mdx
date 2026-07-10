@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite -yhteensopivuus
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress-lisäosa, joka lisää yhteensopivuuskorjauksia Tutor LMS:lle multisite-ympäristöissä.
+
+## Kuvaus {#description}
+
+Tämä lisäosa tarjoaa olennaisia yhteensopivuuskorjauksia Tutor LMS:n käyttämiseen WordPress multisite -verkoissa. Se käsittelee käyttäjien ilmoittautumista, opettajien hallintaa, kurssirajoituksia ja muita multisite-kohtaisia toimintoja.
+
+## Ominaisuudet {#features}
+
+- **Tietokantataulujen hallinta**: Tunnistaa ja luo automaattisesti puuttuvat Tutor LMS -taulut, joiden luonti epäonnistuu multisite-viiteavainrajoitusten vuoksi
+- **Multisite-käyttäjien ilmoittautuminen**: Mukautetut AJAX-käsittelijät käyttäjien ilmoittautumisen hallintaan verkon sivustojen välillä
+- **Opettajaroolien hallinta**: Automaattinen opettajaroolin määritys ja hallinta multisite-ympäristöissä
+- **Kurssirajoitukset**: Integraatio Ultimate Multisiteen kurssien ja funneleiden luontirajojen hallintaan sivuston pakettien perusteella
+- **Mukautetut ylläpitonäkymät**: Multisite-tietoinen opettajaluettelo ja hallintakäyttöliittymä
+- **Ylläpitotyökalut**: Tietokannan hallintakäyttöliittymä verkon ja sivuston ylläpitäjille
+
+## Vaatimukset {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS -lisäosa (pakotetaan automaattisesti `Requires Plugins` -otsakkeen kautta)
+- WordPress Multisite -asennus
+- Ultimate Multisite -lisäosa (kurssirajoitustoiminnallisuutta varten)
+
+## Asennus {#installation}
+
+1. Lataa lisäosan tiedostot hakemistoon `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Varmista, että Tutor LMS on asennettu ja aktivoitu
+3. Aktivoi lisäosa WordPressin Lisäosat-valikon kautta
+4. Lisäosa integroituu automaattisesti Tutor LMS:ään
+
+## Tiedostorakenne {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Päälisäosatiedosto)
+├── includes/
+│   ├── class-database-manager.php (Tietokantataulujen luonti ja hallinta)
+│   ├── class-admin-interface.php (Ylläpitokäyttöliittymä tietokannan hallintaan)
+│   ├── class-course-limits.php (Kurssi- ja funnel-rajoitusten käsittelijät)
+│   ├── class-instructor-manager.php (Opettajaroolien hallinta)
+│   ├── class-ajax-handlers.php (Mukautetut AJAX-käsittelijät)
+│   ├── class-query-helper.php (Tietokantakyselyjen apuohjelmat)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite-käyttäjämalli)
+│   └── admin/
+│       ├── class-instructors-list.php (Mukautettu opettajaluettelo)
+│       └── views/
+│           └── instructors.php (Opettajan ylläpitonäkymä)
+└── README.md
+```
+
+## MU pluginista siirretty toiminnallisuus {#functionality-moved-from-mu-plugin}
+
+Tämä lisäosa sisältää toiminnallisuutta, joka oli aiemmin tiedostossa `wp-content/mu-plugins/daves.php`:
+
+- Kurssin tilan muutosten rajoitukset
+- Kurssien luontirajoitukset
+- CartFlows-integraatio ja rajat
+- Tutor-opettajaroolien hallinta
+- Multisite-käyttäjien ilmoittautumisen käsittely
+- Kurssituotteen ID:n näyttäminen
+
+## Tietokannan hallinta {#database-management}
+
+### Ongelma {#the-problem}
+
+WordPress multisite -ympäristöissä Tutor LMS -taulujen luonti epäonnistuu tauluissa, joissa on viiteavainrajoituksia käyttäjätauluun. Tämä tapahtuu, koska:
+
+- Sivustokohtaiset taulut käyttävät etuliitteitä kuten `wp_2_tutor_carts`
+- Viiteavaimet viittaavat tauluun `wp_2_users` (jota ei ole olemassa)
+- Todellinen käyttäjätaulu on `wp_users` (jaettu koko verkossa)
+
+### Ratkaisu {#the-solution}
+
+Tämä lisäosa automaattisesti:
+
+1. **Tunnistaa puuttuvat taulut**: Tarkistaa taulut, joiden luonti epäonnistui viiteavainrajoitusten vuoksi
+2. **Luo taulut oikeilla viittauksilla**: Käyttää oikeaa käyttäjätaulun nimeä (`wp_users` multisite-ympäristössä)
+3. **Käsittelee useita tilanteita**:
+   - Lisäosan aktivointi/uudelleenaktivointi
+   - Uuden sivuston luonti verkkoon
+   - Manuaalinen taulujen tarkistus ylläpitokäyttöliittymän kautta
+
+### Vaikutuksen alaiset taulut {#affected-tables}
+
+- `tutor_coupon_usages` - Sisältää viiteavaimen käyttäjätauluun
+- `tutor_carts` - Sisältää viiteavaimen käyttäjätauluun
+- `tutor_notification_preferences` - TutorPro-taulu, jossa on viiteavain käyttäjätauluun
+
+### Ylläpitokäyttöliittymä {#admin-interface}
+
+Tietokannan hallintatyökaluihin pääsee osoitteessa:
+
+- **Verkon ylläpito**: Asetukset → Tutor Multisite DB
+- **Sivuston ylläpito**: Työkalut → Tutor Multisite DB
+
+Käyttöliittymän avulla voit:
+- Näyttää puuttuvat taulut kaikilla sivustoilla
+- Käynnistää taulujen luonnin manuaalisesti
+- Tarkistaa tietokannan määritykset
+- Näyttää yksityiskohtaiset tilatiedot
+
+## Tuki {#support}
+
+Tämä lisäosa on suunniteltu erityisesti KursoPro-alustalle. Teknistä tukea varten ota yhteyttä kehitystiimiin.

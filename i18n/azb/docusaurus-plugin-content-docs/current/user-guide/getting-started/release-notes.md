@@ -1,82 +1,96 @@
 ---
-title: Release Notes
+title: بوراخیلیش یادداشتلاری
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Yayın Notları
+# بوراخیلیش قئیدلری {#release-notes}
 
-## Version 2.12.0 — Yayınlanma Tarihi 2026-05-15
+## نسخه 2.13.0 — 2026-06-05 تاریخین‌ده بوراخیلدی {#version-2130--released-on-2026-06-05}
 
-- Yeni: Domain eşleştirme entegrasyonu ile birlikte Hostinger (hPanel) desteklenen bir barındırma sağlayıcısı olarak eklendi.
-- Yeni: Site Exporter, ağ genelinde site kurtarma işlemlerini kolaylaştırmak için artık ağ içe aktarma paketlerini yönetiyor.
-- Düzeltme: BCC ile gönderilen toplu e-postalarda, alıcı adreslerinin görünmesini engellemek için artık `undisclosed-recipients` başlığı kullanılıyor.
-- Düzeltme: Üyelik bitiş tarihi, bir tarih değeri yerine başka bir değerle kaydedildiğinde artık bozulmuyor.
-- Düzeltme: Stripe üyelik güncellemeleri, artık kullanımdan kaldırılmış `deleteDiscount` API'sini çağırmadan indirimleri doğru bir şekilde temizliyor.
-- Düzeltme: Domain eşleştirilmiş sitelerdeki SSO yönlendirmeleri, sonsuz yönlendirme döngülerini önlemek için artık sınırlandırıldı.
-- Düzeltme: Kurulum sihirbazı görsel seçimi, artık temel veri modelini doğru şekilde güncelliyor.
-- Düzeltme: Site Exporter CLI, artık doğru varsayılan ağ site seçimini koruyor.
-- İyileştirme: Eklenti paketinden toplu `wp-cli` kaldırıldı, bu da eklenti boyutunu küçülttü.
+- یئنی: مشتری Account، اؤدنیس، حساب‌کشی، سایت، فاکتور، قالب دَییشدیرمه و دومین نگاشتیریما آخیشلاری اوچون مستقل tenant دَسته‌گی آرتیریلدی؛ بئله‌جه tenant شبکه‌لری ایداره اولونان عمل‌لر اوچون مشتری‌لری باش سایتا یؤنلَنده بیلر.
+- یئنی: تکرارلانان عضویت‌لر اوچون یئنی‌لَمه اعتبارنامه یوخلامالاری آرتیریلدی؛ بئله‌جه gateway-لر ساخلی billing agreement، آبونمان یا vault token اولمایاندا خودکار یئنی‌لَمه‌نی سؤندوره بیلر.
+- یئنی: گؤزلَمه‌ده اولان سایت یارادیلیشی اوچون HMAC ایله دوغرولانمیش loopback یاییمی آرتیریلدی؛ بئله‌جه زمینه ایشلری گئجیکن میزبان‌لاردا اؤدنیس‌دن سایت قورولوشونا گئدن پروسه داها گؤوَنلی اولور.
+- یئنی: SSO URL-لری، اؤدنیس فورمو اساس دومین‌لری و خودکار دومین قئیدی یاراتماق اوچون توسعه‌چی گئنیشلَتمه نقطه‌لری آرتیریلدی.
+- دوزلیش: SSO نگاشتیرمیش دومین‌لر، ناشناس broker گوروشلری، چیخیش و پلاگین‌لر آراسی آسلیلیق توتوشمالاری بویونجا داها گؤوَنلی اولدو.
+- دوزلیش: گؤزلَمه‌ده اولان سایت یارادیلیشی ایندی کؤهنه publish بایراقلاریندان قورتاریر و مشتری‌لرین سایت یاراتما اکرانین‌دا ایلیشیب قالماسینین قاباغینی آلیر.
+- دوزلیش: دومین قئیدلری آرتیق پایلاشیلمیش اؤدنیس فورمو اساس دومین‌لری اوچون یارادیلمیر و هئچ بیر بیرلَشمه فعال اولمایاندا ایشلنمه‌ین میزبان-تأمین‌چی زمینه ایشلری کئچیلیر.
+- دوزلیش: اؤدنیس، حساب‌کشی آدرسی، شفره‌نی سیفیرلاما، ایمیل دوغرولاماسی، قالب دَییشدیرمه، تورلار و مشتری Dashboard کناری durum-لاری آرتیق عادی مشتری آخیشلارینی دایاندیرمیر.
+- دوزلیش: broadcast ایمیل‌لری آرتیق آلان‌لاری گیزلی ساخلییر و آلان لیست‌لری یا میل داشیماسی اوغورسوز اولاندا SMTP/پلاگین اؤلدوروجو خطالاریندان قاچیر.
+- دوزلیش: عضویت یئنی‌لَمه‌لری، بیتیش گؤستریشی و اؤدنیس توپلاما کناری durum-لاری آرتیق فوری بیتیش، چؤکمه یا لازم اؤدنیس‌لرین بوراخیلماسینا یول وئرمیر.
+- یاخشیلاندیریلدی: WordPress اویغونلوغو 7.0-ا قدر یوخلانیب، production Vue asset-لری npm قایناقلاریندان یئنیدن قورولوب و Cypress ucdan-uca پوشش ایندی داها چوخ اؤدنیس، قورولوش، SSO و gateway آخیشلارینی سیناییر.
 
-## Version 2.11.0 — Yayınlanma Tarihi 2026-05-11
+## نسخه 2.12.0 — 2026-05-15 تاریخین‌ده بوراخیلدی {#version-2120--released-on-2026-05-15}
 
-- Yeni: Site dışa aktarımları artık kendi kendini başlatan bir `index.php` paketi içeriyor, böylece ZIP dosyası ayrı bir eklenti kurulumu olmadan yeni bir barındırıcısına kurulabilir.
-- Yeni: Ağ dışa aktarma özelliği, yöneticilerin Site Export admin sayfasından tüm alt siteleri tek bir arşivde dışa aktarmasına olanak tanıyor.
-- Yeni: Site Şablonları planı açma/kapama düğmesi, artık bir yedekleme zinciri üzerinden zorunlu kılınıyor ve plan limitleri için şablon kullanılabilirliğini doğru şekilde kısıtlıyor.
-- Yeni: Ödeme formu düzenleyicisi, zorunlu bir alan yapılandırılmadan ürün eklenirse uyarı veriyor.
-- Yeni: İçe/Dışa Aktarma ayarları sekmesi, kapsamını net bir şekilde açıklıyor ve doğrudan Site Export aracına bağlantı veriyor.
+- یئنی: Hostinger (hPanel) دومین نگاشتیریما بیرلَشمه‌سی ایله دَسته‌کلَنه‌ن میزبان تأمین‌چی کیمی آرتیریلدی
+- یئنی: سایت چیخاردان ایندی شبکه بویو سایت قایتارماسینی ساده‌لَشدیرمک اوچون شبکه واردات بسته‌لرینی ایداره ائدیر
+- دوزلیش: BCC broadcast ایمیل‌لری ایندی آلان آدرس‌لاری آشکار اولماسین دئیه undisclosed-recipients باشلیغی ایشلَدیر
+- دوزلیش: عضویت بیتیش تاریخی آرتیق تاریخ اولمایان دَیَرله ساخلا‌ناندا خراب اولمور
+- دوزلیش: Stripe عضویت یئنیلَنمه‌لری ایندی deprecated deleteDiscount API-نی چاغیرمادان تخفیف‌لری دوزگون تمیزلَییر
+- دوزلیش: دومین نگاشتیرمیش سایت‌لاردا SSO یؤنلَندیرمه‌لری ایندی sonsuz یؤنلَندیرمه دؤوره‌لرینین قاباغینی آلماق اوچون محدودلاشدیرلیب
+- دوزلیش: قورولوش جادوگَری تصویر سئچن سئچیمی ایندی آلتداکی داده مدلینی دوزگون یئنیلَییر
+- دوزلیش: سایت چیخاردان CLI ایندی دوزگون پیش‌فرض شبکه سایت سئچیمینی قورویور
+- یاخشیلاندیریلدی: بسته‌لَنمیش wp-cli پلاگین بسته‌سیندن سیلیندی و پلاگین اؤلچوسو آزالدی
 
-## Version 2.10.0 — Yayınlanma Tarihi 2026-05-05
+## نسخه 2.11.0 — 2026-05-11 تاریخین‌ده بوراخیلدی {#version-2110--released-on-2026-05-11}
 
-- Yeni: PayPal için manuel kimlik bilgisi girişi yapabilen rehberli kurulum sihirbazı, sorunsuz ağ geçidi yapılandırması için OAuth bayrak kapısı ile birlikte eklendi.
-- Yeni: Şablon değiştirme müşteri paneli, güncel şablon kartı, kalıcı ızgara ve **Mevcut şablonu sıfırla** düğmesi ile yeniden tasarlandı.
-- Düzeltme: Şablon değiştirme, AJAX hatası durumunda artık kullanıcı arayüzünü (UI) dondurmuyor.
-- Düzeltme: Şablon değiştirme izin durumları, yetkisiz erişime karşı güvence altına alındı.
-- Düzeltme: Site geçersiz kılma (override) girişleri, kaydedilmeden önce doğrulanıyor.
-- Düzeltme: Faturalandırma adresi istemi, adres boş olduğunda gösteriliyor.
-- Düzeltme: PHP 8.1 null-to-string kullanımdan kaldırma bildirimleri çözüldü.
-- Düzeltme: Currents, zamanlama sorunlarını önlemek için artık `init` hook'undan önce tembel yükleniyor.
-- Düzeltme: Filtrelenmiş SSO yolu, tüm giriş akışlarında dikkate alınıyor.
-- Düzeltme: Boş site kimlik seçenekleri, kaydedildiğinde korunuyor.
+- یئنی: سایت چیخیشلاری ایندی اؤزو باشلایان `index.php` داخیل ائدیر؛ بئله‌جه ZIP آیریق پلاگین قورولوشو اولمادان تازه میزباندا قورولا بیلر.
+- یئنی: شبکه چیخیشی مدیرلره Site Export admin صفحه‌سیندن بوتون آلت‌سایت‌لاری تک آرشیوده چیخارتماقا ایمکان وئریر.
+- یئنی: Allow Site Templates پلان دَییشدیرجَیی ایندی fallback زنجیری ایله اجرا اولونور و پلان محدودلارینا گؤره قالب اَلچاتانلیغینی دوزگون محدودلاشدیر.
+- یئنی: اؤدنیس فورمو ویرایش‌چی‌سی، لازم ساحه تنظیم اولمادان بیر محصول آرتیریلاندا خبر‌دارلیق وئریر.
+- یئنی: واردات/چیخیش تنظیم‌لری تب‌ی ایندی اؤز دائره‌سینی آیدین شرح ائدیر و بیر‌باشا Site Export آلتینه باغلانیر.
 
-## Version 2.9.0 — Yayınlanma Tarihi 2026-04-30
+## نسخه 2.10.0 — 2026-05-05 تاریخین‌ده بوراخیلدی {#version-2100--released-on-2026-05-05}
 
-- Yeni: Tek site dışa aktarma ve içe aktarma, **Araçlar > Dışa Aktarma ve İçe Aktarma** altına eklendi.
-- Düzeltme: Dışa aktarma ZIP dosyaları, artık kimlik doğrulamalı bir indirme uç noktası üzerinden sunuluyor.
-- Düzeltme: Bekleyen dışa/içe aktarma sorgularındaki SQL enjeksiyon riski ve sorgu sorunları düzeltildi.
-- Düzeltme: Yönetici, müşteri e-postasını manuel olarak doğruladığında bekleyen site yayınlanmıyordu.
-- Düzeltme: Üyelik eksik olduğunda, yetim `pending_site` kayıtları temizleniyor.
-- Düzeltme: Ayarlar navigasyon dolgusu ve arama bağlantı navigasyonu düzeltildi.
-- Düzeltme: Bekleyen siteler, artık Tüm Siteler görünümünde ilk sırada gösteriliyor.
-- Düzeltme: Ekran görüntüsü sağlayıcısı (mShots) için 403 hatalarını önlemek amacıyla User-Agent başlığı eklendi.
-- Düzeltme: İçe aktarma cron zamanlaması döngüsel bağımlılığı çözüldü.
-- Düzeltme: Tur ID'leri, kullanıcı ayarları anahtarlarında alt çizgiye normalize edildi.
-- İyileştirme: Daha iyi uyumluluk için Alchemy/Zippy yerine artık ZipArchive kullanılıyor.
+- یئنی: PayPal اوچون دستی اعتبارنامه گیریشی جادوگَری، seamless gateway تنظیمی اوچون OAuth بایراق قاپیسی ایله آرتیریلدی.
+- یئنی: قالب دَییشدیرمه مشتری پانلی جاری-قالب کارت، قالیجی شبکه و **جاری قالبی سیفیرلا** دؤیمه‌سی ایله یئنیدن طراحی اولوندو.
+- دوزلیش: قالب دَییشدیرمه آرتیق AJAX اوغورسوزلوغوندا UI-نی آسلی ساخلامیر.
+- دوزلیش: قالب دَییشدیرمه ایجازه durum-لاری ایجازه‌سیز گیریشه قارشی قوروندو.
+- دوزلیش: سایت override گیریشلری ساخلامادان اؤنجه دوغرولاندی.
+- دوزلیش: حساب‌کشی آدرسی بوش اولاندا ایندی آدرس ایسته‌گی گؤستَریلیر.
+- دوزلیش: PHP 8.1 null-to-string deprecated بیلدیریشلری حل اولدو.
+- دوزلیش: زمانلاما مشکل‌لرینین قاباغینی آلماق اوچون Currents init hook-دان اؤنجه lazy-loaded اولدو.
+- دوزلیش: فیلترلَنمیش SSO یولو بوتون گیریش آخیشلارین‌دا رعایت اولوندو.
+- دوزلیش: بوش سایت کیملیگی سئچنه‌کلری ساخلامادا قوروندو.
 
-## Version 2.8.0 — Yayınlanma Tarihi 2026-04-29
+## نسخه 2.9.0 — 2026-04-30 تاریخین‌ده بوراخیلدی {#version-290--released-on-2026-04-30}
 
-- Yeni: Diğer Seçenekler ayarları arayüzüne Jumper açma/kapama düğmesi eklendi.
-- Yeni: Ödeme formları list tablosuna Durum sütunu eklendi.
-- Yeni: Özel MU-plugin sunrise uzantıları için Addon sunrise dosya yükleyici eklendi.
-- İyileştirme: Ayarlar sayfasındaki hata raporlama seçeneği kaldırıldı.
-- Düzeltme: Teşekkür sayfası site kartı — görsel artık sınırlandırıldı ve bağlantılar doğru şekilde stilize edildi.
-- Düzeltme: Ekran görüntüsü sağlayıcısı thum.io'dan WordPress.com mShots'a geçirildi.
-- Düzeltme: Etkinleştirme ve Varsayılan Rol, yeni kurulumda doğru varsayılan değerleri alıyor.
-- Düzeltme: `get_site_url()` artık domain bir port içerdiğinde boş değer döndürmüyor.
-- Düzeltme: `copy_media` ayarı boş olduğunda medya dosyaları artık doğru kopyalanıyor.
-- Düzeltme: Ağ-aktifleştirme sitemeta yazıldıktan sonra nesne önbelleği doğru şekilde geçersiz kılınıyor.
-- Düzeltme: 3 parçalı domainler için DNS doğrulaması yapıldığında özel domain birincil olarak yükseltiliyor.
-- Düzeltme: Süresi dolmuş ödeme temizlendiğinde bekleyen üyelik iptal ediliyor.
-- Düzeltme: Parola gücü kontrolcüsü, satır içi giriş istemi kapatıldıktan sonra yeniden bağlandı.
-- Düzeltme: Site zaten oluşturulmuşsa, teşekkür sayfasında sonsuz sayfa yenilemesi durduruldu.
-- Düzeltme: WP çekirdek kayıt seçeneği, eklenti etkinleştirildiğinde ve ayarlar kaydedildiğinde senkronize ediliyor.
-- Düzeltme: PHP 8.4 uyumluluğu için `calculate_expiration` içinde null bitiş koruması eklendi.
-- Düzeltme: Müşteri zaten aktif bir üyeliğe sahipse, yinelenen kayıtlar engelleniyor.
-- Düzeltme: Ödeme sırasında `date_expiration` için null kontrolü eklendi.
-- Düzeltme: Site sağlama (provisioning) güçlendirildi — limitler, üyelik çıkarımı, domain yükseltme.
-- Düzeltme: Ön-kurulum kontrol durumu etiketi, kontrol başarısız olduğunda NOT Activated olarak düzeltildi.
-- Düzeltme: E-posta doğrulama URL'leri için ödeme domaini kullanılıyor.
-- Düzeltme: Ödeme sonrası, parola alanı mevcut değilse otomatik giriş yapılıyor.
-- Düzeltme: Ücretsiz üyelikler artık süresi dolmuyor — ömür boyu kabul ediliyor.
-- Düzeltme: E-posta doğrulama kapısı, müşteri e-postasını doğrulayana kadar site yayınını durduruyor.
-- Düzeltme: SES v2 API uç noktası temel yolu ve kimlik yolu düzeltildi.
-- Düzeltme: `wu_inline_login_error` hook'u, ön-gönderim yakalama bloğunda yayınlanıyor.
+- یئنی: تک-سایت چیخیشی و وارداتی **Tools > Export & Import** آلتیندا آرتیریلدی.
+- دوزلیش: چیخیش ZIP فایل‌لاری ایندی هویت‌دوغرولامالی یؤکله‌مه اندپوینت‌یله وئریلیئر.
+- دوزلیش: گؤزلَمه‌ده اولان چیخیش/واردات سورغولاریندا SQL injection خطری و سورغو مشکل‌لری دوزَلدیلدی.
+- دوزلیش: مدیر مشتری ایمیلینی دستی دوغرولایاندا گؤزلَمه‌ده اولان سایت منتشر اولمور.
+- دوزلیش: عضویت اولمایاندا یتیم pending_site قئیدلری تمیزلَندی.
+- دوزلیش: تنظیم‌لر ناوبری padding و آختاریش anchor ناوبری‌سی دوزَلدیلدی.
+- دوزلیش: گؤزلَمه‌ده اولان سایت‌لار ایندی All Sites گؤرونوشون‌دا اؤنجه گؤستَریلیر.
+- دوزلیش: 403 خطالارینین قاباغینی آلماق اوچون Screenshot provider (mShots) User-Agent باشلیغی آرتیریلدی.
+- دوزلیش: واردات cron زمان‌بندی‌سینده دایروی آسلیلیق حل اولدو.
+- دوزلیش: تور ID-لری ایشلدن تنظیم‌لری açar-لارین‌دا آلت‌خطلارا نورماللاشدیرلیب.
+- یاخشیلاندیریلدی: داها یاخشی اویغونلوق اوچون Alchemy/Zippy یئرینه ایندی ZipArchive ایشلَنیر.
+
+## نسخه 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- تازه: Enable Jumper تاگل‌ئی Other Options تنظیمات UI-سینه آرتیریلدی.
+- تازه: Status سوتونو checkout فورم‌لاری لیست جدولی‌نه آرتیریلدی.
+- تازه: اؤزل MU-plugin sunrise گئنیشلتمه‌لری اوچون Addon sunrise فایل یوکله‌ییجی‌سی.
+- یاخشیلاندی: تنظیمات صفحه‌سیندن خطا-بیلدیرمه opt-in تنظیمی سیلیندی.
+- دوزَلیش: تشکر صفحه‌سی سایت کارتی — تصویر ایندی محدودلاشیب و لینک‌لر دوزگون استیل‌لنیب.
+- دوزَلیش: Screenshot تامین ائدن thum.io-دان WordPress.com mShots-ا دَییشدی.
+- دوزَلیش: Enable Registration و Default Role ایندی تازه قورولومدا دوزگون پیش‌فرض‌لر قویور.
+- دوزَلیش: `get_site_url()` آرتیق دومین پورت داخل ائدنده بوش قایتارمیر.
+- دوزَلیش: `copy_media` تنظیمی بوش اولاندا کلون مدیا فایل‌لاری ایندی دوزگون کؤچورولور.
+- دوزَلیش: network-activate sitemeta یازیلیشیندان سونرا Object cache دوزگون بی‌اعتبار ائدیلدی.
+- دوزَلیش: ۳ بؤلوملو دومین‌لر اوچون DNS دوعرولاماسیندا اؤزل دومین اؤز-اؤزونه اساسا یؤکسَلدیلدی.
+- دوزَلیش: واختی کئچمیش اؤدنی‌ش تمیزلنده Pending membership لغو ائدیلدی.
+- دوزَلیش: اینلاین گیریش ایستمی باغلاندان سونرا شفره گوجو یوخلایان یئنی‌دن باغلاندی.
+- دوزَلیش: سایت آرتیق یارادیلاندا تشکر صفحه‌سینده سونسوز صفحه یئنی‌دن یوکلنمه‌سی دایاندی.
+- دوزَلیش: WP core قئیدیات سئچیمی plugin فعاللاشماسیندا و تنظیمات ساخلانیشیندا سینک ائدیلدی.
+- دوزَلیش: PHP 8.4 اویغونلوغو اوچون `calculate_expiration` ایچینه Null expiration قوروماسی آرتیریلدی.
+- دوزَلیش: موشتری‌نین آرتیق فعال عضویتی اولاندا تکراری قئیدیات‌لار اَنگللندی.
+- دوزَلیش: checkout ایچین `date_expiration` اوچون Null یوخلاماسی آرتیریلدی.
+- دوزَلیش: سایت حاضیرلاما بَرقیدیلدی — محدودیت‌لر، عضویت چیخاریمی، دومین یؤکسَلدیلمسی.
+- دوزَلیش: قورولوم‌دان اؤنجه یوخلاما status یارلیغی یوخلاما اوğورسوز اولاندا NOT Activated کیمی دوزَلدیلدی.
+- دوزَلیش: ایمیل دوعرولاما URL-لاری اوچون checkout دومینی ایشلدیلدی.
+- دوزَلیش: شفره ساحه‌سی یوخدورسا checkout-دان سونرا اوتوماتیک گیریش.
+- دوزَلیش: پولسوز عضویت‌لر آرتیق بیتیرمیر — عؤموربوئی کیمی قبول ائدیلیر.
+- دوزَلیش: ایمیل دوعرولاما قاپیسی، موشتری ایمیلی دوعرولایانا قدر سایت یاییمینی ساخلاییر.
+- دوزَلیش: SES v2 API endpoint اساس یولو و identity روتو دوزَلدیلدی.
+- دوزَلیش: `wu_inline_login_error` hook-و pre-submit catch بلوکوندا گؤندریلیر.

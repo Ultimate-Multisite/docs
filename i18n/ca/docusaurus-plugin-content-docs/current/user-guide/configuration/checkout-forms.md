@@ -1,211 +1,217 @@
 ---
-title: Forms de pagament
+title: Formularis de finalització de compra
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formularis de Caixa
+# Formularis de pagament {#checkout-forms}
 
-Els formularis de caixa són una manera fàcil i flexible de provar diferents aproximacions quan es tracta de convertir clients nous.
+Els formularis de pagament són una manera fàcil i flexible d’experimentar amb diferents enfocaments quan intentes convertir clients nous.
 
-Ultimate Multisite 2.0 ofereix un editor de Formulari de Caixa que et permet crear tant formularis com desitgeu, amb diferents camps, productes disponibles, etc.
+Ultimate Multisite 2.0 ofereix un editor de formularis de pagament que et permet crear tants formularis com vulguis, amb diferents camps, productes en oferta, etc.
 
-Per accedir a aquesta funció, dirigeix-te al menú Formularis de Caixa, a la barra lateral esquerra.
+Per accedir a aquesta funció, ves al menú Formularis de pagament, a la barra lateral esquerra.
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![Llista de formularis de pagament](/img/config/checkout-forms-list.png)
 
-En aquesta pàgina, pots veure tots els formularis de caixa que tens.
+En aquesta pàgina, pots veure tots els formularis de pagament que tens.
 
-La taula de llista inclou una columna de **Estat** perquè puguis confirmar si cada formulari està actualment disponible per als clients:
+La taula de la llista inclou una columna **Estat** perquè puguis confirmar si cada formulari està disponible actualment per als clients:
 
 | Estat | Significat |
 |---|---|
-| **Actiu** | El formulari es pot utilitzar on sigui que es publiqui el seu shortcode o pàgina d'inscripció. |
-| **Inactiu** | El formulari està guardat però deshabilitat. Els clients no poden completar la caixa amb ell fins que no el actives de nou. |
+| **Actiu** | El formulari es pot utilitzar en qualsevol lloc on s’hagi publicat el seu shortcode o la seva pàgina de registre. |
+| **Inactiu** | El formulari està desat però desactivat. Els clients no poden completar el pagament amb aquest formulari fins que el tornis a activar. |
 
-Utilitza la columna d'estat abans d'editar un flux d'inscripció públic, especialment quan mantingues formularis de caixa de brou o de temporada juntament amb els teus formularis actius.
+Utilitza la columna d’estat abans d’editar un flux de registre públic, especialment quan mantens formularis de pagament d’esborrany o de temporada al costat dels teus formularis actius.
 
-Si vols crear-ne un nou, només fes clic a Afegir Formulari de Caixa en la part superior de la pàgina.
+Si en vols crear un de nou, només has de fer clic a Afegeix un formulari de pagament a la part superior de la pàgina.
 
-Pots seleccionar una de aquestes tres opcions com a punt de partida: passa única, passa múltiple o buit. Després, fes clic a Anar a l'Editor.
+Pots seleccionar una d’aquestes tres opcions com a punt de partida: un sol pas, diversos passos o en blanc. Després, fes clic per anar a l’editor.
 
-Quan escels **passa única** o **passa múltiple** com a punt de partida, la plantilla del formulari inclou ara un camp de **Selecció de Plantilla** per defecte. Aquest camp permet als teus clients triar una plantilla de site durant el procés d'inscripció. Pots deixar-lo, eliminar-lo o repositionar-lo com qualsevol altre camp de l'editor.
+Quan tries **un sol pas** o **diversos passos** com a punt de partida, la plantilla del formulari ara inclou per defecte un camp **Selecció de plantilla**. Aquest camp permet als teus clients triar una plantilla de lloc durant el procés de registre. Pots deixar-lo al seu lloc, eliminar-lo o reposicionar-lo com qualsevol altre camp de l’editor.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Editor de formularis de pagament](/img/config/checkout-form-editor.png)
 
-Alternativament, pots editar o duplicar els formularis que ja tens fent clic a les opcions que es troben per sota del seu nom. Allà, també trobaràs les opcions per copiar el shortcode del formulari o per eliminar-lo.
+Alternativament, pots editar o duplicar els formularis que ja tens fent clic a les opcions que hi ha sota el seu nom. Allà també trobaràs les opcions per copiar el shortcode del formulari o eliminar el formulari.
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![Accions en passar el cursor sobre el formulari de pagament](/img/config/checkout-form-hover-actions.png)
 
-#### Resum de l'Editor de Formulari de Caixa
+#### Visió general de l’editor de formularis de pagament {#checkout-form-editor-overview}
 
-L'editor de formulari de caixa proporciona una interfície completa per construir els teus formularis d'inscripció. Aquí tens un resum de la disposició de l'editor:
+L’editor de formularis de pagament proporciona una interfície completa per crear els teus formularis de registre. Aquí tens una visió general de la disposició de l’editor:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![Visió general de l’editor de formularis de pagament](/img/config/checkout-form-editor-overview.png)
 
-### Edició d'un Formulari de Caixa
+### Edició d’un formulari de pagament {#editing-a-checkout-form}
 
-Pots crear formularis de caixa per a diferents propòsits. En aquest exemple, treballarem amb un formulari d'inscripció.
+Pots crear formularis de pagament per a diferents finalitats. En aquest exemple treballarem en un formulari de registre.
 
-Després de navegar a l'editor de formulari de caixa, només-li un nom (que es trigarà per referència interna només) i un slug (utilitzat per crear shortcodes, per exemple).
+Després d’anar a l’editor de formularis de pagament, posa un nom al teu formulari (que s’utilitzarà només com a referència interna) i un slug (utilitzat per crear shortcakes, per exemple).
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Editor de formularis de pagament](/img/config/checkout-form-editor.png)
 
-Els formularis es construeixen amb passes i camps. Pots afegir una passa nova fent clic a Afegir Nova Passa de Caixa.
+Els formularis estan formats per passos i camps. Pots afegir un pas nou fent clic a Afegeix un pas de pagament nou.
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Afegeix un pas de pagament nou](/img/config/checkout-form-add-step.png)
 
-A la primera pestanya del mòdal, omple el contingut de la passa del teu formulari. Donyl-li un ID, un nom i una descripció. Aquests elements es utilitzen majoritàriament a nivell intern.
+A la primera pestanya de la finestra modal, emplena el contingut del pas del teu formulari. Dona-li un ID, un nom i una descripció. Aquests elements s’utilitzen principalment internament.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Pestanya de contingut del pas del formulari de pagament](/img/config/checkout-form-step-content.png)
 
-A més, configura la visibilitat de la passa. Pots triar entre "Mostrar sempre", "Mostrar només per a usuaris connectats" o "Mostrar només per a convidats".
+A continuació, configura la visibilitat del pas. Pots triar entre "Mostra sempre", "Mostra només per a usuaris amb sessió iniciada" o "Mostra només per a convidats".
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Pestanya de visibilitat del pas del formulari de pagament](/img/config/checkout-form-step-visibility.png)
 
-Finalment, configura l'estil de la passa. Aquests són camps opcionals.
+Finalment, configura l’estil del pas. Aquests camps són opcionals.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Pestanya d’estil del pas del formulari de pagament](/img/config/checkout-form-step-style.png)
 
-Ara, és hora d'afegir camps a la nostra primera passa. Només fes clic a Afegir Camp Nou i selecciona el tipus de secció que vols.
+Ara és el moment d’afegir camps al nostre primer pas. Només has de fer clic a Afegeix un camp nou i seleccionar el tipus de secció que vols.
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![Pas del formulari de pagament amb camps](/img/config/checkout-form-step-with-fields.png)
 
-Cada camp té diferents paràmetres que omplir. Per a aquesta primera entrada, seleccionarem el camp "Username".
+Cada camp té diferents paràmetres per emplenar. Per a aquesta primera entrada, seleccionarem el camp "Nom d’usuari".
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Desplegable de selecció del tipus de camp](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Configuració de contingut del camp Nom d’usuari](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Configuració de visibilitat del camp Nom d’usuari](/img/config/checkout-form-username-visibility.png)
 
-Pots afegir tant passes com camps com necessitis. Per mostrar els teus productes perquè els teus clients triarin-ne un, utilitza el camp Taula de Preus. Si vols deixar que els teus clients triarin una plantilla, afegeix el camp Selecció de Plantilla. I així va continuant.
+![Configuració d’estil del camp Nom d’usuari](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+Pots afegir tants passos i camps com necessitis. Per mostrar els teus productes perquè els teus clients en triïn un, utilitza el camp Taula de preus. Si vols permetre que els teus clients triïn una plantilla, afegeix el camp Selecció de plantilla. I així successivament.
 
-_**Nota:** username, email, password, site title, site URL, order summary, payment i botó de submit són camps obligatoris per crear un formulari de caixa._
+![Diàleg Afegeix un camp nou](/img/config/checkout-form-add-field-dialog.png)
 
-Mentre treballes en el teu formulari de caixa, pots utilitzar sempre el botó Previsualitzar per veure com veurà el formulari els teus clients. També pots alternar entre veure-ho com un usuaris existent o com un visitant.
+_**Nota:** el nom d’usuari, el correu electrònic, la contrasenya, el títol del lloc, l’URL del lloc, el resum de la comanda, el pagament i el botó d’enviament són camps obligatoris per crear un formulari de pagament._
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+Mentre treballes en el teu formulari de pagament, sempre pots utilitzar el botó Previsualitza per veure com veuran el formulari els teus clients. També pots alternar entre veure’l com un usuari existent o com un visitant
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![Botó de previsualització del formulari de pagament](/img/config/checkout-form-preview-button.png)
 
-Finalment, en Opcions Avançades pots configurar el missatge per a la pàgina de "Gràcies", afegir snippets per rastrejar conversió, afegir CSS personalitzat al teu formulari de caixa o restringir-lo a determinats països.
+![Modal de previsualització del formulari de pagament](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+Finalment, a Opcions avançades pots configurar el missatge de la pàgina "Gràcies", afegir fragments per fer el seguiment de conversions, afegir CSS personalitzat al teu formulari de pagament o restringir-lo a determinats països.
 
-També pots activar o desactivar manualment el teu formulari de caixa amb el botó de toggle de la columna dretangana, o eliminar el formulari de manera permanent.
+![Opcions avançades](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+També pots activar o desactivar manualment el teu formulari de pagament alternant aquesta opció a la columna dreta, o eliminar el formulari permanentment.
 
-Per eliminar un formulari, fes clic a l'opció de eliminar en les accions del formulari:
+![Commutador actiu](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+Per eliminar un formulari, fes clic a l’opció d’eliminar a les accions del formulari:
 
-No oblidis de guardar el teu formulari de caixa!
+![Opció d’eliminar formulari de pagament](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+No t’oblidis de desar el teu formulari de pagament!
 
-Per obtenir el shortcode del teu formulari, fes clic a Generar Shortcode i copia el resultat que es mostra al mòdal.
+![Botó Desa](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+Per obtenir el shortcode del teu formulari, fes clic a Genera shortcode i copia el resultat que es mostra a la finestra modal.
 
-### El Camp Taula de Preus
+![Botó Desa amb shortcode](/img/config/checkout-form-save.png)
 
-El camp **Taula de Preus** mostra els teus productes al formulari de caixa perquè els clients puguin triar un pla. Quan edites aquest camp, pots configurar diverses opcions:
+### El camp Taula de preus {#the-pricing-table-field}
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+El camp **Taula de preus** mostra els teus productes al formulari de pagament perquè els clients puguin triar un pla. Quan edites aquest camp, pots configurar diverses opcions:
 
-Així és com apareix la taula de preus a la pàgina d'inscripció del frontend:
+![Configuració del camp Taula de preus](/img/config/pricing-table-field-settings.png)
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+Així és com apareix la taula de preus al formulari de registre del frontend:
 
-* **Productes**: Selecciona quins productes mostrar i l'ordre en què apareixen.
-* **Forçar Durades Diferents**: Quan està activat, es mostren tots els productes independentment de si tenen una variació de preu que coincideixi amb el període de facturació seleccionat. Quan està desactivat (defecto), els productes sense variació per el període seleccionat es nescaturen.
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-* **Nescatur quan està Pre-Seleccionat**: Nesc el taula de preus quan un pla ja ha estat seleccionat a través de l'URL (ex. `/register/premium`).
-* **Plantilla de Taula de Preus**: Escolle la plantilla visual per a la taula de preus (Llista Simple, Legacy, etc.).
+![Taula de preus del checkout del frontend](/img/config/frontend-checkout-pricing-table.png)
 
-Si afegeu un producte a la Taula de Preus abans que el formulari inclogui els camps necessaris per completar el flux de caixa d'aquest producte, l'editor mostra avís. Utilitza l'avís per afegir el camp obligatori que falta abans de publicar o guardar canvis per un formulari d'inscripció actiu.
+  * **Productes**: Seleccioneu quins productes es mostren i l’ordre en què apareixen.
+  * **Força durades diferents**: Quan està activat, es mostren tots els productes independentment de si tenen una variació de preu coincident per al període de facturació seleccionat actualment. Quan està desactivat (per defecte), els productes sense una variació per al període seleccionat s’oculten.
+    ![Opció de forçar durades a la taula de preus](/img/config/pricing-table-force-durations.png)
+  * **Amaga quan estigui preseleccionat**: Amaga la taula de preus quan ja s’ha seleccionat un pla mitjançant l’URL (p. ex. `/register/premium`).
+  * **Plantilla de la taula de preus**: Trieu la plantilla visual per a la taula de preus (Llista simple, Llegat, etc.).
 
-### Afegir un Toggle de Selecció de Període
+Si afegiu un producte a la taula de preus abans que el formulari inclogui els camps necessaris per completar el flux de checkout d’aquest producte, l’editor ara mostra un avís. Feu servir l’avís per afegir el camp obligatori que falta abans de publicar o desar canvis per a un formulari de registre actiu.
 
-Si has configurat [Variacions de Preu](creating-your-first-subscription-product#price-variations) als teus productes (per exemple, preus mensuals i anuals), pots afegir un camp de **Selecció de Període** al teu formulari de caixa. Aquest camp mostra un toggle que permet als clients canviar entre períodes de facturació, i la taula de preus s'actualitza dinàmicament en temps real.
+### Afegir un commutador de selecció de període {#adding-a-period-selection-toggle}
 
-#### Pas 1: Configurar Variacions de Preu als teus Productes
+Si heu configurat [Variacions de preu](creating-your-first-subscription-product#price-variations) als vostres productes (p. ex. preus mensuals i anuals), podeu afegir un camp de **Selecció de període** al vostre formulari de checkout. Aquest camp mostra un commutador que permet als clients canviar entre períodes de facturació, i la taula de preus s’actualitza dinàmicament en temps real.
 
-Abans d'afegir el camp de Selecció de Període, assegura't que els teus productes tenen variacions de preu configurades. Dirigeu-vos a **Ultimate Multisite > Productes**, editeu un producte i navegau a la pestanya **Variacions de Preu** per afegir períodes de facturació alternatius (ex. Anual a un preu reduït).
+#### Pas 1: Configureu les variacions de preu als vostres productes {#step-1-set-up-price-variations-on-your-products}
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+Abans d’afegir el camp de selecció de període, assegureu-vos que els vostres productes tinguin variacions de preu configurades. Aneu a **Ultimate Multisite > Products**, editeu un producte i navegueu a la pestanya **Variacions de preu** per afegir períodes de facturació alternatius (p. ex. Anual amb un preu amb descompte).
 
-#### Pas 2: Afegir el Camp de Selecció de Període al teu Formulari de Caixa
+![Pestanya de variacions de preu en un producte](/img/config/product-price-variations-tab.png)
 
-1. Dirigeu-vos a **Ultimate Multisite > Formularis de Caixa** i editeu el vostre formulari de caixa.
+#### Pas 2: Afegiu el camp de selecció de període al vostre formulari de checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
-2. Descolla fins a la passa que conté el vostre camp **Taula de Preus** i fes clic a Afegir Camp Nou.
+1. Aneu a **Ultimate Multisite > Checkout Forms** i editeu el vostre formulari de checkout.
 
-3. Al diàleg de selecció de tipus de camp, fes clic a Selecció de Període.
+2. Desplaceu-vos fins al pas que conté el vostre camp de **Taula de preus** i feu clic a **Afegeix un camp nou**.
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+3. Al diàleg de selecció del tipus de camp, feu clic a **Selecció de període**.
 
-4. Configura les opcions de període. Cada opció necessita:
-   * **Durada**: El nombre (ex. `1`)
-   * **Unitat de durada**: El tipus de període (Dies, Setmanes, Mesos o Anys)
-   * **Etiqueta**: El text que veurà el client (ex. "Mensual", "Anual")
+![Diàleg Afegeix un camp nou que mostra Selecció de període](/img/config/checkout-form-add-field-dialog.png)
 
-5. Fes clic a + Afegir Opció per afegir més eleccions de període. Aquestes opcions han de fer match amb les variacions de preu que has configurat als teus productes.
+4. Configureu les opcions de període. Cada opció necessita:
+   * **Durada**: El número (p. ex. `1`)
+   * **Unitat de durada**: El tipus de període (dies, setmanes, mesos o anys)
+   * **Etiqueta**: El text que veuran els clients (p. ex. "Mensual", "Anual")
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+5. Feu clic a **+ Afegeix una opció** per afegir més opcions de període. Aquestes opcions han de coincidir amb les variacions de preu que heu configurat als vostres productes.
 
-També pots configurar les opcions del camp directament:
+![Configuració del camp de selecció de període](/img/config/period-selection-field-settings.png)
 
-<!-- Screenshot unavailable: Period selection field options -->
+6. Trieu una **Plantilla del selector de període** (Clean és la predeterminada, que renderitza un selector senzill amb estil, preparat per a CSS personalitzat).
 
-6. Escolle una **Plantilla de Selecció de Període** (Clean és el defecte, que renderitza un selector estilitzat senzill preparat per CSS personalitzat).
+7. Feu clic a **Desa el camp**.
 
-7. Fes clic a Guardar Camp.
+#### Pas 3: Col·loqueu el camp damunt de la taula de preus {#step-3-position-the-field-above-the-pricing-table}
 
-#### Pas 3: Posicionar el Camp per sobre la Taula de Preus
+Per a la millor experiència d’usuari, assegureu-vos que el camp de selecció de període aparegui **abans** del camp de taula de preus al vostre pas de checkout. Podeu arrossegar els camps per reordenar-los a l’editor del formulari de checkout. D’aquesta manera, els clients primer trien un període de facturació i després veuen els preus per a aquell període.
 
-Per la millor experiència de l'usuari, assegura't que el camp de Selecció de Període aparegui **abans** del camp Taula de Preus a la teva passa de caixa. Pots arrastrar camps per reordenar-los a l'editor del formulari de caixa. Així, els clients trien primer un període de facturació i després veuen els preus per aquest període.
+![Editor del formulari de checkout que mostra l’ordre dels camps](/img/config/checkout-form-editor-with-fields.png)
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+#### Com funciona al frontend {#how-it-works-on-the-frontend}
 
-#### Com funciona a la pàgina frontal
+Un cop configurat, els clients que visitin la vostra pàgina de registre veuran el selector de període damunt de la taula de preus. Quan facin clic en un període de facturació diferent:
 
-Una vegada configurat, els clients que visitin la teva pàgina d'inscripció veuràn el selector de període per sobre de la taula de preus. Quan fes clic a un període de facturació diferent:
+  * La taula de preus s’actualitza instantàniament per mostrar els preus del període seleccionat (no cal recarregar la pàgina).
+  * Si **Força durades diferents** està desactivat al camp de taula de preus, els productes sense una variació de preu per al període seleccionat s’ocultaran.
+  * Si **Força durades diferents** està activat, tots els productes romanen visibles encara que no tinguin cap variació per al període seleccionat (mostraran el seu preu predeterminat).
 
-* La taula de preus s'actualitza instantàni per mostrar els preus del període seleccionat (no és necessari recarregar la pàgina).
-* Si **Forçar Durades Diferents** està desactivat al camp Taula de Preus, els productes sense variació de preu per el període seleccionat es nescaturen.
-* Si **Forçar Durades Diferents** està activat, tots els productes es mantenen visibles encara que no tinguin una variació per el període seleccionat (mostraran el seu preu per defecte).
+#### Preseleccionar un període de facturació mitjançant l’URL {#pre-selecting-a-billing-period-via-url}
 
-#### Pre-seleccionar un Període de Facturació a través de l'URL
+També podeu preseleccionar un producte i un període de facturació a través de l’URL. Ultimate Multisite admet aquests patrons d’URL:
 
-També pots pre-seleccionar un producte i un període de facturació a través de l'URL. Ultimate Multisite suporta aquests patrons d'URL:
+  * `/register/premium` — Preselecciona només el producte "Premium"
+  * `/register/premium/12` — Preselecciona el producte i una durada de 12 mesos
+  * `/register/premium/1/year` — Preselecciona el producte amb una durada d’1 any
 
-* `/register/premium` — Pre-selecciona només el producte "Premium"
-* `/register/premium/12` — Pre-selecciona el producte i la durada de 12 mesos
-* `/register/premium/1/year` — Pre-selecciona el producte amb una durada d'1 any
+### El camp de selecció de plantilla {#the-template-selection-field}
 
-### El Camp Selecció de Plantilla
+El camp de **Selecció de plantilla** permet als clients triar una plantilla de lloc durant el checkout. Ara s’inclou per defecte a les plantilles de formulari de checkout **d’un sol pas** i **de diversos passos** afegides a Ultimate Multisite v2.6.1.
 
-El camp **Selecció de Plantilla** permet als clients triar una plantilla de site durant la caixa. Ara està inclòs per defecte en les plantilles de formulari de caixa de **passa única** i **passa múltiple** afegides en Ultimate Multisite v2.6.1.
+#### Afegir el camp manualment {#adding-the-field-manually}
 
-#### Afegir el camp manualment
+Si treballeu amb un formulari que es va crear abans de la v2.6.1, o que es va iniciar des d’una plantilla en blanc:
 
-Si estàs treballant amb un formulari que es va crear abans de v2.6.1, o que va iniciar-se des d'una plantilla buida:
-
-1. Dirigeu-vos a **Ultimate Multisite > Formularis de Caixa** i editeu el vostre formulari de caixa.
-2. A la passa on es recullen els detalls del site, fes clic a Afegir Camp Nou.
-3. Selecciona **Selecció de Plantilla** del diàleg de tipus de camp.
-4. Configura el camp:
-   - **Etiqueta** — L'encabezament que veurà el client sobre la quadrícula de plantilles (ex. "Tria una plantilla de site").
+1. Aneu a **Ultimate Multisite > Checkout Forms** i editeu el vostre formulari de checkout.
+2. Al pas on es recopilen els detalls del lloc, feu clic a **Afegeix un camp nou**.
+3. Seleccioneu **Selecció de plantilla** al diàleg de tipus de camp.
+4. Configureu el camp:
+   - **Etiqueta** — L’encapçalament que els clients veuen damunt de la quadrícula de plantilles (p. ex. "Trieu una plantilla de lloc").
    - **Obligatori** — Si els clients han de seleccionar una plantilla abans de continuar.
 
-#### Com funciona
+#### Com funciona {#how-it-works}
 
-Quan un client tria una plantilla durant la caixa, Ultimate Multisite l'utilitza quan proporciona el seu nou site. Les plantilles mostrades provenen de la teva llista de **Plantilles de Site** (**Ultimate Multisite > Plantilles de Site**). Només apareixen aquí les plantilles marcades com disponibles per als clients.
+Quan un client tria una plantilla durant el checkout, Ultimate Multisite la fa servir en aprovisionar el seu lloc nou. Les plantilles mostrades provenen de la vostra llista de **Plantilles de lloc** (**Ultimate Multisite > Site Templates**). Aquí només apareixen les plantilles marcades com a disponibles per als clients.
 
-#### Eliminar el camp
+### Dominis base del formulari de checkout {#checkout-form-base-domains}
 
-Si no ofereixes plantilles de site, elimina el camp de Selecció de Plantilla del teu formulari. Els clients rebreu qualsevol plantilla de defecte que estigui configurada sota **Ultimate Multisite > Configuració > Plantilles de Site**.
+Ultimate Multisite v2.13.0 tracta els dominis configurats als camps **Site URL** del formulari de checkout com a dominis base de la xarxa. Feu servir la configuració de dominis disponibles del camp quan vulgueu que els clients creïn llocs sota un o més dominis de registre compartits, com ara `example.com` i `sites.example.com`.
+
+Els dominis base de formulari de checkout compartits no es tracten com a assignacions de domini personalitzat per lloc. Quan un client crea un lloc en un subdirectori en una d’aquestes bases, Ultimate Multisite no crea cap registre de domini assignat que faci que l’amfitrió compartit pertanyi només a aquell lloc. L’amfitrió compartit continua disponible per a llocs germans que utilitzen la mateixa base de formulari de checkout.
+
+Mantén els dominis personalitzats per a amfitrions assignats per client, com ara `customer-example.com`. Mantén els dominis base de formulari de checkout per a amfitrions de registre compartits que molts llocs poden utilitzar.
+
+#### Eliminació del camp {#removing-the-field}
+
+Si no ofereixes plantilles de lloc, elimina el camp Selecció de plantilla del teu formulari. Aleshores els clients rebran la plantilla per defecte que estigui configurada a **Ultimate Multisite > Settings > Site Templates**.

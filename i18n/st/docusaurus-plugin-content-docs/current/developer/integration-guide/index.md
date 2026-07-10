@@ -1,0 +1,66 @@
+---
+title: Tataiso ea Khokahanyo
+sidebar_position: 1
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
+---
+# Tataiso ea Kopanyo {#integration-guide}
+
+Tataiso ena e akaretsa mekhoa e tloaelehileng ea kopanyo le Ultimate Multisite, ho kenyeletsa ho hokela lits'ebeletso tsa kantle, ho haha dikgoro tsa tefo tse ikhethileng, le ho sebetsana le di-webhook.
+
+Bakeng sa motheo wa mohiri ya arohaneng, bona [Kopanyo ya Multi-Tenancy](./multi-tenancy) bakeng sa tataiso ya ho qala mohiri ya ikemetseng, netefatso ya phalliso, SSO, le ho qhaqha.
+
+## Kopanyo ya CRM {#crm-integration}
+
+Amahanya data ya bareki ho CRM ya hao ha bareki ba batjha ba ingodisa:
+
+```php
+add_action('wu_customer_post_create', 'sync_customer_to_crm');
+
+function sync_customer_to_crm($customer) {
+    $crm_api = new Your_CRM_API();
+
+    $crm_api->create_contact([
+        'email' => $customer->get_email(),
+        'name' => $customer->get_display_name(),
+        'signup_date' => $customer->get_date_registered(),
+        'plan' => $customer->get_membership()->get_plan()->get_name()
+    ]);
+
+    // Store CRM ID for future reference
+    $customer->add_meta('crm_contact_id', $crm_api->get_last_contact_id());
+}
+```
+
+## Kopanyo ya Analytics {#analytics-integration}
+
+Latela diketsahalo tsa bohlokwa tsa kgwebo ho pholletsa le potoloho ya bophelo ya moreki:
+
+```php
+add_action('wu_checkout_completed', 'track_conversion', 10, 3);
+add_action('wu_membership_status_to_cancelled', 'track_churn');
+add_action('wu_payment_failed', 'track_payment_failure');
+
+function track_conversion($payment, $customer, $membership) {
+    // Google Analytics 4
+    gtag('event', 'purchase', [
+        'transaction_id' => $payment->get_id(),
+        'value' => $payment->get_total(),
+        'currency' => $payment->get_currency(),
+        'items' => [
+            [
+                'item_id' => $membership->get_plan()->get_id(),
+                'item_name' => $membership->get_plan()->get_name(),
+                'category' => 'subscription',
+                'quantity' => 1,
+                'price' => $payment->get_total()
+            ]
+        ]
+    ]);
+}
+```
+
+## Mehato e Latelang {#next-steps}
+
+- [Ntshetsopele ya Gateway e Ikgethileng](./custom-gateway) — Haha kgoro ya hao ya tefo
+- [Ho Sebetsana le Webhook](./webhooks) — Theha di-endpoint tsa webhook tse ikgethileng
+- [Kopanyo ya Multi-Tenancy](./multi-tenancy) — Kopanya le diphallo tsa potoloho ya bophelo ya mohiri ya ikemetseng

@@ -1,31 +1,32 @@
 ---
-title: Hủy Tư cách Thành viên
+title: Hủy tư cách thành viên
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Hủy Gói Thành Viên (v2)
+# Hủy Membership (v2) {#canceling-a-membership-v2}
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này áp dụng cho Ultimate Multisite phiên bản 2.x.**_
+_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-Việc hủy gói thành viên từ phía khách hàng khá đơn giản.
+Việc hủy membership từ phía khách hàng của bạn khá dễ dàng.
 
-Nếu người dùng muốn hủy gói thành viên, trước tiên họ cần truy cập trang **Tài khoản**.
+Nếu người dùng của bạn muốn hủy membership của họ, trước tiên họ nên truy cập trang ****Account**** của họ.
 
-Tại đây, họ cần vào mục **Danger Zone**, và nhấn vào **Delete Account**.
+Tại đó, họ nên đi đến **Danger Zone** và nhấp vào **Delete Account**.
 
-![Trang Tài khoản hiển thị mục Danger Zone với nút Delete Account](/img/admin/memberships-list.png)
+![Danger Zone trên trang Account với nút Delete Account](/img/account-page/danger-zone.png)
 
-Một hộp thoại sẽ xuất hiện yêu cầu xác nhận. Họ cần bật tùy chọn **Confirm Account Deletion** và nhấn **Delete Account**.
+Một module sẽ mở ra để yêu cầu họ xác nhận. Họ nên bật tùy chọn **Confirm Account Deletion** và nhấp vào **Delete Account**.
 
-![Hộp thoại xác nhận xóa tài khoản](/img/admin/memberships-list.png)
+![Hộp thoại Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Thao tác này sẽ đăng xuất người dùng khỏi trang web, hủy gói thành viên của họ trên mạng lưới của bạn, đồng thời xóa trang web của họ khỏi mạng lưới.
+Thao tác này sẽ đăng xuất họ khỏi site và hủy membership của họ trên mạng của bạn, đồng thời xóa site của họ khỏi mạng của bạn.
 
-![Màn hình sau khi đăng xuất do xóa tài khoản](/img/admin/memberships-list.png)
+![Đã đăng xuất sau khi xóa Account](/img/account-page/logged-out-after-delete.png)
 
-![Xác nhận đã hủy gói thành viên](/img/admin/memberships-list.png)
+![Xác nhận membership đã hủy](/img/account-page/membership-canceled.png)
 
-**Quan trọng:** Lưu ý rằng thao tác này sẽ không xóa khách hàng khỏi mạng lưới của bạn, vì một khách hàng có thể có nhiều gói thành viên hoặc không có gói thành viên nào được liên kết với họ.
+**Quan trọng:** Lưu ý rằng hành động này sẽ không loại trừ khách hàng khỏi mạng của bạn, vì một khách hàng có thể có nhiều hơn một membership hoặc không có membership nào được liên kết với họ.
 
-![Khách hàng vẫn tồn tại trong mạng lưới sau khi hủy](/img/admin/memberships-list.png) | ![Khách hàng không có gói thành viên đang hoạt động](/img/admin/memberships-list.png)  
----|---
+![Khách hàng vẫn tồn tại trong mạng sau khi hủy](/img/admin/customer-after-cancel.png)
+
+![Khách hàng không có membership đang hoạt động](/img/admin/memberships-customer-empty.png)

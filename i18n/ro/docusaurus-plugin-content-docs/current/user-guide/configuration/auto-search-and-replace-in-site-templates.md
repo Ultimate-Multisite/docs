@@ -1,32 +1,32 @@
 ---
-title: Căutare și Înlocuire Automată în Șabloanele Site-ului
+title: Căutare și înlocuire automată în șabloanele de site
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Căutare și înlocuire automată în șabloanele de site (v2)
+# Căutare și înlocuire automată în șabloanele de site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**Acest tutorial necesită WP Ultimo versiunea 2.x.**_
+_**Acest tutorial necesită WP UItimo versiunea 2.x.**_
 
-Una dintre cele mai puternice funcții ale Ultimate Multisite este posibilitatea de a adăuga câmpuri de text, culoare și selecție personalizate în formularul de înregistrare. Odată ce am capturat aceste date, le putem folosi pentru a pre-completa conținutul în anumite părți ale șablonului de site selectat. Apoi, când noul site este publicat, Ultimate Multisite va înlocui substituenții cu informațiile reale introduse în timpul înregistrării.
+Una dintre cele mai puternice funcționalități ale Ultimate Multisite este capacitatea de a adăuga câmpuri arbitrare de text, culoare și selecție în formularul de înregistrare. După ce am capturat acele date, le putem folosi pentru a precompleta conținutul din anumite părți ale șablonului de site selectat. Apoi, când noul site este publicat, Ultimate Multisite va înlocui substituenții cu informațiile reale introduse în timpul înregistrării.
 
-De exemplu, poți crea șabloanele de site folosind substituenți. Substituenții trebuie adăugați între acolade duble - {{placeholder_name}}.
+De exemplu, îți poți realiza site-urile șablon cu substituenți. Substituenții trebuie adăugați încadrați de acolade duble - {{placeholder_name}}.
 
-Apoi, poți adăuga pur și simplu un câmp de înregistrare corespunzător pentru a captura acele date.
+Apoi, poți adăuga pur și simplu un câmp de înregistrare corespunzător pentru a captura acele date
 
 Clientul tău va putea apoi să completeze acel câmp în timpul înregistrării.
 
-Ultimate Multisite va înlocui automat substituenții cu datele furnizate de client.
+Ultimate Multisite va înlocui apoi automat substituenții cu datele furnizate de client.
 
-## **Rezolvarea problemei „șablonului plin de substituenți"**
+## **Rezolvarea problemei „șablon plin de substituenți”** {#solving-the-template-full-of-placeholders-problem}
 
-Toate acestea sunt foarte utile, dar ne lovim de o problemă neplăcută: acum șabloanele noastre de site - care pot fi vizitate de clienții noștri - sunt pline de substituenți care nu transmit prea multe informații.
+Toate acestea sunt grozave, dar ne lovim de o problemă neplăcută: acum șabloanele noastre de site - care pot fi vizitate de clienții noștri - sunt pline de substituenți urâți care nu spun prea multe.
 
-Pentru a rezolva această problemă, oferim opțiunea de a seta valori fictive pentru substituenți, pe care le folosim pentru a căuta și înlocui conținutul acestora pe site-urile șablon în timp ce clienții tăi le vizitează.
+Pentru a rezolva asta, oferim opțiunea de a seta valori false pentru substituenți și folosim acele valori pentru a căuta și înlocui conținutul lor pe site-urile șablon în timp ce clienții tăi le vizitează.
 
-Poți accesa editorul de substituenți pentru șabloane navigând la **Ultimate Multisite > Setări > Site-uri**, apoi, în bara laterală, făcând clic pe linkul Editare substituenți.
+Poți avea acces la editorul de substituenți ai șablonului mergând la **Ultimate Multisite > Settings > Sites**, derulând până la zona Opțiuni pentru șablonul de site, apoi făcând clic pe linkul **Editează substituenții**.
 
-![Linkul Editare substituenți în bara laterală din setările Site-uri](/img/config/settings-sites.png)
+![Zona Opțiuni pentru șablonul de site din pagina de setări Sites](/img/config/settings-sites-templates-section.png)
 
-Aceasta te va duce la editorul de conținut pentru substituenți, unde poți adăuga substituenți și valorile corespunzătoare acestora.
+Asta te va duce la editorul de conținut al substituenților, unde poți adăuga substituenți și conținutul lor respectiv.
 
-![Editorul de conținut pentru substituenți cu numele și valorile substituenților](/img/config/settings-sites.png)
+![Punct de intrare în editorul de substituenți ai șablonului](/img/config/settings-sites-templates-section.png)

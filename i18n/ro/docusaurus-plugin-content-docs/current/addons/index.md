@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Add-on-uri Ultimate Multisite
+# Add-on-uri Ultimate Multisite {#ultimate-multisite-addons}
 
 Add-on-urile extind Ultimate Multisite cu funcționalități și integrari suplimentare. Majoritatea add-on-urilor sunt plătite și pot fi cumpărate de pe [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Instalare
+## Instalare {#installation}
 
 Add-on-urile pot fi instalate în două moduri:
 
 1. **Prin Pagina Add-on-urilor** -- Navigați la pagina de gestionare a add-on-urilor site-ului dumneavoastră în admin-ul WordPress
 2. **Descărcare Manuală** -- Descărcați de pe [contul dvs.](https://ultimatemultisite.com/my-account/downloads/) și încărcați prin Plugins > Add New
 
-## Add-on-uri Disponibile
+## Add-on-uri Disponibile {#available-addons}
 
 | Addon | Descriere |
 |-------|-------------|

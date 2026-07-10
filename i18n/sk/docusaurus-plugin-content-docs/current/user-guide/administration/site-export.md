@@ -3,27 +3,27 @@ title: Export stránky
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportovanie siete
+# Exportovanie siete {#site-export}
 
 Administratívna stránka **Site Export** vám umožňuje balíť jednu sieti, alebo celú sieti, do stiahnutelného archívu na migrácie, zálohy alebo pre odovzdanie práce.
 
-## Exportovanie jednej siete
+## Exportovanie jednej siete {#exporting-one-site}
 
 Prejdite do **Ultimate Multisite > Site Export** a vyberte **Generate new Site Export**. Vyberte podsieti, ktorú chcete exportovať, potom si vyberte, či by archív mal obsahovať súbory, pluginy a témy.
 
 Keď skončí export, stiahnite ZIP z tabuľky **Existing Exports**. Exportné ZIP sú teraz vybavené samostatným `index.php` pre samostartovanie a súborom `readme.txt`, takže archív môžete začať na novom hoste bez toho, aby ste najprv nainštalovali samostatný plugin importéra.
 
-## Exportovanie celej siete
+## Exportovanie celej siete {#exporting-the-whole-network}
 
 Použite **Network Export** na stránke Site Export, ak potrebujete jeden archív obsahujúci všetky podsiety v sieti. Toto je užitočné pred migraciou hostov, testovaním obnovy po katastrofe alebo pri reconstrukciach stagingu, kde sa každá podsieta musí prenášať spolu.
 
 Keďže export siete môže byť oveľa väčší ako export jednej siete, vykonajte ho počas obdobia s nízkou návštevnosťou a potvrďte, že cieľové ukladacie miesto má dostatočnú voľnú plochu na súbory pre načítanie, pluginy, témy a generované ZIP súbory.
 
-### Network Import Bundles (Balúčky importov siete)
+### Network Import Bundles (Balúčky importov siete) {#network-import-bundles}
 
 Od verzie Ultimate Multisite 2.12.0 je Site Exporter schopný generovať **network import bundles** — špecializované archívy navrhnuté na uplynulý import sieti celého siete. Network import bundle obsahuje všetky potrebné súbory a metadát na obnovenie viacerých sietí do nového inštalovania siete.
 
-#### Generovanie network import bundle (Generovanie balúčky importu siete)
+#### Generovanie network import bundle (Generovanie balúčky importu siete) {#generating-a-network-import-bundle}
 
 1. Prejdite do **Ultimate Multisite > Site Export**
 2. Kliknite na **Generate new Network Export** (Vytvorte nový export siete)
@@ -32,7 +32,7 @@ Od verzie Ultimate Multisite 2.12.0 je Site Exporter schopný generovať **netwo
 5. Klikněte na **Generate** (Vytvořit)
 6. Stáhněte si balík ZIP z nabídky **Existing Exports** (Existující exporty)
 
-#### Způsob obnovy z Network Import Bundle
+#### Způsob obnovy z Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Abychom obnovili sítě z balíku importu siete:
 
@@ -52,7 +52,7 @@ Network import bundles zachovávají:
 - Přílohy médií (pokud jsou zahrnuty v balíku)
 - Vlastní databáze a tabulky
 
-## Instalace ZIP exportu pro samostatně spouštěcí se instalaci na novém hostovi
+## Instalace ZIP exportu pro samostatně spouštěcí se instalaci na novém hostovi {#installing-a-self-booting-export-zip}
 
 Abychom obnovili ZIP soubor pro samostatnou instalaci na čerstvém hostu:
 

@@ -3,11 +3,11 @@ title: Fisana ho an'ny Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Fandriana (Isolation) ho an-teny
+# Fandriana (Isolation) ho an-teny {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dia manome fizarana database sy filesystem isaky ny mpanjifa izay mitaky fizarana data lalina kokoa, toerana fitahirizana filesystem manokana, na faritra host hafa. Izany dia miantoka fa mijanona ho misaraka ny data an'ny mpanjifa (tenant) ianao, fa mitazona ny fanomezana rafitra tambajotra (network-level provisioning), ny fandoavam-bola (billing), ary ny fitantanana.
 
-## Fandrindrana ny fizarana (Isolation strategy)
+## Fandrindrana ny fizarana (Isolation strategy) {#isolation-strategy}
 
 Ampiasao ny fizarana lalina (sovereign isolation) ho an'ireo mpanjifa izay mitaky fizarana data matanjaka kokoa, toerana fitahirizana filesystem manokana, na faritra host hafa.
 
@@ -18,7 +18,7 @@ Ny mpanjifa isam-paritra dia tokony hanana:
 - Fandefasana (registry entry) ho an'ny mpanjifa izay mifandray ny toerana misy azy amin'ny database, lalana fototra (root path), hostname, ary modely fizarana (isolation model).
 - vokatra fanamarinana fifindrana (migration verification result) alohan'ny hampiasana azy ho azo antoka.
 
-## Fandefasana host database (Database host binding)
+## Fandefasana host database (Database host binding) {#database-host-binding}
 
 Ny dikan-teny 1.2.0 dia manova ny fomba fandefasana default ho an'ny "same-machine host binding" ho an'ny fametrahana sovereign. Ny sandan'ny toerana misy (same-machine values) toy ny `localhost` dia voamarina mba ahafahan'ny Bedrock, FrankenPHP, ary WordPress izay eo amin'ny container afaka manome sy manamarina ny zo (permissions) mifototra amin'ny string host izay tena dinihina ny MySQL.
 
@@ -31,11 +31,11 @@ Rehefa mametraka mpanjifa sovereign ianao:
 
 Raha mampiseho tsy fahampian'ny fanamarinana (verification reports grant failures), dia apetraho ny fizarana zo an'ilay user ao amin'ny DB an'ilay mpanjifa sy ny fandefasanao host. Ny mpampiasa azo ho an'ny `user@localhost` dia hafa noho ny `user@127.0.0.1` na `user@%`.
 
-## Root filesystem (Filesystem root)
+## Root filesystem (Filesystem root) {#filesystem-root}
 
 Ny fototra (root) an'ny mpanofa dia tokony ho azo antoka rehefa miova fametrahana na manomboka indray. Aza mampiasa lalana fampidirana (mount paths) an-tsokosoko. Ho an'ny fametrahana toy ny Bedrock, avereno fa ny fototra an'ny mpanofa dia mitondra ny web root an'i WordPress izay andrasana avy amin'ny bootstrap an'ny mpanofa, ary tsy ny fototra iantsoana (project root) ihany.
 
-## Fandaharana fandrindrana (Provisioning order)
+## Fandaharana fandrindrana (Provisioning order) {#provisioning-order}
 
 Ho an'ny mpanofa vaovao manan-kery (sovereign tenants), dia ampiasao ity filaharan-drafitra ity:
 
@@ -49,7 +49,7 @@ Ho an'ny mpanofa vaovao manan-kery (sovereign tenants), dia ampiasao ity filahar
 
 Ity filaharan-drafitra ity dia miantoka fa tsy handray fifandraisana (traffic) ireo mpanofa voafetra an-tsokosoko alohan'ny ho vonona ny mpanoratra database, ny mpampiasa ary ny rafitry ny fampidirana.
 
-## Fandaharana fitantanana mpanjifa manan-kery (Sovereign customer management flows)
+## Fandaharana fitantanana mpanjifa manan-kery (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ny Ultimate Multisite v2.13.0 dia mitazona ireo asa fitantanana mpanjifa eo amin'ny tranokala lehibe rehefa voafidy ny mode sovereign. Mbola afaka miasa ho WordPress install voafetra an-tsokosoko ny tenant, saingy ireo asa mifandraika amin'ny fampahafantarana ny mpanjifa izay miankina amin'ny fandoavam-bola an-tserasera (network billing), fidirana (membership), na angona an'ny kaonty iombonana dia tokony hamerina ny mpanjifa any amin'ny tranokala lehibe fa tsy miezaka vita ilay asa ao anatin'ny runtime an'ny tenant.
 

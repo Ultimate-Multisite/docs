@@ -3,13 +3,13 @@ title: Ny Fandefasana
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Fandramba (v2)
+# Fandramba (v2) {#the-registration-flow-v2}
 
 _**FANAM-PAHANA MANAN-TSI: Io lahatsoratra ity dia manondro ny Ultimate Multisite version 2.x.**_
 
 Mety misy fomba maro ahafahana mavitrika amin'ny tambajotra anareo ny mpampiasa. Afaka mampiasa ny *registration form* anareo na rohy azo ampahany (shareable link) ho an'ny toromarika efa voafidy. Ity dia hasehonay aminao aho hoe ahoana no fomba ahafahan'ireo mpanjifa anareo mavitrika amin'ny tambajotranareo miaraka amin'ny lalana azo atao ary inona no mitranga rehefa mavitrika izy ireo.
 
-## Fampiasana ny Registration Form:
+## Fampiasana ny Registration Form: {#using-the-registration-form}
 
 Ity no fomba fanao mahazatra ny famavitrika. Mamorona pejy fampidirana (registration page) misy **checkout form** ianao, ary eto no handehan'ireo mpanjifa anareo mba havitrika amin'ny tambajotranareo sy handray toromarika (subscribe) ho an'ny plan iray. Afaka manana pejy fampidirana maromaro ianao, samy misy *registration form* hafa raha tianao.
 
@@ -35,13 +35,13 @@ Raha nanao registration tamin'ny toromarika fandoavam-bola na raha tsy voatery n
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Fampiasana Link azo ampahafantarina (Shareable Link):
+## Fampiasana Link azo ampahafantarina (Shareable Link): {#using-a-shareable-link}
 
 Ny fomba fanaovana registration amin'ny alalan'ny shareable link dia mitovy amin'ny taratasy fanaovana registration, ny hafa dia ny fa rehefa mampiasa shareable link ianao, dia afaka misafidy mialoha vokatra na template website ho an'ny mpanjifa anao eo amin'ny checkout form (jereo ny fizarana Pre-selecting products and templates via URL parameters) na mety nampiditra kody coupon (jereo ny fizarana Using URL Parameters).
 
 Ny dingana fanaovana registration dia mitovy: mila mametraka ny anarana, username, adiresy mailaka, anaran'ny website sy ny lohateny iainana... fa ny plan na template site dia efa voafidy mialoha ho azy ireo.
 
-### Fandraisana Registration Amin'ny Alalan'ny Fandoavam-bola Manokana (Manual Payments):
+### Fandraisana Registration Amin'ny Alalan'ny Fandoavam-bola Manokana (Manual Payments): {#registering-using-manual-payments}
 
 Raha tsy te-handray anjara amin'i PayPal, Stripe na fitaovana fandoavam-bola hafa atolotra avy amin'ny Ultimate Multisite na ny fiarahan'izy ireo ianao, dia afaka mampiasa fandoavam-bola manokana ho an'ny mpanjifanao ianao. Amin'izay fomba izany, afaka mamorona invoice (facture) ianao mba handoavany amin'ny mpandray anjara amin'ny fandoavam-bola tianao indrindra rehefa nanao registration tao amin'ny tambajy anareo.
 

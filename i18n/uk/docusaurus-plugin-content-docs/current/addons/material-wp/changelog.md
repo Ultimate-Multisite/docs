@@ -3,7 +3,7 @@ title: Матеріали WP Changelog
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Журнал змін Material WP
+# Журнал змін Material WP {#material-wp-changelog}
 
 Версія 1.1.15 - 26.01.2026
 * Покращено: Стиль коду та форматування;

@@ -3,15 +3,15 @@ title: 'Μάθημα 7: Προσαρμογή στο δικό σου'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Μάθημα 7: Να το κάνετε δικό σας
+# Μάθημα 7: Να το κάνετε δικό σας {#lesson-7-making-it-yours}
 
 Οι πελάτες σας δεν πρέπει ποτέ να νιώθουν ότι χρησιμοποιούν «ένα τυχαίο plugin του WordPress». Πρέπει να νιώθουν ότι χρησιμοποιούν το FitSite — μια πλατφόρμα που έχει σχεδιαστεί ειδικά για τον κλάδο τους. Σε αυτό το κεφάλαιο καλύπτουμε το branding, το white-labeling και το πώς να κάνετε την πλατφόρμα να μοιάζει με ένα ολοκληρωμένο προϊόν.
 
-## Πού σταματήσαμε
+## Πού σταματήσαμε {#where-we-left-off}
 
 Το FitSite έχει ήδη μια λειτουργική ροή ολοκλήρωσης αγοράς που μεταφέρει τους ιδιοκτήτες fitness studio από την επιλογή πακέτου σε ένα ζωντανό site. Τώρα, κάνουμε ολόκληρη την εμπειρία να μοιάζει με ένα συνεκτικό, branded προϊόν.
 
-## Το Domain της Πλατφόρμας σας
+## Το Domain της Πλατφόρμας σας {#your-platform-domain}
 
 Το θεμέλιο της μάρκας σας είναι το domain σας. Για το FitSite:
 
@@ -19,7 +19,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 - **Sites των πελατών**: `studioname.fitsite.com` (subdomains)
 - **Προσαρμοσμένα domains**: Οι πελάτες στα πακέτα Growth και Pro μπορούν να συνδέσουν το δικό τους domain
 
-### Ρύθμιση του Domain σας
+### Ρύθμιση του Domain σας {#setting-up-your-domain}
 
 1. Καταχωρήστε το domain της πλατφόρμας σας
 2. Στοχεύστε το στο hosting provider σας
@@ -28,11 +28,11 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 
 Για λεπτομερείς οδηγίες δείτε το [Πώς να ρυθμίσετε το Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## White-Labeling την Εμπειρία του Admin
+## White-Labeling την Εμπειρία του Admin {#white-labeling-the-admin-experience}
 
 Όταν ένας ιδιοκτήτης fitness studio συνδέεται στο dashboard του site του, πρέπει να βλέπει τη μάρκα σας, και όχι το branding του WordPress ή του Ultimate Multisite.
 
-### Προσαρμοσμένη Σελίδα Συνδέσου (Login Page)
+### Προσαρμοσμένη Σελίδα Συνδέσου (Login Page) {#custom-login-page}
 
 Προσαρμόστε τη σελίδα σύνδεσης του WordPress ώστε να εμφανίζει:
 
@@ -40,7 +40,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 - Φόντο εικόνας που ταιριάζει στον fitness χώρο
 - Τα χρώματα της μάρκας σας
 
-### Branding του Dashboard
+### Branding του Dashboard {#dashboard-branding}
 
 Χρησιμοποιήστε το addon [Admin Page Creator](/addons/admin-page-creator) ή custom CSS για να:
 
@@ -48,7 +48,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 - Προσαρμόσετε το χρώμα του admin ώστε να ταιριάζει με τη μάρκα σας
 - Προσθέσετε ένα προσαρμοσμένο widget στο dashboard με γρήγορες συνδέσεις και πόρους βοήθειας ειδικά για fitness
 
-### Προσαρμοσμένες Σελίδες Admin
+### Προσαρμοσμένες Σελίδες Admin {#custom-admin-pages}
 
 Σκεφτείτε να δημιουργήσετε προσαρμοσμένες σελίδες admin που εμφανίζουν τις πιο σχετικές ενέργειες για τους ιδιοκτήτες fitness studio:
 
@@ -58,11 +58,11 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 
 Αυτό μειώνει τη krzyπή μάθησης, το τοποθετώντας ενέργειες σχετικές με τον κλάδο στο επίκεντρο, αντί να τις κρύβει στο τυπικό μενού του WordPress.
 
-## Branding των Επικοινωνιών σας
+## Branding των Επικοινωνιών σας {#branding-your-communications}
 
 Κάθε email, τιμολόγιο και ειδοποίηση πρέπει να ενισχύουν τη μάρκα σας.
 
-### System Emails
+### System Emails {#system-emails}
 
 Μεταβείτε στο **Ultimate Multisite > Settings > Emails** και προσαρμόστε όλα τα system emails:
 
@@ -79,7 +79,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 | Payment receipt | "Πληρωμή λήpxθηκε" | "Επιβεβαιώνεται η πληρωμή συνδρομής FitSite" |
 | Trial ending | "Η δοκιμαστική σας περίοδος λήγει σύντομα" | "Η δοκιμαστική σας περίοδος FitSite λήγει σε 3 ημέρες — κρατήστε το website του studio σας live" |
 
-### Τιμολόγια
+### Τιμολόγια {#invoices}
 
 Προσαρμόστε τα templates των τιμολογίων με:
 
@@ -87,7 +87,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 - Τα στοιχεία της επιχείρησής σας
 - Ονόματα προϊόντων ειδικά για fitness (και όχι γενικά plan IDs)
 
-## Το Site που Βλέπει ο Πελάτης
+## Το Site που Βλέπει ο Πελάτης {#the-customer-facing-site}
 
 Το κύριο domain σας (`fitsite.com`) χρειάζεται ένα marketing site που να πουλά την πλατφόρμα. Αυτό είναι ξεχωριστό από το admin του Ultimate Multisite network — είναι το δημόσιο πρόσωπο της επιχείρησής σας.
 
@@ -103,7 +103,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 Δημιουργήστε το marketing site σας ως site εντός του δικού σας network. Αυτό σας επιτρέπει να το διαχειρίζεστε από το ίδιο dashboard και να δείχνετε τις δυνατότητες της δικής σας πλατφόρμας.
 :::
 
-## Custom Domain για Πελάτες
+## Custom Domain για Πελάτες {#custom-domain-for-customers}
 
 Για τους πελάτες στα πακέτα που περιλαμβάνουν custom domains, τεκμηριώστε τη διαδικασία με σαφήνεια:
 
@@ -113,7 +113,7 @@ _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 
 Δημιουργήστε ένα άρθρο βοήθειας ή μια καταχώριση knowledge base ειδικά για αυτή τη διαδικασία, γραμμένο για μη τεχνικούς ιδιοκτήτες fitness studio.
 
-## Το FitSite Network μέχρι στιγμής
+## Το FitSite Network μέχρι στιγμής {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Τι Δημιουργήσαμε Αυτό το Μάθημα
+## Τι Δημιουργήσαμε Αυτό το Μάθημα {#what-we-built-this-lesson}
 
 - **Platform domain και DNS** ρυθμισμένο για μια branded εμπειρία
 - **White-labeled admin** με branding FitSite σε όλη τη διάρκεια

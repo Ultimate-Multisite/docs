@@ -3,7 +3,7 @@ title: Jak zainstalować WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Jak zainstalować WordPress Multisite?
+# Jak zainstalować WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite pozwala na prowadzenie sieci witryn w ramach jednej instalacji. To wbudowana funkcja, ale domyślnie jest nieaktywna.
 
@@ -61,7 +61,7 @@ A ten kod, również wygenerowany przez WordPress, do pliku _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# dodaje końcowy ukośnik do /wp-admin
+# dodaje końcowy ukośnik do /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Aby utworzyć podstronę:
 
 Po wypełnieniu pól kliknij przycisk „Dodaj witrynę". Po utworzeniu nowej podstrony wejdź na nią, aby upewnić się, że działa prawidłowo.
 
-## Najczęstsze problemy:
+## Najczęstsze problemy: {#common-problems}
 
-### 1\. Mogę tworzyć nowe witryny, ale nie są one dostępne.
+### 1\. Mogę tworzyć nowe witryny, ale nie są one dostępne. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Jeśli wybrałeś subdomeny, musisz również skonfigurować subdomeny z symbolem wieloznacznym (wildcard) dla swojej sieci multisite.
 

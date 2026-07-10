@@ -3,7 +3,7 @@ title: کودې قطعات
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets بۆ v2
+# Code Snippets بۆ v2 {#code-snippets-for-v2}
 
 په اساس، **WordPress** لپاره د کد سنيپټونه هغه ځانګړت کارونه کولو لپاره کارول کیږي چې نور شاید باید یو کوچنی ځانګړي plugin وي. دا ډول کد سنيپټونه په WordPress اصلي یا Theme فایلونو (لکه معمولاً د ستونتون functions.php) کې ځای پر ځای کیږي او دوی یې MU plugin هم کارول کیری شي.
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [په مېپ شوي د domainونو کې Font-Icons له لارې CORS مسائلی حلول](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## اکاونه (Account) منوټې ځای بدلون
+## اکاونه (Account) منوټې ځای بدلون {#changing-the-position-of-the-account-menu-item}
 
 د ستونتون Dashboard باندې د اکاونه (Account) منوټې ځای بدلولको लागि، فقط دا کد سنيپټ په خپل اصلي سایت کې فعال Theme د functions.php ته اضافه کړئ. تاسو کولی شئ دا سنيپټ یو له مخکې mu-plugin یا custom plugin څخه بهر هم放入 کړئ.
 
@@ -37,20 +37,20 @@ add_filter('wu_my_account_menu_position', function() { return 10; // دا मा
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## میپ شدہ ڈومینز میں فونٹ آئیکنز کے ساتھ CORS مسائل کو ٹھیک کرنا
-## میپ شدہ ڈومینز میں فونٹ آئیکنز کے ساتھ CORS مسائل کو ٹھیک کرنا
+## میپ شدہ ڈومینز میں فونٹ آئیکنز کے ساتھ CORS مسائل کو ٹھیک کرنا {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## میپ شدہ ڈومینز میں فونٹ آئیکنز کے ساتھ CORS مسائل کو ٹھیک کرنا {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 جب آپ کسی ڈومین کو سب-سائٹ پر مپ کرتے ہیں تو آپ کو یہ پتہ چل سکتا ہے کہ سائٹ کو کسٹم فونٹس لوڈ کرنے میں دشواری ہو رہی ہے۔ یہ آپ کے سرور کی سیٹنگز پر ایک کراس-اوور بلاک (cross-origin block) کی وجہ سے ہوتا ہے۔
 
 چونکہ فونٹ فائلیں تقریباً ہمیشہ براہ راست CSS سے لوڈ ہوتی ہیں، ہمارا ڈومین میپنگ پلگ ان URL کو تبدیل نہیں کر پاتا تاکہ وہ اصل ڈومین کے بجائے مپ شدہ ڈومین کا استعمال کرے، اس لیے مسئلے کو ٹھیک کرنے کے لیے آپ کو اپنے سرور کنفیگریشن فائلوں میں ترمیم کرنے کی ضرورت ہوگی۔
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 په خپل .htaccess فایل کې، دا اضافه کړئ:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 په خپل سرور تنظیم کولو فایل کې (مکان له سرور څخه سرور بدل کیږي)، دا اضافه کړئ:
 

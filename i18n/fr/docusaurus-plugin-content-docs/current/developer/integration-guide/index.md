@@ -1,15 +1,17 @@
 ---
-title: Guide d'intégration
+title: Guide d’intégration
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guide d'intégration
+# Guide d’intégration {#integration-guide}
 
-Ce guide couvre les modèles d'intégration courants avec Ultimate Multisite, y compris la connexion à des services externes, la création de passerelles de paiement personnalisées et la gestion des webhooks.
+Ce guide couvre les modèles d’intégration courants avec Ultimate Multisite, notamment la connexion à des services externes, la création de passerelles de paiement personnalisées et la gestion des webhooks.
 
-## Intégration CRM
+Pour une infrastructure de locataires isolés, consultez [Intégration multi-locataire](./multi-tenancy) pour des conseils sur l’amorçage de locataires souverains, la vérification des migrations, le SSO et la suppression.
 
-Synchronisez les données clients avec votre CRM lorsqu'un nouveau client s'inscrit :
+## Intégration CRM {#crm-integration}
+
+Synchronisez les données client avec votre CRM lorsque de nouveaux clients s’inscrivent :
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Intégration Analytics
+## Intégration des analyses {#analytics-integration}
 
-Suivez les événements clés de l'entreprise tout au long du cycle de vie du client :
+Suivez les événements métier clés tout au long du cycle de vie client :
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Étapes suivantes
+## Étapes suivantes {#next-steps}
 
 - [Développement de passerelle personnalisée](./custom-gateway) — Créez votre propre passerelle de paiement
-- [Gestion des webhooks](./webhooks) — Créez des points de terminaison de webhook personnalisés
+- [Gestion des webhooks](./webhooks) — Créez des endpoints webhook personnalisés
+- [Intégration multi-locataire](./multi-tenancy) — Intégrez-vous aux flux du cycle de vie des locataires souverains

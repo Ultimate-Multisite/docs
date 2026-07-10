@@ -4,11 +4,11 @@ title: Filtru - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Filtru: wu_rest_delete_item
+# Filtru: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Filtrează dacă este permisă continuarea cererii sau nu.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrează dacă este permisă continuarea cererii sau nu.
 | $rest_base | `array` | Slug-ul entității. |
 | $this | `\Base_Manager` | Instanța obiectului. |
 
-### De la
+### De la {#since}
 
 - 2.0.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) la linia 440

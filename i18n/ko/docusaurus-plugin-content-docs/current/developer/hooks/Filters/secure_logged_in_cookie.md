@@ -4,11 +4,11 @@ title: 필터 - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# 필터: secure_logged_in_cookie
+# 필터: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 로그인 쿠키가 HTTPS를 통해서만 전송되어야 하는지 여부를 필터링합니다.
 
-## Parameters
+## Parameters {#parameters}
 
 | 이름 | 타입 | 설명 |
 |------|------|------|
@@ -16,10 +16,10 @@ _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 | $user_id | `int` | 사용자 ID |
 | $secure | `bool` | 인증 쿠키가 HTTPS를 통해서만 전송되어야 하는지 여부 |
 
-### Since
+### Since {#since}
 
 - 3.1.0
 
-### Source
+### Source {#source}
 
 다음에서 정의됨: [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) 라인 91

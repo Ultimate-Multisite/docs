@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite — bu sizga mijozlarga WaaS (Web-as-a-Service) yoki veb-saytlar sifatida xizmat ko'rsatish imkonini beradigan WordPress Multisite pluginidir. Keling, Ultimate Multisite biznesingiz va mijozlaringizga qanday yordam berishi haqida chuqurroq o'rganishdan oldin biz bilishimiz kerak bo'lgan asosiy bilimlar mavjud.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Bizning ko'pchiligimiz standart WordPress o'rnatmasidan tanishmiz. Siz uni hosting provayderining boshqaruv paneli orqali yaratasiz yoki, jasur bo'lsangiz, yangi veb-server va ma'lumotlar bazasini sozlab, asosiy fayllarni yuklab olib o'rnatish jarayoniga kirishingiz mumkin.
 
@@ -19,13 +19,13 @@ Uning asosida WordPress "Multisite" deb nomlangan funksiyaga ega, u 2010-yilda W
 
 Asosan, WordPress multisite quyidagicha tasvirlanishi mumkin: Universitet bitta WordPress o'rnatmasini saqlab turadi, ammo har bir fakultet o'zining alohida WordPress saytiga ega bo'ladi.
 
-### Tarmoq (The Network)
+### Tarmoq (The Network) {#the-network}
 
 WordPress terminologiyasida multisite network (tarmoq) — bu bir nechta subsaitlarni bitta dashboard orqali boshqarish imkonini beradigan joydir. Multisite networkni yaratish hosting provayderlar orasida farq qilishi mumkin, ammo yakuniy natija odatda WordPressga bu maxsus rejimda ishlayotganini aytish uchun `wp-config.php` faylida bir nechta qo'shimcha yo'riqlar bo'lishidir.
 
 Multisite network va mustaqil (stand-alone) WordPress o'rnatmasi o'rtasidagi bir nechta aniq farqlar mavjud, ularni qisqacha ko'rib chiqamiz.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Siz qilishingiz kerak bo'ladigan eng darhol qarorlardan biri multisite o'rnatmasi _subdirectories_ (subdirmalar) yoki _subdomains_ (subdomenlar) bilan ishlashi mumkinmi, degan savoldir. Ultimate Multisite ikkala tanlovda ham yaxshi ishlaydi, ammo bu ikki konfiguratsiya o'rtasida ba'zi arxitektura farqlari mavjud.
 
@@ -41,7 +41,7 @@ Boshqa e'tiborga loyiq soha SSL va SSL sertifikatlarini chiqarish va ulardan foy
 
 Boshqa variantlar mavjud bo'lsa-da, ular ko'pincha doirasi va qo'llanilishi bilan cheklangan bo'ladi va moslik nuqtai nazaridan qo'shimcha konfiguratsiya va e'tibor talab qiladi.
 
-#### Pluginlar va Temalar
+#### Pluginlar va Temalar {#plugins-and-themes}
 
 WordPress ham foydalanuvchi (mijoz) nuqtai nazaridan, ba'zi narsalarni olib ketadi. Agar mustaqil WordPress o'rnatmasida sayt administrator yomon plugin o'rnatsa yoki o'rnatmasini yangilab turmasa, bu harakatning faqat qurboni va yo'qotuvchisi o'zidir. Biroq, tarmoqli (multisite) o'rnatmasda yomon plugin o'rnatgan sayt administrator tarmog'dagi har bir saytning qurbonini yaratadi.
 
@@ -49,7 +49,7 @@ Shu buyon uchun WordPress multisite sifatida sozlanganda, sayt administratorlari
 
 Bu darajada tarmoq administrator tarmoqda pluginlar va temalarni o'rnatishdan mas'ul bo'ladi va bu pluginlar va temalardan foydalanish uchun ruxsatlarni tarmoqdagi saytlarga berish uchun ruxsatlarni topshiradi. Sayt administratorlari o'z saytlari uchun belgilangan bo'lmagan pluginlar va temalarni o'rnatish yoki ularga kirish imkoniyatiga ega emas.
 
-#### Foydalanuvchilar va Administratorlar
+#### Foydalanuvchilar va Administratorlar {#users-and-administrators}
 
 WordPress Multisite'da barcha tarmoq saytlari bir xil ma'lumotlar bazasini qo'llaydi va shu sababdan bir xil foydalanuvchilarni, rollarni va imkoniyatlarni baham ko'rishadi. Buni tushunishning eng mos yo'li shundaki, barcha foydalanuvchilar ma'lum bir saytning a'zosi emas, balki tarmoqning a'zosi hisoblanadi.
 
@@ -59,13 +59,13 @@ Bu tushunchani hisobga olgan holda, foydalanuvchilarni yaratish va shu sababli W
 
 Yuqoridagi bayonotni takrorlab aytish kerakki, garchi foydalanuvchi hisoblari ular joylashgan sayt bilan bog'liq bo'lsa-da, ular aslida tarmoqga taalluq qiladi va shu sababdan butun tarmoqda o'ziga xos bo'lishi kerak. Bu sababli isimlendirishlar (usernames) ro'yxatdan o'tish uchun mavjud bo'lmagan holatlari yuzaga kelishi mumkin.
 
-### Media
+### Media {#media}
 
 WordPress Multisite'larda ağ siteleri tek bir veritabanını paylaşsa da, medya dosyaları için dosya sisteminde ayrı yollar tutarlar.
 
 Standart WordPress konumu (wp-content/uploads) aynı kalır; ancak yolu, ağ sitesinin benzersiz kimliğini yansıtacak şekilde değiştirilir. Sonuç olarak, bir ağ sitesine ait medya dosyaları wp-contents/uploads/site/[id] şeklinde görünür.
 
-### Permalinks
+### Permalinks {#permalinks}
 
 Daha önce bahsettiğimiz gibi, _alt alan adı_ (subdomain) yapılandırmasının _alt dizin_ (subdirectory) yapılandırmasına göre belirgin avantajları vardı ve işte bu yollar:
 
@@ -79,7 +79,7 @@ Bir _alt alan adı_ yapısında bu işlem gerekli değildir çünkü her ağ sit
 
 <!-- Ekran görüntüsü mevcut değil: Alt alan adı yapılandırması için WordPress permalink ayarları -->
 
-### Statik Sayfalar
+### Statik Sayfalar {#static-pages}
 
 _subdirectory_ konfiguratsiyasida nomlar bilan to'qnashishning ehtimoli asosiy sayt va tarmoq saytlari bir xil yo'lga ega bo'lganligi sababli statik sahifalar uchun ham kengayadi.
 
@@ -89,7 +89,7 @@ Buni oldini olish uchun WordPress ma'lum bir sayt nomlarini qora ro'yxatdan o'tk
 
 _subdomain_ konfiguratsiyasida esa nomlar bilan to'qnashish imkoniyati _subdomain_ tufayli kamayadi, chunki u tarmoq sayti uchun noyob bo'lib asosiy sayt bilan hech qanday bog'liq emas.
 
-### Ro'yxatdan o'tish (Registration)
+### Ro'yxatdan o'tish (Registration) {#registration}
 
 WordPress Multisite tarmoq sozlamalarida yangi va mavjud foydalanuvchilarga saytlar yaratish imkonini beradigan bir nechta yangi ro'yxatdan o'tish variantlari mavjud.
 
@@ -107,7 +107,7 @@ Sehingga tahap ini apabila pengguna log masuk, mereka log masuk ke dalam rangkai
 
 Walau bagaimanapun, jika sifat dan tujuan multisite yang dimaksudkan adalah untuk menawarkan laman rangkaian yang berbeza yang tidak mempunyai sebarang hubungan antara satu sama lain, hampir selalu diperlukan plugin luaran atau tambahan untuk mengurus peranan pengguna.
 
-### Domain dan SSL
+### Domain dan SSL {#domain-and-ssl}
 
 Mari kita bincangkan pemasangan WordPress Multisite yang hampir terlepas daripada perhatian kita - Wordpress.com. Ini adalah contoh paling luas bagi WordPress multisite dan menunjukkan keupayaannya yang meluas untuk disesuaikan dan dibentuk untuk memenuhi tujuan tertentu.
 
@@ -121,11 +121,11 @@ Ağ yöneticileri için bu durum hem alan adı yapılandırması hem de SSL sert
 
 Bu kapsamda, WordPress Multisite'ın [www.anotherdomain.com](http://www.anotherdomain.com) gibi bir adresi 'site1'e eşleştirmeye olanak tanıyan bir yol sunmasına rağmen, ağ yöneticisi harici DNS kayıtlarını yönetme ve SSL sertifikalarını uygulama zorluğuyla karşı karşıyadır.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Bağımsız bir WordPress kurulumu ile Multisite kurulumu arasındaki farkları anladığımızda, Ultimate Multisite'ın Web Sitesini Hizmet Olarak (WaaS) sunmak için nihai silah olduğunu görelim.
 
-### Giriş
+### Giriş {#introduction}
 
 Ultimate Multisite, Wix.com, Squarespace ve WordPress.com gibi platformları düşünün; kendi hizmetinizi sahip olmayı düşünün. Bu konuda bir çok işi yapabilen bir çakma bıçağı gibidir.
 
@@ -133,9 +133,9 @@ Arka planda Ultimate Multisite WordPress Multisite'ı kullanır ancak bunu, ağ 
 
 Aşağıdaki bölümlerde bu durumları desteklemek için gereken bazı yaygın kullanım durumlarını ve dikkate alınması gereken noktaları inceleyeceğiz.
 
-### Kullanım Durumları
+### Kullanım Durumları {#use-cases}
 
-#### Durum 1: Bir Ajans
+#### Durum 1: Bir Ajans {#case-1-an-agency}
 
 Genellikle bir ajansın temel becerileri, web sitelerini tasarlamakta yatar; bu tasarımda barındırma veya pazarlama gibi unsurlar ek hizmetler olarak listelenebilir.
 
@@ -161,7 +161,7 @@ Temalar o'xshash funksionallikni taqdim etadi, bu esa sayt yaratish paytida ma'l
 
 Agentliklar Ultimate Multisite orqali xotirjamlik topadilar, chunki bu ularga eng yaxshi qiladigan ishni qilishga — ajoyib veb-saytlar loyihalashga — imkon beradi.
 
-#### 2-holat: Niche provayderi (Mutaxassis)
+#### 2-holat: Niche provayderi (Mutaxassis) {#case-2-niche-provider}
 
 "Bir narsani yaxshi qilish" degan eski maqol mavjud. Ko'p mutaxassislarga bu, bitta asosiy g'oya atrofida mahsulot yoki xizmat yaratishni anglatadi.
 
@@ -175,7 +175,7 @@ Niche saytlar va xizmatlar provayderi uchun bu sizga maxsus pluginlar va dizayn 
 
 Talablar talablarga qarab, ham _subdirectory_ yoki _subdomain_ konfiguratsiyalari mos kelishi mumkin, bu holda arxitektura tanlovlari _subdirectories_ uchun oddiy SSL sertifikati yoki _subdomains_ uchun wildcard SSL sertifikati o'rtasida bo'ladi.
 
-#### 3-holat: WordPress veb-hosting
+#### 3-holat: WordPress veb-hosting {#case-3-wordpress-web-hosting}
 
 WordPress saytlarini joylashtirishning ko'plab yo'llari bor, ammo ularni mijozga WordPress versiyasi bilan oldindan o'rnatilgan veb maydonini taqdim etish kabi oddiy emas. Buning sababi, ma'noli xizmat ko'rsatish uchun bir nechta qarorlar va hisob-kitoblarni birlashtirish kerak bo'ladi.
 
@@ -187,11 +187,11 @@ Ultimate Multisite bilan integratsiya qilishni istaydigan dasturchilar uchun yec
 
 Ko'p tashqi pluginlar va litsansiyalarga tayanmasdan, Ultimate Multisite Wix, Squarespace, WordPress.com va boshqalarning xususiyatli va qiyoslanadigan yechimini taqdim etadi.
 
-### Arxitektura ko'rib chiqilishi
+### Arxitektura ko'rib chiqilishi {#architecture-considerations}
 
 Bu to'liq qo'llanma emas, ammo Ultimate Multisiteni o'rnatish uchun texnologiyalarni to'g'ri tanlashga yo'l ko'rsatuvchi quyidagi jihatlar bo'lishi kerak.
 
-#### Umumiy (Shared) va Maxsus (Dedicated) hosting
+#### Umumiy (Shared) va Maxsus (Dedicated) hosting {#shared-vs-dedicated-hosting}
 
 Afvers har bir hosting provayderi teng emas va ba'zilari juda yuqori server zichligidan foydalanadi. Arzon narxlardagi provayderlar odatda server zichligini maksimal darajada oshirish orqali daromad oladilar. Shunga qarab, sizning Ultimate Multisite o'rnatishingiz faqat shu serverda bir nechta yuzlab saytlardan biri bo'lishi mumkin.
 
@@ -205,7 +205,7 @@ Ultimate Multisite yaxshi hosting provayderlari bilan ishlashi va domen xaritasi
 
 Mos keladigan provayderlar ro'yxati va har biriga to'liq sozlash ko'rsatmalari uchun iltimos, Compatible Providers hujjatlarini tekshiring.
 
-#### Samaradorlik Eslatlari
+#### Samaradorlik Eslatlari {#performance-considerations}
 
 Ultimate Multisite sekin ishlaydigan ilova emas, balki juda tez ishlaydi. Biroq, u faqat asosiy ilovaning va infratuzilmaning imkoniyatiga qadar yaxshi ishlashi mumkin va o'zga kirishlari mavjud bo'lgan narsalardan foydalanishi mumkin.
 
@@ -223,7 +223,7 @@ Bu nedenle çoğu ağ yöneticisi statik sayfalar için istekleri yerine getirme
 
 Ultimate Multisite, ağ yöneticilerinin kurulumlarını Cloudflare arkasına koymalarına ve sadece önbellekleme yeteneklerini değil, aynı zamanda DNS barındırmayı, SSL sertifikalarını ve güvenlik mekanizmalarını da kullanmalarını sağlayan gelişmiş bir Cloudflare eklentisi içerir.
 
-#### Yedeklemeler (Backups)
+#### Yedeklemeler (Backups) {#backups}
 
 Yedeklemeler hakkında 50 kişiden tavsiye isteyebilirsiniz ve yedekleme stratejileri hakkında 50 farklı görüş alabilirsiniz. Cevap, bu duruma bağlıdır.
 
@@ -233,7 +233,7 @@ Bu bo'lim uchun biz backupning, backup ishga tushirilgan vaqtda tizim holati nus
 
 Bu tushunchani hisobga olgan holda, backupni qanday amalga oshirish va sizning muhitingiz uchun nima eng yaxshi ekanligi asosan sizning talablaringizga va hosting provayderining bu talablarni qondira olish qobiliyatiga bog'liq bo'ladi. Biroq, eng fikrli (eng ko'p cheklovlar qo'yadigan)dan eng kam fikrli (eng kam cheklovlar qo'yadigan)ga qarab, quyidagi variantlar ba'zi yo'l ko'rsatishi mumkin.
 
-#### Snapshots (Kadrlar)
+#### Snapshots (Kadrlar) {#snapshots}
 
 Snapshots backup uchun oltin qulog'i hisoblanadi, chunki ular oson, murakkab emas (tiklanishni istasangiz) va "o'zidan ishlaydi". Biroq, bu sizning provayderingizdan ba'zi yordam talab qiladi va asosan VPS (Virtual Private Server) yoki shunga o'xshash narsangiz bo'lsa faqat qo'llaniladi. Bizning "Compatible Providers" hujjatimizda sanab o'tilgan bir nechta provayderlar tarmoq administratorining qo'shimcha aralashuvi yoki e'tibor talab qilmasdan backupni taqdim etishini taklif qiladi.
 
@@ -241,7 +241,7 @@ An'anaviy ko'rinishda, an'anaviy backuplar fayllar va ma'lumotlar bazalariga yo'
 
 Snapshotlar hosting provayderidan qo'shimcha xarajat keltirishi mumkin, ammo bu baxtsiz hodisalarga qarshi sug'urtma polisi hisoblanadi.
 
-#### Tashqi skriptlar (External Scripts)
+#### Tashqi skriptlar (External Scripts) {#external-scripts}
 
 WordPress va MySQL resurslarini backup qilish uchun tashqi skriptlar va yechimlar yetishmasligi ko'rinmaydi va ular Ultimate Multisite uchun yaxshi ishlaydi, chunki bu WordPress fayl tizimi va ma'lumotlar bazasidan foydalanadigan WordPress pluginidir. Shunday qilib, WordPress saytlarini backup qilishga xizmat qiladigan yechim Ultimate Multisite ehtiyojlarini to'liq qamrab olishi mumkin.
 
@@ -249,7 +249,7 @@ Biz bittasini boshqasiga tavsiya etishimiz mumkin emas, ammo umumiy maslahatim s
 
 Eslatma, bu skriptlar ishlayotganda tizim yukini oshirishi mumkinligi hisobga olinishi kerak.
 
-#### Pluginlar (Plugins)
+#### Pluginlar (Plugins) {#plugins}
 
 WordPressda plugin bilan hal qilinmaydigan deyarli hech qanday muammo yo'q va agar tashqi skriptlarni boshqarish sizning kuchingiz bo'lmasa, balki plugin keyingi eng yaxshi variant bo'lishi mumkin.
 
@@ -257,7 +257,7 @@ Pluginlar seçenekler ve özellikler açısından farklılık gösterse de, ço�
 
 Eklenti seçerken, bunun multisite uyumlu olup olmadığını kontrol etmeye özen gösterin. İşleyiş doğası gereği, yedekleme çalışırken sunucuda geçici bir yük bekleyebilirsiniz; bu işlem tamamlanana kadar geçerlidir.
 
-#### Alan Adı ve SSL
+#### Alan Adı ve SSL {#domain-and-ssl-1}
 
 Multisite _subdomain_ modunda alan adları hakkında çok şey tartışıldı. Ağ yöneticileri için neredeyse evrensel bir çözüm, joker karakter DNS kayıtlarından yararlanmaktır.
 
@@ -281,7 +281,7 @@ Ko'p odam uchun Cloudflare dan foydalanish oson variantdir. Mijozlar faqat domen
 
 Buning tashqarisida, muqobil yechimlarni topish kerak bo'ladi, shuning uchun Ultimate Multisite mos keladigan provayderlar ro'yxatini tavsiya qiladi. Buning sababi shundaki, DNS va SSL sozlash jarayoni murakkab bo'lishi mumkin. Biroq, Ultimate Multisitening bu provayderlar bilan integratsiyasi tufayli murakkablik sezilarli darajada kamayadi va jarayon avtomatlashtirilgan bo'ladi.
 
-#### Pluginlar
+#### Pluginlar {#plugins-1}
 
 Mijozlaringiz yoki tarmoq saytlaringiz uchun funksionallik taqdim etish uchun qo'shimcha pluginlarga ehtiyoj sezishingiz juda mumkin. Barcha pluginlar WordPress Multisite va Ultimate Multisite bilan ishlaydimi? Bu unga bog'liq.
 

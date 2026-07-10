@@ -4,11 +4,11 @@ title: ഫിൽട്ടർ - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item
+# Filter: wu_rest_get_item {#filter-wurestgetitem}
 
 ഈ റിക്വസ്റ്റ് മുന്നോട്ട് പോകാൻ അനുവാദമുണ്ടോ എന്ന് ഇത് ഫിൽട്ടർ ചെയ്യുന്നു.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 | $rest_base | `array` | എൻറ്റി സ്ലഗ്. |
 | $this | `\Base_Manager` | ഒബ്ജക്റ്റ് ഇൻസ്റ്റൻസ്. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) എന്ന ഫയലിലെ 388-ാം വരിയിൽ നിർവചിച്ചിരിക്കുന്നു.

@@ -3,13 +3,13 @@ title: Instaliranje Ultimate Multisite-a
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instaliranje Ultimate Multisite
+# Instaliranje Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Ovaj vodič pretpostavlja da već imate instaliran i konfigurisan WordPress Multisite. Da biste saznali kako to učiniti, pogledajte ovaj tutorijal [ovdje](https://www.wpbeginner.com/glossary/multisite/) na WP Beginner-u.
 :::
 
-## Instaliranje dodatka
+## Instaliranje dodatka {#installing-the-plugin}
 
 Ultimate Multisite je besplatno dostupan na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Nakon aktivacije, automatski ćete biti preusmjereni na Setup Wizard.
 
 ![Dodatak je aktiviran i preusmjeren na čarobnjak](/img/installation/plugin-activated.png)
 
-## Čarobnjak za podešavanje
+## Čarobnjak za podešavanje {#setup-wizard}
 
 Čarobnjak za podešavanje će vas voditi kroz konfiguraciju Ultimate Multisite u otprilike 10 minuta.
 
-### Dobrodošli
+### Dobrodošli {#welcome}
 
 Kliknite **Get Started** da biste započeli.
 
 ![Početni ekran čarobnjaka](/img/installation/wizard-welcome.png)
 
-### Prethodne provjere
+### Prethodne provjere {#pre-install-checks}
 
 Ovaj korak provjerava informacije o vašem sistemu i WordPress instalaciji kako bi se uvjerio da ispunjava zahtjeve Ultimate Multisite-a. Ako sve izgleda dobro, kliknite **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ako je Ultimate Multisite instaliran, ali **još nije aktiviran na nivou mreže*
 Klikom na **Network Activate**, aktivira se dodatak u cijeloj vašoj multisite mreži. Nakon aktivacije, čarobnjak normalno nastavlja do koraka instalacije. Nema potrebe da napustite čarobnjak kako biste riješili stanje aktivacije.
 :::
 
-### Instalacija
+### Instalacija {#installation}
 
 Instaler će kreirati potrebne tabele baze podataka i instalirati datoteku `sunrise.php` koja je potrebna za funkcioniranje Ultimate Multisite-a. Kliknite **Install** da biste nastavili.
 
 ![Korak instalacije koji prikazuje tabele baze podataka i sunrise.php](/img/installation/wizard-installation.png)
 
-### Vaša kompanija
+### Vaša kompanija {#your-company}
 
 Unesite informacije o vašoj kompaniji i postavite zadani novčani iznos. Ove informacije će se koristiti u cijeloj vašoj WaaS platformi. Kliknite **Continue** kada završite.
 
 ![Korak konfiguracije Vaše kompanije](/img/installation/wizard-your-company.png)
 
-### Zadana sadržina
+### Zadana sadržina {#default-content}
 
 Ovaj korak vam omogućava da instalirate unaprijed definirane predloške, proizvode i ostalu početnu sadržinu. Ovo je odličan način da se upoznate sa značajkama Ultimate Multisite-a. Kliknite **Install** da biste dodali zadani sadržaj ili preskočite ovaj korak ako želite da počnete od nule.
 
 ![Korak instalacije zadane sadržine](/img/installation/wizard-default-content.png)
 
-### Preporučeni dodaci
+### Preporučeni dodaci {#recommended-plugins}
 
 Opciono, instalirajte preporučene dodatne module. Kliknite **Install** da biste ih dodali ili preskočite da biste nastavili.
 
 ![Korak preporučenih dodataka](/img/installation/wizard-recommended-plugins.png)
 
-### Spremni!
+### Spremni! {#ready}
 
 To je to! Vaša instalacija Ultimate Multisite je završena. Sada možete početi graditi svoju Website as a Service platformu iz **Network Admin Dashboarda**.
 

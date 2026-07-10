@@ -1,0 +1,111 @@
+---
+title: Nascóir AI Ultimate le haghaidh Críochphointí Comhoiriúnacha
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector le haghaidh Críochphointí Comhoiriúnacha {#ultimate-ai-connector-for-compatible-endpoints}
+
+Comhtháthaíonn Ultimate AI Connector le haghaidh Críochphointí Comhoiriúnacha APIanna soláthraithe AI atá comhoiriúnach le OpenAI le do líonra il-láithreán WordPress. Cumraigh soláthraithe AI iolracha — gach ceann acu lena URL críochphointe féin, eochair API, agus samhail réamhshocraithe — agus treoraigh iarratais le cúltaca uathoibríoch nuair nach bhfuil soláthraí ar fáil.
+
+## Príomhghnéithe {#key-features}
+
+- **Tacaíocht ilsholáthraithe**: Cuir cártaí soláthraithe AI iolracha leis, gach ceann acu lena URL críochphointe féin, eochair API, agus samhail réamhshocraithe
+- **Tarraing chun athordú**: Socraigh soláthraithe de réir tosaíochta leis an láimhseáil ghreamaithe ar gach cárta; úsáideann iarratais soláthraithe in ord
+- **Treorú cúltaca uathoibríoch**: Má tá an príomhsholáthraí as feidhm, titeann iarratais siar go huathoibríoch chuig an gcéad soláthraí cumraithe eile
+- **Cumraíocht in aghaidh an tsoláthraí**: Cumraítear gach soláthraí go neamhspleách lena dhintiúir féin agus lena roghnú samhla féin
+- **UI socruithe bunaithe ar chártaí**: Tógtha ar chomhpháirteanna Cárta cobhsaí WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Leathnú uathoibríoch ar chur leis**: Leathnaíonn cártaí nua soláthraí go huathoibríoch ionas gur féidir leat na sonraí a líonadh isteach láithreach
+- **Briseadh taisce scripte**: Bristear taisce scripteanna soláthraithe ar nuashonrú plugin chun a chinntiú go lódáiltear an leagan is déanaí
+
+## Riachtanais {#requirements}
+
+- WordPress 5.3 nó níos airde
+- PHP 7.4 nó níos airde
+- plugin Ultimate Multisite (gníomhach)
+- Críochphointe API atá comhoiriúnach le OpenAI (féinóstáilte nó tríú páirtí)
+
+## Suiteáil {#installation}
+
+1. Uaslódáil comhaid an bhreiseáin chuig do chomhadlann `/wp-content/plugins/`
+2. Gníomhachtaigh an plugin tríd an roghchlár 'Plugins' in WordPress
+3. Téigh chuig **Ultimate Multisite → AI Connector** chun an breiseán a chumrú
+
+## Cumraíocht {#configuration}
+
+### Socrú Ilsholáthraithe {#multi-provider-setup}
+
+Úsáideann an scáileán cumraíochta leagan amach bunaithe ar chártaí ina seasann gach cárta do sholáthraí AI amháin. Is féidir leat an oiread soláthraithe agus is gá a chur leis.
+
+#### Soláthraí a Chur Leis {#adding-a-provider}
+
+1. Téigh chuig **Ultimate Multisite → AI Connector** sa riarthóir líonra
+2. Cliceáil **Cuir Soláthraí Leis**
+3. Feictear cárta soláthraí nua agus leathnaíonn sé go huathoibríoch
+4. Líon isteach sonraí an tsoláthraí:
+   - **Ainm Soláthraí** — lipéad chun an soláthraí seo a aithint (m.sh. "OpenAI", "Mistral", "Local Ollama")
+   - **URL Críochphointe** — bun-URL an API atá comhoiriúnach le OpenAI (m.sh. `https://api.openai.com/v1`)
+   - **Eochair API** — d'eochair API don soláthraí seo
+   - **Samhail Réamhshocraithe** — aitheantóir na samhla le húsáid de réir réamhshocraithe don soláthraí seo (m.sh. `gpt-4o`, `mistral-small`)
+5. Cliceáil **Sábháil Socruithe**
+
+#### Soláthraí a Bhaint {#removing-a-provider}
+
+Cliceáil an cnaipe **Bain** ar aon chárta soláthraí chun é a scriosadh. Sábháil socruithe chun an t-athrú a chur i bhfeidhm.
+
+#### Soláthraithe a Athordú {#reordering-providers}
+
+Tarraing an deilbhín greim (⣿) ar thaobh clé aon chárta soláthraí chun é a athordú. Cinneann an t-ord tosaíocht an chúltaca: seoltar iarratais chuig an gcéad soláthraí agus titeann siad siar chuig soláthraithe ina dhiaidh sin má theipeann ar iarratas.
+
+### Treorú Cúltaca {#fallback-routing}
+
+Nuair a theipeann ar iarratas chuig an bpríomhsholáthraí — mar gheall ar teorainn ama, teorainn ráta, nó briseadh seirbhíse — déanann an nascóir iarracht arís go huathoibríoch leis an gcéad soláthraí eile ar an liosta. Leanann sé seo síos an liosta go dtí go n-éiríonn le soláthraí nó go mbaintear triail as gach soláthraí.
+
+| Cás | Iompar |
+|----------|-----------|
+| Freagraíonn an príomhsholáthraí | Freastalaítear ar an iarratas mar is gnách |
+| Teipeann ar an bpríomhsholáthraí | Déantar an t-iarratas a athiarracht leis an gcéad soláthraí eile |
+| Teipeann ar gach soláthraí | Cuirtear earráid ar ais chuig an nglaoiteoir |
+
+Tá an cúltaca trédhearcach don plugin nó don theme atá ag glaoch — faigheann siad freagra rathúil nó earráid dheiridh, beag beann ar cé mhéad soláthraí ar baineadh triail astu.
+
+### Tagairt Cumraíochta Soláthraí {#provider-configuration-reference}
+
+| Réimse | Riachtanach | Cur síos |
+|-------|----------|-------------|
+| Ainm Soláthraí | Tá | Lipéad taispeána don soláthraí seo |
+| URL Críochphointe | Tá | Bun-URL an API atá comhoiriúnach le OpenAI |
+| Eochair API | Tá | Eochair fíordheimhnithe don soláthraí seo |
+| Samhail Réamhshocraithe | Tá | Aitheantóir samhla a úsáidtear nuair nach sonraítear aon samhail san iarratas |
+
+## Fabhtcheartú {#troubleshooting}
+
+### Níl aon soláthraithe liostaithe {#no-providers-are-listed}
+
+Má tá liosta na soláthraithe folamh tar éis sábhála, deimhnigh:
+
+- Gur chliceáil tú **Sábháil Socruithe** tar éis soláthraithe a chur leis
+- Nár chuir do bhrabhsálaí bac ar leathanach na socruithe ó shábháil (seiceáil consól an bhrabhsálaí le haghaidh earráidí JavaScript)
+- Go bhfuil an plugin gníomhach agus go bhfuil tú ar scáileán an riarthóra líonra
+
+### Tá iarratais ag teip do gach soláthraí {#requests-are-failing-for-all-providers}
+
+- Fíoraigh go bhfuil URL críochphointe gach soláthraí insroichte ó do fhreastalaí (ní hamháin ó do bhrabhsálaí)
+- Seiceáil go bhfuil gach eochair API bailí agus nach bhfuil sí imithe in éag
+- Athbhreithnigh stádas teorann ráta agus cuóta an tsoláthraí ina dashboard
+- Cumasaigh logáil dífhabhtaithe WordPress (`WP_DEBUG_LOG`) chun teachtaireachtaí earráide mionsonraithe ón nascóir a ghabháil
+
+### Níl soláthraí á úsáid don chúltaca {#a-provider-is-not-being-used-for-fallback}
+
+Athraíonn tarraingt chun athordaithe ord an chúltaca. Deimhnigh go bhfuil an soláthraí a bhfuil tú ag súil leis iarratais chúltaca a fháil suite i gceart sa liosta agus go bhfuil a URL críochphointe agus a eochair API ceart.
+
+### Ní leathnaíonn cárta nua soláthraí go huathoibríoch {#new-provider-card-does-not-expand-automatically}
+
+Éilíonn leathnú uathoibríoch go mbeidh JavaScript cumasaithe i do bhrabhsálaí. Mura leathnaíonn an cárta ar chliceáil, seiceáil consól an bhrabhsálaí le haghaidh earráidí. Bíonn inneachar an chárta inrochtana i gcónaí trí cheanntásc an chárta a chliceáil fiú mura spreagtar leathnú uathoibríoch.
+
+## Loga Athruithe {#changelog}
+
+Féach [Loga Athruithe](./changelog) le haghaidh stair iomlán na leaganacha.

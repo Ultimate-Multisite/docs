@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Reklamak leku networkanare Ultimate Multisite: Ad Injector
+# Reklamak leku networkanare Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector da **plugina libre** daiko dio, zein daiko planekonaren edit maila ere reklamak egindatzeko herramientaek ematen du.
 
@@ -35,7 +35,7 @@ Bere lekuen erabiltzaileekara Admin Pages-en header-ean ere reklamak hartzeko au
 
 _Erabiltzailearen back-end-an (admin panel) reklamak erabilizte nahi duzu, Admin Panel Ad Code lekuan joan._
 
-### Reklamazko Gainara
+### Reklamazko Gainara {#beyond-advertising}
 
 Ultimate Multisite: Ad Injector daiko planak oso garrantzitsuakari suportu emateko ere erabilizte dituz.
 

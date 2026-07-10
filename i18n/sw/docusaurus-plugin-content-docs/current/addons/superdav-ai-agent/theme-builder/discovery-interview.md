@@ -3,35 +3,35 @@ title: Mahojiano ya Kugundua
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Mahojiano ya Uchunguzi
+# Mahojiano ya Uchunguzi {#discovery-interview}
 
 **Mahojiano ya Uchunguzi** ndiyo hatua ya kwanza katika mchakato wa kubuni wa Theme Builder. Inakusanya habari kuhusu tovuti yako, biashara yako, na mapendeleo yako ya ubunifu ili kuunda mandhari (theme) yanayobadilishwa kulingana na mahitaji yako.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Mahojiano ya Uchunguzi yanakuongoza kupitia swali kadhaa ili kuelewa chapa yako (brand), hadhira lengwa, na malengo yako ya ubunifu. Katika toleo la 1.16.0, mahojiano sasa yanajumuisha hatua ya **kupakia picha** ambayo inakuwezesha kutoa msukumo wa kuona kwa ajili ya ubunifu wako.
 
-## Hatua za Mahojiano
+## Hatua za Mahojiano {#interview-steps}
 
-### 1. Taarifa za Biashara
+### 1. Taarifa za Biashara {#1-business-information}
 
 - Jina la tovuti na kauli mbiu (tagline)
 - Aina ya biashara au sekta
 - Malengo makuu ya biashara
 - Maelezo ya hadhira lengwa
 
-### 2. Mapendeleo ya Ubunifu
+### 2. Mapendeleo ya Ubunifu {#2-design-preferences}
 
 - Mpangilio wa rangi unaopendelewa
 - Mtindo wa ubunifu (wa kisasa, wa kitamaduni, wa kiasi, wa kuchezea, n.k.)
 - Tovuti au chapa za msukumo
 - Vipengele vya ubunifu vinavyohitajika kabisa
 
-### 3. Kupakia Picha (Jipya katika v1.16.0)
+### 3. Kupakia Picha (Jipya katika v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Pakia picha moja au zaidi ili kuathiri mwelekeo wa ubunifu:
 
-#### Mifumo Inayokubaliwa
+#### Mifumo Inayokubaliwa {#accepted-formats}
 
 | Muundo | Kiambatanisho | Maelezo |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Pakia picha moja au zaidi ili kuathiri mwelekeo wa ubunifu:
 | **WebP** | `.webp` | Muundo wa kisasa, ukubwa mdogo wa faili |
 | **GIF** | `.gif` | Picha za kimwili tu (bila uhuishaji) |
 
-#### Mahitaji ya Faili
+#### Mahitaji ya Faili {#file-requirements}
 
 - **Ukubwa wa faili uliokubaliwa:** 10 MB
 - **Upana na urefu wa chini:** 400 × 300 pixels
 - **Upana na urefu unaopendekezwa:** 1200 × 800 pixels au zaidi
 - **Uwiano (Aspect ratio):** Uwiano wowote unakubalika
 
-#### Jinsi Picha Zinavyoathiri Mwelekeo wa Ubunifu
+#### Jinsi Picha Zinavyoathiri Mwelekeo wa Ubunifu {#how-photos-influence-design-direction}
 
 Picha unazopakia zinasaidia Theme Builder kuelewa:
 
@@ -57,21 +57,21 @@ Picha unazopakia zinasaidia Theme Builder kuelewa:
 - **Vipengele vya ubunifu (Design elements)** — mifumo, textures, na mitindo ya muundo
 - **Msukumo wa fonti (Typography inspiration)** — mitindo ya fonti inayokamilisha mada ya kuona
 
-### 4. Muundo wa Maudhui
+### 4. Muundo wa Maudhui {#4-content-structure}
 
 - Kurasa kuu zinazohitajika (Nyumbani, Kuhusu, Huduma, Mawasiliano, n.k.)
 - Sehemu ya blogu au habari inahitajika
 - Uwezo wa e-commerce unahitajika
 - Vipengele maalum au viunganisho
 
-### 5. Mapitio na Thibitisho
+### 5. Mapitio na Thibitisho {#5-review-and-confirmation}
 
 - Muhtasari wa taarifa zote zilizotolewa
 - Thibitisho kabla ya kuanza kuzalisha ubunifu
 
-## Mbinu Bora za Kupakia Picha
+## Mbinu Bora za Kupakia Picha {#photo-upload-best-practices}
 
-### Nini cha Kupakia
+### Nini cha Kupakia {#what-to-upload}
 
 - **Msukumo wa chapa (Brand inspiration)** — nembo, sampuli za rangi, au miongozo ya chapa
 - **Tovuti za washindani (Competitor sites)** — skrini za tovuti unazozipenda
@@ -80,7 +80,7 @@ Picha unazopakia zinasaidia Theme Builder kuelewa:
 - **Picha za timu au ofisi** — kwa ajili ya chapa binafsi au kitaaluma
 - **Picha za maisha (Lifestyle images)** — zinazoonyesha hadhira lengwa yako
 
-### Nini cha Kuepuka
+### Nini cha Kuepuka {#what-to-avoid}
 
 - **Picha zenye ubora duni** — picha zenye blur au zilizopigwa vipande (pixelated)
 - **Picha zisizo na uhusiano** — picha ambazo hazionyeshi chapa yako
@@ -88,7 +88,7 @@ Picha unazopakia zinasaidia Theme Builder kuelewa:
 - **Vifaa vyenye hakimiliki** — hakikisha una haki ya kutumia picha hizo
 - **GIFs zenye uhuishaji** — picha za kimwili tu ndizo zinazopinduliwa
 
-### Vidokezo kwa Matokeo Bora
+### Vidokezo kwa Matokeo Bora {#tips-for-best-results}
 
 1. **Pakia picha 2-3** — picha nyingi hutoa muktadha bora
 2. **Tumia picha zenye ubora wa juu** — picha safi, zenye mwanga mzuri ndizo zinazofanya kazi vizuri
@@ -96,7 +96,7 @@ Picha unazopakia zinasaidia Theme Builder kuelewa:
 4. **Toa muktadha** — eleza kwa kifupi kwa nini ulichagua picha kila moja
 5. **Kuwa mtaalamu** — ikiwa unapenda kipengele fulani, taja
 
-## Matokeo ya Mwelekeo wa Ubunifu
+## Matokeo ya Mwelekeo wa Ubunifu {#design-direction-output}
 
 Baada ya Mahojiano ya Uchunguzi, Theme Builder huzalisha:
 
@@ -106,7 +106,7 @@ Baada ya Mahojiano ya Uchunguzi, Theme Builder huzalisha:
 - **Vipengele vya kuona (Visual elements)** — ikoni, mifumo, na vipengele vya kupamba
 - **Mood board** — mwakilisho wa kuona wa mwelekeo wa ubunifu
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 Baada ya kumaliza Mahojiano ya Uchunguzi:
 
@@ -115,7 +115,7 @@ Baada ya kumaliza Mahojiano ya Uchunguzi:
 3. Endelea kwa hatua ya [Design Direction](./design-direction.md)
 4. Theme Builder atakuunda mandhari yako maalum
 
-## Nyaraka Zinazohusiana
+## Nyaraka Zinazohusiana {#related-documentation}
 
 - [Design Direction](./design-direction.md) — pitia na boresha ubunifu wako
 - [Hospitality Menus](./hospitality-menus.md) — unda kurasa za menyu zenye muundo

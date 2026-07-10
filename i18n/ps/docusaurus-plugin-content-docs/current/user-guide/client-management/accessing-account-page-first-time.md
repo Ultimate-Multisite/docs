@@ -3,7 +3,7 @@ title: د اکاونټ صفحې ته رسېدل
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# څنګه زه په پہلونو ته ورسره؟
+# څنګه زه په پہلونو ته ورسره؟ {#how-can-i-access-my-account-page-for-the-first-time}
 
 خوشالیو ته ښه راغلاست!
 

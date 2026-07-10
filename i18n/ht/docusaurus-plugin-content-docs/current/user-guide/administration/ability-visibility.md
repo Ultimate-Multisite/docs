@@ -3,11 +3,11 @@ title: Vizibilite Kapasite
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilité des Capacités
+# Visibilité des Capacités {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduit les contrôles de **Visibilité des Capacités** qui gèrent quelles surfaces exposent chaque capacité. Cela permet aux administrateurs d'ajuster finement quelles capacités de l'agent sont disponibles via REST APIs, serveurs MCP, intégrations WooCommerce et autres interfaces.
 
-## Qu'est-ce que la Visibilité des Capacités ?
+## Qu'est-ce que la Visibilité des Capacités ? {#what-is-ability-visibility}
 
 La Visibilité des Capacités est un système de permission qui contrôle :
 
@@ -18,9 +18,9 @@ La Visibilité des Capacités est un système de permission qui contrôle :
 
 Chaque capacité porte un niveau de visibilité qui détermine sa disponibilité sur différentes surfaces.
 
-## Niveaux de Visibilité
+## Niveaux de Visibilité {#visibility-levels}
 
-### Public
+### Public {#public}
 
 Les **capacités publiques** sont disponibles partout :
 
@@ -32,7 +32,7 @@ Les **capacités publiques** sont disponibles partout :
 
 Exemple : `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interne
+### Interne {#internal}
 
 Les **capacités internes** ne sont disponibles que dans votre installation WordPress :
 
@@ -43,7 +43,7 @@ Les **capacités internes** ne sont disponibles que dans votre installation Word
 
 Exemple : `manage-settings`, `view-analytics`, `export-data`
 
-### Partenaire
+### Partenaire {#partner}
 
 Les **capacités partenaires** ne sont disponibles que pour les partenaires autorisés (whitelisted) :
 
@@ -54,7 +54,7 @@ Les **capacités partenaires** ne sont disponibles que pour les partenaires auto
 
 Exemple : `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Désactivé
+### Désactivé {#disabled}
 
 Les **capacités désactivées** ne sont disponibles nulle part :
 
@@ -63,15 +63,15 @@ Les **capacités désactivées** ne sont disponibles nulle part :
 - Non disponibles dans les panneaux d'administration
 - Utile pour les capacités obsolètes ou expérimentales
 
-## Jere Mantye Vizibilite Abiliti yo
+## Jere Mantye Vizibilite Abiliti yo {#managing-ability-visibility}
 
-### Aksè a Konfigirasyon Vizibilite Abiliti
+### Aksè a Konfigirasyon Vizibilite Abiliti {#accessing-ability-visibility-settings}
 
 1. Ale nan **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klike sou onglet **Abilities** (Abiliti)
 3. Ou pral wè yon lis tout abiliti ki enstale ak nivo vizibilite yo.
 
-### Wè Detay Abiliti a
+### Wè Detay Abiliti a {#viewing-ability-details}
 
 Klike sou nenpòt abiliti pou w wè:
 
@@ -82,7 +82,7 @@ Klike sou nenpòt abiliti pou w wè:
 - **Last updated** (Derni aktualize a): Kote vizibilite a te chanje dènye fwa
 - **Status**: Reconnexion (Reconèt) oswa Unclassified (Pa klasifye)
 
-### Chanje Nivo Vizibilite
+### Chanje Nivo Vizibilite {#changing-visibility-levels}
 
 Pou chanje vizibilite yon abiliti:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operasyon Bloke (Bulk Operations)
+### Operasyon Bloke (Bulk Operations) {#bulk-operations}
 
 Pou chanje vizibilite pou plizyè abiliti:
 
@@ -108,11 +108,11 @@ Pou chanje vizibilite pou plizyè abiliti:
 2. Chwazi yon nouvo nivo vizibilite de menm nan dropdown aksyon bloke a
 3. Klike sou **Apply** (Aplike)
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 **Partner allow-list** la kontwole ki partnè eksteryè yo ka jwenn aksè nan abiliti nivo Partner la.
 
-### Ajoute Partnè yo
+### Ajoute Partnè yo {#adding-partners}
 
 1. Ale nan **Superdav AI Agent** → **Settings** → **Partners**
 2. Klike sou **Add Partner** (Ajoute Partnè)
@@ -120,7 +120,7 @@ Pou chanje vizibilite pou plizyè abiliti:
 4. Opsyonalman ajoute non ak deskripsyon partnè a
 5. Klike sou **Save** (Ensanme)
 
-### Asigne Abiliti yo nan Partnè yo
+### Asigne Abiliti yo nan Partnè yo {#assigning-abilities-to-partners}
 
 Ap ajou yon partnè:
 
@@ -130,7 +130,7 @@ Ap ajou yon partnè:
 4. Nan seksyon "Partner allow-list", chèche kote ou ka mete bwat yo pou partner ki ta dwe gen aksè.
 5. Klike sou **Save** (Konsève).
 
-### Retire Aksè Partner la
+### Retire Aksè Partner la {#revoking-partner-access}
 
 Pou retire aksè yon partner:
 
@@ -140,11 +140,11 @@ Pou retire aksè yon partner:
 
 Partner la pral pèdi aksè a abityè sa a imedyatman.
 
-## Abilities ki pa Klasifye (Unclassified Abilities)
+## Abilities ki pa Klasifye (Unclassified Abilities) {#unclassified-abilities}
 
 Lè ou mete yon abityè de twazyèm pati (third-party ability) ki Superdav AI Agent pa konnen, li pral mete li kòm **Unclassified**.
 
-### Nòt Admin pou Abilities ki pa Klasifye
+### Nòt Admin pou Abilities ki pa Klasifye {#admin-notice-for-unclassified-abilities}
 
 Ou pral wè yon nòt admin sa a:
 
@@ -161,7 +161,7 @@ Tanpri, revize epi klasifye yo.
 [Review Abilities] [Dismiss]
 ```
 
-### Revize Abilities ki pa Klasifye
+### Revize Abilities ki pa Klasifye {#reviewing-unclassified-abilities}
 
 1. Klike sou **Review Abilities** nan nòt la.
 2. Pou chak abityè ki pa klasifye, ou pral wè:
@@ -178,7 +178,7 @@ Tanpri, revize epi klasifye yo.
 
 4. Klike sou **Classify** (Klasifye) pou konsève desizyon ou an.
 
-### Poukisa Klasifye Abilities ki pa Klasifye?
+### Poukisa Klasifye Abilities ki pa Klasifye? {#why-classify-unclassified-abilities}
 
 Klasifye abityè yo:
 
@@ -187,9 +187,9 @@ Klasifye abityè yo:
 - **Pèmèt fonksyon**: Lè abityè a klasifye, li vin disponib pou itilize.
 - **Dokimante desizyon yo**: Chwazi ou yo ap mete nan log pou kontwòl (audit).
 
-## Visibilité nan Diferan Sèf
+## Visibilité nan Diferan Sèf {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Abilités publiques** disponib yo atravè REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Abilités entè ak Partenarya** pa disponib atravè REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Abilités publiques** disponib yo atravè MCP:
 
@@ -217,7 +217,7 @@ Abilités ki disponib:
 
 **Abilités Partenarya** sèlman disponib ak kredansyèl patron (partner credentials).
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Abilités publiques** ki gen rapò ak WooCommerce disponib:
 
@@ -227,7 +227,7 @@ Abilités ki disponib:
 
 **Abilités entè** pa montre nan WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Tout abilités** (Publik, Entè, Partenarya) disponib nan chat la, selon pèmisyon itilizatè a:
 
@@ -235,34 +235,34 @@ Abilités ki disponib:
 - Itilizatè regilye yo wè sèlman abilités publiques
 - Partenarya yo wè Abilités Publike + Abilités Partenarya (si yo te ap aprann/whitelisted)
 
-## Bon Pratiques Sekirite
+## Bon Pratiques Sekirite {#security-best-practices}
 
-### Prinsipal Pwovizyon Miniman (Principle of Least Privilege)
+### Prinsipal Pwovizyon Miniman (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Mete abilités nan vizibilite ki pi restriktif la ki pafè pou itilize yo
 - Itilize vizibilite Partenarya pou operasyon sensib
 - Desactive abilités ou pa itilize
 
-### Audits Regilye
+### Audits Regilye {#regular-audits}
 
 - Revize vizibilite abilités chak mwa
 - Kontwe pou abilités ki pa klasifye (unclassified abilities)
 - Retire aksè pou patron yo ki pa itilize
 
-### Logging ak Monitè
+### Logging ak Monitè {#logging-and-monitoring}
 
 - Monitè ki abilés ki itilize plis
 - Swiv modèl aksè patron yo
 - Bay alerte sou itilizasyon anòm abilités
 
-### Abilités Twa Pwovizyon (Third-Party Abilities)
+### Abilités Twa Pwovizyon (Third-Party Abilities) {#third-party-abilities}
 
 - Revize abilités twa pati anvan ou kòmanse yo
 - Klasifye yo eksplisite
 - Kòmanse ak vizibilite Entè oswa Partenarya
 - Promouye pou Publik sèlman apre ou te fè yon bon etid (vetting)
 
-## Rezoudi (Troubleshooting)
+## Rezoudi (Troubleshooting) {#troubleshooting}
 
 **Yon abitye pa montre nan lis la**
 - Verify ke abitye a monte epi li aktif
@@ -286,7 +286,7 @@ Abilités ki disponib:
 - Verify ke klasifikasyon ou te konsève
 - Verify ke plugin ki bay abitye a se sou dènye vèsyon
 
-## Migrasyon soti nan Mod Ansyen (Legacy Mode)
+## Migrasyon soti nan Mod Ansyen (Legacy Mode) {#migration-from-legacy-mode}
 
 Si ou ap fè yon upgrade soti nan yon vèsyon anvan Superdav AI Agent:
 
@@ -296,7 +296,7 @@ Si ou ap fè yon upgrade soti nan yon vèsyon anvan Superdav AI Agent:
 
 Gade **Migrasyon Mod Twa Pati** pou plis detay sou transfè nan entegrasyon API Abitye natif la.
 
-## Etap Pou Swiv (Next Steps)
+## Etap Pou Swiv (Next Steps) {#next-steps}
 
 Ap fè sa apre ou fin configure vizibilite abitye yo:
 

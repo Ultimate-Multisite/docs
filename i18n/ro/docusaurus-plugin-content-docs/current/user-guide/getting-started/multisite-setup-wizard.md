@@ -3,7 +3,7 @@ title: Asistent de Configurare Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Asistentul de configurare Multisite
+# Asistentul de configurare Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite include un asistent integrat care transformă automat o instalare WordPress standard într-o rețea WordPress Multisite. Astfel, nu mai trebuie să editezi manual fișierul `wp-config.php` sau să rulezi comenzi în baza de date.
 
@@ -11,13 +11,13 @@ Ultimate Multisite include un asistent integrat care transformă automat o insta
 Dacă instalarea ta WordPress funcționează deja ca rețea Multisite, poți sări peste acest pas. Asistentul apare doar când Multisite nu este încă activat.
 :::
 
-## Când apare asistentul?
+## Când apare asistentul? {#when-does-the-wizard-appear}
 
 Când activezi Ultimate Multisite pe o instalare WordPress standard (non-Multisite), pluginul detectează că Multisite nu este activat și te redirecționează automat către Asistentul de configurare Multisite în loc de asistentul obișnuit de configurare.
 
 Poți să-l accesezi și direct din **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Cerințe preliminare
+## Cerințe preliminare {#prerequisites}
 
 Înainte de a rula asistentul, asigură-te că:
 
@@ -29,7 +29,7 @@ Poți să-l accesezi și direct din **WP Admin > Ultimate Multisite > Multisite 
 Asistentul modifică fișierul `wp-config.php` și creează tabele noi în baza de date. Creează întotdeauna o copie de rezervă înainte de a continua.
 :::
 
-## Pasul 1: Bun venit
+## Pasul 1: Bun venit {#step-1-welcome}
 
 Primul ecran explică ce este WordPress Multisite și ce va face asistentul:
 
@@ -42,11 +42,11 @@ Primul ecran explică ce este WordPress Multisite și ce va face asistentul:
 
 Apasă **Continue** pentru a continua.
 
-## Pasul 2: Configurarea rețelei
+## Pasul 2: Configurarea rețelei {#step-2-network-configuration}
 
 În acest pas configurezi setările rețelei.
 
-### Structura site-urilor
+### Structura site-urilor {#site-structure}
 
 Alege cum vor fi organizate site-urile din rețea:
 
@@ -57,11 +57,11 @@ Alege cum vor fi organizate site-urile din rețea:
 Dacă alegi subdomenii, va trebui să configurezi **DNS wildcard** și un **certificat SSL wildcard** pentru domeniul tău. Majoritatea gazdelor WordPress administrate se ocupă de asta automat. Consultă [Ultimate Multisite 101](./ultimate-multisite-101) pentru o comparație detaliată.
 :::
 
-### Titlul rețelei
+### Titlul rețelei {#network-title}
 
 Introdu un nume pentru rețeaua ta. Implicit, acesta este titlul site-ului curent cu „Network" adăugat la final. Poți schimba asta ulterior din setările rețelei.
 
-### Emailul administratorului de rețea
+### Emailul administratorului de rețea {#network-admin-email}
 
 Adresa de email folosită pentru notificările de administrare a rețelei. Implicit, aceasta este adresa de email a utilizatorului curent.
 
@@ -69,7 +69,7 @@ Adresa de email folosită pentru notificările de administrare a rețelei. Impli
 
 După ce completezi câmpurile, apasă **Continue** pentru a continua.
 
-## Pasul 3: Instalarea
+## Pasul 3: Instalarea {#step-3-installation}
 
 Apasă butonul **Install** pentru a începe. Asistentul execută cinci pași automatizați în ordine, afișând progresul fiecăruia în timp real:
 
@@ -96,7 +96,7 @@ După ce toți pașii se finalizează cu succes, vei vedea statusul verde „Suc
 
 Asistentul va trece apoi automat la ecranul de finalizare.
 
-## Pasul 4: Finalizare
+## Pasul 4: Finalizare {#step-4-complete}
 
 După ce instalarea este completă, vei vedea un mesaj de succes care confirmă că WordPress Multisite a fost activat.
 
@@ -108,7 +108,7 @@ Acum poți continua cu asistentul de configurare Ultimate Multisite pentru a-ți
 După ce instalarea multisite se finalizează, browserul te va redirecționa prin panoul de administrare al rețelei nou activate. Este posibil să fie nevoie să te autentifici din nou, deoarece cookie-urile de autentificare sunt actualizate pentru mediul multisite.
 :::
 
-## Configurare manuală alternativă
+## Configurare manuală alternativă {#manual-setup-fallback}
 
 Dacă asistentul nu poate scrie în fișierul `wp-config.php` (din cauza permisiunilor fișierului sau restricțiilor serverului), va afișa codul exact pe care trebuie să-l adaugi manual:
 
@@ -117,9 +117,9 @@ Dacă asistentul nu poate scrie în fișierul `wp-config.php` (din cauza permisi
 
 După ce faci modificările manuale, reîmprospătează pagina și asistentul va detecta că multisite este acum activ.
 
-## Depanare
+## Depanare {#troubleshooting}
 
-### Asistentul spune că wp-config.php nu poate fi scris
+### Asistentul spune că wp-config.php nu poate fi scris {#the-wizard-says-wp-configphp-is-not-writable}
 
 Procesul serverului web are nevoie de permisiune de scriere pentru fișierul `wp-config.php`. Poți fie:
 
@@ -127,7 +127,7 @@ Procesul serverului web are nevoie de permisiune de scriere pentru fișierul `wp
 - Să folosești instrucțiunile de configurare manuală alternativă furnizate de asistent
 - Să ceri asistență de la furnizorul tău de hosting
 
-### Site-urile nu sunt accesibile după configurare (subdomenii)
+### Site-urile nu sunt accesibile după configurare (subdomenii) {#sites-are-not-accessible-after-setup-subdomains}
 
 Dacă ai ales structura cu subdomenii, trebuie să configurezi **DNS wildcard** pentru domeniul tău. Adaugă o înregistrare DNS:
 
@@ -139,7 +139,7 @@ Value: [IP-ul serverului tău]
 
 Verifică la furnizorul tău de hosting dacă nu ești sigur cum să configurezi asta.
 
-### Probleme de autentificare după configurare
+### Probleme de autentificare după configurare {#authentication-issues-after-setup}
 
 Dacă ești deconectat sau întâmpini erori de cookie-uri după configurarea multisite:
 
@@ -147,7 +147,7 @@ Dacă ești deconectat sau întâmpini erori de cookie-uri după configurarea mu
 2. Autentifică-te din nou la `domeniultau.com/wp-login.php`
 3. Dacă problema persistă, verifică dacă fișierul `wp-config.php` nu are `COOKIE_DOMAIN` setat la `false` — aceasta este o problemă cunoscută la instalările multisite cu subdomenii
 
-### Un pas a eșuat în timpul instalării
+### Un pas a eșuat în timpul instalării {#a-step-failed-during-installation}
 
 Dacă unul dintre pașii de instalare afișează o eroare:
 

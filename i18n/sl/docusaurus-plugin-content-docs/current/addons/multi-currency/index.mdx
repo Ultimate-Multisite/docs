@@ -1,0 +1,117 @@
+---
+title: Več valut
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Več valut {#multi-currency}
+
+Ultimate Multisite: Več valut omogoča vašemu omrežju sprejemanje plačil v več valutah. Samodejno pretvarja cene z uporabo sprotnih ali ročnih menjalnih tečajev, omogoča nastavitev natančnih cen za posamezen izdelek v kateri koli valuti in zazna prednostno valuto vsakega obiskovalca prek geolokacije — vse upravljano iz enega samega admin Dashboarda.
+
+## Ključne funkcije {#key-features}
+
+- **Samodejna pretvorba menjalnega tečaja** — cene se pretvorijo iz vaše osnovne valute z uporabo tečajev, pridobljenih od izbranega ponudnika
+- **Preglasitve cen po izdelku** — nastavite natančne cene za posamezne valute pri katerem koli izdelku, da obidete samodejno pretvorbo
+- **Polje za izbiro valute ob prijavi** — strankam omogoča, da med checkoutom/prijavo izberejo svojo prednostno valuto
+- **Več ponudnikov menjalnih tečajev** — ECB, Frankfurter, Stripe ali popolnoma ročni tečaji
+- **Zaznavanje valute na podlagi geolokacije** — samodejno vnaprej izbere valuto, ki ustreza državi obiskovalca
+- **Admin Dashboard** — upravljajte aktivne valute, menjalne tečaje in nastavitve ponudnika z enega mesta
+
+## Zahteve {#requirements}
+
+- Ultimate Multisite 2.0.0 ali novejši
+- Namestitev WordPress Multisite
+- PHP 7.4 ali novejši
+
+## Namestitev {#installation}
+
+1. Naložite datoteke plugina v `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivirajte plugin prek zaslona **Plugins** v WordPressu (omrežna aktivacija)
+3. Pojdite na **Ultimate Multisite → Več valut**, da odprete admin Dashboard
+4. Dodajte valute, ki jih želite sprejemati, in konfigurirajte svojega ponudnika menjalnih tečajev
+
+## Konfiguracija {#configuration}
+
+### Admin Dashboard {#admin-dashboard}
+
+Admin Dashboard za več valut (**Ultimate Multisite → Več valut**) je osrednje mesto za:
+
+- Dodajanje, omogočanje ali onemogočanje valut
+- Izbiro ponudnika menjalnih tečajev in osveževanje tečajev na zahtevo
+- Pregled trenutnih tečajev za vse aktivne valute
+- Nastavitev ročnih tečajev, kadar samodejni ponudniki niso primerni
+
+### Ponudniki menjalnih tečajev {#exchange-rate-providers}
+
+| Ponudnik | Opis |
+|---|---|
+| **ECB** | Evropska centralna banka — brezplačni dnevni tečaji za omrežja, ki temeljijo na EUR |
+| **Frankfurter** | Odprtokodni zrcalni API ECB — brezplačno, API ključ ni potreben |
+| **Stripe** | Uporablja Stripeove sprotne devizne tečaje — zahteva aktivno integracijo Stripe |
+| **Ročno** | Tečaje vnesete neposredno; brez klicev zunanjih API-jev |
+
+Izberite svojega ponudnika pod **Ultimate Multisite → Več valut → Nastavitve → Ponudnik menjalnih tečajev**. Tečaje lahko kadar koli osvežite ročno ali pa jih načrtujete za samodejno posodabljanje.
+
+### Preglasitve cen po izdelku {#per-product-pricing-overrides}
+
+Kadar samodejna pretvorba ni dovolj natančna, lahko nastavite natančno ceno za določeno valuto pri katerem koli izdelku:
+
+1. Odprite urejevalnik izdelka (**Ultimate Multisite → Izdelki → Uredi**)
+2. Pomaknite se do razdelka **Cene po valutah**
+3. Vnesite natančno ceno za vsako valuto, ki jo želite preglasiti
+4. Shranite izdelek
+
+Izdelki brez preglasitve uporabljajo pretvorjeno ceno iz vaše osnovne valute.
+
+### Polje za izbiro valute ob prijavi {#currency-selector-signup-field}
+
+Polje za izbiro valute lahko dodate v svoj tok prijave/checkouta, da stranke ob registraciji izberejo svojo prednostno valuto:
+
+1. Pojdite na **Ultimate Multisite → Več valut → Nastavitve**
+2. Omogočite **Prikaži izbirnik valute ob prijavi**
+3. Po želji nastavite privzeto valuto ali dovolite, da geolokacija določi vnaprej izbrano vrednost
+
+Izbrana valuta se shrani z naročnino in uporablja za vsa nadaljnja obračunavanja.
+
+### Zaznavanje valute na podlagi geolokacije {#geolocation-based-currency-detection}
+
+Ko je zaznavanje geolokacije omogočeno, addon preslika državo obiskovalca v valuto in jo vnaprej izbere v polju za izbiro valute. Za omogočanje:
+
+1. Pojdite na **Ultimate Multisite → Več valut → Nastavitve**
+2. Omogočite **Zaznaj valuto iz lokacije obiskovalca**
+3. Preslikajte države v valute v tabeli **Preslikava geolokacije**
+
+Če za državo obiskovalca ne obstaja preslikava, se kot nadomestna možnost uporabi osnovna valuta omrežja.
+
+## Pogosta vprašanja {#frequently-asked-questions}
+
+### Kaj se zgodi, če ponudnik menjalnih tečajev ni na voljo? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addon se vrne na zadnje uspešno pridobljene tečaje. Če tečaji še nikoli niso bili pridobljeni, se vrne na ročne tečaje, ki ste jih konfigurirali. Priporočljivo je konfigurirati ročne tečaje kot varnostno mrežo.
+
+### Ali lahko za različne valute uporabljam različne ponudnike? {#can-i-use-different-providers-for-different-currencies}
+
+Ne — za vse valute je naenkrat aktiven en ponudnik. Uporabite **Ročno**, če potrebujete popoln nadzor nad posameznimi tečaji.
+
+### Ali geolokacija zahteva ločen plugin? {#does-geolocation-require-a-separate-plugin}
+
+Zunanji geolokacijski plugin ni potreben. Addon uporablja vgrajeno zaznavanje države iz IP-ja v WordPressu. Za večjo natančnost je mogoče namensko geolokacijsko storitev integrirati prek priloženih filter hookov.
+
+### Ali se preglasitve po izdelku uporabijo pred davkom ali po njem? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Preglasitve po izdelku nastavijo ceno pred davkom v ciljni valuti. Davek se izračuna povrh preglasitvene cene z uporabo vaše obstoječe davčne konfiguracije.
+
+## Dnevnik sprememb {#changelog}
+
+### Različica 1.0.0 — Izdano 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Novo: Podpora za več valut s samodejno pretvorbo menjalnega tečaja
+- Novo: Preglasitve cen po izdelku za natančne cene v posameznih valutah
+- Novo: Polje za izbiro valute ob prijavi za tok checkouta
+- Novo: Ponudniki menjalnih tečajev: ECB, Frankfurter, Stripe in ročni
+- Novo: Zaznavanje valute na podlagi geolokacije
+- Novo: Admin Dashboard za upravljanje valut in menjalnih tečajev
+- Popravek: Dashboard je vedno prikazoval cene v osnovni valuti ne glede na izbrano valuto

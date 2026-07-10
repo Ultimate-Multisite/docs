@@ -1,124 +1,124 @@
 ---
-title: Tessend Emailijiet u Broadcasts
+title: Tibgħat Emails u Broadcasts
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Aċċessament ta Emailijiet u Broadcasts (v2)
+# Tibgħat Emails u Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
-_**NOTA KRITIKA: Dan l-artikolu jiferi għall-versjoni 2.x ta Ultimate Multisite.**_
+_**NOTA IMPORTANTI: Dan l-artiklu jirreferi għal Ultimate Multisite verżjoni 2.x.**_
 
-Ultimate Multisite jista' jgħinek b'funzjoni li ti lattjaħq il-komunikazzjoni mal-istmenti tiegħek billi trassili email għal utentità magħrufa jew gruppi ta' utenti, u ttrassili notifikazzjonijiet fuq dashboard l-admin tagħhom biex ttrassili annunzjali.
+Ultimate Multisite jiġi b’karatteristika li se tippermettilek tikkomunika mal-klijenti tiegħek billi tibgħat email lil utent immirat jew grupp ta’ utenti kif ukoll tibgħat avviżi fuq id-dashboard tal-amministrazzjoni tagħhom biex ixxandar avviżi
 
-## Aċċessament ta notifikazzjonijiet admin fuq dashboard il-istmenti tiegħek b'Broadcasts
+## Żid avviżi tal-amministrazzjoni mad-dashboard tal-klijenti tiegħek b’Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Bxejnejt l-funzjoni ta Broadcasts tal-Ultimate Multisite, tista' ti aġixxi **notifikazzjonijiet admin** fuq dashboard l-admin tal-subsite tal-utentità tiegħek.
+Bl-użu tal-karatteristika broadcast ta’ Ultimate Multisite, tista’ żżid **avviżi tal-amministrazzjoni** mad-dashboard tal-amministrazzjoni tas-subsite tal-utent tiegħek.
 
-Dan huwa ħafna għal jkun għandek biex tagħmel annunċja kif ma manutenzjoni tal-sistema jew toffri prodotti jew servizzi ġoddi lil utenti esistenti tiegħek. Dan hija l-mod kif se tistempla l-notifikazzjoni admin fuq dashboard l-utentità tiegħek.
+Dan huwa estremament utli jekk ikollok bżonn tagħmel avviż bħal manutenzjoni tas-sistema jew toffri prodotti jew servizzi ġodda lill-utenti eżistenti tiegħek. Hekk se jidher l-avviż tal-amministrazzjoni fuq id-dashboard tal-utent tiegħek.
 
-<!-- Screenshot unavailable: Broadcast admin notifica mostrata fuq dashboard tal-istmenti ta' utentità -->
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Biex tibda notifikazzjoni admin, għandi tmur għad dashboard l-admin tal-network tiegħek u taħt menu **Ultimate Multisite**, tista' tikkunsidixxi l-opzjoni **Broadcasts**.
+Biex tibda avviż tal-amministrazzjoni, mur fid-dashboard tal-amministrazzjoni tan-network tiegħek u taħt il-menu **Ultimate Multisite**, issib l-għażla **Broadcasts**.
 
-![Pagja lista Broadcasts f Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Paġna tal-lista tal-Broadcasts fl-amministrazzjoni ta’ Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Tista' tikkunsidixxi wkoll broadcast esistenti:
+Tista’ wkoll teditja broadcasts eżistenti:
 
-![Interfaccia ta modifika broadcast](/img/admin/broadcast-edit.png)
+![Interfaċċa tal-editjar tal-broadcast](/img/admin/broadcast-edit.png)
 
-Min-dinja, ikliki fuq bixogħd **Add Broadcast** fuq l-top.
+Minn din il-paġna, ikklikkja l-buttuna **Add Broadcast** fuq nett.
 
-Dan jgħinek li jiftah il-modal window ta Add broadcast fejn tista' tagħżel qed tipi ta broadcast li tista' trassili.
+Dan se jiftaħ it-tieqa modali Add broadcast fejn tista’ tagħżel x’tip ta’ broadcast tixtieq tibgħat.
 
-Mura għal selezjoni **Message** u ikliki fuq bixogħd **Next Step**.
+Kompli u agħżel **Message** imbagħad ikklikkja l-buttuna **Next Step**.
 
-![Modal ta Add broadcast ma' l-opzjoni Message msecelta](/img/admin/broadcast-add-message.png)
+![Modal Add broadcast bl-għażla Message magħżula](/img/admin/broadcast-add-message.png)
 
-Il-window prossimu se jistaqqa' minnne għal **Target customer** jew **Target product**. Nota li tista' tagħżel aktar min waħda utentità jew aktar min waħda prodott.
+It-tieqa li jmiss se titolbok jew il-**Target customer** jew it-**Target product**. Innota li tista’ tagħżel aktar minn utent wieħed jew aktar minn prodott wieħed.
 
-כדי לחפש משתמש או מוצר, אתה צריך להתחיל להקליד את המילה (keyword) בתוך השדה.
+Biex tfittex jew account ta’ utent jew prodott, trid tibda tittajpja l-kelma prinċipali ġewwa l-field.
 
-תחת שדה **Message type**, תוכל לבחור את הצבע של ההודעה. זה ידגיש את הדחיפות של המסר שלך.
+Taħt il-field **Message type**, tista’ tagħżel il-kulur tal-avviż. Dan se jenfasizza l-urġenza tal-messaġġ tiegħek.
 
-לאחר מכן תוכל ללחוץ על **Next Step**.
+Imbagħad tista’ tikklikkja **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Fields għal Target customers, target product u message type għal broadcast ta’ Message](/img/admin/broadcast-message-targets.png)
 
-החלון הבא הוא המקום שבו תוכל להתחיל לנסח את ההודעה שלך על ידי הזנת הנושא (subject) והתוכן/המסר שברצונך לשדר למשתמשים.
+It-tieqa li jmiss hija fejn tista’ tibda tikkomponi l-messaġġ tiegħek billi ddaħħal is-suġġett u l-kontenut/messaġġ li tixtieq ixxandar lill-utenti.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Suġġett tal-messaġġ broadcast u editur tal-kontenut fil-pass tal-kompożizzjoni](/img/admin/broadcast-edit.png)
 
-לאחר יצירת המסר שלך, תוכל ללחוץ על כפתור **Send**.
+Wara li toħloq il-messaġġ tiegħek, tista’ mbagħad tagħfas il-buttuna **Send**.
 
-וזהו. ההודעה של האדמין אמורה להופיע מיד בלוח המחוונים (dashboard) של המשתמש שלך.
+U hekk hu. L-avviż tal-amministrazzjoni għandu jidher immedjatament fuq id-dashboard tal-utent tiegħek.
 
-## לשלוח מיילים ללקוחותיך
+## Ibgħat emails lill-klijenti tiegħek {#send-emails-to-your-customers}
 
-באמצעות תכונת הbroadcast של Ultimate Multisite, תוכל לשלוח אימייל למשתמשים שלך. יש לך אפשרות לשלוח את האימייל רק למשתמשים ספציפיים או לפנות לקבוצת משתמש ספציפית בהתבסס על המוצר או התוכנית שהם מנויים תחתיה.
+Bl-użu tal-karatteristika broadcast ta’ Ultimate Multisite, tista’ tibgħat email lill-utenti tiegħek. Għandek għażla li tibgħat l-email biss lil utenti speċifiċi jew timmira grupp ta’ utenti speċifiku bbażat fuq il-prodott jew il-pjan li huma abbonati taħtu.
 
-כדי להתחיל בשידור אימייל, עבור ללוח המחוונים של מנהל הרשת שלך ובתיבת התפריט של Ultimate Multisite, תמצא את האפשרות Broadcast.
+Biex tibda email broadcast, mur fid-dashboard tal-amministrazzjoni tan-network tiegħek u taħt il-menu Ultimate Multisite, issib l-għażla Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Paġna tal-lista tal-Broadcasts użata bħala l-punt tat-tluq għal email broadcast](/img/admin/broadcasts-list.png)
 
-מหนעמוד הזה, לחץ על כפתור **Add broadcast** למעלה.
+Minn din il-paġna, ikklikkja l-buttuna **Add broadcast** fuq nett.
 
-זה יפתח את חלון ה-modal של Add broadcast שבו תוכל לבחור איזה סוג של שידור ברצונך לשלוח. המשך ובחר **Email** ואז לחץ על כפתור **Next Step**.
+Dan se jiftaħ it-tieqa modali Add broadcast fejn tista’ tagħżel x’tip ta’ broadcast tixtieq tibgħat. Kompli u agħżel **Email** imbagħad ikklikkja l-buttuna **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal Add broadcast bl-għażla Email magħżula](/img/admin/broadcast-add-email.png)
 
-החלון הבא ישאל אותך בין **Target customer** (לקוח יעד) או **Target product** (מוצר יעד). שימו לב שתוכל לבחור יותר משתמש אחד או יותר ממוצרים.
+It-tieqa li jmiss se titolbok jew il-**Target customer** jew it-**Target produc** t. Innota li tista’ tagħżel aktar minn utent wieħed jew aktar minn prodott wieħed.
 
-Biex tridixxefa għal ricerca ta kontu utente jew prodotto, għandek biex tibda ti tikkba l-parola chiave f'il-field.
+Biex tfittex jew account ta’ utent jew prodott, trid tibda tittajpja l-kelma prinċipali ġewwa l-field.
 
-Mdaqqaq il-**Next Step** waqt li selezjonat il-target audience tiegħek.
+Ladarba l-udjenza mmirata tiegħek tkun magħżula, tista’ tikklikkja **Next Step**.
 
-![Selezzjoni tal-klijenti target u prodotta target għall-Email broadcast](/img/admin/broadcast-email-targets.png)
+![Għażla ta’ Target customers u target product għal broadcast ta’ Email](/img/admin/broadcast-email-targets.png)
 
-Il-fenestra li jġ peress huwa dawk li tista' tibda tgħanni l-email tiegħek biex ti tikkba is-soggetto u l-kontenut/messa li tista' trassi lill-utenti.
+It-tieqa li jmiss hija fejn tista’ tibda tikkomponi l-email tiegħek billi ddaħħal is-suġġett u l-kontenut/messaġġ li tixtieq tibgħat lill-utenti.
 
-<!-- Screenshot unavailable: Editor tal-soggetto u l-kontenut tal-broadcast email fuq il-step ta kompożjoni -->
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Wara li tgħmli l-messagħa tiegħek, tista' ti tikkba bix **Send**.
+Wara li toħloq il-messaġġ tiegħek, tista’ tagħfas il-buttuna **Send**.
 
-U dan huwa kif huwa fasil trassi l-email għall-utenti tiegħek u l-feature ta broadcast.
+U hekk hu faċli tibgħat email lill-utenti finali tiegħek billi tuża l-karatteristika broadcast.
 
-## Emailijiet tal-Sistema (System emails)
+## Emails tas-sistema {#system-emails}
 
-Emailijiet tal-sistema f Ultimate Multisite huma dawk **notifikazzjonijiet awtomatiku** li jinvirtu mill-sistema wara x-xogħol speċifi bħal registrazzjoni, pagament, mappatura tal-domeni, ecc. Il-emailijiet hajn tista' jiġu emendati jew modifiktati mill-settings ta Ultimate Multisite. Huwa jkompli għall-feature li tista' ti riżetti u ti importi settings esistenti min installazzjoni oħra ta Ultimate Multisite.
+Emails tas-sistema f’Ultimate Multisite huma dawk **in-notifiki awtomatiċi** mibgħuta mis-sistema wara ċerti azzjonijiet bħar-reġistrazzjoni, il-ħlas, il-mapping tad-domain, eċċ. Dawn l-emails jistgħu jiġu editjati jew modifikati mis-settings ta’ Ultimate Multisite. Jiġi wkoll b’karatteristika li se tippermettilek tirrisettja u timporta settings eżistenti minn installazzjoni oħra ta’ Ultimate Multisite.
 
-### Riżettare u Importare (Resetting & Importing)
+### Irrisettjar u Importazzjoni {#resetting--importing}
 
-Bizzjoni tal-Ultimate Multisite bizzjoni, in kimija, jista' u jgħandu emailijiet ġeddin mill-ħin u l-add-ons.
+Verżjonijiet ġodda ta’ Ultimate Multisite, kif ukoll add-ons, jistgħu u se jirreġistraw emails ġodda minn żmien għal żmien.
 
-Biex tneħħi conflitti u oħra problemi, **ma naddispoċċiam il-template ta l-email ġdid bħala Emailijiet tal-Sistema fuq installazzjoni tiegħek awtomatikament**, mela jkun essenzjali għall-funzionamenti korretti ta xi feature speċifi.
+Biex jiġu evitati kunflitti u kwistjonijiet oħra, **mhux se nżidu t-templates ġodda tal-email bħala System Emails fuq l-installazzjoni tiegħek awtomatikament** , sakemm ma jkunux kruċjali għall-funzjonament korrett ta’ karatteristika partikolari.
 
-Madankollu, super admins u agenti jista'o jimportaw il-emailijiet ġeddin registrati biex jikbru l-importer tool. Il-proċess huwa li jieħu email tal-sistema ġdid mal-kontenut u konfigurazzjoni tal-template ta l-email ġdid, li jista' super admin jmexxi minnha qualsiex is-modifikazzjonijiet li jiddi jew jippass ilha kif hija.
+Madankollu, super admins u agents jistgħu jimportaw dawn l-emails irreġistrati ġodda permezz tal-għodda tal-importatur. Dak il-proċess joħloq email tas-sistema ġdida bil-kontenut u l-konfigurazzjoni tat-template l-ġdida tal-email, u jippermetti lis-super admin jagħmel kwalunkwe modifika li jixtieq jew iżommhom kif inhuma.
 
-#### Come timporta emailijiet tal-sistema
+#### Kif timporta emails tas-sistema {#how-to-import-system-emails}
 
-Đi le la pagina tal-Settings ta Ultimate Multisite u mrid għall **Emails** tab.
+Mur fil-paġna Settings ta’ Ultimate Multisite tiegħek u mur fit-tab **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Tab Emails fis-settings ta’ Ultimate Multisite li turi t-taqsima System Emails](/img/config/settings-emails-tab.png)
 
-Imkien, fuq il sidebar, għal-click fuq il button **Customize System Emails**.
+Imbagħad, fis-sidebar, ikklikkja fuq il-buttuna **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Fuq la pagina tal-System Emails, tiegħek tar-top tista' tara l-action button **Reset & Import**. Għal-click fuq dan button se jiftħu il modal window ta import u reset.
+Fil-paġna System Emails, tara l-buttuna ta’ azzjoni **Reset & Import** fuq nett. Meta tikklikkja dik il-buttuna għandha tiftaħ it-tieqa modali tal-importazzjoni u r-reset.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Buttuna ta’ azzjoni Reset jew Import fil-paġna tal-amministrazzjoni System Emails](/img/admin/system-emails-reset-import.png)
 
-Imkien, puoi toggli l-opzioni tal-Import Emails biex tara li quali emails system huma disponibili biex jiġu importati.
+Imbagħad, tista’ taqleb l-għażliet Import Emails biex tara liema emails tas-sistema huma disponibbli biex jiġu importati.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Screenshot mhux disponibbli: modal Irrisettja u Importa bl-għażliet Importa Emails estiżi -->
 
-#### Resettjar ta System Emails
+#### Irrisettjar tal-Emails tas-Sistema {#reseting-system-emails}
 
-Al-aħħar, tista' isseħħ li l-modifikazzjonijiet li għamti għal template tal-email معين ma qed jgħandu għalik u tixtieq resettawlo għall-stato **default** tiegħu.
+Drabi oħra, tinduna li l-bidliet li għamilt f’mudell ta’ email partikolari m’għadhomx jaħdmulek u tkun trid tirrisettjah għall-**istat predefinit** tiegħu.
 
-F'mod kif hu, għandek żgħar opzjonijiet: tista' sempliament tal-delete tal-system email u import tiegħu lura (bxejnu l-istruzzjonijiet fejn qed). Dan se jgħleb metrics ta l-ċekk u dikki hija l-metodu meno preferut.
+F’każijiet bħal dawn, għandek żewġ għażliet: tista’ sempliċement tħassar l-email tas-sistema u timportaha lura (billi tuża l-istruzzjonijiet ta’ hawn fuq) - dan iħassar il-metriċi tat-trażmissjoni u affarijiet oħra, u għalhekk jagħmel dan il-metodu l-inqas preferut.
 
-Oppurt, puoi uża il **Reset & Import tool** biex tista' resettawli dan template tal-email.
+Jew tista’ tuża l-**għodda Irrisettja u Importa** biex tirrisettja dak il-mudell tal-email.
 
-Biex tista' resettawli template tal-email, puoi segwi l-istruzzjonijiet fejn qed għandek toħrajt l-Reset & Import tool, u poi toggli l-opzjoni **Reset** u selezżjoni l-emails li tista' resettawli għall-kontenut default tiegħhom.
+Biex tirrisettja mudell tal-email, tista’ ssegwi l-passi ta’ hawn fuq sakemm tasal għall-għodda Irrisettja u Importa, u mbagħad, tattiva l-għażla **Irrisettja** u tagħżel l-emails li trid tirrisettja lura għall-kontenut predefinit tagħhom.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Screenshot mhux disponibbli: modal Irrisettja u Importa bl-għażliet Irrisettja Emails estiżi -->

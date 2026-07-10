@@ -1,0 +1,111 @@
+---
+title: Girêdera AI ya herî baş ji bo xalên dawî yên hevaheng
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector ji bo Xalên Dawî yên Hevgirtî {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector ji bo Xalên Dawî yên Hevgirtî API-yên pêşkêşkarên AI yên bi OpenAI re hevgirtî bi tora multisite ya WordPress ya te re yek dike. Çend pêşkêşkarên AI mîheng bike — her yek bi URL-a xala dawî, API key, û modela xwerû ya xwe — û daxwazan bi vegera xweber rêve bibe dema ku pêşkêşkarek berdest nebe.
+
+## Taybetmendiyên Sereke {#key-features}
+
+- **Piştgiriya çend-pêşkêşkaran**: Çend kartên pêşkêşkarên AI lê zêde bike, her yek bi URL-a xala dawî, API key, û modela xwerû ya xwe
+- **Bi kişandinê ji nû ve rêz bike**: Pêşkêşkaran li gorî pêşînîtiyê bi destika girtinê ya li ser her kartê rêz bike; daxwaz pêşkêşkaran bi rêzê bi kar tînin
+- **Rêvebirina vegera xweber**: Ger pêşkêşkara sereke berdest nebe, daxwaz xweber vedigerin pêşkêşkara mîhengkirî ya din
+- **Mîhengkirina li gorî pêşkêşkarê**: Her pêşkêşkar bi nasname û hilbijartina modela xwe serbixwe tê mîhengkirin
+- **UI-ya mîhengan a li ser bingeha kartan**: Li ser pêkhateyên Card ên stabîl ên WordPress 6.9+ hatiye avakirin (CardBody, CardHeader, CardDivider)
+- **Vebûna xweber dema lêzêdekirinê**: Kartên nû yên pêşkêşkaran xweber vedibin da ku tu bikaribî hûrguliyan tavilê tije bikî
+- **Şikandina cache-a scriptan**: Scriptên pêşkêşkaran di nûkirina plugin de cache-busted dibin da ku barkirina guhertoya herî dawî misoger bibe
+
+## Pêdivî {#requirements}
+
+- WordPress 5.3 an jor
+- PHP 7.4 an jor
+- Ultimate Multisite plugin (çalak)
+- Xala dawî ya API ya bi OpenAI re hevgirtî (li ser xwe mêvandar kirî an ji aliyê sêyemîn)
+
+## Sazkirin {#installation}
+
+1. Pelên addonê bar bike nav pelrêça `/wp-content/plugins/` ya xwe
+2. pluginê bi menuya 'Plugins' di WordPress de çalak bike
+3. Biçe **Ultimate Multisite → AI Connector** da ku addonê mîheng bikî
+
+## Mîhengkirin {#configuration}
+
+### Sazkirina Çend-Pêşkêşkaran {#multi-provider-setup}
+
+Dîmendera mîhengkirinê şêwaza li ser bingeha kartan bi kar tîne, ku her kart yek pêşkêşkarek AI nîşan dide. Tu dikarî bi qasî pêdiviya xwe pêşkêşkaran lê zêde bikî.
+
+#### Lêzêdekirina Pêşkêşkarekî {#adding-a-provider}
+
+1. Di rêveberiya torê de biçe **Ultimate Multisite → AI Connector**
+2. Li **Add Provider** bitikîne
+3. Karta pêşkêşkarekî ya nû xuya dibe û xweber vedibe
+4. Hûrguliyên pêşkêşkarê tije bike:
+   - **Navê Pêşkêşkarê** — etîketek ji bo naskirina vê pêşkêşkarê (mînak "OpenAI", "Mistral", "Local Ollama")
+   - **URL-a Xala Dawî** — URL-a bingehîn a API-ya bi OpenAI re hevgirtî (mînak `https://api.openai.com/v1`)
+   - **API Key** — API key ya te ji bo vê pêşkêşkarê
+   - **Modela Xwerû** — nasnameya modelê ya ku bi xwerû ji bo vê pêşkêşkarê were bikaranîn (mînak `gpt-4o`, `mistral-small`)
+5. Li **Save Settings** bitikîne
+
+#### Rakirina Pêşkêşkarekî {#removing-a-provider}
+
+Li bişkojka **Remove** ya li ser her karta pêşkêşkarê bitikîne da ku wê jê bibî. Mîhengan tomar bike da ku guherîn were sepandin.
+
+#### Ji Nû ve Rêzkirina Pêşkêşkaran {#reordering-providers}
+
+Îkona girtinê (⣿) ya li aliyê çepê yê her karta pêşkêşkarê bikişîne da ku wê ji nû ve rêz bikî. Rêz pêşînîtiya vegerê diyar dike: daxwaz ji pêşkêşkara yekem re tên şandin û ger daxwaz têk biçe vedigerin pêşkêşkarên pişt re.
+
+### Rêvebirina Vegerê {#fallback-routing}
+
+Dema daxwazek ji pêşkêşkara sereke re têk diçe — ji ber demborînê, sînora rêjeyê, an qutbûna xizmetê — connector xweber bi pêşkêşkara din a di lîsteyê de dîsa hewl dide. Ev yek heta dawiya lîsteyê didome heya ku pêşkêşkarek bi ser bikeve an hemû pêşkêşkar hatibin ceribandin.
+
+| Rewş | Reftar |
+|----------|-----------|
+| Pêşkêşkara sereke bersiv dide | Daxwaz bi awayê asayî tê xizmetkirin |
+| Pêşkêşkara sereke têk diçe | Daxwaz bi pêşkêşkara din re dîsa tê ceribandin |
+| Hemû pêşkêşkar têk diçin | Çewtî vedigere bangkerê |
+
+Veger ji plugin an mijara ku bang dike re zelal e — ew bersiveke serketî an çewtiyeke dawî distînin, bêyî ku çend pêşkêşkar hatibin ceribandin.
+
+### Referansa Mîhengkirina Pêşkêşkarê {#provider-configuration-reference}
+
+| Qad | Pêwîst | Danasîn |
+|-------|----------|-------------|
+| Navê Pêşkêşkarê | Erê | Etîketa nîşandanê ji bo vê pêşkêşkarê |
+| URL-a Xala Dawî | Erê | URL-a bingehîn a API-ya bi OpenAI re hevgirtî |
+| API Key | Erê | Mifteya rastandinê ji bo vê pêşkêşkarê |
+| Modela Xwerû | Erê | Nasnameya modelê ku dema di daxwazê de model nehatibe diyarkirin tê bikaranîn |
+
+## Çareserkirina Pirsgirêkan {#troubleshooting}
+
+### Tu pêşkêşkar nayên lîstekirin {#no-providers-are-listed}
+
+Ger piştî tomarkirinê lîsteya pêşkêşkaran vala be, piştrast bike ku:
+
+- Te piştî lêzêdekirina pêşkêşkaran li **Save Settings** tikandiye
+- Geroka te rûpela mîhengan ji tomarkirinê asteng nekiriye (ji bo çewtiyên JavaScript konsola gerokê kontrol bike)
+- plugin çalak e û tu li dîmendera rêveberiya torê yî
+
+### Daxwaz ji bo hemû pêşkêşkaran têk diçin {#requests-are-failing-for-all-providers}
+
+- Piştrast bike ku URL-a xala dawî ya her pêşkêşkarê ji servera te ve tê gihîştin (ne tenê ji geroka te)
+- Kontrol bike ku her API key derbasdar e û demê wê derbas nebûye
+- Rewşa sînora rêjeyê û quota ya pêşkêşkarê di dashboard-a wan de binirxîne
+- Tomarkirina debug ya WordPress (`WP_DEBUG_LOG`) çalak bike da ku peyamên çewtiyê yên hûrgulî ji connector bigire
+
+### Pêşkêşkarek ji bo vegerê nayê bikaranîn {#a-provider-is-not-being-used-for-fallback}
+
+Bi kişandinê ji nû ve rêzkirin rêza vegerê diguherîne. Piştrast bike ku pêşkêşkara ku tu hêvî dikî daxwazên vegerê bistîne di lîsteyê de li cihê rast e û URL-a xala dawî û API key ya wê rast in.
+
+### Karta pêşkêşkara nû xweber venabe {#new-provider-card-does-not-expand-automatically}
+
+Vebûna xweber pêwîst dike ku JavaScript di geroka te de çalak be. Ger kart bi tikandinê venabe, ji bo çewtiyan konsola gerokê kontrol bike. Naveroka kartê her dem bi tikandina sernivîsa kartê tê gihîştin, heta ku vebûna xweber çalak nebe jî.
+
+## Tomara Guherînan {#changelog}
+
+Ji bo dîroka tevahî ya guhertoyan [Tomara Guherînan](./changelog) bibîne.

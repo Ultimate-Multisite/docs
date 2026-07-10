@@ -3,18 +3,18 @@ title: Cloudways ինտեգրում
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration
+# Cloudways Integration {#cloudways-integration}
 
-## Overview
+## Overview {#overview}
 Cloudways એ મેનેજ્ડ ક્લાઉડ હોસ્ટિંગ પ્લેટફોર્મ છે જે તમને DigitalOcean, AWS, Google Cloud અને અન્ય વિવિધ ક્લાઉડ પ્રદાતાઓ પર WordPress સાઇટ્સ ડિપ્લોય કરવાની મંજૂરી આપે છે. આ એકીકરણ Ultimate Multisite અને Cloudways વચ્ચે ઓટોમેટિક ડોમેન સિંક અને SSL સર્ટિફિકેટ મેનેજમેન્ટને સક્ષમ કરે છે.
 
-## Features
+## Features {#features}
 - ઓટોમેટિક ડોમેન સિંકિંગ
 - SSL સર્ટિફિકેટ મેનેજમેન્ટ
 - વધારાના ડોમેન્સ માટે સપોર્ટ
 - SSL સર્ટિફિકેટ્સ માટે DNS વેરિફિકેશન
 
-## Requirements
+## Requirements {#requirements}
 તમારા `wp-config.php` ફાઇલમાં નીચેના કોન્સ્ટન્ટ્સ વ્યાખ્યાયિત કરવા આવશ્યક છે:
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. તમારા Cloudways API ક્રેડેન્શિયલ્સ મેળવો
+### 1. તમારા Cloudways API ક્રેડેન્શિયલ્સ મેળવો {#1-get-your-cloudways-api-credentials}
 
 1. તમારા Cloudways ડેશબોર્ડમાં લોગ ઇન કરો
 2. "Account" > "API Keys" પર જાઓ
 3. જો તમારી પાસે પહેલેથી જ API key ન હોય તો એક API key બનાવો
 4. તમારું ઈમેલ અને API key કોપી કરો
 
-### 2. તમારા સર્વર અને એપ્લિકેશન ID મેળવો
+### 2. તમારા સર્વર અને એપ્લિકેશન ID મેળવો {#2-get-your-server-and-application-ids}
 
 1. તમારા Cloudways ડેશબોર્ડમાં, "Servers" પર જાઓ
 2. તે સર્વર પસંદ કરો જ્યાં તમારો WordPress multisite હોસ્ટ છે
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. "Applications" પર જાઓ અને તમારી WordPress એપ્લિકેશન પસંદ કરો
 5. App ID URL માં દેખાય છે: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. wp-config.php માં કોન્સ્ટન્ટ્સ ઉમેરો
+### 3. wp-config.php માં કોન્સ્ટન્ટ્સ ઉમેરો {#3-add-constants-to-wp-configphp}
 
 નીચે આપેલા કોન્સ્ટન્ટ્સ તમારી `wp-config.php` ફાઇલમાં ઉમેરો:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 `WU_CLOUDWAYS_EXTRA_DOMAINS`'e `*.your-network.com` (veya kendi ağınızın herhangi bir alt alan adı deseni) eklemeyin. Neden bu durum her kiracı için ayrı SSL sertifikalarının verilmesini engellediğini aşağıda [Önemli — joker karakter SSL tuzağı](#important--wildcard-ssl-pitfall) inceleyin.
 :::
 
-### 4. Entegrasyonu Etkinleştirme
+### 4. Entegrasyonu Etkinleştirme {#4-enable-the-integration}
 
 1. WordPress yönetim panelinizde Ultimate Multisite > Ayarlar'a gidin
 2. "Domain Mapping" (Alan Adı Eşleştirmesi) sekmesine gidin
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Cloudways entegrasyonunu etkinleştirin
 5. "Save Changes" (Değişiklikleri Kaydet) butonuna tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Alan Adı Senkronizasyonu (Domain Syncing)
+### Alan Adı Senkronizasyonu (Domain Syncing) {#domain-syncing}
 
 Ultimate Multisite'ta bir alan adı eşleştirildiğinde:
 
@@ -89,7 +89,7 @@ Ultimate Multisite'ta bir alan adı eşleştirildiğinde:
 
 Not: Cloudways API, her seferinde sadece tek bir alanı eklemek veya kaldırmak yerine tüm alan adlarının tam listesini göndermeyi gerektirir.
 
-### SSL Sertifikası Yönetimi (SSL Certificate Management)
+### SSL Sertifikası Yönetimi (SSL Certificate Management) {#ssl-certificate-management}
 
 Alan adları senkronize edildikten sonra:
 
@@ -99,7 +99,7 @@ Alan adları senkronize edildikten sonra:
 
 Ինտեգրումը միշտ խնդրում է **ստանդարտ** (ոչ վայլդքարդ) Let's Encrypt վկայականներ Cloudways-ից։ Եթե `WU_CLOUDWAYS_EXTRA_DOMAINS`-ում տրամադրվում է վայլդքարդ ձևանշան, ապա SSL հարցման համար առաջատար `*.` մասը մաքրվում է՝ վայլդքարդը երբեք չի տեղադրվում այս ინտեգրացիայով։ Cloudways-ում վայլդքարդ վկայական օգտագործելու համար դու պետք է այն տեղադրես ձեռքով, բայց դա արելը արգելում է կապված յուրաքանչյուր โดменի Let's Encrypt-ի թողարկումը՝ քարտեզագրված ստեղծած โดเมինների համար (տես ներքևի խնդիրը)։
 
-## Հրավերային Դոմեններ (Extra Domains)
+## Հրավերային Դոմեններ (Extra Domains) {#extra-domains}
 
 `WU_CLOUDWAYS_EXTRA_DOMAINS` հաստատունը թույլ է տալիս սահմանել լրացուցիչ **արտաքին** դոմեններ, որոնք միշտ պետք է պահվեն Cloudways-ի կիրառության ալիազների (aliases) ցուցակում։ Օգտագործեք այն հետևյալ համար.
 
@@ -108,13 +108,13 @@ Alan adları senkronize edildikten sonra:
 
 **Չօգտագործեք** այս հաստատունը ձեր սեփական ցանցի ենթադոմենի վայլդքարդը (օրինակ՝ `*.your-network.com`)։ Տես վայլդքարդ SSL-ի խնդիրը ներքևում։
 
-## Կարևոր է. Վայլդքարդ SSL-ի Խնդիր
+## Կարևոր է. Վայլդքարդ SSL-ի Խնդիր {#important--wildcard-ssl-pitfall}
 
 Cloudways-ի ստանդարտ կարգավորումներին հետևելիս հաճախ կատարվող սխալը `WU_CLOUDWAYS_EXTRA_DOMAINS`-ում վայլդքարդ տեսակի ինչ-որ բան ավելացնելն է, կամ այդ վայլդքարդի համար Cloudways-ի կողմից ձեռքով SSL վկայական տեղադրելը։
 
 **Եթե դուք սա անեք, Cloudways-ը մերձավոր Ultimate Multisite-ի կողմից քարտեզագրված โดเมինների համար Let's Encrypt վկայականներ թողարկելուց հրաժարվի։** Cloudways-ը կիրառության վրա գործող SSL վկայականը ամեն անգամ փոխում է, և կիրառության վրա առկա նախապես տեղադրված վայլդքարդ վկայականը արգելում է այն յուրաքանչյուր โดเมինի Let's Encrypt-ի թողարկումը, որին հենվում է մեր ინտեգրացիան։
 
-### Առաջարկվող Cloudways SSL կարգավորում Ultimate Multisite ցանցի համար
+### Առաջարկվող Cloudways SSL կարգավորում Ultimate Multisite ցանցի համար {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Cloudways-ի **SSL Certificate** տաբում, տեղադրեք ստանդարտ Let's Encrypt վկայագիր՝ ընդգրկելով միայն `your-network.com` և `www.your-network.com`-ը (ոչ կլսիք).
 2. Չដាក់եք `*.your-network.com` (կամ ձեր δικτύոյի ցանկացած ենթադիր դոմենի օրինակ) `WU_CLOUDWAYS_EXTRA_DOMAINS`-ում։ Այդ հաստատուն արժեքը պահեք միայն **արտաքին** (external) դոմենների համար։
@@ -122,21 +122,21 @@ Cloudways-ի ստանդարտ կարգավորումներին հետևելիս 
 
 Եթե ձեր սեփականատերերի հատուկ դոմենները չունեն SSL, ստուգեք Cloudways-ի SSL տաբը։ Եթե այնտեղ ակտիվ է կլսիք վկայագիր, հեռացրեք այն, նորից տրամադրեք ստանդարտ Let's Encrypt վկայագիր միայն հիմնական դոմենի համար և հեռացրեք `WU_CLOUDWAYS_EXTRA_DOMAINS`-ում ցանկացած կլսիք մուտքեր։ Այնուհետև նորից գործարկեք դոմենային քարտեզագրում (կամ սպասեք հաջորդին), և ինտեգրացիան նորից սկսի տալով վկայագրեր յուրաքանչյուր դոմենի համար։
 
-## Խնդիրների լուծում (Troubleshooting)
+## Խնդիրների լուծում (Troubleshooting) {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - Ստուգեք, որ ձեր էլ․ փոստը և API key-ը ճիշտ են։
 - Ստուգեք, որ ձեր սերվերը և application ID-ն ճիշտ են։
 - Համոզվեք, որ Cloudways-ի հաշվին անհրաժեշտ թույլտվությունները կան։
 
-### SSL Գործողությունների խնդիրներ
+### SSL Գործողությունների խնդիրներ {#ssl-certificate-issues}
 
 - Cloudways-ը պահանջում է, որ SSL վկայագրեր տրամադրելուց առաջ Դոմեինները (domains) වල DNS գրանցումները լինեն վավեր և ուղղված լինեն ձեր սերվերի։
 - Ինտեգրացիան SSL վկայագրեր ඉල්ලելուց առաջ DNS գրանցումները ստուգում է։
 - Եթե SSL վկայագրեր չեն տրամադրվում, ստուգեք, որ ձեր դոմեինները ճիշտ ուղղված են ձեր սերվերի IP հասցեին։
 - **Մեկ օգտատիրոջ համար սահմանված կոնստյունային (custom) դոմեիններ չեն տրամադրվում SSL-ով?** Ստուգեք Cloudways-ի այսպիսի բաժնումը՝ SSL Certificate tab։ Եթե ակտիվ է վայլդքային վկայագիր (wildcard certificate) (որը ձեռքով տեղադրված է կամ ընդգրկում է `*.your-network.com`), Cloudways-ը չի տրամադրի Let's Encrypt վկայագրեր անհատականորեն քարտեզագրված կոնստյունային դոմեինների համար։ Փոխարինեք այն ստանդարտ Let's Encrypt վկայագրով, որը ընդգրկում է միայն հիմնական ցանցի դոմեինները (`your-network.com`, `www.your-network.com`) և հեռացրեք `WU_CLOUDWAYS_EXTRA_DOMAINS`-ից բոլոր վայլդքային մուտքերը։ Այնուհետև նորից սկսեք դոմեինների քարտեզագրումը (կամ սպասեք հաջորդի) և ինտեգրացիան կիշի վերջնական վկայագրերը։
 
-### Դոմեին չի ավելացվել
+### Դոմեին չի ավելացվել {#domain-not-added}
 
 - Ստուգեք Ultimate Multisite-ի logs-ում (գրանցամատյանում) որևէ սխալի հաղորդագրություն։
 - Հաստատեք, որ դոմեինը արդեն Cloudways-ում չի ավելացված։

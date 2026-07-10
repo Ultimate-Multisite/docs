@@ -3,7 +3,7 @@ title: Kuyenda kwa PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Kufunga Gateway ya PayPal (v2)
+# Kufunga Gateway ya PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**KUFUNDI MUWULANA: Hii habari inahusu Ultimate Multisite version 2.x.**_
 
@@ -13,13 +13,13 @@ Kama vile Stripe, PayPal hutumika sana kwa malipo mtandaoni, hasa kwenye tovuti 
 
 Kumbuka kwamba unahitaji kuwa na **PayPal Business account** ili kupata API credential inayohitajika kwa ushirikishwaji huu.
 
-## Kuwasha PayPal kwenye mtandao wako
+## Kuwasha PayPal kwenye mtandao wako {#enabling-paypal-on-your-network}
 
 Ili kuwasha PayPal kama njia ya malipo inayopatikana kwenye mtandao wako, nenda kwenye **Ultimate Multisite > Settings > Payments** tab na chagua (tick) sanduku linaloambatana na PayPal.
 
 ![Kuwasha PayPal katika gateways za malipo zinazofanya kazi](/img/config/settings-payment-gateways.png)
 
-## Kutumia guided setup wizard
+## Kutumia guided setup wizard {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 inaleta guided PayPal setup wizard kwenye mipangilio ya gateway ya malipo. Baada ya kuwasha PayPal, tumia wizard kwenye **Ultimate Multisite > Settings > Payments** kuchagua jinsi unavyotaka kuunganisha gateway na kuthibitisha ni vipi credentials bado zinahitajika kabla ya kuhifadhi.
 
@@ -30,7 +30,7 @@ Wizard inasaidia njia mbili za setup:
 
 Ikiwa haoni chaguo la OAuth kwenye mwandishi wa mwongozo, kumaliza utaratibu wa kuingia kwa sifa (manual credential entry) hapa chini. Gateway inafanya kazi na credentials sawa za PayPal Business API kama matoleo ya awali ya Ultimate Multisite 2.x.
 
-## Kupata credentials za PayPal API
+## Kupata credentials za PayPal API {#getting-the-paypal-api-credentials}
 
 Baada ya kuwasha PayPal kama gateway ya malipo, utahitaji kujaza sehemu za **Username** ya PayPal API , **Password** ya PayPal API na **Signature** ya PayPal API.
 

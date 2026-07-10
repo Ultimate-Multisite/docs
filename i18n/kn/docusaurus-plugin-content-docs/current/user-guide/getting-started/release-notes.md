@@ -1,82 +1,96 @@
 ---
 title: ಬಿಡುಗಡೆ ಟಿಪ್ಪಣಿಗಳು
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ಬಿಡುಗಡೆ ಟಿಪ್ಪಣಿಗಳು
+# ಬಿಡುಗಡೆ ಟಿಪ್ಪಣಿಗಳು {#release-notes}
 
-## Version 2.12.0 — 2026-05-15 ರಂದು ಬಿಡುಗಡೆಯಾಗಿದೆ
+## ಆವೃತ್ತಿ 2.13.0 — 2026-06-05 ರಂದು ಬಿಡುಗಡೆ {#version-2130--released-on-2026-06-05}
 
-- ಹೊಸದು: ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್ ಇಂಟಿಗ್ರೇಷನ್‌ನೊಂದಿಗೆ ಬೆಂಬಲಿತ хоಸ್ಟಿಂಗ್ ಪровайಡರ್ ಆಗಿ Hostinger (hPanel) ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಹೊಸದು: ನೆಟ್‌ವರ್ಕ್-ವ್ಯಾಪಿಂಗ್ ಸೈಟ್ ಮರುಸ್ಥಾಪನೆಗಾಗಿ (site restoration) ಸುಗಮಗೊಳಿಸಲು Site Exporter ಈಗ ನೆಟ್‌ವರ್ಕ್ ಇಂಪೋರ್ಟ್ ಬಂಡಲ್‌ಗಳನ್ನು (network import bundles) ನಿರ್ವಹಿಸುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: BCC ಬ್ರಾಡ್‌ಕಾಸ್ಟ್ ಇಮೇಲ್‌ಗಳು ಈಗ ಸ್ವೀಕರಿಸುವವರ ವಿಳಾಸಗಳನ್ನು ಬಹಿರಂಗಪಡಿಸುವುದನ್ನು ತಡೆಯಲು undisclosed-recipients ಹೆಡರ್ ಅನ್ನು ಬಳಸುತ್ತವೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: non-date ಮೌಲ್ಯದೊಂದಿಗೆ ಉಳಿಸುವಾಗ ಸದಸ್ಯತ್ವದ ಅವಧಿ ದಿನಾಂಕದ ರೂಪದಲ್ಲಿ ಹಾಳಾಗುವುದಿಲ್ಲ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Stripe ಸದಸ್ಯತ್ವದ ಅಪ್‌ಡೇಟ್‌ಗಳು ಈಗ deprecated deleteDiscount API ಅನ್ನು ಕರೆಯದೆ ರಿಯಾಯಿತಿಗಳನ್ನು (discounts) ಸರಿಯಾಗಿ ತೆರವುಗೊಳಿಸುತ್ತವೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಡೊಮೇನ್-ಮ್ಯಾಪಿಂಗ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳ ಮೇಲೆ SSO ರಿಡೈರೆಕ್ಟ್‌ಗಳನ್ನು ಈಗ ಅನಂತ ರಿಡೈರೆಕ್ಟ್ ಲೂಪ್‌ಗಳನ್ನು ತಡೆಯಲು ಮಿತಿಗೊಳಿಸಲಾಗಿದೆ (capped).
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸೆಟಪ್ ವಿಸ್ಜರ್ಡ್ ಇಮೇಜ್ ಪಿಕರ್ ಆಯ್ಕೆಯು ಈಗ ಅಡಗಿರುವ ಡೇಟಾ ಮಾಡೆಲ್ ಅನ್ನು ಸರಿಯಾಗಿ ಅಪ್‌ಡೇಟ್ ಮಾಡುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Site Exporter CLI ಈಗ ಸರಿಯಾದ ಡೀಫಾಲ್ಟ್ ನೆಟ್‌ವರ್ಕ್ ಸೈಟ್ ಆಯ್ಕೆಯನ್ನು ಉಳಿಸುತ್ತದೆ.
-- ಸುಧಾರಿಸಲಾಗಿದೆ: ಪ್ಲಗ್ಇನ್ ಪ್ಯಾಕೇಜ್‌ನಿಂದ ಬಂಡಲ್ ಮಾಡಿದ wp-cli ಅನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ, ಇದರಿಂದ ಪ್ಲಗ್ಇನ್ ಗಾತ್ರ ಕಡಿಮೆಯಾಗಿದೆ.
+- ಹೊಸದು: ಗ್ರಾಹಕರ Account, checkout, billing, ಸೈಟ್, invoice, template ಬದಲಾವಣೆ, ಮತ್ತು domain mapping ಹರಿವುಗಳಿಗೆ sovereign-tenant ಬೆಂಬಲ ಸೇರಿಸಲಾಗಿದೆ. ಇದರಿಂದ tenant networks ನಿರ್ವಹಿತ ಕ್ರಿಯೆಗಳಿಗೆ ಗ್ರಾಹಕರನ್ನು ಮುಖ್ಯ ಸೈಟ್‌ಗೆ ಮರಳಿ ಕಳುಹಿಸಬಹುದು.
+- ಹೊಸದು: recurring memberships ಗಾಗಿ renewal-credential ಪರಿಶೀಲನೆಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಉಳಿಸಿದ billing agreement, subscription, ಅಥವಾ vault token ಇಲ್ಲದಿದ್ದಾಗ gateways auto-renewal ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬಹುದು.
+- ಹೊಸದು: background jobs ವಿಳಂಬವಾಗುವ hosts ನಲ್ಲಿ checkout-to-site provisioning ಹೆಚ್ಚು ವಿಶ್ವಾಸಾರ್ಹವಾಗಲು pending site creation ಗಾಗಿ HMAC-verified loopback publishing ಸೇರಿಸಲಾಗಿದೆ.
+- ಹೊಸದು: SSO URLs, checkout-form base domains, ಮತ್ತು automatic domain-record creation ಗಾಗಿ developer extension points ಸೇರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: mapped domains, anonymous broker visits, logout, ಮತ್ತು cross-plugin dependency conflicts ನಲ್ಲಿ SSO ಈಗ ಹೆಚ್ಚು ವಿಶ್ವಾಸಾರ್ಹವಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Pending site creation ಈಗ stale publish flags ನಿಂದ ಚೇತರಿಸಿಕೊಂಡು ಗ್ರಾಹಕರು site-creation screen ನಲ್ಲಿ ಸಿಲುಕಿಕೊಳ್ಳದಂತೆ ಮಾಡುತ್ತದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: shared checkout-form base domains ಗಾಗಿ domain records ಇನ್ನು ರಚಿಸಲಾಗುವುದಿಲ್ಲ, ಮತ್ತು ಯಾವುದೇ integration ಸಕ್ರಿಯವಾಗಿಲ್ಲದಿದ್ದಾಗ ಬಳಸದೇ ಇರುವ host-provider background jobs ಬಿಟ್ಟುಹೋಗುತ್ತವೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Checkout, billing address, password reset, email verification, template switching, tours, ಮತ್ತು customer Dashboard edge cases ಈಗ ಸಾಮಾನ್ಯ ಗ್ರಾಹಕ ಹರಿವುಗಳನ್ನು ತಡೆಯುವುದಿಲ್ಲ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: recipient lists ಅಥವಾ mail transports ವಿಫಲವಾದಾಗ SMTP/plugin fatal errors ತಪ್ಪಿಸುವುದರ ಜೊತೆಗೆ broadcast emails ಈಗ ಸ್ವೀಕರಿಸುವವರನ್ನು ಖಾಸಗಿಯಾಗಿಡುತ್ತವೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Membership renewals, expiration display, ಮತ್ತು payment collection edge cases ಈಗ ತಕ್ಷಣದ expirations, crashes, ಅಥವಾ ಅಗತ್ಯ ಪಾವತಿಗಳು ತಪ್ಪಿಹೋಗುವುದನ್ನು ತಡೆಯುತ್ತವೆ.
+- ಸುಧಾರಿಸಲಾಗಿದೆ: WordPress ಹೊಂದಾಣಿಕೆಯನ್ನು 7.0 ವರೆಗೆ ಪರೀಕ್ಷಿಸಲಾಗಿದೆ, production Vue assets ಅನ್ನು npm sources ನಿಂದ ಮರುನಿರ್ಮಿಸಲಾಗಿದೆ, ಮತ್ತು Cypress end-to-end coverage ಈಗ ಹೆಚ್ಚು checkout, setup, SSO, ಮತ್ತು gateway ಹರಿವುಗಳನ್ನು ಪರೀಕ್ಷಿಸುತ್ತದೆ.
 
-## Version 2.11.0 — 2026-05-11 ರಂದು ಬಿಡುಗಡೆಯಾಗಿದೆ
+## ಆವೃತ್ತಿ 2.12.0 — 2026-05-15 ರಂದು ಬಿಡುಗಡೆ {#version-2120--released-on-2026-05-15}
 
-- ಹೊಸದು: Site exports ಈಗ ಸ್ವಯಂ-ಬೂಟಿಂಗ್ `index.php` ಅನ್ನು ಬಂಡಲ್ ಮಾಡುತ್ತವೆ, ಇದರಿಂದ ZIP ಅನ್ನು ಪ್ರತ್ಯೇಕ ಪ್ಲಗ್ಇನ್ ಇನ್‌ಸ್ಟಾಲ್ ಇಲ್ಲದೆ ಹೊಸ хоಸ್ಟ್‌ಗೆ ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಬಹುದು.
-- ಹೊಸದು: ನೆಟ್‌ವರ್ಕ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಅನ್ನು ಆಡಳಿತಗಾರರು Site Export ಆಡಳಿತ ಪುಟದಿಂದ ಎಲ್ಲಾ ಸಬ್‌ಸೈಟ್‌ಗಳನ್ನು ಒಂದೇ ಆರ್ಕೈವ್‌ನಲ್ಲಿ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ.
-- ಹೊಸದು: Site Templates plan toggle ಅನ್ನು ಈಗ ಫಾಲ್ಬ್ಯಾಕ್ 체ನ್ ಮೂಲಕ ಜಾರಿಗೊಳಿಸಲಾಗುತ್ತದೆ, ಇದರಿಂದ plan ಮಿತಿಗಳಿಗೆ ತಕ್ಕಂತೆ ಟೆಂಪ್ಲೇಟ್ ಲಭ್ಯತೆಯನ್ನು ಸರಿಯಾಗಿ ನಿರ್ಬಂಧಿಸಲಾಗುತ್ತದೆ.
-- ಹೊಸದು: Checkout ಫಾರ್ಮ್ ಎಡಿಟರ್, ಅಗತ್ಯ ಫೀಲ್ಡ್ ಅನ್ನು ಕಾನ್ಫಿಗರ್ ಮಾಡದೆ ಉತ್ಪನ್ನವನ್ನು ಸೇರಿಸಿದಾಗ ಎಚ್ಚರಿಕೆ ನೀಡುತ್ತದೆ.
-- ಹೊಸದು: Import/Export ಸೆಟ್ಟಿಂಗ್ಸ್ ಟ್ಯಾಬ್ ಈಗ ಅದರ ವ್ಯಾಪ್ತಿಯನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ವಿವರಿಸುತ್ತದೆ ಮತ್ತು ನೇರವಾಗಿ Site Export ಟೂಲ್‌ಗೆ ಲಿಂಕ್ ಮಾಡುತ್ತದೆ.
+- ಹೊಸದು: domain mapping integration ಜೊತೆಗೆ ಬೆಂಬಲಿತ host provider ಆಗಿ Hostinger (hPanel) ಸೇರಿಸಲಾಗಿದೆ
+- ಹೊಸದು: Site Exporter ಈಗ ಸುಗಮ network-wide site restoration ಗಾಗಿ network import bundles ಅನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸ್ವೀಕರಿಸುವವರ ವಿಳಾಸಗಳು ಬಹಿರಂಗವಾಗದಂತೆ BCC broadcast emails ಈಗ undisclosed-recipients header ಬಳಸುತ್ತವೆ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: date ಅಲ್ಲದ ಮೌಲ್ಯದಿಂದ ಉಳಿಸುವಾಗ membership expiration date ಇನ್ನು ಹಾಳಾಗುವುದಿಲ್ಲ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Stripe membership updates ಈಗ deprecated deleteDiscount API ಅನ್ನು ಕರೆಯದೆ discounts ಅನ್ನು ಸರಿಯಾಗಿ clear ಮಾಡುತ್ತವೆ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: domain-mapped sites ನಲ್ಲಿ SSO redirects ಈಗ infinite redirect loops ತಡೆಯಲು ಮಿತಿಗೊಳಿಸಲಾಗಿದೆ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Setup wizard image picker ಆಯ್ಕೆ ಈಗ underlying data model ಅನ್ನು ಸರಿಯಾಗಿ ನವೀಕರಿಸುತ್ತದೆ
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Site Exporter CLI ಈಗ ಸರಿಯಾದ default network site selection ಅನ್ನು ಉಳಿಸುತ್ತದೆ
+- ಸುಧಾರಿಸಲಾಗಿದೆ: plugin package ನಿಂದ bundled wp-cli ತೆಗೆದುಹಾಕಲಾಗಿದೆ, ಇದರಿಂದ plugin ಗಾತ್ರ ಕಡಿಮೆಯಾಗಿದೆ
 
-## Version 2.10.0 — 2026-05-05 ರಂದು ಬಿಡುಗಡೆಯಾಗಿದೆ
+## ಆವೃತ್ತಿ 2.11.0 — 2026-05-11 ರಂದು ಬಿಡುಗಡೆ {#version-2110--released-on-2026-05-11}
 
-- ಹೊಸದು: OAuth ಫ್ಲ್ಯಾಗ್ 게ಟ್‌ಗಾಗಿ manual credential entry ಯೊಂದಿಗೆ PayPal ಮಾರ್ಗದರ್ಶಿ ಸೆಟಪ್ ವಿಸ್ಜರ್ಡ್ ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ, ಇದರಿಂದ ಸುಗಮ ಗೇಟ್‌ವೇ ಕಾನ್ಫಿಗರೇಶನ್ ಸಾಧ್ಯವಾಗುತ್ತದೆ.
-- ಹೊಸದು: Template switch ಗ್ರಾಹಕರ ಪ್ಯಾನೆಲ್ ಅನ್ನು current-template ಕಾರ್ಡ್, ಪರ್ಸಿಸ್ಟೆಂಟ್ ಗ್ರಿಡ್ ಮತ್ತು **Reset current template** ಬಟನ್‌ನೊಂದಿಗೆ ಮರು ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Template ಬದಲಾಯಿಸುವಿಕೆಯು AJAX ವಿಫಲತೆಯಾದಾಗ UI ಅನ್ನು ಸ್ಥಗಿತಗೊಳಿಸುವುದಿಲ್ಲ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Template ಬದಲಾಯಿಸುವಿಕೆಯ ಅನುಮತಿ ಸ್ಥಿತಿಗಳನ್ನು ಅನಧಿಕೃತ ಪ್ರವೇಶದಿಂದ ರಕ್ಷಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Site override ಇನ್‌ಪುಟ್‌ಗಳನ್ನು ಉಳಿಸುವ ಮೊದಲು ವ್ಯಾಲಿডেট ಮಾಡಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ವಿಳಾಸ ಖಾಲಿ ಇದ್ದಾಗ ಬಿಲ್ಲಿಂಗ್ ವಿಳಾಸ ಪ್ರಾಂಪ್ಟ್ ಈಗ ತೋರಿಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: PHP 8.1 null-to-string deprecation notices ಅನ್ನು ಪರಿಹರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Currents ಅನ್ನು init hook ನ ಮೊದಲು lazy-load ಮಾಡಲಾಗಿದೆ, ಇದರಿಂದ ಸಮಯದ ಸಮಸ್ಯೆಗಳನ್ನು ತಡೆಯಬಹುದು.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಎಲ್ಲಾ ಲಾಗಿನ್ ಫ್ಲೋಗಳಲ್ಲಿ ಫಿಲ್ಟರ್ ಮಾಡಿದ SSO path ಅನ್ನು ಗೌರವಿಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಖಾಲಿ ಸೈಟ್ ಐಡೆಂಟಿಟಿ ಆಯ್ಕೆಗಳನ್ನು ಉಳಿಸುವಾಗ ಉಳಿಸಲಾಗುತ್ತದೆ.
+- ಹೊಸದು: Site exports ಈಗ self-booting `index.php` ಅನ್ನು bundle ಮಾಡುತ್ತವೆ, ಆದ್ದರಿಂದ ZIP ಅನ್ನು ಪ್ರತ್ಯೇಕ plugin install ಇಲ್ಲದೆ fresh host ನಲ್ಲಿ ಸ್ಥಾಪಿಸಬಹುದು.
+- ಹೊಸದು: Network export administrators ಗೆ Site Export admin page ನಿಂದ ಎಲ್ಲಾ subsites ಅನ್ನು ಒಂದೇ archive ನಲ್ಲಿ export ಮಾಡಲು ಅವಕಾಶ ನೀಡುತ್ತದೆ.
+- ಹೊಸದು: Allow Site Templates plan toggle ಈಗ fallback chain ಮೂಲಕ ಜಾರಿಗೆ ಬರುತ್ತದೆ, plan limits ಗಾಗಿ template ಲಭ್ಯತೆಯನ್ನು ಸರಿಯಾಗಿ ನಿರ್ಬಂಧಿಸುತ್ತದೆ.
+- ಹೊಸದು: ಅಗತ್ಯ field configure ಮಾಡದೆ product ಸೇರಿಸಿದಾಗ Checkout form editor ಎಚ್ಚರಿಸುತ್ತದೆ.
+- ಹೊಸದು: Import/Export settings tab ಈಗ ತನ್ನ scope ಅನ್ನು ಸ್ಪಷ್ಟವಾಗಿ ವಿವರಿಸಿ Site Export tool ಗೆ ನೇರವಾಗಿ link ಮಾಡುತ್ತದೆ.
 
-## Version 2.9.0 — 2026-04-30 ರಂದು ಬಿಡುಗಡೆಯಾಗಿದೆ
+## ಆವೃತ್ತಿ 2.10.0 — 2026-05-05 ರಂದು ಬಿಡುಗಡೆ {#version-2100--released-on-2026-05-05}
 
-- ಹೊಸದು: **Tools > Export & Import** ಅಡಿಯಲ್ಲಿ single-site export ಮತ್ತು import ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Export ZIP ಫೈಲ್‌ಗಳನ್ನು ಈಗ ಪ್ರಮಾಣೀಕೃತ ಡೌನ್‌ಲೋಡ್ ಎಂಡ್‌ಪಾಯಿಂಟ್ ಮೂಲಕ ಸರ್ವ್ ಮಾಡಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಬಾಕಿ ಇರುವ export/import ಪ್ರಶ್ನೆಗಳಲ್ಲಿ SQL injection ಅಪಾಯ ಮತ್ತು ಪ್ರಶ್ನೆ ಸಮಸ್ಯೆಗಳನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಆಡಳಿತಗಾರರು ಗ್ರಾಹಕರ ಇಮೇಲ್ ಅನ್ನು ಕೈಯಾರೆ ಪರಿಶೀಲಿಸಿದಾಗ ಬಾಕಿ ಇರುವ ಸೈಟ್ ಪ್ರಕಟವಾಗುವುದಿಲ್ಲ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸದಸ್ಯತ್ವದ ಕೊರತೆಯಾದಾಗ ಬಾಕಿ ಉಳಿದಿರುವ `pending_site` ದಾಖಲೆಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸೆಟ್ಟಿಂಗ್ಸ್ ನ್ಯಾವಿಗೇಷನ್ ಪ್ಯಾಡಿಂಗ್ ಮತ್ತು ಸರ್ಚ್ ಆಂಕರ್ ನ್ಯಾವಿಗೇಷನ್ ಅನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಬಾಕಿ ಇರುವ ಸೈಟ್‌ಗಳನ್ನು ಈಗ 'All Sites' ವೀಕ್ಷಣೆಯಲ್ಲಿ ಮೊದಲ ಸ್ಥಾನದಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪровайಡರ್ (mShots) User-Agent ಹೆಡರ್ ಅನ್ನು 403 ದೋಷಗಳನ್ನು ತಡೆಯಲು ಸೇರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Import cron ವೇಳಾಪಟ್ಟಿ ವೃತ್ತಾಕಾರದ ಅವಲಂಬನೆ (circular dependency) ಅನ್ನು ಪರಿಹರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಬಳಕೆದಾರ ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಕೀಗಳಲ್ಲಿ Tour ID ಗಳನ್ನು ಅಂಡರ್‌ಸ್ಕೋರ್‌ಗಳಿಗೆ ಸಾಮಾನ್ಯೀಕರಿಸಲಾಗಿದೆ (normalised).
-- ಸುಧಾರಿಸಲಾಗಿದೆ: ಉತ್ತಮ compatibility ಗಾಗಿ Alchemy/Zippy ಬದಲಿಗೆ ZipArchive ಅನ್ನು ಬಳಸಲಾಗಿದೆ.
+- ಹೊಸದು: seamless gateway configuration ಗಾಗಿ OAuth flag gate ಜೊತೆಗೆ manual credential entry ಗಾಗಿ PayPal guided setup wizard.
+- ಹೊಸದು: Template switch customer panel ಅನ್ನು current-template card, persistent grid, ಮತ್ತು **ಪ್ರಸ್ತುತ template reset ಮಾಡಿ** button ಜೊತೆಗೆ ಮರುವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: AJAX failure ಆಗಿದಾಗ Template switching ಇನ್ನು UI ಅನ್ನು hang ಮಾಡುವುದಿಲ್ಲ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Template switching permission states ಅನ್ನು unauthorized access ವಿರುದ್ಧ ಸುರಕ್ಷಿತಗೊಳಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Site override inputs ಅನ್ನು ಉಳಿಸುವ ಮೊದಲು validate ಮಾಡಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: address ಖಾಲಿಯಾಗಿರುವಾಗ Billing address prompt ಈಗ ತೋರಿಸಲಾಗುತ್ತದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: PHP 8.1 null-to-string deprecation notices ಪರಿಹರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: timing issues ತಡೆಯಲು init hook ಕ್ಕಿಂತ ಮೊದಲು Currents lazy-loaded ಮಾಡಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಎಲ್ಲಾ login flows ನಲ್ಲಿ filtered SSO path ಗೌರವಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Blank site identity options ಉಳಿಸುವಾಗ ಸಂರಕ್ಷಿಸಲಾಗಿದೆ.
 
-## Version 2.8.0 — 2026-04-29 ರಂದು ಬಿಡುಗಡೆಯಾಗಿದೆ
+## ಆವೃತ್ತಿ 2.9.0 — 2026-04-30 ರಂದು ಬಿಡುಗಡೆ {#version-290--released-on-2026-04-30}
 
-- ಹೊಸದು: Other Options ಸೆಟ್ಟಿಂಗ್ಸ್ UI ಗೆ Enable Jumper toggle ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಹೊಸದು: checkout ಫಾರ್ಮ್‌ಗಳ ಪಟ್ಟಿ ಕೋಷ್ಟಕಕ್ಕೆ (list table) Status column ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಹೊಸದು: ಕಸ್ಟಮ್ MU-plugin sunrise extensions ಗಾಗಿ Addon sunrise file loader.
-- ಸುಧಾರಿಸಲಾಗಿದೆ: ಸೆಟ್ಟಿಂಗ್ಸ್ ಪುಟದಿಂದ error-reporting opt-in ಸೆಟ್ಟಿಂಗ್ ಅನ್ನು ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Thank-you page site card — ಇಮೇಜ್ ಅನ್ನು ಈಗ ಮಿತಿಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಲಿಂಕ್‌ಗಳನ್ನು ಸರಿಯಾಗಿ ಶೈಲೈಸ್ ಮಾಡಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪровайಡರ್ ಅನ್ನು thum.io ನಿಂದ WordPress.com mShots ಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Enable Registration ಮತ್ತು Default Role ಈಗ ಹೊಸ ಇನ್‌ಸ್ಟಾಲ್‌ನಲ್ಲಿ ಸರಿಯಾದ ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಹೊಂದಿಸುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: `get_site_url()` ಡೊಮೇನ್‌ನಲ್ಲಿ port ಸೇರಿದಾಗ ಖಾಲಿ ಮೌಲ್ಯವನ್ನು ಹಿಂದಿರುಗಿಸುವುದಿಲ್ಲ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: `copy_media` ಸೆಟ್ಟಿಂಗ್ ಖಾಲಿಯಾಗಿದ್ದಾಗ ಕ್ಲೋನ್ మీడియా ಫೈಲ್‌ಗಳನ್ನು ಈಗ ಸರಿಯಾಗಿ ನಕಲಿಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: network-activate sitemeta write ನಂತರ ಆಬ್ಜೆಕ್ಟ್ ಕ್ಯಾಶ್ ಅನ್ನು ಸರಿಯಾಗಿ ಅಮಾನ್ಯಗೊಳಿಸಲಾಗಿದೆ (invalidated).
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: 3-ಭಾಗದ ಡೊಮೇನ್‌ಗಳಿಗೆ DNS ಪರಿಶೀಲನೆಯ ಸಮಯದಲ್ಲಿ ಕಸ್ಟಮ್ ಡೊಮೇನ್ ಅನ್ನು ಪ್ರಾಥಮಿಕವಾಗಿ ಪ್ರಚಾರ ಮಾಡಲಾಗಿದೆ (auto-promoted).
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಅವಧಿ ಮುಗಿದ ಪಾವತಿಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿದಾಗ ಬಾಕಿ ಇರುವ ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಇನ್‌ಲೈನ್ ಲಾಗಿನ್ ಪ್ರಾಂಪ್ಟ್ ಅನ್ನು खारिज ಮಾಡಿದ ನಂತರ ಪಾಸ್‌ವರ್ಡ್ ಶಕ್ತಿ ಪರಿಶೀಲಕವನ್ನು ಮರುಬಂಧಿಸಲಾಗಿದೆ (rebound).
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸೈಟ್ ಈಗಾಗಲೇ ರಚನೆಯಾದಾಗ thank-you page ನಲ್ಲಿ ಅನಂತ page reload ನಿಲ್ಲುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಪ್ಲಗ್ಇನ್ 활성화 ಮತ್ತು ಸೆಟ್ಟಿಂಗ್ಸ್ ಉಳಿಸುವಾಗ WP core registration ಆಯ್ಕೆಯನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: PHP 8.4 compatibility ಗಾಗಿ `calculate_expiration` ನಲ್ಲಿ Null expiration guard ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಗ್ರಾಹಕನಿಗೆ ಈಗಾಗಲೇ ಸಕ್ರಿಯ ಸದಸ್ಯತ್ವವಿದ್ದರೆ duplicate signups ಅನ್ನು ತಡೆಯಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: checkout ನಲ್ಲಿ `date_expiration` ಗಾಗಿ null check ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: Site provisioning ಅನ್ನು ಗಟ್ಟಿಗೊಳಿಸಲಾಗಿದೆ — ಮಿತಿಗಳು, ಸದಸ್ಯತ್ವದ અનુಮಾನ, ಡೊಮೇನ್ ಪ್ರಚಾರ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: check ವಿಫಲವಾದಾಗ Pre-install check status label ಅನ್ನು NOT Activated ಎಂದು ಸರಿಪಡಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಇಮೇಲ್ ಪರಿಶೀಲನೆ URL ಗಳಿಗೆ checkout ಡೊಮೇನ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಪಾಸ್‌ವರ್ಡ್ ಫೀಲ್ಡ್ ಇಲ್ಲದಿದ್ದಾಗ checkout ನಂತರ auto-login.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಉಚಿತ ಸದಸ್ಯತ್ವಗಳು ಇನ್ನು ಮುಂದೆ ಅವಧಿ ಮುಗಿಯುವುದಿಲ್ಲ — ಇವುಗಳನ್ನು ಜೀವಿತಾವಧಿಯಾಗಿ (lifetime) ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಇಮೇಲ್ ಪರಿಶೀಲನೆ ಗೇಟ್ ಗ್ರಾಹಕರು ಇಮೇಲ್ ಅನ್ನು ಪರಿಶೀಲಿಸುವವರೆಗೆ ಸೈಟ್ ಪ್ರಕಟಣೆಯನ್ನು ಹಿಡಿದಿಡುತ್ತದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: SES v2 API endpoint base path ಮತ್ತು identity route ಅನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
-- ಸರಿಪಡಿಸಲಾಗಿದೆ: pre-submit catch block ನಲ್ಲಿ `wu_inline_login_error` hook ಅನ್ನು ಹೊರಸೂಸಲಾಗಿದೆ (emitted).
+- ಹೊಸದು: Single-site export ಮತ್ತು import ಅನ್ನು **Tools > Export & Import** ಅಡಿಯಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Export ZIP files ಈಗ authenticated download endpoint ಮೂಲಕ ನೀಡಲಾಗುತ್ತವೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: pending export/import queries ನಲ್ಲಿ SQL injection ಅಪಾಯ ಮತ್ತು query ಸಮಸ್ಯೆಗಳನ್ನು ಸರಿಪಡಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: admin ಗ್ರಾಹಕರ email ಅನ್ನು manually verify ಮಾಡಿದಾಗ Pending site published ಆಗುವುದಿಲ್ಲ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: membership ಇಲ್ಲದಾಗ orphaned pending_site records ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Settings nav padding ಮತ್ತು search anchor navigation ಸರಿಪಡಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Pending sites ಈಗ All Sites view ನಲ್ಲಿ ಮೊದಲು ತೋರಿಸಲಾಗುತ್ತವೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: 403 errors ತಡೆಯಲು Screenshot provider (mShots) User-Agent header ಸೇರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Import cron schedule circular dependency ಪರಿಹರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: user settings keys ನಲ್ಲಿ Tour IDs ಅನ್ನು underscores ಗೆ normalise ಮಾಡಲಾಗಿದೆ.
+- ಸುಧಾರಿಸಲಾಗಿದೆ: ಉತ್ತಮ ಹೊಂದಾಣಿಕೆಗಾಗಿ Alchemy/Zippy ಬದಲು ZipArchive ಈಗ ಬಳಸಲಾಗುತ್ತದೆ.
+
+## ಆವೃತ್ತಿ 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- ಹೊಸದು: Other Options ಸೆಟ್ಟಿಂಗ್‌ಗಳ UIಗೆ Enable Jumper toggle ಸೇರಿಸಲಾಗಿದೆ.
+- ಹೊಸದು: ಚೆಕ್‌ಔಟ್ ಫಾರ್ಮ್‌ಗಳ ಪಟ್ಟಿ ಟೇಬಲ್‌ಗೆ ಸ್ಥಿತಿ ಕಾಲಮ್ ಸೇರಿಸಲಾಗಿದೆ.
+- ಹೊಸದು: ಕಸ್ಟಮ್ MU-plugin sunrise ವಿಸ್ತರಣೆಗಳಿಗೆ Addon sunrise file loader.
+- ಸುಧಾರಿಸಲಾಗಿದೆ: ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಪುಟದಿಂದ ದೋಷ-ವರದಿ opt-in ಸೆಟ್ಟಿಂಗ್ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಧನ್ಯವಾದ ಪುಟದ ಸೈಟ್ ಕಾರ್ಡ್ — ಚಿತ್ರವನ್ನು ಈಗ ಮಿತಿಗೊಳಿಸಲಾಗಿದೆ ಮತ್ತು ಲಿಂಕ್‌ಗಳಿಗೆ ಸರಿಯಾದ ಶೈಲಿ ನೀಡಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಒದಗಿಸುವಿಕೆಯನ್ನು thum.io ಯಿಂದ WordPress.com mShots ಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: Enable Registration ಮತ್ತು Default Role ಈಗ ಹೊಸ ಇನ್‌ಸ್ಟಾಲ್‌ನಲ್ಲಿ ಸರಿಯಾದ ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಹೊಂದಿಸುತ್ತವೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಡೊಮೇನ್‌ನಲ್ಲಿ ಪೋರ್ಟ್ ಇದ್ದಾಗ `get_site_url()` ಇನ್ನು ಖಾಲಿ ಮೌಲ್ಯ ಹಿಂತಿರುಗಿಸುವುದಿಲ್ಲ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: `copy_media` ಸೆಟ್ಟಿಂಗ್ ಖಾಲಿಯಾಗಿದ್ದಾಗಲೂ ಕ್ಲೋನ್ ಮೀಡಿಯಾ ಫೈಲ್‌ಗಳನ್ನು ಈಗ ಸರಿಯಾಗಿ ನಕಲಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: network-activate sitemeta ಬರವಣಿಗೆಯ ನಂತರ object cache ಅನ್ನು ಸರಿಯಾಗಿ ಅಮಾನ್ಯಗೊಳಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: 3-ಭಾಗದ ಡೊಮೇನ್‌ಗಳಿಗೆ DNS ಪರಿಶೀಲನೆಯಾಗುವಾಗ ಕಸ್ಟಮ್ ಡೊಮೇನ್ ಅನ್ನು ಸ್ವಯಂ ಮುಖ್ಯವಾಗಿ ಮಾಡಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಅವಧಿ ಮೀರಿದ ಪಾವತಿಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿದಾಗ ಬಾಕಿಯಿದ್ದ ಸದಸ್ಯತ್ವವನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: inline login prompt ಮುಚ್ಚಿದ ನಂತರ ಪಾಸ್‌ವರ್ಡ್ ಶಕ್ತಿ ಪರಿಶೀಲಕವನ್ನು ಮತ್ತೆ ಬಂಧಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸೈಟ್ ಈಗಾಗಲೇ ರಚನೆಯಾಗಿದ್ದಾಗ ಧನ್ಯವಾದ ಪುಟದಲ್ಲಿ ಅನಂತ ಪುಟ ಮರುಲೋಡ್ ನಿಲ್ಲಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: plugin ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಉಳಿಸುವಿಕೆಯಲ್ಲಿ WP core ನೋಂದಣಿ ಆಯ್ಕೆಯನ್ನು ಸಿಂಕ್ ಮಾಡಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: PHP 8.4 ಹೊಂದಾಣಿಕೆಗೆ `calculate_expiration` ನಲ್ಲಿ Null expiration guard ಸೇರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಗ್ರಾಹಕರಿಗೆ ಈಗಾಗಲೇ ಸಕ್ರಿಯ ಸದಸ್ಯತ್ವ ಇದ್ದಾಗ ಡುಪ್ಲಿಕೇಟ್ ಸೈನ್‌ಅಪ್‌ಗಳನ್ನು ತಡೆಯಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ `date_expiration` ಗಾಗಿ Null check ಸೇರಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಸೈಟ್ provision ಗಟ್ಟಿಗೊಳಿಸಲಾಗಿದೆ — ಮಿತಿಗಳು, ಸದಸ್ಯತ್ವ ನಿರ್ಣಯ, ಡೊಮೇನ್ promotion.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಪರಿಶೀಲನೆ ವಿಫಲವಾದಾಗ Pre-install check status label ಅನ್ನು NOT Activated ಎಂದು ಸರಿಪಡಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಇಮೇಲ್ ಪರಿಶೀಲನಾ URL‌ಗಳಿಗೆ ಚೆಕ್‌ಔಟ್ ಡೊಮೇನ್ ಬಳಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಪಾಸ್‌ವರ್ಡ್ field ಇಲ್ಲದಿದ್ದಾಗ ಚೆಕ್‌ಔಟ್ ನಂತರ ಸ್ವಯಂ-login.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಉಚಿತ ಸದಸ್ಯತ್ವಗಳು ಇನ್ನು ಅವಧಿ ಮೀರುವುದಿಲ್ಲ — lifetime ಎಂದು ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: ಗ್ರಾಹಕರು ಇಮೇಲ್ ಪರಿಶೀಲಿಸುವವರೆಗೆ Email verification gate ಸೈಟ್ publish ಅನ್ನು ತಡೆಹಿಡಿಯುತ್ತದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: SES v2 API endpoint base path ಮತ್ತು identity route ಸರಿಪಡಿಸಲಾಗಿದೆ.
+- ಸರಿಪಡಿಸಲಾಗಿದೆ: pre-submit catch block ನಲ್ಲಿ `wu_inline_login_error` hook emitted ಮಾಡಲಾಗಿದೆ.

@@ -4,23 +4,23 @@ title: Filter - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filter: get_site_url_for_previewer
+# Filter: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
 
 ፕለጊን ገንቢዎች በፕሪቪው ክፍል ውስጥ ጥቅም ላይ በሚውለው URL ላይ እንዲያስተካክሉ (filter) ያስችላል።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $domain | `string` | በአሁኑ ጊዜ ጥቅም ላይ የዋለው መደበኛ ዶሜን ሲሆን፣ ለልዩ ለውጦች ጠቃሚ ነው። |
 | $domain_options | `array` | በUltimate Multisite Settings -> Network Settings -> Domain Options ውስጥ የተመዘገቡ የሁሉም የዶሜን አማራጮች ዝርዝር። |
 
-### ከ
+### ከ {#since}
 
 - 1.7.2
-### ምንጭ
+### ምንጭ {#source}
 
 በ[`inc/checkout/class-legacy-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L812) ላይ በ812ኛው መስመር ተገልጿል።
 
-## የሚመልሰው
+## የሚመልሰው {#returns}
 የሚጠቀመበት አዲስ ዶሜን

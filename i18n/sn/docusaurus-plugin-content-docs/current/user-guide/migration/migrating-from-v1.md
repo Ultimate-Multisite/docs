@@ -3,9 +3,9 @@ title: Kutanga kuV1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Kuuta ku V1
+# Kuuta ku V1 {#migrating-from-v1}
 
-## Ultimate Multisite yakagadzirwa kubva kune familia ya chidzidzo chechinhu 1.x kune familia ya chidzidzo chechinhu 2.x.
+## Ultimate Multisite yakagadzirwa kubva kune familia ya chidzidzo chechinhu 1.x kune familia ya chidzidzo chechinhu 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite ndiyo inengei reweka nguva dzose, uye version 2.0 na kupfuura inengei rekugadzirwa kubva, zvichipa nzira yekuita (rewrite) yakare, izviro chinobva kune chero chero chekuti kuna version ya dzamba 1.x neya 2.x, kunenge kuonekwa zvakasiyana pane zvinhu zviri kugara. Nekuti izviro zvakasiyana, kana uchigadzirisa kubva kune 1.x kuita kubva kune 2.x, zvinhu dzako dzinogona kuendesa (data) dzinofanira kuenda mu chine chinogona kunzwisisa (format) kuti version dzine 2.x dzinogone kuziva.
 
@@ -35,19 +35,19 @@ Panguva uingise key yako, ungaita **Agree & Activate**.
 
 Panguva utange activation ya license, unogona kuita installation yakanaka nekutanga kukutanga **Install** pa page inotaurisa. Izviro dzinogona kuita zvinhu zvinodzidzwa nedatabase dzine kudzidzwa (database) dzine kudzidzwa kuti version 2.0 itaurise.
 
-## Ndizvo, migrasheni
+## Ndizvo, migrasheni {#first-steps}
 
 Ino migrator inenge ne feature ya kuenda neusoro (safety feature) inosimbisa kuti inocheka nzira yose ye multisite yako kuti inenge ikumbatsira kuitira migration chete. Chibvumire button **Run Check** kuti uanže prosesi iye.
 
 Nachikumbira check, unenge uri nechimwe chii: zvinhu zvinogona kuva **ne error** kana **zvisingazvi kuva neerror**.
 
-### Ne Error
+### Ne Error {#now-the-migration}
 
 Kana uchida kuona message ya error, unofanira kutaura nemakwanisa edu (support team) kuti vaveine kugona kukubatsira kuenda neerror iye. Zviona kuti uyu **provide the error log** kana uchigadzira ticket. Unogona ku download log kana ukapfiri link inosimbisa "contact our support team". Izvirozo izo dzachivhara help widget pamusoro wepage yako nemazwi anowanikwa (fields) akaita kuti zvinhu zvakakosha, uye error logs zvinotanga pangu neongororo.
 
 _**Chiti: Kana nzira inaziva error, haunozvova kuenda kuitira migration chete kune version 2.0. Unogona kuenda kuremu (roll back) kune version 1.x kuti uende kunge ungarura network yako pansi sezvinenge zvinhu zvinotanga kubva neerror.**_
 
-### Usina Error
+### Usina Error {#with-error}
 
 Kana nzira inaziva kuti haona error, ungaona message ya success uye button **Migrate** pamusoro yechiitiko chiri mupfupi (bottom). Iyi button inozovaka kuenda nemigration. Pamushuru wepage iye, uingwa kuti utanga backup yakanzvimbo yako (database) pangu nedzidzo rine kudzidzisa (strongly recommend), uye unogona kuita iye kana uine backup. Chibvumire **Migrate** kana uine backup.
 

@@ -3,7 +3,7 @@ title: Қоғам
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Қоғамдағы қалай қосылу керек
+# Ultimate Multisite Қоғамдағы қалай қосылу керек {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community – бұл басқа Ultimate Multisite пайдаланушыларымен байланыса алатын және кеңестер, тәжірибелерді бөлісе алатын орын. Ultimate Multisite Community-ге қол жеткізу үшін https://community.ultimatemultisite.com/home-ға өтіңіз.
 

@@ -4,21 +4,21 @@ title: アクション - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# アクション: update_network
+# アクション: update_network {#action-updatenetwork}
 
 既存のネットワークが更新された後に発火します。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
 | $network_id | `int` | 追加されたネットワークのID。 |
 | $args | `array` | ネットワーク引数の連想配列。 |
 
-### 以降
+### 以降 {#since}
 
 - 1.3.0
 
-### ソース
+### ソース {#source}
 
 以下のファイルで定義されています: [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1422) 1422 行目

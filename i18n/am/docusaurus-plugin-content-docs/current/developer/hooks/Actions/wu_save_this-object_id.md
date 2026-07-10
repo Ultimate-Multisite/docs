@@ -4,14 +4,14 @@ title: 'Action - wu_save_{$this->object_id}'
 sidebar_label: 'wu_save_{$this->object_id}'
 _i18n_hash: 948ebe69d343e2f1e56544732995c2aa
 ---
-# Action: wu_save_{$this->object_id}
+# Action: wu_save_{$this->object_id} {#action-wusavethis-objectid}
 
 የፕልጊን ገንቢዎች (plugin developers) የመስቀል ሂደት (saving process) ላይ ድርጊቶችን (actions) እንዲጨምሩ ያስችላል።
 
-### ከ
+### ከ {#since}
 
 - 1.8.2
 
-### ምንጭ
+### ምንጭ {#source}
 
 በ[`inc/admin-pages/class-edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-edit-admin-page.php#L220) ፋይል ላይ በ220ኛው መስመር ተገልጿል።

@@ -1,0 +1,117 @@
+---
+title: Mitme valuuta tugi
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency {#multi-currency}
+
+Ultimate Multisite: Multi-Currency võimaldab teie võrgustikul aktsepteerida makseid mitmes valuutas. See teisendab hinnad automaatselt reaalajas või käsitsi määratud vahetuskursside abil, laseb teil määrata iga valuuta jaoks täpsed tootepõhised hinnad ning tuvastab iga külastaja eelistatud valuuta geolokatsiooni kaudu — kõike hallatakse ühest admin Dashboardist.
+
+## Põhifunktsioonid {#key-features}
+
+- **Automaatne vahetuskursi teisendus** — hinnad teisendatakse teie baasvaluutast, kasutades teie valitud teenusepakkujalt hangitud kursse
+- **Tootepõhised hinnaerandid** — määrake mis tahes tootele täpsed valuutapõhised hinnad, et automaatne teisendus vahele jätta
+- **Valuutavaliku registreerumisväli** — võimaldab klientidel maksmise/registreerumise ajal valida oma eelistatud valuuta
+- **Mitu vahetuskursi pakkujat** — ECB, Frankfurter, Stripe või täielikult käsitsi määratud kursid
+- **Geolokatsioonipõhine valuuta tuvastamine** — valib automaatselt eelnevalt valuuta, mis vastab külastaja riigile
+- **Admin Dashboard** — hallake aktiivseid valuutasid, vahetuskursse ja teenusepakkuja seadeid ühest kohast
+
+## Nõuded {#requirements}
+
+- Ultimate Multisite 2.0.0 või uuem
+- WordPress Multisite paigaldus
+- PHP 7.4 või uuem
+
+## Paigaldamine {#installation}
+
+1. Laadige lisamooduli failid üles kausta `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktiveerige lisamoodul WordPressi **Lisamoodulite** vaates (Network Activate)
+3. Liikuge jaotisse **Ultimate Multisite → Multi-Currency**, et avada admin Dashboard
+4. Lisage valuutad, mida soovite aktsepteerida, ja seadistage oma vahetuskursi pakkuja
+
+## Seadistamine {#configuration}
+
+### Admin Dashboard {#admin-dashboard}
+
+Multi-Currency admin Dashboard (**Ultimate Multisite → Multi-Currency**) on keskne koht, kus saate:
+
+- Lisada, lubada või keelata valuutasid
+- Valida vahetuskursi pakkuja ja värskendada kursse nõudmisel
+- Vaadata üle kõigi aktiivsete valuutade praegused kursid
+- Määrata käsitsi kursid, kui automaatsed pakkujad ei sobi
+
+### Vahetuskursi pakkujad {#exchange-rate-providers}
+
+| Pakkuja | Kirjeldus |
+|---|---|
+| **ECB** | Euroopa Keskpank — tasuta igapäevased kursid EUR-põhistele võrgustikele |
+| **Frankfurter** | Avatud lähtekoodiga ECB peegel-API — tasuta, API-võtit pole vaja |
+| **Stripe** | Kasutab Stripe'i reaalajas valuutakursse — nõuab aktiivset Stripe'i integratsiooni |
+| **Käsitsi** | Sisestate kursid otse; väliseid API-päringuid ei tehta |
+
+Valige oma pakkuja jaotises **Ultimate Multisite → Multi-Currency → Seaded → Vahetuskursi pakkuja**. Kursse saab igal ajal käsitsi värskendada või ajastada automaatselt uuenema.
+
+### Tootepõhised hinnaerandid {#per-product-pricing-overrides}
+
+Kui automaatne teisendus ei ole piisavalt täpne, saate määrata konkreetse valuuta jaoks täpse hinna mis tahes tootel:
+
+1. Avage tooteredaktor (**Ultimate Multisite → Tooted → Muuda**)
+2. Kerige jaotiseni **Valuutapõhine hinnastamine**
+3. Sisestage täpne hind iga valuuta jaoks, millele soovite erandi määrata
+4. Salvestage toode
+
+Ilma erandita tooted kasutavad teie baasvaluutast teisendatud hinda.
+
+### Valuutavaliku registreerumisväli {#currency-selector-signup-field}
+
+Valuutavaliku välja saab lisada teie registreerumise/maksmise voogu, et kliendid valiksid registreerimisel oma eelistatud valuuta:
+
+1. Minge jaotisse **Ultimate Multisite → Multi-Currency → Seaded**
+2. Lubage **Kuva valuutavalik registreerumisel**
+3. Soovi korral määrake vaikevaluuta või laske geolokatsioonil määrata eelvalitud väärtus
+
+Valitud valuuta salvestatakse koos tellimusega ja seda kasutatakse kõigi järgnevate arvelduste jaoks.
+
+### Geolokatsioonipõhine valuuta tuvastamine {#geolocation-based-currency-detection}
+
+Kui geolokatsioonipõhine tuvastamine on lubatud, seostab lisamoodul külastaja riigi valuutaga ja valib selle valuutavaliku väljal eelnevalt. Lubamiseks:
+
+1. Minge jaotisse **Ultimate Multisite → Multi-Currency → Seaded**
+2. Lubage **Tuvasta valuuta külastaja asukoha järgi**
+3. Seostage riigid valuutadega tabelis **Geolokatsiooni vastendamine**
+
+Kui külastaja riigi jaoks vastendust pole, kasutatakse varuvariandina võrgustiku baasvaluutat.
+
+## Korduma kippuvad küsimused {#frequently-asked-questions}
+
+### Mis juhtub, kui vahetuskursi pakkuja pole saadaval? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Lisamoodul kasutab varuvariandina viimati edukalt hangitud kursse. Kui kursse pole kunagi hangitud, kasutatakse varuvariandina teie seadistatud käsitsi kursse. Soovitatav on seadistada käsitsi kursid turvavõrguna.
+
+### Kas saan kasutada eri valuutade jaoks erinevaid pakkujaid? {#can-i-use-different-providers-for-different-currencies}
+
+Ei — kõigi valuutade jaoks on korraga aktiivne üks pakkuja. Kasutage valikut **Käsitsi**, kui vajate täielikku kontrolli üksikute kursside üle.
+
+### Kas geolokatsioon nõuab eraldi lisamoodulit? {#does-geolocation-require-a-separate-plugin}
+
+Välist geolokatsiooni lisamoodulit pole vaja. Lisamoodul kasutab WordPressi sisseehitatud IP-aadressi riigiks tuvastamist. Suurema täpsuse jaoks saab pakutud filtrikonksude kaudu integreerida spetsiaalse geolokatsiooniteenuse.
+
+### Kas tootepõhiseid erandeid rakendatakse enne või pärast maksu? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Tootepõhised erandid määravad sihtvaluutas maksueelse hinna. Maks arvutatakse erandihinnale lisaks, kasutades teie olemasolevat maksuseadistust.
+
+## Muudatuste logi {#changelog}
+
+### Versioon 1.0.0 — avaldatud 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Uus: mitme valuuta tugi automaatse vahetuskursi teisendusega
+- Uus: tootepõhised hinnaerandid täpsete valuutapõhiste hindade jaoks
+- Uus: valuutavaliku registreerumisväli maksmise voo jaoks
+- Uus: vahetuskursi pakkujad: ECB, Frankfurter, Stripe ja käsitsi
+- Uus: geolokatsioonipõhine valuuta tuvastamine
+- Uus: Admin Dashboard valuutade ja vahetuskursside haldamiseks
+- Parandus: Dashboard kuvas hindu alati baasvaluutas olenemata valitud valuutast

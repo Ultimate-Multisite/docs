@@ -1,142 +1,156 @@
 ---
-title: A' chàirichid an t-amrasadh agad
+title: A’ gnàthachadh an fhoirm clàraidh agad
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Aistilidh an t-amrasadh agad
+# A’ gnàthachadh an Fhoirm Chlàraidh agad {#customizing-your-registration-form}
 
-Chan eil eadar-dhealaich a bhith agad de uile na SaaS a th'annachda air WordPress, aistilidh Ultimate Multisite a' namh tha a' ginealachadh pàipean amrasadh agus login a thoil airson faighinn a' chùrsain **Checkout Forms** a lasa.
+Gus am bi coltas gun samhail air an lìonra agad an taca ris a h-uile SaaS eile a chaidh a thogail air àrd-ùrlar WordPress, leigidh Ultimate Multisite leat na duilleagan clàraidh is logaidh a-steach agad a ghnàthachadh leis an fheart **Checkout Forms** againn.
 
-Biaing iad fìor agus leagailte fhaighinn de chùrsain ùr gu sònraichte air a' ginealachadh a tha a' ginealachadh ùidh, tha iad a' ginealachd airson pàipean amrasadh sin-nàdarach. Tha an seann seo a' namh a' sgrùdadh gun a tha thu a' faicinn a bhith agad de uile.
+Ged a tha iad nan dòigh fhurasta is shùbailte airson deuchainnean a dhèanamh le diofar dhòighean nuair a tha thu a’ feuchainn ri luchd-ceannach ùra a thionndadh, thathar gan cleachdadh sa mhòr-chuid gus foirmean clàraidh pearsanta a chruthachadh. Tha an artaigil seo ag amas air sealltainn dhut mar as urrainn dhut sin a dhèanamh.
 
-## Pàipean login agus amrasadh:
+## Duilleagan logaidh a-steach agus clàraidh: {#login-and-registration-pages}
 
-Tha, air a' chluasachadh Ultimate Multisite, a thannach eadar-dhealaich pàipean login agus amrasadh sin-nàdarach ar a' site buneach. Is e cheann a tha thu a' thabhairt an t-amrasadh seo gu fìor, air a' chluasachadh air a' page **Ultimate Multisite > Settings > Login & Registration**.
+Nuair a stàlaichear Ultimate Multisite, cruthaichidh e gu fèin-obrachail duilleagan logaidh a-steach agus clàraidh gnàthaichte air a’ phrìomh làrach agad. Faodaidh tu na duilleagan bunaiteach seo atharrachadh uair sam bith le bhith a’ dol gu duilleag **Ultimate Multisite > Settings > Login & Registration** agad.
 
-![Pàipean amrasadh agus login](https://example.com/img/config/settings-general.png)
+![Duilleag roghainnean Logaidh a-steach agus Clàraidh](/img/config/settings-general.png)
 
-Seo tha faighinn fìor de pàipean amrasadh agus login:
+Seo sealladh slàn den duilleag roghainnean logaidh a-steach agus clàraidh:
 
-![Pàipean amrasadh agus login faighinn fìor](/img/config/settings-login-registration-full.png)
+![Duilleag slàn roghainnean Logaidh a-steach agus Clàraidh](/img/config/settings-login-registration-full.png)
 
-Tha sinn a' ginealachadh ch eacha de na ealainn a leagailte sin air an page **Login & Registration**:
+Bheir sinn sùil air gach aon de na roghainnean as urrainn dhut a ghnàthachadh air duilleag **Login & Registration**:
 
-  * **Enable registration (Ailinn amrasadh):** Tha an t-amrasadh seo a' faighinn air a' ginealachadh air a' nàdarach. Mar a tha e a' chluasachadh, chan eil fhaighinn thu de dhòigh a bhith agad airson amrasadh agus pàirtseachadh do chùrsain.
+  * **Cuir clàradh an comas:** Cuiridh an roghainn seo clàradh air an lìonra agad an comas no à comas. Ma thèid a chur dheth, cha bhi e comasach do luchd-ceannach clàradh no fo-sgrìobhadh dha na toraidhean agad.
 
-  * **Enable email verification (Ailinn faighinn e-mail):** Tha an t-amrasadh seo a' faighinn air a' ginealachadh. Mar a tha e a' chluasachadh, biu na chùrsain a tha a' pàirtseachadh airson pàirtseach ùr no pàirtseach le seanaid, biu iad a' faighinn e-mail faighinn agus biu iad ag iarraidh a' chluasadh air an lìn faighinn airson na sitean a bhith agad.
+  * **Cuir dearbhadh puist-d an comas:** Ma thèid an roghainn seo a chur air, gheibh luchd-ceannach a bhios a’ fo-sgrìobhadh airson plana an-asgaidh no plana pàighte le ùine-deuchainn post-d dearbhaidh agus feumaidh iad briogadh air a’ cheangal dearbhaidh gus an tèid na làraichean-lìn aca a chruthachadh.
 
-* **Pàg-rèsignadh a' chiallach:** Tha seo pàipear a' chiallach airson rèsignadh. Tha an pàipear seo ag iarraidh publisidh tu an t-sìd, agus tha eile a' tòiseachadh (a tha eigeil airson a' chliachdan a' sgrùdadh) - làimh eile a tha a' chliachdan a' sgrùdadh air eurtan. Is e cheannach a tha thu ag iarraidh creu pàipear rèsignadh agus fòram a chiallach, ach a bhith a' tòiseachadh gu cunbhalach: leugh an shortcode a' chiallach air pàipear rèsignadh, a-nis gu is dòlaidh seann.
+  * **Duilleag chlàraidh bhunaiteach:** Seo an duilleag bhunaiteach airson clàradh. Feumaidh an duilleag seo a bhith foillsichte air an làrach-lìn agad agus foirm clàraidh a bhith aice (ris an canar cuideachd checkout form) - far am fo-sgrìobh an luchd-dèiligidh agad dha na toraidhean agad. Faodaidh tu uiread de dhuilleagan clàraidh agus checkout forms a chruthachadh ’s a tha thu ag iarraidh, dìreach cuimhnich shortcode an checkout form a chur air an duilleag chlàraidh, air neo cha nochd e.
 
-  * **Uile a' chiallach login:** A’ chiallach seo a’ tu a’ gineadh a bhith ag faigh air pàipear login a tha a’ chiallach, a’ tòiseachadh air wp-login.php. Tha e cheannach a tha thu a’ gineadh an fòram a tha a' chiallach airson a' chliachdan a' sgrùdadh.
+  * **Cleachd duilleag logaidh a-steach ghnàthaichte:** Leigidh an roghainn seo leat duilleag logaidh a-steach ghnàthaichte a chleachdadh, seach an duilleag wp-login.php bhunaiteach. Ma thèid an roghainn seo a chur air, faodaidh tu taghadh dè an duilleag a thèid a chleachdadh airson logadh a-steach san roghainn **Default login page** (dìreach gu h-ìosal).
 
-  * **A' chiallach url login a' chiallach (wp-login.php):** Má tha thu a' faic air a chiallach url login a' chiallach, is e cheannach a tha thu a' gineadh an fòram seo. Tha e cheannach a tha Ultimate Multisite ag tòiseachadh 404 error nuair a thonn a chliach a' sgrùdadh air an lìn a tha a' chiallach.
+  * **Falaich an URL logaidh a-steach tùsail (wp-login.php)** : Ma tha thu airson an URL logaidh a-steach tùsail fhalach, faodaidh tu an roghainn seo a chur air. Tha seo feumail gus ionnsaighean brute-force a chasg. Ma tha an roghainn seo an comas, seallaidh Ultimate Multisite mearachd 404 nuair a dh’fheuchas cleachdaiche ri faighinn chun a’ cheangail wp-login.php thùsail
 
-  * **A' chiallach publisadh sinchronach:** An uair a tha a' chliach a' sgrùdadh air eurt, feumaidh an pàipear a tha a' tòiseachadh a bhith a' chiallach a bhith a' sàmhach air a bhith a' chiallach a' chiallach. Tha an proses publisadh ag obair gu fòcas, asgàil. Bidh an cheannach seo a’ tu a’ gineadh a bhith a’ chiallach a bhith a’ chiallach a tha a' sgrùdadh.
+  * **Èignich foillseachadh làraich sioncronaich:** Às dèidh do neach-ceannach fo-sgrìobhadh do thoradh air lìonra, feumar an làrach ùr ri feitheamh a thionndadh gu fìor làrach lìonra. Bidh am pròiseas foillseachaidh a’ tachairt tro Job Queue, gu neo-shioncronaich. Cuir an roghainn seo an comas gus toirt air an fhoillseachadh tachairt san aon iarrtas ris an signup.
 
-An uair a tha thu a' faic air eurtan eile a tha a' chiallach airson login agus rèsignadh, tha iad a' chiallach **Other options** air an pàipear Login & registration:
+A-nis, chì sinn roghainnean eile a tha fhathast buntainneach don phròiseas logaidh a-steach agus clàraidh. Tha iad dìreach fo **Other options** air an aon duilleag Login & registration:
 
-  * **Ròl a' chiallach:** Tha seo an ròl a bheil thu a' chliachdan air eurtan a tha a' sgrùdadh air an t-sìd.
+  * **Dreuchd bhunaiteach:** Seo an dreuchd a bhios aig an luchd-ceannach agad air an làrach-lìn aca às dèidh pròiseas an signup.
 
-* **Enable Jumper:** Aigeal an Jumper a' ghairm. Aigeal a' Ghairm a' chùlchna (shortcut) a' chùlchna admin. Aigeal a' Ghairm a' chùlchna a' chùlchna Ultimate Multisite, obectan nàthachail, agus beag eile a tha a' tòiseachadh gu fìdh a' chluaintean a' chluainn (menu) a' chluainn. Aigeal an tòiseachadh mar a tha thu a' tòiseachadh air a' chluainn admin.
+  * **Cuir Jumper an comas:** Cuiridh seo shortcut Jumper an comas san raon rianachd. Leigidh Jumper le rianadairean leum gu sgiobalta gu scrionaichean Ultimate Multisite, nithean lìonra, agus cinn-uidhe eile le taic gun brobhsadh tro gach clàr-taice. Cuir dheth e mas fheàrr leat an t-inneal seòlaidh luath sin fhalach bhon eadar-aghaidh rianachd.
 
-  * **Add users to the main site as well:** Bidh aigeal an tòiseachadh seo a' tòiseachadh a' chùlchna (user) air an site mhath a' chùlchna (network) a' dèidh an proses sin-in. Má thu aigeal an tòiseachadh seo, beidh e an tòiseachadh a' tòiseachadh a' chluainn a' chùlchna (default role) air a' chùlchna (website) a' chùlchna (network) a' dèidh sin.
+  * **Cuir cleachdaichean ris a’ phrìomh làrach cuideachd:** Le bhith a’ cur an roghainn seo an comas, thèid an cleachdaiche a chur ri prìomh làrach an lìonra agad cuideachd às dèidh pròiseas an signup. Ma chuireas tu an roghainn seo an comas, nochdaidh roghainn cuideachd dìreach gu h-ìosal gus **dreuchd bhunaiteach** nan cleachdaichean seo air an làrach-lìn agad a shuidheachadh.
 
-  * **Enable multiple accounts:** Aigeal do chùlchna a bhith ag stadairtean mar a tha thu a' chùlchna (network) le fìdh a' chluainn (email address). Má tha an tòiseachadh seo a' tòiseachadh, bidh na chùlchna (customers) a' fàs a' chùlchna (account) air sitean eile a' chùlchna (network) le fìdh a' chluainn sin.
+  * **Cuir iomadh Account an comas:** Leig le cleachdaichean Accountan a bhith aca ann an diofar làraichean den lìonra agad leis an aon seòladh puist-d. Ma tha an roghainn seo dheth, cha bhi e comasach do luchd-ceannach Account a chruthachadh air làraichean-lìn eile a tha a’ ruith air an lìonra agad leis an aon seòladh puist-d.
 
-Chan eil sin a' chùlchna (login) agus a' tòiseachadh (registration) a' chùlchna (customise) a tha a' chùlchna (options) a' chùlchna (customize)! A' chùlchna (settings) a' tòiseachadh a' chluainn a' chluaintean (save) a' chluainn a' chluainn a' chluainn.
+Agus sin a h-uile roghainn co-cheangailte ri logadh a-steach agus clàradh as urrainn dhut a ghnàthachadh! Na dìochuimhnich na roghainnean agad a shàbhaladh às dèidh dhut crìoch a chur air an deasachadh.
 
-## Aigeal do cheannach sin-in:
+## A’ cleachdadh iomadh foirm clàraidh: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 tha a' chùlchna (checkout form editor) a' chluainn, a tha a' tòiseachadh a' chùlchna (create) a' chluainn mar a tha thu a' tòiseachadh, le fìdh eile, eisimpleir.
+Tha Ultimate Multisite 2.0 a’ tabhann deasaiche checkout form a leigeas leat uiread de dh’fhoirmean a chruthachadh ’s a tha thu ag iarraidh, le diofar raointean, toraidhean gan tabhann, msaa.
 
-Tha an seòl a' chluainn agus an seòl a' tòiseachadh a' chluainn a' chùlchna (embedded) le shortcodes: **[wu_login_form]** air an site a' chluainn, agus **[wu_checkout]** airson an site a' tòiseachadh. Is e cheannach a' chùlchna (registration page) a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn. Is e cheannach a' chùlchna (registration page) a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn. Is e cheannach a' chùlchna (registration page) a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn.
+Tha an dà chuid na duilleagan logaidh a-steach agus clàraidh air an leabachadh le shortcodes: **[wu_login_form]** air an duilleag logaidh a-steach agus**[wu_checkout]** airson na duilleig clàraidh. Faodaidh tu an duilleag chlàraidh a ghnàthachadh nas fhaide le bhith a’ togail no a’ cruthachadh checkout forms.
 
-Tha an tòiseachadh seo a' chluainn gu fìdh a' chluainn (Checkout Forms) air a' chluainn, air a' chluainn a' chluainn (left-side-bar).
+Gus faighinn chun fheart seo, rachaibh gu clàr-taice **Checkout Forms**, air a’ bhàr-taoibh chlì.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Clàr-taice Checkout Forms sa bhàr-taoibh](/img/config/checkout-forms-list.png)
 
-Tha an seòl seo a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn a' chluainn.
+Air an duilleag seo, chì thu na checkout forms uile a th’ agad.
 
-Má thu aigeal a' tòiseachadh a' chluainn a' chluainn (new one) a' fàs, bidh thu a' chluainn air **Add Checkout Form** air an tòiseachadh a' chluainn.
+Ma tha thu airson fear ùr a chruthachadh, dìreach briog air **Add Checkout Form** aig mullach na duilleige.
 
-Leat thu tha riobha seo a' chlàradh is e cheannach de dhutha: single step (còmhraidh ag ceann), multi-step (còmhraidh ag ceann-a-ceann) or blank (fàilte). A tha thu a' tòiseachadh? Tapadh an t-sgaidh a **Go to the Editor**.
+Faodaidh tu aon de na trì roghainnean seo a thaghadh mar thoiseach-tòiseachaidh: aon cheum, ioma-cheum no bàn. An uair sin, briog air **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Cuir Checkout Form ris le roghainnean aon cheum, ioma-cheum, no bàn](/img/config/checkout-forms-list.png)
 
-Mar a tha thu a' tòiseachadh, eadar-daileachdach thu a' leicidh an fòrman sin sin a tha thu a' tòiseachadh? Is e cheannach a' chlàradh a' tòiseachadh air a' chlàradh sin. Tha thu ag mìneachadh air a' chlàradh sin, a tha thu a' leicidh an fòrman sin a' tòiseachadh. Tha thu a' leicidh an fòrman sin a' tòiseachadh, a tha thu a' leicidh an fòrman sin a' tòiseachadh.
+Air neo, faodaidh tu na foirmean a th’ agad mu thràth a dheasachadh no a dhùblachadh le bhith a’ briogadh air na roghainnean fo ainm na foirme. An sin, gheibh thu cuideachd na roghainnean gus shortcode na foirme a chopaigeadh no gus an fhoirm a sguabadh às.
 
-Mar a tha thu a' tòiseachadh air a' chlàradh sin, tha an fòrman sin a' tòiseachadh gu sgaidh don cheannach a th'ann e airson a' obair. A tha thu a' leicidh an fòrman sin a' tòiseachadh, a tha thu a' leicidh an fòrman sin a' tòiseachadh.
+![Gnìomhan hover checkout form le deasachadh, dùblachadh, agus sguabadh às](/img/config/checkout-form-hover-actions.png)
 
-### Editing a Checkout Form:
+Ma thaghas tu aon cheum no ioma-cheum, bidh an checkout form air a lìonadh ro-làimh mu thràth leis na ceumannan bunaiteach a dh’fheumas e gus obrachadh. An uair sin, ma tha thu ag iarraidh, faodaidh tu ceumannan a bharrachd a chur ris.
 
-Mar a tha mi a' tòiseachadh air a' chlàradh sin, tha thu a' leicidh fòrman a' chlàradh airson pearsanaiche sin. Mar eisimpleir, rinn am fòram sin air pearsantachd.
+### A’ deasachadh Checkout Form: {#editing-a-checkout-form}
 
-Ardaidh an editor fòrman a' chlàradh, tha thu a' tòiseachadh air an fòram sin le tàinmhe (a tha thu a' leicidh airson coimhead a' tòiseachadh) agus slug (a tha thu a' leicidh airson shortcodes a' cruinn).
+Mar a dh’ainmich sinn roimhe, faodaidh tu checkout forms a chruthachadh airson diofar adhbharan. San eisimpleir seo obraichidh sinn air foirm clàraidh.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+Às dèidh dhut seòladh gu deasaiche an checkout form, thoir ainm don fhoirm agad (a thèid a chleachdadh airson iomradh a-staigh a-mhàin) agus slug (air a chleachdadh gus shortcakes a chruthachadh, mar eisimpleir).
 
-Tha fòrman a' chlàradh de cheannacha agus deàrrachan. Is e cheannach a thar a' tòiseachadh gu nàdh a' leicidhe **Add New Checkout Step**.
+![Deasaiche foirm pàighidh le raointean ainm is slug](/img/config/checkout-form-name-slug.png)
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+Tha foirmean air an dèanamh de cheumannan is raointean. Faodaidh tu ceum ùr a chur ris le briogadh air **Cuir Ceum Pàighidh Ùr Ris**.
 
-Air an uair a' chlàradh a' tòiseachadh, tha thu a' leicidhe an curthas fòrman sin. Tha thu a' leicidhe ID, tàinmhe agus neach-a-chùis air a thar. Tha na stiùirhean seo gu h-èifeachdach airson coimhead a' tòiseachadh.
+![Putan Cuir Ceum Pàighidh Ùr Ris](/img/config/checkout-form-add-step.png)
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+Air a’ chiad taba den uinneag mhodal, lìon susbaint ceum na foirme agad. Thoir ID, ainm agus tuairisgeul dha. Tha na nithean seo gan cleachdadh sa mhòr-chuid air an taobh a-staigh.
 
-An uair sin, tha thu a' leicidhe an fhaighinnas air an cheannach. Is e cheannach a thar a' tòiseachadh gu: **Always show** (a thànaidh), **Only show for logged in users** (a thànaidh airson ùir-fhaighinnach), or **Only show for guests** (a thànaidh airson fòcas).
+![Taba susbaint ceum pàighidh le ID, ainm, agus tuairisgeul](/img/config/checkout-form-step-content.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+An ath rud, suidhich faicsinneachd a’ cheum. Faodaidh tu taghadh eadar **Seall an-còmhnaidh** , **Seall a-mhàin do chleachdaichean a tha air logadh a-steach** no **Seall a-mhàin do dh’aoighean**.
 
-An uimbeach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+![Roghainnean faicsinneachd ceum pàighidh](/img/config/checkout-form-step-visibility.png)
 
-Cuimhneach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+Mu dheireadh, rèitich stoidhle a’ cheum. Tha na raointean seo roghainneil.
 
-An uimbeach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+![Rèiteachadh stoidhle ceum pàighidh](/img/config/checkout-form-step-style.png)
 
-Cuimhneach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+A-nis, tha an t-àm ann raointean a chur ris a’ chiad cheum againn. Dìreach briog air **Cuir Raon Ùr Ris** agus tagh an seòrsa earrainn a tha thu ag iarraidh.
 
-An uimbeach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+![Putan Cuir Raon Ùr Ris](/img/config/checkout-form-add-field-button.png)![Clàr-taice taghaidh seòrsa raoin](/img/config/checkout-form-field-type-dropdown.png)
 
-Cuimhneach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+Tha diofar pharamadairean aig gach raon ri lìonadh. Airson a’ chiad inntrigeadh seo, taghaidh sinn an raon **Ainm-cleachdaiche**.
 
-An uimbeach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+![Rèiteachadh raon Ainm-cleachdaiche](/img/config/checkout-form-username-content.png)![Paramadairean raon Ainm-cleachdaiche](/img/config/checkout-form-username-visibility.png)![Roghainnean a bharrachd raon Ainm-cleachdaiche](/img/config/checkout-form-username-style.png)
 
-Cuimhneach, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh, a' chlàradh.
+Faodaidh tu uiread de cheumannan is raointean ’s a dh’fheumas tu a chur ris. Gus do bhatharan a shealltainn do do luchd-ceannach airson fear a thaghadh, cleachd raon Clàr Phrìsean. Ma tha thu airson leigeil le do luchd-dèiligidh teamplaid a thaghadh, cuir ris raon Taghadh Teamplaid. Agus mar sin air adhart.
 
-![Button de preiview ar fòrm checkout](/img/config/checkout-form-preview-button.png)![Preiview ar fòrm checkout airson cur a' chluainn no cur a' chluainn a' tòiseachadh](/img/config/checkout-form-preview-modal.png)
+![Deasaiche foirm pàighidh le raon taghaidh teamplaid](/img/config/checkout-form-with-template-field.png)
 
-An uair a tha thu ar **Advanced Options** (Opciones Avançada), le tuar thu an sinneach air an meil airson an seòl **Thank You**, le teann snippets airson a' tagaidh conversion, le CSS casgairt airson fòrm checkout agad no airson cur a' chluainn a' tòiseachadh.
+_**Nòta:** Ma chruthaicheas tu toradh às dèidh dhut an fhoirm pàighidh agad a chruthachadh, feumaidh tu an toradh a chur ris san earrann Clàr Phrìsean. Mura cuir thu ris e, cha nochd an toradh do do luchd-ceannach air an duilleag clàraidh._
 
-![Advanced Options gyda Thank You page, conversion tracking, agus CSS casgairt](/img/config/checkout-form-advanced.png)
+_**Nòta 2:** tha ainm-cleachdaiche, post-d, facal-faire, tiotal làraich, URL làraich, geàrr-chunntas òrduigh, pàigheadh, agus putan cuir a-steach nan raointean riatanach gus foirm pàighidh a chruthachadh._
 
-Is e guir thu a stad an tòiseachadh (enable) no a' sgeuladh (disable) fòrm checkout agad gu mheasach a' chluainn seo ar an colum a' ghàid, no a' sgeuladh air a' chluainn. Tha e guir thu a sgeuladh air a' chluainn a' tòiseachadh (active) no a' sgeuladh air a' chluainn checkout.
+Fhad ’s a tha thu ag obair air an fhoirm pàighidh agad, faodaidh tu am putan Ro-shealladh a chleachdadh an-còmhnaidh gus faicinn mar a chì do luchd-dèiligidh an fhoirm. Faodaidh tu cuideachd atharrachadh eadar sealladh mar chleachdaiche a tha ann mu thràth no mar neach-tadhail.
 
-![Tòiseachadh ceart agus option de sgeuladh airson fòrm checkout](/img/config/checkout-form-active.png)
+![Putan Ro-shealladh air deasaiche na foirme pàighidh](/img/config/checkout-form-preview-button.png)![Ro-shealladh foirm pàighidh mar neach-tadhail no cleachdaiche a tha ann mu thràth](/img/config/checkout-form-preview-modal.png)
 
-Sgàil thu an fòrm checkout!
+Mu dheireadh, air **Roghainnean Adhartach** faodaidh tu an teachdaireachd airson duilleag **Tapadh Leibh** a rèiteachadh, criomagan a chur ris gus tionndaidhean a leantainn, CSS gnàthaichte a chur ris an fhoirm pàighidh agad no a chuingealachadh ri dùthchannan sònraichte.
 
-![Button de sgeuladh fòrm checkout](/img/config/checkout-form-save.png)
+![Roghainnean Adhartach le duilleag Tapadh Leibh, leantainn thionndaidhean, agus CSS gnàthaichte](/img/config/checkout-form-advanced.png)
 
- airson a bhith agad air fòrm, seachda **Generate Shortcode** (Gineadhachadh Shortcode) agus coir an tòiseachadh a tha ar an glan sinneach a tha ar an glan modal.
+Faodaidh tu cuideachd an fhoirm pàighidh agad a chur an comas no a chur à comas le làimh le bhith a’ togail na roghainne seo sa cholbh air an làimh dheis, no an fhoirm a sguabadh às gu buan.
 
-![Modal de Generate Shortcode le shortcode airson coir](/img/config/checkout-form-editor.png)
+![Togail Gnìomhach agus roghainn sguabaidh às airson foirm pàighidh](/img/config/checkout-form-active.png)
 
-_**Note:** Thu bhith agad air faddh an shortcode seo ar pàipear cur a' chluainn (registration page) gu bheil an fòrm checkout seo a' tagaidh air.*
+Na dìochuimhnich an fhoirm pàighidh agad a shàbhaladh!
 
-## A' chluainn agus a' tòiseachadh de templatean gu URL parameters:
+![Putan Sàbhail Foirm Pàighidh](/img/config/checkout-form-save.png)
 
-Tha thu a' fhaighinn tairgseilichean ar fhaisg airson cur a' chluainn (customized pricing tables) airson eòlas agad, agus a' tòiseachadh air an fòrm checkout air an t-template no an cur a' chluainn a tha a' tòiseachadh a' chluainn a' tòiseachadh a' chluainn a' tòiseachadh a' chluainn a' tòiseachadh a' chluainn a' tòiseachadh air an fòrm checkout agad, leat a' faighinn cur a' chluainn (URL parameters) airson seo.
+Gus shortcode na foirme agad fhaighinn, briog air **Cruthaich Shortcode** agus dèan lethbhreac den toradh a chithear air an uinneag mhodal.
 
-### ** airson plans:**
+![Modal Cruthaich Shortcode le shortcode ri lethbhreacadh](/img/config/checkout-form-editor.png)
 
-Ràdh an t-sealladh gu **Ultimate Multisite > Products > Select a plan**. Bheir thu a' faic an **Click to copy Shareable Link** (Cloich airson coir a' chluainn) ar an t-aon sealladh air an t-aon sealladh. Is e an lìn sin a tha thu a' faighinn air a' tòiseachadh air an fòrm checkout agad.
+_**Nòta:** Feumaidh tu an shortcode seo a chur ris an duilleag clàraidh agad gus an tèid an fhoirm pàighidh seo a chur rithe._
 
-![Pàipear cur le button de shareable link](/img/config/products-list.png)
+## Ro-thaghadh bathar is teamplaidean tro pharamadairean URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Note that this link a tha shareable, ean it's only valid for **Plans**. Chan laddh thuitean shareable links airson packages no services.
+Ma tha thu airson clàran prìsean gnàthaichte a chruthachadh airson do bhatharan agus an toradh no an teamplaid a thaghas an neach-ceannach agad bhon chlàr phrìsean agad no bhon duilleag teamplaidean agad a ro-thaghadh air an fhoirm pàighidh, faodaidh tu paramadairean URL a chleachdadh airson seo.
 
-### airson templates:
+### **Airson planaichean:** {#for-plans}
 
-Chan seann site templates a' chlàradh air a bhith agad ar fòram cheannach na deuchainn (checkout form), chan eil e a' chlàradh: **?template_id=X** ar URL deuchainn a ginnich. Chan eil 'X' a' chlàradh a' chlàradh an **site template ID number**. Tha e a' chlàradh a' chlàradh air a bhith agad, tha thuitean seo: **Ultimate Multisite > Sites**.
+Rach gu **Ultimate Multisite > Bathar > Tagh plana**. Bu chòir dhut am putan **Briog gus Ceangal Co-roinnte a Lethbhreacadh** fhaicinn aig mullach na duilleige. Seo an ceangal as urrainn dhut a chleachdadh gus am plana sònraichte seo a ro-thaghadh air an fhoirm pàighidh agad.
 
-Taisg air **Manage** a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a'
+![Duilleag toraidh le putan ceangail cho-roinnte](/img/config/products-list.png)
+
+Thoir an aire nach eil an ceangal co-roinnte seo dligheach ach airson **Planaichean**. Chan urrainn dhut ceanglaichean co-roinnte a chleachdadh airson pacaidean no seirbheisean.
+
+### Airson teamplaidean: {#for-templates}
+
+Ma tha thu airson teamplaidean làraich a ro-thaghadh air an fhoirm pàighidh agad, faodaidh tu am paramadair a chleachdadh: **?template_id=X** air URL na duilleige clàraidh agad. Feumar an "X" a chur an àite le **àireamh ID teamplaid làraich**. Gus an àireamh seo fhaighinn, rach gu **Ultimate Multisite > Làraichean**.
+
+Briog air **Stiùirich** dìreach fo theamplaid na làraich a tha thu airson a chleachdadh. Chì thu àireamh SITE ID. Dìreach cleachd an àireamh seo airson an teamplaid làraich shònraichte seo gus a ro-thaghadh air an fhoirm pàighidh agad. Anns a’ chùis againn an seo, bhiodh am paramadair URL **?template_id=2**.
+
+![Liosta làraichean a’ sealltainn ID teamplaid làraich](/img/config/site-templates-list.png)
+
+Canaidh sinn gur e [**www.mynetwork.com**](http://www.mynetwork.com) làrach-lìn an lìonraidh againn agus gu bheil an duilleag clàraidh againn leis an fhoirm pàighidh againn suidhichte air an duilleag **/register**. Bidh an URL slàn leis an teamplaid làraich seo ro-thaghte a’ coimhead mar [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Agus ma tha thu ag iarraidh, faodaidh tu an dà chuid bathar is teamplaidean a ro-thaghadh airson an fhoirm pàighidh agad. Chan eil agad ri dhèanamh ach lethbhreac a dhèanamh de cheangal co-roinnte a’ phlana agus paramadair na teamplaid a phasgadh aig an deireadh. Bidh e a’ coimhead mar [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

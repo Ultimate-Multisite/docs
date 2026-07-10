@@ -3,25 +3,25 @@ title: Addon Sablon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Sablon
+# Addon Sablon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Előfeltételek
+## Előfeltételek {#requirements}
 
 - WordPress 5.3 vagy annál újabb
 - PHP 7.4 vagy annál újabb
 - Multisite Ultimate plugin (aktív)
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az addon fájlait a `/wp-content/plugins/` könyvtárba
 2. Aktiválja a plugin-t a WordPress „Plugins” menüpontja alatt
 3. Konfigurálja az addon beállításait a hálózatadminisztrátor felületen
 
-## Fejlesztés
+## Fejlesztés {#development}
 
-### Beállítás
+### Beállítás {#setup}
 
 ```bash
 # Telepíti a függvényeket
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktúra
+### Projektstruktúra {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kód modernizációs szabályok
 ```
 
-### Tesztelés
+### Tesztelés {#testing}
 
 Az addon egy átfogó tesztelő keretrendszert tartalmaz:
 
@@ -75,44 +75,44 @@ Az addon egy átfogó tesztelő keretrendszert tartalmaz:
 - **Tesztfedettség (Test Coverage)**: Konfigurálva a kódfedettség nyomon követésére
 - **Multisite Tesztelés**: A tesztek multisite környezetben futnak
 
-### Kód Stándardok
+### Kód Stándardok {#code-standards}
 
 - **WordPress Kód Stándardok**: PHPCS segítségével biztosított
 - **PHP 7.4+ Kompatibilitás**: Támogatott modern PHP funkciók
 - **Statisztikus Elemzés (Static Analysis)**: PHPStan integráció típusellenőrzéshez
 - **Kód Modernizáció**: Rector szabályok PHP frissítéshez
 
-### Összépítő Rendszer (Build System)
+### Összépítő Rendszer (Build System) {#build-system}
 
 - **Asset Kezelés**: Minifikáció a CSS/JS fájlokhoz
 - **Fordítás**: POT fájl generálás
 - **Csomagolás**: Archívum létrehozása a kiosztásra
 - **Fejlesztési Mód**: Nem minifikált assetek hibakerőzéshez
 
-## Konfiguráció
+## Konfiguráció {#configuration}
 
 Az addon számos konfigurációs opciót támogat, amelyek a hálózatadminisztrátor felületen érhetők el.
 
-## Hooks és Szűrők (Hooks and Filters)
+## Hooks és Szűrők (Hooks and Filters) {#hooks-and-filters}
 
-### Actions (Akciók)
+### Actions (Akciók) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Elküldődik az addon inicializációja után
 - `ultimate-multisite-addon-template_loaded` - Elküldődik az addon összes fájljának betöltése után
 
-### Filters (Szűrők)
+### Filters (Szűrők) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifikálja az addon beállításait
 - `ultimate-multisite-addon-template_enabled` - Áthullja az addon aktiválás/deaktiválás állapotát
 
-## Licenc
+## Licenc {#license}
 
 Ez az addon a GPL v3 vagy annál újabb licenc alatt áll.
 
-## Támogatás
+## Támogatás {#support}
 
 Támogatás és dokumentációért látogasson el ide: [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Verzió 1.0.1 (2025-09-28): a prefix nevének megváltoztatása ultimate-multisite-re; szövegdomén megfrissítése; verzió emelése.
 

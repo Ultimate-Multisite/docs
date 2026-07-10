@@ -1,42 +1,46 @@
 ---
-title: Configuración de Pagos Manuales
+title: Configuración de pagos manuales
 sidebar_position: 20
-_i18n_hash: a780a809c96da21ceb3ec6bb67a016d7
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configuración de Pagos Manuales (v2)
+# Configurar pagos manuales (v2) {#setting-up-manual-payments-v2}
 
-_**NOTA IMPORTANTE: Este artículo se refiere a la versión 2.x de Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
-Los pagos manuales son una forma de ofrecer a tus usuarios otros métodos de pago cuando **Stripe** o **PayPal** no están disponibles. Puede ser una transferencia bancaria o cualquier otro método de pago disponible localmente para tus usuarios.
+Los pagos manuales son una forma de ofrecer otros métodos de pago si **Stripe** o **PayPal** no están disponibles para tus usuarios. Puede ser una transferencia bancaria o cualquier otro método de pago disponible localmente para tus usuarios.
 
-## Cómo habilitar Pagos Manuales
+## Cómo habilitar los pagos manuales {#how-to-enable-manual-payments}
 
-Configurar pagos manuales es muy sencillo. Solo necesitas habilitarlos bajo los pasarelas de pago y proporcionar instrucciones detalladas sobre cómo el usuario debe enviar el pago.
+Configurar el pago manual es muy fácil. Solo necesitas habilitarlo en las pasarelas de pago y añadir instrucciones detalladas sobre cómo debe enviar el usuario el pago.
 
-Primero, ve a **Ultimate Multisite > Settings > Payments**. Debajo de **Payment Gateways**, activa **Manual**. Verás que aparecerá una caja de **Payment Instructions**.
+Primero, ve a **Ultimate Multisite > Settings > Payments**. Debajo de **Payment Gateways**, activa **Manual**. Verás que aparecerá un cuadro de **Payment Instructions** para ti.
 
-Agrega a esta caja la información que tu cliente necesitará para realizar el pago. Puede ser los datos de tu cuenta bancaria y tu correo electrónico para que el cliente pueda enviarte la confirmación del pago, por ejemplo.
+Añade en este cuadro la información que tu cliente necesitará para realizar el pago. Puede ser los datos de tu cuenta bancaria y tu correo electrónico para que el cliente pueda enviarte la confirmación del pago, por ejemplo.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Selector de pasarela de pago manual con área de texto de Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Después de configurarlo, simplemente haz clic en **Save Settings** y listo. Cuando los usuarios se registren en tu red, verán un mensaje que les indica que recibirán tus instrucciones para completar la compra.
+Esta es la interfaz de ajustes de la pasarela manual:
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Ajustes de pasarela manual](/img/config/manual-gateway-settings.png)
+
+Después de configurarlo, simplemente haz clic en **Save Settings** y estará listo. Cuando los usuarios se registren en tu red, verán un mensaje que les indicará que recibirán tus instrucciones para completar la compra.
+
+![Mensaje de confirmación de registro que indica al usuario que recibirá instrucciones de pago](/img/frontend/registration-manual-notice.png)
 
 Y también recibirán un mensaje en tu página de **Thank You** con tus instrucciones de pago.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Confirmación de pagos manuales
+## Confirmar pagos manuales {#confirming-manual-payments}
 
-Para confirmar un pago manual, ve al menú **Payments** en la barra izquierda. Allí podrás ver todos los pagos en tu red y sus detalles, incluido su **status**. Un pago manual siempre tendrá un estado **Pending** hasta que lo cambies manualmente.
+Para confirmar un pago manual, ve al menú **Payments** en la barra izquierda. Allí puedes ver todos los pagos de tu red y sus detalles, incluido su **estado**. Un pago manual siempre tendrá un estado **Pending** hasta que lo cambies manualmente.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Lista de pagos que muestra un pago manual pendiente](/img/admin/payments-list.png)
 
-Accede a la página de pago haciendo clic en el **reference code**. En esta página tienes todos los detalles del pago pendiente, como el ID de referencia, productos, marcas de tiempo y más.
+Entra en la página del pago haciendo clic en el **código de referencia**. En esta página tienes todos los detalles del pago pendiente, como el ID de referencia, productos, marcas de tiempo y más.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Página de detalles del pago que muestra código de referencia, productos y totales](/img/admin/payment-edit.png)
 
-En la columna derecha, puedes cambiar el estado del pago. Al cambiarlo a **Completed** y activar la opción **Activate Membership**, habilitarás el sitio de tu cliente y su membresía quedará activa.
+En la columna derecha, puedes cambiar el estado del pago. Cambiarlo a **Completed** y **activar la opción Activate Membership** habilitará el sitio de tu cliente y su membresía estará activa.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Página de edición de pago con Status configurado en Completed y selector Activate Membership](/img/admin/payment-activate-membership.png)

@@ -1,0 +1,197 @@
+---
+title: Surélék
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Surélék {#emails}
+
+Addon Ultimate Multisite: Emails ngamungkinkeun nu boga jaringan nyayagikeun jeung ngatur akun surélék palanggan babarengan jeung situs sarta kaanggotaan. Vérsi 1.1.0 nambahkeun pangaturan akun surélék pikeun palanggan, asup tunggal webmail, dukungan forwarder CyberPanel, jeung perbaikan panyadiaan dina waktu checkout.
+
+## Fitur Utama {#key-features}
+
+* **Widget akun surélék palanggan**: Palanggan bisa nyieun jeung ngatur mailbox tina kaca Account maranéhna sanggeus miboga kaanggotaan surélék anu aktip.
+* **SSO webmail jeung tautan magic**: Palanggan bisa muka webmail langsung tina kaca Account ku auténtikasi sakali klik lamun panyadia ngadukungna.
+* **Parobahan kecap akses**: Palanggan jeung administrator bisa ngapdet kecap akses mailbox tina widget pangaturan surélék.
+* **Panyadiaan hak dina checkout**: Checkout nyieun kaanggotaan surélék, ngaitkeunana ka domain situs palanggan, jeung ngajadikeun alat mailbox dina kaca Account sadia.
+* **Forwarder CyberPanel**: Jaringan anu didukung CyberPanel bisa nyieun jeung ngatur forwarder surélék salaku bagian tina alur layanan surélék.
+* **Setélan sadar panyadia**: Kaca setélan nyaring panyadia kana integrasi anu aktip jeung geus dikonfigurasi sangkan administrator ngan ningali pilihan anu bisa dipaké.
+
+## Sarat {#requirements}
+
+* Ultimate Multisite 2.0.0 atawa leuwih luhur
+* Instalasi WordPress Multisite
+* Sahenteuna hiji integrasi panyadia surélék anu geus dikonfigurasi
+* Kredénsial API panyadia kalayan idin pikeun nyieun mailbox, ngarobah kecap akses, jeung ngaluarkeun tautan aksés webmail lamun didukung
+
+## Pamasangan {#installation}
+
+1. Unggah payil plugin ka `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktipkeun addon sacara jaringan tina **Plugin** dina admin jaringan WordPress.
+3. Buka **Ultimate Multisite** > **Setélan** sarta buka setélan surélék addon.
+4. Aktipkeun integrasi panyadia surélék anu rék dipaké ku palanggan.
+5. Simpen setélan, tuluy uji nyieun akun ku palanggan non-produksi atawa situs staging.
+
+## Kumaha Alur Ngajual Surélék Jalan {#how-the-email-seller-flow-works}
+
+Ngajual surélék miboga dua lapisan anu misah:
+
+1. **Hak** — produk/kaanggotaan surélék Ultimate Multisite anu nyebutkeun yén palanggan meunang ngagunakeun surélék pikeun domain situs, panyadia, kuota, jeung wates akun anu tangtu.
+2. **Nyieun mailbox** — mailbox panyadia anu sabenerna, saperti `info@example.com`, dijieun nalika palanggan atawa administrator jaringan milih bagian lokal jeung kecap akses.
+
+Dina waktu checkout, addon nyieun atawa ngaktipkeun **kaanggotaan surélék** jeung nyatet domain situs palanggan sarta panyadia dina kaanggotaan éta. Ieu henteu nebak ngaran mailbox atawa kecap akses. Sanggeus pameseran réngsé jeung konteks situs/domain aya, palanggan bisa muka kaca Account jeung nyieun ngaran mailbox anu dipikahayang.
+
+Ieu hartina alur palanggan normal nyaéta:
+
+1. Palanggan meuli rencana situs jeung nambahkeun produk surélék dina waktu checkout.
+2. Ultimate Multisite nyieun kaanggotaan situs jeung kaanggotaan surélék sekundér.
+3. Addon Emails ngaitkeun kaanggotaan surélék ka domain situs palanggan jeung panyadia.
+4. Palanggan muka **Account** dina dashboard maranéhna.
+5. Panel **Akun Surélék** mucunghul pikeun kaanggotaan surélék aktip éta.
+6. Palanggan ngaklik **Jieun Akun**, nuliskeun bagian lokal saperti `info`, nyetel kecap akses, sarta addon nyieun `info@their-domain.com` di panyadia anu geus dikonfigurasi.
+
+## Konfigurasi Produk Surélék {#configure-an-email-product}
+
+Jieun hiji produk surélék pikeun tiap pakét surélék anu rék dijual atawa dibikeun gratis. Lamun anjeun anyar kana setélan produk, mimitian ku [Nyieun Produk Langganan Kahiji Anjeun](../../user-guide/configuration/creating-your-first-subscription-product) tuluy balik deui ka dieu pikeun setélan husus surélék.
+
+1. Buka **Admin Jaringan > Ultimate Multisite > Produk > Tambah Produk**.
+2. Setel **Jinis Produk** jadi **Surélék**.
+3. Konfigurasi harga. Paké harga berulang anu mayar pikeun rencana anu dijual, atawa setel produk jadi gratis/harga nol lamun éta kudu jadi rencana surélék tambahan gratis.
+4. Buka bagian **Setélan Surélék**.
+5. Pilih **Panyadia Surélék** anu geus dikonfigurasi.
+6. Setel **Jumlah Akun**, **Kuota Panyimpenan (MB)**, wates alias, forwarder, jeung autoresponder sakumaha diperlukeun.
+7. Simpen produk.
+
+Ngan panyadia anu diaktipkeun jeung geus dikonfigurasi lengkep dina kaca **Integrasi** anu mucunghul dina pamilih panyadia. Lamun pamilih kosong, konfigurasi jeung uji heula panyadiana.
+
+## Tambahkeun Surélék kana Checkout {#add-email-to-checkout}
+
+Produk surélék biasana ditawarkeun minangka add-on kana rencana situs. Tingali [Formulir Checkout](../../user-guide/configuration/checkout-forms) pikeun alur gawé editor checkout umum.
+
+1. Jieun atawa édit rencana situs anu dibeuli heula ku palanggan.
+2. Tambahkeun produk surélék minangka add-on/order bump anu sadia pikeun alur checkout éta.
+3. Pastikeun formulir checkout masih ngawengku widang situs wajib anu normal, utamana widang URL/domain situs.
+4. Jalankeun checkout uji ku palanggan staging.
+5. Sanggeus checkout, buka [kaca Account](../../user-guide/client-management/account-page) palanggan jeung pastikeun panel **Akun Surélék** mucunghul.
+
+Domain surélék dicokot tina domain situs palanggan. Palanggan henteu nuliskeun domain surélék dina léngkah produk surélék.
+
+## Pangaturan Surélék Account Palanggan {#customer-account-email-management}
+
+Vérsi 1.1.0 nambahkeun widget pangaturan surélék kana kaca Account palanggan. Paké ieu lamun palanggan kudu bisa ngalayanan sorangan pikeun nyieun jeung miara mailbox pikeun situs sorangan.
+
+Tina kaca Account, palanggan bisa:
+
+1. Ningali akun surélék anu nyambung ka kaanggotaan surélék/domain situs maranéhna ayeuna.
+2. Nyieun mailbox anyar lamun produk surélék maranéhna ngidinan akun tambahan.
+3. Ngarobah kecap akses mailbox anu geus aya.
+4. Muka panyadia webmail anu didukung ngaliwatan SSO atawa login magic-link.
+
+Widget ngagunakeun sistem currents kaca Account Ultimate Multisite, jadi tindakan diwatesan kana konteks Account anu keur ditingali ku palanggan. Ieu nyegah palanggan tina ngatur akun surélék anu kagolong kana kaanggotaan atawa situs séjén.
+
+Lamun palanggan henteu ningali panel email, pariksa yén maranéhna boga **membership produk Email anu aktip**, yén membership éta geus dikaitkeun ka domain situs, sarta yén produkna boga provider anu geus dikonfigurasi.
+
+## Méré Palanggan Plan Email Gratis {#giving-a-customer-a-free-email-plan}
+
+Pikeun méré email ka palanggan tanpa narik biaya, pasihkeun **hak email** heula, tuluy jieun atawa idinan palanggan nyieun mailbox.
+
+Pilihan anu disarankeun:
+
+* **Jieun produk email gratis**: setel harga produk email jadi gratis/nol, tuluy tambahkeun membership aktip pikeun palanggan éta tina **Ultimate Multisite > Memberships > Add Membership**. Pilih produk email jeung palanggan. Membership gratis lumangsung salamina nepi ka dirobah atawa dibatalkeun. Lamun membership email dimaksudkeun pikeun nuturkeun situs anu geus aya, pastikeun éta dikaitkeun ka kontéks situs/domain éta.
+* **Paké diskon 100% atawa tautan checkout gratis**: idinan palanggan ngalangkungan checkout supaya Ultimate Multisite nyieun membership email jeung rékaman pamayaran sacara otomatis.
+* **Admin nyieun mailbox**: buka **Ultimate Multisite > Email Accounts > Add Email Account** pikeun nyieun mailbox husus di provider pikeun palanggan. Ieu mangpaat pikeun rojongan, tapi henteu ngagantikeun membership produk email anu ngajalankeun pakakas mandiri kaca akun palanggan.
+
+Lamun anjeun hoyong palanggan ngatur mailbox sorangan tina kaca akun, pastikeun maranéhna boga membership email aktip pikeun domain éta. Mailbox provider anu dijieun sacara manual tanpa membership éta bisa aya, tapi palanggan bisa waé henteu ningali panel email mandiri pikeun éta.
+
+## Akun Dijieun ku Admin jeung "Teu Aya Nomer Order" {#admin-created-accounts-and-no-order-number}
+
+Kaca admin **Email Accounts** nyieun atawa ngédit mailbox provider. Ieu lain léngkah kahiji pikeun ngajual atawa méré plan email.
+
+Nalika ngédit akun email, field **Membership** néangan membership Ultimate Multisite anu geus aya dumasar kana nomer rujukan/order-na. Lamun anjeun nyobian netepkeun akun saméméh palanggan boga membership email, bisa jadi euweuh nomer order anu bisa dipilih.
+
+Paké runtuyan léngkah ieu gantina:
+
+1. Jieun atawa panggihan membership email palanggan. Pikeun pameseran, checkout ngalakukeun ieu. Pikeun plan kompliménter, jieun membership sacara manual tina [Memberships](../../user-guide/administration/managing-memberships) atawa kirim palanggan ngalangkungan checkout gratis.
+2. Pastikeun membership aktip jeung migunakeun produk Email.
+3. Pastikeun membership email dikaitkeun ka domain/provider situs.
+4. Jieun mailbox tina kaca akun palanggan atawa tina **Ultimate Multisite > Email Accounts**.
+5. Lamun diperlukeun, édit rékaman mailbox jeung tetepkeun palanggan, membership, sarta situs.
+
+Lamun anjeun ngan perlu nyieun mailbox provider pikeun palanggan sarta henteu merlukeun pangaturan mandiri dina kaca akun, akun anu dijieun ku admin bisa geus cukup. Lamun anjeun hoyong palanggan ningali jeung ngatur éta dina Ultimate Multisite, jieun ogé membership email.
+
+## Webmail SSO jeung Login Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO méré palanggan aksi langsung **Buka webmail** tina kaca akun. Nalika dirojong ku provider aktip, addon ménta URL aksés jangka pondok sarta mindahkeun palanggan ka webmail tanpa nyuhunkeun maranéhna nyalin kredensial mailbox.
+
+Paripolah provider bisa béda-béda:
+
+* Provider anu boga API SSO asli bisa nyieun sési webmail anu geus dioténtikasi langsung.
+* Provider anu boga rojongan magic-link bisa ngahasilkeun tautan login anu kawates waktos.
+* Provider tanpa rojongan SSO atawa magic-link tetep kedah némbongkeun wincikan mailbox jeung aksi pangaturan sandi, tapi henteu aya tombol webmail sakali klik.
+
+Aktipkeun aksés webmail ngan pikeun provider anu kredensial API diperlukeunana geus anjeun konfigurasi. Lamun aksi leungit pikeun hiji provider, pastikeun heula yén provider éta aktip, geus dikonfigurasi, sarta ngarojong tautan login webmail.
+
+## Provisioning Checkout {#checkout-provisioning}
+
+Addon ngalakukeun provisioning **kontéks membership** email salila checkout. Ieu nyatet provider, wates akun, kuota, jeung domain situs supaya palanggan bisa nyieun ngaran mailbox sorangan tina kaca akun sanggeus mésér.
+
+Peluncuran anu disarankeun:
+
+1. Konfigurasi provider jeung wates produk saméméh nawarkeun produk email.
+2. Uji pameseran ku produk staging sarta pastikeun membership email dijieun.
+3. Tinjau kaca akun palanggan pikeun mastikeun widget **Email Accounts** mucunghul pikeun domain.
+4. Jieun mailbox uji tina widget.
+5. Pastikeun aksi ngarobah sandi jeung webmail saméméh ngaktipkeun alur pikeun produk produksi.
+
+Lamun provisioning gagal, akun palanggan jeung membership masih bisa aya bari membership email atawa mailbox provider merlukeun tindak lanjut administrator. Pariksa log kagiatan Ultimate Multisite jeung log provider saméméh nyobian deui.
+
+## Forwarder Email CyberPanel {#cyberpanel-email-forwarders}
+
+Pikeun jaringan anu didukung ku CyberPanel, versi 1.1.0 nambahkeun rojongan forwarder email. Paké forwarder nalika palanggan merlukeun alamat saperti `info@customer-domain.test` pikeun ngalihkeun mail ka inbox séjén tanpa nyieun mailbox lengkep.
+
+Saméméh nawarkeun forwarder, pastikeun integrasi CyberPanel geus dikonfigurasi jeung bisa dihontal. Tingali pituduh [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) pikeun host, ngaran pamaké, sandi, jeung konstanta paket anu diperlukeun.
+
+## Changelog {#changelog}
+
+### Vérsi 1.1.0 - Dirilis dina 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Anyar: Webmail SSO jeung login magic-link — palanggan tiasa ngaksés webmail langsung tina Account maranéhna ku auténtikasi sakali klik.
+* Anyar: Fungsionalitas ngarobah sandi ditambahkeun kana widget pangelolaan akun email.
+* Anyar: Pangrojong forwarder email CyberPanel.
+* Anyar: Widget pangelolaan email dina kaca Account palanggan pikeun nyieun jeung ngatur akun sacara mandiri.
+* Anyar: Provisioning hak akun email palanggan diintegrasikeun kana alur checkout.
+* Perbaikan: Hook widget kaca Account diropéa pikeun ngagunakeun pola pendaptaran UMS anu leres.
+* Perbaikan: Formulir Create Account diganti ku vanilla JS jeung kaluaran dokumén HTML lengkep anu leres.
+* Perbaikan: Widget pangelolaan email ayeuna ngagunakeun sistem currents UMS pikeun kaca Account admin.
+* Perbaikan: Formulir nyieun akun email admin ngawengku widang sandi jeung ngagunakeun Email_Account_Manager.
+* Perbaikan: Spam log per-pamundut dipiceun tina inisialisasi Email_Account_Manager.
+* Ditingkatkeun: Kaca setélan ayeuna nyaring pikeun ngan némbongkeun panyadia email anu aktip jeung geus dikonfigurasi.
+
+## Patarosan anu Mindeng Ditaroskeun {#frequently-asked-questions}
+
+### Naha palanggan tiasa nyieun akun email sorangan? {#can-customers-create-their-own-email-accounts}
+
+Leres. Nalika palanggan boga kaanggotaan email aktip pikeun domain sarta produkna ngamungkinkeun akun tambahan, palanggan tiasa nyieun jeung ngatur mailbox sorangan tina kaca Account.
+
+### Naha unggal panyadia ngarojong webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Henteu. Pangrojong SSO jeung magic-link gumantung kana panyadia email anu aktip. Panyadia anu teu boga API access-link masih tiasa ngarojong nyieun mailbox jeung parobahan sandi.
+
+### Naha administrator tiasa nyieun akun email pikeun palanggan? {#can-administrators-create-email-accounts-for-customers}
+
+Leres. Administrator tiasa nyieun akun email tina antarmuka admin, kaasup netepkeun sandi awal nalika nyieun akun. Pikeun pangelolaan mandiri ku palanggan, pastikeun ogé palanggan boga kaanggotaan email aktip pikeun domain éta.
+
+### Naha abdi tiasa masihan akun email gratis? {#can-i-give-an-email-account-away-for-free}
+
+Leres. Jieun produk Email gratis/harga-nol sarta tambahkeun salaku kaanggotaan aktip pikeun palanggan, atawa antepkeun palanggan ngalengkepan checkout ku diskon 100%. Sanggeus kaanggotaan email aya, palanggan atawa administrator tiasa nyieun mailbox sabenerna.
+
+### Kunaon napelkeun akun email naroskeun nomer pesenan? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Widang Membership milarian kaanggotaan Ultimate Multisite anu geus aya dumasar kana nomer rujukan/pesenanana. Lamun palanggan henteu mésér produk email sarta anjeun henteu nyieun kaanggotaan email sacara manual, teu aya kaanggotaan/pesenan email pikeun ditapelkeun. Jieun heula kaanggotaan email, tuluy jieun atawa tapelkeun mailbox.
+
+### Naha forwarder sarua jeung mailbox? {#are-forwarders-the-same-as-mailboxes}
+
+Henteu. Mailbox nyimpen surat jeung boga kredénsial login. Forwarder ngalihkeun surat ka alamat séjén jeung henteu nyadiakeun inbox misah.

@@ -3,13 +3,13 @@ title: Avis Retrait de Mode Constructeur Site
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Anons Soufich Mode Removal Notice
+# Anons Soufich Mode Removal Notice {#site-builder-mode-removal-notice}
 
 **Site Builder mode a été retiré dans Superdav AI Agent v1.12.0.** Si vous utilisiez le Site Builder mode, vous devez migrer vers l'agent **Setup Assistant agent** pour la création de thèmes et la configuration du site.
 
-## Kisa sa fin?
+## Kisa sa fin? {#what-happened}
 
-### Site Builder Mode (Ancien)
+### Site Builder Mode (Ancien) {#site-builder-mode-legacy}
 
 Site Builder mode se konnèt ak yon fason ki baze sou gwid (wizard-based interface) pou:
 
@@ -18,7 +18,7 @@ Site Builder mode se konnèt ak yon fason ki baze sou gwid (wizard-based interfa
 - Chwazi yon thème
 - Mete kontni inisyal la
 
-### Kisa ki te ranplase li?
+### Kisa ki te ranplase li? {#what-replaced-it}
 
 **Setup Assistant agent** kounye a jere tout fonksyonalite Site Builder ak:
 
@@ -27,15 +27,15 @@ Site Builder mode se konnèt ak yon fason ki baze sou gwid (wizard-based interfa
 - Entegrasyon avè Theme Builder onboarding
 - Memwa `site_brief` ki pèmanan pou sesyon nan lavni
 
-## Si Ou T ap Itilize Site Builder Mode
+## Si Ou T ap Itilize Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Sit Ou Anse
+### Sit Ou Anse {#your-sites-are-safe}
 
 - Sit ki te kreye ak Site Builder mode kontinye fonksyone
 - Pa gen okenn pèt done oswa koupe sit la
 - Ou ka kontinye jere sit ou nòmalman
 
-### Migre nan Setup Assistant Agent
+### Migre nan Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Pou nouvo setup sit oubyen chanjman sou thème, itilize Setup Assistant agent la:
 
@@ -51,7 +51,7 @@ oswa
 
 Setup Assistant agent la bay menm fonksyonalite sa a men plis fleksibilite.
 
-## Konparasyon: Site Builder vs. Setup Assistant
+## Konparasyon: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Fèchat | Site Builder (Retiré) | Setup Assistant (Nouvo) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent la bay menm fonksyonalite sa a men plis fleksibilite.
 | Sesyon nan lavni | Repete setup | Itilize site_brief ki estoke |
 | Fleksibilite | Workflow fiks | Konvèsasyon adaptatif |
 
-## Migre nan Setup Assistant Agent
+## Migre nan Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Pou Nouvo Sit
+### Pou Nouvo Sit {#for-new-sites}
 
 Lè pou ou pa itilize mod Site Builder :
 
@@ -76,7 +76,7 @@ Lè pou ou pa itilize mod Site Builder :
    - Jenerasyon tèm (Theme generation)
    - Konfigirasyon an premye fwa
 
-### Pou Sit Ki Genyen Déjà
+### Pou Sit Ki Genyen Déjà {#for-existing-sites}
 
 Si ou gen yon sit ki soti nan mod Site Builder :
 
@@ -85,7 +85,7 @@ Si ou gen yon sit ki soti nan mod Site Builder :
 3. Agent Asistans Setup la ap ede w kreye yon nouvo tèm
 4. Données sit ou rete menm
 
-### Pou Chanjman Tèm
+### Pou Chanjman Tèm {#for-theme-changes}
 
 Olye pou chwazi tèm nan mod Site Builder :
 
@@ -95,9 +95,9 @@ Olye pou chwazi tèm nan mod Site Builder :
    - Jenerasyon yon tèm kay (custom theme)
    - Aktive li sou sit ou a
 
-## Diferans Kle
+## Diferans Kle {#key-differences}
 
-### Mod Site Builder
+### Mod Site Builder {#site-builder-mode}
 
 ```
 1. Chwazi yon template
@@ -106,7 +106,7 @@ Olye pou chwazi tèm nan mod Site Builder :
 4. Fini
 ```
 
-### Agent Asistans Setup la
+### Agent Asistans Setup la {#setup-assistant-agent}
 
 ```
 1. Dekri objektif sit ou a
@@ -117,27 +117,27 @@ Olye pou chwazi tèm nan mod Site Builder :
 6. Brief sit la estoke pou sesyon inite
 ```
 
-## Benefis Agent Asistans Setup la
+## Benefis Agent Asistans Setup la {#benefits-of-setup-assistant-agent}
 
-### Pi Fleksib
+### Pi Fleksib {#more-flexible}
 
 - Dekri sit ou a ak lang natirèl
 - Jwenn rekòmandasyon kay (recommendations) ki espesyal pou ou
 - Adapte li selon bezwen spesifik ou yo
 
-### Pi Bon Konpòtasyon (Customization)
+### Pi Bon Konpòtasyon (Customization) {#better-customization}
 
 - Jenerasyon tèm kay (custom theme generation)
 - Desizyon sou sistèm konsepsyon an (Design system decisions)
 - Token konsepsyon ki rete pou tout tan (Persistent design tokens)
 
-### Memwa Ki Rete
+### Memwa Ki Rete {#persistent-memory}
 
 - `site_brief` ou a estoke
 - Agent inite yo konprann sit ou la
 - Pa bezwen repete enfòmasyon setup la
 
-### Flèch Travay Entegre (Integrated Workflow)
+### Flèch Travay Entegre (Integrated Workflow) {#integrated-workflow}
 
 - Onboarding Theme Builder
 - Konpetans Estetik Sistèm Konpòtasyon an (Design System Aesthetics skill)
@@ -146,7 +146,7 @@ Olye pou chwazi tèm nan mod Site Builder :
 
 "Emanje, ede m'ap ede mete yon nouvo sit?"
 
-### Mwen vle refè yon sit ki te fèt ak Site Builder
+### Mwen vle refè yon sit ki te fèt ak Site Builder {#troubleshooting}
 
 Ou ka refè li avèk ajans Setup Assistant la:
 
@@ -155,7 +155,7 @@ Ou ka refè li avèk ajans Setup Assistant la:
 3. Ajans la pral jenere yon thèm ki sanble ak sa ou te genyen
 4. `site_brief` ou a pral konsève pou referans nan lavni
 
-### Sit Site Builder mwen an kounye a pa fonksyone
+### Sit Site Builder mwen an kounye a pa fonksyone {#i-cant-find-site-builder-mode}
 
 Sit ki te kreye avèk modèl Site Builder kontinye fonksyone. Si ou ap fè fas ak pwoblèm:
 
@@ -164,7 +164,7 @@ Sit ki te kreye avèk modèl Site Builder kontinye fonksyone. Si ou ap fè fas a
 3. Kontwe log WordPress error logs (log erè WordPress)
 4. Kontakte sipò si pwoblèm yo rete
 
-### Mwen ka toujou itilize modèl Site Builder mwen anvan an?
+### Mwen ka toujou itilize modèl Site Builder mwen anvan an? {#i-want-to-recreate-a-site-from-site-builder}
 
 Modèl Site Builder la pa disponib ankò. Sepandan:
 
@@ -172,14 +172,14 @@ Modèl Site Builder la pa disponib ankò. Sepandan:
 - Ou ka refè sit ki sanble ak sa a avèk ajans Setup Assistant la
 - Ajans Setup Assistant la bay plis opsyon pou kòmanse (customization)
 
-## Etap Pou Swiv
+## Etap Pou Swiv {#my-existing-site-builder-site-isnt-working}
 
 1. **Pou nouvo sit**: Itilize ajans Setup Assistant la
 2. **Pou sit ki egziste deja**: Kontinye itilize yo jan yo ye a
 3. **Pou chanje thèm**: Demande èd de ajans Setup Assistant la
 4. **Pou amelyore konsepsyon an**: Itilize aprann Design System Aesthetics skill la
 
-## Twòp Sipò (Related Topics)
+## Twòp Sipò (Related Topics) {#can-i-still-use-my-old-site-builder-templates}
 
 - **Theme Builder Onboarding**: Mete sit ki pèsonèl pou thèm koutmye
 - **Setup Assistant Agent**: Mete sit ki gidyen pa ajans la

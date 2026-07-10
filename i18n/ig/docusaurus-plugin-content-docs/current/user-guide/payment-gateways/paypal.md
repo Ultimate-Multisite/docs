@@ -3,7 +3,7 @@ title: Nkwado PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Thiết Lập Cổng Thanh Toán PayPal (v2)
+# Thiết Lập Cổng Thanh Toán PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
@@ -13,13 +13,13 @@ Giống như Stripe, PayPal được sử dụng rộng rãi cho các khoản th
 
 Lưu ý rằng bạn cần có một **tài khoản Kinh doanh PayPal (PayPal Business account)** để lấy thông tin API cần thiết cho việc tích hợp này.
 
-## Kích hoạt PayPal trên mạng lưới của bạn
+## Kích hoạt PayPal trên mạng lưới của bạn {#enabling-paypal-on-your-network}
 
 Để bật PayPal làm phương thức thanh toán có sẵn trên mạng lưới của bạn, hãy vào **Ultimate Multisite > Settings > Payments** và đánh dấu vào ô bên cạnh PayPal.
 
 ![Kích hoạt PayPal trong các cổng thanh toán đang hoạt động](/img/config/settings-payment-gateways.png)
 
-## Sử dụng trình hướng dẫn thiết lập có hướng dẫn (guided setup wizard)
+## Sử dụng trình hướng dẫn thiết lập có hướng dẫn (guided setup wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 bổ sung một trình hướng dẫn thiết lập PayPal có hướng dẫn vào cài đặt cổng thanh toán. Sau khi bạn bật PayPal, hãy sử dụng trình hướng dẫn trên **Ultimate Multisite > Settings > Payments** để chọn cách bạn muốn kết nối với cổng và xác nhận những thông tin đăng nhập nào vẫn cần thiết trước khi lưu lại.
 
@@ -30,7 +30,7 @@ Trình hướng dẫn này hỗ trợ hai đường thiết lập:
 
 Nếu bạn không thấy tùy chọn OAuth trong trình hướng dẫn, hãy hoàn tất quy trình nhập thông tin xác thực thủ công bên dưới. Cổng thanh toán này hoạt động với cùng thông tin API Kinh doanh PayPal như các bản phát hành Ultimate Multisite 2.x trước đó.
 
-## Lấy thông tin xác thực API của PayPal
+## Lấy thông tin xác thực API của PayPal {#getting-the-paypal-api-credentials}
 
 Sau khi bạn đã bật PayPal làm cổng thanh toán, bạn sẽ cần điền vào các ô cho **Tên người dùng API** (PayPal API Username), **Mật khẩu API** (PayPal API Password) và **Chữ ký API** (PayPal API Signature).
 

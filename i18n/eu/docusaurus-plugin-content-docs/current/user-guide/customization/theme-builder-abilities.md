@@ -3,18 +3,18 @@ title: Elementu-gunearen hobekuntza-gainak
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Tema Builder Funtsioak: Block Temakakoa eta Aktibatu
+# Tema Builder Funtsioak: Block Temakakoa eta Aktibatu {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 iruditzen du bi funtzioa garrantzitsuak, zehandizko chat interface-n handiaren (block themes) generatzea eta desplokeatzea erabilizten.
 
-## Deskribapena
+## Deskribapena {#overview}
 
 **scaffold-block-theme** eta **activate-theme** funtzioak agent-ek ezagutze ditu:
 - Itzultza, produktiboa tema handia (block themes) generatzea zehandizko espezifikazioak arabera
 - Manual ingurumen edo ingurumenaren bidez tema automatikoki aktibatu dezake situren web-aldean
 - Goidutako diseinazio erabakiak bidez visua identidad bat emate dena
 
-## Block Tema Itzultzea (Scaffold)
+## Block Tema Itzultzea (Scaffold) {#scaffold-block-theme}
 
 **scaffold-block-theme** funtzioak WordPress block theme berria generatzen du, tema estruktura guztia bestela, zehandiz:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 iruditzen du bi funtzioa garrantzitsuak, zehandizko ch
 - Block style eta variantak oso espezializatutako
 - Tema metadata eta suporta deklarazioak
 
-### Ondo Erdatzea (How to Invoke)
+### Ondo Erdatzea (How to Invoke) {#how-to-invoke}
 
 Superdav AI Agentarekin chat egiten duenean, tema generatzea eskatzen dituzte:
 
@@ -38,7 +38,7 @@ Agent-ek:
 3. Beste file tema beharrezko guztiak ematen du
 4. Aktibatuera tema bat preparatzen du
 
-### Esperatuta Outputa (Expected Output)
+### Esperatuta Outputa (Expected Output) {#expected-output}
 
 Funtzioa ondo erdatuenean, lehen daude:
 
@@ -56,11 +56,11 @@ Udal outputa:
   Estatus: Aktibatuera eskatuta dagoen
 ```
 
-## Tema Aktibatu (Activate Theme)
+## Tema Aktibatu (Activate Theme) {#activate-theme}
 
 Ez dago **activate-theme** funtua, den irudia da sizketa (scaffold) egin duen edo jakin duen blokiak tema bat erabiltzeko.
 
-### Ondoan Indartzea
+### Ondoan Indartzea {#how-to-invoke-1}
 
 Tema bat sizketa egin ondoren, hemen indartu ditzakezu:
 
@@ -74,7 +74,7 @@ Muga, jakin duen tema bat indartu:
 "Twentytwentyfour temari iritu"
 ```
 
-### Esperatutako Outputa
+### Esperatutako Outputa {#expected-output-1}
 
 Indartzea ondoan egin ondoren:
 
@@ -92,7 +92,7 @@ Outputaren oinarri:
   Nota: Layout-a jartzeko homepage-a ikustu
 ```
 
-## Fluxua: Sizketa eta Indartzea
+## Fluxua: Sizketa eta Indartzea {#workflow-scaffold-and-activate}
 
 Fluxua tipikoa funtua gehiago bat amaitzen du:
 
@@ -102,7 +102,7 @@ Fluxua tipikoa funtua gehiago bat amaitzen du:
 4. **Indartzea**: "Tema indartu hemen"
 5. **Bestea**: Tema berria dagoela konformatu dituzte sitean
 
-## Design Tokens eta Customization (Disainaren Elementuak eta Ajustamenduak)
+## Design Tokens eta Customization (Disainaren Elementuak eta Ajustamenduak) {#design-tokens-and-customization}
 
 Sizketa egin den temak WordPress design tokens bat erabiltzen dute (`theme.json` bidez):
 
@@ -114,14 +114,14 @@ Sizketa egin den temak WordPress design tokens bat erabiltzen dute (`theme.json`
 
 Design tokens hauek `theme.json` arrakunde daitezke, zehatz design system guztia bat file-etik aukeratu ez duena.
 
-## Limitazioak eta Nota
+## Limitazioak eta Nota {#limitations-and-notes}
 
 - Estilak (Themes) dira `/wp-content/themes/` da dago eta WordPress-en emateko nabarmunak jarraitu behar dute.
 - Aktibazioa irakurri-emateko (permissions) eskatzen duzu zure WordPress sailbidean.
 - Themes-ek PHP kodea edozein oso txikiagoa jakinarazten du; kompleksa batzuk dira plugin-ek erabiltzea.
 - Block themes-ek bestik WordPress 5.9 eta horrek ondoren funtzionatzen dute.
 
-## Problema ezberdinetan (Troubleshooting)
+## Problema ezberdinetan (Troubleshooting) {#troubleshooting}
 
 **Estilak ez geratu ondoren ez erakusten da**
 - Estilak direktorioa dagoela eta irakurri-emateko eskatzen duela jakinarazki egiaztatu.
@@ -138,7 +138,7 @@ Design tokens hauek `theme.json` arrakunde daitezke, zehatz design system guztia
 - Caching plugin-ek jakinarazki baduzu erregitu (clear) duzu.
 - Zure WordPress versionak erabiltzen dituzten tokens-ek suportatzen duen jakinarazki ikustee.
 
-## Irudiak (Next Steps)
+## Irudiak (Next Steps) {#next-steps}
 
 Estilak aktibatu ondoren, hauek egin dezakezu:
 - **Design System Aesthetics** skill-a erabiliz tipografia, koloreak eta espazioak (spacing) estelatu.

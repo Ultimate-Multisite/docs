@@ -3,11 +3,11 @@ title: Medlemskabets udløb og sites blokering
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Medlemskabets udløb og sites blokering
+# Medlemskabets udløb og sites blokering {#membership-expiration-and-site-blocking}
 
 Denne guide forklarer, hvordan Ultimate Multisite håndterer medlemskabets udløb, prøveperioders afslutning og blokering af front-end sider. Den dækker hele livscyklussen for et medlemskab fra aktiv til udløbet, indstillingerne, der styrer, om sider skal blokeres, og hvad du skal tjekke, hvis sider stadig er tilgængelige efter et medlemskab er udløbet.
 
-## Medlemskabets statuslivscyklus
+## Medlemskabets statuslivscyklus {#membership-status-lifecycle}
 
 Hvert medlemskab i Ultimate Multisite har én af følgende statusser:
 
@@ -24,7 +24,7 @@ Gratis medlemskaber udløber ikke automatisk. Ultimate Multisite behandler dem s
 | **Expired** (Udløbet) | Er passeret udløbsdatoen og fristperioden uden fornyelse |
 | **Cancelled** (Afbrudt) | Eksplicit afbrudt af kunden eller administrator |
 
-### Hvordan medlemskaber skifter til udløbet
+### Hvordan medlemskaber skifter til udløbet {#how-memberships-transition-to-expired}
 
 Ultimate Multisite kører en baggrundstjek **hver time**, som leder efter medlemskaber, der skal markeres som udløbne. Denne tjek bruger [Action Scheduler](https://actionscheduler.org/) (ikke direkte WP-Cron) og kører som den planlagte handling `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Udløbschecket har en **indbygget fristperiode på 3 dage** som standard. Et med
 Den 3-d dags udløbsmulighed er adskilt fra indstillingen om grace period for Frontend Block. Udløbsmuligheden styrer, hvornår **status ændres** fra aktiv/på hold til udløbet. Grace period for frontend block styrer, hvornår **webstedet blokeres**, efter at status allerede er ændret.
 :::
 
-#### Automatisk fornyelse vs. Ikke-automatisk fornyelse af medlemskaber
+#### Automatisk fornyelse vs. Ikke-automatisk fornyelse af medlemskaber {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Denne forskel er vigtig for at forstå udløbsadfærden:
 
@@ -42,7 +42,7 @@ Denne forskel er vigtig for at forstå udløbsadfærden:
 
 - **Automatisk fornyelige medlemskaber** (`auto_renew = true`): Cron'ens udløbskontrol **springer disse helt over**. Betalingsportalen (Stripe, PayPal osv.) forventes at underrette Ultimate Multisite via webhooks, når et abonnement fejler eller annulleres. Hvis webhooket ikke modtages – på grund af en forkert konfigureret endpoint, en nedetid hos portalerne eller en annullering uden for systemet – kan medlemskabet forbliver `active` i det ubestemte, selv efter at udløbsdatoen er passeret.
 
-### Hvordan prøveperioder slutter
+### Hvordan prøveperioder slutter {#how-trials-end}
 
 Når prøveperioden for et trialing medlemskab udløber, foretager systemet følgende:
 
@@ -52,11 +52,11 @@ Når prøveperioden for et trialing medlemskab udløber, foretager systemet føl
 
 Denne proces kører på samme timeplan som den almindelige udløbskontrol, men **kun for ikke-automatisk fornyelige medlemskaber**. For automatisk fornyelige prøveperioder håndterer betalingsportalen overgangen fra prøveperiode til betalt abonnement.
 
-## Bloker Frontend Adgang
+## Bloker Frontend Adgang {#block-frontend-access}
 
 Som standard, når et medlemskab udløber eller sættes på pause, er **kun wp-admin dashboardet begrænset**. Websidens offentlige frontend forbliver tilgængelig for besøgende. For også at blokere offentlig adgang skal du aktivere indstillingen **Block Frontend Access**.
 
-### Konfiguration af Indstillingen
+### Konfiguration af Indstillingen {#configuring-the-setting}
 
 Gå til **Ultimate Multisite > Settings > Memberships** og aktiver **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tre relaterede indstillinger styrer denne adfærd:
 | **Frontend Block Grace Period** | Antal dage, man skal vente efter, at medlemskabet er inaktivt, før blokering sker. Sæt til `0` for øjeblikkelig blokering. | 0 |
 | **Frontend Block Page** | En side på hovedwebstedet, som besøgende omdirigeres til, når et site bliver blokeret. Hvis den ikke er sat, ser besøgende en generisk besked: "Dette site er ikke tilgængeligt i øjeblikket," med et link til login-siden for site-administratoren. | Ingen |
 
-### Hvad Besøgende Ser, Når Et Site Er Blokeret
+### Hvad Besøgende Ser, Når Et Site Er Blokeret {#what-visitors-see-when-a-site-is-blocked}
 
 Når frontend-adgang er blokeret, vil besøgende på sitet enten:
 
@@ -83,7 +83,7 @@ Når frontend-adgang er blokeret, vil besøgende på sitet enten:
 
 Site-administratorer kan stadig logge ind – login-siden bliver aldrig blokeret.
 
-### Hvad Blokeres og Hvornår
+### Hvad Blokeres og Hvornår {#what-gets-blocked-and-when}
 
 Blokeringsadfærd afhænger af medlemskabets status:
 
@@ -104,21 +104,21 @@ Selvom en prøveperiode er slut, vil et medlemskab med status `trialing` **ikke*
 Annulerede medlemskaber bliver altid blokeret, når udløbsdatoen er passeret, uanset om Bloker Frontend Access er aktiveret. Frontend Block Grace Period gælder **ikke** for annullerede medlemskaber.
 :::
 
-## Fejlfinding: Sider forbliver tilgængelige efter udløb
+## Fejlfinding: Sider forbliver tilgængelige efter udløb {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Hvis sider stadig er offentligt tilgængelige efter, at et medlemskab er udløbet, skal du gennemgå disse tjek i denne rækkefølge:
 
-### 1. Bekræft, at indstillingen Bloker Frontend Access er aktiveret
+### 1. Bekræft, at indstillingen Bloker Frontend Access er aktiveret {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Gå til **Ultimate Multisite > Settings > Memberships** og bekræft, at toggle-knappen for **Block Frontend Access** er slået til. Denne indstilling er **deaktiveret som standard**, hvilket betyder, at kun wp-admin bliver begrænset, når et medlemskab bliver inaktivt.
 
-### 2. Tjek Frontend Block Grace Period
+### 2. Tjek Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 På samme indstillingsside skal du tjekke værdien **Frontend Block Grace Period**. Hvis denne er sat til 7 dage for eksempel, vil frontenden ikke blive blokeret før 7 dage efter medlemskabets udløbsdato – selvom medlemskabets status allerede er `expired`.
 
 Sæt den til `0`, hvis du ønsker øjeblikkelig blokering, når medlemskabet bliver inaktivt.
 
-### 3. Bekræft at Medlemskabets Status Faktisk Er Ændret
+### 3. Bekræft at Medlemskabets Status Faktisk Er Ændret {#3-confirm-the-membership-status-has-actually-changed}
 
 Gå til **Ultimate Multisite > Memberships** og tjek status for det berørte medlemskab. Hvis det stadig viser `active` på trods af, at udløbsdatoen er passeret, er overgangen i status ikke sket. Almindelige årsager:
 
@@ -126,7 +126,7 @@ Gå til **Ultimate Multisite > Memberships** og tjek status for det berørte med
 
 - **Cron jobbet har ikke kørt**: Se næste trin.
 
-### 4. Verificer at Action Scheduler Er Kørende
+### 4. Verificer at Action Scheduler Er Kørende {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite bruger Action Scheduler til sine cron jobs. Gå til **Tools > Scheduled Actions** i netværksadministratoren og kig efter:
 
@@ -148,7 +148,7 @@ For at sikre pålidelig cron-kørsel skal du opsætte en system cron job:
 */5 * * * * cd /sti/til/wordpress && wp cron event run --due-now --url=https://din-netværks-url.com
 ```
 
-### 5. Tjek for problemer med Gateway Webhooks (Automatisk genfornyelse af Medlemskaber)
+### 5. Tjek for problemer med Gateway Webhooks (Automatisk genfornyelse af Medlemskaber) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Hvis et medlemskab automatisk fornyes, og gateway-abonnementet er blevet annulleret eller fejlet, men Ultimate Multisite stadig viser det som `aktivt`:
 
@@ -157,7 +157,7 @@ Hvis et medlemskab automatisk fornyes, og gateway-abonnementet er blevet annulle
 
 Hvis gateway viser abonnementet som annulleret, men Ultimate Multisite ikke gør det, er webhook-notifikationen sandsynligvis gået tabt. Du kan manuelt ændre medlemskabets status i **Ultimate Multisite > Memberships > [Rediger Medlemskab]**.
 
-### 6. Tjek Udløbsgrænseperioden (Cron Niveau)
+### 6. Tjek Udløbsgrænseperioden (Cron Niveau) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron-tjekket har sin egen udløbsgrænseperiode (standard: 3 dage) før et medlemskab markeres som udløbet. Dette er adskilt fra udløbsgrænseperioden for frontend-blokken. Den samlede tid, før en side blokeres, kan være:
 
@@ -165,7 +165,7 @@ Cron-tjekket har sin egen udløbsgrænseperiode (standard: 3 dage) før et medle
 
 For eksempel, med standardindstillinger og en 7-dages frontend grace period kan det tage op til 10 dage efter `date_expiration`, før siden reelt bliver blokeret.
 
-### 7. Manuel udløb af et medlemskab
+### 7. Manuel udløb af et medlemskab {#7-manually-expire-a-membership}
 
 Hvis du har brug for at blokere en side med det samme uden at vente på cron-cyklussen, kan du manuelt ændre medlemskabets status:
 
@@ -176,7 +176,7 @@ Hvis du har brug for at blokere en side med det samme uden at vente på cron-cyk
 
 Frontend-blokeringen træder i kraft ved den næste sideindlæsning (underlagt Frontend Block Grace Period for udløbne medlemskaber, eller øjeblikkeligt for afbrudte medlemskaber).
 
-## Sammenfatning
+## Sammenfatning {#summary}
 
 Den fulde tidslinje fra udløbsdato til sidblokering:
 
@@ -208,7 +208,7 @@ For afbrudte medlemskaber er vejen kortere:
   Sidens frontend blokeres øjeblikkeligt
 ```
 
-## Udviklerreference
+## Udviklerreference {#developer-reference}
 
 Følgende hooks og filters giver dig mulighed for at tilpasse udløbs- og blokeringsadfærd:
 

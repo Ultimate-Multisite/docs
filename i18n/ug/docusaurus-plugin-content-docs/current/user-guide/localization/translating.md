@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite-i Tarjuma Qilingan
+# Ultimate Multisite-i Tarjuma Qilingan {#translating-ultimate-multisite}
 
 Ultimate Multisite ingliz tilida ishlab chiqilgan, lekin bu plugin to'liq tarjima qilinishi mumkin va biz tarjimaga hissa qo'shishni faol xohlaymiz.
 
-## Asosiy Plugin Tarjimalari
+## Asosiy Plugin Tarjimalari {#core-plugin-translations}
 
 Asosiy Ultimate Multisite plugin rasmiy **WordPress.org tarjima platformasi** orqali tarjima qilinadi:
 
@@ -24,7 +24,7 @@ Bu standart WordPress jamoatchiligi tarjima tizimidir. Tarjimalar yetarli tasdiq
 
 Agar siz o'z til uchun tarjima tahririga aylanishni istasangiz (tarjimalarni tasdiqlash imkoniyatiga ega bo'lgan), [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) orqali murojaat qiling.
 
-## Addon Tarjimalari
+## Addon Tarjimalari {#addon-translations}
 
 Addon pluginlar alohida quyidagi joyda tarjima qilinadi:
 
@@ -32,11 +32,11 @@ Addon pluginlar alohida quyidagi joyda tarjima qilinadi:
 
 Hozircha addon tarjimalari boshlang'ich nuqta sifatida AI orqali yaratilgan. Ular qo'llab-quvvatlanadigan barcha tillarni qamrab oladi, lekin ular noqulay iboralar yoki noto'g'riliklar o'zida bo'lishi mumkin. Biz inson tarjimonlarni ularni tabiiyroq va aniqroq qilish uchun ko'rib chiqish va taklif qilishlari uchun xush ko'ramiz.
 
-## Mahalliy Tarjimalar
+## Mahalliy Tarjimalar {#local-translations}
 
 Əgər siz öz layihəniz üçün yerli tərcümələr yaratmaq istəyirsiniz, yuxarıdan (upstream) töhfə vermək əvəzinə, iki seçiminiz var:
 
-### Poedit İstifadə Etmək
+### Poedit İstifadə Etmək {#using-poedit}
 
 `.pot` faylını tərcümə etmək üçün masaüstü proqramı olan **[Poedit](https://poedit.net)**-i istifadə edə bilərsiniz:
 
@@ -46,6 +46,6 @@ Hozircha addon tarjimalari boshlang'ich nuqta sifatida AI orqali yaratilgan. Ula
 4. Yadda saxlayın -- Poedit sizə `.po` və `.mo` fayllarını yaradacaq
 5. Çıxış fayllarını `lang` qovluğuna yerləşdirin
 
-### Loco Translate İstifadə Etmək
+### Loco Translate İstifadə Etmək {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin-i sizə masaüstü alətləri olmadan birbaşa admin panelindən tərcümə etməyə imkan verir. O, sizin üçün tərcümə fayllarını yaratma və kompilyasiya etmə işini görür.

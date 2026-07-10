@@ -3,11 +3,11 @@ title: Dashboard Overzicht
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview
+# Dashboard Overview {#dashboard-overview}
 
 Ultimate Multisite heeft een speciale **Dashboard** onder het Ultimate Multisite-menu, en voegt ook widgets toe aan het Netwerk Dashboard. Dit artikel behandelt wat je op beide plaatsen zult zien.
 
-## The Network Dashboard
+## The Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite injecteert nuttige widgets in het netwerk-niveau dashboard dat te vinden is op **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Hier is wat elke widget biedt:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## The Ultimate Multisite Dashboard
+## The Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Terwijl het netwerk dashboard holistische informatie over het netwerk presenteert, toont het Ultimate Multisite dashboard (op het hoogste niveau van het Ultimate Multisite-menu) informatie over de dienst.
 

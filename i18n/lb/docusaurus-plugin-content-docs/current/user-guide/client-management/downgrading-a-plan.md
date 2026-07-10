@@ -3,13 +3,13 @@ title: Plan absenke
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan herstelle (v2)
+# Plan herstelle (v2) {#downgrading-a-plan-v2}
 
 _**WICHTIGE NOTIZ: Däri Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
 
 D'Herstellig oder Herstelligsplan z'senke isch e übliche Sach, wo dini Kunde mache chönnte, wenn sie es begrenzts Budget händ oder beschlosse händ, dass sie nöd vill Ressource bruuche, um ihri Subsite laufe z'lah.
 
-## Wie man en Plan herstelle chan (downgrade)
+## Wie man en Plan herstelle chan (downgrade) {#how-to-downgrade-a-plan}
 
 Dini Kunde chönd ihren Plan jederzeit herstelle, indem sie sich i s'Admin-Dashboard vo ihrer Subsite iilogge und uf **Change** unter ihrem Account-Page klicke.
 
@@ -25,7 +25,7 @@ Um wiiterz'gah, muess de Benutzer nur uf de Button **Complete Checkout** klicke.
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Was passiert, wenn en Benutzer sini Plan herstellt (downgrade)?
+### Was passiert, wenn en Benutzer sini Plan herstellt (downgrade)? {#what-happens-when-a-user-downgrades-their-plan}
 
 Es isch wichtig z'beachte, dass d'Herstellig vom Plan d'aktuelli Konfigurationsi in de Subsite vom Benutzer nöd ändert.
 
@@ -37,7 +37,7 @@ Für Posts, wo über d'Limit vom Plan ligge, hesch 3 verschiedeni Möglichkeite:
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Was passiert mit de Zahlig
+### Was passiert mit de Zahlig {#what-happens-to-the-payment}
 
 In Version 2.0 bruchsch du kei Anpassige meh bi de Proration vo de Zahlig.
 

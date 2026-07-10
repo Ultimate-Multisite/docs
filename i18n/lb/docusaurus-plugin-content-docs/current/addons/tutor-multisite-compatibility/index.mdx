@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite-Kompatibilité
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+E WordPress-Plugin, deen Kompatibilitéitsfixe fir Tutor LMS a Multisite-Ëmfeld derbäisetzt.
+
+## Beschreiwung {#description}
+
+Dëse Plugin liwwert wesentlech Kompatibilitéitsfixe fir Tutor LMS op WordPress-Multisite-Netzwierker ze bedreiwen. En behandelt Benotzeraschreiwung, Instrukteurverwaltung, Cours-Limitatiounen an aner Multisite-spezifesch Funktionalitéit.
+
+## Funktiounen {#features}
+
+- **Datebanktabell-Verwaltung**: Erkennt automatesch feelend Tutor LMS-Tabellen a leet se un, wann se wéinst Multisite-Fremdschlëssel-Aschränkunge feelgeschloen sinn
+- **Multisite-Benotzeraschreiwung**: Eegen AJAX-Handler fir d'Verwaltung vun der Benotzeraschreiwung iwwer Netzwierk-Websäiten
+- **Instrukteur-Rolleverwaltung**: Automatesch Zouweisung a Verwaltung vun Instrukteur-Rollen a Multisite-Ëmfeld
+- **Cours-Limitatiounen**: Integratioun mat Ultimate Multisite fir d'Verwaltung vu Limitte fir d'Erstelle vu Coursen a Funnels baséiert op Websäitpläng
+- **Eegen Admin-Usiichten**: Multisite-bewosst Instrukteur-Lëscht a Verwaltungsinterface
+- **Admin-Tools**: Datebankverwaltungsinterface fir Netzwierk- a Websäitadministrateuren
+
+## Ufuerderungen {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS-Plugin (automatesch duerch den `Requires Plugins` header duerchgesat)
+- WordPress-Multisite-Installatioun
+- Ultimate Multisite-Plugin (fir d'Funktionalitéit vu Cours-Limitatiounen)
+
+## Installatioun {#installation}
+
+1. Luet d'Plugin-Dateien op `/wp-content/plugins/tutor-multisite-compatibility/` erop
+2. Gitt sécher, datt Tutor LMS installéiert an aktivéiert ass
+3. Aktivéiert de Plugin iwwer de 'Plugins'-Menü a WordPress
+4. De Plugin integréiert sech automatesch mat Tutor LMS
+
+## Datestruktur {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Funktionalitéit aus dem MU plugin geréckelt {#functionality-moved-from-mu-plugin}
+
+Dëse Plugin enthält Funktionalitéit, déi virdrun an `wp-content/mu-plugins/daves.php` war:
+
+- Limitatioune fir Cours-Statusännerungen
+- Limitatioune fir d'Erstelle vu Coursen
+- CartFlows-Integratioun a Limiten
+- Tutor-Instrukteur-Rolleverwaltung
+- Behandlung vu Multisite-Benotzeraschreiwung
+- Uweise vun der Cours-Produkt-ID
+
+## Datebankverwaltung {#database-management}
+
+### De Problem {#the-problem}
+
+A WordPress-Multisite-Ëmfeld feelt d'Erstelle vun Tutor LMS-Tabellen fir Tabellen mat Fremdschlëssel-Aschränkungen op d'Benotzertabell. Dat geschitt well:
+
+- Websäit-spezifesch Tabelle Präfixer wéi `wp_2_tutor_carts` benotzen
+- Fremdschlëssele referenzéieren `wp_2_users` (wat net existéiert)
+- Déi tatsächlech Benotzertabell ass `wp_users` (iwwer d'Netzwierk gedeelt)
+
+### D'Léisung {#the-solution}
+
+Dëse Plugin mécht automatesch:
+
+1. **Erkennt feelend Tabellen**: Kontrolléiert op Tabellen, déi wéinst Fremdschlëssel-Aschränkungen net erstallt goufen
+2. **Erstellt Tabelle mat korrekte Referenzen**: Benotzt de richtegen Numm vun der Benotzertabell (`wp_users` am Multisite)
+3. **Behandelt méi Szenarien**:
+   - Plugin-Aktivéierung/Reaktivéierung
+   - Erstelle vun enger neier Websäit am Netzwierk
+   - Manuell Tabelleniwwerpréiwung iwwer den Admin-Interface
+
+### Betraffen Tabellen {#affected-tables}
+
+- `tutor_coupon_usages` - Enthält e Fremdschlëssel op d'Benotzertabell
+- `tutor_carts` - Enthält e Fremdschlëssel op d'Benotzertabell
+- `tutor_notification_preferences` - TutorPro-Tabell mat engem Fremdschlëssel op d'Benotzertabell
+
+### Admin-Interface {#admin-interface}
+
+Gräift op d'Datebankverwaltungs-Tools hei zou:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Den Interface erlaabt Iech:
+- Feelend Tabellen iwwer all Websäiten ze gesinn
+- D'Erstelle vun Tabellen manuell auszeléisen
+- D'Datebankkonfiguratioun ze kontrolléieren
+- Detailléiert Statusinformatiounen ze gesinn
+
+## Ënnerstëtzung {#support}
+
+Dëse Plugin ass speziell fir d'KursoPro-Plattform entwéckelt. Fir technesch Ënnerstëtzung kontaktéiert wgl. d'Entwécklungsteam.

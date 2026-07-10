@@ -3,27 +3,27 @@ title: Exportare Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportarea Site-ului
+# Exportarea Site-ului {#site-export}
 
 Pagina de administrare **Site Export** vă permite administratorilor de rețea să încapsuleze un singur site sau întreaga rețea într-un arhivă descărcabilă, pentru migrare, backup sau predare către un alt utilizator.
 
-## Exportarea unui singur site
+## Exportarea unui singur site {#exporting-one-site}
 
 Mergeți la **Ultimate Multisite > Site Export** și selectați **Generate new Site Export**. Alegeți subsite-ul pe care doriți să îl exportați, apoi decideți dacă arhiva trebuie să includă încărcările (uploads), plugin-urile și temele.
 
 După ce exportarea este finalizată, descărcați fișierul ZIP din lista **Existing Exports**. Fișierele ZIP de export acum includ un `index.php` auto-pornit și un `readme.txt`, astfel încât arhiva poate fi încărcată pe un host nou și pornită fără a instala mai întâi un plugin de importator separat.
 
-## Exportarea întregii rețele
+## Exportarea întregii rețele {#exporting-the-whole-network}
 
 Folosiți **Network Export** de pe pagina Site Export atunci când aveți nevoie de o singură arhivă care să conțină toate subsite-urile din rețea. Acest lucru este util înainte de migrații de host, exerciții de recuperare după dezastre sau reconstrucții de staging, în care fiecare subsite trebuie să călătorească împreună.
 
 Deoarece o exportare de rețea poate fi mult mai mare decât o exportare de singur site, rulați procesul în timpul unei perioade cu trafic redus și confirmați că spațiul de stocare țintă are suficient spațiu liber pentru încărcări, plugin-uri, teme și fișierele ZIP generate.
 
-### Bundele de import pentru rețea
+### Bundele de import pentru rețea {#network-import-bundles}
 
 Începând cu Ultimate Multisite 2.12.0, Site Exporter poate genera **network import bundles** — arhive specializate concepute pentru restaurarea site-urilor la nivel de rețea, în mod optimizat. Un network import bundle conține toate fișierele și metadatele necesare pentru a restaura multiple site-uri pe o nouă instalare de rețea.
 
-#### Generarea unui Network Import Bundle
+#### Generarea unui Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Mergeți la **Ultimate Multisite > Site Export**
 2. Faceți clic pe **Generate new Network Export**
@@ -32,7 +32,7 @@ Deoarece o exportare de rețea poate fi mult mai mare decât o exportare de sing
 5. Faceți clic pe **Generate**
 6. Descărcați bundle-ul ZIP din lista **Existing Exports**
 
-#### Restaurarea dintr-un Network Import Bundle
+#### Restaurarea dintr-un Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Pentru a restaura site-uri dintr-un network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles păstrează:
 - Încărcările media (dacă sunt incluse în bundle)
 - Tabelele și datele personalizate din baza de date
 
-## Instalarea unui ZIP de export auto-pornit
+## Instalarea unui ZIP de export auto-pornit {#installing-a-self-booting-export-zip}
 
 Pentru a restaura un ZIP auto-pornit pe un host nou:
 

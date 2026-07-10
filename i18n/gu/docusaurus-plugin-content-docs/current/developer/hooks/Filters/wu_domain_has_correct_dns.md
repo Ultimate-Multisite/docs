@@ -4,11 +4,11 @@ title: ફિલ્ટર - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 પ્લગઇન ડેવલપર્સને પરિણામોને વ્યાખ્યાયિત કરવા માટે નવી તપાસો ઉમેરવાની મંજૂરી આપે છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | વર્તમાન ડોમેન ઇન્સ્ટન્સ. |
 | $domains_and_ips | `array` | DNS લુકઅપ પર મળેલા ડોમેન અને IP ની યાદી. |
 
-### Since
+### Since {#since}
 
 - 2.0.4
-### Source
+### Source {#source}
 
 [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) માં લાઇન 455 પર વ્યાખ્યાયિત છે.
 
 
-## Returns
+## Returns {#returns}
 જો DNS યોગ્ય રીતે સેટઅપ થયેલ છે કે નહીં.

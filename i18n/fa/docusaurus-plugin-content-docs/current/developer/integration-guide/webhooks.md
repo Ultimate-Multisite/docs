@@ -3,11 +3,11 @@ title: مدیریت وب‌هوک
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# مدیریت Webhook
+# مدیریت Webhook {#webhook-handling}
 
 نحوه ایجاد Endpointهای Webhook سفارشی برای دریافت رویدادها از سرویس‌های خارجی و همگام‌سازی داده‌ها با Ultimate Multisite.
 
-## Endpoint Webhook سفارشی
+## Endpoint Webhook سفارشی {#custom-webhook-endpoint}
 
 ```php
 // ثبت Endpoint Webhook
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## ملاحظات امنیتی
+## ملاحظات امنیتی {#security-considerations}
 
 - همیشه امضای Webhook را با استفاده از HMAC یا یک کلید مخفی مشترک (shared secret) تأیید کنید.
 - در مسیر REST خود از یک `permission_callback` استفاده کنید — هرگز آن را در محیط Production روی `__return_true` قرار ندهید.

@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ziada za Ultimate Multisite
+# Ziada za Ultimate Multisite {#ultimate-multisite-addons}
 
 Ziada hizi huimarisha Ultimate Multisite kwa kuongeza vipengele na uunganishaji mbalimbali. Ziada nyingi ni za kulipia na unaweza kuzinunua kutoka [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 Ziada zinaweza kusakinishwa kwa njia mbili:
 
 1. **Kupitia Ukurasa wa Ziada** -- Nenda kwenye ukurasa wa usimamizi wa ziada ya tovuti yako katika sehemu ya admin ya WordPress.
 2. **Upakaji wa Mikono** -- Undownload kutoka [your account](https://ultimatemultisite.com/my-account/downloads/) na upakie kupitia Plugins > Add New.
 
-## Ziada Zinazopatikana
+## Ziada Zinazopatikana {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

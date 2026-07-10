@@ -3,17 +3,17 @@ title: 'Dars 12: Biznesni Yuritish'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Ders 12: İşletmeyi Yürütmek
+# Ders 12: İşletmeyi Yürütmek {#lesson-12-running-the-business}
 
 Bir platform, bitirilecek bir proje değildir; yönetilmesi gereken bir işletmedir. Bu ders, FitSite'ı yönetmenin günlük operasyonlarını ele alıyor: destek, faturalandırma, bakım ve müşterileri mutlu tutmak.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite yayında ve müşteriler kaydoluyor. Şimdi operasyonu sürdürülebilir bir şekilde yürütmeniz gerekiyor.
 
-## Günlük Operasyonlar
+## Günlük Operasyonlar {#daily-operations}
 
-### İzleme (Monitoring)
+### İzleme (Monitoring) {#monitoring}
 
 Bunları günlük olarak kontrol edin (veya uyarı sistemi kurun):
 
@@ -22,7 +22,7 @@ Bunları günlük olarak kontrol edin (veya uyarı sistemi kurun):
 - **Başarısız Ödemeler**: Dikkat edilmesi gereken ödeme başarısızlıkları var mı?
 - **Destek Talepleri**: Cevaplanmamış müşteri soruları var mı?
 
-### Müşteri Desteği
+### Müşteri Desteği {#customer-support}
 
 Niş odak noktanız burada bir avantaj. Tüm müşterileriniz fitness stüdyosu olduğu için, aynı soruları sürekli olarak göreceksiniz:
 
@@ -36,7 +36,7 @@ Niş odak noktanız burada bir avantaj. Tüm müşterileriniz fitness stüdyosu 
 
 Bilgi tabanınızı (8. Derste başladınız) bu tekrarlayan sorular etrafında oluşturun. Bir bilgi tabanı makalesi olabilecek her destek bileti, o makaleyi yazmanız gerektiğine dair bir işarettir.
 
-### Destek Seviyeleri (Support Tiers)
+### Destek Seviyeleri (Support Tiers) {#support-tiers}
 
 Büyüdükçe, desteği plana göre yapılandırın:
 
@@ -48,9 +48,9 @@ Büyüdükçe, desteği plana göre yapılandırın:
 
 [Support Tickets addon](/addons/support-tickets), platform içinde destek taleplerini yönetmenize yardımcı olabilir.
 
-## Faturalandırma Operasyonları
+## Faturalandırma Operasyonları {#billing-operations}
 
-### Tekrarlayan Ödemeler (Recurring Payments)
+### Tekrarlayan Ödemeler (Recurring Payments) {#recurring-payments}
 
 Ultimate Multisite, ödeme ağ geçidiniz (payment gateway) aracılığıyla tekrarlayan faturalandırmayı otomatik olarak halleder. Sizin göreviniz şunları izlemektir:
 
@@ -58,7 +58,7 @@ Ultimate Multisite, ödeme ağ geçidiniz (payment gateway) aracılığıyla tek
 - **Dunning**: Ödeme ağ geçidiniz üzerinden otomatik yeniden deneme mantığı kurun (Stripe bunu çok iyi halleder).
 - **İptal Talepleri**: Müşterilerin neden ayrıldığını anlayın. Her iptal, bir geri bildirimdir.
 
-### Üyelikleri Yönetmek (Managing Memberships)
+### Üyelikleri Yönetmek (Managing Memberships) {#managing-memberships}
 
 Şu adımları yapmak için **Ultimate Multisite > Memberships** bölümüne gidin:
 
@@ -69,13 +69,13 @@ Ultimate Multisite, ödeme ağ geçidiniz (payment gateway) aracılığıyla tek
 
 Detaylı referans için [Managing Memberships](/user-guide/administration/managing-memberships) bölümüne bakın.
 
-### Faturalandırma (Invoicing)
+### Faturalandırma (Invoicing) {#invoicing}
 
 Her ödeme için faturaların doğru oluşturulduğundan emin olun. Müşteriler, iş gideri raporlaması için faturaya ihtiyaç duyabilirler. [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices) bölümüne bakın.
 
-## Platform Bakımı
+## Platform Bakımı {#platform-maintenance}
 
-### WordPress ve Plugin Güncellemeleri
+### WordPress ve Plugin Güncellemeleri {#wordpress-and-plugin-updates}
 
 Ağ yöneticisi olarak, şunlardan sorumlusunuz:
 
@@ -88,14 +88,14 @@ Ağ yöneticisi olarak, şunlardan sorumlusunuz:
 Bozuk bir güncelleme, ağınızdaki her müşteri sitesini etkiler. Güncellemeleri her zaman önce ağınızın bir staging kopyasında test edin.
 :::
 
-### Güvenlik (Security)
+### Güvenlik (Security) {#security}
 
 - Tüm yazılımları güncel tutun
 - Yönetici hesapları için güçlü şifreler ve iki faktörlü kimlik doğrulama kullanın
 - Şüpheli aktiviteyi izleyin
 - Güvenlik olayları için bir planınız olsun
 
-### Performans (Performance)
+### Performans (Performance) {#performance}
 
 Ağınız büyüdükçe, şunları izleyin:
 
@@ -105,9 +105,9 @@ Ağınız büyüdükçe, şunları izleyin:
 
 Eğer henüz yapmadıysanız, önbellekleme (sayfa önbelleği, nesne önbelleği) ve bir CDN uygulamasını düşünün. [Cloudflare entegrasyonu](/user-guide/host-integrations/cloudflare) bunun çoğunu halleder.
 
-## Müşteri Yaşam Döngüsü Yönetimi
+## Müşteri Yaşam Döngüsü Yönetimi {#customer-lifecycle-management}
 
-### Kayıp Müşteriyi Azaltmak (Reducing Churn)
+### Kayıp Müşteriyi Azaltmak (Reducing Churn) {#reducing-churn}
 
 Churn (kayıp oranı), her ay iptal eden müşteri yüzdesidir. Bir abonelik işi için, churn'ü azaltmak, yeni müşteri kazanmak kadar önemlidir.
 
@@ -119,7 +119,7 @@ Churn (kayıp oranı), her ay iptal eden müşteri yüzdesidir. Bir abonelik iş
 - Daha ucuz bir alternatif buldular → niş değerinizi pekiştirin
 - İşleri kapandı → kaçınılmaz, ancak bunu ayrı takip edin
 
-### Yükseltmeleri Teşvik Etmek
+### Yükseltmeleri Teşvik Etmek {#encouraging-upgrades}
 
 Starter planındaki ve başarılı olan müşteriler yükseltmeye teşvik edilmelidir:
 
@@ -127,7 +127,7 @@ Starter planındaki ve başarılı olan müşteriler yükseltmeye teşvik edilme
 - Growth planı özelliklerini fayda sağlayacakları vurgulayan hedefli e-postalar gönderin
 - Growth/Pro müşterilerinin neler inşa ettiğini sergileyin
 
-### Geri Kazanım Kampanyaları (Win-Back Campaigns)
+### Geri Kazanım Kampanyaları (Win-Back Campaigns) {#win-back-campaigns}
 
 Bir müşteri iptal ettiğinde:
 
@@ -135,30 +135,30 @@ Bir müşteri iptal ettiğinde:
 2. Mümkünse endişelerini giderin
 3. Geri dönmesi için indirim teklif edin (iptalden 30-60 gün sonra)
 
-## Haftalık ve Aylık Rutinler
+## Haftalık ve Aylık Rutinler {#weekly-and-monthly-routines}
 
-### Haftalık
+### Haftalık {#weekly}
 
 - Yeni kayıtları ve iptalleri gözden geçirin
 - Açık tüm destek biletlerine yanıt verin
 - Platform performansını ve çalışma süresini kontrol edin
 - Herhangi bir başarısız ödemeyi kontrol edin
 
-### Aylık
+### Aylık {#monthly}
 
 - Temel metrikleri analiz edin (MRR, churn, yeni müşteriler, yükseltmeler)
 - WordPress ve plugin güncellemelerini uygulayın (staging testinden sonra)
 - Destek kalıplarına göre bilgi tabanını gözden geçirin ve güncelleyin
 - Müşterilere bir bülten veya güncelleme gönderin (yeni özellikler, ipuçları, fitness sektörü haberleri)
 
-### Üç Aylık (Quarterly)
+### Üç Aylık (Quarterly) {#quarterly}
 
 - Fiyatlandırmayı rakiplerle ve müşteri geri bildirimleriyle karşılaştırın
 - Şablon tasarımlarını değerlendirin -- yenilenmeye ihtiyaçları var mı?
 - Barındırma kapasitesini değerlendirin -- ölçeklenmeniz gerekiyor mu?
 - Aktivasyon verilerine dayanarak kurulum sürecini gözden geçirin ve iyileştirin
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - Çalışma süresi, kayıtlar, ödemeler ve destek için **Günlük izleme rutinleri**
 - Plan seviyelerine uygun **Katmanlı bir destek yapısı**

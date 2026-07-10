@@ -3,7 +3,7 @@ title: Sharelių linkų valdymas planams
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Planų dalinamos nuorodų valdymas
+# Planų dalinamos nuorodų valdymas {#managing-shareable-links-for-plans}
 
 Ultimate Multisite suteikia jums pasirinkimą dalinti planų nuorodas tiesiogiai su savo klientais. Kad tai padarytumėte, eikite į bet kurį jūsų planų redaguojimo puslapį ir paspauskite mygtuką „_Click to copy the Shareable Link_“ (Paspausti, kad nukopiu dalinamos nuorodą).
 

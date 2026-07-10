@@ -3,9 +3,9 @@ title: Catatan Perubahan Multi-Jaringan
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Catatan Perubahan Multi-Network
+# Catatan Perubahan Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Baru: Pratinjau template jaringan — jelajahi dan pratinjau template jaringan dengan panel langsung sebelum membeli.
 * Baru: Pemilih template jaringan saat checkout — pelanggan dapat memilih template jaringan selama alur checkout pendaftaran.
 * Baru: SSO magic link lintas jaringan — pelanggan dapat mengakses sub-jaringan dengan mulus melalui otentikasi magic-link.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Perbaikan: Perlindungan terhadap kunci `network_id` yang tidak terdefinisi dalam cakupan kueri situs.
 * Perbaikan: Pemeriksaan izin jaringan sebelum peralihan konteks mencegah kesalahan properti tabel `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Perbaikan: Membuat jaringan baru.
 * Perbaikan: Merender Menu.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Diperbarui ke Plugin Update Checker v5
 * Menambahkan header plugin WordPress modern
 * Meningkatkan kompatibilitas dengan versi WordPress terbaru
 
-### 1.0.2
+### 1.0.2 {#102}
 * Perbaikan bug dan peningkatan kinerja
 * Peningkatan isolasi jaringan
 
-### 1.0.0
+### 1.0.0 {#100}
 * Rilis awal
 * Fungsionalitas multi-jaringan inti
 * Integrasi dengan Multisite Ultimate

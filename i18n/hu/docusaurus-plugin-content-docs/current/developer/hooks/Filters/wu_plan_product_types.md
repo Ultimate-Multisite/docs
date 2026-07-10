@@ -4,24 +4,24 @@ title: Szűrő - wu_plan_product_types
 sidebar_label: wu_plan_product_types
 _i18n_hash: 8aabbc879ded9ee68419d20dc6b94ec5
 ---
-# Szűrő: wu_plan_product_types
+# Szűrő: wu_plan_product_types {#filter-wuplanproducttypes}
 
 Ez a szűrő meghatározza azokat a termék típusokat, amelyeket tervként kell kezelni.
 
 Ez a szűrő lehetővé teszi az addonsok számára, hogy regisztráljanak további termék típusokat, amelyeket érvényesítési és szegregációs (tárolási) szempontból tervként kell felismerni.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
 | $plan_types | `array` | Azok a termék típusok tömbüke, amelyeket tervként kell kezelni. |
 
-### Since
+### Since {#since}
 
 - 2.3.0
-### Source
+### Source {#source}
 
 Definíciója található [`inc/functions/product.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/product.php#L196) fájlban, 196-sorban.
 
 
-## Returns
+## Returns {#returns}

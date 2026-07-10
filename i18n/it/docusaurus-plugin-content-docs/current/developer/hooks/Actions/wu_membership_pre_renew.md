@@ -4,11 +4,11 @@ title: Azione - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Azione: wu_membership_pre_renew
+# Azione: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Scatta prima del rinnovo dell'abbonamento.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Scatta prima del rinnovo dell'abbonamento.
 | $membership_id | `int` | L'ID dell'abbonamento. |
 | $membership | `\Membership` | Oggetto Membership. |
 
-### Dal
+### Dal {#since}
 
 - 2.0
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) at line 2204

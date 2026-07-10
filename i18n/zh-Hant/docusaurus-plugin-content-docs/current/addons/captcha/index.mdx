@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **阻止機器人。保護收入。零配置困擾。**
 
@@ -15,7 +15,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 **Ultimate Multisite：Captcha 徹底改變一切。**
 
-## Cap Captcha：無需設定的自託管保護
+## Cap Captcha：無需設定的自託管保護 {#cap-captcha-self-hosted-protection-that-just-works}
 
 我們全新的 **Cap Captcha** 提供者對於多站點網路來說是一個遊戲規則改變者：
 
@@ -25,7 +25,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 * **隱形工作證明** — 使用者會在背景解決一個計算謎題。沒有按消防栓，沒有令人沮喪的圖片網格。
 * **輕量級** — 僅 20KB。不會拖慢您的結帳速度。
 
-## WooCommerce 卡片測試保護
+## WooCommerce 卡片測試保護 {#woocommerce-card-testing-protection}
 
 卡片測試攻擊每年讓商家損失數十億美元。詐騙分子使用機器人來驗證竊取的信用卡是否有效，這些卡片會對您的 WooCommerce 結帳頁面進行測試——您支付了處理費用，而他們卻獲得了有效的卡號。
 
@@ -35,7 +35,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 * **與 PayPal 支付相容** — 與 WooCommerce PayPal Payments 無縫協作
 * **即時統計數據** — 精確了解您正在阻止多少次攻擊
 
-## 仍需要 Google reCAPTCHA 或 hCaptcha？
+## 仍需要 Google reCAPTCHA 或 hCaptcha？ {#still-need-google-recaptcha-or-hcaptcha}
 
 我們為您準備好了。完全支援：
 
@@ -47,14 +47,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 您可以隨時從網路設定中切換提供者。
 
-## 為擴展性而生
+## 為擴展性而生 {#built-for-scale}
 
 * 網路級設定，並可針對單一網站進行覆寫
 * 統計儀表板，用於監控保護狀態
 * 可調整的安全等級（快速、中等、最高）
 * 友善開發者，具備可擴展的提供者架構
 
-## 安裝
+## 安裝 {#installation}
 
 1. 將 `ultimate-multisite-captcha` 上傳到您的 `/wp-content/plugins/` 目錄
 2. 啟用網路外掛
@@ -64,37 +64,37 @@ Cap Captcha 會自動啟用——無需設定，無需輸入 API 金鑰。您整
 
 **可選：** 如果您想改用 Google reCAPTCHA 或 hCaptcha，請導航至 **Ultimate Multisite → 設定 → Captcha**，然後選擇您偏好的提供者。
 
-## 常見問題
+## 常見問題 {#frequently-asked-questions}
 
-## 我需要設定任何東西嗎？
+## 我需要設定任何東西嗎？ {#do-i-need-to-configure-anything}
 
 不需要！當您啟用附加元件時，Cap Captcha 會自動啟用。您的整個網路會立即受到保護——無需設定，無需輸入 API 金鑰。
 
-## Cap Captcha 需要 API 金鑰嗎？
+## Cap Captcha 需要 API 金鑰嗎？ {#do-i-need-api-keys-for-cap-captcha}
 
 不需要。Cap Captcha 是完全自託管的。沒有外部帳戶，沒有網域註冊，沒有配置上的麻煩。
 
-## 這會拖慢我的結帳速度嗎？
+## 這會拖慢我的結帳速度嗎？ {#will-this-slow-down-my-checkout}
 
 Cap Captcha 僅 20KB，並且在背景運行工作證明挑戰。您的客戶不會察覺到任何延遲。
 
-## 這能防止卡片測試攻擊嗎？
+## 這能防止卡片測試攻擊嗎？ {#does-this-protect-against-card-testing-attacks}
 
 是的！與傳統 Captcha 僅保護 HTML 表單不同，我們的 WooCommerce 整合直接掛鉤到 Store API，可以在 API 層級阻止機器人攻擊——這也是大多數卡片測試攻擊發生的地方。
 
-## 我可以在不同網站使用不同的 Captcha 提供者嗎？
+## 我可以在不同網站使用不同的 Captcha 提供者嗎？ {#can-i-use-different-captcha-providers-on-different-sites}
 
 Captcha 提供者是在網路層級設定的，但您可以根據需求調整難度設定。
 
-## 這符合 GDPR 規範嗎？
+## 這符合 GDPR 規範嗎？ {#is-this-gdpr-compliant}
 
 Cap Captcha 是 100% 自託管的，不會將任何資料傳送到外部服務。對於 Google reCAPTCHA 和 hCaptcha，請查閱它們各自的隱私權政策。
 
-## 速率限制 (Rate Limiting)
+## 速率限制 (Rate Limiting) {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 引入了硬性停止的速率限制器，保護您的網路免受暴力破解和卡片測試攻擊。
 
-### 工作原理
+### 工作原理 {#how-it-works}
 
 速率限制器會計算 Captcha 保護的頁面上的每一個 GET 和 POST 請求：
 
@@ -108,9 +108,9 @@ Ultimate Multisite: Captcha v1.5.0 引入了硬性停止的速率限制器，保
 * **Retry-After** 標頭，指示重試時間
 * **隨機延遲停滯 (Randomised tarpit sleep)**（預設 1–5 秒，硬性上限 15 秒），以減緩攻擊者。
 
-### 配置
+### 配置 {#configuration}
 
-#### 延遲停滯時間 (Tarpit Timing)
+#### 延遲停滯時間 (Tarpit Timing) {#tarpit-timing}
 
 控制應用於速率限制請求的隨機延遲：
 
@@ -119,9 +119,9 @@ Ultimate Multisite: Captcha v1.5.0 引入了硬性停止的速率限制器，保
 
 這些設定可以在 **Ultimate Multisite → 設定 → Captcha** 中找到。
 
-### 可擴展性
+### 可擴展性 {#extensibility}
 
-#### IP 白名單過濾器 (IP Whitelist Filter)
+#### IP 白名單過濾器 (IP Whitelist Filter) {#ip-whitelist-filter}
 
 將受信任的 IP 範圍排除在速率限制之外：
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### 預阻止動作 (Pre-Block Action)
+#### 預阻止動作 (Pre-Block Action) {#pre-block-action}
 
 在發送速率限制阻止訊息之前，執行自訂邏輯：
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## 客戶端 IP 偵測與信任代理 (Client IP Detection & Trusted Proxies)
+## 客戶端 IP 偵測與信任代理 (Client IP Detection & Trusted Proxies) {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 引入了抗偽造的客戶端 IP 偵測。`Captcha_Core::get_client_ip()` 方法現在是所有訪客 IP 歸屬的單一事實來源，涵蓋以下範圍：
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 引入了抗偽造的客戶端 IP 偵測。`C
 * Captcha 提供者的 `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * 統計 IP Hash
 
-### 信任模型 (Trust Model)
+### 信任模型 (Trust Model) {#trust-model}
 
 外掛強制執行嚴格的 IP 信任層級：
 
@@ -166,9 +166,9 @@ Ultimate Multisite: Captcha v1.5.0 引入了抗偽造的客戶端 IP 偵測。`C
    - 即時對等方位於您在管理員設定的信任代理清單中
    - 標頭必須從右向左解析，跳過受信任/Cloudflare 的跳轉點
 
-### 配置
+### 配置 {#configuration-1}
 
-#### Cloudflare 標頭信任 (Cloudflare Header Trust)
+#### Cloudflare 標頭信任 (Cloudflare Header Trust) {#cloudflare-header-trust}
 
 啟用對 Cloudflare `CF-Connecting-IP` 標頭的信任：
 
@@ -178,7 +178,7 @@ Ultimate Multisite: Captcha v1.5.0 引入了抗偽造的客戶端 IP 偵測。`C
   - CIDR 範圍每週透過 wp-cron 刷新
   - 如果刷新失敗，將使用內建的備用值
 
-#### 信任代理配置 (Trusted Proxy Configuration)
+#### 信任代理配置 (Trusted Proxy Configuration) {#trusted-proxy-configuration}
 
 定義您的前線代理和負載平衡器：
 
@@ -194,14 +194,14 @@ Ultimate Multisite: Captcha v1.5.0 引入了抗偽造的客戶端 IP 偵測。`C
     198.51.100.50
     ```
 
-#### 首次啟用自動偵測 (First-Enable Auto-Detection)
+#### 首次啟用自動偵測 (First-Enable Auto-Detection) {#first-enable-auto-detection}
 
 當您首次啟用速率限制器時，外掛會偵測您可能的 Cloudflare 和代理配置，並顯示一個一鍵式的「套用偵測設定」管理通知。
 
 * 外掛**絕不會覆寫**您儲存的值
 * 如果後續流量顯示您的配置不再符合實際情況（例如 Cloudflare 更改了 CIDR 範圍），將會出現一個無法忽略的不匹配通知，建議您進行更新
 
-### 為什麼這很重要
+### 為什麼這很重要 {#why-this-matters}
 
 嚴格的 IP 信任模型關閉了一個關鍵的偽造向量：以前，攜帶偽造 `CF-Connecting-IP` 標頭的直接來源伺服器請求，會被偽造的 IP 桶記錄，而不是真實的對等方。這對於以下幾點尤其重要：
 

@@ -3,7 +3,7 @@ title: API Endpointን መመዝገብ
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# የUltimate Multisite መመዝገቢያ API endpoint
+# የUltimate Multisite መመዝገቢያ API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 በዚህ ትምህርት፣ በZapier እንዴት እንደሚሰራ በመጠቀም በአዲስ ደንበኛዎ (customer) ወደ ኔትዎ (network) ሙሉ የመመዝገቢያ ሂደት (onboarding process) የሚፈጥሩበትን የUltimate Multisite /register API endpoint አጠቃቀም ይማራሉ።
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 አሁን፣ endpointን እንቃኝ እና ከዚያ በZapier ውስጥ የመመዝገቢያ እርምጃ (registration action) እንፈጥራለን።
 
-## የendpoint የሰውነት መለኪያዎች (Endpoint body parameters)
+## የendpoint የሰውነት መለኪያዎች (Endpoint body parameters) {#endpoint-body-parameters}
 
 ወደ endpoint ምን ያህል ዝቅተኛ መረጃ መላክ እንዳለብን አጠቃላይ እይታ እንስጥ። በዚህ ጽሑፍ መጨረሻ ላይ ሙሉ ጥሪውን ያገኛሉ።
 
-### ደንበኛ (Customer)
+### ደንበኛ (Customer) {#customer}
 
 ይህም ተጠቃሚውን (User) እና የUltimate Multisite ደንበኛን (Customer) የመፍጠር ሂደት የሚያስፈልገው መረጃ ነው፦
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **አባልነት (Membership)**
+### **አባልነት (Membership)** {#membership}
 
 በዚህ object ውስጥ የሚያስፈልገን ብቸኛው መረጃ የአባልነት ሁኔታ (Membership Status) ብቻ ነው።
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" ከሚሉት አንዱ },
 
-### **ምርቶች (Products)**
+### **ምርቶች (Products)** {#products}
 
 ምርቶች (Products) ከ1 ወይም ከዚያ በላይ የproduct ID በarray ይሰጣሉ። ጥንቃቄ ያድርጉ፣ ይህ endpoint ምርቶችን አይፈጥርም። ስለ ምርት የመፍጠር endpoint በተሻለ ለመረዳት የUltimate Multisite ሰነዶችን ይመልከቱ።
 
 **"products" : [1,2],**
 
-### ክፍያ (Payment)
+### ክፍያ (Payment) {#payment}
 
 በአባልነት (Membership) ላይ እንደነበረው፣ ሁኔታው (status) ብቻ ያስፈልገናል።
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" ከሚሉት አንዱ },**
 
-### ድረ-ገጽ (Site)
+### ድረ-ገጽ (Site) {#site}
 
 እና የሰውነት ክፍሉን ለመዝጋት፣ የድረ-ገጹን URL እና ርዕስ (Title)፣ ሁለቱም በSite object ውስጥ ያስፈልጉናል።
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 የregister endpoint መመለስ አዲስ የተፈጠረውን የአባልነት መረጃ (membership information) የያዘ array ይሆናል።
 
-## በZapier ውስጥ እርምጃ መፍጠር (Creating an action in Zapier)
+## በZapier ውስጥ እርምጃ መፍጠር (Creating an action in Zapier) {#creating-an-action-in-zapier}
 
 ይህ አዲሱ እና ጠንካራ የሆነ የखाታ መፍጠር endpoint በመመዝገቡ፣ በZapier ውስጥ አዲስ እርምጃ (action) ይደርስዎታል።
 
 የZapier አዲሱ ስሪት የሚያቀርባቸውን ነገሮች እንዴት መጠቀም እና መደሰት እንደሚችሉ ያውቃሉ? እዚህ ይማሩ። (link?)
 
-### እርምጃ መፍጠር (Creating an action)
+### እርምጃ መፍጠር (Creating an action) {#creating-an-action}
 
 የመመዝገቢያ endpointን በZapier እንዴት መጠቀም እንደሚቻል በተሻለ ለማሳየት፣ ከGoogle Forms ጋር ውህደት (integration) እንፍጠር። ይህ ፎርም በየጊዜው ሲሞላ እና መረጃው በፎርሙ መልስ ወረቀት (answer sheet) ሲቀመጥ፣ በአልቲሜት መልቲሳይት ኔትዎ ውስጥ አዲስ አባልነት ይፈጠራል።
 
@@ -105,7 +105,7 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 አዲሱን Zapዎን ይሞክሩ እና በተሳካ ሁኔታ መጠናቀቅ አለበት። ማንኛውም ስህተት ከተፈጠረ፣ ሁሉንም መስኮች ይፈትሹ እና በትክክል እየተላኩ መሆናቸውን ያረጋግጡ። ብዙ መረጃ ስላለ፣ አንዳንድ ነገሮች ሊታዩ ይችላሉ።
 
-### ሙሉ የendpoint መለኪያዎች (Complete endpoint parameters)
+### ሙሉ የendpoint መለኪያዎች (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 እዚህ ሙሉው ጥሪ እና ሊላኩ የሚችሉ ሁሉም የመስክ አማራጮች ተሰጥተዋል።
 

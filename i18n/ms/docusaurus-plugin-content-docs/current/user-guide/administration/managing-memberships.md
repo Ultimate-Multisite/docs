@@ -1,22 +1,30 @@
 ---
-title: Menguruskan Keahlian
+title: Mengurus Keahlian
 sidebar_position: 9
-_i18n_hash: d941e74e4dd6d6dd462c0dfaaf81736a
+_i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Mengurus Keahlian
+# Mengurus Memberships {#managing-memberships}
 
-Dalam Ultimate Multisite, anda boleh mengurus keahlian dan mengakses semua langganan dalam rangkaian anda. Semak dan edit butiran langganan seperti pelan dan produk, bilangan laman, jumlah dan kekerapan bil, sejarah pembayaran, dan cap masa.
+Dalam Ultimate Multisite, anda boleh mengurus memberships dan mengakses semua subscriptions pada rangkaian anda. Semak dan edit butiran subscription seperti plan dan produk, bilangan site, amaun dan kekerapan bil, sejarah pembayaran, serta cap masa.
 
 Untuk mengakses halaman ini, pergi ke tab **Memberships** dalam menu Ultimate Multisite.
 
-![Halaman senarai keahlian](/img/admin/memberships-list.png)
+![Halaman senarai Memberships](/img/admin/memberships-list.png)
 
-Di halaman Memberships, anda boleh melihat senarai pelanggan anda dan produk yang dikaitkan dengan akaun mereka. Anda boleh menapis keahlian mengikut status: aktif, tertunda, ditangguhkan, tamat tempoh, atau dibatalkan.
+Pada halaman Memberships, anda boleh melihat senarai pelanggan anda dan produk yang dikaitkan dengan Account mereka. Anda boleh menapis memberships mengikut status: aktif, pending, on hold, tamat tempoh, atau dibatalkan.
 
-Klik pada keahlian untuk mengakses halaman di mana anda boleh mengedit butiran keahlian — maklumat bil, had laman atau lawatan, dan banyak lagi.
+Memberships percuma dianggap sebagai memberships **seumur hidup**. Ia tidak menerima tarikh tamat tempoh dan tidak akan tamat secara automatik. Jika plan percuma sepatutnya berakhir selepas percubaan atau tempoh tetap, gunakan produk berbayar dengan percubaan, batalkan membership secara manual, atau pindahkan pelanggan ke plan lain apabila akses mereka perlu berubah.
 
-Anda juga boleh menambah keahlian baharu yang dikaitkan dengan pengguna yang telah didaftarkan dalam rangkaian anda. Klik **Add Membership** dan tetapkan butirannya.
+Klik pada membership untuk mengakses halaman tempat anda boleh mengedit butiran membership — maklumat bil, had site atau lawatan, dan banyak lagi.
 
-![Modal Tambah Keahlian](/img/admin/membership-add-modal.png)
+![Antara muka edit Membership](/img/admin/membership-edit.png)
 
-Kemudian klik **Create Membership**. Keahlian baharu akan muncul dalam senarai keahlian.
+Berikut ialah paparan penuh halaman edit membership:
+
+![Antara muka penuh edit Membership](/img/admin/membership-edit-full.png)
+
+Anda juga boleh menambah memberships baharu yang dikaitkan dengan pengguna yang sebelum ini berdaftar pada rangkaian anda. Klik **Add Membership** dan konfigurasikan butirannya.
+
+![Modal Add Membership](/img/admin/membership-add-modal.png)
+
+Kemudian klik **Create Membership**. Membership baharu akan muncul pada senarai memberships.

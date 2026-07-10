@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent bụ onye enyemaka WordPress AI na-arụ ọrụ onwe ya nke nwere ike ịhazi, wuo, ma jikwaa saịtị WordPress zuru ezu site na ntuziaka asụsụ nkịtị. Ọ na-egosi nchịkọta **ikike** a haziri ahazi — omume dị iche iche, a pụrụ ịnwale nke agent nwere ike ịkpọ — na-ekpuchi ihe niile site na njikwa ọdịnaya ruo nhazi usoro imewe. Ụdị 1.9.0 na-agbakwunye ikike imepụta ọdịnaya, nyocha peeji anya site na screenshots nke akụkụ client, profaịlụ agent ise arụnyere n'ime ya, na akara njirimara maka njikwa ohere na branding.
+
+## Njirimara Ndị Dị Mkpa {#key-features}
+
+- **Usoro ikike** — katalọgụ omume modular, a pụrụ ịgbatị, nke agent nwere ike ịkpọ na nrụnye WordPress gị
+- **Njikwa Ọdịnaya** — mepụta posts na peeji (gụnyere ikenye page templates), mepụta ọtụtụ posts n'otu oku, debe onyonyo pụtara ìhè, ma wuo fọm kọntaktị
+- **Nyocha Anya** — were screenshots nke peeji dị ndụ, tụnyere ọnọdụ tupu/mgbe e mesịrị, ma nweta nyocha imewe AI mepụtara nke na-ekpuchi nhazi, typography, agba, na nnweta
+- **Agents ise arụnyere n'ime ya** — Content Writer, Site Builder, Design Studio, Plugin Manager, na Support Assistant; a pụrụ ịgbanwe ya site na Agent Picker n'isi chat
+- **Akara njirimara** — toggles njikwa ohere na branding na Ntọala → Akara Njirimara maka mgbochi role, aha white-label, na nhazi widget
+- **Njikwa Custom Post Type** — debanye aha, depụta, ma hichapụ ụdị post omenala nwere persistence gafee mbido ọzọ
+- **Njikwa Custom Taxonomy** — debanye aha, depụta, ma hichapụ taxonomies omenala nwere persistence
+- **Ikike Usoro Imewe** — tinye CSS omenala, jikwaa block patterns ahọpụtara, debe logo saịtị, ma tinye presets theme.json n'ọrụ
+- **Njikwa Global Styles** — gụọ ma dee ụkpụrụ theme.json maka palettes agba, typography, spacing, na ndị ọzọ
+- **Njikwa Menu Njegharị** — mepụta ma melite menus njegharị na ihe ha nwere n'ụzọ mmemme
+- **Njikwa Nhọrọ** — gụọ ma dee nhọrọ WordPress nwere blocklist nchekwa arụnyere n'ime ya iji chebe ntọala dị mkpa
+- **Ndekọ Ikike A Pụrụ Ịwụnye** — chọpụta ma mee ka ngwugwu ikike ndị ọzọ rụọ ọrụ n'emeghị mgbanwe na faịlụ plugin isi
+- **Nhazi Site Builder v2** — atụmatụ iwu saịtị nwere ọtụtụ nzọụkwụ, yana nchọpụta plugin, nsuso ọganihu, na mgbake njehie
+- **Iwu benchmark WP-CLI** — gbaa suite benchmark ikike agent site na command line maka CI na nyocha model
+
+## Ihe Achọrọ {#requirements}
+
+- WordPress 6.0 ma ọ bụ nke ka elu
+- PHP 8.1 ma ọ bụ nke ka elu
+- WordPress Multisite (network-activated) ma ọ bụ nrụnye otu saịtị
+- Plugin njikọ AI provider na-arụ ọrụ (Anthropic, OpenAI, ma ọ bụ nke kwekọrọ)
+
+## Nwụnye {#installation}
+
+1. Bulite faịlụ plugin na `/wp-content/plugins/gratis-ai-agent`
+2. Mee ka plugin rụọ ọrụ site na ihuenyo **Plugins** na WordPress
+3. Gaa na **Gratis AI Agent → Ntọala** ma jikọọ AI provider gị
+4. (Nhọrọ) Lelee **Ndekọ Ikike** iji wụnye ngwugwu ikike ndị ọzọ
+
+## Mmalite Ngwa Ngwa {#quick-start}
+
+Ozugbo emere ka ọ rụọ ọrụ ma jikọọ ya na AI provider, mepee panel **Gratis AI Agent** na sidebar nchịkwa WordPress. Pịnye ntuziaka asụsụ nkịtị, agent ahụ ga-ahazi ma mee nzọụkwụ achọrọ site n'iji ikike dị ya.
+
+**Ihe atụ ntuziaka:**
+
+```
+Mepụta custom post type "Portfolio" nwere taxonomy "Project Category".
+```
+
+```
+Tinye palette agba dark-mode n'ime theme ma debe agba primary ka ọ bụrụ #1a1a2e.
+```
+
+```
+Wuo weebụsaịtị ụlọ oriri nwere menu online, fọm ntinye akwụkwọ, na peeji kọntaktị.
+```
+
+## Nchịkọta Ikike {#abilities-overview}
+
+Ikike bụ omume kacha nta agent nwere ike ime. Ikike ọ bụla bụ klas PHP e debanyere aha nke na-egosi schema (parameters na ụdị nloghachi) nke agent na-agụ n'oge ọ na-arụ ọrụ. A na-achịkọta ikike n'ime mpaghara ọrụ:
+
+| Mpaghara | Ikike |
+|---|---|
+| **Njikwa Ọdịnaya** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Nyocha Anya** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Usoro Imewe** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menus Njegharị** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Njikwa Nhọrọ** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Ikike A Pụrụ Ịwụnye** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Hụ [Ntụaka Ikike](./abilities) maka akwụkwọ parameter zuru ezu na ihe atụ ojiji.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent na-ebute ezinụlọ iwu `wp gratis-ai-agent` maka ịgba benchmarks na ijikwa ikike site na command line. Hụ [Ntụaka WP-CLI](./wp-cli) maka ndepụta iwu zuru ezu.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Nhazi {#configuration}
+
+Ntọala niile dị n'okpuru **Gratis AI Agent → Ntọala** na nchịkwa WordPress:
+
+| Ntọala | Nkọwa |
+|---|---|
+| **AI Provider** | Họrọ ma hazie njikọ AI provider na-arụ ọrụ |
+| **Model** | Họrọ model asụsụ a ga-eji maka sessions agent |
+| **Max Tokens** | Mmefu token maka arịrịọ ọ bụla (ndabara 4096) |
+| **Ability Timeout** | Sekọnd kachasị elu ikike otu onye nwere ike ịgba (ndabara 30) |
+| **Debug Logging** | Debanye oku ikike na echiche agent na WordPress debug log |
+
+## Blocklist Nchekwa Njikwa Nhọrọ {#options-management-safety-blocklist}
+
+Ikike Njikwa Options gụnyere blocklist e wuru n’ime ya nke na-egbochi agent ịgụ ma ọ bụ ide options WordPress dị nro. Blocklist ndabara na-ekpuchi:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (options URL — jiri ngwá ọrụ mbugharị raara onwe ya nye maka ndị a)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (mkpịsị igodo nzuzo)
+- `active_plugins`, `template` (ịgbalite plugin/theme — jiri ikike raara onwe ha nye)
+- Nkwenye ụzọ ịkwụ ụgwọ na API keys ndị plugins etinyere debanyere aha
+
+A pụrụ itinye ntinye ndị ọzọ site na filter `gratis_ai_agent_options_blocklist`.
+
+## Hooks na Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — a na-akpalite ya mgbe e debanyere ikike aha, na-anata aha klas ikike
+- `gratis_ai_agent_plan_started` — a na-akpalite ya mgbe atụmatụ onye na-ewu saịtị malitere mmezu
+- `gratis_ai_agent_plan_completed` — a na-akpalite ya mgbe atụmatụ mechara nke ọma
+- `gratis_ai_agent_plan_failed` — a na-akpalite ya mgbe atụmatụ zutere mmejọ a na-apụghị idozi
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — gbanwee ndepụta ikike e debanyere aha tupu agent ebunye ya
+- `gratis_ai_agent_options_blocklist` — gbasaa ma ọ bụ belata blocklist nchekwa options
+- `gratis_ai_agent_benchmark_questions` — tinye ajụjụ benchmark omenala na ngwugwu nyocha
+- `gratis_ai_agent_plan_plugins` — gbanwee ndepụta nchọpụta plugin n’oge mmepụta atụmatụ saịtị
+
+## Nkwado {#support}
+
+Maka nkwado, gaa na [ultimatemultisite.com](https://ultimatemultisite.com) ma ọ bụ mepee issue n’ụlọ nchekwa plugin.
+
+## Changelog {#changelog}
+
+Lee [Changelog](./changelog) maka akụkọ ụdị zuru ezu.

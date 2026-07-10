@@ -3,13 +3,13 @@ title: Změnový deník pro supportovací tikety
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Seznam změn pro Support Tickets
+# Seznam změn pro Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Vylepšeno: Vyňato z sledování Git adresáře `vendor/` (je již pokryto souborem .gitignore), čímž se zmenší velikost repozitáře
 * Vylepšeno: Otestováno až do WordPressu verze 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Opraveno: Přijetí nulových hodnot v nastavovačích (setters) pro nulovatelné modely ticketů
 * Opraveno: Uložení všech ticketů do globálních tabulek pro celou síť (network-wide tables) pro správnou podporu multisite
 * Opraveno: Skrytí polí pro zaměstnance a oprava přesměrování na prázdnou stránku v formuláři pro nové tickety zákazníka
@@ -26,7 +26,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Vylepšeno: Odstranění podmenu Nastavení z menu administrace podstránky
 * Vylepšeno: Podmínkové načítání frontend assetů pouze na stránkách supportu ticketů
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Přidáno: Plná funkcionalita zobrazení ticketů pro administrátora i pro frontend
 * Přidáno: AJAX handler pro odesílání odpovědí na tickety
 * Přidáno: Podpora funkcionality odpovědí na tickety se správní manipulací s formulářem
@@ -42,12 +42,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Vylepšeno: Struktura databáze se správnými třídami dotazů a schématu pro odpovědi a přílohy
 * Vylepšeno: Migrace na skutečné vlastnosti (real properties) namísto atributů pro modely ticketů
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Aktualizováno: Změněn prefix na `ultimate-multisite` pro konzistenci
 * Aktualizováno: Standardizace domény textu
 * Opraveno: Menší chyby a vylepšení
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * První vydání
 * Kompletní systém správy ticketů
 * Multi-level kontrola přístupu

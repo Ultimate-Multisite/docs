@@ -3,7 +3,7 @@ title: Rendisa Akaunti kuparamusika neZapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Regista akaonto kuparamusoro neZapier
+# Event: Regista akaonto kuparamusoro neZapier {#event-register-an-account-via-zapier}
 
 Muninga mweya [Integrating Ultimate Multisite with Zapier](zapier.md), tinagadzirisa kuti tiri kuenda sei zvakanaka nemashoko anogona kutamba zvinhu munzvimbo dzinotevera (triggers) uye zvinotevera (events) muUltimate Multisite neZapier. Muneweye wekuru iri, tinoone sei kunge kutaura (integrate) zvinhu zvekuita kubva mumapuatoraniso ekutanga (3rd party applications). Tichakasiita kuti Google Sheets iwe yakwanisa kuita zvinodiwa uye tichatamba nekuita akaunti muUltimate Multisite.
 

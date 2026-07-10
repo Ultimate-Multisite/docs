@@ -3,11 +3,11 @@ title: Ko'rinish imkoniyati
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Imkoniyat Ko'rinishi (Ability Visibility)
+# Imkoniyat Ko'rinishi (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 **Imkoniyat Ko'rinishi** nazoratlarini joriy etadi, ular har qaysi imkoniyatning qaysi yuzalarda ko'rsatilishini boshqaradi. Bu administratorlarga REST API, MCP serverlari, WooCommerce integratsiyalari va boshqa interfeyslar orqali qaysi agent imkoniyatlari mavjudligini sozlash imkonini beradi.
 
-## Imkoniyat Ko'rinishi nima?
+## Imkoniyat Ko'rinishi nima? {#what-is-ability-visibility}
 
 Imkoniyat Ko'rinishi bu ruxsat tizimi bo‘lib, quyidagilarni boshqaradi:
 
@@ -18,9 +18,9 @@ Imkoniyat Ko'rinishi bu ruxsat tizimi bo‘lib, quyidagilarni boshqaradi:
 
 Har bir imkoniyat turli yuzalarda mavjudligini belgilaydigan ko'rinish darajasiga ega.
 
-## Ko'rinish Darajasi (Visibility Levels)
+## Ko'rinish Darajasi (Visibility Levels) {#visibility-levels}
 
-### Ommaviy (Public)
+### Ommaviy (Public) {#public}
 
 **Ommaviy imkoniyatlar** hamma joyda mavjud:
 
@@ -32,7 +32,7 @@ Har bir imkoniyat turli yuzalarda mavjudligini belgilaydigan ko'rinish darajasig
 
 Misol: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Ichki (Internal)
+### Ichki (Internal) {#internal}
 
 **Ichki imkoniyatlar** faqat sizning WordPress o'rnatishingiz ichida mavjud:
 
@@ -43,7 +43,7 @@ Misol: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Misol: `manage-settings`, `view-analytics`, `export-data`
 
-### Hamkor (Partner)
+### Hamkor (Partner) {#partner}
 
 **Hamkor imkoniyatlar** faqat ro'yxatdan o‘tgan hamkorlarga mavjud:
 
@@ -54,7 +54,7 @@ Misol: `manage-settings`, `view-analytics`, `export-data`
 
 Misol: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### O'chirilgan (Disabled)
+### O'chirilgan (Disabled) {#disabled}
 
 **O'chirilgan imkoniyatlar** hech qayerda mavjud emas:
 
@@ -63,15 +63,15 @@ Misol: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Admin panellarida mavjud emas
 - Eskirgan yoki tajribaviy imkoniyatlar uchun foydali
 
-## Imkoniyat Ko'rinishini Boshqarish
+## Imkoniyat Ko'rinishini Boshqarish {#managing-ability-visibility}
 
-### Imkoniyat Ko'rinishi Sozlamalariga Kirish
+### Imkoniyat Ko'rinishi Sozlamalariga Kirish {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** ga o'ting
 2. **Abilities** (Imkoniyatlar) yorlig'iga bosing
 3. O'rnatilgan barcha imkoniyatlar va ularning ko'rinish darajalarini ro'yxatini ko'rasiz
 
-### Imkoniyat Detallarini Ko'rish
+### Imkoniyat Detallarini Ko'rish {#viewing-ability-details}
 
 Har qanday imkoniyatga bosib quyidagi ma'lumotlarni ko'rishingiz mumkin:
 
@@ -82,7 +82,7 @@ Har qanday imkoniyatga bosib quyidagi ma'lumotlarni ko'rishingiz mumkin:
 - **Last updated** (Eng oxirgi yangilangan vaqt): Ko'rinish oxirida qachon o'zgarganligi
 - **Status** (Holat): Tanib olingan (Recognized) yoki Klassifikatsiz (Unclassified)
 
-### Ko'rinish Darajalarini O'zgartirish
+### Ko'rinish Darajalarini O'zgartirish {#changing-visibility-levels}
 
 Imkoniyatning ko'rinishini o'zgartirish uchun:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Massiv Operatsiyalar
+### Massiv Operatsiyalar {#bulk-operations}
 
 Bir nechta imkoniyatning ko'rinishini o'zgartirish uchun:
 
@@ -108,11 +108,11 @@ Bir nechta imkoniyatning ko'rinishini o'zgartirish uchun:
 2. Massiv harakatlar dropdown menyusidan yangi ko'rinish darajasini tanlang
 3. **Apply** (Jarayonni qo'llash) tugmasiga bosing
 
-## Hamkorlar Ro'yxati (Partner Allow-List)
+## Hamkorlar Ro'yxati (Partner Allow-List) {#partner-allow-list}
 
 **Hamkorlar ro'yxati** tashqi hamkorlarning Partner darajasidagi imkoniyatlarga kirishini boshqaradi.
 
-### Hamkorlarni Qo'shish
+### Hamkorlarni Qo'shish {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** ga o'ting
 2. **Add Partner** (Hamkor qo'shish) tugmasiga bosing
@@ -120,7 +120,7 @@ Bir nechta imkoniyatning ko'rinishini o'zgartirish uchun:
 4. Tanlash bo'yicha hamkor nomi va tavsifni qo'shishingiz mumkin
 5. **Save** (Saqlash) tugmasiga bosing
 
-### Imkoniyatlarni Hamkorlarga Taqliflash
+### Imkoniyatlarni Hamkorlarga Taqliflash {#assigning-abilities-to-partners}
 
 Hamkor qo'shilgandan so'ng:
 
@@ -130,7 +130,7 @@ Hamkor qo'shilgandan so'ng:
 4. "Hamkorlar ro'yxati" (Partner allow-list) qismida, kirishga ega bo'lishi kerak bo'lgan hamkorlar uchun qutchilarni belgilang
 5. **Saqlash** tugmasini bosing
 
-### Hamkor Kirishini Cheklash
+### Hamkor Kirishini Cheklash {#revoking-partner-access}
 
 Hamkorning kirishini olib tashlash uchun:
 
@@ -140,11 +140,11 @@ Hamkorning kirishini olib tashlash uchun:
 
 Hamkor ushbu abilita (ability) ga darhol kirish imkonini yo'qotadi.
 
-## Klassifikatsiz Abilitatlar
+## Klassifikatsiz Abilitatlar {#unclassified-abilities}
 
 Agar siz Superdav AI Agent tomonidan tan olinmagan uchinchi tomon abilita (third-party ability) o'rnatgan bo'lsangiz, u **Klassifikatsiz** deb belgilangan.
 
-### Klassifikatsiz Abilitatlar uchun Admin Eslatmasi
+### Klassifikatsiz Abilitatlar uchun Admin Eslatmasi {#admin-notice-for-unclassified-abilities}
 
 Siz admin eslatmasini ko'rasiz:
 
@@ -161,7 +161,7 @@ Iltimos, ularni ko'rib chiqing va klassifikatsiya qiling.
 [Abilitatlarni Ko'rib Chiqish] [Boshlashni Boshlash]
 ```
 
-### Klassifikatsiz Abilitatlarni Ko'rib Chiqish
+### Klassifikatsiz Abilitatlarni Ko'rib Chiqish {#reviewing-unclassified-abilities}
 
 1. Eslatma ichidagi **Abilitatlarni Ko'rib Chiqish** (Review Abilities) tugmasini bosing
 2. Har bir klassifikatsiz abilita uchun quyidagilarni ko'rasiz:
@@ -178,7 +178,7 @@ Iltimos, ularni ko'rib chiqing va klassifikatsiya qiling.
 
 4. Qaroringizni saqlash uchun **Klassifikatsiya Qilish** (Classify) tugmasini bosing
 
-### Nega Klassifikatsiz Abilitatlarni Klassifikatsiya Qilish Kerak?
+### Nega Klassifikatsiz Abilitatlarni Klassifikatsiya Qilish Kerak? {#why-classify-unclassified-abilities}
 
 Abilitatlarni klassifikatsiya qilish:
 
@@ -187,9 +187,9 @@ Abilitatlarni klassifikatsiya qilish:
 - **Funksiyalarni faollashtiradi**: Klassifikatsiya qilingandan so'ng, abilita ishlatilishi mumkin bo'ladi
 - **Qararlarni hujjatlashtiradi**: Sizning tanlovingiz audit maqsadlarida qayd etiladi
 
-## Turliqlik Turli Sirtlarda Ko'rinish
+## Turliqlik Turli Sirtlarda Ko'rinish {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Ommaviy imkoniyatlar** REST endpointlari orqali mavjud:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Ichki va hamkor imkoniyatlar** REST API orqali mavjud emas.
 
-### MCP Serverlari
+### MCP Serverlari {#mcp-servers}
 
 **Ommaviy imkoniyatlar** MCP orqali mavjud:
 
@@ -217,7 +217,7 @@ Mavjud imkoniyatlar:
 
 **Hamkor imkoniyatlari** faqat hamkorlik ma'lumotlari bilan mavjud.
 
-### WooCommerce Integratsiyasi
+### WooCommerce Integratsiyasi {#woocommerce-integration}
 
 WooCommerce bilan bog'liq **ommaviy imkoniyatlar** mavjud:
 
@@ -227,7 +227,7 @@ WooCommerce bilan bog'liq **ommaviy imkoniyatlar** mavjud:
 
 **Ichki imkoniyatlar** WooCommerce ga ochilmaydi.
 
-### Chat Interfeysi
+### Chat Interfeysi {#chat-interface}
 
 Barcha **imkoniyatlar** (Ommaviy, Ichki, Hamkor) foydalanuvchi ruxsatnomalariga qarab chatda mavjud:
 
@@ -235,28 +235,28 @@ Barcha **imkoniyatlar** (Ommaviy, Ichki, Hamkor) foydalanuvchi ruxsatnomalariga 
 - Oddiy foydalanuvchilar faqat Ommaviy imkoniyatlarni ko'rishadi
 - Hamkorlar (ro'yxatdan o'tgan bo'lsa) Ommaviy + Hamkor imkoniyatlarini ko'rishadi
 
-## Xavfsizlik Eng Amaliyotlari
+## Xavfsizlik Eng Amaliyotlari {#security-best-practices}
 
-### Eng Kam Huquq Prinsipi
+### Eng Kam Huquq Prinsipi {#principle-of-least-privilege}
 
 - Imkoniyatlarni ularning ishlatilishi mumkin bo'lgan eng cheklovli ko'rinishda belgilang
 - Nozik operatsiyalar uchun Hamkor imkoniyatlaridan foydalaning
 - Foydalanmayotgan imkoniyatlarni o'chiring
 
-### Muntazam Auditlar
+### Muntazam Auditlar {#regular-audits}
 
 - Imkoniyatlar ko'rinishini har oy tekshiring
 - Klassifikatsiz bo'lgan imkoniyatlarni tekshiring
 - Foydalanilmayotgan hamkorlarga kirishni olib tashlang
 
-### Yordamchi Uchinchi Tomon Imkoniyatlari
+### Yordamchi Uchinchi Tomon Imkoniyatlari {#logging-and-monitoring}
 
 - Faollash qilishdan oldin uchinchi tomon imkoniyatlarini ko'rib chiqing
 - Ularni aniq klassifikatsiya qiling
 - Ichki yoki Hamkor ko'rinishi bilan boshlang
 - Tekshiruvdan o'tganidan so'ng faqat Ommaviyga ko'tarishni amalga oshiring
 
-## Muammalarni Qayta Olishish (Troubleshooting)
+## Muammalarni Qayta Olishish (Troubleshooting) {#third-party-abilities}
 
 **Qobili ro'yxatda ko'rinmayapti**
 - Qobili o'rnatilgan va faol ekanligini tekshiring.
@@ -279,7 +279,7 @@ Barcha **imkoniyatlar** (Ommaviy, Ichki, Hamkor) foydalanuvchi ruxsatnomalariga 
 - Tasniflashning saqlanganligini tekshiring.
 - Qobiliyatni taqdim etuvchi pluginning yangi versiyada ekanligini tekshiring.
 
-## Eski Rejimdan O'tkazish (Migration from Legacy Mode)
+## Eski Rejimdan O'tkazish (Migration from Legacy Mode) {#troubleshooting}
 
 Agar siz Superdav AI Agent ning eski versiyasidan yangilayotgan bo'lsangiz:
 
@@ -289,7 +289,7 @@ Agar siz Superdav AI Agent ning eski versiyasidan yangilayotgan bo'lsangiz:
 
 Native Abilities API integratsiyasiga o'tish haqida batafsil ma'lumotlar uchun **Third-Party Mode Migration** (Uchinchi tomon rejimi migratsiyasi) bo'limini ko'ring.
 
-## Keyingi Qadamlar (Next Steps)
+## Keyingi Qadamlar (Next Steps) {#migration-from-legacy-mode}
 
 Qobiliya ko'rinishini sozlaganingizdan so'ng:
 

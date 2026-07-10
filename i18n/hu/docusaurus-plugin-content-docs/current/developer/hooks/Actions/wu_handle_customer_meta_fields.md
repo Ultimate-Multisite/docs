@@ -4,11 +4,11 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields
+# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Lehetővé teszi a plugin fejlesztőknek, hogy szükség esetén más módon mentse el a meta adatokat.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lehetővé teszi a plugin fejlesztőknek, hogy szükség esetén más módon men
 | $customer | `\Customer` | Az Ultimate Multisite vásárlói objektuma. |
 | $checkout | `\Checkout` | A checkout osztálya. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definíciója található [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) fájlban, 1211-sorban.

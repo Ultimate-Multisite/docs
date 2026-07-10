@@ -3,7 +3,7 @@ title: Ubwoko bwa ubwiri bw'ubwiri
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Uburyo n'ubwitonzi n'ibindiwe n'ibindiwe n'ibindiwe
+# Uburyo n'ubwitonzi n'ibindiwe n'ibindiwe n'ibindiwe {#known-incompatibilities-with-other-plugins}
 
 Nyuma yemeza no gukora Ultimate Multisite, ushobora kugira ibintu byiza ku buryo bwo kubaho n'ibindiwe n'ibindiwe n'ibindiwe.
 

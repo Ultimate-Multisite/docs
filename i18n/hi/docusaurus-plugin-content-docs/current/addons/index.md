@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# अल्टीमेट मल्टीसाइट ऐडऑन
+# अल्टीमेट मल्टीसाइट ऐडऑन {#ultimate-multisite-addons}
 
 ऐडऑन अल्टीमेट मल्टीसाइट को अतिरिक्त फीचर्स और इंटीग्रेशन के साथ बढ़ाते हैं। ज़्यादातर ऐडऑन पेड होते हैं और इन्हें [ultimatemultisite.com](https://ultimatemultisite.com) से खरीदा जा सकता है।
 
-## इंस्टॉलेशन
+## इंस्टॉलेशन {#installation}
 
 ऐडऑन को दो तरीकों से इंस्टॉल किया जा सकता है:
 
 1. **ऐडऑन पेज के माध्यम से** -- वर्डप्रेस एडमिन में अपनी साइट के ऐडऑन मैनेजमेंट पेज पर जाएँ।
 2. **मैनुअल डाउनलोड** -- [your account](https://ultimatemultisite.com/my-account/downloads/) से डाउनलोड करें और Plugins > Add New के माध्यम से अपलोड करें।
 
-## उपलब्ध ऐडऑन
+## उपलब्ध ऐडऑन {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

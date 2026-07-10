@@ -3,11 +3,11 @@ title: वेबहूक हैंडलिंग
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook को संभालना (Webhook Handling)
+# Webhook को संभालना (Webhook Handling) {#webhook-handling}
 
 बाहरी सेवाओं से इवेंट प्राप्त करने और डेटा को Ultimate Multisite के साथ सिंक करने के लिए कस्टम वेबहुक एंडपॉइंट बनाएं।
 
-## कस्टम वेबहुक एंडपॉइंट (Custom Webhook Endpoint)
+## कस्टम वेबहुक एंडपॉइंट (Custom Webhook Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## सुरक्षा संबंधी विचार (Security Considerations)
+## सुरक्षा संबंधी विचार (Security Considerations) {#security-considerations}
 
 - हमेशा HMAC या एक साझा सीक्रेट (shared secret) का उपयोग करके वेबहुक सिग्नेचर को वेरिफाई करें।
 - अपने REST रूट पर हमेशा एक `permission_callback` का उपयोग करें — इसे प्रोडक्शन में कभी भी `__return_true` पर सेट न करें।

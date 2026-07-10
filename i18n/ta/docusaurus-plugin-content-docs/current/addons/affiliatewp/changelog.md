@@ -3,7 +3,7 @@ title: AffiliateWP மாற்றப் பட்டியல்
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP மாற்றங்கள் பட்டியல்
+# AffiliateWP மாற்றங்கள் பட்டியல் {#affiliatewp-changelog}
 
 பதிப்பு: 2.0.1 - வெளியிடப்பட்டது: 2025-09-28
 

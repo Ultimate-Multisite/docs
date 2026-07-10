@@ -1,114 +1,120 @@
 ---
-title: Cyflwyniad owerthau
+title: Trin Trethi
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Mae Cynllunio Tadelth
+# Trin Trethi {#tax-handling}
 
-Mae Ultimate Multisite wedi cael modd cynllunio cyfathrebu tadelth yn y plugin sydd yn ei coreg, felly os oes angen i chi gael cyfathrebu tadelthau o weithrediadau eich planau, packageau a gwasanaethau, gallwch chi wneud hynny'n ddefnyddio'r add-ons heb ddeallu unrhyw un.
+Mae gan Ultimate Multisite fodiwl casglu trethi wedi’i gynnwys yn ein plugin craidd, felly os oes angen i chi gasglu trethi gwerthu ar eich cynlluniau, pecynnau a gwasanaethau, gallwch wneud hynny’n hawdd heb orfod gosod unrhyw ychwanegion.
 
-Ar gyfer cwmni sydd yn y Europ, mae ein **add-on** yn rhoi toolau a ffeithiau i sicrhau gwelliant **VAT**.
+I gwmnïau sydd wedi’u lleoli yn Ewrop, rydym yn cynnig **ychwanegyn** sy’n ychwanegu offer a nodweddion i **gefnogi cydymffurfiaeth VAT** yn well.
 
-Mae Ultimate Multisite nid yn cyflenwi neu dychwilio tadelthau ar eich blwyddyn i'r cyngor; rydym yn helpu chi i gael y tadelthau pwysig yn yr amser y weithrediad. **Byddwch chi angen i dychwilio tadelthau ar eich blwyddyn eich hun.**
+Nid yw Ultimate Multisite yn ffeilio nac yn talu trethi ar eich rhan i’r llywodraeth; rydym yn syml yn eich helpu i gasglu’r trethi priodol ar adeg y trafodiad. **Bydd angen i chi dalu trethi eich hun o hyd.**
 
-## Mae Cynllunio Cyfathrebu Tadelth wedi'i Gofal
+## Galluogi Casglu Trethi {#enabling-tax-collection}
 
-Nid yw cyfathrebu tadelth yn cael ei gael yn defnyddiol. I sicrhau ei gael, rhaid i chi fynd i **Ultimate Multisite > Settings > Taxes** a gwneud y setiad Enable Taxes yn gyflwyno (toggle on).
+Nid yw casglu trethi wedi’i alluogi yn ddiofyn. I’w alluogi, mae angen i chi fynd i **Ultimate Multisite > Gosodiadau > Trethi** a thoglo i alluogi’r gosodiad Galluogi Trethi.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Togl Galluogi Trethi ar frig tudalen gosodiadau Trethi](/img/config/settings-taxes-enable.png)
 
-Dyma'r gweld cyfan o'r pagedd setiadau tadelth:
+Dyma olwg lawn ar dudalen gosodiadau trethi:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Tudalen lawn gosodiadau trethi](/img/config/settings-taxes-full.png)
 
-Gallwch hefyd gweld y setiadau tadelth ar gyfer proddeictau unigol:
+Gallwch hefyd weld y gosodiadau trethi ar gyfer cynhyrchion unigol:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Gosodiadau trethi ar gyfer cynhyrchion](/img/config/settings-taxes.png)
 
-### Tadelth a Ddychwilio (Tax excluded vs. Tax included)
+### Heb gynnwys treth vs. yn cynnwys treth {#tax-excluded-vs-tax-included}
 
-Yn defnyddiol, pob pris eich proddeictau yw tadelth a ddefnyddio, gan ei fod, mae tadelthau **nid cael eu cynnwys** yn y pris y proddeict. Os byddwn i ni ddodol bod angen i'r cyd-destunol ar gyfer weithrediad penodol, byddwn i dros y subtotal ychwanegu'r tadelthau.
+Yn ddiofyn, nid yw holl brisiau eich cynhyrchion yn cynnwys treth, sy’n golygu nad yw trethi **wedi’u cynnwys** ym mhris y cynnyrch. Os byddwn yn penderfynu y dylai cwsmer dalu trethi ar bryniant penodol, byddwn yn ychwanegu’r trethi **ar ben** yr is-gyfanswm.
 
-Os ydych chi'n hoffi fod tadelthau cael eu cynnwys yn y pris eich proddeict, gallwch chi wneud hynny gan gyflwyno'r setiad **Inclusive Tax**.
+Os yw’n well gennych i drethi gael eu cynnwys ym mhris eich cynnyrch, gallwch wneud hynny drwy alluogi’r gosodiad **Treth Gynhwysol**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Rhes togl Treth Gynhwysol o dan y gosodiad Galluogi Trethi](/img/config/settings-taxes-inclusive.png)
 
-Peidiwch â hoffi'r newidiadau a chyflwynwch.
+Peidiwch ag anghofio **cadw** y newidiadau rydych wedi’u gwneud.
 
-Gallwch y redytwr drwy clict ar y bot **Manage Tax Rates** ar fforddolaeth (sidebar) o'r dudalen setegau tax.
+###
 
-![Link Manage Tax Rates yn panel Tax Rates ar y dudalen setegau](/img/config/settings-taxes-manage-rates.png)
+## Creu Cyfraddau Treth {#creating-tax-rates}
 
-Ar y dudalen redytwr tax rates, gallwch ychwanegu newydd Tax Rates gan clict ar y bot **Add new Row**.
+Ar ôl i chi alluogi Casglu Trethi, bydd angen i chi greu cyfraddau treth ar gyfer lleoliadau penodol gan ddefnyddio ein golygydd cyfraddau treth.
 
-![Tablaw redytwr tax rates gyda Add new Row yn y ddefnydd](/img/config/tax-rates-editor.png)
+Gallwch gyrchu’r golygydd drwy glicio’r botwm **Rheoli Cyfraddau Treth** ar far ochr tudalen gosodiadau Trethi.
 
-Byddwch yn angen rhoi **title** (a ddefnyddir ar gyfer ffurfiadau) i bob tax rate. Yna gallwch ddwylo'r **country** (angen), y **state**, a'r **city** (all ddau allweddol) lle bydd ystaccu'r tax hwnnw. Isaf, apellwch y **tax rate yn persiant**.
+![Dolen Rheoli Cyfraddau Treth yn y panel Cyfraddau Treth ar y dudalen gosodiadau](/img/config/settings-taxes-manage-rates.png)
 
-### Tax Categories
+Ar dudalen y golygydd cyfraddau treth, gallwch ychwanegu Cyfraddau Treth newydd drwy glicio’r botwm **Ychwanegu Rhes newydd**.
 
-Gallwch hefyd creu amlenni Tax Categories, i dros ychwanegu diffigynau tax ar gyfer gwaith diffigynol.
+![Tabl golygydd cyfraddau treth gyda botwm Ychwanegu Rhes newydd ar y brig](/img/config/tax-rates-editor.png)
 
-Clictwch ar **Add new Tax Category**, yna ysgrifwch enw eich amlenni a chrychi **Create**.
+Bydd angen i chi roi **teitl** i bob cyfradd treth (a ddefnyddir ar anfonebau). Yna gallwch ddewis y **wlad** (gofynnol), y **dalaith,** a’r **ddinas** (y ddau’n ddewisol) lle codir y dreth hon. Yn olaf, ychwanegwch y **gyfradd dreth mewn canrannau**.
 
-![Bot Add new Tax Category yn y ddefnydd o'r redytwr tax rates](/img/config/tax-categories-add.png)
+### Categorïau Treth {#tax-categories}
 
-![Faelad input Enw Tax Category mewn modal creu amlenni](/img/config/tax-categories-create-modal.png)
+Gallwch hefyd greu sawl Categori Treth, i ychwanegu cyfraddau treth gwahanol ar gyfer gwahanol fathau o gynhyrchion.
 
-I chwarae drwy amlenni, clictwch ar **Switch** a wybylwch y amlenni i sydd yn eich bod eisiau addasu newydd taxau.
+Cliciwch i **Ychwanegu Categori Treth newydd** , yna ysgrifennwch enw eich categori a gwasgwch **Creu**.
 
-![Bot Switch dropdown i newid rhwng amlenni tax](/img/config/tax-categories-switch.png)
+![Botwm Ychwanegu Categori Treth newydd ar frig y golygydd cyfraddau treth](/img/config/tax-categories-add.png)
 
-![Faelad amlenni tax yn dangos amlenni ar gael](/img/config/tax-categories-select.png)
+![Maes mewnbwn Enw Categori Treth yn y modal creu categori](/img/config/tax-categories-create-modal.png)
 
-Gallwch setio'r amlenni tax ar gyfer proddeig penodol gan fynd i'r **Product edit page** a yna i'r tab Taxes.
+I bori drwy gategorïau, cliciwch **Newid** a dewiswch y categori rydych am ychwanegu trethi newydd ato.
 
-![Tab Tax Products gyda amlenni tax a toggel cyflwyniad](/img/config/product-taxes.png)
+![Botwm cwymplen Newid i newid rhwng categorïau treth](/img/config/tax-categories-switch.png)
 
-Ar y cyflym hwn, gallwch yn toggu off the **Is Taxable?** (Ydych chi’n cael ei ddefnyddio?) i ddweud wrth Ultimate Multisite nad yw'n ddeallai gael taxau ar y proddeig hwnnw.
+![Cwymplen dewis categori treth yn dangos categorïau sydd ar gael](/img/config/tax-categories-select.png)
 
-## European VAT Support
+Gallwch osod y categori treth ar gyfer cynnyrch penodol drwy fynd i’r **dudalen golygu Cynnyrch** ac yna i’r tab Trethi.
 
-Fel ymlaen fel wedi cael ei ddefnyddio yn y cyflwyniad, mae ein add-on ar gael i'r cyddeeau yn y EU sydd â hanesau addysgol yn ddeb o regoliad VAT Eu.
+![Tab trethi Cynnyrch gyda chategori treth a thogl trethadwy](/img/config/product-taxes.png)
 
-Mae'r toolau VAT ein yn helpu gyda chwarae ddau peth hanfodol:
+Ar yr un sgrin honno, gallwch ddiffodd y togl **A yw’n Drethadwy?** i roi gwybod i Ultimate Multisite na ddylai gasglu trethi ar y cynnyrch penodol hwnnw.
 
-  * Chwarae llai cyflwyniadau VAT Eu yn einfedig;
+## Cefnogaeth VAT Ewropeaidd {#european-vat-support}
 
-  * Cyfathrebu a chyfaddefu Nifer VAT - a chwarae gwrth-chwarae ar gyfer entiteau sydd yn cael eu amrywiad VAT (fel y firmion sydd â niferoedd VAT sydd yn ddefnyddiol);
+Fel y soniwyd o’r blaen, mae gennym ychwanegyn ar gael i gwsmeriaid yn yr UE sydd â gofynion ychwanegol oherwydd rheoliadau VAT Ewropeaidd.
 
-I gosi'r add-on hwn, mynd i **Ultimate Multisite > Settings** a gadael ar y link o'r sidebar **Check our Add-ons**.
+Mae ein hoffer VAT yn helpu gyda chwpl o bethau pwysig:
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+  * Llwytho cyfraddau VAT yr UE yn hawdd;
 
-Byddwch yn cael eich reiddiio i'r peidiad add-on ein. Yn y cyflym hwn, gallwch chwilio am **Ultimate Multisite VAT add-on** a gosi'n ddefnyddi.
+  * Casglu a dilysu Rhif VAT - a chodi tâl gwrthdro ar gyfer endidau sydd wedi’u heithrio rhag VAT (megis cwmnïau â rhifau VAT dilys);
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+I osod yr ychwanegyn hwnnw, ewch i **Ultimate Multisite > Gosodiadau** ac yna cliciwch ar ddolen bar ochr **Gwiriwch ein Hychwanegion**.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+![Bar ochr tudalen Gosodiadau gyda dolen Gwiriwch ein Hychwanegion](/img/config/settings-taxes-addons-link.png)
 
-Yna, mynd i **Network Admin > Plugins** a chwarae'r add-on hwn yn gyflwyniad cyfan ar y rheol.
+Byddwch yn cael eich ailgyfeirio i’n tudalen ychwanegion. Yno, gallwch chwilio am **ychwanegyn VAT Ultimate Multisite** a’i osod.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Sgrinlun ddim ar gael: teilsen ychwanegyn VAT ar y dudalen Ychwanegion -->
 
-Os byddwch yn cael eich cyffredin yn ôl i'r **Tax Settings tab**, byddwch yn gweld opsiynau newydd ar gael. Chwarae'r opsiwn **Enable VAT Support** i gosi'r toolau VAT newydd yn ddefnyddio. Peidiwch â hoffi'r **settings** eich!
+<!-- Sgrinlun ddim ar gael: deialog Gosod Nawr ychwanegyn VAT -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+Yna, ewch i **Gweinyddwr Rhwydwaith > Plugins** ac actifadwch yr ychwanegyn hwnnw ar draws y rhwydwaith.
 
-### Gwahanu ar Ratif VAT
+<!-- Sgrinlun ddim ar gael: gweithred Actifadu Rhwydwaith ar gyfer ychwanegyn VAT ar y dudalen Plugins -->
 
-Un o'r toolau sydd yn cael ei ddefnyddio gan ein cyfathrebu yw'r gallu chwarae y rifau tax ar gyfer y cyddeeau Eu. Gall hyn cael ei wneud drwy mynd i'r peidiad redigion y rifau tax ar ôl cael eich amrywiad VAT Eu yn ddefnyddio.
+Os ewch yn ôl i’r **tab Gosodiadau Treth** , fe welwch opsiynau newydd ar gael. Toglowch yr opsiwn **Galluogi Cefnogaeth VAT** i alluogi’r offer VAT newydd. Peidiwch ag anghofio **cadw** eich gosodiadau!
 
-Ar ôl ymlaen o'r pein, byddwch yn gweld opsiynau i gael y VAT. Gan wybullesu rheol ddefnyddio a clisi ar y bot **Update EU VAT Rates**, bydd y tabell yn cael ei ddangos a'i gyflwyno'n awt gyda'r cyfrifau tescau ar gyfer pob statws EU. Yna, dim ond angen i chi ei haddiffu.
+<!-- Sgrinlun ddim ar gael: togl Galluogi Cefnogaeth VAT yn y gosodiadau Treth ar ôl actifadu’r ychwanegyn -->
 
-![Bot Update EU VAT Rates yn y cefn o ddefnyddio rheoli tescau](/img/config/tax-rates-vat-pull.png)
+### Tynnu Cyfraddau Treth VAT i mewn {#pulling-on-vat-tax-rates}
 
-Gallwch hefyd haddiffu'r gaelau ar ôl eu cael eu ddangos. I wneud hynny, haddiffwch y llinell tabell sy rydych chi angen a clisi i haddiff y gaelau newydd.
+Un o’r offer y mae ein hintegreiddiad yn ei ychwanegu yw’r gallu i lwytho’r cyfraddau treth ar gyfer aelod-wladwriaethau’r UE. Gellir gwneud hynny drwy ymweld â thudalen y golygydd cyfraddau treth ar ôl galluogi cefnogaeth VAT yr UE.
 
-### Validacio VAT
+Ar waelod y dudalen, fe welwch yr opsiynau tynnu VAT i mewn. Bydd dewis math o gyfradd a chlicio’r botwm **Diweddaru Cyfraddau VAT yr UE** yn tynnu i fyny ac yn llenwi’r tabl yn awtomatig gyda’r cyfraddau treth ar gyfer pob aelod-wladwriaeth o’r UE. Yna, dim ond ei gadw sydd angen i chi ei wneud.
 
-Pan fydd cefn VAT yn cael ei chynllunio, bydd Ultimate Multisite'n cytuno ffordd ychwanegol i ffurf y cheictw, isod ymlaen o'r ffurf adres gweithredol. Bydd y ffurf yn dangos i'r cyddeeau sy rydych yn EU dim ond ar gyfer cyddeeau sy roedd yn EU.
+![Botwm Diweddaru Cyfraddau VAT yr UE ar waelod y golygydd cyfraddau treth](/img/config/tax-rates-vat-pull.png)
 
-<!-- Screenshot unavailable: Ffurf Nifer VAT ar y cefn cheictw o'r cyflym isod isod ymlaen o'r adres gweithredol -->
+Gallwch hefyd olygu’r gwerthoedd ar ôl eu tynnu i mewn. I’w wneud, golygwch linell y tabl sydd ei hangen arnoch yn syml a chliciwch i gadw’r gwerthoedd newydd.
 
-Yna bydd Ultimate Multisite yn gyflwyno (validate) y Nifer VAT ac os mae'n dod yn un ddefnyddiol, bydd y mecanwaith cyfathrebu allan (reverse charge mechanism) yn cael ei chynllunio a fydd y cyfrifau tescau ar gyfer y barch yn cael eu setio ar 0% ar y barch hwn.
+### Dilysu VAT {#vat-validation}
+
+Pan fydd cefnogaeth VAT wedi’i galluogi, bydd Ultimate Multisite yn ychwanegu maes ychwanegol at y ffurflen checkout, o dan y maes cyfeiriad bilio. Dim ond i gwsmeriaid sydd wedi’u lleoli yn yr UE y bydd y maes yn ymddangos.
+
+<!-- Sgrinlun ddim ar gael: maes Rhif VAT ar ffurflen checkout y frontend o dan y cyfeiriad bilio -->
+
+Bydd Ultimate Multisite wedyn yn dilysu’r Rhif TAW ac os daw’n ôl fel un dilys, caiff y mecanwaith gwrthdaliad ei gymhwyso a gosodir y gyfradd dreth i 0% ar yr archeb honno.

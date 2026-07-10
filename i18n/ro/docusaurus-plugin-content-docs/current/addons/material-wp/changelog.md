@@ -3,7 +3,7 @@ title: Material WP Changelog
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Changelog Material WP
+# Changelog Material WP {#material-wp-changelog}
 
 Versiunea 1.1.15 - 26/01/2026
 * Îmbunătățit: Stilul și formatarea codului;

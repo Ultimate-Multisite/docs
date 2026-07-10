@@ -3,9 +3,9 @@ title: Noutlar
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Chiqarish EslAtlari
+# Chiqarish EslAtlari {#release-notes}
 
-## Versiya 2.13.0 — 2026-06-05 da chiqarildi
+## Versiya 2.13.0 — 2026-06-05 da chiqarildi {#version-2130--released-on-2026-06-05}
 
 - Yangi funksiya: Mijoniy (tenant) uchun hisoblar, to'lov jarayonlari, faktura, sayt, shablon o'zgartirish va domen xaritasi jarayonlari uchun suveren-tenant (sovereign-tenant) qo'llab-quvvatlanish qo'shildi. Bu orqali mijozlar boshqariladigan harakatlar uchun tenent tarmoqlari orqali asosiy saytga qaytarilishi mumkin.
 - Yangi funksiya: Takroriy a'zoliklar uchun yangilash kredensiallarini tekshirish qo'shildi, shunda agar saqlangan to'lov kelishuvi, obuna yoki vault token mavjud bo'lmasa, gateway avtomatik qayta yangilanishni o'chirish imkonini oladi.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Tuzatish: A'zoliklar qayta yangilanishi, muddati tugashi ko'rsatish va to'lov yig'ish kabi cheklovlar endi darhol tugashlar, ishlamay qolish yoki talab qilinadigan to'lovlarni qo'shib bo'lmaslik holatlarini oldini oladi.
 - Takomillashtirish: WordPress bilan mos kelishuv 7.0 gacha sinovdan o'tkazildi, ishlab chiqarish Vue resurslari npm manbalaridan qayta quriladi va Cypress end-to-end qamrovida to'lov, sozlash, SSO va gateway jarayonlariga yanada ko'proq testlar amalga oshirildi.
 
-## Versiya 2.12.0 — 2026-05-15 da chiqarildi
+## Versiya 2.12.0 — 2026-05-15 da chiqarildi {#version-2120--released-on-2026-05-15}
 
 - Yangi: Hostinger (hPanel)ni domen xaritasi integratsiyasi bilan qo'llab-quvvatlanadigan host provayder sifatida qo'shildi
 - Yangi: Site Exporter endi tarmoq bo'ylab saytni qayta tiklashni soddalashtirish uchun tarmoq import paketlarini boshqaradi
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Tuzatish: Site Exporter CLI endi to'g'ri standart tarmoq sayt tanlovini saqlab qoladi
 - Takomillashtirildi: Plugin hajmini kamaytirish uchun paketdagi wp-cli bundpiikli (bundled) olib tashlandi
 
-## Versiya 2.11.0 — 2026-05-11 da chiqarildi
+## Versiya 2.11.0 — 2026-05-11 da chiqarildi {#version-2110--released-on-2026-05-11}
 
 - Yangi: Site eksportlari endi mustaqil ishlaydigan `index.php` faylini paketlashni boshqaradi, shunda ZIP faylni alohida plugin o'rnatmasdan yangi hostga o'rnatish mumkin bo'ladi
 - Yangi: Tarmoq eksporti administratorlarga Site Export admin sahifasidan barcha sousaytlarni yagona arxivda eksport qilish imkonini beradi
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Yangi: Checkout form editor talab qilinadigan maydon konfiguratmasdan foydalanib mahsulot qo'shilsa ogohlantiradi
 - Yangi: Import/Export sozlamalari yorlig'i uning diapazonini aniq tushuntiradi va Site Export vositasiga to'g'ridan-to'g'ri havolani beradi
 
-## Versiya 2.10.0 — 2026-05-05 da chiqarildi
+## Versiya 2.10.0 — 2026-05-05 da chiqarildi {#version-2100--released-on-2026-05-05}
 
 - Yangi: Manual ma'lumot kiritish uchun PayPal yo'l ko'rsatuvchi sozlash wizardi, mos keladigan gateway konfiguratsiyasi uchun OAuth flag gate bilan.
 - Yangi: Shabloni o'zgartirish (Template switch) foydalanuvchi paneli hozirgi shablon kartasi, doimiy grid va **Hozirgi shablonni qayta tiklash** tugmasi bilan qayta loyihalangan.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Tuzatish: Barcha kirish oqimlarida filtrlangan SSO yo'li hurmat qilinadi.
 - Tuzatish: Saqlashda bo'sh sayt identifikatsiya variantlari saqlab qolindi.
 
-## Versiya 2.9.0 — 2026-04-30 da chiqarildi
+## Versiya 2.9.0 — 2026-04-30 da chiqarildi {#version-290--released-on-2026-04-30}
 
 - Yangi: **Tools > Export & Import** (Asboblar > Eksport va import) ostida yagona saytni eksport qilish va import qilish qo'shildi.
 - Tuzatish: ZIP fayllari endi tasdiqlangan yuklab olish nuqtasi orqali xizmat qilinadi.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Tuzatish: Foydalanuvchi sozlamalari kalitlarida Tour IDlari underscore ( `_` ) ga normalizatsiya qilindi.
 - Takomillashtirish: Ma'lumotlarni yaxshiroq mos kelish uchun ZipArchive endi Alchemy/Zippy o'rniga ishlatiladi.
 
-## Versiya 2.8.0 — 2026-04-29 da chiqarildi
+## Versiya 2.8.0 — 2026-04-29 da chiqarildi {#version-280--released-on-2026-04-29}
 
 Новое: В настройках других опций UI добавлен переключатель Jumper.
 Новое: В таблице списка форм оформления заказа добавлена колонка Статус.

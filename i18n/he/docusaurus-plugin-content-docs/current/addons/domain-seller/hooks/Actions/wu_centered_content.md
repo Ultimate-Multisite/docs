@@ -4,19 +4,19 @@ title: פעולה - wu_centered_content
 sidebar_label: wu_centered_content
 _i18n_hash: 9879dece51f196627cb511427892a1b2
 ---
-# פעולה: wu_centered_content
+# פעולה: wu_centered_content {#action-wucenteredcontent}
 
 מאפשר למפתחי תוספים להוסיף תוכן נוסף בתוך העמודה המרכזית.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
 | $page | `object` | מופע עמוד. |
 
-### מאז
+### מאז {#since}
 
 - 2.1.0
-### מקור
+### מקור {#source}
 
 מוגדר ב[`views/admin/register-domain-centered.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/views/admin/register-domain-centered.php#L141) בשורה 141.

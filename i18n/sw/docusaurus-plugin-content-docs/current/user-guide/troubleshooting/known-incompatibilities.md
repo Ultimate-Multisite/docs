@@ -3,7 +3,7 @@ title: Kutokuoana Kunakojulikana
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Matatizo yanayojulikana na Plugins nyingine
+# Matatizo yanayojulikana na Plugins nyingine {#known-incompatibilities-with-other-plugins}
 
 Baada ya kusakinisha na kuwezesha Ultimate Multisite, unaweza kukutana na matatizo kutokana na kutopatana na plugins nyingine ambavyo havijasuluishiwa.
 

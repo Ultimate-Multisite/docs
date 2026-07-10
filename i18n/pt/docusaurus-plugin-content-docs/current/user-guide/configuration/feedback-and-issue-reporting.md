@@ -3,11 +3,11 @@ title: Feedback do Cliente e Relatório de Problemas
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback e Relatório de Problemas do Cliente
+# Feedback e Relatório de Problemas do Cliente {#customer-feedback--issue-reporting}
 
 O Gratis AI Agent v1.5.0 introduz um sistema embutido de feedback e relatórios de problemas que permite aos usuários finais sinalizar respostas inúteis e reportar problemas diretamente da interface de chat. Este sistema inclui gerenciamento de consentimento, um comando de relatório automatizado e triagem assistida por IA no backend.
 
-## Botão Polegar para Baixo (Thumbs-Down Button)
+## Botão Polegar para Baixo (Thumbs-Down Button) {#thumbs-down-button}
 
 Cada mensagem enviada pelo assistente de IA exibe um botão **polegar para baixo** (👎). Quando o usuário clica nele, pode marcar uma resposta como inútil ou incorreta.
 
@@ -15,7 +15,7 @@ Cada mensagem enviada pelo assistente de IA exibe um botão **polegar para baixo
 - Ao clicar nele, abre o **Modal de Consentimento de Feedback**.
 - O feedback é associado ao tópico da conversa e à mensagem específica.
 
-## Modal de Consentimento de Feedback
+## Modal de Consentimento de Feedback {#feedback-consent-modal}
 
 Quando um usuário clica no botão polegar para baixo, um modal de consentimento aparece antes que qualquer dado seja enviado. O modal:
 
@@ -26,13 +26,13 @@ Quando um usuário clica no botão polegar para baixo, um modal de consentimento
 
 Nenhum feedback é registrado até que o usuário confirme explicitamente.
 
-## Banner de Feedback Automático (Auto-Prompt)
+## Banner de Feedback Automático (Auto-Prompt) {#auto-prompt-feedback-banner}
 
 No final de uma conversa, o assistente pode exibir um **banner de feedback automático** — uma mensagem não intrusiva perguntando se a sessão foi útil.
 
 Este banner aparece automaticamente com base na duração e nos resultados da conversa. Ele linka para o mesmo fluxo de feedback que o botão polegar para baixo. Os usuários podem descartar o banner sem fornecer feedback.
 
-## Comando Slash /report-issue
+## Comando Slash /report-issue {#report-issue-slash-command}
 
 Os usuários podem acionar o fluxo de feedback diretamente digitando `/report-issue` na caixa de entrada do chat. Este comando:
 
@@ -42,7 +42,7 @@ Os usuários podem acionar o fluxo de feedback diretamente digitando `/report-is
 
 O comando `/report-issue` está disponível em todos os modos de chat (inline, widget flutuante, tela cheia).
 
-## Triagem Assistida por IA
+## Triagem Assistida por IA {#ai-assisted-triage}
 
 O feedback enviado é direcionado para uma camada de triagem de IA que:
 

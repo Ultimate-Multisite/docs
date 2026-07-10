@@ -1,0 +1,194 @@
+---
+title: Fanondroana Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Torolàlana momba ny Hooks {#hooks-reference}
+
+Antontan-taratasy novokarina ho azy ho an'ny **hetsika 59** sy **sivana 118** rehetra ao amin'ny Ultimate Multisite.
+
+## Hetsika {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Mitranga alohan’ny redirect fanamarinana.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Mitranga avy hatrany alohan’ny hametrahana ny cookie fanamarinana.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Mitranga avy hatrany alohan’ny hametrahana ny cookie fanamarinana ho an’ny efa tafiditra.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Mamela ny mpamorona hanampy fampidirana host provider azy manokana amin’ny alalan’ny fanitarana wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Miteraka rehefa voaloada avokoa ny dependencies rehetra
+- [wu_activation](./Actions/wu_activation) — Mamela ny ampahany hafa amin’ny fanitarana hampifandray ny routine-ny ho an’ny activation
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Mamela ny mpamorona fanitarana hampifandray functions aorian’ny user na super admin manova ny template an’ny tranonkala
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Amin’ny tranga sasany, mila mampiditra hery fanampiny isika mba hikarakara actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Mitranga alohan’ny fanodinana ny fangatahana fikarohana.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Mamela ny mpamorona hanao fanovana fanampiny amin’ny object checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Mamela ny mpamorona hanao fanovana fanampiny amin’ny object checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Mitranga alohan’ny hampidirana saha iray ao amin’ny endrika checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Mamela ny mpamorona hampiteraka hooks fanampiny.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Alohan’ny hanodinantsika ny checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Mitranga rehefa tafangona tanteraka ny kaomandy checkout.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Mamela ny mpamorona fanitarana hanampy widgets ao amin’ny Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Mamela ny mpamorona fanitarana hanampy widgets ao amin’ny Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Mamela ny ampahany hafa amin’ny fanitarana hampifandray ny routine-ny ho an’ny deactivation
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Mamela ny mpamorona fanitarana hanampy actions amin’ny fizotry ny famafana
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Mitranga rehefa lasa domain fototra ho an’ny tranonkala iray ny domain.
+- [wu_domain_created](./Actions/wu_domain_created) — Miteraka rehefa ampiana mapping domain vaovao.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Nitranga taorian’ny naha-voaloada ny Domain Mapping fototra anay
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ny fanitarana sasany dia hitahiry URL alohan’ny naha-active ny mapping na hanangana URL amin’ny fomba hafa izay tsy tafiditra ao
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Mamela ny mpamorona hampifandray aorian’ny fitrangan’ny duplication tranonkala.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Mamela ny mpamorona fanitarana hanampy hooks fanampiny
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook ho an’ny fanadiovana fanampiny
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Mitranga alohan’ny hikarakarana ny fangatahana modal hanampy domain vaovao.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Mamela ny mpamorona fanitarana hitahiry meta data amin’ny fomba samihafa raha ilainy izany.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Mamela ny mpamorona fanitarana hitahiry meta data an’ny user amin’ny fomba samihafa raha ilainy izany.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Mitranga rehefa sendra magic link token tsy manan-kery.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Mitranga rehefa tafiditra amin’ny alalan’ny magic link ny user iray.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Mamela ny mpamorona fanitarana hanao zavatra fanampiny rehefa ampiana ny customer.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Mitranga rehefa voasoratra anarana ho an’ny entity iray ny fahaiza-manao MCP.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Mitranga rehefa voa-initialize ny adapter MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Miteraka aorian’ny fanafoanana ny maha-mpikambana.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Miteraka aorian’ny fanavaozana ny maha-mpikambana.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Miteraka alohan’ny hanafoanana ny maha-mpikambana.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Miteraka alohan’ny fanavaozana ny maha-mpikambana.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Mitranga rehefa voatahiry ao amin’ny database ny object iray.
+- [wu_page_added](./Actions/wu_page_added) — Mamela ny mpamorona fanitarana hampandeha zavatra fanampiny rehefa voasoratra anarana ny pejy.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Mamela ny mpamorona fanitarana hanampy votoaty fanampiny aorian’ny fanontantsika ny pejy
+- [wu_page_before_render](./Actions/wu_page_before_render) — Mamela ny mpamorona fanitarana hanampy votoaty fanampiny alohan’ny hanontantsika ny pejy.
+- [wu_page_load](./Actions/wu_page_load) — Mamela ny mpamorona fanitarana hanampy hooks fanampiny amin’ny pejintsika.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Mamela ny mpamorona fanitarana hanampy votoaty fanampiny aorian’ny fanontantsika ny pejy
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Mamela ny mpamorona fanitarana hanampy votoaty fanampiny alohan’ny hanontantsika ny pejy.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Mamela ny mpamorona fanitarana hanampy hooks fanampiny amin’ny pejintsika.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Mitranga rehefa voasoratra anarana ho an’ity pejy ity ny widgets.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Mandeha mba hamelana ny addons hampifandray capability modules amin'ny integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Mandeha mba hamelana ny integrations hisoratra anarana.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Mamela routes fanampiny hosoratana anarana.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Mamela ny plugin developers hanampy actions amin'ny dingan'ny fitahirizana
+- [wu_site_created](./Actions/wu_site_created) — Mandeha rehefa avy noforonina voalohany ny site iray.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Mamela ny plugin developers hanampy hooks fanampiny, raha ilaina.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Mandeha rehefa ao anatin'ny toe-javatra template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Mandefa ny enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Mandeha rehefa voatahiry ao amin'ny database ny object iray.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Mandeha rehefa voatahiry ao amin'ny database ny object iray.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Mandeha rehefa voatahiry ao amin'ny database ny object iray.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Mamela ny plugin developers hanampy actions amin'ny dingan'ny fanokafana hidy.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Manivana ny faharetan'ny fe-potoana fahataperan'ny cookie fanamarinana.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Manivana ny tetika redirect fanamarinana.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Mamerina eto ny WP Filter tany am-boalohany, mba ho azo antoka.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Mamela ny mpamorona plugin hanivana ny URL ampiasaina ao amin'ny previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Manivana raha tokony halefa amin'ny HTTPS ihany ny auth cookie.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Manivana raha hampiasa redirect fanamarinana azo antoka.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Manivana raha tokony halefa amin'ny HTTPS ihany ny cookie efa logged in.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Mamela ny fisorohana ny fandefasana auth cookies amin'ny client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Mametraha ny URL redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Manampy dingana fanampiny amin'ny alalan'ny filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Mamela ny mpamorona plugin hanampy variable fanampiny amin'ny tontolon'ny render amin'ny ankapobeny.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Mamela ny mpamorona hanafohy ity fanamarinana ity.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Manivana ny fields ho an'ny modal add new domain.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Mamela ny mpamorona hanova ny setup fee line item.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Mamela ny mpamorona hanivana admin notices nampian'i Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Manivana aorian'ny fanovana.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ankehitriny, miatrika ny karazana rehetra isika.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Mamela ny mpamorona plugin hanafohy ny fetra.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Manivana raha hampiharina na tsia ny signup fee.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Manivana ny arguments api tany am-boalohany.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Mamela ny mpamorona plugin hanivana ny fields adiresy billing.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Mamela ny mpamorona handalo ny output ary hametraka vaovao
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Mamela ny mpamorona handalo ny code unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Manivana ny totalin'ny "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Manivana ny totalin'ny "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Manivana ny totalin'ny "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Mamela ny mpamorona plugin hitsabaka amin'ny sandan'ny crédit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Manivana ireo domain fototra ifampizarana amin'ny checkout-form izay tsy tokony ho lasa mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Ny APIs anay hanampiana field templates vaovao dia mifandray eto.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Ny APIs anay hanampiana karazana field vaovao dia mifandray eto.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Manivana ny hafatra diso.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Mamela ny mpamorona handalo ny fanamarinana raha auto-submittable ny field iray.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Mamela ny mpamorona plugin hanampy aliases manokana ao amin'ny form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Mamela ny mpamorona plugin hanivana ny fitsipika validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Esory ireo Params tsy ilaina.
+- [wu_contains_element](./Filters/wu_contains_element) — Mamela ny mpamorona hanova ny valin'ny fikarohana voalohany.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Mamela ny mpamatsy host hametraka ny constant amin'ny fomba hafa.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Mamerina anarana tsara ho an'ny sub-divisions ara-pitantanan'ny firenena.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Mamerina ny lisitry ny tanàna ho an'ny state iray ao amin'ny firenena iray.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Mamerina ny lisitry ny states ho an'ity firenena ity.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Mamela ny mpamorona hanova ny fitondran-tena default ary hametraka ny customer ankehitriny amin'ny fomba hafa.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Mamela ny mpamorona hanova ny fitondran-tena default ary hametraka ny membership ankehitriny amin'ny fomba hafa.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Mamela ny mpamorona hanova ny fitondran-tena default ary hametraka ny site ankehitriny amin'ny fomba hafa.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Mamela ny mpamorona hanova ny masontsivana URL fitantanana site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Mamela ny mpamorona plugin hanivana ny links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Mamela ny mpamorona plugin hanampy fanamarinana vaovao mba hamaritana ny vokatra.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Mety mila manampy blocks fanampiny isika any aoriana.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Manampy filter ankapobeny ahafahan’ny developers manitatra ity parser ity hiatrehana builders na plugins fanampiny.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Sivano raha hampihatra fitsipika password fanampiny.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Sivano ny username an’ny mpanjifa novokarina.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Avelao ny plugin developers hanivana ny pre-sets an’ny pejy checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Avelao ny developers hanampy form slugs vaovao mba handingana ity fihetsika ity.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Avelao ny developers sy add-ons hanampy dingana migration vaovao
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Jereo bebe kokoa momba ity filter ity etsy ambany, amin’ity method ity ihany.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Avelao ny developers hifidy izay post types tokony haseho.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Avereno ny Lines, azo sivananina
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Avelao ny developers hanova ny tsiroaroa domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Manivana ny fizarana wizard ho an’ny setup fampidirana hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Manivana ny fields amin’ny form iray. Ny form dia fantarina amin’ny ID ao amin’ny anaran’ny filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Sivano ny product types izay manana billing cycles mahaleo tena.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Avelao ny plugin developers hanery state iray voafaritra ho an’ny API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Avelao ny plugin developers hanampy fitsapana fanampiny ho an’ny development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Avelao ny plugin developers hanery state iray voafaritra ho an’ny MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Noho ny antony fiarovana, feranay ny isan’ny actions azo ampiasaina amin’ny hooking. Ity filter ity dia mamela ny developers hanitatra
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Manamarina raha avela amin’ity plan ity ny post type iray Avelao ny plugin developers hanivana ny sanda averina
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Sivano raha hampihatra fanamarinana adiresy IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Sivano raha hampihatra fanamarinana user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Sivano ny URL magic link novokarina.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Sivano raha alefa ny magic links.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Manivana ny URL redirect aorian’ny fanaovana domain iray ho primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Mamoròna lisitra fanilihana parameters izay misoroka ny auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter hanoloana ny fanapahan-kevitra fampidirana MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Manivana ny daty lany daty voakajy.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Manivana ny daty lany daty voakajy hapetraka aorian’ny renewal.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Avelao ny developers hanampy update form slugs vaovao.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Sivano ny halavan’ny password farafahakeliny.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Sivano ny tanjaky ny password farafahakeliny takiana (isa zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Avelao ny plugin developers, sy isika ihany, hanampy action links amin’ny pejy fanitsiana antsika
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Sivano raha hitaky litera lowercase ao amin’ny passwords.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Sivano raha hitaky isa ao amin’ny passwords.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Sivano raha hitaky tarehintsoratra manokana ao amin’ny passwords.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Sivano raha hitaky litera uppercase ao amin’ny passwords.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Avelao ny mpampiasa hanova ny hafatra momba ny payments mbola miandry.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Sivano ny product types izay tokony horaisina ho plans.
+- [wu_post_count](./Filters/wu_post_count) — Avelao ny plugin developers hanova ny totalin’ny fanisana
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Avelao ny plugin developers hanova izay post status tokony ho isaina Amin’ny default, posts published sy private no isaina
+- [wu_post_default_status](./Filters/wu_post_default_status) — Manivana ny data-n’ilay object alohan’ny hitahirizana azy ao amin’ny database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Avelao ny developers hanivana settings alohan’ny save ataon’ny Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Manivana raha avela hanohy ny request na tsia.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Manivana raha avela hanohy ny request na tsia.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Sivana raha avela hanohy amin’ilay fangatahana na tsia.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Sivana raha avela hanohy amin’ilay fangatahana na tsia.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Sivana raha avela hanohy amin’ilay fangatahana na tsia.
+- [wu_return_url](./Filters/wu_return_url) — Avelao ny developers hanova ny gateway return URL ampiasaina aorian’ny fizotry ny checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Avelao ny developers an’ny plugin hanampy functions modely fikarohana bebe kokoa.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Avelao ny developers hanampy dingana setup wizard fanampiny.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Sivana raha tokony hamorona rakitra domain ho an’ny site vao noforonina ny Ultimate Multisite.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Avelao ny developers hanao short-circuit ny redirection, hisorohana azy tsy hitranga.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Mamela fanoratana indray ny handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Sivana ny hetsika faobe azo ampiasaina ho an’ny sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sivana hanovana ny sanda ho an’ny get pluginssites ao anatin’ny network.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Alefa/ajanona ny fahafahana single-sign-on miampita domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Sivana ny URL SSO novokarina alohan’ny hamerenana azy ireo ho an’ny hetsika mpanjifa miampita domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Sivana ny angona Subscription Stripe. Afaka manolo ny success_url na cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Sivana ny argument an’ny payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Sivana ny ID an’ilay plan hojerena. Raha misy ity, ny subscription vaovao dia hampiasa ity plan ity.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Sivana ny ID an’ilay product hojerena. Raha misy ity, ny subscription vaovao dia hampiasa ity product ity.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Sivana ny sanda idempotency_key alefa miaraka amin’ny safidin’ny charge Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Sivana ny firaketana membership mifandray amin’ity webhook ity.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Sivana ny data meta alohan’ny hanaovana serialization azy mba hotehirizina ao amin’ny database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Sivana ny angona object alohan’ny hitehirizana azy ao amin’ny database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Avelao ny developers hanova ny URL upgrade to unlock
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Farito raha tokony hampiasaina ny mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Sivana ny solon’anaran’ny mpanjifa vaovao.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Avelao ny developers hanova ny hafatra momba ny fetran’ny mpampiasa membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Mamela ny developers hanampy lahatahiry fanampiny amin’ny lisitra azo soloina.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Sivana izay sub_commands alefa ho an’ity entity ity.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Manamarina lamina telo izahay rehefa miezaka mamantatra izay toerana ahafahanay mampiditra ny constants:

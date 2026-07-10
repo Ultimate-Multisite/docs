@@ -3,7 +3,7 @@ title: WordPress Multisite ఎలా ఇన్‌స్టాల్ చేయా
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite ని ఎలా ఇన్‌స్టాల్ చేయాలి?
+# WordPress Multisite ని ఎలా ఇన్‌స్టాల్ చేయాలి? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ఒకే ఇన్‌స్టాలేషన్‌లో సైట్‌ల నెట్‌వర్క్‌ను కలిగి ఉండేందుకు మిమ్మల్ని అనుమతిస్తుంది. ఇది అంతర్నిర్మిత ఫీచర్, కానీ డిఫాల్ట్‌గా యాక్టివ్‌గా ఉండదు.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin కు trailing slash జోడించండి
+# /wp-admin కు trailing slash జోడించండి {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ subsite సృష్టించడానికి:
 
 ఫీల్డ్‌లను నింపిన తర్వాత, "Add site" బటన్ క్లిక్ చేయండి. కొత్త subsite సృష్టించబడిన తర్వాత, subsite సరిగ్గా పనిచేస్తుందని నిర్ధారించుకోవడానికి దాన్ని యాక్సెస్ చేయండి.
 
-## సాధారణ సమస్యలు:
+## సాధారణ సమస్యలు: {#common-problems}
 
-### 1\. నేను కొత్త సైట్లు సృష్టించగలుగుతున్నాను కానీ అవి యాక్సెస్ అవ్వడం లేదు.
+### 1\. నేను కొత్త సైట్లు సృష్టించగలుగుతున్నాను కానీ అవి యాక్సెస్ అవ్వడం లేదు. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 మీరు subdomains ఎంచుకుంటే, మీ multisite నెట్‌వర్క్ కోసం wildcard subdomains కూడా సెటప్ చేయాలి.
 

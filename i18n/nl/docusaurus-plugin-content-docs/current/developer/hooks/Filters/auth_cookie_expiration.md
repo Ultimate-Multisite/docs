@@ -4,11 +4,11 @@ title: Filter - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Filtert de duur van de vervalperiode van het authenticatiecookie.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtert de duur van de vervalperiode van het authenticatiecookie.
 | $user_id | `int` | Gebruikers-ID. |
 | $remember | `bool` | Of de gebruikerslogin moet worden onthouden. Standaard false. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) op regel 52

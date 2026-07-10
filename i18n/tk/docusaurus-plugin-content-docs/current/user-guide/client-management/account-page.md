@@ -3,7 +3,7 @@ title: Müşteri Hasaby Sahypasy
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Müşteriniň Hasaby Sahypasy (v2)
+# Müşteriniň Hasaby Sahypasy (v2) {#your-clients-account-page-v2}
 
 _**ÖNEMLİ ÝAZGYCHY: Bu makale Ultimate Multisite 2.x versiyasyna aýdylýar.**_
 
@@ -11,7 +11,7 @@ Müşderiler siziň ulgamanyzda bir plan bilen baglydygy kabul edende, olara web
 
 Bu tutorialda biz siziň müşteri hasaby sahabyndan geçip, olaryň bu sahypada näme görip edip biljekdigini görkezendirelik üçin size ýol berer.
 
-## Hasaby Sahypa
+## Hasaby Sahypa {#the-account-page}
 
 Hasaby sahpa siziň müşteri hasabasyndaky **Account** (Hasaba) düwmesini basmagy bilen girilip bilerisiz.
 
@@ -27,7 +27,7 @@ Müşteri onu basandan soň, ol öz üjeleşmelerini, hasaplama adyny, fakturala
 
 Ol şol ýerden başga bir plan bilen üjeleşmäge ýa-da size teklip edýän başga paket ýa-da hyzmat satyn alyp biler. Her bir bölümi aýry-aýry gözläp görüp bileris.
 
-### Siziň Üylygy Barada Umumy Barlag:
+### Siziň Üylygy Barada Umumy Barlag: {#your-membership-overview}
 
 Siziň iňlisde web saytyňizden hemen aşakdaky ilkin blokda siziň şu waka planlaryň we ol bilen satyn alynan hyzmatlar/paketler baradaky umumy barlag görkezilýär. Bu blok şol belgili üye nömresini, onuň üçün ödenen ilkin miqdaryny, plan we her bir hyzmat/paket bahalaryny we bu üye üçin näçe gezek toplanýandygyny görkezýär. Ol hem üyenin **Aktiw** (Active), **Sürişip gitmiş** (Expired) ýa-da **Aýyrlanmady** (Canceled) bolup biljekdigini görüp bilerler.
 
@@ -49,7 +49,7 @@ Hesap sayfasında, müşterileriniz fatura adreslerini de güncelleme imkanı bu
 
 Müşteriniz için yeni bir pencere açılacaktır. Yapması gereken tek şey, yeni adresi doldurmak ve _Save Changes_ (Değişiklikleri Kaydet) butonuna tıklamaktır.
 
-### Site Şablonunu Değiştirme:
+### Site Şablonunu Değiştirme: {#updating-the-billing-address}
 
 Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Settings > Sites** (Ayarlar > Siteler) bölümüne gitmeli ve **Allow Template Switching** (Şablon Değiştirmeye İzin Ver) seçeneğini açmalısınız.
 
@@ -77,7 +77,7 @@ Tassyklama boýunça açyp we **Process Switch** (Üýtgetmegi işlemek) düwmen
 
 Müşderiler özlerini häzirki laýyklykda ýüklenipdirilen şablon üçin saýlmagy zerurdyginde bu panelden **Reset current template** (Häzirki şablonu hasaplamak) funksionalyndan hem ulanyp bilmäler. Başga bir şablona geçmek ýaly, şablonu hasaplamak sayt maglumatlaryny üýtgedip biler, şonuň üçin müşderiler diňe hasaplamagy düşündiklerinde tassyklamakdan soň basmaly.
 
-### Goşmaça domynlar (Custom Domains) goşmak:
+### Goşmaça domynlar (Custom Domains) goşmak: {#changing-the-site-template}
 
 Müşderileriniz hem bu plan üçin özleri üçin domany goşmagy mümkin bolan ýaly özleri üçin hasap lapkasasynda opsiyona eýe bolarlar. Müşderilerinizin domany ulanyp bilmegi üçin, **Ultimate Multisite > Settings >** **Domain Mapping** (Domyn haritalamasy) bölümini geçiň.
 
@@ -111,7 +111,7 @@ Domain mapping ayarlar səhifəsinin tam görünüşü budur:
 
 **Add Domain** (Domain Ekle) düyməsinə kliklədikdən sonra, domain müşterinizin hesabına əlavə olunur. Onların indi etməli olduğu yeganə şey, bu custom domainin DNS qeydlərini domen registratorlarında dəyişməkdir.
 
-### Şifrəni Dəyişmək:
+### Şifrəni Dəyişmək: {#adding-custom-domains}
 
 Account dashboard daxilində müşterileriniz **Change Password** (Şifrəni Dəyiş) düyməsinə klikləyərək şifrələrini də dəyişə bilərlər.
 
@@ -121,7 +121,7 @@ Bu yeni bir pencere açar, burada müşteriler mevcut şifrelerini girmeli ve ar
 
 ![Mevcut ve yeni şifre alanları olan şifre değiştirme formu](/img/account-page/change-password-form.png)
 
-### Tehlike Bölgesi:
+### Tehlike Bölgesi: {#changing-password}
 
 **Danger Zone** kısmında ayrıca **Siteyi Sil** ve **Hesabı Sil** olmak üzere iki seçenek de gösterilir. Bu iki işlem geri alınamaz olduğu için her ikisi de Tehlike Bölgesi'nde yer alır. Müşteriler web sitelerini veya hesaplarını silseler bile onları geri getiremezler.
 

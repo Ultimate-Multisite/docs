@@ -3,9 +3,9 @@ title: Migracja z V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migracja z wersji V1
+# Migracja z wersji V1 {#migrating-from-v1}
 
-## Ultimate Multisite przeszedł z oryginalnej rodziny wydań 1.x na rodzinę wydań 2.x.
+## Ultimate Multisite przeszedł z oryginalnej rodziny wydań 1.x na rodzinę wydań 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite w wersji 2.0 i nowszych to całkowicie przepisany kod, co oznacza, że stara i nowa wersja mają ze sobą bardzo niewiele wspólnego. Z tego powodu podczas aktualizacji z 1.x do 2.x Twoje dane będą musiały zostać przeniesione do formatu zrozumiałego dla nowych wersji.
 
@@ -15,7 +15,7 @@ W tej lekcji dowiesz się, jak działa migrator, co zrobić w przypadku błędó
 
 _**WAŻNE: Zanim rozpoczniesz aktualizację z wersji 1.x do 2.0, koniecznie wykonaj kopię zapasową bazy danych swojej witryny**_
 
-## Pierwsze kroki
+## Pierwsze kroki {#first-steps}
 
 Pierwszym krokiem jest pobranie pliku .zip wtyczki i zainstalowanie wersji 2.0 w panelu administratora sieci.
 
@@ -51,7 +51,7 @@ Po aktywacji licencji możesz rozpocząć właściwą instalację, klikając **I
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Teraz czas na migrację
+## Teraz czas na migrację {#now-the-migration}
 
 Migrator ma wbudowane zabezpieczenie, które sprawdza całą Twoją sieć multisite, aby upewnić się, że wszystkie dane Ultimate Multisite można przenieść bez problemów. Kliknij przycisk **Run Check** (Uruchom sprawdzanie), aby rozpocząć proces.
 
@@ -59,13 +59,13 @@ Migrator ma wbudowane zabezpieczenie, które sprawdza całą Twoją sieć multis
 
 Po zakończeniu sprawdzania możliwe są dwa wyniki: **z błędem** lub **bez błędu**.
 
-### Z błędem
+### Z błędem {#with-error}
 
 Jeśli pojawi się komunikat o błędzie, musisz skontaktować się z naszym zespołem pomocy technicznej, aby pomógł Ci go naprawić. Pamiętaj, aby **dołączyć dziennik błędów** podczas tworzenia zgłoszenia. Możesz pobrać dziennik lub kliknąć link „contact our support team" (skontaktuj się z zespołem pomocy). Otworzy się widget pomocy po prawej stronie ekranu z wstępnie wypełnionymi polami, w tym dziennikiem błędów w opisie.
 
 _**Ponieważ system wykrył błąd, nie będziesz mógł kontynuować migracji do wersji 2.0. Możesz wtedy przywrócić wersję 1.x i dalej używać swojej sieci do czasu naprawienia błędu.**_
 
-### Bez błędu
+### Bez błędu {#without-error}
 
 Jeśli system nie znajdzie żadnych błędów, zobaczysz komunikat o powodzeniu i przycisk **Migrate** (Migruj) na dole strony, który pozwoli Ci kontynuować migrację. Na tej stronie zostaniesz przypomniany o utworzeniu kopii zapasowej bazy danych przed kontynuowaniem — gorąco to zalecamy. Kliknij **Migrate**, jeśli masz już kopię zapasową.
 

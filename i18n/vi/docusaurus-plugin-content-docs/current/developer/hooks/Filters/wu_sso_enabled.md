@@ -4,25 +4,25 @@ title: Bộ lọc - wu_sso_enabled
 sidebar_label: wu_sso_enabled
 _i18n_hash: 67263dea6df806158e5d4c9bdb984acf
 ---
-# Filter: wu_sso_enabled
+# Filter: wu_sso_enabled {#filter-wussoenabled}
 
 Bật/tắt khả năng đăng nhập một lần (single-sign-on) qua các miền khác nhau (cross-domain).
 
 Bạn có thể lọc giá trị này để tắt hoàn toàn tính năng đăng nhập một lần, hoặc bật nó theo điều kiện thay thế.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $enabled | `bool` | Có nên bật SSO không? `True` là bật, `false` là tắt. |
 
-### Since
+### Since {#since}
 
 - 2.0.11
-### Source
+### Source {#source}
 
 Được định nghĩa trong [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L110) tại dòng 110
 
 
-## Returns
+## Returns {#returns}
 Giá trị cho biết liệu SSO có được bật hay không.

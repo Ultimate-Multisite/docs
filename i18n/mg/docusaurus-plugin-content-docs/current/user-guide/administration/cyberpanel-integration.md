@@ -3,25 +3,25 @@ title: Fampidirana CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Ity toromarika ity toromarika momba ny fomba fanaovana fametrahana (configuration) ny integration Ultimate Multisite CyberPanel mba hahafahana manampy sy mamoaka ho virtual host ao amin'ny CyberPanel ireo domain voafidy (mapped domains) ao amin'ny tambajotra anareo aho, ary azo atao koa ny fanomezana auto-SSL amin'ny alalan'i Let's Encrypt.
 
-## Inona no ataony
+## Inona no ataony {#what-it-does}
 
 - Rehefa misy domain voafidy ao amin'ny Ultimate Multisite, dia mitondra ny integration API an'ny CyberPanel mba hamoronana virtual host ho an'io domain io.
 - Rehefa esorina ny fametrahana domain (domain mapping), dia mitondra ny integration ny API mba hanesorana ilay virtual host mifandraika amin'izany.
 - Rehefa voafidy ny auto-SSL, dia manomboka avy hatrany ny integration ny fanomezana sertifika Let's Encrypt rehefa vita ny famoronana ilay virtual host.
 - Azo ampiana/esorina raha tianao arakaraka ny fepetra "Auto-create www subdomain" ao amin'ny Domain Mapping settings anareo.
 
-## Fepetra takiana (Prerequisites)
+## Fepetra takiana (Prerequisites) {#prerequisites}
 
 - Fandaharana CyberPanel miasa (v2.3 na avo kokoa no tsara) azo jerena avy amin'ny server WordPress anareo.
 - Website efa misy ao amin'ny CyberPanel izay manome ny fototra (root) ho an'ny tambajotran'ny WordPress anareo. Ny integration dia mampiditra virtual host vaovao amin'ity server ity.
 - Fanaovana access amin'ny API an'ny CyberPanel. Ny fanamarinana dia mampiasa ny anaran'ny mpitantana (admin username) sy ny teny fidirana (password) anareo ao amin'ny CyberPanel.
 - Ilaina fa ny DNS records ho an'ireo domain voafidy dia tokony haneho ny adiresin'ny server anareo alohan'ny hanomezana sertifika marina ny auto-SSL.
 
-## Fepetra (Requirements)
+## Fepetra (Requirements) {#requirements}
 
 Ireo constants ireo dia tsy maintsy voarakitra ao amin'ny rakitra `wp-config.php` anareo:
 

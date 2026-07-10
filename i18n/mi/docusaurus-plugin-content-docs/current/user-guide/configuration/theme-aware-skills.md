@@ -3,11 +3,11 @@ title: Kōrero Whakaaro-Awhi
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kōrero Whakaaro o te Theme
+# Kōrero Whakaaro o te Theme {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 e whero au ngā takawaahi hou mō te theme-aware skills (kōrero-whakaaro o te theme) i te whakamahinga, i te whai ake i te WordPress theme o koe. Ko ngā skills ei whakaatu i whakamahi manuia me ngā kaha whakahou kua whakatika ki te arhitektura me ngā āhuatanga o tō theme.
 
-## He aha ngā Theme-Aware Skills?
+## He aha ngā Theme-Aware Skills? {#what-are-theme-aware-skills}
 
 Ngā theme-aware skills he mea nui (pre-configured knowledge bases) me ngā setu taonga (tool sets) e whai ake ai te AI assistant based ki te WordPress theme e hoki ana i runga i tō wāhi. I roto i te wā e whakatika i ngā theme, ko ngā skills e taea te whakamahi o te assistant e whakahou automatically — he mea nui ona koe e whakaoti manuia (no manual configuration).
 
@@ -18,9 +18,9 @@ Ko every skill e whai ana ki:
 - **Examples o te whakaiti** — ngā code snippets me ngā pattern o te whakatika mō ngā mahi whakahou (common tasks)
 - **Best practices** — ngā whakaahuatanga mō te arhitektura me te workflow o te theme
 
-## Ngā Theme-Aware Skills Eke i te Mahi
+## Ngā Theme-Aware Skills Eke i te Mahi {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **E tino whakamahia ana mō:** Ngā theme e whai i te arhitektura block-based (Full Site Editing) o te WordPress.
 
@@ -34,7 +34,7 @@ Ko te skill o Block Themes e whero au ngā pouri mō:
 
 **E whakatika automatically i roto i:** Ko te theme e hoki ana (active theme) he heta block theme (supports `block-templates` feature).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **E tino whakamahia ana mō:** Ngā theme WordPress pūrere (traditional themes) e whai i PHP templates me te classic editor.
 
@@ -49,7 +49,7 @@ Whakawhanaunganga i te whakamārama o te hierarchy o te theme me ngā template t
 
 **E whaiwhai ana i te awhi:** Ko te theme active (non-block) o koe.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **E whaiwhai ana i:** Ngā wāhi whai anga (block-based design) o te site e hāpai i te plugin Kadence Blocks.
 
@@ -63,7 +63,7 @@ Ko te maharatanga Kadence Blocks e hiahia ana atu ki:
 
 **E whaiwhai ana i te awhi:** Ko te plugin Kadence Blocks active (whakaahua) mo te site o koe.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **E whaiwhai ana i:** Ngā wāhi whai anga (block-based design) me te whakamaoritanga o te theme e hāpai i te Kadence theme.
 
@@ -77,15 +77,15 @@ Ko te maharatanga Kadence Theme e hiahia ana atu ki:
 
 **E whaiwhai ana i te awhi:** Ko te Kadence theme ko te theme active (whakaahua) o koe.
 
-## He aha ngā maharatanga e whaiwhai?
+## He aha ngā maharatanga e whaiwhai? {#how-skills-are-selected}
 
 Ko te assistant e whakamārama anō i te theme active me ngā plugins e whakahou ana i roto i every message. Ko te skill e hiahia ana atu ki kohekohe theme-aware (e whai whakaaro ki te theme) e kaha, ko e whakawhanaunga ana ki te context o te assistant automatically. Ae, koe ka taea e koe te whakatau me te whakawhiti i ngā skills manually.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Nōna whakatutai i te wāhi ahau (mō i roto i te wāhi ahau, he tino mō te site ahau) (mō taketake, he tino mō te site ahau).
 
-### Whakaorero Te Theme
+### Whakaorero Te Theme {#switching-themes}
 
 I roto i roto i te wā koe e whakawhiti i te theme ahau, ka whakahirahira ngā mahi o te assistant i runga i te message tēnei. Hei whakamārama, ko:
 
@@ -93,11 +93,11 @@ I roto i roto i te wā koe e whakawhiti i te theme ahau, ka whakahirahira ngā m
 2. Ka whakawhiti atu ki te classic theme.
 3. I roto i te message tēnei, ka whakahirahira ngā **Classic Themes** skill automatically, ā, ka whakatika ai te **Block Themes** skill.
 
-## Whakarite Te Mahi me Ngā Theme-Aware Skills
+## Whakarite Te Mahi me Ngā Theme-Aware Skills {#using-theme-aware-skills}
 
 Mō te whakamahi i te skill e whai whakaaro ki te theme (theme-aware skill), he tino tika ana koe ki mōhaka i te mea e tino e hiahia koe i te chat interface. Ka whai whakaaro ai te assistant ki te guidance o te skill ahau e tika ana automatically.
 
-### Mahi Whakawātea (Example Prompts)
+### Mahi Whakawātea (Example Prompts) {#example-prompts}
 
 **Mō Block Themes:**
 > "Whakawātea he hero section me image background me text i te whero (centered text) ka whakamahi i block patterns."

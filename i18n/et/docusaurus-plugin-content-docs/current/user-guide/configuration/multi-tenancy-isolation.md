@@ -3,11 +3,11 @@ title: Multi-tenants eraldamine
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-tenancy eraldus
+# Multi-tenancy eraldus {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 toetabist per-subsite database ja failisüsteemi isoleerimise jaoks isikomaanlikud (sovereign) klientidele. See säilitab klientide andmeid eraldatud, samal ajal kui säilitatakse võrku tasandilne provisjonimine, laskmine ja administraatorlik juhtimine.
 
-## Isoleerimise strateegia
+## Isoleerimise strateegia {#isolation-strategy}
 
 Kasutage isikomaanliku isoleerimist klientide jaoks, kes nõuavad tugevamat andmete eraldamist, eksklusiivset failisüsteemi salvestust või eraldi hosti piiri.
 
@@ -18,7 +18,7 @@ Kõik isikomaanlikud klientid peavad olema:
 - Klientregistri sisseandmine, mis ühendab veebile database, juurtee, hostnimi ja isoleerimise modeli.
 - Migratsiooni kinnituse tulemus enne kui klienti aktiveeritakse.
 
-## Database host binding
+## Database host binding {#database-host-binding}
 
 Versioon 1.2.0 muudab pooltistoleva (same-machine) host bindingu käitumist isikomaanlikudel installidel. Pooltistoleva väärtused, nagu `localhost`, normaliseeruvad nii, et Bedrock, FrankenPHP ja kontseiniseeritud WordPress installid saavad luba ja kinnitada lubusehostingu (permissions) MySQL-ile, mida server tegelikult näeb hoststringuna.
 
@@ -31,11 +31,11 @@ Klientide konfiguratsiooni ajal:
 
 Kui kinnituse raportid näitavad lubusehindamise ebaõnnestusi, võrdage klientide DB kasutaja andmeid konfiguratsiooniga seotud host bindinguga. Kasutajale antud õigus `user@localhost`-ile on erinev `user@127.0.0.1`-st või `user@%`-st.
 
-## Failisüsteemi juur
+## Failisüsteemi juur {#filesystem-root}
 
 Lendija juurdepunkt on vaka lahendada käivitamise ja lahenduste lahendamise ajal. Vältige hetkeseid mount path'e kasutamist. Bedrocki stiilis installide jaoks kinnitage, et juurdepunkt viitab WordPressi veebjuurile, mida tenant bootstrap ootab, mitte ainult projektijuurile.
 
-## Juurdepunkt järjestus
+## Juurdepunkt järjestus {#provisioning-order}
 
 Uusest suvereenilistest tenantidest kasutage järgmist järjestust:
 
@@ -49,7 +49,7 @@ Uusest suvereenilistest tenantidest kasutage järgmist järjestust:
 
 See järjestus tagab, et osaliselt eraldatud tenantid ei saada trafik enne kui database-kirjuta, kasutaja ja failiühendused on valmis.
 
-## Suvereeniliste kliendite juhtimise protsessid
+## Suvereeniliste kliendite juhtimise protsessid {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 säilitab kliendite juhatamise toimingud pealise veebilehel, kui suvereeniline režiim on aktiveeritud. Tenanti saab kasutada eraldatud WordPress installina, kuid klientidega seotud toimingud, mis sõltuvad võrku lahendustest, jälgimisest või jaotatud konti andmetest, peaksid kliendit tagasi peale veebilehele suunama instead of üritada teostada toimingu tenanti käivituse all.
 

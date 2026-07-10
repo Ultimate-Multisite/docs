@@ -1,121 +1,124 @@
 ---
-title: Tsoom cov lus thiab cov ntaub ntawv
+title: Xa Emails thiab Kev Tshaj Tawm
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ការផ្ញើអ៊ីមែល និងការផ្សព្វផ្សាយ (v2)
+# Xa Emails thiab Kev Tshaj Tawm (v2) {#sending-emails-and-broadcasts-v2}
 
-_**ចំណាំសំខាន់: អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
+_**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite មានមុខងារមួយដែលអនុញ្ញាតឱ្យអ្នកទំនាក់ទំនងជាមួយអតិថិជនរបស់អ្នកដោយការផ្ញើអ៊ីមែលទៅកាន់អ្នកប្រើប្រាស់ជាក់លាក់ ឬក្រុមអ្នកប្រើប្រាស់ ហើយក៏អាចផ្ញើសារជូនដំណឹងនៅលើ admin dashboard របស់ពួកគេដើម្បីផ្សព្វផ្សាយព័ត៌មានផងដែរ។
+Ultimate Multisite muaj ib qho feature uas yuav cia koj sib txuas lus nrog koj cov customers los ntawm kev xa email mus rau ib tug user tshwj xeeb lossis ib pab users, thiab tseem xa cov lus ceeb toom rau lawv admin dashboard los tshaj tawm xov xwm
 
-## បន្ថែមការជូនដំណឹងសម្រាប់ admin ទៅក្នុង dashboard របស់អតិថិជនរបស់អ្នកជាមួយ Broadcasts
+## Ntxiv admin notices rau koj cov customers’ dashboard nrog Kev Tshaj Tawm {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-ដោយប្រើមុខងារ broadcast feature របស់ Ultimate Multisite អ្នកអាចបន្ថែម **admin notices** (ការជូនដំណឹងសម្រាប់អ្នកគ្រប់គ្រង) ទៅក្នុង admin dashboard របស់ subsite របស់អ្នក។
+Siv Ultimate Multisite kev tshaj tawm feature, koj tuaj yeem ntxiv **admin notices** rau koj tus user lub subsite admin dashboard.
 
-នេះមានប្រយោជន៍ខ្លាំងណាស់ ប្រសិនបើអ្នកត្រូវការធ្វើការប្រកាសអ្វីមួយ ដូចជាការថែទាំប្រព័ន្ធ ឬការផ្តល់ផលិតផល ឬសេវាកម្មថ្មីៗដល់អ្នកប្រើប្រាស់ដែលមានស្រាប់របស់អ្នក។ នេះគឺជារបៀបដែល admin notice នឹងបង្ហាញនៅលើ dashboard របស់អតិថិជនរបស់អ្នក។
+Qhov no pab tau heev yog tias koj xav tshaj tawm ib yam li system maintenance lossis muab cov khoom lossis kev pabcuam tshiab rau koj cov users uas twb muaj lawm. Qhov no yog qhov admin notice yuav tshwm rau ntawm koj tus user lub dashboard.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-ដើម្បីចាប់ផ្តើម admin notice សូមចូលទៅកាន់ network admin dashboard របស់អ្នក ហើយក្រោមเมนู **Ultimate Multisite** អ្នកនឹងឃើញជម្រើស **Broadcasts**។
+Yuav pib ib admin notice, mus rau koj network admin dashboard thiab hauv qab **Ultimate Multisite** menu, koj yuav pom qhov kev xaiv **Kev Tshaj Tawm**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Nplooj teev cov kev tshaj tawm hauv Ultimate Multisite admin](/img/admin/broadcasts-list.png)
 
-អ្នកក៏អាចកែសម្រួល broadcast ដែលមានរួចហើយបានដែរ៖
+Koj kuj tuaj yeem kho cov kev tshaj tawm uas twb muaj lawm:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Qhov interface kho kev tshaj tawm](/img/admin/broadcast-edit.png)
 
-ពីหน้านày សូមចុចប៊ូតុង **Add Broadcast** នៅខាងលើ។
+Ntawm nplooj no, nias lub pob **Ntxiv Kev Tshaj Tawm** nyob saum toj.
 
-វានឹងបង្ហាញ cửa sổ modal សម្រាប់ Add broadcast ដែលអ្នកអាចជ្រើសរើសប្រភេទ broadcast ដែលអ្នកចង់ផ្ញើបាន។
+Qhov no yuav qhib lub qhov rai Add broadcast modal uas koj tuaj yeem xaiv hom kev tshaj tawm uas koj xav xa.
 
-ទៅមុខហើយជ្រើសរើស **Message** រួចចុចប៊ូតុង **Next Step**។
+Mus ntxiv thiab xaiv **Lus** ces nias lub pob **Kauj Ruam Tom Ntej**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Add broadcast modal nrog qhov kev xaiv Message raug xaiv](/img/admin/broadcast-add-message.png)
 
-បង្អួចបន្ទាប់នឹងសួរអ្នកអំពី **Target customer** (អតិថិជនគោលដៅ) ឬ **Target product** (ផលិតផលគោលដៅ)។ សូមចំណាំថា អ្នកអាចជ្រើសរើសច្រើនជាងមួយ user ឬច្រើនជាងមួយ product បាន។
+Lub qhov rai tom ntej yuav nug koj txog **Customer hom phiaj** lossis **Khoom hom phiaj**. Nco ntsoov tias koj tuaj yeem xaiv ntau dua ib tug user lossis ntau dua ib yam khoom.
 
-User account loss los yog neev txhob hais rau tag keyword, user account loss los yog neev txhob hais rau tag product.
+Yog xav tshawb nrhiav ib user account lossis khoom, koj yuav tsum pib ntaus lo lus tseem ceeb rau hauv daim teb.
 
-Under the field **Message type**, koj tuav tsim cov khoom (color) ntawm cov ntawv. Yuav ua rau cov ntawv ntawd zoo tshaj plaws tias nws yog qhuav tsis txhob tso cai.
+Hauv qab daim teb **Hom lus**, koj tuaj yeem xaiv xim ntawm daim notice. Qhov no yuav qhia kom pom qhov ceev ntawm koj cov lus.
 
-Tsuas thaum ntawd, koj tuaj txhob thov **Next Step**.
+Ces koj tuaj yeem nias **Kauj Ruam Tom Ntej**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Cov daim teb target customers, target product thiab message type rau ib qho Message broadcast](/img/admin/broadcast-message-targets.png)
 
-Thim sau tshiab yog heev uas koj tuaj tsim cov lus los ntawm kev teb siab (subject) thiab cov ntaub ntawv/cov lus uas koj xav los tsim rau cov neeg.
+Lub qhov rai tom ntej yog qhov chaw uas koj tuaj yeem pib sau koj cov lus los ntawm kev sau lub npe lus thiab cov ntsiab lus/lus uas koj xav tshaj tawm rau cov users.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Broadcast message subject thiab content editor ntawm kauj ruam compose](/img/admin/broadcast-edit.png)
 
-Thaum tsim cov lus los, koj tuaj txhob thov nút **Send** button.
+Tom qab tsim koj cov lus lawm, ces koj tuaj yeem nias lub pob **Xa**.
 
- thiab ntawd thôi. Cov ntawv uas admin tsim yuav tso cai rau dashboard ntawm user zoo li hnub.
+Thiab ces yog li ntawd xwb. Admin notice yuav tsum tshwm tam sim ntawd rau ntawm koj tus user lub dashboard.
 
-## Tsim email rau cov neeg uas xav tau
-Thaum siv cov khoom broadcast ntawm Ultimate Multisite, koj tuaj yeem tsim email rau cov neeg. Koj muaj kev txiav tlay los tsim email rau cov neeg txawm tsis txhob hais lossis tsim rau qho neeg uas xav tau yog hauv product lossis plan uas lawv xav tau.
+## Xa emails rau koj cov customers {#send-emails-to-your-customers}
 
-Tus tsim email broadcast, tsam rau dashboard admin ntawm koj network thiab hauv menu Ultimate Multisite, koj yuav pom cov khoom Broadcast.
+Siv Ultimate Multisite kev tshaj tawm feature, koj tuaj yeem xa email rau koj cov users. Koj muaj kev xaiv xa email tsuas yog rau cov users tshwj xeeb xwb lossis tsom rau ib pab user tshwj xeeb raws li yam khoom lossis pob kev pab uas lawv tau subscribe rau hauv qab.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+Yuav pib ib email broadcast, mus rau koj network admin dashboard thiab hauv qab Ultimate Multisite menu, koj yuav pom qhov kev xaiv Broadcast.
 
-Thaum siv sau ntawd, thov nút **Add broadcast** button uas muaj rau ntawm lub ntsiab uas koj xav los tsim broadcast yuav ua li cas. Tsim cov khoom **Email** thiab thov nút **Next Step**.
+![Nplooj teev cov kev tshaj tawm siv ua qhov pib rau ib email broadcast](/img/admin/broadcasts-list.png)
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+Ntawm nplooj no, nias lub pob **Ntxiv kev tshaj tawm** nyob saum toj.
 
-Thim sau tshiab yuav hais rau koj txog **Target customer** lossis **Target product**. Muaj kev xav tau tias koj tuaj yeem thov ntau dua user lossis ntau dua product.
+Qhov no yuav qhib lub qhov rai Add broadcast modal uas koj tuaj yeem xaiv hom kev tshaj tawm uas koj xav xa. Mus ntxiv thiab xaiv **Email** ces nias lub pob **Kauj Ruam Tom Ntej**.
 
-User account loss los yog product tx hais txhua tus neeg tsim tsis txhob tsim qhia keyword ha thul.
+![Add broadcast modal nrog qhov kev xaiv Email raug xaiv](/img/admin/broadcast-add-email.png)
 
-Thaum koj thov tus neeg uas koj xav hauv, koj tuaj **Next Step**.
+Lub qhov rai tom ntej yuav nug koj txog **Customer hom phiaj** lossis **Khoom hom phiaj**. Nco ntsoov tias koj tuaj yeem xaiv ntau dua ib tug user lossis ntau dua ib yam khoom.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+Yog xav tshawb nrhiav ib user account lossis khoom, koj yuav tsum pib ntaus lo lus tseem ceeb rau hauv daim teb.
 
-Thwm window tshiab yog he ti koj yuav rov los tsim cov email tsim los ntawm kev siv subject thiab content/message uas koj xav hloov rau tus neeg.
+Thaum koj pab neeg mloog hom phiaj raug xaiv lawm, koj tuaj yeem nias **Kauj Ruam Tom Ntej**.
+
+![Kev xaiv target customers thiab target product rau ib qho Email broadcast](/img/admin/broadcast-email-targets.png)
+
+Lub qhov rai tom ntej yog qhov chaw uas koj tuaj yeem pib sau koj email los ntawm kev sau lub npe lus thiab cov ntsiab lus/lus uas koj xav xa rau cov users.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Thaum koj tsim cov ntawv, koj tuaj thov **Send** button.
+Tom qab tsim koj cov lus lawm, koj tuaj yeem nias lub pob **Xa**.
 
-Uaws lub email rau tus neeg uas koj xav hloov los ntawm broadcast feature zoo li no.
+Thiab qhov ntawd qhia tias kev xa email rau koj cov end-users siv kev tshaj tawm feature yooj yim npaum li cas.
 
-## System emails
+## System emails {#system-emails}
 
-System emails hais rau Ultimate Multisite yog he **automatic notifications** uas system tsim los hauv sau nog siab loj li kev txais lub cai, kev tsim lub cuab, kev map domain, thiab lwm yam. Cov email no yuav muaj zog los hloov lossis thov los ntawm Ultimate Multisite settings. Muaj tus feature los yog koj tsim los thiab import cov settings uas muaj los ntawm ib tug Ultimate Multisite installation loj.
+System emails hauv Ultimate Multisite yog cov **automatic notifications** uas system xa tom qab muaj qee yam kev ua xws li registration, payment, domain mapping, thiab lwm yam. Cov emails no tuaj yeem kho lossis hloov tau los ntawm Ultimate Multisite settings. Nws kuj los nrog ib qho feature uas yuav cia koj reset thiab import cov settings uas twb muaj lawm los ntawm lwm qhov Ultimate Multisite installation.
 
-### Resetting & Importing
+### Resetting & Importing {#resetting--importing}
 
-Cov phiên Ultimate Multisite tshiab, kom muaj add-ons, yuav tsim email tsim tsis txhob hauv lub sijhawm.
+Cov Ultimate Multisite versions tshiab, nrog rau add-ons, tuaj yeem thiab yuav register cov emails tshiab ib ntus.
 
-Ua txhua tus system **tsis tsim cov template email tsim tshiab los ntawm ib installation loj** uas yog heem los ntawm kev ua rau nws pom zoo rau kev tsim txawv ib feature.
+Txhawm rau tiv thaiv conflicts thiab lwm yam teeb meem, **peb yuav tsis ntxiv cov email templates tshiab ua System Emails rau ntawm koj install cia li** , tshwj tsis yog lawv tseem ceeb rau kev ua haujlwm kom raug ntawm ib feature twg.
 
-Thaum ntawd, super admins thiab agents yuav muaj zog los import cov email tsim tshiab no hais rau hauv importer tool. Qhov kev ua no yuav tsim system email tsim tshiab loj nrog cov content thiab configuration ntawm cov template email tsim tshiab, uas choj rau super admin los hloov lossis tsim los zoo li heev koj xav.
+Txawm li cas los, super admins thiab agents tuaj yeem import cov emails uas nyuam qhuav registered no los ntawm importer tool. Qhov txheej txheem ntawd yuav tsim ib system email tshiab nrog cov ntsiab lus thiab configuration ntawm email template tshiab, cia super admin hloov tau txhua yam uas lawv xav hloov lossis khaws cia li qub.
 
-#### How to import system emails
+#### Yuav import system emails li cas {#how-to-import-system-emails}
 
-ໄປທີ່你 Ultimate Multisite Settings 頁面，然後點進 **Emails** 選項卡。
+Mus rau koj nplooj Ultimate Multisite Settings thiab mus rau tab **Emails**.
 
-![Ultimate Multisite settings emails tab showing the System Emails section](/img/config/settings-emails-tab.png)
+![Tab Emails hauv Ultimate Multisite settings uas qhia seem System Emails](/img/config/settings-emails-tab.png)
 
-然後，在側邊欄上，點擊 **Customize System Emails** 按鈕。
+Ces, ntawm sidebar, nias lub pob **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-在 System Emails 頁面上，你會看到頂部有一個 **Reset & Import** 行動按鈕。點擊那個按鈕會打開匯入和重置的視窗。
+Ntawm nplooj System Emails, koj yuav pom lub pob action **Reset & Import** nyob saum toj. Nias lub pob ntawd yuav tsum qhib lub qhov rai import thiab reset modal.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Lub pob action Reset lossis Import ntawm nplooj admin System Emails](/img/admin/system-emails-reset-import.png)
 
-然後，你可以開啟「Import Emails」選項來看看有哪些系統郵件可以匯入。
+Ces, koj tuaj yeem toggle cov kev xaiv Import Emails kom saib seb cov system emails twg muaj rau import.
 
 <!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
-#### 重置 System Emails
+#### Rov Tsa System Emails Dua {#reseting-system-emails}
 
-有時候，你會發現你對某個電子郵件範本所做的修改已經不再適用了，你想把它恢復到佢嘅 **default state**（預設狀態）。
+Lwm zaus, koj yuav pom tias cov kev hloov uas koj tau ua rau ib qho email template twg tsis haum rau koj siv lawm, thiab koj xav rov tsa nws mus rau nws **xeev qub pib**.
 
-在這種情況下，你有兩個選擇：你可以直接刪除那個系統郵件然後再匯入它回來（使用上面的說明）——這樣會清除發送指標和其他東西，所以這個方法最不推薦。
+Thaum zoo li no, koj muaj ob txoj kev xaiv: koj tsuas rho tawm system email ntawd thiab import nws rov qab (siv cov lus qhia saum toj no) - uas yuav lwv cov send metrics thiab lwm yam, ua rau txoj kev no tsis tshua nyiam siv.
 
-或者，你可以使用 **Reset & Import tool** 來重置那個電子郵件範本。
+Lossis koj siv tau lub **Reset & Import tool** los rov tsa email template ntawd.
 
-要重置一個電子郵件範本，你可以按照上面的步驟一直做，直到你到達 Reset & Import tool 為止，然後開啟 **Reset** 選項並選擇你想將電子郵件恢復到預設內容的那些郵件。
+Txhawm rau rov tsa ib qho email template, koj ua raws tau cov kauj ruam saum toj no mus txog thaum koj mus txog Reset & Import tool, ces toggle qhov **Reset** option thiab xaiv cov emails uas koj xav rov tsa rov qab mus rau lawv cov ntsiab lus qub pib.
 
 <!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

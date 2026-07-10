@@ -3,7 +3,7 @@ title: Registruoti API endpointą
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API skaitinklis Ultimate Multisite
+# API skaitinklis Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Šiame tutoriale išmoksite, kaip naudoti Ultimate Multisite /register API endpointą, kad sukurotumėte visą įtraukimo procesą naujam klientui jūsų tinkluose ir kaip tai padaryti su Zapier.
 
@@ -29,11 +29,11 @@ Pasirinkite **Enable API** ir gaukite savo API kredencijas.
 
 Dabar, ieškokime endpointo ir sukurime registracijos veiksmą Zapier'yje.
 
-## Endpointo kūno parametrai
+## Endpointo kūno parametrai {#endpoint-body-parameters}
 
 Patikslinime minimalią informaciją, kurią turime siųsti endpointui. Šios straipsnio pabaigoje rasite visą skaitinklį.
 
-### Klientas (Customer)
+### Klientas (Customer) {#customer}
 
 Šis yra informacija, būtina vartotojo ir Ultimate Multisite Kliento kūrimui:
 
@@ -43,25 +43,25 @@ Jūsų tinkluose kur galima išsiųsti klientų ID, kuriuo jis buvo sukurtas. Je
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membriavimas**
+### **Membriavimas** {#membership}
 
 Visą informaciją, kuri mums reikia šio objekto viduje, yra Membriavimo Statusas.
 
 "membership" { "status" : "string", // vienas iš: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produktai**
+### **Produktai** {#products}
 
 Produkatams pateikiama sąrašas su vienu ar daugiau tinklo produktų ID. Priezą, šis endpoint ne sukuria produktus. Visiškai suprantys produkto kūrimo endpointą, patikrinkite Ultimate Multisite dokumentaciją.
 
 **"products" : [1,2],**
 
-### Mokėjimai
+### Mokėjimai {#payment}
 
 Tinkamai kaip ir su Membriavimu, mums reikia tik statuso.
 
 **"payment" { "status" : "string", // vienas iš: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Svetas
+### Svetas {#site}
 
 Ir kad užbaigtau, mums reikia svetainės URL adresą ir pavadinimą, bus viskas viduje Site objekto.
 
@@ -69,13 +69,13 @@ Ir kad užbaigtau, mums reikia svetainės URL adresą ir pavadinimą, bus viskas
 
 Registracijos endpointo atsakymas bus sąrašas su naujais sukurtomis membriavimo informacijomis.
 
-## Veiksmo kūrimas Zapier'yje
+## Veiksmo kūrimas Zapier'yje {#creating-an-action-in-zapier}
 
 Šio naujo ir geresnio paskyros kūrimo endpointo įvedimo sukurti jums naują veiklą (action) Zapier'yje.
 
 Ar žinote, kaip naudotis ir mėgautis visais, ką nauja versija Zapier siūlo? Mažiau informacijos ieškomos čia. (link?)
 
-### Veiksmo kūrimas
+### Veiksmo kūrimas {#creating-an-action}
 
 Norint geriau pateikti, kaip naudoti registracijos endpointą su Zapieriu, sukursime integraciją su Google Forms. Kai šis formai užpildomas ir informacija saugoma formos atsakymų lapelyje, siekiama nauja narys Ultimate Multisite tinklu.
 
@@ -105,7 +105,7 @@ Kai informaciją nustatytą, tęskykite iki galutinio testui. Naujameje ekrane p
 
 Testuokite savo naują Zapą – jis turi sėkmingai užbaigtis. Jei sužypia koki nors klaida, patikrinkite visus laukus ir pažiūrėkite, ar jie siunami teisingai. Kadangi informacijos daug, kai kuriuos dalykus gali būti neįstebinti.
 
-### Visos endpoint parametrai
+### Visos endpoint parametrai {#complete-endpoint-parameters}
 
 Štai visas skaitas ir visi galimybės siuntamų laukų.
 

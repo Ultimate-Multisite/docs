@@ -4,11 +4,11 @@ title: Handling - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Lar plugin-utviklere lagre brukermetadata på forskjellige måter hvis de trenger det.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Lar plugin-utviklere lagre brukermetadata på forskjellige måter hvis de trenge
 | $customer | `\Customer` | Ultimate Multisite-kundeobjektet. |
 | $checkout | `\Checkout` | Kassenklassen. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.4
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) på linje 1244

@@ -3,7 +3,7 @@ title: ହୁକ୍ସ ଏବଂ ଫିଲ୍ଟର୍ସ
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks and filters
+# Ultimate Multisite Hooks and filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite అనేది చాలా ఫంక్షన్లు మరియు డేటాబేస్ ప్రశ్నలతో రూపొందించబడింది. ఇందులో ఉన్న హుక్స్ (hooks) మరియు ఫిల్టర్లు (filters) అంటే, మీరు ఇప్పటికే ఉన్న ఫంక్షన్‌లను మార్చడానికి లేదా కొత్త కోడ్‌ను జోడించడానికి వీలు కల్పిస్తాయి.
 

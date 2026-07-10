@@ -1,112 +1,120 @@
 ---
 title: Vergi İşleme
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Vergi Yönetimi
+# Vergi Yönetimi {#tax-handling}
 
-Ultimate Multisite, ana eklentimizde yerleşik bir vergi toplama modülüne sahiptir. Bu sayede planlarınız, paketleriniz ve hizmetleriniz için satış vergisi toplamanız gerektiğinde, ek bir eklenti yüklemenize gerek kalmadan bunu kolayca yapabilirsiniz.
+Ultimate Multisite, çekirdek plugin’imize yerleşik bir vergi tahsilat modülüne sahiptir; bu nedenle planlarınız, paketleriniz ve hizmetleriniz için satış vergisi tahsil etmeniz gerekiyorsa, herhangi bir add-on yüklemeye başvurmadan bunu kolayca yapabilirsiniz.
 
-Avrupa'da bulunan şirketler için, **KDV** uyumluluğunu daha iyi destekleyen araçlar ve özellikler ekleyen bir **eklenti** sunuyoruz.
+Avrupa’da bulunan şirketler için, **VAT desteğini** daha iyi destekleyecek araçlar ve özellikler ekleyen bir **add-on** sunuyoruz.
 
-Ultimate Multisite, sizin adınıza devlete vergi beyanı yapmaz veya ödemez; sadece işlem sırasında uygun vergileri toplamanıza yardımcı olur. **Vergileri kendiniz beyan etmeniz ve ödemeniz gerekecektir.**
+Ultimate Multisite, sizin adınıza devlete vergi beyan etmez veya ödeme yapmaz; yalnızca işlem sırasında uygun vergileri tahsil etmenize yardımcı oluruz. **Vergileri yine de kendiniz ödemeniz gerekir.**
 
-## Vergi Toplamayı Etkinleştirme
+## Vergi Tahsilatını Etkinleştirme {#enabling-tax-collection}
 
-Vergi toplama varsayılan olarak etkin değildir. Etkinleştirmek için **Ultimate Multisite > Ayarlar > Vergiler** bölümüne gidip Vergileri Etkinleştir ayarını açmanız gerekir.
+Vergi tahsilatı varsayılan olarak etkin değildir. Etkinleştirmek için **Ultimate Multisite > Settings > Taxes** bölümüne gitmeniz ve Enable Taxes ayarını etkinleştirmek üzere anahtarı açmanız gerekir.
 
-![Vergi ayarlarında Vergileri Etkinleştir düğmesi](/img/config/settings-taxes.png)
+![Vergi ayarları sayfasının üst kısmındaki Enable Taxes anahtarı](/img/config/settings-taxes-enable.png)
 
-### Vergi hariç ve Vergi dahil
+Vergi ayarları sayfasının tam görünümü şöyledir:
 
-Varsayılan olarak, tüm ürün fiyatlarınız vergi hariçtir, yani vergiler ürün fiyatına **dahil değildir**. Bir müşterinin belirli bir satın alma için vergi ödemesi gerektiğini tespit edersek, vergileri ara toplama **ek olarak** ekleriz.
+![Vergi ayarları tam sayfası](/img/config/settings-taxes-full.png)
 
-Vergilerin ürün fiyatınıza dahil olmasını tercih ediyorsanız, **Dahili Vergi** ayarını etkinleştirerek bunu yapabilirsiniz.
+Tekil ürünler için vergi ayarlarını da görüntüleyebilirsiniz:
 
-![Dahili Vergi ayarı düğmesi](/img/config/settings-taxes.png)
+![Ürünler için vergi ayarları](/img/config/settings-taxes.png)
+
+### Vergi hariç ve vergi dahil {#tax-excluded-vs-tax-included}
+
+Varsayılan olarak, tüm ürün fiyatlarınız vergi hariçtir; yani vergiler ürünün fiyatına **dahil değildir**. Bir müşterinin belirli bir satın alma için vergi ödemesi gerektiğini belirlersek, vergileri ara toplamın **üzerine** ekleriz.
+
+Vergilerin ürün fiyatınıza dahil olmasını tercih ediyorsanız, bunu **Inclusive Tax** ayarını etkinleştirerek yapabilirsiniz.
+
+![Enable Taxes ayarının altındaki Inclusive Tax anahtar satırı](/img/config/settings-taxes-inclusive.png)
 
 Yaptığınız değişiklikleri **kaydetmeyi** unutmayın.
 
-### 
+###
 
-## Vergi Oranları Oluşturma
+## Vergi Oranları Oluşturma {#creating-tax-rates}
 
-Vergi Toplamayı etkinleştirdikten sonra, vergi oranları düzenleyicimizi kullanarak belirli konumlar için vergi oranları oluşturmanız gerekir.
+Vergi Tahsilatını etkinleştirdikten sonra, vergi oranları düzenleyicimizi kullanarak belirli konumlar için vergi oranları oluşturmanız gerekir.
 
-Düzenleyiciye erişmek için Vergi ayarları sayfasının kenar çubuğundaki **Vergi Oranlarını Yönet** düğmesine tıklayın.
+Düzenleyiciye, Vergi ayarları sayfasının kenar çubuğundaki **Manage Tax Rates** düğmesine tıklayarak erişebilirsiniz.
 
-![Kenar çubuğundaki Vergi Oranlarını Yönet düğmesi](/img/config/settings-taxes.png)
+![Ayarlar sayfasındaki Tax Rates panelinde Manage Tax Rates bağlantısı](/img/config/settings-taxes-manage-rates.png)
 
-Vergi oranları düzenleyici sayfasında, **Yeni Satır Ekle** düğmesine tıklayarak yeni Vergi Oranları ekleyebilirsiniz.
+Vergi oranları düzenleyici sayfasında, **Add new Row** düğmesine tıklayarak yeni Vergi Oranları ekleyebilirsiniz.
 
-![Yeni Satır Ekle düğmeli vergi oranları düzenleyicisi](/img/config/settings-taxes.png)
+![Üst kısmında Add new Row düğmesi bulunan vergi oranları düzenleyici tablosu](/img/config/tax-rates-editor.png)
 
-Her vergi oranına bir **başlık** vermeniz gerekir (faturalarda kullanılır). Ardından bu verginin uygulanacağı **ülkeyi** (zorunlu), **eyaleti** ve **şehri** (her ikisi de isteğe bağlı) seçebilirsiniz. Son olarak, **yüzde olarak vergi oranını** ekleyin.
+Her vergi oranına bir **başlık** (faturalarda kullanılır) vermeniz gerekir. Ardından bu verginin uygulanacağı **ülkeyi** (zorunlu), **eyaleti/ili** ve **şehri** (ikisi de isteğe bağlı) seçebilirsiniz. Son olarak, **vergi oranını yüzde olarak** ekleyin.
 
-### Vergi Kategorileri
+### Vergi Kategorileri {#tax-categories}
 
-Farklı ürün türleri için farklı vergi oranları eklemek amacıyla birden fazla Vergi Kategorisi de oluşturabilirsiniz.
+Farklı ürün türleri için farklı vergi oranları eklemek üzere birden fazla Vergi Kategorisi de oluşturabilirsiniz.
 
-**Yeni Vergi Kategorisi Ekle**'ye tıklayın, ardından kategorinizin adını yazın ve **Oluştur**'a basın.
+**Add new Tax Category** seçeneğine tıklayın, ardından kategorinizin adını yazın ve **Create** düğmesine basın.
 
-![Yeni Vergi Kategorisi Ekle düğmesi](/img/config/settings-taxes.png)
+![Vergi oranları düzenleyicisinin üst kısmındaki Add new Tax Category düğmesi](/img/config/tax-categories-add.png)
 
-![Yeni vergi kategorisi oluşturma](/img/config/settings-taxes.png)
+![Kategori oluşturma modalındaki Tax Category Name giriş alanı](/img/config/tax-categories-create-modal.png)
 
-Kategoriler arasında gezinmek için **Değiştir**'e tıklayın ve yeni vergiler eklemek istediğiniz kategoriyi seçin.
+Kategoriler arasında gezinmek için **Switch** seçeneğine tıklayın ve yeni vergiler eklemek istediğiniz kategoriyi seçin.
 
-![Vergi kategorileri arasında geçiş yapma](/img/config/settings-taxes.png)
+![Vergi kategorileri arasında geçiş yapmak için Switch açılır düğmesi](/img/config/tax-categories-switch.png)
 
-![Görüntülenecek vergi kategorisini seçme](/img/config/settings-taxes.png)
+![Mevcut kategorileri gösteren vergi kategorisi seçici açılır menüsü](/img/config/tax-categories-select.png)
 
-Belirli bir ürün için vergi kategorisini, **Ürün düzenleme sayfasına** gidip Vergiler sekmesine tıklayarak ayarlayabilirsiniz.
+Belirli bir ürün için vergi kategorisini, **Product edit page** sayfasına gidip ardından Taxes sekmesine geçerek ayarlayabilirsiniz.
 
-![Vergi kategorisi ve vergilendirilebilir düğmeli ürün vergileri sekmesi](/img/config/product-taxes.png)
+![Vergi kategorisi ve taxable anahtarı bulunan ürün vergileri sekmesi](/img/config/product-taxes.png)
 
-Aynı ekranda, **Vergilendirilebilir mi?** düğmesini kapatarak Ultimate Multisite'a bu ürün için vergi toplamaması gerektiğini bildirebilirsiniz.
+Aynı ekranda, Ultimate Multisite’ın söz konusu üründen vergi tahsil etmemesi gerektiğini bilmesini sağlamak için **Is Taxable?** anahtarını kapatabilirsiniz.
 
-## Avrupa KDV Desteği
+## Avrupa VAT Desteği {#european-vat-support}
 
-Daha önce belirtildiği gibi, Avrupa KDV düzenlemeleri nedeniyle ek gereksinimleri olan AB'deki müşteriler için bir eklentimiz bulunmaktadır.
+Daha önce belirtildiği gibi, Avrupa VAT düzenlemeleri nedeniyle ek gereksinimleri olan AB’deki müşteriler için kullanılabilir bir add-on’ımız vardır.
 
-KDV araçlarımız birkaç önemli konuda yardımcı olur:
+VAT araçlarımız birkaç önemli konuda yardımcı olur:
 
-  * AB KDV oranlarının kolayca yüklenmesi;
+  * AB VAT oranlarının kolayca yüklenmesi;
 
-  * KDV Numarası toplama ve doğrulama - ve KDV muaf kuruluşlar (geçerli KDV numarasına sahip şirketler gibi) için ters ibraz uygulaması;
+  * VAT Numarası toplama ve doğrulama - ve VAT muafiyeti olan kuruluşlar için ters ücretlendirme (geçerli VAT numaralarına sahip şirketler gibi);
 
-Bu eklentiyi yüklemek için **Ultimate Multisite > Ayarlar** bölümüne gidin ve ardından kenar çubuğundaki **Eklentilerimize Göz Atın** bağlantısına tıklayın.
+Bu add-on’ı yüklemek için **Ultimate Multisite > Settings** bölümüne gidin ve ardından **Check our Add-ons** kenar çubuğu bağlantısına tıklayın.
 
-![Eklentiler kenar çubuğu bağlantılı ayarlar sayfası](/img/config/settings-taxes.png)
+![Check our Add-ons bağlantısı bulunan ayarlar sayfası kenar çubuğu](/img/config/settings-taxes-addons-link.png)
 
-Eklentiler sayfamıza yönlendirileceksiniz. Orada **Ultimate Multisite VAT eklentisini** arayabilir ve yükleyebilirsiniz.
+Add-ons sayfamıza yönlendirileceksiniz. Orada **Ultimate Multisite VAT add-on** araması yapıp yükleyebilirsiniz.
 
-![Eklentiler sayfasındaki VAT eklentisi](/img/config/settings-taxes.png)
+<!-- Ekran görüntüsü mevcut değil: Add-ons sayfasındaki VAT add-on kutucuğu -->
 
-![VAT eklentisi yükleme penceresi](/img/config/settings-taxes.png)
+<!-- Ekran görüntüsü mevcut değil: VAT add-on Install Now iletişim kutusu -->
 
-Ardından **Ağ Yöneticisi > Eklentiler** bölümüne gidin ve bu eklentiyi ağ genelinde etkinleştirin.
+Ardından **Network Admin > Plugins** bölümüne gidin ve bu add-on’ı ağ genelinde etkinleştirin.
 
-![VAT eklentisini Ağ Genelinde Etkinleştirme](/img/config/settings-taxes.png)
+<!-- Ekran görüntüsü mevcut değil: Plugins sayfasında VAT add-on için Network Activate işlemi -->
 
-**Vergi Ayarları sekmesine** geri dönerseniz, yeni seçeneklerin mevcut olduğunu göreceksiniz. Yeni KDV araçlarını etkinleştirmek için **KDV Desteğini Etkinleştir** seçeneğini açın. Ayarlarınızı **kaydetmeyi** unutmayın!
+**Tax Settings tab** bölümüne geri dönerseniz, yeni seçeneklerin kullanılabilir olduğunu göreceksiniz. Yeni VAT araçlarını etkinleştirmek için **Enable VAT Support** seçeneğini açın. Ayarlarınızı **kaydetmeyi** unutmayın!
 
-![Vergi ayarlarında KDV Desteğini Etkinleştir düğmesi](/img/config/settings-taxes.png)
+<!-- Ekran görüntüsü mevcut değil: Add-on etkinleştirildikten sonra Tax ayarlarında Enable VAT Support anahtarı -->
 
-### KDV Vergi Oranlarını Çekme
+### VAT Vergi Oranlarını Çekme {#pulling-on-vat-tax-rates}
 
-Entegrasyonumuzun eklediği araçlardan biri, AB üye devletleri için vergi oranlarını yükleme özelliğidir. Bu işlem, AB KDV desteğini etkinleştirdikten sonra vergi oranları düzenleyici sayfasını ziyaret ederek yapılabilir.
+Entegrasyonumuzun eklediği araçlardan biri, AB üye devletleri için vergi oranlarını yükleme yeteneğidir. Bu, EU VAT desteği etkinleştirildikten sonra vergi oranları düzenleyici sayfası ziyaret edilerek yapılabilir.
 
-Sayfanın alt kısmında KDV çekme seçeneklerini göreceksiniz. Bir oran türü seçip **AB KDV Oranlarını Güncelle** düğmesine tıkladığınızda, her AB üye devleti için vergi oranları çekilecek ve tablo otomatik olarak doldurulacaktır. Ardından sadece kaydetmeniz yeterlidir.
+Sayfanın alt kısmında VAT çekme seçeneklerini göreceksiniz. Bir oran türü seçip **Update EU VAT Rates** düğmesine tıklamak, her AB üye devleti için vergi oranlarını çekip tabloyu otomatik olarak doldurur. Ardından yalnızca kaydetmeniz gerekir.
 
-### ![AB KDV Oranlarını Güncelle düğmeli KDV oranları çekme seçenekleri](/img/config/settings-taxes.png)
+![Vergi oranları düzenleyicisinin alt kısmındaki Update EU VAT Rates düğmesi](/img/config/tax-rates-vat-pull.png)
 
-Oranları çektikten sonra değerleri de düzenleyebilirsiniz. Bunu yapmak için düzenlemeniz gereken tablo satırını değiştirin ve yeni değerleri kaydetmek için tıklayın.
+Değerleri çektikten sonra da düzenleyebilirsiniz. Bunu yapmak için ihtiyaç duyduğunuz tablo satırını düzenleyin ve yeni değerleri kaydetmek için tıklayın.
 
-### KDV Doğrulama
+### VAT Doğrulaması {#vat-validation}
 
-KDV desteği etkinleştirildiğinde, Ultimate Multisite ödeme formuna fatura adresi alanının altında ek bir alan ekler. Bu alan yalnızca AB'de bulunan müşteriler için görüntülenir.
+VAT desteği etkinleştirildiğinde, Ultimate Multisite checkout formuna, fatura adresi alanının altına ek bir alan ekler. Alan yalnızca AB’de bulunan müşteriler için görünür.
 
-![Ödeme formundaki KDV numarası alanı](/img/config/settings-taxes.png)
+<!-- Ekran görüntüsü mevcut değil: Ön uç checkout formunda fatura adresinin altındaki VAT Number alanı -->
 
-Ultimate Multisite daha sonra KDV Numarasını doğrular ve geçerli olarak döndürülürse, ters ibraz mekanizması uygulanır ve bu siparişteki vergi oranı %0 olarak ayarlanır.
+Ultimate Multisite ardından VAT Number bilgisini doğrular ve geçerli olarak dönerse, reverse charge mekanizması uygulanır ve söz konusu siparişte vergi oranı %0 olarak ayarlanır.

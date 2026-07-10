@@ -1,21 +1,21 @@
 ---
 title: Cloudways ಏಕೀಕರಣ
 sidebar_position: 3
-_i18n_hash: 931ac98efe704dc50c74537ea2676529
+_i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways ಅನುಸಂಧಾನ
+# Cloudways ಸಂಯೋಜನೆ {#cloudways-integration}
 
-## ಅವಲೋಕನ
-Cloudways ಒಂದು managed cloud hosting ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಆಗಿದ್ದು, DigitalOcean, AWS, Google Cloud ಮತ್ತು ಇತರ ಹಲವು cloud providers ಮೂಲಕ WordPress ಸೈಟ್‌ಗಳನ್ನು deploy ಮಾಡಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ಈ ಅನುಸಂಧಾನವು Ultimate Multisite ಮತ್ತು Cloudways ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ domain syncing ಮತ್ತು SSL certificate ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.
+## ಅವಲೋಕನ {#overview}
+Cloudways ಒಂದು ನಿರ್ವಹಿತ ಕ್ಲೌಡ್ ಹೋಸ್ಟಿಂಗ್ ವೇದಿಕೆ. ಇದು DigitalOcean, AWS, Google Cloud ಮತ್ತು ಇನ್ನಿತರ ಕ್ಲೌಡ್ ಪೂರೈಕೆದಾರರ ಮೇಲೆ WordPress ಸೈಟ್‌ಗಳನ್ನು ನಿಯೋಜಿಸಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ. ಈ ಸಂಯೋಜನೆಯು Ultimate Multisite ಮತ್ತು Cloudways ನಡುವೆ ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕ್ ಹಾಗೂ SSL ಪ್ರಮಾಣಪತ್ರ ನಿರ್ವಹಣೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುತ್ತದೆ.
 
-## ವೈಶಿಷ್ಟ್ಯಗಳು
-- ಸ್ವಯಂಚಾಲಿತ domain syncing
-- SSL certificate ನಿರ್ವಹಣೆ
-- ಹೆಚ್ಚುವರಿ domains ಗೆ ಬೆಂಬಲ
-- SSL certificates ಗಾಗಿ DNS ಮಾನ್ಯತೆ ಪರಿಶೀಲನೆ
+## ವೈಶಿಷ್ಟ್ಯಗಳು {#features}
+- ಸ್ವಯಂಚಾಲಿತ ಡೊಮೇನ್ ಸಿಂಕ್
+- SSL ಪ್ರಮಾಣಪತ್ರ ನಿರ್ವಹಣೆ
+- ಹೆಚ್ಚುವರಿ ಡೊಮೇನ್‌ಗಳಿಗೆ ಬೆಂಬಲ
+- SSL ಪ್ರಮಾಣಪತ್ರಗಳಿಗೆ DNS ಮಾನ್ಯೀಕರಣ
 
-## ಅಗತ್ಯತೆಗಳು
-ಕೆಳಗಿನ constants ಅನ್ನು ನಿಮ್ಮ `wp-config.php` ಫೈಲ್‌ನಲ್ಲಿ ನಿರ್ವಚಿಸಬೇಕು:
+## ಅವಶ್ಯಕತೆಗಳು {#requirements}
+ಕೆಳಗಿನ ಸ್ಥಿರಾಂಕಗಳನ್ನು ನಿಮ್ಮ `wp-config.php` ಕಡತದಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಬೇಕು:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -24,32 +24,32 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-ಐಚ್ಛಿಕವಾಗಿ, ನೀವು ಇದನ್ನು ಸಹ ನಿರ್ವಚಿಸಬಹುದು:
+ಐಚ್ಛಿಕವಾಗಿ, ನೀವು ಇದನ್ನೂ ವ್ಯಾಖ್ಯಾನಿಸಬಹುದು:
 
 ```php
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## ಸೆಟಪ್ ಸೂಚನೆಗಳು
+## ಸೆಟಪ್ ಸೂಚನೆಗಳು {#setup-instructions}
 
-### 1. ನಿಮ್ಮ Cloudways API ರುಜುವಾತುಗಳನ್ನು ಪಡೆಯಿರಿ
+### 1. ನಿಮ್ಮ Cloudways API ರುಜುವಾತುಗಳನ್ನು ಪಡೆಯಿರಿ {#1-get-your-cloudways-api-credentials}
 
-1. ನಿಮ್ಮ Cloudways dashboard ಗೆ ಲಾಗಿನ್ ಆಗಿ
+1. ನಿಮ್ಮ Cloudways Dashboard ಗೆ ಲಾಗ್ ಇನ್ ಮಾಡಿ
 2. "Account" > "API Keys" ಗೆ ಹೋಗಿ
-3. ನಿಮ್ಮ ಬಳಿ ಈಗಾಗಲೇ API key ಇಲ್ಲದಿದ್ದರೆ ಹೊಸದನ್ನು ರಚಿಸಿ
-4. ನಿಮ್ಮ email ಮತ್ತು API key ಅನ್ನು ನಕಲಿಸಿ
+3. ನಿಮ್ಮ ಬಳಿ ಈಗಾಗಲೇ ಇಲ್ಲದಿದ್ದರೆ API key ರಚಿಸಿ
+4. ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು API key ನಕಲಿಸಿ
 
-### 2. ನಿಮ್ಮ Server ಮತ್ತು Application IDs ಅನ್ನು ಪಡೆಯಿರಿ
+### 2. ನಿಮ್ಮ ಸರ್ವರ್ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ IDಗಳನ್ನು ಪಡೆಯಿರಿ {#2-get-your-server-and-application-ids}
 
-1. ನಿಮ್ಮ Cloudways dashboard ನಲ್ಲಿ, "Servers" ಗೆ ಹೋಗಿ
-2. ನಿಮ್ಮ WordPress multisite ಹೋಸ್ಟ್ ಆಗಿರುವ server ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ
-3. Server ID URL ನಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ: `https://platform.cloudways.com/server/{SERVER_ID}`
-4. "Applications" ಗೆ ಹೋಗಿ ಮತ್ತು ನಿಮ್ಮ WordPress application ಅನ್ನು ಆಯ್ಕೆಮಾಡಿ
-5. App ID URL ನಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
+1. ನಿಮ್ಮ Cloudways Dashboard ನಲ್ಲಿ, "Servers" ಗೆ ಹೋಗಿ
+2. ನಿಮ್ಮ WordPress ಮಲ್ಟಿಸೈಟ್ ಹೋಸ್ಟ್ ಆಗಿರುವ ಸರ್ವರ್ ಆಯ್ಕೆಮಾಡಿ
+3. Server ID URL ನಲ್ಲಿ ಕಾಣುತ್ತದೆ: `https://platform.cloudways.com/server/{SERVER_ID}`
+4. "Applications" ಗೆ ಹೋಗಿ ಮತ್ತು ನಿಮ್ಮ WordPress ಅಪ್ಲಿಕೇಶನ್ ಆಯ್ಕೆಮಾಡಿ
+5. App ID URL ನಲ್ಲಿ ಕಾಣುತ್ತದೆ: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. wp-config.php ಗೆ Constants ಸೇರಿಸಿ
+### 3. wp-config.php ಗೆ ಸ್ಥಿರಾಂಕಗಳನ್ನು ಸೇರಿಸಿ {#3-add-constants-to-wp-configphp}
 
-ಕೆಳಗಿನ constants ಅನ್ನು ನಿಮ್ಮ `wp-config.php` ಫೈಲ್‌ಗೆ ಸೇರಿಸಿ:
+ಕೆಳಗಿನ ಸ್ಥಿರಾಂಕಗಳನ್ನು ನಿಮ್ಮ `wp-config.php` ಕಡತಕ್ಕೆ ಸೇರಿಸಿ:
 
 ```php
 define('WU_CLOUDWAYS_EMAIL', 'your_cloudways_email');
@@ -58,62 +58,102 @@ define('WU_CLOUDWAYS_SERVER_ID', 'your_server_id');
 define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 ```
 
-ಯಾವಾಗಲೂ ಸೇರಿಸಬೇಕಾದ ಹೆಚ್ಚುವರಿ domains ಇದ್ದರೆ:
+ನಿಮ್ಮ ಮಲ್ಟಿಸೈಟ್ ಜಾಲದ ಹೊರಗಿನ ಹೆಚ್ಚುವರಿ **ಬಾಹ್ಯ** ಡೊಮೇನ್‌ಗಳು Cloudways aliases ಪಟ್ಟಿಯಲ್ಲಿ ಸದಾ ಇರಬೇಕಾದರೆ:
 
 ```php
-define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domain1.com,domain2.com,*.wildcard.com');
+define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ```
 
-### 4. ಅನುಸಂಧಾನವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+:::warning ನಿಮ್ಮ ಸ್ವಂತ ಜಾಲದ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಸೇರಿಸಬೇಡಿ
+`WU_CLOUDWAYS_EXTRA_DOMAINS` ಗೆ `*.your-network.com` ಅನ್ನು (ಅಥವಾ ನಿಮ್ಮ ಸ್ವಂತ ಜಾಲದ ಯಾವುದೇ ಉಪಡೊಮೇನ್ ಮಾದರಿಯನ್ನು) ಸೇರಿಸಬೇಡಿ.
+ಇದರಿಂದ ಪ್ರತಿ ಬಾಡಿಗೆದಾರರ SSL ಪ್ರಮಾಣಪತ್ರಗಳು ಜಾರಿಯಾಗುವುದನ್ನು ಏಕೆ ತಡೆಯುತ್ತದೆ ಎಂಬುದಕ್ಕಾಗಿ ಕೆಳಗಿನ [ಪ್ರಮುಖ — ವೈಲ್ಡ್‌ಕಾರ್ಡ್ SSL ಅಪಾಯ](#important--wildcard-ssl-pitfall) ನೋಡಿ.
+:::
 
-1. ನಿಮ್ಮ WordPress admin ನಲ್ಲಿ, Ultimate Multisite > Settings ಗೆ ಹೋಗಿ
-2. "Domain Mapping" ಟ್ಯಾಬ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ
-3. "Host Integrations" ಗೆ ಕೆಳಗೆ ಸ್ಕ್ರಾಲ್ ಮಾಡಿ
-4. Cloudways ಅನುಸಂಧಾನವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+### 4. ಸಂಯೋಜನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ {#4-enable-the-integration}
+
+1. ನಿಮ್ಮ WordPress ನಿರ್ವಹಣಾ ಭಾಗದಲ್ಲಿ, Ultimate Multisite > Settings ಗೆ ಹೋಗಿ
+2. "Domain Mapping" ಟ್ಯಾಬ್‌ಗೆ ಹೋಗಿ
+3. "Host Integrations" ತನಕ ಕೆಳಗೆ ಸ್ಕ್ರೋಲ್ ಮಾಡಿ
+4. Cloudways ಸಂಯೋಜನೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
 5. "Save Changes" ಕ್ಲಿಕ್ ಮಾಡಿ
 
-## ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ
+## ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ {#how-it-works}
 
-### Domain Syncing
+### ಡೊಮೇನ್ ಸಿಂಕ್ {#domain-syncing}
 
-Ultimate Multisite ನಲ್ಲಿ ಒಂದು domain map ಆದಾಗ:
+Ultimate Multisite ನಲ್ಲಿ ಡೊಮೇನ್ ಮ್ಯಾಪ್ ಮಾಡಿದಾಗ:
 
-1. ಅನುಸಂಧಾನವು ಪ್ರಸ್ತುತ map ಆಗಿರುವ ಎಲ್ಲಾ domains ಅನ್ನು ಪಡೆಯುತ್ತದೆ
-2. ಹೊಸ domain ಅನ್ನು ಪಟ್ಟಿಗೆ ಸೇರಿಸುತ್ತದೆ (ಅನ್ವಯವಾದರೆ www ಆವೃತ್ತಿಯೊಂದಿಗೆ)
-3. API ಮೂಲಕ ಸಂಪೂರ್ಣ ಪಟ್ಟಿಯನ್ನು Cloudways ಗೆ ಕಳುಹಿಸುತ್ತದೆ
-4. Cloudways ನಿಮ್ಮ application ಗಾಗಿ domain aliases ಅನ್ನು ನವೀಕರಿಸುತ್ತದೆ
+1. ಸಂಯೋಜನೆಯು ಈಗ ಮ್ಯಾಪ್ ಆಗಿರುವ ಎಲ್ಲಾ ಡೊಮೇನ್‌ಗಳನ್ನು ಪಡೆಯುತ್ತದೆ
+2. ಅದು ಹೊಸ ಡೊಮೇನ್ ಅನ್ನು ಪಟ್ಟಿಗೆ ಸೇರಿಸುತ್ತದೆ (ಅನ್ವಯಿಸಿದರೆ www ಆವೃತ್ತಿಯ ಜೊತೆಗೆ)
+3. ಅದು ಸಂಪೂರ್ಣ ಪಟ್ಟಿಯನ್ನು API ಮೂಲಕ Cloudways ಗೆ ಕಳುಹಿಸುತ್ತದೆ
+4. Cloudways ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್‌ನ ಡೊಮೇನ್ aliases ಅನ್ನು ನವೀಕರಿಸುತ್ತದೆ
 
-ಗಮನಿಸಿ: Cloudways API ಪ್ರತಿ ಬಾರಿ ಸಂಪೂರ್ಣ domains ಪಟ್ಟಿಯನ್ನು ಕಳುಹಿಸುವುದು ಅಗತ್ಯ, ಕೇವಲ ಪ್ರತ್ಯೇಕ domains ಸೇರಿಸುವುದು ಅಥವಾ ತೆಗೆಯುವುದು ಸಾಧ್ಯವಿಲ್ಲ.
+ಗಮನಿಸಿ: Cloudways API ಪ್ರತಿ ಬಾರಿ ಡೊಮೇನ್‌ಗಳ ಸಂಪೂರ್ಣ ಪಟ್ಟಿಯನ್ನು ಕಳುಹಿಸುವುದನ್ನು ಅಗತ್ಯಪಡಿಸುತ್ತದೆ; ಪ್ರತ್ಯೇಕ ಡೊಮೇನ್‌ಗಳನ್ನು ಮಾತ್ರ ಸೇರಿಸುವುದು ಅಥವಾ ತೆಗೆದುಹಾಕುವುದಲ್ಲ.
 
-### SSL Certificate ನಿರ್ವಹಣೆ
+### SSL ಪ್ರಮಾಣಪತ್ರ ನಿರ್ವಹಣೆ {#ssl-certificate-management}
 
-Domains sync ಆದ ನಂತರ:
+ಡೊಮೇನ್‌ಗಳು ಸಿಂಕ್ ಆದ ನಂತರ:
 
-1. ಅನುಸಂಧಾನವು ಯಾವ domains ನಿಮ್ಮ server ಗೆ ಸರಿಯಾಗಿ ಪಾಯಿಂಟ್ ಆಗುವ ಮಾನ್ಯ DNS records ಹೊಂದಿವೆ ಎಂದು ಪರಿಶೀಲಿಸುತ್ತದೆ
-2. ಆ domains ಗಾಗಿ Let's Encrypt SSL certificates ಅನ್ನು ಸ್ಥಾಪಿಸಲು Cloudways ಗೆ ವಿನಂತಿ ಕಳುಹಿಸುತ್ತದೆ
-3. Cloudways SSL certificate ವಿತರಣೆ ಮತ್ತು ಸ್ಥಾಪನೆಯನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ
+1. ಯಾವ ಡೊಮೇನ್‌ಗಳು ನಿಮ್ಮ ಸರ್ವರ್‌ಗೆ ಸೂಚಿಸುವ ಮಾನ್ಯ DNS ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿವೆ ಎಂಬುದನ್ನು ಸಂಯೋಜನೆ ಪರಿಶೀಲಿಸುತ್ತದೆ
+2. ಆ ಡೊಮೇನ್‌ಗಳಿಗೆ Let's Encrypt SSL ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಸ್ಥಾಪಿಸಲು ಅದು Cloudways ಗೆ ವಿನಂತಿ ಕಳುಹಿಸುತ್ತದೆ
+3. Cloudways SSL ಪ್ರಮಾಣಪತ್ರ ಜಾರಿ ಮತ್ತು ಸ್ಥಾಪನೆಯನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ
 
-## ಹೆಚ್ಚುವರಿ Domains
+ಸಂಯೋಜನೆಯು Cloudways ನಿಂದ ಸದಾ **ಪ್ರಮಾಣಿತ** (ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಅಲ್ಲದ) Let's Encrypt ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ವಿನಂತಿಸುತ್ತದೆ.
+`WU_CLOUDWAYS_EXTRA_DOMAINS` ನಲ್ಲಿ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಮಾದರಿಯನ್ನು ನೀಡಿದರೆ, SSL ವಿನಂತಿಗೂ ಮೊದಲು ಆರಂಭದ
+`*.` ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ — ಈ ಸಂಯೋಜನೆಯಿಂದ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ತಾನೇ ಎಂದಿಗೂ ಸ್ಥಾಪಿಸಲಾಗುವುದಿಲ್ಲ.
+Cloudways ನಲ್ಲಿ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಪ್ರಮಾಣಪತ್ರ ಬಳಸಲು ನೀವು ಅದನ್ನು ಕೈಯಾರೆ ಸ್ಥಾಪಿಸಬೇಕು,
+ಆದರೆ ಹಾಗೆ ಮಾಡಿದರೆ ಮ್ಯಾಪ್ ಮಾಡಿದ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳಿಗೆ ಪ್ರತಿ-ಡೊಮೇನ್ Let's Encrypt ಜಾರಿ ತಡೆಯಲ್ಪಡುತ್ತದೆ
+(ಕೆಳಗಿನ ಅಪಾಯ ನೋಡಿ).
 
-`WU_CLOUDWAYS_EXTRA_DOMAINS` constant Cloudways ನೊಂದಿಗೆ sync ಮಾಡುವಾಗ ಯಾವಾಗಲೂ ಸೇರಿಸಬೇಕಾದ ಹೆಚ್ಚುವರಿ domains ಅನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಲು ಅನುಮತಿಸುತ್ತದೆ. ಇದು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಉಪಯುಕ್ತ:
+## ಹೆಚ್ಚುವರಿ ಡೊಮೇನ್‌ಗಳು {#extra-domains}
 
-- Ultimate Multisite ನಿಂದ ನಿರ್ವಹಿಸದ domains
-- Wildcard domains (ಉದಾ., `*.example.com`)
-- Development ಅಥವಾ staging domains
+`WU_CLOUDWAYS_EXTRA_DOMAINS` ಸ್ಥಿರಾಂಕವು Cloudways ಅಪ್ಲಿಕೇಶನ್‌ನ aliases ಪಟ್ಟಿಯಲ್ಲಿ ಸದಾ ಇರಬೇಕಾದ ಹೆಚ್ಚುವರಿ **ಬಾಹ್ಯ**
+ಡೊಮೇನ್‌ಗಳನ್ನು ಸೂಚಿಸಲು ನಿಮಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ. ಇದನ್ನು ಇದಕ್ಕಾಗಿ ಬಳಸಿ:
 
-## ಸಮಸ್ಯೆ ಪರಿಹಾರ
+- Ultimate Multisite ನಿಂದ ನಿರ್ವಹಿಸಲಾಗದ ಬಾಹ್ಯ ಡೊಮೇನ್‌ಗಳು (ಉದಾ. ಅದೇ Cloudways ಅಪ್ಲಿಕೇಶನ್ ಹಂಚಿಕೊಳ್ಳುವ ಪ್ರತ್ಯೇಕ ಮಾರ್ಕೆಟಿಂಗ್ ಸೈಟ್)
+- ಅಪ್ಲಿಕೇಶನ್ aliases ಪಟ್ಟಿಯಲ್ಲಿ ಇರಿಸಿಕೊಳ್ಳಲು ಬಯಸುವ ಪಾರ್ಕ್ ಮಾಡಿದ ಅಥವಾ ಸ್ಟೇಜಿಂಗ್ ಡೊಮೇನ್‌ಗಳು
 
-### API ಸಂಪರ್ಕ ಸಮಸ್ಯೆಗಳು
-- ನಿಮ್ಮ email ಮತ್ತು API key ಸರಿಯಾಗಿವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
-- ನಿಮ್ಮ server ಮತ್ತು application IDs ಸರಿಯಾಗಿವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
-- ನಿಮ್ಮ Cloudways ಖಾತೆಗೆ ಅಗತ್ಯ ಅನುಮತಿಗಳಿವೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ
+ನಿಮ್ಮ ಸ್ವಂತ ಜಾಲದ ಉಪಡೊಮೇನ್ ವೈಲ್ಡ್‌ಕಾರ್ಡ್‌ಗಾಗಿ ಈ ಸ್ಥಿರಾಂಕವನ್ನು ಬಳಸಬೇಡಿ
+(ಉದಾ. `*.your-network.com`). ಕೆಳಗಿನ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ SSL ಅಪಾಯ ನೋಡಿ.
 
-### SSL Certificate ಸಮಸ್ಯೆಗಳು
-- SSL certificates ವಿತರಿಸುವ ಮೊದಲು domains ನಿಮ್ಮ server ಗೆ ಪಾಯಿಂಟ್ ಆಗುವ ಮಾನ್ಯ DNS records ಹೊಂದಿರಬೇಕೆಂದು Cloudways ಅಗತ್ಯಪಡಿಸುತ್ತದೆ
-- ಅನುಸಂಧಾನವು SSL certificates ವಿನಂತಿಸುವ ಮೊದಲು DNS records ಅನ್ನು ಮಾನ್ಯಗೊಳಿಸುತ್ತದೆ
-- SSL certificates ವಿತರಣೆ ಆಗುತ್ತಿಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ domains ನಿಮ್ಮ server ನ IP ವಿಳಾಸಕ್ಕೆ ಸರಿಯಾಗಿ ಪಾಯಿಂಟ್ ಆಗಿವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
+## ಪ್ರಮುಖ — ವೈಲ್ಡ್‌ಕಾರ್ಡ್ SSL ಅಪಾಯ {#important--wildcard-ssl-pitfall}
 
-### Domain ಸೇರಿಸಲಾಗಿಲ್ಲ
-- ಯಾವುದೇ error messages ಗಾಗಿ Ultimate Multisite logs ಪರಿಶೀಲಿಸಿ
-- Domain ಈಗಾಗಲೇ Cloudways ಗೆ ಸೇರಿಸಲಾಗಿಲ್ಲವೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
-- ನೀವು ಸೇರಿಸುತ್ತಿರುವ domains ಸಂಖ್ಯೆಯನ್ನು ನಿಮ್ಮ Cloudways plan ಬೆಂಬಲಿಸುತ್ತದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ
+Cloudways ನ ಡೀಫಾಲ್ಟ್ ಸೆಟಪ್ ಅನುಸರಿಸುವಾಗ ಸಾಮಾನ್ಯ ತಪ್ಪು ಎಂದರೆ
+`WU_CLOUDWAYS_EXTRA_DOMAINS` ಗೆ `*.your-network.com` ಎಂಬ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಸೇರಿಸುವುದು, ಅಥವಾ ಆ ವೈಲ್ಡ್‌ಕಾರ್ಡ್‌ಗಾಗಿ Cloudways
+ವೈಲ್ಡ್‌ಕಾರ್ಡ್ SSL ಪ್ರಮಾಣಪತ್ರವನ್ನು ಕೈಯಾರೆ ಸ್ಥಾಪಿಸುವುದು.
+
+**ನೀವು ಹೀಗೆ ಮಾಡಿದರೆ, Ultimate Multisite ಮ್ಯಾಪ್ ಮಾಡುವ ಪ್ರತಿ ಬಾಡಿಗೆದಾರರ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳಿಗೆ
+Let's Encrypt ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಜಾರಿಗೊಳಿಸಲು Cloudways ನಿರಾಕರಿಸುತ್ತದೆ.** Cloudways ಪ್ರತಿ ಬಾರಿ ಅಪ್ಲಿಕೇಶನ್‌ನ ಸಕ್ರಿಯ
+SSL ಪ್ರಮಾಣಪತ್ರವನ್ನು ಬದಲಿಸುತ್ತದೆ, ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಮುಂಚಿತವಾಗಿ ಇರುವ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಪ್ರಮಾಣಪತ್ರವು
+ಸಂಯೋಜನೆ ಅವಲಂಬಿಸಿರುವ ಪ್ರತಿ-ಡೊಮೇನ್ Let's Encrypt ಜಾರಿಯನ್ನು ತಡೆಯುತ್ತದೆ.
+
+### Ultimate Multisite ಜಾಲಕ್ಕೆ ಶಿಫಾರಸು ಮಾಡಿದ Cloudways SSL ಸೆಟಪ್ {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
+
+1. Cloudways ಅಪ್ಲಿಕೇಶನ್‌ನ **SSL Certificate** ಟ್ಯಾಬ್‌ನಲ್ಲಿ, ಕೇವಲ `your-network.com` ಮತ್ತು `www.your-network.com`
+   ಅನ್ನು ಒಳಗೊಂಡ **ಪ್ರಮಾಣಿತ Let's Encrypt ಪ್ರಮಾಣಪತ್ರ** ಸ್ಥಾಪಿಸಿ
+   — ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಅಲ್ಲ.
+2. `WU_CLOUDWAYS_EXTRA_DOMAINS` ನಲ್ಲಿ `*.your-network.com` ಅನ್ನು (ಅಥವಾ ನಿಮ್ಮ ಸ್ವಂತ ಜಾಲದ ಯಾವುದೇ ಉಪಡೊಮೇನ್ ಮಾದರಿಯನ್ನು)
+   ಇರಿಸಬೇಡಿ. ಆ ಸ್ಥಿರಾಂಕವನ್ನು **ಬಾಹ್ಯ** ಡೊಮೇನ್‌ಗಳಿಗೆ ಮಾತ್ರ ಮೀಸಲಿಡಿ.
+3. ಪ್ರತಿ ಬಾಡಿಗೆದಾರರ ಉಪಡೊಮೇನ್ ವೈಲ್ಡ್‌ಕಾರ್ಡ್ ಅನ್ನು ಕೇವಲ **DNS** ಮಟ್ಟದಲ್ಲಿ ರಚಿಸಿ (`*.your-network.com` ಗಾಗಿ
+   ನಿಮ್ಮ Cloudways ಸರ್ವರ್ IP ಗೆ ಸೂಚಿಸುವ `A` ದಾಖಲೆ), ಹಾಗಾದರೆ ಉಪಸೈಟ್‌ಗಳು ಪರಿಹರಿಸುತ್ತವೆ. ನಂತರ ಪ್ರತ್ಯೇಕ ಮ್ಯಾಪ್ ಮಾಡಿದ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳಿಗೆ SSL
+   Let's Encrypt ಮೂಲಕ ಸಂಯೋಜನೆಯಿಂದ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಜಾರಿಯಾಗುತ್ತದೆ.
+
+ನಿಮ್ಮ tenants‌ನ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳು SSL ಇಲ್ಲದೆ ಸಿಲುಕಿಕೊಂಡಿದ್ದರೆ, Cloudways SSL ಟ್ಯಾಬ್ ಪರಿಶೀಲಿಸಿ. ಅಲ್ಲಿ wildcard ಪ್ರಮಾಣಪತ್ರ ಸಕ್ರಿಯವಾಗಿದ್ದರೆ, ಅದನ್ನು ತೆಗೆದುಹಾಕಿ, ಮುಖ್ಯ ನೆಟ್‌ವರ್ಕ್ ಡೊಮೇನ್‌ಗೆ ಮಾತ್ರ ಮಾನಕ Let's Encrypt ಪ್ರಮಾಣಪತ್ರವನ್ನು ಮರುನೀಡಿ, ಮತ್ತು `WU_CLOUDWAYS_EXTRA_DOMAINS` ನಿಂದ ಯಾವುದೇ wildcard ನಮೂದುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ. ನಂತರ ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್ ಅನ್ನು ಮರುಪ್ರಚೋದಿಸಿ (ಅಥವಾ ಮುಂದಿನದನ್ನು ಕಾಯಿರಿ) ಮತ್ತು ಏಕೀಕರಣವು ಪ್ರತಿ-ಡೊಮೇನ್ ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಮತ್ತೆ ನೀಡಲು ಪ್ರಾರಂಭಿಸುತ್ತದೆ.
+
+## ದೋಷನಿವಾರಣೆ {#troubleshooting}
+
+### API ಸಂಪರ್ಕ ಸಮಸ್ಯೆಗಳು {#api-connection-issues}
+- ನಿಮ್ಮ ಇಮೇಲ್ ಮತ್ತು API ಕೀ ಸರಿಯಾಗಿವೆ ಎಂದು ಪರಿಶೀಲಿಸಿ
+- ನಿಮ್ಮ ಸರ್ವರ್ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ IDಗಳು ಸರಿಯಾಗಿವೆ ಎಂದು ಪರಿಶೀಲಿಸಿ
+- ನಿಮ್ಮ Cloudways Account‌ಗೆ ಅಗತ್ಯ ಅನುಮತಿಗಳು ಇವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ
+
+### SSL ಪ್ರಮಾಣಪತ್ರ ಸಮಸ್ಯೆಗಳು {#ssl-certificate-issues}
+- SSL ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ನೀಡುವ ಮೊದಲು ಡೊಮೇನ್‌ಗಳು ನಿಮ್ಮ ಸರ್ವರ್‌ಗೆ ತೋರಿಸುವ ಮಾನ್ಯ DNS ದಾಖಲೆಗಳನ್ನು ಹೊಂದಿರಬೇಕು ಎಂದು Cloudways ಅವಶ್ಯಕಪಡಿಸುತ್ತದೆ
+- SSL ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ವಿನಂತಿಸುವ ಮೊದಲು ಏಕೀಕರಣವು DNS ದಾಖಲೆಗಳನ್ನು ಮಾನ್ಯಗೊಳಿಸುತ್ತದೆ
+- SSL ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ನೀಡಲಾಗುತ್ತಿಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಡೊಮೇನ್‌ಗಳು ನಿಮ್ಮ ಸರ್ವರ್‌ನ IP ವಿಳಾಸಕ್ಕೆ ಸರಿಯಾಗಿ ತೋರಿಸುತ್ತಿವೆ ಎಂದು ಪರಿಶೀಲಿಸಿ
+- **ಪ್ರತಿ-tenant ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳು SSL ಇಲ್ಲದೆ ಸಿಲುಕಿಕೊಂಡಿವೆಯೇ?** Cloudways ಅಪ್ಲಿಕೇಶನ್‌ನ SSL Certificate ಟ್ಯಾಬ್ ಪರಿಶೀಲಿಸಿ. wildcard ಪ್ರಮಾಣಪತ್ರ (ಕೈಯಾರೆ ಸ್ಥಾಪಿತ, ಅಥವಾ `*.your-network.com` ಒಳಗೊಂಡಿರುವುದು) ಸಕ್ರಿಯವಾಗಿದ್ದರೆ, Cloudways ವೈಯಕ್ತಿಕವಾಗಿ ಮ್ಯಾಪ್ ಮಾಡಿದ ಕಸ್ಟಮ್ ಡೊಮೇನ್‌ಗಳಿಗೆ Let's Encrypt ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ನೀಡುವುದಿಲ್ಲ. ಮುಖ್ಯ ನೆಟ್‌ವರ್ಕ್ ಡೊಮೇನ್ (`your-network.com`, `www.your-network.com`) ಮಾತ್ರ ಒಳಗೊಂಡಿರುವ ಮಾನಕ Let's Encrypt ಪ್ರಮಾಣಪತ್ರದಿಂದ ಅದನ್ನು ಬದಲಿಸಿ ಮತ್ತು `WU_CLOUDWAYS_EXTRA_DOMAINS` ನಿಂದ ಯಾವುದೇ wildcard ನಮೂದುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ. ನಂತರ ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್ ಅನ್ನು ಮರುಪ್ರಚೋದಿಸಿ (ಅಥವಾ ಮುಂದಿನದನ್ನು ಕಾಯಿರಿ) ಮತ್ತು ಏಕೀಕರಣವು ಪ್ರತಿ-ಡೊಮೇನ್ ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ವಿನಂತಿಸುತ್ತದೆ.
+
+### ಡೊಮೇನ್ ಸೇರಿಸಲಾಗಿಲ್ಲ {#domain-not-added}
+- ಯಾವುದೇ ದೋಷ ಸಂದೇಶಗಳಿಗಾಗಿ Ultimate Multisite logs ಪರಿಶೀಲಿಸಿ
+- ಡೊಮೇನ್ ಈಗಾಗಲೇ Cloudways ಗೆ ಸೇರಿಸಲಾಗಿಲ್ಲ ಎಂದು ಪರಿಶೀಲಿಸಿ
+- ನೀವು ಸೇರಿಸುತ್ತಿರುವ ಡೊಮೇನ್‌ಗಳ ಸಂಖ್ಯೆಯನ್ನು ನಿಮ್ಮ Cloudways plan ಬೆಂಬಲಿಸುತ್ತದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ

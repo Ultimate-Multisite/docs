@@ -3,13 +3,13 @@ title: Kuyika Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Kuyika Ultimate Multisite
+# Kuyika Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Mungachite mantha muli ndi WordPress Multisite yomwe ilipo ndipo ikonzedwa kale. Kuti muzidziwe momwe mungachitire, yang'anani [kuchokera](https://www.wpbeginner.com/glossary/multisite/) kuchokera ku WP Beginner.
 :::
 
-## Kuyika Pulogalamu Yothandizira (Plugin)
+## Kuyika Pulogalamu Yothandizira (Plugin) {#installing-the-plugin}
 
 Ultimate Multisite ili ndi mtengo waulere pa [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Pambuyo poyika, mudzatsamwitsidwa ku Setup Wizard.
 
 ![Pulogalamu yakhazikitsidwa ndipo inasamutsani ku wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 Setup Wizard idzakuthandizani kuti muzikonza Ultimate Multisite m'mphindi 10 zokha.
 
-### Takulandirani
+### Takulandirani {#welcome}
 
 Dinani **Get Started** kuti muyambe.
 
 ![Tsamba loyambira la Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Zoyenera Kuyika Kale (Pre-install Checks)
+### Zoyenera Kuyika Kale (Pre-install Checks) {#pre-install-checks}
 
 Gawo ili lidzayang'ana zambiri za makina anu ndi WordPress kuti idziwe ngati ikukwaniritsa zofunikira za Ultimate Multisite. Ngati zonse zikuyenda bwino, dinani **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ngati Ultimate Multisite idayikidwa koma **sidayikidwe pa netiweki yonse** — m
 Dinani **Network Activate** kuti muyike pulogalamuyo pa netiweki yanu yonse. Ikakhala ikuyikidwa, wizard idzapitiriza kuchita ntchito mwachizolerezi. Simudzafunika kuchoka ku wizard kuti muthe zolakwika zomwe zingachitike.
 :::
 
-### Kuyika
+### Kuyika {#installation}
 
 Pulogalamuyo (installer) idzakhazikitsa matebulo ofunikira a database ndipo idzayika fayilo ya `sunrise.php` yomwe Ultimate Multisite iyenera kugwiritsa ntchito. Dinani **Install** kuti pitirize.
 
 ![Gawo la kuyika likuwonetsa matebulo a database ndi sunrise.php](/img/installation/wizard-installation.png)
 
-### Kampani Yanu
+### Kampani Yanu {#your-company}
 
 Lemba zambiri za kampani yanu ndipo ikani ndalama zomwe mungagwiritse ntchito. Zambiri izi zidzagwiritsidwa ntchito pa pulatifomu yanu ya WaaS. Dinani **Continue** mukamaliza.
 
 ![Gawo la Your Company configuration](/img/installation/wizard-your-company.png)
 
-### Zomwe Zimayamba (Default Content)
+### Zomwe Zimayamba (Default Content) {#default-content}
 
 Gawo ili likukupatsirani mwayi woyika zitsanzo, zinthu, ndi zina zomwe zingakuthandizeni kuyamba kugwiritsa ntchito Ultimate Multisite. Dinani **Install** kuti muziyika, kapena dinani kuti muyambe kuchokera poyambira ngati simukufuna.
 
 ![Gawo la Default content installation](/img/installation/wizard-default-content.png)
 
-### Mapulogalamu Othandizira Omwe Amapangidwa (Recommended Plugins)
+### Mapulogalamu Othandizira Omwe Amapangidwa (Recommended Plugins) {#recommended-plugins}
 
 Mungathe kuyika mapulogalamu othandizira omwe amagwiritsidwa ntchito pafupi. Dinani **Install** kuti aziyike, kapena dinani kuti pitirize.
 
 ![Gawo la Recommended plugins](/img/installation/wizard-recommended-plugins.png)
 
-### Takonzeka!
+### Takonzeka! {#ready}
 
 Ndizo zonse! Kuyika Ultimate Multisite kwanene. Tsopano mutha kuyamba kumanga pulatifomu yanu ya Website as a Service kuchokera ku **Network Admin Dashboard**.
 

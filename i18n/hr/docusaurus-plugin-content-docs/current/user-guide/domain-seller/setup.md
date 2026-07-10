@@ -3,21 +3,21 @@ title: Postavka i konfiguracija provajdera
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Prodavatel domena: Postavka i konfiguracija provajdera
+# Prodavatel domena: Postavka i konfiguracija provajdera {#domain-seller-setup-and-provider-configuration}
 
 Dodatak Domain Seller dolazi s vodičem za postavljanje koji vas vodi kroz svaki potreban korak. Ova stranica objašnjava tok tog vodiča te kako postaviti ili ponovo konfigurisati provajdere nakon toga.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ili noviji, aktiviran na mreži
 - **PHP** 7.4+
 - API kredencijali za barem jedan podržani registrator
 
-## Vodič za postavljanje prvi put
+## Vodič za postavljanje prvi put {#first-run-setup-wizard}
 
 Vodič za postavljanje se automatski pokreće prvi put kada aktivirate plugin na mreži. Također je dostupan u bilo kojem trenutku putem **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Korak 1 — Odaberite provajdera
+### Korak 1 — Odaberite provajdera {#step-1--choose-a-provider}
 
 Odaberite registrator s kojim želite povezati svoj domena. Podržane opcije:
 
@@ -33,7 +33,7 @@ Odaberite registrator s kojim želite povezati svoj domena. Podržane opcije:
 | NameSilo | Ne | Ne |
 | Enom | Da | Ne |
 
-### Korak 2 — Unesite kredencijale
+### Korak 2 — Unesite kredencijale {#step-2--enter-credentials}
 
 Svaki providner ima različita polja za unos podataka:
 
@@ -57,17 +57,17 @@ Svaki providner ima različita polja za unos podataka:
 
 Provjerite **Sandbox mode** ako je dostupan kako biste testirali u testnom okruženju dobavljača prije live pretplate.
 
-### Korak 3 — Testirajte vezu
+### Korak 3 — Testirajte vezu {#step-3--test-the-connection}
 
 Kliknite na **Test Connection**. Wizard šalje lagani API poziv kako bi provjrio podatke za prijave i povezanost. Popravite bilo kakve probleme s podacima za prijavu prije nastavka.
 
-### Korak 4 — Uvoz TLD-ova
+### Korak 4 — Uvoz TLD-ova {#step-4--import-tlds}
 
 Kliknite na **Import TLDs** kako biste povukli sve dostupne TLD-ove (Top-Level Domain) i veleprodajne cijene od povezanog dobavljača. Ovo popunjava listu TLD-ova koja se koristi za domenske proizvode. Uvoz može potrajati 30–60 sekundi za dobavljače s velikim katalogom TLD-ova.
 
 TLD-ovi se automatski ponovno sinhroniziraju jednom dnevno putem raspoređenog cron joba.
 
-### Korak 5 — Kreiranje domenskog proizvoda
+### Korak 5 — Kreiranje domenskog proizvoda {#step-5--create-a-domain-product}
 
 Wizard kreira podrazumjenu domensku proizvodnu stavku (catch-all) s maržom od 10%. Možete je odmah uređivati ili preskočiti i ručno kreirati proizvode putem **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Pogledajte [Domain Products and Pricing](./domain-products) za kompletan vodič 
 
 ---
 
-## Ponovno konfiguriranje dobavljača
+## Ponovno konfiguriranje dobavljača {#reconfiguring-a-provider}
 
 Idite na **Network Admin › Ultimate Multisite › Settings › Domain Seller** (ili kliknite na **Settings** u listi pluginova).
 
@@ -88,17 +88,17 @@ Stranica s postavkama sadrži:
 - **Upravljanje domenskim proizvodima** — brzi link na listu Proizvode
 - **Konfigurirajte pružatelje** — otvara Wizard integracija za dodavanje ili ponovno konfiguriranje pružatelja
 
-### Dodavanje drugog pružatelja
+### Dodavanje drugog pružatelja {#adding-a-second-provider}
 
 Kliknite na **Konfiguriraj pružatelje** i pokrenite wizard ponovno za novog registratora. Možete imati više konfiguriranih pružatelja istovremeno. Dodijelite svaki domenski proizvod specifičnom pružatelju ili ga ostavite na podrazmjeni.
 
-### Ručno sinkroniziranje TLD-ova
+### Ručno sinkroniziranje TLD-ova {#syncing-tlds-manually}
 
 Na stranici postavki, kliknite na **Sinkroniziraj TLD-ove** pored bilo kojeg konfiguriranog pružatelja kako biste povukli najnovije cijene. Ovo je korisno nakon što pružatelj ažurira veleprodajne cijene ili doda nove TLD-ove.
 
 ---
 
-## Logovi
+## Logovi {#logs}
 
 Svaki pružatelj piše u svoj zasebni log kanal. Logove možete pregledati pod **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Svaki pružatelj piše u svoj zasebni log kanal. Logove možete pregledati pod *
 
 ---
 
-## Napomene o mogućnostima provajdera
+## Napomene o mogućnostima provajdera {#provider-capability-notes}
 
 Nije svaki registrator API nudi iste operacije. Dodatak prikazuje ne podržane operacije s jasnim greškama koje se pojavljuju korisniku, umjesto da tiho propadne.
 

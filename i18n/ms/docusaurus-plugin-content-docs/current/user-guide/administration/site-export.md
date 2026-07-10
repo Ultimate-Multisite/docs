@@ -3,27 +3,27 @@ title: Pengeksport Tapak
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Eksport Tapak
+# Eksport Tapak {#site-export}
 
 Halaman pentadbir **Eksport Tapak** membolehkan pentadbir rangkaian membungkus satu tapak, atau keseluruhan rangkaian, ke dalam arkib boleh dimuat turun untuk tujuan migrasi, sandaran, atau penyerahan kerja.
 
-## Eksport satu tapak
+## Eksport satu tapak {#exporting-one-site}
 
 Pergi ke **Ultimate Multisite > Site Export** dan pilih **Generate new Site Export**. Pilih tapak anak yang anda ingin eksport, kemudian pilih sama ada arkib tersebut perlu memasukkan muat naik, plugin, dan tema.
 
 Apabila eksport selesai, muat turun ZIP daripada senarai **Existing Exports**. Fail ZIP Eksport kini termasuk `index.php` yang boleh but semula sendiri dan `readme.txt`, jadi arkib tersebut boleh dimuat naik ke hos baharu dan dimulakan tanpa perlu memasang plugin pengimport berasingan terlebih dahulu.
 
-## Eksport keseluruhan rangkaian
+## Eksport keseluruhan rangkaian {#exporting-the-whole-network}
 
 Gunakan **Network Export** pada halaman Site Export apabila anda memerlukan satu arkib yang mengandungi semua tapak anak dalam rangkaian. Ini berguna sebelum migrasi hos, latihan pemulihan bencana, atau pembinaan semula staging di mana setiap tapak anak perlu bergerak bersama.
 
 Oleh kerana eksport rangkaian boleh menjadi jauh lebih besar daripada eksport satu tapak, jalankan ia semasa waktu trafik rendah dan sahkan storan sasaran mempunyai ruang kosong yang mencukupi untuk muat naik, plugin, tema, dan fail ZIP yang dijana.
 
-### Pakej Import Rangkaian (Network Import Bundles)
+### Pakej Import Rangkaian (Network Import Bundles) {#network-import-bundles}
 
 Bermula dengan Ultimate Multisite 2.12.0, Site Exporter boleh menjana **pakej import rangkaian** — arkib khusus yang direka untuk pemulihan tapak seluruh rangkaian yang lancar. Pakej import rangkaian mengandungi semua fail dan metadata yang diperlukan untuk memulihkan pelbagai tapak ke pemasangan rangkaian baharu.
 
-#### Menjana Pakej Import Rangkaian
+#### Menjana Pakej Import Rangkaian {#generating-a-network-import-bundle}
 
 1. Pergi ke **Ultimate Multisite > Site Export**
 2. Klik **Generate new Network Export**
@@ -32,7 +32,7 @@ Bermula dengan Ultimate Multisite 2.12.0, Site Exporter boleh menjana **pakej im
 5. Klik **Generate**
 6. Muat turun pakej ZIP daripada senarai **Existing Exports**
 
-#### Memulihkan dari Pakej Import Rangkaian
+#### Memulihkan dari Pakej Import Rangkaian {#restoring-from-a-network-import-bundle}
 
 Untuk memulihkan tapak dari pakej import rangkaian:
 
@@ -52,7 +52,7 @@ Pakej import rangkaian memelihara:
 - Muat naik media (jika dimasukkan dalam pakej)
 - Jadual dan data pangkalan data tersuai
 
-## Memasang ZIP eksport yang boleh but semula sendiri
+## Memasang ZIP eksport yang boleh but semula sendiri {#installing-a-self-booting-export-zip}
 
 Untuk memulihkan ZIP yang boleh but semula sendiri pada hos baharu:
 

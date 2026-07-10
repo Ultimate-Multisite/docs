@@ -3,15 +3,15 @@ title: תזמיון בונה אתרים גרסה 2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# מתזמן בניית אתרים v2
+# מתזמן בניית אתרים v2 {#site-builder-orchestration-v2}
 
 מתזמן בניית אתרים v2 (שנוסף ב-Gratis AI Agent v1.4.0) הוא המנוע שמפעיל יצירת אתרים מרובת שלבים. כשאתה מבקש מהאייג'נט "לבנות אתר מסעדה" או "ליצור פורטפוליו עם בלוג", המתזמן מפרק את המטרה ברמה הגבוהה הזו ל**תוכנית** מובנית, מגלה אילו תוספים נדרשים כדי להשלים אותה, מבצע כל שלב ברצף, עוקב אחר ההתקדמות ומצליח להתאושש משגיאות באופן אוטונומי.
 
 ---
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
-### 1. יצירת תוכנית (Plan Generation)
+### 1. יצירת תוכנית (Plan Generation) {#1-plan-generation}
 
 כאשר האייג'נט מקבל הנחיית בניית אתר, הוא קורא ליכולת `create_site_plan` כדי לייצר **תוכנית אתר** בפורמט JSON. התוכנית מתארת:
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. גילוי תוספים (Plugin Discovery)
+### 2. גילוי תוספים (Plugin Discovery) {#2-plugin-discovery}
 
 לפני שהביצוע מתחיל, המתזמן סורק את `plugin_requirements` של התוכנית ומוודא אילו תוספים כבר פעילים. עבור תוספים חסרים, הוא:
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 כשלים בגילוי תוספים אינם קריטיים — המתזמן מסמן את השלבים המושפעים כ־`skipped` (נדלג עליהם) וממשיך עם שאר התוכנית.
 
-### 3. ביצוע תוכנית (Plan Execution)
+### 3. ביצוע תוכנית (Plan Execution) {#3-plan-execution}
 
 המתזמן קורא ל־`execute_site_plan` עם מזהה התוכנית. הביצוע מתבצע שלב אחר שלב, שלב אחר שלב:
 
@@ -79,7 +79,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 - **שלבים מקבילים (Parallel steps)**: צעדים באותו שלב שאין ביניהם תלויות נשלחים במקביל כאשר הדגל `parallel` מוגדר.
 - **פקיעת זמן של צעד (Step timeout)**: לכל צעד יש פקיעת זמן אישית (ברירת מחדל: הגדרת `Ability Timeout`). צעד שפקע בזמן מסומן כ־`failed` והתוכנית ממשיכה.
 
-### 4. מעקב אחר התקדמות (Progress Tracking)
+### 4. מעקב אחר התקדמות (Progress Tracking) {#4-progress-tracking}
 
 הקרא ל־`get_plan_progress` בכל עת כדי לבדוק את סטטוס הביצוע:
 
@@ -104,7 +104,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. התאוששות משגיאות (Error Recovery)
+### 5. התאוששות משגיאות (Error Recovery) {#5-error-recovery}
 
 כאשר צעד נכשל, המתזמן בודק אם קיימת **תוכנית גיבוי (fallback)** שהוגדרה בתוכנית:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## יכולות תוכנית אתר (Site Plan Abilities)
+## יכולות תוכנית אתר (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 מייצר תוכנית אתר מובנית מתיאור מטרה בשפה טבעית.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 מתחיל בביצוע תוכנית אתר שנוצרה קודם לכן.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 מחזיר את סטטוס הביצוע הנוכחי של תוכנית אתר.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 פותר ידנית צעד שנכשל וממשיך את ביצוע התוכנית מהצעד הבא. השתמש בכלי זה כאשר ההתאוששות האוטומטית לא הייתה אפשרית ואתה רוצה להתערב.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## השוואה בין v1 ל-v2
+## השוואה בין v1 ל-v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## פקודות תוכנית WP-CLI
+## פקודות תוכנית WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 מייצר תוכנית אתר מתיאור מטרה.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 מבצע תוכנית שנוצרה קודם לכן.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 מציג את ההתקדמות הנוכחית עבור תוכנית שמבוצעת או הושלמה.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 מציג את כל תוכניות האתר (ממתינות, בהתקדמות, ומושלמות).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 מאפס תוכנית שנכשלה למצב `pending` כדי שניתן יהיה להריץ אותה מחדש מההתחלה.
 

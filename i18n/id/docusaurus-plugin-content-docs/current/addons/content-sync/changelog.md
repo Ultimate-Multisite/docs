@@ -3,9 +3,9 @@ title: Catatan Perubahan Sinkronisasi Konten
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Catatan Perubahan Content Sync
+# Catatan Perubahan Content Sync {#content-sync-changelog}
 
-### Versi 1.1.0 - Dirilis pada 2025-12-31
+### Versi 1.1.0 - Dirilis pada 2025-12-31 {#version-110---released-on-2025-12-31}
 * Baru: Dukungan untuk sinkronisasi semua tipe postingan (postingan, halaman, tipe postingan kustom)
 * Baru: Pemfilteran tipe postingan pada langkah pemilihan konten
 * Baru: Langkah pemilihan situs sumber - sinkronisasi dari situs mana pun, tidak hanya situs utama
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Diubah: Langkah "Select Templates" diubah namanya menjadi "Select Data"
 * Ditingkatkan: Kode spesifik Elementor kini hanya berjalan untuk tipe postingan elementor_library
 
-### Versi 1.0.0 - Dirilis pada 2025-12-19
+### Versi 1.0.0 - Dirilis pada 2025-12-19 {#version-100---released-on-2025-12-19}
 * Rilis awal
 * Wizard multi-langkah untuk pemilihan template dan situs
 * Pemrosesan batch dengan umpan balik kemajuan waktu nyata

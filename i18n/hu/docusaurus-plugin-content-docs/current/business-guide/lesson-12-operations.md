@@ -3,17 +3,17 @@ title: 'Összefoglaló 12: Az üzlet működtetése'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# 12. Tanulmány: Az Üzlet Vitekítése
+# 12. Tanulmány: Az Üzlet Vitekítése {#lesson-12-running-the-business}
 
 Egy platform nem egy projekt, amit befejezel – hanem egy üzlet, amit működtetnek. Ez a tanulmány a FitSite mindennapi működését fogja lefedni: a támogatás, a számlázás, a karbantartás és a vásárlók elégedettségének fenntartása.
 
-## Hol voltam?
+## Hol voltam? {#where-we-left-off}
 
 A FitSite online, és a vásárlók regisztrálnak. Most már fenntartható módon kell működtetni az üzemeltetést.
 
-## Mindennapi Működés
+## Mindennapi Működés {#daily-operations}
 
-### Monitoring
+### Monitoring {#monitoring}
 
 Ellenőrizze ezeket naponta (vagy állítson be értesítéseket):
 
@@ -22,7 +22,7 @@ Ellenőrizze ezeket naponta (vagy állítson be értesítéseket):
 - **Hibás fizetések**: Van-e olyan fizetési hiba, amelynek figyelmet kell fordítani?
 - **Támogatási kérések**: Van-e válasz nélkül maradt vásárlói kérdés?
 
-### Vásárlói Támogatás
+### Vásárlói Támogatás {#customer-support}
 
 A szakterületi fókuszod előnye. Mivel az összes vásárlódat fitness stúdió, ugyanazokat a kérdéseket fogod ismételten:
 
@@ -36,7 +36,7 @@ A szakterületi fókuszod előnye. Mivel az összes vásárlódat fitness stúdi
 
 Építs fel tudásbázisodat (ami az 8. tanulmányban kezdődött) ezekre a gyakori kérdésekre. Minden támogatási jegy, ami tudásbázis cikk lehetett, jelzés arra, hogy írnod kell azt a cikket.
 
-### Támogatási Szintek
+### Támogatási Szintek {#support-tiers}
 
 Ahogy növekszel, strukturázzad a támogatást a terv szerint:
 
@@ -48,9 +48,9 @@ Ahogy növekszel, strukturázzad a támogatást a terv szerint:
 
 Az [Support Tickets addon](/addons/support-tickets) segíthet kezelni a támogatási kéréseket a platformon belül.
 
-## Számlázási Működés
+## Számlázási Működés {#billing-operations}
 
-### Ismétlődő Fizetések
+### Ismétlődő Fizetések {#recurring-payments}
 
 Az Ultimate Multisite automatikusan kezeli az ismétlődő számlázást a fizetési gateway-en keresztül. Az általad végzett munka a következőkre vonatkozó monitorozás:
 
@@ -58,7 +58,7 @@ Az Ultimate Multisite automatikusan kezeli az ismétlődő számlázást a fizet
 - **Dunning**: Állíts be automatikus újrapróbázási logikát a fizetési gateway-en keresztül (a Stripe ezt jól kezeli)
 - **Leiratkozási kérések**: Meg kell értened, miért távoznak a vásárlók. Minden leiratkozás visszajelzés.
 
-### Tagságok Kezelése
+### Tagságok Kezelése {#managing-memberships}
 
 Navigálj az **Ultimate Multisite > Memberships** oldalra, hogy:
 
@@ -69,13 +69,13 @@ Navigálj az **Ultimate Multisite > Memberships** oldalra, hogy:
 
 Látogass el a [Managing Memberships](/user-guide/administration/managing-memberships) oldalra a teljes referenciához.
 
-### Számlázás (Invoicing)
+### Számlázás (Invoicing) {#invoicing}
 
 Győződj meg róla, hogy minden fizetéshez helyesen generálódnak a számlák. A vásárlóknak számlázásra lehet szükségük a vállalati kiadások jelentéséhez. Látogass el a [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices) oldalra.
 
-## Platform Karbantartása
+## Platform Karbantartása {#platform-maintenance}
 
-### WordPress és Plugin Frissítései
+### WordPress és Plugin Frissítései {#wordpress-and-plugin-updates}
 
 Mint hálózatadminisztrátor, felelősségleted:
 
@@ -88,14 +88,14 @@ Mint hálózatadminisztrátor, felelősségleted:
 Egy sérült frissítés minden vásárlói oldalt érinti a hálózatodon. Mindig teszteld a frissítéseket először a hálózatod staging másolatán.
 :::
 
-### Biztonság
+### Biztonság {#security}
 
 - Tartsd minden szoftvert frissnek
 - Használj erős jelszavakat és kétfaktoros hitelesítést az adminisztrációs fiókokhoz
 - Figyeld a gyanús tevékenőségekre
 - Készíts egy tervet a biztonsági eseményekre
 
-### Teljesítmény
+### Teljesítmény {#performance}
 
 Ahogy a hálózatod növekszik, figyeld:
 
@@ -105,9 +105,9 @@ Ahogy a hálózatod növekszik, figyeld:
 
 Fontos lehet a caching (oldal-cache, objektum-cache) és CDN bevezetése, ha még nem teheted. A [Cloudflare integration](/user-guide/host-integrations/cloudflare) nagy részét kezeli.
 
-## Vásárlói Életciklus Kezelése
+## Vásárlói Életciklus Kezelése {#customer-lifecycle-management}
 
-### Az Elhagyás Csökkentése (Churn)
+### Az Elhagyás Csökkentése (Churn) {#reducing-churn}
 
 Az elhagyás az a vásárlók százalékossága, akik minden hónap leiratkoznak. Egy előfizetési üzlet számára az elhagyás csökkentése ugyanolyan fontos, mint az új vásárlók megszerzése.
 
@@ -119,7 +119,7 @@ Az elhagyás az a vásárlók százalékossága, akik minden hónap leiratkoznak
 - Olcsóbb alternatívát találtak → erősítsék meg a szakterületi értékét
 - Bezárult az üzemük → elkerülhetetlen, de külön követni kell
 
-### Felülvizsgálat Ösztönzése
+### Felülvizsgálat Ösztönzése {#encouraging-upgrades}
 
 Azok a vásárlók, akik a Starter terven vannak és sikeresek, ösztönözni kell őket, hogy felülvizsgálják:
 
@@ -127,7 +127,7 @@ Azok a vásárlók, akik a Starter terven vannak és sikeresek, ösztönözni ke
 - Küldjön célzott e-maileket, amelyek kiemelik azokat a Growth terv funkcióit, amelyekről tájékozódni kell nekik
 - Mutassa be, mit építettnek a Growth/Pro vásárlók
 
-### Visszafogó Kampányok (Win-Back Campaigns)
+### Visszafogó Kampányok (Win-Back Campaigns) {#win-back-campaigns}
 
 Amikor egy vásárló leiratkozik:
 
@@ -135,30 +135,30 @@ Amikor egy vásárló leiratkozik:
 2. Kezeld a kezdeti aggályát, ha lehetséges
 3. Ajánljon egy kedvezményt visszatéréshez (a leiratkozástól számított 30-60 nap után)
 
-## Heti és Havi Rutinok
+## Heti és Havi Rutinok {#weekly-and-monthly-routines}
 
-### Heti
+### Heti {#weekly}
 
 - Ellenőrizze az új regisztrációkat és a leiratkozásokat
 - Válaszoljon minden nyitott támogatási jegyre
 - Ellenőrizze a platform teljesítményét és online-állapotát
 - Ellenőrizze az összes hibás fizetést
 
-### Havi
+### Havi {#monthly}
 
 - Elemezze az alapvető mutatókat (MRR, elhagyás, új vásárlók, felülvizsgálások)
 - Alkalmazza a WordPress és plugin frissítéseit (staging teszt után)
 - Ellenőrizze és frissítse a tudásbázist a támogatási minták alapján
 - Küldjön ki hírlevelet vagy frissítést a vásárlóknak (új funkciók, tippek, fitness iparági hírek)
 
-### Negyedéves
+### Negyedéves {#quarterly}
 
 - Ellenőrizze az árazást a versenytársakkal és a vásárlói visszajelzésekkel
 - Értékelje a sablon dizájnokat – frissítésre szorulnak?
 - Értékelje a hosting kapacitást – kell-e növelni a méretet?
 - Ellenőrizze és javítsa az onboarding folyamatot az aktivációs adatok alapján
 
-## Amit Építettünk E Tanulmányban
+## Amit Építettünk E Tanulmányban {#what-we-built-this-lesson}
 
 - **Mindennapi monitorozási rutinak** az online-állapot, regisztrációk, fizetések és támogatás tekintetében
 - **Tírszerű támogatási struktúra**, amely a tervszintekhez igazodik

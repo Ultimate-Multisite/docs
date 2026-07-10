@@ -1,34 +1,42 @@
 ---
-title: Siti Web dei Clienti
+title: Siti web dei clienti
 sidebar_position: 5
-_i18n_hash: 3dabb5a4d5a7e06ba545c605a29b2983
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# I siti web dei tuoi clienti (v2)
+# I siti web del tuo cliente (v2) {#your-clients-websites-v2}
 
-Dopo essersi registrati nella tua rete, i tuoi clienti possono accedere al loro cruscotto.
+Dopo essersi registrati sulla tua rete, i tuoi clienti possono accedere alla loro Dashboard.
 
-Oltre alla pagina **Account**, dove possono vedere informazioni importanti riguardanti i loro pagamenti, abbonamenti, domini, limitazioni del piano e altro, hanno anche accesso alla pagina **I miei siti**, dove possono vedere e gestire tutti i loro siti web. Tutto ciò che devono fare è cliccare su *I miei siti* nel loro cruscotto.
+Oltre alla pagina **Account**, dove possono vedere informazioni importanti relative ai loro pagamenti, membership, domini, limitazioni del plan e altro ancora, hanno anche accesso alla pagina **I miei siti**, dove possono vedere e gestire tutti i loro siti web. Tutto ciò che devono fare è cliccare su I miei siti nella loro Dashboard.
 
-![My Sites link in the customer dashboard](/img/admin/customers-list.png)
+![Link I miei siti nella Dashboard del cliente](/img/account-page/my-sites-link.png)
 
-Verranno mostrati tutti i loro siti web, con un pulsante **Gestisci** subito sotto ciascuno di essi. Se vi cliccano, verranno reindirizzati al **cruscotto di questo sito specifico**.
+Verranno mostrati tutti i loro siti web, con un pulsante **Gestisci** proprio sotto ciascuno di essi. Se ci cliccano, verranno reindirizzati alla **Dashboard di questo sito web specifico**.
 
-![My Sites page showing customer websites with Manage buttons](/img/admin/customers-list.png)
+Possono anche vedere quale dei loro siti web è quello **principale** per i plan che consentono loro di avere più di un sito web.
 
-Possono anche vedere quale dei loro siti è il **principale** per i piani che consentono di avere più di un sito web.
+![Pagina I miei siti che mostra i siti web del cliente con pulsanti Gestisci](/img/account-page/my-sites-page.png)
 
-![Account menu link in customer dashboard](/img/admin/customers-list.png)
+Ecco una visualizzazione completa dell’interfaccia di modifica del sito:
 
-Se vogliono cambiare il sito principale, devono andare alla pagina Account cliccando sul menu **Account**.
+![Interfaccia completa di modifica del sito](/img/admin/site-edit-full.png)
 
-![Change Default Site button on account page](/img/admin/customers-list.png)
+Se vogliono cambiare il loro sito web principale, devono andare alla pagina Account cliccando sul menu **Account**.
 
-Poi, devono cliccare su **Cambia sito predefinito**.
+![Link del menu Account nella Dashboard del cliente](/img/account-page/account-menu.png)
 
-![Change Default Site dropdown selection](/img/admin/customers-list.png)
+Puoi anche visualizzare e modificare i dettagli del cliente:
 
-Si aprirà una finestra pop-up. Clicca sulla lista a discesa e seleziona quale sito vuoi rendere il sito principale.
+![Interfaccia di modifica del cliente](/img/admin/customer-edit.png)
 
-![Confirming the default site change](/img/admin/customers-list.png)
+Quindi, dovrebbero cliccare su **Cambia sito predefinito**.
 
-Poi, basta cliccare su **Cambia sito predefinito** e hai finito!
+![Pulsante Cambia sito predefinito nella pagina Account](/img/account-page/change-default-site.png)
+
+Apparirà una finestra pop-up. Clicca sull’elenco a discesa e seleziona quale sito web vuoi rendere il sito web principale.
+
+![Selezione a discesa Cambia sito predefinito](/img/account-page/change-default-site-dropdown.png)
+
+Quindi, clicca semplicemente su **Cambia sito predefinito** e il gioco è fatto!
+
+![Conferma della modifica del sito predefinito](/img/account-page/change-default-site-confirm.png)

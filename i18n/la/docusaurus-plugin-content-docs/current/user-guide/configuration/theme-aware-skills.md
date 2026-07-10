@@ -3,11 +3,11 @@ title: Skills aversae ad temam
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Sensibilia Temae
+# Skills Sensibilia Temae {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 veni cum quattuor novis skills integris in thema, quae automatico ad theme WordPress tuum activum adaptantur. Haec skills praebent consilium et potestates specializat, ad formam et opus tuae thematis et eius attributa temperata sunt.
 
-## Quid Sunt Skills Sensibilia Temae?
+## Quid Sunt Skills Sensibilia Temae? {#what-are-theme-aware-skills}
 
 Skills sensibilia temae sunt bases scientiarum et setum instrumentorum preconfigurata quae assistens AI automatico selectat in base theme WordPress activa situi tuum. Cum themes mutas, skills disponibili assistant automatico actualizantur — nullus configuratio manualis necessaria est.
 
@@ -18,9 +18,9 @@ Ognis skill includit:
 - **Exempla customizationis** — snippets codicis et pattern configurationis ad operationes communes
 - **Meliores practicas** — recomendationes ad architecturam et workflow thematis
 
-## Skills Sensibilia Temae Disponibilia
+## Skills Sensibilia Temae Disponibilia {#available-theme-aware-skills}
 
-### Themes Bloc
+### Themes Bloc {#block-themes}
 
 **Applicatur:** Thematicus qui architecturam bloc-based (Full Site Editing) WordPress usant.
 
@@ -34,7 +34,7 @@ Skill Block Themes praebet consilium de:
 
 **Automatico activatur cum:** Thema activum est thema bloc (supportat feature `block-templates`).
 
-### Themes Classici
+### Themes Classici {#classic-themes}
 
 **Applicatur:** Thematicus WordPress traditionales qui templates PHP et editor classicus usant.
 
@@ -48,7 +48,7 @@ Comprendere hierarchiam themae et tags template
 
 **Automaticiter activatur quando:** Thema activum tuum est classicum (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Applicatur ad:** Sitios ut Kadence Blocks plugin pro design avancato basato blocbus usant.
 
@@ -62,7 +62,7 @@ Scientia Kadence Blocks dē:
 
 **Automaticiter activatur quando:** Kadence Blocks plugin in situo tuo est activus.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Applicatur ad:** Sitios ut Kadence theme pro design basato blocbus et personalizatio usant.
 
@@ -76,15 +76,15 @@ Scientia Kadence Theme dē:
 
 **Automaticiter activatur quando:** Kadence theme est thema activum tuum.
 
-## Quom Scientiae Selectae Sunt
+## Quom Scientiae Selectae Sunt {#how-skills-are-selected}
 
 Assistens automaticiter detectat themam activam et pluginus installatos in omnibus mississibus tuis. Si scientia quae adthem pertinens et disponenda est, ea automatico in contextu assistantui cargatur. Tu non necesse es manualiter scientias activare vel mutare.
 
-### Scientiae Plurales
+### Scientiae Plurales {#multiple-skills}
 
 Si multi-skills ad te situm tu sunt aplicatae (de exemplu, dacă ai atât Kadence Blocks cât și Kadence Theme activ), asistentul are acces la toate abilitățile aplicabile și poate face referințe la îndrumări din fiecare.
 
-### Schimbarea Temelor
+### Schimbarea Temelor {#switching-themes}
 
 Când schimbi tema activă, abilitățile disponibile ale asistentului se actualizează automat în mesajul următor. De exemplu:
 
@@ -92,11 +92,11 @@ Când schimbi tema activă, abilitățile disponibile ale asistentului se actual
 2. Schimbi la o temă clasică.
 3. În mesajul tău următor, abilitatea **Classic Themes** se încarcă automat, iar abilitatea **Block Themes** nu mai este disponibilă.
 
-## Utilizarea Abilităților Conștiente de Temă (Theme-Aware Skills)
+## Utilizarea Abilităților Conștiente de Temă (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Pentru a folosi o abilitate conștientă de temă, descrie pur și simplu ce vrei să faci în interfața chatului. Asistentul va face referințe automat la îndrumarea abilității corespunzătoare.
 
-### Exemple de Prompturi
+### Exemple de Prompturi {#example-prompts}
 
 **Pentru Block Themes:**
 > "Creare o secțiune de eroi cu imagine de fundal și text centrat folosind modelele de bloc."

@@ -3,11 +3,11 @@ title: Ngatur Email Sistem
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ngatur Email Sistem
+# Ngatur Email Sistem {#managing-system-emails}
 
 Ultimate Multisite ngirim sababaraha email sistem pikeun acara saperti konfirmasi pendaftar, bukti bayar, jeung ganti anggota. Anjeun bisa ngubah template email ieu sangkan cocog jeung *brand* anjeun.
 
-## Ningali Email Sistem
+## Ningali Email Sistem {#viewing-system-emails}
 
 Pindah ka **Ultimate Multisite → Settings** terus klik tab **Emails** pikeun ningali pengaturan-pengaturan email.
 
@@ -21,7 +21,7 @@ Anjeun ogé bisa ngedit template email tunggal nganggo *system email editor*:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Ngimpor Template Email Anyar
+## Ngimpor Template Email Anyar {#importing-new-email-templates}
 
 Versi Ultimate Multisite je add-on anyar bisa méré template email anyar. Pikeun ngajaga supaya teu aya konflik, template anyar teu otomatis nambahan — anjeun kudu ngimporna sacara manual.
 
@@ -32,7 +32,7 @@ Kanggo ngimpor template email anyar:
 3. Nyalakan pilihan **Import Emails** pikeun ningali template anu aya
 4. Pilih template anu rék diimpor terus konfirmasi
 
-## Ngatur Ulang Template Email
+## Ngatur Ulang Template Email {#resetting-email-templates}
 
 Lamun anjeun geus ngubah template email je hayang balik deui ka konten *default*, anjeun miboga dua pilihan:
 

@@ -3,18 +3,18 @@ title: Schopnosti konstruktora témat
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Schopnosti pro tvorbu témat: Základní struktura a aktivace block témat
+# Schopnosti pro tvorbu témat: Základní struktura a aktivace block témat {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 představuje dvě výkonné schopnosti, které vám umožní generovat a nasazovat vlastní block témata přímo z chatového rozhraní.
 
-## Přehled
+## Přehled {#overview}
 
 Schopnosti **scaffold-block-theme** a **activate-theme** umožňují agentům:
 - Vytvořit kompletní, připravená k použití block témata na základě vašich specifikací
 - Automaticky aktivovat témata na vašem webu bez nutnosti ruční intervence
 - Vytvořit jednotnou vizuální identitu pomocí průvodních rozhodnutí ohledně designu
 
-## Základní struktura block tématu (Scaffold Block Theme)
+## Základní struktura block tématu (Scaffold Block Theme) {#scaffold-block-theme}
 
 Schopnost **scaffold-block-theme** generuje nové WordPress block téma s kompletní strukturou, včetně:
 
@@ -23,7 +23,7 @@ Schopnost **scaffold-block-theme** generuje nové WordPress block téma s komple
 - Vlastních stylů a variant bloků
 - Metadat a deklarací podpory tématu
 
-### Jak to použít
+### Jak to použít {#how-to-invoke}
 
 V vašem chatu se Superdav AI Agentovi můžete požádat o vygenerování tématu:
 
@@ -38,7 +38,7 @@ Agent provede následující kroky:
 3. Vytvoří všechny potřebné soubory tématu
 4. Připraví téma k aktivaci
 
-### Očekávaný výstup
+### Očekávaný výstup {#expected-output}
 
 Po úspěšném provedení schopnosti uvidíte:
 
@@ -56,11 +56,11 @@ Příklad výstupu:
   Status: Ready to activate
 ```
 
-## Aktivace tématu (Activate Theme)
+## Aktivace tématu (Activate Theme) {#activate-theme}
 
 Schopnost **activate-theme** přepne váš web na nově vytvořené nebo již existující block téma.
 
-### Jak to použít
+### Jak to použít {#how-to-invoke-1}
 
 Po vytvoření základní struktury tématu jej můžete okamžitě aktivovat:
 
@@ -74,7 +74,7 @@ Nebo aktivovat jakékoli existující téma:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Očekávaný výstup
+### Očekávaný výstup {#expected-output-1}
 
 Po úspěšné aktivaci:
 
@@ -92,7 +92,7 @@ Příklad výstupu:
   Note: Check your homepage to verify the layout
 ```
 
-## Pracovní postup: Základní struktura a aktivace
+## Pracovní postup: Základní struktura a aktivace {#workflow-scaffold-and-activate}
 
 Typický pracovní postup kombinuje obě schopnosti:
 
@@ -102,7 +102,7 @@ Typický pracovní postup kombinuje obě schopnosti:
 4. **Aktivace**: "Activate the theme now"
 5. **Ověření**: Navštivte svůj web, abyste potvrdili, že je nový design aktivní
 
-## Designové tokeny a přizpůsobení
+## Designové tokeny a přizpůsobení {#design-tokens-and-customization}
 
 Témata vytvořená základní strukturou používají WordPress designové tokeny (skrze `theme.json`) pro:
 
@@ -114,14 +114,14 @@ Témata vytvořená základní strukturou používají WordPress designové toke
 
 Tyto tokeny jsou centralizovány v souboru `theme.json`, což usnadňuje úpravu celého vašeho designového systému z jednoho souboru.
 
-## Omezení a poznámky
+## Omezení a poznámky {#limitations-and-notes}
 
 - Témata jsou vytvářena v adresáři `/wp-content/themes/` a musí dodržovat konvence pojmenování WordPressu
 - Aktivace vyžaduje vhodné oprávnění na vašem WordPress webu
 - Vlastní PHP kód v tématech je minimální; pro složitější funkčnost používejte pluginy
 - Block témata fungují nejlépe s WordPress 5.9 a novější
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
 **Téma se neobjeví po vytvoření základní struktury**
 - Ověřte, že adresář tématu existuje a má správná oprávnění
@@ -138,7 +138,7 @@ Tyto tokeny jsou centralizovány v souboru `theme.json`, což usnadňuje úpravu
 - Vymažte jakékoli cacheovací pluginy
 - Zkontrolujte, zda vaše verze WordPress podporuje tokeny, které používáte
 
-## Další kroky
+## Další kroky {#next-steps}
 
 Po aktivaci tématu můžete:
 - Použít schopnost **Design System Aesthetics** k úpravě typografie, barev a mezer

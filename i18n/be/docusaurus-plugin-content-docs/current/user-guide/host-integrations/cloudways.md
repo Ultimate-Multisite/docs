@@ -3,18 +3,18 @@ title: Інтыграцыя Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Інтеграцыя з Cloudways
+# Інтеграцыя з Cloudways {#cloudways-integration}
 
-## Агляд
+## Агляд {#overview}
 Cloudways — гэта платформа кіраванага хэастынгу ў «блакавым» (cloud) стылі, якая дазваляе вам размяшчаць сайты WordPress на розных пастаўшчыках хэастынгу, такіх як DigitalOcean, AWS, Google Cloud і інш. Гэтая інтэграцыя дазваляе аўтаматычна синхронізаваць домены і кіраваць сертыфікамі SSL паміж Ultimate Multisite і Cloudways.
 
-## Функцыі
+## Функцыі {#features}
 - Аўтаматычная синхронізацыя доменаў
 - Кіраванне сертыфікамі SSL
 - Падтрымка дадатковых доменаў
 - Валідацыя DNS для сертыфікатаў SSL
 
-## Патрабаванні
+## Патрабаванні {#requirements}
 У наступных канстантах павінны быць вызначаны ў файле `wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ define('WU_CLOUDWAYS_APP_ID', 'your_app_id');
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Інструкцыі па наладзе
+## Інструкцыі па наладзе {#setup-instructions}
 
-### 1. Атримаць API-даныя Cloudways
+### 1. Атримаць API-даныя Cloudways {#1-get-your-cloudways-api-credentials}
 
 1. Увайдзіце ў ваш дашборд Cloudways
 2. Агрэце ў «Account» > «API Keys»
 3. Згенеруйце API-ключ, калі яго яшчэ няма
 4. Скопіруйце свой электронны адрас і API-ключ
 
-### 2. Атримаць ID сервера і паслугі
+### 2. Атримаць ID сервера і паслугі {#2-get-your-server-and-application-ids}
 
 1. У дашбордзе Cloudways зайдзіце ў «Servers»
 2. Выберыце сервер, дзе размяшчаецца ваш WordPress multisite
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Зайдзіце ў «Applications» і выберыце вашу праграму WordPress
 5. App ID бачны ў URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Дадаць канстанты ў wp-config.php
+### 3. Дадаць канстанты ў wp-config.php {#3-add-constants-to-wp-configphp}
 
 Дадайце наступныя канстанты ў ваш файл `wp-config.php`:
 
@@ -70,7 +70,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 ніж, каб пазнаёміцца, чаму гэта за방раняе выкаданне сертыфікатаў SSL для кожнага паслубіна.
 :::
 
-### 4. Актывацыя інтэграцыі
+### 4. Актывацыя інтэграцыі {#4-enable-the-integration}
 
 1. У адмініструванні WordPress зайдзіце ў Ultimate Multisite > Settings
 2. Патрапіце ў тэчку «Domain Mapping»
@@ -78,9 +78,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Актывуйце інтэграцыю Cloudways
 5. Націсніце «Save Changes»
 
-## Як гэта працуе
+## Як гэта працуе {#how-it-works}
 
-### Синхронізацыя доменаў
+### Синхронізацыя доменаў {#domain-syncing}
 
 Калі домен пазначаны ў Ultimate Multisite:
 
@@ -91,7 +91,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 Заўвага: API Cloudways патрабуе адпраўляць поўны спіс доменаў кожны раз, а не проста дадаваць або выдаляць адрозныя домены.
 
-### Кіраванне сертыфікамі SSL
+### Кіраванне сертыфікамі SSL {#ssl-certificate-management}
 
 Пасля синхронізацыі доменаў:
 
@@ -101,7 +101,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 Інтэграцыя заўсёды патрабуе **стандартныя** (не-вайлдкард) сертыфікаты Let's Encrypt ад Cloudways. Калі ў `WU_CLOUDWAYS_EXTRA_DOMAINS` пастаўлены вайлдард-патерн, пачаткова `*.` выдаляецца перад патрабаваннем SSL — сам вайлдард ніколі не ўстаноўваецца гэтай інтэграцыяй. Каб выкарыстоўваць вайлдард-сертыфікат на Cloudways, вам трэба будзе ўсталяваць яго на маноўны лад, але гэта блокуе выкаданне Let's Encrypt для доменаў, пазначаных паслубінамі (глядзіце пастка ніжэй).
 
-## Дадатковыя домены
+## Дадатковыя домены {#extra-domains}
 
 Канстанта `WU_CLOUDWAYS_EXTRA_DOMAINS` дазваляе вам паказаць дадатковыя **zewnшнія** домены, якія заўсёды павінны заставацьмецца ў спісе псеўданняў праграмы Cloudways. Выкарыстоўвайце яго для:
 
@@ -111,14 +111,14 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 **Не** выкарыстоўвайце гэтую канстанту для вайлдард-патерна паддоменаў вашай ўласнай сеткі
 (напрыклад, `*.your-network.com`). Паглядзіце пастка ў SSL для вайлдаў ніжэй.
 
-## Важна — Пастка SSL для вайлдаў
+## Важна — Пастка SSL для вайлдаў {#important--wildcard-ssl-pitfall}
 
 Частае памылка, калі вы выконваеце стандартную наладку Cloudways, — гэта дадаванне вайлдарда, такіх як
 `*.your-network.com`, да `WU_CLOUDWAYS_EXTRA_DOMAINS` або маноўны ўстаноўка вайлдард-сертыфікату Cloudways для гэтага вайлдарда.
 
 **Калі вы гэта зрабіце, Cloudways адмовіцца выкадаць сертыфікаты Let's Encrypt для паслубінавых пазначаных доменаў, якія пазначае Ultimate Multisite.** Cloudways замяняе актыўны сертыфікат SSL на праграме кожны раз, а ўжо існуючы вайлдард-сертыфікат на праграме блокуе выкаданне Let's Encrypt для доменаў паслубінаў, на якое пасіліцераваў інтэграцыя.
 
-### Рэкамендаваная наладка SSL Cloudways для сеткі Ultimate Multisite
+### Рэкамендаваная наладка SSL Cloudways для сеткі Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. У тэчцы **SSL Certificate** праграмы Cloudways ўсталюйце **стандартны сертыфікат Let's Encrypt**, які пакрывае толькі `your-network.com` і `www.your-network.com` — **не** вайлдард.
 2. **Не** кладзіце `*.your-network.com` (або любы патерн паддоменаў вашай сеткі) у
@@ -130,20 +130,20 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 
 Калі паслубінавыя домены валякія без SSL, праверце тэчку SSL Certificate Cloudways. Калі там актыўны вайлдард-сертыфікат, выдаліце яго, перавыканайце стандартны сертыфікат Let's Encrypt толькі для асноўнага домена сеткі (`your-network.com`, `www.your-network.com`) і выдаліце любыя вайлдард-запісы з `WU_CLOUDWAYS_EXTRA_DOMAINS`. Пасля гэтага перавыканайце пазначаванне домена (або пачакайце наступнага) і інтэграцыя зноў пачнецца выкадаваць сертыфікаты для кожнага домена.
 
-## Выяўленне праблем
+## Выяўленне праблем {#troubleshooting}
 
-### Праблемы з падключэннем API
+### Праблемы з падключэннем API {#api-connection-issues}
 - Праверце, што ваш электронны адрас і API-ключ правільныя
 - Праверце, што вашы ID сервера і праграмы правільныя
 - Убедзіцеся, што ваш акаўнт Cloudways мае неабходныя паrawnікі
 
-### Праблемы з сертыфікатам SSL
+### Праблемы з сертыфікатам SSL {#ssl-certificate-issues}
 - Cloudways патрабуе, каб домены мелі валідавыя DNS-запісы, якія вяківаюць да вашага сервера, перш чым выкадаваць сертыфікаты SSL
 - Інтэграцыя валідуе DNS-запісы, перш чым патрабаваць сертыфікаты SSL
 - Калі сертыфікаты SSL не выкадаваюцца, праверце, што вашы домены правільна паказваюць на IP-адрэс вашага сервера
 - **Паслубінавыя пазначаныя домены валякія без SSL?** Праверце тэчку SSL Certificate праграмы Cloudways. Калі актыўны вайлдард-сертыфікат (ўручную ўсталяваны або, які пакрывае `*.your-network.com`), Cloudways не выкадае сертыфікаты Let's Encrypt для адрозных пазначаных паслубінаў. Замяніце яго стандартным сертыфікатам Let's Encrypt, які пакрывае толькі асноўны домен сеткі (`your-network.com`, `www.your-network.com`), і выдаліце любыя вайлдард-запісы з `WU_CLOUDWAYS_EXTRA_DOMAINS`. Пасля гэтага перавыканайце пазначаванне домена (або пачакайце наступнага) і інтэграцыя пачнецца патрабаваць сертыфікаты для кожнага домена.
 
-### Домен не дададзены
+### Домен не дададзены {#domain-not-added}
 - Праверце журналы Ultimate Multisite на наяўнасць памылак
 - Убедзіцеся, што домен яшчэ не дададзены ў Cloudways
 - Убедзіцеся, што ваш план Cloudways падтрымлівае колькасць доменаў, якія вы дадаеце

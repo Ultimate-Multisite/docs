@@ -3,11 +3,11 @@ title: Tswv thiab Txoj Hauj Coj thiab Txoj Txhais
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# ຜະລິດຕະພັນລາຄາໂດເມນ (Domain Products and Pricing)
+# ຜະລິດຕະພັນລາຄາໂດເມນ (Domain Products and Pricing) {#domain-products-and-pricing}
 
 ຜະລິດຕະພັນໂດເມນແມ່ນວິທີທີ່ເຈົ້າຄວບຄຸມລາຄາ, TLDs (Top-Level Domains), ຄວາມເປັນສ່ວນຕົວຂອງ WHOIS, ແລະ ການເລືອກຜູ້ໃຫ້ບໍລິການ. ຜະລິດຕະພັນໂດເມນແຕ່ລະຢ່າງແມ່ນຜະລິດຕະພັນ Multisite Ultimate ມາດຕະຖານທີ່ມີ tab ເພີ່ມເຕີມຊື່ວ່າ **Domain Settings**.
 
-## ການສ້າງຜະລິດຕະພັນໂດເມນ (Creating a domain product)
+## ການສ້າງຜະລິດຕະພັນໂດເມນ (Creating a domain product) {#creating-a-domain-product}
 
 1. ໄປທີ່ **Network Admin › Ultimate Multisite › Products**
 2. ກົດ **Add New**
@@ -17,13 +17,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 ຜະລິດຕະພັນໂດເມນຈະປາກົດຂຶ້ນດ້ວຍແທັກ **Domain** ສີ紫色 ໃນລາຍການຜະລິດຕະພັນ ແລະ ສາມາດກອງໃຊ້ໂດຍໃຊ້ tab **Domain Products**.
 
-## tab Domain settings
+## tab Domain settings {#domain-settings-tab}
 
-### ຜູ້ໃຫ້ບໍລິການ (Provider)
+### ຜູ້ໃຫ້ບໍລິການ (Provider) {#provider}
 
 ເລືອກວ່າເຈົ້າຕ້ອງການໃຫ້ຈົດທະບຽນຜະລິດຕະພັນນີ້ແມ່ນໃຜເປັນຜູ້ຈັດການ. ຄ່າເລີ່ມຕົ້ນແມ່ນ **Default provider** ທົ່ວໂລກທີ່ຕັ້ງໄວ້ໃນການຕັ້ງຄ່າ Domain Seller.
 
-### TLDs ທີ່ຮອງຮັບ (Supported TLDs)
+### TLDs ທີ່ຮອງຮັບ (Supported TLDs) {#supported-tlds}
 
 ປ່ອຍວ່າງໄວ້ເພື່ອສ້າງຜະລິດຕະພັນແບບ **catch-all product** ທີ່ຈະໃຊ້ກັບທຸກ TLDs ທີ່ບໍ່ໄດ້ຖືກຈັບໂດຍຜະລິດຕະພັນອື່ນໆ.
 
@@ -31,7 +31,7 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 
 **ວິທີການຈັບຜະລິດຕະພັນ (How product matching works):** ເມື່ອລູກຄ້າຄົນໜຶ່ງຊອກຫາໂດເມນ, Addon ນີ້ຈະເລືອກຜະລິດຕະພັນທີ່ຈັບໄດ້ສະເພາະທີ່ສຸດ. ຜະລິດຕະພັນທີ່ມີ `.com` ໃນລາຍຊື່ TLD ຂອງມັນ ຈະມີຄວາມສຳຄັນກວ່າຜະລິດຕະພັນແບບ catch-all. ຖ້າບໍ່ມີຜະລິດຕະພັນໃດທີ່ຈັບໄດ້ຕາມ TLD, ຜະລິດຕະພັນແບບ catch-all ຈະຖືກນຳໃຊ້. ຖ້າມີຜະລິດຕະພັນບໍ່ມີ, ການຄົ້ນຫາໂດເມນຈະບໍ່ສະແດງຂຶ້ນມາ.
 
-### ປະເພດການຕັ້ງລາຄາ (Markup type)
+### ປະເພດການຕັ້ງລາຄາ (Markup type) {#markup-type}
 
 ສາມໂໝດນີ້ຄວບຄຸມວິທີທີ່ລາຄາຂາຍຂອງເຈົ້າຖືກຄິດໄລ່ຈາກຕົ້ນທຶນສົ່ງຕໍ່ (wholesale cost):
 
@@ -41,13 +41,13 @@ _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 | **Fixed markup** | ເພີ່ມຈຳນວນເງິນທີ່ຕັ້ງໄວ້ແບບຄົງທີ່. ການເພີ່ມ markup $5 ໃນໂດເມນທີ່ມີຕົ້ນທຶນສົ່ງຕໍ່ $10 ຈະໄດ້ລາຄາ $15. |
 | **Fixed price** | ບໍ່ສົນໃຈຕົ້ນທຶນສົ່ງຕໍ່ເລີຍ. ຈະເກັບຄ່າຕາມຈຳນວນທີ່ເຈົ້າໃສ່ເທົ່ານັ້ນສະເໝີ. |
 
-### ລາຄາແນະນຳ (Introductory pricing)
+### ລາຄາແນະນຳ (Introductory pricing) {#introductory-pricing}
 
 **Discounted First-Year Price Offer**
 
 You can set a special **Introductory price** (the first year's price) that is different from the regular **Renewal price** (for year 2 and beyond). Khawm customer will see both prices when they are checking out, so they know what to expect when it comes time to renew.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 This setting controls whether we offer WHOIS privacy protection for domains registered through this product.
 
@@ -61,7 +61,7 @@ For Namecheap, WHOIS privacy uses WhoisGuard (which is always free). For OpenSRS
 
 ---
 
-## TLD import and sync
+## TLD import and sync {#tld-import-and-sync}
 
 Domain products will show real-time wholesale prices that are pulled from the provider you connected. To make this work, you need to import the TLDs first.
 
@@ -72,7 +72,7 @@ After syncing, go to any domain product's Domain Settings tab and use the TLD pi
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Domain renewals are connected to the customer's membership status:
 
@@ -92,7 +92,7 @@ Email template IDs for domain lifecycle events:
 
 ---
 
-## Admin: མུ་མཐུད་ཀྱི་Domain བསྐྲུན་པ་ (Manual domain registration)
+## Admin: མུ་མཐུད་ཀྱི་Domain བསྐྲུན་པ་ (Manual domain registration) {#admin-manual-domain-registration}
 
 ग्राहकགིས་checkout མ་འགྲོ་བར་ཁོང་གི་ལས་ཀ་ནང་Domain ཞིག་བསྐྲུན་དགོས་ཚེ་འདི་ལྟར་လုပ်ဆောင်နိုင်ပါတယ်:
 

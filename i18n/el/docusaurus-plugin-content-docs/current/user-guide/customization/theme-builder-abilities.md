@@ -3,18 +3,18 @@ title: Δυνατότητες του Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Ικανότητες Theme Builder: Scaffold και Ενεργοποίηση Block Themes
+# Ικανότητες Theme Builder: Scaffold και Ενεργοποίηση Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Το Superdav AI Agent v1.12.0 εισάγει δύο ισχυρές δυνατότητες που σας επιτρέπουν να δημιουργείτε και να triển khaiτε προσαρμοσμένα block themes απευθείας από τη διεπαφή chat.
 
-## Γενική Επισκόπηση
+## Γενική Επισκόπηση {#overview}
 
 Οι δυνατότητες **scaffold-block-theme** και **activate-theme** επιτρέπουν στους agents να:
 - Δημιουργούν πλήρεις block themes έτοιμα για παραγωγή, βάσει των προδιαγραφών σας
 - Ενεργοποιούν αυτόματα τα themes στο site σας χωρίς χειροκίνηczną παρέμβαση
 - Δημιουργούν ενιαίες οπτικές ταυτότητες μέσω καθοδηγούμενων αποφάσεων σχεδιασμού
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Η δυνατότητα **scaffold-block-theme** δημιουργεί ένα νέο WordPress block theme με πλήρη δομή theme, συμπεριλαμβανομένων:
 
@@ -23,7 +23,7 @@ _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 - Προσαρμοσμένων στυλ και παραλλαγών blocks
 - Μεταδεδομένων και δηλώσεων υποστήριξης του theme
 
-### Πώς να το χρησιμοποιήσετε
+### Πώς να το χρησιμοποιήσετε {#how-to-invoke}
 
 Στο chat σας με το Superdav AI Agent, μπορείτε να ζητήσετε τη δημιουργία ενός theme:
 
@@ -38,7 +38,7 @@ sans-serif typography, and a professional layout"
 3. Δημιουργήσει όλα τα απαραίτητα αρχεία του theme
 4. Προετοιμάσει το theme για ενεργοποίηση
 
-### Αναμενόμενη Έξοδος
+### Αναμενόμενη Έξοδος {#expected-output}
 
 Όταν η δυνατότητα εκτελεστεί επιτυχώς, θα δείτε:
 
@@ -56,11 +56,11 @@ sans-serif typography, and a professional layout"
   Status: Ready to activate
 ```
 
-## Activate Theme
+## Activate Theme {#activate-theme}
 
 Η δυνατότητα **activate-theme** αλλάζει το site σας σε ένα πρόσφατα scaffolded ή ήδη υπάρχον block theme.
 
-### Πώς να το χρησιμοποιήσετε
+### Πώς να το χρησιμοποιήσετε {#how-to-invoke-1}
 
 Μετά το scaffolding ενός theme, μπορείτε να το ενεργοποιήσετε αμέσως:
 
@@ -74,7 +74,7 @@ sans-serif typography, and a professional layout"
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Αναμενόμενη Έξοδος
+### Αναμενόμενη Έξοδος {#expected-output-1}
 
 Όταν η ενεργοποίηση είναι επιτυχής:
 
@@ -92,7 +92,7 @@ sans-serif typography, and a professional layout"
   Note: Check your homepage to verify the layout
 ```
 
-## Workflow: Scaffold και Activate
+## Workflow: Scaffold και Activate {#workflow-scaffold-and-activate}
 
 Ένας τυπικός workflow συνδυάζει και τις δύο δυνατότητες:
 
@@ -102,7 +102,7 @@ sans-serif typography, and a professional layout"
 4. **Ενεργοποίηση**: "Activate the theme now"
 5. **Επαλήθευση**: Επισκέπ•εστε το site σας για να επιβεβαιώσετε ότι το νέο design είναι ενεργό
 
-## Design Tokens και Προσαρμογή
+## Design Tokens και Προσαρμογή {#design-tokens-and-customization}
 
 Τα themes που scaffolded χρησιμοποιούν τα design tokens του WordPress (μέσω του `theme.json`) για:
 
@@ -114,14 +114,14 @@ sans-serif typography, and a professional layout"
 
 Αυτοί οι tokens είναι κεντρικοί στο `theme.json`, καθιστώντας εύκολο τον προσαρμόστετε ολόκληρο το design system σας από ένα μόνο αρχείο.
 
-## Περιορισμοί και Σημειώσεις
+## Περιορισμοί και Σημειώσεις {#limitations-and-notes}
 
 - Τα themes scaffolded βρίσκονται στο `/wp-content/themes/` και πρέπει να ακολουθούν τις ονομαστικές συνθήκες του WordPress
 - Η ενεργοποίηση απαιτεί κατάλληλα δικαιώματα στο WordPress site σας
 - Ο προσαρμοσμένος κώδικας PHP στα themes είναι ελάχιστος· χρησιμοποιήστε plugins για σύνθετες λειτουργίες
 - Τα block themes λειτουργούν καλύτερα με το WordPress 5.9 και νεότερες εκδόσεις
 
-## Αντιμετώπιση Προβλημάτων
+## Αντιμετώπιση Προβλημάτων {#troubleshooting}
 
 **Το theme δεν εμφανίζεται μετά το scaffolding**
 - Επιβεβαιώστε ότι το directory του theme υπάρχει και έχει τα σωστά δικαιώματα
@@ -138,7 +138,7 @@ sans-serif typography, and a professional layout"
 - Καθαρίστε τυχόν caching plugins
 - Ελέγξτε ότι η έκδοση WordPress σας υποστηρίζει τα tokens που χρησιμοποιείτε
 
-## Επόμενα Βήματα
+## Επόμενα Βήματα {#next-steps}
 
 Μετά την ενεργοποίηση του theme σας, μπορείτε να:
 - Χρησιμοποιήσετε την **Design System Aesthetics skill** για να βελτιώσετε τη typografia, τα χρώματα και τις αποστάσεις

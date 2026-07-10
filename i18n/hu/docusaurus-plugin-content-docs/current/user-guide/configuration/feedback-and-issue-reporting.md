@@ -3,11 +3,11 @@ title: Ügyfél visszajelzése és problémajelzés
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Ügyfél visszajelzése és problémajelentés
+# Ügyfél visszajelzése és problémajelentés {#customer-feedback--issue-reporting}
 
 A Gratis AI Agent v1.5.0 bevezet egy beépített visszajelzési és problémajelentési rendszert, amely lehetővé teszi az end-user-ek számára, hogy jelöljék ki a nem hasznos válaszokat, és közvetlenül a chat felületéről jelentek problémákat. Ez a rendszer magában foglalja a hozzájáruláskezelést, egy automatizált jelentési parancsot, és AI-segített szűrést (triage) a háttérben.
 
-## A "Nem tetszett" gomb
+## A "Nem tetszett" gomb {#thumbs-down-button}
 
 Az AI asszisztens által küldött minden üzenethez egy **nem tetszett** (👎) gomb jelenik meg. Amikor egy felhasználó rákattint rá, jelölheti ki a válaszát mint nem hasznos vagy helytelen.
 
@@ -15,7 +15,7 @@ Az AI asszisztens által küldött minden üzenethez egy **nem tetszett** (👎)
 - Kattintással megnyílik a **Visszajelzési Hozzájárulás Modálja**.
 - A visszajelzés az üzenetkülderi szálhoz és az adott üzenethez társul.
 
-## Visszajelzési Hozzájárulás Modál
+## Visszajelzési Hozzájárulás Modál {#feedback-consent-modal}
 
 Amikor egy felhasználó rákattint a nem tetszett gombra, adatküldés előtt egy hozzájárulásmodál jelenik meg. A modál:
 
@@ -26,13 +26,13 @@ Amikor egy felhasználó rákattint a nem tetszett gombra, adatküldés előtt e
 
 Nincs visszajelzés rögzítve, amíg a felhasználó nem erősíti meg ezt kifejezetten.
 
-## Automatikus Visszajelzési Banner
+## Automatikus Visszajelzési Banner {#auto-prompt-feedback-banner}
 
 Egy beszélgetés végén az asszisztens egy **automatikus visszajelzési banneret** jeleníthet meg – egy nem zavaró üzenetet, amely megkérdezi, hasznos volt-e a munkamenet.
 
 Ez a banner automatikusan jelenik meg a beszélgetés hosszától és az eredményeinek heurisztikai értéke alapján. Ugyanaz a visszajelzési folyamot használja, mint a nem tetszett gomb. A felhasználók bezárhatják a banneret anélkül, hogy visszajelzést adnának.
 
-## `/report-issue` Slash Parancs
+## `/report-issue` Slash Parancs {#report-issue-slash-command}
 
 A felhasználók közvetlenül a chat input mezőjébe írva a `/report-issue` parancsot tudják elindítani a visszajelzési folyamatot. Ez a parancs:
 
@@ -42,7 +42,7 @@ A felhasználók közvetlenül a chat input mezőjébe írva a `/report-issue` p
 
 Az `/report-issue` parancs minden chat módban elérhető (inline, floating widget, full-screen).
 
-## AI-Segített Szűrés (Triage)
+## AI-Segített Szűrés (Triage) {#ai-assisted-triage}
 
 A küldött visszajelzéseket egy AI szűrési réteg fogadja, amely:
 

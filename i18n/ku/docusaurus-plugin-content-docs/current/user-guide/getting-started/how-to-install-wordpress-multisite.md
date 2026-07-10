@@ -3,7 +3,7 @@ title: چۆنی چۆنی WordPress Multisite دامەزرێنیت
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# چۆن WordPress Multisite دامەسازم؟
+# چۆن WordPress Multisite دامەسازم؟ {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite به شما اجازه دەدات یەک جۆر لە سایتەکان لەسەر جێبەجێکردنی تاکێک هەبێت. ئەمە تایبەتمەندییەکی ناوخۆییە، بەڵام بە شێوەی پیش‌تەکی چالاک نییە.
 
@@ -95,9 +95,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 پاش پڕکردنەوەی فیلدەکان، बटونی "Add site" (زیادکردنی سایت) بگرە. دوای دروستکردنی subsite نوێ، بگواشبە و بەکاربهێنە بۆ ئەوەی دڵنیا بیت کە subsite کار دەکات.
 
-## کێشەکانی باو وەک ئەمە هەیە:
+## کێشەکانی باو وەک ئەمە هەیە: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. دەتوانم سایتە نوێ دروست بکەم بەڵام دەتوانیت بەکاریان بهێنیت (access نەکات).
+### 1. دەتوانم سایتە نوێ دروست بکەم بەڵام دەتوانیت بەکاریان بهێنیت (access نەکات). {#common-problems}
 
 ئەگەر subdomain هەڵبژاردووە، پێویستە wildcard subdomains بۆ تۆڕی Multisite یەکەت ویستەپێکە.
 

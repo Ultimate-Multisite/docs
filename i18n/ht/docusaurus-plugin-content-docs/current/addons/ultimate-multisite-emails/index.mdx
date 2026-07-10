@@ -1,0 +1,197 @@
+---
+title: Imèl
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails {#emails}
+
+Addon Ultimate Multisite: Emails pèmèt pwopriyetè rezo yo mete an sèvis epi jere kont imel kliyan yo ansanm ak sit ak abònman yo. Vèsyon 1.1.0 ajoute jesyon kont imel pou kliyan yo, koneksyon yon sèl fwa pou webmail, sipò forwarder CyberPanel, ak amelyorasyon pou mete sèvis an plas pandan checkout.
+
+## Karakteristik Kle {#key-features}
+
+* **Widget kont imel kliyan**: Kliyan yo ka kreye epi jere mailbox yo nan paj Account yo apre yo gen yon abònman imel aktif.
+* **Webmail SSO ak lyen majik**: Kliyan yo ka louvri webmail dirèkteman nan paj Account la ak otantifikasyon yon sèl klik lè founisè a sipòte sa.
+* **Chanjman modpas**: Kliyan ak administratè yo ka mete modpas mailbox yo ajou nan widget jesyon imel la.
+* **Mete dwa aksè an plas nan checkout**: Checkout kreye abònman imel la, lye li ak domèn sit kliyan an, epi fè zouti mailbox paj Account yo disponib.
+* **Forwarder CyberPanel**: Rezo ki mache ak CyberPanel yo ka kreye epi jere forwarder imel kòm pati nan koule sèvis imel la.
+* **Anviwònman ki konnen founisè a**: Paj anviwònman an filtre founisè yo pou entegrasyon aktif, konfigire yo pou administratè yo sèlman wè opsyon ki ka itilize.
+
+## Kondisyon {#requirements}
+
+* Ultimate Multisite 2.0.0 oswa pi wo
+* Enstalasyon WordPress Multisite
+* Omwen yon entegrasyon founisè imel ki konfigire
+* Kalifikasyon API founisè ak pèmisyon pou kreye mailbox, chanje modpas, epi bay lyen aksè webmail kote sa sipòte
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye plugin yo nan `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktive addon nan sou rezo a soti nan **Plugins** nan admin rezo WordPress la.
+3. Ale nan **Ultimate Multisite** > **Settings** epi louvri anviwònman imel addon nan.
+4. Aktive entegrasyon founisè imel ou vle kliyan yo itilize yo.
+5. Sove anviwònman yo, apre sa teste kreyasyon kont ak yon kliyan ki pa an pwodiksyon oswa yon sit staging.
+
+## Kijan Koule Vant Imel la Mache {#how-the-email-seller-flow-works}
+
+Vant imel gen de kouch separe:
+
+1. **Dwa aksè** — yon pwodwi/abònman imel Ultimate Multisite ki di kliyan an gen dwa itilize imel pou yon domèn sit, founisè, kota, ak limit kont espesifik.
+2. **Kreyasyon mailbox** — vrè mailbox founisè a, tankou `info@example.com`, ki kreye lè kliyan an oswa yon administratè rezo chwazi pati lokal la ak modpas la.
+
+Pandan checkout, addon nan kreye oswa aktive **abònman imel** la epi anrejistre domèn sit kliyan an ak founisè a sou abònman sa a. Li pa devine yon non mailbox oswa modpas. Apre acha a fini epi kontèks sit/domèn nan egziste, kliyan an ka louvri paj Account la epi kreye non mailbox yo vle yo.
+
+Sa vle di yon koule nòmal pou kliyan se:
+
+1. Kliyan an achte yon plan sit epi ajoute yon pwodwi imel pandan checkout.
+2. Ultimate Multisite kreye abònman sit la ak dezyèm abònman imel la.
+3. Addon Emails la lye abònman imel la ak domèn sit kliyan an epi ak founisè a.
+4. Kliyan an louvri **Account** nan Dashboard yo.
+5. Panèl **Kont Imel** la parèt pou abònman imel aktif sa a.
+6. Kliyan an klike **Kreye Account**, antre pati lokal la tankou `info`, mete yon modpas, epi addon nan kreye `info@their-domain.com` lakay founisè ki konfigire a.
+
+## Konfigire yon Pwodwi Imel {#configure-an-email-product}
+
+Kreye yon pwodwi imel pou chak pake imel ou vle vann oswa bay gratis. Si ou nouvo nan konfigirasyon pwodwi, kòmanse ak [Kreye Premye Pwodwi Abònman Ou](../../user-guide/configuration/creating-your-first-subscription-product) epi retounen isit la pou anviwònman espesifik imel yo.
+
+1. Ale nan **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Mete **Kalite Pwodwi** sou **Imel**.
+3. Konfigire pri a. Itilize yon pri renouvlab peye pou yon plan ou vann, oswa mete pwodwi a gratis/pri zewo si li ta dwe yon plan imel konplemantè.
+4. Louvri seksyon **Anviwònman Imel** la.
+5. Chwazi **Founisè Imel** ki konfigire a.
+6. Mete **Kantite Kont**, **Kota Depo (MB)**, limit alyas, forwarder, ak autoresponder jan sa nesesè.
+7. Sove pwodwi a.
+
+Se sèlman founisè ki aktive epi ki konplètman konfigire sou paj **Integrations** lan ki parèt nan selektè founisè a. Si selektè a vid, konfigire epi teste founisè a anvan.
+
+## Ajoute Imel nan Checkout {#add-email-to-checkout}
+
+Pwodwi imel yo anjeneral ofri kòm add-on pou yon plan sit. Gade [Fòm Checkout](../../user-guide/configuration/checkout-forms) pou koule travay jeneral editè checkout la.
+
+1. Kreye oswa modifye plan sit kliyan yo achte an premye a.
+2. Ajoute pwodwi imel la kòm yon add-on/order bump ki disponib pou koule checkout sa a.
+3. Konfime fòm checkout la toujou gen chan sit nòmal obligatwa yo, espesyalman chan URL/domèn sit la.
+4. Fè yon checkout tès ak yon kliyan staging.
+5. Apre checkout, louvri [paj Account](../../user-guide/client-management/account-page) kliyan an epi konfime panèl **Kont Imel** la parèt.
+
+Domèn imel la pran nan domèn sit kliyan an. Kliyan yo pa antre domèn imel la nan etap pwodwi imel la.
+
+## Jesyon Imel Kont Kliyan {#customer-account-email-management}
+
+Vèsyon 1.1.0 ajoute yon widget jesyon imel nan paj Account kliyan an. Itilize li lè kliyan yo ta dwe fè kreyasyon ak antretyen mailbox pou pwòp sit yo poukont yo.
+
+Soti nan paj Account la, kliyan yo ka:
+
+1. Gade kont imel ki konekte ak abònman imel/domèn sit aktyèl yo.
+2. Kreye yon nouvo mailbox lè pwodwi imel yo pèmèt kont anplis.
+3. Chanje modpas yon mailbox ki deja egziste.
+4. Louvri founisè webmail ki sipòte yo atravè SSO oswa yon koneksyon lyen majik.
+
+Widget la itilize sistèm kouran paj Account Ultimate Multisite la, kidonk aksyon yo limite ak kontèks kont kliyan an ap gade a. Sa anpeche kliyan yo jere kont imel ki fè pati yon lòt abònman oswa sit.
+
+Si kliyan an pa wè panèl email la, tcheke yo gen yon **manm pwodwi Email ki aktif**, ke manm nan te lye ak yon domèn sit, epi ke pwodwi a gen yon founisè ki konfigire.
+
+## Bay yon Kliyan yon Plan Email Gratis {#giving-a-customer-a-free-email-plan}
+
+Pou bay yon kliyan email san fè yo peye, bay **dwa email** la an premye, epi kreye mailbox la oswa kite kliyan an kreye li.
+
+Opsyon yo rekòmande:
+
+* **Kreye yon pwodwi email gratis**: mete pri pwodwi email la gratis/zero, epi ajoute yon manm aktif pou kliyan sa a nan **Ultimate Multisite > Memberships > Add Membership**. Chwazi pwodwi email la ak kliyan an. Manm gratis yo dire pou tout lavi jiskaske yo chanje oswa anile. Si manm email la sipoze swiv yon sit ki egziste deja, asire w li lye ak kontèks sit/domèn sa a.
+* **Sèvi ak yon rabè 100% oswa yon lyen checkout gratis**: kite kliyan an pase nan checkout pou Ultimate Multisite kreye manm email la ak dosye peman an otomatikman.
+* **Admin kreye yon mailbox**: ale nan **Ultimate Multisite > Email Accounts > Add Email Account** pou kreye yon mailbox espesifik kay founisè a pou yon kliyan. Sa itil pou sipò, men li pa ranplase manm pwodwi email la ki alimante zouti paj account oto-sèvis kliyan an.
+
+Si ou vle kliyan an jere mailbox la yo menm depi paj account la, asire w yo gen yon manm email aktif pou domèn nan. Yon mailbox founisè ki kreye manyèlman san manm sa a ka egziste, men kliyan an ka pa wè panèl email oto-sèvis la pou li.
+
+## Account Admin Kreye ak "Pa Gen Nimewo Kòmann" {#admin-created-accounts-and-no-order-number}
+
+Paj admin **Email Accounts** la kreye oswa modifye yon mailbox founisè. Se pa premye etap pou vann oswa bay yon plan email.
+
+Lè w ap modifye yon account email, chan **Membership** la chèche manm Ultimate Multisite ki egziste deja dapre nimewo referans/kòmann yo. Si ou eseye asiyen yon account anvan kliyan an gen yon manm email, ka pa gen okenn nimewo kòmann pou chwazi.
+
+Sèvi ak lòd operasyon sa a pito:
+
+1. Kreye oswa jwenn manm email kliyan an. Pou acha, checkout fè sa. Pou yon plan gratis kòm kado, kreye manm nan manyèlman nan [Memberships](../../user-guide/administration/managing-memberships) oswa voye kliyan an pase nan yon checkout gratis.
+2. Konfime manm nan aktif epi li sèvi ak yon pwodwi Email.
+3. Konfime manm email la lye ak domèn/founisè sit la.
+4. Kreye mailbox la depi paj account kliyan an oswa nan **Ultimate Multisite > Email Accounts**.
+5. Si sa nesesè, modifye dosye mailbox la epi asiyen kliyan an, manm nan, ak sit la.
+
+Si ou sèlman bezwen kreye yon mailbox founisè pou kliyan an epi ou pa bezwen jesyon oto-sèvis sou paj account la, account admin kreye a ka sifi. Si ou vle kliyan an wè li epi jere li nan Ultimate Multisite, kreye manm email la tou.
+
+## Webmail SSO ak Koneksyon Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO bay kliyan yo yon aksyon dirèk **Open webmail** depi paj account la. Lè founisè aktif la sipòte li, addon an mande yon URL aksè kout dire epi li redirije kliyan an nan webmail san mande yo kopye kalifikasyon mailbox yo.
+
+Konpòtman founisè yo ka varye:
+
+* Founisè ki gen API SSO natif natal ka kreye yon sesyon webmail otantifye dirèk.
+* Founisè ki gen sipò magic-link ka jenere yon lyen koneksyon ki gen limit tan.
+* Founisè san sipò SSO oswa magic-link ta dwe toujou montre detay mailbox yo ak aksyon jesyon modpas yo, men pa gen bouton webmail yon sèl klik.
+
+Aktive aksè webmail sèlman pou founisè kote ou te konfigire kalifikasyon API obligatwa yo. Si aksyon an manke pou yon founisè, an premye konfime founisè a aktif, konfigire, epi li sipòte lyen koneksyon webmail.
+
+## Pwovizyonman Checkout {#checkout-provisioning}
+
+Addon an pwovizyone **kontèks manm** email la pandan checkout. Li anrejistre founisè a, limit account la, quota a, ak domèn sit la pou kliyan yo ka kreye pwòp non mailbox yo depi paj account la apre acha.
+
+Deplwaman rekòmande:
+
+1. Konfigire founisè a ak limit pwodwi yo anvan ou ofri pwodwi email la.
+2. Teste yon acha ak yon pwodwi staging epi konfime manm email la kreye.
+3. Revize paj account kliyan an pou konfime widget **Email Accounts** la parèt pou domèn nan.
+4. Kreye yon mailbox tès depi widget la.
+5. Konfime aksyon chanjman modpas ak webmail anvan ou aktive koule a pou pwodwi pwodiksyon yo.
+
+Si pwovizyonman echwe, account kliyan an ak manm nan ka toujou egziste pandan manm email la oswa mailbox founisè a mande swivi administratè. Tcheke jounal aktivite Ultimate Multisite yo ak jounal founisè a anvan ou reeseye.
+
+## Forwarders Email CyberPanel {#cyberpanel-email-forwarders}
+
+Pou rezo ki apiye sou CyberPanel, vèsyon 1.1.0 ajoute sipò pou forwarder email. Sèvi ak forwarders lè kliyan yo bezwen adrès tankou `info@customer-domain.test` pou redirije lapòs nan yon lòt inbox san kreye yon mailbox konplè.
+
+Anvan ou ofri forwarders, konfime entegrasyon CyberPanel la konfigire epi aksesib. Gade gid [Entegrasyon CyberPanel](../../user-guide/administration/cyberpanel-integration) pou host, username, password, ak konstan package obligatwa yo.
+
+## Chanjman {#changelog}
+
+### Vèsyon 1.1.0 - Lage nan dat 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Nouvo: Webmail SSO ak koneksyon magic-link — kliyan yo ka jwenn aksè nan webmail dirèkteman depi Account yo ak otantifikasyon yon sèl klik.
+* Nouvo: Fonksyonalite chanje modpas ajoute nan widget jesyon kont imèl la.
+* Nouvo: Sipò pou CyberPanel email forwarder.
+* Nouvo: Widget jesyon imèl sou paj Account kliyan an pou kreyasyon ak jesyon kont an sèvis pwòp tèt yo.
+* Nouvo: Pwovizyònman dwa pou kont imèl kliyan entegre nan koule checkout la.
+* Koreksyon: Hook widget paj Account mete ajou pou itilize modèl enskripsyon UMS ki kòrèk la.
+* Koreksyon: Fòm Create Account ranplase ak vanilla JS epi ak pwodiksyon dokiman HTML konplè ki kòrèk.
+* Koreksyon: Widget jesyon imèl la kounye a itilize sistèm currents UMS la pou paj Account admin yo.
+* Koreksyon: Fòm kreyasyon kont imèl admin lan gen ladan chan modpas epi li itilize Email_Account_Manager.
+* Koreksyon: Spam mòso bwa pou chak demann retire nan inisyalizasyon Email_Account_Manager.
+* Amelyore: Paj Settings la kounye a filtre pou montre sèlman founisè imèl ki aktif epi ki konfigire.
+
+## Kesyon Yo Poze Souvan {#frequently-asked-questions}
+
+### Èske kliyan yo ka kreye pwòp kont imèl yo? {#can-customers-create-their-own-email-accounts}
+
+Wi. Lè kliyan an gen yon abònman imèl aktif pou yon domèn epi pwodwi a pèmèt kont adisyonèl, kliyan yo ka kreye epi jere pwòp bwat lèt yo depi paj Account la.
+
+### Èske chak founisè sipòte webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Non. Sipò SSO ak magic-link depann de founisè imèl aktif la. Founisè ki pa gen yon access-link API ka toujou sipòte kreyasyon bwat lèt ak chanjman modpas.
+
+### Èske administratè yo ka kreye kont imèl pou kliyan yo? {#can-administrators-create-email-accounts-for-customers}
+
+Wi. Administratè yo ka kreye kont imèl depi koòdone admin lan, enkli fikse premye modpas la lè y ap kreye kont lan. Pou jesyon kliyan an sèvis pwòp tèt yo, asire w tou kliyan an gen yon abònman imèl aktif pou domèn nan.
+
+### Èske mwen ka bay yon kont imèl gratis? {#can-i-give-an-email-account-away-for-free}
+
+Wi. Kreye yon pwodwi Email gratis/pri zewo epi ajoute li kòm yon abònman aktif pou kliyan an, oswa kite kliyan an konplete checkout ak yon rabè 100%. Apre abònman imèl la egziste, kliyan an oswa yon administratè ka kreye bwat lèt reyèl la.
+
+### Poukisa lè w ap asiyen yon kont imèl li mande yon nimewo lòd? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Chan Membership la chèche yon abònman Ultimate Multisite ki egziste deja selon nimewo referans/lòd li. Si kliyan an pa t achte yon pwodwi imèl epi ou pa t kreye yon abònman imèl manyèlman, pa gen okenn abònman/lòd imèl pou asiyen. Kreye abònman imèl la an premye, epi apre sa kreye oswa asiyen bwat lèt la.
+
+### Èske forwarders yo menm ak bwat lèt yo? {#are-forwarders-the-same-as-mailboxes}
+
+Non. Yon bwat lèt estoke lapòs epi li gen enfòmasyon koneksyon. Yon forwarder redirije lapòs nan yon lòt adrès epi li pa bay yon inbox separe.

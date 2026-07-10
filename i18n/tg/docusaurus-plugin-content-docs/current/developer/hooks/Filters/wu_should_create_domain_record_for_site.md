@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: Филтр - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# Филтр: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+Филтр мекунад, ки оё Ultimate Multisite бояд сабти доменро барои сайти навтаъсис эҷод кунад.
+
+Ин филтрро барои пешгирӣ ё ба таъхир гузоштани эҷоди автоматии сабти домен барои сайтҳое истифода баред, ки домени асосии муштараки checkout-form, мизбони дохилӣ ё доменеро истифода мебаранд, ки ҳамгироии дигар онро алоҳида идора мекунад.
+
+## Параметрҳо {#parameters}
+
+| Ном | Навъ | Тавсиф |
+|------|------|-------------|
+| $create | `bool` | Оё сабти домен бояд эҷод шавад. |
+| $site | `WP_Site` | Объекти сайти навтаъсис. |
+
+### Аз версияи {#since}
+
+- 2.13.0
+
+### Манбаъ {#source}
+
+Дар `inc/functions/domain.php` муайян шудааст.
+
+
+## Бармегардонад {#returns}
+
+Қимати булӣ, ки нишон медиҳад оё сабти домен эҷод карда шавад.

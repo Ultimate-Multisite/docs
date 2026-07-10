@@ -3,11 +3,11 @@ title: Domēna produkti un cenas
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeni produkti un cenām
+# Domeni produkti un cenām {#domain-products-and-pricing}
 
 Domeni produkti ir to, kā jūs kontrolējat cenu, TLD (Top-Level Domain), WHOIS privātumu un pakalpojuma izvēli. Katrs domēns produkts ir standarta Multisite Ultimate produkts ar papildu **Domain Settings** (Domānu iestatījumi) tabu.
 
-## Domena produkta izveide
+## Domena produkta izveide {#creating-a-domain-product}
 
 1. Navigējiet uz **Network Admin › Ultimate Multisite › Products**.
 2. Nospressiet **Add New** (Pievienot jaunu).
@@ -17,13 +17,13 @@ Domeni produkti ir to, kā jūs kontrolējat cenu, TLD (Top-Level Domain), WHOIS
 
 Domeni produkti parādās ar purpu **Domain** (Domāns) zīmiju sarakstā un var filtrēti izmantojot **Domain Products** (Domānu produkti) tabu.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Piegavinātājs (Provider)
+### Piegavinātājs (Provider) {#provider}
 
 Izvēlieties, kurš registrujums pārvaldīs šo produktu reģistrāciju. Default ir globālais **Default provider** (Default piegavinātājs), kas iestatīts Domain Seller (Domānu pārdevēja) iestatījumos.
 
-### Atbalstītie TLD (Supported TLDs)
+### Atbalstītie TLD (Supported TLDs) {#supported-tlds}
 
 Ļaujiet palikt tukšs, lai izveidotu **catch-all product** (vispārējo produktu), kas piemērots visiem TLD, kas nav atbilstoši citam produktam.
 
@@ -31,7 +31,7 @@ Iestatīt comma aršķirtie sarakstus TLD (piemēram: `.com, .net, .org`), lai i
 
 **Kā darbojas produktu atbilstošums:** Kad kliente meklē domēnu, addon izvēlas visspēcīgāk atbilstošo produktu. Produktam ar `.com` TLD sarakstā ir priekšrocība pret catch-all produktu. Ja nepiemērojas nekāds TLD-specifisks produkts, tiek izmantots catch-all. Ja nav produktus, domānu meklēšana neparādās.
 
-### Apjaunojuma veids (Markup type)
+### Apjaunojuma veids (Markup type) {#markup-type}
 
 Trīs režīmi kontrolē, kā jūsu veikalāc cena tiek aprēķināta no tūlītējā（wholesale）kostas:
 
@@ -41,11 +41,11 @@ Trīs režīmi kontrolē, kā jūsu veikalāc cena tiek aprēķināta no tūlīt
 | **Fixed markup** (Konkrēts apjaunojums) | Pievieka konkrētu valūtu summu. $5 apjaunojums par $10 domānu dārgu ir $15. |
 | **Fixed price** (Konkreta cena) | Pilnībā ignorē tūlītās（wholesale）kostas. Vienmēr maksāta tas, ko jūs ievadāt. |
 
-### Ievades cenas (Introductory pricing)
+### Ievades cenas (Introductory pricing) {#introductory-pricing}
 
 Iespējiet piedāvāt atlaidīto pirmais gadu cenu. Iestatīt atsevišķu **Ievades cenu** (pirmais gada cena) līdzsvarā ar regulāro **Atjaunojuma cenu** (2. un turpmākajos gadu). Klientam vismaz divas cenas redz, kad veic pirkumu, lai viņš zinātu, ko varētu gaistīt atjaunojumā.
 
-### WHOIS privātums
+### WHOIS privātums {#whois-privacy}
 
 Kontrolē, vai domāni, kas reģistrēti ar šo produktiem, piedāvā WHOIS privātuma aizsardzību.
 
@@ -59,7 +59,7 @@ Namecheap lieto WhoisGuard (visdaļē bez maksājuma) WHOIS privātumam. OpenSRS
 
 ---
 
-## TLD ievades un sinhronizācija
+## TLD ievades un sinhronizācija {#tld-import-and-sync}
 
 Domānu produkti parāda reālowholesale cenu, kas tiek saņemta no savienotās sniedzēja. Lai tas strādā, TLDs jāimēģina (importēt).
 
@@ -70,7 +70,7 @@ Pēc sinhronizācijas dodieties uz jebkuru domānu produktu "Domain Settings" (D
 
 ---
 
-## Automātiska atjaunojums
+## Automātiska atjaunojums {#auto-renewal}
 
 Domānu atjaunojumi ir saistīti ar klienta iemēgšanas statusu:
 
@@ -90,7 +90,7 @@ E-pasta šablona ID domānas dzīves cikla notikumiem:
 
 ---
 
-## Administrācija: Manāla domēnas reģistrācija
+## Administrācija: Manāla domēnas reģistrācija {#admin-manual-domain-registration}
 
 Lai reģistrētu domēnu uz klienta, neietveroties caur kasas (checkout):
 

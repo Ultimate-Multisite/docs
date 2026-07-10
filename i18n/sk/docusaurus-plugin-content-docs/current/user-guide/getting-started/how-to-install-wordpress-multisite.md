@@ -3,7 +3,7 @@ title: Ako nainštalovať WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Ako nainštalujem WordPress Multisite?
+# Ako nainštalujem WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite vám umožňuje mať sieti webových stránok na jednej inštalácii. Je to vbudovaná funkcia, ale štandardne je vypnutá.
 
@@ -54,7 +54,7 @@ A tento kód, ktorý poskytuje WordPress, do vášho súboru _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# pridajte koncovú čiarť na /wp-admin
+# pridajte koncovú čiarť na /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -90,9 +90,9 @@ Vytvorenie podsítidla:
 
 Po vyplnení polí kliknite na tlačidlo „Add site“ (Pridať sitó). Keď sa nové podsítidlo vytvorí, prejdite a pristupujte k nemu, aby ste si uistili, že je funkčné.
 
-## Bežné problémy:
+## Bežné problémy: {#common-problems}
 
-### 1. Môžem vytvárať nové sitá, ale sú nedostupné.
+### 1. Môžem vytvárať nové sitá, ale sú nedostupné. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ak ste si zvolili poddomény, potrebujete tiež nastaviť wildcard poddomény pre vašu multisite sieti.
 

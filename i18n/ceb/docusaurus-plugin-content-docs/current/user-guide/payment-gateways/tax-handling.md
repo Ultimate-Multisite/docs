@@ -1,120 +1,120 @@
 ---
-title: Pagdumala sa Buwis
+title: Pagdumala sa Buhis
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Pag-handle sa Buwis (Tax Handling)
+# Pagdumala sa Buhis {#tax-handling}
 
-Ang Ultimate Multisite kay naay module para mangolekta og buwis nga naa na sa among core plugin, busa kung kinahanglan nimo magkolekta og sales taxes sa imong mga plano, package, ug serbisyo, dali ra nimo ni buhat bisan wala ka mag-install og mga add-on.
+Ang Ultimate Multisite adunay module sa pagkolekta og buhis nga gitukod sulod sa among core plugin, busa kung kinahanglan nimo mangolekta og sales taxes sa imong mga plan, package ug serbisyo, dali ra nimo kining mahimo nga dili kinahanglan mag-install og bisan unsang add-ons.
 
-Para sa mga kompanya nga nagpuyo sa Europe, nagtanyag kami og usa ka **add-on** nga nagdadagdag og mga tools ug features para mas maayo ang pagsuporta sa pagsunod sa VAT (Value Added Tax).
+Alang sa mga kompanya nga nahimutang sa Europe, nagtanyag kami og **add-on** nga nagdugang og mga himan ug feature aron mas maayo nga **mosuporta sa VAT** compliance.
 
-Ang Ultimate Multisite dili mag-file o magpadala sa buwis alang kanimo sa gobyerno; tabang lang mi nimo sa pagkolekta sa angay nga buwis sa panahon sa transaksyon. **Kinahanglan gihapon nimo bayaran ang mga buwis mismo.**
+Ang Ultimate Multisite dili mo-file o mo-remit og buhis alang kanimo ngadto sa gobyerno; motabang lang kami kanimo sa pagkolekta sa angay nga mga buhis sa panahon sa transaksyon. **Kinahanglan gihapon nimo nga i-remit ang mga buhis sa imong kaugalingon.**
 
-## Pag-enable sa Tax Collection
+## Pag-enable sa Pagkolekta og Buhis {#enabling-tax-collection}
 
-Ang pag-collect og buwis dili aktibo (enabled) sa default. Aron ma-enable kini, kinahanglan ka moadto sa **Ultimate Multisite > Settings > Taxes** ug i-toggle ang Enable Taxes setting para ma-on kini.
+Ang pagkolekta og buhis dili naka-enable by default. Aron i-enable kini, kinahanglan kang moadto sa **Ultimate Multisite > Settings > Taxes** ug i-toggle aron i-enable ang Enable Taxes setting.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Enable Taxes toggle sa ibabaw sa panid sa Tax settings](/img/config/settings-taxes-enable.png)
 
-Ania ang bug-os nga tan-aw sa tax settings page:
+Aniay tibuok nga pagtan-aw sa panid sa tax settings:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Tibuok panid sa Tax settings](/img/config/settings-taxes-full.png)
 
-Mahimo usab nimo tan-awon ang tax settings para sa mga indibidwal nga produkto:
+Mahimo usab nimo tan-awon ang tax settings alang sa tagsa-tagsa nga mga produkto:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Tax settings alang sa mga produkto](/img/config/settings-taxes.png)
 
-### Tax excluded vs. Tax included
+### Wala gilakip ang buhis vs. gilakip ang buhis {#tax-excluded-vs-tax-included}
 
-Sa default, tanan imong presyo sa produkto kay wala pa apil og buwis (tax excluded), nga nagpasabot nga ang mga buwis **wala na apil** sa presyo sa produkto. Kung atong mahukman nga kinahanglan bayran sa customer ang buwis sa usa ka pagpalit, aduna mi magdadagdag og buwis **sa ibabaw** sa subtotal.
+By default, ang tanan nimong presyo sa produkto wala maglakip og buhis, nagpasabot nga ang mga buhis **wala gilakip** sa presyo sa produkto. Kung matino namo nga ang usa ka customer kinahanglan mobayad og buhis sa usa ka partikular nga pagpalit, idugang namo ang mga buhis **ibabaw** sa subtotal.
 
-Kung gusto nimo nga apil na ang mga buwis sa presyo sa imong produkto, pwede nimo kini pinaagi sa pag-enable sa Inclusive Tax setting.
+Kung gusto nimo nga ang mga buhis gilakip sa presyo sa imong produkto, mahimo nimo kini pinaagi sa pag-enable sa **Inclusive Tax** setting.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Inclusive Tax toggle row ubos sa Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
 
-Ayaw kalimot **i-save** ang mga kausaban nga imong gihimo.
+Ayaw kalimti ang **pag-save** sa mga kausaban nga imong gihimo.
 
 ###
 
-## Paghimo og Tax Rates
+## Paghimo og Tax Rates {#creating-tax-rates}
 
-Human nimo ma-enable ang Tax Collection, kinahanglan nimo paghimo og tax rates para sa piho nga mga lokasyon gamit ang among tax rates editor.
+Human nimo i-enable ang Tax Collection, kinahanglan nimo maghimo og tax rates alang sa piho nga mga lokasyon gamit ang among tax rates editor.
 
-Mahimo nimo ma-access sa editor pinaagi pag-click sa **Manage Tax Rates** button sa sidebar sa Tax settings page.
+Ma-access nimo ang editor pinaagi sa pag-klik sa **Manage Tax Rates** button sa sidebar sa panid sa Tax settings.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Manage Tax Rates link sa Tax Rates panel sa panid sa settings](/img/config/settings-taxes-manage-rates.png)
 
-Sa tax rates editor page, pwede ka mag-add og bag-ong Tax Rates pinaagi pag-click sa **Add new Row** button.
+Sa panid sa tax rates editor, makadugang ka og bag-ong Tax Rates pinaagi sa pag-klik sa **Add new Row** button.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tax rates editor table nga adunay Add new Row button sa ibabaw](/img/config/tax-rates-editor.png)
 
-Kinahanglan nimo hatagan og **title** ang matag tax rate (gamit kini sa mga invoice). Unya pwede ka magpili sa **country** (kinahanglan), ang **state**, ug ang **city** (pareho lang optional) diin kining tax ipawagtang. Sa katapusan, i-add ang **tax rate in percents**.
+Kinahanglan nimo hatagan ang matag tax rate og **titulo** (gigamit sa invoices). Dayon makapili ka sa **nasod** (kinahanglan), sa **estado,** ug sa **siyudad** (parehong optional) diin kini nga buhis paninglon. Sa kataposan, idugang ang **tax rate sa porsiyento**.
 
-### Tax Categories
+### Tax Categories {#tax-categories}
 
-Pwede pud kang maghimo og dagkong mga Tax Categories para magdugang og lain-laing tax rates para sa lain-laing klase sa produkto.
+Mahimo usab kang maghimo og daghang Tax Categories, aron makadugang og lain-laing tax rates alang sa lain-laing matang sa mga produkto.
 
-I-click ang **Add new Tax Category**, unya isulat ang ngalan sa imong category ug i-press ang **Create**.
+I-klik aron **Add new Tax Category** , unya isulat ang ngalan sa imong kategorya ug pindota ang **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Add new Tax Category button sa ibabaw sa tax rates editor](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Tax Category Name input field sa create category modal](/img/config/tax-categories-create-modal.png)
 
-Para magtan-aw sa mga categories, i-click ang **Switch** ug piliha ang category diin gusto nimo magdugang og bag-ong mga tax.
+Aron mag-browse sa mga kategorya, i-klik ang **Switch** ug pilia ang kategorya diin gusto nimo magdugang og bag-ong mga buhis.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Switch dropdown button aron mausab taliwala sa tax categories](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Tax category selector dropdown nga nagpakita sa anaa nga mga kategorya](/img/config/tax-categories-select.png)
 
-Pwede nimong i-set ang tax category para sa usa ka piho nga produkto pinaagi sa pagadto sa **Product edit page** ug unya sa Taxes tab.
+Mahimo nimo i-set ang tax category alang sa usa ka partikular nga produkto pinaagi sa pag-adto sa **Product edit page** ug dayon sa Taxes tab.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Product taxes tab nga adunay tax category ug taxable toggle](/img/config/product-taxes.png)
 
-Sa parehas nga screen, pwede nimong i-toggle off ang **Is Taxable?** toggle para ipahibalo sa Ultimate Multisite nga dili kini kinahanglan mangolekta og mga tax sa gihatag nga produkto.
+Sa mao gihapong screen, mahimo nimo i-toggle off ang **Is Taxable?** toggle aron ipahibalo sa Ultimate Multisite nga dili kini kinahanglan mangolekta og buhis sa maong produkto.
 
-## European VAT Support
+## Suporta sa European VAT {#european-vat-support}
 
-Gihapon, naa tay add-on para sa mga customer sa EU nga naay dugang requirements tungod sa European VAT regulations.
+Sama sa gihisgotan kaniadto, aduna kamiy add-on nga anaa alang sa customer sa EU nga adunay dugang nga mga kinahanglanon tungod sa mga regulasyon sa European VAT.
 
-Ang among VAT tools makatabang sa pipila ka importante nga butang:
+Ang among mga VAT tool motabang sa pipila ka importanteng butang:
 
   * Sayon nga pag-load sa EU VAT rates;
 
-  * Pagkolekta ug pag-validate sa VAT Number - ug reverse charging para sa mga entidad nga exempt sa VAT (sama sa mga kompanya nga naay balidong VAT numbers);
+  * Pagkolekta ug pag-validate sa VAT Number - ug reverse charging alang sa VAT exempt entities (sama sa mga kompanya nga adunay valid nga VAT numbers);
 
-Para i-install ang add-on, pumunta sa **Ultimate Multisite > Settings** ug dayon i-click ang link sa sidebar nga **Check our Add-ons**.
+Aron i-install kana nga add-on, adto sa **Ultimate Multisite > Settings** ug dayon i-klik ang **Check our Add-ons** sidebar link.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar sa panid sa Settings nga adunay Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
 
-Moad-redirect ka sa among add-ons page. Didto, mahimo nimong pangitaon ang **Ultimate Multisite VAT add-on** ug i-install kini.
+I-redirect ka ngadto sa among panid sa add-ons. Didto, makapangita ka sa **Ultimate Multisite VAT add-on** ug i-install kini.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Dayon, pumunta sa **Network Admin > Plugins** ug i-activate ang add-on nga maoy network-wide.
+Dayon, adto sa **Network Admin > Plugins** ug i-activate kana nga add-on network-wide.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Kung mobalik ka sa **Tax Settings tab**, makita nimo ang mga bag-ong option. I-toggle ang **Enable VAT Support** option para ma-enable ang bag-ong VAT tools. Ayaw kalimot nga i-**save** ang imong settings!
+Kung mobalik ka sa **Tax Settings tab** , makita nimo ang bag-ong mga opsyon nga anaa. I-toggle ang **Enable VAT Support** nga opsyon aron i-enable ang bag-ong VAT tools. Ayaw kalimti ang **pag-save** sa imong settings!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pagkuha sa VAT Tax Rates
+### Pagkuha sa VAT Tax Rates {#pulling-on-vat-tax-rates}
 
-Usa sa mga tool nga gi-add sa among integration mao ang abilidad sa pag-load sa tax rates para sa mga miyembro sa EU. Mahimo kini buhat pinaagi sa pagbisita sa tax rates editor page human ma-enable ninyo ang EU VAT support.
+Usa sa mga tool nga gidugang sa among integration mao ang abilidad sa pag-load sa tax rates alang sa EU member states. Mahimo kini pinaagi sa pagbisita sa panid sa tax rates editor human ma-enable ang EU VAT support.
 
-Sa ubos sa pahina, makita nimo ang mga opsyon para sa pagkuha (pull) sa VAT. Pagpili og klase sa rate ug pag-click sa **Update EU VAT Rates** button, awtomatikong mo-pop up ug magpuno sa table sa mga tax rates para sa matag miyembro sa EU. Unya, kinahanglan lang nimo i-save kini.
+Sa ubos sa panid, makita nimo ang VAT pulling options. Ang pagpili og rate type ug pag-klik sa **Update EU VAT Rates** button mokuha ug awtomatikong mopuno sa table sa tax rates alang sa matag EU member state. Dayon, kinahanglan ra nimo kini i-save.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Update EU VAT Rates button sa ubos sa tax rates editor](/img/config/tax-rates-vat-pull.png)
 
-Mahimo pud nimong usbon ang mga values human nakuha nimo kini. Aron mahimo nimo, basta usbon ang linya sa table nga imong kinahanglan ug i-click para i-save ang bag-ong values.
+Mahimo usab nimo i-edit ang mga value human kini makuha. Aron buhaton kini, i-edit lang ang linya sa table nga imong kinahanglan ug i-klik aron i-save ang bag-ong mga value.
 
-### VAT Validation
+### VAT Validation {#vat-validation}
 
-Kung gi-enable ang VAT support, magdadag ang Ultimate Multisite og dugang field sa checkout form, ubos sa billing address field. Ang field ni moabot lang para sa mga customer nga nagpuyo sa EU.
+Kung naka-enable ang VAT support, ang Ultimate Multisite magdugang og dugang nga field sa checkout form, ubos sa billing address field. Ang field mopakita ra alang sa mga customer nga nahimutang sa EU.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Dayon, i-validate sa Ultimate Multisite ang VAT Number ug kung kini balik isip valid, ang reverse charge mechanism maaplay ug ang tax rate mahimong itakda sa 0% para sa order nga mao ni.
+Dayon i-validate sa Ultimate Multisite ang VAT Number ug kon mobalik kini nga balido, i-aplikar ang reverse charge mechanism ug ang tax rate itakda ngadto sa 0% sa maong order.

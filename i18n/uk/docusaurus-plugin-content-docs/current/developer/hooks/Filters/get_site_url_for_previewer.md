@@ -4,24 +4,24 @@ title: Фільтр - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Filter: get_site_url_for_previewer
+# Filter: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
 
 Дозволяє розробникам плагінів фільтрувати URL, який використовується у попередньому перегляді.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $domain | `string` | Домен, який використовується зараз за замовчуванням. Корисний для маніпуляцій. |
 | $domain_options | `array` | Список усіх опцій доменів, введених у Ultimate Multisite Settings -> Network Settings -> Domain Options. |
 
-### Since
+### Since {#since}
 
 - 1.7.2
-### Source
+### Source {#source}
 
 Визначено в [`inc/checkout/class-legacy-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L812) на рядку 812
 
 
-## Returns
+## Returns {#returns}
 Новий домен, який буде використано.

@@ -1,132 +1,148 @@
 ---
-title: Magungunan da aka gina
+title: Wakilan da aka gina a ciki
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents da Shiga
+# Agents na Ciki {#built-in-agents}
 
-Gratis AI Agent v1.9.0 yana biyar da hudu (5) agents na gida, kowane ɗayan kuma an shirya shi da kayan aiki da aka tsara, wani bayanin tsarin (system prompt) mai dacewa, da shawarwari na farko da suka dace da ayyukan yau da kullum a wannan fannin. Canza tsakanin agents yana canza abin da asista zai iya yi da yadda zai jawab — ba tare da wani shigarwa (configuration) daga gare ku ba.
+Gratis AI Agent v1.9.0 yana zuwa da agents biyar na ciki, kowanne an riga an saita shi da tarin kayan aiki masu mayar da hankali, system prompt da aka keɓance, da shawarwarin farawa da suka dace da ayyuka na yau da kullum a wannan fanni. Sauyawa tsakanin agents yana canza abin da mataimakin zai iya yi da yadda yake amsawa — ba tare da wani saiti daga gare ka ba. Superdav AI Agent v1.18.0 zai iya ƙara kayan aiki masu lura da jadawali, bayanan tunatarwa, ƙofofin amincewa, da sanarwar SMS zuwa waɗannan hanyoyin aiki idan an saita haɗaɗɗun da suka dace.
 
-## Menene Agent?
+## Mene ne Agent? {#what-is-an-agent}
 
-Kowane agent shi ne bayanin tsari mai sunan wanda ya haɗa:
+Kowane agent bayanin martabar saiti ne mai suna wanda ke haɗa:
 
-- **Tools** — kayan aiki da agent an amuba su yi (misali, Mai rubuta abubuwa yana iya samun ikon samar da abubuwa; Studio na zane yana iya samun ikon CSS da theme.json).
-- **System prompt** — umarni waɗanda ke tsara yanayin magana, muhimmancin abubuwa, da iyakoki (constraints) na agent ɗin.
-- **Suggestions** — bayanan rubutu da aka shigar a cikin interface na tattaunawa don taimaka maka fara da sauri.
+- **Kayan aiki** — ƙwarewar da agent ke da izinin kira (misali Content Writer yana da damar ƙirƙirar rubutu; Design Studio yana da damar CSS da theme.json)
+- **System prompt** — umarnin da ke saita salon agent, fifiko, da ƙuntatawa
+- **Shawarwari** — prompts da aka riga aka rubuta da ake nunawa a cikin mu'amalar hira don taimaka maka farawa da sauri
 
-## Samun Agent Picker
+## Samun Damar Agent Picker {#accessing-the-agent-picker}
 
-1. Buɗa panel ɗin **Gratis AI Agent** a gefen baya (sidebar) na WordPress admin.
-2. Danna **icon ɗin agent** a gefen sama na sashi na tattaunawa (icon ɗin yana canzawa don nuna agent ɗin da ke aiki).
-3. **Agent Picker** zai buɗe kowace shi kamar wani tsarin jadawali (form-table overlay). Kowane agent an raba da ikon sa, sunan sa, da bayanin gajeren.
-4. Danna sashi na agent don shiga shi. Sashi na tattaunawa zai canza nan take.
+1. Buɗe panel ɗin **Gratis AI Agent** a cikin gefen admin na WordPress.
+2. Danna **alamar agent** a saman-hagu na taken hira (alamar tana canzawa don nuna agent mai aiki).
+3. **Agent Picker** yana buɗewa a matsayin shimfiɗar form-table. Ana jera kowane agent tare da alamarsa, sunansa, da bayanin layi ɗaya.
+4. Danna layin agent don kunna shi. Taken hira yana sabuntawa nan take.
 
-Zaka iya canza agents a tsakanin tattaunawa — bayanin tsarin (system prompt) na agent ɗin na sabo zai fara a cikin saƙon da ya biyo.
+Haka kuma za ka iya sauya agents a tsakiyar tattaunawa — system prompt na sabon agent zai fara aiki daga saƙo na gaba.
 
-## Hudu (5) Agents Na Gida
+## Agents Biyar na Ciki {#the-five-built-in-agents}
 
-### Mai Rubuta Abubuwa (Content Writer)
+### Content Writer {#content-writer}
 
-**Fokus:** Samar da rubutu da gyara posts, pages, da wajen tattaunawa (contact forms).
+**Mayar da hankali:** Ƙirƙira da gyara rubuce-rubuce, shafuka, da fom ɗin tuntuɓa.
 
-**Kayayyaki da aka ba shi:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Kayan aiki da ake da su:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Idan an kunna haɗaɗɗun Superdav AI Agent v1.18.0, mahallin kalanda da aka saita, ƙofofin amincewa, tunatarwa, da kayan aikin sanarwar SMS na iya kuma kasancewa ga hanyoyin aiki da aka amince da su.
 
-**Abin da shi wanda yake yi kyau:**
-- Rubuta da fitarwa (publish) blog posts daga wani bayanin ko tsarin rubutu (outline).
-- Samar da nau'ikan shafuka na shiga (landing pages) don wuri sabon.
-- Gina fassarori da tambayoyi (contact and enquiry forms).
-- Saka hotun al'amari (featured images) a kan posts daga URL ko bincike (search).
+**Abin da yake yi da kyau:**
+- Rubutawa da buga posts na blog daga taƙaitaccen bayani ko tsarin rubutu
+- Ƙirƙirar rukuni-rukuni na landing pages don sabon shafi
+- Gina fom ɗin tuntuɓa da tambaya
+- Saita hotunan da aka fito da su a posts daga URL ko bincike
+- Rubuta saƙonnin bin-baya na taro daga mahallin Google Calendar da aka saita, sannan dakatarwa don amincewa kafin aika sanarwa
 
-**Gabaɗaya ga shawarwari na farko:**
-- *Rubuta blog post mai tsawon rubutu 500 game da fa'idodin WordPress multisite.*
-- *Samar wani shafi na Game da Wata, Sabbin Ayyuka (Services), da Tambayoyi (Contact) sannan ka fitarwa.*
-- *Ka ƙara wani fassarar tambaya na booking a kan shafin Contact ta amfani da Site Builder.*
-
----
-
-### Site Builder
-
-**Fokus:** Samar da gaba ɗaya na website daga wani babban bayani (single prompt).
-
-**Wadanda ke aiki:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Abin da yake yi kyau:**
-- Samar da tsarin gina website na matakai daban don nau'in kasuwanci da aka bayyana.
-- Aiki kowane mataki (phase) da kansa — tsari, abubuwan rubutu, hanyar tafiya (navigation), da zane (design).
-- Tabbatarwa daga rauni a tsakiya ba tare da buƙatar shiga hannu ba.
-- Shigar plugin da aka ba da shawarar a matsayin wani sashi na gina.
-- Samar da fassarori da tambayoyi kai tsaye daga interface na tattaunawa (Superdav AI Agent v1.10.0+).
-
-**Gabaɗaya ga shawarwari na farko:**
-- *Gina wuri na hoto (photography portfolio site) tare da nau'in post na gallery, shafin booking, da fassarar tambaya.*
-- *Samar website na babban abinci tare da menu na intanet, sa'a na buɗuwa, da wani fassarar tambaya don saka baki a kan baki (table-booking).*
-- *Ƙirƙirar wuri na shiga lafiyayya ta konsultin (freelance consulting site) tare da shafuka na ayyuka, sashi na portfolio, da blog.*
-- *Ka ƙara fassarar tambaya a kan shafin Contact ta amfani da Site Builder.*
+**Shawarwarin farawa:**
+- *Rubuta post na blog mai kalmomi 500 game da fa'idodin WordPress multisite.*
+- *Ƙirƙiri shafukan About, Services, da Contact sannan ka buga su.*
+- *Ƙara fom ɗin tambayar booking zuwa shafin Contact.*
+- *Rubuta tunatarwa ga mahalarta taron kalanda da aka saita na gobe kuma jira amincewa kafin aika shi.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**Fokus:** Zane na musamman (Visual customisation) — launi, rubutu (typography), CSS, da tsarin sashi (block patterns).
+**Mayar da hankali:** Ƙirƙirar website daga farko zuwa ƙarshe daga prompt guda ɗaya.
 
-**Gabaɗa da kayan aiki:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Kayan aiki da ake da su:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Tare da Superdav AI Agent v1.18.0, kayan aikin managed-service, amincewa, tunatarwa, kalanda, da SMS da aka saita na iya kasancewa inda masu gudanarwa suka kunna su.
 
-**Abin da yake yi kyau:**
-- Aiki da kayan aiki na tema (theme presets) masu sunan (kamar minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog).
-- Gyara tsarin rubutu da lafiyayya (typography) da launuka na gaba daya ta hanyar theme.json.
-- Shigar CSS na musamman don canza abubuwa ga brand ɗin ku.
-- Ɗaukar screenshot na wani shafi kuma bincike shi don kuskuren zane.
+**Abin da yake yi da kyau:**
+- Samar da tsarin gina shafi mai matakai da yawa don nau'in kasuwanci da aka bayyana
+- Aiweatar da kowane mataki da kansa — tsari, abun ciki, kewayawa, zane
+- Farfaɗowa daga kurakurai a tsakiyar tsari ba tare da buƙatar sa hannun hannu ba
+- Shigar da plugins da aka ba da shawara a matsayin wani ɓangare na ginin
+- Ƙirƙirar fom ɗin tuntuɓa kai tsaye daga mu'amalar hira (Superdav AI Agent v1.10.0+)
+- Daidaita tunatarwar ƙaddamarwa ko bin-bayan mahalarta ba tare da sanarwa mai maimaituwa ba idan an kunna ƙofofin amincewa da bayanan tunatarwa
 
-**Shawarwari na farko:**
-- *Yi amfani da preset ɗin warm-editorial sannan ka yi lafiyayyar gaba (primary colour) ta #2d6a4f.*
-- *Ka ɗaukar screenshot na homepage kuma ka gaya min abubuwan da za ka inganta.*
-- *Ƙirƙiro wani pattern na hero mai amfani da shi tare da hoton gaba daya da labarin da ke tsakiya (centred heading).*
-
----
-
-### Plugin Manager (Manajan Plugins)
-
-**Fokus:** Gano, shigarwa, da sarrafa WordPress plugins.
-
-**Kayan aiki masu lura:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Abin da yake yi kyau:**
-- Ba da shawarar wuri mafi kyau don amfani da wani nau'in aiki (use case) da aka bayyana.
-- Shigar kayan aiki na ability (ability packs) daga registry.
-- Gano katalin kayan aiki da ake samu ta hanyar fannoni (category).
-
-**Shawarwari na farko:**
-- *Wane plugin ne mafi kyau don wani babban wurin samun kuɗi (membership directory)?*
-- *Shigar ability pack ɗin WooCommerce.*
-- *Ka nuna min dukkan ability packs da ake samu a kasuwar sayarwa (ecommerce).*
+**Shawarwarin farawa:**
+- *Gina shafin portfolio na ɗaukar hoto tare da nau'in post na gallery, shafin booking, da fom ɗin tuntuɓa.*
+- *Ƙirƙiri website na gidan abinci tare da menu na kan layi, lokutan buɗewa, da fom ɗin tambayar booking na tebur.*
+- *Saita shafin shawara na freelance tare da shafukan ayyuka, sashen portfolio, da blog.*
+- *Ƙara fom ɗin tuntuɓa zuwa shafin Contact ta amfani da site builder.*
+- *Bayan an amince da jerin binciken ƙaddamar da shafi, aika tunatarwar SMS zuwa contact na stakeholder da aka saita.*
 
 ---
 
-### Support Assistant (Mai Bincike)
+### Design Studio {#design-studio}
 
-**Fokus:** Amsa tambayoyi game da abubuwan da ke cikin shafin, tsarin (settings), da tsarin WordPress.
+**Mayar da hankali:** Keɓance gani — launuka, rubutun haruffa, CSS, da tsarin blocks.
 
-**Kayan aiki masu lura:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Kayan aiki da ake da su:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**شنارته شنو كيدير مزيان:**
-- كيقلب على إعدادات وخيارات الموقع الحالية.
-- يشرح شنو هما أنواع المنشورات (post types)، والتصنيفات (taxonomies)، والقوائم (menus) اللي مُفعلين في الموقع.
-- يجاوب على أسئلة "شنو كيدير هاد الإعداد؟" عن طريق قراءة القيم الحية (live values).
-- كيخدم كطبقة تشخيصية للقراءة فقط قبل ما دير أي تغييرات.
+**Abin da yake yi da kyau:**
+- Aiwatar da presets na theme masu suna (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Daidaita typography na duniya da palet ɗin launuka ta theme.json
+- Shigar da CSS na musamman don sauye-sauye na musamman ga brand
+- Ɗaukar hoton allo na shafi da duba shi don matsalolin zane
 
-**اقتراحات للبداية:**
-- *شنو هي الـ plugins والإعدادات المفعلة حالياً في هاد الموقع؟*
-- *صنف جميع أنواع المنشورات المخصصة (custom post types) المسجلة في هاد الموقع.*
-- *شنو القوائم ديال التنقل (navigation menus) موجودين وأين تم تعيينهم؟*
+**Shawarwarin farawa:**
+- *Aiwatar da preset na warm-editorial sannan saita launin farko zuwa #2d6a4f.*
+- *Ɗauki hoton allo na homepage kuma gaya mini abin da za ka inganta.*
+- *Ƙirƙiri tsarin hero block da za a iya sake amfani da shi tare da hoton bango mai cikakken faɗi da taken da aka daidaita a tsakiya.*
+
+### Plugin Manager {#plugin-manager}
+
+**Mayar da hankali:** Ganowa, shigarwa, da sarrafa WordPress plugins.
+
+**Kayan aiki da ake da su:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Abin da yake yi da kyau:**
+- Ba da shawarar mafi kyawun plugin don amfani da aka bayyana
+- Shigar da fakitin ƙwarewa daga registry
+- Bincika katalogin ƙwarewa da ake da shi ta rukuni
+
+**Shawarwarin farawa:**
+- *Mene ne mafi kyawun plugin don membership directory?*
+- *Shigar da fakitin ƙwarewar WooCommerce.*
+- *Nuna mini duk fakitin ƙwarewar ecommerce da ake da su.*
 
 ---
 
-## تخصيص الوكلاء (Customising Agents)
+### Support Assistant {#support-assistant}
 
-كل وكيل مُدمج (built-in agent) يمكن توسيعو أو استبدالُه عن طريق الفلتر `gratis_ai_agent_agents`.
+**Mayar da hankali:** Amsa tambayoyi game da abun cikin shafi, saituna, da tsarin WordPress.
 
-### إضافة موجه نظام مخصص لوكيل موجود
+**Kayan aiki da ake da su:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Abin da yake yi da kyau:**
+- Nemo saituna da zaɓuɓɓukan shafin na yanzu
+- Bayyana irin nau'ikan rubutu, taxonomies, da menus da aka saita a shafin
+- Amsa tambayoyin "me wannan saitin yake yi?" ta hanyar karanta ƙimomin kai tsaye
+- Yin aiki a matsayin matakin bincike na karatu-kawai kafin yin canje-canje
+
+**Shawarwarin farawa:**
+- *Waɗanne plugins da saituna ne suke aiki a yanzu a wannan shafin?*
+- *Jera duk nau'ikan rubutu na musamman da aka yi rijista a wannan shafin.*
+- *Waɗanne menus na kewaya ne suke akwai kuma a ina aka sanya su?*
+
+---
+
+## Haɗin Kai na Automation na Superdav {#superdav-automation-integrations}
+
+Lokacin da aka saita haɗin kai na Superdav AI Agent v1.18.0, wakilai na ciki za su iya shiga cikin hanyoyin aiki na automation masu aminci da ke la'akari da jadawali:
+
+- **Kayan karanta Google Calendar** suna ba wakilai damar duba calendars da events da aka saita kafin su tsara aikin bi-baya.
+- **Daidaita contacts da attendees** yana taimakawa wajen haɗa mahalarta event da masu amfani da WordPress ko sanannun contacts.
+- **Ƙofofin amincewar ɗan Adam** suna dakatar da ayyuka masu muhimmanci har sai mai amfani mai izini ya duba su kuma ya tabbatar da su.
+- **Bayanan tunatarwa** suna hana maimaita sanarwa lokacin da ayyukan da aka tsara suka sake gwadawa ko suka maimaitu.
+- **Sanarwar SMS ta TextBee** tana aika saƙonnin rubutu da aka saita ne kawai lokacin da aka kunna bayanan shaidar SMS da izinin hanyar aiki.
+
+Hanyar aiki da aka ba da shawara: ka nemi wakilin ya shirya saƙon ko aikin, ka duba buƙatar amincewa, sannan ka ba aikin da aka amince da shi damar ci gaba. Don tunatarwa masu maimaituwa, a bar hana maimaita tunatarwa a kunne domin kada a sanar da event ɗaya ko contact ɗaya sau da yawa.
+
+---
+
+## Keɓance Wakilai {#customising-agents}
+
+Kowane wakili na ciki ana iya faɗaɗa shi ko a maye gurbinsa ta hanyar filter na `gratis_ai_agent_agents`.
+
+### Ƙara custom system prompt ga wakili da yake akwai {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### تسجيل وكيل جديد
+### Rijistar sabon wakili {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-د کارگر جدید بلا تألی قطعه انتخاب (Agent Picker) بلا مباشره بعد از اجرای فیلتر نمایش داده می‌شود.
+Sabon wakilin yana bayyana a Mai Zaɓen Wakili nan take bayan filter ɗin ya gudana.
 
-### حذف یک عامل داخلی (built-in agent)
+### Cire wakili na ciki {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

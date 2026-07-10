@@ -1,32 +1,32 @@
 ---
-title: በየጣቢያ አብነቶች ውስጥ ራስ-ሰር ፍለጋ እና መተካት
+title: በጣቢያ አብነቶች ውስጥ ራስ-ሰር ፈልጎ መተካት
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# በየጣቢያው ቴምፕሌት ውስጥ በራስ-ሰር መፈለግ እና መተካት (v2)
+# በጣቢያ አብነቶች ውስጥ ራስ-ሰር ፍለጋ እና መተካት (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**ይህ ትምህርት WP UItimo version 2.x ያስፈልጋል**_
+_**ይህ ትምህርት WP UItimo ስሪት 2.x ይፈልጋል።**_
 
-Ultimate Multisite በጣም ኃይለኛ ባህሪ አለው። ይህም በንቃት (registration form) ላይ የፈለጉትን ጽሑፍ፣ ቀለም እና የመምረጥ መስኮቶችን (select fields) መጨመር ያስችላል። ይህን መረጃ ስንሰበስብ፣ በየጣቢያው ቴምፕሌት በተመረጡ ክፍሎች ውስጥ ይዘትን በቅድሚያ መሙላት እንችላለን። ከዚያም አዲሱ ጣቢያ ሲወጣ፣ Ultimate Multisite በንቃት ወቅት በተመዘገበው መረጃ ቦታዎችን (placeholders) ይተካዋል።
+የUltimate Multisite ከፍተኛ ኃይል ካላቸው ባህሪያት አንዱ ወደ ምዝገባ ቅጽ ማንኛውንም ጽሑፍ፣ ቀለም እና የምርጫ መስኮች ማከል መቻሉ ነው። ያንን ውሂብ ከያዝን በኋላ፣ በተመረጠው የጣቢያ አብነት ውስጥ ባሉ አንዳንድ ክፍሎች ይዘቱን አስቀድመን ለመሙላት ልንጠቀምበት እንችላለን። ከዚያም፣ አዲሱ ጣቢያ ሲታተም፣ Ultimate Multisite ቦታ ያዢዎቹን በምዝገባ ወቅት በገባው ትክክለኛ መረጃ ይተካቸዋል።
 
-ለምሳሌ፣ በቴምፕሌት ጣቢያዎ ላይ በቦታ መሙላት (placeholders) ሊያደርጉ ይችላሉ። ቦታ መሙላቶቹ በሁለት ስኩዌር ኩርሊ ብሬሶች (double curly braces) - `{{placeholder_name}}` - ውስጥ ተከቦ መቅረብ አለባቸው።
+ለምሳሌ፣ የአብነት ጣቢያዎችዎን በቦታ ያዢዎች መሥራት ይችላሉ። ቦታ ያዢዎች በድርብ ጥምዝ ቅንፎች ተከብበው መጨመር አለባቸው - {{placeholder_name}}።
 
-ከዚያም፣ ያንን መረጃ ለመሰብሰብ የሚዛመድ የንቃት መስክ (registration field) በቀላሉ መጨመር ይችላሉ።
+ከዚያ፣ ያንን ውሂብ ለመያዝ ተዛማጅ የምዝገባ መስክ በቀላሉ ማከል ይችላሉ
 
-ደንበኛዎ በንቃት ጊዜ ያንን መስክ መሙላት ይችላል።
+ደንበኛዎ ከዚያ በምዝገባ ወቅት ያንን መስክ መሙላት ይችላል።
 
-Ultimate Multisite ደግሞ በደንበኛው የቀረበው መረጃ ቦታዎቹን በራስ-ሰር ይተካዋል።
+ከዚያ Ultimate Multisite ቦታ ያዢዎቹን ደንበኛው በሰጠው ውሂብ ራስ-ሰር ይተካቸዋል።
 
-## **"በቦታ መሙላት የተሞላ ቴምፕሌት" ችግርን መፍታት**
+## **የ"በቦታ ያዢዎች የተሞላ አብነት" ችግርን መፍታት** {#solving-the-template-full-of-placeholders-problem}
 
-እነዚህ ሁሉ ነገሮች በጣም ጥሩ ናቸው፣ ነገር ግን የሚያጋጥመን የሚያምራቸው ችግር አለ። ደንበኞቻችን ሊጎበኙት የሚችሉት የጣቢያ ቴምፕሌት በብዙ ቦታ መሙላት (placeholders) የተሞል ብልሽት ይፈጥራል።
+ይህ ሁሉ ጥሩ ነው፣ ነገር ግን አስቀያሚ ችግር ያጋጥመናል፦ አሁን የጣቢያ አብነቶቻችን - ደንበኞቻችን ሊጎበኟቸው የሚችሉት - ብዙ ነገር በማይናገሩ አስቀያሚ ቦታ ያዢዎች ተሞልተዋል።
 
-ይህንን ለመፍታት፣ ለቦታ መሙላቶቹ (placeholders) የውሸት ዋጋዎችን (fake values) የማዘጋጀት አማራጭ አለን። ደንበኞች ሲጎበኙ፣ በእነዚህ ዋጋዎች በመጠቀም የቴምፕሌት ጣቢያዎቹን ይዘት መፈለግ እና መተካት እንችላለን።
+ያንን ለመፍታት፣ ለቦታ ያዢዎቹ የሐሰት እሴቶችን የማዘጋጀት አማራጭ እናቀርባለን፤ ደንበኞችዎ እየጎበኙ ሳሉ በአብነት ጣቢያዎች ላይ ይዘታቸውን ለመፈለግ እና ለመተካት እነዚያን እሴቶች እንጠቀማለን።
 
-የቦታ መሙላት አርታኢ (placeholders' content editor) ለማግኘት ወደ **Ultimate Multisite > Settings > Sites** በመሄድ፣ በጎን አሞሌው (sidebar) ላይ ባለው Edit Placeholders ሊንክ መጫን ይችላሉ።
+ወደ **Ultimate Multisite > Settings > Sites** በመሄድ፣ ወደ የጣቢያ አብነት አማራጮች አካባቢ በመሸብለል፣ ከዚያም **ቦታ ያዢዎችን አርትዕ** አገናኝን በመጫን ወደ የአብነት ቦታ ያዢዎች አርታዒ መድረስ ይችላሉ።
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![በSites settings ገጽ ውስጥ ያለው የጣቢያ አብነት አማራጮች አካባቢ](/img/config/settings-sites-templates-section.png)
 
-ይህ ወደ ቦታ መሙላት ይዘት አርታኢ (placeholders' content editor) ይወስድዎታል፣ እዚያም ቦታ መሙላቶቹን እና ተዛማጅ ይዘታቸውን መጨመር ይችላሉ።
+ያ ቦታ ያዢዎችን እና ተዛማጅ ይዘታቸውን ማከል ወደሚችሉበት የቦታ ያዢዎች ይዘት አርታዒ ይወስድዎታል።
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![የአብነት ቦታ ያዢዎች አርታዒ መግቢያ ነጥብ](/img/config/settings-sites-templates-section.png)

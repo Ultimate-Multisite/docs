@@ -3,9 +3,9 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Talaan ng Pagbabago ng Content Sync
+# Talaan ng Pagbabago ng Content Sync {#content-sync-changelog}
 
-### Bersyon 1.1.0 - Inilabas noong 2025-12-31
+### Bersyon 1.1.0 - Inilabas noong 2025-12-31 {#version-110---released-on-2025-12-31}
 * Bago: Suporta sa pag-sync ng lahat ng post type (posts, pages, custom post types)
 * Bago: Pag-filter ng post type sa hakbang ng pagpili ng content
 * Bago: Pagpili ng source site - makaka-sync na mula sa anumang site, hindi lang sa main site
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Binago: Ang hakbang na "Select Templates" ay binago ang pangalan patungong "Select Data"
 * Pinahusay: Ang code na specific sa Elementor ay tatakbo na lamang para sa elementor_library post type
 
-### Bersyon 1.0.0 - Inilabas noong 2025-12-19
+### Bersyon 1.0.0 - Inilabas noong 2025-12-19 {#version-100---released-on-2025-12-19}
 * Unang paglabas
 * Wizard na may maraming hakbang para sa pagpili ng template at site
 * Batch processing na may real-time progress feedback

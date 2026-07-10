@@ -4,11 +4,11 @@ title: Filter - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Filtrerar vilka underkommandon (sub_commands) som är aktiverade för denna enhet.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtrerar vilka underkommandon (sub_commands) som är aktiverade för denna enhe
 | $command_base | `string` | Basen som används i kommandot direkt efter roten. |
 | $this | `\Base_Manager` | Objektinstansen. |
 
-### Sedan
+### Sedan {#since}
 
 - 2.0.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) på rad 198

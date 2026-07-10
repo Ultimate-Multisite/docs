@@ -3,11 +3,11 @@ title: Mtiririko wa Kuanzisha Muundo wa Mandhari
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Mchakato wa Kuanzisha Theme Builder
+# Mchakato wa Kuanzisha Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 inatangulia **mchakato wa kuanzisha (onboarding flow) wa Theme Builder** unaowakutanisha kwa kuunda theme maalum wakati wa kuanzisha mradi wako wa kwanza. Hii inabadilisha mtindo wa zamani wa Site Builder na kuleta njia rahisi zaidi, inayosaidiwa na agent.
 
-## Theme Builder Onboarding Flow ni Nini?
+## Theme Builder Onboarding Flow ni Nini? {#what-is-the-theme-builder-onboarding-flow}
 
 Mchakato wa kuanzisha Theme Builder ni kichawi cha kuanzisha (setup wizard) kinachotufanya:
 
@@ -18,9 +18,9 @@ Mchakato wa kuanzisha Theme Builder ni kichawi cha kuanzisha (setup wizard) kina
 
 Mchakato huu unatumia nguvu ya **Setup Assistant agent**, ambayo huuliza maswali ya ufafanuzi na kuunda theme yako kwa hatua kwa hatua.
 
-## Kuanza Theme Builder Onboarding
+## Kuanza Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Kufanya Setup ya Kwanza
+### Kufanya Setup ya Kwanza {#first-run-setup}
 
 Unapofungua Superdav AI Agent kwa mara ya kwanza kwenye usakinishaji mpya wa WordPress, utaona:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Chagua **"Build a custom theme"** ili kuingia kwenye mchakato wa kuanzisha Theme Builder.
 
-### Kuwezesha kwa Mikono
+### Kuwezesha kwa Mikono {#manual-activation}
 
 Unaweza pia kuanza onboarding ya Theme Builder wakati wowote kwa kuomba:
 
@@ -49,9 +49,9 @@ au
 "Help me create a custom theme"
 ```
 
-## Hatua za Onboarding
+## Hatua za Onboarding {#the-onboarding-steps}
 
-### Hatua ya 1: Kuchagua Mtindo (Mode Selection)
+### Hatua ya 1: Kuchagua Mtindo (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent inakuuliza kuhusu upendeleo wako:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** inashauriwa kwa watumiaji wengi; agent hutoa mapendekezo ya usanifu kulingana na sekta na malengo yako.
 
-### Hatua ya 2: Maelezo ya Tovuti (Site Specification)
+### Hatua ya 2: Maelezo ya Tovuti (Site Specification) {#step-2-site-specification}
 
 Utoulizwa kuhusu tovuti yako:
 
@@ -74,7 +74,7 @@ Utoulizwa kuhusu tovuti yako:
 
 Taarifa hizi hihifadhiwa katika kumbukumbu yako ya **site_brief**, ambayo agents hutumia katika vikao vya baadaye.
 
-### Hatua ya 3: Maamuzi ya Design System
+### Hatua ya 3: Maamuzi ya Design System {#step-3-design-system-decisions}
 
 Agent inakuongoza kupitia kuchagua tokens za usanifu:
 
@@ -83,7 +83,7 @@ Agent inakuongoza kupitia kuchagua tokens za usanifu:
 - **Spacing**: Mpangilio mdogo, kawaida, au pana
 - **Motion**: Animashoni na mabadiliko (ikiwa unataka)
 
-### Hatua ya 4: Kuunda Theme (Theme Generation)
+### Hatua ya 4: Kuunda Theme (Theme Generation) {#step-4-theme-generation}
 
 Setup Assistant agent inajenga (scaffolds) theme yako ya block maalum kwa kutumia:
 
@@ -92,7 +92,7 @@ Setup Assistant agent inajenga (scaffolds) theme yako ya block maalum kwa kutumi
 - Mitindo ya block maalum inayolingana na design system yako
 - Metadata ya theme na matangazo ya usaidizi wa WordPress
 
-### Hatua ya 5: Kuwezesha na Kuthibitisha (Activation and Verification)
+### Hatua ya 5: Kuwezesha na Kuthibitisha (Activation and Verification) {#step-5-activation-and-verification}
 
 Theme inawazeshwa kiotomatiki, na utaona:
 
@@ -107,7 +107,7 @@ Theme inawazeshwa kiotomatiki, na utaona:
 
 Kisha unaweza kutembelea tovuti yako kuthibitisha kwamba theme inatokea vizuri.
 
-## Site Specification na Kumbukumbu ya site_brief
+## Site Specification na Kumbukumbu ya site_brief {#site-specification-and-sitebrief-memory}
 
 Wakati wa onboarding, agent hukamata maelezo ya tovuti yako katika kategoria ya kumbukumbu ya **site_brief**. Hii inajumuisha:
 
@@ -117,7 +117,7 @@ Wakati wa onboarding, agent hukamata maelezo ya tovuti yako katika kategoria ya 
 - Mapendeleo ya usanifu
 - Muundo wa maudhui
 
-### Kwa nini site_brief ni Muhimu
+### Kwa nini site_brief ni Muhimu {#why-sitebrief-matters}
 
 Katika vikao vya baadaye, agents hutumia site_brief yako ili:
 
@@ -126,7 +126,7 @@ Katika vikao vya baadaye, agents hutumia site_brief yako ili:
 - Kutoa mapendekezo yanayojua muktadha
 - Kuepuka kuuliza maswali ya kuanzisha mara kwa mara
 
-### Kuangalia site_brief yako
+### Kuangalia site_brief yako {#viewing-your-sitebrief}
 
 Unaweza kumuomba agent:
 
@@ -142,11 +142,11 @@ au
 
 Agent atakuonyesha maelezo yako ya tovuti yaliyohifadhiwa.
 
-## Kubadilisha Baada ya Onboarding
+## Kubadilisha Baada ya Onboarding {#customizing-after-onboarding}
 
 Baada ya kukamilisha onboarding ya Theme Builder, unaweza:
 
-### Kutumia Design System Aesthetics Skill
+### Kutumia Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Kuomba maboresho ya usanifu:
 
@@ -162,7 +162,7 @@ au
 
 **Design System Aesthetics skill** inakuongoza kupitia masasisho ya usanifu yanayolenga.
 
-### Kuhariri theme.json Moja kwa Moja
+### Kuhariri theme.json Moja kwa Moja {#edit-themejson-directly}
 
 Kwa watumiaji walio na ujuzi zaidi, hariri `/wp-content/themes/[theme-name]/theme.json` ili kurekebisha:
 
@@ -171,7 +171,7 @@ Kwa watumiaji walio na ujuzi zaidi, hariri `/wp-content/themes/[theme-name]/them
 - Spacing values
 - Border and shadow definitions
 
-### Kuunda Custom Block Templates
+### Kuunda Custom Block Templates {#create-custom-block-templates}
 
 Tumia WordPress block editor kuunda templates maalum kwa:
 
@@ -180,7 +180,7 @@ Tumia WordPress block editor kuunda templates maalum kwa:
 - Product pages
 - Contact forms
 
-## Kulinganisha: Zamani vs. Mpya Onboarding
+## Kulinganisha: Zamani vs. Mpya Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Tumia WordPress block editor kuunda templates maalum kwa:
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## Kutatua Matatizo (Troubleshooting)
+## Kutatua Matatizo (Troubleshooting) {#troubleshooting}
 
 **Mchakato wa onboarding haukamilika**
 - Anzisha upya mchakato: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Tumia WordPress block editor kuunda templates maalum kwa:
 - Muombe agent "regenerate the theme with [specific changes]"
 - Hariri theme.json moja kwa moja kwa udhibiti sahihi
 
-## Hatua Zijayo
+## Hatua Zijayo {#next-steps}
 
 Baada ya kukamilisha Theme Builder onboarding:
 

@@ -1,0 +1,117 @@
+---
+title: Tsare-tsaren da ake auna amfani
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Tsare-tsaren da Aka Auna {#metered-plans}
+
+Ƙarin Ultimate Multisite: Metered Plans yana sauya yadda kake cajin abokan cinikinka ta hanyar ƙara damar lissafin kuɗi mai sassauci bisa abin da aka yi amfani da shi. Maimakon tsauraran iyaka da ke toshe masu amfani idan sun wuce, kunna cajin ƙarin amfani wanda ke cajin abokan ciniki kai tsaye don ƙarin amfani.
+
+## Muhimman Fasali {#key-features}
+
+* **Lissafin Kuɗi Bisa Amfani**: Caja abokan ciniki bisa ainihin amfani maimakon matakai tsayayyu
+* **Gudanar da Ƙarin Amfani**: Caja kai tsaye don amfani da ya wuce iyakokin tsari
+* **Bin Didigin Amfani**: Sa ido kan amfani da albarkatun abokin ciniki a ainihin lokaci
+* **Farashi Mai Sassauci**: Saita farashi na musamman don albarkatu daban-daban (ma’aji, bandwidth, shafuka, da sauransu)
+* **Lissafin Kuɗin AI Token**: Bi diddigi kuma caja input da output tokens don amfani da AI a cikin subsites na abokin ciniki
+* **Fitar da Rasit Kai Tsaye**: Ƙirƙiri rasitoci kai tsaye idan an wuce matakan amfani
+* **Rahotannin Amfani**: Cikakken nazarin amfani da rahotanni ga abokan ciniki da masu gudanarwa
+
+## Ya Dace Da {#perfect-for}
+
+* **Masu Bayar da Hosting**: Ba da tsare-tsare masu iya faɗaɗa da ke girma tare da bukatun abokin ciniki
+* **Dandalolin SaaS**: Caja bisa ainihin amfani da albarkatu
+* **Cibiyoyin Agency**: Samfuran farashi masu sassauci don ayyukan abokan hulɗa
+* **Reseller Hosting**: Ba abokan haɗin gwiwa damar bayar da farashi bisa amfani
+
+## Yadda Yake Aiki {#how-it-works}
+
+1. Saita albarkatun da ake aunawa (sararin faifai, bandwidth, yawan shafuka, da sauransu)
+2. Saita iyakokin tsari na asali da farashin ƙarin amfani
+3. Tsarin yana bin diddigin amfani kai tsaye a duk hanyar sadarwarka
+4. Lokacin da abokan ciniki suka wuce iyaka, ana ƙididdige cajin ƙarin amfani
+5. Ana ƙirƙirar rasitoci kai tsaye bisa zagayen lissafin kuɗi
+6. Abokan ciniki za su iya duba amfaninsu da cajin da ke tafe a ainihin lokaci
+
+## Lissafin Kuɗin AI Token {#ai-token-billing}
+
+Sigogi 1.1.0 yana ƙara lissafin kuɗin AI token ga hanyoyin sadarwa da ke bayar da fasalolin AI ta hanyar WordPress AI Client SDK. Metered Plans yana sauraron buƙatun ƙirƙirar AI da aka kammala, yana adana adadin input da output tokens na subsite na yanzu, sannan yana maida waɗannan tokens zuwa kuɗin AI da za a caja a lokacin lissafin kuɗin abokin ciniki na yanzu.
+
+Yi amfani da lissafin kuɗin AI token idan kana son bayar da kayan aikin AI a shafukan abokan ciniki ba tare da ɗaukar kuɗaɗen model marasa tabbas ba. Ana danganta kowace buƙata da subsite, abokin ciniki, membership, mai bayarwa, da model domin masu gudanarwa su iya bincikar amfani yayin da abokan ciniki za su iya ganin yadda amfani da AI ɗinsu ke shafar account ɗinsu.
+
+### Saita Farashin Kowane Token {#configure-per-token-rates}
+
+Ana saita farashin AI ga kowane model a matsayin farashin input da output daban. Ana ƙididdige farashi ga kowane tokens miliyan 1, wanda ya dace da shafukan farashin masu bayar da AI na yau da kullum.
+
+1. A cikin network admin, buɗe **Multisite Ultimate → Settings → Metered Plans**.
+2. Kunna aunawar kuɗin AI don product ko membership da ya kamata ya caja amfani da AI.
+3. Ƙara shigarwar farashin model ta amfani da model IDs da connector ɗinka ya dawo da su, kamar `gpt-4o`, `gpt-4o-mini`, ko wani OpenAI-compatible model identifier.
+4. Shigar da ƙimomin **Farashin Input** da **Farashin Output** daban a kuɗin shafinka ga kowane tokens miliyan 1.
+5. Saita izinin kuɗin AI da aka haɗa na abokin ciniki da halayen ƙarin amfani na tsari.
+
+Idan ba a saita takamaiman model ID ba, Metered Plans zai iya daidaitawa ta prefix na model. Misali, farashin da aka saita don `claude-sonnet-4` zai iya aiki ga model IDs masu timestamp da ke farawa da wannan prefix. Masu haɓakawa kuma za su iya daidaita teburin farashi na ƙarshe da filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### AI Connectors da Ake Tallafawa {#supported-ai-connectors}
+
+Lissafin kuɗin AI token yana aiki da connectors da ke fitar da abubuwan ƙirƙirar WordPress AI Client SDK kuma suna haɗa amfani da token a cikin metadata na martani. Wannan ya haɗa da dangin Ultimate Multisite AI connector da aka rubuta a nan:
+
+* [Ultimate AI Connector don Endpoints Masu Jituwa](../ultimate-ai-connector-compatible-endpoints/) don OpenAI-compatible APIs, ciki har da OpenAI, Mistral, ƙofofin Ollama-compatible, da sauran masu bayarwa da ke nuna metadata na amfani da token mai jituwa
+* [Ultimate AI Connector don WebLLM](../ultimate-ai-connector-webllm/) don amfani da WebLLM na cikin burauza lokacin da ake bi da buƙatu ta hanyar yanayin abubuwan AI Client SDK
+* AI provider connectors da [Gratis AI Agent](../gratis-ai-agent/) ke amfani da su lokacin da mai bayarwa da aka zaɓa ya bayar da rahoton adadin prompt da completion tokens ta hanyar SDK
+
+Custom connectors za su iya shiga ta hanyar kunna daidaitattun abubuwan `wp_ai_client_before_generate_result` da `wp_ai_client_after_generate_result` tare da metadata na model, provider, da amfani da token. Ana tilasta saitunan connector daga babban shafi zuwa subsites domin shafukan abokan ciniki su yi amfani da masu bayarwa da iyakoki da hanyar sadarwa ta amince da su.
+
+### Amfani a Account na Abokin Ciniki {#customer-account-usage}
+
+Abokan ciniki suna ganin amfani da AI tare da sauran albarkatunsu da ake aunawa a yankin account ɗinsu. Layin kuɗin AI yana nuna jimillar lokacin lissafin kuɗi na yanzu da aka samo daga prompt da completion tokens da aka adana, farashin model da aka saita, da duk wani izini da aka haɗa a cikin tsari.
+
+Idan abokin ciniki yana da hanyar biyan kuɗi a fayil, amfani da ya wuce izinin da aka haɗa ana ɗaukarsa a matsayin ƙarin amfani da za a caja. Idan an saita tsarin da tsayayyen yankewa kuma abokin cinikin ba shi da hanyar biyan kuɗi da ake da ita, za a iya toshe buƙatun AI da zarar an kai izinin kuma a umarci abokin cinikin ya ƙara bayanan biyan kuɗi kafin ci gaba.
+
+## Albarkatun da Ake Tallafawa {#supported-resources}
+
+* Ma’ajin faifai
+* Bandwidth/Canja wurin bayanai
+* Yawan shafuka
+* Yawan masu amfani
+* Amfani da AI token da kuɗin AI
+* Nau’o’in albarkatu na musamman
+
+## Bukatu {#requirements}
+
+* Multisite Ultimate 2.0.0 ko sama da haka
+* Shigarwar WordPress Multisite
+* PHP 7.4 ko sama da haka
+
+## Shigarwa {#installation}
+
+1. Loda fayilolin plugin zuwa `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Kunna plugin ta allon 'Plugins' a cikin WordPress
+3. Je zuwa Multisite Ultimate → Settings → Metered Plans
+4. Saita albarkatun da ake aunawa da farashinka
+5. Kunna lissafin kuɗi bisa amfani don products a cikin editan product
+
+## Tambayoyin da Ake Yawan Yi {#frequently-asked-questions}
+
+## Me ke faruwa idan abokin ciniki ya wuce iyakarsa? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Maimakon toshe damar shiga, tsarin yana bin diddigin wuce iyakar kuma yana ƙara shi zuwa invoice na gaba bisa farashin da ka saita.
+
+## Zan iya saita farashin wuce iyaka daban-daban ga kayayyaki daban-daban? {#can-i-set-different-overage-rates-for-different-products}
+
+Ee, kowane kaya na iya samun albarkatun da ake aunawa na musamman da farashin wuce iyaka.
+
+## Ta yaya ake sanar da abokan ciniki game da amfani? {#how-are-customers-notified-about-usage}
+
+Abokan ciniki na iya duba amfanin su na yanzu a cikin Dashboard ɗinsu kuma su karɓi sanarwa na zaɓi lokacin da suke kusantar ko wuce iyakoki.
+
+## Ta yaya ake ƙayyade farashin amfani da token na AI? {#how-is-ai-token-usage-priced}
+
+Ana ƙayyade farashin amfani da token na AI daga farashin shigarwa da fitarwa da aka saita na model ɗin a kan token miliyan 1. Tsare-tsaren da ake aunawa suna ninka adadin prompt da completion token na kowace buƙata da waɗannan farashin, su ƙara sakamakon zuwa kuɗin AI na abokin ciniki na lokacin biyan kuɗi na yanzu, sannan su aiwatar da allowance ko ƙa’idojin wuce iyaka na plan ɗin.
+
+## Har yanzu zan iya amfani da iyakoki masu tsauri? {#can-i-still-use-hard-limits}
+
+Ee, biyan kuɗi da ake aunawa na zaɓi ne ga kowane kaya. Za ka iya haɗa kayayyaki na gargajiya masu iyaka mai tsauri da kayayyaki da ake aunawa.

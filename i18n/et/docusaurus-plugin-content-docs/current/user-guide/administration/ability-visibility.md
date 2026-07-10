@@ -3,11 +3,11 @@ title: Nähtavus
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Võimaluse nähtavus (Ability Visibility)
+# Võimaluse nähtavus (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 lisab **Võimaluse nähtavuse** kontrollid, mis määratlevad, millised pinnad (surfaces) iga võimele on avatud. See võimaldab administraatorit hianna seda, millise agenti võimed on saadaval REST API-ga, MCP serveril, WooCommerce integreerimudel ja teistes interfeesse.
 
-## Mis on Võimaluse nähtavus?
+## Mis on Võimaluse nähtavus? {#what-is-ability-visibility}
 
 Võimaluse nähtavus on luba süsteem, mis kontrollib:
 
@@ -18,9 +18,9 @@ Võimaluse nähtavus on luba süsteem, mis kontrollib:
 
 Iga võime on sellele omab nähtavusaste, mis määratleb selle saadavalolekuse erinevate pinnade ület.
 
-## Nähtavusaste
+## Nähtavusaste {#visibility-levels}
 
-### Avalik (Public)
+### Avalik (Public) {#public}
 
 **Avalikud võimed** on saadaval igal kohas:
 
@@ -32,7 +32,7 @@ Iga võime on sellele omab nähtavusaste, mis määratleb selle saadavalolekuse 
 
 Näide: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Sisuline (Internal)
+### Sisuline (Internal) {#internal}
 
 **Sisulised võimed** on saadaval ainult teie WordPress installatsioonil:
 
@@ -43,7 +43,7 @@ Näide: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Näide: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Partner võimed** on saadaval ainult lubatud partneritele:
 
@@ -54,7 +54,7 @@ Näide: `manage-settings`, `view-analytics`, `export-data`
 
 Näide: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Võidetud (Disabled)
+### Võidetud (Disabled) {#disabled}
 
 **Võidetud võimed** ei ole ühelgi saadaval:
 
@@ -63,15 +63,15 @@ Näide: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ei ole saadaval administratsioonipaneelides
 - Kasulik vanade või eksperimentaalsete võimete jaoks
 
-## Võimuste nähtavuse juhtimine
+## Võimuste nähtavuse juhtimine {#managing-ability-visibility}
 
-### Võimuste nähtavuse seadistuste külastamine
+### Võimuste nähtavuse seadistuste külastamine {#accessing-ability-visibility-settings}
 
 1. Minenda **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klõpsake **Abilities** tabile
 3. Siin näete kõik installitud võimused ja nende nähtavusleved
 
-### Võimuste üksikasjade vaatamise
+### Võimuste üksikasjade vaatamise {#viewing-ability-details}
 
 Klõpsake milleväärse võimuse all, et näha:
 
@@ -82,7 +82,7 @@ Klõpsake milleväärse võimuse all, et näha:
 - **Last updated**: Kui viimati muuteti nähtavust
 - **Status**: Tunnistatud või Klassifitseeritumata
 
-### Nähtavuslevede muutmise
+### Nähtavuslevede muutmise {#changing-visibility-levels}
 
 Võimuse nähtavuse muutmine:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Massiivsed operatsioonid
+### Massiivsed operatsioonid {#bulk-operations}
 
 Paljud võimuste nähtavuse muutmine:
 
@@ -108,11 +108,11 @@ Paljud võimuste nähtavuse muutmine:
 2. Valige uus nähtavusleade valikust massiivse toimimise alasvetava menust
 3. Klõpsake **Apply**
 
-## Partneri allow-list
+## Partneri allow-list {#partner-allow-list}
 
 **Partneri allow-list** kontrollib, millised väljaspool partnerid pääsuraks Partner-tase võimusi kasutama.
 
-### Partnerite lisamine
+### Partnerite lisamine {#adding-partners}
 
 1. Minenda **Superdav AI Agent** → **Settings** → **Partners**
 2. Klõpsake **Add Partner**
@@ -120,7 +120,7 @@ Paljud võimuste nähtavuse muutmine:
 4. Lisage valikult partneri nimi ja kirjeldus
 5. Klõpsake **Save**
 
-### Võimuste partnerite asendamine
+### Võimuste partnerite asendamine {#assigning-abilities-to-partners}
 
 Partneri lisamist pärast:
 
@@ -130,7 +130,7 @@ Partneri lisamist pärast:
 4. "Partner allow-list" osas lühike, milles tähistate kontrolli jaoks vajalikke partnerid
 5. Klõpsake **Save**
 
-### Partneri juuritamise tagastamine
+### Partneri juuritamise tagastamine {#revoking-partner-access}
 
 Partneri küsimuse eemal damiseks:
 
@@ -140,11 +140,11 @@ Partneri küsimuse eemal damiseks:
 
 Partner kaotab selle abilite kasutamise kohe.
 
-## Klassifitseerimatu abilited
+## Klassifitseerimatu abilited {#unclassified-abilities}
 
 Kui installite kolmandise osalduja abilite, mida Superdav AI Agent ei tunnista, see märgitakse kui **Unclassified**.
 
-### Administratsioonikogemus klassifitseerimatud abilite kohta
+### Administratsioonikogemus klassifitseerimatud abilite kohta {#admin-notice-for-unclassified-abilities}
 
 Näete administrati koguniku:
 
@@ -161,7 +161,7 @@ Palun vaadake ja klassifitseerige need.
 [Abiliste vaatamine] [Eemaldamine]
 ```
 
-### Klassifitseerimatud abiliste vaatamise
+### Klassifitseerimatud abiliste vaatamise {#reviewing-unclassified-abilities}
 
 1. Klõpsake küsimuses **Review Abilities**
 2. Iga klassifitseerimatud abilite kohta näete:
@@ -178,7 +178,7 @@ Palun vaadake ja klassifitseerige need.
 
 4. Klõpsake **Classify** saadud otsuse salvestamiseks
 
-### Miks klassifitseerida klassifitseerimatud abilid?
+### Miks klassifitseerida klassifitseerimatud abilid? {#why-classify-unclassified-abilities}
 
 Abilite klassifitseerimine:
 
@@ -187,9 +187,9 @@ Abilite klassifitseerimine:
 - **Avab funktsioone**: Klassifitseerimise pärast saab abilite kasutamine saadaval
 - **Dokumenteerib otsuse**: Valikud on auditlikule tarkuse jaoks registreeritud
 
-## Nähtavus erinevate pinnadeelades
+## Nähtavus erinevate pinnadeelades {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Avalikud võimalused** on saadaval REST endpointide kaudu:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Sisemised ja partneri võimalused** on REST API kaudu saadaval mitte.
 
-### MCP Serverid
+### MCP Serverid {#mcp-servers}
 
 **Avalikud võimalused** on saadaval MCP abil:
 
@@ -217,7 +217,7 @@ Käesolevad võimalused:
 
 **Partneri võimalusi** on saadaval ainult partneri ühtlustega.
 
-### WooCommerce integreerimine
+### WooCommerce integreerimine {#woocommerce-integration}
 
 **WooCommercega seotud avalikud võimalused** on saadaval:
 
@@ -227,7 +227,7 @@ Käesolevad võimalused:
 
 **Sisemised võimalused** ei ole avatud WooCommerceile.
 
-### Chattiküsimusinterface
+### Chattiküsimusinterface {#chat-interface}
 
 **Kõik võimalused** (avalikud, sisemised, partneri) on saadaval chattis, sõltuvalt kasutaja õigustest:
 
@@ -235,34 +235,34 @@ Käesolevad võimalused:
 - Tavalisel kasutajatel näed ainult avalikud võimalused
 - Partnerid näevad avalikud + partneri võimalusi (nend korral, kui nad on whitelistitud)
 
-## Turvalisuse parimised praktikad
+## Turvalisuse parimised praktikad {#security-best-practices}
 
-### Väike õiguste põhimõte
+### Väike õiguste põhimõte {#principle-of-least-privilege}
 
 - Asetage võimalused kõige piirustavamale nähtavusle, mis nende kasutamist endiselt võimaldab
 - Kasutage partneri nähtavust tundlikud operatsioonid jaoks
 - Lülitage välja võimalused, mida te ei kasuta
 
-### Regulaarsed auditi
+### Regulaarsed auditi {#regular-audits}
 
 - Kontrollige võimaluste nähtavust kord kuus kuud
 - Kontrollige klassifitseerimatuide
 - Eemaldage küsimatud partnerite kasutamata aksesse
 
-### Logimine ja jälgimine
+### Logimine ja jälgimine {#logging-and-monitoring}
 
 - Järgige, millise võimalusi kõige rohkem kasutatakse
 - Järgige partnerite külastamise maku
 - Teatage eritihedas võimaluste kasutamisest
 
-### Kolmandate osapoolte võimalused
+### Kolmandate osapoolte võimalused {#third-party-abilities}
 
 - Kontrollige kolmandate osapoolte võimalusi enne aktiveerimist
 - Klassifitseerige need ekspliciteelt
 - Alustage sisemise või partneri nähtavusega
 - Promootige avalikuks ainult pärast kontrollimist
 
-## Probleemlust
+## Probleemlust {#troubleshooting}
 
 **Kõrraldu ei näha loendis**
 - Kontrollige, kas võlade on paigaldatud ja aktiivsed
@@ -285,7 +285,7 @@ Käesolevad võimalused:
 - Kontrollige, et teie klassifikatsioon on salvestatud
 - Kontrollige, kas võla antvaata plugin on uuendatud
 
-## Migratsioon vanema režiimidest
+## Migratsioon vanema režiimidest {#migration-from-legacy-mode}
 
 Kui tõstate vanemast Superdav AI Agenti versioon:
 
@@ -295,7 +295,7 @@ Kui tõstate vanemast Superdav AI Agenti versioon:
 
 Loe **Kolmepoolse režiimi migratsiooni** rohkem infot ülesliituse API-integreerimise üle.
 
-## Järgmine sammud
+## Järgmine sammud {#next-steps}
 
 Võla nähtavuse konfiguratsiooni pärast:
 

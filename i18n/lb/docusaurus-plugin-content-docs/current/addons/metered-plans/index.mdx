@@ -1,0 +1,117 @@
+---
+title: Notzungsbaséiert Pläng
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Gemoosse Pläng {#metered-plans}
+
+Den Ultimate Multisite: Metered Plans Addon transforméiert, wéi Dir Är Clientë verrechent, andeems flexibel Méiglechkeete fir gemoosse Verrechnung ageféiert ginn. Amplaz vu starre feste Limiten, déi Benotzer blockéieren, wann se iwwerschratt ginn, aktivéiert Dir Iwwerschreidungsgebühren, déi Clienten automatesch fir zousätzlech Notzung verrechnen.
+
+## Haaptfunktiounen {#key-features}
+
+* **Gemoosse Verrechnung**: Verrechent Clienten op Basis vun der tatsächlecher Notzung amplaz vu feste Stufen
+* **Iwwerschreidungsverwaltung**: Verrechent automatesch Notzung, déi Planglimiten iwwerschreit
+* **Notzungsverfolgung**: Iwwerwaacht de Ressourceverbrauch vu Clienten an Echtzäit
+* **Flexibel Präisser**: Setzt personaliséiert Tariffer fir verschidde Ressourcen (Späicher, Bandbreet, Siten, asw.)
+* **AI-Token-Verrechnung**: Verfollegt a verrechent Input- an Output-Tokene fir AI-Notzung iwwer Client-Subsiteën
+* **Automatesch Rechnungsstellung**: Generéiert Rechnungen automatesch, wann Notzungsschwellwäerter iwwerschratt ginn
+* **Notzungsberichter**: Detailléiert Notzungsanalysen a Berichter fir Clienten an Administrateuren
+
+## Perfekt Fir {#perfect-for}
+
+* **Hosting-Ubidder**: Bitt skaléierbar Pläng un, déi mat de Besoine vun de Clientë wuessen
+* **SaaS-Plattformen**: Verrechent op Basis vum tatsächleche Ressourceverbrauch
+* **Agencenetzwierker**: Flexibel Präismodeller fir Clientsprojeten
+* **Reseller-Hosting**: Erméiglecht Partneren, notzungsbaséiert Präisser unzebidden
+
+## Wéi Et Fonctionéiert {#how-it-works}
+
+1. Konfiguréiert gemoosse Ressourcen (Diskspäicher, Bandbreet, Zuel vu Siten, asw.)
+2. Setzt Basis-Planglimiten an Iwwerschreidungstariffer
+3. De System verfollegt automatesch d'Notzung iwwer Äert Netzwierk
+4. Wann Clientë Limiten iwwerschreiden, ginn Iwwerschreidungsgebühre berechent
+5. Rechnunge ginn automatesch op Basis vum Verrechnungszyklus generéiert
+6. Clientë kënnen hir Notzung an zukünfteg Käschten an Echtzäit gesinn
+
+## AI-Token-Verrechnung {#ai-token-billing}
+
+Versioun 1.1.0 füügt AI-Token-Verrechnung fir Netzwierker bäi, déi AI-Funktiounen iwwer de WordPress AI Client SDK ubidden. Metered Plans lauschtert op ofgeschloss AI-Generéierungsufroen, späichert Input- an Output-Tokenzuele fir déi aktuell Subsite, a konvertéiert dës Tokenen an verrechenbar AI-Ausgaben fir déi aktuell Verrechnungsperiod vum Client.
+
+Benotzt AI-Token-Verrechnung, wann Dir AI-Tools op Client-Siteë wëllt ubidden, ouni onvirauszegesi Modellkäschten ze iwwerhuelen. All Ufro gëtt der Subsite, dem Client, der Memberschaft, dem Ubidder an dem Modell zougeuerdent, sou datt Administrateuren d'Notzung iwwerpréiwe kënnen, wärend Clientë gesinn, wéi hiren AI-Verbrauch hiren Account beaflosst.
+
+### Pro-Token-Tariffer Konfiguréieren {#configure-per-token-rates}
+
+AI-Tariffer ginn pro Modell als getrennten Input- an Output-Tariffer konfiguréiert. Tariffer ginn pro 1 Millioun Tokene berechent, wat de gängegen AI-Ubidder-Präissäiten entsprécht.
+
+1. Am Netzwierk-Admin, maacht **Multisite Ultimate → Settings → Metered Plans** op.
+2. Aktivéiert AI-Ausgabemiessung fir de Produkt oder d'Memberschaft, déi AI-Notzung verrechne soll.
+3. Füügt Modell-Tarifentréen derbäi mat de Modell-IDen, déi vun Ärem Connector zeréckginn ginn, wéi `gpt-4o`, `gpt-4o-mini`, oder engem aneren OpenAI-kompatibele Modell-Identifier.
+4. Gitt getrennten **Input-Tarif**- an **Output-Tarif**-Wäerter an Ärer Site-Wärung pro 1 Millioun Tokenen an.
+5. Setzt déi abegraff AI-Ausgabenerlaabnis vum Client an d'Iwwerschreidungsverhale fir de Plang.
+
+Wann eng exakt Modell-ID net konfiguréiert ass, kann Metered Plans no Modellpräfix passen. Zum Beispill kann en Tarif, dee fir `claude-sonnet-4` konfiguréiert ass, op Modell-IDe mat Zäitstempel applizéiert ginn, déi mat deem Präfix ufänken. Entwéckler kënnen och déi final Tarifstabell mam [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) Filter upassen.
+
+### Ënnerstëtzt AI-Connectoren {#supported-ai-connectors}
+
+AI-Token-Verrechnung funktionéiert mat Connectoren, déi WordPress AI Client SDK Generéierungsevenementer ausginn an Tokennotzung an de Respons-Metadaten enthalen. Dëst ëmfaasst d'Ultimate Multisite AI-Connector-Famill, déi hei dokumentéiert ass:
+
+* [Ultimate AI Connector fir kompatibel Endpoints](../ultimate-ai-connector-compatible-endpoints/) fir OpenAI-kompatibel APIen, inklusiv OpenAI, Mistral, Ollama-kompatibel Gateways, an aner Ubidder, déi kompatibel Tokennotzungs-Metadaten ubidden
+* [Ultimate AI Connector fir WebLLM](../ultimate-ai-connector-webllm/) fir browser-nativ WebLLM-Notzung, wann Ufroen iwwer den AI Client SDK Evenementfloss geleet ginn
+* AI-Ubidder-Connectoren, déi vum [Gratis AI Agent](../gratis-ai-agent/) benotzt ginn, wann de gewielten Ubidder Prompt- a Completion-Tokenzuelen iwwer den SDK mellt
+
+Personaliséiert Connectoren kënne matmaachen, andeems se déi standardméisseg `wp_ai_client_before_generate_result` an `wp_ai_client_after_generate_result` Evenementer mat Modell-, Ubidder- an Tokennotzungs-Metadaten ausléisen. Connector-Astellunge gi vun der Haaptsite op Subsiteën duerchgesat, sou datt Client-Siteën déi vum Netzwierk geneemegt Ubidder a Limite benotzen.
+
+### Client-Account-Notzung {#customer-account-usage}
+
+Clientë gesinn AI-Notzung nieft hiren anere gemoossene Ressourcen an hirem Account-Beräich. D'AI-Ausgaben-Zeil weist den aktuellen Total vun der Verrechnungsperiod, ofgeleet aus den opgehollene Prompt- a Completion-Tokenen, de konfiguréierte Modell-Tariffer, an all abegraff Erlaabnis am Plang.
+
+Wann e Client eng Bezuelmethod am Dossier huet, gëtt Notzung iwwer der abegraffener Erlaabnis als verrechenbar Iwwerschreidung behandelt. Wann de Plang fir eng haart Ofschaltung konfiguréiert ass an de Client keng verfügbar Bezuelmethod huet, kënnen AI-Ufroe blockéiert ginn, soubal d'Erlaabnis erreecht ass, an de Client gëtt opgefuerdert, Bezuelungsdetailer derbäizesetzen, éier e weiderfuert.
+
+## Ënnerstëtzt Ressourcen {#supported-resources}
+
+* Diskspäicher
+* Bandbreet/Datentransfer
+* Zuel vu Siten
+* Zuel vu Benotzer
+* AI-Tokennotzung an AI-Ausgaben
+* Personaliséiert Ressourcentypen
+
+## Ufuerderungen {#requirements}
+
+* Multisite Ultimate 2.0.0 oder méi héich
+* WordPress Multisite Installatioun
+* PHP 7.4 oder méi héich
+
+## Installatioun {#installation}
+
+1. Lued d'Plugin-Dateien op `/wp-content/plugins/ultimate-multisite-metered-plans` erop
+2. Aktivéiert de Plugin iwwer den 'Plugins'-Bildschierm a WordPress
+3. Navigéiert op Multisite Ultimate → Settings → Metered Plans
+4. Konfiguréiert Är gemoosse Ressourcen a Präisser
+5. Aktivéiert gemoosse Verrechnung fir Produkter am Produkt-Editor
+
+## Heefeg Gestallte Froen {#frequently-asked-questions}
+
+## Wat geschitt, wann e Client seng Limit iwwerschreit? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Amplaz den Zougang ze blockéieren, verfollegt de System d'Iwwerschreidung a füügt se op Basis vun den Tariffer, déi Dir konfiguréiert hutt, op hir nächst Rechnung bäi.
+
+## Kann ech verschidden Iwwerschreidungstariffer fir verschidde Produiten astellen? {#can-i-set-different-overage-rates-for-different-products}
+
+Jo, all Produit kann eenzegaarteg gemoosse Ressourcen an Iwwerschreidungspräisser hunn.
+
+## Wéi gi Clienten iwwer d'Notzung informéiert? {#how-are-customers-notified-about-usage}
+
+Clientë kënnen hir aktuell Notzung an hirem Dashboard gesinn an optional Notifikatioune kréien, wann se sech Limitten erunäeren oder se iwwerschreiden.
+
+## Wéi gëtt d'AI-Token-Notzung verrechent? {#how-is-ai-token-usage-priced}
+
+D'AI-Token-Notzung gëtt op Basis vun den am Modell konfiguréierten Input- an Output-Tariffer pro 1 Millioun Token berechent. Gemoosse Pläng multiplizéieren d'Zuel vun de Prompt- an Completion-Token vun all Ufro mat dësen Tariffer, addéieren d'Resultat zu den aktuelle AI-Ausgabe vum Client fir déi lafend Rechnungsperiod a wenden d'Allowance- oder Iwwerschreidungsreegele vum Plang un.
+
+## Kann ech nach ëmmer haart Limitte benotzen? {#can-i-still-use-hard-limits}
+
+Jo, gemoosse Verrechnung ass pro Produit optional. Dir kënnt traditionell Produite mat haarde Limitte mat gemoosse Produite mëschen.

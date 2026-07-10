@@ -3,11 +3,11 @@ title: Pam mae Ultimate Multisite yn ddefnyddiol?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Pamodol y Ultimate Multisite
+# Pamodol y Ultimate Multisite {#why-ultimate-multisite}
 
 Os ydych chi i'r ail ddeb hon, byddwch yn gwrdd eich bod plugin yn ei ddefnyddio i gwneud eich iddiad busnes yn wir. Rydyn ni'n gosod eich ymatebau sy rydych chi angen ar awr yma.
 
-## Beth yw Ultimate Multisite?
+## Beth yw Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Mae Ultimate Multisite yn plugin WordPress Multisite sy'n gynnig i chi ei wneud cyflwyno WaaS (Website as a Service) i'r cyddeeau eich cleiention. gyda'r plugin ein, gallwch gael ystafellau cyflwyniad amgylcheddol (subscription tiers) amrywiol ac gall eich cleiention talu eich ffeithau allan yn ddiwethaf i gael siwllt wedi'i gysylltu mewn rheol-gwaith Multisite eich.
 
@@ -15,7 +15,7 @@ Mae Ultimate Multisite yn sylwiwch chi i derbyn eich talu gyda chyfathriadau (ga
 
 Ac mae hyn yn un o'r dechrau, gan gallwch gyfeiriad ei ffuncau gyda add-ons a webhooks.
 
-## Ffudiant arall
+## Ffudiant arall {#other-features}
 
 Mae Ultimate Multisite hefyd yn cynnig:
 
@@ -33,11 +33,11 @@ A chwarae byth yn fwy o adeiladu:
 
 * API Cyfathrebu a Newidi: Gallwch hefyd ddefnyddio placeholderau fel {{site_name}} ar gyfer y templates o'r safle gyda Search and Replace API i fyddai'n cyflwyno'r placeholderau hyn yn awt gyda phrydoliaeth a rhoi gan eich cyddeeion ar ôl y cyflwyniad, yn awtomatig.
 
-## Cyfathrebuadau (Use cases)
+## Cyfathrebuadau (Use cases) {#use-cases}
 
 Mae angen i ni ddweud rhywfaint o'r cyfathrebuadau allweddol i Ultimate Multisite.
 
-### Cas 1: Un Gweithredwr (An Agency)
+### Cas 1: Un Gweithredwr (An Agency) {#case-1-an-agency}
 
 Yn y cyffredinol, mae'r gynnwysau hanfodol o'r weithredwr yn dod o dylunio wefanau gyda phrydoliaeth fel eu cyflenwiol neu ei chwarae yn serchion addysgol.
 
@@ -47,7 +47,7 @@ Mae cyddefnyddiau sydd yn fwy o chwarae am y pluginau a'r theimau yn cael eu cad
 
 Bydd ychwanegau'n agensi gyda phithro gyda Ultimate Multisite yn sylw ei ddefnyddio beth mae ganddynt yn dda - dylunio wefanau anhygoel.
 
-### Cas 2: Cyflenwr Niche (Niche Provider)
+### Cas 2: Cyflenwr Niche (Niche Provider) {#case-2-niche-provider}
 
 Mae ychwaneg anedig sydd yn ddigon yn dweud, “Gwylio un neu ddychwch ei ddefnyddio'n dda”. Ar gyfer llawer o specialisau, mae hynny’n teimlo fel creu produsg neu gwasanaeth ar y cwllt un iddo.
 
@@ -57,7 +57,7 @@ Un o'r ffeithiau nys yn Ultimate Multisite, mae wefanau templ (template site) yn
 
 Ar gyfer cyflenwr o wefanau a gwasanaethau niche, mae hyn yn rhoi ffordd ddefnyddiol yn anhygoel mewn cadarnhau wefan yn barod i gweithio gyda pluginau ac dylunio arall. Mae'r cyddefnyddwr yn neegid i rhoi cyflwyniad bech ymwnebu â'r gwasanaeth diwethaf.
 
-### Cas 3: Gweithrediad Web WordPress (WordPress Web Hosting)
+### Cas 3: Gweithrediad Web WordPress (WordPress Web Hosting) {#case-3-wordpress-web-hosting}
 
 Mae rhai ffordd i gweithredu wefanau WordPress, ond yn rhy ddigon iddo fod yn einfal fel rhoi lle web i'r cyddefnyddwr gyda ffurf WordPress wedi'i chwarae. Mae hyn oherwydd bod angen i'r destunion a'r mynediadau i gystadleu i rhoi gwasanaeth ddefnyddiol.
 

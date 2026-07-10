@@ -1,0 +1,13 @@
+---
+id: wu_apc_admin_pages_advanced_options_tabs
+title: فلټر - wu_apc_admin_pages_advanced_options_tabs
+sidebar_label: wu_apc_admin_pages_advanced_options_tabs
+_i18n_hash: 7b1560b02ed7effca5b4a1af86a50092
+---
+# فلټر: wu_apc_admin_pages_advanced_options_tabs {#filter-wuapcadminpagesadvancedoptionstabs}
+
+ټبونه
+
+### سرچینه {#source}
+
+په [`views/admin-pages/admin-page-advanced-options.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/admin-page-advanced-options.php#L23) کې په ۲۳ کرښه تعریف شوی.

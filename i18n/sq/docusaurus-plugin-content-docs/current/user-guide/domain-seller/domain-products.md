@@ -3,11 +3,11 @@ title: Produkte dhe Çmimet e Domenit
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produkte dhe Çmimet e Domenave
+# Produkte dhe Çmimet e Domenave {#domain-products-and-pricing}
 
 Produktivitetet e domenit janë mënyra se si kontrolloni çmimet, TLD-të (Top-Level Domains), privatësinë WHOIS dhe zgjedhjen e ofrues. Çdo produkt i domeneve është një produkt standard Ultimate Multisite me një tab shtesë **Domain Settings** (Cilësimet e Domenit).
 
-## Krijimi i një produkti domen
+## Krijimi i një produkti domen {#creating-a-domain-product}
 
 1. Shko te **Network Admin › Ultimate Multisite › Products**
 2. Kliko **Add New** (Shto të ri)
@@ -17,13 +17,13 @@ Produktivitetet e domenit janë mënyra se si kontrolloni çmimet, TLD-të (Top-
 
 Produkte të Domenit shfaqen me një etiketë e purpël **Domain** në listën e produkteve dhe mund të filistrohen duke përdorur tabin **Domain Products**.
 
-## Tab-i Caktimi i Domenit (Domain settings tab)
+## Tab-i Caktimi i Domenit (Domain settings tab) {#domain-settings-tab}
 
-### Përcjellësi (Provider)
+### Përcjellësi (Provider) {#provider}
 
 Zgjidhni cilin registrator do të menaxhojë regjistrimin për këtë produkt. Veprimi varet nga **Default provider** (Përshërbuesi i paracaktuar) i vendosur në cilësimet e Domain Seller.
 
-### TLD-të e mbështetura
+### TLD-të e mbështetura {#supported-tlds}
 
 Lëreni të zbrazët për të krijuar një produkt **catch-all** që vlen për të gjitha TLD-të që nuk përmbajnë produktin tjetër.
 
@@ -31,7 +31,7 @@ Vendosni një listë të ndarë me koma të TLD-ve (p.sh., `.com, .net, .org`) p
 
 **Si funksionon përshtatja e produktit:** Kur një klient kërkon një domen, addon-i zgjedh produktin më specifik që i përshtatet. Një produkt me `.com` në listën e TLD (Top-Level Domain) të tij ka prioritet mbi një produkt "catch-all" (përfshirës). Nëse nuk gjendet asnjë produkt specifik për një TLD, përdoret ai i përgjithshëm. Nëse nuk ekzistojnë asnjë produkt, kërkimi i domenit nuk shfaqet.
 
-### Lloji i markimit (Markup type)
+### Lloji i markimit (Markup type) {#markup-type}
 
 Tre mënyra kontrollojnë si llogaritet çmimin tuaj retail nga kosta me produkteve (wholesale cost):
 
@@ -42,11 +42,11 @@ Tre mënyra kontrollojnë si llogaritet çmimin tuaj retail nga kosta me produkt
 
 | **Çmimi i fiksuar** | Ignoron plotësisht koston me llogari (wholesale). Gjithmonë e bën atë shumë që vendosni. |
 
-### Çmimet fillestare
+### Çmimet fillestare {#introductory-pricing}
 
 Le të lejoni t'i ofroni një çmim më të ulët për vitin e parë. Vendosni një **Çmim i hyrjes** (çmimi për vitin 1) paralel me **Çmimin e rinovimit** (çmimi për vitin 2+) standard. Klienti do të shohë të dy çmimet gjatë procesit të pagesës, kështu që di se çfarë t'i duhet të presë kur vjen kohës së rinovimit.
 
-### Privatësia WHOIS
+### Privatësia WHOIS {#whois-privacy}
 
 Kontrollon nëse ofrohet mbrojtja e privatësisë WHOIS për domenët të regjistruar përmes këtij produkti.
 
@@ -61,7 +61,7 @@ Për Namecheap, privatësia WHOIS përdoret me WhoisGuard (gjithmonë falas). P�
 
 ---
 
-## Import dhe sinkronizim TLD-ve
+## Import dhe sinkronizim TLD-ve {#tld-import-and-sync}
 
 Produkte të domeneve shfaqin çmimin me llojë wholesale (me produkte më të ulë) në kohë reale nga providuesi i lidhur. Për që kjo të funksionojë, duhet të importohen TLD-të (Top-Level Domains).
 
@@ -72,7 +72,7 @@ Pasi të bëni një sinkronizim, shijoni në çdo produkt domaini (domain produc
 
 ---
 
-## Rritja automatike (Auto-renewal)
+## Rritja automatike (Auto-renewal) {#auto-renewal}
 
 Rritjet e domenit janë të lidhura me statusin e anëtarisë së klientit:
 
@@ -91,7 +91,7 @@ ID-të e shablonit (template) të email-eve për ngjarjet e ciklit të domenit:
 | Rritja e rinovimit dështoi | `domain_renewal_failed` |
 | Domeni po skadon shpejt | `domain_expiring_soon` |
 
-## Admin: Regjistrimi manual i domenit
+## Admin: Regjistrimi manual i domenit {#admin-manual-domain-registration}
 
 Për të regjistruar një domen për një klient pa kaluar përmes procesit të pagesës (checkout):
 

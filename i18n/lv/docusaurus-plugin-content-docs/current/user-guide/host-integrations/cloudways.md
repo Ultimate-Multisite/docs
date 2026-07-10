@@ -3,18 +3,18 @@ title: Cloudways integrācija
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integrācija
+# Cloudways Integrācija {#cloudways-integration}
 
-## Īsszums
+## Īsszums {#overview}
 Cloudways ir pārvaldīta viltas (cloud) hostings platforma, kas ļauj jums izvietot WordPress vietnes dažādās viltu sniedzējus, piemēram DigitalOcean, AWS, Google Cloud un citus. Šī integrācija atrodas iespējama automātiskās domānu sinhronizācijas un SSL sertifikātu pārvaldības starp Ultimate Multisite un Cloudways.
 
-## Funkcionalitātes
+## Funkcionalitātes {#features}
 - Automātiskā domānu sinhronizācija
 - SSL sertifikātu pārvaldība
 - Atbalsts papildu domānu
 - DNS validācija SSL sertifikātiem
 
-## Prasības
+## Prasības {#requirements}
 Jums jādefinē šīs konstantes `wp-config.php` failā:
 
 ```php
@@ -30,16 +30,16 @@ Optiāli, jūs varat definēt arī:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domānu_saraksts_kommas_starp_elementiem');
 ```
 
-## Iestatīšanas instrukcijas
+## Iestatīšanas instrukcijas {#setup-instructions}
 
-### 1. Saņemiet savus Cloudways API atļaujas (Credentials)
+### 1. Saņemiet savus Cloudways API atļaujas (Credentials) {#1-get-your-cloudways-api-credentials}
 
 1. Loginieties uz savu Cloudways dashboardu
 2. Dodieties uz "Account" > "API Keys" (Kontrole > API kļūtres)
 3. Izveidiet API kluci, ja jums vēl nav
 4. Kopējiet savu e-pastu un API kluci
 
-### 2. Saņemiet savus servera un lietojuma ID
+### 2. Saņemiet savus servera un lietojuma ID {#2-get-your-server-and-application-ids}
 
 1. Savā Cloudways dashboardā dodieties uz "Servers" (Serveri)
 2. Izvēlieties serveri, kurā hostēts jūsu WordPress multisite
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'domānu_saraksts_kommas_starp_elementiem')
 4. Dodieties uz "Applications" (Aplikācijas) un izvēlieties savu WordPress lietojumu
 5. Aplikacijas ID ir redzams URL adresē: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Pievienojiet konstantes `wp-config.php` failā
+### 3. Pievienojiet konstantes `wp-config.php` failā {#3-add-constants-to-wp-configphp}
 
 Pievienojiet šīs konstantes savam `wp-config.php` failam:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 **Neievadiet** `*.jūsu-tīkla.com` (vai jebkuru jūsu tīkla subdomēna shēmu) `WU_CLOUDWAYS_EXTRA_DOMAINS`-ā. Redziet [Svarīgi — wildcard SSL problēma](#important--wildcard-ssl-pitfall) lai saprastu, kāpēc tas novērš per-tenant SSL sertifikātu izdošanu.
 :::
 
-### 4. Iespējot integrāciju
+### 4. Iespējot integrāciju {#4-enable-the-integration}
 
 1. Savuk WordPress admina, dodieties uz Ultimate Multisite > Settings (Iestatījumi)
 2. Navigējieties uz tabulu "Domain Mapping" (Domānu mapi)
@@ -76,9 +76,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Iespējiet Cloudways integrāciju
 5. Nospressiet "Save Changes" (Saglabāt izmaiņas)
 
-## Kā tas darbojas
+## Kā tas darbojas {#how-it-works}
 
-### Domānu sinkronizēšana
+### Domānu sinkronizēšana {#domain-syncing}
 
 Kad domāns tiek mapiet Ultimate Multisite:
 
@@ -89,7 +89,7 @@ Kad domāns tiek mapiet Ultimate Multisite:
 
 Piezīme: Cloudways API prasa sūtīt pilnu domānu sarakstu katru reizi, ne tikai pievienot vai izņemt viens domānu.
 
-### SSL sertifikātu pārvaldība
+### SSL sertifikātu pārvaldība {#ssl-certificate-management}
 
 Pēc domānu sinkronizēšanas:
 
@@ -99,7 +99,7 @@ Pēc domānu sinkronizēšanas:
 
 Integrācija vienmēr prasa **standartus** (neveidrojamus) Let's Encrypt sertifikātu no Cloudways. Ja `WU_CLOUDWAYS_EXTRA_DOMAINS` iestatas wildcard atkarību, pirmais `*.` tiek izņemts pirms SSL pieprasījumam — pašas wildcard atkarības šo integrāciju neinstalē nekad. Lai izmantotu wildcard sertifikātu Cloudways, jums būtu jāinstalē tas maniski, bet to darīšana blokē Let's Encrypt sertifikātu izdošanu par katru domānu (skatīt apakšpusēm).
 
-## Papildu domāni
+## Papildu domāni {#extra-domains}
 
 Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` ļauj jums noteikt papildu **ārējus** domānu, kas vienmēr jātur atkarībā Cloudways lietojuma alias listā. Izmantojiet to šādi:
 
@@ -108,7 +108,7 @@ Konstanta `WU_CLOUDWAYS_EXTRA_DOMAINS` ļauj jums noteikt papildu **ārējus** d
 
 **Neizmantojiet** šo konstantu savas tīkla subdomānu wildcard atkarībām (piemēram, `*.your-network.com`). Skatīt apakšpusēm wildcard SSL problēmu.
 
-## Savieta Cloudways SSL konfigurācija Ultimate Multisite tīklamai
+## Savieta Cloudways SSL konfigurācija Ultimate Multisite tīklamai {#important--wildcard-ssl-pitfall}
 
 Parasti kļūda, kad sekojam Cloudways defaultu iestatījumus, ir pievienot wildcard atkarību, piemēram `*.your-network.com`, `WU_CLOUDWAYS_EXTRA_DOMAINS` vai maniski instalēt Cloudways wildcard SSL sertifikātu šai wildcard atkarībai.
 
@@ -120,21 +120,21 @@ Parasti kļūda, kad sekojam Cloudways defaultu iestatījumus, ir pievienot wild
 
 Ja jūsu lietotāju personālajos domēnos nav SSL, pārbaudiet Cloudways SSL tabu. Ja tur ir aktīvs vārdslēju sertifikāts, izņemiet to, izdoši standart Let's Encrypt sertifikātu tikai galvenajai tīkla domēnei un izņemiet jebkuru vārdslēju ienriets no `WU_CLOUDWAYS_EXTRA_DOMAINS`. Tad atspējiet domēnu mapejumu (vai gaidiet nākamu) un integrācija sāk novērtēt sertifikātu individuāli lietotajiem domēniem.
 
-## Kļūdu likums
+## Kļūdu likums {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
-### API savienojuma problēmas
+### API savienojuma problēmas {#troubleshooting}
 - Pārbaudiet, vai jūsu e-pasta adrese un API kluāvs ir pareizi ievadīti
 - Pārbaudiet, vai jūsu servera un lietojuma ID ir pareizi
 - Nodrošiniet, ka jūsu Cloudways kontam ir nepieciešamās atļaujas
 
-### Problemas ar SSL sertifikāti
+### Problemas ar SSL sertifikāti {#api-connection-issues}
 
 - Cloudways prasa, ka domēniem jābūt veiksmīgi DNS ierakstiem, kas norāda uz jūsu serveri pirms SSL sertifikātu izdošanas.
 - Integrācija pārbauda DNS ierakstus pirms lūdzot SSL sertifikāt.
 - Ja SSL sertifikāti neizdojās, pārliecinieties, ka jūsu domēni ir pareizi norādīti uz jūsu servera IP adresi.
 - **Vai lietotāji (per-tenant) custom domēni nav ar SSL?** Pārbaudiet Cloudways lietojumkārtas (application) "SSL Certificate" (SSL sertifikāta) tabu. Ja aktīvs ir viltotais sertifikāts (manusāli instalēts vai kas apgrāj `*.your-network.com`), Cloudways neizdo Let's Encrypt sertifikāt individuāli mapejušajiem custom domēniem. Atstājiet to vietā standartizētu Let's Encrypt sertifikātu, kas apgrāj tikai galveno tīkla domēnu (`your-network.com`, `www.your-network.com`) un izņemiet jebkuru viltotās ierakstu no `WU_CLOUDWAYS_EXTRA_DOMAINS`. Tad atspējiet domēna mapešanu (vai gaidiet nākamu) un integrācija lūdz sertifikāt individuāli domēniem.
 
-### Domēna nav pievienota
+### Domēna nav pievienota {#ssl-certificate-issues}
 
 - Pārbaudiet Ultimate Multisite logus jebkurām kļūdas ziņojumiem.
 - Noteikiet, ka domēna vēl nav pievienota Cloudways.

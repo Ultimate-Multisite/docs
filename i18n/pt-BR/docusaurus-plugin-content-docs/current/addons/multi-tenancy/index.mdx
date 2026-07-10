@@ -1,31 +1,45 @@
 ---
 title: Multi-Tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multitenancy {#multi-tenancy}
 
 Distribua subsites entre servidores e bancos de dados para desempenho e segurança
 
-## Requisitos
+## Destaques do lançamento da versão 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 adiciona a base de locatário soberano para fluxos de trabalho de isolamento em produção:
+
+- Autologin de locatário sem estado com visitas SSO de curta duração e protegidas contra repetição.
+- Isolamento de banco de dados e sistema de arquivos por subsite para locatários soberanos.
+- Capacidade de multitenancy Hostinger para provisionamento de locatários com reconhecimento de host.
+- Portões de verificação de migração soberana para verificações de dados legados e processamento push assíncrono.
+- Vinculação configurável de host de banco de dados na mesma máquina para instalações Bedrock, FrankenPHP e localhost.
+- Melhorias no bootstrap de locatário, gravador de banco de dados, bootstrap de esquema e provisionamento de usuários.
+- Desmontagem soberana mais segura que limpa as credenciais do locatário.
+
+Consulte os guias do usuário para [fluxo de trabalho de migração soberana](/user-guide/getting-started/sovereign-migration-workflow), [isolamento de multitenancy](/user-guide/configuration/multi-tenancy-isolation) e [operações de locatário soberano](/user-guide/administration/sovereign-tenant-operations).
+
+## Requisitos {#requirements}
 
 - WordPress 5.3 ou superior
 - PHP 7.4 ou superior
-- Multisite Ultimate plugin (ativo)
+- plugin Multisite Ultimate (ativo)
 
-## Instalação
+## Instalação {#installation}
 
-1. Faça upload dos arquivos do addon para o seu diretório `/wp-content/plugins/`
-2. Ative o plugin através do menu 'Plugins' no WordPress
-3. Configure as configurações do addon no administrador da rede
+1. Envie os arquivos do complemento para o diretório `/wp-content/plugins/`
+2. Ative o plugin pelo menu 'Plugins' no WordPress
+3. Configure as definições do complemento no administrador da rede
 
-## Desenvolvimento
+## Desenvolvimento {#development}
 
-### Configuração
+### Configuração {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estrutura do Projeto
+### Estrutura do projeto {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -70,54 +84,67 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testes
+### Testes {#testing}
 
-O addon inclui um framework de testes abrangente:
+O complemento inclui uma estrutura de testes abrangente:
 
-- **Unit Tests**: PHPUnit-based tests with WordPress test suite
-- **Base Test Class**: Provides helper methods for common test scenarios
-- **Test Coverage**: Configured to track code coverage
-- **Multisite Testing**: Tests run in multisite environment
+- **Testes unitários**: testes baseados em PHPUnit com a suíte de testes do WordPress
+- **Classe de teste base**: fornece métodos auxiliares para cenários de teste comuns
+- **Cobertura de testes**: configurada para rastrear a cobertura de código
+- **Testes Multisite**: os testes são executados em ambiente multisite
 
-### Padrões de Código
+### Padrões de código {#code-standards}
 
-- **WordPress Coding Standards**: Enforced via PHPCS
-- **PHP 7.4+ Compatibility**: Modern PHP features supported
-- **Static Analysis**: PHPStan integration for type checking
-- **Code Modernization**: Rector rules for PHP upgrades
+- **Padrões de codificação do WordPress**: aplicados via PHPCS
+- **Compatibilidade com PHP 7.4+**: suporte a recursos modernos do PHP
+- **Análise estática**: integração com PHPStan para verificação de tipos
+- **Modernização de código**: regras do Rector para upgrades de PHP
 
-### Sistema de Build
+### Sistema de build {#build-system}
 
-- **Asset Processing**: Minification for CSS/JS files
-- **Translation**: POT file generation
-- **Packaging**: Archive creation for distribution
-- **Development Mode**: Unminified assets for debugging
+- **Processamento de assets**: minificação de arquivos CSS/JS
+- **Tradução**: geração de arquivo POT
+- **Empacotamento**: criação de arquivo para distribuição
+- **Modo de desenvolvimento**: assets não minificados para depuração
 
-## Configuração
+## Configuração {#configuration}
 
-O addon suporta várias opções de configuração acessíveis através da interface de administração da rede.
+O complemento oferece suporte a várias opções de configuração acessíveis pela interface de administração da rede.
 
-## Ganchos e Filtros
+### Configuração de locatário soberano {#sovereign-tenant-configuration}
 
-### Ações
+Para locatários soberanos, configure o banco de dados do locatário, a raiz do sistema de arquivos, a vinculação do host do banco de dados e a capacidade do host antes de rotear tráfego para o locatário. Execute a verificação de migração após cada alteração que afete credenciais de banco de dados, vinculação de host, roteamento ou provisionamento de usuários.
 
-- `ultimate-multisite-addon-template_init` - Disparado após a inicialização do addon
-- `ultimate-multisite-addon-template_loaded` - Disparado após todos os arquivos do addon serem carregados
+Use `localhost` somente quando o runtime do locatário e as concessões do banco de dados esperarem acesso por socket local ou na mesma máquina. Use `127.0.0.1` ou um nome de host de serviço quando esse for o host de concessão configurado pelo seu provedor.
 
-### Filtros
+### Capacidade Hostinger {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Modificar as configurações do addon
-- `ultimate-multisite-addon-template_enabled` - Sobrescrever o status de habilitação/desabilitação do addon
+A capacidade de multitenancy Hostinger funciona com o token de integração compartilhado da Hostinger. Confirme que o domínio está presente no hPanel, que o DNS aponta para a Account Hostinger e que as configurações do banco de dados do locatário correspondem ao hPanel antes da verificação.
 
-## Licença
+## Hooks e filtros {#hooks-and-filters}
 
-Este addon é licenciado sob o GPL v3 ou posterior.
+### Ações {#actions}
 
-## Suporte
+- `ultimate-multisite-addon-template_init` - Disparado após a inicialização do complemento
+- `ultimate-multisite-addon-template_loaded` - Disparado depois que todos os arquivos do complemento são carregados
+
+### Filtros {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Modifica as configurações do complemento
+- `ultimate-multisite-addon-template_enabled` - Substitui o status de ativação/desativação do complemento
+
+## Licença {#license}
+
+Este complemento é licenciado sob a GPL v3 ou posterior.
+
+## Suporte {#support}
 
 Para suporte e documentação, visite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
 
-## Registro de Alterações
+- Versão 1.2.0 (2026-06-03): adiciona autologin de locatário sem estado, capacidade de multitenancy Hostinger, isolamento de banco de dados e sistema de arquivos por subsite, portões de verificação de migração soberana, melhorias no bootstrap de locatário/gravador de banco de dados, vinculação configurável de host MySQL e desmontagem soberana mais segura.
 
-- Versão 1.0.1 (2025-09-28): renomear prefixo para ultimate-multisite; atualizar domínio de texto; aumento de versão.
-- Versão (2025-09-28): renomear prefixo para ultimate-multisite; atualizar domínio de texto; aumento de versão.
+- Versão 1.0.1 (2025-09-28): renomeia o prefixo para ultimate-multisite; atualiza o domínio de texto; incremento de versão.
+
+
+- Versão  (2025-09-28): renomeia o prefixo para ultimate-multisite; atualiza o domínio de texto; incremento de versão.

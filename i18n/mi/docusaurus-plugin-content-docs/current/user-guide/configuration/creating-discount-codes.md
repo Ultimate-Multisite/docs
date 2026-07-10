@@ -3,13 +3,13 @@ title: Whakawhanaungatanga Kōrero Kōrero Whakawāhi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Whakawhanaungahau Kōrero (v2)
+# Whakawhanaungahau Kōrero (v2) {#creating-discount-codes-v2}
 
 _**TŪTOHUTU MAHU: Ko tēnei kōrero e tino whakamahia mō Ultimate Multisite v2.x.**_
 
 Me te Ultimate Multisite, he taea ahau i roto i whakawhanaunga kōrero (discount codes) ki te whai whakaaro mā te whero i ngā client o koe mō ngā subscription o rātou. He ātaahua te whakamahi i ahau!
 
-## Whakawhanaungahau me Whakawhanaungahau Kōrero
+## Whakawhanaungahau me Whakawhanaungahau Kōrero {#creating-and-editing-discount-codes}
 
 Mō te whakawhanaunga kōrero (discount code) ana, pēnei i te whakahou ana, he wahi e taea te pahi: **Ultimate Multisite > Discount Codes**.
 
@@ -85,7 +85,7 @@ Ko te coupon e hoki ana i tō list me, i tēnei wā, ka taea e koe ki te whakat�
 
 ![Discount code row in the list with Edit and Delete hover actions](/img/config/discount-codes-list-hover.png)
 
-### Whakarite mō URL Parameters:
+### Whakarite mō URL Parameters: {#using-url-parameters}
 
 Ko te mea, ko te mea i hiahia koe ki te whakatika ngā aua aua o te whakatū (pricing tables) me te whakatō he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta mai he puta
 

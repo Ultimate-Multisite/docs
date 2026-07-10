@@ -1,31 +1,45 @@
 ---
-title: အသုံးပြုသူအများအပြားစနစ်
+title: အများငှားရမ်းသုံးစွဲမှု
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# အသုံးပြုသူအများအပြား စီမံခန့်ခွဲမှု (Multi-Tenancy)
+# ငှားရမ်းသူအများစနစ် {#multi-tenancy}
 
-စွမ်းဆောင်ရည်မြင့်မားစေရန်နှင့် လုံခြုံရေးအတွက် ဆားဗာများနှင့် ဒေတာဘေ့စ်များအနှံ့အပြားတွင် ဆားဘ်ဆိုဒ်များကို ခွဲဝေထားခြင်း။
+စွမ်းဆောင်ရည်နှင့် လုံခြုံရေးအတွက် subsite များကို ဆာဗာများနှင့် ဒေတာဘေ့စ်များအနှံ့ ဖြန့်ဝေပါ
 
-## လိုအပ်ချက်များ
+## Version 1.2.0 ထုတ်ပြန်မှု အဓိကချက်များ {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 သည် ထုတ်လုပ်ရေး ပတ်ဝန်းကျင် သီးခြားထားမှု လုပ်ငန်းစဉ်များအတွက် အချုပ်အခြာပိုင် tenant အခြေခံကို ထည့်သွင်းထားသည်-
+
+- သက်တမ်းတို၊ ပြန်သုံးတိုက်ခိုက်မှုကာကွယ်ထားသော SSO ဝင်ရောက်မှုများဖြင့် state မသိမ်းသော tenant အလိုအလျောက်ဝင်ရောက်မှု။
+- အချုပ်အခြာပိုင် tenant များအတွက် subsite တစ်ခုချင်းစီအလိုက် ဒေတာဘေ့စ်နှင့် ဖိုင်စနစ် သီးခြားထားမှု။
+- host ကိုသိရှိသော tenant ပြင်ဆင်ပေးမှုအတွက် Hostinger multi-tenancy စွမ်းရည်။
+- legacy ဒေတာစစ်ဆေးမှုများနှင့် async push လုပ်ဆောင်မှုအတွက် အချုပ်အခြာပိုင် ပြောင်းရွှေ့မှု အတည်ပြု gate များ။
+- Bedrock၊ FrankenPHP နှင့် localhost တပ်ဆင်မှုများအတွက် တူညီစက်ပေါ်ရှိ ဒေတာဘေ့စ် host ချိတ်ဆက်မှုကို ပြင်ဆင်သတ်မှတ်နိုင်ခြင်း။
+- tenant bootstrap၊ ဒေတာဘေ့စ် writer၊ schema bootstrap နှင့် အသုံးပြုသူ ပြင်ဆင်ပေးမှု တိုးတက်မှုများ။
+- tenant အထောက်အထားများကို ရှင်းလင်းပေးသော ပိုမိုလုံခြုံသည့် အချုပ်အခြာပိုင် ဖြုတ်ချမှု။
+
+[အချုပ်အခြာပိုင် ပြောင်းရွှေ့မှု လုပ်ငန်းစဉ်](/user-guide/getting-started/sovereign-migration-workflow)၊ [multi-tenancy သီးခြားထားမှု](/user-guide/configuration/multi-tenancy-isolation) နှင့် [အချုပ်အခြာပိုင် tenant လုပ်ဆောင်မှုများ](/user-guide/administration/sovereign-tenant-operations) အတွက် အသုံးပြုသူလမ်းညွှန်များကို ကြည့်ပါ။
+
+## လိုအပ်ချက်များ {#requirements}
 
 - WordPress 5.3 သို့မဟုတ် အထက်
 - PHP 7.4 သို့မဟုတ် အထက်
-- Multisite Ultimate plugin (အသက်ဝင်ရမည်)
+- Multisite Ultimate plugin (အသက်သွင်းထားပြီး)
 
-## တပ်ဆင်ခြင်း
+## တပ်ဆင်ခြင်း {#installation}
 
-၁။ အပိုဆောင်းဖိုင်များကို သင့်ရဲ့ `/wp-content/plugins/` directory ထဲသို့ တင်ပါ။
-၂။ WordPress ရှိ 'Plugins' မီနူးမှတစ်ဆင့် plugin ကို အသက်သွင်းပါ။
-၃။ network admin တွင် အပိုဆောင်းဆက်တင်များကို စနစ်တကျ ပြုလုပ်ပါ။
+1. addon ဖိုင်များကို သင့် `/wp-content/plugins/` directory သို့ အပ်လုဒ်တင်ပါ
+2. WordPress ရှိ 'Plugins' မီနူးမှတစ်ဆင့် plugin ကို အသက်သွင်းပါ
+3. network admin တွင် addon ဆက်တင်များကို ပြင်ဆင်သတ်မှတ်ပါ
 
-## ဖွံ့ဖြိုးတိုးတက်မှု
+## ဖွံ့ဖြိုးတိုးတက်ရေး {#development}
 
-### စတင်ပြင်ဆင်မှု (Setup)
+### ပြင်ဆင်ခြင်း {#setup}
 
 ```bash
 # Install dependencies
@@ -46,78 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ပရောဂျက်ဖွဲ့စည်းပုံ (Project Structure)
+### ပရောဂျက် ဖွဲ့စည်းပုံ {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
+├── inc/                          # PHP class များနှင့် include များ
+│   ├── class-multisite-ultimate-updater.php  # အပ်ဒိတ် handler
+│   └── class-multi_tenancy-main.php             # အဓိက လုပ်ဆောင်ချက်
+├── tests/                        # Unit test များ
 │   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
+│   ├── class-*-base.php         # အခြေခံ test class
+│   └── class-*-test.php         # Test case များ
+├── views/                       # Template ဖိုင်များ
+├── assets/                      # Static asset များ
+│   ├── css/                     # Stylesheet များ
+│   ├── js/                      # JavaScript ဖိုင်များ
+│   └── images/                  # ပုံများ
+├── lang/                        # ဘာသာစကား ဖိုင်များ
+├── composer.json                # PHP dependency များ
+├── package.json                 # Node.js dependency များ
 ├── phpunit.xml.dist             # PHPUnit configuration
 ├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+└── rector.php                   # Code ခေတ်မီရေး စည်းမျဉ်းများ
 ```
 
-### စမ်းသပ်မှု (Testing)
+### စမ်းသပ်ခြင်း {#testing}
 
-ဤအပိုဆောင်းတွင် အပြည့်အစုံ စမ်းသပ်မှုဘောင် (testing framework) ပါဝင်သည်-
+ဤ addon တွင် ပြည့်စုံသော စမ်းသပ်မှု framework ပါဝင်သည်-
 
-- **Unit Tests**: WordPress test suite နှင့် အခြေခံထားသော PHPUnit စမ်းသပ်မှုများ။
-- **Base Test Class**: အဖြစ်များသော စမ်းသပ်မှု အခြေအနေများအတွက် အထောက်အကူပြု နည်းလမ်းများ ပေးသည်။
-- **Test Coverage**: ကုဒ်အကျုံးဝင်မှုကို စောင့်ကြည့်ရန် စနစ်တကျ ပြုလုပ်ထားသည်။
-- **Multisite Testing**: စမ်းသပ်မှုများကို multisite ပတ်ဝန်းကျင်တွင် လုပ်ဆောင်သည်။
+- **Unit Tests**: WordPress test suite ဖြင့် PHPUnit အခြေပြု test များ
+- **အခြေခံ Test Class**: ပုံမှန် test အခြေအနေများအတွက် အကူအညီ method များ ပေးသည်
+- **Test Coverage**: code coverage ကို ခြေရာခံရန် ပြင်ဆင်သတ်မှတ်ထားသည်
+- **Multisite Testing**: test များကို multisite ပတ်ဝန်းကျင်တွင် လုပ်ဆောင်သည်
 
-### ကုဒ်စံနှုန်းများ (Code Standards)
+### Code စံနှုန်းများ {#code-standards}
 
-- **WordPress Coding Standards**: PHPCS မှတစ်ဆင့် အကောင်အထည်ဖော်သည်။
-- **PHP 7.4+ Compatibility**: ခေတ်မီ PHP အင်္ဂါရပ်များကို ပံ့ပိုးထားသည်။
-- **Static Analysis**: အမျိုးအစားစစ်ဆေးမှု (type checking) အတွက် PHPStan ကို ပေါင်းစပ်ထားသည်။
-- **Code Modernization**: PHP အဆင့်မြှင့်တင်မှုများအတွက် Rector စည်းမျဉ်းများ။
+- **WordPress Coding Standards**: PHPCS မှတစ်ဆင့် လိုက်နာစေသည်
+- **PHP 7.4+ Compatibility**: ခေတ်မီ PHP လုပ်ဆောင်ချက်များကို ပံ့ပိုးထားသည်
+- **Static Analysis**: type စစ်ဆေးရန် PHPStan ပေါင်းစည်းမှု
+- **Code Modernization**: PHP upgrade များအတွက် Rector စည်းမျဉ်းများ
 
-### တည်ဆောက်မှုစနစ် (Build System)
+### Build စနစ် {#build-system}
 
-- **Asset Processing**: CSS/JS ဖိုင်များအတွက် Minification လုပ်ခြင်း။
-- **Translation**: POT ဖိုင်များ ထုတ်ပေးခြင်း။
-- **Packaging**: ဖြန့်ဝေရန်အတွက် Archive ဖိုင်များ ဖန်တီးခြင်း။
-- **Development Mode**: အမှားရှာဖွေရန်အတွက် Minify မလုပ်ထားသော assets များ။
+- **Asset Processing**: CSS/JS ဖိုင်များအတွက် minification
+- **ဘာသာပြန်ခြင်း**: POT ဖိုင် ထုတ်လုပ်ခြင်း
+- **ထုပ်ပိုးခြင်း**: ဖြန့်ချိရန် archive ဖန်တီးခြင်း
+- **ဖွံ့ဖြိုးရေး Mode**: debugging အတွက် မချုံ့ထားသော asset များ
 
-## စနစ်ဖွဲ့စည်းမှု (Configuration)
+## ပြင်ဆင်သတ်မှတ်ခြင်း {#configuration}
 
-ဤအပိုဆောင်းသည် network admin interface မှတစ်ဆင့် ရယူနိုင်သော စနစ်ဖွဲ့စည်းမှု ရွေးချယ်စရာများစွာကို ပံ့ပိုးပေးသည်။
+ဤ addon သည် network admin interface မှတစ်ဆင့် အသုံးပြုနိုင်သော configuration ရွေးချယ်စရာများစွာကို ပံ့ပိုးထားသည်။
 
-## Hooks နှင့် Filters များ
+### အချုပ်အခြာပိုင် tenant configuration {#sovereign-tenant-configuration}
 
-### Actions (လုပ်ဆောင်ချက်များ)
+အချုပ်အခြာပိုင် tenant များအတွက် traffic ကို tenant သို့ route မလုပ်မီ tenant ဒေတာဘေ့စ်၊ ဖိုင်စနစ် root၊ ဒေတာဘေ့စ် host ချိတ်ဆက်မှုနှင့် host စွမ်းရည်ကို ပြင်ဆင်သတ်မှတ်ပါ။ ဒေတာဘေ့စ် အထောက်အထားများ၊ host ချိတ်ဆက်မှု၊ routing သို့မဟုတ် အသုံးပြုသူ ပြင်ဆင်ပေးမှုကို သက်ရောက်သော ပြောင်းလဲမှုတိုင်းပြီးနောက် ပြောင်းရွှေ့မှု အတည်ပြုစစ်ဆေးမှုကို လုပ်ဆောင်ပါ။
 
-- `ultimate-multisite-addon-template_init` - အပိုဆောင်းကို စတင်အသုံးပြုပြီးနောက် အလုပ်လုပ်သည်။
-- `ultimate-multisite-addon-template_loaded` - အပိုဆောင်းဖိုင်အားလုံး တင်ပြီးနောက် အလုပ်လုပ်သည်။
+tenant runtime နှင့် ဒေတာဘေ့စ် grant များက local socket သို့မဟုတ် တူညီစက် access ကို မျှော်လင့်သည့်အခါတွင်သာ `localhost` ကို သုံးပါ။ သင့် provider မှ ပြင်ဆင်ထားသော grant host ဖြစ်ပါက `127.0.0.1` သို့မဟုတ် service hostname ကို သုံးပါ။
 
-### Filters (စစ်ထုတ်မှုများ)
+### Hostinger စွမ်းရည် {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - အပိုဆောင်းဆက်တင်များကို ပြင်ဆင်သည်။
-- `ultimate-multisite-addon-template_enabled` - အပိုဆောင်းကို ဖွင့်/ပိတ် အခြေအနေကို အစားထိုးသည်။
+Hostinger multi-tenancy စွမ်းရည်သည် မျှဝေထားသော Hostinger integration token နှင့် အလုပ်လုပ်သည်။ အတည်ပြုခြင်းမပြုမီ domain သည် hPanel တွင် ရှိကြောင်း၊ DNS သည် Hostinger account သို့ ညွှန်ပြကြောင်းနှင့် tenant ဒေတာဘေ့စ် ဆက်တင်များသည် hPanel နှင့် ကိုက်ညီကြောင်း အတည်ပြုပါ။
 
-## လိုင်စင်
+## Hook များနှင့် Filter များ {#hooks-and-filters}
 
-ဤအပိုဆောင်းသည် GPL v3 သို့မဟုတ် နောက်ပိုင်းဗားရှင်းအောက်တွင် လိုင်စင်ရထားသည်။
+### Action များ {#actions}
 
-## အကူအညီရယူရန်
+- `ultimate-multisite-addon-template_init` - addon စတင်ပြီးနောက် ဖြစ်ပေါ်သည်
+- `ultimate-multisite-addon-template_loaded` - addon ဖိုင်အားလုံး တင်ပြီးနောက် ဖြစ်ပေါ်သည်
 
-အကူအညီနှင့် စာရွက်စာတမ်းများအတွက် [MultisiteUltimate.com](https://multisiteultimate.com) သို့ ဝင်ရောက်ကြည့်ရှုပါ။
-## ပြောင်းလဲမှုမှတ်တမ်း (Changelog)
+### Filter များ {#filters}
 
-- Version 1.0.1 (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အဆင့်မြှင့်ခြင်း၊ version ကို တိုးမြှင့်ခြင်း။
+- `ultimate-multisite-addon-template_settings` - addon ဆက်တင်များကို ပြင်ဆင်ပါ
+- `ultimate-multisite-addon-template_enabled` - addon ဖွင့်/ပိတ် အခြေအနေကို override လုပ်ပါ
 
-- Version (2025-09-28): prefix ကို ultimate-multisite အဖြစ် ပြောင်းလဲခြင်း၊ text domain ကို အဆင့်မြှင့်ခြင်း၊ version ကို တိုးမြှင့်ခြင်း။
+## လိုင်စင် {#license}
+
+ဤ addon ကို GPL v3 သို့မဟုတ် နောက်ပိုင်းဗားရှင်းအောက်တွင် လိုင်စင်ပေးထားသည်။
+
+## ပံ့ပိုးကူညီမှု {#support}
+
+ပံ့ပိုးကူညီမှုနှင့် စာတမ်းများအတွက် [MultisiteUltimate.com](https://multisiteultimate.com) သို့ ဝင်ရောက်ပါ
+## ပြောင်းလဲမှုမှတ်တမ်း {#changelog}
+
+- Version 1.2.0 (2026-06-03): state မသိမ်းသော tenant အလိုအလျောက်ဝင်ရောက်မှု၊ Hostinger multi-tenancy စွမ်းရည်၊ subsite တစ်ခုချင်းစီအလိုက် ဒေတာဘေ့စ်နှင့် ဖိုင်စနစ် သီးခြားထားမှု၊ အချုပ်အခြာပိုင် ပြောင်းရွှေ့မှု အတည်ပြု gate များ၊ tenant bootstrap/ဒေတာဘေ့စ် writer တိုးတက်မှုများ၊ ပြင်ဆင်သတ်မှတ်နိုင်သော MySQL host ချိတ်ဆက်မှုနှင့် ပိုမိုလုံခြုံသည့် အချုပ်အခြာပိုင် ဖြုတ်ချမှုကို ထည့်သွင်းသည်။
+
+- Version 1.0.1 (2025-09-28): prefix ကို ultimate-multisite ဟု အမည်ပြောင်းသည်၊ text domain ကို အပ်ဒိတ်လုပ်သည်၊ version တိုးမြှင့်သည်။
+
+
+- Version  (2025-09-28): prefix ကို ultimate-multisite ဟု အမည်ပြောင်းသည်၊ text domain ကို အပ်ဒိတ်လုပ်သည်၊ version တိုးမြှင့်သည်။

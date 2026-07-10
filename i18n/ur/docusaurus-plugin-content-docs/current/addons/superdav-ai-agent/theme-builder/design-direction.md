@@ -3,17 +3,17 @@ title: ڈیزائن سمت
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# ڈیزائن کی سمت (Design Direction)
+# ڈیزائن کی سمت (Design Direction) {#design-direction}
 
 **ڈیزائن کی سمت** کا مرحلہ آپ کو تھیم کے مکمل تھیم جنریٹ ہونے سے پہلے اس کے بصری ڈیزائن (visual design) کا جائزہ لینے، اسے بہتر بنانے اور حتمی شکل دینے کی اجازت دیتا ہے۔
 
-## جائزہ (Overview)
+## جائزہ (Overview) {#overview}
 
 ڈسکوری انٹرویو مکمل کرنے کے بعد، تھیم بلڈر آپ کو **ڈیسک ٹاپ اور موبائل پریویو رینڈرنگ** کے ساتھ آپ کی ڈیزائن کی سمت پیش کرتا ہے۔ اس سے آپ کو تھیم کے لیے حتمی فیصلہ کرنے سے پہلے یہ دیکھنے کا موقع ملتا ہے کہ آپ کا ڈیزائن مختلف آلات (devices) پر کیسا نظر آئے گا۔
 
-## ڈیزائن کی سمت کے اجزاء (Design Direction Components)
+## ڈیزائن کی سمت کے اجزاء (Design Direction Components) {#design-direction-components}
 
-### 1. رنگوں کا پیلیٹ (Color Palette)
+### 1. رنگوں کا پیلیٹ (Color Palette) {#1-color-palette}
 
 آپ کے تھیم کا رنگوں کا مجموعہ، جس میں شامل ہیں:
 
@@ -23,7 +23,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - **نیوٹرل کلرز (Neutral colors)** — پس منظر (background) اور متن کے لیے گرے اور سفید رنگ
 - **ٹیکسٹ کلر (Text color)** — پڑھنے میں آسانی کے لیے بنیادی متن کا رنگ
 
-### 2. ٹائپوگرافی (Typography)
+### 2. ٹائپوگرافی (Typography) {#2-typography}
 
 ان چیزوں کے لیے فونٹ کا انتخاب:
 
@@ -33,14 +33,14 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - **لائن ہائٹ (Line height)** — پڑھنے میں آسانی کے لیے لائنوں کے درمیان فاصلہ
 - **فونٹ ویٹس (Font weights)** — بولڈ، ریگولر، اور لائٹ کی مختلف شکلیں
 
-### 3. لے آؤٹ اور جگہ کا تعین (Layout and Spacing)
+### 3. لے آؤٹ اور جگہ کا تعین (Layout and Spacing) {#3-layout-and-spacing}
 
 - **کنٹینر کی چوڑائی (Container width)** — مواد کے لیے زیادہ سے زیادہ چوڑائی
 - **پیڈنگ اور مارجنز (Padding and margins)** — عناصر کے ارد گرد کی جگہ
 - **گرڈ سسٹم (Grid system)** — رسپانسیو ڈیزائن کے لیے کالم لے آؤٹ
 - **کمپوننٹ سپیسنگ (Component spacing)** — UI عناصر کے درمیان فاصلہ
 
-### 4. بصری عناصر (Visual Elements)
+### 4. بصری عناصر (Visual Elements) {#4-visual-elements}
 
 - **بٹن اسٹائلز (Button styles)** — پرائمری، سیکنڈری، اور ٹریشری بٹن کے ڈیزائن
 - **کارڈ ڈیزائنز (Card designs)** — مواد کے بلاکس کے لیے لے آؤٹ
@@ -48,9 +48,9 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - **بورڈرز اور شیڈوز (Borders and shadows)** — ہلکی بصری گہرائی
 - **ہاور ایفیکٹس (Hover effects)** — انٹرایکٹو اسٹیٹ کی اسٹائلنگ
 
-## پریویو رینڈرنگ (Preview Rendering)
+## پریویو رینڈرنگ (Preview Rendering) {#preview-rendering}
 
-### ڈیسک ٹاپ پریویو (Desktop Preview)
+### ڈیسک ٹاپ پریویو (Desktop Preview) {#desktop-preview}
 
 ڈیسک ٹاپ پریویو آپ کا ڈیزائن مکمل چوڑائی (عام طور پر 1200px یا اس سے زیادہ) پر دکھاتا ہے:
 
@@ -59,7 +59,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - بڑا ٹائپوگرافی اور جگہ کا تعین
 - تمام بصری عناصر مکمل سائز پر
 
-### موبائل پریویو (Mobile Preview)
+### موبائل پریویو (Mobile Preview) {#mobile-preview}
 
 موبائل پریویو آپ کا ڈیزائن موبائل چوڑائی (عام طور پر 375px) پر دکھاتا ہے:
 
@@ -68,7 +68,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - ایڈجسٹڈ ٹائپوگرافی اور جگہ کا تعین
 - ٹچ کے لیے آسان بٹن سائز
 
-### رسپانسیو بریک پوائنٹس (Responsive Breakpoints)
+### رسپانسیو بریک پوائنٹس (Responsive Breakpoints) {#responsive-breakpoints}
 
 تھیم بلڈر ان بریک پوائنٹس پر پریویوز رینڈر کرتا ہے:
 
@@ -79,9 +79,9 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## اپنے ڈیزائن کو بہتر بنانا (Refining Your Design)
+## اپنے ڈیزائن کو بہتر بنانا (Refining Your Design) {#refining-your-design}
 
-### ایڈجسٹمنٹس کرنا (Making Adjustments)
+### ایڈجسٹمنٹس کرنا (Making Adjustments) {#making-adjustments}
 
 آپ درج ذیل طریقوں سے اپنی ڈیزائن کی سمت کو بہتر بنا سکتے ہیں:
 
@@ -91,7 +91,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 4. **لے آؤٹ کو اپ ڈیٹ کرنا (Updating layout)** — کنٹینر کی چوڑائی اور گرڈ کالم تبدیل کریں
 5. **عناصر کو کسٹمائز کرنا (Customizing elements)** — بٹن اسٹائلز، کارڈ ڈیزائنز وغیرہ میں ترمیم کریں
 
-### پریویو اپ ڈیٹس (Preview Updates)
+### پریویو اپ ڈیٹس (Preview Updates) {#preview-updates}
 
 تبدیلیاں فوری طور پر نظر آتی ہیں:
 
@@ -100,7 +100,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - تمام رسپانسیو بریک پوائنٹس اپ ڈیٹ ہوتے ہیں
 - آپ تبدیلیوں کی تصدیق کے لیے پریویوز کے درمیان سوئچ کر سکتے ہیں
 
-### موازنہ ویو (Comparison View)
+### موازنہ ویو (Comparison View) {#comparison-view}
 
 آپ اپنی ڈیزائن کی سمت کا موازنہ مندرجہ ذیل چیزوں سے کر سکتے ہیں:
 
@@ -108,7 +108,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - **مسابقتی ڈیزائنز (Competitor designs)** — متاثر کن سائٹس سے موازنہ کریں
 - **پچھلے ورژن (Previous versions)** — پہلے کے ڈیزائن کی سمت پر واپس جائیں
 
-## ڈیزائن کی سمت کی منظوری (Design Direction Approval)
+## ڈیزائن کی سمت کی منظوری (Design Direction Approval) {#design-direction-approval}
 
 جب آپ اپنے ڈیزائن سے مطمئن ہو جائیں:
 
@@ -118,7 +118,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 4. **لے آؤٹ کی تصدیق کریں (Confirm layout)** — جگہ کا تعین اور سیدھ (alignment) چیک کریں
 5. **ڈیزائن کی منظوری دیں (Approve design)** — تھیم جنریشن کے لیے آگے بڑھیں
 
-## اگلے اقدامات (Next Steps)
+## اگلے اقدامات (Next Steps) {#next-steps}
 
 اپنی ڈیزائن کی سمت کی منظوری دینے کے بعد:
 
@@ -127,7 +127,7 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 3. آپ WordPress customizer کا استعمال کرتے ہوئے مزید کسٹمائز کر سکتے ہیں
 4. [Hospitality Menus](./hospitality-menus.md) یا دیگر فیچرز پر آگے بڑھیں
 
-## بہترین طریقے (Best Practices)
+## بہترین طریقے (Best Practices) {#best-practices}
 
 - **حقیقی آلات پر ٹیسٹ کریں (Test on real devices)** — اگر ممکن ہو تو اصل فون اور ٹیبلٹ استعمال کریں
 - **پڑھنے کی صلاحیت چیک کریں (Check readability)** — یقینی بنائیں کہ متن تمام سائز پر پڑھنے کے قابل ہے
@@ -135,30 +135,30 @@ _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 - **کارکردگی پر غور کریں (Consider performance)** — رفتار کے لیے تصاویر اور فونٹس کو بہتر بنائیں
 - **مواد کی منصوبہ بندی کریں (Plan for content)** — یقینی بنائیں کہ لے آؤٹ آپ کے اصل مواد کے ساتھ کام کرتا ہے
 
-## ٹرابل شوٹنگ (Troubleshooting)
+## ٹرابل شوٹنگ (Troubleshooting) {#troubleshooting}
 
-### پریویو اپ ڈیٹ نہیں ہو رہا (Preview Not Updating)
+### پریویو اپ ڈیٹ نہیں ہو رہا (Preview Not Updating) {#preview-not-updating}
 
 - پیج کو ریفریش کریں
 - براؤزر کی کیش (cache) صاف کریں
 - کوئی دوسرا براؤزر استعمال کرنے کی کوشش کریں
 - انٹرنیٹ کنکشن چیک کریں
 
-### رنگ مختلف نظر آ رہے ہیں (Colors Look Different)
+### رنگ مختلف نظر آ رہے ہیں (Colors Look Different) {#colors-look-different}
 
 - مانیٹر کے رنگ کی سیٹنگز چیک کریں
 - مختلف آلات پر کوشش کریں
 - رسائی کے ٹولز سے رنگ کے کنٹراسٹ کی تصدیق کریں
 - رنگ کی نابینا پن کے سمیلیٹر (color blindness simulators) پر غور کریں
 
-### ٹائپوگرافی کے مسائل (Typography Issues)
+### ٹائپوگرافی کے مسائل (Typography Issues) {#typography-issues}
 
 - تصدیق کریں کہ فونٹ فائلیں لوڈ ہو رہی ہیں
 - مختلف بریک پوائنٹس پر فونٹ سائز چیک کریں
 - اصل مواد کے ساتھ ٹیسٹ کریں
 - پڑھنے کی صلاحیت کے لیے لائن کی لمبائی پر غور کریں
 
-## متعلقہ دستاویزات (Related Documentation)
+## متعلقہ دستاویزات (Related Documentation) {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — ڈیزائن کی معلومات جمع کریں
 - [Hospitality Menus](./hospitality-menus.md) — منظم مینو پیجز بنائیں

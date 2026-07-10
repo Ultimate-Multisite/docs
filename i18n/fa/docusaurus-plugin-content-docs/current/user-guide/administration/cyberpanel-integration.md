@@ -3,25 +3,25 @@ title: ادغام با سایبرپنل
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# یکپارچه‌سازی با CyberPanel
+# یکپارچه‌سازی با CyberPanel {#cyberpanel-integration}
 
 این راهنما توضیح می‌دهد که چگونه یکپارچه‌سازی Ultimate Multisite با CyberPanel را پیکربندی کنید تا دامنه‌های نگاشت شده در شبکه شما به طور خودکار به عنوان هاست مجازی (virtual hosts) در CyberPanel اضافه (و حذف) شوند، و با قابلیت اختیاری، تخصیص خودکار SSL از طریق Let's Encrypt.
 
-## کارکرد آن
+## کارکرد آن {#what-it-does}
 
 *   هنگامی که یک دامنه در Ultimate Multisite نگاشت می‌شود، این یکپارچه‌سازی با فراخوانی API مربوط به CyberPanel، یک هاست مجازی برای آن دامنه ایجاد می‌کند.
 *   هنگامی که نگاشت دامنه حذف می‌شود، این یکپارچه‌سازی با فراخوانی API، هاست مجازی مربوطه را حذف می‌کند.
 *   اگر auto-SSL فعال باشد، این یکپارچه‌سازی بلافاصله پس از ایجاد هاست مجازی، فرآیند صدور گواهی Let's Encrypt را آغاز می‌کند.
 *   به صورت اختیاری، آدرس `www.` را بسته به تنظیمات "Auto-create www subdomain" در بخش Domain Mapping، اضافه یا حذف می‌کند.
 
-## پیش‌نیازها
+## پیش‌نیازها {#prerequisites}
 
 *   یک نمونه CyberPanel فعال (توصیه می‌شود v2.3 یا بالاتر باشد) که از سرور WordPress شما قابل دسترسی باشد.
 *   یک وب‌سایت موجود در CyberPanel که در حال حاضر ریشه شبکه WordPress شما را میزبانی می‌کند. این یکپارچه‌سازی هاست‌های مجازی جدید را به این سرور متصل می‌کند.
 *   فعال بودن دسترسی به CyberPanel API. احراز هویت با نام کاربری و رمز عبور ادمین CyberPanel شما انجام می‌شود.
 *   رکورد‌های DNS دامنه‌های نگاشت شده شما باید قبل از اینکه auto-SSL بتواند گواهی معتبری صادر کند، به آدرس IP سرور شما اشاره کنند.
 
-## الزامات
+## الزامات {#requirements}
 
 ثابت‌های (constants) زیر باید در فایل `wp-config.php` شما تعریف شوند:
 
@@ -40,15 +40,15 @@ define('WU_CYBERPANEL_PHP_VERSION', 'PHP 8.2');  // پیش‌فرض: PHP 8.2
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com'); // برای تماس گواهی SSL استفاده می‌شود
 ```
 
-## دستورالعمل‌های راه‌اندازی
+## دستورالعمل‌های راه‌اندازی {#setup-instructions}
 
-### ۱. فعال‌سازی CyberPanel API
+### ۱. فعال‌سازی CyberPanel API {#1-enable-the-cyberpanel-api}
 
 ۱. وارد داشبورد CyberPanel خود به عنوان مدیر شوید.
 ۲. به **Security** > **SSL** بروید و تأیید کنید که SSL در خود رابط CyberPanel فعال است (برای فراخوانی‌های امن API ضروری است).
 ۳. CyberPanel API به طور پیش‌فرض در آدرس `https://your-server-ip:8090/api/` در دسترس است. برای فعال‌سازی آن نیازی به مراحل اضافی نیست — این قابلیت برای کاربران ادمین به صورت پیش‌فرض فعال است.
 
-### ۲. افزودن ثابت‌ها به wp-config.php
+### ۲. افزودن ثابت‌ها به wp-config.php {#2-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را قبل از خط `/* That's all, stop editing! */` به فایل `wp-config.php` خود اضافه کنید:
 
@@ -66,7 +66,7 @@ define('WU_CYBERPANEL_AUTO_SSL', true);
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ```
 
-### ۳. فعال‌سازی یکپارچه‌سازی
+### ۳. فعال‌سازی یکپارچه‌سازی {#3-enable-the-integration}
 
 ۱. در بخش مدیریت شبکه WordPress خود، به **Ultimate Multisite** > **Settings** بروید.
 ۲. به تب **Domain Mapping** بروید.
@@ -74,7 +74,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ۴. یکپارچه‌سازی **CyberPanel** را فعال کنید.
 ۵. روی **Save Changes** کلیک کنید.
 
-### ۴. تأیید اتصال
+### ۴. تأیید اتصال {#4-verify-connectivity}
 
 از تست اتصال داخلی موجود در ویزارد تنظیمات استفاده کنید:
 
@@ -82,9 +82,9 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ۲. روی **Test Connection** کلیک کنید.
 ۳. یک پیام موفقیت‌آمیز تأیید می‌کند که پلاگین می‌تواند به CyberPanel API دسترسی پیدا کرده و احراز هویت کند.
 
-## نحوه کارکرد
+## نحوه کارکرد {#how-it-works}
 
-### Domain Mapping (نگاشت دامنه)
+### Domain Mapping (نگاشت دامنه) {#domain-mapping}
 
 هنگامی که یک دامنه در Ultimate Multisite نگاشت می‌شود:
 
@@ -93,7 +93,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 ۳. ریشه سند (document root) تنظیم می‌شود تا به دایرکتوری ریشه شبکه WordPress شما اشاره کند.
 ۴. هنگامی که نگاشت دامنه حذف می‌شود، این یکپارچه‌سازی با فراخوانی `/api/deleteWebsite` هاست مجازی را پاکسازی می‌کند.
 
-### Auto-SSL (SSL خودکار)
+### Auto-SSL (SSL خودکار) {#auto-ssl}
 
 هنگامی که `WU_CYBERPANEL_AUTO_SSL` برابر با `true` باشد:
 
@@ -103,11 +103,11 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 
 > **نکته مهم:** DNS باید قبل از اینکه Let's Encrypt بتواند دامنه را تأیید کند، به طور کامل به آدرس IP سرور شما منتشر شده باشد. اگر صدور SSL بلافاصله پس از نگاشت ناموفق بود، منتظر انتشار DNS بمانید و SSL را از داشبورد CyberPanel در بخش **SSL** > **Manage SSL** دوباره فعال کنید.
 
-### www Subdomain (زیردامنه www)
+### www Subdomain (زیردامنه www) {#www-subdomain}
 
 اگر **Auto-create www subdomain** در تنظیمات Domain Mapping شما فعال باشد، این یکپارچه‌سازی یک نام مستعار (alias) هاست مجازی برای `www.<domain>` ایجاد کرده و در صورت فعال بودن auto-SSL، گواهی‌ای را صادر می‌کند که هم پوشش apex و هم www را داشته باشد.
 
-### Email Forwarders (ارسال‌کننده‌های ایمیل)
+### Email Forwarders (ارسال‌کننده‌های ایمیل) {#email-forwarders}
 
 هنگامی که افزونه [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) فعال باشد، CyberPanel می‌تواند ارسال‌کننده‌های ایمیل مشتری را نیز فراهم کند. ارسال‌کننده‌ها پیام‌ها را از یک آدرس دامنه به صندوق ورودی دیگری هدایت می‌کنند بدون اینکه صندوق پستی کامل ایجاد شود. این ویژگی برای نام مستعاره‌هایی مانند `info@customer-domain.test` یا `support@customer-domain.test` مفید است.
 
@@ -120,7 +120,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 
 اگر ایجاد ارسال‌کننده ناموفق بود، ابتدا لاگ‌های فعالیت Ultimate Multisite را بررسی کنید، سپس در CyberPanel تأیید کنید که دامنه منبع وجود دارد و کاربر API دارای مجوز مدیریت ایمیل است.
 
-## مرجع پیکربندی
+## مرجع پیکربندی {#configuration-reference}
 
 | Constant | Required | Default | Description |
 |---|---|---|---|
@@ -132,7 +132,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 | `WU_CYBERPANEL_PHP_VERSION` | No | `PHP 8.2` | نسخه PHP برای هاست‌های مجازی جدید (باید با نسخه‌ای که در CyberPanel نصب شده مطابقت داشته باشد) |
 | `WU_CYBERPANEL_EMAIL` | No | — | ایمیل تماس برای ثبت گواهی SSL |
 
-## نکات مهم
+## نکات مهم {#important-notes}
 
 *   API مربوط به CyberPanel از احراز هویت توکن مبتنی بر نشست (session-based token authentication) استفاده می‌کند. این یکپارچه‌سازی به طور خودکار فرآیند دریافت توکن را در هر فراخوانی API انجام می‌دهد.
 *   حساب ادمین CyberPanel شما باید مجوز ایجاد و حذف وب‌سایت‌ها را داشته باشد.
@@ -140,33 +140,33 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 *   این یکپارچه‌سازی رکورد‌های DNS را مدیریت نمی‌کند. شما باید قبل از نگاشت دامنه در Ultimate Multisite، DNS دامنه را به آدرس IP سرور خود اشاره دهید.
 *   اگر از OpenLiteSpeed (OLS) استفاده می‌کنید، پس از تغییرات هاست مجازی، یک راه‌اندازی مجدد نرم (graceful restart) به طور خودکار انجام می‌شود. نیازی به مداخله دستی نیست.
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### API Connection Refused (رد شدن اتصال API)
+### API Connection Refused (رد شدن اتصال API) {#api-connection-refused}
 
 *   تأیید کنید که پورت `8090` در فایروال سرور شما باز است.
 *   تأیید کنید که مقدار `WU_CYBERPANEL_HOST` شامل پروتکل صحیح (`https://`) و پورت باشد.
 *   بررسی کنید که گواهی SSL CyberPanel شما معتبر باشد؛ گواهی‌های خودامضا ممکن است باعث خطاهای تأیید TLS شوند. `WU_CYBERPANEL_VERIFY_SSL` را فقط در محیط‌های شبکه خصوصی مورد اعتماد روی `false` قرار دهید.
 
-### Authentication Errors (خطاهای احراز هویت)
+### Authentication Errors (خطاهای احراز هویت) {#authentication-errors}
 
 *   با ورود مستقیم به CyberPanel، تأیید کنید که `WU_CYBERPANEL_USERNAME` و `WU_CYBERPANEL_PASSWORD` شما صحیح هستند.
 *   CyberPanel پس از تلاش‌های ناموفق مکرر ورود، حساب‌ها را قفل می‌کند. اگر قفل شدن حساب رخ داد، **Security** > **Brute Force Monitor** را در CyberPanel بررسی کنید.
 
-### Domain Not Created (دامنه ایجاد نشد)
+### Domain Not Created (دامنه ایجاد نشد) {#domain-not-created}
 
 *   لاگ فعالیت Ultimate Multisite (**Ultimate Multisite** > **Activity Logs**) را برای پیام‌های خطای API بررسی کنید.
 *   تأیید کنید که بسته تعریف شده در `WU_CYBERPANEL_PACKAGE` در CyberPanel وجود دارد (**Packages** > **List Packages**).
 *   اطمینان حاصل کنید که دامنه قبلاً به عنوان یک وب‌سایت در CyberPanel ثبت نشده باشد — ایجاد دامنه تکراری باعث خطا می‌شود.
 
-### SSL Certificate Not Issued (گواهی SSL صادر نشد)
+### SSL Certificate Not Issued (گواهی SSL صادر نشد) {#ssl-certificate-not-issued}
 
 *   تأیید کنید که DNS به طور کامل منتشر شده است: `dig +short your-domain.com` باید آدرس IP سرور شما را برگرداند.
 *   Let's Encrypt محدودیت نرخ (rate limits) اعمال می‌کند. اگر اخیراً چندین گواهی برای یک دامنه صادر کرده‌اید، قبل از تلاش مجدد صبر کنید.
 *   برای جزئیات مربوط به خطاهای صدور گواهی، لاگ‌های SSL CyberPanel را در **Logs** > **Error Logs** بررسی کنید.
 *   به عنوان یک راه حل جایگزین، می‌توانید SSL را به صورت دستی از CyberPanel صادر کنید: **SSL** > **Manage SSL** > دامنه را انتخاب کنید > **Issue SSL**.
 
-## منابع
+## منابع {#references}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

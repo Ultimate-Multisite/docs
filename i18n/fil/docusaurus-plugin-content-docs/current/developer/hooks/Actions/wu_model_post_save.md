@@ -4,11 +4,11 @@ title: Aksyon - wu_model_post_save
 sidebar_label: wu_model_post_save
 _i18n_hash: dd2afb7dda9751cf6d2e2f8e0ff2b428
 ---
-# Action: wu_model_post_save
+# Action: wu_model_post_save {#action-wumodelpostsave}
 
 Tumutakbo ito pagkatapos na ma-save ang isang obheto sa database.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Deskripsyon |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Tumutakbo ito pagkatapos na ma-save ang isang obheto sa database.
 | $data_unserialized | `array` | Ang data ng obheto na ise-save. |
 | $this | `\Base_Model` | Ang instance ng obheto. |
 
-### Mula pa noong
+### Mula pa noong {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 - Defined in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L613) at line 613
 - Defined in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1743) at line 1743

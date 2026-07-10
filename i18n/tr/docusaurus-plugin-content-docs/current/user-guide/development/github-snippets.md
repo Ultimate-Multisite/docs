@@ -3,7 +3,7 @@ title: GitHub Kod Parçacıkları
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# GitHub depomuzda bulunan Ultimate Multisite kod parçacıklarını nasıl kullanabilirsiniz
+# GitHub depomuzda bulunan Ultimate Multisite kod parçacıklarını nasıl kullanabilirsiniz {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub depomuzda, Ultimate Multisite kullanıcılarının sıkça talep ettiği kod parçacıkları bulunmaktadır. Bu parçacıklar; kayıt sayfalarına Google Analytics scripti ekleme veya yönetim panelindeki bir meta kutusunu gizleme gibi küçük işlevler eklemenize olanak tanır.
 
@@ -19,7 +19,7 @@ Kodu eklemek için 2 farklı yöntem kullanabilirsiniz:
 
   2. Must-Use Plugins (mu-plugins) kullanarak.
 
-# Kod parçacığını temanızın functions.php dosyasına nasıl eklersiniz
+# Kod parçacığını temanızın functions.php dosyasına nasıl eklersiniz {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. WordPress Ağ yönetici paneline giriş yapın ve Temalar > Tema Düzenleyici bölümüne gidin (Aşağıdaki ekran görüntüsüne bakın).
 
@@ -29,7 +29,7 @@ Kodu eklemek için 2 farklı yöntem kullanabilirsiniz:
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Must-Use Plugins (mu-plugins) nasıl oluşturulur
+# Must-Use Plugins (mu-plugins) nasıl oluşturulur {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress, "Must-Use Plugins" veya kısaca "mu-plugins" adı verilen özel işlevler yüklemenize olanak tanıyan bir özelliğe sahiptir.
 

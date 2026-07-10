@@ -4,11 +4,11 @@ title: Filtr - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtr: wu_apply_signup_fee
+# Filtr: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Określa, czy opłata za rejestrację ma być naliczana.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Określa, czy opłata za rejestrację ma być naliczana.
 | $product | `object` | Obiekt poziomu członkostwa. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Obiekt rejestracji. |
 
-### Od
+### Od {#since}
 
 - 3.1
-### Źródło
+### Źródło {#source}
 
 Zdefiniowany w [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) w linii 1769

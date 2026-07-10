@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite'i ühilduvus
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress pistikprogramm, mis lisab Tutor LMS-ile ühilduvusparandused multisite-keskkondades.
+
+## Kirjeldus {#description}
+
+See pistikprogramm pakub olulisi ühilduvusparandusi Tutor LMS-i käitamiseks WordPress multisite-võrkudes. See käsitleb kasutajate registreerimist, juhendajate haldust, kursuste piiranguid ja muud multisite-spetsiifilist funktsionaalsust.
+
+## Funktsioonid {#features}
+
+- **Andmebaasitabelite haldus**: Tuvastab ja loob automaatselt puuduvad Tutor LMS-i tabelid, mille loomine ebaõnnestub multisite’i võõrvõtme piirangute tõttu
+- **Multisite’i kasutajate registreerimine**: Kohandatud AJAX-i käsitlejad kasutajate registreerimise haldamiseks võrgusaitide vahel
+- **Juhendaja rolli haldus**: Automaatne juhendaja rolli määramine ja haldamine multisite-keskkondades
+- **Kursuste piirangud**: Integratsioon Ultimate Multisite’iga kursuste ja müügilehtrite loomise limiitide haldamiseks saidiplaanide alusel
+- **Kohandatud administraatorivaated**: Multisite-teadlik juhendajate loend ja haldusliides
+- **Administraatori tööriistad**: Andmebaasi haldusliides võrgu- ja saidiadministraatoritele
+
+## Nõuded {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS-i pistikprogramm (jõustatakse automaatselt `Requires Plugins` päise kaudu)
+- WordPress Multisite’i paigaldus
+- Ultimate Multisite’i pistikprogramm (kursuste piirangute funktsionaalsuse jaoks)
+
+## Paigaldamine {#installation}
+
+1. Laadi pistikprogrammi failid üles asukohta `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Veendu, et Tutor LMS oleks paigaldatud ja aktiveeritud
+3. Aktiveeri pistikprogramm WordPressi menüü „Pistikprogrammid” kaudu
+4. Pistikprogramm integreerub automaatselt Tutor LMS-iga
+
+## Failistruktuur {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Peamine pistikprogrammi fail)
+├── includes/
+│   ├── class-database-manager.php (Andmebaasitabelite loomine ja haldus)
+│   ├── class-admin-interface.php (Administraatoriliides andmebaasi halduseks)
+│   ├── class-course-limits.php (Kursuste ja müügilehtrite piirangute käsitlejad)
+│   ├── class-instructor-manager.php (Juhendaja rolli haldus)
+│   ├── class-ajax-handlers.php (Kohandatud AJAX-i käsitlejad)
+│   ├── class-query-helper.php (Andmebaasipäringute utiliidid)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite’i kasutajamudel)
+│   └── admin/
+│       ├── class-instructors-list.php (Kohandatud juhendajate loend)
+│       └── views/
+│           └── instructors.php (Juhendaja administraatorivaade)
+└── README.md
+```
+
+## MU pluginast teisaldatud funktsionaalsus {#functionality-moved-from-mu-plugin}
+
+See pistikprogramm sisaldab funktsionaalsust, mis varem asus failis `wp-content/mu-plugins/daves.php`:
+
+- Kursuse oleku muutmise piirangud
+- Kursuse loomise piirangud
+- CartFlowsi integratsioon ja limiidid
+- Tutor juhendaja rolli haldus
+- Multisite’i kasutajate registreerimise käsitlemine
+- Kursuse toote ID kuvamine
+
+## Andmebaasi haldus {#database-management}
+
+### Probleem {#the-problem}
+
+WordPress multisite-keskkondades ebaõnnestub Tutor LMS-i tabelite loomine tabelite puhul, millel on võõrvõtme piirangud kasutajate tabelile. See juhtub, sest:
+
+- Saidipõhised tabelid kasutavad prefikseid nagu `wp_2_tutor_carts`
+- Võõrvõtmed viitavad tabelile `wp_2_users` (mida pole olemas)
+- Tegelik kasutajate tabel on `wp_users` (jagatud üle kogu võrgu)
+
+### Lahendus {#the-solution}
+
+See pistikprogramm teeb automaatselt järgmist:
+
+1. **Tuvastab puuduvad tabelid**: Kontrollib tabeleid, mille loomine ebaõnnestus võõrvõtme piirangute tõttu
+2. **Loob tabelid õigete viidetega**: Kasutab õiget kasutajate tabeli nime (multisite’is `wp_users`)
+3. **Käsitleb mitut stsenaariumi**:
+   - Pistikprogrammi aktiveerimine/taasaktiveerimine
+   - Uue saidi loomine võrgus
+   - Käsitsi tabelite kontroll administraatoriliidese kaudu
+
+### Mõjutatud tabelid {#affected-tables}
+
+- `tutor_coupon_usages` - Sisaldab võõrvõtit kasutajate tabelile
+- `tutor_carts` - Sisaldab võõrvõtit kasutajate tabelile
+- `tutor_notification_preferences` - TutorPro tabel võõrvõtmega kasutajate tabelile
+
+### Administraatoriliides {#admin-interface}
+
+Andmebaasi haldustööriistadele pääseb juurde siin:
+
+- **Võrguadministraator**: Sätted → Tutor Multisite DB
+- **Saidiadministraator**: Tööriistad → Tutor Multisite DB
+
+Liides võimaldab sul:
+- Vaadata puuduvaid tabeleid kõigil saitidel
+- Käivitada tabelite loomine käsitsi
+- Kontrollida andmebaasi konfiguratsiooni
+- Vaadata üksikasjalikku olekuteavet
+
+## Tugi {#support}
+
+See pistikprogramm on spetsiaalselt loodud KursoPro platvormi jaoks. Tehnilise toe saamiseks võta ühendust arendustiimiga.

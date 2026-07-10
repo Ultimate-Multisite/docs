@@ -1,0 +1,117 @@
+---
+title: Ulanyşa görä ölçegli meýilnamalar
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Ölçegli meýilnamalar {#metered-plans}
+
+Ultimate Multisite: Ölçegli meýilnamalar addon-y, çeýe ölçegli töleg mümkinçiliklerini girizmek arkaly müşderileriňizden töleg alşyňyzy üýtgedýär. Ulanyjylar çäkden geçenlerinde olary bloklaýan berk gaty çäkleriň ýerine, goşmaça ulanyş üçin müşderilerden awtomatik töleg alýan artykmaç ulanyş töleglerini işlediň.
+
+## Esasy aýratynlyklar {#key-features}
+
+* **Ölçegli töleg**: Müşderilerden kesgitlenen derejeleriň ýerine hakyky ulanyşa görä töleg alyň
+* **Artykmaç ulanyşy dolandyrmak**: Meýilnama çäklerinden geçýän ulanyş üçin awtomatik töleg alyň
+* **Ulanyşy yzarlamak**: Müşderiniň serişde sarp edişini hakyky wagtda gözegçilik ediň
+* **Çeýe nyrhlandyrma**: Dürli serişdeler üçin ýörite nyrhlary belläň (ammar, geçirijilik ukyby, saýtlar we ş.m.)
+* **AI token tölegi**: Müşderi subsite-larynyň arasynda AI ulanyşy üçin giriş we çykyş token-lerini yzarlap, töleg alyň
+* **Awtomatik hasap-faktura**: Ulanyş çäkleri geçilende hasap-fakturalary awtomatik dörediň
+* **Ulanyş hasabatlary**: Müşderiler we administratorlar üçin jikme-jik ulanyş seljermeleri we hasabatlary
+
+## Kimler üçin örän laýyk {#perfect-for}
+
+* **Hosting üpjün edijiler**: Müşderi zerurlyklary bilen bile ösýän giňeldilip bilinýän meýilnamalary hödürläň
+* **SaaS platformalary**: Hakyky serişde sarp edişine görä töleg alyň
+* **Agentlik torlary**: Müşderi taslamalary üçin çeýe nyrhlandyrma modelleri
+* **Gaýtadan satyjy hosting**: Hyzmatdaşlara ulanyşa esaslanýan nyrhlandyrmany hödürlemäge mümkinçilik beriň
+
+## Bu nähili işleýär {#how-it-works}
+
+1. Ölçegli serişdeleri sazlaň (disk ýeri, geçirijilik ukyby, saýtlaryň sany we ş.m.)
+2. Esasy meýilnama çäklerini we artykmaç ulanyş nyrhlaryny belläň
+3. Ulgam toruňyz boýunça ulanyşy awtomatik yzarlaýar
+4. Müşderiler çäklerden geçende, artykmaç ulanyş tölegleri hasaplanýar
+5. Hasap-fakturalar töleg aýlawyna görä awtomatik döredilýär
+6. Müşderiler öz ulanyşyny we öňümizdäki tölegleri hakyky wagtda görüp bilýärler
+
+## AI token tölegi {#ai-token-billing}
+
+1.1.0 wersiýasy WordPress AI Client SDK arkaly AI aýratynlyklaryny hödürleýän torlar üçin AI token tölegini goşýar. Ölçegli meýilnamalar tamamlanan AI generasiýa haýyşlaryny diňleýär, häzirki subsite üçin giriş we çykyş token sanlaryny ýazga alýar hem-de şol token-leri müşderiniň häzirki töleg döwri üçin tölegli AI harjyna öwürýär.
+
+Müşderi saýtlarynda öňünden çaklap bolmaýan model çykdajylaryny öz üstüňize almazdan AI gurallaryny hödürlemek isleseňiz, AI token tölegini ulanyň. Administratorlar ulanyşy barlap biler ýaly, müşderiler bolsa AI sarp edişiniň öz Account-yna nähili täsir edýändigini görer ýaly, her haýyş subsite-a, müşderä, agzalyga, üpjün edijä we modele degişli edilýär.
+
+### Her token üçin nyrhlary sazlaň {#configure-per-token-rates}
+
+AI nyrhlary her model boýunça aýratyn giriş we çykyş nyrhlary hökmünde sazlanýar. Nyrhlar 1 million token üçin hasaplanýar, bu bolsa umumy AI üpjün ediji nyrh sahypalaryna laýyk gelýär.
+
+1. Tor administratorynda **Multisite Ultimate → Settings → Metered Plans** açyň.
+2. AI ulanyşy üçin töleg almaly önüm ýa-da agzalyk üçin AI harjynyň ölçelmegini işlediň.
+3. Baglaýjyňyz tarapyndan gaýtarylan model ID-lerini ulanyp, model nyrh ýazgylaryny goşuň, meselem `gpt-4o`, `gpt-4o-mini` ýa-da başga OpenAI bilen utgaşykly model identifikatory.
+4. Saýtyňyzyň pul birliginde 1 million token üçin aýratyn **Giriş nyrhy** we **Çykyş nyrhy** bahalaryny giriziň.
+5. Meýilnama üçin müşderiniň içine girýän AI harjy möçberini we artykmaç ulanyş hereketini belläň.
+
+Takyk model ID sazlanmadyk bolsa, Ölçegli meýilnamalar model prefiksi boýunça gabat getirip biler. Mysal üçin, `claude-sonnet-4` üçin sazlanan nyrh şol prefiks bilen başlanýan wagt belgili model ID-lerine ulanylyp biler. Işläp düzüjiler soňky nyrh tablisasyny [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filter-i bilen hem sazlap bilerler.
+
+### Goldanýan AI baglaýjylar {#supported-ai-connectors}
+
+AI token tölegi WordPress AI Client SDK generasiýa wakalaryny çykarýan we jogap metamaglumatlaryna token ulanyşyny goşýan baglaýjylar bilen işleýär. Muňa şu ýerde resminamalaşdyrylan Ultimate Multisite AI baglaýjylar maşgalasy girýär:
+
+* [Utgaşykly endpoint-ler üçin Ultimate AI Connector](../ultimate-ai-connector-compatible-endpoints/) OpenAI bilen utgaşykly API-ler üçin, şol sanda OpenAI, Mistral, Ollama bilen utgaşykly geçelgeler we utgaşykly token ulanyş metamaglumatlaryny açýan beýleki üpjün edijiler
+* [WebLLM üçin Ultimate AI Connector](../ultimate-ai-connector-webllm/) haýyşlar AI Client SDK waka akymy arkaly ugrukdyrylanda brauzer-esasly WebLLM ulanyşy üçin
+* Saýlanan üpjün ediji SDK arkaly prompt we completion token sanlaryny habar berende [Gratis AI Agent](../gratis-ai-agent/) tarapyndan ulanylýan AI üpjün ediji baglaýjylary
+
+Ýörite baglaýjylar model, üpjün ediji we token ulanyş metamaglumatlary bilen standart `wp_ai_client_before_generate_result` we `wp_ai_client_after_generate_result` wakalaryny işledip gatnaşyp bilerler. Baglaýjy sazlamalary esasy saýtdan subsite-lara mejbury ulanylýar, şonuň üçin müşderi saýtlary tor tarapyndan tassyklanan üpjün edijileri we çäkleri ulanýar.
+
+### Müşderi Account ulanyşy {#customer-account-usage}
+
+Müşderiler öz Account meýdançasynda AI ulanyşyny beýleki ölçegli serişdeleri bilen bile görýärler. AI harjy setiri ýazga alnan prompt we completion token-lerinden, sazlanan model nyrhlaryndan we meýilnamadaky islendik içine girýän möçberden alnan häzirki töleg döwrüniň jemini görkezýär.
+
+Müşderiniň faýlda töleg usuly bar bolsa, içine girýän möçberden ýokary ulanyş tölegli artykmaç ulanyş hökmünde garalýar. Meýilnama gaty kesme üçin sazlanan bolsa we müşderiniň elýeterli töleg usuly ýok bolsa, möçbere ýetilenden soň AI haýyşlary bloklanyp biler we müşderiden dowam etmezden ozal töleg maglumatlaryny goşmak soralýar.
+
+## Goldanýan serişdeler {#supported-resources}
+
+* Disk ammary
+* Geçirijilik ukyby/Maglumat geçirişi
+* Saýtlaryň sany
+* Ulanyjylaryň sany
+* AI token ulanyşy we AI harjy
+* Ýörite serişde görnüşleri
+
+## Talaplar {#requirements}
+
+* Multisite Ultimate 2.0.0 ýa-da has ýokary
+* WordPress Multisite gurnamasy
+* PHP 7.4 ýa-da has ýokary
+
+## Gurnama {#installation}
+
+1. Plugin faýllaryny `/wp-content/plugins/ultimate-multisite-metered-plans` içine ýükläň
+2. Plugin-i WordPress-däki 'Plugins' ekrany arkaly işjeňleşdiriň
+3. Multisite Ultimate → Settings → Metered Plans sahypasyna geçiň
+4. Ölçegli serişdeleriňizi we nyrhlandyrmaňyzy sazlaň
+5. Önüm redaktorynda önümler üçin ölçegli tölegi işlediň
+
+## Köp soralýan soraglar {#frequently-asked-questions}
+
+## Müşderi öz çäginden geçende näme bolýar? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Elýeterliligi bloklamagyň ýerine, ulgam artykmaç ulanyşy yzarlaýar we ony siziň sazlan nyrhlaryňyz esasynda olaryň indiki hasap-fakturasyna goşýar.
+
+## Dürli önümler üçin dürli artykmaç ulanyş nyrhlaryny belläp bilerinmi? {#can-i-set-different-overage-rates-for-different-products}
+
+Hawa, her önümde özboluşly ölçegli çeşmeler we artykmaç ulanyş nyrhlary bolup biler.
+
+## Müşderilere ulanyş barada nähili habar berilýär? {#how-are-customers-notified-about-usage}
+
+Müşderiler häzirki ulanyşyny öz dashboard-ynda görüp bilerler we çäklere golaýlanda ýa-da olardan geçende islege bagly bildirişleri alyp bilerler.
+
+## AI token ulanyşynyň bahasy nähili kesgitlenýär? {#how-is-ai-token-usage-priced}
+
+AI token ulanyşy modeliň sazlanan giriş we çykyş nyrhlaryna görä, 1 million token üçin bahalandyrylýar. Metered Plans her haýyşyň prompt we completion token sanlaryny şol nyrhlara köpeldýär, netijäni müşderiniň häzirki hasaplaşyk döwri boýunça AI harajyna goşýar we plan-yň rugsadyny ýa-da artykmaç ulanyş düzgünlerini ulanýar.
+
+## Gaty çäkleri henizem ulanyp bilerinmi? {#can-i-still-use-hard-limits}
+
+Hawa, ölçegli hasaplaşyk her önüm üçin islege baglydyr. Adaty gaty çäkli önümleri ölçegli önümler bilen garyşdyryp bilersiňiz.

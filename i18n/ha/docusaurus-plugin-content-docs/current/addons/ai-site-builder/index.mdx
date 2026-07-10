@@ -1,0 +1,124 @@
+---
+title: Mai Gina Shafin AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Mai Gina Shafi ta AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Bukatu {#requirements}
+
+- WordPress 5.3 ko mafi girma
+- PHP 7.4 ko mafi girma
+- Multisite Ultimate plugin (mai aiki)
+
+## Shigarwa {#installation}
+
+1. Loda fayilolin addon zuwa kundin `/wp-content/plugins/` naka
+2. Kunna plugin ta menu na 'Plugins' a cikin WordPress
+3. Daidaita saitunan addon a cikin mai gudanarwar hanyar sadarwa
+
+## Ci gaba {#development}
+
+### Saiti {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Tsarin Aiki {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes da abubuwan haɗawa
+│   ├── class-multisite-ultimate-updater.php  # Mai sarrafa sabuntawa
+│   └── class-ai_site_builder-main.php             # Babban aiki
+├── tests/                        # Gwaje-gwajen unit
+│   ├── bootstrap.php            # Fara gwaji
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Lamuran gwaji
+├── views/                       # Fayilolin samfuri
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Fayilolin JavaScript
+│   └── images/                  # Hotuna
+├── lang/                        # Fayilolin harshe
+├── composer.json                # Dogaro na PHP
+├── package.json                 # Dogaro na Node.js
+├── phpunit.xml.dist             # Daidaitawar PHPUnit
+├── .phpcs.xml.dist              # Daidaitawar ƙa’idojin code
+└── rector.php                   # Dokokin sabunta code
+```
+
+### Gwaji {#testing}
+
+Addon ɗin yana ƙunshe da cikakken tsarin gwaji:
+
+- **Gwaje-gwajen Unit**: Gwaje-gwaje bisa PHPUnit tare da WordPress test suite
+- **Base Test Class**: Yana samar da hanyoyin taimako don al’amuran gwaji na gama-gari
+- **Rufin Gwaji**: An daidaita shi don bin diddigin code coverage
+- **Gwajin Multisite**: Gwaje-gwaje suna gudana a cikin muhallin multisite
+
+### Ƙa’idojin Code {#code-standards}
+
+- **WordPress Coding Standards**: Ana tilasta su ta hanyar PHPCS
+- **Dacewa da PHP 7.4+**: Ana goyon bayan fasalolin PHP na zamani
+- **Bincike na Static**: Haɗin PHPStan don duba nau’i
+- **Sabunta Code**: Dokokin Rector don haɓaka PHP
+
+### Tsarin Gina {#build-system}
+
+- **Sarrafa Assets**: Rage girman fayilolin CSS/JS
+- **Fassara**: Samar da fayil ɗin POT
+- **Kunshewa**: Ƙirƙirar archive don rabawa
+- **Yanayin Ci gaba**: Assets marasa ragewa don debugging
+
+## Daidaitawa {#configuration}
+
+Addon ɗin yana goyon bayan zaɓuɓɓukan daidaitawa daban-daban da ake iya samu ta hanyar hanyar sadarwar mai gudanarwa.
+
+## Hooks da Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Ana kunna shi bayan fara addon
+- `ultimate-multisite-ai-site-builder_loaded` - Ana kunna shi bayan an loda duk fayilolin addon
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Gyara saitunan addon
+- `ultimate-multisite-ai-site-builder_enabled` - Sauya matsayin kunnawa/kashewa na addon
+
+## Lasisi {#license}
+
+An ba da lasisin wannan addon ƙarƙashin GPL v3 ko daga baya.
+
+## Tallafi {#support}
+
+Don tallafi da takardu, ziyarci [MultisiteUltimate.com](https://multisiteultimate.com)
+## Tarihin Canje-canje {#changelog}
+
+- Siga 1.0.1 (2025-09-28): sake sunan prefix zuwa ultimate-multisite; sabunta text domain; ƙara sigar.
+
+
+- Siga  (2025-09-28): sake sunan prefix zuwa ultimate-multisite; sabunta text domain; ƙara sigar.

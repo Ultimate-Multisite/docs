@@ -1,65 +1,65 @@
 ---
 title: 结账字段和客户 DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# 域名选择和客户 DNS 管理
+# Checkout 字段和客户 DNS 管理 {#checkout-field-and-customer-dns-management}
 
-## 域名选择结账字段
+## Domain Selection Checkout 字段 {#the-domain-selection-checkout-field}
 
-**域名选择**字段是一个结账元素，它让客户选择获取其网站域名的方式。将其添加到任何结账表单中，即可启用域名销售功能。
+**Domain Selection** 字段是一个 Checkout 元素，可让客户选择如何获取其站点的域名。将它添加到任何 Checkout 表单即可启用域名销售。
 
-### 将字段添加到结账表单
+### 将字段添加到 Checkout 表单 {#adding-the-field-to-a-checkout-form}
 
-1. 导航到 **网络管理 › Ultimate Multisite › 结账表单**
-2. 打开或创建一个结账表单
-3. 在结账编辑器中，点击 **添加字段**
-4. 从字段列表中选择 **域名选择**
-5. 配置字段选项（参见下方）
+1. 前往 **Network Admin › Ultimate Multisite › Checkout Forms**
+2. 打开或创建一个 Checkout 表单
+3. 在 Checkout 编辑器中，点击 **添加字段**
+4. 从字段列表中选择 **Domain Selection**
+5. 配置字段选项（见下文）
 6. 保存表单
 
-### 字段选项
+### 字段选项 {#field-options}
 
-**域名模式** — 选择客户可以看到哪些标签页。每个模式都可以独立启用或禁用：
+**域名模式** — 选择客户会看到哪些选项卡。每种模式都可以独立启用或禁用：
 
-| 模式 | 功能描述 |
+| 模式 | 作用 |
 |---|---|
-| **子域名** | 客户使用您网络上的免费子域名（例如：`mysite.yournetwork.com`）。无需支付费用。 |
-| **注册新域名** | 客户搜索并通过您配置的提供商注册新域名。使用匹配的域名产品进行定价。 |
-| **现有域名** | 客户映射他们已拥有的域名。无需注册费。该域名将自动映射到其网站。 |
+| **子域名** | 客户使用你网络上的免费子域名（例如 `mysite.yournetwork.com`）。无需付款。 |
+| **注册新域名** | 客户搜索新域名，并通过你配置的提供商注册。使用匹配的域名产品进行定价。 |
+| **现有域名** | 客户映射一个他们已拥有的域名。不收取注册费。该域名会自动映射到他们的站点。 |
 
-**默认模式** — 当所有三个模式都启用时，哪个标签页会首先打开。设置为 **子域名** 可以让域名注册保持可选，设置为 **注册新域名** 则可以鼓励购买。
+**默认模式** — 当三种模式都启用时，首先打开哪个选项卡。设置为 **子域名** 可保持域名注册为可选项，或设置为 **注册新域名** 以鼓励购买。
 
-**域名产品** — 可选地将此字段固定到特定的域名产品上。如果未设置，插件会自动根据客户搜索的 TLD 选择匹配的产品。
+**域名产品** — 可选择将此字段固定到特定域名产品。如果未设置，插件会根据客户搜索的 TLD 自动选择匹配的产品。
 
-### 注册人联系字段
+### 注册人联系字段 {#registrant-contact-fields}
 
-当客户选择 **注册新域名** 标签页时，结账表单会在行内添加注册人联系字段：
+当客户选择 **注册新域名** 选项卡时，Checkout 表单会内联添加注册人联系字段：
 
-- 名字 / 姓氏
+- 名 / 姓
 - 电子邮件地址
-- 地址（街道 1，城市，州/省，邮政编码，国家）
+- 地址（地址行 1、城市、州/省、邮政编码、国家/地区）
 - 电话号码
 
-这些字段是所有注册商要求的，并且在执行注册 API 调用之前会进行验证。电话号码会自动格式化为注册商期望的 `+CC.NNN` 国际格式。
+所有注册商都要求这些信息，并会在发起注册 API 调用之前进行验证。电话号码会自动格式化为注册商所期望的 `+CC.NNN` 国际格式。
 
-### 自动生成的网站 URL
+### 自动生成的站点 URL {#auto-generated-site-url}
 
-当客户注册或映射域名时，网站 URL 字段将自动从所选域名中填充。客户无需填写单独的 URL 字段。
+当客户注册或映射域名时，站点 URL 字段会根据所选域名自动填充。客户无需填写单独的 URL 字段。
 
-### 搜索行为
+### 搜索行为 {#search-behaviour}
 
-- 客户输入时，系统会实时使用 AJAX 检查域名可用性
+- 随着客户输入，通过 AJAX 实时检查域名可用性
 - 当首选域名不可用时，会显示替代 TLD 建议
-- 定价会实时获取并清晰显示（注册价格、续费价格、可选 WHOIS 隐私费）
-- 优惠券代码适用于与任何其他产品相同的域名产品
+- 实时获取并清晰显示价格（注册价格、续费价格、可选 WHOIS 隐私费用）
+- 优惠码会像适用于任何其他产品一样适用于域名产品
 
 **调整搜索响应速度：**
 
 ```php
-// 增加防抖延迟（毫秒），以减少在网络缓慢时的 API 调用次数
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
-    return 800; // 默认值：500
+    return 800; // default: 500
 });
 ```
 
@@ -69,7 +69,7 @@ add_filter('wu_domain_seller_search_delay', function($delay) {
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => '附加备注',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## 客户 DNS 管理
+## 客户 DNS 管理 {#customer-dns-management}
 
-客户可以在 **我的账户** 页面，在其域名的条目下管理其已注册域名的 DNS 记录。
+客户可以从 **My Account** 页面，在其域名条目下管理已注册域名的 DNS 记录。
 
-### 支持的记录类型
+### 支持的记录类型 {#supported-record-types}
 
 | 类型 | 用途 |
 |---|---|
@@ -91,22 +91,22 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | 设置邮件交换服务器 |
 | **TXT** | 添加 SPF、DMARC、验证或其他文本记录 |
 
-### 哪些提供商支持 DNS 管理？
+### 哪些提供商支持 DNS 管理？ {#which-providers-support-dns-management}
 
-使用 **OpenSRS**、**ResellerClub** 和 **Enom** 可以进行 DNS 管理（添加、编辑、删除记录）。Namecheap、GoDaddy 和 NameSilo 域只能显示状态和到期信息，DNS 必须直接在注册商的控制面板中管理。
+DNS 管理（添加、编辑、删除记录）可用于 **OpenSRS**、**ResellerClub**、**Enom**、**HostAfrica** 和 **Openprovider**。**Hostinger** 域名可以通过 Domain Seller 更新名称服务器；托管域名的 DNS 记录由核心 Hostinger 域名映射集成管理。Namecheap、GoDaddy 和 NameSilo 域名会显示状态和到期信息，但 DNS 必须直接在注册商的控制面板中管理。
 
-### 默认 DNS 记录
+### 默认 DNS 记录 {#default-dns-records}
 
-您可以配置默认 DNS 记录，这些记录会在域名注册时自动应用。前往 **设置 › 域名卖家 › 默认 DNS 记录**。
+你可以配置默认 DNS 记录，在域名注册时自动应用。前往 **Settings › Domain Seller › Default DNS Records**。
 
 默认记录值支持两个令牌：
 
 | 令牌 | 替换为 |
 |---|---|
-| `{DOMAIN}` | 注册的域名名称（例如：`example.com`） |
-| `{SITE_URL}` | 客户网站的 WordPress 网站 URL |
+| `{DOMAIN}` | 已注册的域名（例如 `example.com`） |
+| `{SITE_URL}` | 客户站点的 WordPress 站点 URL |
 
-**示例 — 将根域名和 www 指向您的服务器 IP：**
+**示例 — 将根域名和 www 指向你的服务器 IP：**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### 管理员：查看和编辑 DNS
+### 管理员：查看和编辑 DNS {#admin-viewing-and-editing-dns}
 
-网络管理员可以从 **网络管理 › Ultimate Multisite › 域名** 中，在任何客户域名的编辑页面查看和编辑 DNS 记录。
+网络管理员可以从 **Network Admin › Ultimate Multisite › Domains** 中域名的编辑页面查看和编辑任何客户域名的 DNS 记录。

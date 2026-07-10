@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เชื่อมต่อ API ของผู้ให้บริการ AI ที่รองรับ OpenAI เข้ากับเครือข่าย WordPress multisite ของคุณ คุณสามารถตั้งค่าผู้ให้บริการ AI ได้หลายราย โดยแต่ละรายจะมี Endpoint URL, API key และโมเดลเริ่มต้นเป็นของตัวเอง และระบบจะทำการส่งต่อคำขอโดยอัตโนมัติ พร้อมฟังก์ชันสำรองข้อมูล (fallback) หากผู้ให้บริการรายใดรายหนึ่งไม่พร้อมใช้งาน
 
-## Key Features
+## Key Features {#key-features}
 
 - **Multi-provider support**: รองรับผู้ให้บริการหลายราย สามารถเพิ่มการ์ดผู้ให้บริการ AI ได้หลายใบ โดยแต่ละใบจะมี Endpoint URL, API key และโมเดลเริ่มต้นเป็นของตัวเอง
 - **Drag-to-reorder**: จัดเรียงลำดับความสำคัญของผู้ให้บริการได้ง่าย ๆ โดยการลากที่ปุ่มจับ (grip handle) บนการ์ดแต่ละใบ ระบบจะส่งคำขอตามลำดับที่จัดไว้
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เช
 - **Auto-expand on add**: เมื่อเพิ่มผู้ให้บริการใหม่ การ์ดจะขยายออกโดยอัตโนมัติ ทำให้คุณสามารถกรอกรายละเอียดได้ทันที
 - **Script cache busting**: สคริปต์ของผู้ให้บริการจะมีการจัดการแคช (cache-busted) เมื่อมีการอัปเดตปลั๊กอิน เพื่อให้แน่ใจว่ามีการโหลดเวอร์ชันล่าสุด
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 หรือสูงกว่า
 - PHP 7.4 หรือสูงกว่า
 - Ultimate Multisite plugin (ต้องเปิดใช้งาน)
 - OpenAI-compatible API endpoint (สามารถโฮสต์เองหรือจากบุคคลที่สามก็ได้)
 
-## Installation
+## Installation {#installation}
 
 1. อัปโหลดไฟล์ addon ไปยังไดเรกทอรี `/wp-content/plugins/` ของคุณ
 2. เปิดใช้งานปลั๊กอินผ่านเมนู 'Plugins' ใน WordPress
 3. ไปที่ **Ultimate Multisite → AI Connector** เพื่อตั้งค่า addon
 
-## Configuration
+## Configuration {#configuration}
 
-### Multi-Provider Setup
+### Multi-Provider Setup {#multi-provider-setup}
 
 หน้าการตั้งค่านี้ใช้รูปแบบการ์ด (card-based layout) โดยที่แต่ละการ์ดจะแทนผู้ให้บริการ AI หนึ่งราย คุณสามารถเพิ่มผู้ให้บริการได้ตามจำนวนที่ต้องการ
 
-#### Adding a Provider
+#### Adding a Provider {#adding-a-provider}
 
 1. ไปที่ **Ultimate Multisite → AI Connector** ในส่วนของ network admin
 2. คลิก **Add Provider**
@@ -52,15 +52,15 @@ Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เช
    - **Default Model** — ตัวระบุโมเดลที่จะใช้เป็นค่าเริ่มต้นสำหรับผู้ให้บริการรายนี้ (เช่น `gpt-4o`, `mistral-small`)
 5. คลิก **Save Settings**
 
-#### Removing a Provider
+#### Removing a Provider {#removing-a-provider}
 
 คลิกปุ่ม **Remove** บนการ์ดผู้ให้บริการใด ๆ เพื่อลบออก จากนั้นให้บันทึกการตั้งค่าเพื่อใช้การเปลี่ยนแปลง
 
-#### Reordering Providers
+#### Reordering Providers {#reordering-providers}
 
 ลากไอคอนจับ (⣿) ที่ด้านซ้ายของการ์ดผู้ให้บริการใด ๆ เพื่อจัดเรียงลำดับใหม่ ลำดับที่จัดไว้จะกำหนดลำดับความสำคัญในการสำรองข้อมูล: ระบบจะส่งคำขอไปยังผู้ให้บริการรายแรกก่อน และจะสำรองข้อมูลไปยังผู้ให้บริการรายถัดไปหากคำขอแรกล้มเหลว
 
-### Fallback Routing
+### Fallback Routing {#fallback-routing}
 
 เมื่อคำขอไปยังผู้ให้บริการหลักล้มเหลว — ไม่ว่าจะเป็นเพราะหมดเวลา (timeout), เกินขีดจำกัด (rate limit), หรือบริการล่ม — ตัวเชื่อมต่อ (connector) จะพยายามส่งคำขอซ้ำโดยอัตโนมัติไปยังผู้ให้บริการรายถัดไปในรายการ กระบวนการนี้จะดำเนินต่อไปตามรายการจนกว่าผู้ให้บริการรายใดรายหนึ่งจะสำเร็จ หรือจนกว่าจะลองผู้ให้บริการครบทุกราย
 
@@ -72,7 +72,7 @@ Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เช
 
 ระบบจะจัดการการสำรองข้อมูลนี้อย่างโปร่งใสสำหรับปลั๊กอินหรือธีมที่เรียกใช้ — พวกเขาจะได้รับคำตอบที่สำเร็จหรือข้อผิดพลาดสุดท้าย ไม่ว่าระบบจะลองผู้ให้บริการไปกี่รายก็ตาม
 
-### Provider Configuration Reference
+### Provider Configuration Reference {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เช
 | API Key | Yes | Authentication key for this provider |
 | Default Model | Yes | Model identifier used when no model is specified in the request |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### No providers are listed
+### No providers are listed {#no-providers-are-listed}
 
 หากรายการผู้ให้บริการว่างเปล่าหลังจากบันทึก ให้ตรวจสอบว่า:
 
@@ -91,21 +91,21 @@ Ultimate AI Connector for Compatible Endpoints ทำหน้าที่เช
 - เบราว์เซอร์ของคุณไม่ได้บล็อกการบันทึกหน้าการตั้งค่า (ตรวจสอบ JavaScript errors ใน browser console)
 - ปลั๊กอินเปิดใช้งานอยู่และคุณอยู่ในหน้า network admin
 
-### Requests are failing for all providers
+### Requests are failing for all providers {#requests-are-failing-for-all-providers}
 
 - ตรวจสอบว่า Endpoint URL ของผู้ให้บริการแต่ละรายสามารถเข้าถึงได้จากเซิร์ฟเวอร์ของคุณ (ไม่ใช่แค่จากเบราว์เซอร์ของคุณ)
 - ตรวจสอบว่า API key แต่ละตัวถูกต้องและยังไม่หมดอายุ
 - ตรวจสอบสถานะ rate-limit และ quota ของผู้ให้บริการใน dashboard ของพวกเขา
 - เปิดใช้งาน WordPress debug logging (`WP_DEBUG_LOG`) เพื่อจับข้อความแสดงข้อผิดพลาดโดยละเอียดจากตัวเชื่อมต่อ
 
-### A provider is not being used for fallback
+### A provider is not being used for fallback {#a-provider-is-not-being-used-for-fallback}
 
 การลากเพื่อจัดเรียงใหม่จะเปลี่ยนลำดับการสำรองข้อมูล ให้ยืนยันว่าผู้ให้บริการที่คุณคาดว่าจะได้รับคำขอสำรองข้อมูลนั้นอยู่ในตำแหน่งที่ถูกต้องในรายการ และ Endpoint URL กับ API key ของผู้ให้บริการนั้นถูกต้อง
 
-### New provider card does not expand automatically
+### New provider card does not expand automatically {#new-provider-card-does-not-expand-automatically}
 
 ฟังก์ชัน Auto-expand ต้องอาศัย JavaScript ที่เปิดใช้งานในเบราว์เซอร์ของคุณ หากการ์ดไม่ขยายเมื่อคลิก ให้ตรวจสอบข้อผิดพลาดใน browser console เนื้อหาของการ์ดสามารถเข้าถึงได้เสมอโดยการคลิกที่ส่วนหัวของการ์ด แม้ว่า auto-expand จะไม่ทำงานก็ตาม
 
-## Changelog
+## Changelog {#changelog}
 
 ดู [Changelog](./changelog) สำหรับประวัติเวอร์ชันฉบับเต็ม

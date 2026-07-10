@@ -3,7 +3,7 @@ title: PayFast سجل التغييرات
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# سجل التغييرات PayFast
+# سجل التغييرات PayFast {#payfast-changelog}
 
 الإصدار: 1.0.2 - تم الإصدار في 2025-09-28
 

@@ -3,13 +3,13 @@ title: Creant una Integració de Registrar Personalitzada
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Creant una Integració de Registre de Domínis
+# Creant una Integració de Registre de Domínis {#building-a-custom-registrar-integration}
 
 El addon Domain Seller utilitza un patró d'**Registre d'Integracions** (Integration Registry). Cada registre és una classe PHP que implementa `Domain_Selling_Capability` i es registra mitjançant l'action hook `wu_domain_seller_register_capabilities`.
 
 Aquesta guia mostra com a afegir un registre personalitzat.
 
-## L'interfície
+## L'interfície {#the-interface}
 
 La teva classe ha de implementar `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` i estendre `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Mètodes opcionals
+### Mètodes opcionals {#optional-methods}
 
 Implementa aquests mètodes per desbloquejar funcions addicionals. L'addon detecta el suport utilitzant `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementa aquests mètodes per desbloquejar funcions addicionals. L'addon detec
 | `get_epp_code(string $domain_name): array` | Transferència de domini (de sortida) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transferència de domini (d'entrada) |
 
-### Convenció de valor de retorn
+### Convenció de valor de retorn {#return-value-convention}
 
 Tots els mètodes han de retornar un array amb, mínim, una clau `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Error legible per un humà'];
 
 ---
 
-## Registrant la teva capacitat
+## Registrant la teva capacitat {#registering-your-capability}
 
 Registra la teva classe utilitzant l'action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ El primer argument de `add_capability()` és l'**ID del proveïdor** (provider I
 
 ---
 
-## Afegir camps de credencials al wizard
+## Afegir camps de credencials al wizard {#adding-credential-fields-to-the-wizard}
 
 Per permetre als admins introduir credencials a través del wizard de configuració, registra la teva integració:
 
@@ -137,7 +137,7 @@ Les credencials es guarden com a opcions de xarxa utilitzant els IDs de camps co
 
 ---
 
-## Hooks per accions posteriors al registre
+## Hooks per accions posteriors al registre {#hooks-for-post-registration-actions}
 
 Utilitza aquests actions per activar webhooks, aprovisionament, notificacions o actualitzacions de CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Escriu al teu canal de logs específic del proveïdor utilitzant `wu_log_add()`:
 

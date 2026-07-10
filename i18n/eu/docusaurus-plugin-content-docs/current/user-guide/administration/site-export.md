@@ -3,27 +3,27 @@ title: Site Exporta
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Saila Exportazioa
+# Saila Exportazioa {#site-export}
 
 Ez dago **Site Export** administrazio lapen, zeinetarri administurietara eskuratu da site bat edo bulego guztia download egin dezaket migrazioa, backup edo hand-off (transferentzia) eragiketa duten arkibio bat.
 
-## Site bat exportatzea
+## Site bat exportatzea {#exporting-one-site}
 
 **Ultimate Multisite > Site Export** luzean jarraitu eta **Generate new Site Export** (Site Exporta berria generatu) aukeratu. Exportatzea erantzuten duen subsiteak aukeratu, eta arkibioak uploadak, plugins eta themes edo ez duela ikusi.
 
 Exportazioa amaituta, ZIP-a aldatu listatik (**Existing Exports**) downloadatu. Export ZIP-ek orain `index.php` bat auto-bootatzean eta `readme.txt` bat eskaintzen du, gaur egun host berri batean uzaileko aurkitzea eta plugin importador bat ez instalatzen duen ere erantzute, arkibioa lehenik instalazioa egin behar izan gabe uzten dezake.
 
-## Bulego guztia exportatzea
+## Bulego guztia exportatzea {#exporting-the-whole-network}
 
 Site Export luzean **Network Export** (Bulego Network Export) erabili horrek behar duzu bulego guztian dagoen site guztietan beste arkibio bat izango da. Host migrazioak, desastratzeko prooketua edo staging rebuilds (berria emateko testu-testuinguruak) lehenik iradokizuek aholkatzen du horrek, nahiz eta leku batean site guztiek berain ikusi behar diren.
 
 Beste arkibio bat site bat exportatzea baino handiagoa izan dezake bulego network export-ek, denbora txikiak aurrera egin artean jarriyezu eta target storage-ek uploadak, plugins, themes eta generatu ZIP-ak barne eginduzko espazio libre izango duela konfirmatu.
 
-### Network Import Bundles (Bulego Importa Bundles)
+### Network Import Bundles (Bulego Importa Bundles) {#network-import-bundles}
 
 Ultimate Multisite 2.12.0-re iradokizuean, Site Exporterek **network import bundles** (bulego importak network-eko) generatzea posible da — bulego guztia site bat berri instalazio batean erantzute diseinatutako arkibio espezializatua. Network import bundle-ek site bat edo gehiagoa berria bulego network-ean erantzutzeko beharrezko fileak eta metadata guztiak ditu.
 
-#### Network Import Bundle generatzea
+#### Network Import Bundle generatzea {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export** funtzi dira
 2. **Generate new Network Export** klikatu
@@ -32,7 +32,7 @@ Ultimate Multisite 2.12.0-re iradokizuean, Site Exporterek **network import bund
 5. **Generate** klikatu
 6. ZIP bundle-a **Existing Exports** listatik downloadatu
 
-#### Network Import Bundle bat restauratzeko
+#### Network Import Bundle bat restauratzeko {#restoring-from-a-network-import-bundle}
 
 Network import bundle bat situak restauratzeko:
 
@@ -52,7 +52,7 @@ Network import bundles hauek ez dute gaurditu:
 - Media uploads (bundlean sartu dutenean)
 - Custom database tables and data
 
-## Self-booting export ZIP instalatzeko
+## Self-booting export ZIP instalatzeko {#installing-a-self-booting-export-zip}
 
 Fresh host bat ZIP self-booting bat restauratzeko:
 

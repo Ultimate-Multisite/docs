@@ -3,7 +3,7 @@ title: Podešavanje PayPal-a
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Postavljanje PayPal Gateway-a (v2)
+# Postavljanje PayPal Gateway-a (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
@@ -13,13 +13,13 @@ Kao i Stripe, PayPal se široko koristi za online plaćanja, posebno na WordPres
 
 Napomena: Morate imati **PayPal Business račun** kako biste dobili API vjerodajnice potrebne za ovu integraciju.
 
-## Omogućavanje PayPal-a na vašoj mreži
+## Omogućavanje PayPal-a na vašoj mreži {#enabling-paypal-on-your-network}
 
 Da biste omogućili PayPal kao dostupan način plaćanja na vašoj mreži, idite na **Ultimate Multisite > Settings > Payments** i označite polje pored PayPal-a.
 
 ![Omogućavanje PayPal-a u aktivnim gateway-ima za plaćanje](/img/config/settings-payment-gateways.png)
 
-## Korištenje vođenog asistenta za postavljanje
+## Korištenje vođenog asistenta za postavljanje {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 dodaje vođeni PayPal asistent za postavke gateway-a za plaćanje. Nakon što omogućite PayPal, koristite asistent na **Ultimate Multisite > Settings > Payments** kako biste odabrali kako želite da povežete gateway i potvrdili koje su vjerodajnice i dalje potrebne prije spremanja.
 
@@ -30,7 +30,7 @@ Asistent podržava dva puta postavljanja:
 
 Ako ne vidite opciju OAuth u asistentu, završite proces ručnog unosa vjerodajnica ispod. Gateway radi sa istim PayPal Business API vjerodajnicama kao i prethodne Ultimate Multisite 2.x verzije.
 
-## Dohvaćanje PayPal API vjerodajnica
+## Dohvaćanje PayPal API vjerodajnica {#getting-the-paypal-api-credentials}
 
 Nakon što je PayPal omogućen kao gateway za plaćanje, bit će vam potrebno popuniti polja za PayPal API **Username**, PayPal API **Password** i PayPal API **Signature**.
 

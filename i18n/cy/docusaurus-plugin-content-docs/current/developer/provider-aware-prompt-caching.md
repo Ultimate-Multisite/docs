@@ -3,11 +3,11 @@ title: Cache Cyflwyniadau gyda Gwybodol am y Cyflenwr
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Caching Promptau Gwyrddwr-Arallt
+# Caching Promptau Gwyrddwr-Arallt {#provider-aware-prompt-caching}
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno **caching promptau arallt-arallt** (provider-aware prompt caching), sy mae'n optimiast costau API a latens gan gael y promptau wedi'u cadw yn y cyflym drwy ei cadw mewn cache ar gyfer pwylliant LLM'r wahodil. Mae pob pwylliant gyda'i ddethau a chwaraeir cadw yn rhywfaint.
 
-## Oglwyddictod
+## Oglwyddictod {#overview}
 
 Mae caching promptau yn gallu i chi:
 
@@ -23,11 +23,11 @@ Mae pwylliant ddifrifol yn cyflwyno caching yn rhywfaint:
 - **OpenRouter**: Caching arallt-arallt-pwylliant
 - **Vertex Anthropic**: Caching promptau gyda rheoli cache
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Mae Google Gemini yn rhoi rheoli cache yn ddefnyddiol drwy'r API `cachedContents`.
 
-### Rheoli
+### Rheoli {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Creu Prompt Cadw
+### Creu Prompt Cadw {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Mae'n cyflwyno: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Cyfalu Prompt wedi cael Cache
+### Cyfalu Prompt wedi cael Cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cyflffordd yr Cache
+### Cyflffordd yr Cache {#cache-lifecycle}
 
 ```php
 // Llofrif y cynnwys wedi'u cael cache
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Prif Gweithredoedd ar Gemini
+### Prif Gweithredoedd ar Gemini {#best-practices-for-gemini}
 
 - **Rheoli TTL pwysig**: Balans gwirtschaftiadau cost vs. rhyddoldeb yr cache
 - **Cache system prompts**: Redig ystod am ystod (system prompt) felly yn cael ei ddefnyddio ar gyfer cyflwyno
 - **Monitor defnydd y cache**: Monitro beth yw'r cacheau a ddefnyddir yn fwy
 - **Lleidydd y cacheau wedi'u cael eu cyflwyno**: Talybo'r cacheau sydd wedi'u cael eu cyflwyno amser o bryd
 
-## Azure OpenAI: Cyfathiadau Prompt Cache
+## Azure OpenAI: Cyfathiadau Prompt Cache {#azure-openai-prompt-caching}
 
 Mae Azure OpenAI yn chymorthu â cache prompt gyda rheoli TTL (cymeriad am y cache) yn awtomatig.
 
-### Cysylltu
+### Cysylltu {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Mae Cache yn cael ei chynllunio
+### Mae Cache yn cael ei chynllunio {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cyflwyniadau Cache (Cache Headers)
+### Cyflwyniadau Cache (Cache Headers) {#cache-headers}
 
 Mae Azure OpenAI yn defnyddio hedfanau HTTP i rheoli cynnwys cache:
 
@@ -152,7 +152,7 @@ Gwerthau sydd wedi'u chynllunio:
 - `no_cache`: Peidiwch â cache'r gyfle hwnnw
 - `no_store`: Peidiwch â cache a peidiwch â ddefnyddio eto
 
-### Monitro Defnyddio Cache (Monitoring Cache Usage)
+### Monitro Defnyddio Cache (Monitoring Cache Usage) {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Creu cache: $cache_tokens token\n";
 echo "Cyflwyniadau cache: $cache_hits token\n";
 ```
 
-### Prif Gwybodaeth ar gyfer Azure OpenAI (Best Practices for Azure OpenAI)
+### Prif Gwybodaeth ar gyfer Azure OpenAI (Best Practices for Azure OpenAI) {#best-practices-for-azure-openai}
 
 - **Defnyddiwch promptau yn unigol**: Mae promptau unigol yn dod yn dda gyda cache
 - **Rheoli TTL ymosodol**: Balans cost vs. newyddolwch
 - **Monitro metrefau cache**: Monitro creu cache vs. cyflwyniadau
 - **Barchu gyfleidiau tebyg**: Barchu gyfleidiau i maximu cyflwyniadau cache
 
-## OpenRouter: Cache Penodol y Cyflwyniadau (OpenRouter: Provider-Specific Caching)
+## OpenRouter: Cache Penodol y Cyflwyniadau (OpenRouter: Provider-Specific Caching) {#openrouter-provider-specific-caching}
 
 Mae OpenRouter yn chymryd cache drwy'r cyflwyniadau sydd wedi'u cynnwys (OpenAI, Anthropic, etc.).
 
-### Cyfluniad (Configuration)
+### Cyfluniad (Configuration) {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Cysylltu â Caching OpenRouter
+### Cysylltu â Caching OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opsiynau Specifigol i'r Provider
+### Opsiynau Specifigol i'r Provider {#provider-specific-options}
 
 Mae providerau yn cael eu mecanwaith caching yn rhywfaint:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Prif Gweithredoedd ar gyfer OpenRouter
+### Prif Gweithredoedd ar gyfer OpenRouter {#best-practices-for-openrouter}
 
 - **Gweld eich provider o'r caching**: Mae gan bob provider mecanwaith yn rhywfaint.
 - **Profiwch y cyfarwyddiadau caching**: Cynllunwch bod y caching yn gweithio gyda'r provider a dychwelyd.
 - **Monitro costau**: Drwy'r cyfathrebu o'r caching.
 - **Defnyddiw modelau unigolion**: Mae newid modelau yn gwblhau'r cyflwyniad (cache hits).
 
-## Vertex Anthropic: Caching Prompt gyda Cache Control
+## Vertex Anthropic: Caching Prompt gyda Cache Control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Mae Vertex Anthropic (Google Cloud) yn cefnogi cache o'r prompt gyda rheoli cache arallgolyguol.
 
-### Cynnig
+### Cynnig {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Defnyddio Cache Vertex Anthropic
+### Defnyddio Cache Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Rheoliadau Cache Control
+### Rheoliadau Cache Control {#cache-control-types}
 
 - **ephemeral**: Cache ar gyfer y cyfnod yr ymddangos (defnyddiol yn ddefnyddiol)
 - **persistent**: Cache ar gyfer amserau aml o ymddangosau (os mae hyn yn cael ei cefnogi)
 
-### Monitro Defnyddio Cache
+### Monitro Defnyddio Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache wedi cael ei chynllunio: $cache_created token\n";
 echo "Cache wedi cael ei ddefnyddio: $cache_read token\n";
 ```
 
-### Prifau Gweithredol ar Vertex Anthropic
+### Prifau Gweithredol ar Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Defnyddiw cache efemeryd (ephemeral caching)**: Da iawn i cache o sesiwn unig.
 - **Setwch max_tokens yn dda**: Balanswch grädd y cache a'r cost.
 - **Monitawch y metrefau cache**: Draffwch yr effeithioldeb y cache.
 - **Gwystau gyda'ch gweithredol**: Cynllunwch bod y cache yn dod â phryd i eich casgliad.
 
-## Strategi Cache ar Gyflymion Mae'n Cyflwyno (Cross-Provider Caching Strategy)
+## Strategi Cache ar Gyflymion Mae'n Cyflwyno (Cross-Provider Caching Strategy) {#cross-provider-caching-strategy}
 
-### Cynnig Unifyddol (Unified Configuration)
+### Cynnig Unifyddol (Unified Configuration) {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Gyflwyno Gweithredol (Provider Detection)
+### Gyflwyno Gweithredol (Provider Detection) {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Defnyddiwch cynnig cache o'r gyflym yn benodol i'r gyflym
 ```
 
-### Strategi Gwrthyn (Fallback Strategy)
+### Strategi Gwrthyn (Fallback Strategy) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimau Costau
+## Optimau Costau {#cost-optimization}
 
-### Cyfrannu Gofal
+### Cyfrannu Gofal {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Gofal arosol: \$$savings\n";
 ```
 
-### Cysylltiadau Optimau
+### Cysylltiadau Optimau {#optimization-tips}
 
 - **Casgliad promptau mawr**: Mae'r gormodol mwyaf yn cael ei gwachnos.
 - **Gwneud cyfathrebu allan**: Casgliadu ddogfenau arolwg sydd yn cael eu defnyddio'n aml.
@@ -395,24 +395,24 @@ echo "Gofal arosol: \$$savings\n";
 - **Monitor effeithiol y casgliad**: Monitor y gormodol wir.
 - **Regulwch TTL**: Casgliadu cost vs. newid.
 
-## Gofalion
+## Gofalion {#troubleshooting}
 
-### Nid yw'r casgliad yn cael ei ddefnyddio
+### Nid yw'r casgliad yn cael ei ddefnyddio {#cache-not-being-used}
 
 - Proffwch bod casgliad wedi'i chynllunio yn y cyfluniad (configuration).
 - Gwylio bod y promptau yn identigol (mae'r casgliad yn rhoi angen cyfathrebu llawn).
 - Proffwch nad yw'r casgliad wedi cael ei ddefnyddio.
 - Gwylio am ystodau casgliad a chyflenwiol gan y cyfathrebu.
 
-### Mae casgliad yn failu i gael
+### Mae casgliad yn failu i gael {#cache-creation-failing}
 
-### Gwylio'r cyflenau (Cache size) yn dros hanesau ychwanegwyr (provider limits)
+### Gwylio'r cyflenau (Cache size) yn dros hanesau ychwanegwyr (provider limits) {#unexpected-costs}
 
 - Cynnal y gwylio'r hanesau yn dros hanesau ychwanegwyr
 - Gyda'r syniad cyddeall (cache control syntax) yn siarad
 - Sicrhewch bod ychwanegwr yn chymryd y gwylio ar gyfer eich model
 
-### Costau anghyfrifol (Unexpected costs)
+### Costau anghyfrifol (Unexpected costs) {#provider-comparison}
 
 - Monitorea'r creu hanesau (cache creation) yn gyflwyniadau hanesau (cache read tokens)
 - Cynnal y gwylio bod y hanesau yn cael eu defnyddio wir
@@ -420,7 +420,7 @@ echo "Gofal arosol: \$$savings\n";
 - Gyda'r hanesau yn cael eu cael eu gael yn dros amrywiaethau prompt (prompt variations)
 - Meddyliw am ei adeiladu TTL neu strategais hanesau (cache strategy)
 
-## Cyflenau ychwanegwyr (Provider Comparison)
+## Cyflenau ychwanegwyr (Provider Comparison) {#next-steps}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|

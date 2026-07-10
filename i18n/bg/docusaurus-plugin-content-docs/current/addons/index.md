@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Допълнителни модули за Ultimate Multisite
+# Допълнителни модули за Ultimate Multisite {#ultimate-multisite-addons}
 
 Допълнителните модули (Addons) разширяват функционалността на Ultimate Multisite с допълнителни функции и интеграции. Повечките модули са платени и могат да бъдат закупени от [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Инсталация
+## Инсталация {#installation}
 
 Модулите могат да бъдат инсталирани по два начина:
 
 1. **Чрез страницата на модулите** — Навигирайте до страницата за управление на модулите на вашия сайт в административната част на WordPress.
 2. **Ръчно изтегляне** — Изтеглете от [ва Вашия профил](https://ultimatemultisite.com/my-account/downloads/) и изкачете през Plugins > Add New.
 
-## Налични модули
+## Налични модули {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

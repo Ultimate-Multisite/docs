@@ -3,13 +3,13 @@ title: Costruire un'integrazione di Registrar personalizzata
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Creare un'integrazione di Registrar personalizzata
+# Creare un'integrazione di Registrar personalizzata {#building-a-custom-registrar-integration}
 
 Il plugin Domain Seller utilizza un pattern chiamato **Integration Registry**. Ogni registrar è una classe PHP che implementa `Domain_Selling_Capability` e si registra tramite l'action hook `wu_domain_seller_register_capabilities`.
 
 Questa guida mostra come collegare un registrar personalizzato.
 
-## L'interfaccia
+## L'interfaccia {#the-interface}
 
 La tua classe deve implementare `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` ed estendere `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metodi opzionali
+### Metodi opzionali {#optional-methods}
 
 Implementa questi metodi per sbloccare funzionalità aggiuntive. Il plugin rileva il supporto tramite `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementa questi metodi per sbloccare funzionalità aggiuntive. Il plugin rilev
 | `get_epp_code(string $domain_name): array` | Trasferimento di dominio (in uscita) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Trasferimento di dominio (in entrata) |
 
-### Convenzione del valore di ritorno
+### Convenzione del valore di ritorno {#return-value-convention}
 
 Tutti i metodi restituiscono un array che contiene almeno la chiave `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Errore leggibile dall'uomo'];
 
 ---
 
-## Registrare la tua capability
+## Registrare la tua capability {#registering-your-capability}
 
 Registra la tua classe utilizzando l'action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Il primo argomento di `add_capability()` è l'**ID del provider** — uno slug i
 
 ---
 
-## Aggiungere campi credenziali al wizard
+## Aggiungere campi credenziali al wizard {#adding-credential-fields-to-the-wizard}
 
 Per consentire agli amministratori di inserire le credenziali tramite il wizard di configurazione, registra la tua integrazione:
 
@@ -137,7 +137,7 @@ Le credenziali vengono memorizzate come opzioni di rete utilizzando gli ID dei c
 
 ---
 
-## Hook per azioni post-registrazione
+## Hook per azioni post-registrazione {#hooks-for-post-registration-actions}
 
 Usa questi actions per attivare webhook, provisioning, notifiche o aggiornamenti CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Scrivi nel tuo canale di log specifico per il provider usando `wu_log_add()`:
 

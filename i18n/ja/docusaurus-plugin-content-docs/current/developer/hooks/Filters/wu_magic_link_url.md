@@ -4,11 +4,11 @@ title: フィルタ - wu_magic_link_url
 sidebar_label: wu_magic_link_url
 _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 ---
-# Filter: wu_magic_link_url
+# Filter: wu_magic_link_url {#filter-wumagiclinkurl}
 
 生成されたマジックリンクURLをフィルタリングします。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | 説明 |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 60efe2aa6a8dff965d7ff0fb303a7bf4
 | $site_id | `int` | サイトIDです。 |
 | $redirect_to | `string` | リダイレクトURLです。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 定義済み [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L148) 行 148

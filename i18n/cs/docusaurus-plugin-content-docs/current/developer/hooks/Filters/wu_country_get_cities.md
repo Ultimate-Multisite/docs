@@ -4,11 +4,11 @@ title: Filter - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Vrací seznam měst pro daný stát v dané zemi.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Vrací seznam měst pro daný stát v dané zemi.
 | $state_code | `string` | Dvojznakový ISO kód státu. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanci aktuální třídy. |
 
-### Od
+### Od {#since}
 
 - 2.0.11
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) na řádku 146
 
 
-## Vrací
+## Vrací {#returns}
 Přefiltrovaný seznam států.

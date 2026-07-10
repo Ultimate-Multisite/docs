@@ -3,7 +3,7 @@ title: Kodų fragmentai
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kodų fragmentai v2
+# Kodų fragmentai v2 {#code-snippets-for-v2}
 
 Pagrindinis požiūris yra tas, kad **WordPress** kodų fragmentai naudojami atlikti įvairius veiksmus, kuriems gali reikėti veikt specializuotas mažas pluginas. Šiuos kodų fragmentus galima pateikti viename WordPress core ar temo failu (bendriai jūsų temo `functions.php` failui) arba jie gali būti naudojami kaip MU pluginas.
 
@@ -15,7 +15,7 @@ Pagrindinis požiūris yra tas, kad **WordPress** kodų fragmentai naudojami atl
 
   * [**CORS problemų iššvinimas su Font-Icons nurodytos domenų viduje**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Mokėjimo meniu žymybės pozicijos keitimas
+## Mokėjimo meniu žymybės pozicijos keitimas {#changing-the-position-of-the-account-menu-item}
 
 Kad pakeisti Mokėjimo meniu žymybės poziciją jūsų klientų Dashboard'e, visai vienu pridėkite šį kodų fragmentą į jūsų pagrindinio svetainės aktyvumo temo `functions.php` failą. Galite taip pat pateikti fragmentą viename iš savo mu-pluginų ar pritaikytų pluginų.
 
@@ -37,8 +37,8 @@ Paminėkite, kad vartotojai gali prenumeruoti tik **Planą**, o ne Paketą ar Pa
 
 ![Produkto sąrašas rodo planų ID](/img/admin/products-list.png)
 
-## CORS problemų atšalinimas su Font-Icons įmappedaus domenų
-## CORS problemų atšalinimas su Font-Icons įmappedaus domenų
+## CORS problemų atšalinimas su Font-Icons įmappedaus domenų {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## CORS problemų atšalinimas su Font-Icons įmappedaus domenų {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Po domenų įmaito sub-saitą galite nustatyti, kad svetaine trudra įkelti pritaikytus fontus. Tai vykta dėl cross-origin blokavimo jūsų serverio nustatymuose.
 
@@ -46,13 +46,13 @@ Kadangi fontų failai praktiškai visada įkeldami tiesiog iš CSS, mūsų domen
 
 Šie kodų fragmentai skirti problemui, kurį reikia išspręsti Apache ir NGINX serveriuose. Šios pakeitimai reikalauja gilių žinių apie serverio konfigūracijos failus (.htaccess ir NGINX konfigūracijos failai). Jei jūs nepatogiai atliksite šias pakeitimus, siųskite šią puslapį savo hostingo paslaugų agentams, jei jums reikalinga pagalba.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Jūsų .htaccess failui pridėkite:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Jūsų serverio konfigūracijos failui (vieta skiriasi nuo serverui į serverį) pridėkite:
 

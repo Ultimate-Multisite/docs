@@ -3,9 +3,9 @@ title: Ultimate AI Connector za WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector za WebLLM Changelog
+# Ultimate AI Connector za WebLLM Changelog {#ultimate-ai-connector-for-webllm-changelog}
 
-## Verzija 1.1.0 — Objavljeno 2026-04-09
+## Verzija 1.1.0 — Objavljeno 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Novo: Plivajući chat widget sa indikatorom statusa u admin-baru — bilo koji prijavljeni korisnik može direktno pokrenuti (prompt) LLM na strani preglednika sa prednjeg kraja (front end).
 * Novo: SharedWorker runtime — MLC engine sada radi u SharedWorker-u, tako da više kartica (tabs) deli jednu GPU sesiju umjesto da se međusobno bore za nju.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Popravak: Povezuje se WebLLM sa filterom wpai_preferred_text_models kako bi funkcija AI Experiments usmjerila na preglednički engine kada je model konfigurisan.
 * Poboljšano: Popravci za cache-busting, normalizaciju sadržaja i reference na hardver otkriveni su tokom end-to-end testiranja.
 
-## Verzija 1.0.0 — Prva izdanje
+## Verzija 1.0.0 — Prva izdanje {#version-100--initial-release}

@@ -3,7 +3,7 @@ title: Hogyan törölhető egy előfizetés
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hogyan mondhatom le az előfizetésemet?
+# Hogyan mondhatom le az előfizetésemet? {#how-can-i-cancel-my-subscription}
 
 Ha rendelkezel Ultimate Multisite licenccel, bármikor lemondhatod a megújítását. Csak kövesd az alábbi lépéseket:
 

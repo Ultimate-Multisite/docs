@@ -3,9 +3,9 @@ title: Migrar de la V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrar de la V1
+# Migrar de la V1 {#migrating-from-v1}
 
-## Ultimate Multisite ha pasado de su familia original de versiones 1.x a la familia de versiones 2.x.
+## Ultimate Multisite ha pasado de su familia original de versiones 1.x a la familia de versiones 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versión 2.0 y posteriores son una reescritura completa de la base de código, lo que significa que hay muy poco material compartido entre la versión antigua y la nueva. Por esa razón, al actualizar de 1.x a 2.x, tendrás que migrar tus datos a un formato que las nuevas versiones puedan entender.
 
@@ -15,7 +15,7 @@ Esta lección explica cómo funciona el migrador, qué hacer en caso de fallos y
 
 _**IMPORTANTE: Antes de comenzar a actualizar de la versión 1.x a la versión 2.0, asegúrate de crear una copia de seguridad de la base de datos de tu sitio**_
 
-## Primeros pasos
+## Primeros pasos {#first-steps}
 
 El primer paso es descargar el archivo .zip del plugin e instalar la versión 2.0 en el panel de administración de tu red.
 
@@ -51,7 +51,7 @@ Després de activar la llicència, pots començar la instal·lació fent clic a 
 
 <!-- Screenshot unavailable: Pàgina d'instal·lació que mostra el que es actualitzarà amb el botó Install -->
 
-## Ara, la migració
+## Ara, la migració {#now-the-migration}
 
 El migrador té una funció de seguretat integrada on comprèn tot el teu multisite per assegurar-se de que tots els teus dades d'Ultimate Multisite poden migrar sense cap problema. Fes clic al botó **Run Check** (Executar Comprobació) per començar el procés.
 
@@ -59,13 +59,13 @@ El migrador té una funció de seguretat integrada on comprèn tot el teu multis
 
 Després d'executar la comprobació, tens dues possibilitats: el resultat pot ser **amb** error o **sense** error.
 
-### Amb Error
+### Amb Error {#with-error}
 
 Si obtins un missatge d'error, cal que contactis al nostre equip de suport per poder ajudar-vos a solucionar el problema. Asegureu-vos de **proporcionar el log de l'error** quan creïs un ticket. Pots baixar el log o pots fer clic al llink que diu "contacte el nostre equip de suport". Això obrirà el widget d'ajuda a la dreta del teu pàgina amb els camps ja poblat per tu, incloent els logs d'error sota la descripció.
 
 _**Com que el sistema ha trobat un error, no podràs procedir a migrar a la versió 2.0. Pots fer *rollback* a la versió 1.x per continuar amb la màquina fins que es ressoluti l'error.**_
 
-### Sense Error
+### Sense Error {#without-error}
 
 Si el sistema no troba cap error, veuràs un missatge de contingut i un botó **Migrar** al fons que t'permetrà procedir amb la migració. En aquesta pàgina, et recordaran crear una còpia de seguretat de la teva base de dades abans de continuar, cosa que recomanem molt. Fes clic a **Migrar** si ja tens una còpia de seguretat.
 

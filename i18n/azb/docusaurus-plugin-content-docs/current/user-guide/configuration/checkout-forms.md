@@ -1,211 +1,217 @@
 ---
-title: Checkout Forms
+title: اؤدنیش فرم‌لری
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Ödül Formları
+# تسویه فرم‌لری {#checkout-forms}
 
-Ödül Formları, yeni müşterileri dönüştürmeye çalışırken farklı yaklaşımları denemek için kolay ve esnek bir yoldur.
+تسویه فرم‌لری، تازه مشتری‌لری جلب ائتمک اوچون آیری یول‌لاری سیناماغا آسان و اسنک بیر یولدور.
 
-Ultimate Multisite 2.0, istediğiniz kadar form oluşturmanıza, farklı alanlar, sunulan ürünler vb. eklemenize olanak tanıyan bir Ödül Formu düzenleyicisi sunar.
+Ultimate Multisite 2.0 بیر تسویه فرم ادیتورو وئریر؛ بو ادیتورلا ایسته‌دیغینیز قدر فرم یارادا بیلرسینیز، آیری ساحه‌لر، عرضه‌ده اولان محصول‌لار و س. ایله.
 
-Bu özelliğe ulaşmak için sol kenar çubuğundaki Ödül Formları menüsüne gidin.
+بو اؤزلیگه چاتماق اوچون سول یان چوبوقدا Checkout Forms منوسونا گئدین.
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![تسویه فرم‌لری لیستی](/img/config/checkout-forms-list.png)
 
-Bu sayfada oluşturduğunuz tüm ödül formlarını görebilirsiniz.
+بو صفحه‌ده، سیزده اولان بوتون تسویه فرم‌لرینی گؤره بیلرسینیز.
 
-Liste tablosu, her formun şu anda müşterilere kullanılıp kullanılamayacağını kontrol etmeniz için bir **Durum** sütunu içerir:
+لیست جدولینده بیر **وضعیت** سوتونو وار؛ بونونلا هر فرمین ایندی مشتری‌لر اوچون ائل‌چاتان اولوب-اولمادیغینی یوخلایا بیلرسینیز:
 
-| Durum | Anlamı |
+| وضعیت | معنی |
 |---|---|
-| **Aktif** | Form, kısa kodu veya kayıt sayfası yayınlandığı her yerde kullanılabilir. |
-| **Pasif** | Form kaydedilmiş ancak devre dışı bırakılmış. Tekrar etkinleştirmediğiniz sürece müşteriler bu formla ödeme tamamlayamaz. |
+| **فعال** | فرم، shortcode یا قیدیات صفحه‌سی یایینلاندیغی هر یئرده ایشله‌نه بیلر. |
+| **غیرفعال** | فرم ساخلامیشدیر، اما باغلیدیر. مشتری‌لر اونو یئنی‌دن فعال ائدنه‌دک، بو فرملا تسویه‌نی تاماملیا بیلمزلر. |
 
-Özellikle canlı formlarınızın yanında taslak veya mevsimlik ödül formları tutuyorsanız, genel bir kayıt akışını düzenlemeden önce durum sütununu kullanın.
+عمومی قیدیات آخی‌شینی دَییشمه‌دن اؤنجه وضعیت سوتونوندان ایشله‌دین؛ اؤزللیکله دافت یا فصلی تسویه فرم‌لرینی جانلی فرم‌لرینیزله یاناشی ساخلییرسینیزسه.
 
-Yeni bir form oluşturmak isterseniz, sayfanın üst kısmındaki Ödül Formu Ekle'ye tıklayın.
+تازه بیرینی یاراتماق ایسته‌ییرسینیزسه، صفحه‌نین یوخاریسیندا Add Checkout Form دکمه‌سینه باسین.
 
-Başlangıç noktası olarak bu üç seçenekten birini seçebilirsiniz: tek adımlı, çok adımlı veya boş. Ardından, Düzenleyici'ye Git'e tıklayın.
+باشلانغیج اوچون بو اوچ سئچیمدن بیرینی سئچه بیلرسینیز: تک مرحله‌لی، چوخ مرحله‌لی یا بوش. سونرا Go to the Editor اوچون کلیک ائدین.
 
-**Tek adımlı** veya **çok adımlı** başlangıç noktasını seçtiğinizde, form şablonu varsayılan olarak bir **Şablon Seçimi** alanı içerir. Bu alan, müşterilerinizin kayıt süreci sırasında bir site şablonu seçmesine olanak tanır. Bu alanı yerinde bırakabilir, kaldırabilir veya düzenleyicideki diğer alanlar gibi yeniden konumlandırabilirsiniz.
+باشلانغیج اوچون **تک مرحله‌لی** یا **چوخ مرحله‌لی** سئچنده، فرم قالبی ایندی وارساییلان اولاراق بیر **قالب سئچیمی** ساحه‌سی ده داخیل ائدیر. بو ساحه مشتری‌لرینیزه قیدیات پروسه‌سینده بیر سایت قالبی سئچمگه ایمکان وئریر. اونو یئرینده ساخلیا، سیله، یا ادیتوردا هر باشقا ساحه کیمی یئری‌نی دَییشه بیلرسینیز.
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![تسویه فرم ادیتورو](/img/config/checkout-form-editor.png)
 
-Alternatif olarak, mevcut formlarınızı altlarındaki seçeneklere tıklayarak düzenleyebilir veya çoğaltabilirsiniz. Orada ayrıca formun kısa kodunu kopyalama veya formu silme seçeneklerini de bulacaksınız.
+باشقا یوللا، آدی‌نین آلتینداکی سئچیم‌لره کلیک ائده‌رک موجود فرم‌لرینیزی دَییشه یا چوخالدا بیلرسینیز. اورادا فرمین shortcode-ونو کؤچورمک یا فرمی سیلمک سئچیم‌لرینی ده تاپاجاقسینیز.
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![تسویه فرمینین hover عمل‌لری](/img/config/checkout-form-hover-actions.png)
 
-#### Ödül Formu Düzenleyici Genel Bakış
+#### تسویه فرم ادیتورونا اومومی باخیش {#checkout-form-editor-overview}
 
-Ödül formu düzenleyicisi, kayıt formlarınızı oluşturmak için kapsamlı bir arayüz sağlar. Düzenleyici düzenine genel bir bakış aşağıdadır:
+تسویه فرم ادیتورو قیدیات فرم‌لرینیزی قورماق اوچون کامل بیر آراوز وئریر. ادیتور دوزنینه اومومی باخیش:
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![تسویه فرم ادیتورونا اومومی باخیش](/img/config/checkout-form-editor-overview.png)
 
-### Bir Ödül Formunu Düzenleme
+### بیر تسویه فرمینی دَییشمک {#editing-a-checkout-form}
 
-Farklı amaçlar için ödül formları oluşturabilirsiniz. Bu örnekte bir kayıt formu üzerinde çalışacağız.
+آیری مقصدلر اوچون تسویه فرم‌لری یارادا بیلرسینیز. بو اؤرنکده بیر قیدیات فرمی اوزرینه ایشله‌یه‌جه‌ییک.
 
-Ödül formu düzenleyicisine gittikten sonra, formunuza bir isim (yalnızca dahili referans için kullanılacak) ve bir slug (örneğin, kısa kodlar oluşturmak için kullanılır) verin.
+تسویه فرم ادیتورونا گئتدیکدن سونرا، فرمینیزه بیر آد وئرین (یالنیز داخلی مراجعت اوچون ایشله‌نه‌جک) و بیر slug وئرین (مسلاً shortcode یاراتماق اوچون).
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![تسویه فرم ادیتورو](/img/config/checkout-form-editor.png)
 
-Formlar adımlardan ve alanlardan oluşur. Yeni bir ödül formu adımı eklemek için Yeni Ödül Formu Adımı Ekle'ye tıklayabilirsiniz.
+فرم‌لر مرحله‌لر و ساحه‌لردن دوزلیر. Add New Checkout Step دکمه‌سینه باساراق تازه بیر مرحله آرتیرا بیلرسینیز.
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![تازه تسویه مرحله‌سی آرتیر](/img/config/checkout-form-add-step.png)
 
-Modal pencerenin ilk sekmesinde, formunuzun adım içeriğini doldurun. Ona bir ID, bir isim ve bir açıklama verin. Bu öğeler çoğunlukla dahili olarak kullanılır.
+modal پنجره‌سینین بیرینجی تب‌سینده، فرم مرحله‌سینین محتواسینی دولدورون. اونا بیر ID، بیر آد و بیر آچیقلاما وئرین. بو موردلر چوخ‌واخت داخلی ایشله‌دیلیر.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![تسویه فرم مرحله‌سینین محتوا تب‌سی](/img/config/checkout-form-step-content.png)
 
-Ardından, adımın görünürlüğünü ayarlayın. "Her zaman göster", "Yalnızca giriş yapmış kullanıcılar için göster" veya "Yalnızca misafirler için göster" seçeneklerinden birini seçebilirsiniz.
+سونرا، مرحله‌نین گؤرونمه‌سینی تنظیم ائدین. "همیشه گؤستر"، "یالنیز داخل اولموش ایشلدیجی‌لره گؤستر" یا "یالنیز قوناقلاره گؤستر" آراسیندان سئچه بیلرسینیز.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![تسویه فرم مرحله‌سینین گؤرونمه تب‌سی](/img/config/checkout-form-step-visibility.png)
 
-Son olarak, adım stilini yapılandırın. Bunlar isteğe bağlı alanlardır.
+سوندا، مرحله استیلینی تنظیم ائدین. بو ساحه‌لر اختیاری‌دیر.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![تسویه فرم مرحله‌سینین استیل تب‌سی](/img/config/checkout-form-step-style.png)
 
-Şimdi, ilk adımımıza alanlar ekleme zamanı. Sadece Yeni Alan Ekle'ye tıklayın ve istediğiniz bölüm türünü seçin.
+ایندی، بیرینجی مرحله‌میزه ساحه‌لر آرتیرماق واختیدیر. سادجه Add New Field دکمه‌سینه باسین و ایسته‌دیغینیز بؤلمه تیپینی سئچین.
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![ساحه‌لرله تسویه فرم مرحله‌سی](/img/config/checkout-form-step-with-fields.png)
 
-Her alan doldurulması gereken farklı parametrelere sahiptir. Bu ilk giriş için "Kullanıcı Adı" alanını seçeceğiz.
+هر ساحه‌نین دولدورولمالی آیری پارامترلری وار. بو بیرینجی گیریش اوچون "Username" ساحه‌سینی سئچه‌جه‌ییک.
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![ساحه تیپی سئچیمی dropdown-و](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username ساحه‌سینین محتوا تنظیم‌لری](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![Username ساحه‌سینین گؤرونمه تنظیم‌لری](/img/config/checkout-form-username-visibility.png)
 
-İhtiyacınız kadar adım ve alan ekleyebilirsiniz. Müşterilerinizin seçmesi için ürünlerinizi göstermek için Fiyatlandırma Tablosu alanını kullanın. Müşterilerinizin bir şablon seçmesine izin vermek istiyorsanız, Şablon Seçimi alanını ekleyin. Ve benzeri.
+![Username ساحه‌سینین استیل تنظیم‌لری](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+لازیم اولدوغو قدر مرحله و ساحه آرتیرا بیلرسینیز. مشتری‌لرینیزین سئچمه‌سی اوچون محصول‌لارینیزی گؤسترمک ایسته‌سینیز، Pricing Table ساحه‌سیندن ایشله‌دین. مشتری‌لرینیزه قالب سئچمک ایمکانی وئرمک ایسته‌سینیز، Template Selection ساحه‌سینی آرتیرین. و بئله‌جه.
 
-_**Not:** kullanıcı adı, e-posta, şifre, site başlığı, site URL'si, sipariş özeti, ödeme ve gönder düğmesi, bir ödül formu oluşturmak için zorunlu alanlardır._
+![تازه ساحه آرتیرما دیالوگو](/img/config/checkout-form-add-field-dialog.png)
 
-Ödül formunuz üzerinde çalışırken, müşterilerinizin formu nasıl göreceğini görmek için her zaman Önizle (Preview) düğmesini kullanabilirsiniz. Ayrıca mevcut bir kullanıcı veya bir ziyaretçi olarak görünüm arasında geçiş yapabilirsiniz.
+_**قئید:** username، email، password، سایت باشلیغی، سایت URL-ی، سیفاریش خلاصه‌سی، اؤده‌مه و گؤندرمه دکمه‌سی تسویه فرمی یاراتماق اوچون اجباری ساحه‌لردیر._
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+تسویه فرمینیز اوزرینه ایشله‌یه‌رکن، مشتری‌لرینیزین فرمی نئجه گؤره‌جه‌یینی گؤرمک اوچون همیشه Preview دکمه‌سیندن ایشله‌ده بیلرسینیز. موجود ایشلدیجی یا زائر کیمی گؤرونوش آراسیندا دَییشه ده بیلرسینیز
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![تسویه فرم Preview دکمه‌سی](/img/config/checkout-form-preview-button.png)
 
-Son olarak, Gelişmiş Seçenekler'de "Teşekkürler" sayfası için mesajı yapılandırabilir, dönüşü izlemek için kod parçacıkları ekleyebilir, ödül formunuza özel CSS ekleyebilir veya belirli ülkelere kısıtlayabilirsiniz.
+![تسویه فرم Preview modal-ی](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+سوندا، Advanced Options بؤلمه‌سینده "Thank You" صفحه‌سی اوچون پیغامی تنظیم ائده، conversion-لاری ایزله‌مک اوچون snippet-لر آرتیرا، تسویه فرمینیزه custom CSS آرتیرا یا اونو بعضی اؤلکه‌لره محدود ائده بیلرسینیز.
 
-Ayrıca, sağ sütundaki bu seçeneği açıp kapatarak veya formu kalıcı olarak silerek ödül formunuzu manuel olarak etkinleştirebilir veya devre dışı bırakabilirsiniz.
+![گلیشمیش سئچیم‌لر](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+همچینین، ساغ سوتوندا بو سئچیمی دَییشدیره‌رک تسویه فرمینیزی ال‌له فعال یا غیرفعال ائده، یا فرمی دائمی سیله بیلرسینیز.
 
-Bir formu silmek için, form eylemlerindeki silme seçeneğine tıklayın:
+![فعال دَییشدیرمه](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+بیر فرمی سیلمک اوچون، فرم عمل‌لرینده سیلمه سئچیمینه کلیک ائدین:
 
-Ödül formunuzu kaydetmeyi unutmayın!
+![تسویه فرم سیلمه سئچیمی](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+تسویه فرمینیزی ساخلاماغی اونوت مایین!
 
-Formunuzun kısa kodunu almak için Kısa Kod Oluştur'a tıklayın ve modal pencerede gösterilen sonucu kopyalayın.
+![ساخلا دکمه‌سی](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+فرمینیزین shortcode-ونو آلماق اوچون Generate Shortcode دکمه‌سینه باسین و modal پنجره‌سینده گؤسترلن نتیجه‌نی کؤچورون.
 
-### Fiyatlandırma Tablosu Alanı
+![shortcode ایله ساخلا دکمه‌سی](/img/config/checkout-form-save.png)
 
-**Fiyatlandırma Tablosu** alanı, müşterilerin bir plan seçebilmesi için ödül formunda ürünlerinizi gösterir. Bu alanı düzenlediğinizde, birkaç seçeneği yapılandırabilirsiniz:
+### Pricing Table ساحه‌سی {#the-pricing-table-field}
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+**Pricing Table** ساحه‌سی تسویه فرموندا محصول‌لارینیزی گؤستریر تا مشتری‌لر بیر plan سئچه بیلسینلر. بو ساحه‌نی دَییشنده، بیر نئچه سئچیمی تنظیم ائده بیلرسینیز:
 
-Fiyatlandırma tablosunun ön yüzde kayıt formunda nasıl göründüğü aşağıdadır:
+![Pricing Table ساحه‌سینین تنظیم‌لری](/img/config/pricing-table-field-settings.png)
+
+Pricing Table-ین frontend قیدیات فرموندا نئجه گؤروندویو:
 
 ![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
 
-*   **Ürünler**: Hangi ürünlerin gösterileceğini ve hangi sırada görüneceğini seçin.
-*   **Farklı Süreleri Zorla**: Etkinleştirildiğinde, tüm ürünler, mevcut faturalandırma dönemi için eşleşen bir fiyat varyasyonu olsun ya da olmasın gösterilir. Devre dışı bırakıldığında (varsayılan), seçilen dönem için varyasyonu olmayan ürünler gizlenir.
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-*   **Önceden Seçiliyse Gizle**: URL aracılığıyla bir plan zaten seçilmişse (örneğin, `/register/premium`), fiyatlandırma tablosunu gizler.
-*   **Fiyatlandırma Tablosu Şablonu**: Fiyatlandırma tablosu için görsel şablonu seçin (Basit Liste, Eski vb.).
+  * **محصوللار**: هانسی محصوللارین گؤسترلیجه‌یینی و هانسی سیرادا گؤرونه‌جه‌یینی سئچین.
+  * **Force Different Durations**: فعال اولاندا، ایندیکی سئچیلن حساب‌کسمه دؤوره‌سی اوچون اویغون قیمت دَییشیمی اولوب‌اولماماسینا باخمایاراق، بوتون محصوللار گؤسترلیر. سؤندورولنده (ایلک‌ده‌یر)، سئچیلن دؤوره اویغون دَییشیمی اولمایان محصوللار گیزله‌دیلیر.
+    ![قیمت جدولی Force Different Durations سئچیمی](/img/config/pricing-table-force-durations.png)
+  * **Hide when Pre-Selected**: بیر plan آرتیق URL یولو ایله سئچیلیبسه (مسلاً `/register/premium`)، قیمت جدولی‌نی گیزله‌دیر.
+  * **Pricing Table Template**: قیمت جدولی اوچون گؤرونوش template-ینی سئچین (Simple List، Legacy و باشقالاری).
 
-Bir ürünü, form o ürünün ödeme akışını tamamlamak için gereken alanları içermeden önce Fiyatlandırma Tablosu'na eklerseniz, düzenleyici şimdi bir uyarı gösterir. Canlı bir kayıt formu için değişiklikleri yayınlamadan veya kaydetmeden önce eksik zorunlu alanı eklemek için bu uyarılardan yararlanın.
+اگر فرم، او محصولون checkout آخیشینی تاماملاندیرماق اوچون لازیم اولان field-لاری شامل ائتمه‌میشدن قاباق، Pricing Table-ا بیر محصول آرتیرسانیز، editor ایندی بیر اویاری گؤسترر. دیری قئیدیات فرمی اوچون یایینلامادان یا دَییشیکلیکلری ساخلامادان قاباق، چاتیشمایان لازیمی field-ی آرتیرماق اوچون اویاری‌دان ایستیفاده ائدین.
 
-### Bir Dönem Seçimi Anahtarı Ekleme
+### دؤوره سئچیمی دَییشدیرگه‌جینی آرتیرماق {#adding-a-period-selection-toggle}
 
-Ürünlerinizde [Fiyat Varyasyonları](creating-your-first-subscription-product#price-variations) yapılandırdıysanız (örneğin, aylık ve yıllık fiyatlandırma), ödül formunuza bir **Dönem Seçimi** alanı ekleyebilirsiniz. Bu alan, müşterilerin faturalandırma dönemleri arasında geçiş yapmasına olanak tanıyan bir anahtar gösterir ve fiyatlandırma tablosu gerçek zamanlı olarak dinamik şekilde güncellenir.
+اگر محصوللارینیزدا [قیمت دَییشیم‌لری](creating-your-first-subscription-product#price-variations) قورموشسونوزسا (مسلاً آیلیق و ایللیک قیمت)، checkout فرمونوزا بیر **دؤوره سئچیمی** field-ی آرتیرا بیلرسینیز. بو field موشتریلره حساب‌کسمه دؤوره‌لری آراسیندا دَییشمه‌یه ایمکان وئرن بیر دَییشدیرگه‌ج گؤسترر و قیمت جدولی حقیقی واختدا دینامیک ینی‌له‌نیر.
 
-#### Adım 1: Ürünlerinizde Fiyat Varyasyonları Ayarlama
+#### آدیم ۱: محصوللارینیزدا قیمت دَییشیم‌لری قورون {#step-1-set-up-price-variations-on-your-products}
 
-Dönem Seçimi alanını eklemeden önce, ürünlerinizin fiyat varyasyonları yapılandırıldığından emin olun. **Ultimate Multisite > Ürünler**'e gidin, bir ürünü düzenleyin ve alternatif faturalandırma dönemleri eklemek için **Fiyat Varyasyonları** sekmesine gidin (örneğin, indirimli yıllık fiyat).
+دؤوره سئچیمی field-ینی آرتیرمامیشدان قاباق، محصوللارینیزدا قیمت دَییشیم‌لری قورولدوغونا اطمینان ائدین. **Ultimate Multisite > Products** بؤلومونه گئدین، بیر محصولو دوزه‌لدین و باشقا حساب‌کسمه دؤوره‌لری (مسلاً ایندیریملی قیمتله Annual) آرتیرماق اوچون **Price Variations** سکمه‌سینه گئدین.
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+![بیر محصولدا Price Variations سکمه‌سی](/img/config/product-price-variations-tab.png)
 
-#### Adım 2: Dönem Seçimi Alanını Ödül Formunuza Ekleme
+#### آدیم ۲: دؤوره سئچیمی field-ینی checkout فرمونوزا آرتیرین {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
-1. **Ultimate Multisite > Ödül Formları**'na gidin ve ödül formunuzu düzenleyin.
+1. **Ultimate Multisite > Checkout Forms** بؤلومونه گئدین و checkout فرمونوزو دوزه‌لدین.
 
-2. **Fiyatlandırma Tablosu** alanınızın bulunduğu adıma kadar aşağı kaydırın ve Yeni Alan Ekle'ye tıklayın.
+2. **Pricing Table** field-ینیزی شامل ائدن آدیما آشاگی سوروشون و **Add new Field**-ه کلیک ائدین.
 
-3. Alan türü seçme iletişim kutusunda, Dönem Seçimi'ne tıklayın.
+3. Field تیپی سئچیم دیالوگودا **Period Select**-ه کلیک ائدین.
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+![Period Select گؤستَرن Add New Field دیالوگو](/img/config/checkout-form-add-field-dialog.png)
 
-4. Dönem seçeneklerini yapılandırın. Her seçeneğin şunlara ihtiyacı vardır:
-   * **Süre**: Sayı (örneğin, `1`)
-   * **Süre birimi**: Dönem türü (Gün, Hafta, Ay veya Yıl)
-   * **Etiket**: Müşterilerin göreceği metin (örneğin, "Aylık", "Yıllık")
+4. دؤوره سئچیم‌لرینی قورون. هر سئچیم بونلارا احتیاجلی‌دیر:
+   * **Duration**: عدد (مسلاً `1`)
+   * **Duration unit**: دؤوره تیپی (گونلر، هفته‌لر، آیلار، یا ایل‌لر)
+   * **Label**: موشتریلرین گؤره‌جه‌یی متن (مسلاً "آیلیق"، "ایللیک")
 
-5. Daha fazla dönem seçeneği eklemek için + Seçenek Ekle'ye tıklayın. Bu seçenekler, ürünlerinizde yapılandırdığınız fiyat varyasyonlarıyla eşleşmelidir.
+5. داها چوخ دؤوره سئچیمی آرتیرماق اوچون **+ Add Option**-ا کلیک ائدین. بو سئچیم‌لر محصوللارینیزدا قوردوغونوز قیمت دَییشیم‌لری ایله اویغون اولمالیدیر.
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+![دؤوره سئچیمی field قورولوشلاری](/img/config/period-selection-field-settings.png)
 
-Alan seçeneklerini doğrudan da yapılandırabilirsiniz:
+6. بیر **Period Selector Template** سئچین (Clean ایلک‌ده‌یر‌دیر؛ ساده سبک‌لنمیش بیر سئچیم‌چی یارادیر و custom CSS اوچون حاضردیر).
 
-<!-- Screenshot unavailable: Period selection field options -->
+7. **Save Field**-ه کلیک ائدین.
 
-6. Bir **Dönem Seçici Şablonu** seçin (Temiz varsayılandır, bu da özel CSS için hazır basit bir stilize edici oluşturur).
+#### آدیم ۳: Field-ی قیمت جدولی‌نین اوستونه یئرلشدیرین {#step-3-position-the-field-above-the-pricing-table}
 
-7. Alanı Kaydet'e tıklayın.
+ان یاخشی ایشلدن تجربه‌سی اوچون، دؤوره سئچیمی field-ینین checkout آدیمینیزدا Pricing Table field-یندن **قاباق** گؤروندویونه اطمینان ائدین. Field-لاری checkout فرم editor-وندا سورویوب سیرالارینی دَییشدیره بیلرسینیز. بئله‌لیکله، موشتریلر اولجه حساب‌کسمه دؤوره‌سینی سئچیر، سونرا او دؤوره‌نین قیمت‌لرینی گؤرورلر.
 
-#### Adım 3: Alanı Fiyatlandırma Tablosu Üzerine Konumlandırma
+![Field سیرالاماسینی گؤستَرن checkout فرم editor-و](/img/config/checkout-form-editor-with-fields.png)
 
-En iyi kullanıcı deneyimi için, Dönem Seçimi alanının ödül formu adımınızda Fiyatlandırma Tablosu alanından **önce** görünmesini sağlayın. Alanları sürükleyerek ödül formu düzenleyicisinde yeniden sıralayabilirsiniz. Bu şekilde, müşteriler önce bir faturalandırma dönemi seçer ve ardından o döneme ait fiyatları görür.
+#### Frontend-ده نئجه ایشلیر {#how-it-works-on-the-frontend}
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+قورولاندان سونرا، قئیدیات صفحه‌نize گَلن موشتریلر قیمت جدولی‌نین اوستونده دؤوره سئچیم‌چی‌سینی گؤره‌جه‌کلر. اونلار باشقا بیر حساب‌کسمه دؤوره‌سینه کلیک ائدنده:
 
-#### Ön Yüzde Nasıl Çalışır
+  * قیمت جدولی آنی اولاراق سئچیلن دؤوره اوچون قیمت‌لری گؤسترمه‌یه ینی‌له‌نیر (صفحه‌نین یئنیدن یوکلنمه‌سی لازیم دئییل).
+  * اگر Pricing Table field-ینده **Force Different Durations** سؤندورولوبسا، سئچیلن دؤوره اوچون قیمت دَییشیمی اولمایان محصوللار گیزله‌دیلر.
+  * اگر **Force Different Durations** فعالدیرسا، سئچیلن دؤوره اوچون دَییشیمی اولماسا دا بوتون محصوللار گؤرونر قالیر (اونلار ایلک‌ده‌یر قیمت‌لرینی گؤستره‌جه‌کلر).
 
-Yapılandırıldıktan sonra, kayıt sayfanızı ziyaret eden müşteriler dönem seçicisini fiyatlandırma tablosunun üzerinde göreceklerdir. Farklı bir faturalandırma dönemine tıkladıklarında:
+#### URL ایله حساب‌کسمه دؤوره‌سینی قاباقدان سئچمک {#pre-selecting-a-billing-period-via-url}
 
-*   Fiyatlandırma tablosu anında güncellenerek seçilen döneme ait fiyatları gösterir (sayfa yenileme gerektirmez).
-*   Eğer Fiyatlandırma Tablosu alanında **Farklı Süreleri Zorla** devre dışıysa, seçilen dönem için fiyat varyasyonu olmayan ürünler gizlenecektir.
-*   Eğer **Farklı Süreleri Zorla** etkinse, ürünler seçilen dönem için varyasyonları olmasa bile görünür kalır (varsayılan fiyatlarını gösterirler).
+URL یولو ایله بیر محصولو و حساب‌کسمه دؤوره‌سینی قاباقدان دا سئچه بیلرسینیز. Ultimate Multisite بو URL الگو‌لارینی دَسته‌کلیر:
 
-#### URL Üzerinden Faturalandırma Dönemi Ön Seçimi
+  * `/register/premium` — یالنیز "Premium" محصولونو قاباقدان سئچیر
+  * `/register/premium/12` — محصولو و ۱۲ آیلیق دؤوره‌نی قاباقدان سئچیر
+  * `/register/premium/1/year` — محصولو ۱ ایللیک دؤوره ایله قاباقدان سئچیر
 
-Ayrıca bir ürünü ve faturalandırma dönemini URL üzerinden önceden seçebilirsiniz. Ultimate Multisite şu URL kalıplarını destekler:
+### Template Selection Field {#the-template-selection-field}
 
-*   `/register/premium` — Yalnızca "Premium" ürününü önceden seçer
-*   `/register/premium/12` — Ürünü ve 12 aylık süreyi önceden seçer
-*   `/register/premium/1/year` — Ürünü 1 yıllık bir süreyle önceden seçer
+**Template Selection** field-ی موشتریلره checkout زامانی بیر سایت template-ی سئچمه‌یه ایمکان وئرر. بو field ایندی Ultimate Multisite v2.6.1-ده آرتیریلان **تک آدیم** و **چوخ‌آدیم‌لی** checkout فرم template-لرینه ایلک‌ده‌یر اولاراق داخیلدیر.
 
-### Şablon Seçimi Alanı
+#### Field-ی ال ایله آرتیرماق {#adding-the-field-manually}
 
-**Şablon Seçimi** alanı, müşterilerin ödeme sırasında bir site şablonu seçmesine olanak tanır. Artık Ultimate Multisite v2.6.1'de eklenen **tek adımlı** ve **çok adımlı** ödül formu şablonlarına varsayılan olarak dahil edilmiştir.
+اگر v2.6.1-دن قاباق یارادیلمیش بیر فرملا ایشلیرسینیزسه، یا بوش template-دن باشلامیسینیزسا:
 
-#### Alanı Manuel Olarak Ekleme
+1. **Ultimate Multisite > Checkout Forms** بؤلومونه گئدین و checkout فرمونوزو دوزه‌لدین.
+2. سایت بیلگیلری توپلانان آدیمدا **Add new Field**-ه کلیک ائدین.
+3. Field تیپی دیالوگوندان **Template Selection**-ی سئچین.
+4. Field-ی قورون:
+   - **Label** — موشتریلرین template تورونون اوستونده گؤردویو باشلیق (مسلاً "بیر سایت template-ی سئچین").
+   - **Required** — موشتریلر داوام ائتمه‌دن قاباق template سئچمه‌لی‌دیرمی.
 
-v2.6.1'den önce oluşturulmuş veya boş bir şablondan başlatılmış bir formla çalışıyorsanız:
+#### نئجه ایشلیر {#how-it-works}
 
-1. **Ultimate Multisite > Ödül Formları**'na gidin ve ödül formunuzu düzenleyin.
-2. Site detaylarının toplandığı adımda, Yeni Alan Ekle'ye tıklayın.
-3. Alan türü iletişim kutusundan Şablon Seçimi'ni seçin.
-4. Alanı yapılandırın:
-   - **Etiket** — Müşterilerin şablon ızgarasının üzerinde gördüğü başlık (örneğin, "Bir site şablonu seçin").
-   - **Zorunlu** — Müşterilerin devam etmeden önce bir şablon seçmesi gerekiyor mu.
+موشتری checkout زامانی بیر template سئچنده، Ultimate Multisite اونون یئنی سایتینی حاضیّرلایاندا اوندان ایستیفاده ائدیر. گؤسترلن template-لر سیزین **Site Templates** لیستینیزدن گلیر (**Ultimate Multisite > Site Templates**). بورادا یالنیز موشتریلر اوچون موجود کیمی ایشاره‌لنمیش template-لر گؤرونور.
 
-#### Nasıl Çalışır
+### Checkout-form base domain-لاری {#checkout-form-base-domains}
 
-Bir müşteri ödeme sırasında bir şablon seçtiğinde, Ultimate Multisite bunu yeni sitesini oluştururken kullanır. Gösterilen şablonlar, **Site Şablonları** listenizden (**Ultimate Multisite > Site Şablonları**) gelir. Yalnızca müşterilere açık olarak işaretlenmiş şablonlar burada görünür.
+Ultimate Multisite v2.13.0، checkout form **Site URL** field-لاریندا قورولان domain-لاری شبکه base domain-لاری کیمی قبول ائدیر. موشتریلرین `example.com` و `sites.example.com` کیمی بیر یا بیر نئچه اورتاق قئیدیات domain-ی آلتینا سایت یاراتماسینی ایسته‌ینده، field-ین موجود-domain قورولوشلاریندان ایستیفاده ائدین.
 
-#### Alanı Kaldırma
+پایلاشیلان checkout-form پایه دومین‌لری هر سایت اوچون اؤزل دومین xəritələmə‌لری کیمی سایېلمیر. موشتری بو پایه‌لرین بیرین‌ده آلت‌دایرکتوری سایت یاراداندا، Ultimate Multisite او پایلاشیلان host-و یالنیز همون بیر سایتین مالکی ائدن mapped-domain قئیدی یاراتمیر. پایلاشیلان host، عینی checkout form پایه‌سین ایشلدن قارداش سایت‌لر اوچون الچاتان قالیر.
 
-Eğer site şablonu sunmuyorsanız, Şablon Seçimi alanını formunuzdan kaldırın. Müşteriler o zaman **Ultimate Multisite > Ayarlar > Site Şablonları** altında yapılandırılmış varsayılan şablonu alacaktır.
+اؤزل دومین‌لری هر موشتریه باغلانمیش mapped host-لار اوچون ساخلا‌یین، مثلن `customer-example.com`. checkout-form پایه دومین‌لرینی چوخ سایتین ایشلده بیله‌جه‌یی پایلاشیلان قئیدیات host-لاری اوچون ساخلا‌یین.
+
+#### فیلدی سیلمک {#removing-the-field}
+
+اگر سایت شابلون‌لاری تقدیم ائتمیرسینیزسه، Template Selection فیلدینی فورمونوزدان سیلین. موشتری‌لر سونرا **Ultimate Multisite > Settings > Site Templates** آلتېندا قورولان هر هانسی وارساییلان شابلونو آلاجاقلار.

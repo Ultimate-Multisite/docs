@@ -4,24 +4,24 @@ title: Filter - wu_fluent_form_count
 sidebar_label: wu_fluent_form_count
 _i18n_hash: 43e511086aa0c299c3fa225d996abd1e
 ---
-# Filter: wu_fluent_form_count
+# Filter: wu_fluent_form_count {#filter-wufluentformcount}
 
 Erlaube Plugin-Entwicklern, die Gesamtzahl der Formulare zu ändern
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $count | `int` | Die Gesamtzahl der Formulare |
 | $form_type | `string` | Der Slug des Formtyps |
 
-### Seit
+### Seit {#since}
 
 - 1.0.0
 
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L156) in Zeile 156
 
-## Rückgabe
+## Rückgabe {#returns}
 Neue Gesamtzahl

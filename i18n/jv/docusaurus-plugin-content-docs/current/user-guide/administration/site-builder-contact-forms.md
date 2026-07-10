@@ -3,11 +3,11 @@ title: Form Kontak Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formulir Kontak Pembuat Situs
+# Formulir Kontak Pembuat Situs {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 nambah kemampuan buat formulir kontak langsung dari antarmuka obrolan pakai agen Site Builder. Ini memungkinkan kamu nambah formulir kontak yang berfungsi penuh di halaman mana pun tanpa harus keluar dari obrolan.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Kemampuan formulir kontak Site Builder (`create_contact_form`) bakal otomatis mendeteksi plugin formulir yang sudah terpasang dan bikin formulir kontak pakai kemampuan bawaan plugin itu. Plugin formulir yang didukung antara lain:
 
@@ -18,7 +18,7 @@ Kemampuan formulir kontak Site Builder (`create_contact_form`) bakal otomatis me
 
 Asistennya bakal otomatis milih plugin formulir terbaik di situs kamu dan bikin formulir kontak yang disesuaikan dengan plugin itu.
 
-## Membuat Formulir Kontak
+## Membuat Formulir Kontak {#creating-a-contact-form}
 
 Untuk membuat formulir kontak pakai Site Builder:
 
@@ -34,7 +34,7 @@ Untuk membuat formulir kontak pakai Site Builder:
 
 4. Site Builder bakal bikin formulir kontak dan kasih shortcode yang siap kamu sematkan (embed).
 
-## Menggunakan Shortcode yang Dihasilkan
+## Menggunakan Shortcode yang Dihasilkan {#using-the-generated-shortcode}
 
 Setelah Site Builder bikin formulir kontak, dia bakal kasih shortcode (contohnya, `[contact-form-7 id="123"]`). Kamu bisa:
 
@@ -45,11 +45,11 @@ Setelah Site Builder bikin formulir kontak, dia bakal kasih shortcode (contohnya
 
 3. **Gunakan di template** — Yen wis nyaman nganggo PHP, sampeyan bisa nambah shortcode ku nang file template tema.
 
-## Ngatur Formulir Kontak (Customizing the Contact Form)
+## Ngatur Formulir Kontak (Customizing the Contact Form) {#customizing-the-contact-form}
 
 Sawise Site Builder nggawe formulir kontak, sampeyan isih iso ngatur maneh:
 
-### Lewat Antarmuka Chat
+### Lewat Antarmuka Chat {#via-the-chat-interface}
 
 Minta Site Builder kanggo ngowahi formulir kasebut:
 
@@ -57,7 +57,7 @@ Minta Site Builder kanggo ngowahi formulir kasebut:
 
 Site Builder bakal ngowahi formulir lan mbalekake shortcode sing wis diupdate.
 
-### Lewat Admin Interface Plugin Formulir (Form Plugin's Admin Interface)
+### Lewat Admin Interface Plugin Formulir (Form Plugin's Admin Interface) {#via-the-form-plugins-admin-interface}
 
 Sampeyan uga iso ngatur formulir langsung nang pengaturan plugin formulir sampeyan:
 
@@ -65,7 +65,7 @@ Sampeyan uga iso ngatur formulir langsung nang pengaturan plugin formulir sampey
 2. Temokake formulir sing digawe dening Site Builder.
 3. Edit kolom formulir, aturan validasi, lan notifikasi email kaya sing dibutuhake.
 
-## Plugin Formulir lan Kompatibilitas (Form Plugins and Compatibility)
+## Plugin Formulir lan Kompatibilitas (Form Plugins and Compatibility) {#form-plugins-and-compatibility}
 
 Site Builder otomatis bakal ngetok plugin formulir endi sing wis dipasang nang situs sampeyan lan nganggo iku kanggo nggawe formulir kontak. Yen ana luwih saka siji plugin formulir sing dipasang, Site Builder bakal milih urutan iki:
 
@@ -76,7 +76,7 @@ Site Builder otomatis bakal ngetok plugin formulir endi sing wis dipasang nang s
 
 Yen ora ana salah siji plugin kasebut sing dipasang, Site Builder bakal rekomendasi kanggo nggawe salah siji sadurunge nggawe formulir kontak.
 
-## Notifikasi Email (Email Notifications)
+## Notifikasi Email (Email Notifications) {#email-notifications}
 
 Formulir kontak sing digawe dening Site Builder wis diatur kanggo ngirim notifikasi email marang administrator situs secara default. Sampeyan iso ngowahi alamat email penerima lan pesan notifikasi:
 
@@ -91,21 +91,21 @@ Kanggo instruksi rinci, deleng dokumentasi plugin formulir sampeyan:
 - [Pemberitahuan Email Fluent Forms](https://fluentforms.com/docs/)
 - [Pemberitahuan Email Gravity Forms](https://docs.gravityforms.com/)
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#example-use-cases}
 
-### Formulir Kontak Sederhana
+### Formulir Kontak Sederhana {#simple-contact-form}
 
 > "Buat formulir kontak sederhana dengan kolom nama, email, dan pesan."
 
-### Formulir Bertahap (Multi-Step Form)
+### Formulir Bertahap (Multi-Step Form) {#multi-step-form}
 
 > "Buat formulir kontak yang punya langkah pertama untuk informasi kontak dan langkah kedua untuk pesan serta metode kontak yang diinginkan."
 
-### Formulir dengan Logika Bersyarat (Conditional Logic)
+### Formulir dengan Logika Bersyarat (Conditional Logic) {#form-with-conditional-logic}
 
 > "Buat formulir kontak yang menampilkan kolom berbeda tergantung pilihan pengguna di dropdown."
 
-### Formulir dengan Unggah File (File Upload)
+### Formulir dengan Unggah File (File Upload) {#form-with-file-upload}
 
 > "Buat formulir kontak yang mengizinkan pengguna untuk mengunggah file atau lampiran."
 

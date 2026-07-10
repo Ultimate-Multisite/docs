@@ -3,7 +3,7 @@ title: 國家列表
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# 重新排序 Ultimate Multisite 國家清單
+# 重新排序 Ultimate Multisite 國家清單 {#re-ordering-the-ultimate-multisite-country-list}
 
 選擇國家的下拉選單是依照英文國名的字母順序排列。這表示有時候，您公司所在的國家或大多數客戶所在的國家，可能會埋藏在一長串國名清單的中間。
 

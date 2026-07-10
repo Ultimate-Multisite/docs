@@ -3,7 +3,7 @@ title: Жиек колдонуучу суроолору
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Жиек колдонулар
+# Жиек колдонулар {#frequently-asked-questions}
 
 Бул — колдоо сураштары учурунда көп кездешкен **Жиек колдонулар** (Frequently Asked Questions) тизмеси.
 

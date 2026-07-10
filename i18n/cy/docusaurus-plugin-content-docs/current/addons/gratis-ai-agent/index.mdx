@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Mae Gratis AI Agent yn gynorthwyydd AI WordPress ymreolaethol sy'n gallu cynllunio, adeiladu, a rheoli gwefannau WordPress cyflawn drwy gyfarwyddiadau iaith naturiol. Mae'n amlygu set strwythuredig o **alluoedd** — gweithredoedd ar wahân, profadwy y gall yr asiant eu galw — sy'n cwmpasu popeth o reoli cynnwys i addasu system ddylunio. Mae fersiwn 1.9.0 yn ychwanegu galluoedd creu cynnwys, adolygu tudalennau'n weledol drwy sgrinluniau ochr cleient, pum proffil asiant mewnol, a baneri nodwedd ar gyfer rheoli mynediad a brandio.
+
+## Nodweddion Allweddol {#key-features}
+
+- **System alluoedd** — catalog modiwlaidd, estynadwy o weithredoedd y gall yr asiant eu galw ar eich gosodiad WordPress
+- **Rheoli Cynnwys** — creu cofnodion a thudalennau (gan gynnwys aseinio templedi tudalen), creu sawl cofnod mewn swp mewn un galwad, gosod delweddau dan sylw, ac adeiladu ffurflenni cyswllt
+- **Adolygu Gweledol** — dal sgrinluniau o dudalennau byw, cymharu cyflyrau cyn/ar ôl, a chael adolygiad dylunio wedi'i gynhyrchu gan AI sy'n cwmpasu cynllun, teipograffeg, lliw, a hygyrchedd
+- **Pum asiant mewnol** — Ysgrifennwr Cynnwys, Adeiladwr Gwefan, Stiwdio Ddylunio, Rheolwr Ategion, a Chynorthwyydd Cymorth; gellir newid rhyngddynt drwy'r Dewisydd Asiant ym mhennyn y sgwrs
+- **Baneri nodwedd** — toglau rheoli mynediad a brandio yn Gosodiadau → Baneri Nodwedd ar gyfer cyfyngiadau rôl, enwi label gwyn, ac addasu teclynnau
+- **Rheoli Mathau Cofnod Personol** — cofrestru, rhestru, a dileu mathau cofnod personol gyda pharhad ar draws ailddechreuadau
+- **Rheoli Tacsonomeg Bersonol** — cofrestru, rhestru, a dileu tacsonomegau personol gyda pharhad
+- **Galluoedd System Ddylunio** — mewnosod CSS personol, rheoli patrymau bloc wedi'u curadu, gosod logo'r wefan, a chymhwyso rhagosodiadau theme.json
+- **Rheoli Arddulliau Byd-eang** — darllen ac ysgrifennu gwerthoedd theme.json ar gyfer paletau lliw, teipograffeg, bylchu, a rhagor
+- **Rheoli Dewislenni Llywio** — creu a diweddaru dewislenni llywio a'u heitemau'n rhaglennol
+- **Rheoli Opsiynau** — darllen ac ysgrifennu opsiynau WordPress gyda rhestr flocio diogelwch fewnol i ddiogelu gosodiadau hollbwysig
+- **Cofrestrfa Galluoedd Gosodadwy** — darganfod ac actifadu pecynnau gallu ychwanegol heb addasu ffeiliau craidd yr ategyn
+- **Trefniannu Adeiladwr Gwefan v2** — cynlluniau adeiladu gwefan aml-gam gyda darganfod ategion, olrhain cynnydd, ac adfer ar ôl gwallau
+- **Gorchymyn meincnod WP-CLI** — rhedeg cyfres meincnod gallu'r asiant o'r llinell orchymyn ar gyfer CI a gwerthuso modelau
+
+## Gofynion {#requirements}
+
+- WordPress 6.0 neu uwch
+- PHP 8.1 neu uwch
+- WordPress Multisite (wedi'i actifadu ar y rhwydwaith) neu osodiad un safle
+- Ategyn cysylltydd darparwr AI gweithredol (Anthropic, OpenAI, neu gydnaws)
+
+## Gosod {#installation}
+
+1. Llwythwch ffeiliau'r ategyn i `/wp-content/plugins/gratis-ai-agent`
+2. Actifadwch yr ategyn drwy'r sgrin **Ategion** yn WordPress
+3. Ewch i **Gratis AI Agent → Gosodiadau** a chysylltwch eich darparwr AI
+4. (Dewisol) Porwch y **Gofrestrfa Galluoedd** i osod pecynnau gallu ychwanegol
+
+## Dechrau Cyflym {#quick-start}
+
+Ar ôl ei actifadu a'i gysylltu â darparwr AI, agorwch banel **Gratis AI Agent** ym mar ochr gweinyddol WordPress. Teipiwch gyfarwyddyd iaith naturiol a bydd yr asiant yn cynllunio ac yn gweithredu'r camau gofynnol gan ddefnyddio ei alluoedd sydd ar gael.
+
+**Cyfarwyddiadau enghreifftiol:**
+
+```
+Creu math cofnod personol "Portfolio" gyda thacsonomeg "Project Category".
+```
+
+```
+Mewnosod palet lliw modd tywyll i'r theme a gosod y prif liw i #1a1a2e.
+```
+
+```
+Adeiladu gwefan bwyty gyda bwydlen ar-lein, ffurflen archebu, a thudalen gyswllt.
+```
+
+## Trosolwg o Alluoedd {#abilities-overview}
+
+Galluoedd yw'r gweithredoedd atomig y gall yr asiant eu cyflawni. Mae pob gallu yn ddosbarth PHP cofrestredig sy'n amlygu sgema (paramedrau a mathau dychwelyd) y mae'r asiant yn ei ddarllen adeg rhedeg. Mae galluoedd wedi'u grwpio yn feysydd swyddogaethol:
+
+| Maes | Galluoedd |
+|---|---|
+| **Rheoli Cynnwys** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Adolygu Gweledol** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Mathau Cofnod Personol** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Tacsonomegau Personol** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **System Ddylunio** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Arddulliau Byd-eang** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Dewislenni Llywio** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Rheoli Opsiynau** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Galluoedd Gosodadwy** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Adeiladwr Gwefan** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Gweler y [Cyfeirnod Galluoedd](./abilities) am ddogfennaeth paramedrau lawn ac enghreifftiau defnydd.
+
+## WP-CLI {#wp-cli}
+
+Daw Gratis AI Agent gyda theulu gorchmynion `wp gratis-ai-agent` ar gyfer rhedeg meincnodau a rheoli galluoedd o'r llinell orchymyn. Gweler y [Cyfeirnod WP-CLI](./wp-cli) am y rhestr orchmynion lawn.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Ffurfweddu {#configuration}
+
+Mae'r holl osodiadau o dan **Gratis AI Agent → Gosodiadau** yn weinyddiaeth WordPress:
+
+| Gosodiad | Disgrifiad |
+|---|---|
+| **Darparwr AI** | Dewis a ffurfweddu'r cysylltydd darparwr AI gweithredol |
+| **Model** | Dewis y model iaith i'w ddefnyddio ar gyfer sesiynau asiant |
+| **Uchafswm Tocynnau** | Cyllideb tocynnau fesul cais (rhagosodiad 4096) |
+| **Terfyn Amser Gallu** | Uchafswm eiliadau y gall gallu unigol redeg (rhagosodiad 30) |
+| **Cofnodi Dadfygio** | Cofnodi galwadau gallu a rhesymu'r asiant i log dadfygio WordPress |
+
+## Rhestr Flocio Diogelwch Rheoli Opsiynau {#options-management-safety-blocklist}
+
+Mae'r gallu Rheoli Opsiynau yn cynnwys rhestr flocio fewnol sy'n atal yr agent rhag darllen neu ysgrifennu opsiynau WordPress sensitif. Mae'r rhestr flocio ddiofyn yn cynnwys:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (opsiynau URL — defnyddiwch offeryn mudo pwrpasol ar gyfer y rhain)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (allweddi cyfrinachol)
+- `active_plugins`, `template` (actifadu plugin/theme — defnyddiwch alluoedd pwrpasol)
+- Manylion mewngofnodi porth talu ac allweddi API a gofrestrwyd gan plugins wedi'u gosod
+
+Gellir ychwanegu cofnodion ychwanegol drwy'r hidlydd `gratis_ai_agent_options_blocklist`.
+
+## Bachau a Hidlyddion {#hooks-and-filters}
+
+### Gweithredoedd {#actions}
+
+- `gratis_ai_agent_ability_registered` — yn cael ei danio ar ôl i allu gael ei gofrestru, yn derbyn enw dosbarth y gallu
+- `gratis_ai_agent_plan_started` — yn cael ei danio pan fydd cynllun adeiladwr safle yn dechrau gweithredu
+- `gratis_ai_agent_plan_completed` — yn cael ei danio pan fydd cynllun yn gorffen yn llwyddiannus
+- `gratis_ai_agent_plan_failed` — yn cael ei danio pan fydd cynllun yn dod ar draws gwall na ellir ei adfer
+
+### Hidlyddion {#filters}
+
+- `gratis_ai_agent_abilities` — addasu'r rhestr alluoedd gofrestredig cyn i'r agent ei llwytho
+- `gratis_ai_agent_options_blocklist` — ymestyn neu leihau'r rhestr flocio diogelwch opsiynau
+- `gratis_ai_agent_benchmark_questions` — ychwanegu cwestiynau meincnod personol at y gyfres werthuso
+- `gratis_ai_agent_plan_plugins` — addasu'r rhestr darganfod plugin yn ystod cynhyrchu cynllun safle
+
+## Cymorth {#support}
+
+Am gymorth, ewch i [ultimatemultisite.com](https://ultimatemultisite.com) neu agorwch issue yn ystorfa'r plugin.
+
+## Cofnod Newidiadau {#changelog}
+
+Gweler y [Cofnod Newidiadau](./changelog) am hanes llawn y fersiynau.

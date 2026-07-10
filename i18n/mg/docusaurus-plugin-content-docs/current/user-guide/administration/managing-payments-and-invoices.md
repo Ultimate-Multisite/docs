@@ -3,9 +3,9 @@ title: Fitantanana ny Fandoavam-bola sy ny Nota
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Fitera ny Fandoana Fandoavam-bola sy Taratasy Fandoavam-bola
+# Fitera ny Fandoana Fandoavam-bola sy Taratasy Fandoavam-bola {#managing-payments-and-invoices}
 
-## Fandrefesana Fandoavam-bola
+## Fandrefesana Fandoavam-bola {#payment-settings}
 
 Alohan'ny fandraisana vola ianao, mila mametraka ireo fepetra mifandraika amin'ny fandoavam-bola ianao. Mandehana any amin'ny **Ultimate Multisite → Settings** ary tsindrio ny tabilao **Payment**.
 
@@ -15,7 +15,7 @@ Ity misy endrika feno an'ilay pejy fandrefesana fandoavam-bola:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Safidy Fandoavam-bola Ankapobeny
+### Safidy Fandoavam-bola Ankapobeny {#general-payment-options}
 
 Ao amin'ny fandrefesana ankapobeny dia afaka mametraka ireto zavatra ireto ianao:
 
@@ -24,7 +24,7 @@ Ao amin'ny fandrefesana ankapobeny dia afaka mametraka ireto zavatra ireto ianao
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Manohana fandoavam-bola maro i Ultimate Multisite. Afaka manao activé sy mametraka tsirairay amin'izy ireo avy amin'ny tabilao Payment ianao.
 
@@ -40,11 +40,11 @@ Ny fitaovana tsirairay dia manana faritra manokana ho an'ny fandrefesana izay am
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Afaka mametraka **Sandbox Mode** ianao mba hanandrana ny fampifandraisana fandoavam-bola alohan'ny hampiasana azy amin'ny tena izy. Rehefa miasa ny sandbox mode, tsy hisy vola tena izy ho voahena.
 
-## Fijerena ny Fandoavam-bola
+## Fijerena ny Fandoavam-bola {#viewing-payments}
 
 Mandehana any amin'ny pejy **Payments** eo ambanin'ny Ultimate Multisite mba hijerena ny fifanakalozana rehetra ao anatin'ny tambajotrao.
 
@@ -54,7 +54,7 @@ Afaka manao fitadiavana fandoavam-bola araka ny sata (completed, pending, failed
 
 Tsindrio ny fandoavam-bola iray mba hahitana ny antsipiriany rehetra azy, anisan'izany ireo zavatra voarakitra (line items), ny fandraisana anjara (membership) mifandray, ny fampahalalana momba ny mpanjifa ary ny data avy amin'ny payment gateway.
 
-## Invoices (Fanamarihana Fandoavam-bola)
+## Invoices (Fanamarihana Fandoavam-bola) {#invoices}
 
 Afaka mamorona taratasy fandoavam-bola ho azy ny Ultimate Multisite rehefa misy fandoavam-bola. Afaka manova ny endrika (template) sy ny fomba fametrahana laharana (numbering format) an'io taratasy io ianao amin'ny Payment settings.
 

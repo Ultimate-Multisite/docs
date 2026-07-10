@@ -3,7 +3,7 @@ title: Sunrise ফাইল ত্রুটি
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ফাইল ইনস্টল করতে সমস্যা
+# Sunrise ফাইল ইনস্টল করতে সমস্যা {#error-installing-the-sunrise-file}
 
 sunrise.php ফাইলটি একটি বিশেষ ফাইল যা WordPress নিজে চালু হওয়ার সময় খোঁজে। WordPress যাতে sunrise.php ফাইলটি খুঁজে পায়, সেজন্য এটি অবশ্যই **wp-content ফোল্ডারের** ভেতরে থাকতে হবে।
 

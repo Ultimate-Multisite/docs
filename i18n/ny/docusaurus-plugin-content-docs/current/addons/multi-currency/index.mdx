@@ -1,0 +1,117 @@
+---
+title: Ndalama Zamitundu Yambiri
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Ndalama Zosiyanasiyana {#multi-currency}
+
+Ultimate Multisite: Ndalama Zosiyanasiyana imathandiza netiweki yanu kuvomereza malipiro mu ndalama zosiyanasiyana. Imasintha mitengo yokha pogwiritsa ntchito mitengo yosinthira ndalama ya pompopompo kapena ya pamanja, imakulolani kukhazikitsa mitengo yeniyeni pa malonda aliwonse pa ndalama iliyonse, ndipo imazindikira ndalama zomwe mlendo aliyense amakonda kudzera pa geolocation — zonsezi zikuyendetsedwa kuchokera pa Dashboard imodzi ya woyang'anira.
+
+## Zinthu Zofunika {#key-features}
+
+- **Kusintha kwa mitengo yosinthira ndalama kokha** — mitengo imasinthidwa kuchokera ku ndalama yanu yoyambira pogwiritsa ntchito mitengo yomwe yatengedwa kwa wopereka amene mwasankha
+- **Kusintha mitengo pa malonda aliyense** — khazikitsani mitengo yeniyeni ya ndalama inayake pa malonda aliwonse kuti mudutse kusintha kokha
+- **Gawo losankha ndalama polembetsa** — limalola makasitomala kusankha ndalama zomwe amakonda pa nthawi yomaliza kugula/kulembetsa
+- **Opereka mitengo yosinthira ndalama ambiri** — ECB, Frankfurter, Stripe, kapena mitengo ya pamanja kwathunthu
+- **Kuzindikira ndalama pogwiritsa ntchito geolocation** — imasankha kale yokha ndalama yomwe ikugwirizana ndi dziko la mlendo
+- **Dashboard ya woyang'anira** — yendetsani ndalama zogwira ntchito, mitengo yosinthira ndalama, ndi makonda a wopereka kuchokera malo amodzi
+
+## Zofunikira {#requirements}
+
+- Ultimate Multisite 2.0.0 kapena yapamwamba
+- Kuyika kwa WordPress Multisite
+- PHP 7.4 kapena yapamwamba
+
+## Kuyika {#installation}
+
+1. Kwezani mafayilo a pulagini ku `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Yatsani pulagini kudzera pa skrini ya **Mapulagini** mu WordPress (Yatsani pa Netiweki)
+3. Pitani ku **Ultimate Multisite → Ndalama Zosiyanasiyana** kuti mutsegule Dashboard ya woyang'anira
+4. Onjezani ndalama zomwe mukufuna kuvomereza ndi kukonza wopereka mitengo yosinthira ndalama wanu
+
+## Kukonza {#configuration}
+
+### Dashboard ya Woyang'anira {#admin-dashboard}
+
+Dashboard ya woyang'anira ya Ndalama Zosiyanasiyana (**Ultimate Multisite → Ndalama Zosiyanasiyana**) ndi malo apakati oti:
+
+- Kuwonjezera, kuyatsa, kapena kuzimitsa ndalama
+- Kusankha wopereka mitengo yosinthira ndalama ndi kutsitsimutsa mitengo pakafunika
+- Kuwunika mitengo yapano ya ndalama zonse zogwira ntchito
+- Kukhazikitsa mitengo ya pamanja pamene opereka okha sali oyenera
+
+### Opereka Mitengo Yosinthira Ndalama {#exchange-rate-providers}
+
+| Wopereka | Kufotokozera |
+|---|---|
+| **ECB** | European Central Bank — mitengo yaulere ya tsiku ndi tsiku ya netiweki zochokera pa EUR |
+| **Frankfurter** | API yaulere ya ECB mirror ya open-source — yaulere, safuna API key |
+| **Stripe** | Imagwiritsa ntchito mitengo ya FX ya pompopompo ya Stripe — imafuna kuphatikizidwa kwa Stripe kogwira ntchito |
+| **Pamanja** | Mumalowetsa mitengo mwachindunji; palibe kuyitana kwa API yakunja |
+
+Sankhani wopereka wanu pansi pa **Ultimate Multisite → Ndalama Zosiyanasiyana → Makonda → Wopereka Mitengo Yosinthira Ndalama**. Mitengo ingatsitsimutshidwe pamanja nthawi iliyonse kapena kukonzedwa kuti isinthe yokha.
+
+### Kusintha Mitengo pa Malonda Aliwonse {#per-product-pricing-overrides}
+
+Pamene kusintha kokha sikuli kolondola mokwanira, mungakhazikitse mtengo weniweni wa ndalama inayake pa malonda aliwonse:
+
+1. Tsegulani mkonzi wa malonda (**Ultimate Multisite → Malonda → Sinthani**)
+2. Pitani pansi mpaka gawo la **Mitengo ya Ndalama**
+3. Lowetsani mtengo weniweni wa ndalama iliyonse yomwe mukufuna kusintha
+4. Sungani malonda
+
+Malonda opanda kusintha amagwiritsa ntchito mtengo wosinthidwa kuchokera ku ndalama yanu yoyambira.
+
+### Gawo Losankha Ndalama Polembetsa {#currency-selector-signup-field}
+
+Gawo losankha ndalama lingawonjezedwe ku njira yanu yolembetsa/yomaliza kugula kuti makasitomala asankhe ndalama zomwe amakonda pa kulembetsa:
+
+1. Pitani ku **Ultimate Multisite → Ndalama Zosiyanasiyana → Makonda**
+2. Yatsani **Onetsani chosankha ndalama polembetsa**
+3. Mwachisankho, khazikitsani ndalama yokhazikika kapena lolani geolocation kusankha mtengo wosankhidwa kale
+
+Ndalama yosankhidwayo imasungidwa ndi subscription ndipo imagwiritsidwa ntchito pa kulipiritsa konse kotsatira.
+
+### Kuzindikira Ndalama Pogwiritsa Ntchito Geolocation {#geolocation-based-currency-detection}
+
+Pamene kuzindikira kwa geolocation kwayatsidwa, addon imalumikiza dziko la mlendo ndi ndalama ndipo imaisankha kale mu gawo losankha ndalama. Kuti muyatse:
+
+1. Pitani ku **Ultimate Multisite → Ndalama Zosiyanasiyana → Makonda**
+2. Yatsani **Zindikira ndalama kuchokera ku malo a mlendo**
+3. Lumikizani maiko ndi ndalama mu tebulo la **Kulumikiza kwa Geolocation**
+
+Ngati palibe kulumikiza kwa dziko la mlendo, ndalama yoyambira ya netiweki imagwiritsidwa ntchito ngati yobwerera.
+
+## Mafunso Ofunsidwa Kawirikawiri {#frequently-asked-questions}
+
+### Chimachitika n'chiyani ngati wopereka mitengo yosinthira ndalama sakupezeka? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addon imabwerera ku mitengo yomwe inatengedwa bwino komaliza. Ngati palibe mitengo yomwe inatengedwa kale, imabwerera ku mitengo ya pamanja yomwe mwakonza. Ndikulimbikitsidwa kukonza mitengo ya pamanja ngati njira yotetezera.
+
+### Kodi ndingagwiritse ntchito opereka osiyanasiyana pa ndalama zosiyanasiyana? {#can-i-use-different-providers-for-different-currencies}
+
+Ayi — wopereka m'modzi amakhala wogwira ntchito nthawi imodzi pa ndalama zonse. Gwiritsani ntchito **Pamanja** ngati mukufuna kuwongolera kwathunthu mitengo iliyonse payokha.
+
+### Kodi geolocation imafuna pulagini yosiyana? {#does-geolocation-require-a-separate-plugin}
+
+Palibe pulagini yakunja ya geolocation yomwe ikufunika. Addon imagwiritsa ntchito kuzindikira kwa IP-kupita-ku-dziko komwe kuli mkati mwa WordPress. Kuti mupeze kulondola kwakukulu, ntchito yapadera ya geolocation ingaphatikizidwe kudzera pa filter hooks omwe aperekedwa.
+
+### Kodi kusintha pa malonda aliwonse kumagwiritsidwa ntchito musanawonjezere kapena mutawonjezera msonkho? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Kusintha pa malonda aliwonse kumakhazikitsa mtengo usanaperekedwe msonkho mu ndalama yomwe mukufuna. Msonkho umawerengedwa pamwamba pa mtengo wosinthidwa pogwiritsa ntchito makonzedwe anu amsonkho omwe alipo.
+
+## Mbiri ya Zosintha {#changelog}
+
+### Version 1.0.0 — Yatulutsidwa pa 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Chatsopano: Thandizo la ndalama zosiyanasiyana lokhala ndi kusintha kwa mitengo yosinthira ndalama kokha
+- Chatsopano: Kusintha mitengo pa malonda aliwonse kuti mupeze mitengo yeniyeni ya ndalama inayake
+- Chatsopano: Gawo losankha ndalama polembetsa pa njira yomaliza kugula
+- Chatsopano: Opereka mitengo yosinthira ndalama: ECB, Frankfurter, Stripe, ndi pamanja
+- Chatsopano: Kuzindikira ndalama pogwiritsa ntchito geolocation
+- Chatsopano: Dashboard ya woyang'anira yosamalira ndalama ndi mitengo yosinthira ndalama
+- Kukonza: Dashboard nthawi zonse inali kuonetsa mitengo mu ndalama yoyambira mosasamala kanthu za ndalama yosankhidwa

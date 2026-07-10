@@ -3,7 +3,7 @@ title: এটা প্লেন আপগ্রেড কৰা
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# এটা প্লেন আপগ্রেড কৰা (v2)
+# এটা প্লেন আপগ্রেড কৰা (v2) {#upgrading-a-plan-v2}
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ বৰ্ণনা কৰে।**_
 
@@ -41,7 +41,7 @@ checkout সম্পন্ন হোৱাৰ পিছত, নতুন প্
 
 ##
 
-## আপগ্রেড আৰু ডাউনগ্রেড পথসমূহ (Upgrade and Downgrade Paths)
+## আপগ্রেড আৰু ডাউনগ্রেড পথসমূহ (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 আপোনাৰ প্ৰতিটো প্ৰডাক্টত, আপোনাৰ ওচৰত এটা **Up & Downgrades** ট্ৰি (tab) থাকিব। সেই ট্ৰিৰ প্ৰথম বিকল্পটো এটা **Plan Group** নামৰ ফিল্ড।
 

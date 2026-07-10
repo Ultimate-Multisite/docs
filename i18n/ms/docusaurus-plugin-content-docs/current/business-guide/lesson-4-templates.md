@@ -3,15 +3,15 @@ title: 'Pelajaran 4: Membina Templat Niche'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lesson 4: Membina Templat Niche
+# Lesson 4: Membina Templat Niche {#lesson-4-building-niche-templates}
 
 Templat adalah teras kepada nilai tawaran niche anda. Pemilik studio kecergasan yang mendaftar dan melihat laman web yang sudah kelihatan seperti laman web kecergasan—dengan jadual kelas, profil jurulatih, dan imej yang sesuai—jauh lebih berkemungkinan untuk kekal berbanding mereka yang melihat kanvas kosong.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 Kita mempunyai rangkaian FitSite yang berfungsi dengan Ultimate Multisite dipasang dan dikonfigurasi. Sekarang kita akan membina templat yang membuatkan FitSite terasa direka khas untuk perniagaan kecergasan.
 
-## Mengapa Templat Niche Penting
+## Mengapa Templat Niche Penting {#why-niche-templates-matter}
 
 Templat generik memaksa pelanggan anda melakukan kerja keras: mencari tahu halaman apa yang mereka perlukan, struktur kandungan apa yang berfungsi, dan bagaimana membuatnya kelihatan betul untuk industri mereka. Templat niche menghapuskan kekangan itu.
 
@@ -24,11 +24,11 @@ Seorang pemilik studio kecergasan yang mendaftar ke FitSite harus melihat:
 
 Mereka hanya perlu mengisi butiran mereka. Mereka tidak bermula dari sifar.
 
-## Merancang Templat Anda
+## Merancang Templat Anda {#planning-your-templates}
 
 Sebelum membina, putuskan templat apa yang akan ditawarkan. Untuk FitSite, kita akan mencipta tiga:
 
-### Templat 1: Studio Essential
+### Templat 1: Studio Essential {#template-1-studio-essential}
 
 Untuk studio kecil dan jurulatih peribadi.
 
@@ -39,7 +39,7 @@ Untuk studio kecil dan jurulatih peribadi.
 - Halaman **Hubungi** dengan peta lokasi dan borang
 - **Reka bentuk yang bersih, moden** dengan skema warna yang sesuai untuk kecergasan
 
-### Templat 2: Gym Pro
+### Templat 2: Gym Pro {#template-2-gym-pro}
 
 Untuk gim yang sudah mantap dengan lebih banyak perkhidmatan.
 
@@ -50,7 +50,7 @@ Untuk gim yang sudah mantap dengan lebih banyak perkhidmatan.
 - Bahagian **Testimoni** di laman utama
 - **Pilihan penjenamaan yang lebih menonjol**
 
-### Templat 3: Fitness Chain
+### Templat 3: Fitness Chain {#template-3-fitness-chain}
 
 Untuk operasi pelbagai lokasi.
 
@@ -60,17 +60,17 @@ Untuk operasi pelbagai lokasi.
 - **Penjenamaan berpusat** dengan butiran khusus lokasi
 - **Direktori kakitangan** merentasi lokasi
 
-## Membina Laman Templat
+## Membina Laman Templat {#building-a-template-site}
 
 Dalam Ultimate Multisite, templat hanyalah laman web WordPress yang dikonfigurasi seperti yang anda mahu laman web pelanggan baharu kelihatan. Begini cara menciptanya:
 
-### Langkah 1: Cipta Laman Templat
+### Langkah 1: Cipta Laman Templat {#step-1-create-the-template-site}
 
 1. Navigasi ke **Sites > Add New** dalam pentadbir rangkaian anda
 2. Cipta laman bernama `template-studio-essential`
 3. Laman ini menjadi kanvas kerja anda
 
-### Langkah 2: Pasang dan Konfigurasi Tema
+### Langkah 2: Pasang dan Konfigurasi Tema {#step-2-install-and-configure-the-theme}
 
 Tukar ke papan pemuka laman templat dan:
 
@@ -82,7 +82,7 @@ Tukar ke papan pemuka laman templat dan:
 Pilih tema yang cukup fleksibel untuk kelihatan bagus untuk kecergasan tetapi tidak terlalu kompleks sehingga pelanggan anda tidak dapat mengurusnya. Tema seperti Astra, GeneratePress, atau Kadence berfungsi dengan baik kerana ia ringan, boleh disesuaikan, dan disokong dengan baik.
 :::
 
-### Langkah 3: Cipta Halaman
+### Langkah 3: Cipta Halaman {#step-3-create-the-pages}
 
 Bina setiap halaman dengan:
 
@@ -92,7 +92,7 @@ Bina setiap halaman dengan:
 
 Jadikan kandungan contoh itu bersifat instruktif jika boleh. Daripada teks pengisi generik, tulis kandungan seperti: "Gantikan ini dengan penerangan ringkas tentang studio anda dan apa yang menjadikannya istimewa. Sebutkan falsafah latihan anda, tahun pengalaman, atau apa yang boleh dijangkakan oleh pelanggan."
 
-### Langkah 4: Konfigurasi Plugin
+### Langkah 4: Konfigurasi Plugin {#step-4-configure-plugins}
 
 Pasang dan aktifkan plugin yang diperlukan oleh studio kecergasan:
 
@@ -100,7 +100,7 @@ Pasang dan aktifkan plugin yang diperlukan oleh studio kecergasan:
 - Plugin borang hubungan
 - Plugin SEO (pra-konfigurasi dengan nilai lalai yang berkaitan dengan kecergasan)
 
-### Langkah 5: Tandakan sebagai Templat
+### Langkah 5: Tandakan sebagai Templat {#step-5-mark-as-template}
 
 1. Navigasi ke **Ultimate Multisite > Sites**
 2. Edit laman templat
@@ -108,7 +108,7 @@ Pasang dan aktifkan plugin yang diperlukan oleh studio kecergasan:
 
 Ulangi proses ini untuk setiap templat yang ingin anda tawarkan.
 
-## Senarai Semak Kualiti Templat
+## Senarai Semak Kualiti Templat {#template-quality-checklist}
 
 Sebelum menjadikan templat tersedia, sahkan:
 
@@ -121,7 +121,7 @@ Sebelum menjadikan templat tersedia, sahkan:
 - [ ] Tiada pautan rosak atau aset yang hilang
 - [ ] Kelajuan muat halaman adalah boleh diterima
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Sedia untuk konfigurasi pelan (lesson seterusnya)
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Tiga templat khusus niche** yang direka untuk saiz perniagaan kecergasan yang berbeza
 - **Kandungan dan imej yang sesuai untuk kecergasan** yang membuatkan platform terasa direka khas

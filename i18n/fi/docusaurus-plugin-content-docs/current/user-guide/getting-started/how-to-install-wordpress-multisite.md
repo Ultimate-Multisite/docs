@@ -3,7 +3,7 @@ title: Miten asentaa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Miten asennan WordPress Multisite?
+# Miten asennan WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite mahdollistaa useiden sivustojen hallinnan yhden asennuksen kautta. Tämä on sisäänrakennettu ominaisuus, mutta se ei ole aktiivinen oletuksena.
 
@@ -101,9 +101,9 @@ Alisivuston luominen:
 
 Täytettyä jälkeen napsauta "Add site" (Lisää sivusto) -painiketta. Kun uusi alisivusto on luotu, siirry siihen varmistaaksesi, että se toimii.
 
-## Yleisiä ongelmia:
+## Yleisiä ongelmia: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Voin luoda uusia sivustoja, mutta niihin ei pääse käsiksi.
+### 1. Voin luoda uusia sivustoja, mutta niihin ei pääse käsiksi. {#common-problems}
 
 Jos valitsit alisivustot (subdomains), sinun on myös asetettava erikoisalueet (wildcard subdomains) multisite-verkkoosi varten.
 

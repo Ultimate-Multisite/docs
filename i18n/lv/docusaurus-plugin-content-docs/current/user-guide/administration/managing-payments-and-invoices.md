@@ -3,9 +3,9 @@ title: Platīju un faktūru pārvaldība
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Grāmatu maksājumu un fakturētu informācijas pārvaldīšana
+# Grāmatu maksājumu un fakturētu informācijas pārvaldīšana {#managing-payments-and-invoices}
 
-## Maksājumu iestatījumi
+## Maksājumu iestatījumi {#payment-settings}
 
 Pirms sāciet saņemt maksājumus, jums būs jākonfigūrujasi maksājumu saistītie iestatījumi. Navigējieties uz **Ultimate Multisite → Iestatījumi** un noklikšķiniet uz posma **Maksājumi (Payment)**.
 
@@ -15,7 +15,7 @@ Pirms sāciet saņemt maksājumus, jums būs jākonfigūrujasi maksājumu saist�
 
 ![Pilna skats uz maksājumu iestatījumiem](/img/admin/settings-payments-full.png)
 
-### Vispārējie maksājumu opcijas
+### Vispārējie maksājumu opcijas {#general-payment-options}
 
 Vispārajos iestatījumos var konfigūruēt:
 
@@ -24,7 +24,7 @@ Vispārajos iestatījumos var konfigūruēt:
 
 ![Maksājumu portāla iestatījumi](/img/admin/settings-payments-options.png)
 
-### Maksājuma portāli (Payment Gateways)
+### Maksājuma portāli (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite atbalsta vairākus maksājuma portālus. Jūs varat ieslēgt un konfigūruēt katru no posma Maksājumi (Payment).
 
@@ -40,11 +40,11 @@ Katram portālam ir savas konfigūras sekcijas, kurā jūs ievadiet API kļūdes
 
 ![Papildu portāla iestatījumi](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox režīms (Sandbox Mode)
+### Sandbox režīms (Sandbox Mode) {#sandbox-mode}
 
 Jūs varat ieslēgt **Sandbox režīmu**, lai pārbaudītu savu maksājumu integrāciju pirms reālas lietošanas. Kad sandbox režīms ir aktīvs, nepiecieti nekādas reādas maksas tiek veiktas.
 
-## Maksājumu skatīšana
+## Maksājumu skatīšana {#viewing-payments}
 
 Navigējieties uz **Maksājumi (Payments)** lapu Ultimate Multisite ziņā, lai redzētu visus transakcijas savā tīklā.
 
@@ -54,7 +54,7 @@ Jūs varat filtrēt maksājumus pēc statusa (pabeigta, gaidīta, neizveikta, at
 
 Spiediet uz maksājumu, lai redzētu viņa pilnus detaļas, tostarp lietojumus, saistīto pievienošanos, klientu informāciju un maksājuma portāla datus.
 
-## Fakturas (Invoices)
+## Fakturas (Invoices) {#invoices}
 
 Ultimate Multisite var automātiski izveidot faktūras maksājumiem. Jūs varat pielāgot faktūras šabli un numurēšanas formātu no Maksājumu iestatījumiem.
 

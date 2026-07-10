@@ -4,17 +4,17 @@ title: Фильтр - wu_cart_get_total
 sidebar_label: wu_cart_get_total
 _i18n_hash: 72d9429a9eaa08472baafef395dd7138
 ---
-# Фильтр: wu_cart_get_total
+# Фильтр: wu_cart_get_total {#filter-wucartgettotal}
 
 Фильтрует общую сумму 'начальной суммы'.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $total | `float` | Общая сумма, подлежащая оплате сегодня. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Объект корзины. |
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L2141) на строке 2141

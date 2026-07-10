@@ -4,11 +4,11 @@ title: 过滤器 - wu_return_url
 sidebar_label: wu_return_url
 _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 ---
-# 过滤器: wu_return_url
+# 过滤器: wu_return_url {#filter-wureturnurl}
 
 允许开发者在结账流程后更改使用的网关返回 URL。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -17,12 +17,12 @@ _i18n_hash: 73bff0c05bc9b1dad029b7438b1a4f7c
 | $payment | `\WP_Ultimo\Models\Payment` | Ultimate Multisite 支付实例。 |
 | $cart | `\WP_Ultimo\Checkout\Cart` | 当前 Ultimate Multisite 购物车订单。 |
 
-### 适用版本
+### 适用版本 {#since}
 
 - 2.0.20
 
-### 来源
+### 来源 {#source}
 
 在 `inc/gateways/class-base-gateway.php`（https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-gateway.php#L683）第 683 行定义
 
-## 返回值
+## 返回值 {#returns}

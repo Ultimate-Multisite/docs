@@ -1,110 +1,126 @@
 ---
 title: Kulipwa
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kupokea Malipo (v2)
+# Kulipwa (v2) {#getting-paid-v2}
 
-_**TANGAZO MUHIMU: Makala hii inahusu toleo la 2.x la Ultimate Multisite.**_
+_**DONDOO MUHIMU: Makala hii inahusu Ultimate Multisite toleo 2.x.**_
 
-Ultimate Multisite ina mfumo wa uanachama na utoaji bili uliojengwa ndani. Ili mfumo wetu wa bili ufanye kazi, tumejumuisha njia za malipo zinazotumika sana katika biashara ya mtandaoni. Njia za malipo za msingi katika Ultimate Multisite ni _Stripe_, _PayPal_, na Malipo ya Mwenyewe. Unaweza pia kutumia _WooCommerce_, _GoCardless_ na _Payfast_ kupokea malipo kwa kusakinisha nyongeza zao husika.
+Ultimate Multisite ina mfumo wa uanachama na utozaji uliojengwa ndani. Ili mfumo wetu wa utozaji ufanye kazi, tumeunganisha malango ya malipo yanayotumika zaidi katika biashara mtandaoni. Malango chaguomsingi ya malipo katika Ultimate Multisite ni _Stripe_ , _PayPal_ , na Malipo ya Mwongozo. Pia unaweza kutumia _WooCommerce_ , _GoCardless_ na _Payfast_ kupokea malipo kwa kusakinisha viendelezi vyake husika.
 
-## Mipangilio ya Msingi
+## Mipangilio ya Msingi {#basic-settings}
 
-Unaweza kusanidi njia yoyote ya malipo chini ya mipangilio ya malipo ya Ultimate Multisite. Unaweza kuipata kwa kwenda **Menyu ya Ultimate Multisite > Settings > Payments.**
+Unaweza kusanidi mojawapo ya malango haya ya malipo chini ya mipangilio ya malipo ya Ultimate Multisite. Unaweza kuipata kwa kwenda kwenye **menyu ya Ultimate Multisite > Mipangilio > Malipo.**
 
-![Ukurasa wa mipangilio ya malipo katika Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Ukurasa wa mipangilio ya Malipo katika Ultimate Multisite unaoonyesha paneli ya Malipo](/img/config/payments-settings-page.png)
 
-Kabla ya kusanidi njia yako ya malipo, tafadhali angalia mipangilio ya msingi ya malipo unayoweza kusanidi:
+Kabla hujasanidi lango lako la malipo, tafadhali angalia mipangilio ya msingi ya malipo unayoweza kusanidi:
 
-**Force auto-renew:** Hii itahakikisha kuwa malipo yatajirudia moja kwa moja mwishoni mwa kila kipindi cha bili kulingana na mzunguko wa bili ambao mtumiaji alichagua.
+**Lazimisha kusasisha kiotomatiki** **:** Hii itahakikisha kwamba malipo yatajirejea kiotomatiki mwishoni mwa kila mzunguko wa utozaji kulingana na marudio ya utozaji ambayo mtumiaji alichagua.
 
-![Kipengele cha kuwasha Force auto-renew](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** Kipengele hiki kikiwashwa, mteja wako hatalazimika kuongeza maelezo yoyote ya kifedha wakati wa mchakato wa usajili. Hii itahitajika tu baada ya kipindi cha majaribio kuisha.
+Ultimate Multisite v2.13.0 hukagua kama lango linalotumika lina kitambulisho cha kusasisha kinachoweza kutumika tena kabla ya kuhifadhi uanachama unaojirudia ukiwa na usasishaji wa kiotomatiki umewezeshwa. Kitambulisho cha kusasisha kinaweza kuwa usajili wa lango, makubaliano ya utozaji, vault token iliyohifadhiwa, au mbinu sawa ya malipo inayoweza kutumika tena. Ikiwa lango litaripoti kwamba hakuna kitambulisho kinachoweza kutumika kilichopo, Ultimate Multisite huhifadhi uanachama lakini huzima usasishaji wa kiotomatiki na kurekodi hali ya kukosekana kwa kitambulisho ili msimamizi au mtiririko wa usaidizi uweze kumwomba mteja aidhinishe tena malipo kabla ya tarehe ya kusasisha.
 
-![Kipengele cha kuwasha Allow trials without payment method](/img/config/settings-payment-gateways.png)
+Hii huzuia uanachama kuonekana kana kwamba unasasishwa kiotomatiki wakati lango linaweza kukusanya malipo ya mara moja pekee. Viendelezi vya lango vinapaswa kuthibitisha kwamba malipo ya usajili yanayojirudia huhifadhi kitambulisho kinachoweza kutumika tena, hasa wakati lango linaunga mkono aina zote mbili za malipo: ukusanyaji wa mara moja na malipo ya vault/usajili.
 
-**Send invoice on payment confirmation:** Hii inakupa chaguo la kutuma au kutotuma ankara baada ya malipo. Kumbuka kuwa watumiaji wana uwezo wa kuona historia yao ya malipo chini ya dashibodi ya tovuti yao ndogo. Chaguo hili halitumiki kwa Njia ya Malipo ya Mwenyewe.
+**Ruhusu majaribio bila njia ya malipo** **:** Chaguo hili likiwezeshwa, mteja wako hatalazimika kuongeza taarifa yoyote ya kifedha wakati wa mchakato wa usajili. Hii itahitajika tu baada ya kipindi cha majaribio kuisha.
 
-![Kipengele cha kuwasha Send invoice on payment confirmation](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** Hapa, unaweza kuchagua ama msimbo wa kumbukumbu ya malipo au mpangilio wa nambari zinazofuatana. Ukichagua kutumia msimbo wa kumbukumbu ya malipo kwa ankara zako, huhitaji kusanidi chochote. Ukichagua kutumia mpangilio wa nambari zinazofuatana, utahitaji kusanidi **nambari ya ankara inayofuata** (Nambari hii itatumika kama nambari ya ankara kwa ankara inayofuata itakayozalishwa kwenye mfumo. Inaongezwa kwa moja kila wakati ankara mpya inapoundwa. Unaweza kuibadilisha na kuihifadhi ili kuweka upya nambari ya ankara hadi thamani maalum) na **kiambishi awali cha nambari ya ankara.**
+**Tuma ankara baada ya uthibitisho wa malipo:** Hii hukupa chaguo la kutuma au kutotuma ankara baada ya malipo. Kumbuka kwamba watumiaji wataweza kufikia historia yao ya malipo chini ya dashboard ya subsite yao. Chaguo hili halitumiki kwa Lango la Mwongozo.
 
-![Uchaguzi wa mpangilio wa nambari za ankara](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Mipangilio ya nambari ya ankara inayofuatana na kiambishi awali](/img/config/settings-payment-gateways.png)
+**Mpangilio wa nambari za ankara:** Hapa, unaweza kuchagua ama msimbo wa marejeleo ya malipo au mpangilio wa nambari mfululizo. Ukichagua kutumia msimbo wa marejeleo ya malipo kwa ankara zako, huhitaji kusanidi chochote. Ukichagua kutumia mpangilio wa nambari mfululizo, utahitaji kusanidi **nambari inayofuata ya ankara** (Nambari hii itatumika kama nambari ya ankara kwa ankara inayofuata itakayozalishwa kwenye mfumo. Huongezwa kwa moja kila wakati ankara mpya inapoundwa. Unaweza kuibadilisha na kuihifadhi ili kuweka upya nambari mfululizo ya ankara hadi thamani mahususi) na **kiambishi awali cha nambari ya ankara.**
 
-## Mahali pa kupata njia za malipo:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Unaweza kusanidi njia za malipo kwenye ukurasa huo huo (**Ultimate Multisite > Settings > Payments**). Chini kabisa ya **active payment gateways**, utaweza kuona: _Stripe_, _Stripe Checkout_, _PayPal_ na _Manual_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Orodha ya njia za malipo zinazofanya kazi](/img/config/settings-payment-gateways.png)
+## Mahali pa kupata malango: {#where-to-find-the-gateways}
 
-Tuna makala maalum kwa kila njia ya malipo ambayo itakuongoza kupitia hatua za kuisanidi ambayo unaweza kupata kwenye viungo vifuatavyo.
+Unaweza kusanidi malango ya malipo kwenye ukurasa huo huo ( **Ultimate Multisite > Mipangilio > Malipo**). Chini moja kwa moja ya **malango ya malipo yanayotumika** , utaweza kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Mwongozo_.
 
-**Kusanidi njia ya Stripe**
+![Sehemu ya Malango ya Malipo Yanayotumika inayoorodhesha Stripe, Stripe Checkout, PayPal na Mwongozo](/img/config/payments-active-gateways.png)
 
-**Kusanidi njia ya PayPal**
+Tuna makala maalum kwa kila lango la malipo itakayokuongoza kupitia hatua za kulisanidi, ambazo unaweza kuzipata kwenye viungo hapa chini.
 
-**Kusanidi malipo ya mwenyewe**
+Unaweza kuona na kuhariri maelezo ya malipo:
 
-Sasa, ikiwa unataka kutumia _WooCommerce_, _GoCardless_ au _Payfast_ kama njia yako ya malipo, utahitaji **kusakinisha na kusanidi nyongeza zao**.
+![Kiolesura cha kuhariri malipo](/img/admin/payment-edit.png)
 
-### Jinsi ya kusakinisha nyongeza ya WooCommerce:
+Huu hapa mwonekano kamili wa ukurasa wa kuhariri malipo:
 
-Tunaelewa kuwa _Stripe_ na _PayPal_ hazipatikani katika nchi zingine jambo ambalo linazuia au kudhoofisha watumiaji wa Ultimate Multisite kutumia programu-jalizi yetu kwa ufanisi. Kwa hivyo tuliunda nyongeza ya kuunganisha _WooCommerce_, ambayo ni programu-jalizi maarufu sana ya biashara ya mtandaoni. Waendelezaji kutoka ulimwenguni kote wameunda nyongeza za kuunganisha njia tofauti za malipo nayo. Tulitumia fursa hii kupanua njia za malipo unazoweza kutumia na mfumo wa bili wa Ultimate Multisite.
+![Kiolesura kamili cha kuhariri malipo](/img/admin/payment-edit-full.png)
 
-_**MUHIMU:** Ultimate Multisite: WooCommerce Integration inahitaji WooCommerce kuwashwa angalau kwenye tovuti yako kuu._
+Pia huu hapa mwonekano kamili wa mipangilio ya malango ya malipo:
 
-Kwanza, tafadhali nenda kwenye ukurasa wa nyongeza. Unaweza kuupata kwa kwenda **Ultimate Multisite > Settings**. Unapaswa kuona jedwali la **Add-ons**. Bofya **Check our Add-ons**.
+![Ukurasa kamili wa mipangilio ya malango ya malipo](/img/config/settings-payments-gateways-full.png)
 
-![Ukurasa wa mipangilio na sehemu ya nyongeza](/img/config/settings-general.png)
+**Kusanidi lango la Stripe**
 
-Baada ya kubofya **Check our Add-ons**, utaelekezwa kwenye ukurasa wa nyongeza. Hapa unaweza kupata nyongeza zote za Ultimate Multisite. Bofya nyongeza ya **Ultimate Multisite: WooCommerce Integration**.
+**Kusanidi lango la PayPal**** **
 
-![Ukurasa wa nyongeza unaoonyesha nyongeza zinazopatikana](/img/config/settings-general.png)
+**Kusanidi malipo ya mwongozo**
 
-Dirisha litaibuka na maelezo ya nyongeza. Bofya tu **Install Now**.
+Sasa, ikiwa unataka kutumia _WooCommerce_ , _GoCardless_ au _Payfast_ kama lango lako la malipo, utahitaji **kusakinisha na kusanidi viendelezi vyake**.
 
-![Dirisha la kusakinisha nyongeza ya WooCommerce](/img/config/settings-general.png)
+### Jinsi ya kusakinisha kiendelezi cha WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
-Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa programu-jalizi. Hapa, bofya tu **Network Activate** na nyongeza ya WooCommerce itawashwa kwenye mtandao wako.
+Tunaelewa kwamba _Stripe_ na _PayPal_ hazipatikani katika baadhi ya nchi, jambo linaloweka kikomo au kuwazuia watumiaji wa Ultimate Multisite kutumia plugin yetu kwa ufanisi. Kwa hiyo tuliunda kiendelezi cha kuunganisha _WooCommerce,_ ambayo ni plugin maarufu sana ya biashara mtandaoni. Wasanidi programu kote duniani waliunda viendelezi vya kuunganisha malango tofauti ya malipo nayo. Tulitumia fursa hii kupanua malango ya malipo unayoweza kutumia na mfumo wa utozaji wa Ultimate Multisite.
 
-![Washa nyongeza ya WooCommerce kwenye Mtandao](/img/config/settings-general.png)
+_**MUHIMU:** Ultimate Multisite: Ushirikishaji wa WooCommerce unahitaji WooCommerce iwe imeamilishwa angalau kwenye site yako kuu._
 
-Baada ya kuiwasha, ikiwa bado huna programu-jalizi ya WooCommerce imesakinishwa na kuwashwa kwenye tovuti yako, utapokea kikumbusho.
+Kwanza, tafadhali nenda kwenye ukurasa wa viendelezi. Unaweza kuupata kwa kwenda kwenye **Ultimate Multisite > Mipangilio**. Unapaswa kuona jedwali la **Viendelezi**. Bofya **Angalia Viendelezi vyetu**.
 
-![Tangazo la kikumbusho cha kuwasha WooCommerce](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Kusoma zaidi kuhusu nyongeza ya WooCommerce Integration, **bofya hapa**.
+Baada ya kubofya **Angalia Viendelezi vyetu** , utaelekezwa kwenye ukurasa wa viendelezi. Hapa unaweza kupata viendelezi vyote vya Ultimate Multisite. Bofya kwenye kiendelezi cha **Ultimate Multisite: Ushirikishaji wa WooCommerce**.
 
-### Jinsi ya kusakinisha nyongeza ya GoCardless:
+![Ukurasa wa viendelezi unaoorodhesha viendelezi vya Ultimate Multisite ikijumuisha Ushirikishaji wa WooCommerce](/img/addons/addons-page.png)
 
-Hatua za kusakinisha nyongeza ya _GoCardless_ ni sawa kabisa na za nyongeza ya _WooCommerce_. Tafadhali nenda kwenye ukurasa wa nyongeza na uchague nyongeza ya **Ultimate Multisite: GoCardless Gateway**.
+Dirisha litatokea likiwa na maelezo ya nyongeza. Bofya tu **Sakinisha Sasa**.
 
-![Ukurasa wa nyongeza unaoonyesha nyongeza zinazopatikana](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: kidirisha cha maelezo ya nyongeza ya Ultimate Multisite WooCommerce Integration chenye kitufe cha Sakinisha Sasa -->
 
-Dirisha la nyongeza litaibuka. Bofya **Install Now**.
+Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa nyongeza. Hapa, bofya tu **Washa kwenye Mtandao** na nyongeza ya WooCommerce itawashwa kwenye mtandao wako.
 
-![Dirisha la kusakinisha nyongeza ya GoCardless](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: ukurasa wa nyongeza wenye kiungo cha Washa kwenye Mtandao kwa nyongeza ya WooCommerce Integration -->
 
-Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa programu-jalizi. Hapa, bofya tu **Network Activate** na nyongeza ya _GoCardless_ itawashwa kwenye mtandao wako.
+Baada ya kuiwasha, ikiwa bado huna nyongeza ya WooCommerce iliyosakinishwa na kuwashwa kwenye tovuti yako, utapokea kikumbusho.
 
-![Washa nyongeza ya GoCardless kwenye Mtandao](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: taarifa ya msimamizi inayomkumbusha msimamizi kusakinisha na kuwasha nyongeza ya WooCommerce -->
 
-Kujifunza jinsi ya kuanza na njia ya _GoCardless_, **soma makala hii**.
+Ili kusoma zaidi kuhusu nyongeza ya WooCommerce Integration, **bofya hapa**.
 
-### Jinsi ya kusakinisha nyongeza ya Payfast:
+### Jinsi ya kusakinisha nyongeza ya GoCardless: {#how-to-install-the-gocardless-add-on}
+
+Hatua za kusakinisha nyongeza ya _GoCardless_ zinafanana sana na za nyongeza ya _WooCommerce_. Tafadhali nenda kwenye ukurasa wa nyongeza na uchague nyongeza ya **Ultimate Multisite: GoCardless Gateway**.
+
+<!-- Picha ya skrini haipatikani: ukurasa wa nyongeza ukiwa na nyongeza ya Ultimate Multisite GoCardless Gateway iliyoangaziwa -->
+
+Dirisha la nyongeza litatokea. Bofya **Sakinisha Sasa**.
+
+<!-- Picha ya skrini haipatikani: kidirisha cha maelezo ya nyongeza ya Ultimate Multisite GoCardless Gateway chenye kitufe cha Sakinisha Sasa -->
+
+Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa nyongeza. Hapa, bofya tu **Washa kwenye Mtandao** na nyongeza ya _GoCardless_ itawashwa kwenye mtandao wako.
+
+<!-- Picha ya skrini haipatikani: ukurasa wa nyongeza wenye kiungo cha Washa kwenye Mtandao kwa nyongeza ya GoCardless Gateway -->
+
+Ili kujifunza jinsi ya kuanza kutumia lango la _GoCardless_, **soma makala hii**.
+
+### Jinsi ya kusakinisha nyongeza ya Payfast: {#how-to-install-the-payfast-add-on}
 
 Nenda kwenye ukurasa wa nyongeza na uchague nyongeza ya **Ultimate Multisite: Payfast Gateway**.
 
-![Ukurasa wa nyongeza unaoonyesha nyongeza zinazopatikana](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: ukurasa wa nyongeza ukiwa na nyongeza ya Ultimate Multisite Payfast Gateway iliyoangaziwa -->
 
-Dirisha la nyongeza litaibuka. Bofya **Install Now.**
+Dirisha la nyongeza litatokea. Bofya **Sakinisha Sasa.**
 
-![Dirisha la kusakinisha nyongeza ya Payfast](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: kidirisha cha maelezo ya nyongeza ya Ultimate Multisite Payfast Gateway chenye kitufe cha Sakinisha Sasa -->
 
-Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa programu-jalizi. Hapa, bofya tu **Network Activate** na nyongeza ya _Payfast_ itawashwa kwenye mtandao wako.
+Baada ya usakinishaji kukamilika, utaelekezwa kwenye ukurasa wa nyongeza. Hapa, bofya tu **Washa kwenye Mtandao** na nyongeza ya _Payfast_ itawashwa kwenye mtandao wako.
 
-![Washa nyongeza ya Payfast kwenye Mtandao](/img/config/settings-general.png)
+<!-- Picha ya skrini haipatikani: ukurasa wa nyongeza wenye kiungo cha Washa kwenye Mtandao kwa nyongeza ya Payfast Gateway -->

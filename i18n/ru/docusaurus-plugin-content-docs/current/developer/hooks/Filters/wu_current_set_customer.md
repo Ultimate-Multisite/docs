@@ -4,23 +4,23 @@ title: Фильтр - wu_current_set_customer
 sidebar_label: wu_current_set_customer
 _i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
 ---
-# Filter: wu_current_set_customer
+# Filter: wu_current_set_customer {#filter-wucurrentsetcustomer}
 
 Позволяет разработчикам изменить поведение по умолчанию и задать текущего клиента иначе.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $customer | `\WP_Ultimo\Models\Customer` | Текущий клиент, который нужно установить. |
 | $ | `self` | Экземпляр класса Current. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Defined in [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L377) at line 377
 
 
-## Returns
+## Returns {#returns}

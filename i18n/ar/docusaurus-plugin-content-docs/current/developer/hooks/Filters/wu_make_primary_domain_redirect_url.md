@@ -4,13 +4,13 @@ title: مرشح - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 تصفية عنوان URL لإعادة التوجيه بعد تعيين نطاق كـ رئيسي.
 
 يتيح للمطورين تخصيص وجهة إعادة التوجيه للمستخدمين بعد تعيين نطاق كـ رئيسي بنجاح. بشكل افتراضي، يتم إعادة التوجيه إلى عنوان URL الحالي على الموقع الرئيسي، أو إلى عنوان URL المسؤول للموقع الجاري تعديله.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -19,14 +19,14 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | كائن النطاق الذي تم تعيينه كـ رئيسي. |
 | $old_primary_domains | `array` | مصفوفة من معرفات النطاقات التي كانت رئيسية سابقًا. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) في السطر 639
 
-## الإرجاع
+## الإرجاع {#returns}
 
 عنوان URL المُعاد توجيهه بعد التصفية.

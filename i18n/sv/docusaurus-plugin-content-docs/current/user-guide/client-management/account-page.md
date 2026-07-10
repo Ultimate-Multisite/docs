@@ -1,128 +1,140 @@
 ---
-title: Klientkontosida
+title: Kundens Account-sida
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Din kunds kontosida (v2)
+# Din klients Account-sida (v2) {#your-clients-account-page-v2}
 
-_**VIKTIGT: Den här artikeln gäller Ultimate Multisite version 2.x.**_
+_**VIKTIGT MEDDELANDE: Den här artikeln avser Ultimate Multisite version 2.x.**_
 
-När kunder tecknar ett abonnemang på ditt nätverk får de tillgång till en webbplats och dess kontrollpanel med viktig information om betalningar, medlemskap, domäner, planbegränsningar med mera.
+När kunder prenumererar på en plan i ditt nätverk får de åtkomst till en webbplats och dess Dashboard med viktig information om deras betalningar, medlemskap, domäner, planbegränsningar, osv...
 
-I den här guiden går vi igenom kundens kontosida och visar vad dina kunder kan se och göra där.
+I den här handledningen guidar vi dig genom kundens Account-sida, och du får se vad dina kunder kan se och göra där.
 
-## Kontosidan
+## Account-sidan {#the-account-page}
 
-Kontosidan nås genom att klicka på **Account** i kundens kontrollpanel.
+Account-sidan är tillgänglig genom att klicka på **Account** i din kunds Dashboard.
 
-![Kontomeny i kundens kontrollpanel](/img/admin/dashboard.png)
+![Account-meny i kundens Dashboard](/img/account-page/account-menu.png)
 
-![Översikt över kundens kontosida](/img/admin/dashboard.png)
+På suveräna tenant-nätverk behåller Ultimate Multisite v2.13.0 den här kundhanteringsupplevelsen på huvudwebbplatsen. Om en kund öppnar åtgärder för konto, checkout, fakturering, faktura, webbplatshantering, mallbyte eller domänmappning från en suverän tenant, pekar åtgärden tillbaka till huvudwebbplatsens kundpanel så att nätverkets fakturerings- och medlemskapsposter förblir auktoritativa.
 
-När en kund klickar på den ser de en översikt över sitt medlemskap, faktureringsadress, fakturor, domäner och webbplatsbegränsningar. De kan också byta **Site Template** (om det är tillåtet i ditt nätverk).
+När kunden kommer från en suverän tenant kan huvudwebbplatsens kundpanel inkludera en returlänk tillbaka till tenant-webbplatsen. Returlänken visas endast när Ultimate Multisite kan validera returmålet som en av kundens webbplatser, vilket förhindrar godtyckliga omdirigeringar samtidigt som tenant-arbetsflödet bevaras.
 
-De kan även byta medlemskap till en annan plan eller köpa ytterligare paket eller tjänster som du erbjuder. Låt oss titta närmare på varje del.
+![Översikt över kundens Account-sida](/img/account-page/overview.png)
 
-### Översikt över ditt medlemskap:
+Efter att en kund klickar på den ser de en översikt över sitt medlemskap, faktureringsadress, fakturor, domäner, webbplatsbegränsningar och kan även ändra ****webbplatsmallen** (om det är tillåtet i ditt nätverk)**.
 
-Det första blocket, precis under kundens webbplatsnamn, visar en översikt över deras nuvarande plan och de tjänster/paket som köpts tillsammans med den. Blocket visar också medlemsnummer, det ursprungliga beloppet som betalades, hur mycket planen och eventuella tjänster/paket kostar samt hur många gånger de har fakturerats för detta medlemskap. De kan också se om medlemskapet är **Active**, **Expired** eller **Canceled**.
+De kan också byta medlemskapet till en annan plan, eller köpa ett annat paket eller en annan tjänst som du erbjuder. Låt oss titta på varje avsnitt separat.
 
-![Medlemskapsöversikt som visar plan, belopp och faktureringsdetaljer](/img/admin/memberships-list.png)
+### Översikt över ditt medlemskap: {#your-membership-overview}
 
-Precis under detta block ser dina kunder blocken **About This Site** och **Site Limits**. Dessa block visar dem alla begränsningar som gäller för deras plan: diskutrymme, inlägg, sidor, besök med mera. Dessa gränser kan konfigureras på varje plans sida under **Ultimate Multisite > Products**.
+Det första blocket direkt under dina kunders webbplatsnamn visar en översikt över deras aktuella plan och de tjänster/paket som köptes med den. Blocket visar också medlemskapsnumret, det ursprungliga beloppet som betalades för det, hur mycket planen och eventuella tjänster/paket kostar samt hur många gånger de har fakturerats för detta medlemskap. De kan också se om medlemskapet är **Aktivt** , **Utgånget** eller **Avbrutet**.
 
-![Blocken About This Site och Site Limits som visar planbegränsningar](/img/admin/dashboard.png)
+![Medlemskapsöversikt som visar plan, belopp och faktureringsdetaljer](/img/account-page/membership-card.png)
 
-Till höger om **Your Membership** kan kunderna klicka på **Change**. Detta visar dem alla tillgängliga planer och paket/tjänster. Om de väljer en annan plan börjar begränsningarna för den nya planen gälla istället för de nuvarande — oavsett om de uppgraderar eller nedgraderar.
+Direkt under detta block kan dina kunder se blocken **Om denna webbplats** och **Webbplatsbegränsningar**. Dessa block visar alla begränsningar som ingår i deras plan: diskutrymme, inlägg, sidor, besök, osv... Dessa gränser kan konfigureras på varje plansida under **Ultimate Multisite > Produkter**.
 
-Om dina kunder däremot väljer att köpa paket eller tjänster för detta nuvarande medlemskap — som mer diskutrymme eller fler besök — ändras inte det nuvarande medlemskapet, utan de nya paketen läggs bara till.
+![Blocken Om denna webbplats och Webbplatsbegränsningar som visar planbegränsningar](/img/account-page/site-limits.png)
 
-Observera att rabattkoder inte kan läggas till på denna sida för medlemskapsändring. Om kunden använde en rabattkod vid det första medlemskapsköpet kommer koden även att gälla för det nya medlemskapet.
+På höger sida av **Ditt medlemskap** kan kunder klicka på **Ändra**. Detta visar dem alla tillgängliga planer och paket/tjänster. Om de väljer en annan plan kommer begränsningarna för den planen att gälla i stället för medlemskapets nuvarande begränsningar – oavsett om de nedgraderar eller uppgraderar den.
 
-### Uppdatera faktureringsadressen:
+Om dina kunder nu väljer att köpa paket eller tjänster för detta aktuella medlemskap – som mer diskutrymme eller fler besök – kommer det nuvarande medlemskapet inte att ändras, utan endast de nya paketen läggs till i det.
 
-På kontosidan kan dina kunder också uppdatera sin faktureringsadress. De behöver bara klicka på **Update** bredvid _Billing Address_.
+Observera att kupongkoder inte kan läggas till på denna sida för medlemskapsändring. Om kunden använde en kupongkod vid det första medlemskapsköpet kommer koden också att tillämpas på detta nya medlemskap.
 
-![Avsnittet Billing Address med knappen Update](/img/admin/customers-list.png)
+### Uppdatera faktureringsadressen: {#updating-the-billing-address}
 
-Ett nytt fönster öppnas för kunden. Allt de behöver göra är att fylla i den nya adressen och klicka på _Save Changes_.
+På Account-sidan kan dina kunder också uppdatera sin faktureringsadress. De behöver bara klicka på **Uppdatera** bredvid _Faktureringsadress_.
 
-![Formulär för att uppdatera faktureringsadress](/img/admin/customers-list.png)
+![Avsnittet Faktureringsadress med knappen Uppdatera](/img/account-page/billing-address.png)
 
-### Byta webbplatsmall:
+Ett nytt fönster visas för din kund. Allt kunden behöver göra är att fylla i den nya adressen och klicka på _Spara ändringar_.
 
-För att låta dina kunder byta webbplatsmall går du till **Ultimate Multisite > Settings > Sites** och aktiverar alternativet **Allow Template Switching**.
+![Formulär för att uppdatera faktureringsadress](/img/account-page/billing-address-form.png)
 
-Gå även till **Ultimate Multisite > Products**, välj dina planer och gå till fliken **Site Templates**. Se till att alternativet **Allow Site Templates** är aktiverat och att **Choose Available Site Templates** är valt under **Site Template Selection Mode**.
+### Ändra webbplatsmallen: {#changing-the-site-template}
 
-![Fliken Site Templates för produkter med mallvalsläge](/img/config/product-site-templates.png)
+För att låta dina kunder ändra sina webbplatsmallar behöver du gå till **Ultimate Multisite > Inställningar > Webbplatser** och aktivera alternativet **Tillåt mallbyte**.
 
-Du kommer att kunna se alla tillgängliga webbplatsmallar på din webbplats. Välj vilka du vill göra tillgängliga och vilka du inte vill att kunder med denna plan ska kunna använda. Observera att detta också påverkar kassan, så alla mallar som är markerade som **Not Available** visas inte på registreringssidan för denna plan.
+På **Ultimate Multisite > Produkter** väljer du också dina planer och går till fliken **Webbplatsmallar**. Se till att alternativet **Tillåt webbplatsmallar** är aktiverat och att alternativet **Välj tillgängliga webbplatsmallar** är valt under **Val-läge för webbplatsmall**.
 
-Nu kan dina kunder klicka på **Change Site Template** på sin kontosida.
+![Fliken för produktens webbplatsmallar med läge för mallval](/img/config/product-site-templates.png)
 
-![Knappen Change Site Template på kontosidan](/img/admin/dashboard.png)
+Du kommer att kunna se alla tillgängliga webbplatsmallar på din webbplats. Välj vilka du vill göra tillgängliga och vilka du inte vill ska vara tillgängliga för dina kunder som prenumererar på denna plan. Observera att dessa alternativ också påverkar checkout-formuläret, så alla mallar som väljs som **Inte tillgänglig** visas inte på registreringssidan för denna plan.
 
-En lista över alla tillgängliga webbplatsmallar för denna plan visas för kunden.
+Nu kan dina kunder klicka på **Ändra webbplatsmall** på sin Account-sida.
+
+![Knappen Ändra webbplatsmall på Account-sidan](/img/account-page/change-template-button.png)
+
+Ultimate Multisite 2.10.0 visar en omdesignad panel för mallbyte. Panelen börjar med ett **kort för aktuell mall** så att kunder kan se vilken mall som är aktiv innan de väljer en ersättare.
+
+Ett bestående rutnät med tillgängliga webbplatsmallar förblir synligt medan kunderna granskar sina alternativ. Detta hjälper dem att jämföra de mallar som är tillåtna för deras plan utan att tappa den aktuella markeringen ur sikte.
 
 ![Lista över tillgängliga webbplatsmallar för planen](/img/config/site-templates-list.png)
 
-Efter att ha valt den mall de vill byta till ombeds de bekräfta bytet.
+Efter att ha valt den de vill byta till blir de ombedda att bekräfta ändringen.
 
-![Bekräftelsedialog för byte av webbplatsmall](/img/admin/dashboard.png)
+![Bekräftelsedialog för byte av webbplatsmall](/img/account-page/template-switch-confirm.png)
 
-Efter att ha aktiverat bekräftelsen och klickat på **Process Switch** kommer den nya webbplatsmallen att användas på kundens webbplats.
+Efter att ha aktiverat bekräftelsen och klickat på **Bearbeta byte** kommer den nya webbplatsmallen att användas på din kunds webbplats.
 
-### Lägga till egna domäner:
+Kunder kan också använda **Återställ aktuell mall** från den här panelen när de behöver återställa webbplatsen tillbaka till den för närvarande tilldelade mallen. Precis som när man byter till en annan mall kan återställning av en mall skriva över webbplatsinnehåll, så kunder bör bara bekräfta det när de förstår återställningsåtgärden.
 
-Dina kunder har också möjlighet att lägga till en egen domän för denna plan på sin kontosida. För att låta dina kunder använda egna domäner går du till **Ultimate Multisite > Settings > Domain Mapping**.
+### Lägga till anpassade domäner: {#adding-custom-domains}
 
-Aktivera alternativet **Enable Domain Mapping**. Detta gör att dina kunder kan använda egna domäner på nätverksnivå.
+Dina kunder kommer också att ha möjlighet att lägga till en anpassad domän för den här planen på sin Account-sida. För att låta dina kunder använda anpassade domäner går du till **Ultimate Multisite > Inställningar >** **Domänmappning**.
 
-Glöm inte att också kontrollera att domänmappning är aktiverad på produktnivå — eftersom du kan begränsa en produkt så att kunder inte kan använda egna domäner.
+Aktivera alternativet **Aktivera domänmappning**. Detta låter dina kunder använda anpassade domäner på nätverksnivå.
 
-Gå till **Ultimate Multisite > Products**. Välj önskad plan och gå till fliken **Custom Domains**. Aktivera alternativet **Allow Custom Domains**.
+Glöm inte att också kontrollera om domänmappning är aktiverad per produkt - eftersom du kan begränsa en produkt så att dina kunder inte får använda anpassade domäner.
 
-![Fliken Custom Domains med Allow Custom Domains aktiverat](/img/config/product-custom-domains.png)
+Gå till **Ultimate Multisite > Produkter**. Välj den plan du vill använda och gå till fliken **Anpassade domäner**. Aktivera alternativet **Tillåt anpassade domäner**.
 
-Detta gör att alla kunder som prenumererar på just denna plan kan använda egna domäner. Nu kan dina kunder på kontosidan lägga till en egen domän genom att klicka på **Add Domain**.
+![Fliken Anpassade domäner med reglaget Tillåt anpassade domäner](/img/config/product-custom-domains.png)
 
-![Knappen Add Domain på kontosidan](/img/admin/domains-list.png)
+Detta låter alla kunder som prenumererar på denna specifika plan använda anpassade domäner. Nu kan dina kunder på Account-sidan lägga till en anpassad domän genom att klicka på **Lägg till domän**.
 
-Det första fönstret som öppnas visar dina kunder ett meddelande med instruktioner om hur de uppdaterar sina DNS-poster för att den egna domänen ska fungera på ditt nätverk.
+![Knappen Lägg till domän på Account-sidan](/img/account-page/add-domain-button.png)
 
-![DNS-instruktioner som visas när en egen domän läggs till](/img/admin/domains-list.png)
+Det första fönstret som öppnas visar dina kunder ett meddelande som instruerar dem om hur de ska uppdatera sina DNS-poster för att få den här anpassade domänen att fungera på ditt nätverk.
 
-Detta meddelande kan redigeras (av dig) under **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+![DNS-instruktioner som visas när en anpassad domän läggs till](/img/account-page/add-domain-dns.png)
 
-![Inställningen Add New Domain Instructions under Domain Mapping](/img/config/settings-domain-mapping.png)
+Detta meddelande kan redigeras (av dig) under **Ultimate Multisite > Inställningar > Domänmappning > Instruktioner för att lägga till ny domän**.
 
-Efter att ha klickat på **Next Step** kan dina kunder lägga till sitt eget domännamn och välja om denna domän ska vara den primära. Observera att dina kunder kan använda fler än en egen domän för sina webbplatser, så de kan välja vilken som ska vara den primära.
+![Inställningen Instruktioner för att lägga till ny domän i Domänmappning](/img/config/settings-domain-mapping.png)
 
-![Inmatning av eget domännamn med alternativ för primär domän](/img/admin/domains-list.png)
+Här är en fullständig vy av inställningssidan för domänmappning:
 
-Efter att ha klickat på **Add Domain** läggs domänen till på kundens konto. Allt de behöver göra nu är att ändra DNS-posterna för denna egna domän hos sin domänregistrator.
+![Fullständig sida med inställningar för domänmappning](/img/config/settings-domain-mapping-full.png)
 
-### Byta lösenord:
+Efter att ha klickat på **Nästa steg** kan dina kunder lägga till sitt anpassade domännamn och välja om den här anpassade domänen ska vara den primära. Observera att dina kunder kan använda mer än en anpassad domän för sina webbplatser, så de kan välja vilken som ska vara den primära.
 
-På kontosidan kan dina kunder också byta sitt lösenord genom att klicka på **Change Password**.
+![Inmatning av anpassat domännamn med alternativ för primär domän](/img/account-page/add-domain-primary.png)
 
-![Knappen Change Password på kontosidan](/img/admin/dashboard.png)
+Efter att ha klickat på **Lägg till domän** läggs domänen till på din kunds Account. Allt de behöver göra nu är att ändra DNS-posterna för den här anpassade domänen hos sin domänregistrator.
 
-Detta öppnar ett nytt fönster där dina kunder behöver fylla i sitt nuvarande lösenord och sedan ange det nya lösenord de vill använda.
+### Ändra lösenord: {#changing-password}
 
-![Formulär för lösenordsbyte med fält för nuvarande och nytt lösenord](/img/admin/dashboard.png)
+Inne i Account Dashboard kan dina kunder också ändra sitt lösenord genom att klicka på **Ändra lösenord**.
 
-### Farozonen:
+![Knappen Ändra lösenord på Account-sidan](/img/account-page/change-password-button.png)
 
-Vi har också två alternativ som visas under **Danger Zone**: **Delete Site** och **Delete Account**. De finns båda under Farozonen eftersom dessa åtgärder är oåterkalleliga. Om dina kunder raderar sin webbplats eller sitt konto kan de inte återställa dem.
+Detta visar ett nytt fönster där dina kunder behöver fylla i sitt nuvarande lösenord och sedan fylla i det nya lösenordet de vill använda.
 
-![Farozonen med alternativen Delete Site och Delete Account](/img/admin/dashboard.png)
+![Formulär för att ändra lösenord med fält för nuvarande och nytt lösenord](/img/account-page/change-password-form.png)
 
-Om dina kunder klickar på något av dessa alternativ visas ett fönster där de behöver aktivera alternativet för att ta bort webbplatsen eller kontot, och de varnas för att åtgärden inte kan ångras.
+### Farozon: {#danger-zone}
 
-![Bekräftelsedialog för Delete Site](/img/admin/dashboard.png)
+Vi har också två alternativ som visas i delen **Farozon**: **Ta bort webbplats** och **Ta bort Account**. De finns båda i delen Farozon eftersom dessa två åtgärder är oåterkalleliga. Om dina kunder tar bort sin webbplats eller sitt Account kan de inte återställa dem.
 
-![Bekräftelsedialog för Delete Account](/img/admin/dashboard.png)
+![Farozon med alternativen Ta bort webbplats och Ta bort Account](/img/account-page/danger-zone.png)
 
-Om de raderar sin webbplats förblir deras konto och medlemskap orörda. De förlorar bara allt innehåll på sin webbplats. Om de raderar sitt konto försvinner alla webbplatser, medlemskap och information kopplad till kontot.
+Om dina kunder klickar på något av dessa två alternativ visas ett fönster där de måste aktivera alternativet för att ta bort webbplatsen eller Account, och de varnas för att denna åtgärd inte kan ångras.
+
+![Bekräftelsedialog för Ta bort webbplats](/img/account-page/delete-site-confirm.png)
+
+![Bekräftelsedialog för Ta bort Account](/img/account-page/delete-account-confirm.png)
+
+Om de tar bort sin webbplats kommer deras Account och medlemskap fortfarande att vara orörda. De förlorar bara allt innehåll på sin webbplats. Om de tar bort sitt Account går alla webbplatser, medlemskap och all information som rör detta Account förlorade.

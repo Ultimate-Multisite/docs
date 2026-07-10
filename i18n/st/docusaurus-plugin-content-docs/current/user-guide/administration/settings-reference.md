@@ -1,40 +1,46 @@
 ---
-title: Ho fetoga la tšepo
+title: Tšupiso ea Litlhophiso
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Refereha Sets
+# Tshupiso ya Disetting {#settings-reference}
 
-Lapa le fa'aopo o le setiti e fesoasoani i le fa'aopo o le fa'aopo ma fa'amalosia ai le fa'aopo o le Ultimate Multisite.
+Leqephe lena le latela disetting tse amang tsamaiso ya letsatsi le letsatsi le diphetoho tsa moraorao tsa boitshwaro ho Ultimate Multisite.
 
-## Fa'aoga Fa'apitoa
+## Dikgetho Tse Ding {#other-options}
 
-O le a fa'atatau i le **Other Options** (Fa'aoga Fa'apitoa) o le **Ultimate Multisite > Settings > Login & Registration**.
+Sebaka sa **Dikgetho Tse Ding** se hlaha tlasa **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setting | Fa'amatalaga |
+| Setting | Tlhaloso |
 |---|---|
-| **Enable Jumper** | O le a fa'atatau i le tool Jumper quick navigation i le admin area. Fa'aoga ai lea e te pulefa'i tasi i le screens o le Ultimate Multisite, network objects, ma le mga desina o le fa'amatalaga e fa'aopoai. Fa'aoga ai lea e te fa'atatau (Disable) lava i pou fa'aopoai e te te fa'aopoai lea. |
+| **Enable Jumper** | Se bontsha sesebediswa sa ho tsamaya kapele sa Jumper sebakeng sa admin. Se sebedise ho tlolela ka kotloloho ho disekirini tsa Ultimate Multisite, dintho tsa netweke, le dibaka tsa admin tse tshehetswang. Se thibele haeba o sa batle hore tsela ena e kgutshwane e bonahale. |
 
-## Fa'amatalaga o Lelei a Fa'amalosia ma Telemetry
+## Tlaleho ya diphoso le telemetry {#error-reporting-and-telemetry}
 
-O le setiti e fa'amalosia ai le lei fa'amalosia o lelei (error-reporting opt-in) ua fa'atatau i le settings page. O le telemetry anoni (Anonymous telemetry) ua fa'atatau, ma o lea la'ai toggles UI e fa'aopoai ia.
+Setting ya pele ya ho ikgethela tlaleho ya diphoso e tlositswe leqepheng la disetting. Telemetry e sa tsejweng e thibetswe mme ha ho na konopo ya UI ya ho e bulela.
 
-O le a te fa'aopoai runbooks fa'aopoai po'o screenshots mo le settings page, fa'atatau i le mga fa'amatalaga o le lei fa'amalosia o lelei (error-reporting opt-in field) e fa'atatau ai i le setiti, e fa'atatau i le a te admin fa'aopoai ia i se setiti ua fa'atatau.
+Haeba o boloka runbooks tsa kahare kapa disenepe tsa skrine bakeng sa leqephe la disetting, tlosa ditshupiso tsa field ya kgale ya ho ikgethela tlaleho ya diphoso hore batsamaisi ba se ke ba batla setting e seng e sa le teng.
 
-## Fa'amatalaga o Import/Export
+## Disetting tsa Import/Export {#importexport-settings}
 
-O le tab **Import/Export** (Fa'amatalaga o Import/Export) o le fa'amatalaga e fa'amalosia ai o le a te fa'aopoai ia, ma e fa'atatau tasi i **Ultimate Multisite > Site Export** mo le archives o le site ma le network. Fa'a'aoga ai le tab o le setiti mo le configuration o Import/Export, fa'a'aoga ai le **Tools > Export & Import** mo le workflow o export/import o le single-site, ma fa'a'aoga ai le Site Export tool lava o le a te eita i se full Network Export archive.
+Thebo ya disetting tsa **Import/Export** e hlalosa hore na e laola disetting dife mme e hokela ka kotloloho ho **Ultimate Multisite > Site Export** bakeng sa diarchive tsa site le netweke. Sebedisa thebo ya disetting bakeng sa peakanyo ya import/export, sebedisa **Tools > Export & Import** bakeng sa tshebetso ya export/import ya site e le nngwe, mme o sebedise sesebediswa sa Site Export ha o hloka archive e felletseng ya Network Export.
 
-## Fa'amatalaga o Setiti Connector AI
+## Temoso ya balanse ya Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-O le setiti connector AI ua fa'atatau i le mga OAuth account pools e fa'aopoai:
+Ha addon ya Domain Seller e hoketswe ho HostAfrica, batsamaisi ba netweke jwale ba bona temosong ya balanse e tlase e ka qhalwang ha balanse ya account ya morekisi e le tlase haholo bakeng sa ngodiso ya domain e tshepahalang kapa tshebetso ya ntjhafatso.
 
-| Provider | Setso ya ho fana |
+Tshwara tsebiso ena e le temosong ya tshebetso: eketsa balanse ya morekisi wa HostAfrica pele o amohela dingodiso tse ding tsa domain tse lefilweng, ebe o kgutlela ho disetting tsa Domain Seller kapa skrine sa ho lekola domain ho netefatsa hore dingodiso le dintjhafatso di ka tswela pele ka tsela e tlwaelehileng.
+
+## Disetting tsa sehokedi sa mofani wa AI {#ai-provider-connector-settings}
+
+Disetting tsa sehokedi sa mofani wa AI jwale di pepesa feela diphulu tsa diaccount tsa OAuth tse tshehetswang:
+
+| Mofani | Phallo ya setup |
 |---|---|
-| **Anthropic Max** | Ha fana le akao e le e le e le seka Anthropic Max le OAuth button. Use manual OAuth fallback ha ho browser e le ka fetola goboho goba. |
-| **OpenAI ChatGPT/Codex** | Ha fana akao ea ChatGPT ka ho fana ka workflow ea OAuth e le e le e le seka. Operations e tsebahala ke connector e ka sebelisa ChatGPT Codex tool calls ha akao a fetolwe. |
-| **Google AI Pro** | Ha fana akao ea Google AI Pro ka ho fana ka OAuth, ha re refresh connector haaka ha akao ea li akao e le e le seka e fetola. |
+| **Anthropic Max** | Hokela account e le nngwe kapa ho feta tsa Anthropic Max ka konopo ya OAuth. Sebedisa tharollo ya letsoho ya OAuth ha sebatli se koalletsweng sandbox se sa kgone ho phethela redirect ka boiketsetso. |
+| **OpenAI ChatGPT/Codex** | Hokela diaccount tsa ChatGPT ka tshebetso e tshwanang ya phulu ya OAuth. Ditshebetso tse tshehetswang ke sehokedi di ka sebedisa mehala ya disebediswa tsa ChatGPT Codex kamora hore account e hokelwe. |
+| **Google AI Pro** | Hokela diaccount tsa Google AI Pro ka OAuth, ebe o ntjhafatsa sehokedi haeba lenane la diaccount le sa ntlafale hanghang. |
 
-Cursor Pro ha le fa seka se fana. Lekela screenshots tsa bohlokoa tsa bohle, runbooks, kapa steps ea ho fana le Cursor Pro setup fields kapa paths ea connector.
+Cursor Pro ha e sa le mofani ya tshehetswang. Tlosa disenepe tsa skrine tsa kgale tsa kahare, runbooks, kapa mehato ya ho kenya basebedisi e buang ka difield tsa setup tsa Cursor Pro kapa ditsela tsa sehokedi.
 
-Ha u ka fana kapa le akao ea fana ka akao, u fana email e ntle ea akao e tla fetolwa kapa e tla lekela, ha re save settings ea fana kaaka ha u batla ho sebelisa operations e tsebahalang ke connector.
+Ha o eketsa kapa o tlosa diaccount tsa mofani, kenya aterese ya imeile e nepahetseng bakeng sa account e ntjhafatswang kapa e hlakolwang mme o boloke disetting tsa mofani pele o leka ditshebetso tse tshehetswang ke sehokedi.

@@ -3,9 +3,9 @@ title: 'Siirtyminen V1:stä'
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Siirtyminen V1:stä
+# Siirtyminen V1:stä {#migrating-from-v1}
 
-## Ultimate Multisite on siirtynyt alkuperäisestä 1.x -versioiden sarjasta 2.x -versioiden sarjaan.
+## Ultimate Multisite on siirtynyt alkuperäisestä 1.x -versioiden sarjasta 2.x -versioiden sarjaan. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versio 2.0 ja sen uudemmat ovat täysin uudelleenkirjoitettua koodia, mikä tarkoittaa, että vanhan version ja uuden version välillä on hyvin vähän yhteistä. Siksi päivittäessä 1.x:stä 2.x:ään sinun on siirrettävä data muotoon, jota uudet versiot ymmärtävät.
 
@@ -15,7 +15,7 @@ Tässä oppaassa käydään läpi, miten migraattori toimii, mitä tehdä virhet
 
 _**TÄRKEÄ: Ennen kuin aloitat päivittämisen versio 1.x:stä versioon 2.0, varmista, että luot sivustodatan varmuuskopion.**_
 
-## Ensimmäiset askeleet
+## Ensimmäiset askeleet {#first-steps}
 
 Ensimmäinen askel on ladata plugin .zip -tiedosto ja asentaa versio 2.0 verkkohallintapaneelisi hallintapaneeliin.
 
@@ -49,19 +49,19 @@ Kun olet syöttänyt avaimen, klikkaa **Agree & Activate** (Hyväset ja aktivoi)
 
 Lisenssin aktivoimisen jälkeen voit aloittaa varsinaisen asennuksen klikkaamalla **Install** (Asenna) seuraavalla sivulla. Tämä luo automaattisesti tarvittavat tiedostot ja tietokannan, jotta versio 2.0 toimii.
 
-## Nyt siirto
+## Nyt siirto {#now-the-migration}
 
 Migraattoriin on sisäänrakennettu turvaominaisuus, jolla se tarkistaa koko multisiten sinun varmistaaksesi, että kaikki Ultimate Multisite -dataasi voidaan siirtää ilman ongelmia. Klikkaa **Run Check** -painiketta aloittaaksesi prosessin.
 
 Kun tarkistus on suoritettu, sinulla on kaksi vaihtoehtoa: tulos voi olla joko virheellinen tai virhetön omaava.
 
-### Virheen kanssa
+### Virheen kanssa {#with-error}
 
 Jos saat virheilmoituksen, sinun täytyy ottaa yhteyttä tukeaamme, jotta he voivat auttaa sinua korjaamaan virheen. Muista **tarjota virheloki** kun luot tiketin. Voit ladata logia tai klikata linkkiä, jossa lukee "contact our support team". Tämä avaa apuikkunan sivun oikealle puolelle, jolla on jo täytetty kentät, jotka sisältävät virhelokit kuvauksessa.
 
 _**Koska järjestelmä löysi virheen, et pääse siirtämään versioon 2.0. Voit sen sijaan palauttaa takaisin versioon 1.x jatkaaksesi verkoston ajamista kunnes virhe on korjattu.**_
 
-### Virhetön kanssa
+### Virhetön kanssa {#without-error}
 
 Jos järjestelmä ei löydä mitään virheitä, näet onnistumisviestin ja alareunassa olevan **Migrate** -painikkeen, jolla voit jatkaa siirtoa. Tällä sivulla sinua muistutaan luomaan tietokannan varmuuskopio ennen etenemistä, mitä suositellaan voimakkaasti. Paina **Migrate**, jos sinulla on jo varmuuskopio.
 

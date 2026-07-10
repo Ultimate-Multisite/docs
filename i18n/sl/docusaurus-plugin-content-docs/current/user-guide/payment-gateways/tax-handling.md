@@ -1,120 +1,120 @@
 ---
-title: Obravnavanje davkov
+title: Obravnava davkov
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Obravnavanje davkov
+# Obravnava davkov {#tax-handling}
 
-Ultimate Multisite ima modul za zbiranje davkov v našem osnovnem pluginu, zato lahko brez dodatnih komponent preprosto začnete zbiranje prodajnih davkov na svojih paketi, storitve in načrte.
+Ultimate Multisite ima modul za pobiranje davkov vgrajen v naš osnovni plugin, zato lahko, če morate pobirati prometne davke za svoje pakete, pakete storitev in storitve, to preprosto storite brez nameščanja kakršnih koli dodatkov.
 
-Za podjetja, ki so postavljena v Evropi, ponujamo **add-on**, ki dodaja orodja in funkcije za boljše **podporo skladnosti s DDV** (VAT).
+Za podjetja s sedežem v Evropi ponujamo **dodatek**, ki doda orodja in funkcije za boljšo **podporo skladnosti z VAT**.
 
-Ultimate Multisite ne obravnava niti preneseta davkov za vas do vlade; le vam pomagamo zbirati primerno davke v trenutku transakcije. **Davke morate še vedno sami prenesiti.**
+Ultimate Multisite ne vlaga ali nakazuje davkov vladi v vašem imenu; preprosto vam pomagamo pobrati ustrezne davke ob času transakcije. **Davke boste še vedno morali nakazati sami.**
 
-## Omogočanje zbiranja davkov
+## Omogočanje pobiranja davkov {#enabling-tax-collection}
 
-Zbiranje davkov ni omogočeno po defaultu. Za njegovo omogočanje morate iti na **Ultimate Multisite > Settings > Taxes** in vključiti nastavitvo Enable Taxes (Omogoči davke).
+Pobiranje davkov privzeto ni omogočeno. Če ga želite omogočiti, morate iti na **Ultimate Multisite > Nastavitve > Davki** in preklopiti nastavitev Omogoči davke.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Preklop Omogoči davke na vrhu strani z nastavitvami davkov](/img/config/settings-taxes-enable.png)
 
-Tukaj je celoten pregled strani z nastavitvami davkov:
+Tukaj je celoten pogled strani z nastavitvami davkov:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Celotna stran z nastavitvami davkov](/img/config/settings-taxes-full.png)
 
-Lahko lahko vidite tudi nastavitve davkov za določene izdelke:
+Ogledate si lahko tudi nastavitve davkov za posamezne izdelke:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Nastavitve davkov za izdelke](/img/config/settings-taxes.png)
 
-### Davki izključeni vs. davki vključeni
+### Davek izključen v primerjavi z davkom vključenim {#tax-excluded-vs-tax-included}
 
-Po defaultu so vsi vaši cene izdelkov izključeni davkov, kar pomeni, da se davke **ne vključujejo** v ceno izdelka. Če določimo, da morajo kupci plačati davke na določen nakup, jih dodamo **na vrh** podstave.
+Privzeto so vse cene vaših izdelkov brez davka, kar pomeni, da davki **niso vključeni** v ceno izdelka. Če ugotovimo, da mora stranka plačati davke za določen nakup, bomo davke dodali **na vrh** vmesnega seštevka.
 
-Če želite, da so davki vključeni v ceno vašega izdelka, lahko to storite z uporabo nastavitve Inclusive Tax (Vključeni davki).
+Če želite, da so davki vključeni v ceno vašega izdelka, lahko to storite tako, da omogočite nastavitev **Vključen davek**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Vrstica preklopa Vključen davek pod nastavitvijo Omogoči davke](/img/config/settings-taxes-inclusive.png)
 
-Ne pozabite **shraniti** izmene, ki ste jih vnesli.
+Ne pozabite **shraniti** sprememb, ki ste jih naredili.
 
 ###
 
-## Ustvarjanje davčnih stopenkov
+## Ustvarjanje davčnih stopenj {#creating-tax-rates}
 
-Po omogočjenju zbiranja davkov boste morali ustvariti davčne stopenke za določene lokacije z uporabo našega editorja davčnih stopenkov.
+Ko omogočite pobiranje davkov, boste morali z našim urejevalnikom davčnih stopenj ustvariti davčne stopnje za določene lokacije.
 
-Morač lahko dostop do editorja kliknete na gumb **Manage Tax Rates** (Upravljanje davčnih stopen) v levi strani stran za nastavitve Davke.
+Do urejevalnika lahko dostopate s klikom na gumb **Upravljanje davčnih stopenj** v stranski vrstici strani z nastavitvami davkov.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Povezava Upravljanje davčnih stopenj v plošči Davčne stopnje na strani z nastavitvami](/img/config/settings-taxes-manage-rates.png)
 
-Na strani editorja davčnih stopen lahko nove davčne stopnje dodate, kliknete na gumb **Add new Row** (Dodaj novi red).
+Na strani urejevalnika davčnih stopenj lahko dodate nove davčne stopnje s klikom na gumb **Dodaj novo vrstico**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tabela urejevalnika davčnih stopenj z gumbom Dodaj novo vrstico na vrhu](/img/config/tax-rates-editor.png)
 
-Za vsako davčno stopnjo morate določiti **naslov** (ki se uporablja na računih). Nato lahko izberete **državo** (obvezno), **štadu**, in **mesto** (oba sta opcionalna), kjer bo ta davek obložen. Na koncu dodajte **davčnu stopnjo v procentih**.
+Vsaki davčni stopnji boste morali dodeliti **naslov** (uporabljen na računih). Nato lahko izberete **državo** (obvezno), **zvezno državo/pokrajino** in **mesto** (obe neobvezni), kjer bo ta davek zaračunan. Na koncu dodajte **davčno stopnjo v odstotkih**.
 
-### Davčne kategorije
+### Davčne kategorije {#tax-categories}
 
-Lahko lahko ustvarite več Davčnih kategorij, da dodate različne davčne stopnje za različne vrste izdelkov.
+Ustvarite lahko tudi več davčnih kategorij, da dodate različne davčne stopnje za različne vrste izdelkov.
 
-Kliknite na **Add new Tax Category** (Dodaj novo davčno kategorijo), nato napišite ime svoje kategorije in pritisnite **Create** (Ustvari).
+Kliknite **Dodaj novo davčno kategorijo**, nato vpišite ime kategorije in pritisnite **Ustvari**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Gumb Dodaj novo davčno kategorijo na vrhu urejevalnika davčnih stopenj](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Vnosno polje Ime davčne kategorije v modalnem oknu za ustvarjanje kategorije](/img/config/tax-categories-create-modal.png)
 
-Za prehodovanje med kategorijami kliknite na **Switch** (Preklopi) in izberite kategorijo v ki boste dodavali nove davke.
+Za brskanje po kategorijah kliknite **Preklopi** in izberite kategorijo, v katero želite dodati nove davke.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Spustni gumb Preklopi za menjavo med davčnimi kategorijami](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Spustni izbirnik davčne kategorije, ki prikazuje razpoložljive kategorije](/img/config/tax-categories-select.png)
 
-Davčno kategorijo za določen izdelek lahko nastavite, idete na **Product edit page** (Stranjo urejanja izdelka) in nato na tab Davke (Taxes).
+Davčno kategorijo za določen izdelek lahko nastavite tako, da greste na **stran za urejanje izdelka** in nato na zavihek Davki.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Zavihek davkov izdelka z davčno kategorijo in preklopom obdavčljivo](/img/config/product-taxes.png)
 
-Na istoj strani lahko isključite preklop **Is Taxable?** (Je obložen davem?), da povežete Ultimate Multisite, da ne mora določeni izdelek davke zbirati.
+Na istem zaslonu lahko izklopite preklop **Je obdavčljivo?**, da Ultimate Multisite obvestite, da za ta določen izdelek ne sme pobirati davkov.
 
-## Podpora za evropsko DDV
+## Podpora za evropski VAT {#european-vat-support}
 
-Kot smo že omenili, imamo dodatek za stranke v EU, ki imajo dodatne zahteve zaradi evropskih DDV pravil.
+Kot omenjeno prej, imamo za stranke v EU na voljo dodatek, ki imajo zaradi evropskih predpisov o VAT dodatne zahteve.
 
-Naši VAT orodja vam pomagajo z nekaj pomembnimi stvarmi:
+Naša orodja za VAT pomagajo pri nekaj pomembnih stvareh:
 
-  * Enostavno vnos podatkov o DDV za države članice EU;
+  * Preprosto nalaganje stopenj EU VAT;
 
-  * Zbiranje in validacija števil DDV - ter obratna obravnava za subjekte, ki so izognjeni od DDV (kot so podjetja z datumom DDV).
+  * Zbiranje in preverjanje številke VAT - ter obrnjeno davčno obveznost za subjekte, oproščene VAT (kot so podjetja z veljavnimi številkami VAT);
 
-Za namestitev tega dodatka gre do **Ultimate Multisite > Settings** in nato kliknite na povezavo v levi strani **Check our Add-ons**.
+Če želite namestiti ta dodatek, pojdite na **Ultimate Multisite > Nastavitve** in nato kliknite povezavo v stranski vrstici **Oglejte si naše dodatke**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Stranska vrstica strani z nastavitvami s povezavo Oglejte si naše dodatke](/img/config/settings-taxes-addons-link.png)
 
-Boste preusmerjeni na našo stran z dodatki. Tam boste lahko iskanje za **Ultimate Multisite VAT add-on** in ga namestite.
+Preusmerjeni boste na našo stran z dodatki. Tam lahko poiščete **Ultimate Multisite VAT dodatek** in ga namestite.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Posnetek zaslona ni na voljo: ploščica VAT dodatka na strani z dodatki -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Posnetek zaslona ni na voljo: pogovorno okno Namesti zdaj za VAT dodatek -->
 
-Potem gre do **Network Admin > Plugins** in ga aktivirajte na celotni omrežji.
+Nato pojdite na **Omrežna administracija > Plugins** in aktivirajte ta dodatek po celotnem omrežju.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Posnetek zaslona ni na voljo: dejanje Omrežno aktiviraj za VAT dodatek na strani Plugins -->
 
-Če se vrnete na tab **Tax Settings**, boste videli nove možnosti. Preprečite možnost **Enable VAT Support** (Omogoči podporo za DDV), da bi aktivirali nova orodja za DDV. Ne pozabite **save** svoje nastavitve!
+Če se vrnete na **zavihek Nastavitve davkov**, boste videli nove razpoložljive možnosti. Preklopite možnost **Omogoči podporo za VAT**, da omogočite nova orodja za VAT. Ne pozabite **shraniti** svojih nastavitev!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Posnetek zaslona ni na voljo: preklop Omogoči podporo za VAT v nastavitvah davkov po aktivaciji dodatka -->
 
-### Vnos podatkov o DDV stopnjah
+### Pridobivanje davčnih stopenj VAT {#pulling-on-vat-tax-rates}
 
-Ena od orodij, ki ga naša integracija dodaja, je možnost vnos DDV stopnjenik za države članice EU. To lahko storite z obiskovanjem strani za urejanje DDV stopnjenikov po omogočeni podpori za DDV za EU.
+Eno od orodij, ki jih doda naša integracija, je možnost nalaganja davčnih stopenj za države članice EU. To lahko storite tako, da po omogočitvi podpore za EU VAT obiščete stran urejevalnika davčnih stopenj.
 
-Na dnu strani stran, boste videli možnosti za povzročanje DDV (VAT). Izbranjem vrste stopnje in klikom na gumb **Update EU VAT Rates** se tabela z davčnimi stopnjami za vsako državo članico EU odpre in avtomatsko popuni. Nato je dovolj, da jo samo shranite.
+Na dnu strani boste videli možnosti pridobivanja VAT. Izbira vrste stopnje in klik na gumb **Posodobi stopnje EU VAT** bosta pridobila in samodejno izpolnila tabelo z davčnimi stopnjami za vsako državo članico EU. Nato jo morate le še shraniti.
 
-![Gumb Update EU VAT Rates na dnu redaktora davčnih stopnjenik](/img/config/tax-rates-vat-pull.png)
+![Gumb Posodobi stopnje EU VAT na dnu urejevalnika davčnih stopenj](/img/config/tax-rates-vat-pull.png)
 
-Lahko lahko tudi uredite vrednosti po povzročanju. Za to je preprosto uredite red v tabeli, ki vam je potreben, in kliknite za shranjevanje novih vrednosti.
+Vrednosti lahko po pridobivanju tudi uredite. To storite tako, da preprosto uredite vrstico tabele, ki jo potrebujete, in kliknete za shranjevanje novih vrednosti.
 
-### Validacija DDV (VAT Validation)
+### Preverjanje VAT {#vat-validation}
 
-Ko je podporo za DDV vključena, Ultimate Multisite bo dodal dodatno polje na obrazec za plačilo, pod poljem za račun. To polje se bo pojavilo le za stranke ki so lokirani v EU.
+Ko je podpora za VAT omogočena, bo Ultimate Multisite v obrazec za zaključek nakupa dodal dodatno polje, pod poljem naslova za obračun. Polje se bo prikazalo samo strankam, ki se nahajajo v EU.
 
-<!-- Screenshot unavailable: Polje številke DDV na obrazcu za plačilo na sprednji strani pod poljem za račun -->
+<!-- Posnetek zaslona ni na voljo: polje Številka VAT na obrazcu za zaključek nakupa na sprednjem delu pod naslovom za obračun -->
 
-Ultimate Multisite nato validira številko DDV in če se vrne kot veljavna, se uporabi mehanizem obratne stopnje (reverse charge mechanism) in davčna stopnja je postavljena na 0% za to naročilo.
+Ultimate Multisite bo nato preveril VAT Number in če se vrne kot veljavna, se uporabi mehanizem obrnjene davčne obveznosti, davčna stopnja pa se za to naročilo nastavi na 0 %.

@@ -4,13 +4,13 @@ title: 'Action - wu_page_{$this->id}_register_widgets'
 sidebar_label: 'wu_page_{$this->id}_register_widgets'
 _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 ---
-# Action: wu_page_{$this->id}_register_widgets
+# Action: wu_page_{$this->id}_register_widgets {#action-wupagethis-idregisterwidgets}
 
 A widgetek regisztrálása után fog rajta futni.
 
 A hook név dinamikus része, az `$this->id`, a lap azonosítójára (page id) utal.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Név | Típus | Leírás |
 |------|------|-------------|
@@ -18,9 +18,9 @@ A hook név dinamikus része, az `$this->id`, a lap azonosítójára (page id) u
 | $page_hook | `string` | A lap hook-ja. |
 | $page | `object` | A lap objektuma. |
 
-### Since
+### Since {#since}
 
 - 2.4.10
-### Source
+### Source {#source}
 
 Definálva a [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) fájlban, 755-sorban.

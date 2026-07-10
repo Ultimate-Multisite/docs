@@ -4,11 +4,11 @@ title: Action - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 จะถูกเรียกใช้ทันทีก่อนที่คุกกี้การยืนยันตัวตนจะถูกตั้งค่า
 
-## พารามิเตอร์
+## พารามิเตอร์ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | กลไกการยืนยันตัวตน ค่าที่รองรับได้แก่ 'auth' หรือ 'secure_auth' |
 | $token | `string` | โทเค็นเซสชันของผู้ใช้ที่จะใช้สำหรับคุกกี้นี้ |
 
-### ตั้งแต่
+### ตั้งแต่ {#since}
 
 - 2.5.0
 - 4.9.0: ได้เพิ่มพารามิเตอร์ <code>$token</code> เข้ามา
 
-### แหล่งที่มา
+### แหล่งที่มา {#source}
 
 กำหนดไว้ใน [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) บรรทัดที่ 124

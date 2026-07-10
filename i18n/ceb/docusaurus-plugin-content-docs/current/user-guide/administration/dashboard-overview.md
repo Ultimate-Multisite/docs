@@ -3,11 +3,11 @@ title: Pangkalahatang Tan-aw sa Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview
+# Dashboard Overview {#dashboard-overview}
 
 Ang Ultimate Multisite nagkinahanglan og dedikadong **Dashboard** sa ilalom sa Ultimate Multisite menu, ug nagdadagpan usab og mga widgets sa Network Dashboard. Kining article naghisgot kung unsa ang makita nimo sa duha ka lugar.
 
-## Ang Network Dashboard
+## Ang Network Dashboard {#the-network-dashboard}
 
 Ang Ultimate Multisite nagbutang og mga gamiton nga widgets sa network-level dashboard nga makita sa **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Ania kung unsa ang gihatag sa matag widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ang Ultimate Multisite Dashboard
+## Ang Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Bisan tuod ang network dashboard nagpakita og kinatibuk-ang impormasyon bahin sa network, ang Ultimate Multisite dashboard (sa top-level sa Ultimate Multisite menu) nagpakita og impormasyon bahin sa serbisyo.
 

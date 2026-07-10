@@ -1,118 +1,124 @@
 ---
-title: E-Mails senden und Rundschreiben
+title: E-Mails und Rundsendungen versenden
 sidebar_position: 11
-_i18n_hash: 2c58b558fa68e4dd6e81bec971d52536
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Senden von E-Mails und Rundschreiben (v2)
+# E-Mails und Broadcasts senden (v2) {#sending-emails-and-broadcasts-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Ultimate Multisite verfügt über eine Funktion, mit der Sie mit Ihren Kunden kommunizieren können, indem Sie eine E‑Mail an einen gezielten Benutzer oder eine Gruppe von Benutzern senden sowie Benachrichtigungen auf ihrem Admin-Dashboard anzeigen, um Ankündigungen zu verbreiten.
+Ultimate Multisite enthält eine Funktion, mit der du mit deinen Kunden kommunizieren kannst, indem du eine E-Mail an einen bestimmten Benutzer oder eine Gruppe von Benutzern sendest sowie Hinweise auf ihrem Admin-Dashboard anzeigst, um Ankündigungen zu verbreiten
 
-## Admin-Benachrichtigungen zu den Dashboards Ihrer Kunden mit Rundschreiben hinzufügen
+## Admin-Hinweise mit Broadcasts zum Dashboard deiner Kunden hinzufügen {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Mit der Rundschreiben-Funktion von Ultimate Multisite können Sie **Admin-Benachrichtigungen** zum Admin-Dashboard Ihrer Subsite hinzufügen.
+Mit der Broadcast-Funktion von Ultimate Multisite kannst du **Admin-Hinweise** zum Admin-Dashboard der Subsite deines Benutzers hinzufügen.
 
-Dies ist äußerst hilfreich, wenn Sie eine Ankündigung wie Wartungsarbeiten oder das Angebot neuer Produkte oder Dienstleistungen an Ihre bestehenden Benutzer machen müssen. So sieht die Admin-Benachrichtigung auf dem Dashboard Ihres Benutzers aus.
+Das ist äußerst hilfreich, wenn du eine Ankündigung machen musst, z. B. zu Systemwartung oder zum Angebot neuer Produkte oder Dienste für deine bestehenden Benutzer. So wird der Admin-Hinweis auf dem Dashboard deines Benutzers aussehen.
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Um eine Admin-Benachrichtigung zu starten, gehen Sie zum Netzwerk-Admin-Dashboard und suchen Sie im Menü **Ultimate Multisite** nach der Option **Broadcasts**.
+Um einen Admin-Hinweis zu starten, gehe zu deinem Netzwerk-Admin-Dashboard. Unter dem Menü **Ultimate Multisite** findest du die Option **Broadcasts**.
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Broadcasts-Listenseite im Ultimate Multisite-Admin](/img/admin/broadcasts-list.png)
 
-Klicken Sie auf dieser Seite oben auf die Schaltfläche **Add Broadcast**.
+Du kannst auch bestehende Broadcasts bearbeiten:
 
-Dadurch öffnet sich das Modal-Fenster „Add broadcast“, in dem Sie auswählen können, welche Art von Rundschreiben Sie senden möchten. Wählen Sie **Message** und klicken Sie anschließend auf die Schaltfläche **Next Step**.
+![Broadcast-Bearbeitungsoberfläche](/img/admin/broadcast-edit.png)
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+Klicke auf dieser Seite oben auf die Schaltfläche **Broadcast hinzufügen**.
 
-Das nächste Fenster fragt Sie nach dem **Target customer** oder dem **Target product**. Beachten Sie, dass Sie mehr als einen Benutzer oder mehr als ein Produkt auswählen können.
+Dadurch wird das Modalfenster „Broadcast hinzufügen“ geöffnet, in dem du auswählen kannst, welche Art von Broadcast du senden möchtest.
 
-Um nach einem Benutzerkonto oder Produkt zu suchen, müssen Sie das Schlüsselwort im Feld eingeben.
+Wähle **Nachricht** aus und klicke dann auf die Schaltfläche **Nächster Schritt**.
 
-Im Feld **Message type** können Sie die Farbe der Benachrichtigung auswählen. Dadurch wird die Dringlichkeit Ihrer Nachricht betont.
+![Modalfenster „Broadcast hinzufügen“ mit ausgewählter Option „Nachricht“](/img/admin/broadcast-add-message.png)
 
-Klicken Sie anschließend auf **Next Step**.
+Im nächsten Fenster wirst du entweder nach dem **Zielkunden** oder dem **Zielprodukt** gefragt. Beachte, dass du mehr als einen Benutzer oder mehr als ein Produkt auswählen kannst.
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+Um entweder nach einem Benutzer-Account oder einem Produkt zu suchen, musst du das Schlüsselwort in das Feld eingeben.
 
-Im nächsten Fenster können Sie Ihre Nachricht verfassen, indem Sie Betreff und Inhalt/Nachricht eingeben, die Sie an die Benutzer senden möchten.
+Im Feld **Nachrichtentyp** kannst du die Farbe des Hinweises auswählen. Dadurch wird die Dringlichkeit deiner Nachricht hervorgehoben.
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+Anschließend kannst du auf **Nächster Schritt** klicken.
 
-Nachdem Sie Ihre Nachricht erstellt haben, klicken Sie auf die Schaltfläche **Send**.
+![Felder für Zielkunden, Zielprodukt und Nachrichtentyp für einen Nachrichten-Broadcast](/img/admin/broadcast-message-targets.png)
 
-Und das war's. Die Admin-Benachrichtigung sollte sofort im Dashboard Ihres Benutzers angezeigt werden.
+Im nächsten Fenster kannst du mit dem Verfassen deiner Nachricht beginnen, indem du den Betreff und den Inhalt/die Nachricht eingibst, die du an die Benutzer broadcasten möchtest.
 
-## E-Mails an Ihre Kunden senden
+![Betreff- und Inhaltseditor für Broadcast-Nachrichten im Verfassen-Schritt](/img/admin/broadcast-edit.png)
 
-Mit der Rundschreiben-Funktion von Ultimate Multisite können Sie Ihren Benutzern eine E‑Mail senden. Sie haben die Möglichkeit, die E‑Mail nur an bestimmte Benutzer zu senden oder eine bestimmte Benutzergruppe basierend auf dem Produkt oder Plan, für den sie abonniert sind, anzusprechen.
+Nachdem du deine Nachricht erstellt hast, kannst du auf die Schaltfläche **Senden** klicken.
 
-Um ein E‑Mail-Rundschreiben zu starten, gehen Sie zum Netzwerk-Admin-Dashboard und suchen Sie im Menü Ultimate Multisite nach der Option Broadcast.
+Und das war’s. Der Admin-Hinweis sollte sofort auf dem Dashboard deines Benutzers angezeigt werden.
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+## E-Mails an deine Kunden senden {#send-emails-to-your-customers}
 
-Klicken Sie auf dieser Seite oben auf die Schaltfläche **Add broadcast**.
+Mit der Broadcast-Funktion von Ultimate Multisite kannst du eine E-Mail an deine Benutzer senden. Du hast die Möglichkeit, die E-Mail nur an bestimmte Benutzer zu senden oder eine bestimmte Benutzergruppe basierend auf dem Produkt oder Plan anzusprechen, unter dem sie abonniert sind.
 
-Dadurch öffnet sich das Modal-Fenster „Add broadcast“, in dem Sie auswählen können, welche Art von Rundschreiben Sie senden möchten. Wählen Sie **Email** und klicken Sie anschließend auf die Schaltfläche **Next Step**.
+Um einen E-Mail-Broadcast zu starten, gehe zu deinem Netzwerk-Admin-Dashboard. Unter dem Ultimate Multisite-Menü findest du die Broadcast-Option.
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+![Broadcasts-Listenseite als Ausgangspunkt für einen E-Mail-Broadcast](/img/admin/broadcasts-list.png)
 
-Das nächste Fenster fragt Sie nach dem **Target customer** oder dem **Target product**. Beachten Sie, dass Sie mehr als einen Benutzer oder mehr als ein Produkt auswählen können.
+Klicke auf dieser Seite oben auf die Schaltfläche **Broadcast hinzufügen**.
 
-Um nach einem Benutzerkonto oder Produkt zu suchen, müssen Sie das Schlüsselwort im Feld eingeben.
+Dadurch wird das Modalfenster „Broadcast hinzufügen“ geöffnet, in dem du auswählen kannst, welche Art von Broadcast du senden möchtest. Wähle **E-Mail** aus und klicke dann auf die Schaltfläche **Nächster Schritt**.
 
-Sobald Ihre Zielgruppe ausgewählt ist, klicken Sie auf **Next Step**.
+![Modalfenster „Broadcast hinzufügen“ mit ausgewählter Option „E-Mail“](/img/admin/broadcast-add-email.png)
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+Im nächsten Fenster wirst du entweder nach dem **Zielkunden** oder dem **Zielproduk** t gefragt. Beachte, dass du mehr als einen Benutzer oder mehr als ein Produkt auswählen kannst.
 
-Im nächsten Fenster können Sie Ihre E‑Mail verfassen, indem Sie Betreff und Inhalt/Nachricht eingeben, die Sie an die Benutzer senden möchten.
+Um entweder nach einem Benutzer-Account oder einem Produkt zu suchen, musst du das Schlüsselwort in das Feld eingeben.
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+Sobald deine Zielgruppe ausgewählt ist, kannst du auf **Nächster Schritt** klicken.
 
-Nachdem Sie Ihre Nachricht erstellt haben, klicken Sie auf die Schaltfläche **Send**.
+![Auswahl von Zielkunden und Zielprodukt für einen E-Mail-Broadcast](/img/admin/broadcast-email-targets.png)
 
-Und so einfach ist es, eine E‑Mail an Ihre Endbenutzer mit der Rundschreiben-Funktion zu senden.
+Im nächsten Fenster kannst du mit dem Verfassen deiner E-Mail beginnen, indem du den Betreff und den Inhalt/die Nachricht eingibst, die du an die Benutzer senden möchtest.
 
-## System-E-Mails
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-System-E-Mails in Ultimate Multisite sind die **automatischen Benachrichtigungen**, die vom System nach bestimmten Aktionen wie Registrierung, Zahlung, Domain‑Mapping usw. gesendet werden. Diese E‑Mails können in den Einstellungen von Ultimate Multisite bearbeitet oder geändert werden. Außerdem gibt es eine Funktion, mit der Sie vorhandene Einstellungen aus einer anderen Ultimate Multisite‑Installation zurücksetzen und importieren können.
+Nachdem du deine Nachricht erstellt hast, kannst du auf die Schaltfläche **Senden** klicken.
 
-### Zurücksetzen & Importieren
+Und so einfach ist es, mit der Broadcast-Funktion eine E-Mail an deine Endbenutzer zu senden.
 
-Neue Ultimate Multisite-Versionen sowie Add‑Ons können und werden von Zeit zu Zeit neue E‑Mails registrieren.
+## System-E-Mails {#system-emails}
 
-Um Konflikte und andere Probleme zu vermeiden, **werden wir die neuen E‑Mail-Vorlagen nicht automatisch als System‑E‑Mails in Ihrer Installation hinzufügen**, es sei denn, sie sind entscheidend für die korrekte Funktionsweise einer bestimmten Funktion.
+System-E-Mails in Ultimate Multisite sind jene **automatischen Benachrichtigungen**, die vom System nach bestimmten Aktionen wie Registrierung, Zahlung, Domain-Mapping usw. gesendet werden. Diese E-Mails können in den Ultimate Multisite-Einstellungen bearbeitet oder geändert werden. Es enthält außerdem eine Funktion, mit der du bestehende Einstellungen aus einer anderen Ultimate Multisite-Installation zurücksetzen und importieren kannst.
 
-Allerdings können Super‑Admins und Agenten diese neu registrierten E‑Mails über das Importtool importieren. Dieser Prozess erstellt eine neue System‑E‑Mail mit dem Inhalt und der Konfiguration der neuen E‑Mail-Vorlage, sodass der Super‑Admin beliebige Änderungen vornehmen oder sie unverändert lassen kann.
+### Zurücksetzen & Importieren {#resetting--importing}
 
-#### Wie man System‑E-Mails importiert
+Neue Ultimate Multisite-Versionen sowie Add-ons können und werden von Zeit zu Zeit neue E-Mails registrieren.
 
-Gehen Sie zur Seite Einstellungen von Ultimate Multisite und öffnen Sie die Registerkarte **Emails**.
+Um Konflikte und andere Probleme zu vermeiden, **fügen wir die neuen E-Mail-Vorlagen nicht automatisch als System-E-Mails zu deiner Installation hinzu** , es sei denn, sie sind für das korrekte Funktionieren einer bestimmten Funktion entscheidend.
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+Super-Admins und Agenten können diese neu registrierten E-Mails jedoch über das Importer-Tool importieren. Dieser Vorgang erstellt eine neue System-E-Mail mit dem Inhalt und der Konfiguration der neuen E-Mail-Vorlage, sodass der Super-Admin beliebige Änderungen vornehmen oder sie unverändert lassen kann.
 
-Klicken Sie anschließend in der Seitenleiste auf die Schaltfläche **Customize System Emails**.
+#### So importierst du System-E-Mails {#how-to-import-system-emails}
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+Gehe zu deiner Ultimate Multisite-Einstellungsseite und öffne den Tab **E-Mails**.
 
-Auf der Seite System‑E‑Mails sehen Sie oben die Schaltfläche **Reset & Import**. Durch Klicken auf diese Schaltfläche sollte das Modal-Fenster für Import und Zurücksetzen geöffnet werden.
+![E-Mails-Tab in den Ultimate Multisite-Einstellungen mit dem Abschnitt „System-E-Mails“](/img/config/settings-emails-tab.png)
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+Klicke dann in der Seitenleiste auf die Schaltfläche **System-E-Mails anpassen**.
 
-Anschließend können Sie die Option Import Emails umschalten, um zu sehen, welche System‑E‑Mails importiert werden können.
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+Auf der Seite „System-E-Mails“ siehst du oben die Aktionsschaltfläche **Zurücksetzen & Importieren**. Wenn du auf diese Schaltfläche klickst, sollte sich das Modalfenster zum Importieren und Zurücksetzen öffnen.
 
-#### Zurücksetzen von System‑E‑Mails
+![Aktionsschaltfläche „Zurücksetzen oder Importieren“ auf der Admin-Seite „System-E-Mails“](/img/admin/system-emails-reset-import.png)
 
-Manchmal stellen Sie fest, dass die Änderungen, die Sie an einer bestimmten E‑Mail-Vorlage vorgenommen haben, nicht mehr funktionieren und Sie sie in ihren **Standardzustand** zurücksetzen möchten.
+Dann kannst du die Optionen zum Importieren von E-Mails umschalten, um zu sehen, welche System-E-Mails zum Import verfügbar sind.
 
-In solchen Fällen haben Sie zwei Optionen: Sie können die System‑E‑Mail einfach löschen und wieder importieren (unter Verwendung der obigen Anweisungen) – was Sendungsmetriken und andere Daten löscht, wodurch diese Methode am wenigsten bevorzugt ist.
+<!-- Screenshot nicht verfügbar: Modal „Zurücksetzen und importieren“ mit ausgeklappten Optionen zum Importieren von E-Mails -->
 
-Oder Sie können das **Reset & Import**-Tool verwenden, um diese E‑Mail-Vorlage zurückzusetzen.
+#### System-E-Mails zurücksetzen {#reseting-system-emails}
 
-Um eine E‑Mail-Vorlage zurückzusetzen, können Sie die oben beschriebenen Schritte bis zum Reset & Import‑Tool befolgen, anschließend die Option **Reset** umschalten und die E‑Mails auswählen, die Sie auf ihren Standardinhalt zurücksetzen möchten.
+Manchmal stellen Sie fest, dass die Änderungen, die Sie an einer bestimmten E-Mail-Vorlage vorgenommen haben, für Sie nicht mehr funktionieren, und Sie möchten sie auf ihren **Standardzustand** zurücksetzen.
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+In solchen Fällen haben Sie zwei Optionen: Sie können die System-E-Mail einfach löschen und sie erneut importieren (mithilfe der obigen Anweisungen) – dadurch werden jedoch Versandmetriken und andere Dinge gelöscht, weshalb diese Methode am wenigsten empfohlen wird.
+
+Oder Sie können das Tool **Zurücksetzen & Importieren** verwenden, um diese E-Mail-Vorlage zurückzusetzen.
+
+Um eine E-Mail-Vorlage zurückzusetzen, können Sie die obigen Schritte ausführen, bis Sie das Tool „Zurücksetzen & Importieren“ erreichen. Aktivieren Sie dann die Option **Zurücksetzen** und wählen Sie die E-Mails aus, die Sie auf ihren Standardinhalt zurücksetzen möchten.
+
+<!-- Screenshot nicht verfügbar: Modal „Zurücksetzen und importieren“ mit ausgeklappten Optionen zum Zurücksetzen von E-Mails -->

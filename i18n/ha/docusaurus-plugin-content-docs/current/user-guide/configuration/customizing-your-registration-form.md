@@ -1,154 +1,156 @@
 ---
-title: Yin da za ka gyara shafin rajista mai tsari
+title: Keɓance Fom ɗin Rajistarka
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Ƙirƙirar Fassarar Shigarwa (Registration Form)
+# Keɓance fom ɗin Rajistarka {#customizing-your-registration-form}
 
-Don yin bikin yanarku ya yi wani abu na musamman daga duk wani SaaS da aka gina a kan WordPress platform, Ultimate Multisite yana ba ku damar canza shigarwar da shiga (registration) da shiga (login) ta hanyar ƙarin mu'amalarmu **Checkout Forms** feature.
+Don sa hanyar sadarwarka ta zama ta musamman daga duk sauran SaaS da aka gina a kan dandamalin WordPress, Ultimate Multisite yana ba ka damar keɓance shafukan rajista da shiga ta amfani da fasalinmu na **Checkout Forms**.
 
-Kamar yadda su ne hanya mai sauƙi kuma mai sauƙin gwada daban-daban hanyoyin lokacin da kuke so ku canza abubuwa don tura sabbin abokan ciniki, ana amfani da su sosai don ƙirƙirar shigarwar da ta fi dacewa da mutum ɗaya. Wannan rubutun yana nufin nuna maka yadda za ka yi hakan.
+Ko da yake hanya ce mai sauƙi da sassauƙa don gwada hanyoyi daban-daban yayin ƙoƙarin jawo sababbin abokan ciniki, galibi ana amfani da su ne don ƙirƙirar fom ɗin rajista na musamman. Wannan labarin yana nufin nuna maka yadda za ka iya yin hakan.
 
-## Shafin Shiga da Shigarwa (Login and registration pages):
+## Shafukan shiga da rajista: {#login-and-registration-pages}
 
-Bayan an install Ultimate Multisite, yana samar da shafin shiga da shigarwa na musamman a kan wajen gida ɗinka. Za ka iya canza waɗannan shafuka na asali kowane lokaci ta hanyar tafiya zuwa shafin **Ultimate Multisite > Settings > Login & Registration** ɗinka.
+Bayan shigar da Ultimate Multisite, yana ƙirƙirar shafukan shiga da rajista na musamman ta atomatik a babban shafinka. Za ka iya canza waɗannan tsoffin shafuka a kowane lokaci ta zuwa shafin **Ultimate Multisite > Settings > Login & Registration** naka.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Shafin saitunan Shiga da Rajista](/img/config/settings-general.png)
 
-Ga bayani mai cikakken bayanin shafin shiga da shigarwa:
+Ga cikakken kallon shafin saitunan shiga da rajista:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Cikakken shafin saitunan Shiga da Rajista](/img/config/settings-login-registration-full.png)
 
-Mu duba kowane zaɓi da za ka iya canza a shafin **Login & Registration**:
+Bari mu duba kowanne daga cikin zaɓuɓɓukan da za ka iya keɓancewa a shafin **Login & Registration**:
 
-  * **Enable registration (Atsawawa ga shigarwa):** Wannan zaɓi zai samar ko ya hana shigarwar a kan yanarku. Idan aka yi masa "off" (hanyar), abokan ciniki ba za su iya yin rijista da shiga cikin kayayyakin ku ba.
+  * **Kunna rajista:** Wannan zaɓi zai kunna ko kashe rajista a kan hanyar sadarwarka. Idan an kashe shi, abokan cinikinka ba za su iya yin rajista ko biyan kuɗin samfuran ka ba.
 
-  * **Enable email verification (Atsawawa ga tabbatar da imel):** Idan wannan zaɓin an yi masa "on" (hanyar), abokan ciniki waɗanda suka yi rajista don tsarin tallafi mai kyau ko kuma wani tsari mai gwaji zai samu imel na tabbatarwa kuma za su buƙaci danna link na tabbatarwa domin shafuka su ƙare.
+  * **Kunna tabbatar da email:** Idan an kunna wannan zaɓi, abokan ciniki da suka yi rajista don shirin kyauta ko shirin biya mai lokacin gwaji za su karɓi email na tabbatarwa kuma za su buƙaci danna mahaɗin tabbatarwa domin a ƙirƙiri shafukansu.
 
-* **صفحه ثبت‌نام پیش‌فرض (Default registration page):** این صفحه برای ثبت‌نام پیش‌فرض است. باید این صفحه را روی وب‌سایت خود منتشر کنید و یک فرم ثبت‌نام (که به آن فرم تسویه حساب یا checkout form هم می‌گویند) داشته باشد - جایی که مشتریان شما محصولاتتان را مشترک خواهند شد. شما می‌توانید هر تعداد صفحه ثبت‌نام و فرم تسویه حساب ایجاد کنید، فقط یادتان باشد که شورت‌کد فرم تسویه حساب را در صفحه ثبت‌نام قرار دهید، وگرنه نمایش داده نخواهد شد.
+  * **Tsohon shafin rajista:** Wannan shi ne tsohon shafi don rajista. Wannan shafi yana buƙatar a wallafa shi a shafinka kuma ya kasance da fom ɗin rajista (wanda kuma aka sani da fom ɗin checkout) - inda abokan cinikinka za su yi biyan kuɗin samfuran ka. Za ka iya ƙirƙirar shafukan rajista da fom ɗin checkout da yawa yadda kake so, kawai ka tuna saka shortcode na fom ɗin checkout a shafin rajista, in ba haka ba ba zai bayyana ba.
 
-  * **استفاده از صفحه ورود سفارشی (Use custom login page):** این گزینه به شما اجازه می‌دهد از یک صفحه ورود سفارشی استفاده کنید، غیر از صفحه پیش‌فرض wp-login.php. اگر این گزینه را روشن کنید، می‌توانید انتخاب کنید که کدام صفحه برای ورود در گزینه **صفحه ورود پیش‌فرض (Default login page)** (که درست زیر آن قرار دارد) استفاده شود.
+  * **Yi amfani da shafin shiga na musamman:** Wannan zaɓi yana ba ka damar amfani da shafin shiga da aka keɓance, ba tsohon shafin wp-login.php ba. Idan an kunna wannan zaɓi, za ka iya zaɓar wane shafi za a yi amfani da shi don shiga a zaɓin **Tsohon shafin shiga** (kai tsaye a ƙasa).
 
-  * **مخفی کردن آدرس اصلی ورود (wp-login.php):** اگر می‌خواهید آدرس اصلی ورود را پنهان کنید، می‌توانید این گزینه را روشن کنید. این کار برای جلوگیری از حملات brute-force مفید است. اگر این گزینه فعال باشد، Ultimate Multisite زمانی که کاربر سعی کند به لینک اصلی wp-login.php دسترسی پیدا کند، خطای 404 نمایش می‌دهد.
+  * **Ɓoye asalin login url (wp-login.php)** : Idan kana son ɓoye asalin URL na shiga, za ka iya kunna wannan zaɓi. Wannan yana da amfani wajen hana hare-haren brute-force. Idan an kunna wannan zaɓi, Ultimate Multisite zai nuna kuskuren 404 lokacin da mai amfani ya yi ƙoƙarin samun dama ga asalin mahaɗin wp-login.php
 
-  * **اجبار انتشار همزمان سایت (Force synchronous site publication):** بعد از اینکه یک مشتری در یک شبکه محصول مشترک شد، سایت جدید و منتظر نیاز دارد تبدیل به یک سایت واقعی شبکه شود. این فرآیند انتشار از طریق Job Queue به صورت ناهمزمان انجام می‌شود. فعال کردن این گزینه باعث می‌شود که انتشار دقیقاً در همان درخواست ثبت‌نام اتفاق بیفتد.
+  * **Tilasta wallafa shafi a lokaci guda:** Bayan abokin ciniki ya yi biyan kuɗin samfur a kan hanyar sadarwa, sabon shafin da ke jiran amincewa yana buƙatar a mayar da shi shafin hanyar sadarwa na gaske. Tsarin wallafawa yana faruwa ta hanyar Job Queue, ba a lokaci guda ba. Kunna wannan zaɓi don tilasta wallafawa ta faru a cikin buƙata ɗaya da rajistar.
 
-حالا بیایید ببینیم سایر گزینه‌هایی که هنوز برای فرآیند ورود و ثبت‌نام مرتبط هستند چه چیزهایی هستند. آن‌ها درست زیر **سایر گزینه‌ها (Other options)** در همان صفحه ورود و ثبت‌نام قرار دارند:
+Yanzu, bari mu ga wasu zaɓuɓɓuka da har yanzu suke da alaƙa da tsarin shiga da rajista. Suna kai tsaye ƙarƙashin **Sauran zaɓuɓɓuka** a kan wannan shafin Login & registration:
 
-  * **نقش پیش‌فرض (Default role):** این نقشی است که مشتریان شما پس از فرآیند ثبت‌نام روی وب‌سایت خود خواهند داشت.
+  * **Tsohuwar rawa:** Wannan ita ce rawar da abokan cinikinka za su samu a shafinsu bayan tsarin rajista.
 
-* **Fasahar Jumper (Enable Jumper):** Wannan yana ba da damar amfaniyar Jumper shortcut a cikin khuwan admin. Jumper tana ba masu gudanarwa damar su shiga cikin sauran manhajoji na Ultimate Multisite, abubuwan ne na wakar (network objects), da sauransu cikin sauri ba tare da yin bincike a kowane menu ba. Idan kuna son a yi hakan, ku yi ƙarawa (turn it off) idan kuna so a ɓoye wannan kayan sauyi tafiya mai sauri daga interface na admin.
+  * **Kunna Jumper:** Yana kunna gajeriyar hanyar Jumper a yankin gudanarwa. Jumper yana ba masu gudanarwa damar tsallakawa da sauri zuwa allon Ultimate Multisite, abubuwan hanyar sadarwa, da sauran wuraren da ake tallafawa ba tare da bincika kowanne menu ba. Kashe shi idan ka fi so ka ɓoye wannan kayan aikin kewaya da sauri daga fuskar gudanarwa.
 
-* **Ƙara masu amfani zuwa wurin gida:** Ba da wannan za ka ba damar ƙara wannan mai amfani zuwa wurin gida (main site) na wakar ku bayan an kammala tsarin shiga (signup process). Idan kuna ba da wannan damar, wata hanya ta saida **default role** (role na asali) ga waɗannan masu amfani a shafin ku za ta bayyana ne nan ƙasa.
+  * **Ƙara masu amfani zuwa babban shafi ma:** Kunna wannan zaɓi zai kuma ƙara mai amfani zuwa babban shafin hanyar sadarwarka bayan tsarin rajista. Idan ka kunna wannan zaɓi, zaɓi don saita **tsohuwar rawa** ta waɗannan masu amfani a shafinka zai kuma bayyana kai tsaye a ƙasa.
 
-* **Ba da damar kayan aiki da dama:** Ba da damar wannan zai ba masu amfani damar samun ayaka (accounts) a wuraren daban-daban na wakar ku tare da idan suna da imel ɗin gaba. Idan wannan damar tana lalata, abokan hulɗarka ba za su iya ƙirƙirar ayaka a shafuka daban-daban da ke aiki a cikin wakar ku tare da imel ɗin gaba.
+  * **Kunna asusu da yawa:** Ba masu amfani damar samun asusu a shafuka daban-daban na hanyar sadarwarka da adireshin email ɗaya. Idan wannan zaɓi a kashe yake, abokan cinikinka ba za su iya ƙirƙirar asusu a wasu shafukan yanar gizo da ke gudana a kan hanyar sadarwarka da adireshin email ɗaya ba.
 
-Kamar haka ne, waɗannan su ne kowane zaɓi da za ka iya gyara dangane da shiga (login) da kuma shiga (registration)! Kada ku manta a tsara ayyukan ku bayan an kammala gyarawa.
+Kuma waɗannan su ne duk zaɓuɓɓukan da suka shafi shiga da rajista da za ka iya keɓancewa! Kada ka manta ka adana saitunanka bayan ka gama gyara su.
 
-## Amfani da ƙirar shiga (registration forms) da dama:
+## Amfani da fom ɗin rajista da yawa: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 tana ba damar gyaran manhajar shiga (checkout form editor) wadda ta ba ka damar samar da kowane yawan manhajoji da kake so, tare da fildomawa daban-daban, kayan aiki da ake bayarwa, da sauransu.
+Ultimate Multisite 2.0 yana ba da editan fom ɗin checkout wanda ke ba ka damar ƙirƙirar fom da yawa yadda kake so, da filaye daban-daban, samfuran da ake bayarwa, da sauransu.
 
-Kowa daga cikin shafun shiga (login page) da shafin shiga (registration page) an haɗa su da shortcodes: **[wu_login_form]** a shafin shiga kuma **[wu_checkout]** ga shafin shiga. Za ka iya gyara shafin shiga ta ƙara ko samar da manhajoji na shiga (checkout forms).
+Duka shafukan shiga da rajista an saka su da shortcodes: **[wu_login_form]** a shafin shiga da**[wu_checkout]** don shafin rajista. Za ka iya ƙara keɓance shafin rajista ta hanyar gina ko ƙirƙirar fom ɗin checkout.
 
-Don samun wannan ƙwarewar, ku je menu na **Checkout Forms**, a gefen ƙasa (left side-bar).
+Don samun damar wannan fasali, je zuwa menu na **Checkout Forms**, a gefen hagu.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menu na Checkout Forms a cikin gefen gefe](/img/config/checkout-forms-list.png)
 
-A wannan shafin, za ka iya gani duk manhajoji na shiga da kake da su.
+A wannan shafi, za ka iya ganin duk fom ɗin checkout da kake da su.
 
-Idan kana so ka ƙara wadda ba ta wuce, kawai danna **Add Checkout Form** a mafi sama na shafi.
+Idan kana son ƙirƙirar sabo, kawai danna **Ƙara Checkout Form** a saman shafin.
 
-Tuna zaɓi ɗaya daga cikin waɗannan tsawon uku a matsayin farko: single step (mataki ɗaya), multi-step (matakai da yawa) ko blank (ba wani). Sannan, danna don **Tabbawa zuwa Editor**.
+Za ka iya zaɓar ɗaya daga cikin waɗannan zaɓuɓɓuka uku a matsayin wurin farawa: mataki guda, matakai da yawa ko fanko. Sannan, danna **Je zuwa Edita**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Ƙara Checkout Form da zaɓuɓɓukan mataki guda, matakai da yawa, ko fanko](/img/config/checkout-forms-list.png)
 
-Ko kuma, za ka iya gyara ko dubara waɗannan forms da kake da su ta hanyar danna kan waɗannan zaɓuɓɓuka a ƙasa sunan su. A nan ma za ka samu zaɓuɓɓukan sao ko shafi (shortcode) na form ɗin ko kuma shafa form ɗin.
+A madadin haka, za ka iya gyara ko kwafi fom ɗin da kake da su ta danna zaɓuɓɓukan da ke ƙasa da sunansa. A can, za ka kuma sami zaɓuɓɓukan kwafi shortcode na fom ɗin ko share fom ɗin.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Ayyukan shawagi na fom ɗin checkout tare da gyara, kwafi, da sharewa](/img/config/checkout-form-hover-actions.png)
 
-Idan ka zaɓi single step ko multi-step, form ɗin checkout zai shafi da matakan na asali don ya yi aiki. Sannan, idan kana so, za ka iya ƙara matakai masu yawa ga shi.
+Idan ka zaɓi mataki guda ko matakai da yawa, fom ɗin checkout zai riga ya kasance an cika shi da muhimman matakai domin ya yi aiki. Sannan, idan kana so, za ka iya ƙara masa ƙarin matakai.
 
-### Gyaran Checkout Form:
+### Gyara Checkout Form: {#editing-a-checkout-form}
 
-Kamar yadda muka ambata a baya, za ka iya samar da forms na checkout don bambancin ayyuka. A wannan misali za mu yi aiki kan form na rijista (registration form).
+Kamar yadda muka ambata a baya, za ka iya ƙirƙirar fom ɗin checkout don manufofi daban-daban. A wannan misali za mu yi aiki a kan fom ɗin rajista.
 
-Bayan ka tafiya zuwa editor na form ɗin checkout, ba shi wani magana (name) (wanda zai'urci ne kawai don amfani na gida) da slug (wanda ake amfani da shi don samar da shortcodes, misali).
+Bayan ka shiga editan fom ɗin checkout, ba fom ɗinka suna (wanda za a yi amfani da shi don tunani na ciki kawai) da slug (wanda ake amfani da shi don ƙirƙirar shortcakes, misali).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editan fom ɗin kammala saye tare da filayen suna da slug](/img/config/checkout-form-name-slug.png)
 
-Forms suna tsara da matakai da makamancin aiki (fields). Za ka iya ƙara sabon mataki ta hanyar danna kan **Add New Checkout Step**.
+Ana yin fom ne da matakai da filaye. Za ka iya ƙara sabon mataki ta danna **Ƙara Sabon Matakin Kammala Saye**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Maɓallin Ƙara Sabon Matakin Kammala Saye](/img/config/checkout-form-add-step.png)
 
-A farkon tab na modal window, ka cika abin da ake bukata a cikin matakin form ɗinka. Ka ba shi ID, magana (name) da bayani (description). Waɗannan abubuwa mafi yawa ana amfani da su ne don amfani na gida kawai.
+A shafin farko na taga modal, cika abubuwan da ke cikin matakin fom ɗinka. Ba shi ID, suna da bayanin kwatance. Ana yawan amfani da waɗannan abubuwa a ciki.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Shafin abun ciki na matakin kammala saye tare da ID, suna, da bayanin kwatance](/img/config/checkout-form-step-content.png)
 
-Na gaba, ka sanya bayanin matakin (visibility). Za ka zaɓi tsakanin **Always show** (Akawo a nuna), **Only show for logged in users** (Nuna kawai ga masu shiga), ko **Only show for guests** (Nuna kawai ga abokan hoto/guests).
+Na gaba, saita ganuwar matakin. Za ka iya zaɓa tsakanin **A nuna koyaushe** , **A nuna kawai ga masu amfani da suka shiga** ko **A nuna kawai ga baƙi**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Zaɓuɓɓukan ganuwar matakin kammala saye](/img/config/checkout-form-step-visibility.png)
 
-باید حالا تنظیمات سبک مرحله (step style) رو انجام بدید. اینها فیلدهای اختیاری هستن.
+A ƙarshe, daidaita salon matakin. Waɗannan filaye ne na zaɓi.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Daidaita salon matakin kammala saye](/img/config/checkout-form-step-style.png)
 
-حالا وقت اضافه کردن فیلدها به اولین مرحله‌مون رسیده. فقط روی **Add New Field** کلیک کنید و نوع بخشی که می‌خواید رو انتخاب کنید.
+Yanzu, lokaci ya yi da za mu ƙara filaye zuwa matakinmu na farko. Kawai danna **Ƙara Sabon Fili** kuma zaɓi nau’in sashe da kake so.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Maɓallin Ƙara Sabon Fili](/img/config/checkout-form-add-field-button.png)![Jerin zaɓin nau’in fili](/img/config/checkout-form-field-type-dropdown.png)
 
-هر فیلدی پارامترهای متفاوتی داره که باید پر بشن. برای این ورود اول، ما فیلد **Username** رو انتخاب می‌کنیم.
+Kowane fili yana da sigogi daban-daban da za a cika. Don wannan shigarwar ta farko, za mu zaɓi filin **Sunan mai amfani**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Daidaita filin Sunan mai amfani](/img/config/checkout-form-username-content.png)![Sigogin filin Sunan mai amfani](/img/config/checkout-form-username-visibility.png)![Ƙarin saitunan filin Sunan mai amfani](/img/config/checkout-form-username-style.png)
 
-می‌تونید هر تعداد مرحله و فیلدی که نیاز دارید اضافه کنید. برای نمایش محصولاتتون به مشتری‌ها تا یکی رو انتخاب کنن، از فیلد **Pricing Table** استفاده کنید. اگر می‌خواید اجازه بدید مشتریان شما یک قالب (template) رو انتخاب کنند، فیلد **Template Selection** رو اضافه کنید و همینطور.
+Za ka iya ƙara matakai da filaye gwargwadon bukatarka. Don nuna kayayyakinka ga kwastomominka su zaɓi ɗaya, yi amfani da filin Teburin Farashi. Idan kana son barin abokan cinikinka su zaɓi samfuri, ƙara filin Zaɓin Samfuri. Da sauransu.
 
-_**توجه:** اگر بعد از ساخت فرم تسویه حساب خود محصولی ایجاد کنید، باید آن محصول را در بخش جدول قیمت‌گذاری (Pricing table section) اضافه کنید. اگر اضافه نکنید، محصول برای مشتریان شما در صفحه ثبت نام نمایش داده نخواهد شد._
+![Editan fom ɗin kammala saye tare da filin zaɓin samfuri](/img/config/checkout-form-with-template-field.png)
 
-_**توجه ۲:** username، email، password، site title، site URL، order summary، payment و submit button فیلدهای اجباری برای ساخت یک فرم تسویه حساب هستند._
+_**Lura:** Idan ka ƙirƙiri kaya bayan ƙirƙirar fom ɗin kammala sayenka, za ka buƙaci ƙara kayan a sashen Teburin farashi. Idan ba ka ƙara shi ba, kayan ba zai bayyana ga kwastomominka a shafin rajista ba._
 
-در حالی که روی فرم تسویه حساب خود کار می‌کنید، همیشه می‌توانید از دکمه **Preview** استفاده کنید تا ببینید مشتریان شما فرم را چگونه خواهند دید. همچنین می‌توانید بین مشاهده به عنوان کاربر موجود یا بازدیدکننده جابه‌جا شوید.
+_**Lura 2:** sunan mai amfani, imel, kalmar sirri, taken shafi, URL na shafi, taƙaitaccen oda, biyan kuɗi, da maɓallin aikawa filaye ne dole don ƙirƙirar fom ɗin kammala saye._
 
-![Daga babban bayanan wajen samun shiga (checkout form preview)](/img/config/checkout-form-preview-button.png)![Bincike wajen samun shiga a matsayin ziyarar ko amfan da suka samu](/img/config/checkout-form-preview-modal.png)
+Yayin da kake aiki a kan fom ɗin kammala sayenka, koyaushe za ka iya amfani da maɓallin Dubawa don ganin yadda abokan cinikinka za su ga fom ɗin. Haka kuma za ka iya sauyawa tsakanin dubawa a matsayin mai amfani da ke akwai ko baƙo.
 
-A ƙarshe, a cikin **Advanced Options** (Zaɓuwar Girma Mai Girma), za ka iya tsara saƙon da zai bayyana a shafin **Thank You**, ƙara ƙananan rubutu don bin hanyoyin samun kuɗi (conversions tracking), ƙara CSS na musamman ga wajen samun shiga, ko kuma baka ba shi ga wasu ƙasashe.
+![Maɓallin Dubawa a kan editan fom ɗin kammala saye](/img/config/checkout-form-preview-button.png)![Duban fom ɗin kammala saye a matsayin baƙo ko mai amfani da ke akwai](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options tare da shafin Thank You, bin hanyoyin samun kuɗi, da CSS na musamman](/img/config/checkout-form-advanced.png)
+A ƙarshe, a kan **Zaɓuɓɓukan Ci-gaba** za ka iya daidaita saƙon shafin **Na Gode**, ƙara snippets don bibiyar sauyawa, ƙara CSS na musamman zuwa fom ɗin kammala sayenka ko takaita shi ga wasu ƙasashe.
 
-Zaka iya samarwa ko hana wajen samun shiga ta kai tsaye ta hanyar canza wannan zaɓin a sassa mai yauke (right column), ko kuma ka cire shi daka ba shi gaba ɗaya.
+![Zaɓuɓɓukan Ci-gaba tare da shafin Na Gode, bibiyar sauyawa, da CSS na musamman](/img/config/checkout-form-advanced.png)
 
-![Wannan babban maida da zaɓin cire wajen samun shiga](/img/config/checkout-form-active.png)
+Haka kuma za ka iya kunna ko kashe fom ɗin kammala sayenka da hannu ta kunna ko kashe wannan zaɓin a ginshiƙin dama, ko share fom ɗin har abada.
 
-Kada manta ka ajiye wajen samun shigarka!
+![Sauya kunnawa da zaɓin sharewa don fom ɗin kammala saye](/img/config/checkout-form-active.png)
 
-![Babban maida na ajiya wajen samun shiga (Save Checkout Form button)](/img/config/checkout-form-save.png)
+Kar ka manta ka adana fom ɗin kammala sayenka!
 
-Don samun shortcode na wajen samun shiga, danna kan **Generate Shortcode** (Samun Shortcode) kuma ka ɗau kayan aiki da aka nuna a cikin window na modal.
+![Maɓallin Adana Fom ɗin Kammala Saye](/img/config/checkout-form-save.png)
 
-![Modal na samar da shortcode tare da shortcode don ajiya](/img/config/checkout-form-editor.png)
+Don samun shortcode na fom ɗinka danna **Samar da Shortcode** kuma kwafi sakamakon da aka nuna a taga modal.
 
-_**Gargaɗi:** Dole ka ƙara wannan shortcode a shafin rikodinka (registration page) domin a iya saka wannan wajen samun shiga a shi._
+![Modal na Samar da Shortcode tare da shortcode da za a kwafa](/img/config/checkout-form-editor.png)
 
-## Samun zaɓuwar kayayyaki da mallaka (templates) ta hanyar URL parameters:
+_**Lura:** Za ka buƙaci ƙara wannan shortcode zuwa shafin rajistarka domin a ƙara wannan fom ɗin kammala saye a kansa._
 
-Idan kana so ka ƙirƙira jadawalin farashin musamman ga kayayyakin ka kuma ka gina (pre-select) wajen samun shiga wani kayayyaki ko template da abokin ciniki ya zaɓa daga jadawalin farashinka ko shafin templates, za ka iya amfani da URL parameters don wannan.
+## Zaɓar kayayyaki da samfura tun da fari ta hanyar sigogin URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Don tsarin shiga (plans):**
+Idan kana son ƙirƙirar teburin farashi na musamman don kayayyakinka kuma ka zaɓi a gaba a kan fom ɗin kammala saye kayan ko samfurin da kwastomanka ya zaɓa daga teburin farashinka ko shafin samfura, za ka iya amfani da sigogin URL don wannan.
 
-Danna zuwa **Ultimate Multisite > Products > Select a plan**. Za ka ga babban maida na **Click to copy Shareable Link** a mafi sama na shafi. Wannan shi ne link da za ka iya amfani da shi don gina wajen samun shiga wani tsarin shiga (plan) na musamman.
+### **Don tsare-tsare:** {#for-plans}
 
-![Shafin kayayyaki tare da babban maida na mallaka](/img/config/products-list.png)
+Je zuwa **Ultimate Multisite > Kayayyaki > Zaɓi tsari**. Ya kamata ka ga maɓallin **Danna don kwafa Haɗin da Za a Iya Rabawa** a saman shafin. Wannan shi ne haɗin da za ka iya amfani da shi don zaɓar wannan takamaiman tsari a gaba a kan fom ɗin kammala sayenka.
 
-Gargaɗi cewa wannan link na raba shi ne kawai don **Plans** (tsarin kuɗi). Ba za ka iya amfani da link na raba don packages ko sabbin ayyuka ba.
+![Shafin kaya tare da maɓallin haɗin da za a iya rabawa](/img/config/products-list.png)
 
-### Don templates:
+Ka lura cewa wannan haɗin da za a iya rabawa yana aiki ne kawai ga **Tsare-tsare**. Ba za ka iya amfani da haɗin da za a iya rabawa don fakitoci ko ayyuka ba.
 
-Idan kana so ka zaɓi site templates a cikin wajen shiga checkout ɗinka, za ka iya amfani da parameter ɗin: **?template_id=X** a URL ɗin shigarwa (registration page) ɗinka. Dole ne a mayar da "X" da **lambale na site template**. Don samun wannan lambalin, tafiya zuwa **Ultimate Multisite > Sites**.
+### Don samfura: {#for-templates}
 
-Danna kan **Manage** a ƙasa na site template da kake so ka yi amfani da shi. Za ka ga lambar SITE ID. Ka yi amfani da wannan lambar kawai don wannan site template na musamman ya zama mai zaɓi a wajen shiga checkout ɗinka. A wannan yanayin, parameter ɗin URL zai kasance **?template_id=2**.
+Idan kana son zaɓar samfuran shafi a gaba a kan fom ɗin kammala sayenka, za ka iya amfani da sigar: **?template_id=X** a kan URL na shafin rajistarka. Ana buƙatar maye gurbin "X" da **lambar ID ta samfurin shafi**. Don samun wannan lamba, je zuwa **Ultimate Multisite > Shafuka**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Danna **Sarrafa** kai tsaye a ƙasa da samfurin shafin da kake son amfani da shi. Za ka ga lambar SITE ID. Kawai yi amfani da wannan lamba don wannan takamaiman samfurin shafi don a zaɓe shi a gaba a kan fom ɗin kammala sayenka. A misalinmu a nan, sigar URL za ta kasance **?template_id=2**.
 
-Ina gaya maka cewa website na gida (network website) shine [**www.mynetwork.com**](http://www.mynetwork.com) kuma wajen shigarwa da wajen checkout ɗinmu yana kan hanyar **/register**. Duk URL-in da ya haɗa wannan site template mai zaɓi zai yi maka kamar haka: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Jerin shafuka da ke nuna ID na samfurin shafi](/img/config/site-templates-list.png)
 
-Kuma idan kana so ka zaɓi koyaushe (products) da templates a wajen shiga checkout ɗinka, duka abin da kake bukata shi ne ita ce a dubawa link na raba plan kuma ka saka parameter na template a ƙarshensa. Zai yi kamar haka: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+A ce gidan yanar gizon network ɗinmu shi ne [**www.mynetwork.com**](http://www.mynetwork.com) kuma shafin rajistarmu tare da fom ɗin kammala sayenmu yana kan shafin **/register**. Cikakken URL tare da wannan samfurin shafi da aka riga aka zaɓa zai yi kama da [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Kuma idan kana so, za ka iya zaɓar kayayyaki da samfura dukansu a gaba zuwa fom ɗin kammala sayenka. Abin da kawai kake buƙatar yi shi ne kwafa haɗin da za a iya rabawa na tsarin sannan ka manna sigar samfurin a ƙarshe. Zai yi kama da [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

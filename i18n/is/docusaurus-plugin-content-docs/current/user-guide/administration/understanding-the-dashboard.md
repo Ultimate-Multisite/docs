@@ -3,31 +3,31 @@ title: Að skilja styrkustöðvaldið
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Að skilja Ultimate Multisite Dashboard
+# Að skilja Ultimate Multisite Dashboard {#understanding-the-ultimate-multisite-dashboard}
 
 Fyrir að við fara í flókiðar uppsetningarpennu og að nýtingarinn á Ultimate Multisite, verðum fyrst að sjá á dashboard-inn.
 
 Þ eins og mörgum WordPress pluginum skapar Ultimate Multisite menulinjun í netverkinu með titlinn **Ultimate Multisite** og fleiri undirmenulinjur neðan þess.
 
-## Viðvirkir element (Widgets) í Netverksdashboard
+## Viðvirkir element (Widgets) í Netverksdashboard {#network-dashboard-widgets}
 
 Ultimate Multisite innleidir nokkrar hlutverksskil (widgets) í netverksdashboard. Þetta dashboard finnst með því að fara yfir **My Sites → Network Admin → Dashboard**. Hlutverksskilin eru sniðnir til að veita einfaldan aðgang að upplýsingum og almennum aðgerðum fyrir netverksstjórnann.
 
 ![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-### Fyrirspurnar (First Steps)
+### Fyrirspurnar (First Steps) {#first-steps}
 
 ![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
 Þessi hlutverksskil sýnist á nýsköpunaruppsetningu Ultimate Multisite og minnir netverksstjórnann um að fullfða vöxtuferli eins og uppsetning fjármagnarsýnis og sköpun testréttaka.
 
-### Samantekt (Summary)
+### Samantekt (Summary) {#summary}
 
 ![Summary widget](/img/admin/network-dashboard-summary.png)
 
 Samantektuhlutverksskil minnist um fjölda skráningar og inntekur þeirra fyrir daginn. MRR (Monthly Recurring Revenue) sýnir áætlaðar samantektar yfir viðskiptavli með inntekjandi lánum.
 
-### Aðgerðarstraumur (Activity Stream)
+### Aðgerðarstraumur (Activity Stream) {#activity-stream}
 
 ![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Samantektuhlutverksskil minnist um fjölda skráningar og inntekur þeirra fyrir
 
 Vinsandi skoðaðu Aðgerðarstrauma-hlutverksskila í dokumentinu fyrir nánari skjalði.
 
-### Nu
+### Nu {#right-now}
 
 ![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
 Þessi hlutli viðbót er viðmiðar fyrir kortlegan samantekt um notendur og staðir í nýlan. Leikni hlutum yfir á toppi gerir það mögulega að skapa nýsta staði eða notendur með einu klikkun.
 
-### Niðurstöður og viðræður (News and Discussions)
+### Niðurstöður og viðræður (News and Discussions) {#news-and-discussions}
 
 ![Niðurstöður og viðræður viðmiðar](/img/admin/network-dashboard-news.png)
 
 Þessi viðbót hentar út og sýnir nýjustu niðurstöður Ultimate Multisite. Fátt á þessum viðbótum til að fylgjast með uppfærðum, mikilvægum villum og öryggisstefnum.
 
-## Ultimate Multisite Dashboard (Stjórnistaðli)
+## Ultimate Multisite Dashboard (Stjórnistaðli) {#ultimate-multisite-dashboard}
 
 Þar sem kortlegan stjórnistaðlis sýnir heildar upplýsingar um nýlan, sýnir Ultimate Multisite dashboardur (sem er á toppníðum menyins fyrir Ultimate Multisite) upplýsingar um þjónustuna.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Vöxt í mánuðarlegum fasteinkum (Monthly Recurring Revenue Growth)
+### Vöxt í mánuðarlegum fasteinkum (Monthly Recurring Revenue Growth) {#monthly-recurring-revenue-growth}
 
 MRR (Monthly Recurring Revenue) myndir mánuðlega skiptingu fasteinka yfir 12-mána kalendraríki.
 
@@ -61,7 +61,7 @@ MRR (Monthly Recurring Revenue) myndir mánuðlega skiptingu fasteinka yfir 12-m
 
 Ný fasteink er fylgt í blá, en afhendingar eru sýndar í raunni (raud).
 
-### Stöðu fyrir daga (Date-range Support)
+### Stöðu fyrir daga (Date-range Support) {#date-range-support}
 
 Á hætti þess að fjöldi viðskiptavina og virkni myndast óþarfa. Stöðu fyrir daga sem er byggð inn í dashboardinn leyfir netverslunarmann að foku á að sjá aðeins upplýsingum og tímaíki sem eru nauðsynlegar.
 

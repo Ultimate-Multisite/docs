@@ -4,13 +4,13 @@ title: ફિલ્ટર - wu_gococardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gocardless_cleanup_pending_site
+# Filter: wu_gocardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 આ ફિલ્ટર રદ કરાયેલ GoCardless મેમ્બરશિપ માટેની કોઈ અનાથ (orphaned) પેન્ડિંગ સાઇટને ડિલીટ કરતા પહેલાં ચાલે છે.
 
 ડિલીશન અટકાવવા માટે આ ફિલ્ટરમાં `false` પરત કરો.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 | $membership | `\WP_Ultimo\Models\Membership` | રદ કરાયેલ મેમ્બરશિપ. |
 | $old_status | `string` | રદ થવાના પહેલાંની સ્થિતિ. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) માં લાઇન 1086 પર વ્યાખ્યાયિત છે.

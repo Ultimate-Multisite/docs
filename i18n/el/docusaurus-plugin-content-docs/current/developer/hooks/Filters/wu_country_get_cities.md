@@ -4,11 +4,11 @@ title: Φίλτρο - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Επιστρέφει τη λίστα των πόλεων για μια πολιτεία σε μια χώρα.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Δύο-γράμματο ISO κωδικό για την πολιτεία. |
 | $current_country | `\WP_Ultimo\Country\Country` | Αντίγραφο της τρέχουσας κλάσης. |
 
-### Από
+### Από {#since}
 
 - 2.0.11
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) στην γραμμή 146
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Η φιλτραρισμένη λίστα των πολιτειών.

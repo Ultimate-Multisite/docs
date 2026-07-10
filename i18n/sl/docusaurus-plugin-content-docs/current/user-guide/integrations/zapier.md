@@ -3,7 +3,7 @@ title: Integracija Zapiera
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integracija Ultimate Multisite z Zapierjem
+# Integracija Ultimate Multisite z Zapierjem {#integrating-ultimate-multisite-with-zapier}
 
 V en od članikov smo pogovorili o [Webhooks](webhooks.md) in tem, kako jih uporabiti za integracijo z tretjim aplikacijami.
 
@@ -15,7 +15,7 @@ Lahko ustvarjate **Trigere**, ki se sprožajo, ko se zgodijo dogodki na vašeta 
 
 To je mogoče, ker so **trigeri in akcije Zapierja za Ultimate Multisite** napremedo podprtena [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kako začeti
+## Kako začeti {#how-to-start}
 
 Prvi korak je iskanje Ultimate Multisite v seznamu aplikacij Zapierja. Alternativno lahko kliknete na [to povezavo](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Na polje URL vnesite vaš celoten omrežni URL, vključno z protokolom (HTTP ali
 
 Kliknite na gumb **Yes, Continue** (Da, nadaljuj), da preidete na naslednji korak. Če vse deluje kot načrtujete novo povezano račun! Kliknite na **Continue** (Nadaljuj), da ustvarite novi trigger.
 
-## Kako ustvariti novi Trigger
+## Kako ustvariti novi Trigger {#how-to-create-a-new-trigger}
 
 Zdaj ko je vaš račun povezan, lahko vidite na voljo spremembe (events). Za to tutorial izberemo spremembo **payment_received**.
 
@@ -67,7 +67,7 @@ Na tem koraku Zapier preveri, ali lahko vaš Zap **vneseta specifično podatke (
 
 V našem tutorialu je test bil uspešno končan in je vrnil primer informacije o podatkih. Ta primer informacija bo koristil za usmerjanje nas pri ustvarjanju actionov. Vaš trigger je zdaj ustvarjen in je pripravljen za povezavo z drugimi aplikacijami.
 
-## Kako ustvariti Actions
+## Kako ustvariti Actions {#how-to-create-actions}
 
 Actions uporabljajo informacije iz drugih triggerjev, da ustvarjajo nove vnosne podatke v vaš omrežje.
 
@@ -79,7 +79,7 @@ Na naslednjem koraku boste ali ustvarili svojo avtentikacijo, kot smo to naredil
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Ustavitev Actiona (Setting up the Action)
+### Ustavitev Actiona (Setting up the Action) {#setting-up-the-action}
 
 To je **glavni korak actiona**, kjer so stvari malo drugačne. Prva informacija, ki boste izbrali, je **Item**. Item je **model informacij** vašega omrežja, kot sta **Customers (Klienci), Payments (Plačilnosti), Sites (Site), Emails (Pošiljke)** in drugi.
 

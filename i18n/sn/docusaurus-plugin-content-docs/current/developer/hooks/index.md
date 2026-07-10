@@ -1,0 +1,194 @@
+---
+title: Referensi yeHooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referensi yeHooks {#hooks-reference}
+
+Gwaro rakagadzirwa otomatiki rezviito zvese **59** uye mafirita **118** muUltimate Multisite.
+
+## Zviito {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Inoitika pamberi pekudzorerwa kwekusimbisa kuzivikanwa.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Inoitika pakarepo cookie yekusimbisa kuzivikanwa isati yaiswa.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Inoitika pakarepo cookie yekusimbisa kuzivikanwa kwemunhu apinda isati yaiswa.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Bvumira vagadziri kuwedzera kubatanidzwa kwavo kwevanopa host kuburikidza nema plugin ewp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Inotanga kana zvese zvinotsamira pazvo zvaiswa
+- [wu_activation](./Actions/wu_activation) — Rega zvimwe zvikamu zve plugin zvibatanidze maitiro azvo ekushanda
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Bvumira vagadziri ve plugin kubatanidza mabasa mushure mekunge mushandisi kana super admin achinja template yesaiti
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Mune dzimwe nguva, tichada kurodha simba rekuwedzera kuti tibate zviito.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Inoitika pamberi pekugadziriswa kwechikumbiro chekutsvaga.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Bvumira vagadziri kuita shanduko dzekuwedzera ku checkout object.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Bvumira vagadziri kuita shanduko dzekuwedzera ku checkout object.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Inoitika pamberi pekunge field yawedzerwa ku checkout form.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Bvumira vagadziri kutanga hooks dzekuwedzera.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Tisati tagadzirisa checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Inoitika mushure mekunge odha ye checkout yanyatsounganidzwa.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Bvumira vagadziri ve plugin kuwedzera widgets kuNetwork Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Bvumira vagadziri ve plugin kuwedzera widgets kuNetwork Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Rega zvimwe zvikamu zve plugin zvibatanidze maitiro azvo ekumisa kushanda
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Bvumira vagadziri ve plugin kuwedzera zviito kunzira yekudzima
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Inoitika kana domain yava domain huru yesaiti.
+- [wu_domain_created](./Actions/wu_domain_created) — Inotanga kana mapping yedomain itsva yawedzerwa.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Yaitwa mushure mekunge core Domain Mapping yedu yarodhiwa
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Mamwe ma plugin achachengeta URL mapping isati yashanda kana achavaka maURL nenzira yakasiyana isingabatanidzwi o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Bvumira vagadziri kubatanidza mushure mekunge kopi yesaiti yaitika.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Bvumira vagadziri ve plugin kuwedzera hooks dzekuwedzera
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook yekuchenesa kwekuwedzera
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Inoitika pamberi pekubata chikumbiro che modal yekuwedzera domain itsva.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Bvumira vagadziri ve plugin kuchengetedza meta data nenzira dzakasiyana kana vachida.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Bvumira vagadziri ve plugin kuchengetedza user meta data nenzira dzakasiyana kana vachida.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Inoitika kana token ye magic link isiri kushanda yasangana nayo.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Inoitika mushure mekunge mushandisi apinda kuburikidza ne magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Bvumira vagadziri ve plugin kuita zvimwe zvinhu kana mutengi awedzerwa.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Inoitika mushure mekunge kugona kweMCP kwanyoreswa kune entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Inoitika mushure mekunge MCP adapter yatangiswa.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Inotanga mushure mekunge unhu hwenhengo hwaregedzwa.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Inotanga mushure mekuvandudzwa kweunhu hwenhengo.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Inotanga usati unhu hwenhengo hwaregedzwa.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Inotanga pamberi pekuvandudzwa kweunhu hwenhengo.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Inoitika mushure mekunge object yachengetwa mudhatabhesi.
+- [wu_page_added](./Actions/wu_page_added) — Bvumira vagadziri ve plugin kumhanyisa zvinhu zvekuwedzera kana mapeji anyoreswa.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Bvumira vagadziri ve plugin kuwedzera zvirimo zvekuwedzera mushure mekunge tadhinda peji
+- [wu_page_before_render](./Actions/wu_page_before_render) — Bvumira vagadziri ve plugin kuwedzera zvirimo zvekuwedzera tisati tadhinda peji.
+- [wu_page_load](./Actions/wu_page_load) — Bvumira vagadziri ve plugin kuwedzera hooks dzekuwedzera kumapeji edu.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Bvumira vagadziri ve plugin kuwedzera zvirimo zvekuwedzera mushure mekunge tadhinda peji
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Bvumira vagadziri ve plugin kuwedzera zvirimo zvekuwedzera tisati tadhinda peji.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Bvumira vagadziri ve plugin kuwedzera hooks dzekuwedzera kumapeji edu.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Inoitika mushure mekunge widgets dzanyoreswa kupeji rino.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Inoitika kuti ibvumire addons kubatanidza capability modules kune integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Inoitika kuti ibvumire integrations kuzvinyoresa.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Bvumira nzira dzekuwedzera kuti dzinyoreswe.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Bvumira vagadziri veplugin kuwedzera zviito kuprocess yekuchengetedza
+- [wu_site_created](./Actions/wu_site_created) — Inoitika mushure mekunge saiti yagadzirwa kekutanga.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Bvumira vagadziri veplugin kuwedzera hooks dzokuwedzera, kana zvichidiwa.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Inomhanya kana iri mukati mecontext ye template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Inotangisa hook yeku enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Inoitika mushure mekunge object yachengetwa mudatabase.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Inoitika mushure mekunge object yachengetwa mudatabase.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Inoitika mushure mekunge object yachengetwa mudatabase.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Bvumira vagadziri veplugin kuwedzera zviito kuprocess yekuvhura.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Inosefa nguva yenguva yekupera kwecookie yekusimbisa.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Inosefa hurongwa hwekutungamirira patsva hwekusimbisa.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Inodzokorora WP Filter yepakutanga pano, kuitira kunyatsochengetedza.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Bvumira vagadziri veplugin kusefa URL inoshandiswa mu previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Inosefa kana auth cookie ichifanira kungotumirwa chete pamusoro peHTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Inosefa kana kushandisa kutungamirira patsva kwekusimbisa kwakachengeteka.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Inosefa kana cookie yemunhu apinda ichifanira kungotumirwa chete pamusoro peHTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Inobvumira kudzivirira auth cookies kuti dzisatotumirwa kumutengi.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Seta URL yekutungamirira patsva.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Wedzera nhanho dzokuwedzera kuburikidza nemafilters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Bvumira vagadziri veplugin kuwedzera variable yekuwedzera kumamiriro ekurendera pasi rose.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Bvumira vagadziri kupfupisa cheki iyi.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Inosefa fields dze modal yekuwedzera domain itsva.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Bvumira vagadziri kuita shanduko ku line item yemubhadharo we setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Bvumira vagadziri kusefa zviziviso zveadmin zvakawedzerwa neUltimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Sefa mushure mekunge zvachinjwa.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Zvino, tinobata nemhando dzose.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Bvumira vagadziri veplugin kupfupisa miganhu.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Inosefa kana mubhadharo we signup uchifanira kushandiswa kana kwete.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Sefa api arguments dzepakutanga.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Bvumira vagadziri veplugin kusefa billing address fields.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Bvumira vagadziri kupfuura output uye kuseta itsva
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Bvumira vagadziri kupfuura code yekubvisa current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Inosefa total ye"mari inodzokororwa".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Sefa total ye"mari yekutanga".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Sefa total ye"mari yekutanga".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Bvumira vagadziri veplugin kupindira muukoshi hwecredit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Inosefa shared checkout-form base domains dzisingafaniri kuva mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs edu ekuwedzera new field templates ano hook-a muno.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs edu ekuwedzera new field types ano hook-a muno.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Sefa mameseji ezvikanganiso.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Bvumira vagadziri kupfuura cheki kana field ichizvitumira yega.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Bvumira vagadziri veplugin kuwedzera aliases dzakagadzirirwa mu form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Bvumira vagadziri veplugin kusefa validation rules.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Bvisa Params dzisingadiwi.
+- [wu_contains_element](./Filters/wu_contains_element) — Bvumira vagadziri kuchinja zvabuda pakutsvaga kwekutanga.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Bvumira host providers kuisa constant nenzira yakasiyana.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Inodzosa zita rakanaka rezvikamu zvehutongi hwenyika.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Inodzosa rondedzero yemaguta estate munyika.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Inodzosa rondedzero yematunhu enyika iyi.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Bvumira vagadziri kugadzirisa maitiro ekutanga uye kuseta mutengi wazvino nenzira yakasiyana.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Bvumira vagadziri kugadzirisa maitiro ekutanga uye kuseta membership yazvino nenzira yakasiyana.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Bvumira vagadziri kugadzirisa maitiro ekutanga uye kuseta site yazvino nenzira yakasiyana.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Bvumira vagadziri kugadzirisa parameters dzeURL yekutonga site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Bvumira vagadziri veplugin kusefa links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Bvumira vagadziri veplugin kuwedzera macheki matsva kuitira kutsanangura zvabuda.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Tingangoda kuwedzera mabhuroko ekuwedzera gare gare.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Inowedzera filter yakajairika kubvumira vagadziri kuwedzera parser iyi kuti ibate builders kana plugins ekuwedzera.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Sefa kana kumanikidza mitemo yepassword yekuwedzera.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Sefa username yemutengi yakagadzirwa.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Bvumira vagadziri veplugin kusefa pre-sets dzepeji recheckout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Bvumira vagadziri kuwedzera maslug matsva emafomu kuti vadarike maitiro aya.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Bvumira vagadziri nemaadd-ons kuwedzera matanho matsva ekutamisa
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Ona zvimwe nezve filter iyi pazasi, pamethod imwechete iyi.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Bvumira vagadziri kusarudza kuti ndedzipi mhando dzemapost dzinofanira kuratidzwa.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Dzosa Lines, zvinosefeka
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Bvumira vagadziri kugadzirisa mapeya edomain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Inosefa zvikamu zvewizard zvekugadzirisa hosting integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Inosefa fields dziri pafomu. Fomu rinozivikanwa neID iri muzita refilter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Sefa mhando dzezvigadzirwa dzine macycle ekubhadharisa akazvimirira.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Bvumira vagadziri veplugin kumanikidza mamiriro akapihwa eAPI.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Bvumira vagadziri veplugin kuwedzera bvunzo dzekuwedzera dzedevelopment mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Bvumira vagadziri veplugin kumanikidza mamiriro akapihwa eMCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Nezvikonzero zvekuchengeteka, tinoganhurira huwandu hwezviito zviripo zvekubatanidzwa nazvo. Filter iyi inobvumira vagadziri kuwedzera
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Inotarisa kana mhando yepost yakapihwa ichibvumidzwa paplan iyi Bvumira vagadziri veplugin kusefa kukosha kunodzoserwa
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Sefa kana kumanikidza kuongororwa kwekero yeIP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Sefa kana kumanikidza kuongororwa kweuser agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Sefa URL yemagic link yakagadzirwa.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Sefa kana magic links akagoneswa.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Inosefa URL yekuredirect mushure mekuita domain kuti ive primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Gadzira runyorwa rwekusiiwa rwemaparameter anodzivirira auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter yekutsiva sarudzo yekusanganisa MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Inosefa zuva rekupera rakaverengwa.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Inosefa zuva rekupera rakaverengwa kuti rigadziriswe mushure mekuvandudzwa.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Bvumira vagadziri kuwedzera maslug matsva emafomu ekuvandudza.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Sefa urefu hushoma hwepassword.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Sefa kusimba kushoma kwepassword kunodiwa (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Bvumira vagadziri veplugin, uye isu pachedu, kuwedzera malink ezviito kumapeji edu ekugadzirisa
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Sefa kana kuda mavara madiki mumapassword.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Sefa kana kuda manhamba mumapassword.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Sefa kana kuda mavara akakosha mumapassword.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Sefa kana kuda mavara makuru mumapassword.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Bvumira mushandisi kuchinja meseji pamusoro pemabhadharo akamirira.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Sefa mhando dzezvigadzirwa dzinofanira kutorwa seplans.
+- [wu_post_count](./Filters/wu_post_count) — Bvumira vagadziri veplugin kuchinja huwandu hwese
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Bvumira vagadziri veplugin kuchinja kuti ndeipi status yepost inofanira kuverengwa Nekusarudzika, mapost akaburitswa neakavanzika anoverengwa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Inosefa data reobject risati rachengetwa mudatabase.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Bvumira vagadziri kusefa settings isati yachengetwa neUltimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Inosefa kana zvichibvumidzwa kuenderera mberi nechikumbiro kana kwete.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Inosefa kana zvichibvumidzwa kuenderera mberi nechikumbiro kana kwete.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Inosefa kana zvichibvumidzwa kuenderera nechikumbiro kana kwete.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Inosefa kana zvichibvumidzwa kuenderera nechikumbiro kana kwete.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Inosefa kana zvichibvumidzwa kuenderera nechikumbiro kana kwete.
+- [wu_return_url](./Filters/wu_return_url) — Inobvumira vagadziri kuchinja gateway return URL inoshandiswa mushure memaitiro ekubhadhara.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Inobvumira vagadziri veplugin kuwedzera mamwe mabasa emamodeli ekutsvaga.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Inobvumira vagadziri kuwedzera mamwe matanho e setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Inosefa kana Ultimate Multisite ichifanira kugadzira rekodhi redomain resaiti ichangobva kugadzirwa.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Inobvumira vagadziri kupfupisa redirection, ichidzivirira kuti isaitike.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Inobvumira kunyora patsva handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Sefa zviito zvebulk zviripo kumasaiti.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sefa kuchinja kukosha kwe get pluginssites mukati menetwork.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Gonesa/dzima kugona kwecross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — Inosefa maSSO URLs akagadzirwa asati adzorerwa kuzviito zvevatengi zve cross-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Sefa data reStripe Subscription. Rinogona kutsiva success_url kana cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Inosefa nharo dze payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Inosefa ID yeplan yekuongorora. Kana izvi zviripo, kunyoresa kutsva kuchashandisa plan iyi.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Inosefa ID yechigadzirwa chekuongorora. Kana izvi zviripo, kunyoresa kutsva kuchashandisa chigadzirwa ichi.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Inosefa kukosha kwe idempotency_key kunotumirwa nesarudzo dzeStripe charge.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Inosefa rekodhi reunhengo rakabatana ne webhook iyi.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Inosefa data meta risati raitwa serialized kuti richengetwe mudatabase.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Inosefa data rechinhu risati rachengetwa mudatabase.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Inobvumira vagadziri kuchinja upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Sarudza kana mapping ichifanira kushandiswa
+- [wu_username_from_email](./Filters/wu_username_from_email) — Sefa username yemutengi mutsva.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Inobvumira vagadziri kuchinja meseji pamusoro pemuganhu wevashandisi veunhengo
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Inobvumira vagadziri kuwedzera mamwe mafolder kurondedzero inotsiviwa.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Inosefa kuti ndeapi sub_commands akagoneswa kune chinhu ichi.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Tinoongorora mapatani matatu patinenge tichiedza kuona kwatinogona kupinza maconstants edu:

@@ -4,11 +4,11 @@ title: Kichujio - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 Filtra jina la mtumiaji mpya la mteja.
 
-## Viparametrika
+## Viparametrika {#parameters}
 
 | Name | Type | Maelezo |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtra jina la mtumiaji mpya la mteja.
 | $new_user_args | `array` | Orodha ya hoja za mtumiaji mpya, inaweza kujumuisha majina ya kwanza na ya mwisho. |
 | $suffix | `string` | Ongeza neno (string) kwenye jina la mtumiaji ili liwe la kipekee. |
 
-### Tangu
+### Tangu {#since}
 
 - 2.0.0
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) kwenye mstari wa 516

@@ -1,15 +1,17 @@
 ---
 title: Integrationsguide
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsguide
+# Integrationsguide {#integration-guide}
 
-Denna guide täcker vanliga integrationsmönster med Ultimate Multisite, inklusive anslutning till externa tjänster, byggande av anpassade betalningsgränssnitt (gateways) och hantering av webhooks.
+Den här guiden täcker vanliga integrationsmönster med Ultimate Multisite, inklusive att ansluta till externa tjänster, bygga anpassade betalningsgateways och hantera webhooks.
 
-## CRM-integration
+För isolerad klientinfrastruktur, se [Multi-Tenancy Integration](./multi-tenancy) för sovereign tenant bootstrap, migreringsverifiering, SSO och vägledning för nedmontering.
 
-Synka kunddata till ditt CRM när nya kunder registrerar sig:
+## CRM-integration {#crm-integration}
+
+Synkronisera kunddata till ditt CRM när nya kunder registrerar sig:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,7 +31,7 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analytikintegration
+## Analytics-integration {#analytics-integration}
 
 Spåra viktiga affärshändelser genom hela kundlivscykeln:
 
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Bygg ditt eget betalningsgränssnitt
-- [Webhook Handling](./webhooks) — Skapa anpassade webhook-slutpunkter
+- [Utveckling av anpassad gateway](./custom-gateway) — Bygg din egen betalningsgateway
+- [Webhook-hantering](./webhooks) — Skapa anpassade webhook-endpoints
+- [Multi-Tenancy Integration](./multi-tenancy) — Integrera med sovereign tenant-livscykelflöden

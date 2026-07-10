@@ -3,19 +3,19 @@ title: 'Leçon 2 : Choisir sa niche'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Leçon 2 : Choisir votre niche
+# Leçon 2 : Choisir votre niche {#lesson-2-picking-your-niche}
 
 Dans la Leçon 1, nous avons établi pourquoi la niche est plus efficace que le généraliste. Maintenant, il est temps de choisir la vôtre. Cette leçon vous fournit un cadre pour trouver et valider une niche avant d'investir du temps à construire votre solution.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 Nous avons défini le concept de FitSite : une plateforme de site web pour les studios de fitness. Mais comment sommes-nous arrivés spécifiquement aux studios de fitness ? Cette leçon vous guide à travers le processus afin que vous puissiez l'appliquer pour trouver votre propre niche.
 
-## Les trois critères
+## Les trois critères {#the-three-criteria}
 
 Une bonne niche pour une plateforme de site web doit répondre à trois conditions :
 
-### 1. Ils ont besoin de sites web, mais ont du mal à en obtenir de bons
+### 1. Ils ont besoin de sites web, mais ont du mal à en obtenir de bons {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Recherchez des secteurs où :
 
@@ -26,7 +26,7 @@ Recherchez des secteurs où :
 
 **Les studios de fitness correspondent** : les membres s'attendent à trouver les horaires de cours, les tarifs et les réservations en ligne. La plupart des sites de studios sont obsolètes ou construits sur des modèles génériques qui ne servent pas l'objectif.
 
-### 2. Les entreprises peuvent se permettre un abonnement mensuel
+### 2. Les entreprises peuvent se permettre un abonnement mensuel {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Vos clients cibles doivent être :
 
@@ -36,7 +36,7 @@ Vos clients cibles doivent être :
 
 **Les studios de fitness correspondent** : ils paient déjà pour des logiciels de réservation, le traitement des paiements et des outils marketing. Un abonnement de site web est un ajout naturel.
 
-### 3. Ils communiquent entre eux
+### 3. Ils communiquent entre eux {#3-they-talk-to-each-other}
 
 Les meilleures niches possèdent :
 
@@ -46,9 +46,9 @@ Les meilleures niches possèdent :
 
 **Les studios de fitness correspondent** : les propriétaires de studios assistent à des événements de l'industrie du fitness, participent à des communautés en ligne et partagent fréquemment des outils et services avec leurs pairs.
 
-## Comment trouver des candidats niches
+## Comment trouver des candidats niches {#how-to-find-niche-candidates}
 
-### Commencez par ce que vous savez
+### Commencez par ce que vous savez {#start-with-what-you-know}
 
 Votre expérience actuelle est un avantage. Considérez :
 
@@ -56,7 +56,7 @@ Votre expérience actuelle est un avantage. Considérez :
 - Les passe-temps ou les centres d'intérêt où vous comprenez la communauté
 - Les réseaux professionnels auxquels vous appartenez déjà
 
-### Recherchez des signaux de douleur
+### Recherchez des signaux de douleur {#look-for-pain-signals}
 
 Recherchez des preuves que les entreprises d'une niche ont des difficultés avec leurs sites web :
 
@@ -65,7 +65,7 @@ Recherchez des preuves que les entreprises d'une niche ont des difficultés avec
 - Regardez les sites web réels de la niche — sont-ils majoritairement de mauvaise qualité ?
 - Vérifiez s'il existe des concurrents et dans quelle mesure ils servent le marché
 
-### Évaluez l'économie
+### Évaluez l'économie {#evaluate-the-economics}
 
 Pour chaque niche candidate, estimez :
 
@@ -73,11 +73,11 @@ Pour chaque niche candidate, estimez :
 - **Volonté de payer** : Combien dépensent-ils actuellement pour des outils similaires ?
 - **Potentiel de valeur vie client** : Ces entreprises sont-elles stables, ou ont-elles un taux de désabonnement rapide ?
 
-## Valider votre niche
+## Valider votre niche {#validating-your-niche}
 
 Avant de construire quoi que ce soit, validez la demande :
 
-### Parlez à des clients potentiels
+### Parlez à des clients potentiels {#talk-to-potential-customers}
 
 Contactez 10 à 15 propriétaires d'entreprise de votre niche cible. Demandez :
 
@@ -88,17 +88,17 @@ Contactez 10 à 15 propriétaires d'entreprise de votre niche cible. Demandez :
 
 Vous ne vendez pas encore. Vous écoutez.
 
-### Étudiez le paysage concurrentiel
+### Étudiez le paysage concurrentiel {#check-competitor-landscape}
 
 - **Pas de concurrents** : Cela peut signifier qu'il n'y a pas de demande, ou cela peut signifier une opportunité inexploitée. Les conversations avec les clients vous diront laquelle.
 - **Quelques concurrents** : Bon signe. Cela valide la demande. Étudiez ce qu'ils font bien et où ils sont faibles.
 - **Beaucoup de concurrents** : Plus difficile à pénétrer, mais toujours possible si vous pouvez vous différencier clairement.
 
-### Créez une page de destination
+### Créez une page de destination {#build-a-landing-page}
 
 Avant de construire la plateforme, créez une simple page de destination qui décrit votre solution de niche et qui collecte des inscriptions par e-mail. Lancez une petite campagne publicitaire ciblée pour tester l'intérêt. Si des gens s'inscrivent, vous avez une validation.
 
-## Application à FitSite
+## Application à FitSite {#applying-this-to-fitsite}
 
 Voici comment FitSite a été évalué par rapport aux critères :
 
@@ -112,7 +112,7 @@ Voici comment FitSite a été évalué par rapport aux critères :
 
 La validation a confirmé l'opportunité. Maintenant, nous construisons.
 
-## Idées de niches à considérer
+## Idées de niches à considérer {#niche-ideas-to-consider}
 
 Si le fitness n'est pas votre marché, voici d'autres niches qui répondent aux critères :
 
@@ -127,7 +127,7 @@ Si le fitness n'est pas votre marché, voici d'autres niches qui répondent aux 
 
 Chacune d'entre elles présente les mêmes caractéristiques : des besoins clairs en matière de site web, la capacité de payer et le bouche-à-oreille communautaire.
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Un cadre de sélection de niche** : trois critères pour évaluer toute niche
 - **Méthodes de validation** : conversations avec les clients, analyse des concurrents, test de page de destination

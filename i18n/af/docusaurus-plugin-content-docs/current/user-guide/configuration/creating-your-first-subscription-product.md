@@ -3,13 +3,13 @@ title: Skep jou eerste abonnementsproduk
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Skep jou Eerste Abonnementsproduk (v2)
+# Skep jou Eerste Abonnementsproduk (v2) {#creating-your-first-subscription-product-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel is slegs vir Ultimate Multisite weergawe 2.x gebruikers. As jy weergawe 1.x gebruik,**_ **_**kyk na hierdie artikel**_**.
 
 Om jou netwerk te laat loop en begin om jou dienste aan potensiële gebruikers te verkoop, het jy verskillende abonnementsopsies nodig. Hoe skep jy hierdie produkte? Wat is die tipes produkte wat jy kan aanbied? In hierdie artikel gaan ons alles dek wat jy oor produkte moet weet.
 
-## Produk Tipe
+## Produk Tipe {#product-type}
 
 Met Ultimate Multisite kan jy twee kategorieë produkte aan jou kliënte aanbied: **planne** en **byvoegings** **(Add-ons)**. Byvoegings kan weer in twee tipes verdeel word: **pakkette** en **dienste**. Ons sal hul verskille en besonderhede volgende bespreek.
 
@@ -19,7 +19,7 @@ Met Ultimate Multisite kan jy twee kategorieë produkte aan jou kliënte aanbied
 
 *   **Dienste:** Byvoegings wat nie die funksionaliteite van Ultimate Multisite verander nie. Dit is take wat jy vir jou kliënt sal uitvoer benewens die plan wat hulle gekoop het. Byvoorbeeld, jou klant mag 'n plan koop wat een webwerf toelaat en ook betaal vir 'n ekstra diens wat hierdie webwerf ontwerp sal.
 
-## Bestuur van Produkte
+## Bestuur van Produkte {#managing-products}
 
 Vir baie kan die **Produkte** tab in Ultimate Multisite **(Ultimate Multisite > Products)** vergelyk word met planne in 'n tradisionele hostingomgewing.
 
@@ -29,7 +29,7 @@ Hierdie afdeling sal jou begrip van hierdie noodsaaklike hoeksteen van Ultimate 
 
 ![Products list page](/img/config/products-list.png)
 
-## Byvoeg van Produkte
+## Byvoeg van Produkte {#adding-products}
 
 Of dit nou 'n plan, pakket of diens is, die beginpunt om 'n nuwe item te definieer, is via **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Die koppelvlak bevat twee dominante afdelings. Links is daar verskeie tabs wat h
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Beskrywing
+### Beskrywing {#description}
 
 Die basisproduk-inligting kan word gedefinieer deur 'n produknaam en beskrywing te verskaf. Hierdie identifikators word oral vertoon waar produkinligting benodig word, soos plan- en prysekeuse, fakture, opgraderings, en dergelikes.
 
 ![Product description section](/img/config/product-description.png)
 
-### Prys tipe
+### Prys tipe {#pricing-type}
 
 Aan die regterkant van die koppelvlak kan die basisprysing gedefinieer word.
 
@@ -53,7 +53,7 @@ Aan die regterkant van die koppelvlak kan die basisprysing gedefinieer word.
 
 Ultimate Multisite ondersteun drie verskillende prys-tipes. Die **paid** opsie vra die netwerkbeheerder vir inligting oor die produk se prys en faktuureringsfrekwensie.
 
-### Prysing
+### Prysing {#pricing}
 
 Die pryskomponent definieer die basisproduk-prys en faktuureringsinterval.
 
@@ -61,7 +61,7 @@ Die pryskomponent definieer die basisproduk-prys en faktuureringsinterval.
 
 sodoende sal 'n voorbeeldprys van $29.99 met 'n instelling van 1 maand elke maand $29.99 faktureer. Op soortgelyke wyse sal 'n prys van $89.97 met 'n instelling van 3 maande daardie bedrag elke kwartaal faktureer.
 
-### Faktuureringssiklusse
+### Faktuureringssiklusse {#billing-cycles}
 
 Die faktuureringssiklusse-afdeling spesifiseer die frekwensie van die genoemde faktuureringsinterval en word oor die algemeen verstaan in die lig van kontrakte of vaste terme.
 
@@ -69,7 +69,7 @@ Die faktuureringssiklusse-afdeling spesifiseer die frekwensie van die genoemde f
 
 Byvoorbeeld, 'n produkprys van $29.99 met 'n interval van 1 maand en 12 faktuureringssiklusse sal $29.99 per maand vir die produk oor die volgende 12 maande faktureer. Met ander woorde sal so 'n instelling 'n vaste-prys termyn van $29.99 per maand vir 12 maande vestig en dan die fakturering staak.
 
-### Proefperiode
+### Proefperiode {#trial-period}
 
 Die inskakeling van die proefperiode-toggle laat die netwerkbeheerder toe om 'n proefperiode vir die produk te definieer.
 
@@ -77,7 +77,7 @@ Die inskakeling van die proefperiode-toggle laat die netwerkbeheerder toe om 'n 
 
 Gedurende die proefperiode is kliënte vry om die produk te gebruik en sal nie gefaktureer word totdat die proefperiode uitgeput is nie.
 
-### Opstelfooi
+### Opstelfooi {#setup-fee}
 
 Jy kan ook 'n opstelfooi op jou plan toepas.
 
@@ -85,7 +85,7 @@ Jy kan ook 'n opstelfooi op jou plan toepas.
 
 Dit beteken dat jou kliënt 'n ekstra bedrag sal betaal by die eerste lading (benewens die planprys) wat ooreenstem met die fooi wat jy in hierdie afdeling gedefinieer het.
 
-### Aktief
+### Aktief {#active}
 
 Die aktiewe toggle definieer effektief of die produk beskikbaar is vir kliënte vir nuwe registrasies.
 
@@ -93,13 +93,13 @@ Die aktiewe toggle definieer effektief of die produk beskikbaar is vir kliënte 
 
 As daar bestaande kliënte op hierdie plan is, laat die instelling van die toggle na sy gedeaktiveerde status die plan effektief voortbestaan (grandfathers) deur dit uit toekomstige registrasies te verwyder. **Bestaande kliënte op die plan sal gefaktureer bly** totdat hulle na 'n nuwe plan oorgedra of van die plan verwyder word.
 
-### Produkbeeld
+### Produkbeeld {#product-image}
 
 Die **Upload Image** knoppie laat die netwerkbeheerder toe om die mediabiblioteek te gebruik om 'n produkbeeld te kies of te laai.
 
 ![Product image section](/img/config/product-image.png)
 
-### Verwyder
+### Verwyder {#delete}
 
 Die **Delete Product** knoppie verwyder die produk uit die stelsel. Dit verskyn sodra die produk gepubliseer is.
 
@@ -107,11 +107,11 @@ Die **Delete Product** knoppie verwyder die produk uit die stelsel. Dit verskyn 
 
 Verskillend van ander verwyderings, word die produk nie in enige rommelstatus geplaas nie. Sodoende is die aksie onomkeerbaar sodra dit verwyder is.
 
-### Produkopsies
+### Produkopsies {#product-options}
 
 Sodra die basisvlak produkinligting gedefinieer is, help die produkopsies die netwerkbeheerder om die spesifieke eienskappe van die produk verder te definieer.
 
-#### Algemeen
+#### Algemeen {#general}
 
 Die **General** tab definieer die algemene eienskappe van die produk wat nie op enige van die ander produk-spesifieke tabs van toepassing is nie.
 
@@ -125,7 +125,7 @@ Die **Customer Role** spesifiseer die rol wat die kliënt toegewys word wanneer 
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Op- en Afgraderings
+#### Op- en Afgraderings {#up--downgrades}
 
 Hierdie tab spesifiseer die opgraderings- en afgraderingspad wat beskikbaar is vir 'n kliënt binne hul spesifieke vlak.
 
@@ -143,7 +143,7 @@ Om 'n plan-groep te definieer, spesifiseer die bietkomende planne binne die **pl
 
 Ultimate Multisite sluit ook 'n **order bump** funksie in waar toepaslike byvoegingsprodukte en dienste aan planne bygevoeg kan word. Hierdie word aan die kliënt aangebied as bykomende items wat by planne by die kassa of tydens 'n opgradering bygevoeg kan word.
 
-#### Prysvariasies
+#### Prysvariasies {#price-variations}
 
 Prysvariasies laat die netwerkbeheerder toe om alternatiewe prysniveaus te spesifiseer afhangende van duur. Hierdie instelling maak dit moontlik om maandelikse, kwartaallikse, jaarlikse, of enige ander faktuureringsperiode vir dieselfde produk aan te bied. Byvoorbeeld, jy kan 'n produk teen $29.99/maand opstel met 'n geraffelde jaarlikse opsie teen $249.99/jaar.
 
@@ -160,13 +160,13 @@ Byvoorbeeld, as jou basisprodukprys $29.99 per maand is, kan jy byvoeg:
 *   **3 Maande** teen $79.99 ('n klein afslag)
 *   **Uit die**
 
-### **Belangrike Nota:**
+### **Belangrike Nota:** {#taxes}
 
 *   **Die teks in die oorspronklike bron was onvolledig, maar die konteks dui op 'n opsomming van die vorige punt.**
 
 ---
 
-### **Opsomming van die Funksionaliteit:**
+### **Opsomming van die Funksionaliteit:** {#site-templates}
 
 Die teks beskryf die proses om die prysstruktuur van 'n produk te verfyn deur verskillende tydperke aan te bied (bv. maandeliks, jaarliks).
 

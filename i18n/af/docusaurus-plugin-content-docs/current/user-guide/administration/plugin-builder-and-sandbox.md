@@ -3,11 +3,11 @@ title: Plugin Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 stel die **Plugin Builder & Sandbox System** bekend, wat die AI-assistent toelaat om WordPress-plugins op jou netwerk te genereer, te aktiveer en te bestuur — alles deur middel van 'n veilige, geïsoleerde sandbox-omgewing.
 
-## Oorsig
+## Oorsig {#overview}
 
 Die Plugin Builder laat die AI-assistent toe om aangepaste WordPress-plugins te skryf in reaksie op natuurlike taalversoeke. Ge genereerde plugins word gevalideer, gestoor en geaktiveer binne 'n sandbox-laag voordat hulle ooit die werklike werf-funksionaliteit beïnvloed.
 
@@ -17,7 +17,7 @@ Gebruiksvlakke sluit in:
 - Die prototyping van funksies wat WordPress hooks of aangepaste posgipes vereis.
 - Die skep van kort-lewende outomatisering-skripte vir partiewerkings.
 
-## Genereer 'n Plugin via AI
+## Genereer 'n Plugin via AI {#generating-a-plugin-via-ai}
 
 Om 'n plugin te genereer, maak die Gratis AI Agent-klets-koppelvlak oop en beskryf wat jy benodig. Byvoorbeeld:
 
@@ -32,7 +32,7 @@ Die AI sal:
 
 Jy kan die resultaat verfyn deur in dieselfde gesprekdraad op te volg voordat jy aktiveer.
 
-## Sandbox-Aktivering
+## Sandbox-Aktivering {#sandbox-activation}
 
 Die aktiveer van 'n gegenereerde plugin in die sandbox verskil van die aktiveer daarvan op die werklike netwerk. Die sandbox:
 
@@ -48,7 +48,7 @@ Om 'n plugin in die sandbox te aktiveer, klik op die **Activate in Sandbox**-kno
 
 'n Statusboodskap bevestig of die aktivering geslaag het of misluk het. By mislukking word die fout-log in die kletsdraad vertoon.
 
-## Bestuur van Ge genereerde Plugins
+## Bestuur van Ge genereerde Plugins {#managing-generated-plugins}
 
 Gegenereerde plugins word gelys in **Gratis AI Agent → Plugin Builder → Manage Plugins**. Van hierdie skerm kan jy:
 
@@ -64,7 +64,7 @@ Gegenereerde plugins word gelys in **Gratis AI Agent → Plugin Builder → Mana
 **Install on network** ontplooi die gegenereerde plugin na jou werklike WordPress multisite. Hersien die plugin-kode voordat jy voortgaan. Gratis AI Agent sal om bevestiging vra voordat 'n werklike installasie voltooi word.
 :::
 
-## Installeer 'n Ge genereerde Plugin op die Netwerk
+## Installeer 'n Ge genereerde Plugin op die Netwerk {#installing-a-generated-plugin-on-the-network}
 
 Wanneer jy tevrede is met 'n sandboks-plugin, kan jy dit op die werklike netwerk installeer:
 
@@ -78,7 +78,7 @@ Alternatief, gebruik die slas-bevel in die klets-koppelvlak:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin Opdaterings
+## Plugin Opdaterings {#plugin-updates}
 
 Om 'n gegenereerde plugin op te dateer, beskryf die verandering aan die AI-assistent in 'n nuwe gesprek:
 
@@ -86,7 +86,7 @@ Om 'n gegenereerde plugin op te dateer, beskryf die verandering aan die AI-assis
 
 Die AI genereer 'n nuwe weergawe, wat in die sandbox saam met die huidige weergawe verskyn. Jy hersien die diff en bevestig voordat die opdatering toegepas word.
 
-## HookScanner Integrasie
+## HookScanner Integrasie {#hookscanner-integration}
 
 Die Plugin Builder gebruik 'n geïntegreerde **HookScanner** om die hooks en filters te ontleed wat deur elke gegenereerde plugin geregistreer word. HookScanner-uitvoer word in die kletsantwoord getoon en sluit in:
 
@@ -96,7 +96,7 @@ Die Plugin Builder gebruik 'n geïntegreerde **HookScanner** om die hooks en fil
 
 Dit help jou om 'n plugin se gedrag te verstaan voordat jy dit aktiveer.
 
-## Sekuriteitsoorwegings
+## Sekuriteitsoorwegings {#security-considerations}
 
 - Ge genereerde plugins word apart gestoor van handmatig geïnstalleerde plugins en is nie beskikbaar via die standaard WordPress plugin-bestuurskerm totdat jy dit uitdruklik op die netwerk installeer nie.
 - Die sandbox gebruik padvalidering om omgang met gidsverkenning te voorkom wanneer plugin-lêre geskryf word.

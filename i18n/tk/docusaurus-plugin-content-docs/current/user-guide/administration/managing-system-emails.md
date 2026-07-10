@@ -3,11 +3,11 @@ title: Sistem E-poçtlarını Yönetmek
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-postalaryny Dolandyrýan
+# Sistem E-postalaryny Dolandyrýan {#managing-system-emails}
 
 Ultimate Multisite size giňden-giň e-postalar göndýar, mysal, katnaşygy anyklamak üçin, tölemek hasapyny bildirmek üçin we üje üyşikleri üýtgetmek üçin. Bu e-postanyň şablonlaryny öz brandaňyz bilen sazlap bilersiňiz.
 
-## Sistem E-postalaryny Görmek
+## Sistem E-postalaryny Görmek {#viewing-system-emails}
 
 **Ultimate Multisite → Settings** bölümini açyp, **Emails** sekmesindäki butunlyklara basyň we e-postalar bilen baglanyşykly sazlamalary göräýärsiňiz.
 
@@ -21,7 +21,7 @@ Siz hem sistem e-postasy redaktoryny ulanmagy bilen her bir e-postanyň şablonl
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Täze E-posta Şablonlaryny Ýüklemek
+## Täze E-posta Şablonlaryny Ýüklemek {#importing-new-email-templates}
 
 Ultimate Multisite-inji versiyalar we add-onlar täze email şablonlaryny qeyd edip biljekdir. Çaklamalardan saklamak üçin, täze şablonlar avtomatik ýazylmaz — siz olary manual (göçürip) import etmeli bolarsyňyz.
 
@@ -32,7 +32,7 @@ Täze email şablonlaryny import etmek üçin:
 3. Käbir bar bolan şablonlary görmegi üçin **Import Emails** opsiyasyny açyp-ýap görkeziň
 4. Import etmek isleýän şablonlary saýlaň we tasdiqlaň
 
-## Email Şablonlaryny Sıfırlamak
+## Email Şablonlaryny Sıfırlamak {#resetting-email-templates}
 
 Eger siz bir email şablonuny özüňiz üýtgediň we awtomatiki (default) mazmun bilen ýetmek isleýärsiňiz, size iki opsiyany bar:
 

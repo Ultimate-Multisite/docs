@@ -3,20 +3,20 @@ title: WordPress Multisite низиңізди қалай орнатуға бол
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite нимаси олганини қандай ўрнатиш мумкин?
+# WordPress Multisite нимаси олганини қандай ўрнатиш мумкин? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite деганда, сиз бир ўрнатилган сайтда бир вақтда кўплаб сайтлар тармоққа эга бўлишингиз мумкин. Бу ўзидан-ўзи киритилган функциядир, лекин у айнан шундай ишлайди деб автоматик равишда ёпилмаган.
 
 :::tip
 Ultimate Multisite دا داخله **[built-in Multisite Setup Wizard](./multisite-setup-wizard)** دی، هmdi bütün این پروسه رو خودکار می‌کنه. اگه Ultimate Multisite نصب کردین، ما توصیه می‌کنیم به جای دنبال کردن مراحل دستی زیر از این wizard استفاده کنید.
 
-# Ultimate Multisite: WordPress Documentation
+# Ultimate Multisite: WordPress Documentation {#add-a-trailing-slash-to-wp-admin}
 
-## Introduction
+## Introduction {#common-problems}
 
 WordPress — bu web saytlar uchun eng mashhur platformlardan biridir. Bu hujjatda, siz Ultimate Multisite dan foydalanish haqida tushunishingiz va uni qanday sozlashni o'rganishingiz mumkin. Biz sizga hamma narsani oddiy va tushunarli tilda tushuntirib beramiz.
 
-## Installation (O'rnatish)
+## Installation (O'rnatish) {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ultimate Multisite ni o'rnatish juda oson. Quyidagi qadamlarni bajaring:
 

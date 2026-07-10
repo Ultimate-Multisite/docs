@@ -3,33 +3,33 @@ title: Forbedre kontrollpanelintegrasjon
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Integrasjon med Enhance-kontrollpanel
+# Integrasjon med Enhance-kontrollpanel {#enhance-control-panel-integration}
 
-## Oversikt
+## Oversikt {#overview}
 Enhance er et moderne kontrollpanel som gir kraftige funksjoner for automatisering og administrasjon av hosting. Denne integrasjonen gjør det mulig å synkronisere domener automatisk og administrere SSL-sertifikater mellom Ultimate Multisite og Enhance-kontrollpanelet.
 
 **Relatert diskusjon:** Se [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) for tips fra fellesskapet og tilleggsinformasjon.
 
-## Funksjoner
+## Funksjoner {#features}
 - Automatisk domenesynkronisering når domener blir tilordnet i Ultimate Multisite
 - Automatisk klargjøring av SSL-sertifikater via LetsEncrypt når DNS peker riktig
 - Støtte for underdomener for nettverk som kjører i underdomene-modus
 - Fjerning av domener når tilordninger blir slettet
 - Tilkoblingstesting for å verifisere API-påloggingsinformasjon
 
-## Krav
+## Krav {#requirements}
 
-### Systemkrav
+### Systemkrav {#system-requirements}
 - Enhance-kontrollpanel installert og tilgjengelig
 - WordPress Multisite-installasjon hostet på eller tilkoblet en Enhance-server
 - Apache-webserver (Enhance støtter for øyeblikket Apache-konfigurasjoner; LiteSpeed Enterprise er tilgjengelig til redusert pris)
 
-### API-tilgang
+### API-tilgang {#api-access}
 Du må ha administratortilgang til Enhance-kontrollpanelet for å opprette API-tokens.
 
-## Slik får du API-påloggingsinformasjonen
+## Slik får du API-påloggingsinformasjonen {#getting-your-api-credentials}
 
-### 1. Opprett et API-token
+### 1. Opprett et API-token {#1-create-an-api-token}
 
 1. Logg inn på Enhance-kontrollpanelet som administrator
 2. Klikk på **Settings** i navigasjonsmenyen
@@ -44,7 +44,7 @@ Du må ha administratortilgang til Enhance-kontrollpanelet for å opprette API-t
 
 Etter opprettelsen vises ditt **Access Token** og **Organization ID**. **Lagre disse umiddelbart**, ettersom tokenet bare vises én gang.
 
-### 2. Hent din Organization ID
+### 2. Hent din Organization ID {#2-get-your-organization-id}
 
 Organization ID vises på Access Tokens-siden i en blå informasjonsboks merket «Org ID: {din_id}».
 
@@ -55,7 +55,7 @@ Du kan også finne en kundes Organization ID ved å:
 2. Klikk **Manage customer** for den aktuelle kunden
 3. Se på URL-en – Organization ID er de alfanumeriske tegnene etter `/customers/`
 
-### 3. Hent din Server ID
+### 3. Hent din Server ID {#3-get-your-server-id}
 
 For å finne din Server ID (nødvendig for domeneoperasjoner):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server-ID-en følger UUID-formatet: `00000000-0000-0000-0000-000000000000`
 
-### 4. Hent din API-URL
+### 4. Hent din API-URL {#4-get-your-api-url}
 
 API-URL-en din er Enhance-kontrollpanelets URL med `/api/` lagt til:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Å bruke bare domenet uten `/api/`
 - Å bruke HTTP i stedet for HTTPS (HTTPS er påkrevd av sikkerhetshensyn)
 
-## Konfigurasjon
+## Konfigurasjon {#configuration}
 
-### Nødvendige konstanter
+### Nødvendige konstanter {#required-constants}
 
 Legg til følgende konstanter i `wp-config.php`-filen din:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Oppsett via integrasjonsveiviseren
+### Oppsett via integrasjonsveiviseren {#setup-via-integration-wizard}
 
 1. I WordPress-adminpanelet, gå til **Ultimate Multisite** > **Settings**
 2. Naviger til **Integrations**-fanen
@@ -112,17 +112,17 @@ Du kan velge å:
 - La veiviseren legge til konstantene i `wp-config.php`-filen automatisk
 - Kopiere konstantdefinisjonene og legge dem til manuelt
 
-## Ytterligere WordPress-konfigurasjon
+## Ytterligere WordPress-konfigurasjon {#additional-wordpress-configuration}
 
 Basert på tilbakemeldinger fra fellesskapet ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) kan det være nødvendig å konfigurere disse tilleggsinnstillingene:
 
-### .htaccess-konfigurasjon
+### .htaccess-konfigurasjon {#htaccess-configuration}
 
 Hvis du opplever problemer med domenetilordning:
 1. Slett den opprinnelige Enhance `.htaccess`-filen
 2. Erstatt den med standard WordPress Multisite `.htaccess`-fil
 
-### Cookie-konstanter
+### Cookie-konstanter {#cookie-constants}
 
 Legg til disse konstantene i `wp-config.php` for å sikre riktig håndtering av informasjonskapsler på tvers av tilordnede domener:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Slik fungerer det
+## Slik fungerer det {#how-it-works}
 
-### Når et domene blir tilordnet
+### Når et domene blir tilordnet {#when-a-domain-is-mapped}
 
 1. En bruker tilordner et egendefinert domene i Ultimate Multisite (eller et nytt nettsted opprettes i underdomene-modus)
 2. Integrasjonen sender en POST-forespørsel til Enhances API: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Når DNS peker til serveren din, klargjør Enhance automatisk et SSL-sertifikat via LetsEncrypt
 5. Domenet blir aktivt med HTTPS
 
-### Når et domene fjernes
+### Når et domene fjernes {#when-a-domain-is-removed}
 
 1. En domenetilordning slettes i Ultimate Multisite
 2. Integrasjonen spør Enhance for å finne domenets ID
 3. En DELETE-forespørsel sendes til: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance fjerner domenet fra serverkonfigurasjonen din
 
-### DNS- og SSL-sjekking
+### DNS- og SSL-sjekking {#dns-and-ssl-checking}
 
 Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
 - Du kan konfigurere sjekkintervallet i **Domain Mapping Settings** (standard: 300 sekunder/5 minutter)
@@ -157,9 +157,9 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
 - SSL-sertifikatets gyldighet sjekkes automatisk
 - Enhance håndterer SSL-klargjøring automatisk, så manuell SSL-konfigurasjon er ikke nødvendig
 
-## Verifisering av oppsett
+## Verifisering av oppsett {#verifying-setup}
 
-### Test tilkoblingen
+### Test tilkoblingen {#test-the-connection}
 
 1. I integrasjonsveiviseren, bruk steget **Test Connection**
 2. Pluginen vil forsøke å liste opp domener på serveren din
@@ -169,7 +169,7 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
    - Server-ID-en er gyldig
    - Tillatelser er riktig satt opp
 
-### Etter tilordning av et domene
+### Etter tilordning av et domene {#after-mapping-a-domain}
 
 1. Tilordne et testdomene i Ultimate Multisite
 2. Sjekk Ultimate Multisite-loggene (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
    - Det nye domenet skal vises i listen
 4. Når DNS har propagert, verifiser at SSL klargjøres automatisk
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### API-tilkoblingsproblemer
+### API-tilkoblingsproblemer {#api-connection-issues}
 
 **Feil: «Failed to connect to Enhance API»**
 - Verifiser at `WU_ENHANCE_API_URL` inkluderer `/api/` på slutten
@@ -198,7 +198,7 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
 - Sørg for at Server-ID-en er i gyldig UUID-format
 - Bekreft at serveren eksisterer i Enhance-panelet ditt
 
-### Domene blir ikke lagt til
+### Domene blir ikke lagt til {#domain-not-added}
 
 **Sjekk loggene:**
 1. Gå til **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
 - Utilstrekkelige API-tillatelser (sørg for at tokenet har System Administrator-rollen)
 - Server-ID-en samsvarer ikke med den faktiske serveren i Enhance
 
-### SSL-sertifikatproblemer
+### SSL-sertifikatproblemer {#ssl-certificate-issues}
 
 **SSL klargjøres ikke:**
 - Verifiser at DNS peker til serverens IP-adresse
@@ -225,7 +225,7 @@ Ultimate Multisite inkluderer innebygd DNS- og SSL-sjekking:
 2. Finn domenet ditt og sjekk SSL-statusen
 3. Du kan manuelt utløse SSL-klargjøring om nødvendig
 
-### DNS-sjekkintervall
+### DNS-sjekkintervall {#dns-check-interval}
 
 Hvis domener eller SSL-sertifikater tar for lang tid å aktivere:
 1. Gå til **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Hvis domener eller SSL-sertifikater tar for lang tid å aktivere:
 3. Juster fra standard 300 sekunder til en lavere verdi (minimum: 10 sekunder)
 4. **Merk:** Lavere intervaller betyr hyppigere sjekker, men høyere serverbelastning
 
-### Autentiseringsfeil
+### Autentiseringsfeil {#authentication-errors}
 
 **HTTP 401/403-feil:**
 - Generer et nytt API-token i Enhance
@@ -241,7 +241,7 @@ Hvis domener eller SSL-sertifikater tar for lang tid å aktivere:
 - Sjekk at tokenet ikke har utløpt
 - Sørg for at du bruker riktig Organization ID (selv om den vanligvis ikke er nødvendig i URL-en)
 
-### Logganalyse
+### Logganalyse {#log-analysis}
 
 Aktiver detaljert logging:
 ```php
@@ -255,15 +255,15 @@ Sjekk deretter loggene på:
 - WordPress debug-logg: `wp-content/debug.log`
 - Enhance-panellogger: Tilgjengelig i Enhances administrasjonsgrensesnitt
 
-## API-referanse
+## API-referanse {#api-reference}
 
-### Autentisering
+### Autentisering {#authentication}
 Alle API-forespørsler bruker Bearer-token-autentisering:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Vanlige endepunkter som brukes
+### Vanlige endepunkter som brukes {#common-endpoints-used}
 
 **Liste opp servere:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Fullstendig API-dokumentasjon
+### Fullstendig API-dokumentasjon {#full-api-documentation}
 Komplett API-dokumentasjon: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Beste praksis
+## Beste praksis {#best-practices}
 
-### Sikkerhet
+### Sikkerhet {#security}
 - **Aldri legg API-tokens i versjonskontroll**
 - Lagre tokens i `wp-config.php`, som bør ekskluderes fra Git
 - Bruk tokens med passende tillatelser (System Administrator for full integrasjon)
 - Sett utløpsdatoer for tokens i produksjonsmiljøer
 - Roter tokens regelmessig
 
-### Ytelse
+### Ytelse {#performance}
 - Bruk standard DNS-sjekkintervall (300 sekunder) for å unngå overdrevne API-kall
 - Overvåk Enhance-serverressurser ved kjøring av store domeneoperasjoner
 - Vurder å spre domenetillegg hvis du tilordner mange domener samtidig
 
-### Overvåking
+### Overvåking {#monitoring}
 - Sjekk Ultimate Multisite-logger regelmessig for integrasjonsfeil
 - Sett opp overvåking for mislykkede domenetillegg
 - Verifiser at SSL-sertifikater klargjøres korrekt
 - Hold øye med Enhance-serverkapasitet og domenebegrensninger
 
-## Flere ressurser
+## Flere ressurser {#additional-resources}
 
 - **Offisiell Enhance-dokumentasjon:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API-dokumentasjon:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Komplett API-dokumentasjon: [https://apidocs.enhance.com](https://apidocs.enhanc
 - **GitHub-diskusjon:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite-guide for domenetilordning:** Se wiki-siden «How to Configure Domain Mapping v2»
 
-## Støtte
+## Støtte {#support}
 
 Hvis du støter på problemer:
 1. Sjekk feilsøkingsdelen ovenfor
@@ -326,7 +326,7 @@ Hvis du støter på problemer:
 4. Kontakt Enhance-support for panelspesifikke problemer
 5. Opprett en ny diskusjon med detaljerte feillogger for hjelp fra fellesskapet
 
-## Merknader
+## Merknader {#notes}
 
 - Denne integrasjonen håndterer kun domenealiaser; Enhance administrerer SSL automatisk
 - Integrasjonen støtter både egendefinerte domenetilordninger og underdomenebaserte nettsteder

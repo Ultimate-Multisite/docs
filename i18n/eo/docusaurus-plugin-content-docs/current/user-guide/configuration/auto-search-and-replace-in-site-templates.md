@@ -3,7 +3,7 @@ title: Auto-Search kaj Substitudo en Sitiin Temploj
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace en Site Templates (v2)
+# Auto Search and Replace en Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ĉi tiu tutoro postulas WP Uitimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Via kliento tiel bone povas plenigi ti fildon dum la registriĝo.
 
 Ultimate Multisite tiel substitui la plaseholdojn per la data, kiun oni donas la kliento.
 
-## **Solvi la problemin "ŝablo plena de plaseholdoj"**
+## **Solvi la problemin "ŝablo plena de plaseholdoj"** {#solving-the-template-full-of-placeholders-problem}
 
 T ĉio estas granda, sed ni atingas malbon problemin: nun niaj site ŝablon - kiuj povas esti vizitaj de nia klientoj - estas plenaj malbon plaseholdoj kiuj ne diras multan.
 

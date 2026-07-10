@@ -1,0 +1,117 @@
+---
+title: Mga Planong May Sukat
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Mga Planong Ayon sa Paggamit {#metered-plans}
+
+Binabago ng Ultimate Multisite: addon na Mga Planong Ayon sa Paggamit kung paano mo sinisingil ang iyong mga customer sa pamamagitan ng pagpapakilala ng flexible na kakayahan sa pagsingil ayon sa paggamit. Sa halip na mahihigpit na hard limit na humaharang sa mga user kapag lumampas, paganahin ang overage charges na awtomatikong naniningil sa mga customer para sa karagdagang paggamit.
+
+## Pangunahing Feature {#key-features}
+
+* **Pagsingil Ayon sa Paggamit**: Singilin ang mga customer batay sa aktuwal na paggamit sa halip na fixed tiers
+* **Pamamahala ng Overage**: Awtomatikong maningil para sa paggamit na lumalampas sa mga limitasyon ng plano
+* **Pagsubaybay sa Paggamit**: Subaybayan ang pagkonsumo ng resource ng customer nang real-time
+* **Flexible na Presyo**: Magtakda ng custom na rates para sa iba't ibang resource (storage, bandwidth, mga site, atbp.)
+* **Pagsingil ng AI Token**: Subaybayan at singilin ang input at output tokens para sa paggamit ng AI sa mga subsite ng customer
+* **Awtomatikong Pag-invoice**: Awtomatikong gumawa ng mga invoice kapag lumampas sa mga threshold ng paggamit
+* **Mga Ulat sa Paggamit**: Detalyadong analytics at pag-uulat ng paggamit para sa mga customer at administrator
+
+## Perpekto Para sa {#perfect-for}
+
+* **Mga Hosting Provider**: Mag-alok ng scalable na mga plano na lumalago kasabay ng pangangailangan ng customer
+* **Mga SaaS Platform**: Maningil batay sa aktuwal na pagkonsumo ng resource
+* **Mga Network ng Ahensya**: Flexible na mga modelo ng presyo para sa mga proyekto ng client
+* **Reseller Hosting**: Paganahin ang mga partner na mag-alok ng presyong batay sa paggamit
+
+## Paano Ito Gumagana {#how-it-works}
+
+1. I-configure ang mga resource na sinusukat (disk space, bandwidth, bilang ng mga site, atbp.)
+2. Magtakda ng mga limitasyon ng base plan at overage rates
+3. Awtomatikong sinusubaybayan ng system ang paggamit sa buong network mo
+4. Kapag lumampas ang mga customer sa mga limitasyon, kinakalkula ang overage charges
+5. Awtomatikong ginagawa ang mga invoice batay sa billing cycle
+6. Makikita ng mga customer ang kanilang paggamit at paparating na singil nang real-time
+
+## Pagsingil ng AI Token {#ai-token-billing}
+
+Nagdaragdag ang bersyon 1.1.0 ng pagsingil ng AI token para sa mga network na nag-aalok ng mga AI feature sa pamamagitan ng WordPress AI Client SDK. Nakikinig ang Mga Planong Ayon sa Paggamit sa mga nakumpletong kahilingan sa AI generation, itinatala ang bilang ng input at output token para sa kasalukuyang subsite, at kino-convert ang mga token na iyon sa masingil na AI spend para sa kasalukuyang panahon ng pagsingil ng customer.
+
+Gamitin ang pagsingil ng AI token kapag gusto mong mag-alok ng AI tools sa mga site ng customer nang hindi inaako ang hindi mahulaang gastos sa model. Iniuugnay ang bawat kahilingan sa subsite, customer, membership, provider, at model upang ma-audit ng mga administrator ang paggamit habang nakikita ng mga customer kung paano nakaaapekto ang kanilang pagkonsumo ng AI sa kanilang account.
+
+### I-configure ang Per-Token Rates {#configure-per-token-rates}
+
+Kino-configure ang AI rates bawat model bilang magkahiwalay na input at output rates. Kinakalkula ang rates bawat 1 milyong token, na tumutugma sa karaniwang mga pahina ng presyo ng AI provider.
+
+1. Sa network admin, buksan ang **Ultimate Multisite → Mga Setting → Mga Planong Ayon sa Paggamit**.
+2. Paganahin ang pagsukat ng AI spend para sa produkto o membership na dapat maningil ng paggamit ng AI.
+3. Magdagdag ng mga entry ng rate ng model gamit ang mga model ID na ibinabalik ng iyong connector, gaya ng `gpt-4o`, `gpt-4o-mini`, o iba pang OpenAI-compatible na model identifier.
+4. Maglagay ng magkahiwalay na halaga ng **Input Rate** at **Output Rate** sa currency ng iyong site bawat 1 milyong token.
+5. Itakda ang kasamang AI spend allowance ng customer at overage behaviour para sa plano.
+
+Kapag hindi naka-configure ang eksaktong model ID, maaaring mag-match ang Mga Planong Ayon sa Paggamit ayon sa model prefix. Halimbawa, maaaring mailapat ang rate na naka-configure para sa `claude-sonnet-4` sa mga model ID na may timestamp na nagsisimula sa prefix na iyon. Maaari ring i-adjust ng mga developer ang huling rate table gamit ang filter na [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Mga Sinusuportahang AI Connector {#supported-ai-connectors}
+
+Gumagana ang pagsingil ng AI token sa mga connector na naglalabas ng WordPress AI Client SDK generation events at nagsasama ng paggamit ng token sa response metadata. Kabilang dito ang pamilya ng Ultimate Multisite AI connector na nakadokumento dito:
+
+* [Ultimate AI Connector para sa Mga Compatible Endpoint](../ultimate-ai-connector-compatible-endpoints/) para sa OpenAI-compatible APIs, kabilang ang OpenAI, Mistral, Ollama-compatible gateways, at iba pang provider na naglalabas ng compatible token usage metadata
+* [Ultimate AI Connector para sa WebLLM](../ultimate-ai-connector-webllm/) para sa browser-native WebLLM usage kapag ang mga kahilingan ay niruruta sa pamamagitan ng AI Client SDK event flow
+* Mga AI provider connector na ginagamit ng [Gratis AI Agent](../gratis-ai-agent/) kapag ang napiling provider ay nag-uulat ng bilang ng prompt at completion token sa pamamagitan ng SDK
+
+Maaaring lumahok ang custom connectors sa pamamagitan ng pag-fire ng karaniwang `wp_ai_client_before_generate_result` at `wp_ai_client_after_generate_result` events na may model, provider, at token usage metadata. Ipinapatupad ang mga setting ng connector mula sa pangunahing site papunta sa mga subsite upang gamitin ng mga site ng customer ang mga provider at limitasyong inaprubahan ng network.
+
+### Paggamit sa Account ng Customer {#customer-account-usage}
+
+Nakikita ng mga customer ang paggamit ng AI kasabay ng iba pa nilang sinusukat na resources sa kanilang account area. Ipinapakita ng AI spend row ang kabuuan ng kasalukuyang billing-period na nagmula sa naitalang prompt at completion tokens, naka-configure na model rates, at anumang kasamang allowance sa plano.
+
+Kung may payment method ang customer na naka-file, ang paggamit na lampas sa kasamang allowance ay itinuturing na masingil na overage. Kung naka-configure ang plano para sa hard cutoff at walang available na payment method ang customer, maaaring ma-block ang mga AI request kapag naabot na ang allowance at ipo-prompt ang customer na magdagdag ng mga detalye ng pagbabayad bago magpatuloy.
+
+## Mga Sinusuportahang Resource {#supported-resources}
+
+* Disk storage
+* Bandwidth/Data transfer
+* Bilang ng mga site
+* Bilang ng mga user
+* Paggamit ng AI token at AI spend
+* Custom na mga uri ng resource
+
+## Mga Kinakailangan {#requirements}
+
+* Multisite Ultimate 2.0.0 o mas mataas
+* WordPress Multisite installation
+* PHP 7.4 o mas mataas
+
+## Pag-install {#installation}
+
+1. I-upload ang mga file ng plugin sa `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. I-activate ang plugin sa pamamagitan ng screen na 'Mga Plugin' sa WordPress
+3. Pumunta sa Multisite Ultimate → Mga Setting → Mga Planong Ayon sa Paggamit
+4. I-configure ang iyong sinusukat na resources at presyo
+5. Paganahin ang pagsingil ayon sa paggamit para sa mga produkto sa product editor
+
+## Mga Madalas Itanong {#frequently-asked-questions}
+
+## Ano ang nangyayari kapag lumampas ang customer sa kanilang limitasyon? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Sa halip na harangin ang access, sinusubaybayan ng system ang sobrang paggamit at idinaragdag ito sa kanilang susunod na invoice batay sa mga rate na na-configure mo.
+
+## Maaari ba akong magtakda ng magkakaibang rate ng sobrang paggamit para sa iba't ibang produkto? {#can-i-set-different-overage-rates-for-different-products}
+
+Oo, bawat produkto ay maaaring magkaroon ng natatanging metered resources at pagpepresyo ng sobrang paggamit.
+
+## Paano inaabisuhan ang mga customer tungkol sa paggamit? {#how-are-customers-notified-about-usage}
+
+Makikita ng mga customer ang kanilang kasalukuyang paggamit sa kanilang dashboard at makakatanggap sila ng opsyonal na mga abiso kapag papalapit o lumalagpas sa mga limitasyon.
+
+## Paano pinepresyuhan ang paggamit ng AI token? {#how-is-ai-token-usage-priced}
+
+Ang paggamit ng AI token ay pinepresyuhan mula sa naka-configure na input at output rates ng model kada 1 milyong token. Minumultiply ng Metered Plans ang bilang ng prompt at completion token ng bawat request sa mga rate na iyon, idinaragdag ang resulta sa kasalukuyang AI spend ng customer para sa billing period, at inilalapat ang allowance o overage rules ng plan.
+
+## Maaari ko pa bang gamitin ang hard limits? {#can-i-still-use-hard-limits}
+
+Oo, opsyonal ang metered billing kada produkto. Maaari mong pagsamahin ang tradisyonal na mga produktong may hard-limit at mga metered na produkto.

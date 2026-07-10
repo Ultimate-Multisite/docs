@@ -1,75 +1,75 @@
 ---
-title: 言語セレクタ
+title: 言語選択
 sidebar_position: 1
-_i18n_hash: 33f47928ed0b75178bdb1ba6bce54140
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
 
-# 言語セレクター
+# 言語セレクター {#language-selector}
 
-Multisite Ultimate: サインアップ時の言語セレクター
+Ultimate Multisite: 登録時の言語セレクター
 
-サインアップフローに言語セレクターフィールドを追加します。
+登録フローに言語セレクターのフィールドを追加します。
 
-## Installation
+## インストール {#installation}
 
-1. 'ultimate-multisite-language-selector' を '/wp-content/plugins/' ディレクトリにアップロードします。
-2. WordPress ネットワーク管理画面の 'Plugins' メニューからプラグインを有効化します。
+1. 'ultimate-multisite-language-selector' を '/wp-content/plugins/' ディレクトリにアップロードします
+2. WordPress ネットワーク管理画面の「プラグイン」メニューから plugin を有効化します
 
-## Usage Guide
+## 使い方ガイド {#usage-guide}
 
-この無料アドオンを使うと、ユーザーがサインアップフローとログインページで表示したい言語を選択できるようになります。
+この無料アドオンを使うと、ユーザーが登録フローとログインページで表示したい言語を選べるようになります。
 
-ライセンスを有効化した後（[ライセンスを有効化]../../user-guide/getting-started/installing-ultimate-multisite.md）ライセンスでアクセスできる Ultimate Multisite アドオンをインストールできるようになります。
+[ライセンスを有効化](../../user-guide/getting-started/installing-ultimate-multisite.md)すると、ライセンスで利用できる Ultimate Multisite アドオンをインストールできるようになります。
 
-Ultimate Multisite の設定ページに移動し、左側のメニューで _Add-ons_ ラベルをクリックします。
+Ultimate Multisite の設定ページに移動し、左側のメニューで _アドオン_ ラベルをクリックします。
 
-![Add-ons page](/img/admin/addons-page.png)
+![アドオンページ](/img/admin/addons-page.png)
 
-_Add-ons ページに移動して Language Selector のインストールを開始します_
+_アドオンページに移動して、言語セレクターのインストールを開始します_
 
-そこで、提供しているすべてのアドオンが表示されます。
+そこには、提供しているすべてのアドオンが表示されます。
 
-無料アドオンは、サブスクリプションプランに関係なく、すべてのお客様にご利用いただけます。
+無料アドオンは、申し込んだサブスクリプションプランに関係なく、すべてのお客様が利用できます。
 
-アドオンのサムネイルの下にある _Install it Now!_ ボタンをクリックします。その後、Plugins ページで有効化します。
+アドオンのサムネイルの下にある _今すぐインストール！_ ボタンをクリックします。その後、プラグインページで有効化します。
 
-![Add-ons page with install button](/img/admin/addons-page.png)
+![インストールボタン付きのアドオンページ](/img/admin/addons-page.png)
 
-_アドオンをインストールするためにボタンをクリックしてください_
+_ボタンをクリックしてアドオンをインストールします_
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+<!-- スクリーンショットなし: Language Selector アドオンの「ネットワークで有効化」ボタンを表示している WP プラグインページ -->
 
-_Plugins ページで有効化してください_
+_プラグインページで有効化します_
 
-次に、Ultimate Multisite の設定メニューに移動し、_Network Settings_ タブを開きます。ページ下部に _Languages_ という新しいセクションが表示されます。
+次に、Ultimate Multisite の設定メニューに移動し、_ネットワーク設定_ タブを開きます。ページ下部に、_言語_ という新しいセクションが表示されます。
 
-![Settings page](/img/config/settings-general.png)
+![設定ページ](/img/config/settings-general.png)
 
-_新しいセクションが表示されました！_
+_まったく新しいセクションが表示されます！_
 
-空白のままにするとすべての言語をオプションとして表示し、必要に応じて利用可能にしたい言語を選択できます。言語は、WordPress のセットアップにインストールされているものです。
+空欄のままにすると、すべての言語が選択肢として表示されます。または、利用可能にしたい言語だけを選択できます。言語は、WordPress の設定にインストールされているものです。
 
-<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+<!-- スクリーンショットなし: WP インストールで利用可能な言語を表示する言語選択ドロップダウン -->
 
-_この WordPress インストールで利用可能な言語の一覧_
+_この WP インストールで利用可能な言語の一覧_
 
-変更を保存すると、選択した言語の選択メニューがログインページとサインアップフローの両方に表示されます。
+変更を保存すると、選択した言語の選択メニューがログインページと登録フローに表示されます。
 
-![Login and Registration settings](/img/config/settings-login-registration.png)
+![ログインと登録の設定](/img/config/settings-login-registration.png)
 
 _ログインページの言語セレクター_
 
-![Registration page](/img/config/registration-page.png)
+![登録ページ](/img/config/registration-page.png)
 
-_サインアップフローの言語セレクター_
+_登録フローの言語セレクター_
 
-## Setting the Language via the URL
+## URL で言語を設定する {#setting-the-language-via-the-url}
 
-URL の locale パラメータをバイパスしてページの言語を変更することもできます。例えば、イタリア語の登録ページにリダイレクトしたい場合は、URL に ?locale=it_IT を追加します。
+URL に locale パラメーターを渡すことで、ページの言語を変更することもできます。たとえば、イタリア語の登録ページにリダイレクトしたい場合は、URL に ?locale=it_IT を追加します。
 
 [https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
 
-この機能を利用するには、言語が WordPress ネットワークにインストールされている必要があります。
+これを機能させるには、その言語が WordPress ネットワークにインストールされている必要があります。

@@ -1,22 +1,22 @@
 ---
 title: Shigarwar Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# شمولیت با هاستینگر (hPanel)
+# شمولیت با هاستینگر (hPanel) {#hostinger-hpanel-integration}
 
-## مروری کلی
+## مروری کلی {#overview}
 
 هاستینگر یک ارائه‌دهنده میزبانی وب محبوب است که پنل کنترل مدرن به نام hPanel دارد. ادغام Ultimate Multisite Hostinger این امکان را فراهم می‌کند که همگام‌سازی خودکار دامنه بین Ultimate Multisite و hPanel هاستینگر انجام شود، به طوری که شما بتوانید نگاشت دامنه‌ها و زیردامنه‌ها را مستقیماً از پنل مدیریت وردپرس خود به‌صورت خودکار مدیریت کنید.
 
-## ویژگی‌ها
+## ویژگی‌ها {#features}
 
 - ایجاد خودکار دامنه افزونه در hPanel
 - ایجاد خودکار زیردامنه در hPanel (برای نصب‌های چندزیردمنه)
 - حذف دامنه هنگام حذف نگاشت‌ها
 - ادغام یکپارچه با API مدیریت دامنه hPanel
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
 برای استفاده از ادغام هاستینگر، شما به موارد زیر نیاز دارید:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'شناسه_حساب_هاستینگر_شما')
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پایانی API پیش‌فرض
 ```
 
-## دستورالعمل‌های تنظیمات
+## دستورالعمل‌های تنظیمات {#setup-instructions}
 
-### ۱. تولید توکن API هاستینگر خود
+### ۱. تولید توکن API هاستینگر خود {#1-generate-your-hostinger-api-token}
 
 ۱. وارد حساب کاربری هاستینگر خود شوید و به hPanel دسترسی پیدا کنید
 ۲. به **Account Settings** (تنظیمات حساب) → **API Tokens** بروید
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پا
    - Subdomain management (مدیریت زیردامنه)
 ۶. توکن تولید شده را کپی کرده و آن را به طور امن ذخیره کنید
 
-### ۲. یافتن شناسه حساب خود
+### ۲. یافتن شناسه حساب خود {#2-find-your-account-id}
 
 ۱. در hPanel، به **Account Settings** (تنظیمات حساب) → **Account Information** (اطلاعات حساب) بروید
 ۲. شناسه حساب شما در این صفحه نمایش داده می‌شود
 ۳. این شناسه را کپی کرده و برای مرحله بعد ذخیره کنید
 
-### ۳. اضافه کردن ثابت‌ها به wp-config.php
+### ۳. اضافه کردن ثابت‌ها به wp-config.php {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر را به فایل `wp-config.php` خود اضافه کنید:
 
@@ -69,7 +69,7 @@ Idan asusun kuwaywata Hostinger ɗinka ya yi amfani da endpoint na API daban, za
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Shigar Wajen Haɗin Kai (Enable the Integration)
+### 4. Shigar Wajen Haɗin Kai (Enable the Integration) {#4-enable-the-integration}
 
 1. A cikin admin na WordPress, tafiya zuwa **Ultimate Multisite > Settings**
 2. Tafiya zuwa tab ɗin **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Shigar wajen haɗin kai na **Hostinger (hPanel)**
 5. Danna **Save Changes**
 
-## Yadda yake Aiki (How It Works)
+## Yadda yake Aiki (How It Works) {#how-it-works}
 
-### Addon Domains (Domain-dakin Tambaya)
+### Addon Domains (Domain-dakin Tambaya) {#addon-domains}
 
 Idan ka yi mapping ga domain a Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Idan ka yi mapping ga domain a Ultimate Multisite:
 2. Domain ɗin an shirya shi ya nuna direktiya zuwa directory na gida (root directory)
 3. Lokacin da aka cire mapping na domain, shigar wajen haɗin kai yana cire addon domain daga hPanel ne ba tare da ka yi wani abu ba
 
-### Subdomains (Subdomain-dakin Tambaya)
+### Subdomains (Subdomain-dakin Tambaya) {#subdomains}
 
 Don install subdomain multisite, lokacin da ake ƙirƙirar wuri na sabon site:
 
@@ -95,7 +95,7 @@ Don install subdomain multisite, lokacin da ake ƙirƙirar wuri na sabon site:
 2. Yana aiko bukata ga API na Hostinger don ƙara subdomain
 3. Subdomain ɗin an shirya shi ya nuna direktiya zuwa directory na gida (root directory)
 
-## Abubuwan Muhimmai (Important Notes)
+## Abubuwan Muhimmai (Important Notes) {#important-notes}
 
 - Shigar wajen haɗin kai yana amfani da REST API na Hostinger don tattaunawa da asusunka
 - Token ɗinka na API dole ne ya da iyakoki na dacewa don sarrafa domain da subdomain
@@ -103,33 +103,33 @@ Don install subdomain multisite, lokacin da ake ƙirƙirar wuri na sabon site:
 - Abubuwan bukata API suna tura cikin aminci ta HTTPS
 - Ka riƙe ammar API ɗinka cikin aminci kuma kada ka raba shi a waje ba
 
-## Magance Matakai (Troubleshooting)
+## Magance Matakai (Troubleshooting) {#troubleshooting}
 
-### Matsalolin Haɗin Kai na API
+### Matsalolin Haɗin Kai na API {#api-connection-issues}
 
 - tabbaki da token ɗin API (API token) ya dace kuma bai wuce ba
 - bincika cewa ID ɗin ka na Acount (Account ID) ya dace
 - tabbatar cewa token ɗin API yana da amincewa (permissions) na gudanar da domain management
 - tabbatar cewa aikin Hostinger ɗinka yana aiki kuma yana cikin yanayi mai kyau
 
-### Domain Ba Ya Tamba
+### Domain Ba Ya Tamba {#domain-not-added}
 
 - Bincika logs na Ultimate Multisite don wajen wata saita (error messages)
 - tabbatar cewa domain ba ya shiga a cikin aikin Hostinger ɗinka ba
 - tabbatar cewa aikin Hostinger ɗinka bai isa ga ƙarin domain (addon domains) ba
 - tabbatar cewa domain an yi shi daidai zuwa wajen nameservers na Hostinger
 
-### Matso na SSL (SSL Certificate Issues)
+### Matso na SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 
 - Wannan haɗin (integration) ba ya gudanar da samar da matsayon SSL certificate ba
 - Hostinger yawanci tana bayar da SSL certificates na kyauta ta hanyar AutoSSL
 - Za ka iya sarrafa SSL certificates kai tsaye a hPanel ta ƙarƙashin **SSL/TLS**
 - Ko kuma, yi amfani da Let's Encrypt tare da ƙwarewar AutoSSL na Hostinger
 
-## Tallafi (Support)
+## Tallafi (Support) {#support}
 
 Don ƙarin taimako game da haɗin Hostinger, donji:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

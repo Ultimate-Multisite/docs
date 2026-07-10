@@ -3,7 +3,7 @@ title: Forma e pagesës
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Formular e Checkout
+# Formular e Checkout {#checkout-forms}
 
 Formularit e checkout janë një mënyrë e lehtë dhe fleksibël për të provuar arsyet e ndryshme kur po përpiqeni të konvertoni klientët e rinj.
 
@@ -36,13 +36,13 @@ Alternativ, mund të modifikoni ose të duplikuat formulat që keni tashmë duke
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Përmbledhje e Editorit të Formës së Checkout
+#### Përmbledhje e Editorit të Formës së Checkout {#checkout-form-editor-overview}
 
 Editori i formularit të checkout ofron një ndërfaqe të plotë për të ndërtuar formulat tuaja të regjistrimit. Ja një përmbledhje e dizajnit të editorit:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Redaktimi i një Forme Checkout
+### Redaktimi i një Forme Checkout {#editing-a-checkout-form}
 
 Ju mund të krijoni forma checkout për qëllime të ndryshme. Në këtë shembull do të punojmë me një formular regjistrimi.
 
@@ -112,7 +112,7 @@ Për të marrë shortcode-in e formularit tuaj, klikoni në "Generate Shortcode"
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Fusha Tabelës së Çmimeve (The Pricing Table Field)
+### Fusha Tabelës së Çmimeve (The Pricing Table Field) {#the-pricing-table-field}
 
 Fusha **Pricing Table** (Tabela e Çmimeve) tregon produktet tuaja në formularin e checkout-it që klientët mund të zgjedhin një plan. Kur ndryshoni këtë fushë, mund të konfigurosh disa opsione:
 
@@ -130,17 +130,17 @@ Ja si duket tabela e çmimeve në formularin frontend të regjistrimit:
 
 Nëse shtoni një produkt në Tabelën e Çmimeve para se formularit të përfshijë fushat që janë të nevojshme për të plotësuar rrjedhjen e checkout-it të atij produkti, redaktori tani tregon një paralajmërim. Përdorni paralajmërimin për të shtuar fushat e munguesve të nevojshme para se të publikoni ose ruani ndryshimet për një formular regjistrimi aktiv.
 
-### Shtimi i Toggles së Zgjedhjes së Periodës
+### Shtimi i Toggles së Zgjedhjes së Periodës {#adding-a-period-selection-toggle}
 
 Nëse keni konfiguruar [Price Variations](creating-your-first-subscription-product#price-variations) në produktet tuaja (p.sh. çmime mujore dhe vjetore), mund të shtoni një fushë **Period Selection** (Zgjedhje Periode) në formularin tuaj të checkout-it. Kjo fushë shfaq një toggle që lejon klientët të ndryshojnë midis periudhave të pagesës, dhe tabela e çmime përditësohet dinamikisht në kohë reale.
 
-#### Hapi 1: Konfigurojeni Price Variations (Variacionet e Çmimit) në Produktet Tuaja
+#### Hapi 1: Konfigurojeni Price Variations (Variacionet e Çmimit) në Produktet Tuaja {#step-1-set-up-price-variations-on-your-products}
 
 Para se të shtoni fushën Period Selection, sigurohuni që produktet tuaja të kenë konfiguruar price variations. Shkoni te **Ultimate Multisite > Products**, modifikoni një produkt dhe navigoni te tab-a **Price Variations** për të shtuar periudha të ndryshme pagese (p.sh. Vjetor me çmim i ulitur).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Hapi 2: Shtoni Fushën Period Selection në Formularin Tuaj të Checkout-it
+#### Hapi 2: Shtoni Fushën Period Selection në Formularin Tuaj të Checkout-it {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Shkoni te **Ultimate Multisite > Checkout Forms** dhe modifikoni formularin tuaj të checkout-it.
 
@@ -163,13 +163,13 @@ Para se të shtoni fushën Period Selection, sigurohuni që produktet tuaja të 
 
 7. Klikoni **Save Field**.
 
-#### Hapi 3: Vendos Këshillën Sipër Tabelës së Çmimeve
+#### Hapi 3: Vendos Këshillën Sipër Tabelës së Çmimeve {#step-3-position-the-field-above-the-pricing-table}
 
 Për një përvojë më të mirë për përdoruesit, sigurohuni që fusha e Zgjedhjes së Periudhës (Period Selection) të shfaqet **para** tabelës së çmimeve në hapin tuaj të checkout-it. Mund të arratni fushat për t'i riordnuar në redaktuesin e formularit të checkout-it. Kështu, klientët fillimisht zgjedhin një periudhë pagese dhe më pas shohin çmimet për atë periudhë.
 
 ![Redaktuesi i formularit të checkout-it që tregon rendin e fushatave](/img/config/checkout-form-editor-with-fields.png)
 
-#### Si Funksionon në Frontend
+#### Si Funksionon në Frontend {#how-it-works-on-the-frontend}
 
 Pasi të konfigurohet, klientët që vizitojnë faqen tuaj të regjistrimit do të shohin seuesin e periudhës sipër tabelës së çmimeve. Kur klikojnë një periudhë pagese tjetër:
 
@@ -177,7 +177,7 @@ Pasi të konfigurohet, klientët që vizitojnë faqen tuaj të regjistrimit do t
   * Nëse **Force Different Durations** (Forco Periudha të Ndryshe) është i pishëm në fushën e Tabelës së Çmimeve, produktet pa ndryshim çmimi për periudhën e zgjedhur do të fshihen.
   * Nëse **Force Different Durations** është aktiv, të gjitha produktet mbeten të dukshme edhe nëse nuk kanë variacion për periudhën e zgjedhur (do tregojnë çmimin e tyre standard).
 
-#### Pre-selektimi i një Periudhe Pagese përmes URL-s
+#### Pre-selektimi i një Periudhe Pagese përmes URL-s {#pre-selecting-a-billing-period-via-url}
 
 Ndonjëherë mund ta pre-selektoni produktin dhe periudhën pagese përmes URL-s. Ultimate Multisite mbështet këto modele URL:
 
@@ -185,11 +185,11 @@ Ndonjëherë mund ta pre-selektoni produktin dhe periudhën pagese përmes URL-s
   * `/register/premium/12` — Pre-selekton produktin dhe kohëzgjatjen 12-vjeçare
   * `/register/premium/1/year` — Pre-selekton produktin me kohëzgjatje 1-vjeçare
 
-### Fusha e Zgjedhjes së Modelit (The Template Selection Field)
+### Fusha e Zgjedhjes së Modelit (The Template Selection Field) {#the-template-selection-field}
 
 Fusha **Template Selection** lejon klientët të zgjedhin një model faqeje gjatë checkout-it. Ajo tani përfshihet automatikisht në template formularit të checkout-it me hap të vetëm dhe me hapësh Ultimate Multisite v2.6.1.
 
-#### Shtimi manual i fushatës
+#### Shtimi manual i fushatës {#adding-the-field-manually}
 
 Nëse po punoni me një formular që u krijua para nga v2.6.1 ose filloi nga një shablon i zbrazët:
 
@@ -200,11 +200,11 @@ Nëse po punoni me një formular që u krijua para nga v2.6.1 ose filloi nga nj�
    - **Label** — Titulli që shohin klientët mbi gridën e template-ve (p.sh. "Zgjidh një shabllon faqje").
    - **Required** — Ajo nëse klientët duhet të zgjedhin një shabllon para se të vazhdojnë.
 
-#### Si funksionon
+#### Si funksionon {#how-it-works}
 
 Kur një klient zgjedh një shabllon gjatë checkout-it, Ultimate Multisite e përdor atë kur po provizojnë faqen e tyre të re. Template-t që shfaqen vijnë nga lista juaj **Site Templates** (**Ultimate Multisite > Site Templates**). Vetëm template-t e caktuar si të disponueshëm për klientët shfaqen këtu.
 
-### Base domainet e formulës së checkout-it
+### Base domainet e formulës së checkout-it {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 trajton domenet që janë konfiguruar në fushën **Site URL** të formularit të checkout-it si base domainet në rrjet. Përdorni cilësimet e `available-domain` të fushës kur dëshironi që klientët të krijojnë faqe nën një ose më shumë domene regjistrimi të ndarë, si për shembull `example.com` dhe `sites.example.com`.
 
@@ -212,6 +212,6 @@ Base domainet e formularit të checkout-it e ndara nuk trajtohen si mape domene 
 
 Ruani domenet personalizimi për hostet e mape të caktuara për çdo klient, si p.sh. `customer-example.com`. Ruani base domainet e formularit të checkout-it për hostet e ndara regjistrimi që shumë faqe mund t'i përdorin.
 
-#### Heqja e fushës
+#### Heqja e fushës {#removing-the-field}
 
 Nëse nuk ofron shkollën e saj të këshillueshme (site templates), largoni fushën e zgjedhjes së modelit (Template Selection) nga formati juaj. Kështu, klientët do të marrin atë model që është i vendosur si default në **Ultimate Multisite > Settings > Site Templates**.

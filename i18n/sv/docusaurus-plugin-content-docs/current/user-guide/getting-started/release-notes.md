@@ -1,82 +1,96 @@
 ---
-title: Versioneringsanteckningar
+title: Versionsinformation
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Release Notes
+# Versionsinformation {#release-notes}
 
-## Version 2.12.0 — Released on 2026-05-15
+## Version 2.13.0 — Släppt den 2026-06-05 {#version-2130--released-on-2026-06-05}
 
-- Nytt: Lägger till Hostinger (hPanel) som ett stödd värdleverantör med integration för domänmappning
-- Nytt: Site Exporter hanterar nu nätverksimportpaket, vilket förenklar återställningen av webbplatser över hela nätverket
-- Fix: BCC-utskick använder nu ett `undisclosed-recipients`-huvud för att förhindra att mottagarnas adresser exponeras
-- Fix: Medlemskapets utgångsdatum korrumperas inte längre vid sparande med ett icke-datumvärde
-- Fix: Stripe-uppdateringar för medlemskap rensar nu korrekt rabatter utan att anropa den föråldrade `deleteDiscount` API:n
-- Fix: SSO-omdirigeringar på domänmappade webbplatser är nu begränsade för att förhindra oändliga omdirigeringsloopar
-- Fix: Valet av bild i uppsättningsguiden uppdaterar nu korrekt den underliggande datamodellen
-- Fix: Site Exporter CLI bevarar nu det korrekta standardvalet av nätverkswebbplats
-- Förbättrat: Borttagit inbäddad wp-cli från plugin-paketet, vilket minskar pluginets storlek
+- Nytt: Lade till stöd för sovereign-tenant för kundens Account, checkout, fakturering, site, faktura, mallbyte och domänmappningsflöden så att tenant-nätverk kan dirigera kunder tillbaka till huvudwebbplatsen för hanterade åtgärder.
+- Nytt: Lade till kontroller av förnyelseuppgifter för återkommande medlemskap så att gateways kan inaktivera automatisk förnyelse när ett sparat faktureringsavtal, en prenumeration eller en vault token saknas.
+- Nytt: Lade till HMAC-verifierad loopback-publicering för väntande site-skapande för att göra provisionering från checkout till site mer tillförlitlig på hostar där bakgrundsjobb är fördröjda.
+- Nytt: Lade till utvecklarutökningspunkter för SSO-URL:er, basdomäner för checkout-formulär och automatisk skapande av domänposter.
+- Åtgärdat: SSO är mer tillförlitligt över mappade domäner, anonyma broker-besök, utloggning och beroendekonflikter mellan pluginer.
+- Åtgärdat: Väntande site-skapande återhämtar sig nu från inaktuella publiceringsflaggor och undviker att lämna kunder fast på skärmen för site-skapande.
+- Åtgärdat: Domänposter skapas inte längre för delade basdomäner för checkout-formulär, och oanvända bakgrundsjobb för host-leverantörer hoppas över när ingen integration är aktiv.
+- Åtgärdat: Checkout, faktureringsadress, lösenordsåterställning, e-postverifiering, mallbyte, rundturer och kantfall i kundens dashboard blockerar inte längre normala kundflöden.
+- Åtgärdat: Broadcast-e-post håller nu mottagare privata samtidigt som fatala SMTP-/plugin-fel undviks när mottagarlistor eller e-posttransporter misslyckas.
+- Åtgärdat: Kantfall för medlemskapsförnyelser, visning av utgångsdatum och betalningsinsamling undviker nu omedelbara utgångar, krascher eller missade obligatoriska betalningar.
+- Förbättrat: WordPress-kompatibilitet testas upp till 7.0, produktions-Vue-tillgångar byggs om från npm-källor, och Cypress-end-to-end-täckning testar nu fler checkout-, setup-, SSO- och gateway-flöden.
 
-## Version 2.11.0 — Released on 2026-05-11
+## Version 2.12.0 — Släppt den 2026-05-15 {#version-2120--released-on-2026-05-15}
 
-- Nytt: Webbplats-exportar paketer nu en självstartande `index.php`, så att ZIP-filen kan installeras på en ny värd utan separat plugin-installation.
-- Nytt: Nätverksexport låter administratörer exportera alla underwebbplatser i ett enda arkiv från Site Export-adminpanelen.
-- Nytt: Möjligheten att växla Site Templates är nu tvingad via en fallback-kedja, vilket korrekt begränsar tillgängligheten av mallar baserat på planbegränsningar.
-- Nytt: Redigeraren för kassan varnar nu när en produkt läggs till utan att ett obligatoriskt fält har konfigurerats.
-- Nytt: Fliken för Import/Export beskriver nu tydligt sitt omfång och länkar direkt till Site Export-verktyget.
+- Nytt: Lade till Hostinger (hPanel) som en host-leverantör som stöds med integration för domänmappning
+- Nytt: Site Exporter hanterar nu importpaket för nätverk för effektiv återställning av site över hela nätverket
+- Åtgärdat: BCC-broadcast-e-post använder nu en undisclosed-recipients-header för att förhindra att mottagaradresser exponeras
+- Åtgärdat: Medlemskapets utgångsdatum skadas inte längre när det sparas med ett värde som inte är ett datum
+- Åtgärdat: Stripe-medlemskapsuppdateringar rensar nu korrekt rabatter utan att anropa det föråldrade deleteDiscount API
+- Åtgärdat: SSO-omdirigeringar på domänmappade sites är nu begränsade för att förhindra oändliga omdirigeringsloopar
+- Åtgärdat: Setup-guidens bildväljarmarkering uppdaterar nu korrekt den underliggande datamodellen
+- Åtgärdat: Site Exporter CLI bevarar nu korrekt val av standardnätverks-site
+- Förbättrat: Tog bort paketerat wp-cli från plugin-paketet, vilket minskar plugin-storleken
 
-## Version 2.10.0 — Released on 2026-05-05
+## Version 2.11.0 — Släppt den 2026-05-11 {#version-2110--released-on-2026-05-11}
 
-- Nytt: PayPal-guidad uppsättning för manuell inmatning av behörigheter med OAuth flag gate för sömlös gateway-konfiguration.
-- Nytt: Kundpanelen för mallväxling har omdesignats med ett "current-template"-kort, ett beständigt rutnät och knappen **Återställ nuvarande mall**.
-- Fix: Mallväxling hänger inte längre UI:t vid AJAX-fel.
-- Fix: Tillåtelsekontrollerna för mallväxling säkras mot obehörigt åtkomst.
-- Fix: Site override-inmatningar valideras innan sparande.
-- Fix: Prompten för faktureringsadress visas nu när adressen är tom.
-- Fix: PHP 8.1 null-till-sträng avskrivningsmeddelanden har åtgärdats.
-- Fix: Currents laddas nu via `lazy-loaded before init` hook för att förhindra tidsrelaterade problem.
-- Fix: Filtrerad SSO-sökväg respekteras över alla inloggningsflöden.
-- Fix: Tomma webbplatsidentitetsalternativ bevaras vid sparande.
+- Nytt: Site-exporter paketerar nu en självstartande `index.php` så att ZIP-filen kan installeras på en ny host utan separat plugin-installation.
+- Nytt: Nätverksexport låter administratörer exportera alla undersites i ett enda arkiv från Site Export-adminsidan.
+- Nytt: Plan-växeln Allow Site Templates tillämpas nu via en fallback-kedja, vilket korrekt begränsar malltillgänglighet för plan-gränser.
+- Nytt: Redigeraren för checkout-formulär varnar när en produkt läggs till utan ett obligatoriskt fält konfigurerat.
+- Nytt: Fliken Import/Export-inställningar beskriver nu tydligt sitt omfång och länkar direkt till verktyget Site Export.
 
-## Version 2.9.0 — Released on 2026-04-30
+## Version 2.10.0 — Släppt den 2026-05-05 {#version-2100--released-on-2026-05-05}
 
-- Nytt: Enkelwebbplats-export och import lagts till under **Tools > Export & Import**.
-- Fix: Export-ZIP-filer serveras nu via en autentiserad nedladdningspunkt.
-- Fix: Risk för SQL-injektion och frågeproblem i utestående export-/importfrågor korrigerade.
-- Fix: Utestående webbplats publiceras inte när administratören manuellt verifierar kundens e-post.
-- Fix: Föräldraförteckningar (`pending_site`) rensas upp när medlemskapet saknas.
-- Fix: Padding i inställningsnavigeringen och sökankarenavigeringen korrigerade.
-- Fix: Utestående webbplatser visas nu först i vyn "All Sites".
-- Fix: Skärmdumpleverantören (mShots) User-Agent-huvud tillagd för att förhindra 403-fel.
-- Fix: Cirkulär beroende i importcron-schemat löst.
-- Fix: Tour-ID:n normaliseras till understreck i användarinställningsnycklar.
-- Förbättrat: ZipArchive används nu istället för Alchemy/Zippy för bättre kompatibilitet.
+- Nytt: PayPal-guidad setup-guide för manuell inmatning av autentiseringsuppgifter med OAuth-flagggrind för smidig gateway-konfiguration.
+- Nytt: Kundpanelen för mallbyte har omdesignats med kort för aktuell mall, bestående rutnät och knappen **Återställ aktuell mall**.
+- Åtgärdat: Mallbyte låser inte längre UI:t vid AJAX-fel.
+- Åtgärdat: Behörighetslägen för mallbyte har säkrats mot obehörig åtkomst.
+- Åtgärdat: Inmatningar för site-åsidosättning valideras före sparande.
+- Åtgärdat: Prompt för faktureringsadress visas nu när adressen är tom.
+- Åtgärdat: PHP 8.1-varningar om null-till-sträng-utfasning har lösts.
+- Åtgärdat: Currents lazy-loadas före init-hook för att förhindra timingproblem.
+- Åtgärdat: Filtrerad SSO-sökväg respekteras i alla inloggningsflöden.
+- Åtgärdat: Tomma alternativ för site-identitet bevaras vid sparande.
 
-## Version 2.8.0 — Released on 2026-04-29
+## Version 2.9.0 — Släppt den 2026-04-30 {#version-290--released-on-2026-04-30}
 
-- Nytt: Möjligheten att aktivera Jumper lagd till Other Options-inställnings-UI.
-- Nytt: Statuskolumn tillagd i listtabellen för kassan.
-- Nytt: Addon sunrise file loader för anpassade MU-plugin sunrise-utökningar.
-- Förbättrat: Borttagit inställningen för opt-in av felrapportering från inställningssidan.
-- Fix: Webbplatskortet på tack-sidan — bilden är nu begränsad och länkarna är korrekt stiliserade.
-- Fix: Skärmdumpleverantören bytt från thum.io till WordPress.com mShots.
-- Fix: Enable Registration och Default Role ställer nu korrekta standardvärden vid ny installation.
-- Fix: `get_site_url()` returnerar inte längre tomt när domänen inkluderar ett portnummer.
-- Fix: Kloning av mediefiler kopieras nu korrekt när inställningen `copy_media` var tom.
-- Fix: Objektcache inaktiveras korrekt efter network-activate sitemeta-skrivning.
-- Fix: Anpassad domän uppgraderas automatiskt till primär vid DNS-verifiering för 3-delade domäner.
-- Fix: Utestående medlemskap avbryts när utgången betalning rensas upp.
-- Fix: Lösenordstyrka-kontroll återkopplas efter att inline-inloggningsprompten stängts.
-- Fix: Oändlig siduppdatering stoppad på tack-sidan när webbplatsen redan skapats.
-- Fix: WP core-registreringsalternativ synkroniseras vid pluginaktivering och sparande av inställningar.
-- Fix: Null-utgångsvakt tillagd i `calculate_expiration` för kompatibilitet med PHP 8.4.
-- Fix: Dubbla registreringar blockeras när kunden redan har ett aktivt medlemskap.
-- Fix: Nullkontroll tillagd för `date_expiration` i kassan.
-- Fix: Webbplatsprovisionering har stärkts — begränsningar, medlemskapsinferens, domänuppgradering.
-- Fix: Statusetiketten för förinstallationskontroll korrigerad till INTE Aktiverad när kontrollen misslyckas.
-- Fix: Kassan använder domänen för e-postverifierings-URL:er.
-- Fix: Auto-login efter kassan när inget lösenordsfält finns.
-- Fix: Gratis medlemskap går inte längre ut — behandlas som livstidsmedlemskap.
-- Fix: E-postverifieringsport håller webbplatsen från att publiceras tills kunden verifierar sin e-post.
-- Fix: SES v2 API endpoint base path och identitetsrutt korrigerad.
-- Fix: `wu_inline_login_error` hook emitteras i pre-submit catch block.
+- Nytt: Export och import för enskild site har lagts till under **Verktyg > Export och import**.
+- Åtgärdat: Export-ZIP-filer levereras nu via en autentiserad nedladdningsendpoint.
+- Åtgärdat: Risk för SQL-injektion och frågeproblem i väntande export-/importfrågor har korrigerats.
+- Åtgärdat: Väntande site publiceras inte när admin manuellt verifierar kundens e-post.
+- Åtgärdat: Föräldralösa pending_site-poster rensas upp när medlemskap saknas.
+- Åtgärdat: Padding i inställningsnavigeringen och navigering till sökankare har korrigerats.
+- Åtgärdat: Väntande sites visas nu först i vyn Alla Sites.
+- Åtgärdat: Screenshot-leverantörens (mShots) User-Agent-header har lagts till för att förhindra 403-fel.
+- Åtgärdat: Cirkulärt beroende i Import cron-schema har lösts.
+- Åtgärdat: Rundturs-ID:n normaliseras till understreck i nycklar för användarinställningar.
+- Förbättrat: ZipArchive används nu i stället för Alchemy/Zippy för bättre kompatibilitet.
+
+## Version 2.8.0 — Släppt den 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- Nytt: Enable Jumper-växel tillagd i inställningsgränssnittet för Other Options.
+- Nytt: Status-kolumn tillagd i listtabellen för checkout-formulär.
+- Nytt: Addon sunrise-filladdare för anpassade MU plugin sunrise-tillägg.
+- Förbättrat: Inställning för att välja in felrapportering borttagen från inställningssidan.
+- Fix: Tack-sidans webbplatskort — bilden är nu begränsad och länkarna korrekt stylade.
+- Fix: Skärmbildsleverantören bytt från thum.io till WordPress.com mShots.
+- Fix: Enable Registration och Default Role ställer nu in korrekta standardvärden vid ny installation.
+- Fix: `get_site_url()` returnerar inte längre tomt när domänen innehåller en port.
+- Fix: Klonade mediefiler kopieras nu korrekt när inställningen `copy_media` var tom.
+- Fix: Objektcache ogiltigförklaras korrekt efter network-activate sitemeta-skrivning.
+- Fix: Anpassad domän markeras automatiskt som primär vid DNS-verifiering för domäner med tre delar.
+- Fix: Väntande membership avbryts när utgången betalning rensas bort.
+- Fix: Lösenordsstyrkekontrollen binds om efter att inline-inloggningsprompten avvisats.
+- Fix: Oändlig sidomladdning stoppad på tack-sidan när webbplatsen redan skapats.
+- Fix: Registreringsalternativet i WP-kärnan synkroniseras vid plugin-aktivering och när inställningar sparas.
+- Fix: Null-utgångsskydd tillagt i `calculate_expiration` för PHP 8.4-kompatibilitet.
+- Fix: Dubbletter av registreringar blockeras när kunden redan har ett aktivt membership.
+- Fix: Null-kontroll tillagd för `date_expiration` i checkout.
+- Fix: Webbplatsprovisionering härdad — begränsningar, membership-härledning, domänpromotering.
+- Fix: Statusetikett för förinstallationskontroll korrigerad till NOT Activated när kontrollen misslyckas.
+- Fix: Checkout-domän används för URL:er för e-postverifiering.
+- Fix: Automatisk inloggning efter checkout när inget lösenordsfält finns.
+- Fix: Gratis memberships upphör inte längre — behandlas som livstid.
+- Fix: E-postverifieringsgrind håller webbplatspublicering tills kunden verifierar e-postadressen.
+- Fix: Basväg för SES v2 API-endpoint och identitetsrutt korrigerade.
+- Fix: `wu_inline_login_error`-hook skickas i catch-block före inskickning.

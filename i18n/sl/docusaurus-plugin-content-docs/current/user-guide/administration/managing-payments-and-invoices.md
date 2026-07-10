@@ -3,9 +3,9 @@ title: Upravljanje plačil in računov
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Upravljanje plačil in računovanjem
+# Upravljanje plačil in računovanjem {#managing-payments-and-invoices}
 
-## Nastavitve za plačilo
+## Nastavitve za plačilo {#payment-settings}
 
 Preden začnete prejemati plačila boste morali nastavitviti podatke povezane z plačilom. Navigirajte do **Ultimate Multisite → Settings** in kliknite na tab **Payment**.
 
@@ -15,7 +15,7 @@ Tukaj je celoten pregled strani za nastavitve plačila:
 
 ![Celota stran za nastavitve plačila](/img/admin/settings-payments-full.png)
 
-### Splošne opcije za plačilo
+### Splošne opcije za plačilo {#general-payment-options}
 
 V splošnih nastavitvah lahko konfigurirate:
 
@@ -24,7 +24,7 @@ V splošnih nastavitvah lahko konfigurirate:
 
 ![Nastavitve plačilne brambe](/img/admin/settings-payments-options.png)
 
-### Plačilne brambe (Payment Gateways)
+### Plačilne brambe (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite podpira več različnih plačilnih bramb. Vsako lahko vključite in konfigurirate iz tabe za nastavitve plačila.
 
@@ -40,11 +40,11 @@ Vsaka bramba ima svoj oddel za konfiguracijo, kjer vnesete API ključe in druge 
 
 ![Dodatne nastavitve brambe](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox način (Sandbox Mode)
+### Sandbox način (Sandbox Mode) {#sandbox-mode}
 
 Lahko vključite **Sandbox Mode**, da preizkusite svoje integracijo plačil pred live uporabo. Ko je sandbox mode aktiven, ne bodo opravljene resnične stroške.
 
-## Pregled plačil
+## Pregled plačil {#viewing-payments}
 
 Navigirajte do strani **Payments** pod Ultimate Multisite, da vidite vse transakcije po vseh vaših omrežjih.
 
@@ -54,7 +54,7 @@ Lahko lahko filtrirate plačila po stanju (končano, čakanje, neuspešno, vrač
 
 Kliknite na plačilo, da vidite njegove podrobnosti, vključno z seznamom artiklov, povezanimi naročninami, informacijami o stranki in podatki o plačilni bramni vrati (payment gateway).
 
-## Računi
+## Računi {#invoices}
 
 Ultimate Multisite lahko samodejno generira račune za plačila. V nastavitvah plačil lahko prilagodite šablon računa in format številk.
 

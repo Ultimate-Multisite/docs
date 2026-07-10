@@ -1,30 +1,30 @@
 ---
-title: סקירה כללית של REST API
+title: סקירת REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# התיעוד של REST API
+# מדריך REST API {#rest-api-reference}
 
-## הגדרות בסיס
+## תצורת בסיס {#base-configuration}
 
-**כתובת בסיס (Base URL):** `{site_url}/wp-json/wu/v2/`
-**אימות (Authentication):** מפתח וסיסמה (API Key & Secret) (HTTP Basic Auth או פרמטרים ב-URL)
+**Base URL:** `{site_url}/wp-json/wu/v2/`
+**אימות:** מפתח API וסוד (HTTP Basic Auth או פרמטרים ב-URL)
 
-## אימות (Authentication)
+## אימות {#authentication}
 
-### הפעלת ה-API
+### הפעלת API {#enable-api}
 ```php
-// הפעלת ה-API בהגדרות של Ultimate Multisite או באופן תכנותי
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### קבלת פרטי האימות
+### קבלת פרטי גישה ל-API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### שיטות אימות
+### שיטות אימות {#authentication-methods}
 
 **HTTP Basic Auth (מומלץ):**
 ```bash
@@ -36,18 +36,18 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## נקודות קצה מרכזיות (Core Endpoints)
+## נקודות קצה מרכזיות {#core-endpoints}
 
-### 1. API של לקוחות (Customers API)
+### 1. API לקוחות {#1-customers-api}
 
-**נתיב בסיס (Base Route):** `/customers`
+**נתיב בסיס:** `/customers`
 
-**שליפת כל הלקוחות**
+**קבלת כל הלקוחות**
 ```http
 GET /wu/v2/customers
 ```
 
-**שליפת לקוח יחיד**
+**קבלת לקוח יחיד**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -82,9 +82,9 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API של אתרים (Sites API)
+### 2. API אתרים {#2-sites-api}
 
-**נתיב בסיס (Base Route):** `/sites`
+**נתיב בסיס:** `/sites`
 
 **יצירת אתר**
 ```http
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. API של מנויים (Memberships API)
+### 3. API חברויות {#3-memberships-api}
 
-**נתיב בסיס (Base Route):** `/memberships`
+**נתיב בסיס:** `/memberships`
 
-**יצירת מנוי**
+**יצירת חברות**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. API של מוצרים (Products API)
+### 4. API מוצרים {#4-products-api}
 
-**נתיב בסיס (Base Route):** `/products`
+**נתיב בסיס:** `/products`
 
-**שליפת כל המוצרים**
+**קבלת כל המוצרים**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API של תשלומים (Payments API)
+### 5. API תשלומים {#5-payments-api}
 
-**נתיב בסיס (Base Route):** `/payments`
+**נתיב בסיס:** `/payments`
 
 **יצירת תשלום**
 ```http
@@ -150,9 +150,9 @@ Content-Type: application/json
 }
 ```
 
-### 6. API של דומיינים (Domains API)
+### 6. API דומיינים {#6-domains-api}
 
-**נתיב בסיס (Base Route):** `/domains`
+**נתיב בסיס:** `/domains`
 
 **מיפוי דומיין**
 ```http
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## נקודת הרישום (Registration Endpoint)
+## נקודת קצה להרשמה {#registration-endpoint}
 
-נקודת הקצה `/register` מספקת תהליך מלא של קופת תשלום/רישום:
+נקודת הקצה `/register` מספקת תהליך תשלום/הרשמה מלא:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**תגובה (Response):**
+**תגובה:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## תגובות שגיאה (Error Responses)
+## נקודות קצה לדיירים ריבוניים {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 מוסיף כיסוי REST לדיירים ריבוניים עבור אינטגרציות שמקצות, בודקות או מאמתות דיירים מבודדים.
+
+מטען הבקשה המדויק תלוי ביכולת המארח המופעלת, אך אינטגרציות צריכות לצפות לקבוצות נקודות הקצה האלה:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+השתמשו בנקודת הקצה של bootstrap כדי להכין את מצב מרשם הדיירים, מסד הנתונים, מערכת הקבצים והניתוב. השתמשו בנקודות הקצה של מצב ההגירה והאימות לפני החלפת תעבורת הייצור. השתמשו בנקודת הקצה למחיקה עבור פירוק ריבוני כדי שפרטי הגישה למסד הנתונים יוסרו דרך תהליך הניקוי של התוסף.
+
+תגובות אופייניות של מצב הגירה כוללות:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+התייחסו אל `ready: false` כחסם טרום-השקה. בדקו את פרטי האימות, תקנו את קישור מארח מסד הנתונים, התור, הקצאת המשתמשים או בעיית הניתוב, ואז נסו שוב את האימות.
+
+## תגובות שגיאה {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## תג ועריכה (Pagination and Filtering)
+## עימוד וסינון {#pagination-and-filtering}
 
-**פרמטרים ב-Query:**
+**פרמטרי שאילתה:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 פרמטרים נפוצים:
-- `per_page` - מספר הפריטים לדף (ברירת מחדל: 20, מקסימום: 100)
-- `page` - מספר העמוד
+- `per_page` - פריטים לעמוד (ברירת מחדל: 20, מקסימום: 100)
+- `page` - מספר עמוד
 - `search` - מונח חיפוש
-- `orderby` - שדה המיון
-- `order` - כיוון המיון (asc/desc)
+- `orderby` - שדה מיון
+- `order` - כיוון מיון (asc/desc)
 - `status` - סינון לפי סטטוס
 - `date_created` - סינון לפי טווח תאריכים

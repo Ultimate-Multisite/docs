@@ -1,144 +1,150 @@
 ---
 title: 사이트 템플릿
 sidebar_position: 4
-_i18n_hash: 05938a764a4fd230e32fa0ef39d35ebd
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# 사이트 템플릿 (v2) {#site-templates-v2}
 
-_**NOTE: 이 문서는 Ultimate Multisite 버전 2.x를 참조합니다. 버전 1.x를 사용 중이라면**_ **이 문서를 참조하세요** _**.**_
+_**참고: 이 글은 Ultimate Multisite 버전 2.x에 대한 내용입니다. 버전 1.x를 사용 중이라면,**_ **이 글을 참조하세요** _**.**_
 
-Our goal when creating a premium network with Ultimate Multisite is to automate as many processes as possible while giving our clients flexibility and different options to choose from when creating their websites. One easy way to achieve this balance is to make use of the Ultimate Multisite Site Templates feature.
+Ultimate Multisite로 프리미엄 네트워크를 만들 때 우리의 목표는 고객이 웹사이트를 만들 때 유연성과 다양한 선택지를 제공하면서 가능한 한 많은 프로세스를 자동화하는 것입니다. 이 균형을 달성하는 쉬운 방법 중 하나는 Ultimate Multisite 사이트 템플릿 기능을 활용하는 것입니다.
 
-## What is a Site Template?
+## 사이트 템플릿이란 무엇인가요? {#what-is-a-site-template}
 
-As the name suggests, a Site Template is a boilerplate site that can be used as a base when creating new sites in your network.
+이름에서 알 수 있듯이, 사이트 템플릿은 네트워크에서 새 사이트를 만들 때 기반으로 사용할 수 있는 기본 구성 사이트입니다.
 
-This means you can create a base site, activate different plugins, set an active theme, and customize it in any way you like. Then, when your customer creates a new account, instead of getting a default WordPress site with no meaningful content inside it, they will get a copy of your base site with all the customizations and contents already in place.
+즉, 기본 사이트를 만들고, 다양한 plugin을 활성화하고, 활성 theme을 설정하고, 원하는 방식으로 사용자 지정할 수 있습니다. 그런 다음 고객이 새 account를 만들면, 의미 있는 콘텐츠가 없는 기본 WordPress 사이트를 받는 대신 모든 사용자 지정과 콘텐츠가 이미 적용된 기본 사이트의 복사본을 받게 됩니다.
 
-That sounds awesome, but how do I create a new site template? It is as simple as it can possibly get.
+멋지게 들리지만, 새 사이트 템플릿은 어떻게 만들까요? 가능한 한 아주 간단합니다.
 
-## Creating and Editing a new Site Template
+## 새 사이트 템플릿 만들기 및 편집 {#creating-and-editing-a-new-site-template}
 
-Site Templates are just normal sites on your network. To create a new template you can simply go to **Network Admin > Ultimate Multisite > Sites > Add Site.**
+사이트 템플릿은 네트워크의 일반 사이트와 동일합니다. 새 템플릿을 만들려면 간단히 **네트워크 관리자 > Ultimate Multisite > 사이트 > 사이트 추가**로 이동하면 됩니다.
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![사이트 목록 페이지의 사이트 추가 버튼](/img/config/site-templates-list.png)**
 
-This will open a modal window where it will ask for the **Site title, Site Domain/path,** and **Site type**. Under the **Site Type** drop-down field make sure that you select **Site Template** *.*  
+그러면 **사이트 제목, 사이트 Domain/path,** 및 **사이트 유형**을 묻는 모달 창이 열립니다. **사이트 유형** 드롭다운 field에서 반드시 **사이트 템플릿**을 선택하세요 *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![사이트 유형 드롭다운이 있는 사이트 템플릿 추가 모달](/img/config/site-templates-list.png)_
 
-At the bottom of the form, you will notice a **Copy Site** toggle switch. This will allow you to create a new site template based on an existing site template as your starting point to help you save time instead of creating a site template from scratch.
+템플릿에 무엇이 포함되어 있는지 설명하기 위해 고객에게 표시되는 설명도 추가할 수 있습니다:
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![사이트 템플릿 편집 화면의 사이트 템플릿 설명 field](/img/config/site-template-edit-description.png)
 
-### Customizing the contents of a Site Template
+양식 하단에 **사이트 복사** 토글 스위치가 표시됩니다. 이를 통해 처음부터 사이트 템플릿을 만드는 대신 시간을 절약할 수 있도록 기존 사이트 템플릿을 시작점으로 하여 새 사이트 템플릿을 만들 수 있습니다.
 
-To customize your site template, simply navigate to its dashboard panel and make the changes you need. You can create new posts, pages, activate plugins and change the active theme. You can even go to the Customizer and change all sorts of customization options.
+![사이트 복사 토글이 있는 사이트 템플릿 추가 모달](/img/config/site-templates-list.png)
 
-All of that data will be copied over when a customer creates a new site based on that Site Template.
+### 사이트 템플릿 콘텐츠 사용자 지정 {#customizing-the-contents-of-a-site-template}
 
-### Advanced Options
+사이트 템플릿을 사용자 지정하려면 해당 Dashboard 패널로 이동해 필요한 변경 사항을 적용하면 됩니다. 새 글과 페이지를 만들고, plugin을 활성화하고, 활성 theme을 변경할 수 있습니다. Customizer로 이동하여 다양한 사용자 지정 옵션을 변경할 수도 있습니다.
 
-If you know your way around some custom coding, you can make use of our Search and Replace API to automatically replace information on the new site after its creation. This is useful for things like replacing company names on an About page, replacing the contact email on the Contact page, etc.
+![사이트 템플릿 편집 인터페이스](/img/config/site-template-edit.png)
 
-### Using Site Templates
+고객이 해당 사이트 템플릿을 기반으로 새 사이트를 만들 때 이 모든 데이터가 복사됩니다.
 
-Ok, so you created a bunch of different Site Templates with different designs, themes and settings. How do you make them useful on your network now?
+### 고급 옵션 {#advanced-options}
 
-Basically, there are two approaches you can use now (not simultaneously):
+사용자 지정 코딩에 어느 정도 익숙하다면, Search and Replace API를 사용하여 새 사이트가 생성된 후 해당 사이트의 정보를 자동으로 바꿀 수 있습니다. 이는 소개 페이지의 회사 이름을 바꾸거나, 연락처 페이지의 연락처 이메일을 바꾸는 등의 작업에 유용합니다.
 
-  * Attaching one Site Template to each of your Plans
+### 사이트 템플릿 사용 {#using-site-templates}
 
-  * Allowing your clients to choose the site templates themselves during sign-up.
+좋습니다. 다양한 디자인, theme, 설정을 가진 여러 사이트 템플릿을 만들었습니다. 이제 네트워크에서 이를 어떻게 유용하게 활용할 수 있을까요?
 
-#### Mode 1: Assign Site Template
+기본적으로 지금 사용할 수 있는 접근 방식은 두 가지입니다(동시에 사용할 수는 없습니다):
 
-In this mode, your clients won’t be able to choose a template when they create an account, but rather you will define which template should be used on each of your Plans.
+  * 각 Plan에 하나의 사이트 템플릿 연결
 
-To do that, you’ll need to go to **Ultimate Multisite > Products > Edit**.
+**또는**
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+  * 가입 중에 고객이 직접 사이트 템플릿을 선택하도록 허용.
 
-This will bring you to the **Edit Product** page. Under the **Product Options** section, find the **Site template** tab and select the **Assign Site** **Template** option from the drop-down field. This will bring up the list of site templates available and it will allow you to select only one site template dedicated to the product.
+#### 모드 1: 사이트 템플릿 할당 {#mode-1-assign-site-template}
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+이 모드에서는 고객이 account를 만들 때 템플릿을 선택할 수 없으며, 대신 각 Plan에서 어떤 템플릿을 사용할지 사용자가 정의합니다.
 
-#### Mode 2: Choose Available Site Template
+이를 위해 **Ultimate Multisite > Products > 편집**으로 이동해야 합니다.
 
-In this mode, you’ll give your clients a choice during the sign-up process. They will be able to select from different site templates you define under the product settings. You have an option to limit the site template they can choose from under the selected product. This will allow you to have different sets of site templates under each product which is ideal to highlight different functions and features for a higher-priced product.
+![사이트 템플릿을 할당하기 위해 product 편집](/img/config/product-site-templates.png)
 
-On the **Edit Product** page. Under the **Product Options** section, find the **Site template** tab and select the **Choose Available Site Template** option from the drop-down field. This will bring up the list of site templates available and it will allow you to select the site template you wish to be available. You can do this by choosing its Behavior: **Available** if you want the site template to be included on the list. _**Not Available**_ if you want the site template not to show as an option. And **Pre-selected** if you wish one of the site templates listed to be the default selected.
+그러면 **Product 편집** 페이지로 이동합니다. **Product 옵션** 섹션에서 **사이트 템플릿** 탭을 찾아 드롭다운 field에서 **사이트 템플릿 할당** 옵션을 선택하세요. 그러면 사용 가능한 사이트 템플릿 목록이 표시되고, product 전용 사이트 템플릿을 하나만 선택할 수 있습니다.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![사이트 템플릿 할당 옵션이 있는 product 사이트 템플릿 탭](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form
+#### 모드 2: 사용 가능한 사이트 템플릿 선택 {#mode-2-choose-available-site-template}
 
-If you wish all your site templates to be available during the registration, or maybe do not prefer doing extra work of assigning or specifying site templates under each product you create. Then you can simply set the site template selection under your **Checkout Form**. To do this, you just need to go to **Ultimate Multisite > Checkout Forms**. Then click **Edit** under the form you wish to configure.
+이 모드에서는 가입 과정에서 고객에게 선택권을 제공합니다. 고객은 product 설정에서 사용자가 정의한 여러 사이트 템플릿 중에서 선택할 수 있습니다. 선택한 product 아래에서 고객이 선택할 수 있는 사이트 템플릿을 제한할 수 있는 옵션이 있습니다. 이를 통해 각 product 아래에 서로 다른 사이트 템플릿 세트를 둘 수 있으며, 이는 더 높은 가격의 product에 대해 다양한 기능과 특징을 강조하는 데 이상적입니다.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+**Product 편집** 페이지에서 **Product 옵션** 섹션 아래의 **사이트 템플릿** 탭을 찾아 드롭다운 field에서 **사용 가능한 사이트 템플릿 선택** 옵션을 선택하세요. 그러면 사용 가능한 사이트 템플릿 목록이 표시되고, 사용 가능하게 하고 싶은 사이트 템플릿을 선택할 수 있습니다. 동작을 선택하여 이를 설정할 수 있습니다: 사이트 템플릿을 목록에 포함하려면 **사용 가능**. 사이트 템플릿을 옵션으로 표시하지 않으려면 _**사용 불가**_. 그리고 나열된 사이트 템플릿 중 하나를 기본 선택으로 지정하려면 **미리 선택됨**.
 
-This will bring up the **Edit Checkout Form** page. Find the **Template Selection** field and click **Edit** under it.
+![동작 옵션이 있는 사용 가능한 사이트 템플릿 선택](/img/config/product-site-templates.png)
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+### 기본 모드: Checkout 양식의 사이트 템플릿 선택 {#default-mode-site-template-selection-on-the-checkout-form}
 
-A modal window will appear. Under the **Template Sites** field you can select and list down all the site templates you wish to be available during registration. The site templates you specify from here will be available regardless of whatever product the user selected.
+등록 중에 모든 사이트 템플릿을 사용할 수 있게 하고 싶거나, 생성하는 각 product 아래에서 사이트 템플릿을 할당하거나 지정하는 추가 작업을 선호하지 않을 수 있습니다. 그러면 **Checkout 양식**에서 사이트 템플릿 선택을 간단히 설정할 수 있습니다. 이를 위해 **Ultimate Multisite > Checkout Forms**로 이동하고 구성하려는 양식 아래의 **편집**을 클릭하세요.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+그러면 **Checkout 양식 편집** 페이지가 표시됩니다. **템플릿 선택** field를 찾아 그 아래의 **편집**을 클릭하세요.
 
-### Site Template Options
+모달 창이 나타납니다. **Template Sites** 필드 아래에서 등록 중 사용할 수 있도록 하려는 모든 사이트 템플릿을 선택하고 나열할 수 있습니다. 여기에서 지정한 사이트 템플릿은 사용자가 선택한 제품이 무엇이든 관계없이 사용할 수 있습니다.
 
-There are other site templates functions available that you can turn on or off under Ultimate Multisite settings.
+![결제 양식 편집기의 템플릿 선택 필드](/img/config/checkout-form-template-step.png)
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+프론트엔드에서 고객은 결제 중 템플릿 선택기를 보고 새 사이트의 시작 디자인을 선택할 수 있습니다.
 
-#### Allow Template Switching
+![등록 중 프론트엔드 템플릿 선택기](/img/config/frontend-template-chooser.png)
 
-Enabling this option will allow your clients to switch the template they choose during the sign-up process after the account and site is created. This is useful from a client’s point of view since it allows them to re-select a template if they later find out their original choice was not the best one for their particular needs.
+### 사이트 템플릿 옵션 {#site-template-options}
 
-#### Allow Users to use their Site as templates
+Ultimate Multisite 설정 아래에서 켜거나 끌 수 있는 다른 사이트 템플릿 기능도 있습니다.
 
-Since subsite users spent time building and designing their own site, they may want to clone and use it as one of the site templates available upon creating another subsite on your network. This option will allow them to achieve that.
+![Ultimate Multisite 설정의 사이트 템플릿 옵션](/img/config/settings-sites-templates-section.png)
 
-#### Copy Media on Template Duplication
+#### 템플릿 전환 허용 {#allow-template-switching}
 
-Checking this option will copy the media uploaded on the template site to the newly created site. This can be overridden on each of the plans.
+이 옵션을 활성화하면 고객이 Account와 사이트가 생성된 후 가입 과정에서 선택한 템플릿을 전환할 수 있습니다. 나중에 원래 선택이 특정 요구에 가장 적합하지 않았다는 것을 알게 되었을 때 템플릿을 다시 선택할 수 있으므로 고객의 관점에서 유용합니다.
 
-#### **Prevent Search Engines from indexing Site Templates**
+#### 사용자가 자신의 사이트를 템플릿으로 사용하도록 허용 {#allow-users-to-use-their-site-as-templates}
 
-Site templates as discussed in this article are boilerplate but still part of your network which means that it is still available for search engines to find. This option will allow you to hide the site templates so that search engines can index them.
+하위 사이트 사용자는 자신의 사이트를 구축하고 디자인하는 데 시간을 들였기 때문에, 네트워크에서 다른 하위 사이트를 만들 때 사용할 수 있는 사이트 템플릿 중 하나로 복제하여 사용하고 싶을 수 있습니다. 이 옵션을 사용하면 그렇게 할 수 있습니다.
 
-## Pre-populating Site Templates with auto search-and-replace
+#### 템플릿 복제 시 미디어 복사 {#copy-media-on-template-duplication}
 
-One of the most powerful features of Ultimate Multisite is the ability to add arbitrary text, color, and select fields onto the registration form. Once we have that data captured, we can use it to pre-populate the content in certain parts of the site template selected. Then, when the new site is being published, Ultimate Multisite will replace the placeholders with the actual information entered during registration.
+이 옵션을 선택하면 템플릿 사이트에 업로드된 미디어가 새로 생성된 사이트로 복사됩니다. 이는 각 플랜에서 재정의할 수 있습니다.
 
-For example, if you wish to get your end-user's company name during registration and automatically put the company name on the home page. On your template site home page you need to add the placeholders, like in the image below (placeholders should be added surrounded by double curly braces - {{placeholder_name}}).
+#### **검색 엔진이 사이트 템플릿을 색인화하지 못하도록 방지** {#prevent-search-engines-from-indexing-site-templates}
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+이 문서에서 설명한 사이트 템플릿은 기본 틀이지만 여전히 네트워크의 일부이므로 검색 엔진이 찾을 수 있습니다. 이 옵션을 사용하면 검색 엔진이 사이트 템플릿을 색인화할 수 없도록 사이트 템플릿을 숨길 수 있습니다.
 
-Then, you can simply add a matching registration field on your checkout form to capture that data:
+## 자동 검색 및 바꾸기로 사이트 템플릿 미리 채우기 {#pre-populating-site-templates-with-auto-search-and-replace}
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+Ultimate Multisite의 가장 강력한 기능 중 하나는 등록 양식에 임의의 텍스트, 색상, 선택 필드를 추가할 수 있는 기능입니다. 해당 데이터를 캡처한 후에는 선택한 사이트 템플릿의 특정 부분에 콘텐츠를 미리 채우는 데 사용할 수 있습니다. 그런 다음 새 사이트가 게시될 때 Ultimate Multisite가 등록 중 입력된 실제 정보로 자리표시자를 대체합니다.
 
-Your customer will then be able to fill that field during the registration.
+예를 들어 등록 중 최종 사용자의 회사명을 받아 홈 페이지에 회사명을 자동으로 넣고 싶다고 가정해 보겠습니다. 템플릿 사이트 홈 페이지에 아래 이미지처럼 자리표시자를 추가해야 합니다(자리표시자는 이중 중괄호로 둘러싸서 추가해야 합니다 - {{placeholder_name}}).
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![중괄호 안에 자리표시자 텍스트가 있는 홈페이지](/img/config/site-templates-list.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+그런 다음 해당 데이터를 캡처하기 위해 결제 양식에 일치하는 등록 필드를 간단히 추가할 수 있습니다. 템플릿 선택에 사용한 동일한 결제 양식 편집기를 통해 템플릿 선택기 옆에 사용자 지정 필드를 배치할 수 있습니다.
 
-Ultimate Multisite will then replace the placeholders with the data provided by the customer automatically.
+![결제 양식 편집기의 템플릿 선택 및 등록 필드](/img/config/checkout-form-template-step.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+그러면 고객이 등록 중 해당 필드를 채울 수 있습니다.
 
-### Solving the "template full of placeholders" problem
+![템플릿 선택기가 있는 프론트엔드 결제 양식](/img/config/frontend-template-chooser.png)
 
-All of that is great, but we do run into an ugly problem: now our site templates - that can be visited by our customers - are full of ugly placeholders that don't tell much.
+그러면 Ultimate Multisite가 고객이 제공한 데이터로 자리표시자를 자동으로 대체합니다.
 
-To solve that, we offer the option of setting fake values for the placeholders, and we use those values to search and replace their contents on the template sites while your customers are visiting.
+![사이트에서 고객 데이터로 대체된 자리표시자](/img/config/site-templates-list.png)
 
-You can have access to the template placeholders editor by heading to **Ultimate Multisite > Settings > Sites**, and then, on the sidebar, clicking the **Edit Placeholders** link.
+### "자리표시자로 가득 찬 템플릿" 문제 해결 {#solving-the-template-full-of-placeholders-problem}
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+이 모든 것은 좋지만 보기 좋지 않은 문제가 생깁니다. 고객이 방문할 수 있는 사이트 템플릿이 이제 별로 설명이 되지 않는 보기 싫은 자리표시자로 가득 차게 됩니다.
 
-That will take you to the placeholders' content editor, where you can add placeholders and their respective content.
+이를 해결하기 위해 자리표시자에 가짜 값을 설정하는 옵션을 제공하며, 고객이 방문하는 동안 템플릿 사이트에서 해당 값을 사용해 콘텐츠를 검색하고 바꿉니다.
 
-![Template placeholders content editor](/img/config/settings-sites.png)
+**Ultimate Multisite > Settings > Sites**로 이동한 다음 사이드바에서 **Edit Placeholders** 링크를 클릭하면 템플릿 자리표시자 편집기에 접근할 수 있습니다.
+
+![Sites 설정 페이지 아래의 사이트 템플릿 설정](/img/config/settings-sites-templates-section.png)
+
+그러면 자리표시자의 콘텐츠 편집기로 이동하며, 여기에서 자리표시자와 각각의 콘텐츠를 추가할 수 있습니다.
+
+![템플릿 자리표시자 콘텐츠 편집기 진입점](/img/config/settings-sites-templates-section.png)

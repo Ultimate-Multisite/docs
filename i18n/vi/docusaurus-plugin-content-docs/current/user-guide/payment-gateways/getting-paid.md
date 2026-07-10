@@ -1,110 +1,126 @@
 ---
-title: Nhận Thanh Toán
+title: Nhận thanh toán
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Nhận Thanh Toán (v2)
+# Nhận thanh toán (v2) {#getting-paid-v2}
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này áp dụng cho Ultimate Multisite phiên bản 2.x.**_
+_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-Ultimate Multisite tích hợp sẵn hệ thống thành viên và thanh toán. Để hệ thống thanh toán hoạt động, chúng tôi đã tích hợp các cổng thanh toán phổ biến nhất trong thương mại điện tử. Các cổng thanh toán mặc định trong Ultimate Multisite là _Stripe_, _PayPal_ và Thanh toán thủ công. Bạn cũng có thể sử dụng _WooCommerce_, _GoCardless_ và _Payfast_ để nhận thanh toán bằng cách cài đặt các add-on tương ứng.
+Ultimate Multisite có hệ thống thành viên và thanh toán tích hợp sẵn. Để hệ thống thanh toán của chúng tôi hoạt động, chúng tôi đã tích hợp các cổng thanh toán phổ biến nhất được dùng trong thương mại điện tử. Các cổng thanh toán mặc định trong Ultimate Multisite là _Stripe_ , _PayPal_ , và Thanh toán thủ công. Bạn cũng có thể dùng _WooCommerce_ , _GoCardless_ và _Payfast_ để nhận thanh toán bằng cách cài đặt các add-on tương ứng của chúng.
 
-## Cài Đặt Cơ Bản
+## Cài đặt cơ bản {#basic-settings}
 
-Bạn có thể cấu hình bất kỳ cổng thanh toán nào trong phần cài đặt thanh toán của Ultimate Multisite. Truy cập bằng cách vào **Ultimate Multisite menu > Settings > Payments.**
+Bạn có thể cấu hình bất kỳ cổng thanh toán nào trong số này trong cài đặt thanh toán của Ultimate Multisite. Bạn có thể tìm thấy bằng cách vào **menu Ultimate Multisite > Cài đặt > Thanh toán.**
 
-![Trang cài đặt thanh toán trong Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Trang cài đặt thanh toán trong Ultimate Multisite hiển thị bảng Thanh toán](/img/config/payments-settings-page.png)
 
-Trước khi thiết lập cổng thanh toán, hãy xem qua các cài đặt thanh toán cơ bản bạn có thể cấu hình:
+Trước khi bạn thiết lập cổng thanh toán, vui lòng xem qua các cài đặt thanh toán cơ bản mà bạn có thể cấu hình:
 
-**Force auto-renew:** Tùy chọn này đảm bảo thanh toán sẽ tự động gia hạn vào cuối mỗi chu kỳ thanh toán tùy theo tần suất thanh toán mà người dùng đã chọn.
+**Bắt buộc tự động gia hạ** **n:** Tùy chọn này sẽ đảm bảo rằng khoản thanh toán sẽ tự động lặp lại vào cuối mỗi chu kỳ thanh toán tùy thuộc vào tần suất thanh toán mà người dùng đã chọn.
 
-![Nút bật/tắt Force auto-renew](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** Khi bật tùy chọn này, khách hàng không cần nhập thông tin tài chính trong quá trình đăng ký. Thông tin này chỉ được yêu cầu khi thời gian dùng thử kết thúc.
+Ultimate Multisite v2.13.0 kiểm tra xem cổng đang hoạt động có thông tin xác thực gia hạn có thể tái sử dụng hay không trước khi lưu một gói thành viên định kỳ có bật tự động gia hạn. Thông tin xác thực gia hạn có thể là subscription của cổng, thỏa thuận thanh toán, vault token đã lưu, hoặc phương thức thanh toán có thể tái sử dụng tương đương. Nếu cổng báo rằng không có thông tin xác thực khả dụng nào tồn tại, Ultimate Multisite sẽ lưu gói thành viên nhưng tắt tự động gia hạn và ghi lại trạng thái thiếu thông tin xác thực để quản trị viên hoặc quy trình hỗ trợ có thể yêu cầu khách hàng ủy quyền lại thanh toán trước ngày gia hạn.
 
-![Nút bật/tắt Allow trials without payment method](/img/config/settings-payment-gateways.png)
+Điều này ngăn một gói thành viên trông như thể sẽ tự động gia hạn trong khi cổng chỉ có thể thu các khoản thanh toán một lần. Các add-on cổng nên xác nhận rằng các checkout định kỳ lưu một thông tin xác thực có thể tái sử dụng, đặc biệt khi cổng hỗ trợ cả chế độ thu một lần và chế độ thanh toán vaulted/subscription.
 
-**Send invoice on payment confirmation:** Tùy chọn này cho phép bạn chọn có gửi hóa đơn sau khi thanh toán hay không. Lưu ý rằng người dùng có thể xem lịch sử thanh toán trong dashboard của subsite. Tùy chọn này không áp dụng cho Cổng thanh toán thủ công.
+**Cho phép dùng thử không cần phương thức** **thanh toán:** Khi bật tùy chọn này, client của bạn sẽ không phải thêm bất kỳ thông tin tài chính nào trong quá trình đăng ký. Điều này chỉ được yêu cầu khi thời gian dùng thử hết hạn.
 
-![Nút bật/tắt Send invoice on payment confirmation](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** Tại đây, bạn có thể chọn sử dụng mã tham chiếu thanh toán hoặc hệ thống số thứ tự. Nếu chọn mã tham chiếu thanh toán cho hóa đơn, bạn không cần cấu hình gì thêm. Nếu chọn hệ thống số thứ tự, bạn cần cấu hình **next invoice number** (Số này sẽ được dùng làm số hóa đơn cho hóa đơn tiếp theo được tạo trong hệ thống. Số này tự động tăng thêm một mỗi khi có hóa đơn mới. Bạn có thể thay đổi và lưu để đặt lại số thứ tự hóa đơn về một giá trị cụ thể) và **invoice number prefix.**
+**Gửi hóa đơn khi xác nhận thanh toán:** Tùy chọn này cho bạn lựa chọn có gửi hóa đơn sau khi thanh toán hay không. Lưu ý rằng người dùng sẽ có quyền truy cập lịch sử thanh toán của họ trong dashboard subsite của họ. Tùy chọn này không áp dụng cho Cổng thủ công.
 
-![Lựa chọn hệ thống đánh số hóa đơn](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Cài đặt số thứ tự và tiền tố hóa đơn](/img/config/settings-payment-gateways.png)
+**Sơ đồ đánh số hóa đơn:** Tại đây, bạn có thể chọn mã tham chiếu thanh toán hoặc sơ đồ số tuần tự. Nếu bạn chọn dùng mã tham chiếu thanh toán cho hóa đơn của mình, bạn không cần cấu hình gì thêm. Nếu bạn chọn dùng sơ đồ số tuần tự, bạn sẽ cần cấu hình **số hóa đơn tiếp theo** (Số này sẽ được dùng làm số hóa đơn cho hóa đơn tiếp theo được tạo trên hệ thống. Nó tăng thêm một mỗi khi hóa đơn mới được tạo. Bạn có thể thay đổi và lưu nó để đặt lại số thứ tự hóa đơn về một giá trị cụ thể) và **tiền tố số hóa đơn.**
 
-## Tìm các cổng thanh toán ở đâu:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Bạn có thể thiết lập các cổng thanh toán trên cùng một trang (**Ultimate Multisite > Settings > Payments**). Ngay bên dưới **active payment gateways**, bạn sẽ thấy: _Stripe_, _Stripe Checkout_, _PayPal_ và _Manual_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Danh sách các cổng thanh toán đang hoạt động](/img/config/settings-payment-gateways.png)
+## Nơi tìm các cổng: {#where-to-find-the-gateways}
 
-Chúng tôi có bài viết riêng cho từng cổng thanh toán, hướng dẫn bạn các bước thiết lập. Bạn có thể tìm thấy ở các liên kết bên dưới.
+Bạn có thể thiết lập các cổng thanh toán trên cùng một trang ( **Ultimate Multisite > Cài đặt > Thanh toán**). Ngay bên dưới **cổng thanh toán đang hoạt động** , bạn sẽ có thể thấy: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ và _Manual_.
 
-**Thiết lập cổng thanh toán Stripe**
+![Phần Cổng thanh toán đang hoạt động liệt kê Stripe, Stripe Checkout, PayPal và Manual](/img/config/payments-active-gateways.png)
 
-**Thiết lập cổng thanh toán PayPal**
+Chúng tôi có một bài viết riêng cho từng cổng thanh toán để hướng dẫn bạn qua các bước thiết lập; bạn có thể tìm thấy chúng ở các liên kết bên dưới.
+
+Bạn có thể xem và chỉnh sửa chi tiết thanh toán:
+
+![Giao diện chỉnh sửa thanh toán](/img/admin/payment-edit.png)
+
+Đây là chế độ xem đầy đủ của trang chỉnh sửa thanh toán:
+
+![Giao diện chỉnh sửa thanh toán đầy đủ](/img/admin/payment-edit-full.png)
+
+Đây cũng là chế độ xem đầy đủ của cài đặt cổng thanh toán:
+
+![Trang cài đặt cổng thanh toán đầy đủ](/img/config/settings-payments-gateways-full.png)
+
+**Thiết lập cổng Stripe**
+
+**Thiết lập cổng PayPal**** **
 
 **Thiết lập thanh toán thủ công**
 
-Nếu bạn muốn sử dụng _WooCommerce_, _GoCardless_ hoặc _Payfast_ làm cổng thanh toán, bạn cần **cài đặt và cấu hình các add-on tương ứng**.
+Bây giờ, nếu bạn muốn dùng _WooCommerce_ , _GoCardless_ hoặc _Payfast_ làm cổng thanh toán, bạn sẽ cần **cài đặt và cấu hình các add-on của chúng**.
 
-### Cách cài đặt add-on WooCommerce:
+### Cách cài đặt add-on WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
-Chúng tôi hiểu rằng _Stripe_ và _PayPal_ không khả dụng ở một số quốc gia, điều này hạn chế người dùng Ultimate Multisite sử dụng plugin của chúng tôi một cách hiệu quả. Vì vậy, chúng tôi đã tạo add-on tích hợp _WooCommerce_, một plugin thương mại điện tử rất phổ biến. Các nhà phát triển trên khắp thế giới đã tạo ra nhiều add-on để tích hợp các cổng thanh toán khác nhau vào WooCommerce. Chúng tôi tận dụng điều này để mở rộng các cổng thanh toán bạn có thể sử dụng với hệ thống thanh toán của Ultimate Multisite.
+Chúng tôi hiểu rằng _Stripe_ và _PayPal_ không khả dụng ở một số quốc gia, điều này giới hạn hoặc cản trở người dùng Ultimate Multisite sử dụng plugin của chúng tôi một cách hiệu quả. Vì vậy, chúng tôi đã tạo một add-on để tích hợp _WooCommerce,_ vốn là một plugin thương mại điện tử rất phổ biến. Các nhà phát triển trên khắp thế giới đã tạo add-on để tích hợp các cổng thanh toán khác nhau vào nó. Chúng tôi đã tận dụng điều này để mở rộng các cổng thanh toán bạn có thể dùng với hệ thống thanh toán của Ultimate Multisite.
 
-_**QUAN TRỌNG:** Ultimate Multisite: WooCommerce Integration yêu cầu WooCommerce phải được kích hoạt ít nhất trên trang chính của bạn._
+_**QUAN TRỌNG:** Ultimate Multisite: WooCommerce Integration yêu cầu WooCommerce được kích hoạt ít nhất trên site chính của bạn._
 
-Đầu tiên, hãy truy cập trang add-ons. Bạn có thể tìm thấy bằng cách vào **Ultimate Multisite > Settings**. Bạn sẽ thấy bảng **Add-ons**. Nhấp vào **Check our Add-ons**.
+Trước tiên, vui lòng đi tới trang add-on. Bạn có thể tìm thấy bằng cách vào **Ultimate Multisite > Settings**. Bạn sẽ thấy bảng **Add-ons**. Nhấp vào **Check our Add-ons**.
 
-![Trang cài đặt với phần add-ons](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Sau khi nhấp vào **Check our Add-ons**, bạn sẽ được chuyển đến trang add-ons. Tại đây bạn có thể tìm thấy tất cả add-on của Ultimate Multisite. Nhấp vào add-on **Ultimate Multisite: WooCommerce Integration**.
+Sau khi nhấp vào **Check our Add-ons** , bạn sẽ được chuyển hướng đến trang add-on. Tại đây bạn có thể tìm thấy tất cả add-on của Ultimate Multisite. Nhấp vào add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Trang add-ons hiển thị danh sách các add-on có sẵn](/img/config/settings-general.png)
+![Trang add-on liệt kê các add-on Ultimate Multisite bao gồm WooCommerce Integration](/img/addons/addons-page.png)
 
-Một cửa sổ sẽ hiện lên với chi tiết add-on. Chỉ cần nhấp vào **Install Now**.
+Một cửa sổ sẽ bật lên với chi tiết tiện ích bổ sung. Chỉ cần nhấp vào **Cài đặt ngay**.
 
-![Hộp thoại cài đặt add-on WooCommerce](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: hộp thoại chi tiết tiện ích bổ sung Ultimate Multisite WooCommerce Integration với nút Cài đặt ngay -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển đến trang plugins. Tại đây, chỉ cần nhấp vào **Network Activate** và add-on WooCommerce sẽ được kích hoạt trên toàn mạng của bạn.
+Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugin. Tại đây, chỉ cần nhấp vào **Kích hoạt trên mạng** và tiện ích bổ sung WooCommerce sẽ được kích hoạt trên mạng của bạn.
 
-![Kích hoạt Network Activate cho add-on WooCommerce](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Trang plugin với liên kết Kích hoạt trên mạng cho tiện ích bổ sung WooCommerce Integration -->
 
-Sau khi kích hoạt, nếu bạn vẫn chưa cài đặt và kích hoạt plugin WooCommerce trên website, bạn sẽ nhận được thông báo nhắc nhở.
+Sau khi kích hoạt, nếu bạn vẫn chưa cài đặt và kích hoạt plugin WooCommerce trên trang web của mình, bạn sẽ nhận được lời nhắc.
 
-![Thông báo nhắc nhở kích hoạt WooCommerce](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Thông báo quản trị nhắc quản trị viên cài đặt và kích hoạt plugin WooCommerce -->
 
-Để tìm hiểu thêm về add-on WooCommerce Integration, **nhấp vào đây**.
+Để đọc thêm về tiện ích bổ sung WooCommerce Integration, **nhấp vào đây**.
 
-### Cách cài đặt add-on GoCardless:
+### Cách cài đặt tiện ích bổ sung GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Các bước cài đặt add-on _GoCardless_ khá giống với add-on _WooCommerce_. Hãy truy cập trang add-ons và chọn add-on **Ultimate Multisite: GoCardless Gateway**.
+Các bước để cài đặt tiện ích bổ sung _GoCardless_ gần như giống với tiện ích bổ sung _WooCommerce_. Vui lòng đi đến trang tiện ích bổ sung và chọn tiện ích bổ sung **Ultimate Multisite: GoCardless Gateway**.
 
-![Trang add-ons hiển thị danh sách các add-on có sẵn](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Trang tiện ích bổ sung với tiện ích bổ sung Ultimate Multisite GoCardless Gateway được tô sáng -->
 
-Cửa sổ add-on sẽ hiện lên. Nhấp vào **Install Now**.
+Cửa sổ tiện ích bổ sung sẽ bật lên. Nhấp vào **Cài đặt ngay**.
 
-![Hộp thoại cài đặt add-on GoCardless](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: hộp thoại chi tiết tiện ích bổ sung Ultimate Multisite GoCardless Gateway với nút Cài đặt ngay -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển đến trang plugins. Tại đây, chỉ cần nhấp vào **Network Activate** và add-on _GoCardless_ sẽ được kích hoạt trên toàn mạng của bạn.
+Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugin. Tại đây, chỉ cần nhấp vào **Kích hoạt trên mạng** và tiện ích bổ sung _GoCardless_ sẽ được kích hoạt trên mạng của bạn.
 
-![Kích hoạt Network Activate cho add-on GoCardless](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Trang plugin với liên kết Kích hoạt trên mạng cho tiện ích bổ sung GoCardless Gateway -->
 
-Để tìm hiểu cách bắt đầu với cổng thanh toán _GoCardless_, **đọc bài viết này**.
+Để tìm hiểu cách bắt đầu với gateway _GoCardless_, **đọc bài viết này**.
 
-### Cách cài đặt add-on Payfast:
+### Cách cài đặt tiện ích bổ sung Payfast: {#how-to-install-the-payfast-add-on}
 
-Truy cập trang add-ons và chọn add-on **Ultimate Multisite: Payfast Gateway**.
+Đi đến trang tiện ích bổ sung và chọn tiện ích bổ sung **Ultimate Multisite: Payfast Gateway**.
 
-![Trang add-ons hiển thị danh sách các add-on có sẵn](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Trang tiện ích bổ sung với tiện ích bổ sung Ultimate Multisite Payfast Gateway được tô sáng -->
 
-Cửa sổ add-on sẽ hiện lên. Nhấp vào **Install Now.**
+Cửa sổ tiện ích bổ sung sẽ bật lên. Nhấp vào **Cài đặt ngay.**
 
-![Hộp thoại cài đặt add-on Payfast](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: hộp thoại chi tiết tiện ích bổ sung Ultimate Multisite Payfast Gateway với nút Cài đặt ngay -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển đến trang plugins. Tại đây, chỉ cần nhấp vào **Network Activate** và add-on _Payfast_ sẽ được kích hoạt trên toàn mạng của bạn.
+Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugin. Tại đây, chỉ cần nhấp vào **Kích hoạt trên mạng** và tiện ích bổ sung _Payfast_ sẽ được kích hoạt trên mạng của bạn.
 
-![Kích hoạt Network Activate cho add-on Payfast](/img/config/settings-general.png)
+<!-- Không có ảnh chụp màn hình: Trang plugin với liên kết Kích hoạt trên mạng cho tiện ích bổ sung Payfast Gateway -->

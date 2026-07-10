@@ -1,58 +1,58 @@
 ---
 title: REST API അവലോകനം
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API റഫറൻസ്
+# REST API റഫറൻസ് {#rest-api-reference}
 
-## അടിസ്ഥാന കോൺഫിഗറേഷൻ (Base Configuration)
+## അടിസ്ഥാന ക്രമീകരണം {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key & Secret (HTTP Basic Auth അല്ലെങ്കിൽ URL Parameters)
+**അടിസ്ഥാന URL:** `{site_url}/wp-json/wu/v2/`
+**പ്രാമാണീകരണം:** API Key & രഹസ്യം (HTTP Basic Auth അല്ലെങ്കിൽ URL പാരാമീറ്ററുകൾ)
 
-## Authentication (ആധികാരികത)
+## പ്രാമാണീകരണം {#authentication}
 
-### API പ്രവർത്തനക്ഷമമാക്കുക (Enable API)
+### API പ്രവർത്തനക്ഷമമാക്കുക {#enable-api}
 ```php
-// Ultimate Multisite സജ്ജീകരണങ്ങളിൽ അല്ലെങ്കിൽ കോഡിംഗിലൂടെ API പ്രവർത്തനക്ഷമമാക്കുക
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Credentials നേടുക (Get API Credentials)
+### API ക്രെഡൻഷ്യലുകൾ നേടുക {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication രീതികൾ (Authentication Methods)
+### പ്രാമാണീകരണ രീതികൾ {#authentication-methods}
 
 **HTTP Basic Auth (ശുപാർശ ചെയ്യുന്നത്):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL പാരാമീറ്ററുകൾ:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## പ്രധാന എൻഡ്‌പോയിന്റുകൾ (Core Endpoints)
+## പ്രധാന എൻഡ്‌പോയിന്റുകൾ {#core-endpoints}
 
-### 1. Customers API (ഉപഭോക്താക്കൾ)
+### 1. ഉപഭോക്താക്കളുടെ API {#1-customers-api}
 
-**Base Route:** `/customers`
+**അടിസ്ഥാന റൂട്ട്:** `/customers`
 
-**എല്ലാ ഉപഭോക്താക്കളെയും നേടുക (Get All Customers)**
+**എല്ലാ ഉപഭോക്താക്കളെയും നേടുക**
 ```http
 GET /wu/v2/customers
 ```
 
-**ഒരു ഉപഭോക്താവിനെ നേടുക (Get Single Customer)**
+**ഒറ്റ ഉപഭോക്താവിനെ നേടുക**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ഉപഭോക്താവിനെ സൃഷ്ടിക്കുക (Create Customer)**
+**ഉപഭോക്താവിനെ സൃഷ്ടിക്കുക**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**ഉപഭോക്താവിനെ അപ്ഡേറ്റ് ചെയ്യുക (Update Customer)**
+**ഉപഭോക്താവിനെ അപ്‌ഡേറ്റ് ചെയ്യുക**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**ഉപഭോക്താവിനെ ഡിലീറ്റ് ചെയ്യുക (Delete Customer)**
+**ഉപഭോക്താവിനെ ഇല്ലാതാക്കുക**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API (സൈറ്റുകൾ)
+### 2. സൈറ്റുകളുടെ API {#2-sites-api}
 
-**Base Route:** `/sites`
+**അടിസ്ഥാന റൂട്ട്:** `/sites`
 
-**സൈറ്റ് സൃഷ്ടിക്കുക (Create Site)**
+**സൈറ്റ് സൃഷ്ടിക്കുക**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API (Membership)
+### 3. മെമ്പർഷിപ്പുകളുടെ API {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**അടിസ്ഥാന റൂട്ട്:** `/memberships`
 
-**Membership സൃഷ്ടിക്കുക (Create Membership)**
+**മെമ്പർഷിപ്പ് സൃഷ്ടിക്കുക**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API (ഉൽപ്പന്നങ്ങൾ)
+### 4. ഉൽപ്പന്നങ്ങളുടെ API {#4-products-api}
 
-**Base Route:** `/products`
+**അടിസ്ഥാന റൂട്ട്:** `/products`
 
-**എല്ലാ ഉൽപ്പന്നങ്ങളെയും നേടുക (Get All Products)**
+**എല്ലാ ഉൽപ്പന്നങ്ങളും നേടുക**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API (പണമിടപാടുകൾ)
+### 5. പേയ്‌മെന്റുകളുടെ API {#5-payments-api}
 
-**Base Route:** `/payments`
+**അടിസ്ഥാന റൂട്ട്:** `/payments`
 
-**പണം അടച്ചതായി രേഖപ്പെടുത്തുക (Create Payment)**
+**പേയ്‌മെന്റ് സൃഷ്ടിക്കുക**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API (ഡൊമെയ്‌നുകൾ)
+### 6. ഡൊമെയ്‌നുകളുടെ API {#6-domains-api}
 
-**Base Route:** `/domains`
+**അടിസ്ഥാന റൂട്ട്:** `/domains`
 
-**ഡൊമെയ്ൻ മാപ്പ് ചെയ്യുക (Map Domain)**
+**ഡൊമെയ്ൻ മാപ്പ് ചെയ്യുക**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint (രജിസ്ട്രേഷൻ എൻഡ്‌പോയിന്റ്)
+## രജിസ്ട്രേഷൻ എൻഡ്‌പോയിന്റ് {#registration-endpoint}
 
-`/register` എൻഡ്‌പോയിന്റ് ഒരു പൂർണ്ണമായ checkout/രജിസ്ട്രേഷൻ പ്രവാഹം നൽകുന്നു:
+`/register` എൻഡ്‌പോയിന്റ് പൂർണ്ണമായ checkout/രജിസ്ട്രേഷൻ പ്രവാഹം നൽകുന്നു:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response (പ്രതികരണം):**
+**പ്രതികരണം:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses (പിഴവ് പ്രതികരണങ്ങൾ)
+## സ്വതന്ത്ര ടെനന്റ് എൻഡ്‌പോയിന്റുകൾ {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 ഒറ്റപ്പെട്ട ടെനന്റുകൾ സൃഷ്ടിക്കാനും പരിശോധിക്കാനും സ്ഥിരീകരിക്കാനും ഉപയോഗിക്കുന്ന ഇന്റഗ്രേഷനുകൾക്കായി സ്വതന്ത്ര ടെനന്റ് REST പിന്തുണ ചേർക്കുന്നു.
+
+കൃത്യമായ അഭ്യർത്ഥന payload പ്രവർത്തനക്ഷമമാക്കിയ ഹോസ്റ്റ് ശേഷിയെ ആശ്രയിച്ചിരിക്കും. എന്നാൽ ഇന്റഗ്രേഷനുകൾ ഈ എൻഡ്‌പോയിന്റ് ഗ്രൂപ്പുകൾ പ്രതീക്ഷിക്കണം:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+ടെനന്റ് രജിസ്ട്രി, ഡാറ്റാബേസ്, ഫയൽസിസ്റ്റം, റൂട്ടിംഗ് സ്ഥിതി എന്നിവ തയ്യാറാക്കാൻ bootstrap എൻഡ്‌പോയിന്റ് ഉപയോഗിക്കുക. പ്രൊഡക്ഷൻ ട്രാഫിക് മാറ്റുന്നതിന് മുമ്പ് മൈഗ്രേഷൻ നിലയും സ്ഥിരീകരണ എൻഡ്‌പോയിന്റുകളും ഉപയോഗിക്കുക. സ്വതന്ത്ര teardown-ന് ഇല്ലാതാക്കൽ എൻഡ്‌പോയിന്റ് ഉപയോഗിക്കുക, അതിലൂടെ addon cleanup പ്രവാഹത്തിലൂടെ ഡാറ്റാബേസ് ക്രെഡൻഷ്യലുകൾ നീക്കം ചെയ്യപ്പെടും.
+
+സാധാരണ മൈഗ്രേഷൻ നിലാ പ്രതികരണങ്ങളിൽ ഉൾപ്പെടുന്നത്:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` പ്രീ-ലോഞ്ച് തടസ്സമായി പരിഗണിക്കുക. സ്ഥിരീകരണ വിശദാംശങ്ങൾ പരിശോധിച്ച് ഡാറ്റാബേസ് ഹോസ്റ്റ് binding, queue, ഉപയോക്തൃ provisioning, അല്ലെങ്കിൽ റൂട്ടിംഗ് പ്രശ്നം പരിഹരിക്കുക. ശേഷം സ്ഥിരീകരണം വീണ്ടും ശ്രമിക്കുക.
+
+## പിശക് പ്രതികരണങ്ങൾ {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination and Filtering (പേജിനേഷൻ, ഫിൽട്ടറിംഗ്)
+## പേജിനേഷനും ഫിൽട്ടറിംഗും {#pagination-and-filtering}
 
-**Query Parameters (ക്വറി പാരാമീറ്ററുകൾ):**
+**ക്വറി പാരാമീറ്ററുകൾ:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-സാധാരണയായി ഉപയോഗിക്കുന്ന പാരാമീറ്ററുകൾ:
-- `per_page` - ഒരു പേജിലെ ഇനങ്ങളുടെ എണ്ണം (default: 20, max: 100)
+സാധാരണ പാരാമീറ്ററുകൾ:
+- `per_page` - ഓരോ പേജിലുമുള്ള ഇനങ്ങൾ (ഡിഫോൾട്ട്: 20, പരമാവധി: 100)
 - `page` - പേജ് നമ്പർ
-- `search` - തിരയേണ്ട വാക്ക് (Search term)
-- `orderby` - ക്രമീകരിക്കേണ്ട ഫീൽഡ് (Sort field)
-- `order` - ക്രമീകരണ ദിശ (asc/desc)
-- `status` - സ്റ്റാറ്റസ് അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക
-- `date_created` - തീയതിയുടെ പരിധി അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക
+- `search` - തിരയൽ പദം
+- `orderby` - സോർട്ട് ഫീൽഡ്
+- `order` - സോർട്ട് ദിശ (asc/desc)
+- `status` - നില അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക
+- `date_created` - തീയതി പരിധി അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക

@@ -3,11 +3,11 @@ title: Hva er Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hva er Ultimate Multisite
+# Hva er Ultimate Multisite {#why-ultimate-multisite}
 
 Ef þú ert kominn í þennan einslagi, er er líklegt að þú hafi hördum heyrt að þessi plugininn okkar gæti verið lausnin til að gera hugmyndina þína um viðskipti verkeleg. Við vonum að þú séðir allar svari sem þú þarft í endanlegri hluta þessins einslagi.
 
-## Hva er Ultimate Multisite?
+## Hva er Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite er WordPress Multisite plugin sem gerir þér kleift að bjóða viðskiptavinum WaaS (Website as a Service). Með okkar plugin geturðu hafa fjölda endurskrifunarstafna og leita þú til að viðskiptavinir halda á fastefni í netverk þínu.
 
@@ -15,7 +15,7 @@ Ultimate Multisite gerir þér kleift að fá betalingar með öllum mögulegum 
 
 Og þetta er bara byrjun þar sem þú getur breytt möguleika þess með add-ons og webhooks.
 
-## Ör annað möguleikur
+## Ör annað möguleikur {#other-features}
 
 Ultimate Multisite býður upp einnig:
 
@@ -33,11 +33,11 @@ Og meira framkvæmdarfullt:
 
 * API til leitar- og erlenar (Search and Replace API): Þú getur einnig viðmið í site templates með staðsetningum eins og {{site_name}} og nota Search and Replace API til að sjálfskipta þessar staðsetningar með upplýsingum sem viðskiptavinurinn gefur eftir skráningu, án þess að þú þarft að gera það sjálft.
 
-## Notkunarbyrði (Use cases)
+## Notkunarbyrði (Use cases) {#use-cases}
 
 Nú er tími til að sjá nokkrar mögulegar notkunarbyrðir fyrir Ultimate Multisite.
 
-### Tilfæld 1: Stofnslagið (An Agency)
+### Tilfæld 1: Stofnslagið (An Agency) {#case-1-an-agency}
 
 Almennt ligg kjarnaskilyrði stofnaðarstofa í hönnun webssíða með því að hafa það að þeir eru listir um þær, eins og staðsetningu eða markaðssetning sem er listað sem viðbótar þjónustur.
 
@@ -47,7 +47,7 @@ Stöðuð stjórnun y plugin-sins og temblönum við hverja vögu er haldag á p
 
 Byrgið vilja sér hljóðsögu með Ultimate Multisite sem gerir þeim að gera það sem þeir eru bestu í - að tengja framúrskarandi vefsíður.
 
-### Tilfæld 2: Niche-hugbúnaðsveitir
+### Tilfæld 2: Niche-hugbúnaðsveitir {#case-2-niche-provider}
 
 Er forn orðræða sem segir, „Gera eina hluti og gervið vel“. Fyrir mörgum sérfræðingum þýðir þetta að skapa vögu eða þjónustu á kringum einn hlutkeyfis hugmynd.
 
@@ -57,7 +57,7 @@ Ein af nýskönum möguleikum Ultimate Multisiteins er template site. Þetta er 
 
 Fyrir veitjann sem hefur niche-síða og þjónustu, gerir þetta ómælt möguleika í að skráðast síðu sem er klára til notkun með sérstökum pluginum og hönnun. Viðskiptavinurinn þarf að veita mínar minn input til að fullfða þjónustuna.
 
-### Tilfæld 3: WordPress Web Hosting
+### Tilfæld 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Er óteljandi möguleikar á að hosta WordPress síður, en sjaldan er það eins einfalt sem að veita web-skráningu viðskiptavinum með fyrirfram sett upp version af WordPress. Þetta er því vegna þess að fleiri ákvörðunir og hugmyndir þurfa að samastast til að veita meningfullan þjónustu.
 

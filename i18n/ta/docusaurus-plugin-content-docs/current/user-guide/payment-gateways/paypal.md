@@ -1,61 +1,72 @@
 ---
 title: PayPal ஐ அமைத்தல்
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway அமைத்தல் (v2)
+# PayPal Gateway (v2) அமைத்தல் {#setting-up-the-paypal-gateway-v2}
 
-_**முக்கிய குறிப்பு: இந்த கட்டுரை Ultimate Multisite பதிப்பு 2.x ஐ குறிக்கிறது.**_
+_**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐ குறிக்கிறது.**_
 
-எங்கள் payment settings பக்கத்தில் நான்கு வகையான கட்டண முறைகளை நீங்கள் செயல்படுத்தலாம்: Stripe, Stripe Checkout, PayPal மற்றும் Manual. இந்த கட்டுரையில், **PayPal** உடன் எவ்வாறு இணைப்பது என்பதை பார்ப்போம்.
+எங்கள் கட்டண அமைப்புகள் பக்கத்தில் நான்கு கட்டண முறைகள் வரை செயல்படுத்தலாம்: Stripe, Stripe Checkout, PayPal மற்றும் கைமுறை. இந்தக் கட்டுரையில், **PayPal** உடன் எவ்வாறு ஒருங்கிணைப்பது என்பதைப் பார்ப்போம்.
 
-Stripe போலவே, PayPal ஆன்லைன் கட்டணங்களுக்கு பரவலாக பயன்படுத்தப்படுகிறது, குறிப்பாக WordPress வலைத்தளங்களில். உங்கள் நெட்வொர்க்கில் PayPal ஐ கட்டண முறையாக எவ்வாறு பயன்படுத்துவது என்பதை இந்த கட்டுரை உங்களுக்கு வழிகாட்டும்.
+Stripe போலவே, PayPal ஆன்லைன் கட்டணங்களுக்கு பரவலாகப் பயன்படுத்தப்படுகிறது, குறிப்பாக WordPress இணையதளங்களில். உங்கள் நெட்வொர்க்கில் கிடைக்கும் கட்டண முறையாக PayPal-ஐ எவ்வாறு பயன்படுத்துவது என்பதை இந்தக் கட்டுரை வழிகாட்டும்.
 
-இந்த இணைப்புக்கு தேவையான API credential பெற நீங்கள் **PayPal Business கணக்கு** வைத்திருக்க வேண்டும் என்பதை நினைவில் கொள்ளுங்கள்.
+இந்த ஒருங்கிணைப்பிற்கு தேவையான API சான்றுகளைப் பெற, உங்களிடம் **PayPal Business Account** இருக்க வேண்டும் என்பதை கவனிக்கவும்.
 
-## உங்கள் நெட்வொர்க்கில் PayPal ஐ செயல்படுத்துதல்
+## உங்கள் நெட்வொர்க்கில் PayPal-ஐ செயல்படுத்துதல் {#enabling-paypal-on-your-network}
 
-உங்கள் நெட்வொர்க்கில் PayPal ஐ கிடைக்கக்கூடிய கட்டண முறையாக செயல்படுத்த, **Ultimate Multisite > Settings > Payments** tab க்கு சென்று PayPal அருகில் உள்ள பெட்டியை டிக் செய்யுங்கள்.
+உங்கள் நெட்வொர்க்கில் கிடைக்கும் கட்டண முறையாக PayPal-ஐ செயல்படுத்த, **Ultimate Multisite > Settings > Payments** தாவலுக்குச் சென்று PayPal-க்கு அருகிலுள்ள பெட்டியைத் தேர்வுசெய்யவும்.
 
-![செயலில் உள்ள payment gateway களில் PayPal ஐ செயல்படுத்துதல்](/img/config/settings-payment-gateways.png)
+![செயலில் உள்ள கட்டண gateway-களில் PayPal-ஐ செயல்படுத்துதல்](/img/config/settings-payment-gateways.png)
 
-## PayPal API credentials பெறுதல்
+## வழிகாட்டப்பட்ட அமைப்பு wizard-ஐ பயன்படுத்துதல் {#using-the-guided-setup-wizard}
 
-PayPal payment gateway ஆக செயல்படுத்தப்பட்டவுடன், PayPal API **Username**, PayPal API **Password** மற்றும் PayPal API **Signature** ஆகிய புலங்களை நிரப்ப வேண்டும்.
+Ultimate Multisite 2.10.0 கட்டண gateway அமைப்புகளில் வழிகாட்டப்பட்ட PayPal அமைப்பு wizard-ஐ சேர்க்கிறது. PayPal-ஐ செயல்படுத்திய பிறகு, gateway-ஐ எவ்வாறு இணைக்க வேண்டும் என்பதைத் தேர்வு செய்யவும், சேமிப்பதற்கு முன் எந்தச் சான்றுகள் இன்னும் தேவை என்பதை உறுதிப்படுத்தவும் **Ultimate Multisite > Settings > Payments**-இல் உள்ள wizard-ஐ பயன்படுத்தவும்.
 
-உங்கள் PayPal [Live](https://www.paypal.com/home) அல்லது [Sandbox](https://www.sandbox.paypal.com/home) கணக்கில் உள்நுழைந்து இதைப் பெறலாம்.
+wizard இரண்டு அமைப்பு வழிகளை ஆதரிக்கிறது:
 
-(கட்டணங்களை சோதிக்கவும், gateway சரியாக அமைக்கப்பட்டுள்ளதா என்பதை பார்க்கவும் **sandbox mode** ஐ பயன்படுத்தலாம் என்பதை நினைவில் கொள்ளுங்கள். தொடர்புடைய பகுதியை toggle on செய்யுங்கள்.)
+* **சான்றுகளை கைமுறையாக உள்ளிடுதல்**: உங்களிடம் ஏற்கனவே PayPal API சான்றுகள் இருந்தால், உங்கள் Account-க்கு OAuth அமைப்பு கிடைக்கவில்லை என்றால், அல்லது PayPal-லிருந்து சான்றுகளை நீங்களே நகலெடுக்க விரும்பினால் இந்த வழியைப் பயன்படுத்தவும். PayPal புலங்களில் API பயனர்பெயர், API கடவுச்சொல், மற்றும் API கையொப்பத்தை உள்ளிட்டு, பின்னர் கட்டண அமைப்புகளைச் சேமிக்கவும்.
+* **OAuth இணைப்பு வாயில்**: உங்கள் நிறுவலில் OAuth விருப்பம் கிடைத்து செயல்படுத்தப்பட்டிருந்தால் மட்டுமே இந்த வழியைப் பயன்படுத்தவும். wizard, OAuth ஓட்டத்தை feature flag-க்கு பின்னால் காட்டுகிறது; ஆகவே flag இல்லாத நெட்வொர்க்குகள் கைமுறை சான்று உள்ளீட்டு புலங்களைத் தொடர்ந்து பயன்படுத்தும்.
 
-![PayPal API credentials புலங்கள் மற்றும் sandbox mode toggle](/img/config/settings-payment-gateways.png)
+wizard-இல் OAuth விருப்பம் தெரியவில்லை என்றால், கீழே உள்ள கைமுறை சான்று உள்ளீட்டு ஓட்டத்தை முடிக்கவும். முந்தைய Ultimate Multisite 2.x வெளியீடுகளில் இருந்த அதே PayPal Business API சான்றுகளுடன் gateway செயல்படும்.
 
-உங்கள் PayPal கணக்கிற்கான API Signature அல்லது Certificate credentials கோர:
+## PayPal API சான்றுகளைப் பெறுதல் {#getting-the-paypal-api-credentials}
 
-  1. உங்கள் [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess) க்கு செல்லுங்கள்.
+PayPal கட்டண gateway-ஆக செயல்படுத்தப்பட்டவுடன், PayPal API **பயனர்பெயர்**, PayPal API **கடவுச்சொல்** மற்றும் PayPal API **கையொப்பம்** ஆகிய புலங்களை நிரப்ப வேண்டும்.
 
-  2. **API access** பகுதியில், **Update** ஐ கிளிக் செய்யுங்கள்.  
-![API access பகுதியுடன் PayPal Account Settings](/img/config/settings-payment-gateways.png)
+உங்கள் PayPal [Live](https://www.paypal.com/home) அல்லது [Sandbox](https://www.sandbox.paypal.com/home) Account-இல் உள்நுழைந்து இதைப் பெறலாம்.
 
-  3. **NVP/SOAP API integration (Classic)** கீழ், **Manage API credentials** ஐ கிளிக் செய்யுங்கள்.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+(கட்டணங்களைச் சோதிக்கவும், gateway சரியாக அமைக்கப்பட்டுள்ளதா என்பதைப் பார்க்கவும் **சோதனை முறை**யை பயன்படுத்தலாம் என்பதை நினைவில் கொள்ளவும். தொடர்புடைய பிரிவை இயக்கினால் போதும்.)
 
-     * நீங்கள் ஏற்கனவே API Signature அல்லது Certificate உருவாக்கியிருந்தால், உங்கள் credentials ஐ காணக்கூடிய பக்கத்திற்கு திருப்பி விடப்படுவீர்கள்.
+![PayPal API சான்று புலங்கள் மற்றும் சோதனை முறை மாற்றி](/img/config/settings-payment-gateways.png)
 
-     * _**குறிப்பு:** உங்கள் PayPal கணக்கை சரிபார்க்க கேட்கப்பட்டால், திரையில் உள்ள வழிமுறைகளை பின்பற்றுங்கள்._
+உங்கள் PayPal Account-க்கான API கையொப்பம் அல்லது சான்றிதழ் சான்றுகளை கோர:
 
-  4. பின்வரும் விருப்பங்களில் _ஒன்றை_ தேர்ந்தெடுத்து, **Agree and Submit** ஐ கிளிக் செய்யுங்கள்.
+  1. உங்கள் [Account அமைப்புகள்](https://www.paypal.com/businessmanage/account/accountAccess)-க்கு செல்லவும்.
 
-     * **Request API Signature** – API Signature authentication க்கு தேர்ந்தெடுக்கவும்.
+  2. **API அணுகல்** பிரிவில், **புதுப்பி** என்பதைக் கிளிக் செய்யவும்.
+![API அணுகல் பிரிவுடன் PayPal Account அமைப்புகள்](/img/config/settings-payment-gateways.png)
 
-     * **Request API Certificate** – API Certificate authentication க்கு தேர்ந்தெடுக்கவும்.
+  3. **NVP/SOAP API ஒருங்கிணைப்பு (Classic)** என்பதின் கீழ், **API சான்றுகளை நிர்வகி** என்பதைக் கிளிக் செய்யவும்.
+![PayPal NVP/SOAP API ஒருங்கிணைப்பில் API சான்றுகளை நிர்வகித்தல்](/img/config/settings-payment-gateways.png)
 
-  5. PayPal உங்கள் API credentials ஐ பின்வருமாறு உருவாக்குகிறது:  
-![PayPal உருவாக்கிய API credentials](/img/config/settings-payment-gateways.png)
+     * நீங்கள் ஏற்கனவே API கையொப்பம் அல்லது சான்றிதழை உருவாக்கியிருந்தால், உங்கள் சான்றுகளை காணக்கூடிய பக்கத்திற்கு நீங்கள் திருப்பி அனுப்பப்படுவீர்கள்.
 
-     * **API Signature credentials** API Username, API Password மற்றும் Signature ஆகியவற்றை உள்ளடக்கியது, இவை காலாவதியாவதில்லை. கூடுதல் பாதுகாப்பிற்காக இந்த மதிப்புகள் இயல்பாக மறைக்கப்பட்டிருக்கும். அவற்றை ஆன் மற்றும் ஆஃப் செய்ய **Show/Hide** ஐ கிளிக் செய்யுங்கள். முடிந்ததும், **Done** ஐ கிளிக் செய்யுங்கள்.
+     * _**குறிப்பு:** உங்கள் PayPal Account-ஐ சரிபார்க்குமாறு கேட்கப்பட்டால், திரையில் காட்டப்படும் வழிமுறைகளைப் பின்பற்றவும்._
 
-     * **API Certificate credentials** API Username, API Password மற்றும் Certificate ஆகியவற்றை உள்ளடக்கியது, இவை மூன்று ஆண்டுகளுக்குப் பிறகு தானாகவே காலாவதியாகும். API Certificate ஐ உங்கள் டெஸ்க்டாப்பில் சேமிக்க **Download Certificate** ஐ கிளிக் செய்யுங்கள்.
+  4. பின்வரும் விருப்பங்களில் _ஒன்றை_ தேர்வுசெய்து, பின்னர் **ஏற்று சமர்ப்பி** என்பதைக் கிளிக் செய்யவும்.
 
-அவ்வளவுதான், உங்கள் PayPal payment integration முடிந்தது!
+     * **API கையொப்பத்தைக் கோரு** – API கையொப்ப அங்கீகாரத்திற்காக தேர்வுசெய்யவும்.
 
-PayPal settings தொடர்பாக ஏதேனும் கேள்விகள் இருந்தால், PayPal இன் [Help Center](https://www.paypal.com/br/smarthelp/home) ஐ பார்க்கலாம்.
+     * **API சான்றிதழைக் கோரு** – API சான்றிதழ் அங்கீகாரத்திற்காக தேர்வுசெய்யவும்.
+
+  5. PayPal உங்கள் API சான்றுகளை பின்வருமாறு உருவாக்கும்:
+![PayPal உருவாக்கிய API சான்றுகள்](/img/config/settings-payment-gateways.png)
+
+     * **API கையொப்பச் சான்றுகளில்** API பயனர்பெயர், API கடவுச்சொல், மற்றும் கையொப்பம் அடங்கும்; இவை காலாவதியாகாது. கூடுதல் பாதுகாப்பிற்காக இந்த மதிப்புகள் இயல்பாக மறைக்கப்பட்டிருக்கும். அவற்றைக் காட்டவும் மறைக்கவும் **காட்டு/மறை** என்பதைக் கிளிக் செய்யவும். முடிந்ததும், **முடிந்தது** என்பதைக் கிளிக் செய்யவும்.
+
+     * **API சான்றிதழ் சான்றுகளில்** API பயனர்பெயர், API கடவுச்சொல், மற்றும் சான்றிதழ் அடங்கும்; இது மூன்று ஆண்டுகளுக்குப் பிறகு தானாகவே காலாவதியாகும். API சான்றிதழை உங்கள் desktop-இல் சேமிக்க **சான்றிதழைப் பதிவிறக்கு** என்பதைக் கிளிக் செய்யவும்.
+
+அவ்வளவுதான், உங்கள் PayPal கட்டண ஒருங்கிணைப்பு முடிந்தது!
+
+PayPal அமைப்புகள் குறித்து ஏதேனும் கேள்விகள் இருந்தால், PayPal-ன் [உதவி மையத்தை](https://www.paypal.com/br/smarthelp/home) பார்க்கலாம்.

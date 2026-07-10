@@ -3,11 +3,11 @@ title: Tema-bil Maharat
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema'ya Özel Yetenekler
+# Tema'ya Özel Yetenekler {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0, aktif WordPress temanıza otomatik olarak uyum sağlayan dört yeni tema'ya özel yerleşik yetenek (skill) getiriyor. Bu yetenekler, temanızın mimarisine ve özelliklerine özel rehberlik ve kabiliyetler sunar.
 
-## Tema'ya Özel Yetenekler Nedir?
+## Tema'ya Özel Yetenekler Nedir? {#what-are-theme-aware-skills}
 
 Tema'ya özel yetenekler, yapay zeka asistanının sitenizde şu anda aktif olan WordPress temasına göre otomatik olarak seçtiği önceden yapılandırılmış bilgi tabanları ve araç setleridir. Tema değiştirdiğinizde, asistanın kullanabileceği yetenekler otomatik olarak güncellenir; manuel bir yapılandırmaya gerek yoktur.
 
@@ -18,9 +18,9 @@ Her yetenek şunları içerir:
 - **Özelleştirme örnekleri** — Yaygın görevler için kod parçacıkları ve yapılandırma kalıpları
 - **En iyi uygulamalar** — Temanın mimarisi ve iş akışı için öneriler
 
-## Mevcut Tema'ya Özel Yetenekler
+## Mevcut Tema'ya Özel Yetenekler {#available-theme-aware-skills}
 
-### Blok Temaları (Block Themes)
+### Blok Temaları (Block Themes) {#block-themes}
 
 **Kimlere Uygulanır:** WordPress'in blok tabanlı (Full Site Editing) mimarisini kullanan temalar.
 
@@ -34,7 +34,7 @@ Blok Temaları yeteneği şu konularda rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Aktif temanız bir blok temasıysa ( `block-templates` özelliğini destekliyorsa).
 
-### Klasik Temalar (Classic Themes)
+### Klasik Temalar (Classic Themes) {#classic-themes}
 
 **Kimlere Uygulanır:** PHP şablonları ve klasik düzenleyici kullanan geleneksel WordPress temaları.
 
@@ -48,7 +48,7 @@ Klasik Temalar yeteneği şu konularda rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Aktif temanız klasik (blok olmayan) bir tema ise.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Kimlere Uygulanır:** Gelişmiş blok tabanlı tasarım için Kadence Blocks eklentisini kullanan siteler.
 
@@ -62,7 +62,7 @@ Kadence Blocks yeteneği şu konularda rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Kadence Blocks eklentisi sitenizde aktifse.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Kimlere Uygulanır:** Blok tabanlı tasarım ve özelleştirme için Kadence temasını kullanan siteler.
 
@@ -76,15 +76,15 @@ Kadence Theme yeteneği şu konularda rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Kadence teması aktif temanız ise.
 
-## Yetenekler Nasıl Seçilir?
+## Yetenekler Nasıl Seçilir? {#how-skills-are-selected}
 
 Asistan, her mesajda aktif temanızı ve yüklü eklentilerinizi otomatik olarak algılar. Eşleşen bir tema'ya özel yetenek mevcutsa, bu yetenek otomatik olarak asistanın bağlamına yüklenir. Yetenekleri manuel olarak etkinleştirmenize veya değiştirmenize gerek yoktur.
 
-### Birden Fazla Yetenek
+### Birden Fazla Yetenek {#multiple-skills}
 
 Sitenize birden fazla yetenek uygulanıyorsa (örneğin, hem Kadence Blocks hem de Kadence Theme aktifse), asistan tüm geçerli yeteneklere erişebilir ve her birinden gelen rehberlikten faydalanabilir.
 
-### Tema Değiştirme
+### Tema Değiştirme {#switching-themes}
 
 Aktif temanızı değiştirdiğinizde, asistanın kullanabileceği yetenekler bir sonraki mesajda otomatik olarak güncellenir. Örneğin:
 
@@ -92,11 +92,11 @@ Aktif temanızı değiştirdiğinizde, asistanın kullanabileceği yetenekler bi
 2. Klasik bir temaya geçiyorsunuz.
 3. Bir sonraki mesajınızda, **Klasik Temalar** yeteneği otomatik olarak yüklenir ve **Blok Temaları** yeteneği artık kullanılamaz hale gelir.
 
-## Tema'ya Özel Yetenekler Kullanımı
+## Tema'ya Özel Yetenekler Kullanımı {#using-theme-aware-skills}
 
 Bir tema'ya özel yetenekten faydalanmak için, yapmanız gerekeni sohbet arayüzünde basitçe açıklayın. Asistan, uygun yeteneğin rehberliğine otomatik olarak atıfta bulunacaktır.
 
-### Örnek Komutlar
+### Örnek Komutlar {#example-prompts}
 
 **Blok Temaları için:**
 > "Blok desenlerini kullanarak arka plan resmi ve ortalanmış metin içeren bir kahraman bölümü oluştur."

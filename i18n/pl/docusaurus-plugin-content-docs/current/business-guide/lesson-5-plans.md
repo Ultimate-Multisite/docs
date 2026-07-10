@@ -3,15 +3,15 @@ title: 'Lekcja 5: Projektowanie Twoich Planów'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lekcja 5: Projektowanie Planów
+# Lekcja 5: Projektowanie Planów {#lesson-5-designing-your-plans}
 
 Poziomy planów nie są tylko poziomami cenowymi — to odzwierciedlenie tego, jak faktycznie działają Twoi klienci z konkretnej niszy. W tej lekcji zaprojektujesz poziomy produktów, które odpowiadają rzeczywistym potrzebom firm fitness na różnych etapach rozwoju.
 
-## Skąd zaczęliśmy
+## Skąd zaczęliśmy {#where-we-left-off}
 
 FitSite ma gotowe trzy szablony (Studio Essential, Gym Pro, Fitness Chain). Teraz stworzymy plany, które określają, do czego klienci mają dostęp i ile za to płacą.
 
-## Myślenie w segmentach klientów
+## Myślenie w segmentach klientów {#thinking-in-customer-segments}
 
 Błąd, który popełnia większość ludzi, polega na projektowaniu planów wokół cech technicznych (przestrzeń dyskowa, przepustowość, liczba stron). Twoi klienci z konkretnej niszy nie myślą w tych kategoriach. Właściciel siłowni myśli o tym, czego potrzebuje, aby prowadzić swój biznes.
 
@@ -25,11 +25,11 @@ Dla studiów fitness istnieją trzy naturalne segmenty:
 
 Twoje plany powinny odpowiadać tym segmentom, a nie dowolnym pakietom funkcji.
 
-## Tworzenie planów FitSite
+## Tworzenie planów FitSite {#creating-the-fitsite-plans}
 
 Przejdź do **Ultimate Multisite > Products > Add Product** dla każdego planu.
 
-### Plan 1: FitSite Starter — 49 USD/miesiąc
+### Plan 1: FitSite Starter — 49 USD/miesiąc {#plan-1-fitsite-starter----49month}
 
 **Cel**: Trenerzy indywidualni i małe studia
 
@@ -59,7 +59,7 @@ Przejdź do **Ultimate Multisite > Products > Add Product** dla każdego planu.
 - Wybrany przez Ciebie motyw: Wymuszone aktywowanie
 - Wszystkie inne motywy: Ukryte
 
-### Plan 2: FitSite Growth — 99 USD/miesiąc
+### Plan 2: FitSite Growth — 99 USD/miesiąc {#plan-2-fitsite-growth----99month}
 
 **Cel**: Ugruntowane siłownie w jednej lokalizacji
 
@@ -85,7 +85,7 @@ Przejdź do **Ultimate Multisite > Products > Add Product** dla każdego planu.
 - Grupa planów: FitSite Plans
 - Kolejność produktu: 2
 
-### Plan 3: FitSite Pro — 199 USD/miesiąc
+### Plan 3: FitSite Pro — 199 USD/miesiąc {#plan-3-fitsite-pro----199month}
 
 **Cel**: Sieci fitness w wielu lokalizacjach
 
@@ -109,7 +109,7 @@ Przejdź do **Ultimate Multisite > Products > Add Product** dla każdego planu.
 - Grupa planów: FitSite Plans
 - Kolejność produktu: 3
 
-## Ustawianie grupy planów
+## Ustawianie grupy planów {#setting-up-the-plan-group}
 
 Grupa planów zapewnia, że klienci mogą ulepszać lub obniżać poziom subskrypcji tylko w ramach rodziny planów FitSite. Na zakładce **Up & Downgrades** każdego planu:
 
@@ -118,7 +118,7 @@ Grupa planów zapewnia, że klienci mogą ulepszać lub obniżać poziom subskry
 
 Tworzy to jasną ścieżkę ulepszeń: Starter → Growth → Pro.
 
-## Dodawanie Order Bumps
+## Dodawanie Order Bumps {#adding-order-bumps}
 
 Order bumps to dodatkowe produkty, które można zaoferować podczas finalizacji zakupu. Dla FitSite rozważ:
 
@@ -128,7 +128,7 @@ Order bumps to dodatkowe produkty, które można zaoferować podczas finalizacji
 
 Utwórz je jako produkty typu **Package** w Ultimate Multisite i powiąż je z odpowiednimi planami.
 
-## Dlaczego ta struktura działa
+## Dlaczego ta struktura działa {#why-this-structure-works}
 
 - **Starter** usuwa bariery wejścia — niska cena, prosty pakiet, pozwala trenerom szybko wystartować online.
 - **Growth** dodaje funkcje, o które faktycznie proszą siłownie — rezerwacje, galerie, niestandardowe domeny.
@@ -136,7 +136,7 @@ Utwórz je jako produkty typu **Package** w Ultimate Multisite i powiąż je z o
 - **Order bumps** pozwalają klientom dostosować ofertę, nie komplikując jednocześnie głównych planów.
 - **Jasna ścieżka ulepszeń** oznacza, że klienci rosną razem z Tobą, zamiast odejść.
 
-## Sieć FitSite do tej pory
+## Sieć FitSite do tej pory {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Co zbudowaliśmy w tej lekcji
+## Co zbudowaliśmy w tej lekcji {#what-we-built-this-lesson}
 
 - **Trzy poziomy planów** powiązane z rzeczywistymi segmentami biznesów fitness.
 - **Kontrola dostępu do funkcji (Feature gating)** za pomocą kontroli pluginów i szablonów Ultimate Multisite.

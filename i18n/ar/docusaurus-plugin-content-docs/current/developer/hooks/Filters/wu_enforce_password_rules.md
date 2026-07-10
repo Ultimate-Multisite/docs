@@ -4,13 +4,13 @@ title: فلتر - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# المرشح: wu_enforce_password_rules
+# المرشح: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 فلتر ما إذا كان يجب تطبيق قواعد إضافية لكلمة المرور.
 
 عند القيمة true، يفرض الحد الأدنى للطول ومتطلبات الأحرف. يُفعَّل تلقائياً عند إعداد "Super Strong" أو عندما تكون ميزة كلمة المرور القوية في Defender Pro نشطة.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -18,10 +18,10 @@ _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 | $strength_setting | `string` | قيمة إعداد المسؤول. |
 | $defender_active | `bool` | ما إذا كان ميزة كلمة المرور القوية في Defender Pro نشطة. |
 
-### منذ
+### منذ {#since}
 
 - 2.4.0
 
-### المصدر
+### المصدر {#source}
 
 مُعرَّف في [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) في السطر 531

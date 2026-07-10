@@ -3,7 +3,7 @@ title: Argyfwngu un Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Arweidiad o Plan (v2)
+# Arweidiad o Plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTIADOL BULD: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite ffurf 2.x.**_
 
@@ -41,7 +41,7 @@ Ar ôl i'w gwblhau'r chec, bydd y produsau newydd yn cael eu ychwanegu i'r cyfri
 
 ##
 
-## Fforddau Gorffennu a Newid (Upgrade and Downgrade Paths)
+## Fforddau Gorffennu a Newid (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Ar ychwanegol o'ch produsau, bydd gennych chi tab **Up & Downgrades**. Mae'r opsiwn cyntaf ar y tab hwn yn field gan enw **Plan Group**.
 

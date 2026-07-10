@@ -3,31 +3,31 @@ title: Ngarti Dashboard
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ngarti Dashboard Ultimate Multisite
+# Ngarti Dashboard Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
 
 Samémé urang ngarasa leuwih jero dina pilihan konfigurasi anu leuwih luhur je aspek operasional Ultimate Multisite, hayu urang tingali dashboardna heula.
 
 Saperti plugin WordPress séjén, Ultimate Multisite nyiptake menu tingkat jaringan (network-level) kalayan judul **Ultimate Multisite** sareng sababaraha menu sub-menu di handapna.
 
-## Widget Dashboard Jaringan (Network Dashboard Widgets)
+## Widget Dashboard Jaringan (Network Dashboard Widgets) {#network-dashboard-widgets}
 
 Ultimate Multisite ngajorotkeun sababaraha widget anu berguna kana dashboard tingkat jaringan. Dashboard ieu bisa dicari ku cara indit ka **My Sites → Network Admin → Dashboard**. Widget-widget éta dirancang pikeun miboga akses gampang ka informasi sareng operasi umum kanggo administrator jaringan (network administrator).
 
 ![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-### Langkah Kahiji (First Steps)
+### Langkah Kahiji (First Steps) {#first-steps}
 
 ![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
 Widget ieu muncul dina instalasi anyar Ultimate Multisite sareng ngingetkeun administrator jaringan pikeun ngalaksanakeun tugas tambahan saperti ngatur cara pembayaran (payment method) sareng nyiptake akun uji (test account).
 
-### Ringkesan (Summary)
+### Ringkesan (Summary) {#summary}
 
 ![Summary widget](/img/admin/network-dashboard-summary.png)
 
 Widget Ringkesan laporanna ngeunaan jumlah pendaftar (signups) sareng pendapatan maranéhna kanggo poé éta. MRR (Monthly Recurring Revenue) nunjukkeun total anu diproyeksikeun di antara pelanggan anu ngahasilkeun pendapatan tina keanggotaan (memberships).
 
-### Aliran Aktivitas (Activity Stream)
+### Aliran Aktivitas (Activity Stream) {#activity-stream}
 
 ![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Widget ieu laporanna ngeunaan kajadian (events) di sakuliah Ultimate Multisite. 
 
 Mangga merhatike bagian Events dina dokumentasi pikeun deskripsi anu leuwih jéntré.
 
-### Ayeuna (Right Now)
+### Ayeuna (Right Now) {#right-now}
 
 ![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
 Widget utilitas ieu nunjukkeun ringkesan singget ngeunaan pengguna jeung situs dina jaringan. Pintasan gampang di luhur ngajangkeun akses satuju-satu klik pikeun nyiptake situs atawa pengguna anyar.
 
-### Berita je Diskusi
+### Berita je Diskusi {#news-and-discussions}
 
 ![News and Discussions widget](/img/admin/network-dashboard-news.png)
 
 Widget ieu ngahapalan sareng nunjukkeun berita Ultimate Multisite anu panganyarna. Tingali widget ieu kanggo informasi ngeunaan pembaruan, bug penting, sarta perbaikan keamanan.
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#ultimate-multisite-dashboard}
 
 Di mana dashboard tingkat jaringan nunjukkeun informasi utuh ngeunaan jaringan, dashboard Ultimate Multisite (anu aya di level paling luhur menu Ultimate Multisite) nunjukkeun informasi ngeunaan layanan éta.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Pertumbuhan Pendapatan Berulang Bulanan (Monthly Recurring Revenue)
+### Pertumbuhan Pendapatan Berulang Bulanan (Monthly Recurring Revenue) {#monthly-recurring-revenue-growth}
 
 Grafik MRR (Pendapatan Berulang Bulanan) nunjukkeun rincian bulanan pendapatan selama periode kalender 12 bulan.
 
@@ -61,7 +61,7 @@ Grafik MRR (Pendapatan Berulang Bulanan) nunjukkeun rincian bulanan pendapatan s
 
 Pendapatan anyar dilacak dina warna biru, sedengkeun pembatalan dipidangkeun dina warna héjo (red).
 
-### Dukungan Rentang Tanggal
+### Dukungan Rentang Tanggal {#date-range-support}
 
 Gumantung kana jumlah pelanggan jeung aktivitasna, statistik bisa jadi kacau. Dukungan rentang tanggal anu aya dina dashboard ngidinake administrator jaringan pikeun fokus ngan ukur kana informasi jeung mangsa waktu anu dibutuhkeun.
 

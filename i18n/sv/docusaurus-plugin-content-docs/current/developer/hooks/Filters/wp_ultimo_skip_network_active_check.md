@@ -4,18 +4,18 @@ title: Filter - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 162c91ba047dfdf2d04c16d729e5eddb
 ---
-# Filter: wp_ultimo_skip_network_active_check
+# Filter: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
 
 Låter utvecklare kringgå denna kontroll.
 
 Detta är användbart när du använder composer-baserade och andra anpassade uppsättningar, till exempel Bedrock, där det är vanligt att använda plugins som mu-plugins.
 
-### Sedan
+### Sedan {#since}
 
 - 2.0.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-requirements.php#L256) på rad 256
 
 
-## Returnerar
+## Returnerar {#returns}

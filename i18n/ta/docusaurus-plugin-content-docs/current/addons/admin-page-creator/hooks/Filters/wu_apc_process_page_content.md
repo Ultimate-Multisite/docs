@@ -4,11 +4,11 @@ title: Filter - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 இறுதி உள்ளடக்கத்தில் மாற்றங்களைச் செய்ய இது டெவலப்பர்களுக்கு உதவுகிறது.
 
-## அளவுருக்கள்
+## அளவுருக்கள் {#parameters}
 
 | பெயர் | வகை | விளக்கம் |
 |------|------|-------------|
@@ -17,12 +17,12 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | இடத்தை நிரப்பும் குறியீடுகளை (placeholders) கொண்ட வரிசை. |
 | $placeholder_count | `int` | கண்டுபிடிக்கப்பட்ட இடத்தை நிரப்பும் குறியீடுகளின் எண்ணிக்கை. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) என்ற கோப்பின் 46 வரியில் வரையறுக்கப்பட்டுள்ளது.
 
-## திரும்ப அளிப்பது
+## திரும்ப அளிப்பது {#returns}
 மாற்றங்களுக்குப் பிறகு உள்ள உள்ளடக்கம்.

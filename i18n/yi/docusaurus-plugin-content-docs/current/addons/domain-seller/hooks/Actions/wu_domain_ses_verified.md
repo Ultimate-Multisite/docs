@@ -1,0 +1,22 @@
+---
+id: wu_domain_ses_verified
+title: אַקציע - wu_domain_ses_verified
+sidebar_label: wu_domain_ses_verified
+_i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
+---
+# אַקציע: wu_domain_ses_verified {#action-wudomainsesverified}
+
+ווערט אויסגעפֿירט ווען SES באַשטעטיקט אַז אַ domain איז DKIM-verified.
+
+## פּאַראַמעטערס {#parameters}
+
+| נאָמען | טיפּ | באַשרײַבונג |
+|------|------|-------------|
+| $domain | `\WP_Ultimo\Models\Domain` | דער domain־אָביעקט. |
+
+### זינט {#since}
+
+- 2.2.0
+### מקור {#source}
+
+דעפֿינירט אין [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) אויף שורה 480

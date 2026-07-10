@@ -3,13 +3,13 @@ title: Reducere un plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planum de la plan (v2)
+# Planum de la plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
 Downgradirea unui plan sau a unei abonații este o acțiune comună pe care o pot face clienții dacă au un buget limitat sau decid că nu vor avea nevoie de multe resurse pentru a rula subsite-ul lor.
 
-## Cum să faci downgrade-ul unui plan
+## Cum să faci downgrade-ul unui plan {#how-to-downgrade-a-plan}
 
 Clienții pot downgrada planul în orice moment prin autentificarea în dashboard-ul de administrare al subsite-ului lor și apăsând **Change** (Schimbă) sub pagina contului lor.
 
@@ -25,7 +25,7 @@ Pentru a continua, utilizatorul trebuie doar să apese butonul **Complete Checko
 
 ![Pagina de cont care arată banner cu schimbare în așteptare a membrusei](/img/account-page/pending-change.png)
 
-### Ce se întâmplă când un utilizator downgrade-ul planului său
+### Ce se întâmplă când un utilizator downgrade-ul planului său {#what-happens-when-a-user-downgrades-their-plan}
 
 Este important de reținut că downgradirea planului nu modifică configurația existentă a subsite-ului utilizatorului.
 
@@ -37,7 +37,7 @@ Para las publicaciones que excedan el límite establecido en el plan, tienes 3 o
 
 ![Página de Configuración de Administrador de Red que muestra las opciones cuando se excede el límite de publicaciones](/img/account-page/settings-sites-post-limit.png)
 
-### Qué sucede con el pago
+### Qué sucede con el pago {#what-happens-to-the-payment}
 
 En la versión 2.0, ya no es necesario realizar ajustes en cuanto a prorrateo del pago.
 

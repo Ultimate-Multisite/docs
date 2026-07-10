@@ -3,19 +3,19 @@ title: A' chlàradh Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Aistatachadh an Gathròidh Stripe (v2)
+# Aistatachadh an Gathròidh Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTE CRUCIAL: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
 
 Is eadar thuig a thabhair thu am beatha de math a chiallachadh fhaisgidh a' chlàradh ar pàipear sethachaidhean pàirtich: Stripe, Stripe Checkout, PayPal agus Manual. San article seo, rinn an t-aistadh a' chlàradh le **Stripe**.
 
-## Aistatachadh Stripe
+## Aistatachadh Stripe {#enabling-stripe}
 
 Chan eil Stripe a' chlàradh gu fhaisgidh pàirtich ar thuineadh a' chlàradh a' chlàradh a' chlàradh. Rinn air **Ultimate Multisite > Settings > Payments** agus tòisich an toggle a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh ar seasmhach a' chlàradh pàirtich.
 
 ![Aistatachadh Stripe ar seasmhach a' chlàradh pàirtich](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Tha an fhaisgidh seo a' tighinn air a' chlàradh nàth a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh.
 
@@ -47,7 +47,7 @@ Cop an fhaisg a' **Publishable key** agus an **Secret key**, a' chlàradh a' **T
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## A' sgrùdadh Stripe Webhook
+## A' sgrùdadh Stripe Webhook {#setting-up-stripe-webhook}
 
 Tha Stripe a sgaidh webhook events a tha a' chlàradh Ultimate Multisite gu sònraich air an t-uisge agad ar **an t-uisge agad de Stripe**.
 

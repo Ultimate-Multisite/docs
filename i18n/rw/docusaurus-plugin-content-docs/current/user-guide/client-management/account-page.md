@@ -3,7 +3,7 @@ title: Urururo rw'Umukoresha
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Icyo ya Akaunti ya Mteja (v2)
+# Icyo ya Akaunti ya Mteja (v2) {#your-clients-account-page-v2}
 
 _**KUMBUKA MUHIMU: Hii habari inahusu Ultimate Multisite toleo la 2.x.**_
 
@@ -11,7 +11,7 @@ Wakati wateja wanapochopoa mpango mmoja kwenye mtandao wako, wanapata ufikiaji w
 
 Katika mwongozo huu, tutakuelekeza kupitia ukurasa wa akaunti ya mteja na utaona kile ambacho wateja wanaweza kuona na kufanya ndani yake.
 
-## Ukurasa wa Akaunti (The Account Page)
+## Ukurasa wa Akaunti (The Account Page) {#the-account-page}
 
 Ukurasa wa akaunti unaweza kufikiwa kwa kukumbatia **Account** ndani ya dashboard ya mteja wako.
 
@@ -27,7 +27,7 @@ Baada ya mteja kukumbatia, ataona muhtasari wa usajili wake, anwani ya malipo (b
 
 Anaweza pia kubadilisha usajili kwenda mpango mwingine, au kununua pakiti au huduma nyingine unayotoa. Tuchukulie kila sehemu kwa mguso tofauti.
 
-### Umuco w'Umuco Wanyuza:
+### Umuco w'Umuco Wanyuza: {#your-membership-overview}
 
 Icyo cyo gishobora kubona hejuru ku rugero rwawe rwa umuyobozi (website) y'abakoresha bwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira. Icyo gishobora kubona mu gihe cyo gufata umuyobozi w'umuyobozi (website) rwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira. Icyo gishobora kubona mu gihe cyo gufata umuyobozi w'umuyobozi (website) rwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira. Icyo gishobora kubona mu gihe cyo gufata umuyobozi w'umuyobozi (website) rwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira. Icyo gishobora kubona mu gihe cyo gufata umuyobozi w'umuyobozi (website) rwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira. Icyo gishobora kubona mu gihe cyo gufata umuyobozi w'umuyobozi (website) rwawe, uburyo bw'ubwoko bwawe n'ibyo byo yashyiramo mu gihe cyo gutangira.
 
@@ -51,7 +51,7 @@ Ikiro, umwujiza uyu mu gihe cyo kubona umuganda w'ibigo byo gukoresha (new windo
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Guhindura Site Template:
+### Guhindura Site Template: {#updating-the-billing-address}
 
 Kugira ngo abantu bwawe bashobore guhindura amafoto y'ibigo byo gukoresha (site templates), ugomba kwifashisha **Ultimate Multisite > Settings > Sites** kandi ugomba gukora option **Allow Template Switching**.
 
@@ -79,7 +79,7 @@ Nyuma y'uko wamukoreshe ubwoko rwa confirmation kandi wamukoreshe **Process Swit
 
 Abakoresha bashobora gusezeranya **Reset current template** ku panel uyu mu gihe bafite uburyo bwo gushyira site mu dore y'ubwoko rwa mbere. Nko mu gihe bafite uburyo bwo gushyira umwe site template, gushyira umwe template mu dore y'ubwoko rwa mbere bishobora guhindura ibyo mu website, kandi abakoresha bashobora kwibona kandi bakwibona ngo bahindure.
 
-### Gufasha Custom Domains:
+### Gufasha Custom Domains: {#changing-the-site-template}
 
 Abakoresha bacyo bashobora gushyira uburyo bwo gutanga custom domain ku plan yabo ku page ya akazi yabo. Kugira ngo abakoresha bacyo bashobore gukoresha custom domains, gukora **Ultimate Multisite > Settings > Domain Mapping**.
 
@@ -113,7 +113,7 @@ Nyuma yuko wamukoreshe **Next Step**, abagahutiwe n'abakoresha banyashobora gush
 
 Nyuma yuko wamukoreshe **Add Domain**, domain izo zishobora gushyirwa mu myaka ya abagahutiwe n'abakoresha banyashobora gukora. Uko bashobora gukora uburyo bwa DNS bwa custom domain ku rurimi rw'domain registrar (domain registrar) ryabo.
 
-### Guhindura Password:
+### Guhindura Password: {#adding-custom-domains}
 
 Mu dashboard ya account, abagahutiwe n'abakoresha banyashobora guhindura password yabo binyuze mu gukoresha **Change Password**.
 
@@ -123,7 +123,7 @@ Iyiho cyo gushobora kugaragaza igice gishya aho abakoresha bako bashobora gufata
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Icyo gushobora kugira ngo ubone ibyo:
+### Icyo gushobora kugira ngo ubone ibyo: {#changing-password}
 
 Dufite n'ibintu bibiri byo bifite mu **Danger Zone**: **Gukoresha Site** (Delete Site) no **Gukoresha Aka** (Delete Account). Bicyo bibiri byo bifite mu Danger Zone kuko bishobora gukorwa kandi bitagushoboka kurinda. Niba abakoresha bako bashobora gufata website cyangwa aka, batagushobora gutera ku gihe cy'ibyo.
 

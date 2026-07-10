@@ -7,9 +7,9 @@ _i18n_hash: 252e3bb879213d04300fee402a16cd08
 Triggers when all the dependencies were loaded
 Allows plugin developers to add new functionality. For example, support to new Hosting providers, etc.
 
-### Since
+### Since {#action-wpultimoload}
 
 - 2.0.0
-### Source
+### Source {#since}
 
 Defined in [`inc/class-wp-ultimo.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-wp-ultimo.php#L212) at line 212

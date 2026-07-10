@@ -3,7 +3,7 @@ title: Cyflogau a Gwrthdrefnu Autoddef yn Adranau Siat
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search a Chwarae a Gwahanion yn Site Templates (v2)
+# Auto Search a Chwarae a Gwahanion yn Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Mae angen i'r WP UItimo ffurfennau 2.x.**_
 
@@ -15,7 +15,7 @@ Yna, gallwch sicr yn unig ychwanegu ffurf cyfrifoldeb sydd yn cyfyngedig i gael 
 
 Bydd Ultimate Multisite yn gwahanu'r placeholders gyda'r data a rhoi'n cael ei ddefnyddio gan y cydweithredwr.
 
-## **Cyflwyno'r problem "template llawn o placeholders"**
+## **Cyflwyno'r problem "template llawn o placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Mae pob hyn yn dda, ond mae gennyfynnu'r problem anhygoel: mae ein template site - sydd wedi eu cyffwrdd gan ein cydweithredwyr - yn llawn o placeholderau anhygoel sydd â chwarae ddefnyddiol.
 

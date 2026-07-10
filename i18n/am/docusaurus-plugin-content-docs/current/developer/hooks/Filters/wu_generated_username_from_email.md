@@ -4,11 +4,11 @@ title: Filter - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Filter: wu_generated_username_from_email
+# Filter: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 በስርዓቱ የተፈጠረ የደንበኛ ስም (username) ለማጣራት የሚያገለግል ማጣሪያ።
 
-## መለኪያዎች (Parameters)
+## መለኪያዎች (Parameters) {#parameters}
 
 | Name | Type | መግለጫ (Description) |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 | $new_user_args | `array` | የአዲስ ተጠቃሚ መረጃዎች ስብስብ (array)፣ የመጀመሪያ እና የመጨረሻ ስም ሊያካትት ይችላል። |
 | $suffix | `string` | ስሙን ልዩ ለማድረግ ስሙ መጨረሻ ላይ ሊጨመር የሚችል ጽሑፍ። |
 
-### ከ (Since)
+### ከ (Since) {#since}
 
 - 3.7.0
-### ምንጭ (Source)
+### ምንጭ (Source) {#source}
 
 በ[`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) ፋይል፣ በ488ኛው መስመር ተገልጿል።

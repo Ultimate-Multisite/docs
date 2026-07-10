@@ -3,13 +3,13 @@ title: Xüsusi İnkişaf Dəstəyi
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-dan Xüsusi İnkişaf Dəstəyi Necə Alınır?
+# Codeable-dan Xüsusi İnkişaf Dəstəyi Necə Alınır? {#how-to-get-custom-development-help-from-codeable}
 
 Bəzən şəbəkənin (network) axışını tam istədiyimiz kimi etmək üçün həqiqətən də güclü özəlləşdirməyə ehtiyac duyuruq. Əgər axtardığınız şey budursa, sizə [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-ni tövsiyə edirik. Bu platformada Ultimate Multisite təcrübəsi olan peşəkar developerlər tapa bilərsiniz.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) müştəriləri hər ölçüdə layihələr üzərində işləyə bilən ixtisaslı WordPress freelance developerləri ilə birləşdirən bir platformadır. Onlar, sizin nəzərdə tutduğunuz iş üçün xüsusi ixtisaslaşmış mütəxəssislərlə eşləşdirilməyinizə əmin olmaq üçün diqqətli bir müraciət prosesindən keçirirlər.
 
-### Codeable-da Layihə Necə Yaradılır?
+### Codeable-da Layihə Necə Yaradılır? {#how-to-create-a-project-in-codeable}
 
 Əvvəlcə [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-a daxil olun və **Start a Project** düymasına klikləyin.
 

@@ -3,13 +3,13 @@ title: Changelog ng Support Tickets
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Pagbabago sa Support Tickets (Changelog)
+# Pagbabago sa Support Tickets (Changelog) {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Pinaganda: Tinanggal ang vendor/ directory sa Git tracking (kasama na rin sa .gitignore), kaya lumiit ang laki ng repository.
 * Pinaganda: Sinubukan hanggang WordPress 7.0.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Inayos: Tinatanggap na ang mga 'null' values sa mga nullable ticket model setters.
 * Inayos: Itinatago na ang lahat ng ticket sa global network-wide tables para sa tamang suporta sa multisite.
 * Inayos: Tinago ang staff fields at inayos ang blank-page redirect sa customer new-ticket form.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Pinaganda: Conditional loading ng frontend assets, tanging sa mga support ticket pages lang.
 * Pinaganda: Nilalaktawan ang plugin autoloader kapag ang Bedrock root autoloader ay nag-load na ng dependencies.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Idinagdag: Buong functionality ng pagtingin sa ticket para sa admin at sa frontend.
 * Idinagdag: AJAX handler para sa pagpasa ng ticket reply submissions.
 * Idinagdag: Suporta para sa ticket reply functionality na may tamang form handling.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Pinaganda: Istruktura ng database na may tamang query at schema classes para sa mga sagot at attachment.
 * Pinaganda: Paglipat sa real properties imbes na attributes para sa ticket models.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * In-update: Binago ang prefix sa ultimate-multisite para sa pagkakapare-pareho.
 * In-update: Standardization ng text domain.
 * Inayos: Maliliit na bug fixes at pagpapaganda.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Initial release
 * Complete ticket management system
 * Multi-level access control

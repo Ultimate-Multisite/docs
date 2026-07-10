@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Tilpasning af dit Admin Panel med PRO Theme
+# Tilpasning af dit Admin Panel med PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Ofte når vi arbejder med kunder har vi brug for at give vores kunder en skræddersyet oplevelse i WordPress-administratoren. Hvis du leder efter et mere professionelt udseende og følelse, kan PRO Theme hjælpe dig.
 

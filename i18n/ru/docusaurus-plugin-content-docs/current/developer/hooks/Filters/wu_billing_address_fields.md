@@ -4,24 +4,24 @@ title: Фильтр - wu_billing_address_fields
 sidebar_label: wu_billing_address_fields
 _i18n_hash: 3bb7e4cdacacccb652ac677f2ae54e3b
 ---
-# Фильтр: wu_billing_address_fields
+# Фильтр: wu_billing_address_fields {#filter-wubillingaddressfields}
 
 Позволяет разработчикам плагинов фильтровать поля адреса выставления счета.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $fields | `array` | Массив адреса выставления счета. |
 | $zip_only | `bool` | Если нам нужны только индекс и страна. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/objects/class-billing-address.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/objects/class-billing-address.php#L348) на строке 348
 
 
-## Возвращает
+## Возвращает {#returns}

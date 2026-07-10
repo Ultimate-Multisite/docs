@@ -1,306 +1,318 @@
 ---
 title: Kuunda Bidhaa Yako ya Kwanza ya Usajili
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kuunda Bidhaa Yako ya Kwanza ya Usajili (v2)
+# Kuunda Bidhaa yako ya Kwanza ya Usajili (v2) {#creating-your-first-subscription-product-v2}
 
-_**TAARIFA MUHIMU: Makala hii ni kwa watumiaji wa Ultimate Multisite toleo la 2.x pekee. Ikiwa unatumia toleo la 1.x,**_ **_**tazama makala hii**_**.
+_**DOKEZO MUHIMU: Makala hii ni kwa watumiaji wa Ultimate Multisite toleo la 2.x pekee. Ikiwa unatumia toleo la 1.x,**_ **_**tazama makala hii**_**.
 
-Ili kuanza kuendesha mtandao wako na kuanza kuuza huduma zako kwa watumiaji watarajiwa, unahitaji kuwa na chaguo mbalimbali za usajili. Unazundaje bidhaa hizi? Ni aina gani za bidhaa unazoweza kutoa? Katika makala hii, tutashughulikia kila kitu unachohitaji kujua kuhusu bidhaa.
+Ili kuanza kuendesha mtandao wako na kuanza kuuza huduma zako kwa watumiaji watarajiwa, unahitaji kuwa na chaguo tofauti za usajili. Unaundaje bidhaa hizi? Ni aina gani za bidhaa unaweza kutoa? Katika makala hii, tutashughulikia kila kitu unachohitaji kujua kuhusu bidhaa.
 
-## Aina ya Bidhaa
+## Aina ya Bidhaa {#product-type}
 
-Kwa kutumia Ultimate Multisite unaweza kutoa aina mbili za bidhaa kwa wateja wako: **mipango** na **viongezeo** **(Order Bump)**. Viongezeo vinaweza kugawanywa katika aina mbili: **vifurushi** na **huduma**. Tutaangalia tofauti zao na sifa zao maalum hapa chini.
+Ukiwa na Ultimate Multisite unaweza kuwapa wateja wako makundi mawili ya bidhaa: **mipango** na **viongezi** **(Order Bump)**. Viongezi vinaweza kugawanywa katika aina mbili:**vifurushi** na **huduma**. Tutaona tofauti na sifa zake maalum baadaye.
 
-  * **Mipango**: bidhaa ya msingi ya Ultimate Multisite. Mteja wako anaweza kuwa na uanachama tu ikiwa umeunganishwa na mpango. Mpango unawapa wateja wako tovuti moja au zaidi (inategemea mipangilio ya mpango wako) na vikwazo unavyoweka kwenye ukurasa wa kuhariri bidhaa.
+  * **Mipango** : bidhaa ya msingi ya Ultimate Multisite. Mteja wako anaweza kuwa na uanachama tu ikiwa umeunganishwa na mpango. Mpango huwapa wateja wako tovuti moja au zaidi (inategemea usanidi wa mpango wako) pamoja na mipaka unayoweka kwenye ukurasa wa kuhariri bidhaa yako.
 
-  * **Vifurushi**: viongezeo vinavyoathiri moja kwa moja utendaji wa mipango ya Ultimate Multisite. Vinabadilisha vikwazo au kuongeza rasilimali mpya, plugins au themes kwenye mpango wa awali ambao mteja wako alinunua. Kwa mfano, mpango wa kawaida unaweza kuruhusu ziara 1,000 kwa mwezi na unaweza kutoa kifurushi kinachoongeza idadi hii hadi 10,000.
+  * **Vifurushi** : viongezi vinavyoathiri moja kwa moja utendaji wa mipango ya Ultimate Multisite. Hubadilisha mipaka au kuongeza rasilimali mpya, plugins au themes kwenye mpango asili ambao mteja wako alinunua. Kwa mfano, mpango wa msingi unaweza kuruhusu matembeleo 1,000 kwa mwezi na unaweza kuweka kifurushi kinachoongeza idadi hii hadi 10,000.
 
-  * **Huduma:** viongezeo ambavyo havibadilishi utendaji wa Ultimate Multisite. Ni kazi ambazo utazifanya kwa mteja wako pamoja na mpango waliounua. Kwa mfano, mteja wako anaweza kununua mpango unaoruhusu tovuti moja na pia kulipa huduma ya ziada itakayotengeneza muundo wa tovuti hiyo.
+  * **Huduma:** viongezi ambavyo havibadilishi utendaji wa Ultimate Multisite. Ni kazi utakazomfanyia mteja wako pamoja na mpango alionunua. Kwa mfano, mteja wako anaweza kununua mpango unaoruhusu tovuti moja na pia kulipia huduma ya ziada itakayotengeneza muundo wa tovuti hii.
 
-## Kusimamia Bidhaa
+## Kusimamia Bidhaa {#managing-products}
 
-Kwa wengi, kichupo cha **Bidhaa** katika Ultimate Multisite **(Ultimate Multisite > Products)** kinaweza kulinganishwa na mipango katika mazingira ya kawaida ya hosting.
+Kwa wengi kichupo cha **Products** katika Ultimate Multisite **(Ultimate Multisite > Products)** kinaweza kulinganishwa na mipango katika mazingira ya kawaida ya hosting.
 
-Ndani ya Ultimate Multisite, kichupo cha Bidhaa kinafafanua muundo na vikwazo vinavyotumika kwa bidhaa au huduma maalum. Muundo huo unaenea hadi maelezo ya bidhaa au huduma, bei, kodi, na ruhusa.
+Ndani ya Ultimate Multisite kichupo cha Products hufafanua muundo na mipaka inayotumika kwa bidhaa au huduma maalum. Miundo kama hiyo hujumuisha maelezo ya bidhaa au huduma, bei, kodi, na ruhusa.
 
-Sehemu hii itakuongoza kuelewa msingi huu muhimu wa Ultimate Multisite.
+Sehemu hii itakuongoza kuelewa jiwe hili muhimu la msingi la Ultimate Multisite.
 
 ![Ukurasa wa orodha ya bidhaa](/img/config/products-list.png)
 
-## Kuongeza Bidhaa
+## Kuongeza Bidhaa {#adding-products}
 
 Iwe ni mpango, kifurushi, au huduma, mahali pa kuanzia kufafanua kipengee kipya ni kupitia **Ultimate Multisite > Products > Add Product**.
 
-![Kitufe cha Kuongeza Bidhaa](/img/config/product-add-button.png)
+![Kitufe cha kuongeza Bidhaa](/img/config/product-add-button.png)
 
 Kiolesura kina sehemu mbili kuu. Upande wa kushoto kuna vichupo kadhaa vinavyosaidia kufafanua bidhaa na upande wa kulia kuna sehemu chache za kufafanua bei ya msingi ya bidhaa, hali yake ya kuwa hai, na picha ya bidhaa.
 
 ![Muhtasari wa ukurasa wa kuhariri bidhaa](/img/config/product-edit-full.png)
 
-### Maelezo
+### Maelezo {#description}
 
-Taarifa za msingi za bidhaa zinaweza kufafanuliwa kwa kuweka jina la bidhaa na maelezo. Vitambulisho hivi vinaonyeshwa popote ambapo taarifa za bidhaa zinahitajika kama vile chaguo la mpango na bei, ankara, maboresho, na kadhalika.
+Taarifa za msingi za bidhaa zinaweza kufafanuliwa kwa kutoa jina la bidhaa na maelezo. Vitambulisho hivi huonyeshwa popote taarifa za bidhaa zinapohitajika kama vile uteuzi wa mpango na bei, ankara, maboresho, na kadhalika.
 
 ![Sehemu ya maelezo ya bidhaa](/img/config/product-description.png)
 
-### Aina ya Bei
+### Aina ya Bei {#pricing-type}
 
 Upande wa kulia wa kiolesura, bei ya msingi inaweza kufafanuliwa.
 
 ![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
 
-Ultimate Multisite inasaidia aina tatu tofauti za bei. Chaguo la **kulipwa** linamwomba msimamizi wa mtandao taarifa kuhusu bei ya bidhaa na mzunguko wa malipo.
+Ultimate Multisite inaunga mkono aina tatu tofauti za bei. Chaguo la **kulipia** humtaka msimamizi wa mtandao kutoa taarifa kuhusu bei ya bidhaa na marudio ya utozaji.
 
-### Bei
+### Bei {#pricing}
 
-Sehemu ya bei inafafanua bei ya msingi ya bidhaa na muda wa malipo.
-
-![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
-
-hivyo mfano wa bei ya $29.99 na mpangilio wa mwezi 1 utalipisha $29.99 kila mwezi. Vivyo hivyo, bei ya $89.97 na mpangilio wa miezi 3 utalipisha kiasi hicho kila robo mwaka.
-
-### Mizunguko ya Malipo
-
-Sehemu ya mizunguko ya malipo inabainisha mara ngapi muda wa malipo uliotajwa hapo juu unarudiwa na kwa kawaida inaeleweka katika muktadha wa mikataba au masharti yaliyowekwa.
+Kipengele cha bei hufafanua bei ya msingi ya bidhaa na muda wa utozaji.
 
 ![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
 
-Kwa mfano, bei ya bidhaa ya $29.99 yenye muda wa mwezi 1 na mizunguko 12 ya malipo italipisha $29.99 kwa mwezi kwa bidhaa kwa miezi 12 inayofuata. Kwa maneno mengine, mpangilio kama huo utaweka kipindi cha bei isiyobadilika cha $29.99 kwa mwezi kwa miezi 12 kisha kusimamisha malipo.
+hivyo bei ya mfano ya $29.99 yenye mpangilio wa mwezi 1 itatoza $29.99 kila mwezi. Vivyo hivyo, bei ya $89.97 yenye mpangilio wa miezi 3 itatoza kiasi hicho kila robo mwaka.
 
-### Kipindi cha Majaribio
+### Mizunguko ya Utozaji {#billing-cycles}
 
-Kuwezesha kitufe cha kutoa majaribio kunamruhusu msimamizi wa mtandao kufafanua kipindi cha majaribio kwa bidhaa.
-
-![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
-
-Wakati wa kipindi cha majaribio, wateja wako huru kutumia bidhaa na hawatalipishwa hadi kipindi cha majaribio kimekwisha.
-
-### Ada ya Usanidi
-
-Unaweza pia kuweka ada ya usanidi kwa mpango wako.
+Sehemu ya mizunguko ya utozaji hubainisha marudio ya muda wa utozaji uliotajwa hapo juu na kwa kawaida hueleweka kwa kuzingatia mikataba au vipindi vilivyowekwa.
 
 ![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
 
-Hii inamaanisha kwamba mteja wako atalipa kiasi cha ziada kwenye malipo ya kwanza (pamoja na bei ya mpango) kinacholingana na ada uliyofafanua katika sehemu hii.
+Kwa mfano, bei ya bidhaa ya $29.99 yenye muda wa mwezi 1 na mizunguko 12 ya utozaji ingetozwa $29.99 kwa mwezi kwa bidhaa hiyo katika miezi 12 inayofuata. Kwa maneno mengine, mpangilio kama huo ungeanzisha kipindi cha bei isiyobadilika cha $29.99 kwa mwezi kwa miezi 12 na kisha kusitisha utozaji.
 
-### Hai
+### Kipindi cha Majaribio {#trial-period}
 
-Kitufe cha kuwa hai kinafafanua kwa ufanisi ikiwa bidhaa inapatikana kwa wateja kwa usajili mpya.
+Kuwasha kigeuzi cha kutoa majaribio humruhusu msimamizi wa mtandao kufafanua kipindi cha majaribio kwa bidhaa.
 
-![Kitufe cha kuwa hai](/img/config/product-active.png)
+![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
 
-Ikiwa kuna wateja waliopo kwenye mpango huu, kuweka kitufe katika hali ya kuzimwa kunafanya mpango kuwa wa zamani na kuuondoa kutoka usajili wa siku zijazo. **Wateja waliopo kwenye mpango wataendelea kulipishwa** hadi watakapohamishiwa mpango mpya au kuondolewa kwenye mpango.
+Wakati wa kipindi cha majaribio, wateja wako huru kutumia bidhaa na hawatatozwa hadi kipindi cha majaribio kitakapomalizika.
 
-### Picha ya Bidhaa
+### Ada ya Usanidi {#setup-fee}
 
-Kitufe cha **Pakia Picha** kinamruhusu msimamizi wa mtandao kutumia maktaba ya media kuchagua au kupakia picha ya bidhaa.
+Unaweza pia kutumia ada ya usanidi kwenye mpango wako.
+
+![Sehemu ya bei na kuhifadhi](/img/config/product-pricing-save.png)
+
+Hii inamaanisha kuwa mteja wako atalipa kiasi cha ziada kwenye tozo la kwanza (pamoja na bei ya mpango) kinacholingana na ada uliyofafanua katika sehemu hii.
+
+### Hai {#active}
+
+Kigeuzi cha kuwa hai hufafanua kwa ufanisi ikiwa bidhaa inapatikana kwa wateja kwa usajili mpya.
+
+![Kigeuzi cha kuwa hai](/img/config/product-active.png)
+
+Ikiwa kuna wateja waliopo kwenye mpango huu, kuweka kigeuzi katika hali yake ya kulemazwa kwa ufanisi huuhifadhi mpango huo kwa wateja wa zamani huku ukiuondoa kwenye usajili wa baadaye. **Wateja waliopo kwenye mpango wataendelea kutozwa** hadi wahamishiwe kwenye mpango mpya au waondolewe kwenye mpango.
+
+### Picha ya Bidhaa {#product-image}
+
+Kitufe cha **Upload Image** humruhusu msimamizi wa mtandao kutumia maktaba ya media kuchagua au kupakia picha ya bidhaa.
 
 ![Sehemu ya picha ya bidhaa](/img/config/product-image.png)
 
-### Futa
+### Futa {#delete}
 
-Kitufe cha **Futa Bidhaa** kinafuta bidhaa kutoka kwenye mfumo. Kinaonekana mara bidhaa inapochapishwa.
+Kitufe cha **Delete Product** hufuta bidhaa kutoka kwenye mfumo. Huonekana mara tu bidhaa inapochapishwa.
 
 ![Sehemu ya kufuta bidhaa](/img/config/product-delete.png)
 
-Tofauti na ufutaji mwingine, bidhaa haiwekwi katika hali yoyote ya tupio. Hivyo mara ikifutwa, kitendo hakiwezi kurudishwa.
+Tofauti na ufutaji mwingine, bidhaa haiwekwi katika hali yoyote ya taka. Hivyo mara inapofutwa, kitendo hicho hakiwezi kutenduliwa.
 
-### Chaguo za Bidhaa
+### Chaguo za Bidhaa {#product-options}
 
-Mara taarifa za msingi za bidhaa zimefafanuliwa, chaguo za bidhaa zinamsaidia msimamizi wa mtandao kufafanua zaidi sifa maalum za bidhaa.
+Mara taarifa ya bidhaa ya kiwango cha msingi inapofafanuliwa, chaguo za bidhaa humsaidia msimamizi wa mtandao kufafanua zaidi sifa mahususi za bidhaa.
 
-#### Ujumla
+#### Jumla {#general}
 
-Kichupo cha **Ujumla** kinafafanua sifa za jumla za bidhaa ambazo hazitumiki kwa vichupo vingine maalum vya bidhaa.
+Kichupo cha **Jumla** hufafanua sifa za jumla za bidhaa ambazo hazitumiki kwenye vichupo vingine vyovyote mahususi vya bidhaa.
 
-![Kichupo cha Ujumla](/img/config/product-general-tab.png)
+![Kichupo cha Jumla](/img/config/product-general-tab.png)
 
-**Slug ya bidhaa** inayojielekezea yenyewe inafafanua slug ambayo bidhaa inatambulishwa nayo katika URL na maeneo mengine ya Ultimate Multisite.
+**slug ya bidhaa** inayojieleza yenyewe hufafanua slug ambayo bidhaa hutambulika nayo katika URLs na maeneo mengine ya Ultimate Multisite.
 
-Ultimate Multisite inasaidia aina kadhaa za bidhaa yaani Mpango, Kifurushi, na Huduma. Vichupo vya **Chaguo za Bidhaa** vinabadilishwa kwa nguvu kulingana na aina ya bidhaa iliyobainishwa.
+Ultimate Multisite huunga mkono aina kadhaa za bidhaa, yaani Mpango, Kifurushi, na Huduma. Vichupo vya **Chaguo za Bidhaa** hurekebishwa kiotomatiki kulingana na aina ya bidhaa iliyobainishwa.
 
-**Jukumu la Mteja** linabainisha jukumu ambalo mteja hupewa wakati tovuti inaundwa. Kwa kawaida kwa wasimamizi wengi wa mtandao, hili litakuwa chaguo-msingi la Ultimate Multisite au Msimamizi. Jukumu chaguo-msingi la Ultimate Multisite linaweza kuwekwa katika **Ultimate Multisite > Settings > Login & Registration**.
+**Jukumu la Mteja** hubainisha jukumu ambalo mteja hupewa tovuti inapoundwa. Kwa kawaida kwa wasimamizi wengi wa mtandao, hili litakuwa chaguo-msingi la Ultimate Multisite au Msimamizi. Jukumu chaguo-msingi la Ultimate Multisite linaweza kuwekwa katika **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Mipangilio ya jukumu la mteja](/img/config/product-customer-role-settings.png)
 
-#### Maboresho na Kushushwa
+#### Kupandisha na Kushusha Viwango {#up--downgrades}
 
-Kichupo hiki kinabainisha njia za kuboresha na kushushwa zinazopatikana kwa mteja ndani ya ngazi yao maalum.
+Kichupo hiki hubainisha njia za kupandisha na kushusha kiwango zinazopatikana kwa mteja ndani ya daraja lake mahususi.
 
-Ili kuelewa dhana hii fikiria mfano ambapo usakinishaji wa Ultimate Multisite wa sekta maalum hutoa suluhu za usimamizi wa kujifunza kwa wateja wake. Ili kufikia hili mipango mitatu (Basic, Plus, na Premium) inafafanuliwa na plugins maalum zinaamilishwa kwa kila mpango (tazama baadaye katika sehemu hii kwa maelekezo ya jinsi ya kuamilisha plugins).
+Ili kuelewa dhana hii zingatia mfano ambapo usakinishaji maalumu wa Ultimate Multisite hutoa suluhisho za usimamizi wa ujifunzaji kwa wateja wake. Ili kufanikisha hili, mipango mitatu (Msingi, Plus, na Premium) hufafanuliwa na programu-jalizi mahususi huwashwa kwa kila mpango (tazama baadaye katika sehemu hii kwa maelekezo kuhusu jinsi ya kuwasha programu-jalizi).
 
-Ikiwa usakinishaji wa Ultimate Multisite pia unahudumia tovuti za biashara au tovuti za eCommerce, mipango hiyo inaweza kuhitaji plugins tofauti kusakinishwa na kuamilishwa.
+Ikiwa usakinishaji wa Ultimate Multisite pia unahudumia tovuti za biashara au tovuti za eCommerce, mipango hiyo inaweza kuhitaji programu-jalizi tofauti kusakinishwa na kuwashwa.
 
-Kwa kiasi hiki, itakuwa isiyofaa na yenye matatizo kuruhusu wateja wa eLearning kubadilika kwenda mipango ya eCommerce kwani mipango hii, bei, na vikwazo vinaweza visiwe vinavyofaa.
+Kwa kiwango hiki, haitakuwa vyema na inaweza kuleta matatizo kuruhusu wateja wa eLearning kuhamia mipango ya eCommerce kwa kuwa mipango hii, bei, na vikwazo huenda visiwe vinafaa.
 
-Hivyo ili kuzuia njia ya mteja na kuzuia matukio msimamizi wa mtandao anaweza kufafanua kundi la mpango na ndani ya kundi hilo kubainisha mipango ambayo mteja anaweza kubadilika kwayo.
+Hivyo ili kuzuia njia ya mteja na kuzuia matukio yasiyotarajiwa, msimamizi wa mtandao anaweza kufafanua kundi la mipango na ndani ya kundi hilo kubainisha mipango ambayo mteja anaweza kuhamia.
 
-![Kichupo cha Maboresho na Kushushwa](/img/config/product-upgrades.png)
+![Kichupo cha Kupandisha na Kushusha Viwango](/img/config/product-upgrades.png)
 
-Ili kufafanua kundi la mpango bainisha mipango inayooana ndani ya orodha ya **kundi la mpango**. **Mpangilio wa bidhaa** unaamua jinsi mipango inavyopangwa na kuonyeshwa kutoka ya chini kabisa hadi ya juu kabisa.
+Ili kufafanua kundi la mipango, bainisha mipango inayolingana ndani ya orodha ya **kundi la mipango**. **mpangilio wa bidhaa** huamua jinsi mipango inavyopangwa na kuonyeshwa kutoka ya chini zaidi hadi ya juu zaidi.
 
-Ultimate Multisite pia inajumuisha kipengele cha **order bump** ambapo bidhaa na huduma za viongezeo vinavyofaa vinaweza kuongezwa kwa mipango. Hivi vinatolewa kwa mteja kama vipengee vya ziada ambavyo vinaweza kuongezwa kwa mipango wakati wa checkout au wakati wa kuboresha.
+Ultimate Multisite pia inajumuisha kipengele cha **nyongeza ya oda** ambapo bidhaa na huduma za nyongeza zinazofaa zinaweza kuongezwa kwenye mipango. Hizi hutolewa kwa mteja kama vipengee vya ziada ambavyo vinaweza kuongezwa kwenye mipango wakati wa kulipia au wakati wa kupandisha kiwango.
 
-#### Tofauti za Bei
+#### Tofauti za Bei {#price-variations}
 
-Tofauti za bei zinamruhusu msimamizi wa mtandao kubainisha ngazi mbadala za bei kulingana na muda. Mpangilio huu unafanya iwezekane kuweka ngazi za bei za miezi 3, miezi 6, au kwa mwaka au muda na mzunguko mwingine wowote kama inavyoamuliwa na hali ya matumizi.
+Tofauti za bei humruhusu msimamizi wa mtandao kubainisha madaraja mbadala ya bei kulingana na muda. Mpangilio huu hufanya iwezekane kutoa kipindi cha utozaji cha kila mwezi, kila robo mwaka, kila mwaka, au kipindi kingine chochote cha utozaji kwa bidhaa ileile. Kwa mfano, unaweza kusanidi bidhaa kwa $29.99/mwezi na chaguo la mwaka lililopunguzwa bei kwa $249.99/mwaka.
 
-![Kichupo cha Tofauti za Bei](/img/config/product-price-variations.png)
+![Kichupo cha Tofauti za Bei](/img/config/product-price-variations-tab.png)
 
-Ili kuweka tofauti za bei, weka kitufe cha **wezesha tofauti za bei** kuwa hai na bofya kitufe cha **Ongeza Tofauti Mpya ya Bei**.
+Ili kuanzisha tofauti za bei, weka kitufe cha kubadilisha cha **Washa Tofauti za Bei** kiwe hai na ubofye kitufe cha **Ongeza Tofauti Mpya ya Bei**.
 
-Ili kuingiza tofauti, weka muda, kipindi, na bei ya tofauti. Tofauti za ziada zinaweza kuingizwa kwa kubofya kitufe tena.
+![Tofauti za bei za bidhaa](/img/config/product-price-variations.png)
 
-![Kichupo cha Tofauti za Bei](/img/config/product-price-variations.png)
+Ili kuingiza tofauti, weka muda, kipindi, na bei ya tofauti hiyo. Tofauti za ziada zinaweza kuingizwa kwa kubofya kitufe tena.
 
-#### Kodi
+Kwa mfano, ikiwa bei ya msingi ya bidhaa yako ni $29.99 kwa mwezi, unaweza kuongeza:
 
-Kichupo cha **Kodi** kinaendana na mipangilio ya kodi iliyobainishwa katika **Ultimate Multisite > Settings > Taxes** na hasa viwango vya kodi vilivyofafanuliwa. Ili kuwezesha kodi na kufafanua viwango vya kodi vinavyotumika tafadhali tazama nyaraka katika **Ultimate Multisite: Settings**
+  * **Miezi 3** kwa $79.99 (punguzo dogo ikilinganishwa na kila mwezi)
+  * **Mwaka 1** kwa $249.99 (punguzo kubwa kwa ahadi ya mwaka mzima)
+
+:::tip Kuonyesha Kitufe cha Kubadilisha Kipindi cha Utozaji kwenye Upande wa Mbele
+
+Tofauti za bei pekee haziongezi kitufe cha kubadilisha au swichi kwenye malipo ya upande wa mbele. Ili kuwaruhusu wateja kubadilisha kati ya vipindi vya utozaji (k.m. Kila Mwezi / Kila Mwaka), unahitaji kuongeza uga wa **Uteuzi wa Kipindi** kwenye fomu yako ya malipo. Tazama [Fomu za Malipo: Kuongeza Kitufe cha Kubadilisha cha Uteuzi wa Kipindi](checkout-forms#adding-a-period-selection-toggle) kwa maelekezo ya hatua kwa hatua.
+:::
+
+#### Kodi {#taxes}
+
+Kichupo cha **Kodi** hulingana na mipangilio ya kodi iliyobainishwa katika **Ultimate Multisite > Settings > Taxes** na hasa viwango vya kodi vilivyofafanuliwa. Ili kuwasha kodi na kufafanua viwango vya kodi vinavyotumika tafadhali tazama hati katika **Ultimate Multisite: Settings**
 
 ![Kichupo cha Kodi](/img/config/product-taxes.png)
 
-Katika mfano uliopita, tulifafanua kiwango cha kodi ya ndani cha 7.25% kinachotumika kwa wateja California (Marekani).
+Katika mfano uliopita, tulifafanua kiwango cha kodi cha eneo cha 7.25% kinachotumika kwa wateja walioko California (United States of America).
 
-Mara kiwango cha kodi kimefafanuliwa katika **Ultimate Multisite > Settings > Manage Tax Rates** kinaweza kuchaguliwa katika ngazi ya bidhaa.
+Mara kiwango cha kodi kinapofafanuliwa katika **Ultimate Multisite > Settings > Manage Tax Rates** kinaweza kuchaguliwa katika kiwango cha bidhaa.
 
 ![Kichupo cha Kodi](/img/config/product-taxes.png)
 
-Ili kuonyesha kuwa bidhaa ni kipengee kinachohusika na kodi, weka kitufe cha **Inahusika na Kodi** kuwa hai na uchague kiwango cha kodi kinachotumika kutoka kwenye orodha ya Kategoria ya Kodi.
+Ili kuonyesha kwamba bidhaa ni kipengee kinachotozwa kodi, weka kitufe cha kubadilisha cha **Inatozwa Kodi** kiwe hai na uchague kiwango cha kodi kinachotumika kutoka kwenye menyu kunjuzi ya Kategoria ya Kodi.
 
-#### Violezo vya Tovuti
+#### Violezo vya Tovuti {#site-templates}
 
-Kwa ujumla, violezo vya tovuti ni tovuti kamili za WordPress ambazo zinanakiliwa kwa tovuti ya mteja mwanzoni mwa usajili wao.
+Kwa msingi, violezo vya tovuti ni tovuti kamili za WordPress ambazo hunakiliwa kwenye tovuti ya mteja mwanzoni mwa usajili wake.
 
 ![Kichupo cha Violezo vya Tovuti](/img/config/product-site-templates.png)
 
-Msimamizi wa mtandao huunda na kusanidi tovuti ya kielelezo kama tovuti ya kawaida ya WordPress yenye themes, plugins, na maudhui yaliyoamilishwa na kusanidiwa. Tovuti ya kielelezo inanakiliwa kwa ukamilifu kwa mteja.
+Msimamizi wa mtandao huunda na kusanidi tovuti ya kiolezo kama tovuti ya kawaida ya WordPress yenye mandhari, programu-jalizi, na maudhui yaliyowashwa na kusanidiwa. Tovuti ya kiolezo hunakiliwa kwa mteja kama ilivyo.
 
-Kichupo hiki kinamruhusu msimamizi wa mtandao kubainisha tabia ya violezo vya tovuti wakati wa usajili mpya. Ili kutumia violezo vya tovuti, weka kitufe cha **ruhusu violezo vya tovuti** kuwa hai.
+Kichupo hiki humruhusu msimamizi wa mtandao kubainisha tabia ya violezo vya tovuti wakati wa usajili mpya. Ili kutumia violezo vya tovuti kwa mpango huu, weka kitufe cha kubadilisha cha **Ruhusu Violezo vya Tovuti** katika hali yake ya kuwa hai.
 
-**Hali ya kuchagua kielelezo cha tovuti** inafafanua tabia ya violezo vya tovuti wakati wa mchakato wa usajili.
+Wakati **Ruhusu Violezo vya Tovuti** kimezimwa, wateja walio kwenye mpango hawawezi kuchagua violezo hata kama fomu ya malipo, kiungo kinachoweza kushirikiwa, au kigezo cha URL vingefanya violezo vipatikane vinginevyo. Ultimate Multisite sasa hutekeleza kikomo hiki kupitia mnyororo wa mbadala katika sehemu za kuingilia zinazopatikana: mipangilio ya mpango hukaguliwa kwanza, kisha mipangilio ya violezo vya fomu ya malipo, kisha violezo vilivyochaguliwa mapema au vilivyotolewa na URL. Hii huweka mipaka ya mpango kuwa thabiti na huzuia violezo kuonekana kwa bidhaa ambazo hazipaswi kuvitoa.
 
-Mpangilio wa **Chaguo-msingi** unafuata hatua katika fomu ya checkout. Ikiwa msimamizi wa mtandao amefafanua hatua ya kuchagua kielelezo katika mchakato wa checkout na hatua imefafanuliwa na violezo, mpangilio huu utaheshimu maelekezo yaliyowekwa katika hatua ya checkout.
+**Hali ya uteuzi wa kiolezo cha tovuti** hufafanua tabia ya violezo vya tovuti wakati wa mchakato wa usajili.
 
-Kubainisha **Weka Kielelezo cha Tovuti** kunalazimisha kuchagua kielelezo kilichobainishwa. Kwa hivyo, hatua zozote za kuchagua kielelezo katika mchakato wa checkout zinaondolewa.
+Mpangilio wa **C** **haguo-msingi** hufuata hatua katika fomu ya malipo. Ikiwa msimamizi wa mtandao amefafanua hatua ya uteuzi wa kiolezo katika mchakato wa malipo na hatua hiyo imefafanuliwa kwa violezo, mpangilio huu utaheshimu maagizo yaliyowekwa katika hatua ya malipo.
 
-Mwishowe, **Chagua Violezo vya Tovuti Vinavyopatikana** kunabadilisha violezo vilivyobainishwa katika hatua ya checkout na violezo vilivyochaguliwa katika mpangilio huu. Kielelezo kilichochaguliwa mapema pia kinaweza kufafanuliwa kusaidia mteja kuchagua.
+Kubainisha **W** **eka Kiolezo cha Tovuti** hulazimisha uteuzi wa kiolezo kilichobainishwa. Kwa hiyo, hatua zozote za uteuzi wa kiolezo katika mchakato wa malipo huondolewa.
 
-Hatimaye ikiwa msimamizi wa mtandao anataka kuchagua kielelezo kutokea katika hatua za checkout, mpangilio wa '_chaguo-msingi_' utatosha. Vinginevyo kuondoa na kufunga uchaguzi wa kielelezo na kukabidhi uchaguzi kwa mipangilio ya mpango, chaguo za '_weka kielelezo kipya_' au '_chagua violezo vya tovuti vinavyopatikana_' zinaweza kuwa za kufaa.
+Mwisho, **C** **hagua Violezo vya Tovuti Vinavyopatikana** hubatilisha violezo vilivyobainishwa katika hatua ya malipo kwa violezo vilivyochaguliwa katika mpangilio huu. Kiolezo kilichochaguliwa mapema pia kinaweza kufafanuliwa ili kumsaidia mteja katika uteuzi.
 
-#### Tovuti
+Hatimaye, ikiwa msimamizi wa mtandao anataka uteuzi wa kiolezo ufanyike katika hatua za malipo, mpangilio wa ' _chaguo-msingi_ ' utatosha. Vinginevyo, ili kuondoa na kufunga uteuzi wa kiolezo na kukabidhi uteuzi kwa mipangilio ya mpango, chaguo za ' _weka kiolezo kipya_ ' au ' _chagua violezo vya tovuti vinavyopatikana_ ' zinaweza kufaa.
 
-Kichupo cha **Tovuti** ni sehemu ya utendaji wa vikwazo vya Ultimate Multisite.
+#### Tovuti {#sites}
 
-![Kichupo cha Tovuti](/img/config/product-sites.png)
+Kichupo cha **Tovuti** ni sehemu ya utendaji wa vizuizi wa Ultimate Multisite.
 
-Mpangilio huu unabainisha idadi ya juu ya tovuti ambazo mteja anaweza kuunda chini ya uanachama wao.
+![Kichupo cha tovuti](/img/config/product-sites.png)
 
-Ili kuwezesha kikwazo, weka kitufe cha **zuia tovuti** kuwa hai na ubainishe idadi ya juu ya tovuti katika sehemu ya **posho ya tovuti**.
+Mpangilio huu hubainisha idadi ya juu zaidi ya tovuti ambazo mteja anaweza kuunda chini ya uanachama wake.
 
-#### Ziara
+Ili kuwezesha kizuizi, weka kigeuzi cha **punguza tovuti** katika hali yake amilifu na ubainishe idadi ya juu zaidi ya tovuti katika uga wa **posho ya tovuti**.
 
-Kichupo cha **Ziara** ni sehemu nyingine ya mfumo wa vikwazo wa Ultimate Multisite. Mpangilio huu unaruhusu kuhesabu na kuzuia baadaye wageni wa kipekee kwenye tovuti ya mteja.
+#### Ziara {#visits}
 
-![Kichupo cha Ziara](/img/config/product-visits.png)
+Kichupo cha **Ziara** ni sehemu nyingine ya mfumo wa vizuizi wa Ultimate Multisite. Mpangilio huu huruhusu uhasibu na upunguzaji wa baadaye wa wageni wa kipekee kwenye tovuti ya mteja.
 
-Kutoka mtazamo wa masoko, wasimamizi wa mtandao wanaweza kutumia mpangilio huu kama njia ya kuwahimiza wateja kuboresha mpango wao mara vikwazo vinapofikiwa. Mpangilio huu pia unaweza kusaidia msimamizi wa mtandao kudhibiti na kuzuia trafiki kupita kiasi kwenye tovuti ili kuhifadhi rasilimali za mfumo.
+![Kichupo cha ziara](/img/config/product-visits.png)
 
-Ili kutumia kipengele hiki, weka kitufe cha **zuia ziara za kipekee** kuwa hai na ubainishe idadi ya juu ya wageni wa kipekee katika sehemu ya **kota ya ziara za kipekee**.
+Kwa mtazamo wa masoko, wasimamizi wa mtandao wanaweza kutumia mpangilio huu kama njia ya kuwahimiza wateja kuboresha mpango wao mara vikomo vinapofikiwa. Mpangilio huu pia unaweza kumsaidia msimamizi wa mtandao kudhibiti na kuzuia msongamano kupita kiasi kwenye tovuti ili kuhifadhi rasilimali za mfumo.
 
-Mara kikwazo hiki kimefikiwa, Ultimate Multisite itaacha kuhudumia tovuti ya mteja badala yake ikionyesha ujumbe wa kuonyesha kwamba vikwazo vimezidishwa.
+Ili kutumia kipengele hiki, weka kigeuzi cha **punguza ziara za kipekee** katika hali yake amilifu na ubainishe idadi ya juu zaidi ya wageni wa kipekee katika uga wa **kiasi cha ziara za kipekee**.
 
-#### Watumiaji
+Mara kikomo hiki kinapofikiwa, Ultimate Multisite itaacha kuhudumia tovuti ya mteja badala ya kuonyesha ujumbe unaoonyesha kuwa vikomo vimezidishwa.
 
-Vikwazo vya 'Watumiaji' vya Ultimate Multisite vinamruhusu msimamizi wa mtandao kuweka vikwazo kwa idadi ya watumiaji wanaoweza kuundwa na kupewa majukumu.
+#### Watumiaji {#users}
 
-![Kichupo cha Watumiaji](/img/config/product-users.png)
+Vizuizi vya 'Watumiaji' vya Ultimate Multisite humruhusu msimamizi wa mtandao kuweka vikomo kwa idadi ya watumiaji wanaoweza kuundwa na kugawiwa majukumu.
 
-Ili kuwezesha kipengele cha vikwazo, weka kitufe cha **zuia mtumiaji** kuwa hai kwa kukiteleza kulia.
+![Kichupo cha watumiaji](/img/config/product-users.png)
 
-Kisha kwa kila jukumu litakalozuiwa, weka kitufe karibu nalo kuwa hai na ufafanue kikomo cha juu katika sehemu inayofaa.
+Ili kuwezesha kipengele cha vizuizi, weka kigeuzi cha **punguza mtumiaji** katika hali yake amilifu kwa kukisogeza kulia.
 
-#### Aina za Machapisho
+Kisha, kwa kila jukumu linalopaswa kupunguzwa, weka kigeuzi kilicho karibu nalo katika hali amilifu na ufafanue kikomo cha juu zaidi katika uga unaofaa.
 
-Kichupo cha **Aina za Machapisho** kinamruhusu msimamizi wa mtandao kuweka vikwazo vya kina kwa safu nyingi za aina za machapisho ndani ya WordPress.
+#### Aina za Machapisho {#post-types}
 
-![Kichupo cha Aina za Machapisho](/img/config/product-post-types.png)
+Kichupo cha **Aina za Machapisho** humruhusu msimamizi wa mtandao kuweka vikomo vya kina kwenye safu pana ya aina za machapisho ndani ya WordPress.
 
-Kutokana na muundo wa WordPress, machapisho na aina za machapisho ni sehemu muhimu ya utendaji wake wa msingi, na hivyo mfumo wa vikwazo wa Ultimate Multisite umeundwa kusaidia msimamizi wa mtandao kuweka na kudumisha vikwazo.
+![Kichupo cha aina za machapisho](/img/config/product-post-types.png)
 
-Ili kuwezesha mfumo huu mdogo wa vikwazo, weka kitufe cha **zuia aina za machapisho** kuwa hai kwa kukiteleza kulia.
+Kutokana na muundo wa WordPress, machapisho na aina za machapisho ni sehemu muhimu ya utendaji wake mkuu, na hivyo mfumo wa vizuizi wa Ultimate Multisite umeundwa kumsaidia msimamizi wa mtandao kuweka na kudumisha vikomo.
 
-Kisha, kwa kila aina ya chapisho itakayozuiwa, kiwezesha kwa kukiteleza kulia na ubainishe kikomo cha juu katika sehemu inayofaa.
+Ili kuwezesha mfumo huu mdogo wa vikomo, weka kigeuzi cha **punguza aina za machapisho** katika hali yake amilifu kwa kukisogeza kulia.
 
-#### Nafasi ya Diski
+Kisha, kwa kila aina ya chapisho linalopaswa kupunguzwa, iwashe kwa kuisogeza kulia na kubainisha kikomo cha juu zaidi katika uga unaofaa.
 
-Kichupo cha **Nafasi ya Diski** kinamruhusu wasimamizi wa mtandao kuzuia nafasi inayotumiwa na wateja.
+#### Nafasi ya Diski {#disk-space}
 
-![Kichupo cha Nafasi ya Diski](/img/config/product-disk-space.png)
+Kichupo cha **Nafasi ya Diski** huwaruhusu wasimamizi wa mtandao kuzuia nafasi inayotumiwa na wateja.
 
-Kwa kawaida katika multisite ya WordPress, faili za msingi zinashirikiwa kati ya tovuti zote na folda za kibinafsi zinaundwa kwa faili za media na upakuaji ambapo mipangilio na vikwazo hivi vinatumika.
+![Kichupo cha nafasi ya diski](/img/config/product-disk-space.png)
 
-Ili kuwezesha kikwazo cha matumizi ya diski, weka kitufe cha **zuia ukubwa wa diski kwa kila tovuti** kuwa hai kwa kukiteleza kulia.
+Kwa kawaida katika mtandao wa tovuti nyingi wa WordPress, faili kuu hushirikiwa kati ya tovuti zote na saraka binafsi huundwa kwa faili za midia na vipakizi ambavyo mipangilio na vizuizi hivi hutumika kwake.
 
-Kisha, bainisha kikomo cha juu kwa megabytes katika sehemu ya **posho ya nafasi ya diski**.
+Ili kuwezesha kizuizi cha matumizi ya diski, weka kigeuzi cha **punguza ukubwa wa diski kwa kila tovuti** katika hali yake amilifu kwa kukisogeza kulia.
 
-#### Domain Maalum
+Kisha, bainisha kikomo cha juu zaidi kwa megabaiti katika uga wa **posho ya nafasi ya disk** i.
 
-Kwa kubadilisha chaguo hili unaweza kuruhusu domain maalum kwenye mpango huu mahususi.
+#### Kikoa Maalum {#custom-domain}
 
-![Kichupo cha Domain Maalum](/img/config/product-custom-domains.png)
+Kwa kuwasha/kuzima chaguo hili unaweza kuruhusu vikoa maalum kwenye mpango huu mahsusi.
 
-#### Themes
+![Kichupo cha vikoa maalum](/img/config/product-custom-domains.png)
 
-Kichupo cha **Themes** ndani ya chaguo za bidhaa kinamruhusu msimamizi wa mtandao kufanya themes zipatikane kwa wateja kuchagua na kwa hiari kulazimisha hali ya theme.
+#### Mandhari {#themes}
 
-![Kichupo cha Themes](/img/config/product-themes.png)
+Kichupo cha **Mandhari** ndani ya chaguo za bidhaa humruhusu msimamizi wa mtandao kufanya mandhari yapatikane kwa wateja kwa ajili ya uteuzi na kwa hiari kulazimisha hali ya mandhari.
 
-_**Kumbuka: Ili themes zipatikane kwa wateja lazima ziwe zimewezeshwa kwa mtandao na msimamizi wa mtandao.**_
+![Kichupo cha mandhari](/img/config/product-themes.png)
 
-![Ukurasa wa themes za mtandao](/img/config/product-themes-network-enabled.png)
+_**Kumbuka: Ili mandhari yafanywe yapatikane kwa wateja, lazima yawezeshwe kwenye mtandao na msimamizi wa mtandao.**_
 
-Chaguo la **uonekano** linafafanua kama theme hii inaonekana au la kwa mteja wanapotazama kichupo chao cha **Mwonekano > Themes** ndani ya tovuti yao. Kuweka chaguo hili kuwa **Imefichwa** kunaondoa theme kutoka kwenye mwonekano na hivyo kuzuia uwezo wa kuichagua na kuiamilisha.
+![Ukurasa wa mandhari ya mtandao](/img/config/product-themes-network-enabled.png)
 
-![Kichupo cha Themes](/img/config/product-themes.png)
+Chaguo la **mwonekano** hufafanua kama mandhari haya yanaonekana au hayaonekani kwa mteja anapotazama kichupo chake cha **Muonekano > Mandhari** ndani ya tovuti yake. Kuweka chaguo hili kuwa **Yaliyofichwa** huondoa mandhari kutoka kwenye mwonekano na hivyo kuzuia uwezo wa kuyachagua na kuyaamilisha.
 
-Uchaguzi wa **tabia** unamruhusu msimamizi wa mtandao kufafanua hali ya theme wakati wa kuundwa kwa tovuti ya mteja.
+![Kichupo cha mandhari](/img/config/product-themes.png)
 
-Katika hali ya **Inapatikana** theme inafanywa kupatikana kwa mteja kuiamilisha mwenyewe. Kinyume chake, hali ya **Haipatikani** inaondoa kwa mteja uwezo wa kuamilisha theme. Mwishowe, chaguo la **Lazimisha Kuamilisha** linazimisha uchaguzi na kuamilisha theme hivyo kuiweka kama chaguo-msingi wakati wa kuundwa kwa tovuti.
+Uteuzi wa **tabia** humruhusu msimamizi wa mtandao kufafanua hali ya mandhari wakati tovuti ya mteja inapoundwa.
 
-#### Plugins
+Katika hali ya **Y** **anapatikana**, mandhari hufanywa yapatikane kwa mteja ili ajiamilishie mwenyewe. Kinyume chake, hali ya **Hayapatikani** huondoa kwa mteja uwezo wa kuamilisha mandhari. Mwisho, chaguo la **Lazimisha Kuamilisha** hulazimisha uteuzi na uamilishaji wa mandhari hivyo kuyaweka kama chaguo-msingi wakati wa uundaji wa tovuti.
 
-Sawa na kichupo cha Themes, Ultimate Multisite inamruhusu msimamizi wa mtandao kufafanua uonekano wa plugins kwa wateja pamoja na hali yake wakati wa kuundwa kwa tovuti mpya.
+#### Plugins {#plugins}
+
+Sawa na kichupo cha Mandhari, Ultimate Multisite humruhusu msimamizi wa mtandao kufafanua mwonekano wa plugins kwa wateja pamoja na hali yake wakati wa uundaji wa tovuti mpya.
+
+![Kichupo cha plugins](/img/config/product-plugins.png)
+
+Menyu kunjuzi ya **mwonekano** huruhusu plugin iwe ama ionekane au ifichwe kwa mteja inapotazamwa kwenye tovuti yake kupitia chaguo la menyu ya Plugins.
+
+Msimamizi wa mtandao anaweza kudhibiti zaidi tabia ya plugins kwa kutumia chaguo zilizo kwenye menyu kunjuzi ya tabia.
 
 ![Kichupo cha Plugins](/img/config/product-plugins.png)
 
-Orodha ya kushuka ya **uonekano** inaruhusu plugin kuonekana au kufichwa kutoka kwa mteja inapotazamwa kwenye tovuti yao kupitia menyu ya Plugins.
+Uteuzi wa **Default** huheshimu hali ya plugin iliyofafanuliwa kwenye kiolezo cha site kilichochaguliwa na mteja. Hivyo plugins zilizoamilishwa ndani ya kiolezo zitaendelea kuwa zimeamilishwa wakati kiolezo kinaponakiliwa kwenye site ya mteja.
 
-Msimamizi wa mtandao anaweza zaidi kubadilisha tabia ya plugins kwa kutumia chaguo katika orodha ya kushuka ya tabia.
+**Force Activate** huweka plugin katika hali amilifu wakati wa kuunda site na kinyume chake **Force Inactivate** huzima plugin wakati wa kuunda site. Katika hali hizi zote mbili, hali ya plugin inaweza kubadilishwa kwa mikono na mteja kupitia menyu yao ya WordPress Plugins.
 
-![Kichupo cha Plugins](/img/config/product-plugins.png)
+Mpangilio wa **Force Activate & Lock** hufanya kazi kwa namna inayofanana lakini huzuia hali ya plugin kubadilishwa na mteja. Hivyo mpangilio wa Force Activate and Lock utalazimisha plugin kuwa katika hali yake amilifu na kumzuia mteja kuizima. Vivyo hivyo, mpangilio wa **Force Inactivate & Lock** utalazimisha plugin kuwa katika hali yake isiyo amilifu na kumzuia mtumiaji kuiamilisha plugin.
 
-Uchaguzi wa **Chaguo-msingi** unaheshimu hali ya plugin iliyofafanuliwa katika kielelezo cha tovuti kilichochaguliwa na mteja. Hivyo plugins zilizo amilishwa ndani ya kielelezo zitabaki zimeamilishwa wakati kielelezo kinakiliwa kwa tovuti ya mteja.
+Msimamizi wa mtandao anaweza kutaka kuzingatia mipangilio ya Force Activate & Lock na Force Inactivate & Lock pamoja na violezo vya site kwa kuwa plugins na hali za plugin ndani ya violezo zinaweza kuathiriwa na mipangilio hii ikiwa itachaguliwa.
 
-**Lazimisha Kuamilisha** inaweka plugin katika hali ya kuwa hai wakati wa kuundwa kwa tovuti na kinyume chake **Lazimisha Kutokuamilisha** inazima plugin wakati wa kuundwa kwa tovuti. Katika hali zote mbili, hali ya plugin inaweza kubadilishwa kwa mikono na mteja kupitia menyu yao ya Plugins ya WordPress.
+#### Weka Upya Vikwazo {#reset-limitations}
 
-Mpangilio wa **Lazimisha Kuamilisha na Kufunga** unafanya kazi vivyo hivyo lakini unazuia hali ya plugin kubadilishwa na mteja. Hivyo mpangilio wa Lazimisha Kuamilisha na Kufunga utalazimisha plugin kuwa katika hali yake ya kuwa hai na kumzuia mteja kuizima. Vivyo hivyo, mpangilio wa **Lazimisha Kutokuamilisha na Kufunga** utalazimisha plugin kuwa katika hali yake ya kutokuwa hai na kumzuia mtumiaji kuiamilisha plugin.
+Kichupo cha **Reset Limitations** huweka upya vikomo vyote maalum vilivyofafanuliwa kwenye product. Ili kuweka upya vikwazo, bofya kitufe cha **reset limitations**.
 
-Msimamizi wa mtandao anaweza kutaka kuzingatia mipangilio ya Lazimisha Kuamilisha na Kufunga na Lazimisha Kutokuamilisha na Kufunga pamoja na violezo vya tovuti kwani plugins na hali za plugins ndani ya violezo zinaweza kuathiriwa na mipangilio hii ikiwa imechaguliwa.
+![Kichupo cha Reset Limitations](/img/config/product-reset-limitations.png)
 
-#### Rejesha Vikwazo
+Ili kuthibitisha kitendo, telezesha kitufe cha kugeuza cha **confirm reset** kwenda hali yake amilifu upande wa kulia na ubofye kitufe cha **reset limitations**.
 
-Kichupo cha **Rejesha Vikwazo** kinarejesha vikwazo vyote vya kawaida vilivyofafanuliwa kwenye bidhaa. Ili kurejesha vikwazo bofya kitufe cha **rejesha vikwazo**.
+![Kichupo cha Reset Limitations](/img/config/product-reset-limitations.png)
 
-![Kichupo cha Kurejesha Vikwazo](/img/config/product-reset-limitations.png)
+## Hariri, Nakili, au Futa Product {#edit-duplicate-or-delete-product}
 
-Ili kuthibitisha kitendo teleza kitufe cha **thibitisha kurejesha** kuwa hai upande wa kulia na ubofye kitufe cha **rejesha vikwazo**.
+Products zilizopo zinaweza kuhaririwa, kunakiliwa au kufutwa kwa kwenda kwenye **Ultimate Multisite > Products** na kuelea juu ya jina la product lililopo.
 
-![Kichupo cha Kurejesha Vikwazo](/img/config/product-reset-limitations.png)
-
-## Hariri, Nakili, au Futa Bidhaa
-
-Bidhaa zilizopo zinaweza kuhaririwa, kunakiliwa au kufutwa kwa kwenda **Ultimate Multisite > Products** na kuweka kipanya juu ya jina la bidhaa iliyopo.
-
-![Vitendo vya kupitisha kwenye bidhaa](/img/config/product-hover-actions.png)
+![Vitendo vya kuelea juu ya Product](/img/config/product-hover-actions.png)

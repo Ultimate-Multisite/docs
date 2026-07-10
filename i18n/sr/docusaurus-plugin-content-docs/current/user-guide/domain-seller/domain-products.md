@@ -3,11 +3,11 @@ title: Domena proizvodi i cene
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeni proizvodi i cene
+# Domeni proizvodi i cene {#domain-products-and-pricing}
 
 Domeni proizvodi su način na koji kontrolišete cene, TLD-ove (top-level domen ime), privatnost WHOIS-a i izbor dobavljača. Svaki domen proizvod je standardni Ultimate Multisite proizvod sa dodatnom karticom **Domain Settings**.
 
-## Kreiranje domena proizvoda
+## Kreiranje domena proizvoda {#creating-a-domain-product}
 
 1. Idite na **Network Admin › Ultimate Multisite › Products**
 2. Kliknite na **Add New** (Dodaj novi)
@@ -17,13 +17,13 @@ Domeni proizvodi su način na koji kontrolišete cene, TLD-ove (top-level domen 
 
 Domeni proizvodi se pojavljuju sa ljubičastom oznakom **Domain** u listi proizvoda i mogu se filtrirati pomoću kartice **Domain Products**.
 
-## Kartica Domain settings
+## Kartica Domain settings {#domain-settings-tab}
 
-### Dobavljač (Provider)
+### Dobavljač (Provider) {#provider}
 
 Izaberite koji registrator će obavljati registraciju za ovaj proizvod. Podrazumevano je globalni **Default provider** (Podrazumevani dobavljač) podešen u podešavanjima Prodavca domena.
 
-### Podržani TLD-ovi (Supported TLDs)
+### Podržani TLD-ovi (Supported TLDs) {#supported-tlds}
 
 Ostavite prazno da biste kreirali **catch-all proizvod** koji se primenjuje na sve TLD-ove koje drugi proizvodi ne pokrivaju.
 
@@ -31,7 +31,7 @@ Unesite listu TLD-ova razdvojenu zarezima (npr. `.com, .net, .org`) da biste kre
 
 **Kako funkcioniće podudaranje proizvoda:** Kada kupac pretražuje domen, dodatak će izabrati najspecifičniji odgovarajući proizvod. Proizvod sa `.com` u listi TLD-ova ima prioritet pred catch-all proizvodom. Ako se ne poklapa nijedan TLD-specifičan proizvod, koristi se catch-all. Ako ne postoje proizvodi, pretraga domena se ne prikazuje.
 
-### Tip markupa (Markup type)
+### Tip markupa (Markup type) {#markup-type}
 
 Tri načina kontrolišu kako se vaša maloprodajna cena računa od veleprodajne cene:
 
@@ -41,11 +41,11 @@ Tri načina kontrolišu kako se vaša maloprodajna cena računa od veleprodajne 
 | **Fixed markup** (Fiksni markup) | Dodaje fiksnu novčanu sumu. Markup od $5 na domenu od $10 daje $15. |
 | **Fixed price** (Fiksna cena) | Potpuno ignoriše veleprodajnu cenu. Uvek naplaćuje iznos koji unesete. |
 
-### Uvodna cena (Introductory pricing)
+### Uvodna cena (Introductory pricing) {#introductory-pricing}
 
 Omogućavanje ponude popusta na prvu godinu. Postavite odvojenu **Uvodnu cenu** (cenu za prvu godinu) pored redovne **Cene za obnavljanje** (cene za drugu i sledeću godinu). Klijent vidi obe cene tokom plaćanja, tako da zna šta ga očekuje pri obnavljanju.
 
-### Privatnost WHOIS-a
+### Privatnost WHOIS-a {#whois-privacy}
 
 Kontroliće se da li je ponuđena zaštita privatnosti WHOIS-a za domene registrovane putem ovog proizvoda.
 
@@ -59,7 +59,7 @@ Za Namecheap, zaštita privatnosti WHOIS-a koristi WhoisGuard (uvek besplatno). 
 
 ---
 
-## Uvoz i sinhronizacija TLD-ova
+## Uvoz i sinhronizacija TLD-ova {#tld-import-and-sync}
 
 Proizvodi domena prikazuju cene po veleprodaji u realnom vremenu koje se dohvaćaju od povezanog dobavljača. Da bi ovo radilo, TLD-ovi moraju biti uvezeni.
 
@@ -70,7 +70,7 @@ Nakon sinhronizacije, idite na karticu Domain Settings bilo kojeg produkta domen
 
 ---
 
-## Automatska obnavljanje
+## Automatska obnavljanje {#auto-renewal}
 
 Obnavljanje domena je vezano za status članstva kupca:
 
@@ -90,7 +90,7 @@ ID šablona e-maila za događaje životnog veka domena:
 
 ---
 
-## Admin: Ručna registracija domena
+## Admin: Ručna registracija domena {#admin-manual-domain-registration}
 
 Da biste domen registrovali u ime kupca bez prolaska kroz proces plaćanja (checkout):
 

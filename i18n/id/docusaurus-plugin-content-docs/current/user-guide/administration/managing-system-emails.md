@@ -1,25 +1,29 @@
 ---
 title: Mengelola Email Sistem
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Mengelola Email Sistem
+# Mengelola Email Sistem {#managing-system-emails}
 
-Ultimate Multisite mengirimkan berbagai email sistem untuk berbagai kegiatan seperti konfirmasi pendaftaran, bukti pembayaran, dan perubahan keanggotaan. Anda dapat menyesuaikan template email ini agar sesuai dengan identitas brand Anda.
+Ultimate Multisite mengirim berbagai email sistem untuk peristiwa seperti konfirmasi pendaftaran, tanda terima pembayaran, dan perubahan membership. Anda dapat menyesuaikan template email ini agar sesuai dengan brand Anda.
 
-## Melihat Email Sistem
+## Melihat Email Sistem {#viewing-system-emails}
 
 Buka **Ultimate Multisite → Settings** dan klik tab **Emails** untuk melihat pengaturan terkait email.
 
-![Settings - Emails tab](/img/admin/settings-emails.png)
+![Tab Settings - Emails](/img/admin/settings-emails.png)
 
 Dari sana, Anda dapat mengakses halaman **System Emails** untuk melihat semua template email.
 
-![System Emails list](/img/admin/system-emails-list.png)
+![Daftar System Emails](/img/admin/system-emails-list.png)
 
-## Mengimpor Template Email Baru
+Anda juga dapat mengedit template email individual menggunakan editor email sistem:
 
-Versi Ultimate Multisite terbaru dan add-on mungkin mendaftarkan template email baru. Untuk mencegah konflik, template baru tidak ditambahkan secara otomatis — Anda perlu mengimpornya secara manual.
+![Editor email sistem](/img/admin/system-email-editor.png)
+
+## Mengimpor Template Email Baru {#importing-new-email-templates}
+
+Versi dan add-on Ultimate Multisite baru dapat mendaftarkan template email baru. Untuk mencegah konflik, template baru tidak ditambahkan secara otomatis — Anda perlu mengimpornya secara manual.
 
 Untuk mengimpor template email baru:
 
@@ -28,11 +32,11 @@ Untuk mengimpor template email baru:
 3. Aktifkan opsi **Import Emails** untuk melihat template yang tersedia
 4. Pilih template yang ingin Anda impor dan konfirmasi
 
-## Mereset Template Email
+## Mereset Template Email {#resetting-email-templates}
 
-Jika Anda telah menyesuaikan template email dan ingin mengembalikannya ke konten default, ada dua pilihan:
+Jika Anda telah menyesuaikan template email dan ingin mengembalikannya ke konten default, Anda memiliki dua opsi:
 
-1. **Hapus dan impor ulang** — Hapus email sistem lalu impor kembali (ini akan menghapus metrik pengiriman)
-2. **Reset melalui tool** — Gunakan tool **Reset & Import**, aktifkan opsi **Reset**, dan pilih email yang ingin Anda reset
+1. **Hapus dan impor ulang** — Hapus email sistem dan impor lagi (ini menghapus metrik pengiriman)
+2. **Reset melalui alat** — Gunakan alat **Reset & Import**, aktifkan opsi **Reset**, dan pilih email yang ingin Anda reset
 
-Opsi Reset lebih disarankan karena metrik pengiriman dan metadata lainnya tetap tersimpan, sementara konten dikembalikan ke default.
+Opsi Reset lebih disarankan karena mempertahankan metrik pengiriman dan metadata lainnya sambil memulihkan konten default.

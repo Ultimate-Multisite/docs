@@ -3,28 +3,28 @@ title: Hestia Vezérlőpult Integráció
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel integráció
+# Hestia Control Panel integráció {#hestia-control-panel-integration}
 
 Ez az útmutató bemutatja, hogyan konfigurálhatod az Ultimate Multisite Hestia integrációt, hogy a hálózatodban hozzárendelt domainek automatikusan hozzáadódjanak (és törlődjenek) Web Domain Alias-ként a Hestiában.
 
 - Hestia CLI referencia: v-add-web-domain-alias / v-delete-web-domain-alias
 - Hivatalos REST API dokumentáció: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Mit csinál
+## Mit csinál {#what-it-does}
 - Amikor egy domaint hozzárendelsz az Ultimate Multisite-ban, az integráció meghívja a Hestia API-t a következő parancs futtatásához:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Amikor egy domain hozzárendelést törölsz, ezt futtatja:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Opcionálisan hozzáadja/eltávolítja a `www.` aliast a Domain Mapping beállításokban található „www aldomain automatikus létrehozása" opció alapján.
 
-## Előfeltételek
+## Előfeltételek {#prerequisites}
 - Egy meglévő Hestia Web Domain, amely már a WordPress telepítésedre mutat. Az integráció ehhez az alap domainhez csatolja az aliasokat.
 - Hestia API hozzáférés engedélyezve. Hitelesíthetsz jelszóval vagy API hash/token használatával.
 
 A Hestia REST API dokumentációjában olvashatod el az API hozzáférés engedélyezésének és a hitelesítés részleteit:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Konfiguráció (Varázsló → Integrációk → Hestia)
+## Konfiguráció (Varázsló → Integrációk → Hestia) {#configuration-wizard--integrations--hestia}
 Add meg a következő értékeket:
 
 - `WU_HESTIA_API_URL` (kötelező)
@@ -42,16 +42,16 @@ Add meg a következő értékeket:
 
 Hagyhatod, hogy a varázsló beírja ezeket a konstansokat a `wp-config.php` fájlba, vagy manuálisan is megadhatod őket.
 
-## Beállítás ellenőrzése
+## Beállítás ellenőrzése {#verifying-setup}
 - A varázsló „Tesztelés" lépésében a plugin meghívja a `v-list-web-domains <WU_HESTIA_ACCOUNT> json` parancsot az API-n keresztül. A sikeres válasz megerősíti a kapcsolatot és a hitelesítést.
 - Domain hozzárendelés után ellenőrizd a Hestiában: Web > az alap domain > Aliasok. Látni kell az újonnan hozzáadott aliast.
 
-## Megjegyzések és tippek
+## Megjegyzések és tippek {#notes--tips}
 - Győződj meg róla, hogy a `WU_HESTIA_WEB_DOMAIN` létezik és a `WU_HESTIA_ACCOUNT` a tulajdonosa.
 - Ha SSL szükséges, a tanúsítványokat a Hestiában kezeld. Ez az integráció jelenleg csak az aliasokat kezeli.
 - A plugin a Domain Mapping „www aldomain" beállításától függően hozzáadhatja/eltávolíthatja a `www.<domain>` aliast is.
 
-## Példa API hívás (cURL)
+## Példa API hívás (cURL) {#example-api-call-curl}
 Az alábbiakban egy koncepcionális példa látható (igazítsd a környezetedhez). A pontos paraméterekért nézd meg a hivatalos dokumentációt.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Törléshez használd a `cmd=v-delete-web-domain-alias` parancsot ugyanazokkal az argumentumokkal.
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 - HTTP hiba az API-tól: ellenőrizd, hogy a `WU_HESTIA_API_URL` elérhető és tartalmazza az `/api` útvonalat.
 - Hitelesítési hibák: ellenőrizd a `WU_HESTIA_API_USER` értékét és a `WU_HESTIA_API_PASSWORD` vagy `WU_HESTIA_API_HASH` valamelyikét.
 - „Hiányzó fiók/alap domain" a naplókban: győződj meg róla, hogy a `WU_HESTIA_ACCOUNT` és a `WU_HESTIA_WEB_DOMAIN` be van állítva és érvényes a Hestiában.
 
-## Hivatkozások
+## Hivatkozások {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI referencia (Aliasok): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

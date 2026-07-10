@@ -3,7 +3,7 @@ title: Gerenciamento de Clientes
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Gerenciando Clientes
+# Gerenciando Clientes {#managing-customers}
 
 A página **Clientes** mostra a lista dos membros registrados na sua rede. Esta página exibe informações básicas do usuário, incluindo nome, endereço de e-mail, último login e um link **para mudar para** que permite fazer login no subsistema do usuário como administrador do site.
 

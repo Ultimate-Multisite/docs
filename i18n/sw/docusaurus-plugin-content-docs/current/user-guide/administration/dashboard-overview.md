@@ -3,11 +3,11 @@ title: Muhtasari wa Dashibodi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Muhtasari wa Dashboard
+# Muhtasari wa Dashboard {#dashboard-overview}
 
 Ultimate Multisite ina **Dashboard** maalum chini ya menyu ya Ultimate Multisite, na pia inaongeza widgets kwenye Network Dashboard. Makala hii inashughulikia unachokiona katika sehemu zote mbili.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite inaweka widgets muhimu kwenye dashboard ya ngazi ya mtandao inayopatikana kwenye **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Hivi ndivyo kila widget inavyosaidia:
 
 ![Widget ya News](/img/admin/network-dashboard-news.png)
 
-## Dashboard ya Ultimate Multisite
+## Dashboard ya Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Wakati network dashboard inaonyesha taarifa za jumla kuhusu mtandao, dashboard ya Ultimate Multisite (kwenye ngazi ya juu ya menyu ya Ultimate Multisite) inaonyesha taarifa kuhusu huduma.
 

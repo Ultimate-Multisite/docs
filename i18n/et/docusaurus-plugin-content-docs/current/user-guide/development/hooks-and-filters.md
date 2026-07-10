@@ -3,7 +3,7 @@ title: Krookid ja suodajad
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hookid ja filtri
+# Ultimate Multisite Hookid ja filtri {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite on koosmises funktsioonide ja database küsimuste kogumine. Sellel on hookid ja filtri, mis võimaldavad teil muuta või lisada uut koodi olemasolevate funktsioonidele.
 

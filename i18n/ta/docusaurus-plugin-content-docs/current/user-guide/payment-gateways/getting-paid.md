@@ -1,110 +1,126 @@
 ---
 title: பணம் பெறுதல்
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# பணம் பெறுதல் (v2)
+# பணம் பெறுதல் (v2) {#getting-paid-v2}
 
-_**முக்கிய குறிப்பு: இந்த கட்டுரை Ultimate Multisite பதிப்பு 2.x ஐ குறிக்கிறது.**_
+_**முக்கிய குறிப்பு: இந்தக் கட்டுரை Ultimate Multisite பதிப்பு 2.x-ஐ குறிக்கிறது.**_
 
-Ultimate Multisite-ல் உள்ளமைந்த membership மற்றும் billing அமைப்பு உள்ளது. எங்கள் billing அமைப்பு சரியாக செயல்பட, e-commerce-ல் பரவலாக பயன்படுத்தப்படும் payment gateway-களை ஒருங்கிணைத்துள்ளோம். Ultimate Multisite-ல் இயல்பாக வழங்கப்படும் payment gateway-கள் _Stripe_, _PayPal_ மற்றும் Manual Payment ஆகும். இவை தவிர, அந்தந்த add-on-களை நிறுவுவதன் மூலம் _WooCommerce_, _GoCardless_ மற்றும் _Payfast_ வழியாகவும் பணம் பெறலாம்.
+Ultimate Multisite-இல் உட்பொதிந்த உறுப்பினர் மற்றும் கட்டண அமைப்பு உள்ளது. எங்கள் கட்டண அமைப்பு செயல்பட, மின்னணு வணிகத்தில் பொதுவாகப் பயன்படுத்தப்படும் கட்டண வாயில்களை ஒருங்கிணைத்துள்ளோம். Ultimate Multisite-இல் இயல்புநிலை கட்டண வாயில்கள் _Stripe_ , _PayPal_ , மற்றும் கைமுறை கட்டணம். அவற்றின் தொடர்புடைய துணை நிரல்களை நிறுவுவதன் மூலம் கட்டணங்களைப் பெற _WooCommerce_ , _GoCardless_ மற்றும் _Payfast_ ஆகியவற்றையும் பயன்படுத்தலாம்.
 
-## அடிப்படை அமைப்புகள்
+## அடிப்படை அமைப்புகள் {#basic-settings}
 
-இந்த payment gateway-களை Ultimate Multisite payment அமைப்புகளில் configure செய்யலாம். **Ultimate Multisite menu > Settings > Payments** என்று சென்று இதை அணுகலாம்.
+Ultimate Multisite கட்டண அமைப்புகளின் கீழ் இந்தக் கட்டண வாயில்களில் ஏதேனும் ஒன்றை நீங்கள் உள்ளமைக்கலாம். இதை **Ultimate Multisite பட்டி > அமைப்புகள் > கட்டணங்கள்** என்பதற்குச் சென்று காணலாம்.
 
-![Ultimate Multisite-ல் Payment அமைப்புகள் பக்கம்](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite-இல் Payments பலகையைக் காட்டும் கட்டண அமைப்புகள் பக்கம்](/img/config/payments-settings-page.png)
 
-உங்கள் payment gateway-ஐ அமைப்பதற்கு முன், நீங்கள் configure செய்யக்கூடிய அடிப்படை payment அமைப்புகளைப் பாருங்கள்:
+உங்கள் கட்டண வாயிலை அமைப்பதற்கு முன், நீங்கள் உள்ளமைக்கக்கூடிய அடிப்படை கட்டண அமைப்புகளைப் பாருங்கள்:
 
-**Force auto-renew:** பயனர் தேர்வு செய்த billing frequency-க்கு ஏற்ப, ஒவ்வொரு billing cycle முடிவிலும் பணம் தானாகவே வசூலிக்கப்படும் என்பதை இது உறுதி செய்கிறது.
+**தானியங்கி புதுப்பிப்பை கட்டாயப்படுத்** **தல்:** பயனர் தேர்ந்தெடுத்த கட்டண அடிக்கடி நிகழும் அளவைப் பொறுத்து, ஒவ்வொரு கட்டணச் சுழற்சியின் முடிவிலும் கட்டணம் தானாகவே மீண்டும் நிகழ்வதை இது உறுதிசெய்யும்.
 
-![Force auto-renew toggle அமைப்பு](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** இந்த விருப்பத்தை இயக்கினால், பதிவு செய்யும்போது உங்கள் வாடிக்கையாளர் எந்த நிதி தகவலையும் சேர்க்க வேண்டியதில்லை. trial காலம் முடிந்த பிறகு மட்டுமே இது தேவைப்படும்.
+Ultimate Multisite v2.13.0, தானியங்கி புதுப்பிப்பு இயக்கப்பட்ட மீண்டும் நிகழும் உறுப்பினர்தன்மையைச் சேமிப்பதற்கு முன், செயலில் உள்ள வாயிலில் மீண்டும் பயன்படுத்தக்கூடிய புதுப்பிப்பு சான்று உள்ளதா என்று சரிபார்க்கிறது. புதுப்பிப்பு சான்று என்பது வாயில் சந்தா, கட்டண ஒப்பந்தம், சேமிக்கப்பட்ட vault token, அல்லது அதற்கு இணையான மீண்டும் பயன்படுத்தக்கூடிய கட்டண முறையாக இருக்கலாம். பயன்படுத்தக்கூடிய சான்று இல்லை என்று வாயில் தெரிவித்தால், Ultimate Multisite உறுப்பினர்தன்மையைச் சேமிக்கும், ஆனால் தானியங்கி புதுப்பிப்பை முடக்கும். மேலும் புதுப்பிப்பு தேதிக்கு முன் வாடிக்கையாளரிடம் கட்டணத்தை மீண்டும் அங்கீகரிக்கச் சொல்ல நிர்வாகி அல்லது ஆதரவு செயல்முறை பயன்படுத்தக்கூடிய வகையில், சான்று இல்லாத நிலையைப் பதிவு செய்யும்.
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+வாயில் ஒருமுறை கட்டணங்களை மட்டுமே வசூலிக்க முடியும் போது, உறுப்பினர்தன்மை தானாகப் புதுப்பிக்கப்படுவது போலத் தோன்றுவதை இது தடுக்கிறது. குறிப்பாக வாயில் ஒருமுறை பிடித்தல் மற்றும் vault/subscription கட்டண முறைகள் இரண்டையும் ஆதரிக்கும் போது, மீண்டும் நிகழும் checkout-கள் மீண்டும் பயன்படுத்தக்கூடிய சான்றைச் சேமிக்கின்றன என்பதை வாயில் துணை நிரல்கள் உறுதிப்படுத்த வேண்டும்.
 
-**Send invoice on payment confirmation:** பணம் செலுத்திய பிறகு invoice அனுப்ப வேண்டுமா வேண்டாமா என்பதை இங்கே தீர்மானிக்கலாம். பயனர்கள் தங்கள் subsite dashboard-ல் payment வரலாற்றை அணுகலாம் என்பதை நினைவில் கொள்ளுங்கள். இந்த விருப்பம் Manual Gateway-க்கு பொருந்தாது.
+**கட்டண முறை இல்லாமல் சோதனைகளை அனுமதிக்கவும்:** இந்த விருப்பம் இயக்கப்பட்டிருந்தால், பதிவு செயல்முறையின் போது உங்கள் வாடிக்கையாளர் எந்த நிதி தகவலையும் சேர்க்க வேண்டியதில்லை. சோதனை காலம் முடிந்த பிறகே இது தேவைப்படும்.
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** இங்கே, payment reference code அல்லது sequential number scheme-ஐ தேர்வு செய்யலாம். உங்கள் invoice-களுக்கு payment reference code பயன்படுத்த விரும்பினால், எதையும் configure செய்ய வேண்டியதில்லை. Sequential number scheme தேர்வு செய்தால், **next invoice number** (இந்த எண் அமைப்பில் அடுத்ததாக உருவாக்கப்படும் invoice-க்கு பயன்படுத்தப்படும். புதிய invoice உருவாக்கப்படும் ஒவ்வொரு முறையும் இது ஒன்று அதிகரிக்கும். இதை மாற்றி சேமித்து, invoice sequential number-ஐ குறிப்பிட்ட மதிப்புக்கு reset செய்யலாம்) மற்றும் **invoice number prefix**-ஐ configure செய்ய வேண்டும்.
+**கட்டண உறுதிப்படுத்தலின் போது விலைப்பட்டியல் அனுப்பவும்:** கட்டணத்திற்குப் பிறகு விலைப்பட்டியல் அனுப்ப வேண்டுமா வேண்டாமா என்பதற்கான விருப்பத்தை இது வழங்குகிறது. பயனர்கள் தங்கள் துணைத்தள Dashboard-இன் கீழ் தங்கள் கட்டண வரலாற்றை அணுக முடியும் என்பதை கவனிக்கவும். இந்த விருப்பம் கைமுறை வாயிலுக்கு பொருந்தாது.
 
-![Invoice numbering scheme தேர்வு](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sequential invoice number மற்றும் prefix அமைப்புகள்](/img/config/settings-payment-gateways.png)
+**விலைப்பட்டியல் எண் அமைப்பு:** இங்கே, நீங்கள் கட்டண குறிப்பு குறியீடு அல்லது தொடர்ச்சியான எண் அமைப்பு ஆகியவற்றில் ஒன்றைத் தேர்ந்தெடுக்கலாம். உங்கள் விலைப்பட்டியல்களுக்கு கட்டண குறிப்பு குறியீட்டைப் பயன்படுத்த தேர்வு செய்தால், நீங்கள் எதையும் உள்ளமைக்க வேண்டியதில்லை. தொடர்ச்சியான எண் அமைப்பைப் பயன்படுத்த தேர்வு செய்தால், நீங்கள் **அடுத்த விலைப்பட்டியல் எண்** (அமைப்பில் அடுத்ததாக உருவாக்கப்படும் விலைப்பட்டியலுக்கான விலைப்பட்டியல் எண்ணாக இந்த எண் பயன்படுத்தப்படும். ஒவ்வொரு முறையும் புதிய விலைப்பட்டியல் உருவாக்கப்படும் போது இது ஒன்றால் அதிகரிக்கப்படும். விலைப்பட்டியல் தொடர்ச்சியான எண்ணை ஒரு குறிப்பிட்ட மதிப்புக்கு மீட்டமைக்க, இதை மாற்றி சேமிக்கலாம்) மற்றும் **விலைப்பட்டியல் எண் முன்னொட்டு** ஆகியவற்றை உள்ளமைக்க வேண்டும்.
 
-## Gateway-களை எங்கே காணலாம்:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-அதே பக்கத்தில் (**Ultimate Multisite > Settings > Payments**) payment gateway-களை அமைக்கலாம். **active payment gateways**-க்கு கீழே _Stripe_, _Stripe Checkout_, _PayPal_ மற்றும் _Manual_ ஆகியவற்றைக் காணலாம்.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active payment gateway-கள் பட்டியல்](/img/config/settings-payment-gateways.png)
+## வாயில்களை எங்கே காணலாம்: {#where-to-find-the-gateways}
 
-ஒவ்வொரு payment gateway-க்கும் தனி கட்டுரை உள்ளது, அது அமைப்பதற்கான படிகளை வழிநடத்தும். கீழே உள்ள இணைப்புகளில் அவற்றைக் காணலாம்.
+அதே பக்கத்தில் ( **Ultimate Multisite > Settings > Payments**) கட்டண வாயில்களை அமைக்கலாம். **செயலில் உள்ள கட்டண வாயில்கள்** என்பதற்குக் கீழே, நீங்கள் இவற்றைக் காண முடியும்: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ மற்றும் _கைமுறை_.
 
-**Stripe gateway அமைத்தல்**
+![Stripe, Stripe Checkout, PayPal மற்றும் கைமுறை ஆகியவற்றை பட்டியலிடும் செயலில் உள்ள கட்டண வாயில்கள் பகுதி](/img/config/payments-active-gateways.png)
 
-**PayPal gateway அமைத்தல்**
+ஒவ்வொரு கட்டண வாயிலுக்கும் அதை அமைக்கும் படிகளைக் காட்டும் தனி கட்டுரை எங்களிடம் உள்ளது. அவற்றை கீழே உள்ள இணைப்புகளில் காணலாம்.
 
-**Manual payments அமைத்தல்**
+நீங்கள் கட்டண விவரங்களைப் பார்க்கவும் திருத்தவும் முடியும்:
 
-இப்போது, _WooCommerce_, _GoCardless_ அல்லது _Payfast_-ஐ உங்கள் payment gateway-ஆக பயன்படுத்த விரும்பினால், **அவற்றின் add-on-களை நிறுவி configure செய்ய வேண்டும்**.
+![கட்டண திருத்த இடைமுகம்](/img/admin/payment-edit.png)
 
-### WooCommerce add-on நிறுவுவது எப்படி:
+கட்டண திருத்தப் பக்கத்தின் முழு காட்சி இதோ:
 
-சில நாடுகளில் _Stripe_ மற்றும் _PayPal_ கிடைக்காது என்பதை நாங்கள் புரிந்துகொள்கிறோம், இது Ultimate Multisite பயனர்கள் எங்கள் plugin-ஐ திறம்பட பயன்படுத்துவதை கட்டுப்படுத்துகிறது. எனவே மிகவும் பிரபலமான e-commerce plugin ஆன _WooCommerce_-ஐ ஒருங்கிணைக்க ஒரு add-on உருவாக்கினோம். உலகம் முழுவதும் உள்ள developers பல்வேறு payment gateway-களை இதனுடன் ஒருங்கிணைக்க add-on-கள் உருவாக்கியுள்ளனர். Ultimate Multisite billing அமைப்புடன் பயன்படுத்தக்கூடிய payment gateway-களை விரிவுபடுத்த இதை நாங்கள் பயன்படுத்திக்கொண்டோம்.
+![கட்டண திருத்த முழு இடைமுகம்](/img/admin/payment-edit-full.png)
 
-_**முக்கியம்:** Ultimate Multisite: WooCommerce Integration-க்கு குறைந்தபட்சம் உங்கள் main site-ல் WooCommerce செயல்படுத்தப்பட்டிருக்க வேண்டும்._
+கட்டண வாயில் அமைப்புகளின் முழு காட்சியும் இதோ:
 
-முதலில், add-ons பக்கத்திற்குச் செல்லுங்கள். **Ultimate Multisite > Settings** என்று சென்று இதை அணுகலாம். **Add-ons** அட்டவணையைக் காணலாம். **Check our Add-ons** என்பதைக் கிளிக் செய்யுங்கள்.
+![கட்டண வாயில் அமைப்புகள் முழுப் பக்கம்](/img/config/settings-payments-gateways-full.png)
 
-![Add-ons பகுதியுடன் Settings பக்கம்](/img/config/settings-general.png)
+**Stripe வாயிலை அமைத்தல்**
 
-**Check our Add-ons** கிளிக் செய்த பிறகு, add-ons பக்கத்திற்கு redirect செய்யப்படுவீர்கள். இங்கே அனைத்து Ultimate Multisite add-on-களையும் காணலாம். **Ultimate Multisite: WooCommerce Integration** add-on-ஐ கிளிக் செய்யுங்கள்.
+**PayPal வாயிலை அமைத்தல்**** **
 
-![கிடைக்கும் add-on-களின் பட்டியலுடன் Add-ons பக்கம்](/img/config/settings-general.png)
+**கைமுறை கட்டணங்களை அமைத்தல்**
 
-Add-on விவரங்களுடன் ஒரு window தோன்றும். **Install Now** கிளிக் செய்யுங்கள்.
+இப்போது, உங்கள் கட்டண வாயிலாக _WooCommerce_ , _GoCardless_ அல்லது _Payfast_ பயன்படுத்த விரும்பினால், நீங்கள் **அவற்றின் துணை நிரல்களை நிறுவி உள்ளமைக்க வேண்டும்**.
 
-![WooCommerce add-on install dialog](/img/config/settings-general.png)
+### WooCommerce துணை நிரலை எவ்வாறு நிறுவுவது: {#how-to-install-the-woocommerce-add-on}
 
-நிறுவல் முடிந்ததும், plugins பக்கத்திற்கு redirect செய்யப்படுவீர்கள். இங்கே **Network Activate** கிளிக் செய்தால் WooCommerce add-on உங்கள் network-ல் செயல்படுத்தப்படும்.
+சில நாடுகளில் _Stripe_ மற்றும் _PayPal_ கிடைக்காததால் Ultimate Multisite பயனர்கள் எங்கள் செருகுநிரலை திறம்படப் பயன்படுத்துவது கட்டுப்படுகிறது அல்லது தடைபடுகிறது என்பதை நாங்கள் புரிந்துகொள்கிறோம். அதனால், மிகவும் பிரபலமான மின்னணு வணிகச் செருகுநிரலான _WooCommerce,_ ஐ ஒருங்கிணைக்க ஒரு துணை நிரலை உருவாக்கினோம். உலகம் முழுவதும் உள்ள உருவாக்குநர்கள், பல்வேறு கட்டண வாயில்களை அதனுடன் ஒருங்கிணைக்க துணை நிரல்களை உருவாக்கினர். Ultimate Multisite கட்டண அமைப்புடன் நீங்கள் பயன்படுத்தக்கூடிய கட்டண வாயில்களை விரிவாக்க இதைப் பயன்படுத்திக்கொண்டோம்.
 
-![WooCommerce add-on-ஐ Network Activate செய்தல்](/img/config/settings-general.png)
+_**முக்கியம்:** Ultimate Multisite: WooCommerce Integration-க்கு WooCommerce குறைந்தபட்சம் உங்கள் முதன்மை தளத்தில் செயல்படுத்தப்பட்டிருக்க வேண்டும்._
 
-இதை செயல்படுத்திய பிறகு, உங்கள் website-ல் WooCommerce plugin இன்னும் நிறுவப்படவில்லை மற்றும் செயல்படுத்தப்படவில்லை என்றால், நினைவூட்டல் பெறுவீர்கள்.
+முதலில், துணை நிரல்கள் பக்கத்திற்குச் செல்லவும். இதை **Ultimate Multisite > Settings** என்பதற்குச் சென்று காணலாம். நீங்கள் **துணை நிரல்கள்** அட்டவணையைப் பார்க்க வேண்டும். **எங்கள் துணை நிரல்களைப் பாருங்கள்** என்பதைக் கிளிக் செய்யவும்.
 
-![WooCommerce செயல்படுத்துதல் நினைவூட்டல் அறிவிப்பு](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-WooCommerce Integration add-on பற்றி மேலும் படிக்க, **இங்கே கிளிக் செய்யுங்கள்**.
+**எங்கள் துணை நிரல்களைப் பாருங்கள்** என்பதைக் கிளிக் செய்த பிறகு, நீங்கள் துணை நிரல்கள் பக்கத்திற்கு திருப்பி விடப்படுவீர்கள். இங்கே அனைத்து Ultimate Multisite துணை நிரல்களையும் காணலாம். **Ultimate Multisite: WooCommerce Integration** துணை நிரலைக் கிளிக் செய்யவும்.
 
-### GoCardless add-on நிறுவுவது எப்படி:
+![WooCommerce Integration உட்பட Ultimate Multisite துணை நிரல்களை பட்டியலிடும் துணை நிரல்கள் பக்கம்](/img/addons/addons-page.png)
 
-_GoCardless_ add-on நிறுவும் படிகள் _WooCommerce_ add-on போலவே உள்ளன. Add-ons பக்கத்திற்குச் சென்று **Ultimate Multisite: GoCardless Gateway** add-on-ஐ தேர்வு செய்யுங்கள்.
+கூட்டு நிரலின் விவரங்களுடன் ஒரு சாளரம் தோன்றும். **இப்போது நிறுவு** என்பதைக் கிளிக் செய்யவும்.
 
-![கிடைக்கும் add-on-களின் பட்டியலுடன் Add-ons பக்கம்](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: இப்போது நிறுவு பொத்தானுடன் Ultimate Multisite WooCommerce Integration கூட்டு நிரல் விவர உரையாடல் -->
 
-Add-on window தோன்றும். **Install Now** கிளிக் செய்யுங்கள்.
+நிறுவல் முடிந்த பிறகு, நீங்கள் செருகுநிரல்கள் பக்கத்துக்கு திருப்பி அனுப்பப்படுவீர்கள். இங்கே, **நெட்வொர்க்கில் செயல்படுத்து** என்பதைக் கிளிக் செய்தால், WooCommerce கூட்டு நிரல் உங்கள் நெட்வொர்க்கில் செயல்படுத்தப்படும்.
 
-![GoCardless add-on install dialog](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: WooCommerce Integration கூட்டு நிரலுக்கான நெட்வொர்க்கில் செயல்படுத்து இணைப்புடன் செருகுநிரல்கள் பக்கம் -->
 
-நிறுவல் முடிந்ததும், plugins பக்கத்திற்கு redirect செய்யப்படுவீர்கள். இங்கே **Network Activate** கிளிக் செய்தால் _GoCardless_ add-on உங்கள் network-ல் செயல்படுத்தப்படும்.
+அதைச் செயல்படுத்திய பிறகும், உங்கள் இணையதளத்தில் WooCommerce செருகுநிரல் நிறுவப்பட்டும் செயல்படுத்தப்பட்டும் இல்லையெனில், உங்களுக்கு ஒரு நினைவூட்டல் வரும்.
 
-![GoCardless add-on-ஐ Network Activate செய்தல்](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: WooCommerce செருகுநிரலை நிறுவி செயல்படுத்துமாறு நிர்வாகிக்கு நினைவூட்டும் நிர்வாக அறிவிப்பு -->
 
-_GoCardless_ gateway-ஐ தொடங்குவது எப்படி என்று அறிய, **இந்த கட்டுரையைப் படியுங்கள்**.
+WooCommerce Integration கூட்டு நிரல் பற்றி மேலும் படிக்க, **இங்கே கிளிக் செய்யவும்**.
 
-### Payfast add-on நிறுவுவது எப்படி:
+### GoCardless கூட்டு நிரலை நிறுவுவது எப்படி: {#how-to-install-the-gocardless-add-on}
 
-Add-ons பக்கத்திற்குச் சென்று **Ultimate Multisite: Payfast Gateway** add-on-ஐ தேர்வு செய்யுங்கள்.
+_GoCardless_ கூட்டு நிரலை நிறுவும் படிகள், _WooCommerce_ கூட்டு நிரலின் படிகளுடன் கிட்டத்தட்ட ஒரே மாதிரியானவை. கூட்டு நிரல்கள் பக்கத்துக்குச் சென்று, **Ultimate Multisite: GoCardless Gateway** கூட்டு நிரலைத் தேர்ந்தெடுக்கவும்.
 
-![கிடைக்கும் add-on-களின் பட்டியலுடன் Add-ons பக்கம்](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: Ultimate Multisite GoCardless Gateway கூட்டு நிரல் முன்னிலைப்படுத்தப்பட்ட கூட்டு நிரல்கள் பக்கம் -->
 
-Add-on window தோன்றும். **Install Now** கிளிக் செய்யுங்கள்.
+கூட்டு நிரல் சாளரம் தோன்றும். **இப்போது நிறுவு** என்பதைக் கிளிக் செய்யவும்.
 
-![Payfast add-on install dialog](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: இப்போது நிறுவு பொத்தானுடன் Ultimate Multisite GoCardless Gateway கூட்டு நிரல் விவர உரையாடல் -->
 
-நிறுவல் முடிந்ததும், plugins பக்கத்திற்கு redirect செய்யப்படுவீர்கள். இங்கே **Network Activate** கிளிக் செய்தால் _Payfast_ add-on உங்கள் network-ல் செயல்படுத்தப்படும்.
+நிறுவல் முடிந்த பிறகு, நீங்கள் செருகுநிரல்கள் பக்கத்துக்கு திருப்பி அனுப்பப்படுவீர்கள். இங்கே, **நெட்வொர்க்கில் செயல்படுத்து** என்பதைக் கிளிக் செய்தால், _GoCardless_ கூட்டு நிரல் உங்கள் நெட்வொர்க்கில் செயல்படுத்தப்படும்.
 
-![Payfast add-on-ஐ Network Activate செய்தல்](/img/config/settings-general.png)
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: GoCardless Gateway கூட்டு நிரலுக்கான நெட்வொர்க்கில் செயல்படுத்து இணைப்புடன் செருகுநிரல்கள் பக்கம் -->
+
+_GoCardless_ கட்டண வாயிலுடன் தொடங்குவது எப்படி என்பதை அறிய, **இந்தக் கட்டுரையைப் படிக்கவும்**.
+
+### Payfast கூட்டு நிரலை நிறுவுவது எப்படி: {#how-to-install-the-payfast-add-on}
+
+கூட்டு நிரல்கள் பக்கத்துக்குச் சென்று, **Ultimate Multisite: Payfast Gateway** கூட்டு நிரலைத் தேர்ந்தெடுக்கவும்.
+
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: Ultimate Multisite Payfast Gateway கூட்டு நிரல் முன்னிலைப்படுத்தப்பட்ட கூட்டு நிரல்கள் பக்கம் -->
+
+கூட்டு நிரல் சாளரம் தோன்றும். **இப்போது நிறுவு** என்பதைக் கிளிக் செய்யவும்.
+
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: இப்போது நிறுவு பொத்தானுடன் Ultimate Multisite Payfast Gateway கூட்டு நிரல் விவர உரையாடல் -->
+
+நிறுவல் முடிந்த பிறகு, நீங்கள் செருகுநிரல்கள் பக்கத்துக்கு திருப்பி அனுப்பப்படுவீர்கள். இங்கே, **நெட்வொர்க்கில் செயல்படுத்து** என்பதைக் கிளிக் செய்தால், _Payfast_ கூட்டு நிரல் உங்கள் நெட்வொர்க்கில் செயல்படுத்தப்படும்.
+
+<!-- திரைப்பிடிப்பு கிடைக்கவில்லை: Payfast Gateway கூட்டு நிரலுக்கான நெட்வொர்க்கில் செயல்படுத்து இணைப்புடன் செருகுநிரல்கள் பக்கம் -->

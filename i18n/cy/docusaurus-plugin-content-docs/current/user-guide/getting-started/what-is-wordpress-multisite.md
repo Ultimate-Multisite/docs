@@ -3,7 +3,7 @@ title: Beth yw WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Beth yw WordPress Multisite?
+# Beth yw WordPress Multisite? {#what-is-wordpress-multisite}
 
 Yn y cyd-fydd, mae WordPress yn rhoi ffeithau gyda'r enw ‘Multisite’ sydd â'i gynhyrchydd i 2010 gyda lansio WordPress 3.0. Oethau pan fydd wedi cael amrywiadau am ystod hynny i chynllun newid ffeithiau newydd a sicrwydd wella.
 
@@ -11,7 +11,7 @@ Yn y cyfathrebu, gallai'r multisite WordPress ei weld fel hyn: Mae uniwersytach 
 
 ##
 
-## Beth yw Multisite WordPress yn llwyr?
+## Beth yw Multisite WordPress yn llwyr? {#what-exactly-is-wordpress-multisite}
 
 Mae multisite yn ffeithau o WordPress sy'n sylw i'r amgylchedd o wefanau i gynnwys un gyfleniad o WordPress. Pan fydd multisite wedi cael ei chynllunio, mae'r wefan WordPress cyntaf wedi cael ei newid i sicrwydd i ddefnyddio hyn sydd yn cael ei ddarganfod fel **cynllun o wefanau**.
 
@@ -23,7 +23,7 @@ Mae hyn yn un o'r prif fforddau'r multisite, felly mae'n sylwi i chi drosu'r ams
 
 ##
 
-## Subdomain neu Subdirectory?
+## Subdomain neu Subdirectory? {#subdomain-or-subdirectory}
 
 Mae rhai ddau o fforddau i chwarae WordPress multisite – ac rhaid i chi ddwylo un ohono pan fyddwch yn newid eich gyfleniad WordPress cyffredin i gyfleniad multisite:
 
@@ -49,7 +49,7 @@ Un o'r digwyddiad mwyaf hanesyddol yn sefydlu modddion subdomain yw cyfloni SSL 
 
 Yn gyfahanol i modddion subdirectory, mae subsais ar rheol ad-eyddiad-based yn cael eu gweld gan gweithredwyr chaeaf fel wefan allan, sy'n golygu bod cynnwys ar un subsite yn cael ei ddefnyddio gyda'r perfformiad SEO o'r subsais arall.
 
-## Y Super Admin
+## Y Super Admin {#the-super-admin}
 
 Mae sefydliadau WordPress un-site yn sylweddolwch i chi iddo ddod ychwanegol o benau a rhoi rôl user yn rhywfaint â permisiwnau yn rhywfaint i'r benau hyn.
 
@@ -63,7 +63,7 @@ Gall pluginau a themau cael eu chwarae neu ddefnyddio gan y panel network admin 
 
 _Noti: fellych chi'n gallu, fellych gallu i'r gweithredol a'r rhwydwaith ac rhoi eurolau iddo super admin status yn rhoi'r ddefnyddiwr hwn cyflwrdd ei chontrol llawn ar eich rhwydwaith. Fel مثال, gallai ychwanegwyr super admin bynnag hefyd gwsueni eich super admin status, gan lawer yn chi o'r panel admin eich rhwydwaith. I'w gael i'r cyddeeau Ultimate Multisite gael chontrol llawn ar beth gallai ychwanegwyr super admin eraill wneud, mae gennyfaddau add-on gyda'r enw Support Agents. Mae'r add-on hwn yn sylweddolwch chi i creu ddefnyddiwr ar gyfer rhywbeth arall – un agent – gyda phrydderau sydd angen nhw i wneud eu gweithgaredd ar y rhwydwaith._
 
-## Beth yw cyfrifol ymhellach a beth nid yn cael ei cyfrifol
+## Beth yw cyfrifol ymhellach a beth nid yn cael ei cyfrifol {#what-is-shared-among-subsites-and-what-is-not}
 
 Fel ydyn ni'n dweud o'r blaen, un o'r prif cynhwysedd WordPress multisite yw bod pob subsytach yn rhannu'r un gyfrifol, ffiliadau canol, themau, pluginau, ffiliadau canol WordPress, sns.
 
@@ -75,7 +75,7 @@ Fodd bynnag, mae gennych chi elementau sydd wedi'u cyfrifol yn ddefnyddi subsyta
 
 - Mae'r bennaf o tabliau datab wedi'u creu ar gyfer pob subsytach, gan fod postau, cyflwynion, peidiadau, setegau, a chwarae hefyd yn cael eu cyfrifol ar gyfer pob subsytach.
 
-## Rheoli ddefnyddwyr ar WordPress Multisite
+## Rheoli ddefnyddwyr ar WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Mae un peth sydd yn rhyfeddol ar WordPress multisite yw rheoli ddefnyddwyr. Mae tabliau ddefnyddiwr WordPress yn un o'r chwaraeau sydd wedi'u rhannu ar bob subsytach.
 
@@ -99,7 +99,7 @@ _Noted: Rhaid i ni gwybod sut mae hyn yn ddrwg oherwydd eich cyfathrebu, felly m
 
 Er gynnwys y cyfathrebu o ddefnyddwyr yn cael ei rhannu, gallai'r adminau o'r subsaites neu'r super admin iddo addasu a symud y ddefnyddwyr i'r subsaites, ac gall eu gael rôl ddefnyddiwr yn rhywfaint ar gyfer subsaites gwahanol.
 
-## Cynllunio perfformiadau (Performance considerations)
+## Cynllunio perfformiadau (Performance considerations) {#performance-considerations}
 
 Mae WordPress multisite yn gryf iawn wrth y llwybr o weithredinolau sydd ei allu chynllunio. Gallai'r hyn yn cael ei gweld gan y fhat yn rhyfeddol bod [WordPress.com](https://WordPress.com), Edublogs, a Campuspress yn gweithgareddau-based multisite ac mae pob un o'r hostau yn chynllunio milenni subsaites.
 

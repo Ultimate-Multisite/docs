@@ -1,44 +1,46 @@
 ---
-title: GitHub Code‑Schnipsel
+title: GitHub-Codeausschnitte
 sidebar_position: 3
-_i18n_hash: fad95473848ba3a1089d657550a45182
+_i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Wie man Ultimate Multisite Snippets in unserem GitHub-Repository verwendet
+# So verwendest du Ultimate Multisite-Snippets in unserem GitHub-Repository {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
-Es gibt Code-Snippets im GitHub-Repository, die häufig von Ultimate Multisite-Benutzern angefordert werden, die kleine Funktionen hinzufügen möchten, wie z. B. das Hinzufügen eines Google Analytics-Skripts auf Anmeldeseiten oder das Verbergen eines Meta-Boxes im Admin-Dashboard.
+Im GitHub-Repository sind Code-Snippets verfügbar, die häufig von Ultimate Multisite-Benutzern angefragt werden, die kleine Funktionen hinzufügen möchten, wie etwa das Hinzufügen eines Google-Analytics-Skripts auf Registrierungsseiten oder das Ausblenden einer Meta-Box aus dem Admin-Dashboard.
 
-Dieser Artikel zeigt Ihnen, wie Sie diese Codes verwenden oder genauer gesagt, wo Sie sie platzieren.
+Dieser Artikel zeigt dir, wie du diese Codes verwendest, genauer gesagt, wo du sie platzierst.
 
-Sie können die Snippets unter dem folgenden Link finden.
+Du findest die Snippets unter dem folgenden Link.
 
 https://github.com/next-press/wp-ultimo-snippets/
 
 Es gibt 2 Möglichkeiten, den Code hinzuzufügen
 
-  1. In der functions.php-Datei Ihres Themes.
+  1. In der functions.php-Datei deines Themes.
 
   2. Must-Use Plugins (mu-plugins)
 
-# Wie man das Snippet in der functions.php-Datei Ihres Themes hinzufügt.
+# So fügst du das Snippet in der functions.php-Datei deines Themes hinzu. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
-  1. Melden Sie sich im Admin-Dashboard Ihres WordPress-Netzwerks an und gehen Sie zu Themes > Theme Editor (siehe Screenshot unten).
+  1. Melde dich in deinem WordPress-Netzwerk-Admin-Dashboard an und gehe zu Themes >Theme Editor (siehe Screenshot unten).
 
-  2. Auf der Seite „Edit Themes“ stellen Sie sicher, dass Ihr aktives Theme im Dropdown-Feld oben rechts auf Ihrem Bildschirm ausgewählt ist (#3 im Screenshot unten).
+  2. Stelle auf der Seite „Themes bearbeiten“ sicher, dass dein aktives Theme im Dropdown-Feld oben rechts auf deinem Bildschirm ausgewählt ist (#3 im Screenshot unten).
 
-  3. Klicken Sie auf die Datei functions.php unter dem Abschnitt „Theme Files“, um die Datei zu laden. Scrollen Sie nach unten zum Ende und fügen Sie das Ultimate Multisite Snippet ein, das Sie aus dem GitHub-Repository erhalten haben.
+  3. Klicke im Abschnitt „Theme-Dateien“ auf die Datei functions.php, um die Datei zu laden. Scrolle nach unten und füge das Ultimate Multisite-Snippet ein, das du aus dem GitHub-Repository erhalten hast.
 
-<!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
+<!-- Screenshot nicht verfügbar: WordPress Theme Editor zeigt die Bearbeitung der functions.php-Datei -->
 
-# Wie man Must-Use Plugins (mu-plugins) erstellt
+# So erstellst du Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
-WordPress verfügt über eine Funktion, mit der Sie benutzerdefinierte Funktionalität namens „Must-Use Plugins“, kurz „mu-plugins“, laden können. Diese speziellen mu-plugins werden vor allen anderen regulären Plugins geladen und können nicht deaktiviert werden. In einem Multisite-Netzwerk wird der Code in diesen mu-plugins auf allen Sites Ihrer Installation geladen.
+WordPress verfügt über eine Funktion, mit der du benutzerdefinierte Funktionen laden kannst, die „Must-Use Plugins“ oder kurz „mu-plugins“ genannt werden.
 
-1\. Verwenden Sie FTP oder SSH, um auf das Dateisystem Ihrer WordPress-Installation zuzugreifen.
+Diese speziellen mu-plugins werden vor allen anderen regulären Plugins geladen und können nicht deaktiviert werden. In einem Multisite-Netzwerk wird der Code in diesen mu-plugins auf allen Websites deiner Installation geladen.
 
-2\. Erstellen Sie im wp-content-Verzeichnis Ihrer WordPress-Installation ein neues Verzeichnis namens: mu-plugins.
+1\. Verwende FTP oder SSH, um auf das Dateisystem deiner WordPress-Installation zuzugreifen.
 
-<!-- Screenshot unavailable: File manager showing wp-content directory with mu-plugins folder -->
+2\. Erstelle im Verzeichnis wp-content deiner WordPress-Installation ein neues Verzeichnis mit dem Namen: mu-plugins.
 
-3\. Erstellen Sie auf Ihrem Computer eine neue PHP-Datei namens wu-snippet.php mit Notepad oder einem beliebigen Code-Editor.
+<!-- Screenshot nicht verfügbar: Dateimanager zeigt das wp-content-Verzeichnis mit dem Ordner mu-plugins -->
 
-4\. Platzieren Sie das Ultimate Multisite Code-Snippet, das Sie aus dem GitHub-Repository erhalten haben, in die Datei und speichern Sie sie. Sie können auch diesen Code oben im Code-Snippet hinzufügen, um Ihr mu-Plugin zu kennzeichnen.
+3\. Erstelle auf deinem Computer mit Notepad oder einem beliebigen Code-Editor eine neue PHP-Datei namens wu-snippet.php.
+
+4\. Füge das Ultimate Multisite-Code-Snippet, das du aus dem GitHub-Repository erhalten hast, in die Datei ein und speichere sie. Du kannst diesen Code auch über dem Code-Snippet hinzufügen, um dein mu plugin zu kennzeichnen.

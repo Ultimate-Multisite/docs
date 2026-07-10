@@ -4,20 +4,20 @@ title: Aksyon - wu_mt_migration_failed
 sidebar_label: wu_mt_migration_failed
 _i18n_hash: 81c7e8bef0b593fcc8369a666fa8799a
 ---
-# Action: wu_mt_migration_failed
+# Action: wu_mt_migration_failed {#action-wumtmigrationfailed}
 
 Tumatakbo ito kapag nag-fail ang isang migration.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Pangalan | Uri | Deskripsyon |
 |------|------|-------------|
 | $job | `\Migration_Job` | Ang migration job na nag-fail. |
 | $message | `string` | Mensahe ng error. |
 
-### Mula pa noong
+### Mula pa noong {#since}
 
 - 1.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L720) sa linya 720

@@ -1,120 +1,124 @@
 ---
 title: Mengirim Email dan Siaran
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Mengirim Email dan Broadcast (v2)
+# Mengirim Email dan Broadcast (v2) {#sending-emails-and-broadcasts-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
-Ultimate Multisite dilengkapi fitur yang memungkinkan Anda berkomunikasi dengan pelanggan dengan mengirim email ke pengguna tertentu atau sekelompok pengguna, serta mengirimkan pemberitahuan di dashboard admin mereka untuk menyebarkan pengumuman.
+Ultimate Multisite dilengkapi dengan fitur yang memungkinkan Anda berkomunikasi dengan pelanggan Anda dengan mengirim email ke pengguna yang ditargetkan atau sekelompok pengguna, serta mengirim pemberitahuan di Dashboard admin mereka untuk menyiarkan pengumuman
 
-## Menambahkan pemberitahuan admin ke dashboard pelanggan dengan Broadcast
+## Tambahkan pemberitahuan admin ke Dashboard pelanggan Anda dengan Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Dengan fitur broadcast Ultimate Multisite, Anda dapat menambahkan **pemberitahuan admin** ke dashboard admin subsite pengguna Anda.
+Menggunakan fitur broadcast Ultimate Multisite, Anda dapat menambahkan **pemberitahuan admin** ke Dashboard admin subsite pengguna Anda.
 
-Fitur ini sangat berguna ketika Anda perlu membuat pengumuman seperti pemeliharaan sistem atau menawarkan produk atau layanan baru kepada pengguna yang sudah ada. Berikut tampilan pemberitahuan admin di dashboard pengguna Anda.
+Ini sangat membantu jika Anda perlu membuat pengumuman seperti pemeliharaan sistem atau menawarkan produk atau layanan baru kepada pengguna Anda yang sudah ada. Beginilah tampilan pemberitahuan admin di Dashboard pengguna Anda.
 
-![Broadcast pemberitahuan admin ditampilkan di dashboard pelanggan](/img/admin/broadcasts-list.png)
+<!-- Tangkapan layar tidak tersedia: Broadcast pemberitahuan admin ditampilkan di Dashboard subsite pelanggan -->
 
-Untuk memulai pemberitahuan admin, buka dashboard admin jaringan Anda dan di bawah menu **Ultimate Multisite**, Anda akan menemukan opsi **Broadcasts**.
+Untuk memulai pemberitahuan admin, buka Dashboard admin jaringan Anda dan di bawah menu **Ultimate Multisite**, Anda akan menemukan opsi **Broadcasts**.
 
-![Menu Broadcasts di admin Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Halaman daftar Broadcasts di admin Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Dari halaman ini, klik tombol **Add Broadcast** di bagian atas.
+Anda juga dapat mengedit broadcast yang sudah ada:
 
-Ini akan memunculkan jendela modal Add broadcast di mana Anda dapat memilih jenis broadcast yang ingin dikirim.
+![Antarmuka edit broadcast](/img/admin/broadcast-edit.png)
 
-Silakan pilih **Message** lalu klik tombol **Next Step**.
+Dari halaman ini, klik tombol **Tambah Broadcast** di bagian atas.
 
-![Modal Add broadcast dengan tipe Message dipilih](/img/admin/broadcasts-list.png)
+Ini akan memunculkan jendela modal Tambah broadcast tempat Anda dapat memilih jenis broadcast yang ingin Anda kirim.
 
-Jendela berikutnya akan meminta Anda memilih **Target customer** atau **Target product**. Perlu diketahui bahwa Anda dapat memilih lebih dari satu pengguna atau lebih dari satu produk.
+Silakan pilih **Pesan** lalu klik tombol **Langkah Berikutnya**.
 
-Untuk mencari akun pengguna atau produk, Anda perlu mulai mengetik kata kunci di dalam kolom tersebut.
+![Modal tambah broadcast dengan opsi Pesan dipilih](/img/admin/broadcast-add-message.png)
 
-Di kolom **Message type**, Anda dapat memilih warna pemberitahuan. Ini akan menekankan urgensi pesan Anda.
+Jendela berikutnya akan meminta Anda memilih **Pelanggan target** atau **Produk target**. Perhatikan bahwa Anda dapat memilih lebih dari satu pengguna atau lebih dari satu produk.
 
-Selanjutnya, Anda dapat klik **Next Step**.
+Untuk mencari akun pengguna atau produk, Anda perlu mulai mengetik kata kunci di dalam bidang.
 
-![Pemilihan target pelanggan dan produk untuk broadcast](/img/admin/broadcasts-list.png)
+Di bawah bidang **Jenis pesan**, Anda dapat memilih warna pemberitahuan. Ini akan menekankan urgensi pesan Anda.
 
-Jendela berikutnya adalah tempat Anda dapat mulai menyusun pesan dengan memasukkan subjek dan konten/pesan yang ingin Anda broadcast ke pengguna.
+Anda kemudian dapat mengklik **Langkah Berikutnya**.
 
-![Editor subjek dan konten pesan broadcast](/img/admin/broadcasts-list.png)
+![Bidang pelanggan target, produk target, dan jenis pesan untuk broadcast Pesan](/img/admin/broadcast-message-targets.png)
 
-Setelah membuat pesan, Anda dapat menekan tombol **Send**.
+Jendela berikutnya adalah tempat Anda dapat mulai menyusun pesan dengan memasukkan subjek dan konten/pesan yang ingin Anda broadcast kepada pengguna.
 
-Selesai. Pemberitahuan admin akan langsung muncul di dashboard pengguna Anda.
+![Subjek pesan broadcast dan editor konten pada langkah penyusunan](/img/admin/broadcast-edit.png)
 
-## Mengirim email ke pelanggan
+Setelah membuat pesan, Anda kemudian dapat menekan tombol **Kirim**.
 
-Dengan fitur broadcast Ultimate Multisite, Anda dapat mengirim email ke pengguna Anda. Anda memiliki opsi untuk mengirim email hanya ke pengguna tertentu atau menargetkan grup pengguna tertentu berdasarkan produk atau paket yang mereka langgani.
+Dan selesai. Pemberitahuan admin seharusnya langsung muncul di Dashboard pengguna Anda.
 
-Untuk memulai broadcast email, buka dashboard admin jaringan Anda dan di bawah menu Ultimate Multisite, Anda akan menemukan opsi Broadcast.
+## Kirim email kepada pelanggan Anda {#send-emails-to-your-customers}
 
-![Halaman Broadcasts di admin Ultimate Multisite](/img/admin/broadcasts-list.png)
+Menggunakan fitur broadcast Ultimate Multisite, Anda dapat mengirim email kepada pengguna Anda. Anda memiliki opsi untuk mengirim email hanya kepada pengguna tertentu atau menargetkan grup pengguna tertentu berdasarkan produk atau paket langganan mereka.
 
-Dari halaman ini, klik tombol **Add broadcast** di bagian atas.
+Untuk memulai broadcast email, buka Dashboard admin jaringan Anda dan di bawah menu Ultimate Multisite, Anda akan menemukan opsi Broadcast.
 
-Ini akan memunculkan jendela modal Add broadcast di mana Anda dapat memilih jenis broadcast yang ingin dikirim. Silakan pilih **Email** lalu klik tombol **Next Step**.
+![Halaman daftar Broadcasts yang digunakan sebagai titik awal untuk broadcast email](/img/admin/broadcasts-list.png)
 
-![Modal Add broadcast dengan tipe Email dipilih](/img/admin/broadcasts-list.png)
+Dari halaman ini, klik tombol **Tambah broadcast** di bagian atas.
 
-Jendela berikutnya akan meminta Anda memilih **Target customer** atau **Target product**. Perlu diketahui bahwa Anda dapat memilih lebih dari satu pengguna atau lebih dari satu produk.
+Ini akan memunculkan jendela modal Tambah broadcast tempat Anda dapat memilih jenis broadcast yang ingin Anda kirim. Silakan pilih **Email** lalu klik tombol **Langkah Berikutnya**.
 
-Untuk mencari akun pengguna atau produk, Anda perlu mulai mengetik kata kunci di dalam kolom tersebut.
+![Modal tambah broadcast dengan opsi Email dipilih](/img/admin/broadcast-add-email.png)
 
-Setelah target audiens dipilih, Anda dapat klik **Next Step**.
+Jendela berikutnya akan meminta Anda memilih **Pelanggan target** atau **Produk target**. Perhatikan bahwa Anda dapat memilih lebih dari satu pengguna atau lebih dari satu produk.
 
-![Pemilihan target pelanggan dan produk untuk broadcast email](/img/admin/broadcasts-list.png)
+Untuk mencari akun pengguna atau produk, Anda perlu mulai mengetik kata kunci di dalam bidang.
 
-Jendela berikutnya adalah tempat Anda dapat mulai menyusun email dengan memasukkan subjek dan konten/pesan yang ingin Anda kirim ke pengguna.
+Setelah audiens target Anda dipilih, Anda dapat mengklik **Langkah Berikutnya**.
 
-![Editor subjek dan konten broadcast email](/img/admin/broadcasts-list.png)
+![Pemilihan pelanggan target dan produk target untuk broadcast Email](/img/admin/broadcast-email-targets.png)
 
-Setelah membuat pesan, Anda dapat menekan tombol **Send**.
+Jendela berikutnya adalah tempat Anda dapat mulai menyusun email dengan memasukkan subjek dan konten/pesan yang ingin Anda kirim kepada pengguna.
 
-Begitulah mudahnya mengirim email ke pengguna akhir Anda menggunakan fitur broadcast.
+<!-- Tangkapan layar tidak tersedia: Subjek broadcast email dan editor konten pada langkah penyusunan -->
 
-## Email sistem
+Setelah membuat pesan, Anda dapat menekan tombol **Kirim**.
 
-Email sistem di Ultimate Multisite adalah **notifikasi otomatis** yang dikirim oleh sistem setelah tindakan tertentu seperti pendaftaran, pembayaran, pemetaan domain, dll. Email ini dapat diedit atau dimodifikasi dari pengaturan Ultimate Multisite. Fitur ini juga dilengkapi kemampuan untuk mereset dan mengimpor pengaturan yang ada dari instalasi Ultimate Multisite lainnya.
+Dan begitulah mudahnya mengirim email kepada pengguna akhir Anda menggunakan fitur broadcast.
 
-### Reset & Impor
+## Email sistem {#system-emails}
 
-Versi Ultimate Multisite baru, serta add-on, dapat dan akan mendaftarkan email baru dari waktu ke waktu.
+Email sistem di Ultimate Multisite adalah **notifikasi otomatis** yang dikirim oleh sistem setelah tindakan tertentu seperti pendaftaran, pembayaran, pemetaan domain, dll. Email ini dapat diedit atau dimodifikasi dari pengaturan Ultimate Multisite. Fitur ini juga dilengkapi dengan kemampuan yang memungkinkan Anda mereset dan mengimpor pengaturan yang ada dari instalasi Ultimate Multisite lain.
 
-Untuk mencegah konflik dan masalah lainnya, **kami tidak akan menambahkan template email baru sebagai Email Sistem di instalasi Anda secara otomatis**, kecuali jika template tersebut penting untuk fungsi yang benar dari fitur tertentu.
+### Mereset & Mengimpor {#resetting--importing}
 
-Namun, super admin dan agen dapat mengimpor email yang baru terdaftar ini melalui alat pengimpor. Proses ini akan membuat email sistem baru dengan konten dan konfigurasi dari template email baru, memungkinkan super admin untuk melakukan modifikasi yang diinginkan atau membiarkannya apa adanya.
+Versi baru Ultimate Multisite, serta add-on, dapat dan akan mendaftarkan email baru dari waktu ke waktu.
 
-#### Cara mengimpor email sistem
+Untuk mencegah konflik dan masalah lainnya, **kami tidak akan menambahkan templat email baru sebagai Email Sistem pada instalasi Anda secara otomatis** , kecuali templat tersebut sangat penting untuk berfungsinya fitur tertentu dengan benar.
+
+Namun, super admin dan agen dapat mengimpor email yang baru terdaftar ini melalui alat pengimpor. Proses tersebut akan membuat email sistem baru dengan konten dan konfigurasi templat email baru, memungkinkan super admin melakukan modifikasi apa pun yang mereka inginkan atau mempertahankannya apa adanya.
+
+#### Cara mengimpor email sistem {#how-to-import-system-emails}
 
 Buka halaman Pengaturan Ultimate Multisite Anda dan menuju ke tab **Emails**.
 
-![Tab Emails di pengaturan Ultimate Multisite](/img/config/settings-emails.png)
+![Tab Emails di pengaturan Ultimate Multisite yang menampilkan bagian Email Sistem](/img/config/settings-emails-tab.png)
 
-Kemudian, di sidebar, klik tombol **Customize System Emails**.
+Kemudian, di bilah sisi, klik tombol **Kustomisasi Email Sistem**.
 
-![Tombol Customize System Emails di sidebar](/img/config/settings-emails.png)
+<!-- Tangkapan layar tidak tersedia: Tombol Kustomisasi Email Sistem pada panel bilah sisi Email Sistem -->
 
-Di halaman System Emails, Anda akan melihat tombol aksi **Reset & Import** di bagian atas. Mengklik tombol tersebut akan membuka jendela modal impor dan reset.
+Di halaman Email Sistem, Anda akan melihat tombol tindakan **Reset & Import** di bagian atas. Mengklik tombol tersebut akan membuka jendela modal impor dan reset.
 
-![Tombol aksi Reset and Import di halaman System Emails](/img/config/settings-emails.png)
+![Tombol tindakan Reset atau Import pada halaman admin Email Sistem](/img/admin/system-emails-reset-import.png)
 
-Kemudian, Anda dapat mengaktifkan opsi Import Emails untuk melihat email sistem mana yang tersedia untuk diimpor.
+Kemudian, Anda dapat mengalihkan opsi Import Emails untuk melihat email sistem mana yang tersedia untuk diimpor.
 
-![Opsi Import Emails menampilkan email sistem yang tersedia](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: modal Reset dan Import dengan opsi Import Emails diperluas -->
 
-#### Mereset Email Sistem
+#### Mereset Email Sistem {#reseting-system-emails}
 
-Di lain waktu, Anda mungkin menyadari bahwa perubahan yang Anda buat pada template email tertentu tidak lagi sesuai kebutuhan dan Anda ingin meresetnya ke **keadaan default**.
+Di lain waktu, Anda akan menyadari bahwa perubahan yang Anda buat pada template email tertentu tidak lagi sesuai untuk Anda dan Anda ingin meresetnya ke **keadaan default**.
 
-Dalam kasus seperti ini, Anda memiliki dua opsi: Anda dapat menghapus email sistem tersebut dan mengimpornya kembali (menggunakan instruksi di atas) - yang akan menghapus metrik pengiriman dan hal-hal lainnya, sehingga metode ini kurang disarankan.
+Dalam kasus seperti itu, Anda memiliki dua opsi: Anda dapat cukup menghapus email sistem dan mengimpornya kembali (menggunakan instruksi di atas) - yang akan menghapus metrik pengiriman dan hal-hal lainnya, sehingga metode ini paling kurang disarankan.
 
-Atau Anda dapat menggunakan **alat Reset & Import** untuk mereset template email tersebut.
+Atau Anda dapat menggunakan **tool Reset & Import** untuk mereset template email tersebut.
 
-Untuk mereset template email, Anda dapat mengikuti langkah-langkah di atas hingga Anda mencapai alat Reset & Import, lalu aktifkan opsi **Reset** dan pilih email yang ingin Anda kembalikan ke konten default-nya.
+Untuk mereset template email, Anda dapat mengikuti langkah-langkah di atas hingga mencapai tool Reset & Import, lalu aktifkan opsi **Reset** dan pilih email yang ingin Anda reset kembali ke konten defaultnya.
 
-![Opsi Reset untuk mengembalikan template email ke default](/img/config/settings-emails.png)
+<!-- Screenshot unavailable: modal Reset dan Import dengan opsi Reset Emails diperluas -->

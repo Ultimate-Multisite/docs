@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Konfigurazioa Auritzapenari (Wizard)
+# Multisite Konfigurazioa Auritzapenari (Wizard) {#multisite-setup-wizard}
 
 Ultimate Multisite-ek arau-dian beste WordPress instalazio bat automatikoki konvertatzen du WordPress Multisite network batean. Horrek `wp-config.php` edo database komandament manuel editeatzea edo jarraitzea beharrezkoa ez du.
 
@@ -11,13 +11,13 @@ Ultimate Multisite-ek arau-dian beste WordPress instalazio bat automatikoki konv
 WordPress instalazioa aldatuta dagoen Multisite network batean, horiko etapariak guztiz ustez daiteke. Arauzapenaren (wizard) irudiak Multisite ez dagoenean gaurkatu egiten dira.
 :::
 
-## Hau Eguna Aurreratzen da?
+## Hau Eguna Aurreratzen da? {#when-does-the-wizard-appear}
 
 Standard (ez-Multisite) WordPress instalazio bat da Ultimate Multisite aktibatu duenean, plugin-ek Multisite ez dagoela jakusten du eta normala dagoen setup wizard-aren lekuan aurkitu hiru egiten du Multisite Setup Wizard-era.
 
 Aurreratuta **WP Admin > Ultimate Multisite > Multisite Setup** mailari direktu zuzenean ere jartu dituzte.
 
-## Aurreratutako Konditiotak (Prerequisites)
+## Aurreratutako Konditiotak (Prerequisites) {#prerequisites}
 
 Wizarda jarraitu aurretik, daudenak seguruatu:
 
@@ -29,7 +29,7 @@ Wizarda jarraitu aurretik, daudenak seguruatu:
 Wizarda daudenak `wp-config.php` mailari aldatzen ditu eta database-aren lekuak (tables) zuregatik sortzen du. Aurrera jarraitu aurretik, han sempre backup bat egin duzu.
 :::
 
-## Etapa 1: Egun on
+## Etapa 1: Egun on {#step-1-welcome}
 
 Lehen ekraneak zer da WordPress Multisite eta wizarda zein gauza egiten duen esaltzen du:
 
@@ -42,11 +42,11 @@ Lehen ekraneak zer da WordPress Multisite eta wizarda zein gauza egiten duen esa
 
 Aurrera jarraitu eta **Continue** klikatu.
 
-## Etapa 2: Konfigurazioa Network-aren (Network Configuration)
+## Etapa 2: Konfigurazioa Network-aren (Network Configuration) {#step-2-network-configuration}
 
 Hau etapak zure network-aren konfigurazioa eskaintzen du.
 
-### Site Structure (Estructura Sailak)
+### Site Structure (Estructura Sailak) {#site-structure}
 
 Zergatikon zerbitzietara on gehitzeko modu aipatzi duzu:
 
@@ -57,11 +57,11 @@ Zergatikon zerbitzietara on gehitzeko modu aipatzi duzu:
 Sub-domeniak aukeratu duzu, domain-ekarreko **wildcard DNS** eta **wildcard SSL certificate** konfiguratzea behar duzu. Nagusi gestionatutako WordPress host-ek hori automatikoki jartzen dute. Erabiltzeko erantzun bat da [Ultimate Multisite 101](./ultimate-multisite-101) testuaren bitartean.
 :::
 
-### Zerbitzietaren Titulu (Network Title)
+### Zerbitzietaren Titulu (Network Title) {#network-title}
 
 Zerbitzietu bat nazioa emateko irudiak ematen duzu. Horrek oraindian dagoen site tituluari "Network" eta apenderitzu ditu. Horrek zerbitzietaren konfiguratzen daiteke geroago.
 
-### Zerbitzietaren Administrazio Emaila (Network Admin Email)
+### Zerbitzietaren Administrazio Emaila (Network Admin Email) {#network-admin-email}
 
 Zerbitzietaren administrazio notifikazioak jasotzeko erabilgarria emaila. Horrek oraindian dagoen erabiltzailearen emaila da.
 
@@ -69,7 +69,7 @@ Zerbitzietaren administrazio notifikazioak jasotzeko erabilgarria emaila. Horrek
 
 Erabiltzen dituzik, aurrera egiteko **Continue** (Aurrera egin) testuaren klik egin.
 
-## Irrenditua 3: Instalazioa (Step 3: Installation)
+## Irrenditua 3: Instalazioa (Step 3: Installation) {#step-3-installation}
 
 Zerbitzietatu eta hasi eta. Wizard-ek automatikoki irrenditutako irrendituen bitartean, hiru irrenditua irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean, irrendituen bitartean,
 
@@ -94,7 +94,7 @@ Gaur duela, guztiz ondo eginduta jakinarazteko verde "Success!" status bat eraku
 
 Gero, wizard-ek automatikoki amaituko pertsonaera (completion screen)-era iradokitzen da.
 
-## Irrendi 4: Amaitu
+## Irrendi 4: Amaitu {#step-4-complete}
 
 Instalazioa amaitu gabe, WordPress Multisite hasi ez duela jakinarazteko status bat erakusten du.
 
@@ -106,7 +106,7 @@ Aurrerazten ditzake Ultimate Multisite setup wizard-ean eta WaaS platforma-n kon
 Multisite instalazioa amaitu ondoren, browser-ek irraldatu dauden network admin berri erabilera bidez. Aurrez lehenen indizazioak (authentication cookies) multisite erabilera dauden artean update dira, gertuzketu behar izan dezake.
 :::
 
-## Manual Setup Fallback (Manual konponbidea)
+## Manual Setup Fallback (Manual konponbidea) {#manual-setup-fallback}
 
 Ez dutra ez du `wp-config.php` file-era eskuratzeko (file permissions edo server restrikzio batdu ondorioz), wizard-ek handi eta handi codea emateko da:
 
@@ -115,9 +115,9 @@ Ez dutra ez du `wp-config.php` file-era eskuratzeko (file permissions edo server
 
 Manual hasierak egin ondoren, lapurua refreshatu eta wizard-ek multisitea aktibo dauden jakotsi du.
 
-## Troubleshooting (Problema ezberdinetzat)
+## Troubleshooting (Problema ezberdinetzat) {#troubleshooting}
 
-### Wizard-ek `wp-config.php` ez dago eskuratzeko duen esaten
+### Wizard-ek `wp-config.php` ez dago eskuratzeko duen esaten {#the-wizard-says-wp-configphp-is-not-writable}
 
 Web server process-ek `wp-config.php` file-era eskuratzeko izin behar du. Hau egin dezakezu:
 
@@ -125,7 +125,7 @@ Web server process-ek `wp-config.php` file-era eskuratzeko izin behar du. Hau eg
 - Wizard-ek emateko manual setup fallback instruktioak erabilu.
 - Hosting provider-rek laguntza gautu.
 
-### Siteak ez dauden erabilera ondoren (subdomains)
+### Siteak ez dauden erabilera ondoren (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Subdomain structurea aukeratu dutenean, domain-eko **wildcard DNS** konfiguratzea behar duzu. DNS record bat gehitu:
 
@@ -137,7 +137,7 @@ Value: [server IP-ak]
 
 Konfigurazioa ez jakusten dugu beharko luke hosting provider-rekin.
 
-### Setup ondoren autentikazio problemaak
+### Setup ondoren autentikazio problemaak {#authentication-issues-after-setup}
 
 Multisite setup-aren ondoren, erabilera deshabilitatuta dago edo cookie errorrak eragiten duzu:
 
@@ -145,7 +145,7 @@ Multisite setup-aren ondoren, erabilera deshabilitatuta dago edo cookie errorrak
 2. `yourdomain.com/wp-login.php` aukerapean indizatu (log in)
 3. Problema jarraitzen du, `wp-config.php`-re `COOKIE_DOMAIN` ez dago "false" eratu duen jakotsi — multisite subdomain instalazioetan ezagututako problema hori da.
 
-### Instalazioaren ondorioz leku bat ez hasi (A step failed during installation)
+### Instalazioaren ondorioz leku bat ez hasi (A step failed during installation) {#a-step-failed-during-installation}
 
 Ez dago instalazio urrin bat erantzuna ematen:
 

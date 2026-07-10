@@ -1,46 +1,68 @@
 ---
-title: Wijzigingslogboek
+title: Changelog
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Changelog
+# Wijzigingslog {#changelog}
 
-## 1.16.0 — Uitgebracht op 2026-05-20
+## 1.18.0 — Uitgebracht op 2026-06-29 {#1180--released-on-2026-06-29}
 
-### Nieuw
+### Nieuw {#new}
 
-- **Logo SVG genereren** — Theme Builder kan nu aangepaste logo SVG's genereren en inbedden met namespace-veilige sanitatie.
-- **Foto uploaden in discovery interview** — Het discovery interview van Theme Builder bevat nu een stap voor het uploaden van foto's, wat zorgt voor een rijker ontwerpprestatie.
-- **Palette Contrast valideren** — Controleer kleurparen op WCAG-naleving voordat u ze toepast op een thema.
-- **Gastvrijheidsmenu's** — Theme Builder kan nu gestructureerde menu's voor voedsel en drank genereren voor horecazakelijke bedrijven.
-- **Desktop- en mobiele preview rendering** — Bekijk uw ontwerp op desktop- en mobiele apparaten tijdens de selectie van de ontwerktraining.
-- **Navigatie label parameter** — De functie 'Menu aanmaken' ondersteunt nu een afzonderlijk `navigation_label` dat verschilt van de paginatitel.
-- **Tier 1 tool beschikbaarheid** — sd-ai-agent/site-scrape is nu een Tier 1 tool die standaard beschikbaar is in Theme Builder.
+- **Google Calendar-tools** — lees geconfigureerde agenda's en evenementen voor planningsbewuste automatiseringen
+- **Contacttoewijzing en deelnemershelpers** — koppel agendadeelnemers aan sitegebruikers en contacten
+- **Goedkeuringspoorten door mensen en herinneringsrecords** — pauzeer automatiseringen voor beoordeling en voorkom dubbele meldingen
+- **TextBee SMS-provider** — verstuur geconfigureerde tekstberichtmeldingen via TextBee
+- **Geavanceerd begeleidend pakket** — voeg tools toe voor vertrouwde ontwikkelaars voor bestandssysteem, database, WP-CLI, REST-dispatcher, pluginbouwer, git-snapshot, gebruikersbeheer en benchmarks, apart gedistribueerd van de WordPress.org-build
 
-### Verpouwd
+### Verbeterd {#improved}
 
-- **AI Client cache** — Nu ondersteund door transients voor cross-request persistentie, waardoor gegevensverlies wordt voorkomen bij langlopende agenttaken.
-- **Plugin rij actie links** — Verbeterd en hernoemd voor meer duidelijkheid.
+- **Beheerde Superdav-service-instelling** — voeg gehoste service-endpoints en automatische verbindingsprovisioning toe voor ondersteunde sites
+- **Releaseverpakking** — bouw aparte ZIP's voor kern en Advanced, publiceer beide op GitHub en stuur alleen het kernpakket naar WordPress.org
 
-## 1.10.0 — Uitgebracht op 2026-05-05
+### Opgelost {#fixed}
 
-### Nieuw
+- **Betrouwbaarheid van AI-verzoeken** — verbeter modelselectie, time-outs voor verzoeken, standaard instelmodel, verwerking van redeneertekst en retry-begeleiding voor ongeldige toolaanroepen
+- **Verharding van agenda en herinneringen** — versterk Google Calendar-tokens en ontdubbeling van herinneringen
+- **Onboarding en hervattingen na goedkeuring** — herstel lanceringen van frontend-onboarding en hervattingen van bevestigde vaardigheden
+- **Reviewproblemen met WordPress.org-verpakking** — verwerk feedback uit de verpakkingsreview voor de kernrelease
 
-- **Tavily internet search** — Voeg Tavily toe als zoekprovider voor rijkere internetzoekresultaten naast Brave Search.
-- **Theme-aware ingebouwde skills** — Block Themes, Classic Themes, Kadence Blocks en Kadence Theme skill guides worden nu meegeleverd met de plugin.
-- **Site builder contact form functionaliteit** — Voeg een contactformulier toe aan elke pagina rechtstreeks vanuit de chatinterface.
+## 1.16.0 — Uitgebracht op 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Verbeterd
+### Nieuw {#new-1}
 
-- **WooCommerce integratie refactored** — Gebruikt nu native WooCommerce APIs voor betere betrouwbaarheid en compatibiliteit.
-- **Providerlijst vernieuwt automatisch** — Wanneer een plugin wordt geactiveerd of gedeactiveerd.
+- **Logo-SVG genereren-vaardigheid** — Theme Builder kan nu aangepaste logo-SVG's genereren en insluiten met namespace-veilige opschoning
+- **Foto-upload in ontdekkingsinterview** — het ontdekkingsinterview van Theme Builder bevat nu een foto-uploadstap voor rijkere ontwerpcontext
+- **Paletcontrast valideren-vaardigheid** — controleer kleurparen op WCAG-naleving voordat ze op een theme worden toegepast
+- **Hospitality-menu's** — Theme Builder kan nu gestructureerde pagina's voor eten- en drankenmenu's genereren voor hospitalitybedrijven
+- **Desktop- en mobiele previewweergave** — bekijk een preview van je ontwerp op desktop- en mobiele apparaten tijdens de selectie van de ontwerprichting
+- **Navigatielabelparameter** — de Menu maken-vaardigheid ondersteunt nu een afzonderlijke `navigation_label`, los van de paginatitel
+- **Beschikbaarheid van Tier 1-tools** — sd-ai-agent/site-scrape is nu een Tier 1-tool die standaard beschikbaar is in Theme Builder
 
-### Verpouwd
+### Opgelost {#fixed-1}
 
-- **navigate-to functionaliteit** — Verholpen oneindige herlaadlus op sommige admin-pagina's.
-- **list-posts functionaliteit** — Lost nu correct categorie- en tagnamen op naar slugs.
-- **WP-CLI commando's** — Herstelde ontbrekende namespace-aliasen na een eerdere refactor.
-- **Event automation** — Behandelt sites die nog geen automatiseringstabellen hebben, nu soepel.
-- **memory-save functionaliteit** — Gebruikt nu het juiste namespace-prefix in de system instruction builder.
-- **Scalar tool resultaten** — Worden nu correct ingepakt voordat ze aan de AI worden geretourneerd.
-- **Usage statistics** — Behandelt nu correct het legacy ability key formaat bij upgrade van oudere versies.
+- **AI-clientcache** — wordt nu ondersteund door transients voor persistentie tussen verzoeken, waardoor gegevensverlies bij langlopende agenttaken wordt voorkomen
+- **Actielinks in pluginrij** — gecorrigeerd en hernoemd voor duidelijkheid
+
+## 1.10.0 — Uitgebracht op 2026-05-05 {#1100--released-on-2026-05-05}
+
+### Nieuw {#new-2}
+
+- **Tavily-internetzoekfunctie** — voeg Tavily toe als zoekprovider voor rijkere internetzoekresultaten naast Brave Search
+- **Theme-bewuste ingebouwde vaardigheden** — vaardigheidsgidsen voor Block Themes, Classic Themes, Kadence Blocks en Kadence Theme worden nu met de plugin meegeleverd
+- **Contactformulier-vaardigheid voor sitebouwer** — voeg rechtstreeks vanuit de chatinterface een contactformulier toe aan elke pagina
+
+### Verbeterd {#improved-1}
+
+- **WooCommerce-integratie gerefactord** — gebruikt nu native WooCommerce-API's voor betere betrouwbaarheid en compatibiliteit
+- **Providerlijst wordt automatisch vernieuwd** — wanneer een plugin wordt geactiveerd of gedeactiveerd
+
+### Opgelost {#fixed-2}
+
+- **navigate-to-vaardigheid** — oneindige herlaadlus op sommige beheerpagina's opgelost
+- **list-posts-vaardigheid** — lost nu categorie- en tagnamen correct op naar slugs
+- **WP-CLI-commando's** — ontbrekende namespace-aliassen hersteld na een eerdere refactor
+- **Evenementautomatisering** — verwerkt sites soepel waar automatiseringstabellen nog niet zijn aangemaakt
+- **memory-save-vaardigheid** — gebruikt nu het juiste namespace-voorvoegsel in de bouwer voor systeeminstructies
+- **Scalaire toolresultaten** — worden nu correct ingepakt voordat ze naar de AI worden teruggestuurd
+- **Gebruiksstatistieken** — verwerken nu correct het verouderde vaardigheidssleutelformaat bij een upgrade vanaf oudere versies

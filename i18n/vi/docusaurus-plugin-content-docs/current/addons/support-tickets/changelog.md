@@ -3,13 +3,13 @@ title: Nhật ký thay đổi của Yêu cầu Hỗ trợ
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Nhật ký thay đổi Support Tickets
+# Nhật ký thay đổi Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Cải tiến: Loại bỏ thư mục `vendor/` khỏi việc theo dõi của Git (vì đã được bao gồm trong `.gitignore`), giúp giảm kích thước kho lưu trữ.
 * Cải tiến: Đã kiểm thử tương thích với WordPress 7.0.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Sửa lỗi: Cho phép chấp nhận các giá trị null trong các bộ thiết lập (setters) của mô hình ticket có thể null.
 * Sửa lỗi: Lưu trữ tất cả các ticket trong các bảng toàn cục cấp mạng (network-wide) để hỗ trợ Multisite đúng cách.
 * Sửa lỗi: Ẩn các trường dành cho nhân viên và khắc phục lỗi chuyển hướng trang trống trên form tạo ticket mới của khách hàng.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Cải tiến: Chỉ tải các tài nguyên frontend có điều kiện trên các trang ticket hỗ trợ.
 * Cải tiến: Bỏ qua autoloader của plugin khi autoloader gốc của Bedrock đã tải các dependency.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Bổ sung: Chức năng xem ticket đầy đủ cho cả khu vực quản trị (admin) và giao diện người dùng (frontend).
 * Bổ sung: Bộ xử lý AJAX cho việc gửi phản hồi ticket.
 * Bổ sung: Hỗ trợ chức năng phản hồi ticket với việc xử lý form phù hợp.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Cải tiến: Cấu trúc cơ sở dữ liệu với các lớp truy vấn và schema phù hợp cho phản hồi và tệp đính kèm.
 * Cải tiến: Chuyển đổi sang các thuộc tính (properties) thực tế thay vì các thuộc tính (attributes) cho các mô hình ticket.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Cập nhật: Đổi tiền tố (prefix) thành `ultimate-multisite` để đảm bảo tính nhất quán.
 * Cập nhật: Chuẩn hóa tên miền văn bản (text domain).
 * Sửa lỗi: Các sửa lỗi và cải tiến nhỏ.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Phát hành ban đầu
 * Hệ thống quản lý ticket hoàn chỉnh
 * Kiểm soát truy cập đa cấp

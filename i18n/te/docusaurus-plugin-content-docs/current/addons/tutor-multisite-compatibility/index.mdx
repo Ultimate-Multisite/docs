@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite అనుకూలత (Compatibility)
+# Tutor Multisite అనుకూలత (Compatibility) {#tutor-multisite-compatibility}
 
 ఇది Tutor LMS కోసం multisite వాతావరణాలలో అనుకూలత పరిష్కారాలను జోడించే ఒక WordPress plugin.
 
-## వివరణ (Description)
+## వివరణ (Description) {#description}
 
 WordPress multisite నెట్‌వర్క్‌లలో Tutor LMS ను నడపడానికి ఈ ప్లాగీన్ ముఖ్యమైన అనుకూలత పరిష్కారాలను అందిస్తుంది. ఇది యూజర్ ఎన్‌రోల్‌మెంట్, ఇన్‌స్ట్రక్టర్ నిర్వహణ, కోర్సు పరిమితులు మరియు ఇతర multisite-నిర్దిష్ట ఫంక్షనాలిటీలను నిర్వహిస్తుంది.
 
-## ఫీచర్లు (Features)
+## ఫీచర్లు (Features) {#features}
 
 - **డేటాబేస్ టేబుల్ నిర్వహణ (Database Table Management)**: multisite ఫారన్ కీ కన్స్ట్రైంట్‌ల కారణంగా విఫలమయ్యే తప్పిపోయిన Tutor LMS టేబుల్స్‌ను స్వయంచాలకంగా గుర్తించి, సృష్టిస్తుంది.
 - **multisite యూజర్ ఎన్‌రోల్‌మెంట్**: నెట్‌వర్క్ సైట్‌ల అంతటా యూజర్ ఎన్‌రోల్‌మెంట్‌ను నిర్వహించడానికి కస్టమ్ AJAX హ్యాండ్లర్‌లు.
@@ -24,7 +24,7 @@ WordPress multisite నెట్‌వర్క్‌లలో Tutor LMS ను 
 - **కస్టమ్ అడ్మిన్ వ్యూస్ (Custom Admin Views)**: multisite-అవగాహన కలిగిన ఇన్‌స్ట్రక్టర్ జాబితా మరియు నిర్వహణ ఇంటర్‌ఫేస్.
 - **అడ్మిన్ టూల్స్ (Admin Tools)**: నెట్‌వర్క్ మరియు సైట్ అడ్మినిస్ట్రేటర్ల కోసం డేటాబేస్ నిర్వహణ ఇంటర్‌ఫేస్.
 
-## అవసరాలు (Requirements)
+## అవసరాలు (Requirements) {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ WordPress multisite నెట్‌వర్క్‌లలో Tutor LMS ను 
 - WordPress Multisite ఇన్‌స్టాలేషన్
 - Ultimate Multisite plugin (కోర్సు పరిమితులు ఫంక్షనాలిటీ కోసం)
 
-## ఇన్‌స్టాలేషన్ (Installation)
+## ఇన్‌స్టాలేషన్ (Installation) {#installation}
 
 1. ప్లాగీన్ ఫైళ్లను `/wp-content/plugins/tutor-multisite-compatibility/` లో అప్‌లోడ్ చేయండి.
 2. Tutor LMS ఇన్‌స్టాల్ చేయబడి మరియు యాక్టివేట్ చేయబడిందని నిర్ధారించుకోండి.
 3. WordPress లోని 'Plugins' మెనూ ద్వారా ప్లాగీన్‌ను యాక్టివేట్ చేయండి.
 4. ఈ ప్లాగీన్ స్వయంచాలకంగా Tutor LMS తో అనుసంధానం అవుతుంది.
 
-## ఫైల్ నిర్మాణం (File Structure)
+## ఫైల్ నిర్మాణం (File Structure) {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## MU ప్లాగీన్ నుండి తరలించబడిన ఫంక్షనాలిటీ (Functionality Moved from MU Plugin)
+## MU ప్లాగీన్ నుండి తరలించబడిన ఫంక్షనాలిటీ (Functionality Moved from MU Plugin) {#functionality-moved-from-mu-plugin}
 
 ఈ ప్లాగీన్‌లో గతంలో `wp-content/mu-plugins/daves.php` లో ఉన్న ఫంక్షనాలిటీ ఉంది:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - multisite యూజర్ ఎన్‌రోల్‌మెంట్ హ్యాండ్లింగ్ (Multisite user enrollment handling)
 - కోర్సు ఉత్పత్తి ID ప్రదర్శన (Course product ID display)
 
-## డేటాబేస్ నిర్వహణ (Database Management)
+## డేటాబేస్ నిర్వహణ (Database Management) {#database-management}
 
-### సమస్య (The Problem)
+### సమస్య (The Problem) {#the-problem}
 
 WordPress multisite వాతావరణాలలో, యూజర్ల టేబుల్‌కు ఫారన్ కీ కన్స్ట్రైంట్‌లు ఉన్న టేబుల్స్ కోసం Tutor LMS టేబుల్ సృష్టి విఫలమవుతుంది. దీనికి కారణం:
 
@@ -81,7 +81,7 @@ WordPress multisite వాతావరణాలలో, యూజర్ల టే
 - ఫారన్ కీలు `wp_2_users` (అస్సలు లేనిది) ను రిఫర్ చేస్తాయి.
 - వాస్తవ యూజర్ల టేబుల్ `wp_users` (నెట్‌వర్క్‌ అంతటా షేర్ చేయబడుతుంది).
 
-### పరిష్కారం (The Solution)
+### పరిష్కారం (The Solution) {#the-solution}
 
 ఈ ప్లాగీన్ స్వయంచాలకంగా:
 
@@ -92,13 +92,13 @@ WordPress multisite వాతావరణాలలో, యూజర్ల టే
    - నెట్‌వర్క్‌లో కొత్త సైట్ సృష్టి
    - అడ్మిన్ ఇంటర్‌ఫేస్ ద్వారా మాన్యువల్ టేబుల్ తనిఖీ
 
-### ప్రభావితమైన టేబుల్స్ (Affected Tables)
+### ప్రభావితమైన టేబుల్స్ (Affected Tables) {#affected-tables}
 
 - `tutor_coupon_usages` - యూజర్ల టేబుల్‌కు ఫారన్ కీ కలిగి ఉంటుంది.
 - `tutor_carts` - యూజర్ల టేబుల్‌కు ఫారన్ కీ కలిగి ఉంటుంది.
 - `tutor_notification_preferences` - యూజర్ల టేబుల్‌కు ఫారన్ కీ ఉన్న TutorPro టేబుల్.
 
-### అడ్మిన్ ఇంటర్‌ఫేస్ (Admin Interface)
+### అడ్మిన్ ఇంటర్‌ఫేస్ (Admin Interface) {#admin-interface}
 
 డేటాబేస్ నిర్వహణ టూల్స్‌ను ఈ చిరునామాలో యాక్సెస్ చేయండి:
 
@@ -111,6 +111,6 @@ WordPress multisite వాతావరణాలలో, యూజర్ల టే
 - డేటాబేస్ కాన్ఫిగరేషన్‌ను తనిఖీ చేయడం.
 - వివరణాత్మక స్టేటస్ సమాచారాన్ని వీక్షించడం.
 
-## సపోర్ట్ (Support)
+## సపోర్ట్ (Support) {#support}
 
 ఈ ప్లాగీన్ ప్రత్యేకంగా KursoPro ప్లాట్‌ఫామ్ కోసం రూపొందించబడింది. సాంకేతిక మద్దతు కోసం, దయచేసి డెవలప్‌మెంట్ టీమ్‌ను సంప్రదించండి.

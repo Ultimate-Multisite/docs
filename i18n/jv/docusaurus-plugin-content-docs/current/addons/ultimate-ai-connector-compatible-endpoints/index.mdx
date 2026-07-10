@@ -1,0 +1,111 @@
+---
+title: Konektor AI Ultimate kanggo Endpoint sing Kompatibel
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector kanggo Titik Pungkasan sing Kompatibel nggabungake API panyedhiya AI sing kompatibel karo OpenAI karo jaringan multisite WordPress sampeyan. Atur pirang-pirang panyedhiya AI — saben duwe URL titik pungkasan, kunci API, lan modhel gawan dhewe — lan arahake panjaluk nganggo fallback otomatis nalika panyedhiya ora kasedhiya.
+
+## Fitur Utama {#key-features}
+
+- **Dhukungan multi-panyedhiya**: Tambah pirang-pirang kertu panyedhiya AI, saben duwe URL titik pungkasan, kunci API, lan modhel gawan dhewe
+- **Seret-kanggo-ngurutake maneh**: Tata panyedhiya miturut prioritas nganggo gagang grip ing saben kertu; panjaluk nggunakake panyedhiya miturut urutan
+- **Perutean fallback otomatis**: Yen panyedhiya utama ora kasedhiya, panjaluk otomatis pindhah menyang panyedhiya sing wis diatur sabanjure
+- **Konfigurasi saben panyedhiya**: Saben panyedhiya diatur kanthi mandiri nganggo kredensial lan pilihan modhel dhewe
+- **UI setelan adhedhasar kertu**: Dibangun nganggo komponen Card WordPress 6.9+ sing stabil (CardBody, CardHeader, CardDivider)
+- **Mbukak otomatis nalika ditambah**: Kertu panyedhiya anyar mbukak otomatis supaya sampeyan bisa langsung ngisi rinciane
+- **Mbusak cache skrip**: Skrip panyedhiya dibusak cache-ne nalika nganyari panyambung kanggo mesthekake versi paling anyar dimuat
+
+## Syarat {#requirements}
+
+- WordPress 5.3 utawa luwih dhuwur
+- PHP 7.4 utawa luwih dhuwur
+- Panyambung Ultimate Multisite (aktif)
+- Titik pungkasan API sing kompatibel karo OpenAI (dihosting dhewe utawa pihak katelu)
+
+## Instalasi {#installation}
+
+1. Unggah berkas addon menyang direktori `/wp-content/plugins/` sampeyan
+2. Aktifake panyambung liwat menu 'Panyambung' ing WordPress
+3. Pindhah menyang **Ultimate Multisite → AI Connector** kanggo ngatur addon
+
+## Konfigurasi {#configuration}
+
+### Persiyapan Multi-Panyedhiya {#multi-provider-setup}
+
+Layar konfigurasi nggunakake tata letak adhedhasar kertu, ing ngendi saben kertu makili siji panyedhiya AI. Sampeyan bisa nambah panyedhiya sakperlune.
+
+#### Nambah Panyedhiya {#adding-a-provider}
+
+1. Bukak **Ultimate Multisite → AI Connector** ing admin jaringan
+2. Klik **Tambah Panyedhiya**
+3. Kertu panyedhiya anyar katon lan mbukak otomatis
+4. Isi rincian panyedhiya:
+   - **Jeneng Panyedhiya** — label kanggo ngenali panyedhiya iki (contone "OpenAI", "Mistral", "Local Ollama")
+   - **URL Titik Pungkasan** — URL dhasar saka API sing kompatibel karo OpenAI (contone `https://api.openai.com/v1`)
+   - **Kunci API** — kunci API sampeyan kanggo panyedhiya iki
+   - **Modhel Gawan** — pengenal modhel sing digunakake kanthi gawan kanggo panyedhiya iki (contone `gpt-4o`, `mistral-small`)
+5. Klik **Simpen Setelan**
+
+#### Mbusak Panyedhiya {#removing-a-provider}
+
+Klik tombol **Busak** ing kertu panyedhiya apa wae kanggo mbusak. Simpen setelan kanggo ngetrapake owah-owahan.
+
+#### Ngurutake Maneh Panyedhiya {#reordering-providers}
+
+Seret ikon grip (⣿) ing sisih kiwa kertu panyedhiya apa wae kanggo ngurutake maneh. Urutan nemtokake prioritas fallback: panjaluk dikirim menyang panyedhiya pisanan lan pindhah menyang panyedhiya sabanjure yen panjaluk gagal.
+
+### Perutean Fallback {#fallback-routing}
+
+Nalika panjaluk menyang panyedhiya utama gagal — amarga wektu entek, watesan laju, utawa gangguan layanan — konektor otomatis nyoba maneh nganggo panyedhiya sabanjure ing dhaptar. Iki terus mudhun ing dhaptar nganti ana panyedhiya sing sukses utawa kabeh panyedhiya wis dicoba.
+
+| Skenario | Tumindak |
+|----------|-----------|
+| Panyedhiya utama nanggapi | Panjaluk dilayani kanthi normal |
+| Panyedhiya utama gagal | Panjaluk dicoba maneh nganggo panyedhiya sabanjure |
+| Kabeh panyedhiya gagal | Kasalahan dibalekake menyang sing nelpon |
+
+Fallback transparan kanggo panyambung utawa tema sing nelpon — dheweke nampa tanggapan sing sukses utawa kasalahan pungkasan, ora preduli pira panyedhiya sing wis dicoba.
+
+### Referensi Konfigurasi Panyedhiya {#provider-configuration-reference}
+
+| Kolom | Wajib | Katrangan |
+|-------|----------|-------------|
+| Jeneng Panyedhiya | Ya | Label tampilan kanggo panyedhiya iki |
+| URL Titik Pungkasan | Ya | URL dhasar saka API sing kompatibel karo OpenAI |
+| Kunci API | Ya | Kunci autentikasi kanggo panyedhiya iki |
+| Modhel Gawan | Ya | Pengenal modhel sing digunakake nalika ora ana modhel sing ditemtokake ing panjaluk |
+
+## Ngatasi Masalah {#troubleshooting}
+
+### Ora ana panyedhiya sing kadhaptar {#no-providers-are-listed}
+
+Yen dhaptar panyedhiya kosong sawise disimpen, pesthekake manawa:
+
+- Sampeyan wis ngeklik **Simpen Setelan** sawise nambah panyedhiya
+- Browser sampeyan ora ngalangi kaca setelan supaya ora bisa nyimpen (priksa konsol browser kanggo kasalahan JavaScript)
+- Panyambung aktif lan sampeyan ana ing layar admin jaringan
+
+### Panjaluk gagal kanggo kabeh panyedhiya {#requests-are-failing-for-all-providers}
+
+- Verifikasi saben URL titik pungkasan panyedhiya bisa digayuh saka server sampeyan (ora mung saka browser sampeyan)
+- Priksa manawa saben kunci API sah lan durung kedaluwarsa
+- Tinjau status watesan laju lan kuota panyedhiya ing dashboard dheweke
+- Aktifake logging debug WordPress (`WP_DEBUG_LOG`) kanggo nangkep pesen kasalahan rinci saka konektor
+
+### Panyedhiya ora digunakake kanggo fallback {#a-provider-is-not-being-used-for-fallback}
+
+Seret-kanggo-ngurutake maneh ngganti urutan fallback. Pesthekake panyedhiya sing sampeyan kira bakal nampa panjaluk fallback wis ana ing posisi sing bener ing dhaptar lan URL titik pungkasan uga kunci API-ne bener.
+
+### Kertu panyedhiya anyar ora mbukak otomatis {#new-provider-card-does-not-expand-automatically}
+
+Mbukak otomatis mbutuhake JavaScript diaktifake ing browser sampeyan. Yen kertu ora mbukak nalika diklik, priksa konsol browser kanggo kasalahan. Isi kertu tansah bisa diakses kanthi ngeklik header kertu sanajan mbukak otomatis ora kepicu.
+
+## Cathetan Owah-owahan {#changelog}
+
+Deleng [Cathetan Owah-owahan](./changelog) kanggo riwayat versi lengkap.

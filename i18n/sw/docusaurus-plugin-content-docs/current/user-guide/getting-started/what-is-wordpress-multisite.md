@@ -3,7 +3,7 @@ title: Nini WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite ni Nini?
+# WordPress Multisite ni Nini? {#what-is-wordpress-multisite}
 
 Ndani ya msingi wake, WordPress inatoa kipengele kinachoitwa 'Multisite' ambacho kina asili yake tangu mwaka 2010 wakati wa uzinduzi wa WordPress 3.0. Tangu wakati huo kimepokea marekebisho kadhaa yenye lengo la kuongeza vipengele vipya na kuimarisha usalama.
 
@@ -11,7 +11,7 @@ Kwa ufupi, WordPress multisite inaweza kuelezwa hivi: Chuo Kikuu kinadumisha usa
 
 ## 
 
-## WordPress Multisite ni Nini Hasa?
+## WordPress Multisite ni Nini Hasa? {#what-exactly-is-wordpress-multisite}
 
 Multisite ni kipengele cha WordPress kinachoruhusu tovuti nyingi kushiriki usanidi mmoja wa WordPress. Multisite inapowashwa, tovuti ya asili ya WordPress inabadilishwa kuunga mkono kile kinachojulikana kama **mtandao wa tovuti**.
 
@@ -23,7 +23,7 @@ Ukweli huu ni moja ya faida kuu za multisite, kwani inakuruhusu kuongeza idadi y
 
 ## 
 
-## Subdomain au Subdirectory?
+## Subdomain au Subdirectory? {#subdomain-or-subdirectory}
 
 Kuna njia mbili za kuendesha WordPress multisite – na unahitaji kuchagua moja unapobadilisha usanidi wako wa kawaida wa WordPress kuwa usanidi wa multisite:
 
@@ -49,7 +49,7 @@ Mojawapo ya changamoto kuu katika kusanidi njia ya subdomain ni ulinzi wa SSL (H
 
 Kinyume na njia ya subdirectory, tovuti ndogo kwenye mtandao unaotegemea subdomain zinachukuliwa na injini za utafutaji kama tovuti tofauti, ambayo inamaanisha kuwa maudhui yaliyopo kwenye tovuti ndogo moja hayaingii katika utendaji wa SEO wa tovuti ndogo nyingine kabisa.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Usanidi wa tovuti moja ya WordPress unakuruhusu kuongeza idadi isiyo na kikomo ya watumiaji na kuwapa watumiaji hao majukumu tofauti ya mtumiaji yenye ruhusa tofauti.
 
@@ -63,7 +63,7 @@ Plugins na themes zinaweza kusanidiwa au kuondolewa tu kutoka kwenye paneli ya u
 
 _Kumbuka: kama unavyoona, kumwalika mtu kwenye mtandao wako na kumpa hadhi ya super admin kunampa mtumiaji huyu udhibiti kamili juu ya mtandao wako. Kwa mfano, super admins wengine wanaweza hata kuondoa hadhi yako ya super admin, na kukufungia nje ya paneli yako ya usimamizi wa mtandao. Ili kuruhusu wateja wa Ultimate Multisite kuwa na udhibiti wa kina juu ya kile super admins wa ziada wanaweza kufanya, tuna add-on inayoitwa Support Agents. Add-on hii inakuruhusu kuunda aina nyingine ya mtumiaji – agent – aliye na ruhusa tu wanazohitaji kufanya kazi zao kwenye mtandao._
 
-## Nini kinashirikiwa kati ya tovuti ndogo na nini hakishirikiwa
+## Nini kinashirikiwa kati ya tovuti ndogo na nini hakishirikiwa {#what-is-shared-among-subsites-and-what-is-not}
 
 Kama tulivyotaja awali, moja ya faida kuu za WordPress multisite ni kwamba tovuti ndogo zote zinashiriki mipangilio sawa, faili za msingi, themes, plugins, faili za msingi za WordPress, na kadhalika.
 
@@ -75,7 +75,7 @@ Hata hivyo, kuna vipengele ambavyo vimepangwa vizuri kwa kila tovuti ndogo.
 
 \- Jedwali nyingi za hifadhidata zinaundwa kwa kila tovuti ndogo, ikimaanisha kuwa machapisho, maoni, kurasa, mipangilio, na zaidi yamepangwa kwa kila tovuti ndogo.
 
-## Usimamizi wa watumiaji kwenye WordPress Multisite
+## Usimamizi wa watumiaji kwenye WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Suala moja gumu kwenye WordPress multisite ni usimamizi wa watumiaji. Jedwali la watumiaji wa WordPress ni mojawapo ya machache yanayoshirikiwa kati ya tovuti ndogo zote.
 
@@ -99,7 +99,7 @@ _Kumbuka: Tunaelewa jinsi hii inavyoweza kuwa mbaya kulingana na matumizi yako, 
 
 Ingawa jedwali la watumiaji linashirikiwa, watumiaji wanaweza kuongezwa na kuondolewa kwenye tovuti ndogo na wasimamizi wa tovuti ndogo au super admin, na wanaweza hata kuwa na majukumu tofauti ya mtumiaji kwenye tovuti ndogo tofauti.
 
-## Mazingatio ya utendaji
+## Mazingatio ya utendaji {#performance-considerations}
 
 WordPress multisite ni yenye nguvu sana linapokuja suala la idadi ya tovuti inazoweza kuunga mkono. Hii inaweza kuthibitishwa na ukweli kwamba [WordPress.com](https://WordPress.com), Edublogs, na Campuspress zote ni huduma zinazotegemea multisite na kila moja inahifadhi maelfu ya tovuti.
 

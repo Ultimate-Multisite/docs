@@ -3,19 +3,19 @@ title: 'Lekcija 2: Odabir niše'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lekcija 2: Izbor Niše
+# Lekcija 2: Izbor Niše {#lesson-2-picking-your-niche}
 
 U Lekciji 1 utvrdili smo zašto je niša bolja od opšteg pristupa. Sada je vaša zadaća da odaberete svoju nišu. Ova lekcija vam daje okvir za pronalaženje i validiranje niše prije nego što uložite vrijeme u izradu platforme za nju.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 Definisali smo koncept FitSite-a: web platformu za fitnes studije. Ali kako smo došli do fitnes studija, konkretno? Ova lekcija prolazi kroz proces kako biste ga mogli primijeniti i pronaći svoju nišu.
 
-## Tri kriterija
+## Tri kriterija {#the-three-criteria}
 
 Dobra niša za web platformu mora ispunjavati tri uslova:
 
-### 1. Imaju potrebu za web stranicama, ali im je teško napraviti dobre
+### 1. Imaju potrebu za web stranicama, ali im je teško napraviti dobre {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Tražite industrije gdje:
 
@@ -26,7 +26,7 @@ Tražite industrije gdje:
 
 **Fitnes studiji odgovaraju**: članovi očekuju da pronađu raspoređene časove, cijene i rezervacije online. Većina web stranica studija je zastarjela ili napravljena na opštim šablonima koji ne služe svrsi.
 
-### 2. Poslovanja mogu priuštiti mjesečnu pretplatu
+### 2. Poslovanja mogu priuštiti mjesečnu pretplatu {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Vaši ciljani klijenti moraju biti:
 
@@ -36,7 +36,7 @@ Vaši ciljani klijenti moraju biti:
 
 **Fitnes studiji odgovaraju**: oni već plaćaju softver za rezervacije, obradu plaćanja i marketinške alate. Web pretplata je prirodna dodatak.
 
-### 3. Komuniciraju među sobom
+### 3. Komuniciraju među sobom {#3-they-talk-to-each-other}
 
 Najbolje niše imaju:
 
@@ -46,9 +46,9 @@ Najbolje niše imaju:
 
 **Fitnes studiji odgovaraju**: vlasnici studija pohađaju događaje u fitnes industriji, učestvuju u online zajednicama i često dijele alate i usluge sa kolegama.
 
-## Kako pronaći kandidatni niše
+## Kako pronaći kandidatni niše {#how-to-find-niche-candidates}
 
-### Počnite s onim što znate
+### Počnite s onim što znate {#start-with-what-you-know}
 
 Vaše postojeće iskustvo je prednost. Razmislite o:
 
@@ -56,7 +56,7 @@ Vaše postojeće iskustvo je prednost. Razmislite o:
 - Hobijima ili interesovanjima gdje razumijete zajednicu
 - Profesionalnim mrežama kojima već pripadate
 
-### Tražite signale problema
+### Tražite signale problema {#look-for-pain-signals}
 
 Tražite dokaze da poslovanja u određenoj niši imaju poteškoća s web stranicama:
 
@@ -65,7 +65,7 @@ Tražite dokaze da poslovanja u određenoj niši imaju poteškoća s web stranic
 - Pogledajte stvarne web stranice u niši — jesu li većina loše?
 - Provjerite da li postoje konkurenti i koliko dobro služe tržištu
 
-### Procjenite ekonomiju
+### Procjenite ekonomiju {#evaluate-the-economics}
 
 Za svaku kandidatnu nišu, procjenite:
 
@@ -73,11 +73,11 @@ Za svaku kandidatnu nišu, procjenite:
 - **Spremnost za plaćanje**: Što trenutno troše na slične alate?
 - **Potencijal vrijednosti tokom života klijenta**: Jesu li ova poslovanja stabilna, ili brzo napuštaju uslugu?
 
-## Validiranje vaše niše
+## Validiranje vaše niše {#validating-your-niche}
 
 Prije izrade bilo čega, validirajte potražnju:
 
-### Razgovarajte s potencijalnim klijentima
+### Razgovarajte s potencijalnim klijentima {#talk-to-potential-customers}
 
 Kontaktirajte 10-15 vlasnika poslovanja u vašoj ciljanoj niši. Pitajte:
 
@@ -88,17 +88,17 @@ Kontaktirajte 10-15 vlasnika poslovanja u vašoj ciljanoj niši. Pitajte:
 
 Vi još ne prodajete. Vi slušate.
 
-### Provjerite panorama konkurencije
+### Provjerite panorama konkurencije {#check-competitor-landscape}
 
 - **Nema konkurencije**: Može značiti da nema potražnje, ili može značiti neiskorištenu priliku. Razgovori s klijentima će vam reći šta je to.
 - **Nekoliko konkurenata**: Dobar znak. Validira potražnju. Proučite šta rade dobro i gdje ne uspijevaju.
 - **Mnogi konkurenata**: Teže za ulazak, ali i dalje je moguće ako možete jasno da se razlikujete.
 
-### Napravite odredišnu stranicu (Landing Page)
+### Napravite odredišnu stranicu (Landing Page) {#build-a-landing-page}
 
 Prije izrade platforme, kreirajte jednostavnu odredišnu stranicu koja opisuje vaše rješenje za nišu i prikupite e-mail adrese. Pokrenite malu količinu ciljanog oglašavanja kako biste testirali interesovanje. Ako ljudi potpisuju, imate validaciju.
 
-## Primjena ovoga na FitSite
+## Primjena ovoga na FitSite {#applying-this-to-fitsite}
 
 Evo kako se FitSite ocenjuje prema kriterijima:
 
@@ -112,7 +112,7 @@ Evo kako se FitSite ocenjuje prema kriterijima:
 
 Validacija je potvrdila priliku. Sada gradimo.
 
-## Ideje niša za razmatranje
+## Ideje niša za razmatranje {#niche-ideas-to-consider}
 
 Ako fitnes nije vaše tržište, evo drugih niša koje ispunjavaju kriterijume:
 
@@ -127,7 +127,7 @@ Ako fitnes nije vaše tržište, evo drugih niša koje ispunjavaju kriterijume:
 
 Svaka od ovih ima iste karakteristike: jasne potrebe za web stranicama, sposobnost plaćanja i preporuke iz zajednice.
 
-## Što smo napravili u ovoj lekciji
+## Što smo napravili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Okvir za odabir niše**: tri kriterija za procjenu bilo koje niše
 - **Metode validacije**: razgovori s klijentima, analiza konkurencije, testiranje odredišne stranice

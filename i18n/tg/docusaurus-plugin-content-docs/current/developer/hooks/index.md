@@ -1,0 +1,194 @@
+---
+title: Маълумотномаи ҳукҳо
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Маълумотномаи hooks {#hooks-reference}
+
+Ҳуҷҷатҳои ба таври худкор тавлидшуда барои ҳамаи **59 амал** ва **118 филтр** дар Ultimate Multisite.
+
+## Амалҳо {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Пеш аз равонасозии аутентификатсия фаъол мешавад.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Бевосита пеш аз гузоштани кукии аутентификатсия фаъол мешавад.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Бевосита пеш аз гузоштани кукии аутентификатсияи воридшуда фаъол мешавад.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ба таҳиягарон иҷозат медиҳад, ки ҳамгироиҳои провайдери хости худро тавассути plugin-ҳои wp илова кунанд.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Вақте ба кор меояд, ки ҳамаи вобастагиҳо бор шудаанд
+- [wu_activation](./Actions/wu_activation) — Ба қисмҳои дигари plugin иҷозат медиҳад, ки равандҳои худро барои фаъолсозӣ пайваст кунанд
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ба таҳиягарони plugin иҷозат медиҳад, ки пас аз иваз кардани қолаби сомона аз ҷониби корбар ё super admin функсияҳоро пайваст кунанд
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Дар баъзе ҳолатҳо, ба мо лозим мешавад нерӯи иловагӣ бор кунем, то амалҳоро коркард намоем.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Пеш аз коркарди дархости ҷустуҷӯ фаъол мешавад.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ба таҳиягарон иҷозат медиҳад, ки ба объекти анҷоми харид тағйироти иловагӣ ворид кунанд.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ба таҳиягарон иҷозат медиҳад, ки ба объекти анҷоми харид тағйироти иловагӣ ворид кунанд.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Пеш аз илова шудани майдон ба формаи анҷоми харид фаъол мешавад.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ба таҳиягарон иҷозат медиҳад, ки hook-ҳои иловагиро ба кор андозанд.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Пеш аз он ки мо анҷоми харидро коркард кунем.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Пас аз пурра ҷамъ шудани фармоиши анҷоми харид фаъол мешавад.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба панели Network Dashboard виҷетҳо илова кунанд.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба панели Network Dashboard виҷетҳо илова кунанд.
+- [wu_deactivation](./Actions/wu_deactivation) — Ба қисмҳои дигари plugin иҷозат медиҳад, ки равандҳои худро барои ғайрифаъолсозӣ пайваст кунанд
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба раванди несткунӣ амалҳо илова кунанд
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Вақте фаъол мешавад, ки домен барои сомона домени асосӣ мегардад.
+- [wu_domain_created](./Actions/wu_domain_created) — Вақте ба кор меояд, ки пайвасткунии домени нав илова мешавад.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Пас аз бор шудани Domain Mapping-и асосии мо фаъол мешавад
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Баъзе plugin-ҳо URL-ро пеш аз фаъол шудани пайвасткунӣ захира мекунанд ё URL-ҳоро ба тарзи дигар месозанд, ки дохил карда нашудааст o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ба таҳиягарон иҷозат медиҳад, ки пас аз такрор шудани сомона hook пайваст кунанд.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ба таҳиягарони plugin иҷозат медиҳад, ки hook-ҳои иловагӣ илова кунанд
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook барои тозакунии иловагӣ
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Пеш аз коркарди дархости модали илова кардани домени нав фаъол мешавад.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ба таҳиягарони plugin иҷозат медиҳад, ки агар лозим бошад, метамаълумотро бо роҳҳои гуногун захира кунанд.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ба таҳиягарони plugin иҷозат медиҳад, ки агар лозим бошад, метамаълумоти корбарро бо роҳҳои гуногун захира кунанд.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Вақте фаъол мешавад, ки нишонаи пайванди ҷодуии нодуруст дучор мешавад.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Пас аз ворид шудани корбар тавассути пайванди ҷодуӣ фаъол мешавад.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ба таҳиягарони plugin иҷозат медиҳад, ки ҳангоми илова шудани муштарӣ корҳои иловагӣ анҷом диҳанд.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Пас аз сабти қобилиятҳои MCP барои як воҳид фаъол мешавад.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Пас аз оғоз шудани адаптери MCP фаъол мешавад.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Пас аз бекор шудани узвият ба кор меояд.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Пас аз навсозии узвият ба кор меояд.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Пеш аз бекор шудани узвият ба кор меояд.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Пеш аз навсозии узвият ба кор меояд.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Пас аз захира шудани объект ба пойгоҳи додаҳо фаъол мешавад.
+- [wu_page_added](./Actions/wu_page_added) — Ба таҳиягарони plugin иҷозат медиҳад, ки ҳангоми сабти саҳифаҳо корҳои иловагиро иҷро кунанд.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ба таҳиягарони plugin иҷозат медиҳад, ки пас аз чоп кардани саҳифа муҳтавои иловагӣ илова кунанд
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ба таҳиягарони plugin иҷозат медиҳад, ки пеш аз чоп кардани саҳифа муҳтавои иловагӣ илова кунанд.
+- [wu_page_load](./Actions/wu_page_load) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба саҳифаҳои мо hook-ҳои иловагӣ илова кунанд.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ба таҳиягарони plugin иҷозат медиҳад, ки пас аз чоп кардани саҳифа муҳтавои иловагӣ илова кунанд
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ба таҳиягарони plugin иҷозат медиҳад, ки пеш аз чоп кардани саҳифа муҳтавои иловагӣ илова кунанд.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба саҳифаҳои мо hook-ҳои иловагӣ илова кунанд.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Пас аз сабти виҷетҳо барои ин саҳифа фаъол мешавад.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Иҷро мешавад, то ба addon-ҳо иҷозат диҳад модулҳои қобилиятро ба интегратсияҳо пайваст кунанд.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Иҷро мешавад, то ба интегратсияҳо иҷозат диҳад худро сабт кунанд.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Иҷозат медиҳад маршрутҳои иловагӣ сабт шаванд.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Ба таҳиягарони plugin иҷозат медиҳад амалҳоро ба раванди захиракунӣ илова кунанд
+- [wu_site_created](./Actions/wu_site_created) — Пас аз он ки сайт бори аввал эҷод мешавад, иҷро мешавад.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Ба таҳиягарони plugin иҷозат медиҳад, агар лозим бошад, hook-ҳои иловагӣ илова кунанд.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Вақте ки дар контексти пешнамоишгари қолаб аст, иҷро мешавад.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — hook-и ба навбат гузоштани скриптҳоро фаъол мекунад.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Пас аз он ки объект дар пойгоҳи додаҳо нигоҳ дошта мешавад, иҷро мешавад.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Пас аз он ки объект дар пойгоҳи додаҳо нигоҳ дошта мешавад, иҷро мешавад.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Пас аз он ки объект дар пойгоҳи додаҳо нигоҳ дошта мешавад, иҷро мешавад.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ба таҳиягарони plugin иҷозат медиҳад амалҳоро ба раванди кушодан илова кунанд.
+
+## Филтрҳо {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Давомнокии давраи анҷоми муҳлати cookie-и тасдиқи ҳувиятро филтр мекунад.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Схемаи масирдиҳии тасдиқи ҳувиятро филтр мекунад.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Барои эҳтиёт, WP Filter-и аслиро дар ин ҷо такрор мекунад.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Ба таҳиягарони plugin иҷозат медиҳад, ки URL-и истифодашаванда дар пешнамоишгарро филтр кунанд
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Филтр мекунад, ки оё cookie-и auth бояд танҳо тавассути HTTPS фиристода шавад.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Филтр мекунад, ки оё масирдиҳии амни тасдиқи ҳувият истифода шавад.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Филтр мекунад, ки оё cookie-и воридшуда бояд танҳо тавассути HTTPS фиристода шавад.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Имкон медиҳад, ки фиристодани воқеии cookie-ҳои auth ба муштарӣ пешгирӣ карда шавад.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — URL-и масирдиҳиро таъин кунед.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Қадамҳои иловагиро тавассути филтрҳо илова кунед
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба контексти render ба таври умумӣ тағйирёбандаи иловагӣ илова кунанд.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Ба таҳиягарон иҷозат медиҳад, ки ин санҷишро кӯтоҳ кунанд.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Майдонҳоро барои модали иловаи домени нав филтр мекунад.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Ба таҳиягарон иҷозат медиҳад, ки ба ҷузъи сатри ҳаққи насб тағйирот ворид кунанд.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ба таҳиягарон иҷозат медиҳад, ки огоҳиномаҳои admin-и иловашуда аз ҷониби Ultimate Multisite-ро филтр кунанд.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Пас аз тағйир дода шудан филтр кунед.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Акнун мо бо ҳамаи навъҳо сарукор дорем.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Ба таҳиягарони plugin иҷозат медиҳад, ки маҳдудиятҳоро кӯтоҳ кунанд.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Филтр мекунад, ки оё ҳаққи signup татбиқ шавад ё не.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Аргументҳои аслии api-ро филтр кунед.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Ба таҳиягарони plugin иҷозат медиҳад, ки майдонҳои нишонии ҳисоббарориро филтр кунанд.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Ба таҳиягарон иҷозат медиҳад, ки натиҷаро гузаранд ва натиҷаи нав таъин кунанд
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Ба таҳиягарон иҷозат медиҳад, ки коди unset кардани корбари ҷориро гузаранд.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Ҷамъи "маблағи такроршаванда"-ро филтр мекунад.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Ҷамъи "маблағи ибтидоӣ"-ро филтр кунед.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Ҷамъи "маблағи ибтидоӣ"-ро филтр кунед.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Ба таҳиягарони plugin иҷозат медиҳад, ки ба арзиши кредит дахолат кунанд.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Доменҳои асосии муштараки checkout-form-ро филтр мекунад, ки набояд ба сабтҳои mapped-domain табдил ёбанд.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API-ҳои мо барои илова кардани қолибҳои нави майдон ба ин ҷо hook мешаванд.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API-ҳои мо барои илова кардани навъҳои нави майдон ба ин ҷо hook мешаванд.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Паёмҳои хатогиро филтр кунед.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Ба таҳиягарон иҷозат медиҳад, ки санҷишро гузаранд, агар майдон auto-submittable бошад.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Ба таҳиягарони plugin иҷозат медиҳад, ки дар тасдиқкунандаи форма алиасҳои фармоишӣ илова кунанд.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Ба таҳиягарони plugin иҷозат медиҳад, ки қоидаҳои санҷишро филтр кунанд.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Params-и номатлубро unset кунед.
+- [wu_contains_element](./Filters/wu_contains_element) — Ба таҳиягарон иҷозат медиҳад, ки натиҷаҳои ҷустуҷӯи ибтидоиро тағйир диҳанд.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Ба провайдерҳои host иҷозат медиҳад, ки константаро ба таври дигар насб кунанд.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Номи зебои зербахшҳои маъмурии кишварро бармегардонад.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Рӯйхати шаҳрҳоро барои иёлат дар кишвар бармегардонад.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Рӯйхати иёлатҳоро барои ин кишвар бармегардонад.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Ба таҳиягарон иҷозат медиҳад, ки рафтори пешфарзро тағйир дода, муштарии ҷориро ба таври дигар таъин кунанд.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Ба таҳиягарон иҷозат медиҳад, ки рафтори пешфарзро тағйир дода, membership-и ҷориро ба таври дигар таъин кунанд.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Ба таҳиягарон иҷозат медиҳад, ки рафтори пешфарзро тағйир дода, site-и ҷориро ба таври дигар таъин кунанд.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Ба таҳиягарон иҷозат медиҳад, ки параметрҳои URL-и идоракунии site-ро тағйир диҳанд.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Ба таҳиягарони plugin иҷозат медиҳад, ки пайвандҳоро филтр кунанд.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Ба таҳиягарони plugin иҷозат медиҳад, ки санҷишҳои нав илова кунанд, то натиҷаҳоро муайян кунанд.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Шояд ба мо лозим шавад, ки дертар блокҳои иловагӣ илова кунем.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Филтри умумӣ илова мекунад, то ба таҳиягарон имкон диҳад ин таҳлилгарро барои кор бо созандаҳо ё plugin-ҳои иловагӣ васеъ кунанд.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Филтр мекунад, ки оё қоидаҳои иловагии гузарвожа маҷбурӣ татбиқ шаванд ё не.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Номи корбарии муштарии тавлидшударо филтр мекунад.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ба таҳиягарони plugin иҷозат медиҳад, ки пештанзимҳои саҳифаи checkout-ро филтр кунанд.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ба таҳиягарон иҷозат медиҳад, ки slug-ҳои нави форма илова кунанд, то ин рафторро давр зананд.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ба таҳиягарон ва add-on-ҳо иҷозат медиҳад, ки қадамҳои нави муҳоҷират илова кунанд
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Дар бораи ин филтр поёнтар, дар ҳамин method, бештар бубинед.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ба таҳиягарон иҷозат медиҳад, ки интихоб кунанд кадом навъҳои навишта бояд намоиш дода шаванд.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Сатрҳоро бармегардонад, қобили филтркунӣ
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ба таҳиягарон иҷозат медиҳад, ки ҷуфтҳои домен/роҳро тағйир диҳанд.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Қисмҳои wizard-ро барои танзими ҳамгироии hosting филтр мекунад.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Майдонҳои як формаро филтр мекунад. Форма бо ID дар номи филтр муайян карда мешавад.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Навъҳои маҳсулотеро филтр мекунад, ки давраҳои биллинги мустақил доранд.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ба таҳиягарони plugin иҷозат медиҳад, ки барои API ҳолати додашударо маҷбурӣ таъин кунанд.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ба таҳиягарони plugin иҷозат медиҳад, ки барои реҷаи рушд санҷишҳои иловагӣ илова кунанд.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ба таҳиягарони plugin иҷозат медиҳад, ки барои адаптери MCP ҳолати додашударо маҷбурӣ таъин кунанд.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Бо сабабҳои амниятӣ, мо шумораи амалҳои дастрас барои пайвастшавӣ ба hook-ро маҳдуд мекунем. Ин филтр ба таҳиягарон имкон медиҳад, ки онро васеъ кунанд
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Месанҷад, ки оё навъи навиштаи додашуда дар ин plan иҷозат дода шудааст ё не. Ба таҳиягарони plugin иҷозат медиҳад, ки арзиши баргардонидашударо филтр кунанд
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Филтр мекунад, ки оё санҷиши нишонии IP маҷбурӣ татбиқ шавад ё не.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Филтр мекунад, ки оё санҷиши user agent маҷбурӣ татбиқ шавад ё не.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — URL-и magic link-и тавлидшударо филтр мекунад.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Филтр мекунад, ки оё magic link-ҳо фаъоланд ё не.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — URL-и бозравониро пас аз асосӣ кардани домен филтр мекунад.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Рӯйхати истисноии параметрҳоеро эҷод мекунад, ки auto-redirect-ро пешгирӣ мекунанд.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Филтр барои бознависии қарори дохилкунии қобилияти MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Санаи анҷоми ҳисобшударо филтр мекунад.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Санаи анҷоми ҳисобшударо, ки пас аз renewal таъин мешавад, филтр мекунад.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ба таҳиягарон иҷозат медиҳад, ки slug-ҳои нави формаи навсозӣ илова кунанд.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Дарозии ҳадди ақали гузарвожаро филтр мекунад.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Қуввати ҳадди ақали зарурии гузарвожаро филтр мекунад (холи zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ба таҳиягарони plugin ва ба худи мо иҷозат медиҳад, ки ба саҳифаҳои таҳрири мо пайвандҳои амал илова кунанд
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Филтр мекунад, ки оё дар гузарвожаҳо ҳарфҳои хурд талаб карда шаванд ё не.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Филтр мекунад, ки оё дар гузарвожаҳо рақамҳо талаб карда шаванд ё не.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Филтр мекунад, ки оё дар гузарвожаҳо аломатҳои махсус талаб карда шаванд ё не.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Филтр мекунад, ки оё дар гузарвожаҳо ҳарфҳои калон талаб карда шаванд ё не.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ба корбар иҷозат медиҳад, ки паёмро дар бораи пардохтҳои интизор тағйир диҳад.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Навъҳои маҳсулотеро филтр мекунад, ки бояд ҳамчун plan-ҳо баррасӣ шаванд.
+- [wu_post_count](./Filters/wu_post_count) — Ба таҳиягарони plugin иҷозат медиҳад, ки маҷмӯи ҳисобро тағйир диҳанд
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ба таҳиягарони plugin иҷозат медиҳад, ки тағйир диҳанд кадом ҳолати навишта бояд ҳисоб карда шавад. Ба таври пешфарз, навиштаҳои нашршуда ва хусусӣ ҳисоб карда мешава
+- [wu_post_default_status](./Filters/wu_post_default_status) — Маълумоти объектро пеш аз нигоҳдорӣ дар пойгоҳи додаҳо филтр мекунад.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ба таҳиягарон иҷозат медиҳад, ки settings-ро пеш аз захиракунӣ аз ҷониби Ultimate Multisite филтр кунанд.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Филтр мекунад, ки оё идома додан бо дархост иҷозат дода шудааст ё не.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Филтр мекунад, ки оё идома додан бо дархост иҷозат дода шудааст ё не.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Филтр мекунад, ки оё идома додани дархост иҷозат аст ё не.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Филтр мекунад, ки оё идома додани дархост иҷозат аст ё не.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Филтр мекунад, ки оё идома додани дархост иҷозат аст ё не.
+- [wu_return_url](./Filters/wu_return_url) — Ба таҳиягарон иҷозат медиҳад, ки URL-и бозгашти gateway-ро, ки пас аз равандҳои checkout истифода мешавад, тағйир диҳанд.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Ба таҳиягарони plugin иҷозат медиҳад, ки functions-и бештари models-и ҷустуҷӯро илова кунанд.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Ба таҳиягарон иҷозат медиҳад, ки қадамҳои иловагии setup wizard илова кунанд.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Филтр мекунад, ки оё Ultimate Multisite бояд барои сайти навтаъсис сабти домен эҷод кунад.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Ба таҳиягарон иҷозат медиҳад, ки redirect-ро кӯтоҳ кунанд ва аз рӯй додани он пешгирӣ намоянд.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Имкон медиҳад handler бознависӣ шавад
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Амалҳои гурӯҳии дастрас барои сайтҳоро филтр мекунад.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Филтр барои тағйир додани арзиш барои get pluginssites дар дохили шабака.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Қобилияти single-sign-on-и байнидомениро фаъол/ғайрифаъол мекунад.
+- [wu_sso_url](./Filters/wu_sso_url) — URL-ҳои SSO-и тавлидшударо пеш аз баргардонида шудан барои амалҳои муштарии байнидоменӣ филтр мекунад.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Маълумоти Subscription-и Stripe-ро филтр мекунад. Метавонад success_url ё cancel_url-ро бекорнависӣ кунад.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Далелҳои нияти пардохтро филтр мекунад.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ID-и нақшаеро, ки бояд санҷида шавад, филтр мекунад. Агар ин вуҷуд дошта бошад, subscription-и нав ин нақшаро истифода мебарад.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ID-и маҳсулотеро, ки бояд санҷида шавад, филтр мекунад. Агар ин вуҷуд дошта бошад, subscription-и нав ин маҳсулотро истифода мебарад.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Арзиши idempotency_key-ро, ки бо имконоти пардохти Stripe фиристода мешавад, филтр мекунад.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Сабти membership-ро, ки бо ин webhook алоқаманд аст, филтр мекунад.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Meta-и маълумотро пеш аз serialize шудан барои нигоҳдорӣ дар пойгоҳи додаҳо филтр мекунад.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Маълумоти object-ро пеш аз нигоҳдорӣ дар пойгоҳи додаҳо филтр мекунад.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Ба таҳиягарон иҷозат медиҳад, ки URL-и upgrade to unlock-ро тағйир диҳанд
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Муайян мекунад, ки оё mapping бояд истифода шавад
+- [wu_username_from_email](./Filters/wu_username_from_email) — Номи корбарии муштарии навро филтр мекунад.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Ба таҳиягарон иҷозат медиҳад, ки паём дар бораи маҳдудияти корбарони membership-ро тағйир диҳанд
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Ба таҳиягарон иҷозат медиҳад, ки ҷузвдонҳои иловагиро ба рӯйхати ивазшаванда илова кунанд.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Филтр мекунад, ки кадом sub_commands барои ин entity фаъоланд.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Мо ҳангоми кӯшиши муайян кардани он, ки constants-и худро ба куҷо ворид карда метавонем, се pattern-ро месанҷем:

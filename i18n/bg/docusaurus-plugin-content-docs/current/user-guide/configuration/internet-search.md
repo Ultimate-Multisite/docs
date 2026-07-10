@@ -3,17 +3,17 @@ title: Търсене в интернет
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internet Search (Търсене в Интернет)
+# Internet Search (Търсене в Интернет) {#internet-search}
 
 Gratis AI Agent v1.5.0 добавя възможност за **Internet Search (Търсене в Интернет)**, която позволява на AI асистента да извлича актуална информация от уебсайта по време на разговор. Това е възможно благодарение на [Brave Search API](https://brave.com/search/api/) или [Tavily API](https://tavily.com/).
 
-## How It Works (Как Работи)
+## How It Works (Как Работи) {#how-it-works}
 
 Когато търсенето в интернет е активирано, асистентът може автоматично да изпрати заявка към конфигурирания от вас доставчик на търсене, когато установи, че въпросът изисква актуална или външна информация — например, последни новини, текущи цени или документация, която може да се е променила от момента, в който е обучен моделът.
 
 Резултатите се извличат в реално време и се "впръскват" в контекста на асистента, преди той да генерира отговор. Асистентът уведомява потребителя кога е използвал резултати от търсене, за да отговори на въпроса.
 
-## Enabling Internet Search (Активиране на Търсене в Интернет)
+## Enabling Internet Search (Активиране на Търсене в Интернет) {#enabling-internet-search}
 
 Търсенето в интернет изисква API ключ от избрания от вас доставчик на търсене. За да го конфигурирате:
 
@@ -24,35 +24,35 @@ Gratis AI Agent v1.5.0 добавя възможност за **Internet Search 
 
 След като ключът бъде запазен, възможността за Internet Search автоматично става налична за асистента.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Obtaining a Brave Search API Key (Получаване на API ключ за Brave Search)
+### Obtaining a Brave Search API Key (Получаване на API ключ за Brave Search) {#obtaining-a-brave-search-api-key}
 
 1. Посетете [Brave Search API page](https://brave.com/search/api/).
 2. Регистрирайте се за план. Налично е безплатен план с лимит на месечни заявки.
 3. Копирайте API ключа си от Brave Search developer dashboard.
 4. Поставете го в полето **Brave Search API Key** в настройките на Gratis AI Agent.
 
-### Usage Limits (Лимити за Използване)
+### Usage Limits (Лимити за Използване) {#usage-limits}
 
 Използването се фактурира от Brave Search въз основа на броя на изпратените заявки. Всеки отговор на AI, който инициира търсене, се брои за една заявка. Следете използването си в [Brave Search developer dashboard](https://brave.com/search/api/), за да избегнете неочаквани такси.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0 добавя **Tavily** като алтернативен доставчик за търсене в интернет, предлагащ по-богати резултати от търсене и усъвършенствани възможности за изследване.
 
-### Obtaining a Tavily API Key (Получаване на API ключ за Tavily)
+### Obtaining a Tavily API Key (Получаване на API ключ за Tavily) {#obtaining-a-tavily-api-key}
 
 1. Посетете [Tavily API page](https://tavily.com/).
 2. Регистрирайте се за акаунт. Наличен е безплатен план с лимит на месечни заявки.
 3. Копирайте API ключа си от Tavily dashboard.
 4. Поставете го в полето **Tavily API Key** в настройките на Gratis AI Agent.
 
-### Usage Limits (Лимити за Използване)
+### Usage Limits (Лимити за Използване) {#usage-limits-1}
 
 Използването се фактурира от Tavily въз основа на броя на изпратените API повиквания (calls). Всеки отговор на AI, който инициира търсене, се брои за едно повикване. Следете използването си в [Tavily dashboard](https://tavily.com/), за да избегнете неочаквани такси.
 
-## Disabling Internet Search (Деактивиране на Търсене в Интернет)
+## Disabling Internet Search (Деактивиране на Търсене в Интернет) {#disabling-internet-search}
 
 Изтрийте API ключа от полето на активното търсене и запазете. Възможността за Internet Search вече няма да бъде налична за асистента.
 

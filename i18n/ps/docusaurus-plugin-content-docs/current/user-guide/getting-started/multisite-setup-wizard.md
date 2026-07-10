@@ -3,7 +3,7 @@ title: د متعدد سايټ تنظیمونکی
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite ته یو内置 गरिएको wizard (مساعد) لري چې یو معیاري WordPress installation کي خود بخود रूपमा WordPress Multisite network ته بدلوي. دا کار تاسو ته `wp-config.php` lai دستی रूपमा सच्याउन वा डेटाबेस commandहरू चलाउनुपर्ने आवश्यकता हटाउँछ।
 
@@ -11,13 +11,13 @@ Ultimate Multisite ته یو内置 गरिएको wizard (مساعد) لري
 यदि तपाईंको WordPress installation पहिले नै Multisite network को रूपमा चलिरहेको छ भने, तपाईं यो चरण पूर्ण रूपमा छुटाउन सक्नुहुन्छ। Wizard ले केवल तब देखिन्छ जब Multisite अझै सक्रिय गरिएको छैन।
 :::
 
-## Wizard कहिले देखा पर्छ?
+## Wizard कहिले देखा पर्छ? {#when-does-the-wizard-appear}
 
 जब तपाईं कुनै मानक (गैर-Multisite) WordPress installation मा Ultimate Multisite सक्रिय गर्नुहुन्छ, प्लगइनले पत्ता लगाउँछ कि Multisite सक्रिय छैन र सामान्य सेटअप wizard को सट्टा तपाईंलाई Multisite Setup Wizard मा स्वचालित रूपमा पुनर्निर्देशित गर्छ।
 
 तपाईं यसमा सिधै **WP Admin > Ultimate Multisite > Multisite Setup** बाट पनि पहुँच गर्न सक्नुहुन्छ।
 
-## पूर्व-आवश्यकताहरू (Prerequisites)
+## पूर्व-आवश्यकताहरू (Prerequisites) {#prerequisites}
 
 wizard चलाउनु अघि, सुनिश्चित गर्नुहोस्:
 
@@ -29,7 +29,7 @@ wizard चलाउनु अघि, सुनिश्चित गर्नु
 wizard ले तपाईंको `wp-config.php` फाइल परिवर्तन गर्छ र नयाँ database tables बनाउँछ। अगाडि बढ्नुअघि सधैं एक backup बनाउनुहोस्।
 :::
 
-## चरण १: स्वागत (Welcome)
+## चरण १: स्वागत (Welcome) {#step-1-welcome}
 
 पहिलो स्क्रिनले WordPress Multisite के हो र wizard ले के गर्ने भन्ने कुरा बुझाउँछ:
 
@@ -42,11 +42,11 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 
 अगाडि बढ्न **Continue** मा क्लिक गर्नुहोस्।
 
-## चरण २: नेटवर्क कन्फिगरेसन (Network Configuration)
+## चरण २: नेटवर्क कन्फिगरेसन (Network Configuration) {#step-2-network-configuration}
 
 यो चरणले तपाईंलाई आफ्नो नेटवर्क सेटिङहरू कन्फिगर गर्न सोध्छ।
 
-### साइट संरचना (Site Structure)
+### साइट संरचना (Site Structure) {#site-structure}
 
 د شبکه سایت‌های شما چگونه سازماندهی خواهند شد را انتخاب کنید:
 
@@ -57,11 +57,11 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 اگر زیر دامنه انتخاب می‌کنید، باید برای دامنه خود تنظیمات **wildcard DNS** و یک **wildcard SSL certificate** پیکربندی کنید. اکثر هاست‌های مدیریت شده وردپرس این کار را به صورت خودکار انجام می‌دهند. برای مقایسه دقیق بیشتر به [Ultimate Multisite 101](./ultimate-multisite-101) مراجعه کنید.
 :::
 
-### عنوان شبکه (Network Title)
+### عنوان شبکه (Network Title) {#network-title}
 
 نامی برای شبکه خود وارد کنید. این نام به طور پیش‌فرض با "Network" به عنوان اضافه شدن، عنوان سایت فعلی شما تنظیم می‌شود. می‌توانید بعداً از تنظیمات شبکه آن را تغییر دهید.
 
-### ایمیل مدیر شبکه (Network Admin Email)
+### ایمیل مدیر شبکه (Network Admin Email) {#network-admin-email}
 
 ایمیل مورد استفاده برای اعلان‌های مدیریت شبکه است. این مقدار به طور پیش‌فرض ایمیل کاربر فعلی تنظیم شده است.
 
@@ -69,7 +69,7 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 
 پس از پر کردن فیلدها، روی **Continue** کلیک کنید تا ادامه دهید.
 
-## مرحله ۳: نصب (Step 3: Installation)
+## مرحله ۳: نصب (Step 3: Installation) {#step-3-installation}
 
 برای شروع، روی دکمه **Install** کلیک کنید. این wizard پنج مرحله خودکار را به ترتیب انجام می‌دهد و هر کدام پیشرفت خود را در لحظه نشان می‌دهند:
 
@@ -96,7 +96,7 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 
 بیا wizard خود بخښنه ورکوي چې د پوره کولو سکرین ته ځي.
 
-## مرحله ۴: پوره کول (Complete)
+## مرحله ۴: پوره کول (Complete) {#step-4-complete}
 
 که نصب پوره بشپړ شي، تاسو یو بریالیت پیغام وګورئ چې ډاډ ورکوي چې WordPress Multisite فعال شوی دی.
 
@@ -108,7 +108,7 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 پاسخې اوور پسلاري نصب کیدای شي، د یوې نوی شبکه مدیر (network admin) له لارې Ihr مرورگر پریکړه ورکوي. ممکن اړتیا وي چې بیا لاگ شئ ځکه چې د multisite محیط لپاره احراز identidade کوونکو کوکیونه (authentication cookies) تازه شوي دي.
 :::
 
-## manuāli تنظیم کولو fallback (Fallback)
+## manuāli تنظیم کولو fallback (Fallback) {#manual-setup-fallback}
 
 که کارنر (wizard) نشي کولی په `wp-config.php` فایل کې لیک وکړي (د فایل پرمیشن یا سرور محدودیتونو له وجه)، نو دا تاسو ته دقیق 코드가 ښیي چې باید manuāli اضافه کړئ:
 
@@ -117,9 +117,9 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 
 د manuāli بدلونونو وروسته، صفحه تازه کړئ او کارنر تشخیصل得 چې multisite اوس فعال دی.
 
-## مشکلو حل (Troubleshooting)
+## مشکلو حل (Troubleshooting) {#troubleshooting}
 
-### کارنر وايي چې wp-config.php لیک نه کیږي (is not writable)
+### کارنر وايي چې wp-config.php لیک نه کیږي (is not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 د Ihr ویب سرور پروسې ته باید د `wp-config.php` فایل لپاره لیک کولو اجازه وي. تاسو کولی شئ:
 
@@ -127,7 +127,7 @@ wizard ले तपाईंको `wp-config.php` फाइल परिवर
 - کارنر لخوا وړاندې شوي manuāli تنظیم کولو fallback لارښوونو څخه کار واکوئ
 - له خپل هاستینګ فراہم کنند څخه مرسته غواړئ
 
-### وروسته له تنظیم کولو سایتونه پاتې کیږي (subdomains)
+### وروسته له تنظیم کولو سایتونه پاتې کیږي (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 که تاسو subdomain جوړښت غوره کړی، نو تاسو باید د خپل domain لپاره **wildcard DNS** تنظیم کړئ. یو DNS رکورډ اضافه کړئ:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 د خپل هاستینګ فراہم کنند څخه پوښتنه وکړئ که آیا تاسو نه پوهیږئ چې دا څنګه تنظیم کړئ.
 
-### وروسته له تنظیم کولو احراز identidade کې مشکلونه
+### وروسته له تنظیم کولو احراز identidade کې مشکلونه {#authentication-issues-after-setup}
 
 که تاسو لاگ نه یا cookie error تجربه کوئ multisite تنظیم کولو وروسته:
 
@@ -147,7 +147,7 @@ Value: [your server IP]
 ۲. په `yourdomain.com/wp-login.php` کې بیا لاگ شئ
 ۳. که مشکل دوام ورسېږي، وګورئ چې ستاسو `wp-config.php` کې `COOKIE_DOMAIN` به `false` تنظیم نه وي — دا د subdomain multisite نصب کولو پریکړه شوي مشکله ده
 
-### یوه مرحله نصبولو په جریان کې ناکامه شوې وه
+### یوه مرحله نصبولو په جریان کې ناکامه شوې وه {#a-step-failed-during-installation}
 
 که داسې خبره کیږي چې یو له همغندو لارښوونو کې غلطي پیلوي:
 

@@ -3,7 +3,7 @@ title: GoCardless நுழைவாயில்
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# GoCardless நுழைவாயில்
+# GoCardless நுழைவாயில் {#gocardless-gateway}
 
 இந்த அம்சம் **GoCardless** addon மூலம் வழங்கப்படுகிறது.
 

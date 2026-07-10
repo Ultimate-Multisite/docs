@@ -3,11 +3,11 @@ title: Zvinhira dziri dzeNkhani dzakare uye Mhando dzemakore
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Zvinodi Kurumbira neKupedzisira
+# Zvinodi Kurumbira neKupedzisira {#domain-products-and-pricing}
 
 Domain products ndiyo nzira unogona kuva uri wauri kurumbidza upfungundu, TLDs (Top-Level Domains), WHOIS privacy, uye uchigadzirisa vanopenyu. Chikonzero chakanaka, munzvimbo dzese dzinogona kubva panguva yakakwana ya Ultimate Multisite netabu inotodzidzira **Domain Settings**.
 
-## Kuita domain product
+## Kuita domain product {#creating-a-domain-product}
 
 1. Enda kuenda kune **Network Admin › Ultimate Multisite › Products**
 2. Chibvumira **Add New**
@@ -17,19 +17,19 @@ Domain products ndiyo nzira unogona kuva uri wauri kurumbidza upfungundu, TLDs (
 
 Domain products dzabva nebadge re-purple re**Domain** munzvimbo dzeproducts uye ndizogona kuonekwa nekubatsirwa netabu ya **Domain Products**.
 
-## Tab ye Domain settings
+## Tab ye Domain settings {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Chibvumira kuti upereke nenzira inoshandiswa kune registration yechidzidzo chacho. Inoita zvakare iye **Default provider** inotanga mune Domain Seller settings.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Ramba uri panguva yakakwana kuti uingise list ye TLDs (kuti zvinhu zviri kuitwa, saka .com, .net, .org) kuti uingise product inoshandiswa nekuti inoshandiswa neproduct rechinangwa chekuti iye anozivikanwa.
 
 **Kuti matching ye product inogona kuenda sei:** Kana munhu achifamba kudzidza domain, addon inotanga kuita product inosimba uye inosimbisa zvakanyanya. Product inoshandiswa ne `.com` mu list ye TLDs inosimbisa pane product rechinangwa chekuti iye anozivikanwa. Kana usina product yechidzidzo chekuti uingise, product rechinangwa chekuti iye anozivikanwa rinogona kuenda. Kana usina products, kudzidza domain hachazowoneonekwa.
 
-### Markup type (Chikamu chakanaka)
+### Markup type (Chikamu chakanaka) {#markup-type}
 
 Mazuva matatu anogona kuita kuti upfungundu yako ya retail inenge yakaitwa sei kubva kuupedzisira we wholesale cost:
 
@@ -39,11 +39,11 @@ Mazuva matatu anogona kuita kuti upfungundu yako ya retail inenge yakaitwa sei k
 | **Fixed markup** | Inogadzirisa shamba rine dollar amount. Markup ye $5 pamusoro pe domain inoshandiswa ne wholesale cost ya $10 inogona kuita $15. |
 | **Fixed price** | Inogona kunzwa wholesale cost zvose. Inogona kuita chaka chaka chako chiri munzira unogadzirisa. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 Kusarira kuipa chineera zvinhu zvakakosha.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Ino shandisa kuti uone kuti kune zvinangwa (domains) zvichigadzirwa kunzwisisa kwemweya (WHOIS privacy protection) kana kuti haunogona kushandiswa.
 
@@ -57,7 +57,7 @@ Kuti Namecheap, WHOIS privacy inoshandisa WhoisGuard (inotsvaga nekuti haunogona
 
 ---
 
-## TLD import and sync
+## TLD import and sync {#tld-import-and-sync}
 
 Zvinangwa (domain products) zvinokwanisa kuone upfuura wewholesale wemweya (real-time wholesale pricing) unotsvaga kubva munzvimbo yakaita kune provider. Kuti izvi zvigone, TLDs dzinogona kuva kunge dzakagadzirwa.
 
@@ -68,7 +68,7 @@ Panguva ya sync, enda ku tab ya Domain Settings yevine dziri munangwa uye shandi
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Kupfuura kwezvinangwa (domain renewals) kunoshandiswa nekuita membership ya mutenda wese:
 
@@ -88,7 +88,7 @@ Email template IDs dzinotsvaga lifecycle events yevine dziri munangwa:
 
 ---
 
-## Admin: Kuratira (Manual) kuregistira domaini
+## Admin: Kuratira (Manual) kuregistira domaini {#admin-manual-domain-registration}
 
 Ukuregisira domaini kubva kuita kwa mwanawo asi vachikumbire checkout:
 

@@ -3,13 +3,13 @@ title: Migrasie na Derde-Partye Modus
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrasie na Derde-partye Modus
+# Migrasie na Derde-partye Modus {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 verander hoe derde-partye funksionaliteite hanteer word. **Die derde-partye modus is nou standaard op outomaties**, wat die integrasie met die native WordPress Abilities API op WordPress 7.0+ moontlik maak sonder dat jy dit handmatig hoef te konfigureer.
 
-## Wat het verander?
+## Wat het verander? {#what-changed}
 
-### Voor v1.12.0
+### Voor v1.12.0 {#before-v1120}
 
 Derde-partye funksionaliteite het handmatige konfigurasie vereis:
 
@@ -18,7 +18,7 @@ Derde-partye funksionaliteite het handmatige konfigurasie vereis:
 - Integrasie met die WordPress Abilities API was opsioneel
 - Legacy modus was die standaard
 
-### Ná v1.12.0
+### Ná v1.12.0 {#after-v1120}
 
 Derde-partye funksionaliteite werk outomaties:
 
@@ -27,13 +27,13 @@ Derde-partye funksionaliteite werk outomaties:
 - Geen handmatige konfigurasie nodig op WordPress 7.0+ nie
 - Legacy modus is steeds beskikbaar vir ouer WordPress-weergawes
 
-## Wie word geraak?
+## Wie word geraak? {#who-is-affected}
 
-### Nuwe installasies (WordPress 7.0+)
+### Nuwe installasies (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Geen aksie vereis nie.** Die derde-partye modus word outomaties op "outomaties" gestel, en die funksionaliteite werk direk.
 
-### Bestaande installasies
+### Bestaande installasies {#existing-installations}
 
 **Jou instellings word bewaar.** As jy gebruik het:
 
@@ -41,7 +41,7 @@ Derde-partye funksionaliteite werk outomaties:
 - **Handmatige derde-partye modus**: Jy bly in handmatige modus (geen verandering nie)
 - **Outomatiese modus**: Jy gaan voort met outomatiese modus (geen verandering nie)
 
-### WordPress-weergawes voor 7.0
+### WordPress-weergawes voor 7.0 {#wordpress-versions-before-70}
 
 **Legacy modus is steeds beskikbaar.** As jy op WordPress 6.x of vroeër is:
 
@@ -49,9 +49,9 @@ Derde-partye funksionaliteite werk outomaties:
 - Jy kan die derde-partye modus handmatig aktiver indien gewens
 - Graweer na WordPress 7.0+ om die native Abilities API te gebruik
 
-## Die Modusse Verstaan
+## Die Modusse Verstaan {#understanding-the-modes}
 
-### Outomatiese Modus (Nuwe Standaard)
+### Outomatiese Modus (Nuwe Standaard) {#auto-mode-new-default}
 
 **Outomatiese modus** gebruik die native WordPress Abilities API-integrasie:
 
@@ -62,7 +62,7 @@ Derde-partye funksionaliteite werk outomaties:
 
 **Wanneer om te gebruik**: WordPress 7.0+ met derde-partye funksionaliteite
 
-### Handmatige Modus
+### Handmatige Modus {#manual-mode}
 
 **Handmatige modus** vereis eksplisiete konfigurasie:
 
@@ -73,7 +73,7 @@ Derde-partye funksionaliteite werk outomaties:
 
 **Wanneer om te gebruik**: Toetsing, selektiewe funksionaliteitslading, of aangepaste konfigurasies
 
-### Legacy Modus
+### Legacy Modus {#legacy-mode}
 
 **Legacy modus** gebruik die ou derde-partye funksionaliteitsstelsel:
 
@@ -84,24 +84,24 @@ Derde-partye funksionaliteite werk outomaties:
 
 **Wanneer om te gebruik**: WordPress 6.x of vroeër, of wanneer jy legacy-kompatibiliteit benodig
 
-## Jou Huidige Modus Kontroleer
+## Jou Huidige Modus Kontroleer {#checking-your-current-mode}
 
-### Via die Admin Paneel
+### Via die Admin Paneel {#via-admin-panel}
 
 1. Gaan na **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Soek na die **Third-Party Mode** instelling
 3. Jy sal jou huidige modus en opsies om dit te verander sien
 
-### Via Kode
+### Via Kode {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', of 'legacy'
 ```
 
-## Jou Modus Verander
+## Jou Modus Verander {#changing-your-mode}
 
-### Skakel na Outomatiese Modus
+### Skakel na Outomatiese Modus {#switch-to-auto-mode}
 
 As jy op WordPress 7.0+ is en outomatiese modus wil gebruik:
 
@@ -112,7 +112,7 @@ As jy op WordPress 7.0+ is en outomatiese modus wil gebruik:
 
 Superdav AI Agent sal outomaties derde-partye funksionaliteite ontdek en registreer.
 
-### Skakel na Handmatige Modus
+### Skakel na Handmatige Modus {#switch-to-manual-mode}
 
 As jy wil hê dat jy handmatig moet beheer watter funksionaliteite gelaai word:
 
@@ -122,7 +122,7 @@ As jy wil hê dat jy handmatig moet beheer watter funksionaliteite gelaai word:
 4. Klik op **Save**
 5. Redigeer jou konfigurasiebesty om te spesifiseer watter funksionaliteite wat gelaai moet word
 
-### Skakel na Legacy Modus
+### Skakel na Legacy Modus {#switch-to-legacy-mode}
 
 As jy legacy-kompatibiliteit benodig:
 
@@ -131,9 +131,9 @@ As jy legacy-kompatibiliteit benodig:
 3. Kies **Legacy**
 4. Klik op **Save**
 
-## Voordele van Outomatiese Modus
+## Voordele van Outomatiese Modus {#benefits-of-auto-mode}
 
-### Outomatiese Ontdekking
+### Outomatiese Ontdekking {#automatic-discovery}
 
 Funksionaliteite word outomaties ontdek van:
 
@@ -144,7 +144,7 @@ Funksionaliteite word outomaties ontdek van:
 
 Geen handmatige registrasie nodig nie.
 
-### Native Integrasie
+### Native Integrasie {#native-integration}
 
 Funksionaliteite integreer met die WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Funksionaliteite integreer met die WordPress Abilities API:
 - Kompatibel met ander plugins wat die Abilities API gebruik
 - Toekomstig beskermbaar soos WordPress ontwikkel
 
-### Vereenvoudigde Bestuur
+### Vereenvoudigde Bestuur {#simplified-management}
 
 - Geen konfigurasiebestye om te redigeer nie
 - Geen handmatige funksionaliteitsregistrasie nie
 - Funksionaliteitsgesigbaarheid (Ability Visibility) beheer werk outomaties
 - Admin-kennisgewings waarsku u oor ongeklassifiseerde funksionaliteite
 
-### Beter Prestasie
+### Beter Prestasie {#better-performance}
 
 - Funksionaliteite word gekasher
 - Word op aanvraag lui gelaai
 - Geoptimaliseer vir WordPress 7.0+
 
-## Migrasiepad
+## Migrasiepad {#migration-path}
 
-### As jy op WordPress 6.x is
+### As jy op WordPress 6.x is {#if-youre-on-wordpress-6x}
 
 1. **Graweer na WordPress 7.0+** (wanneer gereed)
 2. **Update Superdav AI Agent** na v1.12.0+
 3. **Verander derde-partye modus na Outomaties** (opsioneel; legacy modus werk steeds)
 4. **Evalueer funksionaliteitsgesigbaarheid** om te verseker van korrekte toegangsbeveiligingskontroles
 
-### As jy op WordPress 7.0+ is
+### As jy op WordPress 7.0+ is {#if-youre-on-wordpress-70}
 
 1. **Update Superdav AI Agent** na v1.12.0+
 2. **Verifieer dat derde-partye modus op Outomaties gestel is** (dit behoort standaard te wees)
 3. **Evalueer funksionaliteitsgesigbaarheid** om te verseker van korrekte toegangsbeveiligingskontroles
 4. **Toets derde-partye funksionaliteite** om te bevestig dat dit werk
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Funksionaliteite laai nie in outomatiese modus nie
+### Funksionaliteite laai nie in outomatiese modus nie {#abilities-arent-loading-in-auto-mode}
 
 - Verifieer dat jy op WordPress 7.0+ is
 - Kontroleer of derde-partye modus op "Auto" gestel is
 - Verifieer dat die plugin wat die funksionaliteit verskaf, aktief is
 - Kontroleer WordPress fout-logboeke vir registrasiefoute
 
-### Ek wil legacy modus behou
+### Ek wil legacy modus behou {#i-want-to-keep-legacy-mode}
 
 - Gaan na **Settings** → **Third-Party Mode**
 - Kies **Legacy**
 - Klik op **Save**
 - Legacy modus sal voortgaan om te werk
 
-### My aangepaste funksionaliteite word nie getoon nie
+### My aangepaste funksionaliteite word nie getoon nie {#my-custom-abilities-arent-showing}
 
 - Verifieer dat dit via WordPress hooks geregistreer is
 - Kontroleer of hulle die Abilities API korrek implementeer
 - Evalueer WordPress fout-logboeke
 - Gebruik die **Ability Visibility** admin-bladsy om alle geregistreerde funksionaliteite te sien
 
-### Ek ontvang "ongeklassifiseerde funksionaliteit" kennisgewings
+### Ek ontvang "ongeklassifiseerde funksionaliteit" kennisgewings {#im-getting-unclassified-ability-notices}
 
 - Dit is normaal vir nuwe derde-partye funksionaliteite
 - Evalueer en klassifiseer dit in die admin-kennisgewing
 - Kyk na **Ability Visibility** vir besonderhede oor klassifikasie
 
-## Terug-kompatibiliteit
+## Terug-kompatibiliteit {#backward-compatibility}
 
-### Bestaande Konfigurasies
+### Bestaande Konfigurasies {#existing-configurations}
 
 As jy bestaande derde-partye funksionaliteitskonfigurasies het:
 
@@ -223,33 +223,33 @@ As jy bestaande derde-partye funksionaliteitskonfigurasies het:
 
 Om jou aangepaste konfigurasie te behou, bly in Handmatige of Legacy modus.
 
-### Verouderingslyn
+### Verouderingslyn {#deprecation-timeline}
 
 - **v1.12.0**: Legacy en Handmatige modusse word steeds ten volle ondersteun
 - **v1.13.0+**: Legacy modus mag verouderingskennisgewings toon
 - **v2.0.0**: Legacy modus mag verwyder word (Te bepaal)
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
-### Vir Nuwe Installasies
+### Vir Nuwe Installasies {#for-new-installations}
 
 - Gebruik Outomatiese modus (dit is die standaard)
 - Laat Superdav AI Agent funksionaliteite outomaties ontdek
 - Gebruik Ability Visibility om toegang te beheer
 
-### Vir Bestaande Installasies
+### Vir Bestaande Installasies {#for-existing-installations}
 
 - Graweer na WordPress 7.0+ waar moontlik
 - Skakel na Outomatiese modus vir vereenvoudigde bestuur
 - Evalueer en klassifiseer funksionaliteite met behulp van Ability Visibility
 
-### Vir Aangepaste Funksionaliteite
+### Vir Aangepaste Funksionaliteite {#for-custom-abilities}
 
 - Registreer funksionaliteite via WordPress hooks (Abilities API)
 - Vermy aangepaste funksionaliteitsregisters
 - Toets op WordPress 7.0+ met Outomatiese modus
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 1. **Kontroleer jou WordPress-weergawes**: Verifieer dat jy op 7.0+ is vir Outomatiese modus
 2. **Evalueer jou derde-partye modus**: Gaan na Settings en kyk jou huidige modus
@@ -257,7 +257,7 @@ Om jou aangepaste konfigurasie te behou, bly in Handmatige of Legacy modus.
 4. **Klassifiseer funksionaliteite**: Evalueer en klassifiseer enige ongeklassifiseerde funksionaliteite
 5. **Toets**: Verifieer dat jou derde-partye funksionaliteite korrek werk
 
-## Verwante Onderwerpe
+## Verwante Onderwerpe {#related-topics}
 
 - **Ability Visibility**: Beheer watter funksionaliteite waar blootgestel word
 - **WordPress Abilities API**: Leer oor native WordPress funksionaliteitsregistrasie

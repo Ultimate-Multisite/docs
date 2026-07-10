@@ -3,17 +3,17 @@ title: Integración de GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integración con GridPane
+# Integración con GridPane {#gridpane-integration}
 
-## Visión general
+## Visión general {#overview}
 GridPane es un panel de control de hosting especializado en WordPress, diseñado para profesionales serios de WordPress. Esta integración permite la sincronización automática de dominios y la gestión de certificados SSL entre Ultimate Multisite y GridPane.
 
-## Características
+## Características {#features}
 - Sincronización automática de dominios
 - Gestión de certificados SSL
 - Configuración automática de la constante SUNRISE
 
-## Requisitos
+## Requisitos {#requirements}
 Las siguientes constantes deben definirse en su archivo `wp-config.php`:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Instrucciones de configuración
+## Instrucciones de configuración {#setup-instructions}
 
-### 1. Obtenga sus credenciales API de GridPane
+### 1. Obtenga sus credenciales API de GridPane {#1-get-your-gridpane-api-credentials}
 
 1. Inicie sesión en su panel de control de GridPane
 2. Vaya a "Configuración" > "API"
 3. Genere una clave API si aún no tiene una
 4. Copie su clave API
 
-### 2. Obtenga sus IDs de servidor y sitio
+### 2. Obtenga sus IDs de servidor y sitio {#2-get-your-server-and-site-ids}
 
 1. En su panel de control de GridPane, vaya a "Servidores"
 2. Seleccione el servidor donde está alojado su multisite de WordPress
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Vaya a "Sitios" y seleccione su sitio de WordPress
 5. Anote el ID del sitio (visible en la URL o en la página de detalles del sitio)
 
-### 3. Agregue constantes a wp-config.php
+### 3. Agregue constantes a wp-config.php {#3-add-constants-to-wp-configphp}
 
 Agregue las siguientes constantes a su archivo `wp-config.php`:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Habilite la integración
+### 4. Habilite la integración {#4-enable-the-integration}
 
 1. En el administrador de WordPress, vaya a Ultimate Multisite > Configuración
 2. Navegue a la pestaña "Mapeo de dominios"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Habilite la integración de GridPane
 5. Haga clic en "Guardar cambios"
 
-## Cómo funciona
+## Cómo funciona {#how-it-works}
 
 Cuando un dominio se mapea en Ultimate Multisite:
 
@@ -69,25 +69,25 @@ Cuando un dominio se mapea en Ultimate Multisite:
 
 La integración también gestiona automáticamente la constante SUNRISE en su archivo wp-config.php, lo que es necesario para que el mapeo de dominios funcione correctamente.
 
-## Gestión de la constante SUNRISE
+## Gestión de la constante SUNRISE {#sunrise-constant-management}
 
 Una característica única de la integración GridPane es que revierte automáticamente la constante SUNRISE en wp-config.php para evitar conflictos con el propio sistema de mapeo de dominios de GridPane. Esto garantiza que ambos sistemas puedan funcionar juntos sin problemas.
 
-## Solución de problemas
+## Solución de problemas {#troubleshooting}
 
-### Problemas de conexión API
+### Problemas de conexión API {#api-connection-issues}
 
 - Verifique que su clave API sea correcta
 - Verifique que sus IDs de servidor y sitio sean correctos
 - Asegúrese de que su cuenta GridPane tenga los permisos necesarios
 
-### Problemas con el certificado SSL
+### Problemas con el certificado SSL {#ssl-certificate-issues}
 
 - GridPane puede tardar algún tiempo en emitir certificados SSL
 - Verifique que sus dominios apunten correctamente a la dirección IP de su servidor
 - Verifique la configuración SSL de GridPane para su sitio
 
-### Dominio no agregado
+### Dominio no agregado {#domain-not-added}
 
 - Verifique los registros de Ultimate Multisite en busca de mensajes de error
 - Verifique que el dominio no esté ya agregado a GridPane

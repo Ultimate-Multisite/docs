@@ -3,11 +3,11 @@ title: Fannin Zane na Tsarin Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# مهارت‌های زیبایی سیستم طراحی (Design System Aesthetics Skill)
+# مهارت‌های زیبایی سیستم طراحی (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 **مهارت زیبایی سیستم طراحی** یک روش هدایت‌شده برای بهتر کردن هویت بصری سایت شماست. این مهارت به شما کمک می‌کند در مورد تایپوگرافی، رنگ، فاصله و توکن‌های حرکت که سیستم طراحی شما را تعریف می‌کنند، تصمیمات سازگار بگیرید.
 
-## زیبایی سیستم طراحی چیست؟
+## زیبایی سیستم طراحی چیست؟ {#what-is-design-system-aesthetics}
 
 زیبایی سیستم طراحی یک مهارت ساختاریافته است که موارد زیر را پوشش می‌دهد:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 این تصمیمات در فایل `theme.json` قالب شما ثبت می‌شوند و یک سیستم بصری منسجم ایجاد می‌کنند.
 
-## چرا از زیبایی سیستم طراحی استفاده کنیم؟
+## چرا از زیبایی سیستم طراحی استفاده کنیم؟ {#why-use-design-system-aesthetics}
 
-### سازگاری (Consistency)
+### سازگاری (Consistency) {#consistency}
 
 یک سیستم طراحی تضمین می‌کند که:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - فاصله‌ها الگوی قابل پیش‌بینی داشته باشند
 - انیمیشن‌ها با هم هماهنگ به نظر برسند
 
-### کارایی (Efficiency)
+### کارایی (Efficiency) {#efficiency}
 
 به جای اینکه تصمیمات طراحی را صفحه به صفحه بگیرید، شما:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - از همه جا از آن‌ها استفاده می‌کنید
 - با تغییر یک مقدار، به‌صورت سراسری به‌روزرسانی می‌کنید
 
-### انعطاف‌پذیری (Flexibility)
+### انعطاف‌پذیری (Flexibility) {#flexibility}
 
 شما می‌توانید:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - با زیبایی‌های مختلف آزمایش کنید
 - در عین تکامل، سازگاری برند را حفظ کنید
 
-## فعال کردن مهارت زیبایی سیستم طراحی
+## فعال کردن مهارت زیبایی سیستم طراحی {#triggering-the-design-system-aesthetics-skill}
 
-### فعال‌سازی دستی (Manual Activation)
+### فعال‌سازی دستی (Manual Activation) {#manual-activation}
 
 می‌توانید این مهارت را هر زمان شروع کنید:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "من رو در تصمیمات سیستم طراحی راهنمایی کن"
 ```
 
-### پیشنهادات خودکار (Automatic Suggestions)
+### پیشنهادات خودکار (Automatic Suggestions) {#automatic-suggestions}
 
 ابزارها ممکن است زمانی که شما:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - می‌خواهید سازگاری بصری را بهبود ببخشید
 - در حال آماده شدن برای راه‌اندازی سایت خود هستید، پیشنهاد استفاده از این مهارت را بدهند.
 
-## فرآیند زیبایی‌شناسی سیستم طراحی
+## فرآیند زیبایی‌شناسی سیستم طراحی {#the-design-system-aesthetics-process}
 
-### مرحله ۱: تایپوگرافی (Typography)
+### مرحله ۱: تایپوگرافی (Typography) {#step-1-typography}
 
 مأمور از شما در مورد انتخاب فونت‌هایتان می‌پرسد:
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **مقیاس وزن (Weight scale)**: ضخامت فونت‌ها (عادی، متوسط، پررنگ و غیره)
 - **ارتفاع خط (Line height)**: فاصله بین خطوط برای خوانایی بهتر
 
-### مرحله ۲: پالت رنگی (Color Palette)
+### مرحله ۲: پالت رنگی (Color Palette) {#step-2-color-palette}
 
 ```
 بیایید پالت رنگی شما را تعریف کنیم.
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - رنگ‌های معنایی (موفقیت، هشدار، خطا)
 - حالت‌های هاور (Hover) و فعال (Active states)
 
-### مرحله ۳: فاصله گذاری (Spacing)
+### مرحله ۳: فاصله گذاری (Spacing) {#step-3-spacing}
 
 Yaya kake shiga kake so?
 
@@ -160,7 +160,7 @@ Wannan agent tana samar da tokens na tsayi (spacing tokens):
 - Scale: xs, sm, md, lg, xl, 2xl
 - Adadi na musamman ga padding, margin, gap
 
-### Mataki na 4: Borders da Shadows
+### Mataki na 4: Borders da Shadows {#step-4-borders-and-shadows}
 
 ```
 Girma da bayani a sassa:
@@ -183,7 +183,7 @@ Wannan agent tana samar da:
 - Shadow tokens ga matakan girma (elevation levels)
 - Border width tokens
 
-### Mataki na 5: Motion da Animation
+### Mataki na 5: Motion da Animation {#step-5-motion-and-animation}
 
 ```
 Yaya kake so wajen shafin yana jin yadda yake a lokacin tattaunawa?
@@ -205,9 +205,9 @@ Wannan agent tana samar da:
 - Functions na sauƙin canzawa (Easing functions) (ease-in, ease-out, ease-in-out)
 - Keyframes na animation ga ayyukan da ake yin amfani da su
 
-## Aiki da Aesthetics na Design System
+## Aiki da Aesthetics na Design System {#applying-design-system-aesthetics}
 
-### Amfani na Asali (Automatic Application)
+### Amfani na Asali (Automatic Application) {#automatic-application}
 
 Bayan ka kammala wannan ƙwarewa (skill), agent zai:
 
@@ -216,7 +216,7 @@ Bayan ka kammala wannan ƙwarewa (skill), agent zai:
 3. Ya sake samar da styles na block don ya yi daidai da sabon tsarin
 4. Ya sake ƙarfafa (activate) theme ɗin da aka gyara
 
-### Amfani na Manufar (Manual Application)
+### Amfani na Manufar (Manual Application) {#manual-application}
 
 Zaka iya gyara `theme.json` kai tsaye:
 
@@ -255,9 +255,9 @@ Zaka iya gyara `theme.json` kai tsaye:
 }
 ```
 
-## Duba Tsarin Kayanin Ku-tsarin Kake
+## Duba Tsarin Kayanin Ku-tsarin Kake {#viewing-your-design-system}
 
-### Tambaya ga Agent
+### Tambaya ga Agent {#ask-the-agent}
 
 ```
 "Ka nuna ni tsarin kake"
@@ -271,13 +271,13 @@ ko
 
 Agent zai nuna maka font-wayarwarka, lafiyayenka, tsarin tsarewa (spacing), da sauran tokens.
 
-### Gano theme.json
+### Gano theme.json {#view-themejson}
 
 Bincika `/wp-content/themes/[theme-name]/theme.json` a cikin text editor don gani bayanan asali na tokens.
 
-## Gyara Tsarin Kake
+## Gyara Tsarin Kake {#updating-your-design-system}
 
-### Gyayoyon Sauƙi
+### Gyayoyon Sauƙi {#quick-updates}
 
 Ka tambaye Agent kan canje-canje da kake so:
 
@@ -297,7 +297,7 @@ ko
 "Canza font na sako zuwa wani serif"
 ```
 
-### Gyaran Tsari Duka
+### Gyaran Tsari Duka {#full-redesign}
 
 Kana sake gudanar da ƙwarewar Design System Aesthetics:
 
@@ -307,7 +307,7 @@ Kana sake gudanar da ƙwarewar Design System Aesthetics:
 
 Wannan zai ba ka shawarwari duka, tare da fara yadda yake a halin yanzu.
 
-### Gyaran Wani Bahama
+### Gyaran Wani Bahama {#partial-updates}
 
 Gyara bangare na musamman:
 
@@ -315,15 +315,15 @@ Gyara bangare na musamman:
 "Ka gyara lafiyen gaba kawai, ka bar sauran abubuwa"
 ```
 
-## Amfani da Tsarin Kake Da Kyau
+## Amfani da Tsarin Kake Da Kyau {#design-system-best-practices}
 
-### Daidaito (Consistency)
+### Daidaito (Consistency) {#consistency-1}
 
 - Yi amfani da idanun sama a duk inda kake amfani da shi.
 - Kada ka ƙirƙiri lafiyen ko tsayoyin wanda ba su da wuri.
 - Ka amfani da tokens maimakon rubuta ƙima kai tsaye (hardcoding values).
 
-### Sunan Abubuwa (Naming)
+### Sunan Abubuwa (Naming) {#naming}
 
 Yi amfani da sunaye masu bayani:
 
@@ -333,7 +333,7 @@ Yi amfani da sunaye masu bayani:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Ingancin Gudanarwa (Scalability)
+### Ingancin Gudanarwa (Scalability) {#scalability}
 
 نظام خود را برای مقیاس‌پذیری طراحی کنید:
 
@@ -341,15 +341,15 @@ Yi amfani da sunaye masu bayani:
 - مقیاس‌ها (xs، sm، md، lg، xl) ایجاد کنید به جای مقادیر تصادفی
 - برای افزودنی‌های آینده برنامه‌ریزی کنید
 
-### مستندسازی سیستم طراحی خود:
+### مستندسازی سیستم طراحی خود: {#documentation}
 
 - چرا رنگ‌های خاص را انتخاب کردید
 - از هر توکن چه زمانی استفاده کنید
 - استثناها و موارد حاشیه‌ای
 
-## الگوهای رایج سیستم طراحی
+## الگوهای رایج سیستم طراحی {#common-design-system-patterns}
 
-### مدرن مینیمال (Modern Minimalist)
+### مدرن مینیمال (Modern Minimalist) {#modern-minimalist}
 
 - تایپوگرافی بدون سریف (Inter، Helvetica)
 - پالت رنگی محدود (۲ تا ۳ رنگ)
@@ -357,7 +357,7 @@ Yi amfani da sunaye masu bayani:
 - سایه‌های ملایم
 - انیمیشن‌های روان و سریع
 
-### گرم و دوستانه (Warm and Friendly)
+### گرم و دوستانه (Warm and Friendly) {#warm-and-friendly}
 
 - ترکیبی از فونت‌های سریف و بدون سریف
 - پالت رنگی گرم (نارنجی‌ها، خاکستری گرم)
@@ -365,7 +365,7 @@ Yi amfani da sunaye masu bayani:
 - سایه‌های نرم
 - انیمیشن‌های بازیگوشانه
 
-### حرفه‌ای شرکتی (Professional Corporate)
+### حرفه‌ای شرکتی (Professional Corporate) {#professional-corporate}
 
 - فونت بدون سریف تمیز (Roboto، Open Sans)
 - پالت رنگی خنثی با یک رنگ تاکیدی
@@ -373,7 +373,7 @@ Yi amfani da sunaye masu bayani:
 - حداقل سایه‌ها
 - انتقال‌های ظریف
 
-### خلاق و جسورانه (Creative and Bold)
+### خلاق و جسورانه (Creative and Bold) {#creative-and-bold}
 
 - تایپوگرافی متمایز
 - پالت رنگی جسورانه
@@ -381,7 +381,7 @@ Yi amfani da sunaye masu bayani:
 - سایه‌های قوی
 - انیمیشن‌های قابل توجه
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
 **تغییرات سیستم طراحی من نمایش داده نمی‌شود**
 - کش مرورگر را پاک کنید
@@ -399,7 +399,7 @@ Yi amfani da sunaye masu bayani:
 - فایل theme.json را به مقادیر قبلی دستی ویرایش کنید
 - با انتخاب‌های متفاوت، مهارت را دوباره اجرا کنید
 
-## مراحل بعدی
+## مراحل بعدی {#next-steps}
 
 پس از تعریف سیستم طراحی خود:
 

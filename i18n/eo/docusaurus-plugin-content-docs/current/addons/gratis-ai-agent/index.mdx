@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent estas aŭtonoma WordPress AI-asistanto, kiu povas plani, konstrui kaj administri kompletajn WordPress retejojn per naturlingvaj instrukcioj. Ĝi elmontras strukturitan aron de **kapabloj** — apartaj, testeblaj agoj, kiujn la agento povas alvoki — kovrante ĉion de enhavadministrado ĝis personigo de dezajna sistemo. Versio 1.9.0 aldonas kapablojn por enhavokreado, vidan paĝorevizion per klientflankaj ekrankopioj, kvin enkonstruitajn agentoprofilojn, kaj funkcio-flagojn por alirkontrolo kaj markigo.
+
+## Ĉefaj Trajtoj {#key-features}
+
+- **Sistemo de kapabloj** — modula, etendebla katalogo de agoj, kiujn la agento povas alvoki en via WordPress instalaĵo
+- **Enhavadministrado** — krei afiŝojn kaj paĝojn (inkluzive asignadon de paĝaj ŝablonoj), amase krei plurajn afiŝojn per unu alvoko, agordi elstarigitajn bildojn, kaj konstrui kontaktformularojn
+- **Vida Revizio** — kapti ekrankopiojn de vivaj paĝoj, kompari antaŭajn/postajn statojn, kaj ricevi AI-generitan dezajnorevizion kovrantan aranĝon, tipografion, koloron kaj alireblecon
+- **Kvin enkonstruitaj agentoj** — Enhavverkisto, Retejkonstruanto, Dezajnstudio, Plugin-administranto, kaj Subtena Asistanto; ŝalteblaj per la Agento-Elektilo en la babileja kaplinio
+- **Funkcio-flagoj** — baskuloj por alirkontrolo kaj markigo en Agordoj → Funkcio-flagoj por rolaj limigoj, blanketikeda nomado, kaj fenestraĵa personigo
+- **Administrado de propraj afiŝotipoj** — registri, listigi kaj forigi proprajn afiŝotipojn kun persisto tra restartigoj
+- **Administrado de propraj taksonomioj** — registri, listigi kaj forigi proprajn taksonomiojn kun persisto
+- **Kapabloj de Dezajna Sistemo** — enmeti propran CSS, administri kuratoritajn blokajn ŝablonojn, agordi la retejan emblemon, kaj apliki theme.json antaŭagordojn
+- **Administrado de Tutlokaj Stiloj** — legi kaj skribi theme.json valorojn por kolorpaletroj, tipografio, interspacigo, kaj pli
+- **Administrado de Navigada Menuo** — krei kaj ĝisdatigi navigadajn menuojn kaj iliajn erojn programe
+- **Opcioj-Administrado** — legi kaj skribi WordPress opciojn kun enkonstruita sekureca bloklisto por protekti kritikajn agordojn
+- **Instalebla Registro de Kapabloj** — malkovri kaj aktivigi aldonajn kapablopakaĵojn sen modifi kernajn plugin-dosierojn
+- **Orkestrado de Retejkonstruanto v2** — plurpaŝaj retejkonstruprogramoj kun plugin-malkovro, progresospurado, kaj erarreakiro
+- **WP-CLI komando por komparnormo** — ruli la komparnorman testaron de agentaj kapabloj el la komandlinio por CI kaj modeltaksado
+
+## Postuloj {#requirements}
+
+- WordPress 6.0 aŭ pli alta
+- PHP 8.1 aŭ pli alta
+- WordPress Multisite (ret-aktivigita) aŭ unu-reteja instalaĵo
+- Aktiva konektila plugin por AI-provizanto (Anthropic, OpenAI, aŭ kongrua)
+
+## Instalado {#installation}
+
+1. Alŝutu la plugin-dosierojn al `/wp-content/plugins/gratis-ai-agent`
+2. Aktivigu la plugin per la ekrano **Plugins** en WordPress
+3. Iru al **Gratis AI Agent → Agordoj** kaj konektu vian AI-provizanton
+4. (Nedevige) Foliumu la **Registron de Kapabloj** por instali aldonajn kapablopakaĵojn
+
+## Rapida Komenco {#quick-start}
+
+Post aktivigo kaj konekto al AI-provizanto, malfermu la panelon **Gratis AI Agent** en la administra flankbreto de WordPress. Tajpu naturlingvan instrukcion kaj la agento planos kaj plenumos la bezonatajn paŝojn uzante siajn disponeblajn kapablojn.
+
+**Ekzemplaj instrukcioj:**
+
+```
+Kreu propran afiŝotipon "Portfolio" kun taksonomio "Project Category".
+```
+
+```
+Enmetu malhel-reĝiman kolorpaletron en la etoson kaj agordu la ĉefan koloron al #1a1a2e.
+```
+
+```
+Konstruu restoracian retejon kun reta menuo, rezervformularo, kaj kontakta paĝo.
+```
+
+## Superrigardo de Kapabloj {#abilities-overview}
+
+Kapabloj estas la atomaj agoj, kiujn la agento povas plenumi. Ĉiu kapablo estas registrita PHP klaso, kiu elmontras skemon (parametrojn kaj revenajn tipojn), kiun la agento legas dum rultempo. Kapabloj estas grupigitaj en funkciajn areojn:
+
+| Areo | Kapabloj |
+|---|---|
+| **Enhavadministrado** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Vida Revizio** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Propraj Afiŝotipoj** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Propraj Taksonomioj** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dezajna Sistemo** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Tutlokaj Stiloj** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigadaj Menuoj** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Opcioj-Administrado** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Instaleblaj Kapabloj** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Retejkonstruanto** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Vidu la [Referencon pri Kapabloj](./abilities) por plena dokumentaro pri parametroj kaj uzekzemploj.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent liveras komandfamilion `wp gratis-ai-agent` por ruli komparnormojn kaj administri kapablojn el la komandlinio. Vidu la [WP-CLI Referencon](./wp-cli) por la plena komandlisto.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Agordo {#configuration}
+
+Ĉiuj agordoj troviĝas sub **Gratis AI Agent → Agordoj** en la WordPress admin:
+
+| Agordo | Priskribo |
+|---|---|
+| **AI-provizanto** | Elektu kaj agordu la aktivan konektilon de AI-provizanto |
+| **Modelo** | Elektu la lingvomodelon uzotan por agentaj sesioj |
+| **Maksimumaj Ĵetonoj** | Ĵetona buĝeto por ĉiu peto (defaŭlte 4096) |
+| **Kapabla Tempolimo** | Maksimumaj sekundoj, dum kiuj individua kapablo povas ruliĝi (defaŭlte 30) |
+| **Sencimiga Protokolado** | Protokoli kapablovokojn kaj agentan rezonadon al la WordPress sencimiga protokolo |
+
+## Sekureca Bloklisto de Opcioj-Administrado {#options-management-safety-blocklist}
+
+La kapablo pri Administrado de Opcioj inkluzivas enkonstruitan blokliston, kiu malhelpas la agenton legi aŭ skribi sentemajn WordPress-opciojn. La defaŭlta bloklisto kovras:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-opcioj — uzu dediĉitan migradan ilon por ĉi tiuj)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (sekretaj ŝlosiloj)
+- `active_plugins`, `template` (aktivigo de kromprogramo/temo — uzu dediĉitajn kapablojn)
+- Atestiloj de pagopordegoj kaj API-ŝlosiloj registritaj de instalitaj kromprogramoj
+
+Pliaj eroj povas esti aldonitaj per la filtrilo `gratis_ai_agent_options_blocklist`.
+
+## Hokoj kaj Filtriloj {#hooks-and-filters}
+
+### Agoj {#actions}
+
+- `gratis_ai_agent_ability_registered` — ekigita post kiam kapablo estas registrita, ricevas la klasnomon de la kapablo
+- `gratis_ai_agent_plan_started` — ekigita kiam plano de ejo-konstruilo komencas plenumadon
+- `gratis_ai_agent_plan_completed` — ekigita kiam plano sukcese finiĝas
+- `gratis_ai_agent_plan_failed` — ekigita kiam plano renkontas nereakireblan eraron
+
+### Filtriloj {#filters}
+
+- `gratis_ai_agent_abilities` — modifi la registritan liston de kapabloj antaŭ ol la agento ŝargas ĝin
+- `gratis_ai_agent_options_blocklist` — etendi aŭ redukti la sekurecan blokliston de opcioj
+- `gratis_ai_agent_benchmark_questions` — aldoni proprajn komparnormajn demandojn al la taksa serio
+- `gratis_ai_agent_plan_plugins` — modifi la liston de malkovro de kromprogramoj dum generado de eja plano
+
+## Subteno {#support}
+
+Por subteno, vizitu [ultimatemultisite.com](https://ultimatemultisite.com) aŭ malfermu problemon en la deponejo de la kromprogramo.
+
+## Ŝanĝprotokolo {#changelog}
+
+Vidu la [Ŝanĝprotokolon](./changelog) por la plena historio de versioj.

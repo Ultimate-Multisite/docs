@@ -3,13 +3,13 @@ title: Jenga Biashara ya Tovuti ya Niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Jenga Biashara ya Tovuti ya Niche kwa Ultimate Multisite
+# Jenga Biashara ya Tovuti ya Niche kwa Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Wengi wanaojaribu kuuza tovuti wanashindana kwa bei na Wix, Squarespace, na wahuru (freelancers) maelfu. Wanashindwa. Wale wanaofanikiwa huchagua hadhira maalum, wanajenga suluhisho lililolenga hadhira hiyo, na wanachukua malipo kwa thamani wanayotoa.
 
 Kozi hii inakufundisha jinsi ya kufanya hivyo hasa kwa kutumia Ultimate Multisite.
 
-## Unachojenga
+## Unachojenga {#what-you-will-build}
 
 Kipindi chote cha kozi hii, utajenga mtandao halisi na unaofanya kazi unaoitwa **FitSite** — jukwaa la tovuti lililojengwa mahsusi kwa ajili ya studio za mazoezi, mafunzo binafsi (personal trainers), na wamiliki wa gym.
 
@@ -23,7 +23,7 @@ Kufika kwenye somo la mwisho, FitSite itakuwa jukwaa kamili la niche lenye:
 
 Utfuata hatua kwa hatua, na mwishoni utakuwa na jukwaa linalofanya kazi pamoja na ujuzi wa kurudia mchakato huu kwa niche yoyote utakayochagua.
 
-## Kwa nini Studio za Mazoezi?
+## Kwa nini Studio za Mazoezi? {#why-fitness-studios}
 
 Tulihitaji mfano halisi ambao mtu yeyote anaweza kufuata. Studio za mazoezi zinafanya kazi kwa sababu:
 
@@ -34,7 +34,7 @@ Tulihitaji mfano halisi ambao mtu yeyote anaweza kufuata. Studio za mazoezi zina
 
 Kila kitu unachojifunza ujenzi wa FitSite kinatumika moja kwa moja kwa niche yoyote utakayochagua: migahawa, wakili wa mali, kampuni za sheria, makanisa, wakandarasi, au sekta yoyote nyingine.
 
-## Muundo wa Kozi
+## Muundo wa Kozi {#course-structure}
 
 Kila somo linatambulisha dhana moja, linaeleza kwa nini ni muhimu, na linakufanya utekelee jinsi ya kuweka dhana hiyo katika mtandao wa FitSite. Kila somo linajenga juu ya somo lililopita.
 
@@ -55,7 +55,7 @@ Kila somo linatambulisha dhana moja, linaeleza kwa nini ni muhimu, na linakufany
 | [13. Scaling Up](lesson-13-growth) | Kukua kutoka kwa wateja wa kwanza hadi biashara halisi | Mkakati wa ukuaji na utoaji kazi wa FitSite |
 | [14. What Comes Next](lesson-14-whats-next) | Kupanuka hadi niches jirani na fursa mpya | Ramani yako ya njia baada ya FitSite |
 
-## Mahitaji ya Awali (Prerequisites)
+## Mahitaji ya Awali (Prerequisites) {#prerequisites}
 
 - Usakinishaji wa WordPress Multisite (au nia ya kuusakinisha)
 - Leseni halisi ya Ultimate Multisite
@@ -63,6 +63,6 @@ Kila somo linatambulisha dhana moja, linaeleza kwa nini ni muhimu, na linakufany
 
 Hakuna coding inayohitajika. Ikiwa hajaitumii Ultimate Multisite hapo awali, hakuna shida — Somo la 3 linaanza na usakinishaji mpya.
 
-## Tayari?
+## Tayari? {#ready}
 
 Anza na [Somo la 1: Why Niche Wins](lesson-1-why-niche).

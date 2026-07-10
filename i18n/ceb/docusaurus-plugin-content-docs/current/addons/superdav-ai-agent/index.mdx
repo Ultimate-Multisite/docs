@@ -1,161 +1,210 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
 
-# Superdav AI Agent
+# Superdav AI Agent {#superdav-ai-agent}
 
-Ang Superdav AI Agent usa ka abante nga WordPress AI assistant nga nagpalapad sa Gratis AI Agent pinaagi sa mga kahanas nga nahibalo sa tema (theme-aware skills), gipauswag nga kakayahan sa pagpangita sa internet, ug gipauswag nga features sa site builder. Ang Version 1.16.0 nagdugang og custom logo generation, palette contrast validation, photo uploads sa discovery interview, structured hospitality menu generation, ug desktop/mobile preview rendering sa Theme Builder.
+Ang Superdav AI Agent usa ka abanteng WordPress AI assistant nga nagpalapad sa Gratis AI Agent gamit ang mga kahanas nga nakasabot sa tema, gipalambo nga mga kapabilidad sa pagpangita sa internet, mga bahin sa paghimo og site, ug opsyonal nga mga integrasyon sa awtomasyon. Ang bersyon 1.18.0 nagdugang og mga himan sa pagbasa sa Google Calendar, pagmapa sa kontak ug tigtambong, mga ganghaan sa pag-apruba sa tawo, pagwagtang sa doble nga mga pahinumdom, TextBee SMS notifications, pinadumala nga Superdav service provisioning, ug usa ka bulag nga giapod-apod nga Advanced companion package para sa kasaligang mga workflow sa developer.
 
-## Key Features (Mga Pangunang Feature)
+## Pangunang mga Bahin {#key-features}
 
-- **Theme-aware skills** — awtomatikong makabag-o sa giya ug kakayahan base sa imong aktibong WordPress theme ug mga i-install nga plugins
-- **Multiple internet search providers** — pagpili tali sa Brave Search ug Tavily alang sa mas adlawon nga resulta sa pagpangita ug abante nga research capabilities
-- **Site builder contact forms** — makahimo og fully functional nga contact form direkta gikan sa chat interface gamit ang imong i-install nga form plugin
-- **Enhanced site builder** — gipauswag nga multi-phase site build plans nga mas maayo sa pagdiskobre sa plugins ug error recovery
-- **Built-in theme skills** — espesyal nga giya alang sa Block Themes, Classic Themes, Kadence Blocks, ug Kadence Theme
-- **Improved WooCommerce integration** — gi-refactor aron mogamit sa native WooCommerce APIs alang sa mas maayo nga pagka-reliable ug compatibility
-- **Automatic provider detection** — awtomatikong makadiskobre ug maka-refresh sa available plugins ug themes kung kini i-activate o i-deactivate
-- **Custom logo generation** — makahimo ug makapakaembed og custom SVG logos nga adunay automatic namespace-safe sanitisation
-- **Palette contrast validation** — pag-check sa mga kolor pair alang sa WCAG accessibility compliance sa dili pa ipatuman sa imong theme
-- **Photo-enhanced discovery** — pag-upload og mga litrato atol sa Theme Builder discovery interview aron maka-impluwensya sa design direction
-- **Hospitality menus** — makahimo og structured nga food ug beverage menu pages alang sa restaurants, cafes, ug hospitality businesses
-- **Desktop and mobile previews** — ma-preview ang imong disenyo sa desktop ug mobile devices atol sa pagpili sa design-direction
-- **Tier 1 site scraping** — ang sd-ai-agent/site-scrape karon available na by default alang sa pag-analisar og competitor ug inspiration websites
+- **Mga kahanas nga nakasabot sa tema** — awtomatikong mopahiangay sa giya ug mga kapabilidad base sa imong aktibong WordPress tema ug na-install nga mga plugin
+- **Daghang tagapanghatag sa pagpangita sa internet** — pagpili tali sa Brave Search ug Tavily para sa mas dato nga mga resulta sa pagpangita ug abanteng mga kapabilidad sa panukiduki
+- **Mga contact form sa site builder** — paghimo og bug-os nga magamit nga mga contact form direkta gikan sa chat interface gamit ang imong na-install nga form plugin
+- **Gipalambo nga site builder** — gipaayo nga daghang-yugto nga mga plano sa paghimo og site nga adunay mas maayong pagdiskobre sa plugin ug pagbawi gikan sa sayop
+- **Built-in nga mga kahanas sa tema** — espesyal nga giya para sa Block Themes, Classic Themes, Kadence Blocks, ug Kadence Theme
+- **Gipaayo nga WooCommerce integration** — gi-refactor aron gamiton ang native nga WooCommerce APIs para sa mas maayong kasaligan ug compatibility
+- **Awtomatikong pag-ila sa provider** — awtomatikong makaila ug mo-refresh sa anaa nga mga plugin ug mga tema kung kini gi-activate o gi-deactivate
+- **Custom nga paghimo og logo** — paghimo ug pag-embed og custom nga SVG logos nga adunay awtomatikong namespace-safe sanitisation
+- **Pag-validate sa contrast sa palette** — susihon ang mga pares sa kolor para sa pagsunod sa WCAG accessibility sa dili pa i-apply sa imong tema
+- **Photo-enhanced discovery** — pag-upload og mga litrato atol sa discovery interview sa Theme Builder aron maimpluwensiyahan ang direksyon sa disenyo
+- **Mga menu sa hospitality** — paghimo og structured nga mga panid sa menu sa pagkaon ug ilimnon para sa mga restawran, cafe, ug mga negosyo sa hospitality
+- **Mga preview sa desktop ug mobile** — i-preview ang imong disenyo sa desktop ug mobile nga mga device atol sa pagpili sa direksyon sa disenyo
+- **Tier 1 nga site scraping** — sd-ai-agent/site-scrape anaa na karon isip default para sa pag-analisar sa mga website sa kakompetensya ug inspirasyon
+- **Mga himan sa pagbasa sa Google Calendar** — pagbasa sa na-configure nga mga kalendaryo ug mga event aron ang mga awtomasyon makapangatarungan bahin sa umaabot nga konteksto sa iskedyul
+- **Pagmapa sa kontak ug tigtambong** — ipares ang mga partisipante sa kalendaryo sa nailhang mga user ug kontak sa site sa dili pa maghimo og follow-up nga trabaho
+- **Mga ganghaan sa pag-apruba sa tawo** — ipahunong ang sensitibong mga awtomasyon para sa pagribyu sa dili pa magpadala og mga mensahe, mopadayon sa trabaho, o mohimo og mga kausaban
+- **Mga rekord sa pahinumdom ug pagwagtang sa doble** — subaya ang mga pahinumdom nga napadala na aron ang balik-balik nga pagpadagan sa awtomasyon dili magpahibalo sa parehas nga tigdawat kaduha
+- **TextBee SMS notifications** — magpadala og na-configure nga text-message notifications pinaagi sa TextBee kung gi-enable ang usa ka SMS provider
+- **Pinadumala nga Superdav service provisioning** — ikonektar ang suportadong mga site sa hosted nga Superdav endpoints gamit ang awtomatikong setup imbes nga manwal nga endpoint configuration
+- **Advanced companion package** — bulag nga giapod-apod nga mga himan sa kasaligang developer para sa filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, user-management, ug benchmark workflows
 
-## Requirements (Mga Kinahanglanon)
+## Mga Kinahanglanon {#requirements}
 
-- WordPress 6.0 or higher
-- PHP 8.1 or higher
-- WordPress Multisite (network-activated) or single-site installation
-- An active AI provider connector plugin (Anthropic, OpenAI, or compatible)
-- Gratis AI Agent v1.9.0 or higher (Superdav AI Agent extends Gratis AI Agent)
+- WordPress 6.0 o mas taas
+- PHP 8.1 o mas taas
+- WordPress Multisite (network-activated) o single-site nga installation
+- Usa ka aktibong AI provider connector plugin (Anthropic, OpenAI, o compatible)
+- Gratis AI Agent v1.9.0 o mas taas (ang Superdav AI Agent nagpalapad sa Gratis AI Agent)
 
-## Installation (Pagsulod/Pag-install)
+## Pag-install {#installation}
 
-1. I-upload ang mga plugin files ngadto sa `/wp-content/plugins/superdav-ai-agent`
+1. I-upload ang mga file sa plugin ngadto sa `/wp-content/plugins/superdav-ai-agent`
 2. I-activate ang plugin pinaagi sa **Plugins** screen sa WordPress
-3. Siguroha nga naka-activate usab ang Gratis AI Agent
-4. Adto sa **Gratis AI Agent → Settings** ug i-configure ang imong internet search provider (optional)
+3. Siguroa nga ang Gratis AI Agent gi-activate usab
+4. Adto sa **Gratis AI Agent → Settings** ug i-configure ang imong internet search provider, pinadumala nga Superdav service connection, Google Calendar, o TextBee credentials sumala sa gikinahanglan
 
-## Quick Start (Paspas nga Pagsugod)
+Ang WordPress.org package naglangkob sa mga core nga bahin sa Superdav AI Agent. Ang Advanced companion package gitukod ug giapod-apod nga bulag para sa mga environment diin ang kasaligang developer tools hayag nga gi-install ug gi-awtorisar.
 
-Pagka-activate, awtomatikong gipauswag sa Superdav AI Agent ang imong Gratis AI Agent installation gamit ang theme-aware skills ug dugang mga kakayahan. Ablihi ang **Gratis AI Agent** panel sa WordPress admin sidebar ug sugdi na paggamit sa bag-ong features.
+## Daliang Pagsugod {#quick-start}
 
-**Example instructions (Mga Pananglitan nga Instruksyon):**
+Kung ma-activate na, awtomatikong palambuon sa Superdav AI Agent ang imong Gratis AI Agent installation gamit ang mga kahanas nga nakasabot sa tema ug dugang nga mga kapabilidad. Ablihi ang **Gratis AI Agent** panel sa WordPress admin sidebar ug sugdi paggamit ang bag-ong mga bahin.
 
-```
-Add a contact form to the Contact page.
-```
+**Pananglitan nga mga instruksyon:**
 
 ```
-Search the web for the latest WordPress security best practices.
+Pagdugang og contact form sa Contact page.
 ```
 
 ```
-Create a hero section using the active theme's block patterns.
+Pangitaa sa web ang pinakabag-ong labing maayong mga praktis sa seguridad sa WordPress.
 ```
 
-## Theme-Aware Skills (Mga Kahanas Nga Nahibalo sa Tema)
+```
+Paghimo og hero section gamit ang mga block pattern sa aktibong tema.
+```
 
-Awtomatikong makadiskobre ang Superdav AI Agent sa imong aktibong theme ug i-install nga plugins, paglo-load sa tukmang theme-aware skill ngadto sa context sa assistant. Naglakip ang available skills:
+```
+Ribyuha ang na-configure nga mga event sa Google Calendar ugma ug pag-draft og mga pahinumdom para sa mga tigtambong.
+```
 
-| Skill | Applies To (Para Kinsa) |
+```
+Pagpadala og SMS reminder pagkahuman nako maaprubahan ang mensahe.
+```
+
+## Mga Kahanas nga Nakasabot sa Tema {#theme-aware-skills}
+
+Awtomatikong makaila ang Superdav AI Agent sa imong aktibong tema ug na-install nga mga plugin, ug ikarga ang angay nga kahanas nga nakasabot sa tema ngadto sa konteksto sa assistant. Ang anaa nga mga kahanas naglakip sa:
+
+| Kahanas | Moaplikar Sa |
 |---|---|
 | **Block Themes** | Mga tema nga naggamit sa WordPress block-based (Full Site Editing) architecture |
-| **Classic Themes** | Tradisyonal nga mga tema sa WordPress nga naggamit og PHP templates ug ang classic editor |
-| **Kadence Blocks** | Mga site nga naka-active sa Kadence Blocks plugin |
-| **Kadence Theme** | Mga site nga adunay Kadence theme isip aktibong tema |
+| **Classic Themes** | Tradisyonal nga WordPress themes nga naggamit og PHP templates ug classic editor |
+| **Kadence Blocks** | Mga site nga aktibo ang Kadence Blocks plugin |
+| **Kadence Theme** | Mga site nga ang Kadence theme mao ang aktibong tema |
 
-Tan-awa ang [Theme-Aware Skills](../../user-guide/configuration/theme-aware-skills) alang sa detalyado nga giya sa matag skill.
+Tan-awa ang [Mga Kahanas nga Nakasabot sa Tema](../../user-guide/configuration/theme-aware-skills) para sa detalyadong giya sa matag kahanas.
 
-## Internet Search Providers (Mga Naghatag og Pagpangita sa Internet)
+## Mga Tagapanghatag sa Pagpangita sa Internet {#internet-search-providers}
 
-Ang Superdav AI Agent v1.10.0 nagdugang og **Tavily** isip alternatibo sa Brave Search alang sa mga internet search queries. Ang duha ka providers nagtanyag og real-time nga resulta sa pagpangita ug mahimo kining i-configure sa **Gratis AI Agent → Settings → Advanced**.
+Ang Superdav AI Agent v1.10.0 nagdugang sa **Tavily** isip alternatibo sa Brave Search para sa mga pangutana sa pagpangita sa internet. Ang duha ka provider nagtanyag og real-time nga mga resulta sa pagpangita ug mahimong i-configure sa **Gratis AI Agent → Settings → Advanced**.
 
-| Provider | Features (Mga Feature) | Setup (Pag-set up) |
+| Provider | Mga Feature | Setup |
 |---|---|---|
-| **Brave Search** | Paspas, privacy-focused search results | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Richer search results, advanced research capabilities | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Paspas, nakapokus sa pribasiya nga mga resulta sa pagpangita | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Mas daghang resulta sa pagpangita, abanteng mga kapabilidad sa panukiduki | [Tavily API](https://tavily.com/) |
 
-Tan-awa ang [Internet Search](../../user-guide/configuration/internet-search) alang sa mga instruksyon sa pag-configure.
+Tan-awa ang [Internet Search](../../user-guide/configuration/internet-search) para sa mga instruksiyon sa configuration.
 
-## Site Builder Contact Forms (Mga Contact Form sa Site Builder)
+## Mga Workflow sa Kalendaryo, Pag-apruba, ug Abiso {#calendar-approval-and-notification-workflows}
 
-Ang Site Builder agent makahimo na og contact forms direkta gikan sa chat interface. Ipa-ingon lang sa Site Builder nga maghimo og contact form, ug awtomatiko kining makadiskobre sa imong i-install nga form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms) ug makamugna og ready-to-use nga form.
+Ang Superdav AI Agent v1.18.0 nagpalapad sa mga workflow sa automation lapas sa mga buluhaton sa sulod ug paghimo og site:
 
-Tan-awa ang [Site Builder Contact Forms](../../user-guide/administration/site-builder-contact-forms) alang sa detalyado nga giya.
+- Ang **Google Calendar tools** nagtugot sa agent nga mobasa sa naka-configure nga mga kalendaryo ug mga detalye sa event kung anaa ang mga credential sa kalendaryo.
+- Ang **mga helper sa kontak ug attendee** nagmapa sa mga partisipante sa event ngadto sa WordPress nga mga user o nailhang mga kontak sa dili pa mag-andam og mga pahinumdom o follow-up nga mga buluhaton.
+- Ang **mga gate sa pag-apruba sa tawo** nagtugot sa automation nga mohunong hangtod ang usa ka awtorisadong user makarebyu sa gisugyot nga aksiyon.
+- Ang **mga rekord sa pahinumdom** mopugong sa doble nga mga pahinumdom sa kalendaryo o abiso kung ang automation sulayan pag-usab o balik-balik nga i-iskedyul.
+- Ang **TextBee SMS support** nagpaandar og mga abiso pinaagi sa text-message kung naka-configure ang TextBee provider.
 
-## Theme Builder Features (Mga Feature sa Theme Builder)
+Gamita kini nga mga himan para sa tabang nga nahibalo sa eskedyul, follow-up sa attendee, ug mga workflow sa pahinumdom nga nagkinahanglan gihapon og rebyu sa tawo sa dili pa ipadala ang sensitibong mga mensahe.
 
-Ang Theme Builder sa Superdav AI Agent v1.16.0 naglakip og gamhanan ug bag-ong mga kakayahan:
+## Mga Contact Form sa Site Builder {#site-builder-contact-forms}
 
-### Discovery Interview with Photo Upload (Discovery Interview uban ang Pag-upload og Litrato)
+Ang Site Builder agent makahimo na karon og mga contact form direkta gikan sa chat interface. Pangayoa lang sa Site Builder nga mohimo og contact form, ug awtomatiko niyang mailhan ang imong na-install nga form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms) ug mag-generate og form nga andam gamiton.
 
-Ang Theme Builder discovery interview karon adunay photo upload step diin makahatag ka og visual inspiration. I-upload ang mga litrato sa imong brand, competitor sites, o design inspiration aron matabang ang Theme Builder nga masabtan ang imong design direction.
+Tan-awa ang [Mga Contact Form sa Site Builder](../../user-guide/administration/site-builder-contact-forms) para sa detalyadong giya.
 
-Tan-awa ang [Discovery Interview](./theme-builder/discovery-interview.md) alang sa detalyado nga giya.
+## Mga Feature sa Theme Builder {#theme-builder-features}
 
-### Design Direction with Desktop and Mobile Previews (Design Direction uban ang Desktop ug Mobile Previews)
+Ang Theme Builder sa Superdav AI Agent v1.16.0 naglakip og kusganong bag-ong mga kapabilidad:
 
-Reviewa ang imong disenyo sa parehong desktop ug mobile devices sa dili pa makamugna og kompleto nga theme ang Theme Builder. Tan-awa ang real-time previews sa daghang responsive breakpoints.
+### Discovery Interview nga adunay Photo Upload {#discovery-interview-with-photo-upload}
 
-Tan-awa ang [Design Direction](./theme-builder/design-direction.md) alang sa detalyado nga giya.
+Ang discovery interview sa Theme Builder karon naglakip og lakang sa pag-upload og litrato diin makahatag ka og biswal nga inspirasyon. Pag-upload og mga litrato sa imong brand, mga site sa kompetensya, o inspirasyon sa disenyo aron matabangan ang Theme Builder nga masabtan ang imong direksiyon sa disenyo.
 
-### Hospitality Menus (Mga Menu sa Hospitality)
+Tan-awa ang [Discovery Interview](./theme-builder/discovery-interview.md) para sa detalyadong giya.
 
-Ang Theme Builder makamugna na og structured food ug beverage menu pages alang sa restaurants, cafes, bars, ug uban pang hospitality businesses. Naglakip ang mga menu og pagpresyo, descriptions, dietary information, ug allergen warnings.
+### Direksiyon sa Disenyo nga adunay Desktop ug Mobile nga mga Preview {#design-direction-with-desktop-and-mobile-previews}
 
-Tan-awa ang [Hospitality Menus](./theme-builder/hospitality-menus.md) alang sa detalyado nga giya.
+Rebyuha ang imong disenyo sa desktop ug mobile nga mga device sa dili pa mag-generate ang Theme Builder sa imong kompleto nga theme. Tan-awa ang mga real-time nga preview sa daghang responsive breakpoint.
 
-### New Abilities (Bag-ong Kakayahan)
+Tan-awa ang [Direksiyon sa Disenyo](./theme-builder/design-direction.md) para sa detalyadong giya.
 
-- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — makahimo og custom SVG logos nga adunay automatic sanitisation
-- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — pag-check sa mga kolor pair alang sa WCAG compliance
-- **[Create Menu](./abilities/create-menu.md)** — makahimo og navigation menus nga adunay klaro nga navigation labels
+### Mga Menu sa Hospitality {#hospitality-menus}
 
-Tan-awa ang [Tools and Configuration](./theme-builder/tools.md) alang sa impormasyon bahin sa available tools ug sa Tier 1 site-scrape tool.
+Ang Theme Builder makahimo na karon og structured nga mga panid sa menu sa pagkaon ug ilimnon para sa mga restawran, cafe, bar, ug uban pang negosyo sa hospitality. Ang mga menu naglakip sa presyo, mga deskripsiyon, impormasyon sa pagkaon, ug mga pasidaan sa allergen.
 
-## Configuration (Pag-configure)
+Tan-awa ang [Mga Menu sa Hospitality](./theme-builder/hospitality-menus.md) para sa detalyadong giya.
 
-Ang tanang settings anaa sa **Gratis AI Agent → Settings** sa WordPress admin. Ang Superdav AI Agent nagdugang sa mosunod nga mga configuration options:
+### Bag-ong mga Abilidad {#new-abilities}
 
-| Setting | Description (Deskripsyon) |
+- **[Generate Logo SVG](./abilities/generate-logo-svg.md)** — paghimo og custom nga mga SVG logo nga adunay awtomatikong sanitisation
+- **[Validate Palette Contrast](./abilities/validate-palette-contrast.md)** — pagsusi sa mga pares sa kolor para sa pagsunod sa WCAG
+- **[Create Menu](./abilities/create-menu.md)** — paghimo og mga navigation menu nga adunay lahi-lahi nga mga label sa navigation
+
+Tan-awa ang [Mga Himoan ug Configuration](./theme-builder/tools.md) para sa impormasyon bahin sa anaa nga mga himan ug sa Tier 1 site-scrape tool.
+
+## Configuration {#configuration}
+
+Ang tanang setting naa sa ilawom sa **Gratis AI Agent → Settings** sa WordPress admin. Ang Superdav AI Agent nagdugang sa mosunod nga mga opsiyon sa configuration:
+
+| Setting | Deskripsiyon |
 |---|---|
-| **Internet Search Provider** | Pagpili tali sa Brave Search ug Tavily (optional) |
-| **Tavily API Key** | API key alang sa Tavily internet search (kung gipili ang Tavily) |
+| **Internet Search Provider** | Pagpili tali sa Brave Search ug Tavily (opsiyonal) |
+| **Tavily API Key** | API key para sa Tavily internet search (kung gipili ang Tavily) |
+| **Managed Superdav Service** | Ikonektar ang gisuportahang mga site ngadto sa hosted Superdav service nga adunay awtomatikong endpoint provisioning |
+| **Google Calendar Credentials** | I-configure ang access sa kalendaryo aron makabasa ang agent sa mga kalendaryo ug event |
+| **TextBee SMS Provider** | I-configure ang TextBee credentials para sa giaprobahang mga workflow sa SMS notification |
 
-## Improvements in v1.16.0 (Mga Pagpauswag sa v1.16.0)
+## Abanteng Companion Package {#advanced-companion-package}
 
-- **AI Client cache** — karon gi-back up sa transients para sa cross-request persistence, nga makapugong sa pagkawala sa data sa mga agent tasks nga dugay kaayo ang pagpadagan
-- **Tier 1 site-scrape tool** — ang sd-ai-agent/site-scrape karon available by default sa Theme Builder alang sa pag-analisar og competitor ug inspiration websites
-- **Plugin row action links** — gi-correct ug giusab ang ngalan aron mas klaro
+Ang Superdav AI Agent v1.18.0 nagdugang og gilain nga gipang-apod-apod nga Advanced companion package para sa kasaligang mga workflow sa developer. Kini nga mga kapabilidad wala gi-bundle sa WordPress.org core package. I-install ang companion package lamang sa mga site diin ang mga administrator hayagang misalig sa agent nga maka-access sa developer tooling.
 
-## Improvements in v1.10.0 (Mga Pagpauswag sa v1.10.0)
+Ang Advanced tools naglakip sa mga operasyon sa filesystem, access sa database, WP-CLI, REST dispatcher workflows, plugin builder utilities, git snapshots, user-management helpers, ug benchmark tooling. Ibutang kini nga mga himan nga limitado lamang sa kasaligang mga administrator ug rebyuha ang approval-gate configuration sa dili pa kini i-enable sa production nga mga site.
 
-- **WooCommerce integration refactored** — karon naggamit na og native WooCommerce APIs alang sa mas maayo nga pagka-reliable ug compatibility
-- **Provider list auto-refresh** — awtomatikong makadiskobre kung ang mga plugins gi-activate o i-deactivate ug maka-update sa available provider list
-- **Enhanced site builder** — gipauswag nga multi-phase site build plans nga mas maayo sa error recovery
-- **Theme-aware skills** — upat ka bag-ong built-in skills nga awtomatikong makabag-o sa imong aktibong tema
+## Mga Pagpaayo sa v1.18.0 {#improvements-in-v1180}
 
-## Bug Fixes in v1.10.0 (Pag-ayo sa mga Bug sa v1.10.0)
+- **Google Calendar support** — pagbasa sa naka-configure nga mga kalendaryo ug event para sa mga automation nga nahibalo sa eskedyul
+- **Pagmapa sa kontak ug attendee** — ipares ang mga partisipante sa kalendaryo sa mga user ug kontak sa site
+- **Mga gate sa pag-apruba sa tawo** — pahununonga ang sensitibong mga automation para sa rebyu sa dili pa magpadayon
+- **Deduplication sa pahinumdom** — irekord ang mga pahinumdom aron malikayan ang doble nga mga abiso sa mga retry o balik-balik nga mga dagan
+- **TextBee SMS provider** — ipadala ang naka-configure nga mga abiso sa text-message human sa gikinahanglang mga pag-apruba
+- **Managed Superdav service setup** — awtomatikong mag-provision og hosted service endpoints para sa gisuportahang mga site
+- **Advanced companion distribution** — imantala ang mga himan sa kasaligang developer nga gilain gikan sa WordPress.org core build
+- **Mga ayos sa kasaligan** — pagpaayo sa pagpili sa model, mga timeout sa request, default setup model handling, reasoning-text handling, retry guidance, calendar token hardening, reminder hardening, onboarding launches, confirmed ability resumes, ug mga isyu sa rebyu sa WordPress.org packaging
 
-- Gi-ayo ang `navigate-to` ability nga nakahatag og infinite reload loops sa pipila ka admin pages
-- Gi-ayo ang `list-posts` ability nga wala maayo pagresolba sa category ug tag names ngadto sa slugs
-- Gi-ayo ang WP-CLI commands nga nawala ang namespace aliases human sa usa ka miaging refactor
-- Gi-ayo ang event automation nga malampuson nga makatrato sa mga site diin ang automation tables wala pa mahimo
-- Gi-ayo ang `memory-save` ability nga naggamit og saktong namespace prefix sa system instruction builder
-- Gi-ayo ang scalar tool results nga maayo pagka-wrap sa dili pa ihatag ngadto sa AI
-- Gi-ayo ang usage statistics nga husto pagtratar sa legacy ability key format sa upgrade gikan sa mas karaan nga mga bersyon
+## Mga Pagpaayo sa v1.16.0 {#improvements-in-v1160}
 
-## Support (Suporta)
+- **AI Client cache** — karon gisuportahan sa transients alang sa cross-request persistence, nga nagpugong sa pagkawala sa datos sa dugay nga nagdagan nga mga buluhaton sa agent
+- **Tier 1 site-scrape tool** — ang sd-ai-agent/site-scrape anaa na karon pinaagi sa default sa Theme Builder alang sa pag-analisa sa mga website sa kakompetensya ug inspirasyon
+- **Plugin row action links** — gitul-id ug giusab ang ngalan alang sa katin-awan
 
-Alang sa suporta, bisita sa [ultimatemultisite.com](https://ultimatemultisite.com) o ablihi ang usa ka issue sa plugin repository.
+## Mga Pagpaayo sa v1.10.0 {#improvements-in-v1100}
 
-## Changelog (History sa Pagbag-o)
+- **WooCommerce integration gi-refactor** — karon naggamit sa native nga WooCommerce APIs alang sa mas maayong kasaligan ug compatibility
+- **Provider list auto-refresh** — awtomatikong makamatikod kung ang mga plugin gi-activate o gi-deactivate ug mag-update sa available nga listahan sa provider
+- **Gipauswag nga site builder** — gipauswag nga multi-phase nga mga plano sa pagtukod sa site nga adunay mas maayong pagbawi gikan sa sayop
+- **Theme-aware skills** — upat ka bag-ong built-in nga skills nga awtomatikong moangay sa imong aktibong theme
 
-Tan-awa ang [Changelog](./changelog) alang sa kompleto nga version history.
+## Mga Bug Fix sa v1.10.0 {#bug-fixes-in-v1100}
+
+- Giayo ang `navigate-to` ability nga hinungdan sa walay kataposang reload loops sa pipila ka admin pages
+- Giayo ang `list-posts` ability nga dili husto nga nag-resolve sa category ug tag names ngadto sa slugs
+- Giayo ang WP-CLI commands nga nawala ang namespace aliases human sa miaging refactor
+- Giayo ang event automation nga hapsay nga nagdumala sa mga site diin ang automation tables wala pa nahimo
+- Giayo ang `memory-save` ability nga naggamit sa hustong namespace prefix sa system instruction builder
+- Giayo ang scalar tool results nga husto nga gi-wrap sa wala pa ibalik ngadto sa AI
+- Giayo ang usage statistics nga husto nga nagdumala sa legacy ability key format sa upgrade gikan sa mas daang mga bersyon
+
+## Suporta {#support}
+
+Alang sa suporta, bisitaha ang [ultimatemultisite.com](https://ultimatemultisite.com) o ablihi ang issue sa plugin repository.
+
+## Changelog {#changelog}
+
+Tan-awa ang [Changelog](./changelog) alang sa kompleto nga kasaysayan sa bersyon.

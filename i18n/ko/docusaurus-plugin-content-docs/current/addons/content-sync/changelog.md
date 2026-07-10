@@ -3,9 +3,9 @@ title: 콘텐츠 동기화 변경 로그
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# 콘텐츠 동기화 변경 로그
+# 콘텐츠 동기화 변경 로그 {#content-sync-changelog}
 
-### 버전 1.1.0 - 2025-12-31에 출시
+### 버전 1.1.0 - 2025-12-31에 출시 {#version-110---released-on-2025-12-31}
 * New: 모든 포스트 유형(게시물, 페이지, 사용자 정의 포스트 유형)의 동기화 지원
 * New: 콘텐츠 선택 단계에서 포스트 유형 필터링
 * New: 소스 사이트 선택 단계 - 메인 사이트뿐 아니라 모든 사이트에서 동기화
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Changed: "Select Templates" 단계가 "Select Data"로 이름 변경
 * Improved: Elementor-specific 코드가 이제 elementor_library 포스트 유형에만 실행
 
-### 버전 1.0.0 - 2025-12-19에 출시
+### 버전 1.0.0 - 2025-12-19에 출시 {#version-100---released-on-2025-12-19}
 * Initial release
 * 템플릿 및 사이트 선택을 위한 다단계 마법사
 * 실시간 진행 상황 피드백이 있는 일괄 처리

@@ -3,15 +3,15 @@ title: Menu Hospitaliti
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Hospitaliti
+# Menu Hospitaliti {#hospitality-menus}
 
 Ciri **Menu Hospitaliti** membolehkan Theme Builder menjana dan menyematkan halaman menu makanan dan minuman yang berstruktur terus ke laman web WordPress anda.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Theme Builder kini boleh mencipta halaman menu yang profesional dan berstruktur untuk perniagaan hospitaliti, termasuk restoran, kafe, bar, dan perkhidmatan katering. Menu-menu ini bersepadu sepenuhnya dengan reka bentuk laman web anda dan boleh dikemas kini serta diuruskan dengan mudah.
 
-## Jenis Hospitaliti yang Disokong
+## Jenis Hospitaliti yang Disokong {#supported-hospitality-types}
 
 - **Restoran** — menu makan malam penuh perkhidmatan
 - **Kafe** — menu kopi dan makanan ringan
@@ -21,9 +21,9 @@ Theme Builder kini boleh mencipta halaman menu yang profesional dan berstruktur 
 - **Food Trucks** — menu perkhidmatan makanan mudah alih
 - **Kedai Bir dan Ladang Wain** — menu minuman dengan penerangan
 
-## Struktur Menu
+## Struktur Menu {#menu-structure}
 
-### Kategori Menu
+### Kategori Menu {#menu-categories}
 
 Menu disusun mengikut kategori:
 
@@ -34,7 +34,7 @@ Menu disusun mengikut kategori:
 - **Minuman** — minuman (beralkohol dan tidak beralkohol)
 - **Istimewa** — istimewa harian atau bermusim
 
-### Format Item Menu
+### Format Item Menu {#menu-item-format}
 
 Setiap item menu merangkumi:
 
@@ -49,7 +49,7 @@ Setiap item menu merangkumi:
 }
 ```
 
-#### Medan Item
+#### Medan Item {#item-fields}
 
 | Medan | Jenis | Penerangan |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Setiap item menu merangkumi:
 | `allergens` | array | Alergen biasa (Kacang, Shellfish, dsb.) |
 | `availability` | string | Bila tersedia (Harian, Bermusim, dsb.) |
 
-## Mencipta Menu Hospitaliti
+## Mencipta Menu Hospitaliti {#creating-hospitality-menus}
 
-### Langkah 1: Berikan Maklumat Menu
+### Langkah 1: Berikan Maklumat Menu {#step-1-provide-menu-information}
 
 Beritahu Theme Builder tentang menu anda:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Langkah 2: Theme Builder Menjana Menu
+### Langkah 2: Theme Builder Menjana Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Memformatkan harga dan penerangan
 5. Menambah maklumat diet dan alergen
 
-### Langkah 3: Semak dan Sesuaikan
+### Langkah 3: Semak dan Sesuaikan {#step-3-review-and-customize}
 
 Anda boleh:
 
@@ -91,9 +91,9 @@ Anda boleh:
 4. Mengemas kini penerangan dan maklumat diet
 5. Melaraskan gaya dan susun atur
 
-## Pilihan Paparan Menu
+## Pilihan Paparan Menu {#menu-display-options}
 
-### Halaman Menu Penuh
+### Halaman Menu Penuh {#full-menu-page}
 
 Halaman khusus yang memaparkan menu lengkap anda:
 
@@ -102,7 +102,7 @@ Halaman khusus yang memaparkan menu lengkap anda:
 - Susun atur mesra cetak
 - Reka bentuk responsif mudah alih
 
-### Widget Menu
+### Widget Menu {#menu-widget}
 
 Sematkan bahagian menu pada halaman lain:
 
@@ -111,7 +111,7 @@ Sematkan bahagian menu pada halaman lain:
 - Menu minuman di halaman bar
 - Paparan pencuci mulut di footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Jana menu PDF yang boleh dimuat turun:
 
@@ -120,9 +120,9 @@ Jana menu PDF yang boleh dimuat turun:
 - Merangkumi imej dan penerangan
 - Mudah dikongsi dan dihantar melalui e-mel
 
-## Maklumat Diet dan Alergen
+## Maklumat Diet dan Alergen {#dietary-and-allergen-information}
 
-### Atribut Diet
+### Atribut Diet {#dietary-attributes}
 
 Tandakan item dengan maklumat diet:
 
@@ -134,7 +134,7 @@ Tandakan item dengan maklumat diet:
 - **Low-Carb** — karbohidrat yang dikurangkan
 - **High-Protein** — kaya protein
 
-### Amaran Alergen
+### Amaran Alergen {#allergen-warnings}
 
 Sertakan alergen biasa:
 
@@ -147,9 +147,9 @@ Sertakan alergen biasa:
 - **Gluten** — gandum dan bijirin mengandungi gluten
 - **Sesame** — biji dan minyak biji sesam
 
-## Pengurusan Menu
+## Pengurusan Menu {#menu-management}
 
-### Mengemas Kini Harga
+### Mengemas Kini Harga {#updating-prices}
 
 Kemas kini harga menu dengan mudah:
 
@@ -159,7 +159,7 @@ Kemas kini harga menu dengan mudah:
 4. Simpan perubahan
 5. Perubahan akan muncul serta-merta di laman web anda
 
-### Menambah Item Bermusim
+### Menambah Item Bermusim {#adding-seasonal-items}
 
 Cipta variasi menu bermusim:
 
@@ -169,7 +169,7 @@ Cipta variasi menu bermusim:
 4. Jadualkan tarikh ketersediaan
 5. Dipaparkan secara automatik semasa musim
 
-### Menguruskan Istimewa
+### Menguruskan Istimewa {#managing-specials}
 
 Paparkan istimewa harian atau mingguan:
 
@@ -179,7 +179,7 @@ Paparkan istimewa harian atau mingguan:
 4. Kemas kini harian atau mingguan
 5. Arkibkan istimewa lama
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Apabila menggunakan Theme Builder untuk laman hospitaliti:
 
@@ -189,9 +189,9 @@ Apabila menggunakan Theme Builder untuk laman hospitaliti:
 4. **Pengoptimuman mudah alih** — menu dipaparkan dengan cantik pada telefon
 5. **Pengoptimuman SEO** — menu mesra enjin carian
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
-### Reka Bentuk Menu
+### Reka Bentuk Menu {#menu-design}
 
 - **Organisasi yang jelas** — struktur kategori yang logik
 - **Penerangan yang mudah dibaca** — menyelerakan dan informatif
@@ -199,7 +199,7 @@ Apabila menggunakan Theme Builder untuk laman hospitaliti:
 - **Foto profesional** — imej makanan berkualiti tinggi
 - **Ruang kosong** — jangan sesakkan halaman
 
-### Kandungan
+### Kandungan {#content}
 
 - **Penerangan yang tepat** — huraikan item dengan tepat
 - **Sorot istimewa** — jadikan istimewa menonjol
@@ -207,7 +207,7 @@ Apabila menggunakan Theme Builder untuk laman hospitaliti:
 - **Kemas kini secara berkala** — kekalkan harga dan item terkini
 - **Gunakan bahasa yang menyelerakan** — buat item kedengaran lazat
 
-### Kebolehcapaian
+### Kebolehcapaian {#accessibility}
 
 - **Font yang mudah dibaca** — gunakan jenis fon yang jelas dan mudah dibaca
 - **Kontras yang mencukupi** — pastikan teks mudah dibaca
@@ -215,9 +215,9 @@ Apabila menggunakan Theme Builder untuk laman hospitaliti:
 - **Amaran alergen** — paparkan alergen dengan jelas
 - **Mesra mudah alih** — uji pada semua peranti
 
-## Contoh
+## Contoh {#examples}
 
-### Struktur Menu Restoran
+### Struktur Menu Restoran {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Struktur Menu Kafe
+### Struktur Menu Kafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Ciri Berkaitan
+## Ciri Berkaitan {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — cipta menu navigasi
 - [Design Direction](./design-direction.md) — sesuaikan reka bentuk laman web anda

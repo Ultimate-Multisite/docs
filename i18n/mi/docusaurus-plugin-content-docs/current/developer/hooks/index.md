@@ -1,0 +1,194 @@
+---
+title: Tohutoro Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Tohutoro Hooks {#hooks-reference}
+
+He tuhinga i hanga-aunoa mō ngā **action 59** katoa me ngā **filter 118** katoa i Ultimate Multisite.
+
+## Actions {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Ka whakahohe i mua i te anga whakamana.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Ka whakahohe tonu i mua i te whakatakotanga o te pihikete whakamana.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Ka whakahohe tonu i mua i te whakatakotanga o te pihikete whakamana takiuru.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ka tuku i ngā kaiwhakawhanake kia tāpiri i ā rātou ake whakaurunga kaiwhakarato hautū mā ngā plugin wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Ka whakaoho ina kua utaina ngā whakawhirinakitanga katoa
+- [wu_activation](./Actions/wu_activation) — Ka tuku i ētahi atu wāhanga o te plugin kia whakapiri i ā rātou tukanga mō te whakahohe
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ka tuku i ngā kaiwhakawhanake plugin kia here i ngā taumahi i muri i te huri a tētahi kaiwhakamahi, super admin rānei, i te tātauira pae
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — I ētahi wā, me uta e tātou he kaha anō hei whakahaere i ngā mahi.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Ka whakahohe i mua i te tukatuka i te tono rapu.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ka tuku i ngā kaiwhakawhanake kia mahi i ētahi atu panonitanga ki te ahanoa checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ka tuku i ngā kaiwhakawhanake kia mahi i ētahi atu panonitanga ki te ahanoa checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Ka whakahohe i mua i te tāpiritanga o tētahi āpure ki te puka checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ka tuku i ngā kaiwhakawhanake kia whakaoho i ētahi atu hook.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — I mua i tā tātou tukatuka i te checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Ka whakahohe i muri i te whakahiatotanga katoa o te ota checkout.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri widget ki te Paewhiri Dashboard Whatunga.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri widget ki te Paewhiri Dashboard Whatunga.
+- [wu_deactivation](./Actions/wu_deactivation) — Ka tuku i ētahi atu wāhanga o te plugin kia whakapiri i ā rātou tukanga mō te whakakore whakahohe
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri mahi ki te tukanga muku
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Ka whakahohe ina riro tētahi rohe hei rohe matua mō tētahi pae.
+- [wu_domain_created](./Actions/wu_domain_created) — Ka whakaoho ina tāpirihia tētahi mahere rohe hou.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — I whakahohea i muri i te utanga o tō mātou Mahere Rohe matua
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ka tiaki ētahi plugin i te URL i mua i te hohe o te mahere, ka hanga rānei i ngā URL mā tētahi ara kē kāore i whakaurua ki
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ka tuku i ngā kaiwhakawhanake kia here i muri i te pānga o tētahi tāruaruatanga pae.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri hook anō
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook ki te horoi anō
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Ka whakahohe i mua i te whakahaere i te tono modal tāpiri rohe hou.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ka tuku i ngā kaiwhakawhanake plugin kia tiaki raraunga meta mā ngā ara rerekē mēnā e hiahia ana rātou.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ka tuku i ngā kaiwhakawhanake plugin kia tiaki raraunga meta kaiwhakamahi mā ngā ara rerekē mēnā e hiahia ana rātou.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Ka whakahohe ina tūtaki ki tētahi token magic link muhu.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Ka whakahohe i muri i te takiurutanga o tētahi kaiwhakamahi mā magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ka tuku i ngā kaiwhakawhanake plugin kia mahi i ētahi atu mea ina tāpirihia te kiritaki.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Ka whakahohe i muri i te rēhitatanga o ngā āheinga MCP mō tētahi hinonga.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Ka whakahohe i muri i te tīmatanga o te urutau MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Ka whakaoho i muri i te whakakorenga o te mematanga.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Ka whakaoho i muri i te whakahoutanga o te mematanga.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Ka whakaoho i mua i te whakakorenga o te mematanga.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Ka whakaoho i mua i te whakahoutanga o te mematanga.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Ka whakahohe i muri i te rokirokitanga o tētahi ahanoa ki te pātengi raraunga.
+- [wu_page_added](./Actions/wu_page_added) — Ka tuku i ngā kaiwhakawhanake plugin kia whakahaere i ētahi atu mea ina rēhitatia ngā whārangi.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri ihirangi anō i muri i tā mātou tā i te whārangi
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri ihirangi anō i mua i tā mātou tā i te whārangi.
+- [wu_page_load](./Actions/wu_page_load) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri hook anō ki ā mātou whārangi.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri ihirangi anō i muri i tā mātou tā i te whārangi
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri ihirangi anō i mua i tā mātou tā i te whārangi.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ka tuku i ngā kaiwhakawhanake plugin kia tāpiri hook anō ki ā mātou whārangi.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Ka whakahohe i muri i te rēhitatanga o ngā widget mō tēnei whārangi.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Ka whakaoho kia āhei ai ngā addons ki te whakapiri i ngā kōwae āheinga ki ngā integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Ka whakaoho kia āhei ai ngā integrations ki te rēhita i a rātou anō.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Whakaaetia kia rēhitatia ngā ara tāpiri.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Whakaaetia ngā kaiwhakawhanake plugin ki te tāpiri i ngā actions ki te tukanga tiaki
+- [wu_site_created](./Actions/wu_site_created) — Ka whakaoho i muri i te hanganga tuatahi o tētahi pae.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Whakaaetia ngā kaiwhakawhanake plugin ki te tāpiri i ētahi atu hooks, mēnā e hiahiatia ana.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Ka rere i te wā kei roto i te horopaki kaitirotiro-mua tātauira.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Ka whakakā i te enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Ka whakaoho i muri i te rokirokitanga o tētahi ahanoa ki te pātengi raraunga.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Ka whakaoho i muri i te rokirokitanga o tētahi ahanoa ki te pātengi raraunga.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Ka whakaoho i muri i te rokirokitanga o tētahi ahanoa ki te pātengi raraunga.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Whakaaetia ngā kaiwhakawhanake plugin ki te tāpiri i ngā actions ki te tukanga wetewete.
+
+## Ngā Tātari {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ka tātari i te roanga o te wā paunga o te cookie motuhēhēnga.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ka tātari i te kaupapa whakawhiti motuhēhēnga.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ka tārua i te WP Filter taketake ki konei, hei tikanga pai.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Tukua ngā kaiwhakawhanake plugin kia tātari i te URL e whakamahia ana i te previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Ka tātari mēnā me tuku te auth cookie mā HTTPS anake.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Ka tātari mēnā me whakamahi i tētahi whakawhiti motuhēhēnga haumaru.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Ka tātari mēnā me tuku te cookie kua takiuru mā HTTPS anake.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Ka āhei te ārai i te tukunga tūturu o ngā auth cookies ki te kiritaki.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Tautuhia te URL whakawhiti.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Tāpirihia he hipanga anō mā ngā filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Tukua ngā kaiwhakawhanake plugin kia tāpiri i tētahi tāupe anō ki te horopaki render puta noa.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Tukua ngā kaiwhakawhanake kia tapahi-poto i tēnei arowhai.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Ka tātari i ngā āpure mō te modal tāpiri domain hou.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Tukua ngā kaiwhakawhanake kia whakarerekē i te tūemi rārangi utu whakarite.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Tukua ngā kaiwhakawhanake kia tātari i ngā pānui admin i tāpirihia e Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Tātari i muri i te panonitanga.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ināianei, ka mahi tātou ki ngā momo katoa.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Tukua ngā kaiwhakawhanake plugin kia tapahi-poto i ngā here.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Ka tātari mēnā me tono, kāore rānei, te utu rēhitatanga.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Tātarihia ngā tohenga api taketake.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Tukua ngā kaiwhakawhanake plugin kia tātari i ngā āpure wāhitau nama.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Tukua ngā kaiwhakawhanake kia karo i te putanga, ā, kia tautuhi i tētahi mea hou
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Tukua ngā kaiwhakawhanake kia karo i te waehere unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Ka tātari i te tapeke "moni auau".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Tātarihia te tapeke "moni tuatahi".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Tātarihia te tapeke "moni tuatahi".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Tukua ngā kaiwhakawhanake plugin kia raweke i te uara nama.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Ka tātari i ngā domain pūtake checkout-form tiritahi kāore e tika kia noho hei pūkete mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Ka hono mai ā mātou APIs ki konei hei tāpiri i ngā tauira āpure hou.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Ka hono mai ā mātou APIs ki konei hei tāpiri i ngā momo āpure hou.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Tātarihia ngā karere hapa.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Tukua ngā kaiwhakawhanake kia karo i te arowhai mēnā he āpure tuku-aunoa tētahi āpure.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Tukua ngā kaiwhakawhanake plugin kia tāpiri i ngā ingoa kē ritenga ki te kaiwhakamana puka.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Tukua ngā kaiwhakawhanake plugin kia tātari i ngā ture whakamana.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Wetekina ngā Params kāore e hiahiatia.
+- [wu_contains_element](./Filters/wu_contains_element) — Tukua ngā kaiwhakawhanake kia huri i ngā hua o te rapunga tuatahi.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Tukua ngā kaiwhakarato host kia tāuta rerekē i te constant.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Ka whakahoki i te ingoa pai o ngā wehenga whakahaere ā-rohe o te whenua.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Ka whakahoki i te rārangi tāone mō tētahi state i roto i tētahi whenua.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Ka whakahoki i te rārangi state mō tēnei whenua.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Tukua ngā kaiwhakawhanake kia whakarerekē i te whanonga taunoa, ā, kia tautuhi rerekē i te kiritaki o nāianei.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Tukua ngā kaiwhakawhanake kia whakarerekē i te whanonga taunoa, ā, kia tautuhi rerekē i te mematanga o nāianei.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Tukua ngā kaiwhakawhanake kia whakarerekē i te whanonga taunoa, ā, kia tautuhi rerekē i te pae o nāianei.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Tukua ngā kaiwhakawhanake kia whakarerekē i ngā tawhā URL whakahaere pae.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Tukua ngā kaiwhakawhanake plugin kia tātari i ngā hononga.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Tukua ngā kaiwhakawhanake plugin kia tāpiri i ngā arowhai hou kia taea ai te tautuhi i ngā hua.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Tērā pea me tāpiri poraka anō ā muri ake.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Ka tāpiri tātari whānui kia taea ai e ngā kaiwhakawhanake te whakawhānui i tēnei pūwetereo hei whakahaere i ētahi atu kaihanga, plugin rānei.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Tātari mēnā me whakaū i ngā ture kupuhipa tāpiri.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Tātari i te ingoa kaiwhakamahi kiritaki kua hangaia.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Whakaaetia ngā kaiwhakawhanake plugin ki te tātari i ngā tautuhinga tōmua o tētahi whārangi checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Whakaaetia ngā kaiwhakawhanake ki te tāpiri i ngā slug puka hou hei karo i tēnei whanonga.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Whakaaetia ngā kaiwhakawhanake me ngā add-on ki te tāpiri i ngā hipanga hekenga hou
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Tirohia ētahi atu kōrero mō tēnei tātari kei raro iho nei, i runga i tēnei aratuka anō.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Whakaaetia ngā kaiwhakawhanake ki te tīpako ko ēhea momo whakairinga me whakaatu.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Whakahoki Rārangi, ka taea te tātari
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Whakaaetia ngā kaiwhakawhanake ki te raweke i ngā takirua rohe/ara.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Ka tātari i ngā wāhanga ruānuku mō te tatūnga tuitui manaaki.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Ka tātari i ngā āpure i runga i tētahi puka. Ka tautuhia te puka e te ID i roto i te ingoa tātari.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Tātari i ngā momo hua e whai huringa nama motuhake ana.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Whakaaetia ngā kaiwhakawhanake plugin ki te whakaū i tētahi āhua kua tohua mō te API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Whakaaetia ngā kaiwhakawhanake plugin ki te tāpiri i ngā whakamātautau tāpiri mō te aratau whanaketanga.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Whakaaetia ngā kaiwhakawhanake plugin ki te whakaū i tētahi āhua kua tohua mō te pūurutau MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Mō ngā take haumarutanga, ka whakatepe mātou i te maha o ngā mahi e wātea ana hei hono atu. Mā tēnei tātari e āhei ai ngā kaiwhakawhanake ki te whakawhānui
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ka tirohia mēnā e whakaaetia ana tētahi momo whakairinga i runga i tēnei plan. Whakaaetia ngā kaiwhakawhanake plugin ki te tātari i te uara whakahoki
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Tātari mēnā me whakaū i te manatoko wāhitau IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Tātari mēnā me whakaū i te manatoko user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Tātari i te URL hononga makutu kua hangaia.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Tātari mēnā kua whakahohea ngā hononga makutu.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Ka tātari i te URL aronga anō i muri i te hanga i tētahi rohe hei mea matua.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Waihangatia he rārangi aukati o ngā tawhā e ārai ana i te aronga-aunoa.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Tātari hei whakakapi i te whakatau whakaurunga āheinga MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Ka tātari i te rā paunga kua tātaihia.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Ka tātari i te rā paunga kua tātaihia kia tautuhia i muri i te whakahoutanga.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Whakaaetia ngā kaiwhakawhanake ki te tāpiri i ngā slug puka whakahou hou.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Tātari i te roa iti rawa o te kupuhipa.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Tātari i te kaha iti rawa o te kupuhipa e hiahiatia ana (kaute zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Whakaaetia ngā kaiwhakawhanake plugin, me mātou anō, ki te tāpiri hononga mahi ki ā mātou whārangi whakatika
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Tātari mēnā me tono pū iti i roto i ngā kupuhipa.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Tātari mēnā me tono tau i roto i ngā kupuhipa.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Tātari mēnā me tono pūāhua motuhake i roto i ngā kupuhipa.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Tātari mēnā me tono pū matua i roto i ngā kupuhipa.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Whakaaetia te kaiwhakamahi ki te huri i te karere mō ngā utu e tatari ana.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Tātari i ngā momo hua me traktia hei plan.
+- [wu_post_count](./Filters/wu_post_count) — Whakaaetia ngā kaiwhakawhanake plugin ki te huri i te tapeke tatau
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Whakaaetia ngā kaiwhakawhanake plugin ki te huri ko tēhea tūnga whakairinga me tatau. Mā te taunoa, ka tatauria ngā whakairinga kua whakaputaina me ngā whakairinga tūmataiti
+- [wu_post_default_status](./Filters/wu_post_default_status) — Ka tātari i ngā raraunga ahanoa i mua i te rokiroki ki te pātengi raraunga.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Whakaaetia ngā kaiwhakawhanake ki te tātari i ngā tautuhinga i mua i te tiaki e Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Ka tātari mēnā e whakaaetia ana kia haere tonu te tono, kāore rānei.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Ka tātari mēnā e whakaaetia ana kia haere tonu te tono, kāore rānei.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Tātari ana mēnā ka whakaaetia kia haere tonu te tono, kāore rānei.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Tātari ana mēnā ka whakaaetia kia haere tonu te tono, kāore rānei.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Tātari ana mēnā ka whakaaetia kia haere tonu te tono, kāore rānei.
+- [wu_return_url](./Filters/wu_return_url) — Whakaaetia ngā kaiwhakawhanake ki te huri i te URL whakahoki o te tomokanga ka whakamahia i muri i ngā tukanga utu.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Whakaaetia ngā kaiwhakawhanake mono ki te tāpiri i ētahi atu taumahi tauira rapu.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Whakaaetia ngā kaiwhakawhanake ki te tāpiri i ētahi atu hipanga ruānuku whakarite.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Tātari ana mēnā me waihanga e Ultimate Multisite tētahi pūkete domain mō tētahi pae kātahi anō ka hangaia.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Whakaaetia ngā kaiwhakawhanake ki te poro-poto i te whakahuringa aronga, kia kore ai e puta.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Whakaaetia ana te tuhi anō i te handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Tātarihia ngā mahi ā-pūkei e wātea ana mō ngā pae.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Tātari hei huri i te uara mō get pluginssites i roto i te whatunga.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Whakahohea/monokia te āheinga takiuru-kotahi whakawhiti-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Tātarihia ngā URL SSO kua hangaia i mua i te whakahokinga mō ngā mahi kiritaki whakawhiti-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Tātarihia ngā raraunga ohaurunga Stripe. Ka taea te whakakapi i success_url, i cancel_url rānei.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Tātarihia ngā tohenga whakaaro utu.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Tātarihia te ID o te mahere hei tirotiro. Mēnā kei te tīariari tēnei, ka whakamahi te ohaurunga hou i tēnei mahere.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Tātarihia te ID o te hua hei tirotiro. Mēnā kei te tīariari tēnei, ka whakamahi te ohaurunga hou i tēnei hua.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Tātarihia te uara idempotency_key ka tukuna me ngā kōwhiringa utu Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Tātarihia te pūkete mematanga e hono ana ki tēnei webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Tātarihia te meta raraunga i mua i tana rangatūnga kia penapena ki te pātengi raraunga.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Tātarihia ngā raraunga ahanoa i mua i te penapena ki te pātengi raraunga.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Whakaaetia ngā kaiwhakawhanake ki te huri i te URL whakahou kia wetekina
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Whakatauria mēnā me whakamahi tētahi mahere domain
+- [wu_username_from_email](./Filters/wu_username_from_email) — Tātarihia te ingoa kaiwhakamahi kiritaki hou.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Whakaaetia ngā kaiwhakawhanake ki te huri i te karere mō te tepenga kaiwhakamahi mematanga
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Whakaaetia ngā kaiwhakawhanake ki te tāpiri i ētahi atu kōpaki ki te rārangi whakakapi.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Tātarihia ko ēhea sub_commands ka whakahohea mō tēnei hinonga.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Ka tirohia e mātou e toru ngā tauira i te wā e ngana ana ki te kimi i te wāhi e taea ai e mātou te kōkuhu i ā mātou pūmau:

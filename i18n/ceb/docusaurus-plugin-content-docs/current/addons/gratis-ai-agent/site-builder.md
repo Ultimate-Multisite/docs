@@ -7,9 +7,9 @@ Ang Site Builder Orchestration v2 (nga gipaila sa Gratis AI Agent v1.4.0) mao an
 
 ---
 
-## Giunsa Kini Pagtrabaho
+## Giunsa Kini Pagtrabaho {#site-builder-orchestration-v2}
 
-### 1. Paggama og Plan (Plan Generation)
+### 1. Paggama og Plan (Plan Generation) {#how-it-works}
 
 Kung modawat ang agent og instruksyon sa paghimo og site, tawagon niini ang `create_site_plan` ability aron makahimo og JSON nga **site plan**. Ang plano naghulagway:
 
@@ -59,7 +59,7 @@ Kung modawat ang agent og instruksyon sa paghimo og site, tawagon niini ang `cre
 }
 ```
 
-### 2. Pagdiskobre sa Plugin (Plugin Discovery)
+### 2. Pagdiskobre sa Plugin (Plugin Discovery) {#1-plan-generation}
 
 Sa wala pa magsugod ang pag-execute, susihon sa orchestrator ang `plugin_requirements` sa plan ug i-check kung unsang mga plugins ang aktibo na. Para sa mga nawala nga plugins, kini:
 
@@ -69,7 +69,7 @@ Sa wala pa magsugod ang pag-execute, susihon sa orchestrator ang `plugin_require
 
 Ang mga kapakyasan sa plugin discovery dili makapahunong — i-marka lang sa orchestrator ang apektadong mga step isip `skipped` ug magpadayon sa nahabilin nga plan.
 
-### 3. Pag-execute sa Plan (Plan Execution)
+### 3. Pag-execute sa Plan (Plan Execution) {#2-plugin-discovery}
 
 Tawagon sa orchestrator ang `execute_site_plan` gamit ang plan ID. Ang pag-execute moagi sa phase, lakang-paagi:
 
@@ -77,7 +77,7 @@ Tawagon sa orchestrator ang `execute_site_plan` gamit ang plan ID. Ang pag-execu
 - **Parallel steps** — ang mga step sulod sa samang phase nga walay magkaugnay (inter-dependencies) maipadala dayon kung naka-set ang `parallel` flag.
 - **Step timeout** — ang matag step adunay indibidwal nga timeout (default: ang setting nga `Ability Timeout`). Ang step nga na-timeout i-marka nga `failed` ug magpadayon ang plan.
 
-### 4. Pagsubay sa Pag-uswag (Progress Tracking)
+### 4. Pagsubay sa Pag-uswag (Progress Tracking) {#3-plan-execution}
 
 Tawaga ang `get_plan_progress` bisan unsang oras aron ma-check ang status sa pag-execute:
 
@@ -102,7 +102,7 @@ Ang mga user sa WP-CLI makasubay sa pag-uswag gamit ang:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Pagbangon gikan sa Sayop (Error Recovery)
+### 5. Pagbangon gikan sa Sayop (Error Recovery) {#4-progress-tracking}
 
 Kung mapakyas ang usa ka step, susihon sa orchestrator kung adunay **fallback** step nga gi-define sa plan:
 
@@ -113,9 +113,9 @@ Ang agent mohatag og report sa tanan nga kapakyasan sa final plan summary ug mah
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#5-error-recovery}
 
-### `create_site_plan`
+### `create_site_plan` {#site-plan-abilities}
 
 Naghimo og estrukturadong site plan gikan sa usa ka natural language goal description.
 
@@ -132,7 +132,7 @@ Naghimo og estrukturadong site plan gikan sa usa ka natural language goal descri
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#createsiteplan}
 
 Magsugod sa pag-execute sa usa ka nauna nang nahimo nga site plan.
 
@@ -148,7 +148,7 @@ Magsugod sa pag-execute sa usa ka nauna nang nahimo nga site plan.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#executesiteplan}
 
 Mopauli sa kasamtangang status sa pag-execute sa usa ka site plan.
 
@@ -162,7 +162,7 @@ Mopauli sa kasamtangang status sa pag-execute sa usa ka site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#getplanprogress}
 
 Manually resolve ang usa ka mapakyas nga step ug ipadayon pag-usab ang plan execution gikan sa sunod nga step. Gamita kini kung dili posible ang automatic recovery ug gusto nimo nga mointervene.
 
@@ -178,7 +178,7 @@ Manually resolve ang usa ka mapakyas nga step ug ipadayon pag-usab ang plan exec
 
 ---
 
-## Pagtandi sa v1 ug v2
+## Pagtandi sa v1 ug v2 {#handleplanerror}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -193,9 +193,9 @@ Manually resolve ang usa ka mapakyas nga step ug ipadayon pag-usab ang plan exec
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#comparing-v1-and-v2}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-cli-plan-commands}
 
 Naghimo og site plan gikan sa usa ka goal description.
 
@@ -203,7 +203,7 @@ Naghimo og site plan gikan sa usa ka goal description.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-create}
 
 Nag-execute sa nauna nang nahimo nga plan.
 
@@ -211,7 +211,7 @@ Nag-execute sa nauna nang nahimo nga plan.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-execute}
 
 Nagpakita sa kasamtangang pag-uswag alang sa nag-execute o nakompleto nga plan.
 
@@ -219,7 +219,7 @@ Nagpakita sa kasamtangang pag-uswag alang sa nag-execute o nakompleto nga plan.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-status}
 
 Naghlista sa tanan nga site plans (nagpaabot, nagpadayon, ug nakompleto).
 
@@ -227,7 +227,7 @@ Naghlista sa tanan nga site plans (nagpaabot, nagpadayon, ug nakompleto).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-list}
 
 Nag-reset sa usa ka mapakyas nga plan ngadto sa `pending` aron mahimo kining i-execute pag-usab gikan sa sinugdanan.
 

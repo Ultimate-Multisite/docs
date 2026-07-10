@@ -4,17 +4,17 @@ title: Sift - wu_cart_get_subtotal
 sidebar_label: wu_cart_get_subtotal
 _i18n_hash: b4c83b261d6009edfbb17c6f27f6ae60
 ---
-# Filter: wu_cart_get_subtotal
+# Filter: wu_cart_get_subtotal {#filter-wucartgetsubtotal}
 
 Bu filtre, "başlangıç tutarı" toplamını düzenlemenizi sağlar.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $subtotal | `float` | Bugün ödenmesi gereken toplam tutar. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Sepet nesnesi. |
 
-### Kaynak
+### Kaynak {#source}
 
 `inc/checkout/class-cart.php` dosyasında, 2112. satırda tanımlanmıştır.

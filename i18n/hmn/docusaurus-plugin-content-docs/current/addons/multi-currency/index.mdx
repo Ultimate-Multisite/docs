@@ -1,0 +1,117 @@
+---
+title: Ntau hom txiaj
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency {#multi-currency}
+
+Ultimate Multisite: Multi-Currency pab kom koj lub network txais tau kev them nyiaj hauv ntau hom txiaj nyiaj. Nws hloov tus nqi cia li tau siv cov nqi pauv nyiaj tshiab lossis cov nqi teeb tes, cia koj teeb tus nqi meej rau ib qho khoom rau txhua hom txiaj, thiab txheeb xyuas txhua tus qhua hom txiaj uas nws nyiam siv los ntawm kev nrhiav chaw nyob — tag nrho tswj tau los ntawm ib qho admin dashboard xwb.
+
+## Cov yam ntxwv tseem ceeb {#key-features}
+
+- **Kev hloov pauv tus nqi pauv nyiaj cia li tau** — cov nqi raug hloov ntawm koj hom txiaj nyiaj hauv paus siv cov nqi uas rub los ntawm tus provider uas koj xaiv
+- **Kev hloov tus nqi rau ib qho khoom** — teeb cov nqi meej rau ib hom txiaj tshwj xeeb rau txhua yam khoom kom hla dhau kev hloov pauv cia li tau
+- **Daim teb xaiv txiaj nyiaj thaum signup** — cia cov neeg yuav khoom xaiv hom txiaj uas lawv nyiam thaum checkout/signup
+- **Ntau tus exchange rate providers** — ECB, Frankfurter, Stripe, lossis cov nqi teeb tes tag nrho
+- **Kev txheeb xyuas txiaj raws chaw nyob** — cia li xaiv ua ntej hom txiaj uas phim tus qhua lub teb chaws
+- **Admin dashboard** — tswj cov txiaj uas qhib siv, cov nqi pauv nyiaj, thiab provider settings hauv ib qho chaw
+
+## Yam yuav tsum muaj {#requirements}
+
+- Ultimate Multisite 2.0.0 lossis siab dua
+- WordPress Multisite installation
+- PHP 7.4 lossis siab dua
+
+## Kev teeb tsa {#installation}
+
+1. Upload cov plugin files mus rau `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Qhib lub plugin los ntawm lub vijtsam **Plugins** hauv WordPress (Network Activate)
+3. Mus rau **Ultimate Multisite → Multi-Currency** kom qhib admin dashboard
+4. Ntxiv cov txiaj nyiaj uas koj xav txais thiab teeb koj tus exchange rate provider
+
+## Kev teeb kho {#configuration}
+
+### Admin Dashboard {#admin-dashboard}
+
+Multi-Currency admin dashboard (**Ultimate Multisite → Multi-Currency**) yog qhov chaw tseem ceeb rau:
+
+- Ntxiv, qhib, lossis kaw cov txiaj nyiaj
+- Xaiv ib tus exchange rate provider thiab refresh cov nqi thaum xav tau
+- Xyuas cov nqi tam sim no rau txhua hom txiaj uas qhib siv
+- Teeb cov nqi manual thaum cov providers cia li tau tsis haum
+
+### Exchange Rate Providers {#exchange-rate-providers}
+
+| Provider | Kev piav qhia |
+|---|---|
+| **ECB** | European Central Bank — cov nqi dawb txhua hnub rau cov network uas siv EUR ua hauv paus |
+| **Frankfurter** | Open-source ECB mirror API — dawb, tsis tas muaj API key |
+| **Stripe** | Siv Stripe cov nqi FX tshiab — yuav tsum muaj Stripe integration uas qhib siv |
+| **Manual** | Koj sau cov nqi ncaj qha; tsis hu mus rau API sab nraud |
+
+Xaiv koj tus provider hauv **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Cov nqi refresh tau los ntawm tes txhua lub sijhawm lossis teem sijhawm kom update cia li tau.
+
+### Kev hloov tus nqi rau ib qho khoom {#per-product-pricing-overrides}
+
+Thaum kev hloov pauv cia li tau tsis meej txaus, koj tuaj yeem teeb ib tus nqi meej rau ib hom txiaj tshwj xeeb rau txhua yam khoom:
+
+1. Qhib product editor (**Ultimate Multisite → Products → Edit**)
+2. Scroll mus rau seem **Currency Pricing**
+3. Sau tus nqi meej rau txhua hom txiaj uas koj xav override
+4. Save qhov khoom
+
+Cov khoom uas tsis muaj override yuav siv tus nqi uas hloov los ntawm koj hom txiaj hauv paus.
+
+### Daim teb xaiv txiaj nyiaj thaum signup {#currency-selector-signup-field}
+
+Daim teb xaiv txiaj nyiaj tuaj yeem muab ntxiv rau koj signup/checkout flow kom cov neeg yuav khoom xaiv hom txiaj uas lawv nyiam thaum sau npe:
+
+1. Mus rau **Ultimate Multisite → Multi-Currency → Settings**
+2. Qhib **Qhia currency selector thaum signup**
+3. Yog xav tau, teeb ib hom txiaj default lossis cia kev nrhiav chaw nyob txiav txim tus nqi uas xaiv ua ntej
+
+Hom txiaj uas xaiv lawm raug khaws nrog subscription thiab siv rau txhua qhov kev sau nqi tom qab.
+
+### Kev txheeb xyuas txiaj raws chaw nyob {#geolocation-based-currency-detection}
+
+Thaum qhib kev txheeb xyuas chaw nyob, lub addon map tus qhua lub teb chaws rau ib hom txiaj thiab xaiv ua ntej hauv daim teb xaiv txiaj nyiaj. Yuav qhib li no:
+
+1. Mus rau **Ultimate Multisite → Multi-Currency → Settings**
+2. Qhib **Nrhiav txiaj nyiaj los ntawm tus qhua qhov chaw nyob**
+3. Map cov teb chaws rau cov txiaj nyiaj hauv lub rooj **Geolocation Mapping**
+
+Yog tsis muaj mapping rau tus qhua lub teb chaws, ces siv lub network hom txiaj hauv paus ua fallback.
+
+## Cov lus nug uas nquag nug {#frequently-asked-questions}
+
+### Yuav ua li cas yog exchange rate provider siv tsis tau? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Lub addon fallback mus rau cov nqi uas rub tau tiav zaum kawg. Yog tsis tau rub ib qho nqi li, nws fallback mus rau cov nqi manual uas koj tau teeb tseg. Pom zoo kom teeb cov nqi manual ua ib txoj kev ruaj ntseg.
+
+### Kuv puas siv tau cov providers sib txawv rau cov txiaj sib txawv? {#can-i-use-different-providers-for-different-currencies}
+
+Tsis tau — ib zaug tsuas muaj ib tus provider qhib siv rau txhua hom txiaj xwb. Siv **Manual** yog koj xav tswj tag nrho cov nqi ib qho zuj zus.
+
+### Geolocation puas yuav tsum muaj ib lub plugin cais? {#does-geolocation-require-a-separate-plugin}
+
+Tsis tas yuav muaj geolocation plugin sab nraud. Lub addon siv WordPress qhov built-in IP-to-country detection. Yog xav tau qhov raug dua, ib qho geolocation service tshwj xeeb tuaj yeem integrate los ntawm cov filter hooks uas muab los.
+
+### Cov per-product overrides siv ua ntej lossis tom qab se? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Per-product overrides teeb tus nqi ua ntej se hauv hom txiaj uas xav tau. Se raug xam ntxiv saum tus nqi override siv koj qhov tax configuration uas twb muaj lawm.
+
+## Changelog {#changelog}
+
+### Version 1.0.0 — Tso tawm rau 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Tshiab: Kev txhawb ntau hom txiaj nrog kev hloov pauv tus nqi pauv nyiaj cia li tau
+- Tshiab: Per-product pricing overrides rau cov nqi meej raws hom txiaj tshwj xeeb
+- Tshiab: Daim teb xaiv txiaj nyiaj thaum signup rau checkout flow
+- Tshiab: Exchange rate providers: ECB, Frankfurter, Stripe, thiab manual
+- Tshiab: Kev txheeb xyuas txiaj raws chaw nyob
+- Tshiab: Admin dashboard rau kev tswj cov txiaj nyiaj thiab cov nqi pauv nyiaj
+- Kho: Dashboard ib txwm qhia cov nqi hauv hom txiaj hauv paus xwb txawm xaiv hom txiaj twg los xij

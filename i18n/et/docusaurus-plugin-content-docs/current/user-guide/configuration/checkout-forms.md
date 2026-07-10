@@ -3,7 +3,7 @@ title: Tellimiskogud
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout vormidlid
+# Checkout vormidlid {#checkout-forms}
 
 Checkout Forms onab võimaldavad teil lihtsalt ja jäykalt eksperimenteerida erinevate lähenemiste viihdudega uute klientide hankimisel.
 
@@ -36,13 +36,13 @@ Alternatiivselt saate vormide, mida juba oma on, redige või duplike klikkides s
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor ülevaade
+#### Checkout Form Editor ülevaade {#checkout-form-editor-overview}
 
 Checkout Form editor annab põhjaliku kasutusepäraseks aatist registreerimise vormide lahendamiseks. Siin on ülevaade redigeja paigutuse kohta:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout formi redigeamine
+### Checkout formi redigeamine {#editing-a-checkout-form}
 
 Saate luua checkout vorme erinevate eesmärkide jaoks. Selle näites kasutame registreerimise vormi.
 
@@ -114,7 +114,7 @@ Per ottenere lo shortcode del tuo modulo, clicca su Genera Shortcode e copia il 
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Campo Tabella Prezzi (Pricing Table Field)
+### Campo Tabella Prezzi (Pricing Table Field) {#the-pricing-table-field}
 
 Il campo **Tabella Prezzi** mostra i tuoi prodotti sul modulo di checkout in modo che i clienti possano scegliere un piano. Quando modifichi questo campo, puoi configurare diverse opzioni:
 
@@ -132,17 +132,17 @@ Ecco come appare la tabella prezzi sul modulo di registrazione frontend:
 
 Se aggiungi un prodotto alla Tabella Prezzi prima che il modulo includa i campi necessari per completare il flusso di checkout di quel prodotto, l'editor mostra ora un avviso. Usa l'avviso per aggiungere il campo richiesto mancante prima di pubblicare o salvare le modifiche per un modulo di registrazione attivo.
 
-### Perioodvalikkuva lauseen lisamine
+### Perioodvalikkuva lauseen lisamine {#adding-a-period-selection-toggle}
 
 Kui olete konfiguratsioonides [Price Variations](creating-your-first-subscription-product#price-variations) oma toote kohta (nt kuudlik ja aastaline hinnad), saate lisa **Perioodi valik** -välja. See välj ilmub lühendina, mis võimaldab kliendit vahetada lahkumise perioodide vahel, ja hinnatab tabell muutub reaaliajal dünaamiliselt.
 
-#### Samuti 1: Hinnakujunduse konfiguratsioon toote kohta
+#### Samuti 1: Hinnakujunduse konfiguratsioon toote kohta {#step-1-set-up-price-variations-on-your-products}
 
 Enne Perioodi valikku lisa, veenduge, et teie toote on konfigurieritud hinnakujundusega. Minenda **Ultimate Multisite > Tooted** menüüle, muuta toodet ja navige **Price Variations** -väljaile, et lisada alternatiivseid lahkumise perioode (nt aastaline allahindluse hinnaga).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Samuti 2: Perioodi valikku lisa lahkumise vormi
+#### Samuti 2: Perioodi valikku lisa lahkumise vormi {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Minenda **Ultimate Multisite > Lahkumise vormid** ja muuta oma lahkumise vormi.
 
@@ -165,13 +165,13 @@ Enne Perioodi valikku lisa, veenduge, et teie toote on konfigurieritud hinnakuju
 
 7. Klõpsake **Save Field**.
 
-#### Samuti 3: Asetage polu hinnatlaudiga ülemine koht
+#### Samuti 3: Asetage polu hinnatlaudiga ülemine koht {#step-3-position-the-field-above-the-pricing-table}
 
 Parima kasutuskogemuse jaoks on kindel, et Perioodi valik (Period Selection) poleid ilmub ostukorvi sammu **eelselt** Hinnatlaudi (Pricing Table) poleid. Saate poleid dragida ja järjekorra muuta ostukorvi redigeerimisvormis. See võimaldab kasutajad esmalt välja valita lahendusperioodi ja seejärel näha selle perioodi hinnad.
 
 ![Ostukorvi redigeerimise vormi näyttus polu järjekorrast](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kuidas see toimib esilehtil (Frontend)
+#### Kuidas see toimib esilehtil (Frontend) {#how-it-works-on-the-frontend}
 
 Konfigurieritud pärast, kasutajad, kes külastavad registreerimislehte, näevad perioodi valikute hinnatlaudi üle. Kui nad klõpsavad teise lahendusperioodi:
 
@@ -179,7 +179,7 @@ Konfigurieritud pärast, kasutajad, kes külastavad registreerimislehte, näevad
   * Kui **Force Different Durations** on vändatud välja Hinnatlaudi poleidil, on tooted ilma hinnavaariatsioonita valitud perioodil varjatud.
   * Kui **Force Different Durations** on aktiveeritud, kõik tooted jäävad nähtavaks, isegi kui nad ei ole selle perioodi jaoks varieerendit, (näitavad oma poolt määratud hinda).
 
-#### Lahendusperioodi ettevalimine URL-i abil
+#### Lahendusperioodi ettevalimine URL-i abil {#pre-selecting-a-billing-period-via-url}
 
 Saate ka ettevalida toote ja lahendusperioodi URL-i abil. Ultimate Multisite toetab neid URL-pahte:
 
@@ -187,11 +187,11 @@ Saate ka ettevalida toote ja lahendusperioodi URL-i abil. Ultimate Multisite toe
   * `/register/premium/12` — Valib toote ja 12-kuune kestus
   * `/register/premium/1/year` — Valib toote 1-aasta kestusega
 
-### Šabloni valikule poleid (Template Selection Field)
+### Šabloni valikule poleid (Template Selection Field) {#the-template-selection-field}
 
 **Šabloni valik** poleid võimaldab kasutajad ostukorvi ajal välja valida veebilehtšabloni. See on nüüd poolt aktiveeritud nii **üleselulehelise sammu** kui ka **mitme sammu** ostukorvi vormide šabloneides Ultimate Multisite v2.6.1 versiooniga lisatud.
 
-#### Poleidi manuaalne lisamine
+#### Poleidi manuaalne lisamine {#adding-the-field-manually}
 
 Kui vormi töötamise korral, mis on loodud v2.6.1 enne või alustatud tühjastest mallidest:
 
@@ -202,11 +202,11 @@ Kui vormi töötamise korral, mis on loodud v2.6.1 enne või alustatud tühjaste
    - **Label** — Pealkiri, mida kasutajad näevad mallide ruudul üleval (nt. "Vali veebilehe mall").
    - **Required** — Kas kasutaja peab valima malli enne jätkamist.
 
-#### Kuidas see töötab
+#### Kuidas see töötab {#how-it-works}
 
 Kui klient valib checkoutil malli, Ultimate Multisite kasutab seda uue veebilehe loodudamiseks. Näidatud mallid tulevad teie **Site Templates** nimekirjast (**Ultimate Multisite > Site Templates**). Siin ilmub ainult klusternud (kasutajatele saadaval) mallid.
 
-### Checkout-form alusdomäed
+### Checkout-form alusdomäed {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 käsitleb checkouti vormi **Site URL** väljas konfiguritud domeene kui võrku alusdomeene. Kasutage välja saatavate domeenide seadistusi, kui soovite, et klientid luua veebilehi ühtest või mitmes jaotatud registreerimisdomeenil, näiteks `example.com` ja `sites.example.com`.
 
@@ -214,7 +214,7 @@ Jaotatud checkout-form alusdomeened ei ole per-veebilehe oma domeenide seadistus
 
 Haldage oma domeene per-klientide mappitud hostide jaoks, nagu `customer-example.com`. Hoidke checkout-formi alusdomeened jaotatud registreerimishostide jaoks, mida mitu veebilehe saab kasutada.
 
-#### Välja võtmine välja
+#### Välja võtmine välja {#removing-the-field}
 
 (See osane ei ole täidetud tekstiga, seega jätkatakse struktuuril)
 

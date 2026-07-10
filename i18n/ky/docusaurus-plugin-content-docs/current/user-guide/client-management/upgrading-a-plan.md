@@ -3,7 +3,7 @@ title: Планды жогорулатуу
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Планды жогору көтөрүү (v2)
+# Планды жогору көтөрүү (v2) {#upgrading-a-plan-v2}
 
 _**МААЛЫМДЫ КӨЗГÖRҮ: Бул макала Ultimate Multisite 2.x версиясына тиешелүү.**_
 
@@ -41,7 +41,7 @@ Account баракчасында алар өзүнүн учурдагы мүше
 
 ##
 
-## Жыйылуу жана Төмөндөө жолдору (Upgrade and Downgrade Paths)
+## Жыйылуу жана Төмөндөө жолдору (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Ар бир продукт үчүн сизде **Up & Downgrades** деген вкладка болот. Ошол вкладчун биринчи опциясы — **Plan Group** деп аталган талаа.
 

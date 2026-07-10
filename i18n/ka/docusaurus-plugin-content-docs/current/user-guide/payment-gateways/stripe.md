@@ -3,19 +3,19 @@ title: Stripe-ის დაყენება
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe გეითის დაყენება (v2)
+# Stripe გეითის დაყენება (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**მნიშვნელოვანი შენიშვნა: ეს სტატია მომზადებული Ultimate Multisite-ის ვერსია 2.x-ისთვის.**_
 
 ჩვენს გადახდის პარამეტრების გვერდზე თქვენ შეგიძლიათ აქტიური გააკეთოთ გადახდის მეთოდები: Stripe, Stripe Checkout, PayPal და მექანიკური (Manual). ამ სტატიაში განვიხილავთ ინტეგრაციას **Stripe**-თან.
 
-## Stripe-ის ჩართვა
+## Stripe-ის ჩართვა {#enabling-stripe}
 
 იმისათვის, რომ Stripe გახადოთ ხელმისაწვდომი გადახდის გეითი თქვენს ქსელზე, გადადით **Ultimate Multisite > Settings > Payments**-ში და დააჭირეთ გადამრთველს **Stripe**-ის ან **Stripe Checkout**-ის გვერდით Active Payment Gateways განყოფილებაში.
 
 ![Stripe-ის ჩართვა აქტიურ გადახდის გეითებში](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** ეს მეთოდი აჩვენებს სივრცეს საკრედიტო ბარათის ნომრის შეყვანისთვის გადახდის პროცესში.
 
@@ -47,7 +47,7 @@ _**შენიშვნა:** შეგიძლიათ ჩართოთ **
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook-ის დაყენება
+## Stripe Webhook-ის დაყენება {#setting-up-stripe-webhook}
 
 Stripe აგზავნის Webhook მოვლენებს, რომლებიც Ultimate Multisite-ს აცნობებს ყოველ ჯერზე, როდესაც **თქვენს stripe ანგარიშზე** რაიმე მოვლენა ხდება.
 

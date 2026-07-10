@@ -1,31 +1,32 @@
 ---
 title: Zrušení členství
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Zrušení členství (v2)
+# Zrušení členství (v2) {#canceling-a-membership-v2}
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
 Zrušení členství na straně vašich zákazníků je poměrně snadné.
 
-Pokud si váš uživatel chce zrušit členství, měl by nejprve přejít na stránku ****Účet****.
+Pokud chce váš uživatel zrušit své členství, měl by nejprve přejít na svou stránku ****Account****.
 
-Tam by měl přejít do sekce **Nebezpečná zóna** a kliknout na **Smazat účet**.
+Tam by měl přejít do **Nebezpečné zóny** a kliknout na **Smazat Account**.
 
-![Stránka účtu s nebezpečnou zónou a tlačítkem Smazat účet](/img/admin/memberships-list.png)
+![Nebezpečná zóna na stránce Account s tlačítkem Smazat Account](/img/account-page/danger-zone.png)
 
-Otevře se okno s žádostí o potvrzení. Uživatel by měl zapnout přepínač **Potvrdit smazání účtu** a kliknout na **Smazat účet**.
+Otevře se modul s žádostí o potvrzení. Měl by zapnout možnost **Potvrdit smazání Account** a kliknout na **Smazat Account**.
 
-![Dialog pro potvrzení smazání účtu](/img/admin/memberships-list.png)
+![Dialog Potvrdit smazání Account](/img/account-page/delete-account-confirm.png)
 
-Tím se uživatel odhlásí z webu, zruší se jeho členství ve vaší síti a jeho web bude z vaší sítě odstraněn.
+Tím se odhlásí ze stránky a zruší se jeho členství ve vaší síti a zároveň se jeho stránka odstraní z vaší sítě.
 
-![Odhlášení po smazání účtu](/img/admin/memberships-list.png)
+![Odhlášeno po smazání Account](/img/account-page/logged-out-after-delete.png)
 
-![Potvrzení zrušení členství](/img/admin/memberships-list.png)
+![Potvrzení zrušení členství](/img/account-page/membership-canceled.png)
 
-**Důležité:** Všimněte si, že tato akce zákazníka z vaší sítě neodstraní, protože zákazník může mít více než jedno členství nebo žádné členství, které je s ním spojené.
+**Důležité:** Upozorňujeme, že tato akce zákazníka z vaší sítě neodstraní, protože zákazník může mít více než jedno členství nebo k němu nemusí být přiřazeno žádné členství.
 
-![Zákazník stále existuje v síti po zrušení](/img/admin/memberships-list.png) | ![Zákazník bez aktivních členství](/img/admin/memberships-list.png)  
----|---
+![Zákazník stále existuje v síti po zrušení](/img/admin/customer-after-cancel.png)
+
+![Zákazník bez aktivních členství](/img/admin/memberships-customer-empty.png)

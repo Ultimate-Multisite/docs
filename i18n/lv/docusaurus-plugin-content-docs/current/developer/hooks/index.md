@@ -1,0 +1,194 @@
+---
+title: Āķu atsauce
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Āķu atsauce {#hooks-reference}
+
+Automātiski ģenerēta dokumentācija visām **59 darbībām** un **118 filtriem** Ultimate Multisite.
+
+## Darbības {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Izpildās pirms autentifikācijas pāradresācijas.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Izpildās tieši pirms autentifikācijas sīkdatnes iestatīšanas.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Izpildās tieši pirms pieteikušos lietotāju autentifikācijas sīkdatnes iestatīšanas.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Ļauj izstrādātājiem pievienot savas hostinga nodrošinātāju integrācijas, izmantojot wp spraudņus.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Aktivizējas, kad visas atkarības ir ielādētas
+- [wu_activation](./Actions/wu_activation) — Ļauj citām spraudņa daļām pievienot savas aktivizācijas rutīnas
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Ļauj spraudņu izstrādātājiem piesaistīt funkcijas pēc tam, kad lietotājs vai superadministrators pārslēdz vietnes veidni
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Dažos gadījumos mums būs jāielādē papildu jauda, lai apstrādātu darbības.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Izpildās pirms meklēšanas pieprasījuma apstrādes.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Ļauj izstrādātājiem veikt papildu izmaiņas norēķināšanās objektā.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Ļauj izstrādātājiem veikt papildu izmaiņas norēķināšanās objektā.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Izpildās pirms lauka pievienošanas norēķināšanās veidlapai.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Ļauj izstrādātājiem aktivizēt papildu āķus.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Pirms mēs apstrādājam norēķināšanos.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Izpildās pēc tam, kad norēķināšanās pasūtījums ir pilnībā salikts.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Ļauj spraudņu izstrādātājiem pievienot logrīkus Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Ļauj spraudņu izstrādātājiem pievienot logrīkus Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Ļauj citām spraudņa daļām pievienot savas deaktivizācijas rutīnas
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Ļauj spraudņu izstrādātājiem pievienot darbības dzēšanas procesam
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Izpildās, kad domēns kļūst par vietnes primāro domēnu.
+- [wu_domain_created](./Actions/wu_domain_created) — Aktivizējas, kad tiek pievienota jauna domēna kartēšana.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Izpildīts pēc mūsu pamata Domain Mapping ielādes
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Daži spraudņi saglabās URL pirms kartēšana bija aktīva vai veidos URL citādā veidā, kas nav iekļauts o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Ļauj izstrādātājiem piesaistīties pēc vietnes dublēšanas.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Ļauj spraudņu izstrādātājiem pievienot papildu āķus
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Āķis papildu tīrīšanai
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Izpildās pirms jaunā domēna pievienošanas modālā loga pieprasījuma apstrādes.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Ļauj spraudņu izstrādātājiem saglabāt metadatus dažādos veidos, ja tas nepieciešams.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Ļauj spraudņu izstrādātājiem saglabāt lietotāja metadatus dažādos veidos, ja tas nepieciešams.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Izpildās, kad tiek sastapts nederīgs maģiskās saites tokens.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Izpildās pēc tam, kad lietotājs piesakās, izmantojot maģisko saiti.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Ļauj spraudņu izstrādātājiem veikt papildu darbības, kad klients tiek pievienots.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Izpildās pēc tam, kad MCP spējas ir reģistrētas entītijai.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Izpildās pēc tam, kad MCP adapteris ir inicializēts.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Aktivizējas pēc abonementa atcelšanas.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Aktivizējas pēc abonementa atjaunošanas.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Aktivizējas pirms abonementa atcelšanas.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Aktivizējas pirms abonementa atjaunošanas.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Izpildās pēc tam, kad objekts tiek saglabāts datubāzē.
+- [wu_page_added](./Actions/wu_page_added) — Ļauj spraudņu izstrādātājiem palaist papildu darbības, kad lapas tiek reģistrētas.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Ļauj spraudņu izstrādātājiem pievienot papildu saturu pēc tam, kad mēs izdrukājam lapu
+- [wu_page_before_render](./Actions/wu_page_before_render) — Ļauj spraudņu izstrādātājiem pievienot papildu saturu pirms mēs izdrukājam lapu.
+- [wu_page_load](./Actions/wu_page_load) — Ļauj spraudņu izstrādātājiem pievienot papildu āķus mūsu lapām.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Ļauj spraudņu izstrādātājiem pievienot papildu saturu pēc tam, kad mēs izdrukājam lapu
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Ļauj spraudņu izstrādātājiem pievienot papildu saturu pirms mēs izdrukājam lapu.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Ļauj spraudņu izstrādātājiem pievienot papildu āķus mūsu lapām.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Izpildās pēc tam, kad logrīki ir reģistrēti šai lapai.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Tiek izpildīts, lai ļautu papildinājumiem piesaistīt spēju moduļus integrācijām.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Tiek izpildīts, lai ļautu integrācijām reģistrēties.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Ļauj reģistrēt papildu maršrutus.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Ļauj plugin izstrādātājiem pievienot darbības saglabāšanas procesam
+- [wu_site_created](./Actions/wu_site_created) — Tiek izpildīts pēc tam, kad site pirmo reizi ir izveidota.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Ļauj plugin izstrādātājiem pievienot papildu hooks, ja nepieciešams.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Darbojas, kad atrodas veidnes priekšskatītāja kontekstā.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Aktivizē enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Tiek izpildīts pēc objekta saglabāšanas datubāzē.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Tiek izpildīts pēc objekta saglabāšanas datubāzē.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Tiek izpildīts pēc objekta saglabāšanas datubāzē.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Ļauj plugin izstrādātājiem pievienot darbības atbloķēšanas procesam.
+
+## Filtri {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrē autentifikācijas sīkdatnes derīguma termiņa perioda ilgumu.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrē autentifikācijas novirzīšanas shēmu.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Drošības labad šeit replicē oriģinālo WP Filter.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Ļauj plugin izstrādātājiem filtrēt priekšskatītājā izmantoto URL
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtrē, vai auth sīkdatne jānosūta tikai pa HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtrē, vai izmantot drošu autentifikācijas novirzīšanu.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtrē, vai pieteikšanās sīkdatne jānosūta tikai pa HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Ļauj nepieļaut auth sīkdatņu faktisku nosūtīšanu klientam.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Iestatiet novirzīšanas URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Pievienojiet papildu soļus, izmantojot filtrus
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Ļauj plugin izstrādātājiem globāli pievienot papildu mainīgo renderēšanas kontekstam.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Ļauj izstrādātājiem priekšlaikus pārtraukt šo pārbaudi.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtrē laukus jauna domēna pievienošanas modālajā logā.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Ļauj izstrādātājiem veikt izmaiņas iestatīšanas maksas rindas vienībā.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ļauj izstrādātājiem filtrēt admin paziņojumus, ko pievieno Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtrē pēc izmaiņu veikšanas.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Tagad mēs apstrādājam visus tipus.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Ļauj plugin izstrādātājiem priekšlaikus pārtraukt ierobežojumus.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtrē, vai reģistrēšanās maksa jāpiemēro.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtrē sākotnējos api argumentus.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Ļauj plugin izstrādātājiem filtrēt norēķinu adreses laukus.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Ļauj izstrādātājiem apiet izvadi un iestatīt jaunu
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Ļauj izstrādātājiem apiet pašreizējā lietotāja atiestatīšanas kodu.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtrē "periodiskās summas" kopsummu.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtrē "sākotnējās summas" kopsummu.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtrē "sākotnējās summas" kopsummu.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Ļauj plugin izstrādātājiem iejaukties kredīta vērtībā.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtrē koplietotos checkout-form bāzes domēnus, kuriem nevajadzētu kļūt par mapped-domain ierakstiem.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Mūsu API jaunu lauku veidņu pievienošanai pieslēdzas šeit.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Mūsu API jaunu lauku tipu pievienošanai pieslēdzas šeit.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtrē kļūdu ziņojumus.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Ļauj izstrādātājiem apiet pārbaudi, ja lauks ir automātiski iesniedzams.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Ļauj plugin izstrādātājiem pievienot pielāgotus aliasus veidlapas validatorā.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Ļauj plugin izstrādātājiem filtrēt validācijas noteikumus.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Atiestata nevēlamus parametrus.
+- [wu_contains_element](./Filters/wu_contains_element) — Ļauj izstrādātājiem mainīt sākotnējās meklēšanas rezultātus.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Ļauj hostinga pakalpojumu sniedzējiem instalēt konstanti citādi.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Atgriež valsts administratīvo apakšvienību glīto nosaukumu.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Atgriež pilsētu sarakstu štatam konkrētā valstī.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Atgriež šīs valsts štatu sarakstu.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Ļauj izstrādātājiem mainīt noklusējuma darbību un iestatīt pašreizējo klientu citādi.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Ļauj izstrādātājiem mainīt noklusējuma darbību un iestatīt pašreizējo membership citādi.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Ļauj izstrādātājiem mainīt noklusējuma darbību un iestatīt pašreizējo vietni citādi.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Ļauj izstrādātājiem mainīt vietnes pārvaldības URL parametrus.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Ļauj plugin izstrādātājiem filtrēt saites.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Ļauj plugin izstrādātājiem pievienot jaunas pārbaudes, lai definētu rezultātus.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Iespējams, vēlāk būs jāpievieno papildu bloki.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Pievieno vispārīgu filtru, lai ļautu izstrādātājiem paplašināt šo parsētāju darbam ar papildu veidotājiem vai plugin.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrē, vai piemērot papildu paroles noteikumus.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrē ģenerēto klienta lietotājvārdu.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ļauj plugin izstrādātājiem filtrēt checkout lapas sākotnējos iestatījumus.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ļauj izstrādātājiem pievienot jaunus veidlapu slug, lai apietu šo darbību.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ļauj izstrādātājiem un papildinājumiem pievienot jaunus migrācijas soļus
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Vairāk par šo filtru skatiet zemāk, šajā pašā metodē.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ļauj izstrādātājiem atlasīt, kuri ierakstu tipi jāattēlo.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Atgriež rindas, filtrējams
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ļauj izstrādātājiem manipulēt ar domēna/ceļa pāriem.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtrē vedņa sadaļas hostinga integrācijas iestatīšanai.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtrē laukus veidlapā. Veidlapa tiek identificēta pēc ID filtra nosaukumā.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrē produktu tipus, kuriem ir neatkarīgi norēķinu cikli.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ļauj plugin izstrādātājiem piespiedu kārtā iestatīt noteiktu API stāvokli.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ļauj plugin izstrādātājiem pievienot papildu testus izstrādes režīmam.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ļauj plugin izstrādātājiem piespiedu kārtā iestatīt noteiktu MCP adaptera stāvokli.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Drošības apsvērumu dēļ mēs ierobežojam piesaistīšanai pieejamo darbību skaitu. Šis filtrs ļauj izstrādātājiem paplašināt
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Pārbauda, vai dotais ieraksta tips ir atļauts šajā plānā. Ļauj plugin izstrādātājiem filtrēt atgriezto vērtību
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrē, vai piemērot IP adreses verifikāciju.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrē, vai piemērot lietotāja aģenta verifikāciju.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrē ģenerētās maģiskās saites URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrē, vai maģiskās saites ir iespējotas.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtrē novirzīšanas URL pēc domēna iestatīšanas par primāro.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Izveido parametru izslēgšanas sarakstu, kas novērš automātisko novirzīšanu.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtrs, lai pārrakstītu MCP spējas iekļaušanas lēmumu.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtrē aprēķināto derīguma termiņa datumu.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtrē aprēķināto derīguma termiņa datumu, kas jāiestata pēc atjaunošanas.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ļauj izstrādātājiem pievienot jaunus atjaunināšanas veidlapu slug.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrē minimālo paroles garumu.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrē nepieciešamo minimālo paroles stiprumu (zxcvbn rezultātu).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ļauj plugin izstrādātājiem un mums pašiem pievienot darbību saites mūsu rediģēšanas lapām
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrē, vai parolēs pieprasīt mazos burtus.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrē, vai parolēs pieprasīt ciparus.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrē, vai parolēs pieprasīt speciālās rakstzīmes.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrē, vai parolēs pieprasīt lielos burtus.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ļauj lietotājam mainīt ziņojumu par gaidāmajiem maksājumiem.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrē produktu tipus, kas jāuzskata par plāniem.
+- [wu_post_count](./Filters/wu_post_count) — Ļauj plugin izstrādātājiem mainīt kopējo skaitu
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ļauj plugin izstrādātājiem mainīt, kurš ieraksta statuss jāskaita. Pēc noklusējuma tiek skaitīti publicētie un privātie ieraksti
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtrē objekta datus, pirms tie tiek saglabāti datubāzē.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ļauj izstrādātājiem filtrēt iestatījumus pirms saglabāšanas ar Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtrē, vai ir atļauts turpināt pieprasījumu vai nē.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtrē, vai ir atļauts turpināt pieprasījumu vai nē.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtrē, vai ir atļauts turpināt pieprasījumu vai ne.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtrē, vai ir atļauts turpināt pieprasījumu vai ne.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtrē, vai ir atļauts turpināt pieprasījumu vai ne.
+- [wu_return_url](./Filters/wu_return_url) — Ļauj izstrādātājiem mainīt gateway atgriešanās URL, kas tiek izmantots pēc checkout procesiem.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Ļauj plugin izstrādātājiem pievienot vairāk meklēšanas modeļu funkciju.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Ļauj izstrādātājiem pievienot papildu iestatīšanas vedņa soļus.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtrē, vai Ultimate Multisite jāizveido domēna ieraksts jaunizveidotai vietnei.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Ļauj izstrādātājiem priekšlaicīgi pārtraukt pāradresāciju, novēršot tās notikšanu.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Ļauj pārrakstīt apstrādātāju
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtrē vietnēm pieejamās lielapjoma darbības.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtrs, lai mainītu get pluginssites vērtību tīklā.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Iespējot/atspējot starpdomēnu single-sign-on iespēju.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtrē ģenerētos SSO URL, pirms tie tiek atgriezti starpdomēnu klientu darbībām.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtrē Stripe Subscription datus. Var pārrakstīt success_url vai cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtrē maksājuma intent argumentus.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtrē plan ID, ko pārbaudīt. Ja tas pastāv, jaunais subscription izmantos šo plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtrē product ID, ko pārbaudīt. Ja tas pastāv, jaunais subscription izmantos šo product.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtrē idempotency_key vērtību, kas nosūtīta ar Stripe charge opcijām.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtrē membership ierakstu, kas saistīts ar šo webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtrē datu meta, pirms tā tiek serializēta glabāšanai datubāzē.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtrē objekta datus, pirms tie tiek glabāti datubāzē.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Ļauj izstrādātājiem mainīt jaunināšanas, lai atbloķētu, URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Nosaka, vai jāizmanto kartēšana
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtrē jaunā klienta lietotājvārdu.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Ļauj izstrādātājiem mainīt ziņojumu par membership lietotāju limitu
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Ļauj izstrādātājiem pievienot papildu mapes aizstājamajam sarakstam.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtrē, kuras sub_commands ir iespējotas šai entītijai.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Mēs pārbaudām trīs modeļus, mēģinot noskaidrot, kur varam ievietot savas konstantes:

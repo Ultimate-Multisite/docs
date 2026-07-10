@@ -4,20 +4,20 @@ title: Bộ lọc - wu_password_require_special
 sidebar_label: wu_password_require_special
 _i18n_hash: 87f845abf068a92161fb7db01f88ee99
 ---
-# Filter: wu_password_require_special
+# Filter: wu_password_require_special {#filter-wupasswordrequirespecial}
 
 Bộ lọc này xác định xem có yêu cầu ký tự đặc biệt trong mật khẩu hay không.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $require | `bool` | Liệu có yêu cầu ký tự đặc biệt không. Mặc định là `true` khi các quy tắc được áp dụng. |
 | $defender_active | `bool` | Liệu tính năng Defender Pro Strong Password có đang hoạt động hay không. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Được định nghĩa tại [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L583) ở dòng 583

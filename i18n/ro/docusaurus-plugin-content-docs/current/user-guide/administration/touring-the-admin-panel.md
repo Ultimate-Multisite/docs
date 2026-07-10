@@ -1,86 +1,122 @@
 ---
-title: Turul Panoului de Administrare
+title: Turul panoului de administrare
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Ghid pentru panoul de administrare
+# Turul panoului de administrare {#touring-the-admin-panel}
 
-Ultimate Multisite își propune să fie cât mai simplu și ușor de înțeles, dar cu o unealtă atât de puternică, un tur ghidat poate fi de mare ajutor. Hai să parcurgem paginile de administrare pentru a te familiariza cu ele.
+Ultimate Multisite își propune să fie cât mai simplu și autoexplicativ posibil, dar cu un instrument atât de puternic poate fi util să ai un tur ghidat. Să parcurgem paginile de administrare ca să te ajutăm să te orientezi.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-**Dashboard-ul** Ultimate Multisite afișează rapoarte și statistici de bază, inclusiv venituri, activitatea site-urilor, creșterea numărului de membri, numărul de vizitatori și date geografice.
+**Dashboard** Ultimate Multisite afișează rapoarte și analize de bază, inclusiv venituri, activități ale site-urilor, creșterea abonamentelor, numărul de vizitatori și date geografice.
 
-![Dashboard Ultimate Multisite](/img/admin/um-dashboard-top.png)
+![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Iată o vedere completă a dashboard-ului:
 
-**Checkout Forms** îți oferă flexibilitatea de a crea pagini de înregistrare personalizate. Poți personaliza câmpurile, adăuga clase și scripturi proprii și restricționa accesul în funcție de țara sau locația vizitatorului.
+![Ultimate Multisite Dashboard pagină completă](/img/admin/um-dashboard-full.png)
 
-![Lista Checkout Forms](/img/admin/checkout-forms-list.png)
+Și secțiunea de jos a dashboard-ului:
 
-## Products
+![Ultimate Multisite Dashboard secțiunea de jos](/img/admin/um-dashboard-bottom.png)
 
-Secțiunea **Products** este locul unde creezi diferite planuri, pachete și servicii pentru rețeaua ta. Definește prețurile, frecvența facturării și limitele la nivel de produs.
+Iată și o vedere completă a dashboard-ului rețelei:
 
-![Lista Products](/img/admin/products-list.png)
+![Network Dashboard pagină completă](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Formulare de checkout {#checkout-forms}
 
-Pagina **Memberships** afișează toate abonamentele din rețeaua ta. Poți vizualiza și edita detaliile abonamentelor, inclusiv planuri, produse, sume și frecvențe de facturare, istoricul plăților și marcajele de timp.
+**Formularele de checkout** îți oferă flexibilitatea de a crea pagini de înregistrare personalizate. Poți personaliza câmpuri, insera clase și scripturi personalizate și restricționa accesul în funcție de țara sau locația vizitatorului.
 
-![Lista Memberships](/img/admin/memberships-list.png)
+![Listă Checkout Forms](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Produse {#products}
 
-Pagina **Payments** oferă o vedere rapidă a istoricului plăților din întreaga rețea, cu informații detaliate despre tranzacții, inclusiv produsele și sumele specifice.
+Secțiunea **Produse** este locul unde creezi diferite planuri, pachete și servicii pentru rețeaua ta. Definește prețuri, frecvențe de facturare și limite & cote la nivel de produs.
 
-![Lista Payments](/img/admin/payments-list.png)
+![Listă produse](/img/admin/products-list.png)
 
-## Customers
+## Abonamente {#memberships}
 
-Pagina **Customers** afișează toți membrii înregistrați în rețeaua ta, cu informații de bază despre utilizatori precum nume, adresă de email, ultima autentificare și un link „switch to" pentru a te conecta la subsite-ul lor.
+Pagina **Abonamente** afișează toate abonamentele din rețeaua ta. Revizuiește și editează detaliile abonamentelor, inclusiv planuri, produse, sume și frecvențe de facturare, istoricul plăților și marcaje temporale.
 
-![Lista Customers](/img/admin/customers-list.png)
+![Listă abonamente](/img/admin/memberships-list.png)
 
-## Sites
+## Plăți {#payments}
 
-Pagina **Sites** listează toate subsite-urile din rețeaua ta, inclusiv template-urile de site și site-urile deținute de clienți. Poți gestiona cu ușurință domeniile mapate, limitele, plugin-urile și temele, precum și miniaturile site-urilor.
+Pagina **Plăți** oferă o vedere rapidă asupra istoricului plăților în întreaga ta rețea, cu informații detaliate despre tranzacții, inclusiv produse și sume specifice.
 
-![Lista Sites](/img/admin/sites-list.png)
+![Listă plăți](/img/admin/payments-list.png)
 
-## Domains
+## Clienți {#customers}
 
-Pagina **Domains** este dedicată domeniilor personalizate mapate la subsite-uri. Ca super admin, poți adăuga sau mapa manual domenii personalizate și poți vizualiza înregistrările DNS și log-urile.
+Pagina **Clienți** afișează toți membrii înregistrați în rețeaua ta, cu informații de bază despre utilizator, inclusiv nume, adresă de e-mail, ultima autentificare și un link „switch to” pentru autentificarea în subsite-ul lor.
 
-![Lista Domains](/img/admin/domains-list.png)
+![Listă clienți](/img/admin/customers-list.png)
 
-## Discount Codes
+## Site-uri {#sites}
 
-**Discount Codes** îți permite să creezi coduri de cupon pentru a oferi reduceri utilizatorilor tăi. Specifică valoarea reducerii și țintește utilizatori sau grupuri specifice.
+Pagina **Site-uri** listează toate subsite-urile din rețeaua ta, inclusiv șabloane de site și site-uri deținute de clienți. Gestionează cu ușurință domeniile mapate, limitele & cotele, pluginurile și temele, precum și miniaturile site-urilor.
 
-![Lista Discount Codes](/img/admin/discount-codes-list.png)
+![Listă site-uri](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domenii {#domains}
 
-**Broadcasts** este o unealtă pentru a trimite anunțuri sau mesaje private utilizatorilor subsite-urilor tale. Poți ținti grupuri specifice de utilizatori în funcție de planul sau produsul la care sunt abonați.
+Pagina **Domenii** este dedicată domeniilor personalizate mapate la subsite-uri. Ca super admin, poți adăuga sau mapa manual nume de domenii personalizate și poți vizualiza înregistrări DNS și jurnale.
 
-![Lista Broadcasts](/img/admin/broadcasts-list.png)
+![Listă domenii](/img/admin/domains-list.png)
 
-## Settings
+## Coduri de reducere {#discount-codes}
 
-Pagina **Settings** este locul unde configurezi Ultimate Multisite — setări de înregistrare, plăți, API și webhook-uri, maparea domeniilor și alte integrări.
+**Codurile de reducere** îți permit să creezi coduri de cupon pentru a oferi reduceri utilizatorilor tăi finali. Specifică valoarea reducerii și vizează utilizatori sau grupuri specifice.
 
-![Pagina Settings](/img/admin/settings-general.png)
+![Listă coduri de reducere](/img/admin/discount-codes-list.png)
 
-## Events
+## Broadcasts {#broadcasts}
 
-Pagina **Events** păstrează o evidență a tuturor evenimentelor și log-urilor din rețeaua ta. Urmărește activități precum schimbările de plan, înscrierile și alte acțiuni — utilă pentru monitorizarea rețelei tale multisite.
+**Broadcasts** este un instrument pentru lansarea de anunțuri sau trimiterea de mesaje private utilizatorilor subsite-urilor tale. Vizează grupuri specifice de utilizatori în funcție de planul sau produsul la care sunt abonați.
 
-![Lista Events](/img/admin/events-list.png)
+![Listă Broadcasts](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Setări {#settings}
 
-**Webhooks** îți permit să trimiți date către o altă aplicație. Utile pentru a transmite date din Ultimate Multisite către platforme precum Zapier.
+Pagina **Setări** este locul unde configurezi Ultimate Multisite — setări de înregistrare, plăți, API și webhooks, maparea domeniilor și alte integrări.
 
-![Lista Webhooks](/img/admin/webhooks-list.png)
+Setările conectorului AI listează pool-urile de furnizori OAuth acceptate în prezent: Anthropic Max, OpenAI ChatGPT/Codex și Google AI Pro. Fiecare card de furnizor permite super adminilor să conecteze conturi, să reîmprospăteze conturile salvate, să elimine conturi după e-mail și să folosească soluția manuală de rezervă OAuth atunci când un mediu sandbox blochează redirecționarea browserului. Opțiunile de configurare Cursor Pro au fost eliminate din panoul de administrare.
+
+Conturile ChatGPT/Codex acceptă utilizarea instrumentelor susținută de conector acolo unde operațiunea permite instrumente, astfel încât fluxurile de lucru de administrare care depind de operațiuni acceptate de conector pot utiliza comportamentul instrumentelor Codex după ce contul OpenAI este conectat.
+
+![Pagină setări](/img/admin/settings-general.png)
+
+Iată o vedere completă a paginii de setări generale:
+
+![Setări generale pagină completă](/img/admin/settings-general-full.png)
+
+Și pagina de setări pentru e-mailuri:
+
+![Setări e-mailuri pagină completă](/img/admin/settings-emails-full.png)
+
+Și pagina de setări pentru plăți:
+
+![Setări plăți pagină completă](/img/admin/settings-payments-full.png)
+
+Și secțiunea de jos a setărilor pentru plăți:
+
+![Setări plăți secțiunea de jos](/img/admin/settings-payments-bottom.png)
+
+Și pagina de setări pentru site-uri:
+
+![Setări site-uri pagină completă](/img/admin/settings-sites-full.png)
+
+## Evenimente {#events}
+
+Pagina **Evenimente** păstrează o evidență a tuturor evenimentelor și jurnalelor din rețeaua ta. Urmărește activități precum modificări de plan, înscrieri și alte acțiuni — util pentru monitorizarea multisite-ului tău.
+
+![Listă evenimente](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks** îți permit să livrezi date către altă aplicație. Utile pentru trimiterea de date din Ultimate Multisite către platforme precum Zapier.
+
+![Listă webhooks](/img/admin/webhooks-list.png)

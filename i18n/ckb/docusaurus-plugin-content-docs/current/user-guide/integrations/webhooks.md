@@ -3,7 +3,7 @@ title: وەب‌هۆکەکان
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Navojîna Webhooks (v2)
+# Navojîna Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**TAVİZE: Liistek an evê ku an jî li ser vê materyal ji bo estefedariyên avadî ye.**_
 
@@ -11,7 +11,7 @@ _**TAVİZE: Liistek an evê ku an jî li ser vê materyal ji bo estefedariyên a
 
 Ev ji bo weyî gelek maddeye ye ku tu hewce dikî integrasyon bikînin an data yên taybetî ji Ultimate Multisite bi her welat ku yekîrê (event) hatibe vekirin. Li felka, tu hewce yî ku nav û adresa e-mailê gelek listeyê peyabûnê bi her welat ku yekîrê nû ya kartekî (user account) hatibe çêkir.
 
-## Çawa webhook çêbikînin
+## Çawa webhook çêbikînin {#how-to-create-a-webhook}
 
 Ji bo çêkirina webhook, ji dashboard-a admin yê neteweyê xwe baziribe. Li ser **Ultimate Multisite > Webhooks > Add New Webhook** klik dikirin.
 

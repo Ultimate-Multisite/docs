@@ -4,11 +4,11 @@ title: フィルタ - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# フィルタ: wp_ultimo_render_vars
+# フィルタ: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 プラグイン開発者がグローバルにレンダリングコンテキストに追加変数を設定できるようにします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | レンダリングされるビューの名前。 |
 | $default_view | `string` | フォールバックビューの名前。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 定義場所: [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) の31行目
 
-## 戻り値
+## 戻り値 {#returns}

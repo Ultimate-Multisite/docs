@@ -3,7 +3,7 @@ title: Multisite beállítási varázsló
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite telepítővarázsló
+# Multisite telepítővarázsló {#multisite-setup-wizard}
 
 Az Ultimate Multisite tartalmaz egy beépített varázslót, amely automatikusan átalakítja a hagyományos WordPress telepítést WordPress Multisite hálózattá. Ezzel kiküszöbölheted a `wp-config.php` manuális szerkesztését és az adatbázis-parancsok futtatását.
 
@@ -11,13 +11,13 @@ Az Ultimate Multisite tartalmaz egy beépített varázslót, amely automatikusan
 Ha a WordPress telepítésed már Multisite hálózatként fut, ezt a lépést teljes mértékben kihagyhatod. A varázsló csak akkor jelenik meg, ha a Multisite még nincs engedélyezve.
 :::
 
-## Mikor jelenik meg a varázsló?
+## Mikor jelenik meg a varázsló? {#when-does-the-wizard-appear}
 
 Amikor az Ultimate Multisite plugint egy hagyományos (nem Multisite) WordPress telepítésen aktiválod, a plugin észleli, hogy a Multisite nincs engedélyezve, és automatikusan a Multisite telepítővarázslóhoz irányít át a normál telepítővarázsló helyett.
 
 Közvetlenül is elérheted itt: **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Előfeltételek
+## Előfeltételek {#prerequisites}
 
 A varázsló futtatása előtt győződj meg róla, hogy:
 
@@ -29,7 +29,7 @@ A varázsló futtatása előtt győződj meg róla, hogy:
 A varázsló módosítja a `wp-config.php` fájlt és új adatbázistáblákat hoz létre. Mindig készíts biztonsági mentést a folytatás előtt.
 :::
 
-## 1. lépés: Üdvözlés
+## 1. lépés: Üdvözlés {#step-1-welcome}
 
 Az első képernyő elmagyarázza, mi az a WordPress Multisite, és mit fog tenni a varázsló:
 
@@ -42,11 +42,11 @@ Az első képernyő elmagyarázza, mi az a WordPress Multisite, és mit fog tenn
 
 Kattints a **Continue** gombra a folytatáshoz.
 
-## 2. lépés: Hálózat konfigurálása
+## 2. lépés: Hálózat konfigurálása {#step-2-network-configuration}
 
 Ebben a lépésben konfigurálhatod a hálózati beállításokat.
 
-### Oldalstruktúra
+### Oldalstruktúra {#site-structure}
 
 Válaszd ki, hogyan legyenek szervezve a hálózatod oldalai:
 
@@ -57,11 +57,11 @@ Válaszd ki, hogyan legyenek szervezve a hálózatod oldalai:
 Ha az aldomaineket választod, **wildcard DNS-t** és **wildcard SSL tanúsítványt** kell konfigurálnod a domainedhez. A legtöbb menedzselt WordPress tárhely ezt automatikusan kezeli. Lásd az [Ultimate Multisite 101](./ultimate-multisite-101) oldalt a részletes összehasonlításért.
 :::
 
-### Hálózat neve
+### Hálózat neve {#network-title}
 
 Add meg a hálózatod nevét. Alapértelmezés szerint a jelenlegi oldal címe jelenik meg, kiegészítve a "Network" szóval. Ezt később módosíthatod a hálózati beállításokban.
 
-### Hálózati adminisztrátor e-mail címe
+### Hálózati adminisztrátor e-mail címe {#network-admin-email}
 
 Az e-mail cím, amelyre a hálózati adminisztrációs értesítések érkeznek. Alapértelmezés szerint a jelenlegi felhasználó e-mail címe.
 
@@ -69,7 +69,7 @@ Az e-mail cím, amelyre a hálózati adminisztrációs értesítések érkeznek.
 
 A mezők kitöltése után kattints a **Continue** gombra a folytatáshoz.
 
-## 3. lépés: Telepítés
+## 3. lépés: Telepítés {#step-3-installation}
 
 Kattints az **Install** gombra a kezdéshez. A varázsló öt automatizált lépést hajt végre egymás után, és mindegyik folyamatát valós időben mutatja:
 
@@ -96,7 +96,7 @@ Amikor minden lépés sikeresen befejeződött, minden elemnél zöld "Success!"
 
 A varázsló ezután automatikusan továbblép a befejező képernyőre.
 
-## 4. lépés: Befejezés
+## 4. lépés: Befejezés {#step-4-complete}
 
 A telepítés befejezése után egy sikeres üzenetet fogsz látni, amely megerősíti, hogy a WordPress Multisite engedélyezve lett.
 
@@ -108,7 +108,7 @@ Most már folytathatod az Ultimate Multisite telepítővarázslóval a WaaS plat
 A multisite telepítés befejezése után a böngésződ átirányít az újonnan engedélyezett hálózati adminon keresztül. Előfordulhat, hogy újra be kell jelentkezned, mivel a hitelesítési cookie-k frissülnek a multisite környezethez.
 :::
 
-## Manuális telepítés alternatívaként
+## Manuális telepítés alternatívaként {#manual-setup-fallback}
 
 Ha a varázsló nem tudja írni a `wp-config.php` fájlt (fájljogosultságok vagy szerverkorlátozások miatt), megjeleníti a pontos kódot, amit manuálisan kell hozzáadnod:
 
@@ -117,9 +117,9 @@ Ha a varázsló nem tudja írni a `wp-config.php` fájlt (fájljogosultságok va
 
 A manuális módosítások elvégzése után frissítsd az oldalt, és a varázsló észlelni fogja, hogy a multisite most már aktív.
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### A varázsló azt jelzi, hogy a wp-config.php nem írható
+### A varázsló azt jelzi, hogy a wp-config.php nem írható {#the-wizard-says-wp-configphp-is-not-writable}
 
 A webszerver folyamatnak írási jogosultságra van szüksége a `wp-config.php` fájlhoz. A következőket teheted:
 
@@ -127,7 +127,7 @@ A webszerver folyamatnak írási jogosultságra van szüksége a `wp-config.php`
 - Használd a varázsló által megadott manuális telepítési utasításokat
 - Kérj segítséget a tárhelyszolgáltatódtól
 
-### Az oldalak nem érhetők el a telepítés után (aldomainek)
+### Az oldalak nem érhetők el a telepítés után (aldomainek) {#sites-are-not-accessible-after-setup-subdomains}
 
 Ha az aldomain struktúrát választottad, **wildcard DNS-t** kell konfigurálnod a domainedhez. Adj hozzá egy DNS rekordot:
 
@@ -139,7 +139,7 @@ Value: [a szervered IP-címe]
 
 Kérdezd meg a tárhelyszolgáltatódat, ha nem vagy biztos benne, hogyan kell ezt beállítani.
 
-### Hitelesítési problémák a telepítés után
+### Hitelesítési problémák a telepítés után {#authentication-issues-after-setup}
 
 Ha kijelentkeztetett a rendszer, vagy cookie-hibákat tapasztalsz a multisite telepítés után:
 
@@ -147,7 +147,7 @@ Ha kijelentkeztetett a rendszer, vagy cookie-hibákat tapasztalsz a multisite te
 2. Jelentkezz be újra itt: `yourdomain.com/wp-login.php`
 3. Ha a probléma továbbra is fennáll, ellenőrizd, hogy a `wp-config.php` fájlban nincs-e a `COOKIE_DOMAIN` `false`-ra állítva — ez egy ismert probléma az aldomain multisite telepítéseknél
 
-### Egy lépés meghiúsult a telepítés során
+### Egy lépés meghiúsult a telepítés során {#a-step-failed-during-installation}
 
 Ha az egyik telepítési lépés hibát jelez:
 

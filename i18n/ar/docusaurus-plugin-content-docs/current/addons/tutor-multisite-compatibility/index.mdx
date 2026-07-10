@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# توافق Tutor Multisite
+# توافق Tutor Multisite {#tutor-multisite-compatibility}
 
 إضافة WordPress تضيف إصلاحات التوافق لـ Tutor LMS في بيئات متعددة المواقع.
 
-## Description
+## Description {#description}
 
 توفر هذه الإضافة إصلاحات التوافق الأساسية لتشغيل Tutor LMS على شبكات WordPress متعددة المواقع. تتعامل مع تسجيل المستخدمين، إدارة المدربين، حدود الدورات، وغيرها من الوظائف الخاصة بمتعدد المواقع.
 
-## Features
+## Features {#features}
 
 - **إدارة جداول قاعدة البيانات**: يكتشف ويخلق تلقائياً جداول Tutor LMS المفقودة التي تفشل بسبب قيود المفاتيح الأجنبية في بيئات متعددة المواقع
 - **تسجيل مستخدم متعدد المواقع**: معالجات AJAX مخصصة لإدارة تسجيل المستخدم عبر مواقع الشبكة
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **واجهات إدارة مخصصة**: قائمة المدربين وإدارة الواجهة المستوعبة لمتعدد المواقع
 - **أدوات الإدارة**: واجهة إدارة قاعدة البيانات للمشرفين على الشبكة والمواقع
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - تثبيت WordPress Multisite
 - إضافة Ultimate Multisite (لإدارة حدود الدورات)
 
-## Installation
+## Installation {#installation}
 
 1. Upload the plugin files to `/wp-content/plugins/tutor-multisite-compatibility/`
 2. تأكد من تثبيت Tutor LMS وتفعيله
 3. فعّل الإضافة عبر قائمة 'الإضافات' في WordPress
 4. ستتكامل الإضافة تلقائياً مع Tutor LMS
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Moved from MU Plugin
+## Functionality Moved from MU Plugin {#functionality-moved-from-mu-plugin}
 
 This plugin contains functionality that was previously in `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ This plugin contains functionality that was previously in `wp-content/mu-plugins
 - معالجة تسجيل مستخدم متعدد المواقع
 - عرض معرف منتج الدورة
 
-## Database Management
+## Database Management {#database-management}
 
-### The Problem
+### The Problem {#the-problem}
 
 في بيئات WordPress متعددة المواقع، يفشل إنشاء جداول Tutor LMS للجدول الذي يحتوي على قيود المفاتيح الأجنبية على جدول المستخدمين. يحدث ذلك لأن:
 
@@ -81,7 +81,7 @@ This plugin contains functionality that was previously in `wp-content/mu-plugins
 - المفاتيح الأجنبية تشير إلى `wp_2_users` (التي لا توجد)
 - جدول المستخدمين الفعلي هو `wp_users` (مشترك عبر الشبكة)
 
-### The Solution
+### The Solution {#the-solution}
 
 This plugin automatically:
 
@@ -92,13 +92,13 @@ This plugin automatically:
    - إنشاء موقع جديد في الشبكة
    - التحقق اليدوي للجداول عبر واجهة الإدارة
 
-### Affected Tables
+### Affected Tables {#affected-tables}
 
 - `tutor_coupon_usages` - يحتوي على مفتاح أجنبي إلى جدول المستخدمين
 - `tutor_carts` - يحتوي على مفتاح أجنبي إلى جدول المستخدمين
 - `tutor_notification_preferences` - جدول TutorPro مع مفتاح أجنبي إلى جدول المستخدمين
 
-### Admin Interface
+### Admin Interface {#admin-interface}
 
 Access the database management tools at:
 
@@ -112,6 +112,6 @@ The interface allows you to:
 - التحقق من إعدادات قاعدة البيانات
 - عرض معلومات الحالة التفصيلية
 
-## Support
+## Support {#support}
 
 تم تصميم هذه الإضافة خصيصًا لمنصة KursoPro. للحصول على الدعم الفني، اتصل بفريق التطوير.

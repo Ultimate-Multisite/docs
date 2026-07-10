@@ -3,7 +3,7 @@ title: پرو تھیم
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# خپل ایڈمن پینل د PRO Theme سره شخصی کول
+# خپل ایڈمن پینل د PRO Theme سره شخصی کول {#customizing-your-admin-panel-with-pro-theme}
 
 کله چې موږ د کلاینټ کار کوو، ډیری وختونه موږ باید خپل کلاینټانو ته ونه یوه ځانګړت تجربه په WordPress د ایڈمن ډشټ‌بورد کې ورکړو. که تاسو یو ډېر حرفي او ښکلی شکل غواړئ، PRO Theme به ستاسو مرسته وکړي.
 

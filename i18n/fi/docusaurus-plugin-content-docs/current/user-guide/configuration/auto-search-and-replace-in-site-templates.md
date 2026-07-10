@@ -3,7 +3,7 @@ title: Automaattinen haku ja korvauksen vaihtaminen sivustokopioissa
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automaattinen haku ja korvauksen teksti sivustokopioissa (v2)
+# Automaattinen haku ja korvauksen teksti sivustokopioissa (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tämä opas vaatii WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Asiakkaasi voi täyttää kyseisen kentän rekisteröinnin aikana.
 
 Ultimate Multisite korvaa sitten paikkamerkit automaattisesti asiakkaalta annetulla datalla.
 
-## **Ongelman ratkaiseminen "template täynnä paikkamerkkejä" -ongelmasta**
+## **Ongelman ratkaiseminen "template täynnä paikkamerkkejä" -ongelmasta** {#solving-the-template-full-of-placeholders-problem}
 
 Kaikki tämä on loistavaa, mutta me kohtaamme häiritsevän ongelman: nyt sivustokopioissamme – joita asiakkaat voivat vierailla – on paljon häiritseviä paikkamerkkejä, jotka eivät kerro mitään.
 

@@ -3,7 +3,7 @@ title: Κοινότητα
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Πώς να εγγραφείτε στην Κοινότητα του Ultimate Multisite
+# Πώς να εγγραφείτε στην Κοινότητα του Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Η Κοινότητα του Ultimate Multisite είναι ένας χώρος όπου μπορείτε να επικοινωνήσετε με άλλους χρήστες του Ultimate Multisite και να μοιραστείτε συμβουλές, εμπειρίες και πολλά άλλα. Για να αποκτήσετε πρόσβαση στην Κοινότητα του Ultimate Multisite, επισκεφθείτε τη διεύθυνση https://community.ultimatemultisite.com/home.
 

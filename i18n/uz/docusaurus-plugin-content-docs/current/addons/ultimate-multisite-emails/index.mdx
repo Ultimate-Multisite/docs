@@ -1,0 +1,197 @@
+---
+title: Elektron xatlar
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emaillar {#emails}
+
+Ultimate Multisite: Emails qo‘shimchasi tarmoq egalariga saytlar va a’zoliklar bilan birga mijoz email hisoblarini yaratish va boshqarish imkonini beradi. 1.1.0 versiyasi mijozlar uchun email hisobini boshqarish, webmail yagona kirishi, CyberPanel yo‘naltiruvchi qo‘llab-quvvatlashi va checkout vaqtida yaratish yaxshilanishlarini qo‘shadi.
+
+## Asosiy imkoniyatlar {#key-features}
+
+* **Mijoz email hisobi vidjeti**: Mijozlar faol email a’zoligiga ega bo‘lgandan so‘ng o‘z hisob sahifasidan pochta qutilarini yaratishi va boshqarishi mumkin.
+* **Webmail SSO va sehrli havolalar**: Provayder qo‘llab-quvvatlasa, mijozlar bir bosishli autentifikatsiya orqali hisob sahifasidan webmailni bevosita ochishi mumkin.
+* **Parolni o‘zgartirish**: Mijozlar va administratorlar email boshqaruv vidjetidan pochta qutisi parollarini yangilashi mumkin.
+* **Checkout huquqlarini yaratish**: Checkout email a’zoligini yaratadi, uni mijozning sayt domeniga bog‘laydi va hisob sahifasidagi pochta qutisi vositalarini mavjud qiladi.
+* **CyberPanel yo‘naltiruvchilari**: CyberPanel asosidagi tarmoqlar email xizmati jarayonining bir qismi sifatida email yo‘naltiruvchilarini yaratishi va boshqarishi mumkin.
+* **Provayderdan xabardor sozlamalar**: Sozlamalar sahifasi provayderlarni faol, sozlangan integratsiyalarga filtrlab beradi, shunda administratorlar faqat foydalanish mumkin bo‘lgan variantlarni ko‘radi.
+
+## Talablar {#requirements}
+
+* Ultimate Multisite 2.0.0 yoki undan yuqori
+* WordPress Multisite o‘rnatmasi
+* Kamida bitta sozlangan email provayder integratsiyasi
+* Pochta qutilarini yaratish, parollarni o‘zgartirish va qo‘llab-quvvatlanadigan joylarda webmail kirish havolalarini chiqarish ruxsatiga ega provayder API hisob ma’lumotlari
+
+## O‘rnatish {#installation}
+
+1. Plagin fayllarini `/wp-content/plugins/ultimate-multisite-emails` manziliga yuklang.
+2. Qo‘shimchani WordPress tarmoq adminidagi **Plaginlar** bo‘limidan tarmoq bo‘yicha faollashtiring.
+3. **Ultimate Multisite** > **Sozlamalar** ga o‘ting va qo‘shimchaning email sozlamalarini oching.
+4. Mijozlar foydalanishini xohlagan email provayder integratsiyalarini yoqing.
+5. Sozlamalarni saqlang, so‘ng ishlab chiqarish muhitiga tegishli bo‘lmagan mijoz yoki staging sayti bilan hisob yaratishni sinab ko‘ring.
+
+## Email sotuvchi jarayoni qanday ishlaydi {#how-the-email-seller-flow-works}
+
+Email sotish ikki alohida qatlamdan iborat:
+
+1. **Huquq** — mijozga muayyan sayt domeni, provayder, kvota va hisob limiti uchun emaildan foydalanishga ruxsat berilganini bildiradigan Ultimate Multisite email mahsuloti/a’zoligi.
+2. **Pochta qutisini yaratish** — mijoz yoki tarmoq administratori lokal qism va parolni tanlaganda yaratiladigan haqiqiy provayder pochta qutisi, masalan `info@example.com`.
+
+Checkout davomida qo‘shimcha **email a’zoligini** yaratadi yoki faollashtiradi hamda mijozning sayt domeni va provayderini shu a’zolikda qayd etadi. U pochta qutisi nomi yoki parolni taxmin qilmaydi. Xarid yakunlangach va sayt/domen konteksti mavjud bo‘lgach, mijoz hisob sahifasini ochib, xohlagan pochta qutisi nomlarini yaratishi mumkin.
+
+Bu oddiy mijoz jarayoni quyidagicha bo‘lishini anglatadi:
+
+1. Mijoz sayt rejasini sotib oladi va checkout davomida email mahsulotini qo‘shadi.
+2. Ultimate Multisite sayt a’zoligi va ikkilamchi email a’zoligini yaratadi.
+3. Emails qo‘shimchasi email a’zoligini mijozning sayt domeni va provayderiga bog‘laydi.
+4. Mijoz o‘z Dashboard ichida **Account** ni ochadi.
+5. Faol email a’zoligi uchun **Email hisoblari** paneli ko‘rinadi.
+6. Mijoz **Account yaratish** tugmasini bosadi, `info` kabi lokal qismni kiritadi, parol o‘rnatadi va qo‘shimcha sozlangan provayderda `info@their-domain.com` ni yaratadi.
+
+## Email mahsulotini sozlash {#configure-an-email-product}
+
+Sotmoqchi yoki bepul bermoqchi bo‘lgan har bir email paketi uchun bitta email mahsuloti yarating. Agar mahsulot sozlashda yangi bo‘lsangiz, [Birinchi obuna mahsulotingizni yaratish](../../user-guide/configuration/creating-your-first-subscription-product) dan boshlang va keyin emailga xos sozlamalar uchun bu yerga qayting.
+
+1. **Tarmoq admini > Ultimate Multisite > Mahsulotlar > Mahsulot qo‘shish** ga o‘ting.
+2. **Mahsulot turi** ni **Email** ga o‘rnating.
+3. Narxlashni sozlang. Sotiladigan reja uchun pullik takrorlanuvchi narxdan foydalaning yoki mahsulot qo‘shimcha bepul email rejasi bo‘lishi kerak bo‘lsa, uni bepul/nol narxli qilib o‘rnating.
+4. **Email sozlamalari** bo‘limini oching.
+5. Sozlangan **Email provayderi** ni tanlang.
+6. Zaruratga qarab **Hisoblar soni**, **Xotira kvotasi (MB)**, taxallus limitlari, yo‘naltiruvchilar va avtojavob beruvchilarni o‘rnating.
+7. Mahsulotni saqlang.
+
+Provayder tanlagichida faqat **Integratsiyalar** sahifasida yoqilgan va to‘liq sozlangan provayderlar ko‘rinadi. Agar tanlagich bo‘sh bo‘lsa, avval provayderni sozlang va sinab ko‘ring.
+
+## Checkoutga email qo‘shish {#add-email-to-checkout}
+
+Email mahsulotlari odatda sayt rejasiga qo‘shimcha sifatida taklif etiladi. Umumiy checkout tahrirlovchisi jarayoni uchun [Checkout formalari](../../user-guide/configuration/checkout-forms) ga qarang.
+
+1. Mijozlar avval sotib oladigan sayt rejasini yarating yoki tahrirlang.
+2. Email mahsulotini shu checkout jarayoni uchun mavjud qo‘shimcha/order bump sifatida qo‘shing.
+3. Checkout formasi odatiy talab qilinadigan sayt maydonlarini, ayniqsa sayt URL/domen maydonini hali ham o‘z ichiga olishini tasdiqlang.
+4. Staging mijozi bilan test checkoutni bajaring.
+5. Checkoutdan so‘ng mijozning [hisob sahifasi](../../user-guide/client-management/account-page) ni oching va **Email hisoblari** paneli ko‘rinishini tasdiqlang.
+
+Email domeni mijozning sayt domenidan olinadi. Mijozlar email mahsuloti bosqichida email domenini kiritmaydi.
+
+## Mijoz Account email boshqaruvi {#customer-account-email-management}
+
+1.1.0 versiyasi mijoz hisob sahifasiga email boshqaruv vidjetini qo‘shadi. Mijozlar o‘z saytlarida pochta qutisini yaratish va xizmat ko‘rsatishni o‘zlari bajarishi kerak bo‘lganda undan foydalaning.
+
+Hisob sahifasidan mijozlar quyidagilarni bajara oladi:
+
+1. Joriy email a’zoligi/sayt domeniga ulangan email hisoblarini ko‘rish.
+2. Email mahsuloti qo‘shimcha hisoblarga ruxsat berganda yangi pochta qutisi yaratish.
+3. Mavjud pochta qutisi parolini o‘zgartirish.
+4. Qo‘llab-quvvatlanadigan webmail provayderlarini SSO yoki sehrli havola orqali kirish bilan ochish.
+
+Vidjet Ultimate Multisite hisob sahifasi joriy kontekstlari tizimidan foydalanadi, shuning uchun amallar mijoz ko‘rayotgan hisob konteksti doirasida cheklanadi. Bu mijozlarning boshqa a’zolik yoki saytga tegishli email hisoblarini boshqarishini oldini oladi.
+
+Agar mijoz email panelini ko‘rmasa, unda **faol Email mahsuloti a’zoligi** borligini, a’zolik sayt domeniga bog‘langanligini va mahsulotda provayder sozlanganligini tekshiring.
+
+## Mijozga bepul Email rejasi berish {#giving-a-customer-a-free-email-plan}
+
+Mijozga emailni to‘lovsiz berish uchun avval **email huquqi**ni bering, so‘ng pochta qutisini yarating yoki mijozning o‘zi yaratishiga ruxsat bering.
+
+Tavsiya etilgan variantlar:
+
+* **Bepul email mahsuloti yarating**: email mahsuloti narxini bepul/nol qilib belgilang, so‘ng **Ultimate Multisite > A’zoliklar > A’zolik qo‘shish** orqali shu mijoz uchun faol a’zolik qo‘shing. Email mahsulotini va mijozni tanlang. Bepul a’zoliklar o‘zgartirilmaguncha yoki bekor qilinmaguncha umrbod amal qiladi. Agar email a’zoligi mavjud saytga ergashishi kerak bo‘lsa, u o‘sha sayt/domen kontekstiga bog‘langanligiga ishonch hosil qiling.
+* **100% chegirma yoki bepul to‘lov havolasidan foydalaning**: mijoz to‘lov jarayonidan o‘tsin, shunda Ultimate Multisite email a’zoligi va to‘lov yozuvini avtomatik yaratadi.
+* **Administrator sifatida pochta qutisi yarating**: mijoz uchun provayderda muayyan pochta qutisini yaratish uchun **Ultimate Multisite > Email hisoblari > Email hisobi qo‘shish** bo‘limiga o‘ting. Bu qo‘llab-quvvatlash uchun foydali, lekin mijozning o‘ziga xizmat ko‘rsatish Account sahifasi vositalarini ishlatadigan email mahsuloti a’zoligining o‘rnini bosmaydi.
+
+Agar mijoz Account sahifasidan pochta qutisini o‘zi boshqarishini istasangiz, domen uchun unda faol email a’zoligi borligiga ishonch hosil qiling. Bunday a’zoliksiz qo‘lda yaratilgan provayder pochta qutisi mavjud bo‘lishi mumkin, lekin mijoz uning uchun o‘ziga xizmat ko‘rsatish email panelini ko‘rmasligi mumkin.
+
+## Administrator tomonidan yaratilgan hisoblar va "Buyurtma raqami yo‘q" {#admin-created-accounts-and-no-order-number}
+
+**Email hisoblari** administrator sahifasi provayder pochta qutisini yaratadi yoki tahrirlaydi. Bu email rejasini sotish yoki berishdagi birinchi qadam emas.
+
+Email hisobini tahrirlayotganda, **A’zolik** maydoni mavjud Ultimate Multisite a’zoliklarini ularning havola/buyurtma raqami bo‘yicha qidiradi. Agar mijozda email a’zoligi bo‘lishidan oldin hisob tayinlashga urinsangiz, tanlash uchun buyurtma raqami bo‘lmasligi mumkin.
+
+Buning o‘rniga quyidagi amallar tartibidan foydalaning:
+
+1. Mijozning email a’zoligini yarating yoki toping. Xaridlar uchun buni to‘lov jarayoni bajaradi. Sovg‘a rejasi uchun a’zolikni [A’zoliklar](../../user-guide/administration/managing-memberships) orqali qo‘lda yarating yoki mijozni bepul to‘lov jarayonidan o‘tkazing.
+2. A’zolik faol ekanligini va Email mahsulotidan foydalanishini tasdiqlang.
+3. Email a’zoligi sayt domeni/provayderiga bog‘langanligini tasdiqlang.
+4. Pochta qutisini mijoz Account sahifasidan yoki **Ultimate Multisite > Email hisoblari** orqali yarating.
+5. Kerak bo‘lsa, pochta qutisi yozuvini tahrirlang va mijoz, a’zolik hamda saytni tayinlang.
+
+Agar mijoz uchun faqat provayder pochta qutisini yaratishingiz kerak bo‘lsa va Account sahifasidan o‘ziga xizmat ko‘rsatish boshqaruvi kerak bo‘lmasa, administrator tomonidan yaratilgan hisob yetarli bo‘lishi mumkin. Agar mijoz uni Ultimate Multisite ichida ko‘rishi va boshqarishini istasangiz, email a’zoligini ham yarating.
+
+## Webmail SSO va Magic-Link orqali kirish {#webmail-sso-and-magic-link-login}
+
+Webmail SSO mijozlarga Account sahifasidan to‘g‘ridan-to‘g‘ri **webmailni ochish** amalini beradi. Faol provayder qo‘llab-quvvatlaganda, qo‘shimcha qisqa muddatli kirish URL manzilini so‘raydi va mijozdan pochta qutisi hisob ma’lumotlarini nusxalashni so‘ramasdan uni webmailga yo‘naltiradi.
+
+Provayder xatti-harakati farq qilishi mumkin:
+
+* Mahalliy SSO APIlariga ega provayderlar to‘g‘ridan-to‘g‘ri autentifikatsiyalangan webmail sessiyasini yaratishi mumkin.
+* Magic-link qo‘llab-quvvatlovchi provayderlar vaqt bilan cheklangan kirish havolasini yaratishi mumkin.
+* SSO yoki magic-link qo‘llab-quvvatlamaydigan provayderlar baribir pochta qutisi tafsilotlari va parolni boshqarish amallarini ko‘rsatishi kerak, lekin bir bosishli webmail tugmasi bo‘lmaydi.
+
+Webmail kirishini faqat kerakli API hisob ma’lumotlari sozlangan provayderlar uchun yoqing. Agar biror provayder uchun amal ko‘rinmasa, avval provayder faol, sozlangan va webmail kirish havolalarini qo‘llab-quvvatlashini tasdiqlang.
+
+## To‘lov jarayonida ta’minlash {#checkout-provisioning}
+
+Qo‘shimcha to‘lov jarayonida email **a’zolik konteksti**ni ta’minlaydi. U provayder, hisob limiti, kvota va sayt domenini yozib boradi, shunda mijozlar xariddan keyin Account sahifasidan o‘z pochta qutisi nomlarini yaratishi mumkin.
+
+Tavsiya etilgan joriy etish:
+
+1. Email mahsulotini taklif qilishdan oldin provayder va mahsulot limitlarini sozlang.
+2. Staging mahsuloti bilan xaridni sinab ko‘ring va email a’zoligi yaratilganligini tasdiqlang.
+3. Domen uchun **Email hisoblari** vidjeti ko‘rinishini tasdiqlash uchun mijoz Account sahifasini ko‘rib chiqing.
+4. Vidjetdan sinov pochta qutisini yarating.
+5. Ishlab chiqarish mahsulotlari uchun jarayonni yoqishdan oldin parolni o‘zgartirish va webmail amallarini tasdiqlang.
+
+Agar ta’minlash muvaffaqiyatsiz bo‘lsa, email a’zoligi yoki provayder pochta qutisi administrator kuzatuvini talab qilgan holda, mijoz hisobi va a’zoligi baribir mavjud bo‘lishi mumkin. Qayta urinishdan oldin Ultimate Multisite faoliyat jurnallarini va provayder jurnallarini tekshiring.
+
+## CyberPanel Email yo‘naltiruvchilari {#cyberpanel-email-forwarders}
+
+CyberPanel asosidagi tarmoqlar uchun 1.1.0 versiyasi email yo‘naltiruvchi qo‘llab-quvvatlashini qo‘shadi. Mijozlarga `info@customer-domain.test` kabi manzillar to‘liq pochta qutisi yaratmasdan xatlarni boshqa inboxga yo‘naltirishi kerak bo‘lganda yo‘naltiruvchilardan foydalaning.
+
+Yo‘naltiruvchilarni taklif qilishdan oldin, CyberPanel integratsiyasi sozlangan va unga ulanish mumkin ekanligini tasdiqlang. Kerakli host, username, password va paket konstantalari uchun [CyberPanel integratsiyasi](../../user-guide/administration/cyberpanel-integration) qo‘llanmasiga qarang.
+
+## O‘zgarishlar jurnali {#changelog}
+
+### Versiya 1.1.0 - 2026-05-05 da chiqarilgan {#version-110---released-on-2026-05-05}
+
+* Yangi: Webmail SSO va magic-link orqali kirish — mijozlar bir marta bosish orqali autentifikatsiya bilan o‘z Accountidan bevosita webmailga kira oladi.
+* Yangi: Email Account boshqaruv vidjetiga parolni o‘zgartirish funksiyasi qo‘shildi.
+* Yangi: CyberPanel email forwarder qo‘llab-quvvatlashi.
+* Yangi: Mijoz Account sahifasida mustaqil Account yaratish va boshqarish uchun Email boshqaruv vidjeti.
+* Yangi: Mijozning Email Account huquqlarini ta’minlash checkout jarayoniga integratsiya qilindi.
+* Tuzatish: Account sahifasi vidjeti hooki to‘g‘ri UMS ro‘yxatdan o‘tkazish andozasidan foydalanish uchun yangilandi.
+* Tuzatish: Create Account formasi vanilla JS va to‘g‘ri to‘liq HTML document chiqishi bilan almashtirildi.
+* Tuzatish: Email boshqaruv vidjeti endi admin Account sahifalari uchun UMS currents tizimidan foydalanadi.
+* Tuzatish: Admin Email Account yaratish formasi parol maydonini o‘z ichiga oladi va Email_Account_Managerdan foydalanadi.
+* Tuzatish: Har bir so‘rovga oid log spami Email_Account_Manager ishga tushirilishidan olib tashlandi.
+* Yaxshilandi: Settings sahifasi endi faqat faol va sozlangan Email providerlarni ko‘rsatish uchun filtrlaydi.
+
+## Tez-tez so‘raladigan savollar {#frequently-asked-questions}
+
+### Mijozlar o‘z Email Accountlarini yaratishi mumkinmi? {#can-customers-create-their-own-email-accounts}
+
+Ha. Mijozda domen uchun faol Email a’zoligi bo‘lsa va mahsulot qo‘shimcha Accountlarga ruxsat bersa, mijozlar Account sahifasidan o‘z mailboxlarini yaratishi va boshqarishi mumkin.
+
+### Har bir provider Webmail SSOni qo‘llab-quvvatlaydimi? {#does-every-provider-support-webmail-sso}
+
+Yo‘q. SSO va magic-link qo‘llab-quvvatlashi faol Email providerga bog‘liq. Access-link APIga ega bo‘lmagan providerlar ham mailbox yaratish va parol o‘zgartirishni qo‘llab-quvvatlashi mumkin.
+
+### Administratorlar mijozlar uchun Email Accountlar yaratishi mumkinmi? {#can-administrators-create-email-accounts-for-customers}
+
+Ha. Administratorlar admin interfeysidan Email Accountlar yaratishi, jumladan Account yaratishda boshlang‘ich parolni belgilashi mumkin. Mijozning mustaqil boshqaruvi uchun mijozda domen uchun faol Email a’zoligi borligiga ham ishonch hosil qiling.
+
+### Email Accountni bepul berishim mumkinmi? {#can-i-give-an-email-account-away-for-free}
+
+Ha. Bepul/nol narxli Email mahsulot yarating va uni mijoz uchun faol a’zolik sifatida qo‘shing yoki mijozga 100% chegirma bilan checkoutni yakunlashiga ruxsat bering. Email a’zoligi mavjud bo‘lgach, mijoz yoki administrator haqiqiy mailboxni yaratishi mumkin.
+
+### Nega Email Account tayinlash buyurtma raqamini so‘raydi? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Membership maydoni mavjud Ultimate Multisite a’zoligini uning reference/buyurtma raqami bo‘yicha qidiradi. Agar mijoz Email mahsulot sotib olmagan bo‘lsa va siz Email a’zoligini qo‘lda yaratmagan bo‘lsangiz, tayinlash uchun Email a’zoligi/buyurtmasi bo‘lmaydi. Avval Email a’zoligini yarating, keyin mailboxni yarating yoki tayinlang.
+
+### Forwarderlar mailboxlar bilan bir xilmi? {#are-forwarders-the-same-as-mailboxes}
+
+Yo‘q. Mailbox xatlarni saqlaydi va kirish ma’lumotlariga ega. Forwarder xatlarni boshqa manzilga yo‘naltiradi va alohida inbox taqdim etmaydi.

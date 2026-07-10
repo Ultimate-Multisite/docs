@@ -3,11 +3,11 @@ title: Webhook నిర్వహణ
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# వెబ్‌హుక్ హ్యాండ్లింగ్
+# వెబ్‌హుక్ హ్యాండ్లింగ్ {#webhook-handling}
 
 ఎక్స్టర్నల్ సర్వీసుల నుండి వచ్చే ఈవెంట్‌లను స్వీకరించడానికి మరియు Ultimate Multisite తో డేటాను సింక్ చేయడానికి కస్టమ్ వెబ్‌హుక్ ఎండ్‌పాయింట్‌లను సృష్టించండి.
 
-## Custom Webhook Endpoint
+## Custom Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - ఎల్లప్పుడూ HMAC లేదా షేర్డ్ సీక్రెట్‌ని ఉపయోగించి వెబ్‌హుక్ సిగ్నేచర్లను ధృవీకరించండి.
 - మీ REST రూట్‌లో `permission_callback` ఉపయోగించండి — ప్రొడక్షన్‌లో ఎప్పుడూ దీనిని `__return_true` గా సెట్ చేయవద్దు.

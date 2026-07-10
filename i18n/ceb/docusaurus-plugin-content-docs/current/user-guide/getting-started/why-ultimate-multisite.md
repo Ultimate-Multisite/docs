@@ -3,11 +3,11 @@ title: Ngano ang Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ngano sa Ultimate Multisite
+# Ngano sa Ultimate Multisite {#why-ultimate-multisite}
 
 Kung naa ka diri ni article, siguro nadungog nimo nga ang among plugin mahimong solusyon para ma-realize ang imong business idea. Naglaum mi nga makahatag kami sa mga tubag nga imong kinahanglan sa katapusan ni nga bahin.
 
-## Unsa man ang Ultimate Multisite?
+## Unsa man ang Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ang Ultimate Multisite kay usa ka WordPress Multisite plugin nga nagtugot kanimo magtanyag og WaaS (Website as a Service) sa imong mga customer. Gamit ang among plugin, pwede kang adunay lain-laing subscription tiers ug makabayad ang mga customer nimo og recurring fee para magkaroon sila og site nga gihost sa imong Multisite network.
 
@@ -15,7 +15,7 @@ Ang Ultimate Multisite nagtugot kanimo makadawat sa imong bayad gamit ang lain-l
 
 Ug kini usa lang nagsugod kay pwede nimo palawon ang mga function niini gamit ang add-ons ug webhooks.
 
-## Ubang mga feature
+## Ubang mga feature {#other-features}
 
 Ang Ultimate Multisite nagtanyag usab:
 
@@ -33,11 +33,11 @@ Ug mas advanced pa:
 
 * Search and Replace API: Mahimo usab nimong iannotate ang site templates gamit ang mga placeholder sama ni `{{site_name}}` ug gamiton ang Search and Replace API aron awtomatikong pun-on (auto-populate) ang mga placeholder na kana nga impormasyon nga gihatag sa imong customer human sa pag-sign up.
 
-## Mga Kasagaran nga Paggamit (Use cases)
+## Mga Kasagaran nga Paggamit (Use cases) {#use-cases}
 
 Karon panahon na aron makita ang pipila ka posibleng gamit alang sa Ultimate Multisite.
 
-### Kaso 1: Usa ka Agency
+### Kaso 1: Usa ka Agency {#case-1-an-agency}
 
 Kasagaran, ang mga core skills sa usa ka agency naglangkob sa pagdisenyo og mga website nga adunay mga bahin sama sa ilang hosting o marketing nga gi-list isip dugang serbisyo.
 
@@ -47,7 +47,7 @@ Ang kontrol sa plugins ug themes gipadayon sa matag produkto pinaagi sa mga sett
 
 Makakuha og kalinawon ang mga agencies pinaagi sa Ultimate Multisite kay nagtugot kini kanila nga buhaton ang ilang pinakmaayo—pagdisenyo og talagsaong mga website.
 
-### Kaso 2: Niche Provider
+### Kaso 2: Niche Provider {#case-2-niche-provider}
 
 Naa'y daan nga pamatuod nga nagsulti, “Buhaton usa lang ug himuon kini sa maayo.” Para sa daghang mga espesyalista, nagpasabot niini ang paghimo og produkto o serbisyo labot sa usa ka sentro nga ideya.
 
@@ -57,7 +57,7 @@ Usa sa mga inobasyon sa Ultimate Multisite, ang template site kay mao kadtong th
 
 Para sa usa ka provider sa niche sites ug serbisyo, kini naghatag og dili matapakan nga bentaha sa abilidad sa dali nga makahimo og site nga andam na gamiton uban ang custom plugins ug design. Ang customer kinahanglan lang maghatag og gamay nga input aron mahuman ang serbisyo.
 
-### Kaso 3: WordPress Web Hosting
+### Kaso 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Naa'y daghang paagi sa pag-host og WordPress sites pero bihira kini ka simple sama sa paghatag og web space sa usa ka customer uban ang pre-installed version sa WordPress. Kini tungod kay kinahanglan nga magtagbo ang pipila ka mga desisyon ug konsiderasyon aron makahatag og makahuluganon nga serbisyo.
 

@@ -3,15 +3,15 @@ title: મેનુ બનાવો
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# મેનુ બનાવો (Create Menu)
+# મેનુ બનાવો (Create Menu) {#create-menu}
 
 **મેનુ બનાવો** ક્ષમતા (ability) નો ઉપયોગ WordPress નેવિગેશન મેનુ બનાવે છે, જેમાં પેજના ટાઇટલથી અલગ નેવિગેશન લેબલ (navigation labels) આપવાની સુવિધા હોય છે.
 
-## ઝાંખી (Overview)
+## ઝાંખી (Overview) {#overview}
 
 આ ક્ષમતા સામાન્ય મેનુ બનાવવાની કાર્યક્ષમતાને વિસ્તારે છે, જેમાં `navigation_label` પેરામીટર આપવાની સુવિધા ઉમેરે છે. આનાથી તમે એવા મેનુ બનાવી શકો છો જ્યાં નેવિગેશનમાં દેખાતું લેબલ પેજના ટાઇટલથી અલગ હોય, જે સાઇટની રચના (site structure) અને યુઝરના અનુભવ (user experience)માં વધુ લવચીકતા પ્રદાન કરે છે.
 
-## પેરામીટર્સ (Parameters)
+## પેરામીટર્સ (Parameters) {#parameters}
 
 | પેરામીટર | પ્રકાર (Type) | જરૂરી (Required) | વર્ણન (Description) |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 | `location` | string | No | આ મેનુને કયા થીમ લોકેશન (Theme location) પર એટેચ કરવું છે, ઉદાહરણ તરીકે: `primary` |
 | `navigation_label` | string | No | નેવિગેશનમાં દેખાતું લેબલ (પેજના ટાઇટલથી અલગ) |
 
-## રીટર્ન વેલ્યુ (Return Value)
+## રીટર્ન વેલ્યુ (Return Value) {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 }
 ```
 
-## નેવિગેશન લેબલ વિરુદ્ધ પેજ ટાઇટલ (Navigation Label vs Page Title)
+## નેવિગેશન લેબલ વિરુદ્ધ પેજ ટાઇટલ (Navigation Label vs Page Title) {#navigation-label-vs-page-title}
 
 `navigation_label` પેરામીટર તમને આંતરિક મેનુના નામ અને યુઝર્સને દેખાતા લેબલને અલગ કરવાની મંજૂરી આપે છે:
 
@@ -43,9 +43,9 @@ _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 - તમારે વિવિધ લેબલ લંબાઈઓ સાથે બહુવિધ ભાષાઓને સપોર્ટ કરવાની જરૂર હોય
 - તમે ચોક્કસ પ્રદેશો અથવા યુઝર ગ્રુપ્સ માટે મેનુ બનાવી રહ્યા હો
 
-## ઉપયોગના ઉદાહરણો (Usage Examples)
+## ઉપયોગના ઉદાહરણો (Usage Examples) {#usage-examples}
 
-### ઉદાહરણ ૧: નેવિગેશન લેબલ સાથે સરળ મેનુ (Simple Menu with Navigation Label)
+### ઉદાહરણ ૧: નેવિગેશન લેબલ સાથે સરળ મેનુ (Simple Menu with Navigation Label) {#example-1-simple-menu-with-navigation-label}
 
 **પ્રોમ્પ્ટ (Prompt):**
 ```
@@ -62,7 +62,7 @@ Create a primary navigation menu called "Main Navigation" with the navigation la
 }
 ```
 
-### ઉદાહરણ ૨: ચોક્કસ થીમ લોકેશન માટે મેનુ (Menu for Specific Theme Location)
+### ઉદાહરણ ૨: ચોક્કસ થીમ લોકેશન માટે મેનુ (Menu for Specific Theme Location) {#example-2-menu-for-specific-theme-location}
 
 **પ્રોમ્પ્ટ (Prompt):**
 ```
@@ -80,7 +80,7 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 }
 ```
 
-## થીમ બિલ્ડર સાથે સંકલન (Integration with Theme Builder)
+## થીમ બિલ્ડર સાથે સંકલન (Integration with Theme Builder) {#integration-with-theme-builder}
 
 જ્યારે તમે Theme Builder નો ઉપયોગ કરો છો, ત્યારે Create Menu ક્ષમતા:
 
@@ -89,13 +89,13 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 3. મેનુને યોગ્ય થીમ લોકેશન પર એટેચ કરે છે
 4. બનાવ્યા પછી મેનુ આઇટમ્સ ઉમેરવાનું સપોર્ટ કરે છે
 
-## સંબંધિત ક્ષમતાઓ (Related Abilities)
+## સંબંધિત ક્ષમતાઓ (Related Abilities) {#related-abilities}
 
 - **`add_menu_item`** — હાલના મેનુમાં આઇટમ્સ ઉમેરો
 - **`update_menu`** — મેનુનું નામ બદલો અથવા તેને થીમ લોકેશન પર ફરીથી એટેચ કરો
 - **`delete_menu`** — તમારી સાઇટમાંથી મેનુ દૂર કરો
 
-## શ્રેષ્ઠ પદ્ધતિઓ (Best Practices)
+## શ્રેષ્ઠ પદ્ધતિઓ (Best Practices) {#best-practices}
 
 - **સ્પષ્ટ નેવિગેશન લેબલનો ઉપયોગ કરો** — લેબલ ટૂંકા અને વર્ણનાત્મક રાખો જેથી યુઝર્સને સરળતા રહે
 - **થીમ લોકેશન સાથે મેળ ખાવો** — યોગ્ય પ્રદર્શન માટે મેનુને સાચા થીમ લોકેશન પર એટેચ કરો
@@ -103,14 +103,14 @@ Create a footer menu called "Footer Links" with navigation label "Quick Links" a
 - **પ્રતિભાવશીલતાનું પરીક્ષણ કરો** — ખાતરી કરો કે મેનુ મોબાઇલ ઉપકરણો પર યોગ્ય રીતે દેખાય છે
 - **લેબલને સ્થાનિક બનાવો (Localize)** — વિવિધ ભાષાના સંસ્કરણો માટે અલગ નેવિગેશન લેબલનો ઉપયોગ કરો
 
-## મર્યાદાઓ (Limitations)
+## મર્યાદાઓ (Limitations) {#limitations}
 
 - નેવિગેશન લેબલ ફક્ત પ્રદર્શન માટે છે; આંતરિક `name` હજી પણ WordPress ઓળખ માટે વપરાય છે
 - થીમ સપોર્ટ અલગ-અલગ હોય છે; બધા થીમ્સ બધા મેનુ લોકેશનને સપોર્ટ કરતા નથી
 - મેનુ આઇટમ્સ મેનુ બનાવ્યા પછી અલગથી ઉમેરવી પડે છે
 - નેવિગેશન લેબલ બદલવા માટે મેનુ અપડેટ કરવું જરૂરી છે
 
-## સંબંધિત ક્ષમતાઓ (Related Abilities)
+## સંબંધિત ક્ષમતાઓ (Related Abilities) {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — તમારી સાઇટ હેડર માટે લોગો બનાવો
 - [Validate Palette Contrast](./validate-palette-contrast.md) — એક્સેસિબલ કલર સ્કીમ્સ સુનિશ્ચિત કરો

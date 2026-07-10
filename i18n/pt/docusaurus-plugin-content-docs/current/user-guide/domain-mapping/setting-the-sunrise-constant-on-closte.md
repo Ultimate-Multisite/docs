@@ -3,13 +3,13 @@ title: Definindo a Constante do Nascer do Sol no Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Definindo a constante Sunrise como verdadeira no Closte
+# Definindo a constante Sunrise como verdadeira no Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Alguns provedores de hospedagem bloqueiam o wp-config.php por motivos de segurança. Isso significa que o Ultimate Multisite não consegue editar automaticamente o arquivo para incluir as constantes necessárias para que o mapeamento de domínio e outros recursos funcionem. O Closte é um desses hosts.
 
 No entanto, o Closte oferece uma maneira de adicionar constantes ao wp-config.php de forma segura. Você só precisa seguir os passos abaixo:
 
-## No painel do Closte
+## No painel do Closte {#on-the-closte-dashboard}
 
 Primeiro, [faça login na sua conta Closte](https://app.closte.com/), clique no item de menu Sites, depois clique no link Dashboard no site em que você está trabalhando:
 

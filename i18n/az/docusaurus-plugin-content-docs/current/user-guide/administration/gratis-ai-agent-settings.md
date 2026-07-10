@@ -1,105 +1,152 @@
 ---
-title: Pulsuz AI Agent Ayarları
+title: Gratis AI Agent Ayarları
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ayarları
+# Gratis AI Agent Ayarları {#gratis-ai-agent-settings}
 
-Gratis AI Agent-dəki **Ayarlar → Advanced** ekranı, v1.5.0-dan etibarən əlavə edilmiş arxa tərəf inteqrasiyaları üçün administrator səviyyəli konfiqurasiya təmin edir. Bu səhifə **Geri Bildiriş Endpoint** sahələrini və onların gözlənilən formatını təsvir edir.
+Gratis AI Agent-də **Settings → Advanced** ekranı backend inteqrasiyaları üçün administrator səviyyəli konfiqurasiya təqdim edir. Bu səhifə feedback yönləndirilməsini, axtarış provayderi açarlarını, idarə olunan Superdav xidmətinin qurulmasını, Google Calendar nəzarətlərini, TextBee SMS ayarlarını və şəbəkə üzrə funksiya bayraqlarını sənədləşdirir.
 
-## Ayarlara Daxil Olmaq
+## Ayarlara Giriş {#accessing-settings}
 
-1. WordPress admin panelində **Gratis AI Agent → Settings** yolunu izləyin.
+1. WordPress adminində **Gratis AI Agent → Settings** bölməsinə keçin.
 2. **Advanced** tabına klikləyin.
 
-## Geri Bildiriş Endpoint Konfiqurasiyası
+## Feedback Endpoint Konfiqurasiyası {#feedback-endpoint-configuration}
 
-Geri bildiriş endpoint-i, istifadəçi aşağı göstərici düyməsi, avtomatik prompt banner-i və ya `/report-issue` əmri vasitəsilə geri bildiriş göndərdikdə, AI agent-indən POST sorğuları alır.
+Feedback endpoint-i istifadəçi başbarmaq-aşağı düyməsi, avtomatik sorğu banneri və ya `/report-issue` əmri vasitəsilə feedback göndərəndə AI agent-dən POST sorğuları qəbul edir.
 
-| Field | Description |
+| Sahə | Təsvir |
 |---|---|
-| **Feedback Endpoint URL** | JSON bədəni ilə HTTP POST sorğuları şəklində geri bildiriş göndərən URL. |
-| **Feedback API Key** | Hər bir geri bildiriş sorğusunun `Authorization` başlığında göndərilən bir bearer token. Endpoint-iniz autentifikasiya tələb etmirsə, boş buraxın. |
+| **Feedback Endpoint URL** | JSON body ilə HTTP POST sorğuları kimi feedback göndərişlərini qəbul edən URL. |
+| **Feedback API Key** | Hər feedback sorğusunun `Authorization` header-də göndərilən bearer token. Endpoint-iniz autentifikasiya tələb etmirsə, boş saxlayın. |
 
-### Gözlənilən JSON Yüklənməsi
+### Gözlənilən JSON Payload {#expected-json-payload}
 
-Geri bildiriş endpoint-iniz ən azı aşağıdakı sahələri ehtiva edən bir JSON bədəni qəbul etməlidir:
+Feedback endpoint-iniz ən azı aşağıdakı sahələri olan JSON body qəbul etməlidir:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Qiymətlərlə bağlı cavab yanlış idi.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Əlavə sahələr, söhbət kontekstinə bağlı olaraq, yüklənmədə mövcud ola bilər.
+Söhbət kontekstindən asılı olaraq payload-da əlavə sahələr ola bilər.
 
-### `triage_category` Dəyərləri
+### `triage_category` Dəyərləri {#triagecategory-values}
 
-AI triaj layəri, yüklənməni ötürməzdən əvvəl `triage_category` üçün aşağıdakı dəyərlərdən birini təyin edir:
+AI triage qatı payload-u yönləndirməzdən əvvəl `triage_category` üçün aşağıdakı dəyərlərdən birini təyin edir:
 
-| Value | Meaning |
+| Dəyər | Məna |
 |---|---|
-| `factual_error` | Asistent yanlış faktiki məlumat verib. |
-| `unhelpful_answer` | Cavab texniki olaraq düzdür, lakin faydalı deyil. |
-| `inappropriate_content` | Cavab istifadəçilərə göstərilməməli olan məzmun ehtiva edir. |
-| `other` | Geri bildiriş tanınan bir kateqoriyaya uyğun gəlmir. |
+| `factual_error` | Assistent yanlış faktiki məlumat təqdim etdi. |
+| `unhelpful_answer` | Cavab texniki baxımdan düzgün idi, lakin faydalı deyildi. |
+| `inappropriate_content` | Cavab istifadəçilərə göstərilməməli məzmun ehtiva edirdi. |
+| `other` | Feedback məlum kateqoriyaya uyğun gəlmədi. |
 
-### Autentifikasiya
+### Autentifikasiya {#authentication}
 
-Endpoint-iniz autentifikasiya tələb edirsə, **Feedback API Key** sahəsini bearer token-inizlə təyin edin. Agent aşağıdakıları göndərir:
+Endpoint-iniz autentifikasiya tələb edirsə, **Feedback API Key** sahəsini bearer token-inizə təyin edin. Agent göndərir:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Əgər **Feedback API Key** sahəsi boşdursa, heç bir `Authorization` başlığı göndərilmir.
+**Feedback API Key** sahəsi boşdursa, `Authorization` header-i göndərilmir.
 
-### Geri Bildiriş Toplamağı Bağlamaq
+### Feedback Toplanmasının Deaktiv Edilməsi {#disabling-feedback-collection}
 
-**Feedback Endpoint URL** və **Feedback API Key** sahələrini boş buraxın. Aşağı göstərici düyməsi və geri bildiriş UI-si istifadəçilər üçün görünür qalır, lakin göndərilən məlumat heç bir xarici servislə ötürülmür.
+Həm **Feedback Endpoint URL**, həm də **Feedback API Key** sahələrini boş saxlayın. Başbarmaq-aşağı düyməsi və feedback UI istifadəçilərə görünməyə davam edir, lakin göndərişlər heç bir xarici xidmətə yönləndirilmir.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-**Advanced** tabında yerləşən **Brave Search API Key** sahəsi [Internet Search](../configuration/internet-search) funksionallığını aktivləşdirir.
+Həmçinin **Advanced** tabında **Brave Search API Key** sahəsi [İnternet Axtarışı](../configuration/internet-search) imkanını aktiv edir.
 
-| Field | Description |
+| Sahə | Təsvir |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard-unuzdan alınan API açarı. AI asistentində internet axtarışını aktivləşdirmək üçün tələb olunur. |
+| **Brave Search API Key** | Brave Search developer dashboard-dan API açarınız. AI assistentində internet axtarışını aktiv etmək üçün tələb olunur. |
 
-Sahə etiketi, Brave Search API qeydiyyat səhifəsinə keçid edən bir link ehtiva edir. İnternet axtarışını deaktiv etmək üçün boş buraxın.
+Sahə etiketi Brave Search API qeydiyyat səhifəsinə kliklənə bilən keçid ehtiva edir. İnternet axtarışını deaktiv etmək üçün boş saxlayın.
 
-Bu funksionallıq haqqında son istifadəçi sənədləstirməsi üçün [Internet Search](../configuration/internet-search) bölümünə baxın.
+Bu funksiya üzrə son istifadəçi sənədləri üçün [İnternet Axtarışı](../configuration/internet-search) bölməsinə baxın.
 
-## Xüsusiyyət Bayraqları (Feature Flags)
+## İdarə Olunan Superdav Xidməti {#managed-superdav-service}
 
-v1.9.0-da da təqdim edilmiş olan **Settings → Feature Flags** tabı, isteğe bağlı funksionallıq üçün açılıb-bağlanma düymələri təmin edir. Hər bir bayraq ya bütün sistemdə aktivdir ya da deaktivdir; hazırda sayt başına əlavə tənzimləmə yoxdur.
+Superdav AI Agent v1.18.0 dəstəklənən saytlar üçün idarə olunan Superdav xidmət endpoint-ləri və avtomatik bağlantı təminatını əlavə edir. Saytınız əl ilə konfiqurasiya edilmiş xidmət endpoint-i əvəzinə hosted provayderə qoşulmalı olduqda bu nəzarətlərdən istifadə edin.
 
-### Xüsusiyyət Bayraqlarına Daxil Olmaq
+| Sahə | Təsvir |
+|---|---|
+| **Managed Superdav Service** | Dəstəklənən saytlar üçün hosted Superdav xidmət bağlantısını aktiv edir. |
+| **Provision Connection** | Avtomatik endpoint və credential təminatını başladır. Saytın idarə olunan provayderdən istifadə etməli olduğunu təsdiqlədikdən sonra bundan istifadə edin. |
+| **Service Endpoint / Connection Status** | Təminatdan sonra cari endpoint-i və ya bağlantı vəziyyətini göstərir. |
 
-1. WordPress admin panelində **Gratis AI Agent → Settings** yolunu izləyin.
+Təminatdan sonra ayarları yadda saxlayın və idarə olunan xidmət iş axınlarına etibar etməzdən əvvəl bağlantı vəziyyətini yoxlayın. Təminat uğursuz olarsa, göstərilən təkrar cəhd təlimatını nəzərdən keçirin və saytın hosted provayderdən istifadə icazəsi olduğunu təsdiqləyin.
+
+## Google Calendar Konfiqurasiyası {#google-calendar-configuration}
+
+Superdav AI Agent v1.18.0 təqvim funksiyaları aktiv olduqda, agent konfiqurasiya edilmiş təqvimləri və tədbir detallarını oxuya bilər. Təqvim alətləri oxuma yönümlüdür və cədvəl-aware xatırlatmalar, iştirakçı izləməsi və kontakt uyğunlaşdırması üçün faydalıdır.
+
+| Sahə | Təsvir |
+|---|---|
+| **Google Calendar Credentials** | Təqvim məlumatlarını oxumaq üçün tələb olunan credential-ları və ya token bağlantısını saxlayır. |
+| **Calendar Selection** | Agent-in hansı konfiqurasiya edilmiş təqvimləri yoxlaya biləcəyini məhdudlaşdırır. |
+| **Calendar Connection Status** | Cari credential-ların təqvimləri və tədbirləri oxuya bilib-bilmədiyini təsdiqləyir. |
+
+Təqvim credential-larını agent-in ehtiyac duyduğu təqvimlərlə məhdud saxlayın. Vəziyyət müddəti bitmiş token göstərirsə, credential-ları yenidən qoşun və ya rotasiya edin.
+
+## TextBee SMS Bildirişləri {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 konfiqurasiya edilmiş bildiriş iş axınları üçün TextBee-ni SMS provayderi kimi əlavə edir. SMS bildirişləri həssas və ya istifadəçiyə yönəlmiş mesajlar üçün insan təsdiqi keçidləri ilə birlikdə istifadə edilməlidir.
+
+| Sahə | Təsvir |
+|---|---|
+| **TextBee API Key** | TextBee SMS provayderinə sorğuları autentifikasiya edir. |
+| **TextBee Device / Sender** | Provayder tərəfindən tələb olunduqda, çıxan mesajlar üçün istifadə edilən TextBee göndəricisini və ya cihazını seçir. |
+| **SMS Notifications Enabled** | Təsdiqlənmiş iş axınlarına mətn mesajı bildirişləri göndərməyə icazə verir. SMS göndərişlərinin qarşısını almaq üçün deaktiv saxlayın. |
+
+Test mesajını yalnız administratora məxsus nömrəyə göndərin, sonra planlaşdırılmış və ya iştirakçıya yönəlmiş xatırlatmaları aktiv etməzdən əvvəl təsdiq keçidi davranışını təsdiqləyin.
+
+## Funksiya Bayraqları {#feature-flags}
+
+v1.9.0-da da təqdim edilən **Settings → Feature Flags** tabı əlavə funksionallıq üçün toggle açarları təqdim edir. Hər bayraq şəbəkə üzrə ya aktiv, ya da deaktivdir; hazırda hər sayt üzrə ayrıca override yoxdur.
+
+### Funksiya Bayraqlarına Giriş {#accessing-feature-flags}
+
+1. WordPress adminində **Gratis AI Agent → Settings** bölməsinə keçin.
 2. **Feature Flags** tabına klikləyin.
 
-### Giriş Nəzarəti Bayraqları
+### Giriş Nəzarəti Bayraqları {#access-control-flags}
 
-| Flag | Default | Description |
+| Bayraq | Varsayılan | Təsvir |
 |---|---|---|
-| **Restrict to Administrators** | Off | Aktivləşdirildikdə, yalnız `administrator` rolu olan istifadəçilər AI Agent chat panelini aça bilər. Digər bütün rollar bunun əvəzinə "Administratorunuzla əlaqə saxlayın" mesajını görürlər. |
-| **Restrict to Network Admins** | Off | Multisite şəbəkəsində aktivləşdirildikdə, yalnız Super Adminlər agentdən istifadə edə bilər. Fərdi sayt administratorları bloklanır. Hər ikisi aktivdirsə, "Restrict to Administrators" üzərində üstünlük təşkil edir. |
-| **Allow Subscriber Access** | Off | Aktivləşdirildikdə, `subscriber` rolu olan istifadəçilər chat interfeysindən istifadə edə bilər, lakin yalnız oxumaqla məhdudlaşırlar (məqalə yaratmaq və ya ayarları dəyişdirmək yoxdur). |
-| **Disable for Non-Members** | Off | Ultimate Multisite üzvlük statusu ilə inteqrasiya olunur. Aktivləşdirildikdə, aktiv üzvlüyü olmayan saytlarda chat gizlənir. |
+| **Administratorlarla məhdudlaşdır** | Sönülü | Aktiv edildikdə, yalnız `administrator` roluna malik istifadəçilər AI Agent çat panelini aça bilər. Bütün digər rollar bunun əvəzinə "Administratorunuzla əlaqə saxlayın" mesajını görür. |
+| **Network Admins ilə məhdudlaşdır** | Sönülü | Multisite şəbəkəsində aktiv edildikdə, agentdən yalnız Super Admins istifadə edə bilər. Ayrı-ayrı sayt administratorları bloklanır. Hər ikisi aktivdirsə, "Administratorlarla məhdudlaşdır" parametrindən üstün olur. |
+| **Subscriber girişinə icazə ver** | Sönülü | Aktiv edildikdə, `subscriber` roluna malik istifadəçilər çat interfeysindən istifadə edə bilər, lakin yalnız oxuma imkanları ilə məhdudlaşdırılırlar (göndəriş yaratma və ya ayar dəyişiklikləri yoxdur). |
+| **Üzv olmayanlar üçün deaktiv et** | Sönülü | Ultimate Multisite üzvlük statusu ilə inteqrasiya olunur. Aktiv edildikdə, aktiv üzvlüyü olmayan saytlar üçün çat gizlədilir. |
 
-### Brendinq Bayraqları
+### Brendinq bayraqları {#branding-flags}
 
-| Flag | Default | Description |
+| Bayraq | Varsayılan | Təsvir |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Chat widget-ının alt hissəsində göstərilən brendinq atributiv xəttini aradan qaldırır. White-label tətbiqlər üçün tövsiyə olunur. |
-| **Custom Agent Name** | *(blank)* | Chat başlığında və admin menyusunda standart "Gratis AI Agent" etiketini öz məhsul adınızla əvəz edir. Standartdan istifadə etmək üçün boş buraxın. |
-| **Hide Agent Picker** | Off | Aktivləşdirildikdə, istifadəçilər beş daxili agent arasında keçid edə bilməzlər. Hazırkı agent, Settings → General-də standart kimi konfiqurasiya edilən agentə sabitlənir. |
-| **Use Site Icon as Chat Avatar** | Off | Chat widget başlığındakı standart AI ikonunu WordPress sayt ikonu ilə əvəz edir (Appearance → Customize → Site Identity altında təyin edilir). |
+| **"Powered by Gratis AI Agent" altlığını gizlət** | Sönülü | Çat vidcetinin aşağı hissəsində göstərilən brendinq istinad sətrini silir. White-label tətbiqlər üçün tövsiyə olunur. |
+| **Fərdi agent adı** | *(boş)* | Çat başlığında və admin menyusunda standart "Gratis AI Agent" etiketini sizin öz məhsul adınızla əvəz edir. Standartdan istifadə etmək üçün boş saxlayın. |
+| **Agent seçicisini gizlət** | Sönülü | Aktiv edildikdə, istifadəçilər beş daxili agent arasında keçid edə bilməzlər. Cari agent Settings → General bölməsində standart kimi konfiqurasiya edilən agentə sabitlənir. |
+| **Çat avatarı kimi sayt ikonundan istifadə et** | Sönülü | Çat vidcetinin başlığındakı standart AI ikonunu WordPress sayt ikonu ilə əvəz edir (Appearance → Customize → Site Identity altında təyin edilir). |
 
-### Dəyişiklikləri Tətbiq Etmək
+### Avtomatlaşdırma təhlükəsizliyi bayraqları {#automation-safety-flags}
 
-Hər hansı bir bayraqı açılıb-bağlanmadan sonra **Save Settings** düyməsinə klikləyin. Dəyişikliklər dərhal qüvvəyə minir — cache təmizləmə və ya plugin-i yenidən aktivləşdirmə tələb olunmur.
+Superdav AI Agent v1.18.0 daha təhlükəsiz avtomatlaşdırma icraları üçün insan təsdiqi keçidlərini və xatırlatma qeydlərini təqdim edir. Bu idarəetmələr quraşdırılmış paketdən asılı olaraq xüsusiyyət bayraqlarında və ya qabaqcıl avtomatlaşdırma ayarlarında görünə bilər.
+
+| Bayraq | Varsayılan | Təsvir |
+|---|---|---|
+| **İnsan təsdiqini tələb et** | Tövsiyə olunur: aktiv | Həssas avtomatlaşdırmaları səlahiyyətli istifadəçi təklif olunan əməliyyatı nəzərdən keçirib təsdiqləyənədək dayandırır. |
+| **Xatırlatma deduplikasiyası** | Aktiv | Göndərilmiş xatırlatmaları qeyd edir ki, təkrar cəhdlər və ya planlaşdırılmış icralar dublikat bildirişlər göndərməsin. |
+| **Təqvim alətlərini aktiv et** | Konfiqurasiya edilənədək sönülü | Agentə konfiqurasiya edilmiş Google təqvimlərini və hadisələrini oxumağa icazə verir. |
+| **SMS bildirişlərini aktiv et** | Konfiqurasiya edilənədək sönülü | Təsdiqlənmiş iş axınlarına giriş məlumatları saxlandıqdan sonra TextBee SMS bildirişləri göndərməyə icazə verir. |
+
+### Dəyişikliklərin tətbiqi {#applying-changes}
+
+Hər hansı bayrağı dəyişdirdikdən sonra **Ayarları saxla** düyməsinə klikləyin. Dəyişikliklər dərhal qüvvəyə minir — keşin təmizlənməsi və ya pluginin yenidən aktivləşdirilməsi tələb olunmur.

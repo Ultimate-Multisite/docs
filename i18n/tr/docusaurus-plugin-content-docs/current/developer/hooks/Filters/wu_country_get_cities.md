@@ -4,11 +4,11 @@ title: Filtre - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Bir ülkedeki bir eyalete ait şehir listesini döndürür.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Ad | Tip | Açıklama |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Bir ülkedeki bir eyalete ait şehir listesini döndürür.
 | $state_code | `string` | Eyalet için iki harfli ISO kodu. |
 | $current_country | `\WP_Ultimo\Country\Country` | Mevcut sınıfın örneği. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.11
-### Kaynak
+### Kaynak {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) dosyasının 146. satırında tanımlanmıştır.
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Filtrelenmiş eyalet listesi.

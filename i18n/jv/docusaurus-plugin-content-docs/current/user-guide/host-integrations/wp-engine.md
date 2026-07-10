@@ -3,17 +3,17 @@ title: Integrasi WP Engine
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# Integrasi WP Engine
+# Integrasi WP Engine {#wp-engine-integration}
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 WP Engine iku platform hosting WordPress premium sing nyedhiyakake performa optimal, keamanan, lan skalabilitas kanggo situs WordPressmu. Integrasi iki bisa nggawe sinkronisasi domain otomatis antara Ultimate Multisite lan WP Engine.
 
-## Fitur-fitur
+## Fitur-fitur {#features}
 - Sinkronisasi domain otomatis
 - Dukungan subdomain kanggo instalasi multisite
 - Integrasi mulus karo sistem WP Engine sing wis ana
 
-## Persyaratan
+## Persyaratan {#requirements}
 Integrasi iki bakal ngdeteksi otomatis yen sampeyan hosting ing WP Engine lan nggunakake API WP Engine sing wis ana. Ora perlu konfigurasi tambahan yen plugin WP Engine aktif lan dikonfigurasi kanthi bener.
 
 Nanging, yen sampeyan perlu ngatur integrasi manual, sampeyan bisa definisikake salah siji konstanta iki ing file `wp-config.php` mu:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // Cara sing paling disaranake
 define('WPE_API', 'your_api_key'); // Cara alternatif
 ```
 
-## Instruksi Setup
+## Instruksi Setup {#setup-instructions}
 
-### 1. Verifikasi Plugin WP Engine
+### 1. Verifikasi Plugin WP Engine {#1-verify-wp-engine-plugin}
 
 Yen sampeyan hosting ing WP Engine, plugin WP Engine wis kudune terpasang lan aktif. Verifikasi yen:
 
 1. Plugin WP Engine wis aktif
 2. File `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` ana
 
-### 2. Aktifake Integrasi
+### 2. Aktifake Integrasi {#2-enable-the-integration}
 
 1. Ing admin WordPress mu, tindakake Ultimate Multisite > Settings
 2. Tindakake tab "Domain Mapping"
@@ -41,9 +41,9 @@ Yen sampeyan hosting ing WP Engine, plugin WP Engine wis kudune terpasang lan ak
 4. Aktifake integrasi WP Engine
 5. Klik "Save Changes"
 
-## Cara Kerjane
+## Cara Kerjane {#how-it-works}
 
-### Sinkronisasi Domain
+### Sinkronisasi Domain {#domain-syncing}
 
 Nalika domain di-map ing Ultimate Multisite:
 
@@ -51,7 +51,7 @@ Nalika domain di-map ing Ultimate Multisite:
 2. WP Engine ngurus konfigurasi domain lan penerbitan sertifikat SSL
 3. Nalika pemetaan domain dihapus, integrasi bakal ngapus domain saka WP Engine
 
-### Dukungan Subdomain
+### Dukungan Subdomain {#subdomain-support}
 
 Kanggo kanggo instalasi subdomain multisite:
 
@@ -59,28 +59,28 @@ Kanggo kanggo instalasi subdomain multisite:
 2. WP Engine bakal ngurus konfigurasi subdomain kuwi.
 3. Nalika situs dihapus, integrasi iki bakal ngilangake subdomain saka WP Engine.
 
-## Cathetan Penting
+## Cathetan Penting {#important-notes}
 
-### Domain Wildcard
+### Domain Wildcard {#wildcard-domains}
 
 Kanggo instalasi subdomain multisite, lumaku banget yen sampeyan hubungi dukungan WP Engine kanggo njaluk konfigurasi domain wildcard. Iki bakal nggawe kabeh subdomain bisa kerja otomatis tanpa perlu nambah saben siji kanthi manual.
 
-### Sertifikat SSL
+### Sertifikat SSL {#ssl-certificates}
 
 WP Engine bakal ngurus penerbitan lan pembaruan sertifikat SSL otomatis kanggo kabeh domain sing ditambahi liwat integrasi iki. Ora perlu konfigurasi tambahan.
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Pastikan plugin WP Engine wis aktif lan dikonfigurasi kanthi bener.
 - Yen sampeyan wis nentokake kunci API manual, cek yen iku bener.
 - Hubungi dukungan WP Engine yen sampeyan nemokake masalah karo API.
 
-### Domain Ora Ditambahi
+### Domain Ora Ditambahi {#domain-not-added}
 - Cek log Ultimate Multisite kanggo pesan error apa wae sing ana.
 - Pastikan domain kuwi durung ditambahi ing WP Engine.
 - Pastikan paket WP Engine sampeyan ndukung jumlah domain sing arep sampeyan tambahi.
 
-### Masalah Subdomain
+### Masalah Subdomain {#subdomain-issues}
 - Yen subdomain ora bisa kerja, hubungi dukungan WP Engine kanggo njaluk konfigurasi domain wildcard.
 - Verifikasi yen pengaturan DNS sampeyan wis bener kanggo domain utama lan subdomain-subdomain.

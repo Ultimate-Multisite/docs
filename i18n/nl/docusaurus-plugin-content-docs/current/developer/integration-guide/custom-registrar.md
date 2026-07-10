@@ -3,13 +3,13 @@ title: Een aangepaste registrar-integratie bouwen
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Een Aangepaste Registrar Integratie Bouwen
+# Een Aangepaste Registrar Integratie Bouwen {#building-a-custom-registrar-integration}
 
 De Domain Seller addon gebruikt een patroon genaamd **Integration Registry**. Elke registrar is een PHP-klasse die `Domain_Selling_Capability` implementeert en zichzelf registreert via de `wu_domain_seller_register_capabilities` action hook.
 
 Deze handleiding laat zien hoe u een aangepaste registrar kunt aansluiten.
 
-## Het Interface
+## Het Interface {#the-interface}
 
 Uw klasse moet `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` implementeren en `WP_Ultimo\Integrations\Base_Capability_Module` uitbreiden.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Optionele methoden
+### Optionele methoden {#optional-methods}
 
 Implementeer deze om extra functionaliteiten vrij te schakelen. De addon detecteert ondersteuning via `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementeer deze om extra functionaliteiten vrij te schakelen. De addon detecte
 | `get_epp_code(string $domain_name): array` | Domeinoverdracht (uitgaand) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domeinoverdracht (inkomend) |
 
-### Conventie voor retourwaarde
+### Conventie voor retourwaarde {#return-value-convention}
 
 Alle methoden retourneren een array met minimaal een `success`-sleutel:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Menselijk leesbare fout'];
 
 ---
 
-## Uw Capability Registreren
+## Uw Capability Registreren {#registering-your-capability}
 
 Registreer uw klasse met de `wu_domain_seller_register_capabilities` action:
 
@@ -109,7 +109,7 @@ Het eerste argument van `add_capability()` is de **provider ID** — een kleine 
 
 ---
 
-## Credential Velden Toevoegen aan de Wizard
+## Credential Velden Toevoegen aan de Wizard {#adding-credential-fields-to-the-wizard}
 
 Om beheerders in staat te stellen credentials in te voeren via de setup wizard, registreert u uw integratie:
 
@@ -137,7 +137,7 @@ Credentials worden opgeslagen als network options met de field IDs als sleutels.
 
 ---
 
-## Hooks voor Post-Registratie Acties
+## Hooks voor Post-Registratie Acties {#hooks-for-post-registration-actions}
 
 Gebruik deze actions om webhooks, provisioning, notificaties of CRM-updates te triggeren:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Schrijf naar uw provider-specifieke logkanaal met `wu_log_add()`:
 

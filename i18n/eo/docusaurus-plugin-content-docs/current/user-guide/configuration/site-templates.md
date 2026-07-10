@@ -3,13 +3,13 @@ title: Statoj de sita
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTO: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x. Se vi uzas version 1.x,**_ **vidu ĉi tiun artikolon.**_**.**_
 
 Nossa celo ĉe la kreado de premium retoj kun Ultimate Multisite estas automatigi ilojn kiel eble plej multe kaj doni al nia klientoj fleksibiliton kaj diversajn opciojn elekti pri krei siajn sitiojn. Facila maniero atingi ĉi ti balancon estas uzui la funkcion "Site Templates" de Ultimate Multisite.
 
-## Kion estas Site Template?
+## Kion estas Site Template? {#what-is-a-site-template}
 
 Kiel la nomo indikas, Site Template estas bazaj sito (boilerplate site), kiun oni povas uzi kiel bazon pri kreado novaj sitioj en via retoj.
 
@@ -17,7 +17,7 @@ Tio signifas, ke vi povas krei bazan sito, aktivi diversajn pluginojn, stabi pli
 
 Tio sonas tre bone, sed kiel mi kreas novan site template? Ĝi estas la plej simple, kiun ĝi povus esti.
 
-## Kreado kaj Edito de nova Site Template
+## Kreado kaj Edito de nova Site Template {#creating-and-editing-a-new-site-template}
 
 Site Templates estas simplaj normaj sitoj en via retoj. Por krei novan template vi povas simple iri al **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Al la bazon de la forma, vi un interruptor **Copy Site** (Kopi Site). Esto le pe
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Personalizant la dentado d'una Plantilla de Sitio
+### Personalizant la dentado d'una Plantilla de Sitio {#customizing-the-contents-of-a-site-template}
 
 Para personalizant su plantilla de sitio, simplemente navegue hasta el panel de control (dashboard) y haga los canvis que necesite. Puede crear novis posts, páginas, activar plugins y cambiar el tema activo. A fins i puede ir al Customizer i cambiar tots els tipus d'opcions de personalització.
 
@@ -43,11 +43,11 @@ Para personalizant su plantilla de sitio, simplemente navegue hasta el panel de 
 
 Tots aquests datos es copiarà quan un client cree una nova web basant aquesta Plantilla de Sitio.
 
-### Opcions Avançades
+### Opcions Avançades {#advanced-options}
 
 Si sabe fer algun codi personal, puede utilitzar la nostra Search and Replace API per substituir automàticament informació en la nova web després de la seva creació. Això és útil per coses com substituir noms d'empresa en una pàgina "About", substituir el correu electrònic de contacte en la pàgina de Contacte, etc.
 
-### Usant Plantilles de Sitio
+### Usant Plantilles de Sitio {#using-site-templates}
 
 Ok, així que va crear moltes Plantilles de Sitio diferents amb dissenys, temes i configuracions diferents. Com les pode fer útiles a la seva xarxa ara?
 
@@ -59,7 +59,7 @@ Basalment, actualment pot utilitzar dos abordajes (no simultàniament):
 
   * Deixar que els seus clients elenen les plantilles de sitio mateixos durant la registratió.
 
-#### Mode 1: Assign Site Template
+#### Mode 1: Assign Site Template {#mode-1-assign-site-template}
 
 En ĉi tiu modo viaj klientoj ne uzos tempon pri elekti, kiam ili kreas konton, sed vi definas, kiu tempo devas esti uzata sur ĉiu de via Planoj.
 
@@ -71,7 +71,7 @@ Tio donos al vi la paginon **Edit Product**. Sub la sekcio **Product Options**, 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Modo 2: Elektu Disponabla Site Tempon
+#### Modo 2: Elektu Disponabla Site Tempon {#mode-2-choose-available-site-template}
 
 En ĉi tiu modo vi donas viaj eleti dum la registriproceso. Ili tute povas selekti el diversaj sito tempon, kiujn vi definas sub la produktaj ŝanĝoj. Vi havas opcion limigi la sito tempon, kiun ili povas elekti sub la selektita produkto. Tio permesos al vi havi diversajn setojn de sito tempon sub ĉiu produkto, kio estas ideala por elesti diversajn funkciojn kaj karakterojn por pli altaj preco produktoj.
 
@@ -79,7 +79,7 @@ Sur la paĝo **Edit Product** (Editi Produkton). Sub la seksio **Product Options
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Modo: Selektion de model de site sur la Checkout formo
+### Default Modo: Selektion de model de site sur la Checkout formo {#default-mode-site-template-selection-on-the-checkout-form}
 
 Se vi volas, ke ĉiuj viaj modeloj de site estu disponibile dum registriĝo, aŭ ĉu vi ne preferas fari ekstra labor per asigoni aŭ spesifi modelojn de site sub ĉiu produkto, kiun vi kreas. Tiam vi povas simple seti la selekton de model de site sub via **Checkout Form** (Formo de Checkout). Por ti, dirigi al **Ultimate Multisite > Checkout Forms** kaj kliku sur **Edit** sub la formo, kiun vi volas konfiguroni.
 
@@ -93,29 +93,29 @@ Sur la frontendo (frontend), klientoj vidas la selektadon de modeloj dum la chec
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opción de Plantillas de Sitio
+### Opción de Plantillas de Sitio {#site-template-options}
 
 Estas estas funkciojono de plantiloj de sitio estas daavailablas ke vi povas aktivi aŭ desakti sub la ŝanĝoj de Ultimate Multisite.
 
 ![Opción de plantiloj de sitio en ŝanĝoj de Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Permiti Plantiloŝanĝon
+#### Permiti Plantiloŝanĝon {#allow-template-switching}
 
 Aktiveti ĉi ti opcio permesas al via klientoj ŝanĝi la plantilon, kiun ili elektis dum la registriĝo post kiam la konto kaj la sitio estas kreita. Tio estas utile de klientaj perspektivo ĉar ĝi permesas al ili re-elekti plantilon, se ili pli mal tuteinfon scii, ke ilia originala elektita ne estis la plej bona por iliaj partikaj bezonoj.
 
-#### Permiti Uzantojn uzui sian Siton kiel Plantilojn
+#### Permiti Uzantojn uzui sian Siton kiel Plantilojn {#allow-users-to-use-their-site-as-templates}
 
 Ĉar subsitaj uzantoj pasas tempon konstrui kaj dezaini sian propran sitiojn, ili povus volopi kaj uzi lin kiel unu el la plantiloj de sitio kiuj estasavailablaj pri kreado de alia sub sito sur via reron. Ĉi tiu opcio permesas al ili atingi tion.
 
-#### Kopii Medion pri PlantiloDuplikado
+#### Kopii Medion pri PlantiloDuplikado {#copy-media-on-template-duplication}
 
 Kontakti ĉi ti opcio kopias la median, kiun ili pliris sur la plantila sitio al la novaj sitoj kreitaj. Tio povas esti supergravita sur ĉiu el la planoj.
 
-#### **Mankovi Motorigojn de Sitiloj**
+#### **Mankovi Motorigojn de Sitiloj** {#prevent-search-engines-from-indexing-site-templates}
 
 Sitiloj kiel diskutita en ĉi tiu artikolo estas boilerplate (tempa strukturo), sed ili estas tamen parto de via rero, tio signifas ke ili estas tutablaj por motorigoj trovi. Ĉi tiu opcio permesas al vi malfermi la sitilojn tiel ke motorigoj povas indexi ilin.
 
-## Pre-pripolado de Sitiloj kun auto-search-and-replace
+## Pre-pripolado de Sitiloj kun auto-search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Unaj de la plej potenca funkcioj Ultima Multisite estas la kapablo a pliigi arbitran tekston, koloran kaj selektajn laŭlandojn sur la registriĝoformo. Kiel ni havis ti datum akirita, ni povas uzi ĝin por pripripopuli la kontanton en certaj partoj de la selektita ŝablon de la sitio. Tiam, kiam la nova sitio estas publikigita, Ultima Multisite substitui la plaseholdojn per la faktan informon, kiun oni enteris dum registriĝo.
 
@@ -135,7 +135,7 @@ Ultima Multisite tiel substitui la plaseholdojn per la datum, kiun oni donas la 
 
 ![Plaseholdoj substituita per datan de la klastro sur la sitio](/img/config/site-templates-list.png)
 
-### Solvi la problemin "ŝablo plena de plaseholdoj"
+### Solvi la problemin "ŝablo plena de plaseholdoj" {#solving-the-template-full-of-placeholders-problem}
 
 T ĉio estas granda, sed ni atingas malbon problemin: nun niaj ŝablon de la sitio - kiuj povas esti vizitaj de nia klastroj - estas plenaj malbonaj plaseholdoj kiuj ne diras multan.
 

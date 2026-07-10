@@ -3,7 +3,7 @@ title: Зарэгістраваць API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API endpoint Ultimate Multisite Register
+# API endpoint Ultimate Multisite Register {#the-ultimate-multisite-register-api-endpoint}
 
 У гэтым туторы пацніце, як выкарыстоўваць API endpoint Ultimate Multisite /register, каб стварыць увесь працэс рэгістрацыі для новага кліента ў вашай сетцы, і як гэта зрабіць праз Zapier.
 
@@ -29,11 +29,11 @@ Endpoint выкарыстоўвае метад POST і выклікаецца п
 
 Цяпер даведаемся пра endpoint, а потым стварэнне дзеяння (action) у Zapier.
 
-## Параметры тэла endpoint
+## Параметры тэла endpoint {#endpoint-body-parameters}
 
 Даведаемся агляднага мінімальнага аб'ёму інфармацыі, якую нам трэба адправіць на endpoint. У канцы гэтай артыкула вы знайце поўны выклік.
 
-### Customer
+### Customer {#customer}
 
 Гэта інфармацыя, неабходная для працэсу стварэння Карыстальніка (User) і Кліента (Customer) Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Endpoint выкарыстоўвае метад POST і выклікаецца п
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Еднай інфармацыі, якую нам трэба ў гэтым объекце, з'яўляецца Статус Членства (Membership Status).
 
 "membership" { "status" : "string", // ад "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Падробкі (Products) павінны быць прадстаўлены ў масыві з адным або больш ID падробкаў з вашай сеткі. Пагаджанне: гэты endpoint не стварае падробкі. Каб лепш зразумець endpoint для стварэння падробкаў, праверце дакументацыю Ultimate Multisite.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Як і з Membership, нам патрэбны толькі статус.
 
 **"payment" { "status" : "string", // ад "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 І каб завяршыць тэла, нам патрэбны URL і Назва сайта (Title), абедз яго ў объекце Site.
 
@@ -69,13 +69,13 @@ Endpoint выкарыстоўвае метад POST і выклікаецца п
 
 Паверненне ад endpoint register будзе масывам з інфармацыі пра новае створанае членства.
 
-## Ствараэнне дзеяння ў Zapier
+## Ствараэнне дзеяння ў Zapier {#creating-an-action-in-zapier}
 
 З прадстаўленнем гэтага новага і больш надзейнага endpoint для стварэння кантаў вы атрымаеце доступ да новага дзеяння (action) у Zapier.
 
 Ведаце, як выкарыстоўваць і чамуцца ўсё, што прапануе новая версія Zapier? Діканце больш тут. (link?)
 
-### Ствараэнне дзеяння
+### Ствараэнне дзеяння {#creating-an-action}
 
 Каб лепш ілюстраваць, як выкарыстоўваць endpoint рэгістрацыі з Zapier, створыце інтэграцыю з Google Forms. Кожны раз, калі гэтая форма заўсёды заўрабіцца, а інфармацыя будзе захавана ў аркушы адказаў формы, будзе створана новае членства ў сетцы Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Endpoint выкарыстоўвае метад POST і выклікаецца п
 
 Пратэстуйце свой новы Zap, і ён павінен завяршыцца паспяхова. Калі ўзнікуе якая памылка, праверце ўсе палі і чи адпраўляюцца яны правільна. Калі інфармацыі шмат, некаторыя рэчы могуць заўважыць.
 
-### Поўныя параметры endpoint
+### Поўныя параметры endpoint {#complete-endpoint-parameters}
 
 Вось поўны выклік і ўсе магчымасці паля, якія можна адправіць.
 

@@ -18,19 +18,19 @@ Version: 1.0.2 - Gi-release niadtong 2025-09-28
 
 * Gitawag og ultimate-multisite ang prefix; gi-update ang text domain; ug gipa-bump ang version.
 
-### Version 1.0.1 - Gi-release niadtong 2023-08-09
+### Version 1.0.1 - Gi-release niadtong 2023-08-09 {#site-exporter-changelog}
 
 * Improved: Karon, sigurado na nga makuha ang saktong file path sa importer file.
 * Fixed: Gipatay ang object cache aron malikayan ang mga error atol sa pag-import.
 * Fixed: Gitul-id ang isyu diin dili mo-andar ang download link sa importer plugin.
 
-### Version 1.0.0 - Gi-release niadtong 2022-12-23
+### Version 1.0.0 - Gi-release niadtong 2022-12-23 {#version-101---released-on-2023-08-09}
 
 * Fixed: Dili ma-load ang popup form sa export;
 * Fixed: Ang mga Javascript files wala na mag-load sa export page;
 * Internal: Bag-o nga build process;
 
-### Version 1.0.0-beta.4 - Gi-release niadtong 2022-01-13
+### Version 1.0.0-beta.4 - Gi-release niadtong 2022-01-13 {#version-100---released-on-2022-12-23}
 
 * Internal: Gidugang ang hooks and filters generator;
 * Internal: Gidugang ang WP Ultimo stubs para sa developer quality of life;

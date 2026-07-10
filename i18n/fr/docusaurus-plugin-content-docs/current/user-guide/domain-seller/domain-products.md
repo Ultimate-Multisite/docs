@@ -3,11 +3,11 @@ title: Produits du Domaine et Tarification
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produits et tarifs de domaine
+# Produits et tarifs de domaine {#domain-products-and-pricing}
 
 Les produits de domaine vous permettent de gérer les tarifs, les TLD, la confidentialité WHOIS et la sélection de fournisseurs. Chaque produit de domaine est un produit standard Ultimate Multisite avec un onglet supplémentaire **Paramètres du domaine**.
 
-## Créer un produit de domaine
+## Créer un produit de domaine {#creating-a-domain-product}
 
 1. Allez dans **Administration du réseau › Ultimate Multisite › Produits**
 2. Cliquez sur **Ajouter un nouveau**
@@ -17,13 +17,13 @@ Les produits de domaine vous permettent de gérer les tarifs, les TLD, la confid
 
 Les produits de domaine apparaissent avec un badge **Domaine** violet dans la liste des produits et peuvent être filtrés à l'aide de l'onglet **Produits de domaine**.
 
-## Onglet paramètres du domaine
+## Onglet paramètres du domaine {#domain-settings-tab}
 
-### Fournisseur
+### Fournisseur {#provider}
 
 Sélectionnez l'enregistrement qui gère l'enregistrement pour ce produit. Par défaut, il utilise le **Fournisseur par défaut** global défini dans les paramètres de Domain Seller.
 
-### TLD pris en charge
+### TLD pris en charge {#supported-tlds}
 
 Laissez ce champ vide pour créer un **produit de capture général** qui s'applique à tous les TLD non pris en charge par un autre produit.
 
@@ -31,7 +31,7 @@ Entrez une liste de TLD séparés par des virgules (par exemple, `.com, .net, .o
 
 **Comment fonctionne la correspondance des produits :** Lorsqu'un client recherche un domaine, l'addon sélectionne le produit correspondant le plus spécifique. Un produit contenant `.com` dans sa liste de TLD a la priorité sur un produit de capture général. Si aucun produit spécifique au TLD ne correspond, le produit de capture général est utilisé. Si aucun produit n'existe, la recherche de domaine n'est pas affichée.
 
-### Type de marge
+### Type de marge {#markup-type}
 
 Trois modes contrôlent la manière dont votre prix de détail est calculé à partir du coût de gros :
 
@@ -41,11 +41,11 @@ Trois modes contrôlent la manière dont votre prix de détail est calculé à p
 | **Marge fixe** | Ajoute un montant fixe en dollars. Une marge de 5 $ sur un domaine de 10 $ donne 15 $. |
 | **Prix fixe** | Ignore complètement le coût de gros. Facture toujours le montant que vous entrez. |
 
-### Tarification d'introduction
+### Tarification d'introduction {#introductory-pricing}
 
 Activez cette option pour proposer un prix réduit pour la première année. Définissez un **Prix d'introduction** séparé (le prix de l'année 1) en plus du **Prix de renouvellement** régulier (année 2 et suivantes). Le client voit les deux prix affichés pendant le paiement afin de savoir à quoi s'attendre lors du renouvellement.
 
-### Confidentialité WHOIS
+### Confidentialité WHOIS {#whois-privacy}
 
 Contrôle si la protection de la confidentialité WHOIS est offerte pour les domaines enregistrés via ce produit.
 
@@ -59,7 +59,7 @@ Pour Namecheap, la confidentialité WHOIS utilise WhoisGuard (toujours gratuit).
 
 ---
 
-## Importation et synchronisation des TLD
+## Importation et synchronisation des TLD {#tld-import-and-sync}
 
 Les produits de domaine affichent les prix de gros en temps réel récupérés auprès du fournisseur connecté. Pour que cela fonctionne, les TLD doivent être importés.
 
@@ -70,7 +70,7 @@ Après une synchronisation, accédez à l'onglet Paramètres du domaine de n'imp
 
 ---
 
-## Auto-renouvellement
+## Auto-renouvellement {#auto-renewal}
 
 Les renouvellements de domaine sont liés au statut d'adhésion du client :
 
@@ -90,7 +90,7 @@ IDs de modèles d'e-mail pour les événements du cycle de vie du domaine :
 
 ---
 
-## Admin : Enregistrement manuel de domaine
+## Admin : Enregistrement manuel de domaine {#admin-manual-domain-registration}
 
 Pour enregistrer un domaine au nom d'un client sans qu'il ait à passer par le processus de paiement :
 

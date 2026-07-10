@@ -4,11 +4,11 @@ title: Action - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Action: wu_membership_pre_renew
+# Action: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Word geaktiveer voordat die lidmaatskap hernu word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Word geaktiveer voordat die lidmaatskap hernu word.
 | $membership_id | `int` | Die ID van die lidmaatskap. |
 | $membership | `\Membership` | Lidmaatskap-objek. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) op lyn 2204

@@ -3,7 +3,7 @@ title: Planlar üçin Paylaşylmadyk Linkleri Dolandyradyk
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Planlar İçin Paylaşılabilir Bağlantıları Yönetmek
+# Planlar İçin Paylaşılabilir Bağlantıları Yönetmek {#managing-shareable-links-for-plans}
 
 Ultimate Multisite size plan bağlantılarını doğrudan müşterilerinizle paylaşma seçeneği sunar. Bunu yapmak için herhangi bir planınızın düzenleme sayfasına gidin ve _Paylaşılabilir Bağlantıyı Kopyala_ butonuna tıklayın.
 

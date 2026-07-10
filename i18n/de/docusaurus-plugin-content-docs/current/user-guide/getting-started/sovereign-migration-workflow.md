@@ -3,11 +3,11 @@ title: Workflow für die souveräne Migration
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 fügt Migrationsprüfungsstellen hinzu, um einen Standard-Subsite in die Infrastruktur eines souveränen Tenants zu verschieben.
 
-## Bevor Sie beginnen
+## Bevor Sie beginnen {#before-you-start}
 
 Stellen Sie sicher, dass Sie Folgendes haben:
 
@@ -17,7 +17,7 @@ Stellen Sie sicher, dass Sie Folgendes haben:
 - Eine Datenbank-Hostbindung, die mit der Zielumgebung übereinstimmt.
 - Zugriff auf WP-CLI-Befehle für das Netzwerk.
 
-## Empfohlener Workflow
+## Empfohlener Workflow {#recommended-workflow}
 
 1. Bereiten Sie die Zieltenant-Datenbank und das Dateisystem vor.
 2. Registrieren oder aktualisieren Sie die Einstellungen zur Tenant-Isolation.
@@ -28,7 +28,7 @@ Stellen Sie sicher, dass Sie Folgendes haben:
 7. Besuchen Sie den Tenant mit SSO.
 8. Wechseln Sie DNS oder Routing erst nach erfolgreicher Überprüfung vor.
 
-## Verifizierungsstellen
+## Verifizierungsstellen {#verification-gates}
 
 Der Verifizierungsworkflow prüft die Migration aus verschiedenen Blickwinkeln:
 
@@ -40,6 +40,6 @@ Der Verifizierungsworkflow prüft die Migration aus verschiedenen Blickwinkeln:
 
 Behandeln Sie Verifizierungsfehler als Blockaden vor dem Start. Beheben Sie das gemeldete Problem mit der Datenbank, dem Benutzer, der Warteschlange oder dem Routing und führen Sie die Überprüfung dann erneut durch, bevor Sie den Tenant Kunden zur Verfügung stellen.
 
-## Erste Produktionsbesuch
+## Erste Produktionsbesuch {#first-production-visit}
 
 Nachdem die Verifizierung erfolgreich war, verwenden Sie **Besuch (SSO)** aus dem Seitenverwaltungsbildschirm für den ersten Admin-Besuch. Dies bestätigt das Tenant-Routing, die SSO-Token-Handhabung, das Origin Pinning und die Benutzerbereitstellung auf der Tenant-Seite in einem kontrollierten Schritt.

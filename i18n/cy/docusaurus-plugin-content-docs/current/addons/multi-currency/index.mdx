@@ -1,0 +1,117 @@
+---
+title: Arian Aml-Gyfredol
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Aml-Arian {#multi-currency}
+
+Ultimate Multisite: Mae Aml-Arian yn galluogi eich rhwydwaith i dderbyn taliadau mewn sawl arian cyfred. Mae'n trosi prisiau'n awtomatig gan ddefnyddio cyfraddau cyfnewid byw neu â llaw, yn gadael i chi osod union brisiau fesul cynnyrch ar gyfer unrhyw arian cyfred, ac yn canfod arian cyfred dewisol pob ymwelydd drwy geoleoliad — i gyd wedi'i reoli o un Dashboard gweinyddol.
+
+## Nodweddion Allweddol {#key-features}
+
+- **Trosi cyfraddau cyfnewid yn awtomatig** — caiff prisiau eu trosi o'ch arian cyfred sylfaenol gan ddefnyddio cyfraddau a nôlir gan eich darparwr dewisol
+- **Diystyriadau prisio fesul cynnyrch** — gosodwch union brisiau penodol i arian cyfred ar unrhyw gynnyrch i osgoi trosi awtomatig
+- **Maes cofrestru dewis arian cyfred** — yn gadael i gwsmeriaid ddewis eu harian cyfred dewisol yn ystod talu/cofrestru
+- **Darparwyr cyfraddau cyfnewid lluosog** — ECB, Frankfurter, Stripe, neu gyfraddau cwbl â llaw
+- **Canfod arian cyfred ar sail geoleoliad** — yn rhag-ddewis yn awtomatig yr arian cyfred sy'n cyfateb i wlad yr ymwelydd
+- **Dashboard gweinyddol** — rheolwch arian cyfred gweithredol, cyfraddau cyfnewid, a gosodiadau darparwyr o un lle
+
+## Gofynion {#requirements}
+
+- Ultimate Multisite 2.0.0 neu uwch
+- Gosodiad WordPress Multisite
+- PHP 7.4 neu uwch
+
+## Gosod {#installation}
+
+1. Llwythwch ffeiliau'r ategyn i `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Ysgogwch yr ategyn drwy'r sgrin **Ategion** yn WordPress (Ysgogi Rhwydwaith)
+3. Ewch i **Ultimate Multisite → Aml-Arian** i agor y Dashboard gweinyddol
+4. Ychwanegwch yr arian cyfred rydych am ei dderbyn a ffurfweddwch eich darparwr cyfraddau cyfnewid
+
+## Ffurfweddu {#configuration}
+
+### Dashboard Gweinyddol {#admin-dashboard}
+
+Y Dashboard gweinyddol Aml-Arian (**Ultimate Multisite → Aml-Arian**) yw'r lle canolog i:
+
+- Ychwanegu, galluogi, neu analluogi arian cyfred
+- Dewis darparwr cyfraddau cyfnewid ac adnewyddu cyfraddau ar alw
+- Adolygu cyfraddau cyfredol ar gyfer pob arian cyfred gweithredol
+- Gosod cyfraddau â llaw pan nad yw darparwyr awtomatig yn addas
+
+### Darparwyr Cyfraddau Cyfnewid {#exchange-rate-providers}
+
+| Darparwr | Disgrifiad |
+|---|---|
+| **ECB** | Banc Canolog Ewrop — cyfraddau dyddiol am ddim ar gyfer rhwydweithiau sy'n seiliedig ar EUR |
+| **Frankfurter** | API drych ECB ffynhonnell agored — am ddim, dim angen allwedd API |
+| **Stripe** | Yn defnyddio cyfraddau FX byw Stripe — mae angen integreiddiad Stripe gweithredol |
+| **Â Llaw** | Rydych yn rhoi cyfraddau'n uniongyrchol; dim galwadau API allanol |
+
+Dewiswch eich darparwr o dan **Ultimate Multisite → Aml-Arian → Gosodiadau → Darparwr Cyfraddau Cyfnewid**. Gellir adnewyddu cyfraddau â llaw unrhyw bryd neu eu hamserlennu i ddiweddaru'n awtomatig.
+
+### Diystyriadau Prisio Fesul Cynnyrch {#per-product-pricing-overrides}
+
+Pan nad yw trosi awtomatig yn ddigon manwl, gallwch osod union bris ar gyfer arian cyfred penodol ar unrhyw gynnyrch:
+
+1. Agorwch olygydd y cynnyrch (**Ultimate Multisite → Cynhyrchion → Golygu**)
+2. Sgroliwch i'r adran **Prisio Arian Cyfred**
+3. Rhowch yr union bris ar gyfer pob arian cyfred rydych am ei ddiystyru
+4. Cadwch y cynnyrch
+
+Mae cynhyrchion heb ddiystyriad yn defnyddio'r pris wedi'i drosi o'ch arian cyfred sylfaenol.
+
+### Maes Cofrestru Dewis Arian Cyfred {#currency-selector-signup-field}
+
+Gellir ychwanegu'r maes dewis arian cyfred at eich llif cofrestru/talu fel bod cwsmeriaid yn dewis eu harian cyfred dewisol wrth gofrestru:
+
+1. Ewch i **Ultimate Multisite → Aml-Arian → Gosodiadau**
+2. Galluogwch **Dangos dewisydd arian cyfred wrth gofrestru**
+3. Yn ddewisol, gosodwch arian cyfred diofyn neu gadewch i geoleoliad bennu'r gwerth a rag-ddewisir
+
+Caiff yr arian cyfred a ddewiswyd ei storio gyda'r tanysgrifiad a'i ddefnyddio ar gyfer pob bilio dilynol.
+
+### Canfod Arian Cyfred ar Sail Geoleoliad {#geolocation-based-currency-detection}
+
+Pan fydd canfod geoleoliad wedi'i alluogi, mae'r ategyn yn mapio gwlad yr ymwelydd i arian cyfred ac yn ei rag-ddewis yn y maes dewis arian cyfred. I alluogi:
+
+1. Ewch i **Ultimate Multisite → Aml-Arian → Gosodiadau**
+2. Galluogwch **Canfod arian cyfred o leoliad yr ymwelydd**
+3. Mapiwch wledydd i arian cyfred yn y tabl **Mapio Geoleoliad**
+
+Os nad oes mapio'n bodoli ar gyfer gwlad ymwelydd, defnyddir arian cyfred sylfaenol y rhwydwaith fel y dewis wrth gefn.
+
+## Cwestiynau Cyffredin {#frequently-asked-questions}
+
+### Beth sy'n digwydd os nad yw darparwr cyfraddau cyfnewid ar gael? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Mae'r ategyn yn defnyddio'r cyfraddau a nôlwyd yn llwyddiannus ddiwethaf fel dewis wrth gefn. Os nad oes unrhyw gyfraddau erioed wedi'u nôl, mae'n defnyddio'r cyfraddau â llaw rydych wedi'u ffurfweddu fel dewis wrth gefn. Argymhellir ffurfweddu cyfraddau â llaw fel rhwyd ddiogelwch.
+
+### A allaf ddefnyddio darparwyr gwahanol ar gyfer arian cyfred gwahanol? {#can-i-use-different-providers-for-different-currencies}
+
+Na — mae un darparwr yn weithredol ar y tro ar gyfer pob arian cyfred. Defnyddiwch **Â Llaw** os oes angen rheolaeth lawn arnoch dros gyfraddau unigol.
+
+### A oes angen ategyn ar wahân ar gyfer geoleoliad? {#does-geolocation-require-a-separate-plugin}
+
+Nid oes angen ategyn geoleoliad allanol. Mae'r ategyn yn defnyddio canfod IP-i-wlad adeiledig WordPress. Er mwyn cael mwy o gywirdeb, gellir integreiddio gwasanaeth geoleoliad penodedig drwy'r bachau hidlo a ddarperir.
+
+### A yw diystyriadau fesul cynnyrch yn cael eu cymhwyso cyn neu ar ôl treth? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Mae diystyriadau fesul cynnyrch yn gosod y pris cyn treth yn yr arian cyfred targed. Cyfrifir treth ar ben pris y diystyriad gan ddefnyddio eich ffurfweddiad treth presennol.
+
+## Cofnod Newidiadau {#changelog}
+
+### Fersiwn 1.0.0 — Rhyddhawyd ar 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Newydd: Cymorth aml-arian gyda throsi cyfraddau cyfnewid yn awtomatig
+- Newydd: Diystyriadau prisio fesul cynnyrch ar gyfer union brisiau penodol i arian cyfred
+- Newydd: Maes cofrestru dewis arian cyfred ar gyfer y llif talu
+- Newydd: Darparwyr cyfraddau cyfnewid: ECB, Frankfurter, Stripe, ac â llaw
+- Newydd: Canfod arian cyfred ar sail geoleoliad
+- Newydd: Dashboard gweinyddol ar gyfer rheoli arian cyfred a chyfraddau cyfnewid
+- Atgyweiriad: Dashboard bob amser yn dangos prisiau yn yr arian cyfred sylfaenol waeth pa arian cyfred a ddewiswyd

@@ -3,11 +3,11 @@ title: Webhook İşleme
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook İşlemleri
+# Webhook İşlemleri {#webhook-handling}
 
 Harici servislerden gelen olayları almanız ve verileri Ultimate Multisite ile senkronize etmeniz için özel webhook uç noktaları oluşturun.
 
-## Özel Webhook Uç Noktası
+## Özel Webhook Uç Noktası {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Güvenlik Hususları
+## Güvenlik Hususları {#security-considerations}
 
 - Webhook imzalarını her zaman HMAC veya paylaşılan bir gizli anahtar kullanarak doğrulayın.
 - REST rotanızda bir `permission_callback` kullanın — asla üretim ortamında bunu `__return_true` olarak ayarlamayın.

@@ -4,14 +4,14 @@ title: アクション - wp_ultimo_payfast_deactivation
 sidebar_label: wp_ultimo_payfast_deactivation
 _i18n_hash: 7625e872fa9bec92ebf6ffec9eabef8f
 ---
-# アクション: wp_ultimo_payfast_deactivation
+# アクション: wp_ultimo_payfast_deactivation {#action-wpultimopayfastdeactivation}
 
 プラグインの他の部分が停止時のルーチンをアタッチできるようにします
 
-### いつから
+### いつから {#since}
 
 - 1.9.6
 
-### ソース
+### ソース {#source}
 
 行101で定義されています [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-payfast/blob/main/inc/class-hooks.php#L101)

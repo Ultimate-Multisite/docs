@@ -3,7 +3,7 @@ title: Lista państwów
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Reordenare la lista dei paesi di Ultimate Multisite
+# Reordenare la lista dei paesi di Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Il menu a tendina per selezionare un paese è ordinato in ordine alfabetico basandosi sulle varianti inglesi dei nomi dei paesi. Questo può significare che, a volte, il paese d'origine della tua azienda e/o la maggior parte dei tuoi clienti si trova sepolto nel mezzo di una lunga lista di nomi dei paesi.
 

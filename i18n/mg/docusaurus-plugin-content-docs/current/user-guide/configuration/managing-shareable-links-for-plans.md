@@ -3,7 +3,7 @@ title: Fitantanana ny rohy azo zaraina ho an'ny drafitra
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Fitantan'ny Link azo zaraina ho an'ny Plan
+# Fitantan'ny Link azo zaraina ho an'ny Plan {#managing-shareable-links-for-plans}
 
 Ny Ultimate Multisite dia manome anao ny safidy mba hizara mivantana ireo link plan amin'ny mpanjifa-nao. Mba hanaovana izany, mandehin'ny pejy fanovana (edit pages) amin'ireo plan rehetra ary tsindrio ilay bokotra hoe _Click to copy the Shareable Link_.
 

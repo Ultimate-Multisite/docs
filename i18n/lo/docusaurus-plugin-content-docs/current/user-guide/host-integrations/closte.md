@@ -3,18 +3,18 @@ title: ການເຊື່ອມຕໍ່ Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# ການເຊື່ອມຕໍ່ Closte
+# ການເຊື່ອມຕໍ່ Closte {#closte-integration}
 
-## ພາບລວມ
+## ພາບລວມ {#overview}
 Closte ແມ່ນເວທີໂຮດ WordPress ທີ່ຖືກຈັດການ (managed) ແລະ ສ້າງຂຶ້ນເທິງພື້ນຖານ Google Cloud. ການເຊື່ອມຕໍ່ນີ້ຊ່ວຍໃຫ້ສາມາດ đồng bộ ຊື່ໂດເມນ (domain syncing) ແລະ ການຈັດການໃບຢັ້ງຢືນ SSL រវាង Ultimate Multisite ແລະ Closte ໄດ້ໂດຍອັດຕະໂນມັດ.
 
-## ຄຸນສົມບັດ
+## ຄຸນສົມບັດ {#features}
 - Đồng bộ ຊື່ໂດເມນໂດຍອັດຕະໂນມັດ
 - ການຈັດການໃບຢັ້ງຢືນ SSL
 - ຮອງຮັບ wildcard domain
 - ບໍ່ຈຳເປັນຕ້ອງຕັ້ງຄ່າຫຍັງເລີຍຖ້າໃຊ້ໃນ Closte
 
-## ຂໍ້ກຳນົດ
+## ຂໍ້ກຳນົດ {#requirements}
 ທ່ານຕ້ອງກຳນົດ constant ນີ້ໄວ້ໃນໄຟລ໌ `wp-config.php` ຂອງທ່ານ ຖ້າທ່ານໃຊ້ Closte:
 
 ```php
@@ -23,19 +23,19 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ໂດຍປົກກະຕິແລ້ວ constant ນີ້ຈະຖືກກຳນົດໄວ້ແລ້ວ ຖ້າທ່ານໂຮດຢູ່ເທິງ Closte.
 
-## ຄູ່ມືການຕັ້ງຄ່າ
+## ຄູ່ມືການຕັ້ງຄ່າ {#setup-instructions}
 
-### 1. ກວດສອບ API Key ຂອງ Closte ຂອງທ່ານ
+### 1. ກວດສອບ API Key ຂອງ Closte ຂອງທ່ານ {#1-verify-your-closte-api-key}
 ຖ້າທ່ານໂຮດຢູ່ເທິງ Closte, constant `CLOSTE_CLIENT_API_KEY` ຄວນຈະຖືກກຳນົດໄວ້ແລ້ວໃນໄຟລ໌ `wp-config.php` ຂອງທ່ານ. ທ່ານສາມາດກວດສອບໄດ້ໂດຍການເບິ່ງໄຟລ໌ `wp-config.php` ຂອງທ່ານ.
 
-### 2. ເປີດໃຊ້ການເຊື່ອມຕໍ່ (Enable the Integration)
+### 2. ເປີດໃຊ້ການເຊື່ອມຕໍ່ (Enable the Integration) {#2-enable-the-integration}
 1. ໃນ WordPress admin, ໄປທີ່ Ultimate Multisite > Settings
 2. ໄປທີ່ tab "Domain Mapping"
 3. ລໍ້ລົງມາຫາ "Host Integrations"
 4. ເປີດໃຊ້ການເຊື່ອມຕໍ່ Closte
 5. ກົດ "Save Changes"
 
-## ມັນເຮັດວຽກແນວໃດ
+## ມັນເຮັດວຽກແນວໃດ {#how-it-works}
 
 ເມື່ອມີການ map ຊື່ໂດເມນໃນ Ultimate Multisite:
 
@@ -45,26 +45,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ການເຊື່ອມຕໍ່ນີ້ຍັງເຮັດວຽກຮ່ວມກັບການຕັ້ງຄ່າ DNS check interval ໃນ Ultimate Multisite ເຊິ່ງຊ່ວຍໃຫ້ທ່ານສາມາດຕັ້ງຄ່າໄດ້ວ່າລະບົບຄວນກວດສອບການແຜ່ກະຈາຍຂອງ DNS ແລະ ການອອກໃບຢັ້ງຢືນ SSL ດຳເນີນໄປເລື້ອຍປານໃດ.
 
-## ການສ້າງ Domain Record
+## ການສ້າງ Domain Record {#domain-record-creation}
 
 การเชื่อมต่อนี้จะทำให้แน่ใจว่าเมื่อมีการสร้างหรือทำสำเนาเว็บไซต์ จะมีการสร้างระเบียนโดเมนขึ้นมาโดยอัตโนมัติ ซึ่งสิ่งนี้สำคัญเป็นพิเศษสำหรับการเชื่อมต่อ Closte เพราะการสร้างระเบียนโดเมนจะเป็นตัวกระตุ้นให้ API ของ Closte สร้างโดเมนและใบรับรอง SSL ให้ด้วย
 
-## การแก้ไขปัญหา (Troubleshooting)
+## การแก้ไขปัญหา (Troubleshooting) {#troubleshooting}
 
-### ปัญหาการเชื่อมต่อ API
+### ปัญหาการเชื่อมต่อ API {#api-connection-issues}
 - ตรวจสอบว่า Closte API key ของคุณถูกต้องหรือไม่
 - ตรวจสอบให้แน่ใจว่าบัญชี Closte ของคุณมีสิทธิ์ที่จำเป็นครบถ้วน
 
-### ปัญหาใบรับรอง SSL
+### ปัญหาใบรับรอง SSL {#ssl-certificate-issues}
 - Closte อาจใช้เวลาในการออกใบรับรอง SSL (ปกติประมาณ 5-10 นาที)
 - ตรวจสอบว่าโดเมนของคุณชี้ไปยัง IP address ของเซิร์ฟเวอร์ Closte อย่างถูกต้องหรือไม่
 - ตรวจสอบระเบียน DNS สำหรับโดเมนของคุณเพื่อให้แน่ใจว่าตั้งค่าไว้อย่างถูกต้อง
 
-### โดเมนไม่ถูกเพิ่มเข้ามา
+### โดเมนไม่ถูกเพิ่มเข้ามา {#domain-not-added}
 - ตรวจสอบบันทึก (logs) ของ Ultimate Multisite เพื่อดูข้อความแสดงข้อผิดพลาดใดๆ
 - ตรวจสอบให้แน่ใจว่าโดเมนนั้นยังไม่ได้ถูกเพิ่มเข้าไปใน Closte แล้ว
 - ตรวจสอบให้แน่ใจว่าระเบียน DNS ของโดเมนของคุณตั้งค่าไว้อย่างถูกต้อง
 
-### ช่วงเวลาการตรวจสอบ DNS (DNS Check Interval)
+### ช่วงเวลาการตรวจสอบ DNS (DNS Check Interval) {#dns-check-interval}
 - หากใบรับรอง SSL ใช้เวลานานเกินไปในการออก คุณสามารถปรับช่วงเวลาการตรวจสอบ DNS ในการตั้งค่า Domain Mapping ได้
 - ค่าเริ่มต้นคือ 300 วินาที (5 นาที) แต่คุณสามารถตั้งให้ต่ำสุดได้ถึง 10 วินาทีสำหรับการตรวจสอบที่รวดเร็วระหว่างการทดสอบ

@@ -1,75 +1,194 @@
 ---
-title: ஹூக்ஸ் குறிப்பு
+title: ஹூக்கள் குறிப்பு
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hooks Reference
+# Hooks குறிப்பு {#hooks-reference}
 
-Ultimate Multisite-ல் உள்ள அனைத்து **59 actions** மற்றும் **115 filters** க்கான தானாக உருவாக்கப்பட்ட ஆவணங்கள்.
+Ultimate Multisite-இல் உள்ள அனைத்து **59 actions** மற்றும் **118 filters** க்கான தானாக உருவாக்கப்பட்ட ஆவணம்.
 
-## Actions
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — அங்கீகார திருப்பிவிடை (authentication redirect) நடப்பதற்கு முன் இது தூண்டப்படுகிறது.
-- [set_auth_cookie](./Actions/set_auth_cookie) — அங்கீகார குக்கீ அமைக்கப்படுவதற்குச் சற்று முன்பு இது தூண்டப்படுகிறது.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — உள்நுழைந்த அங்கீகார குக்கீ அமைக்கப்படுவதற்குச் சற்று முன்பு இது தூண்டப்படுகிறது.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — wp plugins மூலம் தங்கள் சொந்த ஹோஸ்ட் வழங்குநர் ஒருங்கிணைப்புகளைச் சேர்க்க டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — அனைத்து சார்புகளும் (dependencies) ஏற்றப்பட்ட பிறகு இது தூண்டப்படுகிறது.
-- [wu_activation](./Actions/wu_activation) — プラഗിனின் பிற பகுதிகள் செயல்படுத்தல் (activation) க்கான தங்கள் Routines-களை இணைக்க இது அனுமதிக்கிறது.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — ஒரு பயனர் அல்லது சூப்பர் அட்மின் தளத்தின் டெம்ப்ளேட்டை மாற்றிய பிறகு, プラഗിൻ டெவலப்பர்கள் ஹூக்குகளை இணைக்க இது அனுமதிக்கிறது.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — சில சமயங்களில், actions-களை கையாள கூடுதல் செயல்பாடுகளை (extra juice) ஏற்ற வேண்டியிருக்கும்.
-- [wu_before_search_models](./Actions/wu_before_search_models) — தேடல் கோரிக்கை (search request) செயலாக்கப்படுவதற்கு முன் இது தூண்டப்படுகிறது.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — checkout object-ல் கூடுதல் மாற்றங்களைச் செய்ய டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_cart_setup](./Actions/wu_cart_setup) — checkout object-ல் கூடுதல் மாற்றங்களைச் செய்ய டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout படிவத்தில் ஒரு field சேர்க்கப்படுவதற்கு முன் இது தூண்டப்படுகிறது.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — கூடுதல் ஹூக்குகளைத் தூண்ட டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout செயலாக்குவதற்கு முன்.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout ஆர்டர் முழுமையாக உருவாக்கப்பட்ட பிறகு இது தூண்டப்படுகிறது.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Network Dashboard Panel-ல் widgets சேர்க்க プラഗിൻ டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Network Dashboard Panel-ல் widgets சேர்க்க プラഗിൻ டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_deactivation](./Actions/wu_deactivation) — プラഗിனின் பிற பகுதிகள் செயலிழக்கச் (deactivation)ான Routines-களை இணைக்க இது அனுமதிக்கிறது.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — நீக்கும் செயல்முறைக்கு (deleting process) actions சேர்க்க プラഗിൻ டெவலப்பர்கள் அனுமதிக்கப்படுகிறார்கள்.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ஒரு டொமைன் ஒரு தளத்திற்கான முதன்மை டொமைனாக மாறும் போது இது தூண்டப்படுகிறது.
-- [wu_domain_created](./Actions/wu_domain_created) — புதிய டொமைன் உருவாக்கப்பட்டது.
-- [wu_get_user_id] — பயனரின் ID பெறப்பட்டது.
-- [wu_get_site_id] — தளத்தின் ID பெறப்பட்டது.
-- [wu_get_current_user_id] — தற்போதைய பயனரின் ID பெறப்பட்டது.
-- [wu_get_current_site_id] — தற்போதைய தளத்தின் ID பெறப்பட்டது.
-- [wu_get_user_role] — பயனரின் பாத்திரம் பெறப்பட்டது.
-- [wu_get_site_role] — தளத்தின் பாத்திரம் பெறப்பட்டது.
+- [auth_redirect](./Actions/auth_redirect) — அங்கீகாரத் திருப்பிவிடலுக்கு முன் இயங்கும்.
+- [set_auth_cookie](./Actions/set_auth_cookie) — அங்கீகார cookie அமைக்கப்படுவதற்கு உடனடியாக முன் இயங்கும்.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — உள்நுழைந்த நிலைக்கான அங்கீகார cookie அமைக்கப்படுவதற்கு உடனடியாக முன் இயங்கும்.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — உருவாக்குநர்கள் wp plugins மூலம் தங்களுடைய host provider ஒருங்கிணைப்புகளைச் சேர்க்க அனுமதிக்கும்.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — எல்லா சார்புகளும் ஏற்றப்பட்டபோது தூண்டப்படும்
+- [wu_activation](./Actions/wu_activation) — செயல்படுத்தலுக்கான தங்கள் நடைமுறைகளை plugin-ன் பிற பகுதிகள் இணைக்க அனுமதிக்கும்
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — பயனர் அல்லது super admin site template-ஐ மாற்றிய பின் plugin உருவாக்குநர்கள் functions-ஐ hook செய்ய அனுமதிக்கும்
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — சில நேரங்களில், செயல்களை கையாள கூடுதல் ஆதாரங்களை ஏற்ற வேண்டி வரும்.
+- [wu_before_search_models](./Actions/wu_before_search_models) — தேடல் கோரிக்கையின் செயலாக்கத்திற்கு முன் இயங்கும்.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — உருவாக்குநர்கள் checkout object-இல் கூடுதல் மாற்றங்கள் செய்ய அனுமதிக்கும்.
+- [wu_cart_setup](./Actions/wu_cart_setup) — உருவாக்குநர்கள் checkout object-இல் கூடுதல் மாற்றங்கள் செய்ய அனுமதிக்கும்.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form-க்கு field சேர்க்கப்படுவதற்கு முன் இயங்கும்.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — உருவாக்குநர்கள் கூடுதல் hooks-ஐ தூண்ட அனுமதிக்கும்.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout-ஐ செயலாக்குவதற்கு முன்.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order முழுமையாக அமைக்கப்பட்ட பின் இயங்கும்.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Network Dashboard Panel-க்கு widgets சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Network Dashboard Panel-க்கு widgets சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_deactivation](./Actions/wu_deactivation) — செயல்நீக்கத்திற்கான தங்கள் நடைமுறைகளை plugin-ன் பிற பகுதிகள் இணைக்க அனுமதிக்கும்
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — நீக்கல் செயல்முறையில் செயல்களைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ஒரு domain ஒரு site-க்கான முதன்மை domain ஆகும் போது இயங்கும்.
+- [wu_domain_created](./Actions/wu_domain_created) — புதிய domain mapping சேர்க்கப்படும்போது தூண்டப்படும்.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — எங்கள் core Domain Mapping ஏற்றப்பட்ட பிறகு இயங்கும்
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — mapping செயலில் வருவதற்கு முன் சில plugins URL-ஐ சேமிக்கும் அல்லது சேர்க்கப்படாத வேறு முறையில் URLs-ஐ உருவாக்கும்
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — site நகலெடுப்பு நடந்த பிறகு உருவாக்குநர்கள் hook செய்ய அனுமதிக்கும்.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin உருவாக்குநர்கள் கூடுதல் hooks சேர்க்க அனுமதிக்கும்
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — கூடுதல் சுத்தம் செய்வதற்கான hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — புதிய domain modal-ஐச் சேர்க்கும் கோரிக்கையை கையாளுவதற்கு முன் இயங்கும்.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — தேவையெனில் meta data-வை வேறு வழிகளில் சேமிக்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — தேவையெனில் user meta data-வை வேறு வழிகளில் சேமிக்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — செல்லாத magic link token எதிர்கொள்ளப்படும்போது இயங்கும்.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — magic link மூலம் பயனர் உள்நுழைந்த பிறகு இயங்கும்.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — customer சேர்க்கப்படும்போது plugin உருவாக்குநர்கள் கூடுதல் செயல்களைச் செய்ய அனுமதிக்கும்.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ஒரு entity-க்கான MCP abilities பதிவு செய்யப்பட்ட பிறகு இயங்கும்.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter ஆரம்பிக்கப்பட்ட பிறகு இயங்கும்.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership ரத்து செய்யப்பட்ட பிறகு தூண்டப்படும்.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership புதுப்பிப்புக்குப் பிறகு தூண்டப்படும்.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership ரத்து செய்யப்படுவதற்கு முன் தூண்டப்படும்.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership புதுப்பிப்புக்கு முன் தூண்டப்படும்.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ஒரு object database-இல் சேமிக்கப்பட்ட பிறகு இயங்கும்.
+- [wu_page_added](./Actions/wu_page_added) — pages பதிவு செய்யப்படும்போது கூடுதல் செயல்களை இயக்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_page_after_render](./Actions/wu_page_after_render) — page-ஐ அச்சிட்ட பிறகு கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்
+- [wu_page_before_render](./Actions/wu_page_before_render) — page-ஐ அச்சிடுவதற்கு முன் கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_page_load](./Actions/wu_page_load) — எங்கள் pages-க்கு கூடுதல் hooks சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — page-ஐ அச்சிட்ட பிறகு கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — page-ஐ அச்சிடுவதற்கு முன் கூடுதல் உள்ளடக்கத்தைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — எங்கள் pages-க்கு கூடுதல் hooks சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கும்.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — இந்தப் page-க்கு widgets பதிவு செய்யப்பட்ட பிறகு இயங்கும்.
 
----
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons integrations-க்கு capability modules இணைக்க அனுமதிக்க Fires.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations தங்களைப் பதிவு செய்ய அனுமதிக்க Fires.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — கூடுதல் routes பதிவு செய்ய அனுமதிக்கவும்.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — சேமிப்பு செயல்முறைக்கு actions சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கவும்
+- [wu_site_created](./Actions/wu_site_created) — ஒரு site முதன்முறையாக உருவாக்கப்பட்ட பிறகு Fires.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — தேவைப்பட்டால், கூடுதல் hooks சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கவும்.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer சூழலுக்குள் இருக்கும்போது இயங்கும்.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook-ஐத் தூண்டுகிறது.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ஒரு object database-இல் சேமிக்கப்பட்ட பிறகு Fires.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ஒரு object database-இல் சேமிக்கப்பட்ட பிறகு Fires.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ஒரு object database-இல் சேமிக்கப்பட்ட பிறகு Fires.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — unlocking செயல்முறைக்கு actions சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கவும்.
 
-**Note:** The provided list of actions seems to be a mix of actual WordPress/WordPress-like hooks and some generic functions. I have kept the structure and added a few more common hooks/functions that might be relevant to the context, but the core structure remains the same.
+## Filters {#filters}
 
----
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — அங்கீகார cookie காலாவதி காலத்தின் நீளத்தை வடிகட்டுகிறது.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — அங்கீகார redirect scheme-ஐ வடிகட்டுகிறது.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — நல்ல முறைக்காக, அசல் WP Filter-ஐ இங்கே மீளுருவாக்குகிறது.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — previewer-இல் பயன்படுத்தப்படும் URL-ஐ வடிகட்ட plugin உருவாக்குநர்களை அனுமதிக்கிறது
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie HTTPS வழியாக மட்டுமே அனுப்பப்பட வேண்டுமா என்பதை வடிகட்டுகிறது.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — பாதுகாப்பான அங்கீகார redirect-ஐ பயன்படுத்த வேண்டுமா என்பதை வடிகட்டுகிறது.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — logged in cookie HTTPS வழியாக மட்டுமே அனுப்பப்பட வேண்டுமா என்பதை வடிகட்டுகிறது.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies உண்மையில் client-க்கு அனுப்பப்படுவதைத் தடுக்க அனுமதிக்கிறது.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — redirect URL-ஐ அமைக்கிறது.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters வழியாக கூடுதல் படிகளைச் சேர்க்கிறது
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — render context-க்கு உலகளாவிய முறையில் கூடுதல் variable சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — உருவாக்குநர்கள் இந்தச் சரிபார்ப்பை short-circuit செய்ய அனுமதிக்கிறது.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — புதிய domain சேர்க்கும் modal-க்கான fields-ஐ வடிகட்டுகிறது.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — setup fee line item-இல் மாற்றங்கள் செய்ய உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Ultimate Multisite சேர்த்த admin notices-ஐ வடிகட்ட உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — மாற்றப்பட்ட பிறகு வடிகட்டுகிறது.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — இப்போது, அனைத்து வகைகளையும் நாம் கையாள்கிறோம்.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — கட்டுப்பாடுகளை short-circuit செய்ய plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee பயன்படுத்தப்பட வேண்டுமா வேண்டாமா என்பதை வடிகட்டுகிறது.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — அசல் api arguments-ஐ வடிகட்டுகிறது.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — billing address fields-ஐ வடிகட்ட plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — வெளியீட்டைத் தவிர்த்து புதிய ஒன்றை அமைக்க உருவாக்குநர்களை அனுமதிக்கிறது
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — unset current user code-ஐத் தவிர்க்க உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "recurring amount" மொத்தத்தை வடிகட்டுகிறது.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "initial amount" மொத்தத்தை வடிகட்டுகிறது.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "initial amount" மொத்தத்தை வடிகட்டுகிறது.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — credit மதிப்பில் தலையிட plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain பதிவுகளாக மாறக்கூடாத பகிரப்பட்ட checkout-form அடிப்படை domains-ஐ வடிகட்டுகிறது.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — புதிய field templates சேர்க்கும் எங்கள் APIs இங்கே hook செய்கின்றன.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — புதிய field types சேர்க்கும் எங்கள் APIs இங்கே hook செய்கின்றன.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — பிழைச் செய்திகளை வடிகட்டுகிறது.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — field தானாகச் சமர்ப்பிக்கக்கூடியதா என்பதைச் சரிபார்ப்பதைத் தவிர்க்க உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — form validator-இல் தனிப்பயன் aliases சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — validation rules-ஐ வடிகட்ட plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — தேவையற்ற Params-ஐ unset செய்கிறது.
+- [wu_contains_element](./Filters/wu_contains_element) — ஆரம்ப தேடலின் முடிவுகளை மாற்ற உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — constant-ஐ வேறு விதமாக நிறுவ host providers-ஐ அனுமதிக்கிறது.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — நாட்டின் நிர்வாக துணைப் பிரிவுகளின் நல்ல பெயரைத் திருப்பி அளிக்கிறது.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — ஒரு நாட்டில் உள்ள மாநிலத்திற்கான நகரங்களின் பட்டியலைத் திருப்பி அளிக்கிறது.
+- [wu_country_get_states](./Filters/wu_country_get_states) — இந்த நாட்டிற்கான மாநிலங்களின் பட்டியலைத் திருப்பி அளிக்கிறது.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — இயல்புநிலை நடத்தையை மாற்றி தற்போதைய customer-ஐ வேறு விதமாக அமைக்க உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — இயல்புநிலை நடத்தையை மாற்றி தற்போதைய membership-ஐ வேறு விதமாக அமைக்க உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_current_set_site](./Filters/wu_current_set_site) — இயல்புநிலை நடத்தையை மாற்றி தற்போதைய site-ஐ வேறு விதமாக அமைக்க உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — manage site URL அளவுருக்களை மாற்ற உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — இணைப்புகளை வடிகட்ட plugin உருவாக்குநர்களை அனுமதிக்கிறது.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — முடிவுகளை வரையறுக்க புதிய சரிபார்ப்புகளைச் சேர்க்க plugin உருவாக்குநர்களை அனுமதிக்கிறது.
 
-**Self-Correction/Refinement:** I noticed the original list was incomplete or contained placeholder names. I have expanded the list to include more common hooks/functions that fit the pattern of "Action Hook Name" and provided a brief description, assuming the context is a WordPress development environment.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — பின்னர் கூடுதல் blocks சேர்க்க வேண்டியிருக்கலாம்.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — கூடுதல் builders அல்லது plugins கையாள இந்த parser-ஐ developers விரிவுபடுத்த அனுமதிக்க பொதுவான filter சேர்க்கிறது.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — கூடுதல் password விதிகளை அமல்படுத்த வேண்டுமா என்பதை filter செய்கிறது.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — உருவாக்கப்பட்ட customer username-ஐ filter செய்கிறது.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — checkout பக்கத்தின் முன் அமைப்புகளை filter செய்ய plugin developers-ஐ அனுமதிக்கிறது.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — இந்த நடத்தையைத் தவிர்க்க புதிய form slugs சேர்க்க developers-ஐ அனுமதிக்கிறது.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — புதிய migration படிகளைச் சேர்க்க developers மற்றும் add-ons-ஐ அனுமதிக்கிறது
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — இதே method-இல் கீழே இந்த filter பற்றி மேலும் பார்க்கவும்.
+- [wu_get_post_types](./Filters/wu_get_post_types) — எந்த post types காட்டப்பட வேண்டும் என்பதைத் தேர்ந்தெடுக்க developers-ஐ அனுமதிக்கிறது.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Lines-ஐத் திருப்பி அளிக்கிறது, filter செய்யக்கூடியது
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — domain/path ஜோடிகளை மாற்ற developers-ஐ அனுமதிக்கிறது.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration அமைப்பிற்கான wizard sections-ஐ filter செய்கிறது.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — ஒரு form-இல் உள்ள fields-ஐ filter செய்கிறது. அந்த form filter பெயரில் உள்ள ID மூலம் அடையாளம் காணப்படுகிறது.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — தனித்தனி billing cycles கொண்ட product types-ஐ filter செய்கிறது.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — API-க்கான குறிப்பிட்ட நிலையை கட்டாயப்படுத்த plugin developers-ஐ அனுமதிக்கிறது.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — development mode-க்கு கூடுதல் tests சேர்க்க plugin developers-ஐ அனுமதிக்கிறது.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — MCP adapter-க்கான குறிப்பிட்ட நிலையை கட்டாயப்படுத்த plugin developers-ஐ அனுமதிக்கிறது.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — பாதுகாப்பு காரணங்களுக்காக, hook செய்ய கிடைக்கும் actions எண்ணிக்கையை நாங்கள் வரையறுக்கிறோம். இந்த filter developers விரிவுபடுத்த அனுமதிக்கிறது
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — இந்த plan-இல் ஒரு குறிப்பிட்ட post type அனுமதிக்கப்படுகிறதா என்பதைச் சரிபார்க்கிறது; திரும்பும் மதிப்பை filter செய்ய plugin developers-ஐ அனுமதிக்கிறது
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP address சரிபார்ப்பை அமல்படுத்த வேண்டுமா என்பதை filter செய்கிறது.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent சரிபார்ப்பை அமல்படுத்த வேண்டுமா என்பதை filter செய்கிறது.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — உருவாக்கப்பட்ட magic link URL-ஐ filter செய்கிறது.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic links இயக்கப்பட்டுள்ளதா என்பதை filter செய்கிறது.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — ஒரு domain-ஐ primary ஆக்கிய பிறகு redirect URL-ஐ filter செய்கிறது.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — auto-redirect-ஐத் தடுக்கும் parameters-ன் exclusion list ஒன்றை உருவாக்குகிறது.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability சேர்க்கை முடிவை override செய்யும் filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — கணக்கிடப்பட்ட expiration date-ஐ filter செய்கிறது.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewal பிறகு அமைக்கப்பட வேண்டிய கணக்கிடப்பட்ட expiration date-ஐ filter செய்கிறது.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — புதிய update form slugs சேர்க்க developers-ஐ அனுமதிக்கிறது.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — குறைந்தபட்ச password நீளத்தை filter செய்கிறது.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — தேவையான குறைந்தபட்ச password வலிமையை (zxcvbn score) filter செய்கிறது.
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — எங்கள் edit pages-க்கு action links சேர்க்க plugin developers-க்கும் நமக்கும் அனுமதிக்கிறது
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — passwords-இல் lowercase எழுத்துகள் தேவைப்படுமா என்பதை filter செய்கிறது.
+- [wu_password_require_number](./Filters/wu_password_require_number) — passwords-இல் எண்கள் தேவைப்படுமா என்பதை filter செய்கிறது.
+- [wu_password_require_special](./Filters/wu_password_require_special) — passwords-இல் சிறப்பு எழுத்துகள் தேவைப்படுமா என்பதை filter செய்கிறது.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — passwords-இல் uppercase எழுத்துகள் தேவைப்படுமா என்பதை filter செய்கிறது.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — நிலுவையில் உள்ள payments பற்றிய செய்தியை மாற்ற பயனரை அனுமதிக்கிறது.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plans ஆகக் கருதப்பட வேண்டிய product types-ஐ filter செய்கிறது.
+- [wu_post_count](./Filters/wu_post_count) — count total-ஐ மாற்ற plugin developers-ஐ அனுமதிக்கிறது
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — எந்த post status எண்ணப்பட வேண்டும் என்பதை மாற்ற plugin developers-ஐ அனுமதிக்கிறது. இயல்பாக, published மற்றும் private posts எண்ணப்படுகின்றன
+- [wu_post_default_status](./Filters/wu_post_default_status) — database-இல் சேமிப்பதற்கு முன் object data-ஐ filter செய்கிறது.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite மூலம் சேமிப்பதற்கு முன் settings-ஐ filter செய்ய developers-ஐ அனுமதிக்கிறது.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — request-ஐத் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை filter செய்கிறது.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — request-ஐத் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை filter செய்கிறது.
 
----
-
-**Final Output Structure:** I will present the final, cleaned-up list of actions with descriptions.
-
----
-
-**Final Polish:** I will ensure the descriptions are clear and concise.<channel|>Here is the list of actions, assuming this context relates to WordPress or a similar CMS development environment.
-
-| Action Hook | Description |
-| :--- | :--- |
-| `save_post` | Fires when a post is saved (created or updated). |
-| `wp_head` | Fires in the `<head>` section of the HTML output. |
-| `wp_footer` | Fires just before the closing `</body>` tag. |
-| `admin_init` | Fires early in the administration setup process. |
-| `template_redirect` | Fires before WordPress determines which template file to load. |
-| `wp_enqueue_scripts` | Used to enqueue scripts and styles in the frontend. |
-| `admin_enqueue_scripts` | Used to enqueue scripts and styles in the admin area. |
-| `user_register` | Fires after a new user has successfully registered. |
-| `profile_update` | Fires when a user updates their profile information. |
-| `wp_login` | Fires when a user successfully logs into the site. |
-| `wp_logout` | Fires when a user logs out of the site. |
-| `init` | A very early hook that fires when WordPress initializes. |
-| `admin_menu` | Used to add custom items to the admin menu. |
-| `wp_ajax_nopriv_action` | Fires for non-logged-in users making AJAX requests. |
-| `wp_ajax_action` | Fires for logged-in users making AJAX requests. |
-| `save_post_revision` | Fires when a post revision is saved. |
-| `transition_post` | Fires when a post's status changes (e.g., draft to published). |
-| `wp_loaded` | Fires after all necessary WordPress components have loaded. |
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — கோரிக்கையுடன் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை வடிகட்டுகிறது.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — கோரிக்கையுடன் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை வடிகட்டுகிறது.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — கோரிக்கையுடன் தொடர அனுமதிக்கப்படுகிறதா இல்லையா என்பதை வடிகட்டுகிறது.
+- [wu_return_url](./Filters/wu_return_url) — checkout செயல்முறைகளுக்குப் பிறகு பயன்படுத்தப்படும் gateway திரும்பும் URL-ஐ மாற்ற developers-ஐ அனுமதிக்கிறது.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — கூடுதல் தேடல் மாதிரி செயல்பாடுகளைச் சேர்க்க plugin developers-ஐ அனுமதிக்கிறது.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — கூடுதல் அமைப்பு வழிகாட்டி படிகளைச் சேர்க்க developers-ஐ அனுமதிக்கிறது.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — புதிதாக உருவாக்கப்பட்ட site-க்கு Ultimate Multisite ஒரு domain பதிவை உருவாக்க வேண்டுமா என்பதை வடிகட்டுகிறது.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — திருப்பிவிடலை short-circuit செய்து, அது நடப்பதைத் தடுக்க developers-ஐ அனுமதிக்கிறது.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler rewrite-ஐ அனுமதிக்கிறது
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — sites-க்கு கிடைக்கும் மொத்த செயல்களை வடிகட்டுகிறது.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — வலையமைப்பின் உள்ளே get pluginssites-க்கான மதிப்பை மாற்றும் வடிகட்டி.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on திறனை இயக்க/முடக்க.
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer செயல்களுக்காக திருப்பி அனுப்பப்படுவதற்கு முன் உருவாக்கப்பட்ட SSO URLs-ஐ வடிகட்டுகிறது.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription தரவை வடிகட்டுகிறது. success_url அல்லது cancel_url-ஐ override செய்யலாம்.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — கட்டண நோக்க arguments-ஐ வடிகட்டுகிறது.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — சரிபார்க்க வேண்டிய plan-இன் ID-ஐ வடிகட்டுகிறது. இது இருந்தால், புதிய subscription இந்த plan-ஐப் பயன்படுத்தும்.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — சரிபார்க்க வேண்டிய product-இன் ID-ஐ வடிகட்டுகிறது. இது இருந்தால், புதிய subscription இந்த product-ஐப் பயன்படுத்தும்.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge options உடன் அனுப்பப்படும் idempotency_key மதிப்பை வடிகட்டுகிறது.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — இந்த webhook-உடன் தொடர்புடைய membership பதிவை வடிகட்டுகிறது.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — தரவுத்தளத்தில் சேமிக்க வரிசைப்படுத்தப்படுவதற்கு முன் data meta-வை வடிகட்டுகிறது.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — தரவுத்தளத்தில் சேமிக்கப்படுவதற்கு முன் object data-வை வடிகட்டுகிறது.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — திறக்க upgrade URL-ஐ மாற்ற developers-ஐ அனுமதிக்கிறது
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping பயன்படுத்தப்பட வேண்டுமா என்பதை நிர்ணயிக்கிறது
+- [wu_username_from_email](./Filters/wu_username_from_email) — புதிய customer பயனர்பெயரை வடிகட்டுகிறது.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — membership users வரம்பைப் பற்றிய செய்தியை மாற்ற developers-ஐ அனுமதிக்கிறது
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — மாற்றக்கூடிய பட்டியலில் கூடுதல் கோப்புறைகளைச் சேர்க்க developers-ஐ அனுமதிக்கிறது.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — இந்த entity-க்கு எந்த sub_commands இயக்கப்பட்டுள்ளன என்பதை வடிகட்டுகிறது.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — எங்கள் constants-ஐ எங்கு செலுத்தலாம் என்பதை கண்டறிய முயற்சிக்கும் போது, மூன்று patterns-ஐச் சரிபார்க்கிறோம்:

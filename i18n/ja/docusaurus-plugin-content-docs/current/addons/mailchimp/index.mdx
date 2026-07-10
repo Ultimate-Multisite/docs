@@ -1,89 +1,89 @@
 ---
 title: Mailchimp
 sidebar_position: 1
-_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
-Multisite Ultimate: Mailchimp Integration
+Multisite Ultimate: Mailchimp 連携
 
-Multisite Ultimate ネットワークを Mailchimp に統合します。特定のプランを Mailchimp リストにリンクし、サインアップ時に自動的に購読者をそれらのリストに追加できます。
+Multisite Ultimate ネットワークを Mailchimp と連携します。特定のプランを Mailchimp リストに関連付け、登録時に購読者をそれらのリストへ自動的に追加できます。
 
-## Installation
+## インストール {#installation}
 
-1. 「ultimate-multisite-mailchimp」を「/wp-content/plugins/」ディレクトリにアップロードします。
-2. WordPress ネットワーク管理の「Plugins」メニューからプラグインを有効化します。
+1. 'ultimate-multisite-mailchimp' を '/wp-content/plugins/' ディレクトリにアップロードします
+2. WordPress ネットワーク管理の 'Plugins' メニューからプラグインを有効化します
 
-## Usage Guide
+## 利用ガイド {#usage-guide}
 
-サブスクライバーのメールを Mailchimp リストと同期するのは、当社の Ultimate Multisite: MailChimp Integration Add-on を使えば非常に簡単です。このチュートリアルは、すべてを設定するのに役立ちます！
+Ultimate Multisite: MailChimp 連携アドオンを使えば、購読者のメールアドレスを MailChimp リストと同期するのはとても簡単です。このチュートリアルでは、すべての設定を完了できるように案内します。
 
-## Getting an API key
+## API キーの取得 {#getting-an-api-key}
 
-設定の詳細に入る前に、Mailchimp API キーが必要です。これにより、Ultimate Multisite は Mailchimp API と通信し、リストやグループを取得し、ユーザーがサインアップした際にメールアドレスをそれらのリストやグループに追加できます。
+利用できる各種設定に入る前に、MailChimp API キーが必要です。これにより、Ultimate Multisite は MailChimp API と通信し、リストやグループを取得したり、ユーザー登録時にメールアドレスをそれらのリストやグループへ追加したりできます。
 
-以下のチュートリアルに従って、独自の Mailchimp API キーを取得してください: [About API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+自分の MailChimp API キーを取得するには、このチュートリアルに従ってください: [API キーについて | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
 
 <!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
 
-_Mailchimp API キーを追加する場所_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+_MailChimp API キーを_ _**Ultimate Multisite 設定 - > アドオン設定 -> MailChimp**_ _に追加します_
 
-## Integration Mode
+## 連携モード {#integration-mode}
 
-Mailchimp Integration アドオンは、2つの「統合モード」を提供します。つまり、メールアドレスを同期するためにアドオンを使用する2つの異なる方法があります。
+MailChimp 連携アドオンには 2 つの「連携モード」があります。つまり、アドオンを使ってメールアドレスを同期する方法が 2 種類あります。
 
 <!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
 
-_より柔軟性のある2つの統合モード！_
+_柔軟性を高める 2 つの連携モードです！_
 
-### Mode 1: Multiple Lists
+### モード 1: 複数リスト {#mode-1-multiple-lists}
 
-デフォルトモードは **複数リスト** を使用します。このモードでは、各プランに対して複数の Mailchimp リストを選択できます。ユーザーを異なるリストに分割する場合に最適なオプションです。
+既定のモードでは **複数リスト** を使用します。このモードでは、各プランに対して複数の MailChimp リストを選択できます。ユーザーを異なるリストに分けて管理している場合に最適です。
 
-例として、Mailchimp アカウントに3つの異なるリスト（**Newsletter**、**Plan A**、**Plan B**）があると仮定します。プランに関係なく、すべてのユーザーを Newsletter リストにも含めたいので、更新情報を見逃さないようにします。
+たとえば、MailChimp Account に **ニュースレター**、**プラン A**、**プラン B** という 3 つのリストがあるとします。プランに関係なく、すべてのユーザーをニュースレターのリストにも含めたい場合、更新情報を見逃さないようにできます。
 
-これを実現するには、Multiple Lists モードを使用して、**Newsletter** と **Plan A** を Plan A Mailchimp 設定に追加し、**Newsletter** と **Plan B** を Plan B Mailchimp 設定に追加します。
+これを実現するには、複数リストモードを使って、プラン A の MailChimp 設定に **ニュースレター** と **プラン A** の両方を追加し、プラン B の MailChimp 設定に **ニュースレター** と **プラン B** を追加します。
 
 <!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
 
-_新規アカウントとキャンセル済みアカウントのデフォルトリストを選択する_
+_新しいアカウント用とキャンセル済みアカウント用の既定リストを選択します_
 
-### Mode 2: Single List + Multiple Groups
+### モード 2: 単一リスト + 複数グループ {#mode-2-single-list--multiple-groups}
 
-Mailchimp では、リストを **グループ** と呼ばれる小さなユーザーグループに分割できます。これにより、同じキャンペーンを複数作成せずに、購読者の特定のサブセットにキャンペーンを送信できるため、後でそのキャンペーンの指標を分析しやすくなります。
+MailChimp では、リストを **グループ** と呼ばれる小さなユーザー区分に分けられます。これにより、同じキャンペーンの複数コピーを MailChimp 上に作成しなくても、購読者の特定の一部にキャンペーンを送信できるため、より細かく制御できます（同じキャンペーンを複数作ると、後でそのキャンペーンの指標を分析しにくくなります）。
 
-例として、**My Network Subscribers** という単一リストを作成し、その中に **Plan A** と **Plan B** のグループを作ることができます。
+たとえば、**マイネットワーク購読者** という単一のリストを用意し、その中に **プラン A** と **プラン B** のグループを作成できます。
 
 <!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
 
-_「単一リスト + 複数グループ」統合モードを使用する場合は、デフォルトリストとグループを選択してください_
+_「単一リスト + 複数グループ」連携モードを使用する場合は、既定のリストとグループを選択します_
 
-## Default Lists and Groups
+## 既定のリストとグループ {#default-lists-and-groups}
 
-統合モードを選択したら、デフォルトリスト（モードに応じてグループ）を選択します。特定のリストが選択されていないプランの場合、デフォルトリストが使用されます。
+特定の利用ケースに最も合う連携モードを選択したら、次に既定のリスト（モードによってはグループも）を選択します。特定のプランに個別のリストが選択されていない場合、既定のリストが使用されます。
 
-キャンセル済みアカウントのデフォルトリストも選択できます。ユーザーがサブスクリプションを終了し、ネットワークからアカウントを削除すると、そのメールアドレスはキャンセル済みアカウント用に設定されたリストに移動します。
+キャンセル済みアカウント用の既定リストも選択できます。ユーザーがサブスクリプションを終了し、ネットワークからアカウントを削除すると、そのメールアドレスはキャンセル済みアカウント用に設定されたリストへ移動されます。
 
-## Enabling Double Subscription
+## 二重登録の有効化 {#enabling-double-subscription}
 
-同じ設定ページで **ダブルサブスクリプション** を有効にできます。このオプションを有効にすると、ユーザーは選択されたデフォルトリストと、そのユーザーのプランに選択されたリストの両方に追加されます。このオプションが無効の場合、ユーザーはプランに選択されたリストにのみ追加されます。特定のプランに設定がない場合は、デフォルトリストに追加されます。
+同じ設定ページで、**二重登録** を有効化できます。このオプションでは、選択された既定リストと、そのユーザーのプランに選択されたリストの両方にユーザーを追加します。このオプションが有効でない場合、ユーザーはそのユーザーのプランに選択されたリストにのみ追加されます。そのプランに何も設定されていない場合、ユーザーは選択された既定リストに追加されます。
 
 <!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
 
-_サインアップ時にユーザーをデフォルトリストとプランリストの両方に登録できます_
+_登録時に、ユーザーを既定リストとプランのリストの両方へ登録できます_
 
-## Selecting Lists and Groups for each of the Plans
+## 各プランのリストとグループの選択 {#selecting-lists-and-groups-for-each-of-the-plans}
 
-**Plans** に移動し、編集したいプランを選択します。**Advanced Options** メタボックスに「MailChimp」という新しいタブが表示されます。
+**プラン** に移動し、編集したいプランを選択します。**詳細オプション** メタボックスに、MailChimp という新しいタブが表示されることに注意してください。
 
-そのタブで、統合モードに応じて、複数のリストまたは単一リストと複数のグループを選択できます。
+そのタブでは、そのプランに対して、複数のリスト、または単一のリストと複数のグループ（連携モードによります）を選択できます。
 
 <!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
 
-_各プランで使用するリストとグループを選択してください_
+_各プランで使用したいリストとグループを選択します_
 
-そのプランに新規ユーザーがサインアップすると、メールアドレスが選択されたリストとグループに追加されます！
+新しいユーザーがそのプランに登録すると、そのメールアドレスが選択したリストとグループに追加されます！

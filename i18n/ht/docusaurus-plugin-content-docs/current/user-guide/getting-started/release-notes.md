@@ -3,9 +3,9 @@ title: Notis Lansman
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notis Lansman
+# Notis Lansman {#release-notes}
 
-## Vèsyon 2.13.0 — Lansman nan 2026-06-05
+## Vèsyon 2.13.0 — Lansman nan 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nouvo: Ajouté support pour les tenants souverains (sovereign-tenant) pour le compte client, le paiement (checkout), la facturation (billing), le site, la facture (invoice), le changement de modèle (template switching) et le mappage de domaine afin que les réseaux des tenants puissent renvoyer les clients vers le site principal pour les actions gérées.
 - Nouvo: Ajouté des vérifications de renouvellement de crédentiels pour les abonnements récurrents afin que les gateways puissent désactiver le renouvellement automatique lorsque l'accord de facturation, l'abonnement ou le jeton de coffre (vault token) enregistré est manquant.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Correction : Les cas limites concernant le renouvellement des abonnements, l'affichage de l'expiration et la collecte de paiement évitent maintenant les expirations immédiates, les plantages ou les paiements requis manqués.
 - Amélioré : La compatibilité avec WordPress est testée jusqu'à la version 7.0, les actifs Vue de production sont reconstruits à partir des sources npm, et la couverture de bout en bout Cypress teste maintenant davantage les flux de paiement (checkout), de configuration (setup), SSO et de passerelle (gateway).
 
-## Versyon 2.12.0 — Lèvèli sou 2026-05-15
+## Versyon 2.12.0 — Lèvèli sou 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nouvo: Ajoute Hostinger (hPanel) kòm yon kontwole ki sipòte ak entegrasyon map nan domèn yo.
 - Nouvo: Site Exporter kounye a jere bonba impokte rezo pou fè restorasyon sit la pi fasil sou tout rezo a.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rectif: Site Exporter CLI kounye a kenbe chwazi sit rezo default ki kòrèk.
 - Amelyore: Nou retire wp-cli ki te monte ak plugin la, sa ki fè gwosè plugin la pi piti.
 
-## Versyon 2.11.0 — Lèvèli sou 2026-05-11
+## Versyon 2.11.0 — Lèvèli sou 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nouvo: Site exports yo kounye a monte yon `index.php` ki ka kòmanse tèt li, sa ki pèmèt ou mete ZIP la sou yon nou host san ou pa bezwen mete plugin separé.
 - Nouvo: Export rezo la pèmèt administrate yo ekspoze tout sous-sit yo nan yon sèl archive anba paj Site Export admin la.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nouvo: Edit bouton checkout la bay avèt lè ou ajoute yon pwodwi san okenn chot ki obligatwa pa configure.
 - Nouvo: Tab konfigirasyon Import/Export la kounye a dekri byen kijan li fonksyone epi li gen yon lyen dirèk nan Site Export tool la.
 
-## Versyon 2.10.0 — Lèvèli sou 2026-05-05
+## Versyon 2.10.0 — Lèvèli sou 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nouvo: Wizard de configuration guidé PayPal pou antre kredansyèl manman ak flag OAuth pou yon konfigirasyon gateway ki senp.
 - Nouvo: Panèl kliyan chanje template redizain avè card **current-template**, grid ki pèmanan, epi bouton **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rekir: Path SSO filtre yo respekte nan tout flwa login.
 - Rekir: Opsyon identite sit vid yo rete pèserbe lè w kayte.
 
-## Vèsyon 2.9.0 — Lwete sou 2026-04-30
+## Vèsyon 2.9.0 — Lwete sou 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nouvo: Eksport ak enpòt yon sèl sit ajoute anba **Tools > Export & Import**.
 - Rekir: Fich ZIP eksport yo kounye a sèvi atravè yon endpoint telechaje ki valide.
@@ -65,7 +65,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Rekir: Dependans sikil cron enpòt rezoudi.
 - Amelyore: ZipArchive kounye a itilize anplis de Alchemy/Zippy pou konpatibilite pi bon.
 
-## Vèsyon 2.8.0 — Lwete sou 2026-04-29
+## Vèsyon 2.8.0 — Lwete sou 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nouvo: Enable Jumper toggle ajoute nan konfigirasyon Other Options settings UI la.
 - Nouvo: Kolon Status ajoute pou tables list form checkout la.

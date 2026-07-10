@@ -3,13 +3,13 @@ title: Pemberitahuan Penghapusan Mode Pembuat Situs
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Pemberitahuan Penghapusan Mode Pembuat Situs
+# Pemberitahuan Penghapusan Mode Pembuat Situs {#site-builder-mode-removal-notice}
 
 **Mode Site Builder sudah dihapus di Superdav AI Agent v1.12.0.** Muncul mode Site Builder, silakan pindah ke **Setup Assistant agent** untuk pembuatan tema dan pengaturan situs.
 
-## Apa yang Terjadi?
+## Apa yang Terjadi? {#what-happened}
 
-### Mode Site Builder (Lama)
+### Mode Site Builder (Lama) {#site-builder-mode-legacy}
 
 Mode Site Builder itu adalah antarmuka berbasis panduan (wizard) untuk:
 
@@ -18,7 +18,7 @@ Mode Site Builder itu adalah antarmuka berbasis panduan (wizard) untuk:
 - Memilih tema
 - Menyiapkan konten awal
 
-### Apa yang Menggantikannya?
+### Apa yang Menggantikannya? {#what-replaced-it}
 
 **Setup Assistant agent** sekarang menangani semua fungsi Site Builder dengan:
 
@@ -27,15 +27,15 @@ Mode Site Builder itu adalah antarmuka berbasis panduan (wizard) untuk:
 - Integrasi dengan onboarding Theme Builder
 - Memori `site_brief` yang tersimpan untuk sesi di masa depan
 
-## Jika Anda Menggunakan Mode Site Builder
+## Jika Anda Menggunakan Mode Site Builder {#if-you-were-using-site-builder-mode}
 
-### Situs Anda Aman
+### Situs Anda Aman {#your-sites-are-safe}
 
 - Situs yang sudah dibuat dengan mode Site Builder masih bisa dipakai
 - Tidak ada kehilangan data atau gangguan pada situs
 - Anda tetap bisa mengelola situs Anda seperti biasa
 
-### Migrasi ke Setup Assistant Agent
+### Migrasi ke Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Untuk pengaturan situs baru atau perubahan tema, gunakan Setup Assistant agent:
 
@@ -51,7 +51,7 @@ atau
 
 Setup Assistant agent memberikan fungsi yang sama dengan lebih fleksibel.
 
-## Perbandingan: Site Builder vs. Setup Assistant
+## Perbandingan: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Fitur | Site Builder (Dihapus) | Setup Assistant (Baru) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent memberikan fungsi yang sama dengan lebih fleksibel.
 | Sesi Mendatang | Pengaturan ulang | Menggunakan `site_brief` yang tersimpan |
 | Fleksibilitas | Alur kerja tetap | Percakapan adaptif |
 
-## Migrasi ke Setup Assistant Agent
+## Migrasi ke Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Untuk Situs Baru
+### Untuk Situs Baru {#for-new-sites}
 
 Dibanding menggunakan mode Site Builder:
 
@@ -76,7 +76,7 @@ Dibanding menggunakan mode Site Builder:
    - Pembuatan tema (Theme generation)
    - Konfigurasi awal
 
-### Untuk Situs yang Sudah Ada
+### Untuk Situs yang Sudah Ada {#for-existing-sites}
 
 Jika Anda sudah punya situs dari mode Site Builder:
 
@@ -85,7 +85,7 @@ Jika Anda sudah punya situs dari mode Site Builder:
 3. Agen Asisten Pengaturan akan bantu Anda membuat tema baru
 4. Data situs Anda tetap tidak berubah
 
-### Untuk Perubahan Tema
+### Untuk Perubahan Tema {#for-theme-changes}
 
 Dibandingkan pemilihan tema di mode Site Builder:
 
@@ -95,9 +95,9 @@ Dibandingkan pemilihan tema di mode Site Builder:
    - Membuat tema kustom
    - Mengaktifkannya di situs Anda
 
-## Perbedaan Utama
+## Perbedaan Utama {#key-differences}
 
-### Mode Site Builder
+### Mode Site Builder {#site-builder-mode}
 
 ```
 1. Pilih template
@@ -106,7 +106,7 @@ Dibandingkan pemilihan tema di mode Site Builder:
 4. Selesai
 ```
 
-### Agen Asisten Pengaturan (Setup Assistant Agent)
+### Agen Asisten Pengaturan (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Jelaskan tujuan situs Anda
@@ -117,42 +117,42 @@ Dibandingkan pemilihan tema di mode Site Builder:
 6. Ringkasan singkat situs disimpan untuk sesi mendatang
 ```
 
-## Keuntungan Agen Asisten Pengaturan (Setup Assistant Agent)
+## Keuntungan Agen Asisten Pengaturan (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Lebih Fleksibel
+### Lebih Fleksibel {#more-flexible}
 
 - Jelaskan situs Anda dengan bahasa sehari-hari
 - Dapatkan rekomendasi kustom
 - Sesuaikan dengan kebutuhan spesifik Anda
 
-### Kustomisasi Lebih Baik
+### Kustomisasi Lebih Baik {#better-customization}
 
 - Pembuatan tema kustom
 - Keputusan sistem desain (Design system decisions)
 - Token desain yang tersimpan (Persistent design tokens)
 
-### Memori Permanen
+### Memori Permanen {#persistent-memory}
 
 - `site_brief` Anda disimpan
 - Agen di masa depan akan mengerti situs Anda
 - Tidak perlu mengulang informasi pengaturan
 
-### Alur Kerja Terintegrasi
+### Alur Kerja Terintegrasi {#integrated-workflow}
 
 - Onboarding Theme Builder
 - Keterampilan Estetika Sistem Desain (Design System Aesthetics skill)
 - Kemampuan Kontrol Visibilitas (Ability Visibility controls)
 - Semuanya bekerja bersama dengan mulus
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
-### Saya tidak bisa menemukan mode Site Builder
+### Saya tidak bisa menemukan mode Site Builder {#i-cant-find-site-builder-mode}
 
 Mode Site Builder sudah dihapus. Gunakan agen Asisten Pengaturan (Setup Assistant agent) sebagai gantinya:
 
 "Tolong bantu saya membuat situs baru"
 
-### Saya ingin membuat ulang situs dari Site Builder
+### Saya ingin membuat ulang situs dari Site Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Anjeun bisa bikin ulang pakai agen Setup Assistant:
 
@@ -161,7 +161,7 @@ Anjeun bisa bikin ulang pakai agen Setup Assistant:
 3. Agen bakal bikin tema yang mirip
 4. `site_brief` kamu bakal disimpan buat referensi nanti
 
-### Situs Site Builder saya yang lama nggak jalan lagi
+### Situs Site Builder saya yang lama nggak jalan lagi {#my-existing-site-builder-site-isnt-working}
 
 Situs yang udah dibuat pakai mode Site Builder masih bisa jalan. Muncul masalah?
 
@@ -170,7 +170,7 @@ Situs yang udah dibuat pakai mode Site Builder masih bisa jalan. Muncul masalah?
 3. Cek log error WordPress
 4. Hubungi support kalau masalahnya masih ada
 
-### Boleh nggak saya masih pakai template Site Builder lama?
+### Boleh nggak saya masih pakai template Site Builder lama? {#can-i-still-use-my-old-site-builder-templates}
 
 Template Site Builder udah nggak tersedia lagi. Tapi:
 
@@ -178,14 +178,14 @@ Template Site Builder udah nggak tersedia lagi. Tapi:
 - Kamu bisa bikin situs mirip pakai agen Setup Assistant
 - Agen Setup Assistant kasih pilihan kustomisasi lebih banyak
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 1. **Untuk situs baru**: Pakai agen Setup Assistant
 2. **Untuk situs yang sudah ada**: Tetap pakai seperti adanya
 3. **Untuk ganti tema**: Minta bantuan dari agen Setup Assistant
 4. **Untuk perbaikan desain**: Pakai skill Design System Aesthetics
 
-## Topik Terkait
+## Topik Terkait {#related-topics}
 
 - **Theme Builder Onboarding**: Panduan setup untuk tema kustom
 - **Setup Assistant Agent**: Setup situs yang dibimbing oleh agen

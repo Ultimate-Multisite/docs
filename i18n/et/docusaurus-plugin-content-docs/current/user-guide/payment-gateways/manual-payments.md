@@ -1,46 +1,46 @@
 ---
-title: Manuaal maksude seadistamine
+title: Käsitsi maksete seadistamine
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manua maksude seadistamine (v2)
+# Käsitsi maksete seadistamine (v2) {#setting-up-manual-payments-v2}
 
-_**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
+_**TÄHTIS MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 
-Manua maksud on viis, kuidas teil pakutada muud maksutrimiseid, kui **Stripe** või **PayPal** ei ole kiselule kasutajatele saadaval. See võib olla väärtpind või pankade üle transfer või misige muu maksutrimisevihed, mis on teie kiselule lokalalt saadaval.
+Käsitsi maksed on viis pakkuda teisi makseviise juhul, kui **Stripe** või **PayPal** ei ole teie kasutajatele saadaval. See võib olla pangaülekanne või mõni muu makseviis, mis on teie kasutajatele kohapeal saadaval.
 
-## Manua maksude aktiveerimine
+## Kuidas lubada käsitsi makseid {#how-to-enable-manual-payments}
 
-Manua maksude seadistamine on väga lihtne. Peidi peate seda aktiveerima maksukeskuste all ja sisendama üksikasjalik juhised selle kohta, kuidas kasutaja maksu teeb.
+Käsitsi makse seadistamine on väga lihtne. Peate selle lihtsalt makseväravate all lubama ja lisama üksikasjalikud juhised selle kohta, kuidas kasutaja peaks makse saatma.
 
-Enneige **Ultimate Multisite > Settings > Payments** menüüle. **Payment Gateways** all lülitage sisse **Manual**. Näete, et ilmub teie esile **Payment Instructions** lahendusaukustik.
+Esmalt minge jaotisse **Ultimate Multisite > Seaded > Maksed**. Lülitage jaotise **Makseväravad** all **Käsitsi** sisse. Näete, et teile kuvatakse kast **Maksejuhised**.
 
-Lisa selle lahendusaukustikku teavet, mida kiselule tuleb maksu tegemiseks. See võib olla teie pankade konto detailid ja e-posti aadress, nii et kiselule saab teile maksukinnituse kinnituse esitada, näiteks.
+Lisage sellesse kasti teave, mida teie klient makse tegemiseks vajab. See võib olla näiteks teie pangakonto andmed ja teie e-posti aadress, et klient saaks teile maksekinnituse saata.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Käsitsi maksevärava lüliti koos maksejuhiste tekstialaga](/img/config/manual-gateway-expanded.png)
 
-Siin on manua maksude seadistamise liides:
+Siin on käsitsi maksevärava seadete liides:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Käsitsi maksevärava seaded](/img/config/manual-gateway-settings.png)
 
-Seadistamist pärast seda, klõpsake lihtsalt **Save Settings** ja see on valmis. Kui kasutajad registreeruvad teie võrku, näevad nad sõnumi, mis ütleb, et nad saavad teie juhised ostu lõpetamiseks.
+Pärast seadistamist klõpsake lihtsalt **Salvesta seaded** ja ongi valmis. Kui kasutajad teie võrgustikku registreeruvad, näevad nad sõnumit, mis ütleb, et nad saavad teilt juhised ostu lõpuleviimiseks.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Registreerimise kinnitussõnum, mis ütleb kasutajale, et ta saab maksejuhised](/img/frontend/registration-manual-notice.png)
 
-Ja nad saavad ka saada sõnumi oma **Thank You** lehelile maksukinnituse juhistega.
+Samuti saavad nad teie **Aitäh** lehel sõnumi koos teie maksejuhistega.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manua maksude kinnitamine
+## Käsitsi maksete kinnitamine {#confirming-manual-payments}
 
-Manua maksutuse kinnitamiseks külastage vasakust olevat **Payments** menüü. Seal näete oma võrku kõik maksud ja nende üksikasjad, sealhulgas nende **status**. Manua maksul on alati **Pending** status, kuni te seda manuaalselt muutmate.
+Käsitsi makse kinnitamiseks minge vasakul ribal menüüsse **Maksed**. Seal näete kõiki oma võrgustiku makseid ja nende üksikasju, sealhulgas nende **olekut**. Käsitsi maksel on alati olek **Ootel**, kuni te seda käsitsi muudate.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Maksete loend, kus on näha ootel käsitsi makse](/img/admin/payments-list.png)
 
-Sisestage maksupagina klõpsates **viidilükkja** (reference code). Sellel lehel on kõik andmed teie pending makse kohta, nagu viide ID, tooted, ajakohad ja veel palju muud.
+Avage makse leht, klõpsates **viitekoodil**. Sellel lehel on kõik ootel makse üksikasjad, näiteks viite ID, tooted, ajatemplid ja muu.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Makse üksikasjade leht, kus on näha viitekood, tooted ja kogusummad](/img/admin/payment-edit.png)
 
-Ogi paremas kolonnis saate maksude statusi muuta. Selle muutmine **Completed**iks ja **Activate Membership** valikku lülitamise abil aktiveerib teie klienta veebile ja nende liiklus aktiivseks.
+Parempoolses veerus saate muuta makse olekut. Selle muutmine olekuks **Lõpetatud** ja valiku **Aktiveeri liikmesus** sisselülitamine lubab teie kliendi saidi ning tema liikmesus muutub aktiivseks.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Makse muutmise leht, kus olekuks on määratud Lõpetatud ja lüliti Aktiveeri liikmesus on sisse lülitatud](/img/admin/payment-activate-membership.png)

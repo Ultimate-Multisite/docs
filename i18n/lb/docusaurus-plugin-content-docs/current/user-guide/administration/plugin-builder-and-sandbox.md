@@ -3,11 +3,11 @@ title: Plugin-Builder & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 stellt s'**Plugin Builder & Sandbox System** vor, wo de AI-Assistent WordPress-Plugins uf Ihrem Netzwerk generiere, aktiviere und verwalte kann – alles innerhalb vo ere sichere, isolierte Sandbox-Umgebig.
 
-## Überblick
+## Überblick {#overview}
 
 De Plugin Builder ermöglicht em AI-Assistent, benutzerdefinierti WordPress-Plugins uf natürleche Sprachbefehle z'schriebe. Generierti Plugins werdet validiert, gspeicheret und i ere Sandbox-Schicht aktiviert, bevor sie d'Funktionalität vo de Live-Site überhaupt beeinflusse chönne.
 
@@ -17,7 +17,7 @@ Anwendungsbeispil sind:
 - Prototyping vo Funktione, wo WordPress hooks oder benutzerdefinierti Post Types bruche.
 - Erstelle vo kurzlebige Automatisierungs-Skripte für Batch-Operatione.
 
-## Plugin über AI generiere
+## Plugin über AI generiere {#generating-a-plugin-via-ai}
 
 Um en Plugin z'generiere, öffnet Sie d'Chat-Schnittstell vom Gratis AI Agent und beschriebe Sie, was Sie bruuche. Zum Bischpil:
 
@@ -32,7 +32,7 @@ D'AI wird:
 
 Sie chönne s'Ergebnis no verfeinere, indem Sie im gliiche Chat-Thread wiiterfröge, bevor Sie es aktiviere.
 
-## Sandbox Aktivierig
+## Sandbox Aktivierig {#sandbox-activation}
 
 D'Aktivierig vo eme generierti Plugin i de Sandbox isch anders als d'Aktivierig uf em Live-Netzwerk. D'Sandbox:
 
@@ -48,7 +48,7 @@ Um en Plugin i de Sandbox z'aktiviere, klicke Sie uf de **Activate in Sandbox** 
 
 E Statusmessage bestätigt, ob d'Aktivierig erfolgreich gsi oder fehlgeschlage isch. Bi Fehler wird de Fehlerlog im Chatthread aazeigt.
 
-## Plugins verwalte
+## Plugins verwalte {#managing-generated-plugins}
 
 Generierti plugins sind i **Gratis AI Agent → Plugin Builder → Manage Plugins** ufglischtet. Vo dere Bildschirm chönnt ihr:
 
@@ -64,7 +64,7 @@ Generierti plugins sind i **Gratis AI Agent → Plugin Builder → Manage Plugin
 **U de Netz installiere** deployt s'generiert Plugin uf euis live WordPress multisite. Überprüef de Plugin-Code, bevor ihr wiitergaht. Gratis AI Agent wird vor em Abschluss vo ere live Installation e Bestätigung aafroge.
 :::
 
-## Generiertes Plugin uf em Netzwerk installiere
+## Generiertes Plugin uf em Netzwerk installiere {#installing-a-generated-plugin-on-the-network}
 
 Wenn ihr mit eme sandboxed Plugin zfriede sind, chönnt ihr es uf s'live Netzwerk installiere:
 
@@ -78,7 +78,7 @@ Alternativ chönnt ihr d'Slash-Command i de Chat-Schnittstell bruche:
 /install-plugin <plugin-slug>
 ```
 
-## Plugin-Aktualisierige
+## Plugin-Aktualisierige {#plugin-updates}
 
 Um es generiertes Plugin z'aktualisiere, beschribet d'Änderig em AI-Assistent in eme neue Gspräch:
 
@@ -86,7 +86,7 @@ Um es generiertes Plugin z'aktualisiere, beschribet d'Änderig em AI-Assistent i
 
 D'AI generiert e neui Version, wo i de Sandbox neben de aktuelle Version erscheint. Ihr überprüft de Diff und bestätigt das, bevor d'Aktualisierig angewendet wird.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 De Plugin Builder brucht en integriert **HookScanner**, om d'hooks und filters te analysiere wat jede generiert plugin registriert het. De output van HookScanner s't in de chat-antwot gezeig, und beinhaltet:
 
@@ -96,7 +96,7 @@ De Plugin Builder brucht en integriert **HookScanner**, om d'hooks und filters t
 
 Dat hilft dir, s'verhalte van een plugin te verstaan, bevor je dat aktiveret.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Generiert plugins wärde separat vo manuell installierte plugins gspeicheret und sind nöd über de standaard WordPress plugin management scherm zuegänglich, bis du se explizit im net installiersch.
 - De sandbox brucht padvalidatie om directory traversal z'verhindere bi de schriiff van plugin files.

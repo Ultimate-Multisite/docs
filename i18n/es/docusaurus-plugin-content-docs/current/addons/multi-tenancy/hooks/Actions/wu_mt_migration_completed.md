@@ -4,20 +4,20 @@ title: Acción - wu_mt_migration_completed
 sidebar_label: wu_mt_migration_completed
 _i18n_hash: 54b7b515bfe70d5cff4716829cd59177
 ---
-# Acción: wu_mt_migration_completed
+# Acción: wu_mt_migration_completed {#action-wumtmigrationcompleted}
 
 Se dispara cuando una migración se completa.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |--------|------|-------------|
 | $job | `\Migration_Job` | El trabajo de migración completado. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L693) en la línea 693

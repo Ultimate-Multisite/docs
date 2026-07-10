@@ -3,11 +3,11 @@ title: Abilități Specifice Temei
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Competențe Conștiente de Temă
+# Competențe Conștiente de Temă {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 include patru noi competențe tematice încorporate care se adaptează automat la tema WordPress activă. Aceste competențe oferă ghiduri și capacități specializate, adaptate arhitecturii și funcționalităților temei dumneavoastră.
 
-## Ce sunt Competențele Conștiente de Temă?
+## Ce sunt Competențele Conștiente de Temă? {#what-are-theme-aware-skills}
 
 Competențele conștiente de temă sunt baze de cunoștințe și seturi de instrumente preconfigurate pe care asistentul AI le selectează automat, în funcție de tema WordPress activă pe site-ul dumneavoastră. Când schimbați tema, competențele disponibile ale asistentului se actualizează automat — nu este necesară nicio configurare manuală.
 
@@ -18,9 +18,9 @@ Fiecare competență include:
 - **Exemple de personalizare** — fragmente de cod și pattern-uri de configurare pentru sarcini comune
 - **Cele mai bune practici** — recomandări pentru arhitectura și fluxul de lucru al temei
 
-## Competențe Conștiente de Temă Disponibile
+## Competențe Conștiente de Temă Disponibile {#available-theme-aware-skills}
 
-### Block Themes (Temele bazate pe blocuri)
+### Block Themes (Temele bazate pe blocuri) {#block-themes}
 
 **Se aplică:** Temelor care folosesc arhitectura bazată pe blocuri (Full Site Editing) a WordPress.
 
@@ -34,7 +34,7 @@ Competența Block Themes oferă ghiduri despre:
 
 **Activată automat când:** Tema activă este o temă bazată pe blocuri (suportă funcționalitatea `block-templates`).
 
-### Classic Themes (Temele clasice)
+### Classic Themes (Temele clasice) {#classic-themes}
 
 **Se aplică:** Temelor WordPress tradiționale care folosesc fișiere PHP și editorul clasic.
 
@@ -48,7 +48,7 @@ Competența Classic Themes oferă ghiduri despre:
 
 **Activată automat când:** Tema activă este o temă clasică (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Se aplică:** Site-urilor care folosesc plugin-ul Kadence Blocks pentru design avansat bazat pe blocuri.
 
@@ -62,7 +62,7 @@ Competența Kadence Blocks oferă ghiduri despre:
 
 **Activată automat când:** Plugin-ul Kadence Blocks este activ pe site-ul dumneavoastră.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Se aplică:** Site-urilor care folosesc tema Kadence pentru design și personalizare bazate pe blocuri.
 
@@ -76,15 +76,15 @@ Competența Kadence Theme oferă ghiduri despre:
 
 **Activată automat când:** Tema activă este tema Kadence.
 
-## Cum sunt Selectate Competențele
+## Cum sunt Selectate Competențele {#how-skills-are-selected}
 
 Asistentul detectează automat tema activă și plugin-urile instalate la fiecare mesaj. Dacă există o competență conștientă de temă potrivită, aceasta este încărcată automat în contextul asistentului. Nu este necesar să activați sau să schimbați manual competențele.
 
-### Multiple Skills (Competențe multiple)
+### Multiple Skills (Competențe multiple) {#multiple-skills}
 
 Dacă mai multe competențe se aplică site-ului dumneavoastră (de exemplu, dacă aveți active atât Kadence Blocks, cât și Kadence Theme), asistentul are acces la toate competențele aplicabile și poate face referire la ghidurile din fiecare.
 
-### Switching Themes (Schimbarea temei)
+### Switching Themes (Schimbarea temei) {#switching-themes}
 
 Când vă schimbați tema activă, competențele disponibile ale asistentului se actualizează automat la următorul mesaj. De exemplu:
 
@@ -92,11 +92,11 @@ Când vă schimbați tema activă, competențele disponibile ale asistentului se
 2. Vă schimbați la o temă clasică.
 3. La următorul mesaj, competența **Classic Themes** este încărcată automat, iar competența **Block Themes** nu mai este disponibilă.
 
-## Utilizarea Competențelor Conștiente de Temă
+## Utilizarea Competențelor Conștiente de Temă {#using-theme-aware-skills}
 
 Pentru a folosi o competență conștientă de temă, descrieți pur și simplu ce doriți să faceți în interfața de chat. Asistentul va face referire automat la ghidul competenței adecvate.
 
-### Exemple de Prompt-uri
+### Exemple de Prompt-uri {#example-prompts}
 
 **Pentru Block Themes:**
 > "Create a hero section with a background image and centered text using block patterns."

@@ -3,7 +3,7 @@ title: GitHub Snippetak
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ultimate Multisite snippet-akordeak GitHub repositoryan erabiltzen
+# Ultimate Multisite snippet-akordeak GitHub repositoryan erabiltzen {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub repositoryan daiko kodeak Ultimate Multisite erabiltzaileek leku batzuk erreqitzen dute, adibidez, Google Analytics scripta ezarritzean edo admin dashboard-eko meta box bat horretzeko.
 
@@ -19,7 +19,7 @@ Kodea jodez modu 2an ezazu daiteke:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Snippetak onartu itxura funktionen.php filean jarri
+# Snippetak onartu itxura funktionen.php filean jarri {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. WordPress Network admin dashboardan logiatzi eta Themes > Theme Editor (eziaurreko screenshotan ikusi) laukera jarri.
 
@@ -29,7 +29,7 @@ Kodea jodez modu 2an ezazu daiteke:
 
 <!-- Screenshot ez dago: WordPress Theme Editor-ek functions.php filearen editzapen ikusi -->
 
-# Must-Use Plugins (mu-plugins) sortzea
+# Must-Use Plugins (mu-plugins) sortzea {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress-ek "Must-Use Plugins" edo kurzua "mu-plugins" bitartean custom funtzioak laden dezakeko aukera dago.
 

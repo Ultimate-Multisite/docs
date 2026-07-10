@@ -3,27 +3,27 @@ title: Tsoom tsoom site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# ការនាំចេញគេហទំព័រ (Site Export)
+# ការនាំចេញគេហទំព័រ (Site Export) {#site-export}
 
 ໜ້າ **Site Export** ຂອງ admin ຈະຊ່ວຍໃຫ້ຜູ້ບໍລິຫານເຄືອຂ່າຍສາມາດເກັບຮັກສາເວັບໄຊທ໌ດຽວ, ຫຼື ເຄືອຂ່າຍທັງໝົດ, ໃສ່ໃນຮູບແບບ archive ທີ່ສາມາດດາວໂຫຼດໄດ້ ເພື່ອເຮັດການຍົກຍ້າຍ (migration), ສຳຮອງຂໍ້ມູນ (backup), ຫຼື ການມອບໝາຍວຽກ.
 
-## ການនាំចេញເວັບໄຊທ໌ດຽວ
+## ການនាំចេញເວັບໄຊທ໌ດຽວ {#exporting-one-site}
 
 ໄປທີ່ **Ultimate Multisite > Site Export** ແລ້ວເລືອກ **Generate new Site Export**. ເລືອກ subsite ທີ່ເຈົ້າຢາກສົ່ງອອກ, ແລ້ວເລືອກວ່າ archive ນັ້ນຄວນມີຮູບພາບ (uploads), plugin, ແລະ theme ບໍ່.
 
 ເມື່ອການនាំចេញສຳເລັດ, ໃຫ້ດາວໂຫຼດ ZIP ຈາກລາຍການ **Existing Exports**. ZIP ທີ່ໄດ້ມາເຫຼົ່ານີ້ຈະມີ `index.php` ທີ່ສາມາດ booting ໄດ້ດ້ວຍຕົນເອງ ແລະ `readme.txt`, ເຊິ່ງເຮັດໃຫ້ archive ນັ້ນສາມາດອັບໂຫຼດໄປໃສ່ host ໃໝ່ ແລະ ເລີ່ມໃຊ້ງານໄດ້ທັນທີໂດຍບໍ່ຕ້ອງຕິດຕັ້ງ plugin importer ແຍກໆ ກ່ອນ.
 
-## ການនាំចេញເຄືອຂ່າຍທັງໝົດ
+## ການនាំចេញເຄືອຂ່າຍທັງໝົດ {#exporting-the-whole-network}
 
 ໃຊ້ **Network Export** ໃນໜ້າ Site Export ເມື່ອເຈົ້າຕ້ອງການ archiveດຽວທີ່ບັນຈຸ subsites ທັງໝົດໃນເຄືອຂ່າຍ. ອັນນີ້ມີປະໂຫຍດຫຼາຍກ່ອນການຍົກຍ້າຍ host, ການຝຶກຊ້ອມສຸກເສີນ (disaster-recovery drills), ຫຼື ການສ້າງເວັບໄຊທ໌ໃໝ່ແບບ staging ທີ່ subsites ທັງໝົດຕ້ອງໄປນຳກັນ.
 
 ເນື່ອງຈາກ network export ອາດຈະໃຫຍ່ກວ່າການ export ເພື່ອ siteດຽວຫຼາຍ, ໃຫ້ເຮັດມັນໃນຊ່ວງເວລາທີ່ມີການເຂົ້າເຖິງໜ້ອຍ ແລະ ກວດສອບວ່າ target storage ມີພື້ນທີ່ຫວ່າງພຽງພໍສຳລັບການອັບໂຫຼດ plugin, theme, ແລະ file ZIP ທີ່ສ້າງຂຶ້ນ.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 ເລີ່ມແຕ່ Ultimate Multisite 2.12.0, Site Exporter ສາມາດສ້າງ **network import bundles** — archive ແບບສະເພາະທີ່ອອກແບບມາເພື່ອການຟື້ນຟູເວັບໄຊທ໌ໃນເຄືອຂ່າຍທັງໝົດຢ່າງມີປະສິດທິພາບ. Network import bundle ໜຶ່ງຈະມີ file ແລະ metadata ທັງໝົດທີ່ຈຳເປັນ ເພື່ອຟື້ນຟູ subsites ຫຼາຍໆ ແລ້ວໄປໃສ່ການຕິດຕັ້ງເຄືອຂ່າຍໃໝ່.
 
-#### ການສ້າງ Network Import Bundle
+#### ການສ້າງ Network Import Bundle {#generating-a-network-import-bundle}
 
 1. ໄປທີ່ **Ultimate Multisite > Site Export**
 2. ចុចលើ **Generate new Network Export** (បង្កើតការនាំចេញបណ្តាញថ្មី)
@@ -32,7 +32,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 5. ចុចលើ **Generate** (បង្កើត)
 6. ទាញយក ZIP bundle ពីបញ្ជី **Existing Exports** (ការនាំចេញដែលមានស្រាប់)
 
-#### ការស្តារឡើងវិញពី Network Import Bundle
+#### ការស្តារឡើងវិញពី Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 ដើម្បីស្តារគេហទំព័រពី network import bundle៖
 
@@ -52,7 +52,7 @@ Network import bundles រក្សាទុក៖
 - ការបង្ហោះមេឌៀ (Media uploads) (ប្រសិនបើត្រូវបានបញ្ចូលក្នុង bundle)
 - តុ database និងទិន្នន័យដែលបានកំណត់តាមបណ្តុំ
 
-## ការដំឡើង ZIP export ដែលដំណើរការដោយខ្លួនឯង (self-booting)
+## ការដំឡើង ZIP export ដែលដំណើរការដោយខ្លួនឯង (self-booting) {#installing-a-self-booting-export-zip}
 
 ដើម្បីស្តារ ZIP ដែលដំណើរការដោយខ្លួនឯងនៅលើ host ថ្មី៖
 

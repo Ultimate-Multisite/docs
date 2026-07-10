@@ -1,0 +1,33 @@
+---
+id: wu_sso_url
+title: מסנן - wu_sso_url
+sidebar_label: wu_sso_url
+_i18n_hash: a369dcf0f4cab1f5941c82ac58286155
+---
+# פילטר: wu_sso_url {#filter-wussourl}
+
+מסנן כתובות URL של SSO שנוצרו לפני שהן מוחזרות עבור פעולות לקוח בין דומיינים.
+
+השתמשו בפילטר זה כאשר אינטגרציה צריכה להוסיף הקשר מהימן לקישור SSO של דייר ריבוני או להחליף את כתובת ה-URL של המתווך תוך שמירה על אימות הטוקן של Ultimate Multisite.
+
+## פרמטרים {#parameters}
+
+| שם | סוג | תיאור |
+|------|------|-------------|
+| $sso_url | `string` | כתובת URL של SSO שנוצרה. |
+| $user | `WP_User` | משתמש שיאומת על ידי ביקור ה-SSO. |
+| $site_id | `int` | מזהה האתר היעד עבור הביקור. |
+| $redirect_to | `string` | כתובת URL של יעד לאחר אימות SSO מוצלח. |
+
+### מאז {#since}
+
+- 2.13.0
+
+### מקור {#source}
+
+מוגדר ב-`inc/sso/class-sso.php`.
+
+
+## החזרות {#returns}
+
+כתובת URL של SSO לאחר סינון.

@@ -4,13 +4,13 @@ title: Szűrő - wu_enforce_password_rules
 sidebar_label: wu_enforce_password_rules
 _i18n_hash: bb85ebfcf4a234a043f75de3d07e47ee
 ---
-# Filter: wu_enforce_password_rules
+# Filter: wu_enforce_password_rules {#filter-wuenforcepasswordrules}
 
 Szűrő, amely meghatározza, hogy kötelezi-e további jelszó szabályokat.
 
 Ha igaz (true), kötelezi a minimális hosszúsági és karakterkövetelményeket. Automatikusan aktiválódik a "Super Strong" beállításnál, vagy ha a Defender Pro Strong Password funkció aktív.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Ha igaz (true), kötelezi a minimális hosszúsági és karakterkövetelményeke
 | $strength_setting | `string` | Az admin beállítási érték. |
 | $defender_active | `bool` | Az, hogy aktív-e a Defender Pro Strong Password. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L531) at line 531

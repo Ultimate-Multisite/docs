@@ -3,11 +3,11 @@ title: Oibríocht an t-aonlaíocht
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Oibríocht an Dashboard
+# Oibríocht an Dashboard {#dashboard-overview}
 
 Tá **Dashboard** ar fáil ar an meán Ultimate Multisite, agus tá aisteach ar chuid widget-a ar an Network Dashboard. Cuireann an athraithe seo i gcónaí an ardánacha seo.
 
-## An Network Dashboard
+## An Network Dashboard {#the-network-dashboard}
 
 Céadfaidh Ultimate Multisite widget-a úsáideach a chur i bhfeic ag an dashboard leathmaí (network-level) atá ar fáil ag **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Seo an rud a thabharíonn siad mar chomh maith a bhfhéidir each widget:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## An Dashboard Ultimate Multisite
+## An Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 While an network dashboard a chur ar fáil thôngas na n-eolasacha ar an network, tá an dashboard Ultimate Multisite (ar an ardánacha leathmaí Ultimate Multisite) ag cur i gcónaí ar an searsain.
 

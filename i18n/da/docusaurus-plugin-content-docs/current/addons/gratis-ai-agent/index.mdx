@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent er en autonom WordPress AI-assistent, der kan planlægge, bygge og administrere komplette WordPress-websteder gennem instruktioner i naturligt sprog. Den eksponerer et struktureret sæt af **abilities** — diskrete, testbare handlinger, som agenten kan kalde — der dækker alt fra indholdsstyring til tilpasning af designsystemer. Version 1.9.0 tilføjer abilities til indholdsoprettelse, visuel sidegennemgang via screenshots på klientsiden, fem indbyggede agentprofiler og feature flags til adgangskontrol og branding.
+
+## Nøglefunktioner {#key-features}
+
+- **Abilities-system** — et modulært, udvideligt katalog over handlinger, som agenten kan kalde på din WordPress-installation
+- **Indholdsstyring** — opret indlæg og sider (inklusive tildeling af sideskabeloner), batch-opret flere indlæg i ét kald, angiv fremhævede billeder, og byg kontaktformularer
+- **Visuel gennemgang** — optag screenshots af live-sider, sammenlign før-/eftertilstande, og få en AI-genereret designgennemgang, der dækker layout, typografi, farve og tilgængelighed
+- **Fem indbyggede agenter** — Content Writer, Site Builder, Design Studio, Plugin Manager og Support Assistant; kan skiftes via Agent Picker i chat-headeren
+- **Feature flags** — adgangskontrol- og branding-skift i Settings → Feature Flags til rollebegrænsninger, white-label-navngivning og widget-tilpasning
+- **Styring af Custom Post Type** — registrer, list og slet custom post types med persistens på tværs af genstarter
+- **Styring af Custom Taxonomy** — registrer, list og slet custom taxonomies med persistens
+- **Design System-abilities** — indsæt brugerdefineret CSS, administrer kuraterede blokmønstre, angiv webstedets logo, og anvend theme.json-forudindstillinger
+- **Styring af Global Styles** — læs og skriv theme.json-værdier for farvepaletter, typografi, afstande og mere
+- **Styring af navigationsmenuer** — opret og opdater navigationsmenuer og deres elementer programmatisk
+- **Styring af Options** — læs og skriv WordPress-options med en indbygget sikkerhedsblokliste til at beskytte kritiske indstillinger
+- **Installable Abilities Registry** — find og aktiver yderligere ability-pakker uden at ændre centrale plugin-filer
+- **Site Builder Orchestration v2** — flertrinsplaner til webstedsopbygning med plugin-opdagelse, fremskridtssporing og fejlgendannelse
+- **WP-CLI-benchmarkkommando** — kør agentens benchmark-suite for kapabiliteter fra kommandolinjen til CI og modelevaluering
+
+## Krav {#requirements}
+
+- WordPress 6.0 eller højere
+- PHP 8.1 eller højere
+- WordPress Multisite (netværksaktiveret) eller single-site-installation
+- Et aktivt AI provider connector-plugin (Anthropic, OpenAI eller kompatibelt)
+
+## Installation {#installation}
+
+1. Upload plugin-filerne til `/wp-content/plugins/gratis-ai-agent`
+2. Aktivér pluginet via **Plugins**-skærmen i WordPress
+3. Gå til **Gratis AI Agent → Settings**, og tilslut din AI provider
+4. (Valgfrit) Gennemse **Abilities Registry** for at installere yderligere ability-pakker
+
+## Hurtig start {#quick-start}
+
+Når den er aktiveret og tilsluttet en AI provider, skal du åbne **Gratis AI Agent**-panelet i WordPress-adminsidebjælken. Skriv en instruktion i naturligt sprog, og agenten vil planlægge og udføre de nødvendige trin ved hjælp af sine tilgængelige abilities.
+
+**Eksempelinstruktioner:**
+
+```
+Opret en "Portfolio" custom post type med en "Project Category" taxonomy.
+```
+
+```
+Indsæt en dark-mode-farvepalette i theme, og angiv den primære farve til #1a1a2e.
+```
+
+```
+Byg et restaurantwebsted med en online-menu, bookingformular og kontaktside.
+```
+
+## Oversigt over Abilities {#abilities-overview}
+
+Abilities er de atomare handlinger, agenten kan udføre. Hver ability er en registreret PHP-klasse, der eksponerer et schema (parametre og returtyper), som agenten læser ved kørselstid. Abilities er grupperet i funktionelle områder:
+
+| Område | Abilities |
+|---|---|
+| **Indholdsstyring** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuel gennemgang** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigationsmenuer** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Options-styring** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Se [Abilities-referencen](./abilities) for fuld parameterdokumentation og brugseksempler.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent leveres med en `wp gratis-ai-agent`-kommandofamilie til at køre benchmarks og administrere abilities fra kommandolinjen. Se [WP-CLI-referencen](./wp-cli) for den fulde kommandoliste.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Konfiguration {#configuration}
+
+Alle indstillinger findes under **Gratis AI Agent → Settings** i WordPress-admin:
+
+| Indstilling | Beskrivelse |
+|---|---|
+| **AI Provider** | Vælg og konfigurer den aktive AI provider connector |
+| **Model** | Vælg den sprogmodel, der skal bruges til agent-sessioner |
+| **Max Tokens** | Tokenbudget pr. anmodning (standard 4096) |
+| **Ability Timeout** | Maksimalt antal sekunder, en individuel ability kan køre (standard 30) |
+| **Debug Logging** | Log ability-kald og agentens ræsonnement til WordPress-debugloggen |
+
+## Sikkerhedsblokliste for Options-styring {#options-management-safety-blocklist}
+
+Options Management-evnen inkluderer en indbygget blokeringsliste, der forhindrer agenten i at læse eller skrive følsomme WordPress-indstillinger. Standardblokeringslisten dækker:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-indstillinger — brug et dedikeret migreringsværktøj til disse)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (hemmelige nøgler)
+- `active_plugins`, `template` (plugin/theme-aktivering — brug dedikerede evner)
+- Betalingsgateway-legitimationsoplysninger og API-nøgler registreret af installerede plugins
+
+Yderligere poster kan tilføjes via filteret `gratis_ai_agent_options_blocklist`.
+
+## Hooks og filtre {#hooks-and-filters}
+
+### Handlinger {#actions}
+
+- `gratis_ai_agent_ability_registered` — udløses efter en evne er registreret, modtager evnens klassenavn
+- `gratis_ai_agent_plan_started` — udløses, når en plan for webstedsbygger begynder at køre
+- `gratis_ai_agent_plan_completed` — udløses, når en plan afsluttes med succes
+- `gratis_ai_agent_plan_failed` — udløses, når en plan støder på en uoprettelig fejl
+
+### Filtre {#filters}
+
+- `gratis_ai_agent_abilities` — ændr listen over registrerede evner, før agenten indlæser den
+- `gratis_ai_agent_options_blocklist` — udvid eller reducer sikkerhedsblokeringslisten for indstillinger
+- `gratis_ai_agent_benchmark_questions` — tilføj brugerdefinerede benchmarkspørgsmål til evalueringssuiten
+- `gratis_ai_agent_plan_plugins` — ændr plugin-opdagelseslisten under generering af webstedsplan
+
+## Support {#support}
+
+For support, besøg [ultimatemultisite.com](https://ultimatemultisite.com), eller opret et issue i plugin-repositoriet.
+
+## Changelog {#changelog}
+
+Se [Changelog](./changelog) for den fulde versionshistorik.

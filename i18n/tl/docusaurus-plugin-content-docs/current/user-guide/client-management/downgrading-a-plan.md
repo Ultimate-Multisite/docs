@@ -3,13 +3,13 @@ title: Pagbaba ng Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Pagbaba ng plano (v2)
+# Pagbaba ng plano (v2) {#downgrading-a-plan-v2}
 
 _**MAHALAGANG PAUNAWA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 
 Ang pagbababa o downgrade ng plano o subscription ay isang karaniwang ginagawa ng mga kliyente mo kung mayroon silang limitadong budget o kung nagpasya na hindi nila kailangan ng maraming resources para patakbuhin ang kanilang subsite.
 
-## Paano mag-downgrade ng plano
+## Paano mag-downgrade ng plano {#how-to-downgrade-a-plan}
 
 Maaaring ibaba ng iyong mga kliyente ang kanilang plano anumang oras sa pamamagitan ng pag-log in sa admin dashboard ng kanilang subsite at pagpindot sa **Change** sa ilalim ng kanilang account page.
 
@@ -25,7 +25,7 @@ Para magpatuloy ang user, kailangan lang nilang pindutin ang **Complete Checkout
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Ano ang nangyayari kapag nag-downgrade ang isang user ng kanilang plano
+### Ano ang nangyayari kapag nag-downgrade ang isang user ng kanilang plano {#what-happens-when-a-user-downgrades-their-plan}
 
 Mahalagang tandaan na ang pagbababa ng plano ay hindi magpapalit sa kasalukuyang configuration sa subsite ng user.
 
@@ -37,7 +37,7 @@ Para sa mga post na lumalampas sa limit na itinakda sa plano, mayroon kang 3 ops
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ano ang mangyayari sa bayad
+### Ano ang mangyayari sa bayad {#what-happens-to-the-payment}
 
 Sa bersyon 2.0, hindi na kailangan ng anumang pag-aayos tungkol sa proration sa bayad.
 

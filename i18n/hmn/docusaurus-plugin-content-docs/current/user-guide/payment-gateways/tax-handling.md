@@ -1,120 +1,120 @@
 ---
-title: Txhawm txais tax
+title: Kev tswj se
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# ការគ្រប់គ្រងពន្ធ (Tax Handling)
+# Kev Tswj Se {#tax-handling}
 
-Ultimate Multisite មាន module សម្រាប់ប្រមូលពន្ធដែលត្រូវបានបង្កើតចូលក្នុង plugin មេរបស់យើងរួចហើយ។ ដូច្នេះ បើអ្នកត្រូវការប្រមូលពន្ធលក់លើផែនការ (plans), កញ្ចប់ (packages) និងសេវាកម្មរបស់អ្នក អ្នកអាចធ្វើវាបានយ៉ាងងាយស្រួលដោយមិនចាំបាច់ដំឡើង add-ons ផ្សេងទៀតទេ។
+Ultimate Multisite muaj ib module sau se tsim nyob rau hauv peb core plugin lawm, yog li yog koj yuav tsum sau se muag khoom ntawm koj cov plans, pob khoom thiab kev pabcuam, koj ua tau yooj yim yam tsis tas yuav mus nruab add-ons ntxiv.
 
-សម្រាប់ក្រុមហ៊ុនដែលស្ថិតនៅក្នុងអឺរ៉ុប យើងមាន **add-on** ដែលបន្ថែមឧបករណ៍ និងមុខងារដើម្បីជួយ **គាំទ្រការអនុលោមតាម VAT** (Value Added Tax) បានកាន់តែប្រសើរ។
+Rau cov tuam txhab uas nyob hauv Europe, peb muaj ib **add-on** uas ntxiv cov cuab yeej thiab yam ntxwv los pab **support VAT** kev ua raws cai kom zoo dua.
 
-Ultimate Multisite មិនបានដាក់ពន្ធ ឬបញ្ជូនពន្ធជំនួសអ្នកទៅរដ្ឋាភិបាលទេ យើងគ្រាន់តែជួយអ្នកប្រមូលពន្ធសមស្របនៅពេលមានប្រតិបត្តិការប៉ុណ្ណោះ។ **អ្នកនៅតែត្រូវបង់ពន្ធដោយខ្លួនឯង។**
+Ultimate Multisite tsis xa ntaub ntawv se lossis them se sawv koj npe rau tsoomfwv; peb tsuas pab koj sau cov se tsim nyog thaum muaj kev yuav muag. **Koj tseem yuav tsum them se ntawm koj tus kheej.**
 
-## ការបើកដំណើរការការប្រមូលពន្ធ (Enabling Tax Collection)
+## Qhib Kev Sau Se {#enabling-tax-collection}
 
-ការប្រមូលពន្ធមិនត្រូវបានបើកដំណើរការជាលំនាំដើមទេ។ ដើម្បីបើកវា អ្នកត្រូវចូលទៅកាន់ **Ultimate Multisite > Settings > Taxes** ហើយប្ដូរ toggle ទៅបើកការកំណត់ Enable Taxes។
+Kev sau se tsis qhib ua ntej. Yuav qhib nws, koj yuav tsum mus rau **Ultimate Multisite > Settings > Taxes** thiab hloov kom qhib qhov Enable Taxes setting.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Lub toggle qhib Taxes nyob saum toj ntawm nplooj Tax settings](/img/config/settings-taxes-enable.png)
 
-នេះគឺជាទិដ្ឋភាពពេញលេញនៃទំព័រការកំណត់ពន្ធ៖
+Ntawm no yog daim duab qhia tag nrho ntawm nplooj tax settings:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Nplooj Tax settings tag nrho](/img/config/settings-taxes-full.png)
 
-អ្នកក៏អាចមើលការកំណត់ពន្ធសម្រាប់ផលិតផលនីមួយៗបានដែរ៖
+Koj kuj saib tau tax settings rau cov khoom ib qho zuj zus:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Tax settings rau cov khoom](/img/config/settings-taxes.png)
 
-### ពន្ធមិនរាប់បញ្ចូល vs. ពន្ធរាប់បញ្ចូល (Tax excluded vs. Tax included)
+### Tsis suav se vs. Suav se nrog lawm {#tax-excluded-vs-tax-included}
 
-ជាលំនាំដើម តម្លៃផលិតផលទាំងអស់របស់អ្នកគឺ **មិនរាប់បញ្ចូលពន្ធ** ដែលមានន័យថា ពន្ធ **មិនត្រូវបានដាក់បញ្ចូល** ក្នុងតម្លៃផលិតផលនោះទេ។ ប្រសិនបើពួកយើងកំណត់ថាអតិថិជនគួរតែបង់ពន្ធលើការទិញជាក់លាក់មួយ យើងនឹងបន្ថែមពន្ធ **បន្ថែមពីលើ** ចំនួនទឹកប្រាក់ក្រោម (subtotal)។
+Ua ntej, tag nrho koj cov nqi khoom yog tsis suav se, txhais tias se **tsis suav nrog** rau hauv tus nqi ntawm cov khoom. Yog peb txiav txim tias ib tus customer yuav tsum them se rau ib qho kev yuav khoom, peb yuav ntxiv cov se **rau saum** subtotal.
 
-ប្រសិនបើអ្នកចង់ឱ្យពន្ធត្រូវបានរាប់បញ្ចូលក្នុងតម្លៃផលិតផលរបស់អ្នក អ្នកអាចធ្វើបានដោយបើកដំណើរការការកំណត់ **Inclusive Tax**។
+Yog koj xav kom se suav nrog hauv tus nqi ntawm koj cov khoom lawm, koj ua tau li ntawd los ntawm kev qhib qhov **Inclusive Tax** setting.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Kab toggle Inclusive Tax nyob hauv qab qhov Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
 
-កុំភ្លេច **រក្សាទុក (save)** ការផ្លាស់ប្ដូរដែលអ្នកបានធ្វើ។
+Tsis txhob hnov qab **save** cov kev hloov uas koj tau ua.
 
 ###
 
-## ការបង្កើតអត្រាពន្ធ (Creating Tax Rates)
+## Tsim Tax Rates {#creating-tax-rates}
 
-បន្ទាប់ពីអ្នកបើកដំណើរការ Tax Collection រួច អ្នកនឹងត្រូវបង្កើតអត្រាពន្ធសម្រាប់ទីតាំងជាក់លាក់ ដោយប្រើ tax rates editor របស់យើង។
+Tom qab koj qhib Tax Collection, koj yuav tsum tsim tax rates rau tej qhov chaw tshwj xeeb siv peb lub tax rates editor.
 
-ታክስ ደረጃን ፈልግ (Manage Tax Rates) button-টো sidebar-ilt Tax settings page-ilt ፈልгээ.
+Koj nkag tau mus rau editor los ntawm nias lub pob **Manage Tax Rates** nyob ntawm sidebar ntawm nplooj Tax settings.
 
-![Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Qhov link Manage Tax Rates hauv Tax Rates panel ntawm nplooj settings](/img/config/settings-taxes-manage-rates.png)
 
-Tax rates editor page-ilt, **Add new Row** button-টো ፈልгээ.
+Nyob rau nplooj tax rates editor, koj ntxiv tau Tax Rates tshiab los ntawm nias lub pob **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Lub rooj tax rates editor nrog lub pob Add new Row nyob saum toj](/img/config/tax-rates-editor.png)
 
-እያንዳንዱ tax rate-ኢ **title** (ለinvoice-ilt ፈልጋል) ፈልግ። ከዚያም የትኛው ሀገር (አስፈላጊ ነው), የክልል እና ከተማ (ሁለቱም አማራጭ ናቸው) ይህ ታክስ የሚከፈለው ቦታ መሆኑን ይምረጡ። በመጨረሻም **tax rate in percents**-ን ይጨምሩ።
+Koj yuav tsum muab ib qho **title** rau txhua tax rate (siv rau invoices). Ces koj xaiv tau **country** (yuav tsum muaj), **state,** thiab **city** (ob qho no xaiv tau) uas qhov se no yuav raug sau. Thaum kawg, ntxiv **tax rate in percents**.
 
-### Tax Categories
+### Tax Categories {#tax-categories}
 
-የተለያዩ ምርቶች ለተለያዩ tax rates እንዲኖራቸው ብዙ Tax Categories መፍጠር ይችላሉ።
+Koj kuj tsim tau ntau Tax Categories, los ntxiv tax rates sib txawv rau ntau hom khoom sib txawv.
 
-**Add new Tax Category**-ን ፈልግ፣ ከዚያ የcategory ስሙን ይጻፉ እና **Create**-ን ይጫኑ።
+Nias **Add new Tax Category** , ces sau koj category lub npe thiab nias **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Lub pob Add new Tax Category nyob saum toj ntawm tax rates editor](/img/config/tax-categories-add.png)
 
-የcategory creation modal ውስጥ የTax Category Name input field-ን ፈልግ።
+![Lub input field Tax Category Name hauv create category modal](/img/config/tax-categories-create-modal.png)
 
-为了 categories-ን ለማየት, **Switch**-ን ፈልግ እና አዲስ ታክስ ለመጨመር የሚፈልጉትን category ይምረጡ።
+Yog xav saib dhau ntawm categories, nias **Switch** thiab xaiv category uas koj xav ntxiv se tshiab rau.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Lub pob dropdown Switch los hloov ntawm tax categories](/img/config/tax-categories-switch.png)
 
-የሚገኙ categories-ን የሚያሳየውን Tax category selector dropdown ፈልግ።
+![Lub dropdown xaiv tax category uas qhia cov categories muaj](/img/config/tax-categories-select.png)
 
-ለ특정 ምርት የTax Category-ን ለመያዝ, ወደ **Product edit page** በመሄድ ከዚያ ወደ Taxes tab ይሂዱ።
+Koj teeb tau tax category rau ib qho khoom tshwj xeeb los ntawm mus rau **Product edit page** thiab ces mus rau tab Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Tab product taxes nrog tax category thiab taxable toggle](/img/config/product-taxes.png)
 
-በዚያው ስክሪን ላይ, Ultimate Multisite ለዚያ ምርት ታክስ መሰብሰብ እንደሌለበት እንዲያውቅ **Is Taxable?** toggle-ን መጥፋት ይችላሉ።
+Nyob rau tib daim screen ntawd, koj hloov tau lub toggle **Is Taxable?** kom tua, kom Ultimate Multisite paub tias nws yuav tsum tsis txhob sau se ntawm yam khoom ntawd.
 
-## የയورو VAT ድጋፍ (European VAT Support)
+## Kev Txhawb European VAT {#european-vat-support}
 
-כמו שאנציא קודם צעמד, биел байгаа add-on (תוספת) ווייזות (customer) שרענן מאירופה (EU) וואס האבן דעם דריטער נוסף ווייל европей VAT רעגולערן (VAT regulations).
+Raws li tau hais ua ntej, peb muaj ib add-on rau customer hauv EU uas muaj cov kev xav tau ntxiv vim European VAT cov cai.
 
-דער VAT טولز פילן קל אויס צוויי wichtיגע זאכן:
+Peb cov cuab yeej VAT pab nrog ob peb yam tseem ceeb:
 
-  * קל לטעען איבער די EU VAT רעטן;
+  * Thauj EU VAT rates tau yooj yim;
 
-  * זיך נויט פון VAT Number איצטקענען און פירשן (validation) - און reverse charging פאר אדערשטענטער וואס איז נישט קל פון VAT (ווי לעצטע קאָמפּאַניעס מיט gültige VAT Numbers);
+  * Sau thiab validation VAT Number - thiab reverse charging rau cov entities uas zam VAT (xws li cov tuam txhab uas muaj VAT numbers siv tau);
 
-צו אינסטאלירן דעם add-on, גיי צו **Ultimate Multisite > Settings** און דאן קליק אויף די לינק אין דער sidebar וואס איז גערופן "Check our Add-ons".
+Yuav nruab add-on ntawd, mus rau **Ultimate Multisite > Settings** thiab ces nias rau sidebar link **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Sidebar ntawm nplooj Settings nrog link Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-דער וועלד וועט זיך רעדירקטירט צו דער לעשן פון אינעם add-onס פאג. דאן קען איר סערכן פון **Ultimate Multisite VAT add-on** און אינסטאלירן עס.
+Koj yuav raug xa mus rau peb nplooj add-ons. Nyob ntawd, koj tshawb tau **Ultimate Multisite VAT add-on** thiab nruab nws.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-דערשטיי, גיי צו **Network Admin > Plugins** און אקטיבירן דעם add-on פון די נטवर्क (network-wide).
+Tom qab ntawd, mus rau **Network Admin > Plugins** thiab activate add-on ntawd thoob plaws network.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-אויב איר גיי צוריק צו דער **Tax Settings tab**, וועסט קענען זען נייע Option's וואס זענען פאפארן. טוגל די Option "Enable VAT Support" און אויסצטellen די נייע VAT טولز. נישט פארגעסן צו **save** די אידענטער!
+Yog koj rov qab mus rau **Tax Settings tab** , koj yuav pom cov kev xaiv tshiab muaj lawm. Hloov qhov kev xaiv **Enable VAT Support** kom qhib cov cuab yeej VAT tshiab. Tsis txhob hnov qab **save** koj cov settings!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Pulling on VAT Tax Rates
+### Rub VAT Tax Rates {#pulling-on-vat-tax-rates}
 
-איין פון די טولز וואס דער integration זוגט איז די מעגלעכקייט צו טטענען די tax rates פאר EU member states. דאס קען מאכן דורך זיך גייען צו דער page פון tax rates editor נאך אקטיבירטן EU VAT support.
+Ib qho ntawm cov cuab yeej uas peb qhov integration ntxiv yog peev xwm thauj tax rates rau EU member states. Ua tau li ntawd los ntawm mus saib nplooj tax rates editor tom qab qhib EU VAT support.
 
-ታችኛው ገጽမှာ VAT (Value Added Tax) ດຶງມາເອົາເລືອກတဲ့ ທາງເລືອກເຫັນໄດ້. ເລືອກປະເພດອັດຕາສ່ວນ ແລະ ກົດປຸ່ມ **Update EU VAT Rates** ແລ້ວ, ຕາຕະລາງທີ່ມີອັດຕາພາສີຂອງແຕ່ລະປະເທດໃນສະມາຊິກ EU ຈະលេចຂຶ້ນມາ ແລະ ຕື່ມຂໍ້ມູນໃຫ້ໂດຍອັດຕະໂນມັດ. ຈາກນັ້ນ, ເຈົ້າພຽງແຕ່ບັນທຶກມັນໃສ່ໄດ້ເລີຍ.
+Nyob hauv qab ntawm nplooj, koj yuav pom cov kev xaiv rub VAT. Xaiv ib hom rate thiab nias lub pob **Update EU VAT Rates** yuav rub thiab auto-populate lub rooj nrog tax rates rau txhua EU member state. Tom qab ntawd, koj tsuas yog yuav tsum save nws xwb.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Lub pob Update EU VAT Rates nyob hauv qab ntawm tax rates editor](/img/config/tax-rates-vat-pull.png)
 
-ເຈົ້າສາມາດແກ້ໄຂຄ່າຫຼັງຈາກດຶງຂໍ້ມູນມາແລ້ວໄດ້ເດີ. ເພື່ອເຮັດແບບນັ້ນ, ພຽງແຕ່ແກ້ໄຂແຖວຕາຕະລາງທີ່ເຈົ້າຕ້ອງການ ແລ້ວກົດເພື່ອບັນທຶກຄ່າໃໝ່.
+Koj kuj kho tau cov values tom qab rub lawv los lawm. Yuav ua li ntawd, tsuas kho kab ntawm lub rooj uas koj xav tau thiab nias kom save cov values tshiab.
 
-### VAT Validation (ການກວດສອບ VAT)
+### VAT Validation {#vat-validation}
 
-ເມື່ອເປີດໃຊ້ VAT support ແລ້ວ, Ultimate Multisite ຈະເພີ່ມຟິລ໌ເພີ່ມເຕີມເຂົ້າໃນແບບຟອມ checkout, ຢູ່ໃຕ້ຟິລ໌ທີ່ຢູ່ບิล (billing address field). ຟິລ໌ນີ້ຈະສະແດງຂຶ້ນສະເພາະສຳລັບລູກຄ້າທີ່ຢູ່ໃນ EU ເທົ່ານັ້ນ.
+Thaum VAT support qhib lawm, Ultimate Multisite yuav ntxiv ib field ntxiv rau checkout form, hauv qab billing address field. Lub field yuav tsuas tshwm rau cov customers uas nyob hauv EU xwb.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite ຈະກວດສອບ VAT Number ແລະ ຖ້າມັນເປັນຄ່າທີ່ຖືກຕ້ອງ, ກົນໄກ reverse charge (ການປ່ຽນພາສີກັບ) ຈະຖືກນຳໃຊ້ ແລະ ອັດຕາພາສີຈະຖືກຕັ້ງເປັນ 0% ໃນ ഓർเดอร์ນັ້ນ.
+Ultimate Multisite yuav xyuas kom meej tus VAT Number, thiab yog tias nws rov qab los tias siv tau, ces txoj kev reverse charge yuav raug siv thiab tus nqi se yuav raug teeb rau 0% rau qhov kev xaj ntawd.

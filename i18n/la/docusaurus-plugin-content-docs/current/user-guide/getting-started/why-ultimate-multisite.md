@@ -3,11 +3,11 @@ title: Curiosum ad Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Quid Ultimate Multisite
+# Quid Ultimate Multisite {#why-ultimate-multisite}
 
 Si llegaste a este artículo, probablemente escuchaste que nuestro plugin podría ser la solución para hacer realidad tu idea de negocio. Esperamos tener las respuestas que necesitas al final de esta pieza.
 
-## ¿Qué es Ultimate Multisite?
+## ¿Qué es Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite es un plugin de WordPress Multisite que te permite ofrecer a los clientes un WaaS (un Sitio como Servicio). Con nuestro plugin, puedes tener varios niveles de suscripción y hacer que los clientes te paguen una tarifa recurrente para tener un sitio alojado en tu red Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite te permite recibir tus pagos con diferentes gateways (como Wo
 
 Y esto es solo el comienzo, ya que puedes extender sus funciones con add-ons y webhooks.
 
-## Otras características
+## Otras características {#other-features}
 
 Ultimate Multisite también ofrece:
 
@@ -33,11 +33,11 @@ Y cosas más avanzadas:
 
 * API de Búsqueda y Reemplazo (Search and Replace API): También puedes anotar las plantillas del sitio con marcadores de posición como {{site_name}} y usar la API de Búsqueda y Reemplazo para rellenar automáticamente esos marcadores de posición con la información proporcionada por tu cliente justo después del registro.
 
-## Casos de uso
+## Casos de uso {#use-cases}
 
 Ahora es hora de ver algunos de los posibles casos de uso para Ultimate Multisite.
 
-### Caso 1: Una Agencia
+### Caso 1: Una Agencia {#case-1-an-agency}
 
 Típicamente, las habilidades principales de una agencia residen en el diseño de sitios web con aspectos como su alojamiento o marketing listados como servicios adicionales.
 
@@ -47,7 +47,7 @@ El control estricto sobre los plugins y temas se mantiene por producto a través
 
 Agencies adveniam tranquillitatem cum Ultimate Multisite, quae hoc permittit facere quod maxime sunt optimi - contexere sita exceptionales.
 
-### Caso 2: Fornitor de Niche
+### Caso 2: Fornitor de Niche {#case-2-niche-provider}
 
 Habemus vetustatem dicendum quod dicitur, "Unque opus fac et bene fac". Pro omnibus specialistis, hoc significat creare productum vel servitium circum una ideam principium.
 
@@ -57,7 +57,7 @@ Una ex novis innovationibus Ultimate Multisite, situs forma (template site) est 
 
 Pro fornitore sitorum et servitiorum niche, hoc praebet viam incomparabile in potestatem instantane situm paratum ad operam creare cum pluginibus et designibus customibus. Client solum minimam input dare debet ut servitium completum faciat.
 
-### Caso 3: WordPress Web Hosting
+### Caso 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 In multitudinem modis sita WordPress hospitare sunt, sed rarissime est ita simpliciter spati web ad clientem recipere cum versione pre-installata WordPress. Hoc est quia plures decisiones et consideratio debent concurrere ut servitium significativum dare possint.
 

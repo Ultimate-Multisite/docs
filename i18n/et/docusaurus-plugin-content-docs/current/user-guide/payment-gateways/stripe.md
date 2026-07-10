@@ -3,19 +3,19 @@ title: Stripe se pealt
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Vebliuti (v2) konfiguratsioonide seadistamine
+# Stripe Vebliuti (v2) konfiguratsioonide seadistamine {#setting-up-the-stripe-gateway-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 
 Te saate aktiveerida kuni nelja maksutrimme makseasetustes: Stripe, Stripe Checkout, PayPal ja Manuaalne. Selle artiklis näeme, kuidas **Stripe'iga** integreerida.
 
-## Stripe aktiveerimine
+## Stripe aktiveerimine {#enabling-stripe}
 
 Et aktivere Stripe kasutamata maksukättesaadavaks teie võrku, külastage **Ultimate Multisite > Settings > Payments** ja lülitage sisse (tick) lühendi kõrval **Stripe** või **Stripe Checkout** Active Payment Gateways - osas.
 
 ![Stripe aktiveerimine aktiivset maksukättesaadavaks](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** See meetod näitab ruumi, kus saab sisestada krediitkaarti numbril ostukogemuse ajal.
 
@@ -25,7 +25,7 @@ Et aktivere Stripe kasutamata maksukättesaadavaks teie võrku, külastage **Ult
 
 ![Stripe Checkout suunajalehe ostukogemuse ajal](/img/config/settings-payment-gateways.png)
 
-### Stripe API võtmete saamine
+### Stripe API võtmete saamine {#setting-up-stripe-webhook}
 
 Kui Stripe on aktiveeritud maksukättesaadavaks, peate täita **Stripe Publishable Key** ja **Stripe Secret Key** väljad. Saada need saate sisse logi oma Stripe kontole.
 

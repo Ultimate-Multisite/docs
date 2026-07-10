@@ -4,11 +4,11 @@ title: 'Фільтр - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_{$type}_get_manage_url
+# Filter: wu_current_{$type}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Дозволяє розробникам змінювати параметри URL-адреси керування сайтом.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | ID сайту. |
 | $site_hash | `string` | Хеш сайту. |
 
-### Since
+### Since {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Визначено в [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) на рядку 214
 
 
-## Returns
+## Returns {#returns}
 Змінена URL-адреса керування.

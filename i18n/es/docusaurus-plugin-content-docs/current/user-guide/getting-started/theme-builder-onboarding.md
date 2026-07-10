@@ -3,11 +3,11 @@ title: Flujo de incorporación del constructor de temas
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flujo de Incorporación del Constructor de Temas
+# Flujo de Incorporación del Constructor de Temas {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 presenta un **flujo de incorporación guiado del Constructor de Temas** que te ayuda a crear un tema de bloques personalizado durante tu configuración inicial. Esto reemplaza el modo Site Builder heredado por un enfoque más flexible y asistido por agentes.
 
-## ¿Qué es el Flujo de Incorporación del Constructor de Temas?
+## ¿Qué es el Flujo de Incorporación del Constructor de Temas? {#what-is-the-theme-builder-onboarding-flow}
 
 El flujo de incorporación del Constructor de Temas es un asistente de configuración interactivo que:
 
@@ -18,9 +18,9 @@ El flujo de incorporación del Constructor de Temas es un asistente de configura
 
 El flujo está impulsado por el **Setup Assistant agent**, que hace preguntas aclaratorias y construye tu tema de forma incremental.
 
-## Inicio del Constructor de Temas
+## Inicio del Constructor de Temas {#starting-the-theme-builder-onboarding}
 
-### Configuración Inicial
+### Configuración Inicial {#first-run-setup}
 
 Cuando ejecutas Superdav AI Agent por primera vez en una nueva instalación de WordPress, verás:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Selecciona **"Build a custom theme"** para entrar en el flujo de incorporación del Constructor de Temas.
 
-### Activación Manual
+### Activación Manual {#manual-activation}
 
 También puedes iniciar la incorporación del Constructor de Temas en cualquier momento solicitando:
 
@@ -49,9 +49,9 @@ o
 "Help me create a custom theme"
 ```
 
-## Los Pasos de Incorporación
+## Los Pasos de Incorporación {#the-onboarding-steps}
 
-### Paso 1: Selección de Modo
+### Paso 1: Selección de Modo {#step-1-mode-selection}
 
 El Setup Assistant agent pregunta sobre tu preferencia:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 Se recomienda el **modo guiado** para la mayoría de los usuarios; el agente hace recomendaciones de diseño basadas en tu industria y objetivos.
 
-### Paso 2: Especificación del Sitio
+### Paso 2: Especificación del Sitio {#step-2-site-specification}
 
 Te preguntarán sobre tu sitio:
 
@@ -74,7 +74,7 @@ Te preguntarán sobre tu sitio:
 
 Esta información se almacena en tu memoria **site_brief**, que los agentes consultan en sesiones futuras.
 
-### Paso 3: Decisiones del Sistema de Diseño
+### Paso 3: Decisiones del Sistema de Diseño {#step-3-design-system-decisions}
 
 El agente te guía a través de la selección de tokens de diseño:
 
@@ -83,7 +83,7 @@ El agente te guía a través de la selección de tokens de diseño:
 - **Espaciado**: Diseños compactos, normales o amplios
 - **Movimiento**: Animaciones y transiciones (si se desea)
 
-### Paso 4: Generación del Tema
+### Paso 4: Generación del Tema {#step-4-theme-generation}
 
 El Setup Assistant agent estructura tu tema de bloques personalizado con:
 
@@ -92,7 +92,7 @@ El Setup Assistant agent estructura tu tema de bloques personalizado con:
 - Estilos de bloques personalizados que coinciden con tu sistema de diseño
 - Metadatos del tema y declaraciones de soporte de WordPress
 
-### Paso 5: Activación y Verificación
+### Paso 5: Activación y Verificación {#step-5-activation-and-verification}
 
 El tema se activa automáticamente y verás:
 
@@ -107,7 +107,7 @@ El tema se activa automáticamente y verás:
 
 Luego puedes visitar tu sitio para verificar que el tema se muestre correctamente.
 
-## Especificación del Sitio y Memoria site_brief
+## Especificación del Sitio y Memoria site_brief {#site-specification-and-sitebrief-memory}
 
 Durante la incorporación, el agente captura la especificación de tu sitio en una categoría de memoria **site_brief**. Esto incluye:
 
@@ -117,7 +117,7 @@ Durante la incorporación, el agente captura la especificación de tu sitio en u
 - Preferencias de diseño
 - Estructura de contenido
 
-### Por qué es importante site_brief
+### Por qué es importante site_brief {#why-sitebrief-matters}
 
 En sesiones futuras, los agentes consultan tu site_brief para:
 
@@ -126,7 +126,7 @@ En sesiones futuras, los agentes consultan tu site_brief para:
 - Proporcionar recomendaciones conscientes del contexto
 - Evitar repetir preguntas de configuración
 
-### Ver tu site_brief
+### Ver tu site_brief {#viewing-your-sitebrief}
 
 Puedes pedirle al agente:
 
@@ -142,11 +142,11 @@ o
 
 El agente mostrará la especificación de tu sitio almacenada.
 
-## Personalización Después de la Incorporación
+## Personalización Después de la Incorporación {#customizing-after-onboarding}
 
 Una vez que finaliza la incorporación del Constructor de Temas, puedes:
 
-### Usar la Habilidad de Estética del Sistema de Diseño
+### Usar la Habilidad de Estética del Sistema de Diseño {#use-the-design-system-aesthetics-skill}
 
 Solicitar refinamientos de diseño:
 
@@ -162,7 +162,7 @@ o
 
 La **Design System Aesthetics skill** te guía a través de actualizaciones de diseño específicas.
 
-### Editar theme.json Directamente
+### Editar theme.json Directamente {#edit-themejson-directly}
 
 Para usuarios avanzados, edita `/wp-content/themes/[theme-name]/theme.json` para ajustar:
 
@@ -171,7 +171,7 @@ Para usuarios avanzados, edita `/wp-content/themes/[theme-name]/theme.json` para
 - Valores de espaciado
 - Definiciones de bordes y sombras
 
-### Crear Plantillas de Bloques Personalizadas
+### Crear Plantillas de Bloques Personalizadas {#create-custom-block-templates}
 
 Usa el editor de bloques de WordPress para crear plantillas personalizadas para:
 
@@ -180,7 +180,7 @@ Usa el editor de bloques de WordPress para crear plantillas personalizadas para:
 - Páginas de productos
 - Formularios de contacto
 
-## Comparación: Antiguo vs. Nuevo Flujo de Incorporación
+## Comparación: Antiguo vs. Nuevo Flujo de Incorporación {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Usa el editor de bloques de WordPress para crear plantillas personalizadas para:
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
 **El flujo de incorporación no se completó**
 - Reinicia el flujo: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Usa el editor de bloques de WordPress para crear plantillas personalizadas para:
 - Pídele al agente que "regenerate the theme with [specific changes]"
 - Edita theme.json directamente para un control preciso
 
-## Próximos Pasos
+## Próximos Pasos {#next-steps}
 
 Después de completar la incorporación del Constructor de Temas:
 

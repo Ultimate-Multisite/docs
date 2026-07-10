@@ -3,11 +3,11 @@ title: ویب ہک ہینڈلنگ
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# ویب ہک ہینڈلنگ
+# ویب ہک ہینڈلنگ {#webhook-handling}
 
 بیرونی سروسز سے ایونٹس وصول کرنے اور ڈیٹا کو Ultimate Multisite کے ساتھ سنک کرنے کے لیے کسٹم ویب ہک اینڈ پوائنٹس بنائیں۔
 
-## کسٹم ویب ہک اینڈ پوائنٹ
+## کسٹم ویب ہک اینڈ پوائنٹ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## سیکیورٹی کے نکات
+## سیکیورٹی کے نکات {#security-considerations}
 
 - ہمیشہ HMAC یا مشترکہ خفیہ کوڈ (shared secret) کا استعمال کرتے ہوئے ویب ہک سگنیچرز کی تصدیق کریں۔
 - اپنے REST روٹ پر `permission_callback` استعمال کریں — اسے کبھی بھی پروجیکشن میں `__return_true` پر سیٹ نہ کریں۔

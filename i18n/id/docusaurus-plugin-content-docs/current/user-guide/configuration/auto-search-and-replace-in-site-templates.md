@@ -1,32 +1,32 @@
 ---
-title: Pencarian dan Penggantian Otomatis di Template Situs
+title: Pencarian dan Penggantian Otomatis di Templat Situs
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Cari dan Ganti Otomatis di Template Situs (v2)
+# Cari dan Ganti Otomatis di Template Situs (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Tutorial ini memerlukan WP UItimo versi 2.x.**_
 
-Salah satu fitur paling powerful dari Ultimate Multisite adalah kemampuan untuk menambahkan field teks, warna, dan pilihan secara bebas ke formulir pendaftaran. Setelah data tersebut berhasil diambil, kita bisa menggunakannya untuk mengisi konten secara otomatis di bagian-bagian tertentu dari template situs yang dipilih. Kemudian, ketika situs baru dipublikasikan, Ultimate Multisite akan mengganti placeholder dengan informasi sebenarnya yang dimasukkan saat pendaftaran.
+Salah satu fitur paling kuat dari Ultimate Multisite adalah kemampuan untuk menambahkan teks, warna, dan bidang pilihan arbitrer ke formulir pendaftaran. Setelah data tersebut kita tangkap, kita dapat menggunakannya untuk mengisi terlebih dahulu konten di bagian tertentu dari template situs yang dipilih. Kemudian, ketika situs baru dipublikasikan, Ultimate Multisite akan mengganti placeholder dengan informasi aktual yang dimasukkan saat pendaftaran.
 
-Sebagai contoh, Anda bisa membuat template situs dengan placeholder. Placeholder harus ditambahkan dengan diapit tanda kurung kurawal ganda - {{nama_placeholder}}.
+Misalnya, Anda dapat membuat situs template Anda dengan placeholder. Placeholder harus ditambahkan dengan diapit kurung kurawal ganda - {{placeholder_name}}.
 
-Kemudian, Anda cukup menambahkan field pendaftaran yang sesuai untuk mengambil data tersebut
+Kemudian, Anda cukup menambahkan bidang pendaftaran yang cocok untuk menangkap data tersebut
 
-Pelanggan Anda kemudian bisa mengisi field tersebut saat pendaftaran.
+Pelanggan Anda kemudian akan dapat mengisi bidang tersebut selama pendaftaran.
 
-Ultimate Multisite akan secara otomatis mengganti placeholder dengan data yang diberikan oleh pelanggan.
+Ultimate Multisite kemudian akan mengganti placeholder dengan data yang diberikan oleh pelanggan secara otomatis.
 
-## **Mengatasi masalah "template penuh placeholder"**
+## **Menyelesaikan masalah "template penuh placeholder"** {#solving-the-template-full-of-placeholders-problem}
 
-Semua itu memang bagus, tapi kita menghadapi satu masalah yang kurang enak: sekarang template situs kita - yang bisa dikunjungi oleh pelanggan - penuh dengan placeholder yang tidak menarik dan tidak banyak memberikan informasi.
+Semua itu bagus, tetapi kita memang menghadapi masalah yang tidak sedap dipandang: kini template situs kita - yang dapat dikunjungi oleh pelanggan kita - penuh dengan placeholder yang tidak banyak menjelaskan.
 
-Untuk mengatasi hal ini, kami menyediakan opsi untuk mengatur nilai sementara pada placeholder, dan kami menggunakan nilai-nilai tersebut untuk mencari dan mengganti kontennya di template situs saat pelanggan Anda berkunjung.
+Untuk menyelesaikannya, kami menawarkan opsi untuk menetapkan nilai palsu bagi placeholder, dan kami menggunakan nilai tersebut untuk mencari dan mengganti kontennya pada situs template saat pelanggan Anda berkunjung.
 
-Anda bisa mengakses editor placeholder template dengan membuka **Ultimate Multisite > Settings > Sites**, lalu pada sidebar, klik link Edit Placeholders.
+Anda dapat mengakses editor placeholder template dengan membuka **Ultimate Multisite > Settings > Sites**, menggulir ke area Site Template Options, lalu mengeklik tautan **Edit Placeholders**.
 
-![Link Edit Placeholders di sidebar pengaturan Sites](/img/config/settings-sites.png)
+![Area Site Template Options di halaman pengaturan Sites](/img/config/settings-sites-templates-section.png)
 
-Itu akan membawa Anda ke editor konten placeholder, di mana Anda bisa menambahkan placeholder beserta kontennya masing-masing.
+Itu akan membawa Anda ke editor konten placeholder, tempat Anda dapat menambahkan placeholder dan kontennya masing-masing.
 
-![Editor konten placeholder dengan nama dan nilai placeholder](/img/config/settings-sites.png)
+![Titik masuk editor placeholder template](/img/config/settings-sites-templates-section.png)

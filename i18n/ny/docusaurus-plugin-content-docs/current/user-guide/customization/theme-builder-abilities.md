@@ -3,18 +3,18 @@ title: Mwayi awo ya Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Uzi wa Theme Builder: Kufunga na Kuwaka Block Themes
+# Uzi wa Theme Builder: Kufunga na Kuwaka Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 imapeza uwezo mbaluwu ubalezi wosayansi ambao umeweza kutengeneza na kuwekwa thimbi la block (block themes) moja kwa moja kupitia chat interface.
 
-## Ufafanuzi wa Jumla
+## Ufafanuzi wa Jumla {#overview}
 
 Uwezo wa **scaffold-block-theme** na **activate-theme** unamfanya agents:
 - Kutengeneza block themes kamili, zilizosajili tayari kwa uzalishaji (production-ready) kulingana na maelekezo yako
 - Kuwaka themes kwenye tovuti yako kiotomatiki bila kuhitaji msaada wa mtu yeyote
 - Kujenga utambulisho mzuri wa kuona kupitia maamuzi ya kubuni yaliyoelekezwa
 
-## Kufunga Block Theme (Scaffold Block Theme)
+## Kufunga Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 Uwezo wa **scaffold-block-theme** unatengeneza theme mpya la WordPress block na muundo kamili wa theme, ikiwemo:
 
@@ -23,7 +23,7 @@ Uwezo wa **scaffold-block-theme** unatengeneza theme mpya la WordPress block na 
 - Staili na tofauti za block maalum
 - Metadata ya theme na tamko la msaada
 
-### Jinsi ya Kuitumia
+### Jinsi ya Kuitumia {#how-to-invoke}
 
 Katika mazungumzo yako na Superdav AI Agent, unaweza kuomba utengenezaji wa theme:
 
@@ -38,7 +38,7 @@ Agent itafanya yafuatayo:
 3. Kuunda files zote zinazohitajika za theme
 4. Kuandaa theme kwa ajili ya kuwaka
 
-### Matokeo Yanayotarajiwa
+### Matokeo Yanayotarajiwa {#expected-output}
 
 Inapokuwa na uwezo huo unafanya kazi vizuri, utaona:
 
@@ -56,11 +56,11 @@ Mfano wa matokeo:
   Hali: Tayari kuwaka
 ```
 
-## Kuwaka Theme (Activate Theme)
+## Kuwaka Theme (Activate Theme) {#activate-theme}
 
 Kufunso **activate-theme** ability imalimbikani site ya wanu ku theme yali liliwera kapena liliwera.
 
-### Umuzi Woperekana
+### Umuzi Woperekana {#how-to-invoke-1}
 
 Pambiri muliiteka theme, muliiteka muliiteka muliiteka:
 
@@ -74,7 +74,7 @@ Kapena muliiteka theme yali liliwera:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Umuzi Woperekana
+### Umuzi Woperekana {#expected-output-1}
 
 Pambiri imalimbikani imalimbikani:
 
@@ -92,7 +92,7 @@ Umuzi woperekana:
   Zomwe zikufufuza: Fufuza homepage ya wanu kuti muliiteka layout
 ```
 
-## Umuzi Woperekana: Kufingira na Kuimbikani
+## Umuzi Woperekana: Kufingira na Kuimbikani {#workflow-scaffold-and-activate}
 
 Umuzi woperekana umalimbikani omwe uliiteka:
 
@@ -102,7 +102,7 @@ Umuzi woperekana umalimbikani omwe uliiteka:
 4. **Kuimbikani**: "Activate the theme now" (Imalimbikani theme wena pano)
 5. **Kufufuza**: Liramba kuona site yanu kuti muliiteka design yatsopano
 
-## Design Tokens na Kufufuza
+## Design Tokens na Kufufuza {#design-tokens-and-customization}
 
 Themes ziliwera zikuiteka zikuiteka WordPress design tokens (kuti `theme.json`) kwa:
 
@@ -114,7 +114,7 @@ Themes ziliwera zikuiteka zikuiteka WordPress design tokens (kuti `theme.json`) 
 
 Tokensizo izi zili m'malo wosonyeza `theme.json`, imalimbikani kuti muliiteka yote la design yanu kuchokera kwa file imodzi.
 
-## Mapulogolero na Zomwe Zikufufuza
+## Mapulogolero na Zomwe Zikufufuza {#limitations-and-notes}
 
 - Themes zikwera m'mulo mu `/wp-content/themes/` ndipo muli ndi mfundo ya WordPress
 - Kufuna kukhazikizidwa (Activation) kumayesera m'mulo wanu wa WordPress
@@ -124,7 +124,7 @@ Tokensizo izi zili m'malo wosonyeza `theme.json`, imalimbikani kuti muliiteka yo
 - Koma kwa PHP yomwe ndi wopereka mu themes ndi kupitiliza kwambiri; simukuseka plugins kuti muli ndi mfundo zosavuta.
 - Block themes zimene zikukonzekera bwino ndi WordPress 5.9 ndipo zikuchezedwa.
 
-## Kukhazikitsa (Troubleshooting)
+## Kukhazikitsa (Troubleshooting) {#troubleshooting}
 
 **Theme sikuyesa pambuyo pa kukonzekera (scaffolding)**
 - Ngati muli ndi directory ya theme imene ndipo inali m'mulo wopereka bwino.
@@ -141,7 +141,7 @@ Tokensizo izi zili m'malo wosonyeza `theme.json`, imalimbikani kuti muliiteka yo
 - Ngati muli ndi caching plugins, chitsatsani (clear) zonse.
 - Ngati muli ndi WordPress version yomwe imayesera tokens zomwe muli kumanga.
 
-## Zinthu Zosiyanasiyana (Next Steps)
+## Zinthu Zosiyanasiyana (Next Steps) {#next-steps}
 
 Pambuyo pa kukonzekera theme yanu, muli ndi ulemu wopereka kuti:
 - Mutumizire **Design System Aesthetics skill** kuti muli ndi chidziwitso kwa typography, colors, ndipo spacing.

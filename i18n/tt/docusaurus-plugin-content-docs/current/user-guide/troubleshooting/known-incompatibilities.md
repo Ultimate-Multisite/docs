@@ -3,7 +3,7 @@ title: Марызнандук булмаганлыклар
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Başqa Pluginlarga Mümkün Olmayan Uyumluluklar
+# Başqa Pluginlarga Mümkün Olmayan Uyumluluklar {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite-ı quraşdırdan vaqaytaqtan vaqaytaqtan, başqa pluginlarlarla çözülmemiş uyğunsuzluklar sebäbindən problem yaşa bilmösünüz.
 

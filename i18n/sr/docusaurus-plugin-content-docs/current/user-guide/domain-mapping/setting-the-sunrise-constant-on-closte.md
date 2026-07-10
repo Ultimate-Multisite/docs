@@ -3,13 +3,13 @@ title: Podešavanje konstante Sunčja na Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Podeš li postaviti konstantu Sunrise na true u Closte-u
+# Podeš li postaviti konstantu Sunrise na true u Closte-u {#setting-the-sunrise-constant-to-true-on-closte}
 
 Neki hosting provajderi zaključavaju fajl `wp-config.php` zbog sigurnosnih razloga. To znači da Ultimate Multisite ne može automatski uređivati taj fajl kako bi uključio potrebne konstante za mapiranje domena i druge funkcije da bi radile. Closte je jedan od takvih hostingu.
 
 Međutim, Closte nudi način da dodate konstante u `wp-config.php` na siguran način. Samo treba da pratite korake ispod:
 
-## Na Closte dashboardu
+## Na Closte dashboardu {#on-the-closte-dashboard}
 
 Prvo, [prijavite se na svoj Closte nalog](https://app.closte.com/), kliknite na meni Sites, a zatim kliknite na link Dashboard na sajtu na kojem trenutno radite:
 

@@ -1,144 +1,156 @@
 ---
-title: Pag-customize sa Imong Registration Form
+title: Pagpasibo sa Imong Form sa Pagparehistro
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pag-customize sa imong Registration Form
+# Pag-customize sa imong Form sa Pagparehistro {#customizing-your-registration-form}
 
-Para magpabilin nga unique ang imong network gikan sa tanang ubang SaaS nga gihimo sa WordPress platform, ang Ultimate Multisite nagtugot kanimo sa pag-customize sa imong registration ug login pages gamit ang among **Checkout Forms** feature.
+Aron mahimong talagsaon ang hitsura sa imong network kumpara sa tanang ubang SaaS nga gitukod sa WordPress platform, gitugotan ka sa Ultimate Multisite nga i-customize ang imong mga panid sa pagparehistro ug pag-login gamit ang among **Mga Form sa Pag-checkout** nga feature.
 
-Bisan pa nga dali ra ni ug flexible para mag-experiment sa lain-laing pamaagi kung gusto nimo ma-convert ang bag-ong mga customer, kini kadaghanan gigamit para makahimo og personalized nga registration forms. Kini nga article nagtumong sa pagpakita kanimo unsaon nimo kini pagbuhat.
+Bisan pa nga sayon ug flexible kini nga paagi sa pagsulay og lain-laing pamaagi kung maningkamot nga makabig ang bag-ong mga customer, kasagaran kini gigamit sa paghimo og personalized nga mga form sa pagparehistro. Tumong sa artikulo nga ipakita kanimo kung unsaon nimo kini pagbuhat.
 
-## Login ug registration pages:
+## Mga panid sa pag-login ug pagparehistro: {#login-and-registration-pages}
 
-Pag-install sa Ultimate Multisite, awtomatikong maghimo kini og custom login ug registration pages sa imong main site. Mahimo nimong usbon kining default nga mga pages bisan kanus-a pinaagi sa pag-adto sa imong **Ultimate Multisite > Settings > Login & Registration** page.
+Sa pag-install sa Ultimate Multisite, awtomatiko kini nga maghimo og custom nga mga panid sa pag-login ug pagparehistro sa imong main site. Mahimo nimo usbon kini nga default nga mga panid bisan kanus-a pinaagi sa pag-adto sa imong **Ultimate Multisite > Mga Setting > Pag-login & Pagparehistro** nga panid.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Panid sa mga setting sa Pag-login ug Pagparehistro](/img/config/settings-general.png)
 
-Ania ang tibuok tan-aw sa login ug registration settings page:
+Aniay tibuok nga pagtan-aw sa panid sa mga setting sa pag-login ug pagparehistro:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Tibuok nga panid sa mga setting sa Pag-login ug Pagparehistro](/img/config/settings-login-registration-full.png)
 
-Atong tan-awon ang matag option nga imong mahimo i-customize sa **Login & Registration** page:
+Atong tan-awon ang matag usa sa mga opsyon nga mahimo nimo i-customize sa **Pag-login & Pagparehistro** nga panid:
 
-  * **Enable registration:** Kini nga option mag-enable o mag-disable sa registration sa imong network. Kung kini gipatabong off, dili makarehistro ug magsubscribe ang imong mga customer sa imong mga produkto.
+  * **I-enable ang pagparehistro:** Kini nga opsyon mag-enable o mag-disable sa pagparehistro sa imong network. Kung naka-off kini, dili makaparehistro ug makasubscribe ang imong mga customer sa imong mga produkto.
 
-  * **Enable email verification:** Kung kining option gipatabong on, ang mga customer nga nag-subscribe para sa libreng plano o bayad nga plano nga adunay trial period makadawat og email verification ug kinahanglan silang i-click ang verification link aron mahimo ang ilang websites.
+  * **I-enable ang pag-verify sa email:** Kung naka-on kini nga opsyon, ang mga customer nga mosubscribe sa libre nga plan o bayad nga plan nga adunay trial period makadawat og verification email ug kinahanglan nilang i-click ang verification link aron mahimo ang ilang mga website.
 
-* **Default registration page:** Kini ni ang default nga pahina para sa pag-register. Kinahanglan kining i-publish sa imong website ug adunay registration form (gitatawag usab og checkout form) - diin ang imong mga kliyente mag-subscribe sa imong mga produkto. Mahimo kang maghimo og daghang registration pages ug checkout forms nga gusto nimo, pero hinumdumi lang nga ibutang ang checkout form shortcode sa registration page, kung dili kini modapad-on.
+  * **Default nga panid sa pagparehistro:** Kini ang default nga panid alang sa pagparehistro. Kinahanglan nga na-publish kini nga panid sa imong website ug adunay form sa pagparehistro (nailhan usab nga form sa pag-checkout) - diin ang imong mga client mosubscribe sa imong mga produkto. Makahimo ka og bisan pila ka mga panid sa pagparehistro ug mga form sa pag-checkout nga gusto nimo, hinumdomi lang nga ibutang ang shortcode sa form sa pag-checkout sa panid sa pagparehistro, kay kung dili, dili kini makita.
 
-  * **Use custom login page:** Kini nga option nagtugot kanimo sa paggamit og customized nga login page, ubos pa sa default nga wp-login.php page. Kung i-toggle ni, pwede kang mopili unsa nga page ang gamiton para sa login sa **Default login page** option (sa tunga ra ni).
+  * **Gamita ang custom nga panid sa pag-login:** Kini nga opsyon nagtugot kanimo nga mogamit og customized nga panid sa pag-login, gawas sa default nga wp-login.php nga panid. Kung naka-on kini nga opsyon, makapili ka kung unsang panid ang gamiton para sa pag-login sa **Default nga panid sa pag-login** nga opsyon (direkta sa ubos).
 
-  * **Obfuscate the original login url (wp-login.php)** : Kung gusto nimo itago ang orihinal nga login URL, pwede nimong i-toggle kining option on. Makatabang kini aron mapugngan ang brute-force attacks. Kung gi-enable ni, ang Ultimate Multisite magpakita og 404 error kung ang usa ka user mosulay sa pag-access sa orihinal nga wp-login.php link.
+  * **Itago ang orihinal nga login url (wp-login.php)** : Kung gusto nimo itago ang orihinal nga login URL, mahimo nimo i-on kini nga opsyon. Mapuslanon kini aron malikayan ang brute-force attacks. Kung naka-enable kini nga opsyon, magpakita ang Ultimate Multisite og 404 error kung mosulay ang user nga mo-access sa orihinal nga wp-login.php link
 
-  * **Force synchronous site publication:** Human nga ang usa ka customer mag-subscribe sa produkto sa usa ka network, ang bag-ong pending site kinahanglan ma-convert ngadto sa tinuod nga network site. Ang proseso sa pag-publish mahitabo pinaagi sa Job Queue, asynchronoso. I-enable kining option aron mapilit ang pag-publish sa parehas nga request sa signup.
+  * **Ipugos ang synchronous nga pag-publish sa site:** Human mosubscribe ang customer sa usa ka produkto sa usa ka network, ang bag-ong pending nga site kinahanglan nga i-convert ngadto sa tinuod nga network site. Ang proseso sa pag-publish mahitabo pinaagi sa Job Queue, asynchronously. I-enable kini nga opsyon aron ipugos nga mahitabo ang pag-publish sa parehas nga request sama sa signup.
 
-Karon, tan-awa nato ang ubang mga option nga gihigugma pa sa login ug registration process. Kini naa sa ubos ni **Other options** sa parehas nga Login & registration page:
+Karon, tan-awon nato ang ubang mga opsyon nga may kalabutan gihapon sa proseso sa pag-login ug pagparehistro. Anaa kini direkta sa ubos sa **Ubang mga opsyon** sa parehas nga panid sa Pag-login & pagparehistro:
 
-  * **Default role:** Kini mao ang role nga naay imong mga customer sa ilang website human sa signup process.
+  * **Default nga role:** Kini ang role nga maangkon sa imong mga customer sa ilang website human sa proseso sa signup.
 
-* **Enable Jumper:** Nagab-on ni Jumper shortcut sa admin area. Ang Jumper nagtugot sa mga administrator nga dali mobalhin ng Ultimate Multisite screens, network objects, ug uban pang suportadong destinasyon nga dili na kinahanglan mag-browse sa matag menu. Patya kini kung gusto nimo itago ang maong pamaagi sa mabilis nga paglihok gikan sa admin interface.
+  * **I-enable ang Jumper:** Gi-enable niini ang Jumper shortcut sa admin area. Gitugotan sa Jumper ang mga administrator nga dali nga molukso ngadto sa Ultimate Multisite screens, mga object sa network, ug ubang suportadong mga destinasyon nga dili na kinahanglan molibot sa matag menu. I-off kini kung mas gusto nimo itago kana nga paspas nga navigation tool gikan sa admin interface.
 
-* **Idagdag usab ang mga user sa main site:** Ang pag-enable ni option kay idadagdag usab ang user sa main site sa imong network human sa proseso sa signup. Kung i-enable nimo kining option, adunay option nga mag-set sa **default role** niini nga mga user sa imong website nga moabot dayon sa ubos.
+  * **Idugang usab ang mga user sa main site:** Ang pag-enable niini nga opsyon modugang usab sa user ngadto sa main site sa imong network human sa proseso sa signup. Kung i-enable nimo kini nga opsyon, usa ka opsyon sa pag-set sa **default nga role** niini nga mga user sa imong website ang makita usab direkta sa ubos.
 
-* **Enable multiple accounts:** Tugotan kini nga adunay mga account ang mga user sa lain-laing sites sa imong network gamit ang parehas nga email address. Kung off kini, dili makakagamit ang imong mga customer og account sa ubang websites nga nagpadagan sa imong network nga may parehas nga email address.
+  * **I-enable ang daghang accounts:** Tugoti ang mga user nga adunay accounts sa lain-laing sites sa imong network gamit ang parehas nga email address. Kung naka-off kini nga opsyon, dili makahimo og account ang imong mga customer sa ubang mga website nga nagdagan sa imong network gamit ang parehas nga email address.
 
-Ug mao na lang ni ang mga option nga may kalabotan sa login ug registration nga pwede nimo i-customize! Ayaw kalimot i-save ang imong settings human matapos nimo i-edit kini.
+Ug mao na kana ang tanang opsyon nga may kalabutan sa pag-login ug pagparehistro nga mahimo nimo i-customize! Ayaw kalimti nga i-save ang imong mga setting human nimo mahuman ang pag-edit niini.
 
-## Paggamit og dagkong mga registration form:
+## Paggamit og daghang mga form sa pagparehistro: {#using-multiple-registration-forms}
 
-Ang Ultimate Multisite 2.0 nagtanyag og checkout form editor nga nagtugot kanimo sa paghimo og bisan pila pa ka forms, nga adunay lain-laing fields, products nga gitanyag, ug uban pa.
+Ang Ultimate Multisite 2.0 nagtanyag og editor sa form sa pag-checkout nga nagtugot kanimo sa paghimo og bisan pila ka form nga gusto nimo, nga adunay lain-laing mga field, mga produkto nga gitanyag, ug uban pa.
 
-Ang login page ug ang registration page parehas nga gipangita gamit ang shortcodes: **[wu_login_form]** sa login page ug **[wu_checkout]** para sa registration page. Mahimo nimo dugang i-customize ang registration page pinaagi sa paghimo o pag-create og checkout forms.
+Ang mga panid sa pag-login ug pagparehistro parehong gi-embed gamit ang shortcodes: **[wu_login_form]** sa panid sa pag-login ug**[wu_checkout]** para sa panid sa pagparehistro. Mas mahimo pa nimo i-customize ang panid sa pagparehistro pinaagi sa pagtukod o paghimo og mga form sa pag-checkout.
 
-Aron ma-access kini nga feature, pumunta sa menu nga **Checkout Forms**, sa left side-bar.
+Aron ma-access kini nga feature, adto sa **Mga Form sa Pag-checkout** nga menu, sa wala nga side-bar.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menu sa Mga Form sa Pag-checkout sa sidebar](/img/config/checkout-forms-list.png)
 
-Sa pahinang ni, makita nimo ang tanan nimong checkout forms.
+Niini nga panid, makita nimo ang tanang mga form sa pag-checkout nga naa nimo.
 
-Kung gusto ka maghimo og bag-o, i-click lang ang **Add Checkout Form** sa taas sa page.
+Kung gusto nimo maghimo og bag-o, i-click lang ang **Pagdugang og Form sa Pag-checkout** sa ibabaw sa panid.
 
-Pwede nimo pilion ang usa niining tulo ka opsyon isip nagsugod: single step, multi-step o blank. Unya, i-click para **Moadto sa Editor**.
+Makapili ka og usa niining tulo ka opsyon isip imong sugdanan: usa ka step, multi-step o blanko. Dayon, i-click ang **Adto sa Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Pagdugang og Form sa Pag-checkout nga adunay mga opsyon nga usa ka step, multi-step, o blanko](/img/config/checkout-forms-list.png)
 
-Alternatibo, pwede nimo i-edit o i-duplicate ang mga form nga naa na ninyo pinaagi sa pag-click sa mga opsyon ubos sa ngalan niini. Didto pud ninyo makita ang mga opsyon para kopyahon ang shortcode sa form o para ma-delete ang form.
+Sa laing paagi, mahimo nimo i-edit o i-duplicate ang mga form nga naa na nimo pinaagi sa pag-click sa mga opsyon sa ubos sa ngalan niini. Didto, makita usab nimo ang mga opsyon sa pagkopya sa shortcode sa form o sa pagtangtang sa form.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Mga hover action sa form sa pag-checkout nga adunay edit, duplicate, ug delete](/img/config/checkout-form-hover-actions.png)
 
-Kung mopili mo og single step o multi-step, ang checkout form kay pre-populated na sa basic steps aron molihok kini. Unya, kung gusto ninyo, pwede ninyong dugangan og extra steps kaniya.
+Kung pilion nimo ang usa ka step o multi-step, ang form sa pag-checkout daan nang napun-an sa basic nga mga step aron kini molihok. Dayon, kung gusto nimo, makadugang ka og dugang nga mga step niini.
 
-### Pag-edit sa Checkout Form:
+### Pag-edit sa Form sa Pag-checkout: {#editing-a-checkout-form}
 
-Ingon sa among gihisgutan kaniadto, pwede mo maghimo og checkout forms para sa lain-laing mga katuyoan. Sa panigunting niini nga example, magtrabaho kita sa usa ka registration form.
+Sama sa among gihisgutan kaniadto, makahimo ka og mga form sa pag-checkout alang sa lain-laing katuyoan. Niini nga pananglitan magtrabaho kita sa usa ka form sa pagparehistro.
 
-Human moadto sa checkout form editor, hatagi ang inyong form og ngalan (nga gamiton lang para sa internal reference) ug slug (gamit para makahimo og shortcodes, pananglitan).
+Human sa pag-navigate ngadto sa editor sa form sa pag-checkout, hatagi og ngalan ang imong form (nga gamiton lamang alang sa internal nga reperensya) ug usa ka slug (gigamit sa paghimo og shortcakes, pananglitan).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editor sa porma sa pagkompleto sa pagpalit nga adunay mga uma sa ngalan ug slug](/img/config/checkout-form-name-slug.png)
 
-Ang mga form gihimo sa mga steps ug fields. Pwede mo magdugang og bag-ong step pinaagi sa pag-click sa **Add New Checkout Step**.
+Ang mga porma gihimo sa mga lakang ug mga uma. Makadugang ka og bag-ong lakang pinaagi sa pag-klik sa **Idugang ang Bag-ong Lakang sa Pagkompleto sa Pagpalit**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Buton nga Idugang ang Bag-ong Lakang sa Pagkompleto sa Pagpalit](/img/config/checkout-form-add-step.png)
 
-Sa unang tab sa modal window, pun-on ang content sa inyong step sa form. Hatagi kini og ID, ngalan ug description. Kini nga mga butang kadaghanan gamiton sa sulod lang.
+Sa unang tab sa modal window, pun-a ang sulod sa lakang sa imong porma. Hatagi kini og ID, ngalan ug hulagway. Kini nga mga butang kasagaran gigamit sa sulod lamang.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tab sa sulod sa lakang sa pagkompleto sa pagpalit nga adunay ID, ngalan, ug hulagway](/img/config/checkout-form-step-content.png)
 
-Sunod, i-set ang visibility sa step. Pwede mo mopili tali sa **Always show** (Kanunay ipakita), **Only show for logged in users** (Ipakita lang para sa mga naka-login nga user), o **Only show for guests** (Ipakita lang para sa mga bisita).
+Sunod, itakda ang pagkakita sa lakang. Makapili ka tali sa **Kanunay ipakita** , **Ipakita lamang para sa mga naka-log in nga tiggamit** o **Ipakita lamang para sa mga bisita**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Mga opsyon sa pagkakita sa lakang sa pagkompleto sa pagpalit](/img/config/checkout-form-step-visibility.png)
 
-Sa katapusan, i-configure ang style sa matag-usa nga step. Kini mga optional nga field.
+Sa kataposan, i-configure ang estilo sa lakang. Kini mga opsyonal nga uma.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konpigurasyon sa estilo sa lakang sa pagkompleto sa pagpalit](/img/config/checkout-form-step-style.png)
 
-Karon, panahon na aron magdugang og fields sa atong unang step. I-click lang para sa **Add New Field** ug piliha ang klase sa section nga gusto nimo.
+Karon, panahon na sa pagdugang og mga uma sa atong unang lakang. I-klik lang ang **Idugang ang Bag-ong Uma** ug pilia ang tipo sa seksyon nga imong gusto.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Buton nga Idugang ang Bag-ong Uma](/img/config/checkout-form-add-field-button.png)![Dropdown sa pagpili sa tipo sa uma](/img/config/checkout-form-field-type-dropdown.png)
 
-Ang matag field adunay lain-laing parameters nga iapil. Para niining unang pagpasulod, pilion nato ang **Username** field.
+Ang matag uma adunay lain-laing mga parameter nga pun-an. Para niining unang pagsulod, pilion nato ang **Username** nga uma.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konpigurasyon sa Username nga uma](/img/config/checkout-form-username-content.png)![Mga parameter sa Username nga uma](/img/config/checkout-form-username-visibility.png)![Dugang nga mga setting sa Username nga uma](/img/config/checkout-form-username-style.png)
 
-Mahimo kang magdugang og daghang steps ug fields kutob sa imong kinahanglanon. Aron ipakita ang imong mga produkto para mapili kini sa imong mga customer, gamiton ang Pricing Table field. Kung gusto nimo tugotan ang imong mga kliyente nga mopili og template, dugangi ang Template Selection field. Ug mao na usab.
+Makadugang ka og daghang lakang ug uma kutob sa imong gikinahanglan. Aron ipakita ang imong mga produkto para makapili ang imong mga kustomer, gamita ang uma nga Talaan sa Presyo. Kung gusto nimo tugotan ang imong mga kliyente nga mopili og hulmahan, idugang ang uma nga Pagpili og Hulmahan. Ug uban pa.
 
-_**Note:** Kung maghimo ka og product human nahimong checkout form, kinahanglan nimong idugang ang product sa pricing table section. Kung wala nimo kini idugang, dili makita sa imong mga customer ang product sa registration page._
+![Editor sa porma sa pagkompleto sa pagpalit nga adunay uma sa pagpili og hulmahan](/img/config/checkout-form-with-template-field.png)
 
-_**Note 2:** Ang username, email, password, site title, site URL, order summary, payment, ug submit button kay mandatory nga fields aron makabuo og checkout form._
+_**Pahinumdom:** Kung maghimo ka og produkto human nimo mabuhat ang imong porma sa pagkompleto sa pagpalit, kinahanglan nimo idugang ang produkto sa seksyon sa Talaan sa Presyo. Kung dili nimo kini idugang, ang produkto dili makita sa imong mga kustomer sa panid sa pagrehistro._
 
-Samtang nagtrabaho ka sa imong checkout form, pwede gihapon gamiton ang Preview button para makita kung unsaon makita sa imong mga kliyente ang form. Mahimo usab kang mag-alternate tali sa pagtan-aw isip usa ka existing user o usa ka visitor.
+_**Pahinumdom 2:** username, email, password, titulo sa sityo, site URL, summary sa order, bayad, ug buton sa pagsumite kay mandatory nga mga uma aron makahimo og porma sa pagkompleto sa pagpalit._
 
-Sa katapusan, sa **Advanced Options** pwede nimo i-configure ang mensahe para sa pahina nga **Thank You**, magdugang og mga snippet para ma-track ang conversions, magdugang og custom CSS para sa imong checkout form o maglimpyo kini sa pipila ka nasud.
+Samtang nagtrabaho ka sa imong porma sa pagkompleto sa pagpalit, kanunay nimo magamit ang buton nga Preview aron makita kung giunsa makita sa imong mga kliyente ang porma. Makapuli-puli ka usab tali sa pagtan-aw isip kasamtangang tiggamit o bisita.
 
-Pwede pud nimo manu-manan o i-disable ang imong checkout form pinaagi sa pag-toggle ni option sa tuig nga column, o permanenteng burahin ang form.
+![Buton nga Preview sa editor sa porma sa pagkompleto sa pagpalit](/img/config/checkout-form-preview-button.png)![Preview sa porma sa pagkompleto sa pagpalit isip bisita o kasamtangang tiggamit](/img/config/checkout-form-preview-modal.png)
 
-Ayaw kalimti nga i-save ang imong checkout form!
+Sa kataposan, sa **Abanteng mga Opsyon** mahimo nimo i-configure ang mensahe para sa panid nga **Salamat**, magdugang og mga snippet aron masubay ang mga conversion, magdugang og custom CSS sa imong porma sa pagkompleto sa pagpalit o limitahan kini sa piho nga mga nasod.
 
-Para makuha ang shortcode sa imong form, i-click ang **Generate Shortcode** ug kopya ang resulta nga gipakita sa modal window.
+![Abanteng mga Opsyon nga adunay panid nga Salamat, pagsubay sa conversion, ug custom CSS](/img/config/checkout-form-advanced.png)
 
-_**Note:** Kinahanglan nimo i-add kining shortcode sa imong registration page aron mahimong ma-add kini nga checkout form._
+Mahimo usab nimo nga manwal nga i-enable o i-disable ang imong porma sa pagkompleto sa pagpalit pinaagi sa pag-toggle niini nga opsyon sa tuo nga kolum, o permanenteng tangtangon ang porma.
 
-## Pagpili og mga produkto ug templates pinaagi sa URL parameters:
+![Active toggle ug opsyon sa pagtangtang para sa porma sa pagkompleto sa pagpalit](/img/config/checkout-form-active.png)
 
-Kung gusto nimo maghimo og customized nga pricing tables para sa imong mga produkto ug pre-select sa checkout form ang produkto o template nga gusto sa imong customer gikan sa imong pricing table o templates page, pwede nimo gamiton ang URL parameters para niini.
+Ayaw kalimti nga i-save ang imong porma sa pagkompleto sa pagpalit!
 
-### **Para sa mga plano (plans):**
+![Buton nga Save sa Porma sa Pagkompleto sa Pagpalit](/img/config/checkout-form-save.png)
 
-Punta sa **Ultimate Multisite > Products > Select a plan**. Makita nimo ang button nga **Click to copy Shareable Link** sa taas sa pahina. Kini ang link nga pwede nimong gamiton aron pre-select kining piho nga plano sa imong checkout form.
+Aron makuha ang shortcode sa imong porma, i-klik ang **Generate Shortcode** ug kopyaha ang resulta nga gipakita sa modal window.
 
-![Product page with shareable link button](/img/config/products-list.png)
+![Generate Shortcode modal nga adunay shortcode nga kopyahon](/img/config/checkout-form-editor.png)
 
-Ang link nga kini shareable kay para lang sa mga **Plans**. Dili nimo magamit ang shareable links para sa mga packages o services.
+_**Pahinumdom:** Kinahanglan nimo idugang kini nga shortcode sa imong panid sa pagrehistro aron madugang kini nga porma sa pagkompleto sa pagpalit ngadto niini._
 
-### Para sa templates:
+## Pag-pre-select sa mga produkto ug hulmahan pinaagi sa URL parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Kung gusto nimo i-pre-select ang site templates sa imong checkout form, pwede nimong gamiton ang parameter nga: **?template_id=X** sa URL sa imong registration page. Ang "X" kinahanglan pinalitan sa **site template ID number**. Aron makuha niini nga numero, pumunta sa **Ultimate Multisite > Sites**.
+Kung gusto ka maghimo og pinasahi nga mga talaan sa presyo para sa imong mga produkto ug i-pre-select sa porma sa pagkompleto sa pagpalit ang produkto o hulmahan nga pilion sa imong kustomer gikan sa imong talaan sa presyo o panid sa mga hulmahan, magamit nimo ang URL parameters para niini.
 
-I-click ang **Manage** diayo sa ubos sa site template nga gusto nimong gamiton. Makita nimo ang SITE ID number. Gamita lang kini nga numero para anang specific site template aron ma-pre-select sa imong checkout form. Sa among kaso diri, ang URL parameter kay **?template_id=2**.
+### **Para sa mga plano:** {#for-plans}
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Adto sa **Ultimate Multisite > Mga Produkto > Pagpili og plano**. Makita nimo ang buton nga **I-klik aron kopyahon ang Shareable Link** sa ibabaw sa panid. Kini ang link nga magamit nimo aron i-pre-select kining piho nga plano sa imong porma sa pagkompleto sa pagpalit.
 
-Ingon tuis, ang atong network website kay [**www.mynetwork.com**](http://www.mynetwork.com) ug ang atong registration page nga naa sa checkout form kay anang **/register** page. Ang tibuok URL uban ni pre-selected site template kay moabot sama ni [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Panid sa produkto nga adunay buton sa shareable link](/img/config/products-list.png)
 
-Ug kung gusto nimo, pwede nimong i-pre-select ang parehong products ug templates sa imong checkout form. Ang kinahanglan nimo buhaton kay kopyahon lang ang shareable link sa plan ug i-paste ang template parameter sa katapusan. Moabot kini sama ni [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Timan-i nga kini nga shareable link balido lamang para sa **Mga Plano**. Dili nimo magamit ang shareable links para sa mga pakete o mga serbisyo.
+
+### Para sa mga hulmahan: {#for-templates}
+
+Kung gusto nimo i-pre-select ang mga hulmahan sa sityo sa imong porma sa pagkompleto sa pagpalit, magamit nimo ang parameter: **?template_id=X** sa URL sa imong panid sa pagrehistro. Ang "X" kinahanglan ilisan sa **numero sa ID sa hulmahan sa sityo**. Aron makuha kini nga numero, adto sa **Ultimate Multisite > Mga Sityo**.
+
+I-klik ang **Manage** sa ubos gyud sa hulmahan sa sityo nga gusto nimo gamiton. Makita nimo ang numero sa SITE ID. Gamita lang kini nga numero para niining piho nga hulmahan sa sityo aron ma-pre select sa imong porma sa pagkompleto sa pagpalit. Sa atong kaso dinhi, ang URL parameter mahimong **?template_id=2**.
+
+![Lista sa mga sityo nga nagpakita sa ID sa hulmahan sa sityo](/img/config/site-templates-list.png)
+
+Pananglitan ang atong network website mao ang [**www.mynetwork.com**](http://www.mynetwork.com) ug ang atong panid sa pagrehistro nga adunay atong porma sa pagkompleto sa pagpalit nahimutang sa panid nga **/register**. Ang tibuok URL nga adunay kini nga hulmahan sa sityo nga pre-selected motan-aw sama sa [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ug kung gusto nimo, mahimo nimo i-pre-select ang duha, mga produkto ug mga hulmahan, ngadto sa imong porma sa pagkompleto sa pagpalit. Ang kinahanglan ra nimo buhaton mao ang pagkopya sa shareable link sa plano ug ipilit ang parameter sa hulmahan sa kataposan. Motan-aw kini sama sa [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

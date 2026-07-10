@@ -1,211 +1,217 @@
 ---
-title: የክፍያ ቅጾች
+title: የክፍያ መፈጸሚያ ቅጾች
 sidebar_position: 19
-_i18n_hash: b7b1bf89a2997f8916c9f3a3a2cb255b
+_i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# የቼክአውት ቅጾች
+# የክፍያ ማጠናቀቂያ ቅጾች {#checkout-forms}
 
-የቼክአውት ቅጾች አዳዲስ ደንበኞችን ለመሳብ በሚደረጉ የተለያዩ ሙከራዎች ጊዜ ቀላል እና ተጣጣፊ መንገድ ነው።
+የክፍያ ማጠናቀቂያ ቅጾች አዳዲስ ደንበኞችን ለመቀየር ሲሞክሩ በተለያዩ አቀራረቦች ለመሞከር ቀላል እና ተለዋዋጭ መንገድ ናቸው።
 
-Ultimate Multisite 2.0 የቼክአውት ቅጽ አርታኢ (Checkout Form editor) ያቀርባል፤ ይህም የተለያዩ መስኮችን (fields)፣ የሚቀርቡ ምርቶችን (products) እና ሌሎችንም በመጠቀም ቃላተም የፈለጉትን ያህል ቅጾችን እንድትፈጥሩ ያስችልዎታል።
+Ultimate Multisite 2.0 በተለያዩ መስኮች፣ በሚቀርቡ ምርቶች ወዘተ የፈለጉትን ያህል ቅጾች እንዲፈጥሩ የሚያስችል የክፍያ ማጠናቀቂያ ቅጽ አርታዒ ያቀርባል።
 
-ይህንን ባህሪ ለመጠቀም፣ በግራ በኩል ባለው የቼክአውት ቅጾች (Checkout Forms) ሜኑ ላይ ይሂዱ።
+ይህን ባህሪ ለመድረስ፣ በግራ የጎን አሞሌ ላይ ወዳለው የክፍያ ማጠናቀቂያ ቅጾች ምናሌ ይሂዱ።
 
-![Checkout Forms list](/img/config/checkout-forms-list.png)
+![የክፍያ ማጠናቀቂያ ቅጾች ዝርዝር](/img/config/checkout-forms-list.png)
 
-በዚህ ገጽ ላይ የፈጠሯቸውን የቼክአውት ቅጾች በሙሉ ማየት ይችላሉ።
+በዚህ ገጽ ላይ፣ ያሉዎትን ሁሉንም የክፍያ ማጠናቀቂያ ቅጾች ማየት ይችላሉ።
 
-የዝርዝር ሰንጠረዡ (list table) **ሁኔታ (Status)** የሚል ዓምድ ስላለው እያንዳንዱ ቅጽ ለደንበኞች ተገ disponible መሆኑን ማረጋገጥ ይችላሉ።
+የዝርዝሩ ሰንጠረዥ እያንዳንዱ ቅጽ በአሁኑ ጊዜ ለደንበኞች የሚገኝ መሆኑን ለማረጋገጥ የሚያስችል **ሁኔታ** ዓምድ ያካትታል፦
 
-| Status | Meaning |
+| ሁኔታ | ትርጉም |
 |---|---|
-| **Active** | ቅጹ በየትኛውም ቦታ shortcode ወይም የንብረት ገጹ (registration page) ከተለጠፈበት ቦታ ሊሠራ ይችላል። |
-| **Inactive** | ቅጹ ተቀምጧል ነገር ግን ተበጅቷል። ቅጹን እንደገና እስኪያነሳው ድረስ ደንበኞች ሊጨርሱበት አይችሉም። |
+| **ንቁ** | ቅጹ shortcode ወይም የምዝገባ ገጹ በታተመበት ማንኛውም ቦታ ሊጠቀምበት ይችላል። |
+| **ንቁ ያልሆነ** | ቅጹ ተቀምጧል ግን ተሰናክሏል። እንደገና እስኪያነቁት ድረስ ደንበኞች በእሱ ክፍያ ማጠናቀቅ አይችሉም። |
 
-በተለይ የቅጾችን ረቂቅ (draft) ወይም የወቅት (seasonal) ቅጾች ከሚገኙት በሥራ ላይ ካሉ ቅጾች ጋር ሲያቆዩ፣ የሕዝብ ምዝገባ ፍሰት (public registration flow) ከመቀየራቱ በፊት የሁኔታ ዓምድን ይጠቀሙ።
+የህዝብ ምዝገባ ፍሰትን ከማርትዕዎ በፊት፣ በተለይም ረቂቅ ወይም ወቅታዊ የክፍያ ማጠናቀቂያ ቅጾችን ከቀጥታ ቅጾችዎ ጋር ሲያቆዩ፣ የሁኔታ ዓምዱን ይጠቀሙ።
 
-አዲስ ለመፍጠር ከገጹ በላይ ባለው ቦታ ላይ "Add Checkout Form" ብለው ይጫኑ።
+አዲስ አንድ መፍጠር ከፈለጉ፣ በገጹ አናት ላይ ያለውን የክፍያ ማጠናቀቂያ ቅጽ አክል ብቻ ጠቅ ያድርጉ።
 
-ከእነዚህ ሶስት አማራጮች አንዱን እንደ መነሻ ቦታ መምረጥ ይችላሉ፡ single step (አንድ ደረጃ)፣ multi-step (ብዙ ደረጃ) ወይም blank (ባዶ)። ከዚያም፣ ወደ አርታኢ ለመሄድ ይጫኑ።
+እንደ መነሻዎ ከእነዚህ ሶስት አማራጮች አንዱን መምረጥ ይችላሉ፦ አንድ ደረጃ፣ ብዙ ደረጃ ወይም ባዶ። ከዚያ፣ ወደ አርታዒው ሂድን ጠቅ ያድርጉ።
 
-**single step** ወይም **multi-step**ን እንደ መነሻ ቦታ ሲመርጡ፣ የቅጽ አብነት (form template) አሁን በቅድፋት **Template Selection** መስክን ያካትታል። ይህ መስክ ደንበኞች በምዝገባ ሂደት ውስጥ የትኛውን የጣቢያ አብነት (site template) መምረጥ እንደሚችሉ ያስችላል። ቦታ ላይ ሊተውት ይችላሉ፣ ማስወገድ ይችላሉ፣ ወይም በአርታኢ ውስጥ ካሉ ሌሎች መስኮች ጋር እንደማንኛውም መስክ ቦታውን መቀየር ይችላሉ።
+እንደ መነሻዎ **አንድ ደረጃ** ወይም **ብዙ ደረጃ** ሲመርጡ፣ የቅጹ አብነት አሁን በነባሪነት **የአብነት ምርጫ** መስክን ያካትታል። ይህ መስክ ደንበኞችዎ በምዝገባ ሂደት ወቅት የጣቢያ አብነት እንዲመርጡ ያስችላቸዋል። በቦታው ሊተዉት፣ ሊያስወግዱት፣ ወይም በአርታዒው ውስጥ እንደ ማንኛውም ሌላ መስክ ቦታውን ሊቀይሩት ይችላሉ።
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![የክፍያ ማጠናቀቂያ ቅጽ አርታዒ](/img/config/checkout-form-editor.png)
 
-በተለባዕነት፣ ከዚህ በታች ባለው ስሙ ላይ በመጫን ቀድሞ የነበሯቸውን ቅጾች ማርትዕ ወይም መቅዳት ይችላሉ። እዚያም የቅጹን shortcode የመቅዳት ወይም የቅጹን የማጥፋት አማራጮችን ያገኛሉ።
+እንዲሁም፣ ከስሙ በታች ያሉትን አማራጮች በመጫን አሁን ያሉዎትን ቅጾች ማርትዕ ወይም ማባዛት ይችላሉ። እዚያም የቅጹን shortcode ለመቅዳት ወይም ቅጹን ለመሰረዝ አማራጮችን ያገኛሉ።
 
-![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
+![የክፍያ ማጠናቀቂያ ቅጽ የማንዣበብ እርምጃዎች](/img/config/checkout-form-hover-actions.png)
 
-#### የቼክአውት ቅጽ አርታኢ አጠቃላይ እይታ
+#### የክፍያ ማጠናቀቂያ ቅጽ አርታዒ አጠቃላይ እይታ {#checkout-form-editor-overview}
 
-የቼክአውት ቅጽ አርታኢ የምዝገባ ቅጾችን ለመገንባት ሁሉን አቀፍ መድረክ ይሰጣል። የአርታኢ አቀማመጥ አጠቃላይ እይታ እነሆ፡
+የክፍያ ማጠናቀቂያ ቅጽ አርታዒው የምዝገባ ቅጾችዎን ለመገንባት ሰፊ በይነገጽ ያቀርባል። የአርታዒው አቀማመጥ አጠቃላይ እይታ እነሆ፦
 
-![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
+![የክፍያ ማጠናቀቂያ ቅጽ አርታዒ አጠቃላይ እይታ](/img/config/checkout-form-editor-overview.png)
 
-### የቼክአውት ቅጽ ማርትዕ
+### የክፍያ ማጠናቀቂያ ቅጽ ማርትዕ {#editing-a-checkout-form}
 
-የተለያዩ ዓላማዎች መሠረት የቼክአውት ቅጾችን መፍጠር ይችላሉ። በዚህ ምሳሌ ላይ የምንሠራው ምዝገባ ቅጽ ነው።
+ለተለያዩ ዓላማዎች የክፍያ ማጠናቀቂያ ቅጾችን መፍጠር ይችላሉ። በዚህ ምሳሌ በምዝገባ ቅጽ ላይ እንሰራለን።
 
-ወደ የቼክአውት ቅጽ አርታኢ ከሄዱ በኋላ፣ ለቅጹ ስም ይስጡት (ይህ ለውስጣዊ ማጣቀሻ ብቻ ጥቅም ላይ ይውላል) እና slug (ለምሳሌ shortcodes ለመፍጠር የሚያገለግል) ይስጡት።
+ወደ ክፍያ ማጠናቀቂያ ቅጽ አርታዒ ከተሄዱ በኋላ፣ ለቅጽዎ ስም (ለውስጣዊ ማጣቀሻ ብቻ የሚጠቀም) እና slug (ለምሳሌ shortcode ለመፍጠር የሚጠቀም) ይስጡ።
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![የክፍያ ማጠናቀቂያ ቅጽ አርታዒ](/img/config/checkout-form-editor.png)
 
-ቅጾች በደረጃዎች (steps) እና መስኮች (fields) የተሠሩ ናቸው። አዲስ የቼክአውት ደረጃ ለመጨመር "Add New Checkout Step" ብለው መጫን ይችላሉ።
+ቅጾች ከደረጃዎች እና መስኮች የተሠሩ ናቸው። አዲስ ደረጃ ለመጨመር አዲስ የክፍያ ማጠናቀቂያ ደረጃ አክልን ጠቅ ያድርጉ።
 
-![Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![አዲስ የክፍያ ማጠናቀቂያ ደረጃ አክል](/img/config/checkout-form-add-step.png)
 
-በሞዳል መስኮት (modal window) የመጀመሪያው ትብሌ ላይ፣ የቅጹን ደረጃ ይዘት ይሙሉ። ID፣ ስም እና መግለጫ ይስጡት። እነዚህ ነገሮች በአብዛኛው ለውስጣዊ አገልግሎት ብቻ ጥቅም ላይ ይውላሉ።
+በmodal መስኮቱ የመጀመሪያ ትር ላይ፣ የቅጽዎን ደረጃ ይዘት ይሙሉ። ID፣ ስም እና መግለጫ ይስጡት። እነዚህ ነገሮች በአብዛኛው በውስጥ ይጠቀማሉ።
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የክፍያ ማጠናቀቂያ ቅጽ ደረጃ ይዘት ትር](/img/config/checkout-form-step-content.png)
 
-በቀጣይ፣ የደረጃውን ታይነት (visibility) ያዘጋጁ። "Always show" (ሁልጊዜ አሳይ)፣ "Only show for logged in users" (ለግባ የሆኑ ተጠቃሚዎች ብቻ አሳይ) ወይም "Only show for guests" (ለጎብኚዎች ብቻ አሳይ) ውስጥ መምረጥ ይችላሉ።
+ቀጥሎ፣ የደረጃውን ታይነት ያቀናብሩ። ከ"ሁልጊዜ አሳይ"፣ "ለገቡ ተጠቃሚዎች ብቻ አሳይ" ወይም "ለእንግዶች ብቻ አሳይ" መካከል መምረጥ ይችላሉ።
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የክፍያ ማጠናቀቂያ ቅጽ ደረጃ ታይነት ትር](/img/config/checkout-form-step-visibility.png)
 
-በመጨረሻም፣ የደረጃውን ስልት (step style) ያዘጋጁ። እነዚህ አማራጮች አማራጭ መስኮች ናቸው።
+በመጨረሻ፣ የደረጃውን ቅጥ ያዋቅሩ። እነዚህ አማራጭ መስኮች ናቸው።
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የክፍያ ማጠናቀቂያ ቅጽ ደረጃ ቅጥ ትር](/img/config/checkout-form-step-style.png)
 
-አሁን፣ በመጀመሪያው ደረጃ ላይ መስኮችን መጨመር ጊዜው ደርሷል። "Add New Field" ብለው በመጫን እና የፈለጉትን የክፍል አይነት በመምረጥ ይጀምሩ።
+አሁን፣ ወደ መጀመሪያው ደረጃችን መስኮችን ለመጨመር ጊዜው ነው። አዲስ መስክ አክልን ብቻ ጠቅ ያድርጉ እና የሚፈልጉትን የክፍል አይነት ይምረጡ።
 
-![Checkout form step with fields](/img/config/checkout-form-step.png)
+![መስኮች ያሉት የክፍያ ማጠናቀቂያ ቅጽ ደረጃ](/img/config/checkout-form-step-with-fields.png)
 
-እያንዳንዱ መስክ መሞላ የሚያስፈልጉ የተለያዩ መለኪያዎች አሉት። ለዚህ የመጀመሪያ ምዝገባ፣ "Username" መስኩን እንመርጣለን።
+እያንዳንዱ መስክ ሊሞሉ የሚገባቸው የተለያዩ መለኪያዎች አሉት። ለዚህ የመጀመሪያ ግቤት፣ የ"የተጠቃሚ ስም" መስክን እንመርጣለን።
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የመስክ አይነት ምርጫ ተቆልቋይ](/img/config/checkout-form-field-type-dropdown.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የተጠቃሚ ስም መስክ ይዘት ቅንብሮች](/img/config/checkout-form-username-content.png)
 
-![Checkout form step](/img/config/checkout-form-step.png)
+![የተጠቃሚ ስም መስክ ታይነት ቅንብሮች](/img/config/checkout-form-username-visibility.png)
 
-የሚያስፈልጉትን ያህል ደረጃዎችን እና መስኮችን መጨመር ይችላሉ። ደንበኞችዎ እንዲመርጡ ምርቶችን ለማሳየት የPricing Table fieldን ይጠቀሙ። ደንበኞችዎ አብነት እንዲመርጡ ከፈለጉ፣ Template Selection fieldን ይጨምሩ። እና የመሳሰሉት።
+![የተጠቃሚ ስም መስክ ቅጥ ቅንብሮች](/img/config/checkout-form-username-style.png)
 
-![Add New Field dialog](/img/config/checkout-form-add-field-dialog.png)
+እንደሚያስፈልግዎ ብዙ ደረጃዎችን እና መስኮችን መጨመር ይችላሉ። ደንበኞችዎ አንድ እንዲመርጡ ምርቶችዎን ለማሳየት፣ የዋጋ ሰንጠረዥ መስክን ይጠቀሙ። ደንበኞችዎ አብነት እንዲመርጡ መፍቀድ ከፈለጉ፣ የአብነት ምርጫ መስክን ያክሉ። እና የመሳሰሉት።
 
-_**ማስታወሻ:** username, email, password, site title, site URL, order summary, payment, እና submit button የቼክአውት ቅጽ ለመፍጠር የግድ የሚያስፈልጉ መስኮች ናቸው።_
+![አዲስ መስክ አክል መገናኛ](/img/config/checkout-form-add-field-dialog.png)
 
-በየቼክአውት ቅጽዎ ላይ እየሠሩ ሲሆኑ፣ ደንበኞችዎ ቅጹን እንዴት እንደሚመለከቱ ለማየት ሁልጊዜ የPreview (ቅድመ እይታ) ቁልፍን መጠቀም ይችላሉ። እንዲሁም እንደ ቀድሞ ተጠቃሚ ወይም እንደ ጎብኚነት መታየትን መቀያየር ይችላሉ።
+_**ማስታወሻ፦** የተጠቃሚ ስም፣ ኢሜይል፣ የይለፍ ቃል፣ የጣቢያ ርዕስ፣ የጣቢያ URL፣ የትዕዛዝ ማጠቃለያ፣ ክፍያ፣ እና የማስገቢያ አዝራር የክፍያ ማጠናቀቂያ ቅጽ ለመፍጠር አስገዳጅ መስኮች ናቸው።_
 
-![Checkout Form save](/img/config/checkout-form-save.png)
+በክፍያ ማጠናቀቂያ ቅጽዎ ላይ እየሰሩ ሳሉ፣ ደንበኞችዎ ቅጹን እንዴት እንደሚያዩት ለማየት ሁልጊዜ የቅድመ እይታ አዝራሩን መጠቀም ይችላሉ። እንዲሁም እንደ ነባር ተጠቃሚ ወይም እንደ ጎብኚ በመመልከት መቀያየር ይችላሉ
 
-![Checkout Form editor](/img/config/checkout-form-editor.png)
+![የክፍያ ማጠናቀቂያ ቅጽ ቅድመ እይታ አዝራር](/img/config/checkout-form-preview-button.png)
 
-በመጨረሻም፣ በAdvanced Options ላይ የ"Thank You" ገጽ መልዕክት ማዋቀር፣ የለውጥ መጠንን ለመከታተል ስኒፕበቶች (snippets) መጨመር፣ ለቼክአውት ቅጽዎ የባለቤትነት CSS መጨመር ወይም ወደ የተወሰኑ አገሮች ብቻ መገደብ ይችላሉ።
+![የክፍያ ማጠናቀቂያ ቅጽ ቅድመ እይታ modal](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options](/img/config/checkout-form-advanced.png)
+በመጨረሻ፣ በላቁ አማራጮች ላይ ለ"እናመሰግናለን" ገጽ መልእክቱን ማዋቀር፣ ለውጦችን ለመከታተል snippets ማከል፣ ወደ ክፍያ ማጠናቀቂያ ቅጽዎ ብጁ CSS ማከል ወይም ለተወሰኑ አገሮች መገደብ ይችላሉ።
 
-በተጨማሪም፣ በይስ የው కుልም (right column) ላይ ባለው አማራጭ በመቀየር የቼክአውት ቅጽዎን በእጅ ማብራት ወይም ማጥፋት፣ ወይም ቅጹን በቋሚነት ማስወገድ ይችላሉ።
+![ላቁ አማራጮች](/img/config/checkout-form-advanced.png)
 
-![Active toggle](/img/config/checkout-form-active.png)
+እንዲሁም በቀኝ ዓምድ ላይ ይህን አማራጭ በመቀያየር የክፍያ ማጠናቀቂያ ቅጽዎን በእጅ ማንቃት ወይም ማሰናከል፣ ወይም ቅጹን በቋሚነት መሰረዝ ይችላሉ።
 
-ቅጽ ለማጥፋት፣ በቅጽ አክሽንስ (form actions) ውስጥ ያለውን የማጥፋት አማራጭ ይጫኑ፡
+![ንቁ መቀያየሪያ](/img/config/checkout-form-active.png)
 
-![Checkout form delete option](/img/config/checkout-form-delete.png)
+ቅጽ ለመሰረዝ፣ በቅጹ እርምጃዎች ውስጥ ያለውን የሰርዝ አማራጭ ጠቅ ያድርጉ፦
 
-የቼክአውት ቅጽዎን ማስቀመጥ አይርሱ!
+![የክፍያ ማጠናቀቂያ ቅጽ ሰርዝ አማራጭ](/img/config/checkout-form-delete.png)
 
-![Save button](/img/config/checkout-form-save.png)
+የክፍያ ማጠናቀቂያ ቅጽዎን ማስቀመጥ አይርሱ!
 
-የቅጹን shortcode ለማግኘት "Generate Shortcode" ብለው በመጫን በሞዳል መስኮት ላይ የሚታየውን ውጤት ይቅዱ።
+![የማስቀመጫ አዝራር](/img/config/checkout-form-save.png)
 
-![Save button with shortcode](/img/config/checkout-form-save.png)
+የቅጽዎን shortcode ለማግኘት Generate Shortcodeን ጠቅ ያድርጉ እና በmodal መስኮቱ ላይ የሚታየውን ውጤት ይቅዱ።
 
-### የዋጋ ሰንጠረዥ መስክ (The Pricing Table Field)
+![shortcode ያለው የማስቀመጫ አዝራር](/img/config/checkout-form-save.png)
 
-የ**Pricing Table** መስክ ደንበኞች ዕቅድ እንዲመርጡ በቼክአውት ቅጹ ላይ ምርቶቻችሁን ያሳያል። ይህንን መስክ ሲያርትዑ፣ በርካታ አማራጮችን ማዋቀር ይችላሉ፡
+### የዋጋ ሰንጠረዥ መስክ {#the-pricing-table-field}
 
-![Pricing Table field settings](/img/config/pricing-table-field-settings.png)
+የ**ዋጋ ሰንጠረዥ** መስክ ደንበኞች እቅድ እንዲመርጡ ምርቶችዎን በክፍያ ማጠናቀቂያ ቅጹ ላይ ያሳያል። ይህን መስክ ሲያርትዑ፣ በርካታ አማራጮችን ማዋቀር ይችላሉ፦
 
-የዋጋ ሰንጠረዡ በገጽ መጀመሪያ (frontend) ምዝገባ ቅጽ ላይ የሚታየው በዚህ መንገድ ነው፡
+![የዋጋ ሰንጠረዥ መስክ ቅንብሮች](/img/config/pricing-table-field-settings.png)
 
-![Frontend checkout pricing table](/img/config/frontend-checkout-pricing-table.png)
+የዋጋ ሰንጠረዡ በፊት-ገጽ ምዝገባ ቅጽ ላይ እንዴት እንደሚታይ እነሆ፦
 
-*   **Products**: ምን ምርቶችን ማሳየት እና በምን ቅደም ተከተል ማሳየት እንደሚቻል ይምረጡ።
-*   **Force Different Durations**: ሲበራ፣ ሁሉም ምርቶች በአሁኑ ጊዜ በተመረጠው የክፍያ ጊዜ ተዛማጅ የዋጋ ልዩነት ባይኖራቸውም ይታያሉ። ሲጠፋ (በቅድፋት)፣ በተመረጠው ጊዜ ልዩነት ባልያዙ ምርቶች ይደበቃሉ።
-    ![Pricing table force durations option](/img/config/pricing-table-force-durations.png)
-*   **Hide when Pre-Selected**: በ URL በኩል ዕቅድ ቀድሞ ከተመረጠ የዋጋ ሰንጠረዡን ይደብቃል። (ለምሳሌ: `/register/premium`)።
-*   **Pricing Table Template**: ለዋጋ ሰንጠረዡ የእይታ አብነት (visual template) ይምረጡ (Simple List, Legacy, ወዘተ)።
+![የፊት-ገጽ checkout የዋጋ ሰንጠረዥ](/img/config/frontend-checkout-pricing-table.png)
 
-በቅጹ የሚያስፈልጉ መስኮች ሳይጨርሱ በPricing Table ውስጥ ምርት ካضاف፣ አርታኢው አሁን ማስጠንቀቂያ ያሳያል። ለሥራ ላይ የዋና ምዝገባ ቅጽ ለውጥዎችን ከመለጠፍ ወይም ከመስቀል በፊት የጠፋውን የሚያስፈልገው መስክ ለመጨመር ይህንን ማስጠንቀቂያ ይጠቀሙ።
+  * **ምርቶች**: የትኞቹ ምርቶች እንደሚታዩ እና በምን ቅደም ተከተል እንደሚታዩ ይምረጡ።
+  * **የተለያዩ ቆይታዎችን አስገድድ**: ሲነቃ፣ ለአሁን የተመረጠው የክፍያ ጊዜ ተዛማጅ የዋጋ ልዩነት ቢኖራቸውም ባይኖራቸውም ሁሉም ምርቶች ይታያሉ። ሲሰናከል (ነባሪ)፣ ለተመረጠው ጊዜ ልዩነት የሌላቸው ምርቶች ይደበቃሉ።
+    ![የዋጋ ሰንጠረዥ ቆይታዎችን ማስገደድ አማራጭ](/img/config/pricing-table-force-durations.png)
+  * **አስቀድሞ ሲመረጥ ደብቅ**: ዕቅድ ቀድሞውኑ በURL በኩል ተመርጦ ከሆነ (ለምሳሌ `/register/premium`) የዋጋ ሰንጠረዡን ይደብቃል።
+  * **የዋጋ ሰንጠረዥ ቴምፕሌት**: ለዋጋ ሰንጠረዡ የእይታ ቴምፕሌት ይምረጡ (ቀላል ዝርዝር፣ የቀድሞ ዘይቤ፣ ወዘተ)።
 
-### የጊዜ ምርጫ መቀያየር መጨመር (Adding a Period Selection Toggle)
+ቅጹ የዚያን ምርት checkout ፍሰት ለማጠናቀቅ የሚያስፈልጉ መስኮችን ከማካተቱ በፊት ምርትን ወደ የዋጋ ሰንጠረዥ ካከሉ፣ አርታዒው አሁን ማስጠንቀቂያ ያሳያል። ለቀጥታ የምዝገባ ቅጽ ለማተም ወይም ለውጦችን ለማስቀመጥ በፊት የጎደለውን አስፈላጊ መስክ ለማከል ማስጠንቀቂያውን ይጠቀሙ።
 
-በምርቶlarınız ላይ [Price Variations](creating-your-first-subscription-product#price-variations) ካዘጋጁ (ለምሳሌ ወርሃዊ እና ዓመታዊ ዋጋ)፣ በቼክአውት ቅጽዎ ላይ **Period Selection** መስክ መጨመር ይችላሉ። ይህ መስክ ደንበኞች በክፍያ ጊዜዎች መካከል እንዲቀያየሩ የሚያስችል መቀያየር (toggle) ያሳያል፣ እና የዋጋ ሰንጠረዡ በቅጽበት በቅጽበት ይዘምናል።
+### የጊዜ ምርጫ መቀየሪያ ማከል {#adding-a-period-selection-toggle}
 
-#### ደረጃ 1: በምርቶlarınız ላይ የዋጋ ልዩነቶችን ማዘጋጀት
+በምርቶችዎ ላይ [የዋጋ ልዩነቶች](creating-your-first-subscription-product#price-variations) ካዋቀሩ (ለምሳሌ ወርሃዊ እና ዓመታዊ ዋጋ)፣ ወደ checkout ቅጽዎ **የጊዜ ምርጫ** መስክ ማከል ይችላሉ። ይህ መስክ ደንበኞች በክፍያ ጊዜዎች መካከል እንዲቀያይሩ የሚፈቅድ መቀየሪያ ያሳያል፣ እና የዋጋ ሰንጠረዡ በቀጥታ ጊዜ በተለዋዋጭ ይዘምናል።
 
-የPeriod Selection fieldን ከመጨመርዎ በፊት፣ ምርቶlarınız የዋጋ ልዩነቶች (price variations) መዘጋጀታቸውን ያረጋግጡ። ወደ **Ultimate Multisite > Products** ይሂዱ፣ ምርት ያርትዑ፣ እና አማራጭ የክፍያ ጊዜዎችን ለመጨመር ወደ **Price Variations** ትብሌ ይሂዱ (ለምሳሌ ዓመታዊ በቅናሽ ዋጋ)።
+#### ደረጃ 1: በምርቶችዎ ላይ የዋጋ ልዩነቶችን ያዋቅሩ {#step-1-set-up-price-variations-on-your-products}
 
-![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
+የጊዜ ምርጫ መስክን ከማከልዎ በፊት፣ ምርቶችዎ የዋጋ ልዩነቶች ተዋቅረውላቸው መሆኑን ያረጋግጡ። ወደ **Ultimate Multisite > ምርቶች** ይሂዱ፣ ምርት ያርትዑ፣ እና ተለዋጭ የክፍያ ጊዜዎችን ለማከል ወደ **የዋጋ ልዩነቶች** ትር ይሂዱ (ለምሳሌ ዓመታዊ በቅናሽ ዋጋ)።
 
-#### ደረጃ 2: የPeriod Selection Fieldን ወደ ቼክአውት ቅጽዎ መጨመር
+![በምርት ላይ የዋጋ ልዩነቶች ትር](/img/config/product-price-variations-tab.png)
 
-1.  ወደ **Ultimate Multisite > Checkout Forms** ይሂዱ እና የቼክአውት ቅጽዎን ያርትዑ።
+#### ደረጃ 2: የጊዜ ምርጫ መስክን ወደ Checkout ቅጽዎ ያክሉ {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
-2.  የ**Pricing Table** field ያለበት ደረጃ (step) ዝቅ ይሏና **Add new Field** ብለው ይጫኑ።
+1. ወደ **Ultimate Multisite > Checkout ቅጾች** ይሂዱ እና የcheckout ቅጽዎን ያርትዑ።
 
-3.  በየመስክ አይነት ምርጫ ዳይሎግ ውስጥ፣ **Period Select** ብለው ይጫኑ።
+2. የ**ዋጋ ሰንጠረዥ** መስክዎን የያዘውን ደረጃ ወደታች ያሸብልሉ እና **አዲስ መስክ አክል** ይጫኑ።
 
-![Add New Field dialog showing Period Select](/img/config/checkout-form-add-field-dialog.png)
+3. በመስክ ዓይነት ምርጫ ውይይት ሳጥን ውስጥ፣ **ጊዜ ምረጥ** ይጫኑ።
 
-4.  የጊዜ አማራጮችን ያዘጋጁ። እያንዳንዱ አማራጭ የሚከተሉትን ይፈልጋል፡
-    *   **Duration**: ቁጥር (ለምሳሌ: `1`)
-    *   **Duration unit**: የጊዜ አይነት (Days, Weeks, Months, ወይም Years)
-    *   **Label**: ደንበኞች የሚያዩት ጽሑፍ (ለምሳሌ: "Monthly", "Annual")
+![ጊዜ ምረጥን የሚያሳይ አዲስ መስክ አክል ውይይት ሳጥን](/img/config/checkout-form-add-field-dialog.png)
 
-5.  በተጨማሪ የጊዜ ምርጫዎች ለመጨመር **+ Add Option** ብለው ይጫኑ። እነዚህ አማራጮች በምርቶlarınız ላይ ባዘጋጁት የዋጋ ልዩነቶች መመሳሰል አለባቸው።
+4. የጊዜ አማራጮቹን ያዋቅሩ። እያንዳንዱ አማራጭ ይህን ይፈልጋል:
+   * **ቆይታ**: ቁጥሩ (ለምሳሌ `1`)
+   * **የቆይታ ክፍል**: የጊዜው ዓይነት (ቀናት፣ ሳምንታት፣ ወራት፣ ወይም ዓመታት)
+   * **መለያ**: ደንበኞች የሚያዩት ጽሑፍ (ለምሳሌ "ወርሃዊ"፣ "ዓመታዊ")
 
-![Period Selection field settings](/img/config/period-selection-field-settings.png)
+5. ተጨማሪ የጊዜ ምርጫዎችን ለማከል **+ አማራጭ አክል** ይጫኑ። እነዚህ አማራጮች በምርቶችዎ ላይ ካዋቀሯቸው የዋጋ ልዩነቶች ጋር መዛመድ አለባቸው።
 
-በተጨማሪም የfield አማራጮችን በቀጥታ ማዋቀር ይችላሉ፡
+![የጊዜ ምርጫ መስክ ቅንብሮች](/img/config/period-selection-field-settings.png)
 
-<!-- Screenshot unavailable: Period selection field options -->
+6. **የጊዜ መምረጫ ቴምፕሌት** ይምረጡ (ንጹህ ነባሪው ነው፣ እሱም ለብጁ CSS ዝግጁ የሆነ ቀላል ቅጥ ያለው መምረጫ ያቀርባል)።
 
-6.  **Period Selector Template** (Clean በቅድፋት ነው፣ ይህም ለበይበል ያለ CSS ዝግጁ የሆነ ቀላል የተዋቀረ መምረጥን ያሳያል) ይምረጡ።
+7. **መስክ አስቀምጥ** ይጫኑ።
 
-7.  **Save Field** ብለው ይጫኑ።
+#### ደረጃ 3: መስኩን ከዋጋ ሰንጠረዡ በላይ ያስቀምጡ {#step-3-position-the-field-above-the-pricing-table}
 
-#### ደረጃ 3: መስኩን ከዋጋ ሰንጠረዡ በላይ ማስቀመጥ
+ለምርጥ የተጠቃሚ ተሞክሮ፣ የጊዜ ምርጫ መስኩ በcheckout ደረጃዎ ውስጥ ከዋጋ ሰንጠረዥ መስክ **በፊት** እንዲታይ ያረጋግጡ። በcheckout ቅጽ አርታዒ ውስጥ መስኮችን ጎትተው እንደገና ማደራጀት ይችላሉ። በዚህ መንገድ፣ ደንበኞች መጀመሪያ የክፍያ ጊዜ ይመርጣሉ ከዚያም ለዚያ ጊዜ ዋጋዎችን ያያሉ።
 
-ለተጠቃሚው ምርጥ ተሞክሮ፣ የPeriod Selection field በቼክአውት ደረጃዎ ውስጥ ከPricing Table field **በፊት** መታየቱን ያረጋግጡ። በቼክአውት ቅጽ አርታኢ ውስጥ መስኮችን እንደገና ለማደራጀት መጎተት ይችላሉ። በዚህ መንገድ፣ ደንበኞች በመጀመሪያ የክፍያ ጊዜን ይመርጣሉ እና ከዚያ ለዚያ ጊዜ ዋጋዎችን ያያሉ።
+![የመስክ ቅደም ተከተልን የሚያሳይ የcheckout ቅጽ አርታዒ](/img/config/checkout-form-editor-with-fields.png)
 
-![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
+#### በፊት-ገጽ ላይ እንዴት እንደሚሠራ {#how-it-works-on-the-frontend}
 
-#### በገጽ መጀመሪያ (Frontend) እንዴት እንደሚሰራ
+ከተዋቀረ በኋላ፣ የምዝገባ ገጽዎን የሚጎበኙ ደንበኞች ከዋጋ ሰንጠረዡ በላይ የጊዜ መምረጫውን ያያሉ። የተለየ የክፍያ ጊዜ ሲጫኑ:
 
-በማዋቀርዎ ጊዜ፣ ወደ ምዝገባ ገጽዎ የሚመጡ ደንበኞች የጊዜ መምረጥ መቀያየሩን ከዋጋ ሰንጠረዡ በላይ ያያሉ። የተለያየ የክፍያ ጊዜ ሲጫኑ፡
+  * የዋጋ ሰንጠረዡ ለተመረጠው ጊዜ ዋጋዎችን ለማሳየት ወዲያውኑ ይዘምናል (ገጽ እንደገና መጫን አያስፈልግም)።
+  * በዋጋ ሰንጠረዥ መስክ ላይ **የተለያዩ ቆይታዎችን አስገድድ** ከተሰናከለ፣ ለተመረጠው ጊዜ የዋጋ ልዩነት የሌላቸው ምርቶች ይደበቃሉ።
+  * **የተለያዩ ቆይታዎችን አስገድድ** ከነቃ፣ ሁሉም ምርቶች ለተመረጠው ጊዜ ልዩነት ባይኖራቸውም እንኳ የሚታዩ ሆነው ይቀራሉ (ነባሪ ዋጋቸውን ያሳያሉ)።
 
-*   የዋጋ ሰንጠረዡ ወዲያውኑ ለተመረጠው ጊዜ ዋጋዎችን ያሳያል (የገጽ ዳግም መጫን አያስፈልግም)።
-*   በPricing Table field ላይ **Force Different Durations** ቢጠፋ፣ ለተመረጠው ጊዜ የዋጋ ልዩነት ባልያዙ ምርቶች ይደበቃሉ።
-*   **Force Different Durations** ቢበራ፣ ምርቶች ለተመረጠው ጊዜ ልዩነት ባይኖራቸውም ሁሉም ይታያሉ (የመጀመሪያ ዋጋቸውን ያሳያሉ)።
+#### የክፍያ ጊዜን በURL በኩል አስቀድሞ መምረጥ {#pre-selecting-a-billing-period-via-url}
 
-#### በ URL በኩል የክፍያ ጊዜን ቀድመ መምረጥ
+እንዲሁም ምርትን እና የክፍያ ጊዜን በURL በኩል አስቀድመው መምረጥ ይችላሉ። Ultimate Multisite እነዚህን የURL ስርዓተ-ንድፎች ይደግፋል:
 
-በተጨማሪም ምርት እና የክፍያ ጊዜን በ URL በኩል ቀድመ መምረጥ ይችላሉ። Ultimate Multisite እነዚህን የ URL አብነጣዎች ይደግፋል፡
+  * `/register/premium` — የ"Premium" ምርትን ብቻ አስቀድሞ ይመርጣል
+  * `/register/premium/12` — ምርቱን እና የ12-ወር ቆይታን አስቀድሞ ይመርጣል
+  * `/register/premium/1/year` — ምርቱን ከ1-ዓመት ቆይታ ጋር አስቀድሞ ይመርጣል
 
-*   `/register/premium` — "Premium" ምርቱን ብቻ ቀድመ ይመርጣል።
-*   `/register/premium/12` — ምርቱን እና የ12 ወር ጊዜን ቀድመ ይመርጣል።
-*   `/register/premium/1/year` — ምርቱን እና የ1 ዓመት ጊዜን ቀድመ ይመርጣል።
+### የቴምፕሌት ምርጫ መስክ {#the-template-selection-field}
 
-### የTemplate Selection Field
+የ**ቴምፕሌት ምርጫ** መስክ ደንበኞች በcheckout ጊዜ የጣቢያ ቴምፕሌት እንዲመርጡ ያስችላቸዋል። አሁን በUltimate Multisite v2.6.1 ውስጥ በተጨመሩት የ**አንድ ደረጃ** እና **ብዙ-ደረጃ** checkout ቅጽ ቴምፕሌቶች ውስጥ በነባሪነት ተካትቷል።
 
-የ**Template Selection** field ደንበኞች በቼክአውት ወቅት የጣቢያ አብነት እንዲመርጡ ያስችላል። በአሁኑ ጊዜ በUltimate Multisite v2.6.1 ውስጥ በቅድፋት በ**single step** እና **multi-step** የቼክአውት ቅጽ አብነቶች ውስጥ ተካቷል።
+#### መስኩን በእጅ ማከል {#adding-the-field-manually}
 
-#### መስኩን በእጅ መጨመር
+ከv2.6.1 በፊት በተፈጠረ ቅጽ ላይ እየሠሩ ከሆነ፣ ወይም ከባዶ ቴምፕሌት ከጀመሩ:
 
-ከv2.6.1 በፊት ከተፈጠረ ቅጽ ጋር እየሠሩ ከሆነ፣ ወይም ከባዶ አብነት ከጀመሩ:
+1. ወደ **Ultimate Multisite > Checkout ቅጾች** ይሂዱ እና የcheckout ቅጽዎን ያርትዑ።
+2. የጣቢያ ዝርዝሮች በሚሰበሰቡበት ደረጃ፣ **አዲስ መስክ አክል** ይጫኑ።
+3. ከመስክ ዓይነት ውይይት ሳጥን **የቴምፕሌት ምርጫ** ይምረጡ።
+4. መስኩን ያዋቅሩ:
+   - **መለያ** — ደንበኞች ከቴምፕሌት ፍርግርግ በላይ የሚያዩት ርዕስ (ለምሳሌ "የጣቢያ ቴምፕሌት ይምረጡ")።
+   - **አስፈላጊ** — ደንበኞች ከመቀጠላቸው በፊት ቴምፕሌት መምረጥ አለባቸው ወይም አይገባቸውም።
 
-1.  ወደ **Ultimate Multisite > Checkout Forms** ይሂዱ እና የቼክአውት ቅጽዎን ያርትዑ።
-2.  የጣቢያ ዝርዝሮች የሚሰበሰቡበት ደረጃ ላይ፣ **Add new Field** ብለው ይጫኑ።
-3.  ከየfield አይነት ዳይሎግ ውስጥ **Template Selection** ይምረጡ።
-4.  የfieldን ያዘጋጁ፡
-    *   **Label** — ደንበኞች ከየአብነት መረብ (template grid) በላይ የሚያዩት ርዕስ (ለምሳሌ: "የጣቢያ አብነት ይምረጡ")።
-    *   **Required** — ደንበኞች ከመቀጠልዎ በፊት አብነት መምረጥ አለባቸው ወይ?
+#### እንዴት እንደሚሠራ {#how-it-works}
 
-#### እንዴት እንደሚሰራ
+ደንበኛ በcheckout ጊዜ ቴምፕሌት ሲመርጥ፣ Ultimate Multisite አዲሱን ጣቢያቸውን ሲያዘጋጅ ይጠቀምበታል። የሚታዩት ቴምፕሌቶች ከ**የጣቢያ ቴምፕሌቶች** ዝርዝርዎ ይመጣሉ (**Ultimate Multisite > የጣቢያ ቴምፕሌቶች**)። ለደንበኞች እንደሚገኙ ምልክት የተደረገባቸው ቴምፕሌቶች ብቻ እዚህ ይታያሉ።
 
-ደንበኛ በቼክአውት ወቅት አብነት ሲመርጥ፣ Ultimate Multisite አዲሱን ጣቢያ ሲፈጥር ይጠቀማዋል። የሚታዩት አብነቶች ከ**Site Templates** ዝርዝርዎ (Ultimate Multisite > Site Templates) ይመጣሉ። ለደንበኞች እንደተገኘ ምልክት የተደረገባቸው አብነቶች ብቻ እዚህ ይታያሉ።
+### የCheckout-ቅጽ መሠረታዊ ዶሜይኖች {#checkout-form-base-domains}
 
-#### መስኩን ማስወገድ
+Ultimate Multisite v2.13.0 በcheckout ቅጽ **የጣቢያ URL** መስኮች ላይ የተዋቀሩ ዶሜይኖችን እንደ ኔትወርክ መሠረታዊ ዶሜይኖች ይቆጥራል። ደንበኞች እንደ `example.com` እና `sites.example.com` ባሉ አንድ ወይም ከዚያ በላይ በተጋሩ የምዝገባ ዶሜይኖች ሥር ጣቢያዎችን እንዲፈጥሩ ሲፈልጉ የመስኩን ያሉ የዶሜይን ቅንብሮች ይጠቀሙ።
 
-የጣቢያ አብነቶችን አያቀርቡም ከሆነ፣ የTemplate Selection fieldን ከቅጽዎ ያስወግዱ። ደንበኞች ከዚያም በ**Ultimate Multisite > Settings > Site Templates** ስር የተዘጋጀውን ማንኛውንም መደበኛ አብነት ይቀበላሉ።
+የተጋሩ checkout-form መሠረታዊ ጎራዎች እንደ በእያንዳንዱ ጣቢያ ብጁ ጎራ ማዛመዶች አይቆጠሩም። ደንበኛ ከእነዚህ መሠረቶች በአንዱ ላይ የንዑስ ማውጫ ጣቢያ ሲፈጥር፣ Ultimate Multisite የተጋራውን አስተናጋጅ ለዚያ አንድ ጣቢያ ብቻ እንዲሆን የሚያደርግ የተዛመደ-ጎራ መዝገብ አይፈጥርም። የተጋራው አስተናጋጅ ተመሳሳይ checkout form base ለሚጠቀሙ እህት ጣቢያዎች እንደተገኘ ይቀራል።
+
+እንደ `customer-example.com` ያሉ ለእያንዳንዱ ደንበኛ ለተዛመዱ አስተናጋጆች ብጁ ጎራዎችን ያቆዩ። ብዙ ጣቢያዎች ሊጠቀሙባቸው ለሚችሉ የተጋሩ የምዝገባ አስተናጋጆች checkout-form base ጎራዎችን ያቆዩ።
+
+#### መስኩን ማስወገድ {#removing-the-field}
+
+የጣቢያ አብነቶችን ካልሰጡ፣ ከቅጽዎ የTemplate Selection መስክን ያስወግዱ። ከዚያ ደንበኞች **Ultimate Multisite > Settings > Site Templates** ስር የተዋቀረውን ማንኛውንም ነባሪ አብነት ይቀበላሉ።

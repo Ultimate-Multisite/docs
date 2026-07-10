@@ -3,11 +3,11 @@ title: Eskupidetzearen erabilera
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility)
+# Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0-ek **Aplikazioaren Ezkutzeko Erabiltasuna** kontrolak introduzio dira, zein erabilera (ability) zein eskuratzen duen erabakit. Horrek administurietan zein agent funtzioak REST API, MCP serverrak, WooCommerce integrazioak eta beste interfaze hauek arraketen daiteke kontrolatzeko aukera ematen du.
 
-## Aplikazioaren Ezkutzeko Erabiltasuna Zer da?
+## Aplikazioaren Ezkutzeko Erabiltasuna Zer da? {#what-is-ability-visibility}
 
 Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility) eskubideen sistema bat da, zein gauza hauek kontrolatzen duen:
 
@@ -18,9 +18,9 @@ Aplikazioaren Ezkutzeko Erabiltasuna (Ability Visibility) eskubideen sistema bat
 
 Hitz batek zein erabilera dutelako nivel du, horrek desberdineten gauzakaren artean horien erabilera ditentukan du.
 
-## Ezkutzeko Niveleak
+## Ezkutzeko Niveleak {#visibility-levels}
 
-### Publikoa (Public)
+### Publikoa (Public) {#public}
 
 **Publikoak erabilera** zenbat da:
 
@@ -32,7 +32,7 @@ Hitz batek zein erabilera dutelako nivel du, horrek desberdineten gauzakaren art
 
 Testu-gisa: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Innerakoa (Internal)
+### Innerakoa (Internal) {#internal}
 
 **Innerakoak erabilera** zenbat da:
 
@@ -43,7 +43,7 @@ Testu-gisa: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Testu-gisa: `manage-settings`, `view-analytics`, `export-data`
 
-### Partnertar (Partner)
+### Partnertar (Partner) {#partner}
 
 **Partnertarren erabilera** zenbat da:
 
@@ -54,7 +54,7 @@ Testu-gisa: `manage-settings`, `view-analytics`, `export-data`
 
 Testu-gisa: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Deshabilitatuta (Disabled)
+### Deshabilitatuta (Disabled) {#disabled}
 
 **Deshabilitatutako erabilera** zenbat da:
 
@@ -63,15 +63,15 @@ Testu-gisa: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Admin paneletan ez dago horiek
 - Ez dago horiek erabiltzeko, edo ezinbestekiko edo juergatik erabilera dutelako funtzioak dira
 
-## Ability Visibility-n irrenketa
+## Ability Visibility-n irrenketa {#managing-ability-visibility}
 
-### Abilio Irrenketa Kontrolatzeko
+### Abilio Irrenketa Kontrolatzeko {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** (Konfigurazioa)
 2. **Abilities** (Abilidades/Kapitalak) taban klik egin
 3. Installatutako guztia abilio-ak eta horiek irrenketa lekuak ikusten duzu.
 
-### Abilio Detalioak Ikusteko
+### Abilio Detalioak Ikusteko {#viewing-ability-details}
 
 Abilio bat klikatu beharko duzu jakinarazteko:
 
@@ -82,7 +82,7 @@ Abilio bat klikatu beharko duzu jakinarazteko:
 - **Last updated** (Lehen datua): Irrenketa lehen datuenean zer egin zuen
 - **Status** (Estatus): Aterlan (Recognized) edo Unclassified (Ez identifikatu)
 
-### Irrenketak Aldatzeko
+### Irrenketak Aldatzeko {#changing-visibility-levels}
 
 Abilio bat irrenketak aldatzeko:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operazioak Nagusiak (Bulk Operations)
+### Operazioak Nagusiak (Bulk Operations) {#bulk-operations}
 
 Abilio batzuk irrenketak aldatzeko:
 
@@ -108,11 +108,11 @@ Abilio batzuk irrenketak aldatzeko:
 2. Bulk action dropdown menua (bulk action dropdown menu) nandu, irrenketa leku berriana aukeratu duzu
 3. **Apply** (Aplikatu) klikatu
 
-## Partner Allow-List (Partnerak emateko lista)
+## Partner Allow-List (Partnerak emateko lista) {#partner-allow-list}
 
 **Partner allow-list** kontrolatzen du zein ekstergo partnerrak Partner-level abilio-ek erabil dezaketak.
 
-### Partnerak Gehitu eta Erregistroa
+### Partnerak Gehitu eta Erregistroa {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** (Konfigurazioa) → **Partners** (Partnerrak)
 2. **Add Partner** (Partner gehitu) klikatu duzu
@@ -120,7 +120,7 @@ Abilio batzuk irrenketak aldatzeko:
 4. Ondorekin, partneraren izena eta deskribapena gehitu dezakezu
 5. **Save** (Saldu) klikatu
 
-### Abilioak Partnerrak Erakundean Atribuzea
+### Abilioak Partnerrak Erakundean Atribuzea {#assigning-abilities-to-partners}
 
 Partner bat gehiatzen duenaren ondoren:
 
@@ -130,7 +130,7 @@ Partner bat gehiatzen duenaren ondoren:
 4. "Partner allow-list" zehaztasuneko parteia, erabilera eskatzen dituen partnertakaren boteak markatu.
 5. **Save** (Saldu) aipatzi.
 
-### Partnertako Erabilera Ez-eskatzea
+### Partnertako Erabilera Ez-eskatzea {#revoking-partner-access}
 
 Partnertatik erabilera hartzeko:
 
@@ -140,11 +140,11 @@ Partnertatik erabilera hartzeko:
 
 Partnertatik hor erabilera hemen egiten du.
 
-## Erabilera Ez-klasifikatuak (Unclassified Abilities)
+## Erabilera Ez-klasifikatuak (Unclassified Abilities) {#unclassified-abilities}
 
 Superdav AI Agentaren ez jakusten duen hiru-parteko erabilera instalatzen duenean, hori **Ez-klasifikatu** daudenak.
 
-### Ez-klasifikatuak Erabilera Administrazioan
+### Ez-klasifikatuak Erabilera Administrazioan {#admin-notice-for-unclassified-abilities}
 
 Administrazioaren notisia aurkitu:
 
@@ -161,7 +161,7 @@ Zuremeatu eta klasifikatu duzu.
 [Erabilera Zuremeatu] [Ez Zuremeatu]
 ```
 
-### Ez-klasifikatuak Zuremeatu
+### Ez-klasifikatuak Zuremeatu {#reviewing-unclassified-abilities}
 
 1. Notisia aurkitu: **Review Abilities** (Erabilera Zuremeatu) aipatzi.
 2. Ez-klasifikatu erabilera baten bitartean, aurkitu duzu:
@@ -178,7 +178,7 @@ Zuremeatu eta klasifikatu duzu.
 
 4. Zure erabakia saldatzeko **Classify** (Klasifikatu) aipatzi.
 
-### Ez-klasifikatuak Non-klasifikatu dezake?
+### Ez-klasifikatuak Non-klasifikatu dezake? {#why-classify-unclassified-abilities}
 
 Erabilera klasifikatu dezake:
 
@@ -187,9 +187,9 @@ Erabilera klasifikatu dezake:
 - **Erabilera aktiboa egiten du**: Klasifikatu gtainaren ondoren, erabilera erabilera dauden bat dauden
 - **Erakundea dokumentatzen du**: Zure aukerak auditu (zuremeatu) eraguntzeko logiatzen dira
 
-## Erratasun edo Barkapen Sobaritzaileak
+## Erratasun edo Barkapen Sobaritzaileak {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Publik abiltzaileak** disponible dira REST endpoint-ek:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal eta Partnertar abiltzaileak** REST API bidez ez daiko.
 
-### MCP Serverrak
+### MCP Serverrak {#mcp-servers}
 
 **Publik abiltzaileak** disponible dira MCP bidez:
 
@@ -217,7 +217,7 @@ Abiltzaileak disponibleak:
 
 **Partnertar abiltzaileak** partnertar identifikazioak bidez baino ez daiko.
 
-### WooCommerce Integrazioa
+### WooCommerce Integrazioa {#woocommerce-integration}
 
 **WooCommerce-re lotutako publik abiltzaileak** disponible dira:
 
@@ -227,7 +227,7 @@ Abiltzaileak disponibleak:
 
 **Internal abiltzaileak** WooCommerce-ra ez daiko.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Abiltzaile guztiek** (Publik, Internal, Partnertar) chat-an disponible dira, erabiltzailearen permietzaileari dagokion:
 
@@ -235,34 +235,34 @@ Abiltzaileak disponibleak:
 - Erregulako erabiltzaileak publik abiltzaileak ikusten dute
 - Partnertarrak publik eta partnertar abiltzaileak ikusten dute (whitelisted jakin dituztenak)
 
-## Segurtasunaren Best Praktikak
+## Segurtasunaren Best Praktikak {#security-best-practices}
 
-### Lehen Pertsua Erreguntzak Prinsipialdia
+### Lehen Pertsua Erreguntzak Prinsipialdia {#principle-of-least-privilege}
 
 - Abiltzaileak erabiltzeko aukera duen lehen restrikzioa ematen artean konponbideatu
 - Sensitibo operazioetara Partnertar abiltzaileak erabiliz
 - Ez erabiltzen dituzten abiltzaileak deshabilitatu
 
-### Auditu Regularrak
+### Auditu Regularrak {#regular-audits}
 
 - Abiltzailearen visibilidada mensual ikustu
 - Ez klerifikatu abiltzaileak kontrolatu
 - Ez erabiltzen dituzten partnertarren erakundeak deshabilitatu
 
-### Logia eta Monitorizazioa
+### Logia eta Monitorizazioa {#logging-and-monitoring}
 
 - Zer abiltzaileak leez dauden artean lehen erabiltzen dira ikustu
 - Partnertarren erabilera motxilerak taldeatu
 - Abiltzailearen ezohola motxilerak alertatzea
 
-### Hirugarren Parte Abiltzaileak
+### Hirugarren Parte Abiltzaileak {#third-party-abilities}
 
 - Aktibatu aurretik hirugarren parte abiltzaileak ikustu
 - Ezaugariz konponbideatu
 - Internal edo Partnertar visibilidadarekin hasten dena
 - Bietan binarte egin ondoren publika egindua
 
-## Problema-ezpenaketa (Troubleshooting)
+## Problema-ezpenaketa (Troubleshooting) {#troubleshooting}
 
 **Ez dago eskaera ez du listan erabiliz**
 - Ezkatu ondorioztatzen da abilidadea instalatuta eta aktibo dagoela.
@@ -285,7 +285,7 @@ Abiltzaileak disponibleak:
 - Ezkatu ondorioztatzen da zehaztutako datua salduta dagoela.
 - Abilidadea ematen plugin-ek eguneratuta dagoela zuzena jakinarazteko.
 
-## Migrazioa Irudia Modu Zaharra (Migration from Legacy Mode)
+## Migrazioa Irudia Modu Zaharra (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Superdav AI Agent-en aurreratu bertsio batetik iruditzen ari zete:
 
@@ -295,7 +295,7 @@ Superdav AI Agent-en aurreratu bertsio batetik iruditzen ari zete:
 
 **Third-Party Mode Migration** (Ekinak Modu Migrazioa) arauago informazioa hartzeko native Abilities API integrazioan iruditzen dira.
 
-## Irudi Mendiak (Next Steps)
+## Irudi Mendiak (Next Steps) {#next-steps}
 
 Abilidadearen kondicionoa konfiguratutakoan ondoren:
 

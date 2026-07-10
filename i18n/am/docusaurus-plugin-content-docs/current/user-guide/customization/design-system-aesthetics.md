@@ -3,11 +3,11 @@ title: የንድፍ ሥርዓት ውበት ክህሎት
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# የንድፍ ሥርዓት ውበት ክህሎት
+# የንድፍ ሥርዓት ውበት ክህሎት {#design-system-aesthetics-skill}
 
 የ**የንድፍ ሥርዓት ውበት ክህሎት (Design System Aesthetics skill)** ማለት የድረ-ገጽዎን የእይታ ማንነት ለማሻሻል የሚረዳ መመሪያ ነው። ይህ ክህሎት በንድፍ ሥርዓትዎ ውስጥ ወጥነት ያለው ውሳኔ እንዲያደርጉ የሚያስችሉ የፊደል አጻጻፍ (typography)፣ የቀለም ስብስብ (color)፣ ክፍተት (spacing) እና እንቅስቃሴ (motion) ቶከኖችን (tokens) ይረዳዎታል።
 
-## የንድፍ ሥርዓት ውበት ምንድን ነው?
+## የንድፍ ሥርዓት ውበት ምንድን ነው? {#what-is-design-system-aesthetics}
 
 የንድፍ ሥርዓት ውበት (Design System Aesthetics) የሚሸፍነው መዋቅራዊ ክህሎት ሲሆን የሚከተሉትን ያካትታል፦
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 እነዚህ ውሳኔዎች በጉዳይዎ `theme.json` ፋይል ውስጥ ተይዘው ወጥ የሆነ የእይታ ሥርዓት ይፈጥራሉ።
 
-## የንድፍ ሥርዓት ውበትን ለምን መጠቀም አለብኝ?
+## የንድፍ ሥርዓት ውበትን ለምን መጠቀም አለብኝ? {#why-use-design-system-aesthetics}
 
-### ወጥነት (Consistency)
+### ወጥነት (Consistency) {#consistency}
 
 የንድፍ ሥርዓት የሚከተሉትን ያረጋግጣል፦
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ክፍተቱ ሊተነበይ የሚችል ስርዓትን ይከተላል
 - አኒሜሽኖች አንድነት ይሰማዎታል
 
-### ብቃት (Efficiency)
+### ብቃት (Efficiency) {#efficiency}
 
 በገጽ በገጽ የንድፍ ውሳኔዎችን ከመስጠት ይልቅ፣ የሚከተሉትን ያደርጋሉ፦
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - በሁሉም ቦታ ይጠቀማሉ
 - አንድን ዋጋ በመቀየር በጠቅላላ ያዘምላሉ
 
-### ተጣጣፊነት (Flexibility)
+### ተጣጣፊነት (Flexibility) {#flexibility}
 
 ይህም የሚከተሉትን እንዲያደርጉ ያስችልዎታል፦
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - በተለያዩ ውበቶች መሞከር
 - እየተሻሻሉ የብራንድ ወጥነትን መጠበቅ
 
-## የንድፍ ሥርዓት ውበት ክህሎትን ማስጀመር
+## የንድፍ ሥርዓት ውበት ክህሎትን ማስጀመር {#triggering-the-design-system-aesthetics-skill}
 
-### በእጅ ማስጀመር (Manual Activation)
+### በእጅ ማስጀመር (Manual Activation) {#manual-activation}
 
 በማንኛውም ጊዜ ይህንን ክህሎት መጀመር ይችላሉ፦
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### በራስ-ሰር ምክሮች (Automatic Suggestions)
+### በራስ-ሰር ምክሮች (Automatic Suggestions) {#automatic-suggestions}
 
 እነዚህ ኤጀንቶች (Agents) የሚከተሉትን ሲያደርጉ የክህሎቱን አጠቃቀም ሊጠቁሙ ይችላሉ፦
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - የእይታ ወጥነትን ለማሻሻል ሲፈልጉ
 - ድረ-ገጽዎን ለመልቀቅ ሲዘጋጁ
 
-## የንድፍ ሥርዓት ውበት ሂደት
+## የንድፍ ሥርዓት ውበት ሂደት {#the-design-system-aesthetics-process}
 
-### ደረጃ 1: የፊደል አጻጻፍ (Typography)
+### ደረጃ 1: የፊደል አጻጻፍ (Typography) {#step-1-typography}
 
 ኤጀንቱ ስለ ፊደል ምርጫዎችዎ ይጠይቃል፦
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **የክብደት መለኪያ (Weight scale)**: የፊደል ክብደቶች (regular, medium, bold, ወዘተ.)
 - **የመስል ቁመት (Line height)**: ለሊንዮች መካከል ያለው ክፍተት ለንባብ
 
-### ደረጃ 2: የቀለም ስብስብ (Color Palette)
+### ደረጃ 2: የቀለም ስብስብ (Color Palette) {#step-2-color-palette}
 
 ```
 የቀለም ስብስቦን እንገልጻ።
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ትርጉም ያላቸው ቀለሞች (success, warning, error)
 - የቅሬታ (Hover) እና ንቁ (active) ሁኔታዎች
 
-### ደረጃ 3: ክፍተት (Spacing)
+### ደረጃ 3: ክፍተት (Spacing) {#step-3-spacing}
 
 ```
 ምን ያህል የመተንፈስ ቦታ ይፈልጋሉ?
@@ -162,7 +162,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - መለኪያ (Scale): xs, sm, md, lg, xl, 2xl
 - ለፓዲንግ፣ ማርጂን እና ክፍተት የተወሰኑ ዋጋዎች
 
-### ደረጃ 4: ድንበሮች እና ጥላዎች (Borders and Shadows)
+### ደረጃ 4: ድንበሮች እና ጥላዎች (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 የእይታ ጥልቀት እና ትርጉም፦
@@ -185,7 +185,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ለከፍታ ደረጃዎች የጥላ ቶከኖች
 - የድንበር ስፋት ቶከኖች
 
-### ደረጃ 5: እንቅስቃሴ እና አኒሜሽን (Motion and Animation)
+### ደረጃ 5: እንቅስቃሴ እና አኒሜሽን (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 ድረ-ገጽዎ ሲገናኝ ምን እንዲሰማው ይፈልጋሉ?
@@ -207,9 +207,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - የቅልበስ ተግባራት (Easing functions) (ease-in, ease-out, ease-in-out)
 - ለተለመዱ መስተጋብሮች የአኒሜሽን ቁልል ፍሬሞች (Animation keyframes)
 
-## የንድፍ ሥርዓት ውበትን መተግበር (Applying Design System Aesthetics)
+## የንድፍ ሥርዓት ውበትን መተግበር (Applying Design System Aesthetics) {#applying-design-system-aesthetics}
 
-### በራስ-ሰር መተግበር (Automatic Application)
+### በራስ-ሰር መተግበር (Automatic Application) {#automatic-application}
 
 ክህሎቱን ከጨረሱ በኋላ፣ ኤጀንቱ፦
 
@@ -218,7 +218,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 3. ከስርዓቱ ጋር እንዲጣጣሙ የብሎክ ስታይሎችን እንደገና ይፈጥራል
 4. የተሻሻለውን ጉዳይ ያነቃቃል
 
-### በእጅ መተግበር (Manual Application)
+### በእጅ መተግበር (Manual Application) {#manual-application}
 
 በቀጥታ `theme.json` መረጃን ማረም ይችላሉ፦
 
@@ -257,9 +257,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 }
 ```
 
-## የንድፍ ሥርዓትዎን መመልከት (Viewing Your Design System)
+## የንድፍ ሥርዓትዎን መመልከት (Viewing Your Design System) {#viewing-your-design-system}
 
-### ኤጀንትን መጠየቅ
+### ኤጀንትን መጠየቅ {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 ኤጀንቱ የፊደል አጻጻፍዎን፣ ቀለሞችን፣ ክፍተቶችን እና ሌሎች ቶከኖችን ያሳየዎታል።
 
-### theme.jsonን መመልከት
+### theme.jsonን መመልከት {#view-themejson}
 
 የጥሬ ቶከን ትርጓሜዎችን ለማየት `/wp-content/themes/[theme-name]/theme.json` ውስጥ በጽሑፍ አርታኢ ይክፈቱ።
 
-## የንድፍ ሥርዓትዎን ማዘመን (Updating Your Design System)
+## የንድፍ ሥርዓትዎን ማዘመን (Updating Your Design System) {#updating-your-design-system}
 
-### ፈጣን ዝመናዎች (Quick Updates)
+### ፈጣን ዝመናዎች (Quick Updates) {#quick-updates}
 
 ኤጀንትን የተወሰኑ ለውጦችን እንዲያደርግ ይጠይቁ፦
 
@@ -299,7 +299,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Change the heading font to a serif"
 ```
 
-### ሙሉ እንደገና ዲዛይን ማድረግ (Full Redesign)
+### ሙሉ እንደገና ዲዛይን ማድረግ (Full Redesign) {#full-redesign}
 
 የንድፍ ሥርዓት ውበት ክህሎቱን እንደገና ያሂዱ፦
 
@@ -309,7 +309,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 ይህ በወቅታዊ እሴቶችዎ በመጀመር ሁሉንም ውሳኔዎች እንደገና ይመራዎታል::
 
-### আংশিক ዝመናዎች (Partial Updates)
+### আংশিক ዝመናዎች (Partial Updates) {#partial-updates}
 
 ተወሰኑ ገጽታዎችን ያዘምኑ፦
 
@@ -317,15 +317,15 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Just update the color palette, keep everything else"
 ```
 
-## የንድፍ ሥርዓት ምርጥ አሠራሮች (Design System Best Practices)
+## የንድፍ ሥርዓት ምርጥ አሠራሮች (Design System Best Practices) {#design-system-best-practices}
 
-### ወጥነት (Consistency)
+### ወጥነት (Consistency) {#consistency-1}
 
 - በሁሉም ቦታ ተመሳሳይ ቶከኖች ይጠቀሙ
 - አንድ ጊዜ ብቻ የሚሆኑ ቀለሞችን ወይም መጠኖችን አይፍጠሩ
 - ዋጋዎችን በጽሑፍ ከመጻፍ ይልቅ ቶከኖችን ይጠቀሙ
 
-### ስያሜ መስጠት (Naming)
+### ስያሜ መስጠት (Naming) {#naming}
 
 ግልጽ፣ ትርጉም ያላቸው ስያሜዎችን ይጠቀሙ፦
 
@@ -335,7 +335,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### ሊሰፋ የሚችል መሆን (Scalability)
+### ሊሰፋ የሚችል መሆን (Scalability) {#scalability}
 
 ሥርዓትዎን እንዲሰፋ ዲዛይን ያድርጉ፦
 
@@ -343,7 +343,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ከዘፈቀደ ዋጋዎች (arbitrary values) ይልቅ መለኪያዎችን (scales) ይፍጠሩ (xs, sm, md, lg, xl)
 - ለወደፊት የሚضاف መيزات ዕቅድ ያውቡ
 
-### ሰነድ ማድረግ (Documentation)
+### ሰነድ ማድረግ (Documentation) {#documentation}
 
 የንድፍ ሥርዓትዎን ሰነድ ያድርጉ፦
 
@@ -351,9 +351,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - እያንዳንዱን ቶከን መቼ መጠቀም እንዳለበት
 - ልዩ ሁኔታዎችን እና የድንበሮችን (edge cases) መዘርዘር
 
-## የተለመዱ የንድፍ ሥርዓት አብነቶች (Common Design System Patterns)
+## የተለመዱ የንድፍ ሥርዓት አብነቶች (Common Design System Patterns) {#common-design-system-patterns}
 
-### ዘመናዊ አነስተኛ (Modern Minimalist)
+### ዘመናዊ አነስተኛ (Modern Minimalist) {#modern-minimalist}
 
 - ሳንስ-ሴሪፍ ፊደል አጻጻፍ (Inter, Helvetica)
 - ውስን የቀለም ስብስብ (2-3 ቀለሞች)
@@ -361,7 +361,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ጥቃቅን ጥላዎች
 - ለስላሳ፣ ፈጣን አኒሜሽኖች
 
-### ሞቅ ያለ እና ወዳጃዊ (Warm and Friendly)
+### ሞቅ ያለ እና ወዳጃዊ (Warm and Friendly) {#warm-and-friendly}
 
 - የሴሪፍ እና ሳንስ-ሴሪፍ ድብልቅ
 - ሞቅ ያለ የቀለም ስብስብ (ብርቱካን፣ ሞቅ ያለ ግራጫ)
@@ -369,7 +369,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ለስላሳ ጥላዎች
 - ተጫዋት አኒሜሽኖች
 
-### ሙያዊ ኮርፖሬት (Professional Corporate)
+### ሙያዊ ኮርፖሬት (Professional Corporate) {#professional-corporate}
 
 - ንጹህ ሳንስ-ሴሪፍ (Roboto, Open Sans)
 - በዋና ቀለም የተደገፈ ገለልተኛ ስብስብ
@@ -377,7 +377,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - አነስተኛ ጥላዎች
 - ጥቃቅን ሽግግሮች
 
-### ፈጠራ እና ደፋር (Creative and Bold)
+### ፈጠራ እና ደፋር (Creative and Bold) {#creative-and-bold}
 
 - ልዩ የፊደል አጻጻፍ
 - ደፋር የቀለም ስብስብ
@@ -385,7 +385,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ጠንካራ ጥላዎች
 - የሚታዩ አኒሜሽኖች
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
 **የንድፍ ሥርዓት ለውጦቼ አይታዩም**
 - የብራውዘር ካሽዎን ያጽዱ
@@ -403,7 +403,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - `theme.json`ን ወደ ቀድሞ እሴቶች በእጅ ያርትዑ
 - ክህሎቱን በተለያየ ምርጫ እንደገና ያሂዱ
 
-## ቀጣይ እርምጃዎች (Next Steps)
+## ቀጣይ እርምጃዎች (Next Steps) {#next-steps}
 
 የንድፍ ሥርዓትዎን ከገለጹ በኋላ፦
 

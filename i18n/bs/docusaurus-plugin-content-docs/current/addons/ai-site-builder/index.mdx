@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress verzija 5.3 ili novija
 - PHP verzija 7.4 ili novija
 - Plugin Ultimate Multisite (aktiviran)
 
-## Instalacija
+## Instalacija {#installation}
 
 1. Upload fajlove za addon u direktorij `/wp-content/plugins/`
 2. Aktivizirajte plugin kroz meni 'Plugins' u WordPressu
 3. Konfigurišite postavke za addon u administraciji mreže
 
-## Razvoj
+## Razvoj {#development}
 
-### Postavljanje
+### Postavljanje {#setup}
 
 ```bash
 # Instalirajte zavisnosti
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura Projekta
+### Struktura Projekta {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Pravila modernizacije koda
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
 Addon uključuje sveobuhvatni okvir za testiranje:
 
@@ -79,44 +79,44 @@ Addon uključuje sveobuhvatni okvir za testiranje:
 - **Pokrivenost testovima**: Konfigurisano za praćenje pokrivenosti koda
 - **Testiranje Multisite-a**: Testovi se pokreću u multisite okruženju
 
-### Standardi Koda
+### Standardi Koda {#code-standards}
 
 - **WordPress Coding Standards**: Enforcirano putem PHPCS
 - **Kompatibilnost sa PHP 7.4+**: Podržane su moderne PHP značajke
 - **Statistička analiza**: Integracija PHPStan-a za provjeru tipova
 - **Modernizacija koda**: Pravila Rector-a za nadogradnju PHP-a
 
-### Sistem Izgradnje (Build System)
+### Sistem Izgradnje (Build System) {#build-system}
 
 - **Obrađivaње Fajlova**: Minifikacija za CSS/JS fajlove
 - **Prevodnja**: Generisanje POT fajlova
 - **Pakovanje**: Kreiranje arhive za distribuciju
 - **Razvojni režim**: Neminifikovani fajlovi za debagovanje
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
 Addon podržava različite opcije konfiguracije dostupne putem interfejsa za administraciju mreže.
 
-## Hooks i Filteri
+## Hooks i Filteri {#hooks-and-filters}
 
-### Akcije (Actions)
+### Akcije (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Pokreće se nakon inicijalizacije addona
 - `ultimate-multisite-ai-site-builder_loaded` - Pokreće se nakon učitavanja svih fajlova addona
 
-### Filteri (Filters)
+### Filteri (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modifikovanje postavki addona
 - `ultimate-multisite-ai-site-builder_enabled` - Prekrivanje statusa omogućavanja/onemogućavanja addona
 
-## Licenca
+## Licenca {#license}
 
 Ovaj addon je licenciran pod GPL v3 ili novije.
 
-## Podrška
+## Podrška {#support}
 
 Za podršku i dokumentaciju, posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Izmjene (Changelog)
+## Izmjene (Changelog) {#changelog}
 
 - Verzija 1.0.1 (2025-09-28): Promijenjen prefiks u ultimate-multisite; ažuriran domen teksta; povećana verzija.
 

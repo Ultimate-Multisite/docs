@@ -3,13 +3,13 @@ title: Chikoro Chekucheku Chishandisa
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sei kuupedza Matendo Ekuviri Kune Codeable?
+# Sei kuupedza Matendo Ekuviri Kune Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Nge kune nguva dzakawanda, tinoda kuti tive nemazuva anokosha ekugadzirisa zvinhu zvinogona kutamba zvakakosha kuti mweya wenyu (network flows) uonekane seunoda. Kana iye ndiyo inotipa, tinopa Codeable [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), unyore wakasi kungava uri kuona vafungwarai vanogara vakaona (experienced developers) nemakore ekugadzirisa Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ndiyo platform inosimbisa vanhu nekugadzirisa WordPress, uye vanogona kutenderera kuita mari dzinogara vakaona (qualified freelance developers), vanogona kushanda pamapurojekiti panguva yese. Vane nekuita application yakakwana kuti zvinhu zvakakosha zvinogone kunge uri munhu anogara nekugadzirisa zvinhu zvine kuremekedzo (experts) vachiri kuita zvako.
 
-### Sei kuita project mu Codeable?
+### Sei kuita project mu Codeable? {#how-to-create-a-project-in-codeable}
 
 Mazuva akapfiri, ndonga kuenda ku [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) uye chibvumira **Start a Project** (Simba Project).
 

@@ -3,13 +3,13 @@ title: Nedgradering af en plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Nedgradering af en plan (v2)
+# Nedgradering af en plan (v2) {#downgrading-a-plan-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Nedgradering af en plan eller abonnement er en almindelig handling, som dine kunder måske foretager, hvis de har et begrænset budget eller har besluttet, at de ikke har brug for mange ressourcer til at drive deres subsite.
 
-## Sådan nedgraderer du en plan
+## Sådan nedgraderer du en plan {#how-to-downgrade-a-plan}
 
 Dine kunder kan nedgradere deres plan når som helst ved at logge ind på deres subsite admin dashboard og klikke på **Change** under deres kontopage.
 
@@ -25,7 +25,7 @@ For at gå videre skal brugeren blot klikke på knappen **Complete Checkout**. D
 
 ![Kontopage med banner for ventende medlemskabsændring](/img/account-page/pending-change.png)
 
-### Hvad sker der, når en bruger nedgraderer sin plan
+### Hvad sker der, når en bruger nedgraderer sin plan {#what-happens-when-a-user-downgrades-their-plan}
 
 Det er vigtigt at bemærke, at nedgradering af planen ikke ændrer den eksisterende konfiguration i brugerens subsite.
 
@@ -37,7 +37,7 @@ For indlæg, der overstiger grænsen sat i planen, har du 3 forskellige mulighed
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Hvad sker der med betalingen
+### Hvad sker der med betalingen {#what-happens-to-the-payment}
 
 I version 2.0 kræves der ikke længere nogen justeringer i betalingen med hensyn til proportionering (proration).
 

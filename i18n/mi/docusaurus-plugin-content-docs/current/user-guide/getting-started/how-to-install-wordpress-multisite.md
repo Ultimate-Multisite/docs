@@ -3,7 +3,7 @@ title: He aha te ara ki te Whakaritenga WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# He aha te whakamahi ana ahau ki Whakarite WordPress Multisite?
+# He aha te whakamahi ana ahau ki Whakarite WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 E whaiaro ana i te WordPress Multisite, e tino kitea ana i te wāhi irere (network) o ngā waka (sites) i tētahi whakauru (installation) paku. He āhuatanga whakatō (built-in feature) ia, engari ā, he ātaahua (active) i te wāhi whakatō (default).
 
@@ -58,7 +58,7 @@ Me te ko e code, ko e whai ake ana i WordPress, ki tō _**.htaccess**_ file:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -94,9 +94,9 @@ Mō te whakato subsite:
 
 I te whakarite katoa ngā rohe, whakatika i te "Add site" button. I te wā kua whakato koe i te subsite hou, whai i ai ki te whai access ki i tōna mōhiamo kia whakatutai ana he hoki functional.
 
-## Ngā Pānga Whakamahi:
+## Ngā Pānga Whakamahi: {#common-problems}
 
-### 1\. He taea ai ahau te whakato mga site hou engari ka nui ake nei ngā tino whai access.
+### 1\. He taea ai ahau te whakato mga site hou engari ka nui ake nei ngā tino whai access. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Ko te mea kua e whai i subdomains, he tino kitea ana koe ki te whakarite wildcard subdomains mō tō network multisite.
 

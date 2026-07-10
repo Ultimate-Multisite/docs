@@ -4,11 +4,11 @@ title: فیلتر - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# فیلتر: wu_admin_notices
+# فیلتر: wu_admin_notices {#filter-wuadminnotices}
 
 این فیلتر به توسعه‌دهندگان اجازه می‌دهد تا اطلاعیه‌های مدیریتی (admin notices) اضافه شده توسط Ultimate Multisite را فیلتر کنند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -18,11 +18,11 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | اگر اطلاعیه‌های قابل بستن (dismissable notices) فیلتر شده باشند. |
 | $dismissed_messages | `array` | لیستی از کلیدهای پیام‌های بسته‌شده. |
 
-### از زمان
+### از زمان {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) در خط ۱۲۱ تعریف شده است.
 
-## بازگشت (Returns)
+## بازگشت (Returns) {#returns}

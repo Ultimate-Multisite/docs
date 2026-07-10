@@ -3,11 +3,11 @@ title: ग्राहक अभिप्राय आणि समस्या 
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# ग्राहक अभिप्राय आणि समस्या अहवाल (Customer Feedback & Issue Reporting)
+# ग्राहक अभिप्राय आणि समस्या अहवाल (Customer Feedback & Issue Reporting) {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 मध्ये एक अंगभूत (built-in) अभिप्राय आणि समस्या अहवाल प्रणाली (feedback and issue reporting system) सादर केली आहे. या प्रणालीमुळे अंतिम वापरकर्ते (end users) चॅट इंटरफेसवरूनच अप्रभावी प्रतिसाद (unhelpful responses) आणि समस्या नोंदवू शकतात. या प्रणालीमध्ये संमती व्यवस्थापन (consent management), स्वयंचलित अहवाल कमांड (automated reporting command), आणि बॅकएंडवर AI-सहाय्यित वर्गीकरण (AI-assisted triage) समाविष्ट आहे.
 
-## थम्स-डाऊन बटण (Thumbs-Down Button)
+## थम्स-डाऊन बटण (Thumbs-Down Button) {#thumbs-down-button}
 
 AI असिस्टंटने पाठवलेल्या प्रत्येक संदेशासोबत एक **थम्स-डाऊन** (👎) बटण दिसते. जेव्हा वापरकर्ता या बटणावर क्लिक करतो, तेव्हा तो प्रतिसादाला अप्रभावी किंवा चुकीचे म्हणून चिन्हांकित करू शकतो.
 
@@ -15,7 +15,7 @@ AI असिस्टंटने पाठवलेल्या प्रत्
 - यावर क्लिक केल्याने **Feedback Consent Modal** उघडतो.
 - हा अभिप्राय (feedback) संभाषण थ्रेड (conversation thread) आणि विशिष्ट संदेशाशी जोडलेला असतो.
 
-## फीडबॅक संमती मॉडेल (Feedback Consent Modal)
+## फीडबॅक संमती मॉडेल (Feedback Consent Modal) {#feedback-consent-modal}
 
 जेव्हा वापरकर्ता थम्स-डाऊन बटणावर क्लिक करतो, तेव्हा कोणताही डेटा पाठवण्यापूर्वी एक संमती मॉडेल (consent modal) दिसते. या मॉडेलमध्ये:
 
@@ -26,13 +26,13 @@ AI असिस्टंटने पाठवलेल्या प्रत्
 
 वापरकर्त्याने स्पष्टपणे पुष्टी करेपर्यंत कोणताही अभिप्राय नोंदवला जात नाही.
 
-## ऑटो-प्रॉम्प्ट फीडबॅक बॅनर (Auto-Prompt Feedback Banner)
+## ऑटो-प्रॉम्प्ट फीडबॅक बॅनर (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 संभाषणाच्या शेवटी, असिस्टंट एक **ऑटो-प्रॉम्प्ट फीडबॅक बॅनर** (auto-prompt feedback banner) प्रदर्शित करू शकतो — हा एक कमी त्रासदायक संदेश असतो जो विचारतो की सत्र उपयुक्त होते की नाही.
 
 हे बॅनर स्वयंचलितपणे (automatically) संभाषणाच्या लांबीवर आणि निकालाच्या निकषांवर (outcome heuristics) आधारित दिसते. हे थम्स-डाऊन बटणाप्रमाणेच फीडबॅक फ्लोशी (feedback flow) जोडलेले असते. वापरकर्त्यांना अभिप्राय न देता हे बॅनर बंद करता येते.
 
-## /report-issue स्लॅश कमांड (/report-issue Slash Command)
+## /report-issue स्लॅश कमांड (/report-issue Slash Command) {#report-issue-slash-command}
 
 वापरकर्ते चॅट इनपुटमध्ये `/report-issue` टाइप करून थेट फीडबॅक फ्लो ट्रिगर करू शकतात. ही कमांड:
 
@@ -42,7 +42,7 @@ AI असिस्टंटने पाठवलेल्या प्रत्
 
 `/report-issue` कमांड सर्व चॅट मोडमध्ये (inline, floating widget, full-screen) उपलब्ध आहे.
 
-## AI-सहाय्यित वर्गीकरण (AI-Assisted Triage)
+## AI-सहाय्यित वर्गीकरण (AI-Assisted Triage) {#ai-assisted-triage}
 
 जमा केलेला अभिप्राय एका AI वर्गीकरण स्तरावर (AI triage layer) पाठवला जातो, जे:
 

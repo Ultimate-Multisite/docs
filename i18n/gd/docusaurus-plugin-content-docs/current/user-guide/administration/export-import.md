@@ -3,17 +3,17 @@ title: Eaith agus aithreachadh
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 ma ùr a tool **Export & Import** de sin-site (single-site) a chùlna an **Tools > Export & Import**. Usaimh echan thu tha thu leat WordPress air ZIP file, a rian seo a stiù, air a leat site a' chùlna air WordPress leat compatible.
 
-## Permisiúid a thàir
+## Permisiúid a thàir {#required-permissions}
 
 Mus eann a bhith air a' sgeuladh gu administrator a tha a' fháil air an menu **Tools** de WordPress air an site a tha a' stiùch air a thàir air a rian seo air a leat. Air sealladh (multisite network), usa a' chùlna administrator air a thàir air a rian seo air a leat subsites air a tool Ultimate Multisite de leat-leat.
 
 Tha a' chùlna download ZIP a' sgaidh gu endpoint download a tha a' sgeuladh, mar a tha an session admin air a' stiùch air a bheir air a' fìor agus eann a' fàs air a chluain, agus eann a' leat a sharadh a' chluain download a' chluain.
 
-## A thàir site air ZIP
+## A thàir site air ZIP {#exporting-a-site-to-a-zip}
 
 1. Air an admin WordPress de sin-site a tha thu a' stiùch a bhith a' chùlna, rinn gu **Tools > Export & Import**.
 2. Ghlinn an àm airson a thàir agus choinn an site a tha thu a' stiùch a bhith a' chùlna air a package.
@@ -29,7 +29,7 @@ Tha an ZIP a' stiùch air:
 
 Tha tairgse ZIP sin ag iarraidh ri fhaighinn air an t-amais, an pluginhean a th'annachdaich agus an cothrom (database) de dhèanamh an sin.
 
-## Fhaighinn site a' chluainteachd air seòl ZIP
+## Fhaighinn site a' chluainteachd air seòl ZIP {#what-the-export-includes}
 
 1. Ràdh an t-amais **Tools > Export & Import** ar an WordPress site a tha thuairt.
 2. Bhrat an curtach fhaighinn agus thabhair an ZIP a tha a' chluainteachd de 'Export & Import'.

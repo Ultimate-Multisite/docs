@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# Filter: wu_apc_get_meta_content_default_content
+# Filter: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 Permet als desenvolupadors filtrar els valors predeterminats
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Permet als desenvolupadors filtrar els valors predeterminats
 | $meta\_type | `string` | Tipus de metadades que s'ha de recuperar. |
 | $meta\_key | `string` | Nom del camp de metadades. |
 
-### Desvingut
+### Desvingut {#since}
 
 - 1.4.0
-### Font
+### Font {#source}
 
 Definit en [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) a la línia 68
 
 
-## Retorn
+## Retorn {#returns}
 El nou valor prededefinit.

@@ -4,11 +4,11 @@ title: Szűrő - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Szűrő: wu_mt_url_replacements
+# Szűrő: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Szűrja az URL cserépárokat.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Szűrja az URL cserépárokat.
 | $new_url | `string` | Az új URL. |
 | $blog_id | `int` | A blog azonosítója. |
 
-### Kezdő verzió
+### Kezdő verzió {#since}
 
 - 1.0.0
-### Forrás
+### Forrás {#source}
 
 Definíciója található [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) fájlban, 151-sorban.

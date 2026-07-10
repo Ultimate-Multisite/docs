@@ -3,11 +3,11 @@ title: Kutanga kweMulti-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolation yaMweya (Multi-Tenancy)
+# Isolation yaMweya (Multi-Tenancy) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 inosirisa isolation yechitambo chedatabase nefilesystem kwa subsite dziri kune vana vanovaka (sovereign tenants). Izvi zvinokumbira kuti data ya tenant ine kutanga kwakasiyana, kunyanya kuendesa mweya wekuchengetedza (network-level provisioning), kukumbira (billing), nekuvaka (administration).
 
-## Strategy yeKutanga Isolation
+## Strategy yeKutanga Isolation {#isolation-strategy}
 
 Chirudziye isolation yechitambo chesovereign kune vana vanovaka vanoita zvinhu zvinoda kutanga separation yakakwana ya data, kubva kuinguva yekuchengetedza filesystem dziri dzinowanikwa (dedicated), kana kuva neboundary inoshanda host wese.
 
@@ -18,13 +18,13 @@ Chitambo chesovereign chine kufamba:
 - Entry ya registry ya tenant inoshandisa kuti ishangane site nedatabase, root path, hostname, uye model yeisolation.
 - Result yeverification ya migration panguva inogadzirwa pane tenant ine kuita live (live).
 
-## Binding yechitambo cheDatabase Host
+## Binding yechitambo cheDatabase Host {#database-host-binding}
 
 Version 1.2.0 inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge
 
 Rudo renyane rudo (tenant root) rinoda kuitika pfungwa dzinobva uye dzichingopfuura. Usiita zvinobva mhando dzinotamba. Kuona kuti rudo renyane rinoda kuenda zvakanaka panguva dzinobva nekuita deployments. Kuti usina zvinobva (temporary mount paths). Kuti kune installs dzine chine Bedrock, ndichida kunzwisisa kuti rudo renyane rinoda kuenda kuunyangwe we WordPress (WordPress web root) anogona kutarisirwa nebootstrap ya tenant, uye haina kunoda kuenda pakutanga pane project root chete.
 
-## Ururo wekuita (Provisioning order)
+## Ururo wekuita (Provisioning order) {#filesystem-root}
 
 Kuti kubva kune tenants dzinobva dzine sovereignty, ndichida kuti mutende iwe utange panguva iyi:
 
@@ -38,7 +38,7 @@ Kuti kubva kune tenants dzinobva dzine sovereignty, ndichida kuti mutende iwe ut
 
 Iruro iyi inokupa kuti tenants dzakasiita (partially isolated) hazvazivikanwa nekuita zvinoda kuenda traffic panguva database writer, users, uye filesystem zvinoita.
 
-## Ururo wekuita management ye customers dzinobva (Sovereign customer management flows)
+## Ururo wekuita management ye customers dzinobva (Sovereign customer management flows) {#provisioning-order}
 
 Ultimate Multisite v2.13.0 inoda kuti zvinoda kuita management ye customers dziri kune main site kana sovereignty inoratidzorwa. Tenant inogona kuenda kubva neinstall ya WordPress inosanganiswe, asi zvinoda kuita actions dzinobva necustomers zvinoda kunge zvinhu zvine billing ya network, membership, kana data ye account yese dzichingopfuura kuti zivaka customers panguva main site pane kuitira action iye mu runtime ya tenant.
 

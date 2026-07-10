@@ -3,15 +3,15 @@ title: Validasi Kontras Palet
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validasi Kontras Palet
+# Validasi Kontras Palet {#validate-palette-contrast}
 
 Fitur **Validasi Kontras Palet** memeriksa pasangan warna dalam palet desain Anda untuk memastikan kepatuhan terhadap WCAG (Web Content Accessibility Guidelines) sebelum diterapkan ke tema Anda.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Fitur ini memastikan skema warna situs Anda memenuhi standar aksesibilitas dengan memvalidasi rasio kontras antara warna teks dan latar belakang. Ini membantu mencegah kombinasi warna yang mungkin sulit dibaca oleh pengguna dengan gangguan penglihatan.
 
-## Format Input
+## Format Input {#input-format}
 
 Fitur ini menerima palet warna sebagai input:
 
@@ -35,7 +35,7 @@ Fitur ini menerima palet warna sebagai input:
 }
 ```
 
-### Parameter
+### Parameter {#parameters}
 
 | Parameter | Tipe | Wajib | Deskripsi |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Fitur ini menerima palet warna sebagai input:
 | `wcag_level` | string | Tidak | Tingkat kepatuhan WCAG: "A", "AA" (default), atau "AAA" |
 | `pairs_to_check` | array | Tidak | Pasangan warna spesifik yang akan divalidasi (misalnya, `["primary-text", "background-text"]`) |
 
-## Tingkat WCAG yang Diperiksa
+## Tingkat WCAG yang Diperiksa {#wcag-levels-checked}
 
 Fitur ini memvalidasi rasio kontras sesuai standar WCAG:
 
@@ -56,7 +56,7 @@ Fitur ini memvalidasi rasio kontras sesuai standar WCAG:
 - **Teks Normal** — teks berukuran kurang dari 18pt (atau 14pt tebal)
 - **Teks Besar** — teks berukuran 18pt atau lebih (atau 14pt tebal atau lebih)
 
-## Skema Output
+## Skema Output {#output-schema}
 
 Fitur ini mengembalikan laporan validasi terperinci:
 
@@ -95,7 +95,7 @@ Fitur ini mengembalikan laporan validasi terperinci:
 }
 ```
 
-### Bidang Output
+### Bidang Output {#output-fields}
 
 | Field | Tipe | Deskripsi |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Fitur ini mengembalikan laporan validasi terperinci:
 | `status` | string | "pass" atau "fail" untuk setiap pasangan |
 | `recommendations` | array | Saran untuk meningkatkan pasangan yang gagal |
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Fitur ini memvalidasi semua kombinasi warna dan mengembalikan:
 - ✅ Background + Text: rasio 12.1:1 (lulus WCAG AAA)
 - Keseluruhan: Sesuai dengan WCAG AA
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Saat menggunakan pemilihan arah desain di Theme Builder, fitur Validasi Kontras Palet:
 
@@ -129,7 +129,7 @@ Saat menggunakan pemilihan arah desain di Theme Builder, fitur Validasi Kontras 
 4. Memberikan rekomendasi untuk pasangan yang tidak sesuai standar
 5. Mencegah penerapan skema warna yang tidak dapat diakses
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
 - **Mulai dengan tingkat AA** — WCAG AA adalah standar untuk sebagian besar situs web
 - **Uji sebelum menerapkan** — validasi palet Anda sebelum berkomitmen pada desain
@@ -137,7 +137,7 @@ Saat menggunakan pemilihan arah desain di Theme Builder, fitur Validasi Kontras 
 - **Pertimbangkan preferensi pengguna** — beberapa pengguna mungkin memiliki sensitivitas warna tambahan
 - **Gunakan pemeriksa kontras** — gabungkan fitur ini dengan alat browser untuk verifikasi
 
-## Pasangan yang Gagal dan Rekomendasi
+## Pasangan yang Gagal dan Rekomendasi {#failing-pairs-and-recommendations}
 
 Jika pasangan warna gagal validasi, fitur ini akan memberikan rekomendasi:
 
@@ -155,7 +155,7 @@ Jika pasangan warna gagal validasi, fitur ini akan memberikan rekomendasi:
 }
 ```
 
-## Fitur Terkait
+## Fitur Terkait {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — buat logo dengan palet warna Anda yang sudah divalidasi
 - [Create Menu](./create-menu.md) — bangun navigasi dengan warna yang mudah diakses

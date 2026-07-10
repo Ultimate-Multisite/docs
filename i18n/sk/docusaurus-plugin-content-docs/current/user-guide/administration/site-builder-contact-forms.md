@@ -3,11 +3,11 @@ title: Kontakt formuláre budov webových stránok
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformulá na budovateľom stránky
+# Kontaktformulá na budovateľom stránky {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 pridáva možnosť vytvárať kontaktné formulá priamo z chatu pomocou agenta Site Builder. To vám umožňuje pridať plne funkčné kontaktné formulá na akýkoľvek stránku bez toho, aby ste opustili chat.
 
-## Prehľad
+## Prehľad {#overview}
 
 Možnosť vytvárať kontaktné formulá v rámci Site Builder (`create_contact_form`) automaticky detekuje váš nainštalovaný plugin a vytvára kontaktné formy pomocou jeho natívnych funkcií. Podporované formulárne pluginy zahŕňajú:
 
@@ -18,7 +18,7 @@ Možnosť vytvárať kontaktné formulá v rámci Site Builder (`create_contact_
 
 Asistent automaticky vyberie najlepšie dostupný formulárny plugin na vašej stránke a vytvorí kontaktné formy prispôsobené tom pluginu.
 
-## Vytvorenie kontaktného formulára
+## Vytvorenie kontaktného formulára {#creating-a-contact-form}
 
 Aby ste vytvorili kontaktný formulár pomocou Site Builder:
 
@@ -34,7 +34,7 @@ Aby ste vytvorili kontaktný formulár pomocou Site Builder:
 
 4. Site Builder vytvorí kontaktný formulár a vráti krátky kód (shortcode) pripravený na zobrazenie.
 
-## Používanie generovaného kódu
+## Používanie generovaného kódu {#using-the-generated-shortcode}
 
 Po tom, čo Site Builder vytvorí kontaktný formulár, vráti krátky kód (napríklad `[contact-form-7 id="123"]`). Môžete:
 
@@ -45,11 +45,11 @@ Po tom, čo Site Builder vytvorí kontaktný formulár, vráti krátky kód (nap
 
 3. **Použite ho v šablone** — Ak ste si s PHP môžete kompromisovať, môžete krátky kód (shortcode) pridať do šablony temy.
 
-## Prispôsobenie kontaktného formulára
+## Prispôsobenie kontaktného formulára {#customizing-the-contact-form}
 
 Po tom, čo Site Builder vytvorí kontaktný formulár, ho môžete ďalej prispôsobiť:
 
-### Via chat rozhrania
+### Via chat rozhrania {#via-the-chat-interface}
 
 Pýtajte sa Site Buildera, aby upravil formulár:
 
@@ -57,7 +57,7 @@ Pýtajte sa Site Buildera, aby upravil formulár:
 
 Site Builder aktualizuje formulár a vráti aktualizovaný krátky kód.
 
-### Via admin rozhrania pluginu formulára
+### Via admin rozhrania pluginu formulára {#via-the-form-plugins-admin-interface}
 
 Môžete ho tiež prispôsobiť priamo v nastaveniach svojho pluginu formulára:
 
@@ -65,7 +65,7 @@ Môžete ho tiež prispôsobiť priamo v nastaveniach svojho pluginu formulára:
 2. Nájdite formulár vytvorený Site Builderom.
 3. Upravte pole formulára, pravidlá validácie a e-mailové upozornenia podľa potreby.
 
-## Plugin formulárov a kompatibilita
+## Plugin formulárov a kompatibilita {#form-plugins-and-compatibility}
 
 Site Builder automaticky detekuje, ktorý plugin formulára je nainštalovaný na vašej sieti, a používa ho na vytvorenie kontaktného formulára. Ak je nainštalované viacero pluginov formulárov, Site Builder ich v nasledovnom poradí prioritizuje:
 
@@ -76,7 +76,7 @@ Site Builder automaticky detekuje, ktorý plugin formulára je nainštalovaný n
 
 Ak žiadny z týchto pluginov nie je nainštalovaný, Site Builder odporúča nainštalovať jeden pred vytvorením kontaktného formulára.
 
-## E-mailové upozornenia
+## E-mailové upozornenia {#email-notifications}
 
 Kontaktné formuláre vytvorené Site Builderom sú štandardne skonfigurované na zaslanie e-mailových upozornení správceniu siete. Môžete prispôsobiť adresú na odoslanie a text upozornenia:
 
@@ -91,21 +91,21 @@ Pre podrobné pokyny si pozrite dokumentáciu vášho pluginu formulára:
 - [E-mail notifikácie Fluent Forms](https://fluentforms.com/docs/)
 - [E-mail notifikácie Gravity Forms](https://docs.gravityforms.com/)
 
-## Príklady použitia
+## Príklady použitia {#example-use-cases}
 
-### Jednoduchý kontaktný formulár
+### Jednoduchý kontaktný formulár {#simple-contact-form}
 
 > "Vytvorte jednoduchý kontaktný formulár s polmi pre meno, e-mail a správu."
 
-### Formulár so viacstupom
+### Formulár so viacstupom {#multi-step-form}
 
 > "Vytvorte kontaktný formulár s prvým stupňom pre informácie o kontakte a druhým stupňom pre správu a preferovanú metódu kontaktu."
 
-### Formulár s podmiennou logikou
+### Formulár s podmiennou logikou {#form-with-conditional-logic}
 
 > "Vytvorte kontaktný formulár, ktorý zobrazuje rôzne polia v závislosti od výberu používateľa z rozbaľovacieho menu."
 
-### Formulár s načítaním súborov
+### Formulár s načítaním súborov {#form-with-file-upload}
 
 > "Vytvorte kontaktný formulár, ktorý umožňuje používateľom nahrať súbor alebo príponu."
 

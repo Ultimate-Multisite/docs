@@ -4,11 +4,11 @@ title: Actie - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Actie: wu_mcp_abilities_registered
+# Actie: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Activeert na het registreren van MCP-mogelijkheden voor een entiteit.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Activeert na het registreren van MCP-mogelijkheden voor een entiteit.
 | $model_name | `string` | De modelnaam. |
 | $this | `object` | De managerinstantie. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.5.0
-### Bron
+### Bron {#source}
 
 Defined in [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) at line 171

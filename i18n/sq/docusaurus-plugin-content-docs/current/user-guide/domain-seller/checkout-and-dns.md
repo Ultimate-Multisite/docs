@@ -3,13 +3,13 @@ title: Fusha e Kontodave dhe DNS i Klientit
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Menaxhimi i Fushës së Checkout dhe DNS-it të Klientit
+# Menaxhimi i Fushës së Checkout dhe DNS-it të Klientit {#checkout-field-and-customer-dns-management}
 
-## Fusha e Zgjedhjes së Domenit në Checkout
+## Fusha e Zgjedhjes së Domenit në Checkout {#the-domain-selection-checkout-field}
 
 Fusha e **Zgjedhjes së Domenit** është një element në procesin e pagesës (checkout) që i jep klientëve zgjedhjen se si do të marrin domen për faqen tuaj. E shtoni këtë fushë në çdo formular të pagesës për të aktivizuar shitjen e domeneve.
 
-### Shtimi i fushës në një formular të pagesës
+### Shtimi i fushës në një formular të pagesës {#adding-the-field-to-a-checkout-form}
 
 1. Shko te **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Hap ose krijoj një formular të pagesës (checkout form).
@@ -19,7 +19,7 @@ Fusha e **Zgjedhjes së Domenit** është një element në procesin e pagesës (
 
 6. Ruaj formularin
 
-### Opsionet e fushave
+### Opsionet e fushave {#field-options}
 
 **Modat e domenit (Domain modes)** — Zgjidhni cilat tab-e do të shohë klienti. Çdo mod mund të aktivizohet ose i deaktivizohet në mënyrë të pavarur:
 
@@ -35,7 +35,7 @@ Fusha e **Zgjedhjes së Domenit** është një element në procesin e pagesës (
 
 **Produkt i domene** — Opsionalisht, vendosni këtë fushë në një produkt të caktuar të domenit tuaj. Nëse nuk e vendosni, addon-i automatikisht zgjedh produktin që përputhet me TLD (Top-Level Domain) që kërkon klienti.
 
-### Fushat e kontaktit të regjistrantit
+### Fushat e kontaktit të regjistrantit {#registrant-contact-fields}
 
 Kur një klient zgjedh tabin **Register New Domain**, forma e pagesës shton fusha kontaktit të regjistrues në mënyrë inline:
 
@@ -45,11 +45,11 @@ Kur një klient zgjedh tabin **Register New Domain**, forma e pagesës shton fus
 
 Këto janë të nevojshme nga të gjithë regjistratësit dhe vallohen para se të bëhet thirrja API për regjistrim. Numrat telefoni automatikisht formatohen në formatin ndërkombëtar `+CC.NNN` që pritet nga regjistratësit.
 
-### URL i automatikisht generuar i faqes
+### URL i automatikisht generuar i faqes {#auto-generated-site-url}
 
 Kur një klient regjistrohet ose mapon një domen, fusha e URL-s së faqes (site URL) plotësohet automatikisht nga domeni i zgjedhur. Klientët nuk kanë nevojë të plotësojnë një fushë të veçantë për URL-n.
 
-### Sjellja e kërkimit
+### Sjellja e kërkimit {#search-behaviour}
 
 Disponueshmëria e domenit kontrollon në kohë reale me AJAX ndërsa klienti shkruan.
 Kur domeni i preferuar nuk është i disponueshëm, shfaqen sugjerime alternative të TLD-ve (Top-Level Domain).
@@ -76,11 +76,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 });
 ```
 
-## Menaxhimi i DNS për klientët
+## Menaxhimi i DNS për klientët {#customer-dns-management}
 
 Klientët mund të menaxhojnë regjistrat e DNS-it për domenët e tyre të regjistruar nga faqja **My Account**, në seksionin që përgjigjet domeneve tuaja.
 
-### Llojet e regjistrave të mbështetura
+### Llojet e regjistrave të mbështetura {#supported-record-types}
 
 | Lloji | Përdorimi |
 |---|---|
@@ -91,11 +91,11 @@ Klientët mund të menaxhojnë regjistrat e DNS-it për domenët e tyre të regj
 
 | **TXT** | Shtoni regjistrat SPF, DMARC, verifikim ose të tjerë teksti |
 
-### Të cilët ofrues mbështesin menaxhimin e DNS-it?
+### Të cilët ofrues mbështesin menaxhimin e DNS-it? {#which-providers-support-dns-management}
 
 Menaxhimi i DNS (shtimi, redaktimi, fshirja e regjistrave) është i disponues me **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** dhe **Openprovider**. Domenet Hostinger mund të përditësojnë serverët e emrit (nameservers) përmes Domain Seller; regjistrat DNS për domenët e hostuar menaxhohen nga integrimi i bazës së Hostinger për mapimin e domenve. Domenet Namecheap, GoDaddy dhe NameSilo shfaqin statusin dhe informacionin e datës së skadimit, por DNS-i duhet të menaxhohet drejtpërdrejt në panelin e kontrollit të regjistrit.
 
-### Regjistrim i regjistrave DNS të paracaktuar
+### Regjistrim i regjistrave DNS të paracaktuar {#default-dns-records}
 
 Mund të konfigurosh regjistrat DNS të paracaktuar që aplikohen automatikisht kur një domene regjistrohet. Shko te **Settings › Domain Seller › Default DNS Records**.
 
@@ -116,6 +116,6 @@ Lloji: CNAME
 Emri: www.{DOMAIN}
 Vlera: {DOMAIN}
 
-### Administrator: shfaqja dhe redaktimi i DNS-it
+### Administrator: shfaqja dhe redaktimi i DNS-it {#admin-viewing-and-editing-dns}
 
 Administratorët e rrjetit mund të shohin dhe të redigjojnë regjistrat DNS për çdo domen klient nga faqja e redaktimit të domenit në **Network Admin › Ultimate Multisite › Domains**.

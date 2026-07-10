@@ -3,13 +3,13 @@ title: Whakarite i te Constant Sunrise ki te Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Whakaritenga i te constant Sunrise ki 'true' i te Closte
+# Whakaritenga i te constant Sunrise ki 'true' i te Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Kei ngā pūtaiao (host providers) mōhio, e whakawāke ana te wp-config.php mō āhuatanga āhuatanga me te whaiaro. He tino mea e hoki ai ki te Ultimate Multisite kia whakaaahi i te file akorua (file) ki te whai constants (constant) e pēnei i te domain mapping me ngā āhuatanga katoa kia maha atu. Ko Closte he pūtaiao mōhio.
 
 Engane, e hoatu ai Closte he wakamāhi mō te whai Constants ki te wp-config.php i rānga mārie. Ka taea e koe te whakamahi i ngā mahi i runga i te whakataunga (steps) i tēnei:
 
-## I te dashboard o te Closte
+## I te dashboard o te Closte {#on-the-closte-dashboard}
 
 I muri i, [whakawārie i tō account Closte](https://app.closte.com/), whakatipu i te menu Sites, ā, whakatipu i te link Dashboard ki te site i roto i roto i roto i te mahi i roto i.
 

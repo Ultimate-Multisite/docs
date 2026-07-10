@@ -3,15 +3,15 @@ title: Gids vir die Gebruik van Hooks
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Gebruiksgids vir Hooks
+# Gebruiksgids vir Hooks {#hooks-usage-guide}
 
 Ultimate Multisite bied meer as 200 aksie-hooks en meer as 280 filter-hooks. Hierdie bladsy dek die mees algemeen gebruikte hooks met praktiese voorbeelde. Vir 'n volledige outogegene verwysing, blaai na die ander bladsye in hierdie afdeling.
 
-## Aksie-Hooks
+## Aksie-Hooks {#action-hooks}
 
-### Klant Lewensiklus
+### Klant Lewensiklus {#customer-lifecycle}
 
-#### Na Klant Skep
+#### Na Klant Skep {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Klant Status Verandering
+#### Klant Status Verandering {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Webwerf Hooks
+### Webwerf Hooks {#site-hooks}
 
-#### Na Webwerf Gepubliseer
+#### Na Webwerf Gepubliseer {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Voor Sjabloon Toepassing
+#### Voor Sjabloon Toepassing {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Lidmaatskap Hooks
+### Lidmaatskap Hooks {#membership-hooks}
 
-#### Status Oorgange
+#### Status Oorgange {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Betaling Hooks
+### Betaling Hooks {#payment-hooks}
 
-#### Betaling Voltooi / Mislukte
+#### Betaling Voltooi / Mislukte {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### Voor Verwerking / Na Voltooiing
+#### Voor Verwerking / Na Voltooiing {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domein Hooks
+### Domein Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Prysing Filters
+### Prysing Filters {#pricing-filters}
 
-#### Winkelmand Totaal
+#### Winkelmand Totaal {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Belastingtariewe
+#### Belastingtariewe {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Sjabloon Filters
+### Sjabloon Filters {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Beperking Filters
+### Beperking Filters {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters
+### Gateway Filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout Form Veld
+### Checkout Form Veld {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### E-posadresinhoud
+### E-posadresinhoud {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

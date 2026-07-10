@@ -3,13 +3,13 @@ title: Field ng Checkout at DNS ng Customer
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pamamahala ng Field sa Checkout at DNS ng Customer
+# Pamamahala ng Field sa Checkout at DNS ng Customer {#checkout-field-and-customer-dns-management}
 
-## Ang field na Domain Selection
+## Ang field na Domain Selection {#the-domain-selection-checkout-field}
 
 Ang **Domain Selection** field ay isang elemento sa checkout na nagbibigay sa mga customer ng pagpipilian kung paano nila makukuha ang domain para sa kanilang site. Idagdag ito sa anumang checkout form para maging kaya itong magbenta ng domain.
 
-### Pagdaragdag ng field sa checkout form
+### Pagdaragdag ng field sa checkout form {#adding-the-field-to-a-checkout-form}
 
 1. Pumunta sa **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Buksan o gumawa ng isang checkout form
@@ -18,7 +18,7 @@ Ang **Domain Selection** field ay isang elemento sa checkout na nagbibigay sa mg
 5. I-configure ang mga opsyon ng field (tingnan sa ibaba)
 6. I-save ang form
 
-### Mga opsyon ng field
+### Mga opsyon ng field {#field-options}
 
 **Domain modes** — Pumili kung aling mga tab ang makikita ng customer. Ang bawat mode ay maaaring i-enable o i-disable nang hiwalay:
 
@@ -32,7 +32,7 @@ Ang **Domain Selection** field ay isang elemento sa checkout na nagbibigay sa mg
 
 **Domain product** — Opsyonal na i-pin (i-link) itong field sa isang partikular na domain product. Kung hindi itinakda, awtomatikong pipiliin ng addon ang katugmang produkto batay sa TLD na hinahanap ng customer.
 
-### Mga field para sa contact ng nagre-register
+### Mga field para sa contact ng nagre-register {#registrant-contact-fields}
 
 Kapag pinili ng customer ang tab na **Register New Domain**, magdaragdag ang checkout form ng mga field para sa contact ng nagre-register nang direkta:
 
@@ -43,11 +43,11 @@ Kapag pinili ng customer ang tab na **Register New Domain**, magdaragdag ang che
 
 Ito ay kinakailangan ng lahat ng registrar at binibigyang-valid bago gawin ang registration API call. Awtomatikong ini-format ang mga numero ng telepono sa internasyonal na format na `+CC.NNN` na inaasahan ng mga registrar.
 
-### Auto-generated site URL
+### Auto-generated site URL {#auto-generated-site-url}
 
 Kapag nagrehistro o nagmamapa ng domain ang isang customer, awtomatikong napopuno ang field na site URL mula sa napiling domain. Hindi kailangang punan ng mga customer ang hiwalay na field para sa URL.
 
-### Search behaviour
+### Search behaviour {#search-behaviour}
 
 - Ang availability ng domain ay sinusuri nang real-time gamit ang AJAX habang nagta-type ang customer
 - Ipinapakita ang mga alternatibong TLD suggestions kapag hindi available ang paboritong domain
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Pamamahala ng DNS ng Customer
+## Pamamahala ng DNS ng Customer {#customer-dns-management}
 
 Maaaring pamahalaan ng mga customer ang mga record sa DNS para sa kanilang mga nairehistrong domain mula sa pahinang **My Account**, sa ilalim ng entry ng kanilang domain.
 
-### Mga Sinusuportahang uri ng record
+### Mga Sinusuportahang uri ng record {#supported-record-types}
 
 | Uri | Paggamit |
 |---|---|
@@ -91,11 +91,11 @@ Maaaring pamahalaan ng mga customer ang mga record sa DNS para sa kanilang mga n
 | **MX** | Itakda ang mail exchange server |
 | **TXT** | Magdagdag ng SPF, DMARC, verification, o iba pang text records |
 
-### Aling mga provider ang sumusuporta sa DNS management?
+### Aling mga provider ang sumusuporta sa DNS management? {#which-providers-support-dns-management}
 
 Ang pamamahala ng DNS (pagdaragdag, pag-edit, pagtanggal ng mga record) ay available sa **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, at **Openprovider**. Ang mga domain ng **Hostinger** ay maaaring mag-update ng nameservers sa pamamagitan ng Domain Seller; ang DNS records para sa mga naka-host na domain ay pinamamahalaan ng core Hostinger domain-mapping integration. Ipinapakita ng Namecheap, GoDaddy, at NameSilo domains ang status at impormasyon tungkol sa expiry ngunit dapat pang pamahalaan nang direkta sa control panel ng registrar.
 
-### Default DNS records
+### Default DNS records {#default-dns-records}
 
 Maaari kang mag-configure ng default DNS records na awtomatikong ipapatupad kapag nagrehistro ng domain. Pumunta sa **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: pagtingin at pag-edit ng DNS
+### Admin: pagtingin at pag-edit ng DNS {#admin-viewing-and-editing-dns}
 
 Maaaring tingnan at i-edit ng mga network admin ang mga DNS record para sa anumang domain ng customer mula sa edit page ng domain sa **Network Admin › Ultimate Multisite › Domains**.

@@ -3,11 +3,11 @@ title: ਸਾਈਟ ਸਪੈਸੀਫਿਕੇਸ਼ਨ ਹੁਨਰ
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Specification Skill
+# Site Specification Skill {#site-specification-skill}
 
 **Site Specification skill** ek vyavasthit tareeka hai jisse aap apni site ke maqsad, audience, aur brand ki pehchaan (identity) ko capture karte hain. Yeh jaankari aapki **site_brief** memory mein store ki jaati hai, jisko agents alag-alag sessions mein istemaal karte hain taaki hamesha ek jaisi, sandarbh (context) samajh kar madad de saken.
 
-## Site Specification kya hai?
+## Site Specification kya hai? {#what-is-site-specification}
 
 Site Specification woh prakriya hai jismein in cheezon ko document kiya jaata hai:
 
@@ -19,9 +19,9 @@ Site Specification woh prakriya hai jismein in cheezon ko document kiya jaata ha
 
 Yeh specification aapki **site_brief** ban jaati hai, ek hamesha rehne wali memory jisko agents aapki site ka context samajhne ke liye istemaal karte hain.
 
-## Site Specification kyun istemaal karein?
+## Site Specification kyun istemaal karein? {#why-use-site-specification}
 
-### Sessions mein consistency
+### Sessions mein consistency {#consistency-across-sessions}
 
 site_brief ke bina, aapko har baar jab aap naya session shuru karenge, toh apni site ka maqsad dobara samjhana padega. site_brief ke saath, agents turant samajh jaate hain:
 
@@ -30,7 +30,7 @@ site_brief ke bina, aapko har baar jab aap naya session shuru karenge, toh apni 
 - Aapki content structure
 - Aapke business objectives
 
-### Behtar recommendations
+### Behtar recommendations {#better-recommendations}
 
 Agents aapki site_brief ka istemaal karke:
 
@@ -39,17 +39,17 @@ Agents aapki site_brief ka istemaal karke:
 - Aapke brand ke hisaab se design propose karte hain
 - Aise features suggest karne se bachate hain jo compatible na hon
 
-### Tez onboarding
+### Tez onboarding {#faster-onboarding}
 
 Naye agents (ya naye sessions mein agents) saaf karne waale sawal poochne ke bajaye, aapki site_brief padh kar jaldi se kaam karna seekh jaate hain.
 
-## Site Specification shuru karna
+## Site Specification shuru karna {#initiating-site-specification}
 
-### Theme Builder Onboarding ke dauran
+### Theme Builder Onboarding ke dauran {#during-theme-builder-onboarding}
 
 Site Specification skill **Theme Builder onboarding flow** ke dauran automatically shuru ho jaati hai. Setup Assistant agent sawal poochta hai aur aapki site_brief banata hai.
 
-### Manual Initiation
+### Manual Initiation {#manual-initiation}
 
 Aap kisi bhi samay Site Specification shuru kar sakte hain:
 
@@ -63,9 +63,9 @@ ya
 "Help me create a site brief"
 ```
 
-## The Site Specification Process
+## The Site Specification Process {#the-site-specification-process}
 
-### Step 1: Site Purpose
+### Step 1: Site Purpose {#step-1-site-purpose}
 
 Agent poochta hai:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Aap ek category select kar sakte hain ya apna maqsad bata sakte hain.
 
-### Step 2: Target Audience
+### Step 2: Target Audience {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Step 3: Brand Identity
+### Step 3: Brand Identity {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Step 4: Business Goals
+### Step 4: Business Goals {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Step 5: Content Structure
+### Step 5: Content Structure {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## Aapki site_brief Memory
+## Aapki site_brief Memory {#your-sitebrief-memory}
 
 Site Specification poora karne ke baad, aapki jaankari **site_brief** ke roop mein aapki agent memory mein store ho jaati hai. Yeh ek structured record hai jismein yeh cheezein hain:
 
@@ -169,9 +169,9 @@ Site Specification poora karne ke baad, aapki jaankari **site_brief** ke roop me
 }
 ```
 
-## site_brief dekhna aur update karna
+## site_brief dekhna aur update karna {#viewing-and-updating-your-sitebrief}
 
-### Apni site_brief dekhna
+### Apni site_brief dekhna {#view-your-sitebrief}
 
 Agent se poochiye:
 
@@ -187,7 +187,7 @@ ya
 
 Agent aapki store specification dikhayega.
 
-### Apni site_brief update karna
+### Apni site_brief update karna {#update-your-sitebrief}
 
 Agar aapki site badalti hai, toh aap ise update kar sakte hain:
 
@@ -203,9 +203,9 @@ ya
 
 Yeh aapki maujooda jaankari ko starting point maan kar Site Specification skill ko dobara chalayega.
 
-## Agents site_brief ka istemaal kaise karte hain
+## Agents site_brief ka istemaal kaise karte hain {#how-agents-use-sitebrief}
 
-### Design Recommendations
+### Design Recommendations {#design-recommendations}
 
 Jab aap design mein badlav ke liye poochte hain, toh agents aapki site_brief ka reference lete hain:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Feature Suggestions
+### Feature Suggestions {#feature-suggestions}
 
 Agents aapke goals ke hisaab se features suggest karte hain:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Content Structure
+### Content Structure {#content-structure}
 
 Agents aapki structure ke aadhar par content organization propose karte hain:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Specific rahein
+### Specific rahein {#be-specific}
 
 "general audience" ke bajaye, apne asli audience ka varnan karein:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### Niyamit roop se update karein
+### Niyamit roop se update karein {#update-regularly}
 
 Jaise-jaise aapki site badalti hai, apni site_brief update karte rahein:
 
@@ -256,14 +256,14 @@ Jaise-jaise aapki site badalti hai, apni site_brief update karte rahein:
 - Jab aapki brand identity badalti hai
 - Jab aapke business goals badalte hain
 
-### Consistent terminology istemaal karein
+### Consistent terminology istemaal karein {#use-consistent-terminology}
 
 Sessions mein same terms ka istemaal karein:
 
 - ✓ Hamesha "sustainable jewelry" kahein (na ki "eco-friendly jewelry" aur "green products")
 - ✓ Apne audience ko hamesha ek hi tarah se refer karein
 
-### Context shamil karein
+### Context shamil karein {#include-context}
 
 Aisi background jaankari dein jo agents ko aapke decisions samajhne mein madad kare:
 
@@ -271,7 +271,7 @@ Aisi background jaankari dein jo agents ko aapke decisions samajhne mein madad k
 - "Our audience is tech-savvy and expects modern design"
 - "We're a bootstrapped startup, so we need cost-effective solutions"
 
-## Theme Builder Onboarding se sambandh
+## Theme Builder Onboarding se sambandh {#relationship-to-theme-builder-onboarding}
 
 Site Specification skill **Theme Builder onboarding flow** mein integrate hai. Jab aap onboarding poora karte hain, toh aapki di gayi jaankari se aapki site_brief automatically ban jaati hai.
 
@@ -281,7 +281,7 @@ Agar aap chahte hain toh aap Site Specification ko alag se bhi chala sakte hain:
 - Jaise-jaise aapki site badalti hai, apni site brief update karne ke liye
 - Theme Builder shuru karne se pehle ek detailed specification banane ke liye
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Mera site_brief istemaal nahi ho raha**
 - Confirm karein ki agent ke paas memory access hai
@@ -297,7 +297,7 @@ Agar aap chahte hain toh aap Site Specification ko alag se bhi chala sakte hain:
 - Agar yeh purana hai toh apni site_brief update karein
 - Apne requests mein additional context dein
 
-## Next Steps
+## Next Steps {#next-steps}
 
 Apni site specification define karne ke baad:
 

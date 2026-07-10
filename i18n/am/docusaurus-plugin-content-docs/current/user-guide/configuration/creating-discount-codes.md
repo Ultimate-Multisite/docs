@@ -3,13 +3,13 @@ title: የቅናሽ ኮዶችን መፍጠር
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# የቅናሽ ኮዶችን መፍጠር (v2)
+# የቅናሽ ኮዶችን መፍጠር (v2) {#creating-discount-codes-v2}
 
 _**ጠቃሚ ማስታወሻ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 
 በUltimate Multisite አማካኝነት ለደንበኞችዎ የደንበኝነት ምዝገባ ላይ ቅናሽ ለመስጠት የቅናሽ ኮዶችን መፍጠር ይችላሉ። እናም መፍጠር በጣም ቀላል ነው!
 
-## የቅናሽ ኮዶችን መፍጠር እና ማርትዕ
+## የቅናሽ ኮዶችን መፍጠር እና ማርትዕ {#creating-and-editing-discount-codes}
 
 የቅናሽ ኮድ ለመፍጠር ወይም ለማርትዕ፣ ወደ **Ultimate Multisite > Discount Codes** ይሂዱ።
 
@@ -87,7 +87,7 @@ _**ጠቃሚ ማስታወሻ፡ ይህ ጽሑፍ የሚያመለክተው Ultima
 
 ###
 
-### URL Parametersን መጠቀም:
+### URL Parametersን መጠቀም: {#using-url-parameters}
 
 የዋጋ ሰንጠረዡዎን ማበጀት ወይም ለድረ-ገጽዎ የሚያምር የኩፖን ኮድ ገጽ መገንባት ከፈለጉ እና የቅናሽ ኮድዎን በቼክአውት ፎርም ላይ በራስ-ሰር ተግባራዊ ማድረግ ከፈለጉ፣ ይህንን በURL parameters አማካኝነት ማድረግ ይችላሉ።
 

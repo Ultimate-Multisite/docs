@@ -3,17 +3,17 @@ title: WP Engine אינטגרציה
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# אינטגרציה עם WP Engine
+# אינטגרציה עם WP Engine {#wp-engine-integration}
 
-## סקירה כללית
+## סקירה כללית {#overview}
 WP Engine היא פלטפורמת אירוח מנוהל פרימיום ל-WordPress, המספקת ביצועים מותאמים, אבטחה ויכולת התרחבות לאתרי WordPress. אינטגרציה זו מאפשרת סנכרון אוטומטי של דומיינים בין Ultimate Multisite ל-WP Engine.
 
-## תכונות
+## תכונות {#features}
 - סנכרון דומיינים אוטומטי
 - תמיכה בתת-דומיינים להתקנות multisite
 - אינטגרציה חלקה עם המערכות הקיימות של WP Engine
 
-## דרישות
+## דרישות {#requirements}
 האינטגרציה מזהה אוטומטית אם האתר שלכם מתארח ב-WP Engine ומשתמשת ב-API המובנה של WP Engine. אין צורך בהגדרות נוספות אם התוסף של WP Engine פעיל ומוגדר כראוי.
 
 עם זאת, אם תרצו להגדיר את האינטגרציה באופן ידני, תוכלו להגדיר אחד מהקבועים הבאים בקובץ ה-`wp-config.php` שלכם:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // השיטה המועדפת
 define('WPE_API', 'your_api_key'); // שיטה חלופית
 ```
 
-## הוראות הגדרה
+## הוראות הגדרה {#setup-instructions}
 
-### 1. אימות התוסף של WP Engine
+### 1. אימות התוסף של WP Engine {#1-verify-wp-engine-plugin}
 
 אם האתר שלכם מתארח ב-WP Engine, התוסף של WP Engine אמור להיות כבר מותקן ומופעל. ודאו ש:
 
 1. התוסף של WP Engine פעיל
 2. הקובץ `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` קיים
 
-### 2. הפעלת האינטגרציה
+### 2. הפעלת האינטגרציה {#2-enable-the-integration}
 
 1. באזור הניהול של WordPress, עברו אל Ultimate Multisite > Settings
 2. נווטו ללשונית "Domain Mapping"
@@ -41,9 +41,9 @@ define('WPE_API', 'your_api_key'); // שיטה חלופית
 4. הפעילו את האינטגרציה עם WP Engine
 5. לחצו על "Save Changes"
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
-### סנכרון דומיינים
+### סנכרון דומיינים {#domain-syncing}
 
 כאשר דומיין ממופה ב-Ultimate Multisite:
 
@@ -51,7 +51,7 @@ define('WPE_API', 'your_api_key'); // שיטה חלופית
 2. WP Engine מטפל בהגדרות הדומיין ובהנפקת תעודת SSL
 3. כאשר מיפוי דומיין מוסר, האינטגרציה תסיר את הדומיין מ-WP Engine
 
-### תמיכה בתת-דומיינים
+### תמיכה בתת-דומיינים {#subdomain-support}
 
 עבור התקנות multisite מבוססות תת-דומיינים:
 
@@ -59,28 +59,28 @@ define('WPE_API', 'your_api_key'); // שיטה חלופית
 2. WP Engine מטפל בהגדרות תת-הדומיין
 3. כאשר אתר נמחק, האינטגרציה תסיר את תת-הדומיין מ-WP Engine
 
-## הערות חשובות
+## הערות חשובות {#important-notes}
 
-### דומיינים עם Wildcard
+### דומיינים עם Wildcard {#wildcard-domains}
 
 עבור התקנות multisite מבוססות תת-דומיינים, מומלץ לפנות לתמיכה של WP Engine ולבקש הגדרת wildcard domain. זה מאפשר לכל תתי-הדומיינים לפעול אוטומטית ללא צורך להוסיף כל אחד מהם בנפרד.
 
-### תעודות SSL
+### תעודות SSL {#ssl-certificates}
 
 WP Engine מטפל אוטומטית בהנפקה ובחידוש של תעודות SSL עבור כל הדומיינים שנוספים דרך אינטגרציה זו. אין צורך בהגדרות נוספות.
 
-## פתרון בעיות
+## פתרון בעיות {#troubleshooting}
 
-### בעיות חיבור ל-API
+### בעיות חיבור ל-API {#api-connection-issues}
 - ודאו שהתוסף של WP Engine פעיל ומוגדר כראוי
 - אם הגדרתם את מפתח ה-API באופן ידני, בדקו שהוא נכון
 - פנו לתמיכה של WP Engine אם יש לכם בעיות עם ה-API
 
-### הדומיין לא נוסף
+### הדומיין לא נוסף {#domain-not-added}
 - בדקו את הלוגים של Ultimate Multisite לאיתור הודעות שגיאה
 - ודאו שהדומיין לא נוסף כבר ל-WP Engine
 - ודאו שתוכנית ה-WP Engine שלכם תומכת במספר הדומיינים שאתם מוסיפים
 
-### בעיות עם תת-דומיינים
+### בעיות עם תת-דומיינים {#subdomain-issues}
 - אם תתי-דומיינים לא עובדים, פנו לתמיכה של WP Engine ובקשו הגדרת wildcard domain
 - ודאו שהגדרות ה-DNS מוגדרות נכון עבור הדומיין הראשי ותתי-הדומיינים

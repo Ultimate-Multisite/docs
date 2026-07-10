@@ -3,17 +3,17 @@ title: Xuất và Nhập
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ (Export & Import)
+# ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ (Export & Import) {#export--import}
 
 Ultimate Multisite 2.9.0 ເພີ່ມເຄື່ອງມື **Export & Import** (ດຶງຂໍ້ມູນອອກ ແລະ ນຳເຂົ້າ) ໜຶ່ງຊຸດຢູ່ພາຍໃຕ້ເມນູ **Tools > Export & Import**. ໃຊ້ເຄື່ອງມືນີ້ເວລາທີ່ທ່ານຕ້ອງການເກັບໂຄງການ WordPress site ດຽວເປັນໄຟລ໌ ZIP, ກູ້ຄືນໄຟລ໌ ZIP ນັ້ນ, ຫຼື ຍ້າຍ site ລະຫວ່າງການຕິດຕັ້ງ Ultimate Multisite ແລະ single-site WordPress ທີ່ເຂົ້າກັນໄດ້.
 
-## ສິດທິທີ່ຕ້ອງການ (Required permissions)
+## ສິດທິທີ່ຕ້ອງການ (Required permissions) {#required-permissions}
 
 ທ່ານຕ້ອງເຂົ້າສູ່ລະບົບໃນຖານະຜູ້ບໍລິຫານ (administrator) ທີ່ມີສິດເຂົ້າເຖິງເມນູ **Tools** ໃນເວັບໄຊທີ່ກຳລັງຈະດຶງຂໍ້ມູນອອກ ຫຼື ນຳເຂົ້າ. ໃນເຄືອຂ່າຍ multisite, ໃຫ້ໃຊ້ບັນຊີຜູ້ບໍລິຫານຂອງເຄືອຂ່າຍ ເມື່ອດຶງຂໍ້ມູນອອກ ຫຼື ນຳເຂົ້າ subsites ຈາກເຄື່ອງມື Ultimate Multisite ໃນລະດັບເຄືອຂ່າຍ.
 
 ການດາວໂຫຼດ ZIP ທີ່ດຶງຂໍ້ມູນອອກຈະຖືກສະໜອງຜ່ານ endpoint ການດາວໂຫຼດທີ່ມີການຢັ້ງຢືນ (authenticated download endpoint), ສະນັ້ນຄວນຮັກສາ session ຂອງ admin ໃຫ້ເປີດຢູ່ຈົນກວ່າການດາວໂຫຼດຈະສຳເລັດ ແລະ ຫ້າມແບ່ງປັນ URL ການດາວໂຫຼດທີ່ສ້າງຂຶ້ນອອກໄປໃນທີ່ສາທາລະນະ.
 
-## ການດຶງຂໍ້ມູນ site ໄປເປັນ ZIP (Exporting a site to a ZIP)
+## ການດຶງຂໍ້ມູນ site ໄປເປັນ ZIP (Exporting a site to a ZIP) {#exporting-a-site-to-a-zip}
 
 1. ໃນ WordPress admin ຂອງ site ທີ່ທ່ານຕ້ອງການຄັດລອກ, ໃຫ້ໄປທີ່ **Tools > Export & Import**.
 2. ເປີດພື້ນທີ່ດຶງຂໍ້ມູນອອກ ແລະ ເລືອກ site ທີ່ທ່ານຕ້ອງການເກັບໄວ້ໃນໄຟລ໌.
@@ -23,7 +23,7 @@ Ultimate Multisite 2.9.0 ເພີ່ມເຄື່ອງມື **Export & Impo
 
 ຄວນເກັບໄຟລ໌ ZIP ນັ້ນໄວ້ໃນຕຳແໜ່ງທີ່ປອດໄພ. ມັນອາດຈະມີເນື້ອຫາຂອງ site, ການຕັ້ງຄ່າ (settings), ໄຟລ໌ media, ແລະ ຊຸດ code ທີ່ເລືອກໄວ້.
 
-## ສິ່ງທີ່ການດຶງຂໍ້ມູນອອກເກັບໄວ້ (What the export includes)
+## ສິ່ງທີ່ການດຶງຂໍ້ມູນອອກເກັບໄວ້ (What the export includes) {#what-the-export-includes}
 
 ໄຟລ໌ ZIP ທີ່ດຶງຂໍ້ມູນອອກສາມາດມີສິ່ງເຫຼົ່ານີ້ໄດ້:
 
@@ -34,7 +34,7 @@ Ultimate Multisite 2.9.0 ເພີ່ມເຄື່ອງມື **Export & Impo
 
 ขนาดไฟล์ ZIP ที่แน่นอนจะขึ้นอยู่กับปริมาณสื่อ (media), ปลั๊กอินและธีมที่เลือก รวมถึงขนาดของตารางฐานข้อมูลของเว็บไซต์ด้วย
 
-## การนำเข้าเว็บไซต์จากไฟล์ ZIP
+## การนำเข้าเว็บไซต์จากไฟล์ ZIP {#importing-a-site-from-a-zip}
 
 1. ไปที่ **Tools > Export & Import** บนเว็บไซต์ WordPress ปลายทางของคุณ
 2. เปิดพื้นที่สำหรับนำเข้า และอัปโหลดไฟล์ ZIP ที่สร้างโดยเครื่องมือ Export & Import

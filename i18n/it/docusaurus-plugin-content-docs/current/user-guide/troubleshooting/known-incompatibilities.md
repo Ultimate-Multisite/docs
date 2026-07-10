@@ -3,7 +3,7 @@ title: Incompatibilità note
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Conflitti noti con altri plugin
+# Conflitti noti con altri plugin {#known-incompatibilities-with-other-plugins}
 
 Dopo aver installato e attivato Ultimate Multisite, potresti riscontrare problemi a causa di incompatibilità non risolte con altri plugin.
 

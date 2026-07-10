@@ -3,7 +3,7 @@ title: Abubuwan da ake sanin ba su dacewa
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Takattunawa da wasu shawarwari tare da Addon Plugins
+# Takattunawa da wasu shawarwari tare da Addon Plugins {#known-incompatibilities-with-other-plugins}
 
 Bayan da ka yi amfani da Ultimate Multisite kuma ka sake aiki (activate), yana iya samun matsala saboda akwai wata takamaiman abubuwa da ba a magance su da wasu add-on plugins.
 

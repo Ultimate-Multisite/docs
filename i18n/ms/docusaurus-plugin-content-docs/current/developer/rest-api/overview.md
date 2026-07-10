@@ -1,53 +1,53 @@
 ---
 title: Gambaran Keseluruhan REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Rujukan REST API
+# Rujukan REST API {#rest-api-reference}
 
-## Konfigurasi Asas
+## Konfigurasi Asas {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Pengesahan (Authentication):** API Key & Secret (HTTP Basic Auth atau URL Parameters)
+**URL Asas:** `{site_url}/wp-json/wu/v2/`
+**Pengesahan:** Kunci API & Rahsia (HTTP Basic Auth atau Parameter URL)
 
-## Pengesahan
+## Pengesahan {#authentication}
 
-### Aktifkan API
+### Dayakan API {#enable-api}
 ```php
-// Aktifkan API dalam tetapan Ultimate Multisite atau secara programatik
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Dapatkan Kredensial API
+### Dapatkan Kredensial API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Kaedah Pengesahan
+### Kaedah Pengesahan {#authentication-methods}
 
 **HTTP Basic Auth (Disyorkan):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**Parameter URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoint Utama
+## Titik Akhir Teras {#core-endpoints}
 
-### 1. Customers API
+### 1. API Pelanggan {#1-customers-api}
 
-**Base Route:** `/customers`
+**Laluan Asas:** `/customers`
 
 **Dapatkan Semua Pelanggan**
 ```http
 GET /wu/v2/customers
 ```
 
-**Dapatkan Pelanggan Tunggal**
+**Dapatkan Satu Pelanggan**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Nota pelanggan VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. API Tapak {#2-sites-api}
 
-**Base Route:** `/sites`
+**Laluan Asas:** `/sites`
 
-**Cipta Tapak (Site)**
+**Cipta Tapak**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Tapak Saya Yang Baru",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Memberships API
+### 3. API Keahlian {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**Laluan Asas:** `/memberships`
 
-**Cipta Keahlian (Membership)**
+**Cipta Keahlian**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. API Produk {#4-products-api}
 
-**Base Route:** `/products`
+**Laluan Asas:** `/products`
 
 **Dapatkan Semua Produk**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. API Pembayaran {#5-payments-api}
 
-**Base Route:** `/payments`
+**Laluan Asas:** `/payments`
 
 **Cipta Pembayaran**
 ```http
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. API Domain {#6-domains-api}
 
-**Base Route:** `/domains`
+**Laluan Asas:** `/domains`
 
-**Memetakan Domain**
+**Petakan Domain**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Pendaftaran
+## Titik Akhir Pendaftaran {#registration-endpoint}
 
-Endpoint `/register` menyediakan aliran checkout/pendaftaran yang lengkap:
+Titik akhir `/register` menyediakan aliran pembayaran/pendaftaran yang lengkap:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Tapak Saya Yang Baru",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Respons Ralat
+## Titik Akhir Penyewa Berdaulat {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 menambah liputan REST penyewa berdaulat untuk integrasi yang menyediakan, memeriksa, atau mengesahkan penyewa terpencil.
+
+Payload permintaan yang tepat bergantung pada keupayaan hos yang didayakan, tetapi integrasi harus menjangkakan kumpulan titik akhir ini:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Gunakan titik akhir bootstrap untuk menyediakan pendaftaran penyewa, database, sistem fail, dan keadaan penghalaan. Gunakan titik akhir status migrasi dan pengesahan sebelum menukar trafik produksi. Gunakan titik akhir pemadaman untuk pembongkaran berdaulat supaya kredensial database dialih keluar melalui aliran pembersihan addon.
+
+Respons status migrasi biasa termasuk:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Anggap `ready: false` sebagai penyekat pra-pelancaran. Semak butiran pengesahan, baiki pengikatan hos database, baris gilir, penyediaan pengguna, atau isu penghalaan, kemudian cuba semula pengesahan.
+
+## Respons Ralat {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Nilai parameter tidak sah",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Format emel tidak sah"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginasi dan Penapisan
+## Penomboran dan Penapisan {#pagination-and-filtering}
 
-**Query Parameters:**
+**Parameter Pertanyaan:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Parameter biasa:
-- `per_page` - Bilangan item per halaman (lalai: 20, maks: 100)
+- `per_page` - Item setiap halaman (lalai: 20, maks: 100)
 - `page` - Nombor halaman
 - `search` - Istilah carian
-- `orderby` - Medan pengisihan
-- `order` - Arah pengisihan (asc/desc)
-- `status` - Menapis mengikut status
-- `date_created` - Menapis mengikut julat tarikh
+- `orderby` - Medan isihan
+- `order` - Arah isihan (asc/desc)
+- `status` - Tapis mengikut status
+- `date_created` - Tapis mengikut julat tarikh

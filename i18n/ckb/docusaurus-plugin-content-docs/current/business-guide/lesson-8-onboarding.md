@@ -3,15 +3,15 @@ title: 'بۆژمێر ٨: گەیشتنەوەی کڕیارەکان'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# سبق ٨: سەرپەرۆشکردنی کڕیارەکان
+# سبق ٨: سەرپەرۆشکردنی کڕیارەکان {#lesson-8-customer-onboarding}
 
 هاتوانین کڕیاریەک بۆ تۆمارکردن دابین کردوونی تەنها یارمەتییەکی پاره. ئەگەر ئەو دەتوانێت خۆی بانگ بکات، هەست بە زۆر و خەمۆشی دەکات و هەرگیز بیرت نێتەوە، ئەوا لەدەست دەدەیت. ئەم وانەیە ئەزموونەکە دیزاین دەکات کە نوێبوونەت بۆ کڕیارێکی چالاک و سەرنجڕاکێش دەگۆڕێت.
 
-## لە کوێدا لەوێ بوومە
+## لە کوێدا لەوێ بوومە {#where-we-left-off}
 
 FitSite بە تەواوی براندکردنراوە و ڕێڕەشی پۆلسی (checkout flow) کاردەکات. ئێستا بیرمان دەکەین چی ڕوودەدات دوای ئەوەی خاوەن ستۆدیۆیەکی فیتنس تۆمار دەکات و بۆ یەکەم جار لەسەر سایتەکەی دەچێت.
 
-## بۆچی سەرپەرۆشکردن گرنگە
+## بۆچی سەرپەرۆشکردن گرنگە {#why-onboarding-matters}
 
 ٣٠ خولەک لە دوای تۆمارکردن دیار دەکات کە کڕیارەکە دەمێنێتەوە یان لەدەست دەدات. خاوەن ستۆدیۆیەکی فیتنس کە:
 
@@ -21,9 +21,9 @@ FitSite بە تەواوی براندکردنراوە و ڕێڕەشی پۆلسی 
 
 دەرمەچەکانی تایبەت بە تۆ (وانەی وانەی ٤) کار دەکەن لەسەر یەکەم خاڵەکە. ئەم وانەیە لەسەر دووەم کار دەکات.
 
-## ئەزموونی یەکەم بانگکردنەوە
+## ئەزموونی یەکەم بانگکردنەوە {#the-first-login-experience}
 
-### وێجتەری داش보ار بۆ بەخێربانکردن (Welcome Dashboard Widget)
+### وێجتەری داش보ار بۆ بەخێربانکردن (Welcome Dashboard Widget) {#welcome-dashboard-widget}
 
 یەکەیەک وێجتەری تایبەت بە داش보ار دروست بکە کە کڕیارانی نوێ بەخێربکە و ڕێنمایی پێدات لەسەر سیستەمەکە. ئەمە دەبێت بە ڕوونی دەردەکەوێت کاتێک یەکەم جار بانگ دەکاتەوە.
 
@@ -76,11 +76,11 @@ FitSite بە تەواوی براندکردنراوە و ڕێڕەشی پۆلسی 
 Utilisez des [Webhooks](/user-guide/integrations/webhooks) ou [Zapier](/user-guide/integrations/zapier) pour déclencher ces e-mails via votre plateforme de marketing par e-mail. Cela vous donne plus de contrôle sur le moment et vous permet de suivre l'engagement.
 :::
 
-## Ressources d'aide
+## Ressources d'aide {#simplify-the-dashboard}
 
 Créez du contenu d'aide spécifique à une niche qui répond aux questions réelles des propriétaires de studios de fitness :
 
-### Articles de la base de connaissances (Knowledge Base)
+### Articles de la base de connaissances (Knowledge Base) {#welcome-email-sequence}
 
 - "Comment mettre à jour votre horaire de cours"
 - "Ajouter et modifier les profils des entraîneurs"
@@ -90,7 +90,7 @@ Créez du contenu d'aide spécifique à une niche qui répond aux questions rée
 
 Rédigez ces articles pour les utilisateurs non techniques. Utilisez des captures d'écran. Évitez le jargon WordPress.
 
-### Tutoriels vidéo
+### Tutoriels vidéo {#email-1-welcome-immediately-after-signup}
 
 Enregistrements d'écran courts (2-3 minutes) montrant :
 
@@ -101,7 +101,7 @@ Enregistrements d'écran courts (2-3 minutes) montrant :
 
 Ces vidéos n'ont pas besoin d'être des productions léchées. Ce qui compte, c'est que ce soit clair, utile et spécifique à votre niche.
 
-## La page Compte (Account Page)
+## La page Compte (Account Page) {#email-2-quick-wins-day-1}
 
 Ultimate Multisite inclut une [Page Compte](/user-guide/client-management/account-page) destinée aux clients où ils gèrent leur abonnement. Personnalisez celle-ci pour :
 
@@ -110,7 +110,7 @@ Ultimate Multisite inclut une [Page Compte](/user-guide/client-management/accoun
 - مێژووی بڕین و دابەزاندنی فاکچورەکان و دۆڵێنانی فاکچورەکان پێشکەش بکە
 - لینک بۆ سەرچاوەکانی یارمەتی بدات
 
-## پێواندن سەرکەوتنی دەستپێکردن (Onboarding Success)
+## پێواندن سەرکەوتنی دەستپێکردن (Onboarding Success) {#email-3-make-it-yours-day-3}
 
 ئەم ئاماژانە بەدوای چاودێرییان بگرە بۆ ئەوەی بزانین کە دەستپێکردنتان کار دەکات یان نا.
 
@@ -119,7 +119,7 @@ Ultimate Multisite inclut une [Page Compte](/user-guide/client-management/accoun
 - **تیکەتەکانی پشتیوانی لە کڕیارە نوێکان**: کۆی زۆر ئاماژەیە بۆ ئەوەی دەستپێکردنتان بە شێوەیەکی باش نییە و پاشکۆشەیەک پێویستە.
 - **گواستنەوە لە تریال بۆ پارەدان (Trial-to-paid conversion)**: ئەگەر تریال دەدات، چۆن ڕێژەیەکی دیاریکراو دەکات بە پارەدان؟
 
-## تۆڕی FitSite تا ئێستا چی دروست کردووە
+## تۆڕی FitSite تا ئێستا چی دروست کردووە {#email-4-go-live-day-7}
 
 ```
 تۆڕی FitSite
@@ -140,7 +140,7 @@ Ultimate Multisite inclut une [Page Compte](/user-guide/client-management/accoun
 └── Ready for pricing strategy (داواکاریی پڕۆژە دوای ئەم وانەیە)
 ```
 
-## چی دروست کردین لەم وانەیەدا
+## چی دروست کردین لەم وانەیەدا {#help-resources}
 
 - **تجربە سەرەتایی بانگەواکراو بۆ یەکەم بانکی** لەگەڵ وێجێتی Quick Start
 - **داشبۆردێکی سادەتر** کە تەنها کارەکانی بەڕێوەبردنی سایت فیتنسەکە دیاری دەکات

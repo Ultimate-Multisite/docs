@@ -4,7 +4,7 @@ title: Filter - wu_ses_verification_integration
 sidebar_label: wu_ses_verification_integration
 _i18n_hash: 27c3b330dc77b62650dee7345dcec26c
 ---
-# Filter: wu_ses_verification_integration
+# Filter: wu_ses_verification_integration {#filter-wusesverificationintegration}
 
 Filter: memungkinkan kode lain untuk menyediakan objek integrasi SES.
 
@@ -13,15 +13,15 @@ Objek yang dikembalikan harus mengimplementasikan:
 - `check_domain_verification(string $domain): array\{verified: bool\}\|WP_Error`
 - `delete_identity(string $domain): true\|WP_Error`
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
 | $integration | `object\|null` | Objek integrasi SES, atau null. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.2.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L731) pada baris 731

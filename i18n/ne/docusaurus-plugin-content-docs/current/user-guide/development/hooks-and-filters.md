@@ -3,7 +3,7 @@ title: हुक्स र फिल्टरहरू
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisiteका हुकहरू र फिल्टरहरू
+# Ultimate Multisiteका हुकहरू र फिल्टरहरू {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite धेरै प्रकारका फंक्सन र डेटाबेस क्वेरीहरूको समूह हो। यसमा यस्ता 'हुक' (hooks) र 'फिल्टर' (filters)हरू छन् जसले तपाईंलाई पहिले नै भएका फंक्सनहरूलाई परिवर्तन गर्न वा नयाँ कोड थप्न मद्दत गर्छन्।
 

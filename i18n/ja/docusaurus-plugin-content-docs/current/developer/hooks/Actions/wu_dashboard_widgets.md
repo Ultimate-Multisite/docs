@@ -4,11 +4,11 @@ title: アクション - wu_dashboard_widgets
 sidebar_label: wu_dashboard_widgets
 _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 ---
-# アクション: wu_dashboard_widgets
+# アクション: wu_dashboard_widgets {#action-wudashboardwidgets}
 
 プラグイン開発者がネットワークダッシュボードパネルにウィジェットを追加できるようにします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|------|
@@ -16,10 +16,10 @@ _i18n_hash: 35b6cf5a0b5c24e4378f239bc548c44c
 | $screen | `\WP_Screen` | スクリーンオブジェクトです。 |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | Ultimate Multisite 管理ページインスタンスです。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 定義されている [`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L225) は 225 行目にあります。

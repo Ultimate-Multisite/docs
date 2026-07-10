@@ -1,112 +1,120 @@
 ---
 title: 稅務處理
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 稅務處理
+# 稅務處理 {#tax-handling}
 
-Ultimate Multisite 在核心外掛中內建了稅務收取模組，如果您需要對方案、套裝和服務收取銷售稅，可以輕鬆完成，無需安裝任何額外附加元件。
+Ultimate Multisite 在我們的核心 plugin 中內建了稅務收取模組，因此如果你需要對你的方案、套裝與服務收取銷售稅，可以輕鬆做到，而不需要安裝任何 add-ons。
 
-針對位於歐洲的公司，我們提供一個**附加元件**，新增工具和功能以更好地**支援 VAT** 合規要求。
+對於位於歐洲的公司，我們提供一個 **add-on**，加入工具與功能，以更好地**支援 VAT** 合規。
 
-Ultimate Multisite 不會代您向政府申報或繳納稅款；我們只是協助您在交易時收取適當的稅款。**您仍需自行繳納稅款。**
+Ultimate Multisite 不會代表你向政府申報或繳納稅款；我們只是協助你在交易時收取適當的稅款。**你仍然需要自行繳納稅款。**
 
-## 啟用稅務收取
+## 啟用稅務收取 {#enabling-tax-collection}
 
-稅務收取功能預設為停用。若要啟用，請前往 **Ultimate Multisite > Settings > Taxes**，然後切換開啟「Enable Taxes」設定。
+稅務收取預設未啟用。若要啟用，你需要前往 **Ultimate Multisite > Settings > Taxes**，並切換以啟用 Enable Taxes 設定。
 
-![稅務設定中的 Enable Taxes 切換開關](/img/config/settings-taxes.png)
+![稅務設定頁面頂部的 Enable Taxes 切換](/img/config/settings-taxes-enable.png)
 
-### 稅外加 vs. 稅內含
+以下是稅務設定頁面的完整檢視：
 
-預設情況下，您的所有產品價格皆為稅外加，代表稅款**未包含**在產品價格中。如果我們判斷客戶在特定購買時需要支付稅款，我們會將稅款**加到**小計金額之上。
+![稅務設定完整頁面](/img/config/settings-taxes-full.png)
 
-如果您希望將稅款包含在產品價格中，可以啟用 **Inclusive Tax** 設定。
+你也可以檢視個別產品的稅務設定：
 
-![Inclusive Tax 設定切換開關](/img/config/settings-taxes.png)
+![產品的稅務設定](/img/config/settings-taxes.png)
 
-別忘了**儲存**您所做的變更。
+### 未含稅與含稅 {#tax-excluded-vs-tax-included}
 
-### 
+預設情況下，你所有產品價格都是未含稅，這表示稅款**不包含**在產品價格中。如果我們判定某位客戶應該為某筆購買支付稅款，我們會在小計**之上**加上稅款。
 
-## 建立稅率
+如果你偏好將稅款包含在產品價格中，可以啟用 **Inclusive Tax** 設定來做到。
 
-啟用稅務收取後，您需要使用我們的稅率編輯器為特定地區建立稅率。
+![Enable Taxes 設定下方的 Inclusive Tax 切換列](/img/config/settings-taxes-inclusive.png)
 
-您可以點擊稅務設定頁面側邊欄上的 **Manage Tax Rates** 按鈕來存取編輯器。
+別忘了**儲存**你所做的變更。
 
-![側邊欄上的 Manage Tax Rates 按鈕](/img/config/settings-taxes.png)
+###
 
-在稅率編輯器頁面，您可以點擊 **Add new Row** 按鈕來新增稅率。
+## 建立稅率 {#creating-tax-rates}
 
-![稅率編輯器與 Add new Row 按鈕](/img/config/settings-taxes.png)
+啟用稅務收取後，你需要使用我們的稅率編輯器為特定地點建立稅率。
 
-您需要為每個稅率指定一個**名稱**（用於發票）。然後您可以選擇將收取此稅款的**國家**（必填）、**州/省**和**城市**（兩者皆為選填）。最後，輸入**百分比稅率**。
+你可以在稅務設定頁面側邊欄點擊 **Manage Tax Rates** 按鈕來存取編輯器。
 
-### 稅務類別
+![設定頁面 Tax Rates 面板中的 Manage Tax Rates 連結](/img/config/settings-taxes-manage-rates.png)
 
-您也可以建立多個稅務類別，為不同類型的產品設定不同的稅率。
+在稅率編輯器頁面，你可以點擊 **Add new Row** 按鈕來新增 Tax Rates。
 
-點擊 **Add new Tax Category**，然後輸入類別名稱並按下 **Create**。
+![頂部有 Add new Row 按鈕的稅率編輯器表格](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category 按鈕](/img/config/settings-taxes.png)
+你需要為每個稅率提供一個**標題**（用於發票）。接著你可以選擇將收取此稅的**國家**（必填）、**州/省，**以及**城市**（兩者皆為選填）。最後，加入**百分比稅率**。
 
-![建立新的稅務類別](/img/config/settings-taxes.png)
+### 稅務類別 {#tax-categories}
 
-若要瀏覽各個類別，請點擊 **Switch** 並選擇您要新增稅率的類別。
+你也可以建立多個稅務類別，以便為不同種類的產品加入不同稅率。
 
-![在稅務類別之間切換](/img/config/settings-taxes.png)
+點擊 **Add new Tax Category**，然後輸入你的類別名稱並按下 **Create**。
 
-![選擇要檢視的稅務類別](/img/config/settings-taxes.png)
+![稅率編輯器頂部的 Add new Tax Category 按鈕](/img/config/tax-categories-add.png)
 
-您可以前往**產品編輯頁面**，然後切換到 Taxes 分頁，為特定產品設定稅務類別。
+![建立類別彈窗中的 Tax Category Name 輸入欄位](/img/config/tax-categories-create-modal.png)
 
-![產品稅務分頁，包含稅務類別和是否課稅切換開關](/img/config/product-taxes.png)
+若要瀏覽類別，請點擊 **Switch**，並選擇你想新增稅項的類別。
 
-在同一個畫面上，您可以關閉 **Is Taxable?** 切換開關，讓 Ultimate Multisite 知道不應對該產品收取稅款。
+![用於切換稅務類別的 Switch 下拉按鈕](/img/config/tax-categories-switch.png)
 
-## 歐洲 VAT 支援
+![顯示可用類別的稅務類別選擇器下拉選單](/img/config/tax-categories-select.png)
 
-如前所述，我們為歐盟的客戶提供一個附加元件，以滿足因歐洲 VAT 法規而產生的額外要求。
+你可以前往 **Product edit page**，然後到 Taxes 分頁，為特定產品設定稅務類別。
 
-我們的 VAT 工具可協助處理幾項重要事務：
+![含稅務類別與應稅切換的產品稅務分頁](/img/config/product-taxes.png)
 
-  * 輕鬆載入歐盟 VAT 稅率；
+在同一個畫面上，你可以關閉 **Is Taxable?** 切換，讓 Ultimate Multisite 知道不應對該指定產品收取稅款。
 
-  * VAT 號碼收集與驗證 - 以及對 VAT 豁免實體（例如擁有有效 VAT 號碼的公司）進行反向收費；
+## 歐洲 VAT 支援 {#european-vat-support}
 
-若要安裝該附加元件，請前往 **Ultimate Multisite > Settings**，然後點擊側邊欄的 **Check our Add-ons** 連結。
+如前所述，我們為 EU 中因歐洲 VAT 規定而有額外需求的客戶提供 add-on。
 
-![設定頁面與附加元件側邊欄連結](/img/config/settings-taxes.png)
+我們的 VAT 工具有助於幾件重要事項：
 
-您將被重新導向至我們的附加元件頁面。在那裡，您可以搜尋 **Ultimate Multisite VAT add-on** 並安裝它。
+  * 輕鬆載入 EU VAT 稅率；
 
-![附加元件頁面上的 VAT 附加元件](/img/config/settings-taxes.png)
+  * VAT 號碼收集與驗證——以及對 VAT 免稅實體（例如擁有有效 VAT 號碼的公司）進行反向課稅；
 
-![VAT 附加元件安裝對話框](/img/config/settings-taxes.png)
+若要安裝該 add-on，請前往 **Ultimate Multisite > Settings**，然後點擊 **Check our Add-ons** 側邊欄連結。
 
-然後，前往 **Network Admin > Plugins** 並在全網路啟用該附加元件。
+![含 Check our Add-ons 連結的 Settings 頁面側邊欄](/img/config/settings-taxes-addons-link.png)
 
-![全網路啟用 VAT 附加元件](/img/config/settings-taxes.png)
+你將被重新導向至我們的 add-ons 頁面。在那裡，你可以搜尋 **Ultimate Multisite VAT add-on** 並安裝它。
 
-如果您返回 **Tax Settings 分頁**，您會看到新的選項。切換開啟 **Enable VAT Support** 選項以啟用新的 VAT 工具。別忘了**儲存**您的設定！
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-![稅務設定中的 Enable VAT Support 切換開關](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-### 拉取 VAT 稅率
+接著，前往 **Network Admin > Plugins**，並在整個網路範圍啟用該 add-on。
 
-我們整合的工具之一是能夠載入歐盟成員國的稅率。啟用歐盟 VAT 支援後，您可以前往稅率編輯器頁面來執行此操作。
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-在頁面底部，您會看到 VAT 拉取選項。選擇稅率類型並點擊 **Update EU VAT Rates** 按鈕，將會拉取並自動填入每個歐盟成員國的稅率到表格中。然後，您只需儲存即可。
+如果你回到 **Tax Settings tab**，會看到新的可用選項。切換 **Enable VAT Support** 選項以啟用新的 VAT 工具。別忘了**儲存**你的設定！
 
-### ![VAT 稅率拉取選項與 Update EU VAT Rates 按鈕](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-您也可以在拉取後編輯這些值。只需編輯您需要的表格列，然後點擊儲存新值即可。
+### 擷取 VAT 稅率 {#pulling-on-vat-tax-rates}
 
-### VAT 驗證
+我們的整合加入的工具之一，是能夠載入 EU 成員國的稅率。這可以在啟用 EU VAT 支援後，造訪稅率編輯器頁面來完成。
 
-啟用 VAT 支援後，Ultimate Multisite 會在結帳表單的帳單地址欄位下方新增一個額外欄位。此欄位僅對位於歐盟的客戶顯示。
+在頁面底部，你會看到 VAT 擷取選項。選擇稅率類型並點擊 **Update EU VAT Rates** 按鈕，將會擷取並自動填入表格，列出每個 EU 成員國的稅率。接著，你只需要儲存即可。
 
-![結帳表單上的 VAT 號碼欄位](/img/config/settings-taxes.png)
+![稅率編輯器底部的 Update EU VAT Rates 按鈕](/img/config/tax-rates-vat-pull.png)
 
-Ultimate Multisite 接著會驗證 VAT 號碼，如果驗證為有效，將套用反向收費機制，並將該訂單的稅率設為 0%。
+你也可以在擷取後編輯數值。若要這麼做，只要編輯你需要的表格列，並點擊以儲存新數值。
+
+### VAT 驗證 {#vat-validation}
+
+啟用 VAT 支援後，Ultimate Multisite 會在 checkout 表單中、帳單地址欄位下方加入一個額外欄位。此欄位只會顯示給位於 EU 的客戶。
+
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+
+Ultimate Multisite 接著會驗證 VAT Number；如果回傳為有效，則會套用反向課稅機制，並將該訂單的稅率設為 0%。

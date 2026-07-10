@@ -3,21 +3,21 @@ title: Nustatymai ir tiekėjo konfigūracija
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domenų pardavėjas: Įdiegimas ir tiekėjo konfigūracija
+# Domenų pardavėjas: Įdiegimas ir tiekėjo konfigūracija {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller addon siunamas su gautiniu įdiegimo vadovu, kuris pabaigo visus reikiamus veiksmus. Šiame puslapyje aprašome vadovo veikimą ir kaip saugoti ar pakeisti tiekėjų (providerių) konfigūraciją po to.
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 - **Multisite Ultimate** v2.4.12 arba didesnis, tinklo aktivotas
 - **PHP** 7.4+
 - API kredencijai labiausiai tikėtinei registruotojui (registrar)
 
-## Pirmoji veikimo įdiegimo vadovas
+## Pirmoji veikimo įdiegimo vadovas {#first-run-setup-wizard}
 
 Įdiegimo vadovas automatiškai prasideda pirmą kartą, kai tinklo aktivojate pluginą. Jis taip pat yra pasiekiamas bet kuriuo metu iš **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Žingsnis 1 — Pasirinkite tiekėją (providerį)
+### Žingsnis 1 — Pasirinkite tiekėją (providerį) {#step-1--choose-a-provider}
 
 Pasirinkite registruotojį, su kurį norite susisiekti. Patikslinti pasirinkimus:
 
@@ -33,7 +33,7 @@ Pasirinkite registruotojį, su kurį norite susisiekti. Patikslinti pasirinkimus
 | NameSilo | Ne | Ne |
 | Enom | Taip | Ne |
 
-### Žingsnis 2 — Įveskite kredencijas
+### Žingsnis 2 — Įveskite kredencijas {#step-2--enter-credentials}
 
 Kiekvienam tiekėjui yra skirtai kredencijų laukai:
 
@@ -57,17 +57,17 @@ Kiekvienam tiekėjui yra skirtai kredencijų laukai:
 
 Sprawdź **tryb Sandbox**, jeśli jest dostępny, aby przetestować połączenie w środowisku testowym dostawcy przed uruchomieniem na żywo.
 
-### Krok 3 — Testowanie połączenia
+### Krok 3 — Testowanie połączenia {#step-3--test-the-connection}
 
 Kliknij **Test Connection**. Magiczny interfejs (wizard) wyśle lekki wywołanie API w celu sprawdzenia danych uwierzytelniających i łączności. Napraw wszelkie problemy z poświadczeniami przed kontynuowaniem.
 
-### Krok 4 — Importowanie TLD
+### Krok 4 — Importowanie TLD {#step-4--import-tlds}
 
 Kliknij **Import TLDs**, aby pobrać wszystkie dostępne TLD oraz ceny hurtowe od podłączonego dostawcy. To uzupełni list TLD używany przez produkty domenowe. Import może zająć od 30 do 60 sekund dla dostawców z dużymi katalogami TLD.
 
 TLD-y są również automatycznie synchronizowane raz dziennie za pomocą zaplanowanego zadania crona.
 
-### Krok 5 — Utworzenie produktu domeny
+### Krok 5 — Utworzenie produktu domeny {#step-5--create-a-domain-product}
 
 Magiczny interfejs tworzy domyślny produkt typu catch-all (wszystko inne) z marżą 10%. Możesz edytować ten produkt natychmiast lub pominąć i tworzyć produkty ręcznie w sekcji **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Zobacz [Domain Products and Pricing](./domain-products) dla pełnego przewodnika
 
 ---
 
-## Konfiguracja ponownie dostawcy
+## Konfiguracja ponownie dostawcy {#reconfiguring-a-provider}
 
 Przejdź do **Network Admin › Ultimate Multisite › Settings › Domain Seller** (lub kliknij **Settings** w liście pluginów).
 
@@ -88,17 +88,17 @@ Strona ustawień zawiera:
 - **Tvarkykite domenų produktus** — greitas nuoroda į Produktų sąrašą.
 - **Konfigūruokite tiekėjus** — atidaro Integracijos žaada (Integration Wizard), kad pridėtumėte arba pertvarkytumėte tiekėjus.
 
-### Pridėdami naują tiekėją
+### Pridėdami naują tiekėją {#adding-a-second-provider}
 
 Spauskite **Konfigūruokite tiekėjus** ir vėl paleiskite žaidimą naujam registratui. Galite turėti veiksmus vienu metu konfigūruotus įvairių tiekėjų. Prieš kiekvienam domenui produktui nurodykite specifinį tiekėją arba palikykite pagrindinį.
 
-### Manuliai siniginti TLDs
+### Manuliai siniginti TLDs {#syncing-tlds-manually}
 
 Nparametrai, spauskite **Siniginti TLDs** (Sync TLDs) šalia bet kurio konfigūruoto tiekėjo, kad pasileiktumėte naujausios kainos. Tai naudinga po to, kai tiekėjas atnaujina ražinės kainas arba prideda naujus TLDs.
 
 ---
 
-## Logai
+## Logai {#logs}
 
 Kiekvienas tiekėjas rašys į savo logų kanalą. Logai galima peržiūrėti puslapyje **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Kiekvienas tiekėjas rašys į savo logų kanalą. Logai galima peržiūrėti pu
 
 ---
 
-## Privalomųjų paslaugų galimybių atsižvelgimai
+## Privalomųjų paslaugų galimybių atsižvelgimai {#provider-capability-notes}
 
 Nevis kas registratorio API atskleidžia vienod statusą. Addonai rodo nepatikimą veiksmus jas nepakeičiant, o su aiškiais adminui skirtais klaidais.
 

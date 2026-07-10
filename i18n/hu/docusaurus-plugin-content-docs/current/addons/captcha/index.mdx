@@ -7,7 +7,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
 **Botok megállítása. Bevételek védelme. Nincs konfigurációs nehézség.**
 
@@ -15,7 +15,7 @@ Multisite hálózatot üzemeltetnek egyedi tartományokkal? Ismeri azt a fájdal
 
 **Ultimate Multisite: A Captcha mindent megváltoztatja.**
 
-## Cap Captcha: Önálló, működővé tesztelt védelem
+## Cap Captcha: Önálló, működővé tesztelt védelem {#cap-captcha-self-hosted-protection-that-just-works}
 
 Az új **Cap Captcha** szolgáltatásunk forradalmi változást jelent a multisite hálózatok számára:
 
@@ -25,7 +25,7 @@ Az új **Cap Captcha** szolgáltatásunk forradalmi változást jelent a multisi
 * **Láthatatlan Tanúsítvány-képzés (Proof-of-Work)** — Az felhasználók háttérben egy számítási rejtvény megoldását kell elvégezniük. Nincs szükség tűzoltó csap elzárására, vagy frusztráló képgalerikákra.
 * **Könnyű** — Csak 20KB. Nem lassítja a fizetőszolgáltatást.
 
-## WooCommerce Kártya-tesztelés Védelem
+## WooCommerce Kártya-tesztelés Védelem {#woocommerce-card-testing-protection}
 
 A kártya-tesztelés támadások az kereskedőket évente milliárdokkal costják. A csalók botokat használnak a lettek hitelkártyák validálására az WooCommerce fizetőszolgáltatásán – Ön fizeti a feldolgozási díjat, ők pedig érvényes kártyaszámokat kapnak.
 
@@ -35,7 +35,7 @@ A kártya-tesztelés támadások az kereskedőket évente milliárdokkal costjá
 * **PayPal Fizetésekkel Kompatibilis** — Zökkenőmentesen működik az WooCommerce PayPal Payments-szal.
 * **Időbeli Statisztikák** — Pontosan látja, hány támadást blokkol.
 
-## Mégsem kell Google reCAPTCHA vagy hCaptcha?
+## Mégsem kell Google reCAPTCHA vagy hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
 
 Megvédekezünk. Teljes támogatást biztosítünk:
 
@@ -47,14 +47,14 @@ Megvédekezünk. Teljes támogatást biztosítünk:
 
 Bármikor váltani thểte a szolgáltatók között a hálózat beállításai menüből.
 
-## Skálázásra építve
+## Skálázásra építve {#built-for-scale}
 
 * Hálózati szintű beállítások, helyi átírásokkal
 * Dashboard a védelem monitorozására
 * Beállítható biztonsági szintek (Gyors, Közepes, Maximális)
 * Fejlesztőbarát, bővíthető szolgáltató architektúrával
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az `ultimate-multisite-captcha` fájlt a `/wp-content/plugins/` könyvtárába
 2. Aktiválja a plugin-t a hálózat szintjén
@@ -64,37 +64,37 @@ A Cap Captcha automatikusan aktiválódik – nincs beállítani, nincs API kulc
 
 **Opcionális:** Ha Google reCAPTCHA-t vagy hCaptcha-t szeretne használni, navigáljon az **Ultimate Multisite → Beállítások → Captcha** menübe, és válassza ki az Ön által preferált szolgáltatót.
 
-## Gyakran Ismételt Kérdések
+## Gyakran Ismételt Kérdések {#frequently-asked-questions}
 
-## Kell-e nekem valamit konfigurálni?
+## Kell-e nekem valamit konfigurálni? {#do-i-need-to-configure-anything}
 
 Nem! A Cap Captcha automatikusan aktiválódik, amikor elindítja az addon-t. Az egész hálózat azonnal védett – nincs beállítani, nincs API kulcsot beírni.
 
-## Kell-e nekem API kulcsok a Cap Captcha-hoz?
+## Kell-e nekem API kulcsok a Cap Captcha-hoz? {#do-i-need-api-keys-for-cap-captcha}
 
 Nem. A Cap Captcha teljesen önállóan működik. Nincs külső fiók, nincs tartomány regisztráció, nincs konfigurációs fejtékezet.
 
-## Lassítani fogja a fizetőszolgáltatást?
+## Lassítani fogja a fizetőszolgáltatást? {#will-this-slow-down-my-checkout}
 
 A Cap Captcha csak 20KB, és háttérben futtat tanúsítvány-képzés kihívásokat. Az ügyfelei nem fogják észrevételi a késlekedést.
 
-## Védi-e ez a kártya-tesztelés támadások ellen?
+## Védi-e ez a kártya-tesztelés támadások ellen? {#does-this-protect-against-card-testing-attacks}
 
 Igen! Másként, mint a hagyományos captcha-k, amelyek csak az HTML űrlapokat védik, a WooCommerce integrációunk közvetlenül a Store API-hoz kapcsolódik, hogy blokkolja a bot támadásokat az API szintjén – ahol a legtöbb kártya-tesztelés támadás történik.
 
-## Más captcha szolgáltatókat használhatok különböző oldalakon?
+## Más captcha szolgáltatókat használhatok különböző oldalakon? {#can-i-use-different-captcha-providers-on-different-sites}
 
 A captcha szolgáltató hálózati szinten van beállítva, de a nehézségi szintet szükségleteinek megfelelően állíthatja be.
 
-## GDPR-megfelelő?
+## GDPR-megfelelő? {#is-this-gdpr-compliant}
 
 A Cap Captcha 100%-ban önállóan működik, és semmilyen adatot küld külső szolgáltatókhoz. A Google reCAPTCHA és hCaptcha esetén kérjük, tekintse át az adott adatvédelmi szabályzatokat.
 
-## Ütemkorlátozás (Rate Limiting)
+## Ütemkorlátozás (Rate Limiting) {#rate-limiting}
 
 Ultimate Multisite: Captcha v1.5.0 bevezet egy szigorú ütemkorlátozót, amely védi a hálózatát a brute-force és kártya-tesztelés támadások ellen.
 
-### Hogyan működik
+### Hogyan működik {#how-it-works}
 
 Az ütemkorlátozó minden GET és POST kérést számol a captcha-védett felületeken:
 
@@ -108,9 +108,9 @@ Amikor egy látogató meghaladja az ütemkorlát, a plugin a következővel vál
 * **Retry-After** fejléce, amely megjelöli a újrapróbálási időpontot
 * **Véletlenszerű tarpit alválasztás** (alapértelmezés szerint 1–5 másodpercig, maximálisan 15 másodpercig) lassítására támadók számára
 
-### Konfiguráció
+### Konfiguráció {#configuration}
 
-#### Tarpit Időzítés
+#### Tarpit Időzítés {#tarpit-timing}
 
 Kontrollálja a ütemkorlátozással csökkentett kérésekre alkalmazott véletlenszerű késlekedést:
 
@@ -119,9 +119,9 @@ Kontrollálja a ütemkorlátozással csökkentett kérésekre alkalmazott vélet
 
 Ezek a beállítások elérhetők az **Ultimate Multisite → Beállítások → Captcha** menüben.
 
-### Bővíthetőség
+### Bővíthetőség {#extensibility}
 
-#### IP Fehérlista Szűrő
+#### IP Fehérlista Szűrő {#ip-whitelist-filter}
 
 Kivéheti a megbízható IP tartományokat az ütemkorlátozástól:
 
@@ -135,7 +135,7 @@ add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
 }, 10, 2 );
 ```
 
-#### Előblokkolási Akció
+#### Előblokkolási Akció {#pre-block-action}
 
 Ha egy ütemkorlát küldeni kell, végezhet el egyedi logikát közvetlenül előtte:
 
@@ -146,7 +146,7 @@ add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
 }, 10, 2 );
 ```
 
-## Ülöltő IP Detektálás és Megbízható Proxy-k
+## Ülöltő IP Detektálás és Megbízható Proxy-k {#client-ip-detection--trusted-proxies}
 
 Ultimate Multisite: Captcha v1.5.0 bevezet hamisítás-álló ülöltő-IP detektálást. A `Captcha_Core::get_client_ip()` metódusa most az egyetlen igazságforrás a látogató IP attribúciójának a következő területeken:
 
@@ -154,7 +154,7 @@ Ultimate Multisite: Captcha v1.5.0 bevezet hamisítás-álló ülöltő-IP detek
 * Captcha szolgáltató `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
 * Statisztika IP hash-jai
 
-### Megbízhatósági Modell
+### Megbízhatósági Modell {#trust-model}
 
 A plugin szigorú IP megbízhatósági hierarchiát alkalmaz:
 
@@ -166,9 +166,9 @@ A plugin szigorú IP megbízhatósági hierarchiát alkalmaz:
    - A közvetlen páros az admin által konfigurált megbízható proxy-lista tagja
    - A fejléce jobbról balra értelmezésre kerül, elhagyva a megbízható/Cloudflare hopokat
 
-### Konfiguráció
+### Konfiguráció {#configuration-1}
 
-#### Cloudflare Fejléce Megbízhatósága
+#### Cloudflare Fejléce Megbízhatósága {#cloudflare-header-trust}
 
 Kapcsolja be a Cloudflare `CF-Connecting-IP` fejléce megbízhatóságát:
 
@@ -178,7 +178,7 @@ Kapcsolja be a Cloudflare `CF-Connecting-IP` fejléce megbízhatóságát:
   - A CIDR tartományokat hetente frissíti a wp-cron segítségével
   - Ha a frissítés sikertelen, a csomagolt fallback-ot használja
 
-#### Megbízható Proxy Konfiguráció
+#### Megbízható Proxy Konfiguráció {#trusted-proxy-configuration}
 
 Definálja a front-line proxy-jáit és a load-balancer-jáit:
 
@@ -194,14 +194,14 @@ Definálja a front-line proxy-jáit és a load-balancer-jáit:
     198.51.100.50
     ```
 
-#### Első Aktiválás Automata Detektálása
+#### Első Aktiválás Automata Detektálása {#first-enable-auto-detection}
 
 Amikor először aktiválja az ütemkorlátozót, a plugin detektálja a legvalószínűbb Cloudflare és proxy helyzetét, és egy kattintással "Alkalmazni a detektált beállításokat" admin értesítést jelenít meg.
 
 * A plugin **soha nem írja át** a mentett értékeit
 * Ha a későbbi forgalom arra utal, hogy a konfigurációja már nem egyezik a valósággal (pl. a Cloudflare megváltoztatta a CIDR tartományokat), egy eltávolíthatatlan eltérés értesítése jelenik meg, amely az ajánlott frissítést mutatja
 
-### Miért Fontos Ez
+### Miért Fontos Ez {#why-this-matters}
 
 Egy szigorú IP megbízhatósági modell egy kritikus hamisítási vektorot zárja ki: egy hamisított `CF-Connecting-IP` fejléccel rendelkező közvetlen eredet-szerver kérése korábban a hamisított IP-vel lett volna küvegbe helyezve, nem pedig a valódi páros IP-vel. Ez különösen fontos:
 

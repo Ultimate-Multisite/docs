@@ -3,9 +3,9 @@ title: Naprave za izpis
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Izdelki
+# Izdelki {#release-notes}
 
-## Verzija 2.13.0 — Izdana na 2026-06-05
+## Verzija 2.13.0 — Izdana na 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 Novo: Dodana podpora za suverene tenante (sovereign-tenant) za tokove upravljanja računom stranke, plačilom, spletom, računima, preklapanjem obrazcev (template switching) in mapiranjem domenov, tako da lahko tenantske mreže uporabnike usmerjajo nazaj na glavni splet za upravljene dejanja.
 Novo: Dodana preverjanja podatkov za obnovo dostopa (renewal-credential checks) za ponavljajoče naročnine, tako da gatewayji lahko onemogočijo avtomatsko obnovitev, če manjka shranjen pogodba o plačilu, pretplavine ali tokena v vaultu.
@@ -19,7 +19,7 @@ Popravljeno: E-poštne sporočila za pošiljanje (broadcast emails) zdaj ohranja
 Popravljeno: Randveri naročin, prikaz poteka (expiration display) in tepišče plačanja zdaj preprečuje trenutno iztekanje, zmaganje (crash) ali izpadne zahtevane plačbe.
 Uboljšano: WordPress kompatibilnost je preizkušana do verzije 7.0, produkcijski Vue aseti so ponovno sestavljeni iz npm virov, in Cypress end-to-end pokriva več tokov delovanja (checkout, setup, SSO, gateway).
 
-## Verzija 2.12.0 — Izdana 2026-05-15
+## Verzija 2.12.0 — Izdana 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Novo: Dodan Hostinger (hPanel) kot podpornega host providerja z integracijo mapiranja domen.
 - Novo: Site Exporter zdaj obravnava paketove za import omrežne povezave, kar omogoča bolj gladko obnovitev spletnih strani na celoti mreži.
@@ -31,7 +31,7 @@ Uboljšano: WordPress kompatibilnost je preizkušana do verzije 7.0, produkcijsk
 - Popravka: CLI Site Exporter zdaj ohranja pravilno izbiro omrežne strani kot zadano.
 - Uboljšanje: Odstranjen je paket wp-cli z paketa dodatka, kar je zmanjšalo velikost dodatka.
 
-## Verzija 2.11.0 — Izdana 2026-05-11
+## Verzija 2.11.0 — Izdana 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Novo: Site exporti zdaj paketuje samobranjo `index.php`, tako da lahko ZIP lahko instalirate na nov host brez ločene instalacije dodatka.
 - Novo: Omrežni export omogoča administratorjem, da izločijo vse podstrani v eni arhivski datoteci z strani za Site Export admin stran.
@@ -39,7 +39,7 @@ Uboljšano: WordPress kompatibilnost je preizkušana do verzije 7.0, produkcijsk
 - Novo: Editor obrazca za checkout opozarja, če se dodaja produkt brez konfiguriranega obveznega polja.
 - Novo: Tab nastavitve Import/Export zdaj jasno opisuje svoj obseg in je neposredno povezava z orodjem Site Export.
 
-## Verzija 2.10.0 — Izdana 2026-05-05
+## Verzija 2.10.0 — Izdana 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Novo: Novi wizard za nastavo PayPal z uporabo ručnih podatkov s OAuth flagom za brezhibno konfiguracijo gatewayja.
 - Novo: Template switch panel kupca preoblikovan z kartico current-template, trajnim gridom in gumbom **Reset current template**.
@@ -51,7 +51,7 @@ Uboljšano: WordPress kompatibilnost je preizkušana do verzije 7.0, produkcijsk
 - Popravka: Filtrirovana SSO pot je počastljena na vseh tokovi prijav.
 - Popravka: Opcje za prazno identiteto spletne strani so ohranjene ob shranjevanju.
 
-## Verzija 2.9.0 — Izdana 30.04.2026
+## Verzija 2.9.0 — Izdana 30.04.2026 {#version-290--released-on-2026-04-30}
 
 - Novo: Dodan je izvoz in import enega spletnega mesta pod **Tools > Export & Import**.
 - Popravka: ZIP datoteke za izvoz so zdaj storjene preko endpointa za avtentificiran prenos.
@@ -65,7 +65,7 @@ Uboljšano: WordPress kompatibilnost je preizkušana do verzije 7.0, produkcijsk
 - Popravka: Tour ID so normalizirani na podvučne v ključih nastavitvah uporabnika.
 - Uboljšano: Zdaj se uporablja ZipArchive namesto Alchemy/Zippy za boljše kompatibilnosti.
 
-## Verzija 2.8.0 — Izdana 29.04.2026
+## Verzija 2.8.0 — Izdana 29.04.2026 {#version-280--released-on-2026-04-29}
 
 - Novo: Omogo Jumper toggle dodan v UI nastavitvah Drugih opcija.
 - Novo: Stolp statusa dodan na seznam obrazcev za check-out.

@@ -3,11 +3,11 @@ title: Céadtaíocht
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Cuidiúcháin Ultímath Multisite
+# Cuidiúcháin Ultímath Multisite {#ultimate-multisite-requirements}
 
 An chéad rud a is féidir leat a gcur a shábháil arís ar chomhartha an t-Ultímath Multisite, is é astúchán a bhfaidh tú a dhéanamh: caithfidh tú a bheith ag cur isteach na rialacha a bhaineann leis an plugin. Go raibh maith agat, tá cur fáil ruda beag ar fáil chun an Ultímath Multisite a chrunú: **teamaid domáin** (domain name), **curteoir hosting** (hosting provider) go maith agus cur isteach **Multisite** WordPress. Is é sin an t-áit a bhfuil tú ag cur isteach!
 
-## Teamaid Domáin
+## Teamaid Domáin {#domain-name}
 
 Go dtús, leat mé a sulaidh ar teamaid domáin.
 
@@ -17,7 +17,7 @@ Taispeann an plugin a bheith ar chuid arshaíochta, a chomhthéacsadh, a chrunú
 
 Cualach atá agat is féidir é a dhéanamh trí úsáid as an plugin mar a bhfuil tú ag cur i gcás websites mar seirbhís! Déan cinnte go bhfuil teamaid domáin atá ag tairiscint le plan uair ar fáil.
 
-## Curteoir Hosting
+## Curteoir Hosting {#hosting-provider}
 
 Anois, nuair atá tú ag cur isteach teamaid domáin a bhíonn ag cur i gcás an t-niche agus an uair ar fáil, caithfidh tú curteoir hosting web go maith chun do chuid ngrú (network) a chur i gcás le Ultímath Multisite. Tá cumhachtach options ar fáil ar an mharann. Tá curteoir hosting some good with Ultímath Multisite, agus is féidir é sin eirí phríomhartha ag cur isteach ag cur fáil a bhaineann leat a chur i gcás.
 
@@ -25,7 +25,7 @@ Is feic WordPress Multisite iadreachais. An tairmún céanna níl ag cur isteach
 
 Nuair a bhfaidh sé ar spriocais server, níl aon fómula a bhfuil an t-amach ar éasta, mar bhaineann sé le caimíocht agus le foirmeacha a bheidh agat ag cur ar fáil agus le chomhthéacs do chuid ngrú. Is féidir hosting ardán a bheith ag cur isteach go beag, ach mar a bhíonn an t-amach agat ar chuid ngrú, caithfidh tú VPS deacairt a bheith agat.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Anois, leat mé a sulaidh liom ar fáil ar WordPress Multisite.
 

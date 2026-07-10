@@ -3,7 +3,7 @@ title: Gudanar da hanyoyin haɗi masu iya raba ga tsarin
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Idan Magani Linkin da Shareable Donawa
+# Idan Magani Linkin da Shareable Donawa {#managing-shareable-links-for-plans}
 
 Ultimate Multisite ya ba ka zaɓi don ka raba linkin plan kai tsaye ga abokan ciniki. Don yin hakan, tafiya zuwa kowane shafin gyaran (edit pages) na plans ɗinka kuma danna maɓallin _Click to copy the Shareable Link_.
 

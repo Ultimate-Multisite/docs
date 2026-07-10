@@ -3,13 +3,13 @@ title: Dowolňovanie plánu
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Sníženie plánu (v2)
+# Sníženie plánu (v2) {#downgrading-a-plan-v2}
 
 _**DÔLEŽITÉ UPOZORNENIE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
 Sníženie plánu alebo predplatného je bežná akcia, ktorú môžu urobiť vaši zákazníci, ak majú obmedzený rozpočet alebo rozhodli, že im na správu ich subsitehto potrebujú len málo zasobov.
 
-## Ako znížiť plán
+## Ako znížiť plán {#how-to-downgrade-a-plan}
 
 Vaši zákazníci si môžu plán v anytime znížiť, keď sa prihlásia do admin dashboardu svojho subsite a kliknú na **Zmeniť** pod sekciou ich účtu.
 
@@ -25,7 +25,7 @@ Aby používateľ pokračoval, musí len kliknúť na tlačidlo **Dokončiť pok
 
 ![Stránka s účtom zobrazujúca banner o odloženom zmenení členstva](/img/account-page/pending-change.png)
 
-### Čo sa stane, keď používateľ zníži svoj plán
+### Čo sa stane, keď používateľ zníži svoj plán {#what-happens-when-a-user-downgrades-their-plan}
 
 Je dôležité si všimnúť, že zníženie plánu ne mení existujúcu konfiguráciu v subsite používateľa.
 
@@ -37,7 +37,7 @@ Pre príspevky, ktoré prekonajú limit stanovený v pláne, máte 3 možnosti: 
 
 ![Strana Nastavení Adminu Sieť zobrazujúca možnosti pre príspevky, ktoré prekonajú limit](/img/account-page/settings-sites-post-limit.png)
 
-### Čo sa stane s platbou
+### Čo sa stane s platbou {#what-happens-to-the-payment}
 
 V verzii 2.0 už nie je potrebné žiadne úpravy v platbe týkajúce sa proratovania (prípadového účtovania).
 

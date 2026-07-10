@@ -3,11 +3,11 @@ title: Builder și Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 introducează **Sistemul Plugin Builder & Sandbox**, care permite asistentului AI să genereze, să activeze și să gestioneze plugin-uri WordPress pe rețeaua dvs.—tot în cadrul unui mediu sandbox sigur și izolat.
 
-## Prezentare (Overview)
+## Prezentare (Overview) {#overview}
 
 Plugin Builder îi permite asistentului AI să scrie plugin-uri WordPress personalizate în răspuns la solicitări în limbaj natural. Plugin-urile generate sunt validate, stocate și activate într-un strat sandbox înainte de a afecta vreodată funcționalitatea site-ului în direct.
 
@@ -17,7 +17,7 @@ Cazuri de utilizare includ:
 - Prototiparea de funcționalități care necesită hook-uri WordPress sau tipuri de post personalizate (custom post types).
 - Crearea de scripturi de automatizare de scurtă durată pentru operațiuni în grup (batch operations).
 
-## Generarea unui Plugin prin AI
+## Generarea unui Plugin prin AI {#generating-a-plugin-via-ai}
 
 Pentru a genera un plugin, deschide interfața de chat a Gratis AI Agent și descrie ce ai nevoie. De exemplu:
 
@@ -32,7 +32,7 @@ AI-ul va:
 
 Poți rafina rezultatul urmând în același thread de conversație înainte de a activa plugin-ul.
 
-## Activarea în Sandbox
+## Activarea în Sandbox {#sandbox-activation}
 
 Activarea unui plugin generat în sandbox este diferită de activarea acestuia pe rețeaua live. Sandbox-ul:
 
@@ -48,7 +48,7 @@ Pentru a activa un plugin în sandbox, apasă butonul **Activate in Sandbox** di
 
 Un mesaj de stare confirmă dacă activarea a reușit sau a eșuat. În cazul unei eșecuri, jurnalul erorilor este afișat în thread-ul de chat.
 
-## Managementul Plugin-urilor Generate
+## Managementul Plugin-urilor Generate {#managing-generated-plugins}
 
 Plugin-urile generate sunt listate în **Gratis AI Agent → Plugin Builder → Manage Plugins**. De la acest ecran poți:
 
@@ -64,7 +64,7 @@ Plugin-urile generate sunt listate în **Gratis AI Agent → Plugin Builder → 
 **Install on network** implementează plugin-ul generat pe WordPress multisite-ul tău live. Revizuiește codul plugin-ului înainte de a continua. Gratis AI Agent va solicita confirmarea înainte de a finaliza o instalare live.
 :::
 
-## Instalarea unui Plugin Generat pe Rețeaua
+## Instalarea unui Plugin Generat pe Rețeaua {#installing-a-generated-plugin-on-the-network}
 
 Când ești mulțumit de un plugin sandbox-izat, îl poți instala pe rețeaua live:
 
@@ -78,7 +78,7 @@ Alternativ, folosește comanda cu slash în interfața de chat:
 /install-plugin <plugin-slug>
 ```
 
-## Actualizările Plugin-urilor
+## Actualizările Plugin-urilor {#plugin-updates}
 
 Pentru a actualiza un plugin generat, descrie modificarea asistentului AI într-o conversație nouă:
 
@@ -86,7 +86,7 @@ Pentru a actualiza un plugin generat, descrie modificarea asistentului AI într-
 
 AI-ul generează o versiune nouă, care apare în sandbox alături de versiunea curentă. Tu revizuiești diferența (diff) și confirmi înainte ca actualizarea să fie aplicată.
 
-## Integrarea HookScanner
+## Integrarea HookScanner {#hookscanner-integration}
 
 Plugin Builder folosește un **HookScanner** integrat pentru a analiza hook-urile și filtrele înregistrate de fiecare plugin generat. Output-ul HookScanner este afișat în răspunsul de chat și include:
 
@@ -96,7 +96,7 @@ Plugin Builder folosește un **HookScanner** integrat pentru a analiza hook-uril
 
 Acest lucru te ajută să înțelegi comportamentul unui plugin înainte de a-l activa.
 
-## Considerații de Securitate
+## Considerații de Securitate {#security-considerations}
 
 - Plugin-urile generate sunt stocate separat de plugin-urile instalate manual și nu sunt accesibile prin ecranul standard de management al plugin-urilor WordPress până când nu le instalezi explicit pe rețeaua live.
 - Sandbox-ul folosește validarea căii (path validation) pentru a preveni traversarea directoriilor atunci când scrie fișierele plugin-ului.

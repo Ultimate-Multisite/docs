@@ -1,0 +1,197 @@
+---
+title: Tölvupóstar
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Tölvupóstur {#emails}
+
+Ultimate Multisite: Emails viðbótin gerir eigendum neta kleift að útvega og stjórna tölvupóstreikningum viðskiptavina samhliða vefsvæðum og aðildum. Útgáfa 1.1.0 bætir við tölvupóstreikningsstjórnun fyrir viðskiptavini, einni innskráningu í vefpóst, stuðningi við CyberPanel áframsendingar og endurbótum á útvegun í kaupaferli.
+
+## Helstu eiginleikar {#key-features}
+
+* **Tölvupóstreikningsgræja fyrir viðskiptavini**: Viðskiptavinir geta búið til og stjórnað pósthólfum af reikningssíðu sinni eftir að þeir hafa virka tölvupóstsaðild.
+* **Webmail SSO og magic links**: Viðskiptavinir geta opnað vefpóst beint af reikningssíðunni með eins-smells auðkenningu þegar þjónustuveitan styður það.
+* **Breytingar á lykilorðum**: Viðskiptavinir og stjórnendur geta uppfært lykilorð pósthólfa úr tölvupóststjórnunargræjunni.
+* **Útvegun réttinda í kaupaferli**: Kaupaferlið býr til tölvupóstsaðildina, tengir hana við lén vefsvæðis viðskiptavinarins og gerir pósthólfsverkfæri reikningssíðunnar aðgengileg.
+* **CyberPanel áframsendingar**: Net sem byggja á CyberPanel geta búið til og stjórnað áframsendingum tölvupósts sem hluta af flæði tölvupóstþjónustunnar.
+* **Stillingar sem taka mið af þjónustuveitu**: Stillingasíðan síar þjónustuveitur niður í virkar, stilltar samþættingar svo stjórnendur sjái aðeins nothæfa valkosti.
+
+## Kröfur {#requirements}
+
+* Ultimate Multisite 2.0.0 eða nýrra
+* WordPress Multisite uppsetning
+* Að minnsta kosti ein stillt samþætting við tölvupóstþjónustuveitu
+* API-auðkenni þjónustuveitu með heimild til að búa til pósthólf, breyta lykilorðum og gefa út aðgangstengla að vefpósti þar sem það er stutt
+
+## Uppsetning {#installation}
+
+1. Hladdu plugin-skránum upp í `/wp-content/plugins/ultimate-multisite-emails`.
+2. Virkjaðu viðbótina á netinu úr **Plugins** í WordPress netstjórn.
+3. Farðu í **Ultimate Multisite** > **Settings** og opnaðu tölvupóststillingar viðbótarinnar.
+4. Virkjaðu samþættingar við tölvupóstþjónustuveitur sem þú vilt að viðskiptavinir geti notað.
+5. Vistaðu stillingar og prófaðu síðan stofnun reiknings með viðskiptavini sem er ekki í framleiðslu eða á sviðsetningarvefsvæði.
+
+## Hvernig söluferli tölvupósts virkar {#how-the-email-seller-flow-works}
+
+Sala tölvupósts hefur tvö aðskilin lög:
+
+1. **Réttindi** — Ultimate Multisite tölvupóstsvara/aðild sem segir að viðskiptavinurinn megi nota tölvupóst fyrir tiltekið lén vefsvæðis, þjónustuveitu, kvóta og reikningstakmörk.
+2. **Stofnun pósthólfs** — raunverulega pósthólfið hjá þjónustuveitunni, svo sem `info@example.com`, stofnað þegar viðskiptavinurinn eða netstjórnandi velur staðbundna hlutann og lykilorð.
+
+Í kaupaferlinu býr viðbótin til eða virkjar **tölvupóstsaðildina** og skráir lén vefsvæðis viðskiptavinarins og þjónustuveitu á þeirri aðild. Hún giskar ekki á nafn pósthólfs eða lykilorð. Eftir að kaupin eru lokið og samhengi vefsvæðis/léns er til staðar getur viðskiptavinurinn opnað reikningssíðuna og búið til þau pósthólfsnöfn sem hann vill.
+
+Þetta þýðir að venjulegt flæði viðskiptavinar er:
+
+1. Viðskiptavinurinn kaupir vefsvæðisleið og bætir við tölvupóstsvöru í kaupaferlinu.
+2. Ultimate Multisite býr til vefsvæðisaðildina og aukatölvupóstsaðildina.
+3. Emails viðbótin tengir tölvupóstsaðildina við lén vefsvæðis og þjónustuveitu viðskiptavinarins.
+4. Viðskiptavinurinn opnar **Account** í Dashboard sínu.
+5. **Tölvupóstreikningar** spjaldið birtist fyrir þá virku tölvupóstsaðild.
+6. Viðskiptavinurinn smellir á **Stofna reikning**, slær inn staðbundna hlutann, svo sem `info`, setur lykilorð og viðbótin býr til `info@their-domain.com` hjá stilltu þjónustuveitunni.
+
+## Stilla tölvupóstsvöru {#configure-an-email-product}
+
+Búðu til eina tölvupóstsvöru fyrir hvern tölvupóstpakka sem þú vilt selja eða gefa. Ef þú ert nýr í vöruuppsetningu skaltu byrja á [Að búa til fyrstu áskriftarvöruna þína](../../user-guide/configuration/creating-your-first-subscription-product) og koma síðan aftur hingað fyrir tölvupóstsértæku stillingarnar.
+
+1. Farðu í **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Stilltu **Tegund vöru** á **Tölvupóstur**.
+3. Stilltu verðlagningu. Notaðu greitt endurtekið verð fyrir selda leið, eða stilltu vöruna sem ókeypis/á núllverði ef hún á að vera viðbótar-tölvupóstleið án endurgjalds.
+4. Opnaðu hlutann **Tölvupóststillingar**.
+5. Veldu stilltu **Tölvupóstþjónustuveituna**.
+6. Stilltu **Fjölda reikninga**, **Geymslukvóta (MB)**, takmörk samnefna, áframsendingar og sjálfvirk svör eftir þörfum.
+7. Vistaðu vöruna.
+
+Aðeins þjónustuveitur sem eru virkjaðar og fullstilltar á síðunni **Samþættingar** birtast í vali þjónustuveitu. Ef valið er tómt skaltu stilla og prófa þjónustuveituna fyrst.
+
+## Bæta tölvupósti við kaupaferli {#add-email-to-checkout}
+
+Tölvupóstsvörur eru yfirleitt boðnar sem viðbætur við vefsvæðisleið. Sjá [Eyðublöð kaupaferlis](../../user-guide/configuration/checkout-forms) fyrir almennt vinnuflæði ritils kaupaferlis.
+
+1. Búðu til eða breyttu vefsvæðisleiðinni sem viðskiptavinir kaupa fyrst.
+2. Bættu tölvupóstsvörunni við sem tiltækri viðbót/pöntunarviðbót fyrir það kaupaferli.
+3. Staðfestu að eyðublað kaupaferlisins innihaldi enn venjulegu nauðsynlegu reitina fyrir vefsvæði, sérstaklega reitinn fyrir vefslóð/lén vefsvæðis.
+4. Keyrðu prófunarkaupaferli með sviðsetningarviðskiptavini.
+5. Eftir kaupaferlið skaltu opna [reikningssíðu](../../user-guide/client-management/account-page) viðskiptavinarins og staðfesta að spjaldið **Tölvupóstreikningar** birtist.
+
+Tölvupóstlénið er tekið úr léni vefsvæðis viðskiptavinarins. Viðskiptavinir slá ekki inn tölvupóstlénið í skrefi tölvupóstsvörunnar.
+
+## Tölvupóststjórnun á reikningi viðskiptavinar {#customer-account-email-management}
+
+Útgáfa 1.1.0 bætir tölvupóststjórnunargræju við reikningssíðu viðskiptavinarins. Notaðu hana þegar viðskiptavinir eiga að geta sjálfir séð um stofnun og viðhald pósthólfa fyrir eigin vefsvæði.
+
+Af reikningssíðunni geta viðskiptavinir:
+
+1. Skoðað tölvupóstreikninga sem tengdir eru núverandi tölvupóstsaðild/léni vefsvæðis þeirra.
+2. Búið til nýtt pósthólf þegar tölvupóstsvara þeirra leyfir fleiri reikninga.
+3. Breytt lykilorði fyrir fyrirliggjandi pósthólf.
+4. Opnað studdar vefpóstþjónustuveitur í gegnum SSO eða innskráningu með magic-link.
+
+Græjan notar kerfi Ultimate Multisite fyrir núverandi samhengi reikningssíðu, þannig að aðgerðir eru bundnar við reikningssamhengið sem viðskiptavinurinn er að skoða. Þetta kemur í veg fyrir að viðskiptavinir geti stjórnað tölvupóstreikningum sem tilheyra annarri aðild eða vefsvæði.
+
+Ef viðskiptavinurinn sér ekki tölvupóstspjaldið skaltu athuga að hann sé með **virka tölvupóstsvöruaðild**, að aðildin hafi verið tengd við lén vefs, og að varan sé með stilltan þjónustuveitanda.
+
+## Að gefa viðskiptavini ókeypis tölvupóstáætlun {#giving-a-customer-a-free-email-plan}
+
+Til að gefa viðskiptavini tölvupóst án þess að rukka hann skaltu fyrst veita **tölvupóstsréttindið**, síðan búa til pósthólfið eða leyfa viðskiptavininum að búa það til.
+
+Ráðlagðir valkostir:
+
+* **Búa til ókeypis tölvupóstsvöru**: stilltu verð tölvupóstsvörunnar á ókeypis/núll, bættu síðan við virkri aðild fyrir þann viðskiptavin úr **Ultimate Multisite > Aðildir > Bæta við aðild**. Veldu tölvupóstsvöruna og viðskiptavininn. Ókeypis aðildir eru ævilangar þar til þeim er breytt eða þær eru afturkallaðar. Ef tölvupóstsaðildin á að fylgja núverandi vef skaltu ganga úr skugga um að hún sé tengd við samhengi þess vefs/léns.
+* **Nota 100% afslátt eða ókeypis greiðslutengil**: leyfðu viðskiptavininum að fara í gegnum greiðsluferlið svo Ultimate Multisite búi sjálfkrafa til tölvupóstsaðildina og greiðslufærsluna.
+* **Stjórnandi býr til pósthólf**: farðu í **Ultimate Multisite > Tölvupóstreikningar > Bæta við tölvupóstreikningi** til að búa til tiltekið pósthólf hjá þjónustuveitandanum fyrir viðskiptavin. Þetta er gagnlegt fyrir þjónustuaðstoð, en kemur ekki í stað tölvupóstsvöruaðildarinnar sem knýr sjálfsafgreiðsluverkfæri viðskiptavinarins á reikningssíðunni.
+
+Ef þú vilt að viðskiptavinurinn stjórni pósthólfinu sjálfur frá reikningssíðunni skaltu ganga úr skugga um að hann sé með virka tölvupóstsaðild fyrir lénið. Pósthólf hjá þjónustuveitanda sem er búið til handvirkt án þeirrar aðildar getur verið til, en viðskiptavinurinn sér hugsanlega ekki sjálfsafgreiðsluspjaldið fyrir tölvupóst fyrir það.
+
+## Reikningar búnir til af stjórnanda og „ekkert pöntunarnúmer“ {#admin-created-accounts-and-no-order-number}
+
+Stjórnandasíðan **Tölvupóstreikningar** býr til eða breytir pósthólfi hjá þjónustuveitanda. Hún er ekki fyrsta skrefið til að selja eða veita tölvupóstáætlun.
+
+Þegar tölvupóstreikningi er breytt leitar reiturinn **Aðild** í fyrirliggjandi Ultimate Multisite-aðildum eftir tilvísunar-/pöntunarnúmeri þeirra. Ef þú reynir að úthluta reikningi áður en viðskiptavinurinn er með tölvupóstsaðild getur verið að ekkert pöntunarnúmer sé tiltækt til að velja.
+
+Notaðu frekar þessa röð aðgerða:
+
+1. Búðu til eða finndu tölvupóstsaðild viðskiptavinarins. Fyrir kaup sér greiðsluferlið um þetta. Fyrir ókeypis áætlun skaltu búa til aðildina handvirkt úr [Aðildum](../../user-guide/administration/managing-memberships) eða senda viðskiptavininn í gegnum ókeypis greiðsluferli.
+2. Staðfestu að aðildin sé virk og noti tölvupóstsvöru.
+3. Staðfestu að tölvupóstsaðildin sé tengd við lén/þjónustuveitanda vefsins.
+4. Búðu til pósthólfið frá reikningssíðu viðskiptavinarins eða úr **Ultimate Multisite > Tölvupóstreikningar**.
+5. Ef þörf er á skaltu breyta pósthólfsfærslunni og úthluta viðskiptavini, aðild og vef.
+
+Ef þú þarft aðeins að búa til pósthólf hjá þjónustuveitanda fyrir viðskiptavininn og þarft ekki sjálfsafgreiðslustjórnun á reikningssíðunni getur reikningur sem stjórnandi býr til dugað. Ef þú vilt að viðskiptavinurinn sjái og stjórni honum í Ultimate Multisite skaltu einnig búa til tölvupóstsaðildina.
+
+## Webmail SSO og innskráning með töfratengli {#webmail-sso-and-magic-link-login}
+
+Webmail SSO veitir viðskiptavinum beina aðgerðina **Opna vefpóst** frá reikningssíðunni. Þegar virki þjónustuveitandinn styður það biður viðbótin um skammlífa aðgangsslóð og beinir viðskiptavininum inn í vefpóst án þess að biðja hann um að afrita auðkenni pósthólfsins.
+
+Hegðun þjónustuveitanda getur verið breytileg:
+
+* Þjónustuveitendur með innbyggð SSO API geta búið til beina auðkennda vefpóstslotu.
+* Þjónustuveitendur með stuðning við töfratengla geta búið til tímabundinn innskráningartengil.
+* Þjónustuveitendur án stuðnings við SSO eða töfratengla ættu samt að sýna upplýsingar um pósthólfið og aðgerðir fyrir lykilorðastjórnun, en engan vefpósthnapp með einum smelli.
+
+Virkjaðu aðeins vefpóstsaðgang fyrir þjónustuveitendur þar sem þú hefur stillt nauðsynleg API-auðkenni. Ef aðgerðina vantar fyrir þjónustuveitanda skaltu fyrst staðfesta að þjónustuveitandinn sé virkur, stilltur og styðji innskráningartengla fyrir vefpóst.
+
+## Úthlutun í greiðsluferli {#checkout-provisioning}
+
+Viðbótin úthlutar **samhengi tölvupóstsaðildar** í greiðsluferlinu. Hún skráir þjónustuveitanda, reikningstakmörk, kvóta og lén vefs svo viðskiptavinir geti búið til eigin pósthólfsnöfn frá reikningssíðunni eftir kaup.
+
+Ráðlögð innleiðing:
+
+1. Stilltu þjónustuveitanda og vörutakmörk áður en tölvupóstsvaran er boðin.
+2. Prófaðu kaup með sviðsetningarvöru og staðfestu að tölvupóstsaðildin sé búin til.
+3. Skoðaðu reikningssíðu viðskiptavinarins til að staðfesta að græjan **Tölvupóstreikningar** birtist fyrir lénið.
+4. Búðu til prófunarpósthólf úr græjunni.
+5. Staðfestu lykilorðabreytingu og vefpóstsaðgerðir áður en ferlið er virkjað fyrir framleiðsluvörur.
+
+Ef úthlutun mistekst geta reikningur og aðild viðskiptavinarins samt verið til á meðan tölvupóstsaðildin eða pósthólf hjá þjónustuveitanda krefst eftirfylgni stjórnanda. Athugaðu virkniskrár Ultimate Multisite og skrár þjónustuveitandans áður en þú reynir aftur.
+
+## Tölvupóstframsendingar í CyberPanel {#cyberpanel-email-forwarders}
+
+Fyrir net sem eru studd af CyberPanel bætir útgáfa 1.1.0 við stuðningi við tölvupóstframsendingar. Notaðu framsendingar þegar viðskiptavinir þurfa vistföng eins og `info@customer-domain.test` til að beina pósti áfram í annað innhólf án þess að búa til fullt pósthólf.
+
+Áður en framsendingar eru boðnar skaltu staðfesta að CyberPanel-samþættingin sé stillt og aðgengileg. Sjá leiðbeiningarnar [CyberPanel-samþætting](../../user-guide/administration/cyberpanel-integration) fyrir nauðsynlegan hýsil, notandanafn, lykilorð og pakkafasta.
+
+## Breytingaskrá {#changelog}
+
+### Útgáfa 1.1.0 - Gefin út 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Nýtt: Webmail SSO og magic-link innskráning — viðskiptavinir geta fengið aðgang að webmail beint úr Account sínu með eins-smells auðkenningu.
+* Nýtt: Virkni til að breyta lykilorði bætt við stjórnunarviðmót email-reiknings.
+* Nýtt: Stuðningur við CyberPanel email-framsendingar.
+* Nýtt: Stjórnunarviðmót fyrir email á Account-síðu viðskiptavinar fyrir sjálfsafgreiðslu við stofnun og stjórnun reikninga.
+* Nýtt: Úthlutun réttinda fyrir email-reikning viðskiptavinar samþætt við checkout-ferlið.
+* Lagfæring: Account-síðuviðmótskrókur uppfærður til að nota rétt UMS-skráningarmynstur.
+* Lagfæring: Eyðublað til að stofna Account skipt út fyrir hreint JS og rétt fullt HTML-skjalúttak.
+* Lagfæring: Stjórnunarviðmót fyrir email notar nú UMS currents system fyrir admin-reikningssíður.
+* Lagfæring: Eyðublað admin til að stofna email-reikning inniheldur lykilorðareit og notar Email_Account_Manager.
+* Lagfæring: Ruslskráning fyrir hverja beiðni fjarlægð úr frumstillingu Email_Account_Manager.
+* Bætt: Stillingasíða síar nú til að sýna aðeins virka og stillta email-þjónustuveitendur.
+
+## Algengar spurningar {#frequently-asked-questions}
+
+### Geta viðskiptavinir stofnað sína eigin email-reikninga? {#can-customers-create-their-own-email-accounts}
+
+Já. Þegar viðskiptavinurinn er með virka email-aðild fyrir lén og varan leyfir viðbótarreikninga geta viðskiptavinir stofnað og stjórnað eigin pósthólfum af Account-síðunni.
+
+### Styður hver þjónustuveitandi webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Nei. Stuðningur við SSO og magic-link fer eftir virkum email-þjónustuveitanda. Þjónustuveitendur án access-link API geta samt stutt stofnun pósthólfa og breytingar á lykilorðum.
+
+### Geta stjórnendur stofnað email-reikninga fyrir viðskiptavini? {#can-administrators-create-email-accounts-for-customers}
+
+Já. Stjórnendur geta stofnað email-reikninga úr admin-viðmótinu, þar á meðal stillt upphafslykilorðið þegar reikningurinn er stofnaður. Fyrir sjálfsafgreiðslustjórnun viðskiptavina skaltu einnig ganga úr skugga um að viðskiptavinurinn sé með virka email-aðild fyrir lénið.
+
+### Get ég gefið email-reikning ókeypis? {#can-i-give-an-email-account-away-for-free}
+
+Já. Stofnaðu ókeypis Email-vöru eða vöru með núllverði og bættu henni við sem virkri aðild fyrir viðskiptavininn, eða leyfðu viðskiptavininum að klára checkout með 100% afslætti. Eftir að email-aðildin er til getur viðskiptavinurinn eða stjórnandi stofnað raunverulega pósthólfið.
+
+### Af hverju biður úthlutun email-reiknings um pöntunarnúmer? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Membership-reiturinn flettir upp núverandi Ultimate Multisite-aðild eftir tilvísunar-/pöntunarnúmeri hennar. Ef viðskiptavinurinn keypti ekki email-vöru og þú hefur ekki stofnað email-aðild handvirkt er engin email-aðild/pöntun til að úthluta. Stofnaðu email-aðildina fyrst, stofnaðu síðan eða úthlutaðu pósthólfinu.
+
+### Eru framsendingar það sama og pósthólf? {#are-forwarders-the-same-as-mailboxes}
+
+Nei. Pósthólf geymir póst og hefur innskráningarupplýsingar. Framsending beinir pósti á annað netfang og veitir ekki sérstakt innhólf.

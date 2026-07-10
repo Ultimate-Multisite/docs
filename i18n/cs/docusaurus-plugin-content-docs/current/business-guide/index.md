@@ -3,13 +3,13 @@ title: Vytvořit podnikání s nišovou webovou stránkou
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Vytvořte podnikání s webem pro specializovanou oblast pomocí Ultimate Multisite
+# Vytvořte podnikání s webem pro specializovanou oblast pomocí Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Většina lidí, kteří se pokoušejí prodávat webové stránky, se snaží konkurovat na ceně s Wixem, Squarespace a tisíci freelancerů. A ztrácejí. Ti, kteří vyhrávají, si vyberou specifickou cílovou skupinu, vytvoří řešení přizpůsobené této skupině a účtují za hodnotu, kterou dodávají.
 
 Tento kurz vám ukáže, jak to udělat přesně tak, pomocí Ultimate Multisite.
 
-## Co budete budovat
+## Co budete budovat {#what-you-will-build}
 
 Po celém kurzu budete budovat skutečnou, funkční síť jménem **FitSite** – platformu pro webové stránky vytvořenou specificky pro fitness studia, osobní trenéry a majitele sportovišť.
 
@@ -23,7 +23,7 @@ Konec lekce bude FitSite kompletní specializovaná platforma s:
 
 Postupujete krok za krokem a na konci budete mít nejen funkční platformu, ale i znalosti, jak tento proces replikovat pro jakoukoli specializovanou oblast, kterou si vyberete.
 
-## Proč fitness studia?
+## Proč fitness studia? {#why-fitness-studios}
 
 Potřebovali jsme konkrétní příklad, který může cokoli sledovat. Fitness studia fungují, protože:
 
@@ -34,7 +34,7 @@ Potřebovali jsme konkrétní příklad, který může cokoli sledovat. Fitness 
 
 Vše, co se naučíte při budování FitSite, se přímo aplikuje na jakoukoli specializovanou oblast, kterou si vyberete: restaurace, realitní makléři, právní kanceláře, církve, stavební dodavatelé nebo jakákoli jiná vertikála.
 
-## Struktura kurzu
+## Struktura kurzu {#course-structure}
 
 Každá lekce představuje jeden koncept, vysvětluje, proč je důležitý, a provede vás implementací v síti FitSite. Každá lekce staví na předchozí.
 
@@ -55,7 +55,7 @@ Každá lekce představuje jeden koncept, vysvětluje, proč je důležitý, a p
 | [13. Scaling Up](lesson-13-growth) | Rostoucí od prvních zákazníků k skutečnému podnikání | Strategie růstu a automatizace FitSite |
 | [14. What Comes Next](lesson-14-whats-next) | Rozšíření na sousední specializované oblasti a nové příležitosti | Vaše roadmap za FitSite |
 
-## Předpoklady
+## Předpoklady {#prerequisites}
 
 - Instalace WordPress Multisite (nebo ochota ji nastavit)
 - Aktivní licence Ultimate Multisite
@@ -63,6 +63,6 @@ Každá lekce představuje jeden koncept, vysvětluje, proč je důležitý, a p
 
 Kódování není nutné. Pokud jste Ultimate Multisite nikdy nepoužili, je to v pořádku – Lekce 3 začíná od čerstvé instalace.
 
-## Připraveni?
+## Připraveni? {#ready}
 
 Začněte s [Lekce 1: Why Niche Wins](lesson-1-why-niche).

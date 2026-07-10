@@ -3,13 +3,13 @@ title: Kupanga chombo chanu chawiri cha mpanzana
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kufunga Product Yanu Yamba (v2)
+# Kufunga Product Yanu Yamba (v2) {#creating-your-first-subscription-product-v2}
 
 _**KUFUNGA CHONGO: Iye ndiyo yopangula Ultimate Multisite version 2.x. Ngati utagwiritsa ntchito version 1.x,**_ **_**ngati ndi iye,**_ _**ngati m'malo opereka wina.**_
 
 Kuti mutayire network yanu ndipo mutayire kuwerenga zochitika za inu kwa anthu ena, mukufuna kuti muli ndi mapulogolero okhudzidwa. Kodi muli bwanji mukuphatikiza mapulogolero awa? Kodi muli ndi aina za mapulogolero monga momwe mungupereke? M'malo opereka wina, mudzindikira zonse zomwe mukufuna kudziwa za mapulogolero.
 
-## Aina La Mapulogolero (Product Type)
+## Aina La Mapulogolero (Product Type) {#product-type}
 
 Ndi Ultimate Multisite muli ndi aina ziwiri za mapulogolero monga: **plans** ndi **add-ons (Order Bump)**. Add-ons mungayendetsedwe m'malo mawulu: **packages** ndi **services**. Mudzindikira kuti zimene zikuphatikiza nkhani ndi zomwezi zina m'malo opereka wina.
 
@@ -19,7 +19,7 @@ Ndi Ultimate Multisite muli ndi aina ziwiri za mapulogolero monga: **plans** ndi
 
   * **Services:** Izi ndi add-ons zomwe si zimapitsani mapulogolero za Ultimate Multisite. Ziri zinthu zomwe mungayenera mutanthauze kwa anthu ena m'malo opereka wina kuwonetsedwa pansi pa plan omwe anayendetsa. Mwachitsanzo, munthu wanu mungapereke plan yomwe imapereka site imodzi ndipo kuyesa service yofunika yomwe kumapereka design ya site imeneyi.
 
-## Kufunsa Mapulogolero (Managing Products)
+## Kufunsa Mapulogolero (Managing Products) {#managing-products}
 
 Pansimangakani, kwa ambiri mambo mengi, tab ya **Products** katika Ultimate Multisite **(Ultimate Multisite > Products)** inaweza kupimwa na mipango (plans) kwenye mazingira ya kawaida ya hosting.
 
@@ -29,7 +29,7 @@ Sehemu hii itakuelekeza kuelewa misingi muhimu wa Ultimate Multisite.
 
 ![Products list page](/img/config/products-list.png)
 
-## Kuongeza Bidhaa (Adding Products)
+## Kuongeza Bidhaa (Adding Products) {#adding-products}
 
 Iwe ni mpango (plan), paketi (package), au huduma, njia ya kuanza kufafanua kitu kipya ni kupitia **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Kiundo hicho kina sehemu mbili kuu. Kwenye upande wa kushoto kuna tab kadhaa zin
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Maelezo (Description)
+### Maelezo (Description) {#description}
 
 Taarifa ya msingi ya bidhaa inaweza kufafanuliwa kwa kutoa jina la bidhaa na maelezo yake. Vile vikuo hivi vinaonekana popote ambapo taarifa ya bidhaa inahitajika kama vile kuchagua mpango na bei, risiti (invoices), upgrades, n.k.
 
 ![Product description section](/img/config/product-description.png)
 
-### Aina ya Bei (Pricing Type)
+### Aina ya Bei (Pricing Type) {#pricing-type}
 
 Upande wa kulia wa kiundo hicho unaweza kufafanua bei ya msingi.
 
@@ -53,7 +53,7 @@ Upande wa kulia wa kiundo hicho unaweza kufafanua bei ya msingi.
 
 Ultimate Multisite inasaidia aina tatu tofauti za bei. Chaguo la **paid** linamwomba msimamizi wa mtandao (network administrator) taarifa kuhusu bei ya bidhaa na mara inayolipwa (billing frequency).
 
-### Bei (Pricing)
+### Bei (Pricing) {#pricing}
 
 Sehemu ya bei inafafanua bei ya msingi ya bidhaa na kipindi cha malipo.
 
@@ -61,7 +61,7 @@ Sehemu ya bei inafafanua bei ya msingi ya bidhaa na kipindi cha malipo.
 
 mwachidwe mofunso wopambiri wopambiri wopambiri, mwachitsanzo mofunso wopambiri wopambiri wopambiri wopambiri ndi $29.99 ndi chithandizo cha 1 mwezi kuli kutsimikizira $29.99 kwa mwezi. Mmodzi, mwachitsanzo, mofunso wopambiri wopambiri wopambiri wopambiri wopambiri ndi $89.97 ndi chithandizo cha 3 mwezi kuli kutsimikizira iwo kwa m'quarter.
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Mwachitsanzo cha billing cycles kumphatikizira mwayi wopambiri wa mwayi wopambiri wopambiri wopambiri, komwe zimakhudza kwambiri ndi m'mikatambo kapena mwayi wosavuta.
 
@@ -69,7 +69,7 @@ Mwachitsanzo cha billing cycles kumphatikizira mwayi wopambiri wa mwayi wopambir
 
 Mwachitsanzo, mofunso wopambiri wopambiri wopambiri wopambiri wopambiri ndi $29.99 ndi mwayi wa mwezi 1 ndi mwayi wopambiri wopambiri wopambiri wopambiri wopambiri kumphatikizira $29.99 kwa mwezi kwa mofunsowo m'months 12. Mwachidwe, chithandizo chimene chimapambira kuli kutsimikizira $29.99 kwa mwezi kwa months 12 ndipo kulipeza kupambira.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 Kukonza offer trial toggle kumphatikizira administrator wa network kuti amakumbukire mwayi wopambiri wopambiri wopambiri wopambiri kwa mofunsowo.
 
@@ -77,7 +77,7 @@ Kukonza offer trial toggle kumphatikizira administrator wa network kuti amakumbu
 
 M'mwayi wopambiri, anthu ali ndi umodzi wopambiri wopambiri wopambiri wopambiri kuti amagwira ntchito mofunsowo ndipo sindikupambiridwa mpaka mwayi wopambiri wopambiri wopambiri wopambiri wopambiri ulipeza.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Muli ndi ulemu wopambiri wopambiri wopambiri wopambiri kuti mufunso wanu.
 
@@ -85,7 +85,7 @@ Muli ndi ulemu wopambiri wopambiri wopambiri wopambiri kuti mufunso wanu.
 
 Izi zimene kuti wamene ali ndi m'client wanu adale kukhala ndi mwayi wopambiri wopambiri wopambiri wopambiri kwa chisoni chachikulu (mmodzi monga m'price plan) komwe kumapambira m'fee yomwe mumapambira m'section imeneyi.
 
-### Active
+### Active {#active}
 
 Active toggle imapambira mwachidwe kuti mofunsowo ndi lamtengo lomwe limapambira kwa anthu kwa kukhala ndi chisoni chachikulu.
 
@@ -93,13 +93,13 @@ Active toggle imapambira mwachidwe kuti mofunsowo ndi lamtengo lomwe limapambira
 
 Kuti kuli m'moyo wopambana: Ngati muli ndi makatundu omwe ali pansi paplanoni, kupanga toggle iwe kuti ikhale m'disabled state kumapereka planyi, kuchepa plani imalimbikitsa (grandfathers) kupita kwa zokhudzana ndi kukhala kwawo m'malo wopambana. **Makatundu omwe ali pansi paplanoni kudzipereka kutali kuyendera kusukulu** mpaka amapereka plani yatsopano kapena kuwakhala m'malo wopambana.
 
-### Pikhulupiriro la Product (Product Image)
+### Pikhulupiriro la Product (Product Image) {#product-image}
 
 Botolo la **Upload Image** limapereka admin wa network kuti atsegere kapena yopereke pikhulupiriro la media kuti atsegere pikhulupiriro la product.
 
 ![Product image section](/img/config/product-image.png)
 
-### Kukhazikitsa (Delete)
+### Kukhazikitsa (Delete) {#delete}
 
 Botolo la **Delete Product** limalimbikitsa product iwo m'system. Limapereka pamene product imapambana.
 
@@ -107,11 +107,11 @@ Botolo la **Delete Product** limalimbikitsa product iwo m'system. Limapereka pam
 
 Muli wopambana ndi kukhazikitsidwa, product si imapera m'trash state. Choncho pamene imalimbikitsidwa, chinthu chimene limalimbikitsidwa sikuperekedwa.
 
-### Zitendi za Product (Product Options)
+### Zitendi za Product (Product Options) {#product-options}
 
 Pamene muli ndi maite a product omwe ali pansi paumpaka lalikulu, mapulogalamu a product amapereka admin wa network kuti atsegere zinthu zina za product.
 
-#### Zinthu Zomwe Zikuyenera Kuti (General)
+#### Zinthu Zomwe Zikuyenera Kuti (General) {#general}
 
 Tabu la **General** limalimbikitsa maite omwe siyo kwa tabu zina za product.
 
@@ -125,7 +125,7 @@ Ultimate Multisite imapambana ndi aina zokhudzana za product monga Plan, Package
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Kufuka ndi Upambana ndi Kupitiliza (Up & Downgrades)
+#### Kufuka ndi Upambana ndi Kupitiliza (Up & Downgrades) {#up--downgrades}
 
 Tabu ili imapereka njira zomwe m'muntu wamene amayamba ndi kupitiliza (upgrade and downgrade paths) zomwe akuti m'muntu wamene ali m'malo wake wosiyanasiyana.
 
@@ -169,7 +169,7 @@ Kwa mfano, ikiwa bei ya msingi ya bidhaa yako ni $29.99 kwa mwezi, unaweza kuong
 Tofauti za bei pekee haziongezi swichi au switch kwenye checkout wa frontend. Ili kuruhusu wateja kubadilishana kati ya vipindi vya malipo (kwa mfano, Mwezi / Mwaka), unahitaji kuongeza fomu ya **Period Selection** kwenye fomu yako ya checkout. Tazama [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) kwa maelekezo ya hatua kwa hatua.
 :::
 
-#### Taxes (Kodi)
+#### Taxes (Kodi) {#price-variations}
 
 Tab ya **Taxes** inalingana na mipangilio ya kodi iliyowekwa katika **Ultimate Multisite > Settings > Taxes** na hasa viwango vya kodi vilivyofafanuliwa. Ili kuwezesha kodi na kufafanua viwango vya kodi vinavyotumika, tafadhali tazama hati kwenye **Ultimate Multisite: Settings**.
 
@@ -183,7 +183,7 @@ M'mulo wosonye, tsimikizira n'mulo wosonye. Mu m'mulo wosonye (Ultimate Multisit
 
 Muli kuti muli ndi chondeka kuti product iye ndi yomwe mungafotera (taxable item), muli kukwera toggle ya **Is Taxable** kuti ikhale yomwe yomwe yomwe, ndipo muli kukhazikitsa m'mulo wosonye wosonye ku m'mulo wa Tax Category.
 
-#### Site Templates
+#### Site Templates {#taxes}
 
 M'mulo wosonye, site templates ndi WordPress websites zomwe zimaperekedwa (cloned) kwa mpaka pa site ya munthu m'maka poyamba pomwe akufotera.
 
@@ -205,7 +205,7 @@ Mwishowe, **C** **Choose Available Site Templates** kuliweka juu ya templates zi
 
 Mwishowe, ikiwepo admin wa mtandao anataka kuchagua template kwenye hatua za checkout, mipangilio ya ' _default_ ' itakubali. Badala yake, ili kuondoa na kulaza kuchagua template na kuweka kuchagua kwa mipangilio ya mpango (plan settings), chaguo la ' _assign new template_ ' au ' _choose available site templates_ ' linaweza kuwa linahitajika.
 
-#### Sites
+#### Sites {#site-templates}
 
 Tabu ya **Sites** iko sehemu ya utendaji wa mipaka wa Ultimate Multisite.
 
@@ -215,7 +215,7 @@ Kitengo hiki kinfafanua idadi kubwa ya sites ambazo mteja anaweza kuunda chini y
 
 Ili kuwasha mipaka, weka switch ya **limit sites** katika hali yake ya active na fafaniza idadi kubwa ya sites kwenye sehemu ya **site allowance**.
 
-#### Visits
+#### Visits {#sites}
 
 Tabu ya **Visits** ni sehemu nyingine ya mfumo wa mipaka wa Ultimate Multisite. Kitengo hiki kinaruhusu kuhesabu na kisha kupunguza (throttling) wageni tofauti wanaowakumbatia mteja wako kwenye site.
 
@@ -227,7 +227,7 @@ Kuti mutumizire boma lawo, timeneza toggle ya **limit unique visits** kuti ikho 
 
 Pamene limit ili lipitika, Ultimate Multisite liyenera kuchepa kutumiza site ya munthu kudzera ku kufotokoza message kuti limits zikupitika.
 
-#### Users
+#### Users {#visits}
 
 Zinthu zomwe Ultimate Multisite imapatsa za 'Users' zimenezo zina zikupatsa administrator wa network kuti amupatsa limits pa anthu omwe angayenera kutanthauza ndi roles.
 
@@ -237,7 +237,7 @@ Kuti mutumizire feature ya limits, timeneza toggle ya **limit user** kuti ikho m
 
 Mmodzi mmodzi wofotokozedwa kuti adakhale ndi limits, timeneza toggle yomwe yomwe m'mitengo yake ndipo mufotokoza limit ya mtengo wambiri m'field yomwe yomwe yomwe.
 
-#### Post Types
+#### Post Types {#users}
 
 Tabu ya **Post Types** imapatsa administrator wa network kuti amupatsa limits zosiyanasiyana pa post types zosiyanasiyana m'WordPress.
 
@@ -249,7 +249,7 @@ Kuti mutumizire subsystem ya limits iyi, timeneza toggle ya **limit post types**
 
 Muli, monga, monga, monga! Muli, monga, monga, monga!
 
-#### Disk Space
+#### Disk Space {#post-types}
 
 Tabu la **Disk Space** limalimbikani administrators wa mitengo ya mtandawuni kuti awapereka mitengo yomwe akulimbikani ndi wamwamba.
 
@@ -263,7 +263,7 @@ M'moyo wosayelo wosayelo, m'moyo wosayelo, m'moyo wosayelo. M'moyo wosayelo, m'm
 
 M'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo.
 
-#### Plugins
+#### Plugins {#disk-space}
 
 M'moyo wosayelo, m'moyo wosayelo, Ultimate Multisite wosayelo, m'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo. M'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo, m'moyo wosayelo.
 
@@ -275,7 +275,7 @@ Kutengelezo la **Force Activate & Lock** kulipeza monga momwe, koma kulipeza kut
 
 M’administrator wa mtundu wosiyansi (network administrator) mungupatsa chonde kukhulupatsa uthenga wa Force Activate & Lock ndi Force Inactivate & Lock monga momwe, monga site templates. Plugins ndi states ya plugins m'mmodzi womwe (templates) mungathandize kuti zikukonzekereka ndi uthenga uwu ngati zimene zikukonzekeridwa.
 
-#### Kukhazikitsa Kukhazikitsidwa (Reset Limitations)
+#### Kukhazikitsa Kukhazikitsidwa (Reset Limitations) {#custom-domain}
 
 Kutengelezo la **Reset Limitations** lilipeza kusintha limodzi lonse lomwe lili liliwonse m'product. Kuti utengelezo limene, chonde thandiza kwa button ya **reset limitations**.
 
@@ -285,7 +285,7 @@ Kuti uthi kuti utendeka, thandiza kukhazikitsa toggle ya **confirm reset** ku m'
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Kutsogolera, Kusintha, Kapena Kuchepa Product
+## Kutsogolera, Kusintha, Kapena Kuchepa Product {#themes}
 
 Products omwe ali pansi mungosinthwe, kuchepeke (duplicate), kapena kuchereka (delete) monga momwe mukuwera ku **Ultimate Multisite > Products** ndikupanga m'hover pa dzina la product lili pansi.
 

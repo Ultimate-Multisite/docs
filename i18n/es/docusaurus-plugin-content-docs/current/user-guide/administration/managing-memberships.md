@@ -1,22 +1,30 @@
 ---
-title: Gestión de Membresías
+title: Gestión de membresías
 sidebar_position: 9
-_i18n_hash: d941e74e4dd6d6dd462c0dfaaf81736a
+_i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestión de Memberships
+# Gestionar membresías {#managing-memberships}
 
-En Ultimate Multisite puedes gestionar memberships y acceder a todas las suscripciones en tu red. Revisa y edita los detalles de la suscripción como planes y productos, el número de sitios, el monto y frecuencia de facturación, historial de pagos y marcas de tiempo.
+En Ultimate Multisite puedes gestionar membresías y acceder a todas las suscripciones de tu red. Revisa y edita detalles de suscripción como planes y productos, el número de sitios, el importe y la frecuencia de facturación, el historial de pagos y las marcas de tiempo.
 
-Para acceder a esta página, ve a la pestaña **Memberships** en el menú de Ultimate Multisite.
+Para acceder a esta página, ve a la pestaña **Membresías** en el menú de Ultimate Multisite.
 
-![Memberships página de lista](/img/admin/memberships-list.png)
+![Página de lista de membresías](/img/admin/memberships-list.png)
 
-En la Memberships page puedes ver una lista de tus clientes y los productos asociados a sus cuentas. Puedes filtrar memberships por estado: activo, pendiente, en espera, expirado o cancelado.
+En la página de membresías puedes ver una lista de tus clientes y los productos asociados con sus cuentas. Puedes filtrar las membresías por estado: activas, pendientes, en espera, caducadas o canceladas.
 
-Haz clic en una membership para acceder a la página donde puedes editar los detalles de la membership — información de facturación, límites de sitio o visita, y más.
+Las membresías gratuitas se tratan como membresías **de por vida**. No reciben una fecha de vencimiento y no caducarán automáticamente. Si un plan gratuito debe finalizar después de una prueba o un período fijo, usa un producto de pago con una prueba, cancela manualmente la membresía o mueve al cliente a otro plan cuando su acceso deba cambiar.
 
-También puedes agregar nuevas memberships asociadas con usuarios previamente registrados en tu red. Haz clic en **Add Membership** y configura los detalles.
+Haz clic en una membresía para acceder a la página donde puedes editar los detalles de la membresía: información de facturación, límites de sitios o visitas, y más.
 
-![Add Membership modal](/img/admin/membership-add-modal.png)
+![Interfaz de edición de membresía](/img/admin/membership-edit.png)
 
-Luego haz clic en **Create Membership**. La nueva membership aparecerá en la lista de memberships.
+Aquí tienes una vista completa de la página de edición de membresía:
+
+![Interfaz completa de edición de membresía](/img/admin/membership-edit-full.png)
+
+También puedes añadir nuevas membresías asociadas con usuarios registrados previamente en tu red. Haz clic en **Añadir membresía** y configura los detalles.
+
+![Modal para añadir membresía](/img/admin/membership-add-modal.png)
+
+Luego haz clic en **Crear membresía**. La nueva membresía aparecerá en la lista de membresías.

@@ -3,17 +3,17 @@ title: Eksport ak Impor
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport & Impor
+# Eksport & Impor {#export--import}
 
 Ultimate Multisite 2.9.0 ajoute yon zouti **Export & Import** pou yon sèl sit anba **Tools > Export & Import**. It sèvi ak li lè ou bezwen pake yon sit WordPress kòm yon fichye ZIP, restaure ZIP la, oswa deplase yon sit ant enstalasyon Ultimate Multisite ak single-site WordPress ki koresponn.
 
-## Pèmisyon ki nesesè
+## Pèmisyon ki nesesè {#required-permissions}
 
 Ou dwe konekte kòm yon administrateur ki gen aksè nan mennu **Tools** WordPress sou sit ou ap eksporte oswa importe la. Sou yon rezo multisite, itilize kont yon administrateur rezo lè w ap eksporte oswa importe subsit yo soti nan zouti Ultimate Multisite nivo rezo a pou subsit yo.
 
 Download ZIP ki eksport yo sèvi atravè yon pwen download ki aplike (authenticated), kidonk kenbe sesyon admin an aktif jiskaske download la fini epi pa pataje URL download ki genyen publikman.
 
-## Eksporte yon sit kòm ZIP
+## Eksporte yon sit kòm ZIP {#exporting-a-site-to-a-zip}
 
 1. Nan admin WordPress pou sit ou vle copie a, ale nan **Tools > Export & Import**.
 2. Louvri zòn eksport la epi chwazi sit ou vle pake la.
@@ -23,7 +23,7 @@ Download ZIP ki eksport yo sèvi atravè yon pwen download ki aplike (authentica
 
 Kenbe ZIP la nan yon kote ki sekirize. Li ka gen kontni sit la, konfigirasyon, fichye medya, ak eleman kòd ki chwazi.
 
-## Sa eksport la gen ladan l
+## Sa eksport la gen ladan l {#what-the-export-includes}
 
 Yon ZIP eksport ka gen ladan:
 
@@ -34,7 +34,7 @@ Yon ZIP eksport ka gen ladan:
 
 Gwo la gwok ZIP la aktyèl depann sou kantite media, plugin ak theme ki chwazi yo, epi sou gwosè tabli baz sit la.
 
-## Importe yon sit nan yon ZIP
+## Importe yon sit nan yon ZIP {#importing-a-site-from-a-zip}
 
 1. Ale nan **Tools > Export & Import** sou sit WordPress destinasyon an.
 2. Louvri zòn import la epi telechaje ZIP ou te kreye pa zouti Export & Import la.
@@ -46,7 +46,7 @@ Gwo la gwok ZIP la aktyèl depann sou kantite media, plugin ak theme ki chwazi y
 
 Sou yon enstalasyon WordPress ki gen yon sèl sit, importe yon ZIP ap ranplase sit la ki genyen ak sit la ki te importe a. Kreye yon backup konplè nan sit objektif la anvan ou kòmanse, epi evite kòmanse plizyè import pou menm sit la an menm tan.
 
-## Limitasyon ak not ak patibilite
+## Limitasyon ak not ak patibilite {#limitations-and-compatibility-notes}
 
 - Les dossiers d'upload très volumineux ou les bibliothèques de médias peuvent produire de gros fichiers ZIP. Konfime limite d'upload PHP, limite d'exécution, espace disque, mémoire et paramètres de timeout du serveur avant d'exporter ou d'importer des sites volumineux.
 - Des bibliothèques de médias très grandes peuvent avoir besoin d'être déplacées pendant une fenêtre de maintenance à faible trafic.

@@ -3,11 +3,11 @@ title: Mwayi Wopolo wa Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Mfundo wa Kufunga Theme Builder
+# Mfundo wa Kufunga Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 imafuna **Theme Builder onboarding flow** ambayo imakutendeka kuti upange theme ya custom wakati wamba wako wa kumpanga mwanawu. Iyi imabadza mode ya Site Builder iliyopitilira ndi njira yofunika kwambiri, yomwe imapereka ufunso wa agent.
 
-## Kodi Theme Builder Onboarding Flow ndi chiyani?
+## Kodi Theme Builder Onboarding Flow ndi chiyani? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow ndi wizard wosonyeza zomwe zimapereka:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow ndi wizard wosonyeza zomwe zimapereka:
 
 Flow i limapereka ndi **Setup Assistant agent**, yomwe imapereka zofunso za kupambana ndipo imapangidwa m'mwayi.
 
-## Kufunga Theme Builder Onboarding
+## Kufunga Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Setup ya M'mwayi Woyamba (First-Run Setup)
+### Setup ya M'mwayi Woyamba (First-Run Setup) {#first-run-setup}
 
 Pamene mukuwoneza Superdav AI Agent kwa chinthu cha WordPress chiri, mukuwoneza:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Kukonza **"Build a custom theme"** kuti mukhale m'theme builder onboarding flow.
 
-### Kufunga M'mwayi Wopereka (Manual Activation)
+### Kufunga M'mwayi Wopereka (Manual Activation) {#manual-activation}
 
 Mukuwoneza kuti muli ndi ule Theme Builder onboarding kwa nthawi yomwe mukuwoneza:
 
@@ -49,9 +49,9 @@ kapena
 "Help me create a custom theme"
 ```
 
-## Zifukwa za Onboarding
+## Zifukwa za Onboarding {#the-onboarding-steps}
 
-### Step 1: Kukhonza M'mwayi (Mode Selection)
+### Step 1: Kukhonza M'mwayi (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent imapereka zofunso za m'mwayi wanu:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** imaperekedwa kwambiri kwa anthu ambiri; agent imapereka zofunso za kupanga m'mwayi monga momwe mukuwoneza ndi zomwe mukuwona.
 
-### Step 2: Kufotokoza M'site (Site Specification)
+### Step 2: Kufotokoza M'site (Site Specification) {#step-2-site-specification}
 
 Mukuwoneza za site yanu:
 
@@ -74,7 +74,7 @@ Mukuwoneza za site yanu:
 
 This information iye itiririra mu **site_brief** memory yawe, kuli mwayi wosomera ku sessions zina.
 
-### Step 3: Design System Decisions
+### Step 3: Design System Decisions {#step-3-design-system-decisions}
 
 Agent yake uliwonetsa kuti muliwo mwayi wosomera ku design tokens (design elements):
 
@@ -83,7 +83,7 @@ Agent yake uliwonetsa kuti muliwo mwayi wosomera ku design tokens (design elemen
 - **Spacing**: Compact, normal, or spacious layouts
 - **Motion**: Animations and transitions (if desired) - Kuti muliwo mwayi wosomera ku animations na transitions.
 
-### Step 4: Theme Generation
+### Step 4: Theme Generation {#step-4-theme-generation}
 
 Setup Assistant agent yake uliwonetsa theme yawe ya custom (custom block theme) naliye:
 
@@ -92,7 +92,7 @@ Setup Assistant agent yake uliwonetsa theme yawe ya custom (custom block theme) 
 - Custom block styles zomwe zimakwanira design system yawe
 - Theme metadata na declarations za WordPress
 
-### Step 5: Activation and Verification
+### Step 5: Activation and Verification {#step-5-activation-and-verification}
 
 Theme iye imalimbikira (automatically activated), ndipo muliwo mwayi wosomera kuona:
 

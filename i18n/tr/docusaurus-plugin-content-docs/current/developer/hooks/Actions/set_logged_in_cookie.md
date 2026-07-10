@@ -4,11 +4,11 @@ title: Eylem - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Aksiyon: set_logged_in_cookie
+# Aksiyon: set_logged_in_cookie {#action-setloggedincookie}
 
 Oturum açmış kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tür | Açıklama |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Oturum açmış kimlik doğrulama çerezi ayarlanmadan hemen önce tetiklenir.
 | $scheme | `string` | Kimlik doğrulama şeması. Varsayılan değeri 'logged_in'. |
 | $token | `string` | Bu çerez için kullanılacak kullanıcının oturum token'ı. |
 
-### Ne Zaman
+### Ne Zaman {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> parametresi eklendi.
-### Kaynak
+### Kaynak {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) dosyasında 141. satırda tanımlanmıştır.

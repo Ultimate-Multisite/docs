@@ -3,17 +3,17 @@ title: Integració amb cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Integració amb cPanel
+# Integració amb cPanel {#cpanel-integration}
 
-## Visió general
+## Visió general {#overview}
 cPanel és un dels panells de control de *hosting* web més populars utilitzats per molts proveïdors de *hosting* compartit i dedicat. Aquesta integració permet la sincronització automàtica de domini entre Ultimate Multisite i cPanel, cosa que et permet afegir automàticament alias de domini i subdomini al teu compte de cPanel.
 
-## Funcionalitats
+## Funcionalitats {#features}
 - Creació automàtica de domini add-on (addon domain) a cPanel
 - Creació automàtica de subdomini a cPanel (per instal·lacions multisite de subdomini)
 - Eliminació de domini quan es suprimeixen les assignacions (mappings)
 
-## Requisits
+## Requisits {#requirements}
 Les constants siguents han de ser definides al teu fitxer `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default és 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default és /public_html
 ```
 
-## Instruccions de configuració
+## Instruccions de configuració {#setup-instructions}
 
-### 1. Obtén les credencials de cPanel
+### 1. Obtén les credencials de cPanel {#1-get-your-cpanel-credentials}
 
 1. Obtén el nom d'usuari i la contrasenya de cPanel del teu proveïdor de *hosting*.
 2. Determina l'host de cPanel (normalment `cpanel.yourdomain.com` o `yourdomain.com:2083`).
 
-### 2. Afegir constants a wp-config.php
+### 2. Afegir constants a wp-config.php {#2-add-constants-to-wp-configphp}
 
 Afegir les constants siguents al teu fitxer `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Canvia si el teu cPanel utilitza un port dife
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Canvia si el teu directori r的一次 és diferent
 ```
 
-### 3. Activar l'integració
+### 3. Activar l'integració {#3-enable-the-integration}
 
 1. A l'administració de WordPress, veu a Ultimate Multisite > Settings.
 2. Navega a la pestanya "Domain Mapping".
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Canvia si el teu directori r的
 4. Activa l'integració de cPanel.
 5. Clica a "Save Changes".
 
-## Com funciona
+## Com funciona {#how-it-works}
 
-### Domini add-on (Addon Domains)
+### Domini add-on (Addon Domains) {#addon-domains}
 
 Quan un domini es mapeja a Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Quan un domini es mapeja a Ultimate Multisite:
 2. El domini es configura per apuntar al teu directori r的一次.
 3. Quan es suprimeix un mapeig de domini, l'integració eliminarà el domini add-on de cPanel.
 
-### Subdominis
+### Subdominis {#subdomains}
 
 Per instal·lacions multisite de subdomini, quan es crea un site nou:
 
@@ -79,27 +79,27 @@ Per instal·lacions multisite de subdomini, quan es crea un site nou:
 2. Envía una sol·licitud a l'API de cPanel per afegir el subdomini.
 3. El subdomini es configura per apuntar al teu directori r的一次.
 
-## Notes importants
+## Notes importants {#important-notes}
 
 - L'integració utilitza l'API2 de cPanel per comunicar-se amb el teu compte de cPanel.
 - El teu compte de cPanel ha de tenir permisos per afegir domini add-on i subdominis.
 - Alguns proveïdors de *hosting* poden limitar el nombre de domini add-on o subdominis que pots crear.
 - L'integració no gestiona la configuració de DNS; encara necessites apuntar els teus dominis a la adreça IP del teu servidor.
 
-## Solucionar problemes
+## Solucionar problemes {#troubleshooting}
 
-### Problemes de connexió a l'API
+### Problemes de connexió a l'API {#api-connection-issues}
 - Verifica que el teu nom d'usuari i contrasenya de cPanel són correctes.
 - Comprova que l'host de cPanel és correcte i accessible.
 - Assegura't que el teu compte de cPanel té els permisos necessaris.
 - Intenta utilitzar l'URL completa per l'host (per exemple, `https://cpanel.yourdomain.com`).
 
-### Domini no afegit
+### Domini no afegit {#domain-not-added}
 - Comprova els *logs* d'Ultimate Multisite per detectar qualsevol missatge d'error.
 - Verifica que el domini no estigui ja afegit a cPanel.
 - Assegura't que el teu compte de cPanel no ha arribat al seu límit de domini add-on o subdominis.
 
-### Problemes amb el certificat SSL
+### Problemes amb el certificat SSL {#ssl-certificate-issues}
 - L'integració no gestiona l'emissió de certificats SSL.
 - Hauràs de utilitzar les eines SSL/TLS de cPanel o la funció AutoSSL per emetre certificats SSL per als teus dominis.
 - Alternativament, pots utilitzar un servei com Let's Encrypt amb AutoSSL de cPanel.

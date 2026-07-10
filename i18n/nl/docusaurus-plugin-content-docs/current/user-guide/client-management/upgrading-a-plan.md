@@ -1,58 +1,58 @@
 ---
-title: Een plan upgraden
+title: Een abonnement upgraden
 sidebar_position: 11
-_i18n_hash: b0c02a1c1b12946cb507e8486e0d74e3
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Een Plan Upgraden (v2)
+# Een abonnement upgraden (v2) {#upgrading-a-plan-v2}
 
-_**BELANGRIJK: Deze artikel verwijst naar Ultimate Multisite versie 2.x.**_
+_**BELANGRIJKE OPMERKING: Dit artikel verwijst naar Ultimate Multisite versie 2.x.**_
 
-Uw klanten kunnen hun plannen op elk moment upgraden. Ze kunnen ofwel upgraden naar een ander plan of extra diensten of pakketten kopen die u op uw netwerk aanbiedt.
+Je klanten kunnen hun abonnementen op elk moment upgraden. Ze kunnen upgraden naar een ander abonnement of extra diensten of pakketten aanschaffen die je op je netwerk aanbiedt.
 
-In deze tutorial behandelen we hoe ze hun plan kunnen upgraden en wat er gebeurt na het upgradeproces.
+In deze tutorial behandelen we hoe ze hun abonnement kunnen upgraden en wat er gebeurt na het upgradeproces.
 
-Om hun plan te upgraden, moeten uw klanten hun dashboard openen en naar de **Account** pagina gaan.
+Om hun abonnement te upgraden, moeten je klanten naar hun Dashboard gaan en naar de pagina **Account** gaan.
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![Dashboard van klant-subsite met Account-menulink zichtbaar](/img/account-page/account-menu.png)
 
-Op de Account pagina wordt hun huidige lidmaatschap en het bijbehorende plan getoond. Om naar een ander plan te upgraden, moeten ze op **Change** klikken in de rechterbovenhoek van de sectie **Your Membership**.
+Op de Account-pagina zien ze hun huidige membership en het bijbehorende abonnement. Om naar een ander abonnement te upgraden, moeten ze rechtsboven in de sectie **Your Membership** op **Wijzigen** klikken.
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![Account-pagina Your Membership-kaart met knop Wijzigen](/img/account-page/membership-change-button.png)
 
-Ze worden doorgestuurd naar een afrekenformulier waarop alle beschikbare plannen worden weergegeven.
+Ze worden doorgestuurd naar een checkout-formulier waar alle beschikbare abonnementen worden weergegeven.
 
-Ze kunnen ook de **services and packages available for their current plan** zien, voor het geval ze alleen een specifieke dienst of pakket willen kopen (zoals onbeperkte bezoeken of schijfruimte in ons voorbeeld hier), en het plan niet willen upgraden.
+Ze kunnen ook de **diensten en pakketten zien die beschikbaar zijn voor hun huidige abonnement** , voor het geval ze alleen een specifieke dienst of pakket willen aanschaffen (zoals onbeperkte bezoeken of schijfruimte in ons voorbeeld hier), en het abonnement niet willen upgraden.
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![Upgradekiezer met beschikbare abonnementen en pakketten aan klantzijde](/img/account-page/upgrade-picker.png)
 
-Nadat ze het product hebben gekozen dat ze willen kopen, zien ze hoeveel ze nu moeten betalen - exclusief eventuele bestaande credit - en hoeveel ze op de volgende factuurdatum zullen worden gefactureerd.
+Nadat ze het product hebben gekozen dat ze willen aanschaffen, zien ze hoeveel ze nu moeten betalen - exclusief eventueel bestaand tegoed - en hoeveel er op de volgende factuurdatum in rekening wordt gebracht.
 
-Meestal, als het product een ander plan is en de betaling tussen een lidmaatschapskosten plaatsvindt, ontvangen ze een credit voor het bedrag dat op het eerste plan is betaald.
+Meestal, als het product een ander abonnement is en de betaling tussen membership-kosten plaatsvindt, ontvangen ze een tegoed voor het bedrag dat op het eerste abonnement is betaald.
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![Upgradebetalingssamenvatting met toegepast tegoed en bedrag voor volgende facturering](/img/account-page/upgrade-summary.png)
 
-Als ze een plan of pakket selecteren dat niets verandert aan het huidige abonnement, zien ze een bericht dat dit uitlegt.
+Als ze een abonnement of pakket selecteren dat niets verandert aan het huidige abonnement, zien ze een bericht dat dit uitlegt.
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![Melding wanneer het geselecteerde abonnement het abonnement niet wijzigt](/img/account-page/upgrade-no-change.png)
 
-Nadat de afrekening is voltooid, worden de nieuwe product(en) toegevoegd aan het account van uw klanten en worden alle limieten of functies van het nieuwe product(en) meteen toegevoegd: bezoeken, schijfruimte, berichten, enz...
+Nadat de checkout is voltooid, worden de nieuwe product(en) toegevoegd aan het Account van je klanten en worden alle limieten of functies van de nieuwe product(en) er direct aan toegevoegd: bezoeken, schijfruimte, berichten, enz...
 
-## 
+##
 
-## 
+##
 
-## Upgrade- en Downgradepaden
+## Upgrade- en downgradepaden {#upgrade-and-downgrade-paths}
 
-Op elk van uw producten heeft u een **Up & Downgrades** tab. De eerste optie op die tab is een veld genaamd **Plan Group**.
+Op elk van je producten heb je een tabblad **Up & Downgrades**. De eerste optie op dat tabblad is een veld met de naam **Plan Group**.
 
-**Plan groups** is wat u Ultimate Multisite laat weten dat bepaalde plannen tot dezelfde "familie" behoren, en daarom moeten worden gebruikt om upgrade/downgradepaden te construeren.
+**Abonnementsgroepen** is wat je in staat stelt Ultimate Multisite te laten weten dat bepaalde abonnementen tot dezelfde "familie" behoren en daarom moeten worden gebruikt om opties voor upgrade-/downgradepaden te maken.
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+![Product bewerken Up and Downgrades-tabblad met Plan Group-veld](/img/config/product-upgrades-plan-group.png)
 
-Bijvoorbeeld, u heeft een **Free plan**, een **Basic Plan** en een **Premium Plan** beschikbaar. U wilt dat gebruikers die zich hebben geabonneerd op het **Free Plan** alleen kunnen upgraden naar het **Premium Plan** en dat ze het "Basic Plan" niet als upgrade-optie zien. Alles wat u hoeft te doen, is dezelfde plan group naam toewijzen aan zowel het **Free** als het **Premium** plan zoals getoond in de onderstaande screenshots.
+Bijvoorbeeld: je hebt een **Gratis abonnement** , een **Basisabonnement** en een **Premiumabonnement** beschikbaar. Je wilt dat gebruikers die onder het **Gratis abonnement** zijn geabonneerd alleen kunnen upgraden naar het **Premiumabonnement** en je wilt niet dat ze het "Basisabonnement" als upgradeoptie zien. Het enige wat je hoeft te doen, is dezelfde naam voor de abonnementsgroep toewijzen aan zowel de gratis als premium abonnementen, zoals weergegeven in de onderstaande schermafbeeldingen.
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Productpagina Gratis abonnement met toegewezen High End-abonnementsgroep](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Productpagina Premiumabonnement met toegewezen High End-abonnementsgroep](/img/config/product-upgrades-premium.png)
 
-Wat dit moet doen, is **Ultimate Multisite** laten weten dat er een "familie" van plannen in het netwerk is genaamd **High End**. Bij het aanbieden …
+Dit zou Ultimate Multisite moeten vertellen dat er een "familie" van abonnementen in het netwerk is met de naam **High End**. Bij het aanbieden van upgrades of downgrades worden alleen abonnementen uit dezelfde familie als optie aan de gebruiker gepresenteerd.

@@ -3,17 +3,17 @@ title: Eadromadh agus Inteacht
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Céadú Ultimate Multisite 2.9.0 curte **Export & Import** (Export & Import) céadach ar an bhfoghla **Tools > Export & Import**. Use é seo nuair tá tú ag iarraidh pácaidh site WordPress atá ag cur isteach mar ZIP file, aistriú é sin ZIP, nó siúite site ó chuid eile leat ag cur isteach idir na WordPress installations Ultimate Multisite agus single-site.
 
-## Permisiúní ag cur fáil
+## Permisiúní ag cur fáil {#required-permissions}
 
 Is féidir leat a bheith ag login mar administrator atá ag cur féin ar an menu **Tools** (Foghla) ar an site atá ag cur fáil nó ag cur isteach. Ar na ngrúpa multisite, usaigh account administrator network when export nó import subsites ó tool Ultimate Multisite level network.
 
 Tá download ZIP a chur ar fáil tríd endpoint download authenticated, mar sin déan seisiún admin (admin session) go léir go dtí an t-download a deireann agus ní a chur ar fáil na URL download a bhfoghla publiquint.
 
-## Exportú site go ZIP
+## Exportú site go ZIP {#exporting-a-site-to-a-zip}
 
 1. Ag admin WordPress do site atá ag cur isteach, rag thar **Tools > Export & Import**.
 2. Lán an áireacht export (export area) agus chun an site atá ag pácaidh tú a chosadh.
@@ -22,7 +22,7 @@ Tá download ZIP a chur ar fáil tríd endpoint download authenticated, mar sin 
 
 Tá méid an t-aonadh ZIP ag dépend ar an méid de mídia, na pluginí agus na themeat a chur i bhfeic, agus ar méid tábla dbhailte an sinte.
 
-## Importú sinte ó ZIP
+## Importú sinte ó ZIP {#what-the-export-includes}
 
 1. And le **Tools > Export & Import** ar an sinte WordPress a bhfuil tú ag cur i bhfeic.
 2. Lán an áit import agus lán an ZIP atá ag cur i bhfeic a chur in áit.

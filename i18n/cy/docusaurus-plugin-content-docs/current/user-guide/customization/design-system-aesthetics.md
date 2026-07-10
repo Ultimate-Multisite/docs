@@ -3,11 +3,11 @@ title: Ffarddau Estetig System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Faddau Gweithro System Cynllunio (Design System Aesthetics Skill)
+# Faddau Gweithro System Cynllunio (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 Mae'r **Faddau Gweithro System Cynllunio** yn ffordd cyfarwydd i gwneud eich identiti wizual o'r safle. Mae’n helpu chi i wneud penderfyniadau ddefnyddiol am y tipografia, colore, sgwllt (spacing), a tokenau chwarae (motion tokens) sydd yn cyflwyno eich system cynllunio.
 
-## Beth yw Faddau Gweithro System Cynllunio?
+## Beth yw Faddau Gweithro System Cynllunio? {#what-is-design-system-aesthetics}
 
 Mae Faddau Gweithro System Cynllunio yn gweithd yn ddefnyddiol sy mae'n cyflwyno:
 
@@ -20,9 +20,9 @@ Mae Faddau Gweithro System Cynllunio yn gweithd yn ddefnyddiol sy mae'n cyflwyno
 
 Mae'r penderfyniadau hyn yn cael eu cadw mewn ffeil `theme.json` o'ch theme, gan creu system wizual sydd yn cysylltiedig.
 
-## Pam i ddefnyddio Faddau Gweithro System Cynllunio?
+## Pam i ddefnyddio Faddau Gweithro System Cynllunio? {#why-use-design-system-aesthetics}
 
-### Cyflawniad (Consistency)
+### Cyflawniad (Consistency) {#consistency}
 
 Mae system cynllunio yn sicru:
 
@@ -31,7 +31,7 @@ Mae system cynllunio yn sicru:
 - Mae sgwllt yn arolio pethau cyffredinol
 - Mae animacioedd yn teimlo yn unigol
 
-### Efniad (Efficiency)
+### Efniad (Efficiency) {#efficiency}
 
 Yn lle gwneud penderfyniadau cynllunio ar gyfer peiriad, chi:
 
@@ -39,7 +39,7 @@ Yn lle gwneud penderfyniadau cynllunio ar gyfer peiriad, chi:
 - Cyflwyni nhw yn bresennol
 - Gwylio'r cyflym yn llwyr drwy newid un gwerth
 
-### Glyndyniad (Flexibility)
+### Glyndyniad (Flexibility) {#flexibility}
 
 Gallwch chi:
 
@@ -47,9 +47,9 @@ Gallwch chi:
 - Experimentio gyda chwaraeif wizual cyffredinol
 - Cadw y cysylltiad brand yn ddefnyddiol traws eich gwella
 
-## Cyflwyno Faddau Gweithro System Cynllunio
+## Cyflwyno Faddau Gweithro System Cynllunio {#triggering-the-design-system-aesthetics-skill}
 
-### Actiad Manwl (Manual Activation)
+### Actiad Manwl (Manual Activation) {#manual-activation}
 
 Gallwch chi entyn yr faddau i unrhyw amser:
 
@@ -69,7 +69,7 @@ neu
 "Guide me through design system decisions"
 ```
 
-### Gysylltiadau Awtorol (Automatic Suggestions)
+### Gysylltiadau Awtorol (Automatic Suggestions) {#automatic-suggestions}
 
 Gall y agentau roi cyflwyniad i ddefnyddio'r faddau pan:
 
@@ -78,9 +78,9 @@ Gall y agentau roi cyflwyniad i ddefnyddio'r faddau pan:
 - Mae'n gallu gwneud ychwaneg i cyflawniad wizual
 - Mae'n parhau i ddefnyddio eich safle
 
-## Proses Estetika y System Design
+## Proses Estetika y System Design {#the-design-system-aesthetics-process}
 
-### Ystaf 1: Tipografia
+### Ystaf 1: Tipografia {#step-1-typography}
 
 Ymhlif yw'r aith yn dangos am eich dechrau ffôn:
 
@@ -110,7 +110,7 @@ Yn ymlaen, mae'r aith yn cyflwyno:
 - **Cyfaint o balw (Weight scale)**: Balw ffôn (reglar, meddal, bold, etc.)
 - **Llinell uchel (Line height)**: Gwmpas rhwng llinellau i sicr cyflawniaeth
 
-### Ystaf 2: Palet Colori
+### Ystaf 2: Palet Colori {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -136,7 +136,7 @@ Mae'r aith yn creu palet llawn sy'n cynnwys:
 - Colort semantigol (cyfathrebu, addas, erru)
 - Cygiadau hover ac active
 
-### Ystaf 3: Gwmpas (Spacing)
+### Ystaf 3: Gwmpas (Spacing) {#step-3-spacing}
 
 Pa bethau roedd byddwch yn dymunio?
 
@@ -156,7 +156,7 @@ Mae'r agent yn cyflwyno tokenau o sgil (spacing tokens):
 - Scale: xs, sm, md, lg, xl, 2xl
 - Gwerthau penodol ar gyfer padding, margin, gap
 
-### Cynllun 4: Bwrdd a Chysgodau (Borders and Shadows)
+### Cynllun 4: Bwrdd a Chysgodau (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Dyfyniadol a ddefnyddiolwch:
@@ -179,7 +179,7 @@ Mae'r agent yn creu:
 - Tokenau chysgodau ar gyfer leblon ddwfn (elevation levels)
 - Tokenau llwybr bwrdd (border width tokens)
 
-### Cynllun 5: Mewn a Chysgodau (Motion and Animation)
+### Cynllun 5: Mewn a Chysgodau (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Sutgai'r safle eich gwefanio pan fydd yn weithredol?
@@ -201,9 +201,9 @@ Mae'r agent yn cyflwyno:
 - Ffuntion ease (ease functions) (ease-in, ease-out, ease-in-out)
 - Keyframes chysgodau ar gyfer y gweithrediadau cyffredinol
 
-## Cyflwyno Estetika System Cynllunio (Applying Design System Aesthetics)
+## Cyflwyno Estetika System Cynllunio (Applying Design System Aesthetics) {#applying-design-system-aesthetics}
 
-### Cyflwyniad Otomatig (Automatic Application)
+### Cyflwyniad Otomatig (Automatic Application) {#automatic-application}
 
 Ar ôl i chi gwblhau'r sgil, mae'r agent yn:
 
@@ -212,7 +212,7 @@ Ar ôl i chi gwblhau'r sgil, mae'r agent yn:
 3. Mae'n creu'r stylau block i gyd-fynd â'r system newydd
 4. Mae'n gweithredu'r theme wedi'i cyfathri
 
-### Cyflwyniad Manwl (Manual Application)
+### Cyflwyniad Manwl (Manual Application) {#manual-application}
 
 Gallwch hefyd redig `theme.json` yn uniongyrchol:
 
@@ -251,9 +251,9 @@ Gallwch hefyd redig `theme.json` yn uniongyrchol:
 }
 ```
 
-## Gwelwch eich System Cynllunio (Design System) gweld
+## Gwelwch eich System Cynllunio (Design System) gweld {#viewing-your-design-system}
 
-### Mae'n gofynol i'r Agent
+### Mae'n gofynol i'r Agent {#ask-the-agent}
 
 ```
 "Wynni i ddweud am fy system cynllunio"
@@ -267,13 +267,13 @@ neu
 
 Bydd y agent yn dangos eich tyngeddiad (typography), celfau (colors), cyflenau (spacing) a tokenau eraill.
 
-### Gweld theme.json
+### Gweld theme.json {#view-themejson}
 
 Odwyn `/wp-content/themes/[theme-name]/theme.json` mewn editor text i weld y cyfarwyddiadau cynllunio sydd yn gwrth.
 
-## Cyfathri'r System Cynllunio eich Cynllunio (Design System)
+## Cyfathri'r System Cynllunio eich Cynllunio (Design System) {#updating-your-design-system}
 
-### Cyfathriadau Cyflym
+### Cyfathriadau Cyflym {#quick-updates}
 
 Gofyn i'r agent am newidiadau penodol:
 
@@ -293,7 +293,7 @@ neu
 "Newi'r font o ddeallt i'r serif"
 ```
 
-### Cynllunio Canol
+### Cynllunio Canol {#full-redesign}
 
 Rydych chi'n re-run y gweithd System Cynllunio:
 
@@ -303,7 +303,7 @@ Rydych chi'n re-run y gweithd System Cynllunio:
 
 Bydd hyn yn gwneud eich cyflwyniad allan gyda'r holl ddefnyddiau, gan entynnu â'r gyfnodau sydd gennych.
 
-### Cyfathriadau Parcellol
+### Cyfathriadau Parcellol {#partial-updates}
 
 Cyfathriwch ystafellau penodol:
 
@@ -311,15 +311,15 @@ Cyfathriwch ystafellau penodol:
 "Newi'r celf prynhawn yn unig, gwella'r holl ddiweddion"
 ```
 
-## Practysgol Cynllunio System Cynllunio (Design System Best Practices)
+## Practysgol Cynllunio System Cynllunio (Design System Best Practices) {#design-system-best-practices}
 
-### Cyflawniad (Consistency)
+### Cyflawniad (Consistency) {#consistency-1}
 
 - Defnyddiw ystafellau yr unol mewn lleoliadau cyfan.
 - Peidiwch â creu celfau neu gyflenau unig.
 - Gyf surfers ystafellau yn lle gwneud gweithiau arall.
 
-### Enwio (Naming)
+### Enwio (Naming) {#naming}
 
 Defnyddiw enwau llwyr a ddefnyddiol:
 
@@ -329,7 +329,7 @@ Defnyddiw enwau llwyr a ddefnyddiol:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Cyflawniad (Scalability)
+### Cyflawniad (Scalability) {#scalability}
 
 Dyfynwch eich system o ddefnyddio i'r llwybr:
 
@@ -337,15 +337,15 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Creu gaelau (xs, sm, md, lg, xl) yn lle gaelau anghyfrifol
 - Rheoli ar gyfer y cyflwyniadau yn ddiweddarach
 
-### Ddweud eich system o ddefnyddio i'r llwybr:
+### Ddweud eich system o ddefnyddio i'r llwybr: {#documentation}
 
 - Pam mae eich gweldau penodol wedi'i debyd?
 - Pan fyddwch â defnyddio pob token?
 - Arafau a casgliadau hanesyddol
 
-## Modelau System Ddefnyddio Cym yn Gymunedol
+## Modelau System Ddefnyddio Cym yn Gymunedol {#common-design-system-patterns}
 
-### Minimalist Modern
+### Minimalist Modern {#modern-minimalist}
 
 - Typography sans-serif (Inter, Helvetica)
 - Palet gaelau sydd yn rhydd (2-3 gaelau)
@@ -353,7 +353,7 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Shadau bach
 - Animau llwybr a cyflym
 
-### Warm a Cynfrifol
+### Warm a Cynfrifol {#warm-and-friendly}
 
 - Cyfathrebu o serif a sans-serif
 - Palet gaelau warm (oranges, grays warm)
@@ -361,7 +361,7 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Shadau soft
 - Animau chwarae
 
-### Corporation Profynol
+### Corporation Profynol {#professional-corporate}
 
 - Sans-serif glân (Roboto, Open Sans)
 - Palet neithiol gyda gael warm
@@ -369,7 +369,7 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Shadau bach yn rhydd
 - Chynlluniau subtil
 
-### Chreol a Bwlch
+### Chreol a Bwlch {#creative-and-bold}
 
 - Typography yn ddebygol
 - Palet gaelau bwlch
@@ -377,7 +377,7 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Shadau gryf
 - Animau sylweddol
 
-## Cyflwyniadau
+## Cyflwyniadau {#troubleshooting}
 
 **Mae'r newidiadau i fy system o ddefnyddio yn dangos**
 - Tglwytho'r cache o'r browser
@@ -395,7 +395,7 @@ Dyfynwch eich system o ddefnyddio i'r llwybr:
 - Redig trwyllaw theme.json yn newid i gaelau blaenorol
 - Re-run y skill gyda chwilioedd cyffredinol
 
-## Ymddangosau Canolbwynt
+## Ymddangosau Canolbwynt {#next-steps}
 
 Ar ôl i ddynnu eich system o ddefudio:
 

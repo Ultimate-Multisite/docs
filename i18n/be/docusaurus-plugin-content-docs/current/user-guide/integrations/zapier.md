@@ -1,78 +1,98 @@
 ---
-title: Інтыграцыя Zapier
+title: Інтэграцыя Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Інтыгрэйцыя Ultimate Multisite з Zapier
+# Інтэграцыя Ultimate Multisite з Zapier {#integrating-ultimate-multisite-with-zapier}
 
-У адным з артыкулаў мы разглядалі [Webhooks](webhooks.md) і тое, як іх можна выкарыстоўваць для інтыгрэйцыі з стороннімі праграмами.
+У адным з артыкулаў мы абмяркоўвалі [Webhooks](webhooks.md) і тое, як іх можна выкарыстоўваць для інтэграцыі з праграмамі трэціх бакоў.
 
-Выкарыстанне webhooks трохі складана, бо гэта патрабуе пашыраных ведаў у кадэванні і разумення, як прымацаваць (catch) payloads. Выкарыстанне **Zapier** — гэта спосаб, які дазваляе вам пазбегнуць гэтай складанасці.
+Выкарыстанне webhooks крыху складанае, бо патрабуе паглыбленых ведаў у праграмаванні і перахопе payloads. Выкарыстанне **Zapier** — гэта спосаб абысці гэта.
 
-Zapier мае інтыгрэйцыю з больш за 5000+ праграмамі, што палічвае ўваску ў спілкуванні паміж рознымі праграмамі.
+Zapier мае інтэграцыю з больш чым 5000+ праграмамі, што спрашчае камунікацыю паміж рознымі праграмамі.
 
-Вы можаце ствараць **Triggers**, якія актывуюцца, калі адбываюцца падбыты на вашай сетцы (напрыклад, ствараецца кант, што актывуе падбыт `account_create`), або ствараць **Actions** на вашай сетцы, якія рэагуюць на знешнія падбыты (напрыклад, стварэнне новай рэгістрацыі карыстальніка ў вашай сетцы Ultimate Multisite).
+Вы можаце ствараць **Triggers**, якія будуць спрацоўваць, калі падзеі адбываюцца ў вашай сетцы (напрыклад, ствараецца Account і запускае падзею account_create), або генерыраваць **Actions** у вашай сетцы ў адказ на знешнія падзеі (напрыклад, стварыць новае сяброўства Account у вашай сетцы Ultimate Multisite).
 
-Гэта магчыма, бо **Ultimate Multisite Zapier's triggers** і actions працуюць на аснове [REST API](https://developer.ultimatemultisite.com/api/docs/).
+Гэта магчыма таму, што **трыгеры Ultimate Multisite Zapier** і дзеянні працуюць на базе [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Як пачаць
+## Як пачаць {#how-to-start}
 
-Перш за ўсё, знайдзіце Ultimate Multisite ў спісе праграм Zapier. Альтэрнатыўна, вы можаце націснуць на [гэ ўяўленне](https://zapier.com/apps/wp-ultimo/integrations).
+Спачатку знайдзіце Ultimate Multisite у спісе праграм Zapier. Альбо вы можаце націснуць [гэтую спасылку](https://zapier.com/apps/wp-ultimo/integrations).
 
-Зайдзіце на свой дашборд і націсніце кнопку **+ Create Zap** у боковым меню, каб наладзіць новы Zap.
+Перайдзіце ў свой Dashboard і націсніце кнопку **+** **Create Zap** на левай бакавой панэлі, каб наладзіць новы Zap.
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Dashboard Zapier з кнопкай Create Zap](/img/admin/webhooks-list.png)
 
-Вас перанаправяць на старонку стварэння Zap.
+Вы будзеце перанакіраваны на старонку стварэння Zap.
 
-У полі пошуку ўвярбіце "wp ultimo". Націсніце, каб выбраць варыянт **Beta**.
+У поле пошуку ўвядзіце "wp ultimo". Націсніце, каб выбраць опцыю версіі **Beta**.
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![Пошук WP Ultimo ў спісе праграм Zapier](/img/admin/webhooks-list.png)
 
-Пасля выбару нашай праграмы, выберыце даступны падбыт: **New Ultimate Multisite Event**.
+Пасля выбару нашай праграмы выберыце даступную падзею: **New Ultimate Multisite Event**.
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![Выбар трыгера New Ultimate Multisite Event](/img/admin/webhooks-list.png)
 
-Цяпер нам трэба даць Zapier доступ **до вашай сеткі**. Націску ў **Sign in** адкрэе новае акно, якое патрабуе **API credentials**.
+Цяпер нам трэба даць Zapier доступ да **вашай сеткі**. Націсканне **Sign in** адкрые новае акно, дзе патрэбны **уліковыя даныя API**.
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![Запыт Zapier Sign in для ўліковых даных API](/img/admin/webhooks-list.png)
 
-Зайдзіце на адмінскую панэль вашай сеткі і перайдзіце ў **Ultimate Multisite > Settings** > **API & Webhooks**, а ўкрэсліце ў секцыі API Settings.
+Перайдзіце ў панэль адміністратара вашай сеткі і адкрыйце **Ultimate Multisite > Settings** > **API & Webhooks**, затым знайдзіце раздзел API Settings.
 
-Выберыце варыянт **Enable API**, бо гэта патрабавальна для працы гэтага злучэння.
+Выберыце опцыю **Enable API**, бо яна неабходная для працы гэтага злучэння.
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![Налады API and Webhooks з опцыямі API Settings і Enable API](/img/admin/settings-api-webhooks.png)
 
-Выкарыстоўвайце значок **Copy to Clipboard** у полі API Key і API Secret і ўстаўце гэтыя значэнні на экране інтыгрэйцыі.
+Выкарыстайце значок **Copy to Clipboard** у палях API Key і API Secret і ўстаўце гэтыя значэнні на экране інтэграцыі.
 
-У полі URL ўкажыце поўны URL вашай сеткі, уключаючы пратакол (HTTP або HTTPS).
+У поле URL увядзіце поўны URL вашай сеткі, уключаючы пратакол (HTTP або HTTPS).
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![Экран інтэграцыі Zapier з палямі API Key, Secret і URL](/img/admin/webhooks-list.png)
 
-Націсніце кнопку **Yes, Continue**, каб прайсці да наступнага кроку. Калі ўсё прайшло па плану, вы павінны відаць свой новы звязаны кант! Націсніце **Continue**, каб стварыць новы trigger.
+Націсніце кнопку **Yes, Continue**, каб перайсці да наступнага кроку. Калі ўсё атрымаецца, вас сустрэне ваш новы падключаны Account! Націсніце **Continue**, каб стварыць новы трыгер.
 
-## Як стварыць новы Trigger
+## Як стварыць новы Trigger {#how-to-create-a-new-trigger}
 
-Цяпер, калі ваш кант звязаны, вы можаце ўбачыць даступныя падбыты. Для гэтага туториала выберім падбыт **payment_received**.
+Цяпер, калі ваш Account падключаны, вы можаце бачыць даступныя падзеі. Давайце выберам падзею **payment_received** для гэтага падручніка.
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+![Выбар падзеі payment_received у трыгеры Zapier](/img/admin/webhooks-list.png)
 
-Пасля выбару падбыту і націску на **continue**, з'явіцца **test step**.
+Пасля таго як падзея была выбрана і вы націснеце **continue** , з’явіцца **тэставы крок**.
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![Тэставы крок Zapier для трыгера](/img/admin/webhooks-list.png)
 
-На гэтым этапе Zapier праверыць, ці можа ваш Zap **адказаць (fetch) канкрэтны payload для гэтага падбыту**. У будучыні, падчас падбытаў той жа тып, будзе адпраўляцца інфармацыя з такой жа структуры.
+На гэтым этапе Zapier праверыць, ці можа ваш Zap **атрымаць канкрэтны payload для гэтай падзеі**. У будучых падзеях таго ж тыпу будзе адпраўляцца інфармацыя з такой жа структурай.
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![Тэст трыгера Zapier паспяхова завершаны з payload](/img/admin/webhooks-list.png)
 
-У нашым туториале тэст быў **completed successfully** і паказаў прыклад інфармацыі payload. Гэты прыклад будзе карысным для нас падчас стварэння actions. Ваш trigger цяпер створаны і гатовы для злучэння з іншымі праграмамі.
+У нашым падручніку тэст быў **паспяхова завершаны** і вярнуў прыклад інфармацыі payload. Гэтая прыкладная інфармацыя будзе карыснай як арыенцір пры стварэнні дзеянняў. Ваш трыгер цяпер створаны і гатовы да падключэння да іншых праграм.
 
-## Як стварыць Actions
+## Як стварыць Actions {#how-to-create-actions}
 
-Actions выкарыстоўваюць інфармацыю з іншых triggers для стварэння новых запісаў у вашай сетцы.
+Actions выкарыстоўваюць інфармацыю з іншых трыгераў, каб ствараць новыя запісы ў вашай сетцы.
 
-Падчас **стварэння кроку action** вы ўкажыце Ultimate Multisite **Beta** і варыянт **Create Items on Ultimate Multisite**.
+На **кроку стварэння дзеяння** вы выбераце Ultimate Multisite **Beta** і опцыю **Create Items on Ultimate Multisite**.
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Стварэнне дзеяння з Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-На наступным кроку вы або стварэце сваю аўтэнтыфікацыю, як мы і на\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+На наступным кроку вы альбо створыце сваю аўтэнтыфікацыю, як мы зрабілі ў **Як пачаць** , альбо выбераце створаную аўтэнтыфікацыю. У гэтым падручніку мы выберам тую ж аўтэнтыфікацыю, якая была створана раней.
+
+![Выбар аўтэнтыфікацыі для дзеяння Zapier](/img/admin/webhooks-list.png)
+
+### Наладжванне Action {#setting-up-the-action}
+
+Гэта **асноўны крок дзеяння**, і тут усё крыху інакш. Першая інфармацыя, якую вы выбераце, — гэта **Item**. Item — гэта **інфармацыйная мадэль** вашай сеткі, напрыклад **Customers, Payments, Sites, Emails** і іншыя.
+
+![Выбар тыпу Item для дзеяння Zapier](/img/admin/webhooks-list.png)
+
+Пры выбары элемента форма **перабудуецца, каб паказаць абавязковыя і неабавязковыя палі** для выбранага элемента.
+
+Напрыклад, пры выбары элемента **Customer** , палі формы пакажуць усё, што неабходна запоўніць, каб стварыць новага Customer у сетцы.
+
+![Палі элемента Customer у наладжванні дзеяння Zapier](/img/admin/webhooks-list.png)
+
+Пасля запаўнення ўсіх палёў, пазначаных як **абавязковыя**, і націскання continue, апошні экран пакажа вам запоўненыя палі і палі, якія засталіся незапоўненымі.
+
+![Тэст дзеяння Zapier з паказам запоўненых і незапоўненых палёў](/img/admin/webhooks-list.png)
+
+Як толькі ваш тэст завершыцца паспяхова, ваша дзеянне будзе сканфігуравана. Таксама важна праверыць у вашай сетцы, ці быў элемент створаны праз тэст вашага дзеяння.

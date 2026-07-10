@@ -4,23 +4,23 @@ title: Filtre - wp_ultimo_site_exporter_url
 sidebar_label: wp_ultimo_site_exporter_url
 _i18n_hash: 20ff231f73f37edb9124a8062131df22
 ---
-# Filtre: wp_ultimo_site_exporter_url
+# Filtre: wp_ultimo_site_exporter_url {#filter-wpultimositeexporterurl}
 
 Permet als desenvolupadors gestionar la ruta relativa al raolí del plugin.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
 | $dir | `string` | La ruta relativa a la raolí del plugin que voleu accedir. |
 
-### Des de
+### Des de {#since}
 
 - 0.0.1
-### Font
+### Font {#source}
 
 Definit en [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L52) a la línia 52
 
 
-## Devoluciona
+## Devoluciona {#returns}
 La ruta relativa al raolí del plugin.

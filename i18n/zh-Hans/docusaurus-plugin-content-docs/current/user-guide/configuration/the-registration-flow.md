@@ -1,72 +1,76 @@
 ---
 title: 注册流程
 sidebar_position: 3
-_i18n_hash: 3e38d2f50683a422650956e5a3b0dff9
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# 注册流程 (v2)
+# 注册流程 (v2) {#the-registration-flow-v2}
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要说明：本文适用于 Ultimate Multisite 版本 2.x。**_
 
-用户可以通过不同方式在您的网络中注册。他们可以使用您的注册表单或共享链接来预选计划。本文将向您展示客户如何使用可用路径在您的网络中注册，以及他们注册后会发生什么。
+用户可以通过不同方式注册到你的网络。他们可以使用你的注册表单，或使用指向预先选择的套餐的可分享链接。这里我们将向你展示，你的客户如何通过可用路径注册到你的网络，以及他们注册到你的网络后会发生什么。
 
-## 使用注册表单：
+## 使用注册表单： {#using-the-registration-form}
 
-这是标准的注册流程。您创建一个带有 **结账表单** 的注册页面，客户将在此页面注册到您的网络并订阅计划。如果需要，您可以拥有多个注册页面，每个页面使用不同的注册表单。
+这是标准注册流程。你创建一个带有**结账表单**的注册页面，这将是你的客户前往注册到你的网络并订阅套餐的地方。你可以拥有多个注册页面，如果你愿意，每个页面都可以使用不同的注册表单。
 
-默认的注册页面是 [_**yourdomain.com/register**_](http://yourdomain.com/register)，但您可以随时在 **Ultimate Multisite > Settings > Login & Registration > Default Registration Page** 中更改它。
+默认注册页面是 [_**yourdomain.com/register**_](http://yourdomain.com/register)，但你可以随时在 **Ultimate Multisite > 设置 > 登录与注册 > 默认注册页面** 中更改它。
 
-当用户到达您的注册页面（通常点击 **Sign in** 或 **Buy now** 按钮）时，他们会在此看到您的注册表单。
+用户进入你的注册页面后（通常是点击**登录**或**立即购买**按钮），他们会在那里看到你的注册表单。
 
-![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
+![注册页面上显示的注册表单](/img/frontend/registration-form.png)
 
-他们只需填写所有必填字段——电子邮件、用户名、密码等……——并支付计划费用，或者在注册免费计划或带试用期的付费计划且不提供支付信息时确认其电子邮件地址。
+下面是结账表单在前端显示时的示例：
 
-在“Thank you”页面上，他们会看到一条消息，告知他们是否需要确认电子邮件地址，或者他们的网站是否已激活并可以开始使用。
+![前端结账注册表单](/img/config/checkout-frontend-registration.png)
 
-![Thank You page after registration](/img/config/checkout-form-editor.png)
+他们需要做的只是填写所有必填字段——电子邮件、用户名、密码等——并为套餐付款；如果他们注册的是免费套餐，或注册的是带试用期且无需付款信息的付费套餐，则确认他们的电子邮件地址。
 
-如果需要确认电子邮件地址，他们需要前往邮箱并点击验证链接。如果电子邮件地址未被验证，他们的网站将不会激活。
+在“谢谢”页面上，他们会看到一条消息，告知他们是否需要确认电子邮件地址，或者他们的网站是否已经激活并可以开始使用。
 
-如果他们已在付费计划中注册，或在您的网络中不强制要求电子邮件验证，他们的网站将在结账后立即激活，并会显示一个链接，供他们登录仪表盘。
+![注册后的谢谢页面](/img/frontend/registration-thank-you.png)
 
-![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
+如果需要确认电子邮件地址，他们需要前往自己的电子邮件收件箱并点击验证链接。如果他们的电子邮件地址未被验证，他们的网站将不会被激活。
 
-## 使用可共享链接：
+如果他们注册的是付费套餐，或者你的网络不强制要求电子邮件验证，他们的网站将在结账后立即被激活，并会显示一个登录到其 Dashboard 的链接。
 
-使用可共享链接注册的流程基本与注册表单相同，唯一的区别是通过可共享链接，您的客户可以在结账表单中预先选择产品或网站模板（参见“通过 URL 参数预选产品和模板”章节）或添加优惠码（参见“使用 URL 参数”章节）。
+![网站已激活，并显示登录到 Dashboard 的链接](/img/frontend/site-activated.png)
 
-注册流程相同：他们需要填写姓名、用户名、电子邮件地址、网站名称和标题等……但计划或站点模板已为他们预先选择。
+## 使用可分享链接： {#using-a-shareable-link}
 
-### 使用手动支付注册：
+使用可分享链接注册的流程基本上与注册表单相同，唯一的区别是，使用可分享链接时，你的客户可以在结账表单中预先选择一个产品或网站模板（请参阅通过 URL 参数预先选择产品和模板一节），或者可能添加一个优惠券代码（请参阅使用 URL 参数一节）。
 
-如果您不想使用 PayPal、Stripe 或 Ultimate Multisite 或其插件提供的任何其他支付网关，您可以为客户使用手动支付。这样，您可以在他们在网络中注册后生成发票，让他们在您首选的支付处理器上付款。
+注册流程将相同：他们需要填写姓名、用户名、电子邮件地址、网站名称和标题等……但套餐或网站模板会已经为他们预先选择好。
 
-注册流程与上述完全相同，但在注册页面上，您的客户会看到一条消息，说明他们将收到一封电子邮件，其中包含完成付款的进一步说明。
+### 使用手动付款注册： {#registering-using-manual-payments}
 
-![Manual payment message during registration](/img/config/settings-payment-gateways.png)
+如果你不想使用 PayPal、Stripe 或 Ultimate Multisite 及其附加组件集成提供的任何其他支付网关，你可以为客户使用手动付款。这样，在他们注册到你的网络后，你可以生成一张发票，让他们在你偏好的支付处理器上付款。
 
-完成注册后，他们将看到您设置的付款说明（并且也会在电子邮件中收到）。
+注册流程将与上面完全相同，但在注册页面上，你的客户会看到一条消息，说明他们将收到一封包含完成付款进一步说明的电子邮件。
 
-![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
+![注册期间的手动付款消息](/img/frontend/registration-manual-notice.png)
 
-在 **Ultimate Multisite > Settings > Payments** 中开启 **Manual** 支付选项后，您可以更改付款说明：
+注册完成后，他们会看到你设置的付款说明（也会通过电子邮件收到）。
 
-![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
+![注册后显示的付款说明](/img/frontend/registration-payment-instructions.png)
 
-在客户完成手动支付并向您发送确认后，您需要 **手动确认付款** 以激活客户会员资格和网站。
+在开启 **手动**付款选项后，可以在 **Ultimate Multisite > 设置 > 付款** 中更改付款说明：
 
-为此，请转到 **Ultimate Multisite > Payments** 并找到客户付款。它仍应显示 **Pending** 状态。
+![带有付款说明字段的手动付款开关](/img/config/manual-gateway-settings.png)
 
-![Payments list with pending manual payment](/img/admin/payments-list.png)
+在你的客户完成手动付款并向你发送确认后，你需要**手动确认付款**，以激活客户会员资格和网站。
 
-点击付款编号，您可以将其状态更改为 **Completed**。
+要执行此操作，请前往 **Ultimate Multisite > 付款** 并找到客户付款。它应该仍然显示为**待处理**状态。
 
-![Payment details page](/img/admin/payments-list.png)
+![包含待处理手动付款的付款列表](/img/admin/payments-list.png)
 
-![Changing payment status to Completed](/img/admin/payments-list.png)
+点击付款编号，你将能够把其状态更改为**已完成**。
 
-将状态更改为 **Completed** 后，您应该会看到 **Activate membership** 消息。将此选项 **on** 开启，以激活与该客户关联的会员资格和网站。然后，点击 **Save Payment**。
+![付款详情页面](/img/admin/payment-edit.png)
 
-![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
+![将付款状态更改为已完成](/img/admin/payment-status-completed.png)
 
-您的客户现在应该能够访问仪表盘以及他们订阅的所有功能。
+将其状态更改为**已完成**后，你应该会看到一条**激活会员资格**消息。将此选项切换为**开启**，以激活与该客户关联的会员资格和网站。然后，点击**保存付款**。
+
+![激活会员资格开关和保存付款按钮](/img/admin/payment-activate-membership.png)
+
+你的客户现在应该能够访问 Dashboard 以及他们订阅的所有功能。

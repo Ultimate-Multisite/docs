@@ -3,13 +3,13 @@ title: Registrazio-fluxua
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registrazioen Fluxu (v2)
+# Registrazioen Fluxu (v2) {#the-registration-flow-v2}
 
 _**IMPORTANTE NOTA: Lezkatu testu hau Ultimate Multisite 2.x-ean referentzia egiten du.**_
 
 Erabiltzaileek irudiak bere nettoreko networkan erregistro dezatile. Bere formua erregistroaren edo pre-selektatutako plan batetik lehiak gabe link batekin erregistro dezatile. Aiaren da, zer modu bereenekin erregistro egin dezaten eta bere nettoreko networkan erregistro egin ondoren zer geratzen da irakurri dugu.
 
-## Erregistro formua erabiliz:
+## Erregistro formua erabiliz: {#using-the-registration-form}
 
 Hau da prozesuaren batzari erregistroa. **checkout formua** duzun erregistro zehaldia sortuz, hori da lehiak bere nettoreko networkan erregistro eta plan bat erregistratzeko aukera izango duen leku. Zer dela biltzen duzu, irregistro formua ezberdinetik izan dezakezu, baina gehiago ere erregistro zehaldeak badu.
 
@@ -35,13 +35,13 @@ Paid plan batean registroatu edo network-ek onartzen duen email bideratzea oblig
 
 ![Website aktiboa da, dashboard-era identifikatzeko linku dago](/img/frontend/site-activated.png)
 
-## Partizipatu Linku Bat Erdatzeko:
+## Partizipatu Linku Bat Erdatzeko: {#using-a-shareable-link}
 
 Partizipatu linku bat erabiliz registroatu jakinaraztenprozesua registroaren formularioa baten beste parte dela, baina partizio linku bat erabiliz, kostaldeak checkout formularioan produkzio edo website template batek iraupiztuta dutelako (URL parametrikuntzaren bitartean produktu eta template-ak iraupiztuta jakinaraztenprozesua bideratu) edo gurea kodetzeko koda bat gehitu dezake (URL parametrikuntzak erabilizko bitartean).
 
 Registroaren partizipatu jakinaraztenprozesua berrokatzen izango da: irakurri, irren, email adresa, website-aren emate eta tituluari, eta beste batzuk ditu... baina plan edo website template batek aldatuta dago.
 
-### Pagamendu Manualek Erabiliz Registroatu:
+### Pagamendu Manualek Erabiliz Registroatu: {#registering-using-manual-payments}
 
 Ultimate Multisite edo bere add-on integrazioei aukeratzen dituen PayPal, Stripe edo beste batzuk erabil ez dutenean, kostaldeak manual pagamenduak erabil dezake. Hau forma naturan, registroatu beharko duela irren eta gure network-ean registroatu ondoren, pagoa egin behar duen invoice batek emateko prozesua izango da.
 

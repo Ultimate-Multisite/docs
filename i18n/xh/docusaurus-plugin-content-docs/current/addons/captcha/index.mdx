@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Misa iiBots. Khusela ingeniso. Akukho ngxaki yoqwalaselo.**
+
+Uqhuba inethiwekhi ye-multisite eneedomayini ezilungiselelweyo? Uyayazi intlungu: Google reCAPTCHA ne-hCaptcha zifuna ubhalise *idomayini nganye* kwikhonsoli yazo yolawulo. Wongeza isiza somthengi omtsha? Hlaziya uqwalaselo lwe-captcha. Umapha idomayini elungiselelweyo? Hlaziya kwakhona. Ayipheli.
+
+**Ultimate Multisite: Captcha itshintsha yonke into.**
+
+## Cap Captcha: Ukhuseleko olusingathwa nguwe olusebenza nje {#cap-captcha-self-hosted-protection-that-just-works}
+
+Umboneleli wethu omtsha we-**Cap Captcha** utshintsha umdlalo kwiintanethi ze-multisite:
+
+* **Akukho Qwalaselo** — Sebenzisa i-addon kwaye ukhuselekile. Akukho zitshixo ze-API, akukho akhawunti kaGoogle, akukho dashboard ye-hCaptcha, akukho kuvunyelwa kweedomayini kuluhlu olumhlophe.
+* **Isebenza kuzo Zonke Iidomayini Ngokuzenzekelayo** — Ii-subdomain, iidomayini ezimaphwe, iidomayini zabathengi—zonke zikhuselwa ngoko nangoko.
+* **Isingathwa Nguwe & Iyimfihlo** — Idatha yakho ayisoze ishiye iseva yakho. Ithobela ngokupheleleyo i-GDPR ngaphandle kokulandela umkhondo ngumntu wesithathu.
+* **Ubungqina Bomsebenzi Obungabonakaliyo** — Abasebenzisi basombulula iphazili yekhompyutha ngasemva. Akukho kucofa izicimi-mlilo, akukho zigride zemifanekiso ezicaphukisayo.
+* **Ikhaphukhaphu** — Yi-20KB kuphela. Ayizukucothisa i-checkout yakho.
+
+## Ukhuseleko lwe-WooCommerce Kuvavanyo Lwamakhadi {#woocommerce-card-testing-protection}
+
+Uhlaselo lokuvavanya amakhadi luxabisa abarhwebi iibhiliyoni minyaka le. Abenzi bobuqhetseba basebenzisa ii-bots ukuqinisekisa amakhadi etyala abiwe ngokuchasene ne-WooCommerce checkout yakho—wena uhlawula iimali zokuqhuba intlawulo, bona bafumana iinombolo zamakhadi ezisebenzayo.
+
+**Sikhusela apho kubaluleke khona kakhulu:**
+
+* **Ukhuseleko lwe-Store API** — Luthintela uhlaselo lwe-bot ku-`/wp-json/wc/store/v1/checkout` oludlula ii-captcha zeefom zemveli
+* **Iyahambelana ne-PayPal Payments** — Isebenza kakuhle ne-WooCommerce PayPal Payments
+* **Izibalo Zexesha Lokwenyani** — Bona kanye ukuba mangaphi uhlaselo oluthintelayo
+
+## Usafuna i-Google reCAPTCHA okanye i-hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Sikugubungele. Inkxaso epheleleyo ye:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Tshintsha phakathi kwababoneleli nangaliphi na ixesha kwiisetingi zenethiwekhi yakho.
+
+## Yakhelwe Ukukhula {#built-for-scale}
+
+* Iisetingi zenethiwekhi yonke ezinokugqithiswa kwisiza ngasinye
+* Dashboard yezibalo yokubeka iliso kukhuseleko
+* Amanqanaba okhuseleko ahlengahlengiswayo (Fast, Medium, Maximum)
+* Ilungele abaphuhlisi ngoyilo lomboneleli olunokwandiswa
+
+## Ufakelo {#installation}
+
+1. Layisha `ultimate-multisite-captcha` kwidirekthri yakho ye-`/wp-content/plugins/`
+2. Yenza i-Network Activate ye-plugin
+3. **Kuphelele apho. Ukhuselekile.**
+
+Cap Captcha isebenza ngokuzenzekelayo—akukho zisetingi zokuqwalasela, akukho zitshixo ze-API zokuzifaka. Yonke endpoint exhaswayo kuyo yonke inethiwekhi yakho ikhuselwe mzuzu uyivula.
+
+**Ngokuzikhethela:** Ukusebenzisa i-Google reCAPTCHA okanye i-hCaptcha endaweni yayo, yiya ku-**Ultimate Multisite → Settings → Captcha** uze ukhethe umboneleli omthandayo.
+
+## Imibuzo Ebuzwa Rhoqo {#frequently-asked-questions}
+
+## Ngaba kufuneka ndiqwalasele nantoni na? {#do-i-need-to-configure-anything}
+
+Hayi! Cap Captcha iyavulwa ngokuzenzekelayo xa uvula i-addon. Inethiwekhi yakho yonke ikhuselekile kwangoko—akukho zisetingi zokuqwalasela, akukho zitshixo ze-API zokuzifaka.
+
+## Ngaba ndifuna izitshixo ze-API ze-Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Hayi. Cap Captcha isingathwa nguwe ngokupheleleyo. Akukho akhawunti zangaphandle, akukho kubhaliswa kweedomayini, akukho zintlungu zoqwalaselo.
+
+## Ngaba oku kuza kucothisa i-checkout yam? {#will-this-slow-down-my-checkout}
+
+Cap Captcha yi-20KB kuphela kwaye iqhuba imingeni yobungqina bomsebenzi ngasemva. Abathengi bakho abayi kuqaphela nakuphi na ukulibaziseka.
+
+## Ngaba oku kukhusela kuhlaselo lokuvavanya amakhadi? {#does-this-protect-against-card-testing-attacks}
+
+Ewe! Ngokungafaniyo nee-captcha zemveli ezikhusela kuphela iifom ze-HTML, udibaniso lwethu lwe-WooCommerce luxhuma ngqo kwi-Store API ukuthintela uhlaselo lwe-bot kwinqanaba le-API—apho uninzi lohlaselo lokuvavanya amakhadi lwenzeka khona.
+
+## Ndingasebenzisa ababoneleli be-captcha abahlukeneyo kwiziza ezahlukeneyo? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Umboneleli we-captcha usetwa kwinethiwekhi yonke, kodwa unokuhlengahlengisa iisetingi zobunzima ngokusekelwe kwiimfuno zakho.
+
+## Ngaba oku kuthobela i-GDPR? {#is-this-gdpr-compliant}
+
+Cap Captcha isingathwa nguwe nge-100% kungekho datha ithunyelwa kwiinkonzo zangaphandle. Kwi-Google reCAPTCHA ne-hCaptcha, nceda uphonononge imigaqo-nkqubo yabo yabucala.
+
+## Ukulinganiselwa Kwezinga {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 yazisa umlinganisi wezinga omisa ngokupheleleyo okhusela inethiwekhi yakho kuhlaselo lwe-brute-force nolokuvavanya amakhadi.
+
+### Isebenza Njani {#how-it-works}
+
+Umlinganisi wezinga ubala sonke isicelo se-GET ne-POST kwiindawo ezikhuselwe yi-captcha:
+
+* **Ii-endpoint zokungena ze-WordPress** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Xa undwendwe ludlula umda wezinga, i-plugin iphendula nge:
+
+* **HTTP 429 (Too Many Requests)** ikhowudi yemeko
+* **Retry-After** header ebonisa ukuba kuphinde kuzanywe nini
+* **Ukulala kwe-tarpit okungahleliwe** (imizuzwana eyi-1–5 ngokungagqibekanga, kuvalelwe ngokuqinileyo kwimizuzwana eyi-15) ukucothisa abahlaseli
+
+### Uqwalaselo {#configuration}
+
+#### Ixesha le-Tarpit {#tarpit-timing}
+
+Lawula ukulibaziseka okungahleliwe okusetyenziswa kwizicelo ezilinganiselwe ngezinga:
+
+* **`cap_rate_limit_tarpit_min`** — Ubude obuncinane bokulala ngemizuzwana (okungagqibekanga: 1)
+* **`cap_rate_limit_tarpit_max`** — Ubude obukhulu bokulala ngemizuzwana (okungagqibekanga: 5, kuvalelwe ngokuqinileyo ku-15)
+
+Ezi setingi ziyafumaneka ku-**Ultimate Multisite → Settings → Captcha**.
+
+### Ukwandiswa {#extensibility}
+
+#### Isihluzo Soluhlu Olumhlophe lwe-IP {#ip-whitelist-filter}
+
+Khulula uluhlu lwe-IP oluthembekileyo ekulinganisweni kwezinga:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Isenzo Sangaphambi Kokuvala {#pre-block-action}
+
+Qhuba ilojikhi elungiselelweyo ngokukhawuleza phambi kokuba ukuvalwa komlinganiselo wezinga kuthunyelwe:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Ukufunyanwa kwe-IP Yeklayenti & Ii-Proxy Ezithembekileyo {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 yazisa ukufunyanwa kwe-client-IP okuxhathisa ukukhohliswa. Indlela ye-`Captcha_Core::get_client_ip()` ngoku ngumthombo omnye wenyaniso wokunxulumanisa i-IP yondwendwe kuyo yonke:
+
+* Izitshixo zeebhakethi zomlinganiselo wezinga
+* Umboneleli we-Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Iihashi ze-IP zezibalo
+
+### Imodeli Yokuthemba {#trust-model}
+
+I-plugin inyanzelisa uluhlu olungqongqo lokuthemba i-IP:
+
+1. **REMOTE_ADDR** — Ihlala ithembekile (i-IP yeqabane elikufutshane)
+2. **CF-Connecting-IP** — Ihlonitshwa kuphela xa:
+   - Iqabane elikufutshane lingaphakathi koluhlu lwangoku lwe-IP ye-Cloudflare
+   - `cap_trust_cloudflare_headers` ivuliwe (okungagqibekanga: OFF)
+3. **X-Forwarded-For** — Ihlonitshwa kuphela xa:
+   - Iqabane elikufutshane likuluhlu lwakho lwe-trusted-proxy oluqwalaselwe ngumlawuli
+   - I-header ihlalutywa ukusuka ekunene ukuya ekhohlo, kutsitywa ii-hop ezithembekileyo/ze-Cloudflare
+
+### Uqwalaselo {#configuration-1}
+
+#### Ukuthembela kwi-Header ye-Cloudflare {#cloudflare-header-trust}
+
+Vumela ukuthembela kwi-header ye-Cloudflare `CF-Connecting-IP`:
+
+* **`cap_trust_cloudflare_headers`** — Seta ku-ON ukuze ungene ekuthembeleni ku-`CF-Connecting-IP`
+  - Okungagqibekanga: OFF (ikhubaziwe)
+  - I-plugin iza ne-snapshot ye-Cloudflare CIDR ehlanganisiweyo
+  - Uluhlu lwe-CIDR luhlaziywa ngeveki nge-wp-cron
+  - Ugcino oluhlanganisiweyo luyasetyenziswa ukuba uhlaziyo luyasilela
+
+#### Uqwalaselo lwe-Proxy Ethembekileyo {#trusted-proxy-configuration}
+
+Chaza ii-proxy zakho zangaphambili kunye nee-load-balancer:
+
+* **`cap_trusted_proxies`** — I-textarea yee-CIDR okanye ii-IP ezingenanto (enye kumgca ngamnye)
+  - Izimvo zivumelekile (imigca eqala ngo-`#`)
+  - Ngaphandle kwesi setingi, `X-Forwarded-For` iyahoywa nokuba umlinganisi wezinga uvuliwe
+  - Umzekelo:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Ukufunyanwa Ngokuzenzekelayo Xa Kuvulwa Okokuqala {#first-enable-auto-detection}
+
+Xa uqala ukuvula umlinganisi wezinga, i-plugin ifumanisa imeko yakho enokwenzeka ye-Cloudflare ne-proxy kwaye ibonise isaziso solawulo esicofwa kube kanye esithi "Sebenzisa iisetingi ezifunyenweyo".
+
+* I-plugin **ayisoze ibhale ngaphezulu** amaxabiso akho agciniweyo
+* Ukuba itrafikhi elandelayo ibonisa ukuba uqwalaselo lwakho alusangqamani nenyani (umz., Cloudflare itshintshe uluhlu lwe-CIDR), isaziso sokungangqinelani esingenakucinywa sibonisa uhlaziyo olucetyiswayo
+
+### Kutheni Oku Kubalulekile {#why-this-matters}
+
+Imodeli engqongqo yokuthemba i-IP ivala indlela ebalulekileyo yokukhohlisa: izicelo ezithe ngqo kwiseva yemvelaphi eziphethe i-header ye-`CF-Connecting-IP` eyenziwe ngobuxoki ngaphambili beziza kufakwa kwibhakethi nge-IP ekhohlisiweyo endaweni yeqabane lokwenyani. Oku kubaluleke ngakumbi kwi:
+
+* **Ukulinganiselwa kwezinga** — Abahlaseli abanakudlula imida ngokukhohlisa ii-IP
+* **Izibalo** — Iimetriki zakho zohlaselo zibonisa ii-IP zondwendwe zokwenyani, hayi ezenziwe ngobuxoki
+* **Ukuqinisekiswa kwe-Captcha** — Ababoneleli bafumana i-IP yondwendwe echanekileyo kuvavanyo lomngcipheko

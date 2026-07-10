@@ -3,7 +3,7 @@ title: AffiliateWP History of Changes
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Pagbag-o sa AffiliateWP
+# Pagbag-o sa AffiliateWP {#affiliatewp-changelog}
 
 Bersyon: 2.0.1 - Gipagawas niadtong 2025-09-28
 

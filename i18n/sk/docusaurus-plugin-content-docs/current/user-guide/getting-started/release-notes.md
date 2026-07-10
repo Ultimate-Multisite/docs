@@ -3,9 +3,9 @@ title: Zmeny vเวอร์zi
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Poznámky kเวอร์zi
+# Poznámky kเวอร์zi {#release-notes}
 
-## Verzia 2.13.0 — Vydaná v dátume 2026-06-05
+## Verzia 2.13.0 — Vydaná v dátume 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 Nové: Pridaná podpora suverénnych prenájomov (sovereign-tenant) pre účty zákazníkov, procesy pokladne, fakturácie, webu, faktúry, prepínania šablon a mapovania domén, aby mohli prenájomné siete zákazníkov presmerovať zákazníkov späť na hlavný web pre správanie spravované.
 Nové: Pridané kontroly pre obnovenie prístupu (renewal-credential checks) pre opakujúce sa členstvá, aby brány mohli deaktivovať automatické obnovovanie, ak chýba uložená faktura, predplatné alebo token z vaultu.
@@ -19,7 +19,7 @@ Oprava: Rozšírené e-maily teraz zachovávajú súkromie odberateľov, zatiaľ
 Oprava: Koncové prípady ako obnovenie členstva, zobrazenie dátumu vyprázdnenia a spracovanie platieb teraz vyhýbajú okamžité vyprázdnenie, výpadky alebo neuskutočené povinné platby.
 Vylepšené: Kompatibilita s WordPressom je testovaná až do verzie 7.0, produkčné aktíva Vue sa znovu stavajú z npm zdrojov a Cypress end-to-end pokrytie teraz vyučuje viac procesov pokladne, nastavovania, SSO a brán.
 
-## Verzia 2.12.0 — Vydaná v dátume 2026-05-15
+## Verzia 2.12.0 — Vydaná v dátume 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nové: Pridaný Hostinger (hPanel) ako podporovaný poskytovateľ hostingu s integráciou mapovania domén.
 - Nové: Site Exporter teraz spracová balíčky importu sietí pre uprostúpený obnovu siete na úrovni celého webu.
@@ -31,7 +31,7 @@ Vylepšené: Kompatibilita s WordPressom je testovaná až do verzie 7.0, produk
 - Oprava: CLI Site Exporter teraz zachová správny štandardný výber siete.
 - Vylepšené: Odstránili balíkový wp-cli z balíčka pluginu, čo znížilo veľkosť pluginu.
 
-## Verzia 2.11.0 — Vydaná v dátume 2026-05-11
+## Verzia 2.11.0 — Vydaná v dátume 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nové: Site exporty teraz balia samostatný `index.php` pre to, aby sa ZIP mohol nainštalovať na novom hostovi bez samostatnej inštalácie pluginu.
 - Nové: Export siete umožňuje administrátorom exportovať všetky poddomény do jedného archívu z admin stránky Site Export.
@@ -39,7 +39,7 @@ Vylepšené: Kompatibilita s WordPressom je testovaná až do verzie 7.0, produk
 - Nové: Editor formulára na pokladni upozorňuje, ak sa produkt pridá bez skonfigurovania povinného pole.
 - Nové: Odkazná záložka nastavení Import/Export jasne popisuje jej rozsah a je priamo spojená s nástrojom Site Export.
 
-## Verzia 2.10.0 — Vydaná v dátume 2026-05-05
+## Verzia 2.10.0 — Vydaná v dátume 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 Nové: Prívodca konfigurácie PayPal pre manuálne zadávanie údajov s flagom OAuth pre hladké nastavenie gatewayu.
 Nové: Panel zákazníka zmenený šablónou s kartou current-template, trvalým grídou a tlačidlom **Reset current template**.
@@ -52,7 +52,7 @@ Oprava: Aktuálne lazy-loaded pred hook init pre zobrazenie problémov s časova
 Oprava: Filtrovaná cesta SSO je respektovaná vo všetkých toku prihlásenia.
 Oprava: Možnosti prázdneho identita sita sú zachované pri uohrazení.
 
-## Verzia 2.9.0 — Vydaná v 2026-04-30
+## Verzia 2.9.0 — Vydaná v 2026-04-30 {#version-290--released-on-2026-04-30}
 
 Nové: Pridato export a import jedného sita pod **Tools > Export & Import**.
 Oprava: ZIP súbory pre export sa teraz servujú cez autentizovaný bod stiahnutia.
@@ -66,7 +66,7 @@ Oprava: Kolo závislosti správy cronu pre import je vyriešila.
 Oprava: Tour ID sú normalizované na podčinky v kľúčoch nastavení používateľa.
 Vylepšené: Používa sa teraz ZipArchive namiesto Alchemy/Zippy pre lepšiu kompatibilitu.
 
-## Verzia 2.8.0 — Vydaná v 2026-04-29
+## Verzia 2.8.0 — Vydaná v 2026-04-29 {#version-280--released-on-2026-04-29}
 
 Nové: Pridanie prepínaču Jumper v rozhraní nastavení "Other Options".
 Nové: Pridaná kolónka Stav do tabu formulálov na objednávku (checkout forms list table).

@@ -3,9 +3,9 @@ title: Bayanan wajen fitarwa
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Shaidinaiji (Notes of Release)
+# Shaidinaiji (Notes of Release) {#release-notes}
 
-## Versiyun 2.13.0 — Wajara a ranar da 2026-06-05
+## Versiyun 2.13.0 — Wajara a ranar da 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Ƙarin: An ƙara tallafin sovereign-tenant ga asusun abokin ciniki, checkout, billing, wuri (site), takardar bayarwa (invoice), canza tsarin (template switching), da hanyoyin haɗa domain don wajen tenant su iya bincika abokan ciniki zuwa wurin gida don ayyukan da aka kula.
 - Ƙarin: An ƙara bincike na sabunta amana ga samun sabunta kuɗi (renewal-credential checks) ga shawarwar da ke tabbas, don gwamnaye su yi nasara ba tare da su sake sabunta kai tsaye idan ba a samu shafi na billing ko subscription ko vault token ba.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Gyaran: An hana wasu abubuwan tsakanin sabunta samun sabunta (membership renewals), nuna lokacin ƙarewa, da samun kuɗi su sa iyakacin ƙarshe nan take, rashin cin zarafi, ko rashin karɓar kuɗi na buƙata.
 - Inganci: An gwada compatibility ta WordPress har zuwa 7.0, an sake gina kayan Vue na samarwa a kan npm sources, kuma Cypress end-to-end coverage yanzu yana gwada ƙarin hanyoyin checkout, setup, SSO, da gateway.
 
-## نسختن 2.12.0 — گشتاکارايە لە ڕۆژی 2026-05-15
+## نسختن 2.12.0 — گشتاکارايە لە ڕۆژی 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - نوێ: Hostinger (hPanel) را وەک پڕۆڤایدرێکی میزبانی پشتگیران بە افزودن کردویم کە دامنه هاپەڕək (domain mapping) هم پشتیبانی мекунад.
 - نوێ: Site Exporter инчунин ҳоلانҳои импорти шабакаи (network import bundles) ройгон менамояд, то ба даст овардани мунтазам вароқти сайт дар тамоми шабака осонтар бошад.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Навъ: CLI-и Site Exporter ин танзими собиқаи тасвири шабакаи сайтро ба таври дуруст ҳифз менамояд.
 - Беҳтар шуд: `wp-cli` аз бандҳои плагин ба кор дароварда шуд, ки ҳаҷми плагинро кам кардааст.
 
-## نسختن 2.11.0 — گشتاکارايە لە ڕۆژی 2026-05-11
+## نسختن 2.11.0 — گشتاکارايە لە ڕۆژی 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - نوێ: Site exports инчунин `index.php` -и худро банд мекунанд, то ZIP метавонад дар мизби мустаҳкам бе инстали плагин ҷудо имконият дода без инстали плагини дигар.
 - نوێ: Экспорт шабака (Network export) иҷозат медиҳад, ки администраторҳо ҳамаи сайти фарзандониро дар як архив ба таври ягона аз саҳифаи администри Site Export экспорти кунанд.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - نوێ: Муҳаррири формаи Checkout оид ба он огоҳӣ медиҳад, ки агар як маҳсулот бо истифода аз як сохтори зарурӣ (required field) иҷозат накардашуда илова карда шавад.
 - نوێ: Таббаи танзимоти Импорт/Экспорт ҳолати онро ба таври равшан тавсиф мекунад ва бо мустақимат ба инчунин инструменти Site Export пайваст аст.
 
-## نسختن 2.10.0 — گشتاکارايە لە ڕۆژی 2026-05-05
+## نسختن 2.10.0 — گشتاکارايە لە ڕۆژی 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - جديد: آلة توجيه إعداد PayPal للمدخلات اليدوية مع بوابة OAuth لتهيئة البوابة بسلاسة.
 - جديد: تم إعادة تصميم لوحة تحكم العميل عند التبديل بين القوالب باستخدام بطاقة **current-template**، وشبكة دائمة (persistent grid)، وزر **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - إصلاح: يتم احترام مسار SSO المصفى عبر جميع تدفقات تسجيل الدخول.
 - إصلاح: تم الحفاظ على خيارات هوية الموقع الفارغ عند الحفظ.
 
-## الإصدار 2.9.0 — صدر في 2026-04-30
+## الإصدار 2.9.0 — صدر في 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - جديد: تمت إضافة تصدير واستيراد للموقع الواحد تحت **Tools > Export & Import**.
 - إصلاح: يتم الآن تقديم ملفات ZIP للتصدير عبر نقطة نهاية تنزيل مصادق عليها (authenticated download endpoint).
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - إصلاح: تم توحيد معرفات الجولة (Tour IDs) إلى شرطات سفلية في مفاتيح إعدادات المستخدم.
 - تحسين: يتم استخدام ZipArchive الآن بدلاً من Alchemy/Zippy لتحقيق توافق أفضل.
 
-## الإصدار 2.8.0 — صدر في 2026-04-29
+## الإصدار 2.8.0 — صدر في 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Baya: Jumper toggle an ƙirƙirar "Other Options" settings UI a cikin tsarin.
 - Baya: Sannan saddar "Status column" a cikin jadawalin forms na checkout.

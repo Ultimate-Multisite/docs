@@ -3,7 +3,7 @@ title: Hooks ו-Filters
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hooks ו-Filters של Ultimate Multisite
+# Hooks ו-Filters של Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite מורכב ממגוון רחב של פונקציות ושאילתות למסד הנתונים. המערכת כוללת hooks ו-filters שמאפשרים לכם לשנות קוד קיים או להוסיף קוד חדש לפונקציות קיימות.
 

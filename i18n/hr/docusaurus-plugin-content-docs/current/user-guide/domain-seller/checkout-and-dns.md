@@ -3,13 +3,13 @@ title: Polje za plaćanje i DNS kupca
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Polje za plaćanje i upravljanje DNS-om kupca
+# Polje za plaćanje i upravljanje DNS-om kupca {#checkout-field-and-customer-dns-management}
 
-## Polje odabira domena u procesu plaćanja (checkout)
+## Polje odabira domena u procesu plaćanja (checkout) {#the-domain-selection-checkout-field}
 
 Polje **Domain Selection** je element u procesu plaćanja koji daje kupcima izbor kako dobiti domen za njihovu web stranicu. Dodajte ga bilo kojem obrascu plaćanja kako biste omogućili prodaju domena.
 
-### Dodavanje polja u obrazac plaćanja
+### Dodavanje polja u obrazac plaćanja {#adding-the-field-to-a-checkout-form}
 
 1. Idite na **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Otvorite ili kreirajte obrazac plaćanja
@@ -18,7 +18,7 @@ Polje **Domain Selection** je element u procesu plaćanja koji daje kupcima izbo
 5. Konfigurirajte opcije polja (pogledajte ispod)
 6. Sačuvajte obrazac
 
-### Opcije polja
+### Opcije polja {#field-options}
 
 **Domain modes** — Odaberite koje kartice kupci vide. Svaki način može biti uključen ili isključen nezavisno:
 
@@ -32,7 +32,7 @@ Polje **Domain Selection** je element u procesu plaćanja koji daje kupcima izbo
 
 **Domain product** (Proizvod domena) — Opcionalno vezajte ovo polje za određeni proizvod domena. Ako nije postavljeno, dodatak automatski odabire odgovarajući proizvod na temelju TLD-a koji kupac traži.
 
-### Polja kontakt podataka registrantovih osobnih podataka
+### Polja kontakt podataka registrantovih osobnih podataka {#registrant-contact-fields}
 
 Kada kupac odabere karticu **Register New Domain**, obrazac plaćanja doda polja za kontakt registrantovih osobnih podataka u liniji:
 
@@ -43,11 +43,11 @@ Kada kupac odabere karticu **Register New Domain**, obrazac plaćanja doda polja
 
 Ovi potrebni su za sve registratora i validirani prije slanja poziva API-ja za registraciju. Brojevi telefona se automatski formatiraju u međunarodni format `+CC.NNN` koji očekuju registratori.
 
-### Automatski URL stranice
+### Automatski URL stranice {#auto-generated-site-url}
 
 Kada kupac se prijavi ili mapira domen, polje URL stranice se automatski popunjava iz odabranog domena. Kupci nemaju potrebu da popune zasebno polje za URL.
 
-### Ovdje je ponašanje pretraživanja
+### Ovdje je ponašanje pretraživanja {#search-behaviour}
 
 - Dostupnost domena se provjerava u stvarnom vremenu s AJAX-om dok korisnik kuca
 - Predlažu se alternativne TLD (top-level domain) opcije kada je preferirani domen nedostupan
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Upravljanje DNS-om za korisnike
+## Upravljanje DNS-om za korisnike {#customer-dns-management}
 
 Korisnici mogu upravljati DNS zapisima za svoje registrirane domene s stranice **Moj račun**, pod unosom njihovog domena.
 
-### Podržani tipovi zapisa
+### Podržani tipovi zapisa {#supported-record-types}
 
 | Tip | Korištenje |
 |---|---|
@@ -91,11 +91,11 @@ Korisnici mogu upravljati DNS zapisima za svoje registrirane domene s stranice *
 | **MX** | Postavljanje servera za e-mail razmjenu |
 | **TXT** | Dodavanje SPF, DMARC, provjere ili drugih tekstualnih zapisa |
 
-### Koji pružatelji podržavaju upravljanje DNS-om?
+### Koji pružatelji podržavaju upravljanje DNS-om? {#which-providers-support-dns-management}
 
 Zadржаvajte upravljanje DNS-om (dodavanje, uređivanje, brisanje zapisa) dostupno s **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** i **Openprovider**. Domeni **Hostinger** možete ažurirati putem Domain Sellera. DNS podaci za hostirane domene upravlja integracija Hostinger domain-mapping core-a. Domeni Namecheap, GoDaddy i NameSilo prikazuju status i informacije o isteku, ali DNS se mora upravljati direktno u kontrolnoj ploči registratora.
 
-### Podrazumevani DNS podaci
+### Podrazumevani DNS podaci {#default-dns-records}
 
 Možete postaviti podrazumevane DNS zapise koji se automatski primjenjuju kada se domen prijavi. Idite na **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: pregled i uređivanje DNS-a
+### Admin: pregled i uređivanje DNS-a {#admin-viewing-and-editing-dns}
 
 Mrežni administratori mogu pregledavati i uređivati DNS zapise za bilo koji klijentski domen s stranice za uređivanje domena u **Network Admin › Ultimate Multisite › Domains**.

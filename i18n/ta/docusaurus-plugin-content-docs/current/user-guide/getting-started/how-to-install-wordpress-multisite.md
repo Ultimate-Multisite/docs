@@ -3,7 +3,7 @@ title: WordPress Multisite எவ்வாறு நிறுவுவது
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-ஐ எப்படி நிறுவுவது?
+# WordPress Multisite-ஐ எப்படி நிறுவுவது? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ஒரே நிறுவலில் பல தளங்களின் நெட்வொர்க்கை உருவாக்க அனுமதிக்கிறது. இது உள்ளமைக்கப்பட்ட அம்சம், ஆனால் இயல்பாக இயக்கப்பட்டிருக்காது.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# /wp-admin-க்கு trailing slash சேர்க்கவும்
+# /wp-admin-க்கு trailing slash சேர்க்கவும் {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ Subsite உருவாக்க:
 
 Fields-ஐ நிரப்பிய பிறகு, "Add site" பொத்தானை கிளிக் செய்யவும். புதிய subsite உருவாக்கப்பட்டவுடன், subsite சரியாக வேலை செய்கிறதா என்பதை உறுதிப்படுத்த அதை அணுகவும்.
 
-## பொதுவான பிரச்சனைகள்:
+## பொதுவான பிரச்சனைகள்: {#common-problems}
 
-### 1\. புதிய தளங்களை உருவாக்க முடிகிறது ஆனால் அவற்றை அணுக முடியவில்லை.
+### 1\. புதிய தளங்களை உருவாக்க முடிகிறது ஆனால் அவற்றை அணுக முடியவில்லை. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 நீங்கள் subdomains தேர்வு செய்திருந்தால், உங்கள் multisite நெட்வொர்க்கிற்கு wildcard subdomains-ஐயும் அமைக்க வேண்டும்.
 

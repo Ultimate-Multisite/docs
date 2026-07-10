@@ -3,17 +3,17 @@ title: এক্সপোর্ট আৰু ইমপোর্ট
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 ত **Tools > Export & Import** ত এটা single-site **Export & Import** টুলের যোগ কৰা হৈছে। যেতিয়া আপুনি এটা WordPress site लाई ZIP ফাইল হিচাপে পেকেজ কৰিব, সেই ZIP ফাইলটো পুনৰ স্থাপন (restore) কৰিব, বা এটা site लाई সামঞ্জস্যপূৰ্ণ Ultimate Multisite আৰু single-site WordPress installationৰ মাজত স্থানান্তৰ কৰিব লাগে, তেতিয়া ইয়াক ব্যৱহাৰ কৰক।
 
-## Required permissions
+## Required permissions {#required-permissions}
 
 আপুনি যিটো site export বা import কৰিব, সেই site-ৰ WordPress **Tools** মেনু অ্যাক্সেছ কৰিব পৰা এজন অ্যাডমিনিষ্ট্ৰেটৰ হিচাপে লগইন কৰিব লাগিব। এটা multisite network-ত, network-level Ultimate Multisite tools ব্যৱহাৰ কৰি subsite export বা import কৰাৰ সময়ত network administrator account ব্যৱহাৰ কৰক।
 
 Export ZIP ডাউনলোডहरू এটা authenticated download endpoint মাজেৰে serve কৰা হয়, গতিকে ডাউনলোড শেষ হোৱা পৰ্যন্ত অ্যাডমিন session active ৰাখিব আৰু generate কৰা download URL সমূহক জনপ্ৰিয়ভাৱে (publicly) ভাগ নকৰিব।
 
-## Exporting a site to a ZIP
+## Exporting a site to a ZIP {#exporting-a-site-to-a-zip}
 
 1. আপুনি যিটো site কপি কৰিব বিচাৰে, তাৰ অ্যাডমিন প্যানেলত **Tools > Export & Import** লৈ যাওক।
 2. export area খুলক আৰু যিটো site পেকেজ কৰিব বিচাৰে, তাক বাছি লওক।
@@ -23,7 +23,7 @@ Export ZIP ডাউনলোডहरू এটা authenticated download endpo
 
 ZIP ফাইলটো এটা সুৰক্ষিত স্থানত ৰাখক। ইয়াত site content, settings, media files, আৰু বাছনি কৰা code assets থাকিব পাৰে।
 
-## What the export includes
+## What the export includes {#what-the-export-includes}
 
 এটা export ZIP ফাইলত তলৰ বিষয়বস্তু থাকিব পাৰে:
 
@@ -34,7 +34,7 @@ ZIP ফাইলটো এটা সুৰক্ষিত স্থানত ৰ
 
 সঠিক ZIP আকাৰটো media, বাছনি কৰা plugins আৰু themes, আৰু site-ৰ database table সমূহৰ আকাৰৰ ওপৰত নিৰ্ভৰ কৰে।
 
-## Importing a site from a ZIP
+## Importing a site from a ZIP {#importing-a-site-from-a-zip}
 
 1. গন্তব্য (destination) WordPress site-ত **Tools > Export & Import** লৈ যাওক।
 2. import area খুলক আৰু Export & Import tool দ্বাৰা সৃষ্টি কৰা ZIP ফাইলটো আপলোড কৰক।
@@ -46,7 +46,7 @@ ZIP ফাইলটো এটা সুৰক্ষিত স্থানত ৰ
 
 এটা single-site WordPress installation-ত, এটা ZIP import কৰিলে বর্তমান site টো আপলোড কৰা site টোৰে সলনি হৈ যায়। আৰম্ভ কৰাৰ আগতে লক্ষ্য site-ৰ এটা সম্পূৰ্ণ backup লওক, আৰু একে সময়তে একে site-ৰ বাবে একাধিক import আৰম্ভ কৰাৰ পৰা বিৰত থাকক।
 
-## Limitations and compatibility notes
+## Limitations and compatibility notes {#limitations-and-compatibility-notes}
 
 - অতি ডাঙৰ uploads directory বা media libraries ডাঙৰ ZIP ফাইল সৃষ্টি কৰিব পাৰে। ডাঙৰ site export বা import কৰাৰ আগতে PHP upload limits, execution limits, disk space, memory, আৰু server timeout settings নিশ্চিত কৰক।
 - অতি ডাঙৰ media libraries-ক কম traffi থকা maintenance window ত স্থানান্তৰ কৰিব লাগিব পাৰে।

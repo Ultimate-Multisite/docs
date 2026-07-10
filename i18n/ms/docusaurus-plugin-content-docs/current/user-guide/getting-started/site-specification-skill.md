@@ -3,11 +3,11 @@ title: Kemahiran Spesifikasi Tapak
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kemahiran Spesifikasi Tapak
+# Kemahiran Spesifikasi Tapak {#site-specification-skill}
 
 **Kemahiran Spesifikasi Tapak** adalah pendekatan berstruktur untuk merekodkan matlamat tapak, audiens, dan identiti jenama anda. Maklumat ini disimpan dalam memori **site_brief** anda, yang dirujuk oleh agen merentasi sesi untuk memberikan bantuan yang konsisten dan sedar konteks.
 
-## Apakah Spesifikasi Tapak?
+## Apakah Spesifikasi Tapak? {#what-is-site-specification}
 
 Spesifikasi Tapak adalah proses mendokumentasikan:
 
@@ -19,9 +19,9 @@ Spesifikasi Tapak adalah proses mendokumentasikan:
 
 Spesifikasi ini menjadi **site_brief** anda, sebuah memori kekal yang digunakan oleh agen untuk memahami konteks tapak anda.
 
-## Mengapa Menggunakan Spesifikasi Tapak?
+## Mengapa Menggunakan Spesifikasi Tapak? {#why-use-site-specification}
 
-### Konsistensi Merentasi Sesi
+### Konsistensi Merentasi Sesi {#consistency-across-sessions}
 
 Tanpa site_brief, anda perlu menerangkan semula tujuan tapak anda setiap kali anda memulakan sesi baharu. Dengan adanya ia, agen serta-merta memahami:
 
@@ -30,7 +30,7 @@ Tanpa site_brief, anda perlu menerangkan semula tujuan tapak anda setiap kali an
 - Struktur kandungan anda
 - Objektif perniagaan anda
 
-### Cadangan yang Lebih Baik
+### Cadangan yang Lebih Baik {#better-recommendations}
 
 Agen menggunakan site_brief anda untuk:
 
@@ -39,17 +39,17 @@ Agen menggunakan site_brief anda untuk:
 - Mencadangkan reka bentuk yang konsisten dengan jenama anda
 - Mengelakkan cadangan ciri yang tidak serasi
 
-### Proses Orientasi yang Lebih Pantas
+### Proses Orientasi yang Lebih Pantas {#faster-onboarding}
 
 Agen baharu (atau agen dalam sesi baharu) boleh cepat memahami dengan membaca site_brief anda berbanding bertanya soalan penjelasan.
 
-## Memulakan Spesifikasi Tapak
+## Memulakan Spesifikasi Tapak {#initiating-site-specification}
 
-### Semasa Orientasi Theme Builder
+### Semasa Orientasi Theme Builder {#during-theme-builder-onboarding}
 
 Kemahiran Spesifikasi Tapak dimulakan secara automatik semasa aliran **Theme Builder onboarding**. Agen Setup Assistant akan mengajukan soalan dan membina site_brief anda.
 
-### Permulaan Manual
+### Permulaan Manual {#manual-initiation}
 
 Anda boleh memulakan Spesifikasi Tapak pada bila-bila masa:
 
@@ -63,9 +63,9 @@ atau
 "Bantu saya cipta site brief"
 ```
 
-## Proses Spesifikasi Tapak
+## Proses Spesifikasi Tapak {#the-site-specification-process}
 
-### Langkah 1: Tujuan Tapak
+### Langkah 1: Tujuan Tapak {#step-1-site-purpose}
 
 Agen akan bertanya:
 
@@ -81,7 +81,7 @@ Apakah tujuan utama tapak anda?
 
 Anda boleh memilih kategori atau menghuraikan tujuan anda sendiri.
 
-### Langkah 2: Audiens Sasaran
+### Langkah 2: Audiens Sasaran {#step-2-target-audience}
 
 ```
 Siapakah audiens utama anda?
@@ -94,7 +94,7 @@ Siapakah audiens utama anda?
 Apakah keperluan utama mereka?
 ```
 
-### Langkah 3: Identiti Jenama
+### Langkah 3: Identiti Jenama {#step-3-brand-identity}
 
 ```
 Apakah warna jenama anda?
@@ -110,7 +110,7 @@ Bagaimana anda akan huraikan nada jenama anda?
 - Hangat / mesra
 ```
 
-### Langkah 4: Matlamat Perniagaan
+### Langkah 4: Matlamat Perniagaan {#step-4-business-goals}
 
 ```
 Bagaimana rupa kejayaan untuk tapak anda?
@@ -129,7 +129,7 @@ Apakah metrik utama anda?
 - Lain-lain
 ```
 
-### Langkah 5: Struktur Kandungan
+### Langkah 5: Struktur Kandungan {#step-5-content-structure}
 
 ```
 Bagaimana kandungan anda disusun?
@@ -148,7 +148,7 @@ Apakah jenis kandungan yang anda gunakan?
 - Lain-lain
 ```
 
-## Memori site_brief Anda
+## Memori site_brief Anda {#your-sitebrief-memory}
 
 Selepas melengkapkan Spesifikasi Tapak, maklumat anda disimpan sebagai **site_brief** dalam memori agen anda. Ini adalah rekod berstruktur yang mengandungi:
 
@@ -169,9 +169,9 @@ Selepas melengkapkan Spesifikasi Tapak, maklumat anda disimpan sebagai **site_br
 }
 ```
 
-## Melihat dan Mengemas Kini site_brief Anda
+## Melihat dan Mengemas Kini site_brief Anda {#viewing-and-updating-your-sitebrief}
 
-### Lihat site_brief Anda
+### Lihat site_brief Anda {#view-your-sitebrief}
 
 Tanya agen:
 
@@ -187,7 +187,7 @@ atau
 
 Agen akan memaparkan spesifikasi anda yang disimpan.
 
-### Kemas Kini site_brief Anda
+### Kemas Kini site_brief Anda {#update-your-sitebrief}
 
 Jika tapak anda berkembang, anda boleh mengemas kininya:
 
@@ -203,9 +203,9 @@ atau
 
 Ini akan menjalankan semula kemahiran Spesifikasi Tapak dengan maklumat sedia ada anda sebagai titik permulaan.
 
-## Cara Agen Menggunakan site_brief
+## Cara Agen Menggunakan site_brief {#how-agents-use-sitebrief}
 
-### Cadangan Reka Bentuk
+### Cadangan Reka Bentuk {#design-recommendations}
 
 Apabila anda meminta perubahan reka bentuk, agen merujuk site_brief anda:
 
@@ -216,7 +216,7 @@ dengan nada yang hangat dan artisanal. Saya akan mencipta reka bentuk yang menek
 perhiasan buatan tangan dan nilai lestari anda."
 ```
 
-### Cadangan Ciri-ciri
+### Cadangan Ciri-ciri {#feature-suggestions}
 
 Agen mencadangkan ciri-ciri yang selaras dengan matlamat anda:
 
@@ -227,7 +227,7 @@ saya syorkan: program kesetiaan, ulasan pelanggan, surat berita e-mel,
 dan cadangan produk."
 ```
 
-### Struktur Kandungan
+### Struktur Kandungan {#content-structure}
 
 Agen mencadangkan organisasi kandungan berdasarkan struktur anda:
 
@@ -238,16 +238,16 @@ menyusun pos mengikut kategori produk dan mencipta 'panduan gaya'
 yang mempamerkan beberapa produk bersama-sama."
 ```
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
-### Bersikap Spesifik
+### Bersikap Spesifik {#be-specific}
 
 Daripada "audiens umum," huraikan audiens sebenar anda:
 
 - ✓ "Wanita berumur 25-45 tahun, berminat dalam fesyen lestari"
 - ✗ "Semua orang"
 
-### Kemas Kini Secara Berkala
+### Kemas Kini Secara Berkala {#update-regularly}
 
 Apabila tapak anda berkembang, kemas kini site_brief anda:
 
@@ -256,14 +256,14 @@ Apabila tapak anda berkembang, kemas kini site_brief anda:
 - Apabila identiti jenama anda berubah
 - Apabila matlamat perniagaan anda berubah
 
-### Gunakan Terminologi yang Konsisten
+### Gunakan Terminologi yang Konsisten {#use-consistent-terminology}
 
 Gunakan istilah yang sama merentasi sesi:
 
 - ✓ Sentiasa katakan "perhiasan lestari" (bukan "perhiasan mesra alam" dan "produk hijau")
 - ✓ Rujuk audiens anda secara konsisten dengan cara yang sama
 
-### Sertakan Konteks
+### Sertakan Konteks {#include-context}
 
 Berikan latar belakang yang membantu agen memahami keputusan anda:
 
@@ -271,7 +271,7 @@ Berikan latar belakang yang membantu agen memahami keputusan anda:
 - "Audiens kami mahir teknologi dan mengharapkan reka bentuk moden"
 - "Kami adalah syarikat permulaan yang menggunakan dana sendiri, jadi kami memerlukan penyelesaian yang kos efektif"
 
-## Hubungan dengan Orientasi Theme Builder
+## Hubungan dengan Orientasi Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Kemahiran Spesifikasi Tapak disepadukan ke dalam aliran **Theme Builder onboarding**. Apabila anda melengkapkan orientasi, site_brief anda akan dicipta secara automatik dengan maklumat yang anda berikan.
 
@@ -281,7 +281,7 @@ Anda juga boleh menjalankan Spesifikasi Tapak secara berasingan jika anda mahu:
 - Mengemas kini site brief anda apabila tapak anda berkembang
 - Mencipta spesifikasi terperinci sebelum memulakan Theme Builder
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
 **site_brief saya tidak digunakan**
 - Sahkan agen mempunyai akses kepada memori
@@ -297,7 +297,7 @@ Anda juga boleh menjalankan Spesifikasi Tapak secara berasingan jika anda mahu:
 - Kemas kini site_brief anda jika ia lapuk
 - Berikan konteks tambahan dalam permintaan anda
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 Selepas menentukan spesifikasi tapak anda:
 

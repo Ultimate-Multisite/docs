@@ -1,132 +1,148 @@
 ---
-title: Integrierti Agenten
+title: Agebaute Agenten
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Inhäi-Agenten
+# Agebaute Agents {#built-in-agents}
 
-Gratis AI Agent v1.9.0 schieft fünf integrierti Agenten mit, jede vorab konfiguriert mit eme spezifische Set vo Tools, eme individuell gschaltete System Prompt und Startvorschläg, wo uf üblichi Ufgabe in dere Bereich abgstimmt sind. D'Umschaltig zwüsche de Agenten ändert, was de Assistent mache kann und wie er reagiert – ohni dass Sie irgendetwas konfiguriere müesse.
+Gratis AI Agent v1.9.0 liwwert fënnef agebaute Agents, jidderee virkonfiguréiert mat engem fokusséierte Set u Tools, engem ugepasste System-Prompt, an Ufanksvirschléi, déi op heefeg Aufgaben an deem Beräich ofgestëmmt sinn. Tëscht Agents wiesselen ännert, wat den Assistant maache kann a wéi en äntwert — ouni iergendeng Konfiguratioun vun Ärer Säit. Superdav AI Agent v1.18.0 kann dëse Workflows zäitplangbewosst Tools, Erënnerungsrecords, Geneemegungspaarten an SMS-Benoriichtegungen dobäisetzen, wann déi verbonne Integratioune konfiguréiert sinn.
 
-## Was isch en Agent?
+## Wat ass en Agent? {#what-is-an-agent}
 
-Jede Agent isch en benannti Konfigurationsprofil, wo folgendes kombiniert:
+All Agent ass e benannte Konfiguratiounsprofil, deen dat heite kombinéiert:
 
-- **Tools** — d'Fähigkeite, wo de Agent ufrufe darf (z.B. hät en Content Writer Zuegang zu Post-Erstelligsfähikeiten; en Design Studio hät Zuegang zu CSS und theme.json Fähigkeite)
-- **System prompt** — Aawisige, wo de Ton, d'Prioritäte und d'Beschränkige vom Agenten festlege
-- **Suggestions** — vorab gschriebeni Prompts, wo im Chat-Interface zeigt wärde, um Ihne schnäll z'starte
+- **Tools** — d'Fäegkeeten, déi den Agent opruffen dierf (z. B. e Content Writer huet Zougrëff op Fäegkeete fir Bäiträg ze erstellen; e Design Studio huet Zougrëff op CSS- an theme.json-Fäegkeeten)
+- **System-Prompt** — Instruktiounen, déi den Toun, d'Prioritéiten an d'Aschränkunge vum Agent festleeën
+- **Virschléi** — virgeschriwwe Prompts, déi an der Chat-Interface ugewise ginn, fir Iech ze hëllefen, séier unzefänken
 
-## Zuegang zum Agent Picker
+## Zougrëff op den Agent Picker {#accessing-the-agent-picker}
 
-1. Öffne s'Panel **Gratis AI Agent** i de WordPress Admin Sidebar.
-2. Klicke uf s'**agent icon** i de obe links vom Chat Header (s'Icon ändert sich, um de aktive Agent widerzspiegle).
-3. De **Agent Picker** öffnet sich als Form-Tabelle Overlay. Jede Agent isch mit sim Icon, Name und eme einzeilige Beschribig ufglischtet.
-4. Klicke uf en Agent-Reihe, um ihn z'aktiviere. De Chat Header wird sofort aktualisiert.
+1. Maacht de **Gratis AI Agent**-Panel an der WordPress-Admin-Sidebar op.
+2. Klickt op d'**Agent-Ikon** uewe lénks am Chat-Header (d'Ikon ännert sech, fir den aktiven Agent ze weisen).
+3. Den **Agent Picker** geet als Form-Table-Overlay op. All Agent gëtt mat senger Ikon, sengem Numm an enger Beschreiwung an enger Zeil opgelëscht.
+4. Klickt op eng Agent-Zeil, fir en ze aktivéieren. De Chat-Header aktualiséiert sech direkt.
 
-Sie chönd au zwüsche de Konversation Agenten umschalte – de System Prompt vom neue Agent tritt ab em nächste Nachricht in Kraft.
+Dir kënnt Agents och matzen am Gespréich wiesselen — de System-Prompt vum neien Agent gräift ab der nächster Noriicht.
 
-## D'Fünf integrierte Agenten
+## Déi fënnef agebaute Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
-**Fokus:** Erstelle und bearbeite vo Posts, Seite und Kontaktformular.
+**Fokus:** Erstellen an Ännere vu Bäiträg, Säiten a Kontaktformulairen.
 
-**Verfügbari Tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Verfügbar Tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Mat aktivéierte Superdav AI Agent v1.18.0-Integratioune kënnen och konfiguréiert Kalennerkontext, Geneemegungspaarten, Erënnerungen an SMS-Benoriichtegungs-Tools fir geneemegt Workflows verfügbar sinn.
 
-**Was guet macht:**
-- Blogposts usschriebe und veröffentliche us ere Kurzbeschriibig oder Struktur
-- Stapel vo Landing Pages für e neui Site erstelle
-- Kontakt- und Anfrageformular aabou
-- Featured Images uf Posts usere URL oder Suechi setze
+**Wat en gutt mécht:**
+- Blogbäiträg aus engem Briefing oder enger Glidderung entwerfen a publizéieren
+- Gruppe vu Landing-Säite fir en neie Site erstellen
+- Kontakt- an Ufroformulairen bauen
+- Featured Images op Bäiträg vun enger URL oder enger Sich setzen
+- Event-Nofass-Noriichten aus konfiguréiertem Google Calendar-Kontext entwerfen, an da fir Geneemegung pauséieren, ier Benoriichtegunge geschéckt ginn
 
-**Startvorschläg:**
-- *Schriib en 500-Wort-Blogpost über d'Vorteil vo WordPress Multisite.*
-- *Erstelle e Über, Dienstleistige und Kontaktseite und veröffentliche die.*
-- *Füeg es Buchigsanfrageformular zur Kontaktseite bi.*
-
----
-
-### Site Builder
-
-**Fokus:** End-to-End Website-Erstelllig us ere einzelne Ufgab.
-
-**Verfügbari Tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Was guet macht:**
-- E mehphasige Site-Erstelligsplan für e beschribte Gschäftsart generiere
-- Jede Phase automatisch usfüehre — Struktur, Inhalt, Navigation, Design
-- Us Fehlern mitten im Plan wiederherstelle ohni manuelli Iigriff z'brauche
-- Empfohleni Plugins als Teil vo de Erstelllig installiere
-- Kontaktformular direkt us de Chat-Schnittstell erstelle (Superdav AI Agent v1.10.0+)
-
-**Startvorschläg:**
-- *E Fotografie-Portfolio-Site mit eme Galerie Post Type, ere Buchigsseite und eme Kontaktformular ufbaue.*
-- *E Restaurant-Website mit em Online-Menü, Öffnungszite und eme Tischreservierigsanfrageformular erstelle.*
-- *E Freelance-Beratigs-Site mit Dienstleistungsseiten, eme Portfolio-Abschnitt und eme Blog ufboue.*
-- *Mit em Site Builder es Kontaktformular zur Kontaktseite hinzufüge.*
+**Ufanksvirschléi:**
+- *Schreif e Blogbäitrag vu 500 Wierder iwwer d'Virdeeler vu WordPress multisite.*
+- *Erstell eng Iwwer-eis-, Servicer- a Kontakt-Säit a publizéier se.*
+- *Füügt der Kontakt-Säit e Buchungsufro-Formulaire bäi.*
+- *Entwerf eng Erënnerung fir d'Participanten um muer konfiguréiertem Kalenner-Event a waart op Geneemegung, ier se geschéckt gëtt.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**Fokus:** Visuelli Anpassig — Farbe, Typografie, CSS und Blockmuster.
+**Fokus:** End-to-end-Websäit-Erstellung aus engem eenzege Prompt.
 
-**Verfügbari Tools:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Verfügbar Tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Mat Superdav AI Agent v1.18.0 kënne konfiguréiert Managed-Service-, Geneemegungs-, Erënnerungs-, Kalenner- an SMS-Tools verfügbar sinn, wou Administrateuren se aktivéieren.
 
-**Was es guet macht:**
-- Namensbasierti theme presets (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) aawende
-- Globali Typografie und Farbpalette feinjustiere via theme.json
-- Custom CSS iinjize für brand-spezifischi Üeberlegige
-- E Screenshot vo ere Seite mache und die für Designproblem überprüefe
+**Wat en gutt mécht:**
+- E méistufege Site-Opbauplang fir en beschriwwenen Entreprisentyp generéieren
+- All Phas autonom ausféieren — Struktur, Inhalt, Navigatioun, Design
+- Vun Feeler matzen am Plang erhuelen, ouni manuell Agrëff ze verlaangen
+- Recommandéiert Plugins als Deel vum Opbau installéieren
+- Kontaktformulairen direkt aus der Chat-Interface erstellen (Superdav AI Agent v1.10.0+)
+- Launch-Erënnerungen oder Participant-Nofass koordinéieren, ouni duebel Benoriichtegungen, wann Geneemegungspaarten an Erënnerungsrecords aktivéiert sinn
 
-**Startvorschläg:**
-- *Wende d'warm-editorial preset a und set de primäri Farb uf #2d6a4f.*
-- *Mache en Screenshot vo de Homepage und säg mir, was du verbessere würdsch.*
-- *Erstelle en wiederverwendbare hero block pattern mit eme vollbreiti Hintergrundbild und ere zentrierte Überschrift.*
-
----
-
-### Plugin Manager
-
-**Fokus:** WordPress plugins finde, installiere und verwalte.
-
-**Verfügbari Tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Was es guet macht:**
-- De beschti Plugin für en beschribte Anwendungsfall empfehle
-- Ability packs us em Registry installiere
-- De verfügbari ability catalogue nach Kategorie durchsuchen
-
-**Startvorschläg:**
-- *Was isch s'beschti Plugin für en Mitgliedschaftsdirektorium?*
-- *Installier de WooCommerce abilities pack.*
-- *Zeig mir alli verfügbare ecommerce ability packs.*
+**Ufanksvirschléi:**
+- *Bau e Fotografie-Portfolio-Site mat engem Galerie-Bäitragstyp, enger Buchungssäit an engem Kontaktformulaire.*
+- *Erstell eng Restaurant-Websäit mat engem Online-Menü, Ëffnungszäiten an engem Dëschbuchungs-Ufroformulaire.*
+- *Setz e Freelance-Consulting-Site mat Servicesäiten, enger Portfolio-Sektioun an engem Blog op.*
+- *Füügt der Kontakt-Säit e Kontaktformulaire mam Site Builder bäi.*
+- *Nodeems d'Checklëscht fir de Site-Launch geneemegt ass, schéck eng SMS-Erënnerung un de konfiguréierte Stakeholder-Kontakt.*
 
 ---
 
-### Support Assistant
+### Design Studio {#design-studio}
 
-**Fokus:** Froge zu Site Inhalt, Iistellige und WordPress Konfiguration beantworte.
+**Fokus:** Visuell Upassung — Faarwen, Typografie, CSS a Blockmuster.
 
-**Verfügbari Tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Verfügbar Tools:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Was guet:**
-- Aktuelli Site-Iistellige und -Optionen abrufe.
-- Erkläre, was Post Types, Taxonomien und Menüs uf de Site konfiguriert sind.
-- Froge wie "was macht die Iistellig?" beantworte, indem live Wärt gläse wärde.
-- Als leslichi Diagnose-Schicht vor Änderige diene.
+**Wat en gutt mécht:**
+- Benannt Theme-Presets uwenden (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Global Typografie a Faarfpaletten iwwer theme.json fein ofstëmmen
+- Benotzerdefinéiert CSS fir markespezifesch Iwwerschreiwungen injizéieren
+- E Screenshot vun enger Säit maachen an en op Designproblemer iwwerpréiwen
 
-**Startvorschläg:**
-- *Welchi Plugins und Iistellige sind aktuell uf dere Site aktiv?*
-- *List all d'Custom Post Types, wo uf dere Site registriert sind.*
-- *Welchi Navigationsmenüs git es und wo sind die zuewiese?*
+**Ufanksvirschléi:**
+- *Wend de warm-editorial-Preset un an setz dono d'Primärfaarf op #2d6a4f.*
+- *Maach e Screenshot vun der Startsäit a so mir, wat s du verbessere géifs.*
+- *Erstell e wiederverwendbaart Hero-Blockmuster mat engem hannergrondbild iwwer déi ganz Breet an enger zentréierter Iwwerschrëft.*
+
+### Plugin Manager {#plugin-manager}
+
+**Fokus:** WordPress-Plugins entdecken, installéieren a managen.
+
+**Verfügbar Tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Wat en gutt mécht:**
+- De beschte Plugin fir e beschriwwenen Uwendungsfall recommandéieren
+- Ability-Packs aus dem Registry installéieren
+- De verfügbare Ability-Katalog no Kategorie duerchsichen
+
+**Ufanksvirschléi:**
+- *Wat ass de beschte Plugin fir e Membership-Verzeechnes?*
+- *Installéier de WooCommerce-Ability-Pack.*
+- *Weis mir all verfügbar E-Commerce-Ability-Packs.*
 
 ---
 
-## Customising Agents (Agenten anpasse)
+### Support Assistant {#support-assistant}
 
-Jede integrierti Agent chan dur de Filter `gratis_ai_agent_agents` erweitert oder ersetzt wärde.
+**Fokus:** Froen iwwer Site-Inhalt, Astellungen a WordPress-Konfiguratioun beäntweren.
 
-### Eigene System Prompt zu eme bestehende Agent hinzufüge
+**Verfügbar Tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Wat et gutt mécht:**
+- Aktuell Säitenastellungen an Optiounen nokucken
+- Erklären, wéi eng Bäitragstypen, Taxonomien a Menüen op der Säit konfiguréiert sinn
+- Froen ewéi „wat mécht dës Astellung?“ beäntweren, andeems Live-Wäerter gelies ginn
+- Als lies-nëmmen Diagnos-Schicht déngen, ier Ännerunge gemaach ginn
+
+**Virschléi fir unzefänken:**
+- *Wéi eng Plugins an Astellunge sinn aktuell op dëser Säit aktiv?*
+- *Lëscht all déi personaliséiert Bäitragstypen op, déi op dëser Säit registréiert sinn.*
+- *Wéi eng Navigatiounsmenüe ginn et a wou si se zougewisen?*
+
+---
+
+## Superdav Automation Integratiounen {#superdav-automation-integrations}
+
+Wann Superdav AI Agent v1.18.0 Integratioune konfiguréiert sinn, kënnen agebaut Agenten u méi sécheren, plangbewossten Automatiséierungs-Workflows deelhuelen:
+
+- **Google Calendar Lies-Tools** erlaben Agenten, konfiguréiert Kalenneren an Evenementer ze iwwerpréiwen, ier nofolgend Aarbecht ausgeschafft gëtt.
+- **Kontakt- an Participanten-Zouuerdnung** hëlleft, Evenement-Participanten u WordPress Benotzer oder bekannt Kontakter zouzeuerdnen.
+- **Mënschlech Geneemegungs-Paarten** pauséiere sensibel Aktiounen, bis en autoriséierte Benotzer se iwwerpréift a bestätegt.
+- **Erënnerungsopzeechnungen** verhënneren duebel Notifikatiounen, wann geplangten Jobs nach eng Kéier versichen oder sech widderhuelen.
+- **TextBee SMS-Notifikatiounen** schécken konfiguréiert SMSen nëmmen, wann SMS-Zougangsdaten a Workflow-Berechtegungen aktivéiert sinn.
+
+Recommandéierte Workflow: frot den Agent, de Message oder d'Aktioun virzebereeden, iwwerpréift d'Geneemegungs-Ufro, an erlaabt duerno der geneemegter Aktioun, weiderzelafen. Fir widderhuelend Erënnerungen, loosst d'Erënnerungs-Deduplikatioun aktivéiert, sou datt dat selwecht Evenement oder dee selwechte Kontakt net widderholl informéiert gëtt.
+
+---
+
+## Agenten upassen {#customising-agents}
+
+All agebauten Agent kann iwwer de `gratis_ai_agent_agents` Filter erweidert oder ersat ginn.
+
+### E personaliséierte System-Prompt zu engem existente Agent derbäisetzen {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Ene neui Agent registriere
+### En neien Agent registréieren {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-De nöi Agent chunnt sofort nach em Filter lauft, i de Agent Picker.
+Den neien Agent erschéngt am Agent-Auswieler direkt nodeems de Filter gelaf ass.
 
-### Entferne en integrierte Agent
+### En agebauten Agent ewechhuelen {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

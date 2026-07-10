@@ -3,13 +3,13 @@ title: Pangwangun Lapangan Checkout sareng DNS Pelanggan
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pengelolaan Bidang Checkout dan DNS Pelanggan
+# Pengelolaan Bidang Checkout dan DNS Pelanggan {#checkout-field-and-customer-dns-management}
 
-## Kolom Pemilihan Domain
+## Kolom Pemilihan Domain {#the-domain-selection-checkout-field}
 
 Kolom **Domain Selection** adalah elemen checkout yang memberikan pilihan kepada pelanggan tentang cara mendapatkan domain situs mereka. Tambahkan ini ke setiap formulir checkout untuk mengaktifkan penjualan domain.
 
-### Menambahkan kolom ke formulir checkout
+### Menambahkan kolom ke formulir checkout {#adding-the-field-to-a-checkout-form}
 
 1. Buka **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Buka atau buat formulir checkout
@@ -18,7 +18,7 @@ Kolom **Domain Selection** adalah elemen checkout yang memberikan pilihan kepada
 5. Konfigurasikan opsi kolom (lihat di bawah)
 6. Simpan formulir
 
-### Opsi kolom
+### Opsi kolom {#field-options}
 
 **Domain modes** — Pilih tab mana yang dilihat pelanggan. Setiap mode bisa diaktifkan atau dinonaktifkan secara terpisah:
 
@@ -32,7 +32,7 @@ Kolom **Domain Selection** adalah elemen checkout yang memberikan pilihan kepada
 
 **Domain product** — Secara opsional, sematkan kolom ini ke produk domain tertentu. Jika tidak diatur, addon akan secara otomatis memilih produk yang cocok berdasarkan TLD (Top-Level Domain) yang dicari pelanggan.
 
-### Kolom kontak pemegang pendaftaran
+### Kolom kontak pemegang pendaftaran {#registrant-contact-fields}
 
 Ketika pelanggan memilih tab **Register New Domain**, formulir checkout menambahkan kolom kontak pemegang pendaftaran secara langsung:
 
@@ -43,11 +43,11 @@ Ketika pelanggan memilih tab **Register New Domain**, formulir checkout menambah
 
 Ieu dipersyaratkeun ku sakabé pendaftar je diuji saméméh panggilan API registrasi dilakukeun. Nomina telepon otomatis diformat jadi format internasional `+CC.NNN` anu ditunggu ku para pendaftar.
 
-### Auto-generated site URL
+### Auto-generated site URL {#auto-generated-site-url}
 
 Lamun pelanggan mendaftar atawa mapkeun domain, kolom site URL bakal diisi otomatis tina domain anu dipilih. Pelanggan teu perlu ngisian kolom URL séjén.
 
-### Perilaku pencarian (Search behaviour)
+### Perilaku pencarian (Search behaviour) {#search-behaviour}
 
 - Ketersediaan domain diuji sacara *real-time* ku AJAX nalika pelanggan ngetik
 - Saran TLD alternatif bakal ditunjuke lamun domain pilihan teu aya
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Ngatur DNS Pelanggan (Customer DNS management)
+## Ngatur DNS Pelanggan (Customer DNS management) {#customer-dns-management}
 
 Pelanggan bisa ngatur *DNS record* pikeun domain anu geus didaftarkeun tina halaman **My Account**, di bawah entri domainna.
 
-### Jenis record anu didukung
+### Jenis record anu didukung {#supported-record-types}
 
 | Tipe | Panggoan |
 |---|---|
@@ -91,11 +91,11 @@ Pelanggan bisa ngatur *DNS record* pikeun domain anu geus didaftarkeun tina hala
 | **MX** | Ngatur server *mail exchange* |
 | **TXT** | Nambahan SPF, DMARC, verifikasi, atawa record téks séjén |
 
-### Provider mana anu ngajak ngatur DNS?
+### Provider mana anu ngajak ngatur DNS? {#which-providers-support-dns-management}
 
 Manajemen DNS (tambah, edit, hapus record) bisa dilakukan dengan **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, dan **Openprovider**. Domain **Hostinger** bisa memperbarui nameserver lewat Domain Seller; untuk domain yang di-host, pengaturan DNS dikelola oleh integrasi pemetaan domain inti Hostinger. Domain dari Namecheap, GoDaddy, dan NameSilo akan menampilkan status dan tanggal kedaluwarsa, tapi DNS harus dikelola langsung di panel kontrol registrar.
 
-### Default DNS records (Record DNS Bawaan)
+### Default DNS records (Record DNS Bawaan) {#default-dns-records}
 
 Anda bisa mengatur record DNS bawaan yang otomatis diterapkan saat sebuah domain didaftarkan. Pergi ke **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: melihat dan mengedit DNS
+### Admin: melihat dan mengedit DNS {#admin-viewing-and-editing-dns}
 
 Admin jaringan bisa melihat dan mengedit record DNS untuk domain pelanggan mana pun dari halaman edit domain di **Network Admin › Ultimate Multisite › Domains**.

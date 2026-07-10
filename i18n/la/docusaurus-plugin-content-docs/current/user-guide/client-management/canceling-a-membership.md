@@ -3,7 +3,7 @@ title: Annullare Membresiam
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Membrum Cessare (v2)
+# Membrum Cessare (v2) {#canceling-a-membership-v2}
 
 _**NOTA IMPORTANS: Hoc opus refertur ad Ultimate Multisite version 2.x.**_
 

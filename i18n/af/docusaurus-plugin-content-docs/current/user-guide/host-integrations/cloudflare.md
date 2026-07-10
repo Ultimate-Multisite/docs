@@ -3,18 +3,18 @@ title: Cloudflare Integrasie
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Integrasie
+# Cloudflare Integrasie {#cloudflare-integration}
 
-## Oorsig
+## Oorsig {#overview}
 Cloudflare is 'n leidende *content delivery network* (CDN) en sekuriteitsverskaffer wat help om webwerwe te beskerm en te versnel. Hierdie integrasie maak outomatiese domeinbestuur moontlik tussen Ultimate Multisite en Cloudflare, veral vir *subdomain* multisite-installasies.
 
-## Eienskappe
+## Eienskappe {#features}
 - Outomatiese *subdomain* skep in Cloudflare
 - Ondersteuning vir geproksieerde *subdomain*
 - DNS-rekordbestuur
 - Verbeterde DNS-rekordweergawes in die Ultimate Multisite admin
 
-## Vereistes
+## Vereistes {#requirements}
 Die volgende konstantes moet in jou `wp-config.php` lêer gedefinieer word:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Opstel Instruksies
+## Opstel Instruksies {#setup-instructions}
 
-### 1. Kry jou Cloudflare API Sleutel
+### 1. Kry jou Cloudflare API Sleutel {#1-get-your-cloudflare-api-key}
 
 1. Log in op jou Cloudflare *dashboard*.
 2. Gaan na "My Profile" (klik op jou e-posadres in die boonste regterhoek).
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Wysig
 5. Kopieer jou API-token.
 
-### 2. Kry jou Zone ID
+### 2. Kry jou Zone ID {#2-get-your-zone-id}
 
 1. In jou Cloudflare *dashboard*, kies die domein wat jy wil gebruik.
 2. Die Zone ID is sigbaar in die "Overview" tab, in die regterbalk onder "API".
 3. Kopieer die Zone ID.
 
-### 3. Voeg Konstantes by tot wp-config.php
+### 3. Voeg Konstantes by tot wp-config.php {#3-add-constants-to-wp-configphp}
 
 Voeg die volgende konstantes by tot jou `wp-config.php` lêer:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Aktiveer die Integrasie
+### 4. Aktiveer die Integrasie {#4-enable-the-integration}
 
 1. In jou WordPress admin, gaan na Ultimate Multisite > Settings.
 2. Navigeer na die "Domain Mapping" tab.
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Aktiveer die Cloudflare-integrasie.
 5. Klik op "Save Changes".
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
-### Subdomain Bestuur
+### Subdomain Bestuur {#subdomain-management}
 
 Wanneer 'n nuwe webwerf in 'n *subdomain* multisite-installasie geskep word:
 
@@ -67,7 +67,7 @@ Wanneer 'n nuwe webwerf in 'n *subdomain* multisite-installasie geskep word:
 2. Die *subdomain* word standaard gekonfigureer om deur Cloudflare geproksieer te word (dit kan met *filters* verander word).
 3. Wanneer 'n webwerf verwyder word, sal die integrasie die *subdomain* van Cloudflare verwyder.
 
-### DNS-Rekordweergawes
+### DNS-Rekordweergawes {#dns-record-display}
 
 Die integrasie verbeter die DNS-rekordweergawes in die Ultimate Multisite admin deur:
 
@@ -75,11 +75,11 @@ Die integrasie verbeter die DNS-rekordweergawes in die Ultimate Multisite admin 
 2. Te wys of rekords geproksieer is of nie.
 3. Addisionele inligting oor die DNS-rekords te toon.
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (voorheen genoem "Cloudflare for SaaS") is 'n Cloudflare-funksie wat jou kliënte toelaat om hul eie domeine met SSL op jou multisite-netwerk te gebruik. Dit is die aanbeveelde benadering vir domein-gemapte multisite-installasies wat Cloudflare gebruik, omdat Cloudflare die uitreiking en vernuwing van die SSL-sertifikaat vir elke aangepaste domein outomaties bestuur.
 
-### Hoe dit verskil van die standaard Cloudflare-integrasie
+### Hoe dit verskil van die standaard Cloudflare-integrasie {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Standaard integrasie | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Die integrasie verbeter die DNS-rekordweergawes in die Ultimate Multisite admin 
 | **Beste vir** | *Subdomain* multisite | Domein-gemapte multisite |
 | **SSL** | Word afsonderlik hanteer | Word outomaties deur Cloudflare bestuur |
 
-### Opstel van Cloudflare Custom Hostnames
+### Opstel van Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. In jou Cloudflare *dashboard*, maak die zone vir jou hoofdomein oop.
 2. Gaan na **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ Vir die volledige API-verwysing, kyk na [Cloudflare Custom Hostnames dokumentasi
 Vanaf Ultimate Multisite v2.6.1 word hierdie funksie in alle *plugin* instellings en etikette verwys as **Cloudflare Custom Hostnames**. Vroëre weergawes het die naam "Cloudflare for SaaS" gebruik, wat die onderliggende Cloudflare produknaam is.
 :::
 
-## Belangrike Notas
+## Belangrike Notas {#important-notes}
 
 Vanweë Cloudflare se onlangse opdaterings, is *wildcard proxying* nou beskikbaar vir alle kliënte. Dit beteken dat die standaard Cloudflare DNS-integrasie minder kritiek is vir *subdomain* multisite-installasies as wat dit was, aangesien jy eenvoudig 'n *wildcard* DNS-rekord in Cloudflare kan opstel.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### API Verbindingsprobleme
+### API Verbindingsprobleme {#api-connection-issues}
 - Verifieer dat jou API-token korrek is en die nodige toestemminge het.
 - Kontroleer of jou Zone ID korrek is.
 - Verseker dat jou Cloudflare rekening die nodige toestemminge het.
 
-### Subdomain Nie Bygevoeg Nie
+### Subdomain Nie Bygevoeg Nie {#subdomain-not-added}
 - Kontroleer die Ultimate Multisite logboeke vir enige foutboodskappe.
 - Verifieer dat die *subdomain* nie reeds by Cloudflare bygevoeg is nie.
 - Verseker dat jou Cloudflare plan die aantal DNS-rekords ondersteun wat jy skep.
 
-### Proxying Probleme
+### Proxying Probleme {#proxying-issues}
 - As jy nie wil hê dat *subdomain*s geproksieer moet word nie, kan jy die `wu_cloudflare_should_proxy` *filter* gebruik.
 - Sommige funksies mag nie korrek werk wanneer dit geproksieer word nie (bv. sekere WordPress admin-funksies).
 - Oorweeg om Cloudflare se Page Rules te gebruik om die *cache* vir admin-bladsye te omseil.

@@ -3,13 +3,13 @@ title: Diegiant „Ultimate Multisite“
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# „Ultimate Multisite“ įdiegimas
+# „Ultimate Multisite“ įdiegimas {#installing-ultimate-multisite}
 
 :::note
 Šioje instrukcijoje daroma prielaida, kad „WordPress Multisite“ jau yra įdiegtas ir sukonfigūruotas. Norėdami sužinoti kaip tai padaryti, peržiūrėkite šią instrukciją [čia](https://www.wpbeginner.com/glossary/multisite/) (WP Beginner).
 :::
 
-## Priedo įdiegimas
+## Priedo įdiegimas {#installing-the-plugin}
 
 „Ultimate Multisite“ galima nemokamai atsisiųsti iš [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Po aktyvacijos būsite automatiškai nukreipti į nustatymo vedlį.
 
 ![Priedas aktyvuotas ir nukreiptas į vedlį](/img/installation/plugin-activated.png)
 
-## Nustatymo vedlys
+## Nustatymo vedlys {#setup-wizard}
 
 Nustatymo vedlys padės jums sukonfigūruoti „Ultimate Multisite“ maždaug per 10 minučių.
 
-### Sveiki atvykę
+### Sveiki atvykę {#welcome}
 
 Spustelėkite **Pradėti**, kad pradėtumėte.
 
 ![Nustatymo vedlio pasveikinimo ekranas](/img/installation/wizard-welcome.png)
 
-### Prieš įdiegiant patikrinimai
+### Prieš įdiegiant patikrinimai {#pre-install-checks}
 
 Šiame etape patikrinama jūsų sistemos informacija ir „WordPress“ diegimas, kad būtų užtikrinta, jog jie atitinka „Ultimate Multisite“ reikalavimus. Jei viskas atrodo gerai, spustelėkite **Pereiti prie kito žingsnio**.
 
@@ -51,31 +51,31 @@ Jei „Ultimate Multisite“ buvo įdiegtas, bet **dar neaktyvuotas visame tinkl
 Spustelėjus **Aktyvuoti tinkle**, priedas bus automatiškai aktyvuotas visame jūsų „multisite“ tinkle. Po aktyvacijos vedlys tęsis įprastai, pereinant prie diegimo žingsnio. Jums nereikės palikti vedlio, kad išspręstumėte aktyvacijos problemą.
 :::
 
-### Diegimas
+### Diegimas {#installation}
 
 Diegimo priemonė sukurs reikiamus duomenų bazės lenteles ir įdiegia failą `sunrise.php`, kurio reikia „Ultimate Multisite“ veikimui. Spustelėkite **Įdiegti**, kad tęstumėte.
 
 ![Diegimo žingsnis, rodantis duomenų bazės lenteles ir failą sunrise.php](/img/installation/wizard-installation.png)
 
-### Jūsų įmonė
+### Jūsų įmonė {#your-company}
 
 Užpildykite savo įmonės informaciją ir nustatykite numatytąją valiutą. Ši informacija bus naudojama visoje jūsų „WaaS“ platformoje. Kai būsite baigę, spustelėkite **Tęsti**.
 
 ![Jūsų įmonės konfigūracijos žingsnis](/img/installation/wizard-your-company.png)
 
-### Numatytasis turinys
+### Numatytasis turinys {#default-content}
 
 Šiame etape galite įdiegti iš anksto nustatytus šablonus, produktus ir kitą pradinį turinį. Tai puikus būdas susipažinti su „Ultimate Multisite“ funkcijomis. Spustelėkite **Įdiegti**, kad pridėtumėte numatytąjį turinį, arba praleiskite šį žingsnį, jei norite pradėti nuo naujo.
 
 ![Numatytojo turinio diegimo žingsnis](/img/installation/wizard-default-content.png)
 
-### Rekomenduojami priedai
+### Rekomenduojami priedai {#recommended-plugins}
 
 Pasirenkamai įdiekite rekomenduojamus papildomus priedus. Spustelėkite **Įdiegti**, kad juos pridėtumėte, arba tęskite.
 
 ![Rekomenduojamų priedų žingsnis](/img/installation/wizard-recommended-plugins.png)
 
-### Pasiruošta!
+### Pasiruošta! {#ready}
 
 Viskas! Jūsų „Ultimate Multisite“ diegimas baigtas. Dabar galite pradėti kurti savo „Website as a Service“ platformą iš **tinklo administratoriaus valdymo skydelio**.
 

@@ -3,15 +3,15 @@ title: 'Örnzet 5: Tervezésezed'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 5. Bölöm: A Tervcsoportok Tervezése
+# 5. Bölöm: A Tervcsoportok Tervezése {#lesson-5-designing-your-plans}
 
 A tervcsoportjai nem csupán árazási szintek – hanem tükrözik azt, ahogyan a szakterületének ügyfelei ténylegesen működnek. Ebben a bölségeben olyan termékcsoportokat terveznek, amelyek megfelelnek a fitness vállalkozások valódi igényeinek különböző szakaszokban.
 
-## Hol maradtunk?
+## Hol maradtunk? {#where-we-left-off}
 
 FitSite rendelkezik három előre elkészített sablónál (Studio Essential, Gym Pro, Fitness Chain). Most létrehozzuk azokat a tervcsoportokat, amelyek meghatározzák, milyen funkciókra férnek hozzá az ügyfelek, és mit fizetnek.
 
-## A Funkcionális Szegmensek Összefoglalása
+## A Funkcionális Szegmensek Összefoglalása {#thinking-in-customer-segments}
 
 A legtöbb ember hibát követ el, amikor a tervcsoportokat a műszaki funkciók körül tervezzi (raktárkapacitás, sávszélesség, oldalszám). A szakterületének ügyfelei nem ilyen szempontok alapján gondolkodnak. Egy fitness étterem tulajdonosa arról gondolkodik, amire szüksége van a vállalkozás működtetéséhez.
 
@@ -25,11 +25,11 @@ A fitness stúdiók számára három természetes szegmens létezik:
 
 A tervcsoportjai ezekhez a szegmensekhez kell kötődniük, nem pedig véletlenszerű funkciócsomagokhoz.
 
-## A FitSite Tervcsoportok Létrehozása
+## A FitSite Tervcsoportok Létrehozása {#creating-the-fitsite-plans}
 
 Navigáljon az **Ultimate Multisite > Products > Add Product** menüpontra minden tervcsoporthoz.
 
-### Tervcsoport 1: FitSite Starter -- 49 $/hónap
+### Tervcsoport 1: FitSite Starter -- 49 $/hónap {#plan-1-fitsite-starter----49month}
 
 **Célközönség**: Egyededi edzők és kis stúdiók
 
@@ -59,7 +59,7 @@ Navigáljon az **Ultimate Multisite > Products > Add Product** menüpontra minde
 - Kiválasztott témája: Követetett aktiválás (Force Activate)
 - Minden más téma: Rejtve
 
-### Tervcsoport 2: FitSite Growth -- 99 $/hónap
+### Tervcsoport 2: FitSite Growth -- 99 $/hónap {#plan-2-fitsite-growth----99month}
 
 **Célközönség**: Megalakult, egy helyszíni fitness éttermek
 
@@ -85,7 +85,7 @@ Navigáljon az **Ultimate Multisite > Products > Add Product** menüpontra minde
 - Tervcsoport: FitSite Plans
 - Termékrendelmezés: 2
 
-### Tervcsoport 3: FitSite Pro -- 199 $/hónap
+### Tervcsoport 3: FitSite Pro -- 199 $/hónap {#plan-3-fitsite-pro----199month}
 
 **Célközönség**: Több helyszíni fitness láncok
 
@@ -109,7 +109,7 @@ Navigáljon az **Ultimate Multisite > Products > Add Product** menüpontra minde
 - Tervcsoport: FitSite Plans
 - Termékrendelmezés: 3
 
-## A Tervcsoportok Beállítása
+## A Tervcsoportok Beállítása {#setting-up-the-plan-group}
 
 A tervcsoport biztosítja, hogy az ügyfelek csak a FitSite tervcsoporton belül tudjanak emelkedni vagy csökkenteni. Minden tervcsoport **Up & Downgrades** menüpontján:
 
@@ -118,7 +118,7 @@ A tervcsoport biztosítja, hogy az ügyfelek csak a FitSite tervcsoporton belül
 
 Ez létrehozza egy világos emelkedési útvonalat: Starter → Growth → Pro.
 
-## Order Bumpok Hozzáadása
+## Order Bumpok Hozzáadása {#adding-order-bumps}
 
 Az "order bumpok" (kiegészítő vásárlások) olyan kiegészítő termékek, amelyeket a fizetési folyamat során kínálunk. FitSite esetében fontolja meg:
 
@@ -128,7 +128,7 @@ Az "order bumpok" (kiegészítő vásárlások) olyan kiegészítő termékek, a
 
 Létrehozsa ezeket **Package** típusú termékekként az Ultimate Multisite-ban, és kapcsolja őket a releváns tervcsoportokhoz.
 
-## Miért Működik Ez a Szerkezet?
+## Miért Működik Ez a Szerkezet? {#why-this-structure-works}
 
 - A **Starter** eltávolítja a belépési akadályokat – alacsony ár, egyszerű kínálat, gyors online jelenlétet biztosít az edzőknek
 - A **Growth** hozzáadja azokat a funkciókat, amelyekre a fitness éttermeknek ténylegesen szüksége van – foglalás, galériák, saját domainek
@@ -136,7 +136,7 @@ Létrehozsa ezeket **Package** típusú termékekként az Ultimate Multisite-ban
 - Az **Order bumpok** lehetővé teszik az ügyfelek számára, hogy testre szabják a szolgáltatást, anélkül, hogy bonyolítják meg a fő tervcsoportokat
 - A **világos emelkedési útvonal** azt jelenti, hogy az ügyfelek növekedésével növekednek veletek, nem hogy elhagyják a szolgáltatást
 
-## A FitSite Hálózatának Állapotát
+## A FitSite Hálózatának Állapotát {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Amit Létrehozottunk Ebben a Bölségeben
+## Amit Létrehozottunk Ebben a Bölségeben {#what-we-built-this-lesson}
 
 - **Három tervcsoport**, amelyek megfelelnek a valódi fitness vállalkozási szegmenseknek
 - **Funkciókorlátozás** az Ultimate Multisite plugin és sablonvezérlő funkcióit használva

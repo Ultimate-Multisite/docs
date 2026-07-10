@@ -3,7 +3,7 @@ title: GitHub Snippets
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Πώς να χρησιμοποιήσετε τα snippets του Ultimate Multisite από το αποθετήριο GitHub
+# Πώς να χρησιμοποιήσετε τα snippets του Ultimate Multisite από το αποθετήριο GitHub {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Υπάρχουν διαθέσιμα code snippets στο αποθετήριο GitHub που ζητούνται συχνά από χρήστες του Ultimate Multisite που θέλουν να προσθέσουν μικρές λειτουργίες, όπως την προσθήκη script του Google Analytics στις σελίδες εγγραφής ή την απόκρυψη ενός meta box από τον πίνακα διαχείρισης.
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# Πώς να προσθέσετε το snippet στο αρχείο functions.php του θέματός σας
+# Πώς να προσθέσετε το snippet στο αρχείο functions.php του θέματός σας {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Συνδεθείτε στον πίνακα διαχείρισης του WordPress Network και μεταβείτε στο Θέματα > Επεξεργαστής Θέματος (Δείτε το στιγμιότυπο οθόνης παρακάτω).
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Screenshot unavailable: WordPress Theme Editor showing functions.php file editing -->
 
-# Πώς να δημιουργήσετε Must-Use Plugins (mu-plugins)
+# Πώς να δημιουργήσετε Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 Το WordPress διαθέτει μια λειτουργία που σας επιτρέπει να φορτώνετε προσαρμοσμένη λειτουργικότητα που ονομάζεται "Must-Use Plugins", ή "mu-plugins" για συντομία.
 

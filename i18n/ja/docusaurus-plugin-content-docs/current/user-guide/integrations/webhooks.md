@@ -1,56 +1,54 @@
 ---
 title: ウェブフック
 sidebar_position: 15
-_i18n_hash: 31948dc4c1b47114e296e95813b25348
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks（v2）の最初の見方
+# Webhooks (v2) の概要 {#a-first-look-on-webhooks-v2}
 
-_**注意：この機能または記事は上級者向けです。**_
+_**注意: この機能または記事は上級ユーザー向けです。**_
 
-**webhook** は、Ultimate Multisite のようなアプリやソフトウェアが他のアプリケーションにリアルタイム情報を提供する方法です。webhook は、発生した瞬間にデータやペイロードを他のアプリケーションに送信し、つまり **すぐにデータを取得できる** ことを意味します。
+**webhook** は、Ultimate Multisite のようなアプリやソフトウェアが、他のアプリケーションへリアルタイムの情報を提供する方法です。webhook は、発生したタイミングで他のアプリケーションへデータやペイロードを届けるため、**データを即座に取得できます。**
 
-イベントがトリガーされるたびに、Ultimate Multisite から別の CRM やシステムへ特定のデータを統合または転送する必要がある場合に便利です。例えば、新しいユーザーアカウントが作成されるたびに、ユーザーの名前とメールアドレスをメールリストに送信する必要があります。
+これは、イベントがトリガーされるたびに、Ultimate Multisite から別の CRM やシステムへ特定のデータを連携または渡す必要がある場合に便利です。たとえば、新しいユーザー Account が作成されるたびに、ユーザーの名前とメールアドレスをメーリングリストへ送信する必要がある場合です。
 
-## webhook の作成方法
+## webhook の作成方法 {#how-to-create-a-webhook}
 
-webhook を作成するには、ネットワーク管理ダッシュボードに移動します。**Ultimate Multisite > Webhooks > Add New Webhook** をクリックします。
+webhook を作成するには、ネットワーク管理者 Dashboard に移動します。**Ultimate Multisite > Webhooks > 新しい Webhook を追加** をクリックします。
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Add New Webhook ボタンがある空の Webhooks 一覧ページ](/img/admin/webhooks-list-empty.png)
 
-新しい webhook を作成すると、**Name、URL、Event** などの情報を入力するよう求められます。webhook の名前は好きなものを使用できます。最も重要なフィールドは URL と Event です。
+その後、webhook 設定を編集できます。
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![名前、イベント、URL フィールドがある Add New Webhook フォーム](/img/admin/webhook-add-modal.png)
 
-URL は、Ultimate Multisite が **payload またはデータ** を送信する **エンドポイントまたは宛先** です。これはデータを受信するアプリケーションです。
+新しい webhook を作成するときは、**名前、URL、** および **イベント** などの情報を求められます。webhook には任意の名前を使用できます。最も重要なフィールドは URL とイベントです。
 
-Zapier は、サードパーティアプリケーションとの統合を容易にするためにユーザーが最もよく使用するソリューションです。Zapier のようなプラットフォームがない場合、データをキャッチして処理するカスタム関数を手動で作成する必要があります。**Ultimate Multisite webhook を Zapier で使用する方法** に関する記事を参照してください。
+![URL フィールドとペイロードのプレビューを表示する webhook 編集インターフェース](/img/admin/webhook-url-field.png)
 
-この記事では、webhook の仕組みと Ultimate Multisite で利用可能なイベントの基本概念を見ていきます。私たちは [requestbin.com](https://requestbin.com/) というサードパーティサイトを使用します。このサイトは、コードを書かずにエンドポイントを作成し、ペイロードをキャッチできます。 _**免責事項：このサイトはデータが受信されたことを示すだけです。**_ ペイロードに対して処理やその他のアクションは行われません。
+URL は、Ultimate Multisite が **ペイロードまたはデータ** を送信する **エンドポイントまたは送信先** です。これはデータを受け取るアプリケーションです。
 
-[requestbin.com](https://requestbin.com/) にアクセスし、Create Request Bin をクリックします。
+Zapier は、ユーザーが 3rd party アプリケーションとの連携を簡単にするために使う、最も一般的なソリューションです。Zapier のようなプラットフォームがない場合は、データを受け取り処理するカスタム関数を手動で作成する必要があります。**Ultimate Multisite webhook を Zapier と一緒に使用する方法** については、この記事を参照してください。
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+この記事では、webhook がどのように動作するかの基本概念と、Ultimate Multisite で利用できるイベントを見ていきます。[requestbin.com](https://requestbin.com/) という 3rd party サイトを使用します。このサイトを使うと、コーディングなしでエンドポイントを作成し、ペイロードを受け取ることができます。_**免責事項: これはデータが受信されたことを表示するだけです。**_ ペイロードに対する処理や何らかのアクションは行われません。
 
-そのボタンをクリックすると、既にアカウントをお持ちの場合はログイン、持っていない場合はサインアップを求められます。既にアカウントをお持ちの場合は、すぐにダッシュボードに移動します。ダッシュボードでは、Ultimate Multisite の webhook を作成する際に使用できるエンドポイントまたは URL がすぐに表示されます。
+[requestbin.com](https://requestbin.com/) に移動し、Create Request Bin をクリックします。
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+そのボタンをクリックすると、すでに Account を持っている場合はログイン、持っていない場合はサインアップを求められます。すでに Account がある場合は、その Dashboard に直接移動します。その Dashboard では、Ultimate Multisite webhook の作成に使用できるエンドポイントまたは URL がすぐに表示されます。
 
-URL をコピーして Ultimate Multisite に戻ります。URL フィールドにエンドポイントを貼り付け、ドロップダウンからイベントを選択します。この例では、**Payment Received** を選択します。
+URL をコピーして、Ultimate Multisite に戻ります。エンドポイントを URL フィールドに入力し、ドロップダウンからイベントを選択します。この例では、**Payment Received** を選択します。
 
-このイベントは、ユーザーが支払いを行うたびにトリガーされます。利用可能なすべてのイベント、その説明、ペイロードはページの下部に一覧表示されています。**Add New Webhook** ボタンをクリックして webhook を保存します。
+このイベントは、ユーザーが支払いを行うたびにトリガーされます。利用可能なすべてのイベント、その説明、ペイロードはページ下部に一覧表示されています。webhook を保存するには、**Add New Webhook** ボタンをクリックします。
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![Payment Received が選択された webhook イベントのドロップダウン](/img/admin/webhook-event-picker.png)
 
-作成した webhook が機能しているか確認するために、テストイベントをエンドポイントに送信できます。作成した webhook の下にある **Send Test Event** をクリックします。
+作成した webhook が動作しているか確認するために、テストイベントをエンドポイントへ送信できるようになりました。作成した webhook の下にある **Send Test Event** をクリックして実行できます。
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![設定済みの webhook 1 件と Send Test アクションを表示する Webhooks 一覧](/img/admin/webhooks-list-populated.png)
 
-テストが成功したことを示す確認ウィンドウが表示されます。
+これにより、テストが成功したことを示す確認ウィンドウが表示されます。
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
+![テストペイロード送信後の webhook テストイベント結果](/img/admin/webhook-test-result.png)
 
-次に _Requestbin_ サイトに戻ると、ペイロードが受信され、テストデータが含まれていることが確認できます。
+ここで _Requestbin_ サイトに戻ると、いくつかのテストデータを含むペイロードが受信されたことを確認できます。
 
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
-
-これが webhook とエンドポイントの動作原理です。カスタムエンドポイントを作成する場合は、Ultimate Multisite から受信したデータを処理するカスタム関数を作成する必要があります。
+これが webhook とエンドポイントの動作に関する基本原則です。カスタムエンドポイントを作成する場合は、Ultimate Multisite から受け取るデータを処理するためのカスタム関数を作成する必要があります。

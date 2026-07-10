@@ -4,13 +4,13 @@ title: ''
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filtro: wu_documentation_get_link
+# Filtro: wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Permitir a los desarrolladores de plugins filtrar los enlaces.
 
 No estoy seguro de cómo podría ser útil, pero no hace daño tenerlo.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
@@ -18,10 +18,10 @@ No estoy seguro de cómo podría ser útil, pero no hace daño tenerlo.
 | $slug | `string` | El slug usado para recuperar el enlace |
 | $default_link | `string` | El enlace predeterminado registrado |
 
-### Desde
+### Desde {#since}
 
 - 1.7.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) en la línea 125

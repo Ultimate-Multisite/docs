@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Yon Première Vue sur Webhooks (v2)
+# Yon Première Vue sur Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ATTENTION: Note ke sa fonksyon ou oswa sa tèks sa a se pou moun ki gen konnen avanse.**_
 
@@ -11,7 +11,7 @@ Yon **webhook** se yon fason pou yon aplikasyon oswa lojike souvan tankou Ultima
 
 Sa a ede ou si ou bezwen intègre oswa pase kèk done soti nan Ultimate Multisite bay yon CRM oswa sistèm lòt chak fwa yon evènman kòmanse. Pa egzanp, ou bezwen voye non ak adrès imèl itilizat la pou yon lis imèl chak fwa yon nou kont itilizat ki kreye.
 
-## Kijan pou w kreye yon webhook
+## Kijan pou w kreye yon webhook {#how-to-create-a-webhook}
 
 Pou kreye yon webhook, ale nan dashboard admin rezo ou an. Klike sou **Ultimate Multisite > Webhooks > Add New Webhook.**
 

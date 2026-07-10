@@ -3,7 +3,7 @@ title: Maniĝi de klientoj
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Customer-manedigi
+# Customer-manedigi {#managing-customers}
 
 La paĝo **Customers** montras la liston de memberoj registritaj en via reto. Ĉi tiu paĝo prezentas bazan informojn pri la uzanto inkluzive nomon, elektronitan adreson, lastan logiron kaj linkon **migri al** kiu pervas vin al la subpaĝa sito kiel administrator de la sitio.
 

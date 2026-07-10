@@ -3,7 +3,7 @@ title: Klientu pārvaldība
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Klientu pārvaldība
+# Klientu pārvaldība {#managing-customers}
 
 Sījumā **Klienti** redz sarakstu lietotāju, kas ir reģistrēti jūsu tīklā. Šajā lapā tiek parādīta pamata lietotāja informācija, tostarp vārdu, e-pasta adresi, pēdējās iekļuves laiku un **pārslēgšanas** saiti, kas ļauj jums iekļūt lietotājam subsite kā vietnes administrator.
 

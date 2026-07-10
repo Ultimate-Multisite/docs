@@ -3,15 +3,15 @@ title: Gastvryheidsmenu's
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastgewerdesmenu's
+# Gastgewerdesmenu's {#hospitality-menus}
 
 Die **Gastgewerdesmenu's**-kenmerk laat Theme Builder toe om gestruktureerde kos- en drankmenu-bladsye direk in u WordPress-webwerf te genereer en in te bed.
 
-## Oorsig
+## Oorsig {#overview}
 
 Theme Builder kan nou professionele, gestruktureerde menu-bladsye skep vir gastgewerdesbesighede, insluitend restaurante, kafees, bars en cateringdienste. Hierdie menu's is ten volle geïntegreer in die ontwerp van u webwerf en kan maklik opgedateer en bestuur word.
 
-## Ondersteunde Gastgewerdessoorte
+## Ondersteunde Gastgewerdessoorte {#supported-hospitality-types}
 
 - **Restaurante** — volbedienings eetmenu's
 - **Kafees** — koffie- en ligte maaltydmenu's
@@ -21,9 +21,9 @@ Theme Builder kan nou professionele, gestruktureerde menu-bladsye skep vir gastg
 - **Voedsel-trekke** — mobiele voedseldiensmenu's
 - **Brouwerye en Wyerye** — drankmenu's met beskrywings
 
-## Menu-struktuur
+## Menu-struktuur {#menu-structure}
 
-### Menu-kategorieë
+### Menu-kategorieë {#menu-categories}
 
 Menu's word georganiseer in kategorieë:
 
@@ -34,7 +34,7 @@ Menu's word georganiseer in kategorieë:
 - **Drankies** — drankies (alkoholies en nie-alkoholies)
 - **Spesiaal** — daaglikse of seisoenale spesiale
 
-### Menu-item Formaat
+### Menu-item Formaat {#menu-item-format}
 
 Elke menu-item sluit in:
 
@@ -49,7 +49,7 @@ Elke menu-item sluit in:
 }
 ```
 
-#### Item Velde
+#### Item Velde {#item-fields}
 
 | Veld | Tipe | Beskrywing |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Elke menu-item sluit in:
 | `allergens` | array | Algemene allergene (Neute, Skaliewe, ens.) |
 | `availability` | string | Wanneer beskikbaar (Daagliks, Seisoenaal, ens.) |
 
-## Skep Gastgewerdesmenu's
+## Skep Gastgewerdesmenu's {#creating-hospitality-menus}
 
-### Stap 1: Verskaf Menu-inligting
+### Stap 1: Verskaf Menu-inligting {#step-1-provide-menu-information}
 
 Vertel Theme Builder van u menu:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Stap 2: Theme Builder Genereer Menu
+### Stap 2: Theme Builder Genereer Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formateer pryse en beskrywings
 5. Voeg dieet- en allergeen-inligting by
 
-### Stap 3: Evalueer en Pas aan
+### Stap 3: Evalueer en Pas aan {#step-3-review-and-customize}
 
 U kan:
 
@@ -91,9 +91,9 @@ U kan:
 4. Beskrywings en dieet-inligting opdateer
 5. Styling en uitleg aanpas
 
-## Menu-weergawe Opsies
+## Menu-weergawe Opsies {#menu-display-options}
 
-### Volledige Menu-bladsy
+### Volledige Menu-bladsy {#full-menu-page}
 
 'n Spesiale bladsy wat u volledige menu vertoon:
 
@@ -102,7 +102,7 @@ U kan:
 - Vir drukvriendelike uitleg
 - Mobiel-reaktiewe ontwerp
 
-### Menu-widget
+### Menu-widget {#menu-widget}
 
 Beddien menu-seksies op ander bladsye:
 
@@ -111,7 +111,7 @@ Beddien menu-seksies op ander bladsye:
 - Drankmenu op die barbladsy
 - Dessert-uitstalling in die voete
 
-### Menu-PDF
+### Menu-PDF {#menu-pdf}
 
 Genereer 'n aflaaibare PDF-menu:
 
@@ -120,9 +120,9 @@ Genereer 'n aflaaibare PDF-menu:
 - Sluit beelde en beskrywings in
 - Maklik om te deel en per e-pos te stuur
 
-## Dieet- en Allergeen-inligting
+## Dieet- en Allergeen-inligting {#dietary-and-allergen-information}
 
-### Dieetattributes
+### Dieetattributes {#dietary-attributes}
 
 Merk items met dieet-inligting:
 
@@ -134,7 +134,7 @@ Merk items met dieet-inligting:
 - **Low-Carb** — verminderde koolhidrate
 - **High-Protein** — proteïenryk
 
-### Allergeen Waarskuwings
+### Allergeen Waarskuwings {#allergen-warnings}
 
 Sluit algemene allergene in:
 
@@ -147,9 +147,9 @@ Sluit algemene allergene in:
 - **Gluten** — tarwe en glutenhoudende graan
 - **Sesam** — sesamsaad en olie
 
-## Menu-bestuur
+## Menu-bestuur {#menu-management}
 
-### Prysopdatering
+### Prysopdatering {#updating-prices}
 
 Pas menupryse maklik aan:
 
@@ -159,7 +159,7 @@ Pas menupryse maklik aan:
 4. Stoor veranderinge
 5. Veranderinge verskyn onmiddellik op u webwerf
 
-### Seisoenale Items Byvoeg
+### Seisoenale Items Byvoeg {#adding-seasonal-items}
 
 Skep seisoenale menu-variasies:
 
@@ -169,7 +169,7 @@ Skep seisoenale menu-variasies:
 4. Skeduleer beskikbaarheidsdatums
 5. Word outomaties gedurende die seisoen vertoon
 
-### Spesiale Bestuur
+### Spesiale Bestuur {#managing-specials}
 
 Vertoon daaglikse of weeklikse spesiale:
 
@@ -179,7 +179,7 @@ Vertoon daaglikse of weeklikse spesiale:
 4. Opdateer daagliks of weekliks
 5. Argiveer ou spesiale
 
-## Integrasie met Theme Builder
+## Integrasie met Theme Builder {#integration-with-theme-builder}
 
 Wanneer u Theme Builder vir gastgewerdeswebwerwe gebruik:
 
@@ -189,9 +189,9 @@ Wanneer u Theme Builder vir gastgewerdeswebwerwe gebruik:
 4. **Mobiele optimalisering** — menu's word pragtig op fone vertoon
 5. **SEO-optimalisering** — menu's is vriendelik vir soekmasjiene
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
-### Menu-ontwerp
+### Menu-ontwerp {#menu-design}
 
 - **Duidelike organisasie** — logiese kategorie-struktuur
 - **Leesbare beskrywings** — eetlustig en informatief
@@ -199,7 +199,7 @@ Wanneer u Theme Builder vir gastgewerdeswebwerwe gebruik:
 - **Professionele foto's** — hoëgehalte voedselbeelde
 - **Witruimte** — moenie die bladsy oorlaai nie
 
-### Inhoud
+### Inhoud {#content}
 
 - **Accurate beskrywings** — beskryf items akkuraat
 - **Spesiale uitlig** — laat spesiale uitstaan
@@ -207,7 +207,7 @@ Wanneer u Theme Builder vir gastgewerdeswebwerwe gebruik:
 - **Regelmatig opdateer** — hou pryse en items op datum
 - **Gebruik eetlustige taal** — laat items heerlik klink
 
-### Toeganklikheid
+### Toeganklikheid {#accessibility}
 
 - **Leesbare lettertipes** — gebruik duidelike, leesbare lettertipe
 - **Voldoende kontras** — verseker dat teks leesbaar is
@@ -215,9 +215,9 @@ Wanneer u Theme Builder vir gastgewerdeswebwerwe gebruik:
 - **Allergeen waarskuwings** — toon allergene prominent
 - **Mobiel-vriendelik** — toets op alle toestelle
 
-## Voorbeelde
+## Voorbeelde {#examples}
 
-### Restaurant Menu-struktuur
+### Restaurant Menu-struktuur {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Kafee Menu-struktuur
+### Kafee Menu-struktuur {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Verwante Kenmerke
+## Verwante Kenmerke {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — skep navigasie-menu's
 - [Design Direction](./design-direction.md) — pas die ontwerp van u webwerf aan

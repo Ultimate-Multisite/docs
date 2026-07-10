@@ -1,26 +1,26 @@
 ---
 title: Ошибка файла Sunrise
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Ошибка установки файла Sunrise
+# Ошибка при установке файла Sunrise {#error-installing-the-sunrise-file}
 
-Файл sunrise.php является специальным файлом, который WordPress ищет во время запуска. Чтобы WordPress смог обнаружить файл sunrise.php, он должен находиться внутри папки **wp-content**.
+Файл sunrise.php — это специальный файл, который WordPress ищет во время своей загрузки. Чтобы WordPress мог обнаружить файл sunrise.php, он должен находиться внутри **папки wp-content**.
 
-Когда вы активируете Ultimate Multisite и проходите мастер установки, как на скриншоте, Ultimate Multisite пытается скопировать наш файл sunrise.php в папку wp-content.
+Когда вы активируете Ultimate Multisite и проходите мастер настройки, как на скриншоте, Ultimate Multisite пытается скопировать наш файл sunrise.php в папку wp-content.
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- Скриншот недоступен: страница мастера настройки, показывающая шаг установки sunrise.php -->
 
-В большинстве случаев мы успешно копируем файл, и всё работает. Однако, если что‑то настроено неправильно (например, права доступа к папке), вы можете столкнуться с ситуацией, когда Ultimate Multisite не сможет скопировать файл.
+В большинстве случаев нам удаётся успешно скопировать файл, и всё работает. Однако, если что-то настроено неправильно (например, права доступа к папкам), вы можете столкнуться с ситуацией, когда Ultimate Multisite не может скопировать файл.
 
-Если вы прочитаете сообщение об ошибке, которое выдаёт Ultimo, вы увидите, что именно произошло: **Копирование sunrise.php не удалось**.
+Если вы прочитаете сообщение об ошибке, которое выдаёт Ultimo, вы увидите, что здесь произошло именно это: **копирование Sunrise не удалось**.
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- Скриншот недоступен: сообщение об ошибке, показывающее, что копирование Sunrise не удалось -->
 
-Чтобы исправить это, просто скопируйте файл sunrise.php из папки плагина wp-ultimo и вставьте его в вашу папку wp-content. После этого перезагрузите страницу мастера, и проверки пройдут успешно.
+Чтобы это исправить, вы можете просто скопировать файл sunrise.php из папки plugin wp-ultimo и вставить его в свою папку wp-content. После этого перезагрузите страницу мастера, и проверки должны пройти.
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- Скриншот недоступен: файловый менеджер, показывающий sunrise.php внутри папки plugin wp-ultimo --> В любом случае, это может потребовать общей проверки прав доступа к вашим папкам, чтобы избежать проблем в будущем (не только с Ultimate Multisite, но и с другими plugins и themes).
 
-Инструмент **Health Check**, который входит в WordPress (вы можете получить к нему доступ через панель управления вашего основного сайта **admin panel > Tools > Health Check**), позволяет узнать, установлены ли у вас права доступа к папкам, которые могут вызвать проблемы с WordPress.
+**Health Check tool**, входящий в состав WordPress (вы можете открыть его через **admin panel > Tools > Health Check** вашего основного сайта), может сообщить вам, если права доступа к папкам установлены на значения, которые могут вызвать проблемы с WordPress.
 
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- Скриншот недоступен: инструмент WordPress Health Check, показывающий состояние прав доступа к папкам -->

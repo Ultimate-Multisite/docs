@@ -3,11 +3,11 @@ title: అధునాతన కోడ్ ఉదాహరణలు
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Advanced Code Examples
+# Advanced Code Examples {#advanced-code-examples}
 
 ఈ ఉదాహరణలు Ultimate Multisite తో అధునాతన ఇంటిగ్రేషన్ ప్యాటర్న్‌లను ఎలా ఉపయోగించాలో వివరిస్తాయి.
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 ఇది వాల్యూమ్, లాయల్టీ మరియు సీజనల్ డిస్కౌంట్‌లను వర్తింపజేసే నియమాల ఆధారిత ధరల ఇంజిన్:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 ప్లాన్ ఫీచర్‌ల ఆధారంగా కొత్త సైట్‌లను ప్లగిన్‌లు, SSL, CDN, బ్యాకప్‌లు మరియు మానిటరింగ్ వంటి వాటితో ఆటోమేటిక్‌గా కాన్ఫిగర్ చేయడం:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 Usage warnings తో రిసోర్స్ లిమిట్‌లను ట్రాక్ చేయడం మరియు అమలు చేయడం:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 లో BerlinDB `Query` క్లాస్‌కు `increment_item()` అనే పద్ధతిని జోడించారు. ఇది రీడ్-మోడిఫై-రైట్ రేస్‌లు (read-modify-write races) లేకుండా, నంబరిక్ కాలమ్స్‌పై సురక్షితమైన, అటామిక్ పెరుగుదలను (atomic increments) నిర్వహించడానికి ఉపయోగపడుతుంది — ఇది కౌంటర్‌లు, వినియోగ కోటాలు (usage quotas) మరియు ఏకకాల అభ్యర్థనల (concurrent requests) కింద నడిచే రేట్-లిమిటింగ్ చెక్‌ల కోసం ఉపయోగపడుతుంది.
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 లో BerlinDB `Query` క్లాస్‌కు `i
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage
+### Basic usage {#basic-usage}
 
 ```php
 // membership ID 42 కోసం `api_calls` కాలమ్‌కు 1 జోడించండి.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership
+### Tracking API usage per membership {#tracking-api-usage-per-membership}
 
 ప్రతి membership కోసం API రేట్ లిమిట్‌లను అమలు చేయడానికి ఒక ఆచరణాత్మక ప్యాటర్న్:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Why `increment_item()` instead of `update_item()`
+### Why `increment_item()` instead of `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 ఒక సాధారణ రీడ్-మోడిఫై-రైట్ విధానం (read-modify-write approach) ఏకకాల అభ్యర్థనల (concurrent requests) కింద సురక్షితం కాదు:
 

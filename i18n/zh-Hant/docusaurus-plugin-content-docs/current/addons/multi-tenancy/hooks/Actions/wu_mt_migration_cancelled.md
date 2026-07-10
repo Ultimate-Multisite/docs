@@ -4,19 +4,19 @@ title: 動作 - wu_mt_migration_cancelled
 sidebar_label: wu_mt_migration_cancelled
 _i18n_hash: 315390b7190dab27f6ca16a6eff5e407
 ---
-# Action: wu_mt_migration_cancelled
+# Action: wu_mt_migration_cancelled {#action-wumtmigrationcancelled}
 
 當遷移作業被取消時觸發。
 
-## 參數
+## 參數 {#parameters}
 
 | 名稱 | 類型 | 說明 |
 |------|------|-------------|
 | $job | `\Migration_Job` | 被取消的遷移作業。 |
 
-### 從版本
+### 從版本 {#since}
 
 - 1.0.0
-### 來源
+### 來源 {#source}
 
 定義於 [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L765) 的第 765 行

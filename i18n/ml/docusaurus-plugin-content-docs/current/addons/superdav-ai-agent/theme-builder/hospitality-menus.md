@@ -3,15 +3,15 @@ title: ആതിഥേയ വിഭവങ്ങൾ
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# ഹോസ്പിറ്റാലിറ്റി മെനുകൾ
+# ഹോസ്പിറ്റാലിറ്റി മെനുകൾ {#hospitality-menus}
 
 **Hospitality Menus** ഫീച്ചർ ഉപയോഗിച്ച്, നിങ്ങളുടെ WordPress സൈറ്റിലേക്ക് ഘടനാപരമായ ഭക്ഷണ, പാനീയ മെനു പേജുകൾ Theme Builder വഴി സൃഷ്ടിക്കാനും ഉൾപ്പെടുത്താനും സാധിക്കും.
 
-## Overview
+## Overview {#overview}
 
 റെസ്റ്റോറന്റുകൾ, കഫേകൾ, ബാറുകൾ, കാറ്ററിംഗ് സർവീസസ് എന്നിവ പോലുള്ള ഹോസ്പിറ്റാലിറ്റി ബിസിനസ്സുകൾക്കായി പ്രൊഫഷണൽ, ഘടനാപരമായ മെനു പേജുകൾ Theme Builder ഇപ്പോൾ സൃഷ്ടിക്കാൻ കഴിയും. ഈ മെനുകൾ നിങ്ങളുടെ സൈറ്റിന്റെ ഡിസൈനിലേക്ക് പൂർണ്ണമായി സംയോജിപ്പിക്കുകയും എളുപ്പത്തിൽ അപ്ഡേറ്റ് ചെയ്യാനും കൈകാര്യം ചെയ്യാനും കഴിയുകയും ചെയ്യും.
 
-## Supported Hospitality Types
+## Supported Hospitality Types {#supported-hospitality-types}
 
 - **Restaurants** — പൂർണ്ണ സേവന വിരുന്നുകൾക്കുള്ള മെനുകൾ
 - **Cafes** — കോഫി, ലഘുഭക്ഷണ മെനുകൾ
@@ -21,9 +21,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Food Trucks** — മൊബൈൽ ഭക്ഷണ സേവന മെനുകൾ
 - **Breweries and Wineries** — വിവരണങ്ങളോടുകൂടിയ പാനീയ മെനുകൾ
 
-## Menu Structure
+## Menu Structure {#menu-structure}
 
-### Menu Categories
+### Menu Categories {#menu-categories}
 
 മെനുകൾ വിഭാഗങ്ങളായി (Categories) ക്രമീകരിച്ചിരിക്കുന്നു:
 
@@ -34,7 +34,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Beverages** — പാനീയങ്ങൾ (ആൽക്കഹോളിക്, നോൺ-ആൽക്കഹോളിക്)
 - **Specials** — ദിവസേനയോ സീസണൽ ആയ പ്രത്യേക വിഭവങ്ങൾ
 
-### Menu Item Format
+### Menu Item Format {#menu-item-format}
 
 ഓരോ മെനു ഐറ്റത്തിനും താഴെ പറയുന്ന വിവരങ്ങൾ ഉൾപ്പെടുന്നു:
 
@@ -49,7 +49,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 }
 ```
 
-#### Item Fields
+#### Item Fields {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 | `allergens` | array | സാധാരണ അലർജിയുണ്ടാക്കുന്ന വസ്തുക്കൾ (Nuts, Shellfish, etc.) |
 | `availability` | string | എപ്പോൾ ലഭ്യമാണ് (Daily, Seasonal, etc.) |
 
-## Creating Hospitality Menus
+## Creating Hospitality Menus {#creating-hospitality-menus}
 
-### Step 1: Provide Menu Information
+### Step 1: Provide Menu Information {#step-1-provide-menu-information}
 
 നിങ്ങളുടെ മെനുവിനെക്കുറിച്ച് Theme Builder-നെ അറിയിക്കുക:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Step 2: Theme Builder Generates Menu
+### Step 2: Theme Builder Generates Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. വിലകളും വിവരണങ്ങളും ഫോർമാറ്റ് ചെയ്യുന്നു
 5. ഭക്ഷണപരമായ വിവരങ്ങളും അലർജൻ വിവരങ്ങളും ചേർക്കുന്നു
 
-### Step 3: Review and Customize
+### Step 3: Review and Customize {#step-3-review-and-customize}
 
 നിങ്ങൾക്ക് ചെയ്യാൻ കഴിയുന്നത്:
 
@@ -91,9 +91,9 @@ Theme Builder:
 4. വിവരണങ്ങളും ഭക്ഷണപരമായ വിവരങ്ങളും അപ്ഡേറ്റ് ചെയ്യുക
 5. സ്റ്റൈലിംഗും ലേഔട്ടും ക്രമീകരിക്കുക
 
-## Menu Display Options
+## Menu Display Options {#menu-display-options}
 
-### Full Menu Page
+### Full Menu Page {#full-menu-page}
 
 നിങ്ങളുടെ മുഴുവൻ മെനുവും പ്രദർശിപ്പിക്കുന്ന ഒരു പ്രത്യേക പേജ്:
 
@@ -102,7 +102,7 @@ Theme Builder:
 - പ്രിന്റ് ചെയ്യാൻ സൗകര്യപ്രദമായ ലേഔട്ട്
 - മൊബൈലിൽ ഉപയോഗിക്കാൻ കഴിയുന്ന ഡിസൈൻ
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 മറ്റ് പേജുകളിൽ മെനു ഭാഗങ്ങൾ ഉൾപ്പെടുത്താൻ:
 
@@ -111,7 +111,7 @@ Theme Builder:
 - ബാർ പേജിലെ പാനീയ മെനു
 - ഫൂട്ടറിലെ മധുര പലഹാരങ്ങളുടെ പ്രദർശനം
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 ഡൗൺലോഡ് ചെയ്യാവുന്ന ഒരു PDF മെനു സൃഷ്ടിക്കുക:
 
@@ -120,9 +120,9 @@ Theme Builder:
 - ചിത്രങ്ങളും വിവരണങ്ങളും ഉൾപ്പെടുന്നു
 - പങ്കിടാനും ഇമെയിൽ ചെയ്യാനും എളുപ്പമാണ്
 
-## Dietary and Allergen Information
+## Dietary and Allergen Information {#dietary-and-allergen-information}
 
-### Dietary Attributes
+### Dietary Attributes {#dietary-attributes}
 
 ഐറ്റങ്ങൾക്ക് ഭക്ഷണപരമായ വിവരങ്ങൾ നൽകുക:
 
@@ -134,7 +134,7 @@ Theme Builder:
 - **Low-Carb** — കുറഞ്ഞ കാർബോഹൈഡ്രേറ്റുകൾ
 - **High-Protein** — പ്രോട്ടീൻ സമ്പന്നം
 
-### Allergen Warnings
+### Allergen Warnings {#allergen-warnings}
 
 സാധാരണ അലർജിയുണ്ടാക്കുന്ന വസ്തുക്കൾ ഉൾപ്പെടുത്തുക:
 
@@ -147,9 +147,9 @@ Theme Builder:
 - **Gluten** — ഗോതമ്പ്, ഗ്ലൂട്ടൻ അടങ്ങിയ ധാന്യങ്ങൾ
 - **Sesame** — എസമി വിത്തുകൾ, എണ്ണ
 
-## Menu Management
+## Menu Management {#menu-management}
 
-### Updating Prices
+### Updating Prices {#updating-prices}
 
 മെനു വിലകൾ എളുപ്പത്തിൽ അപ്ഡേറ്റ് ചെയ്യുക:
 
@@ -159,7 +159,7 @@ Theme Builder:
 4. മാറ്റങ്ങൾ സേവ് ചെയ്യുക
 5. മാറ്റങ്ങൾ ഉടൻ തന്നെ നിങ്ങളുടെ സൈറ്റിൽ കാണാം
 
-### Adding Seasonal Items
+### Adding Seasonal Items {#adding-seasonal-items}
 
 സീസണൽ മെനു വേരിയേഷനുകൾ സൃഷ്ടിക്കുക:
 
@@ -169,7 +169,7 @@ Theme Builder:
 4. ലഭ്യത തീയതികൾ ഷെഡ്യൂൾ ചെയ്യുക
 5. സീസണിൽ വേ自動മായി പ്രദർശിപ്പിക്കും
 
-### Managing Specials
+### Managing Specials {#managing-specials}
 
 ദിവസേനയോ ആഴ്ചതോറുമോ പ്രത്യേക വിഭവങ്ങൾ പ്രദർശിപ്പിക്കുക:
 
@@ -179,7 +179,7 @@ Theme Builder:
 4. ദിവസേനയോ ആഴ്ചതോറുമോ അപ്ഡേറ്റ് ചെയ്യുക
 5. പഴയ പ്രത്യേക വിഭവങ്ങൾ ആർക്കൈവ് ചെയ്യുക
 
-## Integration with Theme Builder
+## Integration with Theme Builder {#integration-with-theme-builder}
 
 ഹോസ്പിറ്റാലിറ്റി സൈറ്റുകൾക്കായി Theme Builder ഉപയോഗിക്കുമ്പോൾ:
 
@@ -189,9 +189,9 @@ Theme Builder:
 4. **Mobile optimization** — ഫോണുകളിൽ മെനു മനോഹരമായി കാണിക്കുന്നു
 5. **SEO optimization** — മെനു സെർച്ച് എഞ്ചിൻ സൗഹൃദമാണ്
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Menu Design
+### Menu Design {#menu-design}
 
 - **Clear organization** — യുക്തിപരമായ വിഭാഗ ഘടന
 - **Readable descriptions** — വിശപ്പുണർത്തുന്നതും വിവരദായകവുമായ വിവരണം
@@ -199,7 +199,7 @@ Theme Builder:
 - **Professional photos** — ഉയർന്ന നിലവാരമുള്ള ഭക്ഷണ ചിത്രങ്ങൾ
 - **Whitespace** — പേജ് അമിതമായി നിറയ്ക്കാതിരിക്കുക
 
-### Content
+### Content {#content}
 
 - **Accurate descriptions** — ഐറ്റങ്ങളെ കൃത്യമായി വിവരിക്കുക
 - **Highlight specials** — പ്രത്യേക വിഭവങ്ങൾ എടുത്തു കാണിക്കുക
@@ -207,7 +207,7 @@ Theme Builder:
 - **Update regularly** — വിലകളും ഐറ്റങ്ങളും കാലികമായി നിലനിർത്തുക
 - **Use appetizing language** — ഐറ്റങ്ങളെ രുചികരമായി തോന്നിക്കുന്ന ഭാഷ ഉപയോഗിക്കുക
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Readable fonts** — വ്യക്തവും വായിക്കാൻ എളുപ്പമുള്ളതുമായ ഫോണ്ടുകൾ ഉപയോഗിക്കുക
 - **Sufficient contrast** — ടെക്സ്റ്റ് വായിക്കാൻ കഴിയുമെന്ന് ഉറപ്പാക്കുക
@@ -215,9 +215,9 @@ Theme Builder:
 - **Allergen warnings** — അലർജൻ മുന്നറിയിപ്പുകൾ എടുത്തു കാണിക്കുക
 - **Mobile-friendly** — എല്ലാ ഉപകരണങ്ങളിലും പരീക്ഷിക്കുക
 
-## Examples
+## Examples {#examples}
 
-### Restaurant Menu Structure
+### Restaurant Menu Structure {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Cafe Menu Structure
+### Cafe Menu Structure {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Related Features
+## Related Features {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — नेവിഗേഷൻ മെനുകൾ സൃഷ്ടിക്കുക
 - [Design Direction](./design-direction.md) — നിങ്ങളുടെ സൈറ്റിന്റെ ഡിസൈൻ ഇഷ്ടാനുസൃതമാക്കുക

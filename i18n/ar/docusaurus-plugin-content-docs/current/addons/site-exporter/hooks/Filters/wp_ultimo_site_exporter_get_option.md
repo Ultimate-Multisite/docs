@@ -4,11 +4,11 @@ title: فلتر - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# عامل التصفية: wp_ultimo_site_exporter_get_option
+# عامل التصفية: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 يُعيد قيمة خيار الشبكة المحوَّلة إلى slug.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | اسم الخيار. |
 | $default | `mixed` | القيمة الافتراضية. |
 
-### منذ
+### منذ {#since}
 
 - 1.9.6
 
-### المصدر
+### المصدر {#source}
 
 مُعرَّف في [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) في السطر 126
 
-## الإرجاع
+## الإرجاع {#returns}
 
 قيمة خيار الشبكة المحوَّلة إلى slug.

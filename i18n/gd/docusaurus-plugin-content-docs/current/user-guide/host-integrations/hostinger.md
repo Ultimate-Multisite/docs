@@ -1,22 +1,22 @@
 ---
 title: Còmhlaid bheachd Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integration
+# Hostinger (hPanel) Integration {#hostinger-hpanel-integration}
 
-## Aims
+## Aims {#overview}
 
 Hostinger is a popular web hosting service, agus e panel control modern a tha a' chiallachadh air. The Ultimate Multisite Hostinger integration a' namh a' leat a' chiallachadh domain sinneachaidh (domain syncing) beòr-chùis a' mhaighdean beòr-chùis a' chiallachadh a' leat, a' leat a' chiallachadh mapping domain agus subdomain gu sònraich frum a' chiallachadh WordPress admin.
 
-## Feàinean
+## Feàinean {#features}
 
 - Creachaidh domain addon beòr-chùis beòr-chùis a' hPanel
 - Creachaidh subdomain beòr-chùis beòr-chùis a' hPanel ( airson càiinnte subdomain multisite)
 - A' chiallachadh domain nuair a thànd a' mapping a' leat a' dèanamh
 - Chiallachadh sinneachaidh leat le API domain management a' hPanel
 
-## Cùighean
+## Cùighean {#requirements}
 
  airson a' sgaidh a' chiallachadh Hostinger, tha thuig a bhith agad:
 
@@ -35,9 +35,9 @@ A' chùighean, leat a bhith agad a' dèanamh:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API endpoint a' chùigidh
 ```
 
-## Cùighean A' Chiallachadh
+## Cùighean A' Chiallachadh {#setup-instructions}
 
-### 1. Creachaidh Tòcan API Hostinger
+### 1. Creachaidh Tòcan API Hostinger {#1-generate-your-hostinger-api-token}
 
 1. Càladh air ainm Hostinger agus fhasgadh hPanel
 2. Tuisge do **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API endpoint 
    - Subdomain management
 6. Cop an tòcan a' chiallachadh agus seachainn eair gu sònraich
 
-### 2. Fhàilte do Chuid ID Account
+### 2. Fhàilte do Chuid ID Account {#2-find-your-account-id}
 
 1. An hPanel, adh a' **Account Settings** → **Account Information**
 2. Tha do Chuid ID Account air a' leughadh air an seachainn seo
 3. Cop agus seachainn an ID sin airson an tòca sinneachaidh
 
-### 3. A' chùighean a' leat a' dèanamh anns `wp-config.php`
+### 3. A' chùighean a' leat a' dèanamh anns `wp-config.php` {#3-add-constants-to-wp-configphp}
 
 A' chùighean a' leat a' dhomh do `wp-config.php`:
 
@@ -69,7 +69,7 @@ Tha thuair a tha a' chluainteachd an t-api endpoint a tha eich contaiche Hosting
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Ailinn an t-uisgeachadh (Enable the Integration)
+### 4. Ailinn an t-uisgeachadh (Enable the Integration) {#4-enable-the-integration}
 
 1. Iar a tha eich admin WordPress, adh a' chluainteachd **Ultimate Multisite > Settings**
 2. Adh a' chlàradh gu **Domain Mapping** tab
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Ailinn an t-uisgeachadh **Hostinger (hPanel)**
 5. Adh a' chluainteachd **Save Changes**
 
-## Còmhraidh a tha e a' tòiseachadh (How It Works)
+## Còmhraidh a tha e a' tòiseachadh (How It Works) {#how-it-works}
 
-### Addon Domains (Domàin Añaddan)
+### Addon Domains (Domàin Añaddan) {#addon-domains}
 
 Nuair a tha thu a' chlàradh domàin i Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Nuair a tha thu a' chlàradh domàin i Ultimate Multisite:
 2. Tha an domàin a' chluainteach a' tòiseachadh gu dìreach air eich dirich (root directory)
 3. Nuair a tha am fhaighinn a' chlàradh domàin, tha an chluainteachd a' tòiseachadh a' tòiseachadh an addan domain a' le hPanel
 
-### Subdomains (Subdomàina)
+### Subdomains (Subdomàina) {#subdomains}
 
  airson càiinn subdomàina multisite, nuair a thonadh sgaidh a' chlàradh:
 
@@ -95,7 +95,7 @@ Nuair a tha thu a' chlàradh domàin i Ultimate Multisite:
 2. Tha an chluainteachd a' chluainteach curraich do an API Hostinger airson an subdomàin a bhith mar addan domain
 3. Tha an subdomàin a' chluainteach a' tòiseachadh gu dìreach air eich dirich (root directory)
 
-## Notean Cruciale (Important Notes)
+## Notean Cruciale (Important Notes) {#important-notes}
 
 - Tha an chluainteachd a' tòiseachadh air API REST de Hostinger airson a' sàmhail leis an contaiche.
 - Fad a tha eich token API a' tòiseachadh gu fhaighinn na eochair sin airson curraich domàin agus subdomàina.
@@ -103,32 +103,32 @@ Nuair a tha thu a' chlàradh domàin i Ultimate Multisite:
 - A bheil na curraich API a' tòiseachadh gu sgaidh air HTTPS.
 - Fad a tha eich token API a' tòiseachadh gu fhaighinn agus eadar-dheargadh an sin gu fhaighinn.
 
-## Tòiseachadh (Troubleshooting)
+## Tòiseachadh (Troubleshooting) {#troubleshooting}
 
-### Còmhraidhean a tha a' chluainteachd API (API Connection Issues)
+### Còmhraidhean a tha a' chluainteachd API (API Connection Issues) {#api-connection-issues}
 
 - A churaidh an t-token API agad ceart agus gun athraidh
 - Comharrach gu bheil an ID Account agad ceart
 - Sealltainn gu bheil an t-token API agad deamhan sinneachd airson cur-steachadh domain
 - Sealltainn gu bheil an account Hostinger agad seachda agus a' chùcas
 
-### Domain Chaillte (Domain Not Added)
+### Domain Chaillte (Domain Not Added) {#domain-not-added}
 
 - Comharrach air log Ultimate Multisite airson am pròiseas ceart
 - Sealltainn gu bheil an domain chaillte beagair is eadar ann iardail Hostinger agad
 - Sealltainn gu bheil an account Hostinger agad fada a' chùcas airson domain addon
 
-### Comharrachadh Earrachda SSL Certificate (SSL Certificate Issues)
+### Comharrachadh Earrachda SSL Certificate (SSL Certificate Issues) {#ssl-certificate-issues}
 
 - Tha an cur-steachadh seo seachda air an t-token API
 - Tha Hostinger a thailean SSL certificate fada air AutoSSL
 - Is eadar a tha thu a' chùcas SSL certificates gu sgaidhinn i hPanel air **SSL/TLS**
 - Mar eadar, guth a' chùcas Let's Encrypt le cur-steachadh AutoSSL de Hostinger
 
-## Cuimhneachadh (Support)
+## Cuimhneachadh (Support) {#support}
 
  airson fìor tairgseachais airson cur-steachadh integration Hostinger, tha thu a' chùcas air:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

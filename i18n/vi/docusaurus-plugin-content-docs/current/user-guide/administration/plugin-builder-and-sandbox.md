@@ -3,11 +3,11 @@ title: Trình xây dựng & Hộp cát Plugin
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 giới thiệu **Hệ thống Plugin Builder & Sandbox**, cho phép trợ lý AI tạo, kích hoạt và quản lý các plugin WordPress trên mạng lưới của bạn — tất cả đều thông qua một môi trường sandbox (hộp cát) an toàn và biệt lập.
 
-## Tổng quan
+## Tổng quan {#overview}
 
 Plugin Builder cho phép trợ lý AI viết các plugin WordPress tùy chỉnh dựa trên yêu cầu ngôn ngữ tự nhiên. Các plugin được tạo ra sẽ được xác thực, lưu trữ và kích hoạt bên trong lớp sandbox trước khi chúng ảnh hưởng đến chức năng của trang web thực tế.
 
@@ -17,7 +17,7 @@ Các trường hợp sử dụng bao gồm:
 - Tạo mẫu các tính năng yêu cầu các hook của WordPress hoặc các loại bài viết tùy chỉnh (custom post types).
 - Xây dựng các script tự động hóa ngắn hạn cho các thao tác hàng loạt.
 
-## Tạo Plugin bằng AI
+## Tạo Plugin bằng AI {#generating-a-plugin-via-ai}
 
 Để tạo một plugin, hãy mở giao diện trò chuyện của Gratis AI Agent và mô tả những gì bạn cần. Ví dụ:
 
@@ -32,7 +32,7 @@ AI sẽ:
 
 Bạn có thể tinh chỉnh kết quả bằng cách tiếp tục trò chuyện trong cùng luồng hội thoại trước khi kích hoạt.
 
-## Kích hoạt Sandbox
+## Kích hoạt Sandbox {#sandbox-activation}
 
 Việc kích hoạt một plugin được tạo trong sandbox khác với việc kích hoạt nó trên mạng lưới thực tế. Sandbox:
 
@@ -48,7 +48,7 @@ Việc kích hoạt một plugin được tạo trong sandbox khác với việc
 
 Một thông báo trạng thái sẽ xác nhận việc kích hoạt thành công hay thất bại. Nếu thất bại, nhật ký lỗi sẽ được hiển thị trong luồng trò chuyện.
 
-## Quản lý Plugin đã tạo
+## Quản lý Plugin đã tạo {#managing-generated-plugins}
 
 Các plugin được tạo sẽ được liệt kê tại **Gratis AI Agent → Plugin Builder → Manage Plugins**. Từ màn hình này, bạn có thể:
 
@@ -64,7 +64,7 @@ Các plugin được tạo sẽ được liệt kê tại **Gratis AI Agent → 
 **Install on network** triển khai plugin đã tạo lên WordPress multisite thực tế của bạn. Vui lòng xem lại mã plugin trước khi tiếp tục. Gratis AI Agent sẽ yêu cầu xác nhận trước khi hoàn tất việc cài đặt trực tiếp.
 :::
 
-## Cài đặt Plugin đã tạo lên Mạng lưới
+## Cài đặt Plugin đã tạo lên Mạng lưới {#installing-a-generated-plugin-on-the-network}
 
 Khi bạn hài lòng với một plugin trong sandbox, bạn có thể cài đặt nó lên mạng lưới thực tế:
 
@@ -78,7 +78,7 @@ Hoặc, bạn có thể sử dụng lệnh gạch chéo trong giao diện chat:
 /install-plugin <plugin-slug>
 ```
 
-## Cập nhật Plugin
+## Cập nhật Plugin {#plugin-updates}
 
 Để cập nhật một plugin đã tạo, hãy mô tả thay đổi cho trợ lý AI trong một cuộc trò chuyện mới:
 
@@ -86,7 +86,7 @@ Hoặc, bạn có thể sử dụng lệnh gạch chéo trong giao diện chat:
 
 AI sẽ tạo ra một phiên bản mới, và phiên bản này sẽ xuất hiện trong sandbox cùng với phiên bản hiện tại. Bạn xem lại phần khác biệt (diff) và xác nhận trước khi bản cập nhật được áp dụng.
 
-## Tích hợp HookScanner
+## Tích hợp HookScanner {#hookscanner-integration}
 
 Plugin Builder sử dụng **HookScanner** tích hợp để phân tích các hook và filter được đăng ký bởi mỗi plugin được tạo. Kết quả của HookScanner được hiển thị trong phản hồi chat và bao gồm:
 
@@ -96,7 +96,7 @@ Plugin Builder sử dụng **HookScanner** tích hợp để phân tích các ho
 
 Điều này giúp bạn hiểu hành vi của plugin trước khi kích hoạt nó.
 
-## Lưu ý Bảo mật
+## Lưu ý Bảo mật {#security-considerations}
 
 - Các plugin được tạo được lưu trữ riêng biệt với các plugin được cài đặt thủ công và không thể truy cập qua màn hình quản lý plugin tiêu chuẩn của WordPress cho đến khi bạn chủ động cài đặt chúng lên mạng lưới.
 - Sandbox sử dụng xác thực đường dẫn (path validation) để ngăn chặn việc duyệt thư mục khi ghi các tệp plugin.

@@ -3,7 +3,7 @@ title: Ralat Fail Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Ralat Memasang Fail Sunrise
+# Ralat Memasang Fail Sunrise {#error-installing-the-sunrise-file}
 
 Fail sunrise.php ialah fail khas yang WordPress cari semasa ia memulakan dirinya. Untuk WordPress dapat mengesan fail sunrise.php, fail tersebut perlu berada di dalam **folder wp-content**.
 

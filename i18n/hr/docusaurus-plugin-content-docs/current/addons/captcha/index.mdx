@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Zaustavite botove. Zaštitite prihod. Bez gnjavaže s konfiguracijom.**
+
+Vodite multisite mrežu s prilagođenim domenama? Znate tu muku: Google reCAPTCHA i hCaptcha zahtijevaju da registrirate *svaku pojedinačnu domenu* u njihovoj administratorskoj konzoli. Dodate novu korisničku stranicu? Ažurirajte captcha konfiguraciju. Mapirate prilagođenu domenu? Opet ažurirajte. Nikad kraja.
+
+**Ultimate Multisite: Captcha mijenja sve.**
+
+## Cap Captcha: samo-hostana zaštita koja jednostavno radi {#cap-captcha-self-hosted-protection-that-just-works}
+
+Naš novi **Cap Captcha** pružatelj velika je promjena za multisite mreže:
+
+* **Nulta konfiguracija** — Aktivirajte addon i zaštićeni ste. Bez API ključeva, bez Google računa, bez hCaptcha dashboarda, bez stavljanja domena na popis dopuštenih.
+* **Automatski radi na svakoj domeni** — Poddomene, mapirane domene, korisničke domene — sve su odmah zaštićene.
+* **Samo-hostano i privatno** — Vaši podaci nikad ne napuštaju vaš poslužitelj. Potpuno usklađeno s GDPR-om, bez praćenja trećih strana.
+* **Nevidljivi proof-of-work** — Korisnici rješavaju računalnu zagonetku u pozadini. Bez klikanja hidranata, bez frustrirajućih mreža slika.
+* **Lagan** — Samo 20 KB. Neće usporiti vaš checkout.
+
+## Zaštita od testiranja kartica u WooCommerce {#woocommerce-card-testing-protection}
+
+Napadi testiranja kartica trgovce godišnje stoje milijarde. Prevaranti koriste botove za provjeru ukradenih kreditnih kartica na vašem WooCommerce checkoutu — vi plaćate naknade za obradu, a oni dobivaju važeće brojeve kartica.
+
+**Štitimo ondje gdje je najvažnije:**
+
+* **Zaštita Store API-ja** — Blokira napade botova na `/wp-json/wc/store/v1/checkout` koji zaobilaze tradicionalne captcha zaštite obrazaca
+* **Kompatibilno s PayPal Payments** — Radi besprijekorno s WooCommerce PayPal Payments
+* **Statistika u stvarnom vremenu** — Vidite točno koliko napada blokirate
+
+## Još uvijek trebate Google reCAPTCHA ili hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Pokrili smo vas. Puna podrška za:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (temeljeno na rezultatu)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Prebacujte se između pružatelja u bilo kojem trenutku iz postavki mreže.
+
+## Izgrađeno za skaliranje {#built-for-scale}
+
+* Postavke na razini mreže s nadjačavanjima po pojedinoj stranici
+* Dashboard statistike za praćenje zaštite
+* Prilagodljive razine sigurnosti (Brzo, Srednje, Maksimalno)
+* Prilagođeno developerima s proširivom arhitekturom pružatelja
+
+## Instalacija {#installation}
+
+1. Prenesite `ultimate-multisite-captcha` u svoj direktorij `/wp-content/plugins/`
+2. Mrežno aktivirajte plugin
+3. **To je to. Zaštićeni ste.**
+
+Cap Captcha aktivira se automatski — nema postavki za konfiguriranje, nema API ključeva za unos. Svaki podržani endpoint u cijeloj vašoj mreži zaštićen je čim aktivirate.
+
+**Opcionalno:** Ako umjesto toga želite koristiti Google reCAPTCHA ili hCaptcha, idite na **Ultimate Multisite → Postavke → Captcha** i odaberite željenog pružatelja.
+
+## Često postavljana pitanja {#frequently-asked-questions}
+
+## Trebam li išta konfigurirati? {#do-i-need-to-configure-anything}
+
+Ne! Cap Captcha automatski je omogućen kada aktivirate addon. Cijela vaša mreža odmah je zaštićena — nema postavki za konfiguriranje, nema API ključeva za unos.
+
+## Trebam li API ključeve za Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Ne. Cap Captcha je potpuno samo-hostan. Bez vanjskih računa, bez registracije domena, bez glavobolja s konfiguracijom.
+
+## Hoće li to usporiti moj checkout? {#will-this-slow-down-my-checkout}
+
+Cap Captcha ima samo 20 KB i pokreće proof-of-work izazove u pozadini. Vaši kupci neće primijetiti nikakvo kašnjenje.
+
+## Štiti li ovo od napada testiranja kartica? {#does-this-protect-against-card-testing-attacks}
+
+Da! Za razliku od tradicionalnih captcha zaštita koje štite samo HTML obrasce, naša WooCommerce integracija povezuje se izravno sa Store API-jem kako bi blokirala napade botova na razini API-ja — ondje gdje se događa većina napada testiranja kartica.
+
+## Mogu li koristiti različite captcha pružatelje na različitim stranicama? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Captcha pružatelj postavlja se na razini mreže, ali možete prilagoditi postavke težine prema svojim potrebama.
+
+## Je li ovo usklađeno s GDPR-om? {#is-this-gdpr-compliant}
+
+Cap Captcha je 100 % samo-hostan i ne šalje podatke vanjskim uslugama. Za Google reCAPTCHA i hCaptcha pregledajte njihove odgovarajuće pravilnike o privatnosti.
+
+## Ograničavanje učestalosti zahtjeva {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 uvodi strogi rate limiter koji štiti vašu mrežu od brute-force napada i napada testiranja kartica.
+
+### Kako radi {#how-it-works}
+
+Rate limiter broji svaki GET i POST zahtjev na površinama zaštićenima captchom:
+
+* **WordPress endpointi za prijavu** — wp-login, registracija, izgubljena lozinka, komentari
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Kada posjetitelj prekorači ograničenje učestalosti, plugin odgovara s:
+
+* **HTTP 429 (Previše zahtjeva)** statusnim kodom
+* **Retry-After** headerom koji naznačuje kada pokušati ponovno
+* **Nasumičnim tarpit čekanjem** (zadano 1–5 sekundi, strogo ograničeno na 15 sekundi) za usporavanje napadača
+
+### Konfiguracija {#configuration}
+
+#### Tarpit vremensko podešavanje {#tarpit-timing}
+
+Upravljajte nasumičnim kašnjenjem primijenjenim na zahtjeve ograničene rate limitom:
+
+* **`cap_rate_limit_tarpit_min`** — Minimalno trajanje čekanja u sekundama (zadano: 1)
+* **`cap_rate_limit_tarpit_max`** — Maksimalno trajanje čekanja u sekundama (zadano: 5, strogo ograničeno na 15)
+
+Ove su postavke dostupne u **Ultimate Multisite → Postavke → Captcha**.
+
+### Proširivost {#extensibility}
+
+#### Filtar popisa dopuštenih IP adresa {#ip-whitelist-filter}
+
+Izuzmite pouzdane raspone IP adresa iz rate limita:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Radnja prije blokiranja {#pre-block-action}
+
+Izvršite prilagođenu logiku neposredno prije slanja blokade zbog rate limita:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Otkrivanje IP adrese klijenta i pouzdani proxyji {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 uvodi otkrivanje IP adrese klijenta otporno na lažiranje. Metoda `Captcha_Core::get_client_ip()` sada je jedini izvor istine za pripisivanje IP adrese posjetitelja u:
+
+* Ključevi spremnika za rate-limit
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* IP hashovi statistike
+
+### Model povjerenja {#trust-model}
+
+Plugin provodi strogu hijerarhiju povjerenja IP adresa:
+
+1. **REMOTE_ADDR** — Uvijek se smatra pouzdanim (IP neposrednog peer-a)
+2. **CF-Connecting-IP** — Poštuje se samo kada:
+   - Neposredni peer je unutar trenutačnog Cloudflare IP raspona
+   - `cap_trust_cloudflare_headers` je omogućen (zadano: OFF)
+3. **X-Forwarded-For** — Poštuje se samo kada:
+   - Neposredni peer je na vašem administratorski konfiguriranom popisu pouzdanih proxyja
+   - Header se parsira zdesna nalijevo, preskačući pouzdane/Cloudflare međutočke
+
+### Konfiguracija {#configuration-1}
+
+#### Povjerenje Cloudflare headera {#cloudflare-header-trust}
+
+Omogućite povjerenje u Cloudflareov `CF-Connecting-IP` header:
+
+* **`cap_trust_cloudflare_headers`** — Postavite na ON kako biste se uključili u povjerenje za `CF-Connecting-IP`
+  - Zadano: OFF (onemogućeno)
+  - Plugin dolazi s ugrađenom snimkom Cloudflare CIDR-a
+  - CIDR rasponi osvježavaju se tjedno putem wp-cron
+  - Ugrađena rezervna opcija koristi se ako osvježavanje ne uspije
+
+#### Konfiguracija pouzdanog proxyja {#trusted-proxy-configuration}
+
+Definirajte svoje početne proxyje i load-balancere:
+
+* **`cap_trusted_proxies`** — Tekstualno polje za CIDR-ove ili gole IP adrese (jedan po retku)
+  - Komentari su dopušteni (retci koji počinju s `#`)
+  - Bez ove postavke, `X-Forwarded-For` se ignorira čak i kada je limiter brzine omogućen
+  - Primjer:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Automatsko otkrivanje pri prvom omogućavanju {#first-enable-auto-detection}
+
+Kada prvi put omogućite limiter brzine, plugin otkriva vaš vjerojatni Cloudflare i proxy položaj te prikazuje administratorsku obavijest za jedan klik "Primijeni otkrivene postavke".
+
+* Plugin **nikada ne prepisuje** vaše spremljene vrijednosti
+* Ako naknadni promet sugerira da vaša konfiguracija više ne odgovara stvarnosti (npr. Cloudflare je promijenio CIDR raspone), obavijest o nepodudaranju koja se ne može odbaciti prikazuje preporučeno ažuriranje
+
+### Zašto je ovo važno {#why-this-matters}
+
+Strogi model povjerenja IP adresa zatvara kritični vektor lažiranja: izravni zahtjevi prema izvornom serveru koji nose krivotvoreni `CF-Connecting-IP` header ranije bi bili svrstani u spremnik prema lažiranoj IP adresi umjesto prema stvarnom peer-u. To je posebno važno za:
+
+* **Ograničavanje brzine** — Napadači ne mogu zaobići ograničenja lažiranjem IP adresa
+* **Statistika** — Vaše metrike napada odražavaju stvarne IP adrese posjetitelja, a ne lažirane
+* **Captcha provjera** — Provideri primaju ispravnu IP adresu posjetitelja za procjenu rizika

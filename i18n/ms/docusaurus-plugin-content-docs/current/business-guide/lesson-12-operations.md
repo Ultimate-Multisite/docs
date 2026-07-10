@@ -3,17 +3,17 @@ title: 'Pelajaran 12: Menguruskan Perniagaan'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Pelajaran 12: Mengurus Perniagaan
+# Pelajaran 12: Mengurus Perniagaan {#lesson-12-running-the-business}
 
 Platform bukan sekadar projek yang boleh disiapkan—ia adalah perniagaan yang perlu anda uruskan. Pelajaran ini merangkumi operasi harian menguruskan FitSite: sokongan, pengbilan, penyelenggaraan, dan memastikan pelanggan gembira.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah aktif dan pelanggan mula mendaftar. Kini, anda perlu menjalankan operasi ini secara mampan.
 
-## Operasi Harian
+## Operasi Harian {#daily-operations}
 
-### Pemantauan
+### Pemantauan {#monitoring}
 
 Semak perkara ini setiap hari (atau tetapkan amaran):
 
@@ -22,7 +22,7 @@ Semak perkara ini setiap hari (atau tetapkan amaran):
 - **Pembayaran gagal**: Adakah terdapat kegagalan pembayaran yang memerlukan perhatian?
 - **Permintaan sokongan**: Adakah terdapat soalan pelanggan yang belum dijawab?
 
-### Sokongan Pelanggan
+### Sokongan Pelanggan {#customer-support}
 
 Fokus khusus anda adalah kelebihan di sini. Oleh kerana semua pelanggan anda adalah studio kecergasan, anda akan melihat soalan yang sama berulang kali:
 
@@ -36,7 +36,7 @@ Fokus khusus anda adalah kelebihan di sini. Oleh kerana semua pelanggan anda ada
 
 Bina pangkalan pengetahuan anda (dimulakan dalam Pelajaran 8) berdasarkan soalan-soalan berulang ini. Setiap tiket sokongan yang boleh menjadi artikel pangkalan pengetahuan adalah isyarat untuk menulis artikel tersebut.
 
-### Tahap Sokongan
+### Tahap Sokongan {#support-tiers}
 
 Semasa anda berkembang, strukturkan sokongan mengikut pelan:
 
@@ -48,9 +48,9 @@ Semasa anda berkembang, strukturkan sokongan mengikut pelan:
 
 [Addon Support Tickets](/addons/support-tickets) boleh membantu menguruskan permintaan sokongan dalam platform.
 
-## Operasi Pengbilan
+## Operasi Pengbilan {#billing-operations}
 
-### Pembayaran Berulang
+### Pembayaran Berulang {#recurring-payments}
 
 Ultimate Multisite mengendalikan pengbilan berulang secara automatik melalui payment gateway anda. Tugas anda adalah memantau perkara berikut:
 
@@ -58,7 +58,7 @@ Ultimate Multisite mengendalikan pengbilan berulang secara automatik melalui pay
 - **Dunning**: Tetapkan logik percubaan semula automatik melalui payment gateway anda (Stripe mengendalikan ini dengan baik)
 - **Permintaan pembatalan**: Faham mengapa pelanggan pergi. Setiap pembatalan adalah maklum balas.
 
-### Mengurus Keahlian
+### Mengurus Keahlian {#managing-memberships}
 
 Navigasi ke **Ultimate Multisite > Memberships** untuk:
 
@@ -69,13 +69,13 @@ Navigasi ke **Ultimate Multisite > Memberships** untuk:
 
 Lihat [Managing Memberships](/user-guide/administration/managing-memberships) untuk rujukan penuh.
 
-### Invois
+### Invois {#invoicing}
 
 Pastikan invois dijana dengan betul untuk setiap pembayaran. Pelanggan mungkin memerlukan invois untuk pelaporan perbelanjaan perniagaan. Lihat [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Penyelenggaraan Platform
+## Penyelenggaraan Platform {#platform-maintenance}
 
-### Kemas Kini WordPress dan Plugin
+### Kemas Kini WordPress dan Plugin {#wordpress-and-plugin-updates}
 
 Sebagai pentadbir rangkaian, anda bertanggungjawab untuk:
 
@@ -88,14 +88,14 @@ Sebagai pentadbir rangkaian, anda bertanggungjawab untuk:
 Kemas kini yang rosak akan menjejaskan setiap laman pelanggan dalam rangkaian anda. Sentiasa uji kemas kini pada salinan staging rangkaian anda dahulu.
 :::
 
-### Keselamatan
+### Keselamatan {#security}
 
 - Kekalkan semua perisian terkini
 - Gunakan kata laluan yang kuat dan pengesahan dua faktor untuk akaun admin
 - Pantau aktiviti yang mencurigakan
 - Sediakan pelan untuk insiden keselamatan
 
-### Prestasi
+### Prestasi {#performance}
 
 Semasa rangkaian anda berkembang, pantau:
 
@@ -105,9 +105,9 @@ Semasa rangkaian anda berkembang, pantau:
 
 Pertimbangkan untuk melaksanakan caching (page cache, object cache) dan CDN jika anda belum melakukannya. [Cloudflare integration](/user-guide/host-integrations/cloudflare) menguruskan sebahagian besar ini.
 
-## Pengurusan Kitaran Hidup Pelanggan
+## Pengurusan Kitaran Hidup Pelanggan {#customer-lifecycle-management}
 
-### Mengurangkan Kadar Berhenti (Churn)
+### Mengurangkan Kadar Berhenti (Churn) {#reducing-churn}
 
 Churn ialah peratusan pelanggan yang membatalkan setiap bulan. Bagi perniagaan langganan, mengurangkan kadar berhenti sama pentingnya dengan mendapatkan pelanggan baharu.
 
@@ -119,7 +119,7 @@ Churn ialah peratusan pelanggan yang membatalkan setiap bulan. Bagi perniagaan l
 - Mereka menemui alternatif yang lebih murah → perkuatkan nilai niche anda
 - Perniagaan mereka ditutup → tidak dapat dielakkan, tetapi jejak ini secara berasingan
 
-### Menggalakkan Peningkatan Pelan
+### Menggalakkan Peningkatan Pelan {#encouraging-upgrades}
 
 Pelanggan di Starter yang berjaya harus digalakkan untuk meningkatkan pelan:
 
@@ -127,7 +127,7 @@ Pelanggan di Starter yang berjaya harus digalakkan untuk meningkatkan pelan:
 - Hantar e-mel yang disasarkan yang menonjolkan ciri pelan Growth yang akan memberi manfaat kepada mereka
 - Tunjukkan apa yang telah dibina oleh pelanggan Growth/Pro
 
-### Kempen Menarik Balik (Win-Back Campaigns)
+### Kempen Menarik Balik (Win-Back Campaigns) {#win-back-campaigns}
 
 Apabila pelanggan membatalkan:
 
@@ -135,30 +135,30 @@ Apabila pelanggan membatalkan:
 2. Atasi kebimbangan mereka jika mungkin
 3. Tawarkan diskaun untuk kembali (30-60 hari selepas pembatalan)
 
-## Rutin Mingguan dan Bulanan
+## Rutin Mingguan dan Bulanan {#weekly-and-monthly-routines}
 
-### Mingguan
+### Mingguan {#weekly}
 
 - Semak pendaftaran baharu dan pembatalan
 - Balas semua tiket sokongan yang terbuka
 - Semak prestasi platform dan ketersediaan (uptime)
 - Semak sebarang pembayaran gagal
 
-### Bulanan
+### Bulanan {#monthly}
 
 - Analisis metrik utama (MRR, kadar berhenti, pelanggan baharu, peningkatan pelan)
 - Laksanakan kemas kini WordPress dan plugin (selepas ujian staging)
 - Semak dan kemas kini pangkalan pengetahuan berdasarkan corak sokongan
 - Hantar buletin atau kemas kini kepada pelanggan (ciri baharu, tip, berita industri kecergasan)
 
-### Suku Tahunan
+### Suku Tahunan {#quarterly}
 
 - Semak harga berbanding pesaing dan maklum balas pelanggan
 - Nilai reka bentuk templat -- adakah ia perlu diperbaharui?
 - Nilai kapasiti hosting -- adakah anda perlu meningkatkan skala?
 - Semak dan tingkatkan orientasi (onboarding) berdasarkan data pengaktifan
 
-## Apa Yang Kami Bina Dalam Pelajaran Ini
+## Apa Yang Kami Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Rutin pemantauan harian** untuk ketersediaan, pendaftaran, pembayaran, dan sokongan
 - **Struktur sokongan berperingkat** yang sepadan dengan tahap pelan

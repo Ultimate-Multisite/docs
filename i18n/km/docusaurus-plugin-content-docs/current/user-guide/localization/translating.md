@@ -3,11 +3,11 @@ title: ការបកប្រែ Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# ការបកប្រែ Ultimate Multisite
+# ការបកប្រែ Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite ត្រូវបានបង្កើតឡើងជាភាសាអង់គ្លេស ប៉ុន្តែ plugin នេះអាចបកប្រែបានពេញលេញ ហើយយើងស្វាគមន៍ការរួមចំណែកនៃការបកប្រែពីអ្នកទាំងអស់គ្នា។
 
-## ការបកប្រែ Core Plugin
+## ការបកប្រែ Core Plugin {#core-plugin-translations}
 
 Plugin Ultimate Multisite ដើមត្រូវបានបកប្រែតាមរយៈ **វេទិកាបកប្រែផ្លូវការរបស់ WordPress.org**:
 
@@ -24,7 +24,7 @@ Plugin Ultimate Multisite ដើមត្រូវបានបកប្រែត
 
 ប្រសិនបើអ្នកចង់ក្លាយជាអ្នកកែសម្រួលការបកប្រែសម្រាប់ភាសាដែលអ្នកនិយាយ (អាចយល់ព្រមលើការបកប្រែបាន) សូមទាក់ទងតាមរយៈ [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions)។
 
-## ការបកប្រែ Addon
+## ការបកប្រែ Addon {#addon-translations}
 
 Addon plugins ត្រូវបានបកប្រែដោយឡែកនៅ៖
 
@@ -32,11 +32,11 @@ Addon plugins ត្រូវបានបកប្រែដោយឡែកនៅ
 
 ការបកប្រែ addon បច្ចុប្បន្ននេះត្រូវបានបង្កើតដោយ AI ជាចំណុចចាប់ផ្តើម។ វាគ្របដណ្តប់លើភាសាដែលគាំទ្រទាំងអស់ ប៉ុន្តែអាចមានឃ្លាដែលមិនសូវធម្មជាតិ ឬភាពមិនត្រឹមត្រូវ។ យើងសូមស្វាគមន៍អ្នកបកប្រែជាមនុស្សឱ្យពិនិត្យមើល និងផ្តល់យោបល់ដើម្បីធ្វើឱ្យវាកាន់តែធម្មជាតិ និងត្រឹមត្រូវ។
 
-## ការបកប្រែក្នុងស្រុក
+## ការបកប្រែក្នុងស្រុក {#local-translations}
 
 ប្រសិនបើអ្នកចង់បង្កើតការបកប្រែដោយខ្លួនឯងសម្រាប់គម្រោងរបស់អ្នកផ្ទាល់ ជំនួសឱ្យការរួមចំណែកទៅកាន់ប្រភពដើម (upstream) មានជម្រើសពីរ៖
 
-### ការប្រើប្រាស់ Poedit
+### ការប្រើប្រាស់ Poedit {#using-poedit}
 
 អ្នកអាចប្រើកម្មវិធីនៅលើเดสก์ tóp **[Poedit](https://poedit.net)** ដើម្បីបកប្រែឯកសារ `.pot`៖
 
@@ -46,6 +46,6 @@ Addon plugins ត្រូវបានបកប្រែដោយឡែកនៅ
 4. រក្សាទុក -- Poedit នឹងបង្កើតឯកសារ `.po` និង `.mo` ដោយស្វ័យប្រវត្តិ
 5. ដាក់ឯកសារលទ្ធផលទៅក្នុងថត `lang`
 
-### ការប្រើប្រាស់ Loco Translate
+### ការប្រើប្រាស់ Loco Translate {#using-loco-translate}
 
 កម្មវិធីបន្ថែម (plugin) **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** របស់ WordPress អនុញ្ញាតឱ្យអ្នកបកប្រែដោយផ្ទាល់ពី admin panel ដោយមិនចាំបាច់ប្រើឧបករណ៍នៅលើเดสก์ tóp។ វាគ្រប់គ្រងការបង្កើត និងការបង្រួមឯកសារបកប្រែសម្រាប់អ្នក។

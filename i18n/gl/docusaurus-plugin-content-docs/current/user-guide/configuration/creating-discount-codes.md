@@ -3,13 +3,13 @@ title: Creación de códigos de descuento
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creación de Códigos de Descuento (v2)
+# Creación de Códigos de Descuento (v2) {#creating-discount-codes-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Con Ultimate Multisite puedes crear códigos de descuento para ofrecer descuentos a tus clientes en sus suscripciones. ¡Y crearlos es muy fácil!
 
-## Creación y Edición de Códigos de Descuento
+## Creación y Edición de Códigos de Descuento {#creating-and-editing-discount-codes}
 
 Para crear o editar un código de descuento, ve a **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ O cupón agora está na lista tua e, a partir daí, podes pulsa para **editarlle
 
 ###
 
-### Usando Parámetros URL:
+### Usando Parámetros URL: {#using-url-parameters}
 
 Se queres personalizar as túas tabelas de precios ou crear unha página bonita para o teu código de cupón no teu sitio web e queres aplicar un código de desconto ao formulario de checkout automáticamente, podes facelo mediante os parámetros URL.
 

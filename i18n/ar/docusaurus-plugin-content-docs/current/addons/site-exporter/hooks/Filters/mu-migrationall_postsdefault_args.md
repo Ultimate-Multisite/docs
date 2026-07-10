@@ -4,24 +4,24 @@ title: تصفية - mu-migration/all_posts/default_args
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-# فلتر: mu-migration/all_posts/default_args
+# فلتر: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
 
 يُرشّح المعاملات الافتراضية لاستعلام المنشورات في طريقة all_posts.
 
-## المعاملات
+## المعاملات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $default_args | `array` | مصفوفة المعاملات الافتراضية. |
 
-### منذ
+### منذ {#since}
 
 - 0.2.0
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70) في السطر 70
 
-## يعيد
+## يعيد {#returns}
 
 مصفوفة المعاملات الافتراضية.

@@ -3,15 +3,15 @@ title: 'Leksjon 14: Hva kommer etterpå'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Leksjon 14: Hva skjer videre
+# Leksjon 14: Hva skjer videre {#lesson-14-what-comes-next}
 
 Du har bygget en nisje-nettsideplattform fra bunnen av. FitSite er live, betjener treningsstudioer, og genererer gjentakende inntekter. Denne avsluttende leksjonen ser på hvor du kan ta det videre.
 
-## Hvor vi stoppet
+## Hvor vi stoppet {#where-we-left-off}
 
 FitSite er nå en fungerende bedrift med kunder, drift og en vekstbane. Nå tenker vi på hva som er neste steg.
 
-## Det komplette FitSite-nettverket
+## Det komplette FitSite-nettverket {#the-complete-fitsite-network}
 
 Her er alt vi har bygget gjennom 14 leksjoner:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Alternativ 1: Gå dypere inn i nisjen din
+## Alternativ 1: Gå dypere inn i nisjen din {#option-1-go-deeper-in-your-niche}
 
 Før du utvider til nye nisjer, bør du vurdere å gå dypere inn i fitness-bransjen:
 
-### Under-nisjer
+### Under-nisjer {#sub-niches}
 
 - **Yoga-studioer** -- spesialiserte maler med funksjoner for meditasjon, retreater og workshops
 - **CrossFit-studioer** -- WOD-sporing, konkurranseresultater, fellesskapsfunksjoner
@@ -59,7 +59,7 @@ Før du utvider til nye nisjer, bør du vurdere å gå dypere inn i fitness-bran
 
 Hver under-nisje kan ha sine egne maler og potensielt sin egen merkevare, alt kjørende på det samme Ultimate Multisite-nettverket.
 
-### Premium-funksjoner
+### Premium-funksjoner {#premium-features}
 
 Bygg funksjoner som treningsstudioer vil betale ekstra for:
 
@@ -68,14 +68,14 @@ Bygg funksjoner som treningsstudioer vil betale ekstra for:
 - **Fitness-bloggmaler** -- ferdigbygde innholdsstrukturer for fitness-markedsføring
 - **Sosiale medier-integrasjon** -- automatisk publisering av timeplaner og oppdateringer
 
-### Geografisk utvidelse
+### Geografisk utvidelse {#geographic-expansion}
 
 Hvis du startet lokalt, kan du utvide til:
 
 - Andre byer i landet ditt
 - Andre land (bruk Ultimate Multisite sine [lokaliseringsfunksjoner](/user-guide/localization/translating) for å støtte flere språk)
 
-## Alternativ 2: Utvid til tilstøtende nisjer
+## Alternativ 2: Utvid til tilstøtende nisjer {#option-2-expand-to-adjacent-niches}
 
 Prosessen du fulgte for fitness-studioer fungerer for enhver nisje. Din andre nisje er enklere fordi du allerede har:
 
@@ -83,7 +83,7 @@ Prosessen du fulgte for fitness-studioer fungerer for enhver nisje. Din andre ni
 - Operativ erfaring
 - En bevist "playbook"
 
-### Tilstøtende nisjer til fitness
+### Tilstøtende nisjer til fitness {#adjacent-niches-to-fitness}
 
 - **Velvære og spa** -- massasjeterapeuter, dagspa, velvære-sentre
 - **Idrettsklubber** -- amatøridrettslag, ligaer, fritidsklubber
@@ -91,7 +91,7 @@ Prosessen du fulgte for fitness-studioer fungerer for enhver nisje. Din andre ni
 
 Disse deler publikum med fitness, så markedsføring og partnerskap kan overføres.
 
-### Helt nye nisjer
+### Helt nye nisjer {#completely-new-niches}
 
 Bruk rammeverket fra Leksjon 2 for å vurdere enhver nisje:
 
@@ -108,7 +108,7 @@ Hver ny nisje trenger:
 
 Plattforminfrastrukturen, faktureringen og de operative prosessene forblir de samme.
 
-## Alternativ 3: Bygg en plattform av plattformer
+## Alternativ 3: Bygg en plattform av plattformer {#option-3-build-a-platform-of-platforms}
 
 Når du har skalert opp, kan du kjøre flere nisje-merker på ett enkelt Ultimate Multisite-nettverk:
 
@@ -118,11 +118,11 @@ Når du har skalert opp, kan du kjøre flere nisje-merker på ett enkelt Ultimat
 
 Hvert merke har sine egne maler, planer og markedsføring, men de deler infrastruktur, fakturering og operative prosesser. Dette er der økonomien bak Ultimate Multisite blir kraftig – én plattform, mange vertikaler.
 
-### Multi-nettverk
+### Multi-nettverk {#multi-network}
 
 For fullstendig separasjon mellom nisjer, vurder [Multi-Network addon](/addons/multinetwork), som lar deg kjøre flere WordPress-nettverk fra én enkelt installasjon.
 
-## Alternativ 4: Selg virksomheten
+## Alternativ 4: Selg virksomheten {#option-4-sell-the-business}
 
 En nisje-nettsideplattform med gjentakende inntekter, lav churn og en klar markedsposisjon er en verdifull eiendel. SaaS-bedrifter selges vanligvis for 3–5 ganger årlig inntekt.
 
@@ -134,7 +134,7 @@ En FitSite med 200 kunder til $89 ARPU:
 
 Dette er ikke et garantert utfall, men det er et realistisk utfall for en godt drevet nisjeplattform.
 
-## Hva du har lært
+## Hva du har lært {#what-you-have-learned}
 
 Dette kurset lærte deg en repeterbar prosess:
 
@@ -150,7 +150,7 @@ Dette kurset lærte deg en repeterbar prosess:
 
 Nisjen er strategien. Plattformen er verktøyet. Ultimate Multisite gjør verktøyet mulig. Din forståelse av nisjen gjør det verdifullt.
 
-## Begynn å bygge
+## Begynn å bygge {#start-building}
 
 Hvis du fulgte med på FitSite, har du en fungerende plattform. Hvis du leste helt til for å finne din egen nisje, gå tilbake til [Leksjon 2: Velge din nisje](lesson-2-picking-your-niche) og start prosessen for din valgte bransje.
 

@@ -4,17 +4,17 @@ title: Filter - wu_cart_get_subtotal
 sidebar_label: wu_cart_get_subtotal
 _i18n_hash: b4c83b261d6009edfbb17c6f27f6ae60
 ---
-# Filter: wu_cart_get_subtotal
+# Filter: wu_cart_get_subtotal {#filter-wucartgetsubtotal}
 
-Filtert den "initial amount" Gesamtbetrag.
+Filtere den Gesamtbetrag des „initial amount“.
 
-## Parameters
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
-| $subtotal | `float` | Gesamtbetrag, der heute fällig ist. |
-| $this | `\WP_Ultimo\Checkout\Cart` | Warenkorb-Objekt. |
+| $subtotal | `float` | Total amount due today. |
+| $this | `\WP_Ultimo\Checkout\Cart` | Cart object. |
 
-### Source
+### Quelle {#source}
 
-Definiert in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L2112) bei Zeile 2112
+Definiert in [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L2112) in Zeile 2112

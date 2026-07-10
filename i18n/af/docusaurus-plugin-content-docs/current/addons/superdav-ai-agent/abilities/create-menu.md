@@ -3,15 +3,15 @@ title: Skep Menu
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Menu Skep
+# Menu Skep {#create-menu}
 
 Die **Menu Skep** vermoë skep WordPress-navigasie-menu's met ondersteuning vir aparte navigasielabels wat verskil van bladsytitels.
 
-## Oorsig
+## Oorsig {#overview}
 
 Hierdie vermoë brei die standaard menu-skep funksionaliteit uit met die vermoë om 'n `navigation_label` parameter te spesifiseer. Dit laat jou toe om menu's te skep waar die label wat in die navigasie getoon word, verskil van die bladsytitel, wat meer buigsaamheid in die webwerfstruktuur en gebruikerservaring bied.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Tipe | Verpligtend | Beskrywing |
 |-----------|------|----------|-------------|
@@ -19,7 +19,7 @@ Hierdie vermoë brei die standaard menu-skep funksionaliteit uit met die vermoë
 | `location` | string | Nee | Tema-plek om hierdie menu aan toe te wys, bv. `primary` |
 | `navigation_label` | string | Nee | Label om in die navigasie te wys (verskil van bladsytitel) |
 
-## Terugwaardeerwaarde
+## Terugwaardeerwaarde {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Hierdie vermoë brei die standaard menu-skep funksionaliteit uit met die vermoë
 }
 ```
 
-## Navigasielabel teenoor Bladsytitel
+## Navigasielabel teenoor Bladsytitel {#navigation-label-vs-page-title}
 
 Die `navigation_label` parameter laat jou toe om die interne menu-naam te skei van die label wat aan gebruikers getoon word:
 
@@ -43,9 +43,9 @@ Dit is nuttig wanneer:
 - Jy ondersteuning vir verskeie tale met verskillende label-lengtes benodig
 - Jy menu's vir spesifieke streke of gebruikersgroepe bou
 
-## Gebruiksvoorbeelde
+## Gebruiksvoorbeelde {#usage-examples}
 
-### Voorbeeld 1: Eenvoudige Menu met Navigasielabel
+### Voorbeeld 1: Eenvoudige Menu met Navigasielabel {#example-1-simple-menu-with-navigation-label}
 
 **Opdrag:**
 ```
@@ -62,7 +62,7 @@ Skep 'n primêre navigasie-menu genaamd "Hoofnavigasie" met die navigasielabel "
 }
 ```
 
-### Voorbeeld 2: Menu vir Spesifieke Tema-plek
+### Voorbeeld 2: Menu vir Spesifieke Tema-plek {#example-2-menu-for-specific-theme-location}
 
 **Opdrag:**
 ```
@@ -80,7 +80,7 @@ Skep 'n voette-menu genaamd "Voette-skakels" met navigasielabel "Vinnige Skakels
 }
 ```
 
-## Integrasie met Tema-bouer
+## Integrasie met Tema-bouer {#integration-with-theme-builder}
 
 Wanneer jy Tema-bouer gebruik, dan:
 
@@ -89,13 +89,13 @@ Wanneer jy Tema-bouer gebruik, dan:
 3. Skakel menu's toe aan die korrekte tema-plekke
 4. Ondersteun die byvoeging van menu-items ná skep
 
-## Verwante Vermoë
+## Verwante Vermoë {#related-abilities}
 
 - **`add_menu_item`** — Voeg items by tot 'n bestaande menu
 - **`update_menu`** — Hernoem 'n menu of skakel dit oor na 'n tema-plek
 - **`delete_menu`** — Verwyder 'n menu van jou webwerf
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
 - **Gebruik duidelike navigasielabels** — Hou labels bondig en beskrywend vir gebruikers
 - **Pas tema-plekke aan** — Skakel menu's toe aan die korrekte tema-plek vir behoorlike vertoning
@@ -103,14 +103,14 @@ Wanneer jy Tema-bouer gebruik, dan:
 - **Toets responsiwiteit** — Verifieer dat menu's korrek op mobiele toestelle vertoon word
 - **Lokaliseer labels** — Gebruik verskillende navigasielabels vir verskillende taalweergawes
 
-## Beperkings
+## Beperkings {#limitations}
 
 - Navigasielabels is slegs vir vertoning; die interne `name` word steeds vir WordPress-identifikasie gebruik
 - Tema-ondersteuning varieer; nie alle temas ondersteun alle menu-plekke nie
 - Menu-items moet afsonderlik bygevoeg word ná menu-skep
 - Om 'n navigasielabel te verander, moet die menu opgedateer word
 
-## Verwante Vermoë
+## Verwante Vermoë {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — skep logo's vir jou webwerf-kop
 - [Validate Palette Contrast](./validate-palette-contrast.md) — verseker toeganklike kleurskemas

@@ -3,7 +3,7 @@ title: Kedu ihe na-eme ka ịcha akụkọ?
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Kaere m ike miche miche miche miche?
+# Kaere m ike miche miche miche miche? {#how-can-i-cancel-my-subscription}
 
 Ka ọ bụrụ ị nwere Ultimate Multisite license, ị ga-anọchịrị ịchegbu iji anọchịrị a anyị na ndụ ọjụ ọ bụla ị chụrụ. Ọ bụ gị ihe ndị a:
 

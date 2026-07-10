@@ -3,9 +3,9 @@ title: Migrimi nga V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrimi nga V1
+# Migrimi nga V1 {#migrating-from-v1}
 
-## Ultimate Multisite ka kalëso nga familja origjinale 1.x e lëshimeve në familjen 2.x të lëshimeve.
+## Ultimate Multisite ka kalëso nga familja origjinale 1.x e lëshimeve në familjen 2.x të lëshimeve. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite version 2.0 dhe më sipërme është një ri-shkrim i plotë i kodit, që do të thotë se ka shumë pak gjë për t'u ndarë midis versionit të vjetër dhe të ri. Për këtë arsye, kur përdorni përditësim nga 1.x në 2.x, të dhënat tuaja duhet të migrohen në një format që versionet e reja mund t'i kuptojnë.
 
@@ -15,7 +15,7 @@ Ky mësim flet se si funksionon migratori, çfarë të bësh në rast dështimi 
 
 _**ÇELUES: Para se të filloni përditësimin nga versioni 1.x në versionin 2.0, sigurohuni që të krijoni një kopje rezervë (backup) të bazës së të dhënave të saj.**_
 
-## Hapat e para
+## Hapat e para {#first-steps}
 
 Hapi i parë është të shkarkoni skurtin .zip dhe të instaloni versionin 2.0 në dashboard-in tuaj administrator të rrjetit.
 
@@ -49,19 +49,19 @@ Pas se vendosni çelësin tuaj, klikoni **Agree & Activate** (Pateqeni dhe Aktiv
 
 Pas aktivizimit të lisensës, mund të filloni instalimin aktual duke klikuar në **Install** (Instalo) te faqja tjetër. Kjo do të krijojë automatikisht skedarët dhe bazën e të dhënave të nevojshme për funksionimin e versionit 2.0.
 
-## Tani, migrimi
+## Tani, migrimi {#now-the-migration}
 
 Migratori ka ka një mjet sigurie të integruar që do të kontrollojë gjithë multisite tuaj për të siguruar se të gjitha të dhënat e Ultimate Multisite mund të migrohen pa asnjë problem. Klikoni butonin **Run Check** (Rrobri i Kontrollit) për të nisur procesin.
 
 Pasi ta keni ekzekutuar kontrollin, keni dy opsione: rezultati mund të jetë **me** një gabim ose **pa** gabim.
 
-### Me Gabim
+### Me Gabim {#with-error}
 
 Nëse merrni një mesazh gabimi, do t'ju duhet të kontaktoni ekipet tona mbështetëse që ato ju ndihmojnë në rregullimin e gabimit. Sigurohuni që të **ofroni logun e gabimit** kur krijoni një ticket (raporim). Mund ta shkarkoni logun ose mund të klikoni linkun që thotë "kontaktoni ekipet tona mbështetëse". Ai do të hapë widget-in e ndihmës në anën djathtore të faqes tuaj me fusha të plotësuara për ju, duke përfshirë logjet e gabimit në përshkrim.
 
 _**Pasi sistemi gjeti një gabim, nuk do të mund të vazhdoni migrimin në version 2.0. Aty mund të ktheheni në version 1.x për të vazhduar ekzekutimin e rrjetit tuaj derisa që gabimi të rregullohet.**_
 
-### Pa Gabim
+### Pa Gabim {#without-error}
 
 Nëse sistemi nuk gjen asnjë gabim, do të shihni një mesazh sukses dhe një butonin **Migrate** (Migro) në fund që ju lejon të vazhdoni me migrimin. Në këtë faqe, do t'ju kujtohet të krijoni një kopje rezervë (backup) të bazës së të dhënave para se të vazhdoni, gjë që ne e rekomandojmë fort. Klikoni **Migrate** nëse tashmë keni një backup.
 

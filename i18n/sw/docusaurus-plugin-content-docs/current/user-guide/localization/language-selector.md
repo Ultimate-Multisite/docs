@@ -3,7 +3,7 @@ title: Kichaguzi cha Lugha
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Kichaguzi cha Lugha
+# Kichaguzi cha Lugha {#language-selector}
 
 Kipengele hiki kinatolewa na nyongeza ya **Language Selector**.
 

@@ -3,11 +3,11 @@ title: Dizaino sistemos estestikos įgūdžius
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kompetencijai Dizaino Sistemos Estetika
+# Kompetencijai Dizaino Sistemos Estetika {#design-system-aesthetics-skill}
 
 **Design System Aesthetics (Dizaino Sistemos Estetika)** yra gairinė veikla, kuri padeda sukurti jūsų svetainės vizualią identitetą. Ji jums padeda priimti vienod status sąrašu apie tipografiją, spalvas, atrypus ir judėjimo tokenus, kurie apibrėžia jūsų dizaino sistemą.
 
-## Kas tai yra Design System Aesthetics?
+## Kas tai yra Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics yra struktūrinė įgūdžių, kuri apima:
 
@@ -20,9 +20,9 @@ Design System Aesthetics yra struktūrinė įgūdžių, kuri apima:
 
 Šie sprendimai yra įrašomi jūsų temo `theme.json` failyje, sukuriant kohesivų vizualinį sistemą.
 
-## Kodėl naudoti Design System Aesthetics?
+## Kodėl naudoti Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Vienodumas (Consistency)
+### Vienodumas (Consistency) {#consistency}
 
 Dizaino sistema užtikrina:
 
@@ -31,7 +31,7 @@ Dizaino sistema užtikrina:
 - Atrypus seka prognojuamą schemą
 - Animacijos atrodo vienodas
 
-### Efektyvumas (Efficiency)
+### Efektyvumas (Efficiency) {#efficiency}
 
 Kai kurios dizaino sprendimai atliekami puslapis po puslapio, jūs:
 
@@ -39,7 +39,7 @@ Kai kurios dizaino sprendimai atliekami puslapis po puslapio, jūs:
 - Naudojate juos visur
 - Atnaujinat globaliai pakeisdami vieną reikšmę
 
-### Elgsimumas (Flexibility)
+### Elgsimumas (Flexibility) {#flexibility}
 
 Jūs galite:
 
@@ -47,9 +47,9 @@ Jūs galite:
 - Eksperimentuoti su skirtingais estetikomis
 - Uvartyti preikės konsistenciją, keičiant jūsų projektą
 
-## Kodėl įjungti Design System Aesthetics gailbūtį?
+## Kodėl įjungti Design System Aesthetics gailbūtį? {#triggering-the-design-system-aesthetics-skill}
 
-### Rankinis įjungimas (Manual Activation)
+### Rankinis įjungimas (Manual Activation) {#manual-activation}
 
 Jūs galite pradėti šią veikla bet kuriuo metu:
 
@@ -69,7 +69,7 @@ ar
 "Pateikite man gairines apie dizaino sistemos sprendimus"
 ```
 
-### Automatiniai pasiūlymai (Automatic Suggestions)
+### Automatiniai pasiūlymai (Automatic Suggestions) {#automatic-suggestions}
 
 Agentai gali siūlyti naudoti šią veikla, kai jūs:
 
@@ -78,9 +78,9 @@ Agentai gali siūlyti naudoti šią veikla, kai jūs:
 - Norite pagerinti vizualią konsistenciją
 - Pasiruošate įveikti savo svetainę
 
-## Dizaino Sistemos Estetikos Procesas
+## Dizaino Sistemos Estetikos Procesas {#the-design-system-aesthetics-process}
 
-### Ketinta 1: Tipografija
+### Ketinta 1: Tipografija {#step-1-typography}
 
 Agentas klausosi apie jūsų fontų pasirinkimus:
 
@@ -110,7 +110,7 @@ Antraštės aprašymas nurodo:
 - **Svarumo skala**: Fontų svyres (reguliarus, vidutinis, grūnas ir pan.)
 - **Laiko aukštis**: Atrypus tarp eilutės skaitymiesi skaičiaus
 
-### Ketinta 2: Spacingas
+### Ketinta 2: Spacingas {#step-2-color-palette}
 
 ```
 Pasirinkime jūsų spalvų paletę.
@@ -158,7 +158,7 @@ Agentas nurodo atspindžių tokenus:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Specifikiniai skaičiai paddingui, marginei, vidutinėms vietoms
 
-### Kairos 4: Kotai ir Šaktai
+### Kairos 4: Kotai ir Šaktai {#step-3-spacing}
 
 ```
 Vizualus giliai ir apibrėžimas:
@@ -181,7 +181,7 @@ Agentas sukuria:
 - Šakto tokenus lygių nivel'iams
 - Kairos šIA tokenus
 
-### Kairos 5: Rusys ir Animacijos
+### Kairos 5: Rusys ir Animacijos {#step-4-borders-and-shadows}
 
 ```
 Kaip turi atrodyti jūsų svetainė interaktyvi?
@@ -203,9 +203,9 @@ Agentas nurodo:
 - Easing funkcijas (ease-in, ease-out, ease-in-out)
 - Animacijos keyframes dažnai naudojamoms interakcijoms
 
-## Dizaino sistemos estetiškumo paleidimas
+## Dizaino sistemos estetiškumo paleidimas {#step-5-motion-and-animation}
 
-### Automatinis paleidimas
+### Automatinis paleidimas {#applying-design-system-aesthetics}
 
 Po to, kai pabaigsite įgūdžių, agentas:
 
@@ -214,13 +214,13 @@ Po to, kai pabaigsite įgūdžių, agentas:
 3. Regeneruoja blokų stilius, kad atitiktų naują sistemą
 4. Aktyvuoja atnaujintą temą
 
-### Rankinis paleidimas
+### Rankinis paleidimas {#automatic-application}
 
 Jūs galite redaguoti `theme.json` tiesiogiai:
 
-## Jūsų Dizaino Sistemos Peržiūra
+## Jūsų Dizaino Sistemos Peržiūra {#manual-application}
 
-### Užduoti Agentui
+### Užduoti Agentui {#viewing-your-design-system}
 
 ```
 "Pokaži savo dizainimo sistemą"
@@ -234,13 +234,13 @@ arba
 
 Agentas pateiks jūsų tipografiją, spalvas, atrypus ir kitus tokien.
 
-### Peržiūrėti theme.json
+### Peržiūrėti theme.json {#ask-the-agent}
 
 Atvėkite `/wp-content/themes/[theme-name]/theme.json` teksto redaktore, kad pamatytumėte šių tokenų nurodytus tikslus.
 
-## Jūsų Dizaino Sistemos Aktualizavimas
+## Jūsų Dizaino Sistemos Aktualizavimas {#view-themejson}
 
-### Greitos Aktualizavimai
+### Greitos Aktualizavimai {#updating-your-design-system}
 
 Pagalbos agentui prapginti specifinius pakeitimus:
 
@@ -260,7 +260,7 @@ arba
 "Pakeiskite antraštės fontą į serifinį"
 ```
 
-### Pilnas Redizainas
+### Pilnas Redizainas {#quick-updates}
 
 Atlikite Design System Aesthetics įgūdžių veikimą vėl:
 
@@ -270,7 +270,7 @@ Atlikite Design System Aesthetics įgūdžių veikimą vėl:
 
 Tai patvirtins jūsų visus sprendimus, pradėdami nuo dabartinių reikšmių.
 
-### Dalinis Aktualizavimas
+### Dalinis Aktualizavimas {#full-redesign}
 
 Aktualizuokite specifinius aspektus:
 
@@ -278,15 +278,15 @@ Aktualizuokite specifinius aspektus:
 "Pakeiskite tik spalvų paletą, viską kitas laisi"
 ```
 
-## Dizaino Sistemos Geriausios Praktikos
+## Dizaino Sistemos Geriausios Praktikos {#partial-updates}
 
-### Konsistencija
+### Konsistencija {#design-system-best-practices}
 
 - Naudokite vienodius tokien visur
 - Neapimažinkite vieninteliškų spalvų ar dydžių
 - Referuokite tokien, o ne įkoduokite reikšmes tiesiai
 
-### Pavadinimas
+### Pavadinimas {#consistency-1}
 
 Naudokite aiškius, semantinius pavadinimus:
 
@@ -296,7 +296,7 @@ Naudokite aiškius, semantinius pavadinimus:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalavimybė
+### Skalavimybė {#naming}
 
 Projekt, kuris skalaus į amantį:
 
@@ -304,7 +304,7 @@ Projekt, kuris skalaus į amantį:
 - Kurkite skalas (xs, sm, md, lg, xl) vietoj didelės reikšmėmis
 - Planuokite ateitymos pridėjimais
 
-### Dokumentacija
+### Dokumentacija {#scalability}
 
 Dokumentuokite savo dizainimo sistemą:
 
@@ -312,9 +312,9 @@ Dokumentuokite savo dizainimo sistemą:
 - Kai naudoti kiekvienam tokenui
 - Apsiliegos ir randinės situacijos
 
-## Dažnai naudojami Dizaino Sistemos Modeliai
+## Dažnai naudojami Dizaino Sistemos Modeliai {#documentation}
 
-### Modern Minimalistinis
+### Modern Minimalistinis {#common-design-system-patterns}
 
 - Sans-serif tipografija (Inter, Helvetica)
 - Apriboti spalvų paleta (2–3 spalvos)
@@ -322,7 +322,7 @@ Dokumentuokite savo dizainimo sistemą:
 - Subtili šeštai
 - Lygūs, greti animacijos
 
-### Šaltinis ir Drauginis
+### Šaltinis ir Drauginis {#modern-minimalist}
 
 - Sudėtingumas serifinių ir sans-serif tipografijos
 - Šaltinis spalvų paleta (apalyvintos, šaltiniai gražiai)
@@ -330,7 +330,7 @@ Dokumentuokite savo dizainimo sistemą:
 - Šaltiniai šeštai
 - Žaidžiantos animacijos
 
-### Profesionali Korporatyvinis
+### Profesionali Korporatyvinis {#warm-and-friendly}
 
 - Šaltinis sans-serif (Roboto, Open Sans)
 - Neutrali paleta su akcentu spalva
@@ -338,7 +338,7 @@ Dokumentuokite savo dizainimo sistemą:
 - Minimalūs šeštai
 - Subtili perėjimai
 
-### Kreatyvinis ir Apgaliojantis
+### Kreatyvinis ir Apgaliojantis {#professional-corporate}
 
 - Aiškiai identifikavima tipografija
 - Apalyvinta spalvų paleta
@@ -346,7 +346,7 @@ Dokumentuokite savo dizainimo sistemą:
 - Stiprūs šeštai
 - Paskaičiavimo animacijos
 
-## Problemos Atsiliepimai (Troubleshooting)
+## Problemos Atsiliepimai (Troubleshooting) {#creative-and-bold}
 
 **Mano dizaino sistemos pakeitimai ne rodomasi**
 - Tame skirkite naršinio istoriją (cache)
@@ -364,7 +364,7 @@ Dokumentuokite savo dizainimo sistemą:
 - Rankai redaguokite theme.json ankstesnių reikšmėmis
 - Vėl paleiskite gamybą su skirtingais pasirinkimais
 
-## Nauji Žingsniai
+## Nauji Žingsniai {#troubleshooting}
 
 Dizainimo sistemą nurodę:
 

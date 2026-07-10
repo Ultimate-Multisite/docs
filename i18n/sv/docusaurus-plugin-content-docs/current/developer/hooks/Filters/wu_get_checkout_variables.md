@@ -4,26 +4,26 @@ title: Filter - wu_get_checkout_variables
 sidebar_label: wu_get_checkout_variables
 _i18n_hash: c3821432e54f34547822df3b92ced708
 ---
-# Filter: wu_get_checkout_variables
+# Filter: wu_get_checkout_variables {#filter-wugetcheckoutvariables}
 
 Låter plugin-utvecklare filtrera de förinställda variablerna på en kassan.
 
 Var försiktig – om du missar nycklar kan det helt krascha kassan på front-end.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
 | $variables | `array` | Lokala variabler. |
 | $checkout | `\Checkout` | Kassan-klassen. |
 
-### Sedan
+### Sedan {#since}
 
 - 2.0.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1970) på rad 1970
 
 
-## Returnerar
+## Returnerar {#returns}
 Den nya variabel-arrayen.

@@ -3,25 +3,25 @@ title: Integracija s CyberPanelom
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# Integracija s CyberPanelom
+# Integracija s CyberPanelom {#cyberpanel-integration}
 
 Ovaj vodič objašnjava kako podesiti integraciju Ultimate Multisite CyberPanel-a tako da se mapirani domeni u vašoj mreži automatski dodaju (i uklanjaju) kao virtual hostovi u CyberPanelu, uz opcionalno proviziranje auto-SSL putem Let's Encrypt.
 
-## Što radi
+## Što radi {#what-it-does}
 
 - Kada se domen mapira u Ultimate Multisite, integracija poziva CyberPanel API kako bi stvorila virtual host za taj domen.
 - Kada se ukloni mapiranje domena, integracija poziva API da obriše odgovarajući virtual host.
 - Kada je auto-SSL aktiviran, integracija pokreće izdavač Let's Encrypt certifikata odmah nakon što se stvori virtual host.
 - Opcionalno dodaje/uklanja alias `www.` ovisno o vašoj postavci "Auto-create www subdomain" u postavkama mapiranja domena (Domain Mapping settings).
 
-## Preduslovi
+## Preduslovi {#prerequisites}
 
 - Pokrenut CyberPanel instance (preporučeno v2.3 ili noviji) doseg, dostupan s vašeg WordPress servera.
 - Postojeći web stranica u CyberPanelu koja već služi korijen vaše WordPress mreže. Integracija vezuje nove virtual hostove za taj server.
 - Omogućena pristup CyberPanel API-ju. Autentifikacija koristi korisničko ime i lozinku vašeg CyberPanel admina.
 - Vaši DNS podaci za mapirane domene moraju već pokazivati na IP adresu vašeg servera prije nego što auto-SSL može izdati važeći certifikat.
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 Sledeće konstante morate definirati u datoteci `wp-config.php`:
 
@@ -40,15 +40,15 @@ define('WU_CYBERPANEL_PHP_VERSION', 'PHP 8.2');  // Podrazmjena: PHP 8.2
 define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com'); // Koristi se za kontakt s SSL certifikatima
 ```
 
-## Upute za postavljanje
+## Upute za postavljanje {#setup-instructions}
 
-### 1. Omogućite CyberPanel API
+### 1. Omogućite CyberPanel API {#1-enable-the-cyberpanel-api}
 
 1. Prijavite se na svoj CyberPanel dashboard kao administrator.
 2. Idite na **Security** > **SSL** i potvrdite da je SSL aktivan na samoj CyberPanel interfejsu (nužno za sigurne pozive API-ja).
 3. CyberPanel API je dostupan na adresi `https://va-server-ip:8090/api/` podrazumijevano. Nema potrebe za dodatnim koracima za njegovo omogućavanje — on je podrazumijevano uključen za korisnike administratora.
 
-### 2. Dodajte konstante u wp-config.php
+### 2. Dodajte konstante u wp-config.php {#2-add-constants-to-wp-configphp}
 
 Dodajte sljedeće konstante u vaš datoteku `wp-config.php` prije linije `/* That's all, stop editing! */`:
 
@@ -66,7 +66,7 @@ define('WU_CYBERPANEL_AUTO_SSL', true);
 define('WU_CYBERPANEL_EMAIL', 'admin@va-domain.com');
 ```
 
-### 3. Omogućite integraciju
+### 3. Omogućite integraciju {#3-enable-the-integration}
 
 1. U svom WordPress network adminu, idite na **Ultimate Multisite** > **Settings**.
 2. Navigirajte na karticu **Domain Mapping**.
@@ -74,7 +74,7 @@ define('WU_CYBERPANEL_EMAIL', 'admin@va-domain.com');
 4. Omogućite integraciju **CyberPanel**.
 5. Kliknite na **Save Changes**.
 
-### 4. Provjerite konektivnost
+### 4. Provjerite konektivnost {#4-verify-connectivity}
 
 Koristite ugrađeni test konekcije u wizardu za postavke:
 
@@ -82,9 +82,9 @@ Koristite ugrađeni test konekcije u wizardu za postavke:
 2. Kliknite na **Test Connection**.
 3. Poruka o uspjehu potvrđuje da plugin može pristupiti CyberPanel API-ju i ispravno se autentificirati.
 
-## Kako to radi
+## Kako to radi {#how-it-works}
 
-### Domain Mapping (Mapiranje domena)
+### Domain Mapping (Mapiranje domena) {#domain-mapping}
 
 Kada se domen mapira u Ultimate Multisite:
 
@@ -93,7 +93,7 @@ Kada se domen mapira u Ultimate Multisite:
 3. Root dokumenta se postavlja da pokazuje na root direktorij WordPress mreže.
 4. Kada se mapiranje domena ukloni, integracija poziva `/api/deleteWebsite` kako bi očistila virtualni host.
 
-### Auto-SSL (Automatsko SSL)
+### Auto-SSL (Automatsko SSL) {#auto-ssl}
 
 Kada je `WU_CYBERPANEL_AUTO_SSL` postavljen na `true`:
 
@@ -103,11 +103,11 @@ Kada je `WU_CYBERPANEL_AUTO_SSL` postavljen na `true`:
 
 > **Važno:** DNS mora biti potpuno propagiran na IP adresu vašeg servera prije nego što Let's Encrypt može validirati domen. Ako isporuka SSL certifikata ne uspije odmah nakon mapiranja, sačekajte propagaciju DNS-a i ponovno pokrenite isporuku SSL putem CyberPanel dashboarda pod **SSL** > **Manage SSL**.
 
-### www Subdomain (Poddomen www)
+### www Subdomain (Poddomen www) {#www-subdomain}
 
 Ako je opcija **Auto-create www subdomain** uključena u podešavanjima Domain Mapping-a, integracija također kreira alias virtualnog hosta za `www.<domena>` i, kada je Auto-SSL uključen, isporuči certifikat koji pokriva i apex (glavni) i www varijante.
 
-### Email Forwarders (Preusmjerivači e-mailova)
+### Email Forwarders (Preusmjerivači e-mailova) {#email-forwarders}
 
 Kada je dodatak [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) aktivan, CyberPanel vam može omogućiti i prebacivanje e-mailova korisnicima. Prebacivači (forwarders) proslijeđuju poruke s jedne domene na drugu pošte bez stvaranja pune pošte, što je korisno za alase poput `info@customer-domain.test` ili `support@customer-domain.test`.
 
@@ -120,7 +120,7 @@ Prije nego što omogućite prebacivače za korisnike:
 
 Ako kreiranje prebacivača ne uspije, prvo provjerite aktivne logove Ultimate Multisite, a zatim potvrdite u CyberPanel da postoji izvorna domena i da korisnički račun API-ja ima dozvole za upravljanje e-mailom.
 
-## Referenca za konfiguraciju
+## Referenca za konfiguraciju {#configuration-reference}
 
 | Konstanta | Obavezno | Podrazmjena vrijednost | Opis |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Ako kreiranje prebacivača ne uspije, prvo provjerite aktivne logove Ultimate Mu
 | `WU_CYBERPANEL_PHP_VERSION` | Ne | `PHP 8.2` | Verzija PHP-a za nove virtualne hostove (mora odgovarati verziji instalirano u CyberPanelu) |
 | `WU_CYBERPANEL_EMAIL` | Ne | — | E-mail kontakt za registraciju SSL certifikata |
 
-## Važne napomene
+## Važne napomene {#important-notes}
 
 API za CyberPanel koristi autentifikaciju na osnovu sesije (session-based token authentication). Integracija automatski obrađuje dobivanje tokena pri svakom pozivu API-ja.
 Vaš administrativni račun u CyberPanel mora imati dozvole za kreiranje i brisanje web stranica.
@@ -140,33 +140,33 @@ CyberPanel se podrazumijevano pokreće na portu `8090`. Ako vaš server koristi 
 Integracija ne upravlja DNS zapisima. Morate uputiti DNS domena na IP adresu vašeg servera prije mapiranja domena u Ultimate Multisite.
 Ako koristite OpenLiteSpeed (OLS), automatski se obavlja elegantno restart nakon promjene virtualnog hosta. Ne treba ručnog intervencije.
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
-### Odjednako odbijen spoj API-ja (API Connection Refused)
+### Odjednako odbijen spoj API-ja (API Connection Refused) {#api-connection-refused}
 
 - Provjerite da je port `8090` otvoren u firewallu vašeg servera.
 - Potvrdite da vrijednost `WU_CYBERPANEL_HOST` uključuje ispravan protokol (`https://`) i port.
 - Provjerite da je vaš SSL certifikat CyberPanel-a važeći; samoznaga (self-signed) certifikati mogu uzrokovati neuspjeh pri provjeri TLS-a. Postavite `WU_CYBERPANEL_VERIFY_SSL` na `false` samo u okruženjima pouzdanih privatne mreže.
 
-### Greške pri autentifikaciji (Authentication Errors)
+### Greške pri autentifikaciji (Authentication Errors) {#authentication-errors}
 
 - Potvrdite da su vaši `WU_CYBERPANEL_USERNAME` i `WU_CYBERPANEL_PASSWORD` ispravni tako što ćete se direktno ulogirati u CyberPanel.
 - CyberPanel zaključava račune nakon ponavljanja neuspješnih pokušaja prijave. Provjerite **Security** > **Brute Force Monitor** u CyberPanel ako nastaju blokade.
 
-### Domena nije kreirana (Domain Not Created)
+### Domena nije kreirana (Domain Not Created) {#domain-not-created}
 
 - Provjerite aktivni log aktivnosti Ultimate Multisite (**Ultimate Multisite** > **Activity Logs**) za poruke o greškama API-ja.
 - Potvrdite da paket definiran u `WU_CYBERPANEL_PACKAGE` postoji u CyberPanel (**Packages** > **List Packages**).
 - Osigurajte da domena nije već registrirana kao web stranica u CyberPanel — dupliranje kreiranja web stranice vraća grešku.
 
-### SSL certifikat nije izdat (SSL Certificate Not Issued)
+### SSL certifikat nije izdat (SSL Certificate Not Issued) {#ssl-certificate-not-issued}
 
 Potvrdite da je DNS potpuno proširio: `dig +short your-domain.com` bi trebao vratiti IP vašeg servera.
 Let's Encrypt primjenjuje ograničenja brzine (rate limits). Ako ste nedavno izdali nekoliko certifikata za isti domen, sačekajte prije ponovnog pokušaja.
 Provjerite SSL logove CyberPanel pod **Logs** > **Error Logs** za detalje o neuspješnim izdanjima certifikata.
 Kao rezervno rješenje, možete ručno izdati SSL putem CyberPanel-a: **SSL** > **Manage SSL** > odaberite domen > **Issue SSL**.
 
-## Referanse
+## Referanse {#references}
 
 - Dokumentacija CyberPanel API: https://docs.cyberpanel.net/docs/category/api
 - Upravljanje SSL-om u CyberPanelu: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

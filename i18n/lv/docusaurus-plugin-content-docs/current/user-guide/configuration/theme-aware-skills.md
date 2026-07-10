@@ -3,11 +3,11 @@ title: Temu atbilstošas prasmes
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tēmas atbalstītie prasmes
+# Tēmas atbalstītie prasmes {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 ieviests divus jaunus, automātiski pielāgotos tēmas atbalstītas prasmes, kas automātiski piepaspieļas jūsu aktīvajai WordPress tēmā. Šie prasmes sniedz specializētu novirzīšanu un iespējas, kas piemērotas jūsu tēmas arhitektūrai un funkcijām.
 
-## Kādas ir tēmas atbalstītas prasmes?
+## Kādas ir tēmas atbalstītas prasmes? {#what-are-theme-aware-skills}
 
 Tēmas atbalstītas prasmes ir iepriekš konfiguriētas zināšanas bāzes un rīku sūti, ko AI asistentas automātiski izvēlas, pamatojoties uz aktīvajām WordPress tēmām jūsu vietnē. Kad maināt tēmas, asistentas pieejamie prasmes atjaunojas automātiski – nepieciešama manāla konfigūracija.
 
@@ -18,9 +18,9 @@ Katrā prasme ietver:
 - **Pielāgošanas piemēri** — koda fragmenti un konfigūras šēmas veidiem biežākās uzdevumu veikšanai
 - **Labākās prakses** — ieteikumi tēmas arhitektūrām un darba plāniem
 
-## Pieejamas tēmas atbalstītas prasmes
+## Pieejamas tēmas atbalstītas prasmes {#available-theme-aware-skills}
 
-### Bloku tēmas (Block Themes)
+### Bloku tēmas (Block Themes) {#block-themes}
 
 **Piemērots:** Tēmām, kas izmanto WordPress bloku balstītās (Full Site Editing) arhitektūru.
 
@@ -34,7 +34,7 @@ Bloka tēmas prasme sniedz novirzīšanu par:
 
 **Automātiskie aktivizējamas, kad:** Jums aktīvajā tēma ir bloka tēma (atbalsta `block-templates` funkciju).
 
-### Klasiskās tēmas (Classic Themes)
+### Klasiskās tēmas (Classic Themes) {#classic-themes}
 
 **Piemērots:** Tradicionālām WordPress tēmām, kas izmanto PHP shēmas un klasisku redaktoru.
 
@@ -48,7 +48,7 @@ Temas hierarhijas un šablonu tagu sapratums
 
 **Automātiskie aktivizēti, kad:** Jums aktīva tēma ir klasiskā (ne-blocka) tēma.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Piemērots:** vietnēm, kas izmanto Kadence Blocks pluginu uztver advanced block-based dizainam.
 
@@ -62,7 +62,7 @@ Kadence Blocks prasme sniedz norādījumus par:
 
 **Automātiskie aktivizēti, kad:** Kadence Blocks plugin ir aktīvs jūsu vietnē.
 
-### Kadence Tēma
+### Kadence Tēma {#kadence-theme}
 
 **Piemērots:** vietnēm, kas izmanto Kadence tēmu bloku balstītā dizaina un personalizācijas veidokli.
 
@@ -76,11 +76,11 @@ Kadence Tēmas prasme sniedz norādījumus par:
 
 **Automātiskie aktivizēti, kad:** Kadence tēma ir jūsu aktīva tēma.
 
-## Kā izvēlaties prasmes
+## Kā izvēlaties prasmes {#how-skills-are-selected}
 
 Asistents automātiski atrod savu aktīvo tēmu un instalētos pluginus katrā ziņojumā. Ja pieejama atbilstoša tēmas prasme, tā automātiski ielādē asistenta kontekstā. Jums nav nepieciešams manuāli aktivizēt vai mainīt prasmes.
 
-### Vadu prasmes
+### Vadu prasmes {#multiple-skills}
 
 Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja!
 
@@ -94,7 +94,7 @@ Ja, ja, ja! Ja, ja, ja! Ja, ja, ja! Ja, ja, ja!
 
 If vairāki prasmes attiecas uz jūsu vietni (piemēram, ja jums aktīvi ir gan Kadence Blocks un Kadence Theme), asistentam ir piekļūta visām piemērotajām prasmemi un var nosaukties ceļvedību no katras.
 
-### Tēmas mainīšana
+### Tēmas mainīšana {#switching-themes}
 
 Kad maināt aktīvo tēmu, asistentas pieejamie prasmes automātiski atjaunās nākamajā ziņojumā. Piemēram:
 
@@ -102,11 +102,11 @@ Kad maināt aktīvo tēmu, asistentas pieejamie prasmes automātiski atjaunās n
 2. Jūs pāriet uz klasiķu tēmu.
 3. Nākamajā ziņojumā prasme **Classic Themes** automātiski ielādējas, un prasme **Block Themes** vairs nav pieejama.
 
-## Tēmas izmantošana ar prasmēm
+## Tēmas izmantošana ar prasmēm {#using-theme-aware-skills}
 
 Lai izmantotu tēmas zīmējamo prasmi, vienkārši aprakstiet, ko vēlaties darīt chat interfeisā. Asistentas automātiski nosaukās atbilstošu prasmes ceļvedību.
 
-### Piemēri prompts
+### Piemēri prompts {#example-prompts}
 
 **Bloku tēmām:**
 > "Izveidot hero seksiooni ar fonbildi un centrsētu tekstu izmantojot bloku pēterus."

@@ -3,7 +3,7 @@ title: Löggingur á viðskiptavini
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Skýslaður síða fyrir viðskiptavinann þinn (v2)
+# Skýslaður síða fyrir viðskiptavinann þinn (v2) {#your-clients-account-page-v2}
 
 _**VIÐSKIPURLEIKN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ _**VIÐSKIPURLEIKN: Þessi grein er tengd Ultimate Multisite v2.x.**_
 
 Í þessum tölvuleiðbeiningu reynjum við að leiða þig í gegnum síðuna fyrir viðskiptavinann og sjá hvað viðskiptavinir geta sjá og gera innri þar.
 
-## Skýslaður síða
+## Skýslaður síða {#the-account-page}
 
 Skýslaður síða er aðgangur til þess sem þú getur komið á **Account** (Skýlaður) í dashboard-inum fyrir viðskiptavinann þinn.
 
@@ -25,7 +25,7 @@ Skýslaður síða er aðgangur til þess sem þú getur komið á **Account** (
 
 Eftir að viðskiptavinur klikkar á það, sjá hann upplýsingar um samþættinguna sína, hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hefðu hef
 
-### Översikt over medlemmskapet þitt:
+### Översikt over medlemmskapet þitt: {#your-membership-overview}
 
 Fyrir fyrsta hluta undir nafni netasíðans þíns sýnir öllu upplýsingar um núverandi planinn og þjónustur/pakka sem var kaupað með því. Hlutið sýnir einnig medlemmskaflannúmer, fyrsta eingöngu betalingssumma sem var betald fyrir það, hversu mikið planinn og þjónusta/pakki kostar og hversu oft hann hefur verið betallað fyrir þennan medlemmskaflann. Þeir geta einnig séð hvort medlemmskaflann sé **Ávinnandi** (Active), **Lykktur** (Expired) eða **Stoppður** (Canceled).
 
@@ -41,7 +41,7 @@ En ef þínir viðskiptavinir velja að kaupa pakka eða þjónustur fyrir þenn
 
 Litið á að kupónkóð notkun getist ekki í þessum síðu til breytingar medlemmskaflans. Ef viðskiptavinur notaði kupónkóða á fyrstu kaupinu af medlemmskaflanum, verður kóðinn betaldur einnig að nýjum medlemmskaflanum.
 
-### Uppfræðing betalingsvísar:
+### Uppfræðing betalingsvísar: {#updating-the-billing-address}
 
 Á reikningasíð í gegnum getum þínum viðskiptavinum að uppfærja reikningarsíða sína. Þau þurfa bara að klikka á **Update** nýtt við _Billing Address_.
 
@@ -51,7 +51,7 @@ Ný vinnuvera mun sýnast fyrir viðskiptavinann þennan. Allt þeirra sem þurf
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Breiðing síða:
+### Breiðing síða: {#changing-the-site-template}
 
 Til að láta viðskiptavinum breita síðuþema sína, þarftur að fara yfir í **Ultimate Multisite > Settings > Sites** og slá á úr möguleika **Allow Template Switching**.
 
@@ -79,7 +79,7 @@ Eftir að hafa skipt það á á svona staðfestingu og klikkt á **Process Swit
 
 Viðskiptavinir geta einnig notað **Reset current template** (Viðbrjóta núverandi stafla) frá þessum panelni þegar þeir þurfa að setja stafluna aftur í þann sem er nýtt á. Þann sem skiptar stafla er kannski ólík við skiptingu á annarra staflans, svo að viðskiptavinir ættu að staðfesta það onlyf þegar þeir hafa skilning um að hvernig viðbrjótingin verða á innihaldi síðunnar.
 
-### Að bæta með sérstökum domænum (Custom Domains):
+### Að bæta með sérstökum domænum (Custom Domains): {#adding-custom-domains}
 
 Viðskiptavinir þín geta einnig að hafa valkost hingað til að bæta með sérstökum domænum fyrir þennan plan á sínu reikningasíðu. Til að leyfa viðskiptavinum að nota sérstökum domænum, ferðu í **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -113,7 +113,7 @@ Eftir að klikka á **Next Step** (Næstu skref), geta viðskiptavinir þín lag
 
 Eftir að klikka á **Add Domain** (Laga domén), verður domænin lagt í reikning þess viðskiptavinarins. All þeir þurfa að gera núna er að breyta DNS-skjalðum þessar eigin doméns á registrarinn sínum fyrir domén.
 
-### Breyta lykilheiti:
+### Breyta lykilheiti: {#changing-password}
 
 Inni reikninga-dashboardi geta viðskiptavinir þín einnig breyta lykilheiti með því að klikka á **Change Password** (Breyta lykilheiti).
 
@@ -123,7 +123,7 @@ Inni reikninga-dashboardi geta viðskiptavinir þín einnig breyta lykilheiti me
 
 ![Form til breytingu lykilheiti með lykilheiti núverjum og nýjum](/img/account-page/change-password-form.png)
 
-### Fara-eina sviði:
+### Fara-eina sviði: {#danger-zone}
 
 Við havemdum einnig tveir valkostir sem eru sýnd á hluta **Fara-eina sviðs**: **Slettja vísitalinn** og **Slettja reikning**. Þau eru bæði í Fara-eina sviði því að þessar aðgerðir eru ótilboðar. Ef viðskiptavinir þitt slettja vefsíðuna eða reikningann hefur ekki möguleika á að fá hann aftur.
 

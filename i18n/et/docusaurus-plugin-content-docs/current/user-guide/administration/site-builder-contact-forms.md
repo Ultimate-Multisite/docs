@@ -3,11 +3,11 @@ title: Siti ehitija kontaktiformid
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Veebilund kontaktformid
+# Veebilund kontaktformid {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 annab võimaluse luua kontaktforme otse chatti interface'i abil Site Builder agentiga. See võimalus võimaldab lisada täielikult toimivaid kontaktforme igale lehel ilma chatti lahkumata.
 
-## Üldine ülevaade
+## Üldine ülevaade {#overview}
 
 Site Builder kontaktformi loomise võime (`create_contact_form`) tuvastab automaatselt teie installitud forma plugin'i ja luu kontaktformi selle pluginil olevaid funktsioone kasutades. Toetatud forma pluginid on:
 
@@ -18,7 +18,7 @@ Site Builder kontaktformi loomise võime (`create_contact_form`) tuvastab automa
 
 Assistent valib automaatselt teie sitesil parema saadaval olevat forma pluginit ja genereerib sellele sobiva kontaktformi.
 
-## Kontaktformi loomine
+## Kontaktformi loomine {#creating-a-contact-form}
 
 Kontaktformi luomiseks Site Builderiga:
 
@@ -34,7 +34,7 @@ Kontaktformi luomiseks Site Builderiga:
 
 4. Site Builder genereerib kontaktformi ja annab tagasi lühikese kodu (shortcode), mida saab sisestada.
 
-## Genereeritud koodi kasutamine
+## Genereeritud koodi kasutamine {#using-the-generated-shortcode}
 
 Kui Site Builder luub kontaktformi, annab see tagasi lühikese koodi (nt `[contact-form-7 id="123"]`). Saate:
 
@@ -45,11 +45,11 @@ Kui Site Builder luub kontaktformi, annab see tagasi lühikese koodi (nt `[conta
 
 3. **Käita seda šabloni** — Kui olete mugavates PHP-ga, saate ühtlustatud shortcode lisada teema šablonikust.
 
-## Kontaktvormi kohandamine
+## Kontaktvormi kohandamine {#customizing-the-contact-form}
 
 Pärast Site Builderi loomist kontaktvormi saate seda edasi kohandada:
 
-### Chat-interfaalsiooni abil
+### Chat-interfaalsiooni abil {#via-the-chat-interface}
 
 Palge Site Builderit muudatama vormi:
 
@@ -57,7 +57,7 @@ Palge Site Builderit muudatama vormi:
 
 Site Builder paistab vormi ja tagasi annab uuendatud shortcode.
 
-### Väljaoperaatorite administraatori interfaalsiooni abil
+### Väljaoperaatorite administraatori interfaalsiooni abil {#via-the-form-plugins-admin-interface}
 
 Saate ka vormi kohandada otse oma vormi pluginil olevates seadistustes:
 
@@ -65,7 +65,7 @@ Saate ka vormi kohandada otse oma vormi pluginil olevates seadistustes:
 2. Leida Site Builderi loomise vorm.
 3. Muuta vormi valikuid, valideerimise reegleid ja e-posti teavitusi vajadusel.
 
-## Vormi pluginid ja compatibiliteet
+## Vormi pluginid ja compatibiliteet {#form-plugins-and-compatibility}
 
 Site Builder tuvastab automaatselt, milline vormi plugin on teie sitesil asitud, ja kasutab seda kontaktvormi loomiseks. Kui asitud mitu vormi pluginit, Site Builder prioriseerib neid järgmisel järjekorras:
 
@@ -76,7 +76,7 @@ Site Builder tuvastab automaatselt, milline vormi plugin on teie sitesil asitud,
 
 Kui et ühtest sellest pluginidest ei ole asitud, soovitat Site Builder installida ühe enne kontaktvormi loomist.
 
-## E-posti teavitused
+## E-posti teavitused {#email-notifications}
 
 Site Builderi loomiset kontaktvormid on konfiguratsioonilt määratud saama e-posti teavitusi sitesi administraatorile oletuks. Saate kohandada vastavat e-posti aadressi ja teavitusjuhtise sõnumit:
 
@@ -91,21 +91,21 @@ Detailsete juhiste jaoks viidake oma vormi pluginil oleva dokumentatsioonile:
 - [Fluent Forms E-posti teavitsemised](https://fluentforms.com/docs/)
 - [Gravity Forms E-posti teavitsemised](https://docs.gravityforms.com/)
 
-## Näide kasutusejuhtisid
+## Näide kasutusejuhtisid {#example-use-cases}
 
-### Väsimine kontaktvormi
+### Väsimine kontaktvormi {#simple-contact-form}
 
 > "Loo lihtne kontaktvorm, kus on nimekirjale, e-posti ja sõnumikvad."
 
-### Mitapoolne formaar
+### Mitapoolne formaar {#multi-step-form}
 
 > "Loo kontaktvorm, millel on esimene samm kontaktinfo jaoks ja teine samm sõnumi ja lemmikühendusmeetodi jaoks."
 
-### Formaar konditsiooniga loogika
+### Formaar konditsiooniga loogika {#form-with-conditional-logic}
 
 > "Loo kontaktvorm, mis näitab erinevaid valikuid sõltuvalt kasutaja valikust drop-down'ist."
 
-### File uploadiga formaar
+### File uploadiga formaar {#form-with-file-upload}
 
 > "Loo kontaktvorm, millel kasutajad saavad laadida faili või liitet."
 

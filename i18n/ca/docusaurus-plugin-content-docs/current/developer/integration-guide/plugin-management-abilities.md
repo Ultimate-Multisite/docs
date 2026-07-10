@@ -3,11 +3,11 @@ title: Habilitats de Gestió de Plugins
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Capacitats de Gestió de Plugins
+# Capacitats de Gestió de Plugins {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 inclou **7 capacitats de gestió de plugins** que l'assistència AI pot cridar durant una conversa. Aquestes capacitats proporcionen un control programàtic sobre els plugins de WordPress instal·lats a través del [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Resum de Capacitats
+## Resum de Capacitats {#abilities-overview}
 
 | Capacitat | Slug | Descripció |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 inclou **7 capacitats de gestió de plugins** que l'assis
 | Install Plugin | `install_plugin` | Desplaça un plugin en sandbox al directori de plugins de WordPress en directe. |
 | Activate Plugin | `activate_plugin` | Activa un plugin en sandbox en l'entorn sandbox de wp-env. |
 
-## API de l'Instal·lador de Plugins
+## API de l'Instal·lador de Plugins {#plugin-installer-api}
 
 L'instal·lador de plugins gestiona les operacions de sistema de fitxers quan es desplaça o es removeixen plugins. Comportaments clau:
 
@@ -28,7 +28,7 @@ L'instal·lador de plugins gestiona les operacions de sistema de fitxers quan es
 - **Actualització**: Substitueix els fitxeres de plugin existents. Desactiva el plugin abans d'escriure per evitar errors d'estat parcial.
 - **Eliminació per slug**: Localitza el directori del plugin per slug, el desactiva en tots els llocs web i després elimina el directori.
 
-### Registrar un Gestor d'Instal·lació Personalitzat
+### Registrar un Gestor d'Instal·lació Personalitzat {#registering-a-custom-install-handler}
 
 Podeu enganxar-vos al cicle vital d'instal·lació utilitzant les accions `gratis_ai_plugin_installer_before_install` i `gratis_ai_plugin_installer_after_install`:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Registre de l'Ecosistema
+## Registre de l'Ecosistema {#ecosystem-registry}
 
 Les capacitats es registren a través del **registre de l'ecosistema de plugins**. El registre mapeja els slugs de les capacitats a les seves classes gestores i les exponeix al desplaçador d'eines de l'agent AI.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## Integració amb HookScanner
+## Integració amb HookScanner {#hookscanner-integration}
 
 Les capacitats `create_plugin` i `update_plugin` ejecuten automàticament **HookScanner** contra el codi nou generat. HookScanner retorna una llista d'accions i filtres d'accions de WordPress registrats pel plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner salta automàticament els directoris `vendor/` i `node_modules/`.
 
-## Arquitectura de Treball Assíncric (Async Job)
+## Arquitectura de Treball Assíncric (Async Job) {#async-job-architecture}
 
 Les operacions de plugins de llarga durada (generar, instal·lar) es desplaçaixen com a **treballs assíncronics (async jobs)** amb seguiment de progrés en temps real. L'interfecciòn de xat AI consulta el progrés i transmet actualitzacions d'estat a l'usuari:
 

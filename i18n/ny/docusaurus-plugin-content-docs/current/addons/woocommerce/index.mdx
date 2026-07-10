@@ -1,0 +1,109 @@
+---
+title: Kuphatikizana kwa WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration {#woocommerce-integration}
+
+WooCommerce Integration imagwira ntchito mofanana kwambiri ndi momwe Manual Gateway yathu imagwirira ntchito. Imapereka kusinthasintha kwakukulu kwa ogwiritsa ntchito anu, kuwalola kusankha mawonekedwe aliwonse olipira omwe alipo pa kuyika kwanu kwa WooCommerce. Ndipo ndi yosavuta: nthawi yolipirira ya wogwiritsa ntchito ikangotha, subscription ya wogwiritsa ntchito imayikidwa pa hold. Nthawi yomweyo, order idzapangidwa pa kuyika kwa WooCommerce kwa site yayikulu ya network. Kenako wogwiritsa ntchito amalandira invoice mu imelo yake, yokhala ndi link yochitira malipiro. Malipiro akalandiridwa, subscription imakonzedwanso.
+
+## Zinthu Zake {#features}
+
+- Kuphatikiza kosavuta pakati pa Ultimate Multisite ndi WooCommerce
+- Njira zingapo zolipirira zilipo
+- Kulipiritsa mobwerezabwereza kokha pogwiritsa ntchito subscriptions core yophatikizidwa, ndi zowonjezera za WooCommerce Subscriptions plugin ngati mukufuna
+- Ma total a checkout amaphatikizapo misonkho ya Ultimate Multisite ngati mizere ya fee ya WooCommerce yosiyana, yopanda msonkho kuti makasitomala athe kuwona kuchuluka kwa msonkho asanalipire
+
+## Zolemba {#documentation}
+
+**Kukhazikitsa WooCommerce Integration**
+
+**Kukulitsa Zosankha Zanu Zolipira ndi Ultimate Multisite: WooCommerce Integration**
+
+## Kuyika {#installation}
+
+1. Kwezani 'ultimate-multisite-woocommerce' ku directory ya '/wp-content/plugins/'
+2. Yatsani plugin kudzera mu menyu ya 'Plugins' mu WordPress
+3. Tsatirani Wizard sitepe ndi sitepe kuti mukhazikitse plugin
+
+## Kalozera Wogwiritsa Ntchito {#usage-guide}
+
+_**CHENJEZO LOFUNIKA: Nkhaniyi ikunena za Ultimate Multisite version 2.x.**_
+
+_**CHENJEZO:** Ultimate Multisite: WooCommerce Integration imafuna kuti WooCommerce ikhale itayatsidwa osachepera pa site yanu yayikulu._
+
+Timamvetsa kuti _Stripe_ ndi _PayPal_ sizipezeka m'mayiko ena, zomwe zimachepetsa kapena kulepheretsa ogwiritsa ntchito Ultimate Multisite kugwiritsa ntchito plugin yathu bwino. Choncho tinapanga **add-on yophatikiza _WooCommerce_**.
+
+_WooCommerce_ ndi plugin yotchuka kwambiri ya eCommerce. Opanga mapulogalamu padziko lonse anapanga ma add-ons ophatikiza ma payment gateway osiyanasiyana nayo. Tinagwiritsa ntchito mwayi uwu kuti tikulitse ma payment gateway omwe mungagwiritse ntchito mu dongosolo la billing la Ultimate Multisite.
+
+## Kuyikhazikitsa {#setting-it-up}
+
+Choyamba, muyenera kuyika add-on ya WooCommerce Integration yomwe ndi **yaulere kwa ogwiritsa ntchito okhala ndi license**. Kuti muyiyike, dinani Ultimate Multisite pa super admin dashboard yanu ndipo sankhani **Add-ons**.
+
+![Tsamba la Add-ons](/img/admin/addons-page.png)
+
+Apa mungapeze ma add-ons onse a Ultimate Multisite. Dinani pa add-on ya **Ultimate Multisite: WooCommerce Integration**.
+
+![Tsamba la Add-ons losonyeza WooCommerce Integration](/img/admin/addons-page.png)
+
+Zenera lidzatuluka lokhala ndi zambiri za add-on. Ingodinani **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Kuyika kukamalizidwa, mudzatumizidwa ku tsamba la ma plugins. Apa, ingodinani **Network Activate** ndipo add-on ya _WooCommerce_ idzayatsidwa pa network yanu.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Mukayatsa, ngati simunakhale ndi WooCommerce plugin yoyikidwa ndi kuyatsidwa pa website yanu, **mudzalandira chikumbutso**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Ikayikidwa, mudzaona njira yowonjezera pansi pa zokonda za payments za Ultimate Multisite. Kenako mutha **kuyatsa** njira ya _WooCommerce_ kuchokera pamenepo.
+
+![Zokonda za payment gateway za Ultimate Multisite ndi WooCommerce itayatsidwa](/img/addons/woocommerce-payment-gateway.png)
+
+Mutha kukonza zokonda zina zoyambira monga dzina lowonetsedwa lomwe lidzawonekere ku front end ndi malangizo otsogolera ogwiritsa ntchito anu mu checkout flow yawo. Kenako mutha kupita ku **zokonda za _WooCommerce_ za Main site yanu** kuti muyatse ndi kukonza payment gateway yomwe mukufuna kugwiritsa ntchito.
+
+### Mizere ya fee ya msonkho pa checkout {#checkout-tax-fee-lines}
+
+Checkout ya Ultimate Multisite ikaphatikiza misonkho, kuphatikizaku kumawonjezera kuchuluka kwa msonkho uliwonse wa Ultimate Multisite ku checkout ya WooCommerce ngati mzere wa fee wosiyana, wopanda msonkho. Izi zimapangitsa kuti total ya msonkho izioneka asanalipire, pamene zikuletsa WooCommerce kuti isakhomenso msonkho pa fee ya msonkho.
+
+## Momwe mungasamalire malipiro {#how-to-manage-the-payment}
+
+WooCommerce Integration imagwira ntchito mofanana kwambiri ndi momwe **Manual Gateway** yathu imagwirira ntchito. Chovuta chake ndi chakuti malipiro onse ayenera kulipidwa pamanja kumapeto kwa nthawi ya billing. Umu ndi momwe flow imagwirira ntchito:
+
+  * Billing cycle ya wogwiritsa ntchito ikangotha, membership imayikidwa **on hold**. Nthawi yomweyo, order idzapangidwa pa kuyika kwa _WooCommerce_ pa site yayikulu ya network yanu.
+
+  * Kenako ogwiritsa ntchito amalandira invoice mu imelo yawo, yokhala ndi link yochitira malipiro (linkyo imawonekeranso pa billing history yawo kuchokera ku dashboard ya subsite yawo). Linkyo imatumiza wogwiritsa ntchito ku _**WooCommerce**_ **checkout** , kumene ogwiritsa ntchito adzatha kusankha imodzi mwa **ma gateway a _WooCommerce_ omwe alipo** kuti akonze malipiro awo.
+
+  * Malipiro akalandiridwa, membership imakhala **renewed** , malipirowo amalembedwa pa Ultimate Multisite ndipo order imayikidwa kuti yakwanira.
+
+### Zolemba Zina Zofunika: {#some-important-notes}
+
+  * Ntchito yokhazikika ya Ultimate Multisite imagwirabe ntchito ndi mawonekedwe a kuphatikiza awa. Mwachitsanzo, **kutulutsa refunds** kuchokera pa screen ya **Subscription Management** kudzayankhulana ndi WooCommerce kuti itulutse refund pogwiritsa ntchito mawonekedwe olipira osankhidwa.
+
+  * Ultimate Multisite: WooCommerce Integration imadalira WP-Cron kuti igwire ntchito. Izi zimagwira ntchito bwino kwambiri nthawi zambiri, koma ngati site ili ndi traffic yochepa ndiye cron siyikakamizidwa kufufuza zochitika zokonzedwa ndipo chochitikacho chimasoweka, zomwe zingayambitse kuchedwa kwa execution.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Kuyambitsa malipiro pamanja mwezi uliwonse si kwabwino kwa ogwiritsa ntchito omaliza chifukwa subscriptions zimayembekezeka kubwereza zokha pa billing cycle iliyonse. WooCommerce Integration add-on tsopano imaphatikiza subscriptions code yaikulu, kotero zinthu zobwereza nthawi zonse zimagwiritsa ntchito subscriptions pa billing yobwereza.
+
+Simukuyenera **ayi** kugula kapena kuyika [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) yapadera kuti mugulitse zinthu zobwereza kudzera mu integration iyi. Ngati plugin imeneyo yagulidwa, yayikidwa, ndipo ilipo pa site yanu yayikulu, Ultimate Multisite idzaigwiritsa ntchito ndipo WooCommerce idzawonetsa zinthu zina zowonjezera zosamalira subscription. Ikapanda kupezeka, subscriptions core yophatikizidwayo imasamalirabe zinthu zobwereza.
+
+![Zokonda za WooCommerce subscription integration](/img/addons/woocommerce-subscription-integration.png)
+
+Ndipo ndi zimenezo. Ogwiritsa ntchito anu omaliza sadzafunikiranso kulipira pamanja kumapeto kwa billing cycle yawo pa zinthu zobwereza.
+
+Kupatula order kupangidwa pa site yanu yayikulu pansi pa _WooCommerce_, idzapanganso subscription pa Account iliyonse.
+
+### Khalidwe loyimitsa chifukwa renewal yalephera {#failed-renewal-suspension-behavior}
+
+Mwachisawawa, memberships zimakhalabe zogwira ntchito pamene WooCommerce Subscriptions ikukonza ndondomeko yake yobwerezanso malipiro olephera. Izi zimasunga nthawi ya chisomo ya WooCommerce Subscriptions yokhazikika kuti renewal yobwezeretsedwa ibwezeretse subscription ndi membership kuti zigwirizanenso popanda kudula access msanga kwambiri.
+
+Administrators omwe akufuna kuwongolera access mwamphamvu kwambiri angathe kuyatsa **Suspend Memberships Immediately on Failed Renewals** mu zokonda za WooCommerce Integration. Pamene setting iyi yosankha yalatsidwa, Ultimate Multisite imayimitsa membership yogwirizana nthawi yomweyo renewal payment ikangolephera m'malo modikira kuti WooCommerce Subscriptions retry handling ithe.
+
+Developers angasinthe chisankho chomwechi pogwiritsa ntchito filter ya `wu_woo_suspend_on_payment_failure`. Masamba a hook reference amapangidwa kuchokera ku source ya add-on, kotero chidulechi chimangotchula dzina la filter pa mfundo zosinthidwa za suspension.

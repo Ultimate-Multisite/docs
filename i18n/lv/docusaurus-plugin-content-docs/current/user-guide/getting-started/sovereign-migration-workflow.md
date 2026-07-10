@@ -3,11 +3,11 @@ title: Sovereīno migrācijas veidrojums
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign migrācijas veidota darbības sekva
+# Sovereign migrācijas veidota darbības sekva {#sovereign-migration-workflow}
 
 Ultimate Multisite 1.2.0 dod migrācijas apstiprinājuma vārti (verification gates) pārejam standartsubsaites infrastruktūrā, kas ir sovereigņa īpašniecības sistēmā.
 
-## Pirms sākat
+## Pirms sākat {#before-you-start}
 
 Pārbaudiet, ka jums ir:
 
@@ -17,7 +17,7 @@ Pārbaudiet, ka jums ir:
 - Databāzes hosta savienojums, kas atbilst gadu vietai (destination environment).
 - Pieejamība veikt WP-CLI komandas tīklam (network).
 
-## Ieteicamais darbības sekva
+## Ieteicamais darbības sekva {#recommended-workflow}
 
 1. Sagatavojiet saimniecības databāzi un faila sistēmu vietai.
 2. Reģistrējiet vai atjauninājiet saimniecības izolācijas iestatījumus (tenant isolation settings).
@@ -28,7 +28,7 @@ Pārbaudiet, ka jums ir:
 7. Apmeklējiet vietni ar SSO (Single Sign-On).
 8. Pārslēdziet DNS vai routingu tikai pēc tam, kad apstiprinājums ir veiksmīgi.
 
-## Apstiprinājuma vārti
+## Apstiprinājuma vārti {#verification-gates}
 
 Apstiprinājuma darbības sekva pārbauda migrāciju vairākās stāvokļos:
 
@@ -40,6 +40,6 @@ Apstiprinājuma darbības sekva pārbauda migrāciju vairākās stāvokļos:
 
 Lietojiet apstiprinājuma neuzstādījumus kā pretrunces iecelšanai. Nolaiciet atklāto databāzes, lietotāju, saraksta vai routings problēmu un veiciet apstiprinājumu vēlreiz pirms vietni ievieciet klientiem.
 
-## Pirmais produktīvais apmeklējums
+## Pirmais produktīvais apmeklējums {#first-production-visit}
 
 Pēc tam, kad apstiprinājums ir veiksmīgi, izmantojiet **Apmeklēt (SSO)** vietnes pārvaldības ekrāna no **Visit (SSO)** pirmo administratīvo apmeklējuma laikā. Tas apstiprina saimniecības routingu, SSO tokenu apstrādi, oriģinālās punktu fijošanu (origin pinning) un lietotāju izveidi vietnē (tenant-side user provisioning) vienā kontrolētā solījumā.

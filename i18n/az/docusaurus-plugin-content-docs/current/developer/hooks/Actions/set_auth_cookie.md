@@ -4,11 +4,11 @@ title: Hərəkət - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Authentication cookie təyin edilməzdən dərhal əvvəl işə düşür.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Adı | Növ | Təsvir |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Authentication cookie təyin edilməzdən dərhal əvvəl işə düşür.
 | $scheme | `string` | Authentication şeması. Dəyərlər 'auth' və ya 'secure_auth' daxil olmaqla. |
 | $token | `string` | Bu cookie üçün istifadə ediləcək istifadəçinin sessiya token-ı. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> parametri əlavə edilmişdir.
-### Mənbə
+### Mənbə {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) faylında 124-ci sətirdə təyin edilmişdir.

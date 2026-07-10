@@ -3,17 +3,17 @@ title: RunCloud Entegrasyonu
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# RunCloud Entegrasyonu
+# RunCloud Entegrasyonu {#runcloud-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 RunCloud, kendi bulut sunucularınızda web uygulamalarını kolayca dağıtmanızı ve yönetmenizi sağlayan bulut tabanlı bir sunucu yönetim platformudur. Bu entegrasyon, Ultimate Multisite ve RunCloud arasında otomatik alan adı senkronizasyonu ve SSL sertifika yönetimi yapmanızı sağlar.
 
-## Özellikler
+## Özellikler {#features}
 - Otomatik alan adı senkronizasyonu
 - SSL sertifika yönetimi
 - Eşlemeler silindiğinde alan adlarının kaldırılması
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 Aşağıdaki sabitlerin `wp-config.php` dosyanızda tanımlanması gerekmektedir:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. RunCloud API Kimlik Bilgilerinizi Alın
+### 1. RunCloud API Kimlik Bilgilerinizi Alın {#1-get-your-runcloud-api-credentials}
 
 1. RunCloud kontrol panelinize giriş yapın
 2. "User Profile" bölümüne gidin (sağ üst köşedeki profil resminize tıklayın)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Henüz yoksa "Generate API Key" butonuna tıklayın
 5. API Key ve API Secret bilgilerinizi kopyalayın
 
-### 2. Sunucu ve Uygulama ID'lerinizi Alın
+### 2. Sunucu ve Uygulama ID'lerinizi Alın {#2-get-your-server-and-app-ids}
 
 1. RunCloud kontrol panelinizde "Servers" bölümüne gidin
 2. WordPress multisite kurulumunuzun barındırıldığı sunucuyu seçin
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. "Web Applications" bölümüne gidin ve WordPress uygulamanızı seçin
 5. Uygulama ID'si URL'de görünür: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. wp-config.php Dosyasına Sabitleri Ekleyin
+### 3. wp-config.php Dosyasına Sabitleri Ekleyin {#3-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Entegrasyonu Etkinleştirin
+### 4. Entegrasyonu Etkinleştirin {#4-enable-the-integration}
 
 1. WordPress yönetici panelinizde Ultimate Multisite > Settings bölümüne gidin
 2. "Domain Mapping" sekmesine gidin
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. RunCloud entegrasyonunu etkinleştirin
 5. "Save Changes" butonuna tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
 Ultimate Multisite'da bir alan adı eşlendiğinde:
 
@@ -70,19 +70,19 @@ Ultimate Multisite'da bir alan adı eşlendiğinde:
 
 Alt alan adı kurulumlarında, ağınıza yeni siteler eklendiğinde entegrasyon RunCloud'da alt alan adlarının oluşturulmasını otomatik olarak yönetir.
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### API Bağlantı Sorunları
+### API Bağlantı Sorunları {#api-connection-issues}
 - API kimlik bilgilerinizin doğru olduğunu kontrol edin
 - Sunucu ve uygulama ID'lerinizin doğru olduğunu kontrol edin
 - RunCloud hesabınızın gerekli izinlere sahip olduğundan emin olun
 
-### SSL Sertifika Sorunları
+### SSL Sertifika Sorunları {#ssl-certificate-issues}
 - RunCloud'un SSL sertifikalarını vermesi biraz zaman alabilir
 - Alan adlarınızın sunucunuzun IP adresine düzgün şekilde yönlendirildiğini doğrulayın
 - Uygulamanız için RunCloud SSL ayarlarını kontrol edin
 
-### Alan Adı Eklenmiyor
+### Alan Adı Eklenmiyor {#domain-not-added}
 - Hata mesajları için Ultimate Multisite günlüklerini kontrol edin
 - Alan adının RunCloud'a zaten eklenmemiş olduğunu doğrulayın
 - RunCloud planınızın birden fazla alan adını desteklediğinden emin olun

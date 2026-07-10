@@ -3,15 +3,15 @@ title: Valideer paletkontras
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valideer Paletkontras
+# Valideer Paletkontras {#validate-palette-contrast}
 
 Die **Validate Palette Contrast** vermoë kontroleer kleurpaare in jou ontwerppalet op nakoming van WCAG (Web Content Accessibility Guidelines) voordat dit op jou tema toegepas word.
 
-## Oorsig
+## Oorsig {#overview}
 
 Hierdie vermoë verseker dat jou webwerf se kleurskema toeganklikheidsstandaarde nakom deur kontrasverhoudings tussen teks- en agtergrondkleure te valideer. Dit help om kleurkombinasies te voorkom wat vir gebruikers met visuele beperkings moeilik kan wees om te lees.
 
-## Invoerformaat
+## Invoerformaat {#input-format}
 
 Die vermoë aanvaar 'n kleurpalet as invoer:
 
@@ -35,7 +35,7 @@ Die vermoë aanvaar 'n kleurpalet as invoer:
 }
 ```
 
-### Parameters
+### Parameters {#parameters}
 
 | Parameter | Tipe | Vereis | Beskrywing |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Die vermoë aanvaar 'n kleurpalet as invoer:
 | `wcag_level` | string | Nee | WCAG-nakoomingsvlak: "A", "AA" (standaard), of "AAA" |
 | `pairs_to_check` | array | Nee | Spesifieke kleurpaare om te valideer (bv. `["primary-text", "background-text"]`) |
 
-## WCAG-Vlakke Gevalideer
+## WCAG-Vlakke Gevalideer {#wcag-levels-checked}
 
 Die vermoë valideer kontrasverhoudings volgens WCAG-standaarde:
 
@@ -56,7 +56,7 @@ Die vermoë valideer kontrasverhoudings volgens WCAG-standaarde:
 - **Normale Teks** — teks kleiner as 18pt (of 14pt vet)
 - **Groot Teks** — teks van 18pt of groter (of 14pt vet of groter)
 
-## Uitvoer Skema
+## Uitvoer Skema {#output-schema}
 
 Die vermoë keer 'n gedetailleerde validasieverslag terug:
 
@@ -95,7 +95,7 @@ Die vermoë keer 'n gedetailleerde validasieverslag terug:
 }
 ```
 
-### Uitveld
+### Uitveld {#output-fields}
 
 | Veld | Tipe | Beskrywing |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Die vermoë keer 'n gedetailleerde validasieverslag terug:
 | `status` | string | "pass" of "fail" vir elke paar |
 | `recommendations` | array | Voorstelle vir die verbetering van mislukte pare |
 
-## Gebruiksvoorbeeld
+## Gebruiksvoorbeeld {#usage-example}
 
 **Vraag:**
 ```
@@ -119,7 +119,7 @@ Die vermoë valideer al die kleurkombinasies en keer terug:
 - ✅ Agtergrond + Teks: 12.1:1 verhouding (kom WCAG AAA)
 - Oor die algemeen: Nakoomend met WCAG AA
 
-## Integrasie met Tema Bouer
+## Integrasie met Tema Bouer {#integration-with-theme-builder}
 
 Wanneer jy die ontwykingsrigting-keuse van Theme Builder gebruik, sal die Validate Palette Contrast vermoë:
 
@@ -129,7 +129,7 @@ Wanneer jy die ontwykingsrigting-keuse van Theme Builder gebruik, sal die Valida
 4. Voorstelle verskaf vir nie-nakoomende pare
 5. Voorkom die toepassing van ontoeganklike kleurskemas
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
 - **Begin met AA-vlak** — WCAG AA is die standaard vir die meeste webwerwe
 - **Toets voordat jy toepas** — valideer jou palet voordat jy jou ontwerp bevestig
@@ -137,7 +137,7 @@ Wanneer jy die ontwykingsrigting-keuse van Theme Builder gebruik, sal die Valida
 - **Oorweeg gebruikersvoorkeure** — sommige gebruikers mag bykomende kleurgevoeligheid hê
 - **Gebruik kontraskontroleerders** — kombineer hierdie vermoë met browsergereedskap vir verifikasie
 
-## Mislukte Pare en Voorstelle
+## Mislukte Pare en Voorstelle {#failing-pairs-and-recommendations}
 
 As 'n kleurpaar die validasie misluk, verskaf die vermoë voorstelle:
 
@@ -155,7 +155,7 @@ As 'n kleurpaar die validasie misluk, verskaf die vermoë voorstelle:
 }
 ```
 
-## Verwante Vermoë
+## Verwante Vermoë {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — skep logo's met jou gevalideerde kleurpalet
 - [Create Menu](./create-menu.md) — bou navigasie met toeganklike kleure

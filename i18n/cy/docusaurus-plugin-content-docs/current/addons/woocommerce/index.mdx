@@ -1,0 +1,109 @@
+---
+title: Integreiddio WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration {#woocommerce-integration}
+
+Mae WooCommerce Integration yn gweithio mewn ffordd debyg iawn i'r ffordd mae ein Manual Gateway yn gweithio. Mae'n cynnig llawer iawn o hyblygrwydd i'ch defnyddwyr, gan ganiatáu iddynt ddewis unrhyw un o'r ffurflenni talu sydd ar gael ar eich gosodiad WooCommerce. Ac mae'n syml: unwaith y daw cyfnod bilio'r defnyddiwr i ben, rhoddir tanysgrifiad y defnyddiwr ar stop. Ar yr un pryd, caiff archeb ei chreu ar osodiad WooCommerce prif safle'r rhwydwaith. Yna mae'r defnyddiwr yn derbyn anfoneb yn ei e-bost, gyda dolen i wneud y taliad. Unwaith y derbynnir y taliad, caiff y tanysgrifiad ei adnewyddu.
+
+## Nodweddion {#features}
+
+- Integreiddio hawdd rhwng Ultimate Multisite a WooCommerce
+- Sawl dull talu ar gael
+- Bilio cylchol awtomataidd gan ddefnyddio craidd y tanysgrifiadau sydd wedi'i gynnwys, gyda gwelliannau dewisol gan plugin WooCommerce Subscriptions
+- Mae cyfansymiau checkout yn cynnwys trethi Ultimate Multisite fel llinellau ffi WooCommerce ar wahân, nad ydynt yn drethadwy, fel y gall cwsmeriaid adolygu symiau treth cyn talu
+
+## Dogfennaeth {#documentation}
+
+**Sefydlu WooCommerce Integration**
+
+**Ehangu eich Opsiynau Talu gydag Ultimate Multisite: WooCommerce Integration**
+
+## Gosod {#installation}
+
+1. Llwythwch 'ultimate-multisite-woocommerce' i'r cyfeiriadur '/wp-content/plugins/'
+2. Gweithredwch y plugin drwy'r ddewislen 'Plugins' yn WordPress
+3. Dilynwch y Dewin cam wrth gam i sefydlu'r plugin
+
+## Canllaw Defnyddio {#usage-guide}
+
+_**NODYN PWYSIG: Mae'r erthygl hon yn cyfeirio at fersiwn 2.x Ultimate Multisite.**_
+
+_**SYLW:** Mae Ultimate Multisite: WooCommerce Integration yn gofyn bod WooCommerce wedi'i actifadu o leiaf ar eich prif safle._
+
+Rydym yn deall nad yw _Stripe_ a _PayPal_ ar gael mewn rhai gwledydd, sy'n cyfyngu neu'n rhwystro defnyddwyr Ultimate Multisite rhag defnyddio ein plugin yn effeithiol. Felly fe wnaethom greu **ychwanegyn i integreiddio _WooCommerce_**.
+
+Mae _WooCommerce_ yn plugin eFasnach poblogaidd iawn. Mae datblygwyr ledled y byd wedi creu ychwanegion i integreiddio gwahanol pyrth talu ag ef. Gwnaethom fanteisio ar hyn i ehangu'r pyrth talu y gallwch eu defnyddio yn system filio Ultimate Multisite.
+
+## Ei Sefydlu {#setting-it-up}
+
+Yn gyntaf, mae angen i chi osod yr ychwanegyn WooCommerce Integration sydd **am ddim i ddefnyddwyr trwyddedig**. I'w osod, cliciwch ar Ultimate Multisite ar eich dashboard uwch-weinyddwr a dewiswch **Ychwanegion**.
+
+![Tudalen ychwanegion](/img/admin/addons-page.png)
+
+Yma gallwch ddod o hyd i holl ychwanegion Ultimate Multisite. Cliciwch ar yr ychwanegyn **Ultimate Multisite: WooCommerce Integration**.
+
+![Tudalen ychwanegion yn dangos WooCommerce Integration](/img/admin/addons-page.png)
+
+Bydd ffenestr yn ymddangos gyda manylion yr ychwanegyn. Cliciwch ar **Gosod Nawr** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Ar ôl cwblhau'r gosodiad, cewch eich ailgyfeirio i'r dudalen plugins. Yma, cliciwch ar **Network Activate** a bydd yr ychwanegyn _WooCommerce_ yn cael ei actifadu ar eich rhwydwaith.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Ar ôl ei actifadu, os nad oes gennych y plugin WooCommerce wedi'i osod a'i actifadu ar eich gwefan o hyd, **byddwch yn derbyn nodyn atgoffa**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Unwaith y bydd wedi'i osod, byddwch yn gweld opsiwn ychwanegol o dan osodiadau taliadau Ultimate Multisite. Yna gallwch **alluogi** yr opsiwn _WooCommerce_ oddi yno.
+
+![Gosodiadau porth talu Ultimate Multisite gyda WooCommerce wedi'i alluogi](/img/addons/woocommerce-payment-gateway.png)
+
+Gallwch ffurfweddu rhai gosodiadau sylfaenol fel yr enw arddangos a fydd yn ymddangos yn y pen blaen a chyfarwyddiadau i arwain eich defnyddwyr yn eu llif checkout. Yna gallwch fynd i osodiadau **_WooCommerce_ eich Prif safle** i alluogi a ffurfweddu'r porth talu y mae'n well gennych ei ddefnyddio.
+
+### Llinellau ffi treth checkout {#checkout-tax-fee-lines}
+
+Pan fydd checkout Ultimate Multisite yn cynnwys trethi, mae'r integreiddiad yn ychwanegu pob swm treth Ultimate Multisite at checkout WooCommerce fel llinell ffi ar wahân, nad yw'n drethadwy. Mae hyn yn cadw cyfanswm y dreth yn weladwy cyn talu, tra'n atal WooCommerce rhag trethu'r ffi dreth eto.
+
+## Sut i reoli'r taliad {#how-to-manage-the-payment}
+
+Mae WooCommerce Integration yn gweithio mewn ffordd debyg iawn i'r ffordd mae ein **Manual Gateway** yn gweithio. Yr anfantais yw bod rhaid talu pob taliad â llaw ar ddiwedd y cyfnod bilio. Dyma sut mae'r llif yn gweithio:
+
+  * Unwaith y daw cylch bilio'r defnyddiwr i ben, rhoddir yr aelodaeth **ar stop**. Ar yr un pryd, caiff archeb ei chreu ar osodiad _WooCommerce_ ar brif safle eich rhwydwaith.
+
+  * Yna mae defnyddwyr yn derbyn anfoneb yn eu e-bost, gyda dolen i wneud y taliad (mae'r ddolen hefyd yn ymddangos yn eu hanes bilio o dashboard eu his-safle). Mae'r ddolen honno'n ailgyfeirio'r defnyddiwr i **checkout** _**WooCommerce**_ , lle bydd defnyddwyr yn gallu dewis un o'r **pyrth _WooCommerce_ sydd ar gael** er mwyn prosesu eu taliad.
+
+  * Unwaith y derbynnir y taliad, caiff yr aelodaeth ei **hadnewyddu** , cofnodir y taliad ar Ultimate Multisite a gosodir yr archeb yn gyflawn.
+
+### Rhai Nodiadau Pwysig: {#some-important-notes}
+
+  * Mae swyddogaeth ddiofyn Ultimate Multisite yn dal i weithio gyda'r ffurf integreiddio hon. Er enghraifft, bydd **cyhoeddi ad-daliadau** o'r sgrin **Rheoli Tanysgrifiad** yn cyfathrebu â WooCommerce i gyhoeddi'r ad-daliad gan ddefnyddio'r ffurflen talu a ddewiswyd.
+
+  * Mae Ultimate Multisite: WooCommerce Integration yn dibynnu ar WP-Cron i weithio. Mae hyn yn gweithio'n dda iawn y rhan fwyaf o'r amser, ond os oes gan y safle draffig isel yna ni chaiff y cron ei sbarduno i wirio am ddigwyddiadau wedi'u hamserlennu ac mae'r digwyddiad yn cael ei golli, a all achosi oedi wrth weithredu.
+
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
+
+Nid yw cychwyn taliad â llaw bob mis yn ddelfrydol i ddefnyddwyr terfynol oherwydd disgwylir i danysgrifiadau ailadrodd yn awtomatig bob cylch bilio. Mae’r add-on WooCommerce Integration bellach yn cynnwys cod tanysgrifiadau craidd, felly mae cynhyrchion cylchol bob amser yn defnyddio tanysgrifiadau ar gyfer bilio cylchol.
+
+**Nid** oes angen i chi brynu na gosod y [plugin WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) ar wahân i werthu cynhyrchion cylchol drwy’r integration hwn. Os yw’r plugin hwnnw wedi’i brynu, ei osod, ac ar gael ar eich prif safle, bydd Ultimate Multisite yn ei ddefnyddio a bydd WooCommerce yn datgelu nodweddion rheoli tanysgrifiadau ychwanegol. Pan nad yw ar gael, mae’r craidd tanysgrifiadau sydd wedi’i gynnwys yn dal i drin cynhyrchion cylchol.
+
+![Gosodiadau integration tanysgrifiadau WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+A dyna ni. Ni fydd angen i’ch defnyddwyr terfynol wneud taliad â llaw mwyach ar ddiwedd eu cylch bilio ar gyfer cynhyrchion cylchol.
+
+Ar wahân i archeb gael ei chreu ar eich prif safle o dan _WooCommerce_, bydd hefyd yn creu tanysgrifiad ar gyfer pob Account.
+
+### Ymddygiad atal adnewyddu a fethodd {#failed-renewal-suspension-behavior}
+
+Yn ddiofyn, mae aelodaethau’n parhau’n weithredol tra bod WooCommerce Subscriptions yn prosesu ei amserlen ailgynnig taliadau a fethodd. Mae hyn yn cadw ffenestr ras arferol WooCommerce Subscriptions fel y gall adnewyddiad a adferwyd ddod â’r tanysgrifiad a’r aelodaeth yn ôl i gydamseriad heb dorri ar draws mynediad yn rhy gynnar.
+
+Gall gweinyddwyr sydd eisiau rheolaeth mynediad llymach alluogi **Suspend Memberships Immediately on Failed Renewals** yng ngosodiadau WooCommerce Integration. Pan alluogir y gosodiad opt-in hwn, mae Ultimate Multisite yn atal yr aelodaeth gysylltiedig cyn gynted ag y bydd taliad adnewyddu’n methu yn lle aros i driniaeth ailgynnig WooCommerce Subscriptions orffen.
+
+Gall datblygwyr ddiystyru’r un penderfyniad gyda’r hidlydd `wu_woo_suspend_on_payment_failure`. Cynhyrchir tudalennau cyfeirio hook o ffynhonnell yr add-on, felly mae’r trosolwg hwn ond yn tynnu sylw at enw’r hidlydd ar gyfer polisïau atal personol.

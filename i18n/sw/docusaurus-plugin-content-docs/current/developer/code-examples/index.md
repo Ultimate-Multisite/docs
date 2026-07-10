@@ -3,11 +3,11 @@ title: Mfano wa Msimbo wa Juu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Mifano ya Msimbo ya Kiwango cha Juu
+# Mifano ya Msimbo ya Kiwango cha Juu {#advanced-code-examples}
 
 Mifano hii inadhihirisha mifumo ya kuunganisha (integration) ya kina na Ultimate Multisite.
 
-## Injini ya Bei Inayotegemea Kanuni
+## Injini ya Bei Inayotegemea Kanuni {#dynamic-pricing-engine}
 
 Injini ya bei inayotegemea kanuni ambayo inatumia punguzo la kiasi, uaminifu, na msimu:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Kuandaa Tovuti za Kiwango cha Juu
+## Kuandaa Tovuti za Kiwango cha Juu {#advanced-site-provisioning}
 
 Kuweka mipangilio ya tovuti mpya kiotomatiki kwa kutumia plugins, SSL, CDN, back-up, na ufuatiliaji kulingana na vipengele vya mpango:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Mfumo wa Vikwazo vya Kibinafsi
+## Mfumo wa Vikwazo vya Kibinafsi {#custom-limitations-system}
 
 Kufuatilia na kutekeleza mipaka ya rasilimali kwa tahadhari za matumizi:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter kwa `increment_item()`
+## BerlinDB Atomic Counter kwa `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 imeziongeza njia ya `increment_item()` kwenye darasa la `Query` la BerlinDB. Tumia njia hii kufanya ongezeko salama na la atomic kwenye safu za namba bila kuugua matatizo ya "read-modify-write races" — ni muhimu kwa kuhesabu idadi, kupima mipaka ya matumizi, na ukaguzi wa kupunguza kasi (rate-limiting) zinazotokea chini ya maombi mengi yanayotokea kwa wakati mmoja.
 
-### Muundo wa Njia (Method signature)
+### Muundo wa Njia (Method signature) {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 imeziongeza njia ya `increment_item()` kwenye darasa l
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Matumizi ya Msingi
+### Matumizi ya Msingi {#basic-usage}
 
 ```php
 // Ongeza 1 kwenye safu ya `api_calls` kwa ID ya ushirikishwaji 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Kufuatilia matumizi ya API kwa kila ushirikishwaji
+### Kufuatilia matumizi ya API kwa kila ushirikishwaji {#tracking-api-usage-per-membership}
 
 Mfumo wa vitendo wa kutekeleza mipaka ya kasi ya API kwa kila ushirikishwaji:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Kwa nini `increment_item()` badala ya `update_item()`
+### Kwa nini `increment_item()` badala ya `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Mbinu ya rahisi ya kusoma-kurekebisha-kuandika (read-modify-write) ni hatari chini ya maombi mengi yanayotokea kwa wakati mmoja:
 

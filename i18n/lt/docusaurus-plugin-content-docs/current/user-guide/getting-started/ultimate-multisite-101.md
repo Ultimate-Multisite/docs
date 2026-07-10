@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite yra WordPress Multisite pluginas, kuris leidžia jums siūlyti WaaS (Web as a Service) arba svetainius kaip paslaugą klientams. Prieš to, kad ieškotume, kaip Ultimate Multisite gali padėti jūsų įmonė ir klientams, turime gauti pagrindines žinias.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Labiausiai mes jau esame aušrį su standartiniu WordPress instalavimu. Jūs arba per hostingo tiekėjo kontrolinį panelį ją kuriate, arba, jei esate drąsiški, nustatote naują web serverį ir duomenų bazę, atsisiunčiate pagrindinius failus ir pradėjate įdiegimo procesą.
 
@@ -21,13 +21,13 @@ Esai, WordPress multisite galima pamatyti taip: Universitetas laikys vieną Word
 
 Aisime šį teigimą supagaupime ir pažiūrėsime į pagrindinius terminus, kurie yra ne tik Ultimate Multisite dokumentuose, bet ir visame WordPress bendruomenėje.
 
-### Tiekiena (The Network)
+### Tiekiena (The Network) {#the-network}
 
 WordPress kontekste multisite tinklas – tai vieta, kurje galima valdyti daug subsite'ų iš vieno dashboardo. Nors kūrimas multisite tinklo skiriasi tarp hostingų tiekėjų, galiausiai rezultatas dažnai yra kelios papildomos nurodytys `wp-config.php` failiui, kad WordPress suprastų, kad veikia šiuose režimu.
 
 Mėgstamiausiai rodo skirtingas skirtumas tarp multisite tinklo ir nepriklausomai įrengto WordPress instalacijos, kuriuos kitaip trumpai pateiksime.
 
-#### Subdomėnis vs. Subdirektorius (Subdomain vs. Subdirectory)
+#### Subdomėnis vs. Subdirektorius (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Viena iš pirmųjų spauskių, kurį turite priimti, yra tai, ar multisite instalacija veiks su _subdirektoriais_ ar _subdomėniais_. Ultimate Multisite veikia vienodai su visais pasirinkimais, bet tarp šių dviejų konfigūracijų yra kelios architektūros skirtingości.
 
@@ -43,7 +43,7 @@ _Subdomainai_ konfigūracijoje naudojimas laukimo (wildcard) SSL sertifikato yra
 
 Nors egzistuoja kitos variantai, jie dažnai yra apriboti ratione ir taikomybėje ir reikalauja papildomų konfigūracijų ir dėmesio dėl tinkamumo.
 
-#### Pluginai ir Temai
+#### Pluginai ir Temai {#plugins-and-themes}
 
 Kas WordPress suteikia, tai atimant, labiausiai iš klientų perspektyvos. Jei savame WordPress instaliuojami (stand-alone) paleidimoje administrator įdaro nepatikimą pluginą arba neprieina atnaujinimas, vienintelis ofioto ir žrtvų šis veiksmas yra jis pats. Tačiau jei administrator įdaro nepatikimą pluginą multisite instaliuojamame paleidime, tai skatina ofioto kiekvieno tinklo svetainės ofioto.
 
@@ -51,7 +51,7 @@ Dėl toliau, kai konfigūruojama kaip multisite WordPress, sistema pašalina adm
 
 Šiai laiku tinklo administratoras yra atsakingas už pluginų ir temų įdarymą tinkluose ir deleguoja teikumus naudoti šiais pluginais ir temais tinklo vietoms. Vietos administratorai negali įdaryti pluginus ir temas ar prieiti prie pluginų ir temų, kurie nėra nurodyti jų vietai.
 
-#### Vartotojai ir Administratorai
+#### Vartotojai ir Administratorai {#users-and-administrators}
 
 WordPress Multisite sistema, kurioje visos tinklo vietos dalina tą pačią duomenų bazę ir todėl dalina toliau vartotojus, vaidmenius ir galimybes. Labiausiai tinkamai tai vizualizuoti galima taip: visi vartotojai yra tinklo nariai, o ne kurio nors vieno vietos.
 
@@ -63,13 +63,13 @@ Atsekti viršutiniame pateiktame teigta, nors vartotojų paskyros atrodo susijus
 
 Nors, choć nie jest to obce pojęcie w systemach korporacyjnych, ta pojedyncza baza do rejestracji użytkowników i uwierzytelniania bywa trudna do zrozumienia dla osób zaznajomionych z samodzielnymi instalacjami WordPressa, gdzie zarządzanie użytkownikami jest nieco prostsze.
 
-#### Media
+#### Media {#media}
 
 Gdzie strony sieciowe dzielą jedną bazę danych w WordPress Multisite, utrzymują osobne ścieżki na systemie plików dla plików multimedialnych.
 
 Standardowa lokalizacja WordPressa (wp-content/uploads) pozostaje bez zmian; jednak jej ścieżka jest zmieniona tak, aby odzwierciedlała unikalny identyfikator strony sieciowej. W rezultacie pliki multimedialne dla strony sieciowej pojawiają się jako wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Wcześniej wspomnieliśmy o wyraźnych zalet konfiguracji _subdomain_ nad _subdirectory_, a oto one: ścieżki.
 
@@ -83,7 +83,7 @@ W konfiguracji _subdomain_ ta czynność nie jest konieczna, ponieważ każda st
 
 <!-- Zrzut ekranu niedostępny: ustawienia permalinków WordPressa dla konfiguracji subdomain -->
 
-#### Strony statyczne
+#### Strony statyczne {#static-pages}
 
 W konfiguracji _subdirectory_ potencjał kolizji nazw rozciąga się na statyczne strony jako główną stronę, a strony sieciowe dzielą tę samą ścieżkę.
 
@@ -93,7 +93,7 @@ Aby temu zapobiec, WordPress oferuje sposób na zablokowanie pewnych nazw stron,
 
 W konfiguracji _subdomain_ możliwość kolizji nazw jest łagodzona przez _subdomain_, ponieważ jest on unikalny dla strony sieciowej i nie ma żadnego związku z główną stroną.
 
-### Rejestracja
+### Rejestracja {#registration}
 
 W ustawieniach sieciowych WordPress Multisite dostępne są kilka nowych opcji rejestracji użytkowników, które pozwalają nowym i istniejącym użytkownikom na tworzenie stron.
 
@@ -111,7 +111,7 @@ Pavyzdžiui, kurį naudojate WordPress Multisite, galite nustatyti multisite ir 
 
 Jei tačiau multisite nurodytos tikslinės esmos ir tikslo yra pasiūlyti nepanašius tinklo paleidimus, kurie nėra sujungiami, beveik visada reikalinga jūsų įrengti vidurinčias ar papildomias įrankius (plugins), kad manipuliuotumė vartotojų vaidmenimis.
 
-### Domenas ir SSL
+### Domenas ir SSL {#domain-and-ssl}
 
 Rašykime apie WordPress Multisite instalaciją, kuri beveik nieko neįspūdi – Wordpress.com. Tai yra didžiausias pavyzdys WordPress multisite ir demonstruoja jo didelius įgalumus būti pritaikomiems ir suformuotiems atitinkamai tikslui.
 
@@ -125,11 +125,11 @@ Tinklo administratoriams tai sukuria papildomą sudėtingumą tiek domenų nusta
 
 Šiuo metu, nors WordPress Multisite suteikia būdą nurodyti, kad [www.anotherdomain.com](http://www.anotherdomain.com) būtų mapuotas į „site1“, tinklo administratoriam liksta su išorinejame DNS įrašų vadovavimu ir SSL sertifikatų įvedimu.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Suprantant skirtumą tarp nepriklausomai įdiegto WordPress instalacijos ir Multisite instalacijos, pamatome, kaip Ultimate Multisite yra geriausias įrankis teikti svetainius kaip paslaugą (Website as a Service).
 
-### Pradedimas
+### Pradedimas {#introduction}
 
 Ultimate Multisite yra jūsų švilpio mokslas, kai tai susiję su svetainės kaip paslauga (WaaS) kūrimu. Pameinkite Wix.com, Squarespace ir WordPress.com, o tada pamatykite savo paslaugą.
 
@@ -137,9 +137,9 @@ Ultimate Multisite yra jūsų švilpio mokslas, kai tai susiję su svetainės ka
 
 Sekančių sekcijos pamatome dažnus naudojimo atvejus ir reikiamas laikytis jais.
 
-### Naudojimo atvejai
+### Naudojimo atvejai {#use-cases}
 
-#### Atveitas 1: Agentūra
+#### Atveitas 1: Agentūra {#case-1-an-agency}
 
 Papildomai agentūros pagrindinės įgūdžiai lieka svetainų projektavimui, su aspektuose, tokiais kaip jų hostavimas ar marketingas, skiriami kaip papildomi paslaugos.
 
@@ -165,7 +165,7 @@ Temai suteiki panašias veiksmus, leidžiant, kad įsitikintų aktyvuoti ar pasl
 
 Agentai gausas ramybę su Ultimate Multisite, leidžiant ji atlikti tai, kas yra jų geriausia – kurti apgailtinus internetinius svetainis.
 
-#### Pavyzdys 2: Niche tiekėjas
+#### Pavyzdys 2: Niche tiekėjas {#case-2-niche-provider}
 
 Gali būti senas patarimas, kad „padary vieną dalyką ir padary jį geriai“. Daugeliui specialistų tai reiškia produktų ar paslaugų kūrimą apima vieną pagrindinę idėją.
 
@@ -179,7 +179,7 @@ Viena iš Ultimate Multisite inovacinių funkcijos yra šių šaltinių naudojim
 
 Nors reikalavimų prieldos abejonių konfigūracijos gali tapti tinkamos – jei pasirinksite _subdirectories_ ar _subdomain_ konfiguracijas, architektūros pasirinkimas bus tarp paprastos SSL sertifikato _subdirektoriui_ arba wildcard SSL sertifikato _subdomėnams_.
 
-#### atvejis 3: WordPress svetainės hostavimas
+#### atvejis 3: WordPress svetainės hostavimas {#case-3-wordpress-web-hosting}
 
 WordPress svetainų hostavimo yra beaps ir daug būdų, bet labai retai tai yra taip paties kaip pateikti klientui interneto vietą su preinstaluota versija WordPress. Tai ta paskui, kad reikia susidėti daugybę sprendimų ir atsirandimų, kad teiktumėte reikšmingą paslaugą.
 
@@ -191,11 +191,11 @@ Programatoriams, kurie nori integruoti su Ultimate Multisite, šios sprendimo da
 
 Be priklausomybės nuo daugybos vidurinių pluginų ir licencijų, Ultimate Multisite teikia funkcionaliai bogtą ir lygį su kitais paslaugomis (pvz., Wix, Squarespace, WordPress.com ir kiti).
 
-### Architektūros atkreipimai
+### Architektūros atkreipimai {#architecture-considerations}
 
 Nors tai nėra visapriešingas gidas, šie dalykai gali būti nurodymai tinkamų technologijų pasirinkimui, kurios padės palaikyti Ultimate Multisite įdėjimą.
 
-#### Bendras vs. Dedikuotas hostavimas
+#### Bendras vs. Dedikuotas hostavimas {#shared-vs-dedicated-hosting}
 
 Štai, nevis kas hostingų tiek sąnaudos ir kai kurie praktikuoja ekstremalų serverų padidėjimą. Nulieti kainos hostingai tipicamente generuoja pajamos maksimalizuojant serverų padidėjimą. Taigi jūsų Ultimate Multisite instalacija gali būti tik vienas iš šim vietų tą pačiame servere.
 
@@ -209,7 +209,7 @@ Ultimate Multisite žinoma, kad veikia su numeriu geriausiais hostingų tiekėja
 
 Jei norite skaičių su tinkamais tiekėjais ir visus nustatymo instrukcijas, prašome peržiūrėti dokumentaciją „Tinkami tiekėjai“ (Compatible Providers).
 
-#### Naudojimo atsižvelginkai
+#### Naudojimo atsižvelginkai {#performance-considerations}
 
 Ultimate Multisite nėra langesnė programė, tai tikrai greita. Tačiau ji veikia tik tiek, kiek yra geriai pagrindinė programė ir infrastruktūra, o gali naudoti tik tą, ką turi prieigą.
 
@@ -227,7 +227,7 @@ Dėl to dauguma tinklo administratorų naudoja front-end caching solutions ir co
 
 Ultimate Multisite sujungia sofistikuotą Cloudflare add-on, leidžiantį tinklo administratoriams pateikti savo instalacijas už Cloudflare ir naudoti ne tik jo caching galimybes, o dar DNS hostavimą, SSL sertifikatus ir saugumo mechanizmus.
 
-#### Sauga (Backups)
+#### Sauga (Backups) {#backups}
 
 Galite pasirašyti 50 žmonėms dėl patarimų apie saugumą ir gauti 50 skirtingus puslapių strategijas. Apsakata yra: tai priklauso nuo situacijos.
 
@@ -237,7 +237,7 @@ Nėra suverbiaus, kad rezervai yra reikalinga ir kad beveik neįmanoma, kad tai 
 
 Su šiuo supratimu, kaip atlikti rezervus ir kas yra geriausias jūsų aplinkve, dideliai priklauso nuo jūsų reikalavimų ir hostingu tiekėjo galimybes sužinoti šiuos reikalavimus. Tačiau, nuo labiausiai mokingimo iki labiausiai nekomokingimo, pateiktos žemiau esančios variantai gali suteikti ką nors nurodymų.
 
-#### Snapshots (Kopijos būklės)
+#### Snapshots (Kopijos būklės) {#snapshots}
 
 Snapshots yra rezervų „silvė buviena“, nes jie yra lengvi, nereiklingi (kol jūs ne norite atskirti) ir „darbo be problemų“. Tačiau jie reikalauja jūsų tiekėjo pagalbos ir daugeliui laika tinka tik jei turite VPS (Virtual Private Server) arba panašią įrenginį. Visiame mūsų „Sutinkami tiekėjai“ dokumente pateikiami kelešiai, kurie siūlo rezervus, reikalaujančius jokių didesnių tinklo administratoriaus intervencijų ar atsirandamos dėmesio.
 
@@ -245,7 +245,7 @@ Tradiciškai, jei tradiciniai backupai taisto į failus ir duomenų bazas, snaps
 
 Snapshotai gali sukelti papildomą kainą su hostingu tiekėju, bet tai yra apsaugos polisa prieš nuostatas.
 
-#### Išorinis skriptai
+#### Išorinis skriptai {#external-scripts}
 
 Atsirasta daug išorinių skriptų ir sprendimų backupu WordPress ir MySQL resursų, kurie būtų puikiai tinka Ultimate Multisite, nes tai yra WordPress pluginas, kuris naudoja WordPress filesystemą ir duomenų bazę. Taigi, sprendimas, kuris backupuota WordPress svetainų reikalavimus apima Ultimate Multisite reikalavimus.
 
@@ -253,7 +253,7 @@ Mes negalime rekomendoti vieną skriptą kito, bet mūsų bendras patarimas – 
 
 Nuožymėti, kad šie skriptai, veikiančiame, bus padaryti sistemines įkrovos didesnės, kurią reikia atsižvelgti.
 
-#### Pluginai
+#### Pluginai {#plugins}
 
 Labai retas yra problemų WordPress, kurios negalima išspręsti pluginu, o jei valdyti išorinius skriptus jums nepatinka, galbūt pluginas yra kitas geriausias variantas.
 
@@ -261,7 +261,7 @@ Nors, nors plėtiniai skiriasi savo galimybėmis ir funkcijomis, bet jie visada 
 
 Pasirinkdami savo plėtinaį, atkreipkite dėmesį, ar jis yra multisite (*multisite aware*). Dėl jo veikimo natūros, kol saugimas vyksta, galite tikėtis trumpalaikios įsivaikalybos (load) serverio, kol procesas bus užbaigtas.
 
-#### Domenas ir SSL
+#### Domenas ir SSL {#domain-and-ssl-1}
 
 Daug buvo diskutojama apie domenų naudojimą multisite _subdomain_ režime. Nariestai universali sp ir tinklo administratoriams yra naudoti wildcard DNS įrašus.
 
@@ -285,7 +285,7 @@ Daugeliui vartotojų, Cloudflare naudojimas yra lengva variantas. Vartotojui vis
 
 Iš šio pusės reikia ieškoti alternatyvių sprendimų, todėl Ultimate Multisite rekomenduojasi sąrašas sudergtių tiekėjų (Compatible Providers). Tai ta, nes DNS ir SSL nustatymo procesas gali būti nepatogus. Tačiau su Ultimate Multisite integracija su šiais tiekėjais sudėtingumas yra daug mažesni, o procedūra yra automatizuota.
 
-#### Pluginai
+#### Pluginai {#plugins-1}
 
 Jau tikėtina, jums reikės papildomų pluginų, kad pateiktumėte funkcijas savo klientams ar tinklo svetainėms. Ar visi pluginai veikia su WordPress Multisite ir Ultimate Multisite? Tai priklauso nuo situacijos.
 

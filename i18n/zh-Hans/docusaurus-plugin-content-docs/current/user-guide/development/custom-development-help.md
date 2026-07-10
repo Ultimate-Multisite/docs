@@ -1,52 +1,52 @@
 ---
 title: 自定义开发帮助
 sidebar_position: 10
-_i18n_hash: 993698d2931dd695962b481db2b9cc14
+_i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# 如何从 Codeable 获取定制开发帮助？
+# 如何从 Codeable 获取定制开发帮助？ {#how-to-get-custom-development-help-from-codeable}
 
-有时，我们确实需要一些出色的定制，以使我们的网络流程完全符合我们的期望。如果你正在寻找这样的帮助，我们推荐 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)，一个可以找到拥有 Ultimate Multisite 专业经验的开发者的地方。
+有时，我们确实需要一些出色的定制，让我们的网络流程完全按照我们想要的方式运行。如果这正是你在寻找的内容，我们推荐 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)，在那里你可以找到具备 Ultimate Multisite 专业知识的经验丰富的开发者。
 
-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 是一个将客户与合格的 WordPress 自由职业开发者连接的平台，能够处理任何规模的项目。他们有一个细致的申请流程，以确保你与专门符合你想要的任务的专家匹配。
+[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 是一个将客户与合格的 WordPress 自由职业开发者连接起来的平台，能够处理任何规模的项目。他们有一套严谨的申请流程，以确保为你匹配到专门符合你所设想任务要求的专家。
 
-### 如何在 Codeable 创建项目？
+### 如何在 Codeable 创建项目？ {#how-to-create-a-project-in-codeable}
 
-首先，访问 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 并点击 **Start a Project** 按钮。
+首先，前往 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)，然后点击 **Start a Project** 按钮。
 
-<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
+<!-- 截图不可用：Codeable 主页，带有 Start a Project 按钮 -->
 
-现在，要提交项目，请在左侧点击 **Start a Project**。
+现在，要提交项目，请点击左侧的 **Start a Project**。
 
-<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
+<!-- 截图不可用：Codeable 项目提交页面，带有 Start a Project 选项 -->
 
 在 “I need help with” 中，选择 **Customizing**：
 
-<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
+<!-- 截图不可用：Codeable 项目表单，已选择 Customizing -->
 
 在 “My” 中，选择 **Plugin**：
 
-<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
+<!-- 截图不可用：Codeable 项目表单，已选择 Plugin -->
 
 然后点击 **Continue** 按钮。
 
-<!-- Screenshot unavailable: Codeable project form Continue button -->
+<!-- 截图不可用：Codeable 项目表单 Continue 按钮 -->
 
-现在，是时候以最佳方式描述你的项目和需求了。尽量提供尽可能多的信息！
+现在，是时候尽可能清楚地描述你的项目和需求了。请尽量提供尽可能多的信息！
 
-<!-- Screenshot unavailable: Codeable project description form -->
+<!-- 截图不可用：Codeable 项目描述表单 -->
 
-回答以下问题以帮助确定价格。
+回答以下问题，以帮助进行定价。
 
-<!-- Screenshot unavailable: Codeable project pricing questions -->
+<!-- 截图不可用：Codeable 项目定价问题 -->
 
-随后，如果你还没有 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 账户，请创建一个并点击 **Publish My Project** 按钮。
+之后，如果你还没有 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 账号，请创建一个，然后点击 **Publish My Project** 按钮。
 
-<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
+<!-- 截图不可用：Codeable 账号创建和 Publish My Project 按钮 -->
 
-一旦你发布了你的 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 项目，平台将把你与符合项目所需技能的开发者连接起来。
+发布你的 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) 项目后，该平台会将你与符合项目所需技能组合的开发者连接起来。
 
-此流程将帮助你找到适合你工作的合适人选，他们拥有 WordPress 和 Ultimate Multisite 的经验！
+此流程将帮助你为工作找到合适的人选，对方具备 WordPress 和 Ultimate Multisite 经验！
 
-Codeable 的最低费率为每小时 70–120 美元。估算会根据工作范围、复杂度和项目紧急程度而变化。
+Codeable 的最低费率为每小时 70–120 美元。预估费用会根据项目的工作范围、复杂度和紧急程度而变化。
 
-一旦你得到估算，你就可以雇佣最符合你需求的开发者，并一起启动项目！
+收到预估后，你就可以聘请最符合你需求的开发者，并一起启动你的项目！

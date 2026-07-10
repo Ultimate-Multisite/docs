@@ -3,13 +3,13 @@ title: Ho hlola sebope la tšhobo
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Ho Fana Le Codes Le Discount (v2)
+# Ho Fana Le Codes Le Discount (v2) {#creating-discount-codes-v2}
 
 _**LIPOTSE LE KOTSE: Le tsela le tla fana ka sefaka sa Ultimate Multisite 2.x.**_
 
 Le Ultimate Multisite, u ka fana ka sefaka sa discount codes ho ba leba batho ba hau sefaka sa ho tsamaea (subscriptions). Le ho fana ka ho faka ke le lina bo lebotse!
 
-## Ho Faka le Ho Hlola Discount Codes
+## Ho Faka le Ho Hlola Discount Codes {#creating-and-editing-discount-codes}
 
 Ho faka kapa ho hlola discount code, u tla fihla **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Code ea ho fana o tla ba le mofuta oa hau, le ho fetola haholo, u ka tsamaea ho 
 
 ###
 
-### Ho sebelisa URL Parameters:
+### Ho sebelisa URL Parameters: {#using-url-parameters}
 
 Ha u batla ho fetola litlhahiselo tsa hau tsa mofuta (pricing tables) kapa ho hlalosa page ea code ea ho fana e ntle ho website ea hau le ho tsoela code ea ho fana ka checkout form ea hau ka ho fetola URL parameters.
 

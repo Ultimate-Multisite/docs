@@ -1,46 +1,46 @@
 ---
 title: Агляд REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Адвязка REST API
+# Даведнік REST API {#rest-api-reference}
 
-## Асноўная канфігурацыя
+## Базавая канфігурацыя {#base-configuration}
 
-**Асноўны URL:** `{site_url}/wp-json/wu/v2/`
-**Аўтэнтычныя матэрыялы:** API Key і Secret (HTTP Basic Auth або Параметры URL)
+**Базавы URL:** `{site_url}/wp-json/wu/v2/`
+**Аўтэнтыфікацыя:** ключ API і сакрэт (HTTP Basic Auth або параметры URL)
 
-## Аўтэнтычныя матэрыялы
+## Аўтэнтыфікацыя {#authentication}
 
-### Уключэнне API
+### Уключыць API {#enable-api}
 ```php
-// Уключэнне API ў настаўленнік Ultimate Multisite або праграмна
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Атримання API-дадзеных
+### Атрымаць уліковыя даныя API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методы аўтэнтычвання
+### Метады аўтэнтыфікацыі {#authentication-methods}
 
-**HTTP Basic Auth (Рэкамендуецца):**
+**HTTP Basic Auth (рэкамендуецца):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**Папараметры URL:**
+**Параметры URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Асноўныя адрэсы (Endpoints)
+## Асноўныя канцавыя пункты {#core-endpoints}
 
-### 1. API для Кліентаў (Customers API)
+### 1. API кліентаў {#1-customers-api}
 
-**Асноўны маршрут:** `/customers`
+**Базавы маршрут:** `/customers`
 
 **Атрымаць усіх кліентаў**
 ```http
@@ -73,18 +73,18 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Дазначэнні для VIP-кліента"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Умаліць кліента**
+**Выдаліць кліента**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API для Сайтаў (Sites API)
+### 2. API сайтаў {#2-sites-api}
 
-**Асноўны маршрут:** `/sites`
+**Базавы маршрут:** `/sites`
 
 **Стварыць сайт**
 ```http
@@ -96,15 +96,15 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Май новы сайт",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API для Членства (Memberships API)
+### 3. API членстваў {#3-memberships-api}
 
-**Асноўны маршрут:** `/memberships`
+**Базавы маршрут:** `/memberships`
 
 **Стварыць членства**
 ```http
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. API для Практактаў (Products API)
+### 4. API прадуктаў {#4-products-api}
 
-**Асноўны маршрут:** `/products`
+**Базавы маршрут:** `/products`
 
-**Атрымаць усе практыкаты**
+**Атрымаць усе прадукты**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API для Плацёжаў (Payments API)
+### 5. API плацяжоў {#5-payments-api}
 
-**Асноўны маршрут:** `/payments`
+**Базавы маршрут:** `/payments`
 
 **Стварыць плацёж**
 ```http
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API для Доменных імен (Domains API)
+### 6. API даменаў {#6-domains-api}
 
-**Асноўны маршрут:** `/domains`
+**Базавы маршрут:** `/domains`
 
-**Маппінг домена**
+**Прывязаць дамен**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Адрэс рэгіস্ট্রацыі (Registration Endpoint)
+## Канцавы пункт рэгістрацыі {#registration-endpoint}
 
-Адрэс `/register` прадугледжвае паўнавартасны працэс рэгіস্ট্রцыі/плацёжа:
+Канцавы пункт `/register` забяспечвае поўны працэс афармлення замовы/рэгістрацыі:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Май новы сайт",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Адказ на памылкі (Error Responses)
+## Канцавыя пункты суверэннага арандатара {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 дадае ахоп REST для суверэннага арандатара для інтэграцый, якія прадастаўляюць, правяраюць або верыфікуюць ізаляваных арандатараў.
+
+Дакладная карысная нагрузка запыту залежыць ад уключанай магчымасці хоста, але інтэграцыі павінны чакаць гэтыя групы канцавых пунктаў:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Выкарыстоўвайце канцавы пункт bootstrap, каб падрыхтаваць рэестр арандатара, базу даных, файлавую сістэму і стан маршрутызацыі. Выкарыстоўвайце канцавыя пункты стану міграцыі і верыфікацыі перад пераключэннем вытворчага трафіку. Выкарыстоўвайце канцавы пункт выдалення для суверэннага дэмантажу, каб уліковыя даныя базы даных былі выдалены праз працэс ачысткі дадатку.
+
+Тыповыя адказы стану міграцыі ўключаюць:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Разглядайце `ready: false` як блакіроўку перад запускам. Праверце падрабязнасці верыфікацыі, выпраўце прывязку хоста базы даных, чаргу, прадастаўленне карыстальнікаў або праблему маршрутызацыі, а потым паўтарыце верыфікацыю.
+
+## Адказы з памылкамі {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Некандыцыйная значэнне параметра",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Некандыцыйны фармат email"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Пагістоўка і фільтраванне
+## Пагінацыя і фільтрацыя {#pagination-and-filtering}
 
-**Папараметры zapўту:**
+**Параметры запыту:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Паўторыя параметры:
-- `per_page` - Прымаўныя па ўстані (па умолчанию: 20, максімум: 100)
-- `page` - Номер пастрыні
-- `search` - Тэкст пошуку
-- `orderby` - Пале для ўпарадкавання
-- `order` - Накірунненне ўпарадкавання (asc/desc)
-- `status` - Фільтраванне па статусе
-- `date_created` - Фільтраванне па дыяпазоне дат
+Агульныя параметры:
+- `per_page` - Элементы на старонку (прадвызначана: 20, макс.: 100)
+- `page` - Нумар старонкі
+- `search` - Пошукавы тэрмін
+- `orderby` - Поле сартавання
+- `order` - Напрамак сартавання (asc/desc)
+- `status` - Фільтраваць паводле стану
+- `date_created` - Фільтраваць паводле дыяпазону дат

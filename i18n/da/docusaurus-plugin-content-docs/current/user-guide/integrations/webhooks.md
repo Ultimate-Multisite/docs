@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Et første blik på webhooks (v2)
+# Et første blik på webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**OPMÆRKSOM: Bemærk venligst, at denne funktion eller artikel er til avancerede brugere.**_
 
@@ -11,7 +11,7 @@ En **webhook** er en måde for en app eller software som Ultimate Multisite at g
 
 Dette er nyttigt, hvis du skal integrere eller sende visse data fra Ultimate Multisite til et andet CRM eller system hver gang en begivenhed udløses. For eksempel skal du sende brugerens navn og e-mailadresse til en mailingliste hver gang en ny brugerkonto oprettes.
 
-## Sådan opretter du en webhook
+## Sådan opretter du en webhook {#how-to-create-a-webhook}
 
 For at oprette en webhook skal du gå til dit netværksadministrator dashboard. Klik på **Ultimate Multisite > Webhooks > Tilføj ny webhook**.
 

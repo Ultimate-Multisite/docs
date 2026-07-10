@@ -1,127 +1,140 @@
 ---
-title: 客戶帳戶頁面
+title: 客戶 Account 頁面
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# 您客戶的帳戶頁面 (v2)
+# 你客戶的 Account 頁面（v2） {#your-clients-account-page-v2}
 
-_**重要提示：本文適用於 Ultimate Multisite 2.x 版本。**_
+_**重要注意事項：本文適用於 Ultimate Multisite 版本 2.x。**_
 
-當客戶在您的網路上訂閱方案後，他們可以存取網站及其控制台，其中包含付款、會員資格、網域、方案限制等重要資訊...
+當客戶訂閱你網路上的方案時，他們會取得一個網站及其 Dashboard 的存取權，其中包含關於付款、會員資格、網域、方案限制等重要資訊……
 
-在本教學中，我們將帶您瀏覽客戶的帳戶頁面，讓您了解客戶可以在其中查看和執行的操作。
+在本教學中，我們將引導你了解客戶的 Account 頁面，你也會看到客戶可以在其中查看與執行的事項。
 
-## 帳戶頁面
+## Account 頁面 {#the-account-page}
 
-客戶可以在控制台中點擊 **Account** 來存取帳戶頁面。
+Account 頁面可透過在客戶的 Dashboard 中點擊 **Account** 來存取。
 
-![客戶控制台中的 Account 選單](/img/admin/dashboard.png)
+![客戶 Dashboard 中的 Account 選單](/img/account-page/account-menu.png)
 
-![客戶帳戶頁面總覽](/img/admin/dashboard.png)
+在主權租戶網路上，Ultimate Multisite v2.13.0 會將這個客戶管理體驗保留在主網站上。如果客戶從主權租戶開啟 Account、結帳、帳務、發票、網站管理、範本切換或網域對應動作，該動作會指回主網站客戶面板，讓網路帳務與會員資格記錄維持權威性。
 
-客戶點擊後，會看到會員資格、帳單地址、發票、網域、網站限制的概覽，如果您的網路允許，他們還可以更改 **Site Template**。
+當客戶來自主權租戶時，主網站客戶面板可以包含返回租戶網站的連結。只有在 Ultimate Multisite 能將返回目標驗證為客戶的其中一個網站時，才會顯示返回連結，這可防止任意重新導向，同時保留租戶工作流程。
 
-他們也可以將會員資格變更為其他方案，或購買您提供的其他套件或服務。讓我們逐一了解各個區塊。
+![客戶 Account 頁面概覽](/img/account-page/overview.png)
 
-### 會員資格概覽：
+客戶點擊後，將會看到其會員資格、帳單地址、發票、網域、網站限制的概覽，也能變更 ****網站範本**（如果你的網路允許）**。
 
-客戶網站名稱下方的第一個區塊顯示了目前方案的概覽，以及隨方案購買的服務/套件。這個區塊還會顯示會員編號、首次付款金額、方案及任何服務/套件的費用，以及此會員資格的帳單次數。他們也可以看到會員資格的狀態是 **Active**、**Expired** 還是 **Canceled**。
+他們也可以將會員資格變更為另一個方案，或購買你提供的其他套件或服務。讓我們逐一看看各個區段。
 
-![顯示方案、金額和帳單詳情的會員資格概覽](/img/admin/memberships-list.png)
+### 你的會員資格概覽： {#your-membership-overview}
 
-在這個區塊下方，您的客戶可以看到 **About This Site** 和 **Site Limits** 區塊。這些區塊會顯示方案的所有限制：磁碟空間、文章數、頁面數、訪問次數等... 這些限制可以在 **Ultimate Multisite > Products** 的各個方案頁面中設定。
+位於客戶網站名稱正下方的第一個區塊，會顯示他們目前方案以及隨方案購買的服務／套件概覽。該區塊也會顯示會員資格編號、最初支付的金額、方案與任何服務／套件的費用，以及此會員資格已被收費的次數。他們也可以看到會員資格是 **有效**、**已過期** 或 **已取消**。
 
-![顯示方案限制的 About This Site 和 Site Limits 區塊](/img/admin/dashboard.png)
+![顯示方案、金額與帳務詳細資料的會員資格概覽](/img/account-page/membership-card.png)
 
-在 **Your Membership** 右側，客戶可以點擊 **Change**。這會顯示所有可用的方案和套件/服務。如果他們選擇其他方案，新方案的限制將取代目前會員資格的限制——無論是降級還是升級。
+在此區塊正下方，客戶可以看到 **關於此網站** 與 **網站限制** 區塊。這些區塊會向他們顯示其方案包含的所有限制：磁碟空間、文章、頁面、造訪次數等……這些限制可在 **Ultimate Multisite > 產品** 的每個方案頁面上設定。
 
-如果您的客戶選擇為目前的會員資格購買套件或服務（例如更多磁碟空間或訪問次數），目前的會員資格不會改變，只會新增購買的套件。
+![顯示方案限制的關於此網站與網站限制區塊](/img/account-page/site-limits.png)
 
-請注意，在這個會員資格變更頁面無法使用折扣碼。如果客戶在首次購買會員資格時使用了折扣碼，該折扣碼也會套用到新的會員資格。
+在 **你的會員資格** 右側，客戶可以點擊 **變更**。這會向他們顯示所有可用的方案與套件／服務。如果他們選擇另一個方案，該方案的限制將會取代目前會員資格的限制——無論他們是降級或升級。
 
-### 更新帳單地址：
+現在，如果你的客戶選擇為目前會員資格購買套件或服務——例如更多磁碟空間或造訪次數——目前的會員資格不會被變更，只會將新的套件加入其中。
 
-在帳戶頁面上，您的客戶也可以更新帳單地址。他們只需點擊 _Billing Address_ 旁邊的 **Update** 即可。
+請注意，優惠券代碼無法在此會員資格變更頁面加入。如果客戶在首次購買會員資格時使用了優惠券代碼，該代碼也會套用到這個新的會員資格。
 
-![帳單地址區塊與 Update 按鈕](/img/admin/customers-list.png)
+### 更新帳單地址： {#updating-the-billing-address}
 
-客戶會看到一個新視窗。他們只需填入新地址並點擊 _Save Changes_ 即可。
+在 Account 頁面上，你的客戶也可以更新他們的帳單地址。他們只需要點擊 _帳單地址_ 旁邊的 **更新**。
 
-![更新帳單地址表單](/img/admin/customers-list.png)
+![含有更新按鈕的帳單地址區段](/img/account-page/billing-address.png)
 
-### 更換網站模板：
+客戶會看到一個新視窗。他只需要填入新地址並點擊 _儲存變更_。
 
-要允許客戶更換網站模板，您需要前往 **Ultimate Multisite > Settings > Sites** 並開啟 **Allow Template Switching** 選項。
+![更新帳單地址表單](/img/account-page/billing-address-form.png)
 
-此外，在 **Ultimate Multisite > Products** 中選擇您的方案，前往 **Site Templates** 分頁。確保 **Allow Site Templates** 選項已開啟，且在 **Site Template Selection Mode** 中選擇了 **Choose Available Site Templates** 選項。
+### 變更網站範本： {#changing-the-site-template}
 
-![產品網站模板分頁與模板選擇模式](/img/config/product-site-templates.png)
+若要允許客戶變更他們的網站範本，你需要前往 **Ultimate Multisite > 設定 > 網站**，並開啟 **允許範本切換** 選項。
 
-您可以看到網站上所有可用的網站模板。選擇哪些模板要開放給此方案的訂閱客戶使用，哪些不開放。請注意，此選項也會影響結帳表單，因此任何設為 **Not Available** 的模板都不會出現在此方案的註冊頁面上。
+另外，在 **Ultimate Multisite > 產品** 中，選取你的方案並前往 **網站範本** 分頁。確認 **允許網站範本** 選項已開啟，且在 **網站範本選擇模式** 中，已選取 **選擇可用的網站範本** 選項。
 
-現在您的客戶可以在帳戶頁面中點擊 **Change Site Template**。
+![含範本選擇模式的產品網站範本分頁](/img/config/product-site-templates.png)
 
-![帳戶頁面上的 Change Site Template 按鈕](/img/admin/dashboard.png)  
-客戶會看到此方案所有可用的網站模板列表。
+你將能看到你網站上所有可用的網站範本。選擇哪些要提供給訂閱此方案的客戶使用，以及哪些不提供使用。請注意，這些選項也會影響結帳表單，因此任何被選為 **不可用** 的範本，都不會出現在此方案的註冊頁面上。
 
-![此方案可用的網站模板列表](/img/config/site-templates-list.png)
+現在，你的客戶可以在他們的 Account 頁面中點擊 **變更網站範本**。
 
-選擇要更換的模板後，系統會請他們確認變更。
+![Account 頁面上的變更網站範本按鈕](/img/account-page/change-template-button.png)
 
-![網站模板切換確認對話框](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 會顯示重新設計的範本切換面板。該面板會以 **目前範本卡片** 開始，讓客戶在選擇替代範本前，可以看到目前啟用的範本。
 
-開啟確認選項並點擊 **Process Switch** 後，新的網站模板就會套用到客戶的網站上。
+當客戶檢視選項時，可用網站範本的固定網格會保持可見。這有助於他們比較其方案允許的範本，同時不會失去對目前選擇的掌握。
 
-### 新增自訂網域：
+![此方案可用的網站範本清單](/img/config/site-templates-list.png)
 
-您的客戶也可以在帳戶頁面為此方案新增自訂網域。要允許客戶使用自訂網域，請前往 **Ultimate Multisite > Settings > Domain Mapping**。
+選擇他們想切換到的範本後，系統會要求他們確認變更。
 
-開啟 **Enable Domain Mapping** 選項。這會允許您的客戶在網路層級使用自訂網域。
+![網站範本切換確認對話框](/img/account-page/template-switch-confirm.png)
 
-別忘了也要檢查產品層級是否啟用了網域對應——因為您可以限制特定產品不允許客戶使用自訂網域。
+開啟確認並點擊 **處理切換** 後，新的網站範本將會套用到你客戶的網站上。
 
-前往 **Ultimate Multisite > Products**。選擇您要設定的方案，進入 **Custom Domains** 分頁。開啟 **Allow Custom Domains** 選項。
+客戶也可以在需要將網站重設回目前指派的範本時，從此面板使用 **重設目前範本**。就像切換到另一個範本一樣，重設範本可能會覆寫網站內容，因此客戶只有在了解重設動作時才應確認。
 
-![Custom Domains 分頁與 Allow Custom Domains 開關](/img/config/product-custom-domains.png)
+### 新增自訂網域： {#adding-custom-domains}
 
-這會允許所有訂閱此特定方案的客戶使用自訂網域。現在，在帳戶頁面上，您的客戶可以點擊 **Add Domain** 來新增自訂網域。
+你的客戶也可以在他們的 Account 頁面為此方案新增自訂網域。若要允許你的客戶使用自訂網域，請前往 **Ultimate Multisite > 設定 >** **網域對應**。
 
-![帳戶頁面上的 Add Domain 按鈕](/img/admin/domains-list.png)
+開啟 **啟用網域對應** 選項。這將允許你的客戶在網路層級使用自訂網域。
 
-第一個開啟的視窗會向客戶顯示說明訊息，指導他們如何更新 DNS 記錄，以便自訂網域能在您的網路上正常運作。
+別忘了也檢查是否已針對產品啟用網域對應，因為你可以限制某個產品不允許客戶使用自訂網域。
 
-![新增自訂網域時顯示的 DNS 說明](/img/admin/domains-list.png)
+前往 **Ultimate Multisite > 產品**。選擇你要的方案，並前往 **自訂網域** 分頁。開啟 **允許自訂網域** 選項。
 
-您可以在 **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions** 中編輯此訊息。
+![含有允許自訂網域切換開關的自訂網域分頁](/img/config/product-custom-domains.png)
 
-![Domain Mapping 中的 Add New Domain Instructions 設定](/img/config/settings-domain-mapping.png)
+這將允許所有訂閱此特定方案的客戶使用自訂網域。現在，在 Account 頁面上，你的客戶可以點擊 **新增網域** 來新增自訂網域。
 
-點擊 **Next Step** 後，客戶可以輸入自訂網域名稱，並選擇是否將此網域設為主要網域。請注意，客戶可以為網站使用多個自訂網域，因此他們可以選擇哪一個作為主要網域。
+![Account 頁面上的新增網域按鈕](/img/account-page/add-domain-button.png)
 
-![自訂網域名稱輸入與主要網域選項](/img/admin/domains-list.png)
+開啟的第一個視窗會向你的客戶顯示一則訊息，指示他們如何更新 DNS 記錄，以便讓此自訂網域在你的網路上運作。
 
-點擊 **Add Domain** 後，網域就會新增到客戶的帳戶中。他們現在只需在網域註冊商那裡變更此自訂網域的 DNS 記錄即可。
+![新增自訂網域時顯示的 DNS 指示](/img/account-page/add-domain-dns.png)
 
-### 變更密碼：
+此訊息可以由你在 **Ultimate Multisite > 設定 > 網域對應 > 新增網域指示** 中編輯。
 
-在帳戶控制台中，客戶也可以點擊 **Change Password** 來變更密碼。
+![網域對應中的新增網域指示設定](/img/config/settings-domain-mapping.png)
 
-![帳戶頁面上的 Change Password 按鈕](/img/admin/dashboard.png)
+以下是網域對應設定頁面的完整檢視：
 
-這會顯示一個新視窗，客戶需要填入目前的密碼，然後輸入要使用的新密碼。
+![網域對應設定完整頁面](/img/config/settings-domain-mapping-full.png)
 
-![包含目前密碼和新密碼欄位的變更密碼表單](/img/admin/dashboard.png)
+點擊 **下一步** 後，你的客戶可以新增他們的自訂網域名稱，並選擇此自訂網域是否要成為主要網域。請注意，你的客戶可以為他們的網站使用多個自訂網域，因此他們可以選擇哪一個作為主要網域。
 
-### 危險區域：
+![自訂網域名稱輸入與主要網域選項](/img/account-page/add-domain-primary.png)
 
-我們還有兩個顯示在 **Danger Zone** 部分的選項：**Delete Site** 和 **Delete Account**。它們之所以放在危險區域，是因為這兩個操作都無法復原。如果客戶刪除了網站或帳戶，就無法恢復。
+點擊 **新增網域** 後，該網域會被新增到你客戶的 Account。接下來他們只需要在其網域註冊商處變更此自訂網域的 DNS 記錄。
 
-![包含 Delete Site 和 Delete Account 選項的 Danger Zone](/img/admin/dashboard.png)
+### 變更密碼： {#changing-password}
 
-如果客戶點擊這兩個選項中的任何一個，會看到一個視窗，需要開啟刪除網站或帳戶的確認選項，並會收到此操作無法復原的警告。
+在 Account Dashboard 中，你的客戶也可以點擊 **變更密碼** 來變更他們的密碼。
 
-![Delete Site 確認對話框](/img/admin/dashboard.png)
+![Account 頁面上的變更密碼按鈕](/img/account-page/change-password-button.png)
 
-![Delete Account 確認對話框](/img/admin/dashboard.png)
+這會顯示一個新視窗，你的客戶需要填寫目前密碼，然後填寫他們想使用的新密碼。
 
-如果他們刪除網站，帳戶和會員資格仍會保留。他們只會失去網站上的所有內容。如果他們刪除帳戶，所有網站、會員資格和此帳戶的相關資訊都會遺失。
+![含有目前密碼與新密碼欄位的變更密碼表單](/img/account-page/change-password-form.png)
+
+### 危險區域： {#danger-zone}
+
+我們也有兩個顯示在 **危險區域** 部分的選項：**刪除網站** 和 **刪除 Account**。它們都位於危險區域部分，因為這兩個動作無法復原。如果你的客戶刪除他們的網站或 Account，他們將無法恢復。
+
+![包含刪除網站與刪除 Account 選項的危險區域](/img/account-page/danger-zone.png)
+
+如果你的客戶點擊這兩個選項中的任何一個，他們會看到一個視窗，需要開啟移除網站或 Account 的選項，並會被警告此動作無法復原。
+
+![刪除網站確認對話框](/img/account-page/delete-site-confirm.png)
+
+![刪除 Account 確認對話框](/img/account-page/delete-account-confirm.png)
+
+如果他們刪除網站，他們的 Account 和會員資格仍不會受到影響。他們只會失去網站上的所有內容。如果他們刪除 Account，所有與此 Account 相關的網站、會員資格和資訊都會遺失。

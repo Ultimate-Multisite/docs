@@ -1,152 +1,150 @@
 ---
 title: Plantilles de lloc
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Templates de Site (v2)
+# Plantilles de lloc (v2) {#site-templates-v2}
 
-_**NOTA: Aquest article es refereix a la versió 2.x d'Ultimate Multisite. Si utilitzeu la versió 1.x,**_ **consulti aquest article** _**.**_
+_**NOTA: Aquest article fa referència a Ultimate Multisite versió 2.x. Si feu servir la versió 1.x,**_ **vegeu aquest article** _**.**_
 
-El nostre objectiu quan creem una xarxa premium amb Ultimate Multisite és automatitzar el màxim nombre de processos possible, alhora que proporcionem als nostres clients flexibilitat i diferents opcions de selecció quan creen els seus llocs web. Una manera fàcil de aconseguir aquest equilibri és utilitzar la funcionalitat de Site Templates (Templates de Site) d'Ultimate Multisite.
+El nostre objectiu en crear una xarxa premium amb Ultimate Multisite és automatitzar tants processos com sigui possible, alhora que oferim als nostres clients flexibilitat i diferents opcions per triar quan creen els seus llocs web. Una manera senzilla d’aconseguir aquest equilibri és fer ús de la funcionalitat de plantilles de lloc d’Ultimate Multisite.
 
-## Què és un Site Template?
+## Què és una plantilla de lloc? {#what-is-a-site-template}
 
-Com que el nom ho indica, un Site Template és un site base (boilerplate) que es pot utilitzar com a punt de partida quan es creen nous sites a la vostra xarxa.
+Com el seu nom indica, una plantilla de lloc és un lloc base que es pot utilitzar com a punt de partida quan es creen llocs nous a la vostra xarxa.
 
-Això significa que podeu crear un site base, activar diferents plugins, configurar un tema actiu i personalitzar-lo com desitgeu. Després, quan el vostre client crei un compte nou, en lloc de rebre un site estàndard de WordPress sense contingut significatiu, rebran una còpia del vostre site base amb totes les personalitzacions i el contingut ja posat.
+Això vol dir que podeu crear un lloc base, activar diferents plugins, establir un theme actiu i personalitzar-lo de la manera que vulgueu. Després, quan el vostre client creï un Account nou, en lloc d’obtenir un lloc WordPress per defecte sense contingut significatiu a dins, obtindrà una còpia del vostre lloc base amb totes les personalitzacions i continguts ja preparats.
 
-Són un aspecte fantàstic, però com puc crear un nou Site Template? És tan senzill com es pot imaginar.
+Això sona fantàstic, però com creo una plantilla de lloc nova? És tan senzill com pot arribar a ser.
 
-## Creació i edició d'un nou Site Template
+## Creació i edició d’una plantilla de lloc nova {#creating-and-editing-a-new-site-template}
 
-Els Site Templates són simplement sites normals de la vostra xarxa. Per crear un nou template, només ha de fer-se que vagi a **Network Admin > Ultimate Multisite > Sites > Add Site**.
+Les plantilles de lloc són simplement llocs normals de la vostra xarxa. Per crear una plantilla nova, simplement podeu anar a **Administració de la xarxa > Ultimate Multisite > Llocs > Afegeix lloc.**
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Botó Afegeix lloc a la pàgina de llista de llocs](/img/config/site-templates-list.png)**
 
-Aquest accionar obrirà una finestra modal on li demanarà el **Site title, Site Domain/path** i **Site type**. A la caixa desplegable **Site Type**, assegureu-vos de seleccionar **Site Template** *.*
+Això obrirà una finestra modal on se us demanarà el **títol del lloc, el domini/camí del lloc,** i el **tipus de lloc**. Al camp desplegable **Tipus de lloc**, assegureu-vos de seleccionar **Plantilla de lloc** *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Modal per afegir una plantilla de lloc amb desplegable de tipus de lloc](/img/config/site-templates-list.png)_
 
-També podeu veure la descripció del site template:
+També podeu afegir una descripció visible per al client per explicar què inclou la plantilla:
 
-![Site template description](/img/config/site-template-description.png)
+![Camp de descripció de la plantilla de lloc a la pantalla d’edició de la plantilla de lloc](/img/config/site-template-edit-description.png)
 
-A la part inferior del formulari, notareu un interruptor **Copy Site**. Això us permet crear un nou site template basat en un site template existent com a punt de partida, cosa que us ajudarà a guanyar temps en lloc de crear un site template des de zero.
+A la part inferior del formulari, veureu un commutador **Copia el lloc**. Això us permetrà crear una plantilla de lloc nova basada en una plantilla de lloc existent com a punt de partida per ajudar-vos a estalviar temps en lloc de crear una plantilla de lloc des de zero.
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Modal per afegir una plantilla de lloc amb commutador de còpia de lloc](/img/config/site-templates-list.png)
 
-### Personalització del contingut d'un Site Template
+### Personalització dels continguts d’una plantilla de lloc {#customizing-the-contents-of-a-site-template}
 
-Per personalitzar el vostre site template, només ha de navegar al seu panel de control i fer els canvis que necessiteu. Podeu crear nous articles, pàgines, activar plugins i canviar el tema actiu. També podeu accedir al Customizer i canviar tot tipus d'opcions de personalització.
+Per personalitzar la vostra plantilla de lloc, simplement navegueu fins al seu panell de Dashboard i feu els canvis que necessiteu. Podeu crear publicacions noves, pàgines, activar plugins i canviar el theme actiu. Fins i tot podeu anar al personalitzador i canviar tota mena d’opcions de personalització.
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![Interfície d’edició de la plantilla de lloc](/img/config/site-template-edit.png)
 
-Totes aquestes dades es copiaran quan un client crei un nou site basat en aquest Site Template.
+Totes aquestes dades es copiaran quan un client creï un lloc nou basat en aquesta plantilla de lloc.
 
-### Opcions avançades
+### Opcions avançades {#advanced-options}
 
-Si sabeu de cosa parleu quan es tracta de codi personalitzat, podeu utilitzar la nostra Search and Replace API per substituir automàticament informació al nou site després de la seva creació. Això és útil per coses com substituir noms de companyies a una pàgina "Sobre nosaltres", substituir l'email de contacte a la pàgina de Contacte, etc.
+Si us moveu bé amb una mica de codi personalitzat, podeu fer ús de la nostra API de cerca i substitució per substituir automàticament informació al lloc nou després de crear-lo. Això és útil per a coses com substituir noms d’empresa en una pàgina Sobre nosaltres, substituir el correu electrònic de contacte a la pàgina de contacte, etc.
 
-### Utilització dels Site Templates
+### Ús de plantilles de lloc {#using-site-templates}
 
-De l'ordre, heu creat un grup de Site Templates diferents amb dissenys, temes i configuracions variades. Com us garanteu que són útils a la vostra xarxa ara?
+D’acord, heu creat un munt de plantilles de lloc diferents amb dissenys, themes i configuracions diferents. Com les feu útils ara a la vostra xarxa?
 
-Basicament, hi ha dos aproximacions que podeu utilitzar ara (no simultàniament):
+Bàsicament, hi ha dos enfocaments que podeu utilitzar ara (no simultàniament):
 
-  * Associar un Site Template a cada un dels vostres Plans
+  * Adjuntar una plantilla de lloc a cadascun dels vostres plans
 
-**O**
+**O BÉ**
 
-  * Deixar que els vostres clients es seleccionin els site templates durant l'alta.
+  * Permetre que els vostres clients triïn les plantilles de lloc ells mateixos durant el registre.
 
-#### Mode 1: Assign Site Template
+#### Mode 1: Assigna una plantilla de lloc {#mode-1-assign-site-template}
 
-En aquest mode, els vostres clients no podran triar un template quan creen un compte, sinó que vós definireu quin template s'ha de fer servir en cada un dels vostres Plans.
+En aquest mode, els vostres clients no podran triar una plantilla quan creïn un Account, sinó que sereu vosaltres qui definireu quina plantilla s’ha d’utilitzar en cadascun dels vostres plans.
 
-Per fer-ho, haureu de navegar a **Ultimate Multisite > Products > Edit**.
+Per fer-ho, haureu d’anar a **Ultimate Multisite > Productes > Edita**.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![Edita el producte per assignar una plantilla de lloc](/img/config/product-site-templates.png)
 
-Això us portarà a la pàgina **Edit Product**. A la secció **Product Options**, trobareu la pestanya **Site template** i seleccionareu l'opció **Assign Site** **Template** del desplegable. Això mostrarà la llista de site templates disponibles i us permetrà seleccionar un únic site template dedicat al producte.
+Això us portarà a la pàgina **Edita el producte**. A la secció **Opcions del producte**, cerqueu la pestanya **Plantilla de lloc** i seleccioneu l’opció **Assigna una plantilla de lloc** al camp desplegable. Això mostrarà la llista de plantilles de lloc disponibles i us permetrà seleccionar només una plantilla de lloc dedicada al producte.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Pestanya de plantilla de lloc del producte amb l’opció d’assignar plantilla de lloc](/img/config/product-site-templates.png)
 
-#### Mode 2: Choose Available Site Template
+#### Mode 2: Tria una plantilla de lloc disponible {#mode-2-choose-available-site-template}
 
-En aquest mode, donareu als vostres clients una elecció durant el procés d'alta. Podran seleccionar entre diferents site templates que vostès defineu a la configuració del producte. Tenen l'opció de limitar el site template que poden triar sota el producte seleccionat. Això us permet tenir diferents conjunts de site templates per producte, cosa ideal per destacar diferents funcions i característiques per a un producte de major preu.
+En aquest mode, donareu als vostres clients una opció durant el procés de registre. Podran seleccionar entre diferents plantilles de lloc que definiu a la configuració del producte. Teniu l’opció de limitar les plantilles de lloc entre les quals poden triar dins del producte seleccionat. Això us permetrà tenir conjunts diferents de plantilles de lloc per a cada producte, cosa ideal per destacar funcions i característiques diferents en un producte de preu més alt.
 
-A la pàgina **Edit Product**. A la secció **Product Options**, trobareu la pestanya **Site template** i seleccionareu l'opció **Choose Available Site Template** del desplegable. Això mostrarà la llista de site templates disponibles i us permetrà seleccionar el site template que desitgeu que estigui disponible. Podeu fer-ho seleccionant el seu Comportament (Behavior): **Available** si voleu que el site template estigui inclòs a la llista. **Not Available** si voleu que el site template no aparegui com a opció. I **Pre-selected** si desitgeu que un dels site templates de la llista sigui el seleccionat per defecte.
+A la pàgina **Edita el producte**. A la secció **Opcions del producte**, cerqueu la pestanya **Plantilla de lloc** i seleccioneu l’opció **Tria una plantilla de lloc disponible** al camp desplegable. Això mostrarà la llista de plantilles de lloc disponibles i us permetrà seleccionar la plantilla de lloc que voleu que estigui disponible. Ho podeu fer triant-ne el comportament: **Disponible** si voleu que la plantilla de lloc s’inclogui a la llista. _**No disponible**_ si voleu que la plantilla de lloc no es mostri com a opció. I **Preseleccionada** si voleu que una de les plantilles de lloc llistades sigui la seleccionada per defecte.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Tria plantilles de lloc disponibles amb opcions de comportament](/img/config/product-site-templates.png)
 
-### Mode per defecte: Selecció de site template al formulari de Checkout
+### Mode per defecte: selecció de plantilla de lloc al formulari de pagament {#default-mode-site-template-selection-on-the-checkout-form}
 
-Si desitgeu que tots els vostres site templates estiguin disponibles durant l'alta, o si prefereu no fer el treball addicional d'assignar o especificar site templates sota cada producte que creeu. Potser només ha de configurar la selecció de site template al vostre **Checkout Form**. Per fer-ho, només ha de fer-se que vagi a **Ultimate Multisite > Checkout Forms**. Després, cliqueu **Edit** sota el formulari que voleu configurar.
+Si voleu que totes les vostres plantilles de lloc estiguin disponibles durant el registre, o potser no preferiu fer la feina extra d’assignar o especificar plantilles de lloc sota cada producte que creeu, podeu configurar simplement la selecció de plantilla de lloc al vostre **formulari de pagament**. Per fer-ho, aneu a **Ultimate Multisite > Formularis de pagament** i feu clic a **Edita** sota el formulari que voleu configurar.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+Això mostrarà la pàgina **Edita el formulari de pagament**. Cerqueu el camp **Selecció de plantilla** i feu clic a **Edita** a sota.
 
-Això mostrarà la pàgina **Edit Checkout Form**. Trobareu el camp **Template Selection** i cliqueu **Edit** sota ell.
+Apareixerà una finestra modal. Al camp **Template Sites** pots seleccionar i enumerar totes les plantilles de lloc que vols que estiguin disponibles durant el registre. Les plantilles de lloc que especifiquis des d’aquí estaran disponibles independentment del producte que hagi seleccionat l’usuari.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![Camp de selecció de plantilla a l’editor del formulari de checkout](/img/config/checkout-form-template-step.png)
 
-Aparirà una finestra modal. A la caixa **Template Sites** podeu seleccionar i listar tots els site templates que desitgeu que estiguin disponibles durant l'alta. Els site templates que especifiqueu d'aquí seran disponibles independentment del producte que seleccioni l'usuari.
+Al frontend, els clients veuen el selector de plantilles durant el checkout i poden triar el disseny inicial per al seu nou lloc.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Selector de plantilles al frontend durant el registre](/img/config/frontend-template-chooser.png)
 
-### Opcions de Site Template
+### Opcions de plantilla de lloc {#site-template-options}
 
-Hi ha altres funcions de site templates disponibles que podeu activar o desactivar a la configuració d'Ultimate Multisite.
+Hi ha altres funcions de plantilles de lloc disponibles que pots activar o desactivar a la configuració d’Ultimate Multisite.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Opcions de plantilla de lloc a la configuració d’Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Allow Template Switching
+#### Permet el canvi de plantilla {#allow-template-switching}
 
-Activar aquesta opció permetrà als vostres clients canviar el template que trien durant el procés d'alta després de crear el compte i el site. Això és útil des del punt de vista del client, ja que els permet re-seleccionar un template si més tard descobreixen que la seva elecció original no era la millor per a les seves necessitats específiques.
+Activar aquesta opció permetrà als teus clients canviar la plantilla que trien durant el procés de registre després que s’hagin creat el Account i el lloc. Això és útil des del punt de vista del client, ja que els permet tornar a seleccionar una plantilla si més endavant descobreixen que la seva elecció original no era la millor per a les seves necessitats particulars.
 
-#### Allow Users to use their Site as templates
+#### Permet als usuaris utilitzar el seu lloc com a plantilles {#allow-users-to-use-their-site-as-templates}
 
-Com que els usuaris de subsites han dedicat temps a construir i dissenyar el seu propi site, poden voler clonar-lo i utilitzar-lo com a un dels site templates disponibles quan creen un altre subsite a la vostra xarxa. Aquesta opció els permet aconseguir-ho.
+Com que els usuaris de subllocs han dedicat temps a construir i dissenyar el seu propi lloc, potser voldran clonar-lo i utilitzar-lo com una de les plantilles de lloc disponibles en crear un altre sublloc a la teva xarxa. Aquesta opció els permetrà aconseguir-ho.
 
-#### Copy Media on Template Duplication
+#### Copia els mitjans en duplicar la plantilla {#copy-media-on-template-duplication}
 
-Marcar aquesta opció copiarà el medi que s'ha subat al site template al site nou creat. Això es pot anular en cada un els plans.
+Marcar aquesta opció copiarà els mitjans pujats al lloc de plantilla al lloc creat recentment. Això es pot sobreescriure en cadascun dels plans.
 
-#### **Prevent Search Engines from indexing Site Templates**
+#### **Evita que els motors de cerca indexin les plantilles de lloc** {#prevent-search-engines-from-indexing-site-templates}
 
-Els site templates, com s'ha discutit en aquest article, són templates, però encara formen part de la vostra xarxa, cosa que significa que encara són disponibles perquè els motors de cerca els trobin. Aquesta opció us permet amagar els site templates perquè els motors de cerca no els indexin.
+Les plantilles de lloc, tal com s’expliquen en aquest article, són plantilles base, però continuen formant part de la teva xarxa, cosa que vol dir que encara estan disponibles perquè els motors de cerca les trobin. Aquesta opció et permetrà amagar les plantilles de lloc perquè els motors de cerca les puguin indexar.
 
-## Pre-rellenat de Site Templates amb auto search-and-replace
+## Preomplir plantilles de lloc amb cerca i substitució automàtiques {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Una de les funcions més potents d'Ultimate Multisite és la capacitat de mónar text, color i camps de selecció arbitraris al formulari d'alta. Quan hem capturat aquests dades, podem utilitzar-les per pre-rellenar el contingut en certes parts del site template seleccionat. Després, quan es publiqui el nou site, Ultimate Multisite substituirà els placeholders per la informació real introduïda durant l'alta.
+Una de les funcions més potents d’Ultimate Multisite és la possibilitat d’afegir camps arbitraris de text, color i selecció al formulari de registre. Un cop hem capturat aquestes dades, les podem utilitzar per preomplir el contingut en certes parts de la plantilla de lloc seleccionada. Aleshores, quan es publiqui el nou lloc, Ultimate Multisite substituirà els marcadors de posició per la informació real introduïda durant el registre.
 
-Per exemple, si desitgeu obtenir el nom de la companyia de l'usuari final durant l'alta i posar automàticament el nom de la companyia a la pàgina inicial. A la pàgina inicial del vostre site template ha de fer-se servir afegir els placeholders, com a l'imatge de més avall (els placeholders han de portar-se entre doble llaves - {{placeholder_name}}).
+Per exemple, si vols obtenir el nom de l’empresa de l’usuari final durant el registre i posar automàticament el nom de l’empresa a la pàgina d’inici. A la pàgina d’inici del teu lloc de plantilla has d’afegir els marcadors de posició, com a la imatge següent (els marcadors de posició s’han d’afegir envoltats de dobles claus - {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![Pàgina d’inici amb text de marcador de posició entre claus](/img/config/site-templates-list.png)
 
-Després, només ha de fer-se servir afegir un camp d'alta que faci match al vostre formulari de checkout per capturar aquestes dades:
+Aleshores, simplement pots afegir un camp de registre coincident al teu formulari de checkout per capturar aquestes dades. El mateix editor del formulari de checkout utilitzat per a la selecció de plantilles et permet col·locar camps personalitzats al costat del selector de plantilles:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Selecció de plantilla i camps de registre a l’editor del formulari de checkout](/img/config/checkout-form-template-step.png)
 
-El vostre client podrà omplir aquest camp durant l'alta.
+El teu client podrà llavors omplir aquest camp durant el registre.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Formulari de checkout al frontend amb selector de plantilles](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite substituirà llavors automàticament els marcadors de posició per les dades proporcionades pel client.
 
-Ultimate Multisite substituirà aleshores els placeholders amb les dades proporcionades pel client automàticament.
+![Marcadors de posició substituïts per dades del client al lloc](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### Resoldre el problema de la "plantilla plena de marcadors de posició" {#solving-the-template-full-of-placeholders-problem}
 
-### Resoldre el problema de "template ple de placeholders"
+Tot això està molt bé, però ens trobem amb un problema poc estètic: ara les nostres plantilles de lloc —que poden ser visitades pels nostres clients— estan plenes de marcadors de posició poc atractius que no diuen gaire.
 
-Tot això és genial, però ens trobem amb un problema fequet: els nostres site templates —que poden ser visitats pels nostres clients— estan plens de placeholders fequets que no diuen molt.
+Per resoldre això, oferim l’opció d’establir valors ficticis per als marcadors de posició, i fem servir aquests valors per cercar i substituir-ne el contingut als llocs de plantilla mentre els teus clients els visiten.
 
-Per resoldre-ho, ofereixem l'opció de configurar valors falsos per als placeholders, i utilitzem aquests valors per buscar i substituir el seu contingut als site templates mentre els vostres clients estan visitant.
+Pots accedir a l’editor de marcadors de posició de plantilles anant a **Ultimate Multisite > Settings > Sites** i, després, a la barra lateral, fent clic a l’enllaç **Edit Placeholders**.
 
-Podeu accedir a l'editor de placeholders de templates navegant a **Ultimate Multisite > Settings > Sites**, i després, a la barra lateral, fent clic al enllaç **Edit Placeholders**.
+![Configuració de plantilles de lloc a la pàgina de configuració de Sites](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+Això et portarà a l’editor de contingut dels marcadors de posició, on pots afegir marcadors de posició i el seu contingut respectiu.
 
-Això us portarà a l'editor de contingut dels placeholders, on podeu afegir placeholders i el seu respectiu contingut.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Punt d’entrada de l’editor de contingut dels marcadors de posició de plantilla](/img/config/settings-sites-templates-section.png)

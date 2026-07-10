@@ -4,11 +4,11 @@ title: フィルタ - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# フィルタ: wu_wp_cli_enabled_sub_commands
+# フィルタ: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 このエンティティで有効な **sub_commands** をフィルタリングします。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|------|
@@ -16,10 +16,10 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | ルート直後にコマンドで使用されるベース。 |
 | $this | `\Base_Manager` | オブジェクトインスタンス。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 定義は [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) の 198 行目にあります。

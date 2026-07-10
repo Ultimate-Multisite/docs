@@ -1,0 +1,25 @@
+---
+id: wu_membership_renewal_expiration_date
+title: Filtro - wu_membership_renewal_expiration_date
+sidebar_label: wu_membership_renewal_expiration_date
+_i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
+---
+# Filtro: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
+
+Filtra a data de expiração calculada a ser definida após a renovação.
+
+## Parâmetros {#parameters}
+
+| Nome | Tipo | Descrição |
+|------|------|-------------|
+| $expiration | `string` | Data de expiração calculada. |
+| $plan | `\Product` | Objeto de nível de adesão. |
+| $membership_id | `int` | O ID da adesão. |
+| $membership | `\Membership` | Objeto de adesão. |
+
+### Desde {#since}
+
+- 2.0.0
+### Fonte {#source}
+
+Definido em [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) na linha 2192

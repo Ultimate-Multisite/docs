@@ -3,17 +3,17 @@ title: Kupanga ndi Kufotokozera
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Kupuka na Kupanga
+# Kupuka na Kupanga {#export--import}
 
 Ultimate Multisite 2.9.0 imapanga ya **Export & Import** yomwe mwezi mmoja mwa **Tools > Export & Import**. Tumia ikuti mukati mwake muliipanga WordPress site mwezi mmoja kama ZIP file, kurekebisha hiyo ZIP, au kupanga site kati ya Ultimate Multisite na single-site WordPress installations zilizolingana.
 
-## Ruhusa Zinazohitajika
+## Ruhusa Zinazohitajika {#required-permissions}
 
 Lazidi kuingia kama admin aliye na uwezo wa kufikia menyu ya **Tools** ya WordPress kwenye site inayopangwa au inayopangwa. Kwenye mtandao mkuu (multisite network), tumia akaunti ya admin ya mtandao wakati wa kupanga au kupanga subsites kutoka kwa zana za Ultimate Multisite za kiwanda (network-level).
 
 Kupanga ZIP downloads zikutolewa kupitia endpoint la download lililithibitishwa, basi chagua session ya admin iendeze mpaka download itakamilike na usishiriki URLs za download zilizotengenezwa kwa umma.
 
-## Kupanga site kwenda ZIP
+## Kupanga site kwenda ZIP {#exporting-a-site-to-a-zip}
 
 1. Katika admin ya WordPress ya site unayotaka kuikopi, nenda kwenye **Tools > Export & Import**.
 2. Fungua eneo la kupanga na chagua site unayotaka kuipanga.
@@ -23,7 +23,7 @@ Kupanga ZIP downloads zikutolewa kupitia endpoint la download lililithibitishwa,
 
 Weka ZIP katika mahali salama. Inaweza kuwa na maudhui ya site, mipangilio (settings), faili za media, na vipengele vya code vilivyochaguliwa.
 
-## Kile kinachopangwa
+## Kile kinachopangwa {#what-the-export-includes}
 
 ZIP ya kupanga inaweza kujumuisha:
 
@@ -34,7 +34,7 @@ ZIP ya kupanga inaweza kujumuisha:
 
 M'ndu wamwamba wa ZIP ulipambana ndi kutengera monga koti kuwoneka kwa media, plugins, ndithu (themes), komanso ukulu kwa database tables za site.
 
-## Kukhulupatsa site kuchokera kwa ZIP
+## Kukhulupatsa site kuchokera kwa ZIP {#importing-a-site-from-a-zip}
 
 1. Tenda **Tools > Export & Import** pa WordPress site yomwe mukufuna kuyingirira.
 2. Longani la kukhulupatsa (import area) ndikubwera ZIP yomwe yaliyenera kupangidwa ndi tool ya Export & Import.

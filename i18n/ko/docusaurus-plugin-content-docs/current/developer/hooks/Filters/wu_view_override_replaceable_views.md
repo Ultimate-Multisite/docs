@@ -8,17 +8,17 @@ Allows developers to add additional folders to the replaceable list.
 
 Be careful, as allowing additional folders might cause out-of-date copies to be loaded instead of the Ultimate Multisite versions.
 
-## Parameters
+## Parameters {#filter-wuviewoverridereplaceableviews}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $replaceable_views | `array` | List of allowed folders. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
-### Source
+### Source {#since}
 
 Defined in [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L50) at line 50
 
-## Returns
+## Returns {#source}

@@ -1,48 +1,46 @@
 ---
-title: Tsim sijhawm txhua tus uap
+title: Kev teeb tsa kev them nyiaj ua los ntawm tes
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# ការតាំងរៀបចំការបង់ប្រាក់ដោយដៃ (v2)
+# Teeb Tsa Kev Them Nyiaj Ntawm Tes (v2) {#setting-up-manual-payments-v2}
 
-_**ចំណាំសំខាន់៖ អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
+_**CEEB TOOM TSEEM CEEB: Kab lus no hais txog Ultimate Multisite version 2.x.**_
 
-ការបង់ប្រាក់ដោយដៃ គឺជាវិធីមួយដែលអ្នកអាចផ្តល់ជម្រើសវិធីបង់ប្រាក់ផ្សេងទៀត ប្រសិនបើ **Stripe** ឬ **PayPal** មិនមានសម្រាប់អ្នកប្រើប្រាស់របស់អ្នកទេ។ វាអាចជាការផ្ទេរលុយ (wire) ការផ្ទេរធនាគារ ឬវិធីបង់ប្រាក់ផ្សេងទៀតដែលអាចរកបានក្នុងតំបន់របស់អ្នក។
+Kev them nyiaj ntawm tes yog ib txoj kev uas koj siv tau los muab lwm txoj kev them nyiaj yog tias **Stripe** lossis **PayPal** tsis muaj rau koj cov neeg siv. Nws yuav yog kev xa nyiaj hauv bank, hloov nyiaj ntawm bank, lossis lwm txoj kev them nyiaj twg uas muaj rau koj cov neeg siv hauv lawv cheeb tsam.
 
-## របៀបបើកដំណើរការការបង់ប្រាក់ដោយដៃ
+## Yuav qhib Kev Them Nyiaj Ntawm Tes li cas {#how-to-enable-manual-payments}
 
-ការរៀបចំការបង់ប្រាក់ដោយដៃគឺងាយស្រួលណាស់។ អ្នកគ្រាន់តែបើកវាក្រោម payment gateways ហើយដាក់ការណែនាំលម្អិតអំពីរបៀបដែលអ្នកប្រើប្រាស់គួរផ្ញើការទូទាត់។
+Kev teeb tsa kev them nyiaj ntawm tes yooj yim heev. Koj tsuas yog yuav tsum qhib nws hauv cov chaw txais kev them nyiaj thiab muab cov lus qhia ntxaws txog yuav kom tus neeg siv xa nyiaj li cas.
 
-ដំបូង សូមចូលទៅកាន់ **Ultimate Multisite > Settings > Payments**។ ខាងក្រោម **Payment Gateways** សូមបិទ/បើក (toggle) **Manual** ឱ្យបើក។ អ្នកនឹងឃើញប្រអប់ **Payment Instructions** បង្ហាញឡើងសម្រាប់អ្នក។
+Ua ntej, mus rau **Ultimate Multisite > Chaw teeb tsa > Kev Them Nyiaj**. Hauv qab **Cov Chaw Txais Kev Them Nyiaj** , qhib **Ntawm Tes**. Koj yuav pom tias ib lub thawv **Lus Qhia Kev Them Nyiaj** yuav tshwm rau koj.
 
-បន្ថែមព័ត៌មានដែលអតិថិជនរបស់អ្នកត្រូវការដើម្បីធ្វើការបង់ប្រាក់ទៅក្នុងប្រអប់នេះ។ វាអាចជាព័ត៌មានគណនីធនាគាររបស់អ្នក និងអ៊ីមែលរបស់អ្នក ដើម្បីឱ្យអតិថិជនអាចផ្ញើការបញ្ជាក់ការទូទាត់មកអ្នកបាន ឧទាហរណ៍។
+Ntxiv rau hauv lub thawv no cov ntaub ntawv uas koj tus qhua yuav xav tau kom them nyiaj. Piv txwv li, nws yuav yog koj cov ntsiab lus bank account thiab koj tus email kom tus qhua xa tau daim ntawv lees paub kev them nyiaj rau koj.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Lub toggle rau chaw txais kev them nyiaj ntawm tes nrog thaj chaw sau Lus Qhia Kev Them Nyiaj](/img/config/manual-gateway-expanded.png)
 
-នេះគឺជាចំណុចកំណត់ការបង់ប្រាក់ដោយដៃ៖
+Nov yog qhov interface rau kev teeb tsa chaw txais kev them nyiaj ntawm tes:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Kev teeb tsa chaw txais kev them nyiaj ntawm tes](/img/config/manual-gateway-settings.png)
 
-បន្ទាប់ពីបានរៀបចំរួច សូមចុចលើ **Save Settings** ហើយវាត្រូវបានបញ្ចប់ហើយ។ នៅពេលដែលអ្នកប្រើប្រាស់ចុះឈ្មោះចូលក្នុងបណ្តាញរបស់អ្នក ពួកគេនឹងឃើញសារមួយប្រាប់ថា ពួកគេនឹងទទួលបានការណែនាំពីអ្នកដើម្បីបំពេញការទិញ។
+Tom qab teeb tsa tas, tsuas yog nyem **Khaws Chaw Teeb Tsa** ces ua tiav lawm. Thaum cov neeg siv sau npe rau koj lub network, lawv yuav pom ib zaj lus qhia tias lawv yuav tau txais koj cov lus qhia kom ua kom tiav kev yuav khoom.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Zaj lus lees paub kev sau npe qhia tus neeg siv tias lawv yuav tau txais cov lus qhia kev them nyiaj](/img/frontend/registration-manual-notice.png)
 
-ហើយពួកគេក៏នឹងទទួលបានសារនៅលើទំព័រ **Thank You** របស់អ្នកជាមួយនឹងការណែនាំអំពីការបង់ប្រាក់របស់អ្នកផងដែរ។
+Thiab lawv tseem yuav tau txais ib zaj lus ntawm koj nplooj **Ua Tsaug** nrog koj cov lus qhia kev them nyiaj.
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+<!-- Screenshot tsis muaj: Nplooj Ua Tsaug qhia cov lus qhia kev them nyiaj tom qab checkout -->
 
-## ការបញ្ជាក់ការបង់ប្រាក់ដោយដៃ
+## Lees paub kev them nyiaj ntawm tes {#confirming-manual-payments}
 
-Manual Payment བཀོད་འགྲོ་བའི་སྐོར་
+Txhawm rau lees paub ib qho kev them nyiaj ntawm tes, mus rau cov ntawv qhia **Kev Them Nyiaj** ntawm sab laug. Nyob ntawd koj pom tau tag nrho cov kev them nyiaj hauv koj lub network thiab lawv cov ntsiab lus, suav nrog lawv **xwm txheej**. Ib qho kev them nyiaj ntawm tes yuav ib txwm muaj xwm txheej **Tseem Tos** kom txog thaum koj hloov nws ntawm koj tus kheej.
 
-Manual payment ག་རེ་བྱེད་དགོས་လဲဆိုတာ ཁྱེད་རང་གིས་ **Payments** menu (ལེགས་པའི་མིང་ཚུ་) ལ་ས izquierda bar (མཐའ་མའི་བར་མ་) ནས་ចូលទៅပါ။ ཁོང་གི་ network (སྤྱི་ཚོགས་) ནང་ཡོད་པའི་ payment (ལག་རྩིས་) ཚོ་དང་དེའི་ details (གཞིའི་ཆ་ཚང་) ལ་, status (ལུགས་བཀོད་) ཚུ་ཡོངས་སུ་ལྟ་ཐུབ་པ་མ་ཟད།. Manual payment ག་འདྲ་བྱས་ནའང་, ཁྱེད་རང་གིས་ manual བསྒྱུར་བའི་ཆ་ཚང་མི་བཞག་པའི་དུས་ནས་ **Pending** (བཀོད་འགྲོ་བའི་སྐབས་) status ལྟར་ཡོང་རྒྱུ་ཡིན།.
+![Daim ntawv teev kev them nyiaj qhia kev them nyiaj ntawm tes uas tseem tos](/img/admin/payments-list.png)
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+Nkag mus rau nplooj kev them nyiaj los ntawm kev nyem **lej siv txheeb xyuas**. Hauv nplooj no koj muaj tag nrho cov ntsiab lus ntawm qhov kev them nyiaj uas tseem tos, xws li reference ID, cov khoom, timestamps thiab lwm yam ntxiv.
 
-Payment page ལ་གནང་དགོས་པ་ནི་ **reference code** (གོ་རིམ་མཚན་) ལ་click (བཀླག་) བྱེད་རྒྱུ་ཡིན།. དེའི་ page ལས་ཁྱེད་རང་གིས་ pending payment (བཀོད་འགྲོ་བའི་སྐབས་ཀྱི་ལག་རྩིས་) གི་ details (གཞིའི་ཆ་ཚང་) ཚུ་ཡོངས་སུ་ལྟ་ཐུབ་པ་མ་ཟད།. Reference ID, products (ကုန်ပစ္စည်းཚོ་), timestamps (དུས་ཚོད་མཚན་) དང་ ཡང་ན་གཞན་ཚུ་ཡོངས་སུ་བལྟ་ཐུབ།.
+![Nplooj ntsiab lus kev them nyiaj qhia reference code, cov khoom, thiab cov lej tag nrho](/img/admin/payment-edit.png)
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+Hauv kem sab xis, koj hloov tau qhov xwm txheej ntawm kev them nyiaj. Hloov nws mus rau **Ua Tiav** thiab **qhib qhov kev xaiv Qhib Kev Ua Tswv Cuab** yuav qhib koj tus qhua lub vev xaib thiab lawv txoj kev ua tswv cuab yuav pib siv tau.
 
-Right column (མཐའ་མའི་བར་མ་) ལ་ཁྱེད་རང་གིས་ payment (ལག་རྩིས་) གི་ status (ལུགས་བཀོད་) ཚོ་སປ່ຽནི་ཐུབ།. Status ཚོ་ **Completed** (གྲུབ་པ་) ལ་བསྒྱུར་དུ་བཅུག་པ་དང་, **Activate Membership** (Membership འགོ་བཙུགས་པའི་ལས་བྱེད་) option (ເລືອກབྱེད་) ལ་toggle (བསྒྱུར་) བྱས་ན་ཁྱེད་རང་གི་ customer (བཀྲ་ཤིས་པའི་མ客) གི་ site (웹) འགོ་བཙུགས་ཐུབ་པ་དང་, သူཚོའི་ membership (ལས་བྱེད་ཚོགས་) ཡང་ active (ལག་ལེན་འགོ་བཙུགས་) 状態 (Status) ལུ་འོང་རྒྱུ་ཡིན།.
-
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Nplooj kho kev them nyiaj nrog Xwm Txheej teeb rau Ua Tiav thiab toggle Qhib Kev Ua Tswv Cuab](/img/admin/payment-activate-membership.png)

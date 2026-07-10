@@ -3,13 +3,13 @@ title: Thiết lập Hằng số Sunrise trên Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Thiết lập hằng số Sunrise thành true trên Closte
+# Thiết lập hằng số Sunrise thành true trên Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Một số nhà cung cấp hosting khóa file wp-config.php vì lý do bảo mật. Điều này có nghĩa là Ultimate Multisite không thể tự động chỉnh sửa file để thêm các hằng số cần thiết cho tính năng ánh xạ tên miền và các tính năng khác hoạt động. Closte là một trong những nhà cung cấp như vậy.
 
 Tuy nhiên, Closte cung cấp cách thêm hằng số vào wp-config.php một cách an toàn. Bạn chỉ cần làm theo các bước dưới đây:
 
-## Trên bảng điều khiển Closte
+## Trên bảng điều khiển Closte {#on-the-closte-dashboard}
 
 Đầu tiên, [đăng nhập vào tài khoản Closte của bạn](https://app.closte.com/), nhấp vào mục Sites trong menu, sau đó nhấp vào liên kết Dashboard trên trang web bạn đang làm việc:
 

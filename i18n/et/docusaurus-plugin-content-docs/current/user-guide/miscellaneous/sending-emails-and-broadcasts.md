@@ -1,124 +1,124 @@
 ---
-title: E-postide ja levitamise saatmine
+title: E-kirjade ja teadete saatmine
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-maile ja levitamise (v2)
+# E-kirjade ja teadaannete saatmine (v2) {#sending-emails-and-broadcasts-v2}
 
-_**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
+_**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
 
-Ultimate Multisite on seadusega saadud funktsioon, mis võimaldab teil kommunikatsiooni käivitada oma klientidega e-posti saatmist sihtitud kasutajale või kasutaja grupi, samuti teavet levitamiseks nende administraatori paneelile.
+Ultimate Multisite sisaldab funktsiooni, mis võimaldab sul klientidega suhelda, saates e-kirja sihitud kasutajale või kasutajate rühmale, samuti saata teateid nende admini dashboardile teadaannete edastamiseks
 
-## Lisage administraatori teavet klientide dashboardile levitamise abil
+## Lisa admini teated oma klientide dashboardile Broadcasts abil {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ultimate Multisite levitamisfunktsiooni kasutades saate lisada **administraatorite teavete** oma kasutaja alsubist administraatori dashboardile.
+Kasutades Ultimate Multisite teadaannete funktsiooni, saad lisada **admini teateid** oma kasutaja alamlehe admini dashboardile.
 
-See on väga kasulik, kui peate teavitama ülesannete nagu süsteemi hooldus või uute toodete ja teenuste pakkumise esitamiseks olemasolevate kasutajate. See on selline, kuidas administraatorite teave näeb oma kasutaja dashboardil.
+See on äärmiselt kasulik, kui pead tegema teadaande, näiteks süsteemihoolduse kohta, või pakkuma olemasolevatele kasutajatele uusi tooteid või teenuseid. Nii näeb admini teade välja sinu kasutaja dashboardil.
 
-<!-- Screenshot unavailable: Administraatorite teavete levitamine näed klientide alsubist dashboardil -->
+<!-- Kuvatõmmis pole saadaval: admini teade, mida näidatakse kliendi alamlehe dashboardil -->
 
-Administraatorite teavete algamiseks külastage oma võrku administrati paneeli ja **Ultimate Multisite** menüü all leiate **Broadcasts** (Levitamised) valik.
+Admini teate alustamiseks mine oma võrgu admini dashboardile ja **Ultimate Multisite** menüü alt leiad valiku **Broadcasts**.
 
-![Broadcasts loendileht Ultimate Multisite administraatoris](/img/admin/broadcasts-list.png)
+![Broadcasts loendi leht Ultimate Multisite adminis](/img/admin/broadcasts-list.png)
 
-Saate ka muuta olemasolevaid levitamisi:
+Samuti saad muuta olemasolevaid teadaandeid:
 
-![Broadcasti redigeerimise kasutuseinterface](/img/admin/broadcast-edit.png)
+![Teadaande muutmise liides](/img/admin/broadcast-edit.png)
 
-Seele lehel klõpsake ülal olevat **Add Broadcast** (Lisage levitamine) nupulile.
+Sellel lehel klõpsa üleval nuppu **Add Broadcast**.
 
-See avab Add broadcast -modaali, kus saate välja valida, millise tüüpi levitamist soovite saata.
+See avab „Add broadcast“ modaaliakna, kus saad valida, millist tüüpi teadaannet soovid saata.
 
-Valige siis **Message** (Teave) ja klõpsake **Next Step** (Järgmine samm) nupulile.
+Vali **Message** ja seejärel klõpsa nuppu **Next Step**.
 
-![Add broadcast modaal, kus on valitud Message-vaik
+![Teate lisamise modaal, kus Message valik on valitud](/img/admin/broadcast-add-message.png)
 
-Järgmine küsimus palub teil välja kas **Target customer** (Sihtklient) või **Target product** (Sihttoode). Pärustage, et saate valida rohkem kui ühte kasutaja või rohkem kui ühte toodet.
+Järgmine aken küsib sinult kas **Target customer** või **Target product**. Pane tähele, et saad valida rohkem kui ühe kasutaja või rohkem kui ühe toote.
 
-Eelamiseks kasutaja konto või toodet otsimiseks tuleb alustada sõnast mängida sulguoleku sisema sisse.
+Kasutajakonto või toote otsimiseks pead alustama märksõna sisestamist välja sisse.
 
-**Sõnumitüüpi** (Message type) välja valitud valgusest saate määrata teaduse värvi. See rõhutab teie sõnumi kiireloomulist olulisust.
+Välja **Message type** all saad valida teate värvi. See rõhutab sinu sõnumi kiireloomulisust.
 
-Seejärel saate klõpsata **Järgmine samm**.
+Seejärel saad klõpsata **Next Step**.
 
-![Sihtkülgjuhil, sihttoot ja sõnumitüübi väljad sõnumi levitamiseks](/img/admin/broadcast-message-targets.png)
+![Target customers, target product ja message type väljad Message teadaande jaoks](/img/admin/broadcast-message-targets.png)
 
-Järgmine akend on see paigut, kus saate alustada oma sõnumi koostamist otsingut ja sisulist välja, mida soovite kasutajatele levitada.
+Järgmises aknas saad alustada oma sõnumi koostamist, sisestades teema ja sisu/sõnumi, mida soovid kasutajatele edastada.
 
-![Levitamise sõnumi teema ja sisu redigeerija loomise sammu](/img/admin/broadcast-edit.png)
+![Teadaande sõnumi teema ja sisu redaktor koostamise sammul](/img/admin/broadcast-edit.png)
 
-Sõnumi luomise pärast saate klõpsata **Lähetada** (Send) nupul.
+Pärast sõnumi loomist saad vajutada nuppu **Send**.
 
-Ja see on kõik. Administratsiooni teade peaks väljuti esile ilmuma kasutaja dashboardile kohe.
+Ja see ongi kõik. Admini teade peaks kohe ilmuma sinu kasutaja dashboardile.
 
-## E-kirjude laitamine klientidele
+## Saada e-kirju oma klientidele {#send-emails-to-your-customers}
 
-Ultimate Multisite levitamise funktsiooni abil saate e-posti kasutajatele laita. Teil on võimalus laita e-posti ainult konkreetsetele kasutajatele või sihtida konkreetsete kasutaja gruppe selle põhjal, mille alusel nad on abonneeritud toote või plaaniga.
+Kasutades Ultimate Multisite teadaannete funktsiooni, saad saata kasutajatele e-kirja. Sul on võimalus saata e-kiri ainult konkreetsetele kasutajatele või sihtida kindlat kasutajarühma toote või plaani alusel, mille all nad on tellinud.
 
-E-posti levitamise algamiseks külastage oma võrku administrati dashboardi ja Ultimate Multisite menüü all leiate Levitamise (Broadcast) valik.
+E-kirja teadaande alustamiseks mine oma võrgu admini dashboardile ja Ultimate Multisite menüü alt leiad Broadcast valiku.
 
-![Levitamise nimekiri leht kasutatakse e-posti levitamiseks algusepunktina](/img/admin/broadcasts-list.png)
+![Broadcasts loendi leht, mida kasutatakse e-kirja teadaande lähtepunktina](/img/admin/broadcasts-list.png)
 
-Seele lehtest klõpsake ülal olevat **Lisaindikas** (Add broadcast) nupul.
+Sellel lehel klõpsa üleval nuppu **Add broadcast**.
 
-See avab Lisaindiksi akendi, kus saate välja valida, millise levitamist tüüpi soovite laita. Valige siis **E-post** ja klõpsake **Järgmine samm** nupul.
+See avab „Add broadcast“ modaaliakna, kus saad valida, millist tüüpi teadaannet soovid saata. Vali **Email** ja seejärel klõpsa nuppu **Next Step**.
 
-![Levitamise lisaindikas, kus E-posti valik on valitud](/img/admin/broadcast-add-email.png)
+![Teadaande lisamise modaal, kus Email valik on valitud](/img/admin/broadcast-add-email.png)
 
-Järgmine akend küsib teilt kas **Sihtkülgjuhi** (Target customer) või **Sihttoot** (Target product). Pärustage, et saate välja valida rohkem kui ühte kasutaja või rohkem kui ühte toodet.
+Järgmine aken küsib sinult kas **Target customer** või **Target produc** t. Pane tähele, et saad valida rohkem kui ühe kasutaja või rohkem kui ühe toote.
 
-Vast kasutaja või toodet otsimiseks tuleb alustada sõna sisestamine sulgis välja.
+Kasutajakonto või toote otsimiseks pead alustama märksõna sisestamist välja sisse.
 
-Kui valides oma sihtgrupi ja sihttoodete, saate klõpsata **Next Step** (Järgmine samm).
+Kui sihtrühm on valitud, saad klõpsata **Next Step**.
 
-![Sihtklientide ja sihttoodete valik Email-leade lahendamiseks](/img/admin/broadcast-email-targets.png)
+![Target customers ja target product valik Email teadaande jaoks](/img/admin/broadcast-email-targets.png)
 
-Järgmine akend on see koht, kus alustate e-posti koostamise: sisestades teema ja sisu/viidandi, mida soovite käyttanutele saata.
+Järgmises aknas saad alustada oma e-kirja koostamist, sisestades teema ja sisu/sõnumi, mida soovid kasutajatele saata.
 
-<!-- Screenshot unavailable: Email-leade teema ja sisuredaktor compose sammu -->
+<!-- Kuvatõmmis pole saadaval: e-kirja teadaande teema ja sisu redaktor koostamise sammul -->
 
-Viimase pärast saate klõpsata **Send** (Saada) nupul.
+Pärast sõnumi loomist saad vajutada nuppu **Send**.
 
-See on nii lihtne, et e-posti saata oma lõppkäitlele broadcast funktsiooni abil.
+Ja nii lihtne ongi saata e-kiri oma lõppkasutajatele, kasutades teadaannete funktsiooni.
 
-## Süsteerid e-kirjalead
+## Süsteemi e-kirjad {#system-emails}
 
-Ultimate Multisite'is süsteerid e-kirjalead on **automaatlikud teavitused**, mida süsteem lähevad pärast teatud toiminguid, nagu registreerimine, maksude tegemine, domeenide sulgimine jne. Need e-kirjad saab muuta või muudata Ultimate Multisite seadistustest. Sellel on ka funktsioon, mis võimaldab teil olemasolevaid seadistusi ümber asutada ja teist Ultimate Multisite installist importida.
+Ultimate Multisite süsteemi e-kirjad on need **automaatsed teavitused**, mille süsteem saadab pärast teatud toiminguid, nagu registreerimine, makse, domeeni sidumine jne. Neid e-kirju saab Ultimate Multisite seadetes muuta või kohandada. Sellega kaasneb ka funktsioon, mis võimaldab lähtestada ja importida olemasolevaid seadeid teisest Ultimate Multisite installatsioonist.
 
-### Ümberasutamine ja importimine
+### Lähtestamine ja importimine {#resetting--importing}
 
-Uued Ultimate Multisite versioonid samuti add-onid võivad ajaga vahel registreida uusi e-kirju.
+Uued Ultimate Multisite versioonid, samuti lisad, võivad ja hakkavad aeg-ajalt uusi e-kirju registreerima.
 
-Konfliktide ja teiste probleemide vältimiseks **me ei lisa neid uusi e-kirjaleade mallid automaatselt Süsteerid e-kirjadena teie installile**, välja arvatud juhul, kui need on olulised selle konkreetse funktsiooni õiguse toimimise jaoks.
+Konfliktide ja muude probleemide vältimiseks **me ei lisa uusi e-kirja malle sinu installatsiooni System Emails alla automaatselt**, välja arvatud juhul, kui need on antud funktsiooni korrektseks toimimiseks hädavajalikud.
 
-Kuid superadminid ja agentid saavad neid uusi registreeritud e-kirju importida importori tööriistaga. See protsess luuakse uue süsteerilise e-kirju, millel on uue e-kirjaleade malli sisu ja konfiguratsioon, võimaldades superadminil teha mida ta soovib muudata või hoida neid nagu on.
+Siiski saavad superadminid ja agendid neid äsja registreeritud e-kirju importija tööriista kaudu importida. See protsess loob uue süsteemi e-kirja uue e-kirja malli sisu ja konfiguratsiooniga, võimaldades superadminil teha soovitud muudatusi või jätta need nii, nagu need on.
 
-#### Süsteerid e-kirjade importimine
+#### Kuidas importida süsteemi e-kirju {#how-to-import-system-emails}
 
-Minum oma Ultimate Multisite seadistus ja siit minema **Sähilishade** tabilele.
+Mine oma Ultimate Multisite seadete lehele ja ava vahekaart **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Emails vahekaart Ultimate Multisite seadetes, kus kuvatakse System Emails jaotis](/img/config/settings-emails-tab.png)
 
-Seejärel, sivubari peal klõpsake **System Emailsi kohandamine** (Customize System Emails) nupulule.
+Seejärel klõpsa külgribal nuppu **Customize System Emails**.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Kuvatõmmis pole saadaval: Customize System Emails nupp System Emails külgriba paneelil -->
 
-System Emailsi lehel näete ülal **Reset & Import** toimimise nupugi. Sellele klõpsamine avab importi ja resetimise modali (modal) akna.
+System Emails lehel näed üleval toimingunuppu **Reset & Import**. Selle nupu klõpsamine peaks avama importimise ja lähtestamise modaaliakna.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Reset or Import toimingunupp System Emails admini lehel](/img/admin/system-emails-reset-import.png)
 
-Seejärel saate lülitada Import Emailid -vahetusi, et näha, millised system emailid on võimalik importida.
+Seejärel saad lülitada Import Emails valikuid, et näha, milliseid süsteemi e-kirju saab importida.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Kuvatõmmis pole saadaval: lähtestamise ja importimise modaalaken, kus e-kirjade importimise valikud on laiendatud -->
 
-#### System Emailide resetimine
+#### Süsteemi e-kirjade lähtestamine {#reseting-system-emails}
 
-Teise korral teadete järgi mõtet, et et te sellele antud muutused antud e-posti mallile ei enam toimi ja soovite seda taastada selle **oletule olekust**.
+Mõnikord märkad, et konkreetse e-kirja malli muudatused ei sobi sulle enam ja soovid selle lähtestada **vaikeolekusse**.
 
-Sellises juhul on teil kaks valikut: saate lihtsalt system emaili eemaldada ja see tagasi importida (kasutades ülal antud juhise), mis puhastab saatusmetriikat ja muud asja, mida seda meetodit kõige vähem soovitatakse.
+Sellistel juhtudel on sul kaks võimalust: võid süsteemi e-kirja lihtsalt kustutada ja uuesti importida (kasutades ülaltoodud juhiseid) – see kustutab saatmismõõdikud ja muud andmed, mistõttu on see meetod kõige vähem eelistatud.
 
-Või saate kasutada **Reset & Import** tööriist을 selle emaili malli resetimiseks.
+Või võid kasutada **lähtestamise ja importimise tööriista**, et see e-kirja mall lähtestada.
 
-Emaili malli resetimiseks saate järgida ülal antud samuti sammude, kuni jõudmate Reset & Import tööriistule, ja siis lülitada sisse **Reset** valiku ning valige emailid, mida soovite tagasi oletule sisu seisukile.
+E-kirja malli lähtestamiseks järgi ülaltoodud samme, kuni jõuad lähtestamise ja importimise tööriistani, seejärel lülita sisse valik **Lähtesta** ja vali e-kirjad, mille soovid vaikesisule tagasi lähtestada.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Kuvatõmmis pole saadaval: lähtestamise ja importimise modaalaken, kus e-kirjade lähtestamise valikud on laiendatud -->

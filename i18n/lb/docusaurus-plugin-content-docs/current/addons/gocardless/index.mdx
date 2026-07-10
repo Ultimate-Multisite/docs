@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: GoCardless-Bezuelung
+
+Erlaabt Äre Clienten, fir Ultimate Multisite-Memberschaften a Produkter mat Lastschrëft iwwer GoCardless ze bezuelen!
+
+## Installatioun {#installation}
+
+1. Luet 'ultimate-multisite-gocardless' an den '/wp-content/plugins/' Verzeechnes erop
+2. Aktivéiert de Plugin iwwer de 'Plugins'-Menü a WordPress
+3. Follegt dem Schrëtt-fir-Schrëtt-Assistent, fir de Plugin anzeriichten
+
+## Benotzungsguide {#usage-guide}
+
+_GoCardless_ ass e Bezuelungsgateway, deen an **Europa an a Groussbritannien** verfügbar ass an **Lastschrëft**-Bezuelungen erméiglecht.
+
+Den **Ultimate Multisite: GoCardless Gateway** füügt _GoCardless_-Ënnerstëtzung zu Ultimate Multisite bäi, sou datt Dir Är Clienten an där Regioun per Lastschrëft belaaschte kënnt.
+
+Dësen Tutorial weist, wéi Dir _GoCardless_ ariicht, fir Bezuelungen doriwwer op Ärem Ultimate Multisite-Netzwierk unzehuelen.
+
+_**Notiz: GoCardless funktionéiert nëmme mat de folgende Wärungen:**_ **EUR, GBP, AUD, SEK an DKK.**
+
+## Den Add-on installéieren {#installing-the-add-on}
+
+Als éischt musst Dir de GoCardless-Add-on fir Ultimate Multisite installéieren. Dat kënnt Dir maachen, andeems Dir op **Ultimate Multisite > Settings > Add-ons (an der Säiteleescht)** gitt. A wielt de GoCardless-Add-on aus där Lëscht.
+
+Nodeems den Add-on installéiert an aktivéiert ass, gitt op **Ultimate Multisite > Settings > Payments**, schalt d'GoCardless-Optioun ëm, a späichert.
+
+![Astellunge vum Bezuelungsgateway](/img/config/settings-payment-gateways.png)
+
+## En Zougrëffstoken kréien {#getting-an-access-token}
+
+Erstellt en Account op _GoCardless_ (oder an der _GoCardless_-Sandbox, wann Dir et **als éischt teste wëllt** , wat recommandéiert ass). Duerno, nodeems Dir ageloggt sidd, navigéiert op de Menüpunkt **Developers**.
+
+<!-- Screenshot net verfügbar: GoCardless Dashboard weist d'Positioun vum Developers-Menü -->
+
+Op der **Developers**-Säit klickt op de **Create**-Knäppchen an der ieweschter rietser Eck vum Bildschierm, an da klickt op d'Optioun **Access Token**.
+
+<!-- Screenshot net verfügbar: GoCardless Developers-Säit mam Create-Knäppchen an der Access Token-Optioun -->
+
+Dat mécht eng nei modal Fënster op, an där Dir en neien Token erstelle kënnt. Gitt him en erkennbaren Numm a gitt sécher, datt Dir d'Optioun **Read-write access** am **Scope**-Menü auswielt.
+
+<!-- Screenshot net verfügbar: GoCardless-modal Fënster fir en neien Zougrëffstoken mat Read-write-Scope ze erstellen -->
+
+Den Zougrëffstoken erschéngt um Bildschierm. Kopéiert en a setzt en an Äre **Ultimate Multisite > Settings > Payments > GoCardless**-Menü an.
+
+Gitt sécher, en an dat richtegt Feld ze setzen. Wann et en **Live-Toke** **n** ass, schalt de **Sandbox-Modus aus**, ier Dir den Token asetzt.
+
+![Astellunge vum Bezuelungsgateway mat GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot net verfügbar: GoCardless-Token-Felder an den Ultimate Multisite-Bezuelungsastellungen -->
+
+Dat war et fir den éischte Schrëtt. Als Nächst musst Dir e Webhook-Listener ariichten.
+
+## De Webhook-Listener ariichten {#setting-up-the-webhook-listener}
+
+Wann et ëm Abonnementer geet, muss Ultimate Multisite iwwer Ännerungen am Abonnementsstatus, nei gemaachte Bezuelungen an aner esou Saache Bescheed kréien.
+
+D'Aart a Weis, wéi Bezuelungsgateways Ultimate Multisite iwwer dës Ännerunge informéieren, ass iwwer **Webhook-Uriff**. Aus deem Grond musse mir _GoCardless_ soen, wéi eng URL mat all deenen Informatiounen opgeruff soll ginn, fir datt d'Integratioun zu 100% funktionéiert.
+
+Gitt zeréck op Äre **GoCardless > Developers**-Panel a klickt nach eng Kéier op de Create-Knäppchen, mee dës Kéier wielt d'Optioun **Webhook endpoint**.
+
+<!-- Screenshot net verfügbar: GoCardless Developers-Säit mat der Webhook endpoint-Optioun -->Eng nei Fënster geet op mat den Optioune fir de Webhook-Endpunkt. Si freet no der Webhook-URL, also gitt zeréck op Är **Ultimate Multisite settings > Payments > GoCardless** a kopéiert d'Webhook-URL, déi do opgelëscht ass:
+
+<!-- Screenshot net verfügbar: Ultimate Multisite GoCardless-Astellunge weisen d'Webhook-URL -->
+
+Zousätzlech kënnt Dir e **Webhook-Geheimnis** aginn, dat benotzt gëtt, fir Är Webhook-Uriff z'ënnerschreiwen. Wat och ëmmer Dir an dat Feld agitt, musst Dir och am **Ultimate Multisite Webhook Secret-Feld** aginn.
+
+<!-- Screenshot net verfügbar: GoCardless Webhook-Endpunkt-Konfiguratiounsformular mat URL- a Geheimnis-Felder -->
+
+<!-- Screenshot net verfügbar: Ultimate Multisite GoCardless Webhook-Geheimnis-Feld -->
+
+Schléisst of, andeems Dir den Endpunkt späichert: klickt op de **Create webhook endpoint**-Knäppchen an duerno **späichert och Är Ultimate Multisite-Astellungen**.
+
+Dir sollt elo prett sinn, _GoCardless_ unzehuelen!

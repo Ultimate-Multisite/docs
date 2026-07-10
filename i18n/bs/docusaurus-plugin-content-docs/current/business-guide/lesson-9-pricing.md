@@ -3,17 +3,17 @@ title: 'Lekcija 9: Cjenovanje za profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcija 9: Cjenovna politika za profit
+# Lekcija 9: Cjenovna politika za profit {#lesson-9-pricing-for-profit}
 
 U Lekciji 5 postavili smo početne cjenovne razrede za FitSite planove. Sada ćemo usavršiti cjenovnu strategiju tehnikama koje povećavaju prihod, potiču nadogradnje i smanjuju otpadak članova.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 FitSite ima planove, šablone, checkout, branding i onboarding na mjestu. Početna cjenovna postavljanja bila je $49/$99/$199 mjesečno. Sada ćemo učiniti da ta cjenovna postavljanja rade još više.
 
-## Principi cjenovanja za platforme u niši
+## Principi cjenovanja za platforme u niši {#pricing-principles-for-niche-platforms}
 
-### Cijena na vrijednosti, ne na trošku
+### Cijena na vrijednosti, ne na trošku {#price-on-value-not-cost}
 
 Vaši troškovi hostinga možda iznose $5-$15 po klijentskom sajtu. To ne znači da vaša cijena mora biti $20. Vi ne prodajete hosting. Vi prodajete:
 
@@ -24,7 +24,7 @@ Vaši troškovi hostinga možda iznose $5-$15 po klijentskom sajtu. To ne znači
 
 Cjenujte na temelju vrijednosti koju pružate, a ne na temelju troška pružanja te vrijednosti.
 
-### Osnovati na alternativama
+### Osnovati na alternativama {#anchor-to-alternatives}
 
 Kada vlasnik fitness studija procjenjuje FitSite, uspoređuje ga s:
 
@@ -34,7 +34,7 @@ Kada vlasnik fitness studija procjenjuje FitSite, uspoređuje ga s:
 
 S $49-$199/mjesečno, FitSite je jeftiniji od developera, sposobniji od generičkih buildera i beskonačno bolji od nepostojećeg sajta.
 
-## Implementacija varijacija cijena
+## Implementacija varijacija cijena {#implementing-price-variations}
 
 Godišnje cjenovanje potiče posvećenost i smanjuje otpadak. Idite na karticu **Price Variations** svakog plana i dodajte godišnje opcije:
 
@@ -46,12 +46,12 @@ Godišnje cjenovanje potiče posvećenost i smanjuje otpadak. Idite na karticu *
 
 Dodajte polje **Period Selection** na vašu formu za naplatu kako bi kupci mogli prebacivati između mjesečnog i godišnjeg naplata. Pogledajte [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Zašto godišnje cjenovanje funkcionira
+### Zašto godišnje cjenovanje funkcionira {#why-annual-pricing-works}
 
 - **Za vas**: Gotov novac, manji otpadak (kupci koji plaćaju godišnje manje je vjerojatno da će otkazati sredinom perioda)
 - **Za njih**: Stvarni ušteda, predvidivost budžeta
 
-## Naknade za postavljanje
+## Naknade za postavljanje {#setup-fees}
 
 Razmislite o jednokratnoj naknadi za postavljanje za planove koji uključuju ručno konfiguriranje:
 
@@ -61,7 +61,7 @@ Razmislite o jednokratnoj naknadi za postavljanje za planove koji uključuju ru�
 
 Konfigurirajte naknade za postavljanje na cjenovni dio svakog plana. Pogledajte [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) za detalje.
 
-## Periodi probnog korišćenja
+## Periodi probnog korišćenja {#trial-periods}
 
 Nuditi probni period smanjuje frikciju pri registraciji, ali uvodi rizik od nekonverzije. Za FitSite:
 
@@ -70,11 +70,11 @@ Nuditi probni period smanjuje frikciju pri registraciji, ali uvodi rizik od neko
 
 Konfigurirajte probni period na cjenovnom dijelu Starter plana aktiviranjem prekidača **Offer Trial** i postavljanjem trajanja na 7 dana.
 
-### Kako učiniti da probni period konvertuje
+### Kako učiniti da probni period konvertuje {#making-trials-convert}
 
 Probni period radi samo ako kupac doživi vrijednost tokom tog perioda. Vaša sekvenca onboardinga (Lekcija 8) je kritična ovdje — e-mailovi dobrodošlice treba vremenski rasporediti kako bi pokrenuli angažman unutar 7 dana.
 
-## Kod popusta
+## Kod popusta {#discount-codes}
 
 Kreirajte strateške kodove popusta za specifične svrhe:
 
@@ -88,7 +88,7 @@ Idite na **Ultimate Multisite > Discount Codes** da biste ih kreirali. Pogledajt
 Popusti bi trebali biti strateški alati, a ne trajni elementi. Ako svi dobiju popust, to nije popust — to je vaša stvarna cijena. Koristite ih za specifične kampanje, preporuke i promocije ograničene vremenom.
 :::
 
-## Obrada poreza
+## Obrada poreza {#tax-handling}
 
 Ako poslujete u jurisdikciji koja zahtijeva naplatu poreza:
 
@@ -98,7 +98,7 @@ Ako poslujete u jurisdikciji koja zahtijeva naplatu poreza:
 
 Pogledajte [Tax Handling](/user-guide/payment-gateways/tax-handling) za detaljnu konfiguraciju. Ako služite klijente međunarodno, razmislite o [VAT addon](/addons/vat) za usklađenost s EU.
 
-## Pregled vaših cijena
+## Pregled vaših cijena {#reviewing-your-pricing}
 
 Nakon lansiranja, ponovo pregledajte cjenovnu politiku kvartalno. Pogledajte:
 
@@ -107,7 +107,7 @@ Nakon lansiranja, ponovo pregledajte cjenovnu politiku kvartalno. Pogledajte:
 - **Otpadak po planu**: Ako godišnji kupci imaju manji otpadak, agresivnije prodajte godišnje cjenovanje
 - **Cjenovna postavljanja konkurencije**: Što naplaćuju alternative? Je li pozicioniranje ispravno?
 
-## FitSite Mreža do sada
+## FitSite Mreža do sada {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Godišnje cjenovanje** sa 20% popustom kako bi se potaknula posvećenost
 - **Naknade za postavljanje** na višim nivoima kako bi se pokrio trud onboardinga

@@ -1,127 +1,140 @@
 ---
-title: Página da Conta do Cliente
+title: Página da Account do cliente
 sidebar_position: 14
-_i18n_hash: 92f8a44adfaf871b0a881fbc76bc0084
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Página da Conta do Seu Cliente (v2)
+# Página Account do seu cliente (v2) {#your-clients-account-page-v2}
 
-_**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
-Quando os clientes se inscrevem em um plano na sua rede, eles têm acesso a um site e ao seu painel com informações importantes sobre seus pagamentos, assinaturas, domínios, limitações do plano, etc...
+Quando os clientes assinam um plano na sua rede, eles recebem acesso a um site e ao Dashboard dele, com informações importantes sobre seus pagamentos, assinaturas, domínios, limitações do plano etc...
 
-Neste tutorial, vamos guiá-lo pela página da conta do cliente e você verá o que seus clientes podem ver e fazer dentro dela.
+Neste tutorial, vamos orientar você pela página Account do cliente, e você verá o que seus clientes podem ver e fazer dentro dela.
 
-## A Página da Conta
+## A página Account {#the-account-page}
 
-A página da conta pode ser acessada clicando em **Account** dentro do painel do seu cliente.
+A página Account pode ser acessada clicando em **Account** dentro do Dashboard do seu cliente.
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![Menu Account no Dashboard do cliente](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+Em redes de tenants soberanos, o Ultimate Multisite v2.13.0 mantém essa experiência de gerenciamento do cliente no site principal. Se um cliente abrir ações de conta, checkout, cobrança, fatura, gerenciamento de site, troca de modelo ou mapeamento de domínio a partir de um tenant soberano, a ação aponta de volta para o painel do cliente no site principal, para que os registros de cobrança e assinatura da rede continuem sendo a fonte autoritativa.
 
-Depois que um cliente clicar nela, ele verá uma visão geral de sua assinatura, endereço de cobrança, faturas, domínios, limitações do site e também poderá alterar o ****Modelo do Site** (se permitido na sua rede).
+Quando o cliente chega a partir de um tenant soberano, o painel do cliente no site principal pode incluir um link de retorno para o site do tenant. O link de retorno só é exibido quando o Ultimate Multisite consegue validar o destino de retorno como um dos sites do cliente, o que evita redirecionamentos arbitrários enquanto preserva o fluxo de trabalho do tenant.
 
-Eles também podem mudar a assinatura para outro plano ou comprar outro pacote ou serviço que você oferece. Vamos analisar cada seção separadamente.
+![Visão geral da página Account do cliente](/img/account-page/overview.png)
 
-### Visão Geral da Sua Assinatura:
+Depois que um cliente clicar nele, ele verá uma visão geral da sua assinatura, endereço de cobrança, faturas, domínios, limitações do site, e também poderá alterar o ****Modelo de Site** (se isso for permitido na sua rede)**.
 
-O primeiro bloco logo abaixo do nome do site do seu cliente mostra uma visão geral do plano atual e dos serviços/pacotes que foram adquiridos com ele. O bloco também exibe o número da assinatura, o valor inicial pago, quanto custa o plano e qualquer serviço/pacote, e quantas vezes a assinatura foi faturada. Eles também podem ver se a assinatura está **Ativa**, **Expirada** ou **Cancelada**.
+Ele também pode alterar a assinatura para outro plano, ou comprar outro pacote ou serviço que você oferece. Vamos analisar cada seção separadamente.
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+### Visão geral da sua assinatura: {#your-membership-overview}
 
-Logo abaixo desse bloco, seus clientes podem ver os blocos **Sobre Este Site** e **Limites do Site**. Esses blocos mostram todas as limitações que vêm com o plano: espaço em disco, posts, páginas, visitas, etc... Esses limites podem ser configurados em cada página de plano em **Ultimate Multisite > Products**.
+O primeiro bloco logo abaixo do nome do site dos seus clientes mostra uma visão geral do plano atual deles e dos serviços/pacotes que foram comprados com ele. O bloco também mostra o número da assinatura, o valor inicial pago por ela, quanto custam o plano e qualquer serviço/pacote, e quantas vezes eles foram cobrados por essa assinatura. Eles também podem ver se a assinatura está **Ativa** , **Expirada** ou **Cancelada**.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![Visão geral da assinatura mostrando plano, valor e detalhes de cobrança](/img/account-page/membership-card.png)
 
-No lado direito de **Sua Assinatura**, os clientes podem clicar em **Alterar**. Isso mostrará todos os planos e pacotes/serviços disponíveis. Se eles escolherem outro plano, as limitações do plano serão aplicadas no lugar das limitações atuais da assinatura - não importa se estão reduzindo ou aumentando o plano.
+Logo abaixo desse bloco, seus clientes podem ver os blocos **Sobre este site** e **Limites do site**. Esses blocos mostram a eles todas as limitações que acompanham o plano: espaço em disco, posts, páginas, visitas etc... Esses limites podem ser configurados na página de cada plano em **Ultimate Multisite > Produtos**.
 
-Agora, se seus clientes escolherem comprar pacotes ou serviços para esta assinatura atual - como mais espaço em disco ou visitas - a assinatura atual não será alterada, apenas os novos pacotes serão adicionados a ela.
+![Blocos Sobre este site e Limites do site mostrando limitações do plano](/img/account-page/site-limits.png)
 
-Observe que os códigos de cupom não podem ser adicionados nesta página de alteração de assinatura. Se o cliente usou um código de cupom na primeira compra da assinatura, o código também será aplicado a esta nova assinatura.
+No lado direito de **Sua assinatura** , os clientes podem clicar em **Alterar**. Isso mostrará a eles todos os planos e pacotes/serviços disponíveis. Se escolherem outro plano, as limitações do plano passarão a valer no lugar das limitações atuais da assinatura — não importa se eles estão fazendo downgrade ou upgrade dela.
 
-### Atualizando o Endereço de Cobrança:
+Agora, se seus clientes escolherem comprar pacotes ou serviços para essa assinatura atual — como mais espaço em disco ou visitas — a assinatura atual não será alterada; apenas os novos pacotes serão adicionados a ela.
 
-Na página da conta, seus clientes também podem atualizar seu endereço de cobrança. Eles só precisam clicar em **Update** ao lado de _Billing Address_.
+Observe que códigos de cupom não podem ser adicionados nesta página de alteração de assinatura. Se o cliente usou um código de cupom na primeira compra da assinatura, o código também será aplicado a esta nova assinatura.
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+### Atualizando o endereço de cobrança: {#updating-the-billing-address}
 
-Uma nova janela aparecerá para o cliente. Tudo que ele precisa fazer é preencher o novo endereço e clicar em _Save Changes_.
+Na página Account, seus clientes também podem atualizar o endereço de cobrança. Eles só precisam clicar em **Atualizar** ao lado de _Endereço de cobrança_.
 
-![Update billing address form](/img/admin/customers-list.png)
+![Seção Endereço de cobrança com botão Atualizar](/img/account-page/billing-address.png)
 
-### Alterando o Modelo do Site:
+Uma nova janela aparecerá para o seu cliente. Tudo o que ele precisa fazer é preencher o novo endereço e clicar em _Salvar alterações_.
 
-Para permitir que seus clientes alterem seus modelos de site, você precisa ir para **Ultimate Multisite > Settings > Sites** e ativar a opção **Allow Template Switching**.
+![Formulário de atualização do endereço de cobrança](/img/account-page/billing-address-form.png)
 
-Além disso, em **Ultimate Multisite > Products**, selecione seus planos e vá para a aba **Site Templates**. Certifique-se de que a opção **Allow Site Templates** esteja ativada e, em **Site Template Selection Mode**, a opção **Choose Available Site Templates** esteja selecionada.
+### Alterando o Modelo de Site: {#changing-the-site-template}
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+Para permitir que seus clientes alterem os modelos de seus sites, você precisa acessar **Ultimate Multisite > Configurações > Sites** e ativar a opção **Permitir troca de modelo**.
 
-Você poderá ver todos os modelos de site disponíveis em seu site. Escolha quais deseja tornar disponíveis e quais não deseja disponibilizar para os clientes assinantes deste plano. Observe que essas opções também afetam o formulário de checkout, então qualquer modelo escolhido como **Not Available** não aparecerá na página de registro para este plano.
+Além disso, em **Ultimate Multisite > Produtos**, selecione seus planos e acesse a aba **Modelos de Site**. Certifique-se de que a opção **Permitir Modelos de Site** esteja ativada e, em **Modo de seleção de Modelo de Site** , a opção **Escolher Modelos de Site disponíveis** esteja selecionada.
 
-Agora seus clientes podem clicar em **Change Site Template** dentro da página da conta.
+![Aba de modelos de site do produto com modo de seleção de modelo](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/admin/dashboard.png)
-Uma lista de todos os modelos de site disponíveis para este plano aparecerá para o cliente.
+Você poderá ver todos os modelos de site disponíveis no seu site. Escolha quais você quer disponibilizar e quais você não quer disponibilizar para seus clientes inscritos neste plano. Observe que essas opções também afetam o formulário de checkout, portanto qualquer modelo escolhido como **Não disponível** não aparecerá na página de registro deste plano.
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Agora seus clientes podem clicar em **Alterar Modelo de Site** dentro da página Account deles.
 
-Depois de selecionar o modelo que desejam mudar, eles serão solicitados a confirmar a alteração.
+![Botão Alterar Modelo de Site na página Account](/img/account-page/change-template-button.png)
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+O Ultimate Multisite 2.10.0 mostra um painel de troca de modelo redesenhado. O painel começa com um **cartão do modelo atual**, para que os clientes possam ver qual modelo está ativo antes de escolherem uma substituição.
 
-Depois de ativar a confirmação e clicar em **Process Switch**, o novo modelo de site será usado no site do seu cliente.
+Uma grade persistente de modelos de site disponíveis permanece visível enquanto os clientes analisam suas opções. Isso os ajuda a comparar os modelos permitidos para o plano deles sem perder de vista a seleção atual.
 
-### Adicionando Domínios Personalizados:
+![Lista de modelos de site disponíveis para o plano](/img/config/site-templates-list.png)
 
-Seus clientes também terão a opção de adicionar um domínio personalizado para este plano na página da conta. Para permitir que seus clientes usem domínios personalizados, vá para **Ultimate Multisite > Settings >** **Domain Mapping**.
+Depois de selecionar aquele para o qual desejam mudar, eles serão solicitados a confirmar a alteração.
 
-Ative a opção **Enable Domain Mapping**. Isso permitirá que seus clientes usem domínios personalizados em nível de rede.
+![Caixa de diálogo de confirmação de troca de modelo de site](/img/account-page/template-switch-confirm.png)
 
-Não se esqueça também de verificar se o mapeamento de domínio está habilitado por produto - pois você pode limitar um produto para não permitir que seus clientes usem domínios personalizados.
+Depois de ativar a confirmação e clicar em **Processar troca** , o novo modelo de site será usado no site do seu cliente.
 
-Vá para **Ultimate Multisite > Products**. Selecione o plano de sua escolha e vá para a aba **Custom Domains**. Ative a opção **Allow Custom Domains**.
+Os clientes também podem usar **Redefinir modelo atual** neste painel quando precisarem redefinir o site de volta para o modelo atualmente atribuído. Assim como ao mudar para outro modelo, redefinir um modelo pode sobrescrever o conteúdo do site, portanto os clientes só devem confirmar quando entenderem a ação de redefinição.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+### Adicionando domínios personalizados: {#adding-custom-domains}
 
-Isso permitirá que todos os clientes assinantes deste plano específico usem domínios personalizados. Agora, na página da Conta, seus clientes podem adicionar um domínio personalizado clicando em **Add Domain**.
+Seus clientes também terão a opção de adicionar um domínio personalizado para este plano na página Account deles. Para permitir que seus clientes usem domínios personalizados, vá para **Ultimate Multisite > Configurações >** **Mapeamento de domínio**.
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+Ative a opção **Habilitar mapeamento de domínio**. Isso permitirá que seus clientes usem domínios personalizados em nível de rede.
 
-A primeira janela que abre mostrará aos seus clientes uma mensagem instruindo-os sobre como atualizar seus registros DNS para que este domínio personalizado funcione em sua rede.
+Não se esqueça de também verificar se o mapeamento de domínio está habilitado por produto — porque você pode limitar um produto para não permitir que seus clientes usem domínios personalizados.
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+Vá para **Ultimate Multisite > Produtos**. Selecione o plano de sua escolha e vá para a aba **Domínios personalizados**. Ative a opção **Permitir domínios personalizados**.
 
-Esta mensagem pode ser editada (por você) em **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+![Aba Domínios personalizados com alternância Permitir domínios personalizados](/img/config/product-custom-domains.png)
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+Isso permitirá que todos os clientes assinantes deste plano específico usem domínios personalizados. Agora, na página Account, seus clientes podem adicionar um domínio personalizado clicando em **Adicionar domínio**.
 
-Depois de clicar em **Next Step**, seus clientes podem adicionar o nome do domínio personalizado e escolher se esse domínio personalizado será o principal. Observe que seus clientes podem usar mais de um domínio personalizado para seus sites, então podem escolher qual será o principal.
+![Botão Adicionar domínio na página Account](/img/account-page/add-domain-button.png)
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+A primeira janela que se abre mostrará aos seus clientes uma mensagem instruindo-os sobre como atualizar os registros DNS para fazer esse domínio personalizado funcionar na sua rede.
 
-Depois de clicar em **Add Domain**, o domínio será adicionada à conta do seu cliente. Tudo que eles precisam fazer agora é alterar os registros DNS deste domínio personalizado no registrador de domínios.
+![Instruções de DNS exibidas ao adicionar um domínio personalizado](/img/account-page/add-domain-dns.png)
 
-### Alterando a Senha:
+Essa mensagem pode ser editada (por você) em **Ultimate Multisite > Configurações > Mapeamento de domínio > Instruções para adicionar novo domínio**.
 
-Dentro do painel da conta, seus clientes também podem alterar sua senha clicando em **Change Password**.
+![Configuração Instruções para adicionar novo domínio em Mapeamento de domínio](/img/config/settings-domain-mapping.png)
 
-![Change Password button on account page](/img/admin/dashboard.png)
+Aqui está uma visão completa da página de configurações de mapeamento de domínio:
 
-Isso mostrará uma nova janela onde seus clientes precisarão preencher sua senha atual e, em seguida, preencher a nova senha que desejam usar.
+![Página completa de configurações de mapeamento de domínio](/img/config/settings-domain-mapping-full.png)
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+Depois de clicar em **Próxima etapa** , seus clientes podem adicionar o nome do domínio personalizado e escolher se esse domínio personalizado será o principal. Observe que seus clientes podem usar mais de um domínio personalizado para seus sites, então eles podem escolher qual será o principal.
 
-### Zona de Perigo:
+![Entrada de nome de domínio personalizado com opção de domínio principal](/img/account-page/add-domain-primary.png)
 
-Também temos duas opções exibidas na seção **Danger Zone**: **Delete Site** e **Delete Account**. Elas estão ambas na Zona de Perigo porque essas duas ações são irreversíveis. Se seus clientes excluírem seu site ou sua conta, eles não poderão recuperá-los.
+Depois de clicar em **Adicionar domínio** , o domínio será adicionado à Account do seu cliente. Tudo o que eles precisam fazer agora é alterar os registros DNS desse domínio personalizado no registrador de domínio deles.
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+### Alterando a senha: {#changing-password}
 
-Se seus clientes clicarem em qualquer uma dessas duas opções, será exibida uma janela onde eles precisarão ativar a opção para remover o site ou a conta e serão avisados de que essa ação não pode ser desfeita.
+Dentro do Dashboard da Account, seus clientes também podem alterar a senha clicando em **Alterar senha**.
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Botão Alterar senha na página Account](/img/account-page/change-password-button.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+Isso mostrará uma nova janela onde seus clientes precisarão preencher a senha atual e depois preencher a nova senha que desejam usar.
 
-Se eles excluírem seu site, sua conta e assinatura permanecerão intactas. Eles apenas perderão todo o conteúdo do site. Se eles excluírem sua conta, todos os sites, assinaturas e informações relacionadas a essa conta serão perdidos.
+![Formulário de alteração de senha com campos de senha atual e nova senha](/img/account-page/change-password-form.png)
+
+### Zona de Perigo: {#danger-zone}
+
+Também temos duas opções que são exibidas na parte **Zona de Perigo**: **Excluir site** e **Excluir Account**. Ambas ficam na parte Zona de Perigo porque essas duas ações são irreversíveis. Se seus clientes excluírem o site ou a Account deles, não poderão recuperá-los.
+
+![Zona de Perigo com opções Excluir site e Excluir Account](/img/account-page/danger-zone.png)
+
+Se seus clientes clicarem em qualquer uma dessas duas opções, será exibida uma janela onde eles precisarão ativar a opção para remover o site ou a Account e serão avisados de que essa ação não pode ser desfeita.
+
+![Caixa de diálogo de confirmação de Excluir site](/img/account-page/delete-site-confirm.png)
+
+![Caixa de diálogo de confirmação de Excluir Account](/img/account-page/delete-account-confirm.png)
+
+Se eles excluírem o site, a Account e a assinatura deles continuarão intactas. Eles apenas perderão todo o conteúdo do site. Se eles excluírem a Account, todos os sites, assinaturas e informações referentes a essa Account serão perdidos.

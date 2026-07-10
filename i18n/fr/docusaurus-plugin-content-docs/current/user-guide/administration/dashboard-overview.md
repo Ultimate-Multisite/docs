@@ -3,11 +3,11 @@ title: Vue d'ensemble du tableau de bord
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Vue d'ensemble du tableau de bord
+# Vue d'ensemble du tableau de bord {#dashboard-overview}
 
 Ultimate Multisite dispose d'un **Tableau de bord** dédié dans le menu Ultimate Multisite, et ajoute également des widgets au Tableau de bord réseau. Cet article couvre ce que vous verrez dans les deux endroits.
 
-## Le Tableau de bord réseau
+## Le Tableau de bord réseau {#the-network-dashboard}
 
 Ultimate Multisite injecte des widgets utiles dans le tableau de bord de niveau réseau trouvé à **Mes Sites → Admin Réseau → Tableau de bord**.
 
@@ -35,7 +35,7 @@ Voici ce que chaque widget fournit :
 
 ![Widget Actualités](/img/admin/network-dashboard-news.png)
 
-## Le Tableau de bord Ultimate Multisite
+## Le Tableau de bord Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Alors que le tableau de bord réseau présente des informations globales sur le réseau, le tableau de bord Ultimate Multisite (au niveau supérieur du menu Ultimate Multisite) présente des informations sur le service.
 

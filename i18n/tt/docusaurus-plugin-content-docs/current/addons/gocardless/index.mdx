@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: GoCardless түләве
+
+Клиентларыгызга Multisite Ultimate әгъзалыклары һәм продуктлары өчен GoCardless кулланып турыдан-туры дебет аша түләргә мөмкинлек бирегез!
+
+## Урнаштыру {#installation}
+
+1. 'ultimate-multisite-gocardless' ны '/wp-content/plugins/' директориясенә йөкләгез
+2. Плагинны WordPress эчендәге 'Plugins' менюсы аша активлаштырыгыз
+3. Плагинны көйләү өчен адымлап Wizard күрсәтмәләрен үтәгез
+
+## Куллану кулланмасы {#usage-guide}
+
+_GoCardless_ — **Европада һәм Бөекбританиядә** кулланыла торган, **турыдан-туры дебет** түләүләрен мөмкин иткән түләү шлюзы.
+
+**Ultimate Multisite: GoCardless Gateway** Ultimate Multisite өчен _GoCardless_ ярдәмен өсти, бу сезгә әлеге төбәктәге клиентларыгыздан турыдан-туры дебет кулланып түләү алырга мөмкинлек бирә.
+
+Бу дәреслектә Ultimate Multisite челтәрегездә _GoCardless_ аша түләүләр кабул итә башлау өчен аны ничек көйләргә кирәклеге аңлатылачак.
+
+_**Искәрмә: GoCardless түбәндәге валюталар белән генә эшли:**_ **EUR, GBP, AUD, SEK, һәм DKK.**
+
+## Өстәмәне урнаштыру {#installing-the-add-on}
+
+Иң элек, Ultimate Multisite өчен GoCardless өстәмәсен урнаштырырга кирәк булачак. Моны **Ultimate Multisite > Settings > Add-ons (ян панельдә)** бүлегенә кереп эшли аласыз. Аннары шул исемлектән GoCardless өстәмәсен сайлагыз.
+
+Өстәмә урнаштырылып активлаштырылганнан соң, **Ultimate Multisite > Settings > Payments** бүлегенә керегез, GoCardless опциясен кабызыгыз һәм саклагыз.
+
+![Түләү шлюзы көйләүләре](/img/config/settings-payment-gateways.png)
+
+## Керү токенын алу {#getting-an-access-token}
+
+_GoCardless_ та аккаунт төзегез (яки башта **сынап карарга** теләсәгез, тәкъдим ителгәнчә, _GoCardless_ sandbox-та). Аннары, кергәннән соң, **Developers** меню пунктына күчегез.
+
+<!-- Скриншот юк: GoCardless идарә панелендә Developers менюсы урыны күрсәтелгән -->
+
+**Developers** битендә экранның өске уң почмагындагы **Create** төймәсенә басыгыз, аннары **Access Token** опциясенә басыгыз.
+
+<!-- Скриншот юк: GoCardless Developers бите, Create төймәсе һәм Access Token опциясе белән -->
+
+Бу яңа модаль тәрәзә ача, анда сез яңа токен булдыра аласыз. Аңа танырлык исем бирегез һәм **Scope** менюсында **Read-write access** опциясен сайлавыгызга инаныгыз.
+
+<!-- Скриншот юк: Read-write scope белән яңа керү токены булдыру өчен GoCardless модале -->
+
+Керү токены экранда күренәчәк. Аны күчереп алыгыз һәм **Ultimate Multisite > Settings > Payments > GoCardless** менюсына куегыз.
+
+Аны дөрес кырда урнаштыруыгызга инаныгыз. Әгәр ул **эш токе** **ны** булса, токенны куйганчы **sandbox режимын сүндерегез**.
+
+![GoCardless белән түләү шлюзы көйләүләре](/img/config/settings-payment-gateways.png)
+
+<!-- Скриншот юк: Ultimate Multisite түләү көйләүләрендә GoCardless токен кырлары -->
+
+Беренче адым өчен шуның белән тәмам. Киләсе итеп, вебхук тыңлаучысын көйләргә кирәк.
+
+## Вебхук тыңлаучысын көйләү {#setting-up-the-webhook-listener}
+
+Язылулар белән эшләгәндә, Ultimate Multisite язылу статусы үзгәрешләре, яңа түләүләр ясалуы һәм шуңа охшаш башка нәрсәләр турында хәбәрдар булырга тиеш.
+
+Түләү шлюзлары Ultimate Multisite-ны бу үзгәрешләр турында **вебхук чакырулары** ярдәмендә хәбәр итә. Шуңа күрә интеграция 100% эшләсен өчен, без _GoCardless_ ка бөтен шул мәгълүмат белән кайсы URL-га мөрәҗәгать итәргә кирәклеген әйтергә тиеш.
+
+**GoCardless > Developers** панелегезгә кире кайтыгыз һәм Create төймәсенә яңадан басыгыз, ләкин бу юлы **Webhook endpoint** опциясен сайлагыз.
+
+<!-- Скриншот юк: Webhook endpoint опциясе белән GoCardless Developers бите -->Вебхук endpoint опцияләре белән яңа тәрәзә ачылачак. Ул вебхук URL-ын сорый, шуңа күрә **Ultimate Multisite көйләүләре > Payments > GoCardless** бүлегенә кире кайтыгыз һәм анда күрсәтелгән вебхук URL-ын күчерегез:
+
+<!-- Скриншот юк: вебхук URL-ы күрсәтелгән Ultimate Multisite GoCardless көйләүләре -->
+
+Өстәмә рәвештә, вебхук чакыруларыгызны имзалау өчен кулланылачак **вебхук серен** кертә аласыз. Бу кырга нәрсә кертсәгез дә, аны **Ultimate Multisite Webhook Secret кырына** да кертергә кирәк булачак.
+
+<!-- Скриншот юк: URL һәм сер кырлары белән GoCardless вебхук endpoint көйләү формасы -->
+
+<!-- Скриншот юк: Ultimate Multisite GoCardless вебхук сере кыры -->
+
+Endpoint-ны саклау өчен **Create webhook endpoint** төймәсенә басып тәмамлагыз, аннары **Ultimate Multisite көйләүләрегезне дә саклагыз**.
+
+Хәзер _GoCardless_ кабул итәргә әзер булырга тиешсез!

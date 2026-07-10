@@ -3,11 +3,11 @@ title: Mbuilder uye Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 inoratira **Plugin Builder & Sandbox System**, inoramba kuti AI assistant iwe zvinogona kuita, kupa, uye kuramba (manage) WordPress plugins pamusoro pe network yako — zvose izvi zvichitika mumhando yakasimba, inosimbisa (isolated sandbox environment).
 
-## Overview
+## Overview {#overview}
 
 Plugin Builder inoratira kuti AI assistant iwe dzinogona kuita, kunyora custom WordPress plugins nekuti munhu anogona kutaura. Plugins dzakagadzirwa dzine chidzidzo (validated), dziri mumapuro (stored), uye dziri kuita (activated) mu sandbox layer panguva yakasiyana-siyana pamba, panguva dziri kuita zvinhu pamusoro pe site yakanaka.
 
@@ -17,7 +17,7 @@ Zvinogona kushandiswa miviri:
 - Kuratidza (prototyping) zvinhu zvine kuita WordPress hooks kana custom post types.
 - Kuratidza scripts dziri kudzidzika (automation scripts) dzinogona kutamba (batch operations).
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Kuti upereke plugins, tanga chat interface ya Gratis AI Agent uye ndizivisa zvinhu zvako. Sei, sei:
 
@@ -32,7 +32,7 @@ AI iwe dzichatanga kuita izvi:
 
 Unogona kuratidza zvinoreva nekuita zvinhu pamusoro pe kunzwisisa munzvimbo yenyu panguva yakasiyana-siyana pamba chinoti.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Kuti upereke plugin yakagadzirwa mu sandbox kunosimbisa (activate) kunoenda kune kunosimbisa pamusoro pe network yakanaka. Sandbox inoratira izvi:
 

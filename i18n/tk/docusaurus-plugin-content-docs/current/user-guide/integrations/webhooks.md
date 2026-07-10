@@ -3,7 +3,7 @@ title: Webhooklar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooklar Üstü Bir Bakış (v2)
+# Webhooklar Üstü Bir Bakış (v2) {#a-first-look-on-webhooks-v2}
 
 _**DİKKAT: Bu özellik veya makale yalnız ileri düzey kullanıcılar içindir.**_
 
@@ -11,7 +11,7 @@ _**DİKKAT: Bu özellik veya makale yalnız ileri düzey kullanıcılar içindir
 
 Bu, her olay tetiklendiğinde Ultimate Multisite'dan başka bir CRM'e veya sisteme belirli verileri aktarmanız veya entegre etmeniz gerektiğinde faydalıdır. Örneğin, yeni bir kullanıcı hesabı oluşturulduğunda kullanıcının adını ve e-posta adresini bir e-posta listesine göndermeniz gerekebilir.
 
-## Webhook Nasıl Oluşturulur
+## Webhook Nasıl Oluşturulur {#how-to-create-a-webhook}
 
 Webhook oluşturmak için ağ yöneticisi (network admin) panelinize gidin. **Ultimate Multisite > Webhooks > Yeni Webhook Ekle** seçeneğine tıklayın.
 

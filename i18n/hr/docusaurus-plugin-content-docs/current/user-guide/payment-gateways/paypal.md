@@ -3,7 +3,7 @@ title: Postavljanje PayPal-a
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Postavljanje PayPal Gatewaya (v2)
+# Postavljanje PayPal Gatewaya (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x.**_
 
@@ -13,13 +13,13 @@ Slično kao i Stripe, PayPal je široko korišten za online plaćanja, pogotovo 
 
 Napomena: trebate imati **PayPal poslovnu račun** kako biste dobili API kredencijale potrebne za ovu integraciju.
 
-## Aktiviranje PayPala na vašoj mreži
+## Aktiviranje PayPala na vašoj mreži {#enabling-paypal-on-your-network}
 
 Da biste omogućili PayPal kao dostupni način plaćanja na svojoj mreži, idite na karticu **Ultimate Multisite > Settings > Payments** i označite polje pored PayPal-a.
 
 ![Aktiviranje PayPala u aktivnim plaćanjima](/img/config/settings-payment-gateways.png)
 
-## Korištenje vodiča za postavljanje (guided setup wizard)
+## Korištenje vodiča za postavljanje (guided setup wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 dodaje vodič za postavljanje PayPala u postavke plaćanja. Nakon što aktivirate PayPal, koristite ovaj vodič na **Ultimate Multisite > Settings > Payments** kako biste odabrali kako želite povezati gateway i potvrdili koje kredencijale su vam još potrebne prije spremanja.
 
@@ -30,7 +30,7 @@ Vodič podržava dva puta za postavljanje:
 
 Ako ne vidite opciju OAuth u wizardu, dovršite postupak ručnog unosa kredencijala ispod. Gateway radi s istim PayPal Business API kredencijalima kao i prethodne verzije Ultimate Multisite 2.x.
 
-## Dobijanje PayPal API kredencijala
+## Dobijanje PayPal API kredencijala {#getting-the-paypal-api-credentials}
 
 Kada se PayPal aktivira kao plaćanje gateway, morat ćete popuniti polja za **API korisničko ime** (Username), **API lozinku** (Password) i **API potpis** (Signature) PayPal API-a.
 

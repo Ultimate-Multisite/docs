@@ -1,34 +1,42 @@
 ---
 title: Tovuti za Wateja
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Tovuti za Wateja Wako (v2)
+# Tovuti za Mteja Wako (v2) {#your-clients-websites-v2}
 
-Baada ya kujisajili kwenye mtandao wako, wateja wako wanaweza kufikia dashibodi yao.
+Baada ya kujisajili kwenye mtandao wako, wateja wako wanaweza kufikia Dashboard yao.
 
-Mbali na ukurasa wa **Account**, ambapo wanaweza kuona taarifa muhimu kuhusu malipo yao, uanachama, vikoa, vikomo vya mpango na mengineyo, pia wana uwezo wa kufikia ukurasa wa **My Sites**, ambapo wanaweza kuona na kusimamia tovuti zao zote. Wanachohitaji kufanya ni kubofya My Sites kwenye dashibodi yao.
+Kando na ukurasa wa **Account**, ambapo wanaweza kuona taarifa muhimu kuhusu malipo yao, uanachama, domains, vikomo vya mpango na zaidi, pia wana ufikiaji wa ukurasa wa **Tovuti Zangu**, ambapo wanaweza kuona na kusimamia tovuti zao zote. Wanachopaswa kufanya ni kubofya Tovuti Zangu kwenye Dashboard yao.
 
-![Kiungo cha My Sites kwenye dashibodi ya mteja](/img/admin/customers-list.png)
+![Kiungo cha Tovuti Zangu kwenye Dashboard ya mteja](/img/account-page/my-sites-link.png)
 
-Wataonyeshwa tovuti zao zote, pamoja na kitufe cha **Manage** chini ya kila moja. Wakibofya, wataelekezwa kwenye **dashibodi ya tovuti hiyo hususa**.
+Wataonyeshwa tovuti zao zote, zikiwa na kitufe cha **Simamia** moja kwa moja chini ya kila moja. Wakikibofya, wataelekezwa kwenye **Dashboard ya tovuti hii mahususi**.
 
-Pia wanaweza kuona ni tovuti ipi kati ya zao ambayo ni ya **msingi** kwa mipango inayowaruhusu kuwa na tovuti zaidi ya moja.
+Pia wanaweza kuona ni tovuti ipi kati ya tovuti zao ndiyo ya **msingi** kwa mipango inayowaruhusu kuwa na zaidi ya tovuti moja.
 
-![Ukurasa wa My Sites unaoonyesha tovuti za mteja na vitufe vya Manage](/img/admin/customers-list.png)
+![Ukurasa wa Tovuti Zangu unaoonyesha tovuti za mteja zikiwa na vitufe vya Simamia](/img/account-page/my-sites-page.png)
+
+Huu hapa mwonekano kamili wa kiolesura cha kuhariri tovuti:
+
+![Kiolesura kamili cha kuhariri tovuti](/img/admin/site-edit-full.png)
 
 Ikiwa wanataka kubadilisha tovuti yao ya msingi, wanahitaji kwenda kwenye ukurasa wa Account kwa kubofya menyu ya **Account**.
 
-![Kiungo cha menyu ya Account kwenye dashibodi ya mteja](/img/admin/customers-list.png)
+![Kiungo cha menyu ya Account kwenye Dashboard ya mteja](/img/account-page/account-menu.png)
 
-Kisha, wabofye **Change Default Site**.
+Pia unaweza kuona na kuhariri maelezo ya mteja:
 
-![Kitufe cha Change Default Site kwenye ukurasa wa account](/img/admin/customers-list.png)
+![Kiolesura cha kuhariri mteja](/img/admin/customer-edit.png)
 
-Dirisha ibukizi litaonekana. Bofya kwenye orodha ya kushuka na uchague tovuti unayotaka kuifanya kuwa tovuti ya msingi.
+Kisha, wanapaswa kubofya **Badilisha Tovuti Chaguomsingi**.
 
-![Uchaguzi wa Change Default Site kupitia orodha ya kushuka](/img/admin/customers-list.png)
+![Kitufe cha Badilisha Tovuti Chaguomsingi kwenye ukurasa wa Account](/img/account-page/change-default-site.png)
 
-Kisha, bofya tu **Change Default Site** na umemaliza!
+Dirisha ibukizi litaonekana. Bofya kwenye orodha kunjuzi na uchague tovuti unayotaka kuifanya tovuti ya msingi.
 
-![Kuthibitisha mabadiliko ya tovuti ya msingi](/img/admin/customers-list.png)
+![Uteuzi wa orodha kunjuzi ya Badilisha Tovuti Chaguomsingi](/img/account-page/change-default-site-dropdown.png)
+
+Kisha, bofya tu **Badilisha Tovuti Chaguomsingi** na umemaliza!
+
+![Kuthibitisha mabadiliko ya tovuti chaguomsingi](/img/account-page/change-default-site-confirm.png)

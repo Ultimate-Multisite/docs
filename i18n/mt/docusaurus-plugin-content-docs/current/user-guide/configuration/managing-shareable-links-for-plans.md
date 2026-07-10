@@ -3,7 +3,7 @@ title: Id-Dimamjar tal Linki Sharabli għall-Planijiet
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Aħjar Link Shareabili għall-Planijiet
+# Aħjar Link Shareabili għall-Planijiet {#managing-shareable-links-for-plans}
 
 Ultimate Multisite jofflek l-opzione biex tqassma linkijiet tal-planijiet direttament mal-clientijiet tiegħek. Biex tgħmel dan, għandi tmur għal edit pages ta qafas planijiet tiegħek u tikkliċċja fuq il-button _Click to copy the Shareable Link_.
 

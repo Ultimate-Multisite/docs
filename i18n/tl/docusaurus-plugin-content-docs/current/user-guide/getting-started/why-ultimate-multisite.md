@@ -3,11 +3,11 @@ title: Bakit Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Bakit ang Ultimate Multisite
+# Bakit ang Ultimate Multisite {#why-ultimate-multisite}
 
 Kung nakarating ka sa artikulong ito, malamang narinig mo na ang plugin namin ang solusyon para maisakatuparan ang ideya ng iyong negosyo. Sana ay mayroon kang mga sagot na kailangan mo pagkatapos basahin itong bahagi.
 
-## Ano ang Ultimate Multisite?
+## Ano ang Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ang Ultimate Multisite ay isang WordPress Multisite plugin na nagbibigay-daan sa iyo na mag-alok ng WaaS (Website as a Service) sa iyong mga customer. Gamit ang aming plugin, maaari kang magkaroon ng iba't ibang subscription tiers at maaaring magbayad ang mga customer sa iyo ng paulit-ulit na bayad para magkaroon sila ng site na naka-host sa iyong Multisite network.
 
@@ -15,7 +15,7 @@ Pinapayagan ka ng Ultimate Multisite na tumanggap ng iyong mga bayad gamit ang i
 
 At ito lang ang simula dahil maaari mong palawakin ang mga function nito gamit ang add-ons at webhooks.
 
-## Iba pang mga feature
+## Iba pang mga feature {#other-features}
 
 Nag-aalok din ang Ultimate Multisite ng:
 
@@ -33,11 +33,11 @@ At mas advanced pa rito:
 
 * Search and Replace API: Maaari mo ring lagyan ng annotation ang site templates ng mga placeholder tulad ng {{site_name}} at gamitin ang Search and Replace API para awtomatikong punan ang mga placeholder na iyon ng impormasyong ibinibigay ng iyong customer pagkatapos mag-sign up.
 
-## Mga Kaso ng Paggamit (Use cases)
+## Mga Kaso ng Paggamit (Use cases) {#use-cases}
 
 Ngayon ay oras na para makita ang ilang posibleng gamit ng Ultimate Multisite.
 
-### Kaso 1: Isang Ahensya (An Agency)
+### Kaso 1: Isang Ahensya (An Agency) {#case-1-an-agency}
 
 Karaniwan, ang pangunahing kasanayan ng isang ahensya ay nakasalalay sa disenyo ng mga website na may mga aspeto tulad ng kanilang hosting o marketing na nakalista bilang karagdagang serbisyo.
 
@@ -47,7 +47,7 @@ Ang mahigpit na kontrol sa mga plugin at theme ay pinapanatili batay sa bawat pr
 
 Makakahanap ng kapayapaan ang mga agency sa pamamagitan ng Ultimate Multisite na nagpapahintulot sa kanila na gawin ang kanilang pinakamagaling—ang magdisenyo ng mga pambihirang website.
 
-### Kaso 2: Niche Provider
+### Kaso 2: Niche Provider {#case-2-niche-provider}
 
 May lumang kasabihan na nagsasabi, “Gawin mo nang isa at gawin mo ito nang mahusay.” Para sa maraming espesyalista, ang ibig sabihin nito ay gumawa ng produkto o serbisyo batay sa iisang pangunahing ideya.
 
@@ -57,7 +57,7 @@ Isa sa mga makabagong feature ng Ultimate Multisite, ang template site ay isa ku
 
 Para sa isang provider ng niche sites at serbisyo, nagbibigay ito ng walang katumbas na bentahe sa kakayahang agad na lumikha ng isang handa nang site na may mga custom plugins at disenyo. Ang customer ay kailangan lang magbigay ng minimal na input para matapos ang serbisyo.
 
-### Kaso 3: WordPress Web Hosting
+### Kaso 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Maraming paraan kung paano mag-host ng WordPress sites, ngunit bihira itong maging simple tulad ng pagbibigay ng web space sa isang customer na may pre-installed na bersyon ng WordPress. Ito ay dahil maraming desisyon at konsiderasyon ang kailangang pagsamahin upang magbigay ng makabuluhang serbisyo.
 

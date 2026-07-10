@@ -1,42 +1,40 @@
 ---
-title: Înregistrează un Cont prin Zapier
+title: Înregistrează un Account prin Zapier
 sidebar_position: 1
-_i18n_hash: e769e5eddf428f2eac478f5b8cd4592d
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Eveniment: Înregistrează un cont prin Zapier
+# Eveniment: Înregistrarea unui Account prin Zapier {#event-register-an-account-via-zapier}
 
-În articolul [Integrarea Ultimate Multisite cu Zapier](zapier.md), am discutat despre cum poți folosi Zapier pentru a efectua diferite acțiuni în Ultimate Multisite pe baza declanșatoarelor și evenimentelor. În acest articol, îți vom arăta cum poți integra aplicații externe. Vom folosi Google Sheets ca sursă de date și vom trimite informațiile către Ultimate Multisite pentru a înregistra un cont.
+În articolul [Integrarea Ultimate Multisite cu Zapier](zapier.md), am discutat cum să folosești Zapier pentru a efectua diferite acțiuni în Ultimate Multisite pe baza triggerelor și evenimentelor. În acest articol, vom arăta cum poți integra aplicații terțe. Vom folosi Google Sheets ca sursă de date și vom trimite informațiile către Ultimate Multisite pentru a înregistra un Account.
 
-Mai întâi, trebuie să creezi un **Google Sheet** în Google Drive. Asigură-te că definești corect fiecare coloană pentru a putea mapa datele cu ușurință ulterior.
+Înainte de a conecta Zapier, mergi la **Ultimate Multisite > Settings > API & Webhooks** și confirmă că API este activat. Copiază API Key și API Secret de pe acest ecran când Zapier solicită credențialele Account Ultimate Multisite.
 
-![Google Sheet cu coloane pentru datele clientului](/img/admin/webhooks-list.png)După ce ai creat un Google Sheet, te poți conecta la contul tău Zapier și poți începe să creezi un zap.
+![Setări API și Webhooks cu opțiunile API Key, API Secret și Enable API](/img/admin/settings-api-webhooks.png)
 
-![Panoul de control Zapier pentru a începe crearea unui zap](/img/admin/webhooks-list.png)În câmpul de căutare pentru **„App event"** selectează **„Google Sheets"**
+Mai întâi, trebuie să creezi un **Google Sheet** în Google Drive. Asigură-te că definești corect fiecare coloană, astfel încât să poți mapa cu ușurință datele mai târziu.
 
-![Selectarea Google Sheets ca eveniment de aplicație](/img/admin/webhooks-list.png)
+După crearea unui Google sheet, te poți autentifica în contul tău Zapier și poți începe să creezi un zap.
 
-Apoi, pentru câmpul „**Event**" selectează „**New spreadsheet row**" și apasă „**Continue**"
+Sub câmpul de căutare pentru **"App event"** selectează **"Google Sheets"**
 
-![Selectarea evenimentului New spreadsheet row în Zapier](/img/admin/webhooks-list.png)Următorul pas îți va cere să selectezi un **Cont Google** unde este salvat **Google Sheet**-ul. Așadar, asigură-te că este specificat contul Google corect.
 
-![Selectarea Contului Google pentru Google Sheet](/img/admin/webhooks-list.png)
+Apoi, pentru câmpul "**Event** " selectează "**New spreadsheet row** " și apasă "**Continue** "
 
-La secțiunea „**Set up trigger**", va trebui să selectezi și să specifici foaia de calcul Google și worksheet-ul pe care le vei folosi ca sursă de date. Completează aceste câmpuri și apasă „**Continue**"
+Pasul următor îți va cere să selectezi un **Google Account** unde este salvat **Google Sheet**. Așadar, asigură-te doar că este specificat contul google corect.
 
-![Configurarea declanșatorului cu selectarea foii de calcul și a worksheet-ului](/img/admin/webhooks-list.png)Următorul pas este să „**testezi declanșatorul**" pentru a te asigura că foaia ta Google este conectată corect.
 
-![Pasul de testare a declanșatorului în Zapier](/img/admin/webhooks-list.png)Dacă testul este reușit, ar trebui să vezi rezultatul afișând câteva valori din foile tale de calcul. Apasă „**Continue**" pentru a continua.
+Sub **"Set up trigger** ", va trebui să selectezi și să specifici foaia de calcul google și foaia de lucru pe care le vei folosi, de unde vor proveni datele. Completează-le și apasă "**Continue** "
 
-![Test de declanșator reușit care afișează valorile din foaia de calcul](/img/admin/webhooks-list.png)Următorul pas este să configurezi a doua acțiune care va crea sau înregistra un cont în Ultimate Multisite. În câmpul de căutare selectează „**Ultimate Multisite(2.0.2)**"
+Următorul pas este să "**test your trigger** " pentru a te asigura că google sheet este conectat corect.
 
-![Selectarea Ultimate Multisite ca aplicație de acțiune](/img/admin/webhooks-list.png)
+Dacă testul este reușit, ar trebui să vezi rezultatul afișând câteva valori din foile tale de calcul. Fă clic pe "**Continue** " pentru a continua.
 
-La câmpul „**Event**", selectează „**Register an Account in Ultimate Multisite**" apoi apasă butonul „**Continue**".
+Următorul pas este să configurezi a doua acțiune, care va crea sau înregistra un Account în Ultimate Multisite. În câmpul de căutare selectează "**Ultimate Multisite(2.0.2)** "
 
-![Evenimentul de acțiune Register an Account in Ultimate Multisite](/img/admin/webhooks-list.png)La secțiunea „**Set up an action**", vei vedea diferite câmpuri disponibile pentru datele clientului, abonamente, produse etc. Poți mapa valorile din foaia ta Google și le poți atribui câmpului corespunzător în care trebuie să fie completate, așa cum se arată în captura de ecran de mai jos.
 
-![Maparea valorilor din Google Sheet în câmpurile Ultimate Multisite](/img/admin/webhooks-list.png)
+Sub câmpul "**Event** ", selectează "**Register an Account in Ultimate Multisite** ", apoi fă clic pe butonul "**Continue** ".
 
-După ce ai mapat valorile, poți testa acțiunea.
+Sub "**Set up an action** ", vei vedea diferite câmpuri disponibile pentru datele clientului, membership-uri, produse etc. Poți mapa valorile din google sheet și le poți atribui câmpului corespunzător în care ar trebui populate, așa cum se arată în captura de ecran de mai jos.
 
-![Testarea acțiunii Zapier de înregistrare a contului](/img/admin/webhooks-list.png)
+
+După maparea valorilor, poți testa acțiunea.

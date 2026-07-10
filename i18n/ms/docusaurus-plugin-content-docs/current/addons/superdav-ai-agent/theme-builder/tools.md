@@ -1,71 +1,71 @@
 ---
 title: Alat dan Konfigurasi
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Alat dan Konfigurasi
+# Alat dan Konfigurasi {#tools-and-configuration}
 
-Theme Builder menggunakan set alat untuk menganalisis, mereka bentuk, dan membina laman web WordPress anda. Dalam versi 1.16.0, **sd-ai-agent/site-scrape kini adalah alat Tier 1**, menjadikannya tersedia secara lalai dalam Theme Builder.
+Theme Builder menggunakan satu set alat untuk menganalisis, mereka bentuk, dan membina tapak WordPress anda. Dalam versi 1.16.0, **sd-ai-agent/site-scrape kini ialah alat Tahap 1**, menjadikannya tersedia secara lalai dalam Theme Builder. Superdav AI Agent v1.18.0 juga memperkenalkan pakej pendamping Advanced yang diedarkan secara berasingan untuk aliran kerja pembangun yang dipercayai; alat tersebut bukan sebahagian daripada pakej teras WordPress.org dan mesti dipasang serta dibenarkan secara berasingan.
 
-## Alat yang Tersedia
+## Alat Tersedia {#available-tools}
 
-### Alat Tier 1 (Sentiasa Tersedia)
+### Alat Tahap 1 (Sentiasa Tersedia) {#tier-1-tools-always-available}
 
-Alat Tier 1 tersedia secara lalai dalam Theme Builder tanpa sebarang konfigurasi tambahan.
+Alat Tahap 1 tersedia secara lalai dalam Theme Builder tanpa sebarang konfigurasi tambahan.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Tujuan:** Menganalisis laman web sedia ada untuk mengekstrak inspirasi reka bentuk, struktur kandungan, dan kefungsian.
+**Tujuan:** Menganalisis laman web sedia ada untuk mengekstrak inspirasi reka bentuk, struktur kandungan, dan fungsi.
 
 **Keupayaan:**
 
-- **Analisis laman web** — mengikis dan menganalisis laman web pesaing atau sumber inspirasi
-- **Pengekstrakan reka bentuk** — mengenal pasti warna, fon, dan corak susun atur
+- **Analisis laman web** — mengikis dan menganalisis laman web pesaing atau inspirasi
+- **Pengekstrakan reka bentuk** — mengenal pasti warna, fon, dan corak tataletak
 - **Struktur kandungan** — memahami organisasi dan hierarki halaman
-- **Pengesanan ciri** — mengenal pasti plugin dan kefungsian
-- **Analisis prestasi** — menyemak kelajuan dan pengoptimuman halaman
-- **Analisis SEO** — menyemak meta tags dan structured data
+- **Pengesanan ciri** — mengenal pasti plugin dan fungsi
+- **Analisis prestasi** — menyemak kelajuan halaman dan pengoptimuman
+- **Analisis SEO** — menyemak tag meta dan data berstruktur
 
-**Cara Penggunaan:**
+**Penggunaan:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Analisis reka bentuk example.com dan gunakannya sebagai inspirasi untuk tapak saya.
 ```
 
 **Apa yang Diekstrak:**
 
 - Palet warna dan penggunaan warna
 - Tipografi (fon dan saiz)
-- Struktur susun atur dan jarak
+- Struktur tataletak dan jarak
 - Corak navigasi
 - Organisasi kandungan
 - Penggunaan imej dan media
 - Elemen interaktif
-- Kebolehcapaian mudah alih (Mobile responsiveness)
+- Responsif mudah alih
 
 **Batasan:**
 
-- Tidak boleh mengikis laman web yang dilindungi kata laluan
-- Menghormati robots.txt dan polisi laman web
+- Tidak boleh mengikis tapak yang dilindungi kata laluan
+- Menghormati robots.txt dan dasar tapak
 - Mungkin tidak menangkap kandungan dinamik
-- Laman web yang berat dengan JavaScript mungkin mempunyai analisis terhad
-- Laman web yang besar mungkin mengambil masa lebih lama untuk dianalisis
+- Tapak yang berat JavaScript mungkin mempunyai analisis terhad
+- Tapak besar mungkin mengambil masa lebih lama untuk dianalisis
 
-### Alat Tier 2 (Pilihan)
+### Alat Tahap 2 (Pilihan) {#tier-2-tools-optional}
 
-Alat Tier 2 tersedia apabila diaktifkan secara eksplisit dalam tetapan Theme Builder.
+Alat Tahap 2 tersedia apabila didayakan secara jelas dalam tetapan Theme Builder.
 
-#### Advanced Analytics
+#### Analitik Lanjutan {#advanced-analytics}
 
 Menyediakan metrik prestasi terperinci:
 
 - Masa muat halaman
 - Core Web Vitals
 - Skor SEO
-- Skor Kebolehcapaian (Accessibility score)
-- Skor amalan terbaik (Best practices score)
+- Skor kebolehcapaian
+- Skor amalan terbaik
 
-#### Content Optimizer
+#### Pengoptimum Kandungan {#content-optimizer}
 
 Menganalisis dan mencadangkan penambahbaikan untuk:
 
@@ -73,23 +73,23 @@ Menganalisis dan mencadangkan penambahbaikan untuk:
 - Pengoptimuman SEO
 - Penggunaan kata kunci
 - Struktur kandungan
-- Penempatan Call-to-action
+- Peletakan seruan tindakan
 
-### Alat Tier 3 (Premium)
+### Alat Tahap 3 (Premium) {#tier-3-tools-premium}
 
-Alat Tier 3 memerlukan konfigurasi tambahan atau ciri premium.
+Alat Tahap 3 memerlukan konfigurasi tambahan atau ciri premium.
 
-#### AI Content Generator
+#### Penjana Kandungan AI {#ai-content-generator}
 
 Menjana kandungan untuk:
 
 - Penerangan produk
 - Halaman perkhidmatan
-- Pos blog
-- Meta descriptions
-- Teks Call-to-action
+- Catatan blog
+- Penerangan meta
+- Salinan seruan tindakan
 
-#### Advanced Design Tools
+#### Alat Reka Bentuk Lanjutan {#advanced-design-tools}
 
 Menyediakan keupayaan reka bentuk lanjutan:
 
@@ -99,157 +99,179 @@ Menyediakan keupayaan reka bentuk lanjutan:
 - Teori warna lanjutan
 - Pengoptimuman tipografi
 
-## Konfigurasi Alat
+### Alat Pendamping Advanced (Pakej Berasingan) {#advanced-companion-tools-separate-package}
 
-### Mengaktifkan Alat
+Pakej pendamping Advanced diedarkan secara berasingan daripada keluaran teras Superdav AI Agent. Ia bertujuan untuk persekitaran pembangun dan pemilik tapak yang dipercayai, di mana pentadbir secara jelas membenarkan agent menggunakan alat berimpak tinggi.
 
-Untuk mengaktifkan alat tambahan dalam Theme Builder:
+Keupayaan pendamping Advanced boleh termasuk:
 
-1. Navigasi ke **Gratis AI Agent → Settings**
-2. Pergi ke **Theme Builder → Tools**
-3. Tukar alat pada/mati mengikut keperluan
+- **Alat sistem fail** — memeriksa dan mengubah suai fail yang diluluskan dalam persekitaran dipercayai
+- **Alat pangkalan data** — membuat pertanyaan atau mengemas kini data tapak apabila dibenarkan secara jelas
+- **Alat WP-CLI** — menjalankan arahan penyelenggaraan dan pemeriksaan WordPress
+- **Alat penghantar REST** — memanggil endpoint REST berdaftar melalui aliran kerja penghantaran terkawal
+- **Alat pembina plugin** — membina rangka dan mengulang pada kod plugin
+- **Alat petikan Git** — mencipta petikan sebelum operasi pembangun yang berisiko
+- **Alat pengurusan pengguna** — membantu menyemak atau melaraskan rekod pengguna jika dibenarkan
+- **Alat penanda aras** — menjalankan penanda aras prestasi atau keupayaan untuk semakan pembangunan
+
+Jangan dokumentasikan alat ini sebagai alat Theme Builder yang tersedia secara umum untuk setiap pemasangan. Alat ini hanya tersedia apabila pakej pendamping Advanced dipasang, didayakan, dan dihadkan kepada pentadbir yang dipercayai.
+
+## Konfigurasi Alat {#tool-configuration}
+
+### Mendayakan Alat {#enabling-tools}
+
+Untuk mendayakan alat tambahan dalam Theme Builder:
+
+1. Navigasi ke **Gratis AI Agent → Tetapan**
+2. Pergi ke **Theme Builder → Alat**
+3. Togol alat hidup/mati mengikut keperluan
 4. Simpan tetapan
 
-### Kebenaran Alat
+### Kebenaran Alat {#tool-permissions}
 
 Sesetengah alat memerlukan kebenaran:
 
-- **Site scraping** — memerlukan akses internet
-- **Analytics** — memerlukan integrasi Google Analytics
-- **Content generation** — memerlukan API keys
-- **Advanced features** — mungkin memerlukan langganan premium
+- **Pengikisan tapak** — memerlukan akses internet
+- **Analitik** — memerlukan integrasi Google Analytics
+- **Penjanaan kandungan** — memerlukan kunci API
+- **Ciri lanjutan** — mungkin memerlukan langganan premium
+- **Alat pendamping Advanced** — memerlukan pakej Advanced yang diedarkan secara berasingan dan kepercayaan pentadbir yang jelas
 
-### API Keys dan Kredensial
+### Kunci API dan Kelayakan {#api-keys-and-credentials}
 
-Konfigurasikan API keys untuk alat yang memerlukannya:
+Konfigurasikan kunci API untuk alat yang memerlukannya:
 
-1. Pergi ke **Gratis AI Agent → Settings → API Keys**
-2. Masukkan kredensial untuk setiap alat
+1. Pergi ke **Gratis AI Agent → Tetapan → Kunci API**
+2. Masukkan kelayakan untuk setiap alat
 3. Uji sambungan
 4. Simpan dengan selamat
 
-## Menggunakan sd-ai-agent/site-scrape
+### Memasang Pakej Pendamping Advanced {#installing-the-advanced-companion-package}
 
-### Penggunaan Asas
+Pakej pendamping Advanced dikeluarkan secara berasingan daripada ZIP teras WordPress.org. Pasangnya hanya daripada saluran pengedaran projek rasmi untuk keluaran tersebut, kemudian hadkan akses kepada pentadbir yang dipercayai. Semak pagar kelulusan manusia dan tingkah laku petikan git sebelum mendayakan alat sistem fail, pangkalan data, WP-CLI, penghantar REST, pembina plugin, pengurusan pengguna, atau penanda aras pada tapak produksi.
 
-Minta Theme Builder untuk menganalisis laman web:
+## Menggunakan sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
-```
+### Penggunaan Asas {#basic-usage}
 
-### Analisis Spesifik
-
-Meminta jenis analisis tertentu:
+Minta Theme Builder menganalisis laman web:
 
 ```
-Extract the color palette from example.com and use it as inspiration.
+Analisis reka bentuk tapak pesaing saya di competitor.com
+dan cadangkan penambahbaikan reka bentuk untuk tapak saya.
+```
+
+### Analisis Khusus {#specific-analysis}
+
+Minta jenis analisis khusus:
+
+```
+Ekstrak palet warna daripada example.com dan gunakannya sebagai inspirasi.
 ```
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Analisis struktur navigasi example.com dan gunakan organisasi
+yang serupa pada tapak saya.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Semak responsif mudah alih example.com dan pastikan tapak saya
+sama responsif.
 ```
 
-### Analisis Perbandingan
+### Analisis Perbandingan {#comparison-analysis}
 
-Membandingkan pelbagai laman web:
+Bandingkan berbilang tapak:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Bandingkan reka bentuk site1.com dan site2.com dan cipta reka bentuk
+yang menggabungkan elemen terbaik daripada kedua-duanya.
 ```
 
-## Batasan dan Pertimbangan Alat
+## Batasan dan Pertimbangan Alat {#tool-limitations-and-considerations}
 
-### Had Kadar (Rate Limiting)
+### Pengehadan Kadar {#rate-limiting}
 
-- Scraping dihadkan kadarnya untuk mengelakkan beban berlebihan pada pelayan
-- Permintaan berulang ke laman web yang sama mungkin dihadkan
-- Laman web yang besar mungkin mengambil masa lebih lama untuk dianalisis
+- Scraping dihadkan kadar untuk mengelakkan beban berlebihan pada pelayan
+- Pelbagai permintaan ke laman yang sama mungkin diperlahankan
+- Laman besar mungkin mengambil masa lebih lama untuk dianalisis
 
-### Ketepatan Kandungan
+### Ketepatan Kandungan {#content-accuracy}
 
 - Kandungan dinamik mungkin tidak ditangkap sepenuhnya
-- Kandungan yang dirender oleh JavaScript mungkin tidak lengkap
-- Data masa nyata mungkin tidak dipantulkan
+- Kandungan yang dirender JavaScript mungkin tidak lengkap
+- Data masa nyata mungkin tidak dipaparkan
 - Sesetengah kandungan mungkin berada di sebalik paywall
 
-### Pertimbangan Undang-undang dan Etika
+### Pertimbangan Undang-undang dan Etika {#legal-and-ethical-considerations}
 
-- Hormati robots.txt dan polisi laman web
-- Jangan mengikis kandungan berhak cipta untuk tujuan penggandaan
-- Gunakan analisis untuk inspirasi, bukan untuk menyalin
+- Hormati robots.txt dan dasar laman
+- Jangan scrape kandungan berhak cipta untuk diterbitkan semula
+- Gunakan analisis untuk inspirasi, bukan menyalin
 - Sahkan anda mempunyai hak untuk menggunakan kandungan yang diekstrak
-- Ikuti terma perkhidmatan laman web yang dianalisis
+- Patuhi terma perkhidmatan laman yang dianalisis
 
-### Impak Prestasi
+### Kesan Prestasi {#performance-impact}
 
-- Mengikis laman web yang besar mungkin mengambil masa
-- Scraping serentak yang banyak mungkin lebih perlahan
-- Sambungan rangkaian mempengaruhi kelajuan
-- Set data yang besar mungkin memerlukan pemprosesan yang lebih banyak
+- Scraping laman besar mungkin mengambil masa
+- Pelbagai scrape serentak mungkin lebih perlahan
+- Kesambungan rangkaian mempengaruhi kelajuan
+- Dataset besar mungkin memerlukan lebih banyak pemprosesan
 
-## Amalan Terbaik
+## Amalan Terbaik {#best-practices}
 
-### Menggunakan Analisis Laman Web
+### Menggunakan Analisis Laman {#using-site-analysis}
 
-1. **Analisis pelbagai laman web** — kumpulkan inspirasi dari beberapa sumber
+1. **Analisis pelbagai laman** — kumpulkan inspirasi daripada beberapa sumber
 2. **Fokus pada struktur** — pelajari corak susun atur dan organisasi
 3. **Ekstrak warna** — gunakan palet warna sebagai titik permulaan
 4. **Kaji tipografi** — kenal pasti gabungan fon yang anda suka
 5. **Semak navigasi** — fahami organisasi menu
 
-### Scraping Beretika
+### Scraping Beretika {#ethical-scraping}
 
-1. **Hormati robots.txt** — ikuti garis panduan laman web
-2. **Jangan salin kandungan** — gunakan analisis hanya untuk inspirasi
+1. **Hormati robots.txt** — ikuti garis panduan laman
+2. **Jangan salin kandungan** — gunakan analisis untuk inspirasi sahaja
 3. **Sahkan hak** — pastikan anda boleh menggunakan kandungan yang diekstrak
-4. **Atribusi sumber** — berikan kredit kepada sumber inspirasi
-5. **Ikuti terma** — patuhi terma perkhidmatan laman web
+4. **Nyatakan sumber** — beri kredit kepada sumber inspirasi
+5. **Ikuti terma** — patuhi terma perkhidmatan laman
 
-### Memaksimumkan Keberkesanan Alat
+### Memaksimumkan Keberkesanan Alat {#maximizing-tool-effectiveness}
 
-1. **Bersikap spesifik** — minta jenis analisis tertentu
-2. **Berikan konteks** — jelaskan tujuan laman web anda
+1. **Jadi spesifik** — minta jenis analisis tertentu
+2. **Berikan konteks** — jelaskan tujuan laman anda
 3. **Tetapkan jangkaan** — huraikan matlamat reka bentuk anda
-4. **Ulangkaji** — perhalusi berdasarkan keputusan
-5. **Gabungkan alat** — gunakan pelbagai alat untuk analisis yang komprehensif
+4. **Ulang kaji** — perhalusi berdasarkan hasil
+5. **Gabungkan alat** — gunakan pelbagai alat untuk analisis menyeluruh
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
-### Laman Web Tidak Boleh Discrape
+### Laman Tidak Dapat Di-scrape {#site-wont-scrape}
 
-- Semak sama ada laman web boleh diakses secara awam
+- Semak sama ada laman boleh diakses secara awam
 - Sahkan robots.txt membenarkan scraping
-- Cuba laman web yang berbeza
+- Cuba laman lain
 - Semak sambungan internet
-- Hubungi sokongan jika masalah berterusan
+- Hubungi sokongan jika isu berterusan
 
-### Analisis Tidak Lengkap
+### Analisis Tidak Lengkap {#incomplete-analysis}
 
-- Laman web mungkin mempunyai kandungan dinamik
+- Laman mungkin mempunyai kandungan dinamik
 - JavaScript mungkin tidak dirender sepenuhnya
-- Laman web yang besar mungkin tamat masa (timeout)
-- Cuba analisis halaman tertentu pula
-- Minta jenis analisis yang spesifik
+- Laman besar mungkin tamat masa
+- Cuba analisis halaman tertentu sebaliknya
+- Minta jenis analisis tertentu
 
-### Prestasi Perlahan
+### Prestasi Perlahan {#slow-performance}
 
-- Laman web yang besar mengambil masa lebih lama untuk dianalisis
-- Scraping serentak yang banyak lebih perlahan
-- Sambungan rangkaian mempengaruhi kelajuan
-- Cuba semasa waktu kurang sibuk
+- Laman besar mengambil masa lebih lama untuk dianalisis
+- Pelbagai scrape serentak lebih perlahan
+- Kesambungan rangkaian mempengaruhi kelajuan
+- Cuba semasa waktu luar puncak
 - Analisis bahagian yang lebih kecil dahulu
 
-## Dokumentasi Berkaitan
+## Dokumentasi Berkaitan {#related-documentation}
 
-- [Discovery Interview](./discovery-interview.md) — kumpulkan maklumat reka bentuk
-- [Design Direction](./design-direction.md) — perhalusi reka bentuk anda
-- [Hospitality Menus](./hospitality-menus.md) — cipta halaman menu
+- [Temu Bual Penemuan](./discovery-interview.md) — kumpulkan maklumat reka bentuk
+- [Arah Reka Bentuk](./design-direction.md) — perhalusi reka bentuk anda
+- [Menu Hospitaliti](./hospitality-menus.md) — cipta halaman menu

@@ -1,110 +1,126 @@
 ---
-title: 報酬を受け取る
+title: 支払いを受ける
 sidebar_position: 15
-_i18n_hash: b7e644488bb1bef802e024319be88725
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 支払いを受け取る (v2)
+# 支払いを受け取る（v2） {#getting-paid-v2}
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注記: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-Ultimate Multisiteには組み込みのメンバーシップと請求システムがあります。請求システムを機能させるために、eコマースで一般的に使用される最も一般的な決済ゲートウェイを統合しました。Ultimate Multisiteのデフォルトの決済ゲートウェイは_Stripe_、_PayPal_、およびManual Paymentです。_WooCommerce_、_GoCardless_、および_Payfast_を使用して、各アドオンをインストールすることで支払いを受け取ることもできます。
+Ultimate Multisite には、会員制と請求のシステムが組み込まれています。請求システムが機能するように、電子商取引でよく使われる主要な決済ゲートウェイを統合しています。Ultimate Multisite のデフォルトの決済ゲートウェイは、_Stripe_、_PayPal_、手動支払いです。各アドオンをインストールすることで、_WooCommerce_、_GoCardless_、_Payfast_ を使って支払いを受け取ることもできます。
 
-## 基本設定
+## 基本設定 {#basic-settings}
 
-これらの決済ゲートウェイは、Ultimate Multisiteの支払い設定で構成できます。**Ultimate Multisiteメニュー > 設定 > 支払い**に移動して見つけることができます。
+これらの決済ゲートウェイは、Ultimate Multisite の支払い設定で構成できます。**Ultimate Multisite メニュー > 設定 > 支払い** に移動すると見つかります。
 
-![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Payments パネルを表示している Ultimate Multisite の支払い設定ページ](/img/config/payments-settings-page.png)
 
 決済ゲートウェイを設定する前に、構成できる基本的な支払い設定を確認してください。
 
-**Force auto-rene** **w:** これにより、ユーザーが選択した請求頻度に応じて、支払いが各請求サイクルの終了時に自動的に再発行されることが保証されます。
+**自動更新を強制** **:** これにより、ユーザーが選択した請求頻度に応じて、各請求サイクルの終了時に支払いが自動的に繰り返されます。
 
-![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment** **method:** このオプションを有効にすると、クライアントは登録プロセス中に金融情報を追加する必要がありません。試用期間が終了した時点でのみ必要になります。
+Ultimate Multisite v2.13.0 は、自動更新を有効にした定期会員資格を保存する前に、有効なゲートウェイに再利用可能な更新用認証情報があるかを確認します。更新用認証情報には、ゲートウェイのサブスクリプション、請求契約、保存済みの vault token、または同等の再利用可能な支払い方法が含まれます。ゲートウェイが利用可能な認証情報が存在しないと報告した場合、Ultimate Multisite は会員資格を保存しますが、自動更新をオフにし、不足している認証情報の状態を記録します。これにより、管理者またはサポートフローが更新日前に支払いを再承認するよう顧客に依頼できます。
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+これにより、ゲートウェイが一回限りの支払いしか回収できない場合に、会員資格が自動更新されるように見えることを防ぎます。ゲートウェイのアドオンは、特にゲートウェイが一回限りの決済と保存済みまたはサブスクリプション型の支払いモードの両方をサポートしている場合、定期的なチェックアウトで再利用可能な認証情報が保存されることを確認する必要があります。
 
-**Send invoice on payment confirmation:** 支払い後に請求書を送付するかどうかを選択できます。ユーザーはサブサイトのダッシュボードで支払い履歴にアクセスできます。このオプションはManual Gatewayには適用されません。
+**支払い** **方法なしでトライアルを許可:** このオプションを有効にすると、登録手続き中にクライアントが金融情報を追加する必要はありません。これはトライアル期間が終了した時点でのみ必要になります。
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** ここでは、支払い参照コードまたは連番スキームのいずれかを選択できます。請求書に支払い参照コードを使用する場合は、設定は不要です。連番スキームを使用する場合は、**next invoice number**（この番号はシステムで生成される次の請求書の請求書番号として使用されます。新しい請求書が作成されるたびに1ずつ増加します。変更して保存すると、連番を特定の値にリセットできます）と**invoice number prefix**を設定する必要があります。
+**支払い確認時に請求書を送信:** これにより、支払い後に請求書を送信するかどうかを選択できます。ユーザーは自分のサブサイト Dashboard で支払い履歴にアクセスできます。このオプションは手動ゲートウェイには適用されません。
 
-![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
+**請求書番号の方式:** ここでは、支払い参照コードまたは連番方式のいずれかを選択できます。請求書に支払い参照コードを使用する場合、設定は不要です。連番方式を使用する場合は、**次の請求書番号**（この番号は、システムで次に生成される請求書の請求書番号として使用されます。新しい請求書が作成されるたびに 1 ずつ増えます。変更して保存すると、請求書の連番を特定の値にリセットできます）と **請求書番号の接頭辞** を設定する必要があります。
 
-## ゲートウェイの場所
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-決済ゲートウェイは同じページ（**Ultimate Multisite > Settings > Payments**）で設定できます。**active payment gateways**の直下に、_Stripe_、_Stripe Checkout_、_PayPal_、および Manual を確認できます。
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active payment gateways list](/img/config/settings-payment-gateways.png)
+## ゲートウェイの場所: {#where-to-find-the-gateways}
 
-各決済ゲートウェイに関する専用記事があり、設定手順を案内します。リンクは以下にあります。
+同じページ（**Ultimate Multisite > 設定 > 支払い**）で決済ゲートウェイを設定できます。**有効な決済ゲートウェイ** のすぐ下に、_Stripe_、_Stripe_ _Checkout_、_PayPal_、_Manual_ が表示されます。
 
-**Stripeゲートウェイの設定**
+![Stripe、Stripe Checkout、PayPal、Manual を一覧表示している有効な決済ゲートウェイセクション](/img/config/payments-active-gateways.png)
 
-**PayPalゲートウェイの設定**
+各決済ゲートウェイの設定手順を案内する専用記事を用意しています。以下のリンクから確認できます。
 
-**手動決済の設定**
+支払いの詳細を表示および編集できます。
 
-今、_WooCommerce_、_GoCardless_、または_Payfast_を決済ゲートウェイとして使用したい場合は、**install and configure their add-ons**する必要があります。
+![支払い編集インターフェース](/img/admin/payment-edit.png)
 
-### WooCommerceアドオンのインストール方法
+支払い編集ページの全体表示はこちらです。
 
-_Stripe_ と _PayPal_ が一部の国で利用できないため、Ultimate Multisiteユーザーがプラグインを効果的に使用できないことがあります。そこで、非常に人気のあるeコマースプラグインである_WooCommerce_を統合するアドオンを作成しました。世界中の開発者がさまざまな決済ゲートウェイを統合するアドオンを作成しました。この機会を利用して、Ultimate Multisite請求システムで使用できる決済ゲートウェイを拡張しました。
+![支払い編集の全体インターフェース](/img/admin/payment-edit-full.png)
 
-**重要:** Ultimate Multisite: WooCommerce Integrationは、少なくともメインサイトでWooCommerceが有効化されている必要があります。
+決済ゲートウェイ設定の全体表示もこちらです。
 
-まず、アドオンページに移動してください。**Ultimate Multisite > Settings**に移動すると見つけることができます。**Add-ons**テーブルが表示されます。**Check our Add-ons**をクリックしてください。
+![決済ゲートウェイ設定の全体ページ](/img/config/settings-payments-gateways-full.png)
 
-![Settings page with add-ons section](/img/config/settings-general.png)
+**Stripe ゲートウェイの設定**
 
-**Check our Add-ons**をクリックすると、アドオンページにリダイレクトされます。ここでは、すべてのUltimate Multisiteアドオンが表示されます。**Ultimate Multisite: WooCommerce Integration**アドオンをクリックしてください。
+**PayPal ゲートウェイの設定**** **
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+**手動支払いの設定**
+
+ここで、_WooCommerce_、_GoCardless_、または _Payfast_ を決済ゲートウェイとして使用したい場合は、**それぞれのアドオンをインストールして構成** する必要があります。
+
+### WooCommerce アドオンのインストール方法: {#how-to-install-the-woocommerce-add-on}
+
+一部の国では _Stripe_ と _PayPal_ が利用できず、Ultimate Multisite ユーザーが当プラグインを効果的に利用するうえで制限や妨げになることを理解しています。そのため、非常に人気のある電子商取引プラグインである _WooCommerce_ を統合するアドオンを作成しました。世界中の開発者が、さまざまな決済ゲートウェイを統合するためのアドオンを作成しています。これを活用して、Ultimate Multisite の請求システムで利用できる決済ゲートウェイを拡張しました。
+
+_**重要:** Ultimate Multisite: WooCommerce Integration には、少なくともメインサイトで WooCommerce が有効化されている必要があります。_
+
+まず、アドオンページに移動してください。**Ultimate Multisite > 設定** に移動すると見つかります。**アドオン** テーブルが表示されるはずです。**アドオンを確認** をクリックします。
+
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+
+**アドオンを確認** をクリックすると、アドオンページにリダイレクトされます。ここで、すべての Ultimate Multisite アドオンを確認できます。**Ultimate Multisite: WooCommerce Integration** アドオンをクリックします。
+
+![WooCommerce Integration を含む Ultimate Multisite アドオンを一覧表示しているアドオンページ](/img/addons/addons-page.png)
 
 アドオンの詳細が表示されたウィンドウがポップアップします。**Install Now**をクリックしてください。
 
-![WooCommerce add-on install dialog](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Install NowボタンがあるUltimate Multisite WooCommerce Integrationアドオンの詳細ダイアログ -->
 
-インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、WooCommerceアドオンがネットワーク上で有効化されます。
+インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、WooCommerceアドオンがネットワークで有効化されます。
 
-![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: WooCommerce IntegrationアドオンのNetwork Activateリンクがあるプラグインページ -->
 
-有効化後、まだWooCommerceプラグインがウェブサイトにインストールされていない場合は、リマインダーが表示されます。
+有効化後、まだWebサイトにWooCommerceプラグインをインストールして有効化していない場合は、リマインダーが表示されます。
 
-![WooCommerce activation reminder notice](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: WooCommerceプラグインをインストールして有効化するよう管理者に促す管理通知 -->
 
 WooCommerce Integrationアドオンの詳細を読むには、**ここをクリック**してください。
 
-### GoCardlessアドオンのインストール方法
+### GoCardlessアドオンのインストール方法: {#how-to-install-the-gocardless-add-on}
 
 _GoCardless_アドオンのインストール手順は、_WooCommerce_アドオンとほぼ同じです。アドオンページに移動し、**Ultimate Multisite: GoCardless Gateway**アドオンを選択してください。
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Ultimate Multisite GoCardless Gatewayアドオンが強調表示されたアドオンページ -->
 
 アドオンウィンドウがポップアップします。**Install Now**をクリックしてください。
 
-![GoCardless add-on install dialog](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Install NowボタンがあるUltimate Multisite GoCardless Gatewayアドオンの詳細ダイアログ -->
 
-インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_GoCardless_アドオンがネットワーク上で有効化されます。
+インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_GoCardless_アドオンがネットワークで有効化されます。
 
-![Network Activate the GoCardless add-on](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: GoCardless GatewayアドオンのNetwork Activateリンクがあるプラグインページ -->
 
-_GoCardless_ゲートウェイの開始方法を学ぶには、**この記事を読む**。
+_GoCardless_ゲートウェイの始め方については、**この記事をお読みください**。
 
-### Payfastアドオンのインストール方法
+### Payfastアドオンのインストール方法: {#how-to-install-the-payfast-add-on}
 
 アドオンページに移動し、**Ultimate Multisite: Payfast Gateway**アドオンを選択してください。
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Ultimate Multisite Payfast Gatewayアドオンが強調表示されたアドオンページ -->
 
 アドオンウィンドウがポップアップします。**Install Now.**をクリックしてください。
 
-![Payfast add-on install dialog](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Install NowボタンがあるUltimate Multisite Payfast Gatewayアドオンの詳細ダイアログ -->
 
-インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_Payfast_アドオンがネットワーク上で有効化されます。
+インストールが完了すると、プラグインページにリダイレクトされます。ここで**Network Activate**をクリックすると、_Payfast_アドオンがネットワークで有効化されます。
 
-![Network Activate the Payfast add-on](/img/config/settings-general.png)
+<!-- スクリーンショット利用不可: Payfast GatewayアドオンのNetwork Activateリンクがあるプラグインページ -->

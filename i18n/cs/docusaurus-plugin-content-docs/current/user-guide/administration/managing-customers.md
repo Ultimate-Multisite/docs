@@ -3,7 +3,7 @@ title: Správa zákazníků
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Správa zákazníků
+# Správa zákazníků {#managing-customers}
 
 Stránka **Zákazníci** zobrazuje seznam členů registrovaných ve vaší síti. Na této stránce najdete základní informace o uživatelích včetně jména, e-mailové adresy, posledního přihlášení a odkazu **přepnout na**, který vám umožní přihlásit se na subsite uživatele jako administrátor webu.
 

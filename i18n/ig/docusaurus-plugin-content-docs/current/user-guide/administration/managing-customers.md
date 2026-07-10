@@ -3,7 +3,7 @@ title: Nduị Ọkụna Nkwado
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Quản lý Khách hàng
+# Quản lý Khách hàng {#managing-customers}
 
 Trang **Customers** sẽ hiển thị danh sách các thành viên đã đăng ký trong mạng lưới của bạn. Trang này hiển thị thông tin người dùng cơ bản bao gồm tên, địa chỉ email, lần đăng nhập cuối và một liên kết **switch to** cho phép bạn đăng nhập vào trang phụ (subsite) của người dùng với tư cách là quản trị viên trang web.
 

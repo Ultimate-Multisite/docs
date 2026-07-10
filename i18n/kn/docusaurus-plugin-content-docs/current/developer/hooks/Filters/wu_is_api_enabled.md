@@ -4,16 +4,16 @@ title: ಫಿಲ್ಟರ್ - wu_is_api_enabled
 sidebar_label: wu_is_api_enabled
 _i18n_hash: 0d51cdaeda7be69f20cdfe6f0fe33b06
 ---
-# Filter: wu_is_api_enabled
+# Filter: wu_is_api_enabled {#filter-wuisapienabled}
 
 API ಗೆ ಒಂದು ನಿರ್ದಿಷ್ಟ ಸ್ಥಿತಿಯನ್ನು (state) ಬಲವಂತವಾಗಿ (force) ಮಾಡಲು प्लगइन డెవలಪರ್‌ಗಳಿಗೆ ಅವಕಾಶ ನೀಡುತ್ತದೆ.
 
-### Since
+### Since {#since}
 
 - 1.7.4
-### Source
+### Source {#source}
 
 [`inc/class-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-api.php#L435) ನಲ್ಲಿ ಲೈನ್ 435 ರಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಲಾಗಿದೆ
 
 
-## Returns
+## Returns {#returns}

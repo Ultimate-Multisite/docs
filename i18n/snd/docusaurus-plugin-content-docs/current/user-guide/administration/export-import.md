@@ -3,17 +3,17 @@ title: Export & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# निर्यात ۽ درآمد (Export & Import)
+# निर्यात ۽ درآمد (Export & Import) {#export--import}
 
 Ultimate Multisite 2.9.0 ۾ **Tools > Export & Import** تحت هڪ سڪل-سايت (single-site) جو **Export & Import** ٽول شامل ڪيو آهي. ان جو استعمال تڏهن ڪريو جڏهن توهان کي هڪ WordPress سائيٽ کي ZIP فائل جي صورت ۾ پيڪيج ڪرڻ، ان ZIP کي بحال ڪرڻ يا ڪنهن Compatible Ultimate Multisite ۽ single-site WordPress installation بابت سائيٽ کي منتقل ڪرڻ جي ضرورت هجي.
 
-## گهرجن اجازتون (Required permissions)
+## گهرجن اجازتون (Required permissions) {#required-permissions}
 
 توهان ان سائيٽ تي جتي export يا import ٿي رهيو آهي ان جو **Tools** مينيئل استعمال ڪري هڪ administrator طور لاگ ان ڪيو ذاتيئن. multisite network ۾، جب توهان network-level Ultimate Multisite tools کان subsites export يا import ڪري رهيا هجي ته network administrator account استعمال ڪريو.
 
 Export ZIP downloads authenticated download endpoint جي ذريعي ڏني وينديون آهن، تنهن ڪري admin session کي فعال رکجو تائين جڏهن download ختم ٿي وڃي ۽ جنريٽ ٿيل download URLs کي پبلڪ طور تي شيئر نه ڪيو.
 
-## سائيٽ جو ZIP ۾ export ڪرڻ (Exporting a site to a ZIP)
+## سائيٽ جو ZIP ۾ export ڪرڻ (Exporting a site to a ZIP) {#exporting-a-site-to-a-zip}
 
 1. ان سائيٽ جي WordPress admin ۾ جتي توهان copy ڪرڻ چاهيو، **Tools > Export & Import** ڏانهان وڃو.
 2. export area کي کُھل ڪري ان سائيٽ کي چونڊيو جيڪا توهان پيڪيج ڪرڻ چاهيو.
@@ -23,7 +23,7 @@ Export ZIP downloads authenticated download endpoint جي ذريعي ڏني وي
 
 ZIP کي محفوظ جاءِ تي رکجو. ان ۾ سائيٽ جي مواد، settings، media files، ۽ چونڊيل code assets شامل ٿي سگهن ٿا.
 
-## export ۾ شموليت (What the export includes)
+## export ۾ شموليت (What the export includes) {#what-the-export-includes}
 
 Export ZIP ۾ هي شيون شامل ٿي سگهن ٿيون:
 
@@ -34,7 +34,7 @@ Export ZIP ۾ هي شيون شامل ٿي سگهن ٿيون:
 
 ZIP جو سائز ميڊيا، منتخب ڪيل پليجنٽس ۽ ٿيمز جي مقدار ۽ سائٽ جا ڊيٽا بيس تيبلن جي سائز تي منحصر هوندو آهي.
 
-## ZIP کان سائٽ درآمد ڪرڻ (Importing a site from a ZIP)
+## ZIP کان سائٽ درآمد ڪرڻ (Importing a site from a ZIP) {#importing-a-site-from-a-zip}
 
 1. مقصد وارو WordPress سائيٽ **Tools > Export & Import** تي وڃو.
 2. درآمد جو حصو کُھل ڪريو ۽ Export & Import ٽول پاران بنائيل ZIP فائل کي اپلوڊ ڪريو.
@@ -46,7 +46,7 @@ ZIP جو سائز ميڊيا، منتخب ڪيل پليجنٽس ۽ ٿيمز جي
 
 هڪ سائيٽ وارو WordPress installation هجڻ تي، ZIP کي درآمد ڪرڻ سان موجوده سائٽ جي جاءِ تي درآمد ڪيل سائٽ بدلجي ويندي آهي. شروع ڪرڻ کان اڳ مقصد وارو سائٽ جو پورو backup bana ليو، ۽ هڪ ئي وقت هڪ ئي سائٽ لاءِ متعدد import شروع ڪرڻ کان بچيو.
 
-## محدوديتون ۽ مطابقت جي نوٽس (Limitations and compatibility notes)
+## محدوديتون ۽ مطابقت جي نوٽس (Limitations and compatibility notes) {#limitations-and-compatibility-notes}
 
 اڪجهه بہت وڏي اپلوڊ ڪنڊري يا ميڊيا لائبراries مان وڏيون ZIP فائلون بڻجي سگهن ٿيون. وڏين سائٽن کي 엑سبوٽ ڪرڻ کان سواءِ پنهنجي PHP اپلوڊ ليمٹس، ايڪسيشن ليمٹس، ڊسڪ اسپيس، ميڪني (memory)، ۽ سرور تاؤ آؤٹ سيتين جي هيٺيان سمجهي وٺڻ گهرجي.
 

@@ -3,11 +3,11 @@ title: Catatan Perubahan
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Dirilis pada 2026-04-28
+## 1.9.0 — Dirilis pada 2026-04-28 {#190--released-on-2026-04-28}
 
-### Baru
+### Baru {#new}
 
 - **Kemampuan `create_contact_form`** — membuat formulir kontak menggunakan plugin formulir yang aktif (Contact Form 7, WPForms, Fluent Forms, atau Gravity Forms) dan mengembalikan shortcode yang siap disematkan di postingan atau halaman mana pun.
 - **Kemampuan `set_featured_image`** — menetapkan gambar unggulan (featured image) ke postingan atau halaman dari ID lampiran Media Library yang sudah ada atau URL jarak jauh; secara otomatis mengimpor gambar ketika URL disediakan.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pulihkan sesi terakhir** — panel chat sekarang secara otomatis memuat riwayat percakapan terbaru saat halaman dimuat dan saat widget dibuka, sehingga konteks tidak pernah hilang saat navigasi halaman.
 - **Tautan aksi plugin** — tautan cepat ke Settings dan Abilities Registry kini muncul di layar **Plugins → Installed Plugins** WordPress di bawah deskripsi plugin.
 
-### Ditingkatkan
+### Ditingkatkan {#improved}
 
 - **Coba ulang sumber gambar** — agen sekarang mencoba semua sumber gambar gratis yang dikonfigurasi sebelum beralih ke gambar yang dihasilkan AI jika pengunduhan gagal.
 - **Panel info model** — selalu terlihat di header chat; tidak lagi tersembunyi setelah pesan pertama.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Desain ulang widget chat** — ikon AI terpadu menggantikan avatar kustom sebelumnya; konsisten dengan sistem agen bawaan.
 - **Linkifikasi URL** — URL yang muncul di pesan sistem dan gelembung pesan error kini ditampilkan sebagai tautan yang dapat diklik.
 
-### Diperbaiki
+### Diperbaiki {#fixed}
 
 - **Kemampuan penemuan (Ability discoverability)** — deskripsi, referensi prompt sistem, dan penyelarasan namespace diperbaiki sehingga semua kemampuan muncul di daftar alat agen dengan andal.
 - **Cache penyedia (Providers cache)** — penyedia sekarang di-cache di seluruh situs melalui penghitung versi, mencegah masalah penyedia usang pada jaringan multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Dirilis pada 2026-04-09
+## 1.4.0 — Dirilis pada 2026-04-09 {#140--released-on-2026-04-09}
 
-### Baru
+### Baru {#new-1}
 
 - **Perintah benchmark WP-CLI** (`wp gratis-ai-agent benchmark`) — menjalankan rangkaian benchmark Agent Capabilities v1 dari baris perintah untuk pipeline CI dan alur kerja evaluasi model. Mendukung eksekusi per pertanyaan, penimpaan penyedia/model, dan output JSON/CSV.
 - **Rangkaian benchmark Agent Capabilities v1** — set prompt multi-langkah yang kompleks dan terstruktur yang menguji seluruh permukaan kemampuan, dengan penilaian dan pelaporan token/durasi.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pertanyaan benchmark situs web restoran** (`q-restaurant-website`) — uji ujung ke ujung yang mencakup pendaftaran CPT, design system, navigasi, dan penemuan plugin.
 - **Plugin konektor penyedia AI** ditambahkan ke blueprint WordPress Playground untuk pengaturan pengembangan lokal yang lebih cepat.
 
-### Ditingkatkan
+### Ditingkatkan {#improved-1}
 
 - README diperbarui dengan dokumentasi dan instruksi pengaturan konektor penyedia AI.
 
-### Diperbaiki
+### Diperbaiki {#fixed-1}
 
 - 25 kegagalan tes PHPUnit pada cabang `main` telah diselesaikan.
 - Format URL rilis GitHub di `blueprint.json` diperbaiki.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Catatan rilis sebelumnya dipertahankan di repositori plugin._

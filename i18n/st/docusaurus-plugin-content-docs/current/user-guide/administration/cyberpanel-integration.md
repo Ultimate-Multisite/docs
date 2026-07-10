@@ -3,25 +3,25 @@ title: Ulelelo lula lehleletso la CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Tseka le tsela ea hore o se fihlela hore ho fana'a (and remove) domains tse di fetileng ka network ea hau ho ba le virtual hosts ka CyberPanel, le ho ba le ho fana'a auto-SSL ka Let's Encrypt.
 
-## Eona ebohlokoa
+## Eona ebohlokoa {#what-it-does}
 
 - Ha domain e fetilwe ka Ultimate Multisite, integration e fihlela API ea CyberPanel ho fetola virtual host ea domainoa.
 - Ha fetileng ea domain mapping e fetolwe, integration e fihlela API ho feta virtual host e fetileng.
 - Ha auto-SSL e le lehle, integration e fihlela ho fana'a sertifikati ea Let's Encrypt ka nako e fetileng ha virtual host e fetola.
 - Ho ba le ho fana'a/ho fetola alias ea `www.` ho feta ka ho fetoga "Auto-create www subdomain" sa setso sa Domain Mapping.
 
-## Ho Ba Le Ho Fihlela (Prerequisites)
+## Ho Ba Le Ho Fihlela (Prerequisites) {#prerequisites}
 
 - Instance ea CyberPanel e fetileng (v2.3 le lehle ho ba le ho hlokomela) e ntse e fihlehang server ea WordPress ea hau.
 - Website e fetileng ka CyberPanel e fetileng e fana'a root ea network ea WordPress ea hau. Integration e fetola virtual hosts tse ntlha ka lona server.
 - Access ea API ea CyberPanel e lehle. Authentication e sebelisa username le password ea admin ea CyberPanel ea hau.
 - Records ea DNS tsa hau tsa domains tse fetileng haholo ba hloka ho fihlela IP address ea hau ea server haholo fa auto-SSL e ka fana'a sertifikati e fetileng.
 
-## Ho Ba Le (Requirements)
+## Ho Ba Le (Requirements) {#requirements}
 
 Ho hlokomela hore constants tse following di fetolelang ka file ea `wp-config.php` ea hau:
 
@@ -82,9 +82,9 @@ U feta ho sebelisa ho tsoalo ea ho tsoalo le ho tsoalo ka ho itšoa ka settings 
 2. Thaba **Test Connection**.
 3. Le mofuta o le fa'aonapoloa e fesoasoa o le plugin e mafai auno i CyberPanel API a le fa'aonapoloa auno.
 
-## O le Fa'aonapoloa
+## O le Fa'aonapoloa {#setup-instructions}
 
-### Domain Mapping
+### Domain Mapping {#1-enable-the-cyberpanel-api}
 
 E tasi o le domain e fa'aonapoloa i Ultimate Multisite:
 
@@ -93,7 +93,7 @@ E tasi o le domain e fa'aonapoloa i Ultimate Multisite:
 3. O le document root e fa'aonapoloa e fa'aonapoloa i le WordPress network root directory o oe.
 4. Pe a le domain mapping e fa'aonapoloa, le integration e fa'aonapoloa `/api/deleteWebsite` mo le fa'aunoa virtual host.
 
-### Auto-SSL
+### Auto-SSL {#2-add-constants-to-wp-configphp}
 
 Pe a `WU_CYBERPANEL_AUTO_SSL` o le `true`:
 
@@ -103,11 +103,11 @@ Pe a `WU_CYBERPANEL_AUTO_SSL` o le `true`:
 
 > **Important:** O le DNS e tatau ona fa'aonapoloa la'a i le IP address o oe le servera fa'aonapoloa auno mo Let's Encrypt e mafai ona fa'aonopoloa le domain. Pe a SSL issuance e fa'aonopoloa i le taimi lea e le fa'aonopoloa, fa'aopoopo o le DNS propagation ma fa'aonapoloa SSL no CyberPanel dashboard i le **SSL** > **Manage SSL**.
 
-### www Subdomain
+### www Subdomain {#3-enable-the-integration}
 
 Pe a **Auto-create www subdomain** o le `enabled` i le Domain Mapping settings o oe, le integration e fa'aonapoloa virtual host alias tasi lea mo `www.<domain>` ma, pe a auto-SSL o le `on`, le certificate e fa'aonopoloa o le apex ma www variants.
 
-### Email Forwarders
+### Email Forwarders {#4-verify-connectivity}
 
 Pula ka, fa ntlha ke go bona.
 
@@ -122,7 +122,7 @@ Pula ka go dira gore o tsameka le forwarders ya ba bang:
 
 Fa go dira forwarder ga gopola, go bona logs tsa activity ya Ultimate Multisite ka ntlha, le fa go bona mo CyberPanel gore domain e teng le gore API user a na le permissions ya email-management.
 
-## Reference ya Configuration
+## Reference ya Configuration {#how-it-works}
 
 | Constant | Go Tlhokwa | Default | Leela |
 |---|---|---|---|
@@ -134,7 +134,7 @@ Fa go dira forwarder ga gopola, go bona logs tsa activity ya Ultimate Multisite 
 | `WU_CYBERPANEL_PHP_VERSION` | Se | `PHP 8.2` | PHP version ya virtual hosts tse ntlha (e tlwa go tsamaetsa le version e dirwe mo CyberPanel) |
 | `WU_CYBERPANEL_EMAIL` | Se | — | Email ya go dira certificate registration |
 
-## Notes e Kgolo
+## Notes e Kgolo {#domain-mapping}
 
 (Kea se na le notes e kgolo, fa o na le ntlha e kgolo, ke tla go bona.)
 
@@ -144,33 +144,33 @@ CyberPanel e tsamaea ka port `8090` ka tsela ya bohlokoa. Ha se a mo server ea h
 Integration e seng e fetola DNS records. Ho hloka ho setse domain DNS ho IP address la server haholo mme o fetola domain ka Ultimate Multisite.
 Ha u sebelisa OpenLiteSpeed (OLS), re fa restart e le nako le e fetola ka molao haholo ha se a fetola virtual host. Ha hloka ho fana ka monate.
 
-## Ho Fetola Matlha
+## Ho Fetola Matlha {#auto-ssl}
 
-### API Connection E Tlhokomelo
+### API Connection E Tlhokomelo {#www-subdomain}
 
 - Re bona hore port `8090` e le lebetseng mo firewall ea hau la server.
 - Re bona hore bohlokoa ba `WU_CYBERPANEL_HOST` ba le protocol e fetileng (`https://`) le port.
 - Re bona hore sertifikati ea SSL ea CyberPanel ea hau e le bonolo; sertifikati e tsamaisang ka monate (self-signed) e ka etsa TLS verification e le maemo a tsela. Setse `WU_CYBERPANEL_VERIFY_SSL` ho `false` haholo mo dikotla tsa network tse ntle.
 
-### Thaba ea Authentication
+### Thaba ea Authentication {#email-forwarders}
 
 - Re bona hore `WU_CYBERPANEL_USERNAME` le `WU_CYBERPANEL_PASSWORD` ea hau e bonolo ka ho login ka CyberPanel ka tsela ya monate.
 - CyberPanel e tsamaisa accounts haholo ha se a fetola login e le maemo a tlhokomelo. Re bona **Security** > **Brute Force Monitor** mo CyberPanel ha se a fetola lockouts.
 
-### Domain E Seng E Fetolwa
+### Domain E Seng E Fetolwa {#configuration-reference}
 
 - Re bona log e le activity la Ultimate Multisite (**Ultimate Multisite** > **Activity Logs**) ho bona messages ea API error.
 - Re bona hore package e fetileng ka `WU_CYBERPANEL_PACKAGE` e le bonolo mo CyberPanel (**Packages** > **List Packages**).
 - Re bona hore domain e seng e tsamaisang ka website ka CyberPanel — ho fetola website e le maemo a tlhokomelo e fetola error.
 
-### SSL Certificate E Seng E Fetolwa
+### SSL Certificate E Seng E Fetolwa {#important-notes}
 
 - Baile se DNS e a fetang go feta: `dig +short your-domain.com` go batla IP ya server ya hau.
 - Let's Encrypt e ba le limitse tsa tsela. Ha o ne o dirile ho issua sertifikate tse dintsi tsa domain e le nako, tsama ka nako le pele ha u batse ho buisana fa u batse ho buisa fa.
 - Re tla bona logs ea SSL ea CyberPanel ka **Logs** > **Error Logs** ho bona ditlhahlo tsa liphatlo tsa sertifikate tse di fetileng.
 - Ho ba le nako ya tsela, u ka issua SSL manually ka CyberPanel: **SSL** > **Manage SSL** > select the domain > **Issue SSL**.
 
-## References
+## References {#troubleshooting}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

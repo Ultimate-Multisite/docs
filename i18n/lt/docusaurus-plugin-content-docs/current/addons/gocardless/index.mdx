@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: GoCardless mokėjimai
+
+Leiskite savo klientams mokėti už Multisite Ultimate narystes ir produktus tiesioginiu debetu naudojant GoCardless!
+
+## Diegimas {#installation}
+
+1. Įkelkite 'ultimate-multisite-gocardless' į '/wp-content/plugins/' katalogą
+2. Aktyvuokite įskiepį per 'Įskiepiai' meniu WordPress
+3. Vykdykite nuoseklų vedlį, kad sukonfigūruotumėte įskiepį
+
+## Naudojimo vadovas {#usage-guide}
+
+_GoCardless_ yra mokėjimo šliuzas, prieinamas **Europoje ir JK**, leidžiantis atlikti mokėjimus **tiesioginiu debetu**.
+
+**Ultimate Multisite: GoCardless Gateway** prideda _GoCardless_ palaikymą Ultimate Multisite, leisdamas apmokestinti jūsų klientus tame regione naudojant tiesioginį debetą.
+
+Šiame vadove bus paaiškinta, kaip sukonfigūruoti _GoCardless_, kad galėtumėte pradėti priimti mokėjimus per jį savo Ultimate Multisite tinkle.
+
+_**Pastaba: GoCardless veikia tik su šiomis valiutomis:**_ **EUR, GBP, AUD, SEK ir DKK.**
+
+## Priedo diegimas {#installing-the-add-on}
+
+Pirmiausia turėsite įdiegti GoCardless priedą, skirtą Ultimate Multisite. Tai galite padaryti eidami į **Ultimate Multisite > Nustatymai > Priedai (šoninėje juostoje)**. Tada pasirinkite GoCardless priedą tame sąraše.
+
+Kai priedas bus įdiegtas ir aktyvuotas, eikite į **Ultimate Multisite > Nustatymai > Mokėjimai**, įjunkite GoCardless parinktį ir išsaugokite.
+
+![Mokėjimo šliuzo nustatymai](/img/config/settings-payment-gateways.png)
+
+## Prieigos tokeno gavimas {#getting-an-access-token}
+
+Sukurkite paskyrą _GoCardless_ (arba _GoCardless_ sandbox, jei norite **pirmiausia išbandyti** , kas rekomenduojama). Tada, prisijungę, eikite į **Kūrėjai** meniu elementą.
+
+<!-- Ekrano kopija nepasiekiama: GoCardless dashboard, rodantis Kūrėjai meniu vietą -->
+
+**Kūrėjai** puslapyje spustelėkite **Sukurti** mygtuką viršutiniame dešiniajame ekrano kampe, tada spustelėkite parinktį **Prieigos tokenas**.
+
+<!-- Ekrano kopija nepasiekiama: GoCardless Kūrėjai puslapis su Sukurti mygtuku ir Prieigos tokeno parinktimi -->
+
+Tai atidarys naują modalinį langą, kuriame galėsite sukurti naują tokeną. Suteikite jam atpažįstamą pavadinimą ir įsitikinkite, kad **Apimtis** meniu pasirinkote parinktį **Skaitymo ir rašymo prieiga**.
+
+<!-- Ekrano kopija nepasiekiama: GoCardless modalinis langas naujam prieigos tokenui su skaitymo ir rašymo apimtimi sukurti -->
+
+Prieigos tokenas pasirodys ekrane. Nukopijuokite jį ir įklijuokite į savo **Ultimate Multisite > Nustatymai > Mokėjimai > GoCardless** meniu.
+
+Įsitikinkite, kad įdedate jį į tinkamą lauką. Jei tai **live token** **as** , prieš įklijuodami tokeną išjunkite **sandbox režimą**.
+
+![Mokėjimo šliuzo nustatymai su GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Ekrano kopija nepasiekiama: GoCardless tokenų laukai Ultimate Multisite mokėjimų nustatymuose -->
+
+Tai tiek pirmajam žingsniui. Toliau turite sukonfigūruoti webhook klausytoją.
+
+## Webhook klausytojo konfigūravimas {#setting-up-the-webhook-listener}
+
+Dirbant su prenumeratomis, Ultimate Multisite turi gauti informaciją apie prenumeratos būsenos pasikeitimus, naujus atliktus mokėjimus ir kitus panašius dalykus.
+
+Mokėjimo šliuzai apie šiuos pakeitimus Ultimate Multisite praneša naudodami **webhook iškvietimus**. Dėl šios priežasties, kad integracija veiktų 100 %, turime nurodyti _GoCardless_, kurį URL kviesti su visa ta informacija.
+
+Grįžkite į savo **GoCardless > Kūrėjai** skydelį ir vėl spustelėkite mygtuką Sukurti, bet šį kartą pasirinkite parinktį **Webhook galinis taškas**.
+
+<!-- Ekrano kopija nepasiekiama: GoCardless Kūrėjai puslapis su Webhook galinio taško parinktimi -->Atsidarys naujas langas su webhook galinio taško parinktimis. Jame prašoma webhook URL, todėl grįžkite į savo **Ultimate Multisite nustatymai > Mokėjimai > GoCardless** ir nukopijuokite ten nurodytą webhook URL:
+
+<!-- Ekrano kopija nepasiekiama: Ultimate Multisite GoCardless nustatymai, rodantys webhook URL -->
+
+Be to, galite įvesti **webhook paslaptį**, kuri bus naudojama jūsų webhook iškvietimams pasirašyti. Kad ir ką įvesite tame lauke, tą patį turėsite įvesti ir į **Ultimate Multisite Webhook Secret lauką**.
+
+<!-- Ekrano kopija nepasiekiama: GoCardless webhook galinio taško konfigūravimo forma su URL ir paslapties laukais -->
+
+<!-- Ekrano kopija nepasiekiama: Ultimate Multisite GoCardless webhook paslapties laukas -->
+
+Užbaikite išsaugodami galinį tašką: spustelėkite mygtuką **Sukurti webhook galinį tašką**, tada **taip pat išsaugokite savo Ultimate Multisite nustatymus**.
+
+Dabar turėtumėte būti pasiruošę priimti _GoCardless_!

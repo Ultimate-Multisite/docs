@@ -3,7 +3,7 @@ title: Materiál WP
 sidebar_position: 9
 _i18n_hash: 061c5ac64accbcd64507b3bb36294523
 ---
-# Material WP
+# Material WP {#material-wp}
 
 Táto funkcia je poskytovaná doplnkom **Material WP**.
 

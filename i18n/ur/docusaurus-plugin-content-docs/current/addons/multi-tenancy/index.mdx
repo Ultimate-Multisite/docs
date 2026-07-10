@@ -1,31 +1,45 @@
 ---
-title: ملٹی-ٹینینسی
+title: Multi-Tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# ملٹی-ٹینینسی
+# کثیر کرایہ داری {#multi-tenancy}
 
-کارکردگی (performance) اور سیکیورٹی (security) کے لیے سب سائٹس کو مختلف سرورز اور ڈیٹا بیسز میں تقسیم کرنا۔
+کارکردگی اور سیکیورٹی کے لیے ذیلی سائٹس کو سرورز اور ڈیٹابیسز میں تقسیم کریں
 
-## ضروریات
+## Version 1.2.0 ریلیز کی جھلکیاں {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 پیداواری علیحدگی کے ورک فلو کے لیے خودمختار کرایہ دار کی بنیاد شامل کرتا ہے:
+
+- مختصر مدت والی، دوبارہ استعمال سے محفوظ SSO وزٹس کے ساتھ بے حالت کرایہ دار خودکار لاگ اِن۔
+- خودمختار کرایہ داروں کے لیے فی ذیلی سائٹ ڈیٹابیس اور فائل سسٹم کی علیحدگی۔
+- میزبان سے باخبر کرایہ دار فراہمی کے لیے Hostinger کثیر کرایہ داری صلاحیت۔
+- پرانے ڈیٹا کی جانچوں اور غیر ہم وقت پُش پروسیسنگ کے لیے خودمختار منتقلی کی توثیقی گیٹس۔
+- Bedrock، FrankenPHP، اور localhost تنصیبات کے لیے قابلِ ترتیب اسی مشین کا ڈیٹابیس میزبان بائنڈنگ۔
+- کرایہ دار بوٹسٹریپ، ڈیٹابیس رائٹر، اسکیما بوٹسٹریپ، اور صارف فراہمی میں بہتریاں۔
+- زیادہ محفوظ خودمختار خاتمہ جو کرایہ دار کی اسناد صاف کرتا ہے۔
+
+[خودمختار منتقلی ورک فلو](/user-guide/getting-started/sovereign-migration-workflow)، [کثیر کرایہ داری علیحدگی](/user-guide/configuration/multi-tenancy-isolation)، اور [خودمختار کرایہ دار آپریشنز](/user-guide/administration/sovereign-tenant-operations) کے لیے صارف رہنما دیکھیں۔
+
+## تقاضے {#requirements}
 
 - WordPress 5.3 یا اس سے زیادہ
 - PHP 7.4 یا اس سے زیادہ
-- Multisite Ultimate پلگ ان (فعال/active)
+- Multisite Ultimate پلگ اِن (فعال)
 
-## تنصیب (Installation)
+## تنصیب {#installation}
 
-1. ایڈ آنڈ فائلوں کو اپنے `/wp-content/plugins/` ڈائریکٹری میں اپ لوڈ کریں۔
-2. ورڈپریس میں 'Plugins' مینیو کے ذریعے پلگ ان کو فعال (Activate) کریں۔
-3. نیٹ ورک ایڈمن میں ایڈ آنڈ کی سیٹنگز ترتیب دیں۔
+1. addon فائلوں کو اپنی `/wp-content/plugins/` ڈائریکٹری میں اپ لوڈ کریں
+2. WordPress میں 'پلگ اِنز' مینو کے ذریعے پلگ اِن فعال کریں
+3. نیٹ ورک منتظم میں addon ترتیبات تشکیل دیں
 
-## ڈویلپمنٹ
+## ترقی {#development}
 
-### سیٹ اپ
+### سیٹ اپ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### پروجیکٹ کا ڈھانچہ (Project Structure)
+### پروجیکٹ ساخت {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP کلاسز اور انکلڈز
+├── inc/                          # PHP کلاسز اور شاملات
 │   ├── class-multisite-ultimate-updater.php  # اپ ڈیٹ ہینڈلر
-│   └── class-multi_tenancy-main.php             # بنیادی فنکشنلٹی
+│   └── class-multi_tenancy-main.php             # مرکزی فعالیت
 ├── tests/                        # یونٹ ٹیسٹس
 │   ├── bootstrap.php            # ٹیسٹ بوٹسٹریپ
 │   ├── class-*-base.php         # بنیادی ٹیسٹ کلاس
 │   └── class-*-test.php         # ٹیسٹ کیسز
-├── views/                       # ٹیمپلیٹ فائلز
-├── assets/                      # سٹیٹک ایسٹ
+├── views/                       # ٹیمپلیٹ فائلیں
+├── assets/                      # جامد اثاثے
 │   ├── css/                     # اسٹائل شیٹس
-│   ├── js/                      # جاوا اسکرپٹ فائلز
+│   ├── js/                      # JavaScript فائلیں
 │   └── images/                  # تصاویر
-├── lang/                        # زبان کی فائلز
-├── composer.json                # PHP ڈیپینڈنسیز
-├── package.json                 # Node.js ڈیپینڈنسیز
-├── phpunit.xml.dist             # PHPUnit کنفیگریشن
-├── .phpcs.xml.dist              # کوڈ اسٹینڈرڈز کنفیگریشن
-└── rector.php                   # کوڈ کی جدید کاری کے قواعد
+├── lang/                        # زبان کی فائلیں
+├── composer.json                # PHP انحصارات
+├── package.json                 # Node.js انحصارات
+├── phpunit.xml.dist             # PHPUnit تشکیل
+├── .phpcs.xml.dist              # کوڈ معیارات کی تشکیل
+└── rector.php                   # کوڈ جدید کاری کے قواعد
 ```
 
-### ٹیسٹنگ
+### ٹیسٹنگ {#testing}
 
-اس ایڈ آنڈ میں ایک مکمل ٹیسٹنگ فریم ورک شامل ہے:
+addon میں ایک جامع ٹیسٹنگ فریم ورک شامل ہے:
 
-- **یونٹ ٹیسٹس (Unit Tests)**: ورڈپریس ٹیسٹ سوٹ کے ساتھ PHPUnit پر مبنی ٹیسٹ۔
-- **بیس ٹیسٹ کلاس (Base Test Class)**: عام ٹیسٹ سچوئیشنز کے لیے مددگار طریقے (helper methods) فراہم کرتا ہے۔
-- **ٹیسٹ کوریج (Test Coverage)**: کوڈ کی کوریج کو ٹریک کرنے کے لیے ترتیب دیا گیا ہے۔
-- **ملٹی-سائٹ ٹیسٹنگ (Multisite Testing)**: ٹیسٹ ملٹی-سائٹ ماحول میں چلتے ہیں۔
+- **یونٹ ٹیسٹس**: WordPress ٹیسٹ سوئٹ کے ساتھ PHPUnit پر مبنی ٹیسٹس
+- **بنیادی ٹیسٹ کلاس**: عام ٹیسٹ منظرناموں کے لیے مددگار طریقے فراہم کرتی ہے
+- **ٹیسٹ کوریج**: کوڈ کوریج کو ٹریک کرنے کے لیے تشکیل شدہ
+- **Multisite ٹیسٹنگ**: ٹیسٹس multisite ماحول میں چلتے ہیں
 
-### کوڈ کے معیار (Code Standards)
+### کوڈ معیارات {#code-standards}
 
-- **ورڈپریس کوڈنگ اسٹینڈرڈز (WordPress Coding Standards)**: PHPCS کے ذریعے نافذ کیے جاتے ہیں۔
-- **PHP 7.4+ کی مطابقت (Compatibility)**: جدید PHP فیچرز کی حمایت۔
-- **سٹیٹک اینالیسس (Static Analysis)**: ٹائپ چیکنگ کے لیے PHPStan کا انٹیگریشن۔
-- **کوڈ کی جدید کاری (Code Modernization)**: PHP اپ گریڈ کے لیے Rector قواعد۔
+- **WordPress کوڈنگ معیارات**: PHPCS کے ذریعے نافذ
+- **PHP 7.4+ مطابقت**: جدید PHP خصوصیات کی معاونت
+- **جامد تجزیہ**: قسم کی جانچ کے لیے PHPStan انضمام
+- **کوڈ جدید کاری**: PHP اپ گریڈز کے لیے Rector قواعد
 
-### بلڈ سسٹم (Build System)
+### بلڈ سسٹم {#build-system}
 
-- **ایسٹ پروسیسنگ (Asset Processing)**: CSS/JS فائلوں کے لیے منیفیکیشن (Minification)۔
-- **ترجمہ (Translation)**: POT فائل کی جنریشن۔
-- **پیکجنگ (Packaging)**: تقسیم کے لیے آرکائیو کی تخلیق۔
-- **ڈویلپمنٹ موڈ (Development Mode)**: ڈیبگنگ کے لیے غیر منیفائیڈ ایسٹ۔
+- **اثاثہ پروسیسنگ**: CSS/JS فائلوں کے لیے اختصار
+- **ترجمہ**: POT فائل تخلیق
+- **پیکیجنگ**: تقسیم کے لیے آرکائیو تخلیق
+- **ترقیاتی موڈ**: ڈیبگنگ کے لیے غیر مختصر اثاثے
 
-## ترتیب (Configuration)
+## تشکیل {#configuration}
 
-یہ ایڈ آنڈ نیٹ ورک ایڈمن انٹرفیس کے ذریعے قابل رسائی مختلف کنفیگریشن آپشنز کو سپورٹ کرتا ہے۔
+addon مختلف تشکیل اختیارات کی معاونت کرتا ہے جو نیٹ ورک منتظم انٹرفیس کے ذریعے قابلِ رسائی ہیں۔
 
-## ہکس اور فلٹرز (Hooks and Filters)
+### خودمختار کرایہ دار تشکیل {#sovereign-tenant-configuration}
 
-### ایکشنز (Actions)
+خودمختار کرایہ داروں کے لیے، کرایہ دار ڈیٹابیس، فائل سسٹم روٹ، ڈیٹابیس میزبان بائنڈنگ، اور میزبان صلاحیت کو کرایہ دار کی طرف ٹریفک روٹ کرنے سے پہلے تشکیل دیں۔ ہر اس تبدیلی کے بعد منتقلی کی توثیق چلائیں جو ڈیٹابیس اسناد، میزبان بائنڈنگ، روٹنگ، یا صارف فراہمی کو متاثر کرتی ہو۔
 
-- `ultimate-multisite-addon-template_init` - ایڈ آنڈ کے شروع ہونے کے بعد فعال ہوتا ہے۔
-- `ultimate-multisite-addon-template_loaded` - تمام ایڈ آنڈ فائلوں کے لوڈ ہونے کے بعد فعال ہوتا ہے۔
+`localhost` صرف اس وقت استعمال کریں جب کرایہ دار رن ٹائم اور ڈیٹابیس گرانٹس مقامی ساکٹ یا اسی مشین تک رسائی کی توقع کریں۔ `127.0.0.1` یا سروس میزبان نام استعمال کریں جب وہی آپ کے فراہم کنندہ کے ذریعے تشکیل شدہ گرانٹ میزبان ہو۔
 
-### فلٹرز (Filters)
+### Hostinger صلاحیت {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - ایڈ آنڈ کی سیٹنگز کو تبدیل کرنا۔
-- `ultimate-multisite-addon-template_enabled` - ایڈ آنڈ کی فعال/غیر فعال حیثیت کو تبدیل کرنا۔
+Hostinger کثیر کرایہ داری صلاحیت مشترکہ Hostinger انضمام ٹوکن کے ساتھ کام کرتی ہے۔ توثیق سے پہلے تصدیق کریں کہ ڈومین hPanel میں موجود ہے، DNS Hostinger اکاؤنٹ کی طرف اشارہ کرتا ہے، اور کرایہ دار ڈیٹابیس ترتیبات hPanel سے مطابقت رکھتی ہیں۔
 
-## لائسنس
+## ہکس اور فلٹرز {#hooks-and-filters}
 
-یہ ایڈ آنڈ GPL v3 یا اس سے زیادہ کے تحت لائسنس شدہ ہے۔
+### Actions {#actions}
 
-## سپورٹ
+- `ultimate-multisite-addon-template_init` - addon کی ابتدا کے بعد چلایا جاتا ہے
+- `ultimate-multisite-addon-template_loaded` - تمام addon فائلیں لوڈ ہونے کے بعد چلایا جاتا ہے
 
-سپورٹ اور دستاویزات کے لیے، [MultisiteUltimate.com](https://multisiteultimate.com) وزٹ کریں۔
-## چینج لاگ (Changelog)
+### Filters {#filters}
 
-- Version 1.0.1 (2025-09-28): پری فکس کو ultimate-multisite میں تبدیل کیا؛ ٹیکسٹ ڈومین کو اپ ڈیٹ کیا؛ ورژن بڑھایا۔
+- `ultimate-multisite-addon-template_settings` - addon ترتیبات میں ترمیم کریں
+- `ultimate-multisite-addon-template_enabled` - addon کو فعال/غیرفعال کرنے کی حیثیت کو اوور رائیڈ کریں
+
+## لائسنس {#license}
+
+یہ addon GPL v3 یا بعد کے تحت لائسنس یافتہ ہے۔
+
+## معاونت {#support}
+
+معاونت اور دستاویزات کے لیے، [MultisiteUltimate.com](https://multisiteultimate.com) ملاحظہ کریں
+## تبدیلیوں کی فہرست {#changelog}
+
+- Version 1.2.0 (2026-06-03): بے حالت کرایہ دار خودکار لاگ اِن، Hostinger کثیر کرایہ داری صلاحیت، فی ذیلی سائٹ ڈیٹابیس اور فائل سسٹم علیحدگی، خودمختار منتقلی توثیقی گیٹس، کرایہ دار بوٹسٹریپ/ڈیٹابیس رائٹر بہتریاں، قابلِ ترتیب MySQL میزبان بائنڈنگ، اور زیادہ محفوظ خودمختار خاتمہ شامل کریں۔
+
+- Version 1.0.1 (2025-09-28): سابقہ ultimate-multisite میں تبدیل کریں؛ ٹیکسٹ ڈومین اپ ڈیٹ کریں؛ ورژن بڑھائیں۔
 
 
-- Version (2025-09-28): پری فکس کو ultimate-multisite میں تبدیل کیا؛ ٹیکسٹ ڈومین کو اپ ڈیٹ کیا؛ ورژن بڑھایا۔
+- Version  (2025-09-28): سابقہ ultimate-multisite میں تبدیل کریں؛ ٹیکسٹ ڈومین اپ ڈیٹ کریں؛ ورژن بڑھائیں۔

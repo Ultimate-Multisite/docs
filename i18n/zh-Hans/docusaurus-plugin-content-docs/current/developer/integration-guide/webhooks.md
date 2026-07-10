@@ -3,11 +3,11 @@ title: Webhook 处理
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook 处理
+# Webhook 处理 {#webhook-handling}
 
 Create custom webhook endpoints to receive events from external services and sync data with Ultimate Multisite.
 
-## 自定义 Webhook 端点
+## 自定义 Webhook 端点 {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## 安全注意事项
+## 安全注意事项 {#security-considerations}
 
 - 始终使用 HMAC 或共享密钥验证 webhook 签名
 - 在 REST 路由上使用 `permission_callback` — 在生产环境中永远不要将其设置为 `__return_true`

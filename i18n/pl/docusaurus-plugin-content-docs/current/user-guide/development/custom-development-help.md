@@ -3,13 +3,13 @@ title: Pomoc w niestandardowym rozwoju
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Jak uzyskać pomoc w tworzeniu niestandardowych rozwiązań od Codeable?
+# Jak uzyskać pomoc w tworzeniu niestandardowych rozwiązań od Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Czasami naprawdę potrzebujemy świetnych dostosowań, aby nasze przepływy sieciowe działały dokładnie tak, jak chcemy. Jeśli właśnie tego szukasz, polecamy [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) — miejsce, gdzie znajdziesz doświadczonych programistów ze znajomością Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) to platforma łącząca klientów z wykwalifikowanymi freelancerami WordPress, którzy mogą pracować nad projektami dowolnej wielkości. Mają rygorystyczny proces weryfikacji, który zapewnia dopasowanie do ekspertów posiadających odpowiednie kwalifikacje do zadania, które masz na myśli.
 
-### Jak utworzyć projekt w Codeable?
+### Jak utworzyć projekt w Codeable? {#how-to-create-a-project-in-codeable}
 
 Najpierw wejdź na stronę [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) i kliknij przycisk **Start a Project**.
 

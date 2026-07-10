@@ -3,11 +3,11 @@ title: Uburyo bwo gukoresha uburyo bw'ubwujgwa
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow ya Kumenya Ubwujude
+# Workflow ya Kumenya Ubwujude {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yashyira imyitwarire (verification gates) yo gukora uburyo bwo gukoresha subsite yakoreshwa mu infrastructure ya tenant w'ubujude (sovereign).
 
-## Icyiza ku gukora
+## Icyiza ku gukora {#before-you-start}
 
 Gushakira ko wari:
 
@@ -17,7 +17,7 @@ Gushakira ko wari:
 - Uburyo bw'ubwujude bw'ibikorwa bwo database bukurikirana n'uburyo bwo kubyara mu gihe cyihagaragara (destination environment).
 - Ubushobozi bwo gukoresha WP-CLI commands ku rugero rwa network.
 
-## Icyiza cyo gukora
+## Icyiza cyo gukora {#recommended-workflow}
 
 1. Gukora database no filesystem ya tenant ikoreshwa.
 2. Gukoresha cyangwa gukorera ibyemezo by'ubwujude bw'ibyo tenant (tenant isolation settings).
@@ -28,7 +28,7 @@ Gushakira ko wari:
 7. Gutangira tenant uburyo bwo SSO.
 8. Gushyira DNS cyangwa routing gusa nyuma yo gukora imyitwarire.
 
-## Imyitwarire (Verification gates)
+## Imyitwarire (Verification gates) {#verification-gates}
 
 Uburyo bwo gukora imyitwarire bukurikirana uburyo bwo gukoresha migration ku nzego z'ibindi:
 
@@ -40,6 +40,6 @@ Uburyo bwo gukora imyitwarire bukurikirana uburyo bwo gukoresha migration ku nze
 
 Gusobanura imyitwarire (verification failures) nk'ibyo bikorwa mbere yo gushyira mu gihe cyo gukoresha. Gufungura ikibazo cy'database, abantu, queue, cyangwa routing kigize uburyo bwo gukora imyitwarire, nyuma y'uko wari wumva ko iriho ibindi, mbere yo guhagarara tenant ku babiri (customers).
 
-## Gutangira tenant uburyo bwo gukoresha
+## Gutangira tenant uburyo bwo gukoresha {#first-production-visit}
 
 Nyuma yo gukora imyitwarire, gukoresha **Visit (SSO)** ku site management screen kugira ngo umenye uburyo bwo gutangira tenant. Ibi bituma umehagarara routing ya tenant, gukoresha SSO token, gushyira ibintu mu gihe cy'ubujude (origin pinning), no gushakira abantu b'ubujude mu gihe cyiza cy'umwihariko.

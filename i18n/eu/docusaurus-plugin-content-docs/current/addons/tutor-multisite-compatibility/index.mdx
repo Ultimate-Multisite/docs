@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite bateragarritasuna
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress gehigarri bat, multisite inguruneetan Tutor LMS-erako bateragarritasun-konponketak gehitzen dituena.
+
+## Deskribapena {#description}
+
+Gehigarri honek ezinbesteko bateragarritasun-konponketak eskaintzen ditu Tutor LMS WordPress multisite sareetan exekutatzeko. Erabiltzaileen matrikulazioa, irakasleen kudeaketa, ikastaro-mugak eta multisite-ri berariazko beste funtzionalitate batzuk kudeatzen ditu.
+
+## Ezaugarriak {#features}
+
+- **Datu-baseko taulen kudeaketa**: Multisite-ren kanpo-gakoen murrizketengatik huts egiten duten falta diren Tutor LMS taulak automatikoki detektatu eta sortzen ditu
+- **Multisite erabiltzaileen matrikulazioa**: Sareko guneen artean erabiltzaileen matrikulazioa kudeatzeko AJAX kudeatzaile pertsonalizatuak
+- **Irakasle-rolen kudeaketa**: Multisite inguruneetan irakasle-rolen esleipen eta kudeaketa automatikoa
+- **Ikastaro-mugak**: Ultimate Multisite-rekin integrazioa, guneko planen arabera ikastaroen eta funnel-en sorrera-mugak kudeatzeko
+- **Administrazio-ikuspegi pertsonalizatuak**: Multisite kontuan hartzen duen irakasleen zerrenda eta kudeaketa-interfazea
+- **Administrazio-tresnak**: Datu-basea kudeatzeko interfazea sareko eta guneko administratzaileentzat
+
+## Eskakizunak {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS gehigarria (automatikoki betearazia `Requires Plugins` goiburuaren bidez)
+- WordPress Multisite instalazioa
+- Ultimate Multisite gehigarria (ikastaro-mugen funtzionalitaterako)
+
+## Instalazioa {#installation}
+
+1. Kargatu gehigarriaren fitxategiak hona: `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Ziurtatu Tutor LMS instalatuta eta aktibatuta dagoela
+3. Aktibatu gehigarria WordPress-eko 'Gehigarriak' menuaren bidez
+4. Gehigarria automatikoki integratuko da Tutor LMS-ekin
+
+## Fitxategi-egitura {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU plugin-etik mugitutako funtzionalitatea {#functionality-moved-from-mu-plugin}
+
+Gehigarri honek lehen `wp-content/mu-plugins/daves.php` fitxategian zegoen funtzionalitatea dauka:
+
+- Ikastaroen egoera-aldaketen mugak
+- Ikastaroen sorrera-mugak
+- CartFlows integrazioa eta mugak
+- Tutor irakasle-rolen kudeaketa
+- Multisite erabiltzaileen matrikulazioaren kudeaketa
+- Ikastaro-produktuaren ID bistaratzea
+
+## Datu-basearen kudeaketa {#database-management}
+
+### Arazoa {#the-problem}
+
+WordPress multisite inguruneetan, Tutor LMS taulen sorrera huts egiten du erabiltzaileen taularako kanpo-gakoen murrizketak dituzten tauletan. Hau gertatzen da zeren:
+
+- Guneari berariazko taulek `wp_2_tutor_carts` bezalako aurrizkiak erabiltzen dituzte
+- Kanpo-gakoek `wp_2_users` erreferentziatzen dute (ez da existitzen)
+- Benetako erabiltzaileen taula `wp_users` da (sare osoan partekatua)
+
+### Konponbidea {#the-solution}
+
+Gehigarri honek automatikoki:
+
+1. **Falta diren taulak detektatzen ditu**: Kanpo-gakoen murrizketengatik sortu ez diren taulak egiaztatzen ditu
+2. **Erreferentzia zuzenekin taulak sortzen ditu**: Erabiltzaileen taularen izen egokia erabiltzen du (`wp_users` multisite-n)
+3. **Hainbat agertoki kudeatzen ditu**:
+   - Gehigarria aktibatzea/berraktibatzea
+   - Sarean gune berria sortzea
+   - Administrazio-interfazearen bidez taulak eskuz egiaztatzea
+
+### Eragindako taulak {#affected-tables}
+
+- `tutor_coupon_usages` - Erabiltzaileen taularako kanpo-gakoa dauka
+- `tutor_carts` - Erabiltzaileen taularako kanpo-gakoa dauka
+- `tutor_notification_preferences` - Erabiltzaileen taularako kanpo-gakoa duen TutorPro taula
+
+### Administrazio-interfazea {#admin-interface}
+
+Sartu datu-basea kudeatzeko tresnetara hemen:
+
+- **Sareko administrazioa**: Ezarpenak → Tutor Multisite DB
+- **Guneko administrazioa**: Tresnak → Tutor Multisite DB
+
+Interfazeak aukera ematen dizu:
+- Gune guztietan falta diren taulak ikusteko
+- Taulen sorrera eskuz abiarazteko
+- Datu-basearen konfigurazioa egiaztatzeko
+- Egoera-informazio xehea ikusteko
+
+## Laguntza {#support}
+
+Gehigarri hau KursoPro plataformarako berariaz diseinatuta dago. Laguntza teknikorako, jarri harremanetan garapen-taldearekin.

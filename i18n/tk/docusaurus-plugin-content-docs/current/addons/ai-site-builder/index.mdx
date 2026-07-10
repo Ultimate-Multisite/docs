@@ -1,0 +1,124 @@
+---
+title: AI Saýt Gurlujysy
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Saýt Gurluşykçysy {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Talaplar {#requirements}
+
+- WordPress 5.3 ýa-da has ýokary
+- PHP 7.4 ýa-da has ýokary
+- Multisite Ultimate plugin-i (işjeň)
+
+## Gurnama {#installation}
+
+1. Addon faýllaryny `/wp-content/plugins/` katalogyňyza ýükläň
+2. Plugin-i WordPress-däki 'Plugins' menýusy arkaly işjeňleşdiriň
+3. Addon sazlamalaryny tor administratorynda sazlaň
+
+## Işläp düzmek {#development}
+
+### Sazlama {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Taslamanyň gurluşy {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klaslary we goşulmalar
+│   ├── class-multisite-ultimate-updater.php  # Täzelenme işleýjisi
+│   └── class-ai_site_builder-main.php             # Esasy funksionallyk
+├── tests/                        # Modul synaglary
+│   ├── bootstrap.php            # Synag başlangyjy
+│   ├── class-*-base.php         # Esasy synag klasy
+│   └── class-*-test.php         # Synag ýagdaýlary
+├── views/                       # Şablon faýllary
+├── assets/                      # Statik serişdeler
+│   ├── css/                     # Stil sahypalary
+│   ├── js/                      # JavaScript faýllary
+│   └── images/                  # Suratlar
+├── lang/                        # Dil faýllary
+├── composer.json                # PHP baglylyklary
+├── package.json                 # Node.js baglylyklary
+├── phpunit.xml.dist             # PHPUnit konfigurasiýasy
+├── .phpcs.xml.dist              # Kod standartlary konfigurasiýasy
+└── rector.php                   # Kody döwrebaplaşdyrmak düzgünleri
+```
+
+### Synag {#testing}
+
+Addon giňişleýin synag çarçuwasyny öz içine alýar:
+
+- **Modul synaglary**: WordPress synag toplumy bilen PHPUnit esasly synaglar
+- **Esasy synag klasy**: Umumy synag ssenarileri üçin kömekçi usullary üpjün edýär
+- **Synag gurşawy**: Kod gurşawyny yzarlamak üçin sazlanan
+- **Multisite synagy**: Synaglar multisite gurşawynda işledilýär
+
+### Kod standartlary {#code-standards}
+
+- **WordPress kodlaşdyrma standartlary**: PHPCS arkaly berjaý etdirilýär
+- **PHP 7.4+ laýyklygy**: Döwrebap PHP aýratynlyklary goldanylýar
+- **Statik analiz**: Görnüş barlagy üçin PHPStan integrasiýasy
+- **Kody döwrebaplaşdyrmak**: PHP täzelenmeleri üçin Rector düzgünleri
+
+### Gurnama ulgamy {#build-system}
+
+- **Serişdeleri işlemek**: CSS/JS faýllary üçin kiçeltme
+- **Terjime**: POT faýlyny döretmek
+- **Gaplamak**: Paýlamak üçin arhiw döretmek
+- **Işläp düzmek tertibi**: Näsazlyklary düzetmek üçin kiçeldilmedik serişdeler
+
+## Konfigurasiýa {#configuration}
+
+Addon tor administratory interfeýsi arkaly elýeterli dürli konfigurasiýa opsiýalaryny goldaýar.
+
+## Hook-lar we filtrler {#hooks-and-filters}
+
+### Hereketler {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Addon başlangyçdan soň işe goýberilýär
+- `ultimate-multisite-ai-site-builder_loaded` - Ähli addon faýllary ýüklenenden soň işe goýberilýär
+
+### Filtrler {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Addon sazlamalaryny üýtgediň
+- `ultimate-multisite-ai-site-builder_enabled` - Addon-y işjeňleşdirmek/öçürmek ýagdaýyny ýokardan kesgitläň
+
+## Lisenziýa {#license}
+
+Bu addon GPL v3 ýa-da soňraky görnüşi boýunça lisenziýalanandyr.
+
+## Goldaw {#support}
+
+Goldaw we resminamalar üçin [MultisiteUltimate.com](https://multisiteultimate.com) sahypasyna baryp görüň
+## Üýtgeşmeler žurnaly {#changelog}
+
+- Wersiýa 1.0.1 (2025-09-28): prefiksi ultimate-multisite edip üýtget; text domain-y täzele; wersiýany ýokarlandyr.
+
+
+- Wersiýa  (2025-09-28): prefiksi ultimate-multisite edip üýtget; text domain-y täzele; wersiýany ýokarlandyr.

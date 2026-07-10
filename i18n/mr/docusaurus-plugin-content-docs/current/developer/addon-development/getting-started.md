@@ -1,27 +1,27 @@
 ---
-title: ॲडऑन विकासाची सुरुवात
+title: Addon विकासासह सुरुवात करणे
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon Development (अ‍ॅडऑन डेव्हलपमेंट)
+# अ‍ॅडऑन विकास {#addon-development}
 
-## Addon Structure (अ‍ॅडऑनची रचना)
+## अ‍ॅडऑन रचना {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file (मुख्य प्लगइन फाईल)
+├── my-addon.php                 # मुख्य प्लगइन फाइल
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class (मुख्य अ‍ॅडऑन क्लास)
-│   ├── admin-pages/             # Admin interface (अ‍ॅडमिन इंटरफेस)
-│   ├── models/                  # Custom data models (सानुकूल डेटा मॉडेल्स)
-│   └── integrations/            # Third-party integrations (तृतीय-पक्ष एकत्रीकरणे)
+│   ├── class-my-addon.php       # मुख्य अ‍ॅडऑन वर्ग
+│   ├── admin-pages/             # प्रशासक इंटरफेस
+│   ├── models/                  # सानुकूल डेटा मॉडेल्स
+│   └── integrations/            # तृतीय-पक्ष एकत्रीकरणे
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files (टेम्प्लेट फाईल्स)
+└── templates/                   # साचा फाइल्स
 ```
 
-## Main Addon File Template (मुख्य अ‍ॅडऑन फाईलचा नमुना)
+## मुख्य अ‍ॅडऑन फाइल साचा {#main-addon-file-template}
 
 ```php
 <?php
@@ -61,80 +61,80 @@ add_action('plugins_loaded', function() {
 });
 
 /**
- * Main addon class (मुख्य अ‍ॅडऑन क्लास)
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Initialize the addon (अ‍ॅडऑन सुरू करणे)
+     * Initialize the addon
      */
     public function init() {
-        // Load dependencies (अवलंबन लोड करणे)
+        // Load dependencies
         $this->load_dependencies();
 
-        // Setup hooks (हुक्स सेट करणे)
+        // Setup hooks
         $this->setup_hooks();
 
-        // Initialize components (घटक सुरू करणे)
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Load required files (आवश्यक फाईल्स लोड करणे)
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * Setup WordPress hooks (वर्डप्रेस हुक्स सेट करणे)
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Activation/deactivation (सक्रिय/निष्क्रिय करणे)
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite hooks (Ultimate Multisite हुक्स)
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Initialize addon components (अ‍ॅडऑन घटक सुरू करणे)
+     * Initialize addon components
      */
     private function init_components() {
-        // Initialize admin pages, models, etc. (अ‍ॅडमिन पेजेस, मॉडेल्स इत्यादी सुरू करा.)
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin activation (प्लगइन सक्रिय करणे)
+     * Plugin activation
      */
     public function activate() {
-        // Create custom tables, set options, etc. (सानुकूल टेबल्स तयार करा, पर्याय सेट करा, इत्यादी.)
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin deactivation (प्लगइन निष्क्रिय करणे)
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Cleanup if needed (आवश्यक असल्यास साफसफाई करा)
+        // Cleanup if needed
     }
 
     /**
-     * Handle checkout completion (चेकआउट पूर्ण झाल्यावर हाताळणी)
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Custom logic when checkout completes (चेकआउट पूर्ण झाल्यावर सानुकूल लॉजिक)
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Add custom checkout fields (सानुकूल चेकआउट फील्ड जोडणे)
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Custom Model Example (सानुकूल मॉडेलचे उदाहरण)
+## सानुकूल मॉडेल उदाहरण {#custom-model-example}
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Custom Lead model (सानुकूल लीड मॉडेल)
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Model name (मॉडेलचे नाव)
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Set the database table (डेटाबेस टेबल सेट करणे)
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Get the company name (कंपनीचे नाव मिळवणे)
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Set the company name (कंपनीचे नाव सेट करणे)
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Convert lead to customer (लीडला ग्राहकमध्ये रूपांतरित करणे)
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Create WordPress user (वर्डप्रेस युजर तयार करणे)
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Create Ultimate Multisite customer (Ultimate Multisite ग्राहक तयार करणे)
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Copy lead data to customer (लीड डेटा ग्राहकाकडे कॉपी करणे)
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Mark lead as converted (लीडला रूपांतरित म्हणून मार्क करणे)
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin Page Integration (अ‍ॅडमिन पेज एकत्रीकरण)
+## प्रशासक पृष्ठ एकत्रीकरण {#admin-page-integration}
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Custom admin page (सानुकूल अ‍ॅडमिन पेज)
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * Page ID (पेज आयडी)
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Menu position (मेनूची जागा)
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Initialize page (पेज सुरू करणे)
+     * Initialize page
      */
     public function init() {
-        // Register with Ultimate Multisite (Ultimate Multisite सोबत नोंदणी करणे)
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Register the admin page (अ‍ॅडमिन पेज नोंदणी करणे)
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Render the page (पेज रेंडर करणे)
+     * Render the page
      */
     public function render() {
-        // Get leads data (लीड्स डेटा मिळवणे)
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Render template (टेम्प्लेट रेंडर करणे)
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testing Your Addon (तुमचा अ‍ॅडऑन तपासणे)
+## तुमच्या Addon ची चाचणी करणे {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Create test customer (चाचणी ग्राहक तयार करणे)
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Create test membership (चाचणी मेंबरशिप तयार करणे)
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulate form submission (फॉर्म सबमिशनचे अनुकरण करणे)
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Verify data was saved (डेटा सेव्ह झाला आहे की नाही तपासा)
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Next Steps (पुढील पायऱ्या)
+## v2.13.0 extension points {#v2130-extension-points}
 
-- Review the [Hooks Reference](/developer/hooks) for available actions and filters (उपलब्ध actions आणि filters साठी [Hooks Reference] तपासा)
-- Check the [REST API Overview](/developer/rest-api/overview) for API integration (API एकत्रीकरणासाठी [REST API Overview] तपासा)
-- Use the [Addon Template](/addons/addon-template) as a starting scaffold ([Addon Template] चा वापर प्रारंभिक आधार म्हणून करा)
+Ultimate Multisite v2.13.0 मध्ये sovereign tenants, checkout domains किंवा host-provider DNS automation सोबत एकत्रित होणाऱ्या addons साठी उपयुक्त असे अनेक extension points जोडले आहेत.
+
+### SSO आणि main-site व्यवस्थापन URLs {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form base domains {#checkout-form-base-domains}
+
+तुमचा addon प्रति-site custom mappings ऐवजी checkout-form **Site URL** domains प्रमाणे वागणारे अतिरिक्त shared base domains पुरवत असेल तेव्हा `wu_checkout_form_base_domains` वापरा:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite हे hosts normalize करते आणि त्यांच्यासाठी स्वयंचलित प्रति-site mapped-domain records वगळते.
+
+### स्वयंचलित domain-record निर्मिती {#automatic-domain-record-creation}
+
+नव्याने तयार केलेल्या site साठी स्वयंचलित domain-record निर्मिती दडपण्याची किंवा पुढे ढकलण्याची तुमच्या addon ला गरज असेल तेव्हा `wu_should_create_domain_record_for_site` वापरा:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` ऐकणाऱ्या host-provider integrations sites तयार झाल्यावर provider-side DNS records तयार करू शकतात. त्या action साठी कोणतेही integration नोंदणीकृत नसल्यास, Ultimate Multisite रिकामा background job वगळते.
+
+## पुढील पावले {#next-steps}
+
+- उपलब्ध actions आणि filters साठी [Hooks Reference](/developer/hooks) पुनरावलोकन करा
+- API integration साठी [REST API Overview](/developer/rest-api/overview) तपासा
+- सुरुवातीचा scaffold म्हणून [Addon Template](/addons/addon-template) वापरा

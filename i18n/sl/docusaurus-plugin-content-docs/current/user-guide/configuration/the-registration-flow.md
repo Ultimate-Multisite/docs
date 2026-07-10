@@ -3,13 +3,13 @@ title: Potok registracije
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registracijski tok (v2)
+# Registracijski tok (v2) {#the-registration-flow-v2}
 
 _**POMEMBNO OPOMENILO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
 
 Uporabniki lahko se na vašo mrežno omrežje registrirajo na različne načine. Lahko uporabljajo vaš obrazec za registracijo ali deliteľni link do predodbrane paketa. Tukaj vam bom pokazal, kako bodo vaši kupci mogli se registrirati na vašo mrežno omrežje z uporabo na voljo poti in kaj se bo zgodilo po tem, ko se se registrajo na vašo mrežno omrežje.
 
-## Uporaba obrazca za registracijo:
+## Uporaba obrazca za registracijo: {#using-the-registration-form}
 
 To je standardni proces registracije. Ustvarite stran za registracijo s **obrazcem za plačevanje (checkout form)** in to bo bilo mesto, kjer bodo vaši kupci šli, da se se se registrajo na vašo mrežno omrežje in naročajo na paket. Lahko imate več strani za registracijo, vsaka z drugim obrazcem za registracijo, če želite.
 
@@ -35,13 +35,13 @@ Na strani "Hvala" bodo videli sporočilo, ki jim bo povedalo, ali morajo potrdit
 
 ![Splet aktiviran z povezavo za prijavu na dashboard](/img/frontend/site-activated.png)
 
-## Uporaba deliteljne povezave:
+## Uporaba deliteljne povezave: {#using-a-shareable-link}
 
 Postopek registracije z uporabo deliteljne povezave je v osnovi isti kot pri obrazcu za registracijo, edina razlika je, da z delitelnico povezavo lahko vaši kupci na nakupni obrazcu predhodno izberemo produkt ali templat spletne strani (pogledajte sekcijo Predizbiro produktov in templatov preko URL parametrov) ali morda dodamo kupon kod (pogledajte sekcijo Uporaba URL parametrov).
 
 Postopek registracije bo isti: bodo morali vpisati ime, uporabniško ime, e-poštni naslov, ime spletne strani in naslov itd... vendar bo načrt ali templat strani že predizbran za njih.
 
-### Registracija z ročnimi plačami:
+### Registracija z ročnimi plačami: {#registering-using-manual-payments}
 
 Če ne želite uporabljati PayPal, Stripe ali kakršno koli drugo platno brambo, ki jo ponuja Ultimate Multisite ali njegove dodatne integracije, lahko uporabite ročne naloge za vaše kupce. Na ta način lahko generirate račun za njihovo plačilo na vašem predvladanem sistemu za obdelavo plačil po temeljni registraciji na vaši mreži.
 

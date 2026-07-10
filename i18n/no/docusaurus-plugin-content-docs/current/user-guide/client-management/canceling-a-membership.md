@@ -1,31 +1,32 @@
 ---
-title: Kansellere et medlemskap
+title: Avslutte et medlemskap
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Avbryte et medlemskap (v2)
+# Kansellere et medlemskap (v2) {#canceling-a-membership-v2}
 
-_**VIKTIG MERKNAD: Denne artikkelen gjelder Ultimate Multisite versjon 2.x.**_
+_**VIKTIG MERKNAD: Denne artikkelen viser til Ultimate Multisite versjon 2.x.**_
 
-Det er ganske enkelt for kundene dine å avbryte et medlemskap.
+Å kansellere et medlemskap på kundens side er ganske enkelt.
 
-Hvis brukeren din ønsker å avbryte medlemskapet sitt, bør de først gå til **Konto**-siden.
+Hvis brukeren din ønsker å kansellere medlemskapet sitt, bør de først åpne ****Account****-siden sin.
 
-Der bør de gå til **Faresonen** og klikke på **Slett konto**.
+Der bør de gå til **Faresonen** og klikke på **Slett Account**.
 
-![Faresonen på kontosiden med Slett konto-knappen](/img/admin/memberships-list.png)
+![Account-side Faresone med Slett Account-knapp](/img/account-page/danger-zone.png)
 
-Et vindu åpnes som ber om bekreftelse. De må slå på **Bekreft sletting av konto** og klikke på **Slett konto**.
+En modul åpnes og ber om bekreftelse. De bør slå på alternativet **Bekreft sletting av Account** og klikke på **Slett Account**.
 
-![Dialogboks for bekreftelse av kontosletting](/img/admin/memberships-list.png)
+![Dialog for bekreft sletting av Account](/img/account-page/delete-account-confirm.png)
 
-Dette logger dem ut av nettstedet og avbryter medlemskapet deres på nettverket ditt, i tillegg til å slette nettstedet deres fra nettverket.
+Dette vil logge dem ut av nettstedet og kansellere medlemskapet deres på nettverket ditt, samt slette nettstedet deres fra nettverket ditt.
 
-![Utlogget etter sletting av konto](/img/admin/memberships-list.png)
+![Logget ut etter sletting av Account](/img/account-page/logged-out-after-delete.png)
 
-![Bekreftelse på avbrutt medlemskap](/img/admin/memberships-list.png)
+![Bekreftelse på kansellert medlemskap](/img/account-page/membership-canceled.png)
 
-**Viktig:** Merk at denne handlingen ikke fjerner kunden fra nettverket ditt, siden en kunde kan ha flere medlemskap eller ingen medlemskap knyttet til seg.
+**Viktig:** Merk at denne handlingen ikke vil fjerne kunden fra nettverket ditt, siden en kunde kan ha mer enn ett medlemskap eller ingen medlemskap knyttet til seg.
 
-![Kunden finnes fortsatt i nettverket etter avbryting](/img/admin/memberships-list.png) | ![Kunde uten aktive medlemskap](/img/admin/memberships-list.png)  
----|---
+![Kunden finnes fortsatt i nettverket etter kansellering](/img/admin/customer-after-cancel.png)
+
+![Kunde uten aktive medlemskap](/img/admin/memberships-customer-empty.png)

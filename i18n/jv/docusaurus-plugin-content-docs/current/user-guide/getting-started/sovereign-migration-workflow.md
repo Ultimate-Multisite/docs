@@ -3,11 +3,11 @@ title: Alur Migrasi Kedaulatan
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Alur Migrasi Kedaulatan
+# Alur Migrasi Kedaulatan {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 nambahin gerbang verifikasi migrasi pas pindah subsite standar ke infrastruktur tenant kedaulatan (sovereign).
 
-## Sebelum mulai
+## Sebelum mulai {#before-you-start}
 
 Pastikan kamu sudah punya:
 
@@ -17,7 +17,7 @@ Pastikan kamu sudah punya:
 - Binding host database yang cocok sama lingkungan tujuan.
 - Akses buat jalankan perintah WP-CLI untuk jaringan (network).
 
-## Alur kerja yang disarankan
+## Alur kerja yang disarankan {#recommended-workflow}
 
 1. Siapin database tenant tujuan dan filesystem-nya.
 2. Daftarkan atau perbarui pengaturan isolasi tenant.
@@ -28,7 +28,7 @@ Pastikan kamu sudah punya:
 7. Kunjungi tenant pakai SSO.
 8. Ganti DNS atau routing baru setelah verifikasi lolos.
 
-## Gerbang Verifikasi
+## Gerbang Verifikasi {#verification-gates}
 
 Alur kerja verifikasi ini ngecek migrasi dari beberapa sisi:
 
@@ -40,6 +40,6 @@ Alur kerja verifikasi ini ngecek migrasi dari beberapa sisi:
 
 Anggap saja kegagalan verifikasi itu sebagai penghalang sebelum peluncuran. Perbaiki masalah database, pengguna, antrean, atau routing yang dilaporkan, baru jalankan verifikasi lagi sebelum membuka tenant ke pelanggan.
 
-## Kunjungan produksi pertama
+## Kunjungan produksi pertama {#first-production-visit}
 
 Setelah verifikasi lolos, gunakan **Visit (SSO)** dari layar manajemen situs untuk kunjungan admin pertama. Ini memastikan routing tenant, penanganan token SSO, *origin pinning*, dan penyediaan pengguna sisi tenant dalam satu langkah yang terkontrol.

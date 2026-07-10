@@ -1,33 +1,33 @@
 ---
-title: 插件开发入门
+title: 附加组件开发入门
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon Development
+# 附加组件开发 {#addon-development}
 
-## Addon Structure
+## 附加组件结构 {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # 主插件文件
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # 主插件类
-│   ├── admin-pages/             # 管理界面
-│   ├── models/                  # 自定义数据模型
-│   └── integrations/            # 第三方集成
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # 模板文件
+└── templates/                   # Template files
 ```
 
-## Main Addon File Template
+## 主附加组件文件模板 {#main-addon-file-template}
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: 为 Ultimate Multisite 定制的插件
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -56,7 +56,7 @@ add_action('plugins_loaded', function() {
         return;
     }
 
-    // 初始化插件
+    // Initialize addon
     My_Addon::get_instance();
 });
 
@@ -71,13 +71,13 @@ class My_Addon {
      * Initialize the addon
      */
     public function init() {
-        // 加载依赖
+        // Load dependencies
         $this->load_dependencies();
 
-        // 设置钩子
+        // Setup hooks
         $this->setup_hooks();
 
-        // 初始化组件
+        // Initialize components
         $this->init_components();
     }
 
@@ -92,11 +92,11 @@ class My_Addon {
      * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // 激活/停用
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite 钩子
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
@@ -105,14 +105,14 @@ class My_Addon {
      * Initialize addon components
      */
     private function init_components() {
-        // 初始化插件组件
+        // Initialize admin pages, models, etc.
     }
 
     /**
      * Plugin activation
      */
     public function activate() {
-        // 创建自定义表，设置选项等
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
@@ -121,14 +121,14 @@ class My_Addon {
      * Plugin deactivation
      */
     public function deactivate() {
-        // 如有需要进行清理
+        // Cleanup if needed
     }
 
     /**
      * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // 结账完成时的自定义逻辑
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Custom Model Example
+## 自定义模型示例 {#custom-model-example}
 
 ```php
 <?php
@@ -196,7 +196,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
      * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // 创建 WordPress 用户
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // 创建 Ultimate Multisite 客户
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // 将潜在客户数据复制到客户
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // 标记潜在客户已转换
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin Page Integration
+## 管理页面集成 {#admin-page-integration}
 
 ```php
 <?php
@@ -258,7 +258,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
      * Initialize page
      */
     public function init() {
-        // 与 Ultimate Multisite 注册
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
@@ -280,13 +280,13 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
      * Render the page
      */
     public function render() {
-        // 获取潜在客户数据
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // 渲染模板
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Testing Your Addon
+## 测试你的 Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // 创建测试客户
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // 创建测试会员
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // 模拟表单提交
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // 验证数据已保存
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Next Steps
+## v2.13.0 扩展点 {#v2130-extension-points}
 
-- 查看 [Hooks Reference](/developer/hooks) 以获取可用的动作和过滤器
-- 检查 [REST API Overview](/developer/rest-api/overview) 以获取 API 集成
+Ultimate Multisite v2.13.0 添加了多个扩展点，可用于与主权租户、结账域名或主机提供商 DNS 自动化集成的 Addon。
+
+### SSO 和主站点管理 URL {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### 结账表单基础域名 {#checkout-form-base-domains}
+
+当你的 Addon 提供额外的共享基础域名，并且这些域名应像结账表单 **Site URL** 域名一样运行，而不是作为每个站点的自定义映射时，请使用 `wu_checkout_form_base_domains`：
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite 会规范化这些主机，并跳过为它们自动创建的每站点映射域名记录。
+
+### 自动创建域名记录 {#automatic-domain-record-creation}
+
+当你的 Addon 需要阻止或延迟为新创建的站点自动创建域名记录时，请使用 `wu_should_create_domain_record_for_site`：
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+监听 `wu_add_subdomain` 的主机提供商集成可以在创建站点时创建提供商端 DNS 记录。如果没有为该操作注册任何集成，Ultimate Multisite 会跳过空的后台任务。
+
+## 后续步骤 {#next-steps}
+
+- 查看 [Hooks 参考](/developer/hooks)，了解可用的操作和过滤器
+- 查看 [REST API 概览](/developer/rest-api/overview)，了解 API 集成
 - 使用 [Addon Template](/addons/addon-template) 作为起始脚手架

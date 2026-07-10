@@ -1,0 +1,111 @@
+---
+title: Conector de IA definitivo para endpoints compatibles
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
+
+O Ultimate AI Connector for Compatible Endpoints integra APIs de provedores de IA compatibles con OpenAI coa túa rede multisitio de WordPress. Configura varios provedores de IA — cada un co seu propio URL de punto final, clave da API e modelo predeterminado — e encamiña as solicitudes con recuperación automática cando un provedor non está dispoñible.
+
+## Características principais {#key-features}
+
+- **Compatibilidade con varios provedores**: Engade varias tarxetas de provedores de IA, cada unha co seu propio URL de punto final, clave da API e modelo predeterminado
+- **Arrastrar para reordenar**: Organiza os provedores por prioridade usando o tirador de agarre en cada tarxeta; as solicitudes usan os provedores por orde
+- **Encamiñamento de recuperación automática**: Se o provedor principal non está dispoñible, as solicitudes pasan automaticamente ao seguinte provedor configurado
+- **Configuración por provedor**: Cada provedor configúrase de maneira independente coas súas propias credenciais e selección de modelo
+- **UI de axustes baseada en tarxetas**: Construída sobre compoñentes Card estables de WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Expansión automática ao engadir**: As novas tarxetas de provedor expándense automaticamente para que poidas cubrir os detalles de inmediato
+- **Invalidación da caché de scripts**: Os scripts dos provedores invalidan a caché ao actualizar o plugin para asegurar que se cargue a versión máis recente
+
+## Requisitos {#requirements}
+
+- WordPress 5.3 ou superior
+- PHP 7.4 ou superior
+- Plugin Ultimate Multisite (activo)
+- Un punto final de API compatible con OpenAI (autoaloxado ou de terceiros)
+
+## Instalación {#installation}
+
+1. Sube os ficheiros do complemento ao teu directorio `/wp-content/plugins/`
+2. Activa o plugin a través do menú 'Plugins' en WordPress
+3. Navega a **Ultimate Multisite → AI Connector** para configurar o complemento
+
+## Configuración {#configuration}
+
+### Configuración de varios provedores {#multi-provider-setup}
+
+A pantalla de configuración usa un deseño baseado en tarxetas onde cada tarxeta representa un provedor de IA. Podes engadir tantos provedores como precises.
+
+#### Engadir un provedor {#adding-a-provider}
+
+1. Vai a **Ultimate Multisite → AI Connector** na administración de rede
+2. Fai clic en **Engadir provedor**
+3. Aparece unha nova tarxeta de provedor e expándese automaticamente
+4. Cubre os detalles do provedor:
+   - **Nome do provedor** — unha etiqueta para identificar este provedor (p. ex. "OpenAI", "Mistral", "Local Ollama")
+   - **URL do punto final** — o URL base da API compatible con OpenAI (p. ex. `https://api.openai.com/v1`)
+   - **Clave da API** — a túa clave da API para este provedor
+   - **Modelo predeterminado** — o identificador do modelo que se usará de maneira predeterminada para este provedor (p. ex. `gpt-4o`, `mistral-small`)
+5. Fai clic en **Gardar axustes**
+
+#### Eliminar un provedor {#removing-a-provider}
+
+Fai clic no botón **Eliminar** en calquera tarxeta de provedor para eliminala. Garda os axustes para aplicar o cambio.
+
+#### Reordenar provedores {#reordering-providers}
+
+Arrastra a icona de agarre (⣿) no lado esquerdo de calquera tarxeta de provedor para reordenala. A orde determina a prioridade de recuperación: as solicitudes envíanse ao primeiro provedor e pasan aos provedores seguintes se unha solicitude falla.
+
+### Encamiñamento de recuperación {#fallback-routing}
+
+Cando unha solicitude ao provedor principal falla — debido a un tempo de espera esgotado, un límite de taxa ou unha interrupción do servizo — o conector tenta de novo automaticamente co seguinte provedor da lista. Isto continúa pola lista ata que un provedor teña éxito ou ata que se tentasen todos os provedores.
+
+| Escenario | Comportamento |
+|----------|-----------|
+| O provedor principal responde | A solicitude aténdese normalmente |
+| O provedor principal falla | A solicitude téntase de novo co seguinte provedor |
+| Todos os provedores fallan | Devólvese un erro ao chamador |
+
+A recuperación é transparente para o plugin ou tema que chama — reciben unha resposta correcta ou un erro final, independentemente de cantos provedores se tentasen.
+
+### Referencia de configuración do provedor {#provider-configuration-reference}
+
+| Campo | Obrigatorio | Descrición |
+|-------|----------|-------------|
+| Nome do provedor | Si | Etiqueta de visualización para este provedor |
+| URL do punto final | Si | URL base da API compatible con OpenAI |
+| Clave da API | Si | Clave de autenticación para este provedor |
+| Modelo predeterminado | Si | Identificador do modelo usado cando non se especifica ningún modelo na solicitude |
+
+## Solución de problemas {#troubleshooting}
+
+### Non aparece ningún provedor na lista {#no-providers-are-listed}
+
+Se a lista de provedores está baleira despois de gardar, confirma que:
+
+- Fixeches clic en **Gardar axustes** despois de engadir provedores
+- O teu navegador non bloqueou o gardado da páxina de axustes (comproba a consola do navegador para ver erros de JavaScript)
+- O plugin está activo e estás na pantalla de administración de rede
+
+### As solicitudes fallan para todos os provedores {#requests-are-failing-for-all-providers}
+
+- Verifica que o URL do punto final de cada provedor sexa accesible desde o teu servidor (non só desde o teu navegador)
+- Comproba que cada clave da API sexa válida e non caducase
+- Revisa o estado do límite de taxa e da cota do provedor no seu dashboard
+- Activa o rexistro de depuración de WordPress (`WP_DEBUG_LOG`) para capturar mensaxes de erro detalladas do conector
+
+### Un provedor non se está usando para a recuperación {#a-provider-is-not-being-used-for-fallback}
+
+Arrastrar para reordenar cambia a orde de recuperación. Confirma que o provedor que esperas que reciba solicitudes de recuperación estea colocado correctamente na lista e que o seu URL de punto final e a súa clave da API sexan correctos.
+
+### A nova tarxeta de provedor non se expande automaticamente {#new-provider-card-does-not-expand-automatically}
+
+A expansión automática require que JavaScript estea activado no teu navegador. Se a tarxeta non se expande ao facer clic, comproba a consola do navegador para ver erros. O contido da tarxeta sempre é accesible facendo clic na cabeceira da tarxeta aínda que a expansión automática non se active.
+
+## Rexistro de cambios {#changelog}
+
+Consulta o [Rexistro de cambios](./changelog) para ver o historial completo de versións.

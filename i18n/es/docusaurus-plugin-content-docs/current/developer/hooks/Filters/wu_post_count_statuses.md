@@ -4,25 +4,25 @@ title: Filtro - wu_post_count_statuses
 sidebar_label: wu_post_count_statuses
 _i18n_hash: 663f78e3da3805371e6ab96edef64285
 ---
-# Filtro: wu_post_count_statuses
+# Filtro: wu_post_count_statuses {#filter-wupostcountstatuses}
 
 Permitir a los desarrolladores de plugins cambiar qué estado de publicación debe contarse. Por defecto, se cuentan las publicaciones publicadas y privadas.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $post_status | `array` | La lista de estados de publicación |
 | $post_type | `string` | El slug del tipo de publicación |
 
-### Since
+### Since {#since}
 
 - 1.9.1
 
-### Source
+### Source {#source}
 
 Definido en [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L119) en la línea 119
 
-## Returns
+## Returns {#returns}
 
 Nuevo array de estados de publicación

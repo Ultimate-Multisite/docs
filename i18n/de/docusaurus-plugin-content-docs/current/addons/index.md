@@ -2,33 +2,37 @@
 title: Add-ons
 sidebar_position: 1
 slug: /addons
-_i18n_hash: 3b2e23a2eb3090c5aef454178e342ca5
+_i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
-Addons erweitern Ultimate Multisite mit zusätzlichen Funktionen und Integrationen. Die meisten Addons sind kostenpflichtig und können von [ultimatemultisite.com](https://ultimatemultisite.com) erworben werden.
+Addons erweitern Ultimate Multisite um zusätzliche Funktionen und Integrationen. Die meisten Addons sind kostenpflichtig und können auf [ultimatemultisite.com](https://ultimatemultisite.com) erworben werden.
 
-## Installation
+## Installation {#installation}
 
 Addons können auf zwei Arten installiert werden:
 
-1. **Via der Addon-Seite** -- Navigieren Sie zur Addon-Verwaltungsseite Ihrer Website im WordPress-Admin
-2. **Manueller Download** -- Laden Sie von [Ihrem Konto](https://ultimatemultisite.com/my-account/downloads/) herunter und laden Sie über Plugins > Add New hoch
+1. **Über die Addon-Seite** -- Navigiere zur Addon-Verwaltungsseite deiner Website im WordPress-Adminbereich
+2. **Manueller Download** -- Lade sie von [deinem Account](https://ultimatemultisite.com/my-account/downloads/) herunter und lade sie über Plugins > Neu hinzufügen hoch
 
-## Available Addons
+## Verfügbare Addons {#available-addons}
 
 | Addon | Beschreibung |
-|-------|---------------|
-| [WooCommerce Integration](/addons/woocommerce) | Integrieren Sie Ultimate Multisite mit WooCommerce |
-| [Site Exporter](/addons/site-exporter) | Exportieren und importieren Sie Websites |
+|-------|-------------|
+| [WooCommerce Integration](/addons/woocommerce) | Integriere Ultimate Multisite mit WooCommerce |
+| [Website-Exporter](/addons/site-exporter) | Websites exportieren und importieren |
 | [AffiliateWP](/addons/affiliatewp) | Affiliate-Programm-Integration |
+| [AI Connector for Compatible Endpoints](/addons/ultimate-ai-connector-compatible-endpoints) | Verbinde mehrere OpenAI-kompatible KI-Anbieter mit automatischem Fallback-Routing |
 | [AI Site Builder](/addons/ai-site-builder) | KI-gestützte Website-Erstellung |
-| [Analytics](/addons/analytics) | Website-Analyse und Berichterstattung |
+| [Gratis AI Agent](/addons/gratis-ai-agent) | Autonomer KI-Agent zum Erstellen und Verwalten von WordPress-Websites |
+| [Superdav AI Agent](/addons/superdav-ai-agent) | Erweiterter KI-Agent mit theme-bewussten Fähigkeiten und verbesserter Internetsuche |
+| [Multi-Currency](/addons/multi-currency) | Zahlungen in mehreren Währungen mit automatischen Wechselkursen akzeptieren |
+| [Analytics](/addons/analytics) | Website-Analysen und Berichterstellung |
 | [Captcha](/addons/captcha) | CAPTCHA-Schutz für Formulare |
-| [Content Sync](/addons/content-sync) | Synchronisieren Sie Inhalte über Websites hinweg |
-| [Domain Seller](/addons/domain-seller) | Verkaufen Sie Domains an Kunden |
+| [Content Sync](/addons/content-sync) | Inhalte über Websites hinweg synchronisieren |
+| [Domain Seller](/addons/domain-seller) | Domains an Kunden verkaufen |
 | [Fluent Forms](/addons/fluent-forms) | Fluent Forms-Integration |
-| [GoCardless](/addons/gocardless) | GoCardless-Zahlungsgateway |
+| [GoCardless](/addons/gocardless) | GoCardless-Zahlungs-Gateway |
 | [Gravity Forms](/addons/gravity-forms) | Gravity Forms-Integration |
 | [Language Selector](/addons/language-selector) | Mehrsprachige Unterstützung |
 | [Loco Translate](/addons/loco-translate) | Übersetzungsverwaltung |
@@ -36,13 +40,13 @@ Addons können auf zwei Arten installiert werden:
 | [Mailster](/addons/mailster) | Mailster-Newsletter-Integration |
 | [Metered Plans](/addons/metered-plans) | Nutzungsbasierte Abrechnung |
 | [Multi-Network](/addons/multinetwork) | Multi-Netzwerk-Unterstützung |
-| [Multi-Tenancy](/addons/multi-tenancy) | Multi-Tenant-Architektur |
-| [PayFast](/addons/payfast) | PayFast-Zahlungsgateway |
-| [Plugin & Theme Manager](/addons/plugin-and-theme-manager) | Verwalten Sie Plugin/Theme-Metadaten |
-| [Support Agents](/addons/support-agents) | Support-Agenten-Management |
-| [Support Tickets](/addons/support-tickets) | Kunden-Support-Ticketing |
-| [VAT](/addons/vat) | Mehrwertsteuer-Handling |
+| [Multi-Tenancy](/addons/multi-tenancy) | Mandantenfähige Architektur |
+| [PayFast](/addons/payfast) | PayFast-Zahlungs-Gateway |
+| [Plugin & Theme Manager](/addons/plugin-and-theme-manager) | Plugin-/Theme-Metadaten verwalten |
+| [Support Agents](/addons/support-agents) | Verwaltung von Support-Mitarbeitern |
+| [Support Tickets](/addons/support-tickets) | Ticket-System für Kundensupport |
+| [VAT](/addons/vat) | Verwaltung der Mehrwertsteuer |
 | [Admin Page Creator](/addons/admin-page-creator) | Benutzerdefinierte Admin-Seiten |
 | [Tutor Multisite Compatibility](/addons/tutor-multisite-compatibility) | Tutor LMS-Integration |
-| [Material WP](/addons/material-wp) | Material Design Admin-Theme |
-| [Chuck Norris Facts](/addons/chuck-norris-facts) | Spaßige Fakten in Ihrem Dashboard |
+| [Material WP](/addons/material-wp) | Material-Design-Admin-Theme |
+| [Chuck Norris Facts](/addons/chuck-norris-facts) | Unterhaltsame Fakten in deinem Dashboard |

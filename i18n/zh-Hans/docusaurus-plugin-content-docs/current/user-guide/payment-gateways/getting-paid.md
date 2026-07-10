@@ -1,110 +1,126 @@
 ---
-title: 获取报酬
+title: 收款
 sidebar_position: 15
-_i18n_hash: b7e644488bb1bef802e024319be88725
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# 付款 (v2)
+# 收款 (v2) {#getting-paid-v2}
 
-_**重要提示：本文涉及 Ultimate Multisite 2.x 版本。**_
+_**重要说明：本文适用于 Ultimate Multisite 2.x 版本。**_
 
-Ultimate Multisite 有一个内置的会员和计费系统。为了让我们的计费系统正常工作，我们已集成了电子商务中最常用的支付网关。Ultimate Multisite 的默认支付网关是 _Stripe_、_PayPal_ 和 Manual Payment。您还可以通过安装各自的插件使用 _WooCommerce_、_GoCardless_ 和 _Payfast_ 接收付款。
+Ultimate Multisite 内置会员资格和计费系统。为了让我们的计费系统正常运行，我们集成了电子商务中最常用的支付网关。Ultimate Multisite 中的默认支付网关是 _Stripe_、_PayPal_ 和手动付款。你也可以通过安装相应的附加组件，使用 _WooCommerce_、_GoCardless_ 和 _Payfast_ 来收款。
 
-## 基本设置
+## 基本设置 {#basic-settings}
 
-您可以在 Ultimate Multisite 计费设置中配置这些支付网关。您可以通过 **Ultimate Multisite > Settings > Payments** 找到它。
+你可以在 Ultimate Multisite 支付设置下配置这些支付网关中的任意一个。你可以通过进入 **Ultimate Multisite 菜单 > Settings > Payments** 找到它。
 
-![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Ultimate Multisite 中显示 Payments 面板的 Payments 设置页面](/img/config/payments-settings-page.png)
 
-在设置支付网关之前，请先查看您可以配置的基本支付设置：
+在设置支付网关之前，请先查看你可以配置的基本支付设置：
 
-**强制自动续费** **w:** 这将确保支付将在每个计费周期结束时自动续费，具体取决于用户选择的计费频率。
+**强制自动续** **订：** 这将确保付款会根据用户选择的计费频率，在每个计费周期结束时自动重复发生。
 
-![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**允许无付款试用** **method:** 启用此选项后，您的客户在注册过程中无需添加任何财务信息。只有在试用期结束后才需要。
+Ultimate Multisite v2.13.0 会在保存已启用自动续订的周期性会员资格之前，检查当前启用的网关是否具有可重复使用的续订凭据。续订凭据可以是网关订阅、计费协议、已保存的保险库令牌，或等效的可重复使用支付方式。如果网关报告不存在可用凭据，Ultimate Multisite 会保存该会员资格，但关闭自动续订，并记录缺少凭据的状态，以便管理员或支持流程可以在续订日期之前要求客户重新授权付款。
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+这可以防止会员资格在网关只能收取一次性付款时看起来像是会自动续订。网关附加组件应确认周期性结账会存储可重复使用的凭据，尤其是在网关同时支持一次性扣款和保险库/订阅支付模式时。
 
-**支付确认后发送发票**: 这给您一个选项，决定是否在付款后发送发票。请注意，用户可以在其子站点仪表盘中查看其付款历史。此选项不适用于手动支付网关。
+**允许试用期无需支付** **方式：** 启用此选项后，你的客户在注册过程中无需添加任何财务信息。只有在试用期到期后才会要求提供。
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**发票编号方案**: 在此，您可以选择使用付款参考代码或顺序编号方案。如果您选择为发票使用付款参考代码，则无需配置任何内容。如果您选择使用顺序编号方案，则需要配置 **下一个发票编号**（此编号将用作系统生成的下一个发票的发票编号。每创建一张新发票，它会递增 1。您可以更改并保存它，以将发票顺序编号重置为特定值）以及 **发票编号前缀**。
+**付款确认时发送发票：** 这让你可以选择是否在付款后发送发票。请注意，用户可以在其子站点 Dashboard 下访问自己的付款历史记录。此选项不适用于手动网关。
 
-![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
+**发票编号方案：** 在这里，你可以选择付款参考代码或顺序编号方案。如果你选择为发票使用付款参考代码，则无需配置任何内容。如果你选择使用顺序编号方案，则需要配置**下一个发票编号**（此编号将用作系统生成的下一张发票的发票编号。每次创建新发票时，它都会递增一。你可以更改并保存它，以将发票顺序编号重置为特定值）以及**发票编号前缀。**
 
-## 在哪里找到支付网关
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-您可以在同一页面（**Ultimate Multisite > Settings > Payments**）设置支付网关。在 **active payment gateways** 下方，您将看到：_Stripe_、_Stripe Checkout_、_PayPal_ 和 _Manual_。
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active payment gateways list](/img/config/settings-payment-gateways.png)
+## 在哪里找到网关： {#where-to-find-the-gateways}
 
-我们为每个支付网关都有专门的文章，指导您完成设置步骤，您可以在下面的链接中找到。
+你可以在同一页面（**Ultimate Multisite > Settings > Payments**）设置支付网关。在 **active payment gateways** 正下方，你将能够看到：_Stripe_、_Stripe_ _Checkout_、_PayPal_ 和 _Manual_。
+
+![列出 Stripe、Stripe Checkout、PayPal 和 Manual 的 Active Payment Gateways 部分](/img/config/payments-active-gateways.png)
+
+我们为每个支付网关都准备了一篇专门的文章，将指导你完成设置步骤，你可以在下面的链接中找到它们。
+
+你可以查看和编辑付款详情：
+
+![付款编辑界面](/img/admin/payment-edit.png)
+
+以下是付款编辑页面的完整视图：
+
+![付款编辑完整界面](/img/admin/payment-edit-full.png)
+
+以下也是支付网关设置的完整视图：
+
+![支付网关设置完整页面](/img/config/settings-payments-gateways-full.png)
 
 **设置 Stripe 网关**
 
-**设置 PayPal 网关**
+**设置 PayPal 网关**** **
 
-**设置手动支付**
+**设置手动付款**
 
-现在，如果您想使用 _WooCommerce_、_GoCardless_ 或 _Payfast_ 作为支付网关，您需要 **安装并配置它们的插件**。
+现在，如果你想使用 _WooCommerce_、_GoCardless_ 或 _Payfast_ 作为你的支付网关，则需要**安装并配置它们的附加组件**。
 
-### 如何安装 WooCommerce 插件
+### 如何安装 WooCommerce 附加组件： {#how-to-install-the-woocommerce-add-on}
 
-我们了解到 _Stripe_ 和 _PayPal_ 在某些国家不可用，限制或阻碍 Ultimate Multisite 用户有效使用我们的插件。因此，我们创建了一个插件来集成 _WooCommerce_，这是一款非常流行的电子商务插件。全球的开发者为其创建了插件，以集成不同的支付网关。我们利用这一点来扩展您可以在 Ultimate Multisite 计费系统中使用的支付网关。
+我们理解 _Stripe_ 和 _PayPal_ 在某些国家/地区不可用，这会限制或阻碍 Ultimate Multisite 用户有效使用我们的插件。因此，我们创建了一个附加组件来集成 _WooCommerce_，这是一个非常流行的电子商务插件。世界各地的开发者创建了附加组件，用于将不同的支付网关集成到其中。我们利用这一点来扩展你可以与 Ultimate Multisite 计费系统一起使用的支付网关。
 
-_**重要提示：** Ultimate Multisite：WooCommerce 集成至少需要在您的主站点激活 WooCommerce。_
+_**重要：** Ultimate Multisite: WooCommerce Integration 要求 WooCommerce 至少在你的主站点上启用。_
 
-首先，请前往插件页面。您可以通过 **Ultimate Multisite > Settings** 找到它。您应该会看到 **Add-ons** 表格。点击 **Check our Add-ons**。
+首先，请前往附加组件页面。你可以通过进入 **Ultimate Multisite > Settings** 找到它。你应该会看到 **Add-ons** 表。点击 **Check our Add-ons**。
 
-![Settings page with add-ons section](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-点击 **Check our Add-ons** 后，您将被重定向到插件页面。在这里，您可以找到所有 Ultimate Multisite 插件。点击 **Ultimate Multisite: WooCommerce Integration** 插件。
+点击 **Check our Add-ons** 后，你将被重定向到附加组件页面。在这里你可以找到所有 Ultimate Multisite 附加组件。点击 **Ultimate Multisite: WooCommerce Integration** 附加组件。
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+![列出 Ultimate Multisite 附加组件（包括 WooCommerce Integration）的附加组件页面](/img/addons/addons-page.png)
 
-会弹出一个窗口显示插件详情。只需点击 **Install Now**。
+会弹出一个包含 add-on 详细信息的窗口。只需点击 **立即安装**。
 
-![WooCommerce add-on install dialog](/img/config/settings-general.png)
+<!-- 截图不可用：Ultimate Multisite WooCommerce Integration add-on 详情对话框，带有立即安装按钮 -->
 
-安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，WooCommerce 插件将在您的网络上激活。
+安装完成后，你将被重定向到 plugin 页面。在这里，只需点击 **网络启用**，WooCommerce add-on 就会在你的网络上启用。
 
-![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
+<!-- 截图不可用：Plugins 页面，显示 WooCommerce Integration add-on 的网络启用链接 -->
 
-激活后，如果您的网站仍未安装并激活 WooCommerce 插件，您将收到提醒。
+启用后，如果你的网站上仍未安装并启用 WooCommerce plugin，你将收到提醒。
 
-![WooCommerce activation reminder notice](/img/config/settings-general.png)
+<!-- 截图不可用：管理员通知，提醒管理员安装并启用 WooCommerce plugin -->
 
-要了解更多关于 WooCommerce 集成插件的信息，请 **点击此处**。
+要阅读更多关于 WooCommerce Integration add-on 的信息，**请点击这里**。
 
-### 如何安装 GoCardless 插件
+### 如何安装 GoCardless add-on： {#how-to-install-the-gocardless-add-on}
 
-安装 _GoCardless_ 插件的步骤与安装 _WooCommerce_ 插件几乎相同。请前往插件页面并选择 **Ultimate Multisite: GoCardless Gateway** 插件。
+安装 _GoCardless_ add-on 的步骤与 _WooCommerce_ add-on 基本相同。请前往 add-ons 页面并选择 **Ultimate Multisite: GoCardless Gateway** add-on。
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- 截图不可用：Add-ons 页面，突出显示 Ultimate Multisite GoCardless Gateway add-on -->
 
-插件窗口将弹出。点击 **Install Now**。
+add-on 窗口会弹出。点击 **立即安装**。
 
-![GoCardless add-on install dialog](/img/config/settings-general.png)
+<!-- 截图不可用：Ultimate Multisite GoCardless Gateway add-on 详情对话框，带有立即安装按钮 -->
 
-安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，_GoCardless_ 插件将在您的网络上激活。
+安装完成后，你将被重定向到 plugin 页面。在这里，只需点击 **网络启用**，_GoCardless_ add-on 就会在你的网络上启用。
 
-![Network Activate the GoCardless add-on](/img/config/settings-general.png)
+<!-- 截图不可用：Plugins 页面，显示 GoCardless Gateway add-on 的网络启用链接 -->
 
-要了解如何开始使用 _GoCardless_ 网关，请 **阅读本文**。
+要了解如何开始使用 _GoCardless_ gateway，**请阅读这篇文章**。
 
-### 如何安装 Payfast 插件
+### 如何安装 Payfast add-on： {#how-to-install-the-payfast-add-on}
 
-前往插件页面并选择 **Ultimate Multisite: Payfast Gateway** 插件。
+前往 add-ons 页面并选择 **Ultimate Multisite: Payfast Gateway** add-on。
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- 截图不可用：Add-ons 页面，突出显示 Ultimate Multisite Payfast Gateway add-on -->
 
-插件窗口将弹出。点击 **Install Now**。
+add-on 窗口会弹出。点击 **立即安装。**
 
-![Payfast add-on install dialog](/img/config/settings-general.png)
+<!-- 截图不可用：Ultimate Multisite Payfast Gateway add-on 详情对话框，带有立即安装按钮 -->
 
-安装完成后，您将被重定向到插件页面。在这里，只需点击 **Network Activate**，_Payfast_ 插件将在您的网络上激活。
+安装完成后，你将被重定向到 plugin 页面。在这里，只需点击 **网络启用**，_Payfast_ add-on 就会在你的网络上启用。
 
-![Network Activate the Payfast add-on](/img/config/settings-general.png)
+<!-- 截图不可用：Plugins 页面，显示 Payfast Gateway add-on 的网络启用链接 -->

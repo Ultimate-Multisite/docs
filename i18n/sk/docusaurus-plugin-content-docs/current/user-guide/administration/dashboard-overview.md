@@ -3,11 +3,11 @@ title: Prehľad dosky
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Prehľad o dashboarde
+# Prehľad o dashboarde {#dashboard-overview}
 
 Ultimate Multisite má špecializovaný **Dashboard** v menu Ultimate Multisite a pridáva aj widgety do Network Dashboardu. Tento článok pokrýva, čo uvidíte oboch miestach.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite pridáva užitočné widgety do dashboardu na úrovni siete, ktorý sa nachádza v **Moje sita → Admin siete → Dashboard**.
 
@@ -35,7 +35,7 @@ Tu je, čo každý widget poskytuje:
 
 ![Widget Novinky](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Zatiaľ čo network dashboard prezentuje celkovú informáciu o sieti, dashboard Ultimate Multisite (na hornom úrovni menu Ultimate Multisite) prezentuje informácie o službe.
 

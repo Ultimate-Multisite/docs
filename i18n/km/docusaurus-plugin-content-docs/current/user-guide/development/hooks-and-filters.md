@@ -3,7 +3,7 @@ title: Hook និង Filter
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks និង Filters
+# Ultimate Multisite Hooks និង Filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite គឺបង្កើតឡើងពីមុខងារ (functions) និងការសាកសួរមូលដ្ឋានទិន្នន័យ (database queries) ច្រើនយ៉ាង។ វាមាន hooks និង filters ដែលអនុញ្ញាតឱ្យអ្នកអាចកែប្រែ ឬបន្ថែម code ថ្មីទៅក្នុងមុខងារដែលមានស្រាប់បាន។
 

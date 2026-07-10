@@ -6,20 +6,20 @@ title: >-
 sidebar_label: wu_admin_pages_editors
 _i18n_hash: 2844d96bbf4bef090641023592474a48
 ---
-# Action: wu_admin_pages_editors
+# Action: wu_admin_pages_editors {#action-wuadminpageseditors}
 
 Lascia che gli sviluppatori di plugin aggiungano nuove opzioni di editor =)
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
 | $ | `\WU_Admin_Page` | La pagina di amministrazione corrente |
 
-### Da
+### Da {#since}
 
 - 1.0.1
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`views/admin-pages/edit-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/views/admin-pages/edit-admin-page.php#L99) alla riga 99

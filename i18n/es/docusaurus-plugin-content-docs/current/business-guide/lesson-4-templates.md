@@ -3,15 +3,15 @@ title: 'Lección 4: Creación de plantillas de nicho'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lección 4: Creando Plantillas de Nicho
+# Lección 4: Creando Plantillas de Nicho {#lesson-4-building-niche-templates}
 
 Las plantillas son el núcleo de tu propuesta de valor para el nicho. Un dueño de estudio de fitness que se registra y ve un sitio que ya parece un sitio web de fitness —con horarios de clases, perfiles de entrenadores y la imaginería adecuada— tiene muchas más probabilidades de quedarse que uno que ve un lienzo en blanco.
 
-## Dónde nos quedamos
+## Dónde nos quedamos {#where-we-left-off}
 
 Tenemos una red FitSite funcional con Ultimate Multisite instalado y configurado. Ahora crearemos las plantillas que hacen que FitSite se sienta diseñado específicamente para negocios de fitness.
 
-## Por qué son importantes las plantillas de nicho
+## Por qué son importantes las plantillas de nicho {#why-niche-templates-matter}
 
 Las plantillas genéricas obligan a tus clientes a hacer el trabajo difícil: averiguar qué páginas necesitan, qué estructura de contenido funciona y cómo hacer que se vea bien para su industria. Las plantillas de nicho eliminan esa fricción.
 
@@ -24,11 +24,11 @@ Un dueño de estudio de fitness que se registra en FitSite debería ver:
 
 Ellos solo tienen que rellenar sus detalles. No empiezan desde cero.
 
-## Planificando tus plantillas
+## Planificando tus plantillas {#planning-your-templates}
 
 Antes de construir, decide qué plantillas ofrecer. Para FitSite, crearemos tres:
 
-### Plantilla 1: Esencial de Estudio (Studio Essential)
+### Plantilla 1: Esencial de Estudio (Studio Essential) {#template-1-studio-essential}
 
 Para estudios pequeños y entrenadores personales.
 
@@ -39,7 +39,7 @@ Para estudios pequeños y entrenadores personales.
 - **Página de Contacto** con mapa de ubicación y formulario
 - **Diseño limpio y moderno** con una paleta de colores apropiada para fitness
 
-### Plantilla 2: Pro Gimnasio (Gym Pro)
+### Plantilla 2: Pro Gimnasio (Gym Pro) {#template-2-gym-pro}
 
 Para gimnasios establecidos con más servicios.
 
@@ -50,7 +50,7 @@ Para gimnasios establecidos con más servicios.
 - **Sección de Testimonios** en la página de inicio
 - **Opciones de marca más prominentes**
 
-### Plantilla 3: Cadena Fitness (Fitness Chain)
+### Plantilla 3: Cadena Fitness (Fitness Chain) {#template-3-fitness-chain}
 
 Para operaciones de múltiples ubicaciones.
 
@@ -60,17 +60,17 @@ Para operaciones de múltiples ubicaciones.
 - **Marca centralizada** con detalles específicos de la ubicación
 - **Directorio de personal** en todas las ubicaciones
 
-## Creando un sitio plantilla
+## Creando un sitio plantilla {#building-a-template-site}
 
 En Ultimate Multisite, una plantilla es simplemente un sitio de WordPress configurado de la manera en que quieres que se vean los sitios de los nuevos clientes. Así es como puedes crear uno:
 
-### Paso 1: Crear el sitio plantilla
+### Paso 1: Crear el sitio plantilla {#step-1-create-the-template-site}
 
 1. Navega a **Sites > Add New** en el administrador de tu red
 2. Crea un sitio llamado `template-studio-essential`
 3. Este sitio se convierte en tu lienzo de trabajo
 
-### Paso 2: Instalar y configurar el tema
+### Paso 2: Instalar y configurar el tema {#step-2-install-and-configure-the-theme}
 
 Cambia al panel de control del sitio plantilla y:
 
@@ -82,7 +82,7 @@ Cambia al panel de control del sitio plantilla y:
 Elige un tema que sea lo suficientemente flexible para verse bien en fitness, pero no tan complejo que tus clientes no puedan gestionarlo. Temas como Astra, GeneratePress o Kadence funcionan bien porque son ligeros, personalizables y están bien soportados.
 :::
 
-### Paso 3: Crear las páginas
+### Paso 3: Crear las páginas {#step-3-create-the-pages}
 
 Desarrolla cada página con:
 
@@ -92,7 +92,7 @@ Desarrolla cada página con:
 
 Haz que el contenido de marcador de posición sea instructivo siempre que sea posible. En lugar de texto relleno genérico, escribe contenido como: "Reemplaza esto con una breve descripción de tu estudio y lo que lo hace especial. Menciona tu filosofía de entrenamiento, años de experiencia o lo que pueden esperar los clientes."
 
-### Paso 4: Configurar plugins
+### Paso 4: Configurar plugins {#step-4-configure-plugins}
 
 Instala y activa los plugins que necesitan los estudios de fitness:
 
@@ -100,7 +100,7 @@ Instala y activa los plugins que necesitan los estudios de fitness:
 - Un plugin de formulario de contacto
 - Un plugin de SEO (preconfigurado con valores predeterminados relevantes para fitness)
 
-### Paso 5: Marcar como plantilla
+### Paso 5: Marcar como plantilla {#step-5-mark-as-template}
 
 1. Navega a **Ultimate Multisite > Sites**
 2. Edita el sitio plantilla
@@ -108,7 +108,7 @@ Instala y activa los plugins que necesitan los estudios de fitness:
 
 Repite este proceso para cada plantilla que quieras ofrecer.
 
-## Lista de verificación de calidad de la plantilla
+## Lista de verificación de calidad de la plantilla {#template-quality-checklist}
 
 Antes de hacer que una plantilla esté disponible, verifica:
 
@@ -121,7 +121,7 @@ Antes de hacer que una plantilla esté disponible, verifica:
 - [ ] No hay enlaces rotos o recursos faltantes
 - [ ] La velocidad de carga de la página es aceptable
 
-## La red FitSite hasta ahora
+## La red FitSite hasta ahora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Listo para configuración de planes (próxima lección)
 ```
 
-## Lo que construimos en esta lección
+## Lo que construimos en esta lección {#what-we-built-this-lesson}
 
 - **Tres plantillas específicas de nicho** diseñadas para diferentes tamaños de negocios de fitness
 - **Contenido e imaginería apropiados para fitness** que hacen que la plataforma se sienta diseñada con un propósito

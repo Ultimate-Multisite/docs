@@ -1,0 +1,109 @@
+---
+title: WooCommerce integratsioon
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration {#woocommerce-integration}
+
+WooCommerce Integration töötab väga sarnaselt sellele, kuidas töötab meie Manual Gateway. See pakub teie kasutajatele palju paindlikkust, võimaldades neil valida mis tahes maksevormi, mis on teie WooCommerce paigalduses saadaval. Ja see on lihtne: kui kasutaja arveldusperiood lõpeb, pannakse kasutaja tellimus ootele. Samal ajal luuakse võrgu peamise saidi WooCommerce paigalduses tellimus. Seejärel saab kasutaja oma e-posti arve koos lingiga makse sooritamiseks. Kui makse on laekunud, uuendatakse tellimust.
+
+## Funktsioonid {#features}
+
+- Lihtne integratsioon Ultimate Multisite ja WooCommerce vahel
+- Saadaval mitu maksemeetodit
+- Automatiseeritud korduv arveldamine, kasutades kaasasolevat tellimuste tuuma, koos valikuliste WooCommerce Subscriptions plugina täiustustega
+- Checkouti kogusummad sisaldavad Ultimate Multisite makse eraldi, mittemaksustatavate WooCommerce tasuridadena, et kliendid saaksid maksusummad enne maksmist üle vaadata
+
+## Dokumentatsioon {#documentation}
+
+**WooCommerce Integrationi seadistamine**
+
+**Maksmisvõimaluste laiendamine Ultimate Multisite abil: WooCommerce Integration**
+
+## Paigaldamine {#installation}
+
+1. Laadige 'ultimate-multisite-woocommerce' üles kataloogi '/wp-content/plugins/'
+2. Aktiveerige plugin WordPressi menüü 'Pluginad' kaudu
+3. Järgige samm-sammulist viisardit plugina seadistamiseks
+
+## Kasutusjuhend {#usage-guide}
+
+_**OLULINE MÄRKUS: see artikkel viitab Ultimate Multisite versioonile 2.x.**_
+
+_**TÄHELEPANU:** Ultimate Multisite: WooCommerce Integration nõuab, et WooCommerce oleks aktiveeritud vähemalt teie peamisel saidil._
+
+Mõistame, et _Stripe_ ja _PayPal_ ei ole mõnes riigis saadaval, mis piirab või takistab Ultimate Multisite kasutajatel meie pluginat tõhusalt kasutada. Seetõttu lõime **lisandmooduli _WooCommerce_ integreerimiseks**.
+
+_WooCommerce_ on väga populaarne e-kaubanduse plugin. Arendajad üle maailma on loonud lisandmooduleid, et integreerida sellesse erinevaid makselüüse. Kasutasime seda ära, et laiendada makselüüse, mida saate Ultimate Multisite arveldussüsteemis kasutada.
+
+## Selle seadistamine {#setting-it-up}
+
+Esmalt peate paigaldama WooCommerce Integration lisandmooduli, mis on **litsentsitud kasutajatele tasuta**. Selle paigaldamiseks klõpsake oma superadministraatori Dashboardil Ultimate Multisite ja valige **Lisandmoodulid**.
+
+![Lisandmoodulite leht](/img/admin/addons-page.png)
+
+Siit leiate kõik Ultimate Multisite lisandmoodulid. Klõpsake lisandmoodulil **Ultimate Multisite: WooCommerce Integration**.
+
+![Lisandmoodulite leht, mis näitab WooCommerce Integrationit](/img/admin/addons-page.png)
+
+Avaneb aken lisandmooduli üksikasjadega. Klõpsake lihtsalt **Paigalda kohe** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Pärast paigalduse lõppu suunatakse teid pluginate lehele. Siin klõpsake lihtsalt **Aktiveeri võrgus** ja _WooCommerce_ lisandmoodul aktiveeritakse teie võrgus.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Pärast selle aktiveerimist, kui teil pole WooCommerce pluginat oma veebisaidile endiselt paigaldatud ja aktiveeritud, **saate meeldetuletuse**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Kui see on paigaldatud, näete Ultimate Multisite maksete seadete all lisavalikut. Seejärel saate sealt _WooCommerce_ valiku **lubada**.
+
+![Ultimate Multisite makselüüsi seaded lubatud WooCommercega](/img/addons/woocommerce-payment-gateway.png)
+
+Saate seadistada mõningaid põhiseadeid, nagu esilehes kuvatav kuvatav nimi ja juhised, mis suunavad teie kasutajaid nende checkouti voos. Seejärel saate minna oma **peamise saidi _WooCommerce_ seadistustesse**, et lubada ja seadistada makselüüs, mida eelistate kasutada.
+
+### Checkouti maksutasu read {#checkout-tax-fee-lines}
+
+Kui Ultimate Multisite checkout sisaldab makse, lisab integratsioon iga Ultimate Multisite maksusumma WooCommerce checkouti eraldi, mittemaksustatava tasureana. See hoiab maksude kogusumma enne maksmist nähtavana, takistades samal ajal WooCommerce’il maksutasu uuesti maksustada.
+
+## Kuidas makset hallata {#how-to-manage-the-payment}
+
+WooCommerce Integration töötab väga sarnaselt sellele, kuidas töötab meie **Manual Gateway**. Puuduseks on see, et iga makse tuleb arveldusperioodi lõpus käsitsi tasuda. Voo toimimine on järgmine:
+
+  * Kui kasutaja arveldustsükkel lõpeb, pannakse liikmesus **ootele**. Samal ajal luuakse teie võrgu peamisel saidil oleva _WooCommerce_ paigalduse kaudu tellimus.
+
+  * Seejärel saavad kasutajad oma e-posti arve koos lingiga makse sooritamiseks (link ilmub ka nende arveldusajalukku nende alamsaidi Dashboardil). See link suunab kasutaja _**WooCommerce**_ **checkouti** , kus kasutajad saavad valida ühe **saadaolevatest _WooCommerce_ lüüsidest**, et oma makse töödelda.
+
+  * Kui makse on laekunud, liikmesus **uuendatakse** , makse logitakse Ultimate Multisite’is ja tellimus märgitakse lõpetatuks.
+
+### Mõned olulised märkused: {#some-important-notes}
+
+  * Ultimate Multisite vaikefunktsionaalsus töötab selle integratsioonivormiga endiselt. Näiteks **tagasimaksete väljastamine** ekraanilt **Tellimuse haldus** suhtleb WooCommercega, et väljastada tagasimakse valitud maksevormi kasutades.
+
+  * Ultimate Multisite: WooCommerce Integration toetub töötamiseks WP-Cronile. See töötab enamasti väga hästi, kuid kui saidil on vähe liiklust, ei käivitata croni ajastatud sündmuste kontrollimiseks ja sündmus jääb vahele, mis võib põhjustada täitmise viivitusi.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Iga kuu makse käsitsi algatamine ei ole lõppkasutajatele ideaalne, sest tellimustelt oodatakse automaatset kordumist igas arveldustsüklis. WooCommerce Integration lisamoodul sisaldab nüüd põhitelimuste koodi, seega kasutavad korduvad tooted korduva arvelduse jaoks alati tellimusi.
+
+Te **ei** pea ostma ega installima eraldi [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/), et selle integratsiooni kaudu korduvaid tooteid müüa. Kui see plugin on ostetud, installitud ja teie põhisaidil saadaval, kasutab Ultimate Multisite seda ning WooCommerce kuvab täiendavad tellimuste haldamise funktsioonid. Kui see pole saadaval, haldab komplektis olev tellimuste tuum endiselt korduvaid tooteid.
+
+![WooCommerce tellimuse integratsiooni seaded](/img/addons/woocommerce-subscription-integration.png)
+
+Ja ongi kõik. Teie lõppkasutajad ei pea enam korduvate toodete puhul oma arveldustsükli lõpus makset käsitsi tegema.
+
+Lisaks sellele, et teie põhisaidil luuakse tellimus jaotises _WooCommerce_, luuakse ka iga konto jaoks tellimus.
+
+### Ebaõnnestunud uuendamise peatamise käitumine {#failed-renewal-suspension-behavior}
+
+Vaikimisi jäävad liikmesused aktiivseks, kuni WooCommerce Subscriptions töötleb oma ebaõnnestunud maksete korduskatsete ajakava. See säilitab tavapärase WooCommerce Subscriptions ajapikenduse, nii et taastatud uuendamine saab viia tellimuse ja liikmesuse uuesti sünkrooni ilma juurdepääsu enneaegselt katkestamata.
+
+Administraatorid, kes soovivad rangemat juurdepääsukontrolli, saavad WooCommerce Integration seadetes lubada valiku **Peata liikmesused ebaõnnestunud uuendamiste korral kohe**. Kui see nõustumispõhine seade on lubatud, peatab Ultimate Multisite seotud liikmesuse kohe, kui uuendamise makse ebaõnnestub, selle asemel et oodata WooCommerce Subscriptions korduskatsete käsitlemise lõppu.
+
+Arendajad saavad sama otsuse üle kirjutada filtriga `wu_woo_suspend_on_payment_failure`. Hooki viitelehed genereeritakse lisamooduli lähtekoodist, seega toob see ülevaade kohandatud peatamispoliitikate jaoks välja ainult filtri nime.

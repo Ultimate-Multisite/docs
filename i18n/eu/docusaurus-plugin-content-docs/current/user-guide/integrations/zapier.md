@@ -3,7 +3,7 @@ title: Zapier Integrazioa
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite-aren Zapierarekin integratzen
+# Ultimate Multisite-aren Zapierarekin integratzen {#integrating-ultimate-multisite-with-zapier}
 
 Artikulu battenan, [Webhooks](webhooks.md) eta horiek non-langide aplikazioetararekin integratzeko erabiltzea eztabadu.
 
@@ -15,7 +15,7 @@ Zerbitzuak (Triggers) sortu dezakezu, zein irudienetan ezarritzen dira network-a
 
 Hau posible da because **Ultimate Multisite Zapier's triggers** eta actionsak [REST API](https://developer.ultimatemultisite.com/api/docs/) batekin erabiliz dira.
 
-## Zerren ditu
+## Zerren ditu {#how-to-start}
 
 Lehenik, Ultimate Multisitea Zapier aplikazio listan bilatu. Alternatiboa, hailei honetatik klik egin dezakezu [hor linkuaren](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ URL lekuan, protocoloa (HTTP edo HTTPS) barne sartu zure network oso URL-a.
 
 **Yes, Continue** botoia klikatu, irrenditua lehen urtsuaren jarraituz. Hau guztiz ondo jakin dira, zure akunak berria konektatuta dagoela! **Continue** klikatu da bere triggera berragarri egiteko.
 
-## Trigger berria ereintzea
+## Trigger berria ereintzea {#how-to-create-a-new-trigger}
 
 Akountak konektatuta dagoenean, erabilgarri dituzten esaiak ikusten duzu. Hau tutorialaren bitartean **payment_received** esaiak aukeratu.
 
@@ -67,7 +67,7 @@ Hau fasean, Zapier aurkituko da iragazlearen (payload) **besteko esai zehatza au
 
 In our tutorial the test was **completed successfully** and returned the payload example information. This example information will be useful to guide us while creating actions. Your trigger is now created and ready to be connected to other applications.
 
-## Tindear Actions (Actions) ez dauden
+## Tindear Actions (Actions) ez dauden {#how-to-create-actions}
 
 Tindear Actions (Actions) erabiltzen ditu beste trigger-ek informazioa erabiliz eta network-ean irudien berriak sortzeko.
 
@@ -79,7 +79,7 @@ Aurrerako etapaz, autentifikazioa sortzen duzu, **How to start**-an egin zuen be
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Action Sortzen (Setting up the Action)
+### Action Sortzen (Setting up the Action) {#setting-up-the-action}
 
 Hau da **action-aren lehen etapua** eta aipatzen da, hian gertunak ahazko dira. Lehen informazioa aukeratu duzu da **Item**. Item da network-aren informazio modela, for example **Customers, Payments, Sites, Emails** eta beste batzuk.
 

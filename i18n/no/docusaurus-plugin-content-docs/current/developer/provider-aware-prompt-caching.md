@@ -3,11 +3,11 @@ title: Provider-Aware Prompt Caching
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Prompt-caching basert på leverandør
+# Prompt-caching basert på leverandør {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 introduserer **prompt-caching basert på leverandør** (provider-aware prompt caching), som optimaliserer API-kostnader og latens ved å cache prompts på tvers av forskjellige LLM-leverandører. Hver leverandør har forskjellige caching-mekanismer og konfigurasjoner.
 
-## Oversikt
+## Oversikt {#overview}
 
 Prompt-caching lar deg:
 
@@ -23,11 +23,11 @@ Forskjellige leverandører implementerer caching forskjellig:
 - **OpenRouter**: Leverandørspesifikk caching
 - **Vertex Anthropic**: Prompt-caching med cache control
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini tilbyr eksplisitt cache-administrasjon via `cachedContents` API.
 
-### Konfigurasjon
+### Konfigurasjon {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Oppretting av en cachet prompt
+### Oppretting av en cachet prompt {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Returnerer: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Bruk av en cachet prompt
+### Bruk av en cachet prompt {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cache-livssyklus
+### Cache-livssyklus {#cache-lifecycle}
 
 ```php
 // List cached contents
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Beste praksis for Gemini
+### Beste praksis for Gemini {#best-practices-for-gemini}
 
 - **Sett passende TTL**: Balanser kostnadsbesparelser mot at cachen blir utdatert
 - **Cache system prompts**: Gjenbruk samme system prompt på tvers av forespørsler
 - **Overvåk cache-bruk**: Spor hvilke caches som brukes mest
 - **Rydd opp i utløpte caches**: Slett ubrukte caches periodisk
 
-## Azure OpenAI: Prompt-caching
+## Azure OpenAI: Prompt-caching {#azure-openai-prompt-caching}
 
 Azure OpenAI støtter prompt-caching med automatisk TTL-håndtering.
 
-### Konfigurasjon
+### Konfigurasjon {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Aktivere caching
+### Aktivere caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Cache-headers
+### Cache-headers {#cache-headers}
 
 Azure OpenAI bruker HTTP-headers for cache-kontroll:
 
@@ -152,7 +152,7 @@ Støttede verdier:
 - `no_cache`: Ikke cache denne forespørselen
 - `no_store`: Ikke cache og ikke gjenbruk
 
-### Overvåking av cache-bruk
+### Overvåking av cache-bruk {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache opprettelse: $cache_tokens tokens\n";
 echo "Cache treff: $cache_hits tokens\n";
 ```
 
-### Beste praksis for Azure OpenAI
+### Beste praksis for Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Bruk konsistente prompts**: Identiske prompts drar nytte av caching
 - **Sett rimelig TTL**: Balanser kostnad mot friskhet
 - **Overvåk cache-metrikker**: Spor cacheopprettelse versus treff
 - **Batch lignende forespørsler**: Grupper forespørsler for å maksimere cache-treff
 
-## OpenRouter: Leverandørspesifikk caching
+## OpenRouter: Leverandørspesifikk caching {#openrouter-provider-specific-caching}
 
 OpenRouter støtter caching gjennom underliggende leverandører (OpenAI, Anthropic, etc.).
 
-### Konfigurasjon
+### Konfigurasjon {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Bruk av OpenRouter caching
+### Bruk av OpenRouter caching {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Leverandørspesifikke alternativer
+### Leverandørspesifikke alternativer {#provider-specific-options}
 
 Forskjellige leverandører har forskjellige caching-mekanismer:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Beste praksis for OpenRouter
+### Beste praksis for OpenRouter {#best-practices-for-openrouter}
 
 - **Kjenn din leverandørs caching**: Hver leverandør har forskjellige mekanismer
 - **Test cache-atferden**: Verifiser at caching fungerer med den valgte leverandøren
 - **Overvåk kostnader**: Spor besparelser fra caching
 - **Bruk konsistente modeller**: Bytting av modeller bryter cache-treff
 
-## Vertex Anthropic: Prompt-caching med cache control
+## Vertex Anthropic: Prompt-caching med cache control {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) støtter prompt-caching med eksplisitt cache control.
 
-### Konfigurasjon
+### Konfigurasjon {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Bruk av Vertex Anthropic caching
+### Bruk av Vertex Anthropic caching {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Cache Control Typer
+### Cache Control Typer {#cache-control-types}
 
 - **ephemeral**: Cache for varigheten av forespørselen (standard)
 - **persistent**: Cache på tvers av flere forespørsler (hvis støttet)
 
-### Overvåking av cache-bruk
+### Overvåking av cache-bruk {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache opprettet: $cache_created tokens\n";
 echo "Cache lest: $cache_read tokens\n";
 ```
 
-### Beste praksis for Vertex Anthropic
+### Beste praksis for Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Bruk ephemeral caching**: Bra for caching i en enkelt sesjon
 - **Sett max_tokens hensiktsmessig**: Balanser cachestørrelse mot kostnad
 - **Overvåk cache-metrikker**: Spor cache-effektiviteten
 - **Test med din arbeidsmengde**: Verifiser at caching gagner brukstilfellet ditt
 
-## Tverr-leverandør caching-strategi
+## Tverr-leverandør caching-strategi {#cross-provider-caching-strategy}
 
-### Enhetlig konfigurasjon
+### Enhetlig konfigurasjon {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Leverandøroppdagelse
+### Leverandøroppdagelse {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Bruker leverandørspesifikk caching-konfigurasjon
 ```
 
-### Fallback-strategi
+### Fallback-strategi {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Kostnadsoptimalisering
+## Kostnadsoptimalisering {#cost-optimization}
 
-### Beregne besparelser
+### Beregne besparelser {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimert besparelse: \$$savings\n";
 ```
 
-### Optimaliseringstips
+### Optimaliseringstips {#optimization-tips}
 
 - **Cache store system prompts**: Største kostnadsbesparelser
 - **Gjenbruk kontekst**: Cache ofte brukte kontekstdokumenter
@@ -395,30 +395,30 @@ echo "Estimert besparelse: \$$savings\n";
 - **Overvåk cache-effektivitet**: Spor faktiske besparelser
 - **Juster TTL**: Balanser kostnad mot friskhet
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Caching brukes ikke
+### Caching brukes ikke {#cache-not-being-used}
 
 - Verifiser at caching er aktivert i konfigurasjonen
 - Sjekk at prompts er identiske (caching krever nøyaktig match)
 - Verifiser at cachen ikke har utløpt
 - Sjekk leverandørspesifikke cache-grenser
 
-### Cache-oppretting feiler
+### Cache-oppretting feiler {#cache-creation-failing}
 
 - Verifiser at cachestørrelsen er innenfor leverandørens grenser
 - Sjekk at syntaksen for cache control er korrekt
 - Forsikre deg om at leverandøren støtter caching for modellen din
 - Gå gjennom leverandørens dokumentasjon for begrensninger
 
-### Uventede kostnader
+### Uventede kostnader {#unexpected-costs}
 
 - Overvåk cacheopprettelse versus cache-lesing av tokens
 - Verifiser at cachen faktisk blir brukt
 - Sjekk for cache-miss på grunn av prompt-variasjoner
 - Vurder å justere TTL eller cache-strategien
 
-## Sammenligning av leverandører
+## Sammenligning av leverandører {#provider-comparison}
 
 | Funksjon | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimert besparelse: \$$savings\n";
 | Kostnadsreduksjon | 90% | 90% | Leverandør-avhengig | 90% |
 | Overvåking | Detaljert | Via metrikker | Leverandør-avhengig | Via usage |
 
-## Neste steg
+## Neste steg {#next-steps}
 
 1. **Velg din leverandør**: Velg basert på dine behov
 2. **Konfigurer caching**: Sett opp leverandørspesifikk caching

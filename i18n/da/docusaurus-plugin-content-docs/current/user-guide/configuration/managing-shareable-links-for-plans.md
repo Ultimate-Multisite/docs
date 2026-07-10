@@ -3,7 +3,7 @@ title: Håndtering af delbare links til planer
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Administrering delingslinks til planer
+# Administrering delingslinks til planer {#managing-shareable-links-for-plans}
 
 Ultimate Multisite giver dig mulighed for direkte at dele planlinks med dine kunder. For at gøre dette skal du gå til redigeringssiden for enhver af dine planer og klikke på knappen _Klik for at kopiere delingslink_ (_Click to copy the Shareable Link_).
 

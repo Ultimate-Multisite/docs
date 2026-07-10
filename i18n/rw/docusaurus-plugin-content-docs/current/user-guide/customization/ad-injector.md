@@ -3,7 +3,7 @@ title: Umuhagarici w'inyandiko
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Gukoresha Ads ku mwezi w'ubwoko n'Ultimate Multisite: Ad Injector
+# Gukoresha Ads ku mwezi w'ubwoko n'Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ni **add-on ufite** ufungura uburyo bwo gukoresha tools zikufasha gukoresha ads kuri njye mu gihe cyo gutegura (edit page) byawe.
 
@@ -35,7 +35,7 @@ Ushobora kandi gutera ads mu header ya Admin Pages ku bantu bafite mwezi w'ubwok
 
 _Gukoresha Admin Panel Ad Code option niba wumva wifuza gukoresha ads ku back-end yawe (user's back-end)_
 
-### Icyo cyo kwizera (Beyond Advertising)
+### Icyo cyo kwizera (Beyond Advertising) {#beyond-advertising}
 
 Ushobora kandi gukoresha Ultimate Multisite: Ad Injector kugira ngo ufungura ubushobozi bwo gufasha mwezi w'ubwoko uyuhe.
 

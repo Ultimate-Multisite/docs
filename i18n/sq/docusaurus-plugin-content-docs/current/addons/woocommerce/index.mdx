@@ -1,0 +1,109 @@
+---
+title: Integrimi me WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration {#woocommerce-integration}
+
+WooCommerce Integration funksionon në një mënyrë shumë të ngjashme me mënyrën se si funksionon Manual Gateway ynë. Ai u ofron përdoruesve tuaj shumë fleksibilitet, duke u lejuar të zgjedhin cilindo nga formularët e pagesës të disponueshëm në instalimin tuaj WooCommerce. Dhe është e thjeshtë: sapo periudha e faturimit të përdoruesit të përfundojë, abonimi i përdoruesit vihet në pritje. Në të njëjtën kohë, një porosi do të krijohet në instalimin WooCommerce të sajtit kryesor të rrjetit. Më pas përdoruesi merr një faturë në emailin e tij, me një lidhje për të kryer pagesën. Pasi pagesa të merret, abonimi rinovohet.
+
+## Veçoritë {#features}
+
+- Integrim i lehtë midis Ultimate Multisite dhe WooCommerce
+- Disa metoda pagese të disponueshme
+- Faturim i përsëritur i automatizuar duke përdorur bërthamën e abonimeve të përfshira, me përmirësime opsionale nga plugini WooCommerce Subscriptions
+- Totalet e checkout përfshijnë taksat e Ultimate Multisite si rreshta tarifash WooCommerce të veçantë, jo të tatueshëm, në mënyrë që klientët të mund të shqyrtojnë shumat e taksave para pagesës
+
+## Dokumentacioni {#documentation}
+
+**Konfigurimi i WooCommerce Integration**
+
+**Zgjerimi i opsioneve tuaja të pagesës me Ultimate Multisite: WooCommerce Integration**
+
+## Instalimi {#installation}
+
+1. Ngarkoni 'ultimate-multisite-woocommerce' në drejtorinë '/wp-content/plugins/'
+2. Aktivizoni pluginin përmes menusë 'Plugins' në WordPress
+3. Ndiqni Wizard hap pas hapi për të konfiguruar pluginin
+
+## Udhëzues përdorimi {#usage-guide}
+
+_**SHËNIM I RËNDËSISHËM: Ky artikull i referohet versionit 2.x të Ultimate Multisite.**_
+
+_**KUJDES:** Ultimate Multisite: WooCommerce Integration kërkon që WooCommerce të jetë i aktivizuar të paktën në sajtin tuaj kryesor._
+
+E kuptojmë që _Stripe_ dhe _PayPal_ nuk janë të disponueshëm në disa vende, gjë që i kufizon ose i pengon përdoruesit e Ultimate Multisite të përdorin në mënyrë efektive pluginin tonë. Prandaj krijuam një **add-on për të integruar _WooCommerce_**.
+
+_WooCommerce_ është një plugin shumë popullor për eCommerce. Zhvillues në mbarë botën kanë krijuar add-ons për të integruar porta të ndryshme pagese me të. Ne përfituam nga kjo për të zgjeruar portat e pagesave që mund të përdorni në sistemin e faturimit të Ultimate Multisite.
+
+## Konfigurimi i tij {#setting-it-up}
+
+Së pari, duhet të instaloni add-on-in WooCommerce Integration, i cili është **falas për përdoruesit e licencuar**. Për ta instaluar, klikoni mbi Ultimate Multisite në dashboard-in tuaj të super administratorit dhe zgjidhni **Add-ons**.
+
+![Faqja e Add-ons](/img/admin/addons-page.png)
+
+Këtu mund të gjeni të gjitha add-ons të Ultimate Multisite. Klikoni mbi add-on-in **Ultimate Multisite: WooCommerce Integration**.
+
+![Faqja e Add-ons që tregon WooCommerce Integration](/img/admin/addons-page.png)
+
+Do të shfaqet një dritare me detajet e add-on-it. Thjesht klikoni mbi **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Pasi instalimi të përfundojë, do të ridrejtoheni te faqja e plugins. Këtu, thjesht klikoni mbi **Network Activate** dhe add-on-i _WooCommerce_ do të aktivizohet në rrjetin tuaj.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Pasi ta aktivizoni, nëse ende nuk e keni pluginin WooCommerce të instaluar dhe të aktivizuar në faqen tuaj të internetit, **do të merrni një kujtesë**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Pasi të instalohet, do të shihni një opsion shtesë nën cilësimet e pagesave të Ultimate Multisite. Më pas mund ta **aktivizoni** opsionin _WooCommerce_ prej aty.
+
+![Cilësimet e portës së pagesës së Ultimate Multisite me WooCommerce të aktivizuar](/img/addons/woocommerce-payment-gateway.png)
+
+Mund të konfiguroni disa cilësime bazë, si emrin e shfaqjes që do të shfaqet në front end dhe udhëzime për t’i udhëhequr përdoruesit tuaj në rrjedhën e tyre të checkout. Pastaj mund të shkoni te **cilësimet _WooCommerce_ të sajtit tuaj kryesor** për të aktivizuar dhe konfiguruar portën e pagesës që preferoni të përdorni.
+
+### Rreshtat e tarifës së taksës në checkout {#checkout-tax-fee-lines}
+
+Kur një checkout i Ultimate Multisite përfshin taksa, integrimi shton çdo shumë takse të Ultimate Multisite në checkout-in e WooCommerce si një rresht tarife të veçantë, jo të tatueshëm. Kjo e mban totalin e taksës të dukshëm para pagesës, ndërsa parandalon WooCommerce që të tatojë përsëri tarifën e taksës.
+
+## Si të menaxhoni pagesën {#how-to-manage-the-payment}
+
+WooCommerce Integration funksionon në një mënyrë shumë të ngjashme me mënyrën se si funksionon **Manual Gateway** ynë. Ana negative është se çdo pagesë duhet të paguhet manualisht në fund të periudhës së faturimit. Ja si funksionon rrjedha:
+
+  * Pasi cikli i faturimit të përdoruesit të përfundojë, membership vihet **në pritje**. Në të njëjtën kohë, një porosi do të krijohet në instalimin _WooCommerce_ në sajtin kryesor të rrjetit tuaj.
+
+  * Përdoruesit më pas marrin një faturë në emailin e tyre, me një lidhje për të kryer pagesën (lidhja shfaqet gjithashtu në historikun e tyre të faturimit nga dashboard-i i nënsajtit të tyre). Ajo lidhje e ridrejton përdoruesin te _**WooCommerce**_ **checkout** , ku përdoruesit do të mund të zgjedhin një nga **portat e disponueshme _WooCommerce_** për të përpunuar pagesën e tyre.
+
+  * Pasi pagesa të merret, membership **rinovohet** , pagesa regjistrohet në Ultimate Multisite dhe porosia vendoset si e përfunduar.
+
+### Disa shënime të rëndësishme: {#some-important-notes}
+
+  * Funksionaliteti i parazgjedhur i Ultimate Multisite ende funksionon me këtë formë integrimi. Për shembull, **lëshimi i rimbursimeve** nga ekrani **Subscription Management** do të komunikojë me WooCommerce për të lëshuar rimbursimin duke përdorur formën e zgjedhur të pagesës.
+
+  * Ultimate Multisite: WooCommerce Integration mbështetet te WP-Cron për të funksionuar. Kjo funksionon shumë mirë në shumicën e rasteve, por nëse sajti ka trafik të ulët, atëherë cron nuk nxitet të kontrollojë për ngjarje të planifikuara dhe ngjarja humbet, gjë që mund të shkaktojë vonesa në ekzekutim.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Nisja manuale e një pagese çdo muaj nuk është ideale për përdoruesit fundorë, sepse pritet që abonimet të përsëriten automatikisht në çdo cikël faturimi. Add-on WooCommerce Integration tani përfshin kodin bazë të abonimeve, ndaj produktet periodike përdorin gjithmonë abonime për faturim periodik.
+
+Ju **nuk** keni nevojë të blini ose instaloni [plugin-in WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) të veçantë për të shitur produkte periodike përmes këtij integrimi. Nëse ai plugin blihet, instalohet dhe është i disponueshëm në faqen tuaj kryesore, Ultimate Multisite do ta përdorë atë dhe WooCommerce do të shfaqë veçori shtesë për menaxhimin e abonimeve. Kur nuk është i disponueshëm, bërthama e përfshirë e abonimeve ende i trajton produktet periodike.
+
+![Cilësimet e integrimit të abonimeve WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Dhe kaq. Përdoruesit tuaj fundorë nuk do të kenë më nevojë të kryejnë manualisht një pagesë në fund të ciklit të tyre të faturimit për produktet periodike.
+
+Përveç një porosie që krijohet në faqen tuaj kryesore nën _WooCommerce_, do të krijojë gjithashtu një abonim për çdo Account.
+
+### Sjellja e pezullimit pas rinovimit të dështuar {#failed-renewal-suspension-behavior}
+
+Si parazgjedhje, anëtarësimet mbeten aktive ndërsa WooCommerce Subscriptions përpunon orarin e riprovimit të pagesave të dështuara. Kjo ruan periudhën normale të tolerancës së WooCommerce Subscriptions, në mënyrë që një rinovim i rikuperuar të mund ta risjellë abonimin dhe anëtarësimin në sinkronizim pa ndërprerë qasjen para kohe.
+
+Administratorët që duan kontroll më të rreptë të qasjes mund të aktivizojnë **Suspend Memberships Immediately on Failed Renewals** në cilësimet e WooCommerce Integration. Kur ky cilësim me zgjedhje aktive aktivizohet, Ultimate Multisite pezullon anëtarësimin përkatës sapo një pagesë rinovimi dështon, në vend që të presë të përfundojë trajtimi i riprovimeve nga WooCommerce Subscriptions.
+
+Zhvilluesit mund ta anashkalojnë të njëjtin vendim me filtrin `wu_woo_suspend_on_payment_failure`. Faqet e referencës së hook-eve gjenerohen nga burimi i add-on, ndaj kjo përmbledhje përmend vetëm emrin e filtrit për politikat e personalizuara të pezullimit.

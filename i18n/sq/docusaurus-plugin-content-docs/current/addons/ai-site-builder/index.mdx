@@ -1,0 +1,124 @@
+---
+title: Ndërtuesi i faqeve me AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Ndërtuesi i faqeve me AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Kërkesat {#requirements}
+
+- WordPress 5.3 ose më i lartë
+- PHP 7.4 ose më i lartë
+- plugin-i Multisite Ultimate (aktiv)
+
+## Instalimi {#installation}
+
+1. Ngarkoni skedarët e addon-it në direktoriumin tuaj `/wp-content/plugins/`
+2. Aktivizoni plugin-in përmes menusë 'Plugins' në WordPress
+3. Konfiguroni cilësimet e addon-it në administrimin e rrjetit
+
+## Zhvillimi {#development}
+
+### Konfigurimi {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Struktura e projektit {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Klasat PHP dhe përfshirjet
+│   ├── class-multisite-ultimate-updater.php  # Trajtuesi i përditësimeve
+│   └── class-ai_site_builder-main.php             # Funksionaliteti kryesor
+├── tests/                        # Testet njësi
+│   ├── bootstrap.php            # Nisja e testit
+│   ├── class-*-base.php         # Klasa bazë e testit
+│   └── class-*-test.php         # Rastet e testimit
+├── views/                       # Skedarët e shablloneve
+├── assets/                      # Asetet statike
+│   ├── css/                     # Fletët e stileve
+│   ├── js/                      # Skedarët JavaScript
+│   └── images/                  # Imazhet
+├── lang/                        # Skedarët e gjuhës
+├── composer.json                # Varësitë PHP
+├── package.json                 # Varësitë Node.js
+├── phpunit.xml.dist             # Konfigurimi PHPUnit
+├── .phpcs.xml.dist              # Konfigurimi i standardeve të kodit
+└── rector.php                   # Rregullat e modernizimit të kodit
+```
+
+### Testimi {#testing}
+
+Addon-i përfshin një kornizë gjithëpërfshirëse testimi:
+
+- **Testet njësi**: Teste të bazuara në PHPUnit me paketën e testeve të WordPress
+- **Klasa bazë e testit**: Ofron metoda ndihmëse për skenarë të zakonshëm testimi
+- **Mbulimi i testeve**: Konfiguruar për të gjurmuar mbulimin e kodit
+- **Testimi multisite**: Testet ekzekutohen në mjedis multisite
+
+### Standardet e kodit {#code-standards}
+
+- **Standardet e kodimit të WordPress**: Zbatohen përmes PHPCS
+- **Përputhshmëria me PHP 7.4+**: Mbështeten veçoritë moderne të PHP
+- **Analiza statike**: Integrim me PHPStan për kontrollin e tipeve
+- **Modernizimi i kodit**: Rregulla Rector për përditësime të PHP
+
+### Sistemi i ndërtimit {#build-system}
+
+- **Përpunimi i aseteve**: Minifikim për skedarët CSS/JS
+- **Përkthimi**: Gjenerimi i skedarit POT
+- **Paketimi**: Krijimi i arkivit për shpërndarje
+- **Modaliteti i zhvillimit**: Asete të paminifikuara për diagnostikim
+
+## Konfigurimi {#configuration}
+
+Addon-i mbështet opsione të ndryshme konfigurimi të aksesueshme përmes ndërfaqes së administrimit të rrjetit.
+
+## Hooks dhe filtrat {#hooks-and-filters}
+
+### Veprimet {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Aktivizohet pas inicializimit të addon-it
+- `ultimate-multisite-ai-site-builder_loaded` - Aktivizohet pasi të jenë ngarkuar të gjithë skedarët e addon-it
+
+### Filtrat {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifikoni cilësimet e addon-it
+- `ultimate-multisite-ai-site-builder_enabled` - Anashkaloni statusin e aktivizimit/çaktivizimit të addon-it
+
+## Licenca {#license}
+
+Ky addon licencohet sipas GPL v3 ose më të vonshme.
+
+## Mbështetja {#support}
+
+Për mbështetje dhe dokumentacion, vizitoni [MultisiteUltimate.com](https://multisiteultimate.com)
+## Regjistri i ndryshimeve {#changelog}
+
+- Versioni 1.0.1 (2025-09-28): riemërtoni prefiksin në ultimate-multisite; përditësoni domenin e tekstit; rritje versioni.
+
+
+- Versioni  (2025-09-28): riemërtoni prefiksin në ultimate-multisite; përditësoni domenin e tekstit; rritje versioni.

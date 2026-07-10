@@ -4,11 +4,11 @@ title: Action - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew
+# Action: wu_membership_post_renew {#action-wumembershippostrenew}
 
 Inatokea baada ya usajili wa uanachama kufanywa upya.
 
-## Vigezo
+## Vigezo {#parameters}
 
 | Jina | Aina | Maelezo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inatokea baada ya usajili wa uanachama kufanywa upya.
 | $membership_id | `int` | Kitambulisho cha usajili. |
 | $membership | `\Membership` | Object ya usajili. |
 
-### Tangu
+### Tangu {#since}
 
 - 2.0
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) kwenye mstari wa 2235

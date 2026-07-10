@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent нь байгалийн хэлний заавраар бүрэн WordPress сайтуудыг төлөвлөж, бүтээж, удирдаж чаддаг бие даасан WordPress AI туслах юм. Энэ нь agent-ийн дуудаж ажиллуулж болох тусдаа, шалгаж болох үйлдлүүд болох **чадваруудын** бүтэцтэй багцыг ил гаргадаг бөгөөд агуулгын удирдлагаас эхлээд дизайны системийн тохируулга хүртэлх бүхнийг хамарна. 1.9.0 хувилбар нь агуулга үүсгэх чадварууд, клиент талын дэлгэцийн зураг ашигласан визуал хуудасны тойм, урьдчилан суулгасан таван agent профайл, мөн хандалтын хяналт ба брэндчилэлд зориулсан feature flags нэмсэн.
+
+## Гол боломжууд {#key-features}
+
+- **Чадварын систем** — таны WordPress суулгац дээр agent-ийн дуудаж ажиллуулж болох үйлдлүүдийн модульчлагдсан, өргөтгөх боломжтой каталог
+- **Агуулгын удирдлага** — нийтлэл болон хуудас үүсгэх (хуудасны загвар оноохыг багтаана), нэг дуудалтаар олон нийтлэлийг багцаар үүсгэх, онцлох зураг тохируулах, холбоо барих маягт бүтээх
+- **Визуал тойм** — ажиллаж буй хуудсуудын дэлгэцийн зургийг авах, өмнөх/дараах төлөвүүдийг харьцуулах, зохион байгуулалт, хэвлэлийн дүр төрх, өнгө, хүртээмжийг хамарсан AI-ээр үүсгэсэн дизайны тойм авах
+- **Урьдчилан суулгасан таван agent** — Content Writer, Site Builder, Design Studio, Plugin Manager, болон Support Assistant; чатын толгойн Agent Picker-ээр сольж болно
+- **Feature flags** — үүргийн хязгаарлалт, white-label нэршил, widget тохируулгад зориулсан Settings → Feature Flags доторх хандалтын хяналт болон брэндчилэлийн асаалт/унтраалга
+- **Custom Post Type удирдлага** — дахин эхлүүлсний дараа ч хадгалагдах байдлаар custom post type-уудыг бүртгэх, жагсаах, устгах
+- **Custom Taxonomy удирдлага** — хадгалагдах байдлаар custom taxonomy-уудыг бүртгэх, жагсаах, устгах
+- **Дизайны системийн чадварууд** — custom CSS оруулах, сонгож бэлтгэсэн блокийн хээ загваруудыг удирдах, сайтын логог тохируулах, theme.json урьдчилсан тохиргоонуудыг хэрэглэх
+- **Global Styles удирдлага** — өнгөний палитр, хэвлэлийн дүр төрх, зай хэмжээ болон бусад theme.json утгуудыг унших, бичих
+- **Navigation Menu удирдлага** — navigation menu болон тэдгээрийн зүйлсийг програмчлалын аргаар үүсгэх, шинэчлэх
+- **Сонголтын удирдлага** — чухал тохиргоонуудыг хамгаалах суурилуулсан аюулгүй байдлын blocklist-тэйгээр WordPress сонголтуудыг унших, бичих
+- **Суулгаж болох чадваруудын бүртгэл** — үндсэн plugin файлуудыг өөрчлөхгүйгээр нэмэлт чадварын багцуудыг илрүүлж, идэвхжүүлэх
+- **Site Builder зохион байгуулалт v2** — plugin илрүүлэлт, явцын хяналт, алдаанаас сэргээх боломжтой олон алхамт сайт бүтээх төлөвлөгөөнүүд
+- **WP-CLI benchmark команд** — CI болон моделийн үнэлгээнд зориулж командын мөрөөс agent-ийн capability benchmark багцыг ажиллуулах
+
+## Шаардлагууд {#requirements}
+
+- WordPress 6.0 эсвэл түүнээс дээш
+- PHP 8.1 эсвэл түүнээс дээш
+- WordPress Multisite (сүлжээгээр идэвхжүүлсэн) эсвэл single-site суулгац
+- Идэвхтэй AI provider connector plugin (Anthropic, OpenAI, эсвэл нийцтэй)
+
+## Суулгалт {#installation}
+
+1. Plugin файлуудыг `/wp-content/plugins/gratis-ai-agent` руу байршуулна
+2. WordPress доторх **Plugins** дэлгэцээр plugin-ийг идэвхжүүлнэ
+3. **Gratis AI Agent → Settings** рүү очиж AI provider-оо холбоно
+4. (Нэмэлт) Нэмэлт чадварын багцууд суулгахын тулд **Abilities Registry**-г үзнэ
+
+## Түргэн эхлэх {#quick-start}
+
+Идэвхжүүлж AI provider-той холбосны дараа WordPress админ хажуугийн цэснээс **Gratis AI Agent** самбарыг нээнэ. Байгалийн хэлээр заавар бичихэд agent боломжит чадваруудаа ашиглан шаардлагатай алхмуудыг төлөвлөж, гүйцэтгэнэ.
+
+**Жишээ зааврууд:**
+
+```
+"Portfolio" custom post type-ийг "Project Category" taxonomy-той үүсгэ.
+```
+
+```
+Theme-д dark-mode өнгөний палитр оруулж, үндсэн өнгийг #1a1a2e болгон тохируул.
+```
+
+```
+Онлайн цэс, захиалгын маягт, холбоо барих хуудастай рестораны вэбсайт бүтээ.
+```
+
+## Чадваруудын тойм {#abilities-overview}
+
+Чадварууд нь agent-ийн гүйцэтгэж чадах атом үйлдлүүд юм. Чадвар бүр нь ажиллах үед agent-ийн уншдаг схемийг (параметрүүд болон буцаах төрлүүд) ил гаргадаг бүртгэгдсэн PHP класс байна. Чадваруудыг функциональ чиглэлүүдэд бүлэглэсэн:
+
+| Чиглэл | Чадварууд |
+|---|---|
+| **Агуулгын удирдлага** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Визуал тойм** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Дизайны систем** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Сонголтын удирдлага** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Суулгаж болох чадварууд** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Бүрэн параметрийн баримтжуулалт болон ашиглалтын жишээнүүдийг [Чадваруудын лавлагаа](./abilities)-аас үзнэ үү.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent нь командын мөрөөс benchmark ажиллуулах болон чадваруудыг удирдахад зориулсан `wp gratis-ai-agent` командын бүлэгтэй ирдэг. Командын бүрэн жагсаалтыг [WP-CLI лавлагаа](./wp-cli)-аас үзнэ үү.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Тохиргоо {#configuration}
+
+Бүх тохиргоо WordPress админ доторх **Gratis AI Agent → Settings** дор байрлана:
+
+| Тохиргоо | Тайлбар |
+|---|---|
+| **AI Provider** | Идэвхтэй AI provider connector-ийг сонгож, тохируулна |
+| **Model** | Agent session-уудад ашиглах хэлний моделийг сонгоно |
+| **Max Tokens** | Нэг хүсэлт бүрийн токены төсөв (анхны утга 4096) |
+| **Ability Timeout** | Тусдаа чадвар ажиллаж болох хамгийн их секунд (анхны утга 30) |
+| **Debug Logging** | Чадварын дуудлагууд болон agent-ийн reasoning-ийг WordPress debug log руу бичнэ |
+
+## Сонголтын удирдлагын аюулгүй байдлын Blocklist {#options-management-safety-blocklist}
+
+Options Management чадвар нь agent-д эмзэг WordPress сонголтуудыг унших эсвэл бичихээс сэргийлдэг суурилуулсан блок жагсаалттай. Өгөгдмөл блок жагсаалт нь дараахыг хамарна:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL сонголтууд — эдгээрт зориулсан тусгай migration хэрэгсэл ашиглана уу)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (нууц түлхүүрүүд)
+- `active_plugins`, `template` (plugin/theme идэвхжүүлэлт — тусгай чадваруудыг ашиглана уу)
+- Суулгасан plugin-уудаар бүртгэгдсэн төлбөрийн гарцын итгэмжлэлүүд болон API түлхүүрүүд
+
+Нэмэлт оруулгуудыг `gratis_ai_agent_options_blocklist` filter-ээр нэмж болно.
+
+## Hooks ба Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — чадвар бүртгэгдсэний дараа ажиллана, чадварын class нэрийг хүлээн авна
+- `gratis_ai_agent_plan_started` — сайт бүтээгч plan гүйцэтгэлээ эхлэх үед ажиллана
+- `gratis_ai_agent_plan_completed` — plan амжилттай дуусах үед ажиллана
+- `gratis_ai_agent_plan_failed` — plan сэргээх боломжгүй алдаатай тулгарах үед ажиллана
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — agent ачаалахаас өмнө бүртгэгдсэн чадварын жагсаалтыг өөрчилнө
+- `gratis_ai_agent_options_blocklist` — сонголтуудын аюулгүй байдлын блок жагсаалтыг өргөтгөх эсвэл багасгана
+- `gratis_ai_agent_benchmark_questions` — үнэлгээний багцад өөрийн benchmark асуултуудыг нэмнэ
+- `gratis_ai_agent_plan_plugins` — сайт plan үүсгэх үед plugin илрүүлэлтийн жагсаалтыг өөрчилнө
+
+## Дэмжлэг {#support}
+
+Дэмжлэг авах бол [ultimatemultisite.com](https://ultimatemultisite.com)-д зочлох эсвэл plugin repository-д issue нээнэ үү.
+
+## Өөрчлөлтийн бүртгэл {#changelog}
+
+Бүрэн хувилбарын түүхийг [Өөрчлөлтийн бүртгэл](./changelog)-ээс үзнэ үү.

@@ -1,31 +1,45 @@
 ---
 title: マルチテナンシー
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# マルチテナンシー
+# マルチテナンシー {#multi-tenancy}
 
-パフォーマンスとセキュリティ向上のため、サブサイトをサーバーとデータベースに分散します
+パフォーマンスとセキュリティのために、サブサイトをサーバーとデータベースに分散します
 
-## 要件
+## バージョン 1.2.0 リリースの注目点 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 は、本番環境の分離ワークフロー向けに主権テナント基盤を追加します。
+
+- 短時間のみ有効で、再送攻撃から保護された SSO 訪問によるステートレスなテナント自動ログイン。
+- 主権テナント向けのサブサイトごとのデータベースとファイルシステムの分離。
+- ホストを考慮したテナントプロビジョニングのための Hostinger マルチテナンシー機能。
+- レガシーデータ確認と非同期プッシュ処理のための主権移行検証ゲート。
+- Bedrock、FrankenPHP、localhost インストール向けに設定可能な同一マシンのデータベースホストバインディング。
+- テナントのブートストラップ、データベースライター、スキーマブートストラップ、ユーザープロビジョニングの改善。
+- テナント認証情報を削除する、より安全な主権テナントの解体。
+
+[主権移行ワークフロー](/user-guide/getting-started/sovereign-migration-workflow)、[マルチテナンシー分離](/user-guide/configuration/multi-tenancy-isolation)、[主権テナント運用](/user-guide/administration/sovereign-tenant-operations)のユーザーガイドを参照してください。
+
+## 要件 {#requirements}
 
 - WordPress 5.3 以上
 - PHP 7.4 以上
-- Multisite Ultimate plugin (有効)
+- Multisite Ultimate plugin（有効）
 
-## インストール
+## インストール {#installation}
 
 1. アドオンファイルを `/wp-content/plugins/` ディレクトリにアップロードします
-2. WordPress の 'プラグイン' メニューからプラグインを有効化します
+2. WordPress の「Plugins」メニューから plugin を有効化します
 3. ネットワーク管理画面でアドオン設定を構成します
 
-## 開発
+## 開発 {#development}
 
-### セットアップ
+### セットアップ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,78 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### プロジェクト構成
+### プロジェクト構造 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # PHP クラスとインクルード
+│   ├── class-multisite-ultimate-updater.php  # 更新ハンドラー
+│   └── class-multi_tenancy-main.php             # 主な機能
+├── tests/                        # ユニットテスト
+│   ├── bootstrap.php            # テストのブートストラップ
+│   ├── class-*-base.php         # 基本テストクラス
+│   └── class-*-test.php         # テストケース
+├── views/                       # テンプレートファイル
+├── assets/                      # 静的アセット
+│   ├── css/                     # スタイルシート
+│   ├── js/                      # JavaScript ファイル
+│   └── images/                  # 画像
+├── lang/                        # 言語ファイル
+├── composer.json                # PHP 依存関係
+├── package.json                 # Node.js 依存関係
+├── phpunit.xml.dist             # PHPUnit 設定
+├── .phpcs.xml.dist              # コード標準設定
+└── rector.php                   # コード近代化ルール
 ```
 
-### テスト
+### テスト {#testing}
 
-アドオンには包括的なテストフレームワークが含まれています：
+このアドオンには包括的なテストフレームワークが含まれます。
 
-- **ユニットテスト**: PHPUnit ベースのテストで WordPress テストスイートを使用
-- **ベーステストクラス**: 共通テストシナリオ用のヘルパーメソッドを提供
-- **テストカバレッジ**: コードカバレッジを追跡するように設定
-- **マルチサイトテスト**: マルチサイト環境でテストが実行されます
+- **ユニットテスト**: WordPress テストスイートを使った PHPUnit ベースのテスト
+- **基本テストクラス**: 一般的なテストシナリオ向けのヘルパーメソッドを提供
+- **テストカバレッジ**: コードカバレッジを追跡するように設定済み
+- **Multisite テスト**: テストは Multisite 環境で実行
 
-### コード標準
+### コード標準 {#code-standards}
 
-- **WordPress コーディング標準**: PHPCS で強制
-- **PHP 7.4+ 互換性**: 最新の PHP 機能がサポート
-- **静的解析**: PHPStan 統合で型チェック
-- **コードモダナイズ**: Rector ルールで PHP アップグレード
+- **WordPress コーディング標準**: PHPCS により適用
+- **PHP 7.4+ 互換性**: 最新の PHP 機能をサポート
+- **静的解析**: 型チェックのための PHPStan 統合
+- **コード近代化**: PHP アップグレード向けの Rector ルール
 
-### ビルドシステム
+### ビルドシステム {#build-system}
 
-- **アセット処理**: CSS/JS ファイルのミニファイ
+- **アセット処理**: CSS/JS ファイルの圧縮
 - **翻訳**: POT ファイル生成
-- **パッケージング**: 配布用アーカイブ作成
-- **開発モード**: デバッグ用にミニファイされていないアセット
+- **パッケージ化**: 配布用アーカイブ作成
+- **開発モード**: デバッグ用の未圧縮アセット
 
-## 設定
+## 設定 {#configuration}
 
-アドオンはネットワーク管理画面のインターフェースからアクセスできるさまざまな設定オプションをサポートします。
+このアドオンは、ネットワーク管理画面から利用できるさまざまな設定オプションをサポートします。
 
-## フックとフィルタ
+### 主権テナント設定 {#sovereign-tenant-configuration}
 
-### アクション
+主権テナントでは、トラフィックをテナントにルーティングする前に、テナントデータベース、ファイルシステムルート、データベースホストバインディング、ホスト機能を設定します。データベース認証情報、ホストバインディング、ルーティング、ユーザープロビジョニングに影響する変更を行うたびに、移行検証を実行してください。
 
-- `ultimate-multisite-addon-template_init` - アドオン初期化後に発火
-- `ultimate-multisite-addon-template_loaded` - すべてのアドオンファイルが読み込まれた後に発火
+テナント実行環境とデータベース権限がローカルソケットまたは同一マシンアクセスを想定している場合にのみ、`localhost` を使用してください。プロバイダーが設定した権限ホストがそれである場合は、`127.0.0.1` またはサービスホスト名を使用してください。
 
-### フィルタ
+### Hostinger 機能 {#hostinger-capability}
+
+Hostinger マルチテナンシー機能は、共有 Hostinger 統合トークンと連携します。検証前に、ドメインが hPanel に存在し、DNS が Hostinger アカウントを指し、テナントデータベース設定が hPanel と一致していることを確認してください。
+
+## フックとフィルター {#hooks-and-filters}
+
+### アクション {#actions}
+
+- `ultimate-multisite-addon-template_init` - アドオン初期化後に実行
+- `ultimate-multisite-addon-template_loaded` - すべてのアドオンファイルが読み込まれた後に実行
+
+### フィルター {#filters}
 
 - `ultimate-multisite-addon-template_settings` - アドオン設定を変更
-- `ultimate-multisite-addon-template_enabled` - アドオンの有効/無効状態を上書き
+- `ultimate-multisite-addon-template_enabled` - アドオンの有効化/無効化状態を上書き
 
-## ライセンス
+## ライセンス {#license}
 
-このアドオンは GPL v3 以上でライセンスされています。
+このアドオンは GPL v3 以降のライセンスで提供されます。
 
-## サポート
+## サポート {#support}
 
-サポートとドキュメントについては [MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください。
+サポートとドキュメントについては、[MultisiteUltimate.com](https://multisiteultimate.com) をご覧ください
+## 変更履歴 {#changelog}
 
-## 変更履歴
+- バージョン 1.2.0 (2026-06-03): ステートレスなテナント自動ログイン、Hostinger マルチテナンシー機能、サブサイトごとのデータベースとファイルシステム分離、主権移行検証ゲート、テナントブートストラップ/データベースライターの改善、設定可能な MySQL ホストバインディング、より安全な主権テナント解体を追加。
 
-- バージョン 1.0.1 (2025-09-28): プレフィックスを ultimate-multisite に変更; テキストドメインを更新; バージョンを更新
-- バージョン (2025-09-28): プレフィックスを ultimate-multisite に変更; テキストドメインを更新; バージョンを更新
+- バージョン 1.0.1 (2025-09-28): プレフィックスを ultimate-multisite に名称変更。テキストドメインを更新。バージョンを更新。
+
+
+- バージョン  (2025-09-28): プレフィックスを ultimate-multisite に名称変更。テキストドメインを更新。バージョンを更新。

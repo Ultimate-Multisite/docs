@@ -3,7 +3,7 @@ title: Mailchimp Registro delle modifiche
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Registro delle modifiche
+# Mailchimp Registro delle modifiche {#mailchimp-changelog}
 
 Versione: 1.1.1 - Rilasciata il 2025-09-28
 

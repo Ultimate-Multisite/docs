@@ -3,11 +3,11 @@ title: Visibilitas de capacité
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilitas de Habilidad
+# Visibilitas de Habilidad {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introduce controles de **Visibilidad de Habilidad** que rigen qué superficies muestran cada habilidad. Esto permite a los administradores ajustar con precisión qué capacidades del agente están disponibles a través de REST APIs, servidores MCP, integraciones de WooCommerce y otras interfaces.
 
-## ¿Qué es la Visibilidad de Habilidad?
+## ¿Qué es la Visibilidad de Habilidad? {#what-is-ability-visibility}
 
 La Visibilidad de Habilidad es un sistema de permisos que controla:
 
@@ -18,9 +18,9 @@ La Visibilidad de Habilidad es un sistema de permisos que controla:
 
 Cada habilidad lleva un nivel de visibilidad que determina su disponibilidad en diferentes superficies.
 
-## Niveles de Visibilidad
+## Niveles de Visibilidad {#visibility-levels}
 
-### Público
+### Público {#public}
 
 Las **habilidades públicas** están disponibles en todas partes:
 
@@ -32,7 +32,7 @@ Las **habilidades públicas** están disponibles en todas partes:
 
 Ejemplo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interno
+### Interno {#internal}
 
 Las **habilidades internas** solo están disponibles dentro de tu instalación de WordPress:
 
@@ -43,7 +43,7 @@ Las **habilidades internas** solo están disponibles dentro de tu instalación d
 
 Ejemplo: `manage-settings`, `view-analytics`, `export-data`
 
-### Socio
+### Socio {#partner}
 
 Las **habilidades de socio** solo están disponibles para socios en la lista blanca (whitelisted):
 
@@ -54,7 +54,7 @@ Las **habilidades de socio** solo están disponibles para socios en la lista bla
 
 Ejemplo: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Deshabilitado
+### Deshabilitado {#disabled}
 
 Las **habilidades deshabilitadas** no están disponibles en ningún lugar:
 
@@ -63,15 +63,15 @@ Las **habilidades deshabilitadas** no están disponibles en ningún lugar:
 - No disponibles en los paneles de administración
 - Útil para habilidades obsoletas o experimentales
 
-## Gestion de la Visibilidad de Habilidades
+## Gestion de la Visibilidad de Habilidades {#managing-ability-visibility}
 
-### Acceso a la Configuración de Visibilidad de Habilidades
+### Acceso a la Configuración de Visibilidad de Habilidades {#accessing-ability-visibility-settings}
 
 1. Ve a **WordPress Admin** → **Superdav AI Agent** → **Settings** (Configuración)
 2. Haz clic en la pestaña **Abilities** (Habilidades)
 3. Verás una lista de todas las habilidades instaladas con sus niveles de visibilidad.
 
-### Visualización de Detalles de Habilidad
+### Visualización de Detalles de Habilidad {#viewing-ability-details}
 
 Haz clic en cualquier habilidad para ver:
 
@@ -82,7 +82,7 @@ Haz clic en cualquier habilidad para ver:
 - **Last updated** (Última actualización): Cuándo se cambió la visibilidad por última vez.
 - **Status** (Estado): Reconocida o No clasificada.
 
-### Modificación de Niveles de Visibilidad
+### Modificación de Niveles de Visibilidad {#changing-visibility-levels}
 
 Para cambiar la visibilidad de una habilidad:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operaciones Masivas
+### Operaciones Masivas {#bulk-operations}
 
 Para cambiar la visibilidad de varias habilidades:
 
@@ -108,11 +108,11 @@ Para cambiar la visibilidad de varias habilidades:
 2. Selecciona un nuevo nivel de visibilidad del menú desplegable de acción masiva.
 3. Haz clic en **Apply** (Aplicar).
 
-## Lista Blanca de Socios (Partner Allow-List)
+## Lista Blanca de Socios (Partner Allow-List) {#partner-allow-list}
 
 La **partner allow-list** controla qué socios externos pueden acceder a las habilidades de nivel socio.
 
-### Añadir Socios
+### Añadir Socios {#adding-partners}
 
 1. Ve a **Superdav AI Agent** → **Settings** → **Partners** (Socios)
 2. Haz clic en **Add Partner** (Añadir Socio).
@@ -120,7 +120,7 @@ La **partner allow-list** controla qué socios externos pueden acceder a las hab
 4. Opcionalmente añade un nombre y descripción del socio.
 5. Haz clic en **Save** (Guardar).
 
-### Asignación de Habilidades a Socios
+### Asignación de Habilidades a Socios {#assigning-abilities-to-partners}
 
 Después de añadir un socio:
 
@@ -130,7 +130,7 @@ Después de añadir un socio:
 4. In sectione "Partner allow-list" (lista permissetum partner), marca quadros pro partneribus qui accessum habere debent
 5. Click **Save** (Salva)
 
-### Revocatio Accessus Partneris
+### Revocatio Accessus Partneris {#revoking-partner-access}
 
 Ad removendam accessum partneris:
 
@@ -140,11 +140,11 @@ Ad removendam accessum partneris:
 
 Partner immediate access ad illam potentiam perdit.
 
-## Abilities Non Classificatae
+## Abilities Non Classificatae {#unclassified-abilities}
 
 Cum installas potentiam tertii partis qui Superdav AI Agent non recognoscit, ea est marcata ut **Unclassified** (Non Classificata).
 
-### Notitia Adminum de Abilities Unclassifiedis
+### Notitia Adminum de Abilities Unclassifiedis {#admin-notice-for-unclassified-abilities}
 
 Vides notitiam adminum:
 
@@ -161,7 +161,7 @@ Pergula et classifica.
 [Review Abilities] [Dismiss]
 ```
 
-### Revisio Abilities Unclassifiedis
+### Revisio Abilities Unclassifiedis {#reviewing-unclassified-abilities}
 
 1. Click **Review Abilities** (Revia Abilities) in notitia
 2. Pro cada una ability non classificata, vides:
@@ -178,7 +178,7 @@ Pergula et classifica.
 
 4. Click **Classify** (Classifica) ut decisionem tuam servias
 
-### Quod Classificamus Abilities Unclassifiedas?
+### Quod Classificamus Abilities Unclassifiedas? {#why-classify-unclassified-abilities}
 
 Classificare potentias:
 
@@ -189,9 +189,9 @@ Classificare potentias:
 
 
 
-## Visibilitas in Superficies Diversas
+## Visibilitas in Superficies Diversas {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Capacidades públicas** están disponibles a través de los endpoints REST:
 
@@ -203,7 +203,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Capacidades internas y de socios** no están disponibles a través de la REST API.
 
-### Servidores MCP
+### Servidores MCP {#mcp-servers}
 
 **Capacidades públicas** están disponibles mediante MCP:
 
@@ -219,7 +219,7 @@ Capacidades disponibles:
 
 **Capacidades de socios** solo están disponibles con credenciales de socio.
 
-### Integración WooCommerce
+### Integración WooCommerce {#woocommerce-integration}
 
 **Capacidades públicas** relacionadas con WooCommerce están disponibles:
 
@@ -229,7 +229,7 @@ Capacidades disponibles:
 
 **Capacidades internas** no se exponen a WooCommerce.
 
-### Interfaz de Chat
+### Interfaz de Chat {#chat-interface}
 
 **Todas las capacidades** (Públicas, Internas, de socios) están disponibles en el chat, dependiendo de los permisos del usuario:
 
@@ -237,34 +237,34 @@ Capacidades disponibles:
 - Los usuarios regulares ven solo las capacidades públicas
 - Los socios ven capacidades públicas + de socios (si están permitidos por la lista blanca)
 
-## Mejores Prácticas de Seguridad
+## Mejores Prácticas de Seguridad {#security-best-practices}
 
-### Principio de Mínimo Privilegio
+### Principio de Mínimo Privilegio {#principle-of-least-privilege}
 
 - Establezca las capacidades con la visibilidad más restrictiva que aún permita su uso.
 - Utilice la visibilidad de socio para operaciones sensibles.
 - Deshabilite las capacidades que no utilice.
 
-### Auditorías Regulares
+### Auditorías Regulares {#regular-audits}
 
 - Revise la visibilidad de las capacidades mensualmente.
 - Verifique si hay capacidades sin clasificar.
 - Elimine el acceso a socios no utilizados.
 
-### Registro y Monitoreo (Logging and Monitoring)
+### Registro y Monitoreo (Logging and Monitoring) {#logging-and-monitoring}
 
 - Monitoree qué capacidades se utilizan más.
 - Haga seguimiento de los patrones de acceso de los socios.
 - Alerte sobre el uso inusual de capacidades.
 
-### Capacidades de Terceros
+### Capacidades de Terceros {#third-party-abilities}
 
 - Revise las capacidades de terceros antes de habilitarlas.
 - Clasifíquelas explícitamente.
 - Comience con visibilidad Interna o de Socio.
 - Promueva a Pública solo después de la verificación.
 
-## Problemen y Soluciones
+## Problemen y Soluciones {#troubleshooting}
 
 **Una habilidad no aparece en la lista**
 - Verifica que la habilidad esté instalada y activa.
@@ -287,7 +287,7 @@ Capacidades disponibles:
 - Comprueba que tu clasificación se haya guardado correctamente.
 - Verifica que el plugin que proporciona la habilidad esté actualizado.
 
-## Migración desde Modo Heredado (Legacy Mode)
+## Migración desde Modo Heredado (Legacy Mode) {#migration-from-legacy-mode}
 
 Si estás actualizando desde una versión anterior del Superdav AI Agent:
 
@@ -297,7 +297,7 @@ Si estás actualizando desde una versión anterior del Superdav AI Agent:
 
 Consulta **Migración al Modo de Terceros** para más detalles sobre la transición a la integración nativa de la API de Habilidades.
 
-## Pasos Siguientes
+## Pasos Siguientes {#next-steps}
 
 Después de configurar la visibilidad de las habilidades:
 

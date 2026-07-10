@@ -3,15 +3,15 @@ title: 'Lekcja 14: Co dalej'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekcja 14: Co dalej
+# Lekcja 14: Co dalej {#lesson-14-what-comes-next}
 
 Zbudowałeś platformę dla niszowego typu stron od podstaw. FitSite działa, obsługuje studia fitness i generuje powtarzalny przychód. W tej ostatniej lekcji sprawdzamy, jakie są kolejne kroki.
 
-## Gdzie skończyliśmy
+## Gdzie skończyliśmy {#where-we-left-off}
 
 FitSite to działający biznes z klientami, operacjami i trajektorią wzrostu. Teraz zastanawiamy się, co dalej.
 
-## Pełna sieć FitSite
+## Pełna sieć FitSite {#the-complete-fitsite-network}
 
 Oto wszystko, co zbudowaliśmy w ciągu 14 lekcji:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opcja 1: Pogłębienie się w niszę
+## Opcja 1: Pogłębienie się w niszę {#option-1-go-deeper-in-your-niche}
 
 Zanim rozszerzysz działalność na nowe nisze, rozważ pogłębienie się w branży fitness:
 
-### Podnisze
+### Podnisze {#sub-niches}
 
 - **Studia jogi** -- specjalistyczne szablony z funkcjami dotyczącymi medytacji, wyjazdów i warsztatów
 - **CrossFit boxes** -- śledzenie WOD, wyniki zawodów, funkcje społecznościowe
@@ -59,7 +59,7 @@ Zanim rozszerzysz działalność na nowe nisze, rozważ pogłębienie się w bra
 
 Każda podnisza może mieć własne szablony i potencjalnie własną markę, działające wszystkie na tej samej sieci Ultimate Multisite.
 
-### Funkcje Premium
+### Funkcje Premium {#premium-features}
 
 Stwórz funkcje, za które studia fitness będą chciały zapłacić dodatkowo:
 
@@ -68,14 +68,14 @@ Stwórz funkcje, za które studia fitness będą chciały zapłacić dodatkowo:
 - **Szablony blogów fitness** -- gotowe struktury treści do content marketingu fitness
 - **Integracja z mediami społecznościowymi** -- automatyczne publikowanie harmonogramów zajęć i aktualizacji
 
-### Ekspansja geograficzna
+### Ekspansja geograficzna {#geographic-expansion}
 
 Jeśli zaczynałeś lokalnie, rozszerz się na:
 
 - Inne miasta w swoim kraju
 - Inne kraje (użyj [funkcji lokalizacji](/user-guide/localization/translating) Ultimate Multisite, aby obsługiwać wiele języków)
 
-## Opcja 2: Ekspansja na sąsiednie nisze
+## Opcja 2: Ekspansja na sąsiednie nisze {#option-2-expand-to-adjacent-niches}
 
 Proces, który zastosowałeś dla studiów fitness, działa dla każdej niszy. Twoja druga nisza jest łatwiejsza, ponieważ już posiadasz:
 
@@ -83,7 +83,7 @@ Proces, który zastosowałeś dla studiów fitness, działa dla każdej niszy. T
 - Doświadczenie operacyjne
 - Sprawdzony playbook
 
-### Nisze sąsiadujące z fitness
+### Nisze sąsiadujące z fitness {#adjacent-niches-to-fitness}
 
 - **Wellness i spa** -- terapeuci masażu, day spa, centra wellness
 - **Kluby sportowe** -- amatorskie drużyny sportowe, ligi, kluby rekreacyjne
@@ -91,7 +91,7 @@ Proces, który zastosowałeś dla studiów fitness, działa dla każdej niszy. T
 
 Te nisze mają wspólnych odbiorców z fitness, więc Twoje działania marketingowe i partnerstwa mogą zostać przeniesione.
 
-### Całkowicie nowe nisze
+### Całkowicie nowe nisze {#completely-new-niches}
 
 Zastosuj framework z Lekcji 2, aby ocenić dowolną niszę:
 
@@ -108,7 +108,7 @@ Każda nowa nisza wymaga:
 
 Infrastruktura platformy, fakturowanie i procesy operacyjne pozostają takie same.
 
-## Opcja 3: Budowanie platformy platform
+## Opcja 3: Budowanie platformy platform {#option-3-build-a-platform-of-platforms}
 
 W skali możesz uruchomić wiele marek niszowych na jednej sieci Ultimate Multisite:
 
@@ -118,11 +118,11 @@ W skali możesz uruchomić wiele marek niszowych na jednej sieci Ultimate Multis
 
 Każda marka ma własne szablony, plany i marketing, ale dzielą infrastrukturę, fakturowanie i procesy operacyjne. Tutaj ekonomia Ultimate Multisite staje się potężna – jedna platforma, wiele pionów.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Aby zapewnić pełną separację między niszami, rozważ [addon Multi-Network](/addons/multinetwork), który pozwala uruchomić wiele sieci WordPress z jednej instalacji.
 
-## Opcja 4: Sprzedaż biznesu
+## Opcja 4: Sprzedaż biznesu {#option-4-sell-the-business}
 
 Nisowa platforma stron internetowych z powtarzalnym przychodem, niskim wskaźnikiem rezygnacji (churn) i jasną pozycją rynkową to cenny aktyw. Biznesy SaaS zazwyczaj sprzedaje się za 3-5 razy roczny przychód.
 
@@ -134,7 +134,7 @@ FitSite z 200 klientami przy ARPU na poziomie $89:
 
 Nie jest to gwarantowany wynik, ale jest realistyczny dla dobrze zarządzanej platformy niszowej.
 
-## Co się nauczyłeś
+## Co się nauczyłeś {#what-you-have-learned}
 
 Ten kurs nauczył Cię powtarzalnego procesu:
 
@@ -150,7 +150,7 @@ Ten kurs nauczył Cię powtarzalnego procesu:
 
 Nisza to strategia. Platforma to narzędzie. Ultimate Multisite sprawia, że narzędzie jest możliwe. Twoje zrozumienie niszy sprawia, że jest ono wartościowe.
 
-## Zacznij budować
+## Zacznij budować {#start-building}
 
 Jeśli śledziłeś za FitSite, masz działającą platformę. Jeśli przeczytałeś do końca, aby znaleźć własną niszę, wróć do [Lekcja 2: Wybieranie niszy](lesson-2-picking-your-niche) i rozpocznij proces dla wybranej przez siebie branży.
 

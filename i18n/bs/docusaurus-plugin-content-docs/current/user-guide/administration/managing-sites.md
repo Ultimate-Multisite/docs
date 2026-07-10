@@ -3,7 +3,7 @@ title: Upravljanje sajtovima
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Upravljanje sajtovima
+# Upravljanje sajtovima {#managing-sites}
 
 Sajtovi (ili podsajtovi) su srce vašeg WaaS poslovanja. Ultimate Multisite ima 3 tipa sajtova:
 
@@ -11,13 +11,13 @@ Sajtovi (ili podsajtovi) su srce vašeg WaaS poslovanja. Ultimate Multisite ima 
 - **Šabloni sajtova** — Preddefinirani sajtovi koje klijenti mogu odabrati kao početnu tačku
 - **Glavni sajt** — Vaš primarni sajt mreže
 
-## Pregled sajtova
+## Pregled sajtova {#viewing-sites}
 
 Idite na **Ultimate Multisite → Sites** da vidite sve podsajtove u vašoj mreži. Svaki sajt je označen po tipu, a vi možete filtrirati po Sve sajtove, Sajtovi vlasništva korisnika, Šabloni ili Čekanje.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Dodavanje novog sajta
+## Dodavanje novog sajta {#adding-a-new-site}
 
 Kliknite na dugme **Add Site** da kreirate novi sajt. Morat ćete navesti:
 
@@ -27,15 +27,15 @@ Kliknite na dugme **Add Site** da kreirate novi sajt. Morat ćete navesti:
 
 Opcija **Copy Site** omogućava vam da kreirate novi sajt na osnovu postojećeg šablona sajta. Kada je omogućeno, možete odabrati koji šablon želite koristiti kao početnu tačku. Pazite da je **Copy Media on Duplication** omogućeno kako bi se uključili i medijski fajlovi.
 
-## Upravljanje postojećim sajtom
+## Upravljanje postojećim sajtom {#managing-an-existing-site}
 
 Kliknite na **Manage** na bilo kojem sajtu da otvorite stranicu **Edit Site**. Ovdje ćete pronaći:
 
-### Osnovne informacije
+### Osnovne informacije {#basic-information}
 
 Ime sajta, tip, ID sajta i opis. Takođe ćete vidjeti mapirani domen, povezano članstvo (membership) i korisnički račun klijenta koji posjeduje sajt.
 
-### Opcije sajta
+### Opcije sajta {#site-options}
 
 Konfigurišite sposobnosti i ograničenja sajta:
 
@@ -47,7 +47,7 @@ Konfigurišite sposobnosti i ograničenja sajta:
 
 Po podrazumevanim postavkama, sajtovi prate ograničenja postavljena na nivou članstva. Postavljanje ograničenja na nivou sajta će nadjačati postavke članstva.
 
-### Povezivanja (Associations)
+### Povezivanja (Associations) {#associations}
 
 Ispod opcija sajta, pronaći ćete informacije o:
 
@@ -55,7 +55,7 @@ Ispod opcija sajta, pronaći ćete informacije o:
 - **Članstvo (Membership)** kojem sajt pripada
 - **Korisnički račun klijenta** povezan sa sajtom
 
-### Desna bočna traka (Right Sidebar)
+### Desna bočna traka (Right Sidebar) {#right-sidebar}
 
 Na desnoj strani možete:
 

@@ -1,109 +1,120 @@
 ---
 title: 세금 처리
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# 세금 처리
+# 세금 처리 {#tax-handling}
 
-Ultimate Multisite는 핵심 플러그인에 세금 수집 모듈이 내장되어 있어, 플랜, 패키지 및 서비스에 대한 판매세를 수집해야 할 경우 애드온을 설치할 필요 없이 쉽게 수집할 수 있습니다.
+Ultimate Multisite에는 핵심 플러그인에 세금 징수 모듈이 내장되어 있으므로, 플랜, 패키지 및 서비스에 판매세를 징수해야 하는 경우 애드온을 설치하지 않고도 쉽게 처리할 수 있습니다.
 
-유럽에 위치한 기업을 위해, 우리는 VAT 규정 준수를 보다 잘 지원하기 위한 도구와 기능을 추가하는 **애드온**을 제공합니다.
+유럽에 위치한 회사들을 위해, VAT 준수를 더 잘 **지원**하는 도구와 기능을 추가하는 **애드온**을 제공합니다.
 
-Ultimate Multisite는 정부에 대신 세금을 신고하거나 납부하지 않습니다; 우리는 단지 거래 시점에 적절한 세금을 수집하도록 도와줄 뿐입니다. **여전히 직접 세금을 납부해야 합니다.**
+Ultimate Multisite는 사용자를 대신해 정부에 세금을 신고하거나 납부하지 않습니다. 저희는 거래 시점에 적절한 세금을 징수할 수 있도록 도와드릴 뿐입니다. **세금 납부는 여전히 직접 하셔야 합니다.**
 
-## 세금 수집 활성화
+## 세금 징수 활성화 {#enabling-tax-collection}
 
-세금 수집은 기본적으로 활성화되어 있지 않습니다. 이를 활성화하려면 **Ultimate Multisite > Settings > Taxes**로 이동하여 세금 활성화 설정을 토글해야 합니다.
+세금 징수는 기본적으로 활성화되어 있지 않습니다. 활성화하려면 **Ultimate Multisite > 설정 > 세금**으로 이동한 다음 Enable Taxes 설정을 활성화하도록 토글해야 합니다.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![세금 설정 페이지 상단의 Enable Taxes 토글](/img/config/settings-taxes-enable.png)
 
-### 세금 제외 vs. 세금 포함
+세금 설정 페이지의 전체 모습은 다음과 같습니다.
 
-기본적으로 모든 제품 가격은 세금이 제외된 상태이며, 이는 세금이 제품 가격에 포함되지 않음을 의미합니다. 고객이 특정 구매에 대해 세금을 지불해야 한다고 판단되면, 우리는 세금을 소계 위에 추가합니다.
+![세금 설정 전체 페이지](/img/config/settings-taxes-full.png)
 
-제품 가격에 세금을 포함하고 싶다면, 포함 세금 설정을 활성화하면 됩니다.
+개별 제품의 세금 설정도 확인할 수 있습니다.
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![제품의 세금 설정](/img/config/settings-taxes.png)
 
-변경 사항을 **저장**하는 것을 잊지 마세요.
+### 세금 제외 vs. 세금 포함 {#tax-excluded-vs-tax-included}
 
-## 세율 만들기
+기본적으로 모든 제품 가격은 세금 제외 가격입니다. 즉, 세금이 제품 가격에 **포함되어 있지 않습니다**. 특정 구매에 고객이 세금을 지불해야 한다고 판단되면, 소계 **위에** 세금을 추가합니다.
 
-세금 수집을 활성화한 후, 특정 지역에 대한 세율을 우리 세율 편집기를 사용해 만들어야 합니다.
+제품 가격에 세금을 포함하고 싶다면 **Inclusive Tax** 설정을 활성화하면 됩니다.
 
-세금 설정 페이지의 사이드바에서 **Manage Tax Rates** 버튼을 클릭하면 편집기에 접근할 수 있습니다.
+![Enable Taxes 설정 아래의 Inclusive Tax 토글 행](/img/config/settings-taxes-inclusive.png)
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+변경한 내용을 **저장**하는 것을 잊지 마세요.
 
-세율 편집기 페이지에서 **Add new Row** 버튼을 클릭해 새 세율을 추가할 수 있습니다.
+###
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+## 세율 만들기 {#creating-tax-rates}
 
-각 세율에 **제목**(송장에 사용됨)을 지정해야 합니다. 그 다음 **국가**(필수), **주**, **도시**(둘 다 선택 사항)를 선택해 이 세율이 부과될 위치를 지정합니다. 마지막으로 **세율(%)**을 입력합니다.
+Tax Collection을 활성화한 후에는 세율 편집기를 사용하여 특정 위치에 대한 세율을 만들어야 합니다.
 
-### 세금 범주
+세금 설정 페이지의 사이드바에서 **세율 관리** 버튼을 클릭하여 편집기에 접근할 수 있습니다.
 
-또한 여러 세금 범주를 만들어 서로 다른 종류의 제품에 대해 다른 세율을 부과할 수 있습니다.
+![설정 페이지의 세율 패널에 있는 세율 관리 링크](/img/config/settings-taxes-manage-rates.png)
 
-**Add new Tax Category**를 클릭한 뒤 범주의 이름을 입력하고 **Create**를 누릅니다.
+세율 편집기 페이지에서는 **새 행 추가** 버튼을 클릭하여 새 세율을 추가할 수 있습니다.
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+![상단에 새 행 추가 버튼이 있는 세율 편집기 표](/img/config/tax-rates-editor.png)
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+각 세율에는 **제목**(청구서에 사용됨)을 지정해야 합니다. 그런 다음 이 세금이 부과될 **국가**(필수), **주/도,** 및 **도시**(둘 다 선택 사항)를 선택할 수 있습니다. 마지막으로 **퍼센트 단위의 세율**을 추가하세요.
 
-범주를 탐색하려면 **Switch**를 클릭하고 새 세금을 추가하려는 범주를 선택합니다.
+### 세금 카테고리 {#tax-categories}
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+여러 세금 카테고리를 만들어 제품 종류별로 서로 다른 세율을 추가할 수도 있습니다.
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+**새 세금 카테고리 추가**를 클릭한 다음 카테고리 이름을 입력하고 **만들기**를 누르세요.
 
-특정 제품에 대한 세금 범주를 설정하려면 **Product edit page**로 이동한 뒤 세금 탭으로 이동합니다.
+![세율 편집기 상단의 새 세금 카테고리 추가 버튼](/img/config/tax-categories-add.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![카테고리 만들기 모달의 세금 카테고리 이름 입력 필드](/img/config/tax-categories-create-modal.png)
 
-같은 화면에서 **Is Taxable?** 토글을 끄면 Ultimate Multisite가 해당 제품에 대해 세금을 수집하지 않도록 알립니다.
+카테고리를 탐색하려면 **전환**을 클릭하고 새 세금을 추가하려는 카테고리를 선택하세요.
 
-## 유럽 부가가치세 지원
+![세금 카테고리 사이를 변경하는 전환 드롭다운 버튼](/img/config/tax-categories-switch.png)
 
-앞서 언급한 바와 같이, EU에 있는 고객을 위해 유럽 부가가치세 규정으로 인한 추가 요구 사항을 충족하는 애드온을 제공합니다.
+![사용 가능한 카테고리를 보여주는 세금 카테고리 선택기 드롭다운](/img/config/tax-categories-select.png)
 
-우리의 VAT 도구는 다음과 같은 몇 가지 중요한 기능을 지원합니다:
+특정 제품의 세금 카테고리는 **제품 편집 페이지**로 이동한 다음 세금 탭으로 이동하여 설정할 수 있습니다.
 
-- EU 부가가치세율을 쉽게 불러오기;
-- VAT 번호 수집 및 검증 - 그리고 VAT 면제 기업(유효한 VAT 번호를 가진 기업 등)에 대한 역과세;
+![세금 카테고리와 과세 대상 토글이 있는 제품 세금 탭](/img/config/product-taxes.png)
 
-해당 애드온을 설치하려면 **Ultimate Multisite > Settings**로 이동한 뒤 사이드바에서 **Check our Add-ons** 링크를 클릭합니다.
+같은 화면에서 **과세 대상인가요?** 토글을 끄면 Ultimate Multisite가 해당 제품에 세금을 징수하지 않아야 함을 알릴 수 있습니다.
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+## 유럽 VAT 지원 {#european-vat-support}
 
-그곳에서 **Ultimate Multisite VAT add-on**을 검색하고 설치할 수 있습니다.
+앞서 언급했듯이, 유럽 VAT 규정으로 인해 추가 요구 사항이 있는 EU 고객을 위해 사용할 수 있는 애드온이 있습니다.
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+저희 VAT 도구는 몇 가지 중요한 작업을 도와줍니다.
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+  * EU VAT 세율을 쉽게 불러오기;
 
-그런 다음 **Network Admin > Plugins**로 이동해 해당 애드온을 네트워크 전체에서 활성화합니다.
+  * VAT 번호 수집 및 검증 - 그리고 VAT 면제 대상(예: 유효한 VAT 번호가 있는 회사)에 대한 역과세 처리;
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+이 애드온을 설치하려면 **Ultimate Multisite > 설정**으로 이동한 다음 **애드온 확인** 사이드바 링크를 클릭하세요.
 
-**Tax Settings tab**으로 돌아가면 새로운 옵션이 표시됩니다. **Enable VAT Support** 옵션을 토글해 새로운 VAT 도구를 활성화하세요. **save**를 잊지 말고 설정을 저장하세요!
+![애드온 확인 링크가 있는 설정 페이지 사이드바](/img/config/settings-taxes-addons-link.png)
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+애드온 페이지로 리디렉션됩니다. 거기에서 **Ultimate Multisite VAT 애드온**을 검색하고 설치할 수 있습니다.
 
-### VAT 세율 불러오기
+<!-- 스크린샷 없음: 애드온 페이지의 VAT 애드온 타일 -->
 
-우리 통합이 제공하는 도구 중 하나는 EU 회원국의 세율을 불러오는 기능입니다. 이는 EU 부가가치세 지원을 활성화한 후 세율 편집기 페이지를 방문하면 수행할 수 있습니다.
+<!-- 스크린샷 없음: VAT 애드온 지금 설치 대화 상자 -->
 
-페이지 하단에서 VAT 불러오기 옵션을 확인할 수 있습니다. 요율 유형을 선택하고 **Update EU VAT Rates** 버튼을 클릭하면 각 EU 회원국의 세율이 표에 자동으로 채워집니다. 그 다음에는 저장만 하면 됩니다.
+그런 다음 **네트워크 관리자 > 플러그인**으로 이동하여 해당 애드온을 네트워크 전체에서 활성화하세요.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+<!-- 스크린샷 없음: 플러그인 페이지의 VAT 애드온 네트워크 활성화 작업 -->
 
-불러온 값을 편집할 수도 있습니다. 편집하려면 필요한 표 행을 수정한 뒤 새 값을 저장하면 됩니다.
+**세금 설정 탭**으로 돌아가면 새 옵션이 표시됩니다. 새 VAT 도구를 활성화하려면 **VAT 지원 활성화** 옵션을 토글하세요. 설정을 **저장**하는 것을 잊지 마세요!
 
-### VAT 검증
+<!-- 스크린샷 없음: 애드온 활성화 후 세금 설정의 VAT 지원 활성화 토글 -->
 
-VAT 지원이 활성화되면 Ultimate Multisite는 결제 양식에 청구 주소 필드 아래에 추가 필드를 추가합니다. 이 필드는 EU에 있는 고객에게만 표시됩니다.
+### VAT 세율 가져오기 {#pulling-on-vat-tax-rates}
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+저희 통합이 추가하는 도구 중 하나는 EU 회원국의 세율을 불러오는 기능입니다. EU VAT 지원을 활성화한 후 세율 편집기 페이지를 방문하면 이 작업을 수행할 수 있습니다.
 
-Ultimate Multisite는 VAT 번호를 검증하고 유효한 경우 역과세 메커니즘이 적용되어 해당 주문의 세율이 0%로 설정됩니다.
+페이지 하단에 VAT 가져오기 옵션이 표시됩니다. 세율 유형을 선택하고 **EU VAT 세율 업데이트** 버튼을 클릭하면 각 EU 회원국의 세율을 가져와 표를 자동으로 채웁니다. 그런 다음 저장하기만 하면 됩니다.
+
+![세율 편집기 하단의 EU VAT 세율 업데이트 버튼](/img/config/tax-rates-vat-pull.png)
+
+가져온 후에도 값을 편집할 수 있습니다. 그렇게 하려면 필요한 표 행을 간단히 편집하고 클릭하여 새 값을 저장하세요.
+
+### VAT 검증 {#vat-validation}
+
+VAT 지원이 활성화되면 Ultimate Multisite는 결제 양식의 청구 주소 필드 아래에 추가 필드를 추가합니다. 이 필드는 EU에 위치한 고객에게만 표시됩니다.
+
+<!-- 스크린샷 없음: 프론트엔드 결제 양식의 청구 주소 아래 VAT 번호 필드 -->
+
+Ultimate Multisite는 그다음 VAT 번호를 검증하며, 유효한 번호로 확인되면 역과세 메커니즘이 적용되고 해당 주문의 세율이 0%로 설정됩니다.

@@ -1,0 +1,124 @@
+---
+title: זייט־בויער מיט קינסטלעכער אינטעליגענץ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI פּלאַץ־בויער {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## פֿאָדערונגען {#requirements}
+
+- WordPress 5.3 אָדער העכער
+- PHP 7.4 אָדער העכער
+- Multisite Ultimate פּלוגין (אַקטיוו)
+
+## אינסטאַלאַציע {#installation}
+
+1. אַרויפֿלאָדן די צוגאָב־טעקעס אין אייער `/wp-content/plugins/` טעקע־רעדל
+2. אַקטיווירן דעם פּלוגין דורך דעם 'פּלוגינס' מעניו אין WordPress
+3. קאָנפֿיגורירן די צוגאָב־איינשטעלונגען אין דעם נעץ־אַדמין
+
+## אַנטוויקלונג {#development}
+
+### אויפֿשטעל {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### פּראָיעקט־סטרוקטור {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP קלאַסן און אַרײַננעמונגען
+│   ├── class-multisite-ultimate-updater.php  # דערהײַנטיקונג־האַנדלער
+│   └── class-ai_site_builder-main.php             # הויפּט־פֿונקציאָנאַליטעט
+├── tests/                        # איינס־טעסטן
+│   ├── bootstrap.php            # טעסט־אָנהייב
+│   ├── class-*-base.php         # באַזע־טעסט־קלאַס
+│   └── class-*-test.php         # טעסט־פֿאַלן
+├── views/                       # מוסטער־טעקעס
+├── assets/                      # סטאַטישע אַסעטן
+│   ├── css/                     # סטיל־בלעטער
+│   ├── js/                      # JavaScript טעקעס
+│   └── images/                  # בילדער
+├── lang/                        # שפּראַך־טעקעס
+├── composer.json                # PHP אָפּהענגיקייטן
+├── package.json                 # Node.js אָפּהענגיקייטן
+├── phpunit.xml.dist             # PHPUnit קאָנפֿיגוראַציע
+├── .phpcs.xml.dist              # קאָד־סטאַנדאַרטן קאָנפֿיגוראַציע
+└── rector.php                   # קאָד־מאָדערניזאַציע כּללים
+```
+
+### טעסטינג {#testing}
+
+די צוגאָב נעמט אַרײַן אַ ברייטע טעסטינג־ראַם:
+
+- **איינס־טעסטן**: PHPUnit־באַזירטע טעסטן מיט WordPress טעסט־סוויט
+- **באַזע־טעסט־קלאַס**: שטעלט צו הילף־מעטאָדן פֿאַר געוויינטלעכע טעסט־סצענאַרן
+- **טעסט־דעקונג**: קאָנפֿיגורירט צו נאָכפֿאָלגן קאָד־דעקונג
+- **Multisite טעסטינג**: טעסטן לויפֿן אין אַ multisite סבֿיבֿה
+
+### קאָד־סטאַנדאַרטן {#code-standards}
+
+- **WordPress קאָדירונג־סטאַנדאַרטן**: דורכגעפֿירט דורך PHPCS
+- **PHP 7.4+ קאָמפּאַטיביליטעט**: מאָדערנע PHP פֿעיִקייטן געשטיצט
+- **סטאַטישע אַנאַליז**: PHPStan אינטעגראַציע פֿאַר טיפּ־קאָנטראָל
+- **קאָד־מאָדערניזאַציע**: Rector כּללים פֿאַר PHP אַפּגריידס
+
+### בוי־סיסטעם {#build-system}
+
+- **אַסעט־פּראָצעסירונג**: מיניפֿיקאַציע פֿאַר CSS/JS טעקעס
+- **איבערזעצונג**: POT טעקע־גענעראַציע
+- **פּאַקעטירונג**: אַרכיוו־שאַפֿונג פֿאַר פֿאַרשפּרייטונג
+- **אַנטוויקלונג־מאָדוס**: ניט־מיניפֿיצירטע אַסעטן פֿאַר דעבאַגינג
+
+## קאָנפֿיגוראַציע {#configuration}
+
+די צוגאָב שטיצט פֿאַרשיידענע קאָנפֿיגוראַציע־אָפּציעס וואָס זענען צוטריטלעך דורך דעם נעץ־אַדמין צובינד.
+
+## Hooks און פֿילטערס {#hooks-and-filters}
+
+### אַקציעס {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - אויסגעלייזט נאָך דער איניציאַליזאַציע פֿון דער צוגאָב
+- `ultimate-multisite-ai-site-builder_loaded` - אויסגעלייזט נאָך דעם ווי אַלע צוגאָב־טעקעס זענען געלאָדן
+
+### פֿילטערס {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - ענדערן צוגאָב־איינשטעלונגען
+- `ultimate-multisite-ai-site-builder_enabled` - איבערשרײַבן דעם אַקטיווירן/דיאַקטיווירן סטאַטוס פֿון דער צוגאָב
+
+## ליצענץ {#license}
+
+די צוגאָב איז ליצענצירט אונטער GPL v3 אָדער שפּעטער.
+
+## שטיצע {#support}
+
+פֿאַר שטיצע און דאָקומענטאַציע, באַזוכט [MultisiteUltimate.com](https://multisiteultimate.com)
+## ענדערונג־לאָג {#changelog}
+
+- ווערסיע 1.0.1 (2025-09-28): איבערנעמען דעם פּרעפֿיקס צו ultimate-multisite; דערהײַנטיקן דעם טעקסט־דאָמעין; ווערסיע־העכערונג.
+
+
+- ווערסיע  (2025-09-28): איבערנעמען דעם פּרעפֿיקס צו ultimate-multisite; דערהײַנטיקן דעם טעקסט־דאָמעין; ווערסיע־העכערונג.

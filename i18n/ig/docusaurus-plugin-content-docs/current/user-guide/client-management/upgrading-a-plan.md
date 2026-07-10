@@ -3,7 +3,7 @@ title: Nche Plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ndemu Plan (v2)
+# Ndemu Plan (v2) {#upgrading-a-plan-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
@@ -39,7 +39,7 @@ Sau khi thanh toán hoàn tất, các sản phẩm mới sẽ được thêm và
 
 ##
 
-## Lộ trình Nâng cấp và Hạ cấp (Upgrade and Downgrade Paths)
+## Lộ trình Nâng cấp và Hạ cấp (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Trên mỗi sản phẩm của bạn, bạn sẽ có một tab **Up & Downgrades**. Tùy chọn đầu tiên trên tab đó là một trường gọi là **Plan Group**.
 

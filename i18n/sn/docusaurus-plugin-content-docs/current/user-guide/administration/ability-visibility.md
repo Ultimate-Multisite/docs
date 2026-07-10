@@ -3,11 +3,11 @@ title: Kufanana kwezvinoviona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kuvira Kufanana (Ability Visibility)
+# Kuvira Kufanana (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 inoratidzi **Ability Visibility** controls kuti zvinhu zviri kuita kuti zvinonakidziswe (expose) izvi zvinoreva (abilities). Izvi zvinoitirwa kuti administrators vanedze zvakanaka kuti zvinonakidziswe zvinoreva (agent capabilities) zvichiri kuita kupfungwa kuburikidza ne-REST APIs, MCP servers, WooCommerce integrations, uye interfaces dzine kune zvinhu zvose.
 
-## Ability Visibility ndiyo?
+## Ability Visibility ndiyo? {#what-is-ability-visibility}
 
 Ability Visibility ndiyo nzira yekubvumira inotizara:
 
@@ -18,9 +18,9 @@ Ability Visibility ndiyo nzira yekubvumira inotizara:
 
 Moyo we ability inoratidzi nzira yekubvumira inotarisirwa kuti izvi zvinhu zvichiri kuita munzvimbo dzakasiyana-siyana.
 
-## Visibility Levels
+## Visibility Levels {#visibility-levels}
 
-### Public (Kuvira Kwemweya)
+### Public (Kuvira Kwemweya) {#public}
 
 **Public abilities** zvinogona kuone panguva dzose:
 
@@ -32,7 +32,7 @@ Moyo we ability inoratidzi nzira yekubvumira inotarisirwa kuti izvi zvinhu zvich
 
 Zvakare: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Kuvira Kwemweya)
+### Internal (Kuvira Kwemweya) {#internal}
 
 **Internal abilities** zvinogona kuone chete munzvimbo yenyu ya WordPress:
 
@@ -43,7 +43,7 @@ Zvakare: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Zvakare: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Kuvira Kwemweya Dze Partners)
+### Partner (Kuvira Kwemweya Dze Partners) {#partner}
 
 **Partner abilities** zvinogona kuone chete dze partners dzinovakundwa (whitelisted):
 
@@ -54,7 +54,7 @@ Zvakare: `manage-settings`, `view-analytics`, `export-data`
 
 Zvakare: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Kuvira Kwemweya)
+### Disabled (Kuvira Kwemweya) {#disabled}
 
 **Disabled abilities** hazvisonogona kuone munzvimbo yakanaka:
 
@@ -65,15 +65,15 @@ Zvakare: `bulk-import-users`, `modify-billing`, `access-analytics`
 
 
 
-## Kurudzera Kufamba Kwemabasa (Managing Ability Visibility)
+## Kurudzera Kufamba Kwemabasa (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Kuva Settings kweKurudzera Kufamba Kwemabasa (Accessing Ability Visibility Settings)
+### Kuva Settings kweKurudzera Kufamba Kwemabasa (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Penda **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klikira pa tab ya **Abilities**
 3. Utaona list yezo zvinowanikwa dzese dzinobva nelevel dzako dzakufamba (visibility levels).
 
-### Kuti Uone Zvinobva zveAbility (Viewing Ability Details)
+### Kuti Uone Zvinobva zveAbility (Viewing Ability Details) {#viewing-ability-details}
 
 Klikira pa ability yenzira kuti uone:
 
@@ -84,7 +84,7 @@ Klikira pa ability yenzira kuti uone:
 - **Last updated**: Nenzira visibility yakagadzirwa nguva yakare
 - **Status**: Inobva inozivikanwa (Recognized) kana inobva inozivikanwa (Unclassified)
 
-### Kusimbisa Levels dzakufamba Kwemabasa (Changing Visibility Levels)
+### Kusimbisa Levels dzakufamba Kwemabasa (Changing Visibility Levels) {#changing-visibility-levels}
 
 Kuti usimbise visibility ya ability:
 
@@ -102,7 +102,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Kuratidza Mabasa Akawanda (Bulk Operations)
+### Kuratidza Mabasa Akawanda (Bulk Operations) {#bulk-operations}
 
 Kuti usimbise visibility ya ability dzakawanda:
 
@@ -110,11 +110,11 @@ Kuti usimbise visibility ya ability dzakawanda:
 2. Chibvumira level yakare yevisibility kubva mu dropdown menu yekugadzirisa mabasa akawanda (bulk action)
 3. Klikira **Apply** (Simba)
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 **Partner allow-list** inogadzirisa kuti partner vanhu vachakwana vachivimbise ability dzine Partner-level.
 
-### Kuva Partners
+### Kuva Partners {#adding-partners}
 
 1. Penda **Superdav AI Agent** → **Settings** → **Partners**
 2. Klikira **Add Partner** (Shandisa Partner)
@@ -122,7 +122,7 @@ Kuti usimbise visibility ya ability dzakawanda:
 4. Zvinhu zvakare, shandisa zvinobva nepartner name uye description
 5. Klikira **Save**
 
-### Kuti Ability dzine Partners (Assigning Abilities to Partners)
+### Kuti Ability dzine Partners (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Panguva ya partner yakagadzirwa:
 
@@ -132,7 +132,7 @@ Panguva ya partner yakagadzirwa:
 4. Mu chigwisa "Partner allow-list", tsanidza boxes dzakareva ku partner vachinge vachazvo zvinoita access
 5. Chibvumira **Save**
 
-### Kupa Access ya Partner
+### Kupa Access ya Partner {#revoking-partner-access}
 
 Kuti usave access ya partner:
 
@@ -142,11 +142,11 @@ Kuti usave access ya partner:
 
 Partner anozvakanisa access ya iye mwedzi wese.
 
-## Abilities dzakavandudzwa (Unclassified Abilities)
+## Abilities dzakavandudzwa (Unclassified Abilities) {#unclassified-abilities}
 
 Kana uri kuita install ability ya third-party inotiri Superdav AI Agent haizvinobvunza, inotiri kuti iwe iwe **Unclassified**.
 
-### Chinyorwa cheAdmin ku Abilities dzakavandudzwa
+### Chinyorwa cheAdmin ku Abilities dzakavandudzwa {#admin-notice-for-unclassified-abilities}
 
 Utaona chinyorwa cheadmin:
 
@@ -163,7 +163,7 @@ Unoda kuti uone uye utiri iwe.
 [Review Abilities] [Dismiss]
 ```
 
-### Kuone Abilities dzakavandudzwa
+### Kuone Abilities dzakavandudzwa {#reviewing-unclassified-abilities}
 
 1. Chibvumira **Review Abilities** mu chinyorwa cheadmin
 2. Kune ability inotiri, utaona:
@@ -180,7 +180,7 @@ Unoda kuti uone uye utiri iwe.
 
 4. Chibvumira **Classify** kuti usave chigadziriro chako
 
-### Ndiwe nezvikuai Classify Abilities dzakavandudzwa?
+### Ndiwe nezvikuai Classify Abilities dzakavandudzwa? {#why-classify-unclassified-abilities}
 
 Kuti usave classify abilities:
 
@@ -190,9 +190,9 @@ Kuti usave classify abilities:
 
 - **Inodzidzira zvinhu**: Zvinhu zvaunoda kuti usave zvakare (audit)
 
-## Kuvira Kuti Vose Mhando Yese
+## Kuvira Kuti Vose Mhando Yese {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Kuvira kwakasiyana (Public abilities)** kunogona kuva kune REST endpoints:
 
@@ -204,7 +204,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Kuvira kwemaviri (Internal and Partner abilities)** kunogona kuva kune REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Kuvira kwakasiyana (Public abilities)** kunogona kuva kune MCP:
 
@@ -220,7 +220,7 @@ Kuvira kuitika:
 
 **Kuvira kwemaviriwe (Partner abilities)** kunogona kuva nekuvusha zvinodiwa dzinobva nepartner credentials chete.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Kuvira kwakasiyana (Public abilities)** dzine ruremerero neWooCommerce dzine kugona:
 
@@ -230,7 +230,7 @@ Kuvira kuitika:
 
 **Kuvira kwemaviri (Internal abilities)** hazi kufanana kune WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Kuvira chinhu chakanaka (All abilities)** (Public, Internal, Partner) chinogona kuva munzvimbo inoshandiswa chat, kunyanya kubva kuita zvinhu nemabhuku ya user:
 
@@ -238,27 +238,27 @@ Kuvira kuitika:
 - Users vakuru vanogona kuona kuvira kwakasiyana (Public abilities) chete
 - Partners vanogona kuona Public + Partner abilities (kuti vave vachifananwa/whitelisted)
 
-## Mhinduro Yemashure (Security Best Practices)
+## Mhinduro Yemashure (Security Best Practices) {#security-best-practices}
 
-### Chii Chakanaka Chekufanana Kune Zvinodiwa (Principle of Least Privilege)
+### Chii Chakanaka Chekufanana Kune Zvinodiwa (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Tsvaka kuvira kune chivimbo chinobva nekuita zvinhu zvakanyanya, kunyangwe kunogona kuenda.
 - Shandisa kuvira kwemaviriwe (Partner visibility) kuti zvisina kugadzirwa zvakasiyana dzinobva nekuita zvinhu dzine ruremerero.
 - Zvave kuvira zvinoshandiswa hazi kufanana.
 
-### Kuratidza Kune Mazuva (Regular Audits)
+### Kuratidza Kune Mazuva (Regular Audits) {#regular-audits}
 
 - Rururura kuvira kune mazuva nemazuva
 - Rururura kuti zviri kuona kuvira dzakasiyana dzinobva nekuita zvinhu zvisina kugadzirwa
 - Zvave kuvira zvinoshandiswa hazi kufanana.
 
-### Kuratidza uye Kufamba (Logging and Monitoring)
+### Kuratidza uye Kufamba (Logging and Monitoring) {#logging-and-monitoring}
 
 - Rururura kuti kuvira kuitika kwakasiyana dzinogona kuita zvakanyanya
 - Kuratidza nzira inoshandiswa nepartner
 - Tsvaka kana zvinoshandiswa kuvira zvinhu zvose zviri kuitika (unusual ability usage)
 
-### Kuvira Kwemabhuku Epanzira (Third-Party Abilities)
+### Kuvira Kwemabhuku Epanzira (Third-Party Abilities) {#third-party-abilities}
 
 - Rururura kuvira kwemabhuku epanyira panguva unogona kuita zvakasiyana dzinobva nekuvusha
 - Tsvaka zvinoshandiswa zvine ruremerero chete
@@ -266,7 +266,7 @@ Kuvira kuitika:
 
 
 
-## Kutiro (Troubleshooting)
+## Kutiro (Troubleshooting) {#troubleshooting}
 
 **Kutiro (Ability) haingakasi ku listi**
 - Chika kuti ability inoshandiswa uye inachivire (installed and active).
@@ -289,7 +289,7 @@ Kuvira kuitika:
 - Chika kuti classification yako yakaitwa.
 - Verify kuti plugin inoshandisa ability inenge inoshandiswa zvakare (up to date).
 
-## Kuratidza kubva munzvimbo ya Zvinhu Zvinotanga (Migration from Legacy Mode)
+## Kuratidza kubva munzvimbo ya Zvinhu Zvinotanga (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Kana uri kuenda kubva munzvimbo yakare ya Superdav AI Agent:
 
@@ -299,7 +299,7 @@ Kana uri kuenda kubva munzvimbo yakare ya Superdav AI Agent:
 
 Chirare **Third-Party Mode Migration** kune zvinangwa zvakawanda pamusoro pekuenda kubva munzvimbo ya API ya Abilities integration inoshandiswa nezinowakanisa (native).
 
-## Zvinhu Zvinotanga (Next Steps)
+## Zvinhu Zvinotanga (Next Steps) {#next-steps}
 
 Panguva unenge uri kuratidza visibility ya ability:
 

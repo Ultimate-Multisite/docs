@@ -3,19 +3,19 @@ title: Stripe-унып җибәрү
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'i Kurma (v2)
+# Stripe Gateway'i Kurma (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ÖNEMLİ QAYDALI: Bu makale Ultimate Multisite versiyon 2.x'i əks etdirir.**_
 
 Ödəniş ayarlar səhifəsində ödəniş metodlarından qədər dördünü, yəni Stripe, Stripe Checkout, PayPal və Manual-ı aktivləşdirə bilərsiniz. Bu məqalədə biz **Stripe** ilə necə inteqrasiya ediləcəyini görəcəyik.
 
-## Stripe-i Aktivləşdirmək
+## Stripe-i Aktivləşdirmək {#enabling-stripe}
 
 Stripe-u şəbəkənizdə mövcud ödəniş portalı kimi aktiv etmək üçün **Ultimate Multisite > Settings > Payments** (Ayarlar > Ödənişlər) bölməsinə gedin və Active Payment Gateways (Aktiv Ödəniş Portal Ləğvləri) hissəsində **Stripe** və ya **Stripe Checkout** yanındakı düyməni işarələyin.
 
 ![Active payment gateways-da Stripe aktivləşdirmək](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Bu üsul, ödəniş zamanı kredit kartı nömrəsini daxil etmək üçün bir yer göstərəcək.
 
@@ -47,7 +47,7 @@ Stripe panellərinizdə, sağ üst küncdə **Developers** (İnkişafçılar) ü
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Настройка Webhook для Stripe
+## Настройка Webhook для Stripe {#setting-up-stripe-webhook}
 
 Stripe отправляет события вебхуков, которые уведомляют Ultimate Multisite каждый раз, когда происходит событие на **вашем аккаунте Stripe**.
 

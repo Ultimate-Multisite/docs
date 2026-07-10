@@ -3,18 +3,18 @@ title: Closte ਏਕੀਕਰਨ
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+# Closte ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#closte-integration}
 
-## ਸੰਖੇਪ ਜਾਣਕਾਰੀ
+## ਸੰਖੇਪ ਜਾਣਕਾਰੀ {#overview}
 Closte ਇੱਕ managed WordPress hosting platform ਹੈ ਜੋ Google Cloud infrastructure ਉੱਤੇ ਬਣਾਇਆ ਗਿਆ ਹੈ। ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ Ultimate Multisite ਅਤੇ Closte ਵਿਚਕਾਰ ਆਟੋਮੈਟਿਕ domain syncing ਅਤੇ SSL certificate management ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਂਦਾ ਹੈ।
 
-## ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ
+## ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ {#features}
 - ਆਟੋਮੈਟਿਕ domain syncing
 - SSL certificate management
 - Wildcard domain ਸਪੋਰਟ
 - ਜੇ ਤੁਸੀਂ Closte ਉੱਤੇ ਚੱਲ ਰਹੇ ਹੋ ਤਾਂ ਕੋਈ ਸੈੱਟਅੱਪ ਦੀ ਲੋੜ ਨਹੀਂ
 
-## ਲੋੜਾਂ
+## ਲੋੜਾਂ {#requirements}
 ਜੇ ਤੁਸੀਂ Closte ਵਰਤ ਰਹੇ ਹੋ ਤਾਂ ਹੇਠਾਂ ਦਿੱਤਾ constant ਤੁਹਾਡੀ `wp-config.php` ਫਾਈਲ ਵਿੱਚ ਪਰਿਭਾਸ਼ਿਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ਜੇ ਤੁਸੀਂ Closte ਉੱਤੇ hosting ਕਰ ਰਹੇ ਹੋ ਤਾਂ ਇਹ constant ਆਮ ਤੌਰ 'ਤੇ ਪਹਿਲਾਂ ਹੀ ਪਰਿਭਾਸ਼ਿਤ ਹੁੰਦਾ ਹੈ।
 
-## ਸੈੱਟਅੱਪ ਹਦਾਇਤਾਂ
+## ਸੈੱਟਅੱਪ ਹਦਾਇਤਾਂ {#setup-instructions}
 
-### 1. ਆਪਣੀ Closte API Key ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ
+### 1. ਆਪਣੀ Closte API Key ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ {#1-verify-your-closte-api-key}
 
 ਜੇ ਤੁਸੀਂ Closte ਉੱਤੇ hosting ਕਰ ਰਹੇ ਹੋ, ਤਾਂ `CLOSTE_CLIENT_API_KEY` constant ਤੁਹਾਡੀ `wp-config.php` ਫਾਈਲ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਪਰਿਭਾਸ਼ਿਤ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। ਤੁਸੀਂ ਆਪਣੀ `wp-config.php` ਫਾਈਲ ਚੈੱਕ ਕਰਕੇ ਇਸਦੀ ਪੁਸ਼ਟੀ ਕਰ ਸਕਦੇ ਹੋ।
 
-### 2. ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਚਾਲੂ ਕਰੋ
+### 2. ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਚਾਲੂ ਕਰੋ {#2-enable-the-integration}
 
 1. ਆਪਣੇ WordPress admin ਵਿੱਚ, Ultimate Multisite > Settings ਤੇ ਜਾਓ
 2. "Domain Mapping" ਟੈਬ ਤੇ ਜਾਓ
@@ -37,7 +37,7 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 4. Closte ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਚਾਲੂ ਕਰੋ
 5. "Save Changes" ਤੇ ਕਲਿੱਕ ਕਰੋ
 
-## ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ
+## ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ {#how-it-works}
 
 ਜਦੋਂ Ultimate Multisite ਵਿੱਚ ਕੋਈ domain ਮੈਪ ਕੀਤਾ ਜਾਂਦਾ ਹੈ:
 
@@ -47,26 +47,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ Ultimate Multisite ਵਿੱਚ DNS check interval ਸੈਟਿੰਗ ਨਾਲ ਵੀ ਕੰਮ ਕਰਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਤੁਸੀਂ ਇਹ ਸੈੱਟ ਕਰ ਸਕਦੇ ਹੋ ਕਿ ਸਿਸਟਮ DNS propagation ਅਤੇ SSL certificate issuance ਲਈ ਕਿੰਨੀ ਵਾਰ ਚੈੱਕ ਕਰੇ।
 
-## Domain Record ਬਣਾਉਣਾ
+## Domain Record ਬਣਾਉਣਾ {#domain-record-creation}
 
 ਇਹ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਯਕੀਨੀ ਬਣਾਉਂਦੀ ਹੈ ਕਿ ਜਦੋਂ ਕੋਈ site ਬਣਾਈ ਜਾਂ duplicate ਕੀਤੀ ਜਾਂਦੀ ਹੈ, ਤਾਂ domain record ਆਟੋਮੈਟਿਕ ਬਣ ਜਾਂਦਾ ਹੈ। ਇਹ Closte ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਲਈ ਖਾਸ ਤੌਰ 'ਤੇ ਮਹੱਤਵਪੂਰਨ ਹੈ, ਕਿਉਂਕਿ domain record ਬਣਾਉਣਾ Closte API ਨੂੰ domain ਅਤੇ SSL certificate ਬਣਾਉਣ ਲਈ ਟ੍ਰਿਗਰ ਕਰਦਾ ਹੈ।
 
-## ਸਮੱਸਿਆ ਨਿਵਾਰਨ
+## ਸਮੱਸਿਆ ਨਿਵਾਰਨ {#troubleshooting}
 
-### API ਕਨੈਕਸ਼ਨ ਸਮੱਸਿਆਵਾਂ
+### API ਕਨੈਕਸ਼ਨ ਸਮੱਸਿਆਵਾਂ {#api-connection-issues}
 - ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਹਾਡੀ Closte API key ਸਹੀ ਹੈ
 - ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ Closte account ਕੋਲ ਲੋੜੀਂਦੀਆਂ permissions ਹਨ
 
-### SSL Certificate ਸਮੱਸਿਆਵਾਂ
+### SSL Certificate ਸਮੱਸਿਆਵਾਂ {#ssl-certificate-issues}
 - Closte ਨੂੰ SSL certificates ਜਾਰੀ ਕਰਨ ਵਿੱਚ ਕੁਝ ਸਮਾਂ ਲੱਗ ਸਕਦਾ ਹੈ (ਆਮ ਤੌਰ 'ਤੇ 5-10 ਮਿੰਟ)
 - ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ ਤੁਹਾਡੇ domains ਸਹੀ ਤਰ੍ਹਾਂ ਤੁਹਾਡੇ Closte server ਦੇ IP address ਵੱਲ ਪੁਆਇੰਟ ਕਰ ਰਹੇ ਹਨ
 - ਆਪਣੇ domain ਲਈ DNS records ਚੈੱਕ ਕਰੋ ਕਿ ਉਹ ਸਹੀ ਤਰ੍ਹਾਂ ਸੈੱਟ ਹਨ
 
-### Domain ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ
+### Domain ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ {#domain-not-added}
 - ਕਿਸੇ ਵੀ error messages ਲਈ Ultimate Multisite logs ਚੈੱਕ ਕਰੋ
 - ਪੁਸ਼ਟੀ ਕਰੋ ਕਿ domain ਪਹਿਲਾਂ ਤੋਂ Closte ਵਿੱਚ ਨਹੀਂ ਜੋੜਿਆ ਗਿਆ
 - ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ domain ਦੇ DNS records ਸਹੀ ਤਰ੍ਹਾਂ ਸੈੱਟ ਹਨ
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 - ਜੇ SSL certificates ਜਾਰੀ ਹੋਣ ਵਿੱਚ ਬਹੁਤ ਸਮਾਂ ਲੱਗ ਰਿਹਾ ਹੈ, ਤਾਂ ਤੁਸੀਂ Domain Mapping ਸੈਟਿੰਗਾਂ ਵਿੱਚ DNS check interval ਬਦਲ ਸਕਦੇ ਹੋ
 - ਡਿਫਾਲਟ interval 300 ਸਕਿੰਟ (5 ਮਿੰਟ) ਹੈ, ਪਰ ਤੁਸੀਂ testing ਦੌਰਾਨ ਤੇਜ਼ ਚੈਕਿੰਗ ਲਈ ਇਸਨੂੰ 10 ਸਕਿੰਟ ਤੱਕ ਘੱਟ ਕਰ ਸਕਦੇ ਹੋ

@@ -3,18 +3,18 @@ title: Boitsoetso bohlokoa la Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Mabotse a Tlhaloso ea Theme Builder: Ho Hlahloba le Ho Baola Block Themes
+# Mabotse a Tlhaloso ea Theme Builder: Ho Hlahloba le Ho Baola Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 e ntsa litlhahlo tse fapaneng tse duo tse ka ba le ho hlahloba le ho baola block themes tse fapaneng tsela tseo a tšobetso ea chat interface.
 
-## Leano (Overview)
+## Leano (Overview) {#overview}
 
 Litlhahlo tsa **scaffold-block-theme** le **activate-theme** li ba le ho etsa agents:
 - Ho hlahloba block themes tse fetang, tse ka ba le ho ba le ka setso sa hau
 - Ho baola theme ka site ea hau nang le ho ba le ka tsela e nngoe e nngoe (without manual intervention)
 - Ho etsa litšomo tsa haholo ho ba le ka hloekileng ka diketso tse di hlahang
 
-## Ho Hlahloba Block Theme (Scaffold Block Theme)
+## Ho Hlahloba Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 Litlhahlo **scaffold-block-theme** li hlahloba block theme e ntlha ea WordPress e ntle, e na le setso sa theme se fetang, se na le:
 
@@ -23,7 +23,7 @@ Litlhahlo **scaffold-block-theme** li hlahloba block theme e ntlha ea WordPress 
 - Styles le variations tsa block tse fapaneng
 - Metadata ea theme le diketso tsa ho ba le ka hlahloba (support declarations)
 
-### Ho Baola (How to Invoke)
+### Ho Baola (How to Invoke) {#how-to-invoke}
 
 Ka chat ea hau le Superdav AI Agent, u ka hohola ho hlahloba theme:
 

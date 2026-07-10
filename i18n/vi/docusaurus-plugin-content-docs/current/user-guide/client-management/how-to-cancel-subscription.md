@@ -3,7 +3,7 @@ title: Cách Hủy Đăng Ký
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Làm thế nào để hủy gói đăng ký?
+# Làm thế nào để hủy gói đăng ký? {#how-can-i-cancel-my-subscription}
 
 Nếu bạn có giấy phép Ultimate Multisite, bạn có thể hủy gia hạn bất cứ lúc nào. Chỉ cần làm theo các bước dưới đây:
 

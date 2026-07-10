@@ -3,11 +3,11 @@ title: Kenapa Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kenapa Ultimate Multisite
+# Kenapa Ultimate Multisite {#why-ultimate-multisite}
 
 Yen sampeyan maca artikel iki, mungkin sampeyan wis krungu yen plugin kita bisa dadi solusi kanggo ngwujudkan ide bisnis sampeyan. Kita ngarep-arep sampeyan bakal nemokake jawaban sing dibutuhake sadurunge akhir tulisan iki.
 
-## Apa kuwi Ultimate Multisite?
+## Apa kuwi Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite iku plugin WordPress Multisite sing menehi sampeyan kesempatan kanggo nawakake layanan WaaS (Website as a Service) marang pelanggan. Kanthi plugin kita, sampeyan bisa duwe tingkatan langganan sing beda lan pelanggan bisa mbayar biaya rutin supaya entuk situs sing di-host ing jaringan Multisite sampeyan.
 
@@ -15,7 +15,7 @@ Ultimate Multisite menehi sampeyan kesempatan kanggo nampa pembayaran nganggo be
 
 Lan iki mung wiwitan amarga sampeyan bisa nambah fungsinya nganggo add-ons lan webhook.
 
-## Fitur liyane
+## Fitur liyane {#other-features}
 
 Ultimate Multisite uga nawakake:
 
@@ -33,11 +33,11 @@ Lan akeh maneh sing luwih canggih:
 
 * Search and Replace API: Sampeyan uga bisa nambahi anotasi ing template situs kanthi placeholder kaya {{site_name}} lan nggunakake Search and Replace API kanggo ngisi otomatis placeholder kasebut nganggo informasi sing diwenehake dening pelanggan sawise daftar, otomatis.
 
-## Kasus pemakaian (Use cases)
+## Kasus pemakaian (Use cases) {#use-cases}
 
 Saiki wektune ndelok sawetara kasus pemakaian possible kanggo Ultimate Multisite.
 
-### Kasus 1: Agen (Agency)
+### Kasus 1: Agen (Agency) {#case-1-an-agency}
 
 Biasane keahlian inti agen yaiku desain situs web kanthi aspek kaya hosting utawa marketing sing diwenehake minangka layanan tambahan.
 
@@ -47,7 +47,7 @@ Kontrol sing ketat marang plugin lan tema tetep dipertahankan adhedhasar produk 
 
 Agensi bakal nemokake ketenangan pikiran karo Ultimate Multisite sing bisa nggawe apa sing paling apik saka kowe - desain website sing luar biasa.
 
-### Kasus 2: Penyedia Niche (Spesialis)
+### Kasus 2: Penyedia Niche (Spesialis) {#case-2-niche-provider}
 
 Ana paribasan lawas sing ngandhani, “Laku siji bab lan becik.” Kanggo akeh spesialis, iki tegese nggawe produk utawa layanan muter saka ide pokok sing siji.
 
@@ -57,7 +57,7 @@ Salah siji fitur inovatif saka Ultimate Multisite yaiku template site. Iki teges
 
 Kanggo penyedia website lan layanan niche, iki menehi keuntungan ora ana tandingane kanggo bisa langsung nggawe website sing wis siap dioperasikake karo plugin lan desain khusus. Pelanggan mung perlu menehi input paling minimal kanggo ngrampungake layanan kuwi.
 
-### Kasus 3: Web Hosting WordPress
+### Kasus 3: Web Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Ana akeh cara kanggo ng-host website WordPress, nanging jarang banget gampang kaya nawakake ruang web marang pelanggan kanthi versi WordPress sing wis diinstal dhisik. Iki amarga sawetara keputusan lan pertimbangan kudu digabungake kanggo menehi layanan sing bermakna.
 

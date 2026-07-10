@@ -3,17 +3,17 @@ title: Eksportado kaj Importado
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksportado kaj Importado
+# Eksportado kaj Importado {#export--import}
 
 Ultimate Multisite 2.9.0 aĉetas un unue-sita **Eksportado kaj Importado** instrumenton sub **Tools > Export & Import**. Uzdu ĝin, kiam vi bezonas paketigi un WordPress-siton kiel ZIP-fajlo, restituon ti ZIP, aŭ movi siton inter kompatibilajn Ultimate Multisite kaj unue-sita WordPress instaliloj.
 
-## Reqdaj permesoj
+## Reqdaj permesoj {#required-permissions}
 
 Vi devas logi sin kiel administrator kiu povas akcesi la menun **Tools** de WordPress sur la sitio, kiun vi eksportas aŭ importas. Sur multisito-reteco uzu konton de retoadministrator pri eksportado aŭ importado de subsitiloj el Ultimate Multisite instrumentoj nivel reto pri eksportado aŭ importado.
 
 Eksport ZIP-teleŝado estas servita per autentikebla teleŝadendpointo, tiel mantetu la admin sesion aktivan ĝis ke la teleŝado finas kaj ne partofu publikajn teleŝadURL-ojn.
 
-## Eksportado de sitio al ZIP
+## Eksportado de sitio al ZIP {#exporting-a-site-to-a-zip}
 
 1. En la WordPress admin por la sitio, kiun vi volas kopii, diru **Tools > Export & Import**.
 2. Ĉiuj la eksportarejon kaj elektu la sito, kiun vi volas paketigi.
@@ -23,7 +23,7 @@ Eksport ZIP-teleŝado estas servita per autentikebla teleŝadendpointo, tiel man
 
 Maltu la ZIP sekurega loko. Ĝi povas konteni la encondukan elementon de la sito, konfiguracion, media fajlojn kaj elektitaj kodajn asetojn.
 
-## Kion inkluzas la eksporto
+## Kion inkluzas la eksporto {#what-the-export-includes}
 
 Un eksportita ZIP-fajlo povas inkluzi:
 
@@ -34,7 +34,7 @@ Un eksportita ZIP-fajlo povas inkluzi:
 
 La exakta dimensa del ZIP dependa de la cantidad de medios, los plugins y temas seleccionados, y del tamaño de las tablas de la base de datos del sitio.
 
-## Importar un sitio desde un ZIP
+## Importar un sitio desde un ZIP {#importing-a-site-from-a-zip}
 
 1. Vaya a **Tools > Export & Import** en el sitio WordPress de destino.
 2. Abra el área de importación y suba el ZIP creado por la herramienta Export & Import.
@@ -46,7 +46,7 @@ La exakta dimensa del ZIP dependa de la cantidad de medios, los plugins y temas 
 
 En una instalación de WordPress de un solo sitio, importar un ZIP reemplaza el sitio actual con el sitio importado. Cree una copia de seguridad completa del sitio objetivo antes de comenzar, y evite iniciar múltiples importaciones para el mismo sitio al mismo tiempo.
 
-## Limitaciones y notas de compatibilidad
+## Limitaciones y notas de compatibilidad {#limitations-and-compatibility-notes}
 
 - Fritaj de altaj upload directories aŭ media bibliotekoj povas produkti grandajn ZIP-fajlajn. Konfirmijn PHP upload limitojn, ekzekucilimitojn, diskspacajn, memorigojn kaj servertimeout-parametrojn antaŭ eldonado aŭ importado de grandaj sitaĵoj.
 - Fritaj media bibliotekoj bezonas moviĝi dum periodaj maltrovitaj manutenco-okazioj.

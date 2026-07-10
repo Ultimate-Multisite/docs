@@ -3,25 +3,25 @@ title: قالب افزونه
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# قالب افزونه (Addon Template)
+# قالب افزونه (Addon Template) {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## پیش‌نیازها (Requirements)
+## پیش‌نیازها (Requirements) {#requirements}
 
 - WordPress نسخه ۵.۳ یا بالاتر
 - PHP نسخه ۷.۴ یا بالاتر
 - افزونه Multisite Ultimate (فعال)
 
-## نصب (Installation)
+## نصب (Installation) {#installation}
 
 1. فایل‌های افزونه را در مسیر `/wp-content/plugins/` آپلود کنید
 2. افزونه را از طریق منوی 'Plugins' در وردپرس فعال کنید
 3. تنظیمات افزونه را در بخش مدیریت شبکه (network admin) پیکربندی کنید
 
-## توسعه (Development)
+## توسعه (Development) {#development}
 
-### راه‌اندازی (Setup)
+### راه‌اندازی (Setup) {#setup}
 
 ```bash
 # نصب وابستگی‌ها
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### ساختار پروژه (Project Structure)
+### ساختار پروژه (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # قوانین مدرن‌سازی کد
 ```
 
-### تست‌گیری (Testing)
+### تست‌گیری (Testing) {#testing}
 
 این افزونه یک چارچوب تست جامع شامل می‌شود:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **پوشش تست (Test Coverage)**: برای ردیابی پوشش کد پیکربندی شده است
 - **تست‌گیری چندسایتی (Multisite Testing)**: تست‌ها در محیط چندسایتی اجرا می‌شوند
 
-### استانداردهای کد (Code Standards)
+### استانداردهای کد (Code Standards) {#code-standards}
 
 - **استانداردهای کدنویسی وردپرس**: با استفاده از PHPCS اعمال می‌شود
 - **سازگاری با PHP ۷.۴+**: ویژگی‌های مدرن PHP پشتیبانی می‌شوند
 - **تحلیل استاتیک (Static Analysis)**: یکپارچه‌سازی PHPStan برای بررسی نوع داده
 - **مدرن‌سازی کد**: قوانین Rector برای ارتقاء PHP
 
-### سیستم ساخت (Build System)
+### سیستم ساخت (Build System) {#build-system}
 
 - **پردازش دارایی (Asset Processing)**: کوچک‌سازی (Minification) برای فایل‌های CSS/JS
 - **ترجمه**: تولید فایل POT
 - **بسته‌بندی (Packaging)**: ایجاد آرشیو برای توزیع
 - **حالت توسعه (Development Mode)**: دارایی‌های کوچک‌نشده برای اشکال‌زدایی (debugging)
 
-## پیکربندی (Configuration)
+## پیکربندی (Configuration) {#configuration}
 
 این افزونه از گزینه‌های پیکربندی مختلفی پشتیبانی می‌کند که از طریق رابط مدیریت شبکه قابل دسترسی هستند.
 
-## هوک‌ها و فیلترها (Hooks and Filters)
+## هوک‌ها و فیلترها (Hooks and Filters) {#hooks-and-filters}
 
-### اکشن‌ها (Actions)
+### اکشن‌ها (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - پس از مقداردهی اولیه افزونه اجرا می‌شود
 - `ultimate-multisite-addon-template_loaded` - پس از بارگذاری تمام فایل‌های افزونه اجرا می‌شود
 
-### فیلترها (Filters)
+### فیلترها (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - تغییر تنظیمات افزونه
 - `ultimate-multisite-addon-template_enabled` - بازنویسی وضعیت فعال/غیرفعال بودن افزونه
 
-## مجوز (License)
+## مجوز (License) {#license}
 
 این افزونه تحت مجوز GPL v3 یا جدیدتر منتشر شده است.
 
-## پشتیبانی (Support)
+## پشتیبانی (Support) {#support}
 
 برای پشتیبانی و مستندات، از [MultisiteUltimate.com](https://multisiteultimate.com) دیدن فرمایید.
-## تاریخچه تغییرات (Changelog)
+## تاریخچه تغییرات (Changelog) {#changelog}
 
 - نسخه ۱.۰.۱ (۲۰۲۵-۰۹-۲۸): تغییر پیشوند به ultimate-multisite؛ به‌روزرسانی دامنه متن؛ افزایش نسخه.
 

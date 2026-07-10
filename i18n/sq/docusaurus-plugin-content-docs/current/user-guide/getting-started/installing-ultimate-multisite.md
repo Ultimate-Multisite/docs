@@ -3,13 +3,13 @@ title: Instalimi i Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalimi i Ultimate Multisite
+# Instalimi i Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Ky udhëzues presupozon se tashmë keni instaluar dhe konfiguruar WordPress Multisite. Për të mësuar si, shikoni [ky udhëzues](https://www.wpbeginner.com/glossary/multisite/) nga WP Beginner.
 :::
 
-## Instalimi i Plugin-it
+## Instalimi i Plugin-it {#installing-the-plugin}
 
 Ultimate Multisite është e disponueshme falas në [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Pas aktivimit, do të ridrejtoheni automatikisht te Asistenti i Konfigurimit.
 
 ![Plugin i aktivizuar dhe i ridrejtuar në asistent](/img/installation/plugin-activated.png)
 
-## Asistenti i Konfigurimit
+## Asistenti i Konfigurimit {#setup-wizard}
 
 Asistenti i Konfigurimit do t'ju udhëheqë përmes konfigurimit të Ultimate Multisite në rreth 10 minuta.
 
-### Mirëseardhje
+### Mirëseardhje {#welcome}
 
 Klikoni **Fillo** për të filluar.
 
 ![Ekran mirëpritës i Asistentit të Konfigurimit](/img/installation/wizard-welcome.png)
 
-### Kontrollet Para Instalimit
+### Kontrollet Para Instalimit {#pre-install-checks}
 
 Ky hap kontrollon informacionin e sistemit tuaj dhe instalimin e WordPress për të siguruar që ai plotëson kërkesat e Ultimate Multisite. Nëse gjithçka duket mirë, klikoni **Shko te Hapi i Ardhshëm**.
 
@@ -51,31 +51,31 @@ Nëse Ultimate Multisite është instaluar, por **akoma nuk është aktivizuar n
 Klikimi në **Aktivo në Rrjet** aktivizon plugin-in në gjithë rrjetin tuaj multisite automatikisht. Pasi të aktivizohet, asistenti vazhdon normalisht te hapi i instalimit. Nuk keni nevojë të largoheni nga asistenti për të zgjidhur gjendjen e aktivimit.
 :::
 
-### Instalimi
+### Instalimi {#installation}
 
 Instaluesi do të krijojë tabelat e nevojshme të bazës së të dhënave dhe do të instaloje ​​skedarin `sunrise.php` që Ultimate Multisite ka nevojë për të funksionuar. Klikoni **Instalo** për të vazhduar.
 
 ![Hapi i instalimit duke treguar tabelat e bazës së të dhënave dhe skedarin sunrise.php](/img/installation/wizard-installation.png)
 
-### Kompania Juaj
+### Kompania Juaj {#your-company}
 
 Plotësoni informacionin e kompanisë suaj dhe vendosni valutën tuaj parazgjedhëse. Ky informacion do të përdoret në gjithë platformën tuaj WaaS. Klikoni **Vazhdo** kur të mbarojë.
 
 ![Hapi i konfigurimit "Kompania Juaj"](/img/installation/wizard-your-company.png)
 
-### Përmbajtja Parazgjedhëse
+### Përmbajtja Parazgjedhëse {#default-content}
 
 Ky hap ju lejon të instaloni shabllone, produkte dhe përmbajtje tjetër fillestare të paracaktuara. Kjo është një mënyrë e mirë për t'u familiarizuar me veçoritë e Ultimate Multisite. Klikoni **Instalo** për të shtuar përmbajtjen parazgjedhëse, ose hidheni këtë hap nëse preferoni të filloni nga zero.
 
 ![Hapi i instalimit të përmbajtjes parazgjedhëse](/img/installation/wizard-default-content.png)
 
-### Plugin-ët e Rekomanduara
+### Plugin-ët e Rekomanduara {#recommended-plugins}
 
 Instaloni opsionalisht plugin-ët bashkëpunues të rekomanduar. Klikoni **Instalo** për t'i shtuar ose hidheni për të vazhduar.
 
 ![Hapi i plugin-ëve të rekomanduar](/img/installation/wizard-recommended-plugins.png)
 
-### Gatshëm!
+### Gatshëm! {#ready}
 
 Ka mbaruar! Instalimi juaj i Ultimate Multisite është përfunduar. Tani mund të filloni të ndërtoni platformën tuaj "Website as a Service" nga **Dashboardi i Administratorit të Rrjetit**.
 

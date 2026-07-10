@@ -1,105 +1,127 @@
 ---
 title: Konfiguracja i ustawienia dostawcy
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Sprzedaż Domen: Konfiguracja i Ustawienia Dostawców
+# Domain Seller: konfiguracja i konfiguracja dostawcy {#domain-seller-setup-and-provider-configuration}
 
-Dodatek Domain Seller zawiera kreatywny wizard konfiguracji, który krok po kroku przeprowadzi Cię przez wszystkie wymagane etapy. Ta strona opisuje działanie tego wirtualnego przewodnika oraz sposób konfiguracji lub ponownej konfiguracji dostawców po jego zakończeniu.
+Dodatek Domain Seller zawiera prowadzony kreator konfiguracji, który przeprowadza Cię przez każdy wymagany krok. Ta strona omawia przebieg kreatora oraz sposób późniejszej konfiguracji lub ponownej konfiguracji dostawców.
 
-## Wymagania
+## Wymagania {#requirements}
 
-- **Ultimate Multisite** w wersji v2.4.12 lub nowszej, aktywowany na poziomie sieci (network-activated)
+- **Multisite Ultimate** v2.4.12 lub nowszy, aktywowany w sieci
 - **PHP** 7.4+
-- Poświadczenia API dla co najmniej jednego obsługiwanego rejestratora
+- Dane dostępowe API dla co najmniej jednego obsługiwanego rejestratora
 
-## Wizard pierwszego uruchomienia
+## Kreator pierwszej konfiguracji {#first-run-setup-wizard}
 
-Wizard konfiguracji uruchamia się automatycznie za pierwszym razem, gdy aktywujesz plugin na poziomie sieci. Jest również dostępny w dowolnym momencie w sekcji **Network Admin › Ultimate Multisite › Domain Seller Setup**.
+Kreator konfiguracji uruchamia się automatycznie przy pierwszej aktywacji pluginu w sieci. Jest również dostępny w dowolnym momencie z poziomu **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Krok 1 — Wybór dostawcy
+### Krok 1 — Wybierz dostawcę {#step-1--choose-a-provider}
 
-Wybierz rejestrator, z którym chcesz się połączyć. Obsługiwane opcje:
+Wybierz rejestratora, którego chcesz połączyć. Obsługiwane opcje:
 
-| Provider | DNS management | WHOIS privacy |
+| Dostawca | Zarządzanie DNS | Prywatność WHOIS |
 |---|---|---|
 | OpenSRS | Tak | Tak |
-| Namecheap | Nie | Tak (WhoisGuard, darmowy) |
+| Namecheap | Nie | Tak (WhoisGuard, bezpłatnie) |
+| HostAfrica | Tak | Tak (ochrona ID) |
+| Openprovider | Tak | Tak |
+| Hostinger | Przez podstawowe mapowanie domen Hostinger dla hostowanych domen | Tak |
 | GoDaddy | Nie | Nie |
 | ResellerClub | Tak | Nie |
 | NameSilo | Nie | Nie |
 | Enom | Tak | Nie |
 
-### Krok 2 — Podanie poświadczeń
+### Krok 2 — Wprowadź dane dostępowe {#step-2--enter-credentials}
 
-Każdy dostawca wymaga różnych pól do podania poświadczeń:
+Każdy dostawca ma inne pola danych dostępowych:
 
-**OpenSRS** — Nazwa użytkownika i klucz prywatny (z OpenSRS Reseller Control Panel)
+**OpenSRS** — nazwa użytkownika i klucz prywatny (z OpenSRS Reseller Control Panel)
 
-**Namecheap** — Nazwa użytkownika i klucz API (z Account › Tools › API Access)
+**Namecheap** — nazwa użytkownika i klucz API (z Account › Tools › API Access)
 
-**GoDaddy** — Klucz API i sekret (z developer.godaddy.com)
+**HostAfrica** — endpoint Domains Reseller API i dane dostępowe z modułu resellerskiego HostAfrica. Obecnie nie jest udokumentowany osobny endpoint sandbox; przed uruchomieniem rejestracji na żywo testuj za pomocą bezpiecznych kontroli tylko do odczytu.
 
-**ResellerClub** — ID Resellera i klucz API (z panelu kontrolnego ResellerClub)
+**Openprovider** — nazwa użytkownika i hasło z włączonym dostępem API. Opcjonalny tryb sandbox używa Openprovider sandbox API, a opcjonalny domyślny identyfikator klienta może być ponownie używany do rejestracji.
 
-**NameSilo** — Klucz API (z namesilo.com › Account › API Manager)
+**Hostinger** — współdzielony token Hostinger hPanel API z podstawowej integracji Hostinger. Ten sam token zasila podstawowe mapowanie domen i operacje rejestracji Domain Seller.
 
-**Enom** — ID konta i token API
+**GoDaddy** — klucz API i sekret (z developer.godaddy.com)
 
-Sprawdź **Sandbox mode**, jeśli jest dostępny, aby przetestować połączenie w środowisku testowym dostawcy, zanim przejdziesz do trybu produkcyjnego.
+**ResellerClub** — ID resellera i klucz API (z panelu sterowania ResellerClub)
 
-### Krok 3 — Test połączenia
+**NameSilo** — klucz API (z namesilo.com › Account › API Manager)
 
-Kliknij **Test Connection**. Wizard wysyła lekkie wywołanie API, aby zweryfikować poświadczenia i łączność. Napraw wszelkie problemy z poświadczeniami, zanim przejdziesz dalej.
+**Enom** — ID Account i token API
 
-### Krok 4 — Import TLDs
+Zaznacz **Tryb sandbox**, jeśli jest dostępny, aby przetestować środowisko testowe dostawcy przed uruchomieniem na żywo.
 
-Kliknij **Import TLDs**, aby pobrać wszystkie dostępne TLD i ceny hurtowe od połączonego dostawcy. Wypełnia to listę TLD używaną przez produkty domenowe. Import może trwać od 30 do 60 sekund dla dostawców z dużymi katalogami TLD.
+### Krok 3 — Przetestuj połączenie {#step-3--test-the-connection}
 
-TLD są również automatycznie synchronizowane raz dziennie za pomocą zaplanowanego zadania cron.
+Kliknij **Test Connection**. Kreator wysyła lekkie wywołanie API, aby zweryfikować dane dostępowe i łączność. Napraw wszelkie problemy z danymi dostępowymi przed kontynuowaniem.
 
-### Krok 5 — Utworzenie produktu domenowego
+### Krok 4 — Importuj TLD {#step-4--import-tlds}
 
-Wizard tworzy domyślny produkt domenowy typu "catch-all" z 10% marżą. Możesz edytować ten produkt od razu lub pominąć ten krok i utworzyć produkty ręcznie w sekcji **Ultimate Multisite › Products**.
+Kliknij **Import TLDs**, aby pobrać wszystkie dostępne TLD i ceny hurtowe od połączonego dostawcy. Wypełnia to listę TLD używaną przez produkty domenowe. Import może potrwać 30–60 sekund w przypadku dostawców z dużymi katalogami TLD.
 
-Zobacz [Domain Products and Pricing](./domain-products), aby zapoznać się z pełnym przewodnikiem konfiguracji produktów.
+TLD są również automatycznie ponownie synchronizowane raz dziennie za pomocą zaplanowanego zadania cron.
+
+### Krok 5 — Utwórz produkt domenowy {#step-5--create-a-domain-product}
+
+Kreator tworzy domyślny uniwersalny produkt domenowy z narzutem 10%. Możesz od razu edytować ten produkt albo pominąć ten krok i utworzyć produkty ręcznie w **Ultimate Multisite › Products**.
+
+Zobacz [Produkty domenowe i ceny](./domain-products), aby uzyskać pełny przewodnik konfiguracji produktu.
 
 ---
 
-## Ponowna konfiguracja dostawcy
+## Ponowna konfiguracja dostawcy {#reconfiguring-a-provider}
 
 Przejdź do **Network Admin › Ultimate Multisite › Settings › Domain Seller** (lub kliknij **Settings** na liście pluginów).
 
 Strona ustawień zawiera:
 
-- **Enable domain selling** — przełączanie całej funkcji włączony/wyłączony
-- **Default provider** — dostawca używany do wyszukiwania domen i nowych produktów
-- **Max TLDs per search** — ile TLD ma być sprawdzanych, gdy klient wyszukuje domenę; wyższe wartości pokazują więcej opcji, ale są wolniejsze
-- **Availability cache duration** — jak długo cache'ować wyniki dostępności i cen; niższe wartości są dokładniejsze, ale zwiększają wywołania API
-- **Manage domain products** — szybki link do listy produktów
-- **Configure providers** — otwiera Wizard Integracji, aby dodać lub ponownie skonfigurować dostawców
+- **Włącz sprzedaż domen** — włącza/wyłącza całą funkcję
+- **Domyślny dostawca** — dostawca używany do wyszukiwań domen i nowych produktów
+- **Maks. TLD na wyszukiwanie** — ile TLD sprawdzać, gdy klient wyszukuje; wyższe wartości pokazują więcej opcji, ale są wolniejsze
+- **Czas trwania pamięci podręcznej dostępności** — jak długo przechowywać w pamięci podręcznej wyniki dostępności i cen; niższe wartości są dokładniejsze, ale zwiększają liczbę wywołań API
+- **Zarządzaj produktami domenowymi** — szybki link do listy Products
+- **Konfiguruj dostawców** — otwiera Integration Wizard, aby dodać lub ponownie skonfigurować dostawców
 
-### Dodawanie drugiego dostawcy
+### Dodawanie drugiego dostawcy {#adding-a-second-provider}
 
-Kliknij **Configure providers** i uruchom wizard ponownie dla nowego rejestratora. Możesz skonfigurować jednocześnie wielu dostawców. Przypisz każdy produkt domenowy do konkretnego dostawcy lub zostaw go na domyślnym.
+Kliknij **Configure providers** i uruchom kreator ponownie dla nowego rejestratora. Możesz mieć wielu dostawców skonfigurowanych jednocześnie. Przypisz każdy produkt domenowy do konkretnego dostawcy albo pozostaw go przy domyślnym.
 
-### Ręczna synchronizacja TLDs
+### Ręczna synchronizacja TLD {#syncing-tlds-manually}
 
-Na stronie ustawień kliknij **Sync TLDs** obok dowolnie skonfigurowanego dostawcy, aby pobrać najnowsze ceny. Jest to przydatne, gdy dostawca aktualizuje ceny hurtowe lub dodaje nowe TLD.
+Na stronie ustawień kliknij **Sync TLDs** obok dowolnego skonfigurowanego dostawcy, aby pobrać najnowsze ceny. Jest to przydatne po tym, jak dostawca zaktualizuje ceny hurtowe lub doda nowe TLD.
 
 ---
 
-## Logi
+## Logi {#logs}
 
-Każdy dostawca zapisuje swoje własne kanały logów. Logi są widoczne w sekcji **Network Admin › Ultimate Multisite › Logs**:
+Każdy dostawca zapisuje do własnego kanału logów. Logi można przeglądać w **Network Admin › Ultimate Multisite › Logs**:
 
-| Log channel | Contents |
+| Kanał logów | Zawartość |
 |---|---|
-| `domain-seller-registration` | Wszystkie próby rejestracji (sukces i niepowodzenie) |
-| `domain-seller-renewal` | Wyniki zadań odnowienia |
+| `domain-seller-registration` | Wszystkie próby rejestracji (udane i nieudane) |
+| `domain-seller-renewal` | Wyniki zadania odnowienia |
 | `domain-seller-opensrs` | Surowa aktywność API OpenSRS |
 | `domain-seller-namecheap` | Surowa aktywność API Namecheap |
+| `domain-seller-hostafrica` | Surowa aktywność API HostAfrica |
+| `domain-seller-openprovider` | Surowa aktywność API Openprovider |
+| `domain-seller-hostinger` | Surowa aktywność API Hostinger |
 | `domain-seller-godaddy` | Surowa aktywność API GoDaddy |
 | `domain-seller-resellerclub` | Surowa aktywność API ResellerClub |
 | `domain-seller-namesilo` | Surowa aktywność API NameSilo |
 | `domain-seller-enom` | Surowa aktywność API Enom |
+
+---
+
+## Uwagi dotyczące możliwości dostawców {#provider-capability-notes}
+
+Nie każde API rejestratora udostępnia te same operacje. Dodatek pokazuje nieobsługiwane operacje za pomocą jasnych błędów widocznych dla administratora, zamiast kończyć się niepowodzeniem bez komunikatu.
+
+- **HostAfrica** obsługuje najszerszy działający workflow resellerski, w tym wyszukiwanie, synchronizację TLD/cen, rejestrację, odnowienie, transfer, aktualizacje nameserverów, rekordy DNS, kody EPP, blokadę rejestratora i ochronę ID.
+- **Openprovider** obsługuje synchronizację TLD w cenach resellerskich, rejestrację, odnowienie, transfery, aktualizacje nameserverów, strefy DNS, kody EPP, blokadę rejestratora i prywatność WHOIS. Uwierzytelnia się za pomocą krótkotrwałego bearer token, który dodatek odświeża automatycznie.
+- **Hostinger** obsługuje wyszukiwanie dostępności, rejestrację, przeglądanie portfolio, aktualizacje nameserverów, blokadę rejestratora i prywatność WHOIS przez współdzielony token API hPanel. Publiczne Domains API Hostinger nie udostępnia cen resellerskich/hurtowych, transferu przychodzącego, jawnego odnowienia ani pobierania kodu EPP; odnowienia odbywają się wyłącznie automatycznie.

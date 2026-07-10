@@ -1,0 +1,117 @@
+---
+title: Multi-Mata Uang
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Mata Uang {#multi-currency}
+
+Ultimate Multisite: Multi-Mata Uang ngamungkinkeun jaringan anjeun narima pamayaran dina sababaraha mata uang. Ieu sacara otomatis ngarobah harga maké kurs tukeur langsung atawa manual, ngamungkinkeun anjeun netepkeun harga pas per-produk pikeun mata uang naon waé, sarta ngadeteksi mata uang pikaresep unggal pangunjung ngaliwatan geolokasi — sadayana dikokolakeun tina hiji Dashboard admin.
+
+## Fitur Utama {#key-features}
+
+- **Konvérsi kurs tukeur otomatis** — harga dirobah tina mata uang dasar anjeun maké kurs anu dicokot tina panyadia pilihan anjeun
+- **Pangalihan harga per-produk** — setel harga husus dumasar mata uang dina produk naon waé pikeun ngaliwatan konvérsi otomatis
+- **Widang daptar pamilih mata uang** — ngamungkinkeun palanggan milih mata uang pikaresepna salila checkout/daptar
+- **Sababaraha panyadia kurs tukeur** — ECB, Frankfurter, Stripe, atawa kurs manual lengkep
+- **Deteksi mata uang dumasar geolokasi** — sacara otomatis milih heula mata uang anu cocog jeung nagara pangunjung
+- **Dashboard admin** — atur mata uang aktip, kurs tukeur, jeung setélan panyadia tina hiji tempat
+
+## Sarat {#requirements}
+
+- Ultimate Multisite 2.0.0 atawa leuwih luhur
+- Pamasangan WordPress Multisite
+- PHP 7.4 atawa leuwih luhur
+
+## Pamasangan {#installation}
+
+1. Unggah berkas plugin ka `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktipkeun plugin ngaliwatan layar **Plugin** dina WordPress (Aktipkeun Jaringan)
+3. Buka **Ultimate Multisite → Multi-Mata Uang** pikeun muka Dashboard admin
+4. Tambahkeun mata uang anu rék anjeun tarima sarta konfigurasikeun panyadia kurs tukeur anjeun
+
+## Konfigurasi {#configuration}
+
+### Dashboard Admin {#admin-dashboard}
+
+Dashboard admin Multi-Mata Uang (**Ultimate Multisite → Multi-Mata Uang**) nyaéta tempat puseur pikeun:
+
+- Nambahkeun, ngaktipkeun, atawa mareuman mata uang
+- Milih panyadia kurs tukeur jeung nyegerkeun kurs nalika diperlukeun
+- Marios kurs ayeuna pikeun sakabéh mata uang aktip
+- Nyetel kurs manual nalika panyadia otomatis henteu merenah
+
+### Panyadia Kurs Tukeur {#exchange-rate-providers}
+
+| Panyadia | Pedaran |
+|---|---|
+| **ECB** | European Central Bank — kurs harian gratis pikeun jaringan dumasar EUR |
+| **Frankfurter** | Open-source ECB mirror API — gratis, henteu merlukeun API key |
+| **Stripe** | Maké kurs FX langsung ti Stripe — merlukeun integrasi Stripe anu aktip |
+| **Manual** | Anjeun ngasupkeun kurs sacara langsung; henteu aya panggero API éksternal |
+
+Pilih panyadia anjeun dina **Ultimate Multisite → Multi-Mata Uang → Setélan → Panyadia Kurs Tukeur**. Kurs bisa disegerkeun sacara manual iraha waé atawa dijadwalkeun pikeun diropéa otomatis.
+
+### Pangalihan Harga Per-Produk {#per-product-pricing-overrides}
+
+Nalika konvérsi otomatis henteu cukup pasti, anjeun bisa nyetel harga pas pikeun mata uang husus dina produk naon waé:
+
+1. Buka pangropéa produk (**Ultimate Multisite → Produk → Édit**)
+2. Gulung ka bagian **Harga Mata Uang**
+3. Asupkeun harga pas pikeun unggal mata uang anu rék anjeun alihkeun
+4. Simpen produk
+
+Produk tanpa pangalihan maké harga anu geus dikonvérsi tina mata uang dasar anjeun.
+
+### Widang Daptar Pamilih Mata Uang {#currency-selector-signup-field}
+
+Widang pamilih mata uang bisa ditambahkeun kana alur daptar/checkout anjeun sangkan palanggan milih mata uang pikaresepna nalika registrasi:
+
+1. Buka **Ultimate Multisite → Multi-Mata Uang → Setélan**
+2. Aktipkeun **Témbongkeun pamilih mata uang dina daptar**
+3. Sacara opsional setel mata uang standar atawa antepkeun geolokasi nangtukeun nilai anu dipilih heula
+
+Mata uang anu dipilih disimpen jeung langganan sarta dipaké pikeun sakabéh tagihan saterusna.
+
+### Deteksi Mata Uang Dumasar Geolokasi {#geolocation-based-currency-detection}
+
+Nalika deteksi geolokasi diaktipkeun, addon memetakeun nagara pangunjung ka hiji mata uang sarta milih heula éta dina widang pamilih mata uang. Pikeun ngaktipkeun:
+
+1. Buka **Ultimate Multisite → Multi-Mata Uang → Setélan**
+2. Aktipkeun **Deteksi mata uang tina lokasi pangunjung**
+3. Petakeun nagara ka mata uang dina tabel **Pemetaan Geolokasi**
+
+Lamun teu aya pemetaan pikeun nagara pangunjung, mata uang dasar jaringan dipaké minangka cadangan.
+
+## Patarosan anu Mindeng Ditaroskeun {#frequently-asked-questions}
+
+### Naon anu kajadian lamun panyadia kurs tukeur henteu sayaga? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addon bakal balik maké kurs anu pangahirna hasil dicokot. Lamun can aya kurs anu kungsi dicokot, éta bakal balik ka kurs manual anu geus anjeun konfigurasikeun. Disarankeun pikeun ngonfigurasikeun kurs manual minangka jaring kaamanan.
+
+### Naha abdi bisa maké panyadia béda pikeun mata uang béda? {#can-i-use-different-providers-for-different-currencies}
+
+Henteu — hiji panyadia aktip dina hiji waktu pikeun sakabéh mata uang. Paké **Manual** lamun anjeun merlukeun kadali pinuh kana kurs individual.
+
+### Naha geolokasi merlukeun plugin misah? {#does-geolocation-require-a-separate-plugin}
+
+Teu merlukeun plugin geolokasi éksternal. Addon maké deteksi IP-ka-nagara bawaan WordPress. Pikeun akurasi leuwih luhur, layanan geolokasi husus bisa diintegrasikeun ngaliwatan filter hooks anu disadiakeun.
+
+### Naha pangalihan per-produk diterapkeun saméméh atawa sanggeus pajeg? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Pangalihan per-produk nyetel harga saméméh pajeg dina mata uang tujuan. Pajeg diitung di luhur harga pangalihan maké konfigurasi pajeg anjeun anu geus aya.
+
+## Changelog {#changelog}
+
+### Vérsi 1.0.0 — Dileupaskeun dina 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Anyar: Pangrojong multi-mata uang jeung konvérsi kurs tukeur otomatis
+- Anyar: Pangalihan harga per-produk pikeun harga husus dumasar mata uang anu pas
+- Anyar: Widang daptar pamilih mata uang pikeun alur checkout
+- Anyar: Panyadia kurs tukeur: ECB, Frankfurter, Stripe, jeung manual
+- Anyar: Deteksi mata uang dumasar geolokasi
+- Anyar: Dashboard admin pikeun ngatur mata uang jeung kurs tukeur
+- Perbaikan: Dashboard sok némbongkeun harga dina mata uang dasar henteu paduli mata uang anu dipilih

@@ -3,7 +3,7 @@ title: Asiakkaan tili-sivu
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Asiakkaan tili-sivu (v2)
+# Asiakkaan tili-sivu (v2) {#your-clients-account-page-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
@@ -11,7 +11,7 @@ Kun asiakkaat tilaavat suunnitelman verkostollasi, he pääsevät käsiksi verkk
 
 Tässä ohjeessa opastamme sinut asiakkaan tili-sivun läpi ja näet, mitä asiakkaat voivat nähdä ja tehdä siinä.
 
-## Tili-sivu
+## Tili-sivu {#the-account-page}
 
 Asiakkaalle pääsy tili-sivulle on mahdollista klikkaamalla **Account** (Tili) -painiketta asiakkaan hallintapaneelissa.
 
@@ -27,7 +27,7 @@ Kun asiakas klikkaa sitä, hän näkee yleiskatsauksen jäsenyydestään, laskut
 
 He voivat myös vaihtaa jäsenyyden toiseen suunnitteluun tai ostaa toisen paketin tai palvelun, jonka tarjonta sinulla on. Katsotaan katsomme kunkin osion erikseen.
 
-### Jäsenyyden yleiskatsaus:
+### Jäsenyyden yleiskatsaus: {#your-membership-overview}
 
 Ensimmäinen laatikko heti asiakkaiden verkkosivun nimen alla näyttää yleiskatsauksen nykyisestä suunnitelmastasi ja ostetuista palveluista/paketeista. Laatikossa näkyy myös jäsennumerosi, alkuperäisesti maksettu summa, kuinka paljon suunnitelma ja mahdolliset palvelut/paketit maksavat sekä kuinka monta kertaa tätä jäsenyyttä on laskutettu. He voivat myös nähdä, onko jäsenyys **Aktiivinen**, **Vanhentunut** vai **Peruutus**.
 
@@ -43,7 +43,7 @@ Nyt jos asiakkaat valitsevat paketteja tai palveluita tällä nykyisellä jäsen
 
 Huomioithan, että alennuskoodejä ei voi lisätä tälle jäsenyden muutos sivulle. Jos asiakas on käyttänyt alennuskoodia ensimmäisessä jäsenyyden ostotilanteessa, se pätee myös tähän uuteen jäsenyyteen.
 
-### Laskutusosoitteen päivittäminen:
+### Laskutusosoitteen päivittäminen: {#updating-the-billing-address}
 
 Tilin tilillä asiakkaat voivat päivittää myös laskutusosoitettaan. He tarvitsevat vain napsauttamaan **Päivitä** -painiketta _Laskutusosoitteen_ vieressä.
 
@@ -53,7 +53,7 @@ Asiakkaalle avautuu uusi ikkuna. Kaikki, mitä hänen tarvitsee tehdä, on täyt
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Sivuston mallin vaihtaminen:
+### Sivuston mallin vaihtaminen: {#changing-the-site-template}
 
 Jotta asiakkaasi voivat vaihtaa sivustomallejaan, sinun täytyy mennä **Ultimate Multisite > Asetukset > Sivu** ja ottaa käyttöön valinta **Sallita mallin vaihtaminen**.
 
@@ -81,7 +81,7 @@ Vahvistuksen kytkemisen ja **Process Switch** -painikkeen klikkaamisen jälkeen 
 
 Asiakkaat voivat myös käyttää **Reset current template** -toimintoa tästä panelista, jos he tarvitsevat sivuston palauttamiseen tällä hetkellä määriteltyyn malliin. Samoin kuin toisen mallin vaihtaminen, mallin nollaaminen voi ylittää sivuston sisällön, joten asiakkaiden tulisi vahvistaa se vain silloin, kun he ymmärtävät nollausprosessin.
 
-### Mukautettujen domeenien lisääminen:
+### Mukautettujen domeenien lisääminen: {#adding-custom-domains}
 
 Asiakkaillasi on myös mahdollisuus lisätä mukautettu domeeni tälle suunnitelmalle tilin sivulla. Jotta asiakkaat voivat käyttää mukautettuja domeeneja, siirry **Ultimate Multisite > Settings >** **Domain Mapping** -sivulle.
 
@@ -115,7 +115,7 @@ Kun klikkaat **Seuraava vaihe** (Next Step), asiakkaat voivat lisätä oman verk
 
 Kun klikkaat **Lisää verkkotunnus** (Add Domain), verkkotunnus lisätään asiakkaan tiliin. Kaikki, mitä he tarvitsevat nyt, on muuttaa tämän oman verkkotunnuksen DNS-rekisterit verkkotunnuskirjaimissaan (domain registrar).
 
-### Salasanan vaihtaminen:
+### Salasanan vaihtaminen: {#changing-password}
 
 Tilisivun hallintapaneelissa asiakkaat voivat myös vaihtaa salasanansa klikkaamalla **Vaihtoehto** (Change Password).
 
@@ -125,7 +125,7 @@ Tämä näyttää uuden ikkunan, jossa asiakkaiden täytyy syöttää nykyinen s
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Vaara-alue:
+### Vaara-alue: {#danger-zone}
 
 Meillä on myös kaksi vaihtoehtoa, jotka näkyvät **Vaara-alueen** osiossa: **Poista sivusto** ja **Poista tili**. Molemmat ovat vaara-alueella, koska nämä kaksi toimintoa eivät ole peruuttamattomia. Jos asiakkaat poistavat verkkosivustonsa tai tilinsä, he eivät voi palauttaa niitä takaisin.
 

@@ -3,9 +3,9 @@ title: Ussgabnotize
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Release Notes
+# Release Notes {#release-notes}
 
-## Versio 2.13.0 — Veröffentlicht am 2026-06-05
+## Versio 2.13.0 — Veröffentlicht am 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Neu: Es isch jetzt sovereign-tenant support für Customer Account, Checkout, Billing, Site, Invoice, Template Switching und Domain Mapping Flows hinzugefügt, damit Tenant Networks Kunde zrugg zum Hauptsite für verwalteti Aktionen leite chönd.
 - Neu: Renewal-Credential Checks für wiederkehndi Mitgliedschafte sind hinzugefügt, sodass Gateways d'Auto-Renewal deaktivierä chönd, wenn en gspeicherte Billing Agreement, Subscription oder Vault Token fehlt.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Edge Cases wie Mitgliedschaftsrenewals, Ablaufanzeige und Zahlungssammlung vermeided jetz sofortigi Abläufe, Abstürze oder verpassti erforderlichi Zahligä.
 - Verbessert: WordPress Kompatibilität isch bis zu 7.0 getestet, Produktions Vue Assets wärded us npm Quelle neu gebaut, und Cypress End-to-End Coverage testet jetzt meh Checkout-, Setup-, SSO- und Gateway Flows.
 
-## Versio 2.12.0 — Veröffentlicht am 2026-05-15
+## Versio 2.12.0 — Veröffentlicht am 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Neu: Hostinger (hPanel) als unterstützte Hosting-Provider mit Domain Mapping Integration hinzugefügt
 - Neu: Site Exporter behandelt jetzt Network Import Bundles, was d'Wiederherstellung vo de ganze Site über s'Netzwerk vereifacht
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: De Site Exporter CLI behält jetz d'korrekte Standard-Netzwerk-Site-Auswahl
 - Verbessert: De wp-cli Bundel us em Plugin-Paket entfernt, was de Plugin-Grössi verringert
 
-## Versio 2.11.0 — Veröffentlicht am 2026-05-11
+## Versio 2.11.0 — Veröffentlicht am 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Neu: Site Exports bündle jetz en selber startende `index.php`, sodass mer s'ZIP uf eme frische Host installiere chönne, ohni es separates Plugin z'installiere
 - Neu: Network Export erlaubt Admins, alli Untersites us eme einzelne Archiv vo de Site Export Admin Page z'exportiere
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Neu: De Checkout Form Editor warnt, wenn mer es Produkt hinzufügt ohni dass es en erforderliche Feld konfiguriert isch
 - Neu: D'Import/Export Einstellungen Tab beschribt jetz klar sini Reichweite und verlinkt direkt zur Site Export Tool
 
-## Versio 2.10.0 — Veröffentlicht am 2026-05-05
+## Versio 2.10.0 — Veröffentlicht am 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Neu: PayPal geführte Setup Wizard für manuelli Credential-Eingabe mit OAuth Flag Gate für nahtlose Gateway-Konfiguration.
 - Neu: Template switch Kundepanel neu gestaltet mit der aktuellen-template Karte, persistent Grid und dem Button **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Gefilterte SSO Pfade werden über alle Login-Flows hinweg respektiert.
 - Fix: Leere Seitenidentitätsoptionen bleiben beim Speichern erhalten.
 
-## Version 2.9.0 — Veröffentlicht am 2026-04-30
+## Version 2.9.0 — Veröffentlicht am 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Neu: Export und Import für Einzelseiten hinzugefügt unter **Tools > Export & Import**.
 - Fix: Export-ZIP-Dateien werden jetzt über einen authentifizierten Download-Endpunkt bereitgestellt.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tour IDs wurden in den Benutzereinstellungen auf Unterstriche normalisiert.
 - Verbessert: `ZipArchive` wird jetzt anstelle von Alchemy/Zippy für bessere Kompatibilität verwendet.
 
-## Version 2.8.0 — Veröffentlicht am 2026-04-29
+## Version 2.8.0 — Veröffentlicht am 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Neu: Jumper toggle aktiviert hinzugefügt zur UI der Anderi Optionseinstellungen.
 - Neu: Statusspalte hinzugefügt zur Tabelle der Checkout-Formulare.

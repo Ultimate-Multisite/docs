@@ -4,19 +4,19 @@ title: Filter - wu_mt_syncable_user_meta_keys
 sidebar_label: wu_mt_syncable_user_meta_keys
 _i18n_hash: beda2117dba01503b8fec2fd476ec2da
 ---
-# Filter: wu_mt_syncable_user_meta_keys
+# Filter: wu_mt_syncable_user_meta_keys {#filter-wumtsyncableusermetakeys}
 
 Uzaq nodlara (remote nodes) sinxronlaşdırılmalı olan istifadəçi meta açarlarının (user meta keys) siyahısını filtrləyir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $syncable_keys | `array` | Sinxronlaşdırılacaq standart meta açarlar. |
 
-### Versiya
+### Versiya {#since}
 
 - 1.0.0
-### Mənbə
+### Mənbə {#source}
 
 [inc/users/class-network-user-sync.php](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/users/class-network-user-sync.php#L296) yerində, 296-cı sətirdə təyin edilmişdir.

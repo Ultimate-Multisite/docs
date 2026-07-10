@@ -4,11 +4,11 @@ title: ফিল্টার - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 প্লাগইন ডেভেলপারদের ফলাফল সংজ্ঞায়িত করার জন্য নতুন চেক যোগ করার অনুমতি দেয়।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | নাম | ধরন | বিবরণ |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | বর্তমান ডোমেইন ইনস্ট্যান্স। |
 | $domains_and_ips | `array` | ডিএনএস লুকেআপে পাওয়া ডোমেইন এবং আইপিগুলির তালিকা। |
 
-### শুরু
+### শুরু {#since}
 
 - 2.0.4
-### উৎস
+### উৎস {#source}
 
 [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) এর লাইন ৪৫৫ এ সংজ্ঞায়িত।
 
-## ফেরত দেয়
+## ফেরত দেয় {#returns}
 ডিএনএস সঠিকভাবে সেটআপ করা হয়েছে কিনা।

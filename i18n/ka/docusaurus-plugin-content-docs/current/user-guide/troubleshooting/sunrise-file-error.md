@@ -3,7 +3,7 @@ title: Sunrise ფაილის შეცდომა
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ფაილის ინსტალირების შეცდომა
+# Sunrise ფაილის ინსტალირების შეცდომა {#error-installing-the-sunrise-file}
 
 `sunrise.php` ფაილი არის სპეციალური ფაილი, რომელსაც WordPress იძებს თავისი დაწყებისას (bootstraps). WordPress-ს იმისთვის, რომ `sunrise.php` ფაილი აღმოჩნდეს, ის უნდა იყოს განთავსებული **wp-content საქაღალდეში**.
 

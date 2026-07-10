@@ -3,11 +3,11 @@ title: Borang Hubungi Pembina Laman
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Borang Kontak Site Builder
+# Borang Kontak Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 menambah keupayaan untuk mencipta borang kontak terus dari antara muka sembang menggunakan agen Site Builder. Ini membolehkan anda menambah borang kontak yang berfungsi sepenuhnya ke mana-mana halaman tanpa perlu meninggalkan sembang.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Keupayaan borang kontak Site Builder (`create_contact_form`) akan secara automatik mengesan plugin borang yang telah anda pasang dan mencipta borang kontak menggunakan keupayaan asli plugin tersebut. Plugin borang yang disokong termasuk:
 
@@ -18,7 +18,7 @@ Keupayaan borang kontak Site Builder (`create_contact_form`) akan secara automat
 
 Pembantu ini akan memilih plugin borang terbaik yang tersedia di laman anda secara automatik dan menjana borang kontak yang disesuaikan untuk plugin tersebut.
 
-## Mencipta Borang Kontak
+## Mencipta Borang Kontak {#creating-a-contact-form}
 
 Untuk mencipta borang kontak menggunakan Site Builder:
 
@@ -34,7 +34,7 @@ Untuk mencipta borang kontak menggunakan Site Builder:
 
 4. Site Builder akan menjana borang kontak dan mengembalikan shortcode yang sedia untuk disematkan.
 
-## Menggunakan Shortcode yang Dijana
+## Menggunakan Shortcode yang Dijana {#using-the-generated-shortcode}
 
 Selepas Site Builder mencipta borang kontak, ia akan mengembalikan shortcode (contohnya, `[contact-form-7 id="123"]`). Anda boleh:
 
@@ -45,11 +45,11 @@ Selepas Site Builder mencipta borang kontak, ia akan mengembalikan shortcode (co
 
 3. **Gunakan dalam templat** — Jika anda selesa dengan PHP, anda boleh menambah shortcode ke fail templat tema.
 
-## Menyesuaikan Borang Kontak
+## Menyesuaikan Borang Kontak {#customizing-the-contact-form}
 
 Selepas Site Builder mencipta borang kontak, anda boleh menyesuaikannya lagi:
 
-### Melalui Antara Muka Sembang
+### Melalui Antara Muka Sembang {#via-the-chat-interface}
 
 Minta Site Builder untuk mengubah suai borang:
 
@@ -57,7 +57,7 @@ Minta Site Builder untuk mengubah suai borang:
 
 Site Builder akan mengemas kini borang dan mengembalikan shortcode yang telah dikemas kini.
 
-### Melalui Antara Muka Pentadbiran Plugin Borang
+### Melalui Antara Muka Pentadbiran Plugin Borang {#via-the-form-plugins-admin-interface}
 
 Anda juga boleh menyesuaikan borang secara langsung dalam tetapan plugin borang anda:
 
@@ -65,7 +65,7 @@ Anda juga boleh menyesuaikan borang secara langsung dalam tetapan plugin borang 
 2. Cari borang yang dicipta oleh Site Builder.
 3. Sunting medan borang, peraturan pengesahan, dan pemberitahuan emel mengikut keperluan.
 
-## Plugin Borang dan Keserasian
+## Plugin Borang dan Keserasian {#form-plugins-and-compatibility}
 
 Site Builder akan mengesan secara automatik plugin borang mana yang dipasang di laman anda dan menggunakannya untuk mencipta borang kontak. Jika terdapat pelbagai plugin borang yang dipasang, Site Builder akan mengutamakan dalam urutan ini:
 
@@ -76,7 +76,7 @@ Site Builder akan mengesan secara automatik plugin borang mana yang dipasang di 
 
 Jika tiada plugin ini yang dipasang, Site Builder akan mengesyorkan memasang salah satu daripadanya sebelum mencipta borang kontak.
 
-## Pemberitahuan Emel
+## Pemberitahuan Emel {#email-notifications}
 
 Borang kontak yang dicipta oleh Site Builder dikonfigurasikan untuk menghantar pemberitahuan emel kepada pentadbir laman secara lalai. Anda boleh menyesuaikan alamat emel penerima dan mesej pemberitahuan:
 
@@ -91,21 +91,21 @@ Untuk arahan terperinci, rujuk dokumentasi plugin borang anda:
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Contoh Penggunaan
+## Contoh Penggunaan {#example-use-cases}
 
-### Borang Kontak Ringkas
+### Borang Kontak Ringkas {#simple-contact-form}
 
 > "Cipta borang kontak ringkas dengan medan nama, emel, dan mesej."
 
-### Borang Berbilang Langkah
+### Borang Berbilang Langkah {#multi-step-form}
 
 > "Cipta borang kontak dengan langkah pertama untuk maklumat kontak dan langkah kedua untuk mesej dan kaedah kontak pilihan."
 
-### Borang dengan Logik Bersyarat
+### Borang dengan Logik Bersyarat {#form-with-conditional-logic}
 
 > "Cipta borang kontak yang memaparkan medan yang berbeza berdasarkan pilihan pengguna dalam menu tarik-turun."
 
-### Borang dengan Muat Naik Fail
+### Borang dengan Muat Naik Fail {#form-with-file-upload}
 
 > "Cipta borang kontak yang membenarkan pengguna memuat naik fail atau lampiran."
 

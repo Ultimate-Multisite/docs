@@ -3,7 +3,7 @@ title: Bekannte Inkompatibilitäten
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Bekannte Inkompatibilitäten mit anderen Plugins
+# Bekannte Inkompatibilitäten mit anderen Plugins {#known-incompatibilities-with-other-plugins}
 
 Nach der Installation und Aktivierung von Ultimate Multisite können Sie auf Probleme stoßen, die auf nicht behobene Inkompatibilitäten mit anderen Plugins zurückzuführen sind.
 

@@ -1,152 +1,150 @@
 ---
-title: Šabloni stranica
+title: Predlošci web lokacija
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Šabloni (v2)
+# Predlošci sajtova (v2) {#site-templates-v2}
 
 _**NAPOMENA: Ovaj članak se odnosi na Ultimate Multisite verziju 2.x. Ako koristite verziju 1.x,**_ **pogledajte ovaj članak** _**.**_
 
-Naš cilj prilikom kreiranja premium mreže sa Ultimate Multisite-om je automatizovati što više procesa, a istovremeno pružiti našim klijentima fleksibilnost i različite opcije za izbor prilikom kreiranja njihovih web sajtova. Jednostavan način za postizanje ove ravnoteže je korištenje funkcije Site Templates (Site Šabloni) u Ultimate Multisite-u.
+Naš cilj pri kreiranju premium mreže s Ultimate Multisite je automatizirati što više procesa, a istovremeno našim klijentima pružiti fleksibilnost i različite opcije za izbor pri kreiranju njihovih web-stranica. Jedan jednostavan način da se postigne ova ravnoteža jeste korištenje funkcije Ultimate Multisite predložaka sajtova.
 
-## Šta je Site Template?
+## Šta je predložak sajta? {#what-is-a-site-template}
 
-Kako nam naziv sugerira, Site Template je šablon sajtova (boilerplate site) koji se može koristiti kao baza prilikom kreiranja novih sajtova u vašoj mreži.
+Kao što naziv sugerira, predložak sajta je osnovni sajt koji se može koristiti kao baza pri kreiranju novih sajtova u vašoj mreži.
 
-To znači da možete kreirati bazni sajt, aktivirati različite pluginove, postaviti aktivnu temu i prilagoditi ga na bilo koji način. Zatim, kada vaš klijent kreira novi nalog, umjesto da dobije standardni WordPress sajt bez smiselnog sadržaja, dobit će kopiju vašeg baznog sajta sa svim prilagođenostima i sadržajem već postavljene.
+To znači da možete kreirati osnovni sajt, aktivirati različite plugine, postaviti aktivnu temu i prilagoditi ga na bilo koji način koji želite. Zatim, kada vaš kupac kreira novi account, umjesto da dobije zadani WordPress sajt bez smislenog sadržaja u njemu, dobit će kopiju vašeg osnovnog sajta sa svim prilagodbama i sadržajem koji su već postavljeni.
 
-Zvuči fantastično, ali kako da kreiram novi site template? To je jednostavno koliko je moguće.
+To zvuči odlično, ali kako da kreiram novi predložak sajta? Jednostavno je koliko može biti.
 
-## Kreiranje i uređivanje novog Site Template-a
+## Kreiranje i uređivanje novog predloška sajta {#creating-and-editing-a-new-site-template}
 
-Site Templates su samo normalni sajtovi u vašoj mreži. Da biste kreirali novi šablon, jednostavno idite na **Network Admin > Ultimate Multisite > Sites > Add Site.**
+Predlošci sajtova su samo normalni sajtovi na vašoj mreži. Da biste kreirali novi predložak, jednostavno možete otići na **Administracija mreže > Ultimate Multisite > Sajtovi > Dodaj sajt.**
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Dugme za dodavanje sajta na stranici liste sajtova](/img/config/site-templates-list.png)**
 
-Ovo će otvoriti modalni prozor koji će tražiti **Naslov sajta (Site title), Domen/putanju sajta (Site Domain/path)** i **Tip sajta (Site type)**. Pod padajućim menijem **Tip sajta** obavezno odaberite **Site Template** *.*
+Ovo će otvoriti modalni prozor gdje će tražiti **Naslov sajta, Domena/putanja sajta,** i **Tip sajta**. U padajućem polju **Tip sajta** obavezno odaberite **Predložak sajta** *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Modal za dodavanje predloška sajta s padajućim menijem tipa sajta](/img/config/site-templates-list.png)_
 
-Takođe možete vidjeti opis site template-a:
+Također možete dodati opis namijenjen kupcima kako biste objasnili šta predložak uključuje:
 
-![Site template description](/img/config/site-template-description.png)
+![Polje opisa predloška sajta na ekranu za uređivanje predloška sajta](/img/config/site-template-edit-description.png)
 
-Na dnu forme, primijetit ćete prekidač **Copy Site** (Kopiraj sajt). Ovo vam omogućava da kreirate novi site template na osnovu već postojećeg site template-a kao početne tačke, što vam štedi vrijeme umjesto da kreirate šablon sa sajta od nule.
+Na dnu obrasca primijetit ćete prekidač **Kopiraj sajt**. Ovo će vam omogućiti da kreirate novi predložak sajta na osnovu postojećeg predloška sajta kao početne tačke, kako biste uštedjeli vrijeme umjesto da kreirate predložak sajta od nule.
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Modal za dodavanje predloška sajta s prekidačem za kopiranje sajta](/img/config/site-templates-list.png)
 
-### Prilagođavanje sadržaja Site Template-a
+### Prilagođavanje sadržaja predloška sajta {#customizing-the-contents-of-a-site-template}
 
-Da biste prilagodili svoj site template, jednostavno navigirajte do njegovog kontrolnog panela (dashboard) i napravite potrebne promjene. Možete kreirati nove objave, stranice, aktivirati pluginove i promijeniti aktivnu temu. Čak možete otići u Customizer i promijeniti sve vrste opcija prilagođavanja.
+Da biste prilagodili svoj predložak sajta, jednostavno idite na njegov dashboard panel i napravite potrebne promjene. Možete kreirati nove objave, stranice, aktivirati plugine i promijeniti aktivnu temu. Možete čak otići u Prilagodnik i promijeniti sve vrste opcija prilagođavanja.
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![Interfejs za uređivanje predloška sajta](/img/config/site-template-edit.png)
 
-Svi ti podaci će biti kopirani kada klijent kreira novi sajt na osnovu tog Site Template-a.
+Svi ti podaci bit će kopirani kada kupac kreira novi sajt zasnovan na tom predlošku sajta.
 
-### Napredne opcije
+### Napredne opcije {#advanced-options}
 
-Ako ste upoznati sa nekim custom kodiranjem, možete koristiti naš Search and Replace API da automatski zamijenite informacije na novom sajtu nakon njegovog kreiranja. Ovo je korisno za stvari poput zamjene imena kompanija na stranici "O nama", zamjene kontakt e-mail adrese na stranici "Kontakt", itd.
+Ako se snalazite s prilagođenim kodiranjem, možete koristiti naš API za pretragu i zamjenu kako biste automatski zamijenili informacije na novom sajtu nakon njegovog kreiranja. Ovo je korisno za stvari poput zamjene naziva kompanije na stranici O nama, zamjene kontakt emaila na stranici Kontakt itd.
 
-### Korištenje Site Templates-a
+### Korištenje predložaka sajtova {#using-site-templates}
 
-Dobro, kreirali ste gomilu različitih Site Templates-a sa različitim dizajnom, temama i podešavanjima. Kako da ih učinite korisnim na vašoj mreži?
+U redu, kreirali ste mnoštvo različitih predložaka sajtova s različitim dizajnima, temama i postavkama. Kako ih sada učiniti korisnim na vašoj mreži?
 
-U osnovi, postoje dva pristupa koja možete koristiti (ne istovremeno):
+U osnovi, postoje dva pristupa koja sada možete koristiti (ne istovremeno):
 
-  * Povezivanje jednog Site Template-a sa svakim vašim Planom
+  * Pridruživanje jednog predloška sajta svakom od vaših planova
 
 **ILI**
 
-  * Omogućavanje vašim klijentima da sami biraju site template tokom registracije.
+  * Omogućavanje vašim klijentima da sami odaberu predloške sajtova tokom registracije.
 
-#### Mod 1: Dodjeljivanje Site Template-a (Assign Site Template)
+#### Način 1: Dodijeli predložak sajta {#mode-1-assign-site-template}
 
-U ovom modu, vaši klijenti neće moći da biraju šablon prilikom kreiranja naloga, već ćete vi definisati koji šablon treba koristiti za svaki od vaših Planova.
+U ovom načinu, vaši klijenti neće moći odabrati predložak kada kreiraju account, nego ćete vi definirati koji predložak treba koristiti za svaki od vaših planova.
 
-Da biste to uradili, morate otići na **Ultimate Multisite > Products > Edit**.
+Da biste to uradili, trebate otići na **Ultimate Multisite > Proizvodi > Uredi**.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![Uredi proizvod za dodjelu predloška sajta](/img/config/product-site-templates.png)
 
-Ovo će vas odvesti na stranicu **Edit Product**. Pod sekcijom **Product Options**, pronađite karticu **Site template** i iz padajućeg polja odaberite opciju **Assign Site** **Template**. Ovo će prikazati listu dostupnih site templates-a i omogućiti vam da odaberete samo jedan site template posvećen tom proizvodu.
+Ovo će vas odvesti na stranicu **Uredi proizvod**. U odjeljku **Opcije proizvoda**, pronađite karticu **Predložak sajta** i odaberite opciju **Dodijeli predložak sajta** iz padajućeg polja. Ovo će prikazati listu dostupnih predložaka sajtova i omogućit će vam da odaberete samo jedan predložak sajta namijenjen proizvodu.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Kartica predloška sajta proizvoda s opcijom dodjele predloška sajta](/img/config/product-site-templates.png)
 
-#### Mod 2: Izbor dostupnog Site Template-a (Choose Available Site Template)
+#### Način 2: Odaberi dostupni predložak sajta {#mode-2-choose-available-site-template}
 
-U ovom modu, dajete svojim klijentima izbor tokom procesa registracije. Biće u mogućnosti da biraju iz različitih site templates-a koje definišete pod podešavanjima proizvoda. Imate opciju ograničenja site template-a iz kojeg mogu birati pod izabranim proizvodom. Ovo vam omogućava da imate različite skupove site templates-a pod svakim proizvodom, što je idealno za isticanje različitih funkcija i značajki za proizvod višeg ranga.
+U ovom načinu, dat ćete svojim klijentima izbor tokom procesa registracije. Moći će odabrati između različitih predložaka sajtova koje definirate u postavkama proizvoda. Imate opciju da ograničite predložak sajta koji mogu odabrati u okviru odabranog proizvoda. Ovo će vam omogućiti da imate različite skupove predložaka sajtova za svaki proizvod, što je idealno za isticanje različitih funkcija i karakteristika za proizvod s višom cijenom.
 
-Na stranici **Edit Product**. Pod sekcijom **Product Options**, pronađite karticu **Site template** i iz padajućeg polja odaberite opciju **Choose Available Site Template**. Ovo će prikazati listu dostupnih site templates-a i omogućiti vam da odaberete site template koji želite da bude dostupan. Možete to učiniti biranjem njegovog ponašanja (Behavior): **Available** ako želite da site template bude uključen u listu. **Not Available** ako ne želite da site template se prikazuje kao opcija. I **Pre-selected** ako želite da jedan od navedenih site templates-a bude podrazumevano odabran.
+Na stranici **Uredi proizvod**. U odjeljku **Opcije proizvoda**, pronađite karticu **Predložak sajta** i odaberite opciju **Odaberi dostupni predložak sajta** iz padajućeg polja. Ovo će prikazati listu dostupnih predložaka sajtova i omogućit će vam da odaberete predložak sajta koji želite da bude dostupan. To možete uraditi odabirom njegovog ponašanja: **Dostupno** ako želite da predložak sajta bude uključen na listu. _**Nije dostupno**_ ako ne želite da se predložak sajta prikazuje kao opcija. I **Unaprijed odabrano** ako želite da jedan od navedenih predložaka sajtova bude zadano odabran.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Odaberi dostupne predloške sajtova s opcijama ponašanja](/img/config/product-site-templates.png)
 
-### Podrazumevani Mod: Izbor site template-a na Checkout formi
+### Zadani način: Odabir predloška sajta na obrascu za naplatu {#default-mode-site-template-selection-on-the-checkout-form}
 
-Ako želite da svi vaši site templates budu dostupni tokom registracije, ili možda ne želite da radite dodatni posao dodjeljivanja ili specifikovanja site templates-a pod svakim kreiranim proizvodom. Tada možete jednostavno postaviti izbor site template-a pod vašom **Checkout Form** (Forma za naplatu). Za to, samo morate otići na **Ultimate Multisite > Checkout Forms**. Zatim kliknite **Edit** pod formom koju želite da konfigurišete.
+Ako želite da svi vaši predlošci sajtova budu dostupni tokom registracije, ili možda ne želite raditi dodatni posao dodjeljivanja ili specificiranja predložaka sajtova za svaki proizvod koji kreirate. Tada jednostavno možete postaviti odabir predloška sajta u svom **Obrascu za naplatu**. Da biste to uradili, idite na **Ultimate Multisite > Obrasci za naplatu** i kliknite **Uredi** ispod obrasca koji želite konfigurirati.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+Ovo će prikazati stranicu **Uredi obrazac za naplatu**. Pronađite polje **Odabir predloška** i kliknite **Uredi** ispod njega.
 
-Ovo će vas odvesti na stranicu **Edit Checkout Form**. Pronađite polje **Template Selection** i kliknite **Edit** ispod njega.
+Pojavit će se modalni prozor. Ispod polja **Template Sites** možete odabrati i navesti sve predloške stranica za koje želite da budu dostupni tokom registracije. Predlošci stranica koje ovdje navedete bit će dostupni bez obzira na to koji je proizvod korisnik odabrao.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![Polje za odabir predloška u editoru obrasca za checkout](/img/config/checkout-form-template-step.png)
 
-Pojaviće se modalni prozor. Pod poljem **Template Sites** možete odabrati i navesti sve site templates-e koji želite da budu dostupni tokom registracije. Site templates koje ovdje navedete bit će dostupne bez obzira na koji je proizvod korisnik odabrao.
+Na frontendu, kupci vide birač predloška tokom checkouta i mogu odabrati početni dizajn za svoju novu stranicu.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Frontend birač predloška tokom registracije](/img/config/frontend-template-chooser.png)
 
-### Opcije Site Template-a
+### Opcije predloška stranice {#site-template-options}
 
-Postoje i druge funkcije site templates-a koje možete uključiti ili isključiti pod podešavanjima Ultimate Multisite-a.
+Postoje i druge funkcije predložaka stranica koje možete uključiti ili isključiti u postavkama Ultimate Multisite.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Opcije predloška stranice u postavkama Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Omogućiti prebacivanje šablona (Allow Template Switching)
+#### Dozvoli promjenu predloška {#allow-template-switching}
 
-Uključivanje ove opcije omogućit će vašim klijentima da promijene šablon koji su izabrali tokom procesa registracije nakon što je nalog i sajt kreiran. Ovo je korisno sa strane klijenta jer im omogućava da ponovo odaberu šablon ako kasnije shvate da nije njihov prvobitni izbor najbolji za njihove specifične potrebe.
+Omogućavanje ove opcije dozvolit će vašim klijentima da promijene predložak koji odaberu tokom procesa registracije nakon što se Account i stranica kreiraju. Ovo je korisno iz perspektive klijenta jer im omogućava da ponovo odaberu predložak ako kasnije utvrde da njihov prvobitni izbor nije bio najbolji za njihove konkretne potrebe.
 
-#### Omogućiti korisnicima da koriste svoj sajt kao šablone (Allow Users to use their Site as templates)
+#### Dozvoli korisnicima da koriste svoju stranicu kao predloške {#allow-users-to-use-their-site-as-templates}
 
-Budući da su korisnici podsajtova uložili vrijeme u izgradnju i dizajn vlastitog sajta, možda žele da ga kloniraju i koriste kao jedan od site templates-a dostupnih prilikom kreiranja drugog podsajta na vašoj mreži. Ova opcija će im to omogućiti.
+Budući da su korisnici podstranica proveli vrijeme gradeći i dizajnirajući vlastitu stranicu, možda će je željeti klonirati i koristiti kao jedan od predložaka stranica dostupnih pri kreiranju druge podstranice na vašoj mreži. Ova opcija će im to omogućiti.
 
-#### Kopiranje medija prilikom dupliranja šablona (Copy Media on Template Duplication)
+#### Kopiraj medije pri dupliciranju predloška {#copy-media-on-template-duplication}
 
-Provjeravanjem ove opcije, mediji učitani na šablon sajt će biti kopirani na novokreirani sajt. Ovo se može nadjačati na svakom planu.
+Označavanje ove opcije kopirat će medije otpremljene na stranicu predloška na novokreiranu stranicu. Ovo se može nadjačati na svakom od planova.
 
-#### **Spriječiti pretraživače da indeksiraju Site Templates**
+#### **Spriječi pretraživače da indeksiraju predloške stranica** {#prevent-search-engines-from-indexing-site-templates}
 
-Site templates, kao što je diskutovano u ovom članku, su šabloni, ali i dalje dio vaše mreže, što znači da su i dalje dostupni pretraživačima. Ova opcija vam omogućava da sakrijete site templates tako da ih pretraživači ne mogu indeksirati.
+Predlošci stranica, kako je objašnjeno u ovom članku, jesu osnova, ali su i dalje dio vaše mreže, što znači da su i dalje dostupni pretraživačima za pronalaženje. Ova opcija će vam omogućiti da sakrijete predloške stranica tako da ih pretraživači mogu indeksirati.
 
-## Popunjavanje Site Templates-a automatskim pretraživanjem i zamjenom
+## Unaprijed popunjavanje predložaka stranica automatskim pretraživanjem i zamjenom {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Jedna od najmoćnijih značajki Ultimate Multisite-a je mogućnost dodavanja proizvoljnog teksta, boje i odabranih polja na formu za registraciju. Kada prikupimo te podatke, možemo ih koristiti za popunjavanje sadržaja u određenim dijelovima odabranog site template-a. Zatim, kada se kreira novi sajt, Ultimate Multisite će zamijeniti placeholder-e stvarnim informacijama unesenim tokom registracije.
+Jedna od najmoćnijih funkcija Ultimate Multisite je mogućnost dodavanja proizvoljnog teksta, boje i polja za odabir u obrazac za registraciju. Kada te podatke prikupimo, možemo ih koristiti za unaprijed popunjavanje sadržaja u određenim dijelovima odabranog predloška stranice. Zatim, kada se nova stranica objavljuje, Ultimate Multisite će zamijeniti rezervisana mjesta stvarnim informacijama unesenim tokom registracije.
 
-Na primjer, ako želite da prikupite ime kompanije krajnjeg korisnika tokom registracije i automatski stavite ime kompanije na početnu stranicu. Na početnoj stranici vašeg template sajta morate dodati placeholder-e, kao na slici ispod (placeholderi treba da budu okruženi dvostrukim vitičastim zagradama - {{placeholder_name}}).
+Na primjer, ako želite dobiti naziv kompanije krajnjeg korisnika tokom registracije i automatski staviti naziv kompanije na početnu stranicu. Na početnoj stranici vašeg predloška stranice trebate dodati rezervisana mjesta, kao na slici ispod (rezervisana mjesta treba dodati okružena dvostrukim vitičastim zagradama - {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![Početna stranica s tekstom rezervisanog mjesta u vitičastim zagradama](/img/config/site-templates-list.png)
 
-Zatim, možete jednostavno dodati odgovarajuće polje za registraciju na vašu checkout formu da prikupite te podatke:
+Zatim možete jednostavno dodati odgovarajuće polje za registraciju na svoj checkout obrazac kako biste prikupili te podatke. Isti editor checkout obrasca korišten za odabir predloška omogućava vam da postavite prilagođena polja pored birača predloška:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Odabir predloška i polja za registraciju u editoru checkout obrasca](/img/config/checkout-form-template-step.png)
 
-Vaš klijent će zatim moći da popuni to polje tokom registracije.
+Vaš kupac će zatim moći popuniti to polje tokom registracije.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Frontend checkout obrazac s biračem predloška](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite će zatim automatski zamijeniti rezervisana mjesta podacima koje je kupac naveo.
 
-Ultimate Multisite će zatim automatski zamijeniti placeholder-e podacima koje je klijent dostavio.
+![Rezervisana mjesta zamijenjena podacima kupca na stranici](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### Rješavanje problema "predloška punog rezervisanih mjesta" {#solving-the-template-full-of-placeholders-problem}
 
-### Rješavanje problema "šablon pun placeholder-a"
+Sve je to odlično, ali nailazimo na ružan problem: sada su naši predlošci stranica - koje naši kupci mogu posjetiti - puni ružnih rezervisanih mjesta koja ne govore mnogo.
 
-Sve ovo je odlično, ali naiđemo na ružan problem: naši site templates – koje mogu posjetiti naši klijenti – su puni ružnih placeholder-a koji ne govore ništa.
+Da bismo to riješili, nudimo opciju postavljanja lažnih vrijednosti za rezervisana mjesta, a te vrijednosti koristimo za pretraživanje i zamjenu njihovog sadržaja na stranicama predložaka dok ih vaši kupci posjećuju.
 
-Da bismo to riješili, nudimo opciju postavljanja lažnih vrijednosti za placeholder-e, i koristimo te vrijednosti za pretraživanje i zamjenu njihovog sadržaja na site templates-ima dok vaši klijenti posjećuju.
+Pristup editoru rezervisanih mjesta predložaka možete dobiti odlaskom na **Ultimate Multisite > Settings > Sites**, a zatim, na bočnoj traci, klikom na link **Edit Placeholders**.
 
-Možete pristupiti editoru placeholder-a tako što ćete otići na **Ultimate Multisite > Settings > Sites**, a zatim na bočnom traku kliknuti na link **Edit Placeholders**.
+![Postavke predloška stranice na stranici postavki Sites](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+To će vas odvesti do editora sadržaja rezervisanih mjesta, gdje možete dodati rezervisana mjesta i njihov odgovarajući sadržaj.
 
-To će vas odvesti do editora sadržaja placeholder-a, gdje možete dodati placeholder-e i njihov odgovarajući sadržaj.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Ulazna tačka editora sadržaja rezervisanih mjesta predloška](/img/config/settings-sites-templates-section.png)

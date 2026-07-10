@@ -3,7 +3,7 @@ title: Unsaon pag-install sa WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Unsaon pag-install sa WordPress Multisite?
+# Unsaon pag-install sa WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Ang WordPress Multisite nagtugot kanimo nga maghimo og usa ka network sa mga website sulod sa usa lang ka installation. Kini usa ka built-in feature, pero dili kini aktibo sa default.
 
@@ -98,9 +98,9 @@ Para makakabukod og subsite:
 
 Paghuman pun-on ang mga fields, i-click ang "Add site" button. Pagka-create na sa bag-ong subsite, mag-access kini aron masiguro nga functional ang subsite.
 
-## Mga Kasagaran nga Problema:
+## Mga Kasagaran nga Problema: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Makakagamit ko og bag-ong sites pero dili ma-access.
+### 1. Makakagamit ko og bag-ong sites pero dili ma-access. {#common-problems}
 
 Kung pilion nimo ang mga subdomain, kinahanglan pud nimong i-setup ang wildcard subdomains para sa imong multisite network.
 

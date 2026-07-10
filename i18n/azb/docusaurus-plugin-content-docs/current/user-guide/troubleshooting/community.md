@@ -3,7 +3,7 @@ title: Jem'at
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Community'ye Nasıl Katılırım
+# Ultimate Multisite Community'ye Nasıl Katılırım {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community, diğer Ultimate Multisite kullanıcılarıyla iletişim kurabileceğiniz, ipuçları, deneyimler ve daha fazlasını paylaşabileceğiniz bir alandır. Ultimate Multisite Community'ye ulaşmak için https://community.ultimatemultisite.com/home adresine gidin.
 

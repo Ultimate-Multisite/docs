@@ -3,11 +3,11 @@ title: Tema Qurilishi Oqimi
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 sizga dastlabki sozlash jarayonida maxsus blok temani yaratishingizda yordam beradigan yo‘naltirilgan **Theme Builder onboarding flow**ni taqdim etadi. Bu eski Site Builder rejimini yanada moslashuvchan, agent yordamida ishlaydigan yondashuv bilan almashtiradi.
 
-## Theme Builder Onboarding Flow nima?
+## Theme Builder Onboarding Flow nima? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow bu interaktiv sozlash wizardidir va u quyidagilarni amalga oshiradi:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow bu interaktiv sozlash wizardidir va u quyidagilarn
 
 Bu flow **Setup Assistant agent** tomonidan amalga oshiriladi, u tushuntiruvchi savollarni beradi va temani bosqichma-bosqich qurib boradi.
 
-## Theme Builder Onboardingni boshlash
+## Theme Builder Onboardingni boshlash {#starting-the-theme-builder-onboarding}
 
-### Birinchi ishga tushirish sozlamasi (First-Run Setup)
+### Birinchi ishga tushirish sozlamasi (First-Run Setup) {#first-run-setup}
 
 Superdav AI Agentni yangi WordPress o‘rnatmasida birinchi marta ishga tushirganda, siz quyidagilarni ko‘rasiz:
 
@@ -35,7 +35,7 @@ Nima qilishni xohlaysiz?
 
 Theme Builder onboarding flowiga kirish uchun **"Maxsus tema yaratish"** ni tanlang.
 
-### Qo‘lda faollashtirish (Manual Activation)
+### Qo‘lda faollashtirish (Manual Activation) {#manual-activation}
 
 Siz istalgan vaqtda ham quyidagilarni so‘rab Theme Builder onboardingni boshlashingiz mumkin:
 
@@ -49,9 +49,9 @@ yoki
 "Help me create a custom theme"
 ```
 
-## Onboarding bosqichlari
+## Onboarding bosqichlari {#the-onboarding-steps}
 
-### 1-bosqich: Rejim tanlash (Mode Selection)
+### 1-bosqich: Rejim tanlash (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent sizning afzalligingiz haqida so‘raydi:
 
@@ -63,7 +63,7 @@ Temangizni qanday yaratmoqchisiz?
 
 **Yo‘naltirilgan rejim** deyarli barcha foydalanuvchilar uchun tavsiya etiladi; agent sizning sanoatingiz va maqsadlaringiz asosida dizayn tavsiyalari beradi.
 
-### 2-bosqich: Sayt ko‘rsatmalari (Site Specification)
+### 2-bosqich: Sayt ko‘rsatmalari (Site Specification) {#step-2-site-specification}
 
 Siz saytingiz haqida ma'lumot berishingiz so‘raladi:
 
@@ -74,7 +74,7 @@ Siz saytingiz haqida ma'lumot berishingiz so‘raladi:
 
 Bu ma'lumotlarning barchasi sizning **site_brief** xotirangizda saqlanadi va agentlar kelajak sessiyalarda shu yerga murojaat qiladi.
 
-### 3-Qadam: Dizayn tizimi qarorlari (Design System Decisions)
+### 3-Qadam: Dizayn tizimi qarorlari (Design System Decisions) {#step-3-design-system-decisions}
 
 Agent sizni dizayn tokenlarini tanlash jarayonida yo'l ko'rsatadi:
 
@@ -83,7 +83,7 @@ Agent sizni dizayn tokenlarini tanlash jarayonida yo'l ko'rsatadi:
 - **Bo'shliq (Spacing)**: Qisqa, oddiy yoki keng bo'sh joyli layoutlar
 - **Haraka (Motion)**: Animatsiyalar va o'tish effektlari (agar istasangiz)
 
-### 4-Qadam: Tema yaratish (Theme Generation)
+### 4-Qadam: Tema yaratish (Theme Generation) {#step-4-theme-generation}
 
 Setup Assistant agent sizning maxsus blok temangizni quyidagilar bilan tuzib beradi:
 
@@ -92,7 +92,7 @@ Setup Assistant agent sizning maxsus blok temangizni quyidagilar bilan tuzib ber
 - Dizayn tizimingizga mos keladigan maxsus blok uslublari
 - Tema metadata va WordPress qo'llab-quvvatlash deklaratsiyalari
 
-### 5-Qadam: Faollashtirish va tekshirish (Activation and Verification)
+### 5-Qadam: Faollashtirish va tekshirish (Activation and Verification) {#step-5-activation-and-verification}
 
 Tema avtomatik ravishda faollashtiriladi va siz quyidagilarni ko'rasiz:
 
@@ -107,7 +107,7 @@ Tema avtomatik ravishda faollashtiriladi va siz quyidagilarni ko'rasiz:
 
 Keyin siz temani to'g'ri ko'rsatayotganini tekshirish uchun saytingizga kirishingiz mumkin.
 
-## Sayt ko'rsatmalari va site_brief xotirasi (Site Specification and site_brief Memory)
+## Sayt ko'rsatmalari va site_brief xotirasi (Site Specification and site_brief Memory) {#site-specification-and-sitebrief-memory}
 
 Onboarding davrida agent saytingizning ko'rsatmalari **site_brief** xotira kategoriyasiga yozib oladi. Bunga quyidagilar kiradi:
 
@@ -117,11 +117,11 @@ Onboarding davrida agent saytingizning ko'rsatmalari **site_brief** xotira kateg
 - Dizayn afzalliklari
 - Kontent tuzilishi
 
-### Nega site_brief muhim?
+### Nega site_brief muhim? {#why-sitebrief-matters}
 
 Kelajak sessiyalarda agentlar sizning site_briefingizga murojaat qilib quyidagilarni amalga oshiradi:
 
-### Siteni ko'rish (site\_brief)
+### Siteni ko'rish (site\_brief) {#viewing-your-sitebrief}
 
 Agentga quyidagicha so'rishingiz mumkin:
 
@@ -137,11 +137,11 @@ yoki
 
 Agent siz saqlab qo'ygan sayt spesifikatsiyasini ko'rsatadi.
 
-## Onboardingdan keyin sozlash
+## Onboardingdan keyin sozlash {#customizing-after-onboarding}
 
 Theme Builder onboarding tugagandan so'ng, siz quyidagilarni qila olasiz:
 
-### Dizayn tizimi estetikasi ko'nikmasidan foydalanish
+### Dizayn tizimi estetikasi ko'nikmasidan foydalanish {#use-the-design-system-aesthetics-skill}
 
 Dizaynni takomillashtirish uchun so'rov bering:
 
@@ -157,7 +157,7 @@ yoki
 
 **Design System Aesthetics skill** sizga aniq dizayn yangilanishlari bo'yicha yo'l ko'rsatadi.
 
-### theme.json faylini bevosita tahrirlash
+### theme.json faylini bevosita tahrirlash {#edit-themejson-directly}
 
 Katta foydalanuvchilar uchun, quyidagilarni sozlash uchun `/wp-content/themes/[theme-name]/theme.json` faylini tahrirlang:
 
@@ -166,7 +166,7 @@ Katta foydalanuvchilar uchun, quyidagilarni sozlash uchun `/wp-content/themes/[t
 - Bo'shliq qiymatlari
 - Chegara va soya (border and shadow) ta'riflari
 
-### Maxsus blok shablonlarini yaratish
+### Maxsus blok shablonlarini yaratish {#create-custom-block-templates}
 
 WordPress bloklar muharriridan foydalanib quyidagilar uchun maxsus shablonlarni yarating:
 
@@ -175,7 +175,7 @@ WordPress bloklar muharriridan foydalanib quyidagilar uchun maxsus shablonlarni 
 - Mahsulot sahifalari
 - Kontakt formlari
 
-## Qiyinchiliklarni hal qilish (Troubleshooting)
+## Qiyinchiliklarni hal qilish (Troubleshooting) {#comparison-old-vs-new-onboarding}
 
 **Onboarding jarayoni tugamadı**
 - Jarayonni qayta boshlang: "Start the Theme Builder onboarding"
@@ -192,7 +192,7 @@ WordPress bloklar muharriridan foydalanib quyidagilar uchun maxsus shablonlarni 
 - Agentdan "[maxsus o'zgarishlar bilan] temani qayta yaratishni" so'rang
 - Aniqlik uchun theme.json faylini bevosita tahrirlang
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#troubleshooting}
 
 Theme Builder (Tema Quruvchi) sozlamalarini yakunlagandan so'ng:
 

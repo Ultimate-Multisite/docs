@@ -3,35 +3,35 @@ title: Ontdekkingsgesprek
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview
+# Discovery Interview {#discovery-interview}
 
 Het **Discovery Interview** is de eerste stap in het ontwerpproces van Theme Builder. Het verzamelt informatie over uw website, bedrijf en ontwerppreferenties om een gepersonaliseerd thema te creëren.
 
-## Overzicht
+## Overzicht {#overview}
 
 Het Discovery Interview begeleidt u door een reeks vragen om uw merk, doelgroep en ontwerpdoeleinden te begrijpen. In versie 1.16.0 bevat het interview nu een **foto-upload stap** waarmee u visuele inspiratie voor uw ontwerp kunt verstrekken.
 
-## Interview Stappen
+## Interview Stappen {#interview-steps}
 
-### 1. Bedrijfsinformatie
+### 1. Bedrijfsinformatie {#1-business-information}
 
 - Naam en slogan van de site
 - Type bedrijf of sector
 - Belangrijkste bedrijfsdoelstellingen
 - Beschrijving van de doelgroep
 
-### 2. Ontwerppreferenties
+### 2. Ontwerppreferenties {#2-design-preferences}
 
 - Voorkeurskleurenpalet
 - Ontwerpstijl (modern, klassiek, minimalistisch, speels, etc.)
 - Inspiratiewebsites of -merken
 - Essentiële ontwerpelementen
 
-### 3. Foto Upload (Nieuw in v1.16.0)
+### 3. Foto Upload (Nieuw in v1.16.0) {#3-photo-upload-new-in-v1160}
 
 Upload één of meer foto's om de ontwerkreichting te beïnvloeden:
 
-#### Geaccepteerde Formaten
+#### Geaccepteerde Formaten {#accepted-formats}
 
 | Formaat | Extensie | Details |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Upload één of meer foto's om de ontwerkreichting te beïnvloeden:
 | **WebP** | `.webp` | Modern formaat, kleinere bestandsgrootte |
 | **GIF** | `.gif` | Alleen statische afbeeldingen (geen animatie) |
 
-#### Bestandsvereisten
+#### Bestandsvereisten {#file-requirements}
 
 - **Maximale bestandsgrootte:** 10 MB
 - **Minimale afmetingen:** 400 × 300 pixels
 - **Aanbevolen afmetingen:** 1200 × 800 pixels of groter
 - **Aspect ratio:** Elke verhouding is acceptabel
 
-#### Hoe Foto's de Ontwerkreichting Beïnvloeden
+#### Hoe Foto's de Ontwerkreichting Beïnvloeden {#how-photos-influence-design-direction}
 
 De foto's die u uploadt, helpen Theme Builder te begrijpen:
 
@@ -57,21 +57,21 @@ De foto's die u uploadt, helpen Theme Builder te begrijpen:
 - **Ontwerpelementen** — patronen, texturen en compositieve stijlen
 - **Typografische inspiratie** — letterstijlen die het visuele thema aanvullen
 
-### 4. Contentstructuur
+### 4. Contentstructuur {#4-content-structure}
 
 - Benodigde hoofdpagina's (Home, Over ons, Diensten, Contact, etc.)
 - Vereist blog- of nieuwssectie
 - Benodigde e-commerce functionaliteit
 - Speciale functies of integraties
 
-### 5. Beoordeling en Bevestiging
+### 5. Beoordeling en Bevestiging {#5-review-and-confirmation}
 
 - Overzicht van alle verstrekte informatie
 - Bevestiging voordat de ontwerpgeneratie begint
 
-## Best Practices voor Foto Upload
+## Best Practices voor Foto Upload {#photo-upload-best-practices}
 
-### Wat te Uploaden
+### Wat te Uploaden {#what-to-upload}
 
 - **Merkinspiratie** — logo's, kleurstalen of merkrichtlijnen
 - **Concurrentie-sites** — screenshots van sites die u bewondert
@@ -80,7 +80,7 @@ De foto's die u uploadt, helpen Theme Builder te begrijpen:
 - **Team- of kantoorfoto's** — voor persoonlijke of professionele branding
 - **Lifestylebeelden** — die uw doelgroep vertegenwoordigen
 
-### Wat te Vermijden
+### Wat te Vermijden {#what-to-avoid}
 
 - **Laagwaardige afbeeldingen** — wazige of pixelachtige foto's
 - **Niet-gerelateerde afbeeldingen** — foto's die uw merk niet vertegenwoordigen
@@ -88,7 +88,7 @@ De foto's die u uploadt, helpen Theme Builder te begrijpen:
 - **Auteursrechtelijk beschermd materiaal** — zorg ervoor dat u de rechten heeft om de afbeeldingen te gebruiken
 - **Geanimeerde GIFs** — alleen statische afbeeldingen worden verwerkt
 
-### Tips voor de Beste Resultaten
+### Tips voor de Beste Resultaten {#tips-for-best-results}
 
 1. **Upload 2-3 afbeeldingen** — meerdere afbeeldingen geven een beter context
 2. **Gebruik foto's van hoge kwaliteit** — duidelijke, goed verlichte afbeeldingen werken het beste
@@ -96,7 +96,7 @@ De foto's die u uploadt, helpen Theme Builder te begrijpen:
 4. **Geef context** — beschrijf kort waarom u elke afbeelding heeft gekozen
 5. **Wees specifiek** — als u een bepaald element mooi vindt, wijs dit dan aan
 
-## Design Direction Output
+## Design Direction Output {#design-direction-output}
 
 Na het Discovery Interview genereert Theme Builder:
 
@@ -106,7 +106,7 @@ Na het Discovery Interview genereert Theme Builder:
 - **Visuele elementen** — iconen, patronen en decoratieve elementen
 - **Moodboard** — visuele weergave van de ontwerkreichting
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat u het Discovery Interview heeft voltooid:
 
@@ -115,7 +115,7 @@ Nadat u het Discovery Interview heeft voltooid:
 3. Ga verder naar de [Design Direction](./design-direction.md) stap
 4. Theme Builder creëert uw aangepaste thema
 
-## Gerelateerde Documentatie
+## Gerelateerde Documentatie {#related-documentation}
 
 - [Design Direction](./design-direction.md) — beoordeel en verfijn uw ontwerp
 - [Hospitality Menus](./hospitality-menus.md) — creëer gestructureerde menupagina's

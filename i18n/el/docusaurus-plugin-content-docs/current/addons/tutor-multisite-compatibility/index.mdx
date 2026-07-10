@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Συμβατότητα Tutor Multisite
+# Συμβατότητα Tutor Multisite {#tutor-multisite-compatibility}
 
 Ένα plugin WordPress που προσθέτει διορθώσεις συμβατότητας για το Tutor LMS σε περιβάλλοντα multisite.
 
-## Περιγραφή
+## Περιγραφή {#description}
 
 Αυτό το plugin παρέχει απαραίτητες διορθώσεις συμβατότητας για τη λειτουργία του Tutor LMS σε δίκτυα WordPress multisite. Διαχειρίζεται την εγγραφή χρηστών, τη διαχείριση εκπαιδευτών, τους περιορισμούς μαθημάτων και άλλες λειτουργίες ειδικές για multisite.
 
-## Χαρακτηριστικά
+## Χαρακτηριστικά {#features}
 
 - **Διαχείριση Πινάκων Βάσης Δεδομένων**: Ανακαλύπτει και δημιουργεί αυτόματα τα λείποντα πινάκια του Tutor LMS που αποτυγχάνουν λόγω περιορισμών ξένης κλειδιά (foreign key) του multisite.
 - **Εγγραφή Χρηστών Multisite**: Προσαρμοσμένοι AJAX handlers για τη διαχείριση της εγγραφής χρηστών σε όλα τα sites του δικτύου.
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **Προσαρμοσμένες Προβολές Διαχειριστή**: Διεπαφή καταλόγου και διαχείρισης εκπαιδευτών που λαμβάνει υπόψη το multisite.
 - **Εργαλεία Διαχειριστή**: Διεπαφή διαχείρισης βάσης δεδομένων για τους διαχειριστές του δικτύου και του site.
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - Εγκατάσταση WordPress Multisite
 - Plugin Ultimate Multisite (για τη λειτουργικότητα περιορισμών μαθημάτων)
 
-## Εγκατάσταση
+## Εγκατάσταση {#installation}
 
 1. Ανεβάστε τα αρχεία του plugin στο `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Βεβαιωθείτε ότι το Tutor LMS είναι εγκατεστημένο και ενεργοποιημένο
 3. Ενεργοποιήστε το plugin μέσω του μενού 'Plugins' στο WordPress
 4. Το plugin θα ενσωματωθεί αυτόματα με το Tutor LMS
 
-## Δομή Αρχείων
+## Δομή Αρχείων {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Λειτουργικότητα Μετατοπισμένη από το MU Plugin
+## Λειτουργικότητα Μετατοπισμένη από το MU Plugin {#functionality-moved-from-mu-plugin}
 
 Αυτό το plugin περιέχει λειτουργικότητα που βρισκόταν προηγουμένως στο `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Διαχείριση εγγραφής χρηστών multisite
 - Отображение ID προϊόντος μαθήματος
 
-## Διαχείριση Βάσης Δεδομένων
+## Διαχείριση Βάσης Δεδομένων {#database-management}
 
-### Το Πρόβλημα
+### Το Πρόβλημα {#the-problem}
 
 Στα περιβάλλοντα WordPress multisite, η δημιουργία πινάκων του Tutor LMS αποτυγχάνει για πινάκια με περιορισμούς ξένης κλειδιά (foreign key) στον πίνακα χρηστών. Αυτό συμβαίνει επειδή:
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - Τα foreign keys αναφέρονται στο `wp_2_users` (που δεν υπάρχει)
 - Ο πραγματικός πίνακας χρηστών είναι το `wp_users` (κοινό σε όλο το δίκτυο)
 
-### Η Λύση
+### Η Λύση {#the-solution}
 
 Αυτό το plugin αυτόματα:
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - Δημιουργία νέου site στο δίκτυο
    - Χειροκίνηικός έλεγχος πινάκων μέσω της διεπαφής διαχειριστή
 
-### Πληθαρχικά Πίνακα
+### Πληθαρχικά Πίνακα {#affected-tables}
 
 - `tutor_coupon_usages` - Περιέχει foreign key στον πίνακα χρηστών
 - `tutor_carts` - Περιέχει foreign key στον πίνακα χρηστών
 - `tutor_notification_preferences` - Πίνακας TutorPro με foreign key στον πίνακα χρηστών
 
-### Διεπαφή Διαχειριστή
+### Διεπαφή Διαχειριστή {#admin-interface}
 
 Μεταβείτε στα εργαλεία διαχείρισης βάσης δεδομένων στη διεύθυνση:
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - Ελέγχετε τη διαμόρφωση της βάσης δεδομένων
 - Προβάλετε λεπτομερείς πληροφορίες κατάστασης
 
-## Υποστήριξη
+## Υποστήριξη {#support}
 
 Αυτό το plugin έχει σχεδιαστεί ειδικά για την πλατφόρμα KursoPro. Για τεχνική υποστήριξη, επικοινωνήστε με την ομάδα ανάπτυξης.

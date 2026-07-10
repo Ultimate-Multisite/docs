@@ -8,17 +8,17 @@ Filter: wu_password_require_special
 
 Filter whether to require special characters in passwords.
 
-## Parameters
+## Parameters {#filter-wupasswordrequirespecial}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $require | `bool` | 특수 문자를 요구할지 여부. 규칙이 적용될 때 기본값은 true. |
 | $defender_active | `bool` | Defender Pro Strong Password가 활성화되어 있는지 여부. |
 
-### Since
+### Since {#parameters}
 
 - 2.4.0
 
-### Source
+### Source {#since}
 
 정의됨: [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L583) 583번째 줄에서

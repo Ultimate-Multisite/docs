@@ -1,166 +1,194 @@
 ---
-title: Hooksৰ প্ৰসংগ
+title: হুকসমূহৰ তথ্যসূত্ৰ
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# হুকছৰ তথ্য (Hooks Reference)
+# Hooks সন্দৰ্ভ {#hooks-reference}
 
-Ultimate Multisite-ত থকা সকলো **৫৯টা অ্যাকশ্বন (actions)** আৰু **১15টা ফিল্টাৰ (filters)** ৰ বাবে স্বয়ংক্রিয়ভাৱে সৃষ্টি কৰা নথি।
+Ultimate Multisite-ৰ সকলো **59টা actions** আৰু **118টা filters**-ৰ বাবে স্বয়ংক্ৰিয়ভাৱে সৃষ্টি কৰা নথিপত্ৰ।
 
-## Actions
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Authentication redirect হোৱাৰ আগতে ট্ৰিগাৰ হয়।
-- [set_auth_cookie](./Actions/set_auth_cookie) — Authentication cookie সেট কৰাৰ ঠিক আগতে ট্ৰিগাৰ হয়।
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — লগইন কৰা authentication cookie সেট কৰাৰ ঠিক আগতে ট্ৰিগাৰ হয়।
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ডেভেলপাৰসকলক wp প্লাগইনৰ জৰিয়তে নিজৰ হোষ্ট প্ৰোভাইডাৰ ইন্টিগ্ৰেচন যোগ কৰিবলৈ অনুমতি দিয়ে।
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — সকলো ডিপেণ্ডেন্সী (dependencies) লোড হোৱাৰ সময়ত ট্ৰিগাৰ হয়।
-- [wu_activation](./Actions/wu_activation) — প্লাগইনৰ অন্যান্য অংশক অ্যাক্টিভেশ্যনৰ বাবে নিজৰ ৰুটিন যোগ কৰিবলৈ অনুমতি দিয়ে।
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — কোনো ব্যৱহাৰকাৰী বা super admin-এ সাইট টেমপ্লেট সলনি কৰাৰ পিছত প্লাগইন ডেভেলপাৰসকলক ফাংচন হুক কৰিবলৈ অনুমতি দিয়ে।
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — কিছুমান ক্ষেত্ৰত, অ্যাকশ্বনসমূহ সামৰি লোৱাৰ বাবে আমাক অধিক শক্তি (extra juice) লোড কৰিব লাগিব।
-- [wu_before_search_models](./Actions/wu_before_search_models) — search request প্ৰক্ৰিয়াকৰণৰ আগতে ট্ৰিগাৰ হয়।
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ডেভেলপাৰসকলক checkout object मा অধিক পৰিৱৰ্তন কৰিবলৈ অনুমতি দিয়ে।
-- [wu_cart_setup](./Actions/wu_cart_setup) — ডেভেলপাৰসকলক checkout object मा অধিক পৰিৱৰ্তন কৰিবলৈ অনুমতি দিয়ে।
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout form मा এটা ফিল্ড যোগ কৰাৰ আগতে ট্ৰিগাৰ হয়।
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ডেভেলপাৰসকলক অধিক হুক ট্ৰিগাৰ কৰিবলৈ অনুমতি দিয়ে।
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — আমি checkout প্ৰক্ৰিয়াকৰণ কৰাৰ আগতে।
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order সম্পূৰ্ণৰূপে সাজু হোৱাৰ পিছত ট্ৰিগাৰ হয়।
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — প্লাগইন ডেভেলপাৰসকলক Network Dashboard Panel मा widget যোগ কৰিবলৈ অনুমতি দিয়ে।
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — প্লাগইন ডেভেলপাৰসকলক Network Dashboard Panel मा widget যোগ কৰিবলৈ অনুমতি দিয়ে।
-- [wu_deactivation](./Actions/wu_deactivation) — প্লাগইনৰ অন্যান্য অংশক deactivationৰ বাবে নিজৰ ৰুটিন যোগ কৰিবলৈ অনুমতি দিয়ে।
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — প্লাগইনৰ বাবে এটা বস্তুৰ সৈতে জড়িত হ'ব।
-- [wu_get_user_id]
-- [wu_get_user_role]
-- [wu_get_user_capabilities]
-- [wu_get_user_meta]
-- [wu_get_user_data]
-- [wu_get_user_settings]
-- [wu_get_user_preferences]
-- [wu_get_user_activity]
-- [wu_get_user_history]
-- [wu_get_user_logs]
-- [wu_get_user_notifications]
-- [wu_get_user_messages]
-- [wu_get_user_profile]
-- [wu_get_user_settings_data]
-- [wu_get_user_billing_info]
-- [wu_get_user_payment_history]
-- [wu_get_user_subscription_status]
-- [wu_get_user_account_details]
-- [wu_get_user_contact_info]
-- [wu_get_user_emergency_contact]
-- [wu_get_user_security_info]
-- [wu_get_user_privacy_settings]
-- [wu_get_user_consent_status]
-- [wu_get_user_marketing_opt_in]
-- [wu_get_user_preferred_language]
-- [wu_get_user_timezone]
-- [wu_get_user_time_zone_offset]
-- [wu_get_user_ip_address]
-- [wu_get_user_user_agent]
-- [wu_get_user_browser_info]
-- [wu_get_user_os_info]
-- [wu_get_user_device_type]
-- [wu_get_user_connection_type]
-- [wu_get_user_network_details]
-- [wu_get_user_location_data]
-- [wu_get_user_geo_coordinates]
-- [wu_get_user_time_stamp]
-- [wu_get_user_last_login]
-- [wu_get_user_last_activity_time]
-- [wu_get_user_last_interaction]
-- [wu_get_user_last_update_time]
-- [wu_get_user_last_modification_time]
-- [wu_get_user_last_view_time]
-- [wu_get_user_last_access_time]
-- [wu_get_user_last_interaction_time]
-- [wu_get_user_last_update_time_stamp]
-- [wu_get_user_last_modification_time_stamp]
-- [wu_get_user_last_view_time_stamp]
-- [wu_get_user_last_access_time_stamp]
-- [wu_get_user_last_interaction_time_stamp]
-- [wu_get_user_last_update_time_stamp_full]
-- [wu_get_user_last_modification_time_stamp_full]
-- [wu_get_user_last_view_time_stamp_full]
-- [wu_get_user_last_access_time_stamp_full]
-- [wu_get_user_last_interaction_time_stamp_full]
-- [wu_get_user_last_update_time_stamp_full_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_modification_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_view_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_access_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_interaction_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
-- [wu_get_user_last_update_time_stamp_full_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed_detailed]
+- [auth_redirect](./Actions/auth_redirect) — প্ৰমাণীকৰণ পুনঃনিৰ্দেশৰ আগতে চলে।
+- [set_auth_cookie](./Actions/set_auth_cookie) — প্ৰমাণীকৰণ cookie ছেট কৰাৰ ঠিক আগতে চলে।
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — লগ-ইন কৰা প্ৰমাণীকৰণ cookie ছেট কৰাৰ ঠিক আগতে চলে।
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — বিকাশকাৰীসকলক wp প্লাগইনৰ জৰিয়তে নিজৰ host provider সংহতি যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — সকলো নিৰ্ভৰতা লোড হ'লে ট্ৰিগাৰ হয়
+- [wu_activation](./Actions/wu_activation) — প্লাগইনৰ অন্য অংশসমূহক সক্ৰিয়কৰণৰ বাবে নিজৰ routine সংলগ্ন কৰিবলৈ দিয়ে
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — কোনো ব্যৱহাৰকাৰী বা super admin-এ ছাইট template সলনি কৰাৰ পিছত প্লাগইন বিকাশকাৰীসকলক function hook কৰিবলৈ অনুমতি দিয়ে
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — কিছুমান ক্ষেত্ৰত, actionসমূহ চম্ভালিবলৈ আমি অতিৰিক্ত juice লোড কৰিব লাগিব।
+- [wu_before_search_models](./Actions/wu_before_search_models) — সন্ধান অনুৰোধ প্ৰক্ৰিয়াকৰণৰ আগতে চলে।
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — বিকাশকাৰীসকলক checkout objectত অতিৰিক্ত পৰিৱৰ্তন কৰিবলৈ অনুমতি দিয়ে।
+- [wu_cart_setup](./Actions/wu_cart_setup) — বিকাশকাৰীসকলক checkout objectত অতিৰিক্ত পৰিৱৰ্তন কৰিবলৈ অনুমতি দিয়ে।
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout formত কোনো ক্ষেত্ৰ যোগ কৰাৰ আগতে চলে।
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — বিকাশকাৰীসকলক অতিৰিক্ত hook ট্ৰিগাৰ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — আমি checkout প্ৰক্ৰিয়া কৰাৰ আগতে।
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout order সম্পূৰ্ণৰূপে assembled হোৱাৰ পিছত চলে।
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — প্লাগইন বিকাশকাৰীসকলক Network Dashboard পেনেলত widget যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — প্লাগইন বিকাশকাৰীসকলক Network Dashboard পেনেলত widget যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_deactivation](./Actions/wu_deactivation) — প্লাগইনৰ অন্য অংশসমূহক নিষ্ক্ৰিয়কৰণৰ বাবে নিজৰ routine সংলগ্ন কৰিবলৈ দিয়ে
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — প্লাগইন বিকাশকাৰীসকলক মচা প্ৰক্ৰিয়াত action যোগ কৰিবলৈ অনুমতি দিয়ে
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — কোনো domain ছাইটৰ primary domain হ'লে চলে।
+- [wu_domain_created](./Actions/wu_domain_created) — নতুন domain mapping যোগ হ'লে ট্ৰিগাৰ হয়।
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — আমাৰ core Domain Mapping লোড হোৱাৰ পিছত চলে
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — কিছুমান প্লাগইনে mapping সক্ৰিয় হোৱাৰ আগতে URL সংৰক্ষণ কৰিব বা অন্তৰ্ভুক্ত নোহোৱা বেলেগ ধৰণে URL নিৰ্মাণ কৰিব o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ছাইট duplicate হোৱাৰ পিছত বিকাশকাৰীসকলক hook কৰিবলৈ অনুমতি দিয়ে।
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত hook যোগ কৰিবলৈ অনুমতি দিয়ে
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — অতিৰিক্ত পৰিষ্কৰণৰ বাবে hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — নতুন domain যোগ কৰা modal অনুৰোধ চম্ভালাৰ আগতে চলে।
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — প্ৰয়োজন হ'লে প্লাগইন বিকাশকাৰীসকলক meta data বেলেগ ধৰণে সংৰক্ষণ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — প্ৰয়োজন হ'লে প্লাগইন বিকাশকাৰীসকলক user meta data বেলেগ ধৰণে সংৰক্ষণ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — invalid magic link token পোৱা গ'লে চলে।
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — কোনো ব্যৱহাৰকাৰী magic linkৰ জৰিয়তে লগ-ইন হোৱাৰ পিছত চলে।
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — গ্ৰাহক যোগ হ'লে প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত কাম কৰিবলৈ অনুমতি দিয়ে।
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — কোনো entityৰ বাবে MCP abilities পঞ্জীয়ন হোৱাৰ পিছত চলে।
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter initialized হোৱাৰ পিছত চলে।
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — সদস্যতা বাতিল হোৱাৰ পিছত ট্ৰিগাৰ হয়।
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — সদস্যতা নবীকৰণৰ পিছত ট্ৰিগাৰ হয়।
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — সদস্যতা বাতিল হোৱাৰ আগতে ট্ৰিগাৰ হয়।
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — সদস্যতা নবীকৰণৰ আগতে ট্ৰিগাৰ হয়।
+- [wu_model_post_save](./Actions/wu_model_post_save) — কোনো object databaseত সংৰক্ষণ হোৱাৰ পিছত চলে।
+- [wu_page_added](./Actions/wu_page_added) — pageসমূহ পঞ্জীয়ন হ'লে প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত কাম চলাবলৈ অনুমতি দিয়ে।
+- [wu_page_after_render](./Actions/wu_page_after_render) — আমি page print কৰাৰ পিছত প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত content যোগ কৰিবলৈ অনুমতি দিয়ে
+- [wu_page_before_render](./Actions/wu_page_before_render) — আমি page print কৰাৰ আগতে প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত content যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_page_load](./Actions/wu_page_load) — প্লাগইন বিকাশকাৰীসকলক আমাৰ pageসমূহত অতিৰিক্ত hook যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — আমি page print কৰাৰ পিছত প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত content যোগ কৰিবলৈ অনুমতি দিয়ে
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — আমি page print কৰাৰ আগতে প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত content যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — প্লাগইন বিকাশকাৰীসকলক আমাৰ pageসমূহত অতিৰিক্ত hook যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — এই pageৰ বাবে widgetসমূহ পঞ্জীয়ন হোৱাৰ পিছত চলে।
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — এড-অনসমূহে সংহতিসমূহত ক্ষমতা মডিউল সংলগ্ন কৰিব পৰাকৈ চলে।
+- [wu_register_integrations](./Actions/wu_register_integrations) — সংহতিসমূহে নিজকে পঞ্জীয়ন কৰিব পৰাকৈ চলে।
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — অতিৰিক্ত ৰুটসমূহ পঞ্জীয়ন কৰিবলৈ অনুমতি দিয়ে।
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — প্থলাগইন বিকাশকাৰীসকলক সংৰক্ষণ প্ৰক্ৰিয়াত কাৰ্য যোগ কৰিবলৈ অনুমতি দিয়ে
+- [wu_site_created](./Actions/wu_site_created) — প্ৰথমবাৰৰ বাবে এটা ছাইট সৃষ্টি হোৱাৰ পিছত চলে।
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — প্ৰয়োজন হ’লে, প্লাগইন বিকাশকাৰীসকলক অতিৰিক্ত হুক যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_template_previewer](./Actions/wu_template_previewer) — টেমপ্লেট পূৰ্বদৰ্শক প্ৰসংগৰ ভিতৰত থাকোঁতে চলে।
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — স্ক্ৰিপ্টসমূহ enqueue কৰাৰ হুক ট্ৰিগাৰ কৰে।
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — এটা বস্তু ডাটাবেছত সংৰক্ষিত হোৱাৰ পিছত চলে।
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — এটা বস্তু ডাটাবেছত সংৰক্ষিত হোৱাৰ পিছত চলে।
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — এটা বস্তু ডাটাবেছত সংৰক্ষিত হোৱাৰ পিছত চলে।
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — প্লাগইন বিকাশকাৰীসকলক আনলক কৰাৰ প্ৰক্ৰিয়াত কাৰ্য যোগ কৰিবলৈ অনুমতি দিয়ে।
+
+## ফিল্টাৰসমূহ {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — প্ৰমাণীকৰণ কুকিৰ মেয়াদ উকলাৰ সময়সীমাৰ অৱধি ফিল্টাৰ কৰে।
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — প্ৰমাণীকৰণ পুনঃনিৰ্দেশ আঁচনি ফিল্টাৰ কৰে।
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — সুৰক্ষাৰ খাতিৰত, ইয়াত মূল WP Filter পুনৰাবৃত্তি কৰে।
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin বিকাশকসকলক previewer-ত ব্যৱহৃত URL ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth কুকি কেৱল HTTPS-ৰ জৰিয়তে পঠিওৱা উচিত নে নহয় ফিল্টাৰ কৰে।
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — সুৰক্ষিত প্ৰমাণীকৰণ পুনঃনিৰ্দেশ ব্যৱহাৰ কৰিব নে নহয় ফিল্টাৰ কৰে।
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — লগ ইন কৰা কুকি কেৱল HTTPS-ৰ জৰিয়তে পঠিওৱা উচিত নে নহয় ফিল্টাৰ কৰে।
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth কুকিসমূহ প্ৰকৃততে client-লৈ পঠিওৱা ৰোধ কৰাৰ অনুমতি দিয়ে।
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — পুনঃনিৰ্দেশ URL নিৰ্ধাৰণ কৰক।
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — ফিল্টাৰৰ জৰিয়তে অতিৰিক্ত ধাপ যোগ কৰক
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin বিকাশকসকলক বিশ্বব্যাপী render context-ত অতিৰিক্ত variable যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — বিকাশকসকলক এই পৰীক্ষা short-circuit কৰিবলৈ অনুমতি দিয়ে।
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — নতুন domain যোগ কৰাৰ modal-ৰ field-সমূহ ফিল্টাৰ কৰে।
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — বিকাশকসকলক setup fee line item-ত সলনি কৰিবলৈ অনুমতি দিয়ে।
+- [wu_admin_notices](./Filters/wu_admin_notices) — বিকাশকসকলক Ultimate Multisite-এ যোগ কৰা admin notice-সমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — সলনি হোৱাৰ পাছত ফিল্টাৰ কৰক।
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — এতিয়া, আমি সকলো প্ৰকাৰৰ সৈতে কাম কৰোঁ।
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin বিকাশকসকলক সীমাবদ্ধতাসমূহ short-circuit কৰিবলৈ অনুমতি দিয়ে।
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee প্ৰয়োগ কৰা উচিত নে নহয় ফিল্টাৰ কৰে।
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — মূল api arguments ফিল্টাৰ কৰক।
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin বিকাশকসকলক billing address field-সমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — বিকাশকসকলক output bypass কৰি নতুন এটা নিৰ্ধাৰণ কৰিবলৈ অনুমতি দিয়ে
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — বিকাশকসকলক unset current user code bypass কৰিবলৈ অনুমতি দিয়ে।
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "পুনৰাবৃত্ত পৰিমাণ" মুঠ ফিল্টাৰ কৰে।
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "প্ৰাৰম্ভিক পৰিমাণ" মুঠ ফিল্টাৰ কৰক।
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "প্ৰাৰম্ভিক পৰিমাণ" মুঠ ফিল্টাৰ কৰক।
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin বিকাশকসকলক credit value-ৰ সৈতে হস্তক্ষেপ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain record হ’ব নালাগে এনে shared checkout-form base domain-সমূহ ফিল্টাৰ কৰে।
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — নতুন field template যোগ কৰাৰ আমাৰ APIs ইয়াত hook হয়।
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — নতুন field type যোগ কৰাৰ আমাৰ APIs ইয়াত hook হয়।
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — ত্ৰুটি বাৰ্তাসমূহ ফিল্টাৰ কৰক।
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — কোনো field auto-submittable হয় নে নহয় সেই পৰীক্ষা bypass কৰিবলৈ বিকাশকসকলক অনুমতি দিয়ে।
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin বিকাশকসকলক form validator-ত custom alias যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin বিকাশকসকলক validation rule-সমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — অনিচ্ছিত Params unset কৰক।
+- [wu_contains_element](./Filters/wu_contains_element) — বিকাশকসকলক প্ৰাৰম্ভিক সন্ধানৰ ফলাফল সলনি কৰিবলৈ অনুমতি দিয়ে।
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host provider-সকলক constant-টো ভিন্নভাৱে install কৰিবলৈ অনুমতি দিয়ে।
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — দেশৰ প্ৰশাসনিক উপ-বিভাগসমূহৰ সুন্দৰ নাম ঘূৰাই দিয়ে।
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — কোনো দেশৰ এখন state-ৰ বাবে নগৰসমূহৰ তালিকা ঘূৰাই দিয়ে।
+- [wu_country_get_states](./Filters/wu_country_get_states) — এই দেশৰ বাবে state-সমূহৰ তালিকা ঘূৰাই দিয়ে।
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — বিকাশকসকলক default behavior পৰিবৰ্তন কৰি current customer ভিন্নভাৱে set কৰিবলৈ অনুমতি দিয়ে।
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — বিকাশকসকলক default behavior পৰিবৰ্তন কৰি current membership ভিন্নভাৱে set কৰিবলৈ অনুমতি দিয়ে।
+- [wu_current_set_site](./Filters/wu_current_set_site) — বিকাশকসকলক default behavior পৰিবৰ্তন কৰি current site ভিন্নভাৱে set কৰিবলৈ অনুমতি দিয়ে।
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — বিকাশকসকলক manage site URL parameter-সমূহ পৰিবৰ্তন কৰিবলৈ অনুমতি দিয়ে।
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin বিকাশকসকলক link-সমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin বিকাশকসকলক ফলাফল নিৰ্ধাৰণ কৰিবলৈ নতুন পৰীক্ষা যোগ কৰাৰ অনুমতি দিয়ে।
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — পাছত আমাক অতিৰিক্ত ব্লক যোগ কৰিবলগীয়া হ’ব পাৰে।
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — বিকাশকাৰীসকলক অতিৰিক্ত বিল্ডাৰ বা প্লাগইনৰ সৈতে কাম কৰিবলৈ এই পাৰ্ছাৰটো বিস্তাৰ কৰিব পৰাকৈ সাধাৰণ ফিল্টাৰ যোগ কৰে।
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — অতিৰিক্ত পাছৱৰ্ড নিয়ম বলৱৎ কৰিব নে নকৰে ফিল্টাৰ কৰক।
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — সৃষ্টি কৰা গ্ৰাহক ব্যৱহাৰকাৰী নাম ফিল্টাৰ কৰক।
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — প্লাগইন বিকাশকাৰীসকলক checkout পৃষ্ঠাৰ পূৰ্ব-নিৰ্ধাৰিত মানসমূহ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — এই আচৰণ বাইপাছ কৰিবলৈ বিকাশকাৰীসকলক নতুন ফৰ্ম slug যোগ কৰাৰ অনুমতি দিয়ক।
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — বিকাশকাৰী আৰু add-ons-ক নতুন migration ধাপ যোগ কৰাৰ অনুমতি দিয়ক
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — এই একে পদ্ধতিত তলত এই ফিল্টাৰৰ বিষয়ে অধিক চাওক।
+- [wu_get_post_types](./Filters/wu_get_post_types) — কোনবোৰ post type প্ৰদৰ্শন কৰা উচিত সেয়া বাছনি কৰিবলৈ বিকাশকাৰীসকলক অনুমতি দিয়ক।
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — শাৰীসমূহ ঘূৰাই দিয়ে, ফিল্টাৰ কৰিব পৰা
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — বিকাশকাৰীসকলক domain/path যোৰসমূহ পৰিবৰ্তন কৰিবলৈ অনুমতি দিয়ক।
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting integration setup-ৰ বাবে wizard sectionসমূহ ফিল্টাৰ কৰে।
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — এখন ফৰ্মৰ ক্ষেত্ৰসমূহ ফিল্টাৰ কৰে। ফৰ্মখন ফিল্টাৰৰ নামত থকা ID-ৰ দ্বাৰা চিনাক্ত কৰা হয়।
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — স্বাধীন billing cycle থকা product typeসমূহ ফিল্টাৰ কৰক।
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — প্লাগইন বিকাশকাৰীসকলক API-ৰ বাবে এটা নিৰ্দিষ্ট অৱস্থা জোৰকৈ নিৰ্ধাৰণ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — প্লাগইন বিকাশকাৰীসকলক development mode-ৰ বাবে অতিৰিক্ত পৰীক্ষা যোগ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — প্লাগইন বিকাশকাৰীসকলক MCP adapter-ৰ বাবে এটা নিৰ্দিষ্ট অৱস্থা জোৰকৈ নিৰ্ধাৰণ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — সুৰক্ষাৰ কাৰণে, আমি hook কৰাৰ বাবে উপলব্ধ actionৰ সংখ্যা সীমিত কৰোঁ। এই ফিল্টাৰে বিকাশকাৰীসকলক বিস্তাৰ কৰিবলৈ অনুমতি দিয়ে
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — এই planত এটা নিৰ্দিষ্ট post type অনুমোদিত নে নহয় পৰীক্ষা কৰে, প্লাগইন বিকাশকাৰীসকলক return value ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP address verification বলৱৎ কৰিব নে নকৰে ফিল্টাৰ কৰক।
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent verification বলৱৎ কৰিব নে নকৰে ফিল্টাৰ কৰক।
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — সৃষ্টি কৰা magic link URL ফিল্টাৰ কৰক।
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic linkসমূহ সক্ষম নে নহয় ফিল্টাৰ কৰক।
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — কোনো domainক primary কৰাৰ পিছত redirect URL ফিল্টাৰ কৰে।
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — auto-redirect বাধা দিয়া parameterসমূহৰ এখন exclusion list সৃষ্টি কৰক।
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ability অন্তৰ্ভুক্তিৰ সিদ্ধান্ত override কৰিবলৈ ফিল্টাৰ।
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — গণনা কৰা expiration date ফিল্টাৰ কৰে।
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — renewalৰ পিছত নিৰ্ধাৰণ কৰিবলগীয়া গণনা কৰা expiration date ফিল্টাৰ কৰে।
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — বিকাশকাৰীসকলক নতুন update form slug যোগ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ন্যূনতম পাছৱৰ্ড দৈৰ্ঘ্য ফিল্টাৰ কৰক।
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — প্ৰয়োজনীয় ন্যূনতম পাছৱৰ্ড শক্তি ফিল্টাৰ কৰক (zxcvbn score)।
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — প্লাগইন বিকাশকাৰীসকলক, আৰু আমাকো, আমাৰ সম্পাদনা পৃষ্ঠাসমূহত action link যোগ কৰিবলৈ অনুমতি দিয়ক
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — পাছৱৰ্ডত সৰু আখৰ প্ৰয়োজন নে নহয় ফিল্টাৰ কৰক।
+- [wu_password_require_number](./Filters/wu_password_require_number) — পাছৱৰ্ডত সংখ্যা প্ৰয়োজন নে নহয় ফিল্টাৰ কৰক।
+- [wu_password_require_special](./Filters/wu_password_require_special) — পাছৱৰ্ডত বিশেষ আখৰ প্ৰয়োজন নে নহয় ফিল্টাৰ কৰক।
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — পাছৱৰ্ডত ডাঙৰ আখৰ প্ৰয়োজন নে নহয় ফিল্টাৰ কৰক।
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ব্যৱহাৰকাৰীক pending paymentসমূহৰ বিষয়ে বাৰ্তা সলনি কৰিবলৈ অনুমতি দিয়ক।
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plan হিচাপে গণ্য কৰিবলগীয়া product typeসমূহ ফিল্টাৰ কৰক।
+- [wu_post_count](./Filters/wu_post_count) — প্লাগইন বিকাশকাৰীসকলক মুঠ গণনা সলনি কৰিবলৈ অনুমতি দিয়ক
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — প্লাগইন বিকাশকাৰীসকলক কোনটো post status গণনা কৰা উচিত সেয়া সলনি কৰিবলৈ অনুমতি দিয়ক। default হিচাপে, published আৰু private postসমূহ গণনা কৰা হয়
+- [wu_post_default_status](./Filters/wu_post_default_status) — object data databaseত সংৰক্ষণ কৰাৰ আগতে ফিল্টাৰ কৰে।
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ultimate Multisite-এ save কৰাৰ আগতে বিকাশকাৰীসকলক settings ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ক।
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — requestৰ সৈতে আগবঢ়া অনুমোদিত নে নহয় ফিল্টাৰ কৰে।
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — requestৰ সৈতে আগবঢ়া অনুমোদিত নে নহয় ফিল্টাৰ কৰে।
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — অনুৰোধটোৰ সৈতে আগবাঢ়িবলৈ অনুমতি আছে নে নাই সেয়া ফিল্টাৰ কৰে।
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — অনুৰোধটোৰ সৈতে আগবাঢ়িবলৈ অনুমতি আছে নে নাই সেয়া ফিল্টাৰ কৰে।
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — অনুৰোধটোৰ সৈতে আগবাঢ়িবলৈ অনুমতি আছে নে নাই সেয়া ফিল্টাৰ কৰে।
+- [wu_return_url](./Filters/wu_return_url) — checkout প্ৰক্ৰিয়াৰ পিছত ব্যৱহৃত gateway return URL সলনি কৰিবলৈ developers-ক অনুমতি দিয়ে।
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin developers-ক অধিক search models functions যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — developers-ক অতিৰিক্ত setup wizard পদক্ষেপ যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — নতুনকৈ সৃষ্টি কৰা siteৰ বাবে Ultimate Multisite-এ domain record সৃষ্টি কৰিব লাগে নে নাই সেয়া ফিল্টাৰ কৰে।
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — developers-ক redirectionটো short-circuit কৰিবলৈ অনুমতি দিয়ে, যাতে সেইটো সংঘটিত নহয়।
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler পুনৰলিখনৰ অনুমতি দিয়ে
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — siteসমূহৰ বাবে উপলব্ধ bulk actions ফিল্টাৰ কৰক।
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — networkৰ ভিতৰত get pluginssitesৰ বাবে মান সলনি কৰিবলৈ ফিল্টাৰ।
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — cross-domain single-sign-on ক্ষমতা সক্ৰিয়/নিষ্ক্ৰিয় কৰক।
+- [wu_sso_url](./Filters/wu_sso_url) — cross-domain customer actionsৰ বাবে ঘূৰাই দিয়াৰ আগতে সৃষ্টি কৰা SSO URLs ফিল্টাৰ কৰে।
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription data ফিল্টাৰ কৰক। success_url বা cancel_url override কৰিব পাৰে।
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent arguments ফিল্টাৰ কৰে।
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — পৰীক্ষা কৰিবলগীয়া planৰ ID ফিল্টাৰ কৰে। যদি এইটো থাকে, নতুন subscription-এ এই plan ব্যৱহাৰ কৰিব।
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — পৰীক্ষা কৰিবলগীয়া productৰ ID ফিল্টাৰ কৰে। যদি এইটো থাকে, নতুন subscription-এ এই product ব্যৱহাৰ কৰিব।
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge optionsৰ সৈতে পঠোৱা idempotency_key মান ফিল্টাৰ কৰে।
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — এই webhookৰ সৈতে জড়িত membership record ফিল্টাৰ কৰে।
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — databaseত সংৰক্ষণ কৰিবলৈ serialize কৰাৰ আগতে data meta ফিল্টাৰ কৰে।
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — databaseত সংৰক্ষণ কৰাৰ আগতে object data ফিল্টাৰ কৰে।
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — unlock URLলৈ upgrade সলনি কৰিবলৈ developers-ক অনুমতি দিয়ে
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping ব্যৱহাৰ কৰিব লাগে নে নাই নিৰ্ধাৰণ কৰক
+- [wu_username_from_email](./Filters/wu_username_from_email) — নতুন customer username ফিল্টাৰ কৰক।
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — membership users limit সম্পৰ্কীয় message সলনি কৰিবলৈ developers-ক অনুমতি দিয়ে
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — developers-ক replaceable list-ত অতিৰিক্ত folders যোগ কৰিবলৈ অনুমতি দিয়ে।
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — এই entityৰ বাবে কোনবোৰ sub_commands enabled আছে সেয়া ফিল্টাৰ কৰে।
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — আমাৰ constants inject কৰিব পৰা স্থানটো বুজিবলৈ চেষ্টা কৰোঁতে আমি তিনিটা patterns পৰীক্ষা কৰোঁ:

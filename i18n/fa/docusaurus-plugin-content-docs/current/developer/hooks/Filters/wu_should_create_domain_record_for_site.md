@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: فیلتر - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# فیلتر: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+فیلتر می‌کند که آیا Ultimate Multisite باید برای سایت تازه ایجادشده یک رکورد دامنه ایجاد کند یا نه.
+
+از این فیلتر برای جلوگیری از ایجاد خودکار رکورد دامنه یا به‌تعویق‌انداختن آن برای سایت‌هایی استفاده کنید که از یک دامنه پایه مشترک برای فرم checkout، یک میزبان داخلی، یا دامنه‌ای استفاده می‌کنند که یک یکپارچه‌سازی دیگر آن را جداگانه مدیریت خواهد کرد.
+
+## پارامترها {#parameters}
+
+| نام | نوع | توضیحات |
+|------|------|-------------|
+| $create | `bool` | اینکه آیا رکورد دامنه باید ایجاد شود یا نه. |
+| $site | `WP_Site` | شیء سایت تازه ایجادشده. |
+
+### از نسخه {#since}
+
+- 2.13.0
+
+### منبع {#source}
+
+در `inc/functions/domain.php` تعریف شده است.
+
+
+## بازگشت‌ها {#returns}
+
+مقدار بولی که نشان می‌دهد آیا رکورد دامنه ایجاد شود یا نه.

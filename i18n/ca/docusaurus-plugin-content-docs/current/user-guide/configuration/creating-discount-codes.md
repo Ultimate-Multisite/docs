@@ -3,13 +3,13 @@ title: Crear codis de descompte
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Crear Códigos de Descompte (v2)
+# Crear Códigos de Descompte (v2) {#creating-discount-codes-v2}
 
 _**NOTA IMPORTANT: Aquest article es refereix a la versió 2.x d'Ultimate Multisite.**_
 
 Amb Ultimate Multisite, pots crear códigos de descompte per donar descompontes als teus clients a les seves subscripcions. I crear-los és fàcil!
 
-## Crear i Editar Códigos de Descompte
+## Crear i Editar Códigos de Descompte {#creating-and-editing-discount-codes}
 
 Per crear o editar un código de descompte, fes clic a **Ultimate Multisite > Códigos de Descompte**.
 
@@ -87,7 +87,7 @@ El cupó ja és a la teva llista i, des d'allà, pots fer clic per **editar o el
 
 ###
 
-### Utilitzar Paràmetres URL:
+### Utilitzar Paràmetres URL: {#using-url-parameters}
 
 Si vols personalitzar les teves taules de preus o crear una pàgina de cupó atractiva per al teu lloc web i vols aplicar un code de descompte al teu formular de caixa automàticament, pots fer-ho mitjançant paràmetres URL.
 

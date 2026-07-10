@@ -3,7 +3,7 @@ title: هوکونه او فیلټره
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks او فیلترونه
+# Ultimate Multisite Hooks او فیلترونه {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite په حقیقت کې ډېرې فنکشنونه او د ډیټابیس پوښتنه (database queries) جوړوي. دا هم فلټرونه (filters) او هوکونه (hooks) لري چې تاسو ته اجازه ورکوي اوسني فنکشنونه بدل کړئ یا نوی کوډ اضافه کړئ.
 

@@ -1,32 +1,32 @@
 ---
-title: Tổng quan về REST API
+title: Tổng quan REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Tài liệu Tham khảo REST API
+# Tài liệu tham khảo REST API {#rest-api-reference}
 
-## Cấu hình Cơ bản
+## Cấu hình cơ sở {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Xác thực (Authentication):** API Key & Secret (Sử dụng HTTP Basic Auth hoặc Tham số URL)
+**URL cơ sở:** `{site_url}/wp-json/wu/v2/`
+**Xác thực:** Khóa API & Secret (HTTP Basic Auth hoặc tham số URL)
 
-## Xác thực
+## Xác thực {#authentication}
 
-### Bật API
+### Bật API {#enable-api}
 ```php
-// Bật API trong cài đặt Ultimate Multisite hoặc bằng code
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Lấy Thông tin Xác thực API
+### Lấy thông tin xác thực API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Các Phương thức Xác thực
+### Phương thức xác thực {#authentication-methods}
 
-**HTTP Basic Auth (Khuyến nghị):**
+**HTTP Basic Auth (Được khuyến nghị):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Các Endpoint Chính
+## Các điểm cuối cốt lõi {#core-endpoints}
 
-### 1. API Khách hàng (Customers API)
+### 1. API khách hàng {#1-customers-api}
 
-**Base Route:** `/customers`
+**Tuyến cơ sở:** `/customers`
 
-**Lấy Tất cả Khách hàng**
+**Lấy tất cả khách hàng**
 ```http
 GET /wu/v2/customers
 ```
 
-**Lấy Thông tin Khách hàng Cụ thể**
+**Lấy một khách hàng**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Tạo Khách hàng Mới**
+**Tạo khách hàng**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Cập nhật Thông tin Khách hàng**
+**Cập nhật khách hàng**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Ghi chú khách hàng VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Xóa Khách hàng**
+**Xóa khách hàng**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Trang web (Sites API)
+### 2. API trang {#2-sites-api}
 
-**Base Route:** `/sites`
+**Tuyến cơ sở:** `/sites`
 
-**Tạo Trang web Mới**
+**Tạo trang**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Trang web mới của tôi",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API Hội viên (Memberships API)
+### 3. API tư cách thành viên {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**Tuyến cơ sở:** `/memberships`
 
-**Tạo Hội viên Mới**
+**Tạo tư cách thành viên**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Sản phẩm (Products API)
+### 4. API sản phẩm {#4-products-api}
 
-**Base Route:** `/products`
+**Tuyến cơ sở:** `/products`
 
-**Lấy Tất cả Sản phẩm**
+**Lấy tất cả sản phẩm**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API Thanh toán (Payments API)
+### 5. API thanh toán {#5-payments-api}
 
-**Base Route:** `/payments`
+**Tuyến cơ sở:** `/payments`
 
-**Tạo Giao dịch Thanh toán**
+**Tạo thanh toán**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Tên miền (Domains API)
+### 6. API tên miền {#6-domains-api}
 
-**Base Route:** `/domains`
+**Tuyến cơ sở:** `/domains`
 
-**Ánh xạ Tên miền**
+**Ánh xạ tên miền**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Đăng ký (Registration Endpoint)
+## Điểm cuối đăng ký {#registration-endpoint}
 
-Endpoint `/register` cung cấp quy trình đăng ký/thanh toán hoàn chỉnh:
+Điểm cuối `/register` cung cấp một luồng thanh toán/đăng ký hoàn chỉnh:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Trang web mới của tôi",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Phản hồi (Response):**
+**Phản hồi:**
 ```json
 {
     "customer": { ... },
@@ -209,32 +209,65 @@ Content-Type: application/json
 }
 ```
 
-## Phản hồi Lỗi (Error Responses)
+## Điểm cuối đối tượng thuê độc lập {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 bổ sung phạm vi REST cho đối tượng thuê độc lập dành cho các tích hợp cấp phát, kiểm tra hoặc xác minh các đối tượng thuê biệt lập.
+
+Payload yêu cầu chính xác phụ thuộc vào năng lực máy chủ đã bật, nhưng các tích hợp nên dự kiến các nhóm điểm cuối này:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Sử dụng điểm cuối bootstrap để chuẩn bị sổ đăng ký đối tượng thuê, cơ sở dữ liệu, hệ thống tệp và trạng thái định tuyến. Sử dụng các điểm cuối trạng thái di chuyển và xác minh trước khi chuyển đổi lưu lượng sản xuất. Sử dụng điểm cuối xóa để tháo dỡ đối tượng thuê độc lập, nhờ đó thông tin xác thực cơ sở dữ liệu được xóa thông qua luồng dọn dẹp addon.
+
+Các phản hồi trạng thái di chuyển điển hình bao gồm:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Xem `ready: false` là một yếu tố chặn trước khi ra mắt. Kiểm tra chi tiết xác minh, khắc phục ràng buộc máy chủ cơ sở dữ liệu, hàng đợi, cấp phát người dùng hoặc vấn đề định tuyến, rồi thử lại xác minh.
+
+## Phản hồi lỗi {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Giá trị tham số không hợp lệ",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Định dạng email không hợp lệ"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Phân trang và Lọc (Pagination and Filtering)
+## Phân trang và lọc {#pagination-and-filtering}
 
-**Tham số Truy vấn (Query Parameters):**
+**Tham số truy vấn:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Các tham số phổ biến:
-- `per_page` - Số lượng mục trên mỗi trang (mặc định: 20, tối đa: 100)
+- `per_page` - Mục trên mỗi trang (mặc định: 20, tối đa: 100)
 - `page` - Số trang
-- `search` - Từ khóa tìm kiếm
+- `search` - Cụm từ tìm kiếm
 - `orderby` - Trường sắp xếp
 - `order` - Hướng sắp xếp (asc/desc)
 - `status` - Lọc theo trạng thái

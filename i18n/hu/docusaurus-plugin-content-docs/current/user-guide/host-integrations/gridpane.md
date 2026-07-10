@@ -3,17 +3,17 @@ title: GridPane integráció
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# GridPane integráció
+# GridPane integráció {#gridpane-integration}
 
-## Áttekintés
+## Áttekintés {#overview}
 A GridPane egy speciális WordPress hosting vezérlőpult, amelyet profi WordPress szakembereknek fejlesztettek. Ez az integráció automatikus domain szinkronizálást és SSL tanúsítvány kezelést tesz lehetővé az Ultimate Multisite és a GridPane között.
 
-## Funkciók
+## Funkciók {#features}
 - Automatikus domain szinkronizálás
 - SSL tanúsítvány kezelés
 - A SUNRISE konstans automatikus konfigurálása
 
-## Követelmények
+## Követelmények {#requirements}
 A következő konstansokat kell meghatároznod a `wp-config.php` fájlban:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Beállítási útmutató
+## Beállítási útmutató {#setup-instructions}
 
-### 1. GridPane API hitelesítő adatok beszerzése
+### 1. GridPane API hitelesítő adatok beszerzése {#1-get-your-gridpane-api-credentials}
 
 1. Jelentkezz be a GridPane vezérlőpultba
 2. Navigálj a "Settings" > "API" menüpontra
 3. Ha még nincs API kulcsod, generálj egyet
 4. Másold ki az API kulcsot
 
-### 2. Szerver és oldal azonosítók beszerzése
+### 2. Szerver és oldal azonosítók beszerzése {#2-get-your-server-and-site-ids}
 
 1. A GridPane vezérlőpultban menj a "Servers" menüpontra
 2. Válaszd ki azt a szervert, ahol a WordPress multisite oldalad található
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Menj a "Sites" menüpontra és válaszd ki a WordPress oldaladat
 5. Jegyezd fel a Site ID-t (az URL-ben vagy az oldal részletek oldalán látható)
 
-### 3. Konstansok hozzáadása a wp-config.php fájlhoz
+### 3. Konstansok hozzáadása a wp-config.php fájlhoz {#3-add-constants-to-wp-configphp}
 
 Add hozzá a következő konstansokat a `wp-config.php` fájlodhoz:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Az integráció engedélyezése
+### 4. Az integráció engedélyezése {#4-enable-the-integration}
 
 1. A WordPress admin felületen menj az Ultimate Multisite > Settings menüpontra
 2. Navigálj a "Domain Mapping" fülre
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Engedélyezd a GridPane integrációt
 5. Kattints a "Save Changes" gombra
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
 Amikor egy domaint hozzárendelsz az Ultimate Multisite-ban:
 
@@ -69,23 +69,23 @@ Amikor egy domaint hozzárendelsz az Ultimate Multisite-ban:
 
 Az integráció automatikusan kezeli a SUNRISE konstanst a wp-config.php fájlban, ami szükséges a domain mapping megfelelő működéséhez.
 
-## SUNRISE konstans kezelés
+## SUNRISE konstans kezelés {#sunrise-constant-management}
 
 A GridPane integráció egyik egyedi funkciója, hogy automatikusan visszaállítja a SUNRISE konstanst a wp-config.php fájlban, hogy elkerülje a konfliktusokat a GridPane saját domain mapping rendszerével. Ez biztosítja, hogy mindkét rendszer zökkenőmentesen működjön együtt.
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### API kapcsolódási problémák
+### API kapcsolódási problémák {#api-connection-issues}
 - Ellenőrizd, hogy az API kulcsod helyes-e
 - Győződj meg róla, hogy a szerver és oldal azonosítók helyesek
 - Bizonyosodj meg arról, hogy a GridPane fiókod rendelkezik a szükséges jogosultságokkal
 
-### SSL tanúsítvány problémák
+### SSL tanúsítvány problémák {#ssl-certificate-issues}
 - A GridPane-nek időbe telhet az SSL tanúsítványok kiállítása
 - Ellenőrizd, hogy a domaineid megfelelően a szervered IP címére mutatnak-e
 - Nézd meg a GridPane SSL beállításait az oldaladnál
 
-### A domain nem lett hozzáadva
+### A domain nem lett hozzáadva {#domain-not-added}
 - Ellenőrizd az Ultimate Multisite naplókat hibaüzenetek után kutatva
 - Győződj meg róla, hogy a domain nincs már hozzáadva a GridPane-hez
 - Bizonyosodj meg arról, hogy a domain DNS rekordjai megfelelően vannak konfigurálva

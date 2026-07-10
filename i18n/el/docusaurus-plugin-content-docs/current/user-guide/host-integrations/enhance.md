@@ -3,33 +3,33 @@ title: Βελτίωση Ενσωμάτωσης Πίνακα Ελέγχου
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Ενσωμάτωση με το Enhance Control Panel
+# Ενσωμάτωση με το Enhance Control Panel {#enhance-control-panel-integration}
 
-## Επισκόπηση
+## Επισκόπηση {#overview}
 Το Enhance είναι ένα σύγχρονο control panel που προσφέρει ισχυρές δυνατότητες αυτοματισμού και διαχείρισης hosting. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του Enhance Control Panel.
 
 **Σχετική συζήτηση:** Δείτε τη [Συζήτηση #265 στο GitHub](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) για συμβουλές από την κοινότητα και επιπλέον πληροφορίες.
 
-## Χαρακτηριστικά
+## Χαρακτηριστικά {#features}
 - Αυτόματος συγχρονισμός domains όταν γίνεται αντιστοίχιση στο Ultimate Multisite
 - Αυτόματη έκδοση πιστοποιητικών SSL μέσω LetsEncrypt όταν επιλύεται το DNS
 - Υποστήριξη subdomains για δίκτυα που λειτουργούν σε λειτουργία subdomain
 - Αφαίρεση domain όταν διαγράφονται οι αντιστοιχίσεις
 - Δοκιμή σύνδεσης για επαλήθευση των διαπιστευτηρίων API
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 
-### Απαιτήσεις συστήματος
+### Απαιτήσεις συστήματος {#system-requirements}
 - Εγκατεστημένο και προσβάσιμο Enhance Control Panel
 - Εγκατάσταση WordPress Multisite που φιλοξενείται ή είναι συνδεδεμένη σε διακομιστή Enhance
 - Web server Apache (το Enhance υποστηρίζει προς το παρόν ρυθμίσεις Apache· το LiteSpeed Enterprise είναι διαθέσιμο σε μειωμένο κόστος)
 
-### Πρόσβαση στο API
+### Πρόσβαση στο API {#api-access}
 Πρέπει να έχετε πρόσβαση διαχειριστή στο Enhance Control Panel για να δημιουργήσετε tokens API.
 
-## Απόκτηση των διαπιστευτηρίων API
+## Απόκτηση των διαπιστευτηρίων API {#getting-your-api-credentials}
 
-### 1. Δημιουργία ενός API Token
+### 1. Δημιουργία ενός API Token {#1-create-an-api-token}
 
 1. Συνδεθείτε στο Enhance Control Panel ως διαχειριστής
 2. Κάντε κλικ στις **Settings** στο μενού πλοήγησης
@@ -44,7 +44,7 @@ _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 
 Μετά τη δημιουργία, θα εμφανιστούν το **Access Token** και το **Organization ID**. **Αποθηκεύστε τα αμέσως** καθώς το token θα εμφανιστεί μόνο μία φορά.
 
-### 2. Λήψη του Organization ID
+### 2. Λήψη του Organization ID {#2-get-your-organization-id}
 
 Το Organization ID εμφανίζεται στη σελίδα Access Tokens σε ένα μπλε πλαίσιο πληροφοριών με την ένδειξη "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 2. Κάντε κλικ στο **Manage customer** για τον σχετικό πελάτη
 3. Δείτε τη διεύθυνση URL - το Organization ID είναι οι αλφαριθμητικοί χαρακτήρες μετά το `/customers/`
 
-### 3. Λήψη του Server ID
+### 3. Λήψη του Server ID {#3-get-your-server-id}
 
 Για να βρείτε το Server ID (απαραίτητο για λειτουργίες domain):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Το server ID ακολουθεί τη μορφή UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. Λήψη της διεύθυνσης URL του API
+### 4. Λήψη της διεύθυνσης URL του API {#4-get-your-api-url}
 
 Η διεύθυνση URL του API είναι η διεύθυνση του Enhance Control Panel με την προσθήκη `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Χρήση μόνο του domain χωρίς `/api/`
 - Χρήση HTTP αντί για HTTPS (το HTTPS είναι υποχρεωτικό για λόγους ασφαλείας)
 
-## Ρύθμιση
+## Ρύθμιση {#configuration}
 
-### Απαιτούμενες σταθερές
+### Απαιτούμενες σταθερές {#required-constants}
 
 Προσθέστε τις ακόλουθες σταθερές στο αρχείο `wp-config.php`:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Ρύθμιση μέσω του Οδηγού ενσωμάτωσης
+### Ρύθμιση μέσω του Οδηγού ενσωμάτωσης {#setup-via-integration-wizard}
 
 1. Στον πίνακα διαχείρισης του WordPress, μεταβείτε στο **Ultimate Multisite** > **Settings**
 2. Πλοηγηθείτε στην καρτέλα **Integrations**
@@ -112,17 +112,17 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - Αφήσετε τον οδηγό να εισάγει τις σταθερές στο αρχείο `wp-config.php` αυτόματα
 - Αντιγράψετε τους ορισμούς των σταθερών και να τους προσθέσετε χειροκίνητα
 
-## Πρόσθετη ρύθμιση του WordPress
+## Πρόσθετη ρύθμιση του WordPress {#additional-wordpress-configuration}
 
 Με βάση τα σχόλια της κοινότητας ([Συζήτηση #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), μπορεί να χρειαστεί να ρυθμίσετε αυτές τις πρόσθετες επιλογές:
 
-### Ρύθμιση .htaccess
+### Ρύθμιση .htaccess {#htaccess-configuration}
 
 Αν αντιμετωπίζετε προβλήματα με την αντιστοίχιση domains:
 1. Διαγράψτε το αρχικό αρχείο `.htaccess` του Enhance
 2. Αντικαταστήστε το με το τυπικό αρχείο `.htaccess` του WordPress Multisite
 
-### Σταθερές Cookie
+### Σταθερές Cookie {#cookie-constants}
 
 Προσθέστε αυτές τις σταθερές στο `wp-config.php` για να εξασφαλίσετε τη σωστή διαχείριση των cookies σε αντιστοιχισμένα domains:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Πώς λειτουργεί
+## Πώς λειτουργεί {#how-it-works}
 
-### Όταν αντιστοιχίζεται ένα Domain
+### Όταν αντιστοιχίζεται ένα Domain {#when-a-domain-is-mapped}
 
 1. Ένας χρήστης αντιστοιχίζει ένα προσαρμοσμένο domain στο Ultimate Multisite (ή δημιουργείται ένας νέος ιστότοπος σε λειτουργία subdomain)
 2. Η ενσωμάτωση στέλνει ένα αίτημα POST στο API του Enhance: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Όταν το DNS επιλύεται στον διακομιστή σας, το Enhance εκδίδει αυτόματα ένα πιστοποιητικό SSL μέσω LetsEncrypt
 5. Το domain γίνεται ενεργό με HTTPS
 
-### Όταν αφαιρείται ένα Domain
+### Όταν αφαιρείται ένα Domain {#when-a-domain-is-removed}
 
 1. Μια αντιστοίχιση domain διαγράφεται στο Ultimate Multisite
 2. Η ενσωμάτωση ρωτά το Enhance για να βρει το ID του domain
 3. Αποστέλλεται ένα αίτημα DELETE στο: `/servers/{server_id}/domains/{domain_id}`
 4. Το Enhance αφαιρεί το domain από τη ρύθμιση του διακομιστή σας
 
-### Έλεγχος DNS και SSL
+### Έλεγχος DNS και SSL {#dns-and-ssl-checking}
 
 Το Ultimate Multisite περιλαμβάνει ενσωματωμένο έλεγχο DNS και SSL:
 - Μπορείτε να ρυθμίσετε το διάστημα ελέγχου στις **Domain Mapping Settings** (προεπιλογή: 300 δευτερόλεπτα/5 λεπτά)
@@ -157,9 +157,9 @@ define('ADMIN_COOKIE_PATH', '/');
 - Η εγκυρότητα του πιστοποιητικού SSL ελέγχεται αυτόματα
 - Το Enhance χειρίζεται την έκδοση SSL αυτόματα, επομένως δεν απαιτείται χειροκίνητη ρύθμιση SSL
 
-## Επαλήθευση ρύθμισης
+## Επαλήθευση ρύθμισης {#verifying-setup}
 
-### Δοκιμή της σύνδεσης
+### Δοκιμή της σύνδεσης {#test-the-connection}
 
 1. Στον Οδηγό ενσωμάτωσης, χρησιμοποιήστε το βήμα **Test Connection**
 2. Το plugin θα επιχειρήσει να εμφανίσει τη λίστα των domains στον διακομιστή σας
@@ -169,7 +169,7 @@ define('ADMIN_COOKIE_PATH', '/');
    - Το Server ID είναι έγκυρο
    - Τα δικαιώματα έχουν ρυθμιστεί σωστά
 
-### Μετά την αντιστοίχιση ενός Domain
+### Μετά την αντιστοίχιση ενός Domain {#after-mapping-a-domain}
 
 1. Αντιστοιχίστε ένα δοκιμαστικό domain στο Ultimate Multisite
 2. Ελέγξτε τα αρχεία καταγραφής του Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ define('ADMIN_COOKIE_PATH', '/');
    - Το νέο domain θα πρέπει να εμφανίζεται στη λίστα
 4. Μόλις διαδοθεί το DNS, επαληθεύστε ότι το SSL εκδόθηκε αυτόματα
 
-## Αντιμετώπιση προβλημάτων
+## Αντιμετώπιση προβλημάτων {#troubleshooting}
 
-### Προβλήματα σύνδεσης API
+### Προβλήματα σύνδεσης API {#api-connection-issues}
 
 **Σφάλμα: "Failed to connect to Enhance API"**
 - Βεβαιωθείτε ότι το `WU_ENHANCE_API_URL` περιλαμβάνει το `/api/` στο τέλος
@@ -198,7 +198,7 @@ define('ADMIN_COOKIE_PATH', '/');
 - Βεβαιωθείτε ότι το Server ID είναι σε έγκυρη μορφή UUID
 - Επιβεβαιώστε ότι ο διακομιστής υπάρχει στο Enhance panel σας
 
-### Το Domain δεν προστέθηκε
+### Το Domain δεν προστέθηκε {#domain-not-added}
 
 **Ελέγξτε τα αρχεία καταγραφής:**
 1. Μεταβείτε στο **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ define('ADMIN_COOKIE_PATH', '/');
 - Ανεπαρκή δικαιώματα API (βεβαιωθείτε ότι το token έχει ρόλο System Administrator)
 - Το Server ID δεν αντιστοιχεί στον πραγματικό διακομιστή στο Enhance
 
-### Προβλήματα με πιστοποιητικό SSL
+### Προβλήματα με πιστοποιητικό SSL {#ssl-certificate-issues}
 
 **Το SSL δεν εκδίδεται:**
 - Επαληθεύστε ότι το DNS δείχνει στη διεύθυνση IP του διακομιστή σας
@@ -225,7 +225,7 @@ define('ADMIN_COOKIE_PATH', '/');
 2. Βρείτε το domain σας και ελέγξτε την κατάσταση SSL
 3. Μπορείτε να ενεργοποιήσετε χειροκίνητα την έκδοση SSL αν χρειάζεται
 
-### Διάστημα ελέγχου DNS
+### Διάστημα ελέγχου DNS {#dns-check-interval}
 
 Αν τα domains ή τα πιστοποιητικά SSL αργούν να ενεργοποιηθούν:
 1. Μεταβείτε στο **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ define('ADMIN_COOKIE_PATH', '/');
 3. Μειώστε από την προεπιλογή των 300 δευτερολέπτων σε χαμηλότερη τιμή (ελάχιστη: 10 δευτερόλεπτα)
 4. **Σημείωση:** Χαμηλότερα διαστήματα σημαίνουν πιο συχνούς ελέγχους αλλά μεγαλύτερο φόρτο διακομιστή
 
-### Σφάλματα ταυτοποίησης
+### Σφάλματα ταυτοποίησης {#authentication-errors}
 
 **Σφάλματα HTTP 401/403:**
 - Δημιουργήστε ξανά το API token στο Enhance
@@ -241,7 +241,7 @@ define('ADMIN_COOKIE_PATH', '/');
 - Ελέγξτε ότι το token δεν έχει λήξει
 - Βεβαιωθείτε ότι χρησιμοποιείτε το σωστό Organization ID (αν και συνήθως δεν απαιτείται στο URL)
 
-### Ανάλυση αρχείων καταγραφής
+### Ανάλυση αρχείων καταγραφής {#log-analysis}
 
 Ενεργοποιήστε λεπτομερή καταγραφή:
 ```php
@@ -255,15 +255,15 @@ define('WP_DEBUG_LOG', true);
 - Αρχείο καταγραφής debug του WordPress: `wp-content/debug.log`
 - Αρχεία καταγραφής Enhance panel: Διαθέσιμα στη διεπαφή διαχείρισης του Enhance
 
-## Αναφορά API
+## Αναφορά API {#api-reference}
 
-### Ταυτοποίηση
+### Ταυτοποίηση {#authentication}
 Όλα τα αιτήματα API χρησιμοποιούν ταυτοποίηση με Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Συνηθισμένα Endpoints που χρησιμοποιούνται
+### Συνηθισμένα Endpoints που χρησιμοποιούνται {#common-endpoints-used}
 
 **Λίστα διακομιστών:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Πλήρης τεκμηρίωση API
+### Πλήρης τεκμηρίωση API {#full-api-documentation}
 Ολοκληρωμένη τεκμηρίωση API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Βέλτιστες πρακτικές
+## Βέλτιστες πρακτικές {#best-practices}
 
-### Ασφάλεια
+### Ασφάλεια {#security}
 - **Μην κάνετε ποτέ commit τα API tokens σε version control**
 - Αποθηκεύστε τα tokens στο `wp-config.php` που θα πρέπει να εξαιρείται από το Git
 - Χρησιμοποιήστε tokens με τα κατάλληλα δικαιώματα (System Administrator για πλήρη ενσωμάτωση)
 - Ορίστε ημερομηνίες λήξης tokens για περιβάλλοντα παραγωγής
 - Αλλάζετε τα tokens περιοδικά
 
-### Απόδοση
+### Απόδοση {#performance}
 - Χρησιμοποιήστε το προεπιλεγμένο διάστημα ελέγχου DNS (300 δευτερόλεπτα) για να αποφύγετε υπερβολικές κλήσεις API
 - Παρακολουθήστε τους πόρους του διακομιστή Enhance όταν εκτελείτε λειτουργίες domains μεγάλης κλίμακας
 - Σκεφτείτε να κατανείμετε χρονικά τις προσθήκες domains αν αντιστοιχίζετε πολλά domains ταυτόχρονα
 
-### Παρακολούθηση
+### Παρακολούθηση {#monitoring}
 - Ελέγχετε τακτικά τα αρχεία καταγραφής του Ultimate Multisite για σφάλματα ενσωμάτωσης
 - Ρυθμίστε παρακολούθηση για αποτυχημένες προσθήκες domains
 - Επαληθεύστε ότι τα πιστοποιητικά SSL εκδίδονται σωστά
 - Παρακολουθήστε τη χωρητικότητα του διακομιστή Enhance και τα όρια domains
 
-## Πρόσθετοι πόροι
+## Πρόσθετοι πόροι {#additional-resources}
 
 - **Επίσημη τεκμηρίωση Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Τεκμηρίωση API Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **Συζήτηση GitHub:** [Issue #265 - Συμβουλές ενσωμάτωσης Enhance](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Οδηγός αντιστοίχισης Domain του Ultimate Multisite:** Δείτε τη σελίδα wiki "How to Configure Domain Mapping v2"
 
-## Υποστήριξη
+## Υποστήριξη {#support}
 
 Αν αντιμετωπίσετε προβλήματα:
 1. Ελέγξτε την ενότητα Αντιμετώπιση προβλημάτων παραπάνω
@@ -326,7 +326,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 4. Επικοινωνήστε με την υποστήριξη του Enhance για ζητήματα σχετικά με το panel
 5. Δημιουργήστε μια νέα συζήτηση με λεπτομερή αρχεία καταγραφής σφαλμάτων για βοήθεια από την κοινότητα
 
-## Σημειώσεις
+## Σημειώσεις {#notes}
 
 - Αυτή η ενσωμάτωση διαχειρίζεται μόνο domain aliases· το Enhance διαχειρίζεται αυτόματα το SSL
 - Η ενσωμάτωση υποστηρίζει τόσο αντιστοιχίσεις προσαρμοσμένων domains όσο και ιστότοπους βασισμένους σε subdomains

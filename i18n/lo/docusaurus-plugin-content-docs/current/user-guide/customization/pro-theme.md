@@ -3,7 +3,7 @@ title: ໂທລະສັບ PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# การปรับแต่งหน้า Admin ของคุณด้วย PRO Theme
+# การปรับแต่งหน้า Admin ของคุณด้วย PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 บ่อยครั้งเวลาที่เราทำงานให้ลูกค้า เราก็มีความต้องการที่จะมอบประสบการณ์ที่ปรับแต่งเองในแดชบอร์ดของ WordPress ให้กับลูกค้าของเรา ถ้าคุณกำลังมองหาลุคและฟีลลิ่งที่เป็นมืออาชีพมากขึ้น PRO Theme อาจช่วยคุณได้
 

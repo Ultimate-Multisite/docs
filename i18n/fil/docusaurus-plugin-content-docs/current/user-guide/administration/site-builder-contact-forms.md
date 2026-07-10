@@ -3,11 +3,11 @@ title: Mga Form ng Contact sa Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Contact Forms
+# Site Builder Contact Forms {#site-builder-contact-forms}
 
 Nagdaragdag ang Superdav AI Agent v1.10.0 ng kakayahang gumawa ng contact form nang direkta mula sa chat interface gamit ang Site Builder agent. Pinapayagan ka nitong magdagdag ng fully functional na contact form sa anumang page nang hindi umaalis sa chat.
 
-## Overview
+## Overview {#overview}
 
 Ang kakayahan ng Site Builder para sa contact form (`create_contact_form`) ay awtomatikong nakakakita ng form plugin na naka-install sa iyong site at gumagawa ng contact form gamit ang native capabilities ng plugin na iyon. Kasama sa mga sinusuportahang form plugins ang:
 
@@ -18,7 +18,7 @@ Ang kakayahan ng Site Builder para sa contact form (`create_contact_form`) ay aw
 
 Awtomatikong pipiliin ng assistant ang pinakamahusay na available na form plugin sa iyong site at magge-generate ng contact form na akma sa plugin na iyon.
 
-## Paglikha ng Contact Form
+## Paglikha ng Contact Form {#creating-a-contact-form}
 
 Upang makagawa ng contact form gamit ang Site Builder:
 
@@ -34,7 +34,7 @@ Upang makagawa ng contact form gamit ang Site Builder:
 
 4. Magge-generate ang Site Builder ng contact form at magbabalik ng shortcode na handa nang i-embed.
 
-## Paggamit ng Generated Shortcode
+## Paggamit ng Generated Shortcode {#using-the-generated-shortcode}
 
 Pagkatapos gumawa ng contact form ang Site Builder, magbabalik ito ng isang shortcode (halimbawa, `[contact-form-7 id="123"]`). Maaari mo itong:
 
@@ -45,11 +45,11 @@ Pagkatapos gumawa ng contact form ang Site Builder, magbabalik ito ng isang shor
 
 3. **Gamitin sa isang template** — Kung komportable ka sa PHP, maaari mong idagdag ang shortcode sa isang theme template file.
 
-## Pag-customize ng Contact Form
+## Pag-customize ng Contact Form {#customizing-the-contact-form}
 
 Pagkatapos gumawa ng contact form ang Site Builder, maaari mo itong i-customize pa:
 
-### Sa pamamagitan ng Chat Interface
+### Sa pamamagitan ng Chat Interface {#via-the-chat-interface}
 
 Hilingin sa Site Builder na baguhin ang form:
 
@@ -57,7 +57,7 @@ Hilingin sa Site Builder na baguhin ang form:
 
 Iuuupdate ng Site Builder ang form at magbabalik ng updated shortcode.
 
-### Sa pamamagitan ng Form Plugin's Admin Interface
+### Sa pamamagitan ng Form Plugin's Admin Interface {#via-the-form-plugins-admin-interface}
 
 Maaari mo ring i-customize ang form nang direkta sa settings ng iyong form plugin:
 
@@ -65,7 +65,7 @@ Maaari mo ring i-customize ang form nang direkta sa settings ng iyong form plugi
 2. Hanapin ang form na ginawa ng Site Builder.
 3. I-edit ang mga form field, validation rules, at email notifications kung kinakailangan.
 
-## Form Plugins at Compatibility
+## Form Plugins at Compatibility {#form-plugins-and-compatibility}
 
 Awtomatikong nakakakita ang Site Builder kung anong form plugin ang naka-install sa iyong site at ginagamit ito para gawin ang contact form. Kung mayroong maraming form plugins na naka-install, uunahin ng Site Builder ang mga ito sa pagkakasunud-sunod na ito:
 
@@ -76,7 +76,7 @@ Awtomatikong nakakakita ang Site Builder kung anong form plugin ang naka-install
 
 Kung walang naka-install sa mga plugin na ito, magrerekomenda ang Site Builder na mag-install muna ng isa bago gumawa ng contact form.
 
-## Email Notifications
+## Email Notifications {#email-notifications}
 
 Ang mga contact form na ginawa ng Site Builder ay naka-configure na magpadala ng email notifications sa site administrator by default. Maaari mong i-customize ang recipient email address at ang notification message:
 
@@ -91,21 +91,21 @@ Para sa mas detalyadong instructions, tingnan ang dokumentasyon ng iyong form pl
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Example Use Cases
+## Example Use Cases {#example-use-cases}
 
-### Simple Contact Form
+### Simple Contact Form {#simple-contact-form}
 
 > "Gumawa ng simple contact form na may mga field para sa pangalan, email, at mensahe."
 
-### Multi-Step Form
+### Multi-Step Form {#multi-step-form}
 
 > "Gumawa ng contact form na may unang step para sa contact information at pangalawang step para sa mensahe at preferred contact method."
 
-### Form with Conditional Logic
+### Form with Conditional Logic {#form-with-conditional-logic}
 
 > "Gumawa ng contact form na nagpapakita ng iba't ibang fields batay sa pagpili ng user sa isang dropdown."
 
-### Form with File Upload
+### Form with File Upload {#form-with-file-upload}
 
 > "Gumawa ng contact form na nagpapahintulot sa mga user na mag-upload ng file o attachment."
 

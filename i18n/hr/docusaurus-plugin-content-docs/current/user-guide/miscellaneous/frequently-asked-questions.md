@@ -3,7 +3,7 @@ title: Često postavljana pitanja
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Često postavljana pitanja
+# Često postavljana pitanja {#frequently-asked-questions}
 
 Ovo su neka od najčešćih **često postavljanih pitanja** koja se pojavljuju prilikom zahtjeva za podrškom.
 

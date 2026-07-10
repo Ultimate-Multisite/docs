@@ -4,11 +4,11 @@ title: Filtre - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Renvoie la valeur de l'option réseau slugifiée.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Renvoie la valeur de l'option réseau slugifiée.
 | $option_name | `string` | Le nom de l'option. |
 | $default | `mixed` | La valeur par défaut. |
 
-### Depuis
+### Depuis {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) at line 126
 
 
-## Renvoie
+## Renvoie {#returns}
 La valeur de l'option réseau slugifiée.

@@ -1,122 +1,126 @@
 ---
-title: Pul Almaq
+title: Ödəniş almaq
 sidebar_position: 15
-_i18n_hash: 4d43609c920fa8085a3cea69343ad2fa
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ödəniş Almaq (v2)
+# Ödənişlərin alınması (v2) {#getting-paid-v2}
 
-\_**MÜHİM QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**\_
+_**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
-Ultimate Multisite-da yerleşik üzvlük və hesablaşma sistemi var. Hesablaşma sistemimizin işləməsi üçün, e-commerce-da ən çox istifadə olunan ödəniş qapılarını (payment gateways) inteqrasiya etmişik. Ultimate Multisite-dakı standart ödəniş qapıları \_Stripe\_, \_PayPal\_ və Əl ilə Ödənişdir (Manual Payment). Həmçinin, müvafiq add-onları quraşdıraraq ödəniş almaq üçün \_WooCommerce\_, \_GoCardless\_ və \_Payfast\_dan istifadə edə bilərsiniz.
+Ultimate Multisite daxili üzvlük və hesablaşma sisteminə malikdir. Hesablaşma sistemimizin işləməsi üçün e-ticarətdə istifadə olunan ən yayğın ödəniş keçidlərini inteqrasiya etmişik. Ultimate Multisite-də standart ödəniş keçidləri _Stripe_ , _PayPal_ və Manual Payment-dir. Müvafiq əlavələrini quraşdıraraq ödənişləri qəbul etmək üçün _WooCommerce_ , _GoCardless_ və _Payfast_ da istifadə edə bilərsiniz.
 
-## Əsas Parametrlər
+## Əsas parametrlər {#basic-settings}
 
-Bu ödəniş qapılarının hamısını Ultimate Multisite ödəniş parametrləri altında konfiqurasiya edə bilərsiniz. Buna **Ultimate Multisite menyusu > Settings > Payments** yolundan çata bilərsiniz.
+Bu ödəniş keçidlərindən hər hansı birini Ultimate Multisite ödəniş parametrləri altında konfiqurasiya edə bilərsiniz. Bunu **Ultimate Multisite menyusu > Settings > Payments** bölməsinə keçərək tapa bilərsiniz.
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Ultimate Multisite-də Payments panelini göstərən ödəniş parametrləri səhifəsi](/img/config/payments-settings-page.png)
 
-Ödəniş qapınızı qurmazdan əvvəl, konfiqurasiya edə biləcəyiniz əsas ödəniş parametrlərinə nəzər salmağınız tövsiyə olunur:
+Ödəniş keçidinizi qurmazdan əvvəl konfiqurasiya edə biləcəyiniz əsas ödəniş parametrlərinə nəzər salın:
 
-**Avtomatik Yeniləməni Zorlama (Force auto-renew):** Bu, istifadəçinin seçdiyi hesablaşma tezliyinə əsasən ödənişin hər hesablaşma dövrünün sonunda avtomatik olaraq təkrarlanmasını təmin edir.
+**Avtomatik yenilə** **məni məcburi et:** Bu, istifadəçinin seçdiyi hesablaşma tezliyindən asılı olaraq hər hesablaşma dövrünün sonunda ödənişin avtomatik təkrarlanmasını təmin edəcək.
 
-<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
+<!-- Ekran görüntüsü mövcud deyil: Payments parametrləri səhifəsində Force Auto-Renew keçid parametri -->
 
-**Ödəniş Yolu olmadan sınaqları icazə et (Allow trials without payment method):** Bu seçimlər aktiv olduqda, müştəriniz qeydiyyat prosesi zamanı heç bir maliyyə məlumatı əlavə etməyəcək. Bu, yalnız sınaq müddəti bitdikdən sonra tələb olunacaq.
+Ultimate Multisite v2.13.0 avtomatik yenilənmə aktiv olan təkrarlanan üzvlüyü saxlamazdan əvvəl aktiv keçiddə təkrar istifadə oluna bilən yeniləmə etimad məlumatının olub-olmadığını yoxlayır. Yeniləmə etimad məlumatı keçid abunəliyi, hesablaşma razılaşması, saxlanmış vault token və ya ekvivalent təkrar istifadə oluna bilən ödəniş üsulu ola bilər. Keçid istifadə edilə bilən etimad məlumatının olmadığını bildirərsə, Ultimate Multisite üzvlüyü saxlayır, lakin avtomatik yenilənməni söndürür və çatışmayan etimad məlumatı vəziyyətini qeyd edir ki, administrator və ya dəstək prosesi müştəridən yenilənmə tarixindən əvvəl ödənişi yenidən təsdiqləməsini istəyə bilsin.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+Bu, keçid yalnız birdəfəlik ödənişləri toplaya bildiyi halda üzvlüyün avtomatik yenilənirmiş kimi görünməsinin qarşısını alır. Keçid əlavələri təkrarlanan ödəniş proseslərinin təkrar istifadə oluna bilən etimad məlumatı saxladığını təsdiqləməlidir, xüsusilə də keçid həm birdəfəlik tutma, həm də saxlanılan/abunəlik ödəniş rejimlərini dəstəklədikdə.
 
-**Ödəniş təsdiq edildikdə faktura göndər (Send invoice on payment confirmation):** Bu, ödənişdən sonra faktura göndərmək və ya göndərməmək imkanı verir. Qeyd edin ki, istifadəçilər öz ödəniş tarixçələrinə öz subsite dashboardları vasitəsilə daxil olacaqlar. Bu seçim Əl ilə Qapı (Manual Gateway) üçün keçərli deyil.
+**Ödəniş üsulu olmadan sınaqlara icazə** **ver:** Bu seçim aktiv olduqda, müştəriniz qeydiyyat prosesi zamanı heç bir maliyyə məlumatı əlavə etməli olmayacaq. Bu yalnız sınaq müddəti bitdikdən sonra tələb olunacaq.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Ekran görüntüsü mövcud deyil: Payments parametrləri səhifəsində Allow Trials Without Payment Method keçidi -->
 
-**Faktura nömrələmə sxemi (Invoice numbering scheme):** Burada ödəniş istinad kodu (payment reference code) və ya ardıcıl nömrə sxemi (sequential number scheme) seçə bilərsiniz. Fakturalarınız üçün ödəniş istinad kodu istifadə etməyi seçsəniz, heç nə konfiqurasiya etməyiniz lazım deyil. Əgər ardıcıl nömrə sxemi istifadə etməyi seçsəniz, **növbəti faktura nömrəsini** (Bu nömrə sistemdə yaradılan növbəti faktura üçün faktura nömrəsi kimi istifadə ediləcək. Hər yeni faktura yaradıldıqda bir vahid artırılır. Onu dəyişdirib, faktura ardıcıl nömrəsini müəyyən bir dəyərə sıfırlamaq üçün yadda saxlaya bilərsiniz) və **faktura nömrəsi prefiksini** konfiqurasiya etməlisiniz.
+**Ödəniş təsdiqində faktura göndər:** Bu, ödənişdən sonra faktura göndərib-göndərməməyi seçmək imkanı verir. Qeyd edin ki, istifadəçilər ödəniş tarixçələrinə alt-sayt Dashboard-larında daxil ola biləcəklər. Bu seçim Manual Gateway-ə tətbiq edilmir.
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Ekran görüntüsü mövcud deyil: Payments parametrləri səhifəsində Send Invoice on Payment Confirmation keçidi -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+**Faktura nömrələmə sxemi:** Burada ya ödəniş istinad kodunu, ya da ardıcıl nömrə sxemini seçə bilərsiniz. Fakturalarınız üçün ödəniş istinad kodundan istifadə etməyi seçsəniz, heç nə konfiqurasiya etməyə ehtiyac yoxdur. Ardıcıl nömrə sxemindən istifadə etməyi seçsəniz, **növbəti faktura nömrəsi** (Bu nömrə sistemdə yaradılacaq növbəti faktura üçün faktura nömrəsi kimi istifadə olunacaq. Hər dəfə yeni faktura yaradıldıqda bir vahid artırılır. Faktura ardıcıl nömrəsini konkret dəyərə sıfırlamaq üçün onu dəyişib saxlaya bilərsiniz) və **faktura nömrəsi prefiksi** konfiqurasiya edilməlidir.
 
-## Qapıları Harada Tapmaq Olar:
+<!-- Ekran görüntüsü mövcud deyil: Payment Reference Code və Sequential Number seçimləri olan Invoice numbering scheme açılan siyahısı -->
 
-Ödəniş qapılarını eyni səhifədə ( **Ultimate Multisite > Settings > Payments**) qura bilərsiniz. **Aktiv ödəniş qapıları (active payment gateways)**-nın birbaşa altında aşağıdakıları görəcəksiniz: \_Stripe\_, \_Stripe\_ _Checkout_, \_PayPal\_ və \_Manual\_.
+<!-- Ekran görüntüsü mövcud deyil: Sequential Number seçildikdə göstərilən növbəti faktura nömrəsi və faktura nömrəsi prefiksi sahələri -->
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+## Keçidləri harada tapmaq olar: {#where-to-find-the-gateways}
 
-Hər ödəniş qapısı üçün ona qurulması addımlarını göstərən xüsusi bir məqaləmiz var, bunu aşağıdakı linklərdə tapa bilərsiniz.
+Ödəniş keçidlərini eyni səhifədə qura bilərsiniz ( **Ultimate Multisite > Settings > Payments**). **aktiv ödəniş keçidləri** bölməsinin dərhal altında bunları görə biləcəksiniz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ və _Manual_.
 
-Ödəniş detallarını görə və redaktə edə bilərsiniz:
+![Stripe, Stripe Checkout, PayPal və Manual siyahısını göstərən Active Payment Gateways bölməsi](/img/config/payments-active-gateways.png)
 
-![Payment edit interface](/img/admin/payment-edit.png)
+Hər ödəniş keçidi üçün onun qurulması addımlarında sizə bələdçilik edəcək ayrıca məqaləmiz var; onları aşağıdakı keçidlərdə tapa bilərsiniz.
 
-Bu, ödəniş redaktə səhifəsinin tam görünüşüdür:
+Ödəniş təfərrüatlarına baxa və onları redaktə edə bilərsiniz:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Ödəniş redaktə interfeysi](/img/admin/payment-edit.png)
 
-Bu, ödəniş qapıları parametrlərinin tam görünüşüdür:
+Ödəniş redaktə səhifəsinin tam görünüşü belədir:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Ödəniş redaktəsinin tam interfeysi](/img/admin/payment-edit-full.png)
 
-**Stripe qapısını qurmaq**
+Ödəniş keçidləri parametrlərinin də tam görünüşü belədir:
 
-**PayPal qapısını qurmaq**** **
+![Ödəniş keçidləri parametrlərinin tam səhifəsi](/img/config/settings-payments-gateways-full.png)
 
-**Əl ilə ödənişləri qurmaq**
+**Stripe keçidinin qurulması**
 
-İndi, əgər ödəniş qapısı kimi \_WooCommerce\_, \_GoCardless\_ və ya \_Payfast\_dan istifadə etmək istəyirsinizsə, onların **add-onlarını quraşdırmalı və konfiqurasiya etməlisiniz**.
+**PayPal keçidinin qurulması**** **
 
-### WooCommerce add-onunu necə quraşdırmaq:
+**Əl ilə ödənişlərin qurulması**
 
-Bilirik ki, \_Stripe\_ və \_PayPal\_ bəzi ölkələrdə mövcud deyil və bu da Ultimate Multisite istifadəçilərinin plugin-imizi effektiv istiqamətləndirməsinə mane olur. Buna görə də, çox populyar bir e-commerce plugin-i olan \_WooCommerce\_-u inteqrasiya etmək üçün bir add-on yaratdıq. Dünyanın yerli developerləri buna fərqli ödəniş qapılarını inteqrasiya etmək üçün add-onlar yaratdılar. Biz də bu fürsətdən istifadə edərək Ultimate Multisite hesablaşma sistemi ilə istifadə edə biləcəyiniz ödəniş qapılarını genişləndirdik.
+İndi, ödəniş keçidiniz kimi _WooCommerce_ , _GoCardless_ və ya _Payfast_ istifadə etmək istəyirsinizsə, onların **əlavələrini quraşdırmalı və konfiqurasiya etməlisiniz**.
 
-\_**MÜHİM:** Ultimate Multisite: WooCommerce Integration-ın işləməsi üçün WooCommerce-un ən azı əsas saytınızda aktiv olması tələb olunur.\_*
+### WooCommerce əlavəsini necə quraşdırmaq olar: {#how-to-install-the-woocommerce-add-on}
 
-Əvvəlcə, zəhmət olmasa add-onlar səhifəsinə gedin. Buna **Ultimate Multisite > Settings** yolundan çata bilərsiniz. **Add-ons** cədvəlini görməlisiniz. **Check our Add-ons** düyməsinə klikləyin.
+Biz başa düşürük ki, _Stripe_ və _PayPal_ bəzi ölkələrdə mövcud deyil və bu, Ultimate Multisite istifadəçilərinin plugin-imizi effektiv şəkildə istifadə etməsini məhdudlaşdırır və ya çətinləşdirir. Buna görə də çox populyar e-ticarət plugin-i olan _WooCommerce,_ inteqrasiya etmək üçün əlavə yaratdıq. Dünyanın müxtəlif yerlərindəki tərtibatçılar ona fərqli ödəniş keçidlərini inteqrasiya etmək üçün əlavələr yaratdılar. Ultimate Multisite hesablaşma sistemi ilə istifadə edə biləcəyiniz ödəniş keçidlərini genişləndirmək üçün bundan yararlandıq.
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+_**VACİB:** Ultimate Multisite: WooCommerce Integration WooCommerce-in ən azı əsas saytınızda aktivləşdirilməsini tələb edir._
 
-**Check our Add-ons** düyməsinə kliklədikdən sonra, add-onlar səhifəsinə yönləndiriləcəksiniz. Burada bütün Ultimate Multisite add-onlarını tapa bilərsiniz. **Ultimate Multisite: WooCommerce Integration** add-onuna klikləyin.
+Əvvəlcə əlavələr səhifəsinə keçin. Bunu **Ultimate Multisite > Settings** bölməsinə keçərək tapa bilərsiniz. **Əlavələr** cədvəlini görməlisiniz. **Əlavələrimizi yoxlayın** üzərinə klikləyin.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+<!-- Ekran görüntüsü mövcud deyil: Ultimate Multisite Settings yan panelində Add-ons cədvəli və Check our Add-ons keçidi -->
 
-Add-on detalları ilə bir pəncərə açılacaq. Sadəcə **Install Now** düyməsinə klikləyin.
+**Əlavələrimizi yoxlayın** üzərinə kliklədikdən sonra əlavələr səhifəsinə yönləndiriləcəksiniz. Burada bütün Ultimate Multisite əlavələrini tapa bilərsiniz. **Ultimate Multisite: WooCommerce Integration** əlavəsinə klikləyin.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+![WooCommerce Integration daxil olmaqla Ultimate Multisite əlavələrini göstərən əlavələr səhifəsi](/img/addons/addons-page.png)
 
-Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və WooCommerce add-onu şəbəkənizdə aktiv olacaq.
+Əlavənin təfərrüatları ilə bir pəncərə açılacaq. Sadəcə **İndi quraşdırın** düyməsinə klikləyin.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Skrinşot mövcud deyil: İndi quraşdırın düyməsi olan Ultimate Multisite WooCommerce Integration əlavəsinin təfərrüat dialoqu -->
 
-Aktivləşdirildikdən sonra, əgər hələ də saytınızda WooCommerce plugin-i quraşdırılıb aktivləşdirilməyibsə, bir xatırlatma alacaqsınız.
+Quraşdırma tamamlandıqdan sonra qoşmalar səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Şəbəkədə aktivləşdirin** üzərinə klikləyin və WooCommerce əlavəsi şəbəkənizdə aktivləşdiriləcək.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Skrinşot mövcud deyil: WooCommerce Integration əlavəsi üçün Şəbəkədə aktivləşdirin keçidi olan qoşmalar səhifəsi -->
 
-WooCommerce Integration add-onu haqqında daha çox məlumat oxumaq üçün **bura klikləyin**.
+Onu aktivləşdirdikdən sonra, əgər vebsaytınızda WooCommerce qoşması hələ də quraşdırılıb aktivləşdirilməyibsə, siz xatırlatma alacaqsınız.
 
-### GoCardless add-onunu necə quraşdırmaq:
+<!-- Skrinşot mövcud deyil: Administratora WooCommerce qoşmasını quraşdırıb aktivləşdirməyi xatırladan admin bildirişi -->
 
-\_GoCardless\_ add-onunu quraşdırmaq addımları \_WooCommerce\_ add-onuna çox oxşardır. Zəhmət olmasa add-onlar səhifəsinə gedin və **Ultimate Multisite: GoCardless Gateway** add-onunu seçin.
+WooCommerce Integration əlavəsi haqqında daha çox oxumaq üçün **buraya klikləyin**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+### GoCardless əlavəsini necə quraşdırmaq olar: {#how-to-install-the-gocardless-add-on}
 
-Add-on pəncərəsi açılacaq. **Install Now** düyməsinə klikləyin.
+_GoCardless_ əlavəsini quraşdırmaq üçün addımlar _WooCommerce_ əlavəsi ilə demək olar ki, eynidir. Zəhmət olmasa əlavələr səhifəsinə keçin və **Ultimate Multisite: GoCardless Gateway** əlavəsini seçin.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Skrinşot mövcud deyil: Ultimate Multisite GoCardless Gateway əlavəsi vurğulanmış əlavələr səhifəsi -->
 
-Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və \_GoCardless\_ add-onu şəbəkənizdə aktiv olacaq.
+Əlavə pəncərəsi açılacaq. **İndi quraşdırın** düyməsinə klikləyin.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Skrinşot mövcud deyil: İndi quraşdırın düyməsi olan Ultimate Multisite GoCardless Gateway əlavəsinin təfərrüat dialoqu -->
 
-\_GoCardless\_ qapısı ilə necə başlamaq öyrənmək üçün **bu məqaləni oxuyun**.
+Quraşdırma tamamlandıqdan sonra qoşmalar səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Şəbəkədə aktivləşdirin** üzərinə klikləyin və _GoCardless_ əlavəsi şəbəkənizdə aktivləşdiriləcək.
 
-### Payfast add-onunu necə quraşdırmaq:
+<!-- Skrinşot mövcud deyil: GoCardless Gateway əlavəsi üçün Şəbəkədə aktivləşdirin keçidi olan qoşmalar səhifəsi -->
 
-Add-onlar səhifəsinə gedin və **Ultimate Multisite: Payfast Gateway** add-onunu seçin.
+_GoCardless_ ödəniş keçidi ilə necə başlamağı öyrənmək üçün **bu məqaləni oxuyun**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+### Payfast əlavəsini necə quraşdırmaq olar: {#how-to-install-the-payfast-add-on}
 
-Add-on pəncərəsi açılacaq. **Install Now.** düyməsinə klikləyin.
+Əlavələr səhifəsinə keçin və **Ultimate Multisite: Payfast Gateway** əlavəsini seçin.
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Skrinşot mövcud deyil: Ultimate Multisite Payfast Gateway əlavəsi vurğulanmış əlavələr səhifəsi -->
 
-Quraşdırma tamamlandıqdan sonra, pluginlər səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Network Activate** düyməsinə klikləyin və \_Payfast\_ add-onu şəbəkənizdə aktiv olacaq.
+Əlavə pəncərəsi açılacaq. **İndi quraşdırın.** düyməsinə klikləyin
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Skrinşot mövcud deyil: İndi quraşdırın düyməsi olan Ultimate Multisite Payfast Gateway əlavəsinin təfərrüat dialoqu -->
+
+Quraşdırma tamamlandıqdan sonra qoşmalar səhifəsinə yönləndiriləcəksiniz. Burada sadəcə **Şəbəkədə aktivləşdirin** üzərinə klikləyin və _Payfast_ əlavəsi şəbəkənizdə aktivləşdiriləcək.
+
+<!-- Skrinşot mövcud deyil: Payfast Gateway əlavəsi üçün Şəbəkədə aktivləşdirin keçidi olan qoşmalar səhifəsi -->

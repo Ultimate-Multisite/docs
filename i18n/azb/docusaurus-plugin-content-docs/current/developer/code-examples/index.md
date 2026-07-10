@@ -3,11 +3,11 @@ title: Advanced Code Examples
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# İleri Düzey Kod Örnekleri
+# İleri Düzey Kod Örnekleri {#advanced-code-examples}
 
 Bu örnekler, Ultimate Multisite ile yapabileceğiniz gelişmiş entegrasyon kalıplarını göstermektedir.
 
-## Dinamik Fiyatlandırma Motoru
+## Dinamik Fiyatlandırma Motoru {#dynamic-pricing-engine}
 
 Hacim, sadakat ve mevsimsel indirimleri uygulayan kurallara dayalı bir fiyatlandırma motoru:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Gelişmiş Site Kurulumu
+## Gelişmiş Site Kurulumu {#advanced-site-provisioning}
 
 Plan özelliklerine göre yeni siteleri otomatik olarak plugin, SSL, CDN, yedekleme ve izleme ile yapılandırma:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Özel Limit Sistemi
+## Özel Limit Sistemi {#custom-limitations-system}
 
 Kullanım uyarıları ile kaynak limitlerini takip etme ve zorunlu kılma:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB ile `increment_item()` Kullanımı
+## BerlinDB ile `increment_item()` Kullanımı {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1, BerlinDB `Query` sınıfına bir `increment_item()` metodu ekledi. Bu metodu, eş zamanlı istekler sırasında okuma-değiştirme-yazma (read-modify-write) yarışlarından kaçınarak sayısal sütunlarda güvenli, atomik artışlar yapmak için kullanın. Bu, sayaçlar, kullanım kotası ve rate-limiting kontrolleri için çok faydalıdır.
 
-### Metot imzası
+### Metot imzası {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1, BerlinDB `Query` sınıfına bir `increment_item()` m
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Temel kullanım
+### Temel kullanım {#basic-usage}
 
 ```php
 // Üyelik ID 42 için `api_calls` sütununa 1 ekle.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Üyelik başına API kullanımını takip etme
+### Üyelik başına API kullanımını takip etme {#tracking-api-usage-per-membership}
 
 Üyelik bazlı API rate limitlerini zorunlu kılmak için pratik bir kalıp:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Neden `update_item()` yerine `increment_item()`?
+### Neden `update_item()` yerine `increment_item()`? {#why-incrementitem-instead-of-updateitem}
 
 Saf bir okuma-değiştirme-yazma yaklaşımı, eş zamanlı istekler altında güvensizdir:
 

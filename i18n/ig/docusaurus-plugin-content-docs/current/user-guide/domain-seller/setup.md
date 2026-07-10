@@ -3,21 +3,21 @@ title: Nkwado na Ịgụrụ ihe
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup and Provider Configuration
+# Domain Seller: Setup and Provider Configuration {#domain-seller-setup-and-provider-configuration}
 
 Addon Domain Seller kemi na-setup da configuration provider. Addon Domain Seller kemi na-ship na guided setup wizard nke gozie gị ya gbasa ọ bụrụ ọ bụla ihe ị chọrọ. Akụrie a na-akwụ na flow wizard ahụ ma ọ bụ gị ka ị chọrọ configure lebebe ma ọ bụ reconfigure providers n'ụlọ.
 
-## Requirements
+## Requirements {#requirements}
 
 - **Multisite Ultimate** v2.4.12 or higher, network-activated
 - **PHP** 7.4+
 - API credentials maka ọkụkọ ọ bụla supported registrar
 
-## First-run setup wizard
+## First-run setup wizard {#first-run-setup-wizard}
 
 Setup wizard ahụ na-launch automatically mgbe ị chọrọ activate plugin nke ọzọ. Ọ dị n'ime anyị mgbe ọ bụla metụtara **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Step 1 — Choose a provider
+### Step 1 — Choose a provider {#step-1--choose-a-provider}
 
 Chọta registrar ị chọrọ ịgba ọkụ. Options ndị supported:
 
@@ -33,7 +33,7 @@ Chọta registrar ị chọrọ ịgba ọkụ. Options ndị supported:
 | NameSilo | No | No |
 | Enom | Yes | No |
 
-### Step 2 — Enter credentials
+### Step 2 — Enter credentials {#step-2--enter-credentials}
 
 Chii provider dị n'ime fields credential ndị ọzọ:
 
@@ -57,17 +57,17 @@ Chii provider dị n'ime fields credential ndị ọzọ:
 
 Check **Sandbox mode** where available to test against provider's test environment before going live.
 
-### Step 3 — Test the connection
+### Step 3 — Test the connection {#step-3--test-the-connection}
 
 Click **Test Connection**. Wizard go send light API call to verify credentials and connectivity. Fix any credential issues before continuing.
 
-### Step 4 — Import TLDs
+### Step 4 — Import TLDs {#step-4--import-tlds}
 
 Click **Import TLDs** to pull all available TLDs na wholesale pricing from connected provider. This go fill up list TLDs we use for domain products. Import e fit take 30–60 seconds for providers wey neme catalog TLDs large.
 
 TLDs dey re-sync automatically once per day via scheduled cron job.
 
-### Step 5 — Create a domain product
+### Step 5 — Create a domain product {#step-5--create-a-domain-product}
 
 Wizard go create default catch-all domain product with 10% markup. You fit edit this product immediately or skip and create products manually under **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ See [Domain Products and Pricing](./domain-products) for full product configurat
 
 ---
 
-## Reconfiguring a provider
+## Reconfiguring a provider {#reconfiguring-a-provider}
 
 Go to **Network Admin › Ultimate Multisite › Settings › Domain Seller** (or click **Settings** in plugin list).
 
@@ -89,17 +89,17 @@ The settings page go contain:
 - **Manage domain products** — liên kết nhanh đến danh sách Sản phẩm (Products)
 - **Configure providers** — mở trình hướng dẫn Tích hợp (Integration Wizard) để thêm hoặc cấu hình lại các nhà cung cấp
 
-### Thêm một nhà cung cấp thứ hai
+### Thêm một nhà cung cấp thứ hai {#adding-a-second-provider}
 
 Nhấn vào **Configure providers** và chạy lại trình hướng dẫn cho nhà đăng ký mới. Bạn có thể cấu hình nhiều nhà cung cấp cùng một lúc. Gán từng sản phẩm tên miền cho một nhà cung cấp cụ thể, hoặc để nó ở mặc định.
 
-### Đồng bộ TLD thủ công
+### Đồng bộ TLD thủ công {#syncing-tlds-manually}
 
 Trong trang cài đặt, nhấn vào **Sync TLDs** bên cạnh bất kỳ nhà cung cấp nào đã được cấu hình để kéo giá mới nhất. Điều này hữu ích sau khi một nhà cung cấp cập nhật giá bán buôn hoặc thêm các TLD mới.
 
 ---
 
-## Logs (Nhật ký)
+## Logs (Nhật ký) {#logs}
 
 Mỗi nhà cung cấp sẽ ghi vào kênh log riêng của nó. Bạn có thể xem log dưới mục **Network Admin › Ultimate Multisite › Logs**:
 
@@ -119,7 +119,7 @@ Mỗi nhà cung cấp sẽ ghi vào kênh log riêng của nó. Bạn có thể 
 
 ---
 
-## Ghi chú về khả năng của nhà cung cấp (Provider capability notes)
+## Ghi chú về khả năng của nhà cung cấp (Provider capability notes) {#provider-capability-notes}
 
 Không phải tất cả các API của nhà đăng ký đều cho phép cùng một loại thao tác. Addon sẽ hiển thị những thao tác không được hỗ trợ bằng các lỗi rõ ràng hướng đến quản trị viên thay vì thất bại một cách im lặng.
 

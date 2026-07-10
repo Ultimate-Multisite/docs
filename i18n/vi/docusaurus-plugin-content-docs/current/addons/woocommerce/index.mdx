@@ -1,94 +1,109 @@
 ---
 title: Tích hợp WooCommerce
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
-<AddonBanner slug="woocommerce-integration" name="Tích hợp WooCommerce" />
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# Tích hợp WooCommerce
+# Tích hợp WooCommerce {#woocommerce-integration}
 
-WooCommerce Integration hoạt động rất tương tự như cách thức hoạt động của Cổng thanh toán Thủ công (Manual Gateway) của chúng tôi. Nó mang lại sự linh hoạt rất lớn cho người dùng của bạn, cho phép họ chọn bất kỳ hình thức thanh toán nào có sẵn trên cài đặt WooCommerce của bạn. Và nó rất đơn giản: khi chu kỳ thanh toán của người dùng kết thúc, gói đăng ký của người dùng sẽ bị tạm ngưng. Đồng thời, một đơn hàng sẽ được tạo trên cài đặt WooCommerce của trang chủ mạng lưới. Sau đó, người dùng sẽ nhận được hóa đơn qua email, kèm theo liên kết để thực hiện thanh toán. Sau khi nhận được thanh toán, gói đăng ký sẽ được gia hạn.
+Tích hợp WooCommerce hoạt động theo cách rất tương tự với cách Manual Gateway của chúng tôi hoạt động. Nó mang lại rất nhiều sự linh hoạt cho người dùng của bạn, cho phép họ chọn bất kỳ biểu mẫu thanh toán nào có sẵn trên bản cài đặt WooCommerce của bạn. Và rất đơn giản: khi kỳ hạn tính phí của người dùng kết thúc, gói đăng ký của người dùng sẽ được tạm giữ. Đồng thời, một đơn hàng sẽ được tạo trên bản cài đặt WooCommerce của trang chính trong mạng. Sau đó, người dùng nhận được hóa đơn trong email của họ, kèm liên kết để thực hiện thanh toán. Khi khoản thanh toán được nhận, gói đăng ký sẽ được gia hạn.
 
-## Tính năng
+## Tính năng {#features}
 
 - Tích hợp dễ dàng giữa Ultimate Multisite và WooCommerce
-- Hỗ trợ nhiều phương thức thanh toán khác nhau
-- Quy trình hoàn toàn tự động với WooCommerce Subscriptions
+- Có sẵn nhiều phương thức thanh toán
+- Tính phí định kỳ tự động bằng lõi gói đăng ký đi kèm, với các cải tiến tùy chọn từ plugin WooCommerce Subscriptions
+- Tổng tiền thanh toán bao gồm thuế Ultimate Multisite dưới dạng các dòng phí WooCommerce riêng biệt, không chịu thuế để khách hàng có thể xem lại số tiền thuế trước khi thanh toán
 
-## Tài liệu
+## Tài liệu {#documentation}
 
 **Thiết lập Tích hợp WooCommerce**
 
 **Mở rộng Tùy chọn Thanh toán của bạn với Ultimate Multisite: Tích hợp WooCommerce**
 
-## Cài đặt
+## Cài đặt {#installation}
 
 1. Tải 'ultimate-multisite-woocommerce' lên thư mục '/wp-content/plugins/'
 2. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
-3. Làm theo Trình hướng dẫn từng bước (Wizard) để thiết lập plugin
+3. Làm theo Trình hướng dẫn từng bước để thiết lập plugin
 
-## Hướng dẫn sử dụng
+## Hướng dẫn sử dụng {#usage-guide}
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến phiên bản Ultimate Multisite 2.x.**_
+_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-_**CHÚ Ý:** Ultimate Multisite: WooCommerce Integration yêu cầu WooCommerce phải được kích hoạt ít nhất trên trang chủ của bạn._
+_**CHÚ Ý:** Ultimate Multisite: Tích hợp WooCommerce yêu cầu WooCommerce được kích hoạt ít nhất trên trang chính của bạn._
 
-Chúng tôi hiểu rằng _Stripe_ và _PayPal_ không khả dụng ở một số quốc gia, điều này có thể hạn chế hoặc gây khó khăn cho người dùng Ultimate Multisite khi sử dụng plugin của chúng tôi. Vì vậy, chúng tôi đã tạo một **add-on để tích hợp _WooCommerce_**.
+Chúng tôi hiểu rằng _Stripe_ và _PayPal_ không khả dụng ở một số quốc gia, điều này giới hạn hoặc cản trở người dùng Ultimate Multisite sử dụng plugin của chúng tôi một cách hiệu quả. Vì vậy, chúng tôi đã tạo một **tiện ích bổ sung để tích hợp _WooCommerce_**.
 
-_WooCommerce_ là một plugin thương mại điện tử rất phổ biến. Các nhà phát triển trên toàn thế giới đã tạo ra các add-on để tích hợp các cổng thanh toán khác nhau vào nó. Chúng tôi đã tận dụng điều này để mở rộng các cổng thanh toán mà bạn có thể sử dụng trong hệ thống thanh toán của Ultimate Multisite.
+_WooCommerce_ là một plugin thương mại điện tử rất phổ biến. Các nhà phát triển trên khắp thế giới đã tạo các tiện ích bổ sung để tích hợp các cổng thanh toán khác nhau vào nó. Chúng tôi đã tận dụng điều này để mở rộng các cổng thanh toán mà bạn có thể sử dụng trong hệ thống tính phí của Ultimate Multisite.
 
-## Thiết lập
+## Thiết lập {#setting-it-up}
 
-Trước tiên, bạn cần cài đặt add-on WooCommerce Integration, tính năng này **miễn phí cho người dùng có giấy phép**. Để cài đặt, hãy nhấp vào Ultimate Multisite trên trang dashboard siêu quản trị (super admin dashboard) và chọn **Add-ons**.
+Trước tiên, bạn cần cài đặt tiện ích bổ sung Tích hợp WooCommerce, tiện ích này **miễn phí cho người dùng có giấy phép**. Để cài đặt, hãy nhấp vào Ultimate Multisite trên dashboard super admin của bạn và chọn **Add-ons**.
 
-![Add-ons page](/img/admin/addons-page.png)
+![Trang Add-ons](/img/admin/addons-page.png)
 
-Tại đây, bạn có thể tìm thấy tất cả các add-on của Ultimate Multisite. Nhấp vào add-on **Ultimate Multisite: WooCommerce Integration**.
+Tại đây bạn có thể tìm thấy tất cả tiện ích bổ sung của Ultimate Multisite. Nhấp vào tiện ích bổ sung **Ultimate Multisite: Tích hợp WooCommerce**.
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![Trang Add-ons hiển thị Tích hợp WooCommerce](/img/admin/addons-page.png)
 
-Một cửa sổ sẽ bật lên với chi tiết add-on. Chỉ cần nhấp vào **Install Now** *.*
+Một cửa sổ sẽ bật lên với chi tiết tiện ích bổ sung. Chỉ cần nhấp vào **Install Now** *.*
 
-<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+<!-- Không có ảnh chụp màn hình: cửa sổ bật lên cài đặt tiện ích bổ sung Tích hợp WooCommerce với nút Install Now -->
 
-Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugins. Tại đây, chỉ cần nhấp vào **Network Activate** và add-on _WooCommerce_ sẽ được kích hoạt trên mạng lưới của bạn.
+Sau khi cài đặt xong, bạn sẽ được chuyển hướng đến trang plugin. Tại đây, chỉ cần nhấp vào **Network Activate** và tiện ích bổ sung _WooCommerce_ sẽ được kích hoạt trên mạng của bạn.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+<!-- Không có ảnh chụp màn hình: trang WP Plugins hiển thị nút Network Activate cho Tích hợp WooCommerce -->
 
-Sau khi kích hoạt, nếu bạn vẫn chưa cài đặt và kích hoạt plugin WooCommerce trên trang web của mình, **bạn sẽ nhận được thông báo nhắc nhở**.
+Sau khi kích hoạt, nếu bạn vẫn chưa cài đặt và kích hoạt plugin WooCommerce trên website của mình, **bạn sẽ nhận được lời nhắc**.
 
-<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+<!-- Không có ảnh chụp màn hình: thông báo admin nhắc cài đặt và kích hoạt plugin WooCommerce -->
 
-Sau khi cài đặt, bạn sẽ thấy một tùy chọn bổ sung trong phần cài đặt thanh toán của Ultimate Multisite. Sau đó, bạn có thể **bật** tùy chọn _WooCommerce_ từ đó.
+Sau khi cài đặt, bạn sẽ thấy một tùy chọn bổ sung trong phần cài đặt thanh toán của Ultimate Multisite. Sau đó, bạn có thể **enable** tùy chọn _WooCommerce_ từ đó.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![Cài đặt cổng thanh toán Ultimate Multisite với WooCommerce được bật](/img/addons/woocommerce-payment-gateway.png)
 
-Bạn có thể cấu hình một số cài đặt cơ bản như tên hiển thị sẽ xuất hiện ở giao diện người dùng và hướng dẫn để giúp người dùng của bạn trong quá trình thanh toán. Sau đó, bạn có thể truy cập **cài đặt _WooCommerce_ của trang chủ** để bật và cấu hình cổng thanh toán mà bạn muốn sử dụng.
+Bạn có thể cấu hình một số cài đặt cơ bản như tên hiển thị sẽ xuất hiện ở giao diện người dùng và hướng dẫn để dẫn dắt người dùng trong luồng checkout của họ. Sau đó, bạn có thể vào **cài đặt _WooCommerce_ của trang Chính** để bật và cấu hình cổng thanh toán mà bạn muốn sử dụng.
 
-## Cách quản lý thanh toán
+### Các dòng phí thuế khi checkout {#checkout-tax-fee-lines}
 
-WooCommerce Integration hoạt động rất tương tự như cách thức hoạt động của **Cổng thanh toán Thủ công** của chúng tôi. Điểm trừ là mọi khoản thanh toán đều phải được thực hiện thủ công vào cuối chu kỳ thanh toán. Quy trình hoạt động như sau:
+Khi một checkout Ultimate Multisite bao gồm thuế, phần tích hợp sẽ thêm từng khoản thuế Ultimate Multisite vào checkout WooCommerce dưới dạng một dòng phí riêng biệt, không chịu thuế. Điều này giữ cho tổng thuế hiển thị trước khi thanh toán đồng thời ngăn WooCommerce đánh thuế lại phí thuế.
 
-  * Khi chu kỳ thanh toán của người dùng kết thúc, tư cách thành viên sẽ bị **tạm ngưng**. Đồng thời, một đơn hàng sẽ được tạo trên cài đặt _WooCommerce_ tại trang chủ mạng lưới của bạn.
+## Cách quản lý thanh toán {#how-to-manage-the-payment}
 
-  * Người dùng sau đó sẽ nhận được hóa đơn qua email, kèm theo liên kết để thực hiện thanh toán (liên kết này cũng xuất hiện trong lịch sử thanh toán của họ từ dashboard của subsite). Liên kết đó sẽ chuyển hướng người dùng đến trang **thanh toán _WooCommerce_**, nơi người dùng có thể chọn một trong các **cổng thanh toán _WooCommerce_ có sẵn** để xử lý thanh toán của mình.
+Tích hợp WooCommerce hoạt động theo cách rất tương tự với cách **Manual Gateway** của chúng tôi hoạt động. Nhược điểm là mọi khoản thanh toán phải được thanh toán thủ công vào cuối kỳ tính phí. Đây là cách luồng hoạt động:
 
-  * Sau khi nhận được thanh toán, tư cách thành viên sẽ được **gia hạn**, khoản thanh toán được ghi lại trên Ultimate Multisite và đơn hàng được đặt thành hoàn thành.
+  * Khi chu kỳ tính phí của người dùng kết thúc, membership được đặt **on hold**. Đồng thời, một đơn hàng sẽ được tạo trên bản cài đặt _WooCommerce_ trên trang chính của mạng của bạn.
 
-### Một số lưu ý quan trọng:
+  * Sau đó, người dùng nhận được hóa đơn trong email của họ, kèm liên kết để thực hiện thanh toán (liên kết này cũng xuất hiện trong lịch sử tính phí của họ từ dashboard subsite của họ). Liên kết đó chuyển hướng người dùng đến _**WooCommerce**_ **checkout** , nơi người dùng có thể chọn một trong các **cổng _WooCommerce_ khả dụng** để xử lý thanh toán của họ.
 
-  * Chức năng mặc định của Ultimate Multisite vẫn hoạt động với form tích hợp này. Ví dụ, **thực hiện hoàn tiền** từ màn hình **Quản lý Đăng ký (Subscription Management)** sẽ giao tiếp với WooCommerce để thực hiện hoàn tiền bằng cổng thanh toán đã chọn.
+  * Khi khoản thanh toán được nhận, membership được **gia hạn** , khoản thanh toán được ghi lại trên Ultimate Multisite và đơn hàng được đặt thành hoàn tất.
 
-  * Ultimate Multisite: WooCommerce Integration dựa vào WP-Cron để hoạt động. Điều này hoạt động rất tốt hầu hết các lúc, nhưng nếu trang web có lưu lượng truy cập thấp thì cron sẽ không được nhắc kiểm tra các sự kiện theo lịch và sự kiện đó sẽ bị bỏ lỡ, điều này có thể gây ra độ trễ thực thi.
+### Một số lưu ý quan trọng: {#some-important-notes}
 
-## Plugin WooCommerce Subscriptions
+  * Chức năng mặc định của Ultimate Multisite vẫn hoạt động với hình thức tích hợp này. Ví dụ, **phát hành hoàn tiền** từ màn hình **Subscription Management** sẽ giao tiếp với WooCommerce để phát hành hoàn tiền bằng biểu mẫu thanh toán đã chọn.
 
-Việc tự tay khởi tạo thanh toán mỗi tháng không lý tưởng cho người dùng cuối, vì một gói đăng ký được kỳ vọng sẽ tự động gia hạn định kỳ theo chu kỳ thanh toán. Vì vậy, chúng tôi đã thiết kế add-on WooCommerce Integration để **hỗ trợ plugin WooCommerce Subscriptions**. Điều này sẽ tự động hóa việc thanh toán, giúp giao dịch dễ dàng hơn cho người dùng cuối của bạn.
+  * Ultimate Multisite: Tích hợp WooCommerce dựa vào WP-Cron để hoạt động. Điều này hoạt động rất tốt trong hầu hết thời gian, nhưng nếu trang có lưu lượng truy cập thấp thì cron không được kích hoạt để kiểm tra các sự kiện đã lên lịch và sự kiện bị bỏ lỡ, điều này có thể gây ra độ trễ khi thực thi.
 
-Tất cả những gì bạn cần làm là **cài đặt** [plugin WooCommerce Subscriptions](https://woocommerce.com/products/woocommerce-subscriptions/) và đảm bảo nó được **kích hoạt trên trang chủ của bạn**. Sau đó quay lại cài đặt thanh toán Ultimate Multisite và **bật tích hợp**.
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
-Và thế là xong. Người dùng cuối của bạn sẽ không cần phải tự tay thanh toán vào cuối chu kỳ thanh toán của họ nữa.
+Việc khởi tạo thanh toán thủ công mỗi tháng không lý tưởng cho người dùng cuối vì các gói đăng ký được kỳ vọng sẽ tự động lặp lại theo từng chu kỳ thanh toán. Add-on WooCommerce Integration hiện đã đóng gói mã subscriptions cốt lõi, vì vậy các sản phẩm định kỳ luôn sử dụng subscriptions cho việc lập hóa đơn định kỳ.
 
-Ngoài việc một đơn hàng được tạo trên trang chủ của bạn dưới _WooCommerce_, nó còn tạo một gói đăng ký cho mỗi tài khoản.
+Bạn **không** cần mua hoặc cài đặt [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) riêng để bán các sản phẩm định kỳ thông qua tích hợp này. Nếu plugin đó được mua, cài đặt và có sẵn trên trang chính của bạn, Ultimate Multisite sẽ sử dụng nó và WooCommerce sẽ hiển thị thêm các tính năng quản lý subscription. Khi nó không có sẵn, subscriptions cốt lõi được đóng gói vẫn xử lý các sản phẩm định kỳ.
+
+![Cài đặt tích hợp subscription WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Và chỉ vậy thôi. Người dùng cuối của bạn sẽ không còn cần phải thanh toán thủ công vào cuối chu kỳ thanh toán của họ cho các sản phẩm định kỳ.
+
+Ngoài việc một đơn hàng được tạo trên trang chính của bạn trong _WooCommerce_, nó cũng sẽ tạo một subscription cho mỗi Account.
+
+### Hành vi tạm ngưng khi gia hạn thất bại {#failed-renewal-suspension-behavior}
+
+Theo mặc định, membership vẫn hoạt động trong khi WooCommerce Subscriptions xử lý lịch thử lại khi thanh toán thất bại. Điều này duy trì khoảng thời gian ân hạn bình thường của WooCommerce Subscriptions để một lần gia hạn được khôi phục có thể đưa subscription và membership đồng bộ trở lại mà không làm gián đoạn quyền truy cập quá sớm.
+
+Quản trị viên muốn kiểm soát quyền truy cập nghiêm ngặt hơn có thể bật **Suspend Memberships Immediately on Failed Renewals** trong cài đặt WooCommerce Integration. Khi cài đặt tùy chọn này được bật, Ultimate Multisite sẽ tạm ngưng membership liên quan ngay khi thanh toán gia hạn thất bại thay vì chờ quá trình xử lý thử lại của WooCommerce Subscriptions hoàn tất.
+
+Nhà phát triển có thể ghi đè quyết định tương tự bằng filter `wu_woo_suspend_on_payment_failure`. Các trang tham chiếu hook được tạo từ mã nguồn add-on, vì vậy phần tổng quan này chỉ nêu tên filter cho các chính sách tạm ngưng tùy chỉnh.

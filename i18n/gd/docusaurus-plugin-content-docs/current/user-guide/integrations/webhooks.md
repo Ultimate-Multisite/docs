@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# A Peersicht ar Webhooks (v2)
+# A Peersicht ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ATTENTION: Note an that this feature or article is for users a' chùlaiche.**_
 
@@ -11,7 +11,7 @@ Tha **webhook** è sàmhraidh airson app no software mar Ultimate Multisite a th
 
 Tha seo a tha fìor airson thu thu faicinn a' chùlaiche a tha thu de dul a' leatheadh (integrate) no a' sgaidh data a' chùlaiche a tha thu de dul air an Ultimate Multisite gu sàmhraidh, air a chùlaiche a tha a' tòiseachadh. Mar eisimpleir, tha thu ag iarraidh a sgaidh ainm agus e-mail na chùlaiche do leatheadh (mailing list) air a chùlaiche a tha a' tòiseachadh gu sàmhraidh air a chruthachadh ùr-àiteach.
 
-## Conaiche airson webhook a chruthachadh
+## Conaiche airson webhook a chruthachadh {#how-to-create-a-webhook}
 
 Tha thu ag iarraidh a chruthachadh webhook, rinn gu do dashboard admin na h-nàthnàidh (network admin). Til cheannair air **Ultimate Multisite > Webhooks > Add New Webhook.**
 

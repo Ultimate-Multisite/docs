@@ -3,7 +3,7 @@ title: Diiwaangeli API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint-ka API-ga Ultimate Multisite
+# Endpoint-ka API-ga Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Ku qoraalkan kan, waxaad baranaysaa sida loo isticmaalo endpoint-ka /register ee Ultimate Multisite si aad u samayso dhammaan habka soo dhowrinta macmiil cusub oo ku jira shabakadahaaga, iyo sida aad u samayn karto tani iyadoo la isticmaalayo Zapier.
 
@@ -29,11 +29,11 @@ Dooro **Enable API** oo hesho aqoonsiga API-gaaga.
 
 Hadda, aan si qoto dheer uga baranno endpoint-ka ka dibna waxaan samayn doona ficil lagu soo dhowrinta (registration action) Zapier-ka.
 
-## Parameters-ka body-ga endpoint-ka
+## Parameters-ka body-ga endpoint-ka {#endpoint-body-parameters}
 
 Aan aragno macluumaadka ugu yar ee aan u dirno endpoint-ka. U dhamaan maqaalka, waxaad ka heli doontaa wicitaan (call) oo dhammaystiran.
 
-### Macmiil (Customer)
+### Macmiil (Customer) {#customer}
 
 Tani waa macluumaadka loo baahan yahay habka samaynta User-ka iyo Macmiilka Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Waxaa suurtagal ah inaad u dirto ID-ga macmiilka ee aad samaysay shabakadahaaga.
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Xubnaha (Membership)**
+### **Xubnaha (Membership)** {#membership}
 
 Macluumaadka kaliya ee aan u baahanahay gudaha qoraalka ah waa Xaaladda Xubnaha.
 
 "membership" { "status" : "string", // mid ka mid ah "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Waxyaabaha (Products)**
+### **Waxyaabaha (Products)** {#products}
 
 Waxyaabaha waxaa loo siiya array oo leh ID waxyaabo hal ama badan oo ka mid ah shabakadahaaga. Taxniir, endpoint-kan ma abuuro waxyaabo cusub. Hubi dukumentiga Ultimate Multisite si aad si fiican u fahanto endpoint-ka abuurista waxyaabaha.
 
 **"products" : [1,2],**
 
-### Lacagta (Payment)
+### Lacagta (Payment) {#payment}
 
 Sida Xubnaha, kaliya xaaladda ayaa u baahanahay.
 
 **"payment" { "status" : "string", // mid ka mid ah "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Goobta (Site)
+### Goobta (Site) {#site}
 
 Waxaan sidoo kale u baahanahay URL-ka goobta iyo Magaca goobta si aan u xirno jidhka.
 
@@ -69,13 +69,13 @@ Waxaan sidoo kale u baahanahay URL-ka goobta iyo Magaca goobta si aan u xirno ji
 
 Natiijada endpoint-ka register-ka waxay noqon doontaa array leh macluumaadka xubnaha cusub ee la abuuro.
 
-## Abuurista fulin (action) ku Zapier
+## Abuurista fulin (action) ku Zapier {#creating-an-action-in-zapier}
 
 Marka la soo bandhigay endpoint-ka cusub iyo mid xooggan oo lagu abuuro akoon cusub, waxaad sidoo kale heli doontaa fulin cusub oo ku jira Zapier.
 
 Ma ogaataa sida aad u isticmaali karto oo aad uga faa'iidaysid dhammaan waxyaabaha ay nooc cusub ee Zapier-ka bixiyo? Waxay ka barato halkan. (link?)
 
-### Abuurista fulin
+### Abuurista fulin {#creating-an-action}
 
 Si aan siin sida aad u isticmaali karto registration endpoint-kaaga (endpoint) iyo Zapier, aan abuurno isdhaafid (integration) la Google Forms ku samaynayno. Marka qoraalka form-kaas la buuxiyo oo macluumaadka la kaydiyo sheet-ka jawaabta form-ka, hal xubnood cusub ayaa lagu abuuri doonaa shirkadda Ultimate Multisite network-ka.
 
@@ -105,7 +105,7 @@ Marka aad macluumaadka diyaarisay, tallaabo ugu dambaysa ku sii socdo. Screen-ka
 
 Test Zap-ka cusub ee aad samaysay, waa inuu si guuleystiran u dhammaystiro. Haddii ay jiro qalad, hubi dhammaan fields-ka oo haddii ay si sax ah la dirayo. Maadaama macluumaadka badan yahay, qaar ka mid ah waxyaabaha lagaa arki karin.
 
-### Parameters-ka endpoint-ka oo dhammaystiran
+### Parameters-ka endpoint-ka oo dhammaystiran {#complete-endpoint-parameters}
 
 Waa kan wicitaanka oo dhan iyo dhammaan suurtagalnimada fields-ka la dirayo.
 

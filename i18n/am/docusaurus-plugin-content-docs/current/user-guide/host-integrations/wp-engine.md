@@ -3,17 +3,17 @@ title: WP Engine ማዋሃድ
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# WP Engine ውህደት
+# WP Engine ውህደት {#wp-engine-integration}
 
-## አጠቃላይ እይታ
+## አጠቃላይ እይታ {#overview}
 WP Engine ለዎርድፕረስ ድረ-ገጾች የተሻሻለ አፈጻጸም፣ ደህንነት እና መስፋፋት የሚያቀርብ የፕሪሚየም የተስተካከለ (managed) የዎርድፕረስ ሆስቲንግ መድረክ ነው። ይህ ውህደት (integration) በUltimate Multisite እና በWP Engine መካከል የዶሜን መመሳሰልን በራስ-ሰር ያደርጋል።
 
-## ባህሪያት
+## ባህሪያት {#features}
 - በራስ-ሰር የዶሜን መመሳሰል
 - ለብዙ ድረ-ገጽ (multisite) ተከላዎች የንዑስ ዶሜን ድጋፍ
 - ከWP Engine ነባር ሥርዓቶች ጋር ያለችግር ውህደት
 
-## መስፈርቶች
+## መስፈርቶች {#requirements}
 ይህ ውህደት በWP Engine ላይ እየሰሩ እንደሆነ በራስ-ሰር ይለያል እና በተገጠመው የWP Engine API ይጠቀማል። የWP Engine ፕልጋይኑ ከተጫነ እና በትክክል ከተዋቀረ ምንም ተጨማሪ ቅንብር አያስፈልግም።
 
 ሆኖም፣ ውህደቱን በእጅዎ ማዋቀር ካለብዎ፣ ከ`wp-config.php` ፋይልዎ ውስጥ ከሚከተሉት የማናቸው የማስተካከያ ቁጥሮች (constants) አንዱን መግለጽ ይችላሉ፦
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // ተመራጭ ዘዴ
 define('WPE_API', 'your_api_key'); // አማራጭ ዘዴ
 ```
 
-## የማዋቀር መመሪያዎች
+## የማዋቀር መመሪያዎች {#setup-instructions}
 
-### 1. የWP Engine ፕልጋይን ማረጋገጥ
+### 1. የWP Engine ፕልጋይን ማረጋገጥ {#1-verify-wp-engine-plugin}
 
 በWP Engine ላይ እየሰሩ ከሆነ፣ የWP Engine ፕልጋይኑ ቀድሞውኑ መጫን እና መነቃቃት አለበት። የሚከተሉትን ያረጋግጡ፦
 
 1. የWP Engine ፕልጋይኑ ንቁ (active) መሆኑ
 2. `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` ፋይሉ መኖሩ
 
-### 2. ውህደቱን ማብራት
+### 2. ውህደቱን ማብራት {#2-enable-the-integration}
 
 1. በWordPress አድሚንዎ ውስጥ፣ ወደ Ultimate Multisite > Settings ይሂዱ።
 2. ወደ "Domain Mapping" ትር መሄድ።
@@ -41,9 +41,9 @@ define('WPE_API', 'your_api_key'); // አማራጭ ዘዴ
 4. የWP Engine ውህደትን ያብሩ።
 5. "Save Changes" የሚለውን ይጫኑ።
 
-## እንዴት ይሰራል
+## እንዴት ይሰራል {#how-it-works}
 
-### የዶሜን መመሳሰል (Domain Syncing)
+### የዶሜን መመሳሰል (Domain Syncing) {#domain-syncing}
 
 አንድ ዶሜን በUltimate Multisite ሲመዘገብ (mapped)፦
 
@@ -51,7 +51,7 @@ define('WPE_API', 'your_api_key'); // አማራጭ ዘዴ
 2. WP Engine የዶሜን ቅንብርን እና የSSL ሰርተፍኬት አወጣጥን ይቆጣጠራል።
 3. የዶሜን መመዝገቢያ ሲሰረዝ፣ ውህደቱ ዶሜኑን ከWP Engine ያጠፋዋል።
 
-### የንዑስ ዶሜን ድጋፍ (Subdomain Support)
+### የንዑስ ዶሜን ድጋፍ (Subdomain Support) {#subdomain-support}
 
 ለንዑስ ዶሜን ብዙ ድረ-ገጽ ተከላዎች፦
 
@@ -59,26 +59,26 @@ define('WPE_API', 'your_api_key'); // አማራጭ ዘዴ
 2. WP Engine የንዑስ ዶሜን ቅንብርን ይቆጣጠራል።
 3. ድረ-ገጽ ሲሰረዝ፣ ውህደቱ ንዑስ ዶሜኑን ከWP Engine ያጠፋዋል።
 
-## አስፈላጊ ማስታወሻዎች
+## አስፈላጊ ማስታወሻዎች {#important-notes}
 
-### Wildcard Domains
+### Wildcard Domains {#wildcard-domains}
 ለንዑስ ዶሜን ብዙ ድረ-ገጽ ተከላዎች፣ እያንዳንዱን በግል መጨመር ሳያስፈልግ ሁሉም ንዑስ ዶሜኖች እንዲሰሩ የዋይልድ卡ርድ ዶሜን (wildcard domain) ቅንብር እንዲጠየቁ ከWP Engine ድጋፍ ጋር መገናኘት ይመከራል።
 
-### SSL Certificates
+### SSL Certificates {#ssl-certificates}
 WP Engine በዚህ ውህደት በኩል ለተጨመሩ ሁሉም ዶሜኖች የSSL ሰርተፍኬት አወጣጥ እና እድሳት በራስ-ሰር ይቆጣጠራል። ተጨማሪ ቅንብር አያስፈልግም።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
-### የAPI ግንኙነት ችግሮች
+### የAPI ግንኙነት ችግሮች {#api-connection-issues}
 - የWP Engine ፕልጋይኑ ንቁ እና በትክክል ተዋቅሯል ወይስ ያረጋግጡ።
 - የAPI ቁልፉን በእጅዎ ከገለጹ፣ ትክክል መሆኑን ያረጋግጡ።
 - በAPI ላይ ችግር ካጋጠመዎት የWP Engine ድጋፍን ያነጋግሩ።
 
-### ዶሜን አልተጨመረም
+### ዶሜን አልተጨመረም {#domain-not-added}
 - በማንኛ የስህተት መልዕክት (error messages) ላይ የUltimate Multisite መዝገቦችን (logs) ይፈትሹ።
 - ዶሜኑ ቀድሞውኑ በWP Engine ላይ አለመጨመሩን ያረጋግጡ።
 - የWP Engine ዕቅድዎ እየጨመሩባቸው ያሉትን የዶሜን ብዛት ይደግፋል ወይስ ያረጋግጡ።
 
-### የንዑስ ዶሜን ችግሮች
+### የንዑስ ዶሜን ችግሮች {#subdomain-issues}
 - ንዑስ ዶሜኖች የማይሰሩ ከሆነ፣ የዋይልድ卡ርድ ዶሜን ቅንብር እንዲጠየቁ የWP Engine ድጋፍን ያነጋግሩ።
 - ዋናው ዶሜን እና ንዑስ ዶሜኖች የDNS ቅንብሮችዎ በትክክል ተዋቅረዋል ወይስ ያረጋግጡ።

@@ -3,7 +3,7 @@ title: API Uçun Düşdürme
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint
+# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Bu tutorialda siz Ultimate Multisite /register API endpointini ulanyp, şeýle bir täze müşderini siziň ulgamanyz üçin doly giriş prosesini nireden başlatyp biljekdigi we ony Zapier bilen nädip amala aşyryp biljekdigini öwrenip geçersiňiz.
 
@@ -29,11 +29,11 @@ API ayarları sayjasynyň doly görnüşi şudur:
 
 Indi, biz endpointi we soňra Zapierde ýaýratma (registration action) döredip görkezeli.
 
-## Endpoint body parametrlary
+## Endpoint body parametrlary {#endpoint-body-parameters}
 
 Endpointe göndermegiňiz gerek bolan iň az maglumatlaryň umumy görnüşini görjek. Bu makalanyň ahyrynda doly çağırma (full call) taparsyňyz.
 
-### Customer
+### Customer {#customer}
 
 User wepası we Ultimate Multisite Müşterisini döretmek üçin zerur bolan maglumatlar aşakdaky ýaly:
 
@@ -43,25 +43,25 @@ Siziň ulgamynda döredilen customer ID-sini göndermek mümkin. Eger size bu be
 
 "customer" : { "user_id" : integer, "username" : "string", "password" : "string", "email" : "string" },
 
-### **Membership** (Üylylyk)
+### **Membership** (Üylylyk) {#membership}
 
 Bu obyekt içinde bizden zerur bolan birnäçe maglumat bar: Membership Status.
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" ýaly biri }
 
-### **Products** (Ürünler)
+### **Products** (Ürünler) {#products}
 
 Ürünlere şeýle bir ulgamyň (array) ýüklenir, bu ulgamda ulanylan ürün ID-leri şeýle 1 ýa-da ondan köp bolup biler. Dikkat edin, bu endpoint ürün döredip bilmez. Ürün döretmek barada has gowy düşüniş üçin Ultimate Multisite dokumentasiýasyny kontrol ediň.
 
 **"products" : [1,2],**
 
-### Ödeme (Payment)
+### Ödeme (Payment) {#payment}
 
 Membership bilen ýaly, bizde diňe status gerekdir.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" biri}**,
 
-### Sahypa (Site)
+### Sahypa (Site) {#site}
 
 Wejdeni ýapmak üçin biz sahypanyň URL-sini we Adyny hem Site objesi içinde gerekdiris.
 
@@ -69,13 +69,13 @@ Wejdeni ýapmak üçin biz sahypanyň URL-sini we Adyny hem Site objesi içinde 
 
 Register endpoint-i hasaplaýan netije, täze döredilen membership maglumatlary bilen bir ulgam (array) boýunça berilipdir.
 
-## Zapierde bir hereketi (action) döretmek
+## Zapierde bir hereketi (action) döretmek {#creating-an-action-in-zapier}
 
 Bu täze we hasap döretmek üçin güýçli bolan endpoint girizilmegi bilen siz Zapierde täze bir hili hem görmegiňiz mümkin boljakdyr.
 
 Zapierin täze versiyasyny nähili ulanyp, ondan iň gowy faydalanmagyňyz barada bilmek isleýärsiňizmi? Ýerine ýetirip okap bilersiňiz. (link?)
 
-### Hili döretmek
+### Hili döretmek {#creating-an-action}
 
 Zapier bilen jemgyrdyrmak endpointini nähili ulanyp, onu has gowy görkezmek üçin Google Forms bilen integrasiýa döredip görüp bileris. Bu form her bir ýerine ýazylanda we maglumatlar formyň jogapçysyna saklandyrylsa, Ultimate Multisite ulgamynda täze üje (membership) döredilýär.
 
@@ -105,7 +105,7 @@ Bellikleri sozlamagyňyz tamamlananda, soňky testden geçiň. Soňky ekranda si
 
 Iň soňky zap-i test ediň we ol ägirtelipdir. Eger her bir ýerde hile bolsa, ähli ulanyjylary barlap görüň we olary düzgün göndermegini anyklap görüň. Maglumatlar köp bolmagy üçin, käbir zatlary ýatmak mümkin.
 
-### Tam endpoint parametrlary
+### Tam endpoint parametrlary {#complete-endpoint-parameters}
 
 Bu ýerde doly çağırma (call) we göndermeli boljak ulanyjylar barada ähli mümkinçilikler görkezilendir.
 

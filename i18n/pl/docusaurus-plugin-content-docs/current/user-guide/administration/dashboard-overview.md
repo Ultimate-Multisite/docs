@@ -3,11 +3,11 @@ title: Przegląd Panelu
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Przegląd kokpitu
+# Przegląd kokpitu {#dashboard-overview}
 
 Ultimate Multisite posiada dedykowany **Kokpit** w menu Ultimate Multisite, a także dodaje widżety do Kokpitu sieci. W tym artykule opisujemy, co znajdziesz w obu miejscach.
 
-## Kokpit sieci
+## Kokpit sieci {#the-network-dashboard}
 
 Ultimate Multisite dodaje przydatne widżety do kokpitu na poziomie sieci, który znajdziesz w **Moje witryny → Administrator sieci → Kokpit**.
 
@@ -35,7 +35,7 @@ Oto co oferuje każdy widżet:
 
 ![Widżet Aktualności](/img/admin/network-dashboard-news.png)
 
-## Kokpit Ultimate Multisite
+## Kokpit Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Podczas gdy kokpit sieci prezentuje ogólne informacje o sieci, kokpit Ultimate Multisite (na najwyższym poziomie menu Ultimate Multisite) przedstawia informacje o usłudze.
 

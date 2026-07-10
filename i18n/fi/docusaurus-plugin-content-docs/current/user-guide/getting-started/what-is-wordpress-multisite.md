@@ -3,7 +3,7 @@ title: Mitä WordPress Multisite on?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Mitä WordPress Multisite on?
+# Mitä WordPress Multisite on? {#what-is-wordpress-multisite}
 
 WordPressin ytimessä on ominaisuus nimeltään ‘Multisite’, jonka juuret ulottuvat vuoteen 2010, jolloin WordPress 3.0 lanseeratti. Sen jälkeen se on saanut useita versioita, joilla on tavoitteena tuoda uusia ominaisuuksia ja parantaa turvallisuutta.
 
@@ -11,7 +11,7 @@ Yksinkertaisesti sanottuna WordPress-multisite voidaan ajatella näin: Yliopisto
 
 ##
 
-## Mitä WordPress Multisite on tarkalleen ottaen?
+## Mitä WordPress Multisite on tarkalleen ottaen? {#what-exactly-is-wordpress-multisite}
 
 Multisite on WordPress-ominaisuus, joka mahdollistaa useiden sivustojen jakamisen yhden WordPress-asennuksen kanssa. Kun multisite aktivoit, alkuperäinen WordPress-sivusto muunnetaan tukemaan sitä, mitä yleensä kutsutaan **sivuston verkostoksi** (network of sites).
 
@@ -23,7 +23,7 @@ Tämä on yksi multisite-ominaisuuden suurimmista eduista, sillä se mahdollista
 
 ##
 
-## Alavalikko vai alihakemisto?
+## Alavalikko vai alihakemisto? {#subdomain-or-subdirectory}
 
 WordPressin multisite-käynnistämiseen on kaksi tapaa – ja sinun täytyy valita jokin, kun muunnat tavallisen WordPress-asennuksen multisite-asennukseksi:
 
@@ -49,7 +49,7 @@ Yhdistämainen haaste subdomain-tilassa on SSL-katelu (HTTPS) koko verkkoon. Tä
 
 Subdirektiomoodin sijaan subdomainipohjaisessa verkossa hakukoneet pitävät alisivustoista erillisinä verkkosivustoina, mikä tarkoittaa, että yhden alisivuston sisällöllä ei ole mitään vaikutusta muiden alisivustojen SEO-suoritukseen.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Yhdistelmäsivustot (Single-site) WordPress -asennuksilla voit lisätä rajattoman määrän käyttäjiä ja antaa niille erilaisia rooleja eri oikeuksilla.
 
@@ -63,7 +63,7 @@ Pluginien ja teemojen voi asentaa tai poistaa vain network admin panelista super
 
 _Huomautus: kuten näet, joku henkilö verkkoosi kutsumalla ja antamalla hänelle superadmin-status antaa tälle käyttäjälle täyden hallinnan koko verkostoon. Esimerkiksi muut superadminit voivat jopa poistaa sinun superadmin-status, mikä estää sinut käytännössä pääsemästä oman verkkokauppapaikkasi admin-paneeliin. Jotta Ultimate Multisite -asiakkaat voisivat hallita tarkemmin, mitä lisäsuperadminit voivat tehdä, meillä on lisäosa nimeltään Support Agents. Tämä lisäosa mahdollistaa sinun luoda toisenlaisen käyttäjätyyppi – agentin – jolla on vain ne oikeudet, joita hän tarvitsee suorittaakseen tehtäviään verkossa._
 
-## Mitä ja mitä ei ole yhteistä aliverkkojen välillä
+## Mitä ja mitä ei ole yhteistä aliverkkojen välillä {#what-is-shared-among-subsites-and-what-is-not}
 
 Kuten aiemmin mainitsimme, WordPress multisiten tärkeä etu on se, että kaikki aliverkot jakavat samat asetukset, yd tiedostot, teemat, pluginit, WordPressin ydintiedostot jne.
 
@@ -73,7 +73,7 @@ On kuitenkin elementtejä, jotka on erittäin tarkasti rajattu kunkin aliverkon 
 - Jokaisella aliverkolla on oma omistettu admin-paneelinsa ja se voi aktiivistaa tai deaktivoida pluginit tai teemat, ellei niitä ole verkossa aktivoitu superadminin toimesta.
 - Useimmat tietokantataulukot luodaan jokaisen aliverkon kohdalle, mikä tarkoittaa, että julkaisut, kommentit, sivut, asetukset ja paljon muuta on rajattu kunkin aliverkon osalta.
 
-## Käyttäjähallinta WordPress Multisite -ympäristössä
+## Käyttäjähallinta WordPress Multisite -ympäristössä {#user-management-on-wordpress-multisite}
 
 WordPress multisiten herkän aihe yksi on käyttäjähallinta. WordPress-käyttäjätapa (user table) on yksi niistä muutamista, jotka on jaettu kaikille aliverkoille.
 
@@ -97,7 +97,7 @@ _Huomautus: Ymmärrämme, kuinka huono se voi olla käyttökohteesi riippuen, jo
 
 Vaikka käyttäjätaulukko on jaettu, käyttäjiä voidaan lisätä ja poistaa alisivustoilta subsite-hallinnoijilla tai superadminilla, ja heillä voi olla eri käyttäjärooleja eri alisivuilla.
 
-## Suorituskykyhuomiot
+## Suorituskykyhuomiot {#performance-considerations}
 
 WordPress multisite on todella tehokas siinä, kuinka monta sivustoa se pystyy tukemaan. Tämä voidaan testata sillä, että [WordPress.com](https://WordPress.com), Edublogs ja Campuspress ovat kaikki multisite-pohjaisia palveluita, joilla jokainen isäntä ylläpitää tuhansia sivustoja.
 

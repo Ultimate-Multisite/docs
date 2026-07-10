@@ -3,17 +3,17 @@ title: Ontwerprigting
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Ontwerprigting
+# Ontwerprigting {#design-direction}
 
 Die **Ontwerprigting**-stap laat jou toe om die visuele ontwerp van jou tema te hersien, te verfyn en te finaliseer voordat Theme Builder die volledige tema genereer.
 
-## Oorsig
+## Oorsig {#overview}
 
 Nadat jy die Discovery Interview voltooi het, toon Theme Builder jou ontwerprigting met **desktop- en mobiele vooruitsig-rendering**. Dit laat jou toe om presies te sien hoe jou ontwerp op verskillende toestelle sal lyk voordat jy jou toewyding aan die tema maak.
 
-## Ontwerprigting Komponente
+## Ontwerprigting Komponente {#design-direction-components}
 
-### 1. Kleurepalet
+### 1. Kleurepalet {#1-color-palette}
 
 Jou tema se kleurskema, insluitend:
 
@@ -23,7 +23,7 @@ Jou tema se kleurskema, insluitend:
 - **Neutrale kleure** — grys en wit vir agtergronde en teks
 - **Tekstekleur** — die primêre tekskleur vir leesbaarheid
 
-### 2. Tipografie
+### 2. Tipografie {#2-typography}
 
 Letterkeuse vir:
 
@@ -33,14 +33,14 @@ Letterkeuse vir:
 - **Lynhoogte** — spasie tussen lyne vir leesbaarheid
 - **Lettergewigte** — vet, normaal en ligte variasies
 
-### 3. Lêuiting en Spasering
+### 3. Lêuiting en Spasering {#3-layout-and-spacing}
 
 - **Containerbreedte** — maksimum breedte vir inhoud
 - **Padding en marges** — spasie rondom elemente
 - **Roosterstelsel** — kolom-leuiting vir responsief ontwerp
 - **Komponent-spasering** — afstand tussen UI-elemente
 
-### 4. Visuele Elemente
+### 4. Visuele Elemente {#4-visual-elements}
 
 - **Knopstyles** — primêre, sekondêre en tersiêre knopontwerpe
 - **Kaartontwerpe** — lêuitings vir inhoudblokke
@@ -48,9 +48,9 @@ Letterkeuse vir:
 - **Bande en skaduwees** — subtiele visuele diepte
 - **Hover-effekte** — interaktiewe toestandstyling
 
-## Vooruitsig-Rendering
+## Vooruitsig-Rendering {#preview-rendering}
 
-### Desktop Vooruitsig
+### Desktop Vooruitsig {#desktop-preview}
 
 Die desktopvooruitsig toon jou ontwerp by volle breedte (gewoonlik 1200px of breër):
 
@@ -59,7 +59,7 @@ Die desktopvooruitsig toon jou ontwerp by volle breedte (gewoonlik 1200px of bre
 - Groot tipografie en spasie
 - Alle visuele elemente in volle grootte
 
-### Mobiele Vooruitsig
+### Mobiele Vooruitsig {#mobile-preview}
 
 Die mobiele vooruitsig toon jou ontwerp by mobiele breedte (gewoonlik 375px):
 
@@ -68,7 +68,7 @@ Die mobiele vooruitsig toon jou ontwerp by mobiele breedte (gewoonlik 375px):
 - Aangepaste tipografie en spasie
 - Aanraakvriendelike knoppie-grootte
 
-### Responsiewe Brekingspunte
+### Responsiewe Brekingspunte {#responsive-breakpoints}
 
 Theme Builder render vooruitsigte by hierdie brekingspunte:
 
@@ -79,9 +79,9 @@ Theme Builder render vooruitsigte by hierdie brekingspunte:
 | **Desktop** | 1200px | Volle-breedte desktop |
 | **Groot Desktop** | 1920px | Ultra-wyd skerm |
 
-## Jou Ontwerp Verfyn
+## Jou Ontwerp Verfyn {#refining-your-design}
 
-### Aanpassings Maak
+### Aanpassings Maak {#making-adjustments}
 
 Jy kan jou ontwerprigting verfyn deur:
 
@@ -91,7 +91,7 @@ Jy kan jou ontwerprigting verfyn deur:
 4. **Lêuiting opdateer** — verander containerbreedtes en roosterkolomme
 5. **Elemente aanpas** — wysig knopstyles, kaartontwerpe, ens.
 
-### Vooruitsig Opdaterings
+### Vooruitsig Opdaterings {#preview-updates}
 
 Veranderinge word in real-time weerspieël:
 
@@ -100,7 +100,7 @@ Veranderinge word in real-time weerspieël:
 - Alle responsiewe brekingspunte word opgedateer
 - Jy kan tussen vooruitsigte skakel om veranderinge te verifieer
 
-### Vergelykingsuitsig
+### Vergelykingsuitsig {#comparison-view}
 
 Vergelyk jou ontwerprigting met:
 
@@ -108,7 +108,7 @@ Vergelyk jou ontwerprigting met:
 - **Mededingersontwerpe** — vergelyk met inspirasiewe webwerwe
 - **Vorige weergawes** — keer terug na vroeëre ontwerprigting
 
-## Ontwerprigting Goedkeuring
+## Ontwerprigting Goedkeuring {#design-direction-approval}
 
 Sodra jy tevrede is met jou ontwerp:
 
@@ -118,7 +118,7 @@ Sodra jy tevrede is met jou ontwerp:
 4. **Bevestig lêuiting** — kyk na spasie en uitdrywing
 5. **Ontwerp goedkeur** — gaan voort met tema-generasie
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 Nadat jy jou ontwerprigting goedgekeur het:
 
@@ -127,7 +127,7 @@ Nadat jy jou ontwerprigting goedgekeur het:
 3. Jy kan verder aanpas met die WordPress customizer
 4. Gaan voort na [Hospitality Menus](./hospitality-menus.md) of ander kenmerke
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
 - **Toets op regte toestelle** — gebruik werklike fone en tablette indien moontlik
 - **Kontroleer leesbaarheid** — verseker dat teks by alle groottes leesbaar is
@@ -135,30 +135,30 @@ Nadat jy jou ontwerprigting goedgekeur het:
 - **Neem prestasie in ag** — optimaliseer beelde en fonts vir spoed
 - **Beplan vir inhoud** — verseker dat die lêuiting werk met jou werklike inhoud
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Vooruitsig Werk Nie Op Nie
+### Vooruitsig Werk Nie Op Nie {#preview-not-updating}
 
 - Herlaai die bladsy
 - Maak die browser-cache skoon
 - Probeer 'n ander browser
 - Kontroleer internetverbinding
 
-### Kleure Lyk Anders
+### Kleure Lyk Anders {#colors-look-different}
 
 - Kontroleer monitorkleurinstellings
 - Probeer op verskillende toestelle
 - Verifieer kleurkontras met toeganklikheidstoue
 - Neem kleurblindheid-simulators in ag
 
-### Tipografieprobleme
+### Tipografieprobleme {#typography-issues}
 
 - Verifieer dat letterbestye laai
 - Kontroleer lettergrootte by verskillende brekingspunte
 - Toets met werklike inhoud
 - Neem lynlengte vir leesbaarheid in ag
 
-## Verwante Dokumentasie
+## Verwante Dokumentasie {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — versamel ontwerp-inligting
 - [Hospitality Menus](./hospitality-menus.md) — skep gestruktureerde menu-bladsye

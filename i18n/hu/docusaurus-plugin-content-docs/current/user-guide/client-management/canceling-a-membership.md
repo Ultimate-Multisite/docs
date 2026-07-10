@@ -1,31 +1,32 @@
 ---
-title: Tagság törlése
+title: Tagság lemondása
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Tagság lemondása (v2)
+# Tagság lemondása (v2) {#canceling-a-membership-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-A tagság lemondása az ügyfelek oldaláról meglehetősen egyszerű.
+A tagság lemondása az ügyfeleid oldalán meglehetősen egyszerű.
 
-Ha a felhasználó le szeretné mondani a tagságát, először nyissa meg a **Fiók** oldalt.
+Ha a felhasználód le szeretné mondani a tagságát, először el kell érnie az ****Account**** oldalát.
 
-Ott keresse meg a **Danger Zone** részt, majd kattintson a **Delete Account** gombra.
+Ott a **Veszélyzóna** részhez kell mennie, majd a **Fiók törlése** lehetőségre kell kattintania.
 
-![Fiók oldal Danger Zone a Delete Account gombbal](/img/admin/memberships-list.png)
+![Account oldal Veszélyzónája Fiók törlése gombbal](/img/account-page/danger-zone.png)
 
-Megjelenik egy ablak, amely megerősítést kér. A felhasználónak be kell kapcsolnia a **Confirm Account Deletion** opciót, majd kattintson a **Delete Account** gombra.
+Megnyílik egy modul, amely megerősítést kér. Be kell kapcsolniuk a **Fióktörlés megerősítése** opciót, majd a **Fiók törlése** lehetőségre kell kattintaniuk.
 
-![Fiók törlésének megerősítése párbeszédablak](/img/admin/memberships-list.png)
+![Fióktörlés megerősítése párbeszédablak](/img/account-page/delete-account-confirm.png)
 
-Ezután a rendszer kijelentkezteti a felhasználót az oldalról, lemondja a tagságát a hálózatban, és törli a webhelyét a hálózatból.
+Ez kijelentkezteti őket a webhelyről, lemondja a tagságukat a hálózatodon, valamint törli a webhelyüket a hálózatodból.
 
-![Kijelentkezve a fiók törlése után](/img/admin/memberships-list.png)
+![Kijelentkezve a fiók törlése után](/img/account-page/logged-out-after-delete.png)
 
-![Tagság lemondva megerősítés](/img/admin/memberships-list.png)
+![Tagság lemondásának megerősítése](/img/account-page/membership-canceled.png)
 
-**Fontos:** Vegye figyelembe, hogy ez a művelet nem távolítja el az ügyfelet a hálózatból, mivel egy ügyfélhez több tagság is tartozhat, vagy akár egy sem.
+**Fontos:** Vedd figyelembe, hogy ez a művelet nem zárja ki az ügyfelet a hálózatodból, mivel egy ügyfélhez több tagság is tartozhat, vagy akár egyetlen tagság sem lehet hozzá kapcsolva.
 
-![Az ügyfél továbbra is létezik a hálózatban a lemondás után](/img/admin/memberships-list.png) | ![Ügyfél aktív tagság nélkül](/img/admin/memberships-list.png)  
----|---
+![Az ügyfél a lemondás után is létezik a hálózatban](/img/admin/customer-after-cancel.png)
+
+![Ügyfél aktív tagságok nélkül](/img/admin/memberships-customer-empty.png)

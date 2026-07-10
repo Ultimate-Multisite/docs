@@ -3,19 +3,19 @@ title: Pag-set up sa Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Pag-set Up sa Stripe Gateway (v2)
+# Pag-set Up sa Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**MAHINONG PAHIBALO: Kini nga article nagrefer sa Ultimate Multisite version 2.x.**_
 
 Mahimo nimong i-activate hangtod upat ka pamaagi sa pagbayad sa among payment settings page: Stripe, Stripe Checkout, PayPal ug Manual. Niining article, makita nato unsaon ang pag-integrate gamit ang **Stripe**.
 
-## Pag-enable sa Stripe
+## Pag-enable sa Stripe {#enabling-stripe}
 
 Aron ma-enable ang Stripe isip available nga payment gateway sa inyong network, pumunta sa **Ultimate Multisite > Settings > Payments** ug i-tick ang toggle tupad sa **Stripe** o **Stripe Checkout** sa Active Payment Gateways section.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Kini nga pamaagi magpakita og lugar para i-insert ang credit card number panahon sa checkout.
 
@@ -47,7 +47,7 @@ Kopyaha ang value gikan sa **Publishable key** ug **Secret key**, gikan sa colum
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Pag-set up sa Stripe Webhook
+## Pag-set up sa Stripe Webhook {#setting-up-stripe-webhook}
 
 Nagpadala ang Stripe og webhook events nga magpahibalo sa Ultimate Multisite kanunay kung adunay mahitabo sa **iyong stripe account**.
 

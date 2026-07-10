@@ -3,27 +3,27 @@ title: Webbplats-export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Exportera webbplats
+# Exportera webbplats {#site-export}
 
 Admin-sidan **Site Export** låter nätverksadministratörer packa en enskild webbplats, eller hela nätverket, i ett nedladdningsbart arkiv för migrering, backup eller överlämning.
 
-## Exportera en webbplats
+## Exportera en webbplats {#exporting-one-site}
 
 Gå till **Ultimate Multisite > Site Export** och välj **Generate new Site Export**. Välj den subsite du vill exportera, och välj sedan om arkivet ska inkludera uploads, plugins och themes.
 
 När exporten är klar, ladda ner ZIP-filen från listan över **Existing Exports**. Export-ZIP-filer innehåller nu en självstartande `index.php` och en `readme.txt`, så att arkivet kan laddas upp till en ny värd och startas utan att först installera ett separat importer-plugin.
 
-## Exportera hela nätverket
+## Exportera hela nätverket {#exporting-the-whole-network}
 
 Använd **Network Export** på sidan Site Export när du behöver ett enda arkiv som innehåller alla subsites i nätverket. Detta är användbart före värd-migrationer, katastrofåterhämtningsövningar eller staging-återuppbyggnader där varje subsite måste flytta tillsammans.
 
 Eftersom en nätverks-export kan bli mycket större än en enskild webbplats-export, kör den under en period med låg trafik och bekräfta att målarabetaget har tillräckligt med ledigt utrymme för uploads, plugins, themes och genererade ZIP-filer.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Från Ultimate Multisite 2.12.0 kan Site Exporter generera **network import bundles** – specialiserade arkiv utformade för smidigare nätverksövergripande återställning av webbplatser. Ett network import bundle innehåller alla nödvändiga filer och metadata för att återställa flera webbplatser till en ny nätverksinstallation.
 
-#### Generera ett Network Import Bundle
+#### Generera ett Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Gå till **Ultimate Multisite > Site Export**
 2. Klicka på **Generate new Network Export**
@@ -32,7 +32,7 @@ Från Ultimate Multisite 2.12.0 kan Site Exporter generera **network import bund
 5. Klicka på **Generate**
 6. Ladda ner bundle ZIP-filen från listan över **Existing Exports**
 
-#### Återställa från ett Network Import Bundle
+#### Återställa från ett Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 För att återställa webbplatser från ett network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles bevarar:
 - Medieuploads (om de ingår i bundle)
 - Anpassade databassistabeller och data
 
-## Installera en självstartande export ZIP
+## Installera en självstartande export ZIP {#installing-a-self-booting-export-zip}
 
 För att återställa en självstartande ZIP på en ny värd:
 

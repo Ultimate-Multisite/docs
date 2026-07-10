@@ -3,11 +3,11 @@ title: Ekipasyon Membwa ak Blokaj Sit
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Fini vwa Membership ak Blokaj Site
+# Fini vwa Membership ak Blokaj Site {#membership-expiration-and-site-blocking}
 
 Ki gidans sa a eksplike kijan Ultimate Multisite jere fini membership, fini trial, ak blokaj site anndan (frontend). Li kouvri tout sik la yon membership de aktif rive fini, konfigirasyon ki kontwole si sit yo bloke, e sa ou dwe gade lè sit yo rete aksede apre membership fini.
 
-## Sik Sik Stat Membership
+## Sik Sik Stat Membership {#membership-status-lifecycle}
 
 Chak membership nan Ultimate Multisite gen youn nan etap sa yo:
 
@@ -24,7 +24,7 @@ Membership gratis pa fini otomatikman. Ultimate Multisite tret yo kòm yon aksè
 | **Expired** | Pase dat fini ak peryòd gras san chanje renouvèl |
 | **Cancelled** | Eksplisitman kanle pa kliyan oswa admin la |
 
-### Kijan Membership yo Transisyon nan Expired
+### Kijan Membership yo Transisyon nan Expired {#how-memberships-transition-to-expired}
 
 Ultimate Multisite fè yon verifikasyon an arka (background check) **chak èdtan** ki ap chèche membership ki dwe mete kòm fini. Verifikasyon sa a itilize [Action Scheduler](https://actionscheduler.org/) (pa WP-Cron dirèkteman) epi li mache kòm aksyon planifye `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Verifikasyon fini gen yon **peryòd gras inite 3 jou** pa default. Yon membershi
 Période de grâce d'expiration de 3 jours separe de la configuration Période de grâce du Bloc Frontend décrite ci-dessous. La période de grâce d'expiration contrôle quand le **statut change** de actif/en attente à expiré. La période de grâce du bloc frontend contrôle quand le **site est bloqué** après que le statut ait déjà changé.
 :::
 
-#### Abonnements qui se renouvellent automatiquement vs. ceux qui ne se renouvellent pas automatiquement
+#### Abonnements qui se renouvellent automatiquement vs. ceux qui ne se renouvellent pas automatiquement {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Cette distinction est cruciale pour comprendre le comportement d'expiration :
 
@@ -42,7 +42,7 @@ Cette distinction est cruciale pour comprendre le comportement d'expiration :
 
 - **Abonnements qui se renouvellent automatiquement** (`auto_renew = true`) : La vérification d'expiration du cron **ignore complètement ceux-ci**. On s'attend à ce que la passerelle de paiement (Stripe, PayPal, etc.) notifie Ultimate Multisite via des webhooks lorsque l'abonnement échoue ou est annulé. Si le webhook n'est pas reçu -- en raison d'un point de terminaison mal configuré, d'une panne de passerelle, ou d'une annulation d'abonnement en dehors du système -- l'abonnement peut rester `active` indéfiniment même après la date d'expiration.
 
-### Comment les Essais se terminent
+### Comment les Essais se terminent {#how-trials-end}
 
 Lorsque la période d'essai d'un abonnement d'essai se termine, le système :
 
@@ -52,11 +52,11 @@ Lorsque la période d'essai d'un abonnement d'essai se termine, le système :
 
 Ce processus s'exécute sur le même calendrier horaire que la vérification d'expiration régulière, mais **uniquement pour les abonnements qui ne se renouvellent pas automatiquement**. Pour les essais qui se renouvellent automatiquement, la passerelle de paiement gère la transition de l'essai à l'abonnement payant.
 
-## Bloquer l'accès Frontend
+## Bloquer l'accès Frontend {#block-frontend-access}
 
 Par defo, quand un abonnement expire ou est mis en pause, **seul le tableau de bord wp-admin est restreint**. Le site public reste accessible aux visiteurs. Pour bloquer l'accès public aussi, vous devez activer le réglage **Block Frontend Access**.
 
-### Configurer le Réglage
+### Configurer le Réglage {#configuring-the-setting}
 
 Allez dans **Ultimate Multisite > Settings > Memberships** et activez **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Trois réglages liés contrôlent ce comportement :
 | **Frontend Block Grace Period** | Nombre de jours à attendre après que l'abonnement devienne inactif avant de bloquer. Réglez sur `0` pour bloquer immédiatement. | 0 |
 | **Frontend Block Page** | Une page sur le site principal vers laquelle les visiteurs seront redirigés lorsqu'un site est bloqué. Si ce n'est pas défini, les visiteurs verront un message générique "Site non disponible" avec un lien vers la page de connexion pour l'administrateur du site. | Aucun |
 
-### Ce que les Visiteurs Voient Quand un Site Est Bloqué
+### Ce que les Visiteurs Voient Quand un Site Est Bloqué {#what-visitors-see-when-a-site-is-blocked}
 
 Quand l'accès au frontend est bloqué, les visiteurs du site vont soit :
 
@@ -83,7 +83,7 @@ Quand l'accès au frontend est bloqué, les visiteurs du site vont soit :
 
 Les administrateurs de site peuvent toujours se connecter -- la page de connexion n'est jamais bloquée.
 
-### Ce Qui Est Bloqué et Quand
+### Ce Qui Est Bloqué et Quand {#what-gets-blocked-and-when}
 
 Le comportement de blocage dépend du statut de l'abonnement :
 
@@ -104,21 +104,21 @@ Même si une période d'essai est terminée, une adhésion avec le statut `trial
 Les adhésions annulées sont toujours bloquées une fois la date d'expiration passée, peu importe si le Bloc d'Accès Frontend est activé. La Période de Grâce du Bloc Frontend ne s'applique **pas** aux adhésions annulées.
 :::
 
-## Dépannage : Sites Restant Accessibles Après Expiration
+## Dépannage : Sites Restant Accessibles Après Expiration {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Si les sites restent accessibles au public après l'expiration d'une adhésion, suivez ces vérifications dans cet ordre :
 
-### 1. Vérifiez que le paramètre Bloc d'Accès Frontend est activé
+### 1. Vérifiez que le paramètre Bloc d'Accès Frontend est activé {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Allez dans **Ultimate Multisite > Settings > Memberships** et confirmez que l'interrupteur **Block Frontend Access** est activé. Ce réglage est **désactivé par défaut**, ce qui signifie que seul wp-admin est restreint lorsque l'adhésion devient inactive.
 
-### 2. Vérifiez la Période de Grâce du Bloc Frontend
+### 2. Vérifiez la Période de Grâce du Bloc Frontend {#2-check-the-frontend-block-grace-period}
 
 Nan menm nan menm sou menm paj konfigirasyon an, chèche valè **Frontend Block Grace Period**. Si sa se set pou 7 jou, pa frontend la ap bloke sèlman apre 7 jou apre dat ekspirasyon manmness la -- menm si status manmness la deja `expired`.
 
 Set sa a sou `0` si ou vle bloke imedyat apre manmness la vin inaktif.
 
-### 3. Konfime ke Status Manmness La Deja Chanje
+### 3. Konfime ke Status Manmness La Deja Chanje {#3-confirm-the-membership-status-has-actually-changed}
 
 Ale nan **Ultimate Multisite > Memberships** epi chèche status manmness ki afekte a. Si li toujou montre `active` men ke dat ekspirasyon an pase, transisyon status la pa fèt. Kòz komen:
 
@@ -126,7 +126,7 @@ Ale nan **Ultimate Multisite > Memberships** epi chèche status manmness ki afek
 
 - **Cron job la pa fini esè**: Wè etap ankò.
 
-### 4. Verifyke Action Scheduler La Ap Fè Travay
+### 4. Verifyke Action Scheduler La Ap Fè Travay {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite itilize Action Scheduler pou cron jobs li yo. Ale nan **Tools > Scheduled Actions** nan admin rezo a epi chèche:
 
@@ -148,7 +148,7 @@ Pou asire ke cron ap mache byen, mete yon job cron sistèm:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Kontwe pou pwoblèm Gateway Webhook (Auto-Renewing Memberships)
+### 5. Kontwe pou pwoblèm Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Si manm la ap re-renou otomatikman epi abònman gateway la te sispann oswa li te échouer, men Ultimate Multisite toujou montre li kòm `active`:
 
@@ -157,7 +157,7 @@ Si manm la ap re-renou otomatikman epi abònman gateway la te sispann oswa li te
 
 Si gateway la montre abònman an kòm sispann men Ultimate Multisite pa, notifikasyon webhook la te pèt. Ou ka chanje status manm la manmanman nan **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Kontwe Peryòd Grace de Expiration (Nivo Cron)
+### 6. Kontwe Peryòd Grace de Expiration (Nivo Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Kontwò cron an gen li pwòp peryòd grace (default: 3 jou) anvan li mete yon manm kòm expire. Sa se sepandan ak peryòd grace blòk frontend la. Total tan anvan sit la bloke ka ye:
 
@@ -165,7 +165,7 @@ Kontwò cron an gen li pwòp peryòd grace (default: 3 jou) anvan li mete yon ma
 
 Pou egzanp, avèk paramèt default ak yon peryòd gras 7 jou pou frontend la, sa ka pran jounen 10 apre `date_expiration` anvan sit la bloke vreman.
 
-### 7. Mete Fini Manmanm (Membership) Avè Kòman
+### 7. Mete Fini Manmanm (Membership) Avè Kòman {#7-manually-expire-a-membership}
 
 Si ou bezwen bloke yon sit imedyatman san ou pa tann sik cron la, ou ka chanje status manmanm la menm:
 
@@ -176,7 +176,7 @@ Si ou bezwen bloke yon sit imedyatman san ou pa tann sik cron la, ou ka chanje s
 
 Blokaj frontend la ap mache nan ankò chwazi paj la (sa depann sou Peryòd Gras Blokaj Frontend pou manmanm ki fini, oswa imedyatman pou manmanm ki sispann).
 
-## Rezime
+## Rezime {#summary}
 
 Tout liy tan anvan dat fini rive bloke sit la:
 
@@ -208,7 +208,7 @@ Pou manmanm ki sispann, wout la pi kout:
   Frontend sit la bloke imedyatman
 ```
 
-## Referans Dev
+## Referans Dev {#developer-reference}
 
 Hook ak filter ki anba a pèmèt ou personalize konpòtman fini ak blokaj la:
 

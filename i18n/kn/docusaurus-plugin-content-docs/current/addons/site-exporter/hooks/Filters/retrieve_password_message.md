@@ -4,11 +4,11 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 ಪಾಸ್‌ವರ್ಡ್ ರೀಸೆಟ್ ಇಮೇಲ್‌ನ ಸಂದೇಶದ ಬಾಡಿ (message body) ಅನ್ನು ಫಿಲ್ಟರ್ ಮಾಡುತ್ತದೆ.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | ಬಳಕೆದಾರರ ಯೂಸರ್ neame. |
 | $user_data | `\WP_User` | WP_User ಆಬ್ಜೆಕ್ಟ್. |
 
-### Since
+### Since {#since}
 
 - 2.8.0
 - 4.1.0: <code>$user_login</code> ಮತ್ತು <code>$user_data</code> ಪ್ಯಾರಾಮೀಟರ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-### Source
+### Source {#source}
 
 Defined in [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) at line 149
 
 
-## Returns
+## Returns {#returns}
 ಡೀಫಾಲ್ಟ್ ಇಮೇಲ್ ಸಂದೇಶ.

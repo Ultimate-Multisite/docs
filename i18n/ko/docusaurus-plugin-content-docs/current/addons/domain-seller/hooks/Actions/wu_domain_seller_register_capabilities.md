@@ -1,22 +1,22 @@
 ---
 id: wu_domain_seller_register_capabilities
-title: 액션 - wu_domain_seller_register_capabilities
+title: 작업 - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
-_i18n_hash: e98f40156ccda7c7ce6644d7412d47d3
+_i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Action: wu_domain_seller_register_capabilities
+# Action: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
 
-다른 플러그인이 추가 도메인 판매 기능을 등록할 수 있도록 허용합니다.
+다른 plugin이 추가 도메인 판매 기능을 등록할 수 있도록 합니다.
 
-## Parameters
+## 매개변수 {#parameters}
 
-| 이름 | 타입 | 설명 |
+| 이름 | 유형 | 설명 |
 |------|------|-------------|
-| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | 통합 레지스트리. |
+| $registry | `\WP_Ultimo\Integrations\Integration_Registry` | 통합 레지스트리입니다. |
 
-### Since
+### 이후 버전 {#since}
 
 - 2.1.0
-### Source
+### 소스 {#source}
 
-정의된 위치: [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L298) 줄 298에서
+[`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320)에서 320번째 줄에 정의됨

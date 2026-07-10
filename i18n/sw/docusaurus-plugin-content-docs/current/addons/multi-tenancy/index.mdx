@@ -1,31 +1,45 @@
 ---
-title: Uanachama wa Wateja Wengi
+title: Upangaji wa Wapangaji Wengi
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Utekelezaji wa Wateja Wengi (Multi-Tenancy)
+# Upangaji Wengi {#multi-tenancy}
 
-Kugawa subsite (sito za ndani) kwenye seva na hifadhidata tofauti kwa ajili ya ufanisi na usalama.
+Sambaza tovuti ndogo kwenye seva na hifadhidata kwa utendaji na usalama
 
-## Mahitaji
+## Muhtasari wa toleo la Version 1.2.0 {#version-120-release-highlights}
 
-- WordPress 5.3 au zaidi
-- PHP 7.4 au zaidi
-- Plugin ya Ultimate Multisite (inapaswa iwe hai)
+Multi-Tenancy 1.2.0 huongeza msingi wa mpangaji huru kwa mitiririko ya kazi ya utenganishaji wa uzalishaji:
 
-## Usakinishaji
+- Kuingia kiotomatiki kwa mpangaji bila hali kwa ziara za SSO za muda mfupi, zinazolindwa dhidi ya kurudiwa.
+- Utenganishaji wa hifadhidata na mfumo wa faili kwa kila tovuti ndogo kwa wapangaji huru.
+- Uwezo wa Hostinger wa upangaji wengi kwa utoaji wa wapangaji unaojali mwenyeji.
+- Milango ya uthibitishaji wa uhamishaji huru kwa ukaguzi wa data ya urithi na uchakataji wa kusukuma usiolandanishwa.
+- Ufungaji unaoweza kusanidiwa wa mwenyeji wa hifadhidata kwenye mashine ileile kwa usakinishaji wa Bedrock, FrankenPHP, na localhost.
+- Maboresho ya uanzishaji wa mpangaji, mwandishi wa hifadhidata, uanzishaji wa schema, na utoaji wa watumiaji.
+- Uondoaji salama zaidi wa huru unaosafisha vitambulisho vya mpangaji.
 
-1. Pakia faili za addon kwenye saraka yako ya `/wp-content/plugins/`
-2. Washa plugin kupitia menyu ya 'Plugins' ndani ya WordPress
-3. Weka mipangilio ya addon kwenye kiunganishi cha kiutawala cha mtandao (network admin)
+Tazama miongozo ya mtumiaji kwa [mtiririko wa kazi wa uhamishaji huru](/user-guide/getting-started/sovereign-migration-workflow), [utenganishaji wa upangaji wengi](/user-guide/configuration/multi-tenancy-isolation), na [uendeshaji wa mpangaji huru](/user-guide/administration/sovereign-tenant-operations).
 
-## Uendelezaji
+## Mahitaji {#requirements}
 
-### Kuandaa
+- WordPress 5.3 au juu zaidi
+- PHP 7.4 au juu zaidi
+- Programu-jalizi ya Multisite Ultimate (imeamilishwa)
+
+## Usakinishaji {#installation}
+
+1. Pakia faili za nyongeza kwenye saraka yako ya `/wp-content/plugins/`
+2. Amilisha programu-jalizi kupitia menyu ya 'Plugins' katika WordPress
+3. Sanidi mipangilio ya nyongeza katika msimamizi wa mtandao
+
+## Uendelezaji {#development}
+
+### Usanidi {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Muundo wa Mradi
+### Muundo wa Mradi {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes na sehemu za kuunganisha
-│   ├── class-multisite-ultimate-updater.php  # Handler ya kuweka masasisho
+├── inc/                          # Madarasa ya PHP na vijumuisho
+│   ├── class-multisite-ultimate-updater.php  # Kishughulikiaji cha masasisho
 │   └── class-multi_tenancy-main.php             # Utendaji mkuu
-├── tests/                        # Vipimo vya kitengo (Unit tests)
-│   ├── bootstrap.php            # Bootstrap ya vipimo
-│   ├── class-*-base.php         # Darasa la msingi la vipimo
-│   └── class-*-test.php         # Mifano ya vipimo
-├── views/                       # Faili za muundo (Template files)
-├── assets/                      # Rasilimali zisizo badilika (Static assets)
-│   ├── css/                     # Faili za mitindo (Stylesheets)
+├── tests/                        # Majaribio ya kitengo
+│   ├── bootstrap.php            # Uanzishaji wa jaribio
+│   ├── class-*-base.php         # Darasa la msingi la jaribio
+│   └── class-*-test.php         # Matukio ya jaribio
+├── views/                       # Faili za violezo
+├── assets/                      # Rasilimali tuli
+│   ├── css/                     # Laha za mitindo
 │   ├── js/                      # Faili za JavaScript
 │   └── images/                  # Picha
 ├── lang/                        # Faili za lugha
-├── composer.json                # Dependencies za PHP
-├── package.json                 # Dependencies za Node.js
-├── phpunit.xml.dist             # Mipangilio ya PHPUnit
-├── .phpcs.xml.dist              # Mipangilio ya viwango vya msimbo
-└── rector.php                   # Kanuni za kuboresha msimbo
+├── composer.json                # Vitegemezi vya PHP
+├── package.json                 # Vitegemezi vya Node.js
+├── phpunit.xml.dist             # Usanidi wa PHPUnit
+├── .phpcs.xml.dist              # Usanidi wa viwango vya msimbo
+└── rector.php                   # Kanuni za kusasisha msimbo
 ```
 
-### Upimaji (Testing)
+### Majaribio {#testing}
 
-Addon hii inajumuisha mfumo kamili wa upimaji:
+Nyongeza inajumuisha mfumo mpana wa majaribio:
 
-- **Unit Tests**: Vipimo vinavyotegemea PHPUnit na seti ya vipimo vya WordPress
-- **Base Test Class**: Inatoa njia za msaada kwa ajili ya matukio ya kawaida ya upimaji
-- **Test Coverage**: Imewekwa kufuatilia ufuatiliaji wa msimbo
-- **Multisite Testing**: Vipimo vinatendeka katika mazingira ya multisite
+- **Majaribio ya Kitengo**: Majaribio yanayotegemea PHPUnit na seti ya majaribio ya WordPress
+- **Darasa la Msingi la Jaribio**: Hutoa mbinu saidizi kwa hali za kawaida za majaribio
+- **Ufunikaji wa Majaribio**: Umesanidiwa kufuatilia ufunikaji wa msimbo
+- **Majaribio ya Multisite**: Majaribio huendeshwa katika mazingira ya multisite
 
-### Viwango vya Msimbo (Code Standards)
+### Viwango vya Msimbo {#code-standards}
 
-- **WordPress Coding Standards**: Vinatunzwa kupitia PHPCS
-- **PHP 7.4+ Compatibility**: Vipengele vya kisasa vya PHP vinasaudiwa
-- **Static Analysis**: Ujumuishaji wa PHPStan kwa ajili ya kuangalia aina za data (type checking)
-- **Code Modernization**: Kanuni za Rector kwa ajili ya kuboresha PHP
+- **Viwango vya Uandishi wa Msimbo vya WordPress**: Vinatekelezwa kupitia PHPCS
+- **Upatanifu wa PHP 7.4+**: Vipengele vya kisasa vya PHP vinaungwa mkono
+- **Uchambuzi Tuli**: Ujumuishaji wa PHPStan kwa ukaguzi wa aina
+- **Usasishaji wa Msimbo**: Kanuni za Rector kwa maboresho ya PHP
 
-### Mfumo wa Kuunda (Build System)
+### Mfumo wa Kujenga {#build-system}
 
-- **Asset Processing**: Kupunguza ukubwa wa faili za CSS/JS (Minification)
-- **Translation**: Kuunda faili za POT
-- **Packaging**: Kuunda hifadhi kwa ajili ya usambazaji
-- **Development Mode**: Rasilimali zisizopunguzwa kwa ajili ya kuangalia makosa (debugging)
+- **Uchakataji wa Rasilimali**: Upunguzaji kwa faili za CSS/JS
+- **Tafsiri**: Uzalishaji wa faili ya POT
+- **Ufungashaji**: Uundaji wa jalada kwa usambazaji
+- **Hali ya Uendelezaji**: Rasilimali zisizopunguzwa kwa utatuzi
 
-## Utekelezaji (Configuration)
+## Usanidi {#configuration}
 
-Addon hii inasaidia chaguo mbalimbali za uteuzi ambazo zinaweza kupatikana kupitia kiunganishi cha kiutawala cha mtandao (network admin interface).
+Nyongeza inaunga mkono chaguo mbalimbali za usanidi zinazopatikana kupitia kiolesura cha msimamizi wa mtandao.
 
-## Hooks na Filters
+### Usanidi wa mpangaji huru {#sovereign-tenant-configuration}
 
-### Actions (Vitendo)
+Kwa wapangaji huru, sanidi hifadhidata ya mpangaji, mzizi wa mfumo wa faili, ufungaji wa mwenyeji wa hifadhidata, na uwezo wa mwenyeji kabla ya kuelekeza trafiki kwa mpangaji. Endesha uthibitishaji wa uhamishaji baada ya kila badiliko linaloathiri vitambulisho vya hifadhidata, ufungaji wa mwenyeji, uelekezaji, au utoaji wa watumiaji.
 
-- `ultimate-multisite-addon-template_init` - Inatokea baada ya kuanzishwa kwa addon
-- `ultimate-multisite-addon-template_loaded` - Inatokea baada ya kuingizwa kwa faili zote za addon
+Tumia `localhost` tu wakati mazingira ya utekelezaji ya mpangaji na ruhusa za hifadhidata zinatarajia soketi ya ndani au ufikiaji wa mashine ileile. Tumia `127.0.0.1` au jina la mwenyeji wa huduma wakati huyo ndiye mwenyeji wa ruhusa aliyesanidiwa na mtoa huduma wako.
 
-### Filters (Vifilta)
+### Uwezo wa Hostinger {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Kubadilisha mipangilio ya addon
-- `ultimate-multisite-addon-template_enabled` - Kubatilisha hali ya kuwasha/kizima kwa addon
+Uwezo wa Hostinger wa upangaji wengi hufanya kazi na tokeni ya ujumuishaji ya Hostinger iliyoshirikiwa. Thibitisha kuwa kikoa kipo katika hPanel, DNS inaelekeza kwenye Account ya Hostinger, na mipangilio ya hifadhidata ya mpangaji inalingana na hPanel kabla ya uthibitishaji.
 
-## Leseni
+## Hooks na Filters {#hooks-and-filters}
 
-Addon hii inasimamiwa chini ya GPL v3 au baadaye.
+### Actions {#actions}
 
-## Msaada
+- `ultimate-multisite-addon-template_init` - Huwashwa baada ya uanzishaji wa nyongeza
+- `ultimate-multisite-addon-template_loaded` - Huwashwa baada ya faili zote za nyongeza kupakiwa
 
-Kwa msaada na waraka, tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historia ya Mabadiliko (Changelog)
+### Filters {#filters}
 
-- Version 1.0.1 (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kuboresha eneo la maandishi (text domain); kuongeza namba ya toleo.
+- `ultimate-multisite-addon-template_settings` - Rekebisha mipangilio ya nyongeza
+- `ultimate-multisite-addon-template_enabled` - Batilisha hali ya kuwezesha/kulemaza nyongeza
+
+## Leseni {#license}
+
+Nyongeza hii imepewa leseni chini ya GPL v3 au ya baadaye.
+
+## Usaidizi {#support}
+
+Kwa usaidizi na nyaraka, tembelea [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Version 1.2.0 (2026-06-03): ongeza kuingia kiotomatiki kwa mpangaji bila hali, uwezo wa Hostinger wa upangaji wengi, utenganishaji wa hifadhidata na mfumo wa faili kwa kila tovuti ndogo, milango ya uthibitishaji wa uhamishaji huru, maboresho ya uanzishaji wa mpangaji/mwandishi wa hifadhidata, ufungaji unaoweza kusanidiwa wa mwenyeji wa MySQL, na uondoaji salama zaidi wa huru.
+
+- Version 1.0.1 (2025-09-28): badilisha jina la kiambishi kuwa ultimate-multisite; sasisha kikoa cha maandishi; ongeza toleo.
 
 
-- Version (2025-09-28): kubadilisha kiambatanisho (prefix) kuwa ultimate-multisite; kuboresha eneo la maandishi (text domain); kuongeza namba ya toleo.
+- Version  (2025-09-28): badilisha jina la kiambishi kuwa ultimate-multisite; sasisha kikoa cha maandishi; ongeza toleo.

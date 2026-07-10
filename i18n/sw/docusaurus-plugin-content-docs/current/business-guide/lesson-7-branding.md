@@ -3,15 +3,15 @@ title: 'Somada ya 7: Kuifanya iwe yako'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Somo la 7: Kuifanya iwe Yako
+# Somo la 7: Kuifanya iwe Yako {#lesson-7-making-it-yours}
 
 Wateja wako hawawezi kuwahi kuhisi kama wanatumia "plugin yoyote ya WordPress." Wanapaswa kuhisi wanatumia FitSite — jukwaa lililojengwa kwa ajili ya sekta yao. Somo hili linazungumzia jinsi ya kuweka chapa (branding), kuifanya ionekane kama chapa yako (white-labeling), na kuifanya hii platform ionekane kama bidhaa halisi.
 
-## Tulipoacha
+## Tulipoacha {#where-we-left-off}
 
 FitSite ina mtiririko wa kazi wa malipo (checkout flow) ambao unampeleka mmiliki wa studio ya mazoezi kutoka kuchagua mpango hadi kuwa na tovuti halisi. Sasa tunafanya uzoefu mzima uonekane kama bidhaa moja, iliyo na chapa yako.
 
-## Nyanja ya Platform Yako (Your Platform Domain)
+## Nyanja ya Platform Yako (Your Platform Domain) {#your-platform-domain}
 
 Msingi wa chapa yako ni nyanja yako (domain). Kwa FitSite:
 
@@ -19,7 +19,7 @@ Msingi wa chapa yako ni nyanja yako (domain). Kwa FitSite:
 - **Tovuti za Wateja (Customer sites)**: `studioname.fitsite.com` (subdomains)
 - **Nyanja Maalum (Custom domains)**: Wateja wenye mipango ya Growth na Pro wanaweza kuunganisha nyanja yao wenyewe
 
-### Kuweka Nyanja Yako (Setting Up Your Domain)
+### Kuweka Nyanja Yako (Setting Up Your Domain) {#setting-up-your-domain}
 
 1. Rekodi nyanja yako ya platform
 2. Ielekeza kwa mtoa huduma wako wa hosting
@@ -28,11 +28,11 @@ Msingi wa chapa yako ni nyanja yako (domain). Kwa FitSite:
 
 Tazama [Jinsi ya Kuweka Nyanja ya Uunganisho (How to Configure Domain Mapping)](/user-guide/domain-mapping/how-to-configure-domain-mapping) kwa maelekezo ya kina.
 
-## Kuifanya ionekane kama Chapa Yako Uzoefu wa Admin (White-Labeling the Admin Experience)
+## Kuifanya ionekane kama Chapa Yako Uzoefu wa Admin (White-Labeling the Admin Experience) {#white-labeling-the-admin-experience}
 
 Wakati mmiliki wa studio ya mazoezi anapoingia kwenye dashboard ya tovuti yake, anapaswa kuona chapa yako, sio chapa ya WordPress au Ultimate Multisite.
 
-### Ukurasa wa Ku-Login Maalum (Custom Login Page)
+### Ukurasa wa Ku-Login Maalum (Custom Login Page) {#custom-login-page}
 
 Badilisha ukurasa wa ku-login wa WordPress ili uonyeshe:
 
@@ -40,7 +40,7 @@ Badilisha ukurasa wa ku-login wa WordPress ili uonyeshe:
 - Picha za mandhari zinazofaa kwa mazoezi
 - Rangi za chapa yako
 
-### Chapa ya Dashboard (Dashboard Branding)
+### Chapa ya Dashboard (Dashboard Branding) {#dashboard-branding}
 
 Tumia addon ya [Admin Page Creator](/addons/admin-page-creator) au CSS maalum ili:
 
@@ -48,7 +48,7 @@ Tumia addon ya [Admin Page Creator](/addons/admin-page-creator) au CSS maalum il
 - Kubadilisha muundo wa rangi wa admin ili ulingane na chapa yako
 - Kuongeza widget maalum kwenye dashboard yenye viungo vya haraka na rasilimali za msaada zinazohusiana na mazoezi
 
-### Kurasa za Admin Maalum (Custom Admin Pages)
+### Kurasa za Admin Maalum (Custom Admin Pages) {#custom-admin-pages}
 
 Fikiria kuunda kurasa za admin maalum ambazo zionyeshe vitendo muhimu zaidi kwa mmiliki wa studio ya mazoezi:
 
@@ -58,11 +58,11 @@ Fikiria kuunda kurasa za admin maalum ambazo zionyeshe vitendo muhimu zaidi kwa 
 
 Hii inapunguza ugumu wa kujifunza kwa kuweka vitendo muhimu kwa sekta hiyo mbele, badala ya kuzificha kwenye menyu ya kawaida ya WordPress.
 
-## Kuweka Chapa kwenye Mawasiliano Yako (Branding Your Communications)
+## Kuweka Chapa kwenye Mawasiliano Yako (Branding Your Communications) {#branding-your-communications}
 
 Barua pepe zote, ankara, na arifa zote zinapaswa kuimarisha chapa yako.
 
-### Barua Pepe za Mfumo (System Emails)
+### Barua Pepe za Mfumo (System Emails) {#system-emails}
 
 Nenda kwenye **Ultimate Multisite > Settings > Emails** na kubadilisha barua pepe zote za mfumo:
 
@@ -79,7 +79,7 @@ Barua pepe muhimu za kubadilisha:
 | Risiti ya Malipo | "Malipo yamepokelewa" | "Malipo ya usajili wa FitSite yamekamilika" |
 | Jaribio linamalizika | "Jaribio lako linamalizika hivi karibuni" | "Jaribio lako la FitSite linamalizika baada ya siku 3 — weka tovuti yako ya studio iwe hai" |
 
-### Ankara (Invoices)
+### Ankara (Invoices) {#invoices}
 
 Badilisha muundo wa ankara kwa kutumia:
 
@@ -87,7 +87,7 @@ Badilisha muundo wa ankara kwa kutumia:
 - Taarifa zako za biashara
 - Majina ya bidhaa yanayohusiana na mazoezi (sio namba za mipango za jumla)
 
-## Tovuti Inayoonekana na Mteja (The Customer-Facing Site)
+## Tovuti Inayoonekana na Mteja (The Customer-Facing Site) {#the-customer-facing-site}
 
 Nyanja yako kuu (`fitsite.com`) inahitaji tovuti ya masoko ambayo inauza jukwaa hilo. Hii ni tofauti na admin ya mtandao wa Ultimate Multisite — ndiyo uso wa umma wa biashara yako.
 
@@ -103,7 +103,7 @@ Kurasa muhimu:
 Uunda tovuti yako ya masoko kama tovuti ndani ya mtandao wako mwenyewe. Hii inakuwezesha kuisimamia kutoka kwenye dashboard moja na inaonyesha uwezo wa jukwaa lako mwenyewe.
 :::
 
-## Nyanja Maalum kwa Wateja (Custom Domain for Customers)
+## Nyanja Maalum kwa Wateja (Custom Domain for Customers) {#custom-domain-for-customers}
 
 Kwa wateja wenye mipango inayojumuisha nyanja maalum, eleza mchakato kwa uwazi:
 
@@ -113,7 +113,7 @@ Kwa wateja wenye mipango inayojumuisha nyanja maalum, eleza mchakato kwa uwazi:
 
 Uunda makala ya msaada au kiingizo cha msingi wa maarifa hasa kwa mchakato huu, kikiandikwa kwa ajili ya wamiliki wa studio ya mazoezi ambao si wataalamu wa teknolojia.
 
-## Mtandao wa FitSite Hadi Sasa (The FitSite Network So Far)
+## Mtandao wa FitSite Hadi Sasa (The FitSite Network So Far) {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Tulijenga Nini Someni Hili (What We Built This Lesson)
+## Tulijenga Nini Someni Hili (What We Built This Lesson) {#what-we-built-this-lesson}
 
 - **Nyanja ya platform na DNS** zimepangwa kwa uzoefu wenye chapa
 - **Admin iliyo na chapa (White-labeled admin)** na chapa ya FitSite kote

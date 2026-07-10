@@ -3,11 +3,11 @@ title: Ho bohlokoa le ho bona
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Boitsopebopebope (Ability Visibility)
+# Boitsopebopebope (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 e ntsa **Boitsopebopebope** (Ability Visibility) tse di tsela tsa go thusa, tse di dirang eng le eng se fana ka boitsopebopebopeba (ability). Le fa ke tla thusa baalima go bona kae kae botshelo ba agent ka REST APIs, MCP servers, WooCommerce integrations, le ditswalo tse ding.
 
-## Boitsopebopebopeba (What is Ability Visibility)?
+## Boitsopebopebopeba (What is Ability Visibility)? {#what-is-ability-visibility}
 
 Boitsopebopebopeba ke tsela ya tsamaiso e thusang go dirisa:
 
@@ -18,9 +18,9 @@ Boitsopebopebopeba ke tsela ya tsamaiso e thusang go dirisa:
 
 Setlo se se fana ka boitsopebopebopeba se fana ka lefa le le bontsha kae kae kae.
 
-## Leina la Boitsopebopebopeba (Visibility Levels)
+## Leina la Boitsopebopebopeba (Visibility Levels) {#visibility-levels}
 
-### Public (Le fa ba ba tlamega go ba leba)
+### Public (Le fa ba ba tlamega go ba leba) {#public}
 
 **Boitsopebopebopeba tsa le fa ba ba tlamega go ba leba** di fana ka lefa:
 
@@ -32,7 +32,7 @@ Setlo se se fana ka boitsopebopebopeba se fana ka lefa le le bontsha kae kae kae
 
 Sebaka se se fana ka eeng: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Le fa ba ba tlamega go ba leba)
+### Internal (Le fa ba ba tlamega go ba leba) {#internal}
 
 **Boitsopebopebopeba tsa le fa ba ba tlamega go ba leba** di fana ka lefa mo tsela ya WordPress ya gago:
 
@@ -43,7 +43,7 @@ Sebaka se se fana ka eeng: `scaffold-block-theme`, `activate-theme`, `send-email
 
 Sebaka se se fana ka eeng: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Le fa ba ba tlamega go ba leba)
+### Partner (Le fa ba ba tlamega go ba leba) {#partner}
 
 **Boitsopebopebopeba tsa le fa ba ba tlamega go ba leba** di fana ka lefa mo partner ba ba ba leba:
 
@@ -54,7 +54,7 @@ Sebaka se se fana ka eeng: `manage-settings`, `view-analytics`, `export-data`
 
 Sebaka se se fana ka eeng: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Le fa ba ba tlamega go ba leba)
+### Disabled (Le fa ba ba tlamega go ba leba) {#disabled}
 
 **Boitsopebopebopeba tsa le fa ba ba tlamega go ba leba** di fana ka lefa mo lefa le le bontsha:
 
@@ -65,15 +65,15 @@ Sebaka se se fana ka eeng: `bulk-import-users`, `modify-billing`, `access-analyt
 
 
 
-## Go-boetsopeho Boitshwaro (Managing Ability Visibility)
+## Go-boetsopeho Boitshwaro (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Go-boetsopeho Boitshwaro sa Litlhokwa (Accessing Ability Visibility Settings)
+### Go-boetsopeho Boitshwaro sa Litlhokwa (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. La **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Le **Abilities** tab (Litlhokwa) e tsamaya
 3. O tla bona lishomiso lehle tsa boitshwaro (abilities) le dikotla tsa lipelo tsa li lehle (visibility levels).
 
-### Go-boetsopeho Boitshwaro (Viewing Ability Details)
+### Go-boetsopeho Boitshwaro (Viewing Ability Details) {#viewing-ability-details}
 
 Le tloha le hloka lehlaka la boitshwaro (ability) ho bona:
 
@@ -84,7 +84,7 @@ Le tloha le hloka lehlaka la boitshwaro (ability) ho bona:
 - **Last updated**: Le fa boitshwaro bo ne bo fetoga la goanyane.
 - **Status**: Le e tseba kgotsa E ne e ntse e tlhokwa.
 
-### Go-boetsopeho Boitshwaro (Changing Visibility Levels)
+### Go-boetsopeho Boitshwaro (Changing Visibility Levels) {#changing-visibility-levels}
 
 Ho fetola lehle la ability:
 
@@ -102,7 +102,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Ho Fetola Ka Boitshwaro (Bulk Operations)
+### Ho Fetola Ka Boitshwaro (Bulk Operations) {#bulk-operations}
 
 Ho fetola lehle la boitshwaro ho boitshwaro ba li lehle tse dintsi:
 
@@ -110,11 +110,11 @@ Ho fetola lehle la boitshwaro ho boitshwaro ba li lehle tse dintsi:
 2. Select lehle la lehle la boitshwaro ho tloha mo bulk action dropdown.
 3. Tsamaya le hloka **Apply** (Tlhokwa).
 
-## Lehlaka la Partner Allow-List (Partner Allow-List)
+## Lehlaka la Partner Allow-List (Partner Allow-List) {#partner-allow-list}
 
 Le **partner allow-list** le fetola seo se etsang hore boitshwaro ba ka bona ba partner ba lehle tsa boitshwaro ba Partner.
 
-### Ho Ntshoa Boitshwaro Ba Partner (Adding Partners)
+### Ho Ntshoa Boitshwaro Ba Partner (Adding Partners) {#adding-partners}
 
 1. Tsamaya le hloka lehlaka la **Superdav AI Agent** → **Settings** → **Partners**.
 2. Tsamaela le hloka **Add Partner** (Ntshoa Partner).
@@ -122,7 +122,7 @@ Le **partner allow-list** le fetola seo se etsang hore boitshwaro ba ka bona ba 
 4. Ha ho hloka, tsena lehle la partner le description.
 5. Tsamaya le hloka **Save** (Fetola).
 
-### Ho Tlhokwa Boitshwaro Ba Partner (Assigning Abilities to Partners)
+### Ho Tlhokwa Boitshwaro Ba Partner (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Ha o ntshoa partner:
 
@@ -136,7 +136,7 @@ Ha o ntshoa partner:
 
 5. Click **Save**
 
-### Ho go tsheba ho partner access
+### Ho go tsheba ho partner access {#revoking-partner-access}
 
 Ho go fana ho ba partner access:
 
@@ -146,11 +146,11 @@ Ho go fana ho ba partner access:
 
 The partner will immediately lose access to that ability.
 
-## Abilities e sengeng (Unclassified Abilities)
+## Abilities e sengeng (Unclassified Abilities) {#unclassified-abilities}
 
 When you install a third-party ability that Superdav AI Agent doesn't recognize, it's marked as **Unclassified**.
 
-### Lihloboho ho admin li ba abilities sengeng
+### Lihloboho ho admin li ba abilities sengeng {#admin-notice-for-unclassified-abilities}
 
 O tla bona lihloboho la admin:
 
@@ -167,7 +167,7 @@ Kaopa hore o le bone le o le tsene.
 [Review Abilities] [Dismiss]
 ```
 
-### Ho bona abilities sengeng
+### Ho bona abilities sengeng {#reviewing-unclassified-abilities}
 
 1. Click **Review Abilities** mo lihloboho la notice
 2. Ho ba lehle le ability se sengeng, o tla bona:
@@ -184,7 +184,7 @@ Kaopa hore o le bone le o le tsene.
 
 4. Click **Classify** ho tsena tsela ya hau
 
-### Ke eng e hloka ho tsena abilities sengeng?
+### Ke eng e hloka ho tsena abilities sengeng? {#why-classify-unclassified-abilities}
 
 Ho tsena abilities:
 
@@ -195,9 +195,9 @@ Ho tsena abilities:
 
 
 
-## Tšapelo ka Morero Fafeli
+## Tšapelo ka Morero Fafeli {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Tšapelo tsa botshelo (Public abilities)** di fana ka mofuta o nepa REST endpoints:
 
@@ -209,7 +209,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Tšapelo tsa bohloko (Internal and Partner abilities)** di tsena ka REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Tšapelo tsa botshelo (Public abilities)** di fana ka MCP:
 
@@ -225,7 +225,7 @@ Tšapelo tse neng di fana:
 
 **Tšapelo tsa partner (Partner abilities)** di fana fa le credentials tsa partner.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Tšapelo tsa botshelo (Public abilities)** tse neng di fetogela WooCommerce di fana:
 
@@ -235,7 +235,7 @@ Tšapelo tse neng di fana:
 
 **Tšapelo tsa bohloko (Internal abilities)** di tsena ka WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **Tšapelo di tšapelo (All abilities)** (botshelo, bohloko, partner) di fana mo chat, go feta fa user a re, fa botshelo:
 
@@ -243,27 +243,27 @@ Tšapelo tse neng di fana:
 - Users ba ntlha ba bona botshelo tsa botshelo (Public abilities)
 - Partners ba bona botshelo tsa botshelo le tsa partner (fa di fetogile ka whitelist)
 
-## Boitshwaro Jwa Ho Baetso (Security Best Practices)
+## Boitshwaro Jwa Ho Baetso (Security Best Practices) {#security-best-practices}
 
-### Prinsipho ea Ho Baetso le Tšapelo e le E le Possible (Principle of Least Privilege)
+### Prinsipho ea Ho Baetso le Tšapelo e le E le Possible (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Set tšapelo ho botshelo tse neng di le ho ba le ho fetogile ha di fana ka ho sebelisoa
 - Sebele tšapelo tsa partner ho litšoa tse neng di le ho ba le ho fetogile (sensitive operations)
 - Tsena tšapelo tse a re, tse a re le ho sebelisa
 
-### Ho Baetso Joalo (Regular Audits)
+### Ho Baetso Joalo (Regular Audits) {#regular-audits}
 
 - Re le ho bona tšapelo joalo ka mmele ea mmele (monthly)
 - Re le ho ba le ho bona tšapelo tse neng di tsena
 - Tsena tšapelo tsa partner tse a re, tse a re le ho sebelisoa
 
-### Ho Baetso le Ho Tlhalosa (Logging and Monitoring)
+### Ho Baetso le Ho Tlhalosa (Logging and Monitoring) {#logging-and-monitoring}
 
 - Re le ho bona tšapelo tse neng di le ba le ho sebelisoa hantle
 - Re le ho tsamaea le litšomo tsa partner
 - Tsena fa ho reba ho sebelisoa haholo ea tšapelo
 
-### Tšapelo tsa Morero (Third-Party Abilities)
+### Tšapelo tsa Morero (Third-Party Abilities) {#third-party-abilities}
 
 - Re le ho bona tšapelo tsa morero mmele joalo ka ho ba le ho fetogile
 - Re le ho ba le ho tsamaea ho ba le ho reba
@@ -272,7 +272,7 @@ Tšapelo tse neng di fana:
 
 ---
 
-## Go-go-gao (Troubleshooting)
+## Go-go-gao (Troubleshooting) {#troubleshooting}
 
 **Tsela le fa'a (An ability isn't showing in the list)**
 - Re tsela hore ke a feso (Verify that the ability is installed and active)
@@ -295,7 +295,7 @@ Tšapelo tse neng di fana:
 - Re tsela hore o fetola ho fetola (Check that your classification was saved)
 - Re tsela hore plugin e fetang fa'a e fetolwa (Verify the plugin providing the ability is up to date)
 
-## Ho fana ka Mode ea Legacy (Migration from Legacy Mode)
+## Ho fana ka Mode ea Legacy (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 Ha u fetola ho version e fetileng ea Superdav AI Agent:
 
@@ -305,7 +305,7 @@ Ha u fetola ho version e fetileng ea Superdav AI Agent:
 
 Re leba **Third-Party Mode Migration** ho fana ka fa'a tse di fetolwa ho API integration e fetileng.
 
-## Setso sa Ho Fetola (Next Steps)
+## Setso sa Ho Fetola (Next Steps) {#next-steps}
 
 Ha u setse ho fetola tsela ea fa'a e fetileng:
 

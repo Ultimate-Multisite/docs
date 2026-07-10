@@ -3,7 +3,7 @@ title: Multisite Sozlamasi Asistenti
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Sozlash Vazirasi
+# Multisite Sozlash Vazirasi {#multisite-setup-wizard}
 
 Ultimate Multisite ichida standart WordPress o'rnatmasini avtomatik ravishda WordPress Multisite tarmog'iga aylantiradigan ichki vazifani (wizard) mavjud. Bu sizdan `wp-config.php` faylini qo'lda tahrirlash yoki ma'lumotlar bazasi buyruqlarini ishga tushirish zaruriyatini yo'q qiladi.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ichida standart WordPress o'rnatmasini avtomatik ravishda Wor
 Agar WordPress o'rnatmasi allaqachon Multisite tarmog'i sifatida ishlayotgan bo'lsa, siz bu qadamni butunlay tashlab yuborishingiz mumkin. Vaziralar faqat Multisite hali faollashtirilmaganida ko'rinadi.
 :::
 
-## Vaziralar Qachon Ko'rinadi?
+## Vaziralar Qachon Ko'rinadi? {#when-does-the-wizard-appear}
 
 Standart (Multisite bo'lmagan) WordPress o'rnatmasiga Ultimate Multisite ni faollashtirganda, plugin Multisite faollashtirilmaganligini aniqlaydi va sizni oddiy sozlash vazirasi o'rniga Multisite Sozlash Vazirasi bilan avtomatik ravishda yo'naltiradi.
 
 Buni shuningdek **WP Admin > Ultimate Multisite > Multisite Setup** orqali bevosita ham ko'rishingiz mumkin.
 
-## Oldingi Shartlar (Prerequisites)
+## Oldingi Shartlar (Prerequisites) {#prerequisites}
 
 Vazirani ishga tushirishdan oldin quyidagilarga ishonch hosil qiling:
 
@@ -29,7 +29,7 @@ Vazirani ishga tushirishdan oldin quyidagilarga ishonch hosil qiling:
 Vaziralar sizning `wp-config.php` faylingizni o'zgartiradi va yangi ma'lumotlar bazasi jadvallarini yaratadi. Davom etishdan oldin har doim nusxani bering.
 :::
 
-## 1-Qadam: Xayrli kelibsiz (Welcome)
+## 1-Qadam: Xayrli kelibsiz (Welcome) {#step-1-welcome}
 
 Birinchi ekran WordPress Multisite nima ekanligini va vaziraning nimani qilishi haqida tushuntiradi:
 
@@ -42,11 +42,11 @@ Birinchi ekran WordPress Multisite nima ekanligini va vaziraning nimani qilishi 
 
 Davom etish uchun **Continue** (Davom etish) tugmasini bosing.
 
-## 2-Qadam: Tarmoq Konfiguratsiyasi (Network Configuration)
+## 2-Qadam: Tarmoq Konfiguratsiyasi (Network Configuration) {#step-2-network-configuration}
 
 Bu qadam sizga tarmoq sozlamalaringizni konfiguratsiya qilishni so'raydi.
 
-### Sayt Tuzilishi (Site Structure)
+### Sayt Tuzilishi (Site Structure) {#site-structure}
 
 Ishlab network saytlaringizni qanday tashkil qilishni tanlang:
 
@@ -57,11 +57,11 @@ Ishlab network saytlaringizni qanday tashkil qilishni tanlang:
 Agar siz sub-domenlarni tanlasangiz, domen uchun **wildcard DNS** va **wildcard SSL sertifikatini** sozlash kerak bo'ladi. Ko'pgina boshqariladigan WordPress mehmalari buni avtomatik amalga oshiradi. Batafsil taqqoslash uchun [Ultimate Multisite 101](https://ultimate-multisite-101) ni ko'ring.
 :::
 
-### Network Titli (Network Title)
+### Network Titli (Network Title) {#network-title}
 
 Jamoangiz uchun nom kiriting. Bu sizning hozirgi sayt sarlavhasi "Network" so'zi bilan tugallanadi. Buni keyinchalik network sozlamalaridan o'zgartirishingiz mumkin.
 
-### Network Administrator Email
+### Network Administrator Email {#network-admin-email}
 
 Networkni boshqarish haqidagi xabarlarni yuborish uchun ishlatiladigan elektron pochta manzili. Bu hozirgi foydalanuvchining elektron pochta manziliga avtomatik ravishda o'rnatiladi.
 
@@ -69,7 +69,7 @@ Networkni boshqarish haqidagi xabarlarni yuborish uchun ishlatiladigan elektron 
 
 Maydonlarni to'ldirgandan so'ng, davom etish uchun **Continue** tugmasini bosing.
 
-## 3-qadam: O'rnatish (Installation)
+## 3-qadam: O'rnatish (Installation) {#step-3-installation}
 
 Boshlash uchun **Install** tugmasini bosing. Wizard beshta avtomatlashtirilgan qadamni ketma-ket bajaradi va har bir qadamning holatini real vaqtda ko'rsatadi:
 
@@ -96,7 +96,7 @@ Boshlash uchun **Install** tugmasini bosing. Wizard beshta avtomatlashtirilgan q
 
 Содан кейін визуалды құрал автоматты түрде аяқтау экранына өтеді.
 
-## 4-ші қадам: Аяқтау
+## 4-ші қадам: Аяқтау {#step-4-complete}
 
 Орнату аяқталған кезде, WordPress Multisite іске қосылғанын растайтын сәттілік хабарламасын көресіз.
 
@@ -108,7 +108,7 @@ Boshlash uchun **Install** tugmasini bosing. Wizard beshta avtomatlashtirilgan q
 Multisite o'rnatmasi yakunlangandan so'ng, brauzeringiz yangi faollashtirilgan tarmoq administrator orqali yo'naltiriladi. Multisite muhiti uchun autentifikatsiya cookie-lari yangilanganligi sababli sizdan yana kirish talab qilinishi mumkin.
 :::
 
-## Qo'lda sozlash (Manual Setup)
+## Qo'lda sozlash (Manual Setup) {#manual-setup-fallback}
 
 Agar wizard fayl huquqlari yoki server cheklovlari tufayli `wp-config.php` fayliga yozish qila olmasa, u sizga qo'shishingiz kerak bo'lgan aniq kodni ko'rsatadi:
 
@@ -117,9 +117,9 @@ Agar wizard fayl huquqlari yoki server cheklovlari tufayli `wp-config.php` fayli
 
 Qo'lda o'zgartirishlardan so'ng, sahifani yangilang va wizard multisite endi faol ekanligini aniqlaydi.
 
-## Muammolarni hal qilish (Troubleshooting)
+## Muammolarni hal qilish (Troubleshooting) {#troubleshooting}
 
-### Wizard `wp-config.php` yozilmayotganini aytmoqda
+### Wizard `wp-config.php` yozilmayotganini aytmoqda {#the-wizard-says-wp-configphp-is-not-writable}
 
 Veb-server jarayonida `wp-config.php` fayliga yozish huquqi bo'lishi kerak. Siz quyidagilardan birini bajara olasiz:
 
@@ -127,7 +127,7 @@ Veb-server jarayonida `wp-config.php` fayliga yozish huquqi bo'lishi kerak. Siz 
 - Wizard tomonidan taqdim etilgan qo'lda sozlash (manual setup) ko'rsatmalari orqali foydalaning
 - Hosting provayderidan yordam so'rang
 
-### Sozlanishdan keyin saytlarga kirish mumkin emas (subdomainlar)
+### Sozlanishdan keyin saytlarga kirish mumkin emas (subdomainlar) {#sites-are-not-accessible-after-setup-subdomains}
 
 Agar siz subdomain tuzilishini tanlagan bo'lsangiz, domen uchun **wildcard DNS** sozlamasini konfiguratsiya qilishingiz kerak. Quyidagi DNS yozuvini qo'shing:
 
@@ -139,7 +139,7 @@ Value: [sizning server IP manzilingiz]
 
 Bu qanday sozlashni bilmasangiz, hosting provayderingiz bilan tekshirib ko'ring.
 
-### Sozlanishdan keyin autentifikatsiya muammolari
+### Sozlanishdan keyin autentifikatsiya muammolari {#authentication-issues-after-setup}
 
 Multisite sozlamasidan so'ng siz chiqib ketgan bo'lsangiz yoki cookie xatolarini boshdan kechirsangiz:
 
@@ -147,7 +147,7 @@ Multisite sozlamasidan so'ng siz chiqib ketgan bo'lsangiz yoki cookie xatolarini
 2. `yourdomain.com/wp-login.php` orqali yana kirish qiling
 3. Muammo davom etsa, `wp-config.php` faylingizda `COOKIE_DOMAIN` ning `false` ga o'rnatilmaganligini tekshiring — bu subdomain multisite o'rnatmalarida ma'lum bir muammo.
 
-### O'rnatish jarayonida bir qadam muvaffaqiyatsiz bo'ldi
+### O'rnatish jarayonida bir qadam muvaffaqiyatsiz bo'ldi {#a-step-failed-during-installation}
 
 Agar o'rnatish bosqichlaridan biri xato bersa:
 

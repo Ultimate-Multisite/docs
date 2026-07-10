@@ -1,0 +1,192 @@
+---
+title: Isalathiso se-Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Isalathiso see-Hooks {#hooks-reference}
+
+Amaxwebhu aveliswe ngokuzenzekelayo azo zonke **izenzo ezingama-59** kunye **nezihluzi eziyi-118** kwi-Ultimate Multisite.
+
+## Izenzo {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Isebenza phambi kokuthunyelwa kwakhona kokuqinisekisa.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Isebenza kanye phambi kokuba kusetwe i-cookie yokuqinisekisa.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Isebenza kanye phambi kokuba kusetwe i-cookie yokuqinisekisa yomsebenzisi ongene ngaphakathi.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Vumela abaphuhlisi bongeze udibaniso lwabo lwababoneleli bokusingatha ngee-plugin ze-wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Iqalisa xa zonke izinto ezixhomekeke kuzo zilayishiwe
+- [wu_activation](./Actions/wu_activation) — Vumela amanye amalungu e-plugin ancamathisele iinkqubo zawo zokuvula
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Vumela abaphuhlisi be-plugin banxibelelanise imisebenzi emva kokuba umsebenzisi okanye super admin etshintshe itemplate yesayithi
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Kwezinye iimeko, kuya kufuneka silayishe amandla ongezelelweyo ukuze siphathe izenzo.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Isebenza phambi kokusetyenzwa kwesicelo sokukhangela.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Vumela abaphuhlisi benze utshintsho olongezelelweyo kwinto ye-checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Vumela abaphuhlisi benze utshintsho olongezelelweyo kwinto ye-checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Isebenza phambi kokuba intsimi yongezwe kwifomu ye-checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Vumela abaphuhlisi baqalise ii-hooks ezongezelelweyo.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Phambi kokuba sisebenze i-checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Isebenza emva kokuba iodolo ye-checkout idityaniswe ngokupheleleyo.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Vumela abaphuhlisi be-plugin bongeze ii-widget kwiPhaneli ye-Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Vumela abaphuhlisi be-plugin bongeze ii-widget kwiPhaneli ye-Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Vumela amanye amalungu e-plugin ancamathisele iinkqubo zawo zokucima ukusebenza
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Vumela abaphuhlisi be-plugin bongeze izenzo kwinkqubo yokucima
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Isebenza xa idomeyini iba yeyona domeyini iphambili yesayithi.
+- [wu_domain_created](./Actions/wu_domain_created) — Iqalisa xa kongezwa imephu entsha yedomeyini.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Isebenze emva kokuba i-Domain Mapping yethu engundoqo ilayishiwe
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ezinye ii-plugin ziya kugcina i-URL phambi kokuba imephu isebenze okanye ziya kwakha ii-URL ngendlela eyahlukileyo engabandakanywanga o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Vumela abaphuhlisi banxibelelanise emva kokuba ukuphindwa kwesayithi kwenzekile.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Vumela abaphuhlisi be-plugin bongeze ii-hooks ezongezelelweyo
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — I-hook yokucoca okongezelelweyo
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Isebenza phambi kokuphatha isicelo se-modal yokongeza idomeyini entsha.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Vumela abaphuhlisi be-plugin bagcine idatha ye-meta ngeendlela ezahlukeneyo ukuba bayayidinga.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Vumela abaphuhlisi be-plugin bagcine idatha ye-meta yomsebenzisi ngeendlela ezahlukeneyo ukuba bayayidinga.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Isebenza xa kudibana ne-token yekhonkco lomlingo engasebenziyo.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Isebenza emva kokuba umsebenzisi engenile ngekhonkco lomlingo.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Vumela abaphuhlisi be-plugin benze izinto ezongezelelweyo xa umthengi wongezwa.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Isebenza emva kokuba izakhono ze-MCP zibhalisiwe kwiziko.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Isebenza emva kokuba i-adapter ye-MCP iqalisiwe.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Iqalisa emva kokuba ubulungu burhoxisiwe.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Iqalisa emva kohlaziyo lobulungu.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Iqalisa phambi kokuba ubulungu burhoxiswe.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Iqalisa phambi kohlaziyo lobulungu.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Isebenza emva kokuba into igcinwe kwidatabase.
+- [wu_page_added](./Actions/wu_page_added) — Vumela abaphuhlisi be-plugin baqhube izinto ezongezelelweyo xa amaphepha ebhalisiwe.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Vumela abaphuhlisi be-plugin bongeze umxholo owongezelelweyo emva kokuba siprinte iphepha
+- [wu_page_before_render](./Actions/wu_page_before_render) — Vumela abaphuhlisi be-plugin bongeze umxholo owongezelelweyo phambi kokuba siprinte iphepha.
+- [wu_page_load](./Actions/wu_page_load) — Vumela abaphuhlisi be-plugin bongeze ii-hooks ezongezelelweyo kumaphepha ethu.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Vumela abaphuhlisi be-plugin bongeze umxholo owongezelelweyo emva kokuba siprinte iphepha
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Vumela abaphuhlisi be-plugin bongeze umxholo owongezelelweyo phambi kokuba siprinte iphepha.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Vumela abaphuhlisi be-plugin bongeze ii-hooks ezongezelelweyo kumaphepha ethu.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Isebenza emva kokuba ii-widget zibhalisiwe kweli phepha.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Isebenza ukuvumela ii-addon zincamathisele iimodyuli zamandla kudibaniso.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Isebenza ukuvumela udibaniso luzibhalise.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Vumela iindlela ezongezelelweyo zibhaliswe.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Vumela abaphuhlisi be-plugin bongeze izenzo kwinkqubo yokugcina
+- [wu_site_created](./Actions/wu_site_created) — Isebenza emva kokuba isayithi yenziwe okokuqala.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Vumela abaphuhlisi be-plugin bongeze ii-hooks ezongezelelweyo, ukuba ziyafuneka.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Iqhuba xa ngaphakathi komxholo wombonisi wetemplate.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Iqalisa i-hook yokufaka emgceni izikripthi.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Isebenza emva kokuba into igcinwe kwidatabase.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Isebenza emva kokuba into igcinwe kwidatabase.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Isebenza emva kokuba into igcinwe kwidatabase.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Vumela abaphuhlisi be-plugin bongeze izenzo kwinkqubo yokuvula.
+
+## Izihluzi {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ihluza ixesha lexesha lokuphelelwa kwe-cookie yokuqinisekisa.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ihluza iskimu sokuthumela kwakhona sokuqinisekisa.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Iphinda i-WP Filter yoqobo apha, ukuze kuqinisekiswe kakuhle.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Vumela abaphuhlisi be-plugin ukuba bahluze i-URL esetyenziswa kwi-previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Ihluza ukuba ingaba i-auth cookie kufuneka ithunyelwe kuphela nge-HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Ihluza ukuba kusetyenziswe ukuthumela kwakhona kokuqinisekisa okukhuselekileyo.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Ihluza ukuba ingaba i-cookie yomntu ongene ngemvume kufuneka ithunyelwe kuphela nge-HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Ivumela ukuthintela ii-auth cookies ekubeni zithunyelwe ngokwenene kumthengi.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Seta i-URL yokuthumela kwakhona.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Yongeza amanyathelo ongezelelweyo ngeefilter
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Vumela abaphuhlisi be-plugin ukuba bongeze i-variable eyongezelelweyo kumxholo wokubonisa kwihlabathi liphela.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Vumela abaphuhlisi ukuba banqumle ngokufutshane olu hlolo.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Ihluza iindawo ze-modal yokongeza domain entsha.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Vumela abaphuhlisi ukuba benze utshintsho kwinto yomgca yomrhumo wokuseta.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Vumela abaphuhlisi ukuba bahluze izaziso ze-admin ezongezwe yi-Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Hluza emva kokuba itshintshiwe.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ngoku, sijongana nazo zonke iindidi.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Vumela abaphuhlisi be-plugin ukuba banqumle ngokufutshane imida.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Ihluza ukuba ingaba umrhumo wokubhalisa kufuneka usetyenziswe okanye hayi.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Hluza iingxoxo ze-api zoqobo.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Vumela abaphuhlisi be-plugin ukuba bahluze iindawo zedilesi yokubhatala.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Vumela abaphuhlisi ukuba badlule kwimveliso kwaye basete entsha
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Vumela abaphuhlisi ukuba badlule kwikhowudi yokususa umsebenzisi wangoku.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Ihluza iyonke "yemali ephindaphindwayo".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Hluza iyonke "yemali yokuqala".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Hluza iyonke "yemali yokuqala".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Vumela abaphuhlisi be-plugin ukuba bangenelele kwixabiso letyala.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Ihluza ii-domain ezisisiseko ekwabelwana ngazo ze-checkout-form ezingafanele zibe ziirekhodi ze-mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Ii-API zethu zokongeza iitemplate zeendawo ezintsha ziqhagamshela apha.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Ii-API zethu zokongeza iindidi zeendawo ezintsha ziqhagamshela apha.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Hluza imiyalezo yeempazamo.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Vumela abaphuhlisi ukuba badlule kuhlolo ukuba indawo iyakwazi ukuzingenisa ngokuzenzekelayo.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Vumela abaphuhlisi be-plugin ukuba bongeze ii-alias ezenzelwe wena kwi-validator yefomu.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Vumela abaphuhlisi be-plugin ukuba bahluze imithetho yokuqinisekisa.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Susa ii-Params ezingafunekiyo.
+- [wu_contains_element](./Filters/wu_contains_element) — Vumela abaphuhlisi ukuba batshintshe iziphumo zokukhangela kokuqala.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Vumela ababoneleli be-host ukuba bafake i-constant ngendlela eyahlukileyo.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Ibuyisa igama elihle lamacandelo olawulo elizwe.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Ibuyisa uluhlu lwezixeko zesithili kwilizwe.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Ibuyisa uluhlu lwezithili zeli lizwe.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Vumela abaphuhlisi ukuba baguqule ukuziphatha okungagqibekanga baze basete umthengi wangoku ngendlela eyahlukileyo.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Vumela abaphuhlisi ukuba baguqule ukuziphatha okungagqibekanga baze basete ubulungu bangoku ngendlela eyahlukileyo.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Vumela abaphuhlisi ukuba baguqule ukuziphatha okungagqibekanga baze basete isayithi yangoku ngendlela eyahlukileyo.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Vumela abaphuhlisi ukuba baguqule iiparamitha ze-URL yokulawula isayithi.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Vumela abaphuhlisi be-plugin ukuba bahluze amakhonkco.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Vumela abaphuhlisi be-plugin ukuba bongeze uhlolo olutsha ukuze bachaze iziphumo.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Kusenokufuneka songeze iibhloko ezongezelelweyo kamva.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Yongeza ifilter jikelele ukuvumela abaphuhlisi bandise le parser ukuze ijongane nabakhi okanye ii-plugin ezongezelelweyo.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Hluza ukuba ingaba kunyanzeliswe imithetho eyongezelelweyo yee-password.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Hluza igama lomsebenzisi lomthengi elivelisiweyo.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Vumela abaphuhlisi be-plugin ukuba bahluze iiseti zangaphambili zephepha le-checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Vumela abaphuhlisi ukuba bongeze ii-slug zeefomu ezintsha ukuze badlule kule ndlela yokuziphatha.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Vumela abaphuhlisi kunye nee-add-on ukuba bongeze amanyathelo amatsha okufudusa
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Bona ngakumbi ngale filter ngezantsi, kule ndlela inye.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Vumela abaphuhlisi ukuba bakhethe ukuba zeziphi iindidi zeeposti ekufuneka ziboniswe.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Buyisa imigca, enokuhluziwa
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Vumela abaphuhlisi ukuba balawule izibini ze-domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Ihluza amacandelo e-wizard yokuseta ukudityaniswa kwe-hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Ihluza iindawo kwifomu. Ifomu ichongwa yi-ID kwigama lefilter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Hluza iindidi zeemveliso ezinemijikelo yokubhatala ezimeleyo.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Vumela abaphuhlisi be-plugin ukuba banyanzele imeko ethile ye-API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Vumela abaphuhlisi be-plugin ukuba bongeze iimvavanyo ezongezelelweyo zemowudi yophuhliso.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Vumela abaphuhlisi be-plugin ukuba banyanzele imeko ethile ye-adapter ye-MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Ngenxa yezizathu zokhuseleko, sinciphisa inani lezenzo ezikhoyo zokuqhagamshela kuzo. Le filter ivumela abaphuhlisi ukuba bandise
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ijonga ukuba ingaba uhlobo lweposti oluthile luvunyelwe kule plan Vumela abaphuhlisi be-plugin ukuba bahluze ixabiso elibuyisiweyo
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Hluza ukuba ingaba kunyanzeliswe ukuqinisekiswa kwedilesi ye-IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Hluza ukuba ingaba kunyanzeliswe ukuqinisekiswa kwe-user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Hluza i-URL ye-magic link evelisiweyo.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Hluza ukuba ingaba ii-magic links zivuliwe.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Ihluza i-URL yokuthumela kwakhona emva kokwenza i-domain ibe yeyokuqala.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Yenza uluhlu lokukhutshelwa ngaphandle lweeparamitha ezithintela ukuthumela kwakhona ngokuzenzekelayo.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter yokugqitha isigqibo sokubandakanya isakhono se-MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Ihluza umhla wokuphelelwa obaliweyo.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Ihluza umhla wokuphelelwa obaliweyo oza kusetwa emva kohlaziyo.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Vumela abaphuhlisi ukuba bongeze ii-slug zeefomu zohlaziyo ezintsha.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Hluza ubude obuncinane be-password.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Hluza amandla amancinci e-password afunekayo (inqaku le-zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Vumela abaphuhlisi be-plugin, nathi ngokwethu, ukuba songeze amakhonkco ezenzo kumaphepha ethu okuhlela
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Hluza ukuba ingaba kufuneka oonobumba abancinci kwii-password.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Hluza ukuba ingaba kufuneka amanani kwii-password.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Hluza ukuba ingaba kufuneka iimpawu ezikhethekileyo kwii-password.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Hluza ukuba ingaba kufuneka oonobumba abakhulu kwii-password.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Vumela umsebenzisi ukuba atshintshe umyalezo malunga neentlawulo ezisalindileyo.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Hluza iindidi zeemveliso ekufuneka ziphathwe njengee-plan.
+- [wu_post_count](./Filters/wu_post_count) — Vumela abaphuhlisi be-plugin ukuba batshintshe iyonke yokubala
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Vumela abaphuhlisi be-plugin ukuba batshintshe ukuba yeyiphi imeko yeposti ekufuneka ibalwe Ngokungagqibekanga, iiposti ezipapashiweyo nezabucala ziyabalwa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Ihluza idatha yento phambi kokuba igcinwe kwidatabase.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Vumela abaphuhlisi ukuba bahluze iisetingi ngaphambi kokugcina yi-Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Ihluza ukuba ingaba kuvunyelwe ukuqhubeka nesicelo okanye hayi.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Ihluza ukuba ingaba kuvunyelwe ukuqhubeka nesicelo okanye hayi.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Ihluza ukuba kuvunyelwe ukuqhubeka nesicelo okanye hayi.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Ihluza ukuba kuvunyelwe ukuqhubeka nesicelo okanye hayi.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Ihluza ukuba kuvunyelwe ukuqhubeka nesicelo okanye hayi.
+- [wu_return_url](./Filters/wu_return_url) — Vumela abaphuhlisi batshintshe i-gateway return URL esetyenziswa emva kweenkqubo ze-checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Vumela abaphuhlisi be-plugin bongeze eminye imisebenzi yeemodeli zokukhangela.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Vumela abaphuhlisi bongeze amanyathelo ongezelelweyo e-setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ihluza ukuba Ultimate Multisite kufuneka yenze irekhodi le-domain lesiza esitsha esenziweyo.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Vumela abaphuhlisi banqumamise kwangoko ukuhanjiswa kwakhona, bekuthintela ukuba kwenzeke.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Ivumela ukubhalwa kwakhona kwe-handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Hluza izenzo ezininzi ezifumanekayo kwiziza.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Isihluzi sokutshintsha ixabiso le-get pluginssites ngaphakathi kwenethiwekhi.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Yenza isebenze/ingasebenzi isakhono se-cross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — Ihluza ii-URL ze-SSO ezenziweyo ngaphambi kokuba zibuyiselwe kwizenzo zabathengi ze-cross-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Hluza idatha ye-Stripe Subscription. Ingagqitha ku-success_url okanye ku-cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Ihluza ii-argument ze-payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Ihluza i-ID ye-plan ekufuneka ijongwe. Ukuba ikhona, i-subscription entsha iza kusebenzisa le plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Ihluza i-ID ye-product ekufuneka ijongwe. Ukuba ikhona, i-subscription entsha iza kusebenzisa le product.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Ihluza ixabiso le-idempotency_key elithunyelwa kunye neenketho ze-Stripe charge.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Ihluza irekhodi le-membership elinxulumene nale webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Ihluza i-data meta ngaphambi kokuba yenziwe serialized ukuze igcinwe kwi-database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Ihluza idatha ye-object ngaphambi kokuba igcinwe kwi-database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Vumela abaphuhlisi batshintshe i-upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Misela ukuba i-mapping kufuneka isetyenziswe na
+- [wu_username_from_email](./Filters/wu_username_from_email) — Hluza igama lomsebenzisi lomthengi omtsha.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Vumela abaphuhlisi batshintshe umyalezo omalunga nomda wabasebenzisi be-membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Ivumela abaphuhlisi bongeze iifolda ezongezelelweyo kuluhlu olunokutshintshwa.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Ihluza ukuba zeziphi ii-sub_commands ezenziwe zasebenza kweli ziko.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Sijonga iipateni ezintathu xa sizama ukufumanisa apho sinokufaka khona ii-constants zethu:

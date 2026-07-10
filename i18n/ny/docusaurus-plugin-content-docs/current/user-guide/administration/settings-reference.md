@@ -1,40 +1,46 @@
 ---
-title: Mawuwozo wa Zikomo
+title: Zolozera za Zokonda
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings Reference
+# Zolozera za Settings {#settings-reference}
 
-Iziye ya lapansi liliipira zotsatira zoteteza ubatizo l'umunthu wosuku-suku ndi mabwiri osiyanasiyana m'Ultimate Multisite.
+Tsambali limatsata zolozera zomwe zimakhudza kayendetsedwe ka tsiku ndi tsiku komanso kusintha kwaposachedwa kwa khalidwe mu Ultimate Multisite.
 
-## Zina Zina Lina
+## Zosankha Zina {#other-options}
 
-Maka **Other Options** limapita pansi pa **Ultimate Multisite > Settings > Login & Registration**.
+Gawo la **Other Options** limapezeka pansi pa **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setting | Maonero |
+| Setting | Description |
 |---|---|
-| **Enable Jumper** | Limakwera chithandizo cha Jumper kwa mwayi wosangalatsa (admin area). Gumukira kuti muphindera m'Ultimate Multisite screens, network objects, ndi ma-destination osankha kwambiri a admin. Gumukira ngati simukufuna kukhala ndi luso lolimba lilo. |
+| **Enable Jumper** | Imaonetsa chida cha Jumper cha kuyenda mwachangu m’dera la admin. Chigwiritseni ntchito kudumpha molunjika ku ma screen a Ultimate Multisite, zinthu za network, ndi malo a admin omwe amathandizidwa. Chizimitseni ngati simukufuna kuti njira yachiduleyi ioneke. |
 
-## Kukhazikitsa mavuto ndi telemetry
+## Kufotokoza zolakwika ndi telemetry {#error-reporting-and-telemetry}
 
-Mwayi wosangalatsa wa kuwona mavuto uliweka m'settings page ulipo. Telemetry yosamakhala ndi malo osamakhala (anonymous) yali yomwe yali liweka m'settings page. Simakwera chithandizo cha UI lilo kuti muphindere.
+Cholozera chakale cholola kulowa mu kufotokoza zolakwika chachotsedwa pa tsamba la settings. Anonymous telemetry yazimitsidwa ndipo palibe UI toggle yoti muyiyambitse.
 
-Ngati muli ndi runbooks kapena screenshots za settings page, simukwera zotsatira kwa field ya kuwona mavuto yomwe yali yomwe yali liweka kuti administrators siye kukhala ndi setting lomwe liyenera.
+Ngati mumasamalira ma runbook amkati kapena zithunzi za tsamba la settings, chotsani maumboni a field yakale yolola kulowa mu kufotokoza zolakwika kuti ma administrator asafufuze setting yomwe ilibenso.
 
-## Zina Zina Loperekera/Kuperekera (Import/Export settings)
+## Zolozera za Import/Export {#importexport-settings}
 
-Tabu ya **Import/Export** imapangidwa kuti ipereke chonde chiyenera chomwe imaperekera ndipo imapita m'Ultimate Multisite > Site Export kuti mwayi wosangalatsa ndi network archives. Gumukira tabu ya settings kuti muphindera kuwerekera/kuperekera, gumukira **Tools > Export & Import** kuti muphindera workflow wa kuperekera/kuwerekera kwa site yomwe ndi lilo, ndipo gumukira Site Export tool pamene muli ndi chifukwa chomwe mukufuna full Network Export archive.
+Tab ya settings ya **Import/Export** imafotokoza settings zomwe imayang’anira ndipo imalumikiza molunjika ku **Ultimate Multisite > Site Export** ya ma archive a site ndi network. Gwiritsani ntchito tab ya settings pa configuration ya import/export, gwiritsani ntchito **Tools > Export & Import** pa workflow ya export/import ya single-site, ndipo gwiritsani ntchito chida cha Site Export mukafuna archive yonse ya Network Export.
 
-## Zina Zina Loperekera la AI provider (AI provider connector settings)
+## Chenjezo la balance ya Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Zina zina za AI provider zili ndi malo osankha kwa OAuth account pools:
+Pamene addon ya Domain Seller yalumikizidwa ku HostAfrica, ma administrator a network tsopano amaona chenjezo lotsekeka la balance-yochepa pamene balance ya account ya reseller ili yotsika kwambiri kuti kulembetsa domain kapena kukonza renewal kuchitike modalirika.
+
+Tengani notice iyi ngati chenjezo la ntchito: onjezani balance ya reseller ya HostAfrica musanalandire kulembetsa kwina kwa domain kolipidwa, kenako bwererani ku settings za Domain Seller kapena screen yowunika ma domain kuti mutsimikizire kuti kulembetsa ndi renewal kungapitirire mwachizolowezi.
+
+## Zolozera za cholumikizira cha AI provider {#ai-provider-connector-settings}
+
+Zolozera za cholumikizira cha AI provider tsopano zimasonyeza okha ma pool a OAuth account omwe amathandizidwa:
 
 | Provider | Setup flow |
 |---|---|
-| **Anthropic Max** | Yendera aka Anthropic Max accounts ndi kukhala ndi OAuth button. Gumva kuti muli ndi manual OAuth fallback pamene browser yomwe si sandboxed imayenera kupereka redirect kwawo. |
-| **OpenAI ChatGPT/Codex** | Gumva ChatGPT accounts monga m'moyo wosonyeza (OAuth pool workflow). Operations zomwe zikubwera ndi connector inalimbikira zina, zimene zikugwira tool calls za ChatGPT Codex ndipo muli ndi account imene imaperekedwa. |
-| **Google AI Pro** | Gumva Google AI Pro accounts monga OAuth, ndipo muperekera connector monga m'moyo osiyanasiyana ngati list ya accounts si imaperekedwa mwachangu. |
+| **Anthropic Max** | Lumikizani account imodzi kapena zingapo za Anthropic Max ndi batani la OAuth. Gwiritsani ntchito manual OAuth fallback pamene browser ya sandboxed singamalize redirect yokha. |
+| **OpenAI ChatGPT/Codex** | Lumikizani ma account a ChatGPT kudzera mu workflow yomweyo ya OAuth pool. Zochita zothandizidwa ndi connector zingagwiritse ntchito ma call a chida cha ChatGPT Codex account ikalumikizidwa. |
+| **Google AI Pro** | Lumikizani ma account a Google AI Pro kudzera mu OAuth, kenako tsitsimutsani connector ngati mndandanda wa account susintha nthawi yomweyo. |
 
-Cursor Pro simukuti ndi provider imene imaperekedwa. Onse zikulu za screenshots za ndani, runbooks, kapena steps za kupeza kuti muli ndi Cursor Pro setup fields kapena connector paths, musamukutse.
+Cursor Pro salinso provider wothandizidwa. Chotsani zithunzi zakale zamkati, ma runbook, kapena masitepe a onboarding omwe amatchula ma field a setup ya Cursor Pro kapena njira za connector.
 
-Poyamba kapena kupereka accounts za provider, yendera email imene imene imaperekedwa kapena idetsedwa ndipo simene settings za provider monga m'moyo osonyeza operations zomwe zikugwira tool calls.
+Mukawonjezera kapena kuchotsa ma account a provider, lowetsani email address yovomerezeka ya account yomwe ikutsitsimutsidwa kapena kufufutidwa ndipo sungani settings za provider musanayese ntchito zothandizidwa ndi connector.

@@ -3,17 +3,17 @@ title: 'Dysgu 12: Gwarchod y Busnes'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Leses 12: Mae'r Busnes yn Rhanu
+# Leses 12: Mae'r Busnes yn Rhanu {#lesson-12-running-the-business}
 
 Mae platform nid yw prosiect sydd wedi cael ei gwblhau -- mae'n busnes sydd wedi cael ei rhanu. Mae’r les hon yn gwmpasu y gweithredoedd dyddiol o ddefnyddio FitSite: cefnogaeth, cyfathrebu, chynllunio, a chofio'r cleiention yn hapus.
 
-## Oes y lle roedd ni wedi mynd
+## Oes y lle roedd ni wedi mynd {#where-we-left-off}
 
 Mae FitSite yn llai ac mae cleiention yn dewis eu cyfrifoldeb. Mae angen i chi rhanu'r gweithrediad yn dda.
 
-## Gweithredoedd Dyddiol
+## Gweithredoedd Dyddiol {#daily-operations}
 
-### Monitoriaeth
+### Monitoriaeth {#monitoring}
 
 Gwylio hyn dyddiol (neu setwch amgylcheddau allw'r amser) ychwanegau:
 
@@ -22,7 +22,7 @@ Gwylio hyn dyddiol (neu setwch amgylcheddau allw'r amser) ychwanegau:
 - **Failed payments**: ydynt ychwanegau peob cyfathrebu sydd angen gwylio?
 - **Support requests**: ydynt ychwanegau cleientol yn cael eu bod yn cael eu cyflwyno?
 
-### Cefnogaeth Cleientol
+### Cefnogaeth Cleientol {#customer-support}
 
 Mae eich fawniad yn rhoi'r canfyddiad i chi. Oherwydd bod pob un o'ch cleiention yn studi fit, byddwch yn gweld yr unig y gwestynau yn drosbarth:
 
@@ -36,7 +36,7 @@ Mae eich fawniad yn rhoi'r canfyddiad i chi. Oherwydd bod pob un o'ch cleiention
 
 Bynllhauwch eich cyfnod gwybodaeth (ddstart wedi'i gwneud yn Les 8) o am ywestynau hanesyddol hyn. Pob ticket cefnogaeth syddai fod yn article cyfnod gwybodaeth yw signal i ysgrif y article hwnnw.
 
-### Tiers Cefnogaeth
+### Tiers Cefnogaeth {#support-tiers}
 
 Pan fyddwch yn ddigwydd, rhannu'r cefnogaeth gan plan:
 
@@ -48,9 +48,9 @@ Pan fyddwch yn ddigwydd, rhannu'r cefnogaeth gan plan:
 
 Gall [Support Tickets addon](/addons/support-tickets) gallu i ddefnyddio i rheoli cyflwyniadau cefnogaeth yn y platform.
 
-## Gweithredu Cyfathrebu (Billing Operations)
+## Gweithredu Cyfathrebu (Billing Operations) {#billing-operations}
 
-### Pwylliant Cynllunol (Recurring Payments)
+### Pwylliant Cynllunol (Recurring Payments) {#recurring-payments}
 
 Mae Ultimate Multisite yn gwneud y cyflogau cynllunol yn awr drwy'ch gweithgoleg cyfathrebu. Mae eich gweith yn cael ei ddefnyddio i moni am:
 
@@ -58,7 +58,7 @@ Mae Ultimate Multisite yn gwneud y cyflogau cynllunol yn awr drwy'ch gweithgoleg
 - **Dunning**: Rheoli llawerau ychwanegu awtomatig drwy'ch gweithgoleg cyfathrebu (Mae Stripe yn cael hyn yn well)
 - **Gofynion cynllunio (Cancellation requests)**: Cynnal y deall pam mae cyddeeau yn gadael. Mae pob cynllunio yn cael ei ddefnyddio fel gysylltiad.
 
-### Rheoli Cyflwyniadau (Managing Memberships)
+### Rheoli Cyflwyniadau (Managing Memberships) {#managing-memberships}
 
 Mynolwch i **Ultimate Multisite > Memberships** i:
 
@@ -69,13 +69,13 @@ Mynolwch i **Ultimate Multisite > Memberships** i:
 
 Gwylio [Managing Memberships](/user-guide/administration/managing-memberships) i gael y cyfeiriad llawn.
 
-### Cyflwyniadau (Invoicing)
+### Cyflwyniadau (Invoicing) {#invoicing}
 
 Gofal bod cyflwyniadau yn cael eu cyfathrebu'n iawn ar gyfer pob cyflwyniad. Gall angen cyddeeau am ddefnyddio busnes i ddefnyddio. Gwylio [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Cynllunio Platform (Platform Maintenance)
+## Cynllunio Platform (Platform Maintenance) {#platform-maintenance}
 
-### Cyfathrebu a Chwanegu Pluginau WordPress (WordPress and Plugin Updates)
+### Cyfathrebu a Chwanegu Pluginau WordPress (WordPress and Plugin Updates) {#wordpress-and-plugin-updates}
 
 Fel gweithredwr y rheol yn y cyd-gynllun, ydych chi yn gyfrifol am:
 
@@ -87,14 +87,14 @@ Fel gweithredwr y rheol yn y cyd-gynllun, ydych chi yn gyfrifol am:
 Mae gwarchu brofiad yn effaith ar bob cyfrifol site ar eich rheol. Gwarchu gyntaf ar copy stagi o'ch rheol.
 :::
 
-### Diogelwch (Security)
+### Diogelwch (Security) {#security}
 
 - Rwy'n parhau i ffresgu'r software allan
 - Defnyddiwch pwysodau gryf a cyflwyniad dros ddau (two-factor authentication) ar gyfer cyfrifau admin
 - Monitro am ymweliadau anghyffredinol
 - Mae ganrdefyniad ar gyfer digwyddiadau diogelwch
 
-### Perfformiad (Performance)
+### Perfformiad (Performance) {#performance}
 
 Gan fod eich rheol yn ddigon, monitro:
 
@@ -104,9 +104,9 @@ Gan fod eich rheol yn ddigon, monitro:
 
 Cynllunwch ei ddefnyddio cache (page cache, object cache) a CDN os nad oes gennych hynny. Mae'r [Cloudflare integration](/user-guide/host-integrations/cloudflare) yn gwarchu llawer o hyn.
 
-## Rheoli'r Bywyd y Cydifol (Customer Lifecycle Management)
+## Rheoli'r Bywyd y Cydifol (Customer Lifecycle Management) {#customer-lifecycle-management}
 
-### Reddu Churn (Churn Reduction)
+### Reddu Churn (Churn Reduction) {#reducing-churn}
 
 Mae churn yn y penderfyniad o'r penderfyniadau o'r cydifol sydd yn cael eu tynnu eachw. Ar gyfer busnes cyflwyniad, mae reddu churn yn hanfodol fellych yn ddefnyddio newyddion.
 
@@ -117,7 +117,7 @@ Mae churn yn y penderfyniad o'r penderfyniadau o'r cydifol sydd yn cael eu tynnu
 - Nid oedd eu bod yn cael ei chynal → gwella'r ffeithiau neu y gweithgrefi
 - Roeddent wedi dod ag ddefnyddio alternatiw gyffredinol hơn → cwblhau'r gwerth yr unigol (niche value) eich busnes
 
-### Gyflwyno cyfathrebuau gwella (Encouraging Upgrades)
+### Gyflwyno cyfathrebuau gwella (Encouraging Upgrades) {#encouraging-upgrades}
 
 Dyddynion ar Starter sydd yn cyflymu dylai cael eu gyflwyno i gwella:
 
@@ -125,7 +125,7 @@ Dyddynion ar Starter sydd yn cyflymu dylai cael eu gyflwyno i gwella:
 - Anfon e-bostau cyflwynigol yn nodi ffeithiau Plan Gwythdrefn (Growth) sydd eu bod yn cael eu cyflawni
 - Dangos beth wedi'u guberdio y gweithwyr Growth/Pro
 
-### Cyfathrebuadau ag ddefnyddio eto (Win-Back Campaigns)
+### Cyfathrebuadau ag ddefnyddio eto (Win-Back Campaigns) {#win-back-campaigns}
 
 Pan mae cliant yn cael ei drososiad:
 
@@ -133,30 +133,30 @@ Pan mae cliant yn cael ei drososiad:
 2. Cyflawni eu chwynnig os oes possibile
 3. Cynnig ddisgyblion i ddychwelyd (30-60 diwrnod ar ôl y drososiad)
 
-## Cynlluniau cymeriad cymeriadol a manwl (Weekly and Monthly Routines)
+## Cynlluniau cymeriad cymeriadol a manwl (Weekly and Monthly Routines) {#weekly-and-monthly-routines}
 
-### Cymeriad cymeriadol (Weekly)
+### Cymeriad cymeriadol (Weekly) {#weekly}
 
 - Ddychwio newyddion o gyflwyniadau a drososiadau
 - Cyfeillio i'r holl ticketau cefnogaeth agor
 - Gwellydd perfformiad y platform a ddefnyddio (uptime)
 - Ddychwio unrhyw peidiadau wedi'u cael eu cyflawni
 
-### Manwl (Monthly)
+### Manwl (Monthly) {#monthly}
 
 - Analysu merynoedd allweddol (MRR, churn, new customers, upgrades)
 - Cyflwyno cyfathrebuadau WordPress a pluginau (ar ôl gwylio test y stagiad)
 - Ddychwio a gyfresgu'r gweithgrefi ar adalaith ar gyfer y modelau cefnogaeth
 - Anfon newsletter neu cyfresgu i cliantau (feithiau newydd, cysylltiadau, news o'r dyfodol fitness)
 
-### Cymeriad triwyl (Quarterly)
+### Cymeriad triwyl (Quarterly) {#quarterly}
 
 - Adfilio'r y cyfathreiddig yn gyflwyniad â'r gynnwysau a'r adolygiadau o'r cydweithwyr
 - Ddychwilio ar dyluniau template -- yw'n angen eu newid?
 - Assesiad y cyfyngedigau gweithredol -- yw'n angen eu llwybr?
 - Adolygu a gwella'r cyflwyniad yn seiliedig ar data chwarae
 
-## Beth syddaiwn i'w ddefnyddio yma
+## Beth syddaiwn i'w ddefnyddio yma {#what-we-built-this-lesson}
 
 - **Routyn moniti diwrnodol** ar gyfer cyfathreiddig, cyflwyniadau, peidiadau, a cefnogaeth
 - **Struktur cefnogaeth wedi'i ddefnyddio mewn trefi** sy'n cael ei ddefnyddio yn agos â'r lefelau planiau

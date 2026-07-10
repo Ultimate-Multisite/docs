@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Betaling
 
 Lad dine kunder betale for Multisite Ultimate medlemskaber og produkter med Direkte Debet ved hjælp af GoCardless!
 
-## Installation
+## Installation {#installation}
 
 1. Upload 'ultimate-multisite-gocardless' til mappen '/wp-content/plugins/'
 2. Aktiver plugin'et via menuen 'Plugins' i WordPress
 3. Følg trin-for-trin Wizard for at opsætte plugin'et
 
-## Brugsvejledning
+## Brugsvejledning {#usage-guide}
 
 _GoCardless_ er en betalingsgateway tilgængelig i **Europa og Storbritannien** og tillader **Direkte Debet** betalinger.
 
@@ -29,7 +29,7 @@ Denne tutorial dækker, hvordan du opsætter _GoCardless_ for at begynde at acce
 
 _**Bemærk: GoCardless virker kun med følgende valutaer:**_ **EUR, GBP, AUD, SEK og DKK.**
 
-## Installation af Add-on'et
+## Installation af Add-on'et {#installing-the-add-on}
 
 Først skal du installere GoCardless add-on'et til Ultimate Multisite. Du kan gøre det ved at gå til **Ultimate Multisite > Indstillinger > Add-ons (i sidebaren)**. Og vælge GoCardless add-on'et fra listen.
 
@@ -37,7 +37,7 @@ Når add-on'et er installeret og aktiveret, gå til **Ultimate Multisite > Indst
 
 ![Betalingsgatewayindstillinger med GoCardless](/img/config/settings-payment-gateways.png)
 
-## Få en Adgangstoken
+## Få en Adgangstoken {#getting-an-access-token}
 
 Opret en konto på _GoCardless_ (eller i _GoCardless_ sandbox, hvis du vil **teste det først**, hvilket anbefales). Derefter, efter du er logget ind, skal du navigere til menuemnet **Developers**.
 
@@ -61,7 +61,7 @@ Sørg for at sætte den i det højre felt. Hvis det er en **live token**, skal d
 
 Det er det for det første skridt. Næste skal du opsætte en webhook listener.
 
-## Opsætning af Webhook Listener
+## Opsætning af Webhook Listener {#setting-up-the-webhook-listener}
 
 Når du arbejder med abonnementer, skal Ultimate Multisite kunne modtage oplysninger om ændringer i abonnementsstatus, nye betalinger osv.
 

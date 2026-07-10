@@ -3,13 +3,13 @@ title: Özelleştirme ishlari uchun yordam
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-den Custom Development Yordamini Qanday Olinsa?
+# Codeable-den Custom Development Yordamini Qanday Olinsa? {#how-to-get-custom-development-help-from-codeable}
 
 Bazen bizning tarmoq oqimlarimizni aynan xohlagan holda qilish uchun juda ajoyib sozlamalarga ehtiyoj sezamiz. Agar siz shunday narsani qidirsangiz, biz [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ni tavsiya qilamiz, bu yerda Ultimate Multisite bo'yicha tajribali dasturchilarni topishingiz mumkin.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) — mijozlarni malakali WordPress freelance dasturchilar bilan bog'laydigan platforma, ular har qanday o'lchamdagi loyihalarda ishlashi mumkin. Ular sizni o'ylagan vazifa uchun maxsus malakali ekspertlar bilan moslashtirish uchun diqqatli ariza jarayoniga ega.
 
-### Codeable-da loyiha qanday yaratiladi?
+### Codeable-da loyiha qanday yaratiladi? {#how-to-create-a-project-in-codeable}
 
 Avvalo, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ga kiring va **Start a Project** tugmasini bosing.
 

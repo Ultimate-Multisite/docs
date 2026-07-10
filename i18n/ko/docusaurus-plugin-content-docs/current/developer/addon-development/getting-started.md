@@ -1,140 +1,140 @@
 ---
-title: 애드온 개발 시작하기
+title: Addon 개발 시작하기
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon Development
+# 애드온 개발 {#addon-development}
 
-## 애드온 구조
+## 애드온 구조 {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # Main plugin file
+├── my-addon.php                 # 기본 plugin 파일
 ├── inc/
-│   ├── class-my-addon.php       # Main addon class
-│   ├── admin-pages/             # Admin interface
-│   ├── models/                  # Custom data models
-│   └── integrations/            # Third-party integrations
+│   ├── class-my-addon.php       # 기본 애드온 class
+│   ├── admin-pages/             # 관리자 인터페이스
+│   ├── models/                  # 사용자 정의 데이터 모델
+│   └── integrations/            # 타사 통합
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Template files
+└── templates/                   # 템플릿 파일
 ```
 
-## 메인 애드온 파일 템플릿
+## 기본 애드온 파일 템플릿 {#main-addon-file-template}
 
 ```php
 <?php
 /**
- * 플러그인 이름: My Ultimate Multisite Addon
- * 설명: Ultimate Multisite용 커스텀 애드온
- * 버전: 1.0.0
- * 작성자: Your Name
- * PHP 필요: 7.4
+ * Plugin Name: My Ultimate Multisite Addon
+ * Description: Custom addon for Ultimate Multisite
+ * Version: 1.0.0
+ * Author: Your Name
+ * Requires PHP: 7.4
  * Ultimate Multisite: 2.0.0
  */
 
 namespace My_Addon;
 
-// 직접 접근 시 종료
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// 상수 정의
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite가 활성화되어 있는지 확인
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon은 Ultimate Multisite가 설치 및 활성화되어 있어야 합니다.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // 애드온 초기화
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * 메인 애드온 클래스
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * 애드온 초기화
+     * Initialize the addon
      */
     public function init() {
-        // 의존성 로드
+        // Load dependencies
         $this->load_dependencies();
 
-        // 워드프레스 훅 설정
+        // Setup hooks
         $this->setup_hooks();
 
-        // 애드온 컴포넌트 초기화
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * 필수 파일 로드
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * 워드프레스 훅 설정
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // 활성화/비활성화
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite 훅
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * 애드온 컴포넌트 초기화
+     * Initialize addon components
      */
     private function init_components() {
-        // 관리자 페이지, 모델 등 초기화
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * 플러그인 활성화
+     * Plugin activation
      */
     public function activate() {
-        // 커스텀 테이블 생성, 옵션 설정 등
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * 플러그인 비활성화
+     * Plugin deactivation
      */
     public function deactivate() {
-        // 필요 시 정리
+        // Cleanup if needed
     }
 
     /**
-     * 체크아웃 완료 처리
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // 체크아웃 완료 시 커스텀 로직
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * 커스텀 체크아웃 필드 추가
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## 커스텀 모델 예시
+## 사용자 정의 모델 예시 {#custom-model-example}
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * 커스텀 리드 모델
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * 모델 이름
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * 데이터베이스 테이블 설정
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * 회사 이름 가져오기
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * 회사 이름 설정
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * 리드를 고객으로 변환
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // 워드프레스 사용자 생성
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite 고객 생성
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // 리드 데이터를 고객에 복사
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // 리드를 변환된 것으로 표시
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 관리자 페이지 통합
+## 관리자 페이지 통합 {#admin-page-integration}
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * 커스텀 관리자 페이지
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * 페이지 ID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * 메뉴 위치
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * 페이지 초기화
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite에 등록
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * 관리자 페이지 등록
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * 페이지 렌더링
+     * Render the page
      */
     public function render() {
-        // 리드 데이터 가져오기
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // 템플릿 렌더링
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## 애드온 테스트
+## Addon 테스트하기 {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // 테스트 고객 생성
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // 테스트 멤버십 생성
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // 폼 제출 시뮬레이션
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // 데이터가 저장되었는지 확인
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## 다음 단계
+## v2.13.0 확장 지점 {#v2130-extension-points}
 
-- 사용 가능한 액션 및 필터를 확인하려면 [Hooks Reference](/developer/hooks)를 검토하세요
-- API 통합을 위해 [REST API Overview](/developer/rest-api/overview)를 확인하세요
-- 시작 스캐폴드로 [Addon Template](/addons/addon-template)를 사용하세요
+Ultimate Multisite v2.13.0은 주권형 테넌트, checkout 도메인 또는 호스트 제공업체 DNS 자동화와 통합되는 addon에 유용한 여러 확장 지점을 추가합니다.
+
+### SSO 및 main-site 관리 URL {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### checkout-form 기본 도메인 {#checkout-form-base-domains}
+
+addon이 사이트별 사용자 지정 매핑 대신 checkout-form **Site URL** 도메인처럼 동작해야 하는 추가 공유 기본 도메인을 제공할 때 `wu_checkout_form_base_domains`를 사용하세요.
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite는 이러한 호스트를 정규화하고, 해당 호스트에 대한 자동 사이트별 매핑 도메인 레코드를 건너뜁니다.
+
+### 자동 도메인 레코드 생성 {#automatic-domain-record-creation}
+
+addon이 새로 생성된 사이트에 대한 자동 도메인 레코드 생성을 억제하거나 지연해야 할 때 `wu_should_create_domain_record_for_site`를 사용하세요.
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain`을 수신하는 호스트 제공업체 통합은 사이트가 생성될 때 제공업체 측 DNS 레코드를 생성할 수 있습니다. 해당 작업에 등록된 통합이 없으면 Ultimate Multisite는 빈 백그라운드 작업을 건너뜁니다.
+
+## 다음 단계 {#next-steps}
+
+- 사용 가능한 액션과 필터는 [Hooks Reference](/developer/hooks)를 검토하세요
+- API 통합은 [REST API Overview](/developer/rest-api/overview)를 확인하세요
+- 시작용 스캐폴드로 [Addon Template](/addons/addon-template)을 사용하세요

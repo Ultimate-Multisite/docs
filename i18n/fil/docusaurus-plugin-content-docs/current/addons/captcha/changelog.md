@@ -3,7 +3,7 @@ title: Pagbabago sa Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog
+# Captcha Changelog {#captcha-changelog}
 
 Version: 1.5.0 - Released on 2026-05-22
 * New: Hard-stop rate limiter — nagbibilang na ngayon ng bawat GET at POST sa mga pahina na pinoprotektahan ng captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) at nagre-reply ng HTTP 429, isang `Retry-After` header, at isang random na pagpapabagal (tarpit sleep) (1–5s, may maximum na 15s).

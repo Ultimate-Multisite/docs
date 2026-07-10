@@ -3,7 +3,7 @@ title: Hvad er WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Hvad er WordPress Multisite?
+# Hvad er WordPress Multisite? {#what-is-wordpress-multisite}
 
 I kernen af WordPress findes der en funktion kaldet 'Multisite', som har sine rødder tilbage i 2010 med lanceringen af WordPress 3.0. Siden da har den gennemgået flere revisioner, der sigter mod at introducere nye funktioner og styrke sikkerheden.
 
@@ -11,7 +11,7 @@ I bund og grund kan et WordPress multisite tænkes på som dette: En Universitet
 
 ##
 
-## Hvad er WordPress Multisite præcist?
+## Hvad er WordPress Multisite præcist? {#what-exactly-is-wordpress-multisite}
 
 Multisite er en funktion i WordPress, der gør det muligt for flere sider at dele én enkelt WordPress-installation. Når multisite aktiveres, konverteres den oprindelige WordPress-side til at understøtte det, man normalt kalder et **netværk af sider**.
 
@@ -23,7 +23,7 @@ Dette er en af de største fordele ved multisite, da det giver dig mulighed for 
 
 ##
 
-## Subdomæne eller undermappe?
+## Subdomæne eller undermappe? {#subdomain-or-subdirectory}
 
 Der er to måder at køre WordPress multisite på – og du skal vælge en, når du konverterer din almindelige WordPress-installation til en multisite-installation:
 
@@ -49,7 +49,7 @@ Et af de største udfordringer ved opsætning af subdomain mode er SSL-dækninge
 
 I modsætning til subdirectory mode betragter søgemaskiner subsites på et subdomain-baseret netværk som separate hjemmesider, hvilket betyder, at indhold på én subsite slet ikke påvirker SEO-ydelsen af de andre subsites.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Single-site WordPress installationer giver dig mulighed for at tilføje et ubegrænset antal brugere og give disse brugere forskellige brugerroller med forskellige rettigheder.
 
@@ -63,7 +63,7 @@ Plugins og themes kan kun installeres eller fjernes fra network admin panel af s
 
 _Bemærk: som du kan se, at man inviterer nogen ind i dit netværk og giver dem superadmin-status giver denne bruger fuld kontrol over dit netværk. Som eksempel kan andre superadmins endda fjerne din superadmin-status, hvilket effektivt låser dig ude af dit eget adminpanel for netværket. For at lade Ultimate Multisite kunder have finjusteret kontrol over, hvad yderligere superadmins må gøre, har vi et add-on kaldet Support Agents. Dette add-on giver dig mulighed for at oprette en anden slags bruger – en agent – med kun de rettigheder, de skal bruge til at udføre deres opgaver på netværket._
 
-## Hvad deles mellem subsites og hvad der ikke deles
+## Hvad deles mellem subsites og hvad der ikke deles {#what-is-shared-among-subsites-and-what-is-not}
 
 Som vi nævnte før er en af de vigtigste fordele ved WordPress multisite, at alle subsites deler de samme konfigurationer, kernefiler, temaer, plugins, WordPress-kernefiler osv.
 
@@ -75,7 +75,7 @@ Der er dog elementer, der er fint indkapslet på et per-subsite basis.
 
 \- De fleste databasetabeller oprettes for hvert subsite, hvilket betyder, at indlæg, kommentarer, sider, indstillinger osv. er begrænset til hvert subsite.
 
-## Brugerstyring på WordPress Multisite
+## Brugerstyring på WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Et lidt følsomt emne ved WordPress multisite er brugerstyring. WordPress-bruger-tabellen er en af få, der deles mellem alle subsites.
 
@@ -99,7 +99,7 @@ _Bemærk: Vi indser, hvor dårligt det kan være afhængigt af dit brugsscenarie
 
 Selvom bruger-tabellen deles, kan subsiteadministratorer eller superadministratoren tilføje og fjerne brugere fra subsites, og de kan endda have forskellige brugerroller på forskellige subsites.
 
-## Ydelsesovervejelser
+## Ydelsesovervejelser {#performance-considerations}
 
 WordPress multisite er virkelig kraftfuldt, når det kommer til antallet af sider, det kan understøtte. Dette kan testes ved at bemærke, at [WordPress.com](https://WordPress.com), Edublogs og Campuspress alle er multisite-baserede tjenester, og hver host tusindvis af sider.
 

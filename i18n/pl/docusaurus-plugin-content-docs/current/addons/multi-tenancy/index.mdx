@@ -1,31 +1,45 @@
 ---
-title: Wielodostępność (Multi-Tenancy)
+title: Wielodzierżawność
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Wielodostępność (Multi-Tenancy)
+# Wielodzierżawność {#multi-tenancy}
 
-Rozdzielanie podstron na różnych serwerach i bazach danych w celu poprawy wydajności i bezpieczeństwa.
+Dystrybuuj podwitryny między serwerami i bazami danych w celu zwiększenia wydajności i bezpieczeństwa
 
-## Wymagania
+## Najważniejsze informacje o wydaniu wersji 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 dodaje fundament suwerennego dzierżawcy dla przepływów pracy izolacji produkcyjnej:
+
+- Bezstanowe automatyczne logowanie dzierżawcy z krótkotrwałymi, zabezpieczonymi przed powtórzeniem wizytami SSO.
+- Izolacja bazy danych i systemu plików dla każdej podwitryny w przypadku suwerennych dzierżawców.
+- Możliwość wielodzierżawności Hostinger do obsługi udostępniania dzierżawców z uwzględnieniem hosta.
+- Bramki weryfikacji suwerennej migracji do kontroli danych starszych systemów i asynchronicznego przetwarzania wypychania.
+- Konfigurowalne wiązanie hosta bazy danych na tej samej maszynie dla instalacji Bedrock, FrankenPHP i localhost.
+- Ulepszenia inicjalizacji dzierżawcy, zapisu bazy danych, inicjalizacji schematu i udostępniania użytkowników.
+- Bezpieczniejsze usuwanie suwerennego dzierżawcy, które czyści dane uwierzytelniające dzierżawcy.
+
+Zobacz przewodniki użytkownika dotyczące [przepływu pracy suwerennej migracji](/user-guide/getting-started/sovereign-migration-workflow), [izolacji wielodzierżawności](/user-guide/configuration/multi-tenancy-isolation) oraz [operacji suwerennego dzierżawcy](/user-guide/administration/sovereign-tenant-operations).
+
+## Wymagania {#requirements}
 
 - WordPress 5.3 lub nowszy
 - PHP 7.4 lub nowszy
-- Plugin Multisite Ultimate (aktywny)
+- plugin Multisite Ultimate (aktywny)
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
-2. Aktywuj wtyczkę za pomocą menu „Wtyczki” w WordPressie
-3. Skonfiguruj ustawienia dodatku w panelu administracyjnym sieci (network admin)
+2. Aktywuj plugin przez menu „Pluginy” w WordPress
+3. Skonfiguruj ustawienia dodatku w panelu administratora sieci
 
-## Rozwój
+## Rozwój {#development}
 
-### Konfiguracja środowiska
+### Konfiguracja {#setup}
 
 ```bash
 # Install dependencies
@@ -46,16 +60,16 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projektu
+### Struktura projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # Klasy PHP i pliki włączane
+├── inc/                          # Klasy PHP i pliki dołączane
 │   ├── class-multisite-ultimate-updater.php  # Obsługa aktualizacji
 │   └── class-multi_tenancy-main.php             # Główna funkcjonalność
 ├── tests/                        # Testy jednostkowe
-│   ├── bootstrap.php            # Bootstrap testów
-│   ├── class-*-base.php         # Klasa bazowa testów
+│   ├── bootstrap.php            # Inicjalizacja testów
+│   ├── class-*-base.php         # Bazowa klasa testowa
 │   └── class-*-test.php         # Przypadki testowe
 ├── views/                       # Pliki szablonów
 ├── assets/                      # Zasoby statyczne
@@ -70,55 +84,67 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Reguły modernizacji kodu
 ```
 
-### Testowanie
+### Testowanie {#testing}
 
 Dodatek zawiera kompleksowy framework testowy:
 
-- **Unit Tests**: Testy jednostkowe oparte na PHPUnit z zestawem testowym WordPressa
-- **Base Test Class**: Klasa bazowa testów, która dostarcza metody pomocnicze dla typowych scenariuszy testowych
-- **Test Coverage**: Skonfigurowane do śledzenia pokrycia kodu
-- **Multisite Testing**: Testy uruchamiane w środowisku multisite
+- **Testy jednostkowe**: Testy oparte na PHPUnit z zestawem testowym WordPress
+- **Bazowa klasa testowa**: Zapewnia metody pomocnicze dla typowych scenariuszy testowych
+- **Pokrycie testami**: Skonfigurowane do śledzenia pokrycia kodu
+- **Testowanie Multisite**: Testy uruchamiane w środowisku multisite
 
-### Standardy kodu
+### Standardy kodu {#code-standards}
 
-- **WordPress Coding Standards**: Egzekwowane za pomocą PHPCS
-- **PHP 7.4+ Compatibility**: Wsparcie dla nowoczesnych funkcji PHP
-- **Static Analysis**: Integracja PHPStan do sprawdzania typów
-- **Code Modernization**: Reguły Rector do ulepszania kodu PHP
+- **WordPress Coding Standards**: Wymuszane przez PHPCS
+- **Zgodność z PHP 7.4+**: Obsługa nowoczesnych funkcji PHP
+- **Analiza statyczna**: Integracja PHPStan do sprawdzania typów
+- **Modernizacja kodu**: Reguły Rector dla aktualizacji PHP
 
-### System budowania
+### System budowania {#build-system}
 
-- **Asset Processing**: Minifikacja plików CSS/JS
-- **Translation**: Generowanie plików POT
-- **Packaging**: Tworzenie archiwum do dystrybucji
-- **Development Mode**: Nie-minifikowane zasoby do debugowania
+- **Przetwarzanie zasobów**: Minifikacja plików CSS/JS
+- **Tłumaczenie**: Generowanie pliku POT
+- **Pakietowanie**: Tworzenie archiwum do dystrybucji
+- **Tryb deweloperski**: Niezminifikowane zasoby do debugowania
 
-## Konfiguracja
+## Konfiguracja {#configuration}
 
-Dodatek obsługuje różne opcje konfiguracyjne, dostępne przez interfejs panelu administracyjnego sieci (network admin).
+Dodatek obsługuje różne opcje konfiguracji dostępne przez interfejs administratora sieci.
 
-## Akcje (Actions) i Filtry (Filters)
+### Konfiguracja suwerennego dzierżawcy {#sovereign-tenant-configuration}
 
-### Akcje (Actions)
+W przypadku suwerennych dzierżawców skonfiguruj bazę danych dzierżawcy, katalog główny systemu plików, wiązanie hosta bazy danych oraz możliwość hosta przed skierowaniem ruchu do dzierżawcy. Uruchamiaj weryfikację migracji po każdej zmianie, która wpływa na dane uwierzytelniające bazy danych, wiązanie hosta, routing lub udostępnianie użytkowników.
+
+Używaj `localhost` tylko wtedy, gdy środowisko wykonawcze dzierżawcy i uprawnienia bazy danych oczekują dostępu przez lokalne gniazdo lub dostęp z tej samej maszyny. Używaj `127.0.0.1` albo nazwy hosta usługi, gdy jest to host uprawnień skonfigurowany przez Twojego dostawcę.
+
+### Możliwość Hostinger {#hostinger-capability}
+
+Możliwość wielodzierżawności Hostinger działa ze współdzielonym tokenem integracji Hostinger. Potwierdź, że domena jest obecna w hPanel, DNS wskazuje na Account Hostinger, a ustawienia bazy danych dzierżawcy są zgodne z hPanel przed weryfikacją.
+
+## Hooki i filtry {#hooks-and-filters}
+
+### Akcje {#actions}
 
 - `ultimate-multisite-addon-template_init` - Wywoływane po inicjalizacji dodatku
 - `ultimate-multisite-addon-template_loaded` - Wywoływane po załadowaniu wszystkich plików dodatku
 
-### Filtry (Filters)
+### Filtry {#filters}
 
-- `ultimate-multisite-addon-template_settings` - Modyfikacja ustawień dodatku
-- `ultimate-multisite-addon-template_enabled` - Nadpisanie statusu włączenia/wyłączenia dodatku
+- `ultimate-multisite-addon-template_settings` - Modyfikuj ustawienia dodatku
+- `ultimate-multisite-addon-template_enabled` - Nadpisz stan włączenia/wyłączenia dodatku
 
-## Licencja
+## Licencja {#license}
 
-Ten dodatek jest licencjonowany na podstawie GPL v3 lub nowszej.
+Ten dodatek jest licencjonowany na warunkach GPL v3 lub nowszej.
 
-## Wsparcie
+## Wsparcie {#support}
 
-W celu uzyskania wsparcia i dokumentacji odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historia zmian (Changelog)
+Aby uzyskać wsparcie i dokumentację, odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
+## Dziennik zmian {#changelog}
 
-- Version 1.0.1 (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstu; zwiększenie wersji.
+- Wersja 1.2.0 (2026-06-03): dodano bezstanowe automatyczne logowanie dzierżawcy, możliwość wielodzierżawności Hostinger, izolację bazy danych i systemu plików dla każdej podwitryny, bramki weryfikacji suwerennej migracji, ulepszenia inicjalizacji dzierżawcy/zapisu bazy danych, konfigurowalne wiązanie hosta MySQL oraz bezpieczniejsze usuwanie suwerennego dzierżawcy.
+
+- Wersja 1.0.1 (2025-09-28): zmieniono prefiks na ultimate-multisite; zaktualizowano domenę tekstową; podniesiono wersję.
 
 
-- Version (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstu; zwiększenie wersji.
+- Wersja  (2025-09-28): zmieniono prefiks na ultimate-multisite; zaktualizowano domenę tekstową; podniesiono wersję.

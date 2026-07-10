@@ -3,15 +3,15 @@ title: 第 14 课：接下来是什么
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# 第 14 课：接下来该做什么
+# 第 14 课：接下来该做什么 {#lesson-14-what-comes-next}
 
 您已经从零开始构建了一个细分领域的网站平台。FitSite 已经上线，为健身工作室提供服务，并产生了持续的经常性收入。本节课将探讨接下来可以往哪个方向发展。
 
-## 我们的进展回顾
+## 我们的进展回顾 {#where-we-left-off}
 
 FitSite 现在是一个正在运营的业务，拥有客户、运营流程和增长潜力。现在，我们来思考下一步该做什么。
 
-## 完整的 FitSite 网络
+## 完整的 FitSite 网络 {#the-complete-fitsite-network}
 
 以下是我们在 14 节课中构建的所有内容：
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## 方案一：深入细分领域
+## 方案一：深入细分领域 {#option-1-go-deeper-in-your-niche}
 
 在扩展到新的细分领域之前，可以考虑在健身领域做更深入的挖掘：
 
-### 子细分领域
+### 子细分领域 {#sub-niches}
 
 - **瑜伽工作室** -- 具备冥想、静修和工作坊功能的专业模板
 - **CrossFit 馆** -- WOD 记录、比赛成绩、社区功能
@@ -59,7 +59,7 @@ FitSite Network (Complete)
 
 每个子细分领域都可以拥有自己的模板，甚至可以拥有自己的品牌，但所有这些都运行在同一个 Ultimate Multisite 网络上。
 
-### 高级功能
+### 高级功能 {#premium-features}
 
 构建健身工作室愿意额外付费的功能：
 
@@ -68,14 +68,14 @@ FitSite Network (Complete)
 - **健身博客模板** -- 预构建的内容结构，用于健身内容营销
 - **社交媒体集成** -- 自动发布课程表和更新
 
-### 地域扩展
+### 地域扩展 {#geographic-expansion}
 
 如果您最初只服务于本地市场，可以扩展到：
 
 - 您国家内的其他城市
 - 其他国家（使用 Ultimate Multisite 的 [本地化功能](/user-guide/localization/translating) 来支持多种语言）
 
-## 方案二：扩展到相邻细分领域
+## 方案二：扩展到相邻细分领域 {#option-2-expand-to-adjacent-niches}
 
 您为健身工作室遵循的流程适用于任何细分领域。您的第二个细分领域会更容易，因为您已经拥有了：
 
@@ -83,7 +83,7 @@ FitSite Network (Complete)
 - 运营经验
 - 一个经过验证的成功手册
 
-### 健身领域的相邻细分领域
+### 健身领域的相邻细分领域 {#adjacent-niches-to-fitness}
 
 - **健康与水疗中心** -- 按摩治疗师、日间水疗中心、健康中心
 - **体育俱乐部** -- 业余运动队、联赛、休闲俱乐部
@@ -91,7 +91,7 @@ FitSite Network (Complete)
 
 这些领域与健身领域有客户重叠，因此您的营销和合作关系可能会沿用。
 
-### 完全新的细分领域
+### 完全新的细分领域 {#completely-new-niches}
 
 应用第 2 课的框架来评估任何细分领域：
 
@@ -108,7 +108,7 @@ FitSite Network (Complete)
 
 平台基础设施、计费和运营流程保持不变。
 
-## 方案三：构建平台生态系统
+## 方案三：构建平台生态系统 {#option-3-build-a-platform-of-platforms}
 
 当规模扩大后，您可以在单个 Ultimate Multisite 网络上运行多个细分品牌：
 
@@ -118,11 +118,11 @@ FitSite Network (Complete)
 
 每个品牌都有自己的模板、套餐和营销，但它们共享基础设施、计费和运营流程。这就是 Ultimate Multisite 经济学力量所在——一个平台，多个垂直领域。
 
-### 多网络 (Multi-Network)
+### 多网络 (Multi-Network) {#multi-network}
 
 如果需要实现细分领域之间的完全隔离，可以考虑 [Multi-Network 插件](/addons/multinetwork)，它允许您从单个安装中运行多个 WordPress 网络。
 
-## 方案四：出售业务
+## 方案四：出售业务 {#option-4-sell-the-business}
 
 一个拥有经常性收入、低流失率和清晰市场定位的细分领域网站平台，本身就是一项有价值的资产。SaaS 业务通常可以以 3-5 倍的年收入出售。
 
@@ -134,7 +134,7 @@ FitSite Network (Complete)
 
 这并非保证的结果，但对于一个运营良好的细分平台来说，这是一个现实的可能性。
 
-## 您学到了什么
+## 您学到了什么 {#what-you-have-learned}
 
 本课程教会了您一个可重复的流程：
 
@@ -150,7 +150,7 @@ FitSite Network (Complete)
 
 细分领域是战略。平台是工具。Ultimate Multisite 让工具成为可能。您对细分领域的理解，使其具有价值。
 
-## 开始构建
+## 开始构建 {#start-building}
 
 如果您一直跟随着 FitSite 的进度，您现在拥有了一个可运行的平台。如果您是阅读到这里的，想寻找自己的细分领域，请返回 [第 2 课：选择您的细分领域](lesson-2-picking-your-niche)，并为您的目标垂直领域开始这个流程。
 

@@ -3,13 +3,13 @@ title: Fanaovana ny vokatra fandraisana vola voalohany anao
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Fanaovana vokatra fandraisana vola voalohany (v2)
+# Fanaovana vokatra fandraisana vola voalohany (v2) {#creating-your-first-subscription-product-v2}
 
 _**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia ho an'ny mpampiasa Ultimate Multisite v2.x ihany. Raha mampiasa dika 1.x ianao,**_ **_jereo ity lahatsoratra ity**_.
 
 Mba hanombohana ny fiasan'ny tambajotrao sy hanombohana ny fivarotana ny tolotranga ataonao ho mpampiasa mety, mila safidy fandraisana vola samihafa ianao. Ahoana no famoronana ireo vokatra ireo? Inona avy ireo karazana vokatra azonao atolotra? Amin'ity lahatsoratra ity dia handinika ny zavatra rehetra tokony ho fantatra momba ny vokatra isika.
 
-## Karazana Vokatra
+## Karazana Vokatra {#product-type}
 
 Amin'ny Ultimate Multisite dia afaka manolotra karazana vokatra roa ianao ho an'ny mpanjifa anao: **plans** (drafitra) sy **add-ons** (Order Bump). Ny add-ons dia azo zaraina ho karazana roa: **packages** (fandrindrana) sy **services** (fanompoana). Ho jerena ny fahasamihafana sy ny toetra manokana azy ireo isika manaraka.
 
@@ -19,7 +19,7 @@ Amin'ny Ultimate Multisite dia afaka manolotra karazana vokatra roa ianao ho an'
 
   * **Services:** ireo add-ons izay tsy manova ny fiasan'ny Ultimate Multisite. Ireo dia asa ataonao ho an'ny mpanjifanao ankoatra ilay plan nividianareo. Ohatra, mety mividy plan ianao izay mamela toerana iray ihany ary mandoa fanampiny ho service izay hanamboarana io famolavolana toerana io.
 
-## Fitantanana Vokatra
+## Fitantanana Vokatra {#managing-products}
 
 Ho an'ny olona maro dia azo aseho ny **Products** tab ao amin'ny Ultimate Multisite **(Ultimate Multisite > Products)** ho toy ny "plans" (drafitra) amin'ny tontolo hosting mahazatra.
 
@@ -29,7 +29,7 @@ Ity fizarana ity dia hitarika anareo amin'ny fahatakarana fototra tena ilaina ao
 
 ![Products list page](/img/config/products-list.png)
 
-## Fampidirana Vokatra (Adding Products)
+## Fampidirana Vokatra (Adding Products) {#adding-products}
 
 Na plan iray, package iray, na serivisy iray no lalana hanombohana ny famaritana zavatra vaovao dia amin'ny alalan'ny **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Ny interface dia misy faritany roa lehibe. Eo an-dakiana, misy sary maromaro iza
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Famaritana (Description)
+### Famaritana (Description) {#description}
 
 Ny fampahalalana fototra momba ny vokatra dia azo faritana amin'ny alalan'ny fanomezana anarana vokatra sy famaritana azy. Ireo famantarana ireo dia haseho aiza na aiza no ilainy ny fampahalalana momba ny vokatra, toy ny safidy plan sy vidiny, ny facture (invoices), ny fanatsarana (upgrades), ary izay hafa.
 
 ![Product description section](/img/config/product-description.png)
 
-### Karazana Vidiny (Pricing Type)
+### Karazana Vidiny (Pricing Type) {#pricing-type}
 
 Eo an-ranomasina amin'ny interface, dia azo faritana ny vidiny fototra.
 
@@ -53,7 +53,7 @@ Eo an-ranomasina amin'ny interface, dia azo faritana ny vidiny fototra.
 
 Maneho telo karazana vidiny samihafa ny Ultimate Multisite. Ny safidy **paid** (miditra vola) dia manome toromarika ho an'ny administrator an'ny tambajotra mba hanomezana fampahalalana momba ny vidin'ny vokatra sy ny fotoana famoahana azy (billing frequency).
 
-### Vidiny (Pricing)
+### Vidiny (Pricing) {#pricing}
 
 Ny ampahany amin'ny vidiny dia mamaritra ny vidin'ny vokatra fototra sy ny fotoana famoahana azy.
 
@@ -61,7 +61,7 @@ Ny ampahany amin'ny vidiny dia mamaritra ny vidin'ny vokatra fototra sy ny fotoa
 
 izany hoe, ohatrin' ny vidiny $29.99 miaraka amin'ny fepetra 1 volana dia hifandray $29.99 isaky ny volana. Mitovy izany, ny vidiny $89.97 miaraka amin'ny fepetra 3 volana dia hifandray an'io vola io isam-bolana (isaky ny tsina).
 
-### Billing Cycles
+### Billing Cycles {#billing-cycles}
 
 Ny fizarana momba ny billing cycles dia manazava ny hamafin'ny fotoana fandoavam-bola voalaza etsy ambony ary matetika dia fantatra amin'ny alalan'ny fifanarahana na fe-potoana voafetra.
 
@@ -69,7 +69,7 @@ Ny fizarana momba ny billing cycles dia manazava ny hamafin'ny fotoana fandoavam
 
 Ohatra, ny vidin'ny vokatra $29.99 miaraka amin'ny fepetra 1 volana sy 12 billing cycles dia hifandray $29.99 isam-bolana ho an'ilay vokatra mandritra ireo volana 12 manaraka. Raha fintinina, io fepetra io dia mamorona fotoana vidiny voafetra amin'ny $29.99 isam-bolana mandritra ny 12 volana ary avy eo dia tsy hisy fandoavam-bola intsony.
 
-### Trial Period
+### Trial Period {#trial-period}
 
 Ny fanononana (enabling) ny toggle offer trial dia mamela ny administrator an'ny tambajotra hametraka fotoana fanandramana ho an'ilay vokatra.
 
@@ -77,7 +77,7 @@ Ny fanononana (enabling) ny toggle offer trial dia mamela ny administrator an'ny
 
 Mandritra ny fotoana fanandramana, afaka mampiasa ilay vokatra iainana ary tsy hifandray vola mandra-pahatonga ny fotoana fanandramana dia tapitra.
 
-### Setup Fee
+### Setup Fee {#setup-fee}
 
 Afaka manome saram-barotra (setup fee) an'ilay plan ianao.
 
@@ -85,7 +85,7 @@ Afaka manome saram-barotra (setup fee) an'ilay plan ianao.
 
 Midika izany fa ny mpanjifa ho mandoa vola fanampiny amin'ny fandoavam-bola voalohany (ankoatra ny vidin'ny plan) izay mifanaraka amin'ny saram-barotra no voatendryo ao amin'ity fizarana ity.
 
-### Active
+### Active {#active}
 
 Ny toggle active dia mamaritra mazava raha azo ampiasaina ho an'ny mpanjifa vaovao ilay vokatra.
 
@@ -93,13 +93,13 @@ Ny toggle active dia mamaritra mazava raha azo ampiasaina ho an'ny mpanjifa vaov
 
 Raha misy mpanjifa efa ao an'ity amin'ity ity dia ny fametrahana ny toggle ho amin'ny toerana tsy azo ampiasaina (disabled) dia manome antoka fa esorina avy amin'ny fandraisana anjara any aoriana ilay plan. **Ny mpanjifa efa ao an'ity plan ity dia ho mandray vola hatrany** mandra-pahatongan'ny fifindrana azy amin'ny plan vaovao na esorina avy amin'ilay plan.
 
-### Sary An-damin'ny Fivarotana (Product Image)
+### Sary An-damin'ny Fivarotana (Product Image) {#product-image}
 
 Ny bokotra **Upload Image** dia mamela ny mpitantana tambajotra (network administrator) hampiasa ny media library mba hisafidianana na fametrahana sary an'ny vokatra.
 
 ![Sary an'ny vokatra section](/img/config/product-image.png)
 
-### Manapaka (Delete)
+### Manapaka (Delete) {#delete}
 
 Ny bokotra **Delete Product** dia manapaka ilay vokatra avy ao amin'ny rafitra. Azo hitantsika izany rehefa nivoaka ny vokatra.
 
@@ -107,11 +107,11 @@ Ny bokotra **Delete Product** dia manapaka ilay vokatra avy ao amin'ny rafitra. 
 
 Tsy toy ny fanapahana hafa, tsy apetraka amin'ny toerana fampiasana (trash state) ilay vokatra. Noho izany dia rehefa voapaka dia tsy azo averina intsony io asa io.
 
-### Safidy An'ny Vokatra (Product Options)
+### Safidy An'ny Vokatra (Product Options) {#product-options}
 
 Rehefa vita ny fanazavana fototra momba ny vokatra, dia manampy an'ilay bokotra **product options** ny mpitantana tambajotra mba hanazavana bebe kokoa ireo toetra manokana an'ilay vokatra.
 
-#### Ankapobeny (General)
+#### Ankapobeny (General) {#general}
 
 Ny tabilao **General** dia mamaritra ireo toetran'ny vokatra ankapobeny izay tsy mifandraika amin'ireo tabilao hafa momba ny vokatra manokana.
 
@@ -125,7 +125,7 @@ Ny **Customer Role** dia mamaritra ny anjara atolotra ho an'ilay mpanjifa rehefa
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Fanaka sy Fandresina (Up & Downgrades)
+#### Fanaka sy Fandresina (Up & Downgrades) {#up--downgrades}
 
 Ity tab ity dia manazava ny lalana azo atao ho fanatsarana na fampihenana (upgrade and downgrade paths) ho an'ny mpanjifa ao anatin'ny haavo manokana azy.
 
@@ -143,7 +143,7 @@ Mba fametrahana vondron'drafitra (plan group), dia voafetra ny drafitra mifanara
 
 Misy toetra hafa ao amin'ny Ultimate Multisite dia ny **order bump**, izay azo ampiana vokatra sy serivisy fanampiny (add-on products and services) mifanaraka amin'izany drafitra. Ireo dia atolotra ho zavatra fanampiny ho an'ilay mpanjifa izay azo ampiana ao anatin'ny drafitra mandritra ny fividianana na mandritra ny fanatsarana (upgrade).
 
-#### Fahasamihafan'ny Vidiny (Price Variations)
+#### Fahasamihafan'ny Vidiny (Price Variations) {#price-variations}
 
 Ny fiovana amin'ny vidiny dia mamela ny mpitantana tambajotra (network administrator) hanome vidiny hafa miankina amin'ny fotoana. Ity fepetra ity dia mamela anao hanolotra fotoana fandoavam-bola isam-bolana, isam-bolana, isan-taona, na fotoana fandoavam-bola hafa rehetra ho an'ny vokatra iray. Ohatra, azonao atao ny mametraka vokatra amin'ny $29.99/volana ary manome safidy isan-taona miadana amin'ny $249.99/taona.
 
@@ -165,7 +165,7 @@ Ohatra, raha ny vidin'ny vokatra fototra dia $29.99 isam-bolana, dia mety hanamp
 Ny fiovana amin'ny vidiny irery dia tsy manampy toggle na switch any amin'ny checkout frontend. Mba hahafahan'ny mpanjifa mifidy eo anelanelan'ireo fotoana fandoavam-bola (ohatra: Isam-bolana / Isan-taona), mila manampy **Period Selection** field ianao ao amin'ny checkout form-nao. Jereo ny [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) ho an'ny toromarika dingana tsirairay.
 :::
 
-#### Fanoherana (Taxes)
+#### Fanoherana (Taxes) {#taxes}
 
 Ny **Taxes** tab dia mifanaraka amin'ny fepetra momba ny hetra voatondro ao amin'ny **Ultimate Multisite > Settings > Taxes** ary manokana kokoa ireo tahan'ny hetra voatondro. Mba hanajàna ny hetra sy hamaritana ny tahan'ny hetra azo ampiasaina dia jereo ny antontan-taratasy ao amin'ny **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Rehefa voafidy ny tahan'ny hetra ao amin'ny **Ultimate Multisite > Settings > Ma
 
 Mba hanondroana fa ny vokatra iray dia zavatra azo iasan'ny hetra, ataovy aktiva ny toggle **Is Taxable** ary safidio ny tahan'ny hetra mifanaraka avy amin'ny dropdown Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Amin'ny ankapobeny, ny site templates dia tranonkala WordPress feno izay atao cloning ho toerana an'ny mpanjifa rehefa manomboka ny fandraisana (subscription) azy.
 
@@ -201,7 +201,7 @@ Farany indrindra, ny **C** **hoose Available Site Templates** dia manodidina (ov
 
 Amin'ny farany, raha te hanao template selection eo amin'ny dingan'ny checkout ny mpitantana tambajotra ianao dia ampy ny fametrahana ny fepetra hoe ' _default_ '. Na dia azo atao koa ny manala sy manakana ny safidy template ary mametraka azy ho an'ny fepetra plan amin'ny alalan'ny safidy ' _assign new template_ ' na ' _choose available site templates_ '.
 
-#### Sites
+#### Sites {#sites}
 
 Ny tabilao **Sites** dia ampahany amin'ny fiasa voafetra (limitations functionality) ao amin'ny Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Ity famaritana ity dia manamarina ny isan'ny toerana (sites) ambony indrindra iz
 
 Mba hanatrehana io voafetra io, apetaho amin'ny toetran'ny **limit sites** ny "toggle" ary omeo ny isan'ny toerana ambony indrindra ao amin'ny sehatry ny **site allowance**.
 
-#### Visits
+#### Visits {#visits}
 
 Ny tabilao **Visits** dia ampahany hafa amin'ny rafitry ny fepetra (limitations system) an'ny Ultimate Multisite. Ity famaritana ity dia mamela ny fanisana sy ny fandrahonana (throttling) ireo mpitsidika tsy manam-pahafahana tokana (unique visitors) ho amin'ny toerana an'ilay mpanjifa.
 
@@ -223,7 +223,7 @@ Mba hampiasana io fahaizana io, ataovy **active** (mifidy ny toerana mampiasa) n
 
 Rehefa tonga amin'ity fetra ity, dia tsy hanome ny tranonkala an'ilay mpanjifa intsony ny Ultimate Multisite fa haneho hafatra milaza fa nahatratra ny fetra.
 
-#### Users (Mpampiasa)
+#### Users (Mpampiasa) {#users}
 
 Ny fepetra momba ny 'Users' ao amin'ny Ultimate Multisite dia mamela ny mpandrindra tambajotra hampanao fetra amin'ny isan'ny mpampiasa azo avy sy omenao an'izany asa manokana izany.
 
@@ -233,7 +233,7 @@ Mba hanamarihana ity fahaiza-manome fetra ity, ataovy **active** ny toggle hoe *
 
 Avy eo, ho an'ny asa manokana tsirairay izay hatao fetra, ataovy **active** ny toggle eo akaikina ary omeo ny fetra ambony indrindra ao amin'ilay champ mifanaraka.
 
-#### Post Types (Karazana lahatsoratra)
+#### Post Types (Karazana lahatsoratra) {#post-types}
 
 Ny tabilao 'Post Types' dia mamela ny mpandrindra tambajotra hampanao fetra manokana kokoa amin'ny karazana lahatsoratra maro ao amin'ny WordPress.
 
@@ -247,7 +247,7 @@ Manombana, eto ny fandikana amin'ny teny Malagasy:
 
 Aorian'izany, ho an'ny karazana lahatsoratra tsirairay izay tiana voafetra, dia ataovy azo atao amin'ny alalan'ny fanindriana azy (toggle) amin'ny alalan fampitahana azy any havia ary manome ny fetra ambony farany ao amin'ilay toerana mifanaraka.
 
-#### Tehiry Lalana (Disk Space)
+#### Tehiry Lalana (Disk Space) {#disk-space}
 
 Ny tabilao **Disk Space** dia ahafahan'ny mpitantana tambajotra (network administrators) voafetra ny toerana ampiasain'ny mpanjifa.
 
@@ -259,13 +259,13 @@ Mba ahafahana mampandeha ny fepetra momba ny fampiasana disk, dia ataovy amin'ny
 
 Avy eo, omeo ny fetra ambony farany amin'ny megabytes ao amin'ilay champ antsoina hoe **disk space allowance**.
 
-#### Domain Manokana (Custom Domain)
+#### Domain Manokana (Custom Domain) {#custom-domain}
 
 Amin'ny alalan fanindriana ity safidy ity dia azo atao ny mamela domain manokana ho an'ity plan ity manokana.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Lohateny (Themes)
+#### Lohateny (Themes) {#themes}
 
 Ny tabilao **Themes** ao anatin'ny safidy vokatra dia ahafahan'ny mpitantana tambajotra mamela ny lohateny ho azo safidinao ho an'ny mpanjifa ary afaka manome fanapahan-kevitra raha tiana hampiato (force) ny fepetra an'ilay lohateny.
 
@@ -283,7 +283,7 @@ Ny safidy **behavior** dia ahafahan'ny mpitantana tambajotra mamaritra ny fepetr
 
 Ao amin'ny **A vao misy (Available)** dia azo atao ny manome an'ilay theme ho azon'ny mpanjifa hampandeha azy tenany. Mifanohitra amin'izany, ny **Tsy Misy Fahaizana (Not Available)** kosa dia manala ny fahaizan'ny mpanjifa hampandeha ilay theme. Farany, ny safidy **Force Activate** dia manery ny fisafidianana sy ny fanatanterahana ilay theme ary mametraka azy ho default rehefa vita ny famoronana ny tranokala.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Mitovy amin'ny tabilao Themes, ny Ultimate Multisite dia ahafahan'ny administrator an'ny tambajotra mamaritra ny fomba fijeriny ireo plugins ho an'ny mpanjifa ary koa ny fihetsiny rehefa vita ny famoronana tranokala vaovao.
 
@@ -303,7 +303,7 @@ Ny fepetra **Force Activate & Lock** dia miasa mitovy fa manakana ny fomba fiasa
 
 Mety te-handinihina ny administrator an'ny tambajotra ny fepetra Force Activate & Lock sy Force Inactivate & Lock miaraka amin'ny site templates ho plugins ary ny toetran'ny plugin ao anaty templates dia mety ho voakasika ireo fepetra ireo raha misafidy azy ireo.
 
-#### Fepetra fanazavana indray (Reset Limitations)
+#### Fepetra fanazavana indray (Reset Limitations) {#reset-limitations}
 
 Ny tabilao **Reset Limitations** dia manavao ny fetra rehetra napetraka manokana momba ny vokatra. Raha te hanavao ianao, tsindrio ny bokotra **reset limitations**.
 
@@ -313,7 +313,7 @@ Mba hanamafisana ny asa dia avelao ho active ny toggle **confirm reset** eo an-d
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Fanovana, Famoronana Miverimberina, na Fandefasana Vokatra (Edit, Duplicate, or Delete Product)
+## Fanovana, Famoronana Miverimberina, na Fandefasana Vokatra (Edit, Duplicate, or Delete Product) {#edit-duplicate-or-delete-product}
 
 Afaka ovaina, atao miverimberina (duplicate), na adinay ireo vokatra efa misy ianao amin'ny alalan'ny fidinana any amin'ny **Ultimate Multisite > Products** ary manindry ny anaran'ny vokatra efa misy.
 

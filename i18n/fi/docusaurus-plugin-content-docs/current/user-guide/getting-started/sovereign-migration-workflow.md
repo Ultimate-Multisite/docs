@@ -3,11 +3,11 @@ title: Suvereenisen siirto-työnkulku
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Suvereenisen siirtojen työnkulku
+# Suvereenisen siirtojen työnkulku {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lisää siirtovahvistusportteja standardisivuston siirtämiseen suvereenisiin vuokralaisinfrastruktuureihin.
 
-## Ennen kuin aloitat
+## Ennen kuin aloitat {#before-you-start}
 
 Varmista, että sinulla on:
 
@@ -17,7 +17,7 @@ Varmista, että sinulla on:
 - Tietokantojen isäntäliittymä, joka vastaa kohdeympäristöä.
 - Mahdollisuus suorittaa WP-CLI -komentoja verkkoon.
 
-## Suositeltu työnkulku
+## Suositeltu työnkulku {#recommended-workflow}
 
 1. Valmista kohdevuokralaisen tietokanta ja tiedostonjuuristo.
 2. Rekisteröi tai päivitä vuokralaisen eristysasetukset (tenant isolation settings).
@@ -28,7 +28,7 @@ Varmista, että sinulla on:
 7. Käy vuokralaisella SSO:lla sisään.
 8. Vaihda DNS-asetuksia tai reititystä vasta vahvistuksen jälkeen.
 
-## Vahvistusportit
+## Vahvistusportit {#verification-gates}
 
 Vahvistustyönkulku tarkistaa siirron useista näkökulmista:
 
@@ -40,6 +40,6 @@ Vahvistustyönkulku tarkistaa siirron useista näkökulmista:
 
 Käytä vahvistusvirheitä ennen lanseerausta estävinä esteinä. Korjaa ilmoitettu tietokanta-, käyttäjä-, pudotusputki- tai reititysongelma, ja suorita vahvistus uudelleen ennen kuin altistat vuokralaisen asiakkaille.
 
-## Ensimmäinen tuotantoyritys
+## Ensimmäinen tuotantoyritys {#first-production-visit}
 
 Vahvistuksen jälkeen käytä **Visit (SSO)** -toimintoa sivuston hallintapaneelista ensimmäiseen ylläpitäjän käyntiin. Tämä vahvistaa vuokralaisen reitityksen, SSO-tokenien käsittelyn, alkuperän kiinnittämisen (origin pinning) ja vuokralaisen puolen käyttäjien tarjoamisen yhdessä hallitussa askeleessa.

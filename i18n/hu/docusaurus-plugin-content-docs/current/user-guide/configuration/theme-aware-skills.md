@@ -3,11 +3,11 @@ title: Témaérzékeny készségek
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Témához Igazított Készségek
+# Témához Igazított Készségek {#theme-aware-skills}
 
 A Superdav AI Agent v1.10.0 négy új, témához igazított, alapvető készséget tartalmaz, amelyek automatikusan alkalmazkodnak az aktív WordPress témájához. Ezek a készségek specializált útmutatást és képességeket biztosítanak, amelyek a témájának architektúrájára és funkcióira szabva.
 
-## Mi a Témához Igazított Készségek?
+## Mi a Témához Igazított Készségek? {#what-are-theme-aware-skills}
 
 A témához igazított készségek előrekonfigurált tudásbázisok és eszközcsomagok, amelyeket az AI asszisztens automatikusan választ ki a pilótáján jelenleg aktív WordPress témájának alapul. Amikor témát vált, az asszisztens elérhető készségei automatikusan frissülnek – nincs manuális konfiguráció szükséges.
 
@@ -18,9 +18,9 @@ Minden készség tartalmazza:
 - **Testreszabási példákat** — kódkivágásokat és konfigurációs mintákat gyakori feladatokra
 - **Jó gyakorlatokat** — ajánlásokat a témájának architektúrájához és munkafolyamatához
 
-## Elérhető Témához Igazított Készségek
+## Elérhető Témához Igazított Készségek {#available-theme-aware-skills}
 
-### Block Themes (Blokk-témák)
+### Block Themes (Blokk-témák) {#block-themes}
 
 **Alkalmazható:** Azok a témák, amelyek a WordPress blokk alapú (Full Site Editing) architektúrát használják.
 
@@ -34,7 +34,7 @@ A Block Themes készsége útmutatást nyújt a következőkre:
 
 **Automatikus aktiválás:** Amikor az aktív témád egy blokk témátípus (alapvető funkcióként támogatja a `block-templates` funkciót).
 
-### Classic Themes (Klassikus témák)
+### Classic Themes (Klassikus témák) {#classic-themes}
 
 **Alkalmazható:** A hagyományos WordPress témák, amelyek PHP sablonokat és a klasszikus szerkesztőt használnak.
 
@@ -48,7 +48,7 @@ A Classic Themes készsége útmutatást nyújt a következőkre:
 
 **Automatikus aktiválás:** Amikor az aktív témád egy klasszikus (nem blokk) témátípus.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Alkalmazható:** Azok az oldalak, amelyek a Kadence Blocks plugin-ot használnak fejlett blokk alapú designhoz.
 
@@ -62,7 +62,7 @@ A Kadence Blocks készsége útmutatást nyújt a következőkre:
 
 **Automatikus aktiválás:** Amikor a Kadence Blocks plugin aktív az oldaladon.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Alkalmazható:** Azok az oldalak, amelyek a Kadence témát használnak blokk alapú designhoz és testreszabáshoz.
 
@@ -76,15 +76,15 @@ A Kadence Theme készsége útmutatást nyújt a következőkre:
 
 **Automatikus aktiválás:** Amikor a Kadence téma az aktív témád.
 
-## Hogyan Válത്തോznak ki a Készségek
+## Hogyan Válത്തോznak ki a Készségek {#how-skills-are-selected}
 
 Az asszisztens automatikusan érzékeli az aktív témád és a telepített pluginekedet minden üzenetben. Ha egy megfelelő témához igazított készség elérhető, automatikusan töltődik be az asszisztens kontextusába. Nincs szükség manuális aktiválásra vagy váltásra.
 
-### Több Készség
+### Több Készség {#multiple-skills}
 
 Ha több készség is alkalmazható az oldaladon (például ha egyszerre aktív a Kadence Blocks és a Kadence Theme), az asszisztens hozzáfér minden érvényes készséghoz, és referencia anyagot kap minden egyes készségből.
 
-### Témaváltás
+### Témaváltás {#switching-themes}
 
 Amikor megváltoztatod az aktív témád, az asszisztens elérhető készségei automatikusan frissülnek az következő üzenetedben. Például:
 
@@ -92,11 +92,11 @@ Amikor megváltoztatod az aktív témád, az asszisztens elérhető készségei 
 2. Klasszikus témára váltasz.
 3. Az következő üzenetedben a **Classic Themes** készség automatikusan töltődik be, és a **Block Themes** készség már nem elérhető.
 
-## A Témához Igazított Készségek Használata
+## A Témához Igazított Készségek Használata {#using-theme-aware-skills}
 
 Ahhoz, hogy kihasználható legyen egy témához igazított készség, egyszerűen leírnod kell a chat felületén, mit szeretnél elérni. Az asszisztens automatikusan hivatkozik a megfelelő készség útmutatására.
 
-### Példa Promptek
+### Példa Promptek {#example-prompts}
 
 **Block Themes esetén:**
 > "Létrehoz egy hero szekciót háttérképpel és középre igazított szöveggel blokkmintákkal."

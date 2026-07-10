@@ -3,7 +3,7 @@ title: پلانز کے لیے شیئر کرنے کے قابل لنکس کا ان
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# پلانز کے لیے قابلِ اشتراک لنکس کا انتظام
+# پلانز کے لیے قابلِ اشتراک لنکس کا انتظام {#managing-shareable-links-for-plans}
 
 Ultimate Multisite آپ کو اپنے کلائنٹس کے ساتھ پلان کے لنکس براہ راست شیئر کرنے کی سہولت فراہم کرتا ہے۔ ایسا کرنے کے لیے، اپنے کسی بھی پلان کے ایڈٹ پیج پر جائیں اور _Click to copy the Shareable Link_ بٹن پر کلک کریں۔
 

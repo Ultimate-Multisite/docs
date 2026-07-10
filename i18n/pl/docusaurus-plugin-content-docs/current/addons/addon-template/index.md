@@ -3,25 +3,25 @@ title: Szablon dodatku
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Szablon Addonu
+# Szablon Addonu {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Wymagania
+## Wymagania {#requirements}
 
 - WordPress 5.3 lub nowszy
 - PHP 7.4 lub nowszy
 - Wtyczka Ultimate Multisite (aktywna)
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki addonu do katalogu `/wp-content/plugins/`
 2. Aktywuj wtyczkę w menu „Plugins” w WordPressie
 3. Skonfiguruj ustawienia addonu w panelu administracyjnym sieci (network admin)
 
-## Rozwój
+## Rozwój {#development}
 
-### Konfiguracja
+### Konfiguracja {#setup}
 
 ```bash
 # Instalacja zależności
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura Projektu
+### Struktura Projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Zasady modernizacji kodu
 ```
 
-### Testowanie
+### Testowanie {#testing}
 
 Addon zawiera kompleksowy framework testowy:
 
@@ -75,44 +75,44 @@ Addon zawiera kompleksowy framework testowy:
 - **Pokrycie testami (Test Coverage)**: Skonfigurowane do śledzenia pokrycia kodu
 - **Testowanie Multisite**: Testy uruchamiane w środowisku multisite
 
-### Standardy Kodu
+### Standardy Kodu {#code-standards}
 
 - **Standardy Kodowania WordPressa**: Egzekwowane za pomocą PHPCS
 - **Kompatybilność z PHP 7.4+**: Wspierane nowoczesne funkcje PHP
 - **Analiza Statyczna**: Integracja PHPStan do sprawdzania typów
 - **Modernizacja Kodu**: Zasady Rector dla ulepszeń PHP
 
-### System Budowania (Build System)
+### System Budowania (Build System) {#build-system}
 
 - **Przetwarzanie Zasobów (Asset Processing)**: Minifikacja plików CSS/JS
 - **Tłumaczenie (Translation)**: Generowanie plików POT
 - **Pakowanie (Packaging)**: Tworzenie archiwum do dystrybucji
 - **Tryb Rozwojowy (Development Mode)**: Nie-minifikowane zasoby do debugowania
 
-## Konfiguracja
+## Konfiguracja {#configuration}
 
 Addon obsługuje różne opcje konfiguracyjne, dostępne przez interfejs panelu administracyjnego sieci (network admin).
 
-## Akcje i Filtry (Hooks and Filters)
+## Akcje i Filtry (Hooks and Filters) {#hooks-and-filters}
 
-### Akcje (Actions)
+### Akcje (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Wywoływana po inicjalizacji addonu
 - `ultimate-multisite-addon-template_loaded` - Wywoływana po załadowaniu wszystkich plików addonu
 
-### Filtry (Filters)
+### Filtry (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modyfikacja ustawień addonu
 - `ultimate-multisite-addon-template_enabled` - Nadpisanie statusu włączania/wyłączania addonu
 
-## Licencja
+## Licencja {#license}
 
 Addon jest licencjonowany na podstawie GPL v3 lub nowszej.
 
-## Wsparcie
+## Wsparcie {#support}
 
 W celu uzyskania wsparcia i dokumentacji odwiedź [MultisiteUltimate.com](https://multisiteultimate.com)
-## Historia zmian (Changelog)
+## Historia zmian (Changelog) {#changelog}
 
 - Wersja 1.0.1 (2025-09-28): zmiana prefiksu na ultimate-multisite; aktualizacja domeny tekstu; zwiększenie wersji.
 

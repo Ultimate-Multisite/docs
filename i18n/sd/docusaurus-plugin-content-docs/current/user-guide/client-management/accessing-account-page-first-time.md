@@ -3,7 +3,7 @@ title: اکاؤنٽ پيچ ڏسڻ
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# میں پہلی بار اپنا اکاؤنٹ پیج کیسے دیکھ سکتا ہوں؟
+# میں پہلی بار اپنا اکاؤنٹ پیج کیسے دیکھ سکتا ہوں؟ {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite میں خوش آمدید!
 

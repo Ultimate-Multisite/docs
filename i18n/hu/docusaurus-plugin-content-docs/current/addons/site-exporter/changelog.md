@@ -3,7 +3,7 @@ title: Site Exporter Changelog
 sidebar_position: 99
 _i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Oldalexportáló Módosítási Napló
+# Oldalexportáló Módosítási Napló {#site-exporter-changelog}
 
 Verzió: 1.0.6 - Kiadása: 2026-05-11
 * Új: Az oldalexportok most tartalmaznak egy önindító index.php fájlt, így a ZIP fájlt külön plugin telepítése nélkül is telepíthetik egy friss hostingre
@@ -20,19 +20,19 @@ Verzió: 1.0.2 - Kiadása: 2025-09-28
 
 * Nevezés: A prefix-et ultimate-multisite-re nevezték át; frissítik a szöveg tartományt; verzió emelkedés.
 
-### Verzió 1.0.1 - Kiadása: 2023-08-09
+### Verzió 1.0.1 - Kiadása: 2023-08-09 {#version-101---released-on-2023-08-09}
 
 * Javított: Most biztosítja, hogy a megfelelő fájlútvonalat kapja az importáló fájl.
 * Javítás: Kikapcsolták az objektum cache-t, hogy elkerüljék a hibákat az importálás során.
 * Javítás: Javították az importáló plugin letöltési linkjének nem működésével kapcsolatos problémát.
 
-### Verzió 1.0.0 - Kiadása: 2022-12-23
+### Verzió 1.0.0 - Kiadása: 2022-12-23 {#version-100---released-on-2022-12-23}
 
 * Javítás: Az export űrlap pop-up nem töltődik be;
 * Javítás: A JavaScript fájlok nem töltődnek be az export oldalon;
 * Belső: Új build folyamat;
 
-### Verzió 1.0.0-beta.4 - Kiadása: 2022-01-13
+### Verzió 1.0.0-beta.4 - Kiadása: 2022-01-13 {#version-100-beta4---released-on-2022-01-13}
 
 * Belső: Hozzáadták a hooks és filter generátort;
 * Belső: Hozzáadták a WP Ultimo stub-okat a fejlesztői élmény javítására;

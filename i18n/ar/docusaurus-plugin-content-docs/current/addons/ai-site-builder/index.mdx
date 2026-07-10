@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - WordPress 5.3 أو أعلى
 - PHP 7.4 أو أعلى
 - ملحق Multisite Ultimate (نشط)
 
-## التثبيت
+## التثبيت {#installation}
 
 1. قم بتحميل ملفات الملحق إلى دليل `/wp-content/plugins/` الخاص بك
 2. فعّل الملحق من خلال قائمة 'الإضافات' في WordPress
 3. قم بتكوين إعدادات الملحق في مدير الشبكة
 
-## التطوير
+## التطوير {#development}
 
-### الإعداد
+### الإعداد {#setup}
 
 ```bash
 # تثبيت الاعتمادات
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### هيكل المشروع
+### هيكل المشروع {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # قواعد تحديث الكود
 ```
 
-### الاختبار
+### الاختبار {#testing}
 
 يحتوي الملحق على إطار اختبار شامل:
 
@@ -79,45 +79,45 @@ ultimate-multisite-ai-site-builder/
 - **تغطية الاختبار**: مُكوَّنة لتتبع تغطية الكود
 - **اختبار الشبكة المتعددة**: تُشغَّل الاختبارات في بيئة الشبكة المتعددة
 
-### معايير الكود
+### معايير الكود {#code-standards}
 
 - **معايير ترميز WordPress**: تُطبَّق عبر PHPCS
 - **التوافق مع PHP 7.4+**: ميزات PHP الحديثة مدعومة
 - **التحليل الثابت**: تكامل PHPStan للتحقق من الأنواع
 - **تحديث الكود**: قواعد Rector لتحديث PHP
 
-### نظام البناء
+### نظام البناء {#build-system}
 
 - **معالجة الأصول**: تصغير ملفات CSS/JS
 - **الترجمة**: إنشاء ملفات POT
 - **التغليف**: إنشاء أرشيف للتوزيع
 - **وضع التطوير**: أصول غير مصغرة للخطأ
 
-## التكوين
+## التكوين {#configuration}
 
 يدعم الملحق خيارات تكوين مختلفة يمكن الوصول إليها عبر واجهة مدير الشبكة.
 
-## الخطافات والمرشحات
+## الخطافات والمرشحات {#hooks-and-filters}
 
-### الإجراءات
+### الإجراءات {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - يُطلق بعد تهيئة الملحق
 - `ultimate-multisite-ai-site-builder_loaded` - يُطلق بعد تحميل جميع ملفات الملحق
 
-### المرشحات
+### المرشحات {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - تعديل إعدادات الملحق
 - `ultimate-multisite-ai-site-builder_enabled` - تجاوز حالة تمكين/تعطيل الملحق
 
-## الترخيص
+## الترخيص {#license}
 
 هذا الملحق مرخص بموجب GPL v3 أو أحدث.
 
-## الدعم
+## الدعم {#support}
 
 للحصول على الدعم والوثائق، قم بزيارة [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## سجل التغييرات
+## سجل التغييرات {#changelog}
 
 - الإصدار 1.0.1 (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.
 - الإصدار (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.

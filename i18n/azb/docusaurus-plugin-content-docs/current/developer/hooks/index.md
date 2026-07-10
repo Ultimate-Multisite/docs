@@ -1,70 +1,194 @@
 ---
-title: Hooks Reference
+title: هوک‌لار مرجعی
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Хуки Референс
+# هوک‌لار قایناقی {#hooks-reference}
 
-Автоматически сгенерированная документация для всех **59 действий** и **115 фильтров** в Ultimate Multisite.
+Ultimate Multisite ایچینده بوتون **59 عمل** و **118 فیلتر** اوچون اؤز-اؤزونه یارانمیش سندلر.
 
-## Действия
+## عمل‌لر {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Срабатывает перед перенаправлением для аутентификации.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Срабатывает непосредственно перед установкой cookie аутентификации.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Срабатывает непосредственно перед установкой cookie аутентификации для вошедшего пользователя.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Позволяет разработчикам добавлять собственные интеграции провайдеров хостинга через плагины wp.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Срабатывает, когда все зависимости были загружены.
-- [wu_activation](./Actions/wu_activation) — Позволяет другим частям плагина прикрепить свои рутины для активации.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Позволяет разработчикам плагинов подключать функции после того, как пользователь или супер-админ сменил шаблон сайта.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — В некоторых случаях нам потребуется загрузить дополнительный функционал для обработки действий.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Срабатывает перед обработкой поискового запроса.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Позволяет разработчикам вносить дополнительные изменения в объект оформления заказа.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Позволяет разработчикам вносить дополнительные изменения в объект оформления заказа.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Срабатывает перед добавлением поля в форму оформления заказа.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Позволяет разработчикам запускать дополнительные хуки.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Перед тем, как мы обработаем оформление заказа.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Срабатывает после полной сборки заказа оформления заказа.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Позволяет разработчикам плагинов добавлять виджеты в панель Network Dashboard.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Позволяет разработчикам плагинов добавлять виджеты в панель Network Dashboard.
-- [wu_deactivation](./Actions/wu_deactivation) — Позволяет другим частям плагина прикрепить свои рутины для деактивации.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Позволяет разработчикам плагинов добавлять действия в процесс удаления.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Срабатывает, когда домен становится основным доменом для сайта.
-- [wu_domain_created](./Actions/wu_domain_created) — Срабатывает при добавлении нового маппинга домена.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Срабатывает после загрузки нашего основного Domain Mapping.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Некоторые плагины сохраняют URL до того, как маппинг был активен, или строят URL иным способом, который не включен в
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — Позволяет разработчикам подключаться после дублирования сайта.
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Позволяет разработчикам плагинов добавлять дополнительные хуки.
-- [wu_user_registered]
-- [user_updated]
+- [auth_redirect](./Actions/auth_redirect) — دوغرولاما یؤنلندیرمه‌سیندن اؤنجه ایشلیر.
+- [set_auth_cookie](./Actions/set_auth_cookie) — دوغرولاما cookie-سی قویولمامیشدان درست اؤنجه ایشلیر.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — گیریش ائدیلمیش دوغرولاما cookie-سی قویولمامیشدان درست اؤنجه ایشلیر.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — گلیشدیرنلره WordPress plugin-لری واسطه‌سیله اؤز host provider اینتگراسیالارینی آرتیرماغا اجازه وئر.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — بوتون باغلیلیقلار یوکله‌نندن سونرا ایشلیر
+- [wu_activation](./Actions/wu_activation) — plugin-ین باشقا بؤلمه‌لرینه فعال‌لاشما اوچون اؤز روتین‌لرینی باغلاماغا اجازه وئر
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — plugin گلیشدیرنلرینه بیر ایشلدن یا super admin سایت شابلونونو ده‌ییشدیردیکدن سونرا فانکسیالاری باغلاماغا اجازه وئر
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — بعضی حاللاردا، عمللری ایداره ائتمک اوچون اضافی گوج یوکله‌مک لازیم اولاجاق.
+- [wu_before_search_models](./Actions/wu_before_search_models) — آختاریش ایسته‌یی ایشلنمه‌میشدن اؤنجه ایشلیر.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — گلیشدیرنلره checkout آبجکتینه اضافی ده‌ییشیکلر ائتمگه اجازه وئر.
+- [wu_cart_setup](./Actions/wu_cart_setup) — گلیشدیرنلره checkout آبجکتینه اضافی ده‌ییشیکلر ائتمگه اجازه وئر.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout فورمونا بیر فیلد آرتیریلمامیشدان اؤنجه ایشلیر.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — گلیشدیرنلره اضافی hook-لاری ایشلتدیرمگه اجازه وئر.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout-و ایشله‌مکدن اؤنجه.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout سیفارشی تام یئغیلاندان سونرا ایشلیر.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin گلیشدیرنلرینه Network Dashboard Panel-ه widget-لر آرتیرماغا اجازه وئر.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin گلیشدیرنلرینه Network Dashboard Panel-ه widget-لر آرتیرماغا اجازه وئر.
+- [wu_deactivation](./Actions/wu_deactivation) — plugin-ین باشقا بؤلمه‌لرینه غیرفعال‌لاشما اوچون اؤز روتین‌لرینی باغلاماغا اجازه وئر
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin گلیشدیرنلرینه سیلمه پروسه‌سینه عمللر آرتیرماغا اجازه وئر
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — بیر domain بیر سایت اوچون اصلی domain اولاندا ایشلیر.
+- [wu_domain_created](./Actions/wu_domain_created) — یئنی domain mapping آرتیریلاندا ایشلیر.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — بیزیم اصلی Domain Mapping یوکله‌نندن سونرا ایشلدیلدی
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — بعضی plugin-لر mapping فعال اولمامیشدان اؤنجه URL-یی ساخلیاجاق یا URL-لری داخیل اولمایان باشقا بیر یوللا دوزلدجک o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — گلیشدیرنلره سایت چوخالداماسی باش وئردیکدن سونرا باغلانماغا اجازه وئر.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin گلیشدیرنلرینه اضافی hook-لار آرتیرماغا اجازه وئر
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — اضافی تمیزلمه اوچون hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — یئنی domain آرتیرما modal ایسته‌یینی ایداره ائتمکدن اؤنجه ایشلیر.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin گلیشدیرنلرینه احتیاجلاری اولسا meta data-نی آیری یوللارلا ساخلاماغا اجازه وئر.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin گلیشدیرنلرینه احتیاجلاری اولسا ایشلدن meta data-نی آیری یوللارلا ساخلاماغا اجازه وئر.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — کئچرسز magic link token-یله قارشیلاشیلاندا ایشلیر.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — بیر ایشلدن magic link ایله گیریش ائتدیکدن سونرا ایشلیر.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — plugin گلیشدیرنلرینه موشتری آرتیریلاندا اضافی ایشلر گؤرمگه اجازه وئر.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — بیر وارلیق اوچون MCP قابلیتلری قئیده آلیناندان سونرا ایشلیر.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter باشلادیلاندان سونرا ایشلیر.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — عضولوق لغو ائدیلنندن سونرا ایشلیر.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — عضولوق یئنیله‌مه‌سیندن سونرا ایشلیر.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — عضولوق لغو ائدیلنندن اؤنجه ایشلیر.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — عضولوق یئنیله‌مه‌سیندن اؤنجه ایشلیر.
+- [wu_model_post_save](./Actions/wu_model_post_save) — بیر آبجکت database-ه ساخلیاناندان سونرا ایشلیر.
+- [wu_page_added](./Actions/wu_page_added) — plugin گلیشدیرنلرینه صفحه‌لر قئیده آلیناندا اضافی شئیلر ایشلتمگه اجازه وئر.
+- [wu_page_after_render](./Actions/wu_page_after_render) — plugin گلیشدیرنلرینه صفحه‌نی چاپ ائتدیکدن سونرا اضافی محتوای آرتیرماغا اجازه وئر
+- [wu_page_before_render](./Actions/wu_page_before_render) — plugin گلیشدیرنلرینه صفحه‌نی چاپ ائتمه‌میشدن اؤنجه اضافی محتوای آرتیرماغا اجازه وئر.
+- [wu_page_load](./Actions/wu_page_load) — plugin گلیشدیرنلرینه صفحه‌لریمیزه اضافی hook-لار آرتیرماغا اجازه وئر.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — plugin گلیشدیرنلرینه صفحه‌نی چاپ ائتدیکدن سونرا اضافی محتوای آرتیرماغا اجازه وئر
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — plugin گلیشدیرنلرینه صفحه‌نی چاپ ائتمه‌میشدن اؤنجه اضافی محتوای آرتیرماغا اجازه وئر.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin گلیشدیرنلرینه صفحه‌لریمیزه اضافی hook-لار آرتیرماغا اجازه وئر.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — بو صفحه اوچون widget-لر قئیده آلیناندان سونرا ایشلیر.
 
-### User Actions
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — ایشلیر؛ addons-لارا اجازه وئریر کی capability ماژول‌لارینی integration-لارا باغلاسینلار.
+- [wu_register_integrations](./Actions/wu_register_integrations) — ایشلیر؛ integration-لارا اجازه وئریر کی اؤزلرینی قئیده آلدیرسینلار.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — علاوه route-لارین قئیده آلینماسینا اجازه وئر.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin گلیشدیرنلرینه اجازه وئر کی ساخلاما پروسه‌سینه action-لار علاوه ائله‌سینلر
+- [wu_site_created](./Actions/wu_site_created) — بیر site ایلک دفعه یارادیلاندان سونرا ایشلیر.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — لازیم اولسا، plugin گلیشدیرنلرینه اجازه وئر کی علاوه hook-لار آرتیرسینلار.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer باخیش زمینه‌سینده اولاندا ایشلیر.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook-ونو تریگر ائدیر.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — بیر آبجکت دیتابیسه یازیلا‌ندان سونرا ایشلیر.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — بیر آبجکت دیتابیسه یازیلا‌ندان سونرا ایشلیر.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — بیر آبجکت دیتابیسه یازیلا‌ندان سونرا ایشلیر.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin گلیشدیرنلرینه اجازه وئر کی آچما پروسه‌سینه action-لار علاوه ائله‌سینلر.
 
-*   **User:** I need to know what the purpose of the `user_updated` hook is.
-*   **System:** The `user_updated` hook fires whenever a user's profile information is modified. This is useful for triggering actions like sending a welcome email, updating related records, or recalculating user-specific data whenever a user changes their details.
+## فیلترلر {#filters}
 
-### User Actions
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — کیملیک تانیتما cookie-سینین بیتیش سوره‌سینین اۇزونلوغونو فیلتر ائدیر.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — کیملیک تانیتما یؤنلندیرمه scheme-ینی فیلتر ائدیر.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — احتیاط اوچون بورادا اصلی WP Filter-ی تکرار ائدیر.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin گلیشدیرن‌لره previewer-ده ایشلنه‌ن URL-نی فیلتر ائتمه‌یه ایجازه وئر.
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie-سینین یالنیز HTTPS اوزرینه گؤندریلیب-گؤندریلممه‌سینی فیلتر ائدیر.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — گووه‌نلی کیملیک تانیتما یؤنلندیرمه‌سی ایشلنیب-ایشلنمه‌مه‌سینی فیلتر ائدیر.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — گیریش ائتمیش cookie-نین یالنیز HTTPS اوزرینه گؤندریلیب-گؤندریلممه‌سینی فیلتر ائدیر.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookie-لرین واقعا client-ه گؤندریلمه‌سینین قارشی‌سینی آلماقا ایجازه وئرر.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — یؤنلندیرمه URL-سینی تنظیم ائت.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — فیلترله‌ر آراسیلا ائک addımlar آرتیر.
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin گلیشدیرن‌لره render باغلامینا عمومی اولاراق اضافی variable آرتیرماغا ایجازه وئر.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — گلیشدیرن‌لر اوچون بو یوخلامانی قیسا قاپاتماغا ایجازه وئر.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — یئنی domain آرتیرما modal-ی اوچون field-لری فیلتر ائدیر.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — گلیشدیرن‌لره setup fee line item-دا ده‌ییشیکلیک ائتمه‌یه ایجازه وئر.
+- [wu_admin_notices](./Filters/wu_admin_notices) — گلیشدیرن‌لره Ultimate Multisite طرفیندن آرتیریلان admin notice-لری فیلتر ائتمه‌یه ایجازه وئر.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ده‌ییشدیریلدیکدن سونرا فیلتر ائت.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ایندی بوتون نوع‌لرله ایشلریگ.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin گلیشدیرن‌لره محدودیت‌لری قیسا قاپاتماغا ایجازه وئر.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — signup fee-نین تطبیق اولونوب-اولونماماسینی فیلتر ائدیر.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — اصلی api آرگومان‌لارینی فیلتر ائت.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin گلیشدیرن‌لره billing address field-لرینی فیلتر ائتمه‌یه ایجازه وئر.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — گلیشدیرن‌لره چیخیشی بایپس ائدیب یئنی بیرینی تنظیم ائتمه‌یه ایجازه وئر
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — گلیشدیرن‌لره current user-ی unset ائدن code-و بایپس ائتمه‌یه ایجازه وئر.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "تکرارلانان مبلغ" جمعینی فیلتر ائدیر.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "ایلک مبلغ" جمعینی فیلتر ائت.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "ایلک مبلغ" جمعینی فیلتر ائت.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin گلیشدیرن‌لره credit ده‌یه‌رینه قاراشماغا ایجازه وئر.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain قئیدی اولمامالی مشترک checkout-form base domain-لری فیلتر ائدیر.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — یئنی field template-لری آرتیرماق اوچون API-لریمیز بورادا hook اولور.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — یئنی field نوع‌لری آرتیرماق اوچون API-لریمیز بورادا hook اولور.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — خطا پیام‌لارینی فیلتر ائت.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — بیر field-ین خودکار گؤندریله بیلن اولوب-اولماماسینی یوخلانی بایپس ائتمه‌یه گلیشدیرن‌لره ایجازه وئر.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin گلیشدیرن‌لره form validator-دا custom alias-لار آرتیرماغا ایجازه وئر.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin گلیشدیرن‌لره validation rule-لاری فیلتر ائتمه‌یه ایجازه وئر.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — ایسته‌نیلمه‌ین Params-لری unset ائت.
+- [wu_contains_element](./Filters/wu_contains_element) — گلیشدیرن‌لره ایلک آختاریشین نتیجه‌لرینی ده‌ییشمه‌یه ایجازه وئر.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host تامین ائدن‌لره constant-ی آیری جور قورماقا ایجازه وئر.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — اؤلکه‌نین اداری بؤلوملرینین گؤزل آدینی قایتاریر.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — بیر اؤلکه‌ده بیر ایالت اوچون شهرلرین لیستینی قایتاریر.
+- [wu_country_get_states](./Filters/wu_country_get_states) — بو اؤلکه اوچون ایالت‌لرین لیستینی قایتاریر.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — گلیشدیرن‌لره default داورانیشی ده‌ییشیب current customer-ی آیری جور تنظیم ائتمه‌یه ایجازه وئر.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — گلیشدیرن‌لره default داورانیشی ده‌ییشیب current membership-ی آیری جور تنظیم ائتمه‌یه ایجازه وئر.
+- [wu_current_set_site](./Filters/wu_current_set_site) — گلیشدیرن‌لره default داورانیشی ده‌ییشیب current site-ی آیری جور تنظیم ائتمه‌یه ایجازه وئر.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — گلیشدیرن‌لره manage site URL پارامترله‌رینی ده‌ییشمه‌یه ایجازه وئر.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin گلیشدیرن‌لره لینک‌لری فیلتر ائتمه‌یه ایجازه وئر.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin گلیشدیرن‌لره نتیجه‌لری تعریف ائتمک اوچون یئنی یوخلامالار آرتیرماغا ایجازه وئر.
 
-*   **User:** What is the difference between `user_registered` and `user_updated`?
-*   **System:** The key difference is the *event*.
-    *   `user_registered` fires *only* when a brand new user account is created. It's perfect for "onboarding" tasks (e.g., sending a welcome email).
-    *   `user_updated` fires *any time* an existing user's data is changed (e.g., changing their email, updating their name). It's used for maintaining data integrity or triggering notifications about changes.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — اولر کی، سونرا اضافی بلوک‌لار آرتیرماغا احتیاجیمیز اولا.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — یاییمچی‌لارین بو پارسری اضافی سازان‌لار یا plugin-لارلا ایشله‌مک اوچون گنیشله‌نده بیلمه‌سی اوچون عمومی filter آرتیرار.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — اضافی پارول قایدالارینین اجباری اولوب-اولماماسینی filter ائدین.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — یارادیلان موشتری ایستیفاده‌چی آدینی filter ائدین.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — plugin یاییمچی‌لارینا checkout صفحه‌سینین قاباقجادان قورولموش دگرلرینی filter ائتمه‌یه ایجازه وئرین.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — یاییمچی‌لارا بو داورانیشدان یان کئچمک اوچون یئنی فرم slug-لاری آرتیرماغا ایجازه وئرین.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — یاییمچی‌لارا و add-on-لارا یئنی کوچمه مرحله‌لری آرتیرماغا ایجازه وئرین
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — بو filter حاقیندا آشاغیدا، همین method اوستونده داها چوخ باخین.
+- [wu_get_post_types](./Filters/wu_get_post_types) — یاییمچی‌لارا هانسی پست نوع‌لارینین گوستریله‌جه‌یینی سئچمه‌یه ایجازه وئرین.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — سطیرلری قایتار، filter اولابیلر
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — یاییمچی‌لارا دامنه/یول جوت‌لرینی دَییشدیرمه‌یه ایجازه وئرین.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — میزبانی بیرلشمه قورولوشو اوچون wizard بولمه‌لرینی filter ائدیر.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — بیر فرم‌داکی ساحه‌لری filter ائدیر. فرم filter آدینداکی ID ایله تانینیر.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — موستقیل حساب‌کسمه dövrه‌لری اولان محصول نوع‌لارینی filter ائدین.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — plugin یاییمچی‌لارینا API اوچون وئریلمیش بیر دورومو مجبور ائتمه‌یه ایجازه وئرین.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — plugin یاییمچی‌لارینا گلیشدیرمه حالتی اوچون اضافی یوخلامالار آرتیرماغا ایجازه وئرین.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — plugin یاییمچی‌لارینا MCP آداپتری اوچون وئریلمیش بیر دورومو مجبور ائتمه‌یه ایجازه وئرین.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — امنیت سبب‌لرینه گوره، قوشولماق اوچون الچاتان action-لارین سایینی محدود ائدیریک. بو filter یاییمچی‌لارا گنیشلتمه‌یه ایجازه وئرر
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — وئریلمیش پست نوعونون بو plan-دا ایجازه‌لی اولوب-اولماماسینی یوخلایار. plugin یاییمچی‌لارینا قایتان دگری filter ائتمه‌یه ایجازه وئرین
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP آدرس دوغرولاماسینین اجباری اولوب-اولماماسینی filter ائدین.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — ایستیفاده‌چی agent دوغرولاماسینین اجباری اولوب-اولماماسینی filter ائدین.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — یارادیلان magic link URL-ینی filter ائدین.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — magic link-لرین فعال اولوب-اولماماسینی filter ائدین.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — بیر دامنه اصلی ائدیلندن سونرا یؤنلندیرمه URL-ینی filter ائدیر.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — خودکار یؤنلندیرمه‌نین قاباغینی آلان پارامترلر اوچون استثنا لیستی یارادین.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP قابلیّتینین داخیل ائدیلمه‌سی قرارینی اوستله‌مک اوچون filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — حسابلانمیش بیتیش تاریخینی filter ائدیر.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — یئنیله‌مه‌دن سونرا قویولاجاق حسابلانمیش بیتیش تاریخینی filter ائدیر.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — یاییمچی‌لارا یئنی گونجلله‌مه فرم slug-لاری آرتیرماغا ایجازه وئرین.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — پارولون اقل اوزونلوغونو filter ائدین.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — لازیم اولان اقل پارول گوجونو filter ائدین (zxcvbn پوانی).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — plugin یاییمچی‌لارینا و بیزه، دوزلت‌مه صفحه‌لریمیزه action لینک‌لری آرتیرماغا ایجازه وئرین
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — پارول‌لاردا کیچیک حرف‌لرین لازیم اولوب-اولماماسینی filter ائدین.
+- [wu_password_require_number](./Filters/wu_password_require_number) — پارول‌لاردا رقم‌لرین لازیم اولوب-اولماماسینی filter ائدین.
+- [wu_password_require_special](./Filters/wu_password_require_special) — پارول‌لاردا اؤزل کاراکترلرین لازیم اولوب-اولماماسینی filter ائدین.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — پارول‌لاردا بویوک حرف‌لرین لازیم اولوب-اولماماسینی filter ائدین.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ایستیفاده‌چیه گؤزله‌ین اؤده‌مه‌لر حاقینداکی پیامی دَییشدیرمه‌یه ایجازه وئرین.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plan کیمی باخیلماسی گرکن محصول نوع‌لارینی filter ائدین.
+- [wu_post_count](./Filters/wu_post_count) — plugin یاییمچی‌لارینا عمومی ساییمی دَییشدیرمه‌یه ایجازه وئرین
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — plugin یاییمچی‌لارینا هانسی پست وضعیتینین ساییلاجاغینی دَییشدیرمه‌یه ایجازه وئرین.Varsayılan olaraq، یایینلانمیش و خصوصی پست‌لار ساییلیر
+- [wu_post_default_status](./Filters/wu_post_default_status) — اوبژکت داده‌لرینی دیتابیسه ساخلامازدان اؤنجه filter ائدیر.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — یاییمچی‌لارا تنظیمات‌لاری Ultimate Multisite طرفیندن ساخلامازدان اؤنجه filter ائتمه‌یه ایجازه وئرین.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — سورغویا دوام ائتمه‌یه ایجازه اولوب-اولماماسینی filter ائدیر.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — سورغویا دوام ائتمه‌یه ایجازه اولوب-اولماماسینی filter ائدیر.
 
-### User Actions
-
-*   **User:** Can I use these hooks to trigger an action only if the email address has changed?
-*   **System:** Yes, you can, but you need to check the data passed to the hook. When using `user_updated`, the system usually provides both the *old* and *new* values for the fields. You would write conditional logic to check if `new_email != old_email`.
-
-***
-
-## Summary of Hooks
-
-| Hook Name | When It Fires | Common Use Cases |
-| :--- | :--- | :--- |
-| `user_registered` | When a new user account is created. | Sending welcome emails, initializing user roles, logging creation events. |
-| `user_updated` | When any existing user's data is modified. | Sending change notifications, updating related records, recalculating user metrics. |
-
-***
-
-## Conclusion
-
-If you need to react to a user *joining* the platform, use `user_registered`. If you need to react to a user *changing* their details, use `user_updated`.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — ایسته‌یین داوام ائتمه‌سینه ایجازه اولوب-اولمادیغینی فیلتر ائدیر.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — ایسته‌یین داوام ائتمه‌سینه ایجازه اولوب-اولمادیغینی فیلتر ائدیر.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — ایسته‌یین داوام ائتمه‌سینه ایجازه اولوب-اولمادیغینی فیلتر ائدیر.
+- [wu_return_url](./Filters/wu_return_url) — گلیشدیرنلره checkout ایشلملریندن سونرا ایشلنه‌ن گئیت‌وئی قاییتما URL-ینی دَییشدیرمه‌یه ایجازه وئریر.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — پلاگین گلیشدیرنلرینه داها چوخ آختاریش مودئلی فونکسیونو آرتیرماغا ایجازه وئریر.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — گلیشدیرنلره اضافی قورولوش ویزارد آددیملاری آرتیرماغا ایجازه وئریر.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite یئنی یارادیلان سایت اوچون دومئن قئیدی یاراتمالی‌دیرمی، فیلتر ائدیر.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — گلیشدیرنلره یؤنلندیرمه‌نی قیسادان کسمه‌یه و اونون باش وئرمه‌سینین قاباغینی آلماغا ایجازه وئریر.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — هَندلرین یئنیدن یازیلماغینا ایجازه وئریر
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — سایتلر اوچون موجود توپلو عملیاتی فیلتر ائدیر.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — شَبَکه ایچینده get pluginssites اوچون دَیَری دَییشدیرمه‌یه فیلتر.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — دومئنلر آراسی تَک-گیریش قابلیّتینی فعال/غیرفعال ائدیر.
+- [wu_sso_url](./Filters/wu_sso_url) — دومئنلر آراسی موشتری عملیاتی اوچون یارادیلان SSO URL-لری قاییتماقدان قاباق فیلتر ائدیر.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe آبونمان بیلگیلرینی فیلتر ائدیر. success_url یا cancel_url-ی اوستونه یازا بیلر.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — اؤده‌نیش نیتی آرگومانلارینی فیلتر ائدیر.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — یوخلاناجاق پلانین ID-سینی فیلتر ائدیر. بو وارسا، یئنی آبونمان بو پلانی ایشلده‌جک.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — یوخلاناجاق محصولون ID-سینی فیلتر ائدیر. بو وارسا، یئنی آبونمان بو محصولو ایشلده‌جک.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe چارج سئچنکلری ایله گؤندریله‌ن idempotency_key دَیَرینی فیلتر ائدیر.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — بو webhook ایله باغلی عضویت قئیدینی فیلتر ائدیر.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — بیلگی متاسینی وئریلنلر بازاسیندا ساخلاماق اوچون serialized اولماقدان قاباق فیلتر ائدیر.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — اوبیئکت بیلگیلرینی وئریلنلر بازاسیندا ساخلاماق‌دان قاباق فیلتر ائدیر.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — گلیشدیرنلره قیلیدی آچماق اوچون یوکسَلتمه URL-ینی دَییشدیرمه‌یه ایجازه وئریر
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — بیر mapping ایشله‌نیب-ایشله‌نیلمه‌یه‌جگینی بَلیرله‌ییر
+- [wu_username_from_email](./Filters/wu_username_from_email) — یئنی موشتری قوللانیجی آدینی فیلتر ائدیر.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — گلیشدیرنلره عضویت قوللانیجی‌لری محدودیتی حاققیندا پیغامی دَییشدیرمه‌یه ایجازه وئریر
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — گلیشدیرنلره دَییشیله‌بیلن لیسته‌یه اضافی فولدرلر آرتیرماغا ایجازه وئریر.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — بو موجودیت اوچون هانسی sub_commands-لارین فعال اولدوغونو فیلتر ائدیر.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ثابتلریمیزی هارایا یئرلَشدیره بیله‌جه‌ییمیزی تاپماق ایسته‌ینده اوچ الگو یوخلاییرق:

@@ -3,11 +3,11 @@ title: Nchegbu Membership na Nkwupụta Isite
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Fading Membership and Site Blocking
+# Fading Membership and Site Blocking {#membership-expiration-and-site-blocking}
 
 A guide this one explains how Ultimate Multisite handles when memberships end, trial periods finish, and how it blocks sites on the front end. We'll look at what happens to a membership from being active all the way to expired, the settings that decide if sites get blocked or not, and what you need to check if sites are still open even after a membership has ended.
 
-## Sikilauwa Status Membership
+## Sikilauwa Status Membership {#membership-status-lifecycle}
 
 Every membership in Ultimate Multisite will have one of these statuses:
 
@@ -24,7 +24,7 @@ Free memberships no-o-emebe ma-a-ah. Ultimate Multisite na-emebe mọọr ha na-
 | **Expired** | Oge expiration na-eme ma grace period ahụ na-eme ọzọ ma ọ bụ renewal |
 | **Cancelled** | Na-eme ka onye ahụ ma administrator na-eme ka onye ahụ |
 
-### Ọ dị mma na Membershipes na-eme Expired
+### Ọ dị mma na Membershipes na-eme Expired {#how-memberships-transition-to-expired}
 
 Ultimate Multisite na-eme check background **every hour** na-eme na-eme na-eme na-eme membershipes na-imebe ọ bụrụ na ọ ga-eme ka expired. Check a na-eme ihe na [Action Scheduler](https://actionscheduler.org/) (no-o WP-Cron ma ọ bụ direct). Na-eme check expiration na-eme **built-in grace period na-eme 3 days** by default. Membership ahụ na-eme ka `expired` ma ọ bụrụ na 3 days na-eme onye date_expiration ya na-eme. Oge a na-eme anọchịrị na-imebe ma ọ bụrụ na ịkwado ọkọ mkpa na-eme before status ha ma berubah.
 
@@ -32,7 +32,7 @@ Ultimate Multisite na-eme check background **every hour** na-eme na-eme na-eme n
 Mepụ 3-dịkal grace period (thời gian cho phép hết hạn) na-enweghị dị n'imepụ Grace Period Block Frontend setting a na-ata akụkọ a. Mepụ grace period na-enweghị ihe na-eme ka **status ya na-abanye** na-enweghị active/on-hold na-expired. Mepụ grace period frontend block na-enweghị ihe na-eme ka **site na-abanye** onwe ya n'imepụ status na-abanye.
 :::
 
-#### Membership Na-enye Auto-Renewing vs. Non-Auto-Renewing
+#### Membership Na-enye Auto-Renewing vs. Non-Auto-Renewing {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ihe a na-enweghị dị mkpa maka ịmekọta ike na-eme ka membership na-abanye:
 
@@ -40,7 +40,7 @@ Ihe a na-enweghị dị mkpa maka ịmekọta ike na-eme ka membership na-abanye
 
 - **Auto-renewing memberships** (`auto_renew = true`): Cron expiration check na-agbanyụ ihe ndị a na-enweghị na-eme ka ọ na-eme. Payment gateway (Stripe, PayPal, na ya) na-enweghị ihe na-eme ka ọ na-enye nchịkọta Ultimate Multisite via webhooks ma ọ bụrụ na subscription na-abanye ma ọ bụ na-agbanyụ. Ma ọ bụrụ na webhook ahụ na-enweghị, -- ọ na-eme membership ya na-active a dị ukwuu ma ọ bụrụ na ụbọchị hếtapụdị (expiration date) na-abanye.
 
-### Ọ dị ka ịgba Trial Na-agbanyụ
+### Ọ dị ka ịgba Trial Na-agbanyụ {#how-trials-end}
 
 Mgbe mepụ trial period membership na-abanye na-eme, system na-eme ihe ndị a:
 
@@ -50,11 +50,11 @@ Mgbe mepụ trial period membership na-abanye na-eme, system na-eme ihe ndị a:
 
 Ihe a na-eme na-ahụkọ dị na-ahụkọ ọha (hourly schedule) na-eme ka ihe ndị a, ma **na-enweghị ihe na-eme ka membership na-abanye auto-renewing**. Na-akụkọ trial na-abanye auto-renewing, payment gateway na-enye ihe na-eme ka ọ na-eme transition na-agbanyụ n'ime trial na subscription na-enye nkwado.
 
-## Agbanyụ Access Frontend
+## Agbanyụ Access Frontend {#block-frontend-access}
 
 By default, an when a membership expires or goes on hold, **only the wp-admin dashboard is restricted**. The site's public frontend remains accessible to visitors. To also block public access, you must enable the **Block Frontend Access** setting.
 
-### Configuring the Setting
+### Configuring the Setting {#configuring-the-setting}
 
 Go to **Ultimate Multisite > Settings > Memberships** and turn on **Block Frontend Access**.
 
@@ -72,7 +72,7 @@ There are three related settings that control this behavior:
 | **Frontend Block Grace Period** | Number of days to wait after the membership becomes inactive before blocking. Set this to `0` if you want to block immediately. | 0 |
 | **Frontend Block Page** | A page on your main site that visitors will be sent to when a site is blocked. If you don't set one, visitors will see a general message saying "Site not available" with a link to the login page for the site admin. | None |
 
-### What Visitors See When a Site Is Blocked
+### What Visitors See When a Site Is Blocked {#what-visitors-see-when-a-site-is-blocked}
 
 When frontend access is blocked, visitors to the site will either:
 
@@ -81,7 +81,7 @@ When frontend access is blocked, visitors to the site will either:
 
 Site admins can still log in -- the login page is never blocked.
 
-### What Gets Blocked and When
+### What Gets Blocked and When {#what-gets-blocked-and-when}
 
 The blocking behavior depends on the membership status:
 
@@ -102,21 +102,21 @@ Ndeewo, kahit na ki ngelebe ya trial period, membership weke status `trialing` h
 Membership weke cancelled bypass grace period. Cancelled memberships always blocked once expiration date pass, regardless of whether Block Frontend Access on. The Frontend Block Grace Period no apply to cancelled memberships.
 :::
 
-## Troubleshooting: Sites Remaining Accessible After Expiration
+## Troubleshooting: Sites Remaining Accessible After Expiration {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 If sites still accessible public after membership expire, work through these checks in order:
 
-### 1. Verify the Block Frontend Access Setting Is Enabled
+### 1. Verify the Block Frontend Access Setting Is Enabled {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Go to **Ultimate Multisite > Settings > Memberships** and confirm the **Block Frontend Access** toggle is on. This setting is **off by default**, meaning only wp-admin restricted when a membership become inactive.
 
-### 2. Check the Frontend Block Grace Period
+### 2. Check the Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Na trang cài đặt đó, kiểm tra giá trị **Frontend Block Grace Period**. Kalau cái này được đặt là 7 ngày chẳng hạn, frontend sẽ không bị chặn cho đến 7 ngày sau ngày hết hạn của membership -- ngay cả khi trạng thái membership đã là `expired` rồi.
 
 Đặt nó thành `0` nếu bạn muốn chặn ngay lập tức sau khi membership ngừng hoạt động.
 
-### 3. Xác nhận Trạng thái Membership Đã Thay đổi Thật Sự
+### 3. Xác nhận Trạng thái Membership Đã Thay đổi Thật Sự {#3-confirm-the-membership-status-has-actually-changed}
 
 Vào **Ultimate Multisite > Memberships** và kiểm tra trạng thái của membership bị ảnh hưởng. Nếu nó vẫn hiển thị `active` mặc dù ngày hết hạn đã qua, thì việc chuyển đổi trạng thái chưa xảy ra. Các nguyên nhân phổ biến:
 
@@ -124,7 +124,7 @@ Vào **Ultimate Multisite > Memberships** và kiểm tra trạng thái của mem
 
 - **Cron job chưa chạy**: Xem bước tiếp theo.
 
-### 4. Xác minh Action Scheduler Đang Chạy
+### 4. Xác minh Action Scheduler Đang Chạy {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite sử dụng Action Scheduler cho các cron job của nó. Vào **Tools > Scheduled Actions** trong admin mạng và tìm:
 
@@ -146,7 +146,7 @@ Para đảm bảo cron chạy ổn định, hãy thiết lập một công việ
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Kiểm tra sự cố Webhook của Gateway (Gia hạn thành viên tự động)
+### 5. Kiểm tra sự cố Webhook của Gateway (Gia hạn thành viên tự động) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Nếu gói thành viên đang tự động gia hạn và đăng ký gateway đã bị hủy hoặc thất bại, nhưng Ultimate Multisite vẫn hiển thị là `active` (hoạt động):
 
@@ -155,7 +155,7 @@ Nếu gói thành viên đang tự động gia hạn và đăng ký gateway đã
 
 Nếu gateway hiển thị đăng ký đã bị hủy nhưng Ultimate Multisite thì không, có thể thông báo webhook đã bị mất. Bạn có thể tự thay đổi trạng thái thành viên trong **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Kiểm tra Thời gian Chờ Hết hạn (Cấp độ Cron)
+### 6. Kiểm tra Thời gian Chờ Hết hạn (Cấp độ Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Kiểm tra cron có một khoảng thời gian chờ riêng (mặc định: 3 ngày) trước khi đánh dấu một gói thành viên là đã hết hạn. Điều này tách biệt với khoảng thời gian chờ chặn ở giao diện người dùng (frontend block grace period). Tổng thời gian trước khi trang web bị chặn có thể là:
 
@@ -163,7 +163,7 @@ Kiểm tra cron có một khoảng thời gian chờ riêng (mặc định: 3 ng
 
 Nyesal, na ma ọ bụ ihe dị n'ụta. Na ọkọ dị ọkwa a dị 7 ụbwat (grace period) na frontend, ị ga-anọ mdi 10 ụbwat ka oge `date_expiration` ji site ahụ aka anọrọ.
 
-### 7. Jiji Membership Manually Expire
+### 7. Jiji Membership Manually Expire {#7-manually-expire-a-membership}
 
 Ọ bụrụ na ị chọrọ ịgba site ahụ aka hemen n'aka ọkwa cron, ị ga-anọ mdi iji gbachị status membership ahụ:
 
@@ -174,7 +174,7 @@ Nyesal, na ma ọ bụ ihe dị n'ụta. Na ọkọ dị ọkwa a dị 7 ụbwat
 
 Frontend block ahụ ga-anọ mdi mgbe ị chọpụta akụkọ a (na ọ bụrụ na membership ahụ bụ "expired", ọ ga-anọ mdi grace period frontend, ma ọ bụ mgbe ọ bụrụ na ya bụ "cancelled", ọ ga-anọ mdi anọrọ).
 
-## Summary
+## Summary {#summary}
 
 Oge ọ bụla n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụlọ n'ụl
 

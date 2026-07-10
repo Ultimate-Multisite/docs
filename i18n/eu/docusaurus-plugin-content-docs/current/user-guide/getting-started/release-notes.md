@@ -3,9 +3,9 @@ title: Notizak
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Eskaintzak (Release Notes)
+# Eskaintzak (Release Notes) {#release-notes}
 
-## Bertsio 2.13.0 — Iragitzituta 2026-06-05-ean
+## Bertsio 2.13.0 — Iragitzituta 2026-06-05-ean {#version-2130--released-on-2026-06-05}
 
 - New: Kudeak (sovereign-tenant) suport has been added for customer account, checkout, billing, site, invoice, template switching, and domain mapping flows so that tenant networks can direct customers back to the main site for managed actions.
 - New: Has been added renewal-credential checks for recurring memberships so gateways can disable auto-renewal when a saved billing agreement, subscription, or vault token is missing.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Membership renewals, expiration display, and payment collection edge cases now avoid immediate expirations, crashes, or missed required payments.
 - Improved: WordPress compatibility is tested up to 7.0, production Vue assets are rebuilt from npm sources, and Cypress end-to-end coverage now exercises more checkout, setup, SSO, and gateway flows.
 
-## Bertsioa 2.12.0 — Iragitzit 2026-05-15an
+## Bertsioa 2.12.0 — Iragitzit 2026-05-15an {#version-2120--released-on-2026-05-15}
 
 - New: Hostinger (hPanel) iragitzit host provider bat domain mapping integrazioa eta.
 - New: Site Exporter-ek network import bundlesak eskaintzen du, eta horrek site berezpenaren network-le eragindura laguntzen du.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Site Exporter CLI-ek network site aukeraren default korrektoak errespetatzen ditu.
 - Improved: Plugin paketik wp-cli bat eskaintzen ez da, eta horrek plugin-aren diseinua warezinak azaltzen du.
 
-## Bertsioa 2.11.0 — Iragitzit 2026-05-11an
+## Bertsioa 2.11.0 — Iragitzit 2026-05-11an {#version-2110--released-on-2026-05-11}
 
 - New: Site export-ek `index.php` berezpen bat eskaintzen du, eta horrek ZIP-aren instalazioa host lehenago ez plugin bat erregitzen duen ere.
 - New: Network export-ek administrazioak Site Export admin lapuran bat arkidu guztia (subsites) archive batean iragitzituta ematen du.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - New: Checkout form editor-ek beharrezko leku bat ez dagoenean produktu bat gehitu beharko du adierazpena (warning).
 - New: Import/Export settings tab-ek bere eragiketa zehazten du eta Site Export tool-era direktu link bat ematen du.
 
-## Bertsioa 2.10.0 — Iragitzit 2026-05-05an
+## Bertsioa 2.10.0 — Iragitzit 2026-05-05an {#version-2100--released-on-2026-05-05}
 
 - New: PayPal setup wizard iriduta manual credentialak adosten, OAuth flag gatearekin eragiten daingoa konfiguratorekin ezberdina.
 - New: Customer panelaren template aldatzeko diseinazioa diren carda, grid persistente eta **Reset current template** botoi bereizkin dezake.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: SSO path filteratua gertu nahi du guztiz login flow-etan.
 - Fix: Saldatuenean blank site identity opsioak eragiten dira.
 
-## Version 2.9.0 — Iradokita 2026-04-30an
+## Version 2.9.0 — Iradokita 2026-04-30an {#version-290--released-on-2026-04-30}
 
 - New: **Tools > Export & Import**-aren ondorioz single-site export eta import hasi da.
 - Fix: Export ZIP fileak autentikatu download endpoint batzu behar dira.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: User settings key-etan Tour IDs iradokita zungarizkoak (underscores) dira.
 - Improved: ZipArchive-a Alchemy/Zippy-aren lehenago erabiltzen da, horrek mehatzo eta kompatibilitate hobetuta dagoela.
 
-## Version 2.8.0 — Iradokita 2026-04-29an
+## Version 2.8.0 — Iradokita 2026-04-29an {#version-280--released-on-2026-04-29}
 
 - New: Euskaldia (Jumper) bideratu dituen irudiak (toggle) erabilera "Other Options" (Gaindoku Opciones) hena dagoen.
 - New: Checkout forms list tablean status (estatus) kolumna hasi da.

@@ -1,130 +1,148 @@
 ---
-title: Vakasi vachigadzirwa
+title: MaAgent akavakirwa-mukati
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zvinhu
+# Agents Akavakirwa-mukati {#built-in-agents}
 
-Gratis AI Agent v1.9.0 inosha imbva agenti masimba, zvinoita zviri ne-preconfigured nemazuva anotsanana ekuti zvinhu zvinogona kuita, system prompt yakasimbisa, uye suggestions dzinowanikwa mune chat interface kuti zvibatsire kunge kuuzvikanzi mumwe munzvimbo. Kutanga nezvinhu izvi kunenge zviri kudzidziswa nekuita zvinhu zvakakosha.
+Gratis AI Agent v1.9.0 inouya neagents vashanu vakavakirwa-mukati, mumwe nemumwe akagadzirirwa kare neseti yakatariswa yezvishandiso, system prompt yakagadziridzwa, uye mazano ekutanga anoenderana nemabasa akajairika munzvimbo iyoyo. Kuchinja pakati peagents kunochinja zvinogona kuitwa nemubatsiri uye mapinduriro ainoita — pasina chero kugadzirisa kwaunofanira kuita. Superdav AI Agent v1.18.0 inogona kuwedzera zvishandiso zvinoziva schedule, marekodhi ezviyeuchidzo, magedhi emvumo, uye zviziviso zveSMS kuma workflows aya kana ma integrations ane chekuita nazvo agadziriswa.
 
-## Agent Heino Iyi?
+## Agent Chii? {#what-is-an-agent}
 
-Mwari wese weagenti anogona kuita zvinotevera:
+Agent yega yega iprofile yekugadzirisa ine zita inosanganisa:
 
-- **Tools** — zvinhu agenti inosimbisa (e.g., Content Writer anogona kuita post, Design Studio anogona kuita CSS uye theme.json).
-- **System prompt** — maongororo anotsanana kuti tone ya agenti, zvinhu zvinotariswa, uye zvinhu zviri kuitika (constraints).
-- **Suggestions** — prompts dzinowanikwa mune chat interface kuti zvibatsire kunge kuuzvikanzi.
+- **Zvishandiso** — kugona kunobvumidzwa kushevedzwa neagent (semuenzaniso, Content Writer ine mukana wekugona kugadzira zvinyorwa; Design Studio ine mukana wekugona CSS ne theme.json)
+- **System prompt** — mirayiridzo inoisa matauriro eagent, zvinokosheswa, uye miganhu
+- **Mazano** — maprompt akanyorwa kare anoratidzwa muinterface yekutaura kuti akubatsire kutanga nekukurumidza
 
-## Kuita Agent Picker
+## Kuwana Agent Picker {#accessing-the-agent-picker}
 
-1. Fungisa panel ya **Gratis AI Agent** mu WordPress admin sidebar.
-2. Chibvumira **agent icon** mumapfiri ekupedzisira (top-left) pane chat header (icon inotamba kuti inobata agent inosimbiswa).
-3. **Agent Picker** inogona kuonekwa se form-table overlay. Agentine dzese dzinowanikwa neicon, zvinoda, uye maongororo ekupedzisira.
-4. Chibvumira row ya agenti kuti iitike. Chat header inobata zvakare.
+1. Vhura pani ye **Gratis AI Agent** muWordPress admin sidebar.
+2. Dzvanya **icon yeagent** kumusoro-kuruboshwe kwechat header (icon inochinja kuratidza agent iri kushanda).
+3. **Agent Picker** inovhurika seoverlay yeform-table. Agent yega yega inonyorwa neicon yayo, zita, uye tsananguro yemutsara mumwe.
+4. Dzvanya mutsara weagent kuti uiite ishande. Chat header inogadziridzwa pakarepo.
 
-Unogona kutaura agents midzimu — system prompt ya agenti yenyu inosimbiswa kubva mumwe message.
+Unogonawo kuchinja agents uri pakati pehurukuro — system prompt yeagent itsva inotanga kushanda kubva pameseji inotevera.
 
-## Agents Masimba Pane Five
+## Agents Vashanu Vakavakirwa-mukati {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
-**Focus:** Kuita uye kuenda (editing) posts, pages, uye contact forms.
+**Chinotariswa:** Kugadzira nekugadzirisa zvinyorwa, mapeji, uye mafomu ekutaurirana.
 
-**Tools Inowanikwa:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Zvishandiso zviripo:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Kana ma integrations eSuperdav AI Agent v1.18.0 akagoneswa, mamiriro ekarenda akagadziriswa, magedhi emvumo, zviyeuchidzo, uye zvishandiso zvezviziviso zveSMS zvinogonawo kuwanikwa kuma workflows akatenderwa.
 
-**Chikoro chine zvinhu zvakanaka:**
-- Kuratidza uye kupuburisa blog posts kubva munzauro kana outline yakaita
-- Kuita batches ye landing pages dzinotsanana dzinogona kuita site chinobva chinobva
-- Kutaura contact forms ne enquiry forms
+**Zvainoita zvakanaka:**
+- Kunyora madhrafti nekuburitsa zvinyorwa zveblog kubva kubrief kana outline
+- Kugadzira mabatch emapeji ekumhara esite itsva
+- Kuvaka mafomu ekutaurirana nekubvunza
+- Kuisa mifananidzo yakasarudzwa pazvinyorwa kubva kuURL kana kutsvaga
+- Kunyora madhrafti emameseji ekutevera chiitiko kubva kumamiriro eGoogle Calendar akagadziriswa, wobva wamira kuti uwane mvumo usati watumira zviziviso
 
-**Zvinoreva kuti uanze sei:**
-- *Raita blog post ya 500 words pamusoro pe zvinhu zvakanaka zve WordPress multisite.*
-- *Tainira About, Services, uye Contact page uye panyira zvisiri.*
-- *Tainira booking enquiry form kuContact page.*
-
----
-
-### Site Builder
-
-**Chikoro:** Kuratidza nzira yechikoro chine site chinobva chinobva kubva munzauro imwe.
-
-**Zvinogona kutangwa:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Chikoro chine zvakanaka:**
-- Kuratidza plan yekubatanidza site yechikoro kubva munzauro yakaiitika (structure, content, navigation, design)
-- Kuita zvinhu zvose mune phase dzese nekuda kwekuti chinotora nechiuri — structure, content, navigation, design.
-- Kuti unoreva errors pakati peplani pane kuita zvinhu zvinogona kutanga (manual intervention).
-- Kuratidza plugins dzinogona kutangwa separti dze site yechikoro.
-- Kuita contact forms kubva mune chat interface (Superdav AI Agent v1.10.0+).
-
-**Zvinoreva kuti uanze sei:**
-- *Tainira photography portfolio site ne post type ya gallery, booking page, uye contact form.*
-- *Tainira restaurant website ne online menu, opening hours, uye table-booking enquiry form.*
-- *Tainira freelance consulting site ne service pages, portfolio section, uye blog.*
-- *Tainira contact form kuContact page nekubata Site Builder.*
+**Mazano ekutanga:**
+- *Nyora chinyorwa cheblog chine mashoko 500 pamusoro pemabhenefiti eWordPress multisite.*
+- *Gadzira peji reAbout, Services, neContact uye uzviburitse.*
+- *Wedzera fomu rekubvunza booking kupeji reContact.*
+- *Nyora draft yechiyeuchidzo chevapindi pachiitiko chekarenda yakagadziriswa chemangwana uye mirira mvumo usati wachitumira.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**Chikoro:** Kuratidza kuratidza (visual customisation) — colors, typography, CSS, uye block patterns.
+**Chinotariswa:** Kugadzira webhusaiti kubva pakutanga kusvika pakupedzisira uchishandisa prompt imwe chete.
 
-**Vakisa zvinogona:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Zvishandiso zviripo:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. NeSuperdav AI Agent v1.18.0, zvishandiso zvemasevhisi anotarisirwa zvakagadziriswa, mvumo, chiyeuchidzo, karenda, uye SMS zvinogona kuwanikwa apo vatariri vanozvigonesa.
 
-**Zvinogona zvakanaka:**
-- Kuratidza named theme presets (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Kutarisa zvinhu zvakakosha nezvinhu zvinotevera (typography) uye palettes dzezvinoita nekuita zvinhu zvakasiyana-nyaya kupfungwa dze theme.json
-- Kuratidza CSS yakakwana yechikoro chinogona kuita zvinhu zvakakosha nezvinhu zvinotevera (brand)
+**Zvainoita zvakanaka:**
+- Kugadzira plan yekuvaka site ine zvikamu zvakawanda yebhizinesi rakatsanangurwa
+- Kuita chikamu chimwe nechimwe zvoga — chimiro, zvirimo, navigation, dhizaini
+- Kupora kubva kumhosho uri pakati peplan pasina kuda kupindira nemaoko
+- Kuisa ma plugins akakurudzirwa sechikamu chekuvaka
+- Kugadzira mafomu ekutaurirana zvakananga kubva muinterface yekutaura (Superdav AI Agent v1.10.0+)
+- Kuronga zviyeuchidzo zvekutanga site kana kutevera vapindi pasina zviziviso zvakapetwa kana magedhi emvumo nemarekodhi ezviyeuchidzo agoneswa
 
-**Zvaunenge zvakafanana:**
-- *Rata preset ya warm-editorial uye ndichivaka primary colour dzo #2d6a4f.*
-- *Tora screenshot yepage refu uye ndikunengei kuti ndichigadzirisa.*
-- *Tora block pattern inoshandiswa zvichinguva nebackground image yenge pfungwa dzakachengetedza (centred heading).*
-
----
-
-### Plugin Manager
-
-**Chakajeka:** Kuratidza, kuita, uye kuramba (manage) WordPress plugins.
-
-**Vakagone:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Zvinogona zvakanaka:**
-- Kuratidza plugin inoshandiswa zvakakosha kune nzira yakafanana yakatidzidzwa (use case)
-- Kuita ability packs kubva mumapuro (registry)
-- Kutaura catalogue dzeability kupfungwa dzakasiyana
-
-**Zvaunenge zvakafanana:**
-- *Plugin inoshandiswa zvakanaka kune membership directory?*
-- *Ita WooCommerce abilities pack.*
-- *Tora ndichone ability packs dzese dzeecommerce.*
+**Mazano ekutanga:**
+- *Vaka site yeportfolio yemifananidzo ine gallery post type, peji rebooking, uye fomu rekutaurirana.*
+- *Gadzira webhusaiti yeresitorendi ine menu yepamhepo, maawa ekuvhura, uye fomu rekubvunza table-booking.*
+- *Gadzira site yefreelance consulting ine mapeji esevhisi, chikamu cheportfolio, uye blog.*
+- *Wedzera fomu rekutaurirana kupeji reContact uchishandisa site builder.*
+- *Mushure mekunge checklist yekutanga site yabvumidzwa, tumira chiyeuchidzo cheSMS kumunhu wekutaurirana ane chekuita akagadziriswa.*
 
 ---
 
-### Support Assistant
+### Design Studio {#design-studio}
 
-**Chakajeka:** Kuti zvisazvitsanana nezve content yepage, settings, uye WordPress configuration.
+**Chinotariswa:** Kugadzirisa zvinoonekwa — mavara, typography, CSS, uye mapatani emablock.
 
-**Vakagone:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Zvishandiso zviripo:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Chii chii chinokuti:**
-- Kuti zvinhu zvechinhu chesite sitiri nechinangwa.
-- Kuondedza kuti post types, taxonomies, uye menus zvinowanikwa munyoringo.
-- Kupenyera maonero "izvi zvinotora nani?" nekuti unoriamba zvinhu zvakagadzirwa (live values).
-- Kuti unengewe mhando inosimbisa (read-only diagnostic layer) panguva unoti utore chii.
+**Zvainoita zvakanaka:**
+- Kushandisa theme presets dzine mazita (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Kugadzirisa zvakadzama typography yepasi rese nemapaleti emavara kuburikidza ne theme.json
+- Kupinza CSS yakasarudzika yekuchinja zvinoenderana nebrand
+- Kutora screenshot yepeji uye kuiongorora kuti uone nyaya dzedhizaini
 
-**Mhinduro dzinotsa kukumbira:**
-- *Ndi? Plugins nechinangwa chinowanikwa munyoringo iwe?*
-- *Rondedza zvose post types zvinogadzirwa (custom) zviri kuitwa munyoringo.*
-- *Menus dzine kuitai dzinowanikwa uye dzinopfuura panguva dzinei?*
+**Mazano ekutanga:**
+- *Shandisa preset ye warm-editorial wobva waisa ruvara rwekutanga ku #2d6a4f.*
+- *Tora screenshot yepeji rekutanga uye undiudze zvaungavandudza.*
+- *Gadzira reusable hero block pattern ine mufananidzo webackground une full-width uye heading iri pakati.*
+
+### Plugin Manager {#plugin-manager}
+
+**Chinotariswa:** Kutsvaga, kuisa, uye kutarisira WordPress plugins.
+
+**Zvishandiso zviripo:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Zvainoita zvakanaka:**
+- Kukurudzira plugin yakanakisisa yekushandiswa kwakatsanangurwa
+- Kuisa ability packs kubva muregistry
+- Kubhurawuza catalogue yekugona iripo nechikamu
+
+**Mazano ekutanga:**
+- *Plugin yakanakisisa yedhairekitori remembership chii?*
+- *Isa WooCommerce abilities pack.*
+- *Ndiratidze ecommerce ability packs dzose dziripo.*
 
 ---
 
-## Kuti Unengewe Mhando Inosimbisa (Customising Agents)
+### Support Assistant {#support-assistant}
 
-Mhando dzese dziri munyoringo dziri kuitwa (built-in agents) dzinogone kuendurwa kana kuva nechinangwa chinotora kupfuura `gratis_ai_agent_agents` filter.
+**Chinotariswa:** Kupindura mibvunzo pamusoro pezvirimo zvesite, marongero, uye kugadziriswa kweWordPress.
 
-### Kuti Unengewe Prompt Inosimbisa (Adding a custom system prompt to an existing agent)
+**Zvishandiso zviripo:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Zvainonyatsoita:**
+- Kutsvaga marongero nesarudzo zviripo zvesaiti
+- Kutsanangura kuti mhando dzemaposti, taxonomies, uye menyu zvakagadziriswa sei pasaiti
+- Kupindura mibvunzo ye "marongero aya anoitei?" nekuverenga live values
+- Kushanda sedanho rekuongorora rekuverenga-chete usati waita shanduko
+
+**Mazano ekutanga:**
+- *Ndeapi maplugin nemarongero ari kushanda parizvino pasaiti ino?*
+- *Nyora mhando dzese dzecustom post types dzakanyoreswa pasaiti ino.*
+- *Ndeapi mamenu ekufambisa aripo uye akapihwa kupi?*
+
+---
+
+## Superdav Automation Integrations {#superdav-automation-integrations}
+
+Kana Superdav AI Agent v1.18.0 integrations dzagadziriswa, built-in agents anogona kutora chikamu mumaautomation workflows akachengeteka uye anotevera zvirongwa:
+
+- **Google Calendar maturusi ekuverenga** anobvumira agents kuongorora makarenda nezviitiko zvakagadziriswa vasati vanyora basa rekutevera.
+- **Kufananidza macontact nevapindi** kunobatsira kuenzanisa vatori vechikamu vechiitiko nevashandisi veWordPress kana macontact anozivikanwa.
+- **Magedhi emvumo yemunhu** anomisa zviito zvine njodzi kudzamara mushandisi ane mvumo azviongorora ozvisimbisa.
+- **Marekodhi ezviyeuchidzo** anodzivirira zviziviso zvakapetwa kana mabasa akarongwa akaedza zvakare kana kudzokorora.
+- **TextBee SMS notifications** anotumira mameseji akagadziriswa chete kana SMS credentials nemvumo dze workflow zvagoneswa.
+
+Workflow inokurudzirwa: kumbira agent kugadzirira meseji kana chiito, ongorora chikumbiro chemvumo, wobva wabvumira chiito chatenderwa kuti chienderere mberi. Pazviyeuchidzo zvinodzokororwa, chengeta deduplication yezviyeuchidzo yakagoneswa kuitira kuti chiitiko chimwe chete kana contact imwe chete isaziviswe kakawanda.
+
+---
+
+## Kugadzirisa Agents {#customising-agents}
+
+Built-in agent yega yega inogona kuwedzerwa kana kutsiviwa kuburikidza ne `gratis_ai_agent_agents` filter.
+
+### Kuwedzera custom system prompt kune agent iripo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -135,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kuti Unengewe Mhando Yedu (Registering a new agent)
+### Kunyoresa agent itsva {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Inosimbisa posts uye pages kuti dziri kuita zvakanaka munzvimbo dze search engines.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Unosimbisa SEO specialist. Ramba usina kuita zvakanaka munzvimbo dze keywords, meta descriptions, uye structured data.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Rondedza title ya homepage ne meta description.',
-            'Ongeza chii kuti title tags dzakare recent posts pane dziri mapfiri.'
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Mwana wa ajina uonekwa mupfungwa wa Agent Picker pamwe pamwe nepamwe filter inakwira.
+Agent itsva inoonekwa muAgent Picker pakarepo mushure mekunge filter yamhanya.
 
-### Kuondesha agent ya ndani
+### Kubvisa built-in agent {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

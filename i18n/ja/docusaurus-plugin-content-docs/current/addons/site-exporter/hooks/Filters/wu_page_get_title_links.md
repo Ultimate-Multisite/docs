@@ -4,25 +4,25 @@ title: フィルタ - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: c0ede349078aea8e4fe06e53a12b1c38
 ---
-# フィルタ: wu_page_get_title_links
+# フィルタ: wu_page_get_title_links {#filter-wupagegettitlelinks}
 
 プラグイン開発者と私たち自身が、編集ページにアクションリンクを追加できるようにします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
 | $action_links | `array\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | アクションリンクです。 |
 | $base_admin_page | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | このインスタンスです。 |
 
-### バージョン
+### バージョン {#since}
 
 - 1.8.2
 
-### ソース
+### ソース {#source}
 
 以下のファイルで定義されています: [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L646) 行 646
 
-## 戻り値
+## 戻り値 {#returns}
 
 アクションリンクの配列です。

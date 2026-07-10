@@ -3,15 +3,15 @@ title: 'Lehena-lekurua: Itzultzea'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lehen 7: It Zure Itzu
+# Lehen 7: It Zure Itzu {#lesson-7-making-it-yours}
 
 Daukoak ez duzu, ir guzti erabiltzen ari den "WordPress plugin bat" bezala sentitzen ez dute. Hau FitSite bezala sentitzea da -- industria-ren bitartean itxaritzeko platorma bat. Hau lehenarenan brandinga, white-labeling (proprietarietako forma) eta platormak produktu bat bezala sentitzea gertatzen ditu.
 
-## Nola Udal Dituz?
+## Nola Udal Dituz? {#where-we-left-off}
 
 FitSite-ek funtzionatzen duen checkout flow batek fitness studio pertsonalariak planak emateko irudiari gabe, lehen webgune bat ere ezarritzen dute. Hau guztia ikusi baten produktua, brandingditu eta batzuak sentitzea da.
 
-## Itzultzailearen Domain-a
+## Itzultzailearen Domain-a {#your-platform-domain}
 
 Anda brand-ren espilarenak domain-ek dira. FitSite-ko kasuetan:
 
@@ -19,7 +19,7 @@ Anda brand-ren espilarenak domain-ek dira. FitSite-ko kasuetan:
 - **Webguneak pertsonalarietako**: `studioname.fitsite.com` (subdomainak)
 - **Domainak osoa**: Growth eta Pro planek duten pertsonalariak domain bat jartzen dituzte
 
-### Domainaren Konfigurazioa
+### Domainaren Konfigurazioa {#setting-up-your-domain}
 
 1. Platorma domain-a ematen dizkio
 2. Hostigunean erabilizten dituzu
@@ -28,18 +28,18 @@ Anda brand-ren espilarenak domain-ek dira. FitSite-ko kasuetan:
 
 Mehatzeko erantzunak [How to Configure Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping)-ean da.
 
-## Admin Experience-aren White-Labeling (Proprietarietako Forma)
+## Admin Experience-aren White-Labeling (Proprietarietako Forma) {#white-labeling-the-admin-experience}
 
 Fitness studio pertsonalariak bere webgunean dashboard-era sartu ondoren, WordPress edo Ultimate Multisite brandinga ez, baina zure brand-a ikusi duzu.
 
-### Login Page Osoa
+### Login Page Osoa {#custom-login-page}
 WordPress login page-a osoa dezake:
 
 - Zure FitSite logoa
 - Fitness-ko apainagoak emateko irudiak (background imagery)
 - Zure brand-ren coloreak
 
-### Dashboard Branding
+### Dashboard Branding {#dashboard-branding}
 
 Erabendu [Admin Page Creator](/addons/admin-page-creator) addon edo CSS dezidiatua erabiltzen duzu:
 
@@ -47,7 +47,7 @@ Erabendu [Admin Page Creator](/addons/admin-page-creator) addon edo CSS dezidiat
 - Administrazioaren kolor eskurriari (color scheme) brand-ekin batzuk egiteko
 - Fitness-spazioak dira eta laburpena/auxilio resource-ek aurkitu widget bat gehien
 
-### Admin Pages Sobizatuak (Custom Admin Pages)
+### Admin Pages Sobizatuak (Custom Admin Pages) {#custom-admin-pages}
 
 Fitness studio nagusiak jasotzen duen jatorrizko akzioak eragiten admin pages ezartzeko iruki dezakezu:
 
@@ -57,11 +57,11 @@ Fitness studio nagusiak jasotzen duen jatorrizko akzioak eragiten admin pages ez
 
 Honek, standard WordPress menuku horretan ez daitezkeen akzioak amaiagoan ezdu eta fitness-spazio nagusiak eskatzen duen akzioak lehen datzuten du, eta berriz, batzuaren erabilera hobitzen du.
 
-## Komunikazioak Brandizatu (Branding Your Communications)
+## Komunikazioak Brandizatu (Branding Your Communications) {#branding-your-communications}
 
 Email, faktura eta notifikazio baten guztia brand-n zehatzuk hasterteko da.
 
-### System Emails (Email-ek Sistema)
+### System Emails (Email-ek Sistema) {#system-emails}
 
 **Ultimate Multisite > Settings > Emails** funtziokoan jarraitu eta email-ek sistema guztiak erabiliz:
 
@@ -78,7 +78,7 @@ Erabilera dauden email-ek hauek:
 | Payment receipt (Pagamentu informazioa) | "Pagamentua hartuta da" | "FitSite abonamendu pagamentua konformatu da" |
 | Trial ending (Trial-a amaitzen da) | "Trial-ek amaitzen da hasten" | "FitSite trial-ak 3 eguneko da -- studio website-ak bizia jarri" |
 
-### Invoices (Fakturak)
+### Invoices (Fakturak) {#invoices}
 
 Fakturaren template-ek erabiliz:
 
@@ -86,7 +86,7 @@ Fakturaren template-ek erabiliz:
 - Itz negozioaren datuak
 - Fitness-spediko produktu-naten (generiko plan ID-ek ez du)
 
-## Irudiari Kontseilako Saila (The Customer-Facing Site)
+## Irudiari Kontseilako Saila (The Customer-Facing Site) {#the-customer-facing-site}
 
 Itz main domain-ek (`fitsite.com`) irudiari marketing sailbidea behar du, zein da plataforma-n saldu egiten du. Hau Ultimate Multisite network admin-ekatik eskaintzen ez da -- hau negozioaren publiko bokoa da.
 
@@ -102,7 +102,7 @@ Garrantzitsuak zehalak:
 Irudiari marketing sailbideak network-aren belurra situailean sortu. Hau lehen dashboard-etik eskaintzen du eta sizariak propioa plataforma-ren aukerak erakusten du.
 :::
 
-## Irudiari Domaina Kontseilako
+## Irudiari Domaina Kontseilako {#custom-domain-for-customers}
 
 Domainak irudien planetan sartzen dutelako, prosesua argi dokumentatu:
 
@@ -112,7 +112,7 @@ Domainak irudien planetan sartzen dutelako, prosesua argi dokumentatu:
 
 Hau prosesua eratu zehal edo knowledge base entry sortu, tekniko ez-expert fitness studio-ekara esan duen bezala.
 
-## Irudiari FitSite Networka Zer da
+## Irudiari FitSite Networka Zer da {#the-fitsite-network-so-far}
 
 ---
 
@@ -131,7 +131,7 @@ FitSite Network
 │   └── Marketing site fitsite.com-an
 └── Onboarding flow-ra prestatu (next lesson)
 
-## Zerri Ekin Dugu Hau
+## Zerri Ekin Dugu Hau {#what-we-built-this-lesson}
 
 - **Platform domain eta DNS** brandatuta erpaldi bereiz
 - **Admin dashboard leialduna** FitSite branding-a bestelako

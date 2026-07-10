@@ -3,11 +3,11 @@ title: Alur Orientasi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Alur Onboarding Theme Builder
+# Alur Onboarding Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 ngajukeun **alur onboarding Theme Builder** anu dipandu, nu dibéré pikeun ngabantosan anjeun nyiptake tema blok kustom nalika persiapan awal. Ieu ngaganti mode Site Builder baheulna kalayan cara anu leuwih fleksibel jeung dibantu ku agen.
 
-## Naon éta Alur Onboarding Theme Builder?
+## Naon éta Alur Onboarding Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Alur onboarding Theme Builder téh wizard pangaturan interaktif anu:
 
@@ -18,9 +18,9 @@ Alur onboarding Theme Builder téh wizard pangaturan interaktif anu:
 
 Alur éta dipasihan tenaga ku **Setup Assistant agent**, anu nanya patarosan ngajelaskeun masalah jeung ngawangun tema anjeun sacara bertahap.
 
-## Ngamimitian Onboarding Theme Builder
+## Ngamimitian Onboarding Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Setup Nalika Kahiji Kali Dipaké (First-Run Setup)
+### Setup Nalika Kahiji Kali Dipaké (First-Run Setup) {#first-run-setup}
 
 Nalika anjeun mindah Superdav AI Agent ka instalasi WordPress anyar, anjeun bakal ningali:
 
@@ -35,7 +35,7 @@ Naon anu bade dilakukeun?
 
 Pilih **"Bangun tema kustom"** pikeun masukan alur onboarding Theme Builder.
 
-### Aktivasi Manual
+### Aktivasi Manual {#manual-activation}
 
 Anjeun ogé bisa ngamimitian onboarding Theme Builder kapan waé ku cara nyokot:
 
@@ -49,9 +49,9 @@ atawa
 "Help me create a custom theme"
 ```
 
-## Langkah-Langkah Onboarding
+## Langkah-Langkah Onboarding {#the-onboarding-steps}
 
-### Langkah 1: Pemilihan Mode (Mode Selection)
+### Langkah 1: Pemilihan Mode (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent bakal nanya ngeunaan pamilihan anjeun:
 
@@ -63,7 +63,7 @@ Kumaha cara anjeun bade ngawangun tema?
 
 **Mode Dipandu (Guided mode)** dipikahoyong pisan pikeun pamaké sabagéan; agent bakal méré rekomendasi desain dumasar kana industri jeung tujuan anjeun.
 
-### Langkah 2: Spasifikasik Situs (Site Specification)
+### Langkah 2: Spasifikasik Situs (Site Specification) {#step-2-site-specification}
 
 Anjeun bakal ditanya ngeunaan situs anjeun:
 
@@ -74,7 +74,7 @@ Anjeun bakal ditanya ngeunaan situs anjeun:
 
 Informasi ini tersimpan di memori **site_brief** Anda, yang akan dirujuk oleh agen di sesi mendatang.
 
-### Langkah 3: Keputusan Sistem Desain (Design System Decisions)
+### Langkah 3: Keputusan Sistem Desain (Design System Decisions) {#step-3-design-system-decisions}
 
 Agen akan memandu Anda dalam memilih *design token*:
 
@@ -83,7 +83,7 @@ Agen akan memandu Anda dalam memilih *design token*:
 - **Jarak (Spacing)**: Tata letak yang ringkas (*compact*), normal, atau lapang (*spacious*)
 - **Gerakan (Motion)**: Animasi dan transisi (jika diinginkan)
 
-### Langkah 4: Pembuatan Tema (Theme Generation)
+### Langkah 4: Pembuatan Tema (Theme Generation) {#step-4-theme-generation}
 
 Agen Asisten Pengaturan (*Setup Assistant agent*) akan membuat kerangka tema blok kustom Anda dengan menyertakan:
 
@@ -92,7 +92,7 @@ Agen Asisten Pengaturan (*Setup Assistant agent*) akan membuat kerangka tema blo
 - Gaya blok kustom yang sesuai dengan sistem desain Anda
 - Metadata tema dan deklarasi dukungan WordPress
 
-### Langkah 5: Aktivasi dan Verifikasi (Activation and Verification)
+### Langkah 5: Aktivasi dan Verifikasi (Activation and Verification) {#step-5-activation-and-verification}
 
 Tema akan otomatis aktif, dan Anda akan melihat:
 
@@ -107,7 +107,7 @@ Tema akan otomatis aktif, dan Anda akan melihat:
 
 Anda kemudian bisa mengunjungi situs Anda untuk memastikan tema tampil dengan benar.
 
-## Spesifikasi Situs dan Memori site_brief
+## Spesifikasi Situs dan Memori site_brief {#site-specification-and-sitebrief-memory}
 
 Selama proses orientasi (*onboarding*), agen akan menangkap spesifikasi situs Anda di kategori memori **site_brief**. Ini mencakup:
 
@@ -117,11 +117,11 @@ Selama proses orientasi (*onboarding*), agen akan menangkap spesifikasi situs An
 - Preferensi desain
 - Struktur konten
 
-### Mengapa site_brief Penting
+### Mengapa site_brief Penting {#why-sitebrief-matters}
 
 Di sesi mendatang, agen akan merujuk ke *site_brief* Anda untuk:
 
-### Meninjau Ringkasan Situs Anda\_brief
+### Meninjau Ringkasan Situs Anda\_brief {#viewing-your-sitebrief}
 
 Anjeun bisa nanya ka agen:
 
@@ -137,11 +137,11 @@ ataw
 
 Agen bakal nunjukkeun spesifikasi situs nu geus disimpan.
 
-## Ngubah Sajaba Perkenalan (Onboarding)
+## Ngubah Sajaba Perkenalan (Onboarding) {#customizing-after-onboarding}
 
 Sanggeus perkenalan Theme Builder réngsé, anjeun bisa:
 
-### Ngagunake Skill Estetika Sistem Desain (Design System Aesthetics Skill)
+### Ngagunake Skill Estetika Sistem Desain (Design System Aesthetics Skill) {#use-the-design-system-aesthetics-skill}
 
 Minta pangrapihan desain:
 
@@ -157,7 +157,7 @@ ataw
 
 **Skill Estetika Sistem Desain** bakal ngararankeun anjeun dina pangbaris desain nu dituju.
 
-### Ngedit theme.json Langsung
+### Ngedit theme.json Langsung {#edit-themejson-directly}
 
 Kanggo nu mahir, edit `/wp-content/themes/[theme-name]/theme.json` pikeun ngatur:
 
@@ -166,7 +166,7 @@ Kanggo nu mahir, edit `/wp-content/themes/[theme-name]/theme.json` pikeun ngatur
 - Spacing values
 - Definisi border je bayangan (shadow)
 
-### Ngadamel Template Blok Kustom
+### Ngadamel Template Blok Kustom {#create-custom-block-templates}
 
 Gunakan WordPress block editor pikeun damel template kustom keur:
 
@@ -175,7 +175,7 @@ Gunakan WordPress block editor pikeun damel template kustom keur:
 - Halaman produk
 - Formulir kontak
 
-## Perbandingan: Lama vs. Anyar Onboarding
+## Perbandingan: Lama vs. Anyar Onboarding {#comparison-old-vs-new-onboarding}
 
 | Fitur | Site Builder (Lama) | Theme Builder (Anyar) |
 |---------|----------------------|-------------------|
@@ -185,7 +185,7 @@ Gunakan WordPress block editor pikeun damel template kustom keur:
 | Fleksibilitas | Pilihan tetap | Bisa diatur (Customizable) |
 | Pembaruan Masa Depan | Teu dirujuk | Disimpan dina site_brief |
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Alur perkenalan teu réngsé**
 - Mulai deui alur: "Mulai perkenalan Theme Builder"
@@ -202,7 +202,7 @@ Gunakan WordPress block editor pikeun damel template kustom keur:
 - Minta agen pikeun "ngagenerate tema deui kalawan [perubahan spesifik]" (regenerate the theme with [specific changes])
 - Edit file theme.json langsung pikeun kontrol anu leuwih pas
 
-## Langkah Salajengna
+## Langkah Salajengna {#next-steps}
 
 Sanggeus ngalaksanake onboarding Theme Builder:
 

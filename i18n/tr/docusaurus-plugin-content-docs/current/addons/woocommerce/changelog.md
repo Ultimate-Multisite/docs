@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Entegrasyon Değişiklik Günlüğü
+title: WooCommerce Entegrasyonu Değişiklik Günlüğü
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Entegrasyonu Değişiklik Günlüğü
+# WooCommerce Entegrasyonu Değişiklik Günlüğü {#woocommerce-integration-changelog}
 
-Version 2.0.6 - Yayınlanma Tarihi: 2026-01-16
-* Geliştirme: Temel abonelikler eklentiye dahil edildi. Artık Woocommerce Subscriptions uzantısına gerek kalmadı.
+Sürüm 2.2.0 - 2026-07-01 tarihinde yayınlandı
+* Yeni: Ultimate Multisite vergi tutarları artık checkout sırasında ayrı WooCommerce ücret satırları olarak görünür; bu da ödeme öncesinde vergi toplamlarını daha net hale getirir.
+* Yeni: WooCommerce Subscriptions yeniden deneme penceresi sırasında başarısız yenileme askıya almasını isteyen siteler için isteğe bağlı "Başarısız Yenilemelerde Üyelikleri Hemen Askıya Al" ayarı ve `wu_woo_suspend_on_payment_failure` filter eklendi.
+* Düzeltme: Başarısız veya kurtarılan yenilemelerden sonra Ultimate Multisite üyelikleriyle senkronizasyon dışı kalabilen WooCommerce Subscription durumları uzlaştırıldı.
+* Düzeltme: Eksik olduğunda WooCommerce mağaza para birimi Ultimate Multisite para birimi listesine eklendi.
+* Düzeltme: Aboneler WooCommerce checkout’a yönlendirilirken müşteri fatura bilgileri korundu.
+* İyileştirildi: Jetpack Autoloader 5 ile uyumluluk eklendi.
+* İyileştirildi: GitHub ve marketplace zip dosyalarının iç içe hazırlık dizinlerinden ve geliştirme dosyalarından kaçınması için sürüm paketi oluşturma temizlendi.
 
-Version 2.0.5 - Yayınlanma Tarihi: 2026-01-09
-* Geliştirme: Çeviriler glotpress API'sinden yükleniyor.
-* Düzeltme: Bazı sayfa oluşturucularda kritik hata düzeltildi.
-* Düzeltme: Müşteri ana sitede üye olduğunda sonsuz yönlendirme sorunu giderildi.
+Sürüm 2.0.6 - 2026-01-16 tarihinde yayınlandı
+* İyileştirme: Çekirdek abonelikleri eklentiye dahil et. Artık Woocommerce Subscriptinos uzantısı gerektirmez.
 
-Version 2.0.4 - Yayınlanma Tarihi: 2025-11-14
-* Eklendi: Daha fazla dil için çeviriler.
-* Değiştirildi: Adı Ultimate Multisite: Woocommerce Integration olarak değiştirildi.
+Sürüm 2.0.5 - 2026-01-09 tarihinde yayınlandı
+* İyileştirme: Çevirileri glotpress API’den yükle.
+* Düzeltme: Bazı sayfa oluşturucularda fatal error.
+* düzeltme: Müşteri ana sitenin bir üyesi olduğunda sonsuz yönlendirme.
+
+Sürüm 2.0.4 - 2025-11-14 tarihinde yayınlandı
+* Eklendi: Çok daha fazla dil için çeviriler.
+* Değiştirildi: Ultimate Multisite: Woocommerce Integration olarak yeniden adlandırıldı.
 * Eklendi: Woocommerce 10.2.1 ile uyumluluk.
 * Eklendi: Woocommerce Subscriptions 7.7.0 ile uyumluluk.
-* Düzeltme: PHP 8.4 ile uyumluluk.
-* Düzeltme: WC hesabı sayfası mevcut değilken yönlendirme yapılması sorunu giderildi.
+* Düzeltme: PHP 8.4 ile uyumluluk
+* Düzeltme: WC Account sayfası olmadığında yönlendirme hatası.
 
-Version 2.0.3 - Yayınlanma Tarihi: 2025-08-13
-* Değiştirildi: Yeni pazar yeri ile otomatik güncellemeler etkinleştirildi.
+Sürüm 2.0.3 - 2025-08-13 tarihinde yayınlandı
+* Değiştirildi: Yeni marketplace ile otomatik güncellemeler etkinleştirildi.
 
-Version 2.0.2 - Yayınlanma Tarihi: 2025-07-05
-* Değiştirildi: Adı Multisite Ultimate: Woocommerce Integration olarak değiştirildi.
+Sürüm 2.0.2 - 2025-07-05 tarihinde yayınlandı
+* Değiştirildi: Multisite Ultimate: Woocommerce Integration olarak yeniden adlandırıldı.
 * Eklendi: Woocommerce 9.8.1 ile uyumluluk.
 * Eklendi: Woocommerce Subscriptions 7.3.0 ile uyumluluk.
-* Düzeltme: Müşteri tarafından abonelik iptal edilebilir.
-* Düzeltme: Ödeme (checkout) bloğu kullanılırken kritik hata düzeltildi.
-* Geliştirme: Artık Woocommerce'in yüksek performanslı özel sipariş tablolarıyla uyumlu.
-* Düzeltme: WooCommerce ödeme sayfasında iptal işlemi yapılmasına rağmen üyelik yükseltilebiliyor olması sorunu giderildi.
+* Düzeltme: Müşteri tarafından bir aboneliğin iptal edilmesi.
+* Düzeltme: Checkout block kullanılırken fatal error.
+* İyileştirme: Artık Woocommerce yüksek performanslı özel sipariş tablolarıyla uyumlu.
+* Düzeltme: WooCommerce checkout’ta iptal etmek yine de bir üyeliği yükseltebiliyordu.
 
-Version 2.0.1 - Yayınlanma Tarihi: 2023-08-09
+Sürüm 2.0.1 - 2023-08-09 tarihinde yayınlandı
 
 * Eklendi: Woocommerce 7.9.0 ile uyumluluk.
 * Eklendi: Woocommerce Subscriptions 5.3.0 ile uyumluluk.
 * Eklendi: Üyelik güncellemeleri desteği.
-* Eklendi: Woocommerce'de deneme ve kurulum ücretleri hakkında bildirimler.
-* Eklendi: Ultimate Multisite Woocommerce ürünlerinin meta değeri ile tanımlanması.
-* Eklendi: Tüm Ultimate Multisite ile ilgili Woocommerce ürünlerini işaretlemek için tek seferlik bir düzeltme eklendi.
-* Eklendi: Ultimate Multisite tarafından oluşturulan ürünler Woocommerce listesinden çıkarıldı.
-* Geliştirme: Sepete uygulanacak tek seferlik bir Woocommerce indirimi oluşturuldu.
-* Geliştirme: Tekrarlayan indirim Woocommerce ürününe geri yüklendi.
-* Geliştirme: Woocommerce ürününe tekrarlayan indirim etiketi eklendi.
-* Geliştirme: Ödeme sayfasında ürün tipi güvence altına alındı.
-* Düzeltme: Düşürme (downgrade) işlemi sırasında üyelik durumu korundu.
-* Düzeltme: İptal işlemi sırasında hataları önlemek için bir abonelik olup olmadığı kontrol edildi.
-* Düzeltme: Woocommerce aboneliklerinde kullanılmak üzere başlangıç abonelik tarihi eklendi.
-* Dahili: Yeni bir PHP 8.1 derleme süreci uygulandı.
+* Eklendi: Woocommerce içinde denemeler ve kurulum ücretleri hakkında bildirimler.
+* Eklendi: Ultimate Multisite Woocommerce ürünlerinin bir meta değeriyle tanımlanması.
+* Eklendi: Ultimate Multisite ile ilgili tüm Woocommerce ürünlerini işaretlemek için tek seferlik bir düzeltme eklendi.
+* Eklendi: Ultimate Multisite tarafından oluşturulan ürünler Woocommerce listesinden kaldırıldı.
+* İyileştirme: Sepete uygulamak için yinelenmeyen bir Woocommerce indirimi oluşturuldu.
+* İyileştirme: Yinelenen indirim Woocommerce ürününe geri yüklendi.
+* İyileştirme: Woocommerce ürününe yinelenen indirim etiketi eklendi.
+* İyileştirme: Checkout sırasında ürün türü sağlama alındı.
+* Düzeltme: Düşürme süreci sırasında üyelik durumu korundu.
+* Düzeltme: İptal süreci sırasında hataları önlemek için bir aboneliğin var olup olmadığı kontrol edildi.
+* Düzeltme: Woocommerce aboneliklerinde kullanmak için abonelik başlangıç tarihi eklendi.
+* Dahili: Yeni bir PHP 8.1 build süreci uygulandı.
 
-Version 2.0.0 - Tamamen yeniden yazıldı.
+Sürüm 2.0.0 - Tamamen yeniden yazıldı.
 
-* Eklendi: Ödeme ağ geçidini değiştirirken veya üyeliği iptal ederken woo aboneliğini kaldırma yöntemi;
-* Eklendi: Üyelikleri düşürme ve yükseltme işleyicisi;
-* Geliştirme: Hesap güncellemesine izin vermek için alt sitelerdeki müşteri güncelleme formunda woocommerce bağımlılıkları yükleniyor;
-* Geliştirme: Woocommerce sepeti mevcut değilse doğru yüklenmesi sağlanıyor;
-* Geliştirme: Ödeme işlemi yapılırken ana site tablolarında olduğumuzdan emin olunuyor;
-* Geliştirme: Ultimo yenileme siparişinin, son ödemeden değil, Woocommerce abonelik sipariş değerine göre yapılması sağlanıyor;
-* Düzeltme: WU Membership buton bağlantısına gidiliyor;
-* Düzeltme: Woocommerce abonelik yenilemesi ödeme almışsa Ultimo siparişi ödenmiş olarak ayarlanıyor;
-* Yapılandırma: MPB, oluşturucu olarak eklendi;
+* Eklendi: Gateway değiştirirken veya üyeliği iptal ederken woo aboneliğini kaldırmak için iptal yöntemi işleme;
+* Eklendi: Üyelikleri düşürmek ve yükseltmek için handler;
+* İyileştirme: Account güncellemesine izin vermek için alt sitelerdeki müşteri güncelleme formunda woocommerce bağımlılıklarını yükle;
+* İyileştirme: Yoksa Woocommerce sepetini doğru şekilde yükle;
+* İyileştirme: Checkout işlenirken ana site tablolarında olduğumuzdan emin ol;
+* İyileştirme: Ultimo yenileme siparişini son ödemeden değil, Woocommerce abonelik siparişi değerine dayandır;
+* Düzeltme: WU Membership düğmesi bağlantısı;
+* Düzeltme: Woocommerce subscriptions yenilemesi ödendiğinde Ultimo siparişini ödenmiş olarak ayarla;
+* Build: MPB’yi builder olarak ekle;
 
-Version 2.0.0-beta-5 - Yayınlanma Tarihi: 2022-01-21
+Sürüm 2.0.0-beta-5 - 2022-01-21 tarihinde yayınlandı
 
-* Dahili: Hooks ve filtre oluşturucu eklendi;
-* Dahili: Geliştirici yaşam kalitesi için Ultimate Multisite stub'ları eklendi;
-* Düzeltildi: Gereksiz yere birden fazla ürün oluşturulması engellendi;
+* Dahili: Hooks ve filters oluşturucu eklendi;
+* Dahili: Geliştirici yaşam kalitesi için Ultimate Multisite stubs eklendi;
+* Düzeltildi: Gerekli olmadığında birden fazla ürün oluşturulması engellendi;
 
-Version 2.0.0-beta.4 - 2021-09-23
+Sürüm 2.0.0-beta.4 - 2021-09-23
 
-* Düzeltme: WooCommerce'in sadece ana sitede değil, ağ genelinde aktif olmasını gerektirme;
-* Geliştirme: Eklentinin mu-plugin olarak kullanılmasına izin veren filtre eklendi;
+* Düzeltme: WooCommerce’in yalnızca ana sitede değil, network üzerinde etkin olmasının gerekmesi;
+* İyileştirme: Eklentinin mu-plugin olarak kullanılmasına izin vermek için filter eklendi;
 
-Version 2.0.0-beta.3 - 2021-05-28
+Sürüm 2.0.0-beta.3 - 2021-05-28
 
 * Düzeltme: Dashboard erişim kontrolü çok agresifti;
-* Geliştirme: Ultimate Multisite üst menüsüne WooCommerce yardım bağlantıları eklendi;
+* İyileştirme: Ultimate Multisite üst menüsüne WooCommerce yardım bağlantıları eklendi;
 
-Version 2.0.0-beta.2 - 2021-05-04
+Sürüm 2.0.0-beta.2 - 2021-05-04
 
-* Geliştirme: WCS yenileme siparişi oluşturulurken Ultimo'da bekleyen ödemeler oluşturuluyor;
-* Geliştirme: Faturalandırma alanları Ultimate Multisite müşteri verileriyle önceden dolduruluyor;
-* Geliştirme: Ağ geçitleri için faturalandırma alanları geri eklendi;
+* İyileştirme: WCS yenileme siparişi oluşturulurken Ultimo üzerinde bekleyen ödemeler oluşturur;
+* İyileştirme: Fatura alanlarını Ultimate Multisite müşteri verileriyle önceden doldurur;
+* İyileştirme: Gateway’ler için fatura alanlarını geri ekler;
 
-Version 2.0.0-beta.1 - 2021-05-04
+Sürüm 2.0.0-beta.1 - 2021-05-04
 
-* İlk beta sürümü
+* İlk beta sürüm
 
 -- Eski Sürümler --
 
-Version 1.2.6 - 26/03/2020
+Sürüm 1.2.6 - 26/03/2020
 
-* Düzeltildi: Daha yeni Woocommerce Subscriptions sürümleriyle küçük uyumsuzluk.
+* Düzeltildi: WooCommerce Subscriptions’ın daha yeni sürümleriyle küçük uyumsuzluk;
 
-Version 1.2.5 - 26/08/2019
+Sürüm 1.2.5 - 26/08/2019
 
 * Düzeltildi: Önceki sürümdeki hata;
 
-Version 1.2.4 - 22/08/2019
+Sürüm 1.2.4 - 22/08/2019
 
-* Geliştirildi: Entegrasyondan hemen sonra WooCommerce ödeme ekranına yönlendirme seçeneği eklendi;
+* İyileştirildi: Entegrasyondan hemen sonra WooCommerce checkout ekranına yönlendirme seçeneği eklendi;
 
-Version 1.2.3 - 26/05/2019
+Sürüm 1.2.3 - 26/05/2019
 
 * Düzeltildi: WooCommerce için ödeme e-postası bazı uç durumlarda kayboluyordu;
 
-Version 1.2.2 - 27/02/2019
+Sürüm 1.2.2 - 27/02/2019
 
 * Eklendi: WooCommerce Subscription entegrasyonunda kurulum ücretleri desteği;
 
-Version 1.2.1 - 17/11/2018
+Sürüm 1.2.1 - 17/11/2018
 
 * Düzeltildi: Ultimate Multisite sürüm 1.9.0 ile uyumluluk sorunları;
 
-Version 1.2.0 - 10/09/2018
+Sürüm 1.2.0 - 10/09/2018
 
-* Geliştirildi: Eklentiler için yeni güncellemeler URL'si;
+* İyileştirildi: Eklentiler için yeni güncelleme URL’si;
 * Eklendi: WooCommerce Subscription için beta desteği;
 
-Version 1.1.2 - 11/02/2018
+Sürüm 1.1.2 - 11/02/2018
 
-* Düzeltildi: Ödeme (Pay) bağlantısı, WooCommerce uç noktalarındaki değişikliklere yanıt vermek için dinamik olarak oluşturuluyor;
-* Geliştirildi: Ödeme_tamamlandı çağrıldığında, yenileme hook'larımızın çalışmasını sağlamak için siparişlerimizin tamamlandı durumunu zorluyoruz;
+* Düzeltildi: WooCommerce endpoint’lerindeki değişikliklere yanıt vermek için dinamik olarak oluşturulan Ödeme bağlantısı;
+* İyileştirildi: Yenileme hooks’larımızın gerektiğinde çalıştığından emin olmak için payment_completed çağrıldığında siparişlerimiz için artık tamamlandı durumunu zorunlu kılıyoruz;
 
 Version 1.1.1 - 24/01/2018
 
-* Düzeltildi: Artık WooCommerce'in sadece ana sitede etkinleştirilip etkinleştirilmediğini de kontrol ediyor;
-* Düzeltildi: Sipariş oluşturmasına vergileri dahil etmeye izin vermek için aşırı yüklemeler eklendi;
+* Düzeltildi: Artık WooCommerce’in yalnızca ana sitede etkinleştirilip etkinleştirilmediğini de kontrol ediyor;
+* Düzeltildi: Sipariş oluşturmanın vergileri dahil etmesine izin vermek için aşırı yüklemeler eklendi;
 
 Version 1.1.0 - 04/11/2017
 
-* Düzeltildi: Entegrasyon butonunun etiketi, ayarlara göre gerçekten değişiyor. Ultimate Multisite 1.5.0 gerektirir;
-* Düzeltildi: WooCommerce, ağ genelinde aktif olmasa ve yalnızca ana sitede etkinleştirilmiş olsa bile WooCommerce Entegrasyonu çalışıyor;
+* Düzeltildi: Entegrasyon düğmesinin etiketi artık ayarları yansıtacak şekilde gerçekten değişiyor. Ultimate Multisite 1.5.0 gerektirir;
+* Düzeltildi: WooCommerce Integration artık WooCommerce ağ genelinde etkin olmasa ve yalnızca ana sitede etkinleştirilmiş olsa bile çalışıyor;
 
-1.0.0 - İlk Yayın
+1.0.0 - İlk Sürüm

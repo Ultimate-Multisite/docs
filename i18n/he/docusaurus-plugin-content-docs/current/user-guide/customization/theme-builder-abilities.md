@@ -3,18 +3,18 @@ title: יכולות בונה תבניות
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# יכולות בניית תבניות: הקמה והפעלת תבניות בלוקים
+# יכולות בניית תבניות: הקמה והפעלת תבניות בלוקים {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 מציג שתי יכולות עוצמתיות המאפשרות לך ליצור ולפרוס תבניות בלוקים מותאמות אישית ישירות מממשק הצ'אט.
 
-## סקירה כללית
+## סקירה כללית {#overview}
 
 היכולות **scaffold-block-theme** ו-**activate-theme** מאפשרות לסוכנים (Agents) לבצע את הפעולות הבאות:
 - ליצור תבניות בלוקים שלמות, מוכנות לייצור, בהתבסס על המפרט שלך.
 - להפעיל תבניות באתר שלך באופן אוטומטי, ללא התערבות ידנית.
 - ליצור זהויות ויזואליות קוהרנטיות באמצעות החלטות עיצוב מודרכות.
 
-## הקמת תבנית בלוקים (Scaffold Block Theme)
+## הקמת תבנית בלוקים (Scaffold Block Theme) {#scaffold-block-theme}
 
 היכולת **scaffold-block-theme** יוצרת תבנית בלוקים חדשה של WordPress עם מבנה תבנית מלא, כולל:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 מציג שתי יכולות עוצמתיות המאפ
 - סגנונות ווריאציות של בלוקים מותאמים אישית.
 - מטא-דאטה ותקריזות תמיכה של התבנית.
 
-### איך להפעיל
+### איך להפעיל {#how-to-invoke}
 
 בצ'אט שלך עם Superdav AI Agent, אתה יכול לבקש יצירת תבנית:
 
@@ -38,7 +38,7 @@ sans-serif typography, and a professional layout"
 3. ייצור את כל קבצי התבנית הנדרשים.
 4. יכין את התבנית להפעלה.
 
-### הפלט הצפוי
+### הפלט הצפוי {#expected-output}
 
 כאשר היכולת מבוצעת בהצלחה, תראה:
 
@@ -56,11 +56,11 @@ sans-serif typography, and a professional layout"
   Status: Ready to activate
 ```
 
-## הפעלת תבנית (Activate Theme)
+## הפעלת תבנית (Activate Theme) {#activate-theme}
 
 היכולת **activate-theme** מחליפה את האתר שלך לתבנית בלוקים שהוקמה לאחרונה או תבנית קיימת.
 
-### איך להפעיל
+### איך להפעיל {#how-to-invoke-1}
 
 לאחר הקמת תבנית, אתה יכול להפעיל אותה מיד:
 
@@ -74,7 +74,7 @@ sans-serif typography, and a professional layout"
 "Switch to the Twentytwentyfour theme"
 ```
 
-### הפלט הצפוי
+### הפלט הצפוי {#expected-output-1}
 
 כאשר ההפעלה מצליחה:
 
@@ -92,7 +92,7 @@ sans-serif typography, and a professional layout"
   Note: Check your homepage to verify the layout
 ```
 
-## תהליך עבודה: הקמה והפעלה
+## תהליך עבודה: הקמה והפעלה {#workflow-scaffold-and-activate}
 
 תהליך עבודה טיפוסי משלב את שתי היכולות:
 
@@ -102,7 +102,7 @@ sans-serif typography, and a professional layout"
 4. **הפעלה**: "Activate the theme now"
 5. **אימות**: מבקר באתר כדי לוודא שהעיצוב החדש פעיל.
 
-## אסימוני עיצוב והתאמה אישית
+## אסימוני עיצוב והתאמה אישית {#design-tokens-and-customization}
 
 תבניות שהוקמו משתמשות באסימוני עיצוב של WordPress (דרך `theme.json`) עבור:
 
@@ -114,14 +114,14 @@ sans-serif typography, and a professional layout"
 
 אסימונים אלה מרוכזים בקובץ `theme.json`, מה שהופך קל להתאים את מערכת העיצוב כולה מקובץ אחד.
 
-## מגבלות והערות
+## מגבלות והערות {#limitations-and-notes}
 
 - תבניות מוקמות בנתיב `/wp-content/themes/` וחייבות לעקוב אחר קונבנציות השמות של WordPress.
 - הפעלה דורשת הרשאות מתאימות באתר WordPress שלך.
 - קוד PHP מותאם אישית בתבניות הוא מינימלי; השתמש בפלאגינים (plugins) לפונקציונליות מורכבת.
 - תבניות בלוקים עובדות בצורה הטובה ביותר עם WordPress 5.9 ומעלה.
 
-## פתרון תקלות
+## פתרון תקלות {#troubleshooting}
 
 **התבנית לא מופיעה לאחר ההקמה**
 - ודא שספריית התבניות קיימת ויש לה הרשאות תקינות.
@@ -138,7 +138,7 @@ sans-serif typography, and a professional layout"
 - נקה כל פלאגין קאשינג (caching).
 - בדוק שהגרסה של WordPress שלך תומכת באסימונים שאתה משתמש בהם.
 
-## צעדים הבאים
+## צעדים הבאים {#next-steps}
 
 לאחר הפעלת התבנית, תוכל:
 - להשתמש ביכולת **Design System Aesthetics** כדי ללטש טיפוגרפיה, צבעים ומרווחים.

@@ -4,11 +4,11 @@ title: Фильтр - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Фильтр: wu_rest_get_item
+# Фильтр: wu_rest_get_item {#filter-wurestgetitem}
 
 Фильтрует, разрешено ли продолжать запрос или нет.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 | $rest_base | `array` | Слаг сущности. |
 | $this | `\Base_Manager` | Экземпляр объекта. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) на строке 388

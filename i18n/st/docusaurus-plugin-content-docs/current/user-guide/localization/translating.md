@@ -3,11 +3,11 @@ title: Ho fana ka Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite
+# Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite o fetse ka ho fana ka English, empa plugin e le fetang ka ho fetola haholo, le re re tšoa ka ho ba le bone tsa fetola.
 
-## Fetolao ea Plugin E Hlaloso
+## Fetolao ea Plugin E Hlaloso {#core-plugin-translations}
 
 Plugin e hlaloso ea Ultimate Multisite e fetola ka morao oa **WordPress.org translation platform**:
 
@@ -26,7 +26,7 @@ Ha u batla ho ba le bone tsa fetolao ea hau (o na le bohlokoa ba fetola), re re 
 
 Ha u batla ho fetola tšobo ka lona le lona, ha ho batla ho fana ka mofuta o tla fana ka lona, ho na le dikgomo tse pedi:
 
-### Ho sebelisa Poedit
+### Ho sebelisa Poedit {#addon-translations}
 
 U ka sebelisa application ea desktop **[Poedit](https://poedit.net)** ho fetola faili ea `.pot`:
 
@@ -37,6 +37,6 @@ U ka sebelisa application ea desktop **[Poedit](https://poedit.net)** ho fetola 
 
 5. Setseba faili tse fetileng ka folder ea `lang`
 
-### Ho sebelisa Loco Translate
+### Ho sebelisa Loco Translate {#local-translations}
 
 Plugin ea WordPress e ntse e teng **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** e re ka ho fetola ka lona ka sehlopha sa admin haholo, ha u batla dikotla tsa desktop. E re ka ho fana le ho fetola le ho hlalosa (compile) faili ea translation ka lona.

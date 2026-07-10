@@ -4,11 +4,11 @@ title: Фильтр - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Фильтр: wu_country_get_administrative_division_name
+# Фильтр: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Возвращает красивое название административных подразделений страны.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,14 +18,14 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | если преобразовать слова в заглавные буквы. |
 | $current_country | `\WP_Ultimo\Country\Country` | Экземпляр текущего класса. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.11
 
-### Источник
+### Источник {#source}
 
 Defined in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) at line 250
 
-## Возвращает
+## Возвращает {#returns}
 
 Измененное название подразделения.

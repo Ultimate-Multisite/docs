@@ -1,60 +1,54 @@
 ---
-title: Webhooklər
+title: Vebhuklar
 sidebar_position: 15
-_i18n_hash: 2246e3cc1ed172d701d898e04088bf29
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhook-lara İlk Baxış (v2)
+# Webhooks (v2) haqqında ilk baxış {#a-first-look-on-webhooks-v2}
 
-_**DİQQƏT: Bu funksiya və ya məqalə yalnız təcrübəli istifadəçilər üçün nəzərdə tutulub.**_
+_**DİQQƏT: Nəzərə alın ki, bu xüsusiyyət və ya məqalə qabaqcıl istifadəçilər üçündür.**_
 
-**Webhook** nədir? Webhook, Ultimate Multisite kimi bir tətbiqin və ya proqramın digər tətbiqlərə real vaxt məlumatı ötürmə yoludur. Bir webhook, data və ya yükləmələri (payloads) hadisə baş verən kimi digər tətbiqlərə çatdırır, yəni siz **məlumatı dərhal alırsınız.**
+**webhook** Ultimate Multisite kimi bir tətbiqin və ya proqram təminatının digər tətbiqlərə real vaxt məlumatı təqdim etmə üsuludur. Webhook məlumatları və ya payload-ları baş verdiyi anda digər tətbiqlərə çatdırır, yəni **məlumatı dərhal əldə edirsiniz.**
 
-Bu, əgər Ultimate Multisite-dən çıxan müəyyən məlumatı başqa bir CRM və ya sistemə ötürməyiniz lazım gəldikdə çox faydalıdır. Məsələn, yeni bir istifadəçi hesabı yaradıldıqda, istifadəçinin adını və e-poçtun ünvanını bir mailing list-ə göndərməyiniz lazım ola bilər.
+Bu, hər dəfə bir hadisə işə düşəndə Ultimate Multisite-dan başqa bir CRM-ə və ya sistemə müəyyən məlumatları inteqrasiya etmək və ya ötürmək lazım olduqda faydalıdır. Məsələn, hər dəfə yeni istifadəçi Account-u yaradıldıqda istifadəçinin adını və email ünvanını mailing list-ə göndərməlisiniz.
 
-## Webhook necə yaradılır
+## Webhook necə yaradılır {#how-to-create-a-webhook}
 
-Bir webhook yaratmaq üçün network admin dashboard-unuza daxil olun. **Ultimate Multisite > Webhooks > Add New Webhook** düyməsinə klikləyin.
+Webhook yaratmaq üçün network admin dashboard-a keçin. **Ultimate Multisite > Webhooks > Add New Webhook** üzərinə klikləyin.
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Add New Webhook düyməsi olan boş Webhooks siyahı səhifəsi](/img/admin/webhooks-list-empty.png)
 
 Sonra webhook konfiqurasiyasını redaktə edə bilərsiniz:
 
-![Webhook edit interface](/img/admin/webhook-edit.png)
+![Name, Event və URL sahələri olan Add New Webhook forması](/img/admin/webhook-add-modal.png)
 
-Yeni bir webhook yaradarkən sizdən **Name, URL** və **Event** kimi məlumatlar tələb ediləcək. Webhook üçün istədiyiniz hər hansı bir adı istifadə edə bilərsiniz. Ən vacib sahələr URL və Event-dir.
+Yeni webhook yaradarkən sizdən **Name, URL,** və **Event** kimi məlumatlar istəniləcək. Webhook-unuz üçün istədiyiniz addan istifadə edə bilərsiniz. Ən vacib sahələr URL və Event-dir.
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![URL sahəsini və payload önbaxışını göstərən webhook redaktə interfeysi](/img/admin/webhook-url-field.png)
 
-URL, Ultimate Multisite-nin **payload və ya məlumatı** göndərəcəyi **endpoint və ya ünvan**dır. Bu, məlumatı alacaq tətbiqdir.
+URL Ultimate Multisite-ın **payload və ya məlumatı** göndərəcəyi **endpoint və ya təyinat yeridir**. Bu, məlumatı qəbul edəcək tətbiqdir.
 
-Zapier, istifadəçilərin üçüncü tərəf tətbiqləri ilə inteqrasiyanı asanlaşdırmaq üçün ən çox istifadə etdiyi həlldir. Zapier kimi bir platforma olmadan, məlumatı tutub emal edəcək xüsusi bir funksiya yaratmalısınız. **Ultimate Multisite webhook-unu Zapier ilə necə istifadə etmək** haqqında bu məqaləyə baxın.
+Zapier istifadəçinin 3-cü tərəf tətbiqi ilə inteqrasiyanı asanlaşdırmaq üçün istifadə etdiyi ən yayğın həlldir. Zapier kimi platforma olmadan, məlumatı tutacaq və emal edəcək xüsusi funksiyanı əl ilə yaratmalı olacaqsınız. **Ultimate Multisite webhook-unun Zapier ilə necə istifadə olunması** haqqında bu məqaləyə baxın.
 
-Bu məqalədə, webhook-un necə işlədiyinin əsas konsepsiyasına və Ultimate Multisite-də mövcud olan hadisələrə (events) nəzər salacağıq. Biz [requestbin.com](https://requestbin.com/) adlı üçüncü tərəf saytından istifadə edəcəyik. Bu sayt bizə heç bir kod yazmadan bir endpoint yaratmağa və payload-u tutmağa imkan verəcək. _**İmtina: Bu sayt yalnız məlumatın alındığını göstərəcək.**_ Payload üzərində heç bir emal və ya hər hansı bir əməliyyat edilməyəcək.
+Bu məqalədə webhook-un necə işlədiyinin əsas konsepsiyasına və Ultimate Multisite-da mövcud olan hadisələrə baxacağıq. [requestbin.com](https://requestbin.com/) adlı 3-cü tərəf saytından istifadə edəcəyik. Bu sayt bizə heç bir kod yazmadan endpoint yaratmağa və payload-u tutmağa imkan verəcək. _**İmtina: onun edəcəyi tək şey məlumatın qəbul edildiyini bizə göstərməkdir.**_ Payload üzərində heç bir emal və ya hər hansı növ əməliyyat aparılmayacaq.
 
-[requestbin.com](https://requestbin.com/) saytına gedin və Create Request Bin düyməsinə klikləyin.
+[requestbin.com](https://requestbin.com/) saytına keçin və Create Request Bin düyməsinə klikləyin.
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+Həmin düyməyə kliklədikdən sonra, artıq Account-unuz varsa daxil olmağınızı və ya qeydiyyatdan keçməyinizi istəyəcək. Əgər artıq Account-unuz varsa, sizi birbaşa onların dashboard-una aparacaq. Onların dashboard-unda Ultimate Multisite webhook-unuzu yaratmaq üçün istifadə edə biləcəyiniz endpoint-i və ya URL-i dərhal görəcəksiniz.
 
-Bu düyməyə kliklədikdən sonra, əgər artıq hesabınız varsa, daxil olmağınız, yoxsa qeydiyyatdan keçməyiniz tələb olunacaq. Əgər hesabınız varsa, birbaşa onların dashboard-una yönləndiriləcəksiniz. Dashboard-larında, Ultimate Multisite webhook-unuzu yaratmaq üçün istifadə edə biləcəyiniz endpoint və ya URL-i dərhal görəcəksiniz.
+Davam edin və URL-i kopyalayın, sonra Ultimate Multisite-a qayıdın. Endpoint-i URL sahəsinə yerləşdirin və açılan siyahıdan bir hadisə seçin. Bu nümunədə **Payment Received** seçəcəyik.
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+Bu hadisə istifadəçi ödəniş etdikdə işə düşür. Mövcud bütün hadisələr, onların təsviri və payload-ları səhifənin aşağı hissəsində verilmişdir. Webhook-u saxlamaq üçün **Add New Webhook** düyməsinə klikləyin.
 
-URL-i kopyalayıb Ultimate Multisite-ə qayıdın. Endpoint-i URL sahəsinə yerləşdirin və açılan menyudan bir event seçin. Bu nümunədə, **Payment Received** (Ödəniş Alınıb) seçəcəyik.
+![Payment Received seçilmiş webhook hadisə açılan siyahısı](/img/admin/webhook-event-picker.png)
 
-Bu event, istifadəçi ödəniş etdikdə tetiklənilir. Mövcud olan bütün eventlər, onların təsvirləri və payload-ları səhifənin altında siyahı halında verilmişdir. Webhook-u yadda saxlamaq üçün **Add New Webhook** düyməsinə klikləyin.
+İndi yaratdığımız webhook-un işləyib-işləmədiyini görmək üçün endpoint-ə test hadisəsi göndərə bilərik. Bunu yaratdığımız webhook-un altında **Send Test Event** üzərinə klikləməklə edə bilərik.
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![Bir konfiqurasiya edilmiş webhook və Send Test əməliyyatını göstərən Webhooks siyahısı](/img/admin/webhooks-list-populated.png)
 
-İndi isə, yaratdığımız webhook-un işləyib-işləmədiyini görmək üçün endpoint-ə test event göndərə bilərik. Bunu, yaratdığımız webhook-un altında yerləşən **Send Test Event** düyməsinə klikləyərək edə bilərik.
+Bu, testin uğurlu olduğunu bildirən təsdiq pəncərəsini göstərir.
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![Test payload-u göndərildikdən sonra webhook test hadisəsi nəticəsi](/img/admin/webhook-test-result.png)
 
-Bu, testin uğurlu olduğunu göstərən bir təsdiqləmə pəncərəsi göstərir.
+İndi _Requestbin_ saytına qayıtsaq, bəzi test məlumatlarını ehtiva edən payload-un qəbul edildiyini görəcəyik.
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
-
-İndi əgər _Requestbin_ saytına qayıtsaq, payload-un bəzi test məlumatlarını ehtiva edərək alındığını görəcəyik.
-
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
-
-Bu, webhook və endpoint-lərin necə işlədiyinin əsas prinsipidir. Əgər özünüzə xüsusi bir endpoint yaratmaq istəyirsinizsə, Ultimate Multisite-dən aldığınız məlumatı emal etmək üçün xüsusi bir funksiya yaratmanız lazım olacaq.
+Webhook və endpoint-lərin necə işlədiyinin əsas prinsipi budur. Xüsusi endpoint yaratmaq istəyirsinizsə, Ultimate Multisite-dan aldığınız məlumatları emal etmək üçün xüsusi funksiya yaratmalı olacaqsınız.

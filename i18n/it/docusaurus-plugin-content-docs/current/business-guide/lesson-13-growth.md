@@ -3,19 +3,19 @@ title: 'Lezione 13: Scalare'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lezione 13: Scalare
+# Lezione 13: Scalare {#lesson-13-scaling-up}
 
 Hai una piattaforma funzionante con clienti paganti. Questa lezione copre come passare da un'attività piccola a un'impresa sostenibile: scalare l'infrastruttura, automatizzare le operazioni e aumentare il ricavo per cliente.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 FitSite è online, i clienti si stanno iscrivendo e tu stai gestendo le operazioni quotidiane. Ora ci concentriamo sulla crescita.
 
-## Conosci i tuoi numeri
+## Conosci i tuoi numeri {#know-your-numbers}
 
 Prima di scalare, devi capire la tua situazione:
 
-### Metriche chiave
+### Metriche chiave {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ricavo mensile ricorrente totale
 - **Numero di clienti**: Totale abbonati attivi
@@ -24,7 +24,7 @@ Prima di scalare, devi capire la tua situazione:
 - **LTV (Lifetime Value)**: Ricavo medio per cliente durante tutto l'abbonamento
 - **CAC (Customer Acquisition Cost)**: Costo medio per acquisire un cliente
 
-### Esempio: FitSite con 50 clienti
+### Esempio: FitSite con 50 clienti {#example-fitsite-at-50-customers}
 
 | Metrica | Valore |
 |--------|-------|
@@ -36,9 +36,9 @@ Prima di scalare, devi capire la tua situazione:
 
 Questi numeri ti dicono su cosa concentrarti. Alto tasso di abbandono? Ripara la fidelizzazione. Basso ARPU? Spingi gli upgrade. Alto CAC? Ottimizza i canali di acquisizione.
 
-## Scalare l'infrastruttura
+## Scalare l'infrastruttura {#scaling-infrastructure}
 
-### Quando scalare
+### Quando scalare {#when-to-scale}
 
 Scala l'hosting quando:
 
@@ -47,7 +47,7 @@ Scala l'hosting quando:
 - Ti stai avvicinando ai 100+ siti attivi
 - Aumentano i reclami dei clienti sulla velocità
 
-### Come scalare
+### Come scalare {#how-to-scale}
 
 - **Vertical scaling**: Aggiorna il server per passare a un modello più potente (più CPU, RAM)
 - **Caching layers**: Aggiungi Redis/Memcached per la cache di oggetti e la cache di pagine per i contenuti statici
@@ -55,7 +55,7 @@ Scala l'hosting quando:
 - **Ottimizzazione del database**: Man mano che la rete cresce, le query del database rallentano. Ottimizza le tabelle, aggiungi indici e considera un server database dedicato.
 - **Separazione delle preoccupazioni (Separate concerns)**: Sposta l'archiviazione dei media su object storage (compatibile con S3) e delega la gestione delle email a un servizio di email transazionali.
 
-### Migrazione dell'hosting
+### Migrazione dell'hosting {#hosting-migration}
 
 Se il tuo host attuale non può scalare più, pianifica una migrazione:
 
@@ -65,11 +65,11 @@ Se il tuo host attuale non può scalare più, pianifica una migrazione:
 4. Aggiorna il DNS con un TTL minimo in anticipo
 5. Verifica che tutto funzioni dopo la migrazione
 
-## Automatizzare le operazioni
+## Automatizzare le operazioni {#automating-operations}
 
 Man mano che cresci, i processi manuali diventano colli di bottiglia. Automatizza ciò che puoi:
 
-### Webhooks e Zapier
+### Webhooks e Zapier {#webhooks-and-zapier}
 
 Usa [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integrations/zapier) per automatizzare:
 
@@ -78,7 +78,7 @@ Usa [Webhooks](/user-guide/integrations/webhooks) o [Zapier](/user-guide/integra
 - **Fallimenti di pagamento** → Allerta nel tuo strumento di monitoraggio
 - **Upgrade di piano** → Email di congratulazioni con una guida alle nuove funzionalità
 
-### Automazione email
+### Automazione email {#email-automation}
 
 Passa dalle email manuali alle sequenze automatizzate:
 
@@ -87,30 +87,30 @@ Passa dalle email manuali alle sequenze automatizzate:
 - Promemoria di upgrade quando i clienti si avvicinano ai limiti del piano
 - Promemoria di rinnovo per gli abbonati annuali
 
-### Automazione del supporto
+### Automazione del supporto {#support-automation}
 
 - **Risposte predefinite (Canned responses)** per domande comuni
 - **Risposte automatiche** che confermano la ricezione dei ticket di supporto
 - **Suggerimenti della knowledge base** quando i clienti inviano ticket che corrispondono a articoli esistenti
 
-## Aumentare i ricavi
+## Aumentare i ricavi {#increasing-revenue}
 
 La crescita non riguarda solo più clienti. Riguarda anche più ricavi per cliente.
 
-### Upselling ai clienti esistenti
+### Upselling ai clienti esistenti {#upselling-existing-customers}
 
 - **Upgrade di piano**: Campagne mirate che mostrano le funzionalità Growth/Pro ai clienti Starter
 - **Extra ordini (Order bumps)**: Promuovi prodotti aggiuntivi ai clienti esistenti tramite email
 - **Conversione annuale**: Offri ai clienti mensili uno sconto per passare alla fatturazione annuale
 
-### Nuovi flussi di ricavo
+### Nuovi flussi di ricavo {#new-revenue-streams}
 
 - **Setup "chiavi in mano"**: Chiedi un costo premium per configurare e personalizzare il sito di un cliente per loro
 - **Servizi di design personalizzato**: Offri lavori di design su misura oltre il template
 - **Sessioni di formazione**: Walkthrough one-to-one a pagamento per clienti che desiderano un aiuto pratico
 - **Plugin premium**: Offri plugin premium specifici per nicchia come add-on a pagamento (es. un widget per la prenotazione di lezioni fitness)
 
-### Aumentare i prezzi
+### Aumentare i prezzi {#raising-prices}
 
 Man mano che la tua piattaforma matura e aggiunge valore:
 
@@ -118,7 +118,7 @@ Man mano che la tua piattaforma matura e aggiunge valore:
 - Aumenta i prezzi per le nuove iscrizioni
 - Giustifica gli aumenti con nuove funzionalità e miglioramenti
 
-## Costruire un team
+## Costruire un team {#building-a-team}
 
 A un certo punto, non puoi fare tutto da solo. Prime assunzioni comuni:
 
@@ -128,7 +128,7 @@ A un certo punto, non puoi fare tutto da solo. Prime assunzioni comuni:
 
 Non hai bisogno di dipendenti. I collaboratori e i freelance funzionano bene per un'attività basata su una piattaforma.
 
-## Tappe di crescita
+## Tappe di crescita {#growth-milestones}
 
 | Tappa | MRR approssimativo | Focus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Non hai bisogno di dipendenti. I collaboratori e i freelance funzionano bene per
 | 250-500 clienti | $25,000-$50,000 | Costruzione del team, nuovi flussi di ricavo, funzionalità premium |
 | 500+ clienti | $50,000+ | Maturità della piattaforma, nicchie adiacenti, potenziale uscita (exit) |
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Un framework di metriche** per comprendere la salute aziendale
 - **Un piano di scalabilità dell'infrastruttura** per crescere da decine a centinaia di siti

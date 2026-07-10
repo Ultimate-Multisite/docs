@@ -3,7 +3,7 @@ title: Zmiany w planach z limitem zużycia
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Dziennik zmian dla planów metrycznych
+# Dziennik zmian dla planów metrycznych {#metered-plans-changelog}
 
 Wersja 1.1.0 - Wydana 2026-05-05
 - Nowość: Rozliczenia za tokeny AI dla podstron multisite — śledź i rozlicz zużycie tokenów AI na różnych stronach klienta z możliwością konfigurowalnych stawek za token.
@@ -14,17 +14,17 @@ Wersja 1.1.0 - Wydana 2026-05-05
 - Poprawka: Naprawiono błędy krytyczne oraz problemy podwójnej inicjalizacji podczas ładowania pluginu.
 - Ulepszenie: Dodano skrypt `check-env` npm, dzięki czemu środowiska deweloperskie samokonfigurują się przy pierwszym uruchomieniu.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Zaktualizowano do Plugin Update Checker v5
 * Dodano nowoczesne nagłówki pluginów WordPress
 * Ulepszona kompatybilność z najnowszymi wersjami WordPress
 * Poprawiona wydajność śledzenia zużycia
 
-### 1.0.2
+### 1.0.2 {#102}
 * Poprawki błędów i ulepszenia wydajności
 * Ulepszone raportowanie zużycia
 
-### 1.0.0
+### 1.0.0 {#100}
 * Wydanie początkowe
 * Podstawowa funkcjonalność rozliczeń metrycznych
 * Śledzenie zużycia i obliczanie nadpłaty

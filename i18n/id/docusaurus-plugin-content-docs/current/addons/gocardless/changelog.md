@@ -3,7 +3,7 @@ title: Catatan Perubahan GoCardless
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Catatan Perubahan GoCardless
+# Catatan Perubahan GoCardless {#gocardless-changelog}
 
 Versi: 1.0.3 - Dirilis pada 2026-05-05
 * Perbaikan: Situs tertunda yatim piatu kini dibersihkan ketika keanggotaan GoCardless dibatalkan saat berada dalam status tertunda atau ditahan.

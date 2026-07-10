@@ -3,19 +3,19 @@ title: Kuweka Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Kuweka Lango la Malipo la Stripe (v2)
+# Kuweka Lango la Malipo la Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ANGALIZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
 Unaweza kuwezesha hadi njia nne za malipo kwenye ukurasa wetu wa mipangilio ya malipo: Stripe, Stripe Checkout, PayPal na Manual. Katika makala hii, tutaona jinsi ya kuunganisha na **Stripe**.
 
-## Kuwezesha Stripe
+## Kuwezesha Stripe {#enabling-stripe}
 
 Ili kuwezesha Stripe kama lango la malipo linalopatikana kwenye mtandao wako, nenda **Ultimate Multisite > Settings > Payments** na uwashe swichi iliyo karibu na **Stripe** au **Stripe Checkout** kwenye sehemu ya Active Payment Gateways.
 
 ![Kuwezesha Stripe katika malango ya malipo yanayotumika](/img/config/settings-payment-gateways.png)
 
-### Stripe dhidi ya Stripe Checkout:
+### Stripe dhidi ya Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Njia hii itaonyesha nafasi ya kuingiza nambari ya kadi ya mkopo wakati wa malipo.
 
@@ -47,7 +47,7 @@ Nakili thamani kutoka **Publishable key** na **Secret key**, kutoka safu ya **To
 
 ![Kubandika funguo za Stripe kwenye mipangilio ya Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Kuweka Webhook ya Stripe
+## Kuweka Webhook ya Stripe {#setting-up-stripe-webhook}
 
 Stripe inatuma matukio ya webhook yanayoarifu Ultimate Multisite wakati wowote jambo linapotokea kwenye **akaunti yako ya Stripe**.
 

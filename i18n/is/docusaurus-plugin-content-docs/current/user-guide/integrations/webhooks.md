@@ -3,7 +3,7 @@ title: Webkhuggar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Fyrirblik á Webhooks (v2)
+# Fyrirblik á Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ÁHATTENSTÖÐ: Skráðu að þetta eiginleiki eða greinin er fyrir framavanzda notendur.**_
 
@@ -11,7 +11,7 @@ _**ÁHATTENSTÖÐ: Skráðu að þetta eiginleiki eða greinin er fyrir framavan
 
 Þetta er hulega gagnlegt ef þú þarft að tengja inn eða sendast sérstök data frá Ultimate Multisite til að öðrum CRM eða kerfi í hvert sem viðmið er á gangi. Til dæmis þarftu að sendast nafni og tölvupóstnúmer notandans til safna með hverjum nýr notendurinn er skráð.
 
-## Hvernig á að skapa webhook
+## Hvernig á að skapa webhook {#how-to-create-a-webhook}
 
 Til að skapa webhook, ferstú í netverkstjórnarskjalann þinn (network admin dashboard). Klikkaðu á **Ultimate Multisite > Webhooks > Add New Webhook.**
 

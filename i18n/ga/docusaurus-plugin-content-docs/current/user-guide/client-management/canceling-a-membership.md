@@ -3,7 +3,7 @@ title: An t-aonadh o Chuidistíocht
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# An t-aontúchadh a bhaineann le Múirtasacht (v2)
+# An t-aontúchadh a bhaineann le Múirtasacht (v2) {#canceling-a-membership-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 

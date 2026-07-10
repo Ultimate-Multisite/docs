@@ -3,17 +3,17 @@ title: Ενσωμάτωση cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Ενσωμάτωση με cPanel
+# Ενσωμάτωση με cPanel {#cpanel-integration}
 
-## Επισκόπηση
+## Επισκόπηση {#overview}
 Το cPanel είναι ένας από τους πιο δημοφιλείς πίνακες ελέγχου web hosting που χρησιμοποιείται από πολλούς παρόχους shared και dedicated hosting. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains μεταξύ του Ultimate Multisite και του cPanel, δίνοντάς σας τη δυνατότητα να προσθέτετε αυτόματα domain aliases και subdomains στον λογαριασμό σας στο cPanel.
 
-## Χαρακτηριστικά
+## Χαρακτηριστικά {#features}
 - Αυτόματη δημιουργία addon domains στο cPanel
 - Αυτόματη δημιουργία subdomains στο cPanel (για εγκαταστάσεις multisite με subdomains)
 - Αφαίρεση domain όταν διαγράφονται οι αντιστοιχίσεις
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 Οι παρακάτω σταθερές πρέπει να οριστούν στο αρχείο `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Η προεπιλογή είναι 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Η προεπιλογή είναι /public_html
 ```
 
-## Οδηγίες Ρύθμισης
+## Οδηγίες Ρύθμισης {#setup-instructions}
 
-### 1. Λήψη των Διαπιστευτηρίων cPanel
+### 1. Λήψη των Διαπιστευτηρίων cPanel {#1-get-your-cpanel-credentials}
 
 1. Αποκτήστε το όνομα χρήστη και τον κωδικό πρόσβασης του cPanel από τον πάροχο φιλοξενίας σας
 2. Προσδιορίστε τον host του cPanel (συνήθως `cpanel.yourdomain.com` ή `yourdomain.com:2083`)
 
-### 2. Προσθήκη Σταθερών στο wp-config.php
+### 2. Προσθήκη Σταθερών στο wp-config.php {#2-add-constants-to-wp-configphp}
 
 Προσθέστε τις παρακάτω σταθερές στο αρχείο `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Αλλάξτε αν το cPanel σας χρη
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Αλλάξτε αν ο ριζικός κατάλογος των εγγράφων σας είναι διαφορετικός
 ```
 
-### 3. Ενεργοποίηση της Ενσωμάτωσης
+### 3. Ενεργοποίηση της Ενσωμάτωσης {#3-enable-the-integration}
 
 1. Στη διαχείριση του WordPress, μεταβείτε στο Ultimate Multisite > Settings
 2. Πλοηγηθείτε στην καρτέλα "Domain Mapping"
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Αλλάξτε αν ο ριζι
 4. Ενεργοποιήστε την ενσωμάτωση cPanel
 5. Κάντε κλικ στο "Save Changes"
 
-## Πώς Λειτουργεί
+## Πώς Λειτουργεί {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Όταν γίνεται αντιστοίχιση ενός domain στο Ultimate Multisite:
 
@@ -71,7 +71,7 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Αλλάξτε αν ο ριζι
 2. Το domain ρυθμίζεται ώστε να δείχνει στον ριζικό σας κατάλογο
 3. Όταν αφαιρείται μια αντιστοίχιση domain, η ενσωμάτωση αφαιρεί το addon domain από το cPanel
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Για εγκαταστάσεις multisite με subdomains, όταν δημιουργείται ένας νέος ιστότοπος:
 
@@ -79,27 +79,27 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Αλλάξτε αν ο ριζι
 2. Στέλνει ένα αίτημα στο API του cPanel για να προσθέσει το subdomain
 3. Το subdomain ρυθμίζεται ώστε να δείχνει στον ριζικό σας κατάλογο
 
-## Σημαντικές Σημειώσεις
+## Σημαντικές Σημειώσεις {#important-notes}
 
 - Η ενσωμάτωση χρησιμοποιεί το API2 του cPanel για να επικοινωνεί με τον λογαριασμό σας στο cPanel
 - Ο λογαριασμός σας στο cPanel πρέπει να έχει δικαιώματα για προσθήκη addon domains και subdomains
 - Ορισμένοι πάροχοι φιλοξενίας μπορεί να περιορίζουν τον αριθμό των addon domains ή subdomains που μπορείτε να δημιουργήσετε
 - Η ενσωμάτωση δεν διαχειρίζεται τη ρύθμιση DNS· θα πρέπει να κατευθύνετε τα domains σας στη διεύθυνση IP του διακομιστή σας
 
-## Αντιμετώπιση Προβλημάτων
+## Αντιμετώπιση Προβλημάτων {#troubleshooting}
 
-### Προβλήματα Σύνδεσης API
+### Προβλήματα Σύνδεσης API {#api-connection-issues}
 - Επαληθεύστε ότι το όνομα χρήστη και ο κωδικός πρόσβασης του cPanel είναι σωστά
 - Ελέγξτε ότι ο host του cPanel είναι σωστός και προσβάσιμος
 - Βεβαιωθείτε ότι ο λογαριασμός σας στο cPanel έχει τα απαραίτητα δικαιώματα
 - Δοκιμάστε να χρησιμοποιήσετε το πλήρες URL για τον host (π.χ., `https://cpanel.yourdomain.com`)
 
-### Το Domain Δεν Προστέθηκε
+### Το Domain Δεν Προστέθηκε {#domain-not-added}
 - Ελέγξτε τα αρχεία καταγραφής του Ultimate Multisite για τυχόν μηνύματα σφάλματος
 - Επαληθεύστε ότι το domain δεν έχει ήδη προστεθεί στο cPanel
 - Βεβαιωθείτε ότι ο λογαριασμός σας στο cPanel δεν έχει φτάσει το όριο για addon domains ή subdomains
 
-### Προβλήματα με Πιστοποιητικά SSL
+### Προβλήματα με Πιστοποιητικά SSL {#ssl-certificate-issues}
 - Η ενσωμάτωση δεν διαχειρίζεται την έκδοση πιστοποιητικών SSL
 - Θα χρειαστεί να χρησιμοποιήσετε τα εργαλεία SSL/TLS του cPanel ή τη λειτουργία AutoSSL για να εκδώσετε πιστοποιητικά SSL για τα domains σας
 - Εναλλακτικά, μπορείτε να χρησιμοποιήσετε μια υπηρεσία όπως το Let's Encrypt με το AutoSSL του cPanel

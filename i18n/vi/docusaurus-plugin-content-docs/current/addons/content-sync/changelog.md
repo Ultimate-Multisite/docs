@@ -3,9 +3,9 @@ title: Nhật ký thay đổi Đồng bộ hóa Nội dung
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Nhật ký thay đổi của Content Sync
+# Nhật ký thay đổi của Content Sync {#content-sync-changelog}
 
-### Phiên bản 1.1.0 - Phát hành vào 2025-12-31
+### Phiên bản 1.1.0 - Phát hành vào 2025-12-31 {#version-110---released-on-2025-12-31}
 * Mới: Hỗ trợ đồng bộ hóa tất cả các loại bài viết (posts, pages, custom post types).
 * Mới: Lọc loại bài viết ở bước chọn nội dung.
 * Mới: Bước chọn trang web nguồn - đồng bộ từ bất kỳ trang web nào, không chỉ trang web chính.
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Đổi tên: Bước "Select Templates" đổi thành "Select Data".
 * Cải thiện: Mã dành riêng cho Elementor giờ chỉ chạy cho loại bài viết elementor_library.
 
-### Phiên bản 1.0.0 - Phát hành vào 2025-12-19
+### Phiên bản 1.0.0 - Phát hành vào 2025-12-19 {#version-100---released-on-2025-12-19}
 * Phát hành ban đầu.
 * Trình hướng dẫn nhiều bước để chọn mẫu và trang web.
 * Xử lý hàng loạt với phản hồi tiến độ theo thời gian thực.

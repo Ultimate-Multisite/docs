@@ -1,30 +1,15 @@
 ---
-title: Wijzigingslogboek van de Taalselectie
+title: Taalkeuzeschakelaar changelog
 sidebar_position: 99
-_i18n_hash: 63075b8bf58719ee9250f9384e996b2f
+_i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Taalselectie Changelog
+# Changelog voor taalkeuze {#language-selector-changelog}
 
-Versie: 1.1.1 - Uitgebracht op 2025-12-10
-* Opgelost: Fatal error tijdens nieuwe installatie.
+Versie: 1.1.3 - Uitgebracht op 2026-05-05
+* Oplossing: Invoervariabelen worden nu opgeschoond en aangepaste hooknamen krijgen een voorvoegsel om conflicten met plug-ins van derden te voorkomen
 
-Versie: 1.1.0 - Uitgebracht op 2025-12-09
-* Toegevoegd: Taalselectie-veld aan de checkout form builder.
+Versie: 1.1.2 - Uitgebracht op 2026-01-01
+* Verbeterd: Compatibiliteitsupdates en verbeteringen in codekwaliteit
 
-Versie: 1.0.0 - Uitgebracht op 2025-12-09
-* Opgelost: Verouderingsmeldingen.
-* Opgelost: Fatal error wanneer geïnstalleerd met andere add-ons.
-
-Versie: 0.0.4 - Uitgebracht op 2025-09-28
-
-* Prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
-
-Versie 0.0.3 - 20/08/2019
-
-* Opgelost: Taalselectie verschijnt leeg bij eerste run in niet-Engelse WordPress-versies;
-
-Versie 0.0.2 - 17/07/2019
-
-* Opgelost: Kleine bugfixes.
-
-0.0.1 - Initiële release (25/02/2019)
+Versie: 1.1.0 - Uitgebracht op 2025-09-28
+* Hernoem voorvoegsel naar ultimate-multisite; werk tekstdomein bij; versieverhoging.

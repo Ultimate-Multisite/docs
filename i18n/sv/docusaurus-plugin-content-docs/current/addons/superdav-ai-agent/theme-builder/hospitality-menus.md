@@ -3,15 +3,15 @@ title: Restaurangmenyer
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomiska menyer
+# Gastronomiska menyer {#hospitality-menus}
 
 Funktionen **Gastronomiska menyer** låter Theme Builder generera och bädda in strukturerade menyer för mat och dryck direkt på din WordPress-sajt.
 
-## Översikt
+## Översikt {#overview}
 
 Theme Builder kan nu skapa professionella, strukturerade menysidor för gastronyverksamheter, inklusive restauranger, kaféer, barer och cateringföretag. Dessa menyer är fullständigt integrerade i din sajt design och kan enkelt uppdateras och hanteras.
 
-## Stödde gastronytyper
+## Stödde gastronytyper {#supported-hospitality-types}
 
 - **Restauranger** — menyer för fullservice-måltider
 - **Caféer** — kaffe- och lättare frukostmenyer
@@ -21,9 +21,9 @@ Theme Builder kan nu skapa professionella, strukturerade menysidor för gastrony
 - **Food Trucks** — menyer för mobila matservice
 - **Bryggerier och vingårdar** — dryckesmenyer med beskrivningar
 
-## Menystruktur
+## Menystruktur {#menu-structure}
 
-### Menykategorier
+### Menykategorier {#menu-categories}
 
 Menyer organiseras i kategorier:
 
@@ -34,7 +34,7 @@ Menyer organiseras i kategorier:
 - **Drycker** — drycker (alkoholhaltiga och alkoholfria)
 - **Specialiteter** — dagliga eller säsongsspecifika erbjudanden
 
-### Menyobjektformat
+### Menyobjektformat {#menu-item-format}
 
 Varje menyobjekt inkluderar:
 
@@ -49,7 +49,7 @@ Varje menyobjekt inkluderar:
 }
 ```
 
-#### Fält för objekt
+#### Fält för objekt {#item-fields}
 
 | Fält | Typ | Beskrivning |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Varje menyobjekt inkluderar:
 | `allergens` | array | Vanliga allergener (Nötter, Skaldjur, etc.) |
 | `availability` | string | När det är tillgängligt (Dagligt, Säsongsvis, etc.) |
 
-## Skapa gastronomiska menyer
+## Skapa gastronomiska menyer {#creating-hospitality-menus}
 
-### Steg 1: Tillhandahåll menyinformation
+### Steg 1: Tillhandahåll menyinformation {#step-1-provide-menu-information}
 
 Berätta för Theme Builder om din meny:
 
@@ -71,7 +71,7 @@ Skapa en restaurangmeny för mitt italienska restaurang med förrätter,
 pastarätter, huvudrätter och desserter. Inkludera priser och beskrivningar.
 ```
 
-### Steg 2: Theme Builder genererar menyn
+### Steg 2: Theme Builder genererar menyn {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formaterar priser och beskrivningar
 5. Lägger till information om kost och allergener
 
-### Steg 3: Granska och anpassa
+### Steg 3: Granska och anpassa {#step-3-review-and-customize}
 
 Du kan:
 
@@ -91,9 +91,9 @@ Du kan:
 4. Uppdatera beskrivningar och kostinformation
 5. Justera styling och layout
 
-## Menyvisningsalternativ
+## Menyvisningsalternativ {#menu-display-options}
 
-### Hela menysidan
+### Hela menysidan {#full-menu-page}
 
 En dedikerad sida som visar hela din meny:
 
@@ -102,7 +102,7 @@ En dedikerad sida som visar hela din meny:
 - Lätt att skriva ut
 - Mobilanpassad design
 
-### Menywidget
+### Menywidget {#menu-widget}
 
 Bädda in menydelar på andra sidor:
 
@@ -111,7 +111,7 @@ Bädda in menydelar på andra sidor:
 - Dryckesmeny på bar-sidan
 - Dessertutställning i sidfoten
 
-### Meny-PDF
+### Meny-PDF {#menu-pdf}
 
 Generera en nedladdningsbar PDF-meny:
 
@@ -120,9 +120,9 @@ Generera en nedladdningsbar PDF-meny:
 - Inkluderar bilder och beskrivningar
 - Lätt att dela och skicka via e-post
 
-## Kost- och allergener
+## Kost- och allergener {#dietary-and-allergen-information}
 
-### Kostråd
+### Kostråd {#dietary-attributes}
 
 Markera objekt med kostinformation:
 
@@ -134,7 +134,7 @@ Markera objekt med kostinformation:
 - **Lågt kolhydratinnehåll** — reducerade kolhydrater
 - **Högt proteininnehåll** — proteinrikt
 
-### Allergenvarningar
+### Allergenvarningar {#allergen-warnings}
 
 Inkludera vanliga allergener:
 
@@ -147,9 +147,9 @@ Inkludera vanliga allergener:
 - **Gluten** — vete och glutenhaltiga spannmål
 - **Sesam** — sesamfrön och olja
 
-## Hantering av menyer
+## Hantering av menyer {#menu-management}
 
-### Uppdatera priser
+### Uppdatera priser {#updating-prices}
 
 Uppdatera menypriserna enkelt:
 
@@ -159,7 +159,7 @@ Uppdatera menypriserna enkelt:
 4. Spara ändringar
 5. Ändringarna visas omedelbart på din sajt
 
-### Lägga till säsongsobjekt
+### Lägga till säsongsobjekt {#adding-seasonal-items}
 
 Skapa säsongsvariationer av menyn:
 
@@ -169,7 +169,7 @@ Skapa säsongsvariationer av menyn:
 4. Schemalägg tillgänglighetsdatum
 5. Visas automatiskt under säsongen
 
-### Hantera specialiteter
+### Hantera specialiteter {#managing-specials}
 
 Visa dagliga eller veckovisa specialiteter:
 
@@ -179,7 +179,7 @@ Visa dagliga eller veckovisa specialiteter:
 4. Uppdatera dagligen eller veckovis
 5. Arkivera gamla specialiteter
 
-## Integration med Theme Builder
+## Integration med Theme Builder {#integration-with-theme-builder}
 
 När du använder Theme Builder för gastronyverksamheter:
 
@@ -189,9 +189,9 @@ När du använder Theme Builder för gastronyverksamheter:
 4. **Mobiloptimering** — menyer visas vackert på telefoner
 5. **SEO-optimering** — menyer är vänliga mot sökmotorer
 
-## Bästa praxis
+## Bästa praxis {#best-practices}
 
-### Menydesign
+### Menydesign {#menu-design}
 
 - **Tydlig organisation** — logisk kategoristruktur
 - **Läsbara beskrivningar** — aptitretande och informativa
@@ -199,7 +199,7 @@ När du använder Theme Builder för gastronyverksamheter:
 - **Professionella foton** — högupplösta matbilder
 - **Tomt utrymme** — överbelasta inte sidan
 
-### Innehåll
+### Innehåll {#content}
 
 - **Korrekta beskrivningar** — beskriv objekten exakt
 - **Markera specialiteter** — låt specialiteterna sticka ut
@@ -207,7 +207,7 @@ När du använder Theme Builder för gastronyverksamheter:
 - **Uppdatera regelbundet** — håll priser och objekt aktuella
 - **Använd aptitretande språk** — låt objekten låta goda
 
-### Tillgänglighet
+### Tillgänglighet {#accessibility}
 
 - **Läsbara typsnitt** — använd tydliga, läsbara typsnitt
 - **Tillräckligt kontrast** — se till att texten är läsbar
@@ -215,9 +215,9 @@ När du använder Theme Builder för gastronyverksamheter:
 - **Allergenvarningar** — visa allergener framträdande
 - **Mobilvänligt** — testa på alla enheter
 
-## Exempel
+## Exempel {#examples}
 
-### Restaurangmenystruktur
+### Restaurangmenystruktur {#restaurant-menu-structure}
 
 ```
 Förrätter
@@ -241,7 +241,7 @@ Dessert
 └── Gelato Selection
 ```
 
-### Kafémenystruktur
+### Kafémenystruktur {#cafe-menu-structure}
 
 ```
 Kaffe
@@ -260,7 +260,7 @@ Smörgåsar
 └── Vegetariskt wrap
 ```
 
-## Relaterade funktioner
+## Relaterade funktioner {#related-features}
 
 - [Skapa meny](../abilities/create-menu.md) — skapa navigeringsmenyer
 - [Designriktning](./design-direction.md) — anpassa din sajt design

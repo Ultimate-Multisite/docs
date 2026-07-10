@@ -1,104 +1,152 @@
 ---
-title: Cilësimet e Agjentit AI Gratis
+title: Cilësimet e Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Caktimet e Agjentit AI Gratis
+# Cilësimet e Gratis AI Agent {#gratis-ai-agent-settings}
 
-Ekranin **Settings → Advanced** në Gratis AI Agent ofron konfigurime me nivel administrator për integrimet e pasme të hyrë në v1.5.0. Ky faqje dokumenton fushën **Feedback Endpoint** dhe formatin e pritshëm i saj.
+Ekrani **Settings → Advanced** në Gratis AI Agent ofron konfigurim të nivelit të administratorit për integrimet backend. Kjo faqe dokumenton përcjelljen e feedback-ut, çelësat e ofruesve të kërkimit, konfigurimin e shërbimit të menaxhuar Superdav, kontrollet e Google Calendar, cilësimet e SMS-ve TextBee dhe feature flags në nivel rrjeti.
 
-## Aksesi në Settings
+## Qasja te cilësimet {#accessing-settings}
 
-1. Në panelin e administratorit të WordPress, shko te **Gratis AI Agent → Settings**.
-2. Kliko te tab-i **Advanced**.
+1. Në administrimin e WordPress, shkoni te **Gratis AI Agent → Settings**.
+2. Klikoni skedën **Advanced**.
 
-## Konfigurimi i Pikat e Kthimit (Feedback Endpoint)
+## Konfigurimi i endpoint-it të feedback-ut {#feedback-endpoint-configuration}
 
-Endpointi i feedback-it merr kërkesa POST nga agjenti AI çdo herë që një përdorues dërgon feedback duke shtypur butonin me gishtin të ulur (thumbs-down), bannerin e auto-prompt-it, ose komandën `/report-issue`.
+Endpoint-i i feedback-ut merr kërkesa POST nga AI agent sa herë që një përdorues dërgon feedback përmes butonit thumbs-down, banner-it auto-prompt, ose komandës `/report-issue`.
 
-| Fushë | Përshkrimi |
+| Fusha | Përshkrimi |
 |---|---|
-| **URL-ja e Pikatit të Feedback-it** | URL-ja që merr dërgimet e feedback-it si kërkesa HTTP POST me një trupë JSON.
+| **Feedback Endpoint URL** | URL-ja që merr dërgesat e feedback-ut si kërkesa HTTP POST me trup JSON. |
+| **Feedback API Key** | Një bearer token i dërguar në `Authorization` header të çdo kërkese feedback-u. Lëreni bosh nëse endpoint-i juaj nuk kërkon autentikim. |
 
-| **API Key për Feedback** | Një token i autorizimit (bearer token) që dërgohet në headerin `Authorization` të çdo kërkesë feedback. Lëreni të zbrazët nëse endpoint-i juaj nuk kërkon autentifikim. |
+### Payload-i JSON i pritur {#expected-json-payload}
 
-### Përdorimi i JSON Payload-it të Pritshëm
+Endpoint-i juaj i feedback-ut duhet të pranojë një trup JSON me të paktën fushat e mëposhtme:
 
-Pikat tuaja të feedback-it duhet të pranojnë një trupë JSON me të paktën këto fusha:
-
+```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Përgjigjja ishte e gabuar rreth çmimeve.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
+```
 
-Mund të ketë fusha shtesë në payload, në varësi të kontekstit të bisedës.
+Fusha shtesë mund të jenë të pranishme në payload në varësi të kontekstit të bisedës.
 
-### Vlera për `triage_category`
+### Vlerat e `triage_category` {#triagecategory-values}
 
-Lira e triazhit (triage layer) e AI-s së vendos një nga këto vlerë për `triage_category` para se të dërgojë payload-in:
+Shtresa e triage-it të AI cakton një nga vlerat e mëposhtme te `triage_category` përpara se të përcjellë payload-in:
 
-| Vlera | Kuqyrja |
+| Vlera | Kuptimi |
 |---|---|
-| `factual_error` | Asistenti ofrua informacion faktik të gabuar. |
-| `unhelpful_answer` | Përgjigja ishte teknikisht e saktë por nuk u shërbeu. |
+| `factual_error` | Asistenti dha informacion faktik të pasaktë. |
+| `unhelpful_answer` | Përgjigjja ishte teknikisht e saktë, por jo e dobishme. |
+| `inappropriate_content` | Përgjigjja përmbante përmbajtje që nuk duhet t’u shfaqet përdoruesve. |
+| `other` | Feedback-u nuk përputhej me një kategori të njohur. |
 
-### Autentikimi (Authentication)
+### Autentikimi {#authentication}
 
-Nëse endpoint-i ju kërkon autentifikim, vendosni fushën **Feedback API Key** me tokenin tuaj bearer. Agjenti dërgon:
+Nëse endpoint-i juaj kërkon autentikim, vendosni fushën **Feedback API Key** në bearer token-in tuaj. Agent-i dërgon:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Nëse fusha **Feedback API Key** është e zbrazët, nuk do të dërgohet asnjë header `Authorization`.
+Nëse fusha **Feedback API Key** është bosh, nuk dërgohet asnjë `Authorization` header.
 
-### Ndalimi i Mbledhjes të Feedback-it
+### Çaktivizimi i mbledhjes së feedback-ut {#disabling-feedback-collection}
 
-Lëreni të dy fushat e **Feedback Endpoint URL** dhe **Feedback API Key** të zbrazëta (të paka). Butoni me thumbs-down dhe interfejsi i feedback-it mbeten të dukshëm për përdoruesit, por dorën e dëshirave nuk dërrohen në asnjë shërbim të jashtëm.
+Lërini bosh të dyja fushat **Feedback Endpoint URL** dhe **Feedback API Key**. Butoni thumbs-down dhe UI i feedback-ut mbeten të dukshme për përdoruesit, por dërgesat nuk përcillen te asnjë shërbim i jashtëm.
 
-## Claviera API për Kërkimin e Brave
+## Brave Search API Key {#brave-search-api-key}
 
-Gjithashtu në tabin **Advanced**, fusha **Brave Search API Key** ju lejon të përdorni aftësinë e kërkimit në internet [Internet Search](../configuration/internet-search).
+Po ashtu në skedën **Advanced**, fusha **Brave Search API Key** aktivizon aftësinë [Kërkimi në internet](../configuration/internet-search).
 
-| Fushë | Përshkrimi |
+| Fusha | Përshkrimi |
 |---|---|
-| **Brave Search API Key** | Klavejke e API-së nga Brave Search developer dashboard. E nevojshme për të aktivizuar kërkimin në internet në asistentin AI.
+| **Brave Search API Key** | Çelësi juaj API nga dashboard-i i zhvilluesve të Brave Search. Kërkohet për të aktivizuar kërkimin në internet në asistentin AI. |
 
-Etiketi i fushës përfshin një link klikues drejt faqes së regjistrimit të Brave Search API. Lëreni të zbrazët për të deaktivizuar kërkimin në internet.
+Etiketa e fushës përfshin një lidhje të klikueshme drejt faqes së regjistrimit për Brave Search API. Lëreni bosh për të çaktivizuar kërkimin në internet.
 
-Shikoni [Kërkimi në Internet](../configuration/internet-search) për dokumentacionin e përdoruesve mbi këtë veçori.
+Shihni [Kërkimi në internet](../configuration/internet-search) për dokumentacionin e përdoruesit fundor mbi këtë veçori.
 
-## Feature Flags
+## Shërbimi i menaxhuar Superdav {#managed-superdav-service}
 
-Në v1.9.0 u shtua edhe tab-i **Settings → Feature Flags**, i cili ofron ndryshues (toggle switches) për funksionalitete opsionale. Çdo flag është ose aktiv në të gjithë rrjetin, ose i deaktivuar; aktualisht nuk ka mjet për të e ndryshuar këtë nivel për çdo faqe (per-site override).
+Superdav AI Agent v1.18.0 shton endpoint-e të shërbimit të menaxhuar Superdav dhe provisionim automatik të lidhjes për sajte të mbështetura. Përdorni këto kontrolle kur sajti juaj duhet të lidhet me ofruesin e hostuar në vend të një endpoint-i shërbimi të konfiguruar manualisht.
 
-### Aksesi në Feature Flags
+| Fusha | Përshkrimi |
+|---|---|
+| **Managed Superdav Service** | Aktivizon lidhjen me shërbimin e hostuar Superdav për sajte të mbështetura. |
+| **Provision Connection** | Nis provisionimin automatik të endpoint-it dhe kredencialeve. Përdoreni këtë pasi të konfirmoni se sajti duhet të përdorë ofruesin e menaxhuar. |
+| **Service Endpoint / Connection Status** | Shfaq endpoint-in aktual ose gjendjen e lidhjes pas provisionimit. |
 
-1. Në panelin administrator të WordPress, shko te **Gratis AI Agent → Settings**.
-2. Kliko te tab-i **Feature Flags**.
+Pas provisionimit, ruani cilësimet dhe verifikoni gjendjen e lidhjes përpara se të mbështeteni te rrjedhat e punës të shërbimit të menaxhuar. Nëse provisionimi dështon, rishikoni udhëzimet e shfaqura për riprovim dhe konfirmoni që sajti ka leje për të përdorur ofruesin e hostuar.
 
-### Feature Flags për Kontrollin e Qasjes (Access Control Flags)
+## Konfigurimi i Google Calendar {#google-calendar-configuration}
 
-| Band | Viforueshëm për Administratorë | Kur është i aktivizuar, vetëm përdoruesit me rolin `administrator` mund të hapin paneli i bisedës AI Agent. Të gjithë rolet e tjera shohin mesazhin "Kontaktoni administratorin tuaj". |
+Kur veçoritë e kalendarit të Superdav AI Agent v1.18.0 janë të aktivizuara, agent-i mund të lexojë kalendarët e konfiguruar dhe detajet e ngjarjeve. Mjetet e kalendarit janë të orientuara drejt leximit dhe janë të dobishme për kujtesa të ndërgjegjshme për orarin, ndjekje me pjesëmarrësit dhe përputhje kontaktesh.
 
-| **Restiko në Administratorët e Alojimit (Network Admins)** | I Ofor | Kur kjo është e aktivizuar në një rrjet multisite, vetëm Super Adminët mund të përdorin agentin. Administratorët individualë të saj janë bllokuar. Kjo ka prioritet mbi "Restikimin në Administratorë" nëse të dy janë të aktivizuar. |
+| Fusha | Përshkrimi |
+|---|---|
+| **Google Calendar Credentials** | Ruan kredencialet ose lidhjen me token që kërkohet për të lexuar të dhënat e kalendarit. |
+| **Calendar Selection** | Kufizon cilët kalendarë të konfiguruar mund të inspektojë agent-i. |
+| **Calendar Connection Status** | Konfirmon nëse kredencialet aktuale mund të lexojnë kalendarë dhe ngjarje. |
 
-| **Lejojim akses për abonentë** | I Ofor | Kur është i aktivizuar, përdoruesit me rolin `subscriber` mund të përdorin interfejsin e bisedës por janë të kufizuar në aftësitë e leximit vetëm (nuk mund të krijojnë postime ose ndryshojnë cilësimet). |
+Mbajini kredencialet e kalendarit të kufizuara vetëm te kalendarët që i nevojiten agent-it. Rilidhni ose rrotulloni kredencialet nëse statusi tregon një token të skaduar.
 
-| **Për të i ndaluar për jo-anëtari** | I Ndaluar | Integruar me statusin e anëtarisë të Ultimate Multisite. Kur është i aktivizuar, biseda (chat) fshihet për ato loja që nuk kanë një anëtarësi aktive. |
+## Njoftimet SMS TextBee {#textbee-sms-notifications}
 
-### Flaga të Markës
+Superdav AI Agent v1.18.0 shton TextBee si ofrues SMS për rrjedha pune të konfiguruara njoftimesh. Njoftimet SMS duhet të shoqërohen me porta miratimi njerëzor për mesazhe sensitive ose të drejtuara përdoruesve.
 
-| Band | Viforueshja e "Powered by Gratis AI Agent" në footer | Përshkrim | Zbejnë linjën e atribucionit të markës që shfaqet në fundin i pajisjes së bisedës (chat widget). Rekomandohet për implementime me etiketë të bardha. |
+| Fusha | Përshkrimi |
+|---|---|
+| **TextBee API Key** | Autentikon kërkesat te ofruesi SMS TextBee. |
+| **TextBee Device / Sender** | Zgjedh dërguesin ose pajisjen TextBee të përdorur për mesazhet dalëse, kur kërkohet nga ofruesi. |
+| **SMS Notifications Enabled** | Lejon rrjedhat e miratuara të punës të dërgojnë njoftime me mesazhe tekst. Lëreni të çaktivizuar për të parandaluar dërgimet SMS. |
 
-| **Emri i Agjentit Personalizuar** | *(zgjidhja e zbrazët)* | Zëvendëson etiketën e paracaktuar "Gratis AI Agent" në kornizën e bisedës dhe menyn admin me emrin tuaj të produktit. Lëreni të zbrazët për të përdorur atë standarde. |
+Dërgoni një mesazh prove vetëm te një numër në pronësi të administratorit, pastaj konfirmoni sjelljen e portës së miratimit përpara se të aktivizoni kujtesa të planifikuara ose të drejtuara pjesëmarrësve.
 
-| **Fsheh Zgjatjen Agjentit** | I Ndryshues (Off) | Kur është i aktivizuar, përdoruesit nuk mund të ndërrojnë midis pesë agjentëve të integruar. Agjenti aktual mbetet fiksuar në atë që është konfiguruar si paradat në Settings → General. |
+## Feature Flags {#feature-flags}
 
-| **Përdor Ikona të Sitetin si Avatar i Bisedës** | I Ofor | Zëvendëson ikonën e paracaktuar AI në kabinetin e bisedës me ikonën e sitit WordPress (përfaqësohet në Aparanca → Personalizo → Identiteti i Sitetit). |
+Të prezantuara gjithashtu në v1.9.0, skeda **Settings → Feature Flags** ofron çelësa toggle për funksionalitet opsional. Çdo flag është ose i aktivizuar ose i çaktivizuar në të gjithë rrjetin; aktualisht nuk ka override për çdo sajt.
 
-### Aplikimi i Ndryshimeve
+### Qasja te Feature Flags {#accessing-feature-flags}
 
-Klikoni **Save Settings** pas që ndryshoni çdo flag. Ndryshimet hyn në fuqi menjëherë – nuk keni nevojë të fshini cache ose të riaktivizoni pluginin.
+1. Në administrimin e WordPress, shkoni te **Gratis AI Agent → Settings**.
+2. Klikoni skedën **Feature Flags**.
+
+### Access Control Flags {#access-control-flags}
+
+| Flamur | Parazgjedhja | Përshkrimi |
+|---|---|---|
+| **Kufizo te Administratorët** | Off | Kur aktivizohet, vetëm përdoruesit me rolin `administrator` mund të hapin panelin e bisedës së AI Agent. Të gjitha rolet e tjera shohin në vend të tij një mesazh "Kontaktoni administratorin tuaj". |
+| **Kufizo te Network Admins** | Off | Kur aktivizohet në një rrjet multisite, vetëm Super Admins mund ta përdorin agjentin. Administratorët e site-eve individuale bllokohen. Ka përparësi ndaj "Kufizo te Administratorët" nëse të dyja janë të aktivizuara. |
+| **Lejo aksesin për Subscriber** | Off | Kur aktivizohet, përdoruesit me rolin `subscriber` mund të përdorin ndërfaqen e bisedës, por kufizohen në aftësi vetëm për lexim (pa krijim postimesh ose ndryshime cilësimesh). |
+| **Çaktivizo për joanëtarët** | Off | Integrohet me statusin e anëtarësimit të Ultimate Multisite. Kur aktivizohet, biseda fshihet për site-et që nuk kanë anëtarësim aktiv. |
+
+### Flamujt e branding {#branding-flags}
+
+| Flamur | Parazgjedhja | Përshkrimi |
+|---|---|---|
+| **Fshih Footer-in "Powered by Gratis AI Agent"** | Off | Heq rreshtin e atribuimit të branding që shfaqet në fund të widget-it të bisedës. Rekomandohet për vendosje white-label. |
+| **Emri i personalizuar i agjentit** | *(bosh)* | Zëvendëson etiketën e parazgjedhur "Gratis AI Agent" në kokën e bisedës dhe menynë admin me emrin tuaj të produktit. Lëreni bosh për të përdorur parazgjedhjen. |
+| **Fshih zgjedhësin e agjentit** | Off | Kur aktivizohet, përdoruesit nuk mund të kalojnë midis pesë agjentëve të integruar. Agjenti aktual fiksohet te ai që është konfiguruar si parazgjedhje te Settings → General. |
+| **Përdor ikonën e site-it si avatar të bisedës** | Off | Zëvendëson ikonën e parazgjedhur të AI në kokën e widget-it të bisedës me ikonën e site-it WordPress (e vendosur te Appearance → Customize → Site Identity). |
+
+### Flamujt e sigurisë së automatizimit {#automation-safety-flags}
+
+Superdav AI Agent v1.18.0 prezanton porta miratimi nga njeriu dhe regjistra kujtuesish për ekzekutime më të sigurta të automatizimit. Këto kontrolle mund të shfaqen në flamujt e veçorive ose në cilësimet e avancuara të automatizimit, në varësi të paketës së instaluar.
+
+| Flamur | Parazgjedhja | Përshkrimi |
+|---|---|---|
+| **Kërko miratim nga njeriu** | Rekomandohet i aktivizuar | Ndalon përkohësisht automatizimet e ndjeshme derisa një përdorues i autorizuar të shqyrtojë dhe të konfirmojë veprimin e propozuar. |
+| **Dedublikimi i kujtuesve** | On | Regjistron kujtuesit e dërguar në mënyrë që riprovimet ose ekzekutimet e planifikuara të mos dërgojnë njoftime të dyfishta. |
+| **Aktivizo mjetet e kalendarit** | Off derisa të konfigurohet | Lejon agjentin të lexojë kalendarët dhe ngjarjet e konfiguruara të Google. |
+| **Aktivizo njoftimet SMS** | Off derisa të konfigurohet | Lejon rrjedhat e miratuara të punës të dërgojnë njoftime SMS TextBee pasi kredencialet të ruhen. |
+
+### Zbatimi i ndryshimeve {#applying-changes}
+
+Klikoni **Ruaj cilësimet** pasi të ndërroni cilindo flamur. Ndryshimet hyjnë në fuqi menjëherë — nuk kërkohet pastrim cache-i ose riaktivizim plugin-i.

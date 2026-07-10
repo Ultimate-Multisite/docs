@@ -3,17 +3,17 @@ title: Ενσωμάτωση GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Ενσωμάτωση GridPane
+# Ενσωμάτωση GridPane {#gridpane-integration}
 
-## Επισκόπηση
+## Επισκόπηση {#overview}
 Το GridPane είναι ένας εξειδικευμένος πίνακας ελέγχου φιλοξενίας WordPress, σχεδιασμένος για επαγγελματίες του WordPress. Αυτή η ενσωμάτωση επιτρέπει τον αυτόματο συγχρονισμό domains και τη διαχείριση πιστοποιητικών SSL μεταξύ του Ultimate Multisite και του GridPane.
 
-## Χαρακτηριστικά
+## Χαρακτηριστικά {#features}
 - Αυτόματος συγχρονισμός domains
 - Διαχείριση πιστοποιητικών SSL
 - Αυτόματη ρύθμιση της σταθεράς SUNRISE
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 Οι παρακάτω σταθερές πρέπει να οριστούν στο αρχείο `wp-config.php`:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Οδηγίες Εγκατάστασης
+## Οδηγίες Εγκατάστασης {#setup-instructions}
 
-### 1. Λήψη των Διαπιστευτηρίων API του GridPane
+### 1. Λήψη των Διαπιστευτηρίων API του GridPane {#1-get-your-gridpane-api-credentials}
 
 1. Συνδεθείτε στον πίνακα ελέγχου του GridPane
 2. Μεταβείτε στις "Settings" > "API"
 3. Δημιουργήστε ένα κλειδί API αν δεν έχετε ήδη
 4. Αντιγράψτε το κλειδί API σας
 
-### 2. Λήψη των Server και Site IDs
+### 2. Λήψη των Server και Site IDs {#2-get-your-server-and-site-ids}
 
 1. Στον πίνακα ελέγχου του GridPane, μεταβείτε στο "Servers"
 2. Επιλέξτε τον διακομιστή όπου φιλοξενείται το WordPress multisite σας
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Μεταβείτε στο "Sites" και επιλέξτε τον ιστότοπο WordPress σας
 5. Σημειώστε το Site ID (εμφανίζεται στο URL ή στη σελίδα λεπτομερειών του ιστότοπου)
 
-### 3. Προσθήκη Σταθερών στο wp-config.php
+### 3. Προσθήκη Σταθερών στο wp-config.php {#3-add-constants-to-wp-configphp}
 
 Προσθέστε τις παρακάτω σταθερές στο αρχείο `wp-config.php`:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Ενεργοποίηση της Ενσωμάτωσης
+### 4. Ενεργοποίηση της Ενσωμάτωσης {#4-enable-the-integration}
 
 1. Στη διαχείριση του WordPress, μεταβείτε στο Ultimate Multisite > Settings
 2. Πλοηγηθείτε στην καρτέλα "Domain Mapping"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Ενεργοποιήστε την ενσωμάτωση GridPane
 5. Κάντε κλικ στο "Save Changes"
 
-## Πώς Λειτουργεί
+## Πώς Λειτουργεί {#how-it-works}
 
 Όταν γίνεται αντιστοίχιση ενός domain στο Ultimate Multisite:
 
@@ -69,23 +69,23 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 
 Η ενσωμάτωση χειρίζεται επίσης αυτόματα τη σταθερά SUNRISE στο αρχείο wp-config.php, η οποία είναι απαραίτητη για τη σωστή λειτουργία της αντιστοίχισης domains.
 
-## Διαχείριση της Σταθεράς SUNRISE
+## Διαχείριση της Σταθεράς SUNRISE {#sunrise-constant-management}
 
 Ένα μοναδικό χαρακτηριστικό της ενσωμάτωσης GridPane είναι ότι επαναφέρει αυτόματα τη σταθερά SUNRISE στο wp-config.php για να αποφευχθούν συγκρούσεις με το δικό του σύστημα αντιστοίχισης domains του GridPane. Αυτό διασφαλίζει ότι και τα δύο συστήματα μπορούν να λειτουργήσουν μαζί χωρίς προβλήματα.
 
-## Αντιμετώπιση Προβλημάτων
+## Αντιμετώπιση Προβλημάτων {#troubleshooting}
 
-### Προβλήματα Σύνδεσης API
+### Προβλήματα Σύνδεσης API {#api-connection-issues}
 - Βεβαιωθείτε ότι το κλειδί API σας είναι σωστό
 - Ελέγξτε ότι τα Server και Site IDs είναι σωστά
 - Βεβαιωθείτε ότι ο λογαριασμός σας στο GridPane έχει τα απαραίτητα δικαιώματα
 
-### Προβλήματα Πιστοποιητικού SSL
+### Προβλήματα Πιστοποιητικού SSL {#ssl-certificate-issues}
 - Το GridPane μπορεί να χρειαστεί λίγο χρόνο για να εκδώσει πιστοποιητικά SSL
 - Βεβαιωθείτε ότι τα domains σας δείχνουν σωστά στη διεύθυνση IP του διακομιστή σας
 - Ελέγξτε τις ρυθμίσεις SSL του GridPane για τον ιστότοπό σας
 
-### Το Domain Δεν Προστέθηκε
+### Το Domain Δεν Προστέθηκε {#domain-not-added}
 - Ελέγξτε τα αρχεία καταγραφής του Ultimate Multisite για τυχόν μηνύματα σφάλματος
 - Βεβαιωθείτε ότι το domain δεν έχει ήδη προστεθεί στο GridPane
 - Βεβαιωθείτε ότι οι εγγραφές DNS του domain σας είναι σωστά ρυθμισμένες

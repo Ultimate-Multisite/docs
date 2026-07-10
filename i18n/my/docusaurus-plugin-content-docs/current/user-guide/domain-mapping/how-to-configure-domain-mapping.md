@@ -1,130 +1,138 @@
 ---
-title: Domain Mapping ကို ဘယ်လို ပြင်ဆင်သတ်မှတ်မလဲ
+title: Domain Mapping ကို ဘယ်လို သတ်မှတ်ပြင်ဆင်မလဲ
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapping ပြင်ဆင်ခြင်း နည်းလမ်း (v2)
+# Domain Mapping (v2) ကို ပြင်ဆင်သတ်မှတ်နည်း {#how-to-configure-domain-mapping-v2}
 
-_**အရေးကြီးသော မှတ်ချက်: ဤဆောင်းပါးသည် Ultimate Multisite version 2.x အတွက် ဖြစ်ပါသည်။**_
+_**အရေးကြီးမှတ်ချက်: ဤဆောင်းပါးသည် Ultimate Multisite ဗားရှင်း 2.x ကို ရည်ညွှန်းထားသည်။**_
 
-Premium network တစ်ခု၏ အစွမ်းထက်ဆုံး feature များထဲမှ တစ်ခုသည် သုံးစွဲသူများကို ၎င်းတို့၏ site များတွင် top-level domain ချိတ်ဆက်ခွင့်ပေးနိုင်ခြင်း ဖြစ်ပါသည်။ [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) နှင့် [_**joesbikeshop.com**_](http://joesbikeshop.com) နှစ်ခုကို နှိုင်းယှဉ်ကြည့်လျှင် ဘယ်ဟာက ပိုပရော်ဖက်ရှင်နယ်ဆန်သလဲ စဉ်းစားကြည့်ပါ။ ထို့ကြောင့် Ultimate Multisite သည် ဤ feature ကို built-in အနေဖြင့် ပေးထားပြီး third-party plugin များ သုံးစရာမလိုပါ။
+အဆင့်မြင့် network တစ်ခု၏ အားအကောင်းဆုံး လုပ်ဆောင်ချက်များထဲမှ တစ်ခုမှာ မိမိတို့၏ client များအား ၎င်းတို့၏ site များတွင် top-level domain တစ်ခု ချိတ်ဆက်အသုံးပြုနိုင်ရန် အခွင့်အရေး ပေးနိုင်ခြင်းဖြစ်သည်။ နောက်ဆုံးတွင် မည်သည်က ပိုမိုပရော်ဖက်ရှင်နယ် ဆန်သနည်း: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) သို့မဟုတ် [_**joesbikeshop.com**_](http://joesbikeshop.com)? ထို့ကြောင့် Ultimate Multisite သည် third-party plugin များ အသုံးပြုရန် မလိုဘဲ ထိုလုပ်ဆောင်ချက်ကို အသင့်ထည့်သွင်းပေးထားသည်။
 
-## Domain mapping ဆိုတာဘာလဲ?
+## Domain mapping ဆိုတာဘာလဲ? {#whats-domain-mapping}
 
-နာမည်အတိုင်းပင် domain mapping ဆိုသည်မှာ Ultimate Multisite မှ ပေးအပ်သော စွမ်းရည်တစ်ခုဖြစ်ပြီး custom domain အတွက် request တစ်ခုကို လက်ခံကာ ထို domain ချိတ်ဆက်ထားသော network ထဲရှိ သက်ဆိုင်ရာ site သို့ ချိတ်ဆက်ပေးခြင်း ဖြစ်ပါသည်။
+အမည်အတိုင်းပင် domain mapping ဆိုသည်မှာ custom domain တစ်ခုအတွက် တောင်းဆိုမှုကို လက်ခံပြီး ထို domain ချိတ်ဆက်ထားသော network အတွင်းရှိ သက်ဆိုင်ရာ site သို့ ထိုတောင်းဆိုမှုကို ချိတ်ဆက်ညွှန်ပြပေးနိုင်သော Ultimate Multisite ၏ လုပ်ဆောင်ချက်ဖြစ်သည်။
 
-### သင့် Ultimate Multisite Network တွင် domain mapping ပြင်ဆင်နည်း
+### သင်၏ Ultimate Multisite Network တွင် domain mapping ကို စတင်သတ်မှတ်နည်း {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping အလုပ်လုပ်ရန် သင့်ဘက်မှ အနည်းငယ် ပြင်ဆင်ရပါမည်။ ကျေးဇူးတင်စရာမှာ Ultimate Multisite က ခက်ခဲသော အလုပ်များကို အလိုအလျောက် လုပ်ဆောင်ပေးသောကြောင့် လိုအပ်ချက်များကို အလွယ်တကူ ဖြည့်ဆည်းနိုင်ပါသည်။
+Domain mapping အလုပ်လုပ်ရန် သင့်ဘက်မှ အချို့ပြင်ဆင်သတ်မှတ်မှု လိုအပ်သည်။ ကံကောင်းစွာဖြင့် Ultimate Multisite သည် ခက်ခဲသောအပိုင်းများကို သင့်အတွက် အလိုအလျောက်လုပ်ဆောင်ပေးသောကြောင့် လိုအပ်ချက်များကို အလွယ်တကူ ဖြည့်ဆည်းနိုင်သည်။
 
-Ultimate Multisite ထည့်သွင်းစဉ် wizard သည် **sunrise.php** ကို သတ်မှတ်ထားသော folder သို့ အလိုအလျောက် copy လုပ်ပြီး install လုပ်ပေးမည်ဖြစ်သည်။ **ဤအဆင့် မပြီးမချင်း wizard က သင့်ကို ဆက်လက်ခွင့်ပြုမည် မဟုတ်ပါ**။
+Ultimate Multisite ထည့်သွင်းနေစဉ် wizard သည် **sunrise.php** ကို သတ်မှတ်ထားသော folder သို့ အလိုအလျောက် ကူးယူပြီး ထည့်သွင်းပေးမည်။ **ဤအဆင့်ပြီးစီးသည်အထိ wizard သည် သင့်အား ရှေ့ဆက်ခွင့်မပြုပါ**။
 
-![sunrise.php အဆင့်ပါသော Ultimate Multisite installation wizard](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-ဆိုလိုသည်မှာ Ultimate Multisite installation wizard က သင့် network ပြင်ဆင်မှု ပြီးဆုံးသွားသည်နှင့် custom domain ချိတ်ဆက်ခြင်းကို ချက်ချင်း စတင်နိုင်ပါပြီ။
+ဤအရာသည် Ultimate Multisite ထည့်သွင်းခြင်း wizard က သင်၏ network ကို ပြင်ဆင်သတ်မှတ်ပြီးသည်နှင့် custom domain ကို ချက်ချင်း စတင်ချိတ်ဆက်နိုင်သည်ဟု ဆိုလိုသည်။
 
-Ultimate Multisite တွင် domain mapping သည် မဖြစ်မနေ လုပ်ရန်မလိုပါ။ WordPress Multisite ၏ မူလ domain mapping function သို့မဟုတ် အခြား domain mapping solution များကို သုံးရန် ရွေးချယ်နိုင်ပါသည်။
+Ultimate Multisite တွင် domain mapping သည် မဖြစ်မနေ မဟုတ်ကြောင်း သတိပြုပါ။ WordPress Multisite ၏ မူလ domain mapping လုပ်ဆောင်ချက် သို့မဟုတ် အခြား domain mapping ဖြေရှင်းနည်းတစ်ခုခုကို အသုံးပြုရန် ရွေးချယ်နိုင်သည်။
 
-အခြား domain mapping solution များအတွက် Ultimate Multisite domain mapping ကို ပိတ်ထားလိုပါက **Ultimate Multisite > Settings > Domain Mapping** အောက်တွင် ဤ feature ကို ပိတ်ထားနိုင်ပါသည်။
+အခြား domain mapping ဖြေရှင်းနည်းများကို အသုံးပြုနိုင်ရန် Ultimate Multisite domain mapping ကို ပိတ်ရန် လိုအပ်ပါက **Ultimate Multisite > Settings > Domain Mapping** အောက်တွင် ဤလုပ်ဆောင်ချက်ကို ပိတ်နိုင်သည်။
 
-![enable toggle ပါသော Domain Mapping settings](/img/config/settings-domain-mapping.png)
+![admin redirect၊ mapping message နှင့် DNS ရွေးချယ်စရာများကို ပြသထားသော Domain Mapping settings စာမျက်နှာ](/img/config/domain-mapping-settings.png)
 
-ဤ option အောက်တွင် **Force Admin Redirect** option ကိုလည်း တွေ့ရပါမည်။ ဤ option သည် သင့်သုံးစွဲသူများ ၎င်းတို့၏ admin dashboard ကို custom domain နှင့် subdomain နှစ်ခုလုံးမှ ဝင်ရောက်နိုင်မည်လား သို့မဟုတ် တစ်ခုတည်းမှသာ ဝင်ရောက်နိုင်မည်လားကို ထိန်းချုပ်ခွင့်ပေးပါသည်။
+ဤရွေးချယ်စရာ၏ အောက်ဘက်တွင် **Force Admin Redirect** ရွေးချယ်စရာကိုလည်း တွေ့နိုင်သည်။ ဤရွေးချယ်စရာက သင့် customer များသည် ၎င်းတို့၏ admin dashboard ကို custom domain နှင့် subdomain နှစ်ခုစလုံးတွင် ဝင်ရောက်နိုင်မလား၊ သို့မဟုတ် ၎င်းတို့ထဲမှ တစ်ခုတည်းတွင်သာ ဝင်ရောက်နိုင်မလားကို ထိန်းချုပ်ခွင့်ပေးသည်။
 
-**Force redirect to mapped domain** ကို ရွေးချယ်ပါက သင့်သုံးစွဲသူများသည် ၎င်းတို့၏ admin dashboard ကို custom domain များမှသာ ဝင်ရောက်နိုင်မည်ဖြစ်သည်။
+**Force redirect to mapped domain** ကို ရွေးချယ်ပါက သင့် customer များသည် ၎င်းတို့၏ custom domain များတွင်သာ admin dashboard ကို ဝင်ရောက်နိုင်မည်ဖြစ်သည်။
 
-**Force redirect to network domain** option သည် ဆန့်ကျင်ဘက်အတိအကျ လုပ်ဆောင်ပေးပါသည် - သင့်သုံးစွဲသူများသည် custom domain များမှ login ဝင်ရန် ကြိုးစားသော်လည်း subdomain မှသာ dashboard များကို ဝင်ရောက်ခွင့်ရမည်ဖြစ်သည်။
+**Force redirect to** **network domain** ရွေးချယ်စရာသည် ထိုအရာ၏ ဆန့်ကျင်ဘက်ကို တိတိကျကျ လုပ်ဆောင်မည်ဖြစ်သည် - သင့် customer များသည် ၎င်းတို့၏ custom domain များတွင် sign in လုပ်ရန် ကြိုးစားသော်လည်း ၎င်းတို့၏ subdomain တွင်သာ dashboard များကို ဝင်ရောက်ခွင့်ရမည်ဖြစ်သည်။
 
-**Allow access to the admin by both mapped domain domain and network domain** option သည် subdomain နှင့် custom domain နှစ်ခုလုံးမှ admin dashboard များကို ဝင်ရောက်ခွင့်ပေးပါသည်။
+ထို့အပြင် **Allow access to the admin by both mapped domain domain and network domain** ရွေးချယ်စရာသည် ၎င်းတို့အား subdomain နှင့် custom domain နှစ်ခုစလုံးတွင် admin dashboard များကို ဝင်ရောက်ခွင့်ပေးသည်။
 
-![domain mapping အတွက် Force Admin Redirect options](/img/config/settings-domain-mapping.png)
+![redirect ရွေးချယ်စရာ သုံးခုကို ပြသရန် ဖြန့်ထားသော Admin Redirect dropdown](/img/config/domain-mapping-redirect-options.png)
 
-Custom domain ချိတ်ဆက်ရန် နည်းလမ်း နှစ်မျိုးရှိပါသည်။ ပထမနည်းလမ်းမှာ super admin အနေဖြင့် network admin dashboard မှ domain name ချိတ်ဆက်ခြင်းဖြစ်ပြီး ဒုတိယနည်းလမ်းမှာ account page အောက်ရှိ subsite admin dashboard မှတဆင့် ချိတ်ဆက်ခြင်းဖြစ်သည်။
+custom domain တစ်ခုကို ချိတ်ဆက်သတ်မှတ်ရန် နည်းလမ်းနှစ်ခုရှိသည်။ ပထမနည်းလမ်းမှာ super admin အဖြစ် သင့် network admin dashboard မှ domain name ကို ချိတ်ဆက်သတ်မှတ်ခြင်းဖြစ်ပြီး ဒုတိယနည်းလမ်းမှာ account စာမျက်နှာအောက်ရှိ subsite admin dashboard မှတစ်ဆင့် ပြုလုပ်ခြင်းဖြစ်သည်။
 
-သို့သော် သင့် network ရှိ subsite တစ်ခုသို့ custom domain ချိတ်ဆက်ခြင်း မစတင်မီ domain name ၏ **DNS settings** ကို မှန်ကန်စွာ ပြင်ဆင်ထားကြောင်း သေချာစေရပါမည်။
+သို့သော် သင်၏ network အတွင်းရှိ subsite တစ်ခုသို့ custom domain ကို မချိတ်ဆက်မီ domain name ၏ **DNS settings** များ မှန်ကန်စွာ ပြင်ဆင်ထားကြောင်း သေချာစေရန် လိုအပ်သည်။
 
-### 
+###
 
-### Domain DNS settings မှန်ကန်စွာ ပြင်ဆင်ထားကြောင်း သေချာစေခြင်း
+### domain ၏ DNS settings များ မှန်ကန်စွာ ပြင်ဆင်ထားကြောင်း သေချာစေရန် {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-ချိတ်ဆက်မှု အလုပ်လုပ်ရန် ချိတ်ဆက်မည့် domain သည် သင့် Network ၏ IP address သို့ ညွှန်ပြထားကြောင်း သေချာစေရပါမည်။ Network IP address - Ultimate Multisite install လုပ်ထားသော domain ၏ IP address - လိုအပ်ကြောင်း သတိပြုပါ၊ ချိတ်ဆက်လိုသော custom domain ၏ IP address မဟုတ်ပါ။ Domain တစ်ခု၏ IP address ကို ရှာဖွေရန် [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) သို့ သွားရန် အကြံပြုပါသည်။
+ချိတ်ဆက်သတ်မှတ်မှု အလုပ်လုပ်ရန် သင်ချိတ်ဆက်ရန် စီစဉ်နေသော domain သည် သင်၏ Network ၏ IP address သို့ ညွှန်ပြနေကြောင်း သေချာစေရန် လိုအပ်သည်။ သင့်တွင် Network IP address လိုအပ်ကြောင်း သတိပြုပါ - ၎င်းသည် Ultimate Multisite ထည့်သွင်းထားသော domain ၏ IP address ဖြစ်ပြီး သင်ချိတ်ဆက်လိုသော custom domain ၏ IP address မဟုတ်ပါ။ သီးခြား domain တစ်ခု၏ IP address ကို ရှာဖွေရန် ဥပမာအားဖြင့် [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) သို့ သွားရန် အကြံပြုပါသည်။
 
-Domain ကို မှန်ကန်စွာ ချိတ်ဆက်ရန် သင့် **DNS** configuration တွင် ထို **IP address** သို့ ညွှန်ပြသော **A RECORD** တစ်ခု ထည့်သွင်းရပါမည်။ DNS စီမံခန့်ခွဲမှုသည် domain registrar အသီးသီးတွင် များစွာ ကွဲပြားပါသည်၊ သို့သော် "_Creating A Record on XXXX_" (XXXX သည် သင့် domain registrar ဖြစ်သည်၊ ဥပမာ: "_Creating A Record on GoDaddy_") ဟု ရှာဖွေပါက online တွင် tutorial များစွာ ရှိပါသည်။
+domain ကို မှန်ကန်စွာ ချိတ်ဆက်သတ်မှတ်ရန် ထို **IP address** သို့ ညွှန်ပြသော **A RECORD** တစ်ခုကို သင်၏ **DNS** ပြင်ဆင်မှုတွင် ထည့်သွင်းရန် လိုအပ်သည်။ DNS စီမံခန့်ခွဲမှုသည် domain registrar တစ်ခုနှင့်တစ်ခု အလွန်ကွာခြားသော်လည်း XXXX သည် သင်၏ domain registrar ဖြစ်သည်ဟုယူဆ၍ " _Creating A Record on XXXX_ " ဟု ရှာဖွေပါက ၎င်းအကြောင်း အွန်လိုင်းတွင် လမ်းညွှန်များစွာ ရှိပါသည် (ဥပမာ - " _Creating A Record on_ _GoDaddy_ ")။
 
-ဤအရာ အလုပ်လုပ်ရန် အခက်အခဲရှိပါက **သင့် domain registrar support ကို ဆက်သွယ်ပါ**၊ ၎င်းတို့က ဤအပိုင်းတွင် ကူညီပေးနိုင်ပါမည်။
+ဤအရာကို အလုပ်လုပ်အောင် ပြုလုပ်ရာတွင် အခက်အခဲရှိပါက **သင်၏ domain registrar support ကို ဆက်သွယ်ပါ**။ ၎င်းတို့သည် ဤအပိုင်းအတွက် သင့်အား ကူညီနိုင်မည်ဖြစ်သည်။
 
-သင့်သုံးစွဲသူများကို ၎င်းတို့၏ domain များကို ကိုယ်တိုင် ချိတ်ဆက်ခွင့်ပေးရန် စီစဉ်ထားပါက ဤအပိုင်းကို ၎င်းတို့ကိုယ်တိုင် လုပ်ဆောင်ရပါမည်။ A Record ဖန်တီးရန် မတတ်နိုင်ပါက ၎င်းတို့၏ registrar support system သို့ ညွှန်ပြပေးပါ။
+သင့် client များအား ၎င်းတို့၏ domain များကို ကိုယ်တိုင် ချိတ်ဆက်သတ်မှတ်ခွင့်ပြုရန် စီစဉ်ပါက ဤအပိုင်းရှိ လုပ်ဆောင်ချက်ကို ၎င်းတို့ကိုယ်တိုင် လုပ်ဆောင်ရမည်ဖြစ်သည်။ A Record ဖန်တီး၍ မရပါက ၎င်းတို့၏ registrar support system သို့ ညွှန်ပြပေးပါ။
 
-### Super Admin အနေဖြင့် custom domain name ချိတ်ဆက်ခြင်း
+### Super Admin အဖြစ် custom domain name ကို ချိတ်ဆက်သတ်မှတ်ခြင်း {#mapping-custom-domain-name-as-super-admin}
 
-သင့် network တွင် super admin အဖြစ် login ဝင်ထားသည့်အခါ **Ultimate Multisite > Domains** အောက်သို့ သွားခြင်းဖြင့် custom domain name များကို အလွယ်တကူ ထည့်သွင်းပြီး စီမံခန့်ခွဲနိုင်ပါသည်။
+သင်၏ network တွင် super admin အဖြစ် logged in ဖြစ်နေပါက **Ultimate Multisite > Domains** အောက်သို့ သွားခြင်းဖြင့် custom domain name များကို အလွယ်တကူ ထည့်သွင်းပြီး စီမံခန့်ခွဲနိုင်သည်။
 
-![Ultimate Multisite ရှိ Domains list page](/img/admin/domains-list.png)
+![Ultimate Multisite ရှိ Domains စာရင်း စာမျက်နှာ](/img/admin/domains-list.png)
 
-ဤ page အောက်တွင် အပေါ်ဘက်ရှိ **Add Domain** button ကို နှိပ်နိုင်ပြီး modal window ပေါ်လာမည်ဖြစ်ကာ **custom domain name**၊ custom domain name အသုံးပြုလိုသော **subsite**၊ နှင့် ၎င်းကို **primary domain** name အဖြစ် သတ်မှတ်လိုသလား မသတ်မှတ်လိုဘူးလား ဆုံးဖြတ်နိုင်ပါသည် (subsite တစ်ခုတွင် **domain name များစွာ ချိတ်ဆက်နိုင်ကြောင်း** သတိပြုပါ)။
+ဤစာမျက်နှာအောက်တွင် အပေါ်ဘက်ရှိ **Add Domain** ခလုတ်ကို နှိပ်နိုင်ပြီး ၎င်းက modal window တစ်ခုကို ဖွင့်ပေးမည်။ ထိုနေရာတွင် **custom domain name**၊ custom domain name ကို အသုံးချလိုသော **subsite** ကို သတ်မှတ်ဖြည့်သွင်းနိုင်ပြီး ၎င်းကို **primary domain** name အဖြစ် သတ်မှတ်မလား မသတ်မှတ်ဘူးလား ဆုံးဖြတ်နိုင်သည် (သင်သည် **domain name များစွာကို subsite တစ်ခုသို့ ချိတ်ဆက်သတ်မှတ်နိုင်သည်** ကို သတိပြုပါ)။
 
-![domain name နှင့် site fields ပါသော Add Domain modal](/img/admin/domains-list.png)
+![domain name၊ site ရွေးချယ်ကိရိယာနှင့် primary domain toggle ပါရှိသော Add Domain modal](/img/admin/domain-add-modal.png)
 
-အချက်အလက်အားလုံး ဖြည့်သွင်းပြီးနောက် အောက်ခြေရှိ **Add Existing Domain** button ကို နှိပ်နိုင်ပါသည်။
+အချက်အလက်အားလုံး ထည့်သွင်းပြီးနောက် အောက်ခြေရှိ **Add Existing Domain** ခလုတ်ကို နှိပ်နိုင်သည်။
 
-ဤသည် custom domain ၏ DNS အချက်အလက်ကို စစ်ဆေးပြီး ရယူသော လုပ်ငန်းစဉ်ကို စတင်မည်ဖြစ်သည်။ လုပ်ဆောင်နေသော အဆင့်ဆင့်ကို စောင့်ကြည့်ရန် page အောက်ခြေတွင် log တစ်ခုလည်း တွေ့ရပါမည်။ ဤလုပ်ငန်းစဉ်သည် ပြီးမြောက်ရန် မိနစ်အနည်းငယ် ကြာနိုင်ပါသည်။
+၎င်းသည် custom domain ၏ DNS အချက်အလက်များကို အတည်ပြုခြင်းနှင့် ရယူခြင်းလုပ်ငန်းစဉ်ကို စတင်မည်ဖြစ်သည်။ လုပ်ငန်းစဉ် မည်သို့ဆက်လက်ဖြစ်ပေါ်နေသည်ကို လိုက်ကြည့်နိုင်ရန် စာမျက်နှာအောက်ခြေတွင် log တစ်ခုကိုလည်း တွေ့ရမည်။ ဤလုပ်ငန်းစဉ် ပြီးစီးရန် မိနစ်အနည်းငယ် ကြာနိုင်သည်။
 
-အရာအားလုံး မှန်ကန်စွာ ပြင်ဆင်ထားပါက **Stage** သို့မဟုတ် status သည် **Checking DNS** မှ **Ready** သို့ ပြောင်းလဲသင့်ပါသည်။
+Ultimate Multisite v2.13.0 သည် ဆိုက်အသစ်တစ်ခုကို ဆိုက်တစ်ခုချင်းစီအတွက် ဒိုမိန်းအဖြစ် သတ်မှတ်သင့်သည့် host ပေါ်တွင် ဖန်တီးသည့်အခါ အတွင်းပိုင်း ဒိုမိန်းမှတ်တမ်းကိုလည်း အလိုအလျောက် ဖန်တီးပေးသည်။ host သည် network ၏ အဓိက ဒိုမိန်း ဖြစ်ပါက သို့မဟုတ် **ဆိုက် URL** field တွင် သတ်မှတ်ထားသော မျှဝေ checkout-form အခြေခံ ဒိုမိန်းများထဲမှ တစ်ခု ဖြစ်ပါက၊ အလိုအလျောက် mapped-domain မှတ်တမ်းကို ကျော်သွားမည်ဖြစ်ပြီး ထိုမျှဝေ အခြေခံဒိုမိန်းကို အသုံးပြုသည့် ဆိုက်တိုင်းအတွက် ဆက်လက်အသုံးပြုနိုင်စေသည်။
 
-![Checking DNS မှ Ready သို့ ပြောင်းလဲနေသော Domain stage](/img/admin/domains-list.png)
+customer တစ်ဦးသည် Domain Seller v1.3.0 သို့မဟုတ် ပိုမိုအသစ်ဖြင့် ဒိုမိန်းအသစ်တစ်ခု မှတ်ပုံတင်သည့်အခါ၊ Ultimate Multisite သည် ပုံမှန်အားဖြင့် မှတ်ပုံတင်ထားသော ဒိုမိန်းကို customer ၏ network ဆိုက်သို့ အလိုအလျောက် map လုပ်ပေးသည်။ အောင်မြင်စွာ မှတ်ပုံတင်ပြီးနောက် primary-domain flag၊ activation state သို့မဟုတ် SSL ကိုင်တွယ်ပုံကဲ့သို့သော option များကို ပြင်ဆင်လိုသည့်အခါမှလွဲ၍ administrator များသည် သီးခြား mapped-domain မှတ်တမ်း ထပ်ထည့်ရန် မလိုတော့ပါ။
 
-![domains list တွင် Ready status ပြသနေသော Domain](/img/admin/domains-list.png)
+အားလုံး မှန်ကန်စွာ စီစဉ်ထားပါက **အဆင့်** သို့မဟုတ် status သည် **DNS စစ်ဆေးနေသည်** မှ **အဆင်သင့်** သို့ ပြောင်းလဲသင့်သည်။
 
-Domain name ကို နှိပ်ပါက အတွင်းတွင် option အချို့ကို မြင်ရပါမည်။ ၎င်းတို့ကို အမြန်ကြည့်ရှုကြပါစို့:
+<!-- Screenshot unavailable: ဒိုမိန်းများ စာရင်းတွင် DNS စစ်ဆေးနေသည် အဆင့်ကို ပြသထားသော ဒိုမိန်း row -->
 
-![stage, site, active, နှင့် SSL options ပါသော Domain detail page](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: အစိမ်းရောင် status indicator ပါသော အဆင်သင့် အဆင့်ကို ပြသထားသော ဒိုမိန်း row -->
 
-**Stage:** Domain ရောက်ရှိနေသော အဆင့်ဖြစ်သည်။ Domain ကို ပထမဆုံး ထည့်သွင်းသောအခါ **Checking DNS** အဆင့်တွင် ရှိနေနိုင်ပါသည်။ လုပ်ငန်းစဉ်သည် DNS entries များကို စစ်ဆေးပြီး မှန်ကန်ကြောင်း အတည်ပြုပါမည်။ ထို့နောက် domain သည် **Checking SSL** အဆင့်သို့ ရောက်ရှိမည်ဖြစ်သည်။ Ultimate Multisite သည် domain တွင် SSL ရှိမရှိ စစ်ဆေးပြီး သင့် domain ကို **Ready** သို့မဟုတ် **Ready (without SSL)** အဖြစ် အမျိုးအစားခွဲခြားပါမည်။
+ဒိုမိန်းအမည်ကို နှိပ်ပါက ၎င်းအတွင်းရှိ option အချို့ကို မြင်နိုင်ပါမည်။ အမြန်ကြည့်ကြစို့။
 
-**Site:** ဤ domain နှင့် ချိတ်ဆက်ထားသော subdomain ဖြစ်သည်။ ချိတ်ဆက်ထားသော domain သည် ဤ site ၏ content ကို ပြသမည်ဖြစ်သည်။
+![အဆင့်၊ ဆိုက်၊ active၊ primary နှင့် SSL toggle များပါသော ဒိုမိန်း အသေးစိတ် စာမျက်နှာ](/img/admin/domain-edit.png)
 
-**Active:** Domain ကို activate သို့မဟုတ် deactivate လုပ်ရန် ဤ option ကို on သို့မဟုတ် off လုပ်နိုင်ပါသည်။
+**အဆင့်:** ဤသည်မှာ ဒိုမိန်း ရောက်ရှိနေသည့် အဆင့်ဖြစ်သည်။ ဒိုမိန်းကို ပထမဆုံး ထည့်သည့်အခါ **DNS စစ်ဆေးနေသည်** အဆင့်တွင် ရှိနေနိုင်ခြေ များသည်။ လုပ်ငန်းစဉ်သည် DNS entry များကို စစ်ဆေးပြီး မှန်ကန်ကြောင်း အတည်ပြုပါမည်။ ထို့နောက် ဒိုမိန်းကို **SSL စစ်ဆေးနေသည်** အဆင့်သို့ ထားပါမည်။ Ultimate Multisite သည် ဒိုမိန်းတွင် SSL ရှိမရှိ စစ်ဆေးပြီး သင့်ဒိုမိန်းကို **အဆင်သင့်** သို့မဟုတ် **အဆင်သင့် (SSL မပါ)** အဖြစ် အမျိုးအစားခွဲပါမည်။
 
-**Is Primary Domain?:** သင့်သုံးစွဲသူများသည် site တစ်ခုအတွက် ချိတ်ဆက်ထားသော domain တစ်ခုထက်ပိုပိုင်ဆိုင်နိုင်ပါသည်။ ဤ option ကို သုံး၍ ဤ site အတွက် ၎င်းသည် primary domain ဟုတ်မဟုတ် ရွေးချယ်ပါ။
+**ဆိုက်:** ဤဒိုမိန်းနှင့် ဆက်စပ်ထားသော subdomain ဖြစ်သည်။ mapped domain သည် ဤသီးသန့် ဆိုက်၏ content ကို ပြသပါမည်။
 
-**Is Secure?:** Ultimate Multisite သည် domain ကို enable မလုပ်မီ SSL certificate ရှိမရှိ စစ်ဆေးသော်လည်း SSL certificate ပါ သို့မဟုတ် မပါဘဲ domain ကို load လုပ်ရန် ကိုယ်တိုင် ရွေးချယ်နိုင်ပါသည်။ Website တွင် SSL certificate မရှိဘဲ SSL ဖြင့် load လုပ်ရန် အတင်းလုပ်ပါက error များ ရနိုင်ကြောင်း သတိပြုပါ။
+**အသက်ဝင်မှု:** ဤ option ကို on သို့မဟုတ် off ပြောင်း၍ ဒိုမိန်းကို အသက်သွင်းနိုင် သို့မဟုတ် အသက်မသွင်းနိုင်ပါ။
 
-### Subsite user အနေဖြင့် custom domain name ချိတ်ဆက်ခြင်း
+**အဓိက ဒိုမိန်းလား?:** သင့် customer များသည် ဆိုက်တစ်ခုစီအတွက် mapped domain တစ်ခုထက်ပို၍ ရှိနိုင်သည်။ ဤသည်က ထိုသီးသန့် ဆိုက်အတွက် အဓိက ဒိုမိန်း ဖြစ်မဖြစ် ရွေးချယ်ရန် ဤ option ကို အသုံးပြုပါ။
 
-Subsite administrator များသည်လည်း ၎င်းတို့၏ subsite admin dashboard မှ custom domain name များ ချိတ်ဆက်နိုင်ပါသည်။
+**လုံခြုံသလား?:** Ultimate Multisite သည် ဒိုမိန်းကို enable မလုပ်မီ SSL certificate ရှိမရှိ စစ်ဆေးသော်လည်း၊ ဒိုမိန်းကို SSL certificate ပါ၍ သို့မဟုတ် မပါဘဲ load လုပ်ရန် ကိုယ်တိုင် ရွေးချယ်နိုင်သည်။ website တွင် SSL certificate မရှိဘဲ SSL ဖြင့် အတင်း load လုပ်ရန် ကြိုးစားပါက error များ ဖြစ်နိုင်ကြောင်း သတိပြုပါ။
 
-ပထမဦးစွာ **Domain mapping** settings အောက်တွင် ဤ option ကို enable လုပ်ထားကြောင်း သေချာစေရပါမည်။ အောက်ပါ screenshot ကို ကြည့်ပါ။
+### Subsite user အဖြစ် custom ဒိုမိန်းအမည် map လုပ်ခြင်း {#mapping-custom-domain-name-as-subsite-user}
 
-![subsite users များကို domain ချိတ်ဆက်ခွင့်ပေးသော Domain mapping settings](/img/config/settings-domain-mapping.png)
+Subsite administrator များသည် ၎င်းတို့၏ subsite admin Dashboard မှ custom ဒိုမိန်းအမည်များကိုလည်း map လုပ်နိုင်သည်။
 
-**Ultimate Multisite > Products** တွင် **Plan** level သို့မဟုတ် product options အောက်တွင်လည်း ဤ option ကို သတ်မှတ်ပြင်ဆင်နိုင်ပါသည်။
+ပထမဆုံး **ဒိုမိန်း mapping** setting များအောက်တွင် ဤ option ကို enable လုပ်ထားကြောင်း သေချာစေရပါမည်။ အောက်ပါ screenshot ကို ကြည့်ပါ။
 
-![product settings ရှိ Product custom domains option](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Customer DNS Management toggle မှတစ်ဆင့် subsite user များကို ဒိုမိန်း map လုပ်ခွင့်ပြုသော ဒိုမိန်း mapping setting များ -->
 
-ဤ option များထဲမှ တစ်ခုခုကို enable လုပ်ထားပြီး subsite user ကို custom domain name များ ချိတ်ဆက်ခွင့်ပေးထားသည့်အခါ subsite user သည် **Account** page အောက်တွင် **Domains** ဟုခေါ်သော metabox တစ်ခု မြင်ရပါမည်။
+ဤ option ကို **အစီအစဉ်** အဆင့် သို့မဟုတ် **Ultimate Multisite > ထုတ်ကုန်များ** ရှိ ထုတ်ကုန် option များအောက်တွင်လည်း သတ်မှတ် သို့မဟုတ် ပြင်ဆင်နိုင်သည်။
 
-![subsite account page ပေါ်ရှိ Domains metabox](/img/admin/domains-list.png)
+![ထုတ်ကုန် edit စာမျက်နှာပေါ်ရှိ Custom Domains section](/img/config/product-custom-domains.png)
 
-User သည် **Add Domain** button ကို နှိပ်နိုင်ပြီး လမ်းညွှန်ချက်အချို့ပါသော modal window ပေါ်လာမည်ဖြစ်သည်။
+ထို option များထဲမှ တစ်ခုခုကို enable လုပ်ထားပြီး subsite user ကို custom ဒိုမိန်းအမည်များ map လုပ်ခွင့်ပြုထားပါက၊ subsite user သည် **Account** စာမျက်နှာအောက်တွင် **ဒိုမိန်းများ** ဟု ခေါ်သော metabox တစ်ခုကို မြင်ရမည်။
 
-![subsite users များအတွက် DNS လမ်းညွှန်ချက်များပါသော Add Domain modal](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: Add Domain ခလုတ်ပါသော subsite Account စာမျက်နှာပေါ်ရှိ ဒိုမိန်းများ metabox -->
 
-User သည် **Next Step** ကို နှိပ်ပြီး custom domain name ထည့်သွင်းရန် ဆက်လက်နိုင်ပါသည်။ ၎င်းသည် primary domain ဖြစ်မဖြစ်လည်း ရွေးချယ်နိုင်ပါသည်။
+user သည် **ဒိုမိန်း ထည့်ရန်** ခလုတ်ကို နှိပ်နိုင်ပြီး ညွှန်ကြားချက်အချို့ပါသော modal window တစ်ခု ပေါ်လာပါမည်။
 
-![primary domain option ပါသော custom domain name ထည့်သွင်းရန် field](/img/admin/domains-list.png)
+<!-- Screenshot unavailable: subsite user များအတွက် DNS A-record ညွှန်ကြားချက်များကို ပြသသော Add Domain modal -->
 
-![DNS စစ်ဆေးမှု စတင်ရန် Add Domain ကို နှိပ်ပါ](/img/admin/domains-list.png)**Add Domain** ကို နှိပ်ခြင်းဖြင့် custom domain ၏ DNS အချက်အလက်ကို စစ်ဆေးပြီး ရယူသော လုပ်ငန်းစဉ်ကို စတင်မည်ဖြစ်သည်။
+ထို့နောက် user သည် **နောက်အဆင့်** ကို နှိပ်ပြီး custom ဒိုမိန်းအမည် ထည့်သွင်းရန် ဆက်လက်လုပ်ဆောင်နိုင်သည်။ ၎င်းသည် အဓိက ဒိုမိန်း ဖြစ်မဖြစ်ကိုလည်း ရွေးချယ်နိုင်သည်။
 
-### Domain Syncing အကြောင်း
+<!-- Screenshot unavailable: custom ဒိုမိန်းအမည် field နှင့် primary domain toggle ပါသော Add Domain form -->
 
-Domain Syncing သည် **domain mapping အလုပ်လုပ်ရန်** Ultimate Multisite က custom domain name ကို သင့် hosting account တွင် add-on domain အဖြစ် ထည့်သွင်းပေးသော လုပ်ငန်းစဉ်ဖြစ်သည်။
+<!-- Screenshot unavailable: DNS verification ကို စတင်စေသော Add Domain အတည်ပြု အဆင့် -->
 
-သင့် hosting provider သည် Ultimate Multisite domain mapping feature နှင့် integration ရှိပါက domain syncing သည် အလိုအလျောက် ဖြစ်ပေါ်ပါသည်။ လက်ရှိတွင် ဤ hosting provider များသည် _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ နှင့် _Cpanel_ တို့ဖြစ်ပါသည်။
+**ဒိုမိန်း ထည့်ရန်** ကို နှိပ်ပါက custom ဒိုမိန်း၏ DNS အချက်အလက်များကို အတည်ပြုခြင်းနှင့် ရယူခြင်း လုပ်ငန်းစဉ် စတင်ပါမည်။
 
-Ultimate Multisite settings ရှိ **Integration** tab အောက်တွင် ဤ integration ကို activate လုပ်ရပါမည်။
+### ဒိုမိန်း Syncing အကြောင်း {#about-domain-syncing}
 
-![Ultimate Multisite settings ရှိ Integration tab](/img/config/settings-domain-mapping.png)
+ဒိုမိန်း Syncing သည် Ultimate Multisite က custom ဒိုမိန်းအမည်ကို သင့် hosting account ထဲသို့ add-on domain အဖြစ် ထည့်သွင်းပေးသော လုပ်ငန်းစဉ်ဖြစ်ပြီး **ဒိုမိန်း mapping အလုပ်လုပ်ရန်အတွက်** ဖြစ်သည်။
 
-![domain syncing အတွက် Hosting provider integration settings](/img/config/settings-domain-mapping.png)
+သင့် hosting provider တွင် Ultimate Multisite ဒိုမိန်း mapping feature နှင့် integration ရှိပါက ဒိုမိန်း syncing သည် အလိုအလျောက် ဖြစ်ပေါ်သည်။ လက်ရှိတွင် ဤ hosting provider များမှာ _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ နှင့် _Cpanel_ တို့ ဖြစ်သည်။
 
-_သင့် hosting provider သည် အထက်ဖော်ပြပါ provider များထဲမှ တစ်ခုမဟုတ်ပါက **domain name ကို သင့် hosting account သို့ ကိုယ်တိုင် sync သို့မဟုတ် ထည့်သွင်းရန် လိုအပ်ပါမည်**။_
+host-provider integration တစ်ခု active ဖြစ်နေပါက၊ Ultimate Multisite သည် အသစ်ဖန်တီးထားသော ဆိုက်များအတွက် provider-side DNS သို့မဟုတ် subdomain ဖန်တီးမှု task ကိုလည်း enqueue လုပ်နိုင်သည်။ ထို task ကို နားထောင်နေသော integration မရှိပါက no-op queue entry များကို ရှောင်ရန် background job ကို ကျော်သွားမည်။ mapped domain များအတွက် DNS နှင့် SSL စစ်ဆေးမှုများသည် ပုံမှန် domain-stage လုပ်ငန်းစဉ်မှတစ်ဆင့် ဆက်လက်လုပ်ဆောင်သည်။
+
+ဤ integration ကို Ultimate Multisite setting များရှိ **Integration** tab အောက်တွင် activate လုပ်ရန် လိုအပ်ပါမည်။
+
+![hosting provider များကို ပြသထားသော Ultimate Multisite setting များရှိ Integrations tab](/img/config/integrations-tab.png)
+
+<!-- Screenshot unavailable: Integrations setting tab ပေါ်ရှိ hosting provider Configuration link များ -->
+
+_သင့် hosting provider သည် အထက်တွင် ဖော်ပြထားသော provider များထဲမှ တစ်ခု မဟုတ်ပါက၊ **ဒိုမိန်းအမည်ကို သင့် hosting account သို့ ကိုယ်တိုင် sync လုပ်ရန် သို့မဟုတ် ထည့်ရန် လိုအပ်မည်** ဖြစ်ကြောင်း သတိပြုပါ။_

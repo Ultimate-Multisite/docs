@@ -3,7 +3,7 @@ title: Integrazzjoni Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrazzjon ta Ultimate Multisite مع Zapier
+# Integrazzjon ta Ultimate Multisite مع Zapier {#integrating-ultimate-multisite-with-zapier}
 
 F'una l-artiklu, ناقشنا [Webhooks](webhooks.md) u kif jidma nhammnu għall it-integrazzjoni ma app esterni.
 
@@ -15,7 +15,7 @@ Tista' tgħmli **Triggers** (attivaturi) li jidħlu meta xhappin juri avveniment
 
 Dan huwa magħmul biex jkun possibell min **Ultimate Multisite Zapier's triggers** u actions jidduq mill- [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Come tibda
+## Come tibda {#how-to-start}
 
 F'primier, issaqa għal Ultimate Multisite fil-lista app tal-Zapier. Alternattivament, tista' tikkliċċja fuq [dan is-link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Nel campo URL, inserisci il tuo URL completo della rete, inclusa la protocollo (
 
 Clicca sul pulsante **Yes, Continue** (Sì, Continua) per passare al passo successivo. Se tutto va bene, sarai accolto dal tuo nuovo account collegato! Clicca su **Continue** (Continua) per creare un nuovo trigger.
 
-## Come creare un nuovo Trigger
+## Come creare un nuovo Trigger {#how-to-create-a-new-trigger}
 
 Ora che il tuo account è collegato, puoi vedere gli eventi disponibili. Per questo tutorial scegliamo l'evento **payment_received**.
 
@@ -67,7 +67,7 @@ In questa fase, Zapier testerà se il tuo Zap può **recuperare il payload speci
 
 Fil-test bl-tutorial, il test kienfetti b'moddu u risponi informazzjoni ta l-payload. Il-informazzjoni ta cetri se tkun utli li tnuqna fil-istrutturar tal-azioni. Il trigger tiegħek jkun giàmmett u pronti biex titgħuqu mal-applikazzjonijiet oħra.
 
-## Come tgħmli Actions
+## Come tgħmli Actions {#how-to-create-actions}
 
 Il-Actions jikelmu informazzjoni min triggers oħra biex ikunu nuovi entry f'nnetzwerk tiegħek.
 
@@ -79,7 +79,7 @@ F'istep li j segue, tista tgħmli l-authentication tiegħek, fl-mod kif għameln
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Aħjar l-Action
+### Aħjar l-Action {#setting-up-the-action}
 
 Dan huwa **istep primarju tal-action** u għandhom ħalli xi ħaġa differenti. Il-informazzjoni li tista tagħżel ewoluwa b'il-**Item**. L-Item huwa il-mod ta informazzjoni tal-nnetzwerk tiegħek, meta **Customers, Payments, Sites, Emails** u oħra.
 

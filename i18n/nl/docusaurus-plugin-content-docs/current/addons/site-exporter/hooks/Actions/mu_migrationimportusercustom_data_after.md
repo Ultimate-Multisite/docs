@@ -4,21 +4,21 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Actie: mu_migration/import/user/custom_data_after
+# Actie: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
 
 Wordt geactiveerd na het exporteren van de aangepaste gebruikersgegevens.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $user_data | `array` | De array met gebruikersgegevens. |
 | $user | `\WP_User` | Het gebruikersobject. |
 
-### Sinds
+### Sinds {#since}
 
 - 0.1.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) op regel 165

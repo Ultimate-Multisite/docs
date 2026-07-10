@@ -4,20 +4,20 @@ title: Filtrační metoda - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filter: secure_auth_cookie
+# Filter: secure_auth_cookie {#filter-secureauthcookie}
 
 Filtruje, zda by měl autentizační cookie být odesílán pouze přes HTTPS.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
 | $secure | `bool` | Zda má cookie být odesílán pouze přes HTTPS. |
 | $user_id | `int` | ID uživatele. |
 
-### Od verze
+### Od verze {#since}
 
 - 3.1.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) na řádku 80

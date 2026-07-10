@@ -3,7 +3,7 @@ title: Komuniteti
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Si mënyr të bashkohesh në Comunitetin Ultimate Multisite
+# Si mënyr të bashkohesh në Comunitetin Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community është një hapësirë ku mund të kontaktonesh me përdorues të tjerë të Ultimate Multisite dhe të ndashësh këshilla, përvoja dhe më tepër. Për të aksesuar Ultimate Multisite Community shko te https://community.ultimatemultisite.com/home.
 

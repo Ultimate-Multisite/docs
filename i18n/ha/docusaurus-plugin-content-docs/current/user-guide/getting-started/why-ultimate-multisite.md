@@ -3,11 +3,11 @@ title: Me yasa Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Me yadda ake amfani da Ultimate Multisite
+# Me yadda ake amfani da Ultimate Multisite {#why-ultimate-multisite}
 
 Idan ka samu wannan rubutu, yana nan ba zai iya jin cewa wannan plugin na iya zama mafita ga in gina ra'ayarka ta kasuwanci. Mun roƙon ku samun duk abin da kuke bukata da ƙarshen wannan rubutun.
 
-## Me ne Ultimate Multisite?
+## Me ne Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite wani plugin ne na WordPress Multisite wanda ke ba ka damar bayar da sabbin amfani masu amfani WaaS (Waa Website a matsayin Wajare). Da wannan plugin, za ka iya samun nau'ikan tsarin biyan kuɗi daban-daban kuma ka sa abokan ciniki su biya maka kuɗin wajare don samun wuri na gudanar da shi a cikin shafin Multisite ɗinka.
 
@@ -15,7 +15,7 @@ Ultimate Multisite yana ba ka damar karɓar kuɗin da kake samu ta hanyar gwaje-
 
 Kuma wannan kawai shi ne farko tun daga nan zaka iya ƙara ayyukan sa ta hanyar add-ons da webhooks.
 
-## Sifofi na gaba
+## Sifofi na gaba {#other-features}
 
 Ultimate Multisite kuma yana ba da:
 
@@ -33,11 +33,11 @@ Ultimate Multisite kuma yana ba da:
 
 * API جستجو و جایگزینی (Search and Replace API): همچنین می‌توانید قالب سایت را با مکان‌هایی مثل `{{site_name}}` علامت‌گذاری کرده و از API جستجو و جایگزینی برای پر کردن خودکار آن مکان‌ها با اطلاعاتی که مشتری بلافاصله پس از ثبت‌نام ارائه می‌دهد، به صورت خودکار استفاده کنید.
 
-## موارد استفاده
+## موارد استفاده {#use-cases}
 
 حالا وقت دیدن برخی از موارد استفاده ممکن برای Ultimate Multisite است.
 
-### مورد ۱: یک آژانس
+### مورد ۱: یک آژانس {#case-1-an-agency}
 
 معمولاً مهارت‌های اصلی یک آژانس در طراحی وب‌سایت‌ها با جنبه‌هایی مانند میزبانی یا بازاریابی که به عنوان خدمات اضافی فهرست می‌شوند، نهفته است.
 
@@ -47,7 +47,7 @@ Ultimate Multisite kuma yana ba da:
 
 Agencies za sukewa da Ultimate Multisite ba su ba da shauka, domin yana ba su damar da suka yi da kyau - zane gidan yanar gizo masu ban sha'awa.
 
-### Lokaci 2: Bayan Aiki na Musamman (Niche Provider)
+### Lokaci 2: Bayan Aiki na Musamman (Niche Provider) {#case-2-niche-provider}
 
 Akwai wani gaisuwa mai rauniwa wanda ke cewa, “Ka yi wani abu kuma ka yi shi da kyau”. Ga ga masu ƙwararru da dama, wannan yana nufin samar da wata kayayyaki ko sabis bi tsakiya ne ta wani ra'ayi na asali.
 
@@ -57,7 +57,7 @@ Wani ƙarin fasahar Ultimate Multisite, wato template site, shine wuri da aka in
 
 Ga wanda yake bayarwa ga wanda ke samar da sites da musamman da ayyuka, wannan yana ba shi fa'ida mai girma wajen da zai iya samar da site daya nan da nan wanda ya kasance shirye don aiki tare da plugins da zane na musamman. Abokin ciniki kawai yana buƙatar ba shi ƙaramin bayani don kammala wannan sabon aiki.
 
-### Lokaci 3: Wurin Ajiye WordPress (WordPress Web Hosting)
+### Lokaci 3: Wurin Ajiye WordPress (WordPress Web Hosting) {#case-3-wordpress-web-hosting}
 
 Akwai hanyoyi da yawa na ajiye sites na WordPress, amma ba wai sauka ne ba kamar samar da wuri na yanar gizo ga abokin ciniki tare da wani bayanin WordPress da aka shigar shi. Wannan yana faruwa saboda akwai wasu mutane da matsaloli da buƙatar haɗa su don samar da wani sabon aiki mai ma'ana.
 

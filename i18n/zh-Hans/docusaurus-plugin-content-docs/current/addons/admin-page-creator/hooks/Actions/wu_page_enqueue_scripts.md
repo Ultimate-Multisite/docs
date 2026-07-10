@@ -1,23 +1,22 @@
 ---
 id: wu_page_enqueue_scripts
-title: 操作 - wu_page_enqueue_scripts
+title: 动作 - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
-_i18n_hash: 3004f784084d124b8fdd5fd29bee2545
+_i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts
+# 操作：wu_page_enqueue_scripts {#action-wupageenqueuescripts}
 
-在此添加自定义操作，以便我们有一个位置来根据需要排队脚本和样式\ 并确保它们仅在正确的页面上加载
+在这里添加自定义操作，以便我们有一个位置可以按需将脚本和样式加入队列\ 并确保它们只在正确的页面上加载
 
-## Parameters
+## 参数 {#parameters}
 
-| Name | Type | Description |
+| 名称 | 类型 | 描述 |
 |------|------|-------------|
-| $ | `\WU_Page` | 当前管理员页面 |
+| $ | `\WU_Page` | 当前管理页面 |
 
-### Since
+### 自 {#since}
 
 - 1.3.0
+### 来源 {#source}
 
-### Source
-
-在 `inc/class-wu-admin-pages.php`（https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1153）第 1153 行定义
+定义于 [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1123) 第 1123 行

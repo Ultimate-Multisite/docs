@@ -3,7 +3,7 @@ title: Mengelola Situs
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Mengelola Situs
+# Mengelola Situs {#managing-sites}
 
 Situs (atau subsite) adalah inti dari bisnis WaaS Anda. Ultimate Multisite memiliki 3 jenis situs:
 
@@ -11,13 +11,13 @@ Situs (atau subsite) adalah inti dari bisnis WaaS Anda. Ultimate Multisite memil
 - **Template Situs** — Situs yang sudah disiapkan sebelumnya dan dapat dipilih pelanggan sebagai titik awal
 - **Situs Utama** — Situs jaringan utama Anda
 
-## Melihat Situs
+## Melihat Situs {#viewing-sites}
 
 Buka **Ultimate Multisite → Sites** untuk melihat semua subsite di jaringan Anda. Setiap situs diberi label berdasarkan jenisnya dan Anda dapat memfilter berdasarkan All Sites, Customer-Owned, Templates, atau Pending.
 
 ![Halaman daftar situs](/img/admin/sites-list.png)
 
-## Menambahkan Situs Baru
+## Menambahkan Situs Baru {#adding-a-new-site}
 
 Klik tombol **Add Site** untuk membuat situs baru. Anda perlu mengisi:
 
@@ -27,15 +27,15 @@ Klik tombol **Add Site** untuk membuat situs baru. Anda perlu mengisi:
 
 Opsi **Copy Site** memungkinkan Anda membuat situs baru berdasarkan template situs yang sudah ada. Jika diaktifkan, Anda dapat memilih template mana yang akan digunakan sebagai titik awal. Pastikan **Copy Media on Duplication** diaktifkan untuk menyertakan file media.
 
-## Mengelola Situs yang Sudah Ada
+## Mengelola Situs yang Sudah Ada {#managing-an-existing-site}
 
 Klik **Manage** pada situs mana pun untuk membuka halaman **Edit Site**. Di sini Anda akan menemukan:
 
-### Informasi Dasar
+### Informasi Dasar {#basic-information}
 
 Nama situs, jenis, site ID, dan deskripsi. Anda juga akan melihat domain yang dipetakan, membership yang terkait, dan akun pelanggan yang memiliki situs tersebut.
 
-### Opsi Situs
+### Opsi Situs {#site-options}
 
 Atur kemampuan dan batasan situs:
 
@@ -47,7 +47,7 @@ Atur kemampuan dan batasan situs:
 
 Secara default, situs mengikuti batasan yang ditetapkan di tingkat membership. Mengatur batasan di tingkat situs akan menimpa pengaturan membership.
 
-### Asosiasi
+### Asosiasi {#associations}
 
 Di bawah opsi situs, Anda akan menemukan informasi tentang:
 
@@ -55,7 +55,7 @@ Di bawah opsi situs, Anda akan menemukan informasi tentang:
 - **Membership** tempat situs berada
 - **Akun pelanggan** yang terhubung dengan situs
 
-### Sidebar Kanan
+### Sidebar Kanan {#right-sidebar}
 
 Di sisi kanan Anda dapat:
 

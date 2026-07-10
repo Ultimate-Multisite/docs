@@ -3,11 +3,11 @@ title: Produkti Domini u Prezzijiet
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Prodotti e Prezzi di Dominio
+# Prodotti e Prezzi di Dominio {#domain-products-and-pricing}
 
 I prodotti di dominio ti permettono di controllare i prezzi, i TLD (Top-Level Domains), la privacy WHOIS e la selezione del provider. Ogni prodotto di dominio è un prodotto Ultimate Multisite standard con una scheda extra **Domain Settings**.
 
-## Creare un prodotto di dominio
+## Creare un prodotto di dominio {#creating-a-domain-product}
 
 1. Vai a **Network Admin › Ultimate Multisite › Products**
 2. Clicca su **Add New** (Aggiungi Nuovo)
@@ -17,13 +17,13 @@ I prodotti di dominio ti permettono di controllare i prezzi, i TLD (Top-Level Do
 
 I prodotti di dominio appaiono con un badge viola **Domain** nella lista dei prodotti e possono essere filtrati utilizzando la scheda **Domain Products**.
 
-## Scheda impostazioni dominio
+## Scheda impostazioni dominio {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Seleziona quale registrar gestisce la registrazione per questo prodotto. Di default, è impostato il **Default provider** (Provider predefinito) globale nelle impostazioni del Venditore di Dominio.
 
-### TLD supportati
+### TLD supportati {#supported-tlds}
 
 Lascia vuoto per creare un **catch-all product** (prodotto "tutto incluso") che si applica a tutti i TLD non corrispondenti ad altri prodotti.
 
@@ -31,7 +31,7 @@ Inserisci una lista separata da virgole dei TLD (ad esempio, `.com, .net, .org`)
 
 **Come funziona l'abbinamento dei prodotti:** Quando un cliente cerca un dominio, l'addon sceglie il prodotto corrispondente più specifico. Un prodotto con `.com` nella sua lista TLD ha la precedenza su un prodotto catch-all. Se non corrisponde nessun prodotto specifico per TLD, viene utilizzato il catch-all. Se non esistono prodotti, la ricerca del dominio non viene mostrata.
 
-### Tipo di markup (Markup type)
+### Tipo di markup (Markup type) {#markup-type}
 
 Tre modalità controllano come viene calcolato il tuo prezzo al dettaglio dal costo wholesale:
 
@@ -41,11 +41,11 @@ Tre modalità controllano come viene calcolato il tuo prezzo al dettaglio dal co
 | **Fixed markup** (Markup fisso) | Aggiunge un importo fisso in dollari. Un markup di $5 su un dominio da $10 dà $15. |
 | **Fixed price** (Prezzo fisso) | Ignora completamente il costo wholesale. Si addebita sempre l'importo che inserisci. |
 
-### Prezzi introduttivi
+### Prezzi introduttivi {#introductory-pricing}
 
 Abella l-offerta ta prezz discountati għall-prima annila. Istawla **Prezz introdutturi** (il-prezz tal-ann 1) separat mill-**Prezz ta rinewwizjoni** regolari (l-ann 2+). Il-klijenti jorxu l-bidda prezzijiet kollha klawża ta' checkout biex jgħid li għandu aspettatt għar-rinewwizjoni.
 
-### Prettiviet WHOIS
+### Prettiviet WHOIS {#whois-privacy}
 
 Jipprogramma se jipprovvidi o meno protezzjoni ta' WHOIS għall-domeni li jitqrejru b'siġġġ u l-prodottu din.
 
@@ -59,7 +59,7 @@ Għal Namecheap, protezzjoni ta' WHOIS tista' tiffrija WhoisGuard (ma tiddirxsex
 
 ---
 
-## Import u sincronizzazzjoni tal-TLD
+## Import u sincronizzazzjoni tal-TLD {#tld-import-and-sync}
 
 Il-prodotti ta' domeni jipprovvidu prezzijiet wholesale reġjali mill-provider li jkun konness. Biex dan jserva, il-TLDs (Top-Level Domains) għandhom jitqrejru.
 
@@ -77,7 +77,7 @@ Wara sincronizzazzjoni, tista' tmur għal tab ta 'Domain Settings' tal-prodott d
 
 ---
 
-## Admin: Registrazzjoni manuali tad-domeni
+## Admin: Registrazzjoni manuali tad-domeni {#auto-renewal}
 
 Biex tisaħħa domini b'kont proċedenti għall-klijenti biex ma jmur per il checkout:
 

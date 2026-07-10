@@ -3,11 +3,11 @@ title: Produtos de Dominio e Precios
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produtos de Domínio e Preços
+# Produtos de Domínio e Preços {#domain-products-and-pricing}
 
 Os produtos de domínio são a forma como controlas os preços, os TLDs (domínios de nível superior), a privacidade WHOIS e a seleção do provedor. Cada produto de domínio é um produto Ultimate Multisite padrão com uma aba extra **Domain Settings** (Definições de Domínio).
 
-## Criar um produto de domínio
+## Criar um produto de domínio {#creating-a-domain-product}
 
 1. Ve ao **Network Admin › Ultimate Multisite › Products**.
 2. Clica em **Add New** (Adicionar Novo).
@@ -17,13 +17,13 @@ Os produtos de domínio são a forma como controlas os preços, os TLDs (domíni
 
 Os produtos de domínio aparecem com um distintivo roxo **Domain** (Domínio) na lista de produtos e podem ser filtrados usando a aba **Domain Products** (Produtos de Domínio).
 
-## Aba Domain settings (Definições de Domínio)
+## Aba Domain settings (Definições de Domínio) {#domain-settings-tab}
 
-### Provider (Provedor)
+### Provider (Provedor) {#provider}
 
 Seleciona qual registrador trata do registo para este produto. O padrão é o **Default provider** (Provedor Padrão) definido nas configurações do Vendedor de Domínios (Domain Seller).
 
-### Supported TLDs (TLDs Suportados)
+### Supported TLDs (TLDs Suportados) {#supported-tlds}
 
 Deixa em branco para criar um **catch-all product** (produto abrangente/geral) que se aplica a todos os TLDs que não sejam correspondidos por outro produto.
 
@@ -31,7 +31,7 @@ Insere uma lista separada por vírgulas de TLDs (ex: `.com, .net, .org`) para cr
 
 **Como funciona a correspondência de produtos:** Quando um cliente procura um domínio, o addon escolhe o produto correspondente mais específico. Um produto com `.com` na sua lista de TLD tem prioridade sobre um produto abrangente. Se nenhum produto específico de TLD corresponder, usa-se o abrangente. Se não existir nenhum produto, a pesquisa de domínio não é mostrada.
 
-### Markup type (Tipo de Margem/Markup)
+### Markup type (Tipo de Margem/Markup) {#markup-type}
 
 Três modos controlam como o teu preço retalhista é calculado a partir do custo atacadista:
 
@@ -41,11 +41,11 @@ Três modos controlam como o teu preço retalhista é calculado a partir do cust
 | **Fixed markup** (Margem Fixa) | Adiciona um valor fixo em dólares. Uma margem de $5 num domínio de $10 dá $15. |
 | **Fixed price** (Preço Fixo) | Ignora completamente o custo atacadista. Sempre cobra o valor que introduz. |
 
-### Introductory pricing (Preços de Introdução)
+### Introductory pricing (Preços de Introdução) {#introductory-pricing}
 
 Activar a oferta de un precio reducido para el primer año. Configure un **Precio Introductorio** (el precio del año 1) junto al **Precio de Renovación** regular (año 2+). El cliente verá ambos precios mostrados durante la compra, así sabe qué esperar en la renovación.
 
-### Privacidad WHOIS
+### Privacidad WHOIS {#whois-privacy}
 
 Controla se ofrece o no protección de privacidad WHOIS para los dominios registrados a través de este producto.
 
@@ -59,7 +59,7 @@ Para Namecheap, la privacidad WHOIS utiliza WhoisGuard (siempre gratuita). Para 
 
 ---
 
-## Importación y sincronización de TLD
+## Importación y sincronización de TLD {#tld-import-and-sync}
 
 Los productos de dominio muestran precios al por mayor en tiempo real obtenidos del proveedor conectado. Para que esto funcione, los TLD deben importarse.
 
@@ -70,7 +70,7 @@ Después de una sincronización, vaya a la pestaña Configuración del Dominio d
 
 ---
 
-## Renovación automática
+## Renovación automática {#auto-renewal}
 
 Las renovaciones de dominios están vinculadas al estado de membresía del cliente:
 
@@ -90,7 +90,7 @@ IDs de plantillas de correo electrónico para eventos del ciclo de vida del domi
 
 ---
 
-## Admin: Registo manual de domínio
+## Admin: Registo manual de domínio {#admin-manual-domain-registration}
 
 Para registar un dominio en nome dun cliente sen pasar pelo proceso de checkout:
 

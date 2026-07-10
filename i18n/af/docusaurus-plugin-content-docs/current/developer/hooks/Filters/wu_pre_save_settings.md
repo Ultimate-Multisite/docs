@@ -4,11 +4,11 @@ title: Filter - wu_pre_save_settings
 sidebar_label: wu_pre_save_settings
 _i18n_hash: 9fe0dc9f71e2d9da3869f40ab53dc453
 ---
-# Filter: wu_pre_save_settings
+# Filter: wu_pre_save_settings {#filter-wupresavesettings}
 
 Laat ontwikkelaars instellings filter voordat Ultimate Multisite dit stoor.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Laat ontwikkelaars instellings filter voordat Ultimate Multisite dit stoor.
 | $settings_to_save | `array` | Die nuwe instellings wat bygevoeg moet word. |
 | $saved_settings | `array` | Die huidige gestoorde instellings. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.18
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/class-settings.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-settings.php#L296) by lyn 296

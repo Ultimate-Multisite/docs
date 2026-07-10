@@ -3,13 +3,13 @@ title: Nye-e Setting the Sunrise Constant on Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Setting the constant Sunrise to true on Closte
+# Setting the constant Sunrise to true on Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Mkpụta ndị na-host (host providers) hie nwere ike ịkwalite file wp-config.php nyocha ihe à dị mma. Oge a na-eme ka Ultimate Multisite abụghị ịgbagba file ahụ ọtụtụ ụda dị mkpa nke na-agbanwe constant ndị dị mkpa iji ga-akwere domain mapping na ihe ndị ọzọ ịrụ. Closte bụ onye ọkụ ahụ.
 
 Ọ bụaimanapun, Closte na-enwe ụzọ ịchukwu constant ndị a n'wp-config.php n'aka mgbe ọchịchị dị mma. Ị ga-akwado akụkọ ndị a:
 
-## Ọnye dashboard Closte
+## Ọnye dashboard Closte {#on-the-closte-dashboard}
 
 Ma ọ bụ, [log in eziokwu Closte](https://app.closte.com/), click na menu Sites, sonra igba link Dashboard n'aka site ị nwere ahịichi ọrụ ahụ:
 

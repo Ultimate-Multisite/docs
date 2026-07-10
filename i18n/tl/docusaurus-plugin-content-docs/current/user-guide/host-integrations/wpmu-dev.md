@@ -3,31 +3,31 @@ title: Integrasyon ng WPMU DEV
 sidebar_position: 4
 _i18n_hash: 01cdaa5cf8aece1ca5c269d943e8a9e9
 ---
-# Integrasyon ng WPMU DEV
+# Integrasyon ng WPMU DEV {#wpmu-dev-integration}
 
-## Pangkalahatang-ideya
+## Pangkalahatang-ideya {#overview}
 Ang WPMU DEV ay isang kumpletong platform sa WordPress na nag-aalok ng hosting, mga plugin, at serbisyo para sa mga WordPress site. Ang integrasyong ito ay nagbibigay-daan para sa awtomatikong pag-sync ng domain at pamamahala ng SSL certificate sa pagitan ng Ultimate Multisite at WPMU DEV hosting.
 
-## Mga Katangian
+## Mga Katangian {#features}
 - Awtomatikong pag-sync ng domain
 - Pamamahala ng SSL certificate
 - Mas malawak na mga pagtatangka sa pagveripika ng SSL certificate
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#requirements}
 Awtomatikong nakikita ng integrasyon kung nagho-host ka sa WPMU DEV at gumagamit ito ng built-in API. Walang karagdagang configuration ang kailangan kung nagho-host ka sa WPMU DEV.
 
 Sinusuri ng integrasyon kung mayroon kang `WPMUDEV_HOSTING_SITE_ID` constant, na awtomatikong tinutukoy kapag nagho-host sa WPMU DEV.
 
-## Mga Panuto sa Pag-set Up
+## Mga Panuto sa Pag-set Up {#setup-instructions}
 
-### 1. Beripikahin ang WPMU DEV Hosting
+### 1. Beripikahin ang WPMU DEV Hosting {#1-verify-wpmu-dev-hosting}
 
 Kung nagho-host ka sa WPMU DEV, dapat ay nakadefine na ang mga kinakailangang constant. Beripikahin kung:
 
 1. Ang `WPMUDEV_HOSTING_SITE_ID` constant ay naka-define sa iyong environment
 2. Mayroon kang aktibong membership ng WPMU DEV na may API access
 
-### 2. I-enable ang Integrasyon
+### 2. I-enable ang Integrasyon {#2-enable-the-integration}
 
 1. Sa iyong WordPress admin, pumunta sa Ultimate Multisite > Settings
 2. Mag-navigate sa tab na "Domain Mapping"
@@ -35,9 +35,9 @@ Kung nagho-host ka sa WPMU DEV, dapat ay nakadefine na ang mga kinakailangang co
 4. I-enable ang WPMU DEV integration
 5. I-click ang "Save Changes"
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-### Domain Syncing
+### Domain Syncing {#domain-syncing}
 
 Kapag may domain na naka-map sa Ultimate Multisite:
 
@@ -45,33 +45,33 @@ Kapag may domain na naka-map sa Ultimate Multisite:
 2. Awtomatikong idadagdag din nito ang www version ng domain
 3. Ang WPMU DEV ang bahalang mag-configure ng domain at magbigay ng SSL certificate
 
-### Pamamahala ng SSL Certificate
+### Pamamahala ng SSL Certificate {#ssl-certificate-management}
 
 Ang integrasyon ay naka-configure para dagdagan ang bilang ng mga pagsubok sa SSL certificate verification para sa WPMU DEV hosting, dahil maaaring tumagal ito nang konti bago ma-issue at ma-install ang mga SSL certificate. Sa default setting, susubukan nito hanggang 10 beses para sa SSL certificate verification, kumpara sa standard na 5 attempts.
 
-## Mahalagang Paalala
+## Mahalagang Paalala {#important-notes}
 
-### Pag-alis ng Domain (Domain Removal)
+### Pag-alis ng Domain (Domain Removal) {#domain-removal}
 
 Sa kasalukuyan, hindi nagbibigay ang WPMU DEV API ng paraan para tanggalin ang mga domain. Kapag tinanggal mo ang domain mapping sa Ultimate Multisite, mananatili pa rin ang domain sa iyong WPMU DEV hosting account. Kailangan mo itong manu-manong tanggalin mula sa WPMU DEV hosting dashboard kung kinakailangan.
 
-### API Authentication
+### API Authentication {#api-authentication}
 
 Gumagamit ang integrasyon ng WPMU DEV API key na naka-store sa iyong WordPress database bilang `wpmudev_apikey` option. Ito ay awtomatikong naka-set kapag iniugnay mo ang iyong site sa WPMU DEV.
 
-## Pag-troubleshoot (Troubleshooting)
+## Pag-troubleshoot (Troubleshooting) {#troubleshooting}
 
-### Mga Isyu sa Koneksyon ng API
+### Mga Isyu sa Koneksyon ng API {#api-connection-issues}
 - Siguraduhin na tama ang koneksyon ng iyong site sa WPMU DEV
 - Tingnan kung naka-set ang `wpmudev_apikey` option sa iyong WordPress database
 - Tiyakin na aktibo ang iyong membership sa WPMU DEV
 
-### Mga Isyu sa SSL Certificate
+### Mga Isyu sa SSL Certificate {#ssl-certificate-issues}
 - Maaaring tumagal ng ilang oras ang WPMU DEV para ma-issue ang mga SSL certificate (karaniwan ay 5-15 minuto)
 - Ang integrasyon ay naka-configure na mag-check hanggang 10 beses para sa mga SSL certificate
 - Kung hindi pa rin ina-issue ang mga SSL certificate pagkatapos ng maraming pagsubok, makipag-ugnayan ka sa WPMU DEV support
 
-### Hindi Naisang Domain (Domain Not Added)
+### Hindi Naisang Domain (Domain Not Added) {#domain-not-added}
 - Tingnan ang Ultimate Multisite logs para sa anumang error messages
 - I-verify kung hindi pa naidado-dagdag ang domain sa WPMU DEV
 - Siguraduhin na ang iyong WPMU DEV hosting plan ay sumusuporta sa bilang ng mga domain na idadagdag mo

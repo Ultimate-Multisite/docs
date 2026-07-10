@@ -1,21 +1,19 @@
 ---
 id: wu_users_membership_limit_message
-title: >-
-  Пожалуйста, предоставьте содержимое файла «Filter -
-  wu_users_membership_limit_message», чтобы я мог выполнить перевод.
+title: Фильтр — wu_users_membership_limit_message
 sidebar_label: wu_users_membership_limit_message
 _i18n_hash: a83690f83973b787f6a2a44c838327d2
 ---
-# Фильтр: wu_users_membership_limit_message
+# Фильтр: wu_users_membership_limit_message {#filter-wuusersmembershiplimitmessage}
 
-Позволяет разработчикам изменить сообщение о лимите пользователей членства
+Позволяет разработчикам изменить сообщение о лимите пользователей membership
 
-## Parameters
+## Параметры {#parameters}
 
-| Имя | Тип | Описание |
+| Название | Тип | Описание |
 |------|------|-------------|
-| $message | `string` | Сообщение, которое будет выведено на экран. |
+| $message | `string` | The message to print in screen. |
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/limits/class-customer-user-role-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-customer-user-role-limits.php#L72) на строке 72

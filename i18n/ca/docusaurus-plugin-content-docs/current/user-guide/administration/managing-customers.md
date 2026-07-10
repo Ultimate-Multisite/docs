@@ -3,7 +3,7 @@ title: Gestion de Clients
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Gestió de clients
+# Gestió de clients {#managing-customers}
 
 La pàgina de **Clients** mostra la llista de membres registrades a la teva xarxa. Aquesta pàgina mostra informació bàsica de l'usuari, com el nom, l'adreça electrònica, la última connexió i un enllaç de **passar a** que et permet de connectar-te al subsite de l'usuari com a administrador del site.
 

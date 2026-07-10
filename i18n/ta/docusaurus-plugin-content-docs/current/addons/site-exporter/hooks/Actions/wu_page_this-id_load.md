@@ -4,22 +4,22 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d34bb63c8517d5bba151d14c83b3bb44
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Plugin உருவாக்குநர்கள் (plugin developers) குறிப்பிட்ட பக்கத்தில் கூடுதல் hooks-களைச் சேர்க்க இது அனுமதிக்கிறது.
 
 **பயன்பாடு:** டைனமிக் பகுதியானது (dynamic part) ஒரு சரியான page id உடன் மாற்றப்பட வேண்டும். உதாரணமாக: `add_action('wu_page_events_load', 'callback_with_aditional_hook', 10, 2);`
 
-## அளவுருக்கள் (Parameters)
+## அளவுருக்கள் (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | இந்த பக்கத்தின் ID. |
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | இந்த பக்கத்திற்கு உருவாக்கப்பட்ட hook. |
 
-### Since
+### Since {#since}
 
 - 1.8.2
-### Source
+### Source {#source}
 
 Defined in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L301) at line 301

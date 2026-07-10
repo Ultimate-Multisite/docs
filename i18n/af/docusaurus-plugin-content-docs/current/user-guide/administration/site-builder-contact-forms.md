@@ -3,11 +3,11 @@ title: Site Builder Kontakvorms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Site Builder Kontakvorms
+# Site Builder Kontakvorms {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 voeg die vermoë by om kontakvorms direk vanaf die chat-koppelvlak te skep met die Site Builder agent. Dit laat jou toe om volkome funksionele kontakvorms by enige bladsy te voeg sonder om die chat te verlaat.
 
-## Oorsig
+## Oorsig {#overview}
 
 Die Site Builder kontakvormvermoë (`create_contact_form`) herken outomaties jou geïnstalleerde form plugin en skep 'n kontakvorm met behulp van daardie plugin se ingebooide funksionaliteite. Ondersteunde form plugins sluit in:
 
@@ -18,7 +18,7 @@ Die Site Builder kontakvormvermoë (`create_contact_form`) herken outomaties jou
 
 Die assistent kies outomaties die beste beskikbare form plugin op jou webwerf en genereer 'n kontakvorm wat aangepas is vir daardie plugin.
 
-## Skep 'n Kontakvorm
+## Skep 'n Kontakvorm {#creating-a-contact-form}
 
 Om 'n kontakvorm te skep met behulp van die Site Builder:
 
@@ -34,7 +34,7 @@ Om 'n kontakvorm te skep met behulp van die Site Builder:
 
 4. Die Site Builder sal die kontakvorm genereer en 'n shortcode teruggee wat gereed is om ingebed te word.
 
-## Gebruik die Ge genereerde Shortcode
+## Gebruik die Ge genereerde Shortcode {#using-the-generated-shortcode}
 
 Nadat die Site Builder die kontakvorm geskep het, gee dit 'n shortcode terug (byvoorbeeld, `[contact-form-7 id="123"]`). Jy kan:
 
@@ -45,11 +45,11 @@ Nadat die Site Builder die kontakvorm geskep het, gee dit 'n shortcode terug (by
 
 3. **Dit in 'n sjabloon gebruik** — As jy gemaklik is met PHP, kan jy die shortcode by 'n tema-sjabloon lêer voeg.
 
-## Aanpas die Kontakvorm
+## Aanpas die Kontakvorm {#customizing-the-contact-form}
 
 Nadat die Site Builder die kontakvorm geskep het, kan jy dit verder aanpas:
 
-### Via die Chat-koppelvlak
+### Via die Chat-koppelvlak {#via-the-chat-interface}
 
 Vra die Site Builder om die vorm te wysig:
 
@@ -57,7 +57,7 @@ Vra die Site Builder om die vorm te wysig:
 
 Die Site Builder sal die vorm opdateer en die opgedateerde shortcode teruggee.
 
-### Via die Form Plugin se Admin-koppelvlak
+### Via die Form Plugin se Admin-koppelvlak {#via-the-form-plugins-admin-interface}
 
 Jy kan die vorm ook direk in jou form plugin se instellings aanpas:
 
@@ -65,7 +65,7 @@ Jy kan die vorm ook direk in jou form plugin se instellings aanpas:
 2. Vind die vorm wat deur die Site Builder geskep is.
 3. Wysig die vormvelde, valideringsreëls en e-poskennisgewings soos nodig.
 
-## Form Plugins en Kompatibiliteit
+## Form Plugins en Kompatibiliteit {#form-plugins-and-compatibility}
 
 Die Site Builder herken outomaties watter form plugin op jou webwerf geïnstalleer is en gebruik dit om die kontakvorm te skep. As verskeie form plugins geïnstalleer is, prioritiseer die Site Builder hulle in hierdie volgorde:
 
@@ -76,7 +76,7 @@ Die Site Builder herken outomaties watter form plugin op jou webwerf geïnstalle
 
 Indien nie een van hierdie plugins geïnstalleer is nie, sal die Site Builder aanbeveel om een te installeer voordat die kontakvorm geskep word.
 
-## E-poskennisgewings
+## E-poskennisgewings {#email-notifications}
 
 Kontakvorms wat deur die Site Builder geskep word, word standaard gekonfigureer om e-poskennisgewings aan die webwerfbeheerder te stuur. Jy kan die ontvanger e-posadres en kennisgewingsboodskap aanpas:
 
@@ -91,21 +91,21 @@ Vir gedetailleerde instruksies, verwys na jou form plugin se dokumentasie:
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Voorbeeld Gebruiksvlakke
+## Voorbeeld Gebruiksvlakke {#example-use-cases}
 
-### Eenvoudige Kontakvorm
+### Eenvoudige Kontakvorm {#simple-contact-form}
 
 > "Skep 'n eenvoudige kontakvorm met velde vir naam, e-pos en boodskap."
 
-### Meerdere Stappe Vorm
+### Meerdere Stappe Vorm {#multi-step-form}
 
 > "Skep 'n kontakvorm met 'n eerste stap vir kontakbesonderhede en 'n tweede stap vir die boodskap en verkiesde kontakmetode."
 
-### Vorm met Kondisionele Logika
+### Vorm met Kondisionele Logika {#form-with-conditional-logic}
 
 > "Skep 'n kontakvorm wat verskillende velde wys gebaseer op die gebruiker se keuse in 'n dropdown."
 
-### Vorm met Bestandoplaai
+### Vorm met Bestandoplaai {#form-with-file-upload}
 
 > "Skep 'n kontakvorm wat gebruikers toelaat om 'n lêer of byvoeging te oplaai."
 

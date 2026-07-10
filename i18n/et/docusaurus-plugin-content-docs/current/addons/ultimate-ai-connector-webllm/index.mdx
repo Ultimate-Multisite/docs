@@ -1,0 +1,144 @@
+---
+title: Ülim AI-ühendaja WebLLM-i jaoks
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM toob brauseripõhise AI-järeldamise sinu WordPress multisite-võrku. See käitab suuri keelemudeleid täielikult brauseris, kasutades WebLLM-i ja MLC mootorit — ei API-võtmeid, ei väliseid päringuid, kasutaja seadmest ei lahku andmeid.
+
+## Põhifunktsioonid {#key-features}
+
+- **Brauseripoolne järeldamine**: LLM töötab lokaalselt külastaja brauseris WebLLM/MLC kaudu — serveri GPU-d pole vaja
+- **Ujuv vestlusvidin**: Sisselogitud kasutajad saavad brauseripoolsele LLM-ile päringuid esitada otse saidi avalehelt
+- **Admin-riba olekunäidik**: WebLLM mootori reaalajas olek on nähtav WordPressi admin-ribal
+- **SharedWorker käituskeskkond**: Mitu brauserikaarti jagavad ühte GPU-seanssi, selle asemel et GPU-ressursside pärast konkureerida
+- **apiFetch vahetarkvara**: WordPress REST-päringud, mis vastavad AI Client SDK mustrile, suunatakse läbipaistvalt lokaalsesse WebLLM vahendajasse — ilma loopback HTTP edasi-tagasi päringuta
+- **Vidina sätete UI**: Connector-paneeli sätted vestlusvidina sisse- ja väljalülitamiseks ning automaatpäringu käitumise seadistamiseks
+- **IndexedDB vahemälu**: Mudeli kaalude allalaadimised säilivad ka CDN-i ümbersuunamiste korral, mis rikuvad vaikimisi Cache API tee
+- **wpai filtri integratsioon**: Haakub filtriga `wpai_preferred_text_models`, et AI Experiments funktsioon suunaks seadistamise korral brauserimootorisse
+
+## Nõuded {#requirements}
+
+- WordPress 5.3 või uuem
+- PHP 7.4 või uuem
+- Ultimate Multisite plugin (aktiivne)
+- WebGPU toega brauser (Chrome 113+, Edge 113+ või Firefox Nightly, kus WebGPU on lubatud)
+
+## Paigaldamine {#installation}
+
+1. Laadi addoni failid üles oma `/wp-content/plugins/` kataloogi
+2. Aktiveeri plugin WordPressis menüü „Pluginad” kaudu
+3. Liigu jaotisse **Ultimate Multisite → AI Connector**, et addon seadistada
+
+## Ujuv vestlusvidin {#floating-chat-widget}
+
+Ujuv vestlusvidin võimaldab igal sisselogitud kasutajal suhelda brauseripoolse LLM-iga otse sinu saidi avalehelt, lahkumata lehelt, millel nad parajasti on.
+
+### Mida see teeb {#what-it-does}
+
+Kui see on lubatud, ilmub sisselogitud kasutajatele iga avalehe nurka vestlusikoon. Ikoonil klõpsamine avab vestluspaneeli, kuhu kasutaja saab sisestada päringuid ja saada vastuseid lokaalselt töötavalt WebLLM mudelilt. Kuna mudel töötab täielikult brauseris, on vastused privaatsed ega hõlma mingit serveripoolset töötlemist.
+
+### Admin-riba olekunäidik {#admin-bar-status-indicator}
+
+WordPressi admin-riba sisaldab olekunäidikut, mis kuvab WebLLM mootori praegust olekut:
+
+| Olek | Tähendus |
+|--------|---------|
+| **Laadimine** | MLC mootor lähtestub või laadib alla mudeli kaale |
+| **Valmis** | Mudel on laaditud ja järeldamiseks saadaval |
+| **Jõude** | Mootor on laaditud, kuid SharedWorker kaart pole aktiivne |
+| **Viga** | Mootori lähtestamine ebaõnnestus — üksikasju vaata brauseri konsoolist |
+
+Näidik uueneb reaalajas ega nõua lehe uuesti laadimist.
+
+### Kuidas vidinat lubada või keelata {#how-to-enable-or-disable-the-widget}
+
+1. Mine võrgu adminis jaotisse **Ultimate Multisite → AI Connector**
+2. Leia paneel **Connector**
+3. Lülita **Luba ujuv vestlusvidin** sisse või välja
+4. Salvesta sätted
+
+Vidinat saab lubada või keelata ka saidipõhiselt saidi enda administ, kui võrgu administraator on selle õiguse andnud.
+
+## Vidina sätted {#widget-settings}
+
+Paneel Connector jaotises **Ultimate Multisite → AI Connector** sisaldab ujuva vestlusvidina jaoks järgmisi sätteid:
+
+### Luba ujuv vestlusvidin {#enable-floating-chat-widget}
+
+Lülitab vestlusvidina kogu võrgus sisse või välja. Kui see on keelatud, ei ilmu vidin ühelegi avalehele, olenemata kasutaja rollist.
+
+**Vaikimisi:** Väljas
+
+### Automaatpäringu käitumine {#auto-prompt-behaviour}
+
+Määrab, kas vestlusvidin saadab kasutaja selle avamisel automaatselt päringu.
+
+| Valik | Käitumine |
+|--------|-----------|
+| **Keelatud** | Vidin avaneb tühja vestlusena — kasutaja sisestab oma päringu |
+| **Lehe kontekst** | Vidin avaneb eeltäidetud päringuga, mis põhineb praeguse lehe pealkirjal ja sisul |
+| **Kohandatud päring** | Vidin avaneb kohandatud päringuga, mille määrad alloleval väljal |
+
+Kui määratud on **Kohandatud päring**, ilmub täiendav tekstiväli, kuhu saad sisestada vaikimisi päringu teksti. Toetab põhilisi mallimuutujaid:
+
+- `{site_name}` — praeguse saidi nimi
+- `{page_title}` — praeguse lehe pealkiri
+- `{user_display_name}` — sisselogitud kasutaja kuvatav nimi
+
+**Vaikimisi:** Keelatud
+
+## SharedWorker käituskeskkond {#sharedworker-runtime}
+
+Versioon 1.1.0 tutvustab MLC mootori jaoks SharedWorker käituskeskkonda. Varem laadis iga WebLLM-i kasutanud brauserikaart oma mudeli eksemplari, konkureerides GPU mälu pärast ja põhjustades piiratud VRAM-iga seadmetes jõudlusprobleeme.
+
+SharedWorker käituskeskkonnaga toimib üks kaart mootori hostina. Kõik teised kaardid suhtlevad selle ühe eksemplariga workeri sõnumikanali kaudu. Tulemus:
+
+- Üks GPU-seanss, mida jagatakse kõigi avatud kaartide vahel
+- Kiiremad vastused pärast mudeli laadimist (ilma korduva lähtestamiseta)
+- Madalam maksimaalne mälukasutus seadmes
+
+SharedWorker on kasutajatele läbipaistev. Admin-riba olekunäidik kajastab alati jagatud mootori, mitte üksiku kaardi olekut.
+
+## apiFetch vahetarkvara {#apifetch-middleware}
+
+Addon paigaldab `apiFetch` vahetarkvara, mis püüab kinni WordPress REST API päringud, mis vastavad AI Client SDK mustrile. Selle asemel et teha serverisse loopback HTTP-päring, suunatakse need päringud otse lokaalsesse WebLLM vahendajasse, mis töötab SharedWorkeris.
+
+See tähendab, et pluginad ja teemad, mis kasutavad AI endpointide kutsumiseks standardset WordPressi `apiFetch` API-t, saavad brauseripoolsest mudelist automaatselt kasu, kui see on saadaval, ilma et oleks vaja koodi muuta.
+
+## Hookid ja filtrid {#hooks-and-filters}
+
+### Filtrid {#filters}
+
+- `wpai_preferred_text_models` — Registreeri WebLLM-i brauserimootor eelistatud tekstimudelina. Lisamoodul haakub selle filtriga automaatselt, kui mootor on seadistatud ja saadaval.
+- `ultimate_webllm_widget_enabled` — Alista vidina lubatud olek konkreetse kasutaja või konteksti jaoks. Tagasta `true` või `false`.
+- `ultimate_webllm_auto_prompt` — Muuda automaatviiba teksti enne, kui see vidinale saadetakse. Saab viibastringi ja praeguse `WP_Post` objekti.
+
+## Tõrkeotsing {#troubleshooting}
+
+### Vestlusvidinat ei kuvata {#the-chat-widget-does-not-appear}
+
+- Veendu, et kasutaja oleks sisse logitud — vidinat kuvatakse ainult autenditud kasutajatele
+- Kontrolli, et **Luba ujuv vestlusvidin** oleks Connectori paneelis sisse lülitatud
+- Veendu, et kasutaja brauser toetaks WebGPU-d (vt ülal jaotist Nõuded)
+
+### Adminiriba indikaator näitab "Viga" {#the-admin-bar-indicator-shows-error}
+
+Ava brauseri arendajakonsool (F12) ja otsi WebLLM-iga seotud vigu. Levinud põhjused:
+
+- Brauser ei toeta WebGPU-d
+- Mudeli kaalude allalaadimine nurjus — kontrolli võrguühendust ja proovi brauseri arendajatööriistades IndexedDB vahemälu tühjendada (Application → IndexedDB)
+- Brauserilaiendus blokeerib SharedWorkeri
+
+### Mudeli kaalud laaditakse iga kord alla {#model-weights-download-every-time}
+
+Lisamoodul kasutab vahemälu taustsüsteemina IndexedDB-d, et tagada mudeli kaalude säilimine ka CDN-i ümbersuunamiste korral. Kui kaalud laaditakse igal külastusel uuesti alla, kontrolli, et brauseri privaatsusseade või laiendus ei tühjendaks IndexedDB-d.
+
+## Muudatuste logi {#changelog}
+
+Täieliku versiooniajaloo leiad jaotisest [Muudatuste logi](./changelog).

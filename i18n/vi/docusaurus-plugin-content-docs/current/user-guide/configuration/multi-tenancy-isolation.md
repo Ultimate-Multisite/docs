@@ -3,7 +3,7 @@ title: Cách ly đa người thuê
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Cô lập Đa người thuê (Multi-Tenancy Isolation)
+# Cô lập Đa người thuê (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Cô lập đa người thuê là một khái niệm quan trọng trong các hệ thống WordPress đa trang (multisite). Nó đề cập đến việc đảm bảo rằng dữ liệu, cấu hình và hoạt động của một trang web (site) không ảnh hưởng hay bị lẫn lộn với các trang web khác đang chạy trên cùng một nền tảng hoặc máy chủ. Nói cách khác, mỗi trang web phải hoạt động như một thực thể độc lập hoàn toàn về mặt dữ liệu.
 
@@ -12,7 +12,7 @@ Trong môi trường WordPress đa người thuê, mục tiêu chính là ngăn 
 1. **Dữ liệu riêng biệt:** Dữ liệu của Trang A không được phép hiển thị hoặc bị ảnh hưởng bởi dữ liệu của Trang B.
 2. **Cấu hình độc lập:** Các cài đặt như theme, plugin, cấu hình cơ sở dữ liệu (database) phải được quản lý một cách tách biệt cho từng trang web cụ thể.
 
-### Tại sao Cô lập Đa người thuê lại quan trọng?
+### Tại sao Cô lập Đa người thuê lại quan trọng? {#isolation-strategy}
 
 Việc cô lập đa người thuê mang lại nhiều lợi ích thiết thực:
 
@@ -20,24 +20,24 @@ Việc cô lập đa người thuê mang lại nhiều lợi ích thiết thực
 * **Tính ổn định:** Giúp đảm bảo rằng việc cập nhật plugin hoặc theme cho Trang A sẽ không gây ra xung đột và làm hỏng hoạt động của Trang B.
 * **Tuân thủ quy định (Compliance):** Trong nhiều ngành nghề, việc tách biệt dữ liệu khách hàng là yêu cầu bắt buộc về mặt pháp lý.
 
-### Các phương pháp thực hiện Cô lập Đa người thuê trong WordPress
+### Các phương pháp thực hiện Cô lập Đa người thuê trong WordPress {#database-host-binding}
 
 Có nhiều cách để đạt được sự cô lập này, tùy thuộc vào kiến trúc bạn đang sử dụng:
 
-#### 1. Sử dụng Multisite Cơ bản (Basic Multisite)
+#### 1. Sử dụng Multisite Cơ bản (Basic Multisite) {#filesystem-root}
 
 Đây là cấu hình đơn giản nhất của WordPress cho đa trang. Trong cơ chế này, mặc dù tất cả các trang web chia sẻ cùng một cài đặt cốt lõi của WordPress, chúng vẫn được cô lập ở cấp độ dữ liệu:
 
 * **Cơ sở dữ liệu riêng:** Mỗi site trong Multisite thường có một bảng (table) hoặc một tập hợp các bảng riêng để lưu trữ nội dung, người dùng và cấu hình cụ thể của nó.
 * **Tách biệt URL:** Mỗi trang web sẽ có một tên miền (domain) hoặc subdomain riêng, giúp chúng hoạt động như những thực thể khác nhau về mặt truy cập.
 
-#### 2. Cô lập ở cấp độ Cơ sở dữ liệu (Database Level Isolation)
+#### 2. Cô lập ở cấp độ Cơ sở dữ liệu (Database Level Isolation) {#provisioning-order}
 
 Đây là mức độ cô lập sâu hơn, thường được áp dụng khi bạn cần sự tách biệt tối đa:
 
 * **Sử dụng cơ sở dữ liệu riêng:** Thay vì dùng một database chung cho tất cả các site, mỗi site có thể được gán một instance MySQL hoàn toàn riêng. Điều này đảm bảo rằng việc truy cập hoặc thao tác trên Database của Site A sẽ không bao giờ chạm vào Database của Site B.
 
-#### 3. Cô lập ở cấp độ Môi trường (Environment Isolation)
+#### 3. Cô lập ở cấp độ Môi trường (Environment Isolation) {#sovereign-customer-management-flows}
 
 Trong môi trường phát triển và sản xuất, cô lập cũng có thể được thực hiện bằng cách:
 

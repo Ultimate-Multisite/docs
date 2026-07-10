@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent یک دستیار هوش مصنوعی مستقل برای وردپرس است که می‌تواند با دستورات زبان طبیعی، سایت‌های کامل وردپرسی را برنامه‌ریزی، بسازد و مدیریت کند. این دستیار مجموعه‌ای ساختاریافته از **قابلیت‌ها** (abilities) را در اختیار شما قرار می‌دهد؛ این قابلیت‌ها اقدامات مجزایی هستند که دستیار می‌تواند فراخوانی کند و طیف وسیعی از کارهای مدیریت محتوا تا سفارشی‌سازی سیستم طراحی را پوشش می‌دهند. نسخه ۱.۹.۰ قابلیت‌های تولید محتوا، بازبینی بصری صفحات از طریق اسکرین‌شات‌های سمت کلاینت، پنج پروفایل پیش‌فرض دستیار، و فِلیگ‌های ویژگی (feature flags) برای کنترل دسترسی و برندسازی را اضافه کرده است.
 
-## ویژگی‌های کلیدی
+## ویژگی‌های کلیدی {#key-features}
 
 - **سیستم قابلیت‌ها (Abilities system)** — یک کاتالوگ ماژولار و قابل توسعه از اقداماتی که دستیار می‌تواند روی نصب وردپرسی شما انجام دهد.
 - **مدیریت محتوا (Content Management)** — ایجاد پست و صفحه (از جمله تخصیص قالب صفحه)، ایجاد دسته‌ای از پست‌ها در یک فراخوانی، تنظیم تصاویر شاخص، و ساخت فرم تماس.
@@ -28,21 +28,21 @@ Gratis AI Agent یک دستیار هوش مصنوعی مستقل برای ورد
 - **ارکستراسیون سازنده سایت v2 (Site Builder Orchestration v2)** — برنامه‌های ساخت سایت چند مرحله‌ای با کشف افزونه، ردیابی پیشرفت، و بازیابی خطا.
 - **دستور بنچمارک WP-CLI (WP-CLI benchmark command)** — اجرای مجموعه بنچمارک قابلیت دستیار از خط فرمان برای CI و ارزیابی مدل.
 
-## پیش‌نیازها
+## پیش‌نیازها {#requirements}
 
 - وردپرس ۶.۰ یا بالاتر
 - PHP ۸.۱ یا بالاتر
 - وردپرس چندسایتی (فعال در سطح شبکه) یا نصب تک‌سایتی
 - یک افزونه کانکتور هوش مصنوعی فعال (Anthropic، OpenAI، یا سازگار)
 
-## نصب
+## نصب {#installation}
 
 ۱. فایل‌های افزونه را در مسیر `/wp-content/plugins/gratis-ai-agent` آپلود کنید.
 ۲. افزونه را از طریق صفحه **افز افزونه‌ها (Plugins)** در وردپرس فعال کنید.
 ۳. به **Gratis AI Agent → تنظیمات (Settings)** بروید و ارائه‌دهنده هوش مصنوعی خود را متصل کنید.
 ۴. (اختیاری) برای نصب بسته‌های قابلیت اضافی، **ثبت قابلیت‌ها (Abilities Registry)** را مرور کنید.
 
-## شروع سریع
+## شروع سریع {#quick-start}
 
 پس از فعال‌سازی و اتصال به یک ارائه‌دهنده هوش مصنوعی، پنل **Gratis AI Agent** را در نوار کناری مدیریت وردپرس باز کنید. یک دستور زبان طبیعی تایپ کنید و دستیار مراحل مورد نیاز را با استفاده از قابلیت‌های موجودش برنامه‌ریزی و اجرا خواهد کرد.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## نمای کلی قابلیت‌ها (Abilities Overview)
+## نمای کلی قابلیت‌ها (Abilities Overview) {#abilities-overview}
 
 قابلیت‌ها، اقدامات اتمی هستند که دستیار می‌تواند انجام دهد. هر قابلیت یک کلاس PHP ثبت شده است که یک شمای (پارامترها و انواع بازگشتی) را در اختیار قرار می‌دهد که دستیار در زمان اجرا آن را می‌خواند. قابلیت‌ها در حوزه‌های عملکردی گروه‌بندی شده‌اند:
 
@@ -79,7 +79,7 @@ Build a restaurant website with an online menu, booking form, and contact page.
 
 برای مستندات کامل پارامترها و مثال‌های استفاده، به [Abilities Reference](./abilities) مراجعه کنید.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent مجموعه‌ای از دستورات `wp gratis-ai-agent` را برای اجرای بنچمارک‌ها و مدیریت قابلیت‌ها از خط فرمان ارائه می‌دهد. برای لیست کامل دستورات، به [WP-CLI Reference](./wp-cli) مراجعه کنید.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## پیکربندی
+## پیکربندی {#configuration}
 
 تمام تنظیمات در پنل **Gratis AI Agent → تنظیمات (Settings)** در مدیریت وردپرس قرار دارند:
 
@@ -106,7 +106,7 @@ wp gratis-ai-agent abilities install <slug>
 | **Ability Timeout** | حداکثر ثانیه‌ای که یک قابلیت می‌تواند اجرا شود (پیش‌فرض ۳۰) |
 | **Debug Logging** | ثبت فراخوانی قابلیت‌ها و استدلال دستیار در لاگ اشکال‌زدایی وردپرس |
 
-## لیست سیاه ایمنی مدیریت تنظیمات (Options Management Safety Blocklist)
+## لیست سیاه ایمنی مدیریت تنظیمات (Options Management Safety Blocklist) {#options-management-safety-blocklist}
 
 قابلیت مدیریت تنظیمات شامل یک لیست سیاه داخلی است که از خواندن یا نوشتن تنظیمات حساس وردپرس توسط دستیار جلوگیری می‌کند. لیست سیاه پیش‌فرض شامل موارد زیر است:
 
@@ -118,26 +118,26 @@ wp gratis-ai-agent abilities install <slug>
 
 می‌توان موارد اضافی را از طریق فیلتر `gratis_ai_agent_options_blocklist` اضافه کرد.
 
-## هوک‌ها و فیلترها (Hooks and Filters)
+## هوک‌ها و فیلترها (Hooks and Filters) {#hooks-and-filters}
 
-### اکشن‌ها (Actions)
+### اکشن‌ها (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — پس از ثبت یک قابلیت فراخوانی می‌شود و نام کلاس قابلیت را دریافت می‌کند.
 - `gratis_ai_agent_plan_started` — هنگام شروع اجرای برنامه ساز سایت فراخوانی می‌شود.
 - `gratis_ai_agent_plan_completed` — هنگام تکمیل موفقیت‌آمیز یک برنامه فراخوانی می‌شود.
 - `gratis_ai_agent_plan_failed` — هنگام مواجه شدن یک برنامه با خطای غیرقابل بازیابی فراخوانی می‌شود.
 
-### فیلترها (Filters)
+### فیلترها (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — لیست قابلیت‌های ثبت شده را قبل از بارگذاری توسط دستیار تغییر می‌دهد.
 - `gratis_ai_agent_options_blocklist` — لیست سیاه ایمنی تنظیمات را گسترش یا کاهش می‌دهد.
 - `gratis_ai_agent_benchmark_questions` — سؤالات بنچمارک سفارشی را به مجموعه ارزیابی اضافه می‌کند.
 - `gratis_ai_agent_plan_plugins` — لیست کشف افزونه‌ها را در طول تولید برنامه سایت تغییر می‌دهد.
 
-## پشتیبانی
+## پشتیبانی {#support}
 
 برای پشتیبانی، به [ultimatemultisite.com](https://ultimatemultisite.com) مراجعه کنید یا یک موضوع (issue) در مخزن افزونه باز نمایید.
 
-## تاریخچه تغییرات (Changelog)
+## تاریخچه تغییرات (Changelog) {#changelog}
 
 برای مشاهده تاریخچه کامل نسخه‌ها، به [Changelog](./changelog) مراجعه کنید.

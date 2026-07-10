@@ -3,9 +3,9 @@ title: Ödemeler ve Faturaların Yönetimi
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ödeme ve Faturaları Yönetme
+# Ödeme ve Faturaları Yönetme {#managing-payments-and-invoices}
 
-## Ödeme Ayarları
+## Ödeme Ayarları {#payment-settings}
 
 Ödeme almaya başlamadan önce, ödeme ile ilgili ayarları yapılandırmanız gerekiyor. **Ultimate Multisite → Ayarlar** sayfasına gidin ve **Ödeme** sekmesine tıklayın.
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Genel Ödeme Seçenekleri
+### Genel Ödeme Seçenekleri {#general-payment-options}
 
 Genel ayarlarda şunları yapılandırabilirsiniz:
 
@@ -24,7 +24,7 @@ Genel ayarlarda şunları yapılandırabilirsiniz:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Ödeme Ağ Geçitleri (Payment Gateways)
+### Ödeme Ağ Geçitleri (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite birden fazla ödeme ağ geçidini destekler. Her birini Ödeme ayarları sekmesinden etkinleştirebilir ve yapılandırabilirsiniz.
 
@@ -40,11 +40,11 @@ Her ağ geçidinin, API anahtarlarını ve diğer ayarları girdiğiniz kendi ya
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Modu
+### Sandbox Modu {#sandbox-mode}
 
 Canlıya geçmeden önce ödeme entegrasyonunuzu test etmek için **Sandbox Modu**'nu etkinleştirebilirsiniz. Sandbox modu aktifken gerçek ücret alınmaz.
 
-## Ödemeleri Görüntüleme
+## Ödemeleri Görüntüleme {#viewing-payments}
 
 Tüm ağınızdaki işlemleri görmek için Ultimate Multisite altındaki **Ödemeler** sayfasına gidin.
 
@@ -54,7 +54,7 @@ Tüm ağınızdaki işlemleri görmek için Ultimate Multisite altındaki **Öde
 
 Bir ödemeye tıklayarak, kalem detaylarını, ilişkili üyeliği, müşteri bilgilerini ve ödeme ağ geçidi verilerini içeren tüm detaylarını görebilirsiniz.
 
-## Faturalar
+## Faturalar {#invoices}
 
 Ultimate Multisite, ödemeler için otomatik olarak fatura oluşturabilir. Fatura şablonunu ve numaralandırma formatını Ödeme ayarlarından özelleştirebilirsiniz.
 

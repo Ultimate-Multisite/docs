@@ -1,126 +1,126 @@
 ---
-title: Geld verdiene
+title: Bezuelt ginn
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Bezahlt wärde (v2)
+# Bezuelt ginn (v2) {#getting-paid-v2}
 
-_**WICHTIGE NOTIZ: Dä Artikel bezieht sich uf Ultimate Multisite Version 2.x.**_
+_**WICHTEG NOTIZ: Dësen Artikel bezitt sech op Ultimate Multisite Versioun 2.x.**_
 
-Ultimate Multisite het e integrierti System für Mitgliedschaft und Abrechnige. Damit s'Abrechnungssystem funktioniert, hämmer d'häufigste Zahlungsgateways, wo im E-Commerce brucht wärde, integriert. D'Standard-Zahlungsgateways in Ultimate Multisite sind _Stripe_, _PayPal_ und Manuell Zahlig. Du chasch au _WooCommerce_, _GoCardless_ und _Payfast_ bruche, indem du d'respektive Add-ons installiersch, um Zahlige z'erhalte.
+Ultimate Multisite huet en agebaute Memberschafts- a Rechnungssystem. Fir datt eise Rechnungssystem funktionéiert, hu mir déi heefegst Bezuel-Gateways integréiert, déi am E-Commerce benotzt ginn. Déi standardméisseg Bezuel-Gateways an Ultimate Multisite sinn _Stripe_ , _PayPal_ , a manuell Bezuelung. Dir kënnt och _WooCommerce_ , _GoCardless_ an _Payfast_ benotzen, fir Bezuelungen ze kréien, andeems Dir hir jeeweileg Add-ons installéiert.
 
-## Grundlegendi Iistellige
+## Basis-Astellungen {#basic-settings}
 
-Du chasch jede vo dene Zahlungsgateways unter de Ultimate Multisite Zahligs-Iistellige iistelle. Du findsch das, indem du uf **Ultimate Multisite menü > Settings > Payments** geisch.
+Dir kënnt all dës Bezuel-Gateways ënner de Bezuel-Astellunge vun Ultimate Multisite konfiguréieren. Dir fannt se iwwer **Ultimate Multisite Menü > Astellungen > Bezuelungen.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Bezuel-Astellungssäit an Ultimate Multisite, déi de Bezuelunge-Panel weist](/img/config/payments-settings-page.png)
 
-Bevor du dini Zahlungsgateway iistellsch, lueg bitte d'grundlegendi Zahligs-Iistellige aa, wo du konfigurierä chasch:
+Ier Dir Äre Bezuel-Gateway ariicht, kuckt wgl. op déi Basis-Bezuel-Astellungen, déi Dir konfiguréiere kënnt:
 
-**Force auto-rene** **w:** Das stellt sicher, dass d'Zahlig am End vo jedem Abrechnigszyklus automatisch wiederholt wird, abhängig vo de Abrechnigsfrequenz, wo de Benutzer usgoselect het.
+**Auto-Erneierun** **g erzwingen:** Dëst suergt dofir, datt d'Bezuelung um Enn vun all Rechnungszyklus automatesch widderholl gëtt, ofhängeg vun der Rechnungsfrequenz, déi de Benotzer ausgewielt huet.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 prüeft, öb d'aktivi Gateway e wiederverwendbari Erneuerigs-Anerkennig het, bevor es en wiederkehrendi Mitgliedschaft mit automatische Verlängerig aktiviert speichert. E Erneuerigs-Anerkennig chönnt e Gateway-Abonnement, e Abrechnigsabmachig, en gspeicherte Vault Token oder e äquivalenti wiederverwendbari Zahlungsmethode si. Wenn d'Gateway meldet, dass kei bruchbari Anerkennig existiert, speichert Ultimate Multisite d'Mitgliedschaft, aber deaktiviert d'automatische Verlängerig und notiert de Zustand mit fehlender Anerkennig, damit en Administrator oder Support de Kunde vor em Erneuerigsdatum bitte chann, d'Zahlig neu z'autorisiere.
+Ultimate Multisite v2.13.0 kontrolléiert, ob den aktive Gateway eng wiederverwendbar Erneierungs-Umeldungsinformatioun huet, ier eng widderhuelend Memberschaft mat ageschalter Auto-Erneierung gespäichert gëtt. Eng Erneierungs-Umeldungsinformatioun kann e Gateway-Abonnement, eng Rechnungsaccord, e gespäicherten Vault-Token oder eng gläichwäerteg wiederverwendbar Bezuelmethod sinn. Wann de Gateway mellt, datt keng benotzbar Umeldungsinformatioun existéiert, späichert Ultimate Multisite d'Memberschaft, schalt awer d'Auto-Erneierung aus a späichert de Status vun der feelender Umeldungsinformatioun, sou datt en Administrateur oder Support-Ablaf de Client froe kann, d'Bezuelung virum Erneierungsdatum nei ze autoriséieren.
 
-Das verhindert, dass e Mitgliedschaft automatisch verlängert wird, wenn das Gateway nur einmalige Zahlungen akzeptieren kann. Gateway add-ons müesse bestätigen, dass wiederkehrende Checkouts eine wiederverwendbare Anmeldeinformation speichern, besonders wenn das Gateway sowohl Einmalzahlung als auch gesicherte/Abonnement-Zahlungsmodi unterstützt.
+Dëst verhënnert, datt eng Memberschaft esou ausgesäit, wéi wann se sech automatesch erneiert, wann de Gateway nëmmen eemoleg Bezuelungen asammele kann. Gateway-Add-ons solle bestätegen, datt widderhuelend Checkouts eng wiederverwendbar Umeldungsinformatioun späicheren, besonnesch wann de Gateway souwuel eemoleg Erfaassung wéi och Vault-/Abonnement-Bezuelmodi ënnerstëtzt.
 
-**Versuche ohne Zahlung erlauben** **Methode:** Wenn Sie diese Option aktivieren, muss Ihr Kunde keine finanziellen Informationen während des Registrierungsprozesses eingeben. Dies wird nur erforderlich sein, wenn die Testphase abgelaufen ist.
+**Testphasen ouni Bezuel** **method erlaben:** Mat dëser Optioun ageschalt muss Äre Client keng finanziell Informatiounen am Registréierungsprozess derbäisetzen. Dëst gëtt eréischt erfuerderlech, wann d'Testperiod ofleeft.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Rechnung bei Zahlungsbestätigung senden:** Damit haben Sie die Möglichkeit, ob und ob Sie eine Rechnung nach der Zahlung senden möchten. Beachten Sie, dass Benutzer unter ihrem Subsite Dashboard Zugriff auf ihre Zahlungsverlauf haben werden. Diese Option gilt nicht für den manuellen Gateway.
+**Rechnung bei Bezuelbestätegung schécken:** Dëst gëtt Iech eng Optioun, ob eng Rechnung no der Bezuelung geschéckt soll ginn oder net. Beuecht, datt Benotzer Zougang zu hirer Bezuelgeschicht ënner hirem Subsite-Dashboard hunn. Dës Optioun gëllt net fir de manuelle Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Rechnungsnummerierungsschema:** Hier können Sie entweder einen Zahlungsreferenzcode oder ein sequenzielles Nummerierungsschema auswählen. Wenn Sie sich für einen Zahlungsreferenzcode für Ihre Rechnungen entscheiden, müssen Sie nichts konfigurieren. Wenn Sie ein sequenzielles Nummerierungsschema wählen, müssen Sie die **nächste Rechnungsnummer** (Diese Nummer wird als Rechnungsnummer für die nächste auf dem System generierte Rechnung verwendet. Sie wird jedes Mal um eins erhöht, wenn eine neue Rechnung erstellt wird. Sie können diese ändern und speichern, um die sequentielle Rechnungsnummer auf einen bestimmten Wert zurückzusetzen) und den **Rechnungsnummernpräfix** konfigurieren.
+**Rechnungsnummeréierungsschema:** Hei kënnt Dir entweder e Bezuel-Referenzcode oder e sequentiellt Nummeréierungsschema auswielen. Wann Dir e Bezuel-Referenzcode fir Är Rechnunge benotze wëllt, musst Dir näischt konfiguréieren. Wann Dir e sequentiellt Nummeréierungsschema benotze wëllt, musst Dir déi **nächst Rechnungsnummer** konfiguréieren (Dës Nummer gëtt als Rechnungsnummer fir déi nächst Rechnung benotzt, déi am System generéiert gëtt. Si gëtt all Kéier ëm een erhéicht, wann eng nei Rechnung erstallt gëtt. Dir kënnt se änneren a späicheren, fir déi sequentiell Rechnungsnummer op e bestëmmte Wäert zréckzesetzen) an de **Rechnungsnummer-Prefix.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Wo finde ich d'Gateways?
+## Wou d'Gateways ze fannen sinn: {#where-to-find-the-gateways}
 
-Sie chönne d'Payment Gateways uf de gliiche Site iistelle ( **Ultimate Multisite > Settings > Payments**). Direkt unter **active payment gateways** chönne Sie folgendes gseh: _Stripe_, _Stripe_ Checkout, _PayPal_ und _Manual_.
+Dir kënnt d'Bezuel-Gateways op där selwechter Säit ariichten ( **Ultimate Multisite > Settings > Payments**). Direkt ënner **aktive Bezuel-Gateways** , kënnt Dir gesinn: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ an _Manuell_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Sektioun aktiv Bezuel-Gateways mat Stripe, Stripe Checkout, PayPal a Manuell](/img/config/payments-active-gateways.png)
 
-Mir händ en spezielle Artikel für jede Payment Gateway, wo Sie Schritt für Schritt erkläre, wie Sie ihn iistelle chönne – die finde Sie uf de Links unde.
+Mir hunn en dedizéierten Artikel fir all Bezuel-Gateway, deen Iech duerch d'Schrëtt vun der Ariichtung féiert; Dir fannt se iwwer d'Links hei ënnen.
 
-Sie chönne d'Payment Details aaluege und bearbeite:
+Dir kënnt Bezuelungsdetailer ukucken an änneren:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Bezuelungs-Beaarbechtungsinterface](/img/admin/payment-edit.png)
 
-Hier isch en ganz Überblick über d'Payment Edit Page:
+Hei ass eng voll Vue vun der Bezuelungs-Beaarbechtungssäit:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Voll Bezuelungs-Beaarbechtungsinterface](/img/admin/payment-edit-full.png)
 
-Und hier au en ganz Überblick über d'Payment Gateways Settings:
+Hei ass och eng voll Vue vun de Bezuel-Gateway-Astellungen:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Voll Säit mat Bezuel-Gateway-Astellungen](/img/config/settings-payments-gateways-full.png)
 
-**Stripe Gateway iistelle**
+**De Stripe-Gateway ariichten**
 
-**PayPal Gateway iistelle**
+**De PayPal-Gateway ariichten**** **
 
-**Manuelle Zahlige iistelle**
+**Manuell Bezuelungen ariichten**
 
-Wenn Sie jetzt _WooCommerce_, _GoCardless_ oder _Payfast_ als Ihre Payment Gateway bruche wend, müesse Sie **ihri Add-ons installiere und konfigurierä**.
+Elo, wann Dir _WooCommerce_ , _GoCardless_ oder _Payfast_ als Äre Bezuel-Gateway benotze wëllt, musst Dir **hir Add-ons installéieren a konfiguréieren**.
 
-### Wie man d'WooCommerce Add-on installiert:
+### Wéi een de WooCommerce-Add-on installéiert: {#how-to-install-the-woocommerce-add-on}
 
-Mir verstänne, dass _Stripe_ und _PayPal_ i manche Länder nöd verfügbar sind, was Ultimate Multisite User limitiert oder hinderet, üsi Plugin effektiv z'bruche. Drum händ mir en Add-on erstellt, wo _WooCommerce_ integriert – das isch en sehr beliebts E-Commerce Plugin. Entwickler ide ganze Wält händ Add-ons erstellt, um verschiedeni Payment Gateways mit ihm z'integriere. Mir händ das gnützt, um d'Payment Gateways z'erwiitere, wo Sie mit em Ultimate Multisite Billing System bruche chönne.
+Mir verstinn, datt _Stripe_ an _PayPal_ a verschiddene Länner net verfügbar sinn, wat Ultimate Multisite-Benotzer limitéiert oder drun hënnert, eise Plugin effektiv ze benotzen. Dofir hu mir en Add-on erstallt, fir _WooCommerce,_ z'integréieren, wat e ganz populäre E-Commerce-Plugin ass. Entwéckler ronderëm d'Welt hunn Add-ons erstallt, fir verschidde Bezuel-Gateways domat z'integréieren. Mir hunn dëst genotzt, fir d'Bezuel-Gateways ze erweideren, déi Dir mam Rechnungssystem vun Ultimate Multisite benotze kënnt.
 
-_**WICHTIG:** Ultimate Multisite: D'Integration mit WooCommerce erfordert, dass WooCommerce uf Ihrer Hauptsite aktiviert isch._
+_**WICHTEG:** Ultimate Multisite: WooCommerce Integration erfuerdert, datt WooCommerce op d'mannst op Ärem Haaptsite aktivéiert ass._
 
-Gang jetz zerscht uf d'Add-ons-Seite. Du findsch die über **Ultimate Multisite > Settings**. Du söttsch d'Tabelle mit de **Add-ons** gseh. Klick uf **Check our Add-ons**.
+Gitt als éischt wgl. op d'Add-ons-Säit. Dir fannt se iwwer **Ultimate Multisite > Settings**. Dir sollt d'Tabell **Add-ons** gesinn. Klickt op **Eis Add-ons kucken**.
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Nachdem du uf **Check our Add-ons** geklickt hesch, wirsch zur Add-ons-Seite gfüehrt. Do findsch alli Ultimate Multisite add-ons. Klick uf de Add-on **Ultimate Multisite: WooCommerce Integration**.
+Nodeems Dir op **Eis Add-ons kucken** geklickt hutt, gitt Dir op d'Add-ons-Säit weidergeleet. Hei fannt Dir all Ultimate Multisite-Add-ons. Klickt op den Add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Add-ons-Säit mat Ultimate Multisite-Add-ons inklusiv WooCommerce Integration](/img/addons/addons-page.png)
 
-Es wird es Fenster mit de Details vom Add-on uftauche. Klick eifach uf **Install Now**.
+Eng Fënster mat den Detailer vun der Erweiderung geet op. Klickt einfach op **Elo installéieren**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Screenshot net verfügbar: Dialog mat Detailer vun der Ultimate Multisite WooCommerce Integration-Erweiderung mat Elo installéieren-Knäppchen -->
 
-Nachdem d'Installation fertig isch, wirsch zur Plugins-Seite gfüehrt. Do klickst du eifach uf **Network Activate** und s'WooCommerce Add-on wird uf dim Netzwerk aktiviert.
+Nodeems d’Installatioun fäerdeg ass, gitt Dir op d’Erweiderungs-Säit weidergeleet. Hei klickt einfach op **Am Netzwierk aktivéieren** an d’WooCommerce-Erweiderung gëtt op Ärem Netzwierk aktivéiert.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Screenshot net verfügbar: Erweiderungs-Säit mam Am Netzwierk aktivéieren-Link fir d’WooCommerce Integration-Erweiderung -->
 
-Nachdem du es aktiviert hesch, falls du de WooCommerce Plugin immer no nöd installiert und aktiviert hesch uf dinere Website, wirsch du e Erinnerig überchoh.
+Nodeems se aktivéiert ass, wann Dir d’WooCommerce-Erweiderung nach ëmmer net op Ärer Websäit installéiert an aktivéiert hutt, kritt Dir eng Erënnerung.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Screenshot net verfügbar: Admin-Hinweis deen den Administrateur drun erënnert, d’WooCommerce-Erweiderung ze installéieren an ze aktivéieren -->
 
-Um meh über s'WooCommerce Integration Add-on z'läse, **klick do**.
+Fir méi iwwer d’WooCommerce Integration-Erweiderung ze liesen, **klickt hei**.
 
-### Wie mer de GoCardless Add-on installiert:
+### Wéi installéiert een d’GoCardless-Erweiderung: {#how-to-install-the-gocardless-add-on}
 
-D'Installatiuschritte für de _GoCardless_-Add-on sind fast die gliich wie bi de _WooCommerce_-Add-on. Gang uf d'Add-ons-Seite und wähl de **Ultimate Multisite: GoCardless Gateway** Add-on us.
+D’Schrëtt fir d’_GoCardless_-Erweiderung z’installéieren, si bal déiselwecht wéi bei der _WooCommerce_-Erweiderung. Gitt wgl. op d’Erweiderungs-Säit a wielt d’**Ultimate Multisite: GoCardless Gateway**-Erweiderung aus.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Screenshot net verfügbar: Erweiderungs-Säit mat markéierter Ultimate Multisite GoCardless Gateway-Erweiderung -->
 
-S'Fenster vom Add-on wird uftou. Klick uf **Install Now**.
+D’Fënster vun der Erweiderung geet op. Klickt op **Elo installéieren**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Screenshot net verfügbar: Dialog mat Detailer vun der Ultimate Multisite GoCardless Gateway-Erweiderung mat Elo installéieren-Knäppchen -->
 
-Nachdem d'Installation fertig isch, wärsch du uf d'Plugins-Seite umgleitet. Do klick eifach uf **Network Activate** und s'_GoCardless_-Add-on wird uf dinem Netzwerk aktiviert.
+Nodeems d’Installatioun fäerdeg ass, gitt Dir op d’Erweiderungs-Säit weidergeleet. Hei klickt einfach op **Am Netzwierk aktivéieren** an d’_GoCardless_-Erweiderung gëtt op Ärem Netzwierk aktivéiert.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Screenshot net verfügbar: Erweiderungs-Säit mam Am Netzwierk aktivéieren-Link fir d’GoCardless Gateway-Erweiderung -->
 
-Um z'lerne, wie du mit em _GoCardless_-Gateway afangsch, **les die Artikel**.
+Fir ze léieren, wéi Dir mam _GoCardless_-Gateway ufänkt, **liest dësen Artikel**.
 
-### Wie mer s'Payfast Add-on installiert:
+### Wéi installéiert een d’Payfast-Erweiderung: {#how-to-install-the-payfast-add-on}
 
-Gang uf d'Add-ons-Seite und wähl de **Ultimate Multisite: Payfast Gateway** Add-on us.
+Gitt op d’Erweiderungs-Säit a wielt d’**Ultimate Multisite: Payfast Gateway**-Erweiderung aus.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Screenshot net verfügbar: Erweiderungs-Säit mat markéierter Ultimate Multisite Payfast Gateway-Erweiderung -->
 
-S'Fenster vom Add-on wird uftou. Klick uf **Install Now.**
+D’Fënster vun der Erweiderung geet op. Klickt op **Elo installéieren.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Screenshot net verfügbar: Dialog mat Detailer vun der Ultimate Multisite Payfast Gateway-Erweiderung mat Elo installéieren-Knäppchen -->
 
-Nachdem d'Installation fertig isch, wärsch du uf d'Plugins-Seite umgleitet. Do klick eifach uf **Network Activate** und s'_Payfast_-Add-on wird uf dinem Netzwerk aktiviert.
+Nodeems d’Installatioun fäerdeg ass, gitt Dir op d’Erweiderungs-Säit weidergeleet. Hei klickt einfach op **Am Netzwierk aktivéieren** an d’_Payfast_-Erweiderung gëtt op Ärem Netzwierk aktivéiert.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Screenshot net verfügbar: Erweiderungs-Säit mam Am Netzwierk aktivéieren-Link fir d’Payfast Gateway-Erweiderung -->

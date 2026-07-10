@@ -3,11 +3,11 @@ title: Administrare emails systematis.
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gestionem Email Systematis
+# Gestionem Email Systematis {#managing-system-emails}
 
 Ultimate Multisite envía varios correos electrónicos del sistema para eventos como confirmaciones de registro, recibos de pago y cambios de membresía. Puedes personalizar estas plantillas de correo electrónico para que coincidan con tu marca.
 
-## Visualizare Emails Systematica
+## Visualizare Emails Systematica {#viewing-system-emails}
 
 Ve a **Ultimate Multisite → Settings** (Configuraciones) y haz clic en la pestaña **Emails** (Correos electrónicos) para ver los ajustes relacionados con el correo.
 
@@ -21,7 +21,7 @@ También puedes editar plantillas de correo electrónico individuales usando el 
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Importare Plantille Email Novas
+## Importare Plantille Email Novas {#importing-new-email-templates}
 
 Las nuevas versiones y add-ons de Ultimate Multisite pueden registrar nuevas plantillas de correo electrónico. Para evitar conflictos, las nuevas plantillas no se añaden automáticamente; debes importarlas manualmente.
 
@@ -32,7 +32,7 @@ Para importar nuevas plantillas de correo electrónico:
 3. Activa la opción **Import Emails** (Importar Correos electrónicos) para ver las plantillas disponibles
 4. Selecciona las plantillas que deseas importar y confirma
 
-## Restablecer Plantillas Email
+## Restablecer Plantillas Email {#resetting-email-templates}
 
 Si has personalizado una plantilla de correo electrónico y quieres volver al contenido predeterminado, tienes dos opciones:
 

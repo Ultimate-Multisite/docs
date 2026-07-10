@@ -3,15 +3,15 @@ title: Gumawa ng Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Generate Logo SVG
+# Generate Logo SVG {#generate-logo-svg}
 
 Ang kakayahan na **Generate Logo SVG** ay nagpapahintulot sa Theme Builder na gumawa at mag-embed ng custom logo SVG nang direkta sa iyong WordPress site, kasama ang awtomatikong *namespace-safe sanitisation*.
 
-## Overview
+## Overview {#overview}
 
 Ang kakayahang ito ay gumagawa ng *scalable vector graphics* (SVG) na logo batay sa *branding direction* at *design preferences* ng iyong site. Ang mga nabuong SVG ay awtomatikong *sanitise* upang matiyak na ligtas itong gamitin sa WordPress habang pinapanatili ang visual integrity.
 
-## Parameters
+## Parameters {#parameters}
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Ang kakayahang ito ay gumagawa ng *scalable vector graphics* (SVG) na logo batay
 | `height` | number | No | Taas ng SVG sa pixels (default: 200) |
 | `include_text` | boolean | No | Kung isasama ba ang pangalan ng site bilang text sa logo (default: true) |
 
-## Output Format
+## Output Format {#output-format}
 
 Ang kakayahan ay nagbabalik ng isang SVG string na may ganitong istraktura:
 
@@ -36,7 +36,7 @@ Ang kakayahan ay nagbabalik ng isang SVG string na may ganitong istraktura:
 }
 ```
 
-## SVG Sanitisation Behaviour
+## SVG Sanitisation Behaviour {#svg-sanitisation-behaviour}
 
 Ang mga nabuong SVG ay sumasailalim sa awtomatikong *namespace-safe sanitisation* upang:
 
@@ -48,7 +48,7 @@ Ang mga nabuong SVG ay sumasailalim sa awtomatikong *namespace-safe sanitisation
 
 Tinitiyak nito na ligtas i-embed ang SVG nang direkta sa WordPress nang hindi na kailangan ng dagdag na *sanitisation*.
 
-## Usage Example
+## Usage Example {#usage-example}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Ang kakayahan ay lumilikha ng isang SVG logo na:
 - Sumusunod sa modernong *design principles*
 - Awtomatikong *sanitised* at handa nang gamitin
 
-## Integration with Theme Builder
+## Integration with Theme Builder {#integration-with-theme-builder}
 
 Kapag ginagamit ang *design-direction selection* ng Theme Builder, ang Generate Logo SVG ability:
 
@@ -71,21 +71,21 @@ Kapag ginagamit ang *design-direction selection* ng Theme Builder, ang Generate 
 3. Awtomatikong ini-embed ang logo sa *header/branding area* ng iyong site.
 4. Iniimbak ang SVG bilang custom logo sa WordPress media.
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Magbigay ng malinaw na *style preferences*** — ilarawan ang *design style* na gusto mo (modern, classic, playful, atbp.).
 - **Tukuyin ang mga kulay** — isama ang mga kulay ng iyong *brand* para sa pagkakapare-pareho.
 - **Subukan ang pag-render** — i-verify na tama ang pagpapakita ng logo sa iba't ibang *screen sizes*.
 - **Mag-customize pa** — gamitin ang mga *logo customization tools* ng WordPress para i-adjust ang laki at paglalagay.
 
-## Limitations
+## Limitations {#limitations}
 
 - Ang mga SVG logo ay ginagawa bilang *static graphics* (hindi animated).
 - Ang mga kumplikadong logo na may maraming elemento ay maaaring mangailangan ng *manual refinement*.
 - Hindi sinusuportahan ang custom fonts; gumagamit ang text ng *system fonts*.
 - Ang napakalaki o napakaliit na dimensyon ay maaaring makaapekto sa kalidad.
 
-## Related Abilities
+## Related Abilities {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — tingnan ang *color contrast* para sa *accessibility*.
 - [Create Menu](./create-menu.md) — gumawa ng *navigation menus* para sa iyong site

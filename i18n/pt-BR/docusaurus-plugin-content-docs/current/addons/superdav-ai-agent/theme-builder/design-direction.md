@@ -3,17 +3,17 @@ title: Direção de Design
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Direção do Design
+# Direção do Design {#design-direction}
 
 O passo **Direção do Design** permite que você revise, refine e finalize o design visual do seu tema antes que o Theme Builder gere o tema completo.
 
-## Visão Geral
+## Visão Geral {#overview}
 
 Após concluir a Entrevista de Descoberta, o Theme Builder apresenta sua direção de design com **visualização de prévia para desktop e mobile**. Isso permite que você veja exatamente como seu design ficará em diferentes dispositivos antes de finalizar o tema.
 
-## Componentes da Direção do Design
+## Componentes da Direção do Design {#design-direction-components}
 
-### 1. Paleta de Cores
+### 1. Paleta de Cores {#1-color-palette}
 
 O esquema de cores do seu tema, incluindo:
 
@@ -23,7 +23,7 @@ O esquema de cores do seu tema, incluindo:
 - **Cores neutras** — cinzas e brancos para fundos e textos
 - **Cor do texto** — cor principal do texto para garantir a legibilidade
 
-### 2. Tipografia
+### 2. Tipografia {#2-typography}
 
 Seleções de fontes para:
 
@@ -33,14 +33,14 @@ Seleções de fontes para:
 - **Entrelinha** — espaçamento entre linhas para melhor leitura
 - **Pesos da fonte** — variações em negrito, regular e leve
 
-### 3. Layout e Espaçamento
+### 3. Layout e Espaçamento {#3-layout-and-spacing}
 
 - **Largura do container** — largura máxima para o conteúdo
 - **Preenchimento (padding) e margens** — espaçamento ao redor dos elementos
 - **Sistema de grade** — layout em colunas para design responsivo
 - **Espaçamento de componentes** — distância entre os elementos da interface (UI)
 
-### 4. Elementos Visuais
+### 4. Elementos Visuais {#4-visual-elements}
 
 - **Estilos de botão** — designs para botões primários, secundários e terciários
 - **Designs de card** — layouts para blocos de conteúdo
@@ -48,9 +48,9 @@ Seleções de fontes para:
 - **Bordas e sombras** — profundidade visual sutil
 - **Efeitos de hover** — estilos para estados interativos
 
-## Visualização de Prévia
+## Visualização de Prévia {#preview-rendering}
 
-### Prévia Desktop
+### Prévia Desktop {#desktop-preview}
 
 A prévia desktop mostra seu design em largura total (geralmente 1200px ou mais):
 
@@ -59,7 +59,7 @@ A prévia desktop mostra seu design em largura total (geralmente 1200px ou mais)
 - Tipografia e espaçamento grandes
 - Todos os elementos visuais em tamanho total
 
-### Prévia Mobile
+### Prévia Mobile {#mobile-preview}
 
 A prévia mobile mostra seu design em largura de celular (geralmente 375px):
 
@@ -68,7 +68,7 @@ A prévia mobile mostra seu design em largura de celular (geralmente 375px):
 - Tipografia e espaçamento ajustados
 - Tamanhos de botão amigáveis ao toque
 
-### Pontos de Quebra Responsivos
+### Pontos de Quebra Responsivos {#responsive-breakpoints}
 
 O Theme Builder renderiza prévias nestes pontos de quebra:
 
@@ -79,9 +79,9 @@ O Theme Builder renderiza prévias nestes pontos de quebra:
 | **Desktop** | 1200px | Desktop de largura total |
 | **Desktop Grande** | 1920px | Display ultra-wide |
 
-## Refinando Seu Design
+## Refinando Seu Design {#refining-your-design}
 
-### Fazendo Ajustes
+### Fazendo Ajustes {#making-adjustments}
 
 Você pode refinar sua direção de design fazendo o seguinte:
 
@@ -91,7 +91,7 @@ Você pode refinar sua direção de design fazendo o seguinte:
 4. **Atualizando layout** — mude larguras de container e colunas de grade
 5. **Personalizando elementos** — modifique estilos de botão, designs de card, etc.
 
-### Atualizações da Prévia
+### Atualizações da Prévia {#preview-updates}
 
 As mudanças são refletidas em tempo real:
 
@@ -100,7 +100,7 @@ As mudanças são refletidas em tempo real:
 - Todos os pontos de quebra responsivos são atualizados
 - Você pode alternar entre as prévias para verificar as mudanças
 
-### Visualização Comparativa
+### Visualização Comparativa {#comparison-view}
 
 Compare sua direção de design com:
 
@@ -108,7 +108,7 @@ Compare sua direção de design com:
 - **Designs de concorrentes** — compare com sites de inspiração
 - **Versões anteriores** — retorne a direções de design mais antigas
 
-## Aprovação da Direção do Design
+## Aprovação da Direção do Design {#design-direction-approval}
 
 Quando você estiver satisfeito com o seu design:
 
@@ -118,7 +118,7 @@ Quando você estiver satisfeito com o seu design:
 4. **Confirme o layout** — verifique espaçamento e alinhamento
 5. **Aprovar design** — prossiga para a geração do tema
 
-## Próximos Passos
+## Próximos Passos {#next-steps}
 
 Após aprovar sua direção de design:
 
@@ -127,7 +127,7 @@ Após aprovar sua direção de design:
 3. Você pode personalizar ainda mais usando o customizador do WordPress
 4. Prossiga para [Hospitality Menus](./hospitality-menus.md) ou outros recursos
 
-## Melhores Práticas
+## Melhores Práticas {#best-practices}
 
 - **Teste em dispositivos reais** — use celulares e tablets de verdade, se possível
 - **Verifique a legibilidade** — garanta que o texto seja legível em todos os tamanhos
@@ -135,30 +135,30 @@ Após aprovar sua direção de design:
 - **Considere o desempenho** — otimize imagens e fontes para velocidade
 - **Planeje o conteúdo** — garanta que o layout funcione com o seu conteúdo real
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
-### Prévia Não Atualiza
+### Prévia Não Atualiza {#preview-not-updating}
 
 - Atualize a página
 - Limpe o cache do navegador
 - Tente um navegador diferente
 - Verifique a conexão com a internet
 
-### Cores Parecem Diferentes
+### Cores Parecem Diferentes {#colors-look-different}
 
 - Verifique as configurações de cor do monitor
 - Tente em diferentes dispositivos
 - Verifique o contraste de cor com ferramentas de acessibilidade
 - Considere simuladores de daltonismo
 
-### Problemas de Tipografia
+### Problemas de Tipografia {#typography-issues}
 
 - Verifique se os arquivos de fonte estão carregando
 - Verifique o tamanho da fonte em diferentes pontos de quebra
 - Teste com conteúdo real
 - Considere o comprimento da linha para melhor leitura
 
-## Documentação Relacionada
+## Documentação Relacionada {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — colete informações de design
 - [Hospitality Menus](./hospitality-menus.md) — crie páginas de menu estruturadas

@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) Integracija
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integracija su Hostinger (hPanel)
+# Integracija su Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Na pregled
+## Na pregled {#overview}
 
 Hostinger yra populiarijusias web hostingo įstaiga, turinčia modernų kontrolinį panelį vadinant hPanel. Ultimate Multisite Hostinger integracija leidžia automatiškai sincronizuoti domenus tarp Ultimate Multisite ir Hostinger's hPanel, o tai nima jums automatiai valdyti domenų mapingu ir subdomenų tiesiog iš savo WordPress adminio.
 
-## Funkcijos
+## Funkcijos {#features}
 
 - Automatinis addon domeno kūrimas hPanel'yje
 - Automatinis subdomeno kūrimas hPanel'yje (subdominio multisite įdiegimo atveju)
 - Domeno pašalinimas, kai mapingu yra ištrinta
 - Nemokamas integracija su hPanel's domenų valdymų API
 
-## Reikalavimai
+## Reikalavimai {#requirements}
 
 Norint naudoti Hostinger integraciją jums reikalinga:
 
@@ -35,9 +35,9 @@ Valdymui galite nurodyti ir:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Pagrindinis API endpointas
 ```
 
-## Įdiegimo instrukcijos
+## Įdiegimo instrukcijos {#setup-instructions}
 
-### 1. Sukurkite savo Hostinger API tokeną
+### 1. Sukurkite savo Hostinger API tokeną {#1-generate-your-hostinger-api-token}
 
 1. Prisijunkite prie savo Hostinger paskyros ir nurodykite hPanel
 2. Eikite į **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Pagrindinis A
    - Subdomenų valdymas
 6. Kopijuokite sugeneruotą tokeną ir sauginkite jį saugiai
 
-### 2. Raskirkite savo skolos ID
+### 2. Raskirkite savo skolos ID {#2-find-your-account-id}
 
 1. HPanel'yje eikite į **Account Settings** → **Account Information** (Skolos informacija)
 2. Jūsų Skolos ID pasirodys šio puslapioje
 3. Kopijuokite ir išsaugokite šį ID kitaptam žingsniui
 
-### 3. Įdėkite konstantas į wp-config.php
+### 3. Įdėkite konstantas į wp-config.php {#3-add-constants-to-wp-configphp}
 
 Įdėkite šias konstantas į jūsų `wp-config.php` failą:
 
@@ -69,7 +69,7 @@ Jei jūsų Hostinger paskyra naudoja kitą API endpoint, galite jį pritaikyti:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Įjunkite integraciją
+### 4. Įjunkite integraciją {#4-enable-the-integration}
 
 1. Jūsų WordPress admin panel'yje einkite į **Ultimate Multisite > Settings** (Nustatymai)
 2. Navigruokite į languot **Domain Mapping** (Domeno netyrinėjimas)
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Įjunkite integraciją **Hostinger (hPanel)**
 5. Spauskite **Save Changes** (Išsaugoti pakeitimus)
 
-## Kaip tai veikia
+## Kaip tai veikia {#how-it-works}
 
-### Addon Domainai (Privalomųjų domenų)
+### Addon Domainai (Privalomųjų domenų) {#addon-domains}
 
 Kai netyrinėjate domeną Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Kai netyrinėjate domeną Ultimate Multisite:
 2. Domenas yra nustatytas, kad buvų nurodytas į jūsų pagrindinį katalogą (root directory)
 3. Kai pašalinate domeną netyrinėjimo, integracija automatiškai pašala addon domainą iš hPanelio
 
-### Subdomainai (Subdomėniai)
+### Subdomainai (Subdomėniai) {#subdomains}
 
 Subdomėnių multisite instalacijoms, kai kur site yra naujas:
 
@@ -95,7 +95,7 @@ Subdomėnių multisite instalacijoms, kai kur site yra naujas:
 2. Ji siunčia prašymą Hostingerio API pridėti subdomenį
 3. Subdomėnis yra nustatytas, kad buvų nurodytas į jūsų pagrindinį katalogą
 
-## Svarbiaji pranešimai
+## Svarbiaji pranešimai {#important-notes}
 
 - Integracija naudoja Hostingerio REST API su jūsų paskyra komunikant
 - Jūsų API tokenui turi būti reikalinga leidimas domenų ir subdomenų valdymui
@@ -103,33 +103,33 @@ Subdomėnių multisite instalacijoms, kai kur site yra naujas:
 - API prašymai vykdomos saugiai per HTTPS
 - Laikykite savo API tokeną saugumui ir niekada neaprašykite jį publikai
 
-## Problemos atšalinimas
+## Problemos atšalinimas {#troubleshooting}
 
-### API ryšio problemos
+### API ryšio problemos {#api-connection-issues}
 
 * Patikrinkite, ar kadangi jūsų API tokenas teisingas ir neksipirė?
 * Patikrinkite, ar jūsų Account ID yra teisingas.
 * Užtikrinkite, kad jūsų API tokenui yra reikalinga įgaliojimas domenų valdymui.
 * Patikrinkite, ar jūsų Hostinger paskyra yra aktyvi ir gerai nustatytos.
 
-### Domenas nepridėtas
+### Domenas nepridėtas {#domain-not-added}
 
 * Patikrinkite Ultimate Multisite logus, kad neystingai pasirodytų kokių nors klaidos pranešimų.
 * Patikrinkite, ar jūsų domenas jau nėra pridėtas prie jūsų Hostinger paskyros.
 * Užtikrinkite, kad jūsų Hostinger paskyra nepasiekė savo apribojimo addon domenams.
 * Patikrinkite, ar domenas teisingai nurodytas į jūsų Hostinger nameservers.
 
-### SSL sertifikato problemas
+### SSL sertifikato problemas {#ssl-certificate-issues}
 
 * Integracija ne valdo SSL sertifikatų išdavimo.
 * Hostinger tipicamente suteikia nemokamus SSL sertifikatus per AutoSSL.
 * Jūs galite valdyti SSL sertifikatus tiesiogiai hPanel'e sledu **SSL/TLS**.
 * Alternatyviai, naudokite Let's Encrypt su Hostinger's AutoSSL funkcija.
 
-## Pastabos
+## Pastabos {#support}
 
 Jei jums reikia papildomos pagalbos su Hostinger integracija, prašome rasti informacijos šiuose:
 
 * [Hostinger API Dokumentacija](https://support.hostinger.com/en/articles/4286-api-documentation)
-* [Ultimate Multisite Dokumentacija](/docs)
+* [Ultimate Multisite Dokumentacija](/)
 * [Ultimate Multisite Pastabos](https://ultimatemultisite.com/support)

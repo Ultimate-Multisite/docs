@@ -4,11 +4,11 @@ title: 'فلتر - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# عامل التصفية: wu_\{$this->model\}_meta_pre_save
+# عامل التصفية: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 يقوم بتصفية بيانات الميتا قبل تسلسلها لتخزينها في قاعدة البيانات.
 
-## المعاملات
+## المعاملات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | بيانات الكائن التي ستُخزن. |
 | $this | `\Base_Model` | مثيل الكائن. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
 
-### المصدر
+### المصدر {#source}
 
 مُعرّف في [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) في السطر 534

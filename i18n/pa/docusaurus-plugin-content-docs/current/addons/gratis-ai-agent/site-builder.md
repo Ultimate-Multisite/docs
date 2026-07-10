@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (jo Gratis AI Agent v1.4.0 vich introduce hoya hai) woh engine hai jo multi-step website banane ki shakti deta hai. Jadon tusi agent nu "restaurant di website banao" ya "blog naal portfolio banao" kehnde ho, taan orchestrator us bade lakshya nu ek sanrachit **plan** vich tod dinda hai, oh plugins khojda hai jo us nu poora karan layi zaroori ne, har step nu kram (sequence) vich chalaunda hai, progress track karda hai, ate galti hone te khud-ba-khud theek karda hai.
 
 ---
 
-## Eh Ki Tarah Kaam Karda Hai
+## Eh Ki Tarah Kaam Karda Hai {#how-it-works}
 
-### 1. Plan Banana (Plan Generation)
+### 1. Plan Banana (Plan Generation) {#1-plan-generation}
 
 Jadon agent nu site banane di koi hidayat milti hai, taan oh ek JSON **site plan** banane layi `create_site_plan` ability nu call karda hai. Eh plan eh cheezan bayan karda hai:
 
@@ -61,7 +61,7 @@ Jadon agent nu site banane di koi hidayat milti hai, taan oh ek JSON **site plan
 }
 ```
 
-### 2. Plugin Khoj (Plugin Discovery)
+### 2. Plugin Khoj (Plugin Discovery) {#2-plugin-discovery}
 
 Execution shuru hon ton pehlan, orchestrator plan de `plugin_requirements` nu scan karda hai ate check karda hai ki kaun se plugins pehlan hi active ne. Jo plugins missing ne, oh:
 
@@ -71,7 +71,7 @@ Execution shuru hon ton pehlan, orchestrator plan de `plugin_requirements` nu sc
 
 Plugin discovery fail hona koi badi gal nahi hai — orchestrator affected steps nu `skipped` mark karke baaki plan naal aage nikalda reha hai.
 
-### 3. Plan Chalana (Plan Execution)
+### 3. Plan Chalana (Plan Execution) {#3-plan-execution}
 
 Orchestrator plan ID naal `execute_site_plan` nu call karda hai. Execution phase-by-phase, step-by-step chalta hai:
 
@@ -79,7 +79,7 @@ Orchestrator plan ID naal `execute_site_plan` nu call karda hai. Execution phase
 - **Parallel steps** — ikk hi phase de andar de steps, jinna de beech koi dependency nahi hai, oh concurrently dispatch ho jande ne jadon `parallel` flag set kitta janda hai.
 - **Step timeout** — har step da apna alag timeout hunda hai (default: `Ability Timeout` setting). Jo step timeout ho janda hai, oh `failed` mark karke plan aage chalda reha hai.
 
-### 4. Progress Track Karna (Progress Tracking)
+### 4. Progress Track Karna (Progress Tracking) {#4-progress-tracking}
 
 Execution status check karan layi kisi bhi samay `get_plan_progress` call karo:
 
@@ -104,7 +104,7 @@ WP-CLI users progress monitor kar sakde ne:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Galti Theek Karna (Error Recovery)
+### 5. Galti Theek Karna (Error Recovery) {#5-error-recovery}
 
 Jadon koi step fail hunda hai, taan orchestrator plan vich define kiye gaye **fallback** step nu check karda hai:
 
@@ -115,9 +115,9 @@ Agent saare failures final plan summary vich report karda hai ate un failures la
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Natural language goal description ton ek sanrachit site plan banaunda hai.
 
@@ -134,7 +134,7 @@ Natural language goal description ton ek sanrachit site plan banaunda hai.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Pehlan banaye hoye site plan nu execute karna shuru karda hai.
 
@@ -150,7 +150,7 @@ Pehlan banaye hoye site plan nu execute karna shuru karda hai.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Site plan da current execution status wapas karda hai.
 
@@ -164,7 +164,7 @@ Site plan da current execution status wapas karda hai.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Ek fail step nu haath naal theek karke plan execution nu agle step ton dobara shuru karda hai. Ise tab istemal karo jadon automatic recovery mumkin nahi si ate tusi intervene karna chahunde ho.
 
@@ -180,7 +180,7 @@ Ek fail step nu haath naal theek karke plan execution nu agle step ton dobara sh
 
 ---
 
-## v1 ate v2 Di Tulna
+## v1 ate v2 Di Tulna {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Ek fail step nu haath naal theek karke plan execution nu agle step ton dobara sh
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Goal description ton ek site plan banaunda hai.
 
@@ -205,7 +205,7 @@ Goal description ton ek site plan banaunda hai.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Pehlan banaye hoye plan nu execute karda hai.
 
@@ -213,7 +213,7 @@ Pehlan banaye hoye plan nu execute karda hai.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Chal rahe ya poore hoye plan da current progress dikhata hai.
 
@@ -221,7 +221,7 @@ Chal rahe ya poore hoye plan da current progress dikhata hai.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Saare site plans (pending, in-progress, ate completed) list karda hai.
 
@@ -229,7 +229,7 @@ Saare site plans (pending, in-progress, ate completed) list karda hai.
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Ek fail plan nu `pending` te reset karda hai taaki oh shuru ton dobara execute ho sake.
 

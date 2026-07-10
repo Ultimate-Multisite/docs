@@ -4,11 +4,11 @@ title: Filter - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Mengatur apakah biaya pendaftaran harus diterapkan atau tidak.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Mengatur apakah biaya pendaftaran harus diterapkan atau tidak.
 | $product | `object` | Objek level keanggotaan. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Objek pendaftaran. |
 
-### Since
+### Since {#since}
 
 - 3.1
-### Source
+### Source {#source}
 
 Didefinisikan di [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) pada baris 1769

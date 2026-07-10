@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Dayîna GoCardless
+
+Bihêle xerîdarên te bi GoCardless û bi Debîta Rasterast ji bo endametî û berhemên Multisite Ultimate bidin!
+
+## Sazkirin {#installation}
+
+1. 'ultimate-multisite-gocardless' bar bike nav pelrêça '/wp-content/plugins/'
+2. Pêvekê ji rêya menuya 'Pêvek' di WordPress de çalak bike
+3. Ji bo amadekirina pêvekê, Wizard gav bi gav bişopîne
+
+## Rêberê Bikaranînê {#usage-guide}
+
+_GoCardless_ dergehê dayînê ye ku li **Ewropa û li UK** heye û rê dide dayînên **Debîta Rasterast**.
+
+**Ultimate Multisite: GoCardless Gateway** piştgiriya _GoCardless_ li Ultimate Multisite zêde dike, da ku tu bi Debîta Rasterast ji xerîdarên xwe yên li wê herêmê pere bistînî.
+
+Ev fêrkarî dê nîşan bide ka çawa _GoCardless_ amade bikî da ku li ser tora xwe ya Ultimate Multisite dest bi pejirandina dayînan bikî.
+
+_**Têbînî: GoCardless tenê bi van diravan dixebite:**_ **EUR, GBP, AUD, SEK, û DKK.**
+
+## Sazkirina Add-on {#installing-the-add-on}
+
+Berî her tiştî, divê tu add-on ya GoCardless ji bo Ultimate Multisite saz bikî. Tu dikarî vê bi çûyîna **Ultimate Multisite > Settings > Add-ons (li sidebar)** bikî. Paşê ji wê lîsteyê add-on ya GoCardless hilbijêre.
+
+Piştî ku add-on hate sazkirin û çalak kirin, here **Ultimate Multisite > Settings > Payments**, vebijarka GoCardless çalak bike, û tomar bike.
+
+![Mîhengên dergehê dayînê](/img/config/settings-payment-gateways.png)
+
+## Wergirtina Tokena Gihiştinê {#getting-an-access-token}
+
+Li ser _GoCardless_ hesabekê çêbike (an li ser sandbox a _GoCardless_, heke dixwazî **pêşî wê biceribînî** , ku tê pêşniyar kirin). Paşê, piştî têketinê, here hêmanê menuya **Pêşdebir**.
+
+<!-- Wêneya ekranê tune ye: Dashboard a GoCardless ku cihê menuya Pêşdebir nîşan dide -->
+
+Li ser rûpela **Pêşdebir**, li quncika jor-rast a ekranê li bişkoja **Çêbike** bitikîne, paşê li vebijarka **Tokena Gihiştinê** bitikîne.
+
+<!-- Wêneya ekranê tune ye: Rûpela Pêşdebir ya GoCardless bi bişkoja Çêbike û vebijarka Tokena Gihiştinê -->
+
+Ev dê paceyeke modal a nû veke û bihêle tu tokenekî nû çêbikî. Navekî nasbar bide wê û piştrast be ku di menuya **Scope** de vebijarka **Gihiştina xwendin-nivîsandin** hilbijêrî.
+
+<!-- Wêneya ekranê tune ye: Modala GoCardless ji bo çêkirina tokena gihiştinê ya nû bi scope ya xwendin-nivîsandin -->
+
+Tokena gihiştinê dê li ser ekranê xuya bibe. Wê kopî bike û bixe menuya xwe ya **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Piştrast be ku wê di cihê rast de datînî. Heke ew **tokenek live** **e** , berî ku tokenê pêve bikî, **sandbox mode off** bike.
+
+![Mîhengên dergehê dayînê bi GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Wêneya ekranê tune ye: Qadên tokena GoCardless di mîhengên dayîna Ultimate Multisite de -->
+
+Ji bo gava yekem ev qas e. Paşê, divê tu guhdarê webhook amade bikî.
+
+## Amadekirina Guhdarê Webhook {#setting-up-the-webhook-listener}
+
+Dema bi abonetiyan re tê xebitîn, Ultimate Multisite divê guh bide guhertinên rewşa abonetiyê, dayînên nû yên ku tên kirin, û tiştên din ên wisa.
+
+Awayê ku dergehên dayînê Ultimate Multisite ji wan guhertinan agahdar dikin, bikaranîna **bangên webhook** e. Ji ber vê yekê, da ku yekbûn 100% bixebite, divê em ji _GoCardless_ re bibêjin kîjan URL bi hemû wan agahdariyan bang bike.
+
+Vegere panela xwe ya **GoCardless > Pêşdebir** û dîsa li bişkoja Çêbike bitikîne, lê vê carê, vebijarka **endpoint a webhook** hilbijêre.
+
+<!-- Wêneya ekranê tune ye: Rûpela Pêşdebir ya GoCardless bi vebijarka endpoint a webhook -->Paceyeke nû bi vebijarkên endpoint a webhook dê vebe. Ew URL ya webhook dixwaze, ji ber vê yekê vegere **mîhengên Ultimate Multisite > Payments > GoCardless** û URL ya webhook a li wir hatî nivîsîn kopî bike:
+
+<!-- Wêneya ekranê tune ye: Mîhengên GoCardless yên Ultimate Multisite ku URL ya webhook nîşan dide -->
+
+Her wiha, tu dikarî **veşartiya webhook** binivîsî ku ji bo îmzekirina bangên webhook ên te tê bikaranîn. Her çi ku tu di wê qadê de binivîsî, divê wê li **qada Veşartiya Webhook a Ultimate Multisite** jî binivîsî.
+
+<!-- Wêneya ekranê tune ye: Forma veavakirina endpoint a webhook a GoCardless bi qadên URL û veşartî -->
+
+<!-- Wêneya ekranê tune ye: Qada veşartiya webhook a GoCardless ya Ultimate Multisite -->
+
+Bi tikandina bişkoja **endpoint a webhook çêbike** endpointê tomar bike û paşê **mîhengên xwe yên Ultimate Multisite jî tomar bike**.
+
+Niha divê tu amade bî ku _GoCardless_ bipejirînî!

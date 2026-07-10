@@ -1,0 +1,19 @@
+---
+id: wu_element_block_types_to_check
+title: Mataci - wu_element_block_types_to_check
+sidebar_label: wu_element_block_types_to_check
+_i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
+---
+# Tace: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+
+Wataƙila za mu buƙaci ƙara wasu tubalan daga baya.
+
+### Tun daga {#since}
+
+- 2.0.0
+### Tushe {#source}
+
+An ayyana a cikin [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) a layi na 300
+
+
+## Abin da ake mayarwa {#returns}

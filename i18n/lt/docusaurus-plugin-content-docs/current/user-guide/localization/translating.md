@@ -3,11 +3,11 @@ title: Vertinimas Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite Tautrinimas
+# Ultimate Multisite Tautrinimas {#translating-ultimate-multisite}
 
 Ultimate Multisite yra pateikta anglų kalba, tačiau šis plugin yra visiškai vertinamas ir mes aktyviai sveikinam vertimo įnašus.
 
-## Pagrindinių Plugin Vertimai
+## Pagrindinių Plugin Vertimai {#core-plugin-translations}
 
 Pagrindinis Ultimate Multisite plugin vertinamas oficialu **WordPress.org vertimo platformoje**:
 
@@ -24,7 +24,7 @@ Tai yra standartinė WordPress bendruomenės vertimo sistema. Kai vertimai pasie
 
 Jei norite tapti vertimo redaktorius savo kalbai (galite patvirtinti vertimus), susisiekitės per [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Addon Vertimai
+## Addon Vertimai {#addon-translations}
 
 Addon plugin vertinami atskirai:
 
@@ -32,11 +32,11 @@ Addon plugin vertinami atskirai:
 
 Šiuo metu addon vertimai yra generuojami AI kaip pradinis variantas. Jie apima visus palaikžiamus kalbas, bet gali turėti neapmotintos frazės arba netinkamumas. Mes sveikiname žmogaus vertinusiems redaktoriams peržiūrėti ir siūlyti tobulinimus, kad jie būtų natūrales ir tiksliai.
 
-## Lokalūs Vertimai
+## Lokalūs Vertimai {#local-translations}
 
 Je jei norite sukurti vertalus lokaliai savo projekte, o ne gauti įdomų įnašimų į šį projektą, yra du variantai:
 
-### Naudojant Poedit
+### Naudojant Poedit {#using-poedit}
 
 Jūs galite naudoti skaitmenį programėlę **[Poedit](https://poedit.net)**, kad išverstumėte `.pot` failą:
 
@@ -46,6 +46,6 @@ Jūs galite naudoti skaitmenį programėlę **[Poedit](https://poedit.net)**, ka
 4. Išsaugokite -- Poedit sukuria `.po` ir `.mo` failus
 5. Įdėkite išverstus rezultatus į `lang` katalogą
 
-### Naudojant Loco Translate
+### Naudojant Loco Translate {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin leidžia vertyti tiesiog iš admin panelio be jokių skaitmeninių įrankių. Jis atsakingai sukuria ir kompiliuos vertalius failus jums.

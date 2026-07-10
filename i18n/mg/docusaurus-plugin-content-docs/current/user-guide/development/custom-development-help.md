@@ -3,13 +3,13 @@ title: Fanampiana Fandaharana Manokana
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ahoana ny fanampiana fampivelarana manokana avy amin'ny Codeable?
+# Ahoana ny fanampiana fampivelarana manokana avy amin'ny Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Indra indray, mila fanamboarana tena tsara isika mba hahatonga ny lalana iainana (network flows) ho araka izay tianay. Raha mitady izany ianao, dia manoro anao ny [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), toerana ahafahanao mitady mpandrindra (developers) manam-petra sy manana fahaizana amin'ny Ultimate Multisite.
 
 Ny [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) dia sehatra mampifandray ny mpanjifa amin'ireo mpandrindra WordPress freelance mahay, afaka miasa amin'ny tetikasa rehetra habeny. Manana dingana fangatahana tena tsara izy mba hiantohana fa hifanaraka aminao amin'ireo manam-petra manokana ho an'ilay asa tianao hatao ianao.
 
-### Ahoana no famoronana tetikasa ao Codeable?
+### Ahoana no famoronana tetikasa ao Codeable? {#how-to-create-a-project-in-codeable}
 
 Voalohany, mandehin'ny [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ary tsindrio ny bokotra **Start a Project** (Manomboha Tetikasa).
 

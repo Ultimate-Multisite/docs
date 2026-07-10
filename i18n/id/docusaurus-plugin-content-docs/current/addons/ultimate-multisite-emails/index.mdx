@@ -1,114 +1,197 @@
 ---
 title: Email
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Email
+# Email {#emails}
 
-Addon Ultimate Multisite: Emails memungkinkan pemilik jaringan untuk menyediakan dan mengelola akun email pelanggan bersama dengan situs dan keanggotaan. Versi 1.1.0 menambahkan manajemen akun email yang dilihat pelanggan, single sign-on (SSO) webmail, dukungan penerusan (forwarder) CyberPanel, dan peningkatan penyediaan saat checkout.
+Addon Ultimate Multisite: Emails memungkinkan pemilik jaringan menyediakan dan mengelola akun email pelanggan bersama situs dan keanggotaan. Versi 1.1.0 menambahkan pengelolaan akun email yang dapat digunakan pelanggan, single sign-on webmail, dukungan forwarder CyberPanel, dan peningkatan provisioning saat checkout.
 
-## Fitur Utama
+## Fitur Utama {#key-features}
 
-* **Widget akun email pelanggan**: Pelanggan dapat membuat dan mengelola akun email dari halaman akun mereka tanpa perlu membuat tiket dukungan.
-* **SSO Webmail dan tautan ajaib (magic links)**: Pelanggan dapat membuka webmail langsung dari halaman akun dengan otentikasi satu klik, jika penyedia layanan mendukungnya.
-* **Perubahan kata sandi**: Pelanggan dan administrator dapat memperbarui kata sandi kotak surat dari widget manajemen email.
-* **Penyediaan saat checkout**: Pembuatan akun email pelanggan dapat berjalan selama proses checkout sehingga kotak surat siap setelah alur pembelian selesai.
-* **Penerusan CyberPanel**: Jaringan yang didukung CyberPanel dapat membuat dan mengelola penerusan email sebagai bagian dari alur layanan email.
-* **Pengaturan sadar penyedia (Provider-aware settings)**: Halaman pengaturan memfilter penyedia layanan ke integrasi yang aktif dan sudah dikonfigurasi sehingga administrator hanya melihat opsi yang dapat digunakan.
+* **Widget akun email pelanggan**: Pelanggan dapat membuat dan mengelola mailbox dari halaman account mereka setelah memiliki keanggotaan email aktif.
+* **SSO webmail dan tautan ajaib**: Pelanggan dapat membuka webmail langsung dari halaman account dengan autentikasi sekali klik ketika provider mendukungnya.
+* **Perubahan kata sandi**: Pelanggan dan administrator dapat memperbarui kata sandi mailbox dari widget pengelolaan email.
+* **Provisioning hak saat checkout**: Checkout membuat keanggotaan email, menautkannya ke domain situs pelanggan, dan membuat alat mailbox halaman account tersedia.
+* **Forwarder CyberPanel**: Jaringan berbasis CyberPanel dapat membuat dan mengelola forwarder email sebagai bagian dari alur layanan email.
+* **Pengaturan sadar provider**: Halaman pengaturan memfilter provider ke integrasi yang aktif dan terkonfigurasi sehingga administrator hanya melihat opsi yang dapat digunakan.
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 * Ultimate Multisite 2.0.0 atau lebih tinggi
 * Instalasi WordPress Multisite
-* Setidaknya satu integrasi penyedia email yang dikonfigurasi
-* Kredensial API penyedia dengan izin untuk membuat kotak surat, mengubah kata sandi, dan mengeluarkan tautan akses webmail jika didukung
+* Setidaknya satu integrasi provider email yang dikonfigurasi
+* Kredensial API provider dengan izin untuk membuat mailbox, mengubah kata sandi, dan menerbitkan tautan akses webmail jika didukung
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file plugin ke `/wp-content/plugins/ultimate-multisite-emails`.
-2. Aktifkan addon jaringan dari **Plugins** di admin jaringan WordPress.
+2. Aktifkan addon secara jaringan dari **Plugins** di admin jaringan WordPress.
 3. Buka **Ultimate Multisite** > **Settings** dan buka pengaturan email addon.
-4. Aktifkan integrasi penyedia email yang ingin Anda gunakan oleh pelanggan.
+4. Aktifkan integrasi provider email yang ingin Anda izinkan digunakan pelanggan.
 5. Simpan pengaturan, lalu uji pembuatan akun dengan pelanggan non-produksi atau situs staging.
 
-## Manajemen Email Akun Pelanggan
+## Cara Kerja Alur Penjualan Email {#how-the-email-seller-flow-works}
 
-Versi 1.1.0 menambahkan widget manajemen email ke halaman akun pelanggan. Gunakan ini ketika pelanggan harus melakukan layanan mandiri (self-service) untuk pembuatan dan pemeliharaan kotak surat mereka sendiri.
+Penjualan email memiliki dua lapisan terpisah:
 
-Dari halaman akun, pelanggan dapat:
+1. **Hak** — produk/keanggotaan email Ultimate Multisite yang menyatakan pelanggan diizinkan menggunakan email untuk domain situs, provider, kuota, dan batas akun tertentu.
+2. **Pembuatan mailbox** — mailbox provider yang sebenarnya, seperti `info@example.com`, dibuat ketika pelanggan atau administrator jaringan memilih bagian lokal dan kata sandi.
 
-1. Melihat akun email yang terhubung dengan keanggotaan atau situs mereka saat ini.
-2. Membuat kotak surat baru jika paket mereka mengizinkan akun tambahan.
-3. Mengubah kata sandi kotak surat yang sudah ada.
-4. Membuka penyedia webmail yang didukung melalui SSO atau login tautan ajaib.
+Saat checkout, addon membuat atau mengaktifkan **keanggotaan email** dan mencatat domain situs serta provider pelanggan pada keanggotaan tersebut. Addon tidak menebak nama mailbox atau kata sandi. Setelah pembelian selesai dan konteks situs/domain tersedia, pelanggan dapat membuka halaman account dan membuat nama mailbox yang mereka inginkan.
 
-Widget ini menggunakan sistem *currents* halaman akun Ultimate Multisite, sehingga tindakan dibatasi pada konteks akun yang dilihat pelanggan. Ini mencegah pelanggan mengelola akun email yang milik keanggotaan atau situs lain.
+Ini berarti alur pelanggan normal adalah:
 
-## SSO Webmail dan Login Tautan Ajaib
+1. Pelanggan membeli plan situs dan menambahkan produk email saat checkout.
+2. Ultimate Multisite membuat keanggotaan situs dan keanggotaan email sekunder.
+3. Addon Emails menautkan keanggotaan email ke domain situs dan provider pelanggan.
+4. Pelanggan membuka **Account** di dashboard mereka.
+5. Panel **Akun Email** muncul untuk keanggotaan email aktif tersebut.
+6. Pelanggan mengklik **Buat Account**, memasukkan bagian lokal seperti `info`, menetapkan kata sandi, dan addon membuat `info@their-domain.com` di provider yang dikonfigurasi.
 
-SSO Webmail memberikan tindakan **Buka webmail** langsung kepada pelanggan dari halaman akun. Ketika didukung oleh penyedia layanan aktif, addon akan meminta URL akses berumur pendek dan mengarahkan pelanggan ke webmail tanpa meminta mereka menyalin kredensial kotak surat.
+## Konfigurasikan Produk Email {#configure-an-email-product}
 
-Perilaku penyedia layanan dapat bervariasi:
+Buat satu produk email untuk setiap paket email yang ingin Anda jual atau berikan. Jika Anda baru dalam pengaturan produk, mulai dengan [Membuat Produk Langganan Pertama Anda](../../user-guide/configuration/creating-your-first-subscription-product) lalu kembali ke sini untuk pengaturan khusus email.
 
-* Penyedia dengan API SSO asli dapat membuat sesi webmail terautentikasi langsung.
-* Penyedia dengan dukungan tautan ajaib dapat menghasilkan tautan login berbatas waktu.
-* Penyedia tanpa dukungan SSO atau tautan ajaib seharusnya tetap menampilkan detail kotak surat dan tindakan manajemen kata sandi, tetapi tidak ada tombol webmail satu klik.
+1. Buka **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Atur **Jenis Produk** ke **Email**.
+3. Konfigurasikan harga. Gunakan harga berulang berbayar untuk plan yang dijual, atau atur produk menjadi gratis/berharga nol jika itu seharusnya menjadi plan email pelengkap.
+4. Buka bagian **Pengaturan Email**.
+5. Pilih **Email Provider** yang dikonfigurasi.
+6. Atur **Jumlah Account**, **Kuota Penyimpanan (MB)**, batas alias, forwarder, dan autoresponder sesuai kebutuhan.
+7. Simpan produk.
 
-Aktifkan akses webmail hanya untuk penyedia tempat Anda telah mengonfigurasi kredensial API yang diperlukan. Jika tindakan tersebut hilang untuk suatu penyedia, pertama-tama konfirmasikan bahwa penyedia tersebut aktif, dikonfigurasi, dan mendukung tautan login webmail.
+Hanya provider yang diaktifkan dan dikonfigurasi sepenuhnya di halaman **Integrations** yang muncul di pemilih provider. Jika pemilih kosong, konfigurasikan dan uji provider terlebih dahulu.
 
-## Penyediaan Saat Checkout
+## Tambahkan Email ke Checkout {#add-email-to-checkout}
 
-Addon dapat membuat akun email pelanggan sebagai bagian dari checkout. Ini berguna ketika paket secara default sudah menyertakan kotak surat atau ketika formulir checkout mengumpulkan detail akun email.
+Produk email biasanya ditawarkan sebagai add-on untuk plan situs. Lihat [Formulir Checkout](../../user-guide/configuration/checkout-forms) untuk alur kerja editor checkout umum.
 
-Rekomendasi peluncuran:
+1. Buat atau edit plan situs yang dibeli pelanggan terlebih dahulu.
+2. Tambahkan produk email sebagai add-on/order bump yang tersedia untuk alur checkout tersebut.
+3. Pastikan formulir checkout masih menyertakan field situs wajib yang normal, terutama field URL/domain situs.
+4. Jalankan checkout uji dengan pelanggan staging.
+5. Setelah checkout, buka [halaman account](../../user-guide/client-management/account-page) pelanggan dan pastikan panel **Akun Email** muncul.
 
-1. Konfigurasi penyedia dan batas paket sebelum mengaktifkan penyediaan saat checkout.
-2. Uji pembelian dengan produk staging dan konfirmasi bahwa kotak surat dibuat setelah checkout.
-3. Tinjau halaman akun pelanggan untuk memastikan kotak surat baru muncul di widget email.
-4. Konfirmasi tindakan perubahan kata sandi dan webmail sebelum mengaktifkan alur untuk produk produksi.
+Domain email diambil dari domain situs pelanggan. Pelanggan tidak memasukkan domain email pada langkah produk email.
 
-Jika penyediaan gagal, akun dan keanggotaan pelanggan masih dapat ada meskipun kotak surat memerlukan tindak lanjut administrator. Periksa log aktivitas Ultimate Multisite dan log penyedia sebelum mencoba lagi.
+## Pengelolaan Email Account Pelanggan {#customer-account-email-management}
 
-## Penerusan Email CyberPanel
+Versi 1.1.0 menambahkan widget pengelolaan email ke halaman account pelanggan. Gunakan ini ketika pelanggan harus dapat melakukan layanan mandiri untuk pembuatan dan pemeliharaan mailbox bagi situs mereka sendiri.
 
-Untuk jaringan yang didukung CyberPanel, versi 1.1.0 menambahkan dukungan penerusan email. Gunakan penerusan ketika pelanggan memerlukan alamat seperti `info@customer-domain.test` untuk meneruskan email ke kotak masuk lain tanpa membuat kotak surat penuh.
+Dari halaman account, pelanggan dapat:
 
-Sebelum menawarkan penerusan, konfirmasikan bahwa integrasi CyberPanel telah dikonfigurasi dan dapat dijangkau. Lihat panduan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) untuk konstanta host, nama pengguna, kata sandi, dan paket yang diperlukan.
+1. Melihat akun email yang terhubung ke keanggotaan email/domain situs mereka saat ini.
+2. Membuat mailbox baru ketika produk email mereka mengizinkan account tambahan.
+3. Mengubah kata sandi mailbox yang sudah ada.
+4. Membuka provider webmail yang didukung melalui SSO atau login tautan ajaib.
 
-## Changelog
+Widget menggunakan sistem currents halaman account Ultimate Multisite, sehingga tindakan dibatasi pada konteks account yang sedang dilihat pelanggan. Ini mencegah pelanggan mengelola akun email yang dimiliki keanggotaan atau situs lain.
 
-### Versi 1.1.0 - Dirilis pada 2026-05-05
+Jika pelanggan tidak melihat panel email, periksa bahwa mereka memiliki **membership produk Email yang aktif**, bahwa membership tersebut telah ditautkan ke domain situs, dan bahwa produk memiliki provider yang sudah dikonfigurasi.
 
-* Baru: SSO Webmail dan login tautan ajaib — pelanggan dapat mengakses webmail langsung dari akun mereka dengan otentikasi satu klik.
-* Baru: Fungsionalitas ubah kata sandi ditambahkan ke widget manajemen akun email.
-* Baru: Dukungan penerusan email CyberPanel.
-* Baru: Widget manajemen email di halaman akun pelanggan untuk pembuatan dan manajemen akun mandiri.
-* Baru: Pembuatan akun email pelanggan diintegrasikan ke alur checkout untuk penyediaan otomatis.
-* Perbaikan: Hook widget halaman akun diperbarui untuk menggunakan pola registrasi UMS yang benar.
-* Perbaikan: Formulir Buat Akun diganti dengan vanilla JS dan output dokumen HTML lengkap yang benar.
-* Perbaikan: Widget manajemen email sekarang menggunakan sistem *currents* UMS untuk halaman akun admin.
-* Perbaikan: Formulir pembuatan akun email admin menyertakan kolom kata sandi dan menggunakan Email_Account_Manager.
-* Perbaikan: Spam log per-request dihapus dari inisialisasi Email_Account_Manager.
-* Peningkatan: Halaman pengaturan sekarang memfilter untuk hanya menampilkan penyedia email yang aktif dan dikonfigurasi.
+## Memberikan Paket Email Gratis kepada Pelanggan {#giving-a-customer-a-free-email-plan}
 
-## Pertanyaan yang Sering Diajukan
+Untuk memberikan email kepada pelanggan tanpa menagih mereka, berikan **hak email** terlebih dahulu, lalu buat mailbox atau biarkan pelanggan membuatnya.
 
-## Bisakah pelanggan membuat akun email mereka sendiri?
+Opsi yang direkomendasikan:
 
-Ya. Ketika widget akun pelanggan diaktifkan dan paket mengizinkan akun email, pelanggan dapat membuat dan mengelola kotak surat mereka sendiri dari halaman akun.
+* **Buat produk email gratis**: atur harga produk email menjadi gratis/nol, lalu tambahkan membership aktif untuk pelanggan tersebut dari **Ultimate Multisite > Memberships > Add Membership**. Pilih produk email dan pelanggan. Membership gratis berlaku seumur hidup hingga diubah atau dibatalkan. Jika membership email dimaksudkan untuk mengikuti situs yang sudah ada, pastikan membership tersebut ditautkan ke konteks situs/domain tersebut.
+* **Gunakan diskon 100% atau tautan checkout gratis**: biarkan pelanggan melalui checkout sehingga Ultimate Multisite membuat membership email dan catatan pembayaran secara otomatis.
+* **Admin membuat mailbox**: buka **Ultimate Multisite > Email Accounts > Add Email Account** untuk membuat mailbox tertentu di provider untuk pelanggan. Ini berguna untuk dukungan, tetapi tidak menggantikan membership produk email yang mendukung alat halaman akun self-service pelanggan.
 
-## Apakah setiap penyedia layanan mendukung SSO webmail?
+Jika Anda ingin pelanggan mengelola mailbox sendiri dari halaman akun, pastikan mereka memiliki membership email aktif untuk domain tersebut. Mailbox provider yang dibuat manual tanpa membership tersebut dapat tetap ada, tetapi pelanggan mungkin tidak melihat panel email self-service untuk mailbox itu.
 
-Tidak. Dukungan SSO dan tautan ajaib tergantung pada penyedia email aktif. Penyedia tanpa API tautan akses masih dapat mendukung pembuatan kotak surat dan perubahan kata sandi.
+## Akun yang Dibuat Admin dan "Tidak Ada Nomor Pesanan" {#admin-created-accounts-and-no-order-number}
 
-## Bisakah administrator membuat akun email untuk pelanggan?
+Halaman admin **Email Accounts** membuat atau mengedit mailbox provider. Ini bukan langkah pertama untuk menjual atau memberikan paket email.
 
-Ya. Administrator dapat membuat akun email dari antarmuka admin, termasuk mengatur kata sandi awal saat membuat akun.
+Saat mengedit akun email, bidang **Membership** mencari membership Ultimate Multisite yang sudah ada berdasarkan nomor referensi/pesanannya. Jika Anda mencoba menetapkan akun sebelum pelanggan memiliki membership email, mungkin tidak ada nomor pesanan yang bisa dipilih.
 
-## Apakah penerusan sama dengan kotak surat?
+Gunakan urutan operasi ini sebagai gantinya:
 
-Tidak. Kotak surat menyimpan email dan memiliki kredensial login. Penerusan mengarahkan email ke alamat lain dan tidak menyediakan kotak masuk terpisah.
+1. Buat atau temukan membership email pelanggan. Untuk pembelian, checkout melakukan ini. Untuk paket komplementer, buat membership secara manual dari [Memberships](../../user-guide/administration/managing-memberships) atau arahkan pelanggan melalui checkout gratis.
+2. Konfirmasi bahwa membership aktif dan menggunakan produk Email.
+3. Konfirmasi bahwa membership email ditautkan ke domain/provider situs.
+4. Buat mailbox dari halaman akun pelanggan atau dari **Ultimate Multisite > Email Accounts**.
+5. Jika perlu, edit catatan mailbox dan tetapkan pelanggan, membership, dan situs.
+
+Jika Anda hanya perlu membuat mailbox provider untuk pelanggan dan tidak memerlukan manajemen self-service halaman akun, akun yang dibuat admin bisa cukup. Jika Anda ingin pelanggan melihat dan mengelolanya di Ultimate Multisite, buat juga membership email.
+
+## Webmail SSO dan Login Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO memberi pelanggan tindakan **Open webmail** langsung dari halaman akun. Saat didukung oleh provider aktif, addon meminta URL akses berumur pendek dan mengalihkan pelanggan ke webmail tanpa meminta mereka menyalin kredensial mailbox.
+
+Perilaku provider dapat bervariasi:
+
+* Provider dengan API SSO native dapat membuat sesi webmail terautentikasi langsung.
+* Provider dengan dukungan magic-link dapat menghasilkan tautan login berbatas waktu.
+* Provider tanpa dukungan SSO atau magic-link tetap harus menampilkan detail mailbox dan tindakan manajemen kata sandi, tetapi tanpa tombol webmail sekali klik.
+
+Aktifkan akses webmail hanya untuk provider yang telah Anda konfigurasi kredensial API yang diperlukan. Jika tindakan hilang untuk suatu provider, pertama konfirmasi bahwa provider aktif, sudah dikonfigurasi, dan mendukung tautan login webmail.
+
+## Provisioning Checkout {#checkout-provisioning}
+
+Addon melakukan provisioning **konteks membership** email selama checkout. Addon mencatat provider, batas akun, kuota, dan domain situs sehingga pelanggan dapat membuat nama mailbox mereka sendiri dari halaman akun setelah pembelian.
+
+Peluncuran yang direkomendasikan:
+
+1. Konfigurasi provider dan batas produk sebelum menawarkan produk email.
+2. Uji pembelian dengan produk staging dan konfirmasi membership email dibuat.
+3. Tinjau halaman akun pelanggan untuk mengonfirmasi widget **Email Accounts** muncul untuk domain.
+4. Buat mailbox uji dari widget.
+5. Konfirmasi tindakan perubahan kata sandi dan webmail sebelum mengaktifkan alur untuk produk produksi.
+
+Jika provisioning gagal, akun pelanggan dan membership masih dapat ada sementara membership email atau mailbox provider memerlukan tindak lanjut administrator. Periksa log aktivitas Ultimate Multisite dan log provider sebelum mencoba lagi.
+
+## Forwarder Email CyberPanel {#cyberpanel-email-forwarders}
+
+Untuk jaringan berbasis CyberPanel, versi 1.1.0 menambahkan dukungan forwarder email. Gunakan forwarder ketika pelanggan membutuhkan alamat seperti `info@customer-domain.test` untuk mengalihkan email ke inbox lain tanpa membuat mailbox penuh.
+
+Sebelum menawarkan forwarder, konfirmasi bahwa integrasi CyberPanel telah dikonfigurasi dan dapat dijangkau. Lihat panduan [Integrasi CyberPanel](../../user-guide/administration/cyberpanel-integration) untuk host, username, password, dan konstanta paket yang diperlukan.
+
+## Changelog {#changelog}
+
+### Versi 1.1.0 - Dirilis pada 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Baru: Login Webmail SSO dan magic-link — pelanggan dapat mengakses webmail langsung dari Account mereka dengan autentikasi sekali klik.
+* Baru: Fungsionalitas ubah kata sandi ditambahkan ke widget pengelolaan Account email.
+* Baru: Dukungan forwarder email CyberPanel.
+* Baru: Widget pengelolaan email di halaman Account pelanggan untuk pembuatan dan pengelolaan Account mandiri.
+* Baru: Penyediaan hak Account email pelanggan diintegrasikan ke alur checkout.
+* Perbaikan: Hook widget halaman Account diperbarui untuk menggunakan pola pendaftaran UMS yang benar.
+* Perbaikan: Formulir Create Account diganti dengan vanilla JS dan output dokumen HTML lengkap yang benar.
+* Perbaikan: Widget pengelolaan email sekarang menggunakan sistem currents UMS untuk halaman Account admin.
+* Perbaikan: Formulir pembuatan Account email admin menyertakan kolom kata sandi dan menggunakan Email_Account_Manager.
+* Perbaikan: Spam log per-permintaan dihapus dari inisialisasi Email_Account_Manager.
+* Ditingkatkan: Halaman pengaturan sekarang memfilter untuk hanya menampilkan penyedia email yang aktif dan dikonfigurasi.
+
+## Pertanyaan yang Sering Diajukan {#frequently-asked-questions}
+
+### Bisakah pelanggan membuat Account email mereka sendiri? {#can-customers-create-their-own-email-accounts}
+
+Ya. Ketika pelanggan memiliki membership email aktif untuk sebuah domain dan produk mengizinkan Account tambahan, pelanggan dapat membuat dan mengelola mailbox mereka sendiri dari halaman Account.
+
+### Apakah setiap penyedia mendukung Webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Tidak. Dukungan SSO dan magic-link bergantung pada penyedia email yang aktif. Penyedia tanpa access-link API masih dapat mendukung pembuatan mailbox dan perubahan kata sandi.
+
+### Bisakah administrator membuat Account email untuk pelanggan? {#can-administrators-create-email-accounts-for-customers}
+
+Ya. Administrator dapat membuat Account email dari antarmuka admin, termasuk mengatur kata sandi awal saat membuat Account. Untuk pengelolaan mandiri oleh pelanggan, pastikan juga pelanggan memiliki membership email aktif untuk domain tersebut.
+
+### Bisakah saya memberikan Account email secara gratis? {#can-i-give-an-email-account-away-for-free}
+
+Ya. Buat produk Email gratis/berharga nol dan tambahkan sebagai membership aktif untuk pelanggan, atau biarkan pelanggan menyelesaikan checkout dengan diskon 100%. Setelah membership email ada, pelanggan atau administrator dapat membuat mailbox sebenarnya.
+
+### Mengapa menetapkan Account email meminta nomor pesanan? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Kolom Membership mencari membership Ultimate Multisite yang ada berdasarkan nomor referensi/pesanannya. Jika pelanggan tidak membeli produk email dan Anda belum membuat membership email secara manual, tidak ada membership/pesanan email untuk ditetapkan. Buat membership email terlebih dahulu, lalu buat atau tetapkan mailbox.
+
+### Apakah forwarder sama dengan mailbox? {#are-forwarders-the-same-as-mailboxes}
+
+Tidak. Mailbox menyimpan email dan memiliki kredensial login. Forwarder mengalihkan email ke alamat lain dan tidak menyediakan inbox terpisah.

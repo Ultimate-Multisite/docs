@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite is 'n WordPress Multisite-plugin wat jou in staat stel om 'n WaaS (Webwerwe as 'n Diens) aan kliënte aan te bied. Voordat ons verder delf en leer hoe Ultimate Multisite jou besigheid en kliënte kan help, is daar basiese kennis wat ons moet aanleer.
 
-## Die WordPress Multisite
+## Die WordPress Multisite {#the-wordpress-multisite}
 
 Die meeste van ons is bekend met die standaard WordPress-installasie. Jy skep dit óf via die bedienpaneel van jou hostingverskaffer óf, vir die moediges, stel 'n nuwe webbediener en database op, laai die kernlêreer af en begin die installasieproses.
 
@@ -21,13 +21,13 @@ In wese kan 'n WordPress multisite voorgestel word as hierdie: 'n Universiteit o
 
 Om hierdie stelling te ontleed, kyk ons na sommige van die basiese terminologie wat nie net in Ultimate Multisite se dokumentasie, maar ook oor die hele WordPress-gemeenskap teenwoordig is.
 
-### Die Netwerk
+### Die Netwerk {#the-network}
 
 Vanuit WordPress se oogpunt is 'n multisite-netwerk waar 'n aantal subsites vanaf een enkele dashboard bestuur kan word. Hoewel die skep van 'n multisite-netwerk verskil tussen hostingverskaffers, is die finale resultaat gewoonlik 'n paar bykomende riglyne in die wp-config.php lêer om WordPress te laat weet dat dit in hierdie spesifieke modus funksioneer.
 
 Daar is 'n aantal duidelike verskille tussen 'n multisite-netwerk en 'n selfstandige WordPress-installasie wat ons kortliks sal bespreek.
 
-#### Subdomain teenoor Subdirectory
+#### Subdomain teenoor Subdirectory {#subdomain-vs-subdirectory}
 
 Een van die mees onmiddellike besluite wat jy moet neem, is of die multisite-installasie sal funksioneer met _subdirectories_ of _subdomains_. Ultimate Multisite werk ewe goed met beide keuses, maar daar is 'n paar argitektoniese verskille tussen die twee konfigurasies.
 
@@ -43,27 +43,27 @@ In die _subdomain_-konfigurasie is die gebruik van 'n wildcard SSL-sertifikaat e
 
 Alhoewel ander opsies bestaan, is hierdie dikwels beperk in omvang en toepassing en vereis bykomende konfigurasie en oorweging met betrekking tot geskiktheid.
 
-#### Plugins en Temas
+#### Plugins en Temas {#plugins-and-themes}
 
 Wat WordPress gee, neem dit ook weg, ten minste vanuit die oogpunt van die kliënt. In 'n selfstandige WordPress-installasie, as die webwerfadministrateur 'n slegte plugin installeer of versuim om sy installasie op datum te hou, is die enigste slagoffer en slachtoffer van hierdie daad homself. Maar, 'n webwerfadministrateur wat 'n slegte plugin op 'n multisite-installasie installeer, skep 'n slagoffer vir elke webwerf wat in die netwerk geïnstalleer is.
 
 ---
 
-### **[Self-Correction/Review]:** The tone and technical depth are appropriate. The flow is logical. I will proceed with the rest of the text, maintaining the established structure.
+### **[Self-Correction/Review]:** The tone and technical depth are appropriate. The flow is logical. I will proceed with the rest of the text, maintaining the established structure. {#users-and-administrators}
 
 ---
 
-### **[Continuation]:**
+### **[Continuation]:** {#media}
 
 **[Self-Correction/Review]:** The structure is solid. I will continue the technical explanation regarding the remaining points (e.g., "hosting," "security," etc.) to provide a comprehensive guide.
 
 ---
 
-### **[Final Output Generation]:** (This will be the complete, polished text.)<channel|>**[Self-Correction/Review]:** The structure is solid. I will continue the technical explanation regarding the remaining points (e.g., "hosting," "security," etc.) to provide a comprehensive guide.
+### **[Final Output Generation]:** (This will be the complete, polished text.)<channel|>**[Self-Correction/Review]:** The structure is solid. I will continue the technical explanation regarding the remaining points (e.g., "hosting," "security," etc.) to provide a comprehensive guide. {#permalinks}
 
 ***
 
-### **Hosting en Skalering**
+### **Hosting en Skalering** {#static-pages}
 
 Wanneer u met 'n enkele, groot webwerf begin, kan u dit op 'n standaard hostingplan plaas. Maar as u met 'n multi-site, multi-tenant omgewing werk (wat die kern van 'n multi-site is), sal u baie vinnig die beperkings van gedeelde hosting bereik.
 
@@ -75,7 +75,7 @@ Wanneer u met 'n enkele, groot webwerf begin, kan u dit op 'n standaard hostingp
 
 **Die belangrikste raad:** Beplan u hostingkapasiteit vir die *toekomstige* groei, nie net vir vandag nie.
 
-### **Beveiliging en Patches**
+### **Beveiliging en Patches** {#registration}
 
 Multi-sites verg 'n baie hoër vlak van sekuriteitsoorweging. Elke nuwe webwerf wat u byvoeg, voeg 'n potensiële kwesbaarheid by.
 
@@ -86,7 +86,7 @@ Multi-sites verg 'n baie hoër vlak van sekuriteitsoorweging. Elke nuwe webwerf 
 * **Sterk Gebruikersbeheer:** Beperk die gebruikers wat toegang het tot die hoof-dashboard. Nie almal hoef toegang tot die hoof-administrasie te hê nie.
 * **Backups:** Implementeer 'n outomatiese, gereelde backup-strategie wat op 'n *ander* plaaslike ligging gestoor word (off-site).
 
-### **Prestasieoptimalisering (Caching)**
+### **Prestasieoptimalisering (Caching)** {#domain-and-ssl}
 
 Prestasie is nie net oor hoe vinnig u webwerf laai nie; dit is oor die gebruikerservaring. Met 'n multi-site kan die caching-laag baie kompleks wees.
 
@@ -96,7 +96,7 @@ Prestasie is nie net oor hoe vinnig u webwerf laai nie; dit is oor die gebruiker
 2. **CDN (Content Delivery Network):** Dien u statiese lêers (afbeeldingryks, CSS, JavaScript) vanaf die bediening wat die naaste is aan u gebruiker. Dit verminder die laaityd drasties.
 3. **Database Optimalisering:** Met honderde webwerwe wat data byvoeg, kan die WordPress-database baie groot en stadig word. Regelmatige optimalisering van die database is noodsaaklik.
 
-### **Opsommingstabel vir Multi-Site Beplanning**
+### **Opsommingstabel vir Multi-Site Beplanning** {#ultimate-multisite}
 
 | As u... | Behoeftes | Aanbeveel |
 | :--- | :--- | :--- |

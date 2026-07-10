@@ -3,9 +3,9 @@ title: Orodha ya Mabadiliko ya Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Orodha ya Mabadiliko za Content Sync
+# Orodha ya Mabadiliko za Content Sync {#content-sync-changelog}
 
-### Toleo 1.1.0 - Ili kutolewa tarehe 2025-12-31
+### Toleo 1.1.0 - Ili kutolewa tarehe 2025-12-31 {#version-110---released-on-2025-12-31}
 * Jipya: Kuunga mkono usawazishaji wa aina zote za chapisho (posts, pages, custom post types)
 * Jipya: Kuchuja aina za chapisho katika hatua ya kuchagua maudhui.
 * Jipya: Hatua ya kuchagua tovuti chanzo - usawazisha kutoka tovuti yoyote, sio tu tovuti kuu.
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Kimebadilishwa: Hatua ya "Select Templates" imebadilishwa jina na kuwa "Select Data".
 * Kuboreshwa: Code maalum kwa Elementor sasa inatumika tu kwa aina ya chapisho ya elementor_library.
 
-### Toleo 1.0.0 - Ili kutolewa tarehe 2025-12-19
+### Toleo 1.0.0 - Ili kutolewa tarehe 2025-12-19 {#version-100---released-on-2025-12-19}
 * Toleo la kwanza.
 * Wizard yenye hatua nyingi kwa kuchagua muundo (template) na tovuti.
 * Usindikaji wa kundi (batch processing) na maoni ya maendeleo kwa wakati halisi.

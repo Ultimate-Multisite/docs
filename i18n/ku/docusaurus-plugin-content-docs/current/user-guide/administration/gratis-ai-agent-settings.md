@@ -1,29 +1,29 @@
 ---
-title: Settings of Gratis AI Agent
+title: Mîhengên Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# تنظیمات رایگان عامل هوش مصنوعی (AI Agent)
+# Mîhengên Gratis AI Agent {#gratis-ai-agent-settings}
 
-صفحه **تنظیمات → پیشرفته** در Gratis AI Agent امکان پیکربندی سطح مدیر را برای یکپارچه‌سازی‌های بک‌اند که در نسخه v1.5.0 معرفی شده‌اند، فراهم می‌کند. این صفحه مستند کردن فیلدهای **نقطه پایانی بازخورد (Feedback Endpoint)** و فرمت مورد انتظار آن‌ها است.
+Dîmendera **Settings → Advanced** di Gratis AI Agent de veavakirina asta rêveberiyê ji bo girêdanên backend pêşkêş dike. Ev rûpel şandina feedback, kilîdên dabînkerên lêgerînê, sazkirina xizmeta birêvebirî ya Superdav, kontrolên Google Calendar, mîhengên SMS yên TextBee, û alayên taybetmendiyan ên hemû torê belge dike.
 
-## دسترسی به تنظیمات
+## Gihîştina Settings {#accessing-settings}
 
-۱. در پنل مدیریت وردپرس، به مسیر **Gratis AI Agent → Settings** بروید.
-۲. روی تب **Advanced** کلیک کنید.
+1. Di rêveberiya WordPress de, biçin **Gratis AI Agent → Settings**.
+2. Li ser tabloya **Advanced** bitikînin.
 
-## پیکربندی نقطه پایانی بازخورد (Feedback Endpoint)
+## Veavakirina Endpoint a Feedback {#feedback-endpoint-configuration}
 
-نقطه پایانی بازخورد درخواست‌های POST را از عامل هوش مصنوعی دریافت می‌کند؛ این اتفاق زمانی رخ می‌دهد که کاربر از طریق دکمه "لایک نکردن" (thumbs-down)، بنر پیشنهاد خودکار، یا دستور `/report-issue` بازخورد ارسال کند.
+Endpoint a feedback daxwazên POST ji AI agent werdigire dema ku bikarhêner bi riya bişkoka thumbs-down, pankarta auto-prompt, an fermana `/report-issue` feedback dişîne.
 
-| فیلد | توضیحات |
+| Qad | Danasîn |
 |---|---|
-| **Feedback Endpoint URL** | آدرس اینترنت که دریافت کننده ارسال‌های بازخورد به صورت درخواست HTTP POST با بدنه JSON است. |
-| **Feedback API Key** | یک توکن همراه (bearer token) که در هدر `Authorization` هر درخواست بازخورد ارسال می‌شود. اگر نقطه پایانی شما نیازی به احراز هویت ندارد، این فیلد را خالی بگذارید. |
+| **Feedback Endpoint URL** | URL ku şandinên feedback wek daxwazên HTTP POST bi laşek JSON werdigire. |
+| **Feedback API Key** | bearer token ku di `Authorization` header a her daxwaza feedback de tê şandin. Heke endpoint a we piştrastkirinê nehewce dike, vala bihêlin. |
 
-### محموله JSON مورد انتظار (Expected JSON Payload)
+### Barkirina JSON a Tê Hêvîkirin {#expected-json-payload}
 
-نقطه پایانی بازخورد شما باید یک بدنه JSON با حداقل فیلدهای زیر را بپذیرد:
+Endpoint a feedback a we divê laşek JSON bi herî kêm qadên jêrîn qebûl bike:
 
 ```json
 {
@@ -34,72 +34,119 @@ _i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
 }
 ```
 
-بسته به زمینه مکالمه، ممکن است فیلدهای دیگری نیز در محموله وجود داشته باشند.
+Li gorî çarçoveya axaftinê, dibe ku qadên din jî di payload de hebin.
 
-### مقادیر `triage_category`
+### Nirxên `triage_category` {#triagecategory-values}
 
-لایه طبقه‌بندی هوش مصنوعی (AI triage layer) قبل از ارسال محموله، یکی از مقادیر زیر را به `triage_category` اختصاص می‌دهد:
+Qata triage a AI berî şandina payload yek ji nirxên jêrîn dide `triage_category`:
 
-| مقدار | معنی |
+| Nirx | Wate |
 |---|---|
-| `factual_error` | دستیار اطلاعات واقعی اشتباهی ارائه داده است. |
-| `unhelpful_answer` | پاسخ از نظر فنی درست بوده اما مفید نبوده است. |
-| `inappropriate_content` | پاسخ حاوی محتوایی بوده که نباید به کاربران نمایش داده شود. |
-| `other` | بازخورد با هیچ دسته‌بندی شناخته‌شده‌ای مطابقت ندارد. |
+| `factual_error` | Alîkar agahiyeke rastiyî ya şaş pêşkêş kir. |
+| `unhelpful_answer` | Bersiv ji aliyê teknîkî ve rast bû lê bikêr nehat. |
+| `inappropriate_content` | Bersiv naverokek hebû ku divê ji bikarhêneran re neyê nîşandan. |
+| `other` | Feedback bi kategoriyeke naskirî re nehat hev. |
 
-### احراز هویت (Authentication)
+### Piştrastkirin {#authentication}
 
-ئەگەر کۆتایی پۆنتەکەت پێویستی بە ڕێگەپێدان (authentication) هەبێت، فیلدی **Feedback API Key** دەربکەوێت بە bearer tokenی خۆت. ئەژمارەکە دەنێرێت:
+Heke endpoint a we piştrastkirinê hewce dike, qada **Feedback API Key** wek bearer token a xwe saz bikin. Agent dişîne:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-ئەگەر فیلدی **Feedback API Key** خاوەنی بێت، هیچ سەردانی `Authorization` headerێک نێردراوە.
+Heke qada **Feedback API Key** vala be, tu `Authorization` header nayê şandin.
 
-### دەستکەوتنی کۆکردنەوەی فیدبیک (Disabling Feedback Collection)
+### Neçalakirina Komkirina Feedback {#disabling-feedback-collection}
 
-هەردوو فیلدی **Feedback Endpoint URL** و **Feedback API Key** بە خاڵ ڕابنرێن. دۆشی پاشەکەوت (thumbs-down button) و واچووری فیدبیک بۆ بەکارهێنەران دەمێننەوە، بەڵام داواکارییەکان بۆ هیچ خزمانی دەرەکییەک نەنێردرێت.
+Her du qadên **Feedback Endpoint URL** û **Feedback API Key** vala bihêlin. Bişkoka thumbs-down û navrûya feedback ji bikarhêneran re xuya dimînin, lê şandin ji bo tu xizmeta derve nayê şandin.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-شێوەزادا لەناو تابلۆی **Advanced** (ناوەندی پێشکەوتوو)، فیلدی **Brave Search API Key** دەگونجێنێت بە توانای گەڕان لە ئینتەرنێت ([Internet Search](../configuration/internet-search)) یاری بکات.
+Herwiha li ser tabloya **Advanced**, qada **Brave Search API Key** şiyana [Lêgerîna Înternetê](../configuration/internet-search) çalak dike.
 
-| فیلد | وەسفکردن |
+| Qad | Danasîn |
 |---|---|
-| **Brave Search API Key** | کلێی API (API key) یەکێکە لە داشبۆردار دزڤەرەکانی Brave Search. پێویستە بۆ چالاککردنی گەڕان لە ئینتەرنێت لە یارمەتیدەرەکەدا. |
+| **Brave Search API Key** | API key a we ji dashboard a pêşvebir a Brave Search. Ji bo çalakkirina lêgerîna înternetê di alîkarê AI de pêwîst e. |
 
-ناوەکانی فیلد لینکێکی کارپێکراو بۆ لاگینی (sign-up) APIی Brave Search دەگرێتەوە. بۆ ئەوەی گەڕان لە ئینتەرنێت بێت، بە خاڵ ڕابنرێن.
+Etîketa qadê girêdaneke ku dikare bê tikandin ji bo rûpela tomarkirina Brave Search API dihewîne. Ji bo neçalakirina lêgerîna înternetê vala bihêlin.
 
-بۆ زیاتر زانیارییەکانی بەکارهێنەر، سەردانی [Internet Search](../configuration/internet-search) بکە.
+Ji bo belgeya bikarhênerê dawî li ser vê taybetmendiyê, binêrin [Lêgerîna Înternetê](../configuration/internet-search).
 
-## Feature Flags (پلانکەکانی تایبەتمەندی)
+## Xizmeta Birêvebirî ya Superdav {#managed-superdav-service}
 
-وەک پێشتر لە v1.9.0دا پێشکەش کرا، تابلۆی **Settings → Feature Flags** پۆڵەکان بۆ ئەو کارانەی کە ئاسایی نین، دەگرێتەوە. هەر پلەیە یان چالاک دەکەیت یان نادەکریت بە شێوەیەکی گشتی لەسەر هەموو شوێنێک؛ لە ئێستادا هیچ ڕێگای تایبەت بۆ هەر شوێنێک نییە کە ئەمە بگۆڕێت.
+Superdav AI Agent v1.18.0 endpointên xizmeta birêvebirî ya Superdav û dabînkirina girêdanê ya otomatîk ji bo malperên piştgirîkirî zêde dike. Dema ku divê malpera we li şûna endpoint a xizmetê ya bi destan veavakirî bi dabînkerê mêvandarkirî ve were girêdan, van kontrolan bikar bînin.
 
-### دەستگەیشتن بە Feature Flags
+| Qad | Danasîn |
+|---|---|
+| **Managed Superdav Service** | Girêdana xizmeta Superdav a mêvandarkirî ji bo malperên piştgirîkirî çalak dike. |
+| **Provision Connection** | Dabînkirina endpoint û agahiyên nasnameyê ya otomatîk dest pê dike. Piştî piştrastkirina ku divê malper dabînkerê birêvebirî bikar bîne, vê bikar bînin. |
+| **Service Endpoint / Connection Status** | Piştî dabînkirinê endpoint a niha an rewşa girêdanê nîşan dide. |
 
-1. لە ئامێر ADMINISTRATORی WordPress، بچۆ بۆ **Gratis AI Agent → Settings**.
-2. تابلۆی **Feature Flags** بکە بەسەردا.
+Piştî dabînkirinê, mîhengan tomar bikin û berî piştrastkirina karûbarên xizmeta birêvebirî rewşa girêdanê kontrol bikin. Heke dabînkirin bi ser nekeve, rêberiya dubareceribandinê ya nîşandêr binirxînin û piştrast bikin ku malper destûr heye dabînkerê mêvandarkirî bikar bîne.
 
-### Feature Flags ی کۆنترۆڵی دەستگەیشتن (Access Control Flags)
+## Veavakirina Google Calendar {#google-calendar-configuration}
 
-| پرچم | پیش‌فرض | توضیحات |
+Dema ku taybetmendiyên salnameyê yên Superdav AI Agent v1.18.0 çalak bin, agent dikare salnameyên veavakirî û hûrgiliyên bûyeran bixwîne. Amûrên salnameyê xwendin-navend in û ji bo bibîrxistinên bi zanîna demjimêrê, şopandina beşdaran, û hevberkirina têkiliyan bikêr in.
+
+| Qad | Danasîn |
+|---|---|
+| **Google Calendar Credentials** | Agahiyên nasnameyê an girêdana token a ji bo xwendina daneyên salnameyê pêwîst tomar dike. |
+| **Calendar Selection** | Sînor dike ka agent dikare kîjan salnameyên veavakirî kontrol bike. |
+| **Calendar Connection Status** | Piştrast dike ka agahiyên nasnameyê yên niha dikarin salname û bûyeran bixwînin an na. |
+
+Agahiyên nasnameyê yên salnameyê tenê bi salnameyên ku agent pêwîst dike re sînordar bihêlin. Heke rewş nîşan dide ku token qediyaye, dîsa girêbidin an agahiyên nasnameyê biguherînin.
+
+## Agahdarkirinên SMS yên TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 TextBee wek dabînkerê SMS ji bo rêxistinên agahdarkirinê yên veavakirî zêde dike. Agahdarkirinên SMS divê ji bo peyamên hestyar an yên ku bikarhêner dibînin bi dergehên pejirandina mirovî re werin hevkirin.
+
+| Qad | Danasîn |
+|---|---|
+| **TextBee API Key** | Daxwazan ji bo dabînkerê SMS yê TextBee piştrast dike. |
+| **TextBee Device / Sender** | Dema ku dabînker hewce dike, şandêr an amûra TextBee ya ji bo peyamên derketî tê hilbijartin. |
+| **SMS Notifications Enabled** | Destûr dide rêxistinên pejirandî agahdarkirinên peyama nivîskî bişînin. Ji bo astengkirina şandina SMS neçalak bihêlin. |
+
+Peyameke ceribandinê tenê ji hejmareke ku aîdî rêveber e re bişînin, paşê berî çalakkirina bibîrxistinên plansazkirî an yên ber bi beşdaran ve çûyî, tevgera dergehên pejirandinê piştrast bikin.
+
+## Alayên Taybetmendiyan {#feature-flags}
+
+Herwiha di v1.9.0 de hatine nasandin, tabloya **Settings → Feature Flags** guhartokên vekirin/girtinê ji bo karîgeriyên bijarte pêşkêş dike. Her ala an li hemû torê çalak e an neçalak e; di vê demê de tune ye ku ji bo her malperê cuda were sererastkirin.
+
+### Gihîştina Feature Flags {#accessing-feature-flags}
+
+1. Di rêveberiya WordPress de, biçin **Gratis AI Agent → Settings**.
+2. Li ser tabloya **Feature Flags** bitikînin.
+
+### Alayên Kontrola Gihîştinê {#access-control-flags}
+
+| Nîşan | Standard | Şirove |
 |---|---|---|
-| **محدود کردن به مدیران** | خاموش (Off) | وقتی فعال شود، فقط کاربرانی که نقش `administrator` دارند می‌توانند پنل چت عامل هوش مصنوعی را باز کنند. سایر کاربران پیام "با مدیر خود تماس بگیرید" را خواهند دید. |
-| **محدود کردن به مدیران شبکه** | خاموش (Off) | در یک شبکه چند سایت، وقتی این گزینه فعال باشد، فقط سوپر ادمین‌ها می‌توانند از عامل استفاده کنند. مدیران هر سایت به صورت جداگانه مسدود می‌شوند. اگر هر دو گزینه فعال باشند، این تنظیم اولویت دارد و بر "محدود کردن به مدیران" غلبه می‌کند. |
-| **اجازه دسترسی مشترکین** | خاموش (Off) | وقتی فعال شود، کاربران با نقش `subscriber` می‌توانند از رابط چت استفاده کنند اما محدود به قابلیت‌های فقط خواندنی هستند (نمی‌توانند پست ایجاد یا تنظیمات را تغییر دهند). |
-| **غیرفعال کردن برای غیرعضوها** | خاموش (Off) | این گزینه با وضعیت عضویت Ultimate Multisite کار می‌کند. وقتی فعال شود، چت برای سایت‌هایی که عضویت فعالی ندارند مخفی می‌شود. |
+| **Bi tenê ji bo Administrators sînordar bike** | Off | Dema ku çalak be, tenê bikarhênerên bi rola `administrator` dikarin panela axaftina AI Agent vekin. Hemû rolên din li şûna wê peyama "Bi administratorê xwe re têkilî bike" dibînin. |
+| **Bi tenê ji bo Network Admins sînordar bike** | Off | Dema ku li ser tora multisite çalak be, tenê Super Admins dikarin agent bikar bînin. Adminên malperên takekesî têne astengkirin. Heke herdu jî çalak bin, li ser "Bi tenê ji bo Administrators sînordar bike" pêşî digire. |
+| **Destûra gihîştina Subscriber bide** | Off | Dema ku çalak be, bikarhênerên bi rola `subscriber` dikarin navrûya axaftinê bikar bînin, lê tenê bi şiyanên xwendinê ve têne sînordarkirin (afirandina nivîsê an guherandina mîhengan tune). |
+| **Ji bo ne-Endaman neçalak bike** | Off | Bi rewşa endamtiya Ultimate Multisite re yek dibe. Dema ku çalak be, axaftin ji bo malperên ku endamtiyeke çalak tune ye tê veşartin. |
 
-### پرچم‌های برندینگ (Branding Flags)
+### Nîşanên Branding {#branding-flags}
 
-| پرچم | پیش‌فرض | توضیحات |
+| Nîşan | Standard | Şirove |
 |---|---|---|
-| **پنهان کردن فوتر "Powered by Gratis AI Agent"** | خاموش (Off) | این خط مربوط به نام تجاری که در پایین ویجت چت نمایش داده می‌شود را حذف می‌کند. برای استقرار با برند شخصی توصیه می‌شود. |
-| **نام عامل سفارشی** | *(خالی)* | برچسب پیش‌فرض "Gratis AI Agent" در هدر چت و منوی ادمین با نام محصول خود جایگزین می‌شود. اگر خالی بگذارید، از مقدار پیش‌فرض استفاده کنید. |
-| **پنهان کردن انتخاب عامل (Agent Picker)** | خاموش (Off) | وقتی فعال شود، کاربران نمی‌توانند بین پنج عامل داخلی جابجا شوند. عامل فعلی به تنظیمات → عمومی در بخش Settings → General که به عنوان پیش‌فرض تنظیم شده است، ثابت می‌ماند. |
-| **استفاده از آیکون سایت به عنوان آواتار چت** | خاموش (Off) | آیکون هوش مصنوعی پیش‌فرض در هدر ویجت چت با آیکون سایت وردپرس جایگزین می‌شود (این تنظیم در Appearance → Customize → Site Identity قرار دارد). |
+| **Footer-a "Powered by Gratis AI Agent" veşêre** | Off | Rêza danasîna brandingê ya ku li binê widget-a axaftinê tê nîşandan radike. Ji bo bicihkirinên white-label tê pêşniyarkirin. |
+| **Navê Agent-ê Taybet** | *(vala)* | Nîşana standard a "Gratis AI Agent" di sernivîsa axaftinê û menuya admin de bi navê hilbera te diguherîne. Ji bo bikaranîna standard vala bihêle. |
+| **Hilbijêrka Agent-ê veşêre** | Off | Dema ku çalak be, bikarhêner nikarin di navbera pênc agent-ên çêkirî de biguherin. Agent-a heyî li gorî ya ku wek standard di Settings → General de hatiye mîhengkirin sabît e. |
+| **Îkona Malperê wek Avatar-a Axaftinê bikar bîne** | Off | Di sernivîsa widget-a axaftinê de îkona AI ya standard bi îkona malpera WordPress (di bin Appearance → Customize → Site Identity de tê mîhengkirin) diguherîne. |
 
-### اعمال تغییرات
+### Nîşanên Ewlehiya Otomasyonê {#automation-safety-flags}
 
-بعد از تغییر هر پرچمی، روی **Save Settings** کلیک کنید. تغییرات بلافاصله اعمال می‌شوند — نیازی به پاک کردن کش یا فعال‌سازی مجدد پلاگین نیست.
+Superdav AI Agent v1.18.0 ji bo xebitandinên otomasyonê yên ewletir dergehên pejirandina mirovî û tomarên bîranînê dide destpêkirin. Ev kontrol dikarin li gorî pakêta sazkirî di nîşanên taybetmendiyan an mîhengên pêşketî yên otomasyonê de xuya bibin.
+
+| Nîşan | Standard | Şirove |
+|---|---|---|
+| **Pejirandina Mirovî Pêwîst Bike** | Tê pêşniyarkirin ku çalak be | Otomasyonên hestyar rawestîne heta ku bikarhênerek destûrdar kiryara pêşniyarkirî binirxîne û piştrast bike. |
+| **Dubare-nebûna Bîranînan** | On | Bîranînên şandî tomar dike da ku ceribandinên dubare an xebitandinên plansazkirî agahdariyên dubare neşînin. |
+| **Amûrên Salnameyê Çalak Bike** | Off heta ku were mîhengkirin | Destûr dide agent ku salname û bûyerên Google yên mîhengkirî bixwîne. |
+| **Agahdariyên SMS Çalak Bike** | Off heta ku were mîhengkirin | Destûr dide workflows-ên pejirandî ku piştî tomarkirina belgeyên nasnameyê agahdariyên TextBee SMS bişînin. |
+
+### Sepandina Guherînan {#applying-changes}
+
+Piştî guherandina her nîşanekê, li **Save Settings** bitikîne. Guherîn tavilê bandor dikin — paqijkirina cache an ji nû ve çalakkirina plugin pêwîst nîne.

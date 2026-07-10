@@ -4,20 +4,20 @@ title: Filter - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# Filter: secure_auth_cookie
+# Filter: secure_auth_cookie {#filter-secureauthcookie}
 
 Bestämmer om autentiseringskakan (auth cookie) endast ska skickas över HTTPS.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
 | $secure | `bool` | Om kakan endast ska skickas över HTTPS. |
 | $user_id | `int` | Användarens ID. |
 
-### Sedan
+### Sedan {#since}
 
 - 3.1.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L80) på rad 80

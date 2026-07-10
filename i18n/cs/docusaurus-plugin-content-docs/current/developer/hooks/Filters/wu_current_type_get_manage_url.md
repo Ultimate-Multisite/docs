@@ -4,11 +4,11 @@ title: 'Filtrační - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filter: wu_current_\{$type\}_get_manage_url
+# Filter: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Umožňuje vývojářům upravit parametry URL pro správu stránky.
 
-## Parametry
+## Parametry {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Umožňuje vývojářům upravit parametry URL pro správu stránky.
 | $id | `int` | ID stránky. |
 | $site_hash | `string` | Hash stránky. |
 
-### Od
+### Od {#since}
 
 - 2.0.9
-### Source
+### Source {#source}
 
 Defined in [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) at line 214
 
 
-## Vrací
+## Vrací {#returns}
 Upravená URL pro správu stránky.

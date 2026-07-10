@@ -3,7 +3,7 @@ title: ഭാഷ തിരഞ്ഞെടുക്കൽ
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# ഭാഷാ സെലക്ടർ
+# ഭാഷാ സെലക്ടർ {#language-selector}
 
 ഈ ഫീച്ചർ **Language Selector** addon വഴി ലഭ്യമാക്കുന്നു.
 

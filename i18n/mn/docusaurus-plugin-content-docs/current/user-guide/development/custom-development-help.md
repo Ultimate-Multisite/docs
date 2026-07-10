@@ -3,13 +3,13 @@ title: Тохируулсан хөгжүүлэлтийн тусламж
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable-асаар өөрчлөлт хийхэд хэрхэн туслах вэ?
+# Codeable-асаар өөрчлөлт хийхэд хэрхэн туслах вэ? {#how-to-get-custom-development-help-from-codeable}
 
 Заримдаа бид сүлжээний дарааллыг өөрсдийн хүссэнээр яг ижил байлгахын тулд гайхалтай тохируулга хийхийг үнэхээр шаарддаг. Хэрэв та тийм зүйл хайж байгаа бол бид [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-ийг санал болгоно. Энд Ultimate Multisite-ийн туршлагатай туршлагатай хөгжимчдийг олох боломжтой.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) нь үйлчлүүлэгчдийг ямар ч хэмжээний төслийн дээр ажиллах чадвартай WordPress фрилансер хөгжимчтэй холбодог платформ юм. Таны бодсоор тохирох мэргэжлийн экспертүүдтэй тааруулахын тулд тэд анхааралтай өргөдөл гаргах үйл явцыг хийдэг.
 
-### Codeable-д төсөл хэрхэн үүсгэх вэ?
+### Codeable-д төсөл хэрхэн үүсгэх вэ? {#how-to-create-a-project-in-codeable}
 
 Эхлээд [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE)-т очиж **Start a Project** (Төслийг эхлүүлэх) товчийг дарна уу.
 

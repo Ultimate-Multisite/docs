@@ -3,33 +3,33 @@ title: Parandage kontrollplaani integreerimist
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kontrollpaneli integreerimise parandamine
+# Kontrollpaneli integreerimise parandamine {#enhance-control-panel-integration}
 
-## Üldine ülevaade
+## Üldine ülevaade {#overview}
 Enhance on moderni kontrollpaneel, mis pakub võimlikku hoitjaautomaatika ja haldamise võimalusi. See integreerimine võimaldab domeenide automaatselt synkronida ja SSL-sertifikaate halda Ultimate Multisite'i ja Enhance Control Panel vahel.
 
 **Seotud diskussioon:** Leia [GitHub Diskussiooni #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) kogukonnalt antud nõuete ja lisate teavet.
 
-## Funktsioonid
+## Funktsioonid {#features}
 - Domeenide automaatne synkronimine, kui domeenid on Ultimate Multisite'is määratud
 - Automootne SSL-sertifikaatide provisjonimine LetsEncrypti abil DNS resolvtud ajal
 - Subdomeenide toetmine võrkude jaoks, mis toimivad subdomeenirežiimis
 - Domeenide eemaldamine, kui määrustused eemaldatakse
 - API-kujutuse testimine API-kõrrekordide kinnitamiseks
 
-## nõuded
+## nõuded {#requirements}
 
-### Süsteernõuded
+### Süsteernõuded {#system-requirements}
 - Enhance Control Panel on paigaldatud ja kättesaadav
 - WordPress Multisite installatsioon on hoitija serveril või seotud Enhance serverile
 - Apache veebiserver (Enhance toetab praegu Apache konfiguratsioone; LiteSpeed Enterprise on saadaval vähendatud hinnaga)
 
-### API-kättesaadavus
+### API-kättesaadavus {#api-access}
 Pea peate administratorõigust Enhance Control Panelis, et luua API-tokenid.
 
-## API-kujutuse saamist
+## API-kujutuse saamist {#getting-your-api-credentials}
 
-### 1. API-tokeni loomine
+### 1. API-tokeni loomine {#1-create-an-api-token}
 
 1. Logi sisse oma Enhance Control Panelile administratorina
 2. Klõpsake navigatsioonimenu **Settings** (Seaded) välja
@@ -44,7 +44,7 @@ Pea peate administratorõigust Enhance Control Panelis, et luua API-tokenid.
 
 Pärast loomist näidatakse teie **Access Token** ja **Organization ID**. **Salvestage need kohe**, kuna token näidatakse ainult ühe korra.
 
-### 2. Hii oma Organization ID
+### 2. Hii oma Organization ID {#2-get-your-organization-id}
 
 Organization ID on näidatud Access Tokens lehel sinise informatsioonikasti, kus on märgitud "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Võite ka leida kliendi Organization ID järgnevate sammude abil:
 2. Klientide jaoks klõpsata **Manage customer**
 3. Vaata URL-i – Organization ID on alfanumerilised tegevused `/customers/` pärast.
 
-### 3. Hii oma Server ID
+### 3. Hii oma Server ID {#3-get-your-server-id}
 
 Server ID (vajalik domeenoperatsioonide jaoks) leida:
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID järgib UUID-formati: `00000000-0000-0000-0000-000000000000`
 
-### 4. Hii oma API URL
+### 4. Hii oma API URL {#4-get-your-api-url}
 
 Teie API URL on teie Enhance Control Panel URL, millele lisatakse `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - ainult domeeni ilma `/api/` pärast kasutamine
 - HTTP asemel HTTPS kasutamine (turvalisuse jaoks on HTTPS vajalik)
 
-## Konfiguratsioon
+## Konfiguratsioon {#configuration}
 
-### Vajalikud konstantsid
+### Vajalikud konstantsid {#required-constants}
 
 Lisa järgmised konstantsid oma `wp-config.php` failile:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'si-asi-token-si-si');
 define('WU_ENHANCE_API_URL', 'https://si-parandige-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'si-server-uuid-si');
 
-### Seadistundise integreerimise abil
+### Seadistundise integreerimise abil {#setup-via-integration-wizard}
 
 1. WordPress administratiivis osas lahti, minuga **Ultimate Multisite** > **Settings** menuka.
 2. Minuga navigeerige **Integrations** tabilele.
@@ -110,17 +110,17 @@ Võite valida:
 - Wizardi, et see automatiliselt sisenda konstants teie `wp-config.php` failisse.
 - Kopida konstants define'id ja lisada need manuaaliselt.
 
-## Lisakogu WordPressi seadistusi
+## Lisakogu WordPressi seadistusi {#additional-wordpress-configuration}
 
 Kogemuste tagastandimise (\[Diskussioon #265\]) põhjal, võib tekkuda vajadus konfigurida neid lisaseadistusi:
 
-### .htaccess Konfiguratsioon
+### .htaccess Konfiguratsioon {#htaccess-configuration}
 
 Kui tuvate probleeme domeenide maapoolise määratlemise puhul:
 1. Eeletud originaal Enhance `.htaccess` fail.
 2. Asenda sellele standard WordPress Multisite `.htaccess` fail.
 
-### Cookie Konstantsid
+### Cookie Konstantsid {#cookie-constants}
 
 Lisage need konstantsid `wp-config.php`-le, et tagada õiguse cookie-juhtimise maapoolset domeene üle:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Kuidas see toimib
+## Kuidas see toimib {#how-it-works}
 
-### Kui domeen on maapoolise määratud
+### Kui domeen on maapoolise määratud {#when-a-domain-is-mapped}
 
 1. Kasutaja määrab oma domeeni Ultimate Multisite's (või luuakse uue saini mode)
 
@@ -144,14 +144,14 @@ define('ADMIN_COOKIE_PATH', '/');
 
 5. Domeen muutub aktiivseks HTTPS-ga
 
-### Kui domeeni eemaldatakse
+### Kui domeeni eemaldatakse {#when-a-domain-is-removed}
 
 1. Ultimate Multisite'is domeeni mappimine eemaldatakse
 2. Integreerimine küsib Enhance'ilt domeeni ID leidmiseks
 3. Lähteb DELETE-vaate: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance eemaldab domeeni teie server konfiguratsioonist
 
-### DNS ja SSL kontrollimine
+### DNS ja SSL kontrollimine {#dns-and-ssl-checking}
 
 Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 - Saate konfigurida kontrolli intervalli **Domain Mapping Settings**is (oletus: 300 sekunsti/5 minutit)
@@ -159,9 +159,9 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 - SSL-sertifikaadi kehtivuse kontroll on automaatselt tehtud
 - Enhance haldab SSL-proviisjon automaatselt, seega manuaalset SSL-konfiguratsiooni ei vaja
 
-## Seadistuse kinnitamine
+## Seadistuse kinnitamine {#verifying-setup}
 
-### Ühenduse testimine
+### Ühenduse testimine {#test-the-connection}
 
 1. Integreerimise juhendis kasutage **Test Connection** sammuga
 2. Plugin proovib serveril olevat domeene loetada
@@ -171,7 +171,7 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
    - Server ID on valide
    - Permissioonid on õigilt seaditud
 
-### Domeeni mappamise pärast
+### Domeeni mappamise pärast {#after-mapping-a-domain}
 
 1. Mappige Ultimate Multisite'is testdomeen
 2. Kontrollige Ultimate Multisite logid (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -181,9 +181,9 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 
 4. Kui DNS propagatsioon on lõpetatud, kinnitage, et SSL loodud on automaatselt
 
-## Probleemide lahendused
+## Probleemide lahendused {#troubleshooting}
 
-### API ühenduse probleemid
+### API ühenduse probleemid {#api-connection-issues}
 
 **Vigav: "Enhance API-le ühendamine ebaõnnestus"**
 - Kontrollige, kas `WU_ENHANCE_API_URL` lõpus on `/api/`.
@@ -201,7 +201,7 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 - Veendunud, et Server ID on valide UUID-formati.
 - Kontrollige, kas server on teie Enhance paneelis olemas.
 
-### Domeeni lisamata
+### Domeeni lisamata {#domain-not-added}
 
 **Logide kontrollimine:**
 1. Minenda **Ultimate Multisite** > **Logs**.
@@ -214,7 +214,7 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 - Piisiklik API-luba (veendunud, et tokenil on System Administrator roll).
 - Server ID ei vastata tõelise serveriga Enhance'is.
 
-### SSL-sertifikaadi probleemid
+### SSL-sertifikaadi probleemid {#ssl-certificate-issues}
 
 **SSL ei loodud:**
 - Kontrollige, kas DNS viitab teie serveri IP-adressile.
@@ -228,7 +228,7 @@ Ultimate Multisite sisaldab sissejuhatud DNS- ja SSL-kontrolli:
 2. Leidske oma domeen ja kontrollige selle SSL-tila.
 3. Kas vajalik, saate SSL-sertifikaadi loodamist manuaalselt käivitada.
 
-### DNS-kontrolli vahel olev intervall
+### DNS-kontrolli vahel olev intervall {#dns-check-interval}
 
 Kui domeenid või SSL-sertifikaadid aktifleštavad liiga pika aega:
 1. Minenda **Ultimate Multisite** > **Settings** > **Domain Mapping** menüüle
@@ -236,7 +236,7 @@ Kui domeenid või SSL-sertifikaadid aktifleštavad liiga pika aega:
 3. Reguleerida seda poolt puudutult 300 sekündist väiksemaks (minimum: 10 sekundit)
 4. **Märkus:** Väike intervallid tähendavad sagedamalt kontrolli, kuid suuremat serveri koormust
 
-### Autentikatsioonivõrgeid
+### Autentikatsioonivõrgeid {#authentication-errors}
 
 **HTTP 401/403 väärtuseid:**
 - Uusenda API token Enhance'is.
@@ -244,7 +244,7 @@ Kui domeenid või SSL-sertifikaadid aktifleštavad liiga pika aega:
 - Kontrollida, kas token pole lülitunud.
 - Veenduda, et kasutate õiget Organisatsiooni ID-d (kuigi see tavaliselt ei ole vajalik URL-is).
 
-### Logide analüüs
+### Logide analüüs {#log-analysis}
 
 Lülitage üksikasjalik logi:
 ```php
@@ -258,15 +258,15 @@ Kontrollige logid järgmisel viisil:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance paneli logid: Saadaval Enhancei administraatoripaneelis
 
-## API Viitamine
+## API Viitamine {#api-reference}
 
-### Autentikatsioon
+### Autentikatsioon {#authentication}
 Kõik API-vaadised kasutavad Bearer token autentikat:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Tavaliselt kasutatavad endpunktid
+### Tavaliselt kasutatavad endpunktid {#common-endpoints-used}
 
 **Serverite listimine:**
 ```
@@ -289,31 +289,31 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Täielik API Dokumentatsioon
+### Täielik API Dokumentatsioon {#full-api-documentation}
 Täielik API dokumentatsioon: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Parimad praktikad
+## Parimad praktikad {#best-practices}
 
-### Turvalisus
+### Turvalisus {#security}
 - **Ärge kun API tokenid version controlile**
 - Salvesta tokenid `wp-config.php` faili, mida Gitist tuleb eksklüduuda
 - Kasuta tokenide, millel on sobivad õigused (Süsteemi administraator kogu integreerimiseks)
 - Aseta tokenide kümned ajad tootmerekontuurides
 - Vahetada tokenide perioodiliselt
 
-### Tõhusus
+### Tõhusus {#performance}
 - Kasuta pooltoleva DNS-kontrolli intervalli (300 sekundi) vältida ületundlikke API-kutseid
 - Jälgige Enhance serveri ressursside monitoreerimist suurte domeenoperatsioonide korral
 - Arvesta domeenlisandeid järjepidevusega, kui palju domeene kord kordaga mappite
 - Arvesta
 
-### Monitööring
+### Monitööring {#monitoring}
 - Kontrollige regulaarselt Ultimate Multisite logud integreerimisvigu kohta
 - Aseta monitoreerimine ebaõnnestatud domeenlisandeid jaoks
 - Veenda, et SSL-tsete provisjonimine toimub õigesti
 - Jälgige Enhance serveri võimejääki ja domeenlimite
 
-## Lisareakondid
+## Lisareakondid {#additional-resources}
 
 - **Enhance ametlik dokumentatsioon:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API dokumentatsioon:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -321,7 +321,7 @@ Täielik API dokumentatsioon: [https://apidocs.enhance.com](https://apidocs.enha
 - **GitHub diskussioon:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite domeenmappimise juhend:** Vaata wiki lehte "How to Configure Domain Mapping v2"
 
-## Tuge
+## Tuge {#support}
 Kui te kohtate probleeme:
 1. Kontrollige ülaloleva probleemide lahendamise osakonda
 2. Vaadake Ultimate Multisite logud
@@ -329,7 +329,7 @@ Kui te kohtate probleeme:
 4. Kontaktige Enhance tugepanekule paneelspesaseid küsimusi jaoks
 5. Luue uue diskussiooni üksikasjaliste vigu logudega kogukonna abi saamiseks
 
-## Nooted
+## Nooted {#notes}
 
 * See, see. See.
 

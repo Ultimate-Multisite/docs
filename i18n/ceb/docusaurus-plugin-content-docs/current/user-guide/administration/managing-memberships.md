@@ -3,7 +3,7 @@ title: Pagdumala sa mga Membership
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Pagdumala sa Memberships
+# Pagdumala sa Memberships {#managing-memberships}
 
 Sa Ultimate Multisite, pwede nimo i-manage ang mga membership ug ma-access ang tanang subscriptions sa inyong network. Mahimo ninyong i-review ug i-edit ang mga detalye sa subscription sama sa plans ug products, ang gidaghanon sa sites, ang kantidad sa bayad ug kalihukan (frequency), kasaysayan sa pagbayad, ug timestamps.
 

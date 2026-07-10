@@ -3,11 +3,11 @@ title: Bakit Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Bakit Ultimate Multisite
+# Bakit Ultimate Multisite {#why-ultimate-multisite}
 
 Kung nakarating ka sa artikulong ito, malamang narinig mo na ang aming plugin ang maaaring solusyon para maging totoo ang iyong ideya sa negosyo. Umaasa kaming makuha mo ang mga sagot na kailangan mo pagkatapos mong basahin ito.
 
-## Ano ang Ultimate Multisite?
+## Ano ang Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ang Ultimate Multisite ay isang WordPress Multisite plugin na nagbibigay-daan sa iyo na mag-alok sa mga customer ng WaaS (Website as a Service). Sa aming plugin, maaari kang magkaroon ng iba't ibang tier ng subscription at hayaan ang mga customer na magbayad sa iyo ng paulit-ulit na bayad para magkaroon ng site na naka-host sa iyong Multisite network.
 
@@ -15,7 +15,7 @@ Sa Ultimate Multisite, maaari mong tanggapin ang mga bayad gamit ang iba't ibang
 
 At ito pa lang ang simula dahil maaari mong palawakin ang mga function nito gamit ang mga add-on at webhook.
 
-## Iba pang mga feature
+## Iba pang mga feature {#other-features}
 
 Nag-aalok din ang Ultimate Multisite ng:
 
@@ -33,11 +33,11 @@ At mas advanced na bagay:
 
   * Search and Replace API: Maaari mo ring lagyan ng annotation ang mga site template ng mga placeholder tulad ng {{site_name}} at gamitin ang Search and Replace API para awtomatikong mapunan ang mga placeholder na iyon ng impormasyon na ibinigay ng iyong customer pagkatapos ng sign-up.
 
-## Mga Use Case
+## Mga Use Case {#use-cases}
 
 Ngayon, oras na para tingnan ang ilan sa mga posibleng use case para sa Ultimate Multisite.
 
-### Case 1: Isang Agency
+### Case 1: Isang Agency {#case-1-an-agency}
 
 Kadalasan, ang pangunahing kasanayan ng isang agency ay nasa disenyo ng mga website kung saan ang mga aspeto tulad ng hosting o marketing ay nakalista bilang karagdagang serbisyo.
 
@@ -47,7 +47,7 @@ Ang mahigpit na kontrol sa mga plugin at theme ay pinapanatili sa bawat produkto
 
 Magkakaroon ng peace of mind ang mga agency sa Ultimate Multisite na nagpapahintulot sa kanila na gawin ang pinakamahusay nilang nagagawa - ang pagdisenyo ng mga pambihirang website.
 
-### Case 2: Niche Provider
+### Case 2: Niche Provider {#case-2-niche-provider}
 
 May isang lumang kasabihan na nagsasabi, "Gumawa ng isang bagay at gawin ito nang maayos". Para sa maraming espesyalista, ibig sabihin nito ay lumikha ng produkto o serbisyo sa paligid ng isang pangunahing ideya.
 
@@ -57,7 +57,7 @@ Isa sa mga makabagong feature ng Ultimate Multisite, ang template site ay kung s
 
 Para sa isang provider ng mga niche na site at serbisyo, nagbibigay ito ng walang kapantay na kalamangan sa kakayahang agad na lumikha ng site na handa nang gamitin na may mga custom na plugin at disenyo. Kailangan lang magbigay ng minimal na input ang customer para makumpleto ang serbisyo.
 
-### Case 3: WordPress Web Hosting
+### Case 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Maraming paraan para mag-host ng mga WordPress site ngunit bihirang ito ay kasing-simple ng pagbibigay ng web space sa customer na may pre-installed na bersyon ng WordPress. Ito ay dahil maraming desisyon at pagsasaalang-alang ang kailangang magsama-sama para makapagbigay ng makabuluhang serbisyo.
 

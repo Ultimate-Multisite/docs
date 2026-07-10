@@ -1,98 +1,98 @@
 ---
 title: Zapier integráció
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Az Ultimate Multisite integrálása a Zapier-rel
+# Az Ultimate Multisite integrálása Zapierrel {#integrating-ultimate-multisite-with-zapier}
 
-Az egyik korábbi cikkünkben bemutattuk a [Webhookok](webhooks.md) működését, és azt, hogyan használhatók külső alkalmazásokkal való összekapcsolásra.
+Az egyik cikkben a [Webhooks](webhooks.md) témáját tárgyaltuk, és azt, hogyan használhatók 3rd party alkalmazásokkal való integrációra.
 
-A webhookok használata kissé bonyolult, mivel haladó programozási ismereteket és a payload-ok kezelését igényli. A **Zapier** segítségével ezt egyszerűbben is megoldhatod.
+A webhookok használata kissé bonyolult, mivel haladó kódolási ismereteket és a payloadok fogadásának ismeretét igényli. A **Zapier** használata egy mód arra, hogy ezt megkerüld.
 
-A Zapier több mint 5000 alkalmazással képes együttműködni, így a különböző rendszerek közötti kommunikáció sokkal könnyebbé válik.
+A Zapier több mint 5000+ alkalmazással integrálható, ami megkönnyíti a különböző alkalmazások közötti kommunikációt.
 
-Létrehozhatsz **Triggereket** (eseményindítókat), amelyek a hálózatodon történő eseményekre aktiválódnak (például egy fiók létrehozásakor elindul az account_create esemény), vagy **Action-öket** (műveleteket) hozhatsz létre, amelyek külső események hatására hajtanak végre változtatásokat a hálózatodon (például új tagságot hoznak létre az Ultimate Multisite hálózatodban).
+Létrehozhatsz **triggereket**, amelyek akkor indulnak el, amikor események történnek a hálózatodon (pl. létrejön egy account, és kiváltja az account_create eseményt), vagy létrehozhatsz **műveleteket** a hálózatodon, amelyek külső eseményekre reagálnak (pl. új account membership létrehozása az Ultimate Multisite hálózatodban).
 
-Mindez azért lehetséges, mert az **Ultimate Multisite Zapier triggereit** és action-jeit a [REST API](https://developer.ultimatemultisite.com/api/docs/) működteti.
+Ez azért lehetséges, mert az **Ultimate Multisite Zapier triggerek** és műveletek a [REST API](https://developer.ultimatemultisite.com/api/docs/) segítségével működnek.
 
-## Első lépések
+## Hogyan kezdd el {#how-to-start}
 
-Először keresd meg az Ultimate Multisite alkalmazást a Zapier alkalmazáslistájában. Másik lehetőségként kattints [erre a linkre](https://zapier.com/apps/wp-ultimo/integrations).
+Először keresd meg az Ultimate Multisite-ot a Zapier alkalmazáslistájában. Alternatívaként kattinthatsz [erre a linkre](https://zapier.com/apps/wp-ultimo/integrations).
 
-Nyisd meg a vezérlőpultodat, és kattints a bal oldali sávban található **+** **Create Zap** gombra egy új Zap beállításához.
+Menj a Dashboardodra, és nyomd meg a bal oldalsávon a **+** **Zap létrehozása** gombot egy új Zap beállításához.
 
-![Zapier vezérlőpult a Create Zap gombbal](/img/admin/webhooks-list.png)
+![Zapier Dashboard a Zap létrehozása gombbal](/img/admin/webhooks-list.png)
 
-Ezután a Zap létrehozási oldalára kerülsz.
+Át leszel irányítva a Zap létrehozási oldalára.
 
-A keresőmezőbe írd be: „wp ultimo". Válaszd ki a **Beta** verziót.
+A keresőmezőbe írd be: "wp ultimo". Kattints a **Beta** verzió opció kiválasztásához.
 
-![WP Ultimo keresése a Zapier alkalmazáslistában](/img/admin/webhooks-list.png)
+![WP Ultimo keresése a Zapier alkalmazáslistájában](/img/admin/webhooks-list.png)
 
-Az alkalmazás kiválasztása után válaszd az elérhető eseményt: **New Ultimate Multisite Event**.
+Az alkalmazásunk kiválasztása után válaszd az elérhető eseményt: **Új Ultimate Multisite esemény**.
 
-![A New Ultimate Multisite Event trigger kiválasztása](/img/admin/webhooks-list.png)
+![Az Új Ultimate Multisite esemény trigger kiválasztása](/img/admin/webhooks-list.png)
 
-Most hozzáférést kell adnunk a Zapiernek **a hálózatodhoz**. A **Sign in** gombra kattintva egy új ablak nyílik meg, ahol meg kell adnod az **API hitelesítő adatokat**.
+Most hozzáférést kell adnunk a Zapiernek **a hálózatodhoz**. A **Bejelentkezés** gombra kattintva egy új ablak nyílik meg, amely az **API hitelesítési adatokat** kéri.
 
-![Zapier bejelentkezési ablak az API hitelesítő adatokhoz](/img/admin/webhooks-list.png)
+![Zapier bejelentkezési kérés API hitelesítési adatokhoz](/img/admin/webhooks-list.png)
 
-Lépj be a hálózatod admin felületére, és navigálj az **Ultimate Multisite > Settings** > **API & Webhooks** menüpontra, majd keresd meg az API Settings szakaszt.
+Menj a hálózati admin panelre, navigálj az **Ultimate Multisite > Settings** > **API & Webhooks** menüponthoz, és keresd meg az API Settings szakaszt.
 
-Jelöld be az **Enable API** opciót, mivel ez szükséges a kapcsolat működéséhez.
+Válaszd az **API engedélyezése** opciót, mivel ez szükséges a kapcsolat működéséhez.
 
-![API Settings az Enable API opcióval az Ultimate Multisite-ban](/img/admin/webhooks-list.png)
+![API és Webhooks beállítások API Settings és API engedélyezése opciókkal](/img/admin/settings-api-webhooks.png)
 
-Használd a **Copy to Clipboard** ikont az API Key és API Secret mezőknél, majd illeszd be ezeket az értékeket az integrációs képernyőn.
+Használd a **Másolás a vágólapra** ikont az API Key és API Secret mezőkön, majd illeszd be ezeket az értékeket az integrációs képernyőn.
 
-Az URL mezőbe írd be a hálózatod teljes címét, a protokollal együtt (HTTP vagy HTTPS).
+Az URL mezőbe írd be a hálózatod teljes URL-jét, beleértve a protokollt is (HTTP vagy HTTPS).
 
-![Zapier integrációs képernyő az API Key, Secret és URL mezőkkel](/img/admin/webhooks-list.png)
+![Zapier integrációs képernyő API Key, Secret és URL mezőkkel](/img/admin/webhooks-list.png)
 
-Kattints a **Yes, Continue** gombra a következő lépéshez. Ha minden rendben működik, megjelenik az újonnan csatlakoztatott fiókod! Kattints a **Continue** gombra egy új trigger létrehozásához.
+Kattints az **Igen, folytatás** gombra a következő lépéshez. Ha minden rendben működik, az újonnan csatlakoztatott accountod fogad majd! Kattints a **Folytatás** gombra egy új trigger létrehozásához.
 
-## Trigger létrehozása
+## Hogyan hozz létre új triggert {#how-to-create-a-new-trigger}
 
-Most, hogy a fiókod csatlakoztatva van, láthatod az elérhető eseményeket. Ebben az útmutatóban válasszuk a **payment_received** eseményt.
+Most, hogy az accountod csatlakoztatva van, láthatod az elérhető eseményeket. Ehhez az oktatóanyaghoz válasszuk a **payment_received** eseményt.
 
-![A payment_received esemény kiválasztása a Zapier triggerben](/img/admin/webhooks-list.png)
+![payment_received esemény kiválasztása a Zapier triggerben](/img/admin/webhooks-list.png)
 
-Miután kiválasztottad az eseményt és a **continue** gombra kattintasz, megjelenik a **tesztlépés**.
+Miután kiválasztottad az eseményt, és a **folytatás** gombra kattintasz, megjelenik egy **tesztlépés**.
 
 ![Zapier tesztlépés a triggerhez](/img/admin/webhooks-list.png)
 
-Ebben a szakaszban a Zapier ellenőrzi, hogy a Zap képes-e **lekérni az adott eseményhez tartozó payload-ot**. A jövőbeli, azonos típusú eseményeknél ugyanilyen szerkezetű információk kerülnek küldésre.
+Ebben a szakaszban a Zapier teszteli, hogy a Zapod képes-e **lekérni az adott eseményhez tartozó konkrét payloadot**. A jövőbeni, azonos típusú eseményeknél ugyanezzel a struktúrával rendelkező információk lesznek elküldve.
 
-![Sikeresen befejezett Zapier trigger teszt a payload-dal](/img/admin/webhooks-list.png)
+![Zapier trigger teszt sikeresen befejezve payload adatokkal](/img/admin/webhooks-list.png)
 
-Az útmutatónkban a teszt **sikeresen befejeződött**, és visszaadta a példa payload információkat. Ezek a példaadatok segítenek majd az action-ök létrehozásában. A triggered ezzel elkészült, és készen áll a többi alkalmazással való összekapcsolásra.
+Az oktatóanyagunkban a teszt **sikeresen befejeződött**, és visszaadta a payload példaadatait. Ezek a példaadatok hasznosak lesznek, amikor műveleteket hozunk létre. A triggered most már létrejött, és készen áll arra, hogy más alkalmazásokhoz kapcsolódjon.
 
-## Action-ök létrehozása
+## Hogyan hozz létre műveleteket {#how-to-create-actions}
 
-Az action-ök más triggerekből származó információkat használnak új bejegyzések létrehozására a hálózatodban.
+A műveletek más triggerekből származó információkat használnak fel új bejegyzések létrehozásához a hálózatodban.
 
-Az **action létrehozása lépésben** válaszd az Ultimate Multisite **Beta** verziót és a **Create Items on Ultimate Multisite** opciót.
+A **művelet létrehozási lépésében** az Ultimate Multisite **Beta** verziót és az **Elemek létrehozása Ultimate Multisite-on** opciót fogod választani.
 
-![Action létrehozása a Create Items on Ultimate Multisite opcióval](/img/admin/webhooks-list.png)
+![Művelet létrehozása az Elemek létrehozása Ultimate Multisite-on opcióval](/img/admin/webhooks-list.png)
 
-A következő lépésben vagy létrehozod a hitelesítést – ahogy az **Első lépések** szakaszban tettük –, vagy kiválasztasz egy már meglévő hitelesítést. Ebben az útmutatóban a korábban létrehozott hitelesítést választjuk.
+A következő lépésben vagy létrehozod a hitelesítésedet, ahogy a **Hogyan kezdd el** részben tettük, vagy kiválasztasz egy már létrehozott hitelesítést. Ebben az oktatóanyagban ugyanazt a korábban létrehozott hitelesítést választjuk.
 
-![Hitelesítés kiválasztása a Zapier action-höz](/img/admin/webhooks-list.png)
+![Hitelesítés kiválasztása a Zapier művelethez](/img/admin/webhooks-list.png)
 
-### Az Action beállítása
+### A művelet beállítása {#setting-up-the-action}
 
-Ez az **action fő lépése**, és itt a dolgok kicsit másképp működnek. Az első információ, amit ki kell választanod, az **Item** (elem). Az Item a hálózatod **adatmodellje**, például **Customers, Payments, Sites, Emails** és mások.
+Ez a **művelet fő lépése**, és itt a dolgok egy kicsit eltérnek. Az első információ, amelyet kiválasztasz, az **Elem**. Az elem a hálózatod **információs modellje**, például **Ügyfelek, Fizetések, Oldalak, E-mailek** és mások.
 
-![Item típus kiválasztása a Zapier action-höz](/img/admin/webhooks-list.png)
+![Elemtípus kiválasztása a Zapier művelethez](/img/admin/webhooks-list.png)
 
-Egy elem kiválasztásakor az űrlap **átrendeződik, és megjeleníti a kiválasztott elemhez tartozó kötelező és opcionális mezőket**.
+Egy elem kiválasztásakor az űrlap **átrendeződik, hogy megjelenítse a kötelező és opcionális mezőket** a kiválasztott elemhez.
 
-Például a **Customer** elem kiválasztásakor az űrlap minden olyan mezőt megjelenít, amelyet ki kell tölteni egy új Customer létrehozásához a hálózatban.
+Például a **Customer** elem kiválasztásakor az űrlapmezők mindent megjelenítenek, amit ki kell tölteni egy új Customer létrehozásához a hálózatban.
 
-![Customer elem mezői a Zapier action beállításában](/img/admin/webhooks-list.png)
+![Customer elem mezői a Zapier művelet beállításában](/img/admin/webhooks-list.png)
 
-Miután kitöltötted az összes **required** (kötelező) jelölésű mezőt és a continue gombra kattintasz, egy utolsó képernyő mutatja a kitöltött és az üresen hagyott mezőket.
+Miután kitöltötted az összes **kötelezőként** megjelölt mezőt, és a folytatásra kattintottál, egy utolsó képernyő megmutatja a kitöltött mezőket és azokat a mezőket, amelyek kitöltetlenül maradtak.
 
-![Zapier action teszt a kitöltött és üresen hagyott mezőkkel](/img/admin/webhooks-list.png)
+![Zapier művelet tesztje a kitöltött és kitöltetlen mezőkkel](/img/admin/webhooks-list.png)
 
-Amint a teszt befejeződik és sikeres, az action konfigurálása kész. Fontos, hogy ellenőrizd a hálózatodon, valóban létrejött-e az elem a teszt során.
+Amint a teszted befejeződik és sikeres, a műveleted konfigurálva van. Fontos azt is ellenőrizni a hálózatodon, hogy az elem létrejött-e a műveleted tesztjével.

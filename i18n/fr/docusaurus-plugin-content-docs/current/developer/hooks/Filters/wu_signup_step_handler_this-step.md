@@ -4,10 +4,10 @@ title: 'Filter - wu_signup_step_handler_{$this->step}'
 sidebar_label: 'wu_signup_step_handler_{$this->step}'
 _i18n_hash: a07dd015e18337083d58656b833b385b
 ---
-# Filtre: wu_signup_step_handler_\{$this->step\}
+# Filtre: wu_signup_step_handler_\{$this->step\} {#filter-wusignupstephandlerthis-step}
 
 Permet la réécriture du gestionnaire
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/checkout/class-legacy-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L369) à la ligne 369

@@ -1,46 +1,46 @@
 ---
 title: අතින් ගෙවීම් සැකසීම
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# අතින් ගෙවීම් සැකසීම (v2)
+# අතින් ගෙවීම් සකසන්නේ කෙසේද (v2) {#setting-up-manual-payments-v2}
 
-_**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite version 2.x වෙත යොමු වේ.**_
+_**වැදගත් සටහන: මෙම ලිපිය Ultimate Multisite 2.x අනුවාදයට අදාළ වේ.**_
 
-ඔබේ පරිශීලකයින් සඳහා **Stripe** හෝ **PayPal** වැනි ක්‍රම නොමැති අවස්ථාවක, අතින් ගෙවීම් (Manual payments) ලබා දීමට මෙය ඔබට හැකි වන ක්‍රමයකි. එය බැංකු මාරු කිරීමක් (wire transfer), බැංකු ගනුදෙනුවක් හෝ ඔබේ පරිශීලකයින්ට ප්‍රාදේශීයව තිබිය හැකි වෙනත් ඕනෑම ගෙවීම් ක්‍රමයක් විය හැකිය.
+**Stripe** හෝ **PayPal** ඔබේ පරිශීලකයන්ට ලබා ගත නොහැකි විට, ඔවුන්ට වෙනත් ගෙවීම් ක්‍රම ලබා දීමට අතින් ගෙවීම් භාවිත කළ හැක. එය wire හෝ බැංකු මාරුකිරීමක්, නැතහොත් ඔබේ පරිශීලකයන්ට දේශීයව ලබා ගත හැකි වෙනත් ඕනෑම ගෙවීම් ක්‍රමයක් විය හැක.
 
-## අතින් ගෙවීම් ක්‍රියාත්මක කරන්නේ කෙසේද
+## Manual Payments සක්‍රීය කරන්නේ කෙසේද {#how-to-enable-manual-payments}
 
-අතින් ගෙවීම් සැකසීම ඉතා පහසුයි. ඔබට එය Payment Gateways යටතේ සක්‍රීය කිරීමට අවශ්‍ය වන අතර, පරිශීලකයා ගෙවීම සිදු කළ යුතු ආකාරය පිළිබඳ විස්තරාත්මක උපදෙස් එහි ඇතුළත් කළ යුතුය.
+අතින් ගෙවීම් සකසීම ඉතා පහසුය. ඔබට අවශ්‍ය වන්නේ payment gateways යටතේ එය සක්‍රීය කර, පරිශීලකයා ගෙවීම යැවිය යුතු ආකාරය පිළිබඳ සවිස්තර උපදෙස් ඇතුළත් කිරීම පමණි.
 
-පළමුව, **Ultimate Multisite > Settings > Payments** වෙත යන්න. **Payment Gateways** යටතේ, **Manual** එක 'on' කරන්න (ක්‍රියාත්මක කරන්න). එවිට ඔබට **Payment Instructions** කොටුවක් දිස්වනු ඇත.
+පළමුව, **Ultimate Multisite > Settings > Payments** වෙත යන්න. **Payment Gateways** යටතේ, **Manual** සක්‍රීය කරන්න. ඔබට **Payment Instructions** කොටුවක් දිස්වන බව පෙනේ.
 
-ඔබේ පාරිභෝගිකයා ගෙවීම සිදු කිරීමට අවශ්‍ය තොරතුරු මෙම කොටුවට එක් කරන්න. උදාහරණයක් ලෙස, ඔබේ බැංකු ගිණුම් විස්තර සහ ඔබේ විද්‍යුත් තැපෑල (email) ඇතුළත් කළ හැකිය. එවිට පාරිභෝගිකයාට ඔබට ගෙවීම තහවුරු කිරීමේ පණිවිඩ යැවීමට හැකි වේ.
+ගෙවීම කිරීමට ඔබේ පාරිභෝගිකයාට අවශ්‍ය තොරතුරු මෙම කොටුවට එක් කරන්න. උදාහරණයක් ලෙස, පාරිභෝගිකයාට ගෙවීම් තහවුරු කිරීම ඔබට යැවිය හැකි වන පරිදි ඔබේ බැංකු ගිණුම් විස්තර සහ ඔබේ විද්‍යුත් තැපෑල එහි ඇතුළත් කළ හැක.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Payment Instructions පෙළ ප්‍රදේශය සහිත Manual payment gateway toggle](/img/config/manual-gateway-expanded.png)
 
-අතින් ගෙවීම් සැකසීමේ අතුරුමුහුණත මෙන්න:
+මෙන්න manual gateway සැකසුම් අතුරුමුහුණත:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Manual gateway සැකසුම්](/img/config/manual-gateway-settings.png)
 
-එය සැකසූ පසු, **Save Settings** ක්ලික් කිරීමෙන් සියල්ල අවසන් වේ. පරිශීලකයින් ඔබේ ජාලයට ලියාපදිංචි වන විට, ඔවුන්ට මිලදී ගැනීම සම්පූර්ණ කිරීමට ඔබ ලබා දෙන උපදෙස් ලැබෙන බව පවසන පණිවිඩයක් පෙන්වනු ඇත.
+එය සකසා අවසන් වූ පසු, **Save Settings** මත ක්ලික් කරන්න. එවිට කාර්යය අවසන්ය. පරිශීලකයන් ඔබේ ජාලයට ලියාපදිංචි වන විට, මිලදී ගැනීම සම්පූර්ණ කිරීමට ඔවුන්ට ඔබේ උපදෙස් ලැබෙන බව කියන පණිවිඩයක් ඔවුන්ට පෙනෙනු ඇත.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![පරිශීලකයාට ගෙවීම් උපදෙස් ලැබෙන බව කියන ලියාපදිංචි තහවුරු කිරීමේ පණිවිඩය](/img/frontend/registration-manual-notice.png)
 
-එමෙන්ම, ඔවුන්ට ඔබේ **Thank You** පිටුවේ ගෙවීම් උපදෙස් සමඟ පණිවිඩයක් ද ලැබෙනු ඇත.
+ඔවුන්ට ඔබේ **Thank You** පිටුවේද ඔබේ ගෙවීම් උපදෙස් සහිත පණිවිඩයක් ලැබෙනු ඇත.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## අතින් ගෙවීම් තහවුරු කිරීම
+## අතින් ගෙවීම් තහවුරු කිරීම {#confirming-manual-payments}
 
-අතින් කරන ගෙවීමක් තහවුරු කිරීමට, වම් පස ඇති **Payments** මෙනුවට යන්න. එහිදී ඔබට ඔබේ ජාලයේ ඇති සියලුම ගෙවීම් සහ ඒවායේ **status** ඇතුළු විස්තර දැකගත හැකියි. ඔබ එය අතින් වෙනස් කරන තුරු අතින් කරන සෑම ගෙවීමකටම සැමවිටම **Pending** තත්ත්වය තිබෙනු ඇත.
+අතින් ගෙවීමක් තහවුරු කිරීමට, වම් තීරුවේ **Payments** මෙනුවට යන්න. එහිදී ඔබේ ජාලයේ සියලු ගෙවීම් සහ ඒවායේ විස්තර, ඒවායේ **status** ඇතුළුව, ඔබට දැකිය හැක. ඔබ එය අතින් වෙනස් කරන තුරු අතින් ගෙවීමකට සෑම විටම **Pending** තත්ත්වයක් පවතී.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![බලාපොරොත්තුවෙන් පවතින අතින් ගෙවීමක් පෙන්වන ගෙවීම් ලැයිස්තුව](/img/admin/payments-list.png)
 
-**reference code** ක්ලික් කිරීමෙන් ගෙවීම් පිටුවට ඇතුළු වන්න. මෙම පිටුවේ, reference ID, නිෂ්පාදන, කාල සටහන් සහ තවත් බොහෝ දේ වැනි සැකසුම් සහිත පවතින ගෙවීම් පිළිබඳ සියලු විස්තර ඔබට ලැබේ.
+**reference code** ක්ලික් කිරීමෙන් ගෙවීම් පිටුවට ඇතුළු වන්න. මෙම පිටුවේ reference ID, නිෂ්පාදන, කාලමුද්‍රා සහ තවත් දේ වැනි බලාපොරොත්තුවෙන් පවතින ගෙවීමේ සියලු විස්තර ඇත.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![reference code, නිෂ්පාදන, සහ එකතුව පෙන්වන ගෙවීම් විස්තර පිටුව](/img/admin/payment-edit.png)
 
-දකුණු තීරුවේ, ඔබට ගෙවීමේ තත්ත්වය වෙනස් කළ හැකියි. එය **Completed** ලෙස වෙනස් කිරීම සහ **Activate Membership** විකල්පය ක්‍රියාත්මක කිරීමෙන් ඔබේ පාරිභෝගිකයාගේ වෙබ් අඩවිය සක්‍රීය වන අතර ඔවුන්ගේ සාමාජිකත්වය ද ක්‍රියාත්මක වේ.
+දකුණු තීරුවේ, ඔබට ගෙවීමේ තත්ත්වය වෙනස් කළ හැක. එය **Completed** ලෙස වෙනස් කර **Activate Membership** විකල්පය සක්‍රීය කිරීමෙන් ඔබේ පාරිභෝගිකයාගේ අඩවිය සක්‍රීය වන අතර ඔවුන්ගේ සාමාජිකත්වය සක්‍රීය වේ.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Status Completed ලෙස සකසා Activate Membership toggle සහිත ගෙවීම් සංස්කරණ පිටුව](/img/admin/payment-activate-membership.png)

@@ -3,11 +3,11 @@ title: Webhook ကိုင်တွယ်ခြင်း
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhook ကို စီမံခန့်ခွဲခြင်း
+# Webhook ကို စီမံခန့်ခွဲခြင်း {#webhook-handling}
 
 အပြင်ဘက် ဝန်ဆောင်မှုများမှ ဖြစ်ပေါ်လာသည့် အဖြစ်အပျက်များကို လက်ခံရယူပြီး Ultimate Multisite နှင့် အချက်အလက်များကို ပေါင်းစပ်ရန်အတွက် custom webhook endpoints များကို ဖန်တီးပါ။
 
-## Custom Webhook Endpoint
+## Custom Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Webhook endpoint ကို မှတ်ပုံတင်ခြင်း
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## လုံခြုံရေးဆိုင်ရာ စဉ်းစားရမည့်အချက်များ
+## လုံခြုံရေးဆိုင်ရာ စဉ်းစားရမည့်အချက်များ {#security-considerations}
 
 - webhook signature များကို HMAC သို့မဟုတ် shared secret ကို အသုံးပြု၍ အမြဲတမ်း စစ်ဆေးပါ။
 - REST route တွင် `permission_callback` ကို အသုံးပြုပါ။ ထုတ်ဝေမှု (production) အဆင့်တွင် ၎င်းကို `__return_true` ဟု ဘယ်တော့မှ သတ်မှတ်မထားပါနှင့်။

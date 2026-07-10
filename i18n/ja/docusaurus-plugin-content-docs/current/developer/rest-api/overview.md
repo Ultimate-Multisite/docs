@@ -1,44 +1,44 @@
 ---
-title: REST API の概要
+title: REST API 概要
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 参照
+# REST API リファレンス {#rest-api-reference}
 
-## 基本設定
+## 基本設定 {#base-configuration}
 
-**ベースURL:** `{site_url}/wp-json/wu/v2/`  
-**認証:** APIキー & シークレット（HTTP Basic AuthまたはURLパラメータ）
+**ベース URL:** `{site_url}/wp-json/wu/v2/`
+**認証:** API Key とシークレット（HTTP Basic Auth または URL パラメータ）
 
-## 認証
+## 認証 {#authentication}
 
-### APIを有効化
+### API を有効化 {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API認証情報を取得
+### API 認証情報を取得 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### 認証方法
+### 認証方法 {#authentication-methods}
 
 **HTTP Basic Auth（推奨）:**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URLパラメータ:**
+**URL パラメータ:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## コアエンドポイント
+## コアエンドポイント {#core-endpoints}
 
-### 1. 顧客API
+### 1. 顧客 API {#1-customers-api}
 
 **ベースルート:** `/customers`
 
@@ -47,7 +47,7 @@ curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=y
 GET /wu/v2/customers
 ```
 
-**単一顧客を取得**
+**単一の顧客を取得**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. サイトAPI
+### 2. サイト API {#2-sites-api}
 
 **ベースルート:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. メンバーシップAPI
+### 3. メンバーシップ API {#3-memberships-api}
 
 **ベースルート:** `/memberships`
 
@@ -121,16 +121,16 @@ Content-Type: application/json
 }
 ```
 
-### 4. 製品API
+### 4. 商品 API {#4-products-api}
 
 **ベースルート:** `/products`
 
-**すべての製品を取得**
+**すべての商品を取得**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. 支払いAPI
+### 5. 支払い API {#5-payments-api}
 
 **ベースルート:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. ドメインAPI
+### 6. ドメイン API {#6-domains-api}
 
 **ベースルート:** `/domains`
 
@@ -167,9 +167,10 @@ Content-Type: application/json
 }
 ```
 
-## 登録エンドポイント
+## 登録エンドポイント {#registration-endpoint}
 
-`/register` エンドポイントは、完全なチェックアウト/登録フローを提供します:
+`/register` エンドポイントは、完全な決済/登録フローを提供します。
+
 ```http
 POST /wu/v2/register
 Content-Type: application/json
@@ -208,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## エラーレスポンス
+## ソブリンテナントエンドポイント {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 は、分離されたテナントをプロビジョニング、検査、検証する連携向けに、ソブリンテナントの REST 対応範囲を追加します。
+
+正確なリクエストペイロードは、有効化されているホスト機能によって異なりますが、連携では次のエンドポイントグループを想定してください。
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+bootstrap エンドポイントを使用して、テナントレジストリ、データベース、ファイルシステム、ルーティング状態を準備します。本番トラフィックを切り替える前に、移行ステータスと検証エンドポイントを使用してください。ソブリンの解体には削除エンドポイントを使用し、データベース認証情報がアドオンのクリーンアップフローを通じて削除されるようにします。
+
+一般的な移行ステータスのレスポンスには次が含まれます。
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` はリリース前のブロッカーとして扱ってください。検証の詳細を確認し、データベースホストのバインディング、キュー、ユーザープロビジョニング、またはルーティングの問題を修正してから、検証を再試行してください。
+
+## エラーレスポンス {#error-responses}
 
 ```json
 {
@@ -223,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## ページネーションとフィルタリング
+## ページネーションと絞り込み {#pagination-and-filtering}
 
 **クエリパラメータ:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-一般的なパラメータ:
-- `per_page` - ページあたりのアイテム数（デフォルト: 20、最大: 100）
+共通パラメータ:
+- `per_page` - 1ページあたりの項目数（デフォルト: 20、最大: 100）
 - `page` - ページ番号
-- `search` - 検索語
-- `orderby` - ソートフィールド
-- `order` - ソート方向（asc/desc）
-- `status` - ステータスでフィルタ
-- `date_created` - 日付範囲でフィルタ
+- `search` - 検索語句
+- `orderby` - 並び替えフィールド
+- `order` - 並び替え方向（昇順/降順）
+- `status` - ステータスで絞り込み
+- `date_created` - 日付範囲で絞り込み

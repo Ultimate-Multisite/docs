@@ -3,7 +3,7 @@ title: Ngajantenkeun PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Ngaturkeun Gateway PayPal (v2)
+# Ngaturkeun Gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
 
@@ -13,13 +13,13 @@ Sapertos Stripe, PayPal ogé dipaké pisan pikeun pembayaran online, utamana din
 
 Perlu diperhatikeun yén anjeun kudu boga **akun PayPal Business** pikeun meunang kredensial API anu dibutuhkeun pikeun integrasi ieu.
 
-## Ngaktifkeun PayPal dina jaringan anjeun
+## Ngaktifkeun PayPal dina jaringan anjeun {#enabling-paypal-on-your-network}
 
 Supaya ngaktifkeun PayPal salaku metode pembayaran anu aya di jaringan anjeun, mindah ka **Ultimate Multisite > Settings > Payments** tab sareng centang kotak di sebelah PayPal.
 
 ![Ngaktifkeun PayPal dina payment gateway aktif](/img/config/settings-payment-gateways.png)
 
-## Ngagunakeun panduan setup wizard
+## Ngagunakeun panduan setup wizard {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 nambahan panduan *setup wizard* PayPal dina pengaturan *payment gateway*. Sanggeus anjeun ngaktifkeun PayPal, anggo *wizard* éta dina **Ultimate Multisite > Settings > Payments** pikeun milih kumaha cara anjeun hayang nyambungkeun *gateway* jeung ngabuktian kredensial mana anu masih dibutuhkeun saméméngan disimpen.
 
@@ -30,7 +30,7 @@ Panduan *wizard* éta ngadukung dua jalur *setup*:
 
 Lamun anjeun teu ningali pilihan OAuth dina wizard, lengkapi alur input kredensial manual di handap ieu. Gateway ieu mangoperas sareng kredensial PayPal Business API anu sarua jeung rilis Ultimate Multisite 2.x saméméhna.
 
-## Ngajak Kredensial PayPal API
+## Ngajak Kredensial PayPal API {#getting-the-paypal-api-credentials}
 
 Salaku anjeun geus ngaktifkeun PayPal salaku payment gateway, anjeun bakal kedah ngisi kolom pikeun **Username** API PayPal, **Password** API PayPal, jeung **Signature** API PayPal.
 

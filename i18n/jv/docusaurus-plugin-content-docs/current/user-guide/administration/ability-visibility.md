@@ -3,11 +3,11 @@ title: Keterlihatan Kemampuan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibilitas Kemampuan (Ability Visibility)
+# Visibilitas Kemampuan (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 nggawa kontrol **Ability Visibility** sing ngatur kemampuan apa wae sing bakal krosokake saben permukaan (surface). Iki menehi kesempatan marang administrator kanggo ngatur kanthi teliti kemampuan agent piye sing bisa diakses liwat REST API, MCP servers, integrasi WooCommerce, lan antarmuka liyane.
 
-## Apa iku Ability Visibility?
+## Apa iku Ability Visibility? {#what-is-ability-visibility}
 
 Ability Visibility iku sistem izin sing ngontrol:
 
@@ -18,9 +18,9 @@ Ability Visibility iku sistem izin sing ngontrol:
 
 Sabowang kemampuan duwe tingkat visibilitas sing nuduhake ketersediaane ing permukaan sing beda.
 
-## Tingkat Visibilitas
+## Tingkat Visibilitas {#visibility-levels}
 
-### Publik (Public)
+### Publik (Public) {#public}
 
 **Kemampuan publik** bisa diakses nang mana wae:
 
@@ -32,7 +32,7 @@ Sabowang kemampuan duwe tingkat visibilitas sing nuduhake ketersediaane ing perm
 
 Conto: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal
+### Internal {#internal}
 
 **Kemampuan internal** mung bisa diakses ing instalasi WordPress sampeyan dhewe:
 
@@ -43,7 +43,7 @@ Conto: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Conto: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner
+### Partner {#partner}
 
 **Kemampuan mitra (Partner abilities)** mung bisa diakses dening mitra sing wis didaftar (whitelisted):
 
@@ -54,7 +54,7 @@ Conto: `manage-settings`, `view-analytics`, `export-data`
 
 Conto: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dinonaktifkan (Disabled)
+### Dinonaktifkan (Disabled) {#disabled}
 
 **Kemampuan sing dinonaktifake** ora bisa diakses nang ngendi wae:
 
@@ -63,15 +63,15 @@ Conto: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ora bisa diakses ing admin panels
 - Berguna kanggo kemampuan sing wis usang utawa eksperimental
 
-## Ngaturake Keterlihatan Kemampuan (Managing Ability Visibility)
+## Ngaturake Keterlihatan Kemampuan (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Akses Pengaturan Keterlihatan Kemampuan (Accessing Ability Visibility Settings)
+### Akses Pengaturan Keterlihatan Kemampuan (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Tindakake menyang **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klik tab **Abilities**
 3. Sampeyan bakal nemokake daftar kabeh kemampuan sing wis dipasang karo tingkat keterlihatané.
 
-### Melihat Detail Kemampuan (Viewing Ability Details)
+### Melihat Detail Kemampuan (Viewing Ability Details) {#viewing-ability-details}
 
 Klik siji kemampuan kanggo ndelok:
 
@@ -82,7 +82,7 @@ Klik siji kemampuan kanggo ndelok:
 - **Last updated**: Kapan keterlihatan terakhir diubah
 - **Status**: Wis dikenali utawa Belum diklasifikasi
 
-### Ngowahi Tingkat Keterlihatan (Changing Visibility Levels)
+### Ngowahi Tingkat Keterlihatan (Changing Visibility Levels) {#changing-visibility-levels}
 
 Kanggo ngowahi keterlihatan siji kemampuan:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operasi Massal (Bulk Operations)
+### Operasi Massal (Bulk Operations) {#bulk-operations}
 
 Kanggo ngowahi keterlihatan kanggo sawetara kemampuan:
 
@@ -108,11 +108,11 @@ Kanggo ngowahi keterlihatan kanggo sawetara kemampuan:
 2. Pilih tingkat keterlihatan anyar saka dropdown aksi massal
 3. Klik **Apply**
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 **Partner allow-list** kuwi ngatur mitra eksternal sing bisa akses kemampuan level Partner.
 
-### Nambah Mitra (Adding Partners)
+### Nambah Mitra (Adding Partners) {#adding-partners}
 
 1. Tindakake menyang **Superdav AI Agent** → **Settings** → **Partners**
 2. Klik **Add Partner**
@@ -120,7 +120,7 @@ Kanggo ngowahi keterlihatan kanggo sawetara kemampuan:
 4. Opsi, tambahkan nama lan deskripsi mitra
 5. Klik **Save**
 
-### Ngeneni Kemampuan Marang Mitra (Assigning Abilities to Partners)
+### Ngeneni Kemampuan Marang Mitra (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Sawise nambah mitra:
 
@@ -130,7 +130,7 @@ Sawise nambah mitra:
 4. Di bagian "Partner allow-list", centang kotak untuk partner yang seharusnya bisa akses
 5. Klik **Save**
 
-### Mencabut Akses Partner
+### Mencabut Akses Partner {#revoking-partner-access}
 
 Untuk menghilangkan akses partner:
 
@@ -140,11 +140,11 @@ Untuk menghilangkan akses partner:
 
 Partner akan langsung kehilangan akses ke kemampuan itu.
 
-## Abilities yang Belum Diklasifikasikan (Unclassified Abilities)
+## Abilities yang Belum Diklasifikasikan (Unclassified Abilities) {#unclassified-abilities}
 
 Ketika kamu menginstal kemampuan pihak ketiga yang tidak dikenali oleh Superdav AI Agent, itu akan ditandai sebagai **Unclassified**.
 
-### Pemberitahuan Admin untuk Abilities yang Belum Diklasifikasikan
+### Pemberitahuan Admin untuk Abilities yang Belum Diklasifikasikan {#admin-notice-for-unclassified-abilities}
 
 Kamu akan melihat pemberitahuan admin seperti ini:
 
@@ -161,7 +161,7 @@ Mohon ditinjau dan diklasifikasikan.
 [Review Abilities] [Dismiss]
 ```
 
-### Meninjau Abilities yang Belum Diklasifikasikan
+### Meninjau Abilities yang Belum Diklasifikasikan {#reviewing-unclassified-abilities}
 
 1. Klik **Review Abilities** di dalam pemberitahuan itu
 2. Untuk setiap kemampuan yang belum diklasifikasikan, kamu akan melihat:
@@ -178,7 +178,7 @@ Mohon ditinjau dan diklasifikasikan.
 
 4. Klik **Classify** untuk menyimpan keputusanmu
 
-### Kenapa Perlu Mengklasifikasikan Abilities yang Belum Diklasifikasikan?
+### Kenapa Perlu Mengklasifikasikan Abilities yang Belum Diklasifikasikan? {#why-classify-unclassified-abilities}
 
 Mengklasifikasikan kemampuan:
 
@@ -187,9 +187,9 @@ Mengklasifikasikan kemampuan:
 - **Memungkinkan fitur**: Setelah diklasifikasikan, kemampuan tersebut bisa digunakan
 - **Mendokumentasikan keputusan**: Pilihanmu dicatat untuk keperluan audit
 
-## Visibility ing Berbagai Permukaan
+## Visibility ing Berbagai Permukaan {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Kemampuan publik** bisa diakses lewat REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Kemampuan internal dan mitra** nggak bisa diakses lewat REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Kemampuan publik** bisa diakses lewat MCP:
 
@@ -217,7 +217,7 @@ Kemampuan yang tersedia:
 
 **Kemampuan mitra** cuma bisa dipakai kalau punya kredensial mitra.
 
-### Integrasi WooCommerce
+### Integrasi WooCommerce {#woocommerce-integration}
 
 **Kemampuan publik** terkait WooCommerce bisa diakses:
 
@@ -227,7 +227,7 @@ Kemampuan yang tersedia:
 
 **Kemampuan internal** nggak ditampilkan ke WooCommerce.
 
-### Antarmuka Chat
+### Antarmuka Chat {#chat-interface}
 
 **Semua kemampuan** (Publik, Internal, Mitra) bisa dipakai di chat, tergantung izin pengguna:
 
@@ -235,34 +235,34 @@ Kemampuan yang tersedia:
 - Pengguna biasa cuma lihat kemampuan Publik
 - Mitra lihat kemampuan Publik + Mitra (kalau sudah masuk daftar putih/whitelisted)
 
-## Praktik Terbaik Keamanan
+## Praktik Terbaik Keamanan {#security-best-practices}
 
-### Prinsip Hak Istimewa Paling Minimal (Principle of Least Privilege)
+### Prinsip Hak Istimewa Paling Minimal (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Atur kemampuan ke visibilitas yang paling ketat tapi masih bisa dipakai.
 - Gunakan visibilitas Mitra untuk operasi yang sensitif.
 - Matikan kemampuan yang nggak kamu pakai.
 
-### Audit Rutin
+### Audit Rutin {#regular-audits}
 
 - Cek visibilitas kemampuan setiap bulan.
 - Periksa apakah ada kemampuan yang belum diklasifikasikan.
 - Hapus akses untuk mitra yang sudah tidak dipakai.
 
-### Pencatatan dan Pemantauan (Logging and Monitoring)
+### Pencatatan dan Pemantauan (Logging and Monitoring) {#logging-and-monitoring}
 
 - Pantau kemampuan mana yang paling sering dipakai.
 - Lacak pola akses mitra.
 - Beri peringatan kalau ada penggunaan kemampuan yang aneh.
 
-### Kemampuan Pihak Ketiga (Third-Party Abilities)
+### Kemampuan Pihak Ketiga (Third-Party Abilities) {#third-party-abilities}
 
 - Cek kemampuan pihak ketiga sebelum mengaktifkannya.
 - Klasifikasikan mereka secara jelas.
 - Mulai dengan visibilitas Internal atau Mitra dulu.
 - Baru naikkan ke Publik setelah sudah diperiksa baik.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Sebutan kemampuan ora muncul ing daftar**
 - Cek yen kemampuan wis terpasang lan aktif
@@ -285,7 +285,7 @@ Kemampuan yang tersedia:
 - Cek manawa klasifikasi sampeyan wis tersimpan
 - Pastikan plugin sing nyediakake kemampuan kuwi wis update
 
-## Migrasi saka Mode Lawas (Legacy Mode)
+## Migrasi saka Mode Lawas (Legacy Mode) {#migration-from-legacy-mode}
 
 Yen sampeyan lagi ng-upgrade saka versi Superdav AI Agent sing luwih lawas:
 
@@ -295,7 +295,7 @@ Yen sampeyan lagi ng-upgrade saka versi Superdav AI Agent sing luwih lawas:
 
 Lihat **Migrasi Mode Pihak Ketiga (Third-Party Mode Migration)** kanggo rincian luwih lanjut babagan transisi menyang integrasi API Kemampuan asli.
 
-## Langkah Salajengipun
+## Langkah Salajengipun {#next-steps}
 
 Sawise ngatur visibilitas kemampuan:
 

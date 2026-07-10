@@ -4,11 +4,11 @@ title: Filter - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 Bu filtre, şifre sıfırlama e-postasının mesaj gövdesini düzenlemenizi sağlar.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Türü | Açıklama |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Bu filtre, şifre sıfırlama e-postasının mesaj gövdesini düzenlemenizi sa�
 | $user_login | `string` | Kullanıcının kullanıcı adı. |
 | $user_data | `\WP_User` | WP_User nesnesi. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.8.0
 - 4.1.0: <code>$user_login</code> ve <code>$user_data</code> parametreleri eklendi.
-### Kaynak
+### Kaynak {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) dosyasındaki 149. satırda tanımlanmıştır.
 
 
-## Dönüş Değeri
+## Dönüş Değeri {#returns}
 Varsayılan e-posta mesajı.

@@ -1,33 +1,33 @@
 ---
 title: Codefragmenten
 sidebar_position: 1
-_i18n_hash: 5a7a9a95be84476f87a2c1ca0a4a2be5
+_i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Codefragmenten voor v2
+# Codefragmenten voor v2 {#code-snippets-for-v2}
 
-In principe worden codefragmenten voor **WordPress** gebruikt om bepaalde acties uit te voeren die anders een aparte kleinere plugin zouden vereisen. Zulke codefragmenten worden geplaatst in een van de WordPress-core- of themabestanden (meestal het functions.php-bestand van je thema) of kunnen als MU-plugin worden gebruikt.
+In principe worden codefragmenten voor **WordPress** gebruikt om bepaalde acties uit te voeren waarvoor anders mogelijk een aparte kleinere plugin nodig zou zijn. Zulke codefragmenten worden geplaatst in een van de WordPress-core- of theme-bestanden (meestal het functions.php-bestand van je theme) of ze kunnen worden gebruikt als MU plugin.
 
 In dit artikel laten we je drie codefragmenten zien die kunnen worden gebruikt met **Ultimate Multisite v2** :
 
-  * [**Veranderen van de positie van het Account-menuitem**](#changing-the-position-of-the-account-menu-item)
+  * [**De positie van het Account-menu-item wijzigen**](#changing-the-position-of-the-account-menu-item)
 
-  * [**Hoe te controleren of de gebruiker onder een bepaald plan valt en/of een actieve abonnement heeft**](#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription)
+  * [**Controleren of de gebruiker onder een bepaald pakket valt en/of een actief abonnement heeft**](#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription)
 
-  * [**Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
+  * [**CORS-problemen met Font-Icons in gekoppelde domeinen oplossen**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Veranderen van de positie van het Account-menuitem {#changing-the-position-of-the-account-menu-item}
+## De positie van het Account-menu-item wijzigen {#changing-the-position-of-the-account-menu-item}
 
-Om de positie van het Account-menuitem op het Dashboard van je klant te wijzigen, voeg je eenvoudig het volgende codefragment toe aan het functions.php-bestand van het actieve thema van je hoofdsite. Je kunt het fragment ook plaatsen in een van je mu-plugins of aangepaste plugins.
+Om de positie van het Account-menu-item op de Dashboard van je klant te wijzigen, voeg je gewoon het volgende codefragment toe aan de functions.php van het actieve theme van je hoofdsite. Je kunt het fragment ook in een van je mu-plugins of aangepaste plugins plaatsen.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Tweak this value to place the menu in the desired position.
 
-## Hoe te controleren of de gebruiker onder een bepaald plan valt en/of een actieve abonnement heeft {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Controleren of de gebruiker onder een bepaald pakket valt en/of een actief abonnement heeft {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
-Als netwerkbeheerder moet je mogelijk aangepaste functies maken die basisacties uitvoeren of een service/feature beschikbaar maken voor een geselecteerde groep abonnees of eindgebruikers, op basis van de status van hun abonnement en het plan waaronder ze zijn geabonneerd.
+Als netwerkbeheerder moet je mogelijk aangepaste functies maken die basisacties uitvoeren of een dienst/functie beschikbaar maken voor een geselecteerde groep abonnees of eindgebruikers, op basis van de status van hun abonnement en het pakket waarop ze geabonneerd zijn.
 
 Deze native functies van Ultimate Multisite helpen je daarbij.
 
-Om te controleren of de gebruiker lid is van een bepaald plan, kun je de functie gebruiken:
+Om te controleren of de gebruiker lid is van een bepaald pakket, kun je de functie gebruiken:
 
 wu_has_plan($user_id, $plan_id)
 
@@ -35,34 +35,35 @@ Om te controleren of het abonnement actief is, kun je de functie gebruiken:
 
 wu_is_active_subscriber($user_id)
 
-Hieronder staat een voorbeeldfragment dat controleert of de huidige gebruiker onder een specifiek plan valt (_Plan ID 50_) en of het gebruikersabonnement actief is.
+Hieronder staat een voorbeeldfragment dat controleert of de huidige gebruiker onder een specifiek pakket valt (_Pakket-ID 50_) en of het gebruikersabonnement actief is.
 
 $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_id) && wu_is_active_subscriber($user_id)) { // USER IS MEMBER OF PLAN AND HIS SUBSCRIPTION IS ACTIVE, DO STUFF} else { // USER IS NOT A MEMBER OF PLAN -- OR -- HIS SUBSCRIPTION IS NOT ACTIVE, DO OTHER STUFF} // end if;
 
-Merk op dat _**wu_has_plan**_ een “Plan ID” vereist om te functioneren.
+Merk op dat _**wu_has_plan**_ een "Pakket-ID" vereist om te kunnen functioneren.
 
-Om het ID van een plan te krijgen, kun je naar **Ultimate Multisite > Products** gaan. Het ID van elk product wordt rechts van de tabel weergegeven.
+Om de ID van een pakket te krijgen, kun je naar **Ultimate Multisite > Producten** gaan. De ID van elk product wordt rechts in de tabel weergegeven.
 
-Merk op dat gebruikers alleen kunnen abonneren op een **Plan**, niet op een Package of Service, omdat deze alleen add-ons zijn voor een **Plan**.
+Merk op dat gebruikers alleen geabonneerd kunnen zijn op een **Pakket** , niet op een pakketbundel of dienst, omdat die alleen add-ons zijn voor een **Pakket**.
 
-![Products list showing plan IDs](/img/admin/products-list.png)
+![Productenlijst met pakket-ID's](/img/admin/products-list.png)
 
-## Oplossen van CORS-problemen met Font-Icons in toegewezen domeinen {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## CORS-problemen met Font-Icons in gekoppelde domeinen oplossen {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## CORS-problemen met Font-Icons in gekoppelde domeinen oplossen {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
-Na het toewijzen van een domein aan een sub-site kun je merken dat de site moeite heeft met het laden van aangepaste lettertypen. Dit wordt veroorzaakt door een cross-origin blokkering in je serverinstellingen.
+Nadat je een domein aan een subsite hebt gekoppeld, kun je merken dat de site problemen heeft met het laden van aangepaste lettertypen. Dat wordt veroorzaakt door een cross-origin-blokkade in je serverinstellingen.
 
-Aangezien lettertypebestanden vrijwel altijd rechtstreeks vanuit CSS worden geladen, kan onze domeinmapping-plugin de URL's niet herschrijven om het toegewezen domein te gebruiken in plaats van het oorspronkelijke, dus om het probleem op te lossen, moet je je serverconfiguratiebestanden aanpassen.
+Omdat lettertypebestanden bijna altijd rechtstreeks vanuit CSS worden geladen, kan onze domain mapping plugin de URL's niet herschrijven om het gekoppelde domein te gebruiken in plaats van het oorspronkelijke domein. Om het probleem op te lossen, moet je daarom je serverconfiguratiebestanden aanpassen.
 
-Hieronder staan codefragmenten om het probleem op te lossen voor Apache en NGINX. Deze wijzigingen vereisen geavanceerde kennis van serverconfiguratiebestanden (.htaccess-bestanden en NGINX-configuratiebestanden). Als je je niet comfortabel voelt bij het zelf aanbrengen van deze wijzigingen, stuur deze pagina dan naar de supportmedewerkers van je hostingprovider wanneer je hulp nodig hebt.
+Hieronder staan codefragmenten om het probleem op te lossen voor Apache en NGINX. Deze wijzigingen vereisen geavanceerde kennis van serverconfiguratiebestanden (.htaccess-bestanden en NGINX-configuratiebestanden). Als je je er niet prettig bij voelt om die wijzigingen zelf aan te brengen, stuur deze pagina dan naar de supportmedewerkers van je hostingprovider wanneer je hulp nodig hebt.
 
-### Apache
+### Apache {#apache}
 
-Voeg het volgende toe aan je .htaccess-bestand:
+Voeg in je .htaccess-bestand toe:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
-Voeg het volgende toe aan je serverconfiguratiebestand (de locatie varieert per server):
+Voeg in je serverconfiguratiebestand (de locatie verschilt per server) toe:
 
 location ~ .(ttf|ttc|otf|eot|woff|font.css|css)$ { add_header Access-Control-Allow-Origin “*”;}

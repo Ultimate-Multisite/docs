@@ -1,38 +1,42 @@
 ---
-title: Hantera systemmail
+title: Hantera systemmejl
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Hantera systemmeddelanden
+# Hantera systemmejl {#managing-system-emails}
 
-Ultimate Multisite skickar olika systemmeddelanden vid händelser som registreringsbekräftelser, betalningskvitton och medlemskapsändringar. Du kan anpassa dessa e-postmallar för att matcha ditt varumärke.
+Ultimate Multisite skickar olika systemmejl för händelser som registreringsbekräftelser, betalningskvitton och medlemskapsändringar. Du kan anpassa dessa mejlmallar så att de matchar ditt varumärke.
 
-## Visa systemmeddelanden
+## Visa systemmejl {#viewing-system-emails}
 
-Navigera till **Ultimate Multisite → Inställningar** och klicka på fliken **E-post** för att se e-postrelaterade inställningar.
+Gå till **Ultimate Multisite → Settings** och klicka på fliken **Emails** för att se mejlrelaterade inställningar.
 
-![Inställningar - fliken E-post](/img/admin/settings-emails.png)
+![Settings - Emails-fliken](/img/admin/settings-emails.png)
 
-Därifrån kan du gå till sidan **Systemmeddelanden** för att se alla e-postmallar.
+Därifrån kan du komma åt sidan **System Emails** för att se alla mejlmallar.
 
-![Lista över systemmeddelanden](/img/admin/system-emails-list.png)
+![System Emails-lista](/img/admin/system-emails-list.png)
 
-## Importera nya e-postmallar
+Du kan också redigera enskilda mejlmallar med systemmejlredigeraren:
 
-Nya versioner av Ultimate Multisite och tillägg kan registrera nya e-postmallar. För att undvika konflikter läggs nya mallar inte till automatiskt — du behöver importera dem manuellt.
+![System email-redigerare](/img/admin/system-email-editor.png)
 
-Så här importerar du nya e-postmallar:
+## Importera nya mejlmallar {#importing-new-email-templates}
 
-1. Gå till sidan **Systemmeddelanden**
-2. Klicka på knappen **Återställ & Importera** högst upp på sidan
-3. Aktivera alternativet **Importera e-post** för att se tillgängliga mallar
+Nya Ultimate Multisite-versioner och tillägg kan registrera nya mejlmallar. För att undvika konflikter läggs nya mallar inte till automatiskt — du behöver importera dem manuellt.
+
+Så här importerar du nya mejlmallar:
+
+1. Gå till sidan **System Emails**
+2. Klicka på knappen **Reset & Import** högst upp på sidan
+3. Växla alternativet **Import Emails** för att se tillgängliga mallar
 4. Välj de mallar du vill importera och bekräfta
 
-## Återställa e-postmallar
+## Återställa mejlmallar {#resetting-email-templates}
 
-Om du har anpassat en e-postmall och vill återgå till standardinnehållet har du två alternativ:
+Om du har anpassat en mejlmall och vill återgå till standardinnehållet har du två alternativ:
 
-1. **Ta bort och importera igen** — Ta bort systemmeddelandet och importera det på nytt (detta raderar utskicksstatistiken)
-2. **Återställ via verktyget** — Använd verktyget **Återställ & Importera**, aktivera alternativet **Återställ** och välj de e-postmeddelanden du vill återställa
+1. **Ta bort och importera igen** — Ta bort systemmejlet och importera det igen (detta raderar sändningsstatistik)
+2. **Återställ via verktyget** — Använd verktyget **Reset & Import**, växla alternativet **Reset** och välj de mejl du vill återställa
 
-Alternativet Återställ är att föredra eftersom det bevarar utskicksstatistik och annan metadata samtidigt som standardinnehållet återställs.
+Alternativet Reset är att föredra eftersom det bevarar sändningsstatistik och annan metadata samtidigt som standardinnehållet återställs.

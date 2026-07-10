@@ -4,11 +4,11 @@ title: 'Filter - wu_{$this->model}_pre_save'
 sidebar_label: 'wu_{$this->model}_pre_save'
 _i18n_hash: f6ea53d0f7e4e9b0319f042187095577
 ---
-# Filter: wu_\{$this->model\}_pre_save
+# Filter: wu_\{$this->model\}_pre_save {#filter-wuthis-modelpresave}
 
 Filtre les données de l'objet avant qu'elles ne soient stockées dans la base de données.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtre les données de l'objet avant qu'elles ne soient stockées dans la base d
 | $data_unserialized | `array` | Les données de l'objet qui seront stockées. |
 | $this | `\Base_Model` | L'instance de l'objet. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L570) à la ligne 570

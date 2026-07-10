@@ -1,126 +1,126 @@
 ---
-title: Tasuta
+title: Tasu saamine
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Tasuta kasutamine (v2)
+# Tasu saamine (v2) {#getting-paid-v2}
 
-_**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
+_**OLULINE MÄRKUS: see artikkel käsitleb Ultimate Multisite versiooni 2.x.**_
 
-Ultimate Multisite on sissejuhatatud jälgimiskontrolli ja lahendamise süsteemiga. Et meie lahendus töötaks, oleme integreerinud e-kaubanduslikuks levinud kõige levinumate maksukättesaiste. Ultimate Multisite poolt oletust maksukättesaiste on _Stripe_, _PayPal_ ja Manuaalne makseviis. Saate ka kasutada _WooCommerce'i_, _GoCardlessi_ ja _Payfasti_ makside saamiseks, installides nende vastavaid lisamooduseid (add-ons).
+Ultimate Multisite sisaldab sisseehitatud liikmesuse ja arvelduse süsteemi. Meie arveldussüsteemi toimimiseks oleme integreerinud levinumad e-kaubanduses kasutatavad makselüüsid. Ultimate Multisite vaikimisi makselüüsid on _Stripe_ , _PayPal_ ja käsitsi makse. Maksete vastuvõtmiseks saad kasutada ka _WooCommerce_ , _GoCardless_ ja _Payfast_ lahendusi, paigaldades nende vastavad lisad.
 
-## Põhitingsed seadistused
+## Põhiseaded {#basic-settings}
 
-Saate konfigurida ühtestest needest maksukättesaist Ultimate Multisite maksusseadistustes. Sa saate selle leida minnes **Ultimate Multisite menü > Seaded > Makside**.
+Saad kõiki neid makselüüse seadistada Ultimate Multisite maksete seadetes. Leiad need, minnes jaotisse **Ultimate Multisite menüü > Seaded > Maksed.**
 
-![Makside seadistuste lehekülje Ultimate Multisites peal näitlikult makside paneeli](/img/config/payments-settings-page.png)
+![Maksete seadete leht Ultimate Multisite-is, kus on näha maksete paneel](/img/config/payments-settings-page.png)
 
-Enne konfigurates oma maksukättesaista, vaadige üle põhitõhised maksiseadistused, mida saate konfigurida:
+Enne makselüüsi seadistamist vaata palun üle põhilised makseseaded, mida saad seadistada:
 
-**Force auto-rene** **w:** See tagab, et maks on automaatselt uuesti käivitub iga lahenduse tsükli lõpuks sõltuvalt kasutaja valitud lahenduse sagedustest.
+**Sunni automaatne uuenda** **mine:** See tagab, et makse kordub automaatselt iga arveldustsükli lõpus vastavalt kasutaja valitud arveldussagedusele.
 
-<!-- Screenshot unavailable: Force Auto-Renew lülituste seadistus Makside seadistuste leheküljel -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 kontrollib, kas aktiivne lahendus on korduvuse uuesti kasutatav krediitiga enne korduvuse jälgimiskontrolli sisse salvestamist automaatselt uuesti käivitusega. Uuesti kasutatav krediit võib olla lahenduse subskriptioon, maksukett, salvestatud vault token või vastav uuesti kasutatav makseviis. Kui lahendus annab teada, et ei ole kasutatavat krediiti, salvestab Ultimate Multisite jälgimiskontrolli kuid lülitab automaatselt uuesti käivituse ja registreerib puudusaeguse, nii et administraator või toetuse protsess saab küsimata kliendilt makse kinnitamist enne uuesti käivitamise kuupäjät.
+Ultimate Multisite v2.13.0 kontrollib enne automaatse uuendamisega korduva liikmesuse salvestamist, kas aktiivsel lüüsil on taaskasutatav uuendamise mandaat. Uuendamise mandaat võib olla lüüsi tellimus, arvelduskokkulepe, salvestatud vault token või samaväärne taaskasutatav makseviis. Kui lüüs teatab, et kasutatavat mandaati pole olemas, salvestab Ultimate Multisite liikmesuse, kuid lülitab automaatse uuendamise välja ja registreerib puuduva mandaadi oleku, et administraator või tugiprotsess saaks paluda kliendil makse enne uuendamise kuupäeva uuesti autoriseerida.
 
-See, see, et vältib, et ühenduse auto-uudutamise näitamist, kui veebipaik (gateway) saab ainult kordkõige maksude koguda. Veebipaikute lisamoodulid peaksid kinnitama, et korduvate makside korral salvestatakse uudishaldusväärne (credential), eriti siis, kui veebipaik toetab nii kordkõige võtmist kui ka vaultitud/subskriptioonimaksude meetode.
+See takistab liikmesusel näimast automaatselt uuenevana, kui lüüs saab koguda ainult ühekordseid makseid. Lüüsilisad peaksid kinnitama, et korduvad kassaprotsessid salvestavad taaskasutatava mandaadi, eriti kui lüüs toetab nii ühekordset makse kogumist kui ka vault-/tellimuspõhiseid makseviise.
 
-**Luba proovikogud maksutrimmata:** See valik aktiveerides ei nõua teie kliendilt registreerimise ajal finantsi teavet lisamist. See on vajalik ainult siis, kui proovikogukord lõpeb.
+**Luba prooviperioode ilma makse** **viisita:** Kui see valik on lubatud, ei pea sinu klient registreerimisprotsessi ajal lisama finantsteavet. Seda nõutakse alles siis, kui prooviperiood lõpeb.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Lõpulemiseks makse pärast kinnitamist:** See annab teil võimaluse välja otsustada, kas te lahendate maksutest pärast seda, kui makse on tehtud. Pöörake tähelepanu sellele, et kasutajad saavad oma maksutähtisregistri (payment history) oma subsite dashboardi all. See valik ei kehtestu Manuaalse veebipaikute jaoks (Manual Gateway).
+**Saada arve makse kinnitamisel:** See annab võimaluse valida, kas saata pärast makset arve või mitte. Pane tähele, et kasutajatel on ligipääs oma makseajaloole nende alamsaidi Dashboardil. See valik ei kehti käsitsi lüüsi kohta.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Lõpulemiseks makse numbrustik:** Siin saate välja valida kas maksutähtisviide koodi või ümberpaigutatud (sequential number scheme) numbrustikuga. Kui te valite maksutähtisviide koodi, ei vaja te midagi konfigurida. Kui te valite ümberpaigutatud numbrustikuga, peate konfigurates **järgmisel laskumise numbri** (See number kasutatakse järgmise järjestikuna genereeritud laskumise numbrina süsteemis. See suureneb üheksiga iga kord, kui uus laskumine luuakse. Saate seda muuta ja salvestada, et taaskälla laskumise numbrustik peetaks konkreetse väärtuse). ning **lõpulemiseks makse prefiksi**.
+**Arve nummerdamise skeem:** Siin saad valida kas makse viitekoodi või järjestikuse numbri skeemi. Kui valid arvete jaoks makse viitekoodi kasutamise, ei pea sa midagi seadistama. Kui valid järjestikuse numbri skeemi, pead seadistama **järgmise arve numbri** (seda numbrit kasutatakse süsteemis järgmise loodava arve arvenumbrina. Iga kord, kui luuakse uus arve, suurendatakse seda ühe võrra. Saad seda muuta ja salvestada, et lähtestada arvete järjestikune number kindlale väärtusele) ja **arvenumbri prefiksi.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kasi leidaid gateway'id:
+## Kust lüüse leida: {#where-to-find-the-gateways}
 
-Tas on võimalik paigutada maksukontakte (payment gateways) samalelt lehel (**Ultimate Multisite > Settings > Payments**). **Active payment gateways** allpool näha järgmiselt: _Stripe_, _Stripe_ Checkout, _PayPal_ ja _Manual_.
+Saad makselüüse seadistada samal lehel ( **Ultimate Multisite > Seaded > Maksed**). Otse **aktiivsete makselüüside** all näed: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ja _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Aktiivsete makselüüside jaotis, kus on loetletud Stripe, Stripe Checkout, PayPal ja Manual](/img/config/payments-active-gateways.png)
 
-Meil on eraldatud artiklid iga maksukontakte kohta, mis juhatavad teid selle paigutamise sammude läbiki, mida saate leida allpool olevate linkide kaudu.
+Meil on iga makselüüsi jaoks eraldi artikkel, mis juhendab sind selle seadistamise sammudes; need leiad allolevatelt linkidelt.
 
-Tas on võimalik vaadata ja muuta maksutädet:
+Saad vaadata ja muuta makse üksikasju:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Makse muutmise liides](/img/admin/payment-edit.png)
 
-Siin on täielik nähtus maksutädet muutmise lehel:
+Siin on makse muutmise lehe täielik vaade:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Makse muutmise täielik liides](/img/admin/payment-edit-full.png)
 
-Siin on ka täielik nähtus maksukontakte seadistustele:
+Siin on ka makselüüside seadete täielik vaade:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Makselüüside seadete täielik leht](/img/config/settings-payments-gateways-full.png)
 
-**Stripe gateway'i paigutamine**
+**Stripe lüüsi seadistamine**
 
-**PayPal gateway'i paigutamine**** **
+**PayPal lüüsi seadistamine**** **
 
-**Manuaalsete maksude paigutamine**
+**Käsitsi maksete seadistamine**
 
-Nüüd, kui soovite kasutada _WooCommerce_, _GoCardless_ või _Payfast_ oma maksukontaktina, peate **paigutama ja konfigurates nende add-onid**.
+Kui soovid nüüd kasutada makselüüsina _WooCommerce_ , _GoCardless_ või _Payfast_ lahendust, pead **paigaldama ja seadistama nende lisad**.
 
-### Kuidas WooCommerce add-on paigutada:
+### Kuidas paigaldada WooCommerce lisa: {#how-to-install-the-woocommerce-add-on}
 
-Meil on teadlikud sellest, et _Stripe_ ja _PayPal_ ei ole saadaval mõnades riikides, mis piiravad või hindavad Ultimate Multisite kasutajate efektiivset kasutamist meie pluginiga. Seetõttu ootame meile add-onid, mis integreerivad _WooCommerce_, mis on väga populaarne e-commerce plugin. Maailma eri suurustel arendajad on luune add-onid sellega integratsiooni jaoks erinevate maksukontaktide. Meil on kasutanud seda võimalust laiendada maksukontakte, mida saate kasutada Ultimate Multisite lahenduses.
+Mõistame, et _Stripe_ ja _PayPal_ ei ole mõnes riigis saadaval, mis piirab või takistab Ultimate Multisite kasutajatel meie pluginat tõhusalt kasutada. Seetõttu lõime lisa _WooCommerce,_ integreerimiseks, mis on väga populaarne e-kaubanduse plugin. Arendajad üle maailma on loonud lisasid erinevate makselüüside integreerimiseks sellesse. Kasutasime seda ära, et laiendada makselüüside valikut, mida saad Ultimate Multisite arveldussüsteemiga kasutada.
 
-**TÄHTIS:** Ultimate Multisite: WooCommerce'i integreerimine nõuab, et WooCommerce ole aktiivne vähemalt teie pealiste veebilehel.
+_**OLULINE:** Ultimate Multisite: WooCommerce Integration nõuab, et WooCommerce oleks aktiveeritud vähemalt sinu põhisaidil._
 
-Ennenda, külastage lisamooduse lehte. Seda saate leida minema **Ultimate Multisite > Settings** läbi. Näete siin **Add-ons** tabelit. Klõpsake **Check our Add-ons** (Kontrollige meie lisamoodusi) välja.
+Kõigepealt mine palun lisade lehele. Leiad selle, minnes jaotisse **Ultimate Multisite > Seaded**. Peaksid nägema tabelit **Lisad**. Klõpsa valikul **Vaata meie lisasid**.
 
-<!-- Screenshot unavailable: Add-ons table on Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Klõpsates **Check our Add-ons** välja, teeks teile ülesviidend WooCommerce'i lisamooduste lehele. Siin leiate kõik Ultimate Multisite lisamoodused. Klõpsake **Ultimate Multisite: WooCommerce Integration** (Ultimate Multisite: WooCommerce integreerimine) lisamoodust.
+Pärast valikul **Vaata meie lisasid** klõpsamist suunatakse sind lisade lehele. Siit leiad kõik Ultimate Multisite lisad. Klõpsa lisal **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Lisade leht, kus on loetletud Ultimate Multisite lisad, sealhulgas WooCommerce Integration](/img/addons/addons-page.png)
 
-Iga klikkuse korral ilmub akn, kus on lisamooduse üksikasjad. Klõpsake lihtsalt **Install Now** (Installeeri nüüd).
+Avaneb aken lisamooduli üksikasjadega. Klõpsake lihtsalt **Paigalda kohe**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite WooCommerce Integration lisamooduli üksikasjade dialoog nupuga Paigalda kohe -->
 
-Installeerimise lõpuni teeks teile suunatakse pluginide lehel. Siin klõpsake lihtsalt **Network Activate** (Aktiivige võrku), ja WooCommerce lisamoodus aktiivub teie võrkuses.
+Pärast paigalduse lõppu suunatakse teid pluginate lehele. Siin klõpsake lihtsalt **Aktiveeri võrgustikus** ja WooCommerce lisamoodul aktiveeritakse teie võrgustikus.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Ekraanipilt pole saadaval: pluginate leht lingiga Aktiveeri võrgustikus WooCommerce Integration lisamooduli jaoks -->
 
-Aktiiviseerimise pärast, kui teil veebilehel ei ole veel installitud ja aktiivne WooCommerce plugin, saate teile meeldivu.
+Pärast selle aktiveerimist, kui teil pole WooCommerce pluginat oma veebisaidil ikka veel paigaldatud ja aktiveeritud, saate meeldetuletuse.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Ekraanipilt pole saadaval: administraatori teade, mis tuletab meelde WooCommerce plugina paigaldamist ja aktiveerimist -->
 
-Lisainformatsioonide lugemiseks **klõpsake siin**.
+WooCommerce Integration lisamooduli kohta lisateabe lugemiseks **klõpsake siin**.
 
-### Kuidas GoCardless lisamoodust installida:
+### Kuidas paigaldada GoCardless lisamoodul: {#how-to-install-the-gocardless-add-on}
 
-_GoCardless_ lisamise samuti nagu _WooCommerce_ lisamise. Minum add-ons lehel ja valige **Ultimate Multisite: GoCardless Gateway** lisus.
+_GoCardless_ lisamooduli paigaldamise sammud on peaaegu samad nagu _WooCommerce_ lisamooduli puhul. Minge lisamoodulite lehele ja valige **Ultimate Multisite: GoCardless Gateway** lisamoodul.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Ekraanipilt pole saadaval: lisamoodulite leht esile tõstetud Ultimate Multisite GoCardless Gateway lisamooduliga -->
 
-Väljas avab lisusaru. Klõpsake **Install Now** (Installeer nüüd).
+Avaneb lisamooduli aken. Klõpsake **Paigalda kohe**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite GoCardless Gateway lisamooduli üksikasjade dialoog nupuga Paigalda kohe -->
 
-Installeerimise pärast seda suunatakse teid pluginide lehele. Siis klõpsake lihtsalt **Network Activate** (Võrreva aktiveerimine), ja _GoCardless_ lisus aktiveerub teie võrku.
+Pärast paigalduse lõppu suunatakse teid pluginate lehele. Siin klõpsake lihtsalt **Aktiveeri võrgustikus** ja _GoCardless_ lisamoodul aktiveeritakse teie võrgustikus.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Ekraanipilt pole saadaval: pluginate leht lingiga Aktiveeri võrgustikus GoCardless Gateway lisamooduli jaoks -->
 
-Kuidas alustada kasutama _GoCardless_ gateway't, **luge seda artiklit**.
+Et teada saada, kuidas _GoCardless_ makseväravaga alustada, **lugege seda artiklit**.
 
-### Kuidas installida Payfast lisus:
+### Kuidas paigaldada Payfast lisamoodul: {#how-to-install-the-payfast-add-on}
 
-Minum add-ons lehele ja valige **Ultimate Multisite: Payfast Gateway** lisus.
+Minge lisamoodulite lehele ja valige **Ultimate Multisite: Payfast Gateway** lisamoodul.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Ekraanipilt pole saadaval: lisamoodulite leht esile tõstetud Ultimate Multisite Payfast Gateway lisamooduliga -->
 
-Väljas avab lisusaru. Klõpsake **Install Now**.
+Avaneb lisamooduli aken. Klõpsake **Paigalda kohe.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite Payfast Gateway lisamooduli üksikasjade dialoog nupuga Paigalda kohe -->
 
-Installeerimise pärast seda suunatakse teid pluginide lehele. Siis klõpsake lihtsalt **Network Activate**, ja _Payfast_ lisus aktiveerub teie võrku.
+Pärast paigalduse lõppu suunatakse teid pluginate lehele. Siin klõpsake lihtsalt **Aktiveeri võrgustikus** ja _Payfast_ lisamoodul aktiveeritakse teie võrgustikus.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Ekraanipilt pole saadaval: pluginate leht lingiga Aktiveeri võrgustikus Payfast Gateway lisamooduli jaoks -->

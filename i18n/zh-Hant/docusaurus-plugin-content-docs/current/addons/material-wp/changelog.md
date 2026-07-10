@@ -3,7 +3,7 @@ title: Material WP 變更日誌
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP 更新日誌
+# Material WP 更新日誌 {#material-wp-changelog}
 
 Version 1.1.15 - 2026/01/26
 * 改善：代碼風格和格式化；

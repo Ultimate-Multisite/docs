@@ -3,13 +3,13 @@ title: Paggawa ng mga Discount Code
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Paglikha ng Discount Codes (v2)
+# Paglikha ng Discount Codes (v2) {#creating-discount-codes-v2}
 
 _**MAHALAGANG PAUNA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 
 Sa Ultimate Multisite, maaari kang gumawa ng discount codes para magbigay ng diskwento sa iyong mga kliyente sa kanilang subscriptions. At ang paggawa nito ay madali!
 
-## Paglikha at Pag-e-edit ng Discount Codes
+## Paglikha at Pag-e-edit ng Discount Codes {#creating-and-editing-discount-codes}
 
 Para lumikha o mag-edit ng discount code, pumunta ka sa **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Ang coupon ay nasa listahan mo na at mula doon, maaari mo itong i-click para **i
 
 ###
 
-### Paggamit ng URL Parameters:
+### Paggamit ng URL Parameters: {#using-url-parameters}
 
 Kung gusto mong i-customize ang iyong pricing tables o gumawa ng magandang coupon code page para sa iyong website at gusto mong awtomatikong ma-apply ang discount code sa iyong checkout form, maaari mo itong gawin gamit ang mga URL parameters.
 

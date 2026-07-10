@@ -1,78 +1,78 @@
 ---
 title: Часто задаваемые вопросы
 sidebar_position: 18
-_i18n_hash: 7a5b3130600e6d8eeeecee2d8cb03b2c
+_i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Часто задаваемые вопросы
+# Часто задаваемые вопросы {#frequently-asked-questions}
 
-Here are some **Frequently Asked Questions** that often come up during support requests.
+Вот некоторые **часто задаваемые вопросы**, которые часто возникают при обращениях в поддержку.
 
   * **Что такое Ultimate Multisite?**
 
-Ultimate Multisite is a WordPress plugin, made for WordPress multisite installs, that transforms your WordPress install into a premium network of sites – like [WordPress.com](https://WordPress.com) – allowing clients to create sites via monthly, quarterly, or yearly fees (you can also create Free plans).
+Ultimate Multisite — это WordPress plugin, созданный для установок WordPress multisite, который превращает вашу установку WordPress в премиальную сеть сайтов — как [WordPress.com](https://WordPress.com), — позволяя клиентам создавать сайты за ежемесячную, ежеквартальную или ежегодную плату (вы также можете создавать бесплатные тарифы).
 
   * **Будет ли Ultimate Multisite работать без Multisite?**
 
-No. Ultimate Multisite requires WordPress multisite, subdirectory, or subdomain.
+Нет. Ultimate Multisite требует WordPress multisite, подкаталог или поддомен.
 
-  * **Каковы требования к Ultimate Multisite?**
+  * **Каковы требования для Ultimate Multisite?**
 
-Ultimate Multisite requires:
+Ultimate Multisite требует:
 
-**WordPress Version** : v5.3+ (Рекомендуется: последняя стабильная версия)  
-**PHP Version** : 7.4.x (Поддержка > 8.0 будет в ближайшее время)  
-**MySQL Version** : v5+ (Рекомендуется: версия 5.6, если у вас нет 8.0 на хостинге)
+**Версия WordPress** : v5.3+ (рекомендуется: последняя стабильная версия)
+**Версия PHP** : 7.4.x (поддержка > 8.0 скоро появится)
+**Версия MySQL** : v5+ (рекомендуется: версия 5.6, если 8.0 недоступна у вашего хостинг-провайдера)
 
-_Multisite (subdomain or subdirectory) also needs to be activated._ [Как установить WordPress Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
+_Multisite (поддомен или подкаталог) также должен быть активирован._ [Как установить WordPress Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
 
   * **Будет ли Ultimate Multisite работать с Multisite с подкаталогами?**
 
-Yes. Ultimate Multisite supports both subdirectory installs and subdirectory installs.
+Да. Ultimate Multisite поддерживает как установки в подкаталогах, так и установки в подкаталогах.
 
   * **Будет ли Ultimate Multisite работать с Multisite с поддоменами?**
 
-Yes. Ultimate Multisite supports both subdirectory installs and subdomain installs.
+Да. Ultimate Multisite поддерживает как установки в подкаталогах, так и установки на поддоменах.
 
   * **Могу ли я использовать Ultimate Multisite, чтобы ограничить, какие плагины и темы могут использовать пользователи?**
 
-Yes. With Ultimate Multisite you can select which plugins and themes are available to each plan on your network.
+Да. С Ultimate Multisite вы можете выбрать, какие плагины и темы доступны для каждого тарифа в вашей сети.
 
   * **Могу ли я использовать Ultimate Multisite, чтобы ограничить количество записей, которые пользователь может создать на своем сайте?**
 
-Yes. With Ultimate Multisite you can establish post quotas for **every available post type** on your network. You can also limit the number of users the admin can invite, the **amount of disk space,** and much more.
+Да. С Ultimate Multisite вы можете устанавливать квоты на записи для **каждого доступного типа записей** в вашей сети. Вы также можете ограничить количество пользователей, которых администратор может пригласить, **объем дискового пространства** и многое другое.
 
   * **Поддерживает ли Ultimate Multisite шаблоны сайтов?**
 
-Yes. With Ultimate Multisite you can create as many Site Templates as you want. Site Templates are not themes, they are normal sites on your network. You can activate plugins, themes, and customize that Site Template in any way you want. If a user selects that template, his or her site will be created as a copy of that template, with all the customizations in place.
+Да. С Ultimate Multisite вы можете создавать столько шаблонов сайтов, сколько захотите. Шаблоны сайтов — это не темы, а обычные сайты в вашей сети. Вы можете активировать плагины, темы и настраивать этот шаблон сайта любым нужным вам образом. Если пользователь выберет этот шаблон, его сайт будет создан как копия этого шаблона со всеми выполненными настройками.
 
-You can also set a particular template for a plan. By doing that, every user that signs up on that plan will have his or her site created as a duplicate of that Site Template.
+Вы также можете назначить определенный шаблон для тарифа. В этом случае у каждого пользователя, который зарегистрируется на этом тарифе, сайт будет создан как дубликат этого шаблона сайта.
 
   * **Интегрируется ли Ultimate Multisite с WooCommerce?**
 
-Yes!
+Да!
 
-If you want your network users to have WooCommerce available for them, allowing them to set up stores, that is possible using Ultimate Multisite. You can even limit the number of products your clients will be able to create on each plan tier.
+Если вы хотите, чтобы пользователям вашей сети был доступен WooCommerce, позволяя им настраивать магазины, это возможно с помощью Ultimate Multisite. Вы даже можете ограничить количество товаров, которые ваши клиенты смогут создавать на каждом уровне тарифа.
 
-In terms of subscription payments for Ultimate Multisite, you can use the [Ultimate Multisite: WooCommerce Integration Add-on](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/) to allow your Ultimate Multisite clients to pay using WooCommerce gateways on your main site. In that way, you can tap into the huge library of payment gateways developed for WooCommerce and use them to bill your Ultimate Multisite clients.
+Что касается платежей по подписке для Ultimate Multisite, вы можете использовать [дополнение Ultimate Multisite: WooCommerce Integration](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/), чтобы позволить вашим клиентам Ultimate Multisite оплачивать через платежные шлюзы WooCommerce на вашем основном сайте. Таким образом, вы можете использовать огромную библиотеку платежных шлюзов, разработанных для WooCommerce, и применять их для выставления счетов вашим клиентам Ultimate Multisite.
 
-  * **Есть ли способ перенести подписки с WPMUDEV Pro Sites?**
+  * **Есть ли способ перенести подписки из WPMUDEV Pro Sites?**
 
-Yes, Ultimate Multisite now offers you [полезный инструмент, который поможет вам перенести](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/) your Pro Sites network.
+Да, Ultimate Multisite теперь предлагает вам [полезный инструмент для переноса](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/) вашей сети Pro Sites.
 
-  * **Почему вкладка «Разрешенные плагины» пуста на странице редактирования плана?**
+  * **Почему вкладка «Разрешенные плагины» пуста на моей странице редактирования тарифа?**
 
-Ultimate Multisite only lets you allow or deny access to plugins not network-activated on your network. When a plugin is network-activated, by its very nature, it will be loaded by default on every site of your network.
+Ultimate Multisite позволяет вам разрешать или запрещать доступ только к плагинам, которые не активированы на уровне сети в вашей сети. Когда плагин активирован на уровне сети, по самой своей природе он будет загружаться по умолчанию на каждом сайте вашей сети.
 
-If you do not see any plugins listed on the “Allowed Plugins” tab, check if the desired plugin is network-active or not.
+Если вы не видите никаких плагинов на вкладке «Разрешенные плагины», проверьте, активен ли нужный плагин на уровне сети или нет.
 
   * **Могу ли я использовать собственный дизайн таблицы цен?**
 
-Yes. Since version 1.4.0, Ultimate Multisite supports template overrides.
+Да. Начиная с версии 1.4.0, Ultimate Multisite поддерживает переопределение шаблонов.
 
   * **Работает ли Ultimate Multisite с WP Engine?**
 
-Yes. Ultimate Multisite was always supported by WP Engine, but getting domain mapping to work required manual extra steps from the admin (adding the domain to the WP Engine panel). **This is no longer the case since version 1.6.0.** Ultimate Multisite integrates directly with the WP Engine API and domains get added to the panel automatically after mapping.
+Да. Ultimate Multisite всегда поддерживался WP Engine, но для работы сопоставления доменов администратору требовались дополнительные ручные шаги (добавление домена в панель WP Engine). **Начиная с версии 1.6.0, это больше не так.** Ultimate Multisite напрямую интегрируется с WP Engine API, и домены автоматически добавляются в панель после сопоставления.
 
-  * **Какой хостинг-провайдер вы рекомендуете?**
+  * **Какого хостинг-провайдера вы рекомендуете?**
 
-Ultimate Multisite should work with any hosting provider. The only difference is that some hosting company like Closte, Serverpilot, WPMUDEV, WP Engine, Cloudways, Gridpane and [Runcloud.io](http://Runcloud.io) has a tighter integration for domain mapping capabilities so they work out of the box. For other hostings. you may need to set up domain mapping manually.
+Ultimate Multisite должен работать с любым хостинг-провайдером. Единственное отличие в том, что некоторые хостинг-компании, такие как Closte, Serverpilot, WPMUDEV, WP Engine, Cloudways, Gridpane и [Runcloud.io](http://Runcloud.io), имеют более тесную интеграцию для возможностей сопоставления доменов, поэтому они работают сразу из коробки. Для других хостингов вам может потребоваться настроить сопоставление доменов вручную.

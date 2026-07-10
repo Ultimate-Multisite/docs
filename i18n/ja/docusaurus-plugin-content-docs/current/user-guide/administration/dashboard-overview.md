@@ -3,11 +3,11 @@ title: ダッシュボード概要
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview
+# Dashboard Overview {#dashboard-overview}
 
 Ultimate Multisite には Ultimate Multisite メニューの下に専用の **Dashboard** があり、さらにネットワークダッシュボードにウィジェットを追加します。本記事では、両方の場所で表示される内容を紹介します。
 
-## The Network Dashboard
+## The Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite は **My Sites → Network Admin → Dashboard** にあるネットワークレベルのダッシュボードに便利なウィジェットを挿入します。
 
@@ -35,7 +35,7 @@ Ultimate Multisite は **My Sites → Network Admin → Dashboard** にあるネ
 
 ![News ウィジェット](/img/admin/network-dashboard-news.png)
 
-## The Ultimate Multisite Dashboard
+## The Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 ネットワークダッシュボードはネットワーク全体の包括的情報を表示しますが、Ultimate Multisite ダッシュボード（Ultimate Multisite メニューのトップレベルに位置）はサービスに関する情報を表示します。
 

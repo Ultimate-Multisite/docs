@@ -3,11 +3,11 @@ title: Féileacht Fhíneachta
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Fhéil Fhíneacht (Ability Visibility)
+# Fhéil Fhíneacht (Ability Visibility) {#ability-visibility}
 
 Tá **Fhéil Fhíneacht (Ability Visibility)** ag Superdav AI Agent v1.12.0, a bhfuil rathúil ar na ruthaithe a léiríonn conairtí a gcurraíonn an fhéil fhíneacht a bheith agat ar chuid dearmada. Cén fáth go bhfuil sé seo ag fáil ar chuid fhéileachtaí an agenta trí REST APIs, MCP servers, WooCommerce integrations, agus fáil eile.
 
-## Cad é Fhéil Fhíneacht?
+## Cad é Fhéil Fhíneacht? {#what-is-ability-visibility}
 
 Is é Fhéil Fhíneacht (Ability Visibility) siomradh breiseanna a chiallaíonn:
 
@@ -18,9 +18,9 @@ Is é Fhéil Fhíneacht (Ability Visibility) siomradh breiseanna a chiallaíonn:
 
 Tá méid fhéil fhíneacht ar chuid fhéileachtaí a bhaineann leis an t-amachas a bheith agat ar chuid dearmada.
 
-## Meidí Fhéil Fhíneacht (Visibility Levels)
+## Meidí Fhéil Fhíneacht (Visibility Levels) {#visibility-levels}
 
-### Public (Pública)
+### Public (Pública) {#public}
 
 **Fhéileachtaí publa** tá ar fáil i gcónaí:
 
@@ -32,7 +32,7 @@ Tá méid fhéil fhíneacht ar chuid fhéileachtaí a bhaineann leis an t-amacha
 
 Eagraíochta: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Intearnl)
+### Internal (Intearnl) {#internal}
 
 **Fhéileachtaí intearnl** tá ar fáil anseo leat an WordPress:
 
@@ -43,7 +43,7 @@ Eagraíochta: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Eagraíochta: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Deatâir)
+### Partner (Deatâir) {#partner}
 
 **Fhéileachtaí deatâir** tá ar fáil do deatâir a bhfáil agat:
 
@@ -54,7 +54,7 @@ Eagraíochta: `manage-settings`, `view-analytics`, `export-data`
 
 Eagraíochta: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Anailís)
+### Disabled (Anailís) {#disabled}
 
 **Fhéileachtaí anailís** níl ag fáil ar aon chónaí:
 
@@ -63,15 +63,15 @@ Eagraíochta: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Níl ar fáil i admin panels
 - Useful for deprecated or experimental abilities
 
-## Déanamh ar Fhíneacht Ability
+## Déanamh ar Fhíneacht Ability {#managing-ability-visibility}
 
-### Aistriú ar Cailteanna Fhíneachta (Ability Visibility Settings)
+### Aistriú ar Cailteanna Fhíneachta (Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. And leat ar **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Cliom ar an tab **Abilities**
 3. Beidh tú ag fheiceáil liosta de càileanna a bhí curtha, le na leasla fhíneachta (visibility levels) atá ag siad.
 
-### Fhéachán ar Fáil Déiridhí Ability (Viewing Ability Details)
+### Fhéachán ar Fáil Déiridhí Ability (Viewing Ability Details) {#viewing-ability-details}
 
 Cliom ar aon ability chun seo a fheiceáil:
 
@@ -82,7 +82,7 @@ Cliom ar aon ability chun seo a fheiceáil:
 - **Last updated**: Conas a bhí an fáil ach thaispeánta go láiste
 - **Status**: Recognized or Unclassified (Achtaithe nó Ndiúchaithe)
 
-### Changú Fhíneachtaí Fáil (Changing Visibility Levels)
+### Changú Fhíneachtaí Fáil (Changing Visibility Levels) {#changing-visibility-levels}
 
 Chun athrú fhíneacht aon ability:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Oibríochtaí Mór (Bulk Operations)
+### Oibríochtaí Mór (Bulk Operations) {#bulk-operations}
 
 Chun athrú fhíneacht ar chuid càileanna:
 
@@ -108,11 +108,11 @@ Chun athrú fhíneacht ar chuid càileanna:
 2. Déan chun leasla fhíneachta nua a bheith ag an bulk action dropdown
 3. Cliom ar **Apply**
 
-## Liosta Fáil Partnair (Partner Allow-List)
+## Liosta Fáil Partnair (Partner Allow-List) {#partner-allow-list}
 
 An **partner allow-list** curraíonn conas a bheith ag fáil càileanna de chuid partnairí oifríche (external partners).
 
-### Añadh Partnairí (Adding Partners)
+### Añadh Partnairí (Adding Partners) {#adding-partners}
 
 1. And leat ar **Superdav AI Agent** → **Settings** → **Partners**
 2. Cliom ar **Add Partner**
@@ -120,7 +120,7 @@ An **partner allow-list** curraíonn conas a bheith ag fáil càileanna de chuid
 4. Córasach, adda oileúcháin partnair agus cur chun cinn (partner name and description)
 5. Cliom ar **Save**
 
-### Aistriú Càileanna do Partnairí (Assigning Abilities to Partners)
+### Aistriú Càileanna do Partnairí (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Tar éis an partnair a shlónadh:
 
@@ -130,7 +130,7 @@ Tar éis an partnair a shlónadh:
 4. Iar a chuid "Partner allow-list" section, déan na boxa do partnerí atá a bheith ag cur chun cinn
 5. Cliom **Save**
 
-### Aosadh Fhoisteachta Partner Access
+### Aosadh Fhoisteachta Partner Access {#revoking-partner-access}
 
 Le chas an t-athrúcháin access de partner:
 
@@ -140,11 +140,11 @@ Le chas an t-athrúcháin access de partner:
 
 Beidh an partner an t-athrúchán access ar an ability sin go léir.
 
-## Abilities Ní Chlasfáideach (Unclassified)
+## Abilities Ní Chlasfáideach (Unclassified) {#unclassified-abilities}
 
 Nuair a chur in áit un ability tríúchláir (third-party ability) atá Superdav AI Agent níl ag teacht ar fáil, tá sé mar **Unclassified**.
 
-### Notice Admin do Abilities Ní Chlasfáideach
+### Notice Admin do Abilities Ní Chlasfáideach {#admin-notice-for-unclassified-abilities}
 
 Beidh tú ag iarraidh notice admin:
 
@@ -161,7 +161,7 @@ Le do thoil, déan ar chuid de shonraithe agus a chlasfadh sin.
 [Review Abilities] [Dismiss]
 ```
 
-### Aosadh Abilities Ní Chlasfáideach
+### Aosadh Abilities Ní Chlasfáideach {#reviewing-unclassified-abilities}
 
 1. Cliom **Review Abilities** i an notice
 2. Do chuid ability ní chlasfáideach, beidh tú ag iarraidh:
@@ -178,7 +178,7 @@ Le do thoil, déan ar chuid de shonraithe agus a chlasfadh sin.
 
 4. Cliom **Classify** chun do chuid de shonraithe a chur in áit
 
-### Cad a bheith ag clasfadh Abilities Ní Chlasfáideach?
+### Cad a bheith ag clasfadh Abilities Ní Chlasfáideach? {#why-classify-unclassified-abilities}
 
 Clasfadh abilities:
 
@@ -187,9 +187,9 @@ Clasfadh abilities:
 - **Léiríonn feichar**: Mara do chuid de shonraithe, beidh an ability ag cur in áit tar éis a bhí chlasfadh
 - **Leonaidh teachtaireachtaí**: Beidh do chuid de shonraithe ag cur in áit chun an t-athrúcháin a bheith ar fáil
 
-## Fíneacht in Surfaí Éifeachtach
+## Fíneacht in Surfaí Éifeachtach {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 Tá **eifeachtaí oiliúla** ar fáil tríd an curraí REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 Níl **eifeachtaí ionta agus de chuidine** ar fáil tríd an REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 Tá **eifeachtaí oiliúla** ar fáil tríd MCP:
 
@@ -217,7 +217,7 @@ Níl **eifeachtaí ionta** ag teacht ar MCP.
 
 Tá **eifeachtaí de chuidine** ar fáil ach le curraíochta de chuidine.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 Tá **eifeachtaí oiliúla** aige le WooCommerce ar fáil:
 
@@ -227,7 +227,7 @@ Tá **eifeachtaí oiliúla** aige le WooCommerce ar fáil:
 
 Níl **eifeachtaí ionta** ag teacht ar WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 Tá **cáileán** (Public, Internal, Partner) ar fáil i chat, ag cur chun cinn an ghlúin (user permissions):
 
@@ -235,33 +235,33 @@ Tá **cáileán** (Public, Internal, Partner) ar fáil i chat, ag cur chun cinn 
 - Uirlisí (Regular users) téann ar eifeachtaí oiliúla ach leatóg
 - De chuidine (Partners) téann ar eifeachtaí oiliúla + de chuidine (má tá sé leatógaithe)
 
-## Beisteachta Best Practices
+## Beisteachta Best Practices {#security-best-practices}
 
-### Príomh-chúram Leasú (Principle of Least Privilege)
+### Príomh-chúram Leasú (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Déan an eifeachtaí go léir le curraí beagásach is mór a ghlúin a fháil.
 - Use Partner visibility ar obairí scéalfaí (sensitive operations).
 - Ináimh an eifeachtaí atá agat ach níl ag úsáid.
 
-### Audits Ríomhacha
+### Audits Ríomhacha {#regular-audits}
 
 - Déan ar chuid eifeachtaí oiliúla gach mianach.
 - Déan ar chuid eifeachtaí ní a bhfhéidir a bheith ag cur le chéile (unclassified abilities).
 - Trí an fáil ar fáil do de chuidine atá ag úsáid ach níl ag úsáid.
 
-### Logaí agus Monitóirí
+### Logaí agus Monitóirí {#logging-and-monitoring}
 
 - Monitóraigh conas a bhfaidh eifeachtaí a úsáid go mór.
 - Traceann an polaí cur le chéile do de chuidine.
 - Déan alert ar úsáid as an gcuid eifeachtaí (unusual ability usage).
 
-### Eifeachtaí Treoir
+### Eifeachtaí Treoir {#third-party-abilities}
 
 - Déan ar chuid eifeachtaí treoir ar fáil primaois go léir a fháil.
 - Déan ar na hiontaí go mór iad go súnach.
 - Déan an t-amach go léir ar fáil ach tar éifeachtaithe (vetting).
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Níl é a bhealach ag tairgse ar an liosta**
 - Déan cinnte go bhfuil an bhealach curtha agus go bhfuil sé beagach (active)
@@ -284,7 +284,7 @@ Tá **cáileán** (Public, Internal, Partner) ar fáil i chat, ag cur chun cinn 
 - Déan cinnte go bhfuil do cur síos curtha
 - Déan cinnte go bhfuil an plugin a thaispeáint an bhealach ag cur síos (up to date)
 
-## Migration from Legacy Mode
+## Migration from Legacy Mode {#migration-from-legacy-mode}
 
 Má tá tú ag athrú ó chuid fhoireann (version) earlier de Superdav AI Agent:
 
@@ -294,7 +294,7 @@ Má tá tú ag athrú ó chuid fhoireann (version) earlier de Superdav AI Agent:
 
 Déan ar fáil ar **Third-Party Mode Migration** chun níos mó sin féin á bhfhéidir ar athrú chuig cur síos API Abilities (Abilities API) na hionta.
 
-## Next Steps
+## Next Steps {#next-steps}
 
 Tar éis an cur síos an fhéilbhleachta an bhealach:
 

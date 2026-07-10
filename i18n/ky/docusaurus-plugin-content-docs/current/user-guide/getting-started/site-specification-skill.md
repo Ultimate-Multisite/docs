@@ -3,11 +3,11 @@ title: Сайт спецификациясы көндүмдөр
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Сайттын Аталышы (Site Specification) Көндүмү
+# Сайттын Аталышы (Site Specification) Көндүмү {#site-specification-skill}
 
 **Сайттын аталышы (Site Specification)** — бул сиздин сайтыңыздын максаттарын, аудиториясын жана бренддин таанымын багыттоо үчүн түзүлгөн структураланган ыкма. Бул маалымат **site_brief** эсибиңизде сакталат; агентдер ар бир сессияда туруктуу жана контекстке байланышкан жардам көрсөтүү үчүн бул эс алып, андан колдонушат.
 
-## Сайттын аталышы деген эмне?
+## Сайттын аталышы деген эмне? {#what-is-site-specification}
 
 Сайттын аталышы — бул төмөнкүлөрдү документтештирүү процесси:
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 Бул аталышы сиздин **site_brief** сизге туруктуу эс болгон жана агентдердин сайттын контекстини түшүнүү үчүн колдонуучусу болуп калат.
 
-## Эмне үчүн Сайттын аталышын колдонушу керек?
+## Эмне үчүн Сайттын аталышын колдонушу керек? {#why-use-site-specification}
 
-### Сессиялар аркылуу туруктуулук
+### Сессиялар аркылуу туруктуулук {#consistency-across-sessions}
 
 site_brief жок болсо, сиз жаңы сессияны баштаган ар бир кезде сайттын максатын кайра түшүндүрүшүңүз керек болот. Ал менен агентдер дароо төмөнкүлөрдү түшүнөт:
 
@@ -30,7 +30,7 @@ site_brief жок болсо, сиз жаңы сессияны баштаган 
 - Мазмун структураңыз
 - Бизнес максаттарыңыз
 
-### Жакшыраак сунуштарды берүү
+### Жакшыраак сунуштарды берүү {#better-recommendations}
 
 Агентдер site_brief'ти колдонуп:
 
@@ -39,17 +39,17 @@ site_brief жок болсо, сиз жаңы сессияны баштаган 
 - Бренддин таанымына дал келген дизайнды сунуштай алат.
 - Солгогон функцияларды сунуштоодон качулат.
 
-### Тез кирүү (Onboarding)
+### Тез кирүү (Onboarding) {#faster-onboarding}
 
 Жаңы агентдер (же жаңы сессиядагы агентдер) тактоо суроолору бербестен, site_brief'ти окуу аркылуу тез үйрөнүшөт.
 
-## Сайттын аталышын баштап алуу
+## Сайттын аталышын баштап алуу {#initiating-site-specification}
 
-### Theme Builder-де кирүү учурунда
+### Theme Builder-де кирүү учурунда {#during-theme-builder-onboarding}
 
 Site Specification көндүмдү **Theme Builder**-дин кирүү процессинин алдында автоматтык түрдө баштайт. Setup Assistant агент суроолор берип, сиздин site_brief'тиңизди курат.
 
-### Кол менен баштап алуу
+### Кол менен баштап алуу {#manual-initiation}
 
 Сайт специifikasyonunu кез келген убакта баштасаңыз болот:
 
@@ -63,9 +63,9 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 "Мага сайт жөнүндө кыскача маалымат бериңиз"
 ```
 
-## Сайт Спецификациясы Процесси
+## Сайт Спецификациясы Процесси {#the-site-specification-process}
 
-### 1-кадам: Сайттын Максаты
+### 1-кадам: Сайттын Максаты {#step-1-site-purpose}
 
 Агент сурашат:
 
@@ -81,7 +81,7 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 
 Сиз категорияны тандасаңыз болот же өз максатын сүрөттөп бере аласыз.
 
-### 2-кадам: Максаттуу Аудитория
+### 2-кадам: Максаттуу Аудитория {#step-2-target-audience}
 
 ```
 Сиздин негизги аудиторияңыз ким?
@@ -94,7 +94,7 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 Алардын негизги муктаждыктары эмнеде?
 ```
 
-### 3-кадам: Бренд Идентификациясы (Бренддинди Идентификация)
+### 3-кадам: Бренд Идентификациясы (Бренддинди Идентификация) {#step-3-brand-identity}
 
 ```
 Сиздин бренддин түстөрү кандай?
@@ -110,7 +110,7 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 - Жылуу / сыймыктуу
 ```
 
-### 4-кадам: Бизнес Максаттары
+### 4-кадам: Бизнес Максаттары {#step-4-business-goals}
 
 ```
 Сайтыңыздын ийгилиги кандай көрүнөт?
@@ -129,7 +129,7 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 - Башка
 ```
 
-### 5-кадам: Контент Структурасы
+### 5-кадам: Контент Структурасы {#step-5-content-structure}
 
 ```
 Контент кандай уюштурулган?
@@ -148,13 +148,13 @@ Site Specification көндүмдү **Theme Builder**-дин кирүү проц
 - Башка
 ```
 
-## Сиздин site_brief Эмнеси
+## Сиздин site_brief Эмнеси {#your-sitebrief-memory}
 
 Сайт спецификациясын аяктагандан кийин, сиздин маалыматтары **site_brief** катары агент эсибиңизде сакталат. Бул структураланган кат болуп, төмөнкүлөрдү камтыйт:
 
-## Сайтinizin özetini görüntüleme ve güncelleme
+## Сайтinizin özetini görüntüleme ve güncelleme {#viewing-and-updating-your-sitebrief}
 
-### Сайт özetinizi görüntüleyin
+### Сайт özetinizi görüntüleyin {#view-your-sitebrief}
 
 Agent'e quymalı soaloq bering:
 
@@ -170,7 +170,7 @@ yoki
 
 Agent siz saqlган ko'rsatmalaringizni ko'rsatadi.
 
-### Сайт özetini yangilash
+### Сайт özetini yangilash {#update-your-sitebrief}
 
 Sizning saytingiz o'zgarsa, uni yangilashingiz mumkin:
 
@@ -186,9 +186,9 @@ yoki
 
 Bu sizning mavjud ma'lumotlaringizni boshlang'ich nuqta sifatida olgan holda, Site Specification ko'nikmasini qayta ishga tushiradi.
 
-## Agentlar сайт özetidan qanday foydalanadi
+## Agentlar сайт özetidan qanday foydalanadi {#how-agents-use-sitebrief}
 
-### Dizayn tavsiyalari
+### Dizayn tavsiyalari {#design-recommendations}
 
 Dizayn o'zgarishlari haqida so'raganingizda agentlar sizning site_briefingizga murojaat qiladi:
 
@@ -197,7 +197,7 @@ Siz: "Redesign my homepage"
 Agent: "Your site brief-iga ko'ra, siz 25-45 yoshdagi ayollarga nisbatan iliq, hunarmand uslubda maqsad qilyapsiz. Men hunarmand zargarlaringiz va barqarorlik qiymatlaringizga urg'u beradigan dizayn yarataman."
 ```
 
-### Xususiyatlar takliflari
+### Xususiyatlar takliflari {#feature-suggestions}
 
 Agentlar sizning maqsadlaringizga mos keladigan xususiyatlarni taklif qiladi:
 
@@ -206,22 +206,22 @@ Siz: "What features should I add?"
 Agent: "Mijozlar sodiqligiga e'tibor qaratilgan e-commerce do'koni uchun men quyidagilarni tavsiya qilaman: sodiqlik dasturi, mijozlar sharhlari, elektron xat rasmlari va mahsulot tavsiyalari."
 ```
 
-### Kontent tuzilishi
+### Kontent tuzilishi {#content-structure}
 
 Agentlar sizning tuzilishingizga asoslanib kontentni tashkil etishni taklif qiladi:
 
 Siz: "Блогду кантип уюштуруу керек?"
 Агент: "Сиз продукт каталогу менен блогду колдоносуз, ошондуктан мага сунуштайм, постторду продукт категориялары боюнча уюштуруп, бир нече продукту биригип көрсөткөн 'стильдигилдерди' (styling guides) түзүңүз."
 
-## Ички иш-чаралар (Best Practices)
+## Ички иш-чаралар (Best Practices) {#best-practices}
 
-### Натыйжалуу болгуңуз
+### Натыйжалуу болгуңуз {#be-specific}
 "Жалпы аудитория" дегенди айтпаңыз, өз аудиторияңызды так сүрөттөп бериңиз:
 
 - ✓ "25-45 жаштагы аялдар, туруктуу модага кызыккан"
 - ✗ "Арсалуучу ар бир адам"
 
-### Керектүү маалымат менен жаңылаңыз
+### Керектүү маалымат менен жаңылаңыз {#update-regularly}
 Сайтыңыз өзгөрө электе, `site_brief` (сайттын кыскача маалыматын) жогорудан арыңыз:
 
 - Жаңы аудиторияга өткөнүңүздө
@@ -229,20 +229,20 @@ Siz: "Блогду кантип уюштуруу керек?"
 - Бренддингиз айырылып кеткенде
 - Бизнес максаттары өзгөртүлгөнүнда
 
-### Бирдей терминологияны колдонуңуз
+### Бирдей терминологияны колдонуңуз {#use-consistent-terminology}
 Сессиялар аркылуу бирдей терминдерди колдонуңуз:
 
 - ✓ Ар дайым "туруктуу тагын" (эки "эко-д Aly" же "жашыл продукция" деп айтпаңыз)
 - ✓ Аудиторияңызды ар дайым бирдей атаңыз
 
-### Контекстти кошоңуз
+### Контекстти кошоңуз {#include-context}
 Агенттердин сиздин чечимдерин түшүнүшү үчүн фон бергиле:
 
 - "Биз сапатту баадан жогору көрүүчү кызматкерлерди максат кылабыз"
 - "Биздин аудитория технологияны жакшы bilen жана заманбап дизайнды күтөт"
 - "Биз киришкен стартап болгондуктан, бизге арзан эффективдуу чечимдер керек"
 
-## Theme Builder окутуусу менен байланыш
+## Theme Builder окутуусу менен байланыш {#relationship-to-theme-builder-onboarding}
 
 Site Specification (Сайттын тактамасы) да **Theme Builder** окутуу процессине интеграцияланган. Окутууну аяктаганда, сиз берген маалыматтар менен `site_brief` автоматтык түрдө түзүлөт.
 
@@ -252,7 +252,7 @@ Site Specification (Сайттын тактамасы) да **Theme Builder** о
 - Сайт өзгөрүүдө `site_brief` тизмесин жаңылоо үчүн
 - Theme Builder'ди баштоодон мурун кылдат тактама түзүү үчүн
 
-## Ойлонууну чечүү (Troubleshooting)
+## Ойлонууну чечүү (Troubleshooting) {#troubleshooting}
 
 **Менин site_brief-им колдонулуп жатпайт**
 - Агентте эс тутумга кирүү мүмкүнчүлүгү бар экенин текшериңиз.
@@ -268,7 +268,7 @@ Site Specification (Сайттын тактамасы) да **Theme Builder** о
 - Эгерде site\_brief'иңиз эски болсо, аны жаңыртыңыз
 - Сураштарууларыңызда кошумча контекст бериңиз
 
-## Кийинки кадамдар
+## Кийинки кадамдар {#next-steps}
 
 site specificationды аныктагандан кийин:
 

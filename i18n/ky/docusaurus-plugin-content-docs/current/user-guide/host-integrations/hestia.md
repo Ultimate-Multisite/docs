@@ -3,28 +3,28 @@ title: Hestia Контрол панети интеграциясы
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Интеграциясы
+# Hestia Control Panel Интеграциясы {#hestia-control-panel-integration}
 
 Бул колдонмода Ultimate Multisite Hestia интеграциясын кантип конфигурациялоону түшүндүрөбүз, ошол жерде тандалган домендер (mapped domains) ваша жетишкен тармагындагы домендерди Hestia-da Web Domain Aliases катары автоматтык түрдө кошууну жана алып салууну кантип ишке ашыруу керектигин баяндайт.
 
 - Hestia CLI референси: v-add-web-domain-alias / v-delete-web-domain-alias
 - Расмий REST API документациясы: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Ал кандай иштешет?
+## Ал кандай иштешет? {#what-it-does}
 - Ultimate Multisiteде домен карталланганда, интеграция Hestia API'син чакырып аткарат:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Домен карталышы алындалганда, ал төмөнкү команданы аткарат:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Домен Карталбаруу (Domain Mapping) параметрлериндеги "Auto-create www subdomain" (www поддоменын автоматтык түрдө түзүү) жөндөмү боюнча `www.` алиасын кошуу же алып салууну мүмкүн кылат.
 
-## Милдеттүү шарттар
+## Милдеттүү шарттар {#prerequisites}
 - Алдын ала WordPress орнотулган ваша Hestia Web Domain'и болушу керек. Интеграция бул негизги доменгө алиас (aliases) тиешелүү болот.
 - Hestia API-сине кирүү мүмкүнчүлүгү активдүү болушу керек. Сиз пароль же API хеши/токен аркылуу идентификациялоо жүргүзө аласыз.
 
 API кирүү жана идентификациялоо деталдары үчүн Hestia'нын REST API документациясына караңыз:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Конфигурация (Wizard → Integrations → Hestia)
+## Конфигурация (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Төмөнкү маанилерди киргизиңиз:
 
 `WU_HESTIA_API_URL` (милдеттүү)
@@ -47,16 +47,16 @@ https://hestiacp.com/docs/server-administration/rest-api.html
 
 Сиз бул константаларды `wp-config.php`-ка киргизе аласыз, же аларды колдонуч менен өзүңүз аныктай аласыз.
 
-## Орноктоону текшерүү
+## Орноктоону текшерүү {#verifying-setup}
 - "Testing" (Тестирлөө) кадамдагы wizardда плагин API аркылуу `v-list-web-domains <WU_HESTIA_ACCOUNT> json` буйругун алат. Ийгиликтүү жооп байланыш жана аутентификацияны тастыктайт.
 - Доменди картадан өткөндөн кийин, Hestiaда текшериңиз: Web > базалык домен > Aliases (Алианстар). Жаңы алиас кошулганын көрүшүңүз керек.
 
-## Эскертүүлөр жана кеңештер
+## Эскертүүлөр жана кеңештер {#notes--tips}
 - `WU_HESTIA_WEB_DOMAIN` алдын ала бар экенин жана `WU_HESTIA_ACCOUNT` тарабынан ээки экенин камсыздаңыз.
 - SSL талап кылындаса, сертификаттарды Hestiaда башкарыңыз. Бул интеграция учурда гана алианстарды иштетет.
 - Домен карта маппинг "www subdomain" (www поддомен) жөндөмүңүзгө жараша `www.<domain>` кошулушу же алып салууну да чакырышы мүмкүн.
 
-## API чалышы мисалы (cURL)
+## API чалышы мисалы (cURL) {#example-api-call-curl}
 Төмөндө концептуалдык мисал берилген (сиздин чөйрөнүңүз менен тууралаңыз). Так параметрлер үчүн расмий документтерди карап чыгыңыз.
 
 POST https://your-hestia-host:8083/api/
@@ -73,11 +73,11 @@ cmd=v-add-web-domain-alias
 
 Ушул аракетти жок кылуу үчүн `cmd=v-delete-web-domain-alias` жана ошол аргументтерди колдонуңуз.
 
-## Кайрылуу маселелерин чечүү
+## Кайрылуу маселелерин чечүү {#troubleshooting}
 - APIдан HTTP катасы келсе: `WU_HESTIA_API_URL`-дун `/api` менен аяктаган жана жеткиликтүү экенин текшериңиз.
 - Автотификация (Auth) каталары: `WU_HESTIA_API_USER` жана же `WU_HESTIA_API_PASSWORD` же `WU_HESTIA_API_HASH`-тан бирин тактаңыз.
 - Журналдарда “Missing account/base domain” деген билдирүү келсе: Hestia системасында `WU_HESTIA_ACCOUNT` жана `WU_HESTIA_WEB_DOMAIN` белгиленген жана туура экенин текшериңиз.
 
-## Маалыматтар
+## Маалыматтар {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI Референси (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

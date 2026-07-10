@@ -4,22 +4,22 @@ title: Filter - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled
+# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 Dit laat plugin-ontwikkelaars toe om 'n gegewe toestand vir die MCP-adapter te dwing.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $enabled | `bool` | Of die MCP-adapter ingeskakel is. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.5.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) op lyn 250
 
 
-## Gee terug
+## Gee terug {#returns}

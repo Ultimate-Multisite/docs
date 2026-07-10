@@ -1,154 +1,156 @@
 ---
-title: Personalització del teu formulari de registre
+title: Personalització del vostre formulari de registre
 sidebar_position: 17
-_i18n_hash: b0e3b7cddd099b4260e5cf01fead8685
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Personalització del teu formulari de registre
+# Personalització del vostre formulari de registre {#customizing-your-registration-form}
 
-Per fer que la teva xarxa sigui única de totes les altres SaaS construïdes sobre la plataforma WordPress, Ultimate Multisite et permet personalitzar les teves pàgines de registre i de connexió amb la nostra funcionalitat de **Checkout Forms**.
+Per fer que la vostra xarxa tingui un aspecte únic respecte de tots els altres SaaS creats sobre la plataforma WordPress, Ultimate Multisite us permet personalitzar les vostres pàgines de registre i d’inici de sessió amb la nostra funcionalitat **Formularis de checkout**.
 
-Tot i que són una manera fàcil i flexible d'experimentar amb diferents aproximacions quan es tenta convertir nous clients, es fa servir principalment per crear formularis de registre personalitzats. Aquest article et mostra com pots fer-ho.
+Tot i que són una manera fàcil i flexible d’experimentar amb diferents enfocaments quan intenteu convertir nous clients, s’utilitzen principalment per crear formularis de registre personalitzats. Aquest article té com a objectiu mostrar-vos com ho podeu fer.
 
-## Pàgines de connexió i registre:
+## Pàgines d’inici de sessió i de registre: {#login-and-registration-pages}
 
-Després de l'instal·lació d'Ultimate Multisite, aquest últim crea automàticament pàgines de connexió i registre personalitzades a la teva pàgina principal. Pots canviar aquestes pàgines predeterminades quan vulguis, accedint a la pàgina **Ultimate Multisite > Settings > Login & Registration**.
+En instal·lar Ultimate Multisite, crea automàticament pàgines d’inici de sessió i de registre personalitzades al vostre lloc principal. Podeu canviar aquestes pàgines predeterminades en qualsevol moment anant a la pàgina **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Pàgina de configuració d’inici de sessió i registre](/img/config/settings-general.png)
 
-Aquí tens una visió completa de la pàgina de configuració de connexió i registre:
+Aquí teniu una vista completa de la pàgina de configuració d’inici de sessió i registre:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Pàgina completa de configuració d’inici de sessió i registre](/img/config/settings-login-registration-full.png)
 
-Observarem cada una de les opcions que pots personalitzar a la pàgina **Login & Registration**:
+Fem una ullada a cadascuna de les opcions que podeu personalitzar a la pàgina **Login & Registration**:
 
-*   **Enable registration:** Aquesta opció habilitarà o deshabilitarà el registre a la teva xarxa. Si es desactiva, els teus clients no podran registrar-se ni subscriure's als teus productes.
+  * **Activa el registre:** Aquesta opció activarà o desactivarà el registre a la vostra xarxa. Si està desactivada, els vostres clients no podran registrar-se ni subscriure’s als vostres productes.
 
-*   **Enable email verification:** Si aquesta opció està activada, els clients que es subscriuen a un pla gratuït o a un pla pagat amb període d'essai rebran un correu electrònic de verificació i haurà de fer clic a l'enllaç de verificació perquè es crei el seu lloc web.
+  * **Activa la verificació per correu electrònic:** Si aquesta opció està activada, els clients que se subscriguin a un pla gratuït o a un pla de pagament amb període de prova rebran un correu electrònic de verificació i hauran de fer clic a l’enllaç de verificació perquè es creïn els seus llocs web.
 
-*   **Default registration page:** Aquesta és la pàgina predeterminada per al registre. Aquesta pàgina ha de ser publicada a la teva web i contenir un formulari de registre (també conegut com a formulari de checkout), on els teus clients es subscriuraran als teus productes. Pots crear tant pàgines de registre i formularis de checkout com desitges, només recorda posar el shortcode del formulari de checkout a la pàgina de registre, sinó que no apareixerà.
+  * **Pàgina de registre predeterminada:** Aquesta és la pàgina predeterminada per al registre. Aquesta pàgina ha d’estar publicada al vostre lloc web i tenir un formulari de registre (també conegut com a formulari de checkout), on els vostres clients se subscriuran als vostres productes. Podeu crear tantes pàgines de registre i formularis de checkout com vulgueu; recordeu només posar el shortcode del formulari de checkout a la pàgina de registre, si no, no apareixerà.
 
-*   **Use custom login page:** Aquesta opció et permet utilitzar una pàgina de connexió personalitzada, diferent de la pàgina predeterminada `wp-login.php`. Si aquesta opció està activada, pots seleccionar quina pàgina s'utilitzarà per la connexió a l'opció **Default login page** (just en dessous).
+  * **Utilitza una pàgina d’inici de sessió personalitzada:** Aquesta opció us permet utilitzar una pàgina d’inici de sessió personalitzada, diferent de la pàgina predeterminada wp-login.php. Si aquesta opció està activada, podeu seleccionar quina pàgina s’utilitzarà per a l’inici de sessió a l’opció **Pàgina d’inici de sessió predeterminada** (just a sota).
 
-*   **Obfuscate the original login url (wp-login.php)** : Si vols ocultar l'URL original de connexió, pots activar aquesta opció. És útil per prevenir atacs de força bruta. Si aquesta opció està habilitada, Ultimate Multisite mostrarà un error 404 quan un usuari intenta accedir a l'enllaç original `wp-login.php`.
+  * **Ofusca l’URL original d’inici de sessió (wp-login.php)** : Si voleu amagar l’URL original d’inici de sessió, podeu activar aquesta opció. Això és útil per evitar atacs de força bruta. Si aquesta opció està activada, Ultimate Multisite mostrarà un error 404 quan un usuari intenti accedir a l’enllaç original wp-login.php
 
-*   **Force synchronous site publication:** Després que un client es subscriui a un producte en una xarxa, el nou lloc web pendents ha de convertir-se en un lloc web de xarxa real. El procés de publicació es realitza mitjançant la Job Queue, de manera asíncrona. Activa aquesta opció per forçar que la publicació es faci en la mateixa sol·licitud que el registre.
+  * **Força la publicació síncrona del lloc:** Després que un client se subscrigui a un producte en una xarxa, el nou lloc pendent s’ha de convertir en un lloc real de la xarxa. El procés de publicació es fa mitjançant Job Queue, de manera asíncrona. Activeu aquesta opció per forçar que la publicació es faci en la mateixa sol·licitud que el registre.
 
-Ara, veigem altres opcions que encara són rellevants per al procés de connexió i registre. Estan just enrere de **Other options** a la mateixa pàgina de Login & registration:
+Ara, vegem altres opcions que encara són rellevants per al procés d’inici de sessió i registre. Són just a sota de **Altres opcions** a la mateixa pàgina de Login & registration:
 
-*   **Default role:** És el rol que tindrà el teu client al seu lloc web després del procés de registre.
+  * **Rol predeterminat:** Aquest és el rol que tindran els vostres clients al seu lloc web després del procés de registre.
 
-*   **Enable Jumper:** Habilita el atllat Jumper a l'àrea d'administració. Jumper permet als administradors saltar ràpidament a les pantalles d'Ultimate Multisite, objectes de xarxa i altres destins suportats sense navegar per menys. Desactiva-ho si prefereixes ocultar aquesta eina de navegació ràpida de l'interfície d'administració.
+  * **Activa Jumper:** Activa la drecera Jumper a l’àrea d’administració. Jumper permet als administradors saltar ràpidament a pantalles d’Ultimate Multisite, objectes de xarxa i altres destinacions compatibles sense haver de navegar per tots els menús. Desactiveu-lo si preferiu amagar aquesta eina de navegació ràpida de la interfície d’administració.
 
-*   **Add users to the main site as well:** Habilitar aquesta opció també afegeurà l'usuari a la pàgina principal de la teva xarxa després del procés de registre. Si actives aquesta opció, també apareixerà una opció per configurar el **default role** d'aquests usuaris a la teva web, just enrere.
+  * **Afegeix també els usuaris al lloc principal:** Activar aquesta opció també afegirà l’usuari al lloc principal de la vostra xarxa després del procés de registre. Si activeu aquesta opció, també apareixerà just a sota una opció per establir el **rol predeterminat** d’aquests usuaris al vostre lloc web.
 
-*   **Enable multiple accounts:** Permet als usuaris tenir comptes en diferents llocs de la teva xarxa amb el mateix adreça electrònica. Si aquesta opció està desactivada, els teus clients no podran crear un compte en altres llocs web que funcionin a la teva xarxa amb el mateix adreça electrònica.
+  * **Activa diversos comptes:** Permet als usuaris tenir comptes en diferents llocs de la vostra xarxa amb la mateixa adreça de correu electrònic. Si aquesta opció està desactivada, els vostres clients no podran crear un compte en altres llocs web que s’executin a la vostra xarxa amb la mateixa adreça de correu electrònic.
 
-I això són totes les opcions relacionades amb la connexió i el registre que pots personalitzar! No oblidis d'arribar les teves configuracions quan acabis de modificar-les.
+I aquestes són totes les opcions relacionades amb l’inici de sessió i el registre que podeu personalitzar! No oblideu desar la configuració després d’acabar d’editar-la.
 
-## Utilitzar múltiples formularis de registre:
+## Ús de diversos formularis de registre: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 ofereix un editor de formularis de checkout que et permet crear tant formularis com desitges, amb diferents camps, productes disponibles, etc.
+Ultimate Multisite 2.0 ofereix un editor de formularis de checkout que us permet crear tants formularis com vulgueu, amb diferents camps, productes en oferta, etc.
 
-Tant la pàgina de connexió com la de registre estan incrustades amb shortcodes: **[wu_login_form]** a la pàgina de connexió i **[wu_checkout]** per a la pàgina de registre. Pots personalitzar encara més la pàgina de registre creant o construint formularis de checkout.
+Tant les pàgines d’inici de sessió com les de registre s’insereixen amb shortcodes: **[wu_login_form]** a la pàgina d’inici de sessió i**[wu_checkout]** per a la pàgina de registre. Podeu personalitzar encara més la pàgina de registre construint o creant formularis de checkout.
 
-Per accedir a aquesta funcionalitat, veu al menú **Checkout Forms**, a la barra lateral esquerra.
+Per accedir a aquesta funcionalitat, aneu al menú **Checkout Forms**, a la barra lateral esquerra.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Menú Checkout Forms a la barra lateral](/img/config/checkout-forms-list.png)
 
-En aquesta pàgina, pots veure tots els formularis de checkout que tens.
+En aquesta pàgina, podeu veure tots els formularis de checkout que teniu.
 
-Si vols crear-ne un nou, només has de fer clic a **Add Checkout Form** en la part superior de la pàgina.
+Si en voleu crear un de nou, només cal que feu clic a **Afegeix formulari de checkout** a la part superior de la pàgina.
 
-Pots seleccionar una d'aquestes tres opcions com a punt de partida: single step, multi-step o blank. Després, fes clic a **Go to the Editor**.
+Podeu seleccionar una d’aquestes tres opcions com a punt de partida: un sol pas, diversos passos o en blanc. Després, feu clic a **Ves a l’editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Afegir formulari de checkout amb opcions d’un sol pas, diversos passos o en blanc](/img/config/checkout-forms-list.png)
 
-Alternativament, pots editar o duplicar els formularis que ja tens fent clic a les opcions que es troben per sota del seu nom. Allà, també trobaràs les opcions per copiar el shortcode del formulari o per eliminar-lo.
+Alternativament, podeu editar o duplicar els formularis que ja teniu fent clic a les opcions sota el seu nom. Allà també trobareu les opcions per copiar el shortcode del formulari o per suprimir el formulari.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Accions en passar el cursor pel formulari de checkout amb editar, duplicar i suprimir](/img/config/checkout-form-hover-actions.png)
 
-Si seleccioneu single step o multi-step, el formulari de checkout ja vindrà pre-rellenat amb els passos bàsics perquè funcione. Després, si vols, pots-hi afegir passos addicionals.
+Si seleccioneu un sol pas o diversos passos, el formulari de checkout ja estarà preomplert amb els passos bàsics perquè funcioni. Després, si voleu, podeu afegir-hi passos addicionals.
 
-### Edició d'un formulari de checkout:
+### Edició d’un formulari de checkout: {#editing-a-checkout-form}
 
-Com vam mencionar abans, pots crear formularis de checkout per a diferents propòsits. En aquest exemple, treballarem amb un formulari de registre.
+Com hem esmentat abans, podeu crear formularis de checkout per a diferents finalitats. En aquest exemple treballarem en un formulari de registre.
 
-Després de navegar a l'editor del formulari de checkout, només has de donar-li un nom (que només es servirà de referència interna) i un slug (utilitzat per crear shortcodes, per exemple).
+Després de navegar fins a l’editor de formularis de checkout, doneu un nom al vostre formulari (que s’utilitzarà només com a referència interna) i un slug (utilitzat per crear shortcodes, per exemple).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editor del formulari de checkout amb camps de nom i slug](/img/config/checkout-form-name-slug.png)
 
-Els formularis es componen de passos i camps. Pots afegir un nou pas fent clic a **Add New Checkout Step**.
+Els formularis estan formats per passos i camps. Pots afegir un pas nou fent clic a **Afegeix un nou pas de checkout**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Botó Afegeix un nou pas de checkout](/img/config/checkout-form-add-step.png)
 
-A la primera pestanya de la finestra modal, ompliu el contingut del pas del vostre formulari. Donèl-li un ID, un nom i una descripció. Aquests elements es fan servir principalment a nivell intern.
+A la primera pestanya de la finestra modal, omple el contingut del pas del teu formulari. Dona-li un ID, un nom i una descripció. Aquests elements s’utilitzen principalment internament.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Pestanya de contingut del pas de checkout amb ID, nom i descripció](/img/config/checkout-form-step-content.png)
 
-A més, configura la visibilitat del pas. Pots triar entre **Always show** , **Only show for logged in users** o **Only show for guests**.
+A continuació, defineix la visibilitat del pas. Pots triar entre **Mostra sempre** , **Mostra només per als usuaris amb sessió iniciada** o **Mostra només per als convidats**.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Opcions de visibilitat del pas de checkout](/img/config/checkout-form-step-visibility.png)
 
-Finalment, configura l'estil del pas. Aquests són camps opcionals.
+Finalment, configura l’estil del pas. Aquests camps són opcionals.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Configuració de l’estil del pas de checkout](/img/config/checkout-form-step-style.png)
 
-Ara, és hora d'afegir camps al nostre primer pas. Només has de fer clic a **Add New Field** i seleccionar el tipus de secció que vols.
+Ara és hora d’afegir camps al nostre primer pas. Només cal que facis clic a **Afegeix un camp nou** i seleccionis el tipus de secció que vols.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Botó Afegeix un camp nou](/img/config/checkout-form-add-field-button.png)![Menú desplegable de selecció del tipus de camp](/img/config/checkout-form-field-type-dropdown.png)
 
-Cada camp té diferents paràmetres que omplir. Per a aquesta primera entrada, seleccionarem el camp **Username**.
+Cada camp té diferents paràmetres que s’han d’omplir. Per a aquesta primera entrada, seleccionarem el camp **Nom d’usuari**.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Configuració del camp Nom d’usuari](/img/config/checkout-form-username-content.png)![Paràmetres del camp Nom d’usuari](/img/config/checkout-form-username-visibility.png)![Configuració addicional del camp Nom d’usuari](/img/config/checkout-form-username-style.png)
 
-Pots afegir tant passos com camps com necessitis. Per mostrar els teus productes perquè els teus clients es trien, utilitza el camp Pricing Table. Si vols deixar que els teus clients es moguin un vostre template, afegeix el camp Template Selection. I així va continuant.
+Pots afegir tants passos i camps com necessitis. Per mostrar els teus productes perquè els teus clients en triïn un, utilitza el camp Taula de preus. Si vols permetre que els teus clients triïn una plantilla, afegeix el camp Selecció de plantilla. I així successivament.
 
-_**Nota:** Si crees un producte després de crear el teu formulari de checkout, hauràs de{\s}afegir el producte a la secció Pricing table. Si no el afegeu, el producte no apareixerà als teus clients a la pàgina de registre._
+![Editor del formulari de checkout amb el camp de selecció de plantilla](/img/config/checkout-form-with-template-field.png)
 
-_**Nota 2:** username, email, password, site title, site URL, order summary, payment i el botó submit són camps obligatoris per crear un formulari de checkout._
+_**Nota:** Si crees un producte després de crear el teu formulari de checkout, hauràs d’afegir el producte a la secció Taula de preus. Si no l’hi afegeixes, el producte no apareixerà als teus clients a la pàgina de registre._
 
-Mentre treballes en el teu formulari de checkout, pots utilitzar sempre el botó Preview per veure com veurà el formulari els teus clients. També pots alternar entre veure-ho com un usuari existent o com un visitant.
+_**Nota 2:** el nom d’usuari, el correu electrònic, la contrasenya, el títol del lloc, l’URL del lloc, el resum de la comanda, el pagament i el botó d’enviament són camps obligatoris per crear un formulari de checkout._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Mentre treballes en el teu formulari de checkout, sempre pots utilitzar el botó Previsualització per veure com veuran el formulari els teus clients. També pots alternar entre veure’l com a usuari existent o com a visitant.
 
-Finalment, a **Advanced Options** pots configurar el missatge per a la pàgina de **Thank You**, afegir snippets per rastrejar conversió, afegir CSS personalitzat al teu formulari de checkout o restringir-lo a determinats països.
+![Botó Previsualització a l’editor del formulari de checkout](/img/config/checkout-form-preview-button.png)![Previsualització del formulari de checkout com a visitant o usuari existent](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Finalment, a **Opcions avançades** pots configurar el missatge per a la pàgina **Gràcies**, afegir snippets per fer el seguiment de conversions, afegir CSS personalitzat al teu formulari de checkout o restringir-lo a determinats països.
 
-També pots habilitar o deshabilitar manualment el teu formulari de checkout fent clic a aquesta opció a la columna de la dreta, o eliminar el formulari de manera permanent.
+![Opcions avançades amb pàgina Gràcies, seguiment de conversions i CSS personalitzat](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+També pots activar o desactivar manualment el teu formulari de checkout commutant aquesta opció a la columna de la dreta, o eliminar el formulari permanentment.
 
-No oblidis d'arribar el teu formulari de checkout!
+![Commutador d’actiu i opció d’eliminar per al formulari de checkout](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+No oblidis desar el teu formulari de checkout!
 
-Per obtenir el shortcode del teu formulari, fes clic a **Generate Shortcode** i copia el resultat que es mostra a la finestra modal.
+![Botó Desa el formulari de checkout](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Per obtenir el shortcode del teu formulari, fes clic a **Genera shortcode** i copia el resultat que es mostra a la finestra modal.
 
-_**Nota:** Hauràs de{\s}afegir aquest shortcode a la teva pàgina de registre per que aquest formulari de checkout s'afegeixi a ella._
+![Modal Genera shortcode amb el shortcode per copiar](/img/config/checkout-form-editor.png)
 
-## Preselecció de productes i templates mitjançant paràmetres d'URL:
+_**Nota:** Hauràs d’afegir aquest shortcode a la teva pàgina de registre per tal que aquest formulari de checkout s’hi afegeixi._
 
-Si vols crear taules de preus personalitzades per als teus productes i preseleccionar al formulari de checkout el producte o el template que el teu client tria de la teva pàgina de taules de preus o templates, pots utilitzar paràmetres d'URL per això.
+## Preselecció de productes i plantilles mitjançant paràmetres d’URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### Per plans:
+Si vols crear taules de preus personalitzades per als teus productes i preseleccionar al formulari de checkout el producte o la plantilla que el teu client triï des de la teva taula de preus o pàgina de plantilles, pots utilitzar paràmetres d’URL per fer-ho.
 
-Veu a **Ultimate Multisite > Products > Select a plan**. Hauries de veure el botó **Click to copy Shareable Link** en la part superior de la pàgina. Aquest és l'enllaç que pots utilitzar per preseleccionar aquest pla específic al teu formulari de checkout.
+### **Per als plans:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Ves a **Ultimate Multisite > Productes > Selecciona un pla**. Hauries de veure el botó **Fes clic per copiar l’enllaç compartible** a la part superior de la pàgina. Aquest és l’enllaç que pots utilitzar per preseleccionar aquest pla específic al teu formulari de checkout.
 
-Nota que aquest enllaç compartible només és vàlid per **Plans**. No pots utilitzar enllaços compartibles per paquets o serveis.
+![Pàgina de producte amb el botó d’enllaç compartible](/img/config/products-list.png)
 
-### Per templates:
+Tingues en compte que aquest enllaç compartible només és vàlid per als **Plans**. No pots utilitzar enllaços compartibles per a paquets o serveis.
 
-Si vols preseleccionar templates de lloc web al teu formulari de checkout, pots utilitzar el paràmetre: **?template_id=X** a l'URL de la teva pàgina de registre. L'"X" ha de ser substituït pel **número d'ID del template del lloc web**. Per obtenir aquest número, veu a **Ultimate Multisite > Sites**.
+### Per a les plantilles: {#for-templates}
 
-Fes clic a **Manage** just enrere del template del lloc web que vols utilitzar. Veuràs el número d'ID del SITE. Només utilitza aquest número per a aquest template del lloc web específic per que es preseleccioneixi al teu formulari de checkout. En el nostre cas, el paràmetre d'URL seria **?template_id=2**.
+Si vols preseleccionar plantilles de lloc al teu formulari de checkout, pots utilitzar el paràmetre: **?template_id=X** a l’URL de la teva pàgina de registre. La "X" s’ha de substituir pel **número d’ID de la plantilla de lloc**. Per obtenir aquest número, ves a **Ultimate Multisite > Llocs**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Fes clic a **Gestiona** just a sota de la plantilla de lloc que vols utilitzar. Veuràs el número SITE ID. Utilitza aquest número per a aquesta plantilla de lloc específica perquè quedi preseleccionada al teu formulari de checkout. En el nostre cas, el paràmetre d’URL seria **?template_id=2**.
 
-Diguem que el lloc web de la nostra xarxa és [**www.mynetwork.com**](http://www.mynetwork.com) i la nostra pàgina de registre amb el formulari de checkout es troba a la pàgina **/register**. L'URL completa amb aquest template del lloc web preseleccióarà tindrà aspecte de [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Llista de llocs que mostra l’ID de la plantilla de lloc](/img/config/site-templates-list.png)
 
-I si vols, pots preseleccionar tant productes com templates al teu formulari de checkout. Tot el que has de fer és copiar l'enllaç compartible del pla i enganxar el paràmetre del template al final. Aspectarà com [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Suposem que el lloc web de la nostra xarxa és [**www.mynetwork.com**](http://www.mynetwork.com) i que la nostra pàgina de registre amb el nostre formulari de checkout es troba a la pàgina **/register**. L’URL completa amb aquesta plantilla de lloc preseleccionada tindrà aquest aspecte: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+I si vols, pots preseleccionar tant productes com plantilles al teu formulari de checkout. Tot el que has de fer és copiar l’enllaç compartible del pla i enganxar el paràmetre de plantilla al final. Tindrà aquest aspecte: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

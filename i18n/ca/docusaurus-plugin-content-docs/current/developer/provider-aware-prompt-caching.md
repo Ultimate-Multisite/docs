@@ -3,11 +3,11 @@ title: Memoria de Cache de Prompts Conegut per el Proveïdor
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Cacheo de Prompts Conscient del Proveïdor
+# Cacheo de Prompts Conscient del Proveïdor {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 presenta el **cacheo de prompts conscient del proveïdor**, que optimitza els costos i la latència de l'API cacheant prompts en diversos proveïdors de LLM. Cada proveïdor té mecanismes i configuracions de cache diferents.
 
-## Resum
+## Resum {#overview}
 
 El cacheo de prompts us permet:
 
@@ -23,11 +23,11 @@ Els diferents proveïdors implementen el cacheo de manera diferent:
 - **OpenRouter**: Cacheo específic del proveïdor
 - **Vertex Anthropic**: Cacheo de prompts amb control de cache
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini proporciona una gestió explícita del cache mitjançant l'API `cachedContents`.
 
-### Configuració
+### Configuració {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Creació d'un Prompt Cacheat
+### Creació d'un Prompt Cacheat {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Devolveu: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Utilització d'un Prompt Cacheat
+### Utilització d'un Prompt Cacheat {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Cicle de Vida del Cache
+### Cicle de Vida del Cache {#cache-lifecycle}
 
 ```php
 // Llistar continguts cacheats
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Millores Pràctiques per a Gemini
+### Millores Pràctiques per a Gemini {#best-practices-for-gemini}
 
 - **Establir un TTL adequat**: Equilibri entre l'estalvi de costos i l'obsolescència del cache
 - **Cachear prompts de sistema**: Reutilitzar el mateix prompt de sistema en diverses sol·licituds
 - **Monitoritzar l'ús del cache**: Fer un seguiment dels caches més utilitzats
 - **Netitzar caches expirats**: Eliminar periodicàment caches no utilitzats
 
-## Azure OpenAI: Cacheo de Prompts
+## Azure OpenAI: Cacheo de Prompts {#azure-openai-prompt-caching}
 
 Azure OpenAI suporta el cacheo de prompts amb gestió automàtica del TTL.
 
-### Configuració
+### Configuració {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Habilitar el Cacheo
+### Habilitar el Cacheo {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Headers de Cache
+### Headers de Cache {#cache-headers}
 
 Azure OpenAI utilitza headers HTTP per al control del cache:
 
@@ -152,7 +152,7 @@ Valors suportats:
 - `no_cache`: No cachear aquesta sol·licitud
 - `no_store`: No cachear i no reutilitzar
 
-### Monitorització de l'Ús del Cache
+### Monitorització de l'Ús del Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Millores Pràctiques per a Azure OpenAI
+### Millores Pràctiques per a Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Utilitzar prompts consistents**: Els prompts idèntics es benefician del cacheo
 - **Establir un TTL raonable**: Equilibri entre el cost i la frescor
 - **Monitoritzar les mètriques del cache**: Fer un seguiment de la creació vs. els hits
 - **Processar sol·licituds similars en grup**: Agrupar sol·licituds per maximitzar els hits de cache
 
-## OpenRouter: Cacheo Específic del Proveïdor
+## OpenRouter: Cacheo Específic del Proveïdor {#openrouter-provider-specific-caching}
 
 OpenRouter suporta el cacheo mitjançant els proveïdors substramentals (OpenAI, Anthropic, etc.).
 
-### Configuració
+### Configuració {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Utilització del Cacheo d'OpenRouter
+### Utilització del Cacheo d'OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Opcións Específiques del Proveïdor
+### Opcións Específiques del Proveïdor {#provider-specific-options}
 
 Els diferents proveïdors tenen mecanismes de cacheo diferents:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Millores Pràctiques per a OpenRouter
+### Millores Pràctiques per a OpenRouter {#best-practices-for-openrouter}
 
 - **Conèixer el cacheo del vostre proveïdor**: Cada proveïdor té mecanismes diferents
 - **Provar el comportament del cacheo**: Verifiqueu que el cacheo funciona amb el proveïdor que hauràs de triar
 - **Monitoritzar els costos**: Fer un seguiment dels estalvis gràcies al cacheo
 - **Utilitzar models consistents**: Canviar de model rompega els hits de cache
 
-## Vertex Anthropic: Cacheo de Prompts amb Control de Cache
+## Vertex Anthropic: Cacheo de Prompts amb Control de Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) suporta el cacheo de prompts amb un control de cache explícit.
 
-### Configuració
+### Configuració {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Utilització del Cacheo Vertex Anthropic
+### Utilització del Cacheo Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Tipus de Control de Cache
+### Tipus de Control de Cache {#cache-control-types}
 
 - **ephemeral**: Cachear durant la durada de la sol·licitud (per defecte)
 - **persistent**: Cachear en diverses sol·licituds (si està suportat)
 
-### Monitorització de l'Ús del Cache
+### Monitorització de l'Ús del Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Millores Pràctiques per a Vertex Anthropic
+### Millores Pràctiques per a Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Utilitzar cacheo ephemeral**: Bon per a cacheo de sessió única
 - **Establir max_tokens adequadament**: Equilibri entre la mida del cache i el cost
 - **Monitoritzar les mètriques del cache**: Fer un seguiment de l'efectivitat del cache
 - **Provar amb la vostra càrrega de treball**: Verifiqueu que el cacheo beneficia el vostre cas d'ús
 
-## Estratègia de Cacheo Cross-Provider
+## Estratègia de Cacheo Cross-Provider {#cross-provider-caching-strategy}
 
-### Configuració Unificada
+### Configuració Unificada {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Detecta del Proveïdor
+### Detecta del Proveïdor {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Utilitzar la configuració de cacheo específica del proveïdor
 ```
 
-### Estratègia de Fallback
+### Estratègia de Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Optimització de Costos
+## Optimització de Costos {#cost-optimization}
 
-### Calcular Estalvis
+### Calcular Estalvis {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Consells d'Optimització
+### Consells d'Optimització {#optimization-tips}
 
 - **Cachear prompts de sistema grans**: Els grans estalvis de costos
 - **Reutilitzar context**: Cachear documents de context freqüentment utilitzats
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Monitoritzar l'efectivitat del cache**: Fer un seguiment dels estalvis reals
 - **Ajustar el TTL**: Equilibri entre el cost i la frescor
 
-## Solucionar Problemes
+## Solucionar Problemes {#troubleshooting}
 
-### El cache no s'està utilitzant
+### El cache no s'està utilitzant {#cache-not-being-used}
 
 - Verifiqueu que el cacheo estigui habilitat a la configuració
 - Comproveu que els prompts siguin idèntics (el cacheo requereix una coincidència exacta)
 - Verifiqueu que el cache no hagi expirat
 - Comproveu els límits de cache específics del proveïdor
 
-### Fallida la creació del cache
+### Fallida la creació del cache {#cache-creation-failing}
 
 - Verifiqueu que la mida del cache estigui dins dels límits del proveïdor
 - Comproveu que la sintaxi de `cache_control` sigui correcta
 - Assegureu-vos que el proveïdor suporti el cacheo per al vostre model
 - Reviseu la documentació del proveïdor per límits
 
-### Costos inesperats
+### Costos inesperats {#unexpected-costs}
 
 - Monitoritzeu els tokens de creació vs. lectura del cache
 - Verifiqueu que el cache està realment en ús
 - Comproveu si hi ha misses de cache a causa de variacions de prompts
 - Considerare ajustar el TTL o l'estratègia de cache
 
-## Comparativa de Proveïdors
+## Comparativa de Proveïdors {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Cost reduction | 90% | 90% | Dependent del proveïdor | 90% |
 | Monitoring | Detallat | Via mètriques | Dependent del proveïdor | Via usage |
 
-## Pròxims Passos
+## Pròxims Passos {#next-steps}
 
 1. **Triar el vostre proveïdor**: Seleccioneu en base a les vostres necessitats
 2. **Configurar el cacheo**: Configureu el cacheo específic del proveïdor

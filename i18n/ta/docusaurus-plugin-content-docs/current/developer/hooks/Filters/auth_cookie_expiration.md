@@ -4,11 +4,11 @@ title: வடிகட்டி - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 அங்கீகார குக்கீ காலாவதி எவ்வளவு காலம் நீடிக்கும் என்பதை இது கட்டுப்படுத்துகிறது.
 
-## அளவுருக்கள்
+## அளவுருக்கள் {#parameters}
 
 | பெயர் | வகை | விளக்கம் |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 | $user_id | `int` | பயனர் ஐடி. |
 | $remember | `bool` | பயனரின் உள்நுழைவை நினைவில் கொள்ள வேண்டுமா. இயல்புநிலை (Default) தவறு (false). |
 
-### எப்போது இருந்து
+### எப்போது இருந்து {#since}
 
 - 2.8.0
-### மூலம்
+### மூலம் {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) என்ற கோப்பில் 52 வரியில் வரையறுக்கப்பட்டுள்ளது.

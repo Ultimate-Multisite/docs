@@ -3,11 +3,11 @@ title: Pwodwi Domèn ak Pri
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Products ak Priprez
+# Domain Products ak Priprez {#domain-products-and-pricing}
 
 Domain products se pa ou kontwo kontrol priz, TLD yo, konfidans WHOIS, ak chwazi pwovizè w. Chak domain product se yon estanda Multisite Ultimate ki gen yon tab **Domain Settings** ekstrèm.
 
-## Kreye yon domain product
+## Kreye yon domain product {#creating-a-domain-product}
 
 1. Ale nan **Network Admin › Ultimate Multisite › Products**
 2. Klike sou **Add New**
@@ -17,13 +17,13 @@ Domain products se pa ou kontwo kontrol priz, TLD yo, konfidans WHOIS, ak chwazi
 
 Domain products yo parèt ak yon badge **Domain** violet nan lis pwodwi a epi ou ka filtre yo itilize tab **Domain Products**.
 
-## Tab Domain settings
+## Tab Domain settings {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Chwazi ki registratè k ap jere enskripsyon pou pwodwi sa a. Li default se **Default provider** global ki mete nan Domain Seller settings la.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Lèt ou ka kite anba pou kreye yon **catch-all product** ki aplike pou tout TLD yo ki pa koresponn ak lòt pwodwi.
 
@@ -31,7 +31,7 @@ Mete yon lis TLD ki separe pa virgule (egzanp: `.com, .net, .org`) pou kreye yon
 
 **Kijan matche pwodwi a fonksyone:** Lè yon kliyan chèche yon domain, addon la chwazi pwodwi ki pi espesifik ki koresponn. Yon pwodwi ki gen `.com` nan lis TLD li gen plis pouvwa pase yon catch-all product. Si pa gen okenn pwodwi ki koresponn ak yon TLD espesifik, catch-all la itilize. Si pa gen okenn pwodwi egziste, rechèch domain la p ap montre.
 
-### Markup type (Tip pou Pri)
+### Markup type (Tip pou Pri) {#markup-type}
 
 Twa mod kontrol kijan pri ritè ou kalkile soti nan kòst wholesale:
 
@@ -41,9 +41,9 @@ Twa mod kontrol kijan pri ritè ou kalkile soti nan kòst wholesale:
 | **Fixed markup** | Ajoute yon kantite dola fiks. Yon markup 5 dolè sou yon domain 10 dolè bay $15. |
 | **Fixed price** | Ignore kòst wholesale la nèt. Toujou chaje kantite ou mete a. |
 
-### Introductory pricing (Pri entwodiktwa)
+### Introductory pricing (Pri entwodiktwa) {#introductory-pricing}
 
-### Ki fè pwoteje WHOIS (WHOIS privacy)
+### Ki fè pwoteje WHOIS (WHOIS privacy) {#whois-privacy}
 
 Sa ki kontwole si nou ofri pwoteksyon WHOIS pou domèn yo ki reyegisye atravè pwofòp sa a.
 
@@ -57,7 +57,7 @@ Pou Namecheap, WHOIS privacy itilize WhoisGuard (toujou gratis). Pou OpenSRS, li
 
 ---
 
-## Import ak senkronizasyon TLD
+## Import ak senkronizasyon TLD {#tld-import-and-sync}
 
 Pwodwi domèn yo montre pri wholesale ki chanje an tan reyèl ki jwenn nan pwofòvè konekte a. Pou sa a fonksyone, TLD yo dwe importe.
 
@@ -68,7 +68,7 @@ Ap fè senkronizasyon an, ale nan tab Domain Settings pou nenpòt pwodwi domèn 
 
 ---
 
-## Rènman otomatik (Auto-renewal)
+## Rènman otomatik (Auto-renewal) {#auto-renewal}
 
 Rènman domèn yo gen rapò ak statistik manm kliyan an:
 
@@ -88,7 +88,7 @@ ID template imèl pou evènman sik domèn:
 
 ---
 
-## Admin: Anrejistre domain manèl
+## Admin: Anrejistre domain manèl {#admin-manual-domain-registration}
 
 Pou anrejistre yon domain nan non yon kliyan san yo pa pase etap checkout la:
 

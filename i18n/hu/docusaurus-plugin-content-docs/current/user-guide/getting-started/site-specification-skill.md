@@ -3,11 +3,11 @@ title: Weboldal specifikációs készség
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Oldal Adatleírás (Site Specification) Képesség
+# Oldal Adatleírás (Site Specification) Képesség {#site-specification-skill}
 
 Az **Oldal Adatleírás (Site Specification) képesség** egy strukturált megközelítés, amely rögzíti az oldal céljait, nézőkörét és márkaidentitását. Ezek az információk az **site_brief** memóriádba kerülnek, amelyet az agentek a tranzakciók során hivatkoznak rá, hogy konzisztens, kontextusérzékeny segítséget nyújtsanak.
 
-## Mi az Oldal Adatleírás?
+## Mi az Oldal Adatleírás? {#what-is-site-specification}
 
 Az Oldal Adatleírás a következő elemek dokumentálásának folyamata:
 
@@ -19,9 +19,9 @@ Az Oldal Adatleírás a következő elemek dokumentálásának folyamata:
 
 Ez az adatokegyüttes az **site_brief**-ed lesz, egy tartós memória, amelyet az agentek az oldal kontextusának megértéséhez használnak.
 
-## Miért használjuk az Oldal Adatleírást?
+## Miért használjuk az Oldal Adatleírást? {#why-use-site-specification}
 
-### Konszenz és Tranzakciók Között
+### Konszenz és Tranzakciók Között {#consistency-across-sessions}
 
 Nincs site_brief esetén minden új tranzakció elején újra kell magyaráznod az oldal célját. Ha van, az agentek azonnal értik:
 
@@ -30,7 +30,7 @@ Nincs site_brief esetén minden új tranzakció elején újra kell magyaráznod 
 - A tartalomstruktúrádat
 - Az üzleti céljaidat
 
-### Jobb Ajánlások
+### Jobb Ajánlások {#better-recommendations}
 
 Az agentek az site_brief-edet használják:
 
@@ -39,17 +39,17 @@ Az agentek az site_brief-edet használják:
 - Dizájnok javaslatára, amelyek konzisztensek a márkádhoz
 - Inkompatibilis funkciók elkerülésére
 
-### Gyorsabb Beindítás
+### Gyorsabb Beindítás {#faster-onboarding}
 
 Az új agentek (vagy az új tranzakciók során dolgozó agentek) gyorsan beindíthatják magukat, ha az site_brief-edet olvasják, és nem hogyíthatnak tisztázó kérdéseket.
 
-## Hogyan indítsuk el az Oldal Adatleírást?
+## Hogyan indítsuk el az Oldal Adatleírást? {#initiating-site-specification}
 
-### A Theme Builder Beindítási Folyamatában
+### A Theme Builder Beindítási Folyamatában {#during-theme-builder-onboarding}
 
 Az Oldal Adatleírás képesség automatikusan elindul a **Theme Builder onboarding flow** során. Az Setup Assistant agent kérdéseket tesz, és felépíti az site_brief-edet.
 
-### Manuális Indítás
+### Manuális Indítás {#manual-initiation}
 
 Bármikor elindíthatod az Oldal Adatleírást:
 
@@ -63,9 +63,9 @@ vagy
 "Segíts nekem létrehozni egy site brief-et"
 ```
 
-## Az Oldal Adatleírás Folyamata
+## Az Oldal Adatleírás Folyamata {#the-site-specification-process}
 
-### 1. Lépés: Oldal Célja
+### 1. Lépés: Oldal Célja {#step-1-site-purpose}
 
 Az agent kérdezi:
 
@@ -81,7 +81,7 @@ Mi az oldal elsődleges célja?
 
 Választhatsz egy kategóriát, vagy saját céljaidat írhatod le.
 
-### 2. Lépés: Célközönség
+### 2. Lépés: Célközönség {#step-2-target-audience}
 
 ```
 Ki a fő nézőköre?
@@ -94,7 +94,7 @@ Ki a fő nézőköre?
 Mi az ő fő szükséglete?
 ```
 
-### 3. Lépés: Márkaidentitás
+### 3. Lépés: Márkaidentitás {#step-3-brand-identity}
 
 ```
 Mi a márka színeid?
@@ -110,7 +110,7 @@ Hogyan írír le a márka hangnemét?
 - Meleg / barátságos
 ```
 
-### 4. Lépés: Üzleti Célok
+### 4. Lépés: Üzleti Célok {#step-4-business-goals}
 
 ```
 Mi jelenti a sikerrel az oldal számára?
@@ -129,7 +129,7 @@ Mi az elsődleges mérőszámod?
 - Más
 ```
 
-### 5. Lépés: Tartalomstruktúra
+### 5. Lépés: Tartalomstruktúra {#step-5-content-structure}
 
 ```
 Hogyan van rendezve a tartalom?
@@ -148,7 +148,7 @@ Milyen tartalomtípusokat használsz?
 - Más
 ```
 
-## Az site_brief Memóriád
+## Az site_brief Memóriád {#your-sitebrief-memory}
 
 Az Oldal Adatleírás elvégzése után az információid az **site_brief**ként kerülnek az agent memóriádba. Ez egy strukturált rekord, amely tartalmazza:
 
@@ -169,9 +169,9 @@ Az Oldal Adatleírás elvégzése után az információid az **site_brief**ként
 }
 ```
 
-## Az site_brief Megtekőzése és Frissítése
+## Az site_brief Megtekőzése és Frissítése {#viewing-and-updating-your-sitebrief}
 
-### Megtekintés az site_brief-edet
+### Megtekintés az site_brief-edet {#view-your-sitebrief}
 
 Kérdezd meg az agentet:
 
@@ -187,7 +187,7 @@ vagy
 
 Az agent megjeleníti az elmentett adatleírásodat.
 
-### Frissítés az site_brief-edet
+### Frissítés az site_brief-edet {#update-your-sitebrief}
 
 Ha az oldald évolúciósan változik, frissítheted:
 
@@ -203,9 +203,9 @@ vagy
 
 Ez újra futtatja az Oldal Adatleírás képességét az aktuális információidat kiindulópontként használva.
 
-## Hogyan használják az agentek az site_brief-et?
+## Hogyan használják az agentek az site_brief-et? {#how-agents-use-sitebrief}
 
-### Dizájn Ajánlások
+### Dizájn Ajánlások {#design-recommendations}
 
 Amikor dizájnváltozásokat kérsz, az agentek az site_brief-edet használják:
 
@@ -216,7 +216,7 @@ meleg, kézműves hangnemet célozva, olyan dizájnnal fogok dolgozni,
 amely hangsúlyozza a kézműves ékszereidet és a fenntartható értékeket."
 ```
 
-### Funkciók Javaslatai
+### Funkciók Javaslatai {#feature-suggestions}
 
 Az agentek olyan funkciókat javaslanak, amelyek összhangban vannak a céljaiddal:
 
@@ -227,7 +227,7 @@ lojalitási programot, ügyfél véleményeket, e-mail hírlevelet és
 termékajánlásokat."
 ```
 
-### Tartalomstruktúra
+### Tartalomstruktúra {#content-structure}
 
 Az agentek a struktúrád alapján javasolnak tartalomrendezést:
 
@@ -238,16 +238,16 @@ a termék kategóriája szerint rendezd, és hozz létre 'stílusalkotó útmuta
 amiket több terméket együtt mutatnak be."
 ```
 
-## Legjobb Gyakorlatok
+## Legjobb Gyakorlatok {#best-practices}
 
-### Látósság legyél
+### Látósság legyél {#be-specific}
 
 Ne csak "általános közönség" legyen, íradd le a tényleges nézőköreidet:
 
 - ✓ "25-45 éves nők, akik érdeklődnek a fenntartható divat iránt"
 - ✗ "Össéhárom"
 
-### Frissítsd rendszeresen
+### Frissítsd rendszeresen {#update-regularly}
 
 Ahogy az oldald fejlődik, frissítsd az site_brief-edet:
 
@@ -256,14 +256,14 @@ Ahogy az oldald fejlődik, frissítsd az site_brief-edet:
 - Ha változik a márkaidentitásod
 - Ha változnak az üzleti céljaid
 
-### Használj konzisztens terminológiát
+### Használj konzisztens terminológiát {#use-consistent-terminology}
 
 Használj ugyanazokat a kifejezéseket a tranzakciók során:
 
 - ✓ Mindig mondd "fenntartható ékszerek" (nem "környezetbarát ékszerek" és "zöld termékek")
 - ✓ Mindig ugyanúgy utaladd a nézőköreidre
 
-### Add kontextust
+### Add kontextust {#include-context}
 
 Ad olyan háttérinformációt, amely segít az agenteknek megérteni döntéseidet:
 
@@ -271,7 +271,7 @@ Ad olyan háttérinformációt, amely segít az agenteknek megérteni döntései
 - "A nézőköreink technológiailag fejlettek, és modern dizájnt várnak el"
 - "Egy kiinduló startup vagyunk, így költséghatékony megoldásokra van szükségünk"
 
-## Kapcsolata a Theme Builder Beindítási Folyamattal
+## Kapcsolata a Theme Builder Beindítási Folyamattal {#relationship-to-theme-builder-onboarding}
 
 Az Oldal Adatleírás képesség az **Theme Builder onboarding flow**-hoz integrálva. Amikor befejezed az onboarding-ot, az site_brief-ed automatikusan létrehozásra kerül az általad megadott információkkal.
 
@@ -281,7 +281,7 @@ Ha szeretnéd, függetlenül is futathatod az Oldal Adatleírást:
 - Ha frissíteni szeretnéd az site_brief-edet az oldald fejlődésével párhuzamra
 - Ha részletes adatleírást szeretnél létrehozni, még mielőtt elkezdenéd a Theme Builder-t
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
 **Az site_brief-em nem használják**
 - Kérlek visszaigazolni, hogy az agentnek van hozzáférés a memóriához
@@ -297,7 +297,7 @@ Ha szeretnéd, függetlenül is futathatod az Oldal Adatleírást:
 - Frissítsd az site_brief-edet, ha elavult
 - Ad hozzá további kontextust a kéréseidhez
 
-## Következő Lépések
+## Következő Lépések {#next-steps}
 
 Az oldal adatleírását meghatározása után:
 

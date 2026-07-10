@@ -1,17 +1,21 @@
 ---
 title: Hantera betalningar och fakturor
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Hantera betalningar och fakturor
+# Hantera betalningar och fakturor {#managing-payments-and-invoices}
 
-## Betalningsinställningar
+## Betalningsinställningar {#payment-settings}
 
 Innan du börjar ta emot betalningar behöver du konfigurera de betalningsrelaterade inställningarna. Gå till **Ultimate Multisite → Inställningar** och klicka på fliken **Betalning**.
 
-![Fliken för betalningsinställningar](/img/admin/settings-payments-top.png)
+![Flik för betalningsinställningar](/img/admin/settings-payments-top.png)
 
-### Allmänna betalningsalternativ
+Här är en fullständig vy av sidan för betalningsinställningar:
+
+![Fullständig sida för betalningsinställningar](/img/admin/settings-payments-full.png)
+
+### Allmänna betalningsalternativ {#general-payment-options}
 
 I de allmänna inställningarna kan du konfigurera:
 
@@ -20,7 +24,7 @@ I de allmänna inställningarna kan du konfigurera:
 
 ![Inställningar för betalningsgateway](/img/admin/settings-payments-options.png)
 
-### Betalningsgateways
+### Betalningsgateways {#payment-gateways}
 
 Ultimate Multisite stöder flera betalningsgateways. Du kan aktivera och konfigurera var och en från fliken Betalningsinställningar.
 
@@ -28,36 +32,36 @@ Ultimate Multisite stöder flera betalningsgateways. Du kan aktivera och konfigu
 
 Tillgängliga gateways inkluderar:
 
-- **Stripe** — Kortbetalningar via Stripe
+- **Stripe** — Kreditkortsbetalningar via Stripe
 - **PayPal** — PayPal-betalningar
-- **Manuell** — För offline- eller anpassad betalningshantering
+- **Manual** — För offlinebetalningar eller anpassad betalningshantering
 
 Varje gateway har sin egen konfigurationssektion där du anger API-nycklar och andra inställningar.
 
-![Ytterligare gateway-inställningar](/img/admin/settings-payments-gateways-2.png)
+![Ytterligare gatewayinställningar](/img/admin/settings-payments-gateways-2.png)
 
-### Sandlådeläge
+### Sandbox-läge {#sandbox-mode}
 
-Du kan aktivera **Sandlådeläge** för att testa din betalningsintegration innan du går live. När sandlådeläget är aktivt görs inga riktiga debiteringar.
+Du kan aktivera **Sandbox-läge** för att testa din betalningsintegration innan du går live. När sandbox-läget är aktivt görs inga riktiga debiteringar.
 
-## Visa betalningar
+## Visa betalningar {#viewing-payments}
 
 Gå till sidan **Betalningar** under Ultimate Multisite för att se alla transaktioner i ditt nätverk.
 
 ![Betalningslista](/img/admin/payments-list.png)
 
-Du kan filtrera betalningar efter status (genomförda, väntande, misslyckade, återbetalade) och söka efter specifika transaktioner.
+Du kan filtrera betalningar efter status (slutförda, väntande, misslyckade, återbetalda) och söka efter specifika transaktioner.
 
-Klicka på en betalning för att se alla detaljer inklusive radposter, kopplat medlemskap, kundinformation och data från betalningsgatewayen.
+Klicka på en betalning för att se dess fullständiga detaljer, inklusive radposter, associerat medlemskap, kundinformation och data från betalningsgateway.
 
-## Fakturor
+## Fakturor {#invoices}
 
 Ultimate Multisite kan automatiskt generera fakturor för betalningar. Du kan anpassa fakturamallen och numreringsformatet från betalningsinställningarna.
 
-Anpassningsalternativ för fakturor inkluderar:
+Alternativ för fakturaanpassning inkluderar:
 
 - **Företagsnamn och adress** som visas på fakturor
-- **Fakturanumrering** — format och sekvens
+- **Fakturanumrering** format och sekvens
 - **Logotyp** som visas i fakturahuvudet
 - **Anpassad sidfotstext** för villkor, anteckningar eller juridisk information
 

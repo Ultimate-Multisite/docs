@@ -3,7 +3,7 @@ title: Comunitate
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Cum să te alături comunității Ultimate Multisite
+# Cum să te alături comunității Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Comunitatea Ultimate Multisite este un spațiu unde poți intra în contact cu alți utilizatori Ultimate Multisite și poți împărtăși sfaturi, experiențe și multe altele. Pentru a accesa comunitatea Ultimate Multisite, mergi la https://community.ultimatemultisite.com/home.
 

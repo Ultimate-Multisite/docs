@@ -3,13 +3,13 @@ title: Membangun Integrasi Registrar Kustom
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Membuat Integrasi Registrar Kustom
+# Membuat Integrasi Registrar Kustom {#building-a-custom-registrar-integration}
 
 Addon Domain Seller menggunakan pola **Integration Registry**. Setiap registrar adalah kelas PHP yang mengimplementasikan `Domain_Selling_Capability` dan mendaftarkan dirinya melalui *action hook* `wu_domain_seller_register_capabilities`.
 
 Panduan ini menunjukkan cara menghubungkan registrar kustom Anda.
 
-## Antarmuka (The interface)
+## Antarmuka (The interface) {#the-interface}
 
 Kelas Anda harus mengimplementasikan `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` dan memperluas (extend) `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Metode Opsional
+### Metode Opsional {#optional-methods}
 
 Implementasikan metode ini untuk membuka fitur tambahan. Addon mendeteksi dukungan melalui `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementasikan metode ini untuk membuka fitur tambahan. Addon mendeteksi dukung
 | `get_epp_code(string $domain_name): array` | Transfer domain (keluar) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfer domain (masuk) |
 
-### Konvensi Nilai Kembalian (Return value convention)
+### Konvensi Nilai Kembalian (Return value convention) {#return-value-convention}
 
 Semua metode mengembalikan array dengan kunci `success` minimal:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Pesan error yang mudah dibaca'];
 
 ---
 
-## Mendaftarkan Kemampuan Anda (Registering your capability)
+## Mendaftarkan Kemampuan Anda (Registering your capability) {#registering-your-capability}
 
 Daftarkan kelas Anda menggunakan *action* `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argumen pertama pada `add_capability()` adalah **provider ID** — *slug* huruf 
 
 ---
 
-## Menambahkan Bidang Kredensial ke Wizard
+## Menambahkan Bidang Kredensial ke Wizard {#adding-credential-fields-to-the-wizard}
 
 Untuk memungkinkan admin memasukkan kredensial melalui *setup wizard*, daftarkan integrasi Anda:
 
@@ -137,7 +137,7 @@ Kredensial disimpan sebagai *network options* menggunakan ID bidang sebagai kunc
 
 ---
 
-## Hooks untuk Aksi Pasca-Pendaftaran
+## Hooks untuk Aksi Pasca-Pendaftaran {#hooks-for-post-registration-actions}
 
 Gunakan *action* ini untuk memicu *webhook*, *provisioning*, notifikasi, atau pembaruan CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Pencatatan (Logging)
+## Pencatatan (Logging) {#logging}
 
 Tulis ke saluran log spesifik provider Anda menggunakan `wu_log_add()`:
 

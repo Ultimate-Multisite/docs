@@ -3,7 +3,7 @@ title: Изменения в Mailchimp
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Журнал на промените на Mailchimp
+# Журнал на промените на Mailchimp {#mailchimp-changelog}
 
 Версия: 1.1.1 - Публикувана на 2025-09-28
 

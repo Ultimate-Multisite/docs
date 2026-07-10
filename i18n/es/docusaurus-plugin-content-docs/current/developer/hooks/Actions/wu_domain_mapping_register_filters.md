@@ -8,17 +8,17 @@ Algunos plugins guardarán la URL antes de que la asignación estuviera activa o
 
 En casos como ese, queremos agregar filtros adicionales. El segundo parámetro pasado es el callback mangle_url. Recomendamos no usar este filtro directamente. En su lugar, use el método Domain_Mapping::apply_mapping_to_url.
 
-## Parameters
+## Parameters {#action-wudomainmappingregisterfilters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
 | $mangle_url | `callable` | El callable de mangle. |
 | $domain_mapper | `self` | Este objeto. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
 
-### Source
+### Source {#since}
 
 Definido en [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L530) en la línea 530

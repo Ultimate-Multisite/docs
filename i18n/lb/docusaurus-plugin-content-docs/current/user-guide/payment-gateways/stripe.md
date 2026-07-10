@@ -3,19 +3,19 @@ title: Stripe iistelle
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Inrichte de Stripe Gateway (v2)
+# Inrichte de Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**WICHTIGE NOTIERE: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 
 Dir chönnt bis zu vier Zahlamethoden uf de Pagé "Payment Settings" aktiveren: Stripe, Stripe Checkout, PayPal und Manuell. In dësem Artikel gsehnd mir, wéi mer mit **Stripe** integriert.
 
-## Stripe aktiveren
+## Stripe aktiveren {#enabling-stripe}
 
 Um Stripe als verfügbare Zahlamethode uf irem Netz z'aktiveren, gaet op **Ultimate Multisite > Settings > Payments** und setz de Schalter neche **Stripe** oder **Stripe Checkout** im Abschnitt "Active Payment Gateways" a.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Dëse Methode wäert en Platz zezeig, wou d'Kreditkardnummer i de Checkout iifloessen kann.
 
@@ -47,7 +47,7 @@ Kopiere de Wert us em Feld **Publishable key** und **Secret key**, us de Spalte 
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook iistelle
+## Stripe Webhook iistelle {#setting-up-stripe-webhook}
 
 Stripe schickt webhook-Events, wo Ultimate Multisite informiere, sobald öppis uf **Ihrem stripe-Konto** passiert.
 

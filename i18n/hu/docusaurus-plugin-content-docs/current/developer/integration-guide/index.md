@@ -1,15 +1,17 @@
 ---
 title: Integrációs útmutató
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrációs útmutató
+# Integrációs útmutató {#integration-guide}
 
-Az útmutató áttekinti az Ultimate Multisite általános integrációs mintáit, beleértve az külső szolgáltatásokhoz való csatlakozást, a saját fizetési kapuképítését, valamint a webhook kezelést.
+Ez az útmutató az Ultimate Multisite gyakori integrációs mintáit mutatja be, beleértve a külső szolgáltatásokhoz való csatlakozást, az egyéni fizetési gateway-ek építését és a webhookok kezelését.
 
-## CRM Integráció
+Izolált bérlői infrastruktúrához lásd: [Multi-Tenancy integráció](./multi-tenancy) a szuverén bérlő bootstrapelésére, migrációs ellenőrzésére, SSO-jára és lebontási útmutatására vonatkozóan.
 
-Szinkronitza az ügyféladatokat az Ön CRM-jében, amikor új ügyfelek regisztrálnak:
+## CRM-integráció {#crm-integration}
+
+Szinkronizáld az ügyféladatokat a CRM-edbe, amikor új ügyfelek regisztrálnak:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analitika Integráció
+## Analitikai integráció {#analytics-integration}
 
-Követje nyomon az üzleti események kulcsait az ügyfél teljes életciklusán keresztül:
+Kövesd nyomon a kulcsfontosságú üzleti eseményeket az ügyfél-életciklus során:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Következő lépések
+## Következő lépések {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Önálló fizetési kapuépítés
-- [Webhook Handling](./webhooks) — Saját webhook endpoint-ek létrehozása
+- [Egyéni gateway-fejlesztés](./custom-gateway) — Építsd meg a saját fizetési gateway-edet
+- [Webhook-kezelés](./webhooks) — Hozz létre egyéni webhook endpointokat
+- [Multi-Tenancy integráció](./multi-tenancy) — Integráld a szuverén bérlő életciklus-folyamataival

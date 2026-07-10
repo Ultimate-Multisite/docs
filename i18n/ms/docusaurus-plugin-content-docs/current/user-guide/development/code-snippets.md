@@ -3,7 +3,7 @@ title: Coretan Kod
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Coretan Kod untuk v2
+# Coretan Kod untuk v2 {#code-snippets-for-v2}
 
 Pada dasarnya, coretan kod untuk **WordPress** digunakan untuk melakukan tindakan tertentu yang mungkin memerlukan plugin kecil khusus. Coretan kod seperti ini diletakkan dalam salah satu fail teras WordPress atau fail tema (kebiasaannya fail functions.php tema anda) atau ia boleh digunakan sebagai MU plugin.
 
@@ -15,13 +15,13 @@ Dalam artikel ini kami akan tunjukkan tiga coretan kod yang boleh digunakan deng
 
   * [**Membetulkan isu CORS dengan Font-Icon dalam domain yang dipetakan**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Menukar kedudukan item menu Akaun
+## Menukar kedudukan item menu Akaun {#changing-the-position-of-the-account-menu-item}
 
 Untuk menukar kedudukan item menu Akaun pada Dashboard pelanggan anda, tambahkan coretan kod berikut ke dalam functions.php tema aktif laman utama anda. Anda juga boleh meletakkan coretan ini dalam salah satu mu-plugins atau plugin tersuai anda.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Ubah nilai ini untuk meletakkan menu pada kedudukan yang dikehendaki.
 
-## Cara menyemak sama ada pengguna berada dalam pelan tertentu dan/atau mempunyai langganan aktif
+## Cara menyemak sama ada pengguna berada dalam pelan tertentu dan/atau mempunyai langganan aktif {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Sebagai pentadbir rangkaian, anda mungkin perlu mencipta fungsi tersuai yang akan melakukan tindakan asas atau menyediakan perkhidmatan/ciri kepada kumpulan pelanggan atau pengguna akhir yang terpilih, berdasarkan status langganan mereka dan pelan yang mereka langgan.
 
@@ -47,8 +47,8 @@ Ambil perhatian bahawa pengguna hanya boleh melanggan **Plan**, bukan Package at
 
 ![Senarai produk menunjukkan ID pelan](/img/admin/products-list.png)
 
-## Membetulkan isu CORS dengan Font-Icon dalam domain yang dipetakan
-## Membetulkan isu CORS dengan Font-Icon dalam domain yang dipetakan
+## Membetulkan isu CORS dengan Font-Icon dalam domain yang dipetakan {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Membetulkan isu CORS dengan Font-Icon dalam domain yang dipetakan {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Selepas memetakan domain ke sub-site, anda mungkin mendapati laman tersebut menghadapi masalah memuat font tersuai. Ini disebabkan oleh sekatan cross-origin pada tetapan pelayan anda.
 
@@ -56,13 +56,13 @@ Memandangkan fail font hampir selalu dimuat terus dari CSS, plugin pemetaan doma
 
 Di bawah adalah coretan kod untuk membetulkan isu ini bagi Apache dan NGINX. Perubahan ini memerlukan pengetahuan lanjutan tentang fail konfigurasi pelayan (fail .htaccess dan fail konfigurasi NGINX). Jika anda tidak selesa untuk membuat perubahan ini sendiri, hantar halaman ini kepada ejen sokongan penyedia hosting anda apabila meminta bantuan.
 
-### Apache
+### Apache {#apache}
 
 Pada fail .htaccess anda, tambahkan:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 Pada fail konfigurasi pelayan anda (lokasi berbeza mengikut pelayan), tambahkan:
 

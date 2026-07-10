@@ -1,0 +1,33 @@
+---
+id: wu_sso_url
+title: ตัวกรอง - wu_sso_url
+sidebar_label: wu_sso_url
+_i18n_hash: a369dcf0f4cab1f5941c82ac58286155
+---
+# Filter: wu_sso_url {#filter-wussourl}
+
+กรอง URL ของ SSO ที่สร้างขึ้นก่อนส่งคืนสำหรับการดำเนินการของลูกค้าข้ามโดเมน
+
+ใช้ filter นี้เมื่อการผสานการทำงานจำเป็นต้องเพิ่มบริบทที่เชื่อถือได้ให้กับลิงก์ SSO ของผู้เช่าแบบ sovereign หรือแทนที่ URL ของ broker โดยยังคงการตรวจสอบ token ของ Ultimate Multisite ไว้
+
+## พารามิเตอร์ {#parameters}
+
+| ชื่อ | ประเภท | คำอธิบาย |
+|------|------|-------------|
+| $sso_url | `string` | URL ของ SSO ที่สร้างขึ้น |
+| $user | `WP_User` | ผู้ใช้ที่จะได้รับการยืนยันตัวตนโดยการเข้าชม SSO |
+| $site_id | `int` | ID ของ site เป้าหมายสำหรับการเข้าชม |
+| $redirect_to | `string` | URL ปลายทางหลังจากการตรวจสอบ SSO สำเร็จ |
+
+### ตั้งแต่ {#since}
+
+- 2.13.0
+
+### แหล่งที่มา {#source}
+
+กำหนดไว้ใน `inc/sso/class-sso.php`
+
+
+## ส่งคืน {#returns}
+
+URL ของ SSO ที่ผ่านการกรองแล้ว.

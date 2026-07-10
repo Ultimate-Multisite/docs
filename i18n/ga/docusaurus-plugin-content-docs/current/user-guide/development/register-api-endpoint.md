@@ -3,7 +3,7 @@ title: Réigiú Endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Anail API register de Ultimate Multisite
+# Anail API register de Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Iar seo, fará tú a bhealach a bhfaidh tú a úsáid an endpoint /register API de Ultimate Multisite chun an cur chuig an tús (onboarding process) ar fáil do chuid oibre ina ngrú agus conairt é go dtí Zapier.
 
@@ -29,11 +29,11 @@ Déan chun **Enable API** a chur ar fáil agus gníomhfaidh do chreachtais API.
 
 Ansin, leat é seo a sholáir an endpoint agus ansin cur cur chuig registration i Zapier.
 
-## Parámeteí bodsa an endpoint
+## Parámeteí bodsa an endpoint {#endpoint-body-parameters}
 
 Leat é seo a bheith ag cur fáil ar an fhorchas na méidteacha mínteacha a bheith ag cur isteach ar an endpoint. Ag deireadh an ardán seo, beidh tú ag cur fáil ar an cur chuig.
 
-### Customer
+### Customer {#customer}
 
 Is é seo an fhorchas a bhaineann le cur chuig an cur úr (User) agus an Cur oibre Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Is féidir leat curteáil an ID oileúsa atá ag an t-net. Má níl aon cheannac
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 An t-aon chuid fhorbairt ag anseo ag curteáil a mór cheannach.
 
 "membership" { "status" : "string", // aon dearcach mar "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Is dócha, tá ar chuid fhorbairt ag curteáil a mór ID oileúsa 1 nó níos mó ó an t-net. Déan tú ag curteáil, níl an endpoint seo a chur i bhfeidm. Déan tú léamh an dóciméad Ultimate Multisite chun an endpoint curteála a bheith agat ar fáil.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Mar chuid Membership, tá an status ag curteáil ag curteáil ag anseo.
 
 **"payment" { "status" : "string", // aon dearcach mar "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Agus chun an chuid a deireadh, tá an URL agus an Titíl an t-site ag curteáil.
 
@@ -69,13 +69,13 @@ Agus chun an chuid a deireadh, tá an URL agus an Titíl an t-site ag curteáil.
 
 Beidh an curtas an register ag teacht ar fhorbairt a bhí curteála nua a chur i bhfeidm.
 
-## Curteáil iontaí i Zapier
+## Curteáil iontaí i Zapier {#creating-an-action-in-zapier}
 
 Le curteáil nua agus níos foirmeacha seo, beidh tú ag curteáil nua i Zapier.
 
 An bhfuil tú ag iarraidh a bheith ag úsáid an curtas nua dearcach a chur i bhfeidm? Déan tú léamh anseo. (link?)
 
-### Curteáil iontaí
+### Curteáil iontaí {#creating-an-action}
 
 Le linn é a chur chun cinn conas a bheith le point endpoint a úsáid le Zapier, roinnt intéaracht le Google Forms a cheartáimid. Mar chuid is gcurtha an fómhar seo agus is againn an t-aithris ag cur isteach an t-aithris i bhfáine an fómhar, beidh nua chuid ar chuid i ngníomhaithe i ngrúpa Ultimate Multisite.
 
@@ -103,7 +103,7 @@ Le linn atáirítear an fada, déan an test final. Ar an chuid féin a fheiceái
 
 Test an Zap nua agat agus is féidir é a deán go guthúil. Má tá aon cheangail as an t-am, léigh gach feidm agus an bhfuil siad ag cur isteach go ceart. Mar go bhfuil go leor fáil ar fáil, is féidir leis rud éigin a bheith ag iarraidh an t-am.
 
-### Parametraí an endpoint go léir
+### Parametraí an endpoint go léir {#complete-endpoint-parameters}
 
 Seo an cur chuig agus gach sprioc a bhaineann leis na feidm a bhí ag cur isteach.
 

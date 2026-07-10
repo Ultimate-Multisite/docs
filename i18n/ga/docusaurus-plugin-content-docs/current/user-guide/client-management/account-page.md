@@ -3,7 +3,7 @@ title: Lástáil Áite An t-Aontaithe
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Páirc Áite an Account na Dochtair (v2)
+# Páirc Áite an Account na Dochtair (v2) {#your-clients-account-page-v2}
 
 _**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Nuair a gníomhfaidh na custaimeracha ar plan ar chuid deacair, tá si ag iarrai
 
 Iarráid ár gcurte seo leis an páirc áite an account agus beidh tú ag fheiceáil a bhfaidh na custaimeracha a bheith ag iarraidh agus a dhéanamh iad ar an sin.
 
-## An Páirc Áite (The Account Page)
+## An Páirc Áite (The Account Page) {#the-account-page}
 
 Is féidir an páirc áite a fáil ag cur chuim ar **Account** sa chuid dashboard na custaimercha.
 
@@ -27,7 +27,7 @@ Tar éis lá mór ar chuid a bhfaidh an custaimer ag cur chuim ar é, beidh siad
 
 Is féidir leo hefyd a bheith ag athrú an oibríochta go dtí plan eile, nó a fáil ar chuid package nó seirbhís eile a chur ar fáil duit. Déanannám cur isteach ar chuid each section ar an sin.
 
-### Oibríocht Membership Your:
+### Oibríocht Membership Your: {#your-membership-overview}
 
 An bloc céanna leat an cur sin ar an bhfáthach de do chuidisteoirí chuimhneacháin a bhfaidh sé a sholláint an plan agus na seirbhísí/pacsanna a bhí ag fáil leis. Taispeannas seo a tháir go bhfuil an n-numbair membership, an t-amastair a bhí ag fáil ar an chuid is amháin, conas a bhíonn an plan agus na seirbhísí/pacsanna ag teacht, agus conas a bhí ag fáil ar an membership seo. Is féidir leis siad hefyd fheiceáil má tá an membership **Active** (Actif), **Expired** (Céadta) nó **Canceled** (Céadta) agat.
 
@@ -43,7 +43,7 @@ Anois, má thógáil do chuidisteoirí pacaicanna nó seirbhísí ar an membersh
 
 Is é an t-amhas go bhfuil code coupon (coupon codes) ní féidir a chomhrianú ar an cur sin membership change page. Má thógáil do chuidisteoirí code coupon ar an chur sin fáil, beidh an code seo ag teacht ar an membership nua seo freisin.
 
-### Athrú An Amastair Bhill (Updating the Billing Address):
+### Athrú An Amastair Bhill (Updating the Billing Address): {#updating-the-billing-address}
 
 Ar an cur sí ar chontail, leat éigin a bheith ag athrú ar an chéad lá. Mar sin féin, leat éigin a bheith ag athrú ar an cheannas de bhalla. Tá sé go bhfuil sé ag fáil ar an seachtain.
 
@@ -53,7 +53,7 @@ Beidh cur chuimneach nua ag teacht ar chuid cur chuimneach agat. Beidh sé ag f�
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Athrú ar an Teampad Site:
+### Athrú ar an Teampad Site: {#changing-the-site-template}
 
 Le linn a bheith ag fáil ar athrú ar an teampad site, leat éigin a bheith ag cur isteach i **Ultimate Multisite > Settings > Sites** agus a chruinneadh ar an option **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Tar éis a chur in iúl an ciallaidh agus a chluin ar **Process Switch**, beidh 
 
 Is féidir leis na custaimeracha a bheith ag úsáid **Reset current template** ó seo chun an websaite ar ais a chur ar an ttempladaite atá ag teacht chun cinn. Mar chomh maith le athrú go dtí templadaite eile, is féidir leat an ttempladaite a riosca, mar sin caithfidh na custaimeracha é a chur in iúl nuair a bhíonn siad ag fáil ar an cur isteach an athrú.
 
-### Áirítear domáin a chuidistriú:
+### Áirítear domáin a chuidistriú: {#adding-custom-domains}
 
 Beidh tuairiscíocht leat chun domán a chuidistriú a bheith agat ar an plan seo ar an cur isteach de do custaimeracha ar an cur isteach. Leat a bheith ag iarraidh na custaimeracha a úsáid domáin a chuidistriú, go dtí **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -117,7 +117,7 @@ Tar éis a chluin ar **Next Step**, is féidir leis na oileúin a chur in iúl d
 
 Tar éis a chluin ar **Add Domain**, beidh an domán ag cur isteach i bhfíomhaid an account do na oileúin. Is é sin an t-amais atá a bheith ag cur in iúl acu: athrú faoi-chuid DNS records domáin a bhaineann leis an plan ar an registrar domáin do chuid.
 
-### Athrú Pásword:
+### Athrú Pásword: {#changing-password}
 
 Ar an cur dashboard account, is féidir leat a chur in iúl duit a phásword athrú ag cur isteach ar **Change Password**.
 
@@ -127,7 +127,7 @@ Bíonn sé ag sithiú noutach a chuireann an ghluthaithe ar fáil, a bhfáineada
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Eolas an t-Árann:
+### Eolas an t-Árann: {#danger-zone}
 
 Tá linn de dhá oiriúnas atá ag sithiú nua ar an **Eolas an t-Árann** (Danger Zone): **Déan Site** agus **Déan Account**. Tá na hiontaí seo ar an Eolas an t-Árann mar is éasta seo a bheith agat chun na sonraí a dhéanamh. Mar chuid de dhá ábhair seo, ní féidir an t-aonach seo a chruthú go léir. Má leagan do chuidisteoirí a site nó an account, ní féidir iad é a roinnt arís.
 

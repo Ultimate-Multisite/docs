@@ -3,11 +3,11 @@ title: Site Özellik Becerisi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Site Spesifikasyonu Yeteneği
+# Site Spesifikasyonu Yeteneği {#site-specification-skill}
 
 **Site Spesifikasyonu yeteneği**, sitenizin hedeflerini, hedef kitlesini ve marka kimliğini yakalamak için yapılandırılmış bir yaklaşımdır. Bu bilgiler, **site_brief** belleğinizde saklanır ve ajanlar, tutarlı, bağlama duyarlı yardım sağlamak için oturumlar boyunca bu belleğe başvurur.
 
-## Site Spesifikasyonu Nedir?
+## Site Spesifikasyonu Nedir? {#what-is-site-specification}
 
 Site Spesifikasyonu, aşağıdaki unsurları belgelemek sürecidir:
 
@@ -19,9 +19,9 @@ Site Spesifikasyonu, aşağıdaki unsurları belgelemek sürecidir:
 
 Bu spesifikasyon, ajanların sitenizin bağlamını anlamak için kullandığı kalıcı bir bellek olan **site_brief** haline gelir.
 
-## Site Spesifikasyonu Neden Kullanılmalı?
+## Site Spesifikasyonu Neden Kullanılmalı? {#why-use-site-specification}
 
-### Oturumlar Arası Tutarlılık
+### Oturumlar Arası Tutarlılık {#consistency-across-sessions}
 
 site_brief olmadan, her yeni oturum başlattığınızda sitenizin amacını yeniden açıklamanız gerekir. site_brief ile ise ajanlar hemen şunları anlar:
 
@@ -30,7 +30,7 @@ site_brief olmadan, her yeni oturum başlattığınızda sitenizin amacını yen
 - İçerik yapınız
 - İş hedefleriniz
 
-### Daha İyi Öneriler
+### Daha İyi Öneriler {#better-recommendations}
 
 Ajanlar, site_brief'inizi kullanarak şunları yapar:
 
@@ -39,17 +39,17 @@ Ajanlar, site_brief'inizi kullanarak şunları yapar:
 - Markanızla tutarlı tasarımlar önerir
 - Uyumsuz özellikler önermekten kaçınır
 
-### Daha Hızlı Öğrenme Süreci
+### Daha Hızlı Öğrenme Süreci {#faster-onboarding}
 
 Yeni ajanlar (veya yeni oturumlardaki ajanlar), açıklayıcı sorular sormak yerine site_brief'inizi okuyarak hızla adapte olabilirler.
 
-## Site Spesifikasyonunu Başlatma
+## Site Spesifikasyonunu Başlatma {#initiating-site-specification}
 
-### Theme Builder Onboarding Sırasında
+### Theme Builder Onboarding Sırasında {#during-theme-builder-onboarding}
 
 Site Spesifikasyonu yeteneği, **Theme Builder onboarding akışı** sırasında otomatik olarak başlatılır. Setup Assistant ajanı sorular sorar ve site_brief'inizi oluşturur.
 
-### Manuel Başlatma
+### Manuel Başlatma {#manual-initiation}
 
 Site Spesifikasyonunu istediğiniz zaman başlatabilirsiniz:
 
@@ -63,9 +63,9 @@ veya
 "Help me create a site brief"
 ```
 
-## Site Spesifikasyonu Süreci
+## Site Spesifikasyonu Süreci {#the-site-specification-process}
 
-### Adım 1: Site Amacı
+### Adım 1: Site Amacı {#step-1-site-purpose}
 
 Ajan sorar:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Bir kategori seçebilir veya kendi amacınızı açıklayabilirsiniz.
 
-### Adım 2: Hedef Kitle
+### Adım 2: Hedef Kitle {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Adım 3: Marka Kimliği
+### Adım 3: Marka Kimliği {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Adım 4: İş Hedefleri
+### Adım 4: İş Hedefleri {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Adım 5: İçerik Yapısı
+### Adım 5: İçerik Yapısı {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## site_brief Belleğiniz
+## site_brief Belleğiniz {#your-sitebrief-memory}
 
 Site Spesifikasyonunu tamamladıktan sonra, bilgileriniz ajan belleğinizde **site_brief** olarak saklanır. Bu, aşağıdaki yapıyı içeren yapılandırılmış bir kayıttır:
 
@@ -169,9 +169,9 @@ Site Spesifikasyonunu tamamladıktan sonra, bilgileriniz ajan belleğinizde **si
 }
 ```
 
-## site_brief'inizi Görüntüleme ve Güncelleme
+## site_brief'inizi Görüntüleme ve Güncelleme {#viewing-and-updating-your-sitebrief}
 
-### site_brief'inizi Görüntüleme
+### site_brief'inizi Görüntüleme {#view-your-sitebrief}
 
 Ajana şunu sorun:
 
@@ -187,7 +187,7 @@ veya
 
 Ajan, depolanan spesifikasyonunuzu gösterecektir.
 
-### site_brief'inizi Güncelleme
+### site_brief'inizi Güncelleme {#update-your-sitebrief}
 
 Siteniz gelişirse, onu güncelleyebilirsiniz:
 
@@ -203,9 +203,9 @@ veya
 
 Bu, mevcut bilgilerinizle bir başlangıç noktası kullanarak Site Spesifikasyonu yeteneğini yeniden çalıştıracaktır.
 
-## Ajanlar site_brief'i Nasıl Kullanır?
+## Ajanlar site_brief'i Nasıl Kullanır? {#how-agents-use-sitebrief}
 
-### Tasarım Önerileri
+### Tasarım Önerileri {#design-recommendations}
 
 Tasarım değişiklikleri istediğinizde, ajanlar site_brief'inize başvurur:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Özellik Önerileri
+### Özellik Önerileri {#feature-suggestions}
 
 Ajanlar, hedeflerinize uygun özellikler önerir:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### İçerik Yapısı
+### İçerik Yapısı {#content-structure}
 
 Ajanlar, yapınıza göre içerik organizasyonu önerir:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
-### Spesifik Olun
+### Spesifik Olun {#be-specific}
 
 "Genel kitle" yerine, gerçek kitlenizi tanımlayın:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion" (Sürdürülebilir modaya ilgi duyan 25-45 yaş arası kadınlar)
 - ✗ "Everyone" (Herkes)
 
-### Düzenli Güncelleyin
+### Düzenli Güncelleyin {#update-regularly}
 
 Siteniz geliştikçe, site_brief'inizi güncelleyin:
 
@@ -256,14 +256,14 @@ Siteniz geliştikçe, site_brief'inizi güncelleyin:
 - Marka kimliğiniz değiştiğinde
 - İş hedefleriniz kaydığında
 
-### Tutarlı Terminoloji Kullanın
+### Tutarlı Terminoloji Kullanın {#use-consistent-terminology}
 
 Oturumlar boyunca aynı terimleri kullanın:
 
 - ✓ Her zaman "sustainable jewelry" (sürdürülebilir takı) deyin (ne "eco-friendly jewelry" ne de "green products")
 - ✓ Hedef kitlenize her zaman aynı şekilde atıfta bulunun
 
-### Bağlam Ekleyin
+### Bağlam Ekleyin {#include-context}
 
 Ajanların kararlarınızı anlamasına yardımcı olacak arka plan bilgisi sağlayın:
 
@@ -271,7 +271,7 @@ Ajanların kararlarınızı anlamasına yardımcı olacak arka plan bilgisi sağ
 - "Kitlemiz teknolojiye yatkın ve modern tasarım bekliyor"
 - "Başlangıç sermayesiyle kurulan bir startup olduğumuz için uygun maliyetli çözümlere ihtiyacımız var"
 
-## Theme Builder Onboarding ile İlişkisi
+## Theme Builder Onboarding ile İlişkisi {#relationship-to-theme-builder-onboarding}
 
 Site Spesifikasyonu yeteneği, **Theme Builder onboarding akışına** entegre edilmiştir. Onboarding'i tamamladığınızda, sağladığınız bilgilerle site_brief'iniz otomatik olarak oluşturulur.
 
@@ -281,7 +281,7 @@ Site Spesifikasyonu yeteneği, **Theme Builder onboarding akışına** entegre e
 - Siteniz geliştikçe site brief'inizi güncellemek için
 - Theme Builder'a başlamadan önce ayrıntılı bir spesifikasyon oluşturmak için
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **site_brief kullanılmıyor**
 - Ajanın belleğe erişimi olduğundan emin olun
@@ -297,7 +297,7 @@ Site Spesifikasyonu yeteneği, **Theme Builder onboarding akışına** entegre e
 - site_brief'iniz güncel değilse güncelleyin
 - İsteklerinizde ek bağlam sağlayın
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Site spesifikasyonunuzu tanımladıktan sonra:
 

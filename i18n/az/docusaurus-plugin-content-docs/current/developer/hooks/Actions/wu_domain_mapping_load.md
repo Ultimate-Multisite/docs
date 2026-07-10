@@ -4,12 +4,12 @@ title: Action - wu_domain_mapping_load
 sidebar_label: wu_domain_mapping_load
 _i18n_hash: c4847ba1f4504cf78e8f0a93f1bba622
 ---
-# Action: wu_domain_mapping_load
+# Action: wu_domain_mapping_load {#action-wudomainmappingload}
 
 Əsas Domen Xəritələmə (Domain Mapping) yükləndikdən sonra işə düşür.
 
 Bu funksionallığa qoşularaq istənilən əlavə (add-on) funksionallığı idarə edə bilərsiniz.
 
-### Mənbə
+### Mənbə {#source}
 
 [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L175) faylında 175-ci sətirdə təyin olunub.

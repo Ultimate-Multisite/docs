@@ -3,11 +3,11 @@ title: Whakawātea Multi-Tenancy
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Whakamahi Whakawāhi (Multi-Tenancy Isolation)
+# Whakamahi Whakawāhi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 e hoki i te whakatika database me te filesystem mō ngā tenant e tino tangata (sovereign tenants). Ko tēnei e pēnei i te whaiaro ai i ngā data o te tenant i roto i te whero, i roto i te whaiaro ana i te whakamahi whānui o te wāhi wāhi (network-level provisioning), te whero, me te whakahaere.
 
-## Whakamahara Whakawāhi (Isolation strategy)
+## Whakamahara Whakawāhi (Isolation strategy) {#isolation-strategy}
 
 Whai i te whakamahi whakawāhi tangata (sovereign isolation) mō ngā mea e hiahia ana i te whero māhinaki data mō teitei, whare wāhi filesystem e tino tangata, aua te whare wāhi (host boundary) e tino tangata.
 
@@ -18,7 +18,7 @@ Me heke i te koreau o te tenant e hiahia ana i:
 - Entry registry o te tenant e whakatika te site ki te database, root path, hostname, me te model whakawāhi (isolation model).
 - Result whakamārama migration (migration verification) mō te tenant i roto i te wā e whakaarohia ana i te mea he tino tangata.
 
-## Whakamahara Host Database (Database host binding)
+## Whakamahara Host Database (Database host binding) {#database-host-binding}
 
 Version 1.2.0 e hoki i te whakatika default o te host binding mō ngā install sovereign. Ko ngā wāhi wāhi e tino tangata e pēnei i `localhost` e whakahou ai ana ko Bedrock, FrankenPHP, me containerized WordPress e taea ai te whero me te whakamārama i ngā whānau (permissions) mō te string o host e tino hiahia ai te MySQL.
 
@@ -31,11 +31,11 @@ I roto i te whakauru i te tenant e tino tangata:
 
 Ko te tino tangata o te whakamārama (verification reports) e pēnei i ngā pēto o database tenant me te host binding e whakatika ana. He pēnei te user granted mō `user@localhost` ki heke i `user@127.0.0.1` aua i `user@%`.
 
-## Root Filesystem (Filesystem root)
+## Root Filesystem (Filesystem root) {#filesystem-root}
 
 Mea te root o te tenant me te tika ana i roto i ngā whakaorero (restarts) me ngā whakamōhaka (deployments). Whakarite i te whakatūpā (mount paths) mō te wakamutunga. Mo install e hāpai atu ana i te Bedrock, kia kore te root o te tenant ipotopito ki te web root o te WordPress e whakaritea e te bootstrap o te tenant anō, akorua i te root o te project anake.
 
-## Pūramatanga o te rārangi (Provisioning order)
+## Pūramatanga o te rārangi (Provisioning order) {#provisioning-order}
 
 Mo mga tenant hou o te mana (sovereign tenants), whakamahi tēnei urangai:
 
@@ -49,7 +49,7 @@ Mo mga tenant hou o te mana (sovereign tenants), whakamahi tēnei urangai:
 
 Ko tēnei urangai e whakatika i ngā tenant e hāpai atu ana i te whakamahi (traffic) i raro i te whakahoki, i roto i te wā ko ka hiahia ai te writer o te database, ngā user, me te filesystem.
 
-## Whakaritenga o te whakatau o te mea whai mana (Sovereign customer management flows)
+## Whakaritenga o te whakatau o te mea whai mana (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 e whakatika ngā mahi o te whakamaoritanga o te mea whai mana ki te wāhi nui (main site) i roto i te mode sovereign. He taea ahau te run atu ko install WordPress e ipotopito, engari ngā mahi mō te whai me te whai whakaaro o te mea whai mana (customer-facing actions) e ipotopito ki te billing o te wāhi, membership, akorua i te wāhi nui i te whakamaoritanga ana i te whakamahinga (runtime) o te tenant.
 

@@ -3,9 +3,9 @@ title: Pagdumala sa mga Bayad ug Invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagdumala og Bayad ug Invoice
+# Pagdumala og Bayad ug Invoice {#managing-payments-and-invoices}
 
-## Mga Setting sa Bayad
+## Mga Setting sa Bayad {#payment-settings}
 
 Sa dili pa magsugod ka makadawat og bayad, kinahanglan nimo i-configure ang mga setting nga may kalabotan sa bayad. Mag-navigate sa **Ultimate Multisite → Settings** ug i-click ang tab nga **Payment**.
 
@@ -15,7 +15,7 @@ Ania ang tibuok tan-aw sa pahina sa payment settings:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Kinatibuk-ang Mga Opsyon sa Bayad
+### Kinatibuk-ang Mga Opsyon sa Bayad {#general-payment-options}
 
 Sa general settings, mahimo nimong i-configure ang mga mosunod:
 
@@ -24,7 +24,7 @@ Sa general settings, mahimo nimong i-configure ang mga mosunod:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Mga Payment Gateway
+### Mga Payment Gateway {#payment-gateways}
 
 Ang Ultimate Multisite nagsuporta og daghang payment gateways. Mahimo nimong i-enable ug i-configure ang matag usa gikan sa tab sa Payment settings.
 
@@ -40,11 +40,11 @@ Matag gateway adunay kaugalingong seksyon sa configuration diin mohatag og API k
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Mahimo nimong i-enable ang **Sandbox Mode** aron masulayan ang imong payment integration sa dili pa kini magpadayon (go live). Kung aktibo ang sandbox mode, walay tinuod nga bayad ang himuon.
 
-## Pagsusi sa mga Bayad
+## Pagsusi sa mga Bayad {#viewing-payments}
 
 Mag-navigate sa pahina sa **Payments** ubos sa Ultimate Multisite aron makita ang tanang transaksyon sa imong network.
 
@@ -54,7 +54,7 @@ Mahimo nimong i-filter ang mga bayad base sa status (completed, pending, failed,
 
 Pindota ang usa ka bayad aron makita ang tanang detalye niini, lakip na ang mga item sa order, konektado nga membership, impormasyon sa customer, ug data sa payment gateway.
 
-## Invoices
+## Invoices {#invoices}
 
 Ang Ultimate Multisite makahimo og invoices (bayad) awtomatiko para sa mga bayad. Mahimo nimo i-customize ang invoice template ug porma sa pagnumero gikan sa Payment settings.
 

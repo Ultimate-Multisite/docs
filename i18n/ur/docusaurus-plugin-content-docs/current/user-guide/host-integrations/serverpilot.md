@@ -3,17 +3,17 @@ title: ServerPilot انٹیگریشن
 sidebar_position: 16
 _i18n_hash: fdbdebe91bc1687b519dc0986de244d3
 ---
-# ServerPilot انٹیگریشن
+# ServerPilot انٹیگریشن {#serverpilot-integration}
 
-## جائزہ
+## جائزہ {#overview}
 ServerPilot ایک کلاؤڈ سروس ہے جو DigitalOcean، Amazon، Google، یا کسی بھی دوسرے سرور پرووائیڈر پر WordPress اور دیگر PHP ویب سائٹس ہوسٹ کرنے کے لیے استعمال ہوتی ہے۔ یہ انٹیگریشن Ultimate Multisite اور ServerPilot کے درمیان خودکار ڈومین سنکنگ اور SSL سرٹیفکیٹ مینجمنٹ کو فعال کرتی ہے۔
 
-## خصوصیات
+## خصوصیات {#features}
 - خودکار ڈومین سنکنگ
 - Let's Encrypt کے ساتھ SSL سرٹیفکیٹ مینجمنٹ
 - خودکار SSL تجدید
 
-## ضروریات
+## ضروریات {#requirements}
 آپ کی `wp-config.php` فائل میں درج ذیل constants کی تعریف ضروری ہے:
 
 ```php
@@ -22,22 +22,22 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-## سیٹ اپ ہدایات
+## سیٹ اپ ہدایات {#setup-instructions}
 
-### 1. اپنے ServerPilot API کی اسناد حاصل کریں
+### 1. اپنے ServerPilot API کی اسناد حاصل کریں {#1-get-your-serverpilot-api-credentials}
 
 1. اپنے ServerPilot ڈیش بورڈ میں لاگ ان کریں
 2. "Account" > "API" پر جائیں
 3. اگر آپ کے پاس پہلے سے نہیں ہے تو ایک نئی API key بنائیں
 4. اپنی Client ID اور API Key کاپی کریں
 
-### 2. اپنی App ID حاصل کریں
+### 2. اپنی App ID حاصل کریں {#2-get-your-app-id}
 
 1. اپنے ServerPilot ڈیش بورڈ میں "Apps" پر جائیں
 2. وہ app منتخب کریں جہاں آپ کا WordPress multisite ہوسٹ ہے
 3. App ID آپ کو URL میں نظر آئے گی: `https://manage.serverpilot.io/apps/{APP_ID}`
 
-### 3. wp-config.php میں Constants شامل کریں
+### 3. wp-config.php میں Constants شامل کریں {#3-add-constants-to-wp-configphp}
 
 اپنی `wp-config.php` فائل میں درج ذیل constants شامل کریں:
 
@@ -47,7 +47,7 @@ define('WU_SERVER_PILOT_API_KEY', 'your_api_key');
 define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 ```
 
-### 4. انٹیگریشن فعال کریں
+### 4. انٹیگریشن فعال کریں {#4-enable-the-integration}
 
 1. اپنے WordPress ایڈمن میں Ultimate Multisite > Settings پر جائیں
 2. "Domain Mapping" ٹیب پر جائیں
@@ -55,9 +55,9 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 4. ServerPilot انٹیگریشن کو فعال کریں
 5. "Save Changes" پر کلک کریں
 
-## یہ کیسے کام کرتا ہے
+## یہ کیسے کام کرتا ہے {#how-it-works}
 
-### ڈومین سنکنگ
+### ڈومین سنکنگ {#domain-syncing}
 
 جب Ultimate Multisite میں کوئی ڈومین میپ کیا جاتا ہے:
 
@@ -66,7 +66,7 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 3. یہ اپ ڈیٹ شدہ فہرست API کے ذریعے ServerPilot کو بھیجتی ہے
 4. ServerPilot آپ کی ایپلیکیشن کی ڈومین لسٹ کو اپ ڈیٹ کرتا ہے
 
-### SSL سرٹیفکیٹ مینجمنٹ
+### SSL سرٹیفکیٹ مینجمنٹ {#ssl-certificate-management}
 
 ڈومینز سنک ہونے کے بعد:
 
@@ -74,27 +74,27 @@ define('WU_SERVER_PILOT_APP_ID', 'your_app_id');
 2. ServerPilot، Let's Encrypt کا استعمال کرتے ہوئے SSL سرٹیفکیٹ کا اجراء اور انسٹالیشن سنبھالتا ہے
 3. ServerPilot SSL سرٹیفکیٹس کی خودکار تجدید بھی سنبھالتا ہے
 
-## SSL سرٹیفکیٹ کی تصدیق
+## SSL سرٹیفکیٹ کی تصدیق {#ssl-certificate-verification}
 
 انٹیگریشن ServerPilot کے لیے SSL سرٹیفکیٹ کی تصدیق کی کوششوں کی تعداد بڑھانے کے لیے ترتیب دی گئی ہے، کیونکہ ServerPilot کو SSL سرٹیفکیٹس جاری اور انسٹال کرنے میں کچھ وقت لگ سکتا ہے۔ بطور ڈیفالٹ، یہ 5 بار تک کوشش کرے گی، لیکن اسے filters کا استعمال کرتے ہوئے ایڈجسٹ کیا جا سکتا ہے۔
 
-## مسائل کا حل
+## مسائل کا حل {#troubleshooting}
 
-### API کنکشن کے مسائل
+### API کنکشن کے مسائل {#api-connection-issues}
 - تصدیق کریں کہ آپ کی Client ID اور API Key درست ہیں
 - چیک کریں کہ آپ کی App ID درست ہے
 - یقینی بنائیں کہ آپ کے ServerPilot اکاؤنٹ کے پاس ضروری اجازتیں ہیں
 
-### SSL سرٹیفکیٹ کے مسائل
+### SSL سرٹیفکیٹ کے مسائل {#ssl-certificate-issues}
 - ServerPilot کے لیے ضروری ہے کہ SSL سرٹیفکیٹ جاری کرنے سے پہلے ڈومینز کے DNS ریکارڈز آپ کے سرور کی طرف پوائنٹ کر رہے ہوں
 - اگر SSL سرٹیفکیٹس جاری نہیں ہو رہے، تو چیک کریں کہ آپ کے ڈومینز آپ کے سرور کے IP ایڈریس کی طرف صحیح طور پر پوائنٹ کر رہے ہیں
 - ServerPilot کو SSL سرٹیفکیٹس جاری اور انسٹال کرنے میں کچھ وقت لگ سکتا ہے (عام طور پر 5-15 منٹ)
 
-### ڈومین شامل نہیں ہوا
+### ڈومین شامل نہیں ہوا {#domain-not-added}
 - کسی بھی ایرر میسج کے لیے Ultimate Multisite لاگز چیک کریں
 - تصدیق کریں کہ ڈومین پہلے سے ServerPilot میں شامل نہیں ہے
 - یقینی بنائیں کہ آپ کا ServerPilot پلان اتنے ڈومینز کو سپورٹ کرتا ہے جتنے آپ شامل کر رہے ہیں
 
-### ڈومین ہٹانا
+### ڈومین ہٹانا {#domain-removal}
 - فی الحال، ServerPilot API انفرادی ڈومینز ہٹانے کا طریقہ فراہم نہیں کرتی
 - جب Ultimate Multisite میں کوئی ڈومین میپنگ ہٹائی جاتی ہے، تو انٹیگریشن ServerPilot میں ڈومین لسٹ کو اپ ڈیٹ کر کے ہٹائے گئے ڈومین کو خارج کر دے گی

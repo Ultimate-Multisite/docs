@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) Integráció
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integráció
+# Hostinger (hPanel) Integráció {#hostinger-hpanel-integration}
 
-## Áttekintő
+## Áttekintő {#overview}
 
 Hostinger népszerű webhosting szolgáltató, amely modern irányítópulttal, az hPanel-lel rendelkezik. Az Ultimate Multisite Hostinger integráció automatikus domain szinkronizációt biztosít az Ultimate Multisite és a Hostinger hPanel-e között, így automatikusan kezelheti a domain mappákat és a subdomain-eket közvetlenül a WordPress admin felületéről.
 
-## Funkciók
+## Funkciók {#features}
 
 - Automatikus addon domain létrehozása az hPanel-ben
 - Automatikus subdomain létrehozása az hPanel-ben (subdomain multisite telepítések esetén)
 - Domain eltávolítása, ha a mappákat törli
 - Zökkenőmentes integráció az hPanel domain menedzsment API-jával
 
-## Feltételek
+## Feltételek {#requirements}
 
 Ahhoz, hogy használja a Hostinger integrációt, szüksége van:
 
@@ -35,9 +35,9 @@ Opcionálisan definiálhat:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Alap API endpoint
 ```
 
-## Beállítási utasítások
+## Beállítási utasítások {#setup-instructions}
 
-### 1. Generálja a Hostinger API token-ját
+### 1. Generálja a Hostinger API token-ját {#1-generate-your-hostinger-api-token}
 
 1. Jelölje be a Hostinger fiókjába és lépjen az hPanel-be
 2. Navigáljon az **Account Settings** → **API Tokens** menüpontra
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Alap API endp
    - Subdomain menedzsment
 6. Másolja ki a generált token-t és tárolja biztonságosan
 
-### 2. Keresse meg a fiók ID-jét
+### 2. Keresse meg a fiók ID-jét {#2-find-your-account-id}
 
 1. Az hPanel-ben navigáljon az **Account Settings** → **Account Information** menüpontra
 2. A Fiók ID-je ezen az oldalon látható
 3. Másolja ki és mentse meg ezt az ID-t a következő lépésre
 
-### 3. Adja hozzá az állandó értékeket a wp-config.php-hez
+### 3. Adja hozzá az állandó értékeket a wp-config.php-hez {#3-add-constants-to-wp-configphp}
 
 Adja hozzá a következő állandó értékeket a `wp-config.php` fájljához:
 
@@ -69,7 +69,7 @@ Ha a Hostinger fióka más API endpoint-et használ, testre szabhatja:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Aktiválja az integrációt
+### 4. Aktiválja az integrációt {#4-enable-the-integration}
 
 1. A WordPress admin felületén navigáljon az **Ultimate Multisite > Settings** menüpontra
 2. Navigáljon a **Domain Mapping** fülre
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Aktiválja az **Hostinger (hPanel)** integrációt
 5. Kattintson a **Save Changes** gombra
 
-## Hogyan működik
+## Hogyan működik {#how-it-works}
 
-### Addon Domain-ek
+### Addon Domain-ek {#addon-domains}
 
 Amikor egy domain-t mappál az Ultimate Multisite-ban:
 
@@ -87,7 +87,7 @@ Amikor egy domain-t mappál az Ultimate Multisite-ban:
 2. A domain-t úgy konfigurálja, hogy a gyökér könyvtárához mutatjon
 3. Ha egy domain mappáját törli, az integráció automatikusan eltávolítja az addon domain-t az hPanel-ből
 
-### Subdomain-ek
+### Subdomain-ek {#subdomains}
 
 Subdomain multisite telepítések esetén, amikor új oldal kerül létrehozásra:
 
@@ -95,7 +95,7 @@ Subdomain multisite telepítések esetén, amikor új oldal kerül létrehozásr
 2. Kérést küld a Hostinger API-hoz, hogy hozzáadja a subdomain-et
 3. A subdomain-t úgy konfigurálja, hogy a gyökér könyvtárához mutatjon
 
-## Fontos megjegyzések
+## Fontos megjegyzések {#important-notes}
 
 - Az integráció a Hostinger REST API-t használja a fiókjához való kommunikációhoz
 - Az API token-jának rendelkeznie kell az addon és subdomain menedzsmenthez szükséges engedélyekkel
@@ -103,33 +103,33 @@ Subdomain multisite telepítések esetén, amikor új oldal kerül létrehozásr
 - Az API kérések biztonságosan HTTPS protokollon történnek
 - Tartsa biztonságosak az API token-ját, és ne osztja ki nyilvánosan
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### API kapcsolat problémái
+### API kapcsolat problémái {#api-connection-issues}
 
 - Ellenőrizze, hogy az API token-ja helyes és nem érvénytelen
 - Ellenőrizze, hogy a Fiók ID-je helyes
 - Győződjön meg róla, hogy az API token-jának rendelkezik a szükséges engedélyekkel a domain menedzsmenthez
 - Ellenőrizze, hogy a Hostinger fióka aktív és megfelelően működik
 
-### Domain nem adódott hozzá
+### Domain nem adódott hozzá {#domain-not-added}
 
 - Ellenőrizze az Ultimate Multisite logjaink minden hibaüzenetet
 - Ellenőrizze, hogy a domain nem került már hozzáadásra a Hostinger fiókjához
 - Győződjön meg róla, hogy a Hostinger fiókja nem érte el az addon domain limitjét
 - Kérjük visszaigazolni, hogy a domain megfelelően mutatja a Hostinger nameserver-ekhez
 
-### SSL Certificate problémák
+### SSL Certificate problémák {#ssl-certificate-issues}
 
 - Az integráció nem kezeli az SSL certificate kiállítását
 - A Hostinger általában ingyenes SSL certificate-eket biztosít AutoSSL-en keresztül
 - Az SSL certificate-eket közvetlenül kezelheti az hPanel-ben az **SSL/TLS** alatt
 - Alternatívaként használja a Let's Encrypt-et a Hostinger AutoSSL funkciójával
 
-## Támogatás
+## Támogatás {#support}
 
 További segítségre az Ultimate Multisite Hostinger integrációjával kapcsolatban, kérjük, tekintse át:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

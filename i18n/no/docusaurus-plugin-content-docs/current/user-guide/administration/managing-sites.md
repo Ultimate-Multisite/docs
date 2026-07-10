@@ -3,7 +3,7 @@ title: Administrere nettsteder
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Administrere nettsteder
+# Administrere nettsteder {#managing-sites}
 
 Nettsteder (eller undersider) er kjernen i WaaS-virksomheten din. Ultimate Multisite har 3 typer nettsteder:
 
@@ -11,13 +11,13 @@ Nettsteder (eller undersider) er kjernen i WaaS-virksomheten din. Ultimate Multi
 - **Nettstedsmaler** — Forhåndsdefinerte nettsteder som kunder kan velge som utgangspunkt
 - **Hovednettsted** — Det primære nettverksstedet ditt
 
-## Vise nettsteder
+## Vise nettsteder {#viewing-sites}
 
 Gå til **Ultimate Multisite → Sites** for å se alle undersider i nettverket ditt. Hvert nettsted er merket etter type, og du kan filtrere etter All Sites, Customer-Owned, Templates eller Pending.
 
 ![Nettstedsliste](/img/admin/sites-list.png)
 
-## Legge til et nytt nettsted
+## Legge til et nytt nettsted {#adding-a-new-site}
 
 Klikk på **Add Site**-knappen for å opprette et nytt nettsted. Du må oppgi:
 
@@ -27,15 +27,15 @@ Klikk på **Add Site**-knappen for å opprette et nytt nettsted. Du må oppgi:
 
 **Copy Site**-alternativet lar deg opprette et nytt nettsted basert på en eksisterende nettstedsmal. Når dette er aktivert, kan du velge hvilken mal som skal brukes som utgangspunkt. Pass på at **Copy Media on Duplication** er aktivert for å inkludere mediefiler.
 
-## Administrere et eksisterende nettsted
+## Administrere et eksisterende nettsted {#managing-an-existing-site}
 
 Klikk på **Manage** på et hvilket som helst nettsted for å åpne **Edit Site**-siden. Her finner du:
 
-### Grunnleggende informasjon
+### Grunnleggende informasjon {#basic-information}
 
 Nettstedets navn, type, nettsted-ID og beskrivelse. Du ser også det tilknyttede domenet, tilhørende medlemskap og kundekontoen som eier nettstedet.
 
-### Nettstedsinnstillinger
+### Nettstedsinnstillinger {#site-options}
 
 Konfigurer nettstedets funksjoner og begrensninger:
 
@@ -47,7 +47,7 @@ Konfigurer nettstedets funksjoner og begrensninger:
 
 Som standard følger nettsteder grensene som er satt på medlemskapsnivå. Hvis du setter grenser på nettstedsnivå, overstyrer dette medlemskapsinnstillingene.
 
-### Tilknytninger
+### Tilknytninger {#associations}
 
 Under nettstedsinnstillingene finner du informasjon om:
 
@@ -55,7 +55,7 @@ Under nettstedsinnstillingene finner du informasjon om:
 - **Medlemskap** nettstedet tilhører
 - **Kundekonto** knyttet til nettstedet
 
-### Høyre sidefelt
+### Høyre sidefelt {#right-sidebar}
 
 På høyre side kan du:
 

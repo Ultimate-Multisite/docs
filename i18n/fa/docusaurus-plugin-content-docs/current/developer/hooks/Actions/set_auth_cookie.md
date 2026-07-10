@@ -4,11 +4,11 @@ title: عمل - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# اکشن: set_auth_cookie
+# اکشن: set_auth_cookie {#action-setauthcookie}
 
 بلافاصله قبل از تنظیم کوکی احراز هویت اجرا می‌شود.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | روش احراز هویت. مقادیر شامل 'auth' یا 'secure_auth' هستند. |
 | $token | `string` | توکن نشست (session token) کاربر برای استفاده در این کوکی. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.5.0
 - 4.9.0: پارامتر <code>$token</code> اضافه شد.
-### منبع
+### منبع {#source}
 
 تعریف شده در [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) در خط ۱۲۴

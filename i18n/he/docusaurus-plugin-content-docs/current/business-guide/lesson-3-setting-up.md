@@ -3,32 +3,32 @@ title: 'שיעור 3: הגדרת הרשת שלך'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# שיעור 3: הגדרת הרשת שלך
+# שיעור 3: הגדרת הרשת שלך {#lesson-3-setting-up-your-network}
 
 הגיע הזמן לבנות. בשיעור זה תתקין את Ultimate Multisite ותגדיר את יסודות רשת FitSite. כל החלטה שאתה מקבל כאן נעשית תוך התחשבות בנישה של כושר.
 
-## איפה השארנו
+## איפה השארנו {#where-we-left-off}
 
 בחרנו במכוני כושר כנישה שלנו ואימתנו את ההזדמנות. עכשיו אנחנו הופכים את הרעיון הזה לפלטפורמה עובדת.
 
-## בחירת המארח (Hosting) שלך
+## בחירת המארח (Hosting) שלך {#choosing-your-hosting}
 
 בחירת המארח חשובה יותר עבור פלטפורמה נישתית מאשר עבור אתר אינטרנט בודד. אתה לא מפעיל אתר אחד – אתה מפעיל רשת שתגדל לעשרות או מאות אתרים.
 
-### למה לשים לב
+### למה לשים לב {#what-to-look-for}
 
 - **תמיכה ב-WordPress Multisite**: לא כל המארחים מטפלים ב-multisite בצורה טובה.
 - **Wildcard SSL**: חיוני לרשתות המבוססות על תת-דומיינים (subdomains).
 - **משאבים ניתנים להרחבה (Scalable resources)**: אתה צריך מקום לצמוח בלעדי לעבור העברה (migrate).
 - **אינטגרציה עם Ultimate Multisite**: מיפוי דומיינים אוטומטי ו-SSL חוסכים מאמץ תפעולי משמעותי.
 
-### הגישה המומלצת
+### הגישה המומלצת {#recommended-approach}
 
 בחר מארח מהרשימה של [ספקי התואמים](/user-guide/host-integrations/closte). אלו נבדקו עם Ultimate Multisite ומספקים את האינטגרציות שאתה צריך למיפוי דומיינים ולאוטומציה של SSL.
 
 עבור FitSite, נשתמש בהגדרת תת-דומיין (subdomain). זה אומר שאתרים של לקוחות יופיעו בהתחלה כ-`studioname.fitsite.com` לפני שהם ממפים אופציונלית את הדומיין שלהם.
 
-## התקנת WordPress Multisite
+## התקנת WordPress Multisite {#installing-wordpress-multisite}
 
 אם אין לך כבר התקנת WordPress Multisite:
 
@@ -40,7 +40,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 תת-דומיינים נותנים לכל אתר לקוח כתובת ייחודית משלו (`studio.fitsite.com`) במקום נתיב (`fitsite.com/studio`). זה מקצועי יותר עבור הלקוחות שלך ונמנע קונפליקטים של permalinks. ראה [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) להשוואה מפורטת.
 :::
 
-## התקנת Ultimate Multisite
+## התקנת Ultimate Multisite {#installing-ultimate-multisite}
 
 עקוב אחר המדריך [התקנת Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) כדי:
 
@@ -53,11 +53,11 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **שם החברה (Company name)**: "FitSite" (או שם המותג שבחרת).
 - **לוגו החברה (Company logo)**: העלה את לוגו המותג שלך – זה יופיע בחשבוניות ובמיילים.
 
-## הגדרה לנישת הכושר
+## הגדרה לנישת הכושר {#configuring-for-the-fitness-niche}
 
 עם Ultimate Multisite מותקן, בצע את בחירות ההגדרה הספציפיות לנישה:
 
-### הגדרות כלליות (General Settings)
+### הגדרות כלליות (General Settings) {#general-settings}
 
 נווט אל **Ultimate Multisite > Settings** והגדר:
 
@@ -65,7 +65,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **תפקיד ברירת מחדל (Default role)**: Administrator -- בעלי מכוני הכושר צריכים שליטה מלאה בתוכן האתר שלהם.
 - **הרשמה (Registration)**: הפעל הרשמה למשתמשים כדי שבעלי המכוניות יוכלו להירשם בעצמם.
 
-### הגדרת מיילים (Email Configuration)
+### הגדרת מיילים (Email Configuration) {#email-configuration}
 
 המיילים של המערכת שלך צריכים לדבר בשפה של הנישה שלך. נווט אל **Ultimate Multisite > Settings > Emails** והתאם אישית:
 
@@ -75,7 +75,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 אנחנו נחדד את זה בהמשך בשיעור 8 (הקצאת לקוחות), אבל הגדרת הטון כבר עכשיו מבטיחה שגם הרשמות ניסיון מוקדמות ירגישו ספציפיות לנישה.
 
-### הגדרת דומיין (Domain Configuration)
+### הגדרת דומיין (Domain Configuration) {#domain-configuration}
 
 אם אתה משתמש בספק מארח תואם, הגדר מיפוי דומיינים עכשיו:
 
@@ -85,7 +85,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 זה מבטיח שכאשר נתחיל ליצור תבניות ואתרים ניסיוניים בשיעור הבא, הכל יעבוד מקצה לקצה.
 
-## רשת FitSite עד כה
+## רשת FitSite עד כה {#the-fitsite-network-so-far}
 
 בסוף שיעור זה, הנה מה שיש לך:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## מה בנינו בשיעור הזה
+## מה בנינו בשיעור הזה {#what-we-built-this-lesson}
 
 - **התקנת WordPress Multisite** עובדת במצב תת-דומיין.
 - **Ultimate Multisite מותקן** ומוגדר עם מיתוג FitSite.

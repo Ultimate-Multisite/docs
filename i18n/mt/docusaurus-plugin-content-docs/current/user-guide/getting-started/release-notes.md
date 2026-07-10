@@ -3,9 +3,9 @@ title: Nota di rilascio
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Notiziamenti tal-Risemaltija
+# Notiziamenti tal-Risemaltija {#release-notes}
 
-## Versjoni 2.13.0 — Irrilissata fil-2026-06-05
+## Versjoni 2.13.0 — Irrilissata fil-2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Nuw: Aggiungat support per tenant sovrani (sovereign-tenant) għall-account tal-klijenti, checkout, fatturament, siti, fatturi, switch ta template u mapping tal-domeni biex reti tal-tenant jistgħu jorru l-klijenti mal-site primari għall-azioni gestiti.
 - Nuw: Aggiungat controlli ta renewal (renewal-credential checks) għall-membership ricorrenti biex gateway jistgħu jew ma jistgħux jaħmlu l-auto-renewal meta m'għandu manx għal akkompromizzazzjoni tal-fatturament, subscription jew vault token savwati.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Edge cases biex renewal tal-membership, display ta scadenza u kolezzjoni tal-pagamenti jevitaw scadenza immediata, crash o pagamenti magħrufin.
 - Improved: Kompatibbiltà WordPress testat fino għall-7.0, asset Vue ta prodott (production) jiġu ricostru min isorzi npm, u Cypress end-to-end coverage jmexxi aktar flussi tal-checkout, setup, SSO u gateway.
 
-## Versjoni 2.12.0 — Irrilissat fil-2026-05-15
+## Versjoni 2.12.0 — Irrilissat fil-2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Nuw: Aggiumenta Hostinger (hPanel) bħala fornitore host supportat mal-mapping tal-domain
 - Nuw: Il-Site Exporter jipproċessa l-network import bundles, biex jgħin fil-restoration tal-site fuq nnetz b'mod aktar semplifikat
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Il-Site Exporter CLI jippreserva l-selezzjoni difiċjata tal-network site b'mod korrett
 - Improved: Elimina wp-cli bundle minn il-package tal-plugin, biex tqassse l-għadd tal-plugin
 
-## Versjoni 2.11.0 — Irrilissat fil-2026-05-11
+## Versjoni 2.11.0 — Irrilissat fil-2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Nuw: Il-Site exports jipproċessa bundles ta `index.php` self-booting biex il-ZIP jkun jistabbilit fuq host ġdid b'mod li ma għandux installa plugin separat
 - Nuw: Il-Network export jista' l-administraturi jexport kull subsite f'archive waħd ma' page tal-Site Export admin
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Nuw: L-checkout form editor jnwarnaw meta tiddir produkta mingħajr li field reqjud konfigurat
 - Nuw: Il-Import/Export settings tab jispjega b'mod chiaro isseppettività tiegħu u jikelink dirett għall-Site Export tool
 
-## Versjoni 2.10.0 — Irrilissat fil-2026-05-05
+## Versjoni 2.10.0 — Irrilissat fil-2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Nuw: Wizard setup PayPal għall input manuali ta kredjali b'flag OAuth gate biex ikun konfigurat b'mod moħtiġ (seamless gateway configuration).
 - Nuw: Il-template switch tal-customer panel tiddissenyaw mill-aħħar ma jinqasmu b'card current-template, grid persistenti, u b'ut button **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Il-SSO path filtrat jgħandu b'mod aħjar f'koll id-flows ta l-login.
 - Fix: Opzioni identità tal-site vuṭa jgħandu b'mod aħjar meta tiddissenyaw (on save).
 
-## Versjoni 2.9.0 — Irrilessita fil-2026-04-30
+## Versjoni 2.9.0 — Irrilessita fil-2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Nuw: Export u import ta site waħdhom iddurju ta qudd **Tools > Export & Import**.
 - Fix: Il-ZIP files tal-export jmur serviti minn endpoint ta download awtentikat.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Fix: Tour IDs normalizzati għal underscores f'settings keys tal-user.
 - Improved: ZipArchive juttu u jmur it-Alchemy/Zippy biex ikunu kompatibbli b'mod aħjar.
 
-## Versjoni 2.8.0 — Irrilessita fil-2026-04-29
+## Versjoni 2.8.0 — Irrilessita fil-2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Nuw: Toggles Jumper attivata id-UI tal-għażliet Oħra.
 - Nuw: Kolonna Status aḍḍixiet għall-lista ta formi checkout.

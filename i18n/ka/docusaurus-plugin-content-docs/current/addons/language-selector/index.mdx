@@ -1,0 +1,75 @@
+---
+title: ენის ამომრჩეველი
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# ენის ამრჩევი {#language-selector}
+
+Ultimate Multisite: ენის ამრჩევი რეგისტრაციისას
+
+დაამატეთ ენის ამრჩევი ველი რეგისტრაციის პროცესს.
+
+## ინსტალაცია {#installation}
+
+1. ატვირთეთ 'ultimate-multisite-language-selector' '/wp-content/plugins/' დირექტორიაში
+2. გაააქტიურეთ პლაგინი 'Plugins' მენიუდან თქვენს WordPress Network Admin-ში
+
+## გამოყენების გზამკვლევი {#usage-guide}
+
+ამ უფასო დამატებით შეგიძლიათ თქვენს მომხმარებლებს მისცეთ საშუალება აირჩიონ, რომელი ენის ნახვა სურთ რეგისტრაციის პროცესში და შესვლის გვერდზე.
+
+[თქვენი ლიცენზიის გააქტიურების](../../user-guide/getting-started/installing-ultimate-multisite.md) შემდეგ შეძლებთ დააინსტალიროთ Ultimate Multisite დამატებები, რომლებზეც თქვენი ლიცენზია გაძლევთ წვდომას.
+
+გადადით თქვენი Ultimate Multisite პარამეტრების გვერდზე და შემდეგ, მარცხენა მენიუში, დააწკაპუნეთ _დამატებების_ წარწერაზე.
+
+![დამატებების გვერდი](/img/admin/addons-page.png)
+
+_გადადით დამატებების გვერდზე, რათა დაიწყოთ ენის ამრჩევის ინსტალაცია_
+
+იქ ნახავთ ყველა დამატებას, რომელსაც გთავაზობთ.
+
+უფასო დამატებები ხელმისაწვდომია ყველა ჩვენი მომხმარებლისთვის, მიუხედავად გამოწერის გეგმისა, რომელზეც ისინი დარეგისტრირდნენ.
+
+დააწკაპუნეთ _Install it Now!_ ღილაკზე დამატების მინიატურის ქვემოთ. შემდეგ გაააქტიურეთ ის Plugins გვერდზე.
+
+![დამატებების გვერდი ინსტალაციის ღილაკით](/img/admin/addons-page.png)
+
+_დააწკაპუნეთ ღილაკზე დამატების დასაინსტალირებლად_
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Language Selector addon -->
+
+_გაააქტიურეთ ის თქვენს Plugins გვერდზე_
+
+ახლა გადადით Ultimate Multisite-ის Settings მენიუში და შედით _Network Settings_ ჩანართში. იქ, გვერდის ბოლოში, ნახავთ ახალ სექციას სახელად _ენები_.
+
+![პარამეტრების გვერდი](/img/config/settings-general.png)
+
+_სრულიად ახალი სექცია გამოჩნდა!_
+
+შეგიძლიათ დატოვოთ ცარიელი, რათა ყველა ენა გამოჩნდეს ვარიანტებად, ან აირჩიოთ, რომლები გსურთ გახადოთ ხელმისაწვდომი. ენები არის ის ენები, რომლებიც თქვენს WordPress კონფიგურაციაში გაქვთ დაინსტალირებული.
+
+<!-- Screenshot unavailable: Language selection dropdown showing available languages on WP install -->
+
+_ამ WordPress ინსტალაციაზე ხელმისაწვდომი ენების სია_
+
+თქვენ მიერ შეტანილი ცვლილებების შენახვის შემდეგ, არჩეული ენების მქონე არჩევის მენიუ გამოჩნდება როგორც შესვლის გვერდზე, ისე რეგისტრაციის პროცესში.
+
+![შესვლისა და რეგისტრაციის პარამეტრები](/img/config/settings-login-registration.png)
+
+_ენის ამრჩევი შესვლის გვერდზე_
+
+![რეგისტრაციის გვერდი](/img/config/registration-page.png)
+
+_ენის ამრჩევი რეგისტრაციის პროცესში_
+
+## ენის დაყენება URL-ის მეშვეობით {#setting-the-language-via-the-url}
+
+ასევე შეგიძლიათ შეცვალოთ გვერდის ენა URL-ში locale პარამეტრის გადაცემით. თუ გსურთ, მაგალითად, იტალიურ ენაზე რეგისტრაციის გვერდზე გადამისამართება, დაამატეთ ?locale=it_IT URL-ს.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+ამის მუშაობისთვის ენა უნდა იყოს დაინსტალირებული თქვენს WordPress ქსელში.

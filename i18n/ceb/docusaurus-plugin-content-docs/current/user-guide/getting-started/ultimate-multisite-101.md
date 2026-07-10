@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ang Ultimate Multisite kay usa ka WordPress Multisite plugin nga nagtugot kanimo sa pagtanyag og WaaS o Websites as a Service ngadto sa mga customer. Sa dili pa kita magpadayon ug makat-on unsaon pagtabang sa imong negosyo ug sa mga customer, kinahanglan nato kining kuhaon ang pipila ka pundasyon nga kahibalo.
 
-## Ang WordPress Multisite
+## Ang WordPress Multisite {#the-wordpress-multisite}
 
 Kadaghanan kanato pamilyar sa stock-standard installation sa WordPress. Mahimo nimo kini himuon pinaagi sa control panel sa imong hosting provider o, para sa mga maisog, mag-set up og bag-ong web server ug database, magdownload sa core files ug magsugod sa proseso sa pag-install.
 
@@ -21,13 +21,13 @@ Sa esensya, ang usa ka WordPress multisite mahimong hunahunaon nga mao kini: Ang
 
 Para mas maintindihan niining mga pulong, tan-awon nato ang pipila ka basic nga termino nga naa dili lang sa dokumentasyon sa Ultimate Multisite kundi bisan sa tibuok WordPress community.
 
-### Ang Network
+### Ang Network {#the-network}
 
 Sa konteksto sa WordPress, ang multisite network kay diin daghang subsites pwede ma-manage gikan sa usa ra ka dashboard. Bisan pa nga nagkalain-lain ang paghimo og multisite network depende sa hosting provider, ang resulta kasagaran kay pipila ka dugang instruksyon sa file nga `wp-config.php` para ipahibalo sa WordPress nga nag-operate kini sa espesyal nga mode.
 
 Naa'y daghang kalainan tali sa usa ka multisite network ug usa ka stand-alone WordPress installation nga atong ipasabot gamay.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Ang usa sa labing dali nga desisyon nga kinahanglan nimo buhaton kay kung ang multisite installation mag-operate ba gamit og _subdirectories_ o _subdomains_. Ang Ultimate Multisite nagtrabaho bisan unsa ka maayo sa duha, pero naa'y pipila ka architectural differences tali sa duha ka configuration.
 
@@ -43,7 +43,7 @@ Sa _subdomain_ configuration, ang paggamit og wildcard SSL certificate usa sa la
 
 Bisan pa nga naa'y uban pang mga opsyon, kini kasagaran limitado sa sakop ug aplikasyon ug nanginahanglan og dugang configuration ug konsiderasyon bahin sa angay ba kini gamiton.
 
-#### Plugins ug Themes
+#### Plugins ug Themes {#plugins-and-themes}
 
 Unsa may gihatag sa WordPress, gikuha usab niini, labi na gikan sa panan-aw sa customer. Kung usa ka stand-alone WordPress installation kung ang site administrator mag-install og dili maayo nga plugin o dili magpabiling updated ang ilang installation, ang bugtong biktima ug kadaot niining lihok mao ang ilang kaugalingon. Apan, kung ang usa ka site administrator mag-install og dili maayo nga plugin sa multisite installation, naghimo kini og biktima sa matag site nga na-install sa network.
 
@@ -51,7 +51,7 @@ Tung rason ani kung i-configure isip multisite WordPress, ang abilidad para sa m
 
 Hangtod niini, ang network administrator maoy responsable sa pag-install og plugins ug themes sa network ug maghatag og mga permiso aron gamiton kining mga plugins ug themes sa mga network sites. Ang mga site administrator dili makapag-install og plugins ug themes o maka-access sa mga plugins ug themes nga wala gihatag sa ilang site.
 
-#### Mga User ug Administrator
+#### Mga User ug Administrator {#users-and-administrators}
 
 Sa WordPress Multisite, ang tanang network sites nag-share sa parehas nga database ug busa nag-share sila sa parehas nga mga user, roles, ug capabilities. Ang labing maayo nga paagi sa paghunahuna niini mao nga ang tanang users miyembro sa network ug dili lang sa usa ka partikular nga site.
 
@@ -63,13 +63,13 @@ Pagbalik sa punto sa ibabaw, bisan pa nga ang mga user accounts daw may kalabota
 
 Bisan pa dili kini usa ka bag-o nga konsepto sa mga enterprise system, kasagaran lisod kining masabtan para sa mga tawo nga pamilyar sa stand-alone WordPress installations diin mas dali gamiton ang pagdumala sa user.
 
-#### Media
+#### Media {#media}
 
 Kung ang mga network site nag-share og usa ka database sa WordPress Multisite, sila magpabilin og lahi nga mga ruta (paths) sa filesystem para sa media files.
 
 Ang standard na lokasyon sa WordPress (wp-content/uploads) nagpabilin; apan kini mausab ang path aron ipakita ang unique ID sa network site. Tungod niini, ang mga media files para sa usa ka network site modaghan isip wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Gihisgutan na nato kani nga adunay lahi nga mga benepisyo ang _subdomain_ kumpara sa _subdirectory_ configuration ug ania kini: mga path.
 
@@ -83,7 +83,7 @@ Sa usa ka _subdomain_ configuration, kini nga aksyon dili kinahanglan tungod kay
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 Sa configuration sa _subdirectory_ (sub-directory), ang posibilidad nga magka-conflict sa paghimo og mga ngalan naglakip na sa static pages isip main site ug network sites pareho ra ang path.
 
@@ -93,7 +93,7 @@ Aron mapugngan niini, ang WordPress naghatag og paagi aron ma-blacklist ang pipi
 
 Sa configuration sa _subdomain_, ang posibilidad nga magka-conflict sa ngalan giatiman pinaagi sa paggamit sa _subdomain_ kay kini unique sa network site ug dili may kalabotan sa main site.
 
-### Registration
+### Registration {#registration}
 
 Sulod sa network settings sa WordPress Multisite, naa'y pipila ka bag-ong opsyon sa user registration nga maghatag og kahigayonan sa mga bag-o ug existing users nga makakagamit og sites.
 
@@ -111,7 +111,7 @@ Sa maong paagi, kung ang usa ka user mag-login sila mag-login sa network ug sa k
 
 Bisan pa, kung ang gituyo nga kinaiya ug katuyoan sa multisite kay magtanyag og mga disparate network sites nga walay relasyon sa usag usa, halos kanunay nga gikinahanglan ang external o dugang mga plugin aron manipulahon ang user roles.
 
-### Domain ug SSL
+### Domain ug SSL {#domain-and-ssl}
 
 Atong hisgutan ang usa ka WordPress Multisite installation nga halos molapas sa atensyon nato - Wordpress.com. Kini mao ang labing lapad nga pananglitan sa WordPress multisite ug nagpakita sa ilang lapad nga mga abilidad sa pag-customize ug paghimo aron matubag ang usa ka katuyoan.
 
@@ -125,11 +125,11 @@ Para sa mga network administrator, kini naghatag og dugang kalisod pareho sa pag
 
 Sa maong paagi, bisan kung ang WordPress Multisite naghatag og pamaagi aron mapatabang ang [www.anotherdomain.com](http://www.anotherdomain.com) nga mahimong ma-mapa-mapa ng 'site1', ang network administrator magpabilin sa hagit sa pagdumala sa DNS entries gikan sa gawas ug sa pagpatuman (implementation) sa SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Sa pagsabot sa mga kalainan tali sa usa ka stand-alone WordPress installation ug usa ka Multisite installation, tan-awon nato kung unsaon pagka-ultimate arsenal ang Ultimate Multisite sa paghatag og Websites as a Service (WaaS).
 
-### Introduksyon
+### Introduksyon {#introduction}
 
 Ang Ultimate Multisite mao ang imong Swiss Army knife kung bahin sa paghimo og Website as a Service (WaaS). Hunahunaa ang Wix.com, Squarespace, WordPress.com ug unya hunahunaa ang pagpanag-iya sa imong kaugalingong serbisyo.
 
@@ -137,9 +137,9 @@ Sa sulod niini, ang Ultimate Multisite naggamit sa WordPress Multisite apan nagb
 
 Sa mosunod nga mga seksyon atong tan-awon ang pipila ka kasagaran nga mga gamit ug mga konsiderasyon nga gikinahanglan aron suportahan ang mga kaso niini.
 
-### Mga Gamit (Use Cases)
+### Mga Gamit (Use Cases) {#use-cases}
 
-#### Kaso 1: Usa ka Agency
+#### Kaso 1: Usa ka Agency {#case-1-an-agency}
 
 Kasagaran, ang nag-unang abilidad sa usa ka agency mao ang pagdisenyo og mga website uban ang mga bahin sama sa ilang hosting o marketing nga giilista isip dugang serbisyo.
 
@@ -165,7 +165,7 @@ Ang mga theme naghatag og parehas nga functionality, nga nagtugot sa pipila ka t
 
 Makahingalo ang mga agency sa Ultimate Multisite kay gitugotan sila sa pagbuhat sa ilang pinakmaayo—pagdisenyo og talagsaong web sites.
 
-#### Kaso 2: Niche Provider
+#### Kaso 2: Niche Provider {#case-2-niche-provider}
 
 Naa'y daan nga pulong nga nag-ingon, “buhat usa ka butang ug buhata kini sa maayo.” Para sa daghang mga espesyalista, ang niini nagpasabot sa paghimo og produkto o serbisyo labot sa usa ka sentro nga ideya.
 
@@ -179,7 +179,7 @@ Para sa usa ka provider sa niche sites ug serbisyo, kini naghatag og dili matapa
 
 Depende sa mga kinahanglanon kung ang _subdirectory_ o _subdomain_ configuration ang mas haom, diin ang pagpili sa arkitektura magdepende sa usa ka simple nga SSL certificate para sa _subdirectories_ o usa ka wildcard SSL certificate para sa _subdomains_.
 
-#### Kaso 3: WordPress Web Hosting
+#### Kaso 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Naa daghang paagi sa pag-host og WordPress sites pero bihira lang nga sayon sama sa paghatag og web space sa customer uban ang pre-installed version sa WordPress. Kini tungod kay kinahanglan magpundok ug maghunahuna og daghang mga desisyon ug konsiderasyon aron makahatag og usa ka makahuluganon nga serbisyo.
 
@@ -191,11 +191,11 @@ Para sa mga developer nga gusto mag-integrate uban sa Ultimate Multisite, ang so
 
 Dili na kinahanglan umasa sa daghang external plugins ug licenses, ang Ultimate Multisite naghatag og feature-rich ug pamaagi nga solusyon sama sa Wix, Squarespace, WordPress.com ug uban pa.
 
-### Architecture Considerations
+### Architecture Considerations {#architecture-considerations}
 
 Bisan tuod dili kini usa ka komprehensibo nga giya, kining mga butang kinahanglan magsilbing giya sa hustong pagpili sa mga teknolohiya aron suportahan ang Ultimate Multisite installation.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#shared-vs-dedicated-hosting}
 
 Dili tanan hosting provider parehas ug ang uban nagpraktis og sobrang density sa server. Ang mga low-cost provider kasagaran makakuha og kita pinaagi sa pag-maximize sa server density. Tungod niini, ang imong Ultimate Multisite installation mahimong usa ra sa pipila ka gatos nga sites sa samang server.
 
@@ -209,7 +209,7 @@ Ang Ultimate Multisite nailhan nga nagtrabaho uban sa pipila ka maayong hosting 
 
 Para sa listahan sa mga compatible provider ug kompleto nga instruksyon sa pag-set up alang sa matag usa, palihog tan-aw ang dokumentasyon sa Compatible Providers.
 
-#### Performance Considerations
+#### Performance Considerations {#performance-considerations}
 
 Ang Ultimate Multisite dili hinay nga application, kondili kini labaw sa tanan ka paspas. Bisan pa niana, kini molihok lang kutob sa maayo sa underlying application ug infrastructure ug makagamit lamang ni sa iyang naa kining access.
 
@@ -227,7 +227,7 @@ Tungod niini, kadaghanan sa mga network administrator naggamit og front-end cach
 
 Ang Ultimate Multisite naglakip og usa ka komplikado nga Cloudflare add-on nga nagtugot sa mga network administrator nga ibutang ang ilang instalasyon sa likod sa Cloudflare ug gamiton dili lang ang iyang caching capabilities kondili usab ang DNS hosting, SSL certificates, ug security mechanisms.
 
-#### Backups
+#### Backups {#backups}
 
 Mahimo nimo mangayo og 50 ka tawo alang sa tambag bahin sa backups ug makadawat og 50 ka lain-laing opinyon bahin sa mga backup strategies. Ang tubag mao: depende kini.
 
@@ -237,7 +237,7 @@ Para sa bahin niining seksyon, atong pagkasundahi nga ang backup usa ka point-in
 
 Sa pagsabot niini, ang tubag kung unsaon pagkab-ot sa mga backup ug unsa ang labing maayo para sa imong environment nagdepende og dako sa imong mga panginahanglan ug sa abilidad sa hosting provider nga matubag kining mga panginahanglan. Bisan pa, sulod sa rang gikan sa labing opinyonado ngadto sa dili kaayo opinyonado, ang ubos nga mga opsyon maghatag og pipila ka giya.
 
-#### Snapshots
+#### Snapshots {#snapshots}
 
 Ang snapshots mao ang "silver bullets" para sa backups kay dali ra kini, walay komplikasyon (hangtod nga gusto nimo i-restore), ug 'just work' lang. Apan kinahanglan gyud kini og tabang gikan sa imong provider ug kadaghanan niini naglangkob lamang kung naa kay VPS (Virtual Private Server) o susama. Pipila ka mga provider nga listado sa among dokumentasyon sa ‘Compatible Providers’ nagtanyag og backups nga dili na nanginahanglan og dugang pagpangutana o konsiderasyon gikan sa network administrator.
 
@@ -245,7 +245,7 @@ Kung ang traditional backup nag-target sa mga files ug database, ang snapshot na
 
 Ang snapshots mahimong magdala og dugang gasto gikan sa hosting provider apan kini usa ka insurance policy batok sa mga aksidente.
 
-#### External Scripts
+#### External Scripts {#external-scripts}
 
 Mao ni nga daghan ra gyud og external scripts ug solutions para mag-backup sa WordPress ug MySQL resources, ug maayo kini gamiton alang sa Ultimate Multisite kay kini usa ka WordPress plugin nga naggamit sa WordPress filesystem ug database. Busa ang solusyon nga nag-backup sa mga WordPress sites makatubag sa mga panginahanglan sa Ultimate Multisite.
 
@@ -253,7 +253,7 @@ Dili among maisugyot bisan unsa nga script kaysa uban, apan ang among general ng
 
 Kinahanglan nga mahatag kini nga kining mga scripts, samtang nag-run, makapataas sa system load nga kinahanglan iisip.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Halos walay problema sa WordPress nga dili masulbad pinaagi sa usa ka plugin ug kung dili nimo ma-manage ang external scripts, basin ang plugin mao ang sunod nga pinakamaayo nga opsyon.
 
@@ -261,7 +261,7 @@ Bisan pa nagkalain ang mga plugin sa ilang mga option ug features, kadaghanan pa
 
 Sa pagpili nimo sa imong plugin, hunahunaa nga siguruha nga kini multisite aware. Tungod sa paagi sa operasyon niini samtang nag-run ang backup, mahimong magbaton og temporary load sa server hangtod matapos ang proseso.
 
-#### Domain ug SSL
+#### Domain ug SSL {#domain-and-ssl-1}
 
 Daghan na kaayo ang gihisgutan bahin sa mga domain names sa multisite _subdomain_ mode. Usa ra ka universal nga solusyon para sa mga network administrator mao ang paggamit og wildcard DNS entries.
 
@@ -285,7 +285,7 @@ Para sa daghan, dali ra gamiton ang Cloudflare. Kinahanglan lang nga ibutang ang
 
 Gawas niini, kinahanglan pang mangita og mga alternatibo nga mao nganong nagrekomenda ang Ultimate Multisite og listahan sa Compatible Providers. Kini tungod kay ang proseso sa pag-set up sa DNS ug SSL mahimong lisod. Bisan pa, tungod sa integrasyon sa Ultimate Multisite niini nga mga provider, ang kalisod gidugangan ra ug ang pamaagi gi-automate na.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Dili gyud kini maoy saktong gamiton og dugang plugins aron maghatag og functionality sa inyong mga customer o network sites. Ang tanang plugins ba nagtrabaho uban sa WordPress Multisite ug Ultimate Multisite? Depende na ni.
 

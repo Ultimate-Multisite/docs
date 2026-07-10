@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM, WordPress multisite şəbəkənizə brauzerdə yerli AI inferensiyasını gətirir. Bu eklenti, WebLLM və MLC mühərrizi vasitəsilə böyük dil modellərini (LLM) tamamilə brauzerdə işlədir — API açarı, xarici çağırış, istifadəçinin cihazından çıxan məlumat yoxdur.
 
-## Əsas Xüsusiyyətlər
+## Əsas Xüsusiyyətlər {#key-features}
 
 - **Brauzer tərəfində inferensiya**: LLM, WebLLM/MLC vasitəsilə ziyarətçinin brauzerində yerli işləyir — server GPU-su tələb olunmur.
 - **Uçan söhbət widget-ı**: Daxil olub istifadəçilər, front-end-dən birbaşa brauzer tərəfində işləyən LLM-ə sual verə bilərlər.
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM, WordPress multisite şəbəkənizə brauzerdə
 - **IndexedDB cache**: Model çəkisi yükləmələri, default Cache API yolunu pozan CDN yönləndirmələrindən sonra da qalır.
 - **wpai filter inteqrasiyası**: `wpai_preferred_text_models` filterinə qoşulur, beləliklə AI Experiments xüsusiyyəti konfiqurasiya edildikdə brauzer mühərricisinə yönəlir.
 
-## Tələblər
+## Tələblər {#requirements}
 
 - WordPress 5.3 və ya daha yuxarı
 - PHP 7.4 və ya daha yuxarı
 - Ultimate Multisite plugin-i (aktiv)
 - WebGPU dəstəyi olan bir brauzer (Chrome 113+, Edge 113+, və ya WebGPU aktivləşdirilmiş Firefox Nightly)
 
-## Quraşdırma
+## Quraşdırma {#installation}
 
 1. Addon fayllarını `/wp-content/plugins/` kataloquna yükləyin.
 2. Plugin-i WordPress-də 'Plugins' menyusundan aktivləşdirin.
 3. Addon-u konfiqurasiya etmək üçün **Ultimate Multisite → AI Connector** yolunu izləyin.
 
-## Uçan Söhbət Widget-ı
+## Uçan Söhbət Widget-ı {#floating-chat-widget}
 
 Uçan söhbət widget-ı hər hansı daxil olub istifadəçinin, səhifədən ayrılmadan, front-end-dən birbaşa brauzer tərəfində işləyən LLM ilə qarşılıqlı əlaqə qurmasına imkan verir.
 
-### Nə Edir
+### Nə Edir {#what-it-does}
 
 Aktivləşdirildikdə, daxil olub istifadəçilər üçün hər front-end səhifəsinin küncündə bir söhbət ikonu görünür. İkonaya klikləmək, istifadəçinin suallar daxil edə və yerli şəkildə işləyən WebLLM modelindən cavablar ala biləcəyi bir söhbət paneli açır. Model tamamilə brauzerdə işlədiyi üçün cavablar məxfidir və heç bir server tərəfi emalını tələb etmir.
 
-### Admin-Bar Status Göstəricisi
+### Admin-Bar Status Göstəricisi {#admin-bar-status-indicator}
 
 WordPress admin paneli, WebLLM mühərrizi üçün cari vəziyyəti göstərən bir status göstəricisi ehtiva edir:
 
@@ -56,7 +56,7 @@ WordPress admin paneli, WebLLM mühərrizi üçün cari vəziyyəti göstərən 
 
 Göstərici səhifə yeniləməsi tələb etmədən real vaxtda yenilənir.
 
-### Widget-ı Aktivləşdirmək və ya Deaktivləşdirmək
+### Widget-ı Aktivləşdirmək və ya Deaktivləşdirmək {#how-to-enable-or-disable-the-widget}
 
 1. Şəbəkə administratorunda **Ultimate Multisite → AI Connector** yoluna keçin.
 2. **Connector** panelini tapın.
@@ -65,17 +65,17 @@ Göstərici səhifə yeniləməsi tələb etmədən real vaxtda yenilənir.
 
 Widget, şəbəkə administratoru bu imkanı veribsə, saytın öz admin panelindən də sayt-ə-sayt aktivləşdirilə və ya deaktivləşdirilə bilər.
 
-## Widget Parametrləri
+## Widget Parametrləri {#widget-settings}
 
 **Ultimate Multisite → AI Connector**-dakı Connector paneli, uçan söhbət widget-ı üçün aşağıdakı parametrləri ehtiva edir:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Bütün şəbəkə üçün söhbət widget-ını yandırır və ya söndürür. Dezaktivləşdirildikdə, widget istifadəçi rolundan asılı olmayaraq heç bir front-end səhifəsində görünmür.
 
 **Default:** Off
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Söhbət widget-ı istifadəçi onu açdıqda avtomatik olaraq sual göndərirmi, bunu idarə edir.
 
@@ -93,7 +93,7 @@ Söhbət widget-ı istifadəçi onu açdıqda avtomatik olaraq sual göndərirmi
 
 **Default:** Disabled
 
-## SharedWorker İşləmə Mühiti
+## SharedWorker İşləmə Mühiti {#sharedworker-runtime}
 
 Versiya 1.1.0, MLC mühərrizi üçün SharedWorker işləmə mühitini təqdim edir. Əvvəllər, WebLLM istifadə edən hər brauzer tabı modelinin öz nümunəsini yükləyir, bu da GPU yaddaşı üçün rəqabət yaradırdı və məhdud VRAM-lı cihazlarda performans problemlərinə səbəb olurdu.
 
@@ -105,29 +105,29 @@ SharedWorker işləmə mühiti ilə, bir tab mühərrizi hostu kimi çıxış ed
 
 SharedWorker istifadəçilər üçün görünməzdir. Admin-bar status göstəricisi həmişə fərdi tabın yox, paylaşılmış mühərrizi vəziyyətini əks etdirir.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Addon, AI Client SDK nümunəsinə uyğun gələn WordPress REST API sorğtlarını kəsməyən bir `apiFetch` middleware quraşdırır. Bu sorğular serverə loopback HTTP sorğusu göndərmək əvəzinə, SharedWorker-də işləyən yerli WebLLM brokerinə birbaşa yönləndirilir.
 
 Bu o deməkdir ki, standart WordPress `apiFetch` API-dən istifadə edərək AI endpoint-lərinə zəng edən plugin və mövzular, mövcud olduqda, heç bir kod dəyişikliyi tələb etmədən avtomatik olaraq brauzer tərəfindəki modeldən faydalanacaq.
 
-## Hooks və Filters
+## Hooks və Filters {#hooks-and-filters}
 
-### Filters
+### Filters {#filters}
 
 - `wpai_preferred_text_models` — WebLLM brauzer mühərrizi üçün üstün mətn modeli kimi qeydiyyatdan keçir. Addon, mühərrizi konfiqurasiya edilib və mövcuddur, o zaman avtomatik olaraq bu filterə qoşulur.
 - `ultimate_webllm_widget_enabled` — Müəyyən bir istifadəçi və ya kontekst üçün widget-ın aktiv vəziyyətini üstələyir. `true` və ya `false` qaytarın.
 - `ultimate_webllm_auto_prompt` — Widget-a göndərilməzdən əvvəl avtomatik sual mətnini dəyişdirir. Suallıq string və cari `WP_Post` obyektini alır.
 
-## Problemlərin Həlli
+## Problemlərin Həlli {#troubleshooting}
 
-### Söhbət widget-ı görünmür
+### Söhbət widget-ı görünmür {#the-chat-widget-does-not-appear}
 
 - İstifadəçinin daxil olub-olmadığını təsdiqləyin — widget yalnız autentifikasiya olunmuş istifadəçilərə göstərilir.
 - Connector panelində **Enable floating chat widget** düyməsinin yandırıldığından əmin olun.
 - İstifadəçinin brauzerinin WebGPU dəstəklədiyini yoxlayın (yuxarıdakı Tələblərə baxın).
 
-### Admin-bar göstəricisi "Error" göstərir
+### Admin-bar göstəricisi "Error" göstərir {#the-admin-bar-indicator-shows-error}
 
 Brauzer developer konsolunu (F12) açın və WebLLM ilə bağlı səhvləri axtarın. Ümumi səbəblər:
 
@@ -135,10 +135,10 @@ Brauzer developer konsolunu (F12) açın və WebLLM ilə bağlı səhvləri axta
 - Model çəkisi yüklənmədi — şəbəkə bağlantısını yoxlayın və brauzer developer alətliklərində IndexedDB cache-ini təmizləməyi sınayın (Application → IndexedDB).
 - Bir brauzer genişləndirilməsi SharedWorker-i bloklayır.
 
-### Model çəkisi hər dəfə yüklənir
+### Model çəkisi hər dəfə yüklənir {#model-weights-download-every-time}
 
 Addon, model çəkisi yükləmələrinin CDN yönləndirmələrindən sonra da qalmasını təmin etmək üçün IndexedDB-dən istifadə edir. Əgər çəkilər hər ziyarətdə yenidən yüklənirsə, IndexedDB-nin brauzer məxfiliyi parametrləri və ya genişləndirilməsi tərəfindən təmizlənmədiyinə əmin olun.
 
-## Changelog
+## Changelog {#changelog}
 
 Tam versiya tarixçəsi üçün [Changelog](./changelog) yoluna baxın.

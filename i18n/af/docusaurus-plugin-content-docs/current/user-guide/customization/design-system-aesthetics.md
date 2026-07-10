@@ -3,11 +3,11 @@ title: Ontwerpstelsel Estetika Vaardigheid
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetika van die Ontwerpstelsel
+# Estetika van die Ontwerpstelsel {#design-system-aesthetics-skill}
 
 Die **Estetika van die Ontwerpstelsel-vaardigheid** is 'n gelei benadering om die visuele identiteit van jou webwerf te verfyn. Dit help jou om konsekwente besluite te neem oor tipografie, kleur, spasie en bewegingstokens wat jou ontwerpstelsel definieer.
 
-## Wat is Estetika van die Ontwerpstelsel?
+## Wat is Estetika van die Ontwerpstelsel? {#what-is-design-system-aesthetics}
 
 Estetika van die Ontwerpstelsel is 'n gestruktureerde vaardigheid wat die volgende dek:
 
@@ -20,9 +20,9 @@ Estetika van die Ontwerpstelsel is 'n gestruktureerde vaardigheid wat die volgen
 
 Hierdie besluite word in jou tema se `theme.json` lêer vasgevang, wat 'n samehangende visuele stelsel skep.
 
-## Hoekom Estetika van die Ontwerpstelsel Gebruik?
+## Hoekom Estetika van die Ontwerpstelsel Gebruik? {#why-use-design-system-aesthetics}
 
-### Konsistensie
+### Konsistensie {#consistency}
 
 'n Ontwerpstelsel verseker:
 
@@ -31,7 +31,7 @@ Hierdie besluite word in jou tema se `theme.json` lêer vasgevang, wat 'n sameha
 - Spasering volg 'n voorspelbare patroon
 - Animasië voel verenig
 
-### Effektiwiteit
+### Effektiwiteit {#efficiency}
 
 In plaas daarvan om ontwerpbesluite bladsy vir bladsy te neem, doen jy:
 
@@ -39,7 +39,7 @@ In plaas daarvan om ontwerpbesluite bladsy vir bladsy te neem, doen jy:
 - Pas dit oral toe
 - Pas wêreldwyd aan deur net een waarde te verander
 
-### Fleksibiliteit
+### Fleksibiliteit {#flexibility}
 
 Jy kan:
 
@@ -47,9 +47,9 @@ Jy kan:
 - Eksperimenteer met verskillende estetika
 - Merk-konsistensie handhaaf terwyl jy ontwikkel
 
-## Aktivering van die Estetika van die Ontwerpstelsel-vaardigheid
+## Aktivering van die Estetika van die Ontwerpstelsel-vaardigheid {#triggering-the-design-system-aesthetics-skill}
 
-### Handmatige Aktivering
+### Handmatige Aktivering {#manual-activation}
 
 Jy kan die vaardigheid enige tyd begin:
 
@@ -69,7 +69,7 @@ of
 "Lei my deur ontwerpstelselbesluite"
 ```
 
-### Outomatiese Voorstelle
+### Outomatiese Voorstelle {#automatic-suggestions}
 
 Agents mag die vaardigheid voorstel wanneer jy:
 
@@ -78,9 +78,9 @@ Agents mag die vaardigheid voorstel wanneer jy:
 - Wil verbeter visuele konsistensie
 - Voorberei is om jou webwerf te loods
 
-## Die Estetika van die Ontwerpstelsel Proses
+## Die Estetika van die Ontwerpstelsel Proses {#the-design-system-aesthetics-process}
 
-### Stap 1: Tipografie
+### Stap 1: Tipografie {#step-1-typography}
 
 Die agent vra oor jou lettertipekeuses:
 
@@ -110,7 +110,7 @@ Die agent definie dan:
 - **Gewig-skaal**: Lettertipegewigte (reëlmatig, medium, vet, ens.)
 - **Lynehoogte**: Spasie tussen lyne vir leesbaarheid
 
-### Stap 2: Kleurpalet
+### Stap 2: Kleurpalet {#step-2-color-palette}
 
 ```
 Kom ons definieer jou kleurpalet.
@@ -140,7 +140,7 @@ Die agent skep 'n volledige palet insluitend:
 - Semantiese kleure (sukses, waarskuwing, fout)
 - Hover- en aktiewe toestande
 
-### Stap 3: Spasering
+### Stap 3: Spasering {#step-3-spacing}
 
 ```
 Hoeveel asemruimte wil jy hê?
@@ -162,7 +162,7 @@ Die agent definie spasie-tokens:
 - Skaal: xs, sm, md, lg, xl, 2xl
 - Spesifieke waardes vir padding, marge, spasie
 
-### Stap 4: Bande en Skaduwees
+### Stap 4: Bande en Skaduwees {#step-4-borders-and-shadows}
 
 ```
 Visuele diepte en definisie:
@@ -185,7 +185,7 @@ Die agent skep:
 - Skaduwees-tokens vir verhogingsvlakke
 - Bande-breedte tokens
 
-### Stap 5: Beweging en Animasië
+### Stap 5: Beweging en Animasië {#step-5-motion-and-animation}
 
 ```
 Hoe moet jou webwerf voel wanneer dit interaktief is?
@@ -207,9 +207,9 @@ Die agent definie:
 - Easing-funksies (ease-in, ease-out, ease-in-out)
 - Animasië-sleutelraamwerk vir algemene interaksies
 
-## Toepassing van Estetika van die Ontwerpstelsel
+## Toepassing van Estetika van die Ontwerpstelsel {#applying-design-system-aesthetics}
 
-### Outomatiese Toepassing
+### Outomatiese Toepassing {#automatic-application}
 
 Nadat jy die vaardigheid voltooi het, doen die agent:
 
@@ -218,7 +218,7 @@ Nadat jy die vaardigheid voltooi het, doen die agent:
 3. Genereer blokstyls om by die nuwe stelsel te pas
 4. Aktiveer die opgedateerde tema
 
-### Handmatige Toepassing
+### Handmatige Toepassing {#manual-application}
 
 Jy kan ook `theme.json` direk redigeer:
 
@@ -257,9 +257,9 @@ Jy kan ook `theme.json` direk redigeer:
 }
 ```
 
-## Bekyk Jou Ontwerpstelsel
+## Bekyk Jou Ontwerpstelsel {#viewing-your-design-system}
 
-### Vra die Agent
+### Vra die Agent {#ask-the-agent}
 
 ```
 "Toon my my ontwerpstelsel"
@@ -273,13 +273,13 @@ of
 
 Die agent sal jou tipografie, kleure, spasie en ander tokens wys.
 
-### Bekyk theme.json
+### Bekyk theme.json {#view-themejson}
 
 Maak `/wp-content/themes/[theme-name]/theme.json` oop in 'n teksredigeerder om die rauwe token-definisië te sien.
 
-## Opdatering van Jou Ontwerpstelsel
+## Opdatering van Jou Ontwerpstelsel {#updating-your-design-system}
 
-### Vinnige Opdaterings
+### Vinnige Opdaterings {#quick-updates}
 
 Vra die agent vir spesifieke veranderinge:
 
@@ -299,7 +299,7 @@ of
 "Verander die koplettertipe na 'n serif"
 ```
 
-### Volledige Herontwerp
+### Volledige Herontwerp {#full-redesign}
 
 Hardloop die Estetika van die Ontwerpstelsel-vaardigheid weer:
 
@@ -309,7 +309,7 @@ Hardloop die Estetika van die Ontwerpstelsel-vaardigheid weer:
 
 Dit sal jou deur al die besluite lei, begin met jou huidige waardes.
 
-### Deels Opdaterings
+### Deels Opdaterings {#partial-updates}
 
 Pas spesifieke aspekte aan:
 
@@ -317,15 +317,15 @@ Pas spesifieke aspekte aan:
 "Pas net die kleurpalet aan, hou alles anders by"
 ```
 
-## Beste Praktyk van die Ontwerpstelsel
+## Beste Praktyk van die Ontwerpstelsel {#design-system-best-practices}
 
-### Konsistensie
+### Konsistensie {#consistency-1}
 
 - Gebruik dieselfde tokens oral
 - Moet nie eenmalige kleure of groottes skep nie
 - Verwys na tokens in plaas van hardgekodeerde waardes
 
-### Naamgewing
+### Naamgewing {#naming}
 
 Gebruik duidelike, semantiese name:
 
@@ -335,7 +335,7 @@ Gebruik duidelike, semantiese name:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skaalbaarheid
+### Skaalbaarheid {#scalability}
 
 Ontwerp jou stelsel om te skaal:
 
@@ -343,7 +343,7 @@ Ontwerp jou stelsel om te skaal:
 - Skep skale (xs, sm, md, lg, xl) in plaas van willekeurige waardes
 - Beplan vir toekomstige byvoegings
 
-### Dokumentasie
+### Dokumentasie {#documentation}
 
 Dokumenteer jou ontwerpstelsel:
 
@@ -351,9 +351,9 @@ Dokumenteer jou ontwerpstelsel:
 - Wanneer om elke token te gebruik
 - Uitsonderings en randgevalle
 
-## Algemene Ontwerpstelsel Patrone
+## Algemene Ontwerpstelsel Patrone {#common-design-system-patterns}
 
-### Moderne Minimalis
+### Moderne Minimalis {#modern-minimalist}
 
 - Sans-serif tipografie (Inter, Helvetica)
 - Beperkte kleurepalet (2-3 kleure)
@@ -361,7 +361,7 @@ Dokumenteer jou ontwerpstelsel:
 - Subtiele skaduwees
 - Gladde, vinnige animasies
 
-### Warm en Vriendelik
+### Warm en Vriendelik {#warm-and-friendly}
 
 - Meng van serif en sans-serif
 - Warm kleurepalet (oranje, warm grys)
@@ -369,7 +369,7 @@ Dokumenteer jou ontwerpstelsel:
 - Sagte skaduwees
 - Speelse animasies
 
-### Professionele Korporatief
+### Professionele Korporatief {#professional-corporate}
 
 - Skoon sans-serif (Roboto, Open Sans)
 - Neutrale palet met aksentkleur
@@ -377,7 +377,7 @@ Dokumenteer jou ontwerpstelsel:
 - Minimale skaduwees
 - Subtiele oorgange
 
-### Kreatief en Oulik
+### Kreatief en Oulik {#creative-and-bold}
 
 - Kenmerkende tipografie
 - Vet kleurepalet
@@ -385,7 +385,7 @@ Dokumenteer jou ontwerpstelsel:
 - Sterk skaduwees
 - Merkbare animasies
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **My ontwerpstelselveranderinge word nie getoon nie**
 - Maak jou browser-cache skoon
@@ -403,7 +403,7 @@ Dokumenteer jou ontwerpstelsel:
 - Redigeer handmatig theme.json na vorige waardes
 - Hardloop die vaardigheid weer met verskillende keuses
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 Nadat jy jou ontwerpstelsel gedefinieer het:
 

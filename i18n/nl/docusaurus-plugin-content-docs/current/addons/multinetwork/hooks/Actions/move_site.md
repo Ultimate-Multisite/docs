@@ -4,11 +4,11 @@ title: Actie - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# Actie: move_site
+# Actie: move_site {#action-movesite}
 
 Wordt geactiveerd nadat een site naar een nieuw netwerk is verplaatst.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Wordt geactiveerd nadat een site naar een nieuw netwerk is verplaatst.
 | $old_network_id | `int` | ID van het oorspronkelijke netwerk voor de site. |
 | $new_network_id | `int` | ID van het netwerk waar de site naartoe is verplaatst. |
 
-### Sinds
+### Sinds {#since}
 
 - 1.3.0
 
-### Bron
+### Bron {#source}
 
 Defined in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) at line 1587

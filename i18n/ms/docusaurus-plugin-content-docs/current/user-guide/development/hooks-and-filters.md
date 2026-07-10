@@ -3,7 +3,7 @@ title: Cangkuk dan Penapis
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hook dan Penapis Ultimate Multisite
+# Hook dan Penapis Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite terdiri daripada banyak fungsi dan pertanyaan pangkalan data. Ia mempunyai hook dan penapis yang membolehkan anda mengubah suai atau menambah kod baharu kepada fungsi sedia ada.
 

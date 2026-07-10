@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons တွေက Ultimate Multisite ကို ပိုမိုလုပ်ဆောင်နိုင်တဲ့ စွမ်းရည်တွေနဲ့ ပေါင်းစပ်မှုတွေ (integrations) အများအပြားကို ထပ်ပေါင်းပေးထားတာ ဖြစ်ပါတယ်။ Addons အများစုဟာ အခကြေးငွေ ပေးရတဲ့ ပုံစံဖြစ်ပြီး [ultimatemultisite.com](https://ultimatemultisite.com) ကနေ ဝယ်ယူနိုင်ပါတယ်။
 
-## Installation
+## Installation {#installation}
 
 Addons တွေကို နည်းလမ်းနှစ်မျိုးနဲ့ ထည့်သွင်းနိုင်ပါတယ်-
 
 1. **Addon Page မှတစ်ဆင့်** -- WordPress admin ထဲက သင့် site ရဲ့ addon စီမံခန့်ခွဲမှု စာမျက်နှာကို သွားရောက်ပါ။
 2. **Manual Download (ကိုယ်တိုင် ဒေါင်းလုဒ်လုပ်ခြင်း)** -- [သင့်အကောင့်](https://ultimatemultisite.com/my-account/downloads/) ကနေ ဒေါင်းလုဒ်လုပ်ပြီး Plugins > Add New ကနေ အပ်လုဒ်လုပ်ပါ။
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

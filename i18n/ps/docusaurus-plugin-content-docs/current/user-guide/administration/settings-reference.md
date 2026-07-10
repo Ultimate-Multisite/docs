@@ -1,40 +1,46 @@
 ---
-title: د تنظیمات مرجع
+title: د ترتیباتو مرجع
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# مرجع تنظیمات
+# د تنظیماتو مرجع {#settings-reference}
 
-این صفحه تنظیماتی را دنبال می‌کند که بر مدیریت روزمره و تغییرات اخیر رفتار در Ultimate Multisite تأثیر می‌گذارند.
+دا پاڼه هغه تنظیمات څاري چې ورځنۍ اداره او په Ultimate Multisite کې وروستي چلند بدلونونه اغېزمنوي.
 
-## سایر گزینه‌ها
+## نور اختیارونه {#other-options}
 
-بخش **Other Options** زیر **Ultimate Multisite > Settings > Login & Registration** ظاهر می‌شود.
+د **نور اختیارونه** ساحه د **Ultimate Multisite > Settings > Login & Registration** لاندې ښکاري.
 
-| Setting | Description |
+| تنظیم | تشریح |
 |---|---|
-| **Enable Jumper** | ابزار ناوبری سریع Jumper را در بخش مدیریت نشان می‌دهد. از آن برای پرش مستقیم به صفحات Ultimate Multisite، اشیاء شبکه و مقاصد مدیریتی پشتیبانی شده استفاده کنید. اگر نمی‌خواهید این میانبر قابل مشاهده باشد، آن را غیرفعال کنید. |
+| **Jumper فعال کړئ** | د admin ساحه کې د Jumper چټک تګ‌راتګ وسیله ښيي. دا وکاروئ چې نېغ په نېغه Ultimate Multisite پردو، د شبکې څیزونو، او ملاتړ شوو admin ځایونو ته ولاړ شئ. که نه غواړئ دا لنډلار ښکاره وي، دا غیرفعال کړئ. |
 
-## گزارش خطا و تله‌متری (Error reporting and telemetry)
+## د تېروتنو راپور ورکول او telemetry {#error-reporting-and-telemetry}
 
-تنظیم قبلی مربوط به انتخاب برای گزارش خطا از صفحه تنظیمات حذف شده است. تله‌متری ناشناس غیرفعال است و هیچ دکمه‌ای در رابط کاربری برای فعال کردن آن وجود ندارد.
+د تېروتنو د راپور ورکولو پخوانی opt-in تنظیم د تنظیماتو له پاڼې لرې شوی دی. بې‌نومه telemetry غیرفعاله ده او د فعالولو لپاره یې هېڅ UI سویچ نشته.
 
-اگر شما کتابخانه‌های عملیاتی داخلی یا اسکرین‌شات‌هایی برای صفحه تنظیمات نگهداری می‌کنید، ارجاعات به فیلد قدیمی انتخاب گزارش خطا را حذف کنید تا مدیران به دنبال تنظیماتی نباشند که دیگر وجود ندارد.
+که تاسو د تنظیماتو پاڼې لپاره داخلي runbooks یا screenshots ساتئ، د پخواني error-reporting opt-in field ته اشارې لرې کړئ څو مدیران د داسې تنظیم په لټه کې نه شي چې نور شتون نه لري.
 
-## تنظیمات وارد کردن/صادر کردن (Import/Export settings)
+## د واردولو/صادرولو تنظیمات {#importexport-settings}
 
-تب **Import/Export** توضیح می‌دهد که کدام تنظیمات آن را کنترل می‌کند و مستقیماً به **Ultimate Multisite > Site Export** برای آرشیوهای سایت و شبکه لینک می‌شود. از تب تنظیمات برای پیکربندی وارد کردن/صادر کردن استفاده کنید، از **Tools > Export & Import** برای گردش کار صادر/وارد کردن تک‌سایتی استفاده کنید، و زمانی که نیاز به آرشیو صادر کامل شبکه دارید از ابزار Site Export استفاده کنید.
+د **Import/Export** تنظیماتو ټب تشریح کوي چې کوم تنظیمات کنټرولوي او د site او network آرشیفونو لپاره نېغ په نېغه **Ultimate Multisite > Site Export** ته لینک ورکوي. د واردولو/صادرولو د پیکربندۍ لپاره د تنظیماتو ټب وکاروئ، د single-site د صادرولو/واردولو بهیر لپاره **Tools > Export & Import** وکاروئ، او کله چې بشپړ Network Export آرشیف ته اړتیا لرئ د Site Export وسیله وکاروئ.
 
-## تنظیمات اتصال ارائه‌دهنده هوش مصنوعی (AI provider connector settings)
+## د Domain Seller HostAfrica د balance خبرداری {#domain-seller-hostafrica-balance-warning}
 
-تنظیمات اتصال ارائه‌دهنده هوش مصنوعی اکنون فقط استخر حساب‌های OAuth پشتیبانی شده را نمایش می‌دهند:
+کله چې د Domain Seller addon له HostAfrica سره نښلول شوی وي، د network مدیران اوس د لغوه کېدونکي balance-low خبرداری ویني کله چې د reseller account balance د باور وړ domain ثبت یا نوي کولو پروسس لپاره ډېر ټیټ وي.
 
-| غوډونکی (Provider) | تنظیم کولو جریان (Setup flow) |
+دا خبرتیا د عملیاتي خبرداري په توګه وګڼئ: مخکې له دې چې نور paid domain ثبتونه ومنئ، د HostAfrica reseller balance لوړ کړئ، بیا د Domain Seller تنظیماتو یا د domain-monitoring پردې ته راوګرځئ څو تایید کړئ چې ثبتونه او نوي کول په عادي ډول دوام کولی شي.
+
+## د AI provider connector تنظیمات {#ai-provider-connector-settings}
+
+د AI provider connector تنظیمات اوس یوازې ملاتړ شوي OAuth account pools ښکاره کوي:
+
+| Provider | Setup flow |
 |---|---|
-| **Anthropic Max** | د OAuth د ګڼو Anthropic Max حسابونو سره تړلی کړئ او له OAuth د ګڼو داسې صورت کې manuall OAuth fallback کارول چې که sandboxed browser په خودکار ډول redirect نه کولای شي. |
-| **OpenAI ChatGPT/Codex** | د ChatGPT حسابونه له همینو OAuth pool workflow سره تړلي کړئ. کله چې اکاونټ تړلی وي، Connector-supported operations کولی شي ChatGPT Codex tool calls کارول. |
-| **Google AI Pro** | د Google AI Pro حسابونه له OAuth سره تړلی کړئ، بیا که لیست به तुरुन्तै نه بدله شي، connector refresh وکړئ. |
+| **Anthropic Max** | د OAuth تڼۍ په وسیله یو یا څو Anthropic Max accountونه ونښلوئ. کله چې sandboxed browser redirect په اتومات ډول بشپړ نه شي کړای، د manual OAuth fallback وکاروئ. |
+| **OpenAI ChatGPT/Codex** | د همدې OAuth pool بهیر له لارې ChatGPT accountونه ونښلوئ. Connector-supported عملیات د account له نښلېدو وروسته د ChatGPT Codex tool calls کارولی شي. |
+| **Google AI Pro** | د OAuth له لارې Google AI Pro accountونه ونښلوئ، بیا که د account لېست سمدستي تازه نه شي، connector تازه کړئ. |
 
-Cursor Pro تر اوسه لاړ شوی غوډونکی (provider) دی او یې پېچولو داخلي screenshot، runbooks یا onboarding steps چې Cursor Pro setup fields یا connector paths ته اشاره کوي، منوړئ.
+Cursor Pro نور ملاتړ شوی provider نه دی. زاړه داخلي screenshots، runbooks، یا onboarding ګامونه لرې کړئ چې د Cursor Pro setup fields یا connector paths یادونه کوي.
 
-کله چې د provider حسابونه اضافه یا حذف کوئ، هغه اکاونټ چې refresh کیږي یا حذف کیږي لپاره یو لاغور ایمیل همایئ او Connector-backed operations تسته test کولو څخه مخکې settings save کړئ.
+کله چې provider accountونه زیات یا لرې کوئ، د هغه account لپاره چې تازه کېږي یا حذفېږي معتبر email address دننه کړئ او د connector-backed عملیاتو له ازمویلو مخکې د provider تنظیمات خوندي کړئ.

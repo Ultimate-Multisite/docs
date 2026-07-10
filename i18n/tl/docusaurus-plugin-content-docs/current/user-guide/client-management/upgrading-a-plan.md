@@ -3,7 +3,7 @@ title: Pag-upgrade ng Plano
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Pag-upgrade ng Plano (v2)
+# Pag-upgrade ng Plano (v2) {#upgrading-a-plan-v2}
 
 _**MAHALAGANG PAUNAWA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 
@@ -39,7 +39,7 @@ Pagkatapos matapos ang checkout, ang mga bagong produkto ay idadagdag sa account
 
 ##
 
-## Mga Daanan para Mag-upgrade at Mag-downgrade (Upgrade and Downgrade Paths)
+## Mga Daanan para Mag-upgrade at Mag-downgrade (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Sa bawat produkto mo, magkakaroon ka ng tab na **Up & Downgrades**. Ang unang opsyon sa tab na iyan ay isang field na tinatawag na **Plan Group**.
 

@@ -4,11 +4,11 @@ title: Filtro - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filtro: wu_username_from_email
+# Filtro: wu_username_from_email {#filter-wuusernamefromemail}
 
 Filtra il nome utente del nuovo cliente.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Filtra il nome utente del nuovo cliente.
 | $new_user_args | `array` | Array di nuovi argomenti utente, forse includendo nome e cognome. |
 | $suffix | `string` | Aggiungi una stringa al nome utente per renderlo unico. |
 
-### Da
+### Da {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) alla riga 516

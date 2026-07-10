@@ -3,11 +3,11 @@ title: Cén fáth Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Cadra Uál Ultimate Multisite
+# Cadra Uál Ultimate Multisite {#why-ultimate-multisite}
 
 Má tá an ardán seo, is féidir leat a bheith ag iarraidh go bhfuil an plugin beag seo an soluín chun do chuid ideanaíú a dhéanamh. Tá sé ar fáil an t-am astair, agus ba mhaith linn go bhfuil an t-amastair atá ag iarraidh an t-amasan seo a fhágáil.
 
-## Cad é Ultimate Multisite?
+## Cad é Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Is é Ultimate Multisite plugin WordPress Multisite a bheith a fháil chun a bheith ag cur isteach WaaS (Website as a Service) do chuid oileúin. Le linn úsáid an plugin, is féidir leat teacht ag cur isteach ardánais subscription agus a bheith ag iarraidh na chuid oileúin a ghairt go láidir chun site a chur ar fáil i gceangailte network Multisite.
 
@@ -15,7 +15,7 @@ Leanníonn Ultimate Multisite duit a fháil ar do chuid breiseanna leat (gateway
 
 Agus seo ní é an chomhthéacs atá ag dul ar an chéad chéim nuair a bhíonn tú ag cur isteach, toiscintíonn tú na rathacha a fháil le add-ons agus webhooks.
 
-## Áirítear eile
+## Áirítear eile {#other-features}
 
 Taispeann Ultimate Multisite hefyd:
 
@@ -33,11 +33,11 @@ Agus níos fearr:
 
 * Search and Replace API: Is féidir leat hefyd a chríú (annotate) an templates site le placeholders mar {{site_name}} agus a úsáid an Search and Replace API chun an placeholderí seo a bhfillte go dtí le thôngas a thugann do chuidisteachtán tar éis an signup, go hiomlán.
 
-## Uimhreacha úsáideach (Use cases)
+## Uimhreacha úsáideach (Use cases) {#use-cases}
 
 An t-amachas anseo chun some of the possible use cases ar Ultimate Multisite.
 
-### Cas 1: An Taisce (An Agency)
+### Cas 1: An Taisce (An Agency) {#case-1-an-agency}
 
 Ar chuid na ghráinne core dearschaidh an t-amachas ag teachtaireachtaí website le haghaidh ceanglaise mar a bheith iad ag cur isteach as aistriúcháin nó marketing mar seirbhísí eile.
 
@@ -47,7 +47,7 @@ Bíonn control áitne ar plugins agus themes ag cur isteach ar chuid chuid táir
 
 Bíonn an t-aonachais ar Ultimate Multisite ag fháil ar an t-aonachais leat a bheith ag é a dhéanamh is gorcais - a bheith ag déanamh an rud atá agat is go maith: déanamh úr-fháilteachtaí.
 
-### Cas 2: Cothromchaithe Niche (Niche Provider)
+### Cas 2: Cothromchaithe Niche (Niche Provider) {#case-2-niche-provider}
 
 Tá seachtainn uigeach a bhíonn ar fáil a nglúid, "Déan aon rud agus déan é go maith". Do ardánacha eile, is é sin a bheith ag cur isteach sảnú nó ardán ar chuid ideamh mór.
 
@@ -57,7 +57,7 @@ Is mise áitse mionnta chuireann Ultimate Multisite, is site template is é seo 
 
 Do ardánach ar niche sites agus ardánacha, leonaidh seo ag cur chuid féin is áirítear inbhairtacht ar fáil iadach leat a bheith ag déanamh site réidh chun an t-aonachais leat a chur ar fáil. Beidh an custaiméar ag cur isteach rud beag chun an ardán a deánadh.
 
-### Cas 3: Web Hosting WordPress
+### Cas 3: Web Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Tá cur ann ambearta go leann chun sites WordPress a chomhfaidh, ach go lúth níl é sin is amháin a chur ar fáil spás web do chustaiméar le WordPress ag cur isteach. Is é sin mar tá cur de dhuit agus an-diúchais ag cur isteach chun ardán a chur ar fáil go mór.
 

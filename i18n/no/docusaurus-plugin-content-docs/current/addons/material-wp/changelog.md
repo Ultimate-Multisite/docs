@@ -3,7 +3,7 @@ title: Material WP Changelog
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Endringslogg
+# Material WP Endringslogg {#material-wp-changelog}
 
 Versjon 1.1.15 - 26/01/2026
 * Forbedret: Kode stil og formatering;

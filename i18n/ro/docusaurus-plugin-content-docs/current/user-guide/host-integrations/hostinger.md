@@ -1,22 +1,22 @@
 ---
 title: Integrare Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrarea Hostinger (hPanel)
+# Integrarea Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Prezentare generală
+## Prezentare generală {#overview}
 
 Hostinger este un furnizor popular de găzduire web care dispune de un panou de control modern numit hPanel. Integrarea Ultimate Multisite Hostinger permite sincronizarea automată a domeniilor între Ultimate Multisite și hPanel-ul Hostinger, permițându-vă să gestionați automat mapările de domenii și subdomenii direct din administratorul WordPress.
 
-## Funcționalități
+## Funcționalități {#features}
 
 - Crearea automată de domenii addon în hPanel
 - Crearea automată de subdomenii în hPanel (pentru instalări multisite cu subdomenii)
 - Eliminarea domeniului atunci când mapările sunt șterse
 - Integrare fluidă cu API-ul de management al domeniilor al hPanel
 
-## Cerințe
+## Cerințe {#requirements}
 
 Pentru a folosi integrarea Hostinger, aveți nevoie de:
 
@@ -35,9 +35,9 @@ Opțional, puteți defini și:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API implicit
 ```
 
-## Instrucțiuni de instalare
+## Instrucțiuni de instalare {#setup-instructions}
 
-### 1. Generați Token-ul API Hostinger
+### 1. Generați Token-ul API Hostinger {#1-generate-your-hostinger-api-token}
 
 1. Autentizați-vă în contul Hostinger și accesați hPanel
 2. Navigați la **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API 
    - Managementul subdomenilor
 6. Copiați token-ul generat și stocați-l în siguranță
 
-### 2. Găsiți ID-ul Contului
+### 2. Găsiți ID-ul Contului {#2-find-your-account-id}
 
 1. În hPanel, mergeți la **Account Settings** → **Account Information**
 2. ID-ul Contului dvs. este afișat pe această pagină
 3. Copiați și salvați acest ID pentru următorul pas
 
-### 3. Adăugați Constantele în wp-config.php
+### 3. Adăugați Constantele în wp-config.php {#3-add-constants-to-wp-configphp}
 
 Adăugați următoarele constante în fișierul dvs. `wp-config.php`:
 
@@ -69,7 +69,7 @@ Dacă contul dvs. Hostinger folosește un endpoint API diferit, îl puteți pers
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Activați Integrarea
+### 4. Activați Integrarea {#4-enable-the-integration}
 
 1. În administratorul WordPress, mergeți la **Ultimate Multisite > Settings**
 2. Navigați la tab-ul **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Activați integrarea **Hostinger (hPanel)**
 5. Faceți clic pe **Save Changes**
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
-### Domeniile Addon
+### Domeniile Addon {#addon-domains}
 
 Când mapați un domeniu în Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Când mapați un domeniu în Ultimate Multisite:
 2. Domeniul este configurat să indice către directorul rădăcină (root directory)
 3. Când o mapare de domeniu este eliminată, integrarea elimină automat domeniul addon din hPanel
 
-### Subdomenii
+### Subdomenii {#subdomains}
 
 Pentru instalările multisite cu subdomenii, atunci când este creat un site nou:
 
@@ -95,7 +95,7 @@ Pentru instalările multisite cu subdomenii, atunci când este creat un site nou
 2. Trimite o cerere către API-ul Hostinger pentru a adăuga subdomeniul
 3. Subdomeniul este configurat să indice către directorul rădăcină (root directory)
 
-## Note importante
+## Note importante {#important-notes}
 
 - Integrarea folosește API-ul REST al Hostinger pentru a comunica cu contul dvs.
 - Token-ul API trebuie să aibă permisiunile necesare pentru managementul domeniilor și subdomenilor
@@ -103,33 +103,33 @@ Pentru instalările multisite cu subdomenii, atunci când este creat un site nou
 - Cererile API sunt făcute în siguranță prin HTTPS
 - Păstrați token-ul API în siguranță și nu îl împărtășiți niciodată public
 
-## Depanșare
+## Depanșare {#troubleshooting}
 
-### Probleme de conexiune API
+### Probleme de conexiune API {#api-connection-issues}
 
 - Verificați dacă token-ul API este corect și nu a expirat
 - Asigurați-vă că ID-ul Contului este corect
 - Verificați că token-ul API are permisiunile necesare pentru managementul domeniilor
 - Verificați că contul Hostinger este activ și în regulă
 
-### Domeniul nu este adăugat
+### Domeniul nu este adăugat {#domain-not-added}
 
 - Verificați jurnalele Ultimate Multisite pentru orice mesaje de eroare
 - Verificați dacă domeniul nu este deja adăugat în contul dvs. Hostinger
 - Asigurați-vă că contul Hostinger nu și-a atins limita de domenii addon
 - Confirmați că domeniul indică corect către nameserver-ele Hostinger
 
-### Probleme cu certificatele SSL
+### Probleme cu certificatele SSL {#ssl-certificate-issues}
 
 - Integrarea nu gestionează emiterea certificatelor SSL
 - Hostinger oferă de obicei certificate SSL gratuite prin AutoSSL
 - Puteți gestiona certificatele SSL direct în hPanel, sub **SSL/TLS**
 - Alternativ, folosiți Let's Encrypt cu funcția AutoSSL a Hostinger
 
-## Suport
+## Suport {#support}
 
 Pentru ajutor suplimentar cu integrarea Hostinger, vă rugăm să consultați:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

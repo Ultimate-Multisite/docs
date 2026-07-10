@@ -3,11 +3,11 @@ title: વેબહૂક સંચાલન
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# વેબહૂક હેન્ડલિંગ
+# વેબહૂક હેન્ડલિંગ {#webhook-handling}
 
 બહારની સર્વિસમાંથી ઇવેન્ટ્સ મેળવવા અને Ultimate Multisite સાથે ડેટા sync કરવા માટે કસ્ટમ વેબહૂક એન્ડપોઇન્ટ્સ બનાવો.
 
-## કસ્ટમ વેબહૂક એન્ડપોઇન્ટ
+## કસ્ટમ વેબહૂક એન્ડપોઇન્ટ {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## સુરક્ષા બાબતો
+## સુરક્ષા બાબતો {#security-considerations}
 
 - હંમેશા HMAC અથવા shared secret નો ઉપયોગ કરીને વેબહૂક સિગ્નેચર (webhook signatures) ની ચકાસણી કરો.
 - તમારા REST route પર `permission_callback` નો ઉપયોગ કરો — પ્રોડક્શનમાં ક્યારેય તેને `__return_true` પર સેટ કરશો નહીં.

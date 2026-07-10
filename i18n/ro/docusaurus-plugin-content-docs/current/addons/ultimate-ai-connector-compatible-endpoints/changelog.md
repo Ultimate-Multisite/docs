@@ -3,9 +3,9 @@ title: Ultimate AI Connector pentru Endpoint-uri Compatibile Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Jurnal de modificări pentru Ultimate AI Connector pentru puncte de acces compatibile
+# Jurnal de modificări pentru Ultimate AI Connector pentru puncte de acces compatibile {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versiunea 2.0.0 — Lansat pe 2026-04-24
+## Versiunea 2.0.0 — Lansat pe 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nou: Suport multi-furnizori — configurați mai multe puncte de acces AI și rutează cererile cu redirecționare automată (fallback) între furnizori.
 * Corecție: Integrarea SDK multi-furnizori cu ID-uri corecte ale furnizorilor, URL-uri de înregistrare și domeniul de aplicare (scoping) al filtrului HTTP pentru fiecare furnizor.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Corecție: Eliminat apelul HTTP blocant care se declanșa la fiecare încărcare a paginii.
 * Îmbunătățit: Fluxurile de lucru GitHub Actions actualizate la Node.js 24.
 
-## Versiunea 1.0.0 — Lansare inițială
+## Versiunea 1.0.0 — Lansare inițială {#version-100--initial-release}

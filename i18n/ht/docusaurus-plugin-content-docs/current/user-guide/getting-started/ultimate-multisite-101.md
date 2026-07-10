@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite se pa yon plugin WordPress ki pèmèt ou ofri WaaS oswa Websites as a Service bay kliyan yo. Anvan nou kòmanse epi aprann kijan Ultimate Multisite ka ede biznis ou ak kliyan ou, gen kèk konpreyansyon de baz nou bezwen genyen anvan sa.
 
-## WordPress Multisite a
+## WordPress Multisite a {#the-wordpress-multisite}
 
 Pifò nou byen konnen enstalasyon WordPress ki vini la (stock-standard). Ou ka kreye li atravè panel kontwòl prestè wèb ou a oswa, pou moun ki gen kouraj, mete yon nou sèvè wèb ak baz done, telechaje fichye kò a epi kòmanse pwosesis enstalasyon an.
 
@@ -21,13 +21,13 @@ Nan esans, yon WordPress multisite ka panse tankou sa: Yon universitè kenbe yon
 
 Pou nou dekouvri sa deklarasyon la, nou pral gade kèk terminoloji batatik ki genyen nan dokiman Ultimate Multisite men tou nan kominote WordPress an jeneral.
 
-### Rezo a (The Network)
+### Rezo a (The Network) {#the-network}
 
 Nan kont WordPress, rezo multisite se kote ou ka jere plizyè subsit sites soti nan yon sèl dashboard. Men ke kreye yon rezo multisite diferan selon pwovider wèb la, men rezilta final la se anjeneral kèk direksyon anplisye nan fichye `wp-config.php` pou fè WordPress konnen li ap fonksyone nan mod sa a espesifik la.
 
 Gen plizyè diferans klè ant yon rezo multisite ak yon enstalasyon WordPress ki pa gen okenn site pou kont li, nou pral diskite yo briitman.
 
-#### Subdomain vs. Subdirectory (Subdomèn vs. Sous-direswa)
+#### Subdomain vs. Subdirectory (Subdomèn vs. Sous-direswa) {#subdomain-vs-subdirectory}
 
 Youn nan desizyon ki pi rapid ou dwe pran se si enstalasyon multisite a ap fonksyone ak _sous-direswa_ (subdirectories) oswa _sous-dòmen_ (subdomains). Ultimate Multisite travay menm byen avèk de chwazi sa yo, men gen kèk diferans nan arkitektir ant de konfigirasyon sa yo.
 
@@ -43,7 +43,7 @@ Nan konfigirasyon $\_subdomain\_$, itilizasyon yon sertifikat SSL wildcard se yo
 
 Malgre gen lòt opsyon egziste, yo souvan limite nan espas ak aplikasyon epi yo mande konfigirasyon ak konsiderasyon anplis ki gen rapò ak atèknik pou w wè si li ap bon pou ou.
 
-#### Plugins ak Themes
+#### Plugins ak Themes {#plugins-and-themes}
 
 Sa k ap bay WordPress la, se sa l pran tou, men anpil nan pwen non kliyan an. Nan yon enstalasyon WordPress endepandan si administrateur sit la mete yon plugin ki pa bon oswa li pa kenbe enstalasyon an ajou, sèl viktim ak koze aksyon sa a se tèt li. Sepandan, lè yon administrateur sit la mete yon plugin ki pa bon nan yon enstalasyon multisite, li kreye yon viktim pou chak sit ki enstale nan rezo a.
 
@@ -51,7 +51,7 @@ Pou sa rezon, lè ou configure kòm WordPress multisite, WordPress ap retire kap
 
 Jiskenn sa la, network administrator la responsab pou mete plugin ak theme nan rezo a epi bay pèmisyon pou itilize plugin ak theme sa yo pou sit rezo yo. Administrateur sit yo pa ka mete plugin ak theme oubyen jwenn aksè nan plugin ak theme ki pa bay sit yo.
 
-#### Itilizatè ak Administrateur
+#### Itilizatè ak Administrateur {#users-and-administrators}
 
 Nan WordPress Multisite, tout sit rezo a pataje menm baz done a epi donplike menm itilizatè, wòl, ak kapasite. Fason pi bon pou ou panse sa se ke tout itilizatè yo gen manm nan rezo a e pa yon sit espesifik.
 
@@ -63,13 +63,13 @@ Pou repete deklarasyon an, menm si kont itilizatè yo parèt ki gen rapò ak sit
 
 Malgre ke sa se konsept la nan sistèm entreprise, men li sou yon sèl kote pou reyegisite ak autentifikasyon itilizat la souvan difisil pou moun ki byen konnen enstalasyon WordPress endividyèl kote administrasyon itilizat la pi fasil.
 
-#### Media
+#### Media {#media}
 
 Lè sit entènat yo pataje yon sèl baz done nan WordPress Multisite, yo kenbe chemen septe sou sistem fichye a pou fayil media yo.
 
 Kote ki te nan WordPress la (wp-content/uploads) rete menm; sepandan, chemen li chanje pou reflechi ID inik sit entènat la. Konsekwans, fayil media pou yon sit entènat parèt kòm wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Nou te mansyone anvan ke gen avantaj espesyal nan konfigirasyon _subdomain_ olye de _subdirectory_, e men li se sa: chemen yo.
 
@@ -83,7 +83,7 @@ Nan yon konfigirasyon _subdomain_, aksyon sa a pa nesesè paske chak sit entèna
 
 <!-- Screenshot indisponible: paramèt permalink WordPress pou konfigirasyon subdomain -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 Nan la konfigirasyon _subdirectory_, chans pou gen konfli nan non, menm pou paj estatik kòm sit prensipal ak sit rezo yo pataje menm chemen an.
 
@@ -93,7 +93,7 @@ Pou evite sa, WordPress bay yon fason pou ou ka blake kèk non sit ki pa korespo
 
 Nan konfigirasyon _subdomain_, posiblite gen konfli nan non yo diminye paske _subdomain_ a se yon bagay ki espesifik pou sit rezo a epi li pa gen okenn relasyon ak sit prensipal la.
 
-### Registrasyon
+### Registrasyon {#registration}
 
 Nan konfigirasyon rezo WordPress Multisite, gen plizyè opsyon nouvo pou registre itilizatè yo, ki pèmèt itilizatè nouvo ak egzistans yo kreye sit.
 
@@ -111,7 +111,7 @@ Jiskenn sa, lè yon itilizatè konekte, li konekte nan rezo a epi an fen li kone
 
 Men, si nèt amaç ak objektif multisite a se pou ofri sit rezo ki pa gen okenn relasyon ant yo, li ap mande anpil plugins eksteryè oswa adisyonèl pou manipile wòl itilizatè yo.
 
-### Domèn ak SSL
+### Domèn ak SSL {#domain-and-ssl}
 
 Ann pale de yon enstalasyon WordPress Multisite ki prèske evite atansyon nou - Wordpress.com. Sa se pi gwo egzanp nan WordPress multisite epi li montre kapasite l pou adapte epi fòme pou reyalize yon objektif.
 
@@ -125,11 +125,11 @@ Pou administrateur rezo yo, sa kreye yon nivo okenn konplike sou konfigirasyon n
 
 Nan kapasite sa a, pandan ke WordPress Multisite bay yon fason pou map [www.anotherdomain.com](http://www.anotherdomain.com) sou ‘site1’, administrateur rezo a rete avèk defi pou li jere ekzanp DNS entries yo ak implimentasyon sertifikat SSL la anba l.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Lè nou konprann diferans ant yon enstalasyon WordPress stand-alone ak yon enstalasyon Multisite, ann gade kijan Ultimate Multisite se armay ultimate pou bay Websites as a Service (WaaS).
 
-### Entwodiksyon
+### Entwodiksyon {#introduction}
 
 Ultimate Multisite se kouto swiss ou lè w ap kreye yon Website as a Service (WaaS). Panse a Wix.com, Squarespace, WordPress.com epi apre sa panse sou gen pwòp sèvis ou.
 
@@ -137,9 +137,9 @@ Anba kapak Ultimate Multisite itilize WordPress Multisite men li fè sa nan yon 
 
 Nan seksyon ki vini an, nou pral gade kèk ka itilizasyon komen ak konsèvasyon ki nesesè pou sipòte ka sa yo.
 
-### Ka Itilizasyon (Use Cases)
+### Ka Itilizasyon (Use Cases) {#use-cases}
 
-#### Ka 1: Yon Agansy (An Agency)
+#### Ka 1: Yon Agansy (An Agency) {#case-1-an-agency}
 
 Tipikman, konpèns souvan yon agansy la se nan konsepsyon sit entènèt ak aspè tankou wè rezoud yo oswa marketing yo ap lis kòm sèvis adisyonèl.
 
@@ -165,7 +165,7 @@ Les thèmes offrent des fonctionnalités similaires, ce qui permet d'activer ou 
 
 Les agences trouveront la tranquillité d'esprit avec Ultimate Multisite leur permettant de faire ce qu'elles font de mieux : concevoir des sites web exceptionnels.
 
-#### Cas 2 : Fournisseur de niche
+#### Cas 2 : Fournisseur de niche {#case-2-niche-provider}
 
 Il y a une vieille expression qui dit : « fais une chose et fais-la bien ». Pour beaucoup de spécialistes, cela signifie créer un produit ou un service autour d'une idée centrale unique.
 
@@ -179,7 +179,7 @@ Pour un fournisseur de sites et de services de niche, cela offre un avantage in�
 
 Selon les besoins, la configuration _subdirectory_ ou _subdomain_ peut convenir, et dans ce cas, le choix d'architecture se fera entre un certificat SSL simple pour les _subdirectories_ ou un certificat SSL wildcard pour les _subdomains_.
 
-#### Cas 3 : Hébergement WordPress
+#### Cas 3 : Hébergement WordPress {#case-3-wordpress-web-hosting}
 
 Il y a une multitude de façons d'héberger des sites WordPress, mais il est rarement aussi simple que fournir de l'espace web à un client avec une version de WordPress préinstallée. C'est parce qu'un certain nombre de décisions et de considérations doivent être réunis pour offrir un service significatif.
 
@@ -191,11 +191,11 @@ Pour les développeurs qui souhaitent s'intégrer avec Ultimate Multisite, la so
 
 Sans dépendre d'une multitude de plugins externes et de licences, Ultimate Multisite fournit une solution riche en fonctionnalités et comparable à celle de Wix, Squarespace, WordPress.com et autres.
 
-### Considérations Architecturales
+### Considérations Architecturales {#architecture-considerations}
 
 Bien que ce ne soit pas un guide complet, les éléments suivants devraient servir de guide pour le choix correct des technologies afin de supporter une installation Ultimate Multisite.
 
-#### Hébergement Partagé vs. Dédié
+#### Hébergement Partagé vs. Dédié {#shared-vs-dedicated-hosting}
 
 Malerezman, pa gen tout fournisseur hosting yo pa menm. kèk nan yo mete pratik ki sou densite sèvè ekstre. Les fournisseur ki gen pri ba anjeneral fè lajan yo lè yo maksimize densite sèvè a. Nan ka sa, enstalasyon Ultimate Multisite ou ka sèlman yon soti nan plizyè senk dosye sit sou menm sèvè a.
 
@@ -209,7 +209,7 @@ Ultimate Multisite la koni li travay ak kèk fournisseur hosting ki byen epi li 
 
 Pou yon lis fournisseur ki koresponn ak yo ak enstriksyon konplè pou chak, tanpri gade dokiman Compatible Providers la.
 
-#### Konsiderasyon Pèfòmans
+#### Konsiderasyon Pèfòmans {#performance-considerations}
 
 Ultimate Multisite pa aplikasyon ki dlo, non, li rapid anpil. Sepandan, li pafè jan ak aplikasyon ak enfatyè k ap sèvi a epi li ka benefisye sèlman sa l gen aksè pou l itilize.
 
@@ -227,7 +227,7 @@ Pou sa rezon an, pi gwo administrateur rezo itilize solisyon cache front-end ak 
 
 Ultimate Multisite gen ladan yon add-on Cloudflare sofistike k ap pèmèt administrateur rezo yo mete enstalasyon yo dèyè Cloudflare epi itilize non sèl kapasite cache li men tou hosting DNS, sertifikat SSL ak mekanis sekirite.
 
-#### Backups (Kopi anvan)
+#### Backups (Kopi anvan) {#backups}
 
 Ou ka mande 50 moun pou konsèy sou backups e resevwa 50 opinyon diferan sou estrateji backup. Repons la se: sa depann de ou.
 
@@ -237,7 +237,7 @@ Pou objektif seksyon sa a, nou pral aksepte ke backup se yon kopi moman an moman
 
 Avèk konprechisyon sa a, repons sou kijan pou w atvine backup yo ak sa ki pi bon pou anviwònman ou pral depann anpil de bezwen ou yo e kapasite pwovizè w pou satisfè bezwen sa yo. Sepandan, nan lòd plis opinyonèl rive nan ki gen mwens opinyon, opsyon ki anba la ta bay kèk gid.
 
-#### Snapshots (Kopi moman)
+#### Snapshots (Kopi moman) {#snapshots}
 
 Snapshots se "silver bullets" pou backup paske yo fasil, senp (jiskaske ou vle restore), e yo "just work". Men li mande yon ti èd de pwovizè w epi sa a aplike reyalman si ou gen yon VPS (Virtual Private Server) oswa yon bagay ki sanble ak li. Plis pwovizè ki list nan dokiman 'Compatible Providers' nou an ofri backup ki pa bezwen okenn entèvansyon oswa konsiderasyon adisyonèl de administrateur rezo a.
 
@@ -245,7 +245,7 @@ Lè, lè sa ki fè diferans ant backup tradisyonèl ak snapshot la: backup tradi
 
 Snapshot yo ka gen yon kòt ajoute ak pwove hosting an, men se yon pwoteksyon kont aksidan.
 
-#### Scripts Eksteryè (External Scripts)
+#### Scripts Eksteryè (External Scripts) {#external-scripts}
 
 Gen san okenn limit nan scripts eksteryè ak solisyon pou backup resous WordPress ak MySQL epi sa yo ta mache byen pou Ultimate Multisite paske li se yon plugin WordPress ki itilize sistèm fayil ak baz done WordPress la. Donk, yon solisyon ki ap backup sit WordPress la ta kouvri bezwen Ultimate Multisite a ase.
 
@@ -253,7 +253,7 @@ Nou pa ka rekòmande yon script sou lòt pase lòt, men konsèy jeneral nou se p
 
 Li enpòtan pou w konnen ke scripts sa yo, pandan yo ap mache, ap grandi chaj sistèm lan ki dwe konsidere.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Gen pwoblèm pafè nan WordPress ki pa ka rezoud ak yon plugin epi si jere scripts eksteryè se pa bagay ou, men petèt yon plugin se opsyon pi bon an.
 
@@ -261,7 +261,7 @@ Malgre que les plugins vary nan opsyon ak fonksyon yo, yo fè menm bagay la: kop
 
 Lè ou ap chwazi plugin ou a, pran swen pou ou verifye li konpayi ak multisite. Ak pase natirèl fonksyon li pandan ke backup la ap mache, ou ka espere yon ti piki sou sèvè a jiskaske pwosesis la fini.
 
-#### Domèn ak SSL
+#### Domèn ak SSL {#domain-and-ssl-1}
 
 Anpil bagay te diskite deja konsènan non domèn nan modèl _subdomain_ multisite. Yon solisyon ki prèske tout moun itilize pou administrateur rezo yo se fè yon wildcard DNS entry.
 
@@ -285,7 +285,7 @@ Pou anpil moun, itilizasyon Cloudflare se yon opsyon fasil. Kliyan yo jis bezwen
 
 Lòte sa, ou bezwen chèche lòt solisyon ki ka sèvi, se poutèt sa Ultimate Multisite rekòmande yon lis Pwovizyon Konpatib (Compatible Providers). Sa paske pwosesis pou mete DNS ak SSL ka yon bagay ki pa senp. Sepandan, ak entegrasyon Ultimate Multisite avèk yo, konplike a anpeche epi pwojè a automate.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Li trè posib ou pral bezwen plis plugins pou bay fonksyonalite pou kliyan ou oswa sit rezo ou. Tout plugin yo travay ak WordPress Multisite e Ultimate Multisite? Sa depann.
 

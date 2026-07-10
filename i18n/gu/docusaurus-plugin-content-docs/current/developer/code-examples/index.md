@@ -3,11 +3,11 @@ title: અદ્યતન કોડ ઉદાહરણો
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# એડવાન્સ્ડ કોડ ઉદાહરણો
+# એડવાન્સ્ડ કોડ ઉદાહરણો {#advanced-code-examples}
 
 આ ઉદાહરણો Ultimate Multisite સાથે એડવાન્સ્ડ ઇન્ટિગ્રેશન પેટર્ન દર્શાવે છે.
 
-## ડાયનેમિક પ્રાઇસિંગ એન્જિન (Dynamic Pricing Engine)
+## ડાયનેમિક પ્રાઇસિંગ એન્જિન (Dynamic Pricing Engine) {#dynamic-pricing-engine}
 
 એક નિયમો-આધારિત પ્રાઇસિંગ એન્જિન જે વોલ્યુમ, લોયલ્ટી અને સિઝનલ ડિસ્કાઉન્ટ લાગુ કરે છે:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## એડવાન્સ્ડ સાઇટ પ્રોવિઝનિંગ (Advanced Site Provisioning)
+## એડવાન્સ્ડ સાઇટ પ્રોવિઝનિંગ (Advanced Site Provisioning) {#advanced-site-provisioning}
 
 પ્લાન ફીચર્સના આધારે નવા સાઇટ્સને પ્લગઇન્સ, SSL, CDN, બેકઅપ્સ અને મોનિટરિંગ સાથે આપમેળે કન્ફિગર કરો:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## કસ્ટમ લિમિટેશન્સ સિસ્ટમ (Custom Limitations System)
+## કસ્ટમ લિમિટેશન્સ સિસ્ટમ (Custom Limitations System) {#custom-limitations-system}
 
 ઉપયોગની ચેતવણીઓ સાથે resource limits ને ટ્રેક અને લાગુ કરો:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB માં `increment_item()` સાથે એટોમિક કાઉન્ટર (Atomic Counter)
+## BerlinDB માં `increment_item()` સાથે એટોમિક કાઉન્ટર (Atomic Counter) {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 માં BerlinDB `Query` class માં `increment_item()` મેથડ ઉમેરવામાં આવી છે. તેનો ઉપયોગ વાંચવા-ફેરફાર-લખવા (read-modify-write) રેસ કન્ડિશન વિના, ન્યુમેરિક કોલમ્સ પર સુરક્ષિત, એટોમિક ઇન્ક્રીમેન્ટ કરવા માટે કરો — જે કાઉન્ટર્સ, ઉપયોગ ક્વોટા અને rate-limiting ચેક માટે ઉપયોગી છે જે એકસાથે ચાલી રહેલા requests હેઠળ ચાલે છે.
 
-### મેથડ સિગ્નેચર (Method signature)
+### મેથડ સિગ્નેચર (Method signature) {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 માં BerlinDB `Query` class માં `increment_
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### મૂળભૂત ઉપયોગ (Basic usage)
+### મૂળભૂત ઉપયોગ (Basic usage) {#basic-usage}
 
 ```php
 // membership ID 42 માટે `api_calls` કોલમમાં 1 ઉમેરો.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### દરેક membership માટે API ઉપયોગ ટ્રેક કરવો (Tracking API usage per membership)
+### દરેક membership માટે API ઉપયોગ ટ્રેક કરવો (Tracking API usage per membership) {#tracking-api-usage-per-membership}
 
 membership દીઠ API rate limits લાગુ કરવા માટે એક વ્યવહારુ પેટર્ન:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### `update_item()` ને બદલે `increment_item()` શા માટે?
+### `update_item()` ને બદલે `increment_item()` શા માટે? {#why-incrementitem-instead-of-updateitem}
 
 એક સામાન્ય read-modify-write approach concurrent requests હેઠળ અસુરક્ષિત છે:
 

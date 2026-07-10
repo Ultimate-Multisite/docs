@@ -3,18 +3,18 @@ title: Tích hợp Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Tích hợp Closte
+# Tích hợp Closte {#closte-integration}
 
-## Tổng quan
+## Tổng quan {#overview}
 Closte là nền tảng hosting WordPress được quản lý, xây dựng trên hạ tầng Google Cloud. Tích hợp này cho phép tự động đồng bộ tên miền và quản lý chứng chỉ SSL giữa Ultimate Multisite và Closte.
 
-## Tính năng
+## Tính năng {#features}
 - Tự động đồng bộ tên miền
 - Quản lý chứng chỉ SSL
 - Hỗ trợ tên miền wildcard
 - Không cần cấu hình nếu đang chạy trên Closte
 
-## Yêu cầu
+## Yêu cầu {#requirements}
 Bạn cần khai báo hằng số sau trong file `wp-config.php` nếu đang sử dụng Closte:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 Hằng số này thường đã được khai báo sẵn nếu bạn đang hosting trên Closte.
 
-## Hướng dẫn cài đặt
+## Hướng dẫn cài đặt {#setup-instructions}
 
-### 1. Kiểm tra API Key của Closte
+### 1. Kiểm tra API Key của Closte {#1-verify-your-closte-api-key}
 
 Nếu bạn đang hosting trên Closte, hằng số `CLOSTE_CLIENT_API_KEY` thường đã được khai báo sẵn trong file `wp-config.php`. Bạn có thể kiểm tra bằng cách mở file `wp-config.php`.
 
-### 2. Bật tích hợp
+### 2. Bật tích hợp {#2-enable-the-integration}
 
 1. Trong trang quản trị WordPress, vào Ultimate Multisite > Settings
 2. Chuyển đến tab "Domain Mapping"
@@ -37,7 +37,7 @@ Nếu bạn đang hosting trên Closte, hằng số `CLOSTE_CLIENT_API_KEY` thư
 4. Bật tích hợp Closte
 5. Nhấn "Save Changes"
 
-## Cách hoạt động
+## Cách hoạt động {#how-it-works}
 
 Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
@@ -47,26 +47,26 @@ Khi một tên miền được ánh xạ trong Ultimate Multisite:
 
 Tích hợp này cũng hoạt động với cài đặt khoảng thời gian kiểm tra DNS trong Ultimate Multisite, cho phép bạn cấu hình tần suất hệ thống kiểm tra việc phân giải DNS và cấp phát chứng chỉ SSL.
 
-## Tạo bản ghi tên miền
+## Tạo bản ghi tên miền {#domain-record-creation}
 
 Tích hợp này đảm bảo rằng khi một site được tạo hoặc sao chép, bản ghi tên miền sẽ tự động được tạo. Điều này đặc biệt quan trọng với tích hợp Closte, vì việc tạo bản ghi tên miền sẽ kích hoạt API của Closte để tạo tên miền và chứng chỉ SSL.
 
-## Xử lý sự cố
+## Xử lý sự cố {#troubleshooting}
 
-### Lỗi kết nối API
+### Lỗi kết nối API {#api-connection-issues}
 - Kiểm tra xem API key của Closte có đúng không
 - Đảm bảo tài khoản Closte của bạn có đủ quyền cần thiết
 
-### Lỗi chứng chỉ SSL
+### Lỗi chứng chỉ SSL {#ssl-certificate-issues}
 - Closte có thể mất một khoảng thời gian để cấp chứng chỉ SSL (thường từ 5-10 phút)
 - Kiểm tra xem tên miền của bạn đã trỏ đúng đến địa chỉ IP máy chủ Closte chưa
 - Kiểm tra bản ghi DNS của tên miền để đảm bảo cấu hình đúng
 
-### Tên miền không được thêm
+### Tên miền không được thêm {#domain-not-added}
 - Kiểm tra nhật ký của Ultimate Multisite để xem có thông báo lỗi nào không
 - Xác nhận tên miền chưa được thêm vào Closte trước đó
 - Đảm bảo bản ghi DNS của tên miền đã được cấu hình đúng
 
-### Khoảng thời gian kiểm tra DNS
+### Khoảng thời gian kiểm tra DNS {#dns-check-interval}
 - Nếu chứng chỉ SSL mất quá lâu để cấp phát, bạn có thể điều chỉnh khoảng thời gian kiểm tra DNS trong cài đặt Domain Mapping
 - Khoảng thời gian mặc định là 300 giây (5 phút), nhưng bạn có thể đặt thấp nhất là 10 giây để kiểm tra nhanh hơn khi test

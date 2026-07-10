@@ -3,11 +3,11 @@ title: Spätná väzba zákazníkov a reportovanie problémov
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Spracovanie sprievodných dosad a reportov problémov
+# Spracovanie sprievodných dosad a reportov problémov {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 obsahuje vbudovaný systém pre spracovanie sprievodných dosad a reportov problémov, ktorý umožňuje koncovým používateľom označovať nepomocné odpovede a priamo nahlásiť problémy z chatu. Tento systém zahŕňa správu súhlasu, automatický príkaz na report a AI-pomáchaný triáž v pozadí.
 
-## Tlačidlo "Ne" (Thumbs-Down Button)
+## Tlačidlo "Ne" (Thumbs-Down Button) {#thumbs-down-button}
 
 Každú správu od AI asistentov zobrazuje tlačidlo **ne** (👎). Keď používateľ klikne na toto tlačidlo, môže odpoveď označiť ako nepomocnú alebo nesprávnu.
 
@@ -15,7 +15,7 @@ Každú správu od AI asistentov zobrazuje tlačidlo **ne** (👎). Keď použí
 - Kliknutím na nie sa otvorí **Modal pre súhlas so sprievodnou dosad**.
 - Sprievodná dosada je spojená s konverzačným vláknom a konkrétnou správou.
 
-## Modal pre súhlas so sprievodnou dosad
+## Modal pre súhlas so sprievodnou dosad {#feedback-consent-modal}
 
 Keď používateľ klikne na tlačidlo "ne", pred odoslaním akýchkoľvek dát sa zobrazí modal pre súhlas. Tento modal:
 
@@ -26,13 +26,13 @@ Keď používateľ klikne na tlačidlo "ne", pred odoslaním akýchkoľvek dát 
 
 Sprievodná dosada sa neukladá, kým používateľ explicitne nepotvrdí.
 
-## Banner pre automatický sprievodný report
+## Banner pre automatický sprievodný report {#auto-prompt-feedback-banner}
 
 Na konci konverzácie môže asistent zobraziť **banner pre automatický sprievodný report** — neinvazívnu správu, ktorá pýta, či bola sesia pomocná.
 
 Tento banner sa zobrazuje automaticky na základe dĺžky konverzácie a heuristik výsledku. Spojený je s tým istým toku spracovania ako tlačidlo "ne". Používatelia môžu banner zrušiť bez poskytnutia sprievodnej dosady.
 
-## Príkaz `/report-issue`
+## Príkaz `/report-issue` {#report-issue-slash-command}
 
 Používatelia si môžu plynule spustiť tok spracovania, napríklad v chatu zadaniu `/report-issue`. Tento príkaz:
 
@@ -42,7 +42,7 @@ Umožňuje používateľom pridať ďalšie detaily pred odoslaním.
 
 Cmd `/report-issue` je k dispozícii vo všetkých chatiach (inline, plávajúci widget, plný obrazovky).
 
-## AI-Assisted Triage (Triáž s pomocou AI)
+## AI-Assisted Triage (Triáž s pomocou AI) {#ai-assisted-triage}
 
 Odoslaná spätná väzba je presmerovaná na vrstvu triáže AI, ktorá:
 

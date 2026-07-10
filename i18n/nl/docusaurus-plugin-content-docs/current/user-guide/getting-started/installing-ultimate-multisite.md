@@ -3,13 +3,13 @@ title: Het installeren van Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Het installeren van Ultimate Multisite
+# Het installeren van Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Deze handleiding gaat ervan uit dat je WordPress Multisite al hebt geïnstalleerd en geconfigureerd. Raadpleeg [deze handleiding](https://www.wpbeginner.com/glossary/multisite/) van WP Beginner om te leren hoe.
 :::
 
-## Het installeren van de plugin
+## Het installeren van de plugin {#installing-the-plugin}
 
 Ultimate Multisite is gratis beschikbaar op [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Na activering word je automatisch doorgestuurd naar de Setup Wizard.
 
 ![Plugin geactiveerd en doorverwezen naar de wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 De Setup Wizard begeleidt je in ongeveer 10 minuten bij het configureren van Ultimate Multisite.
 
-### Welkom
+### Welkom {#welcome}
 
 Klik op **Aan de slag** om te beginnen.
 
 ![Welkomstscherm van de Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Voorafgaande controles
+### Voorafgaande controles {#pre-install-checks}
 
 Deze stap controleert je systeemgegevens en WordPress-installatie om er zeker van te zijn dat deze voldoen aan de vereisten van Ultimate Multisite. Als alles in orde is, klik dan op **Ga naar de volgende stap**.
 
@@ -51,31 +51,31 @@ Als Ultimate Multisite is geïnstalleerd, maar **nog niet op netwerkniveau is ge
 Klik op **Netwerk activeren** om de plugin automatisch voor je hele multisite-netwerk te activeren. Na activering gaat de wizard normaal verder naar de installatiestap. Je hoeft de wizard niet af te sluiten om de activatiestatus aan te passen.
 :::
 
-### Installatie
+### Installatie {#installation}
 
 De installer maakt de benodigde databasetabellen en installeert het bestand `sunrise.php` dat Ultimate Multisite nodig heeft om te functioneren. Klik op **Installeren** om verder te gaan.
 
 ![Installatiestap met weergave van databasetabellen en sunrise.php](/img/installation/wizard-installation.png)
 
-### Je bedrijf
+### Je bedrijf {#your-company}
 
 Vul je bedrijfsgegevens in en stel de standaardvaluta in. Deze informatie wordt gebruikt in je WaaS-platform. Klik op **Doorgaan** als je klaar bent.
 
 ![Configuratiestap 'Je bedrijf'](/img/installation/wizard-your-company.png)
 
-### Standaardinhoud
+### Standaardinhoud {#default-content}
 
 Met deze stap kun je vooraf gedefinieerde sjablonen, producten en andere startinhoud installeren. Dit is een goede manier om vertrouwd te raken met de functies van Ultimate Multisite. Klik op **Installeren** om de standaardinhoud toe te voegen, of sla deze stap over als je liever vanaf nul begint.
 
 ![Stap voor het installeren van standaardinhoud](/img/installation/wizard-default-content.png)
 
-### Aanbevolen plugins
+### Aanbevolen plugins {#recommended-plugins}
 
 Installeer optioneel aanbevolen aanvullende plugins. Klik op **Installeren** om ze toe te voegen of ga verder zonder.
 
 ![Stap met aanbevolen plugins](/img/installation/wizard-recommended-plugins.png)
 
-### Klaar!
+### Klaar! {#ready}
 
 Dat is alles! Je Ultimate Multisite-installatie is voltooid. Nu kun je beginnen met het bouwen van je Website as a Service-platform vanaf het **Netwerkbeheerder Dashboard**.
 

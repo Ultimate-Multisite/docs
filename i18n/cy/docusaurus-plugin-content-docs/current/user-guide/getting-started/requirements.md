@@ -3,11 +3,11 @@ title: Cyflwyniadau
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ymddiantigolionau Ultmate Multisite
+# Ymddiantigolionau Ultmate Multisite {#ultimate-multisite-requirements}
 
 Yn cyntaf ysgol i chi gallwch gofynch yn rhywogaeth o ddodyn Ultmate Multisite yw beth yw'r hanesau i gweithio'r plugin. Well, gyda'r cyfathrebu, mae dim ond sawl hanesau sylfaenol i weithio'r Ultimate Multisite: **enw domaint**, **cynllunwrdd gweithredol** a **ysbyriaeth WordPress Multisite**. Mae hyn yn ddigon i chi angen!
 
-## Enw Domaint
+## Enw Domaint {#domain-name}
 
 Ynno, gadewch ysbryd ar enw domaint.
 
@@ -17,7 +17,7 @@ Mae'r plugin yn rhoi gwasanaethau cyflwyniad, cyfathrebu peidiad, ffurfau cheddo
 
 Pob niche i chi fyddwch chi wybynnu yn cael ei reoli drwy'r plugin fel long yr ydych chi'n bawbwefan fel wasanaeth! Cynlyniwch gweld enw domaint sy'n cyfathogh â'r cynllun eich busnes.
 
-## Cynllunwrdd Gweithredol
+## Cynllunwrdd Gweithredol {#hosting-provider}
 
 Ynno, ar ôl i chi gael enw domaint ddigon sy'n cyfathogh â'r niche a'r busnes eich, byddech chi angen gwilio cwmni gweithredol da i gael eich rheol gyda Ultimate Multisite. Mae sawl opsiyn da ar y ffordd. Mae rhai o gynllunwrdd gweithredol yn cynnwys well gyda Ultimate Multisite, gan gallai fod yn faktor hanfod yn ôl y byddwch chi'n creu.
 
@@ -25,7 +25,7 @@ Bydd Ultimate Multisite gweithio mewn unrhyw gynnigau gweithredol. Mae'r un gwah
 
 Pan mae angen ystyrau serwer, nid oes ffurf penodol fellybyd ac yn cyffredin ar gyfer y ffeistrau a fynnu eich cyd-fynd a'r grwythau eich rheiniant. Gall gynnigau cyfrifol (shared hosting) fod yn dechrau da, ond fel ychwaneg eich grwythau sydd â chynalio, byddwch yn angen un VPS ddeddig.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nydymu'n siarad ychydig am ychyddug WordPress Multisite.
 

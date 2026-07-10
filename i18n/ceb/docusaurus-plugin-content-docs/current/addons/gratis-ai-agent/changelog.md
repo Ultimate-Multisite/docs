@@ -3,11 +3,11 @@ title: Mga Pagbag-o sa Feature/Pag-uswag
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Mga Pagbag-o (Changelog)
+# Mga Pagbag-o (Changelog) {#changelog}
 
-## 1.9.0 — Gi-release niadtong 2026-04-28
+## 1.9.0 — Gi-release niadtong 2026-04-28 {#190--released-on-2026-04-28}
 
-### Bag-O
+### Bag-O {#new}
 
 - **`create_contact_form` ability** — makahimo og contact form gamit ang active nga form plugin (Contact Form 7, WPForms, Fluent Forms, o Gravity Forms) ug maghatag og shortcode nga andam i-embed sa bisan unsang post o page.
 - **`set_featured_image` ability** — nagtakda og featured image sa usa ka post o page gikan sa existing Media Library attachment ID o gikan sa remote URL; awtomatikong mag-import kini sa imahe kon mohatag og URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restore last session** — Karon, ang chat panel awtomatikong mag-reload sa pinakabag-o nimong pag-istorya kon mo-load ka og page o moabli ka sa widget. Mao ni para dili mawala ang imong context bisag nag-navigate ka sa lain-laing pages.
 - **Plugin action links** — Ang quick links paingon sa Settings ug sa Abilities Registry karon makita na sa WordPress **Plugins → Installed Plugins** screen ubos sa description sa plugin.
 
-### Gipaayo
+### Gipaayo {#improved}
 
 - **Image source retry** — Karon, ang agent mag-try pagbalik (retries) sa tanang configured free image sources sa dili pa mo-fallback sa AI-generated image kon mapakyas ang pag-download.
 - **Model info panel** — Kanunay nga makita sa chat header; dili na kini itago human sa unang mensahe.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — Usa ka unified AI icon ang mopalit sa previous custom avatar; kini consistent sa built-in agent system.
 - **URL linkification** — Ang mga URL nga makita sa system messages ug error message bubbles karon gihimo na nga clickable links.
 
-### Gitul-id
+### Gitul-id {#fixed}
 
 - **Ability discoverability** — Gitul-id ang descriptions, system prompt references, ug namespace alignment aron ang tanang abilities makita sa agent's tool list og kasaligan.
 - **Providers cache** — Ang mga providers karon gi-cache site-wide pinaagi sa usa ka version counter, nga nagpugong sa problema sa 'stale-provider' sa multisite networks.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Gi-release niadtong 2026-04-09
+## 1.4.0 — Gi-release niadtong 2026-04-09 {#140--released-on-2026-04-09}
 
-### Bag-O
+### Bag-O {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — nagpadagan sa Agent Capabilities v1 benchmark suite gikan sa command line alang sa CI pipelines ug model evaluation workflows. Suporta ni ang per-question runs, provider/model overrides, ug JSON/CSV output.
 - **Agent Capabilities v1 benchmark suite** — Usa ka structured set sa complex, multi-step prompts nga nag-ehersisyo sa tibuok ability surface, uban ang scoring ug token/duration reporting.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — End-to-end test nga naglangkob sa CPT registration, design system, navigation, ug plugin discovery.
 - **AI provider connector plugins** gidugang sa WordPress Playground blueprints alang sa mas paspas nga local development setup.
 
-### Gipaayo
+### Gipaayo {#improved-1}
 
 - Gi-update ang README uban sa dokumentasyon ug setup instructions para sa AI provider connector.
 
-### Gitul-id
+### Gitul-id {#fixed-1}
 
 - Nasulbad ang 25 ka PHPUnit test failures sa `main` branch.
 - Gitul-id ang URL format sa GitHub releases sa `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Ang mga notes sa naunang pag-release gipabilin sa plugin repository._

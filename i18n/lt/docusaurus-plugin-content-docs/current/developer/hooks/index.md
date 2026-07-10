@@ -1,0 +1,194 @@
+---
+title: Kabliukų žinynas
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hook’ų nuoroda {#hooks-reference}
+
+Automatiškai sugeneruota dokumentacija visiems **59 veiksmams** ir **118 filtrams** Ultimate Multisite.
+
+## Veiksmai {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Suveikia prieš autentifikavimo peradresavimą.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Suveikia iškart prieš nustatant autentifikavimo slapuką.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Suveikia iškart prieš nustatant prisijungusio naudotojo autentifikavimo slapuką.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Leidžia kūrėjams pridėti savo prieglobos teikėjų integracijas per wp pluginus.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Suveikia, kai visos priklausomybės buvo įkeltos
+- [wu_activation](./Actions/wu_activation) — Leidžia kitoms plugino dalims prijungti savo aktyvavimo procedūras
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Leidžia pluginų kūrėjams prijungti funkcijas po to, kai naudotojas arba super admin perjungia svetainės šabloną
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Kai kuriais atvejais reikės įkelti papildomų resursų veiksmams apdoroti.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Suveikia prieš apdorojant paieškos užklausą.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Leidžia kūrėjams atlikti papildomus pakeitimus atsiskaitymo objektui.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Leidžia kūrėjams atlikti papildomus pakeitimus atsiskaitymo objektui.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Suveikia prieš lauką pridedant prie atsiskaitymo formos.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Leidžia kūrėjams paleisti papildomus hookus.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Prieš apdorojant atsiskaitymą.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Suveikia po to, kai atsiskaitymo užsakymas visiškai surenkamas.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Leidžia pluginų kūrėjams pridėti valdiklių prie Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Leidžia pluginų kūrėjams pridėti valdiklių prie Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Leidžia kitoms plugino dalims prijungti savo išaktyvinimo procedūras
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Leidžia pluginų kūrėjams pridėti veiksmų prie trynimo proceso
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Suveikia, kai domenas tampa pagrindiniu svetainės domenu.
+- [wu_domain_created](./Actions/wu_domain_created) — Suveikia, kai pridedamas naujas domeno susiejimas.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Suveikia po to, kai įkeliamas mūsų pagrindinis Domain Mapping
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Kai kurie pluginai išsaugos URL prieš susiejimui tampant aktyviam arba kurs URL kitu būdu, kuris nėra įtrauktas į
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Leidžia kūrėjams prisijungti po svetainės dubliavimo.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Leidžia pluginų kūrėjams pridėti papildomų hookų
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hookas papildomam valymui
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Suveikia prieš apdorojant naujo domeno pridėjimo modalinio lango užklausą.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Leidžia pluginų kūrėjams išsaugoti meta duomenis skirtingais būdais, jei jiems to reikia.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Leidžia pluginų kūrėjams išsaugoti naudotojo meta duomenis skirtingais būdais, jei jiems to reikia.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Suveikia, kai aptinkamas netinkamas magic link tokenas.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Suveikia po to, kai naudotojas prisijungia per magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Leidžia pluginų kūrėjams atlikti papildomus veiksmus, kai klientas pridedamas.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Suveikia po to, kai MCP gebėjimai užregistruojami subjektui.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Suveikia po to, kai MCP adapteris inicijuojamas.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Suveikia po narystės atšaukimo.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Suveikia po narystės atnaujinimo.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Suveikia prieš atšaukiant narystę.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Suveikia prieš narystės atnaujinimą.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Suveikia po to, kai objektas išsaugomas duomenų bazėje.
+- [wu_page_added](./Actions/wu_page_added) — Leidžia pluginų kūrėjams paleisti papildomus veiksmus, kai puslapiai užregistruojami.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Leidžia pluginų kūrėjams pridėti papildomo turinio po to, kai išvedame puslapį
+- [wu_page_before_render](./Actions/wu_page_before_render) — Leidžia pluginų kūrėjams pridėti papildomo turinio prieš išvedant puslapį.
+- [wu_page_load](./Actions/wu_page_load) — Leidžia pluginų kūrėjams pridėti papildomų hookų prie mūsų puslapių.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Leidžia pluginų kūrėjams pridėti papildomo turinio po to, kai išvedame puslapį
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Leidžia pluginų kūrėjams pridėti papildomo turinio prieš išvedant puslapį.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Leidžia pluginų kūrėjams pridėti papildomų hookų prie mūsų puslapių.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Suveikia po to, kai valdikliai užregistruojami šiam puslapiui.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Suveikia, kad priedai galėtų prijungti galimybių modulius prie integracijų.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Suveikia, kad integracijos galėtų užregistruoti save.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Leidžia registruoti papildomus maršrutus.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Leidžia plugin kūrėjams pridėti veiksmus prie išsaugojimo proceso
+- [wu_site_created](./Actions/wu_site_created) — Suveikia po to, kai svetainė sukuriama pirmą kartą.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Leidžia plugin kūrėjams prireikus pridėti papildomų hooks.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Vykdomas, kai esama šablono peržiūros kontekste.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Paleidžia scenarijų įtraukimo į eilę hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Suveikia po to, kai objektas įrašomas į duomenų bazę.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Suveikia po to, kai objektas įrašomas į duomenų bazę.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Suveikia po to, kai objektas įrašomas į duomenų bazę.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leidžia plugin kūrėjams pridėti veiksmus prie atrakinimo proceso.
+
+## Filtrai {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruoja autentifikavimo slapuko galiojimo laikotarpio trukmę.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruoja autentifikavimo peradresavimo schemą.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Čia atkuria originalų WP filtrą, dėl visa ko.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Leidžia įskiepių kūrėjams filtruoti peržiūros įrankyje naudojamą URL
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtruoja, ar autentifikavimo slapukas turėtų būti siunčiamas tik per HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtruoja, ar naudoti saugų autentifikavimo peradresavimą.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtruoja, ar prisijungimo slapukas turėtų būti siunčiamas tik per HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Leidžia neleisti autentifikavimo slapukų faktiškai siųsti klientui.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Nustatykite peradresavimo URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Pridėkite papildomų žingsnių per filtrus
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Leidžia įskiepių kūrėjams globaliai pridėti papildomą kintamąjį į atvaizdavimo kontekstą.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Leidžia kūrėjams apeiti šį patikrinimą.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtruoja naujo domeno pridėjimo modalinio lango laukus.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Leidžia kūrėjams atlikti pakeitimus diegimo mokesčio eilutės elemente.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Leidžia kūrėjams filtruoti Ultimate Multisite pridėtus administratoriaus pranešimus.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtruoti po pakeitimo.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Dabar dirbame su visais tipais.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Leidžia įskiepių kūrėjams apeiti apribojimus.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtruoja, ar registracijos mokestis turėtų būti taikomas.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtruoti pradinius api argumentus.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Leidžia įskiepių kūrėjams filtruoti atsiskaitymo adreso laukus.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Leidžia kūrėjams apeiti išvestį ir nustatyti naują
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Leidžia kūrėjams apeiti dabartinio naudotojo pašalinimo kodą.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtruoja bendrą „pasikartojančios sumos“ sumą.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtruoja bendrą „pradinės sumos“ sumą.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtruoja bendrą „pradinės sumos“ sumą.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Leidžia įskiepių kūrėjams keisti kredito vertę.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtruoja bendrinamus atsiskaitymo formos bazinius domenus, kurie neturėtų tapti susieto domeno įrašais.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Mūsų API naujiems laukų šablonams pridėti prisijungia čia.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Mūsų API naujiems laukų tipams pridėti prisijungia čia.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtruoti klaidų pranešimus.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Leidžia kūrėjams apeiti patikrinimą, ar laukas gali būti automatiškai pateikiamas.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Leidžia įskiepių kūrėjams formos tikrintuve pridėti pasirinktinius pseudonimus.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Leidžia įskiepių kūrėjams filtruoti validavimo taisykles.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Pašalinti nepageidaujamus parametrus.
+- [wu_contains_element](./Filters/wu_contains_element) — Leidžia kūrėjams pakeisti pradinės paieškos rezultatus.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Leidžia prieglobos paslaugų teikėjams konstantą įdiegti kitaip.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Grąžina gražų šalies administracinių padalinių pavadinimą.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Grąžina šalies valstijos miestų sąrašą.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Grąžina šios šalies valstijų sąrašą.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Leidžia kūrėjams keisti numatytąją elgseną ir kitaip nustatyti dabartinį klientą.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Leidžia kūrėjams keisti numatytąją elgseną ir kitaip nustatyti dabartinę narystę.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Leidžia kūrėjams keisti numatytąją elgseną ir kitaip nustatyti dabartinę svetainę.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Leidžia kūrėjams keisti svetainės valdymo URL parametrus.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Leidžia įskiepių kūrėjams filtruoti nuorodas.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Leidžia įskiepių kūrėjams pridėti naujų patikrinimų, kad būtų apibrėžti rezultatai.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Vėliau gali reikėti pridėti papildomų blokų.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Prideda bendrą filtrą, leidžiantį kūrėjams išplėsti šį analizatorių, kad jis galėtų dirbti su papildomais kūrimo įrankiais ar pluginais.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtruoti, ar taikyti papildomas slaptažodžio taisykles.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtruoti sugeneruotą kliento naudotojo vardą.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Leisti pluginų kūrėjams filtruoti checkout puslapio iš anksto nustatytas reikšmes.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Leisti kūrėjams pridėti naujus formų slugus, kad būtų apeitas šis veikimas.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Leisti kūrėjams ir priedams pridėti naujus migracijos veiksmus
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Daugiau apie šį filtrą žr. toliau, tame pačiame metode.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Leisti kūrėjams pasirinkti, kurie įrašų tipai turėtų būti rodomi.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Grąžinti eilutes, filtruojama
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Leisti kūrėjams manipuliuoti domeno / kelio poromis.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtruoja vedlio skiltis prieglobos integracijos sąrankai.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtruoja formos laukus. Forma identifikuojama pagal ID filtro pavadinime.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtruoti produkto tipus, kurie turi nepriklausomus atsiskaitymo ciklus.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Leisti pluginų kūrėjams priverstinai nustatyti nurodytą API būseną.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Leisti pluginų kūrėjams pridėti papildomus testus kūrimo režimui.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Leisti pluginų kūrėjams priverstinai nustatyti nurodytą MCP adapterio būseną.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Saugumo sumetimais ribojame veiksmų, prie kurių galima prisijungti kabliais, skaičių. Šis filtras leidžia kūrėjams išplėsti
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Patikrina, ar nurodytas įrašo tipas leidžiamas šiame plane. Leisti pluginų kūrėjams filtruoti grąžinamą reikšmę
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtruoti, ar taikyti IP adreso patikrinimą.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtruoti, ar taikyti user agent patikrinimą.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtruoti sugeneruoto magic link URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtruoti, ar magic links įjungtos.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtruoja peradresavimo URL po to, kai domenas padaromas pirminiu.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Sukurti parametrų išimčių sąrašą, kuris neleidžia automatinio peradresavimo.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtras, skirtas perrašyti MCP gebėjimo įtraukimo sprendimą.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtruoja apskaičiuotą galiojimo pabaigos datą.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtruoja apskaičiuotą galiojimo pabaigos datą, kuri bus nustatyta po atnaujinimo.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Leisti kūrėjams pridėti naujus atnaujinimo formų slugus.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtruoti minimalų slaptažodžio ilgį.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtruoti reikalaujamą minimalų slaptažodžio stiprumą (zxcvbn įvertis).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Leisti pluginų kūrėjams ir mums patiems pridėti veiksmų nuorodas prie mūsų redagavimo puslapių
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtruoti, ar slaptažodžiuose reikalauti mažųjų raidžių.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtruoti, ar slaptažodžiuose reikalauti skaičių.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtruoti, ar slaptažodžiuose reikalauti specialiųjų simbolių.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtruoti, ar slaptažodžiuose reikalauti didžiųjų raidžių.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Leisti naudotojui pakeisti pranešimą apie laukiančius mokėjimus.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtruoti produkto tipus, kurie turėtų būti laikomi planais.
+- [wu_post_count](./Filters/wu_post_count) — Leisti pluginų kūrėjams pakeisti bendrą skaičių
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Leisti pluginų kūrėjams pakeisti, kuri įrašo būsena turėtų būti skaičiuojama. Pagal numatytuosius nustatymus skaičiuojami paskelbti ir privatūs įrašai
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtruoja objekto duomenis prieš juos išsaugant duomenų bazėje.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Leisti kūrėjams filtruoti nustatymus prieš Ultimate Multisite išsaugojimą.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtruoja, ar leidžiama tęsti užklausą, ar ne.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtruoja, ar leidžiama tęsti užklausą, ar ne.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtruoja, ar leidžiama tęsti užklausą, ar ne.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtruoja, ar leidžiama tęsti užklausą, ar ne.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtruoja, ar leidžiama tęsti užklausą, ar ne.
+- [wu_return_url](./Filters/wu_return_url) — Leidžia kūrėjams pakeisti gateway grąžinimo URL, naudojamą po checkout procesų.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Leidžia plugin kūrėjams pridėti daugiau paieškos modelių funkcijų.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Leidžia kūrėjams pridėti papildomų setup wizard žingsnių.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtruoja, ar Ultimate Multisite turėtų sukurti domeno įrašą naujai sukurtai svetainei.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Leidžia kūrėjams sutrumpinti peradresavimą, neleidžiant jam įvykti.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Leidžia perrašyti handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtruoja masines operacijas, prieinamas svetainėms.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtras, skirtas pakeisti get pluginssites reikšmę tinklo viduje.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Įjungia / išjungia tarp domenų veikiančią single-sign-on galimybę.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtruoja sugeneruotus SSO URL prieš juos grąžinant tarp domenų klientų veiksmams.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtruoja Stripe Subscription duomenis. Gali perrašyti success_url arba cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtruoja payment intent argumentus.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtruoja plano ID, kurio reikia ieškoti. Jei jis egzistuoja, nauja prenumerata naudos šį planą.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtruoja produkto ID, kurio reikia ieškoti. Jei jis egzistuoja, nauja prenumerata naudos šį produktą.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtruoja idempotency_key reikšmę, siunčiamą su Stripe apmokestinimo parinktimis.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtruoja narystės įrašą, susietą su šiuo webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtruoja duomenų meta prieš ją serializuojant, kad būtų išsaugota duomenų bazėje.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtruoja objekto duomenis prieš juos išsaugant duomenų bazėje.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Leidžia kūrėjams pakeisti upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Nustato, ar turėtų būti naudojamas susiejimas
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtruoja naujo kliento naudotojo vardą.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Leidžia kūrėjams pakeisti pranešimą apie narystės naudotojų limitą
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Leidžia kūrėjams pridėti papildomų aplankų į pakeičiamą sąrašą.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtruoja, kurios sub_commands yra įjungtos šiam subjektui.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Tikriname tris šablonus, bandydami nustatyti, kur galime įterpti savo konstantas:

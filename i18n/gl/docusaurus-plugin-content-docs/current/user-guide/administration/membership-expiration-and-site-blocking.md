@@ -3,11 +3,11 @@ title: Caducidade da Membresía e Bloqueio do Sitio
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiración de Membresías y Bloqueo del Sitio
+# Expiración de Membresías y Bloqueo del Sitio {#membership-expiration-and-site-blocking}
 
 Este guía explica cómo Ultimate Multisite maneja la expiración de membresías, el fin de pruebas (trials) y el bloqueo del sitio en el frontend. Cubre todo el ciclo de vida de una membresía, desde activa hasta expirada, las configuraciones que controlan si los sitios se bloquean y qué revisar cuando los sitios siguen siendo accesibles después de que una membresía expira.
 
-## Ciclo de Vida del Estado de la Membresía
+## Ciclo de Vida del Estado de la Membresía {#membership-status-lifecycle}
 
 Cada membresía en Ultimate Multisite tiene uno de los siguientes estados:
 
@@ -24,7 +24,7 @@ Las membresías gratuitas no caducan automáticamente. Ultimate Multisite las tr
 | **Expired** (Expirada) | Ha pasado la fecha de expiración y el período de gracia sin renovación |
 | **Cancelled** (Cancelada) | Cancelada explícitamente por el cliente o el administrador |
 
-### Cómo las Membresías Transicionan a Expiradas
+### Cómo las Membresías Transicionan a Expiradas {#how-memberships-transition-to-expired}
 
 Ultimate Multisite realiza una comprobación en segundo plano **cada hora** que busca membresías que deberían marcarse como expiradas. Esta comprobación utiliza [Action Scheduler](https://actionscheduler.org/) (no WP-Cron directamente) y se ejecuta como la acción programada `wu_membership_check`.
 
@@ -34,7 +34,7 @@ La comprobación de expiración tiene un **período de gracia incorporado de 3 d
 O período de carência de expiraición de 3 días é separado da configuración do Período de Carência do Bloco Frontend descrita abaixo. O período de carência de expiraición controla quando o **estado muda** de ativo/em espera para expirado. O período de carência do bloco frontend controla quando o **site é bloqueado** depois de o estado já ter mudado.
 :::
 
-#### Membresías que se Renovan Automaticamente vs. Que Não se Renovan Automaticamente
+#### Membresías que se Renovan Automaticamente vs. Que Não se Renovan Automaticamente {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Esta distinción é crucial para entender o comportamento da expiraición:
 
@@ -42,7 +42,7 @@ Esta distinción é crucial para entender o comportamento da expiraición:
 
 - **Membresías que se renovan automaticamente** (`auto_renew = true`): A verificação de expiraición do cron **ignora estas completamente**. Espera-se que o gateway de pagamento (Stripe, PayPal, etc.) notifique o Ultimate Multisite através de webhooks quando uma subscrição falha ou é cancelada. Se o webhook não for recebido -- devido a um endpoint mal configurado, uma interrupção no gateway, ou uma subscrição cancelada fora do sistema -- a membresía pode permanecer `active` indefinidamente mesmo depois da data de expiraición passar.
 
-### Como Terminam os Testes (Trials)
+### Como Terminam os Testes (Trials) {#how-trials-end}
 
 Quando o período de teste de uma membresía em teste termina, o sistema:
 
@@ -52,11 +52,11 @@ Quando o período de teste de uma membresía em teste termina, o sistema:
 
 Este processo executa no mesmo cronograma de hora que a verificação regular de expiraición, mas **somente para membros que não se renovam automaticamente**. Para testes com renovação automática, o gateway de pagamento lida com a transição do teste para a subscrição paga.
 
-## Bloquear Acesso ao Frontend
+## Bloquear Acesso ao Frontend {#block-frontend-access}
 
 Por defecto, cuando una membresía caduca o se pone en pausa, **solo se restringe el panel de administración wp-admin**. El frontend público del sitio sigue siendo accesible para los visitantes. Para bloquear también el acceso público, debes activar la configuración **Block Frontend Access** (Bloquear Acceso al Frontend).
 
-### Configurando la Configuración
+### Configurando la Configuración {#configuring-the-setting}
 
 Ve a **Ultimate Multisite > Settings > Memberships** y activa **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tres configuraciones relacionadas controlan este comportamiento:
 | **Frontend Block Grace Period** (Período de Gracia de Bloqueo del Frontend) | Número de días que se deben esperar después de que la membresía deje de estar activa antes de bloquear. Configúralo en `0` para bloquear inmediatamente. | 0 |
 | **Frontend Block Page** (Página de Bloqueo del Frontend) | Una página en el sitio principal a la que se redirige a los visitantes cuando un sitio está bloqueado. Si no se establece, los visitantes ven un mensaje genérico de "Sitio no disponible" con un enlace a la página de inicio de sesión para el administrador del sitio. | Ninguna |
 
-### Qué Ven los Visitantes Cuando un Sitio Está Bloqueado
+### Qué Ven los Visitantes Cuando un Sitio Está Bloqueado {#what-visitors-see-when-a-site-is-blocked}
 
 Cuando se bloquea el acceso al frontend, los visitantes del sitio harán una de estas cosas:
 
@@ -83,7 +83,7 @@ Cuando se bloquea el acceso al frontend, los visitantes del sitio harán una de 
 
 Los administradores del sitio aún pueden iniciar sesión; la página de inicio de sesión nunca se bloquea.
 
-### Qué se Bloquea y Cuándo
+### Qué se Bloquea y Cuándo {#what-gets-blocked-and-when}
 
 El comportamiento de bloqueo depende del estado de la membresía:
 
@@ -104,21 +104,21 @@ Incluso si el período de prueba ha terminado, una membresía con el estado `tri
 Las membresías canceladas siempre se bloquean una vez que ha pasado la fecha de expiración, independientemente de si el Bloque Acceso Frontend está activado. El Período de Gracia del Bloque Frontend **no** se aplica a las membresías canceladas.
 :::
 
-## Solución de Problemas: Sitios que Siguen Accesibles Después de la Expiración
+## Solución de Problemas: Sitios que Siguen Accesibles Después de la Expiración {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Si los sitios siguen siendo accesibles públicamente después de que una membresía expira, sigue estos pasos en orden:
 
-### 1. Verifica que la Configuración Bloquear Acceso Frontend esté Activada
+### 1. Verifica que la Configuración Bloquear Acceso Frontend esté Activada {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Ve a **Ultimate Multisite > Settings > Memberships** y confirma que el interruptor **Block Frontend Access** esté activado. Esta configuración está **desactivada por defecto**, lo que significa que solo se restringe wp-admin cuando una membresía deja de estar activa.
 
-### 2. Revisa el Período de Gracia del Bloque Frontend
+### 2. Revisa el Período de Gracia del Bloque Frontend {#2-check-the-frontend-block-grace-period}
 
 Na mesma páxina de configuración, verifica o valor **Frontend Block Grace Period**. Se este estiver configurado para 7 días, por exemplo, o frontend non será bloqueado ata 7 días após a data de expiraición da mensura -- incluso se o estado da mensura ya está `expired`.
 
 Pon este valor en `0` se queres bloqueo inmediato después de que a mensura se torne inactiva.
 
-### 3. Confirma que o Estado da Mensura Realmente Cambia
+### 3. Confirma que o Estado da Mensura Realmente Cambia {#3-confirm-the-membership-status-has-actually-changed}
 
 Ve a **Ultimate Multisite > Memberships** e verifica o estado da mensura afectada. Se ainda mostra `active` despois de que a data de expiraición pasou, a transición do estado non se produciu. Causas comunes:
 
@@ -126,7 +126,7 @@ Ve a **Ultimate Multisite > Memberships** e verifica o estado da mensura afectad
 
 - **O *cron job* non se está a executar**: Vê o próximo paso.
 
-### 4. Verifica que Action Scheduler Está a Correr
+### 4. Verifica que Action Scheduler Está a Correr {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite usa Action Scheduler para os seus *cron jobs*. Ve a **Tools > Scheduled Actions** no administrador da rede e busca:
 
@@ -148,7 +148,7 @@ Para asegurar que el cron funcione de manera fiable, configura un trabajo cron d
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Comprobar problemas con Webhooks de Gateway (Suscripciones que se renuevan automáticamente)
+### 5. Comprobar problemas con Webhooks de Gateway (Suscripciones que se renuevan automáticamente) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Si la membresía se está renovando automáticamente y la suscripción del gateway ha sido cancelada o ha fallado, pero Ultimate Multisite todavía muestra que está `active`:
 
@@ -157,7 +157,7 @@ Si la membresía se está renovando automáticamente y la suscripción del gatew
 
 Si el gateway muestra la suscripción como cancelada pero Ultimate Multisite no lo hace, es probable que se haya perdido la notificación del webhook. Puedes cambiar manualmente el estado de la membresía en **Ultimate Multisite > Memberships > [Editar Membresía]**.
 
-### 6. Comprobar el Período de Gracia de Expiración (Nivel Cron)
+### 6. Comprobar el Período de Gracia de Expiración (Nivel Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 La comprobación de cron tiene su propio período de gracia (por defecto: 3 días) antes de marcar una membresía como expirada. Esto es independiente del período de gracia del bloque frontend. El tiempo total antes de que un sitio sea bloqueado puede ser:
 
@@ -165,7 +165,7 @@ La comprobación de cron tiene su propio período de gracia (por defecto: 3 día
 
 Por exemplo, con as configuración predefinidas e um período de carência de 7 dias no frontend, pode demorar até 10 dias após a `date_expiration` para que o site seja realmente bloqueado.
 
-### 7. Expirar uma Membrosia Manualmente
+### 7. Expirar uma Membrosia Manualmente {#7-manually-expire-a-membership}
 
 Se precisar bloquear um site imediatamente sem esperar pelo ciclo do cron, pode alterar manualmente o estado da membresia:
 
@@ -176,7 +176,7 @@ Se precisar bloquear um site imediatamente sem esperar pelo ciclo do cron, pode 
 
 O bloqueio no frontend terá efeito no próximo carregamento da página (sujeito ao Período de Carência do Bloqueio Frontend para membresias expiradas, ou imediatamente para membros cancelados).
 
-## Resumo
+## Resumo {#summary}
 
 A linha do tempo completa da data de expiração até ao bloqueio do site:
 
@@ -208,7 +208,7 @@ Para membros cancelados, o caminho é mais curto:
   O frontend do site é bloqueado imediatamente
 ```
 
-## Referência para Desenvolvedores
+## Referência para Desenvolvedores {#developer-reference}
 
 Os seguintes hooks e filters permitem-lhe personalizar o comportamento de expiração e bloqueio:
 

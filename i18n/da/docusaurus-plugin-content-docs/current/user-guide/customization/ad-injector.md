@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Placering annoncer på dit netværk med Ultimate Multisite: Ad Injector
+# Placering annoncer på dit netværk med Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector er et **gratis tilføjelse**, der giver dig værktøjerne til at placere annoncer på dine planer direkte fra deres redigeringsside.
 
@@ -35,7 +35,7 @@ Du kan også inkludere annoncer i headeren på Admin-siderne for brugere af den 
 
 _Gå til Admin Panel Ad Code-muligheden, hvis du vil vise annoncer i din brugers bag-end._
 
-### Ud over Annoncering
+### Ud over Annoncering {#beyond-advertising}
 
 Du kan også bruge Ultimate Multisite: Ad Injector til at tilbyde support til de højeste planer.
 

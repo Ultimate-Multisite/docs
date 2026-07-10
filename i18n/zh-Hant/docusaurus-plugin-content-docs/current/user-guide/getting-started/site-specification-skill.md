@@ -3,11 +3,11 @@ title: 網站規格技能
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# 網站規格功能 (Site Specification Skill)
+# 網站規格功能 (Site Specification Skill) {#site-specification-skill}
 
 **網站規格功能**是一種結構化的方法，用於捕捉您網站的目標、受眾和品牌識別度。這些資訊會儲存在您的 **site_brief** 記憶體中，代理（agents）會在不同工作階段參考它，從而提供一致且具備情境意識的協助。
 
-## 什麼是網站規格？
+## 什麼是網站規格？ {#what-is-site-specification}
 
 網站規格就是記錄以下內容的過程：
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 這些規格會成為您的 **site_brief**，這是一個持久的記憶體，代理會使用它來了解您的網站背景。
 
-## 為什麼要使用網站規格？
+## 為什麼要使用網站規格？ {#why-use-site-specification}
 
-### 跨工作階段的一致性
+### 跨工作階段的一致性 {#consistency-across-sessions}
 
 如果沒有 site_brief，您每次開始新的工作階段，都需要重新解釋網站的目的。有了它，代理會立即了解：
 
@@ -30,7 +30,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - 您的內容結構
 - 您的商業目標
 
-### 更佳的建議
+### 更佳的建議 {#better-recommendations}
 
 代理會利用您的 site_brief 來：
 
@@ -39,17 +39,17 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - 提出與您的品牌一致的設計
 - 避免建議不相容的功能
 
-### 更快的上手速度
+### 更快的上手速度 {#faster-onboarding}
 
 新的代理（或在新的工作階段中的代理）可以透過閱讀您的 site_brief 來快速掌握知識，而不是不斷提出澄清問題。
 
-## 啟動網站規格
+## 啟動網站規格 {#initiating-site-specification}
 
-### 在 Theme Builder 上手流程中
+### 在 Theme Builder 上手流程中 {#during-theme-builder-onboarding}
 
 當您進入 **Theme Builder onboarding flow** 時，網站規格功能會自動啟動。Setup Assistant 代理會提出問題並建立您的 site_brief。
 
-### 手動啟動
+### 手動啟動 {#manual-initiation}
 
 您可以在任何時間開始網站規格：
 
@@ -63,9 +63,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 "Help me create a site brief"
 ```
 
-## 網站規格流程
+## 網站規格流程 {#the-site-specification-process}
 
-### 步驟 1：網站目的
+### 步驟 1：網站目的 {#step-1-site-purpose}
 
 代理會詢問：
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 您可以選擇一個類別，或描述您自己的目的。
 
-### 步驟 2：目標受眾
+### 步驟 2：目標受眾 {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### 步驟 3：品牌識別度
+### 步驟 3：品牌識別度 {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### 步驟 4：商業目標
+### 步驟 4：商業目標 {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### 步驟 5：內容結構
+### 步驟 5：內容結構 {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## 您的 site_brief 記憶體
+## 您的 site_brief 記憶體 {#your-sitebrief-memory}
 
 完成網站規格後，您的資訊會以 **site_brief** 的形式儲存在您的代理記憶體中。這是一個結構化的記錄，包含：
 
@@ -169,9 +169,9 @@ What content types do you use?
 }
 ```
 
-## 查看和更新您的 site_brief
+## 查看和更新您的 site_brief {#viewing-and-updating-your-sitebrief}
 
-### 查看您的 site_brief
+### 查看您的 site_brief {#view-your-sitebrief}
 
 請詢問代理：
 
@@ -187,7 +187,7 @@ What content types do you use?
 
 代理將會顯示您儲存的規格。
 
-### 更新您的 site_brief
+### 更新您的 site_brief {#update-your-sitebrief}
 
 如果您的網站有所發展，您可以更新它：
 
@@ -203,9 +203,9 @@ What content types do you use?
 
 這將會使用您現有的資訊重新執行網站規格功能。
 
-## 代理如何使用 site_brief
+## 代理如何使用 site_brief {#how-agents-use-sitebrief}
 
-### 設計建議
+### 設計建議 {#design-recommendations}
 
 當您要求進行設計更改時，代理會參考您的 site_brief：
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### 功能建議
+### 功能建議 {#feature-suggestions}
 
 代理會根據您的目標建議功能：
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### 內容結構
+### 內容結構 {#content-structure}
 
 代理會根據您的結構提出內容組織建議：
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## 最佳實踐
+## 最佳實踐 {#best-practices}
 
-### 具體化
+### 具體化 {#be-specific}
 
 不要只說「一般受眾」，請描述您的實際受眾：
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### 定期更新
+### 定期更新 {#update-regularly}
 
 隨著您的網站發展，請更新您的 site_brief：
 
@@ -256,14 +256,14 @@ that showcase multiple products together."
 - 當您的品牌識別度改變時
 - 當您的商業目標轉變時
 
-### 使用一致的術語
+### 使用一致的術語 {#use-consistent-terminology}
 
 在不同工作階段使用相同的術語：
 
 - ✓ 永遠說「sustainable jewelry」（不要交替使用「eco-friendly jewelry」和「green products」）
 - ✓ 始終以相同的方式指稱您的受眾
 
-### 包含背景資訊
+### 包含背景資訊 {#include-context}
 
 提供有助於代理理解您決策的背景資訊：
 
@@ -271,7 +271,7 @@ that showcase multiple products together."
 - "Our audience is tech-savvy and expects modern design" (我們的受眾精通科技，期待現代設計)
 - "We're a bootstrapped startup, so we need cost-effective solutions" (我們是一個自籌資金的初創公司，所以需要具成本效益的解決方案)
 
-## 與 Theme Builder Onboarding 的關係
+## 與 Theme Builder Onboarding 的關係 {#relationship-to-theme-builder-onboarding}
 
 網站規格功能整合在 **Theme Builder onboarding flow** 中。當您完成上手流程時，您提供的資訊會自動創建您的 site_brief。
 
@@ -281,7 +281,7 @@ that showcase multiple products together."
 - 隨著網站發展，更新您的 site_brief
 - 在開始 Theme Builder 之前，建立詳細的規格
 
-## 疑難排解
+## 疑難排解 {#troubleshooting}
 
 **我的 site_brief 沒有被使用**
 - 確認代理是否可以存取記憶體
@@ -297,7 +297,7 @@ that showcase multiple products together."
 - 如果您的 site_brief 過時，請更新它
 - 在您的請求中提供額外的背景資訊
 
-## 下一步
+## 下一步 {#next-steps}
 
 定義完網站規格後：
 

@@ -3,11 +3,11 @@ title: נראות יכולות
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# נראות יכולות
+# נראות יכולות {#ability-visibility}
 
 Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (Ability Visibility) השולטות באיזה ממשקים יחשפו כל יכולת. זה מאפשר למנהלים לכוונן בדיוק אילו יכולות של ה-agent יהיו זמינות דרך REST APIs, שרתי MCP, אינטגרציות WooCommerce וממשקים אחרים.
 
-## מהי נראות יכולות?
+## מהי נראות יכולות? {#what-is-ability-visibility}
 
 נראות יכולות היא מערכת הרשאות השולטת ב:
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 
 לכל יכולת יש רמת נראות שמגדירה את זמינותה בממשקים שונים.
 
-## רמות נראות
+## רמות נראות {#visibility-levels}
 
-### ציבורי (Public)
+### ציבורי (Public) {#public}
 
 **יכולות ציבוריות** זמינות בכל מקום:
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 
 דוגמה: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### פנימי (Internal)
+### פנימי (Internal) {#internal}
 
 **יכולות פנימיות** זמינות רק בתוך ההתקנה של WordPress שלך:
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 
 דוגמה: `manage-settings`, `view-analytics`, `export-data`
 
-### שותף (Partner)
+### שותף (Partner) {#partner}
 
 **יכולות שותף** זמינות רק לשותפים המאושרים ברשימה:
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 
 דוגמה: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### מושבת (Disabled)
+### מושבת (Disabled) {#disabled}
 
 **יכולות מושבתות** אינן זמינות בשום מקום:
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 - אינן זמינות בלוחות המנהל
 - שימושי עבור יכולות מיושנות או ניסיוניות
 
-## ניהול נראות יכולות
+## ניהול נראות יכולות {#managing-ability-visibility}
 
-### גישה להגדרות נראות יכולות
+### גישה להגדרות נראות יכולות {#accessing-ability-visibility-settings}
 
 1. עבור אל **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. לחץ על לשונית **Abilities**
 3. תראה רשימה של כל היכולות המותקנות עם רמות הנראות שלהן
 
-### צפייה בפרטי יכולת
+### צפייה בפרטי יכולת {#viewing-ability-details}
 
 לחץ על יכולת כלשהי כדי לראות:
 
@@ -82,7 +82,7 @@ Superdav AI Agent v1.12.0 מציג את בקרות **נראות יכולות** (
 - **עדכון אחרון (Last updated)**: מתי שונתה נראות היכולת לאחרונה
 - **סטטוס (Status)**: מוכר או לא מסווג
 
-### שינוי רמות נראות
+### שינוי רמות נראות {#changing-visibility-levels}
 
 כדי לשנות את נראות יכולת:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### פעולות המוניות
+### פעולות המוניות {#bulk-operations}
 
 כדי לשנות את הנראות עבור מספר יכולות:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. בחר רמת נראות חדשה מהתפריט הנפתח של הפעולה המונית
 3. לחץ על **Apply**
 
-## רשימת היתרים של שותף (Partner Allow-List)
+## רשימת היתרים של שותף (Partner Allow-List) {#partner-allow-list}
 
 **רשימת היתרים של שותף** שולטת אילו שותפים חיצוניים יכולים לגשת ליכולות ברמת שותף.
 
-### הוספת שותפים
+### הוספת שותפים {#adding-partners}
 
 1. עבור אל **Superdav AI Agent** → **Settings** → **Partners**
 2. לחץ על **Add Partner**
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. הוסף אופציונלית שם ותיאור של השותף
 5. לחץ על **Save**
 
-### הקצאת יכולות לשותפים
+### הקצאת יכולות לשותפים {#assigning-abilities-to-partners}
 
 לאחר הוספת שותף:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. במקטע "Partner allow-list", סמן את התיבות עבור השותפים שיש להם גישה
 5. לחץ על **Save**
 
-### ביטול גישת שותף
+### ביטול גישת שותף {#revoking-partner-access}
 
 כדי להסיר גישה משותף:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 השותף יאבד מיד את הגישה ליכולת הזו.
 
-## יכולות לא מסווגות (Unclassified Abilities)
+## יכולות לא מסווגות (Unclassified Abilities) {#unclassified-abilities}
 
 כאשר אתה מתקין יכולת צד שלישי ש-Superdav AI Agent לא מזהה, היא מסומנת כ**לא מסווגת**.
 
-### הודעת מנהל ליכולות לא מסווגות
+### הודעת מנהל ליכולות לא מסווגות {#admin-notice-for-unclassified-abilities}
 
 תראה הודעת מנהל:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### סקירת יכולות לא מסווגות
+### סקירת יכולות לא מסווגות {#reviewing-unclassified-abilities}
 
 1. לחץ על **Review Abilities** בהודעה
 2. עבור כל יכולת לא מסווגת, תראה:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. לחץ על **Classify** כדי לשמור את ההחלטה שלך
 
-### מדוע לסווג יכולות לא מסווגות?
+### מדוע לסווג יכולות לא מסווגות? {#why-classify-unclassified-abilities}
 
 סיווג יכולות:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **מאפשר פיצ'רים**: לאחר הסיווג, היכולת הופכת לזמינה
 - **מדוקנן החלטות**: הבחירות שלך נשמרות לצורך ביקורת
 
-## נראות בממשקים שונים
+## נראות בממשקים שונים {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **יכולות ציבוריות** זמינות דרך נקודות קצה (endpoints) של REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **יכולות פנימיות ושיתוף** אינן זמינות דרך REST API.
 
-### שרתי MCP
+### שרתי MCP {#mcp-servers}
 
 **יכולות ציבוריות** זמינות דרך MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **יכולות שותף** זמינות רק עם פרטי שותף.
 
-### אינטגרציית WooCommerce
+### אינטגרציית WooCommerce {#woocommerce-integration}
 
 **יכולות ציבוריות** הקשורות ל-WooCommerce זמינות:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **יכולות פנימיות** אינן חשופות ל-WooCommerce.
 
-### ממשק צ'אט
+### ממשק צ'אט {#chat-interface}
 
 **כל היכולות** (ציבורי, פנימי, שותף) זמינות בצ'אט, בהתאם להרשאות המשתמש:
 
@@ -235,34 +235,34 @@ Available abilities:
 - משתמשים רגילים רואים רק יכולות ציבוריות
 - שותפים רואים יכולות ציבוריות + שותף (אם הוכנסו לרשימת ההיתרים)
 
-## שיטות עבודה מומלצות לאבטחה
+## שיטות עבודה מומלצות לאבטחה {#security-best-practices}
 
-### עקרון ההרשאה המינימלית (Principle of Least Privilege)
+### עקרון ההרשאה המינימלית (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - הגדר יכולות לרמת הנראות המגבילה ביותר שעדיין מאפשרת שימוש בהן
 - השתמש בנראות שותף עבור פעולות רגישות
 - השבת יכולות שאינך משתמש בהן
 
-### ביקורות תקופתיות (Regular Audits)
+### ביקורות תקופתיות (Regular Audits) {#regular-audits}
 
 - סקור את נראות היכולות מדי חודש
 - בדוק אחר יכולות לא מסווגות
 - הסר גישה משותפים שאינם בשימוש
 
-### רישום וניטור (Logging and Monitoring)
+### רישום וניטור (Logging and Monitoring) {#logging-and-monitoring}
 
 - נטרל אילו יכולות נמצאות בשימוש הכי הרבה
 - עקוב אחר דפוסי הגישה של שותפים
 - קבל התראה על שימוש חריג ביכולות
 
-### יכולות צד שלישי (Third-Party Abilities)
+### יכולות צד שלישי (Third-Party Abilities) {#third-party-abilities}
 
 - סקור יכולות צד שלישי לפני הפעלה
 - סווג אותן במפורש
 - התחל עם נראות פנימית או שותף
 - קידם לציבורי רק לאחר בדיקה מעמיקה
 
-## פתרון תקלות (Troubleshooting)
+## פתרון תקלות (Troubleshooting) {#troubleshooting}
 
 **יכולת לא מופיעה ברשימה**
 - ודא שהיכולת מותקנת ופעילה
@@ -285,7 +285,7 @@ Available abilities:
 - ודא שביצעת שמירה על הסיווג שלך
 - ודא שה-plugin המספק את היכולת מעודכן
 
-## מעבר ממצב ישן (Migration from Legacy Mode)
+## מעבר ממצב ישן (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 אם אתה מעדכן גרסה ישנה של Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Available abilities:
 
 ראה **Third-Party Mode Migration** לפרטים נוספים על המעבר לאינטגרציית Abilities API מקורית.
 
-## צעדים הבאים
+## צעדים הבאים {#next-steps}
 
 לאחר הגדרת נראות היכולות:
 

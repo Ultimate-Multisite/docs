@@ -1,122 +1,126 @@
 ---
-title: Kash-kash etu
+title: پول آلماق
 sidebar_position: 15
-_i18n_hash: 4d43609c920fa8085a3cea69343ad2fa
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Para Kazanma (v2)
+# اؤدنیش آلماق (v2) {#getting-paid-v2}
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
+_**اؤنه‌ملی قئید: بو مقاله Ultimate Multisite نسخه 2.x-ه آیددیر.**_
 
-Ultimate Multisite, yerleşik bir üyelik ve faturalandırma sistemine sahiptir. Faturalandırma sistemimizin düzgün çalışması için, e-ticarette en yaygın kullanılan ödeme ağ geçitlerini entegre ettik. Ultimate Multisite'taki varsayılan ödeme ağ geçitleri _Stripe_ , _PayPal_ ve Manuel Ödeme'dir. Ayrıca, ilgili eklentileri kurarak ödeme almak için _WooCommerce_ , _GoCardless_ ve _Payfast_ kullanabilirsiniz.
+Ultimate Multisite ایچینده قورولموش عضویت و صورت‌حساب سیستمی وار. صورت‌حساب سیستمیمیزین ایشله‌مه‌سی اوچون، e-commerce-ده ایشله‌نن ان یایغین اؤدنیش gateway-لرینی بیرلشدیرمیشیک. Ultimate Multisite-ده پیش‌فرض اؤدنیش gateway-لری _Stripe_ ، _PayPal_ و Manual Payment-دیر. اؤدنیش آلماق اوچون اؤزل add-on-لارینی قوراشدیریراق _WooCommerce_ ، _GoCardless_ و _Payfast_ دا ایشله‌ده بیلرسینیز.
 
-## Temel Ayarlar
+## اساسی تنظیم‌لر {#basic-settings}
 
-Bu ödeme ağ geçitlerinden herhangi birini Ultimate Multisite ödeme ayarları altından yapılandırabilirsiniz. Buraya **Ultimate Multisite menüsü > Ayarlar > Ödemeler** yolunu izleyerek ulaşabilirsiniz.
+بو اؤدنیش gateway-لریندن هر بیرینی Ultimate Multisite اؤدنیش تنظیم‌لری آلتیندا قوراشدیرا بیلرسینیز. اونو **Ultimate Multisite menu > Settings > Payments** یولو ایله تاپا بیلرسینیز.
 
-![Ultimate Multisite'ta Ödemeler paneli gösteren Ödeme ayarları sayfası](/img/config/payments-settings-page.png)
+![Ultimate Multisite-ده Payments پنلینی گؤستره‌ن اؤدنیش تنظیم‌لری صفحه‌سی](/img/config/payments-settings-page.png)
 
-Ödeme ağ geçidinizi kurmadan önce, yapılandırabileceğiniz temel ödeme ayarlarına göz atmanız faydalı olacaktır:
+اؤدنیش gateway-ینیزی قورمادان اؤنجه، قوراشدیرا بیله‌جه‌یینیز اساسی اؤدنیش تنظیم‌لرینه باخین:
 
-**Otomatik Yenilemeyi Zorla:** Bu ayar, kullanıcının seçtiği faturalandırma sıklığına bağlı olarak ödemenin her faturalandırma döngüsünün sonunda otomatik olarak tekrarlanmasını sağlar.
+**اتوماتیک یئنیله‌مه‌نی مجبور ائله** **:** بو، اؤدنیشین ایشلدیجی‌نین سئچدی‌یی صورت‌حساب تکراریلیغینا گؤره هر صورت‌حساب دؤوره‌سینین سونوندا اؤز-اؤزونه تکرار اولماسی‌نی تضمین ائده‌جک.
 
-<!-- Screenshot unavailable: Ödeme ayarları sayfasında Otomatik Yenilemeyi Zorla anahtarı -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Ödeme Olmadan Deneme Süresine İzin Ver:** Bu seçenek etkinleştirildiğinde, müşterinizin kayıt işlemi sırasında herhangi bir finansal bilgi eklemesine gerek kalmaz. Bu bilgi yalnızca deneme süresi dolduğunda istenecektir.
+Ultimate Multisite v2.13.0 اتوماتیک یئنیله‌مه فعال اولان تکرارلی عضویت ساخلامازدان اؤنجه، فعال gateway-ین یئنیله‌مه اوچون تکرا ایشله‌نه بیلن اعتبارینین اولوب-اولمادیغینی یوخلاییر. یئنیله‌مه اعتباری gateway subscription، billing agreement، ساخلامیش vault token یا بونا برابر تکرا ایشله‌نه بیلن اؤدنیش یؤنتمی اولا بیلر. اگر gateway ایشله‌نه بیلن اعتبارین اولمادیغینی بیلدیرسه، Ultimate Multisite عضویتی ساخلايیر، اما اتوماتیک یئنیله‌مه‌نی سؤندورور و اعتبار چاتیشمامازلیغی حالینی قئید ائدیر کی، مدیر یا support آخیینی مشتری‌دن یئنیله‌مه تاریخیندن اؤنجه اؤدنیشی یئنی‌دن ایجازه‌له‌مه‌سینی ایسته‌یه بیلسین.
 
-<!-- Screenshot unavailable: Ödeme Olmadan Deneme Süresine İzin Ver anahtarı -->
+بو، gateway یالنیز بیر دفه‌لیک اؤدنیش‌لری تاپلا بیلدییی حالدا، عضویتین اتوماتیک یئنیله‌نه‌جک کیمی گؤرونمه‌سینین قاباغینی آلیر. Gateway add-on-لری تکرارلی checkout-لارین تکرا ایشله‌نه بیلن اعتبار ساخلاماسینی تأیید ائتمه‌لیدیر، خصوصاً gateway هم بیر دفه‌لیک capture، هم ده vaulted/subscription اؤدنیش مودلارینی دسته‌کله‌ینده.
 
-**Ödeme Onayında Fatura Gönder:** Bu ayar, ödeme yapıldıktan sonra fatura gönderip göndermeyeceğiniz konusunda size bir seçenek sunar. Kullanıcıların ödeme geçmişlerine kendi alt site panellerinden erişebileceğini unutmayın. Bu seçenek Manuel Gateway için geçerli değildir.
+**اؤدنیش یؤنتمی اولمادان trial-لارا ایجازه وئر:** بو سئچیم فعال اولاندا client قئیدیات پروسه‌سینده هیچ مالی معلومات علاوه ائتمه‌لی اولمایاجاق. بو فقط trial مودتی قورتاراندان سونرا لازیم اولاجاق.
 
-<!-- Screenshot unavailable: Ödeme Onayında Fatura Gönder anahtarı -->
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Fatura Numaralandırma Şeması:** Burada, ya bir ödeme referans kodu ya da sıralı bir numara şeması seçebilirsiniz. Faturalarınız için bir ödeme referans kodu kullanmayı tercih ederseniz, herhangi bir şey yapılandırmanıza gerek yoktur. Sıralı bir numara şeması kullanmayı tercih ederseniz, **bir sonraki fatura numarasını** (Bu numara, sistemde oluşturulacak bir sonraki fatura için fatura numarası olarak kullanılacaktır. Her yeni fatura oluşturulduğunda bir artar. Bunu değiştirip belirli bir değere sıfırlamak için kaydedebilirsiniz) ve **fatura numarası önekini** yapılandırmanız gerekecektir.
+**اؤدنیش تأییدینده invoice گؤندر:** بو، اؤدنیشدن سونرا invoice گؤندریب-گؤندرمه‌مه‌ک سئچیمی وئرir. قئید ائدین کی، ایشلدیجی‌لر اؤز subsite dashboard-لاریندا اؤدنیش تاریخچه‌لرینه چاتیشاجاقلار. بو سئچیم Manual Gateway-ه شامیل دییل.
 
-<!-- Screenshot unavailable: Ödeme Referans Kodu ve Sıralı Numara seçenekli Fatura numaralandırma şeması açılır menüsü -->
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-<!-- Screenshot unavailable: Sıralı Numara seçildiğinde gösterilen Bir sonraki fatura numarası ve fatura numarası öneki alanları -->
+**Invoice نومره‌له‌مه طرحی:** بورادا یا اؤدنیش مرجع کودو، یا دا آردیجیل نومره طرحی سئچه بیلرسینیز. Invoice-لارینیز اوچون اؤدنیش مرجع کودو ایشله‌تمه‌یی سئچسنiz، هیچ نه قوراشدیرماغا احتیاج یوخدور. آردیجیل نومره طرحی سئچسنiz، **سونراکی invoice نومره‌سی**-نی (بو نومره سیستم‌ده یارادیلاجاق سونراکی invoice اوچون invoice نومره‌سی کیمی ایشله‌نه‌جک. هر یئنی invoice یارادیلاندا بیر واحد آرتیر. Invoice آردیجیل نومره‌سینی مشخص بیر دگره سیفیرلاماق اوچون اونو دَییشیب ساخلايا بیلرسینیز) و **invoice نومره پیشوندی**-نی قوراشدیرمالیسینیز.
 
-## Gateway'leri Nerede Bulabilirsiniz:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Ödeme ağ geçitlerini aynı sayfada ( **Ultimate Multisite > Ayarlar > Ödemeler** ) kurabilirsiniz. **Aktif ödeme ağ geçitleri** başlığının hemen altında şunları göreceksiniz: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ve _Manuel_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Stripe, Stripe Checkout, PayPal ve Manual'ı listeleyen Aktif Ödeme Ağ Geçitleri bölümü](/img/config/payments-active-gateways.png)
+## Gateway-لری هارادا تاپماق اولار: {#where-to-find-the-gateways}
 
-Her ödeme ağ geçidi için size kurulum adımlarını gösterecek ayrı bir makalemiz var, bu makalelere aşağıdaki bağlantılardan ulaşabilirsiniz.
+اؤدنیش gateway-لرینی همین صفحه‌ده قورا بیلرسینیز ( **Ultimate Multisite > Settings > Payments**). **active payment gateways**-ین دوز آلتیندا بونلاری گؤره‌جه‌کسینیز: _Stripe_ ، _Stripe_ _Checkout_ ، _PayPal_ و _Manual_.
 
-Ödeme detaylarını görüntüleyebilir ve düzenleyebilirsiniz:
+![Stripe، Stripe Checkout، PayPal و Manual-ی لیستله‌ین Active Payment Gateways بؤلمه‌سی](/img/config/payments-active-gateways.png)
 
-![Ödeme düzenleme arayüzü](/img/admin/payment-edit.png)
+هر اؤدنیش gateway-ی اوچون اونو قورماق مرحلله‌رینده سیزه یول گؤسته‌ره‌جک آیری مقاله‌میز وار؛ آشاغیداکی لینک‌لرده تاپا بیلرسینیز.
 
-İşte ödeme düzenleme sayfasının tam görünümü:
+اؤدنیش جزئیاتینی گؤره و دَییشدیره بیلرسینیز:
 
-![Ödeme düzenleme tam arayüzü](/img/admin/payment-edit-full.png)
+![اؤدنیش دَییشدیرمه آراایوزو](/img/admin/payment-edit.png)
 
-İşte ödeme ağ geçitleri ayarlarının tam görünümü:
+اؤدنیش دَییشدیرمه صفحه‌سینین تام گؤرونوشو بودور:
 
-![Ödeme ağ geçitleri ayarları tam sayfası](/img/config/settings-payments-gateways-full.png)
+![اؤدنیش دَییشدیرمه تام آراایوزو](/img/admin/payment-edit-full.png)
 
-**Stripe gateway'ini kurma**
+اؤدنیش gateway تنظیم‌لرینین تام گؤرونوشو ده بودور:
 
-**PayPal gateway'ini kurma**
+![اؤدنیش gateway تنظیم‌لری تام صفحه‌سی](/img/config/settings-payments-gateways-full.png)
 
-**Manuel ödemeleri kurma**
+**Stripe gateway-ینین قورولماسی**
 
-Şimdi, ödeme ağ geçidi olarak _WooCommerce_ , _GoCardless_ veya _Payfast_ kullanmak isterseniz, **onların eklentilerini kurup yapılandırmanız** gerekecektir.
+**PayPal gateway-ینین قورولماسی**** **
 
-### WooCommerce eklentisini nasıl kurarsınız:
+**manual اؤدنیش‌لرین قورولماسی**
 
-_Stripe_ ve _PayPal_'ın bazı ülkelerde bulunmadığını ve bu durumun Ultimate Multisite kullanıcılarının eklentimizi etkili bir şekilde kullanmasını kısıtladığını biliyoruz. Bu yüzden, çok popüler bir e-ticaret eklentisi olan _WooCommerce_'u entegre etmek için bir eklenti oluşturduk. Dünya çapındaki geliştiriciler, farklı ödeme ağ geçitlerini bu eklentiye entegre etmek için eklentiler geliştirdiler. Biz de bu durumu avantaja çevirerek Ultimate Multisite faturalandırma sistemiyle kullanabileceğiniz ödeme ağ geçitlerini genişlettik.
+ایندی، اگر _WooCommerce_ ، _GoCardless_ یا _Payfast_ اؤدنیش gateway-ی کیمی ایشله‌تمک ایسته‌ییرسینیزسه، **اونلارین add-on-لارینی قوراشدیریب قورمالیسینیز**.
 
-_**ÖNEMLİ:** Ultimate Multisite: WooCommerce Entegrasyonu, WooCommerce'un en azından ana sitenizde etkinleştirilmesini gerektirir._
+### WooCommerce add-on-ونو نئجه قوراشدیرماق: {#how-to-install-the-woocommerce-add-on}
 
-Öncelikle, eklentiler sayfasına gidin. Buraya **Ultimate Multisite > Ayarlar** yolunu izleyerek ulaşabilirsiniz. **Eklentiler** tablosunu görmelisiniz. **Eklentilerimizi Kontrol Et** seçeneğine tıklayın.
+بیلirik کی، _Stripe_ و _PayPal_ بعضی اؤلکه‌لرده موجود دییل و بو، Ultimate Multisite ایشلدیجی‌لرینین plugin-یمیزی مؤثر شکیلده ایشله‌تمه‌سینی محدودلاشدیریر یا انگلله‌ییر. بونا گؤره _WooCommerce,_ ایله بیرلشدیرمک اوچون بیر add-on یاراتدیق؛ بو، چوخ مشهور بیر e-commerce plugin-یدیر. دونیاداکی developer-لر فرقلی اؤدنیش gateway-لرینی اونا بیرلشدیرمک اوچون add-on-لار یاراتدی‌لار. بوندان فایدالانیب Ultimate Multisite صورت‌حساب سیستمی ایله ایشله‌ده بیله‌جه‌یینیز اؤدنیش gateway-لرینی گئنیشله‌ندیر‌دیک.
 
-<!-- Screenshot unavailable: Ultimate Multisite Ayarlar kenar çubuğundaki Eklentiler tablosu ve Eklentilerimizi Kontrol Et bağlantısı -->
+_**اؤنه‌ملی:** Ultimate Multisite: WooCommerce Integration اوچون WooCommerce ان آزی اصلی site-ینیزده فعال اولمالیدیر._
 
-**Eklentilerimizi Kontrol Et**'e tıkladıktan sonra, eklentiler sayfasına yönlendirileceksiniz. Burada tüm Ultimate Multisite eklentilerini bulabilirsiniz. **Ultimate Multisite: WooCommerce Entegrasyonu** eklentisine tıklayın.
+اؤنجه add-on-لار صفحه‌سینه گئدین. اونو **Ultimate Multisite > Settings** یولو ایله تاپا بیلرسینیز. **Add-ons** جدولی‌نی گؤرمه‌لی‌سینیز. **Check our Add-ons** اوستونه کلیک ائدین.
 
-![Ultimate Multisite eklentilerini içeren eklentiler sayfası, WooCommerce Entegrasyonu dahil](/img/addons/addons-page.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Eklenti detaylarıyla birlikte bir pencere açılacaktır. Sadece **Şimdi Kur**'a tıklayın.
+**Check our Add-ons** اوستونه کلیک ائدندن سونرا، add-on-لار صفحه‌سینه یؤنله‌ندیریله‌جه‌کسینیز. بورادا بوتون Ultimate Multisite add-on-لارینی تاپا بیلرسینیز. **Ultimate Multisite: WooCommerce Integration** add-on-ونا کلیک ائدین.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Entegrasyonu eklenti detayları iletişim kutusu ve Şimdi Kur düğmesi -->
+![WooCommerce Integration دا داخیل اولماقلا Ultimate Multisite add-on-لارینی لیستله‌ین add-on-لار صفحه‌سی](/img/addons/addons-page.png)
 
-Kurulum tamamlandıktan sonra, eklentiler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir**'e tıklayın ve WooCommerce eklentisi ağınızda etkinleştirilmiş olacaktır.
+اضافه‌نین دیتایل‌لاری ایله بیر پەنجیره آچیلار. تکجه **ایندی قوراشدیر** دؤیمه‌سینه کلیک ائله‌یین.
 
-<!-- Screenshot unavailable: WooCommerce Entegrasyonu eklentisi için eklentiler sayfasındaki Ağda Etkinleştir bağlantısı -->
+<!-- اسکرین‌شات یوخدور: Ultimate Multisite WooCommerce Integration اضافه‌سینین دیتایل پەنجیره‌سی، ایندی قوراشدیر دؤیمه‌سی ایله -->
 
-Etkinleştirdikten sonra, web sitenizde hala WooCommerce eklentisi kurulu ve etkin değilse, bir hatırlatma alırsınız.
+قوراشدیرما قورتاراندان سونرا، افزونه‌لر صفحه‌سینه یؤنله‌ندیریله‌جه‌ک‌سینیز. بورادا تکجه **شبکه‌ده فعال ائله** دؤیمه‌سینه کلیک ائله‌یین و WooCommerce اضافه‌سی شبکه‌نیزده فعال اولاجاق.
 
-<!-- Screenshot unavailable: Yöneticiye WooCommerce eklentisini kurup etkinleştirmesi gerektiğini hatırlatan yönetici bildirimi -->
+<!-- اسکرین‌شات یوخدور: افزونه‌لر صفحه‌سی، WooCommerce Integration اضافه‌سی اوچون شبکه‌ده فعال ائله لینکینه مالیک -->
 
-WooCommerce Entegrasyonu eklentisi hakkında daha fazla bilgi edinmek için **buraya tıklayın**.
+اونو فعال ائله‌دیکدن سونرا، اگر هله‌ده وب‌سایتینیزده WooCommerce افزونه‌سی قوراشدیریلماییب و فعال ائدیلمه‌ییبسه، بیر یادآوری آلاجاق‌سینیز.
 
-### GoCardless eklentisini nasıl kurarsınız:
+<!-- اسکرین‌شات یوخدور: مدیرə WooCommerce افزونه‌سینی قوراشدیرماق و فعال ائله‌مک اوچون یادآوری ائدن ایداره بیلدیریشی -->
 
-_GoCardless_ eklentisini kurma adımları, _WooCommerce_ eklentisini kurma adımlarıyla neredeyse aynıdır. Lütfen eklentiler sayfasına gidin ve **Ultimate Multisite: GoCardless Gateway** eklentisini seçin.
+WooCommerce Integration اضافه‌سی حاقیندا داها آرتیق اوخوماق اوچون، **بورا کلیک ائله‌یین**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway eklentisi vurgulanmış eklentiler sayfası -->
+### GoCardless اضافه‌سینی نئجه قوراشدیرماق: {#how-to-install-the-gocardless-add-on}
 
-Eklenti penceresi açılacaktır. **Şimdi Kur**'a tıklayın.
+_GoCardless_ اضافه‌سینی قوراشدیرماق آدیم‌لاری دئمه‌ک اولار کی _WooCommerce_ اضافه‌سی ایله عینیدیر. لطفاً اضافه‌لر صفحه‌سینه گئدین و **Ultimate Multisite: GoCardless Gateway** اضافه‌سینی سئچین.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway eklenti detayları iletişim kutusu ve Şimdi Kur düğmesi -->
+<!-- اسکرین‌شات یوخدور: اضافه‌لر صفحه‌سی، Ultimate Multisite GoCardless Gateway اضافه‌سی وورغولانمیش -->
 
-Kurulum tamamlandıktan sonra, eklentiler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir**'e tıklayın ve _GoCardless_ eklentisi ağınızda etkinleştirilmiş olacaktır.
+اضافه پەنجیره‌سی آچیلار. **ایندی قوراشدیر** دؤیمه‌سینه کلیک ائله‌یین.
 
-<!-- Screenshot unavailable: GoCardless Gateway eklentisi için eklentiler sayfasındaki Ağda Etkinleştir bağlantısı -->
+<!-- اسکرین‌شات یوخدور: Ultimate Multisite GoCardless Gateway اضافه‌سینین دیتایل پەنجیره‌سی، ایندی قوراشدیر دؤیمه‌سی ایله -->
 
-_GoCardless_ ağ geçidi ile nasıl başlayacağını öğrenmek için **bu makaleyi okuyun**.
+قوراشدیرما قورتاراندان سونرا، افزونه‌لر صفحه‌سینه یؤنله‌ندیریله‌جه‌ک‌سینیز. بورادا تکجه **شبکه‌ده فعال ائله** دؤیمه‌سینه کلیک ائله‌یین و _GoCardless_ اضافه‌سی شبکه‌نیزده فعال اولاجاق.
 
-### Payfast eklentisini nasıl kurarsınız:
+<!-- اسکرین‌شات یوخدور: افزونه‌لر صفحه‌سی، GoCardless Gateway اضافه‌سی اوچون شبکه‌ده فعال ائله لینکینه مالیک -->
 
-Eklentiler sayfasına gidin ve **Ultimate Multisite: Payfast Gateway** eklentisini seçin.
+_GoCardless_ درگاهی ایله نئجه باشلاماغی اؤیرنمک اوچون، **بو مقاله‌نی اوخویون**.
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway eklentisi vurgulanmış eklentiler sayfası -->
+### Payfast اضافه‌سینی نئجه قوراشدیرماق: {#how-to-install-the-payfast-add-on}
 
-Eklenti penceresi açılacaktır. **Şimdi Kur**'a tıklayın.
+اضافه‌لر صفحه‌سینه گئدین و **Ultimate Multisite: Payfast Gateway** اضافه‌سینی سئچین.
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway eklenti detayları iletişim kutusu ve Şimdi Kur düğmesi -->
+<!-- اسکرین‌شات یوخدور: اضافه‌لر صفحه‌سی، Ultimate Multisite Payfast Gateway اضافه‌سی وورغولانمیش -->
 
-Kurulum tamamlandıktan sonra, eklentiler sayfasına yönlendirileceksiniz. Burada sadece **Ağda Etkinleştir**'e tıklayın ve _Payfast_ eklentisi ağınızda etkinleştirilmiş olacaktır.
+اضافه پەنجیره‌سی آچیلار. **ایندی قوراشدیر.** دؤیمه‌سینه کلیک ائله‌یین.
 
-<!-- Screenshot unavailable: Payfast Gateway eklentisi için eklentiler sayfasındaki Ağda Etkinleştir bağlantısı -->
+<!-- اسکرین‌شات یوخدور: Ultimate Multisite Payfast Gateway اضافه‌سینین دیتایل پەنجیره‌سی، ایندی قوراشدیر دؤیمه‌سی ایله -->
+
+قوراشدیرما قورتاراندان سونرا، افزونه‌لر صفحه‌سینه یؤنله‌ندیریله‌جه‌ک‌سینیز. بورادا تکجه **شبکه‌ده فعال ائله** دؤیمه‌سینه کلیک ائله‌یین و _Payfast_ اضافه‌سی شبکه‌نیزده فعال اولاجاق.
+
+<!-- اسکرین‌شات یوخدور: افزونه‌لر صفحه‌سی، Payfast Gateway اضافه‌سی اوچون شبکه‌ده فعال ائله لینکینه مالیک -->

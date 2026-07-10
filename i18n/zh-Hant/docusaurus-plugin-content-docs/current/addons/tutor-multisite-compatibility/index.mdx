@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 一個為 Tutor LMS 在多站點環境中添加相容性修復的 WordPress 外掛。
 
-## Description
+## Description {#description}
 
 本外掛為在 WordPress 多站點網路環境中運行 Tutor LMS 提供了必要的相容性修復。它處理了用戶註冊、講師管理、課程限制以及其他多站點特定的功能。
 
-## Features
+## Features {#features}
 
 - **資料庫表格管理 (Database Table Management)**：自動偵測並建立因多站點外鍵約束而無法建立的 Tutor LMS 缺失表格。
 - **多站點用戶註冊 (Multisite User Enrollment)**：為跨網路站點管理用戶註冊提供自訂 AJAX 處理器。
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **自訂管理介面 (Custom Admin Views)**：具備多站點意識的講師列表和管理介面。
 - **管理工具 (Admin Tools)**：為網路和站點管理員提供的資料庫管理介面。
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress Multisite 安裝
 - Ultimate Multisite 外掛 (用於課程限制功能)
 
-## Installation
+## Installation {#installation}
 
 1. 將外掛檔案上傳至 `/wp-content/plugins/tutor-multisite-compatibility/`
 2. 確保已安裝並啟用了 Tutor LMS
 3. 透過 WordPress 的「外掛」選單啟用本外掛
 4. 本外掛將自動與 Tutor LMS 整合
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Moved from MU Plugin
+## Functionality Moved from MU Plugin {#functionality-moved-from-mu-plugin}
 
 本外掛包含先前位於 `wp-content/mu-plugins/daves.php` 的功能：
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - 多站點用戶註冊處理
 - 課程產品 ID 顯示
 
-## Database Management
+## Database Management {#database-management}
 
-### The Problem
+### The Problem {#the-problem}
 
 在 WordPress 多站點環境中，Tutor LMS 嘗試建立的表格，如果包含指向用戶表的**外鍵約束**，就會失敗。這是因為：
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - 外鍵引用的是 `wp_2_users` (此表不存在)
 - 實際的用戶表是 `wp_users` (在整個網路中是共用的)
 
-### The Solution
+### The Solution {#the-solution}
 
 本外掛會自動執行以下操作：
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - 網路中創建新站點
    - 透過管理介面手動檢查表格
 
-### Affected Tables
+### Affected Tables {#affected-tables}
 
 - `tutor_coupon_usages` - 包含指向用戶表的外鍵
 - `tutor_carts` - 包含指向用戶表的外鍵
 - `tutor_notification_preferences` - 包含指向用戶表的 TutorPro 表
 
-### Admin Interface
+### Admin Interface {#admin-interface}
 
 請至以下路徑存取資料庫管理工具：
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - 檢查資料庫配置
 - 查看詳細的狀態資訊
 
-## Support
+## Support {#support}
 
 本外掛專為 KursoPro 平台設計。如需技術支援，請聯繫開發團隊。

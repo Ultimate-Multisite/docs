@@ -3,7 +3,7 @@ title: Paano Kanselahin ang isang Subscription
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Paano ko makakansela ang aking subscription?
+# Paano ko makakansela ang aking subscription? {#how-can-i-cancel-my-subscription}
 
 Kung may Ultimate Multisite license ka, puwede mong kanselahin ang renewal nito kahit kailan mo gusto. Sundin lang ang mga hakbang sa ibaba:
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent är en autonom WordPress AI-assistent som kan planera, bygga och hantera hela WordPress-sajter genom naturligt språk. Den exponerar ett strukturerat set av **abilities** (förmågor) – diskreta, testbara åtgärder som agenten kan anropa – som täcker allt från innehållshantering till anpassning av designsystem. Version 1.9.0 lägger till förmågor för innehållsskapande, visuell sidgranskning via klientbaserade skärmdumpar, fem inbyggda agentprofiler samt feature flags för åtkomstkontroll och varumärkeshantering.
 
-## Huvudfunktioner
+## Huvudfunktioner {#key-features}
 
 - **Abilities system** – ett modulärt och utbyggbart katalog av åtgärder som agenten kan anropa i din WordPress-installation
 - **Innehållshantering** – skapa inlägg och sidor (inklusive tilldelning av sidmallar), skapa flera inlägg i bulk i ett enda anrop, ställa in huvudbilder och bygga kontaktformulär
@@ -28,21 +28,21 @@ Gratis AI Agent är en autonom WordPress AI-assistent som kan planera, bygga och
 - **Site Builder Orchestration v2** – flerstegsplaner för webbplatsbyggande med pluginupptäckt, framstegsspårning och felåterhämtning
 - **WP-CLI benchmark command** – kör agentens benchmark-svit från kommandoraden för CI och modellutvärdering
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 6.0 eller högre
 - PHP 8.1 eller högre
 - WordPress Multisite (aktiverat på nätverksnivå) eller enstadsinstallation
 - Ett aktivt AI-leverantörs-plugin (Anthropic, OpenAI eller kompatibelt)
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp pluginfilerna till `/wp-content/plugins/gratis-ai-agent`
 2. Aktivera pluginet via **Plugins**-skärmen i WordPress
 3. Gå till **Gratis AI Agent → Settings** och koppla till din AI-leverantör
 4. (Valfritt) Bläddra i **Abilities Registry** för att installera ytterligare ability-paket
 
-## Snabbstart
+## Snabbstart {#quick-start}
 
 När det är aktiverat och anslutet till en AI-leverantör, öppna panelen **Gratis AI Agent** i WordPress-admin-sidomenyn. Skriv en instruktion på naturligt språk och agenten kommer att planera och exekvera de nödvändiga stegen med hjälp av sina tillgängliga abilities.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Abilities Översikt
+## Abilities Översikt {#abilities-overview}
 
 Abilities är de atomära åtgärder agenten kan utföra. Varje ability är en registrerad PHP-klass som exponerar ett schema (parametrar och returtyper) som agenten läser vid körning. Abilities grupperas i funktionella områden:
 
@@ -79,7 +79,7 @@ Abilities är de atomära åtgärder agenten kan utföra. Varje ability är en r
 
 Se [Abilities Reference](./abilities) för fullständig dokumentation över parametrar och användningsexempel.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent levereras med en `wp gratis-ai-agent` kommogrupp för att köra benchmarks och hantera abilities från kommandoraden. Se [WP-CLI Reference](./wp-cli) för den fullständiga listan över kommandon.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Alla inställningar finns under **Gratis AI Agent → Settings** i WordPress-admin:
 
@@ -106,7 +106,7 @@ Alla inställningar finns under **Gratis AI Agent → Settings** i WordPress-adm
 | **Ability Timeout** | Maximal tid (i sekunder) en enskild ability får köras (standard 30) |
 | **Debug Logging** | Loggar ability-anrop och agentens resonemang till WordPress debug log |
 
-## Options Management Safety Blocklist
+## Options Management Safety Blocklist {#options-management-safety-blocklist}
 
 Abilities Management-funktionen inkluderar en inbyggd blocklista som förhindrar agenten från att läsa eller skriva känsliga WordPress-alternativ. Standardblocklistan täcker:
 
@@ -118,26 +118,26 @@ Abilities Management-funktionen inkluderar en inbyggd blocklista som förhindrar
 
 Ytterligare poster kan läggas till via filtret `gratis_ai_agent_options_blocklist`.
 
-## Hooks och Filters
+## Hooks och Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` – triggas efter att en ability har registrerats, tar emot abilityklassnamnet
 - `gratis_ai_agent_plan_started` – triggas när en site builder-plan börjar exekveras
 - `gratis_ai_agent_plan_completed` – triggas när en plan slutförs framgångsrikt
 - `gratis_ai_agent_plan_failed` – triggas när en plan stöter på ett oåterkalleligt fel
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` – modifiera den registrerade ability-listan innan agenten laddar den
 - `gratis_ai_agent_options_blocklist` – utöka eller minska säkerhetsblocklistan för alternativ
 - `gratis_ai_agent_benchmark_questions` – lägga till anpassade benchmark-frågor i utvärderingssviten
 - `gratis_ai_agent_plan_plugins` – modifiera listan över upptäckta plugins under generering av site-plan
 
-## Support
+## Support {#support}
 
 För support, besök [ultimatemultisite.com](https://ultimatemultisite.com) eller öppna ett ärende i plugin-repositoryt.
 
-## Changelog
+## Changelog {#changelog}
 
 Se [Changelog](./changelog) för hela versionshistoriken.

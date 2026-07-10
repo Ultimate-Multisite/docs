@@ -1,0 +1,78 @@
+---
+title: חיפוש דומיין בכותרת
+sidebar_position: 4
+_i18n_hash: c8b44ed222646006fb33c195ca6ac7a1
+---
+# חיפוש דומיין בכותרת {#header-domain-search}
+
+השתמשו בהגדרה הזו כשאתם רוצים טופס קטן בכותרת שמתחיל חיפוש דומיין, ואז מאפשר ללקוח לבחור מתוך דומיינים זמינים בתוך התשלום של Ultimate Multisite.
+
+## דרישות {#requirements}
+
+- Ultimate Multisite פעיל ברשת.
+- Multisite Ultimate Domain Seller פעיל ברשת.
+- לפחות מוצר פעיל אחד לרישום דומיין עם:
+  - `domain_provider` מוגדר לספק שהוגדר.
+  - סיומות TLD נתמכות שהוגדרו, למשל `com`, `net` ו-`org`.
+- טופס תשלום תקף שמכיל את השדה **בחירת דומיין**.
+
+## טופס תשלום {#checkout-form}
+
+1. צרו או ערכו את טופס התשלום שמשמש את עמוד ההרשמה.
+2. הוסיפו את שדות התשלום/Account הרגילים הנדרשים, כולל **שם משתמש**. טופס תשלום שמכיל רק את שדה הדומיין יידחה על ידי האימות של Ultimate Multisite.
+3. הוסיפו שדה **בחירת דומיין**.
+4. הגדירו את מצב בחירת הדומיין ל-**רישום בלבד** כאשר התהליך אמור להתמקד בדומיינים רשומים במקום בתתי-דומיינים חינמיים או בדומיינים קיימים.
+5. שייכו את מוצר רישום הדומיין לשדה הזה.
+
+עמוד ההרשמה צריך להציג את טופס התשלום, לדוגמה:
+
+```text
+[wu_checkout slug="domain-form"]
+```
+
+## טופס כותרת {#header-form}
+
+הוסיפו טופס `GET` קטן בכותרת האתר ששולח את מונח החיפוש שהוזן לעמוד התשלום בתור `domain_name`:
+
+```html
+<form class="ums-header-domain-search" action="/register/" method="get">
+  <label class="screen-reader-text" for="ums-header-domain-search-input">Search for a domain</label>
+  <input id="ums-header-domain-search-input" name="domain_name" type="text" placeholder="Find your domain" autocomplete="off">
+  <button type="submit">Search</button>
+</form>
+```
+
+אל תבחרו מראש דומיין ב-JavaScript מותאם אישית של הכותרת. הכותרת צריכה רק להעביר את מונח החיפוש. סקריפט התשלום של Domain Seller קורא את `?domain_name=example`, ממלא את תיבת החיפוש בתשלום, ומריץ את חיפוש הזמינות כדי שהלקוח יוכל לבחור מתוך הדומיינים שהוחזרו.
+
+## התנהגות צפויה {#expected-behaviour}
+
+חיפוש `example` בכותרת אמור לפתוח:
+
+```text
+/register/?domain_name=example
+```
+
+לאחר מכן התשלום אמור להציג תוצאות שניתן לבחור, כגון:
+
+- `example.com`
+- `example.net`
+- `example.org` לא זמין
+- סיומות TLD אחרות הנתמכות על ידי הספק
+
+לאחר בחירת תוצאה זמינה, סיכום ההזמנה אמור לכלול את מוצר רישום הדומיין ואת שם הדומיין שנבחר.
+
+## אימות {#verification}
+
+1. פתחו את עמוד הבית.
+2. חפשו שם ללא סיומת, לדוגמה `example`.
+3. ודאו שכתובת ה-URL של התשלום כוללת `?domain_name=example`.
+4. ודאו ששדה הדומיין בתשלום מכיל `example`.
+5. ודאו שמופיעה רשימת אפשרויות דומיין.
+6. לחצו על **בחר** עבור דומיין זמין.
+7. ודאו שסיכום ההזמנה מכיל `Domain Registration - example.com` או את הדומיין שנבחר.
+
+## פתרון בעיות {#troubleshooting}
+
+- אם לא מופיעה רשימה, בדקו את לשונית הרשת בדפדפן עבור `admin-ajax.php?action=wu_domain_search` וודאו שהיא מחזירה `domains` או `results` שאינם ריקים.
+- אם טופס התשלום נכשל באימות בזמן השמירה, הוסיפו את שדות ה-Account הנדרשים כגון **שם משתמש**.
+- אם בחירת דומיין אינה מעדכנת את העגלה, ודאו ש-`window.wu_checkout_form` קיים ושנכסי התשלום של Domain Seller נטענים בעמוד התשלום.

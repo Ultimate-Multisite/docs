@@ -1,94 +1,109 @@
 ---
-title: WooCommerce ইন্টিগ্ৰেচন
+title: WooCommerce সংহতি
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce সংহতি {#woocommerce-integration}
 
-WooCommerce Integration, Hamar Manual Gateway jetiya, utulor ekta bahut mil ase. Ei add-on-gu apunar users-haru-ke onek flexibility deya, jetiya tei apunar WooCommerce install-korat paowar sob payment form-guli bhaal bhabe chuni paaru. Aru eta sohoj: jodi user-r billing period shesh hobo, tatei user-r subscription-ku 'on hold' (rokha) kora hobo. Ekhon, network-r main site-korat ekta order create hobo. User-ku tar email-korat ekta invoice paabe, jetiya payment korar link-ku deya hobo. Payment paowar por, subscription-ku punorajagri (renew) kora hobo.
+WooCommerce সংহতিয়ে আমাৰ Manual Gateway কাম কৰাৰ পদ্ধতিৰ সৈতে অতি মিল থকা ধৰণে কাম কৰে। ই আপোনাৰ ব্যৱহাৰকাৰীসকলক বহু পৰিমাণৰ নমনীয়তা দিয়ে, যাতে তেওঁলোকে আপোনাৰ WooCommerce স্থাপনত উপলব্ধ যিকোনো পেমেণ্ট ফৰ্ম বাছনি কৰিব পাৰে। আৰু ই সহজ: ব্যৱহাৰকাৰীৰ বিলিং সময়সীমা শেষ হ’লেই, ব্যৱহাৰকাৰীৰ চাবস্ক্ৰিপচন স্থগিত ৰখা হয়। একে সময়তে, নেটৱৰ্কৰ মুখ্য ছাইটৰ WooCommerce স্থাপনত এটা অৰ্ডাৰ সৃষ্টি কৰা হ’ব। তাৰ পিছত ব্যৱহাৰকাৰীয়ে তেওঁলোকৰ ইমেইলত এটা ইনভয়েচ পায়, য’ত পেমেণ্ট সম্পন্ন কৰাৰ বাবে এটা লিংক থাকে। পেমেণ্ট গ্ৰহণ হোৱাৰ পিছত, চাবস্ক্ৰিপচন নবীকৰণ কৰা হয়।
 
-## Features
+## বৈশিষ্ট্যসমূহ {#features}
 
-- Ultimate Multisite aru WooCommerce-or modhye sohoj integration
-- anek dhoronor payment method paowar sujog
-- WooCommerce Subscriptions-soho sampurna automatic process
+- Ultimate Multisite আৰু WooCommerce-ৰ মাজত সহজ সংহতি
+- কেইবাটাও পেমেণ্ট পদ্ধতি উপলব্ধ
+- বান্ডল কৰা চাবস্ক্ৰিপচন কোৰ ব্যৱহাৰ কৰি স্বয়ংক্ৰিয় পুনৰাবৃত্ত বিলিং, ঐচ্ছিক WooCommerce Subscriptions plugin উন্নয়নসহ
+- Checkout মুঠত Ultimate Multisite কৰসমূহ পৃথক, কৰ-অযোগ্য WooCommerce fee line হিচাপে অন্তৰ্ভুক্ত থাকে যাতে গ্ৰাহকে পেমেণ্টৰ আগতে কৰৰ পৰিমাণসমূহ পৰ্যালোচনা কৰিব পাৰে
 
-## Documentation
+## নথিপত্ৰ {#documentation}
 
-**Setting Up The WooCommerce Integration**
+**WooCommerce সংহতি ছেট আপ কৰা**
 
-**Extending your Payment Options with Ultimate Multisite: WooCommerce Integration**
+**Ultimate Multisite-ৰ সৈতে আপোনাৰ পেমেণ্ট বিকল্পসমূহ সম্প্ৰসাৰণ কৰা: WooCommerce সংহতি**
 
-## Installation
+## স্থাপন {#installation}
 
-1. 'ultimate-multisite-woocommerce' file-ku '/wp-content/plugins/' directory-korat upload kora.
-2. WordPress-or 'Plugins' menu-korat plugin-ku activate kora.
-3. Plugin-ku set up koribo-nuhar jonno step by step Wizard-ku follow kora.
+1. 'ultimate-multisite-woocommerce' ক '/wp-content/plugins/' ডাইৰেক্টৰীত আপলোড কৰক
+2. WordPress-ত 'Plugins' মেনুৰ জৰিয়তে plugin সক্ৰিয় কৰক
+3. plugin ছেট আপ কৰিবলৈ ধাপে ধাপে Wizard অনুসৰণ কৰক
 
-## Usage Guide
+## ব্যৱহাৰ নিৰ্দেশিকা {#usage-guide}
 
-_**IMPORTANT NOTE: Ei article-gu Ultimate Multisite version 2.x-korat bishoyok.**_
+_**গুৰুত্বপূৰ্ণ টোকা: এই প্ৰবন্ধটো Ultimate Multisite সংস্কৰণ 2.x-ৰ বিষয়ে।**_
 
-_**ATTENTION:** Ultimate Multisite: WooCommerce Integration-korat apunar main site-korat WooCommerce activate kora aniya thaka aavashyak._
+_**সাৱধান:** Ultimate Multisite: WooCommerce সংহতিৰ বাবে WooCommerce কমেও আপোনাৰ মুখ্য ছাইটত সক্ৰিয় থাকিব লাগিব।_
 
-Ami bujhiye niu ki kichu deshe _Stripe_ aru _PayPal_ paowar sujog nai, jetiya Ultimate Multisite users-haru-ke hamar plugin-ku effective bhabe byabohar koribo-nuhar kshetre simit kore. Tai, amele **WooCommerce-ku integrate koribo-nuhar jonno ekta add-on** toiri kora.
+আমি বুজি পাওঁ যে _Stripe_ আৰু _PayPal_ কিছুমান দেশত উপলব্ধ নহয়, যিয়ে Ultimate Multisite ব্যৱহাৰকাৰীসকলক আমাৰ plugin ফলপ্ৰসূভাৱে ব্যৱহাৰ কৰাৰ পৰা সীমিত বা বাধাগ্ৰস্ত কৰে। সেয়ে আমি **_WooCommerce_ সংহত কৰিবলৈ এটা add-on** সৃষ্টি কৰিলোঁ।
 
-_WooCommerce_ ekta bahut lokopriyo eCommerce plugin. Duniya-r developer-haru-e eya-korat alada payment gateway-guli integrate koribo-nuhar jonno add-on toiri kora. Ami ei sujog-ku byabohar kora, jetiya Ultimate Multisite billing system-korat apunar byabohar koribo-par sob payment gateway-guli badha koribo-nuhar jonno.
+_WooCommerce_ এটা অতি জনপ্ৰিয় eCommerce plugin। বিশ্বজুৰি বিকাশকৰ্তাসকলে বিভিন্ন পেমেণ্ট gateway ইয়াত সংহত কৰিবলৈ add-on সৃষ্টি কৰিছে। Ultimate Multisite বিলিং ব্যৱস্থাত আপুনি ব্যৱহাৰ কৰিব পৰা পেমেণ্ট gateway-সমূহ সম্প্ৰসাৰণ কৰিবলৈ আমি ইয়াৰ সুবিধা লৈছোঁ।
 
-## Setting It Up
+## ইয়াক ছেট আপ কৰা {#setting-it-up}
 
-Prothome, apunar WooCommerce Integration add-on-ku install koribo hobe, jetiya **licensed user-haru-korat free**. Eya install koribo-nuhar jonno, apunar super admin dashboard-korat Ultimate Multisite-korat click kora aru **Add-ons** select kora.
+প্ৰথমে, আপুনি WooCommerce সংহতি add-on স্থাপন কৰিব লাগিব, যি **লাইচেন্সপ্ৰাপ্ত ব্যৱহাৰকাৰীৰ বাবে বিনামূলীয়া**। ইয়াক স্থাপন কৰিবলৈ, আপোনাৰ super admin dashboard-ত Ultimate Multisite-ত ক্লিক কৰক আৰু **Add-ons** বাছনি কৰক।
 
-![Add-ons page](/img/admin/addons-page.png)
+![Add-ons পৃষ্ঠা](/img/admin/addons-page.png)
 
-Ekhane apunar sob Ultimate Multisite add-on paowar sujog. **Ultimate Multisite: WooCommerce Integration** add-on-korat click kora.
+ইয়াত আপুনি সকলো Ultimate Multisite add-on পাব পাৰে। **Ultimate Multisite: WooCommerce সংহতি** add-on-ত ক্লিক কৰক।
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![WooCommerce সংহতি দেখুওৱা Add-ons পৃষ্ঠা](/img/admin/addons-page.png)
 
-Add-on-r details-soho ekta window pop up hobo. Keu **Install Now** *.* click kora.
+add-on-ৰ বিৱৰণসহ এটা উইণ্ড’ ওলাব। কেৱল **Install Now** *.*-ত ক্লিক কৰক
 
 <!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-Installation hoi jaay, tar por apunak plugins page-korat redirect kora hobo. Ekhane, keu **Network Activate** click kora aru _WooCommerce_ add-on-ku apunar network-korat activate kora hobo.
+স্থাপন সম্পূৰ্ণ হোৱাৰ পিছত, আপোনাক plugins পৃষ্ঠালৈ পুনঃনিৰ্দেশ কৰা হ’ব। ইয়াত, কেৱল **Network Activate**-ত ক্লিক কৰক আৰু _WooCommerce_ add-on আপোনাৰ নেটৱৰ্কত সক্ৰিয় হ’ব।
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-Activate koribo-nuhar por, jodi apunar website-korat WooCommerce plugin install aru activate nai hobo, **apunar ekta reminder paowar sujog hobo**.
+ইয়াক সক্ৰিয় কৰাৰ পিছত, যদি আপোনাৰ ৱেবছাইটত এতিয়াও WooCommerce plugin স্থাপন আৰু সক্ৰিয় কৰা নাই, **আপুনি এটা স্মাৰক পাব**।
 
 <!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-Install hoi jaay, tar por apunar Ultimate Multisite payments settings-korat ekta additional option dekhabo. Ekhon apunar ekhon theke _WooCommerce_ option-ku **enable** koribo paaru.
+স্থাপন হোৱাৰ পিছত, আপুনি Ultimate Multisite পেমেণ্ট ছেটিংসমূহৰ অধীনত এটা অতিৰিক্ত বিকল্প দেখিব। তাৰ পৰা আপুনি _WooCommerce_ বিকল্পটো **সক্ষম** কৰিব পাৰে।
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![WooCommerce সক্ষম থকা Ultimate Multisite পেমেণ্ট gateway ছেটিংসমূহ](/img/addons/woocommerce-payment-gateway.png)
 
-Apunar kichu basic setting-guli configure koribo paaru, jetiya front end-korat dekhabo-nuhar display name aru apunar users-haru-ke checkout flow-korat guide koribo-nuhar instructions. Tar por, apunar **Main site-r _WooCommerce_ settings**-korat giye apunar byabohar koribo-bhaal payment gateway-ku enable aru configure kora paaru.
+আপুনি সন্মুখভাগত দেখা যাবলগীয়া প্ৰদৰ্শন নাম আৰু আপোনাৰ ব্যৱহাৰকাৰীসকলক তেওঁলোকৰ checkout প্ৰবাহত পথপ্ৰদৰ্শন কৰিবলৈ নিৰ্দেশনাৰ দৰে কিছুমান মৌলিক ছেটিং কনফিগাৰ কৰিব পাৰে। তাৰ পিছত আপুনি ব্যৱহাৰ কৰিবলৈ পছন্দ কৰা পেমেণ্ট gateway সক্ষম আৰু কনফিগাৰ কৰিবলৈ আপোনাৰ **মুখ্য ছাইটৰ _WooCommerce_ ছেটিংসমূহলৈ** যাব পাৰে।
 
-## How to manage the payment
+### Checkout কৰ fee line {#checkout-tax-fee-lines}
 
-WooCommerce Integration hamar **Manual Gateway** jetiya bahut mil ase. Eya-korat ekta drawback je sob payment-ku billing period-r shesh-korat manual-bhabe kora lagibo. Flow-gu ehi bhabe kaaj kore:
+যেতিয়া Ultimate Multisite checkout-ত কৰ অন্তৰ্ভুক্ত থাকে, সংহতিয়ে প্ৰতিটো Ultimate Multisite কৰৰ পৰিমাণ WooCommerce checkout-ত পৃথক, কৰ-অযোগ্য fee line হিচাপে যোগ কৰে। ইয়াৰ ফলত পেমেণ্টৰ আগতে কৰৰ মুঠ দৃশ্যমান থাকে আৰু WooCommerce-এ কৰ fee-ৰ ওপৰত পুনৰ কৰ আৰোপ কৰাটো ৰোধ হয়।
 
-  * User-r billing cycle shesh hobo, tatei membership-ku **on hold** kora hobo. Ekhon, network-r main site-korat ekta order create hobo.
+## পেমেণ্ট কেনেকৈ পৰিচালনা কৰিব {#how-to-manage-the-payment}
 
-  * Users-haru-e tar email-korat ekta invoice paabe, jetiya payment korar link-ku deya hobo (ei link-ku subsite dashboard-korat tar billing history-korat pani). Ei link-ku user-ku _**WooCommerce**_ **checkout**-korat redirect koribo, jetiya users-haru-e payment process koribo-nuhar jonno **paowar _WooCommerce_ gateway**-guli-korat chuni paaru.
+WooCommerce সংহতিয়ে আমাৰ **Manual Gateway** কাম কৰাৰ পদ্ধতিৰ সৈতে অতি মিল থকা ধৰণে কাম কৰে। অসুবিধাটো হ’ল বিলিং সময়সীমাৰ শেষত প্ৰতিটো পেমেণ্ট হাতেৰে পৰিশোধ কৰিব লাগিব। প্ৰবাহটো কেনেকৈ কাম কৰে সেয়া ইয়াত দিয়া হৈছে:
 
-  * Payment paowar por, membership-ku **renew** kora hobo, payment-ku Ultimate Multisite-korat log kora hobo aru order-ku complete set kora hobo.
+  * ব্যৱহাৰকাৰীৰ বিলিং চক্ৰ শেষ হ’লেই, membership **স্থগিত** ৰখা হয়। একে সময়তে, আপোনাৰ নেটৱৰ্কৰ মুখ্য ছাইটৰ _WooCommerce_ স্থাপনত এটা অৰ্ডাৰ সৃষ্টি কৰা হ’ব।
 
-### Some Important Notes:
+  * তাৰ পিছত ব্যৱহাৰকাৰীসকলে তেওঁলোকৰ ইমেইলত এটা ইনভয়েচ পায়, য’ত পেমেণ্ট সম্পন্ন কৰাৰ বাবে এটা লিংক থাকে (লিংকটো তেওঁলোকৰ subsite dashboard-ৰ বিলিং ইতিহাসতো দেখা যায়)। সেই লিংকে ব্যৱহাৰকাৰীক _**WooCommerce**_ **checkout**-লৈ পুনঃনিৰ্দেশ কৰে, য’ত ব্যৱহাৰকাৰীসকলে তেওঁলোকৰ পেমেণ্ট প্ৰক্ৰিয়াকৰণ কৰিবলৈ **উপলব্ধ _WooCommerce_ gateway**-সমূহৰ এটাক বাছনি কৰিব পাৰিব।
 
-  * Ultimate Multisite-r default functionality ehi integration form-korat sohoj bhabe kaaj kore. Udahoron swaroop, **Subscription Management** screen-korat **refund issue** koribo-nuhar kshetre, eya WooCommerce-korat communicate koribo aru selected payment form byabohar kore refund issue koribo.
+  * পেমেণ্ট গ্ৰহণ হোৱাৰ পিছত, membership **নবীকৰণ** কৰা হয়, পেমেণ্ট Ultimate Multisite-ত লগ কৰা হয় আৰু অৰ্ডাৰটো সম্পূৰ্ণ হিচাপে ছেট কৰা হয়।
 
-  * Ultimate Multisite: WooCommerce Integration-korat kaaj koribo-nuhar jonno WP-Cron-korat nirbhara. Eya jetiya sob samay bhalo kaaj kore, kintu jodi site-korat low traffic thake, tahole cron-ku scheduled event-guli check koribo-nuhar jonno prompt kora hobo, aru event-gu miss hobo, jetiya execution delay koribo paare.
+### কিছুমান গুৰুত্বপূৰ্ণ টোকা: {#some-important-notes}
 
-## Woocommerce Subscriptions Plugin
+  * Ultimate Multisite-ৰ ডিফল্ট কাৰ্যক্ষমতা এই সংহতি ফৰ্মৰ সৈতে এতিয়াও কাম কৰে। উদাহৰণস্বৰূপে, **Subscription Management** স্ক্ৰীনৰ পৰা **refund জাৰি কৰা**ই নিৰ্বাচিত পেমেণ্ট ফৰ্ম ব্যৱহাৰ কৰি refund জাৰি কৰিবলৈ WooCommerce-ৰ সৈতে যোগাযোগ কৰিব।
 
-Month-korat manual-bhabe payment initiate koribo-nuhar kshetre end-users-haru-korat sohoj nai, karon ekta subscription-ku sob billing cycle-korat automatic-bhabe recur koribo-bhabe apekkhya hobo. Tai, amele WooCommerce Integration add-on-ku **WooCommerce Subscriptions plugin-ku support koribo** jonno design kora. Eya payment-ku automate koribo, jetiya apunar end-users-haru-korat transaction-ku sohoj koribo.
+  * Ultimate Multisite: WooCommerce সংহতিয়ে কাম কৰিবলৈ WP-Cron-ৰ ওপৰত নিৰ্ভৰ কৰে। বেছিভাগ সময়তে ই অতি ভালদৰে কাম কৰে, কিন্তু যদি ছাইটত কম traffic থাকে তেন্তে cron-এ নিৰ্ধাৰিত ঘটনাসমূহ পৰীক্ষা কৰিবলৈ prompt নাপায় আৰু ঘটনাটো বাদ পৰে, যাৰ ফলত কাৰ্যকৰীকৰণত বিলম্ব হ’ব পাৰে।
 
-Apunar keu koribo-bhaal sohoj, [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **install** kora aru eya-ku **apunar main site-korat activate** thaka. Tar por Ultimate Multisite payments settings-korat giye **integration-ku enable** kora.
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
-Aru ehi-korat. Apunar end-users-haru-ke tar billing cycle-r shesh-korat manual-bhabe payment koribo-nuhar aavashyak hobo.
+প্ৰতি মাহে হাতেৰে এটা পেমেণ্ট আৰম্ভ কৰাটো অন্তিম ব্যৱহাৰকাৰীৰ বাবে আদৰ্শ নহয়, কাৰণ subscription-সমূহে প্ৰতিটো billing cycle-ত স্বয়ংক্ৰিয়ভাৱে পুনৰাবৃত্তি হ’ব বুলি আশা কৰা হয়। WooCommerce Integration add-on-এ এতিয়া core subscriptions code বাণ্ডল কৰে, সেয়ে পুনৰাবৃত্তিমূলক product-সমূহে সদায় recurring billing-ৰ বাবে subscriptions ব্যৱহাৰ কৰে।
 
-Apunar main site-korat _Woocommerce_ korat ekta order create hobo-nuhar alawa, eya-korat prottek account-korat ekta subscription-ku create koribo.
+এই integration-ৰ জৰিয়তে recurring products বিক্ৰী কৰিবলৈ আপুনি পৃথক [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) ক্ৰয় বা install কৰাৰ প্ৰয়োজন **নাই**। যদি সেই plugin ক্ৰয় কৰা, install কৰা, আৰু আপোনাৰ main site-ত উপলব্ধ থাকে, Ultimate Multisite-এ ইয়াক ব্যৱহাৰ কৰিব আৰু WooCommerce-এ অতিৰিক্ত subscription management features প্ৰদৰ্শন কৰিব। যেতিয়া ই উপলব্ধ নাথাকে, তেতিয়াও বাণ্ডল কৰা subscriptions core-এ recurring products পৰিচালনা কৰে।
+
+![WooCommerce subscription integration settings](/img/addons/woocommerce-subscription-integration.png)
+
+আৰু সেয়াই। আপোনাৰ অন্তিম ব্যৱহাৰকাৰীসকলে recurring products-ৰ বাবে তেওঁলোকৰ billing cycle-ৰ শেষত আৰু হাতেৰে পেমেণ্ট কৰিবলগীয়া নহ’ব।
+
+_WooCommerce_ৰ অধীনত আপোনাৰ main site-ত এটা order সৃষ্টি হোৱাৰ উপৰিও, ই প্ৰতিটো Account-ৰ বাবে এটা subscription-ও সৃষ্টি কৰিব।
+
+### ব্যৰ্থ renewal suspension আচৰণ {#failed-renewal-suspension-behavior}
+
+পূৰ্বনিৰ্ধাৰিতভাৱে, WooCommerce Subscriptions-এ ইয়াৰ failed-payment retry schedule প্ৰক্ৰিয়া কৰাৰ সময়ত memberships সক্ৰিয় হৈ থাকে। ইয়াৰ ফলত সাধাৰণ WooCommerce Subscriptions grace window সংৰক্ষিত থাকে, যাতে এটা পুনৰুদ্ধাৰ হোৱা renewal-এ অকালতে access বিঘ্নিত নকৰাকৈ subscription আৰু membership পুনৰ sync-ত আনিব পাৰে।
+
+যিসকল administrator-এ অধিক কঠোৰ access control বিচাৰে, তেওঁলোকে WooCommerce Integration settings-ত **ব্যৰ্থ Renewals-ত Memberships তৎক্ষণাৎ Suspend কৰক** সক্ষম কৰিব পাৰে। এই opt-in setting সক্ষম থাকিলে, Ultimate Multisite-এ WooCommerce Subscriptions retry handling শেষ হোৱালৈ অপেক্ষা কৰাৰ পৰিৱৰ্তে renewal payment ব্যৰ্থ হোৱাৰ লগে লগে সম্পৰ্কিত membership suspend কৰে।
+
+Developers-এ `wu_woo_suspend_on_payment_failure` filter-ৰ সহায়ত একে সিদ্ধান্ত override কৰিব পাৰে। Hook reference pages add-on source-ৰ পৰা generate কৰা হয়, সেয়ে এই overview-ত custom suspension policies-ৰ বাবে কেৱল filter name-টোহে উল্লেখ কৰা হৈছে।

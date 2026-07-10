@@ -3,15 +3,15 @@ title: Generate Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Logo SVG Oluşturma
+# Logo SVG Oluşturma {#generate-logo-svg}
 
 **Logo SVG Oluşturma** özelliği, Theme Builder'ın özel logo SVG'lerini otomatik namespace-safe sanitizasyon ile doğrudan WordPress sitenize oluşturmasına ve gömmesine olanak tanır.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 Bu özellik, sitenizin marka yönelimine ve tasarım tercihlerine göre ölçeklenebilir vektör grafikli (SVG) logolar oluşturur. Oluşturulan SVG'ler, görsel bütünlüğü korurken WordPress'te kullanıma uygun olduğundan emin olmak için otomatik olarak sanitize edilir.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Parametre | Tür | Gerekli | Açıklama |
 |-----------|------|----------|-------------|
@@ -22,7 +22,7 @@ Bu özellik, sitenizin marka yönelimine ve tasarım tercihlerine göre ölçekl
 | `height` | number | Hayır | SVG yüksekliği piksel cinsinden (varsayılan: 200). |
 | `include_text` | boolean | Hayır | Site adının logoda metin olarak dahil edilip edilmeyeceği (varsayılan: true). |
 
-## Çıktı Formatı
+## Çıktı Formatı {#output-format}
 
 Özellik, aşağıdaki yapıya sahip bir SVG dizesi döndürür:
 
@@ -36,7 +36,7 @@ Bu özellik, sitenizin marka yönelimine ve tasarım tercihlerine göre ölçekl
 }
 ```
 
-## SVG Sanitizasyon Davranışı
+## SVG Sanitizasyon Davranışı {#svg-sanitisation-behaviour}
 
 Oluşturulan SVG'ler, aşağıdaki amaçlarla otomatik namespace-safe sanitizasyondan geçer:
 
@@ -48,7 +48,7 @@ Oluşturulan SVG'ler, aşağıdaki amaçlarla otomatik namespace-safe sanitizasy
 
 Bu, SVG'nin ek sanitizasyona ihtiyaç duymadan doğrudan WordPress'e gömülebilir olmasını sağlar.
 
-## Kullanım Örneği
+## Kullanım Örneği {#usage-example}
 
 **İstem:**
 ```
@@ -62,7 +62,7 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 - Modern tasarım prensiplerini takip eder
 - Otomatik olarak sanitize edilmiş ve kullanıma hazırdır
 
-## Theme Builder ile Entegrasyon
+## Theme Builder ile Entegrasyon {#integration-with-theme-builder}
 
 Theme Builder'ın tasarım yönü seçimini kullanırken, Generate Logo SVG özelliği:
 
@@ -71,21 +71,21 @@ Theme Builder'ın tasarım yönü seçimini kullanırken, Generate Logo SVG öze
 3. Logoyu otomatik olarak sitenizin başlık/markalama alanına gömer
 4. SVG'yi WordPress medya kütüphanesinde özel bir logo olarak depolar
 
-## En İyi Uygulamalar
+## En İyi Uygulamalar {#best-practices}
 
 - **Net stil tercihleri belirtin** — istediğiniz tasarım stilini açıklayın (modern, klasik, eğlenceli vb.).
 - **Renkleri belirtin** — tutarlılık için marka renklerinizi ekleyin.
 - **Görüntülemeyi test edin** — logonun farklı ekran boyutlarında doğru göründüğünü doğrulayın.
 - **Daha fazla özelleştirin** — boyut ve yerleşimi ayarlamak için WordPress'in logo özelleştirme araçlarını kullanın.
 
-## Sınırlamalar
+## Sınırlamalar {#limitations}
 
 - SVG logolar statik grafikler olarak oluşturulur (animasyonlu değildir).
 - Çok sayıda öğe içeren karmaşık logolar manuel düzenleme gerektirebilir.
 - Özel fontlar desteklenmez; metin sistem fontlarını kullanır.
 - Çok büyük veya çok küçük boyutlar kaliteyi etkileyebilir.
 
-## İlgili Özellikler
+## İlgili Özellikler {#related-abilities}
 
 - [Palet Kontrastını Doğrula](./validate-palette-contrast.md) — erişilebilirlik için renk kontrastını kontrol edin.
 - [Menü Oluştur](./create-menu.md) — siteniz için navigasyon menüleri oluşturun.

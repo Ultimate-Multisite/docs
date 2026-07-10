@@ -3,7 +3,7 @@ title: Ho na le litlhahla tsa lits'ho tse ka tsamaisang ho tloha
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Ho Lapa Le Litlhokwa Lo Litlhokwa (Shareable Links)
+# Ho Lapa Le Litlhokwa Lo Litlhokwa (Shareable Links) {#managing-shareable-links-for-plans}
 
 Ultimate Multisite o na le tsela e ntle ho u ka rona litlhokwa la lapa (plan links) ho fana ka baaka ba hau. Ho bala, fana ka page ea ho edit oa lapa hau le khutlisa bohlokoa ba "Click to copy the Shareable Link".
 

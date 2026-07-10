@@ -1,127 +1,140 @@
 ---
-title: Page du compte client
+title: Page Account du client
 sidebar_position: 14
-_i18n_hash: 92f8a44adfaf871b0a881fbc76bc0084
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Votre page de compte client (v2)
+# La page Account de votre client (v2) {#your-clients-account-page-v2}
 
-_**NOTE IMPORTANTE : Cet article fait référence à Ultimate Multisite version 2.x.**_
+_**NOTE IMPORTANTE : cet article concerne Ultimate Multisite version 2.x.**_
 
-Lorsque les clients s'abonnent à un plan sur votre réseau, ils obtiennent l'accès à un site Web et à son tableau de bord avec des informations importantes concernant leurs paiements, leurs adhésions, leurs domaines, les limitations du plan, etc...
+Lorsque des clients s’abonnent à un plan sur votre réseau, ils obtiennent l’accès à un site web et à son Dashboard avec des informations importantes concernant leurs paiements, abonnements, domaines, limitations du plan, etc...
 
-Dans ce tutoriel, nous vous guiderons à travers la page de compte client et vous verrez ce que vos clients peuvent voir et faire à l'intérieur.
+Dans ce tutoriel, nous allons vous guider à travers la page Account du client, et vous verrez ce que vos clients peuvent y voir et y faire.
 
-## La page de compte
+## La page Account {#the-account-page}
 
-La page de compte est accessible en cliquant sur **Account** dans le tableau de bord de votre client.
+La page Account est accessible en cliquant sur **Account** dans le Dashboard de votre client.
 
-![Account menu in the customer dashboard](/img/admin/dashboard.png)
+![Menu Account dans le Dashboard du client](/img/account-page/account-menu.png)
 
-![Customer account page overview](/img/admin/dashboard.png)
+Sur les réseaux de locataires souverains, Ultimate Multisite v2.13.0 conserve cette expérience de gestion client sur le site principal. Si un client ouvre des actions de compte, de paiement, de facturation, de facture, de gestion de site, de changement de modèle ou de mappage de domaine depuis un locataire souverain, l’action renvoie vers le panneau client du site principal afin que les enregistrements de facturation et d’abonnement du réseau restent la référence.
 
-Après qu'un client clique dessus, il verra un aperçu de son adhésion, de son adresse de facturation, de ses factures, de ses domaines, des limitations du site, et pourra également changer le **Modèle de site** (si cela est autorisé dans votre réseau).
+Lorsque le client arrive depuis un locataire souverain, le panneau client du site principal peut inclure un lien de retour vers le site locataire. Le lien de retour ne s’affiche que lorsque Ultimate Multisite peut valider la cible de retour comme l’un des sites du client, ce qui empêche les redirections arbitraires tout en préservant le flux de travail du locataire.
 
-Ils peuvent également changer l'adhésion vers un autre plan, ou acheter un autre forfait ou service que vous proposez. Examinons chaque section séparément.
+![Vue d’ensemble de la page de compte client](/img/account-page/overview.png)
 
-### Aperçu de votre adhésion
+Après qu’un client clique dessus, il verra une vue d’ensemble de son abonnement, de son adresse de facturation, de ses factures, de ses domaines, des limitations de son site, et pourra également modifier le ****Modèle de site** (si c’est autorisé sur votre réseau)**.
 
-Le premier bloc juste en dessous du nom du site Web de votre client affiche un aperçu de son plan actuel et des services/forfaits qui ont été achetés avec celui-ci. Le bloc indique également le numéro d'adhésion, le montant initial payé, le coût du plan et de tout service/forfait, ainsi que le nombre de fois que cette adhésion a été facturée. Ils peuvent également voir si l'adhésion est **Active**, **Expiré** ou **Annulé**.
+Il peut aussi changer l’abonnement vers un autre plan, ou acheter un autre forfait ou service que vous proposez. Examinons chaque section séparément.
 
-![Membership overview showing plan, amount, and billing details](/img/admin/memberships-list.png)
+### Vue d’ensemble de votre abonnement : {#your-membership-overview}
 
-Juste en dessous de ce bloc, vos clients peuvent voir les blocs **About This Site** et **Site Limits**. Ces blocs affichent toutes les limitations associées à leur plan : espace disque, publications, pages, visites, etc... Ces limites peuvent être configurées sur chaque page de plan dans **Ultimate Multisite > Products**.
+Le premier bloc juste sous le nom du site web de vos clients affiche une vue d’ensemble de leur plan actuel et des services/forfaits qui ont été achetés avec celui-ci. Le bloc affiche également le numéro d’abonnement, le montant initial payé, le coût du plan et de tout service/forfait, ainsi que le nombre de fois où ils ont été facturés pour cet abonnement. Ils peuvent aussi voir si l’abonnement est **Actif**, **Expiré** ou **Annulé**.
 
-![About This Site and Site Limits blocks showing plan limitations](/img/admin/dashboard.png)
+![Vue d’ensemble de l’abonnement affichant le plan, le montant et les détails de facturation](/img/account-page/membership-card.png)
 
-Sur le côté droit de **Your Membership**, les clients peuvent cliquer sur **Change**. Cela leur montrera tous les plans et forfaits/services disponibles. S'ils choisissent un autre plan, les limitations du plan prendront effet à la place des limitations actuelles de l'adhésion - peu importe s'ils passent à un plan inférieur ou supérieur.
+Juste sous ce bloc, vos clients peuvent voir les blocs **À propos de ce site** et **Limites du site**. Ces blocs leur montrent toutes les limitations liées à leur plan : espace disque, articles, pages, visites, etc... Ces limites peuvent être configurées sur chaque page de plan dans **Ultimate Multisite > Produits**.
 
-Maintenant, si vos clients choisissent d'acheter des forfaits ou services pour cette adhésion actuelle - comme plus d'espace disque ou de visites - l'adhésion actuelle ne sera pas modifiée, mais seuls les nouveaux forfaits seront ajoutés.
+![Blocs À propos de ce site et Limites du site affichant les limitations du plan](/img/account-page/site-limits.png)
 
-Notez que les codes promo ne peuvent pas être ajoutés sur cette page de changement d'adhésion. Si le client a utilisé un code promo lors de l'achat initial de l'adhésion, le code s'appliquera également à cette nouvelle adhésion.
+Sur le côté droit de **Votre abonnement**, les clients peuvent cliquer sur **Modifier**. Cela leur affichera tous les plans et forfaits/services disponibles. S’ils choisissent un autre plan, les limitations de ce plan s’appliqueront à la place des limitations actuelles de l’abonnement, peu importe qu’ils passent à un plan inférieur ou supérieur.
 
-### Mise à jour de l'adresse de facturation
+Maintenant, si vos clients choisissent d’acheter des forfaits ou des services pour cet abonnement actuel — comme plus d’espace disque ou de visites — l’abonnement actuel ne sera pas modifié ; seuls les nouveaux forfaits y seront ajoutés.
 
-Sur la page de compte, vos clients peuvent également mettre à jour leur adresse de facturation. Il suffit de cliquer sur **Update** à côté de _Billing Address_.
+Notez que les codes de réduction ne peuvent pas être ajoutés sur cette page de changement d’abonnement. Si le client a utilisé un code de réduction lors du premier achat d’abonnement, ce code s’appliquera également à ce nouvel abonnement.
 
-![Billing Address section with Update button](/img/admin/customers-list.png)
+### Mise à jour de l’adresse de facturation : {#updating-the-billing-address}
 
-Une nouvelle fenêtre s'ouvrira pour votre client. Il suffit de remplir la nouvelle adresse et de cliquer sur _Save Changes_.
+Sur la page Account, vos clients peuvent également mettre à jour leur adresse de facturation. Ils doivent simplement cliquer sur **Mettre à jour** à côté de _Adresse de facturation_.
 
-![Update billing address form](/img/admin/customers-list.png)
+![Section Adresse de facturation avec bouton Mettre à jour](/img/account-page/billing-address.png)
 
-### Changement du modèle de site
+Une nouvelle fenêtre apparaîtra pour votre client. Tout ce qu’il doit faire est de saisir la nouvelle adresse et de cliquer sur _Enregistrer les modifications_.
 
-Pour permettre à vos clients de changer leurs modèles de site, vous devez aller dans **Ultimate Multisite > Settings > Sites** et activer l'option **Allow Template Switching**.
+![Formulaire de mise à jour de l’adresse de facturation](/img/account-page/billing-address-form.png)
 
-De plus, dans **Ultimate Multisite > Products**, sélectionnez vos plans et accédez à l'onglet **Site Templates**. Assurez-vous que l'option **Allow Site Templates** est activée et que, dans **Site Template Selection Mode**, l'option **Choose Available Site Templates** est sélectionnée.
+### Changement du modèle de site : {#changing-the-site-template}
 
-![Product site templates tab with template selection mode](/img/config/product-site-templates.png)
+Pour permettre à vos clients de changer leurs modèles de site, vous devez aller dans **Ultimate Multisite > Réglages > Sites** et activer l’option **Autoriser le changement de modèle**.
 
-Vous pourrez voir tous les modèles de site disponibles sur votre site Web. Choisissez ceux que vous souhaitez rendre disponibles et ceux que vous ne souhaitez pas rendre disponibles aux clients abonnés à ce plan. Notez que ces options affectent également le formulaire de paiement, de sorte que tout modèle choisi comme **Not Available** n'apparaîtra pas sur la page d'inscription pour ce plan.
+De plus, dans **Ultimate Multisite > Produits**, sélectionnez vos plans et allez dans l’onglet **Modèles de site**. Assurez-vous que l’option **Autoriser les modèles de site** est activée et que, dans **Mode de sélection des modèles de site**, l’option **Choisir les modèles de site disponibles** est sélectionnée.
 
-Maintenant, vos clients peuvent cliquer sur **Change Site Template** dans leur page de compte.
+![Onglet des modèles de site du produit avec le mode de sélection des modèles](/img/config/product-site-templates.png)
 
-![Change Site Template button on account page](/img/admin/dashboard.png)
-Une liste de tous les modèles de site disponibles pour ce plan apparaîtra à votre client.
+Vous pourrez voir tous les modèles de site disponibles sur votre site web. Choisissez ceux que vous voulez rendre disponibles et ceux que vous ne voulez pas rendre disponibles pour vos clients abonnés à ce plan. Notez que cette option affecte également le formulaire de paiement, donc tout modèle choisi comme **Non disponible** n’apparaîtra pas sur la page d’inscription pour ce plan.
 
-![Available site templates list for the plan](/img/config/site-templates-list.png)
+Vos clients peuvent maintenant cliquer sur **Changer le modèle de site** dans leur page Account.
 
-Après avoir sélectionné celui qu'ils souhaitent changer, ils seront invités à confirmer le changement.
+![Bouton Changer le modèle de site sur la page Account](/img/account-page/change-template-button.png)
 
-![Site template switch confirmation dialog](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 affiche un panneau de changement de modèle repensé. Le panneau commence par une **carte du modèle actuel** afin que les clients puissent voir quel modèle est actif avant de choisir un remplacement.
 
-Après avoir activé la confirmation et cliqué sur **Process Switch**, le nouveau modèle de site sera utilisé sur le site Web de votre client.
+Une grille persistante des modèles de site disponibles reste visible pendant que les clients examinent leurs options. Cela les aide à comparer les modèles autorisés pour leur plan sans perdre de vue la sélection actuelle.
 
-### Ajout de domaines personnalisés
+![Liste des modèles de site disponibles pour le plan](/img/config/site-templates-list.png)
 
-Vos clients auront également la possibilité d'ajouter un domaine personnalisé pour ce plan sur leur page de compte. Pour permettre à vos clients d'utiliser des domaines personnalisés, allez dans **Ultimate Multisite > Settings > Domain Mapping**.
+Après avoir sélectionné celui vers lequel ils veulent changer, il leur sera demandé de confirmer le changement.
 
-Activez l'option **Enable Domain Mapping**. Cela permettra à vos clients d'utiliser des domaines personnalisés au niveau du réseau.
+![Boîte de dialogue de confirmation du changement de modèle de site](/img/account-page/template-switch-confirm.png)
 
-N'oubliez pas de vérifier également si le mappage de domaine est activé au niveau du produit - car vous pouvez limiter un produit pour ne pas autoriser vos clients à utiliser des domaines personnalisés.
+Après avoir activé la confirmation et cliqué sur **Traiter le changement**, le nouveau modèle de site sera utilisé sur le site web de votre client.
 
-Allez dans **Ultimate Multisite > Products**. Sélectionnez le plan de votre choix et accédez à l'onglet **Custom Domains**. Activez l'option **Allow Custom Domains**.
+Les clients peuvent également utiliser **Reset current template** depuis ce panneau lorsqu’ils doivent réinitialiser le site avec le template actuellement attribué. Comme lors du passage à un autre template, la réinitialisation d’un template peut écraser le contenu du site ; les clients ne doivent donc la confirmer que lorsqu’ils comprennent l’action de réinitialisation.
 
-![Custom Domains tab with Allow Custom Domains toggle](/img/config/product-custom-domains.png)
+### Ajout de domaines personnalisés : {#adding-custom-domains}
 
-Cela permettra à tous les clients abonnés à ce plan spécifique d'utiliser des domaines personnalisés. Maintenant, sur la page de compte, vos clients peuvent ajouter un domaine personnalisé en cliquant sur **Add Domain**.
+Vos clients auront également la possibilité d’ajouter un domaine personnalisé pour cette offre sur leur page Account. Pour permettre à vos clients d’utiliser des domaines personnalisés, allez dans **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-![Add Domain button on the account page](/img/admin/domains-list.png)
+Activez l’option **Enable Domain Mapping**. Cela permettra à vos clients d’utiliser des domaines personnalisés au niveau du réseau.
 
-La première fenêtre qui s'ouvre affichera à vos clients un message les indiquant comment mettre à jour leurs enregistrements DNS afin que ce domaine personnalisé fonctionne sur votre réseau.
+N’oubliez pas de vérifier également si le Domain Mapping est activé au niveau du produit, car vous pouvez limiter un produit afin de ne pas autoriser vos clients à utiliser des domaines personnalisés.
 
-![DNS instructions shown when adding a custom domain](/img/admin/domains-list.png)
+Allez dans **Ultimate Multisite > Products**. Sélectionnez l’offre de votre choix et allez dans l’onglet **Custom Domains**. Activez l’option **Allow Custom Domains**.
+
+![Onglet Custom Domains avec l’option Allow Custom Domains](/img/config/product-custom-domains.png)
+
+Cela permettra à tous les clients abonnés à cette offre spécifique d’utiliser des domaines personnalisés. Maintenant, sur la page Account, vos clients peuvent ajouter un domaine personnalisé en cliquant sur **Add Domain**.
+
+![Bouton Add Domain sur la page Account](/img/account-page/add-domain-button.png)
+
+La première fenêtre qui s’ouvre affichera à vos clients un message leur indiquant comment mettre à jour leurs enregistrements DNS afin de faire fonctionner ce domaine personnalisé sur votre réseau.
+
+![Instructions DNS affichées lors de l’ajout d’un domaine personnalisé](/img/account-page/add-domain-dns.png)
 
 Ce message peut être modifié (par vous) dans **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
-![Add New Domain Instructions setting in Domain Mapping](/img/config/settings-domain-mapping.png)
+![Réglage Add New Domain Instructions dans Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Après avoir cliqué sur **Next Step**, vos clients peuvent ajouter leur nom de domaine personnalisé et choisir si ce domaine personnalisé sera le principal. Notez que vos clients peuvent utiliser plus d'un domaine personnalisé pour leurs sites Web, ils peuvent donc choisir lequel sera le principal.
+Voici une vue complète de la page des réglages Domain Mapping :
 
-![Custom domain name entry with primary domain option](/img/admin/domains-list.png)
+![Page complète des réglages Domain Mapping](/img/config/settings-domain-mapping-full.png)
 
-Après avoir cliqué sur **Add Domain**, le domaine sera ajouté au compte de votre client. Il ne reste plus qu'à modifier les enregistrements DNS de ce domaine personnalisé chez leur registrar.
+Après avoir cliqué sur **Next Step** , vos clients peuvent ajouter leur nom de domaine personnalisé et choisir si ce domaine personnalisé sera le domaine principal. Notez que vos clients peuvent utiliser plusieurs domaines personnalisés pour leurs sites Web ; ils peuvent donc choisir lequel sera le principal.
 
-### Changement de mot de passe
+![Saisie du nom de domaine personnalisé avec l’option de domaine principal](/img/account-page/add-domain-primary.png)
 
-Dans le tableau de bord du compte, vos clients peuvent également changer leur mot de passe en cliquant sur **Change Password**.
+Après avoir cliqué sur **Add Domain** , le domaine sera ajouté au compte de votre client. Tout ce qu’il lui reste à faire est de modifier les enregistrements DNS de ce domaine personnalisé auprès de son registrar de domaine.
 
-![Change Password button on account page](/img/admin/dashboard.png)
+### Modification du mot de passe : {#changing-password}
 
-Une nouvelle fenêtre s'affichera où vos clients devront saisir leur mot de passe actuel puis le nouveau mot de passe qu'ils souhaitent utiliser.
+Dans le Dashboard du compte, vos clients peuvent également modifier leur mot de passe en cliquant sur **Change Password**.
 
-![Change password form with current and new password fields](/img/admin/dashboard.png)
+![Bouton Change Password sur la page Account](/img/account-page/change-password-button.png)
 
-### Zone de danger
+Cela affichera une nouvelle fenêtre où vos clients devront saisir leur mot de passe actuel, puis saisir le nouveau mot de passe qu’ils souhaitent utiliser.
 
-Nous avons également deux options affichées dans la partie **Danger Zone** : **Delete Site** et **Delete Account**. Elles figurent toutes deux dans la zone de danger car ces deux actions sont irréversibles. Si vos clients suppriment leur site Web ou leur compte, ils ne pourront pas les récupérer.
+![Formulaire de modification du mot de passe avec champs de mot de passe actuel et nouveau mot de passe](/img/account-page/change-password-form.png)
 
-![Danger Zone with Delete Site and Delete Account options](/img/admin/dashboard.png)
+### Zone de danger : {#danger-zone}
 
-Si vos clients cliquent sur l'une de ces deux options, une fenêtre leur sera affichée où ils devront activer l'option pour supprimer le site Web ou le compte et ils seront avertis que cette action ne peut pas être annulée.
+Nous avons également deux options affichées dans la partie **Danger Zone** : **Delete Site** et **Delete Account**. Elles se trouvent toutes deux dans la partie Danger Zone parce que ces deux actions sont irréversibles. Si vos clients suppriment leur site Web ou leur compte, ils ne peuvent pas les récupérer.
 
-![Delete Site confirmation dialog](/img/admin/dashboard.png)
+![Danger Zone avec les options Delete Site et Delete Account](/img/account-page/danger-zone.png)
 
-![Delete Account confirmation dialog](/img/admin/dashboard.png)
+Si vos clients cliquent sur l’une de ces deux options, une fenêtre s’affichera dans laquelle ils devront activer l’option pour supprimer le site Web ou le compte, et ils seront avertis que cette action ne peut pas être annulée.
 
-S'ils suppriment leur site Web, leur compte et leur adhésion resteront inchangés. Ils ne perdront que tout le contenu de leur site Web. S'ils suppriment leur compte, tous les sites Web, les adhésions et les informations concernant ce compte seront perdus.
+![Boîte de dialogue de confirmation Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Boîte de dialogue de confirmation Delete Account](/img/account-page/delete-account-confirm.png)
+
+S’ils suppriment leur site Web, leur compte et leur abonnement resteront inchangés. Ils perdront simplement tout le contenu de leur site Web. S’ils suppriment leur compte, tous les sites Web, abonnements et informations liés à ce compte seront perdus.

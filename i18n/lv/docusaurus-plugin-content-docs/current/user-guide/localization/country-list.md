@@ -3,7 +3,7 @@ title: Valstu saraksts
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Pārskatīt valstu saraksta ap Ultimate Multisite
+# Pārskatīt valstu saraksta ap Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Valstu izvēlnes drop-down menu ir sakārtots alfabēti atbilstoši valstu vārdiem angļu valodā. Tas var nozīmēt, ka dažreiz jūsu uzņēmuma mājvalste un/vai lielākā daļa jūsu klientiem ir saplūsties pirms ļoti garām valstu vārdu saraksta vidū.
 

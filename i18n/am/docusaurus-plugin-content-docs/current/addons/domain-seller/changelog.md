@@ -1,133 +1,154 @@
 ---
-title: የዶሜን ሻጭ የለውጥ ማስታወሻ
+title: የዶሜይን ሻጭ የለውጦች መዝገብ
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# የዶሜን ሻጮች የለውጥ መዝገብ
+# የዶሜይን ሻጭ ለውጥ መዝገብ {#domain-seller-changelog}
 
-Version 1.1.0 - በ2026-05-08 የወጣ
-- አዲስ፡ ለResellerClub፣ Enom፣ እና OpenSRS ሪጅስትራሮች የDNS record መፍጠር (add_dns_record) ተግባራዊ ሆኗል
-- ስህተት ተስተካከለ፡ የDefault DNS Records parser አሁን {DOMAIN} እና {SITE_URL} tokensን ይቋቋማል
-- ስህተት ተስተካከለ፡ የDomain selection checkout field slugs ስም ተሰጥቷል (namespaced) ይህም ከsite_url ጋር የሚፈጠረውን ግጭት ለመከላከል ነው
+ስሪት 1.3.0 - በ2026-06-02 ተለቋል
+- አዲስ፦ የHostAfrica ዳግም ሻጭ ቀሪ ሂሳብ በጣም ሲቀንስ የnetwork-admin ማስጠንቀቂያ ታክሏል
+- አዲስ፦ አዲስ የተመዘገቡ ዶሜይኖችን ወደ ኔትወርክ ጣቢያ በራስ-ሰር ማዛመድ ታክሏል
+- ማስተካከያ፦ የተመዝጋቢ መስክ መስፈርቶች አዲስ ዶሜይን ሲመዘገብ ብቻ እንዲተገበሩ ተደርጓል
+- ማስተካከያ፦ የቀሪ ሂሳብ ክትትል ማሳወቂያዎች ሊዘጉ እንዲችሉ ተደርጓል
+- ማስተካከያ፦ የWooCommerce ተመዝጋቢ የክፍያ መረጃዎች እንዲጠበቁ ተረጋግጧል
+- ማስተካከያ፦ በምዝገባ ወቅት የተመዝጋቢ እውቂያ መስፈርቶች ተግባራዊ ተደርገዋል
+- ማስተካከያ፦ የዶሜይን ምዝገባ ምርቶች በ0% ማርክአፕ እንዳይፈጠሩ ተከልክሏል
+- ማስተካከያ፦ የዶሜይን ምርጫዎችና ዋጋ አሰጣጥ በcheckout ክፍለ-ጊዜ ፍሰት ውስጥ ተጠብቀዋል
+- ማስተካከያ፦ የHostAfrica ዶሜይን ዋጋ አሰጣጥ የገንዘብ አይነት ማሳያ ተሻሽሏል
+- ማስተካከያ፦ የWP-core query-var አለመዛመዶችን ለመከላከል የcheckout form-action ባህሪ ተሻሽሏል
+- ተሻሽሏል፦ የHostAfrica ዳግም ሻጭ ውቅር ሰነድ በማዋቀር መመሪያ ውስጥ ተገናኝቷል
 
-Version 1.0.8 - በ2026-05-07 የወጣ
-- ስህተት ተስተካከለ፡ የResellerClub የዶሜን ዋጋ አሁን ትክክለኛውን API endpoint በመጠቀም የቀጥታ ወጪ ዋጋዎችን ይስባል።
+ስሪት 1.2.0 - በ2026-05-25 ተለቋል
+- አዲስ፦ HostAfrica ከcheckout፣ setup wizard፣ lookup፣ TLD/pricing፣ ምዝገባ፣ እድሳት፣ ማስተላለፍ፣ nameserver፣ DNS፣ EPP code፣ registrar lock እና ID ጥበቃ ድጋፍ ጋር እንደ ዶሜይን-መሸጫ ውህደት ታክሏል
+- አዲስ፦ Openprovider ከዳግም ሻጭ ዋጋ አሰጣጥ፣ ምዝገባ፣ እድሳት፣ ማስተላለፍ፣ nameserver፣ DNS፣ EPP code፣ registrar lock፣ WHOIS ግላዊነት እና TLD ማመሳሰል ድጋፍ ጋር እንደ ዶሜይን-መሸጫ ውህደት ታክሏል
+- አዲስ፦ Hostinger ለመገኘት ማረጋገጫዎች፣ ምዝገባ፣ nameserver ማዘመኖች፣ registrar lock እና WHOIS ግላዊነት ከዋናው ውህደት የተጋራውን Hostinger API token በመጠቀም እንደ ዶሜይን-መሸጫ ውህደት ታክሏል
+- ተሻሽሏል፦ ለገንቢ ውህደት መመሪያ የዶሜይን የሕይወት ዑደት እርምጃ እና ማጣሪያ docblocks ታክለዋል
+- ተሻሽሏል፦ በaddon readme ውስጥ የplugin ተኳኋኝነት metadata ወደ WordPress 7.0 ተዘምኗል
+- ተሻሽሏል፦ ለሚመጡ ልቀቶች ማስተባበሪያ የሚጠቀሙ የእቅድ አብነቶች ተዘምነዋል
 
-Version 1.0.7 - በ2026-05-06 የወጣ
-* ስህተት ተስተካከለ፡ የResellerClub test_connection አስፈላጊ የሆነውን tlds parameter (#224) ይልካል።
+ስሪት 1.1.0 - በ2026-05-08 ተለቋል
+- አዲስ፦ የDNS መዝገብ ፈጠራ (add_dns_record) ለResellerClub፣ Enom እና OpenSRS registrars ተተግብሯል
+- ማስተካከያ፦ Default DNS Records parser አሁን {DOMAIN} እና {SITE_URL} tokens ይታገሣል
+- ማስተካከያ፦ ከsite_url ጋር ግጭት ለመከላከል የዶሜይን ምርጫ checkout መስክ slugs በnamespace ተለይተዋል
 
-Version 1.0.6 - በ2026-05-05 የወጣ
-* ስህተት ተስተካከለ፡ የResellerClub የዶሜን ምዝገባ አሁን የተሻሻለ የAPI ምላሽ አያያዝ እና በሪጅስትሪ የሚመራ የቅናရှင် አቅራቢ (provider) መስመር በመጠቀም በትክክል ይሰራል።
-* ስህተት ተስተካከለ፡ የRegister Domain የአስተዳሚ ገጽ (admin page) የተጠቃሚ ተሞክሮ (UX) ተሻሽሏል።
-* ተወግዷል፡ የCyberPanel ሪጅስትራር ውህደት።
+ስሪት 1.0.8 - በ2026-05-07 ተለቋል
+- ማስተካከያ፦ የResellerClub ዶሜይን ዋጋ አሰጣጥ አሁን ከትክክለኛው API endpoint የቀጥታ ወጪ ዋጋዎችን ያመጣል
 
-Version 1.0.5 - በ2026-04-02 የወጣ
-* አዲስ፡ ለዶሜን ምዝገባ እና አያያዝ የGoDaddy ሪጅስትራር ውህደት።
-* አዲስ፡ NameSilo ሪጅስትራር ውህደት።
-* አዲስ፡ ResellerClub ሪጅስትራር ውህደት።
-* አዲስ፡ በዶሜን ሲገዛ እና ሲመዘገብ SES የሚልከውን ዶሜን በራስ-ሰር ማረጋገጥ እና መመደብ (mapping)።
-* ስህተት ተስተካከለ፡ የGuard plugin constants በtest environment ውስጥ እንደገና መገለጽን ለመከላከል።
-* ስህተት ተስተካከለ፡ የMySQL flags word-split በinstall-wp-tests.sh ውስጥ በትክክል ይሰራል።
+ስሪት 1.0.7 - በ2026-05-06 ተለቋል
+* ማስተካከያ፦ ResellerClub test_connection የሚፈለገውን tlds parameter ይልካል (#224)
 
-Version 1.0.4 - በ2026-03-14 የወጣ
-* **ስህተት ተስተካከለ፡** አንዳንድ የcss assets አልተገኙም።
-* **ስህተት ተስተካከለ፡** ስለማይገኙ tlds የተፈጠረ ስህተት።
+ስሪት 1.0.6 - በ2026-05-05 ተለቋል
+* ማስተካከያ፦ የResellerClub ዶሜይን ምዝገባ በተሻሻለ API response አያያዝ እና በregistry-driven provider routing አሁን በትክክል ይሰራል
+* ማስተካከያ፦ የRegister Domain admin ገጽ UX ማሻሻያዎች
+* ተወግዷል፦ የCyberPanel registrar ውህደት
 
-Version 1.0.3 - በ2026-03-09 የወጣ
-* **ስህተት ተስተካከለ፡** አሮጌውን የsignup template ሲጠቀሙ እና የcheckout shortcode ሲጠቀሙ የVue reactive property ስህተቶች (domain_option, selected_domain, domain_provider)።
-* **ስህተት ተስተካከለ፡** በዶሜን selection checkout field ውስጥ የsubdomain input field መዛመድ አለመሆኑ እና ትልቅ ጽሑፍ መታየት።
-* **ስህተት ተስተካከለ፡** የዶሜን selection field ሲኖር "Your URL will be" የሚል ቅድመ-እይታ (preview) ብሎክ መደበቅ።
+ስሪት 1.0.5 - በ2026-04-02 ተለቋል
+* አዲስ፦ ለዶሜይን ምዝገባና አስተዳደር የGoDaddy registrar ውህደት
+* አዲስ፦ የNameSilo registrar ውህደት
+* አዲስ፦ የResellerClub registrar ውህደት
+* አዲስ፦ ዶሜይን ሲገዛና ሲዛመድ የSES መላኪያ ዶሜይንን በራስ-ሰር አረጋግጥ
+* ማስተካከያ፦ በሙከራ አካባቢ የplugin ቋሚዎችን ከዳግም መግለጽ ጠብቅ
+* ማስተካከያ፦ MySQL flags በinstall-wp-tests.sh ውስጥ በትክክል በቃላት ይከፈላሉ
 
-Version 1.0.2 - በ2026-03-01 የወጣ
-* **ተሻሽሏል፡** ከsettings page ላይ የglobal markup settings ተወግዷል — ዋጋ አሁን በየምርት ደረጃ ብቻ ነው።
-* **ተሻሽሏል፡** ለፈጣን አቅጣጫ የሚያሳይ "Manage Domain Products" ሊንክ በsettings page ላይ ተጨምሯል።
-* **ተሻሽሏል፡** ለዶሜን ምርት ቅንብሮች (catch-all vs TLD-specific, markup types, introductory pricing) ግልጽ የሆኑ የfield መግለጫዎች እና tooltips።
-* **ተሻሽሏል፡** በsettings page ላይ ባሉ ቦታዎች ሁሉ የተሻለ መግለጫ (search TLDs, renewals, DNS, notifications)።
+ስሪት 1.0.4 - በ2026-03-14 ተለቋል
+* **ማስተካከያ፦** አንዳንድ የጎደሉ css assets
+* **ማስተካከያ፦** ከማይገኙ tlds ጋር የተያያዘ ስህተት
 
-Version 1.0.1 - በ2026-02-27 የወጣ
+ስሪት 1.0.3 - በ2026-03-09 ተለቋል
+* **ማስተካከያ፦** legacy signup template ከcheckout shortcode ጋር ሲጠቀም የVue reactive property ስህተቶች (domain_option, selected_domain, domain_provider)
+* **ማስተካከያ፦** በዶሜይን ምርጫ checkout መስክ ውስጥ የsubdomain ግቤት መስክ አለመሰለፍ እና ከመጠን በላይ ትልቅ ጽሑፍ
+* **ማስተካከያ፦** የዶሜይን ምርጫ መስክ ሲኖር "Your URL will be" ቅድመ-እይታ ብሎክን ደብቅ
 
-* **አዲስ፡** ለጅምላ የዋጋ አያያዝ የTLD import tool።
-* **አዲስ፡** ለዶሜን ምርቶች የመግቢያ ዋጋ (Introductory pricing) ድጋፍ።
-* **አዲስ፡** በCypress የተሰራ End-to-End (E2E) የሙከራ ስብስብ (test suite)።
-* **አዲስ፡** ለዶሜን የህይወት ዑደት ማሳወቂያዎች የኢሜይል templates።
-* **አዲስ፡** በአስተዳሚ የዶሜን ምዝገባ ሞዳል ውስጥ የRegistrant address fields፣ ከsettings የተሞሉበት።
-* **አዲስ፡** የደንበኛ DNS አያያዝ በinterface፣ record ለመጨመር፣ ለማርትዕ እና ለማጥፋት ድጋፍ ያለው።
-* **አዲስ፡** በዶሜን ሲገዛ በራስ-ሰር የዶሜን መመደብ (automatic domain mapping) ያለው "Bring your own domain" checkout አማራጭ።
-* **አዲስ፡** በcheckout ወቅት ከዶሜን ስም የsite URL በራስ-ሰር መፈጠር።
-* **አዲስ፡** በsettings ውስጥ የdefault nameserver እና DNS record configuration።
-* **አዲስ፡** በcore domain edit page ላይ የዶሜን ምዝገባ ዝርዝሮች እና DNS አያያዝ።
-* **አዲስ፡** የSetup wizard በsensible defaults ባለው default domain product በራስ-ሰር ይፈጥራል።
-* **አዲስ፡** በሁሉም የተዋቀሩ አቅራቢዎች (providers) በየቀኑ የTLD ሲንክ (sync) በcron በራስ-ሰር።
-* **አዲስ፡** በየምርት ደረጃ (per-product) ቅንብር ያለው የWHOIS privacy protection (ሁልጊዜ በርቷል፣ የደንበኛ ምርጫ፣ ወይም የተሰበሩ)።
-* **አዲስ፡** የWHOIS privacy checkout checkbox በዋጋ አ显示 እና dark mode ድጋፍ።
-* **አዲስ፡** ለበይበል የዶሜን ምዝገባ የአስተዳሚ ገጽ (admin page)።
-* **አዲስ፡** በUltimate Multisite update server በኩል የplugin ዝመና በራስ-ሰር።
-* **አዲስ፡** በproduct list table ውስጥ የDomain product type filter tab ከpurple badge styling ጋር።
-* **አዲስ፡** በዶሜን checkout form ላይ የRegistrant contact fields (name, address, city, state, postal code, country, phone)።
-* **አዲስ፡** የregistrar API ጥሪ ከመደረጉ በፊት የRegistrant field validation እና ግልጽ የሆኑ የስህተት መልዕክቶች።
-* **አዲስ፡** ለዶሜን ምዝገባ ክስተቶች አቅራቢ-ተኮር የlog channels (ለምሳሌ domain-seller-namecheap.log)።
-* **አዲስ፡** በዋናው የsignup/የምዝገባ checkout form ላይ የRegistrant contact fields (ዶሜን ሲመዘገብ ይታያል)።
-* **ተሻሽሏል፡** የDomain Search checkout field በsubdomain, register, እና existing domain tabs የሚደግፍ ወደ አንድ የDomain Selection field ተተክቷል።
-* **ተሻሽሏል፡** የDomain product settings በproduct edit page ላይ በcore widget system በinline ይሳልናል።
-* **ተሻሽሏል፡** የደንበኛ የዶሜን መረጃ ወደ core domain mapping widget ተሳጥሯል እንጂ እንደነጠላ metabox አይደለም።
-* **ተሻሽሏል፡** የTLD import wizard ወደ ሁሉም አቅራቢዎች አንድ-በ-ጫን ሲንክ (one-click sync) ተቀላቅሏል።
-* **ተሻሽሏል፡** የNamecheap የዶሜን ተገኝነት (availability) ፈጣን ፍለጋ ለማድረግ የbatch API ጥሪን ይጠቀማል።
-* **ተሻሽሏል፡** የNamecheap የዋጋ API ትክክለኛዎቹን parameters እና የresponse parsing ይጠቀማል።
-* **ተሻሽሏል፡** የTLD ማከማቻ ወደ አንድ የnetwork option ተሰባስቧል።
-* **ተሻሽሏል፡** ለDNS ለውጦች፣ ለሽባበቶች (transfers) እና ለconfig አተገባበር የDomain activity logging።
-* **ተሻሽሏል፡** ለOpenSRS ሙሉ የTLD ሲንክ (sync) IANA master listን እና በbatch validation ይጠቀማል።
-* **ተሻሽሏል፡** ለNamecheap ሙሉ የTLD ሲንክ (sync) በpaginated API ጥያቄዎች።
-* **ተሻሽሏል፡** አሮጌዎቹን የprovider classes በIntegration Registry pattern ተተክቷል።
-* **ተሻሽሏል፡** የDNS እና የtransfer configuration ያለው የsettings panel።
-* **ተሻሽሏል፡** የስልክ ቁጥሮች በራስ-ሰር ወደ +CC.NNN ሪጅስትራር ቅርጸት ይቀርጻሉ።
-* **ተሻሽሏል፡** የስልክ field validation ከመላክ በፊት የformatting characters ያጠፋል።
-* **ተሻሽሏል፡** የVersion requirement ወደ Ultimate Multisite 2.4.12 ተጨምሯል እና ግልጽ ማሳሰቢያ ተሰጥቷል።
-* **ተሻሽሏል፡** የCI workflow ለaddon እና core plugin ሁለቱም ትክክለኛ checkoutን ይጠቀማል።
-* **ተሻሽሏል፡** prepare_registrant_info() ከcheckout-saved user meta ይነባበራል እና የbilling address fallback አለው።
-* **ተስተካከለ፡** በcheckout ወቅት ለlogged-out ተጠቃሚዎች የDomain search AJAX መሳሳት።
-* **ተስተካከለ፡** በcheckout ወቅት ለlogged-out ተጠቃሚዎች የDomain pricing AJAX መሳሳት።
-* **ተስተካከለ፡** WP-CLI ትዕዛዞችን በሚሰሩበት ጊዜ Spyc class redeclaration fatal error።
-* **ተስተካከለ፡** የNamecheap sandbox API timeout በጣም አጭር ነበር።
-* **ተስተካከለ፡** የDomain search Select button ጽሑፍ በসবুজ ዳራ ላይ አይታይም ነበር።
-* **ተስተካከለ፡** የዶሜን ምዝገባ "RegistrantFirstName is Missing" ስህተት በመኖሩ ምክንያት መሳሳት።
-* **ተስተካከለ፡** site በcheckout ጊዜ ባልነበረበት ጊዜ ዶሜን record በblog_id=0 ተፈጥሯል።
-* **ተስተካከለ፡** የDefault TLDs setting እንደ የተበተነ array ሳይሆን እንደ string መመለስ።
-* **ተወግዷል፡** የStandalone Domain Management admin page — አሁን በcore domain pages በኩል ይያዛል።
+ስሪት 1.0.2 - በ2026-03-01 ተለቋል
+* **ተሻሽሏል፦** ከቅንብሮች ገጽ አጠቃላይ የማርክአፕ ቅንብሮች ተወግደዋል — ዋጋ አሰጣጥ አሁን በሙሉ በእያንዳንዱ ምርት ብቻ ነው
+* **ተሻሽሏል፦** ለፈጣን አሰሳ በቅንብሮች ገጽ ላይ "የዶሜይን ምርቶችን አስተዳድር" አገናኝ ታክሏል
+* **ተሻሽሏል፦** ለዶሜይን ምርት ቅንብሮች ይበልጥ ግልጽ የመስክ መግለጫዎችና tooltips (catch-all ከ TLD-specific ጋር፣ የማርክአፕ አይነቶች፣ መግቢያ ዋጋ አሰጣጥ)
+* **ተሻሽሏል፦** በቅንብሮች ገጽ ሁሉ የተሻሉ መግለጫዎች (TLDs ፍለጋ፣ እድሳቶች፣ DNS፣ ማሳወቂያዎች)
 
-Version 1.0.0 - በ2025-09-28 የወጣ
+ስሪት 1.0.1 - በ2026-02-27 ተለቋል
 
-**ለUltimate Multisite v2 ዋና የጽሑፍ ለውጥ (Major Rewrite)**
+* **አዲስ:** ለጅምላ ዋጋ አስተዳደር የTLD ማስመጫ መሣሪያ
+* **አዲስ:** ለዶሜይን ምርቶች የመግቢያ ዋጋ ድጋፍ
+* **አዲስ:** ከCypress ጋር የE2E ሙከራ ስብስብ
+* **አዲስ:** ለዶሜይን የሕይወት ዑደት ማሳወቂያዎች የኢሜይል አብነቶች
+* **አዲስ:** በአስተዳዳሪ የዶሜይን ምዝገባ ሞዳል ላይ ከቅንብሮች ቀድሞ የተሞሉ የተመዝጋቢ አድራሻ መስኮች
+* **አዲስ:** መዝገብ ማከል፣ ማርትዕ እና መሰረዝን የሚደግፍ የደንበኛ DNS አስተዳደር በይነገጽ
+* **አዲስ:** ከራስ-ሰር ዶሜይን ካርታ ጋር "የራስዎን ዶሜይን ይዘው ይምጡ" የcheckout አማራጭ
+* **አዲስ:** በcheckout ጊዜ ከዶሜይን ስም የጣቢያ URL በራስ-ሰር ማመንጨት
+* **አዲስ:** በቅንብሮች ውስጥ ነባሪ የስም አገልጋይ እና DNS መዝገብ ውቅር
+* **አዲስ:** በዋና የዶሜይን ማርትዕ ገጽ ላይ የዶሜይን ምዝገባ ዝርዝሮች እና DNS አስተዳደር
+* **አዲስ:** የማዋቀሪያ አስማተኛ ተመጣጣኝ ነባሪዎች ያሉት ነባሪ የዶሜይን ምርት በራስ-ሰር ይፈጥራል
+* **አዲስ:** በcron በኩል በሁሉም የተዋቀሩ አቅራቢዎች ላይ ዕለታዊ ራስ-ሰር የTLD ማመሳሰል
+* **አዲስ:** በእያንዳንዱ ምርት ውቅር ያለው የWHOIS ግላዊነት ጥበቃ (ሁልጊዜ በርቷል፣ የደንበኛ ምርጫ፣ ወይም ተሰናክሏል)
+* **አዲስ:** ከዋጋ ማሳያ እና ከጨለማ ሁነታ ድጋፍ ጋር የWHOIS ግላዊነት checkout ምልክት ሳጥን
+* **አዲስ:** ለእጅ የዶሜይን ምዝገባ የRegister Domain አስተዳዳሪ ገጽ
+* **አዲስ:** በUltimate Multisite የማዘመኛ አገልጋይ በኩል ራስ-ሰር የplugin ዝማኔዎች
+* **አዲስ:** በምርት ዝርዝር ሰንጠረዥ ውስጥ የዶሜይን ምርት ዓይነት ማጣሪያ ትር ከሐምራዊ ባጅ ቅጥ ጋር
+* **አዲስ:** በዶሜይን checkout ቅጽ ላይ የተመዝጋቢ የመገናኛ መስኮች (ስም፣ አድራሻ፣ ከተማ፣ ግዛት፣ ፖስታ ኮድ፣ አገር፣ ስልክ)
+* **አዲስ:** የregistrar APIን ከመጥራት በፊት የተመዝጋቢ መስክ ማረጋገጫ ከግልጽ የስህተት መልዕክቶች ጋር
+* **አዲስ:** ለዶሜይን ምዝገባ ክስተቶች አቅራቢ-ተኮር የሎግ ቻናሎች (ለምሳሌ፦ domain-seller-namecheap.log)
+* **አዲስ:** በዋና የምዝገባ/መመዝገቢያ checkout ቅጽ ላይ የተመዝጋቢ የመገናኛ መስኮች (ዶሜይን ሲመዘገብ ይታያል)
+* **ተሻሽሏል:** የDomain Search checkout መስክን ንዑስ ዶሜይን፣ ምዝገባ እና ነባር ዶሜይን ትሮችን በሚደግፍ የተዋሃደ የDomain Selection መስክ ተተክቷል
+* **ተሻሽሏል:** የዶሜይን ምርት ቅንብሮች በዋና widget ሥርዓት በኩል በምርት ማርትዕ ገጽ ላይ በመስመር ውስጥ ይቀርባሉ
+* **ተሻሽሏል:** የደንበኛ ዶሜይን መረጃ ከተናጠል metabox ይልቅ ወደ ዋና የዶሜይን ካርታ widget ይገናኛል
+* **ተሻሽሏል:** የTLD ማስመጫ አስማተኛ ከሁሉም አቅራቢዎች በአንድ-ጠቅታ ማመሳሰል ቀላል ሆኗል
+* **ተሻሽሏል:** የNamecheap ዶሜይን ተገኝነት ፈጣን ፍለጋ ለማድረግ የbatch API ጥሪ ይጠቀማል
+* **ተሻሽሏል:** የNamecheap ዋጋ አሰጣጥ API ትክክለኛ መለኪያዎችን እና የምላሽ መተንተንን ይጠቀማል
+* **ተሻሽሏል:** በአንድ የኔትወርክ አማራጭ ውስጥ የTLD ማከማቻ ተማክሏል
+* **ተሻሽሏል:** ለDNS ለውጦች፣ ማስተላለፎች እና ውቅር ትግበራ የዶሜይን እንቅስቃሴ መመዝገብ
+* **ተሻሽሏል:** የIANA ዋና ዝርዝርን ከbatch ማረጋገጫ ጋር በመጠቀም ለOpenSRS ሙሉ የTLD ማመሳሰል
+* **ተሻሽሏል:** ለNamecheap ከገጽታዊ API ጥያቄዎች ጋር ሙሉ የTLD ማመሳሰል
+* **ተሻሽሏል:** የድሮ አቅራቢ ክፍሎች በIntegration Registry ንድፍ ተተክተዋል
+* **ተሻሽሏል:** ከDNS እና የማስተላለፍ ውቅር ጋር የቅንብሮች ፓነል
+* **ተሻሽሏል:** ስልክ ቁጥሮች በራስ-ሰር ወደ +CC.NNN registrar ቅርጸት ይቀረጻሉ
+* **ተሻሽሏል:** የስልክ መስክ ማረጋገጫ ከማስገባት በፊት የቅርጸት ቁምፊዎችን ያስወግዳል
+* **ተሻሽሏል:** የስሪት መስፈርት ወደ Ultimate Multisite 2.4.12 በግልጽ ማስታወቂያ ተጨምሯል
+* **ተሻሽሏል:** የCI የስራ ፍሰት ለaddon እና ለዋና plugin ትክክለኛ checkoutን ይጠቀማል
+* **ተሻሽሏል:** prepare_registrant_info() ከcheckout-የተቀመጠ የተጠቃሚ meta ከbilling አድራሻ መጠባበቂያ ጋር ያነባል
+* **ተስተካክሏል:** በcheckout ጊዜ ላልገቡ ተጠቃሚዎች የዶሜይን ፍለጋ AJAX መውደቅ
+* **ተስተካክሏል:** በcheckout ጊዜ ላልገቡ ተጠቃሚዎች የዶሜይን ዋጋ አሰጣጥ AJAX መውደቅ
+* **ተስተካክሏል:** የWP-CLI ትዕዛዞችን ሲያስኬድ የSpyc ክፍል እንደገና መግለጫ ከባድ ስህተት
+* **ተስተካክሏል:** የNamecheap sandbox API ጊዜ ገደብ በጣም አጭር ነበር
+* **ተስተካክሏል:** የዶሜይን ፍለጋ የSelect አዝራር ጽሑፍ በአረንጓዴ ዳራ ላይ አይታይም ነበር
+* **ተስተካክሏል:** የመገናኛ መረጃ በመጥፋቱ ምክንያት "RegistrantFirstName is Missing" ስህተት የዶሜይን ምዝገባ መውደቅ
+* **ተስተካክሏል:** በcheckout ጊዜ ጣቢያው ገና ካልነበረ የዶሜይን መዝገብ በblog_id=0 ተፈጥሯል
+* **ተስተካክሏል:** የነባሪ TLDs ቅንብር እንደተተነተነ ዝርዝር ሳይሆን እንደ ሕብረቁምፊ ተመልሷል
+* **ተወግዷል:** ተናጠል የDomain Management አስተዳዳሪ ገጽ — አሁን በዋና የዶሜይን ገጾች በኩል ይስተናገዳል
 
-* **አዲስ፡** በዘመናዊ PHP 7.4+ አርክቴክቸር ሙሉ በሙሉ እንደገና ተጽፏል።
-* **አዲስ፡** ከUltimate Multisite v2 checkout system ጋር ያለች እንከን የለሽ ውህደት።
-* **አዲስ፡** በflexible pricing options የዶሜን ምርት አያያዝ።
-* **አዲስ፡** ብዙ የዶሜን አቅራቢዎችን የሚደግፍ አርክቴክቸር።
-* **አዲስ፡** የራስ-ሰር እድሳት (Auto-renewal) እና የደንበኝነት ምዝገባ ውህደት።
-* **አዲስ፡** የደንበኛ የዶሜን አያያዝ በinterface።
-* **አዲስ፡** የአስተዳሚ የዶሜን ክትትል እና የlog።
-* **አዲስ፡** ለዶሜን ምርቶች የCoupon ድጋፍ።
-* **አዲስ፡** አጠቃላይ የsettings አያያዝ።
-* **አዲስ፡** ለdeveloper ተስማሚ የሆነ ሊሰፋ የሚችል የcodebase።
-* **ተሻሽሏል፡** የOpenSRS አቅራቢ ሙሉ የባህሪ ድጋፍ ጋር ተዘምኗል።
-* **ተሻሽሏል፡** ከUltimate Multisite v2 ጋር የሚጣጣም ዘመናዊ UI።
-* **ተስተካከለ፡** ሁሉም ጊዜ ያለፈባቸው v1 ኮዶች ወደ v2 ደረጃዎች ተዘምረዋል።
-* **ተወግዷል፡** አሮጌው v1 ተኳሃኝነት (የሚሰብር ለውጥ)።
+ስሪት 1.0.0 - በ2025-09-28 ተለቋል
 
-### ቀደምት ስሪቶች (v1 Legacy)
+**ለUltimate Multisite v2 ታላቅ እንደገና መጻፍ**
 
-### Version 0.0.3 - 20/08/2019
+* **አዲስ:** በዘመናዊ PHP 7.4+ አርክቴክቸር ሙሉ እንደገና መጻፍ
+* **አዲስ:** ከUltimate Multisite v2 checkout ሥርዓት ጋር ያለችግር ውህደት
+* **አዲስ:** ተለዋዋጭ የዋጋ አማራጮች ያሉት የዶሜይን ምርት አስተዳደር
+* **አዲስ:** በርካታ የዶሜይን አቅራቢ ድጋፍ አርክቴክቸር
+* **አዲስ:** የራስ-ሰር እድሳት እና የምዝገባ ውህደት
+* **አዲስ:** የደንበኛ ዶሜይን አስተዳደር በይነገጽ
+* **አዲስ:** የአስተዳዳሪ ዶሜይን ክትትል እና ሎጎች
+* **አዲስ:** ለዶሜይን ምርቶች የኩፖን ድጋፍ
+* **አዲስ:** ሁሉን አቀፍ የቅንብሮች አስተዳደር
+* **አዲስ:** ለገንቢ ምቹ ሊሰፋ የሚችል የኮድ መሠረት
+* **ተሻሽሏል:** የOpenSRS አቅራቢ በሙሉ ባህሪ ድጋፍ ተዘምኗል
+* **ተሻሽሏል:** ከUltimate Multisite v2 ጋር የሚጣጣም ዘመናዊ UI
+* **ተስተካክሏል:** ሁሉም የተቋረጠ v1 ኮድ ወደ v2 መመዘኛዎች ተዘምኗል
+* **ተወግዷል:** የድሮ v1 ተኳኋኝነት (ሰባሪ ለውጥ)
 
-* ተስተካከለ፡ ከGroundhogg CRM ጋር አለመጣጣም።
-* ማሳሰቢያ፡ ይህ የመጨረሻው v1 ተኳሃኝ ስሪት ነበር።
+### ያለፉ ስሪቶች (v1 የቀድሞ) {#previous-versions-v1-legacy}
 
-### Version 0.0.2 - 07/12/2018
+### ስሪት 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* ተስተካከለ፡ የLicense Key field ተወግዷል።
-* ተስተካከለ፡ የfeature plugin ሲንቀሳቀስ የPlan tabs አልተገኙም።
-* ተሻሽሏል፡ በregistration field ላይ የskip button ተጨምሯል።
+* ተስተካክሏል: ከGroundhogg CRM ጋር አለመጣጣም
+* ማስታወሻ: ይህ የመጨረሻው v1-ተኳኋኝ ልቀት ነበር
 
-### Version 0.0.1 - የመጀመሪያ ስሪት
+### ስሪት 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* ለWP Ultimo v1 መሰረታዊ የOpenSRS ውህደት።
-* ቀላል የዶሜን ፍለጋ እና ምዝገባ።
-* በPlan ላይ የተመሰረተ የዶሜን ፈቃድ።
+* ተስተካክሏል: የLicense Key መስክ ተወግዷል
+* ተስተካክሏል: የባህሪ plugin ንቁ ሲሆን የእቅድ ትሮች መጥፋት
+* ተሻሽሏል: በምዝገባ መስክ ላይ የመዝለል አዝራር ታክሏል
+
+### ስሪት 0.0.1 - የመጀመሪያ ልቀት {#version-001---initial-release}
+
+* መሠረታዊ የOpenSRS ውህደት ለWP Ultimo v1
+* ቀላል የዶሜይን ፍለጋ እና ምዝገባ
+* በእቅድ ላይ የተመሠረቱ የዶሜይን ፈቃዶች

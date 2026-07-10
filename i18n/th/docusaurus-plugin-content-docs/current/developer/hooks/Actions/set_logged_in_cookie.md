@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 จะทำงานทันทีก่อนที่คุกกี้สำหรับยืนยันตัวตนว่าล็อกอินแล้วจะถูกตั้งค่า
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | รูปแบบการยืนยันตัวตน ค่าเริ่มต้นคือ 'logged_in' |
 | $token | `string` | โทเค็นเซสชันของผู้ใช้ที่จะใช้สำหรับคุกกี้นี้ |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: ได้เพิ่มพารามิเตอร์ <code>$token</code> เข้ามา
 
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) บรรทัดที่ 141

@@ -4,23 +4,23 @@ title: Filtro - wu_page_get_title_links
 sidebar_label: wu_page_get_title_links
 _i18n_hash: a9d69a93454a29eec23eeca392893cc6
 ---
-# Filtro: wu_page_get_title_links
+# Filtro: wu_page_get_title_links {#filter-wupagegettitlelinks}
 
 Permitir que desenvolvedores de plugins, e nós mesmos, adicionem links de ação às nossas páginas de edição
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-----------|
 | $action_links | `array` | Os links de ação. |
 | $page | `\Base_Admin_Page` | Esta instância. |
 
-### Desde
+### Desde {#since}
 
 - 1.8.2
 
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L671) na linha 671
 
-## Retornos
+## Retornos {#returns}

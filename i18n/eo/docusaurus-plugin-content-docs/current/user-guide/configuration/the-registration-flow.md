@@ -3,13 +3,13 @@ title: La Registriĝo Flujo
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# La Flujo de Registración (v2)
+# La Flujo de Registración (v2) {#the-registration-flow-v2}
 
 _**NOTE IMPORTANTE: Esta entrada se refiere a Ultimate Multisite versión 2.x.**_
 
 Los usuarios pueden registrarse de diferentes maneras en tu red. Pueden usar tu formulario de registro o un enlace compartible para un plan preseleccionado. Aquí te mostraremos cómo tus clientes pueden registrarse en tu red usando las rutas disponibles y qué sucede después de que se registren en tu red.
 
-## Usando el Formulario de Registro:
+## Usando el Formulario de Registro: {#using-the-registration-form}
 
 Este es el proceso de registro estándar. Creas una página de registro con un **checkout form** (formulario de pago) y aquí es donde tus clientes irán para registrarse en tu red y suscribirse a un plan. Puedes tener varias páginas de registro, cada una con un formulario diferente si lo deseas.
 
@@ -35,13 +35,13 @@ Se ili registrisaj en pagita planon aŭ se e-poŝta verigo ne estas obligita en 
 
 ![Sito aktiva kun linko por logi sin al dashboardo](/img/frontend/site-activated.png)
 
-## Uzo de Partabla Linko:
+## Uzo de Partabla Linko: {#using-a-shareable-link}
 
 La proceso de registriĝo uzante partablan linkon estas esence la sama kiel la registriĝo per la formulon, la unika diferenco estas ke uzante partablan linkon, viaj klientoj povas havi produkon aŭ templaton de sita pre-selektita sur la checkout-formo (vidu la sekcion Pre-selecting products and templates via URL parameters) aŭ eble alteni kodon.
 
 La registriĝo estas la sama: ili devas plenumi sian nomon, uzon nomon, e-poŝtan adreson, sita nomon kaj titolon, etc... sed la planon aŭ templaton de sita estu 이미 pre-selektita por ili.
 
-### Registriĝo Uzante Manĝen Pagoj:
+### Registriĝo Uzante Manĝen Pagoj: {#registering-using-manual-payments}
 
 Se vi ne volas uzi PayPal, Stripe aŭ iu alia pagamentan portogon ofretita de Ultimate Multisite aŭ ĝiaj adonaj integracoj, vi povas uzi manĝajn pagojn por viaj klientoj. Tio pervasvi vi povas generi fakturon por ili pli paŝi sur via preferita pagamenta procesoro post kiam ili registriĝas en via reto.
 

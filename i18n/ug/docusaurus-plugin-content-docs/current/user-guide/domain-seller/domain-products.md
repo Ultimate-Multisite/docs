@@ -3,11 +3,11 @@ title: دومين منتجләре һәм аркалары
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Ürünleri ve Fiyatlandırma
+# Domain Ürünleri ve Fiyatlandırma {#domain-products-and-pricing}
 
 Domain ürünleri, fiyatlandırmayı, TLD'leri (alan uzantıları), WHOIS gizliliğini ve sağlayıcı seçimini nasıl kontrol edeceğinizi gösterir. Her domain ürünü, ekstra bir **Domain Ayarları** sekmesine sahip standart bir Multisite Ultimate ürünüdür.
 
-## Domain ürünü oluşturma
+## Domain ürünü oluşturma {#creating-a-domain-product}
 
 1. **Network Admin › Ultimate Multisite › Products** bölümüne gidin.
 2. **Add New** (Yeni Ekle) butonuna tıklayın.
@@ -17,13 +17,13 @@ Domain ürünleri, fiyatlandırmayı, TLD'leri (alan uzantıları), WHOIS gizlil
 
 Domain ürünleri, ürün listesinde mor bir **Domain** rozetiyle görünür ve **Domain Products** sekmesi kullanılarak filtreleyebilirsiniz.
 
-## Domain ayarları sekmesi
+## Domain ayarları sekmesi {#domain-settings-tab}
 
-### Sağlayıcı (Provider)
+### Sağlayıcı (Provider) {#provider}
 
 Bu ürün için kaydı hangi kayıt kuruluşunun (registrar) yapacağını seçin. Varsayılan olarak, Domain Seller ayarlarında belirlenen küresel **Default provider** kullanılır.
 
-### Desteklenen TLD'ler (Supported TLDs)
+### Desteklenen TLD'ler (Supported TLDs) {#supported-tlds}
 
 Başka bir ürünle eşleşmeyen tüm TLD'lere uygulanacak bir **catch-all product** oluşturmak için boş bırakın.
 
@@ -31,7 +31,7 @@ Belirli uzantılara yalnızca uygulanan bir **TLD-specific product** oluşturmak
 
 **Ürün eşleşmesi nasıl çalışır:** Bir müşteri bir domain aradığında, eklenti en spesifik eşleşen ürünü seçer. TLD listesinde `.com` olan bir ürün, catch-all üründen önce önceliklidir. Eğer hiçbir TLD'ye özel ürün eşleşmezse, catch-all kullanılır. Hiç ürün yoksa, domain araması gösterilmez.
 
-### Markup tipi (Fiyatlandırma türü)
+### Markup tipi (Fiyatlandırma türü) {#markup-type}
 
 Perakende fiyatınızın toptan maliyetten nasıl hesaplanacağını kontrol eden üç mod vardır:
 
@@ -41,13 +41,13 @@ Perakende fiyatınızın toptan maliyetten nasıl hesaplanacağını kontrol ede
 | **Fixed markup** (Sabit artış) | Sabit bir dolar miktarı ekler. 10 dolarlık bir domain için 5 dolarlık artış, 15 dolar yapar. |
 | **Fixed price** (Sabit fiyat) | Toptan maliyeti tamamen yok sayar. Her zaman girdiğiniz tutarı ücretlendirirsiniz. |
 
-### Giriş fiyatlandırması (Introductory pricing)
+### Giriş fiyatlandırması (Introductory pricing) {#introductory-pricing}
 
 ###折扣付き初年度価格の提供を有効にする
 
 割引された初年度価格を設定します。通常の**更新価格**（2年目以降）と並んで、別の**導入価格**（1年目の価格）を設定します。お客様はチェックアウト中に両方の価格が表示されるので、更新時に何が起こるかを知ることができます。
 
-### WHOIS gizliliği (Gizlilik)
+### WHOIS gizliliği (Gizlilik) {#whois-privacy}
 
 Bu ürünle kayıtlı alan adları için WHOIS gizliliği korumasının sunulup sunulmayacağını kontrol eder.
 
@@ -61,7 +61,7 @@ Namecheap için WHOIS gizliliği WhoisGuard kullanır (her zaman ücretsizdir). 
 
 ---
 
-## TLD içe aktarma ve senkronizasyon
+## TLD içe aktarma ve senkronizasyon {#tld-import-and-sync}
 
 Alan adı ürünleri, bağlı sağlayıcıdan çekilen gerçek zamanlı toptan fiyatlarını gösterir. Bunun çalışması için TLD'lerin içe aktarılması gerekir.
 
@@ -72,7 +72,7 @@ Senkronizasyondan sonra, herhangi bir alan adı ürününün Domain Settings sek
 
 ---
 
-## Otomatik yenileme
+## Otomatik yenileme {#auto-renewal}
 
 Alan adı yenilemeleri müşterinin üyelik durumuna bağlıdır:
 
@@ -92,7 +92,7 @@ Alan ömrü olayları için e-posta şablon kimlikleri:
 
 ---
 
-## Admin: Manual domain registration (Админ: Ручной регистрация домена)
+## Admin: Manual domain registration (Админ: Ручной регистрация домена) {#admin-manual-domain-registration}
 
 Müşteri ödeme yapmadan kendi adına bir alan adı kaydetmek için:
 

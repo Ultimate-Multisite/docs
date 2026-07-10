@@ -1,71 +1,194 @@
 ---
-title: Hooks Referenciája
+title: Hookok referenciája
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Hook-ok Táblázata
+# Hookok referenciája {#hooks-reference}
 
-Automatikus dokumentáció Ultimate Multisite összes **59 akciója** és **115 szűrője**ről.
+Automatikusan generált dokumentáció az Ultimate Multisite összes **59 műveletéhez** és **118 szűrőjéhez**.
 
-## Akciók
+## Műveletek {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Elküldődik a hitelesítési átirányítás előtt.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Azonosítási cookie beállítását közvetlenül megelőzően küldődik.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — A bejelentkezett hitelesítési cookie beállítását közvetlenül megelőzően küldődik.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Engedélyezi a fejlesztőknek, hogy saját host szolgáltató integrációkat párosítsanak wp pluginek segítségével.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Elindul, amikor az összes függőség betöltődött.
-- [wu_activation](./Actions/wu_activation) — Engedélyezi más plugin részeinek, hogy csatlakoztassák az aktivációs rutinjukat.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Engedélyezi a plugin fejlesztőknek, hogy hívják fel funkciókat, miután egy felhasználó vagy super admin átváltott az oldal sablonján.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Néhány esetben extra "erő" betöltése szükséges az akciók kezeléséhez.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Elküldődik a keresési kérés feldolgozása előtt.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Engedélyezi a fejlesztőknek, hogy további módosításokat tegyenek a checkout objektumán.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Engedélyezi a fejlesztőknek, hogy további módosításokat tegyenek a checkout objektumán.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Elküldődik, mielőtt egy mezőt hozzáadnak a checkout űrlaphoz.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Engedélyezi a fejlesztőknek további hook-ok elindítását.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Mielőtt feldolgozzuk a checkout-ot.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Elküldődik, miután a checkout rendelése teljesen összeáll.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab) — Engedélyezi a jelenlegi fülre.
-- [wu_user_profile_update_success] — Sikeres felhasználói profilfrissítés.
-- [wu_user_profile_update_failed] — Sikertelen felhasználói profilfrissítés.
-- [wu_user_profile_delete_success] — Sikeres felhasználói profileltöltés.
-- [wu_user_profile_delete_failed] — Sikertelen felhasználói profileltöltés.
-- [wu_user_profile_save_success] — Sikeres felhasználói profilmentés.
-- [wu_user_profile_save_failed] — Sikertelen felhasználói profilmentés.
-- [wu_user_profile_delete_request] — Felhasználói profileltöltés kérése.
-- [wu_user_profile_update_request] — Felhasználói profilfrissítés kérése.
-- [wu_user_profile_delete_request_failed] — Felhasználói profileltöltés kérése sikertelen.
-- [wu_user_profile_update_request_failed] — Felhasználói profilfrissítés kérése sikertelen.
-- [wu_user_profile_save_request] — Felhasználói profilmentés kérése.
+- [auth_redirect](./Actions/auth_redirect) — Lefut a hitelesítési átirányítás előtt.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Közvetlenül a hitelesítési cookie beállítása előtt fut le.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Közvetlenül a bejelentkezett állapotot jelző hitelesítési cookie beállítása előtt fut le.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Lehetővé teszi a fejlesztőknek, hogy saját tárhelyszolgáltató-integrációkat adjanak hozzá wp beépülő modulokon keresztül.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Akkor aktiválódik, amikor az összes függőség betöltődött
+- [wu_activation](./Actions/wu_activation) — Lehetővé teszi, hogy a beépülő modul más részei hozzákapcsolják az aktiválási rutinjaikat
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy függvényeket kapcsoljanak be azután, hogy egy felhasználó vagy super admin webhelysablont vált
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Bizonyos esetekben extra erőforrásokat kell betöltenünk a műveletek kezeléséhez.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Lefut a keresési kérés feldolgozása előtt.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Lehetővé teszi a fejlesztőknek, hogy további módosításokat végezzenek a pénztári objektumon.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Lehetővé teszi a fejlesztőknek, hogy további módosításokat végezzenek a pénztári objektumon.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Lefut, mielőtt egy mező hozzáadódik a pénztári űrlaphoz.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Lehetővé teszi a fejlesztőknek, hogy további hookokat aktiváljanak.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Mielőtt feldolgozzuk a pénztárt.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Lefut, miután a pénztári rendelés teljesen összeállt.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy widgeteket adjanak hozzá a hálózati Dashboard panelhez.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy widgeteket adjanak hozzá a hálózati Dashboard panelhez.
+- [wu_deactivation](./Actions/wu_deactivation) — Lehetővé teszi, hogy a beépülő modul más részei hozzákapcsolják a deaktiválási rutinjaikat
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy műveleteket adjanak hozzá a törlési folyamathoz
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Lefut, amikor egy domain egy webhely elsődleges domainjévé válik.
+- [wu_domain_created](./Actions/wu_domain_created) — Akkor aktiválódik, amikor új domain-hozzárendelés kerül hozzáadásra.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Azután fut le, hogy az alapvető domain-hozzárendelésünk betöltődött
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Egyes beépülő modulok még azelőtt mentenek URL-t, hogy a hozzárendelés aktív lett volna, vagy más módon építenek URL-eket, amely nincs benne o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Lehetővé teszi a fejlesztőknek, hogy bekapcsolódjanak egy webhely duplikálása után.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további hookokat adjanak hozzá
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook további tisztításhoz
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Lefut az új domain hozzáadására szolgáló modális ablak kérésének kezelése előtt.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy szükség esetén eltérő módokon mentsenek metaadatokat.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy szükség esetén eltérő módokon mentsenek felhasználói metaadatokat.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Lefut, amikor érvénytelen magic link tokennel találkozik.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Lefut, miután egy felhasználó magic linken keresztül bejelentkezett.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további dolgokat végezzenek, amikor az ügyfél hozzáadásra kerül.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Lefut, miután az MCP képességek regisztrálásra kerültek egy entitáshoz.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Lefut, miután az MCP adapter inicializálódott.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — A tagság lemondása után aktiválódik.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — A tagság megújítása után aktiválódik.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — A tagság lemondása előtt aktiválódik.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — A tagság megújítása előtt aktiválódik.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Lefut, miután egy objektum mentésre került az adatbázisba.
+- [wu_page_added](./Actions/wu_page_added) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további műveleteket futtassanak, amikor az oldalak regisztrálásra kerülnek.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további tartalmat adjanak hozzá az oldal kiírása után
+- [wu_page_before_render](./Actions/wu_page_before_render) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további tartalmat adjanak hozzá az oldal kiírása előtt.
+- [wu_page_load](./Actions/wu_page_load) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további hookokat adjanak hozzá az oldalainkhoz.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további tartalmat adjanak hozzá az oldal kiírása után
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további tartalmat adjanak hozzá az oldal kiírása előtt.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Lehetővé teszi a beépülőmodul-fejlesztőknek, hogy további hookokat adjanak hozzá az oldalainkhoz.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Lefut, miután a widgetek regisztrálásra kerültek ehhez az oldalhoz.
 
----
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Lefut, hogy az addonok képességmodulokat csatolhassanak az integrációkhoz.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Lefut, hogy az integrációk regisztrálhassák magukat.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Lehetővé teszi további útvonalak regisztrálását.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Lehetővé teszi a plugin fejlesztőknek, hogy műveleteket adjanak a mentési folyamathoz
+- [wu_site_created](./Actions/wu_site_created) — Lefut, miután egy site először létrejött.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Lehetővé teszi a plugin fejlesztőknek, hogy szükség esetén további hookokat adjanak hozzá.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Akkor fut, amikor a sablon-előnézeti kontextuson belül van.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Elindítja a scriptek sorba állításának hookját.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Lefut, miután egy objektum az adatbázisba került.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Lefut, miután egy objektum az adatbázisba került.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Lefut, miután egy objektum az adatbázisba került.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lehetővé teszi a plugin fejlesztőknek, hogy műveleteket adjanak a feloldási folyamathoz.
 
-### **[Azonosítás]**
+## Szűrők {#filters}
 
-*   **Típus:** Hook/Action Hook (WordPress-szerű rendszerben)
-*   **Funkció:** A rendszerben zajlott eseményre reagáló kódblokk.
-*   **Kontextus:** A felhasználói profilkezelés és a felhasználói adatfrissítés.
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Szűri a hitelesítési cookie lejárati időtartamát.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Szűri a hitelesítési átirányítási sémát.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — A biztonság kedvéért itt replikálja az eredeti WP szűrőt.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Lehetővé teszi a plugin fejlesztőknek az előnézetben használt URL szűrését
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Szűri, hogy az auth cookie csak HTTPS-en keresztül legyen-e elküldve.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Szűri, hogy biztonságos hitelesítési átirányítást használjon-e.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Szűri, hogy a bejelentkezett cookie csak HTTPS-en keresztül legyen-e elküldve.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Lehetővé teszi annak megakadályozását, hogy az auth cookie-k ténylegesen elküldésre kerüljenek a kliensnek.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Beállítja az átirányítási URL-t.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — További lépések hozzáadása szűrőkön keresztül
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Lehetővé teszi a plugin fejlesztőknek, hogy globálisan extra változót adjanak a renderelési kontextushoz.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Lehetővé teszi a fejlesztőknek ennek az ellenőrzésnek a rövidre zárását.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Szűri az új domain hozzáadása modális ablak mezőit.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Lehetővé teszi a fejlesztőknek a setup fee sor tételének módosítását.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Lehetővé teszi a fejlesztőknek az Ultimate Multisite által hozzáadott admin értesítések szűrését.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Szűrés a módosítás után.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Most az összes típussal foglalkozunk.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Lehetővé teszi a plugin fejlesztőknek a korlátozások rövidre zárását.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Szűri, hogy a signup fee alkalmazásra kerüljön-e vagy sem.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Szűri az eredeti api argumentumokat.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Lehetővé teszi a plugin fejlesztőknek a számlázási cím mezőinek szűrését.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Lehetővé teszi a fejlesztőknek a kimenet megkerülését és egy új beállítását
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Lehetővé teszi a fejlesztőknek az unset current user kód megkerülését.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Szűri az „ismétlődő összeg” végösszegét.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Szűri a „kezdeti összeg” végösszegét.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Szűri a „kezdeti összeg” végösszegét.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Lehetővé teszi a plugin fejlesztőknek a kreditérték módosítását.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Szűri azokat a megosztott checkout-form alapdomaineket, amelyekből nem szabad mapped-domain rekordoknak lenniük.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Az új mezősablonok hozzáadására szolgáló API-jaink ide kapcsolódnak be.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Az új mezőtípusok hozzáadására szolgáló API-jaink ide kapcsolódnak be.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Szűri a hibaüzeneteket.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Lehetővé teszi a fejlesztőknek az ellenőrzés megkerülését, ha egy mező automatikusan beküldhető.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Lehetővé teszi a plugin fejlesztőknek egyéni aliasok hozzáadását az űrlap-ellenőrzőhöz.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Lehetővé teszi a plugin fejlesztőknek az érvényesítési szabályok szűrését.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Eltávolítja a nem kívánt paramétereket.
+- [wu_contains_element](./Filters/wu_contains_element) — Lehetővé teszi a fejlesztőknek a kezdeti keresés eredményeinek módosítását.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Lehetővé teszi a tárhelyszolgáltatóknak, hogy a konstanst eltérően telepítsék.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Visszaadja az ország közigazgatási alegységeinek szép nevét.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Visszaadja egy országon belüli állam városainak listáját.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Visszaadja az ország államainak listáját.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Lehetővé teszi a fejlesztőknek az alapértelmezett viselkedés módosítását és az aktuális ügyfél eltérő beállítását.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Lehetővé teszi a fejlesztőknek az alapértelmezett viselkedés módosítását és az aktuális membership eltérő beállítását.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Lehetővé teszi a fejlesztőknek az alapértelmezett viselkedés módosítását és az aktuális site eltérő beállítását.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Lehetővé teszi a fejlesztőknek a site kezelési URL paramétereinek módosítását.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Lehetővé teszi a plugin fejlesztőknek a hivatkozások szűrését.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Lehetővé teszi a plugin fejlesztőknek új ellenőrzések hozzáadását az eredmények meghatározásához.
 
----
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Lehet, hogy később további blokkokat kell hozzáadnunk.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Általános szűrőt ad hozzá, hogy a fejlesztők kibővíthessék ezt az elemzőt további builderek vagy pluginek kezelésére.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Szűri, hogy érvényesüljenek-e a további jelszószabályok.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Szűri a generált ügyfél-felhasználónevet.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Lehetővé teszi a plugin fejlesztőinek, hogy szűrjék egy checkout oldal előbeállításait.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Lehetővé teszi a fejlesztőknek, hogy új űrlap-slugokat adjanak hozzá e viselkedés megkerüléséhez.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Lehetővé teszi a fejlesztők és kiegészítők számára, hogy új migrációs lépéseket adjanak hozzá
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Erről a szűrőről alább, ugyanezen a metóduson olvashatsz többet.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Lehetővé teszi a fejlesztőknek, hogy kiválasszák, mely bejegyzéstípusok jelenjenek meg.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Sorokat ad vissza, szűrhető
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Lehetővé teszi a fejlesztőknek, hogy módosítsák a domain/útvonal párokat.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Szűri a varázsló szakaszait a hosting integráció beállításához.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Szűri az űrlap mezőit. Az űrlapot a szűrő nevében szereplő ID azonosítja.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Szűri azokat a terméktípusokat, amelyek független számlázási ciklusokkal rendelkeznek.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Lehetővé teszi a plugin fejlesztőinek, hogy kikényszerítsenek egy adott állapotot az API számára.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Lehetővé teszi a plugin fejlesztőinek, hogy további teszteket adjanak hozzá a fejlesztői módhoz.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Lehetővé teszi a plugin fejlesztőinek, hogy kikényszerítsenek egy adott állapotot az MCP adapter számára.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Biztonsági okokból korlátozzuk a bekapcsolható műveletek számát. Ez a szűrő lehetővé teszi a fejlesztőknek a bővítést
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ellenőrzi, hogy egy adott bejegyzéstípus engedélyezett-e ebben a csomagban. Lehetővé teszi a plugin fejlesztőinek a visszatérési érték szűrését
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Szűri, hogy érvényesüljön-e az IP-cím ellenőrzése.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Szűri, hogy érvényesüljön-e a felhasználói ügynök ellenőrzése.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Szűri a generált magic link URL-t.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Szűri, hogy engedélyezve vannak-e a magic linkek.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Szűri az átirányítási URL-t, miután egy domain elsődlegessé válik.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Létrehoz egy kizárási listát azokról a paraméterekről, amelyek megakadályozzák az automatikus átirányítást.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Szűrő az MCP képesség bevonásáról szóló döntés felülbírálására.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Szűri a kiszámított lejárati dátumot.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Szűri a kiszámított lejárati dátumot, amely a megújítás után kerül beállításra.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Lehetővé teszi a fejlesztőknek, hogy új frissítési űrlap-slugokat adjanak hozzá.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Szűri a minimális jelszóhosszt.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Szűri a szükséges minimális jelszóerősséget (zxcvbn pontszám).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Lehetővé teszi a plugin fejlesztőinek, és nekünk is, hogy műveleti linkeket adjunk hozzá a szerkesztési oldalainkhoz
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Szűri, hogy kötelezőek legyenek-e a kisbetűk a jelszavakban.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Szűri, hogy kötelezőek legyenek-e a számok a jelszavakban.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Szűri, hogy kötelezőek legyenek-e a speciális karakterek a jelszavakban.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Szűri, hogy kötelezőek legyenek-e a nagybetűk a jelszavakban.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Lehetővé teszi a felhasználónak, hogy módosítsa a függőben lévő fizetésekről szóló üzenetet.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Szűri azokat a terméktípusokat, amelyeket csomagokként kell kezelni.
+- [wu_post_count](./Filters/wu_post_count) — Lehetővé teszi a plugin fejlesztőinek, hogy módosítsák az összesített darabszámot
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Lehetővé teszi a plugin fejlesztőinek, hogy módosítsák, mely bejegyzésállapotokat kell számolni. Alapértelmezés szerint a közzétett és privát bejegyzések vannak számolva
+- [wu_post_default_status](./Filters/wu_post_default_status) — Szűri az objektum adatait, mielőtt azok az adatbázisba kerülnének.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Lehetővé teszi a fejlesztőknek, hogy szűrjék a beállításokat, mielőtt az Ultimate Multisite mentené őket.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Szűri, hogy engedélyezett-e a kérés folytatása vagy sem.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Szűri, hogy engedélyezett-e a kérés folytatása vagy sem.
 
-### **[Összefoglaló]**
-
-A listában szereplő elemek egy **WordPress-szerű vagy hasonló CMS (Content Management System) rendszerben használt "Action Hook" (eseményhúzás)** listája. Ezek a "hook-ok" olyan kódpontok, ahol a fejlesztők hozzáadhatnak saját logikát, hogy reagálhassanak a rendszerben zajló specifikus eseményekre.
-
-**A fő témák:**
-
-1.  **Felhasználói Profilkezelés:** Több hook a felhasználói profilmentéshez, frissítéshez és törléshez (pl. `wu_user_profile_save_success`, `wu_user_profile_update_request`).
-2.  **Sistemes Események:** Általánosabb, általános sikertagsítások (pl. `wu_user_profile_save_success`).
-
-**A kontextus alapján a rendszer valószínűleg egy felhasználói adatkezelő (User Management) plugin vagy funkció.**
-
----
-
-### **[Javasolt felhasználás]**
-
-Ha egy fejlesztőnek kell reagálnia a felhasználói profilmentésre, akkor a következő hook-okat használhatja:
-
-*   **Sikeres mentés:** `wu_user_profile_save_success`
-*   **Frissítés kérése:** `wu_user_profile_update_request`
-*   **Frissítés sikere:** `wu_user_profile_update_success`
-
-**Összefoglalva:** Ezek a kódpontok a felhasználói adatkezelés folyamatát követik.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Szűri, hogy engedélyezett-e a kérés folytatása vagy sem.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Szűri, hogy engedélyezett-e a kérés folytatása vagy sem.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Szűri, hogy engedélyezett-e a kérés folytatása vagy sem.
+- [wu_return_url](./Filters/wu_return_url) — Lehetővé teszi a fejlesztőknek, hogy módosítsák a checkout folyamatok után használt átjáró visszatérési URL-jét.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Lehetővé teszi a plugin fejlesztőknek, hogy további keresésimodell-függvényeket adjanak hozzá.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Lehetővé teszi a fejlesztőknek, hogy további beállítási varázsló lépéseket adjanak hozzá.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Szűri, hogy az Ultimate Multisite hozzon-e létre domainrekordot egy újonnan létrehozott site számára.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Lehetővé teszi a fejlesztőknek az átirányítás rövidre zárását, megakadályozva annak megtörténtét.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Lehetővé teszi a handler átírását
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Szűri a site-okhoz elérhető tömeges műveleteket.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Szűrő a hálózaton belüli get pluginssites értékének módosításához.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Engedélyezi/letiltja a domainek közötti egyszeri bejelentkezési képességet.
+- [wu_sso_url](./Filters/wu_sso_url) — Szűri a létrehozott SSO URL-eket, mielőtt azok visszaadásra kerülnek a domainek közötti ügyfélműveletekhez.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Szűri a Stripe Subscription adatokat. Felülírhatja a success_url vagy cancel_url értékét.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Szűri a payment intent argumentumokat.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Szűri az ellenőrizendő plan azonosítóját. Ha ez létezik, az új subscription ezt a plan-t fogja használni.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Szűri az ellenőrizendő product azonosítóját. Ha ez létezik, az új subscription ezt a product-et fogja használni.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Szűri a Stripe terhelési beállításokkal küldött idempotency_key értékét.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Szűri az ehhez a webhookhoz társított membership rekordot.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Szűri az adatok metaadatait, mielőtt sorosításra kerülnek az adatbázisban történő tároláshoz.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Szűri az objektum adatait, mielőtt eltárolásra kerülnek az adatbázisban.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Lehetővé teszi a fejlesztőknek, hogy módosítsák a feloldáshoz szükséges upgrade URL-t
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Meghatározza, hogy használni kell-e leképezést
+- [wu_username_from_email](./Filters/wu_username_from_email) — Szűri az új ügyfél felhasználónevét.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Lehetővé teszi a fejlesztőknek, hogy módosítsák a membership felhasználói korlátjáról szóló üzenetet
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Lehetővé teszi a fejlesztőknek, hogy további mappákat adjanak hozzá a cserélhető listához.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Szűri, hogy mely sub_commands vannak engedélyezve ehhez az entitáshoz.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Három mintát ellenőrzünk, amikor megpróbáljuk kideríteni, hová illeszthetjük be a konstansainkat:

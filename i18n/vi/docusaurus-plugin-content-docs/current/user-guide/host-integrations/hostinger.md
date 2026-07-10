@@ -1,22 +1,22 @@
 ---
 title: Tích hợp Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Tích hợp Hostinger (hPanel)
+# Tích hợp Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Tổng quan
+## Tổng quan {#overview}
 
 Hostinger là một nhà cung cấp dịch vụ lưu trữ web phổ biến với bảng điều khiển hiện đại gọi là hPanel. Tích hợp Ultimate Multisite Hostinger cho phép đồng bộ hóa tên miền tự động giữa Ultimate Multisite và hPanel của Hostinger. Điều này giúp bạn quản lý bản đồ tên miền và các subdomain một cách tự động ngay từ trang quản trị WordPress của mình.
 
-## Tính năng
+## Tính năng {#features}
 
 - Tự động tạo addon domain trong hPanel
 - Tự động tạo subdomain trong hPanel (dành cho các cài đặt multisite subdomain)
 - Xóa tên miền khi bản đồ tên miền bị xóa
 - Tích hợp liền mạch với API quản lý tên miền của hPanel
 
-## Yêu cầu
+## Yêu cầu {#requirements}
 
 Để sử dụng tích hợp Hostinger, bạn cần:
 
@@ -35,9 +35,9 @@ Tùy chọn, bạn cũng có thể định nghĩa:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Điểm cuối API mặc định
 ```
 
-## Hướng dẫn thiết lập
+## Hướng dẫn thiết lập {#setup-instructions}
 
-### 1. Tạo Token API Hostinger của bạn
+### 1. Tạo Token API Hostinger của bạn {#1-generate-your-hostinger-api-token}
 
 1. Đăng nhập vào tài khoản Hostinger và truy cập hPanel
 2. Điều hướng đến **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Điểm cuố
    - Quản lý subdomain (Subdomain management)
 6. Sao chép token đã tạo và lưu trữ nó ở nơi an toàn
 
-### 2. Tìm Account ID của bạn
+### 2. Tìm Account ID của bạn {#2-find-your-account-id}
 
 1. Trong hPanel, đi tới **Account Settings** → **Account Information**
 2. Account ID của bạn sẽ được hiển thị trên trang này
 3. Sao chép và lưu ID này cho bước tiếp theo
 
-### 3. Thêm hằng số vào wp-config.php
+### 3. Thêm hằng số vào wp-config.php {#3-add-constants-to-wp-configphp}
 
 Thêm các hằng số sau vào tệp `wp-config.php` của bạn:
 
@@ -69,7 +69,7 @@ Nếu tài khoản Hostinger của bạn sử dụng điểm cuối API khác, b
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Kích hoạt tích hợp
+### 4. Kích hoạt tích hợp {#4-enable-the-integration}
 
 1. Trong trang quản trị WordPress, đi tới **Ultimate Multisite > Settings**
 2. Điều hướng đến tab **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Bật tích hợp **Hostinger (hPanel)**
 5. Nhấp vào **Save Changes**
 
-## Cách thức hoạt động
+## Cách thức hoạt động {#how-it-works}
 
-### Addon Domains (Tên miền phụ)
+### Addon Domains (Tên miền phụ) {#addon-domains}
 
 Khi bạn ánh xạ (map) một tên miền trong Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Khi bạn ánh xạ (map) một tên miền trong Ultimate Multisite:
 2. Tên miền sẽ được cấu hình để trỏ đến thư mục gốc của bạn.
 3. Khi bản đồ tên miền bị xóa, tích hợp sẽ tự động xóa addon domain khỏi hPanel.
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Đối với các cài đặt multisite subdomain, khi một trang web mới được tạo:
 
@@ -95,7 +95,7 @@ Khi bạn ánh xạ (map) một tên miền trong Ultimate Multisite:
 2. Nó gửi yêu cầu đến API của Hostinger để thêm subdomain đó.
 3. Subdomain sẽ được cấu hình để trỏ đến thư mục gốc của bạn.
 
-## Lưu ý quan trọng
+## Lưu ý quan trọng {#important-notes}
 
 - Tích hợp sử dụng REST API của Hostinger để giao tiếp với tài khoản của bạn.
 - Token API của bạn phải có các quyền cần thiết để quản lý tên miền và subdomain.
@@ -103,33 +103,33 @@ Khi bạn ánh xạ (map) một tên miền trong Ultimate Multisite:
 - Các yêu cầu API được thực hiện an toàn qua HTTPS.
 - Hãy giữ token API của bạn an toàn và không bao giờ chia sẻ nó công khai.
 
-## Khắc phục sự cố
+## Khắc phục sự cố {#troubleshooting}
 
-### Sự cố kết nối API
+### Sự cố kết nối API {#api-connection-issues}
 
 - Xác minh rằng token API của bạn là chính xác và chưa hết hạn.
 - Kiểm tra xem Account ID của bạn đã đúng chưa.
 - Đảm bảo rằng token API của bạn có các quyền cần thiết để quản lý tên miền.
 - Xác minh rằng tài khoản Hostinger của bạn đang hoạt động và ở trạng thái tốt.
 
-### Tên miền không được thêm
+### Tên miền không được thêm {#domain-not-added}
 
 - Kiểm tra nhật ký (logs) của Ultimate Multisite để tìm bất kỳ thông báo lỗi nào.
 - Xác minh rằng tên miền chưa được thêm vào tài khoản Hostinger của bạn.
 - Đảm bảo rằng tài khoản Hostinger của bạn chưa đạt giới hạn addon domain.
 - Xác nhận rằng tên miền đã được trỏ đúng cách đến các nameserver của Hostinger.
 
-### Sự cố Chứng chỉ SSL
+### Sự cố Chứng chỉ SSL {#ssl-certificate-issues}
 
 - Tích hợp không xử lý việc cấp phát chứng chỉ SSL.
 - Hostinger thường cung cấp chứng chỉ SSL miễn phí thông qua AutoSSL.
 - Bạn có thể quản lý chứng chỉ SSL trực tiếp trong hPanel tại mục **SSL/TLS**.
 - Hoặc, sử dụng Let's Encrypt với tính năng AutoSSL của Hostinger.
 
-## Hỗ trợ
+## Hỗ trợ {#support}
 
 Để được trợ giúp thêm về tích hợp Hostinger, vui lòng tham khảo:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

@@ -3,18 +3,18 @@ title: Abilitates Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Capacitates Thematic Builder: Scaffolding and Activating Block Themes
+# Capacitates Thematic Builder: Scaffolding and Activating Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduce duos potentiae quae te permittunt generare et deployare themas bloc customibus directum ex interface chat.
 
-## Visio Generalis
+## Visio Generalis {#overview}
 
 Capacitates **scaffold-block-theme** et **activate-theme** permittunt agentes ut:
 - Themas bloc completas, ad productionem aptas, ex specificationibus tuis genereant
 - Themas automatico in sit tuo activant sine interventione manuali
 - Identitates visuelles cohaerentium per decisiones designitatis guidatas creant
 
-## Scaffold Thema Bloc
+## Scaffold Thema Bloc {#scaffold-block-theme}
 
 Capacitas **scaffold-block-theme** novum theme bloc WordPress generat cum structura themae completa, inclusa:
 
@@ -23,7 +23,7 @@ Capacitas **scaffold-block-theme** novum theme bloc WordPress generat cum struct
 - Stylos et variationes blocorum customarum
 - Metadatum themae et declarationes supporti
 
-### Quomodo Invocaris
+### Quomodo Invocaris {#how-to-invoke}
 
 In conversatione tua cum Superdav AI Agent, potes petere generationem themae:
 
@@ -38,7 +38,7 @@ Agent generabit:
 3. Omnes necessarias files themae creabit
 4. Themam ad activation preprare
 
-### Output Expectatus
+### Output Expectatus {#expected-output}
 
 Cum capacitas successiva executur, vides:
 
@@ -56,11 +56,11 @@ Exemplum output:
   Status: Paratus ad activationem
 ```
 
-## Activare Thema
+## Activare Thema {#activate-theme}
 
 La capacidad de **activate-theme** cambia tu sitio a un tema de bloques recién creado o existente.
 
-### Cómo Invocarlo
+### Cómo Invocarlo {#how-to-invoke-1}
 
 Después de crear un tema, puedes activarlo inmediatamente:
 
@@ -74,7 +74,7 @@ O activar cualquier tema existente:
 "Cambiar al tema Twentytwentyfour"
 ```
 
-### Resultado Esperado
+### Resultado Esperado {#expected-output-1}
 
 Cuando la activación tiene éxito:
 
@@ -92,7 +92,7 @@ Ejemplo de resultado:
   Nota: Revisa tu página de inicio para verificar el diseño
 ```
 
-## Flujo de Trabajo: Crear y Activar
+## Flujo de Trabajo: Crear y Activar {#workflow-scaffold-and-activate}
 
 Un flujo de trabajo típico combina ambas capacidades:
 
@@ -102,7 +102,7 @@ Un flujo de trabajo típico combina ambas capacidades:
 4. **Activar**: "Activar el tema ahora"
 5. **Verificar**: Visitar tu sitio para confirmar que el nuevo diseño está en vivo
 
-## Tokens de Diseño y Personalización
+## Tokens de Diseño y Personalización {#design-tokens-and-customization}
 
 Los temas creados con scaffold utilizan tokens de diseño de WordPress (a través de `theme.json`) para:
 
@@ -114,14 +114,14 @@ Los temas creados con scaffold utilizan tokens de diseño de WordPress (a travé
 
 Estos tokens están centralizados en `theme.json`, lo que facilita ajustar todo tu sistema de diseño desde un solo archivo.
 
-## Limitaciones y Notas
+## Limitaciones y Notas {#limitations-and-notes}
 
 - Temi sunt structurati în `/wp-content/themes/` și trebuie să urmeze convențiile de numire ale WordPress
 - Activarea necesită permisiuni adecvate pe site-ul tău WordPress
 - Cod PHP personal în teme este minim; folosește plugin-uri pentru funcționalități complexe
 - Temele bazate pe bloc funcționează cel mai bine cu WordPress 5.9 și versiuni ulterioare
 
-## Depanare
+## Depanare {#troubleshooting}
 
 **Tema nu apare după structurare (scaffolding)**
 - Verifică dacă directorul temei există și are permisiuni corecte
@@ -138,7 +138,7 @@ Estos tokens están centralizados en `theme.json`, lo que facilita ajustar todo 
 - Curăță orice plugin de caching
 - Verifică dacă versiunea ta de WordPress suportă token-urile pe care le folosești
 
-## Pași Următori
+## Pași Următori {#next-steps}
 
 După activarea temei, poți:
 - Folosi abilitatea **Design System Aesthetics** pentru a rafina tipografia, culorile și spațiile

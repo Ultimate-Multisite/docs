@@ -3,13 +3,13 @@ title: An t-aistriú an Chonstant Órra ar Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Déanáil an constant Sunrise ar fáil ar Closte
+# Déanáil an constant Sunrise ar fáil ar Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Tá curteoirí host chuidithe a laithreacha i bhfáine seo mar chuid de chuid séurtiúil. Is é sin, ní féidir le Ultimate Multisite a bheith ag éidíochtadh an cilg (file) chun an constantí ag fáil ar fáil chun mapáil domáin agus feichar eile a bheith ag eanglaigh. Closte is curteoir sin.
 
 Mar sin féin, téann Closte le curte a chur ar fáil chun constantí a chleachtú i wp-config.php ar fáil ar fáil ar fáil. Bíodh an t-amás agat go bhfuil tú ag déanamh an t-amach seo:
 
-## Ar d'fhéidir Closte
+## Ar d'fhéidir Closte {#on-the-closte-dashboard}
 
 Ar anois, [lograigh do chontacht Closte](https://app.closte.com/), cliceáil ar an meán Sites, agus ansin cliceáil ar an link Dashboard ar an site a bhfuil tú ag déanamh ar aghaidh:
 

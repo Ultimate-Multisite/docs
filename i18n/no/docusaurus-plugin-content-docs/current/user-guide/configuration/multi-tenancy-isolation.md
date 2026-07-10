@@ -3,11 +3,11 @@ title: Multi-tenancy isolasjon
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-leieksisolerte
+# Multi-leieksisolerte {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 støtter per-subsite database- og filsystemisolering for suverene leietakere. Dette holder kundedata adskilt samtidig som nettverksnivå-provisionering, fakturering og administrasjon opprettholdes.
 
-## Isoleringsstrategi
+## Isoleringsstrategi {#isolation-strategy}
 
 Bruk suveren isolering for kunder som krever sterkere dataseparasjon, dedikert filsystemlagring eller en separat hostgrense.
 
@@ -18,7 +18,7 @@ Hver suveren leietaker skal ha:
 - En leietakerregistreringsinnføring som kartlegger nettstedet til databasen, rotstien, vertsnavnet og isolasjonsmodellen.
 - Et migrasjonsverifiseringsresultat før leietaker anses som aktiv.
 
-## Databasehostbinding
+## Databasehostbinding {#database-host-binding}
 
 Versjon 1.2.0 endrer standard oppførselen for hostbinding på samme maskin for suverene installasjoner. Samme-maskinverdier som `localhost` normaliseres slik at Bedrock, FrankenPHP og containeriserte WordPress-installasjoner kan gi og verifisere tillatelser mot den MySQL-strengen som faktisk sees av hosten.
 
@@ -31,11 +31,11 @@ Når du konfigurerer en suveren leietaker:
 
 Hvis verifiseringen rapporterer tillatelsesfeil, sammenlign leietakers DB-brukerrettigheter med den konfigurerte hostbindingen. En bruker gitt for `user@localhost` er annerledes enn `user@127.0.0.1` eller `user@%`.
 
-## Filsystemrot
+## Filsystemrot {#filesystem-root}
 
 Tenant rooten skal være stabile på tvers av oppstart og utrulling. Unngå midlertidige monteringsstier. For Bedrock-stil installasjoner, bekreft at tenant root peker på WordPress webroten som tenant bootstrap forventer, ikke bare prosjektroten.
 
-## Opprettingsrekkefølge
+## Opprettingsrekkefølge {#provisioning-order}
 
 For nye suverene tenants bruk denne rekkefølgen:
 
@@ -49,7 +49,7 @@ For nye suverene tenants bruk denne rekkefølgen:
 
 Denne rekkefølgen forhindrer delvis isolerte tenants i å motta trafikk før databaseforfatteren, brukerne og filsystemet er klare.
 
-## Flyt for håndtering av suverene kunder
+## Flyt for håndtering av suverene kunder {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 holder kundehandlingsfunksjoner på hovedsiden når suveren modus er aktivert. En tenant kan fortsatt kjøre som en isolert WordPress-installasjon, men kundevendte handlinger som avhenger av nettbasert fakturering, medlemskap eller delt kontodata bør sende kunden tilbake til hovedsiden i stedet for å prøve å fullføre handlingen inne i tenant runtime.
 

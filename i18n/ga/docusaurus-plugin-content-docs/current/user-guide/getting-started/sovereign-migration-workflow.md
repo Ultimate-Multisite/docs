@@ -3,11 +3,11 @@ title: Fluach na gCruthú Sovereigne |
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Míseartú Sovereing
+# Workflow Míseartú Sovereing {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade gorteacha de archeálach (verification gates) do mísseartú mar chuidte standard go dtíne infrastructure sovereign tenant.
 
-## Beo leat a thaispeá
+## Beo leat a thaispeá {#before-you-start}
 
 Cén fáth a bhfuil tú ag cur isteach:
 
@@ -17,7 +17,7 @@ Cén fáth a bhfuil tú ag cur isteach:
 - An binding host database a bhaineann le an ardán (environment) an t-aonach.
 - A ghrá (access) chun WP-CLI commands a chur ar fáil do netwerg.
 
-## Workflow curtha ar fáil
+## Workflow curtha ar fáil {#recommended-workflow}
 
 1. Déan ar fáil an database tenant agus an filesystem.
 2. Rinnseáil nó athrú ar chuidais aislaidh (isolation settings).

@@ -3,13 +3,13 @@ title: હોસ્ટિંગર મલ્ટિ-ટેનન્સી
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 मध्ये Hostinger multi-tenancy क्षमता जोडली आहे, ज्यामुळे होस्ट केलेल्या डोमेन विद्यमान Hostinger डोमेन मॅपिंग इंटिग्रेशनसोबत सॉवरेन टेनंट प्रोविजिनेशनमध्ये सहभागी होऊ शकतात.
 
 जेव्हा तुम्ही टेनंट डोमेन आणि वेगळे टेनंट इन्फ्रास्ट्रक्चर Hostinger hPanel द्वारे व्यवस्थापित करता तेव्हा ही क्षमता वापरा.
 
-## सेटअप नोट्स
+## सेटअप नोट्स {#setup-notes}
 
 १. **Ultimate Multisite > Settings > Host Integrations** मध्ये मुख्य Hostinger इंटिग्रेशन कॉन्फिगर करा.
 २. Hostinger API टोकन लक्ष्य डोमेन किंवा सबडोमेन व्यवस्थापित करू शकतो की नाही हे तपासा.
@@ -19,14 +19,14 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 मध्ये Hostinger multi-tenancy 
 
 Hostinger क्षमता होस्ट-साइड ऑपरेशन्ससाठी सामायिक Hostinger कनेक्शन वापरते. DNS अजूनही योग्य Hostinger खात्याकडे निर्देशित केले पाहिजे, आणि hPanel खात्याच्या मर्यादा लागू राहतील.
 
-## क्षमता-विशिष्ट बदल
+## क्षमता-विशिष्ट बदल {#capability-specific-changes}
 
 - सॉवरेन टेनंट्स होस्ट-जागरूक डोमेन ऑपरेशन्ससह तयार करता येतात.
 - मान्यता (grant verification) देण्यापूर्वी सेम-मशीन डेटाबेस होस्ट स्ट्रिंग्सचे सामान्यीकरण (normalize) केले जाते.
 - WordPress रनटाइमला स्थानिक ओव्हरराइडची आवश्यकता नसल्यास, Hostinger-व्यवस्थापित टेनंट्स hPanel मध्ये दर्शविलेले डेटाबेस होस्ट व्हॅल्यू वापरणे आवश्यक आहे.
 - SSO भेटीसाठी (SSO visits) टेनंट डोमेन Hostinger-होस्ट केलेल्या टेनंटवर रिझॉल्व्ह झाल्यावर अवलंबून असते.
 
-## Hostinger टेनंट्सचे निराकरण (Troubleshooting)
+## Hostinger टेनंट्सचे निराकरण (Troubleshooting) {#troubleshooting-hostinger-tenants}
 
 - जर टेनंट इन्स्टॉल अयशस्वी झाला, तर डोमेन Hostinger खात्याला आधीच जोडलेले आहे की नाही हे तपासा.
 - जर डेटाबेस व्हेरिफिकेशन अयशस्वी झाला, तर hPanel सोबत टेनंट DB युजरनेम, डेटाबेसचे नाव आणि होस्ट बाइंडिंगची तुलना करा.

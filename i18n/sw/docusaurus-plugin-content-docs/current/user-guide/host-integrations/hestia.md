@@ -3,28 +3,28 @@ title: Ujumuishaji wa Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Kuunganisha na Hestia Control Panel
+# Kuunganisha na Hestia Control Panel {#hestia-control-panel-integration}
 
 Mwongozo huu unaeleza jinsi ya kusanidi uunganisho wa Ultimate Multisite na Hestia ili domain zilizounganishwa kwenye mtandao wako ziongezwe (na kuondolewa) kiotomatiki kama Web Domain Aliases kwenye Hestia.
 
 - Marejeo ya Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Nyaraka rasmi za REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Inafanya Nini
+## Inafanya Nini {#what-it-does}
 - Domain inapounganishwa kwenye Ultimate Multisite, uunganisho huu unaita Hestia API kuendesha:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Uunganisho wa domain unapoondolewa, inaendesha:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Kwa hiari huongeza/kuondoa alias ya `www.` kulingana na mipangilio yako ya "Auto-create www subdomain" kwenye mipangilio ya Domain Mapping.
 
-## Mahitaji ya Awali
+## Mahitaji ya Awali {#prerequisites}
 - Web Domain ya Hestia iliyopo tayari inayoelekeza kwenye usakinishaji wako wa WordPress. Uunganisho huu utaambatanisha aliases kwenye domain hii ya msingi.
 - Ufikiaji wa Hestia API umewashwa. Unaweza kuthibitisha kwa kutumia nenosiri au API hash/token.
 
 Angalia nyaraka za REST API za Hestia kwa kuwasha ufikiaji wa API na maelezo ya uthibitishaji:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Usanidi (Wizard → Integrations → Hestia)
+## Usanidi (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Weka thamani zifuatazo:
 
 - `WU_HESTIA_API_URL` (lazima)
@@ -42,16 +42,16 @@ Weka thamani zifuatazo:
 
 Unaweza kuruhusu wizard kuingiza constants hizi kwenye `wp-config.php`, au uzifafanue mwenyewe.
 
-## Kuthibitisha Usanidi
+## Kuthibitisha Usanidi {#verifying-setup}
 - Katika hatua ya "Testing" ya wizard, plugin inaita `v-list-web-domains <WU_HESTIA_ACCOUNT> json` kupitia API. Jibu la mafanikio linathibitisha muunganisho na uthibitishaji.
 - Baada ya kuunganisha domain, angalia kwenye Hestia: Web > domain ya msingi > Aliases. Unapaswa kuona alias mpya imeongezwa.
 
-## Vidokezo na Ushauri
+## Vidokezo na Ushauri {#notes--tips}
 - Hakikisha `WU_HESTIA_WEB_DOMAIN` ipo tayari na inamilikiwa na `WU_HESTIA_ACCOUNT`.
 - Ikiwa SSL inahitajika, simamia vyeti kwenye Hestia. Uunganisho huu kwa sasa unashughulikia aliases pekee.
 - Plugin inaweza pia kuongeza/kuondoa `www.<domain>` kulingana na mipangilio yako ya "www subdomain" kwenye Domain Mapping.
 
-## Mfano wa API Call (cURL)
+## Mfano wa API Call (cURL) {#example-api-call-curl}
 Hapa chini ni mfano wa dhana (rekebisha kulingana na mazingira yako). Rejea nyaraka rasmi kwa vigezo halisi.
 
 ```
@@ -70,11 +70,11 @@ cmd=v-add-web-domain-alias
 
 Kwa kufuta, tumia `cmd=v-delete-web-domain-alias` na hoja sawa.
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 - Hitilafu ya HTTP kutoka API: thibitisha `WU_HESTIA_API_URL` inaweza kufikiwa na inajumuisha `/api`.
 - Hitilafu za uthibitishaji: thibitisha `WU_HESTIA_API_USER` na ama `WU_HESTIA_API_PASSWORD` au `WU_HESTIA_API_HASH`.
 - "Missing account/base domain" kwenye kumbukumbu: hakikisha `WU_HESTIA_ACCOUNT` na `WU_HESTIA_WEB_DOMAIN` zimewekwa na ni halali kwenye Hestia.
 
-## Marejeo
+## Marejeo {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Marejeo ya Hestia CLI (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

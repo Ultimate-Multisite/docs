@@ -3,13 +3,13 @@ title: Planı aşağı salmaq
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planı aşağı salmaq (v2)
+# Planı aşağı salmaq (v2) {#downgrading-a-plan-v2}
 
 _**MÜHİM QEYD: Bu məqalə Ultimate Multisite versiya 2.x-ə aiddir.**_
 
 Planı və ya abunəlik xidmətini aşağı salmaq, müştərilərin məhdud büdcası olduğu və ya subsite-larını işlətmək üçün çox resurslara ehtiyacı olmayacağına qərar verdiyi hallarda rast gəlinə bilən bir vəziyyətdir.
 
-## Planı necə aşağı salmaq olar
+## Planı necə aşağı salmaq olar {#how-to-downgrade-a-plan}
 
 Müştərilər istənilən vaxt subsite admin dashboard-una daxil olaraq və hesab səhifələrindəki **Change** düyməsinə klikləyərək planlarını aşağı sala bilərlər.
 
@@ -25,7 +25,7 @@ Bu nümunədə, planı **Premium**-dan **Free**-yə aşağı sala biləcəyimizi
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### İstifadəçi planını aşağı saldıqda nə baş verir
+### İstifadəçi planını aşağı saldıqda nə baş verir {#what-happens-when-a-user-downgrades-their-plan}
 
 Planı aşağı salmaq, istifadəçinin subsite-ındakı mövcud konfiqurasiyanı dəyişmədiyini qeyd etmək vacibdir.
 
@@ -37,7 +37,7 @@ Planda təyin edilmiş limitdən artıq olan postlar üçün 3 fərqli seçimini
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ödənişə nə olur
+### Ödənişə nə olur {#what-happens-to-the-payment}
 
 2.0 versiyasında, ödənişlə bağlı xüsusi bir tənzimləməyə ehtiyac qalmır.
 

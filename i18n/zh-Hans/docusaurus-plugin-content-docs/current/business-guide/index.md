@@ -3,13 +3,13 @@ title: 建立一个利基网站业务
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# 构建利基网站业务：Ultimate Multisite
+# 构建利基网站业务：Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 大多数尝试销售网站的人都在价格上与 Wix、Squarespace 和成千上万的自由职业者竞争。他们会失败。成功的卖家会选择一个特定的受众群体，为该群体量身打造解决方案，然后根据所提供的价值收费。
 
 本课程将教您如何使用 Ultimate Multisite 做到这一点。
 
-## 您将构建什么
+## 您将构建什么 {#what-you-will-build}
 
 在本课程中，您将构建一个真实、可运行的网络平台，名为 **FitSite**——一个专门为健身工作室、私人教练和健身房所有者构建的网站平台。
 
@@ -23,7 +23,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 您将一步步跟随学习，到最后，您不仅拥有了一个可运行的平台，还掌握了将该流程复制到任何您选择的利基领域的知识。
 
-## 为什么选择健身工作室？
+## 为什么选择健身工作室？ {#why-fitness-studios}
 
 我们需要一个任何人都能跟进的具体例子。健身工作室之所以成功，是因为：
 
@@ -34,7 +34,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 您在构建 FitSite 所学到的所有知识，都直接适用于您选择的任何利基领域：餐厅、房地产经纪人、律师事务所、教堂、贸易承包商，或任何其他垂直行业。
 
-## 课程结构
+## 课程结构 {#course-structure}
 
 每一课都会介绍一个概念，解释它为什么重要，并指导您如何在 FitSite 网络中实现它。每一课都建立在前一课的基础上。
 
@@ -55,7 +55,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 | [13. 规模化发展](lesson-13-growth) | 从第一批客户发展成真正的业务 | FitSite 增长和自动化策略 |
 | [14. 后续步骤](lesson-14-whats-next) | 扩展到相邻利基市场和新机会 | 您超越 FitSite 的路线图 |
 
-## 前提条件
+## 前提条件 {#prerequisites}
 
 - 一个 WordPress Multisite 安装（或愿意设置一个）
 - 一个有效的 Ultimate Multisite 许可证
@@ -63,6 +63,6 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 无需编写代码。如果您从未用过 Ultimate Multisite，也没关系——第 3 课将从全新安装开始。
 
-## 准备好了吗？
+## 准备好了吗？ {#ready}
 
 从 [第 1 课：为什么利基胜出](lesson-1-why-niche) 开始。

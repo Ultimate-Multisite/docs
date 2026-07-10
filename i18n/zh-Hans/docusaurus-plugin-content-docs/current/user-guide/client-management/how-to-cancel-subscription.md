@@ -3,7 +3,7 @@ title: 如何取消订阅
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# 如何取消我的订阅？
+# 如何取消我的订阅？ {#how-can-i-cancel-my-subscription}
 
 如果您拥有 Ultimate Multisite 许可证，您可以随时取消其续订。只需按照以下步骤操作：
 

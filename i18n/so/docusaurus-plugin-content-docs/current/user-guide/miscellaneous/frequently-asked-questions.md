@@ -3,7 +3,7 @@ title: Su'aalo caawin ah oo la weydiiyo si joogto ah
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Su'aalada Caadiga ah (Frequently Asked Questions)
+# Su'aalada Caadiga ah (Frequently Asked Questions) {#frequently-asked-questions}
 
 Halkan waxaa ku jira su'aalo caadi ah oo inta badan soo baxda marka la codsado taageero.
 

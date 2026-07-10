@@ -3,11 +3,11 @@ title: Kammalawa da Karshewar Bijarwa da Baka Iduk Wurin
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Faiye da Awashewa da Baka Wurin Gida
+# Faiye da Awashewa da Baka Wurin Gida {#membership-expiration-and-site-blocking}
 
 Wannan hoto yana bayanin yadda Ultimate Multisite ke kula da ƙarewar samun kuɗi (membership expiration), ƙarshen gwaji (trial endings), da kuma hana wajen gidan sarai (frontend site blocking). Yana nuna duk rayuwancin samun kuɗi daga matsayi na aiki zuwa na ƙarewa, tsarin da ke sarrafa ko za a hana wuraren gida, da abubuwan da ya kamata a bincika idan wuraren gida suna nan ba bayan ƙarewar samun kuɗi.
 
-## Rayuwancin Matsayin Samun Kuɗi (Membership Status Lifecycle)
+## Rayuwancin Matsayin Samun Kuɗi (Membership Status Lifecycle) {#membership-status-lifecycle}
 
 Kowane samun kuɗi a Ultimate Multisite yana ɗaya daga cikin waɗannan matsayin:
 
@@ -24,7 +24,7 @@ Samun kuɗi na dandano ba zai ƙare ko ya yi ƙarewa ne ba ta zahiri. Ultimate M
 | **Expired** | Ya wuce ran ƙarewar samun kuɗi da lokacin gafara ba tare da sake samun kuɗi ba |
 | **Cancelled** | An ragarwa shi kai tsaye daga abokin ciniki ko administrator |
 
-### Yadda Samun Kuɗi ke Canza zuwa Expired (Ƙarewa)
+### Yadda Samun Kuɗi ke Canza zuwa Expired (Ƙarewa) {#how-memberships-transition-to-expired}
 
 Ultimate Multisite yana yin bincike na baya **kowa sa'a** don nemo samunan kuɗi da ya kamata a yi masa ƙarewar. Wannan bincike yana amfani da [Action Scheduler](https://actionscheduler.org/) (ba ne WP-Cron kai tsaye) kuma yana tafiya a matsayin `wu_membership_check` scheduled action.
 
@@ -34,7 +34,7 @@ Binciken ƙarewar samun kuɗi yana da **lokacin gafara na 3 sa'o'i** ba tare da 
 ماکساɗin 3-sanyi na la'ada (grace period) yana da wuri daban daga sanyin la'ada na Blokinta Gaba (Frontend Block Grace Period) da aka bayyana a ƙasa. Sanyin la'ada na la'ada yana sarrafa lokacin da **bayani ya canza** daga active/on-hold zuwa expired. Sanyin la'ada na blokinta gaba yana sarrafa lokacin da **an hana wajen shiga** bayan bayanin ya canza.
 :::
 
-#### Samun Girmamawa Mai Tana Gyara Sau In Ji (Auto-Renewing vs. Non-Auto-Renewing Memberships)
+#### Samun Girmamawa Mai Tana Gyara Sau In Ji (Auto-Renewing vs. Non-Auto-Renewing Memberships) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Wannan bambanci yana da mahimmanci don fahimtar yadda la'adaru ke tafiya:
 
@@ -42,7 +42,7 @@ Wannan bambanci yana da mahimmanci don fahimtar yadda la'adaru ke tafiya:
 
 - **Samun girmamawa mai gyara sau in ji** (`auto_renew = true`): Binciken la'adaren cron na la'ada **yana tsayawa shi nan duka**. An karatun hanyar samun kuɗi (Stripe, PayPal, da sauransu) an tsammanin ya san Ultimate Multisite ta hanyar webhooks idan wani sabon samun girmamawa ya yi nasara ko a saba. Idan ba a samu wannan webhook ba—saboda wajen ƙirƙirar endpoint mai rashin daidai, matsalar wajen samun kuɗi, ko kuma an ci gaba da shiga bayan an ragarawa daga tsarin—samun girmamawa na iya zama `active` har abada bayan wajen la'ada ya wuce.
 
-### Yadda Ake Kasa Shiga (How Trials End)
+### Yadda Ake Kasa Shiga (How Trials End) {#how-trials-end}
 
 Idan lokacin gwaji na samun girmamawa ya ƙare, tsarin yana yin hakan:
 
@@ -52,11 +52,11 @@ Idan lokacin gwaji na samun girmamawa ya ƙare, tsarin yana yin hakan:
 
 Wannan tsari yana tafiya da shaidin sa'a guda ɗaya kamar binciken la'ada na yau da kullum, amma **yalayin samun girmamawa ba mai gyara sau in ji**. Don gwajin samun girmamawa mai gyara sau in ji, hanyar samun kuɗi (payment gateway) ita ce tana gudanar da canjin daga gwaji zuwa samun girmamawa mai biya.
 
-## Hanjewa ga Shiga na Gaba (Block Frontend Access)
+## Hanjewa ga Shiga na Gaba (Block Frontend Access) {#block-frontend-access}
 
 به طور پیش‌فرض، وقتی عضویت منقضی می‌شود یا به حالت تعلیق می‌رود، **فقط داشبورد wp-admin محدود می‌شود**. بخش عمومی سایت برای بازدیدکنندگان همچنان قابل دسترسی است. برای مسدود کردن دسترسی عمومی، باید تنظیم **Block Frontend Access** را فعال کنید.
 
-### پیکربندی تنظیمات
+### پیکربندی تنظیمات {#configuring-the-setting}
 
 به مسیر **Ultimate Multisite > Settings > Memberships** بروید و گزینه **Block Frontend Access** را فعال کنید.
 
@@ -74,7 +74,7 @@ Wannan tsari yana tafiya da shaidin sa'a guda ɗaya kamar binciken la'ada na yau
 | **Frontend Block Grace Period** | تعداد روزهایی که باید منتظر بمانید بعد از غیرفعال شدن عضویت قبل از مسدود کردن. برای مسدود کردن فوری روی `0` تنظیم کنید. | 0 |
 | **Frontend Block Page** | صفحه‌ای در سایت اصلی که بازدیدکنندگان به آن هدایت می‌شوند وقتی یک سایت مسدود می‌شود. اگر تنظیم نشود، بازدیدکنندگان پیام عمومی "این سایت در حال حاضر در دسترس نیست" را می‌بینند. | None |
 
-### بازدیدکنندگان هنگام مسدود شدن سایت چه چیزی می‌بینند
+### بازدیدکنندگان هنگام مسدود شدن سایت چه چیزی می‌بینند {#what-visitors-see-when-a-site-is-blocked}
 
 وقتی دسترسی فرانت‌اند مسدود می‌شود، بازدیدکنندگان از سایت یا:
 
@@ -83,7 +83,7 @@ Wannan tsari yana tafiya da shaidin sa'a guda ɗaya kamar binciken la'ada na yau
 
 مدیران سایت همچنان می‌توانند وارد شوند -- صفحه ورود هرگز مسدود نمی‌شود.
 
-### چه چیزی مسدود می‌شود و چه زمانی
+### چه چیزی مسدود می‌شود و چه زمانی {#what-gets-blocked-and-when}
 
 رفتار مسدودسازی به وضعیت عضویت بستگی دارد:
 
@@ -104,21 +104,21 @@ Kamar yadda aka bayyana, ko da wani lokacin gwaji ya ƙare, hayata mai matsayin 
 Hayoyin cancelled an rufe koyaushe bayan wajen ƙarewar lokacin samun hayata, ko Block Frontend Access tana aiki ko ba. Adadin zaman na Block Grace Period ba ya shafi hayoyin cancelled.
 :::
 
-## Magance Matsala: Wurin da Sites ke Aiki Ba BayanƘarewa
+## Magance Matsala: Wurin da Sites ke Aiki Ba BayanƘarewa {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Idan sites suna nan don jama'a bayan hayata suka ƙare, ku yi bincike waɗannan abubuwan da aka bayyana a wannan tsari:
 
-### 1. Bincika Cewa Tsarin Block Frontend Access Tana Aiki
+### 1. Bincika Cewa Tsarin Block Frontend Access Tana Aiki {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Tuntuɓi **Ultimate Multisite > Settings > Memberships** kuma tabbatar cewa wajen aiki (toggle) na **Block Frontend Access** tana aiki. Wannan tsarin **ba ya kasance aiki a farko**, wanda ke nufin kawai wp-admin zai iya ruwa lokacin da hayata ta yi rashin aiki.
 
-### 2. Bincika Adadin Zaman na Block Grace Period
+### 2. Bincika Adadin Zaman na Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 همین صفحه تنظیمات رو چک کنید و مقدار **Frontend Block Grace Period** رو ببینید. اگه این رو روی ۷ روز گذاشته باشید، مثلاً، فرانت‌اند تا ۷ روز بعد از تاریخ انقضای عضویت مسدود نخواهد شد -- حتی اگر وضعیت عضویت قبلاً `expired` (منقضی شده) باشه.
 
 اگه می‌خواید بلافاصله بعد از غیرفعال شدن عضویت مسدود بشه، این مقدار رو روی `0` تنظیم کنید.
 
-### ۳. مطمئن شوید که وضعیت عضویت واقعاً تغییر کرده است
+### ۳. مطمئن شوید که وضعیت عضویت واقعاً تغییر کرده است {#3-confirm-the-membership-status-has-actually-changed}
 
 به **Ultimate Multisite > Memberships** بروید و وضعیت عضویت مربوطه رو چک کنید. اگه با وجود اینکه تاریخ انقضا گذشته، هنوز وضعیتش `active` (فعال) نشون می‌ده، یعنی تغییر وضعیت اتفاق نیفتاده. دلایل رایج این‌ها:
 
@@ -126,7 +126,7 @@ Tuntuɓi **Ultimate Multisite > Settings > Memberships** kuma tabbatar cewa waje
 
 - **وظیفه کرون اجرا نشده**: به مرحله بعد بروید.
 
-### ۴. بررسی کنید Action Scheduler در حال اجرا است
+### ۴. بررسی کنید Action Scheduler در حال اجرا است {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite از Action Scheduler برای کارهای زمان‌بندی شده (cron jobs) استفاده می‌کنه. به بخش **Tools > Scheduled Actions** در مدیریت شبکه (network admin) بروید و دنبال این موارد بگردید:
 
@@ -148,7 +148,7 @@ Don tabbatar da aiki mai inganci na cron, ka shirya aikin cron na tsarin:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Bincika Matala Gateway Webhook (Auto-Renewing Memberships)
+### 5. Bincika Matala Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Idan samun kuɗin auto-renew yana tafiya kuma an ci gaba da tsarin gateway ko ya yi nasara, amma Ultimate Multisite yau da kullum yana nuna shi a matsayin `active`:
 
@@ -157,13 +157,13 @@ Idan samun kuɗin auto-renew yana tafiya kuma an ci gaba da tsarin gateway ko ya
 
 Idan gateway yana nuna cewa an ci gaba da tsari amma Ultimate Multisite ba shi, wannan saƙon webhook ya lalace. Za ka iya canza yanayin samun kuɗi kai tsaye a **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Bincika Wannan Lokacin Kasala (Cron Level)
+### 6. Bincika Wannan Lokacin Kasala (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 Binciken cron yana da wani lokacin kasala (default: rana 3) kafin ya nuna samun kuɗi ya ƙare. Wannan yana da alaƙa da lokacin kasala na blokar gaba (frontend block grace period). Lokacin da za a iya hana shafin zai zama:
 
 **Lokacin kasala na ƙare (rana 3)** + **Lokacin kasala na blokar gaba (tsarin ka)** = Jinkirin da ya wuce
 
-### 7. rękamanin status awhaɗa
+### 7. rękamanin status awhaɗa {#7-manually-expire-a-membership}
 
 Idan kana so ka hana wuri nan nan ba tare da jira cikakken tsarin cron ba, za ka iya canza yanayin aiki na samun kuɗi (membership) kai tsaye:
 
@@ -174,7 +174,7 @@ Idan kana so ka hana wuri nan nan ba tare da jira cikakken tsarin cron ba, za ka
 
 Hana hana aiki na gaba (frontend block) zai fara aiki nan lokacin da aka buɗe shafi na gaba na gaba (next page load) (wannan ya dogara kan wani tsari na jiran hana aiki na gaba ga samun kuɗi mai ƙarewa, ko nan nan idan an cancel shi).
 
-## Bayani
+## Bayani {#summary}
 
 Tsarin gaba daga ranar ƙarewar samun kuɗi zuwa hana aikin wuri:
 
@@ -206,7 +206,7 @@ Don samun kuɗi da an cancel shi, hanyar ta ƙarshe:
   Hana aikin gaba na wuri ya yi nan nan
 ```
 
-## Bayanin Masanin Kimiyya (Developer Reference)
+## Bayanin Masanin Kimiyya (Developer Reference) {#developer-reference}
 
 Wannan hooks da filters suna ba ka damar canza yadda ƙarewar samun kuɗi da hana aiki ke tafiya:
 

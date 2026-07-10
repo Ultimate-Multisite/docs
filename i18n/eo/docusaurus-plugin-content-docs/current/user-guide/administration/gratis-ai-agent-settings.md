@@ -1,105 +1,152 @@
 ---
-title: Gratis AI Agenta Estonoj
+title: Agordoj de Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Libera AI Agent Parametrajn
+# Gratis AI Agent Agordoj {#gratis-ai-agent-settings}
 
-La skrin **Settings → Advanced** en Gratis AI Agent donas administrator-nivel konfiguracion por backend integracioj introducitaj en v1.5.0. Esta lua pagina dokumentas la kampeloj de la **Feedback Endpoint** kaj sian esperita formato.
+La ekrano **Agordoj → Altnivela** en Gratis AI Agent provizas administrant-nivelan agordon por backend-integriĝoj. Ĉi tiu paĝo dokumentas plusendadon de reagoj, ŝlosilojn de serĉprovizantoj, agordon de administrata Superdav-servo, regilojn de Google Calendar, SMS-agordojn de TextBee, kaj tutretajn funkciajn flagojn.
 
-## Aliri al Parametrajn
+## Aliri Agordojn {#accessing-settings}
 
-1. En la WordPress admin, diru al **Gratis AI Agent → Settings**.
-2. Kliku surti la tab **Advanced**.
+1. En la WordPress-administrilo, iru al **Gratis AI Agent → Agordoj**.
+2. Alklaku la langeton **Altnivela**.
 
-## Konfiguracio de Feedback Endpointo
+## Agordo de Reaga Finpunkto {#feedback-endpoint-configuration}
 
-La feedback endpoint rice POST petojn de la AI agent kiam iu submetas feedback per la butono "thumbs-down", la auto-prompt banner, aŭ la komando `/report-issue`.
+La reaga finpunkto ricevas POST-petojn de la AI agent kiam ajn uzanto sendas reagon per la dikfingro-malsupren-butono, la aŭtomata invita rubando, aŭ la komando `/report-issue`.
 
-| Campo | Deskribado |
+| Kampo | Priskribo |
 |---|---|
-| **Feedback Endpoint URL** | La URL kiu ricevas feedback submetoj kiel HTTP POST petojn kun JSON corpo. |
-| **Feedback API Key** | Un bearer token sendita en la `Authorization` header de ĉiu feedback peto. Laboru blanka, se via endpoint ne postulas autentifikadon. |
+| **URL de Reaga Finpunkto** | La URL kiu ricevas reagajn sendojn kiel HTTP POST-petojn kun JSON-korpo. |
+| **Feedback API Key** | bearer token sendita en la `Authorization` header de ĉiu reaga peto. Lasu malplena se via finpunkto ne postulas aŭtentikigon. |
 
-### Esperita JSON Payload
+### Atendata JSON-Ŝarĝo {#expected-json-payload}
 
-Via feedback endpoint devas akcepti JSON korpon kun almenaŭ la seguenti kampoj:
+Via reaga finpunkto devas akcepti JSON-korpon kun almenaŭ la jenaj kampoj:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "La respondo estis malbona pri preco.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Alian kampoj povas esti prezentita en la payload dependante de la konteksto de la konversacio.
+Pliaj kampoj povas ĉeesti en la ŝarĝo depende de la kunteksto de la konversacio.
 
-### Valoj de `triage_category`
+### Valoroj de `triage_category` {#triagecategory-values}
 
-La AI triage capa donas unu el la sekvaj valoj al `triage_category` antaŭ transmeti la payload:
+La AI-taksada tavolo asignas unu el la jenaj valoroj al `triage_category` antaŭ plusendado de la ŝarĝo:
 
-| Valo | Signifo |
+| Valoro | Signifo |
 |---|---|
-| `factual_error` | La asistanto donis maljustan fakton informojn. |
-| `unhelpful_answer` | La respondo estis teknike ĝusta, sed ne utile. |
-| `inappropriate_content` | La respondo enhavis konton, kiun ne devas esti montrita al uzantoj. |
-| `other` | La feedback ne coincidis kun konata kategorio. |
+| `factual_error` | La asistanto provizis malĝustajn faktajn informojn. |
+| `unhelpful_answer` | La respondo estis teknike ĝusta sed ne utila. |
+| `inappropriate_content` | La respondo enhavis enhavon kiu ne devus esti montrata al uzantoj. |
+| `other` | La reago ne kongruis kun konata kategorio. |
 
-### Autentifikado
+### Aŭtentikigo {#authentication}
 
-Se ies vostra endpoint autentikaciu bezrequiri, statuante lajnujejte lajoną **Feedback API Key** la vostra bearer token. Agenṭo pradod:
+Se via finpunkto postulas aŭtentikigon, agordu la kampon **Feedback API Key** al via bearer token. La agent sendas:
 
 ```
-Authorization: Bearer <votre-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Jei lajnuja **Feedback API Key** lajuna, ne si pradod linko `Authorization`.
+Se la kampo **Feedback API Key** estas malplena, neniu `Authorization` header estas sendita.
 
-### Dezaktivado Kolektojo Feedbacko
+### Malŝalti Kolektadon de Reagoj {#disabling-feedback-collection}
 
-Palikite obie lajonas **Feedback Endpoint URL** kaj **Feedback API Key** vakansaj. La butono "thumbs-down" kaj la feedback UI restas vidblajnda por uzantoj, sed submisioj ne estas transsenditaj al iu ajpa eksteraj servoj.
+Lasu ambaŭ kampojn **URL de Reaga Finpunkto** kaj **Feedback API Key** malplenaj. La dikfingro-malsupren-butono kaj reaga UI restas videblaj al uzantoj, sed sendoj ne estas plusenditaj al iu ekstera servo.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Aŭ ankaŭ sur la lajnu **Advanced** tab, la lajnu **Brave Search API Key** permesas la [Internet Search](../configuration/internet-search) kapablon.
+Ankaŭ en la langeto **Altnivela**, la kampo **Brave Search API Key** ebligas la kapablon [Interreta Serĉo](../configuration/internet-search).
 
-| Lajon | Deskribcio |
+| Kampo | Priskribo |
 |---|---|
-| **Brave Search API Key** | Via API key de la Brave Search developer dashboardo. Requisite por aktivi la internet search en la AI asisto. |
+| **Brave Search API Key** | Via API-ŝlosilo el la programista Dashboard de Brave Search. Bezonata por ebligi interretan serĉon en la AI-asistanto. |
 
-La etiketado de la lajnu inkluzas klakablablan linkon al la registriĝo de Brave Search API paĝo. Palikite vakansaj por dezaktivado de internet search.
+La kampa etikedo inkluzivas alklakeblan ligilon al la aliĝpaĝo de Brave Search API. Lasu malplena por malŝalti interretan serĉon.
 
-Vidu [Internet Search](../configuration/internet-search) por dokumento por uzantoj pri ĉi tiu funkcio.
+Vidu [Interreta Serĉo](../configuration/internet-search) por dokumentaro por finuzantoj pri ĉi tiu funkcio.
 
-## Feature Flags
+## Administrata Superdav-Servo {#managed-superdav-service}
 
-Aŭ introducit en v1.9.0, la lajnu **Settings → Feature Flags** tab provizas switchojn por opcionaj funkcioj. Ĉiu flag estas akivebla aŭ dezaktivita per la tuta reron; ne ekzistas super-site override en tiu momento.
+Superdav AI Agent v1.18.0 aldonas administratajn Superdav-servajn finpunktojn kaj aŭtomatan proviziadon de konektoj por subtenataj retejoj. Uzu ĉi tiujn regilojn kiam via retejo devus konektiĝi al la gastigita provizanto anstataŭ al mane agordita serva finpunkto.
 
-### Aliri al Feature Flags
+| Kampo | Priskribo |
+|---|---|
+| **Administrata Superdav-Servo** | Ebligas la gastigitan Superdav-servan konekton por subtenataj retejoj. |
+| **Provizii Konekton** | Komencas aŭtomatan proviziadon de finpunkto kaj akreditaĵoj. Uzu ĉi tion post konfirmo ke la retejo devus uzi la administratan provizanton. |
+| **Serva Finpunkto / Konekta Stato** | Montras la aktualan finpunkton aŭ konektan staton post proviziado. |
 
-1. En la WordPress admino, direte **Gratis AI Agent → Settings**.
-2. Klikite sur la tabon **Feature Flags**.
+Post proviziado, konservu agordojn kaj kontrolu la konektan staton antaŭ ol fidi je administrat-servaj laborfluoj. Se proviziado malsukcesas, reviziu la montritan reprovan gvidon kaj konfirmu ke la retejo havas permeson uzi la gastigitan provizanton.
 
-### Access Control Flags
+## Agordo de Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Deskripsio |
+Kiam kalendaraj funkcioj de Superdav AI Agent v1.18.0 estas ebligitaj, la agent povas legi agorditajn kalendarojn kaj eventajn detalojn. Kalendaraj iloj estas leg-orientitaj kaj utilas por horar-konsciaj memorigiloj, sekvado de partoprenantoj, kaj kongruigo de kontaktoj.
+
+| Kampo | Priskribo |
+|---|---|
+| **Akreditaĵoj de Google Calendar** | Stokas la akreditaĵojn aŭ token-konekton bezonatan por legi kalendarajn datumojn. |
+| **Elekto de Kalendaro** | Limigas kiujn agorditajn kalendarojn la agent rajtas inspekti. |
+| **Stato de Kalendara Konekto** | Konfirmas ĉu la aktualaj akreditaĵoj povas legi kalendarojn kaj eventojn. |
+
+Tenu kalendarajn akreditaĵojn limigitaj al la kalendaroj kiujn la agent bezonas. Rekonektu aŭ rotaciu akreditaĵojn se la stato indikas eksvalidiĝintan token.
+
+## TextBee SMS-Sciigoj {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 aldonas TextBee kiel SMS-provizanton por agorditaj sciigaj laborfluoj. SMS-sciigoj devus esti parigitaj kun homaj aprobaj pordoj por sentemaj aŭ uzant-alfrontaj mesaĝoj.
+
+| Kampo | Priskribo |
+|---|---|
+| **TextBee API-Ŝlosilo** | Aŭtentikigas petojn al la TextBee SMS-provizanto. |
+| **TextBee Aparato / Sendanto** | Elektas la TextBee-sendanton aŭ aparaton uzatan por elirantaj mesaĝoj, kiam postulite de la provizanto. |
+| **SMS-Sciigoj Ebligitaj** | Permesas al aprobitaj laborfluoj sendi tekstmesaĝajn sciigojn. Lasu malŝaltita por malhelpi SMS-sendojn. |
+
+Sendu testan mesaĝon nur al numero posedata de administranto, poste konfirmu la konduton de aprobaj pordoj antaŭ ebligi planitajn aŭ partoprenant-alfrontajn memorigilojn.
+
+## Funkciaj Flagoj {#feature-flags}
+
+Ankaŭ enkondukita en v1.9.0, la langeto **Agordoj → Funkciaj Flagoj** provizas ŝaltilojn por laŭvola funkcieco. Ĉiu flago estas aŭ ebligita aŭ malebligita tutrete; nuntempe ne ekzistas po-reteja anstataŭigo.
+
+### Aliri Funkciajn Flagojn {#accessing-feature-flags}
+
+1. En la WordPress-administrilo, iru al **Gratis AI Agent → Agordoj**.
+2. Alklaku la langeton **Funkciaj Flagoj**.
+
+### Alirkontrolaj Flagoj {#access-control-flags}
+
+| Flago | Defaŭlto | Priskribo |
 |---|---|---|
-| **Restrikti al Administratoroj** | Off | Kurui aktiv, tik vartojai со `administrator` ruolo povas ofiĉi la AI Agent chato paneli. Valtraj aliaj ruolo vidas mensaĝon "Kontaktiu sian administratoron". |
-| **Restrikti al Rete Administratoj** | Off | Kurui aktiv sur rete multisite, tik Super Administratoroj povas uzi agenton. Individua sitio administratoj estas blokitaj. Tio predigas superan pri "Restrikti al Administratoroj", se amba estas aktivaj. |
-| **Permiti Abonanto-akceson** | Off | Kurui aktiv, vartoj со `subscriber` ruolo povas uzi la chata interfacon, sed ili estas limigita al legeta funkcio (sen poste'o kreo aŭ ŝanĝoj de ŝanĝoj). |
-| **Disabiliti por Ne-Membraj** | Off | Integrita kun statuso de membrajo de Ultimate Multisite. Kurui aktiv, chato estas malaperata por sitoj, kiuj ne havas aktivan membrajon. |
+| **Limigi al Administrantoj** | Malŝaltita | Kiam ebligita, nur uzantoj kun la rolo `administrator` povas malfermi la AI Agent babilejan panelon. Ĉiuj aliaj roloj vidas mesaĝon "Kontaktu vian administranton" anstataŭe. |
+| **Limigi al Retaj Administrantoj** | Malŝaltita | Kiam ebligita en multreteja reto, nur Super Admins povas uzi la agenton. Individuaj retejaj administrantoj estas blokitaj. Havas prioritaton super "Limigi al Administrantoj" se ambaŭ estas ebligitaj. |
+| **Permesi Aliron por Abonantoj** | Malŝaltita | Kiam ebligita, uzantoj kun la rolo `subscriber` povas uzi la babilejan interfacon sed estas limigitaj al nurlegaj kapabloj (neniu afiŝokreado aŭ agordaj ŝanĝoj). |
+| **Malebligi por Ne-Membroj** | Malŝaltita | Integras kun la membreca stato de Ultimate Multisite. Kiam ebligita, babilejo estas kaŝita por retejoj kiuj ne havas aktivan membrecon. |
 
-### Branding Flagoj
+### Markaj Flagoj {#branding-flags}
 
-| Flag | Default | Deskripsio |
+| Flago | Defaŭlto | Priskribo |
 |---|---|---|
-| **Malaperi "Powered by Gratis AI Agent" Footer** | Off | Eliminus la identigita linion, kiun oni vidas al baz de la chata widget. Rekomendas por deplojoj sen markado (white-label). |
-| **Personalia Agena Nom** | *(blank)* | Subti la defaultaj "Gratis AI Agent" etiketojn en la chata ĉedaro kaj admin menuko per vian propran produkto nomon. Laboru blanke por uzi la defaulton. |
-| **Malaperi Agenan Selekton** | Off | Kurui aktiv, vartoj ne povas ŝanĝi inter la kvin konstruita agenoj. La aktuala agentejo estas fixita al tio, kion oni konfigura kiel default en Settings → General. |
-| **Uzi Sitio-ikonon kiel Chata Avataro** | Off | Kurui aktiv, subti la defaultan AI ikone en la chata widget ĉedaro per la WordPress sitio-ikonon (definita sub Appearance → Customize → Site Identity). |
+| **Kaŝi la Piedlinion "Powered by Gratis AI Agent"** | Malŝaltita | Forigas la markan atribuan linion montratan ĉe la malsupro de la babileja fenestraĵo. Rekomendita por senmarkaj deplojoj. |
+| **Propra Nomo de Agento** | *(malplena)* | Anstataŭigas la defaŭltan etikedon "Gratis AI Agent" en la babileja kaplinio kaj administra menuo per via propra produkta nomo. Lasu malplena por uzi la defaŭlton. |
+| **Kaŝi Agento-Elektilon** | Malŝaltita | Kiam ebligita, uzantoj ne povas ŝanĝi inter la kvin enkonstruitaj agentoj. La nuna agento estas fiksita al tio, kio estas agordita kiel la defaŭlto en Agordoj → Ĝenerala. |
+| **Uzi Retejan Ikonon kiel Babilejan Avataron** | Malŝaltita | Anstataŭigas la defaŭltan AI-ikonon en la kaplinio de la babileja fenestraĵo per la WordPress reteja ikono (agordita sub Aspekto → Agordi → Reteja Identeco). |
 
-### Modifigi Changojn
+### Aŭtomatigaj Sekurecaj Flagoj {#automation-safety-flags}
 
-Klaknu sur **Save Settings** post kiam vi ŝanĝas kial iu flag. Changoj fariĝas efektivej tuteblame — ne bezonas flush de cache aŭ reaktivaĵon de plugino.
+Superdav AI Agent v1.18.0 enkondukas pordegojn de homa aprobo kaj memorigajn registrojn por pli sekuraj aŭtomatigaj ruladoj. Ĉi tiuj regiloj povas aperi en la funkciaj flagoj aŭ altnivelaj aŭtomatigaj agordoj, depende de la instalita pakaĵo.
+
+| Flago | Defaŭlto | Priskribo |
+|---|---|---|
+| **Postuli Homan Aprobon** | Rekomendita ŝaltita | Paŭzigas sentemajn aŭtomatigojn ĝis rajtigita uzanto revizias kaj konfirmas la proponitan agon. |
+| **Memoriga Deduligo** | Ŝaltita | Registras senditajn memorigilojn por ke reprovoj aŭ planitaj ruladoj ne sendu duobligitajn sciigojn. |
+| **Ebligi Kalendarajn Iloj** | Malŝaltita ĝis agordita | Permesas al la agento legi agorditajn Google-kalendarojn kaj eventojn. |
+| **Ebligi SMS-Sciigojn** | Malŝaltita ĝis agordita | Permesas al aprobitaj laborfluoj sendi TextBee SMS-sciigojn post kiam akreditaĵoj estas konservitaj. |
+
+### Aplikado de Ŝanĝoj {#applying-changes}
+
+Alklaku **Konservi Agordojn** post ŝalti aŭ malŝalti iun ajn flagon. Ŝanĝoj ekvalidas tuj — neniu kaŝmemora purigo aŭ plugin reaktivigo estas bezonata.

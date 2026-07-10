@@ -3,7 +3,7 @@ title: Webhooklar
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooklar Haqida Birinchi Bakror Ko'rish (v2)
+# Webhooklar Haqida Birinchi Bakror Ko'rish (v2) {#a-first-look-on-webhooks-v2}
 
 _**E'TIBOR: Bu funksiya yoki maqola faqat ilg'or foydalanuvchilar uchun mo'ljallangan.**_
 
@@ -11,7 +11,7 @@ _**E'TIBOR: Bu funksiya yoki maqola faqat ilg'or foydalanuvchilar uchun mo'ljall
 
 Bu quyidagi holatlarda foydali bo'ladi: har bir voqea yuzaga kelganda Ultimate Multisite dan ma'lumotlarni boshqa CRM yoki tizimga integratsiya qilish yoki o'tkazish kerak bo'lganda. Masalan, yangi akkaunt yaratilganda har safar foydalanuvchining ism va elektron pochta manzilini xabar ro'yxatiga yuborishingiz kerak bo'lishi mumkin.
 
-## Webhook qanday yaratiladi
+## Webhook qanday yaratiladi {#how-to-create-a-webhook}
 
 Webhook yaratish uchun tarmoq administrator paneli (network admin dashboard)ga kiring. **Ultimate Multisite > Webhooks > Yangi Webhook qo'shing** tugmasiga bosing.
 

@@ -3,11 +3,11 @@ title: Kontaktni obliki za gradbo spletnih strani
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktforme za gradnjo spletne strani
+# Kontaktforme za gradnjo spletne strani {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 omogoča ustvarjanje kontaktform, ki se neposredno naredi iz čata z uporabo agenta Site Builder. To vam omogoča dodajanje popolnoma funkcionalnih kontaktform na vsako stran brez odhajanja iz čata.
 
-## Pregled
+## Pregled {#overview}
 
 Sposob ustvarjanja kontaktforme za gradnjo strani (`create_contact_form`) samodejno prepoznava vaš instaliran plugin za forme in ustvari kontaktform, ki uporablja nativne možnosti tega plugin-a. Podporani plugin-i za forme vključujejo:
 
@@ -18,7 +18,7 @@ Sposob ustvarjanja kontaktforme za gradnjo strani (`create_contact_form`) samode
 
 Asistent samodajno izbere najboljši na voljo plugin za forme na vašem spletni strani in ustvari kontaktform, prilagojeno temu pluginu.
 
-## Ustvarjanje kontaktforme
+## Ustvarjanje kontaktforme {#creating-a-contact-form}
 
 Za ustvarjanje kontaktforme z uporabo Site Builderja:
 
@@ -34,7 +34,7 @@ Za ustvarjanje kontaktforme z uporabo Site Builderja:
 
 4. Site Builder ustvari kontaktform in vrne kratki kod (shortcode), pripravljen na vgrajevanje.
 
-## Uporaba generiranega kratkega koda
+## Uporaba generiranega kratkega koda {#using-the-generated-shortcode}
 
 Po temeljitv, ko Site Builder ustvari kontaktform, vrne kratki kod (na primer, `[contact-form-7 id="123"]`). Lahko:
 
@@ -45,11 +45,11 @@ Po temeljitv, ko Site Builder ustvari kontaktform, vrne kratki kod (na primer, `
 
 3. **Uporabite ga v templatih** — Če ste se počutno s PHP-jem, lahko kratko kod dodate do templatil teme.
 
-## Uporaba pri prilagajanju kontaktnega oblika (Contact Form)
+## Uporaba pri prilagajanju kontaktnega oblika (Contact Form) {#customizing-the-contact-form}
 
 Po temeljitvi zgraje Site Builder kontaktni oblik, ga lahko še bolj prilagodite:
 
-### Spletno preko čata (Chat Interface)
+### Spletno preko čata (Chat Interface) {#via-the-chat-interface}
 
 Vprašajte Site Builder, da spremeni oblik:
 
@@ -57,7 +57,7 @@ Vprašajte Site Builder, da spremeni oblik:
 
 Site Builder bo obnovil oblik in vrnil obnovljen kratki kod.
 
-### Spletno preko admin interfejsa vašega form plugin-a
+### Spletno preko admin interfejsa vašega form plugin-a {#via-the-form-plugins-admin-interface}
 
 Oblik lahko prilagodite tudi neposredno v nastavitvah vašega form plugin-a:
 
@@ -65,7 +65,7 @@ Oblik lahko prilagodite tudi neposredno v nastavitvah vašega form plugin-a:
 2. Poiščite oblik, ki ga je ustvaril Site Builder.
 3. Uporabite možnost za ureditev polja oblika, pravila validacije in e-poštne obvestave, če je potrebno.
 
-## Form plugin-i in kompatibilnost
+## Form plugin-i in kompatibilnost {#form-plugins-and-compatibility}
 
 Site Builder sam avtomatsko odkrije, kateri form plugin je na vašem spletnem mestu instaliran in ga uporablja za ustvarjanje kontaktnega oblika. Če je na voljo več form pluginov, Site Builder jih prioritizira v naslednji vrstvi:
 
@@ -76,7 +76,7 @@ Site Builder sam avtomatsko odkrije, kateri form plugin je na vašem spletnem me
 
 Če ni nobena od teh pluginov instalirana, Site Builder bo priporočil, da jo instalirate pred ustvarjanjem kontaktnega oblika.
 
-## E-poštne obvestave (Email Notifications)
+## E-poštne obvestave (Email Notifications) {#email-notifications}
 
 Kontaktni obliki, ki jih ustvari Site Builder, so po podrazdelih namen konfigurirani za posredovanje e-poštnih obvestav administratorju spletnega mesta. Lahko prilagodite e-poštno naslov in sporočilo obvestave:
 
@@ -91,21 +91,21 @@ Za podrobne navodila se pozivajte na dokumentacijo vašega form plugin-a:
 - [Obvestila za e-poštna sporočila Fluent Forms](https://fluentforms.com/docs/)
 - [Obvestila za e-poštna sporočila Gravity Forms](https://docs.gravityforms.com/)
 
-## Primeri uporabe
+## Primeri uporabe {#example-use-cases}
 
-### Preprosto kontaktno obrazec
+### Preprosto kontaktno obrazec {#simple-contact-form}
 
 > "Ustvarite preprosti kontaktni obrazec z polji za ime, e-poštno in sporočilo."
 
-### Obrazec z več koraki
+### Obrazec z več koraki {#multi-step-form}
 
 > "Ustvarite kontaktni obrazec s prvim korakom za informacije o kontaktu in drugim korakom za sporočilo ter predvčene metodo kontakta."
 
-### Obrazec z pogojnim logikom
+### Obrazec z pogojnim logikom {#form-with-conditional-logic}
 
 > "Ustvarite kontaktni obrazec, ki prikazuje različne polja na podlagi izbire uporabnika v sproščeni meni."
 
-### Obrazec z obdelavo datoteka
+### Obrazec z obdelavo datoteka {#form-with-file-upload}
 
 > "Ustvarite kontaktni obrazec, ki omogoča uporabnikom, da se nahajajo datoteke ali priloge."
 

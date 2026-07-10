@@ -3,19 +3,19 @@ title: Kufunga Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Kufuna Mwayi wa Stripe (v2)
+# Kufuna Mwayi wa Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**KUFUNDI CHONJE: Izirozi izi zikufandra na Ultimate Multisite version 2.x.**_
 
 Mungathe kukhazikira njira zikuphasa mwayi ku kwawo kwa chitsogo cha mwayi wanu: Stripe, Stripe Checkout, PayPal ndi Manual. M'mwayi wamba uliyi ndi uliyi mudzindikira m'mwayi wamba wathu, muthandizira kuti muwone kudziwitsa n'Stripe.
 
-## Kufuna Kukhazikira Stripe
+## Kufuna Kukhazikira Stripe {#enabling-stripe}
 
 Kuti utseke Stripe mwayi wanu wosonyeza mwayi wopasa kwa wanu, ndi ulimbikire **Ultimate Multisite > Settings > Payments** ndikupatsa chithunzi (tick) kusonyeza n'Stripe kapena Stripe Checkout ku msonkhano wa Active Payment Gateways.
 
 ![Kufuna Kukhazikira Stripe mwayi wopasa](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Njira iyi idzindikira malo kuti mwayi wopasa (credit card number) uonde m'mwayi wosonyeza (checkout).
 
@@ -47,7 +47,7 @@ Kopya muli muli wa **Publishable key** na **Secret key**, ku muli wa column ya *
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Kufotokoza Stripe Webhook
+## Kufotokoza Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe imapeto webhook events zomwe zimaphatikizira Ultimate Multisite nthawi yomwe kuli kukhala chinthu kumene kuli pa **stripe account** ya inu.
 

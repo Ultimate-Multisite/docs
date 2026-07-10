@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Peman GoCardless
+
+Pèmèt kliyan ou yo peye pou abònman ak pwodwi Multisite Ultimate ak Debi Dirèk lè yo sèvi ak GoCardless!
+
+## Enstalasyon {#installation}
+
+1. Telechaje 'ultimate-multisite-gocardless' nan repètwa '/wp-content/plugins/'
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
+3. Swiv Wizard etap pa etap la pou konfigire plugin nan
+
+## Gid Itilizasyon {#usage-guide}
+
+_GoCardless_ se yon pòtay peman ki disponib nan **Ewòp ak nan Wayòm Ini** ki pèmèt peman **Debi Dirèk**.
+
+**Ultimate Multisite: GoCardless Gateway** ajoute sipò _GoCardless_ nan Ultimate Multisite, sa ki pèmèt ou fè kliyan ou yo nan rejyon sa a peye avèk Debi Dirèk.
+
+Tutorial sa a pral kouvri kijan pou konfigire _GoCardless_ pou kòmanse aksepte peman atravè li sou rezo Ultimate Multisite ou a.
+
+_**Nòt: GoCardless sèlman mache ak lajan sa yo:**_ **EUR, GBP, AUD, SEK, ak DKK.**
+
+## Enstale Add-on nan {#installing-the-add-on}
+
+Anvan tout bagay, w ap bezwen enstale add-on GoCardless la pou Ultimate Multisite. Ou ka fè sa lè ou ale nan **Ultimate Multisite > Settings > Add-ons (sou ba bò a)**. Epi chwazi add-on GoCardless la nan lis sa a.
+
+Apre add-on nan fin enstale epi aktive, ale nan **Ultimate Multisite > Settings > Payments**, aktive opsyon GoCardless la, epi sove.
+
+![Paramèt pòtay peman](/img/config/settings-payment-gateways.png)
+
+## Jwenn yon Access Token {#getting-an-access-token}
+
+Kreye yon kont sou _GoCardless_ (oswa sou sandbox _GoCardless_ la, si ou vle **teste li anvan** , sa ki rekòmande). Apre sa, apre ou fin konekte, navige nan atik meni **Developers** la.
+
+<!-- Screenshot unavailable: GoCardless dashboard showing Developers menu position -->
+
+Sou paj **Developers** la, klike sou bouton **Create** la nan kwen anlè adwat ekran an, apre sa klike sou opsyon **Access Token** an.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Create button and Access Token option -->
+
+Sa ap ouvri yon nouvo fenèt modal, ki pèmèt ou kreye yon nouvo token. Ba li yon non ou ka rekonèt epi asire ou chwazi opsyon **Read-write access** la nan meni **Scope** la.
+
+<!-- Screenshot unavailable: GoCardless modal for creating new access token with Read-write scope -->
+
+Access token an ap parèt sou ekran an. Kopi li epi kole li nan meni **Ultimate Multisite > Settings > Payments > GoCardless** ou a.
+
+Asire ou mete li nan bon chan an. Si se yon **live toke** **n** , dezaktive **sandbox mode** la anvan ou kole token an.
+
+![Paramèt pòtay peman ak GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Screenshot unavailable: GoCardless token fields in Ultimate Multisite payment settings -->
+
+Se tout pou premye etap la. Apre sa, ou bezwen konfigire yon koute webhook.
+
+## Konfigire Koute Webhook la {#setting-up-the-webhook-listener}
+
+Lè w ap jere abònman, Ultimate Multisite bezwen tande sou chanjman nan estati abònman an, nouvo peman k ap fèt, ak lòt bagay konsa.
+
+Fason pòtay peman yo avèti Ultimate Multisite sou chanjman sa yo se lè yo sèvi ak **apèl webhook**. Pou rezon sa a, pou entegrasyon an mache 100%, nou bezwen di _GoCardless_ ki URL pou li rele ak tout enfòmasyon sa yo.
+
+Retounen nan panèl **GoCardless > Developers** ou a epi klike sou bouton Create la ankò, men fwa sa a, chwazi opsyon **Webhook endpoint** la.
+
+<!-- Screenshot unavailable: GoCardless Developers page with Webhook endpoint option -->Yon nouvo fenèt ap ouvri ak opsyon webhook endpoint yo. Li mande URL webhook la, kidonk retounen nan **paramèt Ultimate Multisite > Payments > GoCardless** ou yo epi kopi URL webhook ki nan lis la la:
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless settings showing webhook URL -->
+
+Anplis de sa, ou ka antre yon **webhook secret** ki pral sèvi pou siyen apèl webhook ou yo. Kèlkeswa sa ou antre nan chan sa a, w ap bezwen antre li nan **chan Ultimate Multisite Webhook Secret** la tou.
+
+<!-- Screenshot unavailable: GoCardless webhook endpoint configuration form with URL and secret fields -->
+
+<!-- Screenshot unavailable: Ultimate Multisite GoCardless webhook secret field -->
+
+Fini pa sove endpoint la lè ou klike sou bouton **Create webhook endpoint** la epi apre sa **sove paramèt Ultimate Multisite ou yo tou**.
+
+Ou ta dwe pare pou aksepte _GoCardless_ kounye a!

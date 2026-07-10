@@ -3,11 +3,11 @@ title: Plugin Builder at Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Ang Gratis AI Agent v1.5.0 ay nagpapakilala ng **Plugin Builder & Sandbox System**, na nagbibigay-daan sa AI assistant na gumawa, mag-activate, at mag-manage ng WordPress plugins sa iyong network — lahat ito sa loob ng isang ligtas at hiwalay na sandbox environment.
 
-## Overview
+## Overview {#overview}
 
 Ang Plugin Builder ay nagpapahintulot sa AI assistant na magsulat ng custom na WordPress plugins bilang tugon sa mga natural language requests. Ang mga nabuong plugin ay binibigyan ng validation, iniimbak, at ina-activate sa loob ng isang sandbox layer bago pa man ito makaapekto sa functionality ng live site.
 
@@ -17,7 +17,7 @@ Mga halimbawa ng paggamit nito ay:
 - Prototyping ng mga feature na nangangailangan ng WordPress hooks o custom post types.
 - Paggawa ng maikling automation scripts para sa batch operations.
 
-## Generating a Plugin via AI
+## Generating a Plugin via AI {#generating-a-plugin-via-ai}
 
 Para gumawa ng plugin, buksan ang Gratis AI Agent chat interface at ilarawan kung ano ang kailangan mo. Halimbawa:
 
@@ -32,7 +32,7 @@ Ang AI ay gagawin ang mga sumusunod:
 
 Maaari mong mapino ang resulta sa pamamagitan ng pagtatanong pa sa parehong conversation thread bago i-activate.
 
-## Sandbox Activation
+## Sandbox Activation {#sandbox-activation}
 
 Ang pag-activate ng nabuong plugin sa sandbox ay iba sa pag-activate nito sa live network. Ang sandbox:
 
@@ -48,7 +48,7 @@ Para i-activate ang isang plugin sa sandbox, i-click ang **Activate in Sandbox**
 
 May magpakita ng mensahe ang status kung matagumpay o nabigo ang pag-activate. Kung hindi ito nagtagumpay, ipapakita ang error log sa chat thread.
 
-## Pamamahala ng mga Nabuo na Plugin
+## Pamamahala ng mga Nabuo na Plugin {#managing-generated-plugins}
 
 Ang mga generated plugin ay makikita sa **Gratis AI Agent → Plugin Builder → Manage Plugins**. Mula sa screen na ito, maaari mong gawin ang mga sumusunod:
 
@@ -64,7 +64,7 @@ Ang mga generated plugin ay makikita sa **Gratis AI Agent → Plugin Builder →
 Ang **Install on network** ay maglalagay ng generated plugin sa iyong live WordPress multisite. Suriin ang code ng plugin bago magpatuloy. Hihingi ang Gratis AI Agent ng kumpirmasyon bago tapusin ang live install.
 :::
 
-## Pag-install ng Generated Plugin sa Network
+## Pag-install ng Generated Plugin sa Network {#installing-a-generated-plugin-on-the-network}
 
 Kapag kuntento ka na sa isang sandboxed plugin, maaari mo itong i-install sa live network:
 
@@ -78,7 +78,7 @@ Bilang alternatibo, gamitin ang slash command sa chat interface:
 /install-plugin <plugin-slug>
 ```
 
-## Mga Update ng Plugin
+## Mga Update ng Plugin {#plugin-updates}
 
 Para ma-update ang isang generated plugin, ilarawan ang pagbabago sa AI assistant sa isang bagong usapan:
 
@@ -86,7 +86,7 @@ Para ma-update ang isang generated plugin, ilarawan ang pagbabago sa AI assistan
 
 Ang AI ay gagawa ng bagong bersyon, na lalabas sa sandbox kasama ng kasalukuyang bersyon. Suriin mo ang diff at kumpirmahin bago i-apply ang update.
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Gumagamit ang Plugin Builder ng isang integrated na **HookScanner** para suriin ang mga hooks at filter na naka-register ng bawat plugin na ginawa nito. Ang output ng HookScanner ay ipapakita sa chat response at kasama dito:
 
@@ -96,7 +96,7 @@ Gumagamit ang Plugin Builder ng isang integrated na **HookScanner** para suriin 
 
 Nakakatulong ito para maintindihan mo ang pag-uugali ng isang plugin bago mo ito i-activate.
 
-## Security Considerations
+## Security Considerations {#security-considerations}
 
 - Ang mga generated na plugin ay naka-store nang hiwalay mula sa mga manu-manong na naiinstall na plugin at hindi maa-access sa standard WordPress plugin management screen hangga't hindi mo sila eksaktong ini-install sa network.
 - Gumagamit ang sandbox ng path validation para maiwasan ang directory traversal kapag nagsusulat ng mga file ng plugin.

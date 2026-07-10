@@ -1,0 +1,101 @@
+---
+title: Pengekspor Situs
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Pengekspor Situs {#site-exporter}
+
+## Isi {#content}
+
+Kita mangerteni perlune bisa mindhah sub-situs ing jaringan sampeyan menyang instalasi situs tunggal lan kosok balene yen pelanggan sampeyan mutusake migrasi situs webé. Tambahan pengekspor lan pengimpor situs nggawé tugas iki luwih gampang. Piranti iki ngekspor lan ngimpor situs nganggo berkas zip sing uga bisa dadi cadangan.
+
+## Fitur {#features}
+
+* Ekspor lan Impor Situs
+
+* Antarmuka sing gampang digunakake
+
+* Gawe cadangan situs
+
+## Dokumentasi {#documentation}
+**Carane Ngekspor lan Ngimpor Situs**
+
+## Instalasi {#installation}
+
+1. Unggah **ultimate-multisite-site-exporter** menyang direktori **/wp-content/plugins/**
+2. Aktifake pengaya liwat menu **Pengaya** ing WordPress
+3. Tindakake Wizard langkah demi langkah kanggo nyetel pengaya
+
+## Pandhuan Panggunaan {#usage-guide}
+
+Kanthi Ultimate Multisite sampeyan bisa ngekspor situs saka jaringan sampeyan utawa ngimpor situs menyang instalasi multisite utawa situs tunggal sampeyan.
+
+Kanggo miwiti proses, bukak kaca tambahan kita lan instal tambahan Ultimate Multisite: Pengekspor & Pengimpor Situs.![Kaca tambahan](/img/admin/addons-page.png)
+
+![Kaca tambahan nganggo pilihan instal](/img/admin/addons-page.png)
+
+Bukak kaca Pengaya sampeyan lan klik kanggo **Aktifake Jaringan** tambahan sing lagi wae sampeyan instal.<!-- Gambar layar ora kasedhiya: kaca WP Plugins nuduhake tombol Aktifake Jaringan kanggo tambahan Pengekspor Situs -->
+
+Pilihan **Ekspor & Impor** bisa ditemokake ing menu Ultimate Multisite, ing sisih kiwa.
+
+<!-- Gambar layar ora kasedhiya: menu Ultimate Multisite nuduhake pilihan Ekspor lan Impor -->
+
+## Carane ngekspor situs {#how-to-export-a-site}
+
+Kanggo ngekspor situs saka jaringan sampeyan, bukak **Ekspor & Impor** ing menu Ultimate Multisite lan, ing tab **Ekspor Situs**, klik kanggo **Gawe Ekspor Situs anyar**.
+
+<!-- Gambar layar ora kasedhiya: tab Ekspor Situs nganggo tombol Gawe Ekspor Situs anyar -->
+
+Goleki situs sing arep sampeyan ekspor lan pilih item sing arep dilebokake ing berkas sing diekspor. Sampeyan bisa nyakup tema, pengaya, lan unggahan. Yen situs sampeyan kegedhen, sampeyan bisa milih kanggo mbukak proses ekspor ing latar mburi.<!-- Gambar layar ora kasedhiya: pilihan ekspor situs nganggo panelusuran situs, kothak centhang nyakup tema/pengaya/unggahan -->
+
+Klik tombol **Ekspor Situs**. Situs sing wis diekspor bakal kasedhiya ing dhaptar **Ekspor Sing Wis Ana**. Klik tombol **Undhuh ZIP** kanggo ngundhuh berkas. ZIP ekspor nyakup `index.php` sing bisa boot dhewe lan `readme.txt`, mula bisa diinstal ing host anyar tanpa kudu luwih dhisik nginstal pengaya pengimpor kapisah.<!-- Gambar layar ora kasedhiya: dhaptar Ekspor Sing Wis Ana nganggo tombol Undhuh ZIP -->
+
+## Carane ngekspor sakabehing jaringan {#how-to-export-the-whole-network}
+
+Kanggo ngekspor kabeh sub-situs bebarengan, bukak **Ekspor & Impor** ing menu Ultimate Multisite lan gunakake pilihan **Ekspor Jaringan** ing layar ekspor. Arsip sing digawe ngemot kabeh sub-situs ing siji ZIP kanggo migrasi host, pambangunan ulang staging, utawa cadangan tingkat jaringan.
+
+Ekspor jaringan bisa gedhe. Lakokake nalika trafik sithik lan priksa manawa server nduweni panyimpenan sing cukup kanggo arsip lan unggahan, pengaya, lan tema apa wae sing kalebu.
+
+## Carane ngimpor situs {#how-to-import-a-site}
+
+Kanggo ngimpor situs, bukak tab **Impor Situs** lan unggah berkas .zip saka situs sing arep sampeyan impor. Sampeyan bisa ngganti URL dadi sing anyar utawa njaga URL lawas kanthi ninggalake papan kosong. Uga, sampeyan bisa mènèhi centhang ing kothak kanggo mbusak berkas .zip saka instalasi sampeyan sawisé impor. Banjur klik **Miwiti Impor**.
+
+<!-- Gambar layar ora kasedhiya: tab Impor Situs nganggo kolom unggah zip lan tombol Miwiti Impor -->
+
+Prosese bisa butuh wektu sithik. Sampeyan bakal ndeleng impor sing ngenteni ing dhaptar ngisor pengimpor.
+
+<!-- Gambar layar ora kasedhiya: impor sing ngenteni ing dhaptar ngisor pengimpor -->
+
+Sampeyan bisa mandhegake proses kanthi ngeklik **Batalake Impor**.
+
+<!-- Gambar layar ora kasedhiya: tombol Batalake Impor kanggo mandhegake proses impor -->
+
+Sawisé proses rampung, situs sampeyan wis kasedhiya ing jaringan sampeyan.
+
+## Carane ngimpor situs ing instalasi tunggal {#how-to-import-a-site-on-a-single-install}
+
+Kanggo ngimpor situs menyang instalasi tunggal sampeyan, luwih dhisik instal lan aktifake pengimpor ing situs sampeyan. Sampeyan bisa nemokake pranala kanggo ngundhuh iku ing tab pengekspor.
+
+<!-- Gambar layar ora kasedhiya: tab pengekspor nganggo pranala kanggo ngundhuh pengimpor situs tunggal -->
+
+Sampeyan bisa nemokake pengimpor ing menu **Piranti**, ing sisih kiwa, ing subitem **Ekspor & Impor**.
+
+<!-- Gambar layar ora kasedhiya: menu Piranti situs tunggal nuduhake submenu Ekspor lan Impor -->
+
+Unggah berkas .zip saka situs sing arep sampeyan impor. Sampeyan bisa ngganti URL dadi sing anyar utawa njaga URL lawas kanthi ninggalake papan kosong. Uga, sampeyan bisa mènèhi centhang ing kothak kanggo mbusak berkas .zip saka instalasi sampeyan sawisé impor. Banjur klik **Miwiti Impor**.
+
+<!-- Gambar layar ora kasedhiya: formulir impor situs tunggal nganggo unggah zip lan tombol Miwiti Impor -->
+
+Prosese bisa butuh wektu sithik. Sampeyan bakal ndeleng impor sing ngenteni ing dhaptar ngisor pengimpor.
+
+<!-- Gambar layar ora kasedhiya: impor situs tunggal sing ngenteni ing dhaptar -->
+
+Sampeyan bisa mandhegake proses kanthi ngeklik **Batalake Impor**.
+
+<!-- Gambar layar ora kasedhiya: tombol Batalake Impor kanggo mandhegake proses impor -->
+
+Sawisé proses rampung, situs sampeyan bakal diganti dening situs sing lagi wae sampeyan impor.

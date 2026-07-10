@@ -3,19 +3,19 @@ title: A Stripe beállítása
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# A Stripe fizetési kapu beállítása (v2)
+# A Stripe fizetési kapu beállítása (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
 A fizetési beállítások oldalán legfeljebb négy fizetési módot aktiválhatsz: Stripe, Stripe Checkout, PayPal és Manuális. Ebben a cikkben a **Stripe** integrációját mutatjuk be.
 
-## A Stripe engedélyezése
+## A Stripe engedélyezése {#enabling-stripe}
 
 Ha engedélyezni szeretnéd a Stripe-ot fizetési kapuként a hálózatodon, navigálj az **Ultimate Multisite > Beállítások > Fizetések** menüpontra, és kapcsold be a **Stripe** vagy a **Stripe Checkout** melletti kapcsolót az Aktív fizetési kapuk részben.
 
 ![A Stripe engedélyezése az aktív fizetési kapuk között](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ezzel a módszerrel a pénztár folyamat során egy mező jelenik meg a bankkártyaszám megadására.
 
@@ -47,7 +47,7 @@ Másold ki a **Publishable key** és a **Secret key** értékét a **Token** osz
 
 ![Stripe kulcsok beillesztése az Ultimate Multisite beállításokba](/img/config/settings-payment-gateways.png)
 
-## A Stripe Webhook beállítása
+## A Stripe Webhook beállítása {#setting-up-stripe-webhook}
 
 A Stripe webhook eseményeket küld, amelyek értesítik az Ultimate Multisite-ot minden alkalommal, amikor valamilyen esemény történik a **Stripe fiókodban**.
 

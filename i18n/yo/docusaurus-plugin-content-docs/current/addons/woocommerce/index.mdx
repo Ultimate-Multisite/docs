@@ -1,0 +1,109 @@
+---
+title: Ìṣepọ̀ WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce Integration {#woocommerce-integration}
+
+WooCommerce Integration n ṣiṣẹ ni ọna ti o jọra gidigidi si ọna ti Manual Gateway wa n ṣiṣẹ. Ó n fun awọn olumulo rẹ ni irọrun pupọ, gbigba wọn laaye lati yan eyikeyi ninu awọn fọọmu isanwo ti o wa lori fifi sori WooCommerce rẹ. Ó sì rọrun: ni kete ti akoko ìdíyelé olumulo ba pari, subscription olumulo naa ni a fi si idaduro. Ni akoko kanna, aṣẹ kan yoo ṣẹda lori fifi sori WooCommerce ti site akọkọ ti network naa. Lẹhinna olumulo naa gba iwe-owo ninu imeeli wọn, pẹlu ọna asopọ lati ṣe isanwo naa. Ni kete ti a ba gba isanwo naa, subscription naa yoo tunse.
+
+## Awọn ẹya {#features}
+
+- Isopọpọ irọrun laarin Ultimate Multisite ati WooCommerce
+- Ọpọlọpọ awọn ọna isanwo ti o wa
+- Ìdíyelé loorekoore adaṣe nipa lilo core subscriptions ti a ṣajọ pọ, pẹlu awọn imudara WooCommerce Subscriptions plugin ti o jẹ aṣayan
+- Apapọ checkout pẹlu awọn owo-ori Ultimate Multisite gẹgẹ bi awọn laini owo WooCommerce lọtọ ti kii ṣe owo-ori ki awọn alabara le ṣe atunyẹwo iye owo-ori ṣaaju isanwo
+
+## Iwe-itọsọna {#documentation}
+
+**Ṣíṣètò WooCommerce Integration**
+
+**Fífi awọn Aṣayan Isanwo rẹ Gbooro pẹlu Ultimate Multisite: WooCommerce Integration**
+
+## Fifi sori ẹrọ {#installation}
+
+1. Gbe 'ultimate-multisite-woocommerce' si itọsọna '/wp-content/plugins/'
+2. Mu plugin ṣiṣẹ nipasẹ akojọ aṣayan 'Plugins' ninu WordPress
+3. Tẹle Wizard igbesẹ-nipasẹ-igbesẹ lati ṣeto plugin naa
+
+## Itọsọna Lilo {#usage-guide}
+
+_**AKIYESI PATAKI: Àpilẹ̀kọ yii tọka si Ultimate Multisite version 2.x.**_
+
+_**AKIYESI:** Ultimate Multisite: WooCommerce Integration nilo ki WooCommerce ti ṣiṣẹ o kere ju lori site akọkọ rẹ._
+
+A loye pe _Stripe_ ati _PayPal_ ko si ni diẹ ninu awọn orilẹ-ede, eyi ti o le dín tabi ṣe idiwọ fun awọn olumulo Ultimate Multisite lati lo plugin wa daradara. Nítorí náà a ṣẹda **add-on lati ṣepọ _WooCommerce_**.
+
+_WooCommerce_ jẹ plugin eCommerce ti o gbajumọ gidigidi. Awọn olùdàgbàsókè kakiri agbaye ṣẹda awọn add-ons lati ṣepọ awọn payment gateways oriṣiriṣi si i. A lo anfani eyi lati faagun awọn payment gateways ti o le lo ninu eto ìdíyelé Ultimate Multisite.
+
+## Ṣíṣètò Rẹ {#setting-it-up}
+
+Ni akọkọ, o nilo lati fi add-on WooCommerce Integration sori ẹrọ, eyi ti o jẹ **ọfẹ fun awọn olumulo ti o ni iwe-aṣẹ**. Lati fi sii, tẹ Ultimate Multisite lori super admin dashboard rẹ ki o yan **Add-ons**.
+
+![Oju-iwe Add-ons](/img/admin/addons-page.png)
+
+Nibi o le wa gbogbo awọn add-ons Ultimate Multisite. Tẹ add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Oju-iwe Add-ons ti n fihan WooCommerce Integration](/img/admin/addons-page.png)
+
+Ferese kan yoo jade pẹlu awọn alaye add-on naa. Kan tẹ **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Lẹhin ti fifi sori ẹrọ ba pari, ao darí rẹ pada si oju-iwe plugins. Nibi, kan tẹ **Network Activate** ati add-on _WooCommerce_ yoo ṣiṣẹ lori network rẹ.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Lẹhin ti o mu ṣiṣẹ, ti o ko ba ti fi WooCommerce plugin sori ẹrọ ti o si mu ṣiṣẹ lori website rẹ, **iwọ yoo gba olurannileti kan**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Ni kete ti a ba fi sii, iwọ yoo ri aṣayan afikun labẹ awọn eto isanwo Ultimate Multisite. Lẹhinna o le **mu** aṣayan _WooCommerce_ **ṣiṣẹ** lati ibẹ.
+
+![Awọn eto payment gateway Ultimate Multisite pẹlu WooCommerce ti a ti mu ṣiṣẹ](/img/addons/woocommerce-payment-gateway.png)
+
+O le tunto diẹ ninu awọn eto ipilẹ bii orukọ ifihan ti yoo han ni front end ati awọn ilana lati dari awọn olumulo rẹ ninu sisan checkout wọn. Lẹhinna o le lọ si **awọn eto _WooCommerce_ ti Main site rẹ** lati mu ṣiṣẹ ati tunto payment gateway ti o fẹ lati lo.
+
+### Awọn laini owo-ori checkout {#checkout-tax-fee-lines}
+
+Nigbati checkout Ultimate Multisite ba pẹlu awọn owo-ori, integration naa n fi iye owo-ori Ultimate Multisite kọọkan kun checkout WooCommerce gẹgẹ bi laini owo lọtọ ti kii ṣe owo-ori. Eyi jẹ ki apapọ owo-ori han ṣaaju isanwo, nigba ti o n dena WooCommerce lati tun san owo-ori lori owo owo-ori naa lẹẹkansi.
+
+## Bawo ni lati ṣakoso isanwo naa {#how-to-manage-the-payment}
+
+WooCommerce Integration n ṣiṣẹ ni ọna ti o jọra gidigidi si ọna ti **Manual Gateway** wa n ṣiṣẹ. Ailanfani naa ni pe gbogbo isanwo gbọdọ san pẹlu ọwọ ni ipari akoko ìdíyelé. Eyi ni bi sisan naa ṣe n ṣiṣẹ:
+
+  * Ni kete ti billing cycle olumulo ba pari, membership naa ni a fi **si idaduro**. Ni akoko kanna, aṣẹ kan yoo ṣẹda lori fifi sori _WooCommerce_ lori site akọkọ ti network rẹ.
+
+  * Lẹhinna awọn olumulo gba iwe-owo ninu imeeli wọn, pẹlu ọna asopọ lati ṣe isanwo naa (ọna asopọ naa tun han ninu itan ìdíyelé wọn lati dashboard subsite wọn). Ọna asopọ yẹn n darí olumulo lọ si _**WooCommerce**_ **checkout** , nibiti awọn olumulo yoo ti le yan ọkan ninu awọn **gateways _WooCommerce_ ti o wa** lati ṣe ilana isanwo wọn.
+
+  * Ni kete ti a ba gba isanwo naa, membership naa ni a **tuntunse** , isanwo naa ni a forukọsilẹ lori Ultimate Multisite, aṣẹ naa si ni a ṣeto si pipe.
+
+### Diẹ ninu Awọn Akọsilẹ Pataki: {#some-important-notes}
+
+  * Iṣẹ aiyipada ti Ultimate Multisite ṣi n ṣiṣẹ pẹlu fọọmu integration yii. Fun apẹẹrẹ, **fifun awọn agbapada** lati iboju **Subscription Management** yoo ba WooCommerce sọrọ lati fun agbapada naa nipa lilo fọọmu isanwo ti a yan.
+
+  * Ultimate Multisite: WooCommerce Integration gbarale WP-Cron lati ṣiṣẹ. Eyi n ṣiṣẹ daradara pupọ ni ọpọlọpọ igba, ṣugbọn ti site naa ba ni ijabọ kekere, lẹhinna cron ko ni ru lati ṣayẹwo fun awọn iṣẹlẹ ti a ṣeto, iṣẹlẹ naa si le padanu, eyi ti o le fa awọn idaduro ṣiṣe.
+
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
+
+Bibẹrẹ isanwo pẹlu ọwọ ni gbogbo oṣu kii ṣe ohun to dara julọ fun awọn olumulo ipari nitori a nireti pe subscriptions yoo tun ṣẹlẹ laifọwọyi ni gbogbo billing cycle. Add-on WooCommerce Integration bayi ṣajọ koodu core subscriptions pọ, nitorina awọn ọja loorekoore maa n lo subscriptions nigbagbogbo fun ìdíyelé loorekoore.
+
+O **ko** nilo lati ra tabi fi [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) lọtọ sori ẹrọ lati ta awọn ọja loorekoore nipasẹ integration yii. Ti plugin yẹn ba ra, fi sori ẹrọ, ti o si wa lori site akọkọ rẹ, Ultimate Multisite yoo lo o, WooCommerce yoo si ṣafihan awọn ẹya iṣakoso subscription afikun. Nigbati ko ba si, core subscriptions ti a ṣajọ pọ ṣi n ṣakoso awọn ọja loorekoore.
+
+![Awọn eto integration subscription WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+Iyẹn ni gbogbo rẹ. Awọn olumulo ipari rẹ kii yoo nilo mọ lati ṣe isanwo pẹlu ọwọ ni opin billing cycle wọn fun awọn ọja loorekoore.
+
+Yato si pe aṣẹ kan ni a ṣẹda lori site akọkọ rẹ labẹ _WooCommerce_, yoo tun ṣẹda subscription fun account kọọkan.
+
+### Iwa idadoro nigbati isọdọtun ba kuna {#failed-renewal-suspension-behavior}
+
+Nipa aiyipada, memberships maa n wa lọwọ lakoko ti WooCommerce Subscriptions n ṣe ilana iṣeto igbiyanju-pada fun isanwo ti o kuna. Eyi n ṣetọju ferese aanu WooCommerce Subscriptions deede ki isọdọtun ti a gba pada le mu subscription ati membership pada si amuṣiṣẹpọ lai ge iraye kuro ni kutukutu.
+
+Awọn alakoso ti o fẹ iṣakoso iraye ti o muna ju le mu **Suspend Memberships Immediately on Failed Renewals** ṣiṣẹ ninu awọn eto WooCommerce Integration. Nigbati eto opt-in yii ba ṣiṣẹ, Ultimate Multisite yoo da membership ti o ni ibatan duro ni kete ti isanwo isọdọtun ba kuna dipo diduro de ki iṣakoso igbiyanju-pada WooCommerce Subscriptions pari.
+
+Awọn olùdàgbàsókè le fagile ipinnu kanna pẹlu filter `wu_woo_suspend_on_payment_failure`. Awọn oju-iwe itọkasi hook ni a ṣẹda lati orisun add-on, nitorina akopọ yii nikan mẹnuba orukọ filter fun awọn ilana idadoro aṣa.

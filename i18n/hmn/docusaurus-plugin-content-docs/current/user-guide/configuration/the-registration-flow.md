@@ -3,13 +3,13 @@ title: Tsis tas txais txog qhov kev txaisrb
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# The Registration Flow (v2)
+# The Registration Flow (v2) {#the-registration-flow-v2}
 
 _**NOTE สำคัญ: Article นี้พูดถึง Ultimate Multisite version 2.x นะครับ.**_
 
 Users txoj register in different ways to your network. They can use your registration form or a shareable link to a pre-selected plan. Here we will show you how your customers can register on your network using the available paths and what happens after they register on your network.
 
-## Using the Registration Form:
+## Using the Registration Form: {#using-the-registration-form}
 
 This is the standard registration process. You create a registration page with a **checkout form** and this will be where your customers will go to register on your network and subscribe to a plan. You can have multiple registration pages, each one with a different registration form if you want.
 
@@ -35,13 +35,13 @@ On the "Thank you" page, they will see a message telling them if they need to co
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## ການໃຊ້ Shareable Link:
+## ການໃຊ້ Shareable Link: {#using-a-shareable-link}
 
 ຂັ້ນຕອນການລົງທະບຽນໂດຍໃຊ້ shareable link ແມ່ນຄືກັບແບບຟອມລົງທະບຽນປົກກະຕິ, ຄວາມແຕກຕ່າງພຽງແຕ່ແມ່ນວ່າການໃຊ້ shareable link, ລູກຄ້າຂອງທ່ານສາມາດເລືອກ product ຫຼື website template ລ່ວງໜ້າໃນແບບຟອມຈ່າຍເງິນ (ເບິ່ງສ່ວນ Pre-selecting products and templates via URL parameters) ຫຼື ອາດຈະມີ coupon code ເພີ່ມເຂົ້າມາໄດ້ (ເບິ່ງສ່ວນ Using URL Parameters).
 
 ຂັ້ນຕອນການລົງທະບຽນຈະຄືກັນ: ພວກເຂົາຈະຕ້ອງໃສ່ຊື່, username, email address, ຊື່ເວັບໄຊ ແລະ ຫົວຂໍ້ ຕ່າງໆ... ແຕ່ແຜນຈ່າຍ ຫຼື website template ຈະຖືກເລືອກໄວ້ລ່ວງໜ້າໃຫ້ພວກເຂົາແລ້ວ.
 
-### ການລົງທະບຽນໂດຍໃຊ້ການຈ່າຍເງິນແບບແຮງ (Manual Payments):
+### ການລົງທະບຽນໂດຍໃຊ້ການຈ່າຍເງິນແບບແຮງ (Manual Payments): {#registering-using-manual-payments}
 
 ຖ້າທ່ານບໍ່ຕ້ອງການໃຊ້ PayPal, Stripe ຫຼື ເຄື່ອງມືຊໍາລະເງິນອື່ນໆທີ່ Ultimate Multisite ຫຼື add-on ຂອງມັນສະເໜີ, ທ່ານສາມາດໃຊ້ການຈ່າຍເງິນແບບແຮງໃຫ້ລູກຄ້າຂອງທ່ານໄດ້. ອັນນີ້ເຮັດໃຫ້ທ່ານສາມາດສ້າງ invoice ໃຫ້ເຂົາເຈົ້າຈ່າຍຜ່ານ payment processor ທີ່ທ່ານເລືອກຫຼັງຈາກທີ່ພວກເຂົາລົງທະບຽນໃນເຄືອຂ່າຍຂອງທ່ານ.
 

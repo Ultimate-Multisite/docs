@@ -1,0 +1,101 @@
+---
+title: Eksportuesi i sajtit
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter {#site-exporter}
+
+## Përmbajtja {#content}
+
+Ne e kuptojmë nevojën për të qenë në gjendje të zhvendosni nënsajte brenda rrjetit tuaj në një instalim me një sajt të vetëm dhe anasjelltas, nëse klienti juaj vendos të migrojë faqen e tij të internetit. Shtesa e eksportuesit dhe importuesit të sajtit e bën këtë detyrë më të lehtë. Ky mjet eksporton dhe importon sajte duke përdorur skedarë zip, të cilët mund të shërbejnë edhe si kopje rezervë.
+
+## Veçoritë {#features}
+
+* Eksportoni dhe importoni sajte
+
+* Ndërfaqe e lehtë për t’u përdorur
+
+* Krijoni kopje rezervë të sajtit
+
+## Dokumentacioni {#documentation}
+**Si të eksportoni dhe importoni një sajt**
+
+## Instalimi {#installation}
+
+1. Ngarkoni **ultimate-multisite-site-exporter** në drejtorinë **/wp-content/plugins/**
+2. Aktivizoni shtojcën përmes menysë **Shtojcat** në WordPress
+3. Ndiqni Wizard hap pas hapi për të konfiguruar shtojcën
+
+## Udhëzues përdorimi {#usage-guide}
+
+Me Ultimate Multisite mund të eksportoni një sajt nga rrjeti juaj ose të importoni një sajt në instalimin tuaj multisite ose me një sajt të vetëm.
+
+Për të nisur procesin, shkoni te faqja jonë e shtesave dhe instaloni shtesën Ultimate Multisite: Site Exporter & Importer.![Faqja e shtesave](/img/admin/addons-page.png)
+
+![Faqja e shtesave me opsion instalimi](/img/admin/addons-page.png)
+
+Shkoni te faqja juaj e Shtojcave dhe klikoni për të **Aktivizuar në rrjet** shtesën që sapo keni instaluar.<!-- Pamje ekrani e padisponueshme: faqja e WP Shtojcave që tregon butonin Aktivizo në rrjet për shtesën Site Exporter -->
+
+Opsioni **Eksport & Import** mund të gjendet në menynë Ultimate Multisite, në të majtë.
+
+<!-- Pamje ekrani e padisponueshme: menyja Ultimate Multisite që tregon opsionin Eksport dhe Import -->
+
+## Si të eksportoni një sajt {#how-to-export-a-site}
+
+Për të eksportuar një sajt nga rrjeti juaj, shkoni te **Eksport & Import** në menynë Ultimate Multisite dhe, në skedën **Eksporto sajtet**, klikoni për të **Gjeneruar eksport të ri sajti**.
+
+<!-- Pamje ekrani e padisponueshme: skeda Eksporto sajtet me butonin Gjenero eksport të ri sajti -->
+
+Kërkoni sajtin që dëshironi të eksportoni dhe zgjidhni artikujt që dëshironi të përfshini në skedarin e eksportuar. Mund të përfshini tema, shtojca dhe ngarkime. Nëse sajti juaj është shumë i madh, mund të zgjidhni ta ekzekutoni procesin e eksportit në sfond.<!-- Pamje ekrani e padisponueshme: opsionet e eksportit të sajtit me kërkim sajti dhe kutiza për përfshirjen e temave/shtojcave/ngarkimeve -->
+
+Klikoni butonin **Eksporto sajtin**. Sajti juaj i eksportuar do të jetë i disponueshëm në listën **Eksportet ekzistuese**. Klikoni butonin **Shkarko ZIP** për të shkarkuar skedarin. ZIP-et e eksportit përfshijnë një `index.php` që niset vetë dhe `readme.txt`, kështu që mund të instalohen në një host të ri pa instaluar më parë një shtojcë importuesi të veçantë.<!-- Pamje ekrani e padisponueshme: lista Eksportet ekzistuese me butonin Shkarko ZIP -->
+
+## Si të eksportoni të gjithë rrjetin {#how-to-export-the-whole-network}
+
+Për të eksportuar të gjitha nënsajtet së bashku, shkoni te **Eksport & Import** në menynë Ultimate Multisite dhe përdorni opsionin **Eksport rrjeti** në ekranin e eksportit. Arkivi i gjeneruar përmban të gjitha nënsajtet në një ZIP të vetëm për migrime hosti, rindërtime staging ose kopje rezervë në nivel rrjeti.
+
+Eksportet e rrjetit mund të jenë të mëdha. Ekzekutojini kur trafiku është i ulët dhe konfirmoni që serveri ka hapësirë të mjaftueshme për arkivin dhe çdo ngarkim, shtojcë dhe temë të përfshirë.
+
+## Si të importoni një sajt {#how-to-import-a-site}
+
+Për të importuar një sajt, shkoni te skeda **Importo një sajt** dhe ngarkoni skedarin .zip të sajtit që dëshironi të importoni. Mund ta ndryshoni URL-në në një të re ose ta mbani URL-në e vjetër duke e lënë hapësirën bosh. Gjithashtu, mund të shënoni kutizën për të fshirë skedarin .zip nga instalimi juaj pas importit. Pastaj klikoni **Fillo importin**.
+
+<!-- Pamje ekrani e padisponueshme: skeda Importo një sajt me fushën e ngarkimit zip dhe butonin Fillo importin -->
+
+Procesi mund të zgjasë pak. Do të shihni një import në pritje në listën poshtë importuesit.
+
+<!-- Pamje ekrani e padisponueshme: import në pritje në listën poshtë importuesit -->
+
+Mund ta ndaloni procesin duke klikuar **Anulo importin**.
+
+<!-- Pamje ekrani e padisponueshme: butoni Anulo importin për të ndaluar procesin e importit -->
+
+Pasi procesi të përfundojë, sajti juaj është tashmë i disponueshëm në rrjetin tuaj.
+
+## Si të importoni një sajt në një instalim të vetëm {#how-to-import-a-site-on-a-single-install}
+
+Për të importuar një sajt në instalimin tuaj të vetëm, fillimisht instaloni dhe aktivizoni importuesin në sajtin tuaj. Lidhjen për ta shkarkuar mund ta gjeni në skedën e eksportuesit.
+
+<!-- Pamje ekrani e padisponueshme: skeda e eksportuesit me lidhjen për të shkarkuar importuesin për sajt të vetëm -->
+
+Importuesin mund ta gjeni në menynë **Mjetet**, në të majtë, te nënartikulli **Eksport & Import**.
+
+<!-- Pamje ekrani e padisponueshme: menyja Mjetet për sajt të vetëm që tregon nënmenynë Eksport dhe Import -->
+
+Ngarkoni skedarin .zip të sajtit që dëshironi të importoni. Mund ta ndryshoni URL-në në një të re ose ta mbani URL-në e vjetër duke e lënë hapësirën bosh. Gjithashtu, mund të shënoni kutizën për të fshirë skedarin .zip nga instalimi juaj pas importit. Pastaj klikoni **Fillo importin**.
+
+<!-- Pamje ekrani e padisponueshme: formulari i importit për sajt të vetëm me ngarkim zip dhe butonin Fillo importin -->
+
+Procesi mund të zgjasë pak. Do të shihni një import në pritje në listën poshtë importuesit.
+
+<!-- Pamje ekrani e padisponueshme: import në pritje për sajt të vetëm në listë -->
+
+Mund ta ndaloni procesin duke klikuar **Anulo importin**.
+
+<!-- Pamje ekrani e padisponueshme: butoni Anulo importin për të ndaluar procesin e importit -->
+
+Pasi procesi të ketë përfunduar, sajti juaj do të zëvendësohet nga sajti që sapo keni importuar.

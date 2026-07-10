@@ -4,22 +4,22 @@ title: Filter - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled
+# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 Дазваляе раробнікам плагінаў прымусова ўсталяваць пэўны стан для адаптэра MCP.
 
-## Параметры
+## Параметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
 | $enabled | `bool` | Ці ўключаны адаптэр MCP. |
 
-### З
+### З {#since}
 
 - 2.5.0
-### Выказчык
+### Выказчык {#source}
 
 Вызначаны ў [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) у 250-й пасылцы.
 
 
-## Паваротнікі
+## Паваротнікі {#returns}

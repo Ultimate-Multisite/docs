@@ -1,130 +1,138 @@
 ---
-title: డొమైన్ మ్యాపింగ్‌ని ఎలా కాన్ఫిగర్ చేయాలి
+title: డొమైన్ మ్యాపింగ్‌ను ఎలా కాన్ఫిగర్ చేయాలి
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# డొమైన్ మ్యాపింగ్ కాన్ఫిగర్ చేయడం ఎలా (v2)
+# డొమైన్ మ్యాపింగ్‌ను ఎలా కాన్ఫిగర్ చేయాలి (v2) {#how-to-configure-domain-mapping-v2}
 
-_**ముఖ్యమైన గమనిక: ఈ ఆర్టికల్ Ultimate Multisite వెర్షన్ 2.x గురించి చెప్తుంది.**_
+_**ముఖ్యమైన గమనిక: ఈ వ్యాసం Ultimate Multisite version 2.x గురించి.**_
 
-ప్రీమియం నెట్‌వర్క్ యొక్క అత్యంత శక్తివంతమైన ఫీచర్లలో ఒకటి మా క్లయింట్‌లకు వారి సైట్‌లకు టాప్-లెవెల్ డొమైన్ అటాచ్ చేసే అవకాశం ఇవ్వడం. చివరికి, ఏది మరింత ప్రొఫెషనల్‌గా కనిపిస్తుంది: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) లేదా [_**joesbikeshop.com**_](http://joesbikeshop.com)? అందుకే Ultimate Multisite ఈ ఫీచర్‌ను బిల్ట్-ఇన్‌గా అందిస్తుంది, థర్డ్-పార్టీ plugins అవసరం లేకుండా.
+ప్రీమియం నెట్‌వర్క్‌లోని అత్యంత శక్తివంతమైన ఫీచర్లలో ఒకటి, మా క్లయింట్లకు వారి సైట్లకు టాప్-లెవల్ డొమైన్‌ను జోడించుకునే అవకాశం ఇవ్వడం. చివరికి, ఏది మరింత ప్రొఫెషనల్‌గా కనిపిస్తుంది: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) లేదా [_**joesbikeshop.com**_](http://joesbikeshop.com)? అందుకే Ultimate Multisite ఈ ఫీచర్‌ను మూడవ పక్ష plugins అవసరం లేకుండానే అందిస్తుంది.
 
-## డొమైన్ మ్యాపింగ్ అంటే ఏమిటి?
+## డొమైన్ మ్యాపింగ్ అంటే ఏమిటి? {#whats-domain-mapping}
 
-పేరు సూచించినట్లుగా, డొమైన్ మ్యాపింగ్ అనేది Ultimate Multisite అందించే సామర్థ్యం - ఇది కస్టమ్ డొమైన్ కోసం వచ్చిన రిక్వెస్ట్‌ను తీసుకొని, ఆ నిర్దిష్ట డొమైన్ అటాచ్ అయిన నెట్‌వర్క్‌లోని సంబంధిత సైట్‌కు మ్యాప్ చేస్తుంది.
+పేరు సూచించినట్లే, డొమైన్ మ్యాపింగ్ అనేది కస్టమ్ డొమైన్ కోసం వచ్చిన అభ్యర్థనను స్వీకరించి, ఆ నిర్దిష్ట డొమైన్ జోడించబడిన నెట్‌వర్క్‌లోని సంబంధిత సైట్‌కు ఆ అభ్యర్థనను మ్యాప్ చేసే Ultimate Multisite అందించే సామర్థ్యం.
 
-### మీ Ultimate Multisite నెట్‌వర్క్‌లో డొమైన్ మ్యాపింగ్ సెటప్ చేయడం ఎలా
+### మీ Ultimate Multisite నెట్‌వర్క్‌లో డొమైన్ మ్యాపింగ్‌ను ఎలా సెటప్ చేయాలి {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-డొమైన్ మ్యాపింగ్ పని చేయడానికి మీ వైపు కొంత సెటప్ అవసరం. అదృష్టవశాత్తూ, Ultimate Multisite కష్టమైన పనిని మీ కోసం ఆటోమేట్ చేస్తుంది, తద్వారా మీరు అవసరాలను సులభంగా తీర్చవచ్చు.
+డొమైన్ మ్యాపింగ్ పని చేయడానికి మీవైపు కొంత సెటప్ అవసరం. అదృష్టవశాత్తూ, Ultimate Multisite కఠినమైన పనిని మీ కోసం ఆటోమేట్ చేస్తుంది, కాబట్టి మీరు అవసరాలను సులభంగా పూర్తి చేయవచ్చు.
 
-Ultimate Multisite ఇన్‌స్టాలేషన్ సమయంలో, విజార్డ్ ఆటోమేటిక్‌గా **sunrise.php** ను నిర్దేశించిన ఫోల్డర్‌కు కాపీ చేసి ఇన్‌స్టాల్ చేస్తుంది. **ఈ స్టెప్ పూర్తయ్యే వరకు విజార్డ్ మిమ్మల్ని ముందుకు వెళ్ళనివ్వదు**.
+Ultimate Multisite ఇన్‌స్టాలేషన్ సమయంలో, విజార్డ్ **sunrise.php** ను నిర్దేశిత ఫోల్డర్‌కు స్వయంచాలకంగా కాపీ చేసి ఇన్‌స్టాల్ చేస్తుంది. **ఈ దశ పూర్తయ్యే వరకు విజార్డ్ మిమ్మల్ని ముందుకు వెళ్లనివ్వదు**.
 
-![sunrise.php స్టెప్‌తో Ultimate Multisite ఇన్‌స్టాలేషన్ విజార్డ్](/img/config/settings-domain-mapping.png)
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-అంటే Ultimate Multisite ఇన్‌స్టాలేషన్ విజార్డ్ మీ నెట్‌వర్క్ సెటప్ చేయడం పూర్తయిన తర్వాత, మీరు వెంటనే కస్టమ్ డొమైన్ మ్యాపింగ్ ప్రారంభించవచ్చు.
+దీని అర్థం, Ultimate Multisite ఇన్‌స్టాలేషన్ విజార్డ్ మీ నెట్‌వర్క్‌ను సెటప్ చేయడం పూర్తిచేసిన వెంటనే, మీరు కస్టమ్ డొమైన్‌ను వెంటనే మ్యాప్ చేయడం ప్రారంభించవచ్చు.
 
-Ultimate Multisite లో డొమైన్ మ్యాపింగ్ తప్పనిసరి కాదని గమనించండి. మీకు WordPress Multisite నేటివ్ డొమైన్ మ్యాపింగ్ ఫంక్షన్ లేదా ఏదైనా ఇతర డొమైన్ మ్యాపింగ్ సొల్యూషన్ ఉపయోగించే ఆప్షన్ ఉంది.
+Ultimate Multisite లో డొమైన్ మ్యాపింగ్ తప్పనిసరి కాదని గమనించండి. WordPress Multisite స్థానిక డొమైన్ మ్యాపింగ్ ఫంక్షన్ లేదా మరే ఇతర డొమైన్ మ్యాపింగ్ పరిష్కారాన్ని ఉపయోగించే ఎంపిక మీకు ఉంది.
 
-ఇతర డొమైన్ మ్యాపింగ్ సొల్యూషన్‌లకు మార్గం ఇవ్వడానికి Ultimate Multisite డొమైన్ మ్యాపింగ్‌ను డిసేబుల్ చేయాల్సి వస్తే, మీరు ఈ ఫీచర్‌ను **Ultimate Multisite > Settings > Domain Mapping** కింద డిసేబుల్ చేయవచ్చు.
+ఇతర డొమైన్ మ్యాపింగ్ పరిష్కారాలకు అవకాశం ఇవ్వడానికి Ultimate Multisite డొమైన్ మ్యాపింగ్‌ను నిలిపివేయాల్సి వస్తే, మీరు ఈ ఫీచర్‌ను **Ultimate Multisite > Settings > Domain Mapping** కింద నిలిపివేయవచ్చు.
 
-![ఎనేబుల్ టాగుల్‌తో Domain Mapping సెట్టింగ్‌లు](/img/config/settings-domain-mapping.png)
+![అడ్మిన్ రీడైరెక్ట్, మ్యాపింగ్ సందేశం మరియు DNS ఎంపికలను చూపిస్తున్న డొమైన్ మ్యాపింగ్ సెట్టింగ్స్ పేజీ](/img/config/domain-mapping-settings.png)
 
-ఈ ఆప్షన్ కింద, మీరు **Force Admin Redirect** ఆప్షన్ కూడా చూడవచ్చు. ఈ ఆప్షన్ మీ కస్టమర్‌లు వారి admin dashboard ను వారి కస్టమ్ డొమైన్ మరియు సబ్‌డొమైన్ రెండింటిలోనూ యాక్సెస్ చేయగలరా లేదా వాటిలో ఒకదానిలో మాత్రమే యాక్సెస్ చేయగలరా అనేది నియంత్రించడానికి అనుమతిస్తుంది.
+ఈ ఎంపికకు కిందనే, మీరు **Force Admin Redirect** అనే ఎంపికను కూడా చూడవచ్చు. మీ కస్టమర్లు తమ కస్టమ్ డొమైన్ మరియు సబ్‌డొమైన్ రెండింటిలోనూ తమ అడ్మిన్ డాష్‌బోర్డ్‌ను యాక్సెస్ చేయగలరా, లేక వాటిలో ఒక్కదానిలో మాత్రమే యాక్సెస్ చేయగలరా అనే విషయాన్ని నియంత్రించడానికి ఈ ఎంపిక మీకు సహాయపడుతుంది.
 
-మీరు **Force redirect to mapped domain** ఎంచుకుంటే, మీ కస్టమర్‌లు వారి admin dashboard ను వారి కస్టమ్ డొమైన్‌లలో మాత్రమే యాక్సెస్ చేయగలరు.
+మీరు **Force redirect to mapped domain** ఎంచుకుంటే, మీ కస్టమర్లు తమ కస్టమ్ డొమైన్లలో మాత్రమే తమ అడ్మిన్ డాష్‌బోర్డ్‌ను యాక్సెస్ చేయగలరు.
 
-**Force redirect to network domain** ఆప్షన్ సరిగ్గా వ్యతిరేక పని చేస్తుంది - మీ కస్టమర్‌లు వారి కస్టమ్ డొమైన్‌లలో సైన్ ఇన్ చేయడానికి ప్రయత్నించినా కూడా, వారి సబ్‌డొమైన్‌లో మాత్రమే వారి dashboards ను యాక్సెస్ చేయడానికి అనుమతించబడతారు.
+**Force redirect to** **network domain** ఎంపిక పూర్తిగా విరుద్ధంగా పనిచేస్తుంది - మీ కస్టమర్లు తమ కస్టమ్ డొమైన్లలో సైన్ ఇన్ చేయడానికి ప్రయత్నించినా, తమ సబ్‌డొమైన్‌లో మాత్రమే తమ డాష్‌బోర్డులను యాక్సెస్ చేయడానికి అనుమతించబడతారు.
 
-మరియు **Allow access to the admin by both mapped domain and network domain** ఆప్షన్ వారిని సబ్‌డొమైన్ మరియు కస్టమ్ డొమైన్ రెండింటిలోనూ వారి admin dashboards ను యాక్సెస్ చేయడానికి అనుమతిస్తుంది.
+మరియు **Allow access to the admin by both mapped domain domain and network domain** ఎంపిక, వారికి సబ్‌డొమైన్ మరియు కస్టమ్ డొమైన్ రెండింటిలోనూ తమ అడ్మిన్ డాష్‌బోర్డులను యాక్సెస్ చేయడానికి అనుమతిస్తుంది.
 
-![డొమైన్ మ్యాపింగ్ కోసం Force Admin Redirect ఆప్షన్‌లు](/img/config/settings-domain-mapping.png)
+![మూడు రీడైరెక్ట్ ఎంపికలను చూపిస్తూ విస్తరించిన అడ్మిన్ రీడైరెక్ట్ డ్రాప్‌డౌన్](/img/config/domain-mapping-redirect-options.png)
 
-కస్టమ్ డొమైన్ మ్యాప్ చేయడానికి రెండు మార్గాలు ఉన్నాయి. మొదటిది super admin గా మీ network admin dashboard నుండి డొమైన్ పేరును మ్యాప్ చేయడం మరియు రెండవది account పేజీ కింద subsite admin dashboard ద్వారా.
+కస్టమ్ డొమైన్‌ను మ్యాప్ చేయడానికి రెండు మార్గాలు ఉన్నాయి. మొదటిది, super admin గా మీ నెట్‌వర్క్ అడ్మిన్ డాష్‌బోర్డ్ నుండి డొమైన్ పేరును మ్యాప్ చేయడం. రెండవది, Account పేజీ కింద ఉన్న సబ్‌సైట్ అడ్మిన్ డాష్‌బోర్డ్ ద్వారా చేయడం.
 
-కానీ మీ నెట్‌వర్క్‌లోని subsites లో ఒకదానికి కస్టమ్ డొమైన్ మ్యాపింగ్ ప్రారంభించే ముందు, డొమైన్ పేరు యొక్క **DNS సెట్టింగ్‌లు** సరిగ్గా కాన్ఫిగర్ చేయబడ్డాయని మీరు నిర్ధారించుకోవాలి.
+కానీ మీ నెట్‌వర్క్‌లోని సబ్‌సైట్లలో ఒకదానికి కస్టమ్ డొమైన్‌ను మ్యాప్ చేయడం ప్రారంభించే ముందు, ఆ డొమైన్ పేరుకు సంబంధించిన **DNS settings** సరిగా కాన్ఫిగర్ చేయబడ్డాయో లేదో నిర్ధారించాలి.
 
-### 
+###
 
-### డొమైన్ DNS సెట్టింగ్‌లు సరిగ్గా కాన్ఫిగర్ చేయబడ్డాయని నిర్ధారించుకోవడం
+### డొమైన్ DNS సెట్టింగ్స్ సరిగా కాన్ఫిగర్ చేయబడ్డాయని నిర్ధారించుకోవడం {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-మ్యాపింగ్ పని చేయడానికి, మీరు మ్యాప్ చేయాలనుకుంటున్న డొమైన్ మీ నెట్‌వర్క్ యొక్క IP అడ్రస్‌కు పాయింట్ అవుతుందని నిర్ధారించుకోవాలి. మీకు నెట్‌వర్క్ IP అడ్రస్ అవసరమని గమనించండి - Ultimate Multisite ఇన్‌స్టాల్ చేయబడిన డొమైన్ యొక్క IP అడ్రస్ - మీరు మ్యాప్ చేయాలనుకుంటున్న కస్టమ్ డొమైన్ యొక్క IP అడ్రస్ కాదు. నిర్దిష్ట డొమైన్ యొక్క IP అడ్రస్ కోసం వెతకడానికి, ఉదాహరణకు [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) కి వెళ్ళమని మేము సూచిస్తున్నాము.
+మ్యాపింగ్ పనిచేయాలంటే, మీరు మ్యాప్ చేయాలని భావిస్తున్న డొమైన్ మీ నెట్‌వర్క్ IP చిరునామాను సూచిస్తున్నదని నిర్ధారించాలి. మీకు అవసరమైనది నెట్‌వర్క్ IP చిరునామా అని గమనించండి - అంటే Ultimate Multisite ఇన్‌స్టాల్ చేసిన డొమైన్ యొక్క IP చిరునామా - మీరు మ్యాప్ చేయాలనుకుంటున్న కస్టమ్ డొమైన్ యొక్క IP చిరునామా కాదు. నిర్దిష్ట డొమైన్ యొక్క IP చిరునామాను వెతకడానికి, ఉదాహరణకు [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) కు వెళ్లాలని మేము సూచిస్తున్నాము.
 
-డొమైన్‌ను సరిగ్గా మ్యాప్ చేయడానికి, మీరు ఆ **IP అడ్రస్**కు పాయింట్ చేస్తూ మీ **DNS** కాన్ఫిగరేషన్‌లో **A RECORD** జోడించాలి. DNS మేనేజ్‌మెంట్ వేర్వేరు domain registrars మధ్య చాలా భిన్నంగా ఉంటుంది, కానీ "_Creating A Record on XXXX_" అని సెర్చ్ చేస్తే దీన్ని కవర్ చేసే చాలా ట్యుటోరియల్స్ ఆన్‌లైన్‌లో ఉన్నాయి, ఇక్కడ XXXX మీ domain registrar (ఉదా.: "_Creating A Record on GoDaddy_").
+డొమైన్‌ను సరిగ్గా మ్యాప్ చేయడానికి, మీ **DNS** కాన్ఫిగరేషన్‌లో ఆ **IP చిరునామా** ను సూచించే **A RECORD** ను జోడించాలి. వేర్వేరు డొమైన్ రిజిస్ట్రార్లలో DNS నిర్వహణ చాలా భిన్నంగా ఉంటుంది. కానీ మీరు మీ డొమైన్ రిజిస్ట్రార్ స్థానంలో XXXX పెట్టి " _Creating A Record on XXXX_ " అని వెతికితే, దీని గురించి ఆన్‌లైన్‌లో చాలానే ట్యుటోరియల్స్ లభిస్తాయి (ఉదా.: " _Creating A Record on_ _GoDaddy_ ").
 
-దీన్ని పని చేయించడంలో మీకు సమస్య ఉంటే, **మీ domain registrar support ను సంప్రదించండి** మరియు వారు ఈ భాగంలో మీకు సహాయం చేయగలరు.
+ఇది పని చేయించడంలో మీకు ఇబ్బంది ఉంటే, **మీ డొమైన్ రిజిస్ట్రార్ సపోర్ట్‌ను సంప్రదించండి**. ఈ భాగంలో వారు మీకు సహాయం చేయగలరు.
 
-మీ క్లయింట్‌లకు వారి స్వంత డొమైన్‌లను మ్యాప్ చేయడానికి అనుమతించాలని మీరు ప్లాన్ చేస్తే, వారు ఈ భాగంలో పనిని స్వయంగా చేయాలి. A Record క్రియేట్ చేయడం వారికి సాధ్యం కాకపోతే వారిని వారి registrar support system వైపు దర్శించండి.
+మీరు మీ క్లయింట్లు తమ స్వంత డొమైన్లను మ్యాప్ చేసుకునేందుకు అనుమతించాలని భావిస్తే, ఈ భాగంలో అవసరమైన పనిని వారు స్వయంగా చేయాలి. వారు A Record సృష్టించలేకపోతే, వారిని వారి రిజిస్ట్రార్ సపోర్ట్ వ్యవస్థవైపు మార్గనిర్దేశం చేయండి.
 
-### Super Admin గా కస్టమ్ డొమైన్ పేరు మ్యాపింగ్ చేయడం
+### Super Admin గా కస్టమ్ డొమైన్ పేరును మ్యాప్ చేయడం {#mapping-custom-domain-name-as-super-admin}
 
-మీరు మీ నెట్‌వర్క్‌లో super admin గా లాగిన్ అయినప్పుడు, మీరు **Ultimate Multisite > Domains** కింద వెళ్ళడం ద్వారా సులభంగా కస్టమ్ డొమైన్ పేర్లను జోడించవచ్చు మరియు మేనేజ్ చేయవచ్చు.
+మీ నెట్‌వర్క్‌లో super admin గా లాగిన్ అయినప్పుడు, **Ultimate Multisite > Domains** కిందకు వెళ్లి కస్టమ్ డొమైన్ పేర్లను సులభంగా జోడించి నిర్వహించవచ్చు.
 
-![Ultimate Multisite లో Domains లిస్ట్ పేజీ](/img/admin/domains-list.png)
+![Ultimate Multisite లో డొమైన్ల జాబితా పేజీ](/img/admin/domains-list.png)
 
-ఈ పేజీ కింద, మీరు పైన ఉన్న **Add Domain** బటన్ క్లిక్ చేయవచ్చు మరియు ఇది **కస్టమ్ డొమైన్ పేరు**, మీరు కస్టమ్ డొమైన్ పేరు వర్తింపజేయాలనుకుంటున్న **subsite**, మరియు దీన్ని **primary domain** పేరుగా సెట్ చేయాలా వద్దా అనేది సెట్ చేసి పూరించగల modal window తెస్తుంది (మీరు **ఒక subsite కి అనేక డొమైన్ పేర్లను మ్యాప్ చేయవచ్చని** గమనించండి).
+ఈ పేజీలో, పైభాగంలో ఉన్న **Add Domain** బటన్‌ను క్లిక్ చేయవచ్చు. అప్పుడు ఒక మోడల్ విండో తెరుచుకుంటుంది. అందులో మీరు **కస్టమ్ డొమైన్ పేరు**, కస్టమ్ డొమైన్ పేరును వర్తింపజేయాలనుకునే **సబ్‌సైట్** ను సెట్ చేసి పూరించవచ్చు, అలాగే దాన్ని **ప్రధాన డొమైన్** పేరుగా సెట్ చేయాలా వద్దా అని నిర్ణయించవచ్చు (ఒక సబ్‌సైట్‌కు **అనేక డొమైన్ పేర్లను మ్యాప్** చేయవచ్చని గమనించండి).
 
-![డొమైన్ పేరు మరియు సైట్ ఫీల్డ్‌లతో Add Domain modal](/img/admin/domains-list.png)
+![డొమైన్ పేరు, సైట్ ఎంపిక, ప్రధాన డొమైన్ టోగుల్‌తో Add Domain మోడల్](/img/admin/domain-add-modal.png)
 
-అన్ని సమాచారాన్ని పెట్టిన తర్వాత, మీరు దిగువన ఉన్న **Add Existing Domain** బటన్ క్లిక్ చేయవచ్చు.
+అన్ని సమాచారాన్ని నమోదు చేసిన తరువాత, దిగువన ఉన్న **Add Existing Domain** బటన్‌ను క్లిక్ చేయవచ్చు.
 
-ఇది కస్టమ్ డొమైన్ యొక్క DNS సమాచారాన్ని వెరిఫై చేయడం మరియు ఫెచ్ చేయడం ప్రక్రియను ప్రారంభిస్తుంది. ఇది ఏ ప్రక్రియ గుండా వెళ్తుందో ఫాలో అవ్వడానికి పేజీ దిగువన మీరు లాగ్ కూడా చూస్తారు. ఈ ప్రక్రియ పూర్తవ్వడానికి కొన్ని నిమిషాలు పట్టవచ్చు.
+ఇది కస్టమ్ డొమైన్ యొక్క DNS సమాచారాన్ని ధృవీకరించి తీసుకురావడం ప్రారంభిస్తుంది. ప్రక్రియ ఎలా సాగుతోందో అనుసరించడానికి పేజీ దిగువన ఒక లాగ్‌ను కూడా మీరు చూస్తారు. ఈ ప్రక్రియ పూర్తవడానికి కొన్ని నిమిషాలు పట్టవచ్చు.
 
-ప్రతిదీ సరిగ్గా సెటప్ చేయబడితే **Stage** లేదా స్టేటస్ **Checking DNS** నుండి **Ready** కి మారాలి.
+Ultimate Multisite v2.13.0 కొత్త site సృష్టించినప్పుడు, ఆ host‌ను ప్రతి-site డొమైన్‌గా పరిగణించాల్సి ఉంటే, అంతర్గత డొమైన్ రికార్డును కూడా స్వయంచాలకంగా సృష్టిస్తుంది. host నెట్‌వర్క్ ప్రధాన డొమైన్ అయితే, లేదా **Site URL** field‌లో కాన్ఫిగర్ చేసిన పంచుకున్న checkout-form base డొమైన్‌లలో ఒకటి అయితే, ప్రతి site దాన్ని ఉపయోగించుకునేలా ఆ పంచుకున్న base డొమైన్ అందుబాటులో ఉండేందుకు స్వయంచాలక mapped-domain రికార్డు దాటవేయబడుతుంది.
 
-![Checking DNS నుండి Ready కి మారుతున్న Domain stage](/img/admin/domains-list.png)
+కస్టమర్ Domain Seller v1.3.0 లేదా దానికంటే కొత్తదానితో కొత్త డొమైన్‌ను నమోదు చేసినప్పుడు, Ultimate Multisite డిఫాల్ట్‌గా నమోదు చేసిన డొమైన్‌ను కస్టమర్ network site‌కు స్వయంచాలకంగా map చేస్తుంది. విజయవంతమైన నమోదు తర్వాత primary-domain flag, activation state, లేదా SSL handling వంటి ఎంపికలను సర్దుబాటు చేయాలనుకుంటే తప్ప, administrators ఇకపై వేరే mapped-domain రికార్డు జోడించాల్సిన అవసరం లేదు.
 
-![Domains లిస్ట్‌లో Ready స్టేటస్‌తో ఉన్న Domain](/img/admin/domains-list.png)
+అన్నీ సరిగ్గా setup చేయబడితే **Stage** లేదా status **Checking DNS** నుండి **Ready**కి మారాలి.
 
-మీరు డొమైన్ పేరు క్లిక్ చేస్తే, లోపల కొన్ని ఆప్షన్‌లు చూడగలుగుతారు. వాటిని త్వరగా చూద్దాం:
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: domains జాబితాలో Checking DNS stage చూపిస్తున్న domain row -->
 
-![stage, site, active, మరియు SSL ఆప్షన్‌లతో Domain detail పేజీ](/img/admin/domains-list.png)
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: ఆకుపచ్చ status indicator‌తో Ready stage చూపిస్తున్న domain row -->
 
-**Stage:** డొమైన్ ఉన్న దశ ఇది. మీరు డొమైన్‌ను మొదట జోడించినప్పుడు, ఇది బహుశా **Checking DNS** దశలో ఉంటుంది. ప్రక్రియ DNS ఎంట్రీలను తనిఖీ చేసి అవి సరైనవని నిర్ధారిస్తుంది. తర్వాత, డొమైన్ **Checking SSL** దశలో ఉంచబడుతుంది. Ultimate Multisite డొమైన్‌కు SSL ఉందా లేదా అని తనిఖీ చేసి మీ డొమైన్‌ను **Ready** లేదా **Ready (without SSL)** గా వర్గీకరిస్తుంది.
+మీరు డొమైన్ పేరుపై క్లిక్ చేస్తే, దాని లోపల కొన్ని ఎంపికలను చూడగలరు. వాటిని త్వరగా చూద్దాం:
 
-**Site:** ఈ డొమైన్‌తో అనుబంధించబడిన subdomain. మ్యాప్ చేయబడిన డొమైన్ ఈ నిర్దిష్ట సైట్ యొక్క కంటెంట్‌ను చూపిస్తుంది.
+![stage, site, active, primary మరియు SSL toggles‌తో domain detail page](/img/admin/domain-edit.png)
 
-**Active:** డొమైన్‌ను యాక్టివేట్ లేదా డీయాక్టివేట్ చేయడానికి మీరు ఈ ఆప్షన్‌ను ఆన్ లేదా ఆఫ్ టాగుల్ చేయవచ్చు.
+**Stage:** ఇది డొమైన్ ప్రస్తుతం ఉన్న stage. మీరు మొదట డొమైన్‌ను జోడించినప్పుడు, అది బహుశా **Checking DNS** stage‌లో ఉంటుంది. ప్రక్రియ DNS entries‌ను తనిఖీ చేసి అవి సరైనవని నిర్ధారిస్తుంది. తర్వాత, డొమైన్ **Checking SSL** stage‌కు మార్చబడుతుంది. Ultimate Multisite డొమైన్‌లో SSL ఉందా లేదా అని తనిఖీ చేసి, మీ డొమైన్‌ను **Ready** లేదా **Ready (without SSL)**గా వర్గీకరిస్తుంది.
 
-**Is Primary Domain?:** మీ కస్టమర్‌లు ప్రతి సైట్‌కు ఒకటి కంటే ఎక్కువ మ్యాప్ చేయబడిన డొమైన్‌లు కలిగి ఉండవచ్చు. ఇది నిర్దిష్ట సైట్ కోసం primary domain అవునా అని ఎంచుకోవడానికి ఈ ఆప్షన్ ఉపయోగించండి.
+**Site:** ఈ డొమైన్‌కు అనుబంధించిన subdomain. mapped domain ఈ నిర్దిష్ట site కంటెంట్‌ను చూపిస్తుంది.
 
-**Is Secure?:** Ultimate Multisite ఎనేబుల్ చేయడానికి ముందు డొమైన్‌కు SSL సర్టిఫికేట్ ఉందా లేదా అని తనిఖీ చేసినప్పటికీ, మీరు SSL సర్టిఫికేట్‌తో లేదా లేకుండా డొమైన్‌ను లోడ్ చేయడానికి మాన్యువల్‌గా ఎంచుకోవచ్చు. వెబ్‌సైట్‌కు SSL సర్టిఫికేట్ లేకపోతే మరియు మీరు SSL తో ఫోర్స్ లోడ్ చేయడానికి ప్రయత్నిస్తే, ఇది మీకు ఎర్రర్‌లు ఇవ్వవచ్చని గమనించండి.
+**Active:** డొమైన్‌ను activate లేదా deactivate చేయడానికి మీరు ఈ ఎంపికను on లేదా off చేయవచ్చు.
 
-### Subsite యూజర్ గా కస్టమ్ డొమైన్ పేరు మ్యాపింగ్ చేయడం
+**Is Primary Domain?:** మీ కస్టమర్‌లకు ప్రతి site కోసం ఒకటి కంటే ఎక్కువ mapped domain ఉండవచ్చు. ఇది ఆ నిర్దిష్ట site కోసం primary domain అవుతుందా లేదా ఎంచుకోవడానికి ఈ ఎంపికను ఉపయోగించండి.
 
-Subsite administrators కూడా వారి subsite admin dashboard నుండి కస్టమ్ డొమైన్ పేర్లను మ్యాప్ చేయవచ్చు.
+**Is Secure?:** Ultimate Multisite డొమైన్‌ను enable చేయడానికి ముందు దానిలో SSL certificate ఉందా లేదా తనిఖీ చేసినప్పటికీ, మీరు డొమైన్‌ను SSL certificate‌తో లేదా లేకుండా load చేయాలని manually ఎంచుకోవచ్చు. website‌కు SSL certificate లేకపోయినా మీరు దాన్ని SSL‌తో బలవంతంగా load చేయడానికి ప్రయత్నిస్తే, errors రావచ్చని గమనించండి.
 
-ముందుగా, మీరు **Domain mapping** సెట్టింగ్‌ల కింద ఈ ఆప్షన్‌ను ఎనేబుల్ చేశారని నిర్ధారించుకోవాలి. దిగువ స్క్రీన్‌షాట్ చూడండి.
+### Subsite user‌గా custom domain name mapping చేయడం {#mapping-custom-domain-name-as-subsite-user}
 
-![Subsite యూజర్‌లు డొమైన్‌లను మ్యాప్ చేయడానికి అనుమతించే Domain mapping సెట్టింగ్‌లు](/img/config/settings-domain-mapping.png)
+Subsite administrators తమ subsite admin dashboard నుండి కూడా custom domain names‌ను map చేయగలరు.
 
-మీరు **Ultimate Multisite > Products** లో **Plan** లెవెల్ లేదా product options కింద కూడా ఈ ఆప్షన్‌ను సెట్ చేయవచ్చు లేదా కాన్ఫిగర్ చేయవచ్చు.
+ముందుగా, **Domain mapping** settings క్రింద ఈ ఎంపికను enable చేశారని నిర్ధారించుకోవాలి. క్రింది స్క్రీన్‌షాట్‌ను చూడండి.
 
-![Product సెట్టింగ్‌లలో Product custom domains ఆప్షన్](/img/config/settings-domain-mapping.png)
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: Customer DNS Management toggle ద్వారా subsite users domains‌ను map చేయడానికి అనుమతించే Domain mapping settings -->
 
-ఆ ఆప్షన్‌లలో ఏదైనా ఎనేబుల్ చేయబడి, subsite యూజర్‌కు కస్టమ్ డొమైన్ పేర్లు మ్యాప్ చేయడానికి అనుమతించబడితే, subsite యూజర్ **Account** పేజీ కింద **Domains** అనే metabox చూడాలి.
+మీరు ఈ ఎంపికను **Plan** level క్రింద లేదా **Ultimate Multisite > Products**లో product options‌లో కూడా set లేదా configure చేయవచ్చు.
 
-![Subsite account పేజీలో Domains metabox](/img/admin/domains-list.png)
+![product edit pageలో Custom Domains విభాగం](/img/config/product-custom-domains.png)
 
-యూజర్ **Add Domain** బటన్ క్లిక్ చేయవచ్చు మరియు ఇది కొన్ని ఇన్‌స్ట్రక్షన్‌లతో modal window తెస్తుంది.
+ఆ ఎంపికల్లో ఏదైనా enable చేసి, subsite user‌కు custom domain names‌ను map చేయడానికి అనుమతి ఉంటే, subsite user **Account** page క్రింద **Domains** అనే metabox‌ను చూడాలి.
 
-![Subsite యూజర్‌ల కోసం DNS ఇన్‌స్ట్రక్షన్‌లతో Add Domain modal](/img/admin/domains-list.png)
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: Add Domain button‌తో subsite Account pageలో Domains metabox -->
 
-యూజర్ **Next Step** క్లిక్ చేసి కస్టమ్ డొమైన్ పేరు జోడించడానికి ముందుకు వెళ్ళవచ్చు. ఇది primary domain అవుతుందా లేదా అని కూడా వారు ఎంచుకోవచ్చు.
+user **Add Domain** button‌ను క్లిక్ చేయవచ్చు. అది కొన్ని సూచనలతో modal window‌ను తెస్తుంది.
 
-![Primary domain ఆప్షన్‌తో Add custom domain name ఫీల్డ్](/img/admin/domains-list.png)
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: subsite users కోసం DNS A-record సూచనలు చూపించే Add Domain modal -->
 
-![DNS verification ప్రారంభించడానికి Add Domain క్లిక్ చేయండి](/img/admin/domains-list.png)**Add Domain** క్లిక్ చేయడం కస్టమ్ డొమైన్ యొక్క DNS సమాచారాన్ని వెరిఫై చేయడం మరియు ఫెచ్ చేయడం ప్రక్రియను ప్రారంభిస్తుంది.
+తర్వాత user **Next Step**ను క్లిక్ చేసి custom domain name జోడించడానికి కొనసాగవచ్చు. ఇది primary domain అవుతుందా లేదా అని కూడా ఎంచుకోవచ్చు.
 
-### Domain Syncing గురించి
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: custom domain name field మరియు primary domain toggle‌తో Add Domain form -->
 
-Domain Syncing అనేది **డొమైన్ మ్యాపింగ్ పని చేయడానికి** Ultimate Multisite మీ hosting account కు add-on domain గా కస్టమ్ డొమైన్ పేరును జోడించే ప్రక్రియ.
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: DNS verification‌ను trigger చేసే Add Domain confirmation step -->
 
-మీ hosting provider కు Ultimate Multisite domain mapping feature తో integration ఉంటే Domain syncing ఆటోమేటిక్‌గా జరుగుతుంది. ప్రస్తుతం, ఈ hosting providers _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ మరియు _Cpanel._
+**Add Domain**ను క్లిక్ చేయడం custom domain యొక్క DNS సమాచారాన్ని verify చేసి fetch చేసే ప్రక్రియను ప్రారంభిస్తుంది.
 
-మీరు ఈ integration ను **Integration** tab కింద Ultimate Multisite settings లో యాక్టివేట్ చేయాలి.
+### Domain Syncing గురించి {#about-domain-syncing}
 
-![Ultimate Multisite settings లో Integration tab](/img/config/settings-domain-mapping.png)
+Domain Syncing అనేది **domain mapping పని చేయడానికి** Ultimate Multisite మీ hosting account‌కు custom domain name‌ను add-on domain‌గా జోడించే ప్రక్రియ.
 
-![Domain syncing కోసం Hosting provider integration సెట్టింగ్‌లు](/img/config/settings-domain-mapping.png)
+మీ hosting provider‌కు Ultimate Multisite domain mapping feature‌తో integration ఉంటే domain syncing స్వయంచాలకంగా జరుగుతుంది. ప్రస్తుతం ఈ hosting providers _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ మరియు _Cpanel._
 
-_మీ hosting provider పైన పేర్కొన్న providers లో ఒకటి కాకపోతే, **మీరు మాన్యువల్‌గా డొమైన్ పేరును** మీ hosting account కు sync లేదా add చేయాల్సి ఉంటుందని గమనించండి._
+host-provider integration active‌గా ఉన్నప్పుడు, కొత్తగా సృష్టించిన sites కోసం provider-side DNS లేదా subdomain creation task‌ను Ultimate Multisite enqueue చేయగలదు. ఆ task కోసం ఏ integration వినకపోతే, no-op queue entries‌ను నివారించడానికి background job దాటవేయబడుతుంది. mapped domains కోసం DNS మరియు SSL checks సాధారణ domain-stage process ద్వారా కొనసాగుతాయి.
+
+మీరు ఈ integration‌ను Ultimate Multisite settingsలో **Integration** tab క్రింద activate చేయాలి.
+
+![hosting providers‌ను చూపిస్తున్న Ultimate Multisite settingsలో Integrations tab](/img/config/integrations-tab.png)
+
+<!-- స్క్రీన్‌షాట్ అందుబాటులో లేదు: Integrations settings tabలో Hosting provider Configuration links -->
+
+_మీ hosting provider పైన పేర్కొన్న providers‌లో ఒకటి కాకపోతే, **మీరు domain name‌ను manually sync చేయాలి లేదా మీ hosting account‌కు జోడించాలి** అని గమనించండి._

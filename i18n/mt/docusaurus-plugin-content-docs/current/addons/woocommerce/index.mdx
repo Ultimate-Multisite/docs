@@ -1,0 +1,109 @@
+---
+title: Integrazzjoni ta’ WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Integrazzjoni ma' WooCommerce {#woocommerce-integration}
+
+L-Integrazzjoni ma' WooCommerce taħdem b'mod simili ħafna għall-mod kif jaħdem il-Manual Gateway tagħna. Toffri ħafna flessibbiltà lill-utenti tiegħek, billi tippermettilhom jagħżlu kwalunkwe waħda mill-formoli ta' ħlas disponibbli fuq l-installazzjoni WooCommerce tiegħek. U hija sempliċi: ladarba jintemm il-perjodu tal-kontijiet tal-utent, is-subscription tal-utent titqiegħed fuq hold. Fl-istess ħin, tinħoloq order fuq l-installazzjoni WooCommerce tas-sit ewlieni tan-network. Imbagħad l-utent jirċievi fattura fl-email tiegħu, b'link biex iwettaq il-ħlas. Ladarba l-ħlas jiġi riċevut, is-subscription tiġġedded.
+
+## Karatteristiċi {#features}
+
+- Integrazzjoni faċli bejn Ultimate Multisite u WooCommerce
+- Diversi metodi ta' ħlas disponibbli
+- Kontijiet rikorrenti awtomatizzati bl-użu tal-core tas-subscriptions inkluż, b'titjib fakultattiv tal-plugin WooCommerce Subscriptions
+- It-totali taċ-checkout jinkludu t-taxxi ta' Ultimate Multisite bħala linji ta' tariffi WooCommerce separati u mhux taxxabbli sabiex il-klijenti jkunu jistgħu jirrevedu l-ammonti tat-taxxa qabel il-ħlas
+
+## Dokumentazzjoni {#documentation}
+
+**Twaqqif tal-Integrazzjoni ma' WooCommerce**
+
+**Estensjoni tal-Għażliet ta' Ħlas tiegħek b'Ultimate Multisite: Integrazzjoni ma' WooCommerce**
+
+## Installazzjoni {#installation}
+
+1. Tella' 'ultimate-multisite-woocommerce' fid-direttorju '/wp-content/plugins/'
+2. Attiva l-plugin permezz tal-menu 'Plugins' f'WordPress
+3. Segwi l-Wizard pass pass biex twaqqaf il-plugin
+
+## Gwida għall-Użu {#usage-guide}
+
+_**NOTA IMPORTANTI: Dan l-artiklu jirreferi għal Ultimate Multisite verżjoni 2.x.**_
+
+_**ATTENZJONI:** Ultimate Multisite: WooCommerce Integration teħtieġ li WooCommerce ikun attivat tal-inqas fuq is-sit ewlieni tiegħek._
+
+Nifhmu li _Stripe_ u _PayPal_ mhumiex disponibbli f'xi pajjiżi, u dan jillimita jew ifixkel lill-utenti ta' Ultimate Multisite milli jużaw il-plugin tagħna b'mod effettiv. Għalhekk ħloqna **add-on biex nintegraw _WooCommerce_**.
+
+_WooCommerce_ huwa plugin tal-eCommerce popolari ħafna. Żviluppaturi madwar id-dinja ħolqu add-ons biex jintegraw gateways ta' ħlas differenti miegħu. Aħna ħadna vantaġġ minn dan biex nespandu l-gateways ta' ħlas li tista' tuża fis-sistema tal-kontijiet ta' Ultimate Multisite.
+
+## Kif Twaqqfu {#setting-it-up}
+
+L-ewwel, trid tinstalla l-add-on WooCommerce Integration li huwa **b'xejn għall-utenti liċenzjati**. Biex tinstallah, ikklikkja fuq Ultimate Multisite fuq is-super admin dashboard tiegħek u agħżel **Add-ons**.
+
+![Paġna tal-Add-ons](/img/admin/addons-page.png)
+
+Hawnhekk tista' ssib l-add-ons kollha ta' Ultimate Multisite. Ikklikkja fuq l-add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Paġna tal-Add-ons li turi WooCommerce Integration](/img/admin/addons-page.png)
+
+Tieqa se titfaċċa bid-dettalji tal-add-on. Ikklikkja biss fuq **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Wara li titlesta l-installazzjoni, tiġi ridirezzjonat lejn il-paġna tal-plugins. Hawnhekk, ikklikkja biss fuq **Network Activate** u l-add-on _WooCommerce_ jiġi attivat fuq in-network tiegħek.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Wara li tattivah, jekk għad m'għandekx il-plugin WooCommerce installat u attivat fuq il-website tiegħek, **tirċievi tfakkira**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Ladarba jiġi installat, tara għażla addizzjonali taħt is-settings tal-ħlasijiet ta' Ultimate Multisite. Imbagħad tista' **tattiva** l-għażla _WooCommerce_ minn hemm.
+
+![Settings tal-payment gateway ta' Ultimate Multisite b'WooCommerce attivat](/img/addons/woocommerce-payment-gateway.png)
+
+Tista' tikkonfigura xi settings bażiċi bħall-isem tal-wiri li jidher fil-front end u struzzjonijiet biex tiggwida lill-utenti tiegħek fil-fluss taċ-checkout tagħhom. Imbagħad tista' tmur fis-**settings ta' _WooCommerce_ tas-sit ewlieni tiegħek** biex tattiva u tikkonfigura l-payment gateway li tippreferi tuża.
+
+### Linji tat-tariffi tat-taxxa fiċ-checkout {#checkout-tax-fee-lines}
+
+Meta checkout ta' Ultimate Multisite jinkludi taxxi, l-integrazzjoni żżid kull ammont ta' taxxa ta' Ultimate Multisite maċ-checkout ta' WooCommerce bħala linja ta' tariffa separata u mhux taxxabbli. Dan iżomm it-total tat-taxxa viżibbli qabel il-ħlas filwaqt li jipprevjeni lil WooCommerce milli jerġa' jintaxxa t-tariffa tat-taxxa.
+
+## Kif timmaniġġja l-ħlas {#how-to-manage-the-payment}
+
+L-Integrazzjoni ma' WooCommerce taħdem b'mod simili ħafna għall-mod kif jaħdem il-**Manual Gateway** tagħna. L-iżvantaġġ huwa li kull ħlas irid jitħallas manwalment fl-aħħar tal-perjodu tal-kontijiet. Hawn kif jaħdem il-fluss:
+
+  * Ladarba jintemm iċ-ċiklu tal-kontijiet tal-utent, il-membership titqiegħed **on hold**. Fl-istess ħin, tinħoloq order fuq l-installazzjoni _WooCommerce_ fuq is-sit ewlieni tan-network tiegħek.
+
+  * Imbagħad l-utenti jirċievu fattura fl-email tagħhom, b'link biex iwettqu l-ħlas (il-link tidher ukoll fl-istorja tal-kontijiet tagħhom mid-dashboard tas-sottosit tagħhom). Dak il-link jirridirezzjona lill-utent lejn iċ-**checkout** ta' _**WooCommerce**_, fejn l-utenti jkunu jistgħu jagħżlu wieħed mill-**gateways _WooCommerce_ disponibbli** sabiex jipproċessaw il-ħlas tagħhom.
+
+  * Ladarba l-ħlas jiġi riċevut, il-membership tiġi **mġedda**, il-ħlas jiġi rreġistrat fuq Ultimate Multisite u l-order tiġi ssettjata bħala kompluta.
+
+### Xi Noti Importanti: {#some-important-notes}
+
+  * Il-funzjonalità predefinita ta' Ultimate Multisite xorta taħdem b'din il-forma ta' integrazzjoni. Pereżempju, **il-ħruġ ta' refunds** mill-iskrin **Subscription Management** jikkomunika ma' WooCommerce biex joħroġ ir-refund billi juża l-formola ta' ħlas magħżula.
+
+  * Ultimate Multisite: WooCommerce Integration tiddependi fuq WP-Cron biex taħdem. Dan jaħdem tajjeb ħafna fil-biċċa l-kbira tal-ħin, iżda jekk is-sit ikollu traffiku baxx allura l-cron ma jiġix imqanqal biex jiċċekkja għal avvenimenti skedati u l-avveniment jintilef, li jista' jikkawża dewmien fl-eżekuzzjoni.
+
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
+
+Li tibda ħlas manwalment kull xahar mhuwiex ideali għall-utenti finali għax l-abbonamenti huma mistennija jirrepetu awtomatikament kull ċiklu ta' fatturazzjoni. Il-WooCommerce Integration add-on issa jinkludi l-kodiċi ewlieni tal-abbonamenti, għalhekk il-prodotti rikorrenti dejjem jużaw abbonamenti għall-fatturazzjoni rikorrenti.
+
+Int **m'għandekx** bżonn tixtri jew tinstalla l-[WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) separat biex tbigħ prodotti rikorrenti permezz ta' din l-integrazzjoni. Jekk dak il-plugin jinxtara, jiġi installat, u jkun disponibbli fuq is-sit prinċipali tiegħek, Ultimate Multisite jużah u WooCommerce jesponi karatteristiċi addizzjonali għall-ġestjoni tal-abbonamenti. Meta ma jkunx disponibbli, il-qalba tal-abbonamenti inkluża xorta tieħu ħsieb il-prodotti rikorrenti.
+
+![Settings tal-integrazzjoni tal-abbonamenti ta' WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+U daqshekk. L-utenti finali tiegħek mhux se jibqgħu jkollhom bżonn jagħmlu ħlas manwalment fi tmiem iċ-ċiklu ta' fatturazzjoni tagħhom għal prodotti rikorrenti.
+
+Minbarra li tinħoloq ordni fuq is-sit prinċipali tiegħek taħt _WooCommerce_, tinħoloq ukoll abbonament għal kull Account.
+
+### Imġiba ta' sospensjoni għal tiġdid li falla {#failed-renewal-suspension-behavior}
+
+B'mod awtomatiku, is-sħubijiet jibqgħu attivi waqt li WooCommerce Subscriptions jipproċessa l-iskeda tiegħu ta' tentattivi mill-ġdid għal ħlasijiet falluti. Dan iżomm it-tieqa normali ta' grazzja ta' WooCommerce Subscriptions sabiex tiġdid irkuprat ikun jista' jerġa' jġib l-abbonament u s-sħubija f'sinkronizzazzjoni mingħajr ma jinterrompi l-aċċess qabel iż-żmien.
+
+Amministraturi li jridu kontroll tal-aċċess aktar strett jistgħu jattivaw **Issospendi s-Sħubijiet Minnufih meta Tiġdid Ifalli** fis-settings ta' WooCommerce Integration. Meta dan is-setting fakultattiv ikun attivat, Ultimate Multisite jissospendi s-sħubija relatata hekk kif ħlas ta' tiġdid ifalli minflok ma jistenna li jintemm l-immaniġġjar tat-tentattivi mill-ġdid ta' WooCommerce Subscriptions.
+
+L-iżviluppaturi jistgħu jegħlbu l-istess deċiżjoni bil-filter `wu_woo_suspend_on_payment_failure`. Il-paġni ta' referenza tal-hooks jiġu ġġenerati mis-sors tal-add-on, għalhekk din il-ħarsa ġenerali ssemmi biss l-isem tal-filter għal politiki ta' sospensjoni personalizzati.

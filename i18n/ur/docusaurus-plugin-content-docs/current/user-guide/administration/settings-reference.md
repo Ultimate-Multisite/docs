@@ -1,26 +1,46 @@
 ---
-title: سیٹنگز ریفرنس
+title: ترتیبات کا حوالہ
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Settings Reference
+# Settings حوالہ {#settings-reference}
 
-یہ صفحہ ان ترتیبات (settings) کا جائزہ لیتا ہے جو Ultimate Multisite میں روزمرہ کے انتظامی کاموں اور حالیہ رویے میں تبدیلیوں کو متاثر کرتی ہیں۔
+یہ صفحہ اُن settings کو ٹریک کرتا ہے جو روزمرہ انتظامیہ اور Ultimate Multisite میں حالیہ رویے کی تبدیلیوں کو متاثر کرتی ہیں۔
 
-## Other Options
+## دیگر اختیارات {#other-options}
 
-**Other Options** کا سیکشن **Ultimate Multisite > Settings > Login & Registration** کے تحت نظر آتا ہے۔
+**دیگر اختیارات** کا علاقہ **Ultimate Multisite > Settings > Login & Registration** کے تحت ظاہر ہوتا ہے۔
 
-| Setting | Description |
+| Setting | تفصیل |
 |---|---|
-| **Enable Jumper** | یہ ایڈمن ایریا میں Jumper کے فوری نیویگیشن ٹول کو دکھاتا ہے۔ اس کا استعمال Ultimate Multisite سکرینز، نیٹ ورک آبجیکٹس، اور سپورٹڈ ایڈمن منزلوں پر براہ راست جانے کے لیے کریں۔ اگر آپ نہیں چاہتے کہ یہ شارٹ کٹ نظر آئے، تو اسے غیر فعال (Disable) کر دیں۔ |
+| **Enable Jumper** | admin علاقے میں Jumper فوری نیویگیشن ٹول دکھاتا ہے۔ اسے Ultimate Multisite اسکرینز، نیٹ ورک آبجیکٹس، اور معاون admin مقامات پر براہِ راست جانے کے لیے استعمال کریں۔ اگر آپ یہ شارٹ کٹ دکھائی دینا نہیں چاہتے تو اسے غیر فعال کریں۔ |
 
-## Error reporting and telemetry
+## خرابی کی رپورٹنگ اور ٹیلی میٹری {#error-reporting-and-telemetry}
 
-پچھلی ایرر رپورٹنگ کی آپٹ-ان سیٹنگ کو سیٹنگز کے پیج سے ہٹا دیا گیا ہے۔ گمنام ٹیلیمیٹری (Anonymous telemetry) غیر فعال ہے اور اسے فعال کرنے کے لیے کوئی UI ٹوگل موجود نہیں ہے۔
+پچھلی خرابی رپورٹنگ opt-in setting کو settings صفحے سے ہٹا دیا گیا ہے۔ گمنام ٹیلی میٹری غیر فعال ہے اور اسے فعال کرنے کے لیے کوئی UI toggle موجود نہیں ہے۔
 
-اگر آپ سیٹنگز کے پیج کے لیے اندرونی رن بکس (runbooks) یا اسکرین شاٹس کو برقرار رکھتے ہیں، تو پرانے ایرر رپورٹنگ آپٹ-ان فیلڈ کے حوالے کو ہٹا دیں تاکہ ایڈمنسٹریٹرز کسی ایسی سیٹنگ کی تلاش نہ کریں جو اب موجود نہیں ہے۔
+اگر آپ settings صفحے کے لیے اندرونی runbooks یا screenshots برقرار رکھتے ہیں، تو پرانے خرابی رپورٹنگ opt-in field کے حوالہ جات ہٹا دیں تاکہ منتظمین ایسی setting تلاش نہ کریں جو اب موجود نہیں ہے۔
 
-## Import/Export settings
+## Import/Export settings {#importexport-settings}
 
-**Import/Export** سیٹنگز ٹیب بتاتا ہے کہ یہ کن سیٹنگز کو کنٹرول کرتا ہے اور سائٹ اور نیٹ ورک آرکائیوز کے لیے براہ راست **Ultimate Multisite > Site Export** سے لنک کرتا ہے۔ امپورٹ/ایکسپورٹ کی ترتیب (configuration) کے لیے سیٹنگز ٹیب استعمال کریں، سنگل-سائٹ کے ایکسپورٹ/امپورٹ ورک فلو کے لیے **Tools > Export & Import** استعمال کریں، اور جب آپ کو مکمل نیٹ ورک ایکسپورٹ آرکائیوز کی ضرورت ہو تو Site Export ٹول استعمال کریں۔
+**Import/Export** settings tab بیان کرتا ہے کہ یہ کن settings کو کنٹرول کرتا ہے اور site اور نیٹ ورک archives کے لیے براہِ راست **Ultimate Multisite > Site Export** سے لنک کرتا ہے۔ import/export configuration کے لیے settings tab استعمال کریں، single-site export/import workflow کے لیے **Tools > Export & Import** استعمال کریں، اور جب آپ کو مکمل Network Export archive کی ضرورت ہو تو Site Export ٹول استعمال کریں۔
+
+## Domain Seller HostAfrica بیلنس وارننگ {#domain-seller-hostafrica-balance-warning}
+
+جب Domain Seller addon کو HostAfrica سے جوڑا جاتا ہے، تو نیٹ ورک منتظمین اب ایک dismissible بیلنس کم ہونے کی وارننگ دیکھتے ہیں جب reseller account balance قابلِ اعتماد domain registration یا renewal processing کے لیے بہت کم ہو۔
+
+اس نوٹس کو ایک عملی وارننگ سمجھیں: مزید paid domain registrations قبول کرنے سے پہلے HostAfrica reseller balance کو top up کریں، پھر Domain Seller settings یا domain-monitoring screen پر واپس جائیں تاکہ تصدیق ہو سکے کہ registrations اور renewals معمول کے مطابق جاری رہ سکتی ہیں۔
+
+## AI فراہم کنندہ connector settings {#ai-provider-connector-settings}
+
+AI provider connector settings اب صرف معاون OAuth account pools ظاہر کرتی ہیں:
+
+| Provider | Setup flow |
+|---|---|
+| **Anthropic Max** | OAuth بٹن کے ساتھ ایک یا زیادہ Anthropic Max accounts جوڑیں۔ جب sandboxed browser redirect خودکار طور پر مکمل نہیں کر سکتا تو manual OAuth fallback استعمال کریں۔ |
+| **OpenAI ChatGPT/Codex** | اسی OAuth pool workflow کے ذریعے ChatGPT accounts جوڑیں۔ account جوڑنے کے بعد Connector-supported operations ChatGPT Codex tool calls استعمال کر سکتی ہیں۔ |
+| **Google AI Pro** | OAuth کے ذریعے Google AI Pro accounts جوڑیں، پھر اگر account list فوراً update نہ ہو تو connector refresh کریں۔ |
+
+Cursor Pro اب معاون provider نہیں رہا۔ پرانے اندرونی screenshots، runbooks، یا onboarding steps ہٹا دیں جو Cursor Pro setup fields یا connector paths کا ذکر کرتے ہیں۔
+
+provider accounts شامل یا حذف کرتے وقت، refresh یا delete کیے جانے والے account کے لیے درست email address درج کریں اور connector-backed operations کو test کرنے سے پہلے provider settings محفوظ کریں۔

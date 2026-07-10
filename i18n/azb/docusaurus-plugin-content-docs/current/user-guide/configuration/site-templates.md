@@ -1,152 +1,150 @@
 ---
-title: Site Templates
+title: سایت قالب‌لاری
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# سایت قالیبلری (v2) {#site-templates-v2}
 
-_**NOT: Bu makale Ultimate Multisite versiyon 2.x'i ele alıyor. Eğer 1.x versiyonunu kullanıyorsanız,**_ **bu makaleye bakın.**_
+_**قئید: بو مقاله Ultimate Multisite سوروم 2.x-ه عایددیر. اگر 1.x سوروموندان ایستیفاده ائدیرسیزسه،**_ **بو مقاله‌یه باخین** _**.**_
 
-Ultimate Multisite ile premium bir ağ oluştururken amacımız, müşterilerimize web siteleri oluştururken esneklik ve farklı seçenekler sunarken, mümkün olduğunca çok süreci otomatik hale getirmek. Bu dengeyi sağlamanın kolay bir yolu da Ultimate Multisite Site Templates özelliğinden yararlanmaktır.
+Ultimate Multisite ایله premium بیر شبکه یارادارکن هدفیمیز، موشتریلریمیزه اؤز وب‌سایت‌لرینی یاراداندا اسنکلیک و سئچمک اوچون فرقلی سئچنکلر وئرمکله بیرلیکده، امکان اولدوغو قدر چوخ پروسه‌نی خودکارلاشدیرماقدیر. بو تارازیلیغا چاتماغین آسان بیر یولو Ultimate Multisite سایت قالیبلری اؤزللی‌ییندن ایستیفاده ائتمکدیر.
 
-## Site Template Nedir?
+## سایت قالیبی ندیر؟ {#what-is-a-site-template}
 
-Adından da anlaşılacağı gibi, Site Template, ağınızda yeni siteler oluşturulurken temel olarak kullanılabilecek bir şablon sitedir.
+آدیندان دا بللی اولدوغو کیمی، سایت قالیبی شبکه‌نیزده یئنی سایت‌لر یارادارکن بنیاد کیمی ایستیفاده اولان حاضیر بیر سایت‌دیر.
 
-Bu şu anlama gelir: Bir temel site oluşturabilir, farklı plugin'leri etkinleştirebilir, aktif bir tema belirleyebilir ve istediğiniz gibi özelleştirebilirsiniz. Ardından, müşteriniz yeni bir hesap oluşturduğunda, içinde anlamlı içerik olmayan varsayılan bir WordPress sitesi almak yerine, tüm özelleştirmeler ve içerikler zaten yerleştirilmiş temel sitenizin bir kopyasını alacaktır.
+بو، اؤز بنیاد سایتینیزی یارادا، فرقلی plugin-لری فعال ائده، فعال theme قورا و ایسته‌دی‌یینیز هر جور اؤزللشدیره بیله‌جک‌سینیز دمکدیر. سونرا موشتری‌نیز یئنی Account یاراتدیغی زامان، ایچینده معنی‌لی مضمونو اولمایان default WordPress سایتینین یئرینه، بوتون اؤزللشدیرمه‌لر و مضمون‌لارلا بیرلیکده بنیاد سایتینیزین کؤپیاسینی آلاجاق.
 
-Bu harika geliyor, ama yeni bir site template nasıl oluştururum? Yapması mümkün olduğunca basit.
+بو چوخ عالی سسلنیر، اما یئنی سایت قالیبی‌نی نئجه یارادیم؟ بو، ممکن اولدوغو قدر ساده‌دیر.
 
-## Site Template Oluşturma ve Düzenleme
+## یئنی سایت قالیبی یاراتماق و دَییشدیرمک {#creating-and-editing-a-new-site-template}
 
-Site Templates, ağınızdaki normal sitelerdir. Yeni bir şablon oluşturmak için sadece **Network Admin > Ultimate Multisite > Sites > Add Site** yolunu izleyebilirsiniz.
+سایت قالیبلری شبکه‌نیزده‌کی عادی سایت‌لردیر. یئنی قالیب یاراتماق اوچون ساده‌جه **Network Admin > Ultimate Multisite > Sites > Add Site.** بؤلمه‌سینه گئده بیلرسینیز
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Sites لیست صفحه‌سینده Add site دؤیمه‌سی](/img/config/site-templates-list.png)**
 
-Bu, **Site title, Site Domain/path** ve **Site type** bilgilerini isteyen bir modal pencere açacaktır. **Site Type** açılır menüsünde **Site Template** seçtiğinizden emin olun.
+بو بیر modal پنجره آچاجاق و **Site title, Site Domain/path,** و **Site type** سوروشاجاق. **Site Type** آچیلان ساحه‌سی آلتینندا **Site Template** سئچدی‌یینیزدن امین اولون *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Site type آچیلان منوسو ایله سایت قالیبی آرتیرما modal-ی](/img/config/site-templates-list.png)_
 
-Ayrıca site template açıklamasını da görebilirsiniz:
+قالیبین نلری ایحتیوا ائتدی‌یینی آچیقلاماق اوچون موشتری‌یه گؤرونن بیر توضیح ده آرتیرا بیلرسینیز:
 
-![Site template description](/img/config/site-template-description.png)
+![سایت قالیبی دَییشدیرمه صفحه‌سینده سایت قالیبی توضیح ساحه‌سی](/img/config/site-template-edit-description.png)
 
-Formun en altında bir **Copy Site** açma/kapama düğmesi göreceksiniz. Bu, sıfırdan bir site template oluşturmak yerine, mevcut bir site template'ini başlangıç noktası olarak kullanarak yeni bir site template oluşturmanıza olanak tanır ve bu sayede zaman kazanmanıza yardımcı olur.
+فورمون آشاغیسیندا **Copy Site** دَییشدیرگه‌سینی گؤره‌جک‌سینیز. بو، سایت قالیبی‌نی سیفیردان یاراتماق یئرینه، وقت قازانماغینیز اوچون باشلانغیج نقطه‌سی کیمی موجود بیر سایت قالیبی اساسین‌دا یئنی سایت قالیبی یاراتماغا ایمکان وئرر.
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Copy site دَییشدیرگه‌سی ایله سایت قالیبی آرتیرما modal-ی](/img/config/site-templates-list.png)
 
-### Site Template İçeriğini Özelleştirme
+### سایت قالیبی مضمونلارینی اؤزللشدیرمک {#customizing-the-contents-of-a-site-template}
 
-Site template'inizi özelleştirmek için, sadece onun dashboard paneline gidip ihtiyacınız olan değişiklikleri yapmanız yeterlidir. Yeni gönderiler, sayfalar oluşturabilir, plugin'leri etkinleştirebilir ve aktif temayı değiştirebilirsiniz. Hatta Customizer'a giderek her türlü özelleştirme seçeneğini değiştirebilirsiniz.
+سایت قالیبینیزی اؤزللشدیرمک اوچون ساده‌جه اونون Dashboard پانلینا گئدین و لازیم اولان دَییشیکلیکلری ائدین. یئنی یازی‌لار، صفحه‌لر یارادا، plugin-لری فعال ائده و فعال theme-ی دَییشدیره بیلرسینیز. حتی Customizer-ه گئدیب هر جور اؤزللشدیرمه سئچنکلرینی دَییشدیره بیلرسینیز.
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![سایت قالیبی دَییشدیرمه آراوزو](/img/config/site-template-edit.png)
 
-Bu verilerin tamamı, bir müşteri bu Site Template'i temel alarak yeni bir site oluşturduğunda kopyalanacaktır.
+بوتون بو بیلگیلر، موشتری او سایت قالیبی اساسین‌دا یئنی سایت یاراتدیغی زامان کؤچوروله‌جک.
 
-### Gelişmiş Seçenekler
+### ایره‌لی سئچنکلر {#advanced-options}
 
-Eğer biraz özel kodlama bilginiz varsa, oluşturulduktan sonra yeni sitedeki bilgileri otomatik olarak değiştirmek için Search and Replace API'mizi kullanabilirsiniz. Bu, Hakkımızda sayfasındaki şirket adlarını değiştirmek, İletişim sayfasındaki e-posta adresini değiştirmek gibi şeyler için kullanışlıdır.
+اگر بیر قدر custom کد یازماغی بیلیرسینیزسه، یئنی سایت یاراندیقدان سونرا اونداکی بیلگیلری خودکار دَییشدیرمک اوچون Search and Replace API-میزدن ایستیفاده ائده بیلرسینیز. بو، About صفحه‌سینده شرکت آدلاری‌نی دَییشدیرمک، Contact صفحه‌سینده تماس ایمیلینی دَییشدیرمک و بونا بنزر ایشلر اوچون فایدالیدیر.
 
-### Site Templates Kullanma
+### سایت قالیبلریندن ایستیفاده {#using-site-templates}
 
-Tamam, farklı tasarımlar, temalar ve ayarlar içeren bir sürü Site Template oluşturdunuz. Peki, bunları ağınızda nasıl kullanışlı hale getireceksiniz?
+یاخشی، فرقلی دیزاین‌لار، theme-لر و تنظیم‌لر ایله بیر سورو فرقلی سایت قالیبی یاراتدینیز. ایندی اونلاری شبکه‌نیزده نئجه فایدالی ائده‌جک‌سینیز؟
 
-Temelde kullanabileceğiniz iki yaklaşım var (aynı anda değil):
+اساساً، ایندی ایستیفاده ائده بیله‌جه‌یینیز ایکی یاناشما وار (ایکیسی بیرلیکده یوخ):
 
-*   Her Planınıza bir Site Template atamak
+  * هر پلنینیزه بیر سایت قالیبی باغلاماق
 
-**VEYA**
+**یا**
 
-*   Müşterilerinizin kayıt sırasında site template'lerini kendilerinin seçmesine izin vermek.
+  * قئیدیات زامانی موشتریلرینیزه سایت قالیبلرینی اؤزلرینین سئچمه‌سینه ایجازه وئرمک.
 
-#### Mod 1: Site Template Atama
+#### مود 1: سایت قالیبی تعیین ائتمک {#mode-1-assign-site-template}
 
-Bu modda, müşterileriniz hesap oluştururken bir template seçemeyecek, bunun yerine hangi template'in hangi Planınızda kullanılacağını siz belirleyeceksiniz.
+بو موددا، موشتریلرینیز Account یارادارکن قالیب سئچه بیلمه‌یه‌جک؛ بلکه هر پلنینیزده هانسی قالیبین ایستیفاده اولوناجاغینی سیز تعریف ائده‌جک‌سینیز.
 
-Bunu yapmak için **Ultimate Multisite > Products > Edit** yolunu izlemeniz gerekecek.
+بونو ائتمک اوچون **Ultimate Multisite > Products > Edit** بؤلمه‌سینه گئتمه‌لی‌سینیز.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![سایت قالیبی تعیین ائتمک اوچون محصولو دَییشدیرمک](/img/config/product-site-templates.png)
 
-Bu sizi **Edit Product** sayfasına götürecektir. **Product Options** bölümünde, **Site template** sekmesini bulun ve açılır menüden **Assign Site** **Template** seçeneğini seçin. Bu, mevcut site template'lerinin listesini gösterecek ve ürüne özel sadece bir site template seçmenize olanak tanıyacaktır.
+بو سیزی **Edit Product** صفحه‌سینه آپاراجاق. **Product Options** بؤلمه‌سی آلتین‌دا **Site template** تبینی تاپین و آچیلان ساحه‌دن **Assign Site Template** سئچنه‌یینی سئچین. بو موجود سایت قالیبلرینین لیستینی گؤستره‌جک و محصولا مخصوص یالنیز بیر سایت قالیبی سئچمه‌یه ایمکان وئره‌جک.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Assign site template سئچنه‌گی ایله محصول سایت قالیبی تبی](/img/config/product-site-templates.png)
 
-#### Mod 2: Seçilebilir Site Template
+#### مود 2: موجود سایت قالیبی سئچمک {#mode-2-choose-available-site-template}
 
-Bu modda, müşterilerinize kayıt sırasında bir seçim hakkı vereceksiniz. Ürün ayarları altında tanımladığınız farklı site template'lerinden seçim yapabilecekler. Seçilen ürün altında hangi site template'lerinden seçim yapabileceklerini sınırlama seçeneğiniz de var. Bu, farklı işlevleri ve özellik setlerini vurgulamak istediğiniz daha yüksek fiyatlı bir ürün için idealdir.
+بو موددا، قئیدیات پروسه‌سینده موشتریلرینیزه سئچیم وئره‌جک‌سینیز. اونلار محصول تنظیم‌لری آلتین‌دا تعریف ائتدی‌یینیز فرقلی سایت قالیبلری آراسیندان سئچه بیله‌جک‌لر. سئچیلن محصول آلتین‌دا اونلارین سئچه بیله‌جه‌یی سایت قالیبینی محدودلاشدیرماق سئچنه‌یینیز وار. بو، هر محصول آلتین‌دا فرقلی سایت قالیبی مجموعه‌لرینیزین اولماسینا ایمکان وئرر؛ بو دا داها باهالی محصول اوچون فرقلی عمللر و اؤزللیکلری وورغولاماقا ایده‌آلدیر.
 
-**Edit Product** sayfasında. **Product Options** bölümünde, **Site template** sekmesini bulun ve açılır menüden **Choose Available Site Template** seçeneğini seçin. Bu, mevcut site template'lerinin listesini gösterecek ve kullanıma sunulmasını istediğiniz site template'ini seçmenize olanak tanıyacaktır. Bunu, site template'inin listede görünmesini istiyorsanız Davranış (Behavior) olarak: **Available** seçerek yapabilirsiniz. Site template'inin seçenek olarak görünmesini istemiyorsanız **Not Available** seçeneğini kullanın. Ve listelenen site template'lerinden birinin varsayılan olarak seçili olmasını istiyorsanız **Pre-selected** seçeneğini kullanın.
+**Edit Product** صفحه‌سینده، **Product Options** بؤلمه‌سی آلتین‌دا **Site template** تبینی تاپین و آچیلان ساحه‌دن **Choose Available Site Template** سئچنه‌یینی سئچین. بو موجود سایت قالیبلرینین لیستینی گؤستره‌جک و موجود اولماسینی ایسته‌دی‌یینیز سایت قالیبینی سئچمه‌یه ایمکان وئره‌جک. بونو اونون Behavior-ینی سئچمکله ائده بیلرسینیز: اگر سایت قالیبینین لیسته داخیل اولماسینی ایسته‌ییرسینیزسه **Available**. اگر سایت قالیبینین سئچنک کیمی گؤرونمه‌مه‌سینی ایسته‌ییرسینیزسه _**Not Available**_. و اگر لیستده‌کی سایت قالیبلریندن بیرینین default سئچیلن اولماسینی ایسته‌ییرسینیزسه **Pre-selected**.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Behavior سئچنکلری ایله موجود سایت قالیبلرینی سئچمک](/img/config/product-site-templates.png)
 
-### Varsayılan Mod: Ödeme Formunda Site Template Seçimi
+### Default مود: Checkout فورموندا سایت قالیبی سئچیمی {#default-mode-site-template-selection-on-the-checkout-form}
 
-Tüm site template'lerinizin kayıt sırasında kullanıma açık olmasını istiyorsanız, veya oluşturduğunuz her ürün altında site template atama veya belirtme gibi ek bir uğraş istemiyorsanız. O zaman site template seçimini doğrudan **Checkout Form**'unuzdan ayarlayabilirsiniz. Bunun için sadece **Ultimate Multisite > Checkout Forms** yolunu izlemeniz yeterli. Ardından yapılandırmak istediğiniz formun altında **Edit** düğmesine tıklayın.
+اگر بوتون سایت قالیبلرینیزین قئیدیات زامانی موجود اولماسینی ایسته‌ییرسینیزسه، یا شاید یاراتدیغینیز هر محصول آلتین‌دا سایت قالیبلرینی تعیین ائتمک یا مشخص ائتمک کیمی آرتیق ایش گؤرمک ایسته‌میرسینیزسه، ساده‌جه سایت قالیبی سئچیمینی **Checkout Form** آلتین‌دا قورا بیلرسینیز. بونو ائتمک اوچون **Ultimate Multisite > Checkout Forms** بؤلمه‌سینه گئدین و تنظیم ائتمک ایسته‌دی‌یینیز فورمون آلتین‌دا **Edit**-ه کلیک ائدین.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+بو **Edit Checkout Form** صفحه‌سینی آچاجاق. **Template Selection** ساحه‌سینی تاپین و اونون آلتین‌دا **Edit**-ه کلیک ائدین.
 
-Bu, **Edit Checkout Form** sayfasına götürecektir. **Template Selection** alanını bulun ve altında **Edit** düğmesine tıklayın.
+بیر مودال پەنجره گؤرونه‌جک. **قالب سایتلاری** ساحه‌سینین آلتین‌دا، قئیدیات زامانی مؤوجود اولماسینی ایسته‌دیینیز بوتون سایت قالیبلارینی سئچیب لیستله‌یه بیلرسینیز. بورادان گؤستردی‌یینیز سایت قالیبلاری، ایشلدن هر هانسی محصولو سئچسه‌ده مؤوجود اولا‌جاق.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![checkout فورم دوزه‌لدیجیسین‌ده قالب سئچیمی ساحه‌سی](/img/config/checkout-form-template-step.png)
 
-Bir modal pencere açılacaktır. **Template Sites** alanının altında, kayıt sırasında kullanıma açık olmasını istediğiniz tüm site template'lerini seçip listeleyebilirsiniz. Buradan belirttiğiniz site template'leri, kullanıcının hangi ürünü seçtiğinden bağımsız olarak kullanıma açık olacaktır.
+فرانت‌اندده، موشتری‌لر checkout زامانی قالب سئچنی گؤرورلر و یئنی سایتلاری اوچون باشلانغیج دیزاینی سئچه بیلرلر.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![قئیدیات زامانی فرانت‌اند قالب سئچنی](/img/config/frontend-template-chooser.png)
 
-### Site Template Seçenekleri
+### سایت قالیبی سئچنه‌کلری {#site-template-options}
 
-Ultimate Multisite ayarları altında açıp kapatabileceğiniz başka site template işlevleri de bulunmaktadır.
+Ultimate Multisite تنظیماتینین آلتین‌دا آچیب-باغلایا بیله‌جگینیز باشقا سایت قالیبی فونکسییالاری دا وار.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Ultimate Multisite تنظیماتین‌ده سایت قالیبی سئچنه‌کلری](/img/config/settings-sites-templates-section.png)
 
-#### Template Değiştirilmesine İzin Ver
+#### قالب دَییشدیرمه‌یه ایجازه وئر {#allow-template-switching}
 
-Bu seçeneği etkinleştirmek, müşterilerinizin hesap ve site oluşturulduktan sonra kayıt sırasında seçtikleri template'i değiştirmesine olanak tanır. Bu, bir müşteri açısından kullanışlıdır çünkü daha sonra orijinal seçimlerinin kendi özel ihtiyaçları için en iyi olmadığını fark ederse bir template yeniden seçmesine izin verir.
+بو سئچنه‌یی فعال ائتمک، موشتری‌لرینیزه حساب و سایت یاراناندان سونرا، قئیدیات سوره‌جینده سئچدیکلری قالیبی دَییشدیرمه‌یه ایجازه وئرر. بو، موشتری باخیشیندان فایدالیدیر؛ چونکی سونرا ایلک سئچیم‌لرینین اوزل احتیاج‌لاری اوچون ائن یاخشی اولمادیغینی گؤرسه‌لر، قالیبی یئنی‌دن سئچه بیلرلر.
 
-#### Kullanıcıların Site'lerini Template Olarak Kullanmasına İzin Ver
+#### ایشلدنلره اؤز سایتلاریندان قالب کیمی ایستیفاده ائتمه‌یه ایجازه وئر {#allow-users-to-use-their-site-as-templates}
 
-Alt site kullanıcıları kendi sitelerini inşa etmek ve tasarlamak için zaman harcadıkları için, ağınızda başka bir alt site oluştururken kullanılabilecek site template'lerinden biri olarak bunu klonlayıp kullanmak isteyebilirler. Bu seçenek onlara bunu yapma imkanı sağlayacaktır.
+آلت‌سایت ایشلدنلری اؤز سایتلاری‌نی قوروب دیزاین ائتمه‌یه واخت صرف ائتدیکلری اوچون، اونو کلون ائدیب شَبَکه‌نیزده باشقا بیر آلت‌سایت یاراداندا مؤوجود سایت قالیبلاریندان بیری کیمی ایستیفاده ائتمک ایسته‌یه بیلرلر. بو سئچنه بو ایشی مومکون ائدر.
 
-#### Template Çoğaltılırken Medya Kopyalama
+#### قالب چوخالدیلاندا مدیانی کؤچورت {#copy-media-on-template-duplication}
 
-Bu seçeneği işaretlemek, template sitede yüklenen medyayı yeni oluşturulan siteye kopyalayacaktır. Bu, her bir planda geçersiz kılınabilir.
+بو سئچنه‌نی ایشاره‌له‌مک، قالب سایتینه یوکلن‌میش مدیانی یئنی یارادیلان سایتا کؤچوره‌جک. بو، هر پلاند اۆستۆن‌دن یئنی‌دن تنظیم اولا بیلر.
 
-#### **Arama Motorlarının Site Template'lerini Dizine Eklemesini Önle**
+#### **آختاریش موتورلارینین سایت قالیبلارینی ایندکس ائتمه‌سینین قاباغینی آل** {#prevent-search-engines-from-indexing-site-templates}
 
-Bu makalede tartışıldığı gibi site template'leri temel şablonlar olsa da yine ağınızın bir parçasıdır ve bu nedenle arama motorları tarafından bulunabilir durumdadır. Bu seçenek, site template'lerini gizleyerek arama motorlarının bunları dizine eklemesini engelleyecektir.
+بو مقاله‌ده دانیشیلان سایت قالیبلاری حاضیر پایه‌دیر، آما یئنه‌ده شَبَکه‌نیزین بیر پارچاسیدیر؛ دئمک آختاریش موتورلاری اونو تاپا بیلر. بو سئچنه سایت قالیبلارینی گیزلتمه‌یه ایجازه وئرر کی، آختاریش موتورلاری اونلاری ایندکس ائده بیلمه‌سین.
 
-## Site Template'leri Otomatik Arama-Değiştir ile Ön Doldurma
+## اؤز-اؤزونه آختار-دَییشدیر ایله سایت قالیبلارینی اؤنجه‌دن دولدورماق {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Ultimate Multisite'ın en güçlü özelliklerinden biri, kayıt formuna keyfi metin, renk ve seçili alanlar ekleyebilme yeteneğidir. Bu verileri yakaladığımızda, seçilen site template'inin belirli kısımlarındaki içeriği önceden doldurmak için kullanabiliriz. Ardından, yeni site yayınlanırken, Ultimate Multisite yer tutucuları (placeholders) kayıt sırasında girilen gerçek bilgilerle değiştirecektir.
+Ultimate Multisite-ین ائن گوجلو اؤزللیک‌لریندن بیری قئیدیات فورمونا ایسته‌نیلن متن، رنگ و سئچیم ساحه‌لری آرتیرماق قابلیتی‌دیر. بو داده‌نی الده ائتدیکدن سونرا، اوندان سئچیلن سایت قالیبینین بَزی بؤلمه‌لرینده محتوا‌نی اؤنجه‌دن دولدورماق اوچون ایستیفاده ائده بیلریک. سونرا، یئنی سایت یاییملاناندا، Ultimate Multisite یئر tutucularی قئیدیات زامانی داخل ائدیلن اصلی بیلگی‌لرله دَییشدیره‌جک.
 
-Örneğin, kayıt sırasında son kullanıcının şirket adını alıp, bu şirket adını otomatik olarak ana sayfada göstermek isterseniz. Template sitenizin ana sayfasında, aşağıdaki görseldeki gibi yer tutucuları eklemeniz gerekir (yer tutucular çift süslü parantezlerle - {{placeholder_name}} çevrili olmalıdır).
+مسئلن، اگر قئیدیات زامانی سون ایشلدنینی‌زین شیرکت آدینی آلماق و اونو اؤز-اؤزونه باش صفحه‌یه قویماق ایسته‌ییرسینیزسه، قالب سایتینیزین باش صفحه‌سینده یئر tutucular آرتیرمالیسینیز؛ آشاغیداکی شکیلده اولدوغو کیمی (یئر tutucular ایکی قوشا آچیلان-باغلانان آکولاد ایچینده آرتیریلمالیدیر - {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![آکولاد ایچینده یئر tutucu متنی اولان باش صفحه](/img/config/site-templates-list.png)
 
-Ardından, bu veriyi yakalamak için ödeme formunuza eşleşen bir kayıt alanı ekleyebilirsiniz:
+سونرا، بو داده‌نی توپلamaq اوچون checkout فورمونوزا اویغون قئیدیات ساحه‌سی آرتیرا بیلرسینیز. قالب سئچیمی اوچون ایستیفاده اولونان هَمان checkout فورم دوزه‌لدیجی‌سی، شخصی ساحه‌لری قالب سئچنینین یانینا یئرلشدیرمه‌یه ایجازه وئرر:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![checkout فورم دوزه‌لدیجیسین‌ده قالب سئچیمی و قئیدیات ساحه‌لری](/img/config/checkout-form-template-step.png)
 
-Müşteriniz o zaman bu alanı kayıt sırasında doldurabilecektir.
+سونرا موشتری‌نیز قئیدیات زامانی او ساحه‌نی دولدورا بیله‌جک.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![قالب سئچنی اولان فرانت‌اند checkout فورمو](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+سونرا Ultimate Multisite یئر tutucularی موشتری طرفیندن وئریلن داده ایله اؤز-اؤزونه دَییشدیره‌جک.
 
-Ultimate Multisite daha sonra yer tutucuları otomatik olarak müşteri tarafından sağlanan verilerle değiştirecektir.
+![سایتده موشتری داده‌سی ایله دَییشدیرلمیش یئر tutucular](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### "یئر tutucularلا دولو قالب" مشکلی‌نی حل ائتمک {#solving-the-template-full-of-placeholders-problem}
 
-### "Yer Tutucu Dolu Template" Sorununu Çözme
+بوتون بونلار یاخشیدیر، آما چیرکین بیر مشکله راست گلیریک: ایندی موشتری‌لریمیزین گؤره بیله‌جه‌یی سایت قالیبلاریمیز، چوخ شئی دئمه‌ین چیرکین یئر tutucularلا دولودور.
 
-Bunların hepsi harika, ancak karşılaştığımız çirkin bir sorun var: şimdi site template'lerimiz - müşterilerimizin ziyaret edebileceği - çok fazla ve pek bir şey anlatmayan çirkin yer tutucu ile dolu.
+بونو حل ائتمک اوچون، یئر tutucular اوچون ساختا دَیَرلر تنظیم ائتمک سئچنه‌سینی تقدیم ائدیریک و موشتری‌لرینیز قالب سایتلارینا باخدیقلاری زامان، بو دَیَرلردن اونلارین محتو‌اسینی آختاریب دَییشدیرمک اوچون ایستیفاده ائدیریک.
 
-Bunu çözmek için, yer tutucular için sahte değerler belirleme seçeneği sunuyoruz ve müşterileriniz ziyaret ederken bu değerleri kullanarak template sitelerindeki içeriklerini arayıp değiştiriyoruz.
+قالب یئر tutucular دوزه‌لدیجیسینه گئتمک اوچون **Ultimate Multisite > Settings > Sites** مسیرینه گئدین، سونرا یان چوبوقدا **یئر tutucularی دوزه‌لت** باغلانتیسینا کلیک ائدین.
 
-Template yer tutucularının düzenleyicisine **Ultimate Multisite > Settings > Sites** yolunu izleyerek ve ardından kenar çubuğunda **Edit Placeholders** bağlantısına tıklayarak ulaşabilirsiniz.
+![Sites تنظیمات صفحه‌سی آلتین‌دا سایت قالیبی تنظیماتلاری](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+بو سیزی یئر tutucularین محتوا دوزه‌لدیجیسینه آپارا‌جاق؛ اورادا یئر tutucular و اونلارا اویغون محتوا آرتیرا بیلرسینیز.
 
-Bu sizi yer tutucuların içerik düzenleyicisine götürecek, burada yer tutucuları ve ilgili içeriklerini ekleyebilirsiniz.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![قالب یئر tutucular محتوا دوزه‌لدیجیسینین گیریش نوقطه‌سی](/img/config/settings-sites-templates-section.png)

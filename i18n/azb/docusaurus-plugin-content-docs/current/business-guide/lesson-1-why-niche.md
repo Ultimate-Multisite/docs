@@ -3,11 +3,11 @@ title: 'Lesson 1: Niche''nin Kazanma Nedeni'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Ders 1: Niche Neden Kazanır
+# Ders 1: Niche Neden Kazanır {#lesson-1-why-niche-wins}
 
 Herhangi bir yazılıma geçmeden önce, belirli bir kitleye hitap ederek bir platform kurmanın yapacağınız en önemli karar olduğunu anlamanız gerekiyor.
 
-## Genel Web Sitesi Satmanın Sorunu
+## Genel Web Sitesi Satmanın Sorunu {#the-problem-with-selling-generic-websites}
 
 Eğer "herkes için web sitesi" sunuyorsanız, şunlarla rekabet ediyorsunuz demektir:
 
@@ -17,11 +17,11 @@ Eğer "herkes için web sitesi" sunuyorsanız, şunlarla rekabet ediyorsunuz dem
 
 Fiyatta kazanamazsınız. Özelliklerde de kazanamazsınız. Genel web sitesi pazarı, sürekli fiyat düşürme yarışı (race to the bottom).
 
-## Bir Niche Seçince Ne Değişir
+## Bir Niche Seçince Ne Değişir {#what-changes-when-you-pick-a-niche}
 
 Eğer bir platformu özellikle fitness stüdyoları (veya herhangi bir niş) için kurarsanız, her şey sizin lehinize döner:
 
-### Gerçek Sorunları Çözüyorsunuz
+### Gerçek Sorunları Çözüyorsunuz {#you-solve-real-problems}
 
 Bir fitness stüdyosu sahibi "bir web sitesi" istemiyor. Onların istediği şunlar:
 
@@ -33,45 +33,45 @@ Bir fitness stüdyosu sahibi "bir web sitesi" istemiyor. Onların istediği şun
 
 Platformunuz bu spesifik sorunları kutudan çıktığı gibi çözdüğünde, artık sadece bir web sitesi satmıyorsunuz. Bir çözüm satıyorsunuz.
 
-### Daha Fazla Ücret Talep Edebilirsiniz
+### Daha Fazla Ücret Talep Edebilirsiniz {#you-can-charge-more}
 
 Genel bir WordPress sitesi tek seferlik bir proje olarak 500-2.000 $ arasında satılabilir. Ancak niş bir platform, sektöre özel sorunları çözdüğü için, değeri sürekli ve spesifik olduğu için aylık abonelik olarak 49-199 $ talep edebilir.
 
-### Uzman Olursunuz
+### Uzman Olursunuz {#you-become-the-expert}
 
 Tek bir sektöre odaklandığınızda, o sektörün dilini, acı noktalarını ve satın alma alışkanlıklarını öğrenirsiniz. Fitness stüdyosu sahipleri birbirleriyle konuşur. Bir kişi işe yarayan bir platform bulduğunda, bunu diğerlerine anlatır. Bir nişteki ağızdan ağıza pazarlama çok güçlüdür çünkü topluluk sıkıdır.
 
-### Pazarlamanız Kolaylaşır
+### Pazarlamanız Kolaylaşır {#your-marketing-gets-easier}
 
 "İşletmeler için web sitesi yapıyoruz" demek yerine, "fitness stüdyoları için web sitesi yapıyoruz" dersiniz. Açılış sayfanız doğrudan spor salonu sahiplerine hitap eder. Şablonlarınız fitness siteleri gibi görünür. Referanslarınız eğitmenlerden ve stüdyo sahiplerinden gelir. Pazarlamanızın her parçası daha vurucu olur çünkü spesifiktir.
 
-## FitSite Fırsatı
+## FitSite Fırsatı {#the-fitsite-opportunity}
 
 Bu bakış açısıyla fitness sektörüne bakalım:
 
-### Pazar Büyüklüğü
+### Pazar Büyüklüğü {#market-size}
 
 - Yalnızca Amerika Birleşik Devletleri'nde 100.000'den fazla fitness tesisi var
 - Çoğu bağımsız sahip küçük işletme
 - Çoğunun ya hiç web sitesi yok, ya çok kötü bir web sitesi var ya da kendilerinin güncelleyemeyeceği fiyatı yüksek bir web sitesi var
 
-### Mevcut Çözümler
+### Mevcut Çözümler {#current-solutions}
 
 - **Genel yapıcılar** (Wix, Squarespace): Fitness'a özel özellik yok, stüdyo sahipleri ihtiyaç duydukları şeyi kurmakta zorlanıyor
 - **Özel geliştirme**: Pahalı, tek seferlik, sürdürmesi zor
 - **Sektöre özel platformlar**: Çok az var ve çoğu, eksiksiz bir web varlığı sunmak yerine rezervasyon sistemlerine bağlı
 
-### Boşluk
+### Boşluk {#the-gap}
 
 Fitness işletmeleri için "genel web sitesi yapıcı" ile "pahalı özel geliştirme" arasında açık bir boşluk var. Stüdyo sahiplerine profesyonel, fitness'a özel bir web sitesi, ihtiyaç duydukları özelliklerle ve küçük bir işletme için mantıklı bir fiyat noktasında sunan bir platform bu boşluğu doldurur.
 
 FitSite'ın hedefleyeceği fırsat budur.
 
-## Ana Çıkarım
+## Ana Çıkarım {#key-takeaway}
 
 Bir niş seçmek kendinizi sınırlamakla ilgili değildir. Çabanızı en çok etki yaratacağı yere odaklamakla ilgilidir. Aylık 99 $ karşılığında 500 müşteriye hizmet veren bir niş platform, yıllık 600.000 $ değerinde bir işletmedir. Milyonlarca müşteriye ihtiyacınız yok. Doğru olanlara ihtiyacınız var.
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 Henüz teknik bir çalışma yok — ama artık stratejik temele sahipsiniz:
 

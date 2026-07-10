@@ -3,11 +3,11 @@ title: Stadi ya Estetiki ya Mfumo wa Ubunifu
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Ufundi wa Estetiki ya Design System
+# Ufundi wa Estetiki ya Design System {#design-system-aesthetics-skill}
 
 **Ufundi wa Estetiki ya Design System** ni njia iliyopangwa ya kuboresha utambulisho wa kuonekana wa tovuti yako. Inakusaidia kufanya maamuzi yanayolingana kuhusu fonti (typography), rangi, nafasi (spacing), na tokens za mwendo (motion tokens) ambazo huunda mfumo wako wa muundo (design system).
 
-## Estetiki ya Design System ni Nini?
+## Estetiki ya Design System ni Nini? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics ni ufundi wenye muundo ambao unajumuisha:
 
@@ -20,9 +20,9 @@ Design System Aesthetics ni ufundi wenye muundo ambao unajumuisha:
 
 Maamuzi haya yanatumiwa na faili yako ya `theme.json`, na hivyo kuunda mfumo wa kuonekana unaoendana.
 
-## Kwa Nini Kutumia Estetiki ya Design System?
+## Kwa Nini Kutumia Estetiki ya Design System? {#why-use-design-system-aesthetics}
 
-### Ulinganifu (Consistency)
+### Ulinganifu (Consistency) {#consistency}
 
 Mfumo wa design system unahakikisha:
 
@@ -31,7 +31,7 @@ Mfumo wa design system unahakikisha:
 - Nafasi inafuata mfumo unaotabirika
 - Animashoni zinahisi kuwa zimeunganishwa
 
-### Ufanisi (Efficiency)
+### Ufanisi (Efficiency) {#efficiency}
 
 Badala ya kufanya maamuzi ya muundo kila ukurasa, wewe:
 
@@ -39,7 +39,7 @@ Badala ya kufanya maamuzi ya muundo kila ukurasa, wewe:
 - Unazitumia kila mahali
 - Unaboresha kwa jumla kwa kubadilisha thamani moja
 
-### Uwezo wa Kubadilika (Flexibility)
+### Uwezo wa Kubadilika (Flexibility) {#flexibility}
 
 Unaweza:
 
@@ -47,9 +47,9 @@ Unaweza:
 - Kujaribu estetiki tofauti
 - Kudumisha uthabiti wa chapa huku ukikua
 
-## Kuanzisha Ufundi wa Estetiki ya Design System
+## Kuanzisha Ufundi wa Estetiki ya Design System {#triggering-the-design-system-aesthetics-skill}
 
-### Kuwasha kwa Mikono (Manual Activation)
+### Kuwasha kwa Mikono (Manual Activation) {#manual-activation}
 
 Unaweza kuanzisha ufundi huu wakati wowote:
 
@@ -69,7 +69,7 @@ au
 "Niongoze kupitia maamuzi ya design system"
 ```
 
-### Mapendekezo ya Kijicho (Automatic Suggestions)
+### Mapendekezo ya Kijicho (Automatic Suggestions) {#automatic-suggestions}
 
 Wawakilishi (Agents) wanaweza kupendekeza kutumia ufundi huu wakati unapo:
 
@@ -78,9 +78,9 @@ Wawakilishi (Agents) wanaweza kupendekeza kutumia ufundi huu wakati unapo:
 - Kutaka kuboresha uthabiti wa kuonekana
 - Kuandaa kuanzisha tovuti yako
 
-## Mchakato wa Estetiki ya Design System
+## Mchakato wa Estetiki ya Design System {#the-design-system-aesthetics-process}
 
-### Hatua ya 1: Typography
+### Hatua ya 1: Typography {#step-1-typography}
 
 Mwakilishi anakuuliza kuhusu uchaguzi wako wa fonti:
 
@@ -110,7 +110,7 @@ Kisha mwakilishi anafafanua:
 - **Weight scale**: Uzito wa fonti (regular, medium, bold, n.k.)
 - **Line height**: Nafasi kati ya mistari kwa urahisi wa kusoma
 
-### Hatua ya 2: Paleti ya Rangi (Color Palette)
+### Hatua ya 2: Paleti ya Rangi (Color Palette) {#step-2-color-palette}
 
 ```
 Tufafanue paleti yako ya rangi.
@@ -140,7 +140,7 @@ Mwakilishi anaunda paleti kamili ikiwa ni pamoja na:
 - Rangi za maana (semantic colors) (success, warning, error)
 - Hali za kuhover na za kufanya kazi (hover and active states)
 
-### Hatua ya 3: Nafasi (Spacing)
+### Hatua ya 3: Nafasi (Spacing) {#step-3-spacing}
 
 ```
 Unataka nafasi ya kupumua kiasi gani?
@@ -162,7 +162,7 @@ Mwakilishi anafafanua tokens za nafasi:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Thamani maalum kwa padding, margin, gap
 
-### Hatua ya 4: Mipaka na Kivuli (Borders and Shadows)
+### Hatua ya 4: Mipaka na Kivuli (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Kina na ufafanuzi wa kuonekana:
@@ -185,7 +185,7 @@ Mwakilishi anaunda:
 - Tokens za kivuli kwa viwango vya urefu
 - Tokens za upana wa mpaka
 
-### Hatua ya 5: Mwendo na Animashoni (Motion and Animation)
+### Hatua ya 5: Mwendo na Animashoni (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Tovuti yako inapaswa kuhisi vipi inapofanya mwingiliano?
@@ -207,9 +207,9 @@ Mwakilishi anafafanua:
 - Functions za kupunguza kasi (Easing functions) (ease-in, ease-out, ease-in-out)
 - Keyframes za animashoni kwa mwingiliano wa kawaida
 
-## Kutumia Estetiki ya Design System
+## Kutumia Estetiki ya Design System {#applying-design-system-aesthetics}
 
-### Matumizi ya Kijicho (Automatic Application)
+### Matumizi ya Kijicho (Automatic Application) {#automatic-application}
 
 Baada ya kumaliza ufundi huu, mwakilishi:
 
@@ -218,7 +218,7 @@ Baada ya kumaliza ufundi huu, mwakilishi:
 3. Anajenga upya mitindo ya block ili kuendana na mfumo mpya
 4. Anawasha theme iliyoboreshwa
 
-### Matumizi ya Mikono (Manual Application)
+### Matumizi ya Mikono (Manual Application) {#manual-application}
 
 Unaweza pia kuhariri `theme.json` moja kwa moja:
 
@@ -257,9 +257,9 @@ Unaweza pia kuhariri `theme.json` moja kwa moja:
 }
 ```
 
-## Kuangalia Design System Yako
+## Kuangalia Design System Yako {#viewing-your-design-system}
 
-### Muulize Mwakilishi
+### Muulize Mwakilishi {#ask-the-agent}
 
 ```
 "Nionyeshe design system yangu"
@@ -273,13 +273,13 @@ au
 
 Mwakilishi atakuonyesha typography, rangi, nafasi, na tokens zingine.
 
-### Angalia theme.json
+### Angalia theme.json {#view-themejson}
 
 Fungua `/wp-content/themes/[theme-name]/theme.json` katika text editor kuona ufafanuzi wa tokens halisi.
 
-## Kuboresha Design System Yako
+## Kuboresha Design System Yako {#updating-your-design-system}
 
-### Maboresho ya Haraka
+### Maboresho ya Haraka {#quick-updates}
 
 Muuliza mwakilishi mabadiliko maalum:
 
@@ -299,7 +299,7 @@ au
 "Badilisha fonti ya vichwa kuwa serif"
 ```
 
-### Kuboresha Upya Kabisa (Full Redesign)
+### Kuboresha Upya Kabisa (Full Redesign) {#full-redesign}
 
 Rudia ufundi wa Design System Aesthetics:
 
@@ -309,7 +309,7 @@ Rudia ufundi wa Design System Aesthetics:
 
 Hii itakuongoza kupitia maamuzi yote tena, kuanzia thamani zako za sasa.
 
-### Maboresho Sehemu (Partial Updates)
+### Maboresho Sehemu (Partial Updates) {#partial-updates}
 
 Boresha vipengele maalum:
 
@@ -317,15 +317,15 @@ Boresha vipengele maalum:
 "Boresha tu paleti ya rangi, wacha kila kitu kingine"
 ```
 
-## Mbinu Bora za Design System
+## Mbinu Bora za Design System {#design-system-best-practices}
 
-### Uthabiti (Consistency)
+### Uthabiti (Consistency) {#consistency-1}
 
 - Tumia tokens zile zile kila mahali
 - Usounde rangi au ukubwa wa mara moja tu
 - Rejelea tokens badala ya kuweka thamani moja kwa moja (hardcoding)
 
-### Utoaji Jina (Naming)
+### Utoaji Jina (Naming) {#naming}
 
 Tumia majina wazi, yanayomaanisha:
 
@@ -335,7 +335,7 @@ Tumia majina wazi, yanayomaanisha:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Uwezo wa Kukua (Scalability)
+### Uwezo wa Kukua (Scalability) {#scalability}
 
 Buni mfumo wako ili uweze kukua:
 
@@ -343,7 +343,7 @@ Buni mfumo wako ili uweze kukua:
 - Unda viwango (scales) (xs, sm, md, lg, xl) badala ya thamani za arbitary
 - Panga kwa ajili ya kuongezwa baadaye
 
-### Uthibitisho (Documentation)
+### Uthibitisho (Documentation) {#documentation}
 
 Andika hati ya design system yako:
 
@@ -351,9 +351,9 @@ Andika hati ya design system yako:
 - Lini kutumia token kila moja
 - Stima na hali za dharura
 
-## Mifumo ya Design System ya Kawaida
+## Mifumo ya Design System ya Kawaida {#common-design-system-patterns}
 
-### Minimalist wa Kisasa (Modern Minimalist)
+### Minimalist wa Kisasa (Modern Minimalist) {#modern-minimalist}
 
 - Typography ya sans-serif (Inter, Helvetica)
 - Paleti ndogo ya rangi (2-3 rangi)
@@ -361,7 +361,7 @@ Andika hati ya design system yako:
 - Kivuli dhaifu
 - Animashoni laini na za haraka
 
-### Joto na Rafiki (Warm and Friendly)
+### Joto na Rafiki (Warm and Friendly) {#warm-and-friendly}
 
 - Mchanganyiko wa serif na sans-serif
 - Paleti ya rangi joto (oranges, grays za joto)
@@ -369,7 +369,7 @@ Andika hati ya design system yako:
 - Kivuli laini
 - Animashoni za kuchezea
 
-### Kitaalamu cha Kampuni (Professional Corporate)
+### Kitaalamu cha Kampuni (Professional Corporate) {#professional-corporate}
 
 - Sans-serif safi (Roboto, Open Sans)
 - Paleti ya rangi za kawaida na rangi ya kusisitiza
@@ -377,7 +377,7 @@ Andika hati ya design system yako:
 - Kivuli kidogo
 - Mabadiliko ya polepole
 
-### Ubunifu na Dhana (Creative and Bold)
+### Ubunifu na Dhana (Creative and Bold) {#creative-and-bold}
 
 - Typography ya kipekee
 - Paleti ya rangi zenye nguvu
@@ -385,7 +385,7 @@ Andika hati ya design system yako:
 - Kivuli vikali
 - Animashoni zinazoonekana
 
-## Kutatua Matatizo (Troubleshooting)
+## Kutatua Matatizo (Troubleshooting) {#troubleshooting}
 
 **Mabadiliko yangu ya design system hayonekani**
 - Safisha cache ya browser yako
@@ -403,7 +403,7 @@ Andika hati ya design system yako:
 - Hariri kwa mikono `theme.json` hadi thamani za zamani
 - Rudia ufundi huu kwa chaguo tofauti
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 Baada ya kufafanua design system yako:
 

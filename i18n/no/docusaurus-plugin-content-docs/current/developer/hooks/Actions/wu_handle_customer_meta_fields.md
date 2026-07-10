@@ -4,11 +4,11 @@ title: Handling - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields
+# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Lar plugin-utviklere lagre metadata på forskjellige måter hvis de trenger det.
 
-## Parametere
+## Parametere {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Lar plugin-utviklere lagre metadata på forskjellige måter hvis de trenger det.
 | $customer | `\Customer` | Ultimate Multisite-kundeelementet. |
 | $checkout | `\Checkout` | Checkout-klassen. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) på linje 1211

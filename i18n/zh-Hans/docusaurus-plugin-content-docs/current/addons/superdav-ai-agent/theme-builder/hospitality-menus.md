@@ -3,15 +3,15 @@ title: 餐饮菜单
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# 餐饮菜单
+# 餐饮菜单 {#hospitality-menus}
 
 **餐饮菜单**功能允许 Theme Builder 直接在您的 WordPress 网站中生成和嵌入结构化的食品和饮料菜单页面。
 
-## 概述
+## 概述 {#overview}
 
 现在，Theme Builder 可以为酒店业（包括餐厅、咖啡馆、酒吧和餐饮服务）创建专业、结构化的菜单页面。这些菜单与您的网站设计完全集成，并且可以轻松更新和管理。
 
-## 支持的餐饮类型
+## 支持的餐饮类型 {#supported-hospitality-types}
 
 - **餐厅** — 全方位服务的餐饮菜单
 - **咖啡馆** — 咖啡和轻食菜单
@@ -21,9 +21,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **餐车** — 移动餐饮服务菜单
 - **酒厂和酒庄** — 带描述的饮品菜单
 
-## 菜单结构
+## 菜单结构 {#menu-structure}
 
-### 菜单分类
+### 菜单分类 {#menu-categories}
 
 菜单会按照以下分类进行组织：
 
@@ -34,7 +34,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **饮品** — 饮料（含酒精和非酒精）
 - **特色菜** — 当日或季节特色
 
-### 菜单项格式
+### 菜单项格式 {#menu-item-format}
 
 每个菜单项都包含以下信息：
 
@@ -49,7 +49,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 }
 ```
 
-#### 字段说明
+#### 字段说明 {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 | `allergens` | array | 常见过敏原（坚果、贝类等） |
 | `availability` | string | 可用时间（每日、季节性等） |
 
-## 创建餐饮菜单
+## 创建餐饮菜单 {#creating-hospitality-menus}
 
-### 步骤 1：提供菜单信息
+### 步骤 1：提供菜单信息 {#step-1-provide-menu-information}
 
 告诉 Theme Builder 关于您的菜单：
 
@@ -70,7 +70,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 为我的意大利餐厅创建一个菜单，包括开胃小吃、意大利面主食、主菜和甜点。请包含价格和描述。
 ```
 
-### 步骤 2：Theme Builder 生成菜单
+### 步骤 2：Theme Builder 生成菜单 {#step-2-theme-builder-generates-menu}
 
 Theme Builder 将：
 
@@ -80,7 +80,7 @@ Theme Builder 将：
 4. 格式化价格和描述
 5. 添加饮食和过敏原信息
 
-### 步骤 3：审核和自定义
+### 步骤 3：审核和自定义 {#step-3-review-and-customize}
 
 您可以：
 
@@ -90,9 +90,9 @@ Theme Builder 将：
 4. 更新描述和饮食信息
 5. 调整样式和布局
 
-## 菜单展示选项
+## 菜单展示选项 {#menu-display-options}
 
-### 完整菜单页面
+### 完整菜单页面 {#full-menu-page}
 
 一个专门展示您完整菜单的页面：
 
@@ -101,7 +101,7 @@ Theme Builder 将：
 - 适合打印的布局
 - 响应式移动端设计
 
-### 菜单小工具 (Menu Widget)
+### 菜单小工具 (Menu Widget) {#menu-widget}
 
 在其他页面嵌入菜单部分：
 
@@ -110,7 +110,7 @@ Theme Builder 将：
 - 酒吧页面饮品菜单
 - 页脚甜点展示
 
-### 菜单 PDF
+### 菜单 PDF {#menu-pdf}
 
 生成可下载的 PDF 菜单：
 
@@ -119,9 +119,9 @@ Theme Builder 将：
 - 包含图片和描述
 - 易于分享和通过电子邮件发送
 
-## 饮食和过敏原信息
+## 饮食和过敏原信息 {#dietary-and-allergen-information}
 
-### 饮食属性
+### 饮食属性 {#dietary-attributes}
 
 标记具有饮食信息的项目：
 
@@ -133,7 +133,7 @@ Theme Builder 将：
 - **Low-Carb** — 低碳水化合物
 - **High-Protein** — 富含蛋白质
 
-### 过敏原警告
+### 过敏原警告 {#allergen-warnings}
 
 包含常见过敏原：
 
@@ -146,9 +146,9 @@ Theme Builder 将：
 - **Gluten** — 小麦和含麸质谷物
 - **Sesame** — 芝麻籽和油
 
-## 菜单管理
+## 菜单管理 {#menu-management}
 
-### 更新价格
+### 更新价格 {#updating-prices}
 
 轻松更新菜单价格：
 
@@ -158,7 +158,7 @@ Theme Builder 将：
 4. 保存更改
 5. 更改会立即显示在您的网站上
 
-### 添加季节性项目
+### 添加季节性项目 {#adding-seasonal-items}
 
 创建季节性菜单变体：
 
@@ -168,7 +168,7 @@ Theme Builder 将：
 4. 设置可用日期时间表
 5. 在季节期间自动显示
 
-### 管理特色菜
+### 管理特色菜 {#managing-specials}
 
 展示每日或每周特色菜：
 
@@ -178,7 +178,7 @@ Theme Builder 将：
 4. 每日或每周更新
 5. 归档旧的特色菜
 
-## 与 Theme Builder 的集成
+## 与 Theme Builder 的集成 {#integration-with-theme-builder}
 
 当您使用 Theme Builder 为酒店业网站时：
 
@@ -188,9 +188,9 @@ Theme Builder 将：
 4. **移动端优化** — 菜单在手机上显示美观
 5. **SEO 优化** — 菜单对搜索引擎友好
 
-## 最佳实践
+## 最佳实践 {#best-practices}
 
-### 菜单设计
+### 菜单设计 {#menu-design}
 
 - **清晰的组织结构** — 合理的分类结构
 - **易读的描述** — 诱人且信息丰富
@@ -198,7 +198,7 @@ Theme Builder 将：
 - **专业的照片** — 高质量的食物图片
 - **留白** — 不要让页面过于拥挤
 
-### 内容
+### 内容 {#content}
 
 - **准确的描述** — 准确描述项目
 - **突出特色菜** — 让特色菜脱颖而出
@@ -206,7 +206,7 @@ Theme Builder 将：
 - **定期更新** — 保持价格和项目的新鲜度
 - **使用诱人的语言** — 让项目听起来美味可口
 
-### 可访问性
+### 可访问性 {#accessibility}
 
 - **易读的字体** — 使用清晰、易读的字体
 - **足够的对比度** — 确保文本易于阅读
@@ -214,9 +214,9 @@ Theme Builder 将：
 - **过敏原警告** — 醒目地显示过敏原
 - **移动友好** — 在所有设备上进行测试
 
-## 示例
+## 示例 {#examples}
 
-### 餐厅菜单结构
+### 餐厅菜单结构 {#restaurant-menu-structure}
 
 ```
 开胃小吃
@@ -240,7 +240,7 @@ Theme Builder 将：
 └── 冰淇淋精选
 ```
 
-### 咖啡馆菜单结构
+### 咖啡馆菜单结构 {#cafe-menu-structure}
 
 ```
 咖啡
@@ -259,7 +259,7 @@ Theme Builder 将：
 └── 素食卷饼
 ```
 
-## 相关功能
+## 相关功能 {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — 创建导航菜单
 - [Design Direction](./design-direction.md) — 自定义您的网站设计

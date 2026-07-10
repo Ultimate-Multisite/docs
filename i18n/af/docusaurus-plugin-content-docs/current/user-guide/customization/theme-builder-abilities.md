@@ -3,18 +3,18 @@ title: Tema Bouer Vermoghede
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Vermoë: Scaffold en Aktiveer Block Themes
+# Theme Builder Vermoë: Scaffold en Aktiveer Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 stel twee kragtige vermoë beskik wat jou toelaat om aangepaste block themes direk uit die chat-koppelvlak te genereer en te implementeer.
 
-## Oorsig
+## Oorsig {#overview}
 
 Die **scaffold-block-theme** en **activate-theme** vermoë stel agents in staat om:
 - Voltooide, produksie-gereed block themes te genereer op grond van jou spesifikasies
 - Themes outomaties op jou webwerf te aktiveer sonder handmatige ingryping
 - Samehangende visuele identiteite te skep deur begeleide ontwerpbesluite
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Die **scaffold-block-theme** vermoë genereer 'n nuwe WordPress block theme met 'n volledige tema-struktuur, insluitend:
 
@@ -23,7 +23,7 @@ Die **scaffold-block-theme** vermoë genereer 'n nuwe WordPress block theme met 
 - Aangepaste block-style en variasies
 - Tema-metadata en ondersteuningsverklaringe
 
-### Hoe om te roep
+### Hoe om te roep {#how-to-invoke}
 
 In jou chat met Superdav AI Agent, kan jy tema-generasie versoek:
 
@@ -38,7 +38,7 @@ Die agent sal:
 3. Alle nodige tema-lêers skep
 4. Die tema vir aktivering voorberei
 
-### Verwagte Uitkoms
+### Verwagte Uitkoms {#expected-output}
 
 Wanneer die vermoë suksesvol uitgevoer word, sal jy sien:
 
@@ -56,11 +56,11 @@ Voorbeelduitkoms:
   Status: Ready to activate
 ```
 
-## Aktiveer Tema
+## Aktiveer Tema {#activate-theme}
 
 Die **activate-theme** vermoë skakel jou webwerf na 'n nuut gekonstrueerde of bestaande block theme.
 
-### Hoe om te roep
+### Hoe om te roep {#how-to-invoke-1}
 
 Nadat jy 'n tema gekonstruer het, kan jy dit onmiddellik aktiveer:
 
@@ -74,7 +74,7 @@ Of enige bestaande tema aktiveer:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Verwagte Uitkoms
+### Verwagte Uitkoms {#expected-output-1}
 
 Wanneer aktivering suksesvol is:
 
@@ -92,7 +92,7 @@ Voorbeelduitkoms:
   Note: Check your homepage to verify the layout
 ```
 
-## Werkvloei: Scaffold en Aktiveer
+## Werkvloei: Scaffold en Aktiveer {#workflow-scaffold-and-activate}
 
 'n Tipiese werkvloei kombineer beide vermoë:
 
@@ -102,7 +102,7 @@ Voorbeelduitkoms:
 4. **Aktiveer**: "Activate the theme now"
 5. **Verifieer**: Besoek jou webwerf om te bevestig dat die nuwe ontwerp live is
 
-## Ontwerp-Tokens en Aanpassing
+## Ontwerp-Tokens en Aanpassing {#design-tokens-and-customization}
 
 Gekonstrueerde themes gebruik WordPress ontwerp-tokens (via `theme.json`) vir:
 
@@ -114,14 +114,14 @@ Gekonstrueerde themes gebruik WordPress ontwerp-tokens (via `theme.json`) vir:
 
 Hierdie tokens is gesentraliseerd in `theme.json`, wat dit maklik maak om jou hele ontwerpstelsel vanaf een lêer aan te pas.
 
-## Beperkings en Notas
+## Beperkings en Notas {#limitations-and-notes}
 
 - Themes word in `/wp-content/themes/` gekonstruer en moet die WordPress benoemingskonvensies volg
 - Aktivering vereis toepaslike vergunnings op jou WordPress webwerf
 - Aangepaste PHP-kode in themes is minimaal; gebruik plugins vir komplekse funksionaliteit
 - Block themes werk die beste met WordPress 5.9 en later
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **Tema verskyn nie na konstruering nie**
 - Verifieer dat die tema-direktorie bestaan en korrekte vergunnings het
@@ -138,7 +138,7 @@ Hierdie tokens is gesentraliseerd in `theme.json`, wat dit maklik maak om jou he
 - Maak enige caching plugins skoon
 - Kontroleer of jou WordPress-weergawe die tokens wat jy gebruik ondersteun
 
-## Volgende Stappe
+## Volgende Stappe {#next-steps}
 
 Nadat jy jou tema geaktiveer het, kan jy:
 - Die **Design System Aesthetics skill** gebruik om tipografie, kleure en spasie te verfyn

@@ -4,13 +4,13 @@ title: Фільтр - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Фільтр: wu_contains_element
+# Фільтр: wu_contains_element {#filter-wucontainselement}
 
 Дозволяє розробникам змінювати результати початкового пошуку.
 
 Це корисно для сторонніх конструкторів та подібних інструментів.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | Поточний елемент. |
 | $post | `null\|\WP_Post` | Пост для перевірки. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Визначено в [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) на рядку 534

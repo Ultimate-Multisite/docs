@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Kubhadhara neGoCardless
+
+Bvumira vatengi vako kubhadhara unhuweUltimate Multisite nezvigadzirwa neDirect Debit vachishandisa GoCardless!
+
+## Kuiswa {#installation}
+
+1. Isa 'ultimate-multisite-gocardless' mudhairekitori re'/wp-content/plugins/'
+2. Batidza wedzero kuburikidza nemenyu ye'Plugins' muWordPress
+3. Tevera Wizard nhanho nenhanho kuti ugadzirise wedzero
+
+## Gwaro Rekushandisa {#usage-guide}
+
+_GoCardless_ igedhi rekubhadhara rinowanikwa mu**Europe nemuUK** rinobvumira kubhadhara kwe**Direct Debit**.
+
+Iyo **Ultimate Multisite: GoCardless Gateway** inowedzera rutsigiro rwe_GoCardless_ kuUltimate Multisite, ichikubvumira kubhadharisa vatengi vako mudunhu iroro uchishandisa Direct Debit.
+
+Dzidziso iyi ichafukidza magadzirirwo e_GoCardless_ kuti utange kugamuchira kubhadhara kuburikidza nayo panetwork yako yeUltimate Multisite.
+
+_**Cherechedza: GoCardless inoshanda chete nemari dzinotevera:**_ **EUR, GBP, AUD, SEK, neDKK.**
+
+## Kuisa Wedzero {#installing-the-add-on}
+
+Chekutanga pane zvese, uchafanira kuisa wedzero yeGoCardless yeUltimate Multisite. Unogona kuzviita nekuenda ku**Ultimate Multisite > Zvirongwa > Wedzero (padivi)**. Wobva wasarudza wedzero yeGoCardless parondedzero iyoyo.
+
+Mushure mekunge wedzero yaiswa uye yabatidzwa, enda ku**Ultimate Multisite > Zvirongwa > Kubhadhara**, batidza sarudzo yeGoCardless, wobva wachengetedza.
+
+![Zvirongwa zvegedhi rekubhadhara](/img/config/settings-payment-gateways.png)
+
+## Kuwana Token Yekupinda {#getting-an-access-token}
+
+Gadzira Account pa_GoCardless_ (kana pa_GoCardless_ sandbox, kana uchida **kuiedza kutanga** , izvo zvinokurudzirwa). Wobva, mushure mekupinda, waenda kuchinhu chemenyu che**Vagadziri**.
+
+<!-- Mufananidzo hausipo: Dashboard yeGoCardless ichiratidza nzvimbo yemenyu yeVagadziri -->
+
+Papeji re**Vagadziri**, dzvanya bhatani re**Gadzira** pakona yepamusoro-kurudyi yesikirini, wobva wadzvanya pasarudzo ye**Token Yekupinda**.
+
+<!-- Mufananidzo hausipo: Peji reVagadziri reGoCardless rine bhatani reGadzira nesarudzo yeToken Yekupinda -->
+
+Izvi zvichavhura hwindo idzva remodal, richikubvumira kugadzira token itsva. Ripe zita rinonyatsozivikanwa uye iva nechokwadi chekuti wasarudza sarudzo ye**kupinda kwekuverenga-nekunyora** mumenyu ye**Scope**.
+
+<!-- Mufananidzo hausipo: Modal yeGoCardless yekugadzira token itsva yekupinda ine scope yekuverenga-nekunyora -->
+
+Token yekupinda ichaonekwa pasikirini. Ikopa wobva wainamira kumenyu yako ye**Ultimate Multisite > Zvirongwa > Kubhadhara > GoCardless**.
+
+Iva nechokwadi chekuiisa mundima yakakodzera. Kana iri **token yechokwadi** **n** , dzima **sandbox mode** usati wanamira token.
+
+![Zvirongwa zvegedhi rekubhadhara zvine GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Mufananidzo hausipo: Mindima yetoken yeGoCardless muzvirongwa zvekubhadhara zveUltimate Multisite -->
+
+Ndizvozvo panhanho yekutanga. Zvadaro, unofanira kugadzira muteereri wewebhook.
+
+## Kugadzira Muteereri weWebhook {#setting-up-the-webhook-listener}
+
+Pakubata nema subscriptions, Ultimate Multisite inofanira kunzwa nezvekuchinja kwemamiriro e subscription, kubhadhara kutsva kuri kuitwa, nezvimwe zvinhu zvakadaro.
+
+Nzira iyo magedhi ekubhadhara anozivisa nayo Ultimate Multisite nezvekuchinja ikoko kushandisa **kufona kwewebhook**. Nechikonzero ichocho, kuti kubatanidzwa kushande 100%, tinofanira kuudza _GoCardless_ kuti ndeipi URL yekufona nayo neruzivo irworwo rwese.
+
+Dzokera kupaneru yako ye**GoCardless > Vagadziri** wobva wadzvanya bhatani reGadzira zvakare, asi panguva ino, sarudza sarudzo ye**nzvimbo yekugamuchira webhook**.
+
+<!-- Mufananidzo hausipo: Peji reVagadziri reGoCardless rine sarudzo yenzvimbo yekugamuchira webhook -->Hwindo idzva richavhura rine sarudzo dzenzvimbo yekugamuchira webhook. Rinokumbira URL yewebhook, saka dzokera ku**zvirongwa zveUltimate Multisite > Kubhadhara > GoCardless** uye ukopere URL yewebhook yakanyorwa imomo:
+
+<!-- Mufananidzo hausipo: Zvirongwa zveGoCardless zveUltimate Multisite zvichiratidza URL yewebhook -->
+
+Pamusoro pezvo, unogona kuisa **chakavanzika chewebhook** chichashandiswa kusaina kufona kwako kwewebhook. Chero chaunoisa mundima iyoyo, uchafanirawo kuchiisa mu**dima reChakavanzika cheWebhook reUltimate Multisite**.
+
+<!-- Mufananidzo hausipo: Fomu rekugadzirisa nzvimbo yekugamuchira webhook yeGoCardless rine mindima yeURL nechakavanzika -->
+
+<!-- Mufananidzo hausipo: Dima rechakavanzika chewebhook reGoCardless reUltimate Multisite -->
+
+Pedzisa nekuchengetedza nzvimbo yekugamuchira nekudzvanya bhatani re**Gadzira nzvimbo yekugamuchira webhook** uye wozoti **chengetedzawo zvirongwa zvako zveUltimate Multisite**.
+
+Unofanira kunge wagadzirira kugamuchira _GoCardless_ izvozvi!

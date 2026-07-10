@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# Gratis AI Agent
+# Gratis AI Agent {#gratis-ai-agent}
 
 Gratis AI Agent ni msaidizi wa AI wa WordPress anayeendesha kazi zenyewe (autonomous) ambaye ana uwezo wa kupanga, kujenga, na kusimamia tovuti nzima za WordPress kupitia maelekezo ya lugha ya kawaida. Huwasilisha seti iliyo muundo (structured) ya **abilities** — vitendo maalum, vinavyoweza kupimika ambavyo msaidizi anaweza kuzitumia — ikijikita kila kitu kuanzia usimamizi wa maudhui hadi kubadilisha mfumo wa muundo (design system). Toleo la 1.9.0 limeongeza uwezo wa kuunda maudhui, ukaguzi wa kurasa kwa kuona picha za skrini kutoka kwa upande wa mteja (client-side screenshots), wasifu tano za ndani za msaidizi, na *feature flags* kwa udhibiti wa ufikiaji na chapa (branding).
 
-## Vipengele Muhimu
+## Vipengele Muhimu {#key-features}
 
 - **Mfumo wa Abilities** — katalogi ya vitendo (actions) inayoweza kubadilika na kuongezwa ambazo msaidizi anaweza kuzitumia kwenye usakinishaji lako la WordPress
 - **Usimamizi wa Maudhui** — kuunda makala na kurasa (ikiwemo kuweka muundo wa kurasa), kuunda makala nyingi kwa pamoja kwa wito moja, kuweka picha za sifa (featured images), na kujenga fomu za mawasiliano
@@ -28,21 +28,21 @@ Gratis AI Agent ni msaidizi wa AI wa WordPress anayeendesha kazi zenyewe (autono
 - **Site Builder Orchestration v2** — mipango ya kujenga tovuti ya hatua nyingi na kugundua plugins, kufuatilia maendeleo, na kurejesha makosa
 - **WP-CLI benchmark command** — kuendesha seti ya vipimo vya uwezo wa msaidizi kutoka kwenye command line kwa ajili ya CI na tathmini ya model
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 - WordPress 6.0 au zaidi
 - PHP 8.1 au zaidi
 - WordPress Multisite (iliyowashwa kwenye network) au usakinishaji wa tovuti moja
 - Plugin hai ya muunganishi wa AI (Anthropic, OpenAI, au inayolingana)
 
-## Usakinishaji
+## Usakinishaji {#installation}
 
 1. Pakia faili za plugin kwenye `/wp-content/plugins/gratis-ai-agent`
 2. Washa plugin kupitia skrini ya **Plugins** kwenye WordPress
 3. Nenda kwenye **Gratis AI Agent → Settings** na uunganisha muunganishi wako wa AI
 4. (Hiari) Tembelea **Abilities Registry** ili kusakinisha vifurushi vya abilities vya ziada
 
-## Kuanza Haraka
+## Kuanza Haraka {#quick-start}
 
 Baada ya kuwashwa na kuunganishwa na muunganishi wa AI, fungua sehemu ya **Gratis AI Agent** kwenye menyu ya upande wa admin wa WordPress. Andika maelekezo ya lugha ya kawaida na msaidizi atapanga na kutekeleza hatua zinazohitajika kwa kutumia abilities zilizopo.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## Muhtasari wa Abilities
+## Muhtasari wa Abilities {#abilities-overview}
 
 Abilities ni vitendo vya msingi ambavyo msaidizi anaweza kufanya. Kila ability ni class ya PHP iliyosajiliwa ambayo inatoa schema (viparametrika na aina za kurudi) ambayo msaidizi anaisoma wakati wa uendeshaji. Abilities zimegolompokishwa katika maeneo ya kazi:
 
@@ -79,7 +79,7 @@ Abilities ni vitendo vya msingi ambavyo msaidizi anaweza kufanya. Kila ability n
 
 Tazama [Abilities Reference](./abilities) kwa hati kamili ya viparametrika na mifano ya matumizi.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 Gratis AI Agent inakuja na familia ya amri ya `wp gratis-ai-agent` kwa ajili ya kuendesha vipimo vya uwezo na kusimamia abilities kutoka kwenye command line. Tazama [WP-CLI Reference](./wp-cli) kwa orodha kamili ya amri.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## Configuration
+## Configuration {#configuration}
 
 Mipangilio yote yako chini ya **Gratis AI Agent → Settings** kwenye admin ya WordPress:
 
@@ -106,7 +106,7 @@ Mipangilio yote yako chini ya **Gratis AI Agent → Settings** kwenye admin ya W
 | **Ability Timeout** | Sekunde za juu ambazo ability moja inaweza kuendesha (default 30) |
 | **Debug Logging** | Rekodi wito za ability na hoja za msaidizi kwenye log ya debug ya WordPress |
 
-## Options Management Safety Blocklist
+## Options Management Safety Blocklist {#options-management-safety-blocklist}
 
 Ability ya Options Management ina orodha ya usalama iliyo ndani ambayo inazuia msaidizi kusoma au kuandika options nyeti za WordPress. Orodha ya usalama ya kiwango cha kawaida inajumuisha:
 
@@ -118,26 +118,26 @@ Ability ya Options Management ina orodha ya usalama iliyo ndani ambayo inazuia m
 
 Vinginevyo vya ziada vinaweza kuongezwa kupitia filter ya `gratis_ai_agent_options_blocklist`.
 
-## Hooks na Filters
+## Hooks na Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `gratis_ai_agent_ability_registered` — inatokea baada ya ability kusajiliwa, inapokea jina la class ya ability
 - `gratis_ai_agent_plan_started` — inatokea wakati mpango wa kujenga tovuti unaanza kutekelezwa
 - `gratis_ai_agent_plan_completed` — inatokea wakati mpango unamalizika kwa mafanikio
 - `gratis_ai_agent_plan_failed` — inatokea wakati mpango unakutana na kosa ambalo halina uwezo wa kurekebishwa
 
-### Filters
+### Filters {#filters}
 
 - `gratis_ai_agent_abilities` — badilisha orodha ya abilities zilizosajiliwa kabla ya msaidizi kuizipakia
 - `gratis_ai_agent_options_blocklist` — pangeza au punguza orodha ya usalama ya options
 - `gratis_ai_agent_benchmark_questions` — ongeza maswali maalum ya vipimo kwenye seti ya tathmini
 - `gratis_ai_agent_plan_plugins` — badilisha orodha ya kugundua plugins wakati wa kuzalisha mpango wa tovuti
 
-## Msaada
+## Msaada {#support}
 
 Kwa msaada, tembelea [ultimatemultisite.com](https://ultimatemultisite.com) au fungua suala kwenye repository ya plugin.
 
-## Changelog
+## Changelog {#changelog}
 
 Tazama [Changelog](./changelog) kwa historia kamili ya toleo.

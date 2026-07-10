@@ -3,9 +3,9 @@ title: Migracija z V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migracija z V1
+# Migracija z V1 {#migrating-from-v1}
 
-## Ultimate Multisite je prešel iz svoje originalne verzije 1.x na verzijo 2.x.
+## Ultimate Multisite je prešel iz svoje originalne verzije 1.x na verzijo 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite verzija 2.0 in novje je popolnoma prepišanje celotnega koda, kar pomeni, da je zelo malo enega skupnega elementa med staro in novo različico. Zato morate pri nadaljnemu nadgraditvi z 1.x na 2.x svoje podatke premestiti v format, ki ga bodo nove verzije razumeli.
 
@@ -15,7 +15,7 @@ Ta lekcija opisuje, kako deluje migrator, kaj storiti v primeru napake in kako r
 
 _**POMEMBNO: Preden začnete nadgraditi z verzije 1.x na verzijo 2.0 se morate upejati, da si naredili rezervno kopijo baze podatkov vaše strani**_
 
-## Prvi koraki
+## Prvi koraki {#first-steps}
 
 Prvi korak je preuzimanje .zip datoteke dodatka in instalacija verzije 2.0 na vašem admin dashboardu mreže.
 
@@ -49,19 +49,19 @@ Po vnosu ključa kliknite **Agree & Activate**.
 
 Po aktivaciji licence lahko začnete resnično instalacijo, kliknjo na **Install** na naslednji strani. To bo samodejno ustvarilo potrebne datoteke in bazo podatkov, ki sta potrebna za delovanje version 2.0.
 
-## Zdaj je migracija
+## Zdaj je migracija {#now-the-migration}
 
 Migrator ima vgrajeno varnostno funkcijo, ki preverja celotno vaše multisite, da se lahko vse vaša Ultimate Multisite data premikne brez kakršnih koli težav. Kliknite na gumb **Run Check** (Izvajanje preveritve), da začnete proces.
 
 Po preveritvi imate dve možnosti: rezultat lahko pride **z napako** ali **brez napake**.
 
-### Z napako
+### Z napako {#with-error}
 
 Če dobite sporočanje o napaki, boste morali se obrniti na naš tim podporo, saj vam bodo pomagali pri popravljanju napake. Preverite, da mu **pridate log napake**, ko ustvarjate ticket. Lahko lahko prenesete log ali kliknete na povezavo, ki pravi "kontaktirajte naš tim podpore". To bo odprlo pomočno okno (help widget) na desni strani vaše strani z polji, ki so že popolnoma pripravljeni za vas in vključujejo log napak pod opisom.
 
 _**Ker je sistem našel napako, ne boste mogli nadaljeval s migracijo na verzijo 2.0. Nato lahko vrnete na verzijo 1.x, da boste lahko še delovali z vašo omrežjem, dokler se napaka ne popravi.**_
 
-### Brez napake
+### Brez napake {#without-error}
 
 Če sistem ne najde nobenih napak, boste videli sporočanje uspeha in gumb **Migrate** (Migriraj) na dnu, ki vam bo omogočil nadaljevanje migracije. Na tej strani boste spomnili, da ustvarite rezervno kopijo svoje baze podatkov pred nadaljnjo uporabo, kar močno priporočamo. Kliknite na **Migrate**, če imate že rezervno kopijo.
 

@@ -3,9 +3,9 @@ title: Mifindra avy amin'ny V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Manova avy amin'ny V1
+# Manova avy amin'ny V1 {#migrating-from-v1}
 
-## Nova ny Ultimate Multisite avy amin'ny fianakaviany voalohany 1.x mankany amin'ny fianakaviana 2.x.
+## Nova ny Ultimate Multisite avy amin'ny fianakaviany voalohany 1.x mankany amin'ny fianakaviana 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ny dikan'ny Ultimate Multisite version 2.0 sy mihoatra dia fanovana tanteraka ny code (codebase rewrite), izay midika fa tsy misy zavatra maro mifampiankina eo amin'ny dikan'ny taloha sy ilay vaovao. Noho izany, rehefa manova avy amin'ny 1.x ho 2.x ianao, mila manova ny data anao amin'ny endrika azona antsoina (understand) ny dikan-tsarotra vaovao ireo.
 
@@ -15,7 +15,7 @@ Ity lesona ity dia mitazona ny fomba fiasan'ity migrator ity, izay tokony hatao 
 
 _**ZAVA-MITANTERAKA: Alohan'ny manombohanao ny fanovana avy amin'ny version 1.x ho version 2.0 dia ataovy antoka fa nanao backup ny database anao ianao**_
 
-## Dingana voalohany
+## Dingana voalohany {#first-steps}
 
 Ny dingana voalohany dia ny mandefa (download) ilay zip file an'ny plugin ary mametraka ny version 2.0 eo amin'ny dashboard an'ny admin an'ny tambajotra (network admin).
 
@@ -49,19 +49,19 @@ Aorian'ny fametrahana ny key anao, tsindrio hoe **Agree & Activate** (Manao fifa
 
 Aorian'ny fanatanterahana ny licence, dia afaka manomboka ny fampidirana (installation) marina ianao amin'ny alalan'ny tsipika hoe **Install** (Ampidiro) amin'ny pejy manaraka. Izany dia hamorona ho azy ireo rakitra sy database ilaina mba hiatoana ny dikan-teny 2.0.
 
-## Anke, ny migrasyon
+## Anke, ny migrasyon {#now-the-migration}
 
 Ny migrator dia manana fepetra fiarovana ao anatiny izay hanamarina ny tantara rehetra amin'ny multisite anao mba hahazoana antoka fa azo atao ny mitondrana ny data Ultimate Multisite-nao tsy misy olana. Tsindrio ny bokotra **Run Check** mba hanombohana ilay dingana.
 
 Aorian'ny fanaovana ny check, dia misy safidy roa ianao: ny vokatra dia azo **miaraka amin'ny fahadisoana** na **tsy miaraka amin'ny fahadisoana**.
 
-### Miara-miaraka amin'ny Fahadisoana
+### Miara-miaraka amin'ny Fahadisoana {#with-error}
 
 Raha mahazo hafatra fahadisoana ianao, mila mifandray amin'ny ekipanay fanohanana (support team) ianao mba hanampiana anao amin'ny fanamboarana ilay fahadisoana. Ataovy antoka fa **manome ny error log** rehefa mamorona ticket ianao. Afaka manao download ny log na tsindrio ilay link milaza hoe contact our support team. Ho afaka manokatra ny help widget eo an-kanan'ny lafiny ankavanana amin'ny pejy anao izay efa voaomana ireo toerana ho anao, izay ahitana ireo error logs ao anatin'ny famaritana (description).
 
 _**Satria nahita fahadisoana ny rafitra, tsy afaka mandroso amin'ny migrasiana mankany amin'ny dikan-teny 2.0 ianao. Afaka mamerina any amin'ny dikan-teny 1.x ianao mba hanohy ny fiasan'ny tambajotra anao mandra-pahatongan'ny fanamboarana ilay fahadisoana.**_
 
-### Tsy Miara-miaraka amin'ny Fahadisoana
+### Tsy Miara-miaraka amin'ny Fahadisoana {#without-error}
 
 Raha tsy mahita fahadisoana ny rafitra, dia ho hitanao hafatra fahombiazana (success message) sy bokotra **Migrate** eo ambany izay ahafahanao mandroso amin'ilay migrasiana. Amin'ity pejy ity, dia horaisina ianao mba hamorona backup an'ny database-nao alohan'ny hanatratrarana izany, izay tena manoro hevitra antsika. Tsindrio ny **Migrate** raha efa manana backup ianao.
 

@@ -4,21 +4,21 @@ title: ድርጊት - wu_mcp_adapter_initialized
 sidebar_label: wu_mcp_adapter_initialized
 _i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
 ---
-# Action: wu_mcp_adapter_initialized
+# Action: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
 
 MCP adapter ከተጀመረ በኋላ ይሰራል።
 
 ሌሎች ፕልጊኖች እና ቴሞች የራሳቸውን አቅሞች እንዲመዘግቡ ያስችላል።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $mcp_adapter | `\MCP_Adapter` | የMCP adapter ተልዕኮ (instance)። |
 
-### ከ
+### ከ {#since}
 
 - 2.5.0
-### ምንጭ
+### ምንጭ {#source}
 
 በ[`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L98) ላይ በ98ኛው መስመር ተገልጿል።

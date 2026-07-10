@@ -4,11 +4,11 @@ title: ਫਿਲਟਰ - wu_rest_create_item
 sidebar_label: wu_rest_create_item
 _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 ---
-# Filter: wu_rest_create_item
+# Filter: wu_rest_create_item {#filter-wurestcreateitem}
 
 ਇਹ ਫਿਲਟਰ ਨਿਰਧਾਰਤ ਕਰਦਾ ਹੈ ਕਿ ਕੀ ਰੀਕਵੈਸਟ (request) ਨੂੰ ਅੱਗੇ ਵਧਣ ਦੀ ਇਜਾਜ਼ਤ ਹੈ ਜਾਂ ਨਹੀਂ।
 
-## ਪੈਰਾਮੀਟਰ (Parameters)
+## ਪੈਰਾਮੀਟਰ (Parameters) {#parameters}
 
 | Name | Type | ਵਰਣਨ (Description) |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b35924a8414367a9d0c2f3c21f1a1b91
 | $rest_base | `array` | ਐਂਟੀਟੀ ਸਲੱਗ। |
 | $this | `\Base_Manager` | ਓਬਜੈਕਟ ਦਾ ਇੰਸਟੈਂਸ। |
 
-### ਜਦੋਂ ਤੋਂ (Since)
+### ਜਦੋਂ ਤੋਂ (Since) {#since}
 
 - 2.0.0
-### ਸਰੋਤ (Source)
+### ਸਰੋਤ (Source) {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L362) ਵਿੱਚ ਲਾਈਨ 362 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ।

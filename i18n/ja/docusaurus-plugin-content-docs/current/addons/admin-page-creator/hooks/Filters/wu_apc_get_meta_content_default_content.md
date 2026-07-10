@@ -4,11 +4,11 @@ title: フィルタ - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# フィルタ: wu_apc_get_meta_content_default_content
+# フィルタ: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 開発者がデフォルト値をフィルタリングできるようにします
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | 取得するメタデータのタイプです。 |
 | $meta_key | `string` | メタフィールドの名前です。 |
 
-### 導入バージョン
+### 導入バージョン {#since}
 
 - 1.4.0
 
-### ソース
+### ソース {#source}
 
 定義場所: [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) の68行目で定義されています
 
-## 戻り値
+## 戻り値 {#returns}
 
 新しいデフォルト値です。

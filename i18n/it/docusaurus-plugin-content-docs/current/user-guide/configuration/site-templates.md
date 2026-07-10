@@ -1,146 +1,150 @@
 ---
 title: Modelli di sito
 sidebar_position: 4
-_i18n_hash: 05938a764a4fd230e32fa0ef39d35ebd
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelli di sito (v2)
+# Modelli di sito (v2) {#site-templates-v2}
 
-_**NOTA: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite. Se stai usando la versione 1.x,**_ **vedi questo articolo** _**.**_
+_**NOTA: Questo articolo si riferisce a Ultimate Multisite versione 2.x. Se stai usando la versione 1.x,**_ **consulta questo articolo** _**.**_
 
-Il nostro obiettivo quando creiamo una rete premium con Ultimate Multisite è automatizzare il più possibile i processi, offrendo ai nostri clienti flessibilità e diverse opzioni da scegliere durante la creazione dei loro siti web. Un modo semplice per raggiungere questo equilibrio è sfruttare la funzionalità Modelli di sito di Ultimate Multisite.
+Il nostro obiettivo quando creiamo una rete premium con Ultimate Multisite è automatizzare il maggior numero possibile di processi, offrendo al contempo ai nostri clienti flessibilità e diverse opzioni tra cui scegliere quando creano i loro siti web. Un modo semplice per ottenere questo equilibrio è usare la funzionalità Modelli di sito di Ultimate Multisite.
 
-## Che cos'è un Modello di sito?
+## Che cos’è un modello di sito? {#what-is-a-site-template}
 
-Come suggerisce il nome, un Modello di sito è un sito di base che può essere utilizzato come fondamento per creare nuovi siti nella tua rete.
+Come suggerisce il nome, un modello di sito è un sito boilerplate che può essere usato come base quando si creano nuovi siti nella tua rete.
 
-Ciò significa che puoi creare un sito di base, attivare diversi plugin, impostare un tema attivo e personalizzarlo in qualsiasi modo desideri. Poi, quando il tuo cliente crea un nuovo account, invece di ricevere un sito WordPress predefinito senza contenuti significativi, otterrà una copia del tuo sito di base con tutte le personalizzazioni e i contenuti già presenti.
+Questo significa che puoi creare un sito di base, attivare diversi plugin, impostare un theme attivo e personalizzarlo in qualsiasi modo tu voglia. Poi, quando il tuo cliente crea un nuovo Account, invece di ottenere un sito WordPress predefinito senza contenuti significativi al suo interno, riceverà una copia del tuo sito di base con tutte le personalizzazioni e i contenuti già pronti.
 
-Sembra fantastico, ma come posso creare un nuovo modello di sito? È semplice come può essere.
+Sembra fantastico, ma come faccio a creare un nuovo modello di sito? È il più semplice possibile.
 
-## Creare e modificare un nuovo Modello di sito
+## Creazione e modifica di un nuovo modello di sito {#creating-and-editing-a-new-site-template}
 
-I Modelli di sito sono semplici siti normali nella tua rete. Per creare un nuovo modello, puoi semplicemente andare su **Network Admin > Ultimate Multisite > Sites > Add Site.**
+I modelli di sito sono semplicemente siti normali nella tua rete. Per creare un nuovo modello puoi semplicemente andare su **Amministrazione rete > Ultimate Multisite > Siti > Aggiungi sito.**
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Pulsante Aggiungi sito nella pagina dell’elenco dei siti](/img/config/site-templates-list.png)**
 
-Questo aprirà una finestra modale che chiederà il **Titolo del sito, Dominio/percorso del sito,** e **Tipo di sito**. Nel campo a discesa **Tipo di sito** assicurati di selezionare **Modello di sito** *.*
+Questo aprirà una finestra modale in cui verranno richiesti **Titolo del sito, Dominio/percorso del sito,** e **Tipo di sito**. Nel campo a discesa **Tipo di sito**, assicurati di selezionare **Modello di sito** *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Modale Aggiungi modello di sito con menu a discesa del tipo di sito](/img/config/site-templates-list.png)_
 
-In fondo al modulo, noterai un interruttore **Copia sito**. Questo ti permetterà di creare un nuovo modello di sito basato su un modello di sito esistente come punto di partenza, per aiutarti a risparmiare tempo invece di creare un modello di sito da zero.
+Puoi anche aggiungere una descrizione rivolta al cliente per spiegare cosa include il modello:
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Campo descrizione del modello di sito nella schermata di modifica del modello di sito](/img/config/site-template-edit-description.png)
 
-### Personalizzare i contenuti di un Modello di sito
+In fondo al modulo noterai un interruttore **Copia sito**. Questo ti permetterà di creare un nuovo modello di sito basato su un modello di sito esistente come punto di partenza, per aiutarti a risparmiare tempo invece di creare un modello di sito da zero.
 
-Per personalizzare il tuo modello di sito, basta navigare al pannello del suo cruscotto e apportare le modifiche necessarie. Puoi creare nuovi articoli, pagine, attivare plugin e cambiare il tema attivo. Puoi anche andare al Customizer e modificare tutti i tipi di opzioni di personalizzazione.
+![Modale Aggiungi modello di sito con interruttore copia sito](/img/config/site-templates-list.png)
 
-Tutti questi dati verranno copiati quando un cliente crea un nuovo sito basato su quel Modello di sito.
+### Personalizzare i contenuti di un modello di sito {#customizing-the-contents-of-a-site-template}
 
-### Opzioni avanzate
+Per personalizzare il tuo modello di sito, accedi semplicemente al suo pannello Dashboard e apporta le modifiche di cui hai bisogno. Puoi creare nuovi articoli, pagine, attivare plugin e cambiare il theme attivo. Puoi persino andare nel Customizer e modificare ogni tipo di opzione di personalizzazione.
 
-Se hai familiarità con la programmazione personalizzata, puoi utilizzare la nostra API di ricerca e sostituzione per sostituire automaticamente le informazioni sul nuovo sito dopo la sua creazione. È utile per cose come sostituire i nomi delle aziende su una pagina Informazioni, sostituire l'email di contatto sulla pagina Contatti, ecc.
+![Interfaccia di modifica del modello di sito](/img/config/site-template-edit.png)
 
-### Utilizzare i Modelli di sito
+Tutti questi dati verranno copiati quando un cliente crea un nuovo sito basato su quel modello di sito.
 
-Ok, hai creato un sacco di Modelli di sito diversi con design, temi e impostazioni differenti. Come li rendi utili nella tua rete ora?
+### Opzioni avanzate {#advanced-options}
 
-In pratica, ci sono due approcci che puoi utilizzare ora (non contemporaneamente):
+Se hai familiarità con un po’ di codice personalizzato, puoi usare la nostra API di ricerca e sostituzione per sostituire automaticamente le informazioni sul nuovo sito dopo la sua creazione. Questo è utile per operazioni come sostituire i nomi delle aziende in una pagina Chi siamo, sostituire l’email di contatto nella pagina Contatti, ecc.
 
-  * Attaccare un Modello di sito a ciascuno dei tuoi Piani
+### Usare i modelli di sito {#using-site-templates}
 
-**O**
+Ok, quindi hai creato un gruppo di modelli di sito diversi con design, theme e impostazioni differenti. Come puoi renderli utili ora nella tua rete?
 
-  * Consentire ai tuoi clienti di scegliere i modelli di sito da soli durante la registrazione.
+In sostanza, ci sono due approcci che puoi usare ora (non simultaneamente):
 
-#### Modalità 1: Assegnare Modello di sito
+  * Associare un modello di sito a ciascuno dei tuoi piani
 
-In questa modalità, i tuoi clienti non potranno scegliere un modello quando creano un account, ma piuttosto definirai quale modello dovrebbe essere utilizzato per ciascuno dei tuoi Piani.
+**OPPURE**
 
-Per fare ciò, dovrai andare su **Ultimate Multisite > Products > Edit**.
+  * Consentire ai tuoi clienti di scegliere autonomamente i modelli di sito durante la registrazione.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+#### Modalità 1: Assegna modello di sito {#mode-1-assign-site-template}
 
-Questo ti porterà alla pagina **Edit Produc** t. Nella sezione **Product Options**, trova la scheda **Site template** e seleziona l'opzione **Assegna Sito** **Modello** dal campo a discesa. Questo mostrerà l'elenco dei modelli di sito disponibili e ti permetterà di selezionare solo un modello di sito dedicato al prodotto.
+In questa modalità, i tuoi clienti non potranno scegliere un modello quando creano un Account; sarai invece tu a definire quale modello deve essere usato su ciascuno dei tuoi piani.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+Per farlo, dovrai andare su **Ultimate Multisite > Prodotti > Modifica**.
 
-#### Modalità 2: Scegli Modello di sito disponibile
+![Modifica prodotto per assegnare un modello di sito](/img/config/product-site-templates.png)
 
-In questa modalità, offrirai ai tuoi clienti una scelta durante il processo di registrazione. Potranno selezionare tra diversi modelli di sito che definisci nelle impostazioni del prodotto. Hai l'opzione di limitare i modelli di sito che possono scegliere sotto il prodotto selezionato. Ciò ti permetterà di avere set diversi di modelli di sito sotto ogni prodotto, ideale per evidenziare funzioni e caratteristiche diverse per un prodotto a prezzo più alto.
+Questo ti porterà alla pagina **Modifica prodotto**. Nella sezione **Opzioni prodotto**, trova la scheda **Modello di sito** e seleziona l’opzione **Assegna modello di sito** dal campo a discesa. Verrà visualizzato l’elenco dei modelli di sito disponibili e potrai selezionare un solo modello di sito dedicato al prodotto.
 
-Nella pagina **Modifica Prodotto**. Nella sezione **Product Options**, trova la scheda **Site template** e seleziona l'opzione **Choose Available Site Template** dal campo a discesa. Questo mostrerà l'elenco dei modelli di sito disponibili e ti permetterà di selezionare il modello di sito che desideri sia disponibile. Puoi fare questo scegliendo il suo comportamento: **Disponibile** se vuoi che il modello di sito sia incluso nell'elenco. _**Non disponibile**_ se vuoi che il modello di sito non venga mostrato come opzione. E **Pre-selezionato** se desideri che uno dei modelli di sito elencati sia pre-selezionato.
+![Scheda modello di sito del prodotto con opzione assegna modello di sito](/img/config/product-site-templates.png)
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+#### Modalità 2: Scegli modello di sito disponibile {#mode-2-choose-available-site-template}
 
-### Modalità predefinita: Selezione del modello di sito nel modulo di pagamento
+In questa modalità, offrirai ai tuoi clienti una scelta durante il processo di registrazione. Potranno selezionare tra diversi modelli di sito che definisci nelle impostazioni del prodotto. Hai un’opzione per limitare i modelli di sito tra cui possono scegliere per il prodotto selezionato. Questo ti permetterà di avere diversi set di modelli di sito per ciascun prodotto, ideale per mettere in evidenza funzioni e caratteristiche diverse per un prodotto dal prezzo più alto.
 
-Se desideri che tutti i tuoi modelli di sito siano disponibili durante la registrazione, o magari non preferisci fare il lavoro extra di assegnare o specificare modelli di sito sotto ogni prodotto che crei, puoi semplicemente impostare la selezione del modello di sito sotto il tuo **Modulo di pagamento**. Per fare ciò, devi andare su **Ultimate Multisite > Moduli di pagamento**. Poi fai clic su **Edit** sotto il modulo che desideri configurare.
+Nella pagina **Modifica prodotto**. Nella sezione **Opzioni prodotto**, trova la scheda **Modello di sito** e seleziona l’opzione **Scegli modello di sito disponibile** dal campo a discesa. Verrà visualizzato l’elenco dei modelli di sito disponibili e potrai selezionare il modello di sito che desideri rendere disponibile. Puoi farlo scegliendone il comportamento: **Disponibile** se vuoi che il modello di sito sia incluso nell’elenco. _**Non disponibile**_ se vuoi che il modello di sito non venga mostrato come opzione. E **Preselezionato** se desideri che uno dei modelli di sito elencati sia selezionato come predefinito.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+![Scegli modelli di sito disponibili con opzioni di comportamento](/img/config/product-site-templates.png)
 
-Questo aprirà la pagina **Modifica Modulo di pagamento**. Trova il campo **Selezione Modello** e fai clic su **Edit** sotto di esso.
+### Modalità predefinita: selezione del modello di sito nel modulo di checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+Se desideri che tutti i tuoi modelli di sito siano disponibili durante la registrazione, o magari preferisci non fare lavoro extra assegnando o specificando modelli di sito per ciascun prodotto che crei, puoi semplicemente impostare la selezione del modello di sito nel tuo **Modulo di checkout**. Per farlo, vai su **Ultimate Multisite > Moduli di checkout** e fai clic su **Modifica** sotto il modulo che desideri configurare.
 
-Si aprirà una finestra modale. Nel campo **Siti Modello** puoi selezionare e elencare tutti i modelli di sito che desideri siano disponibili durante la registrazione. I modelli di sito che specifichi da qui saranno disponibili indipendentemente dal prodotto selezionato dall'utente.
+Questo aprirà la pagina **Modifica modulo di checkout**. Trova il campo **Selezione modello** e fai clic su **Modifica** sotto di esso.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+Apparirà una finestra modale. Nel campo **Template Sites** puoi selezionare ed elencare tutti i template di sito che desideri siano disponibili durante la registrazione. I template di sito che specifichi da qui saranno disponibili indipendentemente dal prodotto selezionato dall’utente.
 
-### Opzioni del Modello di sito
+![Campo di selezione del template nell’editor del modulo di checkout](/img/config/checkout-form-template-step.png)
 
-Ci sono altre funzioni dei modelli di sito disponibili che puoi attivare o disattivare nelle impostazioni di Ultimate Multisite.
+Sul frontend, i clienti vedono il selettore di template durante il checkout e possono scegliere il design iniziale per il loro nuovo sito.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Selettore di template frontend durante la registrazione](/img/config/frontend-template-chooser.png)
 
-#### Consentire il cambio di modello
+### Opzioni dei template di sito {#site-template-options}
 
-Abilitare questa opzione consentirà ai tuoi clienti di cambiare il modello scelto durante il processo di registrazione dopo che l'account e il sito sono stati creati. È utile dal punto di vista del cliente poiché consente loro di ri-selezionare un modello se successivamente scoprono che la loro scelta originale non era la migliore per le loro esigenze specifiche.
+Sono disponibili altre funzioni per i template di sito che puoi attivare o disattivare nelle impostazioni di Ultimate Multisite.
 
-#### Consentire agli utenti di usare il loro sito come modelli
+![Opzioni dei template di sito nelle impostazioni di Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-Poiché gli utenti di sottosito hanno impiegato tempo per costruire e progettare il proprio sito, potrebbero volerlo clonare e usarlo come uno dei modelli di sito disponibili quando creano un altro sottosito nella tua rete. Questa opzione consentirà loro di farlo.
+#### Consenti il cambio di template {#allow-template-switching}
 
-#### Copia media sulla duplicazione del modello
+Abilitando questa opzione, i tuoi clienti potranno cambiare il template scelto durante il processo di registrazione dopo che Account e sito sono stati creati. Questo è utile dal punto di vista del cliente, poiché gli consente di selezionare nuovamente un template se in seguito scopre che la scelta originale non era la migliore per le sue esigenze specifiche.
 
-Selezionando questa opzione, verrà copiata la media caricata sul sito modello al nuovo sito creato. Può essere sovrascritto su ciascuno dei piani.
+#### Consenti agli utenti di usare il proprio sito come template {#allow-users-to-use-their-site-as-templates}
 
-#### **Prevenire l'indicizzazione dei Modelli di sito da parte dei motori di ricerca**
+Poiché gli utenti dei sottositi hanno dedicato tempo a creare e progettare il proprio sito, potrebbero volerlo clonare e usarlo come uno dei template di sito disponibili quando creano un altro sottosito nella tua rete. Questa opzione consentirà loro di farlo.
 
-I modelli di sito, come discusso in questo articolo, sono di base ma fanno ancora parte della tua rete, il che significa che sono ancora disponibili per i motori di ricerca. Questa opzione ti permetterà di nascondere i modelli di sito in modo che i motori di ricerca possano indicizzarli.
+#### Copia i media durante la duplicazione del template {#copy-media-on-template-duplication}
 
-## Pre-popolare i Modelli di sito con ricerca e sostituzione automatica
+Selezionando questa opzione, i media caricati sul sito template verranno copiati nel sito appena creato. Questa impostazione può essere sovrascritta su ciascuno dei piani.
 
-Una delle funzionalità più potenti di Ultimate Multisite è la capacità di aggiungere testo arbitrario, colore e campi selezionabili al modulo di registrazione. Una volta che abbiamo acquisito quei dati, possiamo usarli per pre-popolare il contenuto in determinate parti del modello di sito selezionato. Poi, quando il nuovo sito viene pubblicato, Ultimate Multisite sostituirà i segnaposto con le informazioni effettive inserite durante la registrazione.
+#### **Impedisci ai motori di ricerca di indicizzare i template di sito** {#prevent-search-engines-from-indexing-site-templates}
 
-Per esempio, se desideri ottenere il nome dell'azienda dell'utente finale durante la registrazione e inserire automaticamente il nome dell'azienda nella pagina principale. Nella pagina principale del tuo sito modello devi aggiungere i segnaposto, come nell'immagine sotto (i segnaposto devono essere racchiusi tra parentesi graffe doppie - {{placeholder_name}}).
+I template di sito, come discusso in questo articolo, sono boilerplate ma fanno comunque parte della tua rete, il che significa che sono ancora disponibili per essere trovati dai motori di ricerca. Questa opzione ti consentirà di nascondere i template di sito in modo che i motori di ricerca possano indicizzarli.
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+## Precompilazione dei template di sito con ricerca e sostituzione automatica {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Poi, puoi semplicemente aggiungere un campo di registrazione corrispondente sul tuo modulo di pagamento per acquisire quei dati:
+Una delle funzionalità più potenti di Ultimate Multisite è la possibilità di aggiungere campi di testo, colore e selezione arbitrari al modulo di registrazione. Una volta acquisiti quei dati, possiamo usarli per precompilare il contenuto in determinate parti del template di sito selezionato. Poi, quando il nuovo sito viene pubblicato, Ultimate Multisite sostituirà i placeholder con le informazioni effettive inserite durante la registrazione.
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+Ad esempio, se desideri ottenere il nome dell’azienda dell’utente finale durante la registrazione e inserirlo automaticamente nella home page. Nella home page del tuo sito template devi aggiungere i placeholder, come nell’immagine qui sotto (i placeholder devono essere aggiunti racchiusi tra doppie parentesi graffe - {{placeholder_name}}).
+
+![Homepage con testo placeholder tra parentesi graffe](/img/config/site-templates-list.png)
+
+Quindi, puoi semplicemente aggiungere un campo di registrazione corrispondente nel tuo modulo di checkout per acquisire quei dati. Lo stesso editor del modulo di checkout usato per la selezione del template ti consente di posizionare campi personalizzati accanto al selettore di template:
+
+![Selezione del template e campi di registrazione nell’editor del modulo di checkout](/img/config/checkout-form-template-step.png)
 
 Il tuo cliente potrà quindi compilare quel campo durante la registrazione.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Modulo di checkout frontend con selettore di template](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite sostituirà quindi automaticamente i placeholder con i dati forniti dal cliente.
 
-Ultimate Multisite sostituirà quindi i segnaposto con i dati forniti dal cliente automaticamente.
+![Placeholder sostituiti con i dati del cliente sul sito](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### Risolvere il problema del "template pieno di placeholder" {#solving-the-template-full-of-placeholders-problem}
 
-### Risolvere il problema del "modello pieno di segnaposto"
+Tutto questo è ottimo, ma ci imbattiamo in un problema poco gradevole: ora i nostri template di sito - che possono essere visitati dai nostri clienti - sono pieni di placeholder poco eleganti che non comunicano molto.
 
-Tutto questo è fantastico, ma ci troviamo ad affrontare un brutto problema: ora i nostri modelli di sito - che possono essere visitati dai nostri clienti - sono pieni di brutti segnaposto che non dicono molto.
+Per risolvere il problema, offriamo l’opzione di impostare valori fittizi per i placeholder, e usiamo quei valori per cercare e sostituire i loro contenuti sui siti template mentre i tuoi clienti li visitano.
 
-Per risolvere questo, offriamo l'opzione di impostare valori fittizi per i segnaposto, e usiamo quei valori per cercare e sostituire i loro contenuti sui siti modello mentre i tuoi clienti li visitano.
+Puoi accedere all’editor dei placeholder dei template andando su **Ultimate Multisite > Settings > Sites** e poi, nella barra laterale, facendo clic sul link **Edit Placeholders**.
 
-Puoi accedere all'editor dei segnaposto del modello andando su **Ultimate Multisite > Settings > Sites**, e poi, nella barra laterale, facendo clic sul link **Edit Placeholders**.
+![Impostazioni dei template di sito nella pagina delle impostazioni Sites](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+Questo ti porterà all’editor dei contenuti dei placeholder, dove puoi aggiungere placeholder e i rispettivi contenuti.
 
-Questo ti porterà all'editor dei contenuti dei segnaposto, dove puoi aggiungere segnaposto e i rispettivi contenuti.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Punto di accesso all’editor dei contenuti dei placeholder dei template](/img/config/settings-sites-templates-section.png)

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 O Ultimate AI Connector for WebLLM traz a inferência de IA nativa do navegador para a sua rede WordPress Multisite. Ele executa modelos de linguagem grandes (LLMs) inteiramente no navegador usando WebLLM e o motor MLC — sem chaves de API, sem chamadas externas e sem que nenhum dado saia do dispositivo do usuário.
 
-## Principais Recursos
+## Principais Recursos {#key-features}
 
 - **Inferência no lado do navegador**: O LLM roda localmente no navegador do visitante via WebLLM/MLC — não requer GPU de servidor
 - **Widget de chat flutuante**: Usuários logados podem solicitar prompts ao LLM no lado do navegador diretamente do front-end
@@ -22,28 +22,28 @@ O Ultimate AI Connector for WebLLM traz a inferência de IA nativa do navegador 
 - **Cache IndexedDB**: Os downloads de pesos do modelo sobrevivem a redirecionamentos CDN que quebram o caminho padrão da Cache API
 - **Integração wpai filter**: Hook no filtro `wpai_preferred_text_models` para que o recurso AI Experiments seja roteado para o motor do navegador quando configurado
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.3 ou superior
 - PHP 7.4 ou superior
 - Plugin Ultimate Multisite (ativo)
 - Um navegador com suporte a WebGPU (Chrome 113+, Edge 113+, ou Firefox Nightly com WebGPU ativado)
 
-## Instalação
+## Instalação {#installation}
 
 1. Faça o upload dos arquivos do addon para o seu diretório `/wp-content/plugins/`
 2. Ative o plugin através do menu 'Plugins' no WordPress
 3. Navegue até **Ultimate Multisite → AI Connector** para configurar o addon
 
-## Widget de Chat Flutuante
+## Widget de Chat Flutuante {#floating-chat-widget}
 
 O widget de chat flutuante permite que qualquer usuário logado interaja com o LLM no lado do navegador diretamente do seu front-end, sem sair da página em que ele está.
 
-### O que ele faz
+### O que ele faz {#what-it-does}
 
 Quando ativado, um ícone de chat aparece no canto de todas as páginas front-end para usuários logados. Clicar no ícone abre um painel de chat onde o usuário pode digitar prompts e receber respostas do modelo WebLLM rodando localmente. Como o modelo roda inteiramente no navegador, as respostas são privadas e não envolvem nenhum processamento no lado do servidor.
 
-### Indicador de Status na Admin-Bar
+### Indicador de Status na Admin-Bar {#admin-bar-status-indicator}
 
 A barra de administração do WordPress inclui um indicador de status que mostra o estado atual do motor WebLLM:
 
@@ -56,7 +56,7 @@ A barra de administração do WordPress inclui um indicador de status que mostra
 
 O indicador é atualizado em tempo real, sem precisar recarregar a página.
 
-### Como Ativar ou Desativar o Widget
+### Como Ativar ou Desativar o Widget {#how-to-enable-or-disable-the-widget}
 
 1. Vá para **Ultimate Multisite → AI Connector** no admin da rede
 2. Encontre o painel **Connector**
@@ -65,17 +65,17 @@ O indicador é atualizado em tempo real, sem precisar recarregar a página.
 
 O widget também pode ser ativado ou desativado por site, a partir do próprio admin do site, caso o administrador da rede tenha concedido essa capacidade.
 
-## Configurações do Widget
+## Configurações do Widget {#widget-settings}
 
 O painel Connector em **Ultimate Multisite → AI Connector** contém as seguintes configurações para o widget de chat flutuante:
 
-### Enable Floating Chat Widget
+### Enable Floating Chat Widget {#enable-floating-chat-widget}
 
 Alterna o widget de chat para ligado ou desligado em toda a rede. Quando desativado, o widget não aparece em nenhuma página front-end, independentemente do papel do usuário.
 
 **Padrão:** Desligado
 
-### Auto-Prompt Behaviour
+### Auto-Prompt Behaviour {#auto-prompt-behaviour}
 
 Controla se o widget de chat envia automaticamente um prompt quando um usuário o abre.
 
@@ -93,7 +93,7 @@ Ao definir como **Custom prompt**, um campo de texto adicional aparece onde voc�
 
 **Padrão:** Desligado
 
-## SharedWorker Runtime
+## SharedWorker Runtime {#sharedworker-runtime}
 
 A versão 1.1.0 introduz um tempo de execução SharedWorker para o motor MLC. Anteriormente, cada aba do navegador que usava WebLLM carregava sua própria instância do modelo, competindo por memória de GPU e causando problemas de desempenho em dispositivos com VRAM limitada.
 
@@ -105,29 +105,29 @@ Com o SharedWorker runtime, uma aba atua como o host do motor. Todas as outras a
 
 O SharedWorker é transparente para os usuários. O indicador de status na admin-bar sempre reflete o estado do motor compartilhado, e não o da aba individual.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 O addon instala um middleware `apiFetch` que intercepta requisições da API REST do WordPress que correspondem ao padrão do AI Client SDK. Em vez de fazer uma requisição HTTP de loopback para o servidor, essas requisições são roteadas diretamente para o broker local WebLLM rodando no SharedWorker.
 
 Isso significa que plugins e temas que usam a API padrão `apiFetch` do WordPress para chamar endpoints de IA se beneficiarão automaticamente do modelo no lado do navegador quando ele estiver disponível, sem que seja necessário alterar nenhum código.
 
-## Hooks e Filtros
+## Hooks e Filtros {#hooks-and-filters}
 
-### Filtros
+### Filtros {#filters}
 
 - `wpai_preferred_text_models` — Registra o motor de navegador WebLLM como um modelo de texto preferencial. O addon se conecta a este filtro automaticamente quando o motor é configurado e disponível.
 - `ultimate_webllm_widget_enabled` — Sobrescreve o estado de ativo do widget para um usuário ou contexto específico. Retorne `true` ou `false`.
 - `ultimate_webllm_auto_prompt` — Modifica o texto do auto-prompt antes que ele seja enviado ao widget. Recebe a string do prompt e o objeto `WP_Post` atual.
 
-## Solução de Problemas
+## Solução de Problemas {#troubleshooting}
 
-### O widget de chat não aparece
+### O widget de chat não aparece {#the-chat-widget-does-not-appear}
 
 - Confirme se o usuário está logado — o widget é exibido apenas para usuários autenticados
 - Verifique se **Enable floating chat widget** está ativado no painel Connector
 - Verifique se o navegador do usuário suporta WebGPU (veja Requisitos acima)
 
-### O indicador na admin-bar mostra "Error"
+### O indicador na admin-bar mostra "Error" {#the-admin-bar-indicator-shows-error}
 
 Abra o console do desenvolvedor do navegador (F12) e procure por erros relacionados ao WebLLM. Causas comuns:
 
@@ -135,10 +135,10 @@ Abra o console do desenvolvedor do navegador (F12) e procure por erros relaciona
 - Falha no download dos pesos do modelo — verifique a conectividade de rede e tente limpar o cache IndexedDB nas ferramentas do desenvolvedor do navegador (Application → IndexedDB)
 - Uma extensão do navegador está bloqueando o SharedWorker
 
-### Os pesos do modelo baixam toda vez
+### Os pesos do modelo baixam toda vez {#model-weights-download-every-time}
 
 O addon usa o IndexedDB como backend de cache para garantir que os pesos do modelo sobrevivam a redirecionamentos CDN. Se os pesos estiverem sendo baixados novamente em cada visita, verifique se o IndexedDB não está sendo limpo por uma configuração de privacidade ou extensão do navegador.
 
-## Changelog
+## Changelog {#changelog}
 
 Veja [Changelog](./changelog) para o histórico completo de versões.

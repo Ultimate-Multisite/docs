@@ -3,13 +3,13 @@ title: Imponere constantiam Aurora in Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Setting the constanta Sunrise in Closte
+# Setting the constanta Sunrise in Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Algunos proveedores de alojamiento bloquean el wp-config.php por razones de seguridad. Esto significa que Ultimate Multisite no puede editar automáticamente el archivo para incluir las constantes necesarias para que el mapeo de dominios y otras funciones funcionen. Closte es uno de esos hosts.
 
 Sin embargo, Closte ofrece una forma de añadir constantes al wp-config.php de manera segura. Solo necesitas seguir los pasos a continuación:
 
-## En el panel de control de Closte
+## En el panel de control de Closte {#on-the-closte-dashboard}
 
 Primero, [inicia sesión en tu cuenta de Closte](https://app.closte.com/), haz clic en el menú Sites, y luego haz clic en el enlace Dashboard del sitio en el que estás trabajando actualmente:
 

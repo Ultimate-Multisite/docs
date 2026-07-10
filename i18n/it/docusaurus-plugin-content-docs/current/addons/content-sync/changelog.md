@@ -3,9 +3,9 @@ title: Registro delle modifiche di Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Registro delle modifiche di Content Sync
+# Registro delle modifiche di Content Sync {#content-sync-changelog}
 
-### Versione 1.1.0 - Rilasciata il 2025-12-31
+### Versione 1.1.0 - Rilasciata il 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nuovo: Supporto per la sincronizzazione di tutti i tipi di post (post, pagine, tipi di post personalizzati)
 * Nuovo: Filtro per tipo di post nella fase di selezione del contenuto
 * Nuovo: Fase di selezione del sito sorgente - sincronizza da qualsiasi sito, non solo dal sito principale
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Modificato: La fase "Select Templates" è stata rinominata in "Select Data"
 * Migliorato: Il codice specifico per Elementor ora viene eseguito solo per il tipo di post elementor_library
 
-### Versione 1.0.0 - Rilasciata il 2025-12-19
+### Versione 1.0.0 - Rilasciata il 2025-12-19 {#version-100---released-on-2025-12-19}
 * Rilascio iniziale
 * Wizard multi-step per la selezione di template e siti
 * Elaborazione batch con feedback di avanzamento in tempo reale

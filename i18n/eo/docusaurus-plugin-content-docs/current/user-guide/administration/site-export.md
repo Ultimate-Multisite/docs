@@ -3,27 +3,27 @@ title: Sito ekspo
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Sito Exportado
+# Sito Exportado {#site-export}
 
 La pagu WordPress **Site Export** (Export de Sitio) permet admin de rede paketatu un sito, aŭ la tuta retoj en arkivo descargablaj por migrado, backup, aŭ labor de transdonado.
 
-## Exportado de unu sito
+## Exportado de unu sito {#exporting-one-site}
 
 Aliri al **Ultimate Multisite > Site Export** kaj elektu **Generate new Site Export** (Generi nova Site Export). Elektu la sub-sito kiun vi volas exporti, tiel elektu ĉu la arkivo devas inkluzi uploadojn, pluginojn kaj temojn.
 
 Kiam la exportado finas, descargu la ZIP el la listo **Existing Exports** (Exportoj Ekzistantaj). Export ZIPoj nun inkluzas mem-startan `index.php` kaj `readme.txt`, tiel arkivo povas esti plibordita al nova hosto kaj komenciĝi sen pri pli malvoki instali apartan import plugin.
 
-## Exportado de la tuta retoj
+## Exportado de la tuta retoj {#exporting-the-whole-network}
 
 Uzu **Network Export** (Export de Rete) sur la pagu Site Export, kiam vi bezonas unan arkivon inkluzivan ĉiuj sub-sitoj en la retoj. Tio estas utile antaŭ host migradoj, katastrofo-rekonvilibro provoj aŭ staging reconstruktoj, kie ĉiu sub-sito devas diri kun la alia.
 
 Ĉar reta exportado povas esti multe pli granda ol exportado de unu sito, faru ĝin dum periodaj malgravitaj trafikoj kaj konfirme, ke la celita storo havas sufi sian librevon por uploadoj, pluginoj, temoj kaj generitaj ZIP-filoj.
 
-### Network Import Bundles (Pakluntoj de Import Rete)
+### Network Import Bundles (Pakluntoj de Import Rete) {#network-import-bundles}
 
 Kevilis kun Ultimate Multisite 2.12.0, Site Exporter povas generi **network import bundles** (pakluntojn de import retoj) — specialaj arkivoj dezajnitaj por simpligita restorado de la sito tuta la retoj. Unu network import bundle inkluzas ĉiuj necesaj filoj kaj metadatumo por restori plurajn sitojn al nova reta instalita.
 
-#### Generi Network Import Bundle
+#### Generi Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Alti **Ultimate Multisite > Site Export** aliri
 2. Klik **Generate new Network Export** (Nova Rete Ekspor Kreere)
@@ -32,7 +32,7 @@ Kevilis kun Ultimate Multisite 2.12.0, Site Exporter povas generi **network impo
 5. Klik **Generate** (Kreere)
 6. Senki la bundle ZIP din el la listo **Existing Exports** (Eksistantaj Eksporoj)
 
-#### Restorigo el Network Import Bundle
+#### Restorigo el Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Por restorigi sitaĵojn el network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles konservas:
 - Media uploadojn (se ili inkluzita en la bundle)
 - Custom bazdatobazon kaj datumojn
 
-## Instalu self-booting ekspor ZIP
+## Instalu self-booting ekspor ZIP {#installing-a-self-booting-export-zip}
 
 Por restorigi self-booting ZIP sur nova hosto:
 

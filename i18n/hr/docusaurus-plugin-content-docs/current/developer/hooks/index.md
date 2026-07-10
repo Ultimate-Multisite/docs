@@ -1,0 +1,194 @@
+---
+title: Referenca hookova
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referenca hookova {#hooks-reference}
+
+Automatski generirana dokumentacija za svih **59 akcija** i **118 filtera** u Ultimate Multisite.
+
+## Akcije {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Pokreće se prije preusmjeravanja za autentifikaciju.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Pokreće se neposredno prije postavljanja kolačića za autentifikaciju.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Pokreće se neposredno prije postavljanja kolačića za autentifikaciju prijavljenog korisnika.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Omogućuje programerima dodavanje vlastitih integracija pružatelja hostinga putem wp pluginova.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Pokreće se kada su sve ovisnosti učitane
+- [wu_activation](./Actions/wu_activation) — Omogućuje drugim dijelovima plugina da priključe svoje rutine za aktivaciju
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Omogućuje programerima plugina da priključe funkcije nakon što korisnik ili super admin promijeni predložak web-mjesta
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — U nekim slučajevima morat ćemo učitati dodatne resurse za obradu radnji.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Pokreće se prije obrade zahtjeva za pretraživanje.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Omogućuje programerima dodatne promjene na objektu naplate.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Omogućuje programerima dodatne promjene na objektu naplate.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Pokreće se prije dodavanja polja u obrazac za checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Omogućuje programerima pokretanje dodatnih hookova.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Prije nego što obradimo checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Pokreće se nakon što je narudžba checkouta u potpunosti sastavljena.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Omogućuje programerima plugina dodavanje widgeta na Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Omogućuje programerima plugina dodavanje widgeta na Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Omogućuje drugim dijelovima plugina da priključe svoje rutine za deaktivaciju
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Omogućuje programerima plugina dodavanje radnji u postupak brisanja
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Pokreće se kada domena postane primarna domena za web-mjesto.
+- [wu_domain_created](./Actions/wu_domain_created) — Pokreće se kada se doda novo mapiranje domene.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Pokrenuto nakon što je naš osnovni Domain Mapping učitan
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Neki pluginovi spremit će URL prije nego što mapiranje postane aktivno ili će graditi URL-ove na drugačiji način koji nije uključen o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Omogućuje programerima da priključe radnje nakon dupliciranja web-mjesta.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Omogućuje programerima plugina dodavanje dodatnih hookova
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook za dodatno čišćenje
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Pokreće se prije obrade modalnog zahtjeva za dodavanje nove domene.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Omogućuje programerima plugina spremanje meta podataka na različite načine ako im je potrebno.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Omogućuje programerima plugina spremanje meta podataka korisnika na različite načine ako im je potrebno.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Pokreće se kada se naiđe na nevažeći token magic linka.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Pokreće se nakon što se korisnik prijavi putem magic linka.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Omogućuje programerima plugina dodatne radnje kada se kupac doda.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Pokreće se nakon registracije MCP sposobnosti za entitet.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Pokreće se nakon inicijalizacije MCP adaptera.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Pokreće se nakon otkazivanja članstva.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Pokreće se nakon obnove članstva.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Pokreće se prije otkazivanja članstva.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Pokreće se prije obnove članstva.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Pokreće se nakon što je objekt pohranjen u bazu podataka.
+- [wu_page_added](./Actions/wu_page_added) — Omogućuje programerima plugina pokretanje dodatnih stvari kada se stranice registriraju.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Omogućuje programerima plugina dodavanje dodatnog sadržaja nakon što ispišemo stranicu
+- [wu_page_before_render](./Actions/wu_page_before_render) — Omogućuje programerima plugina dodavanje dodatnog sadržaja prije nego što ispišemo stranicu.
+- [wu_page_load](./Actions/wu_page_load) — Omogućuje programerima plugina dodavanje dodatnih hookova našim stranicama.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Omogućuje programerima plugina dodavanje dodatnog sadržaja nakon što ispišemo stranicu
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Omogućuje programerima plugina dodavanje dodatnog sadržaja prije nego što ispišemo stranicu.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Omogućuje programerima plugina dodavanje dodatnih hookova našim stranicama.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Pokreće se nakon što su widgeti registrirani za ovu stranicu.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Pokreće se kako bi omogućilo dodacima da pridruže capability module integracijama.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Pokreće se kako bi omogućilo integracijama da se registriraju.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Omogućuje registraciju dodatnih ruta.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Omogućuje razvojnim programerima pluginova dodavanje radnji u proces spremanja
+- [wu_site_created](./Actions/wu_site_created) — Pokreće se nakon što je site prvi put stvoren.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Omogućuje razvojnim programerima pluginova dodavanje dodatnih hookova, ako je potrebno.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Pokreće se unutar konteksta preglednika predložaka.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Pokreće hook za enqueue skripti.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Pokreće se nakon što je objekt pohranjen u bazu podataka.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Pokreće se nakon što je objekt pohranjen u bazu podataka.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Pokreće se nakon što je objekt pohranjen u bazu podataka.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Omogućuje razvojnim programerima pluginova dodavanje radnji u proces otključavanja.
+
+## Filtri {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtrira trajanje razdoblja isteka autentifikacijskog kolačića.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtrira shemu preusmjeravanja autentifikacije.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replicira izvorni WP Filter ovdje, za svaki slučaj.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Omogućuje developerima plugina filtriranje URL-a koji se koristi u pregledniku
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtrira treba li se auth kolačić slati samo preko HTTPS-a.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtrira treba li koristiti sigurno preusmjeravanje autentifikacije.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtrira treba li se kolačić prijavljenog korisnika slati samo preko HTTPS-a.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Omogućuje sprječavanje stvarnog slanja auth kolačića klijentu.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Postavite URL za preusmjeravanje.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Dodajte dodatne korake putem filtera
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Omogućuje developerima plugina dodavanje dodatne varijable u kontekst renderiranja globalno.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Omogućuje developerima zaobilaženje ove provjere.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtrira polja za modal dodavanja nove domene.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Omogućuje developerima izmjene stavke naknade za postavljanje.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Omogućuje developerima filtriranje administratorskih obavijesti koje je dodao Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtrira nakon izmjene.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Sada obrađujemo sve vrste.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Omogućuje developerima plugina zaobilaženje ograničenja.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtrira treba li se naknada za prijavu primijeniti ili ne.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtrira izvorne api argumente.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Omogućuje developerima plugina filtriranje polja adrese za naplatu.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Omogućuje developerima zaobilaženje izlaza i postavljanje novog
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Omogućuje developerima zaobilaženje koda za poništavanje trenutačnog korisnika.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtrira ukupni "ponavljajući iznos".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtrira ukupni "početni iznos".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtrira ukupni "početni iznos".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Omogućuje developerima plugina da interveniraju u vrijednost kredita.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtrira zajedničke osnovne domene checkout obrasca koje ne bi trebale postati zapisi mapirane domene.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Naši API-ji za dodavanje novih predložaka polja ovdje se povezuju.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Naši API-ji za dodavanje novih vrsta polja ovdje se povezuju.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtrira poruke o pogreškama.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Omogućuje developerima zaobilaženje provjere je li polje automatski podnosivo.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Omogućuje developerima plugina dodavanje prilagođenih aliasa u validator obrasca.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Omogućuje developerima plugina filtriranje pravila validacije.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Poništava neželjene parametre.
+- [wu_contains_element](./Filters/wu_contains_element) — Omogućuje developerima promjenu rezultata početnog pretraživanja.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Omogućuje hosting pružateljima da instaliraju konstantu na drugačiji način.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Vraća lijep naziv administrativnih podjedinica zemlje.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Vraća popis gradova za državu u zemlji.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Vraća popis država za ovu zemlju.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Omogućuje developerima izmjenu zadanog ponašanja i drugačije postavljanje trenutačnog kupca.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Omogućuje developerima izmjenu zadanog ponašanja i drugačije postavljanje trenutačnog membershipa.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Omogućuje developerima izmjenu zadanog ponašanja i drugačije postavljanje trenutačne web-stranice.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Omogućuje developerima izmjenu parametara URL-a za upravljanje web-stranicom.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Omogućuje developerima plugina filtriranje poveznica.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Omogućuje developerima plugina dodavanje novih provjera radi definiranja rezultata.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Možda ćemo kasnije trebati dodati dodatne blokove.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Dodaje generički filter kako bi se developerima omogućilo proširenje ovog parsera za rad s dodatnim builderima ili pluginovima.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrira treba li provoditi dodatna pravila za lozinke.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrira generirano korisničko ime kupca.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Omogućuje developerima pluginova filtriranje unaprijed postavljenih vrijednosti checkout stranice.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Omogućuje developerima dodavanje novih slugova obrazaca radi zaobilaženja ovog ponašanja.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Omogućuje developerima i add-onovima dodavanje novih koraka migracije
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Više o ovom filteru pogledajte u nastavku, u ovoj istoj metodi.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Omogućuje developerima odabir koje vrste objava trebaju biti prikazane.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Vraća retke, moguće filtrirati
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Omogućuje developerima manipulaciju parovima domena/putanja.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtrira odjeljke čarobnjaka za postavljanje integracije hostinga.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtrira polja na obrascu. Obrazac je identificiran ID-jem u nazivu filtera.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrira vrste proizvoda koje imaju neovisne cikluse naplate.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Omogućuje developerima pluginova prisilno postavljanje zadanog stanja za API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Omogućuje developerima pluginova dodavanje dodatnih testova za razvojni način.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Omogućuje developerima pluginova prisilno postavljanje zadanog stanja za MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Iz sigurnosnih razloga ograničavamo broj radnji dostupnih za povezivanje. Ovaj filter omogućuje developerima proširenje
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Provjerava je li određena vrsta objave dopuštena na ovom planu. Omogućuje developerima pluginova filtriranje povratne vrijednosti
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrira treba li provoditi provjeru IP adrese.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrira treba li provoditi provjeru korisničkog agenta.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrira generirani URL magic linka.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrira jesu li magic linkovi omogućeni.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtrira URL za preusmjeravanje nakon postavljanja domene kao primarne.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Stvara popis izuzeća parametara koji sprječavaju automatsko preusmjeravanje.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter za nadjačavanje odluke o uključivanju MCP sposobnosti.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtrira izračunati datum isteka.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtrira izračunati datum isteka koji se postavlja nakon obnove.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Omogućuje developerima dodavanje novih slugova obrazaca za ažuriranje.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrira minimalnu duljinu lozinke.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrira minimalnu potrebnu snagu lozinke (zxcvbn ocjena).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Omogućuje developerima pluginova, i nama samima, dodavanje poveznica radnji na naše stranice za uređivanje
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrira treba li zahtijevati mala slova u lozinkama.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrira treba li zahtijevati brojeve u lozinkama.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrira treba li zahtijevati posebne znakove u lozinkama.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrira treba li zahtijevati velika slova u lozinkama.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Omogućuje korisniku promjenu poruke o plaćanjima na čekanju.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrira vrste proizvoda koje se trebaju tretirati kao planovi.
+- [wu_post_count](./Filters/wu_post_count) — Omogućuje developerima pluginova promjenu ukupnog broja
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Omogućuje developerima pluginova promjenu statusa objava koji se treba brojati. Prema zadanim postavkama broje se objavljene i privatne objave
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtrira podatke objekta prije spremanja u bazu podataka.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Omogućuje developerima filtriranje postavki prije spremanja od strane Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtrira je li dopušteno nastaviti sa zahtjevom ili nije.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtrira je li dopušteno nastaviti sa zahtjevom ili nije.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtrira je li dopušteno nastaviti sa zahtjevom ili ne.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtrira je li dopušteno nastaviti sa zahtjevom ili ne.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtrira je li dopušteno nastaviti sa zahtjevom ili ne.
+- [wu_return_url](./Filters/wu_return_url) — Omogućuje programerima promjenu povratnog URL-a pristupnika koji se koristi nakon procesa checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Omogućuje programerima pluginova dodavanje više funkcija modela pretraživanja.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Omogućuje programerima dodavanje dodatnih koraka čarobnjaka za postavljanje.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtrira treba li Ultimate Multisite stvoriti zapis domene za novostvorenu web-stranicu.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Omogućuje programerima da prekinu preusmjeravanje prije izvršenja, sprječavajući da se dogodi.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Omogućuje prepisivanje rukovatelja
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtrira skupne radnje dostupne za web-stranice.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtar za promjenu vrijednosti za dohvaćanje pluginovih web-stranica unutar mreže.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Omogućuje/onemogućuje mogućnost jedinstvene prijave između domena.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtrira generirane SSO URL-ove prije nego što se vrate za korisničke radnje između domena.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtrira podatke Stripe pretplate. Može nadjačati success_url ili cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtrira argumente namjere plaćanja.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtrira ID plana koji treba provjeriti. Ako postoji, nova pretplata koristit će ovaj plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtrira ID proizvoda koji treba provjeriti. Ako postoji, nova pretplata koristit će ovaj proizvod.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtrira vrijednost idempotency_key poslanu s opcijama Stripe naplate.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtrira zapis članstva povezan s ovim webhookom.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtrira meta podatke prije nego što se serijaliziraju za pohranu u bazu podataka.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtrira podatke objekta prije nego što se pohrane u bazu podataka.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Omogućuje programerima promjenu URL-a za nadogradnju radi otključavanja
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Određuje treba li koristiti mapiranje
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtrira korisničko ime novog korisnika.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Omogućuje programerima promjenu poruke o ograničenju korisnika članstva
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Omogućuje programerima dodavanje dodatnih mapa na popis zamjenjivih.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtrira koje su sub_commands omogućene za ovaj entitet.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Provjeravamo tri uzorka kada pokušavamo utvrditi gdje možemo umetnuti naše konstante:

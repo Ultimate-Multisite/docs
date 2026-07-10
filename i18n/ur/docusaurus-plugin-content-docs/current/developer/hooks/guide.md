@@ -3,15 +3,15 @@ title: Hooks کے استعمال کی گائیڈ
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# ہکس کا استعمال کرنے کی رہنمائی
+# ہکس کا استعمال کرنے کی رہنمائی {#hooks-usage-guide}
 
 Ultimate Multisite 200 سے زیادہ ایکشن ہکس (action hooks) اور 280 سے زیادہ فلٹر ہکس (filter hooks) فراہم کرتا ہے۔ یہ صفحہ سب سے زیادہ استعمال ہونے والے ہکس کو عملی مثالوں کے ساتھ کور کرتا ہے۔ مکمل خودکار طور پر تیار کردہ حوالہ کے لیے، اس سیکشن کے دیگر صفحات دیکھیں۔
 
-## ایکشن ہکس (Action Hooks)
+## ایکشن ہکس (Action Hooks) {#action-hooks}
 
-### کسٹمر کی زندگی کا چکر (Customer Lifecycle)
+### کسٹمر کی زندگی کا چکر (Customer Lifecycle) {#customer-lifecycle}
 
-#### کسٹمر بننے کے بعد (After Customer Creation)
+#### کسٹمر بننے کے بعد (After Customer Creation) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### کسٹمر اسٹیٹس میں تبدیلی (Customer Status Change)
+#### کسٹمر اسٹیٹس میں تبدیلی (Customer Status Change) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### سائٹ ہکس (Site Hooks)
+### سائٹ ہکس (Site Hooks) {#site-hooks}
 
-#### سائٹ کے پبلش ہونے کے بعد (After Site Published)
+#### سائٹ کے پبلش ہونے کے بعد (After Site Published) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### ٹیمپلیٹ لگانے سے پہلے (Before Template Application)
+#### ٹیمپلیٹ لگانے سے پہلے (Before Template Application) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### ممبرشپ ہکس (Membership Hooks)
+### ممبرشپ ہکس (Membership Hooks) {#membership-hooks}
 
-#### اسٹیٹس کی منتقلی (Status Transitions)
+#### اسٹیٹس کی منتقلی (Status Transitions) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### ادائیگی کے ہکس (Payment Hooks)
+### ادائیگی کے ہکس (Payment Hooks) {#payment-hooks}
 
-#### ادائیگی مکمل / ناکام (Payment Completed / Failed)
+#### ادائیگی مکمل / ناکام (Payment Completed / Failed) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### چیک آؤٹ ہکس (Checkout Hooks)
+### چیک آؤٹ ہکس (Checkout Hooks) {#checkout-hooks}
 
-#### پروسیسنگ سے پہلے / مکمل ہونے کے بعد (Before Processing / After Completion)
+#### پروسیسنگ سے پہلے / مکمل ہونے کے بعد (Before Processing / After Completion) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### ڈومین ہکس (Domain Hooks)
+### ڈومین ہکس (Domain Hooks) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## فلٹر ہکس (Filter Hooks)
+## فلٹر ہکس (Filter Hooks) {#filter-hooks}
 
-### پرائسنگ فلٹرز (Pricing Filters)
+### پرائسنگ فلٹرز (Pricing Filters) {#pricing-filters}
 
-#### کارٹ کا کل (Cart Total)
+#### کارٹ کا کل (Cart Total) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### ٹیکس ریٹس (Tax Rates)
+#### ٹیکس ریٹس (Tax Rates) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### ٹیمپلیٹ فلٹرز (Template Filters)
+### ٹیمپلیٹ فلٹرز (Template Filters) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### محدودیت فلٹرز (Limitation Filters)
+### محدودیت فلٹرز (Limitation Filters) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### گیٹ وے فلٹرز (Gateway Filters)
+### گیٹ وے فلٹرز (Gateway Filters) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### چیک آؤٹ فارم کے فیلڈز (Checkout Form Fields)
+### چیک آؤٹ فارم کے فیلڈز (Checkout Form Fields) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### ای میل مواد (Email Content)
+### ای میل مواد (Email Content) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

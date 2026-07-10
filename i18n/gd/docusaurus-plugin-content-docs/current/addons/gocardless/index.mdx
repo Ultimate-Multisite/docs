@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Ultimate Multisite: Pàigheadh GoCardless
+
+Leig le do luchd-ceannach pàigheadh airson ballrachdan is batharan Ultimate Multisite le Dochar Dìreach a’ cleachdadh GoCardless!
+
+## Stàladh {#installation}
+
+1. Luchdaich suas 'ultimate-multisite-gocardless' dhan eòlaire '/wp-content/plugins/'
+2. Cuir an gnìomh am plugin tron chlàr-taice 'Plugins' ann an WordPress
+3. Lean an draoidh ceum air cheum gus am plugin a stèidheachadh
+
+## Stiùireadh Cleachdaidh {#usage-guide}
+
+Tha _GoCardless_ na gheata pàighidh a tha ri fhaighinn san **Roinn Eòrpa agus san RA** agus a leigeas le pàighidhean **Dochar Dìreach**.
+
+Cuiridh **Ultimate Multisite: GoCardless Gateway** taic _GoCardless_ ri Ultimate Multisite, a’ leigeil leat cosgais a chur air do luchd-ceannach san roinn sin a’ cleachdadh Dochar Dìreach.
+
+Còmhdaichidh an t-oideachadh seo mar a stèidhicheas tu _GoCardless_ gus tòiseachadh air gabhail ri pàighidhean troimhe air an lìonra Ultimate Multisite agad.
+
+_**Nòta: Chan obraich GoCardless ach leis na h-airgeadan a leanas:**_ **EUR, GBP, AUD, SEK, agus DKK.**
+
+## A’ stàladh an Add-on {#installing-the-add-on}
+
+An toiseach, feumaidh tu an add-on GoCardless airson Ultimate Multisite a stàladh. Faodaidh tu sin a dhèanamh le bhith a’ dol gu **Ultimate Multisite > Roghainnean > Add-ons (air a’ bhàr-taoibh)**. Agus a’ taghadh an add-on GoCardless air an liosta sin.
+
+Às dèidh don add-on a bhith air a stàladh agus air a ghnìomhachadh, rach gu **Ultimate Multisite > Roghainnean > Pàighidhean**, tionndaidh air an roghainn GoCardless, agus sàbhail.
+
+![Roghainnean geata pàighidh](/img/config/settings-payment-gateways.png)
+
+## A’ faighinn tòcan ruigsinneachd {#getting-an-access-token}
+
+Cruthaich cunntas air _GoCardless_ (no air sandbox _GoCardless_, ma tha thu airson **a dhearbhadh an toiseach** , rud a thathar a’ moladh). An uair sin, às dèidh dhut logadh a-steach, seòl gu nì a’ chlàr-taice **Luchd-leasachaidh**.
+
+<!-- Glacadh-sgrìn ri fhaighinn: Dashboard GoCardless a’ sealltainn suidheachadh clàr-taice Luchd-leasachaidh -->
+
+Air duilleag **Luchd-leasachaidh**, briog air a’ phutan **Cruthaich** san oisean gu h-àrd air an làimh dheis den sgrìn, agus an uair sin briog air an roghainn **Tòcan Ruigsinneachd**.
+
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag Luchd-leasachaidh GoCardless leis a’ phutan Cruthaich agus roghainn Tòcan Ruigsinneachd -->
+
+Fosglaidh seo uinneag modal ùr, a’ leigeil leat tòcan ùr a chruthachadh. Thoir ainm aithnichte dha agus dèan cinnteach gun tagh thu an roghainn **Ruigsinneachd leughaidh-sgrìobhaidh** sa chlàr-taice **Raon**.
+
+<!-- Glacadh-sgrìn ri fhaighinn: modal GoCardless airson tòcan ruigsinneachd ùr a chruthachadh le raon leughaidh-sgrìobhaidh -->
+
+Nochdaidh an tòcan ruigsinneachd air an sgrìn. Dèan lethbhreac dheth sin agus cuir a-steach e dhan chlàr-taice **Ultimate Multisite > Roghainnean > Pàighidhean > GoCardless** agad.
+
+Dèan cinnteach gun cuir thu e san raon cheart. Mas e **tòcan beò** a th’ ann, cuir dheth **modh sandbox** mus cuir thu a-steach an tòcan.
+
+![Roghainnean geata pàighidh le GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Glacadh-sgrìn ri fhaighinn: raointean tòcan GoCardless ann an roghainnean pàighidh Ultimate Multisite -->
+
+Sin agad e airson a’ chiad cheum. An ath rud, feumaidh tu èisteadair webhook a stèidheachadh.
+
+## A’ stèidheachadh an èisteadair Webhook {#setting-up-the-webhook-listener}
+
+Nuair a thathar a’ dèiligeadh ri fo-sgrìobhaidhean, feumaidh Ultimate Multisite cluinntinn mu atharrachaidhean ann an inbhe na fo-sgrìobhaidh, pàighidhean ùra gan dèanamh, agus rudan eile den leithid.
+
+’S e an dòigh anns am bi geataichean pàighidh ag innse do Ultimate Multisite mu na h-atharrachaidhean sin a bhith a’ cleachdadh **gairmean webhook**. Air an adhbhar sin, gus an obraich an t-aonachadh 100%, feumaidh sinn innse do _GoCardless_ dè an URL ris am bu chòir dha gairm leis an fhiosrachadh sin uile.
+
+Till dhan phannal **GoCardless > Luchd-leasachaidh** agad agus briog air a’ phutan Cruthaich a-rithist, ach an turas seo, tagh an roghainn **endpoint webhook**.
+
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag Luchd-leasachaidh GoCardless leis an roghainn endpoint webhook -->Fosglaidh uinneag ùr le roghainnean endpoint webhook. Iarraidh e URL a’ webhook, mar sin till gu **roghainnean Ultimate Multisite > Pàighidhean > GoCardless** agad agus dèan lethbhreac den URL webhook a tha air a liostadh an sin:
+
+<!-- Glacadh-sgrìn ri fhaighinn: roghainnean GoCardless Ultimate Multisite a’ sealltainn URL webhook -->
+
+A bharrachd air sin, faodaidh tu **dìomhaireachd webhook** a chur a-steach a thèid a chleachdadh gus na gairmean webhook agad a shoidhnigeadh. Ge bith dè a chuireas tu a-steach san raon sin, feumaidh tu a chur a-steach san **raon Dìomhaireachd Webhook Ultimate Multisite** cuideachd.
+
+<!-- Glacadh-sgrìn ri fhaighinn: foirm rèiteachaidh endpoint webhook GoCardless le raointean URL agus dìomhaireachd -->
+
+<!-- Glacadh-sgrìn ri fhaighinn: raon dìomhaireachd webhook GoCardless Ultimate Multisite -->
+
+Crìochnaich le bhith a’ sàbhaladh an endpoint le bhith a’ briogadh air a’ phutan **Cruthaich endpoint webhook** agus an uair sin **sàbhail na roghainnean Ultimate Multisite agad cuideachd**.
+
+Bu chòir dhut a bhith deiseil gus gabhail ri _GoCardless_ a-nis!

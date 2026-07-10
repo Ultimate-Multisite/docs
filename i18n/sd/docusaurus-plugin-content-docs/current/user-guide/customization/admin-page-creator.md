@@ -3,7 +3,7 @@ title: ادمن پيچو ڪري
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# ادمين بيج کریئٽر (Admin Page Creator)
+# ادمين بيج کریئٽر (Admin Page Creator) {#admin-page-creator}
 
 هي فيچر **Admin Page Creator** اسڊن جي مدد سان فراہم ڪيو ويو آهي.
 

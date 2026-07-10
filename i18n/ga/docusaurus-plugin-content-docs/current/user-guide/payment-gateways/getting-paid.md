@@ -1,116 +1,126 @@
 ---
-title: Taispeáidtear
+title: Íocaíocht a Fháil
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Taispeid (v2)
+# Ag Fáil Íocaíochta (v2) {#getting-paid-v2}
 
-_**NOTE CRUCIAL: Tá an curte seo ag curte ar Ultimate Multisite version 2.x.**_
+_**NÓTA TÁBHACHTACH: Tagraíonn an t-alt seo do Ultimate Multisite leagan 2.x.**_
 
-Tá siomra membership agus billing ceartaithe inbhallaite i Ultimate Multisite. Nuair a bheith an siomra billing atá ag dul ar bhealach, táimid ag curte is gcomhthabhairtacha deacairte a bhuseartha a bhaineann le e-commerce. Is é na gcuid siomra billing deacairte i Ultimate Multisite _Stripe_, _PayPal_ agus Billing Manuil. Is féidir leat a bheith ag úsáid _WooCommerce_, _GoCardless_ agus _Payfast_ chun tairiscint a fháil ar chuid add-ons a bhaineann leis na hiontaí sin.
+Tá córas ballraíochta agus billeála ionsuite ag Ultimate Multisite. Chun go bhfeidhmeoidh ár gcóras billeála, tá na geataí íocaíochta is coitianta a úsáidtear i ríomhthráchtáil comhtháite againn. Is iad na geataí íocaíochta réamhshocraithe in Ultimate Multisite ná _Stripe_ , _PayPal_ , agus Íocaíocht Láimhe. Is féidir leat _WooCommerce_ , _GoCardless_ agus _Payfast_ a úsáid freisin chun íocaíochtaí a fháil trína mbreiseáin faoi seach a shuiteáil.
 
-## Cuid Aisneacháin (Basic Settings)
+## Socruithe Bunúsacha {#basic-settings}
 
-Is féidir leat a chur in áit aon cheoinn siomra billing seo i ngléanna siomra billing deacairte i Ultimate Multisite. Is féidir leat é seo a fháil ag dul go dtí **Ultimate Multisite menu > Settings > Payments.**
+Is féidir leat aon cheann de na geataí íocaíochta seo a chumrú faoi shocruithe íocaíochta Ultimate Multisite. Is féidir leat é a aimsiú trí dhul chuig **roghchlár Ultimate Multisite > Socruithe > Íocaíochtaí.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Leathanach socruithe Íocaíochtaí in Ultimate Multisite ag taispeáint an phainéil Íocaíochtaí](/img/config/payments-settings-page.png)
 
-Sula thuairiscint an siomra billing atá ag curte, le ghnáth an tairiscint aisneacháin bunaithe a bhaineann leis na cheoinn siomra billing bunaithe a féidir leat a chur in áit:
+Sula socraíonn tú do gheata íocaíochta, féach ar na socruithe bunúsacha íocaíochta is féidir leat a chumrú:
 
-**Force auto-rene** **w:** Beidh sé seo ag cur isteach go bhfuil an tairiscint ag teacht ar bhealach chun an tairiscint a dhéanamh go dtí an deireadh de chuid na hiontaí a bhaineann leis an fheidhmeachas a chur in áit a thigeann an úsáid.
+**Cuir uath-athnuachan i bhfeidh** **m:** Cinnteoidh sé seo go dtarlóidh an íocaíocht arís go huathoibríoch ag deireadh gach timthrialla billeála, ag brath ar an minicíocht bhilleála a roghnaigh an t-úsáideoir.
 
 <!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ag cur Ultimate Multisite v2.13.0, ag iarraidh sé a bheith ar an tairiscint atá ag obair ag teacht ar chuid reusabil an tairiscint a bhaineann leis an tairiscint aisneacháin a chur in áit le auto-renewal atá ag obair. Is féidir leat an tairiscintaisce a bheith mar subscription de chuid airgeadta, ginearál ar cheangailte, token vault a chur in áit, nó meán reusabil a bhaineann leis an fheidhmeachas. Má iontas an tairiscint ag cur ar an tairiscintaisce go bhfuil aon cheoinn siomra a chur ar bhealach, caillfidh Ultimate Multisite an siomra ach beidh sé auto-renewal ag obair agus beidh sé an stáit cheoinn siomra a bhaineann leis an fheidhmeachas chun an tairiscint a chur ar bhealach leat ar chuid airgeadta primaid a dhéanamh primaid as an tairiscintaisce.
+Seiceálann Ultimate Multisite v2.13.0 an bhfuil dintiúr athnuachana in-athúsáidte ag an ngeata gníomhach sula sábháiltear ballraíocht athfhillteach le huath-athnuachan cumasaithe. Is féidir le dintiúr athnuachana a bheith ina shíntiús geata, ina chomhaontú billeála, ina vault token sábháilte, nó ina mhodh íocaíochta in-athúsáidte coibhéiseach. Má thuairiscíonn an geata nach bhfuil aon dintiúr inúsáidte ann, sábhálann Ultimate Multisite an bhallraíocht ach múchann sé uath-athnuachan agus taifeadann sé staid an dintiúir atá ar iarraidh ionas gur féidir le riarthóir nó sreabhadh tacaíochta iarraidh ar an gcustaiméir an íocaíocht a údarú arís roimh dháta na hathnuachana.
 
-Iní an t-amhas an t-amhas seo chun an chéad chuid ar an bhfath.
+Cuireann sé seo cosc ar bhallraíocht a bheith le feiceáil amhail is go n-athnuachan sí go huathoibríoch nuair nach féidir leis an ngeata ach íocaíochtaí aonuaire a bhailiú. Ba cheart do bhreiseáin gheata a dheimhniú go stórálann seiceáil amach athfhillteach dintiúr in-athúsáidte, go háirithe nuair a thacaíonn an geata le gabháil aonuaire agus le modhanna íocaíochta vaultáilte/síntiús araon.
 
-**Fhéad an t-amhas (trials) gan pleithne:** **Méthode:** Le linn tá an option seo acuán, níl mór duit a chur i bhfeidhm aon fáil féin go dtí an t-amhas deireadh. Beidh sé ag tairgíocht amach an lá atá an t-amhas deireadh.
+**Ceadaigh trialacha gan mhodh íocaíochta** **:** Agus an rogha seo cumasaithe, ní bheidh ar do chliant aon fhaisnéis airgeadais a chur leis le linn an phróisis chlárúcháin. Ní bheidh sé seo riachtanach ach amháin nuair a rachaidh an tréimhse trialach in éag.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**An t-amhas (invoice) a bheith ar fháil ar confirmation pleithne:** Tugann seo duit oiriúnas chun an t-amhas a bheith ar fháil tar éis an pleithne. Déan ar an chúram: beidh na húsáir ag cur réiteach ar a bhfath pleithne mar chuid iad ag cur isteach ar a dashboard subsite. Níl an option seo ag athrú chun an Manual Gateway.
+**Seol sonrasc ar dheimhniú íocaíochta:** Tugann sé seo rogha duit sonrasc a sheoladh nó gan é a sheoladh tar éis íocaíochta. Tabhair faoi deara go mbeidh rochtain ag úsáideoirí ar a stair íocaíochta faoina dashboard foshuímh. Ní bhaineann an rogha seo leis an nGeata Láimhe.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Céadtaí nua ar an t-amhas (invoice numbering scheme):** Anseo, leat ormúint a chur i bhfeidhm ach beidh tú ag cur chun cinn mar chuid féin pleithne pleithne nó ardán sérial. Má thug tú ar chuid féin pleithne pleithne go léiríocht ar do chuid amhas, níl mór duit aon rud a chur i bhfeidhm. Má thug tú ar chuid féin ardán sérial, beidh tú ag cur chun cinn an **amhas nua** (Beidh an amhas seo ag úsáid mar amhasnóir leat ar an t-amhas nua a bhailte ar an siomhan. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Is é sin ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte.) agus **prifíseán an amhasnóir** (Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte. Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte.) agus **prifíseán an amhasnóir** (Beidh sé ag tairgíocht ar chuid féin ag an t-amhas nua a bhailte).
+**Scéim uimhrithe sonrasc:** Anseo, is féidir leat cód tagartha íocaíochta nó scéim uimhreacha sheicheamhach a roghnú. Má roghnaíonn tú cód tagartha íocaíochta a úsáid do do shonraisc, ní gá duit aon rud a chumrú. Má roghnaíonn tú scéim uimhreacha sheicheamhach a úsáid, beidh ort an **chéad uimhir sonraisc eile** a chumrú (Úsáidfear an uimhir seo mar uimhir an tsonraisc don chéad sonrasc eile a ghinfear ar an gcóras. Méadaítear í faoi a haon gach uair a chruthaítear sonrasc nua. Is féidir leat í a athrú agus í a shábháil chun uimhir sheicheamhach na sonraisc a athshocrú go luach sonrach) agus an **réimír uimhir sonraisc.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Caith an gcurthaíocht na gateway:
+## Cá háit a bhfaighidh tú na geataí: {#where-to-find-the-gateways}
 
-Is féidir leat a chur ar fáil na gateway de oileán ar an amas atá tú ag cur isteach ( **Ultimate Multisite > Settings > Payments**). Ar an bhfáthach seo, ar an bhfáthach "active payment gateways", beidh tú ag fheiceáil: _Stripe_, _Stripe_ _Checkout_, _PayPal_ agus _Manual_.
+Is féidir leat na geataí íocaíochta a shocrú ar an leathanach céanna ( **Ultimate Multisite > Socruithe > Íocaíochtaí**). Díreach faoi **gheataí íocaíochta gníomhacha** , beidh tú in ann a fheiceáil: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ agus _Láimhe_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Rannán Geataí Íocaíochta Gníomhacha ag liostú Stripe, Stripe Checkout, PayPal agus Láimhe](/img/config/payments-active-gateways.png)
 
-Tá curtha an tairiscint aige ar chuid de oileán ar chuid de oileán atá tú ag cur isteach (payment gateway). Beidh méid aige chun na stiúirithe a fheiceáil agus a athrú:
+Tá alt tiomnaithe againn do gach geata íocaíochta a threoróidh thú trí na céimeanna chun é a shocrú, agus is féidir leat iad a aimsiú sna naisc thíos.
 
-![Payment edit interface](/img/admin/payment-edit.png)
+Is féidir leat sonraí íocaíochta a fheiceáil agus a chur in eagar:
 
-Seo curtha fuaime ar an curtha de oileán atá tú ag cur isteach:
+![Comhéadan eagarthóireachta íocaíochta](/img/admin/payment-edit.png)
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+Seo amharc iomlán ar an leathanach eagarthóireachta íocaíochta:
 
-Seo curtha fuaime ar na curtha de oileán atá tú ag cur isteach:
+![Comhéadan iomlán eagarthóireachta íocaíochta](/img/admin/payment-edit-full.png)
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+Seo freisin amharc iomlán ar shocruithe na ngeataí íocaíochta:
 
-**Curtha an gcurthaíocht Stripe**
+![Leathanach iomlán socruithe geataí íocaíochta](/img/config/settings-payments-gateways-full.png)
 
-**Curtha an gcurthaíocht PayPal**** **
+**An geata Stripe a shocrú**
 
-**Curtha na pléas manual**
+**An geata PayPal a shocrú**** **
 
-Anois, má tá tú ag iarraidh a bheith ag úsáid _WooCommerce_, _GoCardless_ nó _Payfast_ mar curtha de oileán atá tú ag cur isteach, leat é a bheith ag cur isteach agus a chur ar fáil na add-ons (add-ons) aige.
+**Íocaíochtaí láimhe a shocrú**
 
-### Conas a chur in áit an add-on WooCommerce:
+Anois, más mian leat _WooCommerce_ , _GoCardless_ nó _Payfast_ a úsáid mar do gheata íocaíochta, beidh ort **a mbreiseáin a shuiteáil agus a chumrú**.
 
-Tá linn go bhfuil _Stripe_ agus _PayPal_ níl ag bheith faisnéis i gcuid gceanaírtas, a bhíonn siad ag líonadh nó ag cur isteach na húsáiteoirí Ultimate Multisite ar chuid éifeachtúil. Mar sin, roinnt add-ons amachadh caillte a muid a chur ar fáil chun _WooCommerce_ a shlúthadh leat, atá sé plugin e-commerce beag. Tá deóirí ar an talamh na h-éirí an t-ádhchúrtaithe ag cur isteach gateway éifeachtúil ar é seo. Táimid ag úsáid seo chun na gateway atá tú ag cur isteach a shlúthadh leat leis an siastáil billing de Ultimate Multisite a leanas.
+### Conas an breiseán WooCommerce a shuiteáil: {#how-to-install-the-woocommerce-add-on}
 
-_**IMPORTANT:** Is é a Intégráid le WooCommerce de Ultimate Multisite agraithe ar chuidite WooCommerce a bheith activaithe ar chuidite bunaithe agat._
+Tuigimid nach bhfuil _Stripe_ agus _PayPal_ ar fáil i roinnt tíortha, rud a chuireann teorainn le húsáideoirí Ultimate Multisite nó a chuireann bac orthu ár bplugin a úsáid go héifeachtach. Mar sin chruthaíomar breiseán chun _WooCommerce,_ a chomhtháthú, ar plugin ríomhthráchtála an-choitianta é. Chruthaigh forbróirí ar fud an domhain breiseáin chun geataí íocaíochta éagsúla a chomhtháthú leis. Bhain muid leas as seo chun na geataí íocaíochta is féidir leat a úsáid le córas billeála Ultimate Multisite a leathnú.
 
-Ar anois, le guraigh go cur i bhfeic ar an cur add-ons. Beidh tú ag iarraidh é a fheiceáil tríd **Ultimate Multisite > Settings**. Ba cheart tú é a fheiceáil ar an tabla **Add-ons**. Cliom ar **Check our Add-ons**.
+_**TÁBHACHTACH:** Éilíonn Ultimate Multisite: WooCommerce Integration go mbeidh WooCommerce gníomhachtaithe ar do phríomhshuíomh ar a laghad._
 
-<!-- Screenshot unavailable: Tabla Add-ons ar an chuidite Settings de Ultimate Multisite le cur Check our Add-ons -->
+Ar dtús, téigh chuig leathanach na mbreiseán. Is féidir leat é a aimsiú trí dhul chuig **Ultimate Multisite > Socruithe**. Ba cheart duit an tábla **Breiseáin** a fheiceáil. Cliceáil ar **Seiceáil ár mBreiseáin**.
 
-Tar éifeacht a bhfáthach ar **Check our Add-ons**, beidh tú ag cur i bhfeic ar an cur add-ons. Beidh tú ag iarraidh é a fheiceáil ar an cur add-ons de Ultimate Multisite. Cliom ar an add-on **Ultimate Multisite: WooCommerce Integration**.
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-![Cur add-ons a léiriad na add-ons de Ultimate Multisite, gan cur WooCommerce Integration](/img/addons/addons-page.png)
+Tar éis duit cliceáil ar **Seiceáil ár mBreiseáin** , atreorófar thú chuig leathanach na mbreiseán. Anseo is féidir leat gach breiseán Ultimate Multisite a aimsiú. Cliceáil ar an mbreiseán **Ultimate Multisite: WooCommerce Integration**.
 
-Beidh cur a bhfáthach ag teacht ar leith, beidh tú ag iarraidh é a bheith chomhartha agus a bheith activaithe ar do website.
+![Leathanach breiseán ag liostú breiseáin Ultimate Multisite lena n-áirítear WooCommerce Integration](/img/addons/addons-page.png)
 
-<!-- Screenshot unavailable: Notice admin a chur ar an admin a bheith ag cur i bhfeic ar an plugin WooCommerce -->
+Osclóidh fuinneog leis na sonraí faoin mbreiseán. Ní gá ach cliceáil ar **Suiteáil Anois**.
 
-Leat a léamh níos mó faoi an add-on **Ultimate Multisite: WooCommerce Integration**, **clic anseo**.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: dialóg sonraí bhreiseán Ultimate Multisite WooCommerce Integration leis an gcnaipe Suiteáil Anois -->
 
-### Conas a chruinneadd an add-on GoCardless:
+Tar éis don tsuiteáil a bheith críochnaithe, atreorófar thú chuig leathanach na mbreiseán. Anseo, ní gá ach cliceáil ar **Gníomhachtaigh ar an Líonra** agus gníomhachtófar an breiseán WooCommerce ar do líonra.
 
-Tá an chéadachais chun an add-on _GoCardless_ a chiallaíonn go leat go hiomlán mar is éasca ná an add-on _WooCommerce_. Déan cinnte go cur isteach ar an lús add-ons agus déan chun an add-on **Ultimate Multisite: GoCardless Gateway** a chur i bhfeicim.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: leathanach na mbreiseán leis an nasc Gníomhachtaigh ar an Líonra don bhreiseán WooCommerce Integration -->
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+Tar éis é a ghníomhachtú, mura bhfuil an breiseán WooCommerce suiteáilte agus gníomhachtaithe agat fós ar do shuíomh gréasáin, gheobhaidh tú meabhrúchán.
 
-Beidh cur chuimneamh an add-on ag turláint. Cliom ar **Install Now**.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: fógra riaracháin ag meabhrú don riarthóir an breiseán WooCommerce a shuiteáil agus a ghníomhachtú -->
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+Chun tuilleadh a léamh faoin mbreiseán WooCommerce Integration, **cliceáil anseo**.
 
-Tar éis a thaispeán an chiallaíonn, beidh tú ag cur chuimneamh ar an lús plugins. Anois, cliom ar **Network Activate** agus beidh an add-on _GoCardless_ ag fáil ardú ar do ngrú.
+### Conas an breiseán GoCardless a shuiteáil: {#how-to-install-the-gocardless-add-on}
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+Tá na céimeanna chun an breiseán _GoCardless_ a shuiteáil beagnach mar an gcéanna leis an mbreiseán _WooCommerce_. Téigh chuig leathanach na mbreiseán agus roghnaigh an breiseán **Ultimate Multisite: GoCardless Gateway**.
 
-Leim ar na chuid a bhaint ar an ghlú _GoCardless_ gateway, **léigh an athcharta seo**.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: leathanach na mbreiseán agus an breiseán Ultimate Multisite GoCardless Gateway aibhsithe -->
 
-### Conas a chur i bhfeicim an add-on Payfast:
+Osclóidh fuinneog an bhreiseáin. Cliceáil ar **Suiteáil Anois**.
 
-Déan chun an lús add-ons go hiomlán agus déan chun an add-on **Ultimate Multisite: Payfast Gateway** a chur i bhfeicim.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: dialóg sonraí bhreiseán Ultimate Multisite GoCardless Gateway leis an gcnaipe Suiteáil Anois -->
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+Tar éis don tsuiteáil a bheith críochnaithe, atreorófar thú chuig leathanach na mbreiseán. Anseo, ní gá ach cliceáil ar **Gníomhachtaigh ar an Líonra** agus gníomhachtófar an breiseán _GoCardless_ ar do líonra.
 
-Beidh cur chuimneamh an add-on ag turláint. Cliom ar **Install Now**.
+<!-- Gabháil scáileáin nach bhfuil ar fáil: leathanach na mbreiseán leis an nasc Gníomhachtaigh ar an Líonra don bhreiseán GoCardless Gateway -->
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+Chun foghlaim conas tosú leis an ngeata _GoCardless_, **léigh an t-alt seo**.
 
-Tar éis a thaispeán an chiallaíonn, beidh tú ag cur chuimneamh ar an lús plugins. Anois, cliom ar **Network Activate** agus beidh an add-on _Payfast_ ag fáil ardú ar do ngrú.
+### Conas an breiseán Payfast a shuiteáil: {#how-to-install-the-payfast-add-on}
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+Téigh chuig leathanach na mbreiseán agus roghnaigh an breiseán **Ultimate Multisite: Payfast Gateway**.
+
+<!-- Gabháil scáileáin nach bhfuil ar fáil: leathanach na mbreiseán agus an breiseán Ultimate Multisite Payfast Gateway aibhsithe -->
+
+Osclóidh fuinneog an bhreiseáin. Cliceáil ar **Suiteáil Anois.**
+
+<!-- Gabháil scáileáin nach bhfuil ar fáil: dialóg sonraí bhreiseán Ultimate Multisite Payfast Gateway leis an gcnaipe Suiteáil Anois -->
+
+Tar éis don tsuiteáil a bheith críochnaithe, atreorófar thú chuig leathanach na mbreiseán. Anseo, ní gá ach cliceáil ar **Gníomhachtaigh ar an Líonra** agus gníomhachtófar an breiseán _Payfast_ ar do líonra.
+
+<!-- Gabháil scáileáin nach bhfuil ar fáil: leathanach na mbreiseán leis an nasc Gníomhachtaigh ar an Líonra don bhreiseán Payfast Gateway -->

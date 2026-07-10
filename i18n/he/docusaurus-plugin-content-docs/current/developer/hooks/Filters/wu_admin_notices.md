@@ -4,11 +4,11 @@ title: מסנן - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# מסנן: wu_admin_notices
+# מסנן: wu_admin_notices {#filter-wuadminnotices}
 
 מאפשר למפתחים לסנן התראות מנהל (admin notices) שנוספו על ידי Ultimate Multisite.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | מציין אם ההודעות שניתן לסגור עברו סינון. |
 | $dismissed_messages | `array` | רשימה של מפתחות ההודעות שנסגרו. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב-[`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) בשורה 121.
 
 
-## מחזיר
+## מחזיר {#returns}

@@ -3,11 +3,11 @@ title: Fluach Initiúla Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow Onboarding an Theme Builder
+# Flow Onboarding an Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 leagann cur **flow onboarding Theme Builder** a thugann leat faoi chuid theme custom ag fáilteachúil chun bhfáthach a chur i bhfeidhm ag an t-amhlaigh ar an chuid féachrúil. Is é seo a shatann an mod site builder uair a bhí an t-amlaigh, le curte a bheith níos foirmeacha agus ag curte a bheith ag an t-amhlaigh.
 
-## Cad é an Flow Onboarding Theme Builder?
+## Cad é an Flow Onboarding Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Is é an flow onboarding Theme Builder un chuid wizard féachrúil a bhfuil na rathanna seo:
 
@@ -18,9 +18,9 @@ Is é an flow onboarding Theme Builder un chuid wizard féachrúil a bhfuil na r
 
 Tá an flow seo ag curte ag an **Setup Assistant agent**, a bhfuil cúiseanna a chur iad agus a ginearálann do theme go mbeartas.
 
-## Déan an Flow Onboarding Theme Builder
+## Déan an Flow Onboarding Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Setup ar an Chuid Atama
+### Setup ar an Chuid Atama {#first-run-setup}
 
 Nuair a bhíonn Superdav AI Agent ag dul ar chuid WordPress nua, beidh tú ag fheiceáil:
 
@@ -35,7 +35,7 @@ Cad a bhfuil tú ag déanamh?
 
 Taispeáin **"Déan theme custom"** chun an flow onboarding Theme Builder a chuid féachrúil a fháil.
 
-### Atama Manual
+### Atama Manual {#manual-activation}
 
 Is féidir leat a thabhairt an flow onboarding Theme Builder ag aon am chun é a chur i bhfeidhm ag curte:
 
@@ -49,9 +49,9 @@ nu
 "Help me create a custom theme"
 ```
 
-## An Cúseqanna Onboarding
+## An Cúseqanna Onboarding {#the-onboarding-steps}
 
-### Step 1: Seachtain Déan
+### Step 1: Seachtain Déan {#step-1-mode-selection}
 
 Taispeáin an Setup Assistant agent faoi do chuid fáilteacht:
 
@@ -63,7 +63,7 @@ Conas a chur i bhfeidhm do theme?
 
 **Curte mode** is féidir é a chur ar fáil do chuid úsáidorachtais; déan an agent curte a chur chun cinn ar bhealach a thugann tú faoi do ardal agus do raointe.
 
-### Step 2: Cuidán Site
+### Step 2: Cuidán Site {#step-2-site-specification}
 
 Beidh tú ag iarraidh cúiseanna faoi do site:
 
@@ -74,7 +74,7 @@ Beidh tú ag iarraidh cúiseanna faoi do site:
 
 Tá an t-aithris seo ag teacht i **site_brief** memory, a bhfaidh na agentacha a bheith ag cur isteach ar feadh seisiúin ach ansin.
 
-### Step 3: Cothrom Chéadtaí Design System
+### Step 3: Cothrom Chéadtaí Design System {#step-3-design-system-decisions}
 
 Bíonn an agent ag cur chuid ar do chomhthéacsanna design (design tokens):
 
@@ -83,7 +83,7 @@ Bíonn an agent ag cur chuid ar do chomhthéacsanna design (design tokens):
 - **Spéisiúla**: Layouts compact, normal, nó spóiseach
 - **Motion**: Animation agus transitions (má tá tú ag cur isteach)
 
-### Step 4: Glacadh Teama
+### Step 4: Glacadh Teama {#step-4-theme-generation}
 
 Bíonn an agent Setup Assistant ag cur chuid ar do theme custom le:
 
@@ -92,7 +92,7 @@ Bíonn an agent Setup Assistant ag cur chuid ar do theme custom le:
 - Stailí block chun cinnitheamh le do design system
 - Metadata theme agus deacair support WordPress
 
-### Step 5: Athchúis agus Cathrachadh
+### Step 5: Athchúis agus Cathrachadh {#step-5-activation-and-verification}
 
 Bíonn an theme ag athchúis go mbeidh tú ag fheiceáil:
 
@@ -107,7 +107,7 @@ Bíonn an theme ag athchúis go mbeidh tú ag fheiceáil:
 
 Ansin leat is féidir leat cur isteach ar do site chun an theme a bheith ag déanamh go ceart a athbhreithniú.
 
-## Cothrom Site agus site_brief Memory
+## Cothrom Site agus site_brief Memory {#site-specification-and-sitebrief-memory}
 
 Agusán áirítear an agent do chothrom site agat i gcuid category **site_brief memory**. Is é seo ag cur isteach:
 
@@ -117,7 +117,7 @@ Agusán áirítear an agent do chothrom site agat i gcuid category **site_brief 
 - Spéisiúla design
 - Struchtúr an curtha
 
-### Conas Tá site_brief Ag Duine
+### Conas Tá site_brief Ag Duine {#why-sitebrief-matters}
 
 Agusán ach ansin, ag cur isteach ar do site_brief chun:
 
@@ -126,7 +126,7 @@ Agusán ach ansin, ag cur isteach ar do site_brief chun:
 - Cuir tú rathúil ag cur chun cinn ag cur isteach an talamhán (context-aware recommendations)
 - Déan tú féin fáil an tascáil ar chuid iarrachtaí cur isteach
 
-### Aileamh ar an site_brief
+### Aileamh ar an site_brief {#viewing-your-sitebrief}
 
 Is féidir leat a gcur áit:
 
@@ -142,11 +142,11 @@ nó
 
 Beidh an agent ag tairiscint an spesifike site atá ag cur isteach.
 
-## Déanán ar an t-amach tar éis an onbórdáil (Onboarding)
+## Déanán ar an t-amach tar éis an onbórdáil (Onboarding) {#customizing-after-onboarding}
 
 Tar éis a thaispeadáin an Theme Builder a deireann, leat féidir leat:
 
-### Aistriú le Fíneadh System Aesthetics Skill
+### Aistriú le Fíneadh System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Rfogais rathúil ar na chuid fíneadh:
 
@@ -162,7 +162,7 @@ nó
 
 Bíonn an **Design System Aesthetics skill** ag cur tú leat isteach athrúchais ar fáil.
 
-### Déanán ar theme.json go díreach
+### Déanán ar theme.json go díreach {#edit-themejson-directly}
 
 Do chuid úsáidheoirí ardchúramach, déanán ar `/wp-content/themes/[theme-name]/theme.json` chun athrú a dhéanamh ar:
 
@@ -171,7 +171,7 @@ Do chuid úsáidheoirí ardchúramach, déanán ar `/wp-content/themes/[theme-na
 - Spacing values
 - Border and shadow definitions
 
-### Creoliad Teampadanna Bloc Custom
+### Creoliad Teampadanna Bloc Custom {#create-custom-block-templates}
 
 Use an editor bloc WordPress chun teampadanna custom a chur i bhfeidm do:
 
@@ -180,7 +180,7 @@ Use an editor bloc WordPress chun teampadanna custom a chur i bhfeidm do:
 - Peispáí rialta (Product pages)
 - Fomracha contact
 
-## Déanán: An ulaigh vs. An nua onbórdáil
+## Déanán: An ulaigh vs. An nua onbórdáil {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Use an editor bloc WordPress chun teampadanna custom a chur i bhfeidm do:
 | Flexibility | Opciones a chluainn (Fixed options) | Athrúchais ar fáil (Customizable) |
 | Future updates | Ní bhfhéidir a chur in áit (Not referenced) | Atá cur isteach i site_brief |
 
-## Déanán: Treoicíocht
+## Déanán: Treoicíocht {#troubleshooting}
 
 **Ní chluainn an onbórdáil amach**
 - Athrocht an flow: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Use an editor bloc WordPress chun teampadanna custom a chur i bhfeidm do:
 - Cuir isteach ag an t-agent go dtí "regenerate the theme with [specific changes]"
 - Edit theme.json go díreach chun cur chuig an t-iontú (control)
 
-## An t-aontúcháin Taispeánta (Next Steps)
+## An t-aontúcháin Taispeánta (Next Steps) {#next-steps}
 
 Tar éis an t-onraithe (onboarding) deatach ar Theme Builder:
 

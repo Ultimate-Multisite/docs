@@ -4,11 +4,11 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 Scatta dopo che un oggetto è stato salvato nel database.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,11 +16,11 @@ Scatta dopo che un oggetto è stato salvato nel database.
 | $this | `\Base_Model` | L'istanza dell'oggetto. |
 | $new | `bool` | Vero se l'oggetto è nuovo. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 - Definito in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) alla riga 624
 - Definito in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) alla riga 1754

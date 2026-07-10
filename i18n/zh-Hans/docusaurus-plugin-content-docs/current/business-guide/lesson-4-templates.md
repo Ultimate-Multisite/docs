@@ -3,15 +3,15 @@ title: 第四课：构建利基模板
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# 第 4 课：构建行业模板
+# 第 4 课：构建行业模板 {#lesson-4-building-niche-templates}
 
 模板是您垂直领域价值主张的核心。如果一位健身工作室老板注册后，看到一个看起来就像健身网站的网站——上面有课程表、教练资料和合适的图片——他比看到一片空白画布时，更有可能留下来。
 
-## 前文回顾
+## 前文回顾 {#where-we-left-off}
 
 我们已经拥有了一个安装并配置了 Ultimate Multisite 的可用的 FitSite 网络。现在，我们要构建模板，让 FitSite 感觉是专为健身业务量身定做的。
 
-## 为什么行业模板很重要
+## 为什么行业模板很重要 {#why-niche-templates-matter}
 
 通用模板会迫使您的客户做大量的工作：弄清楚他们需要哪些页面、什么样的内容结构是有效的，以及如何让它看起来符合他们的行业。行业模板消除了这种摩擦。
 
@@ -24,11 +24,11 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 
 他们只需要填入自己的细节。他们不需要从零开始。
 
-## 规划您的模板
+## 规划您的模板 {#planning-your-templates}
 
 在构建之前，先决定提供哪些模板。对于 FitSite，我们将创建三个：
 
-### 模板 1：工作室基础版 (Studio Essential)
+### 模板 1：工作室基础版 (Studio Essential) {#template-1-studio-essential}
 
 适用于小型工作室和个人教练。
 
@@ -39,7 +39,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 - 带有位置地图和表单的**联系我们**页面
 - **简洁、现代的设计**，搭配适合健身的配色方案
 
-### 模板 2：健身房专业版 (Gym Pro)
+### 模板 2：健身房专业版 (Gym Pro) {#template-2-gym-pro}
 
 适用于拥有更多服务的成熟健身房。
 
@@ -50,7 +50,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 - 首页上的**客户评价**板块
 - **更突出的品牌**选项
 
-### 模板 3：连锁健身房版 (Fitness Chain)
+### 模板 3：连锁健身房版 (Fitness Chain) {#template-3-fitness-chain}
 
 适用于多地点运营的业务。
 
@@ -60,17 +60,17 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 - 带有地点特定细节的**集中品牌**管理
 - 跨地点的**员工名录**
 
-## 构建模板网站
+## 构建模板网站 {#building-a-template-site}
 
 在 Ultimate Multisite 中，模板就是按照您希望新客户网站呈现的样子配置的一个 WordPress 网站。创建它的方法如下：
 
-### 步骤 1：创建模板网站
+### 步骤 1：创建模板网站 {#step-1-create-the-template-site}
 
 1. 在您的网络管理后台导航到 **Sites > Add New**
 2. 创建一个名为 `template-studio-essential` 的网站
 3. 这个网站将成为您的工作画布
 
-### 步骤 2：安装和配置主题
+### 步骤 2：安装和配置主题 {#step-2-install-and-configure-the-theme}
 
 切换到模板网站的控制面板，然后：
 
@@ -82,7 +82,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 选择一个足够灵活、适合健身行业但又不会过于复杂，以至于您的客户无法管理的模板。像 Astra、GeneratePress 或 Kadence 这样的主题效果很好，因为它们轻量、可定制且支持完善。
 :::
 
-### 步骤 3：创建页面
+### 步骤 3：创建页面 {#step-3-create-the-pages}
 
 使用以下内容构建每个页面：
 
@@ -92,7 +92,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 
 尽可能让占位内容具有指导性。不要使用通用的填充文本，而是写一些内容，例如：“请将此替换为关于您的工作室及其独特之处的简短描述。提及您的训练理念、经验年限或客户可以期待什么。”
 
-### 步骤 4：配置插件
+### 步骤 4：配置插件 {#step-4-configure-plugins}
 
 安装并激活健身工作室需要的插件：
 
@@ -100,7 +100,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 - 一个联系表单插件
 - 一个 SEO 插件（预先配置了与健身相关的默认设置）
 
-### 步骤 5：标记为模板
+### 步骤 5：标记为模板 {#step-5-mark-as-template}
 
 1. 导航到 **Ultimate Multisite > Sites**
 2. 编辑该模板网站
@@ -108,7 +108,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 
 对您想要提供的每个模板重复此过程。
 
-## 模板质量检查清单
+## 模板质量检查清单 {#template-quality-checklist}
 
 在将模板投入使用之前，请验证以下几点：
 
@@ -121,7 +121,7 @@ _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 - [ ] 是否没有损坏的链接或缺失的资源
 - [ ] 页面加载速度是否可接受
 
-## FitSite 网络现状
+## FitSite 网络现状 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── 已准备好进行套餐配置（下一课）
 ```
 
-## 本课构建的内容
+## 本课构建的内容 {#what-we-built-this-lesson}
 
 - **三个行业特定的模板**，适用于不同规模的健身业务
 - **符合健身行业的内容和图片**，让平台感觉是专为该行业打造的

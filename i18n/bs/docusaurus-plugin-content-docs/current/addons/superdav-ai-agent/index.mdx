@@ -1,161 +1,210 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
 
-# Superdav AI Agent
+# Superdav AI Agent {#superdav-ai-agent}
 
-Superdav AI Agent je napredni AI asistent za WordPress koji proširuje funkcionalnosti Gratis AI Agent-a dodavanjem vještina ovisnih o temi, poboljšanih mogućnosti pretraživanja interneta i unaprijeđenih funkcija za izgradnju stranica. Verzija 1.16.0 dodaje generiranje prilagođenih logoa, validaciju kontrasta palete, učitavanje fotografija tokom intervjua za otkrivanje, generiranje strukturiranih menija za hotelijerstveni sektor, te prikaz predogradi za desktop i mobilne uređaje u Theme Builderu.
+Superdav AI Agent je napredni WordPress AI asistent koji proširuje Gratis AI Agent vještinama svjesnim teme, poboljšanim mogućnostima internet pretrage, funkcijama graditelja stranice i opcionalnim integracijama automatizacije. Verzija 1.18.0 dodaje alate za čitanje Google Calendar, mapiranje kontakata i učesnika, kapije za ljudsko odobrenje, deduplikaciju podsjetnika, TextBee SMS obavještenja, upravljano obezbjeđivanje Superdav usluge i odvojeno distribuirani Advanced prateći paket za pouzdane developerske tokove rada.
 
-## Ključne značajke
+## Ključne funkcije {#key-features}
 
-- **Vještine ovisne o temi** — automatski prilagođavaju upute i mogućnosti na temelju vaše aktivne WordPress teme i instaliranih pluginova
-- **Višestruki provajderi pretraživanja interneta** — odaberite između Brave Search-a i Tavily-a za bogije rezultate pretraživanja i napredne istraživačke mogućnosti
-- **Kontakt forme u Site Builderu** — kreirajte potpuno funkcionalne kontakt forme izravno iz chat sučelja koristeći vaš instalirani plugin za forme
-- **Unaprijeđeni Site Builder** — poboljšani planovi višefazne izgradnje stranica sa boljim otkrivanjem pluginova i oporavkom od grešaka
-- **Ugrađene vještine teme** — specijalizirane upute za Block Themes, Classic Themes, Kadence Blocks i Kadence Theme
-- **Unaprijeđena integracija WooCommerce-a** — preuređeno za korištenje izvornih WooCommerce API-ja radi bolje pouzdanosti i kompatibilnosti
-- **Automatsko otkrivanje provajdera** — automatski otkriva i osvježava dostupne pluginove i teme kada su aktivirani ili deaktivirani
-- **Generiranje prilagođenih logoa** — generirajte i ugradite prilagođene SVG logotipe sa automatskom sanitizacijom koja osigurava sigurnost imena
-- **Validacija kontrasta palete** — provjerite parove boja radi usklađenosti sa WCAG pristupačnošću prije primjene na vašu temu
-- **Istraživanje s fotografijama** — učitajte fotografije tokom intervjua za otkrivanje u Theme Builderu kako biste utjecali na smjer dizajna
-- **Hotelijerski meniji** — generirajte strukturirane stranice s menijima za hranu i piće za restorane, kafiće i hotelijerske tvrtke
-- **Predogradi za desktop i mobilne uređaje** — pregledajte dizajn na desktop i mobilnim uređajima tijekom odabira smjera dizajna
-- **Skraping stranica nivoa 1** — sd-ai-agent/site-scrape je sada podrazumijevano dostupan za analizu web stranica konkurencije i inspiracije
+- **Vještine svjesne teme** — automatski prilagođava smjernice i mogućnosti na osnovu vaše aktivne WordPress teme i instaliranih pluginova
+- **Više pružalaca internet pretrage** — birajte između Brave Search i Tavily za bogatije rezultate pretrage i napredne istraživačke mogućnosti
+- **Kontakt forme graditelja stranice** — kreirajte potpuno funkcionalne kontakt forme direktno iz interfejsa chata koristeći instalirani plugin za forme
+- **Poboljšani graditelj stranice** — unaprijeđeni višefazni planovi izgradnje stranice s boljim otkrivanjem pluginova i oporavkom od grešaka
+- **Ugrađene vještine za teme** — specijalizirane smjernice za Block Themes, Classic Themes, Kadence Blocks i Kadence Theme
+- **Poboljšana WooCommerce integracija** — refaktorisana za korištenje izvornih WooCommerce API-ja radi bolje pouzdanosti i kompatibilnosti
+- **Automatsko otkrivanje pružalaca** — automatski otkriva i osvježava dostupne pluginove i teme kada se aktiviraju ili deaktiviraju
+- **Generisanje prilagođenog logotipa** — generišite i ugradite prilagođene SVG logotipe s automatskom sanitizacijom sigurnom za namespace
+- **Validacija kontrasta palete** — provjerite parove boja za usklađenost s WCAG pristupačnošću prije primjene na vašu temu
+- **Otkrivanje poboljšano fotografijama** — otpremite fotografije tokom intervjua za otkrivanje u Theme Builder kako biste uticali na smjer dizajna
+- **Ugostiteljski meniji** — generišite strukturirane stranice menija hrane i pića za restorane, kafiće i ugostiteljske biznise
+- **Desktop i mobilni pregledi** — pregledajte svoj dizajn na desktopu i mobilnim uređajima tokom odabira smjera dizajna
+- **Scraping stranica nivoa 1** — sd-ai-agent/site-scrape je sada podrazumijevano dostupan za analizu konkurentskih i inspirativnih web stranica
+- **Alati za čitanje Google Calendar** — čitajte konfigurisane kalendare i događaje kako bi automatizacije mogle zaključivati o kontekstu nadolazećeg rasporeda
+- **Mapiranje kontakata i učesnika** — povežite učesnike kalendara s poznatim korisnicima stranice i kontaktima prije generisanja naknadnog rada
+- **Kapije za ljudsko odobrenje** — pauzirajte osjetljive automatizacije radi pregleda prije slanja poruka, nastavka rada ili pravljenja izmjena
+- **Zapisi podsjetnika i deduplikacija** — pratite podsjetnike koji su već poslani kako ponovljena pokretanja automatizacije ne bi dvaput obavijestila istog primaoca
+- **TextBee SMS obavještenja** — šaljite konfigurisana tekstualna obavještenja putem TextBee kada je SMS pružalac omogućen
+- **Upravljano obezbjeđivanje Superdav usluge** — povežite podržane stranice s hostovanim Superdav endpointima uz automatsko podešavanje umjesto ručne konfiguracije endpointa
+- **Advanced prateći paket** — odvojeno distribuirani alati za pouzdane developere za fajl sistem, bazu podataka, WP-CLI, REST dispatcher, graditelj pluginova, git snapshot, upravljanje korisnicima i benchmark tokove rada
 
-## Zahtjevi
+## Zahtjevi {#requirements}
 
 - WordPress 6.0 ili noviji
 - PHP 8.1 ili noviji
-- WordPress Multisite (aktiviran na mreži) ili instalacija za jednu stranicu
-- Aktivan plugin konektora AI provajdera (Anthropic, OpenAI ili kompatibilan)
+- WordPress Multisite (aktiviran na mreži) ili instalacija jedne stranice
+- Aktivan plugin konektora AI pružaoca (Anthropic, OpenAI ili kompatibilan)
 - Gratis AI Agent v1.9.0 ili noviji (Superdav AI Agent proširuje Gratis AI Agent)
 
-## Instalacija
+## Instalacija {#installation}
 
-1. Učitajte datoteke plugin-a u `/wp-content/plugins/superdav-ai-agent`
-2. Aktivizirajte plugin putem ekrana **Pluginovi** u WordPressu
+1. Otpremite fajlove plugina u `/wp-content/plugins/superdav-ai-agent`
+2. Aktivirajte plugin kroz ekran **Plugins** u WordPressu
 3. Osigurajte da je Gratis AI Agent također aktiviran
-4. Idite na **Gratis AI Agent → Podešavanja** i konfigurišite vaš provajdera pretraživanja interneta (opcionalno)
+4. Idite na **Gratis AI Agent → Settings** i konfigurišite svog pružaoca internet pretrage, vezu s upravljanom Superdav uslugom, Google Calendar ili TextBee akreditive prema potrebi
 
-## Brzo pokretanje
+WordPress.org paket sadrži osnovne funkcije Superdav AI Agent. Advanced prateći paket se gradi i distribuira odvojeno za okruženja gdje su alati za pouzdane developere izričito instalirani i odobreni.
 
-Nakon aktivacije, Superdav AI Agent automatski poboljšava vašu instalaciju Gratis AI Agent-a vještinama ovisnim o temi i dodatnim mogućnostima. Otvorite panel **Gratis AI Agent** u bočnom izbavku administracije WordPressa i počnite koristiti nove značajke.
+## Brzi početak {#quick-start}
+
+Nakon aktivacije, Superdav AI Agent automatski poboljšava vašu Gratis AI Agent instalaciju vještinama svjesnim teme i dodatnim mogućnostima. Otvorite panel **Gratis AI Agent** u WordPress administratorskoj bočnoj traci i počnite koristiti nove funkcije.
 
 **Primjeri uputa:**
 
 ```
-Dodajte kontakt formu na stranicu za kontakt.
+Dodaj kontakt formu na stranicu Kontakt.
 ```
 
 ```
-Pretražite web za najnovije najbolje prakse sigurnosti za WordPress.
+Pretraži web za najnovije najbolje prakse sigurnosti za WordPress.
 ```
 
 ```
-Kreirajte hero sekciju koristeći blok obrasce aktivne teme.
+Kreiraj hero sekciju koristeći blok obrasce aktivne teme.
 ```
 
-## Vještine ovisne o temi
+```
+Pregledaj sutrašnje konfigurisane događaje u Google Calendar i pripremi nacrte podsjetnika za učesnike.
+```
 
-Superdav AI Agent automatski otkriva vašu aktivnu temu i instalirane pluginove, učitavajući odgovarajuću vještinu ovisnu o temi u kontekst asistenta. Dostupne vještine uključuju:
+```
+Pošalji SMS podsjetnik nakon što odobrim poruku.
+```
+
+## Vještine svjesne teme {#theme-aware-skills}
+
+Superdav AI Agent automatski otkriva vašu aktivnu temu i instalirane pluginove, učitavajući odgovarajuću vještinu svjesnu teme u kontekst asistenta. Dostupne vještine uključuju:
 
 | Vještina | Primjenjuje se na |
 |---|---|
-| **Block Themes** | Teme koje koriste arhitekturu baziranu na blokovima WordPressa (Full Site Editing) |
+| **Block Themes** | Teme koje koriste WordPress arhitekturu zasnovanu na blokovima (Full Site Editing) |
 | **Classic Themes** | Tradicionalne WordPress teme koje koriste PHP šablone i klasični editor |
-| **Kadence Blocks** | Stranice sa aktiviranim Kadence Blocks pluginom |
-| **Kadence Theme** | Stranice sa Kadence temom kao aktivnom temom |
+| **Kadence Blocks** | Stranice s aktivnim pluginom Kadence Blocks |
+| **Kadence Theme** | Stranice s Kadence temom kao aktivnom temom |
 
-Pogledajte [Vještine ovisne o temi](../../user-guide/configuration/theme-aware-skills) za detaljne upute za svaku vještinu.
+Pogledajte [Vještine svjesne teme](../../user-guide/configuration/theme-aware-skills) za detaljne smjernice o svakoj vještini.
 
-## Provajderi pretraživanja interneta
+## Pružaoci internet pretrage {#internet-search-providers}
 
-Superdav AI Agent v1.10.0 dodaje **Tavily** kao alternativu Brave Search-u za upite pretraživanja interneta. Oba provajdera nude rezultate pretraživanja u stvarnom vremenu i mogu se konfigurisati u **Gratis AI Agent → Podešavanja → Napredno**.
+Superdav AI Agent v1.10.0 dodaje **Tavily** kao alternativu za Brave Search za upite internet pretrage. Oba pružaoca nude rezultate pretrage u stvarnom vremenu i mogu se konfigurisati u **Gratis AI Agent → Settings → Advanced**.
 
-| Provajder | Značajke | Postavljanje |
+| Pružatelj | Funkcije | Podešavanje |
 |---|---|---|
-| **Brave Search** | Brzi rezultati pretraživanja fokusirani na privatnost | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | Bogatiji rezultati pretraživanja, napredne istraživačke mogućnosti | [Tavily API](https://tavily.com/) |
+| **Brave Search** | Brzi rezultati pretrage usmjereni na privatnost | [Brave Search API](https://brave.com/search/api/) |
+| **Tavily** | Bogatiji rezultati pretrage, napredne mogućnosti istraživanja | [Tavily API](https://tavily.com/) |
 
-Pogledajte [Pretraživanje interneta](../../user-guide/configuration/internet-search) za upute za konfiguraciju.
+Pogledajte [Internet pretraga](../../user-guide/configuration/internet-search) za upute za konfiguraciju.
 
-## Kontakt forme u Site Builderu
+## Tokovi rada za kalendar, odobrenje i obavještenja {#calendar-approval-and-notification-workflows}
 
-Agent Site Builder sada može kreirati kontakt forme izravno iz chat sučelja. Jednostavno zamolite Site Builder-a da kreira kontakt formu, a on će automatski otkriti vaš instalirani plugin za forme (Contact Form 7, WPForms, Fluent Forms ili Gravity Forms) i generirati gotovu za upotrebu formu.
+Superdav AI Agent v1.18.0 proširuje automatizacijske tokove rada izvan zadataka sadržaja i izrade stranica:
 
-Pogledajte [Kontakt forme u Site Builderu](../../user-guide/administration/site-builder-contact-forms) za detaljne upute.
+- **Google Calendar alati** omogućavaju agentu da čita konfigurirane kalendare i detalje događaja kada su dostupne vjerodajnice kalendara.
+- **Pomoćnici za kontakte i učesnike** mapiraju učesnike događaja na WordPress korisnike ili poznate kontakte prije pripreme podsjetnika ili naknadnih zadataka.
+- **Kapije za ljudsko odobrenje** omogućavaju automatizaciji da se pauzira dok ovlašteni korisnik ne pregleda predloženu radnju.
+- **Zapisi podsjetnika** sprečavaju duple kalendarske podsjetnike ili podsjetnike obavještenja kada se automatizacija ponovo pokuša ili ponavljano zakazuje.
+- **TextBee SMS podrška** omogućava obavještenja tekstualnim porukama kada je TextBee pružatelj konfiguriran.
 
-## Značajke Theme Builder-a
+Koristite ove alate za pomoć svjesnu rasporeda, naknadno praćenje učesnika i tokove rada podsjetnika koji i dalje zahtijevaju ljudski pregled prije slanja osjetljivih poruka.
+
+## Kontakt forme izrađivača stranica {#site-builder-contact-forms}
+
+Agent za izradu stranica sada može kreirati kontakt forme direktno iz interfejsa za razgovor. Jednostavno zatražite od izrađivača stranica da kreira kontakt formu, i on će automatski otkriti vaš instalirani plugin za forme (Contact Form 7, WPForms, Fluent Forms ili Gravity Forms) i generirati formu spremnu za upotrebu.
+
+Pogledajte [Kontakt forme izrađivača stranica](../../user-guide/administration/site-builder-contact-forms) za detaljne smjernice.
+
+## Theme Builder funkcije {#theme-builder-features}
 
 Theme Builder u Superdav AI Agent v1.16.0 uključuje moćne nove mogućnosti:
 
-### Intervju za otkrivanje s učitavanjem fotografija
+### Intervju za otkrivanje s otpremanjem fotografija {#discovery-interview-with-photo-upload}
 
-Intervju za otkrivanje u Theme Builderu sada uključuje korak za učitavanje fotografija gdje možete pružiti vizualnu inspiraciju. Učitajte fotografije vašeg brenda, web stranica konkurencije ili dizajnerske inspiracije kako biste pomogli Theme Builderu da razumije vaš smjer dizajna.
+Intervju za otkrivanje u Theme Builderu sada uključuje korak otpremanja fotografija gdje možete pružiti vizuelnu inspiraciju. Otpremite fotografije svog brenda, konkurentskih stranica ili dizajnerske inspiracije kako biste pomogli Theme Builderu da razumije vaš dizajnerski smjer.
 
-Pogledajte [Intervju za otkrivanje](./theme-builder/discovery-interview.md) za detaljne upute.
+Pogledajte [Intervju za otkrivanje](./theme-builder/discovery-interview.md) za detaljne smjernice.
 
-### Smjer dizajna s predgradima za desktop i mobilne uređaje
+### Dizajnerski smjer s desktop i mobilnim pregledima {#design-direction-with-desktop-and-mobile-previews}
 
-Pregledajte svoj dizajn na desktop i mobilnim uređajima prije nego što Theme Builder generira vašu kompletnu temu. Vidite predograde u stvarnom vremenu na više responsivnih točaka prekida.
+Pregledajte svoj dizajn i na desktop i na mobilnim uređajima prije nego što Theme Builder generira vašu kompletnu temu. Pogledajte preglede u stvarnom vremenu na više responzivnih prijelomnih tačaka.
 
-Pogledajte [Smjer dizajna](./theme-builder/design-direction.md) za detaljne upute.
+Pogledajte [Dizajnerski smjer](./theme-builder/design-direction.md) za detaljne smjernice.
 
-### Hotelijerski meniji
+### Meniji za ugostiteljstvo {#hospitality-menus}
 
-Theme Builder sada može generirati strukturirane stranice s menijima za hranu i piće za restorane, kafiće, barove i druge hotelijerske tvrtke. Meniji uključuju cijene, opise, informacije o prehrani i upozorenja na alergene.
+Theme Builder sada može generirati strukturirane stranice menija hrane i pića za restorane, kafiće, barove i druge ugostiteljske djelatnosti. Meniji uključuju cijene, opise, informacije o prehrani i upozorenja o alergenima.
 
-Pogledajte [Hotelijerski meniji](./theme-builder/hospitality-menus.md) za detaljne upute.
+Pogledajte [Meniji za ugostiteljstvo](./theme-builder/hospitality-menus.md) za detaljne smjernice.
 
-### Nove mogućnosti
+### Nove sposobnosti {#new-abilities}
 
-- **[Generiranje SVG logotipa](./abilities/generate-logo-svg.md)** — kreiranje prilagođenih SVG logoa sa automatskom sanitizacijom
-- **[Validacija kontrasta palete](./abilities/validate-palette-contrast.md)** — provjera parova boja radi usklađenosti sa WCAG
-- **[Kreiranje menija](./abilities/create-menu.md)** — kreiranje navigacijskih menija sa različitim oznakama navigacije
+- **[Generiraj SVG logotip](./abilities/generate-logo-svg.md)** — kreirajte prilagođene SVG logotipe s automatskom sanitizacijom
+- **[Provjeri kontrast palete](./abilities/validate-palette-contrast.md)** — provjerite parove boja za usklađenost s WCAG-om
+- **[Kreiraj meni](./abilities/create-menu.md)** — kreirajte navigacijske menije s različitim navigacijskim oznakama
 
-Pogledajte [Alati i konfiguracija](./theme-builder/tools.md) za informacije o dostupnim alatima i alatu za skraping stranica nivoa 1.
+Pogledajte [Alati i konfiguracija](./theme-builder/tools.md) za informacije o dostupnim alatima i Tier 1 alatu za scraping stranice.
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
-Sva podešavanja se nalaze pod **Gratis AI Agent → Podešavanja** u administraciji WordPressa. Superdav AI Agent dodaje sljedeće opcije konfiguracije:
+Sve postavke su pod **Gratis AI Agent → Settings** u WordPress administraciji. Superdav AI Agent dodaje sljedeće opcije konfiguracije:
 
-| Podešavanje | Opis |
+| Postavka | Opis |
 |---|---|
-| **Provajder pretraživanja interneta** | Odaberite između Brave Search-a i Tavily-a (opcionalno) |
-| **Tavily API Ključ** | API ključ za pretraživanje interneta Tavily-a (ako je odabran Tavily) |
+| **Pružatelj internet pretrage** | Odaberite između Brave Search i Tavily (opcionalno) |
+| **Tavily API Key** | API ključ za Tavily internet pretragu (ako je Tavily odabran) |
+| **Upravljana Superdav usluga** | Povežite podržane stranice s hostovanom Superdav uslugom uz automatsko provisioniranje endpointa |
+| **Google Calendar vjerodajnice** | Konfigurirajte pristup kalendaru kako bi agent mogao čitati kalendare i događaje |
+| **TextBee SMS pružatelj** | Konfigurirajte TextBee vjerodajnice za odobrene tokove rada SMS obavještenja |
 
-## Poboljšanja u v1.16.0
+## Napredni prateći paket {#advanced-companion-package}
 
-- **AI Client keš** — sada podržan transientima za persistenciju između zahtjeva, sprječavajući gubitak podataka tijekom dugotrajnih zadataka agenta
-- **Alat za skraping stranica nivoa 1** — sd-ai-agent/site-scrape je sada podrazumijevano dostupan u Theme Builderu za analizu web stranica konkurencije i inspiracije
-- **Linkovi akcija redova pluginova** — ispravljeni i preimenovani radi bolje jasnoće
+Superdav AI Agent v1.18.0 dodaje zasebno distribuiran napredni prateći paket za pouzdane developerske tokove rada. Ove mogućnosti nisu uključene u osnovni WordPress.org paket. Instalirajte prateći paket samo na stranicama gdje administratori izričito vjeruju agentu da pristupa developerskim alatima.
 
-## Poboljšanja u v1.10.0
+Napredni alati uključuju operacije nad datotečnim sistemom, pristup bazi podataka, WP-CLI, tokove rada REST dispečera, pomoćne alate za izradu pluginova, git snimke stanja, pomoćnike za upravljanje korisnicima i alate za benchmark. Ograničite ove alate na pouzdane administratore i pregledajte konfiguraciju kapije odobrenja prije nego što ih omogućite na produkcijskim stranicama.
 
-- **Preuređena integracija WooCommerce-a** — sada koristi izvorni WooCommerce API-je za bolju pouzdanost i kompatibilnost
-- **Automatsko osvježavanje liste provajdera** — automatski otkriva kada su pluginovi aktivirani ili deaktivirani i ažurira dostupnu listu provajdera
-- **Unaprijeđeni Site Builder** — poboljšani planovi višefazne izgradnje stranica sa boljim oporavkom od grešaka
-- **Vještine ovisne o temi** — četiri nove ugrađene vještine koje se automatski prilagođavaju vašoj aktivnoj temi
+## Poboljšanja u v1.18.0 {#improvements-in-v1180}
 
-## Ispravci grešaka u v1.10.0
+- **Google Calendar podrška** — čitajte konfigurirane kalendare i događaje za automatizacije svjesne rasporeda
+- **Mapiranje kontakata i učesnika** — uparite učesnike kalendara s korisnicima stranice i kontaktima
+- **Kapije za ljudsko odobrenje** — pauzirajte osjetljive automatizacije radi pregleda prije nastavka
+- **Dedupliciranje podsjetnika** — evidentirajte podsjetnike kako biste izbjegli dupla obavještenja pri ponovnim pokušajima ili ponovljenim pokretanjima
+- **TextBee SMS pružatelj** — šaljite konfigurirana obavještenja tekstualnim porukama nakon potrebnih odobrenja
+- **Podešavanje upravljane Superdav usluge** — automatski provisionirajte endpointe hostovane usluge za podržane stranice
+- **Distribucija naprednog pratećeg paketa** — objavite alate za pouzdane developere odvojeno od osnovne WordPress.org verzije
+- **Popravke pouzdanosti** — poboljšajte odabir modela, vremenska ograničenja zahtjeva, rukovanje zadanim modelom za podešavanje, rukovanje tekstom zaključivanja, smjernice za ponovni pokušaj, ojačavanje tokena kalendara, ojačavanje podsjetnika, pokretanja onboardinga, nastavke potvrđenih sposobnosti i probleme pregleda pakiranja za WordPress.org
 
-- Ispravljena `navigate-to` vještina koja je uzrokovala beskonačne petlje ponovnog učitavanja na nekim stranicama administracije
-- Ispravljena `list-posts` vještina koja nije ispravno rješavala nazive kategorija i tagova u slugove
-- Ispravljeni WP-CLI naredbe koje su nedostajale aliasi namespacea nakon prethodnog refaktoringa
-- Ispravljeno da event automatizacija graciozno rukuje sa stranicama gdje tabele automatizacije još nisu kreirane
-- Ispravljena `memory-save` vještina koja koristi ispravan namespace prefiks u builderu sistemskih uputa
-- Ispravljeno da su rezultati skalarnog alata ispravno obuhvaćeni prije povratka AI-u
-- Ispravljeno da statistika korištenja ispravno rukuje sa starim formatom ključa vještine pri nadogradnji sa starijih verzija
+## Poboljšanja u v1.16.0 {#improvements-in-v1160}
 
-## Podrška
+- **AI Client keš** — sada podržan transientima za trajnost između zahtjeva, sprječavajući gubitak podataka kod dugotrajnih zadataka agenta
+- **Alat za site-scrape nivoa 1** — sd-ai-agent/site-scrape je sada dostupan po zadanim postavkama u Theme Builderu za analiziranje konkurentskih i inspirativnih web stranica
+- **Linkovi radnji u redu plugina** — ispravljeni i preimenovani radi jasnoće
 
-Za podršku, posjetujte [ultimatemultisite.com](https://ultimatemultisite.com) ili otvorite problem u repozitoriju plugin-a.
+## Poboljšanja u v1.10.0 {#improvements-in-v1100}
 
-## Changelog
+- **WooCommerce integracija refaktorisana** — sada koristi izvorne WooCommerce API-je za bolju pouzdanost i kompatibilnost
+- **Automatsko osvježavanje liste providera** — automatski detektuje kada se plugini aktiviraju ili deaktiviraju i ažurira listu dostupnih providera
+- **Poboljšani graditelj web stranice** — poboljšani višefazni planovi izrade web stranice s boljim oporavkom od grešaka
+- **Vještine svjesne teme** — četiri nove ugrađene vještine koje se automatski prilagođavaju vašoj aktivnoj temi
 
-Pogledajte [Changelog](./changelog) za potpunu povijest verzija.
+## Ispravke grešaka u v1.10.0 {#bug-fixes-in-v1100}
+
+- Ispravljena mogućnost `navigate-to` koja je uzrokovala beskonačne petlje ponovnog učitavanja na nekim administratorskim stranicama
+- Ispravljena mogućnost `list-posts` koja nije ispravno razrješavala nazive kategorija i oznaka u slugove
+- Ispravljene WP-CLI komande kojima su nedostajali aliasi imenskog prostora nakon prethodnog refaktorisanja
+- Ispravljena automatizacija događaja tako da elegantno rukuje web stranicama gdje tabele automatizacije još nisu kreirane
+- Ispravljena mogućnost `memory-save` koja koristi ispravan prefiks imenskog prostora u graditelju sistemskih uputa
+- Ispravljeni skalarni rezultati alata tako da se ispravno umotaju prije vraćanja AI-ju
+- Ispravljena statistika korištenja tako da ispravno obrađuje naslijeđeni format ključa mogućnosti pri nadogradnji sa starijih verzija
+
+## Podrška {#support}
+
+Za podršku posjetite [ultimatemultisite.com](https://ultimatemultisite.com) ili otvorite issue u repozitoriju plugina.
+
+## Dnevnik promjena {#changelog}
+
+Pogledajte [Dnevnik promjena](./changelog) za potpunu historiju verzija.

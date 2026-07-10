@@ -3,11 +3,11 @@ title: Design System Ästhetik Fähigkeit
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics Fähigkeit
+# Design System Aesthetics Fähigkeit {#design-system-aesthetics-skill}
 
 D'**Design System Aesthetics Fähigkeit** isch en geführte Weg, wie Sie d'visuelle Identität vo Ihrer Site verfeinere. Es hilft Ihnen, konsistenti Entscheidigä über Typografie, Farb, Abstände und Motion Tokens z'treffe, wo Ihr Design System definiered.
 
-## Was isch Design System Aesthetics?
+## Was isch Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics isch en strukturierte Fähigkeit, wo folgendes abdeckt:
 
@@ -20,9 +20,9 @@ Design System Aesthetics isch en strukturierte Fähigkeit, wo folgendes abdeckt:
 
 Die Entscheidigä werded in Ihrer Theme `theme.json` Datei feschtgstellt, was en kohänts visuelles System schafft.
 
-## Warum Design System Aesthetics bruche?
+## Warum Design System Aesthetics bruche? {#why-use-design-system-aesthetics}
 
-### Konsistenz
+### Konsistenz {#consistency}
 
 En Design System stellt sicher:
 
@@ -31,7 +31,7 @@ En Design System stellt sicher:
 - Abstände folge eme vorhersehbare Muster
 - Animationä fühle sich vereinigt a
 
-### Effizienz
+### Effizienz {#efficiency}
 
 Statt Designentscheidigä Seite für Seite z'treffe, machet Sie:
 
@@ -39,7 +39,7 @@ Statt Designentscheidigä Seite für Seite z'treffe, machet Sie:
 - Si überall aawende
 - Global aktualisiere dur eis Wert z'ändere
 
-### Flexibilität
+### Flexibilität {#flexibility}
 
 Sie chönne:
 
@@ -47,9 +47,9 @@ Sie chönne:
 - Mit verschiedene Ästhetike experimentiere
 - D'Markenkonsistenz beibehalte, während Sie sich entwickled
 
-## Aktivierig vo de Design System Aesthetics Fähigkeit
+## Aktivierig vo de Design System Aesthetics Fähigkeit {#triggering-the-design-system-aesthetics-skill}
 
-### Manuell Aktivierä
+### Manuell Aktivierä {#manual-activation}
 
 Sie chönne d'Fähigkeit jederzeit starte:
 
@@ -69,7 +69,7 @@ oder
 "Guide me through design system decisions"
 ```
 
-### Automatisch Vorschläg
+### Automatisch Vorschläg {#automatic-suggestions}
 
 Agent chönne vorschlage, d'Fähigkeit z'bruche, wenn Sie:
 
@@ -78,9 +78,9 @@ Agent chönne vorschlage, d'Fähigkeit z'bruche, wenn Sie:
 - D'visuelli Konsistenz verbessere wend
 - Sich uf de Start vo Ihrer Site vorbereited
 
-## De Designsystem Ästhetikprozess
+## De Designsystem Ästhetikprozess {#the-design-system-aesthetics-process}
 
-### Schritt 1: Typografie
+### Schritt 1: Typografie {#step-1-typography}
 
 De Agent frogit Sie nach Ihre Schriftartauswahl:
 
@@ -110,7 +110,7 @@ De Agent definiert denn:
 - **Gewichts-Skala**: Schriftgewichte (normal, mittel, fett usw.)
 - **Zeilenhöhe**: Abstand zwüsche de Zeile für Lesbarkeit
 
-### Schritt 2: Farbpalette
+### Schritt 2: Farbpalette {#step-2-color-palette}
 
 ```
 Lönd üsi Farbpalette definierä.
@@ -158,7 +158,7 @@ De Agent definiert Spacing Tokens:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Spezifischi Wärt für Padding, Margin, Gap
 
-### Schritt 4: Borders und Schatten
+### Schritt 4: Borders und Schatten {#step-3-spacing}
 
 ```
 Visuelle Tiefe und Definition:
@@ -181,7 +181,7 @@ De Agent erstellt:
 - Shadow Tokens für Elevation Levels
 - Border Width Tokens
 
-### Schritt 5: Motion und Animation
+### Schritt 5: Motion und Animation {#step-4-borders-and-shadows}
 
 ```
 Wie sött dini Site sich aafühle, wenn sie interaktiv isch?
@@ -203,9 +203,9 @@ De Agent definiert:
 - Easing Functions (ease-in, ease-out, ease-in-out)
 - Animation Keyframes für übliche Interaktione
 
-## Design System Ästhetik Anwendä
+## Design System Ästhetik Anwendä {#step-5-motion-and-animation}
 
-### Automatisch Anwendä
+### Automatisch Anwendä {#applying-design-system-aesthetics}
 
 Nachdem du d'Fähigkeit abgeschlossen hesch, macht de Agent:
 
@@ -214,13 +214,13 @@ Nachdem du d'Fähigkeit abgeschlossen hesch, macht de Agent:
 3. Generiert Block Styles neu, damit sie zum neue System passe
 4. Aktiviert d'aktualisierti Theme
 
-### Manuell Anwendä
+### Manuell Anwendä {#automatic-application}
 
 Du chasch au direkt `theme.json` bearbeite:
 
-## Ieje Dir Dir Design System aafgefaange
+## Ieje Dir Dir Design System aafgefaange {#manual-application}
 
-### Frogt de Agent
+### Frogt de Agent {#viewing-your-design-system}
 
 ```
 "Zeig mir min design system aan"
@@ -234,13 +234,13 @@ oder
 
 De agent sjocht dir dini typografie, farne, spacing und ander tokens aan.
 
-### Theme.json aafgefaange
+### Theme.json aafgefaange {#ask-the-agent}
 
 Öffne `/wp-content/themes/[theme-name]/theme.json` in ere Texteditor om d'rohe token-Definition z'gseh.
 
-## Dini Design System aafgefaange
+## Dini Design System aafgefaange {#view-themejson}
 
-### Schnelli Aafgefaange
+### Schnelli Aafgefaange {#updating-your-design-system}
 
 Frogt de agent nach spezifischi Änderige:
 
@@ -260,7 +260,7 @@ oder
 "Änd d'Überschrift-Font uf e Serif"
 ```
 
-### Vollständigi Neugestaltig
+### Vollständigi Neugestaltig {#quick-updates}
 
 Führe d'Design System Aesthetics Fähigkeit no mol us:
 
@@ -270,7 +270,7 @@ Führe d'Design System Aesthetics Fähigkeit no mol us:
 
 Das wird dich all die Entscheedige no mol führe, startend mit dine aktuelle Wärt.
 
-### Teilwiis Aafgefaange
+### Teilwiis Aafgefaange {#full-redesign}
 
 Änd spezifischi Aspekten aafgefaange:
 
@@ -278,15 +278,15 @@ Das wird dich all die Entscheedige no mol führe, startend mit dine aktuelle Wä
 "Änd nur d'farnepalette, halt alles ander"
 ```
 
-## Design System Best Practices
+## Design System Best Practices {#partial-updates}
 
-### Konsistenz
+### Konsistenz {#design-system-best-practices}
 
 - Bruchs gliich Tokens überall
 - Mach kei einmoligi farne oder grössertheite
 - Verwiis uf tokens statt Wärt direkt i de Code
 
-### Benennig
+### Benennig {#consistency-1}
 
 Bruchs klari, sinnvolli Name:
 
@@ -296,7 +296,7 @@ Bruchs klari, sinnvolli Name:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalierbarkeit
+### Skalierbarkeit {#naming}
 
 Design din System, wo skaliert cha:
 
@@ -304,7 +304,7 @@ Design din System, wo skaliert cha:
 - Erstelle Skalen (xs, sm, md, lg, xl) statt willkürliche Werte
 - Plan für zukünftigi Zuesätz
 
-### Dokumentation
+### Dokumentation {#scalability}
 
 Dokumentier dini Design System:
 
@@ -312,9 +312,9 @@ Dokumentier dini Design System:
 - Wann du jede Token bruche söllt
 - Ussnahmene und Randfäll
 
-## Allgemeini Design System Muster
+## Allgemeini Design System Muster {#documentation}
 
-### Modern Minimalistisch
+### Modern Minimalistisch {#common-design-system-patterns}
 
 - Sans-serif Typografie (Inter, Helvetica)
 - Begrenzte Farbpalette (2-3 Farbe)
@@ -322,7 +322,7 @@ Dokumentier dini Design System:
 - Subtile Schatte
 - Flüssigi, schnelli Animatione
 
-### Warm und Fründlich
+### Warm und Fründlich {#modern-minimalist}
 
 - Mischig us Serif und Sans-serif
 - Warmi Farbpalette (Orange, warme Grautön)
@@ -330,7 +330,7 @@ Dokumentier dini Design System:
 - Weiche Schatte
 - Verspielti Animatione
 
-### Professionell Corporate
+### Professionell Corporate {#warm-and-friendly}
 
 - Sauberi Sans-serif (Roboto, Open Sans)
 - Neutrali Palette mit Akzentfarbe
@@ -338,7 +338,7 @@ Dokumentier dini Design System:
 - Minimali Schatte
 - Subtile Übergäng
 
-### Kreativ und Kühn
+### Kreativ und Kühn {#professional-corporate}
 
 - Charakteristischi Typografie
 - Kühni Farbpalette
@@ -346,7 +346,7 @@ Dokumentier dini Design System:
 - Starki Schatte
 - Auffälligi Animatione
 
-## Problembehebig (Troubleshooting)
+## Problembehebig (Troubleshooting) {#creative-and-bold}
 
 **Mini Design System Änderige zeige sich nöd**
 - Browser-Cache leere
@@ -364,7 +364,7 @@ Dokumentier dini Design System:
 - theme.json manuell bearbeite mit früehnere Werten
 - D'Skill mit andere Wahl neu laufe lah
 
-## Nächsti Schritt
+## Nächsti Schritt {#troubleshooting}
 
 Nachdem du dis Design System definiert hesch:
 

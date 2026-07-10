@@ -3,15 +3,15 @@ title: Menu pro ubytování
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronómie menu
+# Gastronómie menu {#hospitality-menus}
 
 Funkce **Gastronómie menu** (Hospitality Menus) umožňuje Theme Builder vytvářet a vkládat strukturovaná menu pro jídlo a nápoje přímo na váš WordPress web.
 
-## Přehled
+## Přehled {#overview}
 
 Theme Builder nyní dokáže vytvořit profesionální, strukturovaná menu pro podniky v oblasti hostторинu, včetně restaurací, kaváren, barů a cateringových služeb. Tato menu jsou plně integrovány do designu vašeho webu a je možné je snadno aktualizovat a spravovat.
 
-## Podporované typy hostторинu
+## Podporované typy hostторинu {#supported-hospitality-types}
 
 - **Restaurace** — menu pro plnohodinné stravování
 - **Kavárny** — menu s kávou a lehčí stravou
@@ -21,9 +21,9 @@ Theme Builder nyní dokáže vytvořit profesionální, strukturovaná menu pro 
 - **Food trucky** — menu pro mobilní stravování
 - **Pivovarní a vinice** — menu s nápoji a popisy
 
-## Struktura menu
+## Struktura menu {#menu-structure}
 
-### Kategorie menu
+### Kategorie menu {#menu-categories}
 
 Menu jsou uspořádána do kategorií:
 
@@ -34,7 +34,7 @@ Menu jsou uspořádána do kategorií:
 - **Nápoje** — pití (alkoholické i nealkoholické)
 - **Speciálky** — denní nebo sezónní speciality
 
-### Formát položky menu
+### Formát položky menu {#menu-item-format}
 
 Každá položka menu obsahuje:
 
@@ -49,7 +49,7 @@ Každá položka menu obsahuje:
 }
 ```
 
-#### Pole položky
+#### Pole položky {#item-fields}
 
 | Pole | Typ | Popis |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Každá položka menu obsahuje:
 | `allergens` | array | Časté alergeny (Ořechy, Mořské plody atd.) |
 | `availability` | string | Kdy je k dispozici (Denně, Sezónně atd.) |
 
-## Vytváření gastronomických menu
+## Vytváření gastronomických menu {#creating-hospitality-menus}
 
-### Krok 1: Poskytněte informace o menu
+### Krok 1: Poskytněte informace o menu {#step-1-provide-menu-information}
 
 Dejte Theme Builder vědět o svém menu:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Krok 2: Theme Builder generuje menu
+### Krok 2: Theme Builder generuje menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formátuje ceny a popisy
 5. Přidá informace o stravování a alergenech
 
-### Krok 3: Přehled a přizpůsobení
+### Krok 3: Přehled a přizpůsobení {#step-3-review-and-customize}
 
 Můžete:
 
@@ -91,9 +91,9 @@ Můžete:
 4. Aktualizovat popisy a stravovací informace
 5. Upravit styl a rozložení
 
-## Možnosti zobrazení menu
+## Možnosti zobrazení menu {#menu-display-options}
 
-### Celá stránka menu
+### Celá stránka menu {#full-menu-page}
 
 Vězená stránka zobrazující vaše kompletní menu:
 
@@ -102,7 +102,7 @@ Vězená stránka zobrazující vaše kompletní menu:
 - Formátování pro tisk
 - Design optimalizovaný pro mobilní zařízení
 
-### Widget menu
+### Widget menu {#menu-widget}
 
 Vložte sekce menu na jiné stránky:
 
@@ -111,7 +111,7 @@ Vložte sekce menu na jiné stránky:
 - Menu nápojů na stránce baru
 - Prezentace dezertů v patičce
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Vytvořte stahovatelné PDF menu:
 
@@ -120,9 +120,9 @@ Vytvořte stahovatelné PDF menu:
 - Zahrnuje obrázky a popisy
 - Snadné sdílení a odeslání e-mailem
 
-## Informace o stravování a alergenech
+## Informace o stravování a alergenech {#dietary-and-allergen-information}
 
-### Stravovací atributy
+### Stravovací atributy {#dietary-attributes}
 
 Označte položky stravovacími informacemi:
 
@@ -134,7 +134,7 @@ Označte položky stravovacími informacemi:
 - **Low-Carb** — s nižším obsahem sacharidů
 - **High-Protein** — bohaté na bílkoviny
 
-### Varování před alergeny
+### Varování před alergeny {#allergen-warnings}
 
 Zahrňte běžné alergeny:
 
@@ -147,9 +147,9 @@ Zahrňte běžné alergeny:
 - **Gluten** — pšeničné a obsahující gluten
 - **Sesam** — sezamové semínka a olej
 
-## Správa menu
+## Správa menu {#menu-management}
 
-### Aktualizace cen
+### Aktualizace cen {#updating-prices}
 
 Snadno aktualizujte ceny menu:
 
@@ -159,7 +159,7 @@ Snadno aktualizujte ceny menu:
 4. Uložte změny
 5. Změny se okamžitě zobrazí na vašem webu
 
-### Přidání sezónních položek
+### Přidání sezónních položek {#adding-seasonal-items}
 
 Vytvořte sezónní varianty menu:
 
@@ -169,7 +169,7 @@ Vytvořte sezónní varianty menu:
 4. Nastavte datum dostupnosti
 5. Automaticky se zobrazí během sezóny
 
-### Správa speciálních položek
+### Správa speciálních položek {#managing-specials}
 
 Zobrazte denní nebo týdenní speciality:
 
@@ -179,7 +179,7 @@ Zobrazte denní nebo týdenní speciality:
 4. Aktualizujte denně nebo týdně
 5. Archivujte staré speciality
 
-## Integrace s Theme Builderem
+## Integrace s Theme Builderem {#integration-with-theme-builder}
 
 Při použití Theme Builderu pro hostторинové stránky:
 
@@ -189,9 +189,9 @@ Při použití Theme Builderu pro hostторинové stránky:
 4. **Optimalizace pro mobilní zařízení** — menu se krásně zobrazí na telefonech
 5. **SEO optimalizace** — menu jsou přátelská pro vyhledávače
 
-## Nejlepší praxe
+## Nejlepší praxe {#best-practices}
 
-### Design menu
+### Design menu {#menu-design}
 
 - **Jasná organizace** — logická struktura kategorií
 - **Čitelné popisy** — lákavé a informativní
@@ -199,7 +199,7 @@ Při použití Theme Builderu pro hostторинové stránky:
 - **Profesionální fotografie** — vysoce kvalitní obrázky jídla
 - **Bílá plocha** — neztěžujte stránku
 
-### Obsah
+### Obsah {#content}
 
 - **Přesné popisy** — popisujte položky přesně
 - **Zvýraznění speciálů** — ujměňte speciality
@@ -207,7 +207,7 @@ Při použití Theme Builderu pro hostторинové stránky:
 - **Regulární aktualizace** — udržujte ceny a položky aktuální
 - **Používání lákavého jazyka** — nechte položky znít skvěle
 
-### Dostupnost
+### Dostupnost {#accessibility}
 
 - **Čitelné písma** — používejte jasná a čitelná písma
 - **Dostatečný kontrast** — zajistěte čitelnost textu
@@ -215,9 +215,9 @@ Při použití Theme Builderu pro hostторинové stránky:
 - **Varování před alergeny** — alergeny zobražte výrazně
 - **Přátelště dostupné pro mobilní zařízení** — otestujte na všech zařízeních
 
-## Příklady
+## Příklady {#examples}
 
-### Struktura menu restaurace
+### Struktura menu restaurace {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Struktura menu kavárny
+### Struktura menu kavárny {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Související funkce
+## Související funkce {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — vytvářet navigační menu
 - [Design Direction](./design-direction.md) — přizpůsobit design vašeho webu

@@ -3,17 +3,17 @@ title: Kierunek projektowy
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Kierunek projektowy
+# Kierunek projektowy {#design-direction}
 
 Krok **Kierunek projektowy** pozwala Ci przejrzeć, dopracować i sfinalizować wizualny wygląd swojego motywu, zanim Theme Builder wygeneruje gotowy motyw.
 
-## Przegląd
+## Przegląd {#overview}
 
 Po zakończeniu wywiadu odkrywczego (Discovery Interview), Theme Builder prezentuje Twój kierunek projektowy z **podglądem na urządzeniach stacjonarnych i mobilnych**. Dzięki temu zobaczysz dokładnie, jak Twój projekt będzie wyglądał na różnych urządzeniach, zanim podejmiesz ostateczną decyzję.
 
-## Elementy kierunku projektowego
+## Elementy kierunku projektowego {#design-direction-components}
 
-### 1. Paleta kolorów
+### 1. Paleta kolorów {#1-color-palette}
 
 Paleta kolorów Twojego motywu, obejmująca:
 
@@ -23,7 +23,7 @@ Paleta kolorów Twojego motywu, obejmująca:
 - **Kolory neutralne** — odcienie szarości i bieli do tła i tekstu
 - **Kolor tekstu** — podstawowy kolor tekstu, zapewniający czytelność
 
-### 2. Typografia
+### 2. Typografia {#2-typography}
 
 Wybór czcionek dla:
 
@@ -33,14 +33,14 @@ Wybór czcionek dla:
 - **Wysokość linii** — odstęp między liniami, poprawiający czytelność
 - **Grubość czcionki** — warianty pogrubione, regularne i lekkie
 
-### 3. Układ i odstępy
+### 3. Układ i odstępy {#3-layout-and-spacing}
 
 - **Szerokość kontenera** — maksymalna szerokość treści
 - **Padding i marginesy** — odstępy wokół elementów
 - **System siatki** — układ kolumn do responsywnego projektowania
 - **Odstępy komponentów** — odległość między elementami interfejsu użytkownika
 
-### 4. Elementy wizualne
+### 4. Elementy wizualne {#4-visual-elements}
 
 - **Style przycisków** — projekty przycisków głównych, dodatkowych i trzeciorzędnych
 - **Projekty kart** — układy dla bloków treści
@@ -48,9 +48,9 @@ Wybór czcionek dla:
 - **Obramowania i cienie** — subtelna głębia wizualna
 - **Efekty najazdu** — stylizacja stanów interaktywnych
 
-## Podgląd renderowania
+## Podgląd renderowania {#preview-rendering}
 
-### Podgląd na komputerze stacjonarnym
+### Podgląd na komputerze stacjonarnym {#desktop-preview}
 
 Podgląd na komputerze stacjonarnym pokazuje Twój projekt w pełnej szerokości (zazwyczaj 1200px lub więcej):
 
@@ -59,7 +59,7 @@ Podgląd na komputerze stacjonarnym pokazuje Twój projekt w pełnej szerokości
 - Duża typografia i odstępy
 - Wszystkie elementy wizualne w pełnym rozmiarze
 
-### Podgląd na urządzeniu mobilnym
+### Podgląd na urządzeniu mobilnym {#mobile-preview}
 
 Podgląd na urządzeniu mobilnym pokazuje Twój projekt w szerokości mobilnej (zazwyczaj 375px):
 
@@ -68,7 +68,7 @@ Podgląd na urządzeniu mobilnym pokazuje Twój projekt w szerokości mobilnej (
 - Dostosowana typografia i odstępy
 - Rozmiary przycisków przyjazne dla dotyku
 
-### Punkty przerwania responsywne
+### Punkty przerwania responsywne {#responsive-breakpoints}
 
 Theme Builder renderuje podglądy w następujących punktach przerwania:
 
@@ -79,9 +79,9 @@ Theme Builder renderuje podglądy w następujących punktach przerwania:
 | **Stacjonarny** | 1200px | Pełna szerokość na komputerze |
 | **Duży stacjonarny** | 1920px | Ultra-szeroki wyświetlacz |
 
-## Dopracowywanie projektu
+## Dopracowywanie projektu {#refining-your-design}
 
-### Wykonywanie poprawek
+### Wykonywanie poprawek {#making-adjustments}
 
 Możesz dopracować kierunek projektowy, wykonując następujące kroki:
 
@@ -91,7 +91,7 @@ Możesz dopracować kierunek projektowy, wykonując następujące kroki:
 4. **Aktualizacja układu** — zmień szerokości kontenerów i kolumny siatki
 5. **Personalizacja elementów** — zmodyfikuj style przycisków, projekty kart itp.
 
-### Aktualizacje podglądu
+### Aktualizacje podglądu {#preview-updates}
 
 Zmiany są odzwierciedlane w czasie rzeczywistym:
 
@@ -100,7 +100,7 @@ Zmiany są odzwierciedlane w czasie rzeczywistym:
 - Wszystkie punkty przerwania responsywne są aktualizowane
 - Możesz przełączać się między podglądami, aby zweryfikować zmiany
 
-### Widok porównawczy
+### Widok porównawczy {#comparison-view}
 
 Porównaj swój kierunek projektowy z:
 
@@ -108,7 +108,7 @@ Porównaj swój kierunek projektowy z:
 - **Projektami konkurencji** — porównaj z stronami inspiracyjnymi
 - **Poprzednimi wersjami** — wróć do wcześniejszych kierunków projektowych
 
-## Zatwierdzenie kierunku projektowego
+## Zatwierdzenie kierunku projektowego {#design-direction-approval}
 
 Gdy będziesz zadowolony z projektu:
 
@@ -118,7 +118,7 @@ Gdy będziesz zadowolony z projektu:
 4. **Potwierdź układ** — sprawdź odstępy i wyrównanie
 5. **Zatwierdź projekt** — przejdź do generowania motywu
 
-## Następne kroki
+## Następne kroki {#next-steps}
 
 Po zatwierdzeniu kierunku projektowego:
 
@@ -127,7 +127,7 @@ Po zatwierdzeniu kierunku projektowego:
 3. Możesz dalej personalizować za pomocą niestandardowego edytora WordPress
 4. Przejdź do [Hospitality Menus](./hospitality-menus.md) lub innych funkcji
 
-## Najlepsze praktyki
+## Najlepsze praktyki {#best-practices}
 
 - **Testuj na prawdziwych urządzeniach** — jeśli to możliwe, używaj faktycznych telefonów i tabletów
 - **Sprawdzaj czytelność** — upewnij się, że tekst jest czytelny we wszystkich rozmiarach
@@ -135,30 +135,30 @@ Po zatwierdzeniu kierunku projektowego:
 - **Pomyśl o wydajności** — optymalizuj obrazy i czcionki pod kątem szybkości
 - **Planuj treść** — upewnij się, że układ działa z Twoją faktyczną treścią
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Podgląd się nie aktualizuje
+### Podgląd się nie aktualizuje {#preview-not-updating}
 
 - Odśwież stronę
 - Wyczyść pamięć podręczną przeglądarki
 - Spróbuj użyć innej przeglądarki
 - Sprawdź połączenie z internetem
 
-### Kolory wyglądają inaczej
+### Kolory wyglądają inaczej {#colors-look-different}
 
 - Sprawdź ustawienia kolorów monitora
 - Spróbuj na różnych urządzeniach
 - Zweryfikuj kontrast kolorów za pomocą narzędzi dostępności
 - Rozważ symulatory daltonizmu
 
-### Problemy z typografią
+### Problemy z typografią {#typography-issues}
 
 - Zweryfikuj, czy pliki czcionek się ładują
 - Sprawdź rozmiar czcionki w różnych punktach przerwania
 - Testuj z faktyczną treścią
 - Rozważ długość linii dla czytelności
 
-## Powiązane dokumenty
+## Powiązane dokumenty {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — zbieranie informacji projektowych
 - [Hospitality Menus](./hospitality-menus.md) — tworzenie ustrukturyzowanych stron menu

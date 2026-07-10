@@ -3,7 +3,7 @@ title: Mofunso wopambwila
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Kule Ads pa m'ndzi wanu ndi Ultimate Multisite: Ad Injector
+# Kule Ads pa m'ndzi wanu ndi Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ndi **add-on yosangalatsa** yomene imapereka zikukonza adu pa njira ya kopeka yanu.
 
@@ -35,7 +35,7 @@ Mungakwaniritsa kuti muli na ads pa header ya Admin Pages kwa anthu omwe ali pa 
 
 _Mukuwera Admin Panel Ad Code option kungayenera kuwamba ads pa back-end ya anthu wanu_
 
-### Pansi pa Kulemba Ads
+### Pansi pa Kulemba Ads {#beyond-advertising}
 
 Mungakwaniritsa kuti muli na Ultimate Multisite: Ad Injector kuti muwoneze kukonza chisoni kwa njira zokhudzana ndi njira zikulu.
 

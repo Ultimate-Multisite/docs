@@ -3,9 +3,9 @@ title: Administrare pagamenta et facturas
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pagamentum et Facturae Administratio
+# Pagamentum et Facturae Administratio {#managing-payments-and-invoices}
 
-## Configuratio Paymentium
+## Configuratio Paymentium {#payment-settings}
 
 Antequam incipias recipere pagamenta, necessuas sunt configurationes ad res paymentia. Ad **Ultimate Multisite → Settings** navigare et tabulam **Payment** cliquare debes.
 
@@ -15,7 +15,7 @@ Hic est tota vista paginae setting paymentium:
 
 ![Plena pagina setting paymentium](/img/admin/settings-payments-full.png)
 
-### Optiones Generalia Paymentiorum
+### Optiones Generalia Paymentiorum {#general-payment-options}
 
 In optionibus generalibus possuris configurare:
 
@@ -24,7 +24,7 @@ In optionibus generalibus possuris configurare:
 
 ![Setting portarum paymentium](/img/admin/settings-payments-options.png)
 
-### Portae Paymentiorum (Payment Gateways)
+### Portae Paymentiorum (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite plures portas paymentiorum sustinet. Omnes eam activare et configurare possuris a tabula Payment.
 
@@ -40,11 +40,11 @@ Omnis porta suam sectionem configurationem habet ubi claves API et alia optiones
 
 ![Additiones setting portarum paymentiorum](/img/admin/settings-payments-gateways-2.png)
 
-### Modus Sandbox (Sandbox Mode)
+### Modus Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Possuris **Modum Sandbox** activare ut integration paymentium tuas testare antequam in vivo ire. Cum modus sandbox activus est, nulli reales onus factum erit.
 
-## Spectaculum Paymentiorum
+## Spectaculum Paymentiorum {#viewing-payments}
 
 Ad paginam **Payments** sub Ultimate Multisite navigare possuris ut omnes transactiones per network tuum videres.
 
@@ -54,7 +54,7 @@ Paymentia filtere per status (completa, pendens, fallida, restituta) et transact
 
 Clicca in un pagamento uti ad videris omnia detiles, inclusa item, membrorum associatum, informationem clientis et data portalis debitum.
 
-## Facturae (Invoices)
+## Facturae (Invoices) {#invoices}
 
 Ultimate Multisite potest automaticam facturas pro pagamentis generare. Formam templati facturarum et formatum numerationis possuris ex pengaturanibus Payment.
 

@@ -1,0 +1,109 @@
+---
+title: Fampidirana WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# Fampidirana WooCommerce {#woocommerce-integration}
+
+Ny Fampidirana WooCommerce dia miasa amin'ny fomba tena mitovy amin'ny fomba fiasan'ny Manual Gateway anay. Manolotra fahafahana be dia be ho an'ny mpampiasa anao izy io, ka mamela azy ireo hisafidy izay endrika fandoavam-bola misy ao amin'ny fametrahana WooCommerce anao. Ary tsotra izany: rehefa tapitra ny vanim-potoana faktioran'ny mpampiasa, dia ajanona vonjimaika ny famandrihan'ny mpampiasa. Amin'izay fotoana izay koa, hisy baiko hoforonina ao amin'ny fametrahana WooCommerce an'ny tranonkala fototry ny tambajotra. Avy eo dia mahazo faktiora amin'ny mailakany ny mpampiasa, miaraka amin'ny rohy hanaovana ny fandoavam-bola. Rehefa voaray ny fandoavam-bola dia havaozina ny famandrihana.
+
+## Endri-javatra {#features}
+
+- Fampidirana mora eo amin'ny Ultimate Multisite sy WooCommerce
+- Fomba fandoavam-bola maro azo ampiasaina
+- Faktiora miverimberina mandeha ho azy amin'ny fampiasana ny fototra famandrihana tafiditra, miaraka amin'ny fanatsarana plugin WooCommerce Subscriptions azo isafidianana
+- Ny totalin'ny checkout dia ahitana ny hetran'ny Ultimate Multisite ho andalana saram-pandoavana WooCommerce misaraka sy tsy azo hetraina, mba hahafahan'ny mpanjifa mijery ny sandan'ny hetra alohan'ny fandoavana
+
+## Antontan-taratasy {#documentation}
+
+**Fametrahana ny Fampidirana WooCommerce**
+
+**Fanitarana ny Safidy Fandoavanao amin'ny Ultimate Multisite: Fampidirana WooCommerce**
+
+## Fametrahana {#installation}
+
+1. Ampidiro ny 'ultimate-multisite-woocommerce' ao amin'ny lahatahiry '/wp-content/plugins/'
+2. Ampandehano ny plugin amin'ny alalan'ny menio 'Plugins' ao amin'ny WordPress
+3. Araho tsikelikely ny Wizard hanamboarana ny plugin
+
+## Torolàlana fampiasana {#usage-guide}
+
+_**FANAMARIHANA ZAVA-DEHIBE: Ity lahatsoratra ity dia miresaka ny Ultimate Multisite kinova 2.x.**_
+
+_**TANDREMO:** Ultimate Multisite: WooCommerce Integration dia mitaky ny WooCommerce ho efa mandeha farafahakeliny ao amin'ny tranonkala fototrao._
+
+Fantatray fa tsy misy any amin'ny firenena sasany ny _Stripe_ sy _PayPal_, izay mametra na manelingelina ny mpampiasa Ultimate Multisite tsy hampiasa amin'ny fomba mahomby ny plugin anay. Noho izany dia namorona **add-on hampiditra _WooCommerce_** izahay.
+
+_WooCommerce_ dia plugin eCommerce tena malaza. Namorona add-ons ny mpamorona rindrambaiko maneran-tany mba hampidirana vavahady fandoavam-bola samihafa aminy. Nohararaotinay izany mba hanitarana ireo vavahady fandoavam-bola azonao ampiasaina ao amin'ny rafitra faktioran'ny Ultimate Multisite.
+
+## Fanamboarana azy {#setting-it-up}
+
+Voalohany, mila mametraka ny add-on WooCommerce Integration ianao, izay **maimaim-poana ho an'ny mpampiasa manana lisansa**. Mba hametrahana azy, tsindrio ny Ultimate Multisite ao amin'ny dashboard super admin anao ary safidio ny **Add-ons**.
+
+![Pejy Add-ons](/img/admin/addons-page.png)
+
+Eto dia afaka mahita ny add-ons Ultimate Multisite rehetra ianao. Tsindrio ny add-on **Ultimate Multisite: WooCommerce Integration**.
+
+![Pejy Add-ons mampiseho WooCommerce Integration](/img/admin/addons-page.png)
+
+Hisy varavarankely hiseho miaraka amin'ny antsipirian'ny add-on. Tsindrio fotsiny ny **Install Now** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Rehefa vita ny fametrahana, dia haverina any amin'ny pejin'ny plugins ianao. Eto, tsindrio fotsiny ny **Network Activate** ary ny add-on _WooCommerce_ dia ho ampandehanana ao amin'ny tambajotranao.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Rehefa avy nampandeha azy ianao, raha mbola tsy manana ny plugin WooCommerce napetraka sy mandeha ao amin'ny tranonkalanao, dia **hahazo fampahatsiahivana ianao**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Rehefa voapetraka, dia hahita safidy fanampiny eo ambanin'ny fikirakirana fandoavam-bola Ultimate Multisite ianao. Avy eo dia azonao **ampandehanana** avy eo ny safidy _WooCommerce_.
+
+![Fikirakirana vavahady fandoavam-bola Ultimate Multisite miaraka amin'ny WooCommerce mandeha](/img/addons/woocommerce-payment-gateway.png)
+
+Afaka manamboatra fikirakirana fototra sasany ianao, toy ny anarana aseho izay hiseho eo amin'ny front end sy toromarika hitarihana ny mpampiasa anao amin'ny fikorianan'ny checkout-ny. Avy eo dia afaka mankany amin'ny **fikirakirana _WooCommerce_ an'ny tranonkala fototrao** ianao mba hampandehanana sy hanamboarana ny vavahady fandoavam-bola tianao hampiasaina.
+
+### Andalana saram-pandoavana hetra amin'ny checkout {#checkout-tax-fee-lines}
+
+Rehefa misy hetra ao amin'ny checkout Ultimate Multisite, ny fampidirana dia manampy ny sandan'ny hetra Ultimate Multisite tsirairay ao amin'ny checkout WooCommerce ho andalana saram-pandoavana misaraka sy tsy azo hetraina. Izany dia mitazona ny totalin'ny hetra ho hita alohan'ny fandoavana sady misoroka ny WooCommerce tsy hanisy hetra indray amin'ilay saram-pandoavana hetra.
+
+## Fomba fitantanana ny fandoavam-bola {#how-to-manage-the-payment}
+
+Ny WooCommerce Integration dia miasa amin'ny fomba tena mitovy amin'ny fomba fiasan'ny **Manual Gateway** anay. Ny lafy ratsiny dia tsy maintsy aloa tanana ny fandoavam-bola tsirairay amin'ny faran'ny vanim-potoana faktiora. Toy izao ny fiasan'ny fizotra:
+
+  * Rehefa tapitra ny tsingerin'ny faktioran'ny mpampiasa, dia apetraka **on hold** ny maha-mpikambana. Amin'izay fotoana izay koa, hisy baiko hoforonina ao amin'ny fametrahana _WooCommerce_ ao amin'ny tranonkala fototry ny tambajotranao.
+
+  * Avy eo ny mpampiasa dia mahazo faktiora amin'ny mailakany, miaraka amin'ny rohy hanaovana ny fandoavam-bola (miseho ao amin'ny tantaran'ny faktiorany avy amin'ny dashboard an'ny subsite-ny koa ilay rohy). Io rohy io dia mamily ny mpampiasa mankany amin'ny _**WooCommerce**_ **checkout** , izay ahafahan'ny mpampiasa misafidy iray amin'ireo **vavahady _WooCommerce_ misy** mba handrindrana ny fandoavam-bolany.
+
+  * Rehefa voaray ny fandoavam-bola, dia **havaozina** ny maha-mpikambana, raketina ao amin'ny Ultimate Multisite ny fandoavam-bola ary apetraka ho vita ny baiko.
+
+### Fanamarihana manan-danja sasany: {#some-important-notes}
+
+  * Mbola miasa miaraka amin'ity endrika fampidirana ity ny fiasa mahazatra an'ny Ultimate Multisite. Ohatra, ny **famerenam-bola** avy amin'ny efijery **Subscription Management** dia hifandray amin'ny WooCommerce mba hamoahana ny famerenam-bola amin'ny fampiasana ny endrika fandoavam-bola voafantina.
+
+  * Ultimate Multisite: WooCommerce Integration dia miankina amin'ny WP-Cron mba hiasa. Miasa tena tsara amin'ny ankamaroan'ny fotoana izany, saingy raha ambany ny fifamoivoizan'ny tranonkala dia tsy voahetsika ny cron hijery hetsika voalahatra ary tsy tratra ilay hetsika, izay mety hiteraka fahataran'ny fanatanterahana.
+
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
+
+Tsy mety loatra ho an’ny mpampiasa farany ny manomboka fandoavam-bola amin-tanana isam-bolana satria antenaina hiverina ho azy isaky ny tsingerin’ny faktiora ny subscriptions. Ny add-on WooCommerce Integration dia mampiditra ankehitriny ny kaody fototra subscriptions, ka mampiasa subscriptions foana ny vokatra miverimberina ho an’ny faktiora miverimberina.
+
+**Tsy** mila mividy na mametraka ny [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) misaraka ianao mba hivarotana vokatra miverimberina amin’ny alalan’ity integration ity. Raha novidina, napetraka, ary misy ao amin’ny tranokalanao lehibe io plugin io, dia hampiasa azy Ultimate Multisite ary WooCommerce hampiseho endri-javatra fanampiny fitantanana subscription. Rehefa tsy misy izany, dia mbola mikarakara ny vokatra miverimberina ny subscriptions core tafiditra.
+
+![Toe-javatra WooCommerce subscription integration](/img/addons/woocommerce-subscription-integration.png)
+
+Ary izay ihany. Tsy mila mandoa vola amin-tanana intsony ny mpampiasa farany anao amin’ny faran’ny tsingerin’ny faktioran’izy ireo ho an’ny vokatra miverimberina.
+
+Ankoatra ny baiko iray foronina ao amin’ny tranokalanao lehibe eo ambanin’ny _WooCommerce_, dia hamorona subscription ihany koa ho an’ny account tsirairay izany.
+
+### Fitondran-tena fampiatoana rehefa tsy mahomby ny fanavaozana {#failed-renewal-suspension-behavior}
+
+Amin’ny alàlan’ny default, mijanona ho mavitrika ny memberships raha mbola manatanteraka ny fandaharam-panandramana indray amin’ny fandoavam-bola tsy nahomby ny WooCommerce Subscriptions. Izany dia mitahiry ny varavarankely fahasoavana mahazatra an’ny WooCommerce Subscriptions mba hahafahan’ny fanavaozana tafarina mampifanaraka indray ny subscription sy ny membership nefa tsy manapaka aloha loatra ny fidirana.
+
+Afaka mampandeha ny **Aampiato Avy Hatrany ny Memberships Rehefa Tsy Mahomby ny Fanavaozana** ao amin’ny toe-javatra WooCommerce Integration ny mpitantana izay mila fanaraha-maso fidirana hentitra kokoa. Rehefa alefa ity toe-javatra opt-in ity, Ultimate Multisite dia mampiato ny membership mifandraika raha vao tsy mahomby ny fandoavam-bola fanavaozana fa tsy miandry ny fikirakiran’ny WooCommerce Subscriptions ny fanandramana indray ho vita.
+
+Afaka manova io fanapahan-kevitra io ihany ny mpamorona amin’ny alalan’ny sivana `wu_woo_suspend_on_payment_failure`. Ny pejin’ny hook reference dia vokarina avy amin’ny loharanon’ny add-on, ka ity topimaso ity dia manonona fotsiny ny anaran’ny sivana ho an’ny politika fampiatoana namboarina manokana.

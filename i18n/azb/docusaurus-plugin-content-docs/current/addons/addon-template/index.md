@@ -3,25 +3,25 @@ title: Addon Template
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress 5.3 ya usse naya version
 - PHP 7.4 ya usse naya version
 - Multisite Ultimate plugin (active hona chahiye)
 
-## Installation
+## Installation {#installation}
 
 1. Addon files ko apne `/wp-content/plugins/` directory mein upload karein.
 2. WordPress ke 'Plugins' menu se plugin ko activate karein.
 3. Network admin mein addon ki settings configure karein.
 
-## Development
+## Development {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Project Structure {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testing
+### Testing {#testing}
 
 Is addon mein ek poora testing framework shamil hai:
 
@@ -75,44 +75,44 @@ Is addon mein ek poora testing framework shamil hai:
 - **Test Coverage**: Code coverage track karne ke liye configure kiya gaya hai
 - **Multisite Testing**: Tests multisite environment mein run hote hain
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS ke zariye enforce kiye jaate hain
 - **PHP 7.4+ Compatibility**: Modern PHP features support kiye jaate hain
 - **Static Analysis**: Type checking ke liye PHPStan integration
 - **Code Modernization**: PHP upgrades ke liye Rector rules
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: CSS/JS files ke liye Minification
 - **Translation**: POT file generation
 - **Packaging**: Distribution ke liye Archive creation
 - **Development Mode**: Debugging ke liye Unminified assets
 
-## Configuration
+## Configuration {#configuration}
 
 Addon network admin interface ke zariye kai tarah ke configuration options support karta hai.
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Addon initialize hone ke baad fire hota hai
 - `ultimate-multisite-addon-template_loaded` - Saare addon files load hone ke baad fire hota hai
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Addon settings ko modify karta hai
 - `ultimate-multisite-addon-template_enabled` - Addon ke enable/disable status ko override karta hai
 
-## License
+## License {#license}
 
 Yeh addon GPL v3 ya usse naye version ke tahat licensed hai.
 
-## Support
+## Support {#support}
 
 Support aur documentation ke liye, [MultisiteUltimate.com](https://multisiteultimate.com) par visit karein.
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix ko ultimate-multisite mein rename kiya; text domain update kiya; version bump.
 

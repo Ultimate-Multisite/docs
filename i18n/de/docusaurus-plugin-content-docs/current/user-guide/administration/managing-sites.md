@@ -3,7 +3,7 @@ title: Verwaltung von Websites
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Sites verwalten
+# Sites verwalten {#managing-sites}
 
 Sites (oder Unterseiten) sind das Herzstück Ihres WaaS-Geschäfts. Ultimate Multisite verfügt über 3 Arten von Sites:
 
@@ -11,13 +11,13 @@ Sites (oder Unterseiten) sind das Herzstück Ihres WaaS-Geschäfts. Ultimate Mul
 - **Site Templates** — Vordefinierte Sites, die Kunden als Ausgangspunkt auswählen können
 - **Main Site** — Ihre primäre Netzwerk-Site
 
-## Sites anzeigen
+## Sites anzeigen {#viewing-sites}
 
 Navigieren Sie zu **Ultimate Multisite → Sites**, um alle Unterseiten in Ihrem Netzwerk anzuzeigen. Jede Site ist nach Typ gekennzeichnet und Sie können nach All Sites, Customer-Owned, Templates oder Pending filtern.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Eine neue Site hinzufügen
+## Eine neue Site hinzufügen {#adding-a-new-site}
 
 Klicken Sie auf die Schaltfläche **Add Site**, um eine neue Site zu erstellen. Sie müssen folgende Angaben machen:
 
@@ -27,15 +27,15 @@ Klicken Sie auf die Schaltfläche **Add Site**, um eine neue Site zu erstellen. 
 
 Die Option **Copy Site** ermöglicht es Ihnen, eine neue Site basierend auf einem bestehenden Site-Template zu erstellen. Wenn sie aktiviert ist, können Sie auswählen, welches Template als Ausgangspunkt verwendet werden soll. Stellen Sie sicher, dass **Copy Media on Duplication** aktiviert ist, um Mediendateien einzuschließen.
 
-## Eine bestehende Site verwalten
+## Eine bestehende Site verwalten {#managing-an-existing-site}
 
 Klicken Sie auf **Manage** einer beliebigen Site, um die Seite **Edit Site** zu öffnen. Hier finden Sie:
 
-### Grundlegende Informationen
+### Grundlegende Informationen {#basic-information}
 
 Der Site-Name, Typ, Site-ID und die Beschreibung. Sie sehen auch die zugeordneten Domain, die zugehörige Mitgliedschaft und das Kundenkonto, das die Site besitzt.
 
-### Site-Optionen
+### Site-Optionen {#site-options}
 
 Konfigurieren Sie die Fähigkeiten und Grenzen der Site:
 
@@ -47,7 +47,7 @@ Konfigurieren Sie die Fähigkeiten und Grenzen der Site:
 
 Standardmäßig folgen Sites den an der Mitgliedschaft festgelegten Grenzen. Durch Festlegen von Grenzen auf Site-Ebene werden die Mitgliedschaftseinstellungen überschrieben.
 
-### Zuordnungen
+### Zuordnungen {#associations}
 
 Unterhalb der Site-Optionen finden Sie Informationen zu:
 
@@ -55,7 +55,7 @@ Unterhalb der Site-Optionen finden Sie Informationen zu:
 - **Membership** der Site zugehörige Mitgliedschaft
 - **Customer account** dem Site zugeordnetes Kundenkonto
 
-### Rechte Seitenleiste
+### Rechte Seitenleiste {#right-sidebar}
 
 Auf der rechten Seite können Sie:
 

@@ -3,13 +3,13 @@ title: Ho lula la registration
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ho Fikiliso (v2)
+# Ho Fikiliso (v2) {#the-registration-flow-v2}
 
 _**LIPOTSO LIKHLELWE: Le tsela ena e fana ka Ultimate Multisite v2.x.**_
 
 Ba ntlha ba ka fika ka mofuta orefa oa hau. Ba ka u sebelisa sefomula sa fikiliso sa hau kapa le link seka hlalosang ho plan ea e fetileng. Leha ho feta, re tla u bonela hore na ba ba ntlha ba ka fika ka mofuta orefa oa hau ka ho sebelisa tsela tse fapaneng tsa ho fika ka hau le hore na eng e fetang ha ba fika ka hau.
 
-## Ho sebelisa sefomula sa fikiliso:
+## Ho sebelisa sefomula sa fikiliso: {#using-the-registration-form}
 
 Ke tla u bonela hore ke tla fana ka mofuta orefa oa ba ntlha. O tla hlalosa sefomula sa fikiliso (checkout form) le e tla ba leka ho fika ka hau le ho tsamaea ka plan ea hau. U ka u na le lipa tse fapaneng tsa ho fika, sehlopha se se fetileng se se fetileng se se fetileng ha u batla.
 
@@ -35,13 +35,13 @@ Ha ba tsamisa ka plan e fetileng kapa ha ho hloka verification ya email ka sebah
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Ho sebelisa Link e tsamaisang (Shareable Link):
+## Ho sebelisa Link e tsamaisang (Shareable Link): {#using-a-shareable-link}
 
 Ho fana ka registration ka link e tsamaisang ha le fetileng la form ya registration, le fa ho sebelisa link e tsamaisang, ba bang ba bona sehlopha kapa template ea website e ntse e hloka ka checkout form (ba ntlha sebahalo sa Pre-selecting products and templates via URL parameters) kapa ba nka coupon code e fetileng (ba ntlha sebahalo sa Using URL Parameters).
 
 Ho fana ka registration ho tla ba le fetileng: ba tla hloka ho fana le lemo la hae, username, email address, le lemo la website le lemo la title, kapa tse ling... empa plan kapa template ea site e tla ntse e hloka.
 
-### Ho tsamisa ka Tlhaloso (Manual Payments):
+### Ho tsamisa ka Tlhaloso (Manual Payments): {#registering-using-manual-payments}
 
 Ha u batla ho sebelisa PayPal, Stripe kapa gateway ea tšepetso e fetileng ea Ultimate Multisite kapa sehlopha sa hae, u ka sebelisa manual payments ba bang ba bona. Ka lehle tseba, u ka hlalosa invoice ho ba leba ho feta ha ba tsamisa ka network ea hau.
 

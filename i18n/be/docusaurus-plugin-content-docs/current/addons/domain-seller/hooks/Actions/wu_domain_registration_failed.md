@@ -4,11 +4,11 @@ title: Дзея - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 Выклікаецца пасля неўдаспыў рэгістрацыі домену.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Апісан |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | Метаданыя рэгістрацыі, уключаючы status=failed і error_message. |
 | $error_message | `string` | Легітфарматуёванае паведамленне аб памылцы ад рэгістратара. |
 
-### З версіі
+### З версіі {#since}
 
 - 2.0.0
-### Выказварэнне
+### Выказварэнне {#source}
 
 Вызначаны ў [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) на 1250-й кропцы.

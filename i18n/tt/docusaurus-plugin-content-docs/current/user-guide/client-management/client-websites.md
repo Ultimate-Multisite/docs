@@ -3,7 +3,7 @@ title: Клиент веб-сайты
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Клиентов сайтларыңыз (v2)
+# Клиентов сайтларыңыз (v2) {#your-clients-websites-v2}
 
 Şebekeye kaydolduktan sonra müşteriler kendi panellerine erişebilirler.
 

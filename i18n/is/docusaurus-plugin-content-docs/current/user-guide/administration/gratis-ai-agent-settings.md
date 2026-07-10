@@ -1,105 +1,152 @@
 ---
-title: Gratis AI Agentinnstillingar
+title: Stillingar Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Innstillingar
+# Stillingar Gratis AI Agent {#gratis-ai-agent-settings}
 
-Skjermen **Innstillinger → Avansert** í Gratis AI Agent hefur administratorinnstillingar for bakgrunnsintegrasjonir som vart innført i v1.5.0. Þessi síða skýrðir **Feedback Endpoint** felta og þeim fyrirhugað formét.
+Skjárinn **Stillingar → Ítarlegt** í Gratis AI Agent veitir stillingar á stjórnandastigi fyrir bakendatengingar. Þessi síða skjalfestir áframsendingu endurgjafar, lykla fyrir leitaraðila, uppsetningu á stýrðri Superdav þjónustu, stýringar fyrir Google Calendar, TextBee SMS-stillingar og eiginleikafána fyrir allt netið.
 
-## aðgang til Innstillingum
+## Að opna stillingar {#accessing-settings}
 
-1. Í WordPress admin, gætið í **Gratis AI Agent → Innstillingar**.
-2. Klikkað á flugbúnaðinn **Avansert**.
+1. Í WordPress stjórnborðinu, farðu í **Gratis AI Agent → Stillingar**.
+2. Smelltu á flipann **Ítarlegt**.
 
-## Innstillingar fyrir Feedback Endpoint
+## Stilling endurgjafarendapunkts {#feedback-endpoint-configuration}
 
-Feedback endpoint tekur POST-skjalði frá AI agent þegar notari sender feedback með því að trykkja á knaprannar (thumbs-down) knapp, sjálfskiptu banneri eða kommando `/report-issue`.
+Endurgjafarendapunkturinn tekur á móti POST-beiðnum frá AI-agentinum í hvert sinn sem notandi sendir inn endurgjöf með þumal-niður hnappinum, sjálfvirka ábendingaborðanum eða `/report-issue` skipuninni.
 
-| Felt | Skýring |
+| Reitur | Lýsing |
 |---|---|
-| **Feedback Endpoint URL** | URL sem tekur við feedback skjalði sem HTTP POST skjaldi með JSON body. |
-| **Feedback API Key** | Bearer token sem sendist í `Authorization` header fyrir hvert feedback skjaldi. Látðu það blankt ef endpoint þinn ekki krefst aukna samþykki (authentication). |
+| **Vefslóð endurgjafarendapunkts** | Vefslóðin sem tekur á móti endurgjöf sem HTTP POST-beiðnum með JSON-meginmáli. |
+| **Feedback API Key** | bearer token sem er sent í `Authorization` header hverrar endurgjafarbeiðni. Skildu eftir autt ef endapunkturinn þinn krefst ekki auðkenningar. |
 
-### Fyrirhugaður JSON Skjaldi
+### Vænt JSON-álag {#expected-json-payload}
 
-Þin feedback endpoint verður að taka við JSON body með mínst eftirfarandi felta:
+Endurgjafarendapunkturinn þinn verður að samþykkja JSON-meginmál með að minnsta kosti eftirfarandi reitum:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Svarinn var órétt um setningu.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Aðgerðarfeldi gæti verið til staðar í skjalðinu eftir samhengi samtalins.
+Aukareitir kunna að vera til staðar í álaginu eftir samhengi samtalsins.
 
-### Verði fyrir `triage_category` Gildi
+### Gildi fyrir `triage_category` {#triagecategory-values}
 
-AI triage laginn gefur einn af eftirfarandi gildi við `triage_category` áður en það sendir skjaldið:
+AI-flokkunarlagið úthlutar einu af eftirfarandi gildum til `triage_category` áður en álagið er sent áfram:
 
-| Gildi | Meining |
+| Gildi | Merking |
 |---|---|
-| `factual_error` | Hjálparinn gaf órétta upplýsingar um sanningu. |
-| `unhelpful_answer` | Svarinn var tæknilega réttur en ekki hlekkandi. |
-| `inappropriate_content` | Svarinn innehildi innihald sem þarf að vera í raun ekki sýnt fyrir notendur. |
-| `other` | Feedbackinn fór ekki við munaðan gildi. |
+| `factual_error` | Aðstoðarmaðurinn veitti rangar staðreyndaupplýsingar. |
+| `unhelpful_answer` | Svarið var tæknilega rétt en ekki gagnlegt. |
+| `inappropriate_content` | Svarið innihélt efni sem ætti ekki að vera sýnt notendum. |
+| `other` | Endurgjöfin passaði ekki við þekktan flokk. |
 
-### Samþykki (Authentication)
+### Auðkenning {#authentication}
 
-Ef þitt endpunkt krefst auðkenningu, setji **Feedback API Key** fältið settur á þennan bearer token. Agéntinn sendir:
+Ef endapunkturinn þinn krefst auðkenningar skaltu stilla reitinn **Feedback API Key** á bearer token-inn þinn. Agentinn sendir:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Ef **Feedback API Key** fältið er beint, sendist ekki `Authorization` header.
+Ef reiturinn **Feedback API Key** er tómur er enginn `Authorization` header sendur.
 
-### Afskjálningu Feedback samleðar
+### Að slökkva á söfnun endurgjafar {#disabling-feedback-collection}
 
-Látui bæði **Feedback Endpoint URL** og **Feedback API Key** fälta beint. Þúkki ábyrðin (thumbs-down button) og UI fyrir feedback eru framkvæmdar fyrir notendur, en innsendingar eru ekki sendar til efnilega þess hvar.
+Skildu bæði reitina **Vefslóð endurgjafarendapunkts** og **Feedback API Key** eftir auða. Þumal-niður hnappurinn og endurgjafarviðmótið haldast sýnileg notendum, en innsendingar eru ekki sendar áfram til neinnar ytri þjónustu.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Eftir sama á **Advanced** tabinn, gerir **Brave Search API Key** fältið möguleika að nota [Internet Search](../configuration/internet-search).
+Einnig á flipanum **Ítarlegt** virkjar reiturinn **Brave Search API Key** eiginleikann [Internet Search](../configuration/internet-search).
 
-| Fält | Áskipti |
+| Reitur | Lýsing |
 |---|---|
-| **Brave Search API Key** | Þín API key frá Brave Search developer dashboard. Nauðsynleg til að aktíva internet search í AI assistant. |
+| **Brave Search API Key** | API-lykillinn þinn úr þróunarborði Brave Search. Nauðsynlegt til að virkja internetleit í AI-aðstoðarmanninum. |
 
-Miðlunin fältarinn hefur einn klikkjanlegan link á síðuna fyrir Brave Search API sign-up. Látui beint til að afskjálna internet search.
+Merki reitsins inniheldur smellanlegan tengil á skráningarsíðu Brave Search API. Skildu eftir autt til að slökkva á internetleit.
 
-Sjá [Internet Search](../configuration/internet-search) fyrir niðurstaða notenda um þennan eiginleika.
+Sjá [Internet Search](../configuration/internet-search) fyrir skjöl fyrir endanotendur um þennan eiginleika.
 
-## Feature Flags
+## Stýrð Superdav þjónusta {#managed-superdav-service}
 
-Eftir sama innført í v1.9.0, gerir **Settings → Feature Flags** tabinn til að setja skiptaþögnar (toggle switches) fyrir valfærð möguleikaliðferli. Hvert flag er eða aktíva eða afskjálna nálægt netinu; ekki er það yfirskjaldandi á síðu í þessum tíma.
+Superdav AI Agent v1.18.0 bætir við stýrðum Superdav þjónustuendapunktum og sjálfvirkri úthlutun tenginga fyrir studdar vefsíður. Notaðu þessar stýringar þegar vefsvæðið þitt ætti að tengjast hýsta þjónustuaðilanum í stað handstillts þjónustuendapunkts.
 
-### Til að hleðja Feature Flags
+| Reitur | Lýsing |
+|---|---|
+| **Stýrð Superdav þjónusta** | Virkjar tengingu við hýstu Superdav þjónustuna fyrir studdar vefsíður. |
+| **Úthluta tengingu** | Ræsir sjálfvirka úthlutun endapunkts og auðkenna. Notaðu þetta eftir að hafa staðfest að vefsvæðið eigi að nota stýrða þjónustuaðilann. |
+| **Þjónustuendapunktur / tengingarstaða** | Sýnir núverandi endapunkt eða tengingarstöðu eftir úthlutun. |
 
-1. Í WordPress admin, ferst til **Gratis AI Agent → Settings**.
-2. Klikkað á tabinn **Feature Flags**.
+Eftir úthlutun skaltu vista stillingar og staðfesta tengingarstöðuna áður en þú treystir á verkflæði stýrðrar þjónustu. Ef úthlutun mistekst skaltu skoða leiðbeiningar um endurtilraun sem birtast og staðfesta að vefsvæðið hafi heimild til að nota hýsta þjónustuaðilann.
 
-### Access Control Flags
+## Stilling Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Áskildur |
+Þegar dagatalseiginleikar Superdav AI Agent v1.18.0 eru virkjaðir getur agentinn lesið stillt dagatöl og upplýsingar um viðburði. Dagatalsverkfæri eru lesmiðuð og gagnleg fyrir áminningar sem taka mið af dagskrá, eftirfylgni með þátttakendum og samsvörun tengiliða.
+
+| Reitur | Lýsing |
+|---|---|
+| **Google Calendar auðkenni** | Geymir auðkennin eða token-tenginguna sem þarf til að lesa dagatalsgögn. |
+| **Val dagatals** | Takmarkar hvaða stilltu dagatöl agentinn má skoða. |
+| **Tengingarstaða dagatals** | Staðfestir hvort núverandi auðkenni geti lesið dagatöl og viðburði. |
+
+Haltu dagatalsauðkennum takmörkuðum við þau dagatöl sem agentinn þarf. Tengdu aftur eða endurnýjaðu auðkenni ef staðan gefur til kynna útrunnið token.
+
+## TextBee SMS-tilkynningar {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 bætir TextBee við sem SMS-þjónustuaðila fyrir stillt tilkynningaverkflæði. SMS-tilkynningar ættu að vera paraðar við mannleg samþykktarhlið fyrir viðkvæm skilaboð eða skilaboð sem snúa að notendum.
+
+| Reitur | Lýsing |
+|---|---|
+| **TextBee API-lykill** | Auðkennir beiðnir til TextBee SMS-þjónustuaðilans. |
+| **TextBee tæki / sendandi** | Velur TextBee sendanda eða tæki sem er notað fyrir útgående skilaboð, þegar þjónustuaðilinn krefst þess. |
+| **SMS-tilkynningar virkjaðar** | Leyfir samþykktum verkflæðum að senda textaskilaboðatilkynningar. Hafðu óvirkt til að koma í veg fyrir SMS-sendingar. |
+
+Sendu prófunarskilaboð aðeins á númer í eigu stjórnanda og staðfestu síðan hegðun samþykktarhliða áður en þú virkjar tímasettar áminningar eða áminningar sem snúa að þátttakendum.
+
+## Eiginleikafánar {#feature-flags}
+
+Einnig kynnt í v1.9.0, flipinn **Stillingar → Eiginleikafánar** veitir rofa fyrir valfrjálsa virkni. Hver fáni er annaðhvort virkur eða óvirkur fyrir allt netið; engin yfirskrift fyrir hvert vefsvæði er til staðar sem stendur.
+
+### Að opna eiginleikafána {#accessing-feature-flags}
+
+1. Í WordPress stjórnborðinu, farðu í **Gratis AI Agent → Stillingar**.
+2. Smelltu á flipann **Eiginleikafánar**.
+
+### Aðgangsstýringarfánar {#access-control-flags}
+
+| Flagg | Sjálfgefið | Lýsing |
 |---|---|---|
-| **Begjarnir að Administratorum** | Off | Þegar þetta er á, geta einungjar með `administrator` rólum opna AI Agent chat panelinn. Allir öðlingar sjá texta sem segir "Vinsandi við administratorann þinni". |
-| **Begjarnir að Netverkstjórnarmönnum** | Off | Þegar þetta er á í multisite netverkinu getur einungis Super Admins nota agentinn. Innangur smávarðmanna einstaklingssitustu er hönnuð. Þetta hefur fyrir vágmark á "Begjarnir að Administratorum" ef það er á bæði. |
-| **Leita að Subscriber Access** | Off | Þegar þetta er á, geta notendur með `subscriber` rólum nota chat-menureinnu en eru takmarkað til lesunar (engin skráning eða breytingar). |
-| **Skipti frá fyrir ekki lánamaður** | Off | Inniheldur tengingu við membership status Ultimate Multisite. Þegar þetta er á, er chat hýrt fyrir situstu sem hefur ekki aktivt lánamaðurskap. |
+| **Takmarka við stjórnendur** | Slökkt | Þegar virkjað geta aðeins notendur með `administrator` hlutverkið opnað AI Agent spjallborðið. Öll önnur hlutverk sjá í staðinn skilaboðin „Hafðu samband við stjórnandann þinn“. |
+| **Takmarka við netstjórnendur** | Slökkt | Þegar virkjað á multisite-neti geta aðeins Super Admins notað agentinn. Stjórnendur einstakra vefja eru útilokaðir. Hefur forgang fram yfir „Takmarka við stjórnendur“ ef bæði eru virkjuð. |
+| **Leyfa aðgang áskrifenda** | Slökkt | Þegar virkjað geta notendur með `subscriber` hlutverkið notað spjallviðmótið en takmarkast við lesaðgang (engin færslusmíði eða breytingar á stillingum). |
+| **Slökkva fyrir þá sem eru ekki meðlimir** | Slökkt | Samþættist við aðildarstöðu Ultimate Multisite. Þegar virkjað er spjall falið fyrir vefi sem eru ekki með virka aðild. |
 
-### Branding Flags (Áskildar merki)
+### Vörumerkingarflögg {#branding-flags}
 
-| Flag | Default | Áskildur |
+| Flagg | Sjálfgefið | Lýsing |
 |---|---|---|
-| **Skipti frá "Powered by Gratis AI Agent" Footer** | Off | Fjármunir þessari merki í undirskrifum við botnin chat-menureinni. Til að nota þetta er á meðal til að gera situstu sérstaka. |
-| **Sérstakt nafn fyrir Agentinn** | *(tommt)* | Erstatt almennum nafni "Gratis AI Agent" í hvarfari upphafsmenureinni og administrator-menú með eiga nafninu. Látið það tommt til að nota almenna nafninu. |
-| **Skipti frá Valgandi Agentinn** | Off | Þegar þetta er á, geta notendur ekki skipti milli af fimm innbyggðum agentum. Notkun dagseturðar agentar er fastsett í það sem er sett sem vágmark í Settings → General. |
-| **Noti Situstu Íkoninn sem Chat Avatar** | Off | Erstatt almennum AI-íkoninni í hvarfari upphafsmenureinni með íkon situstu WordPress (setur undir Appearance → Customize → Site Identity). |
+| **Fela „Powered by Gratis AI Agent“ í fæti** | Slökkt | Fjarlægir vörumerkingartilvísunarlínuna sem birtist neðst í spjallgræjunni. Mælt með fyrir white-label uppsetningar. |
+| **Sérsniðið agent-nafn** | *(autt)* | Kemur í stað sjálfgefna merkisins „Gratis AI Agent“ í spjallhausnum og admin-valmyndinni með þínu eigin vöruheiti. Skildu autt eftir til að nota sjálfgefið. |
+| **Fela agent-val** | Slökkt | Þegar virkjað geta notendur ekki skipt á milli fimm innbyggðu agentanna. Núverandi agent er fastur við það sem er stillt sem sjálfgefið í Settings → General. |
+| **Nota vefikon sem spjall-avatar** | Slökkt | Kemur í stað sjálfgefna AI-táknsins í haus spjallgræjunnar með WordPress vefikoninu (stillt undir Appearance → Customize → Site Identity). |
 
-### Áskiptum breytingum
+### Öryggisflögg sjálfvirkni {#automation-safety-flags}
 
-Klikkið á **Save Settings** eftir að skipta á öllum flaggum. Breytingar virka strax — þú þarft ekki að flúta cache eða vakna plugin.
+Superdav AI Agent v1.18.0 kynnir samþykkishlið manna og áminningarskrár fyrir öruggari keyrslur sjálfvirkni. Þessar stýringar kunna að birtast í eiginleikaflöggum eða háþróuðum sjálfvirknistillingum, eftir því hvaða pakki er uppsettur.
+
+| Flagg | Sjálfgefið | Lýsing |
+|---|---|---|
+| **Krefjast samþykkis manns** | Mælt með virkt | Stöðvar viðkvæma sjálfvirkni þar til heimilaður notandi fer yfir og staðfestir fyrirhugaða aðgerð. |
+| **Afritunarvörn áminninga** | Virkt | Skráir sendar áminningar svo endurtilraunir eða áætlaðar keyrslur sendi ekki tvíteknar tilkynningar. |
+| **Virkja dagatalstæki** | Slökkt þar til stillt | Leyfir agentinum að lesa stillt Google-dagatöl og viðburði. |
+| **Virkja SMS-tilkynningar** | Slökkt þar til stillt | Leyfir samþykktum verkflæðum að senda TextBee SMS-tilkynningar eftir að auðkenni hafa verið vistuð. |
+
+### Að beita breytingum {#applying-changes}
+
+Smelltu á **Save Settings** eftir að hafa kveikt eða slökkt á einhverju flaggi. Breytingar taka gildi strax — engin hreinsun skyndiminnis eða endurvirkjun plugins er nauðsynleg.

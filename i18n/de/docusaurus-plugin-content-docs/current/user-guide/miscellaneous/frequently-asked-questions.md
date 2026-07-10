@@ -1,78 +1,78 @@
 ---
 title: Häufig gestellte Fragen
 sidebar_position: 18
-_i18n_hash: 7a5b3130600e6d8eeeecee2d8cb03b2c
+_i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Häufig gestellte Fragen
+# Häufig gestellte Fragen {#frequently-asked-questions}
 
-Hier sind einige **Häufig gestellte Fragen**, die häufig bei Supportanfragen auftauchen.
+Hier sind einige **häufig gestellte Fragen**, die bei Support-Anfragen oft aufkommen.
 
   * **Was ist Ultimate Multisite?**
 
-Ultimate Multisite ist ein WordPress-Plugin, das für WordPress-Multisite-Installationen entwickelt wurde und Ihre WordPress-Installation in ein Premium-Netzwerk von Websites verwandelt – ähnlich wie WordPress.com – sodass Kunden Websites über monatliche, vierteljährliche oder jährliche Gebühren erstellen können (Sie können auch kostenlose Pläne erstellen).
+Ultimate Multisite ist ein WordPress-Plugin, entwickelt für WordPress-Multisite-Installationen, das deine WordPress-Installation in ein Premium-Netzwerk von Websites verwandelt – wie [WordPress.com](https://WordPress.com) – und es Kunden ermöglicht, Websites gegen monatliche, vierteljährliche oder jährliche Gebühren zu erstellen (du kannst auch kostenlose Tarife erstellen).
 
-  * **Wird Ultimate Multisite ohne Multisite funktionieren?**
+  * **Funktioniert Ultimate Multisite ohne Multisite?**
 
-Nein. Ultimate Multisite erfordert WordPress Multisite, Subverzeichnis oder Subdomain.
+Nein. Ultimate Multisite erfordert WordPress-Multisite, Unterverzeichnisse oder Subdomains.
 
-  * **Welche Anforderungen hat Ultimate Multisite?**
+  * **Was sind die Anforderungen für Ultimate Multisite?**
 
 Ultimate Multisite erfordert:
 
-**WordPress-Version** : v5.3+ (Empfohlen: Letzte stabile Version)  
-**PHP-Version** : 7.4.x (Unterstützung für > 8.0 kommt bald)  
-**MySQL-Version** : v5+ (Empfohlen: Version 5.6, falls 8.0 nicht verfügbar ist)
+**WordPress-Version** : v5.3+ (empfohlen: letzte stabile Version)
+**PHP-Version** : 7.4.x (Unterstützung für > 8.0 folgt in Kürze)
+**MySQL-Version** : v5+ (empfohlen: Version 5.6, falls dir 8.0 bei deinem Hosting-Anbieter nicht zur Verfügung steht)
 
-_Multisite (Subdomain oder Subverzeichnis) muss ebenfalls aktiviert werden._ [How to Install WordPress Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
+_Multisite (Subdomain oder Unterverzeichnis) muss ebenfalls aktiviert sein._ [So installierst du WordPress-Multisite](/user-guide/getting-started/how-to-install-wordpress-multisite).
 
-  * **Wird Ultimate Multisite mit Multisite mit Subverzeichnissen funktionieren?**
+  * **Funktioniert Ultimate Multisite mit Multisite mit Unterverzeichnissen?**
 
-Ja. Ultimate Multisite unterstützt sowohl Subverzeichnis-Installationen als auch Subverzeichnis-Installationen.
+Ja. Ultimate Multisite unterstützt sowohl Unterverzeichnis-Installationen als auch Unterverzeichnis-Installationen.
 
-  * **Wird Ultimate Multisite mit Multisite mit Subdomains funktionieren?**
+  * **Funktioniert Ultimate Multisite mit Multisite mit Subdomains?**
 
-Ja. Ultimate Multisite unterstützt sowohl Subverzeichnis-Installationen als auch Subdomain-Installationen.
+Ja. Ultimate Multisite unterstützt sowohl Unterverzeichnis-Installationen als auch Subdomain-Installationen.
 
-  * **Kann ich Ultimate Multisite nutzen, um einzuschränken, welche Plugins und Themes Benutzer verwenden können?**
+  * **Kann ich Ultimate Multisite verwenden, um einzuschränken, welche Plugins und Designs Benutzer verwenden können?**
 
-Ja. Mit Ultimate Multisite können Sie auswählen, welche Plugins und Themes für jeden Plan in Ihrem Netzwerk verfügbar sind.
+Ja. Mit Ultimate Multisite kannst du auswählen, welche Plugins und Designs für jeden Tarif in deinem Netzwerk verfügbar sind.
 
-  * **Kann ich Ultimate Multisite nutzen, um die Anzahl der Beiträge zu begrenzen, die ein Benutzer auf seiner/ihre Website erstellen kann?**
+  * **Kann ich Ultimate Multisite verwenden, um die Anzahl der Beiträge zu begrenzen, die ein Benutzer auf seiner/ihrer Website erstellen kann?**
 
-Ja. Mit Ultimate Multisite können Sie Beitragsquoten für **jeden verfügbaren Beitragstyp** in Ihrem Netzwerk festlegen. Sie können auch die Anzahl der Benutzer, die der Administrator einladen kann, die **Menge an Speicherplatz** und vieles mehr begrenzen.
+Ja. Mit Ultimate Multisite kannst du Beitragskontingente für **jeden verfügbaren Beitragstyp** in deinem Netzwerk festlegen. Du kannst auch die Anzahl der Benutzer begrenzen, die der Admin einladen kann, den **Umfang des Speicherplatzes** und vieles mehr.
 
-  * **Unterstützt Ultimate Multisite Site-Templates?**
+  * **Unterstützt Ultimate Multisite Website-Vorlagen?**
 
-Ja. Mit Ultimate Multisite können Sie so viele Site-Templates erstellen, wie Sie möchten. Site-Templates sind keine Themes, sondern normale Websites in Ihrem Netzwerk. Sie können Plugins, Themes aktivieren und das Site-Template beliebig anpassen. Wenn ein Benutzer dieses Template auswählt, wird seine Website als Kopie dieses Templates mit allen Anpassungen erstellt.
+Ja. Mit Ultimate Multisite kannst du so viele Website-Vorlagen erstellen, wie du möchtest. Website-Vorlagen sind keine Designs, sondern normale Websites in deinem Netzwerk. Du kannst Plugins und Designs aktivieren und diese Website-Vorlage auf jede gewünschte Weise anpassen. Wenn ein Benutzer diese Vorlage auswählt, wird seine oder ihre Website als Kopie dieser Vorlage erstellt, einschließlich aller Anpassungen.
 
-Sie können auch ein bestimmtes Template für einen Plan festlegen. Dadurch wird bei jedem Benutzer, der sich für diesen Plan anmeldet, seine Website als Duplikat dieses Site-Templates erstellt.
+Du kannst auch eine bestimmte Vorlage für einen Tarif festlegen. Dadurch wird für jeden Benutzer, der sich für diesen Tarif anmeldet, seine oder ihre Website als Duplikat dieser Website-Vorlage erstellt.
 
   * **Integriert sich Ultimate Multisite mit WooCommerce?**
 
 Ja!
 
-Wenn Sie möchten, dass Ihre Netzwerkbenutzer WooCommerce zur Verfügung haben, damit sie Geschäfte einrichten können, ist das mit Ultimate Multisite möglich. Sie können sogar die Anzahl der Produkte begrenzen, die Ihre Kunden in jeder Planstufe erstellen können.
+Wenn du möchtest, dass WooCommerce für deine Netzwerkbenutzer verfügbar ist und sie Shops einrichten können, ist das mit Ultimate Multisite möglich. Du kannst sogar die Anzahl der Produkte begrenzen, die deine Kunden in jeder Tarifstufe erstellen können.
 
-Bezüglich der Abonnementzahlungen für Ultimate Multisite können Sie das [Ultimate Multisite: WooCommerce Integration Add-on](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/) nutzen, um Ihren Ultimate Multisite-Kunden die Zahlung über WooCommerce-Gateways auf Ihrer Hauptseite zu ermöglichen. Auf diese Weise können Sie auf die umfangreiche Bibliothek von Zahlungs-Gateways zugreifen, die für WooCommerce entwickelt wurden, und sie zur Abrechnung Ihrer Ultimate Multisite-Kunden verwenden.
+Für Abonnementzahlungen für Ultimate Multisite kannst du das [Ultimate Multisite: WooCommerce Integration Add-on](https://ultimatemultisite.com/addons/wp-ultimo-woocommerce/) verwenden, damit deine Ultimate Multisite-Kunden über WooCommerce-Zahlungs-Gateways auf deiner Hauptwebsite bezahlen können. Auf diese Weise kannst du die riesige Bibliothek von Zahlungs-Gateways nutzen, die für WooCommerce entwickelt wurden, und sie verwenden, um deine Ultimate Multisite-Kunden abzurechnen.
 
-  * **Gibt es einen Weg, Abonnements von WPMUDEV Pro Sites zu migrieren?**
+  * **Gibt es eine Möglichkeit, Abonnements von WPMUDEV Pro Sites zu migrieren?**
 
-Ja, Ultimate Multisite bietet Ihnen jetzt [ein hilfreiches Tool, um Ihre Pro Sites zu migrieren](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/).
+Ja, Ultimate Multisite bietet dir jetzt [ein hilfreiches Werkzeug für die Migration](https://ultimatemultisite.com/addons/wp-ultimo-pro-sites-migrator/) deines Pro Sites-Netzwerks.
 
-  * **Warum ist die Registerkarte „Allowed Plugins“ auf meiner Plan-Bearbeitungsseite leer?**
+  * **Warum ist der Tab „Erlaubte Plugins“ auf meiner Tarif-Bearbeitungsseite leer?**
 
-Ultimate Multisite erlaubt Ihnen nur, Plugins, die nicht netzwerkaktiviert sind, zu erlauben oder zu verweigern. Wenn ein Plugin netzwerkaktiviert ist, wird es von Natur aus standardmäßig auf jeder Website Ihres Netzwerks geladen.
+Ultimate Multisite lässt dich nur den Zugriff auf Plugins erlauben oder verweigern, die in deinem Netzwerk nicht netzwerkweit aktiviert sind. Wenn ein Plugin netzwerkweit aktiviert ist, wird es seiner Natur nach standardmäßig auf jeder Website deines Netzwerks geladen.
 
-Wenn Sie keine Plugins in der Registerkarte „Allowed Plugins“ sehen, prüfen Sie, ob das gewünschte Plugin netzwerkaktiv ist oder nicht.
+Wenn du im Tab „Erlaubte Plugins“ keine Plugins aufgelistet siehst, prüfe, ob das gewünschte Plugin netzwerkweit aktiv ist oder nicht.
 
-  * **Kann ich mein eigenes Preistabellen-Design verwenden?**
+  * **Kann ich mein eigenes Design für die Preistabelle verwenden?**
 
-Ja. Seit Version 1.4.0 unterstützt Ultimate Multisite Template-Overrides.
+Ja. Seit Version 1.4.0 unterstützt Ultimate Multisite Vorlagen-Überschreibungen.
 
   * **Funktioniert Ultimate Multisite mit WP Engine?**
 
-Ja. Ultimate Multisite wurde immer von WP Engine unterstützt, aber die Funktionsfähigkeit der Domain-Mapping erforderte zusätzliche manuelle Schritte vom Administrator (das Hinzufügen der Domain zum WP Engine-Panel). **Dies ist seit Version 1.6.0 nicht mehr der Fall.** Ultimate Multisite integriert sich direkt mit der WP Engine API und Domains werden nach dem Mapping automatisch zum Panel hinzugefügt.
+Ja. Ultimate Multisite wurde immer von WP Engine unterstützt, aber damit Domain-Mapping funktioniert, waren manuelle Zusatzschritte durch den Admin erforderlich (Hinzufügen der Domain zum WP Engine-Panel). **Seit Version 1.6.0 ist das nicht mehr der Fall.** Ultimate Multisite integriert sich direkt mit der WP Engine API, und Domains werden nach dem Mapping automatisch zum Panel hinzugefügt.
 
-  * **Welchen Hosting-Anbieter empfehlen Sie?**
+  * **Welchen Hosting-Anbieter empfehlt ihr?**
 
-Ultimate Multisite sollte mit jedem Hosting-Anbieter funktionieren. Der einzige Unterschied besteht darin, dass einige Hosting-Unternehmen wie Closte, Serverpilot, WPMUDEV, WP Engine, Cloudways, Gridpane und [Runcloud.io](http://Runcloud.io) eine engere Integration für Domain-Mapping-Funktionen haben, sodass sie sofort funktionieren. Für andere Hostings müssen Sie möglicherweise das Domain-Mapping manuell einrichten.
+Ultimate Multisite sollte mit jedem Hosting-Anbieter funktionieren. Der einzige Unterschied ist, dass einige Hosting-Unternehmen wie Closte, Serverpilot, WPMUDEV, WP Engine, Cloudways, Gridpane und [Runcloud.io](http://Runcloud.io) eine engere Integration für Domain-Mapping-Funktionen haben, sodass sie sofort einsatzbereit funktionieren. Bei anderen Hostings musst du Domain-Mapping möglicherweise manuell einrichten.

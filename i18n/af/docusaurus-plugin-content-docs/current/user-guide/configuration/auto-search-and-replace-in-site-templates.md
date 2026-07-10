@@ -1,32 +1,32 @@
 ---
-title: Outomatiese Soek en Vervang in Siteskanke
+title: Outomatiese Soek en Vervang in Werfsjablone
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Outomatiese Soek en Vervang in Witwebwerf-sjabloons (v2)
+# Outomatiese soek en vervang in webwerf-sjablone (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**Hierdie lesing vereis WP UItimo weergawe 2.x.**_
+_**Hierdie handleiding vereis WP UItimo weergawe 2.x.**_
 
-Een van die kragtigste kenmerke van Ultimate Multisite is die vermoë om willekeurige teks, kleur en keusevelde by die registrasieformulier by te voeg. Sodra ons daardie data vasgevang het, kan ons dit gebruik om die inhoud in sekere dele van die geselekteerde witwebwerf-sjabloon vooraf te vul. Daarna, wanneer die nuwe witwebwerf gepubliseer word, sal Ultimate Multisite die plekhouers vervang met die werklike inligting wat tydens die registrasie ingevoer is.
+Een van die kragtigste kenmerke van Ultimate Multisite is die vermoë om arbitrêre teks-, kleur- en keusevelde by die registrasievorm te voeg. Sodra ons daardie data vasgelê het, kan ons dit gebruik om die inhoud in sekere dele van die gekose webwerf-sjabloon vooraf in te vul. Wanneer die nuwe webwerf dan gepubliseer word, sal Ultimate Multisite die plekhouers vervang met die werklike inligting wat tydens registrasie ingevoer is.
 
-Byvoorbeeld, jy kan jou sjabloonwitwebwerwe met plekhouers ontwerp. Plekhouers moet omring word deur dubbele kurleëls – {{naam_van_plekhouer}}.
+Jy kan byvoorbeeld jou sjabloonwebwerwe met plekhouers opstel. Plekhouers moet bygevoeg word omring deur dubbele krulhakies - {{placeholder_name}}.
 
-Dan kan jy eenvoudig 'n ooreenstemmende registrasieveld byvoeg om daardie data vas te vang.
+Dan kan jy eenvoudig ’n ooreenstemmende registrasieveld byvoeg om daardie data vas te lê
 
 Jou kliënt sal dan daardie veld tydens die registrasie kan invul.
 
 Ultimate Multisite sal dan die plekhouers outomaties vervang met die data wat deur die kliënt verskaf is.
 
-## **Oplos van die "sjabloon vol plekhouers" probleem**
+## **Los die “sjabloon vol plekhouers”-probleem op** {#solving-the-template-full-of-placeholders-problem}
 
-Dit alles is wonderlik, maar ons kom wel teë 'n lelike probleem: nou is ons witwebwerf-sjabloons – wat deur ons kliënte besoek kan word – vol lelike plekhouers wat nie veel vertel nie.
+Dit alles is wonderlik, maar ons loop wel ’n lelike probleem raak: nou is ons webwerf-sjablone - wat deur ons kliënte besoek kan word - vol lelike plekhouers wat nie veel sê nie.
 
-Om dit op te los, bied ons die opsie om valse waardes vir die plekhouers te stel, en ons gebruik daardie waardes om die inhoud daarvan op die sjabloonwitwebwerwe te soek en te vervang terwyl jou kliënte besoek.
+Om dit op te los, bied ons die opsie om vals waardes vir die plekhouers in te stel, en ons gebruik daardie waardes om hul inhoud op die sjabloonwebwerwe te soek en te vervang terwyl jou kliënte dit besoek.
 
-Jy kan toegang tot die plekhouers-inhoudredigeerder kry deur na **Ultimate Multisite > Settings > Sites** te gaan, en dan, op die sybalk, die Edit Placeholders-skakel te klik.
+Jy kan toegang tot die sjabloonplekhouer-redigeerder kry deur na **Ultimate Multisite > Instellings > Webwerwe** te gaan, af te rol na die Webwerf-sjabloonopsies-area, en dan op die **Wysig plekhouers**-skakel te klik.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Webwerf-sjabloonopsies-area op die Webwerwe-instellingsbladsy](/img/config/settings-sites-templates-section.png)
 
-Dit neem jou na die plekhouers se inhoudredigeerder, waar jy plekhouers en hul ooreenstemmende inhoud kan byvoeg.
+Dit sal jou na die plekhouers se inhoudredigeerder neem, waar jy plekhouers en hul onderskeie inhoud kan byvoeg.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![Ingangspunt vir die sjabloonplekhouer-redigeerder](/img/config/settings-sites-templates-section.png)

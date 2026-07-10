@@ -3,7 +3,7 @@ title: Registrer API-endepunkt
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API-endepunktet til Ultimate Multisite Register
+# API-endepunktet til Ultimate Multisite Register {#the-ultimate-multisite-register-api-endpoint}
 
 I denne tutorial lærer du, hvordan du bruger Ultimate Multisite /register API-endepunktet til at oprette hele onboarding-processen for en ny kunde i dit netværk, og hvordan du gør det med Zapier.
 
@@ -29,11 +29,11 @@ Vælg **Enable API** og få dine API-credentials.
 
 Nu skal vi udforske endepunktet og derefter oprette en registreringshandling i Zapier.
 
-## Endepunktskroppeparametre
+## Endepunktskroppeparametre {#endpoint-body-parameters}
 
 Lad os have et overblik over de minimumsinformation, vi skal sende til endepunktet. I slutningen af denne artikel finder du det fulde kald.
 
-### Kunde
+### Kunde {#customer}
 
 Dette er oplysningerne, der er nødvendige for processen med at oprette Brugeren og Ultimate Multisite-Kunden:
 
@@ -43,25 +43,25 @@ Det er muligt at sende kunden ID'et, der er oprettet i dit netværk. Hvis det ik
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Medlemskab**
+### **Medlemskab** {#membership}
 
 Den eneste information, vi har brug for inde i dette objekt, er Medlemskabets Status.
 
 "membership" { "status" : "string", // en af "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkter**
+### **Produkter** {#products}
 
 Produkter får en array med 1 eller flere produkt-ID'er fra dit netværk. Vær opmærksom på, at denne endpoint ikke opretter produkter. Tjek Ultimate Multisites dokumentation for bedre at forstå produktoprettelses-endpointet.
 
 **"products" : [1,2],**
 
-### Betaling
+### Betaling {#payment}
 
 Ligesom med Medlemskab har vi kun brug for status.
 
 **"payment" { "status" : "string", // en af "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Og for at afslutte kroppen skal vi have sidens URL og Titel, begge inde i Site-objektet.
 
@@ -69,13 +69,13 @@ Og for at afslutte kroppen skal vi have sidens URL og Titel, begge inde i Site-o
 
 Tilbagevendelsen fra register-endpointet vil være en array med de nyoprettede medlemsinformationer.
 
-## Oprettelse af en handling i Zapier
+## Oprettelse af en handling i Zapier {#creating-an-action-in-zapier}
 
 Med introduktionen af denne nye og mere robuste kontooprettelses-endpoint får du også adgang til en ny handling i Zapier.
 
 Ved du hvordan du bruger og nyder alt, den nye version af Zapier tilbyder? Læs mere her. (link?)
 
-### Oprettelse af en handling
+### Oprettelse af en handling {#creating-an-action}
 
 For bedre at illustrere, hvordan du bruger registreringsendepunktet med Zapier, opretter vi en integration med Google Forms. Hver gang dette formular udfyldes og informationen gemmes i formularens svarark, vil et nyt medlem blive oprettet i Ultimate Multisite-netværket.
 
@@ -105,7 +105,7 @@ Når informationerne er sat op, skal du gå videre til den sidste test. På det 
 
 Test din nye Zap, og den bør gennemføre succesfuldt. Hvis der opstår en fejl, tjek alle felterne for at se, om de bliver sendt korrekt. Da der er meget information, kan nogle ting gå ubeskrevne.
 
-### Complete endpoint parametre
+### Complete endpoint parametre {#complete-endpoint-parameters}
 
 Her er det komplette kald og alle muligheder for felter, der kan sendes.
 

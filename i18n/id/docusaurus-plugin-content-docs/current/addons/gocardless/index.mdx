@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Ultimate Multisite: Pembayaran GoCardless
 
 Izinkan pelanggan Anda membayar keanggotaan dan produk Multisite Ultimate dengan Direct Debit menggunakan GoCardless!
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah 'ultimate-multisite-gocardless' ke direktori '/wp-content/plugins/'
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
 3. Ikuti Wizard langkah demi langkah untuk mengatur plugin
 
-## Panduan Penggunaan
+## Panduan Penggunaan {#usage-guide}
 
 _GoCardless_ adalah payment gateway yang tersedia di **Eropa dan Inggris** yang memungkinkan pembayaran **Direct Debit**.
 
@@ -29,7 +29,7 @@ Tutorial ini akan membahas cara mengatur _GoCardless_ agar Anda mulai menerima p
 
 _**Catatan: GoCardless hanya berfungsi dengan mata uang berikut:**_ **EUR, GBP, AUD, SEK, dan DKK.**
 
-## Menginstal Add-on
+## Menginstal Add-on {#installing-the-add-on}
 
 Pertama-tama, Anda perlu menginstal add-on GoCardless untuk Ultimate Multisite. Anda dapat melakukannya dengan pergi ke **Ultimate Multisite > Settings > Add-ons (di sidebar)**. Lalu, pilih add-on GoCardless dari daftar tersebut.
 
@@ -37,7 +37,7 @@ Setelah add-on terinstal dan diaktifkan, buka **Ultimate Multisite > Settings > 
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## Mendapatkan Access Token
+## Mendapatkan Access Token {#getting-an-access-token}
 
 Buat akun di _GoCardless_ (atau di _GoCardless_ sandbox, jika Anda ingin **mengujinya terlebih dahulu**, yang sangat disarankan). Kemudian, setelah masuk, navigasikan ke menu **Developers**.
 
@@ -61,7 +61,7 @@ Pastikan Anda menempatkannya di kolom yang benar. Jika itu adalah **live token**
 
 Itu dia untuk langkah pertama. Selanjutnya, Anda perlu mengatur webhook listener.
 
-## Mengatur Webhook Listener
+## Mengatur Webhook Listener {#setting-up-the-webhook-listener}
 
 Saat berurusan dengan langganan (subscriptions), Ultimate Multisite perlu mengetahui perubahan status langganan, pembayaran baru yang dilakukan, dan hal-hal serupa.
 

@@ -4,13 +4,13 @@ title: Filtre - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site
+# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 İptal edilen bir GoCardless üyeliği nedeniyle yetim kalmış bir beklemede olan site silinmeden önce tetiklenir.
 
 Silinmeyi önlemek için bu filtreten `false` döndürün.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Ad | Tip | Açıklama |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Silinmeyi önlemek için bu filtreten `false` döndürün.
 | $membership | `\WP_Ultimo\Models\Membership` | İptal edilen üyelik. |
 | $old_status | `string` | İptalden önceki durum. |
 
-### Kullanılmaya Başladığı Versiyon
+### Kullanılmaya Başladığı Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) dosyasının 1086. satırında tanımlanmıştır.

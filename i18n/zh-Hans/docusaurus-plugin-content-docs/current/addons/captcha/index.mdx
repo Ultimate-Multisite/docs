@@ -1,91 +1,210 @@
 ---
 title: 验证码
 sidebar_position: 1
-_i18n_hash: 79f5501c86764d57aa650cbd3509884d
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
 
-# Captcha
+# Captcha {#captcha}
 
-**阻止机器人。保护收入。零配置麻烦。**
+**阻止机器人。保护收入。零配置烦恼。**
 
-在自定义域名的多站点网络中运行？你一定知道痛点：Google reCAPTCHA 和 hCaptcha 需要你在它们的管理控制台注册*每一个域名*。添加新客户站点？更新验证码配置。映射自定义域名？再次更新。永无止境。
+正在运行带自定义域名的多站点网络？你一定懂这种痛苦：Google reCAPTCHA 和 hCaptcha 要求你在它们的管理控制台中注册*每一个域名*。新增一个客户站点？更新验证码配置。映射一个自定义域名？再更新一次。永无止境。
 
-**Ultimate Multisite：Captcha 改变一切。**
+**Ultimate Multisite: Captcha 改变一切。**
 
-## Cap Captcha：自托管保护，轻松上手
+## Cap Captcha：开箱即用的自托管防护 {#cap-captcha-self-hosted-protection-that-just-works}
 
-我们的新 **Cap Captcha** 提供商是多站点网络的游戏规则改变者：
+我们新的 **Cap Captcha** 提供商将彻底改变多站点网络：
 
-* **零配置** — 激活插件即可获得保护。无需 API 密钥、Google 账户、hCaptcha 仪表盘或域名白名单。
-* **自动在每个域名上工作** — 子域、映射域、客户域名——全部即时受保护。
-* **自托管 & 私有** — 你的数据永不离开服务器。完全符合 GDPR，无第三方跟踪。
-* **隐形工作量证明** — 用户在后台解决计算难题。无需点击消防栓，也不必面对令人沮丧的图像网格。
-* **轻量级** — 仅 20KB。不会拖慢你的结账。
+* **零配置** — 激活 addon 即可获得保护。无需 API 密钥、无需 Google 账号、无需 hCaptcha dashboard、无需域名白名单。
+* **自动适用于每个域名** — 子域名、映射域名、客户域名——都会立即受到保护。
+* **自托管且私密** — 你的数据永远不会离开你的服务器。无第三方跟踪，完全符合 GDPR。
+* **隐形工作量证明** — 用户在后台完成计算谜题。无需点击消防栓，也没有令人沮丧的图片网格。
+* **轻量** — 仅 20KB。不会拖慢你的结账流程。
 
-## WooCommerce 卡片测试保护
+## WooCommerce 卡片测试防护 {#woocommerce-card-testing-protection}
 
-卡片测试攻击每年给商家造成数十亿美元的损失。欺诈者使用机器人验证被盗信用卡与您的 WooCommerce 结账——你支付处理费用，他们获得有效卡号。
+卡片测试攻击每年让商家损失数十亿美元。欺诈者使用机器人在你的 WooCommerce 结账流程中验证被盗信用卡——你支付处理费用，他们获得有效卡号。
 
-**我们在最重要的地方提供保护：**
+**我们保护最关键的位置：**
 
-* **Store API 保护** — 阻止针对 `/wp-json/wc/store/v1/checkout` 的机器人攻击，绕过传统表单验证码
-* **PayPal Payments 兼容** — 与 WooCommerce PayPal Payments 无缝配合
-* **实时统计** — 精确查看你阻止了多少攻击
+* **Store API 防护** — 阻止绕过传统表单验证码、攻击 `/wp-json/wc/store/v1/checkout` 的机器人攻击
+* **兼容 PayPal Payments** — 与 WooCommerce PayPal Payments 无缝协作
+* **实时统计** — 准确查看你拦截了多少次攻击
 
-## 仍需要 Google reCAPTCHA 或 hCaptcha？
+## 仍然需要 Google reCAPTCHA 或 hCaptcha？ {#still-need-google-recaptcha-or-hcaptcha}
 
-我们已为你准备好。完整支持：
+我们也支持。完整支持：
 
-* Google reCAPTCHA v2 (Checkbox)
-* Google reCAPTCHA v2 (Invisible)
-* Google reCAPTCHA v3 (Score-based)
-* hCaptcha (Standard)
-* hCaptcha (Invisible)
+* Google reCAPTCHA v2（复选框）
+* Google reCAPTCHA v2（隐形）
+* Google reCAPTCHA v3（基于评分）
+* hCaptcha（标准）
+* hCaptcha（隐形）
 
-随时在网络设置中切换提供商。
+可随时从你的网络设置中切换提供商。
 
-## 为规模而建
+## 为规模化而构建 {#built-for-scale}
 
-* 网络范围设置，支持每站点覆盖
-* 统计仪表盘，用于监控保护
-* 可调节安全级别（快速、中等、最大）
-* 开发者友好，支持可扩展的提供商架构
+* 网络范围设置，支持按站点覆盖
+* 用于监控防护的统计 dashboard
+* 可调整的安全级别（快速、中等、最高）
+* 面向开发者，具备可扩展的提供商架构
 
-## 安装
+## 安装 {#installation}
 
 1. 将 `ultimate-multisite-captcha` 上传到你的 `/wp-content/plugins/` 目录
-2. 网络激活插件
-3. **就这样。你已受到保护。**
+2. 网络激活该 plugin
+3. **就这样。你已经受到保护。**
 
-Cap Captcha 自动激活——无需配置设置，无需输入 API 密钥。整个网络中每个受支持的端点在你激活时即被保护。
+Cap Captcha 会自动激活——无需配置设置，无需输入 API 密钥。激活的那一刻，你整个网络中所有受支持的 endpoint 都会受到保护。
 
-**可选：** 若想使用 Google reCAPTCHA 或 hCaptcha，请导航至 **Ultimate Multisite → Settings → Captcha** 并选择你偏好的提供商。
+**可选：** 如果想改用 Google reCAPTCHA 或 hCaptcha，请前往 **Ultimate Multisite → Settings → Captcha** 并选择你偏好的提供商。
 
-## 常见问题解答
+## 常见问题 {#frequently-asked-questions}
 
-### 我需要配置任何东西吗？
+## 我需要配置任何内容吗？ {#do-i-need-to-configure-anything}
 
-不！Cap Captcha 在你激活插件时会自动启用。整个网络立即受到保护——无需配置设置，无需输入 API 密钥。
+不需要！当你激活 addon 时，Cap Captcha 会自动启用。你的整个网络会立即受到保护——无需配置设置，无需输入 API 密钥。
 
-### 我需要为 Cap Captcha 提供 API 密钥吗？
+## Cap Captcha 需要 API 密钥吗？ {#do-i-need-api-keys-for-cap-captcha}
 
-不。Cap Captcha 完全自托管。无需外部账户，无需域名注册，无需配置麻烦。
+不需要。Cap Captcha 完全自托管。无需外部账号、无需域名注册、没有配置烦恼。
 
-### 这会减慢我的结账速度吗？
+## 这会拖慢我的结账流程吗？ {#will-this-slow-down-my-checkout}
 
-Cap Captcha 仅 20KB，并在后台运行工作量证明挑战。你的客户不会注意到任何延迟。
+Cap Captcha 只有 20KB，并在后台运行工作量证明挑战。你的客户不会察觉到任何延迟。
 
-### 这能防止卡片测试攻击吗？
+## 这能防护卡片测试攻击吗？ {#does-this-protect-against-card-testing-attacks}
 
-是的！与仅保护 HTML 表单的传统验证码不同，我们的 WooCommerce 集成直接挂钩到 Store API，以 API 级别阻止机器人攻击——大多数卡片测试攻击发生的地方。
+可以！不同于只保护 HTML 表单的传统验证码，我们的 WooCommerce 集成会直接挂接到 Store API，在 API 层级阻止机器人攻击——这正是大多数卡片测试攻击发生的位置。
 
-### 我可以在不同站点使用不同的验证码提供商吗？
+## 我可以在不同站点使用不同的验证码提供商吗？ {#can-i-use-different-captcha-providers-on-different-sites}
 
-验证码提供商在网络范围内设置，但你可以根据需要调整难度设置。
+验证码提供商是在网络范围内设置的，但你可以根据需要调整难度设置。
 
-### 这符合 GDPR 吗？
+## 这符合 GDPR 吗？ {#is-this-gdpr-compliant}
 
-Cap Captcha 100% 自托管，未将任何数据发送到外部服务。关于 Google reCAPTCHA 和 hCaptcha，请查看它们各自的隐私政策。
+Cap Captcha 100% 自托管，不会向外部服务发送任何数据。对于 Google reCAPTCHA 和 hCaptcha，请查看它们各自的隐私政策。
+
+## 速率限制 {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 引入了硬性拦截的速率限制器，可保护你的网络免受暴力破解和卡片测试攻击。
+
+### 工作原理 {#how-it-works}
+
+速率限制器会统计验证码保护表面上的每个 GET 和 POST 请求：
+
+* **WordPress 登录 endpoint** — wp-login、注册、找回密码、评论
+* **WooCommerce 结账** — my-account、checkout、pay-for-order
+* **Ultimate Multisite** — checkout、inline-login
+
+当访问者超过速率限制时，该 plugin 会返回：
+
+* **HTTP 429（请求过多）** 状态码
+* **Retry-After** header，指示何时重试
+* **随机化 tarpit 休眠**（默认 1–5 秒，硬性上限 15 秒）以拖慢攻击者
+
+### 配置 {#configuration}
+
+#### Tarpit 计时 {#tarpit-timing}
+
+控制应用于被速率限制请求的随机化延迟：
+
+* **`cap_rate_limit_tarpit_min`** — 最小休眠时长（秒）（默认：1）
+* **`cap_rate_limit_tarpit_max`** — 最大休眠时长（秒）（默认：5，硬性上限 15）
+
+这些设置可在 **Ultimate Multisite → Settings → Captcha** 中使用。
+
+### 可扩展性 {#extensibility}
+
+#### IP 白名单过滤器 {#ip-whitelist-filter}
+
+将受信任的 IP 范围从速率限制中豁免：
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### 预拦截操作 {#pre-block-action}
+
+在发送速率限制拦截之前立即执行自定义逻辑：
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Client IP 检测与受信任代理 {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 引入了抗伪造的客户端 IP 检测。`Captcha_Core::get_client_ip()` 方法现在是以下范围内访问者 IP 归因的唯一事实来源：
+
+* 速率限制桶键
+* Captcha 提供商 `remoteip`（reCAPTCHA、hCaptcha `siteverify`）
+* 统计 IP 哈希
+
+### 信任模型 {#trust-model}
+
+该 plugin 强制执行严格的 IP 信任层级：
+
+1. **REMOTE_ADDR** — 始终受信任（直接对端的 IP）
+2. **CF-Connecting-IP** — 仅在以下情况下被采用：
+   - 直接对端位于当前 Cloudflare IP 范围内
+   - `cap_trust_cloudflare_headers` 已启用（默认：OFF）
+3. **X-Forwarded-For** — 仅在以下情况下被采用：
+   - 直接对端位于你在管理后台配置的受信任代理列表中
+   - 该 header 从右到左解析，跳过受信任/Cloudflare 跳点
+
+### 配置 {#configuration-1}
+
+#### Cloudflare Header 信任 {#cloudflare-header-trust}
+
+启用对 Cloudflare 的 `CF-Connecting-IP` header 的信任：
+
+* **`cap_trust_cloudflare_headers`** — 设置为 ON 以选择加入 `CF-Connecting-IP` 信任
+  - 默认：OFF（已禁用）
+  - 该 plugin 随附内置的 Cloudflare CIDR 快照
+  - CIDR 范围每周通过 wp-cron 刷新
+  - 如果刷新失败，则使用内置回退
+
+#### 受信任代理配置 {#trusted-proxy-configuration}
+
+定义你的前端代理和负载均衡器：
+
+* **`cap_trusted_proxies`** — CIDR 或裸 IP 的文本区域（每行一个）
+  - 允许注释（以 `#` 开头的行）
+  - 如果没有此设置，即使速率限制器已启用，`X-Forwarded-For` 也会被忽略
+  - 示例：
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### 首次启用自动检测 {#first-enable-auto-detection}
+
+当你首次启用速率限制器时，该 plugin 会检测你可能的 Cloudflare 和代理状态，并显示一个一键“应用检测到的设置”的管理通知。
+
+* 该 plugin **绝不会覆盖**你已保存的值
+* 如果后续流量表明你的配置不再符合实际情况（例如，Cloudflare 更改了 CIDR 范围），会显示一个不可关闭的不匹配通知，并给出推荐更新
+
+### 为什么这很重要 {#why-this-matters}
+
+严格的 IP 信任模型可以关闭一个关键的欺骗向量：直接发往源服务器、携带伪造 `CF-Connecting-IP` header 的请求，以前会按伪造 IP 而不是真实对端进行分桶。这对于以下方面尤其重要：
+
+* **速率限制** — 攻击者无法通过伪造 IP 来绕过限制
+* **统计** — 你的攻击指标反映真实访客 IP，而不是伪造的 IP
+* **Captcha 验证** — 提供商会收到正确的访客 IP，用于风险评估

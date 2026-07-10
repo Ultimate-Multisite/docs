@@ -4,11 +4,11 @@ title: فلٹر - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Filter: wu_mt_url_replacements
+# Filter: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 URL کی تبدیلی کے جوڑوں کو فلٹر کرتا ہے۔
 
-## پیرامیٹرز
+## پیرامیٹرز {#parameters}
 
 | Name | Type | تفصیل |
 |------|------|-------------|
@@ -17,9 +17,9 @@ URL کی تبدیلی کے جوڑوں کو فلٹر کرتا ہے۔
 | $new_url | `string` | نیا URL (New URL)۔ |
 | $blog_id | `int` | بلاگ ID (Blog ID)۔ |
 
-### تعارف
+### تعارف {#since}
 
 - 1.0.0
-### ماخذ
+### ماخذ {#source}
 
 [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) میں لائن 151 پر بیان کیا گیا ہے۔

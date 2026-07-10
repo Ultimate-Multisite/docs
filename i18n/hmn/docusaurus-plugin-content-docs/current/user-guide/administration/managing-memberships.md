@@ -3,7 +3,7 @@ title: Pangpamahandaya mga Miyembro
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# ការគ្រប់គ្រងសមាជិកភាព (Managing Memberships)
+# ការគ្រប់គ្រងសមាជិកភាព (Managing Memberships) {#managing-memberships}
 
 នៅក្នុង Ultimate Multisite អ្នកអាចគ្រប់គ្រងសមាជិកភាព និងចូលប្រើការជាវទាំងអស់នៅលើបណ្តាញរបស់អ្នក។ សូមពិនិត្យមើល និងកែសម្រួលព័ត៌មានលម្អិតនៃការជាវនីមួយៗ ដូចជាផែនការ (plans) និងផលិតផល (products) ចំនួនគេហទំព័រ (sites) ចំនួនទឹកប្រាក់សម្រាប់ការគិតថ្លៃ និងភាពញឹកញាប់នៃការបង់ប្រាក់ ប្រវត្តិការបង់ប្រាក់ និងពេលវេលាដែលបានកត់ត្រា។
 

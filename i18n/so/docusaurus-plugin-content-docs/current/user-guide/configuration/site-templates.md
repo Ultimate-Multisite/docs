@@ -3,13 +3,13 @@ title: Qaab-dhismeedyada goobta
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**Fadlan: Qoraal: Tusaale:**_ **Maqaalkani wuxuu la xiriira Ultimate Multisite version 2.x. Haddii aad isticmaalayso version 1.x,** _**eeg qoraalka kan.**_
 
 Ujeeddadeenna marka aan abuurno shabakad heer sare ah oo loo yaqaan Ultimate Multisite waa inaan inta badan hababka fudud ugu automatirno, halka ay siinno macaamihelkeena fursad iyo dooro kala duwan si ay u doortaan markay ay samaynayaan website-yada. Midda fudud ee lagu gaari karo isku-dhafkaas waa in la isticmaalo astaanta Site Templates ee Ultimate Multisite.
 
-## Maxay tahay Site Template?
+## Maxay tahay Site Template? {#what-is-a-site-template}
 
 Sida magaca uu qeexayo, Site Template waa website asalka ah (boilerplate site) oo loo isticmaali karo sidii aasaas marka la abuuro websites cusub oo ku jira shabakaddaada.
 
@@ -17,7 +17,7 @@ Tani waxay ka dhigan tahay inaad samayn karto website aasaasi ah, aad u furto pl
 
 Waa wax wanaagsan, laakiin sidee ayaan ku abuuri karaa Site Template cusub? Waa inta fudud ay noqon karto.
 
-## Abuurista iyo Wax-ka-beddelka Site Template cusub
+## Abuurista iyo Wax-ka-beddelka Site Template cusub {#creating-and-editing-a-new-site-template}
 
 Site Templates waa websites caadi ah oo ku jira shabakaddaada. Si aad u samayso template cusub, si fudud ugu tag **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Form-ka hoose, waxaad arki doontid badhanka **Copy Site** toggle switch. Tani wa
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Isbeddelka waxyaabaha ku jira Site Template
+### Isbeddelka waxyaabaha ku jira Site Template {#customizing-the-contents-of-a-site-template}
 
 Si aad u beddesho site template-kaaga, si fudud u tag dashboard panel-kiisa oo samee isbeddellada aad u baahan tahay. Waxaad samayn kartaa posts cusub, pages, plugin-yo firfircoon (activate), iyo in aad beddesho theme-ka socda. Waxaad sidoo kale awood u leedahay inaad tagto Customizer oo aad wax ka beddesho dhammaan doorashada isbeddelka ee jira.
 
@@ -43,11 +43,11 @@ Si aad u beddesho site template-kaaga, si fudud u tag dashboard panel-kiisa oo s
 
 Dhammaan macluumaadkaas ayaa la koobaya marka macaamiil cusub oo ku salaysan Site Template-kan sameeyaan.
 
-### Doorashooyinka Sare (Advanced Options)
+### Doorashooyinka Sare (Advanced Options) {#advanced-options}
 
 Haddii aad aqoon u leedahay waxyaabaha coding-ka gaarka ah, waxaad isticmaali kartaa Search and Replace API-ga aan lahayn si uu si toos ah u beddelo macluumaadka website-ka cusub ka dib markii la sameeyay. Tani waxay faa'iido leedahay waxyaabaha sida badalid magacyada shirkadaha ee bogga About, badalid email-ka la xiriira la xiriirka (Contact page), iwm.
 
-### Isticmaalka Site Templates
+### Isticmaalka Site Templates {#using-site-templates}
 
 Haddii aad samaysay qaabab badan oo Site Template ah oo leh naqshado, themes, iyo settings kala duwan. Sidee ayay u noqdaan kuwo faa'iido ee shirkaddaada hadda?
 
@@ -59,7 +59,7 @@ Guud ahaan, waxaa jira laba hab oo aad isticmaali karto hadda (si aan isku mar u
 
   * In la oggolaado macaamiishaada inay is-dooran si ay u dooranayaan site templates-kaas markii ay ku geliyaan (sign-up).
 
-#### Habka 1: Isku xir Site Template
+#### Habka 1: Isku xir Site Template {#mode-1-assign-site-template}
 
 Kan habka, arran mode-ka, macaamihiintu ma lahayn marka macmiiluhu ay abuura akoontii, laakiin waxaad xisaabta ku qornaysaa nooca template-ka (template) ee aad rabto inuu isticmaalo Qaybahaaga (Plans).
 
@@ -71,7 +71,7 @@ Tani waxay ku qaadi doontaa bogga **Edit Product**. Hooska qaybta **Product Opti
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Dooro Site Template-ka La heli karo
+#### Mode 2: Dooro Site Template-ka La heli karo {#mode-2-choose-available-site-template}
 
 Arrintaas, waxaad si macaamiisha u siinaysaa doorasho inta ay ku bilaabaan habka isdiiwaangelinta (sign-up process). Waxay awoodaan inay ka doorato site templates kala duwan oo aad qorshaynay iyadoo la isticmaalayo settings-ka macdalkaaga. Waxaad leedahay fursad inaad xaddiddo inta ay dooran karaan site template-ka adiga kuu soo dooday hoos ka dhaca product-ka la dooratay. Tani waxay kuu oggolaanaysaa inaad hesho kooxaha kala duwan ee site templates oo ku jira macdalka kasta, taasoo ah mid aad u habboon in la muujiyo waxyaabaha iyo astaamaha kala duwan ee product-ka qiimaha badan.
 
@@ -79,7 +79,7 @@ Markii **Edit Product** bogga. Hooska **Product Options** qaybta, **Site templat
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on Checkout form
+### Default Mode: Site template selection on Checkout form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Haddii aad rabto in dhammaan site templates-kaaga ay si buuxda u heli karaan inta lagu jiro diiwaangelinta, ama ma doorbida inaad wax dheeri ah samayso oo aad qorsheynayso site templates-ka hoos ka dhaca qabow kasta oo aad samaynayso. Markaas waxaad si fudud u qeexaysaa doorka site template-ka hoos ka dambeeya **Checkout Form**-kaaga. Si aad u samayso, tag **Ultimate Multisite > Checkout Forms** oo riix **Edit** hoos ka dambeeya form-ka aad rabto inaad hagaajiso.
 
@@ -93,29 +93,29 @@ Frontend-ka, macaamiishu waxay arkaan doorashada template-ka inta lagu jiro diiw
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Doorashada Template-yashaal (Site Template Options)
+### Doorashada Template-yashaal (Site Template Options) {#site-template-options}
 
 Waxaa jira fursado kale oo template-yo ah oo aad shidid ama ka hor istaagto iyadoo la isticmaalayo settings-ka Ultimate Multisite.
 
 ![Doorashada template-yashaalka ee settings-ka Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Oggolaanshaha Isbeddelka Template-yashaalka (Allow Template Switching)
+#### Oggolaanshaha Isbeddelka Template-yashaalka (Allow Template Switching) {#allow-template-switching}
 
 In kordhinta fursaddaani, macaamiishaadu waxay heli doonaan inay isbeddelaan template-ka ay dooratay inta lagu jiro habka kaydinta (sign-up process) ka dib markii la abuuro account-ka iyo website-ka. Tani waxay macfan tahay dhinaca macaamiisha sababtoo ah waxay u oggolaaneysaa inay dib u doortaan template haddii ay dambe helaan in doorashadii hore aysan ahayn midka ugu habboon baahiyadooda gaarka ah.
 
-#### Oggolaanshaha Isticmaalka Template-yashaalka ee Macaamiisha (Allow Users to use their Site as templates)
+#### Oggolaanshaha Isticmaalka Template-yashaalka ee Macaamiisha (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Maadaama isticmaalayaasha subsite-yashaadu ay waqti ku bixiyaan dhisidda iyo qaabdhismeedka website-yashooda, waxay rabayaan inay nuugaan (clone) oo ay isticmaalaan mid ka mid ah template-yashaalka ee la heli karo marka ay abuuraan subsite kale oo ku jira shirkaddaada. Fursaddaani waxay u oggolaaneysaa inay galaan haddii ay rabtaas.
 
-#### Nuugista Media-da Marka La Duubayo Template-yashaalka (Copy Media on Template Duplication)
+#### Nuugista Media-da Marka La Duubayo Template-yashaalka (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Marka aad hubiso fursaddaasi, waxaad nuugaysaa media-da lagu soo galiyay template-ka website-ka cusub ee la abuuro. Tani waxay ka beddeli kartaa qorshe kasta oo ka mid ah qorshayaashii (plans).
 
-#### **Ka hortagga Baadhista Website Template-yashaalka (Prevent Search Engines from indexing Site Templates)**
+#### **Ka hortagga Baadhista Website Template-yashaalka (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Template-yashaalka website-ka sida loo wada hadlayay maqaalkani waa qaab aasaasi ah (boilerplate) laakiin weli waxay qayb ka yihiin shirkaddaada, taas oo macnaheedu yahay in ay weli ku heli karaan baahiisa raadinta (search engines). Fursaddaani waxay kuu oggolaaneysaa inaad qabto template-yashaalka si baadhista website-ka ay u samayn karaan.
 
-## Nuugista Template-yashaalka Website-ka iyadoo la isticmaalayo auto search-and-replace (Pre-populating Site Templates with auto search-and-replace)
+## Nuugista Template-yashaalka Website-ka iyadoo la isticmaalayo auto search-and-replace (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Midowga ugu xooggan oo ka mid ah astaamaha awoodda badan ee Ultimate Multisite waa awoodda inaad ku darii qoraal, midab, iyo meelo la dooran karo (select fields) bixinta foomka diiwaangelinta. Marka aan helo macluumaadkaas, waxaan isticmaali karnaa si uu u buuxiyo qaybo ka mid ah qaab-dhismeedka (template) ee aad dooratay. Markaana website cusub la soo bandhigo, Ultimate Multisite wuxuu badbaadin doonaa meelaha ay ku jira placeholders-ka macluumaadka dhabta ah ee lagu geli jiray diiwaangelinta.
 
@@ -135,7 +135,7 @@ Ultimate Multisite wuxuu badbaadin doonaa placeholders-ka macluumaadka ay bixiya
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Xallinta dhibaatada "qaab-dhismeed buuxa oo placeholders ah"
+### Xallinta dhibaatada "qaab-dhismeed buuxa oo placeholders ah" {#solving-the-template-full-of-placeholders-problem}
 
 Waxaan ku qabannaa dhammaan kanas, laakiin waxaan la kulanno dhibaato xun: hadda qaababka website-kaaga - kuwa ay macmiiladu booqan karaan - waxay buuxaan placeholders-ka quruxdarrada oo aan si weyn u sheegin wax.
 

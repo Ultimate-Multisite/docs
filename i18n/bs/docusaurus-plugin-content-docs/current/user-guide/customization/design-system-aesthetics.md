@@ -3,11 +3,11 @@ title: Vještina estetike dizajnerskog sistema
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Vještina estetike dizajnerskog sistema
+# Vještina estetike dizajnerskog sistema {#design-system-aesthetics-skill}
 
 **Vještina estetike dizajnerskog sistema** je vođeni pristup usavršavanju vizuelnog identiteta vašeg sajta. Pomaže vam da donosite dosljedne odluke o tipografiji, boji, razmaku i pokretnim elementima (motion tokens) koji definišu vaš dizajnerski sistem.
 
-## Šta je estetika dizajnerskog sistema?
+## Šta je estetika dizajnerskog sistema? {#what-is-design-system-aesthetics}
 
 Estetika dizajnerskog sistema je strukturirana vještina koja pokriva:
 
@@ -20,9 +20,9 @@ Estetika dizajnerskog sistema je strukturirana vještina koja pokriva:
 
 Ove odluke se pohranjuju u `theme.json` datoteku vaše teme, stvarajući kohezivan vizualni sistem.
 
-## Zašto koristiti estetiku dizajnerskog sistema?
+## Zašto koristiti estetiku dizajnerskog sistema? {#why-use-design-system-aesthetics}
 
-### Dosljednost (Consistency)
+### Dosljednost (Consistency) {#consistency}
 
 Dizajnerski sistem osigurava:
 
@@ -31,7 +31,7 @@ Dizajnerski sistem osigurava:
 - Da razmak prati predvidljiv obrazac
 - Da animacije djeluju ujednačeno
 
-### Efikasnost (Efficiency)
+### Efikasnost (Efficiency) {#efficiency}
 
 Umjesto da donosite dizajnerske odluke stranica po stranicu, vi:
 
@@ -39,7 +39,7 @@ Umjesto da donosite dizajnerske odluke stranica po stranicu, vi:
 - Primjenjujete ih svugdje
 - Ažurirate globalno promjenom samo jedne vrijednosti
 
-### Fleksibilnost (Flexibility)
+### Fleksibilnost (Flexibility) {#flexibility}
 
 Možete:
 
@@ -47,9 +47,9 @@ Možete:
 - Eksperimentisati sa različitim estetikama
 - Održavati dosljednost brenda dok se razvijate
 
-## Pokretanje vještine estetike dizajnerskog sistema
+## Pokretanje vještine estetike dizajnerskog sistema {#triggering-the-design-system-aesthetics-skill}
 
-### Ručna aktivacija
+### Ručna aktivacija {#manual-activation}
 
 Možete pokrenuti vještinu u bilo kojem trenutku:
 
@@ -69,7 +69,7 @@ ili
 "Vodi me kroz odluke o dizajnerskom sistemu"
 ```
 
-### Automatski prijedlozi
+### Automatski prijedlozi {#automatic-suggestions}
 
 Agent može predložiti korištenje vještine kada:
 
@@ -78,9 +78,9 @@ Agent može predložiti korištenje vještine kada:
 - Želite poboljšati vizualnu dosljednost
 - Pripremajate lansiranje sajta
 
-## Proces estetike dizajnerskog sistema
+## Proces estetike dizajnerskog sistema {#the-design-system-aesthetics-process}
 
-### Korak 1: Tipografija
+### Korak 1: Tipografija {#step-1-typography}
 
 Agent pita o vašim izborima fontova:
 
@@ -110,7 +110,7 @@ Zatim agent definiše:
 - **Skala težine**: Težine fontova (regular, medium, bold, itd.)
 - **Linijski razmak**: Razmak između redova radi čitljivosti
 
-### Korak 2: Paleta boja
+### Korak 2: Paleta boja {#step-2-color-palette}
 
 ```
 Definisati ćemo vašu paletu boja.
@@ -140,7 +140,7 @@ Agent kreira kompletnu paletu koja uključuje:
 - Semantične boje (uspjeh, upozorenje, greška)
 - Stati za hover i aktivno stanje
 
-### Korak 3: Razmak
+### Korak 3: Razmak {#step-3-spacing}
 
 ```
 Koliko "dišnog prostora" želite?
@@ -162,7 +162,7 @@ Agent definiše tokens za razmak:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Specifične vrijednosti za padding, margin, gap
 
-### Korak 4: Granice i sjenke
+### Korak 4: Granice i sjenke {#step-4-borders-and-shadows}
 
 ```
 Vizuelna dubina i definicija:
@@ -185,7 +185,7 @@ Agent kreira:
 - Tokens za sjenke za nivoe visine
 - Tokens za širinu granica
 
-### Korak 5: Pokret i animacija
+### Korak 5: Pokret i animacija {#step-5-motion-and-animation}
 
 ```
 Kako bi vaš sajt trebao djelovati kada je interaktivan?
@@ -207,9 +207,9 @@ Agent definiše:
 - Funkcije za smanjenje (ease-in, ease-out, ease-in-out)
 - Keyframe-ove animacije za uobičajene interakcije
 
-## Primjena estetike dizajnerskog sistema
+## Primjena estetike dizajnerskog sistema {#applying-design-system-aesthetics}
 
-### Automatska primjena
+### Automatska primjena {#automatic-application}
 
 Nakon što završite vještinu, agent:
 
@@ -218,7 +218,7 @@ Nakon što završite vještinu, agent:
 3. Regeneriše stilove blokova kako bi odgovarali novom sistemu
 4. Aktivira ažuriranu temu
 
-### Ručna primjena
+### Ručna primjena {#manual-application}
 
 Možete direktno uređivati `theme.json`:
 
@@ -257,9 +257,9 @@ Možete direktno uređivati `theme.json`:
 }
 ```
 
-## Pregled dizajnerskog sistema
+## Pregled dizajnerskog sistema {#viewing-your-design-system}
 
-### Pitajte agenta
+### Pitajte agenta {#ask-the-agent}
 
 ```
 "Prikaži mi svoj dizajnerski sistem"
@@ -273,13 +273,13 @@ ili
 
 Agent će prikazati vašu tipografiju, boje, razmak i druge tokens.
 
-### Pregled theme.json
+### Pregled theme.json {#view-themejson}
 
 Otvorite `/wp-content/themes/[theme-name]/theme.json` u tekstualnom editoru da vidite sirove definicije tokens.
 
-## Ažuriranje dizajnerskog sistema
+## Ažuriranje dizajnerskog sistema {#updating-your-design-system}
 
-### Brza ažuriranja
+### Brza ažuriranja {#quick-updates}
 
 Pitajte agenta za specifične promjene:
 
@@ -299,7 +299,7 @@ ili
 "Promijeni font naslova u serif"
 ```
 
-### Potpuni redizajn
+### Potpuni redizajn {#full-redesign}
 
 Ponovo pokrenite vještinu estetike dizajnerskog sistema:
 
@@ -309,7 +309,7 @@ Ponovo pokrenite vještinu estetike dizajnerskog sistema:
 
 O će vas ponovo voditi kroz sve odluke, počevši od vaših trenutnih vrijednosti.
 
-### Parcijalna ažuriranja
+### Parcijalna ažuriranja {#partial-updates}
 
 Ažurirajte specifične aspekte:
 
@@ -317,15 +317,15 @@ Ažurirajte specifične aspekte:
 "Ažuriraj samo paletu boja, sve ostalo ostavi"
 ```
 
-## Najbolje prakse dizajnerskog sistema
+## Najbolje prakse dizajnerskog sistema {#design-system-best-practices}
 
-### Dosljednost
+### Dosljednost {#consistency-1}
 
 - Koristite iste tokens svugdje
 - Ne kreirajte boje ili veličine ad hoc
 - Referencirajte tokens umjesto hardkodiranja vrijednosti
 
-### Imenovanje
+### Imenovanje {#naming}
 
 Koristite jasna, semantička imena:
 
@@ -335,7 +335,7 @@ Koristite jasna, semantička imena:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabilnost
+### Skalabilnost {#scalability}
 
 Dizajnirajte sistem da raste:
 
@@ -343,7 +343,7 @@ Dizajnirajte sistem da raste:
 - Kreirajte skale (xs, sm, md, lg, xl) umjesto proizvoljnih vrijednosti
 - Planirajte buduće dodavke
 
-### Dokumentacija
+### Dokumentacija {#documentation}
 
 Dokumentujte svoj dizajnerski sistem:
 
@@ -351,37 +351,37 @@ Dokumentujte svoj dizajnerski sistem:
 - Kada koristiti svaki token
 - Izuzeci i rubni slučajevi
 
-## Uobičajeni obrasci dizajnerskog sistema
+## Uobičajeni obrasci dizajnerskog sistema {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 - Sans-serif tipografija (Inter, Helvetica)
 - Ograničena paleta boja (2-3 boje)
 - Generozan razmak
 - Suptilne sjenke
 - Glatke, brze animacije
 
-### Topao i prijateljski
+### Topao i prijateljski {#warm-and-friendly}
 - Mješavina serif i sans-serif
 - Topla paleta boja (narandžasta, topla siva)
 - Zaobljene ivice
 - Mekane sjenke
 - Igrivo animacije
 
-### Profesionalni korporativni
+### Profesionalni korporativni {#professional-corporate}
 - Čist sans-serif (Roboto, Open Sans)
 - Neutralna paleta sa akcentnom bojom
 - Strukturiran razmak
 - Minimalne sjenke
 - Suptilne tranzicije
 
-### Kreativan i hrabar
+### Kreativan i hrabar {#creative-and-bold}
 - Distinktivna tipografija
 - Smeđa paleta boja
 - Varijabilan razmak
 - Snažne sjenke
 - Primjetne animacije
 
-## Rješavanje problema
+## Rješavanje problema {#troubleshooting}
 
 **Promjene dizajnerskog sistema se ne prikazuju**
 - Obrišite keš u pregledniku
@@ -399,7 +399,7 @@ Dokumentujte svoj dizajnerski sistem:
 - Ručno uredite `theme.json` na prethodne vrijednosti
 - Ponovo pokrenite vještinu sa drugačijim izborima
 
-## Sljedeći koraci
+## Sljedeći koraci {#next-steps}
 
 Nakon definisanja dizajnerskog sistema:
 

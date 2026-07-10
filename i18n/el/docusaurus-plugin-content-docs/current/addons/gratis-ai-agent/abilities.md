@@ -3,7 +3,7 @@ title: Αναφορά Ικαν οτήτων
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Αναφορά Ικανουσιών
+# Αναφορά Ικανουσιών {#abilities-reference}
 
 Οι ικανότητες είναι οι ατομικές ενέργειες που μπορεί να ενεργοποιήσει το Gratis AI Agent στην εγκατάστασή σας WordPress. Κάλλη ικανότητα είναι μια καταχωρημένη PHP κλάση που αποκαλύπτει ένα JSON schema — ο agent διαβάζει αυτό το schema κατά τη runtime για να καταλάβει ποιες παραμέτρους απαιτούνται και τι επιστρέφει η ικανότητα.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Custom Post Types (Ειδικοί Τύποι Σελίδων)
+## Custom Post Types (Ειδικοί Τύποι Σελίδων) {#custom-post-types}
 
 Αυτές οι ικανότητες διαχειρίζονται τους ειδικούς τύπους σελίδων (CPTs) που καταχωρούνται μέσω του agent. Οι καταχωρήσεις αποθηκεύονται στην αντλία επιλογών (options table) του WordPress, οπότε παραμένουν ακόμα και μετά την απενεργοποίηση και επαναενεργοποίηση του plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Καταχωρεί έναν νέο ειδικό τύπο σελίδας.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Επιστρέφει όλους τους τύπους ανάρτησης που έχουν καταχωρηθεί από τον agent.
 
@@ -71,7 +71,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 }
 ```
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Αποрегистрирует ένα προσαρμοσμένο post type που καταχωρήθηκε από τον agent. Τα υπάρχοντα bàiς αυτού παραμένουν στη βάση δεδομένων αλλά δεν είναι πλέον προσβάσιμο μέσω του post type.
 
@@ -85,11 +85,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Custom Taxonomies (Προσαρμοσμένες Ταξινόμημα)
+## Custom Taxonomies (Προσαρμοσμένες Ταξινόμημα) {#custom-taxonomies}
 
 Αυτές οι δυνατότητες διαχειρίζονται τα προσαρμοσμένα ταξινόμημα. Όπως και τα CPTs, οι καταχωρήσεις των ταξινόμησης διατηρούνται.
 
-### `register_taxonomy` (Εντοπισμός Ταξινόμησης)
+### `register_taxonomy` (Εντοπισμός Ταξινόμησης) {#registertaxonomy}
 
 Καταχωρεί ένα νέο προσαρμοσμένο taxonomy.
 
@@ -119,7 +119,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Επιστροφή** `{ "success": true, "slug": "project-category" }`
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Επιστρέφει όλες τις προσαρμοσμένες ταξινόμησης (custom taxonomies) που έχουν καταχωρηθεί από τον agent.
 
@@ -142,7 +142,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Ανατοχίζει μια προσαρμοσμένη ταξινόμηση που καταχωρήθηκε από τον agent.
 
@@ -156,11 +156,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Οι δυνατότητες του Design System τροποποιούν την οπτική παρουσίαση του WordPress site — από το custom CSS μέχρι τα block patterns και το logo του site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Προσθέτει CSS στο `<head>` του site μέσω της συνάρτησης `wp_add_inline_style`. Το CSS αποθηκεύεται στην επιλογή (option) `gratis_ai_agent_custom_css` και αφαιρείται καθαρά όταν η δυνατότητα επαναφέρεται.
 
@@ -186,7 +186,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Εντοπίζει ένα επαναχρησιμοποιούμενο μοτίβο block στην βιβλιοθήκη patterns του WordPress.
 
@@ -205,7 +205,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Εμφανίζει όλα τα block patterns που έχουν καταχωρηθεί από τον agent.
 
@@ -227,7 +227,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Συμπυρώνει το logo του WordPress σε ένα δεδομένο attachment ID ή μια απομακρυσμένη URL εικόνας. Όταν παρέχεται URL, η εικόνα κατεβάζεται και εισάγεται στη Media Library.
 
@@ -244,7 +244,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Εφαρμόζει ένα προκαθορισμένο πακέτο χρώματος/τυπογραφίας σε το `theme.json` (ή `global-styles`) του ενεργού θέματος. Τα presets είναι συνδυαστικά πακέτα που διατηρούνται από την ομάδα Gratis AI Agent.
 
@@ -269,11 +269,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Global Styles
+## Global Styles {#global-styles}
 
 Οι δυνατότητες Global Styles διαβάζουν και γράφουν τιμές στο `theme.json` μέσω της WordPress Global Styles API, επηρεάζοντας όλα τα blocks και τα templates σε όλο το site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Επιστρέφει τη σημερινή ρύθμιση των global styles.
 
@@ -287,7 +287,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Ενημερώνει μία ή περισσότερες τιμές στις ρυθμίσεις των παγκόσμιων στυλ.
 
@@ -314,7 +314,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Επαναφέρει όλες τις αλλαγές των παγκόσμιων στυλ που εφαρμόστηκαν από τον agent, επαναφέρον τα προεπιλεγμένα του theme.
 
@@ -324,11 +324,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Μενού Πλοήγησης (Navigation Menus)
+## Μενού Πλοήγησης (Navigation Menus) {#navigation-menus}
 
 Οι δυνατότητες των Navigation Menu δημιουργούν και διαχειρίζονται τα WordPress nav menus και τα στοιχεία τους.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Δημιουργεί ένα νέο WordPress navigation menu.
 
@@ -341,7 +341,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Επιστρέφει** `{ "success": true, "menu_id": 7 }`
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Αναθέτει νέο όνομα σε ένα μενού ή το επανασύρει σε μια θέση του θέματος.
 
@@ -357,7 +357,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Προσθέτει ένα αντικείμενο σε ένα υπάρχον μενού πλοήγησης.
 
@@ -377,7 +377,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Αφαιρεί ένα αντικείμενο από ένα μενού πλοήγησης.
 
@@ -391,7 +391,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Διαສະθέτει όλα τα μενού πλοήγησης WordPress, συμπεριλαμβανομένων των σχετικών τους θέσεων του θέματος.
 
@@ -399,11 +399,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Επιστροφή**
 
-## Διαχείριση Επιλογών (Options Management)
+## Διαχείριση Επιλογών (Options Management) {#options-management}
 
 Οι δυνατότητες επιλογών σας permettent να διαβάζετε και να γράφετε τις επιλογές του WordPress μέσω των συναρτήσεων `get_option` / `update_option`. Ένα ενσωματωμένο φίλτρο ασφαλείας αποτρέπει την τυχαία τροποποίηση κρίσιμων ρυθμίσεων.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Διαβάζει μια επιλογή του WordPress.
 
@@ -419,7 +419,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Γράφει μια επιλογή του WordPress.
 
@@ -437,7 +437,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Διαγράφει μια επιλογή του WordPress.
 
@@ -451,7 +451,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 **Επιστρέφει** `{ "success": true, "option_name": "my_custom_option" }`
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Εμφανίζει τις επιλογές του WordPress που ταιριάζουν σε ένα μοτίβο (pattern).
 
@@ -475,11 +475,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## Διαχείριση Περιεχομένου (Content Management)
+## Διαχείριση Περιεχομένου (Content Management) {#content-management}
 
 Οι δυνατότητες διαχείρισης περιεχομένου δημιουργούν και επεξεργάζονται WordPress posts και pages. Επιστρέφονται τα ID των posts για να αναφέρονται σε αυτά τα περιεχόμενα στα επόμενα βήματα των σχεδίων με πολλαπλές ικανότητες (multi-ability plans).
 
-### `create_post`
+### `create_post` {#createpost}
 
 Δημιουργεί ένα νέο WordPress post, page ή entry ενός custom post type.
 
@@ -514,7 +514,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Ενημερώνει μια υπάρχουσα ανάρτηση ή σελίδα στο WordPress.
 
@@ -544,7 +544,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Δημιουργεί πολλαπλούς posts με μία μόνο κλήση (ability call), μειώνοντας τις διαδρομές επικοινωνίας κατά τη διάρκεια της δημιουργίας του site ή όταν κάνεις bulk import περιεχομένου. Τα posts δημιουργούνται στη σειρά· αν ένα αποτύχει, συνεχίζονται τα υπόλοιπα και η αποτυχία αναφέρεται στην ανάρτηση αποτελεσμάτων (results array).
 

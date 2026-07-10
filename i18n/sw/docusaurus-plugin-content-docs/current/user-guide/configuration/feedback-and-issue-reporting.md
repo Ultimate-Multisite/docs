@@ -3,11 +3,11 @@ title: Maoni ya Wateja na Kuripoti Matatizo
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kutoa Maoni na Kuripoti Matatizo ya Mtumiaji
+# Kutoa Maoni na Kuripoti Matatizo ya Mtumiaji {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 inatangulia mfumo uliojengwa wa kutoa maoni na kuripoti matatizo ambao unaruhusu watumiaji wa mwisho kutambua majibu ambayo hayasaidii na kuripoti matatizo moja kwa moja kutoka kwenye interface ya chat. Mfumo huu unajumuisha usimamizi wa idhini (consent management), amri ya kuripoti kiotomatiki, na kupanga matatizo kwa msaada wa AI (AI-assisted triage) upande wa backend.
 
-## Kitufe cha Kidole Chinyuma (Thumbs-Down Button)
+## Kitufe cha Kidole Chinyuma (Thumbs-Down Button) {#thumbs-down-button}
 
 Kila ujumbe uliotolewa na msaidizi wa AI unadhihirisha kitufe cha **kidole chinyuma** (👎). Mtumiaji anapobonyeza kitufe hiki, anaweza kutambua jibu kama lisisaidii au si sahihi.
 
@@ -15,7 +15,7 @@ Kila ujumbe uliotolewa na msaidizi wa AI unadhihirisha kitufe cha **kidole chiny
 - Kubonyeza kitufe hiki kunafungua **Feedback Consent Modal**.
 - Maoni yanahusishwa na mnyororo wa mazungumzo na ujumbe mahususi.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Mwenyeji anapobonyeza kitufe cha kidole chinyuma, modal ya idhini inaonekana kabla ya data yoyote kutumwa. Modal hii:
 
@@ -26,13 +26,13 @@ Mwenyeji anapobonyeza kitufe cha kidole chinyuma, modal ya idhini inaonekana kab
 
 Hakuna maoni yanayorekodiwa mpaka mtumiaji atathibitisha waziwazi.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Mwishoni mwa mazungumzo, msaidizi anaweza kuonyesha **auto-prompt feedback banner** — ujumbe usio na usumbufu unaouliza kama kikao hicho kilikuwa kikiwasaidia.
 
 Banner hii inaonekana kiotomatiki kulingana na urefu na matokeo ya mazungumzo. Inahusishwa na mtiririko huo wa maoni kama kitufe cha kidole chinyuma. Watumiaji wanaweza kufuta banner bila kutoa maoni.
 
-## Amri ya Slash /report-issue
+## Amri ya Slash /report-issue {#report-issue-slash-command}
 
 Watumiaji wanaweza kuanzisha mtiririko wa maoni moja kwa moja kwa kuandika `/report-issue` kwenye sehemu ya kuingiza chat. Amri hii:
 
@@ -42,7 +42,7 @@ Watumiaji wanaweza kuanzisha mtiririko wa maoni moja kwa moja kwa kuandika `/rep
 
 Amri ya `/report-issue` inapatikana katika mitindo yote ya chat (inline, floating widget, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Maoni yaliyowasilishwa yanatumiwa kwenye tabaka la AI triage ambalo:
 

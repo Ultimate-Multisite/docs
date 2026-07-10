@@ -1,9 +1,9 @@
 ---
 title: API എൻഡ്‌പോയിന്റ് രജിസ്റ്റർ ചെയ്യുക
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ultimate Multisite Register API എൻഡ്‌പോയിന്റ്
+# Ultimate Multisite Register API എൻഡ്‌പോയിന്റ് {#the-ultimate-multisite-register-api-endpoint}
 
 ഈ ട്യൂട്ടോറിയലിൽ, നിങ്ങളുടെ നെറ്റ്‌വർക്കിലെ ഒരു പുതിയ കസ്റ്റമറുടെ മുഴുവൻ ഓൺബോർഡിംഗ് പ്രക്രിയ സൃഷ്ടിക്കാൻ Ultimate Multisite /register API എൻഡ്‌പോയിന്റ് എങ്ങനെ ഉപയോഗിക്കാമെന്നും Zapier ഉപയോഗിച്ച് ഇത് എങ്ങനെ ചെയ്യാമെന്നും നിങ്ങൾ പഠിക്കും.
 
@@ -19,16 +19,21 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 ഈ പ്രക്രിയയ്ക്ക്, നിങ്ങൾക്ക് API ക്രെഡൻഷ്യലുകൾ ആവശ്യമാണ്. അവ ലഭിക്കാൻ, നിങ്ങളുടെ നെറ്റ്‌വർക്ക് അഡ്മിൻ പാനലിലേക്ക് പോയി, **Ultimate Multisite > Settings** > **API & Webhooks** എന്നതിലേക്ക് നാവിഗേറ്റ് ചെയ്യുക, API Settings വിഭാഗം കണ്ടെത്തുക.
 
-![Ultimate Multisite-ലെ API Settings വിഭാഗം](/img/config/settings-api.png)  
+![Ultimate Multisite-ലെ API Settings വിഭാഗം](/img/config/settings-api.png)
+
+API Settings പേജിന്റെ പൂർണ്ണ ദൃശ്യം ഇതാ:
+
+![API Settings പൂർണ്ണ പേജ്](/img/config/settings-api-full.png)
+
 **Enable API** തിരഞ്ഞെടുത്ത് നിങ്ങളുടെ API ക്രെഡൻഷ്യലുകൾ നേടുക.
 
 ഇനി, എൻഡ്‌പോയിന്റ് പര്യവേക്ഷണം ചെയ്ത ശേഷം Zapier-ൽ ഒരു രജിസ്‌ട്രേഷൻ ആക്ഷൻ സൃഷ്ടിക്കാം.
 
-## എൻഡ്‌പോയിന്റ് ബോഡി പാരാമീറ്ററുകൾ
+## എൻഡ്‌പോയിന്റ് ബോഡി പാരാമീറ്ററുകൾ {#endpoint-body-parameters}
 
 എൻഡ്‌പോയിന്റിലേക്ക് അയയ്ക്കേണ്ട ഏറ്റവും കുറഞ്ഞ വിവരങ്ങളുടെ ഒരു അവലോകനം നോക്കാം. ഈ ലേഖനത്തിന്റെ അവസാനം, പൂർണ്ണമായ കോൾ നിങ്ങൾക്ക് കാണാം.
 
-### Customer
+### Customer {#customer}
 
 User-ഉം Ultimate Multisite Customer-ഉം സൃഷ്ടിക്കുന്ന പ്രക്രിയയ്ക്ക് ആവശ്യമായ വിവരങ്ങൾ ഇതാണ്:
 
@@ -38,25 +43,25 @@ User-ഉം Ultimate Multisite Customer-ഉം സൃഷ്ടിക്കുന
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 ഈ ഒബ്‌ജക്റ്റിനുള്ളിൽ നമുക്ക് ആവശ്യമായ ഒരേയൊരു വിവരം Membership Status ആണ്.
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" എന്നിവയിലൊന്ന് },
 
-### **Products**
+### **Products** {#products}
 
 Products നിങ്ങളുടെ നെറ്റ്‌വർക്കിൽ നിന്നുള്ള 1 അല്ലെങ്കിൽ അതിലധികം product ID-കളുള്ള ഒരു array ആയി നൽകുന്നു. ശ്രദ്ധിക്കുക, ഈ എൻഡ്‌പോയിന്റ് products സൃഷ്ടിക്കുന്നില്ല. product creation എൻഡ്‌പോയിന്റ് നന്നായി മനസ്സിലാക്കാൻ Ultimate Multisite-ന്റെ ഡോക്യുമെന്റേഷൻ പരിശോധിക്കുക.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Membership-ന്റെ കാര്യത്തിലെന്നപോലെ, നമുക്ക് status മാത്രം മതി.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" എന്നിവയിലൊന്ന് },**
 
-### Site
+### Site {#site}
 
 ബോഡി പൂർത്തിയാക്കാൻ സൈറ്റിന്റെ URL-ഉം Title-ഉം ആവശ്യമാണ്, രണ്ടും Site ഒബ്‌ജക്റ്റിനുള്ളിൽ.
 
@@ -64,13 +69,13 @@ Membership-ന്റെ കാര്യത്തിലെന്നപോലെ, 
 
 register എൻഡ്‌പോയിന്റിന്റെ റിട്ടേൺ പുതുതായി സൃഷ്ടിച്ച membership വിവരങ്ങളുള്ള ഒരു array ആയിരിക്കും.
 
-## Zapier-ൽ ഒരു ആക്ഷൻ സൃഷ്ടിക്കൽ
+## Zapier-ൽ ഒരു ആക്ഷൻ സൃഷ്ടിക്കൽ {#creating-an-action-in-zapier}
 
 ഈ പുതിയതും കൂടുതൽ കരുത്തുറ്റതുമായ അക്കൗണ്ട് ക്രിയേഷൻ എൻഡ്‌പോയിന്റിന്റെ അവതരണത്തോടെ, Zapier-ൽ ഒരു പുതിയ ആക്ഷനും നിങ്ങൾക്ക് ലഭ്യമാകും.
 
 Zapier-ന്റെ പുതിയ പതിപ്പ് വാഗ്ദാനം ചെയ്യുന്ന എല്ലാ സൗകര്യങ്ങളും എങ്ങനെ ഉപയോഗിക്കാമെന്നും ആസ്വദിക്കാമെന്നും അറിയാമോ? ഇവിടെ കൂടുതലറിയുക. (link?)
 
-### ഒരു ആക്ഷൻ സൃഷ്ടിക്കൽ
+### ഒരു ആക്ഷൻ സൃഷ്ടിക്കൽ {#creating-an-action}
 
 Zapier-മായി registration എൻഡ്‌പോയിന്റ് എങ്ങനെ ഉപയോഗിക്കാമെന്ന് നന്നായി വിശദീകരിക്കാൻ, Google Forms-മായി ഒരു ഇന്റഗ്രേഷൻ സൃഷ്ടിക്കാം. ഈ ഫോം പൂരിപ്പിച്ച് വിവരങ്ങൾ ഫോമിന്റെ ആൻസർ ഷീറ്റിൽ സേവ് ചെയ്യുമ്പോഴെല്ലാം, Ultimate Multisite നെറ്റ്‌വർക്കിൽ ഒരു പുതിയ membership സൃഷ്ടിക്കപ്പെടും.
 
@@ -100,7 +105,7 @@ Google Forms-ൽ, നെറ്റ്‌വർക്കിൽ ഒരു പുത
 
 നിങ്ങളുടെ പുതിയ Zap ടെസ്റ്റ് ചെയ്യുക, അത് വിജയകരമായി പൂർത്തിയാകണം. എന്തെങ്കിലും പിഴവ് സംഭവിച്ചാൽ, എല്ലാ ഫീൽഡുകളും ശരിയായി അയയ്ക്കുന്നുണ്ടോയെന്ന് പരിശോധിക്കുക. ധാരാളം വിവരങ്ങൾ ഉള്ളതിനാൽ, ചില കാര്യങ്ങൾ ശ്രദ്ധയിൽപ്പെടാതെ പോയേക്കാം.
 
-### പൂർണ്ണമായ എൻഡ്‌പോയിന്റ് പാരാമീറ്ററുകൾ
+### പൂർണ്ണമായ എൻഡ്‌പോയിന്റ് പാരാമീറ്ററുകൾ {#complete-endpoint-parameters}
 
 ഇതാ പൂർണ്ണമായ കോളും അയയ്ക്കാവുന്ന എല്ലാ ഫീൽഡുകളുടെ സാധ്യതകളും.
 

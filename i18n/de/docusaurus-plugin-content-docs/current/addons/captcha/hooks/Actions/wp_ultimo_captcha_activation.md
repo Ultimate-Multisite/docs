@@ -4,13 +4,13 @@ title: Aktion - wp_ultimo_captcha_activation
 sidebar_label: wp_ultimo_captcha_activation
 _i18n_hash: 25277255f0366b6f5fb1ce3c2cc5e7bf
 ---
-# Action: wp_ultimo_captcha_activation
+# Action: wp_ultimo_captcha_activation {#action-wpultimocaptchaactivation}
 
 Lassen Sie andere Teile des Plugins ihre Routinen für die Aktivierung anhängen
 
-### Since
+### Since {#since}
 
 - 1.9.6
-### Source
+### Source {#source}
 
 Defined in [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-hooks.php#L83) at line 83

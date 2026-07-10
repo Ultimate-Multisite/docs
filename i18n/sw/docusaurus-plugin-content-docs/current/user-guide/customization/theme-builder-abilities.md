@@ -3,18 +3,18 @@ title: Uwezo wa Mjenzi wa Mandhari
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Uwezo wa Kuunda Mandhari: Kuunda Muundo na Kuweka Mandhari ya Block
+# Uwezo wa Kuunda Mandhari: Kuunda Muundo na Kuweka Mandhari ya Block {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 inatanguliza uwezo wawili wenye nguvu vinavyokuruhusu kuunda na kuweka mandhari (themes) ya block maalum moja kwa moja kutoka kwenye kiolesura cha mazungumzo (chat interface).
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Uwezo wa **scaffold-block-theme** na **activate-theme** unaruhusu agents kufanya yafuatayo:
 - Kuunda mandhari kamili, tayari kwa matumizi halisi, kulingana na maelezo yako.
 - Kuweka mandhari kiotomatiki kwenye tovuti yako bila kuhitaji uingiliaji wa binadamu.
 - Kuunda utambulisho wa kuonekana unaoendana kupitia maamuzi ya muundo yanayoelekezwa.
 
-## Kuunda Muundo wa Mandhari ya Block (Scaffold Block Theme)
+## Kuunda Muundo wa Mandhari ya Block (Scaffold Block Theme) {#scaffold-block-theme}
 
 Uwezo wa **scaffold-block-theme** unaunda mandhari mpya ya WordPress ya block yenye muundo kamili wa mandhari, ikiwa ni pamoja na:
 
@@ -23,7 +23,7 @@ Uwezo wa **scaffold-block-theme** unaunda mandhari mpya ya WordPress ya block ye
 - Mitindo na tofauti za block maalum.
 - Metadata ya mandhari na matangazo ya usaidizi.
 
-### Jinsi ya Kuitumia
+### Jinsi ya Kuitumia {#how-to-invoke}
 
 Katika mazungumzo yako na Superdav AI Agent, unaweza kuomba kuunda mandhari kwa kutumia:
 
@@ -38,7 +38,7 @@ Agent atafanya yafuatayo:
 3. Kuunda faili zote muhimu za mandhari.
 4. Kuandaa mandhari kwa ajili ya kuwekwa hai.
 
-### Matokeo Yanayotarajiwa
+### Matokeo Yanayotarajiwa {#expected-output}
 
 Wakati uwezo huu unapofanywa kwa mafanikio, utaona:
 
@@ -56,11 +56,11 @@ Mfano wa matokeo:
   Status: Ready to activate
 ```
 
-## Kuweka Mandhari Hai (Activate Theme)
+## Kuweka Mandhari Hai (Activate Theme) {#activate-theme}
 
 Uwezo wa **activate-theme** unabadilisha tovuti yako kwenda kwenye mandhari jipya yaliyoundwa muundo wake au mandhari iliyopo.
 
-### Jinsi ya Kuitumia
+### Jinsi ya Kuitumia {#how-to-invoke-1}
 
 Baada ya kuunda muundo wa mandhari, unaweza kuweka hai mara moja:
 
@@ -74,7 +74,7 @@ Au weka hai chochote cha mandhari kilichoopo:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Matokeo Yanayotarajiwa
+### Matokeo Yanayotarajiwa {#expected-output-1}
 
 Wakati kuweka hai kunafanikiwa:
 
@@ -92,7 +92,7 @@ Mfano wa matokeo:
   Note: Check your homepage to verify the layout
 ```
 
-## Mchakato: Kuunda Muundo na Kuweka Mandhari
+## Mchakato: Kuunda Muundo na Kuweka Mandhari {#workflow-scaffold-and-activate}
 
 Mchakato wa kawaida unachanganya uwezo wote wawili:
 
@@ -102,7 +102,7 @@ Mchakato wa kawaida unachanganya uwezo wote wawili:
 4. **Weka hai**: "Activate the theme now"
 5. **Thibitisha**: Tembelea tovuti yako kuthibitisha kwamba muundo mpya umefanyika hai.
 
-## Token za Muundo na Kuboresha (Design Tokens and Customization)
+## Token za Muundo na Kuboresha (Design Tokens and Customization) {#design-tokens-and-customization}
 
 Mandhari zilizoundwa muundo wake hutumia token za muundo za WordPress (kupitia `theme.json`) kwa ajili ya:
 
@@ -114,14 +114,14 @@ Mandhari zilizoundwa muundo wake hutumia token za muundo za WordPress (kupitia `
 
 Token hizi ziko zilizokusanywa katika `theme.json`, na kufanya iwe rahisi kurekebisha mfumo wote wa muundo wako kutoka faili moja.
 
-## Vikwazo na Kumbukumbu
+## Vikwazo na Kumbukumbu {#limitations-and-notes}
 
 - Mandhari huundwa muundo wake katika `/wp-content/themes/` na lazima ifuate kanuni za utozi wa WordPress.
 - Kuweka hai kunahitaji ruhusa sahihi kwenye tovuti yako ya WordPress.
 - Msimbo wa PHP maalum katika mandhari ni mdogo; tumia plugins kwa ajili ya utendakazi tata.
 - Mandhari za block hufanya kazi vizuri zaidi na WordPress 5.9 na baadaye.
 
-## Kutatua Matatizo (Troubleshooting)
+## Kutatua Matatizo (Troubleshooting) {#troubleshooting}
 
 **Mandhari haonekane baada ya kuunda muundo wake**
 - Thibitisha kuwa saraka ya mandhari ipo na ina ruhusa sahihi.
@@ -138,7 +138,7 @@ Token hizi ziko zilizokusanywa katika `theme.json`, na kufanya iwe rahisi kureke
 - Futa plugins yoyote ya kuweka cache.
 - Angalia kwamba toleo lako la WordPress linasaidia token unazotumia.
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 Baada ya kuweka hai mandhari yako, unaweza:
 - Kutumia **Design System Aesthetics skill** kuboresha maandishi, rangi, na nafasi.

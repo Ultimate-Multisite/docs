@@ -4,14 +4,14 @@ title: アクション - wp_ultimo_affiliatewp_activation
 sidebar_label: wp_ultimo_affiliatewp_activation
 _i18n_hash: f56f70f0cb71515806e3083f55dc564e
 ---
-# アクション: wp_ultimo_affiliatewp_activation
+# アクション: wp_ultimo_affiliatewp_activation {#action-wpultimoaffiliatewpactivation}
 
 プラグインの他の部分が有効化のためのルーチンを追加できるようにします
 
-### いつから
+### いつから {#since}
 
 - 1.9.6
 
-### ソース
+### ソース {#source}
 
 定義されている [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-affiliatewp/blob/main/inc/class-hooks.php#L83) 行 83

@@ -1,0 +1,116 @@
+---
+title: Cydnawsedd Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Ategyn WordPress sy’n ychwanegu cywiriadau cydnawsedd ar gyfer Tutor LMS mewn amgylcheddau multisite.
+
+## Disgrifiad {#description}
+
+Mae’r ategyn hwn yn darparu cywiriadau cydnawsedd hanfodol ar gyfer rhedeg Tutor LMS ar rwydweithiau WordPress multisite. Mae’n trin cofrestru defnyddwyr, rheoli hyfforddwyr, cyfyngiadau cyrsiau, a swyddogaethau eraill sy’n benodol i multisite.
+
+## Nodweddion {#features}
+
+- **Rheoli Tablau Cronfa Ddata**: Yn canfod ac yn creu tablau Tutor LMS coll yn awtomatig sy’n methu oherwydd cyfyngiadau allweddi tramor multisite
+- **Cofrestru Defnyddwyr Multisite**: Trinwyr AJAX personol ar gyfer rheoli cofrestru defnyddwyr ar draws safleoedd rhwydwaith
+- **Rheoli Rôl Hyfforddwr**: Neilltuo a rheoli rôl hyfforddwr yn awtomatig mewn amgylcheddau multisite
+- **Cyfyngiadau Cyrsiau**: Integreiddio ag Ultimate Multisite ar gyfer rheoli terfynau creu cyrsiau a thwndis yn seiliedig ar gynlluniau safle
+- **Golygfeydd Gweinyddol Personol**: Rhestr hyfforddwyr a rhyngwyneb rheoli sy’n ymwybodol o multisite
+- **Offer Gweinyddol**: Rhyngwyneb rheoli cronfa ddata ar gyfer gweinyddwyr rhwydwaith a safle
+
+## Gofynion {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Ategyn Tutor LMS (wedi’i orfodi’n awtomatig drwy bennyn `Requires Plugins`)
+- Gosodiad WordPress Multisite
+- Ategyn Ultimate Multisite (ar gyfer swyddogaeth cyfyngiadau cyrsiau)
+
+## Gosod {#installation}
+
+1. Llwythwch ffeiliau’r ategyn i `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Sicrhewch fod Tutor LMS wedi’i osod a’i actifadu
+3. Actifadwch yr ategyn drwy’r ddewislen 'Plugins' yn WordPress
+4. Bydd yr ategyn yn integreiddio’n awtomatig â Tutor LMS
+
+## Strwythur Ffeiliau {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Prif ffeil yr ategyn)
+├── includes/
+│   ├── class-database-manager.php (Creu a rheoli tablau cronfa ddata)
+│   ├── class-admin-interface.php (Rhyngwyneb gweinyddol ar gyfer rheoli cronfa ddata)
+│   ├── class-course-limits.php (Trinwyr cyfyngiadau cyrsiau a thwndis)
+│   ├── class-instructor-manager.php (Rheoli rôl hyfforddwr)
+│   ├── class-ajax-handlers.php (Trinwyr AJAX personol)
+│   ├── class-query-helper.php (Cyfleustodau ymholiadau cronfa ddata)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Model defnyddiwr multisite)
+│   └── admin/
+│       ├── class-instructors-list.php (Rhestr hyfforddwyr bersonol)
+│       └── views/
+│           └── instructors.php (Golwg weinyddol hyfforddwr)
+└── README.md
+```
+
+## Swyddogaeth a Symudwyd o MU plugin {#functionality-moved-from-mu-plugin}
+
+Mae’r ategyn hwn yn cynnwys swyddogaeth a oedd gynt yn `wp-content/mu-plugins/daves.php`:
+
+- Cyfyngiadau newid statws cwrs
+- Cyfyngiadau creu cwrs
+- Integreiddio a therfynau CartFlows
+- Rheoli rôl hyfforddwr Tutor
+- Trin cofrestru defnyddwyr multisite
+- Dangos ID cynnyrch cwrs
+
+## Rheoli Cronfa Ddata {#database-management}
+
+### Y Broblem {#the-problem}
+
+Mewn amgylcheddau WordPress multisite, mae creu tablau Tutor LMS yn methu ar gyfer tablau sydd â chyfyngiadau allweddi tramor i’r tabl defnyddwyr. Mae hyn yn digwydd oherwydd:
+
+- Mae tablau penodol i safle yn defnyddio rhagddodiaid fel `wp_2_tutor_carts`
+- Mae allweddi tramor yn cyfeirio at `wp_2_users` (nad yw’n bodoli)
+- Y tabl defnyddwyr gwirioneddol yw `wp_users` (wedi’i rannu ar draws y rhwydwaith)
+
+### Yr Ateb {#the-solution}
+
+Mae’r ategyn hwn yn awtomatig yn:
+
+1. **Canfod Tablau Coll**: Yn gwirio am dablau a fethodd â chael eu creu oherwydd cyfyngiadau allweddi tramor
+2. **Creu Tablau gyda Chyfeiriadau Cywir**: Yn defnyddio enw tabl defnyddwyr priodol (`wp_users` mewn multisite)
+3. **Trin Sawl Senario**:
+   - Actifadu/ailactifadu ategyn
+   - Creu safle newydd yn y rhwydwaith
+   - Gwirio tablau â llaw drwy’r rhyngwyneb gweinyddol
+
+### Tablau yr Effeithir Arnynt {#affected-tables}
+
+- `tutor_coupon_usages` - Yn cynnwys allwedd dramor i’r tabl defnyddwyr
+- `tutor_carts` - Yn cynnwys allwedd dramor i’r tabl defnyddwyr
+- `tutor_notification_preferences` - Tabl TutorPro gydag allwedd dramor i’r tabl defnyddwyr
+
+### Rhyngwyneb Gweinyddol {#admin-interface}
+
+Cyrchwch yr offer rheoli cronfa ddata yn:
+
+- **Gweinyddiaeth Rhwydwaith**: Gosodiadau → Tutor Multisite DB
+- **Gweinyddiaeth Safle**: Offer → Tutor Multisite DB
+
+Mae’r rhyngwyneb yn caniatáu i chi:
+- Weld tablau coll ar draws pob safle
+- Sbarduno creu tablau â llaw
+- Gwirio ffurfweddiad cronfa ddata
+- Gweld gwybodaeth statws fanwl
+
+## Cymorth {#support}
+
+Mae’r ategyn hwn wedi’i ddylunio’n benodol ar gyfer platfform KursoPro. Am gymorth technegol, cysylltwch â’r tîm datblygu.

@@ -3,7 +3,7 @@ title: AffiliateWP ማዋሃድ
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# አፊሌየትደብልዩፒ (AffiliateWP) ውህደት
+# አፊሌየትደብልዩፒ (AffiliateWP) ውህደት {#affiliatewp-integration}
 
 ይህ ባህሪ በ**AffiliateWP** addon አማካኝነት ይሰጣል።
 

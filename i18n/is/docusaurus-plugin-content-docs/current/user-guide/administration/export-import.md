@@ -3,17 +3,17 @@ title: Útlunni og innluni
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exporter og Importer
+# Exporter og Importer {#export--import}
 
 Ultimate Multisite 2.9.0 leggur ein enkelt-site **Export & Import** verktúfn undir menyn **Tools > Export & Import**. Bruk það þegar þú þarft að pakka eina WordPress síti í ZIP-file, að skila því upp, eða flytja síti milli samræmdra Ultimate Multisite og single-site WordPress innreiðslum.
 
-## Nauðsynlegir réttur
+## Nauðsynlegir réttur {#required-permissions}
 
 Þú verður að logga in sem administrator sem getur aðgang til **Tools** menyinn í WordPress síti sem er að exporta eða importera. Á netverkssíti (multisite) þarf þú að nota reikning netverksadministratorsins við export eða import subsites frá netverkstólum Ultimate Multisite.
 
 Export ZIP-n afhendingar eru með ábyrgðarlegur nedlunsempóndi, svo halda admin sessionin vélbúinn til nedlunni er færd av og þú þarf ekki að deila gerðar nedlunarslóðir alþjóðlega.
 
-## Exporting síti í ZIP
+## Exporting síti í ZIP {#exporting-a-site-to-a-zip}
 
 1. Í WordPress admin fyrir sítið sem þú vilt kopya, ferstur yfir **Tools > Export & Import**.
 2. Opna export ábyrgðarhöfund og veldu sítið sem þú vilt pakka.
@@ -23,7 +23,7 @@ Export ZIP-n afhendingar eru með ábyrgðarlegur nedlunsempóndi, svo halda adm
 
 Halda ZIP-inn á öruggum staedi. Hann getur haldi síti innihaldi, settir, media fíl og valtuð kóða eignir.
 
-## Hva exportin inniheldur
+## Hva exportin inniheldur {#what-the-export-includes}
 
 Ein export ZIP getur halda:
 
@@ -34,7 +34,7 @@ Ein export ZIP getur halda:
 
 Nákvæm ZIP-stærðin er afhängist af mengdun á myndum, valdum pluginum og temum, og stærðar skýrslueininga (database tables) á viðbótandi vefsíðunni.
 
-## Inningur síða í ZIP
+## Inningur síða í ZIP {#importing-a-site-from-a-zip}
 
 1. Gangi yfir í **Tools > Export & Import** á fjarska WordPress síðu.
 2. Opna inningurmyndina og hleðdu upp ZIP-fílin sem varðar Export & Import verkfæri.
@@ -46,7 +46,7 @@ Nákvæm ZIP-stærðin er afhängist af mengdun á myndum, valdum pluginum og te
 
 Á einn-síða WordPress innreiðslu skiftar inningur ZIP núverandi síðuna með inningunni. Skapa fullt upphaflegu uppfærslu (backup) á tölvum fyrir þá sem byrjar, og láttu ekki byrja fleiri inningurferli fyrir sama síðuna á sama tíma.
 
-## Begræðingar og athugasemdir um samþættingar
+## Begræðingar og athugasemdir um samþættingar {#limitations-and-compatibility-notes}
 
 Þegar uppladdar fyrir stórar myndasafn eða meira þarf til að skapa stórar ZIP-filar. Staðfestu PHP uppladdarætlindi (upload limits), framkvæmdætlindi (execution limits), skráninga (disk space), minni (memory) og tímaploturveitingar (server timeout settings) á serverinum áður en þú exportar eða importir stórar vísðar.
 - Uppladdar fyrir mjög stórar myndasafn geta þarf að flytja í vefslokki með lítilli trafiki við viðhaldstíma.

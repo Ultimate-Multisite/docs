@@ -3,7 +3,7 @@ title: Sunrise ফাইল ত্রুটি
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# sunrise ফাইল ইনস্টল কৰাত ভুল
+# sunrise ফাইল ইনস্টল কৰাত ভুল {#error-installing-the-sunrise-file}
 
 `sunrise.php` ফাইলটো এটা বিশেষ ফাইল, যিটো WordPress নিজে আৰম্ভ হ’ব (bootstraps) বুলি কঁকালি। WordPress-ক এই `sunrise.php` ফাইলটো চিনাক্ত কৰিবলৈ, ইয়াক **wp-content ফোল্ডাৰ**ৰ ভিতৰত থকাটো প্ৰয়োজনীয়।
 

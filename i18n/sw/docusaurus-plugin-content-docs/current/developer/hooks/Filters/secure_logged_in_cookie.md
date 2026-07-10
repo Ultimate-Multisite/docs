@@ -4,11 +4,11 @@ title: Kichujio - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 Inaangalia kama cookie ya kuingia (logged in cookie) inapaswa kutumwa kupitia HTTPS pekee.
 
-## Viparametrika
+## Viparametrika {#parameters}
 
 | Jina | Aina | Maelezo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Inaangalia kama cookie ya kuingia (logged in cookie) inapaswa kutumwa kupitia HT
 | $user_id | `int` | Kitambulisho cha Mtumiaji. |
 | $secure | `bool` | Inangalia kama cookie ya uthibitisho (auth cookie) inapaswa kutumwa kupitia HTTPS pekee. |
 
-### Tangu
+### Tangu {#since}
 
 - 3.1.0
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) kwenye mstari wa 91

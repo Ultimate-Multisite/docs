@@ -4,13 +4,13 @@ title: Penapis - wu_search_models_functions
 sidebar_label: wu_search_models_functions
 _i18n_hash: 69d25eafff6abb05bd55ae8cf333ad28
 ---
-# Filter: wu_search_models_functions
+# Filter: wu_search_models_functions {#filter-wusearchmodelsfunctions}
 
 Membenarkan pembangun plugin untuk menambah fungsi model carian yang lebih banyak.
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Ditakrifkan dalam [`inc/class-ajax.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-ajax.php#L244) pada baris 244

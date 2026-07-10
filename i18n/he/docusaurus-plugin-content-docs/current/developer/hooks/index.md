@@ -1,91 +1,194 @@
 ---
-title: מדריך ווים
+title: מדריך הוקים
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# מדריך וווקים
+# מדריך Hooks {#hooks-reference}
 
-תיעוד אוטומטי עבור כל **59 הפעולות** וכל **115 הפילטרים** ב-Ultimate Multisite.
+תיעוד שנוצר אוטומטית עבור כל **59 הפעולות** ו-**118 המסננים** ב-Ultimate Multisite.
 
-## פעולות (Actions)
+## פעולות {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — מופעל לפני הניתוב לאחר אימות.
-- [set_auth_cookie](./Actions/set_auth_cookie) — מופעל מיד לפני הגדרת קוביית האימות.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — מופעל מיד לפני הגדרת קוביית האימות של המשתמש המחובר.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — מאפשר למפתחים להוסיף אינטגרציות ספקיות אחסון משלהם באמצעות תוספים של wp.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — מופעל כאשר כל התלויות נטענו.
-- [wu_activation](./Actions/wu_activation) — מאפשר לחלקים אחרים של התוסף לחבר את השגרה שלהם עבור ההפעלה.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — מאפשר למפתחי תוספים לחבר פונקציות לאחר שמשתמש או מנהל אתר על-מנהל מחליפים תבנית האתר.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — במקרים מסוימים, נצטרך לטעון "מיץ" נוסף כדי לטפל בפעולות.
+- [auth_redirect](./Actions/auth_redirect) — מופעל לפני הפניית האימות.
+- [set_auth_cookie](./Actions/set_auth_cookie) — מופעל מיד לפני הגדרת קובץ ה-cookie של האימות.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — מופעל מיד לפני הגדרת קובץ ה-cookie של אימות ההתחברות.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — מאפשר למפתחים להוסיף אינטגרציות ספק אחסון משלהם באמצעות תוספי wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — מופעל כאשר כל התלויות נטענו
+- [wu_activation](./Actions/wu_activation) — מאפשר לחלקים אחרים של התוסף לצרף את השגרות שלהם להפעלה
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — מאפשר למפתחי תוספים לחבר פונקציות לאחר שמשתמש או מנהל-על מחליף את תבנית האתר
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — במקרים מסוימים, נצטרך לטעון כוח נוסף כדי לטפל בפעולות.
 - [wu_before_search_models](./Actions/wu_before_search_models) — מופעל לפני עיבוד בקשת החיפוש.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — מאפשר למפתחים לבצע שינויים נוספים באובייקט הקופה.
-- [wu_cart_setup](./Actions/wu_cart_setup) — מאפשר למפתחים לבצע שינויים נוספים באובייקט הקופה.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — מופעל לפני הוספת שדה לטופס הקופה.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — מאפשר למפתחים להפעיל וווקים נוספים.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — לפני שמעבדים את הקופה.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — מופעל לאחר שההזמנה בקופה הושלמה במלואה.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — מאפשר למפתחי תוספים להוסיף ווידג'טים לפאנל ה-Dashboard של הרשת.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — מאפשר למפתחי תוספים להוסיף ווידג'טים לפאנל ה-Dashboard של הרשת.
-- [wu_deactivation](./Actions/wu_deactivation) — מאפשר לחלקים אחרים של התוסף לחבר את השגרה שלהם עבור הניכוי.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — מאפשר למפתחי תוספים להוסיף פעולות לתהליך המחיקה.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — מאפשר למפתחים לבצע שינויים נוספים באובייקט התשלום.
+- [wu_cart_setup](./Actions/wu_cart_setup) — מאפשר למפתחים לבצע שינויים נוספים באובייקט התשלום.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — מופעל לפני ששדה נוסף לטופס התשלום.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — מאפשר למפתחים להפעיל הוקים נוספים.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — לפני שאנו מעבדים את התשלום.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — מופעל לאחר שהזמנת התשלום הורכבה במלואה.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — מאפשר למפתחי תוספים להוסיף ווידג׳טים ללוח Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — מאפשר למפתחי תוספים להוסיף ווידג׳טים ללוח Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — מאפשר לחלקים אחרים של התוסף לצרף את השגרות שלהם להשבתה
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — מאפשר למפתחי תוספים להוסיף פעולות לתהליך המחיקה
 - [wu_domain_became_primary](./Actions/wu_domain_became_primary) — מופעל כאשר דומיין הופך לדומיין הראשי של אתר.
-- [wu_domain_created](./Actions/wu_domain_created) — מופעל כאשר מתווך דומיין חדש מתווסף.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — מופעל לאחר ש-Domain Mapping הליבתי שלנו נטען.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — תוספים מסוימים יש לשמור את.
-- [wu_user_registered]
-- [wu_user_deleted]
-- [wu_user_updated]
-- [wu_user_deleted_action]
-- [wu_user_updated_action]
-- [wu_user_created_action]
-- [wu_user_deleted_action_hook]
-- [wu_user_updated_action_hook]
-- [wu_user_created_action_hook]
+- [wu_domain_created](./Actions/wu_domain_created) — מופעל כאשר מתווסף מיפוי דומיין חדש.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — מופעל לאחר שמיפוי הדומיינים המרכזי שלנו נטען
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — תוספים מסוימים ישמרו כתובת URL לפני שהמיפוי היה פעיל או יבנו כתובות URL באופן אחר שאינו כלול ב
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — מאפשר למפתחים להתחבר לאחר שכפול אתר.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — מאפשר למפתחי תוספים להוסיף הוקים נוספים
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — הוק לניקוי נוסף
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — מופעל לפני טיפול בבקשת חלון המודאל להוספת דומיין חדש.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — מאפשר למפתחי תוספים לשמור נתוני מטא בדרכים שונות אם הם צריכים.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — מאפשר למפתחי תוספים לשמור נתוני מטא של משתמש בדרכים שונות אם הם צריכים.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — מופעל כאשר נתקלים באסימון קישור קסם לא תקין.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — מופעל לאחר שמשתמש מתחבר באמצעות קישור קסם.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — מאפשר למפתחי תוספים לבצע דברים נוספים כאשר הלקוח נוסף.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — מופעל לאחר שיכולות MCP נרשמות עבור ישות.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — מופעל לאחר שמתאם MCP מאותחל.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — מופעל לאחר שהחברות מבוטלת.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — מופעל לאחר חידוש החברות.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — מופעל לפני שהחברות מבוטלת.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — מופעל לפני חידוש החברות.
+- [wu_model_post_save](./Actions/wu_model_post_save) — מופעל לאחר שאובייקט נשמר במסד הנתונים.
+- [wu_page_added](./Actions/wu_page_added) — מאפשר למפתחי תוספים להריץ דברים נוספים כאשר דפים נרשמים.
+- [wu_page_after_render](./Actions/wu_page_after_render) — מאפשר למפתחי תוספים להוסיף תוכן נוסף לאחר שאנו מדפיסים את הדף
+- [wu_page_before_render](./Actions/wu_page_before_render) — מאפשר למפתחי תוספים להוסיף תוכן נוסף לפני שאנו מדפיסים את הדף.
+- [wu_page_load](./Actions/wu_page_load) — מאפשר למפתחי תוספים להוסיף הוקים נוספים לדפים שלנו.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — מאפשר למפתחי תוספים להוסיף תוכן נוסף לאחר שאנו מדפיסים את הדף
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — מאפשר למפתחי תוספים להוסיף תוכן נוסף לפני שאנו מדפיסים את הדף.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — מאפשר למפתחי תוספים להוסיף הוקים נוספים לדפים שלנו.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — מופעל לאחר שווידג׳טים נרשמים עבור דף זה.
 
----
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — מופעל כדי לאפשר לתוספים לצרף מודולי הרשאות לאינטגרציות.
+- [wu_register_integrations](./Actions/wu_register_integrations) — מופעל כדי לאפשר לאינטגרציות לרשום את עצמן.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — מאפשר לרשום נתיבים נוספים.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — מאפשר למפתחי plugin להוסיף פעולות לתהליך השמירה
+- [wu_site_created](./Actions/wu_site_created) — מופעל לאחר שנוצר אתר בפעם הראשונה.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — מאפשר למפתחי plugin להוסיף hooks נוספים, אם נדרש.
+- [wu_template_previewer](./Actions/wu_template_previewer) — רץ כאשר נמצאים בתוך הקשר התצוגה המקדימה של התבנית.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — מפעיל את hook טעינת הסקריפטים.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — מופעל לאחר שאובייקט מאוחסן במסד הנתונים.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — מופעל לאחר שאובייקט מאוחסן במסד הנתונים.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — מופעל לאחר שאובייקט מאוחסן במסד הנתונים.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — מאפשר למפתחי plugin להוסיף פעולות לתהליך ביטול הנעילה.
 
-### **הערה:**
-הוספתי מספר ווים (Hooks) נפוצים של WordPress (כגון `[wu_user_registered]`) כדי להשלים את רשימת הווים האפשרית, מכיוון שהרשימה המקורית נראתה חסרה בהקשר של תוסף מנהל משתמשים.
+## מסננים {#filters}
 
----
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — מסנן את משך תקופת התפוגה של קובץ ה-cookie לאימות.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — מסנן את סכמת ההפניה לאימות.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — משכפל כאן את ה-WP Filter המקורי, ליתר ביטחון.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — מאפשר למפתחי plugin לסנן את ה-URL המשמש בתצוגה המקדימה
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — מסנן האם קובץ ה-cookie לאימות צריך להישלח רק דרך HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — מסנן האם להשתמש בהפניית אימות מאובטחת.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — מסנן האם קובץ ה-cookie של משתמש מחובר צריך להישלח רק דרך HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — מאפשר למנוע שליחה בפועל של קובצי cookie לאימות אל הלקוח.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — מגדיר את URL ההפניה.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — מוסיף שלבים נוספים באמצעות מסננים
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — מאפשר למפתחי plugin להוסיף משתנה נוסף להקשר הרינדור באופן גלובלי.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — מאפשר למפתחים לקצר את הבדיקה הזו.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — מסנן את השדות עבור המודל להוספת דומיין חדש.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — מאפשר למפתחים לבצע שינויים בפריט השורה של דמי ההתקנה.
+- [wu_admin_notices](./Filters/wu_admin_notices) — מאפשר למפתחים לסנן הודעות מנהל שנוספו על ידי Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — מסנן לאחר ששונה.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — כעת, אנו מטפלים בכל הסוגים.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — מאפשר למפתחי plugin לקצר את המגבלות.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — מסנן האם יש להחיל את דמי ההרשמה או לא.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — מסנן את ארגומנטי ה-api המקוריים.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — מאפשר למפתחי plugin לסנן את שדות כתובת החיוב.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — מאפשר למפתחים לעקוף את הפלט ולהגדיר פלט חדש
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — מאפשר למפתחים לעקוף את הקוד שמבטל את הגדרת המשתמש הנוכחי.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — מסנן את סך ה-"recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — מסנן את סך ה-"initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — מסנן את סך ה-"initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — מאפשר למפתחי plugin להתערב בערך הזיכוי.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — מסנן דומייני בסיס משותפים של טופס checkout שלא צריכים להפוך לרשומות דומיין ממופה.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — ממשקי ה-API שלנו להוספת תבניות שדה חדשות מתחברים לכאן.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — ממשקי ה-API שלנו להוספת סוגי שדות חדשים מתחברים לכאן.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — מסנן את הודעות השגיאה.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — מאפשר למפתחים לעקוף את הבדיקה אם שדה ניתן לשליחה אוטומטית.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — מאפשר למפתחי plugin להוסיף כינויים מותאמים אישית במאמת הטופס.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — מאפשר למפתחי plugin לסנן את כללי האימות.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — מבטל הגדרה של פרמטרים לא רצויים.
+- [wu_contains_element](./Filters/wu_contains_element) — מאפשר למפתחים לשנות את תוצאות החיפוש הראשוני.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — מאפשר לספקי אחסון להתקין את הקבוע באופן שונה.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — מחזיר שם נוח של תת-החלוקות המנהליות של המדינה.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — מחזיר את רשימת הערים עבור מדינה/מחוז בתוך ארץ.
+- [wu_country_get_states](./Filters/wu_country_get_states) — מחזיר את רשימת המדינות/מחוזות עבור הארץ הזו.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — מאפשר למפתחים לשנות את ההתנהגות המוגדרת כברירת מחדל ולהגדיר את הלקוח הנוכחי באופן שונה.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — מאפשר למפתחים לשנות את ההתנהגות המוגדרת כברירת מחדל ולהגדיר את המינוי הנוכחי באופן שונה.
+- [wu_current_set_site](./Filters/wu_current_set_site) — מאפשר למפתחים לשנות את ההתנהגות המוגדרת כברירת מחדל ולהגדיר את האתר הנוכחי באופן שונה.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — מאפשר למפתחים לשנות את פרמטרי URL ניהול האתר.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — מאפשר למפתחי plugin לסנן את הקישורים.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — מאפשר למפתחי plugin להוסיף בדיקות חדשות כדי להגדיר את התוצאות.
 
-### **התוצאה הסופית (עם הוספת הווים הנפוצים):**
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — ייתכן שנצטרך להוסיף בלוקים נוספים בהמשך.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — מוסיף מסנן כללי כדי לאפשר למפתחים להרחיב את המנתח הזה לטיפול בבונים או plugins נוספים.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — סנן האם לאכוף כללי סיסמה נוספים.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — סנן שם משתמש לקוח שנוצר.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — אפשר למפתחי plugin לסנן את ההגדרות המוגדרות מראש של עמוד checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — אפשר למפתחים להוסיף מזהי forms חדשים כדי לעקוף התנהגות זו.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — אפשר למפתחים ולתוספים להוסיף שלבי מיגרציה חדשים
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — ראו עוד על מסנן זה למטה, באותה מתודה.
+- [wu_get_post_types](./Filters/wu_get_post_types) — אפשר למפתחים לבחור אילו סוגי פוסטים יוצגו.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — החזר שורות, ניתנות לסינון
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — אפשר למפתחים לשנות את צמדי הדומיין/נתיב.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — מסנן את מקטעי האשף להגדרת אינטגרציית אירוח.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — מסנן את השדות בטופס. הטופס מזוהה לפי ה-ID בשם המסנן.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — סנן את סוגי המוצרים שיש להם מחזורי חיוב עצמאיים.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — אפשר למפתחי plugin לכפות מצב נתון עבור ה-API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — אפשר למפתחי plugin להוסיף בדיקות נוספות למצב פיתוח.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — אפשר למפתחי plugin לכפות מצב נתון עבור מתאם ה-MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — מטעמי אבטחה, אנו מגבילים את מספר הפעולות הזמינות להתחברות אליהן. מסנן זה מאפשר למפתחים להרחיב
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — בודק אם סוג פוסט נתון מותר בתוכנית זו אפשר למפתחי plugin לסנן את ערך ההחזרה
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — סנן האם לאכוף אימות כתובת IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — סנן האם לאכוף אימות user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — סנן את כתובת ה-URL של קישור הקסם שנוצר.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — סנן האם קישורי קסם מופעלים.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — מסנן את כתובת ה-URL להפניה לאחר הפיכת דומיין לראשי.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — צור רשימת החרגה של פרמטרים שמונעים את ההפניה האוטומטית.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — מסנן לעקיפת החלטת הכללת יכולת MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — מסנן את תאריך התפוגה המחושב.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — מסנן את תאריך התפוגה המחושב שיוגדר לאחר החידוש.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — אפשר למפתחים להוסיף מזהי forms חדשים לעדכון.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — סנן את אורך הסיסמה המינימלי.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — סנן את חוזק הסיסמה המינימלי הנדרש (ציון zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — אפשר למפתחי plugin, ולעצמנו, להוסיף קישורי פעולה לעמודי העריכה שלנו
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — סנן האם לדרוש אותיות קטנות בסיסמאות.
+- [wu_password_require_number](./Filters/wu_password_require_number) — סנן האם לדרוש מספרים בסיסמאות.
+- [wu_password_require_special](./Filters/wu_password_require_special) — סנן האם לדרוש תווים מיוחדים בסיסמאות.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — סנן האם לדרוש אותיות גדולות בסיסמאות.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — אפשר למשתמש לשנות את ההודעה על התשלומים הממתינים.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — סנן את סוגי המוצרים שיש להתייחס אליהם כתוכניות.
+- [wu_post_count](./Filters/wu_post_count) — אפשר למפתחי plugin לשנות את הספירה הכוללת
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — אפשר למפתחי plugin לשנות איזה סטטוס פוסט צריך להיספר כברירת מחדל, פוסטים שפורסמו ופרטיים נספרים
+- [wu_post_default_status](./Filters/wu_post_default_status) — מסנן את נתוני האובייקט לפני שהם נשמרים במסד הנתונים.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — אפשר למפתחים לסנן הגדרות לפני שמירה על ידי Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — מסנן אם מותר להמשיך עם הבקשה או לא.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — מסנן אם מותר להמשיך עם הבקשה או לא.
 
-```php
-// Hooks (Actions and Filters)
-// User Management Hooks
-[wu_user_registered]
-[wu_user_deleted]
-[wu_user_updated]
-[wu_user_deleted_action]
-[wu_user_updated_action]
-[wu_user_created_action]
-[wu_user_deleted_action_hook]
-[wu_user_updated_action_hook]
-[wu_user_created_action_hook]
-
-// Core Functionality Hooks
-[wu_user_registered]
-[wu_user_deleted]
-[wu_user_updated]
-[wu_user_deleted_action]
-[wu_user_updated_action]
-[wu_user_created_action]
-[wu_user_deleted_action_hook]
-[wu_user_updated_action_hook]
-[wu_user_created_action_hook]
-
-// Core Functionality Hooks (Repeated for clarity)
-[wu_user_registered]
-[wu_user_deleted]
-[wu_user_updated]
-[wu_user_deleted_action]
-[wu_user_updated_action]
-[wu_user_created_action]
-[wu_user_deleted_action_hook]
-[wu_user_updated_action_hook]
-[wu_user_created_action_hook]
-```
-
-**הערה חשובה:**
-מאחר שאין הקשר ברור למהות הווים הללו (האם הם ווים של WordPress, או ווים ספציפיים של תוסף מסוים), השארתי את הרשימה כפי שהיא, תוך הוספת הווים נפוצים של WordPress כדי להשלים את המבנה. אם תספק הקשר נוסף, אוכל להשלים את הרשימה בצורה מדויקת יותר.
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — מסנן אם מותר להמשיך עם הבקשה או לא.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — מסנן אם מותר להמשיך עם הבקשה או לא.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — מסנן אם מותר להמשיך עם הבקשה או לא.
+- [wu_return_url](./Filters/wu_return_url) — מאפשר למפתחים לשנות את URL החזרה של השער המשמש לאחר תהליכי התשלום.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — מאפשר למפתחי תוספים להוסיף פונקציות נוספות של מודלי חיפוש.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — מאפשר למפתחים להוסיף שלבי אשף התקנה נוספים.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — מסנן האם Ultimate Multisite צריך ליצור רשומת דומיין עבור אתר שנוצר לאחרונה.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — מאפשר למפתחים לעקוף את ההפניה, ולמנוע את התרחשותה.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — מאפשר שכתוב של מטפל
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — מסנן את הפעולות המרוכזות הזמינות לאתרים.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — מסנן לשינוי הערך עבור get pluginssites בתוך הרשת.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — הפעלה/השבתה של יכולת כניסה יחידה בין דומיינים.
+- [wu_sso_url](./Filters/wu_sso_url) — מסנן כתובות URL של SSO שנוצרו לפני שהן מוחזרות עבור פעולות לקוח בין דומיינים.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — מסנן נתוני Stripe Subscription. יכול לעקוף את success_url או cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — מסנן את ארגומנטי כוונת התשלום.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — מסנן את המזהה של התוכנית שיש לבדוק. אם זה קיים, המנוי החדש ישתמש בתוכנית זו.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — מסנן את המזהה של המוצר שיש לבדוק. אם זה קיים, המנוי החדש ישתמש במוצר זה.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — מסנן את ערך idempotency_key שנשלח עם אפשרויות החיוב של Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — מסנן את רשומת החברות המשויכת ל-webhook זה.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — מסנן את מטא הנתונים לפני שהם עוברים סריאליזציה לאחסון במסד הנתונים.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — מסנן את נתוני האובייקט לפני שהם מאוחסנים במסד הנתונים.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — מאפשר למפתחים לשנות את URL השדרוג לפתיחה
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — קובע האם יש להשתמש במיפוי
+- [wu_username_from_email](./Filters/wu_username_from_email) — מסנן שם משתמש חדש של לקוח.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — מאפשר למפתחים לשנות את ההודעה על מגבלת המשתמשים בחברות
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — מאפשר למפתחים להוסיף תיקיות נוספות לרשימה הניתנת להחלפה.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — מסנן אילו sub_commands מופעלות עבור ישות זו.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — אנו בודקים שלוש תבניות כאשר מנסים להבין היכן ניתן להזריק את הקבועים שלנו:

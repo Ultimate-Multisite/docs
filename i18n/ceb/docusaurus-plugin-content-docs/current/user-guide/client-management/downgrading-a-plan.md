@@ -3,13 +3,13 @@ title: Pag-downgrade sa Plano
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Pagbaba sa plano (v2)
+# Pagbaba sa plano (v2) {#downgrading-a-plan-v2}
 
 _**MAHINUNGAN: Kini nga artikulo nagtumong sa Ultimate Multisite version 2.x.**_
 
 Ang pag-downgrade sa plano o subscription usa ka kasagaran nga buhat nga mahimo himuon sa inyong mga kliyente kung sila adunay limitado nga budget o kung nagdesisyon silang dili na kinahanglan og daghang resources aron ma-run ang ilang subsite.
 
-## Unsaon pag-downgrade sa plano
+## Unsaon pag-downgrade sa plano {#how-to-downgrade-a-plan}
 
 Mahimo sa inyong mga kliyente i-downgrade ang ilang plano bisan kanus-a pinaagi sa pag-login sa admin dashboard sa ilang subsite ug pag-click sa **Change** ubos sa ilang account page.
 
@@ -25,7 +25,7 @@ Aron magpadayon ang user, kinahanglan lang nila i-click ang **Complete Checkout*
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Unsa ang mahitabo kung mag-downgrade ang usa ka user sa ilang plano
+### Unsa ang mahitabo kung mag-downgrade ang usa ka user sa ilang plano {#what-happens-when-a-user-downgrades-their-plan}
 
 Importante nga masabtan nga ang pag-downgrade sa plano dili mag-usab sa kasamtangang configuration sa subsite sa user.
 
@@ -37,7 +37,7 @@ Para sa mga post nga mo-overload sa limit nga gi-set sa plano, naa kay 3 ka pama
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Unsa ang mahitabo sa bayad
+### Unsa ang mahitabo sa bayad {#what-happens-to-the-payment}
 
 Sa version 2.0, dili na kinahanglan nga maghimo og bisan unsang adjustment sa pag-proration sa bayad.
 

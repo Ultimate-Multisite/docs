@@ -3,11 +3,11 @@ title: Aaforderige
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite Aaforderige
+# Ultimate Multisite Aaforderige {#ultimate-multisite-requirements}
 
 S'erscht, wat Sie sich fröge chönnte, bevor Sie Ultimate Multisite chaufe, sind d'Aaforderige, um üse Plugin laufe z'lah. Glücklicherwiis git's nur e paar grundlegendi Aaforderige für de Betrieb vo Ultimate Multisite: en **Domainname**, en guete **Hosting-Provider** und en WordPress **Multisite** Installation. Das isch alles, was Sie bruuche!
 
-## Domainname
+## Domainname {#domain-name}
 
 Zuerst redet mer über de Domainname.
 
@@ -17,7 +17,7 @@ Wenn Sie en Domainname wähle, beachte Sie, was Ihre spezifische Nische isch und
 
 Jede Nische, wo Sie wähle, cha mit üsem Plugin verwaltet werde, solang Sie Websites als Service verchaufe! Sorge Sie dafür, dass Sie en Domainname wähle, wo zu Ihrem Geschäftsplan passt.
 
-## Hosting-Provider
+## Hosting-Provider {#hosting-provider}
 
 Jetzt, wo Sie en passende Domainname händ, wo Ihre Nische und Ihr Gschäft repräsentiert, müesse Sie en guete Webhosting-Unternehme wähle, um Ihr Netzwerk mit Ultimate Multisite z'hoste. Es git e paar gueti Option uf em Markt. E paar Hosting-Provider integriere sich guet mit Ultimate Multisite, was abhängig devo, was Sie plane, en entscheidende Faktor chönnt si.
 
@@ -25,7 +25,7 @@ Ultimate Multisite söllech uf allne Hosting-Provider funktioniere. De einzig Un
 
 Wann es um Server-Spezifikationen gaht, git's kei spezifischi Formel, will das abhangt vo de Funktione und de Grössi vomene Netzwerk, wo Sie aabietet. E Shared Hosting chan en guete Start sii, aber sobald Ihr Netzwerk aafangt z'wachse, bruuched Sie wahrschinlich en Dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Jetzt redet mer chli über e WordPress Multisite Installation.
 

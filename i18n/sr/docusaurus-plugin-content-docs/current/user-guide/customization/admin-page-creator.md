@@ -3,7 +3,7 @@ title: Kreator administracije
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Kreator Administracije Stranica
+# Kreator Administracije Stranica {#admin-page-creator}
 
 Ovu funkciju pruža dodatak **Admin Page Creator**.
 

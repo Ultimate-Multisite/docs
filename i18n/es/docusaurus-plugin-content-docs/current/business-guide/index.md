@@ -3,13 +3,13 @@ title: Crear un negocio de sitio web de nicho
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Crea un negocio de sitios web de nicho con Ultimate Multisite
+# Crea un negocio de sitios web de nicho con Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 La mayoría de las personas que intentan vender sitios web compiten por precio contra Wix, Squarespace y miles de freelancers. Y pierden. Los que triunfan eligen un público específico, construyen una solución adaptada a ese público y cobran por el valor que entregan.
 
 Este curso te enseña exactamente cómo hacerlo usando Ultimate Multisite.
 
-## Lo que construirás
+## Lo que construirás {#what-you-will-build}
 
 A lo largo de este curso, construirás una red real y funcional llamada **FitSite**, una plataforma de sitios web creada específicamente para estudios de fitness, entrenadores personales y dueños de gimnasios.
 
@@ -23,7 +23,7 @@ Al finalizar la lección, FitSite será una plataforma de nicho completa con:
 
 Seguirás paso a paso, y al final tendrás tanto una plataforma funcional como el conocimiento para replicar el proceso para cualquier nicho que elijas.
 
-## ¿Por qué estudios de fitness?
+## ¿Por qué estudios de fitness? {#why-fitness-studios}
 
 Necesitábamos un ejemplo concreto que cualquiera pudiera seguir. Los estudios de fitness funcionan porque:
 
@@ -34,7 +34,7 @@ Necesitábamos un ejemplo concreto que cualquiera pudiera seguir. Los estudios d
 
 Todo lo que aprendas al construir FitSite se aplica directamente a cualquier nicho que elijas: restaurantes, agentes inmobiliarios, bufetes de abogados, iglesias, contratistas de obra o cualquier otro sector.
 
-## Estructura del curso
+## Estructura del curso {#course-structure}
 
 Cada lección presenta un concepto, explica por qué es importante y te guía en su implementación en la red FitSite. Cada lección se basa en la anterior.
 
@@ -55,7 +55,7 @@ Cada lección presenta un concepto, explica por qué es importante y te guía en
 | [13. Escalar](lesson-13-growth) | Crecer desde los primeros clientes hasta un negocio real | Estrategia de crecimiento y automatización de FitSite |
 | [14. Qué sigue](lesson-14-whats-next) | Expandirse a nichos adyacentes y nuevas oportunidades | Tu hoja de ruta más allá de FitSite |
 
-## Prerrequisitos
+## Prerrequisitos {#prerequisites}
 
 - Una instalación de WordPress Multisite (o disposición a configurarla)
 - Una licencia activa de Ultimate Multisite
@@ -63,6 +63,6 @@ Cada lección presenta un concepto, explica por qué es importante y te guía en
 
 No se requiere codificación. Si nunca has usado Ultimate Multisite, no hay problema: la Lección 3 comienza desde una instalación nueva.
 
-## ¿Listo?
+## ¿Listo? {#ready}
 
 Empieza con [Lección 1: Por qué el nicho gana](lesson-1-why-niche).

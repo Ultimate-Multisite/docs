@@ -3,11 +3,11 @@ title: Paghawak ng Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Pag-handle ng Webhook
+# Pag-handle ng Webhook {#webhook-handling}
 
 Gumawa ng custom webhook endpoints para makatanggap ng mga event mula sa mga external services at ma-sync ang data sa Ultimate Multisite.
 
-## Custom Webhook Endpoint
+## Custom Webhook Endpoint {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Mga Dapat Isaalang-alang sa Seguridad
+## Mga Dapat Isaalang-alang sa Seguridad {#security-considerations}
 
 - Palaging i-verify ang webhook signatures gamit ang HMAC o isang shared secret
 - Gumamit ng `permission_callback` sa iyong REST route — huwag na huwag itong itatakda sa `__return_true` sa production

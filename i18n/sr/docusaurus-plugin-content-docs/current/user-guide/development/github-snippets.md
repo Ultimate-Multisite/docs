@@ -3,7 +3,7 @@ title: GitHub Snippeti
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Kako koristiti Ultimate Multisite snippetove na našem GitHub repozitorijumu
+# Kako koristiti Ultimate Multisite snippetove na našem GitHub repozitorijumu {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 U GitHub repozitorijumu dostupne su kod fragmente (snippetovi) koje često traže korisnici Ultimate Multisite koji žele dodati male funkcije, poput dodavanja Google Analytics skripte na stranice za registraciju ili skrivanja meta box-a iz admin dashboard-a.
 
@@ -19,7 +19,7 @@ Postoje dva načina za dodavanje koda:
 
   2. Must-Use Plugins (mu-plugins).
 
-# Kako dodati snippet na datoteku functions.php vaše teme.
+# Kako dodati snippet na datoteku functions.php vaše teme. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Prijavite se u admin dashboard mreže WordPressa i idite na Themes > Theme Editor (Pogledajte sliku ispod).
 
@@ -29,7 +29,7 @@ Postoje dva načina za dodavanje koda:
 
 <!-- Slika nije dostupna: WordPress Theme Editor prikazuje uređivanje datoteke functions.php -->
 
-# Kako kreirati Must-Use Plugins (mu-plugins)
+# Kako kreirati Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress ima funkciju koja vam omogućava da učitate prilagođenu funkcionalnost zvanu "Must-Use Plugins", ili skraćeno "mu-plugins".
 

@@ -3,11 +3,11 @@ title: Keterampilan Sadar Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Keterampilan Sadar Tema
+# Keterampilan Sadar Tema {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 ngirimkeun opat keterampilan bawaan sadar tema anyar anu otomatis nyanggoa kana tema WordPress aktif anjeun. Keterampilan ieu miboga panduan jeung kapabilitas khusus anu disesuaikan jeung arsitektur jeung fitur tema anjeun.
 
-## Naon éta Keterampilan Sadar Tema?
+## Naon éta Keterampilan Sadar Tema? {#what-are-theme-aware-skills}
 
 Keterampilan sadar tema téh nyaéta basis pangaweruh jeung susunan alat (tool set) anu geus dikonfigurasi sadayana, nu otomatis dipilih ku asisten AI dumasar kana tema WordPress anu keur aktif di situs anjeun. Lamun anjeun ganti tema, keterampilan anu bisa dipaké ku asisten bakal otomatis obah — teu perlu konfigurasi manual.
 
@@ -18,9 +18,9 @@ Unggal keterampilan ngandung:
 - **Conto kustomisasi** — cuplikan kode jeung pola konfigurasi pikeun tugas-tugas umum
 - **Praktik panghadéna (Best practices)** — rekomendasi pikeun arsitektur jeung alur kerja tema
 
-## Keterampilan Sadar Tema anu Tersedia
+## Keterampilan Sadar Tema anu Tersedia {#available-theme-aware-skills}
 
-### Tema Blok (Block Themes)
+### Tema Blok (Block Themes) {#block-themes}
 
 **Ngagunake:** Tema anu ngagunake arsitektur berbasis blok WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Keterampilan Block Themes miboga panduan ngeunaan:
 
 **Aktif otomatis lamun:** Tema aktif anjeun téh nyaéta tema blok (mendukung fitur `block-templates`).
 
-### Tema Klasik (Classic Themes)
+### Tema Klasik (Classic Themes) {#classic-themes}
 
 **Ngagunake:** Tema WordPress tradisional anu ngagunake template PHP jeung editor klasik.
 
@@ -48,7 +48,7 @@ Ngartos hierarki tema sareng template tag
 
 **Otomatika aktif nalika:** Tema aktif anjeun nyaéta tema klasik (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Cocok pikeun:** Situs anu ngagunake plugin Kadence Blocks kanggo desain berbasis blok anu leuwih maju.
 
@@ -62,7 +62,7 @@ Keterampilan Kadence Blocks miboga panduan ngeunaan:
 
 **Otomatika aktif nalika:** Plugin Kadence Blocks aktif dina situs anjeun.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Cocok pikeun:** Situs anu ngagunake tema Kadence kanggo desain berbasis blok sareng kustomisasi.
 
@@ -76,15 +76,15 @@ Keterampilan Kadence Theme miboga panduan ngeunaan:
 
 **Otomatika aktif nalika:** Tema Kadence nyaéta tema aktif anjeun.
 
-## Kumaha Keterampilan Dipilih
+## Kumaha Keterampilan Dipilih {#how-skills-are-selected}
 
 Asisten bakal ngadeukeutan (detect) tema aktif sareng plugin anu dipasang dina unggal pesan. Upami aya keterampilan anu cocog jeung tema, éta bakal otomatis dimuat dina konteks asisten. Anjeun teu perlu ngaktifkeun atanapi ngarobah keterampilan sacara manual.
 
-### Keterampilan Bagea
+### Keterampilan Bagea {#multiple-skills}
 
 Lamun aya anjeun nganggo sababaraha *skill* (keterampilan) pikeun situs anjeun (contona, lamun anjeun keur Kadence Blocks jeung Kadence Theme aktif), asisten bakal bisa ngagunake sadaya *skill* anu relevan jeung bisa nyarakeun panduan ti masing-masing.
 
-### Ngaganti Tema (*Switching Themes*)
+### Ngaganti Tema (*Switching Themes*) {#switching-themes}
 
 Lamun anjeun ganti tema anu aktif, *skill* anu bisa dipaké ku asisten bakal otomatis diupdate dina pesen salajengna. Contona:
 
@@ -92,11 +92,11 @@ Lamun anjeun ganti tema anu aktif, *skill* anu bisa dipaké ku asisten bakal oto
 2. Anjeun ganti ka tema klasik (*classic theme*).
 3. Dina pesen salajengna, *skill* **Classic Themes** bakal otomatis dimuat, sarta *skill* **Block Themes** geus teu bisa dipaké deui.
 
-## Ngagunake *Skill* Anu Ngarti Tema (*Using Theme-Aware Skills*)
+## Ngagunake *Skill* Anu Ngarti Tema (*Using Theme-Aware Skills*) {#using-theme-aware-skills}
 
 Mun hayang ngagunake *skill* anu ngarti tema, cukup jelaskeun naon anu anjeun hoyong dilakukeun dina antarmuka *chat*. Asisten bakal otomatis nyarakeun panduan ti *skill* anu pas.
 
-### Conto *Prompt* (*Example Prompts*)
+### Conto *Prompt* (*Example Prompts*) {#example-prompts}
 
 **Kanggo Block Themes:**
 > "Buat bagian hero jeung gambar latar jeung téks di tengah nganggo pola blok."

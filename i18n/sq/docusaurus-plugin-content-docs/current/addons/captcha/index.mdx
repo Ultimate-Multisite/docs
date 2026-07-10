@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Ndaloni botët. Mbroni të ardhurat. Pa telashe konfigurimi.**
+
+Po drejtoni një rrjet multisite me domene të personalizuara? E njihni dhimbjen: Google reCAPTCHA dhe hCaptcha kërkojnë që të regjistroni *çdo domen të vetëm* në konsolën e tyre të administrimit. Shtoni një site të ri klienti? Përditësoni konfigurimin e captcha-s. Hartëzoni një domen të personalizuar? Përditësoni sërish. Nuk mbaron kurrë.
+
+**Ultimate Multisite: Captcha ndryshon gjithçka.**
+
+## Cap Captcha: Mbrojtje e vetë-hostuar që thjesht funksionon {#cap-captcha-self-hosted-protection-that-just-works}
+
+Ofruesi ynë i ri **Cap Captcha** është një ndryshim rrënjësor për rrjetet multisite:
+
+* **Zero konfigurim** — Aktivizoni addon-in dhe jeni të mbrojtur. Pa API keys, pa llogari Google, pa hCaptcha dashboard, pa listë të bardhë domenesh.
+* **Funksionon automatikisht në çdo domen** — Nëndomene, domene të hartëzuara, domene klientësh—të gjitha mbrohen menjëherë.
+* **I vetë-hostuar dhe privat** — Të dhënat tuaja nuk largohen kurrë nga serveri juaj. Plotësisht në përputhje me GDPR, pa gjurmim nga palë të treta.
+* **Proof-of-Work i padukshëm** — Përdoruesit zgjidhin një enigmë llogaritëse në sfond. Pa klikime hidrantesh zjarri, pa rrjete imazhesh frustruese.
+* **I lehtë** — Vetëm 20KB. Nuk do ta ngadalësojë checkout-in tuaj.
+
+## Mbrojtje nga testimi i kartave në WooCommerce {#woocommerce-card-testing-protection}
+
+Sulmet e testimit të kartave u kushtojnë tregtarëve miliarda çdo vit. Mashtruesit përdorin botë për të validuar karta krediti të vjedhura kundrejt checkout-it tuaj WooCommerce—ju paguani tarifat e përpunimit, ata marrin numra kartash të vlefshëm.
+
+**Ne mbrojmë aty ku ka më shumë rëndësi:**
+
+* **Mbrojtje e Store API** — Bllokon sulmet e botëve në `/wp-json/wc/store/v1/checkout` që anashkalojnë captcha-t tradicionale të formularëve
+* **I pajtueshëm me PayPal Payments** — Funksionon pa probleme me WooCommerce PayPal Payments
+* **Statistika në kohë reale** — Shihni saktësisht sa sulme po bllokoni
+
+## Ende keni nevojë për Google reCAPTCHA ose hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Ju kemi mbuluar. Mbështetje e plotë për:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Kaloni nga një ofrues te tjetri në çdo kohë nga cilësimet e rrjetit tuaj.
+
+## Ndërtuar për shkallëzim {#built-for-scale}
+
+* Cilësime për të gjithë rrjetin me mbishkrime për çdo site
+* Dashboard statistikash për të monitoruar mbrojtjen
+* Nivele sigurie të rregullueshme (I shpejtë, Mesatar, Maksimal)
+* Miqësor për zhvilluesit me arkitekturë të zgjerueshme ofruesish
+
+## Instalimi {#installation}
+
+1. Ngarkoni `ultimate-multisite-captcha` në drejtorinë tuaj `/wp-content/plugins/`
+2. Aktivizoni plugin-in në rrjet
+3. **Kaq. Jeni të mbrojtur.**
+
+Cap Captcha aktivizohet automatikisht—pa cilësime për të konfiguruar, pa API keys për të futur. Çdo endpoint i mbështetur në të gjithë rrjetin tuaj mbrohet në momentin që aktivizoni.
+
+**Opsionale:** Për të përdorur Google reCAPTCHA ose hCaptcha në vend të tij, shkoni te **Ultimate Multisite → Settings → Captcha** dhe zgjidhni ofruesin tuaj të preferuar.
+
+## Pyetje të bëra shpesh {#frequently-asked-questions}
+
+## A duhet të konfiguroj diçka? {#do-i-need-to-configure-anything}
+
+Jo! Cap Captcha aktivizohet automatikisht kur aktivizoni addon-in. I gjithë rrjeti juaj mbrohet menjëherë—pa cilësime për të konfiguruar, pa API keys për të futur.
+
+## A më duhen API keys për Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Jo. Cap Captcha është plotësisht i vetë-hostuar. Pa llogari të jashtme, pa regjistrim domeni, pa dhimbje koke konfigurimi.
+
+## A do ta ngadalësojë kjo checkout-in tim? {#will-this-slow-down-my-checkout}
+
+Cap Captcha është vetëm 20KB dhe ekzekuton sfida proof-of-work në sfond. Klientët tuaj nuk do të vënë re asnjë vonesë.
+
+## A mbron kjo nga sulmet e testimit të kartave? {#does-this-protect-against-card-testing-attacks}
+
+Po! Ndryshe nga captcha-t tradicionale që mbrojnë vetëm formularët HTML, integrimi ynë WooCommerce lidhet drejtpërdrejt me Store API për të bllokuar sulmet e botëve në nivel API—aty ku ndodhin shumica e sulmeve të testimit të kartave.
+
+## A mund të përdor ofrues të ndryshëm captcha në site të ndryshme? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Ofruesi i captcha-s vendoset për të gjithë rrjetin, por mund të rregulloni cilësimet e vështirësisë sipas nevojave tuaja.
+
+## A është kjo në përputhje me GDPR? {#is-this-gdpr-compliant}
+
+Cap Captcha është 100% i vetë-hostuar, pa të dhëna të dërguara te shërbime të jashtme. Për Google reCAPTCHA dhe hCaptcha, ju lutemi rishikoni politikat përkatëse të privatësisë.
+
+## Kufizimi i normës {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 prezanton një kufizues norme me ndalim të fortë që mbron rrjetin tuaj nga sulmet brute-force dhe të testimit të kartave.
+
+### Si funksionon {#how-it-works}
+
+Kufizuesi i normës numëron çdo kërkesë GET dhe POST në sipërfaqet e mbrojtura nga captcha:
+
+* **Endpoint-et e hyrjes në WordPress** — wp-login, register, lost-password, comments
+* **Checkout i WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Kur një vizitor tejkalon kufirin e normës, plugin-i përgjigjet me:
+
+* Kod statusi **HTTP 429 (Shumë kërkesa)**
+* Header **Retry-After** që tregon kur të riprovohet
+* **Vonesë tarpit e rastësishme** (1–5 sekonda si parazgjedhje, e kufizuar fort në 15 sekonda) për të ngadalësuar sulmuesit
+
+### Konfigurimi {#configuration}
+
+#### Koha e tarpit {#tarpit-timing}
+
+Kontrolloni vonesën e rastësishme të aplikuar ndaj kërkesave të kufizuara nga norma:
+
+* **`cap_rate_limit_tarpit_min`** — Kohëzgjatja minimale e gjumit në sekonda (parazgjedhje: 1)
+* **`cap_rate_limit_tarpit_max`** — Kohëzgjatja maksimale e gjumit në sekonda (parazgjedhje: 5, e kufizuar fort në 15)
+
+Këto cilësime janë të disponueshme në **Ultimate Multisite → Settings → Captcha**.
+
+### Zgjerueshmëria {#extensibility}
+
+#### Filtër i listës së bardhë të IP-ve {#ip-whitelist-filter}
+
+Përjashtoni diapazone IP të besuara nga kufizimi i normës:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Veprim para bllokimit {#pre-block-action}
+
+Ekzekutoni logjikë të personalizuar menjëherë përpara se të dërgohet një bllokim i kufizimit të normës:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Zbulimi i IP-së së klientit dhe proxy të besuar {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 prezanton zbulim të IP-së së klientit rezistent ndaj spoofing. Metoda `Captcha_Core::get_client_ip()` tani është burimi i vetëm i së vërtetës për atribuimin e IP-së së vizitorit në:
+
+* Çelësat e bucket-eve për kufizimin e normës
+* `remoteip` i ofruesit Captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hash-et e IP-ve të statistikave
+
+### Modeli i Besimit {#trust-model}
+
+Shtojca zbaton një hierarki të rreptë besimi për IP-të:
+
+1. **REMOTE_ADDR** — Gjithmonë e besuar (IP-ja e peer-it të menjëhershëm)
+2. **CF-Connecting-IP** — Respektohet vetëm kur:
+   - Peer-i i menjëhershëm është brenda një diapazoni aktual IP të Cloudflare
+   - `cap_trust_cloudflare_headers` është i aktivizuar (parazgjedhja: OFF)
+3. **X-Forwarded-For** — Respektohet vetëm kur:
+   - Peer-i i menjëhershëm është në listën tënde të proxy-ve të besuar të konfiguruar nga administratori
+   - Header-i analizohet nga e djathta në të majtë, duke anashkaluar hop-et e besuara/Cloudflare
+
+### Konfigurimi {#configuration-1}
+
+#### Besimi i Header-it Cloudflare {#cloudflare-header-trust}
+
+Aktivizo besimin e header-it `CF-Connecting-IP` të Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Vendose në ON për të zgjedhur besimin te `CF-Connecting-IP`
+  - Parazgjedhja: OFF (i çaktivizuar)
+  - Shtojca vjen me një snapshot të përfshirë të CIDR-ve të Cloudflare
+  - Diapazonet CIDR rifreskohen çdo javë përmes wp-cron
+  - Fallback-u i përfshirë përdoret nëse rifreskimi dështon
+
+#### Konfigurimi i Proxy-ve të Besuar {#trusted-proxy-configuration}
+
+Përcakto proxy-t dhe load-balancer-at e vijës së parë:
+
+* **`cap_trusted_proxies`** — Fushë teksti e CIDR-ve ose IP-ve të thjeshta (një për rresht)
+  - Komentet lejohen (rreshtat që fillojnë me `#`)
+  - Pa këtë cilësim, `X-Forwarded-For` shpërfillet edhe kur kufizuesi i normës është i aktivizuar
+  - Shembull:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Zbulimi Automatik në Aktivizimin e Parë {#first-enable-auto-detection}
+
+Kur e aktivizon për herë të parë kufizuesin e normës, shtojca zbulon qëndrimin tënd të mundshëm për Cloudflare dhe proxy dhe shfaq një njoftim administratori me një klikim "Apliko cilësimet e zbuluara".
+
+* Shtojca **nuk i mbishkruan kurrë** vlerat e tua të ruajtura
+* Nëse trafiku i mëvonshëm sugjeron se konfigurimi yt nuk përputhet më me realitetin (p.sh., Cloudflare ndryshoi diapazonet CIDR), një njoftim mospërputhjeje që nuk mund të hiqet shfaq përditësimin e rekomanduar
+
+### Pse Kjo Ka Rëndësi {#why-this-matters}
+
+Një model i rreptë besimi për IP-të mbyll një vektor kritik falsifikimi: kërkesat e drejtpërdrejta drejt serverit të origjinës që mbajnë një header të falsifikuar `CF-Connecting-IP` më parë do të ishin futur në bucket sipas IP-së së falsifikuar në vend të peer-it real. Kjo është veçanërisht e rëndësishme për:
+
+* **Kufizimin e normës** — Sulmuesit nuk mund t’i anashkalojnë kufijtë duke falsifikuar IP-të
+* **Statistikat** — Metrikat e sulmeve të tua pasqyrojnë IP-të reale të vizitorëve, jo ato të falsifikuara
+* **Verifikimin Captcha** — Ofruesit marrin IP-në e saktë të vizitorit për vlerësimin e rrezikut

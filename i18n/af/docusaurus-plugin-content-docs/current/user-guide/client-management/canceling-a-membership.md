@@ -3,7 +3,7 @@ title: Abonnement kanselleer
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Om 'n Lidmaatskap te Kanselleer (v2)
+# Om 'n Lidmaatskap te Kanselleer (v2) {#canceling-a-membership-v2}
 
 _**BELANGRIKE LETSEL: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 

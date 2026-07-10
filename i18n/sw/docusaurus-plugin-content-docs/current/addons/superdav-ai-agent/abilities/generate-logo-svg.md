@@ -3,15 +3,15 @@ title: Tengeneza Logo SVG
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# Kutengeneza Logo ya SVG
+# Kutengeneza Logo ya SVG {#generate-logo-svg}
 
 Uwezo wa **Kutengeneza Logo ya SVG** unaruhusu Theme Builder kutengeneza na kuingiza logo za SVG za kipekee moja kwa moja kwenye tovuti yako ya WordPress, huku ukifanya usafishaji wa kiotomatiki ili kuhakikisha usalama wa jina (namespace-safe sanitisation).
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Uwezo huu unatengeneza logo za grafiki za vector zinazopanuka (SVG) kulingana na mwelekeo wa chapa (branding) na mapendeleo yako ya usanifu wa tovuti. SVG zilizotengenezwa hizi hinasafishwa kiotomatiki kuhakikisha ni salama kutumika kwenye WordPress huku zikiweka ubora wa kuonekana.
 
-## Vigezo
+## Vigezo {#parameters}
 
 | Kigezo | Aina | Lazima | Maelezo |
 |---|---|---|---|
@@ -22,7 +22,7 @@ Uwezo huu unatengeneza logo za grafiki za vector zinazopanuka (SVG) kulingana na
 | `height` | number | Hapana | Urefu wa SVG kwa pikseli (kiwango: 200) |
 | `include_text` | boolean | Hapana | Kama kuingiza jina la tovuti kama maandishi kwenye logo (kiwango: true) |
 
-## Muundo wa Matokeo
+## Muundo wa Matokeo {#output-format}
 
 Uwezo huu unarudisha (return) msimbo wa SVG wenye muundo ufuatao:
 
@@ -36,7 +36,7 @@ Uwezo huu unarudisha (return) msimbo wa SVG wenye muundo ufuatao:
 }
 ```
 
-## Utaratibu wa Kusafisha SVG
+## Utaratibu wa Kusafisha SVG {#svg-sanitisation-behaviour}
 
 SVG zilizotengenezwa hizi hupitia usafishaji kiotomatiki ili kuhakikisha usalama wa nafasi ya jina (namespace-safe sanitisation) kwa:
 
@@ -48,7 +48,7 @@ SVG zilizotengenezwa hizi hupitia usafishaji kiotomatiki ili kuhakikisha usalama
 
 Hii inahakikisha kuwa SVG ni salama kuingizwa moja kwa moja kwenye WordPress bila kuhitaji usafishaji wowote wa ziada.
 
-## Mfano wa Matumizi
+## Mfano wa Matumizi {#usage-example}
 
 **Ombi:**
 ```
@@ -62,7 +62,7 @@ Uwezo huu unaunda logo ya SVG ambayo:
 - Inafuata kanuni za usanifu wa kisasa
 - Imesafishwa kiotomatiki na tayari kwa matumizi
 
-## Uunganishaji na Theme Builder
+## Uunganishaji na Theme Builder {#integration-with-theme-builder}
 
 Unapotumia uchaguzi wa mwelekeo wa usanifu (design-direction selection) wa Theme Builder, uwezo wa Kutengeneza Logo ya SVG:
 
@@ -71,21 +71,21 @@ Unapotumia uchaguzi wa mwelekeo wa usanifu (design-direction selection) wa Theme
 3. Inaingizwa kiotomatiki kwenye eneo la kichwa/chapa ya tovuti yako.
 4. Inahifadhi SVG kama logo maalum kwenye media ya WordPress.
 
-## Mazoea Bora
+## Mazoea Bora {#best-practices}
 
 - **Toa mapendeleo ya mtindo wazi** — elezea mtindo wa usanifu unaohitaji (kisasa, wa kihistoria, wa kuchezea, n.k.).
 - **Taja rangi** — jumuisha rangi za chapa yako kwa ushirikiano.
 - **Jaribu kuonyesha** — thibitisha kuwa logo inaonekana vizuri kwenye ukubwa tofauti wa skrini.
 - **Badilisha zaidi** — tumia zana za kubadilisha logo za WordPress ili kurekebisha ukubwa na nafasi.
 
-## Mapungufu
+## Mapungufu {#limitations}
 
 - Logo za SVG hutengenezwa kama grafiki za kimakumi (si za kuchezewa/animated).
 - Logo tata zenye vipengele vingi zinaweza kuhitaji marekebisho ya mikono.
 - Fonts za kipekee hazisafishwa; maandishi hutumia fonts za mfumo.
 - Vipimo vikubwa sana au vidogo sana vinaweza kuathiri ubora.
 
-## Uwezo Zinazohusiana
+## Uwezo Zinazohusiana {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — angalia tofauti ya rangi kwa ajili ya uwezo wa kuona.
 - [Create Menu](./create-menu.md) — tengeneza menyu za urambazaji kwa tovuti yako

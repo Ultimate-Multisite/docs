@@ -3,11 +3,11 @@ title: Mintaanyag
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Újraírókönyv
+# Újraírókönyv {#changelog}
 
-## 1.9.0 — Kiadás dátuma: 2026-04-28
+## 1.9.0 — Kiadás dátuma: 2026-04-28 {#190--released-on-2026-04-28}
 
-### Új
+### Új {#new}
 
 - **`create_contact_form` képesség** — létrehoz egy kapcsolatfelvételi űrlapot az aktív form plugin segítségével (Contact Form 7, WPForms, Fluent Forms vagy Gravity Forms), és visszaad egy shortcode-ot, amit bármilyen bejegyzésbe vagy oldalba beágyazhat.
 - **`set_featured_image` képesség** — küldívásképes képet rendel egy bejegyzéshez vagy oldalhoz egy meglévő Média könyvtár melléklet ID-jéből vagy egy távoli URL-ről; ha URL-t adunk meg, automatikusan letölti a képet.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Utolsó munkamenet visszaállítása** — a chat panel most automatikusan tölti be az utolsó conversations-t a lap betöltésekor és a widget megnyitásakor, így a kontextus soha nem veszíthető el az oldalak navigációja során.
 - **Plugin akció linkek** — gyors linkek a Beállításokhoz és az Abilities Registry-hez most láthatók a WordPress **Plugins → Installed Plugins** képernyőjén, a plugin leírása alatt.
 
-### Javított
+### Javított {#improved}
 
 - **Képtelenség forrás újrapróbálása** — az agent most újrapróbálja az összes konfigurált ingyenes képforrást, mielőtt a letöltés sikertelenítésekor egy AI által generált képre térne vissza.
 - **Model info panel (Model információ panel)** — mindig látható a chat fejezetében; nem rejtődik el az első üzenet után.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget újraarruházítása** — egységes AI ikon helyettesíti az előző testre szabott avatarot; konzisztens az beépített agent rendszerrel.
 - **URL linkification (URL linkelés)** — az üzenetekben és hibaüzenetek buborékain megjelenő URL-ek most kattintható linkekként jelennek meg.
 
-### Javított
+### Javított {#fixed}
 
 - **Képesség felfedezhetősége** — javítottuk a leírásokat, a rendszerprompt hivatkozásokat és a namespace igazítását, így minden képesség megbízhatóan megjelenik az agent eszközlistájában.
 - **Provider cache (Szolgáltató cache)** — a szolgáltatókat most a teljes oldal szinten egy verzió számláló segítségével cache-lik, megakadályozva a régi szolgáltató problémákat a multisite hálózatokon.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Kiadás dátuma: 2026-04-09
+## 1.4.0 — Kiadás dátuma: 2026-04-09 {#140--released-on-2026-04-09}
 
-### Új
+### Új {#new-1}
 
 - **WP-CLI benchmark command (`wp gratis-ai-agent benchmark`)** — futtatja az Agent Capabilities v1 benchmark suite-et a command line-on CI pipeline-ekhez és modellevaluáció munkafolyamatokhoz. Támogatja a kérdésenkénti futtatást, szolgáltató/modell átírását, és JSON/CSV kimenetét.
 - **Agent Capabilities v1 benchmark suite (Agent képességek v1 benchmark suite)** — egy strukturált, komplex, több lépéses promptok összeállítása, amely teszteli az összes képességi felületet, pontszámítás és token/tartam jelentéssel.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question (`q-restaurant-website`)** — end-to-end teszt, amely magában foglalja a CPT regisztrációt, a design rendszert, a navigációt és a plugin felfedezését.
 - **AI provider connector plugins** hozzáadva a WordPress Playground blueprints-ekhez, gyorsabb helyi fejlesztési beállítás érdekében.
 
-### Javított
+### Javított {#improved-1}
 
 - Frissítve az README fájl az AI provider connector dokumentációjával és beállítási utasításokkal.
 
-### Javított
+### Javított {#fixed-1}
 
 - 25 PHPUnit tesztelési hiba javítva a `main` branch-en.
 - A GitHub releases URL formátuma javítva a `blueprint.json`-ban.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Az előző kiadási jegyzetek a plugin repozitóriumban érhetők el._

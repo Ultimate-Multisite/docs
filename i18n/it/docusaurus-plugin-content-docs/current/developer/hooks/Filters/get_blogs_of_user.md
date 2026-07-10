@@ -4,13 +4,13 @@ title: Filtro - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filtro: get_blogs_of_user
+# Filtro: get_blogs_of_user {#filter-getblogsofuser}
 
 Replica qui il filtro WP originale, per sicurezza.
 
 Filtra l'elenco dei siti a cui l'utente appartiene.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -18,10 +18,10 @@ Filtra l'elenco dei siti a cui l'utente appartiene.
 | $user_id | `int` | ID utente. |
 | $all | `bool` | Se l'array di siti restituito dovrebbe contenere tutti i siti, inclusi quelli contrassegnati come 'deleted', 'archived' o 'spam'. Default false. |
 
-### Versione
+### Versione {#since}
 
 - 2.0.11
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) alla riga 851

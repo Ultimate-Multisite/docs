@@ -3,13 +3,13 @@ title: Ang Daloy sa Pagparehistro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ang Proseso sa Pag-register (v2)
+# Ang Proseso sa Pag-register (v2) {#the-registration-flow-v2}
 
 _**MAHALAGANG PAHIBALO: Kini nga artikulo nagrefer sa Ultimate Multisite version 2.x.**_
 
 Ang mga user pwede mag-register sa inyong network pinaagi sa lain-laing paagi. Mahimo nila gamiton ang inyong registration form o usa ka shareable link ngadto sa usa ka pre-selected plan. Atong ipakita diri kung unsaon pag-register sa inyong mga customer sa inyong network gamit ang mga available nga dalan ug unsa ang mahitabo human sila mag-register sa inyong network.
 
-## Paggamit sa Registration Form:
+## Paggamit sa Registration Form: {#using-the-registration-form}
 
 Kini mao ang standard nga proseso sa pag-register. Maghimo ka og registration page nga adunay **checkout form** ug dinhi na mosulod ang imong mga customer aron mag-register sa inyong network ug mag-subscribe sa usa ka plan. Mahimo kang maghimo og daghang registration pages, matag usa nga adunay lain nga registration form kung gusto nimo.
 
@@ -35,13 +35,13 @@ Kung nag-register sila sa paid plan o kung wala kini obligasyon nga mag-verify s
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Paggamit og Shareable Link:
+## Paggamit og Shareable Link: {#using-a-shareable-link}
 
 Ang proseso sa pag-register gamit ang shareable link halos pareho ra sa registration form, ang nag-inusarang kalainan kay pinaagi sa shareable link, ang mga customer ninyo makapili na og product o website template sa checkout form (tan-awa ang seksyon Pre-selecting products and templates via URL parameters) o basin adunay coupon code nga gidugang (tan-awa ang seksyon Using URL Parameters).
 
 Ang proseso sa pag-register pareho ra: kinahanglan nila i-fill ang ilang ngalan, username, email address, website name ug title, ug uban pa... pero ang plan o site template kay pre-selected na para kanila.
 
-### Pag-register Gamit og Manual Payments:
+### Pag-register Gamit og Manual Payments: {#registering-using-manual-payments}
 
 Kung dili ninyo gusto gamiton ang PayPal, Stripe o bisan unsang gateway sa bayad nga gihatag sa Ultimate Multisite o sa mga add-on integrations niini, pwede kamo mogamit og manual payments para sa inyong mga customer. Sa paagi ani, makahimo mo og invoice para sila mobayad sa inyong gusto nga payment processor human mag-register sila sa inyong network.
 

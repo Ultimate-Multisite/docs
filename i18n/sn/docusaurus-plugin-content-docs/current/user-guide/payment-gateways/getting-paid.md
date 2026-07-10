@@ -1,124 +1,126 @@
 ---
-title: Kuvumbwa
+title: Kubhadharwa
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kuva (v2)
+# Kubhadharwa (v2) {#getting-paid-v2}
 
-_**CHINDIRA CHINDIRA: Iriro iri rudo!**_
+_**CHERECHEDZO CHINOKOSHA: Chinyorwa ichi chinoreva Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite inenge neenda kune nzira dzinogona kuita membership uye kuita billing. Kuti nzira yedu ya billing ine zvinhu, tinenge tichingira (integrate) zvinangwa dzakakodzera dzakasiyana-siyana dzinogona kuita payment kubva pamweche wese we e-commerce. Zvinangwa dzakakodzera dziri kune Ultimate Multisite ndezvinhu zvakakosha neStripe, PayPal, uye Payment yakaita manual (Manual Payment). Unogona kuda kuchengetedza WooCommerce, GoCardless, uye Payfast kuti uone payment nekubata add-ons dzavo.
+Ultimate Multisite ine membership nehurongwa hwekubhadharisa hwakavakirwa mukati. Kuti hurongwa hwedu hwekubhadharisa hushande, takabatanidza payment gateways anonyanya kushandiswa mu e-commerce. Payment gateways ekutanga muUltimate Multisite ndi _Stripe_ , _PayPal_ , uye Manual Payment. Unogonawo kushandisa _WooCommerce_ , _GoCardless_ ne _Payfast_ kugamuchira mubhadharo nekuiisa ma-add-ons awo akakodzera.
 
-## Settings Dziri Kune Mazuva Akapfuma (Basic Settings)
+## Zvirongwa Zvekutanga {#basic-settings}
 
-Unogona kuita zvinhu izvi kune zvinangwa dzinopfuura (payment gateways) pane Ultimate Multisite payment settings. Unogona kunzwisisa nekuenda ku **Ultimate Multisite menu > Settings > Payments.**
+Unogona kugadzirisa chero eaya payment gateways pasi pezvirongwa zvekubhadhara zveUltimate Multisite. Unogona kuzviwana nekuenda ku **Ultimate Multisite menu > Settings > Payments.**
 
-![Payments settings page in Ultimate Multisite showing the Payments panel](/img/config/payments-settings-page.png)
+![Peji rezvirongwa zvePayments muUltimate Multisite richiratidza panel yePayments](/img/config/payments-settings-page.png)
 
-Panguva unenge uita setup we gateway yako ya payment, ndichida kuti uve nekuona zvinhu zvinokwanisa kuita basic payment settings:
+Usati wagadzira payment gateway yako, tapota tarisa zvirongwa zvekubhadhara zvekutanga zvaunogona kugadzirisa:
 
-**Force auto-rene w:** Izvi zvichigadzirisa kuti payment ichiita auto-recur (kuti ichireve) mune nguva dzese dzinopfuura dzinogona kuitwa, kana kuti ndiri kuratidzo kwemakore anogona kuita user akasankana.
+**Manikidza auto-kuvandudz** **wa:** Izvi zvichava nechokwadi chekuti mubhadharo uchadzokororwa otomatiki pakupera kwe billing cycle yega yega zvichienderana ne billing frequency yakasarudzwa nemushandisi.
 
-<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
+<!-- Screenshot haisi kuwanikwa: Chigadziriso cheForce Auto-Renew toggle papeji rezvirongwa zvePayments -->
 
-Ultimate Multisite v2.13.0 inotjeka kuti gateway yakasiyana inenge inenge ine credential ya re-use (reusable renewal credential) panguva inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge
+Ultimate Multisite v2.13.0 inoongorora kana gateway riri kushanda riine renewal credential inogona kushandiswazve isati yachengeta recurring membership ine auto-renewal yakabatidzwa. Renewal credential inogona kuva gateway subscription, billing agreement, saved vault token, kana nzira yekubhadhara yakaenzana inogona kushandiswazve. Kana gateway ikataura kuti hapana credential inoshandisika iripo, Ultimate Multisite inochengeta membership asi inodzima auto-renewal uye inonyora mamiriro ekushayikwa kwecredential kuitira kuti administrator kana support flow ikumbire customer kuti abvumidze mubhadharo zvakare zuva rekuvandudza risati rasvika.
 
-Iyiwe, iye inenge inotora kuti kune zvinhu izvi zvinoreva.
+Izvi zvinodzivirira membership kuti isaratidzike sekunge iri auto-renew apo gateway ichingokwanisa kuunganidza mubhadharo wenguva imwe chete. Gateway add-ons dzinofanira kusimbisa kuti recurring checkouts dzinochengeta credential inogona kushandiswazve, kunyanya kana gateway ichitsigira zvose one-time capture nemamode ekubhadhara e vaulted/subscription.
 
-**Kubvumira trials pane nzira dze kupushwa (payment method):** Nechii chii chinobva, mutenda wako hauchida kuita kunzwisisa nekuita kuratidza nguva yakapfuura nekuti gateway inogona kutora kupushwa kune zvinhu zviri kubva muna.
+**Bvumira trials pasina payment** **method:** Kana option iyi yakabatidzwa, client wako haafaniri kuwedzera ruzivo rwemari panguva yekunyoresa. Izvi zvichangodiwa chete kana nguva ye trial yapera.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Screenshot haisi kuwanikwa: Allow Trials Without Payment Method toggle papeji rezvirongwa zvePayments -->
 
-**Kutenda invoice panguva dzo kupushwa:** Izvi zvinokupa chii chinobva, kuti unenge uone kana haunenge utora invoice panguva dzo kupushwa. Ndinenge unoziva kuti nguva dzavo dzinogona kuona rekodi dze kupushwa kwavo pane dashboard yavo ya subsite. Izvi zvinotora chii chinobva kune Manual Gateway.
+**Tumira invoice pakusimbiswa kwemubhadharo:** Izvi zvinokupa option yekuti utumire kana kusatumira invoice mushure mekubhadhara. Cherechedza kuti vashandisi vachawana payment history yavo pasi pe subsite dashboard yavo. Option iyi haishandi kuManual Gateway.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Screenshot haisi kuwanikwa: Send Invoice on Payment Confirmation toggle papeji rezvirongwa zvePayments -->
 
-**Mavhango ekurisa invoice (Invoice numbering scheme):** Mutauro wese unogona kutora, kana kuti nzira dze namba dziri kune kupushwa. Kana uchigona kutora chii chinobva necode dze kupushwa (payment reference code) kune invoices dzako, haunenge uchida kuita kunzwisisa kune zvinhu. Kana uchigona kutora nzira dze namba dziri kune kupushwa (sequential number scheme), unofanira kuita kunzwisisa **namba dze invoice yakanaka** (Namba iyi ichaizivikanwa kune invoice yakareta kubva). Namba iyi inogadzirwa neinvoice yakareta yakareta. Unogona kutamba uye kuita zvinhu kuti ureshe namba dze invoice dziri kune kupushwa kune chii chinobva. uye **prefix dze invoice number**.
+**Hurongwa hwenhamba dzeinvoice:** Pano, unogona kusarudza payment reference code kana sequential number scheme. Kana ukasarudza kushandisa payment reference code kuma invoice ako, haufaniri kugadzirisa chero chinhu. Kana ukasarudza kushandisa sequential number scheme, uchafanira kugadzirisa **next invoice number** (Nhamba iyi ichashandiswa se invoice number ye invoice inotevera inogadzirwa muhurongwa. Inowedzerwa neimwe nguva dzose painogadzirwa invoice itsva. Unogona kuichinja woichengeta kuti udzorere invoice sequential number kune value yakatarwa) uye **invoice number prefix.**
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Screenshot haisi kuwanikwa: Invoice numbering scheme dropdown ine Payment Reference Code neSequential Number options -->
 
-<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
+<!-- Screenshot haisi kuwanikwa: Next invoice number neinvoice number prefix fields zvinoratidzwa kana Sequential Number yasarudzwa -->
 
-## Kuva kuva kune gateway:
+## Kwaunowana gateways: {#where-to-find-the-gateways}
 
-Ungava gateways iyei paani ( **Ultimate Multisite > Settings > Payments**). Pamwe panguva pachishandana ne **active payment gateways**, unogona kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ uye _Manual_.
+Unogona kugadzira payment gateways papeji rimwe chete ( **Ultimate Multisite > Settings > Payments**). Pasi chaipo pe **active payment gateways** , uchakwanisa kuona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ uye _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Chikamu cheActive Payment Gateways chichiratidza Stripe, Stripe Checkout, PayPal neManual](/img/config/payments-active-gateways.png)
 
-Tiri ne chidzidzo cheduche chinogona kuita kuti uone uye utambire iye iye (payment gateway). Unogona kuona uye kutambira zvinangwa zvekuita payment:
+Tine chinyorwa chakatsaurirwa payment gateway yega yega chichakutungamirira mumatanho ekuchigadzira chaunogona kuwana pama link ari pazasi.
 
-![Payment edit interface](/img/admin/payment-edit.png)
+Unogona kuona nekugadzirisa payment details:
 
-Iyi ndiyo kuviona kwakakosha kwe page yekutambira payment:
+![Interface yekugadzirisa mubhadharo](/img/admin/payment-edit.png)
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+Heino tarisiro yakazara yepeji rekugadzirisa mubhadharo:
 
-Iyiwo kunoone zvinhu zvinangwa zvekuita gateways:
+![Interface yakazara yekugadzirisa mubhadharo](/img/admin/payment-edit-full.png)
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+Heino zvakare tarisiro yakazara yezvirongwa zvepayment gateways:
 
-**Kutambira Stripe gateway**
+![Peji yakazara yezvirongwa zvepayment gateways](/img/config/settings-payments-gateways-full.png)
 
-**Kutambira PayPal gateway**** **
+**Kugadzira Stripe gateway**
 
-**Kutambira payments manual**
+**Kugadzira PayPal gateway**** **
 
-Nekuti unoda kuti uve ne _WooCommerce_ , _GoCardless_ kana _Payfast_ se payment gateway yako, unofanira **kuti utange uye kutambira add-ons dzavo**.
+**Kugadzira manual payments**
 
-### Sei kuita WooCommerce add-on:
+Zvino, kana uchida kushandisa _WooCommerce_ , _GoCardless_ kana _Payfast_ se payment gateway yako, uchafanira **kuisa nekugadzirisa ma-add-ons awo**.
 
-Tiri tiri kunoziva kuti _Stripe_ uye _PayPal_ haine pa ndiro dzakawanda dzinogona kuita zvinhu zvinogona kuva dambudziko kune Ultimate Multisite users vachigona kutamba zvakanaka plugin yedu. Saka tikati add-on kuti tishandise _WooCommerce_, inoshandiswa zvakawanda e-commerce plugin. Vadzidzi vachiti pa dzimwe dzakawanda vachikwanisa kuita add-ons kuti vashandise payment gateways dzakasiyana dzinogona kubva kune iye. Tiri shandisa izvi kuti tishandise gateways dzakasiyana dzinogona kutamba ne system yekutambira billing ya Ultimate Multisite.
+### Maitiro ekuisa WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
-_**CHINAI:** Ultimate Multisite: Kutiwe neWooCommerce inenge kuitwa (activated) pane main site yako._
+Tinonzwisisa kuti _Stripe_ ne _PayPal_ hazviwanikwi mune dzimwe nyika izvo zvinoderedza kana kutadzisa vashandisi veUltimate Multisite kushandisa plugin yedu zvinobudirira. Saka takagadzira add-on yekubatanidza _WooCommerce,_ inova plugin ye e-commerce inozivikanwa zvikuru. Developers pasi rose vakagadzira add-ons dzekubatanidza payment gateways dzakasiyana kwairi. Takashandisa mukana uyu kuwedzera payment gateways aunogona kushandisa nehurongwa hwekubhadharisa hweUltimate Multisite.
 
-Kutanga, ndichatanga kuenda pa page ya add-ons. Ungava iye nekugona **Ultimate Multisite > Settings**. Unoda kuona table ye **Add-ons**. Chibvumira **Check our Add-ons**.
+_**CHINOKOSHA:** Ultimate Multisite: WooCommerce Integration inoda kuti WooCommerce ive activated kanenge pa main site yako._
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+Kutanga, tapota enda kupeji re add-ons. Unogona kuriwana nekuenda ku **Ultimate Multisite > Settings**. Unofanira kuona tafura ye **Add-ons**. Dzvanya pa **Check our Add-ons**.
 
-Panguva unachikumbira **Check our Add-ons**, uchaedza kuenda pa page ye add-ons. Panguva iye, ungava zvose Ultimate Multisite add-ons. Chibvumira add-on ye **Ultimate Multisite: WooCommerce Integration**.
+<!-- Screenshot haisi kuwanikwa: Tafura yeAdd-ons paUltimate Multisite Settings sidebar ine link yeCheck our Add-ons -->
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+Mushure mekudzvanya pa **Check our Add-ons** , uchaendeswa kupeji re add-ons. Pano unogona kuwana maadd-ons ese eUltimate Multisite. Dzvanya pa **Ultimate Multisite: WooCommerce Integration** add-on.
 
-Mhando dzaka-addon dzakasiyana dzinogona kuva panguva iye. Chibvumira **Install Now**.
+![Peji reAdd-ons richiratidza Ultimate Multisite add-ons kusanganisira WooCommerce Integration](/img/addons/addons-page.png)
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+Hwindo richabuda rine ruzivo rwewedzero. Ingodzvanya pa **Isa Izvozvi**.
 
-Panguva installation yakakoma, uchaedza kuenda pa plugins page. Panguva iye, chibvumira **Network Activate** uye add-on ye WooCommerce itarigadzirwa (activated) pane network yako.
+<!-- Mufananidzo hausi kuwanikwa: dialog yeruzivo rwewedzero yeUltimate Multisite WooCommerce Integration ine bhatani reIsa Izvozvi -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+Kana kuiswa kwapera, uchaendeswa kupeji rezvinowedzerwa. Pano, ingodzvanya pa **Activate paNetiweki** uye wedzero yeWooCommerce ichashandiswa panetiweki yako.
 
-Panguva inenge yakagadzirwa, kana haunenge hauna plugin ye WooCommerce yakasiyana dzinogona kuva (installed and activated) pane website yako, uchakwanisa kuona reminder.
+<!-- Mufananidzo hausi kuwanikwa: Peji rezvinowedzerwa rine chinongedzo cheActivate paNetiweki chewedzero yeWooCommerce Integration -->
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+Mushure mekuishandisa, kana usati wava neWooCommerce chinowedzerwa chakaiswa uye chaitwa pawebhusaiti yako, uchagamuchira chiyeuchidzo.
 
-Kuti uone zvinhu zvakawanda pamusoro pe add-on ye WooCommerce Integration, **chibvumira iye**.
+<!-- Mufananidzo hausi kuwanikwa: Chiziviso cheAdmin chinoyeuchidza mutungamiriri kuisa nekushandisa WooCommerce chinowedzerwa -->
 
-### Sei kuti utange install GoCardless add-on:
+Kuti uverenge zvimwe nezvewedzero yeWooCommerce Integration, **dzvanya pano**.
 
-Ngano dzinotora kuti kudzira (install) _GoCardless_ add-on kuno ndiri chinokosha, zvinhu zvakasiyi nezvinhu zvinogona kuita. Unoda kuenda kwenye yepage ya add-ons uye utange uchigadzirisa (select) **Ultimate Multisite: GoCardless Gateway** add-on.
+### Maitiro ekuisa wedzero yeGoCardless: {#how-to-install-the-gocardless-add-on}
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+Matanho ekuisa wedzero ye_GoCardless_ akafanana chaizvo needzero ye_WooCommerce_. Ndapota enda kupeji rezvinowedzerwa wosarudza wedzero ye **Ultimate Multisite: GoCardless Gateway**.
 
-Chidzidzo chekuti add-on ichi chiri kuitwa. Chidzidzo chinokupa zvinhu zvinotora. Click kuti **Install Now**.
+<!-- Mufananidzo hausi kuwanikwa: Peji rezvinowedzerwa rine wedzero yeUltimate Multisite GoCardless Gateway yakaratidzwa -->
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+Hwindo rewedzero richabuda. Dzvanya pa **Isa Izvozvi**.
 
-Panguva dzinotora kuita, uchakwanisa kuenda kwenye yepage ya plugins (plugins page). Panguva iyu, ndichigadzirisa **Network Activate** uye _GoCardless_ add-on ichi chiri kuitwa munzvimbo yako (network).
+<!-- Mufananidzo hausi kuwanikwa: dialog yeruzivo rwewedzero yeUltimate Multisite GoCardless Gateway ine bhatani reIsa Izvozvi -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+Kana kuiswa kwapera, uchaendeswa kupeji rezvinowedzerwa. Pano, ingodzvanya pa **Activate paNetiweki** uye wedzero ye_GoCardless_ ichashandiswa panetiweki yako.
 
-Kuti uone sei kudzira (get started) ne _GoCardless_ gateway, **shandisa riiro rino**.
+<!-- Mufananidzo hausi kuwanikwa: Peji rezvinowedzerwa rine chinongedzo cheActivate paNetiweki chewedzero yeGoCardless Gateway -->
 
-### Sei kudzira Payfast add-on:
+Kuti udzidze matangiro ekushandisa gateway ye_GoCardless_, **verenga chinyorwa ichi**.
 
-Unoda kuenda kwenye yepage ya add-ons uye utange uchigadzirisa **Ultimate Multisite: Payfast Gateway** add-on.
+### Maitiro ekuisa wedzero yePayfast: {#how-to-install-the-payfast-add-on}
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+Enda kupeji rezvinowedzerwa wosarudza wedzero ye **Ultimate Multisite: Payfast Gateway**.
 
-Chidzidzo chekuti add-on ichi chiri kuitwa. Click kuti **Install Now**.
+<!-- Mufananidzo hausi kuwanikwa: Peji rezvinowedzerwa rine wedzero yeUltimate Multisite Payfast Gateway yakaratidzwa -->
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+Hwindo rewedzero richabuda. Dzvanya pa **Isa Izvozvi.**
 
-Panguva dzinotora kuita, uchakwanisa kuenda kwenye yepage ya plugins (plugins page). Panguva iyu, ndichigadzirisa **Network Activate** uye _Payfast_ add-on ichi chiri kuitwa munzvimbo yako (network).
+<!-- Mufananidzo hausi kuwanikwa: dialog yeruzivo rwewedzero yeUltimate Multisite Payfast Gateway ine bhatani reIsa Izvozvi -->
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+Kana kuiswa kwapera, uchaendeswa kupeji rezvinowedzerwa. Pano, ingodzvanya pa **Activate paNetiweki** uye wedzero ye_Payfast_ ichashandiswa panetiweki yako.
+
+<!-- Mufananidzo hausi kuwanikwa: Peji rezvinowedzerwa rine chinongedzo cheActivate paNetiweki chewedzero yePayfast Gateway -->

@@ -3,7 +3,7 @@ title: Integrazione AffiliateWP
 sidebar_position: 4
 _i18n_hash: 37aa654691b15327828cfd02540b2409
 ---
-# Integrazione AffiliateWP
+# Integrazione AffiliateWP {#affiliatewp-integration}
 
 Questa funzionalità è fornita dall'addon **AffiliateWP**.
 

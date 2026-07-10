@@ -1,126 +1,126 @@
 ---
-title: Jwenn Peyi
+title: Resevwa peman
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Kòman Peye (v2)
+# Resevwa Peman (v2) {#getting-paid-v2}
 
-_**NOTE ENTRÈ:** Artikel sa a refere a Ultimate Multisite v2.x._
+_**NÒT ENPÒTAN: Atik sa a fè referans ak Ultimate Multisite vèsyon 2.x.**_
 
-Ultimate Multisite gen yon sistèm manm ak faktirasyon ki vini avan l. Pou sistèm faktirasyon nou an ka fonksyone, nou te entegre pi komen pòt peman yo itilize nan e-commerce. Pòt peman deklan Ultimate Multisite yo se _Stripe_, _PayPal_, ak Peman Manèl (Manual Payment). Ou ka itilize _WooCommerce_, _GoCardless_ ak _Payfast_ tou pou resevwa peman lè ou enstale add-on ki koresponn ak yo.
+Ultimate Multisite gen yon sistèm manm ak faktirasyon entegre. Pou sistèm faktirasyon nou an fonksyone, nou entegre passerelles peman ki pi komen yo itilize nan e-commerce. Passerelles peman pa defo nan Ultimate Multisite se _Stripe_ , _PayPal_ , ak Manual Payment. Ou kapab itilize tou _WooCommerce_ , _GoCardless_ ak _Payfast_ pou resevwa peman lè w enstale add-ons respektif yo.
 
-## Règlaman Debaz (Basic Settings)
+## Paramèt Debaz {#basic-settings}
 
-Ou ka configure nenpòt pòt peman sa yo anba chanjman faktirasyon Ultimate Multisite la. Ou ka jwenn li lè w ale nan **Ultimate Multisite menu > Settings > Payments.**
+Ou kapab konfigire nenpòt nan passerelles peman sa yo anba paramèt peman Ultimate Multisite. Ou ka jwenn li lè w ale nan **meni Ultimate Multisite > Settings > Payments.**
 
-![Pagyan konfigirasyon peman nan Ultimate Multisite ki montre panèl Payments](/img/config/payments-settings-page.png)
+![Paj paramèt peman nan Ultimate Multisite ki montre panèl Payments la](/img/config/payments-settings-page.png)
 
-Anvan ou mete ajou pòt peman ou, tanpri gade règlaman peman debaz ou ka configure:
+Anvan ou mete passerelle peman ou an kanpe, tanpri gade paramèt peman debaz ou kapab konfigire yo:
 
-**Force auto-rene w:** Sa ap asire ke peman an ap repete otomatikman nan fen chak sik faktirasyon selon frekans faktirasyon ki te chwazi itilizatè a.
+**Fòse renouvèlman oto** **matik:** Sa ap asire peman an ap repete otomatikman nan fen chak sik faktirasyon, selon frekans faktirasyon itilizatè a te chwazi a.
 
-<!-- Screenshot unavailable: Chanjman Force Auto-Renew sou pagyan konfigirasyon peman -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 ap kontwole si pòt ki aktif gen yon kredansyèl renouvèl ki ka itilize ankò anvan li kayte yon manm ki repete ak auto-renou k ap aktive. Yon kredansyèl renouvèl ka se abòn pòt, aktab faktirasyon, token vault ki te kayte, oswa metòd peman ki ka itilize ankò ki san yo pa gen okenn ekivalan. Si pòt la rapòte ke pa gen okenn kredansyèl ki ka itilize, Ultimate Multisite ap kayte manm nan menm jan sa a ap fè auto-renou la ap dekouvri epi li ap mete aksan sou eta "manch kredansyèl" pou yon administrateur oswa yon flwa sipò ka mande kliyan an re-authorize peman an anvan dat renouvèl la.
+Ultimate Multisite v2.13.0 verifye si passerelle aktif la gen yon idantifyan renouvèlman ki kapab reyitilize anvan li sove yon manm renouvlab ak renouvèlman otomatik aktive. Yon idantifyan renouvèlman kapab yon abònman passerelle, yon akò faktirasyon, yon token vault ki sove, oswa yon metòd peman ekivalan ki kapab reyitilize. Si passerelle la rapòte pa gen okenn idantifyan ki ka itilize, Ultimate Multisite sove manm nan men li fèmen renouvèlman otomatik epi li anrejistre eta idantifyan ki manke a pou yon administratè oswa yon pwosesis sipò kapab mande kliyan an re-otorize peman an anvan dat renouvèlman an.
 
-Sa sa a ede sa fè sa, nou anpeche yon manm (membership) parèt ke li ap rine otomatikman lè gateway la sèlman ka koleman paman ki fèt yon fwa. Add-ons pou gateway yo dwe konfime ke checkout ki rive souvan (recurring checkouts) estoke yon kredansyèl ki ka itilize ankò, sitou lè gateway la sipòte tou de modèl paman: capture yon fwa ak paman stokye/sòlisib (vaulted/subscription payment modes).
+Sa anpeche yon manm parèt tankou l ap renouvle otomatikman lè passerelle la kapab sèlman kolekte peman yon sèl fwa. Add-ons passerelle yo ta dwe konfime ke checkouts renouvlab yo estoke yon idantifyan ki kapab reyitilize, sitou lè passerelle la sipòte toude mòd peman kaptire yon sèl fwa ak mòd peman vaulted/abònman.
 
-**Permet ensèyè san metòd paman:** Avèk opsyon sa a ki aktif, kliyan ou pa bezwen ajoute okenn enfòmasyon finansye pandan pwosesis reyegis la. Sa sèlman pral nesesè lè peryòd ensèyè a fini.
+**Pèmèt esè san metòd** **peman:** Lè opsyon sa a aktive, kliyan ou a p ap bezwen ajoute okenn enfòmasyon finansye pandan pwosesis enskripsyon an. Sa ap vin obligatwa sèlman lè peryòd esè a ekspire.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Vèsi faktura apre konfimasyon paman:** Sa bay ou opsyon pou w voye yon faktura oswa non apre paman an. Note ke itilizat yo ap gen aksè nan istorik paman yo sous dashboard subsite yo. Opsyon sa a pa aplike pou Gateway Manual la.
+**Voye fakti lè peman konfime:** Sa ba ou yon opsyon pou w chwazi si ou vle voye yon fakti apre peman oswa non. Remake itilizatè yo ap gen aksè ak istorik peman yo anba dashboard subsite yo. Opsyon sa a pa aplike pou Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Sistèm numè faktura:** La, ou ka chwazi yon kòd referans paman oswa yon sistèm nimewo ki gen sekans (sequential number scheme). Si ou chwazi pou w itilize yon kòd referans paman pou faktura ou yo, ou pa bezwen konfigire anyen. Si ou chwazi pou w itilize yon sistèm nimewo ki gen sekans, ou pral bezwen konfigire **nimewo faktura ankò** (Nimewo sa a ap itilize kòm nimewo faktura pou faktura ki pral jenere apre la sou sistèm nan. Li monte pa yon sèl chak fwa yon nou faktura ki kreye. Ou ka chanje li epi kayli l pou reponn nimewo sekans faktura a yon valè espesifik) ak **prefiks nimewo faktura**.
+**Konplo nimero fakti:** Isit la, ou kapab chwazi swa yon kòd referans peman oswa yon konplo nimewo sekansyèl. Si ou chwazi itilize yon kòd referans peman pou fakti ou yo, ou pa bezwen konfigire anyen. Si ou chwazi itilize yon konplo nimewo sekansyèl, w ap bezwen konfigire **pwochen nimewo fakti a** (Nimewo sa a ap itilize kòm nimewo fakti pou pwochen fakti ki jenere sou sistèm nan. Li ogmante pa youn chak fwa yo kreye yon nouvo fakti. Ou kapab chanje li epi sove li pou reyajiste nimewo sekansyèl fakti a ak yon valè espesifik) ak **prefiks nimewo fakti a.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kote pou wè gateway yo:
+## Ki kote pou jwenn passerelles yo: {#where-to-find-the-gateways}
 
-Ou ka mete payment gateways sou menm paj la (**Ultimate Multisite > Settings > Payments**). Anba **active payment gateways**, ou pral gen vizib: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ak _Manual_.
+Ou kapab mete passerelles peman yo kanpe sou menm paj la ( **Ultimate Multisite > Settings > Payments**). Jis anba **passerelles peman aktif** , ou pral kapab wè: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ak _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Seksyon Active Payment Gateways ki bay lis Stripe, Stripe Checkout, PayPal ak Manual](/img/config/payments-active-gateways.png)
 
-Nou gen yon artikel pou chak payment gateway ki pral gide ou nan etap mete l up, ou ka jwenn yo sou lyen anba a.
+Nou gen yon atik dedye pou chak passerelle peman ki pral gide ou atravè etap pou mete li kanpe; ou ka jwenn yo sou lyen ki anba yo.
 
-Ou ka wè epi edite detay paiement la:
+Ou kapab wè epi modifye detay peman:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Entèfas modifye peman](/img/admin/payment-edit.png)
 
-Men yon vizyon konplè nan paj edisyon paiement la:
+Men yon vi konplè sou paj modifye peman an:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Entèfas konplè modifye peman](/img/admin/payment-edit-full.png)
 
-Men tou yon vizyon konplè de settings payment gateways yo:
+Men tou yon vi konplè sou paramèt passerelles peman yo:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Paj konplè paramèt passerelles peman](/img/config/settings-payments-gateways-full.png)
 
-**Mete up Stripe gateway la**
+**Mete passerelle Stripe la kanpe**
 
-**Mete up PayPal gateway la**** **
+**Mete passerelle PayPal la kanpe**** **
 
-**Mete up manèl payments**
+**Mete peman manyèl yo kanpe**
 
-Kounye a, si ou vle itilize _WooCommerce_ , _GoCardless_ o _Payfast_ kòm payment gateway ou, ou pral bezwen **mete epi configure add-ons yo**.
+Kounye a, si ou vle itilize _WooCommerce_ , _GoCardless_ oswa _Payfast_ kòm passerelle peman ou, w ap bezwen **enstale epi konfigire add-ons yo**.
 
-### Kijan pou mete up WooCommerce add-on la:
+### Ki jan pou enstale add-on WooCommerce la: {#how-to-install-the-woocommerce-add-on}
 
-Nou konprann ke _Stripe_ ak _PayPal_ pa disponib nan kèk peyi ki limite oswa bloke itilizat Ultimate Multisite pou itilize plugin nou an efektivman. Se poutèt sa nou te kreye yon add-on pou entegre _WooCommerce_, ki se yon plugin e-commerce trè popilè. Devlopè yo nan tout kote te kreye add-ons pou entegre diferan payment gateways ak li. Nou te itilize sa pou nou elaji payment gateways ou ka itilize ak sistèm faktir Ultimate Multisite la.
+Nou konprann _Stripe_ ak _PayPal_ pa disponib nan kèk peyi, sa ki limite oswa anpeche itilizatè Ultimate Multisite yo itilize plugin nou an efektivman. Se poutèt sa nou te kreye yon add-on pou entegre _WooCommerce,_ ki se yon plugin e-commerce trè popilè. Devlopè toupatou nan mond lan te kreye add-ons pou entegre diferan passerelles peman ladan l. Nou te pwofite sa pou elaji passerelles peman ou kapab itilize ak sistèm faktirasyon Ultimate Multisite la.
 
-_**IMPORTANT:** Ultimate Multisite: Integrasyon akò ak WooCommerce mande ke WooCommerce dwe aktif deja sou sit prensipal ou._
+_**ENPÒTAN:** Ultimate Multisite: WooCommerce Integration mande pou WooCommerce aktive omwen sou sit prensipal ou a._
 
-Premye bagay la, tanpri ale nan paj "add-ons" (yon kalite zouti ki ajoute fonksyonalite). Ou ka jwenn li lè ou ale nan **Ultimate Multisite > Settings**. Ou pral wè tabèl **Add-ons** la. Klike sou **Check our Add-ons**.
+Premyèman, tanpri ale nan paj add-ons la. Ou ka jwenn li lè w ale nan **Ultimate Multisite > Settings**. Ou ta dwe wè tablo **Add-ons** la. Klike sou **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Tabèl Add-ons sou sidebar Ultimate Multisite Settings ak liy Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Malgre ou klike sou **Check our Add-ons**, ou pral dirije nan paj add-ons la. La, ou ka jwenn tout add-ons Ultimate Multisite yo. Klike sou add-on ki rele **Ultimate Multisite: WooCommerce Integration**.
+Apre ou fin klike sou **Check our Add-ons** , y ap redirije ou sou paj add-ons la. Isit la ou kapab jwenn tout add-ons Ultimate Multisite yo. Klike sou add-on **Ultimate Multisite: WooCommerce Integration** lan.
 
-![Paj add-ons ki ap lis tout add-ons Ultimate Multisite ki gen ladan WooCommerce Integration](/img/addons/addons-page.png)
+![Paj add-ons ki bay lis add-ons Ultimate Multisite yo, tankou WooCommerce Integration](/img/addons/addons-page.png)
 
-Yon fenèt pral parèt ak detay add-on an. Sen jis klike sou **Install Now** (Instale Kounye).
+Yon fenèt ap parèt ak detay add-on nan. Jis klike sou **Enstale kounye a**.
 
-<!-- Screenshot unavailable: Fenèt detay add-on Ultimate Multisite WooCommerce Integration ak bouton Install Now -->
+<!-- Ekran pa disponib: dyalòg detay add-on Ultimate Multisite WooCommerce Integration ak bouton Enstale kounye a -->
 
-Malgre enstalasyon an fini, ou pral dirije nan paj plugins la. La, sen jis klike sou **Network Activate** (Aktive Rezo), epi add-on WooCommerce a ap aktive sou rezo ou.
+Apre enstalasyon an fini, yo pral redirije w sou paj ekstansyon yo. Isit la, jis klike sou **Aktive sou rezo a** epi add-on WooCommerce la ap aktive sou rezo ou a.
 
-<!-- Screenshot unavailable: Paj plugins ak liy Network Activate pou add-on WooCommerce Integration -->
+<!-- Ekran pa disponib: Paj ekstansyon yo ak lyen Aktive sou rezo a pou add-on WooCommerce Integration la -->
 
-Malgre ou aktif li, si ou pa genyen tou pwofi WooCommerce ki active sou sit w la, ou pral jwenn yon raprimand.
+Apre ou fin aktive li, si ou toujou pa gen ekstansyon WooCommerce la enstale ak aktive sou sit entènèt ou a, ou pral resevwa yon rapèl.
 
-<!-- Screenshot unavailable: Notis admin ki raprimande administrate a pou enstale epi aktive pwofi WooCommerce -->
+<!-- Ekran pa disponib: Avi admin ki raple administratè a pou enstale ak aktive ekstansyon WooCommerce la -->
 
-Pou li plis sou add-on Integration WooCommerce, **klike kote sa**.
+Pou li plis sou add-on WooCommerce Integration la, **klike isit la**.
 
-### Kijan pou enstale add-on GoCardless:
+### Kijan pou enstale add-on GoCardless la: {#how-to-install-the-gocardless-add-on}
 
-Etap pou mete l'add-on _GoCardless_ se prèske menm tankou l'add-on _WooCommerce_. Ale, ale nan paj add-ons la epi chwazi sou **Ultimate Multisite: GoCardless Gateway** add-on an.
+Etap pou enstale add-on _GoCardless_ la prèske menm ak add-on _WooCommerce_ la. Tanpri ale sou paj add-on yo epi chwazi add-on **Ultimate Multisite: GoCardless Gateway** la.
 
-<!-- Screenshot unavailable: Paj add-ons ak Ultimate Multisite GoCardless Gateway add-on ki mete aksan -->
+<!-- Ekran pa disponib: Paj add-on yo ak add-on Ultimate Multisite GoCardless Gateway la make -->
 
-Fenèt yon fenèt add-on ap parèt. Klike sou **Install Now**.
+Fenèt add-on nan ap parèt. Klike sou **Enstale kounye a**.
 
-<!-- Screenshot unavailable: Dialog detay Ultimate Multisite GoCardless Gateway add-on ak bouton Install Now -->
+<!-- Ekran pa disponib: Dyalòg detay add-on Ultimate Multisite GoCardless Gateway ak bouton Enstale kounye a -->
 
-Malgre enstalasyon an fini, ou pral redirekti nan paj plugins la. La, jis klike sou **Network Activate** epi l'add-on _GoCardless_ ap aktive sou rezo ou a.
+Apre enstalasyon an fini, yo pral redirije w sou paj ekstansyon yo. Isit la, jis klike sou **Aktive sou rezo a** epi add-on _GoCardless_ la ap aktive sou rezo ou a.
 
-<!-- Screenshot unavailable: Paj plugins ak link Network Activate pou GoCardless Gateway add-on -->
+<!-- Ekran pa disponib: Paj ekstansyon yo ak lyen Aktive sou rezo a pou add-on GoCardless Gateway la -->
 
-Pou aprann kijan pou kòmanse ak gateway _GoCardless_, **lis tèks sa a**.
+Pou aprann kijan pou kòmanse ak passerelle _GoCardless_ la, **li atik sa a**.
 
-### Kijan pou mete l'add-on Payfast:
+### Kijan pou enstale add-on Payfast la: {#how-to-install-the-payfast-add-on}
 
-Ale nan paj add-ons la epi chwazi sou **Ultimate Multisite: Payfast Gateway** add-on.
+Ale sou paj add-on yo epi chwazi add-on **Ultimate Multisite: Payfast Gateway** la.
 
-<!-- Screenshot unavailable: Paj add-ons ak Ultimate Multisite Payfast Gateway add-on ki mete aksan -->
+<!-- Ekran pa disponib: Paj add-on yo ak add-on Ultimate Multisite Payfast Gateway la make -->
 
-Fenèt add-on ap parèt. Klike sou **Install Now**.
+Fenèt add-on nan ap parèt. Klike sou **Enstale kounye a.**
 
-<!-- Screenshot unavailable: Dialog detay Ultimate Multisite Payfast Gateway add-on ak bouton Install Now -->
+<!-- Ekran pa disponib: Dyalòg detay add-on Ultimate Multisite Payfast Gateway ak bouton Enstale kounye a -->
 
-Malgre enstalasyon an fini, ou pral redirekti nan paj plugins la. La, jis klike sou **Network Activate** epi l'add-on _Payfast_ ap aktive sou rezo ou a.
+Apre enstalasyon an fini, yo pral redirije w sou paj ekstansyon yo. Isit la, jis klike sou **Aktive sou rezo a** epi add-on _Payfast_ la ap aktive sou rezo ou a.
 
-<!-- Screenshot unavailable: Paj plugins ak link Network Activate pou Payfast Gateway add-on -->
+<!-- Ekran pa disponib: Paj ekstansyon yo ak lyen Aktive sou rezo a pou add-on Payfast Gateway la -->

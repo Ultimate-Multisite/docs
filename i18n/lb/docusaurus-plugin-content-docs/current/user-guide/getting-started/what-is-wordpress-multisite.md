@@ -3,7 +3,7 @@ title: Was isch WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Was isch WordPress Multisite?
+# Was isch WordPress Multisite? {#what-is-wordpress-multisite}
 
 Im Kern bietet WordPress e Funktione, wo mer „Multisite“ nennt, wo sini Ursprüng i 2010 mit em Start vo WordPress 3.0 aafangt hät. Sit dänn het er mehri Änderige übercho, um neui Funktione z'introduziere und d'Sicherheit z'verbessere.
 
@@ -11,7 +11,7 @@ Im Wesentliche chann mer sich en WordPress Multisite so vorstelle: E Universitä
 
 ##
 
-## Was isch genau WordPress Multisite?
+## Was isch genau WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite isch e Funktione vo WordPress, wo es mehri Sites erlaubt, e einzigi WordPress-Installation z'teile. Wenn multisite aktiviert isch, wird d'ursprünglichi WordPress-Site umgwandelt, um e so öppis z'unterstütze, wo mer üblicherweise als **Netzwerk vo Sites** bezeichnet.
 
@@ -23,7 +23,7 @@ Das isch en vo de Hauptvorteil vom Multisite, will mer d'Anzahl vo de Sites, wo 
 
 ##
 
-## Subdomain oder Unterverzeichniss?
+## Subdomain oder Unterverzeichniss? {#subdomain-or-subdirectory}
 
 Es git zwei Modi zum Betrieb vo WordPress Multisite – und du muesch eis wähle, wenn du dini reguläri WordPress-Installation in en Multisite-Installation umwandelst:
 
@@ -49,7 +49,7 @@ Eines vo de wichtigste Usforderige bi de Irichtigig vom subdomain mode isch d'SS
 
 Im Gegensatz zum subdirectory mode werded Subsites uf eme subdomain-basierten Netz vo Suchmaschine als separati Websites betrachtet, was bedütet, dass Inhalt, wo uf eme Subsite isch, keis Problem mit de SEO-Leistig vo andere Subsites het.
 
-## De Super Admin
+## De Super Admin {#the-super-admin}
 
 Single-site WordPress Installatione erlaubed Ihne, unbegrenzt Benutzer z'füege und dene unterschiedlechi User Roles mit unterschiedliche Berechtigunge z'gäbe.
 
@@ -63,7 +63,7 @@ Plugins und Themes chönned nur vo de Netzwerk-Admin-Panel dur Super Admins inst
 
 _Note: Wie Sie sehen, gibt Ihnen die Einladung einer Person in Ihr Netzwerk und die Erteilung von Super Admin-Status dieser Benutzer die volle Kontrolle über Ihr Netzwerk. Als Beispiel können andere Super Admins Ihren Super Admin-Status entfernen und Sie damit effektiv vom Administrationspanel Ihres eigenen Netzwerks ausschließen. Um Ultimate Multisite Kunden die Möglichkeit zu geben, eine detaillierte Kontrolle darüber zu haben, was zusätzliche Super Admins tun dürfen, haben wir ein Add-on namens Support Agents. Dieses Add-on ermöglicht es Ihnen, eine weitere Art von Benutzer – einen Agenten – mit nur den Berechtigungen zu erstellen, die er für die Ausführung seiner Aufgaben im Netzwerk benötigt._
 
-## Was zwischen Subsites geteilt wird und was nicht
+## Was zwischen Subsites geteilt wird und was nicht {#what-is-shared-among-subsites-and-what-is-not}
 
 Wie wir schon erwähnt haben, einer der Hauptvorteile von WordPress Multisite ist, dass alle Subsites dieselben Konfigurationen, Kerndateien, Themes, Plugins, WordPress-Kerndateien usw. teilen.
 
@@ -75,7 +75,7 @@ Es gibt jedoch Elemente, die auf Basis jeder einzelnen Subsite gut begrenzt sind
 
 \- Die meisten Datenbanktabellen werden für jede Subsite erstellt, was bedeutet, dass Beiträge, Kommentare, Seiten, Einstellungen usw. für jede Subsite begrenzt sind.
 
-## Benutzerverwaltung in WordPress Multisite
+## Benutzerverwaltung in WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Ein heikles Thema bei WordPress Multisite ist die Benutzerverwaltung. Die WordPress-Benutzer-Tabelle ist eine von wenigen Tabellen, die zwischen allen Subsites geteilt werden.
 
@@ -99,7 +99,7 @@ _Hinweis: Wir wissen, wie schlimm das sein kann, je nach Anwendungsfall. Deshalb
 
 Obwohl d'Benutzer-Tabelle gmeint isch, dass Benutzer mit allen Subsites teilt sind, chönne Subsite-Admins oder de Super Admin Benutzer zu und vo Subsites hinzufüge oder entferne, und sie chönne sogar unterschiedlechi Benutzerrolle uf verschiedene Subsites ha.
 
-## Performance-Überlegige
+## Performance-Überlegige {#performance-considerations}
 
 WordPress multisite isch würkli starch, wenn's drum gaht, wie vill Sites es unterstütze cha. Das chan mer teste, will [WordPress.com](https://WordPress.com), Edublogs und Campuspress alli Multisite-basierte Dienst sind und jede Host Tausendi vo Sites het.
 

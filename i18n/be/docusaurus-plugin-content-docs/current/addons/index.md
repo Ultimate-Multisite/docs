@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Аданы Ultimate Multisite
+# Аданы Ultimate Multisite {#ultimate-multisite-addons}
 
 Аданы пашыраюць Ultimate Multisite, дадаўшы наступныя функцыі і інтыгрэйцыі. Большасць аднаў патрабуюць платы і іх можна купіць на [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Устаноўка
+## Устаноўка {#installation}
 
 Аданы можна ўсталяваць двома спосабамі:
 
 1. **Чарэзь адну адну страўку** — Пайце на адну адну страўку кіравання аднамі аднамі ў адмініструванні WordPress.
 2. **Ручны захаванне** — Захаваце з [вашага канта](https://ultimatemultisite.com/my-account/downloads/) і загрузіце праз Plugins > Add New.
 
-## Даступныя адны адны
+## Даступныя адны адны {#available-addons}
 
 | Адна адна | Апісан |
 |-------|-------------|

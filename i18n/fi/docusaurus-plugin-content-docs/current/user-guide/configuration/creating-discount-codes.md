@@ -3,13 +3,13 @@ title: Alennuskoodien luominen
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Alennin luominen alennuskoodeja (v2)
+# Alennin luominen alennuskoodeja (v2) {#creating-discount-codes-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
 Ultimate Multisite -järjestelmällä voit luoda alennuskoodejä antaa asiakkaille alennuksia tilausmaksunsa tai tilauksensa yhteydessä. Ja niiden luominen on helppo!
 
-## Alennuskoodien luominen ja muokkaaminen
+## Alennuskoodien luominen ja muokkaaminen {#creating-and-editing-discount-codes}
 
 Alennuskoodin luomiseen tai muokkaamiseen siirry **Ultimate Multisite > Discount Codes** -sivulle.
 
@@ -87,7 +87,7 @@ Kuponki on nyt listallasi, ja sieltä voit klikata **muokata tai poistaa** sen.
 
 ###
 
-### URL-parametrien käyttö:
+### URL-parametrien käyttö: {#using-url-parameters}
 
 Jos haluat räätälöidä hinnoittelutabelisi tai rakentaa kauniin kuponkikoodisivun verkkosivustollesi ja haluat soveltaa alennuskoodia automaattisesti kassalle, voit tehdä tämän URL-parametrien avulla.
 

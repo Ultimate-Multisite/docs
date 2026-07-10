@@ -1,0 +1,277 @@
+---
+title: اوزار ۽ ترتيبات
+sidebar_position: 4
+_i18n_hash: 78a3b6062e985598d020eaee28754120
+---
+# اوزار ۽ Configuration {#tools-and-configuration}
+
+Theme Builder توهان جي WordPress سائيٽ جو تجزيو ڪرڻ، ڊيزائن ڪرڻ، ۽ ٺاهڻ لاءِ اوزارن جو هڪ سيٽ استعمال ڪري ٿو. ورزن 1.16.0 ۾، **sd-ai-agent/site-scrape هاڻي هڪ Tier 1 اوزار آهي**، جنهن سان اهو Theme Builder ۾ ڊفالٽ طور موجود آهي. Superdav AI Agent v1.18.0 ڀروسي لائق ڊولپر ڪم جي وهڪرن لاءِ الڳ ورهايل Advanced ساٿي پيڪيج پڻ متعارف ڪرائي ٿو؛ اهي اوزار WordPress.org بنيادي پيڪيج جو حصو ناهن ۽ الڳ طور انسٽال ۽ اختيار ڏيڻا پوندا.
+
+## موجود اوزار {#available-tools}
+
+### Tier 1 اوزار (هميشه موجود) {#tier-1-tools-always-available}
+
+Tier 1 اوزار بغير ڪنهن اضافي Configuration جي Theme Builder ۾ ڊفالٽ طور موجود هوندا آهن.
+
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
+
+**مقصد:** موجود ويب سائيٽن جو تجزيو ڪري ڊيزائن جي الهام، مواد جي بناوٽ، ۽ ڪارڪردگي ڪڍڻ.
+
+**صلاحيتون:**
+
+- **ويب سائيٽ تجزيو** — مقابلي ڪندڙ يا الهام ڏيندڙ ويب سائيٽن کي scrape ۽ تجزيو ڪريو
+- **ڊيزائن ڪڍڻ** — رنگ، فونٽ، ۽ layout نمونا سڃاڻو
+- **مواد جي بناوٽ** — صفحي جي تنظيم ۽ درجابندي کي سمجهو
+- **خصوصيت سڃاڻپ** — plugin ۽ ڪارڪردگي سڃاڻو
+- **ڪارڪردگي تجزيو** — صفحي جي رفتار ۽ بهتري چيڪ ڪريو
+- **SEO تجزيو** — meta tags ۽ structured data جو جائزو وٺو
+
+**استعمال:**
+
+```
+example.com جي ڊيزائن جو تجزيو ڪريو ۽ ان کي منهنجي سائيٽ لاءِ الهام طور استعمال ڪريو.
+```
+
+**اهو ڇا ڪڍي ٿو:**
+
+- رنگن جو palette ۽ رنگن جو استعمال
+- Typography (فونٽ ۽ ماپون)
+- Layout بناوٽ ۽ وٿي
+- Navigation نمونا
+- مواد جي تنظيم
+- تصويرن ۽ ميڊيا جو استعمال
+- Interactive عنصر
+- موبائل responsiveness
+
+**حدون:**
+
+- پاسورڊ سان محفوظ سائيٽن کي scrape نٿو ڪري سگهي
+- robots.txt ۽ سائيٽ پاليسين جو احترام ڪري ٿو
+- Dynamic مواد مڪمل طور پڪڙي نه سگهي ٿو
+- JavaScript-گهڻين سائيٽن جو تجزيو محدود ٿي سگهي ٿو
+- وڏين سائيٽن جو تجزيو ڪرڻ ۾ وڌيڪ وقت لڳي سگهي ٿو
+
+### Tier 2 اوزار (اختياري) {#tier-2-tools-optional}
+
+Tier 2 اوزار Theme Builder سيٽنگن ۾ واضح طور enabled ڪرڻ تي موجود هوندا آهن.
+
+#### Advanced Analytics {#advanced-analytics}
+
+تفصيلي ڪارڪردگي metrics مهيا ڪري ٿو:
+
+- صفحي load ٿيڻ جا وقت
+- Core Web Vitals
+- SEO score
+- Accessibility score
+- بهترين طريقن جو score
+
+#### Content Optimizer {#content-optimizer}
+
+هيٺين لاءِ تجزيو ڪري ٿو ۽ بهتري جون تجويزون ڏئي ٿو:
+
+- پڙهڻ جي آساني
+- SEO optimization
+- Keyword استعمال
+- مواد جي بناوٽ
+- Call-to-action رکڻ جي جاءِ
+
+### Tier 3 اوزار (Premium) {#tier-3-tools-premium}
+
+Tier 3 اوزارن لاءِ اضافي Configuration يا premium خصوصيتون گهربل آهن.
+
+#### AI Content Generator {#ai-content-generator}
+
+هيٺين لاءِ مواد ٺاهي ٿو:
+
+- Product وضاحتون
+- Service صفحا
+- Blog پوسٽون
+- Meta وضاحتون
+- Call-to-action copy
+
+#### Advanced Design Tools {#advanced-design-tools}
+
+ترقي يافته ڊيزائن صلاحيتون مهيا ڪري ٿو:
+
+- Custom CSS generation
+- Animation creation
+- Interactive element design
+- ترقي يافته color theory
+- Typography optimization
+
+### Advanced Companion Tools (الڳ پيڪيج) {#advanced-companion-tools-separate-package}
+
+Advanced ساٿي پيڪيج بنيادي Superdav AI Agent رليز کان الڳ ورهايو ويندو آهي. اهو ڀروسي لائق ڊولپر ۽ سائيٽ-مالڪ ماحولن لاءِ آهي جتي administrators واضح طور agent کي وڏو اثر رکندڙ tooling استعمال ڪرڻ جي اجازت ڏين ٿا.
+
+Advanced ساٿي صلاحيتن ۾ شامل ٿي سگهن ٿا:
+
+- **Filesystem اوزار** — ڀروسي لائق ماحولن ۾ منظور ٿيل فائلن جو معائنو ۽ ترميم ڪريو
+- **Database اوزار** — واضح اختيار ملڻ تي سائيٽ data query يا update ڪريو
+- **WP-CLI اوزار** — WordPress سار سنڀال ۽ معائني جا commands هلائو
+- **REST dispatcher اوزار** — ڪنٽرول ٿيل dispatch ڪم جي وهڪرن ذريعي registered REST endpoints کي call ڪريو
+- **Plugin builder اوزار** — plugin code کي scaffold ۽ iterate ڪريو
+- **Git snapshot اوزار** — خطري وارن ڊولپر operations کان اڳ snapshots ٺاهيو
+- **User-management اوزار** — اجازت هجي ته user records جو جائزو وٺڻ يا ترتيب ڏيڻ ۾ مدد ڪريو
+- **Benchmark اوزار** — development review لاءِ performance يا capability benchmarks هلائو
+
+انهن کي هر installation لاءِ عام طور موجود Theme Builder اوزار طور document نه ڪريو. اهي فقط تڏهن موجود هوندا آهن جڏهن Advanced ساٿي پيڪيج انسٽال، enabled، ۽ ڀروسي لائق administrators تائين محدود ڪيو ويو هجي.
+
+## Tool Configuration {#tool-configuration}
+
+### اوزار enabled ڪرڻ {#enabling-tools}
+
+Theme Builder ۾ اضافي اوزار enabled ڪرڻ لاءِ:
+
+1. **Gratis AI Agent → Settings** ڏانهن وڃو
+2. **Theme Builder → Tools** ڏانهن وڃو
+3. ضرورت مطابق اوزار on/off ڪريو
+4. سيٽنگون محفوظ ڪريو
+
+### اوزارن جون اجازتون {#tool-permissions}
+
+ڪجهه اوزارن کي اجازتن جي ضرورت هوندي آهي:
+
+- **سائيٽ scraping** — internet access گهربل آهي
+- **Analytics** — Google Analytics integration گهربل آهي
+- **مواد generation** — API keys گهربل آهن
+- **ترقي يافته خصوصيتون** — premium subscription گهربل ٿي سگهي ٿي
+- **Advanced ساٿي اوزار** — الڳ ورهايل Advanced پيڪيج ۽ واضح administrator trust گهربل آهي
+
+### API Keys ۽ Credentials {#api-keys-and-credentials}
+
+انهن اوزارن لاءِ API keys ترتيب ڏيو جن کي اهي گهربل آهن:
+
+1. **Gratis AI Agent → Settings → API Keys** ڏانهن وڃو
+2. هر اوزار لاءِ credentials داخل ڪريو
+3. connection test ڪريو
+4. محفوظ طريقي سان محفوظ ڪريو
+
+### Advanced ساٿي پيڪيج انسٽال ڪرڻ {#installing-the-advanced-companion-package}
+
+Advanced ساٿي پيڪيج WordPress.org core ZIP کان الڳ جاري ڪيو ويندو آهي. ان کي فقط رليز لاءِ سرڪاري project distribution channel مان انسٽال ڪريو، پوءِ رسائي کي ڀروسي لائق administrators تائين محدود ڪريو. Production سائيٽ تي filesystem، database، WP-CLI، REST dispatcher، plugin builder، user-management، يا benchmark اوزار enabled ڪرڻ کان اڳ انساني منظوري gates ۽ git snapshot رويي جو جائزو وٺو.
+
+## sd-ai-agent/site-scrape استعمال ڪرڻ {#using-sd-ai-agentsite-scrape}
+
+### بنيادي استعمال {#basic-usage}
+
+Theme Builder کان ويب سائيٽ جو تجزيو ڪرڻ لاءِ پڇو:
+
+```
+competitor.com تي منهنجي مقابلي ڪندڙ جي سائيٽ جي ڊيزائن جو تجزيو ڪريو
+۽ منهنجي سائيٽ لاءِ ڊيزائن بهتريون تجويز ڪريو.
+```
+
+### مخصوص تجزيو {#specific-analysis}
+
+مخصوص قسمن جي تجزيي جي درخواست ڪريو:
+
+```
+example.com مان رنگن جو palette ڪڍو ۽ ان کي الهام طور استعمال ڪريو.
+```
+
+```
+example.com جي navigation بناوٽ جو تجزيو ڪريو ۽ ساڳي
+تنظيم منهنجي سائيٽ تي لاڳو ڪريو.
+```
+
+```
+example.com جي موبائل responsiveness چيڪ ڪريو ۽ پڪ ڪريو ته منهنجي سائيٽ
+ساڳي طرح responsive آهي.
+```
+
+### ڀيٽ وارو تجزيو {#comparison-analysis}
+
+گهڻين سائيٽن جو مقابلو ڪريو:
+
+```
+site1.com ۽ site2.com جي ڊيزائنز جو مقابلو ڪريو ۽ هڪ اهڙي ڊيزائن ٺاهيو
+جيڪا ٻنهي جا بهترين عنصر گڏ ڪري.
+```
+
+## اوزارن جون حدون ۽ ويچار {#tool-limitations-and-considerations}
+
+### Rate Limiting {#rate-limiting}
+
+- سرور تي وڌيڪ بار کان بچڻ لاءِ اسڪريپنگ تي شرح جي حد لاڳو آهي
+- ساڳي سائيٽ ڏانهن ڪيترين درخواستن کي ٿورو روڪي سگهجي ٿو
+- وڏين سائيٽن جو تجزيو ڪرڻ ۾ وڌيڪ وقت لڳي سگهي ٿو
+
+### مواد جي درستگي {#content-accuracy}
+
+- متحرڪ مواد مڪمل طور تي پڪڙيل نه به ٿي سگهي ٿو
+- JavaScript سان ڏيکاريل مواد اڻپورو ٿي سگهي ٿو
+- حقيقي وقت وارو ڊيٽا ظاهر نه به ٿي سگهي ٿو
+- ڪجهه مواد ادا واري ڀت پويان ٿي سگهي ٿو
+
+### قانوني ۽ اخلاقي ويچار {#legal-and-ethical-considerations}
+
+- robots.txt ۽ سائيٽ جي پاليسين جو احترام ڪريو
+- ڪاپي رائيٽ ٿيل مواد کي ٻيهر پيش ڪرڻ لاءِ اسڪريپ نه ڪريو
+- تجزيو نقل ڪرڻ لاءِ نه، پر الهام لاءِ استعمال ڪريو
+- پڪ ڪريو ته ڪڍيل مواد استعمال ڪرڻ جا حق توهان وٽ آهن
+- تجزيو ڪيل سائيٽن جي خدمت جي شرطن تي عمل ڪريو
+
+### ڪارڪردگي تي اثر {#performance-impact}
+
+- وڏين سائيٽن جي اسڪريپنگ ۾ وقت لڳي سگهي ٿو
+- هڪ ئي وقت ڪيترين اسڪريپنگن سان رفتار گهٽ ٿي سگهي ٿي
+- نيٽ ورڪ ڪنيڪٽوٽي رفتار تي اثرانداز ٿئي ٿي
+- وڏن ڊيٽا سيٽن کي وڌيڪ پروسيسنگ گهربل ٿي سگهي ٿي
+
+## بهترين طريقا {#best-practices}
+
+### سائيٽ تجزيو استعمال ڪرڻ {#using-site-analysis}
+
+1. **گهڻين سائيٽن جو تجزيو ڪريو** — ڪيترن ذريعن مان الهام گڏ ڪريو
+2. **جوڙجڪ تي ڌيان ڏيو** — لي آئوٽ ۽ تنظيم جا نمونا سکو
+3. **رنگ ڪڍو** — رنگن جي پيلٽن کي شروعاتي نقطن طور استعمال ڪريو
+4. **ٽائپوگرافي جو مطالعو ڪريو** — پنهنجي پسند جون فونٽ گڏجاڻيون سڃاڻو
+5. **نيويگيشن جو جائزو وٺو** — مينيو جي تنظيم کي سمجھو
+
+### اخلاقي اسڪريپنگ {#ethical-scraping}
+
+1. **robots.txt جو احترام ڪريو** — سائيٽ جي هدايتن تي عمل ڪريو
+2. **مواد نقل نه ڪريو** — تجزيو رڳو الهام لاءِ استعمال ڪريو
+3. **حقن جي تصديق ڪريو** — پڪ ڪريو ته ڪڍيل مواد استعمال ڪري سگهو ٿا
+4. **ذريعن جو حوالو ڏيو** — الهام جي ذريعن کي ڪريڊٽ ڏيو
+5. **شرطن تي عمل ڪريو** — سائيٽ جي خدمت جي شرطن جي پابندي ڪريو
+
+### اوزار جي اثرائتي وڌائڻ {#maximizing-tool-effectiveness}
+
+1. **واضح ٿيو** — مخصوص قسمن جي تجزيي جي درخواست ڪريو
+2. **پسمنظر ڏيو** — پنهنجي سائيٽ جو مقصد وضاحت ڪريو
+3. **اميدون مقرر ڪريو** — پنهنجي ڊيزائن جا مقصد بيان ڪريو
+4. **ورجايو** — نتيجن جي بنياد تي بهتر ڪريو
+5. **اوزار گڏ استعمال ڪريو** — جامع تجزيي لاءِ ڪيترائي اوزار استعمال ڪريو
+
+## مسئلا حل ڪرڻ {#troubleshooting}
+
+### سائيٽ اسڪريپ نٿي ٿئي {#site-wont-scrape}
+
+- چيڪ ڪريو ته سائيٽ عوامي طور رسائي لائق آهي يا نه
+- تصديق ڪريو ته robots.txt اسڪريپنگ جي اجازت ڏئي ٿو
+- ٻي سائيٽ آزمائي ڏسو
+- انٽرنيٽ ڪنيڪشن چيڪ ڪريو
+- جيڪڏهن مسئلو جاري رهي ته سپورٽ سان رابطو ڪريو
+
+### اڻپورو تجزيو {#incomplete-analysis}
+
+- سائيٽ ۾ متحرڪ مواد ٿي سگهي ٿو
+- JavaScript مڪمل طور رينڊر نه ٿيو هجي
+- وڏيون سائيٽون ٽائيم آئوٽ ٿي سگهن ٿيون
+- ان جي بدران مخصوص صفحن جو تجزيو آزمائي ڏسو
+- مخصوص تجزيي جي قسمن جي درخواست ڪريو
+
+### سست ڪارڪردگي {#slow-performance}
+
+- وڏين سائيٽن جو تجزيو ڪرڻ ۾ وڌيڪ وقت لڳندو آهي
+- هڪ ئي وقت ڪيترين اسڪريپنگن سان رفتار گهٽ ٿيندي آهي
+- نيٽ ورڪ ڪنيڪٽوٽي رفتار تي اثرانداز ٿئي ٿي
+- گهٽ مصروفيت وارن ڪلاڪن دوران آزمائي ڏسو
+- پهريان ننڍن حصن جو تجزيو ڪريو
+
+## لاڳاپيل دستاويز {#related-documentation}
+
+- [دريافتي انٽرويو](./discovery-interview.md) — ڊيزائن جي معلومات گڏ ڪريو
+- [ڊيزائن جي سمت](./design-direction.md) — پنهنجي ڊيزائن کي بهتر ڪريو
+- [مهمان نوازي مينيو](./hospitality-menus.md) — مينيو صفحا ٺاهيو

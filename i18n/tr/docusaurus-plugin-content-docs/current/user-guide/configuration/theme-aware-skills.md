@@ -3,11 +3,11 @@ title: Tema Farkındalıklı Beceriler
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema Farkındalıklı Beceriler
+# Tema Farkındalıklı Beceriler {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0, aktif WordPress temanıza otomatik olarak uyum sağlayan dört yeni tema farkındalıklı yerleşik beceri (skill) ile geliyor. Bu beceriler, temanızın mimarisine ve özelliklerine özel olarak hazırlanmış uzman rehberlik ve yetenekler sunar.
 
-## Tema Farkındalıklı Beceriler Nedir?
+## Tema Farkındalıklı Beceriler Nedir? {#what-are-theme-aware-skills}
 
 Tema farkındalıklı beceriler, yapay zeka asistanının sitenizde şu anda aktif olan WordPress temasına göre otomatik olarak seçtiği önceden yapılandırılmış bilgi tabanları ve araç setleridir. Tema değiştirdiğinizde, asistanın kullanabileceği beceriler otomatik olarak güncellenir; manuel bir yapılandırmaya gerek yoktur.
 
@@ -18,9 +18,9 @@ Her beceri şunları içerir:
 - **Özelleştirme örnekleri** — Yaygın görevler için kod parçacıkları ve yapılandırma kalıpları
 - **En iyi uygulamalar** — Temanın mimarisi ve iş akışı için öneriler
 
-## Mevcut Tema Farkındalıklı Beceriler
+## Mevcut Tema Farkındalıklı Beceriler {#available-theme-aware-skills}
 
-### Blok Temalar (Block Themes)
+### Blok Temalar (Block Themes) {#block-themes}
 
 **Uygulanır:** WordPress'in blok tabanlı (Full Site Editing) mimarisini kullanan temalar.
 
@@ -34,7 +34,7 @@ Blok Temalar becerisi şunlar hakkında rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Aktif temanız bir blok teması olduğunda ( `block-templates` özelliğini destekliyorsa).
 
-### Klasik Temalar (Classic Themes)
+### Klasik Temalar (Classic Themes) {#classic-themes}
 
 **Uygulanır:** PHP şablonları ve klasik düzenleyiciyi kullanan geleneksel WordPress temaları.
 
@@ -48,7 +48,7 @@ Klasik Temalar becerisi şunlar hakkında rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Aktif temanız klasik (blok olmayan) bir tema olduğunda.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Uygulanır:** Gelişmiş blok tabanlı tasarım için Kadence Blocks eklentisini kullanan siteler.
 
@@ -62,7 +62,7 @@ Kadence Blocks becerisi şunlar hakkında rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Kadence Blocks eklentisi sitenizde aktif olduğunda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Uygulanır:** Blok tabanlı tasarım ve özelleştirme için Kadence temasını kullanan siteler.
 
@@ -76,15 +76,15 @@ Kadence Theme becerisi şunlar hakkında rehberlik sağlar:
 
 **Otomatik olarak etkinleşir:** Kadence teması aktif temanız olduğunda.
 
-## Beceriler Nasıl Seçilir?
+## Beceriler Nasıl Seçilir? {#how-skills-are-selected}
 
 Asistan, her mesajda aktif temanızı ve yüklü eklentilerinizi otomatik olarak algılar. Eşleşen bir tema farkındalıklı beceri mevcutsa, bu beceri otomatik olarak asistanın bağlamına yüklenir. Becerileri manuel olarak etkinleştirmenize veya değiştirmenize gerek yoktur.
 
-### Birden Fazla Beceri
+### Birden Fazla Beceri {#multiple-skills}
 
 Sitenize birden fazla beceri uygulanıyorsa (örneğin, hem Kadence Blocks hem de Kadence Theme aktifse), asistan tüm geçerli becerilere erişebilir ve her birinden rehberlik alabilir.
 
-### Tema Değiştirme
+### Tema Değiştirme {#switching-themes}
 
 Aktif temanızı değiştirdiğinizde, asistanın kullanabileceği beceriler bir sonraki mesajda otomatik olarak güncellenir. Örneğin:
 
@@ -92,11 +92,11 @@ Aktif temanızı değiştirdiğinizde, asistanın kullanabileceği beceriler bir
 2. Klasik bir temaya geçiyorsunuz.
 3. Bir sonraki mesajınızda, **Klasik Temalar** becerisi otomatik olarak yüklenir ve **Blok Temalar** becerisi artık kullanılamaz hale gelir.
 
-## Tema Farkındalıklı Becerileri Kullanma
+## Tema Farkındalıklı Becerileri Kullanma {#using-theme-aware-skills}
 
 Bir tema farkındalıklı beceriden yararlanmak için yapmanız gereken tek şey, sohbet arayüzünde ne yapmak istediğinizi açıklamak. Asistan, uygun becerinin rehberliğine otomatik olarak atıfta bulunacaktır.
 
-### Örnek Komutlar
+### Örnek Komutlar {#example-prompts}
 
 **Blok Temalar için:**
 > "Blok desenlerini kullanarak arka plan resmi ve ortalanmış metin içeren bir kahraman bölümü oluştur."

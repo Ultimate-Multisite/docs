@@ -3,7 +3,7 @@ title: فۆرمەکانی دابەزراوێنان
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Forms ba Checkout (Formulary ba Checkout)
+# Forms ba Checkout (Formulary ba Checkout) {#checkout-forms}
 
 Forms ba Checkout r amwaya siroze û fleksibel ye ku tu bi ferspasiyonên cuda wêne bixwazin de ku hewce ye ji bo guhertina nû bêjmara neyê.
 
@@ -36,13 +36,13 @@ Dema ku hûn yek ji van sê wek başxistina xwe yê destpêkê bîyînin, templa
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### گۆڕینی ویرتۆر فۆرم (Checkout Form Editor Overview)
+#### گۆڕینی ویرتۆر فۆرم (Checkout Form Editor Overview) {#checkout-form-editor-overview}
 
 ویرتۆر فۆرمەکە ڕێگەیێکی پڕکەرەوە پێشکەش دەکات بۆ دروستکردنی فۆرمە تۆمارکردنەکانت. لێرەدا پوختەیەکی کورت لەسەر ڕێکخستنی ویرتۆرەکە دەبینیت:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### گۆڕینی فۆرمێکی Checkout
+### گۆڕینی فۆرمێکی Checkout {#editing-a-checkout-form}
 
 دەتوانیت بۆ بارودۆخی جیاواز فۆرمەکانی checkout دروست بکەیت. لەم نموونەدا، ئێمە کار دەکەین لەسەر فۆرمێکی تۆمارکردن (registration form).
 
@@ -112,7 +112,7 @@ _**تێبینی:** username، email، password، site title، site URL، order s
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### فیلد جدول قیمت‌گذاری (The Pricing Table Field)
+### فیلد جدول قیمت‌گذاری (The Pricing Table Field) {#the-pricing-table-field}
 
 فیلد **Pricing Table** محصولات شما را در فرم پرداخت نمایش می‌دهد تا مشتریان بتوانند یک طرح (plan) را انتخاب کنند. وقتی این فیلد را ویرایش می‌کنید، می‌توانید چندین گزینه را تنظیم کنید:
 
@@ -130,17 +130,17 @@ _**تێبینی:** username، email، password، site title، site URL، order s
 
 اگر قبل از اینکه فرم شامل فیلدهای لازم برای تکمیل جریان پرداخت آن محصول باشد، یک محصول به جدول قیمت‌گذاری اضافه کنید، ویرایشگر اکنون یک هشدار نمایش می‌دهد. از این هشدار استفاده کنید تا قبل از انتشار یا ذخیره تغییرات برای یک فرم ثبت نام زنده، فیلد مورد نیاز را اضافه کنید.
 
-### زیادکردنی دکمه‌ی انتخاب دوره زمانی
+### زیادکردنی دکمه‌ی انتخاب دوره زمانی {#adding-a-period-selection-toggle}
 
 ئەگەر ئێستا [Price Variations](creating-your-first-subscription-product#price-variations) بۆ بەرهەمەکانت ڕێکخستو بێت (بۆ نموونە، نرخەکانی مانگانە و ساڵان)، دەتوانیت یەک فیلدی **Period Selection** (انتخابکردنی ماوەی کارکردن) بۆ فۆرمەکەدا زیاد بکەیت. ئەم فیلدەیەک دکمه‌یێک نیشان دەدات کە ڕێگە بە کڕیارەکان دەدات لە نێوان ئەو ماوەی کارکردنە جیاوازەکان بگۆڕن، و خشتەی نرخەکە بە شێوەیەکی گۆڕان لە کاتی ڕاستەوخۆ به‌ژێر دەبێت.
 
-#### هەنگاوی یەکەم: ڕێکخستنی Price Variations لەسەر بەرهەمەکانت
+#### هەنگاوی یەکەم: ڕێکخستنی Price Variations لەسەر بەرهەمەکانت {#step-1-set-up-price-variations-on-your-products}
 
 پێش ئەوەی فیلدی Period Selection زیاد بکەیت، دڵنیا بەوەی کە بەرهەمەکانت نرخەکانی جیاواز (price variations) ڕێکخستو نەکراون. بگواشبە **Ultimate Multisite > Products**، یەک بەرهەم دەستکاری بکە، و بچۆ بۆ تابلۆی **Price Variations** بۆ زیادکردنی ماوەی کارکردنی جیاواز (بۆ نموونە: ساڵان بە نرخێکی کەمتر).
 
 ![تابلۆی Price Variations لەسەر بەرهەمێک](/img/config/product-price-variations-tab.png)
 
-#### هەنگاوی دووەم: زیادکردنی فیلدی Period Selection بۆ فۆرمەکەدا
+#### هەنگاوی دووەم: زیادکردنی فیلدی Period Selection بۆ فۆرمەکەدا {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. بگواشبە **Ultimate Multisite > Checkout Forms** و فۆرمەکەت دەستکاری بکە.
 
@@ -163,13 +163,13 @@ _**تێبینی:** username، email، password، site title، site URL، order s
 
 ٧. دابەری **Save Field**.
 
-#### هەنگاو ٣: فیلدەکە لەسەر خشتەیราقەکان دانانەوە
+#### هەنگاو ٣: فیلدەکە لەسەر خشتەیราقەکان دانانەوە {#step-3-position-the-field-above-the-pricing-table}
 
 بۆ باشترین ئەزموونی بەکارهێنەر، دڵنیابConvertTo کە فیلدی Period Selection پێش Pricing Table فیلدەکە لە هەنگاوی تۆڕی پاشخستن (checkout step) دەربکەوێت. دەتوانیت فیلدەکان بکێشیت بۆ گۆڕینی ڕیزبەندییان لەم ویرایتی فۆرم編輯گردا (checkout form editor). بەم شێوەیە، کڕیارەکان پێش ئەوەی ماوەی بارکردن (billing period) هەڵبژێرن، تێبینی نرخەکانی ئەو ماوەیە دەبینن.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### چۆنیەتی کارکردندا لە پێشەوە (Frontend)
+#### چۆنیەتی کارکردندا لە پێشەوە (Frontend) {#how-it-works-on-the-frontend}
 
 کاتێک ڕێکخستووە، کڕیارانی کە سەردانی لاپەڕەی تۆمارکردن دەکەن، دەبینن Selectorی ماوەیە لەسەر خشتەیราقەکان. کاتێک ئەوان فیلدی بارکردنی جیاوازی (billing period) دیاریکراون:
 
@@ -177,7 +177,7 @@ _**تێبینی:** username، email، password، site title، site URL، order s
   * ئەگەر **Force Different Durations** لە فیلدی Pricing Table بオフ (disabled) بێت، ئەو بەرهەمانەی نرخێکی جیاوازی بۆ ماوەی هەڵبژێردراو نییە، پاشکەوتراون.
   * ئەگەر **Force Different Durations** چالاک بێت (enabled)، هەموو بەرهەمەکان دەبینرێن تەنانەت ئەگەر نرخێکی جیاوازی بۆ ماوەی هەڵبژێردراو نییە (نرخی سەرەکیان دەنیشێن).
 
-#### پێش هەڵبژاردنی ماوەی بارکردن لە ڕێگەی URL
+#### پێش هەڵبژاردنی ماوەی بارکردن لە ڕێگەی URL {#pre-selecting-a-billing-period-via-url}
 
 دەتوانیت بە شێوەیەکی پێشوەخت بەرهەم و ماوەی بارکردن لە ڕێگەی URL دیاریکراو هەڵبژێرین. Ultimate Multisite پشتگیری دەکات ئەم پترۆنە URL-انە:
 
@@ -185,11 +185,11 @@ _**تێبینی:** username، email، password، site title، site URL، order s
   * `/register/premium/12` — بەرهەم و ماوەی ١٢ مانگی پێشوەخت دەکات
   * `/register/premium/1/year` — بەرهەم لەگەڵ ماوەی ١ ساڵ پێشوەخت دەکات
 
-### فیلدی هەڵبژاردنی قالب (The Template Selection Field)
+### فیلدی هەڵبژاردنی قالب (The Template Selection Field) {#the-template-selection-field}
 
 فیلدی **Template Selection** دەدات کڕیارەکان لە کاتی پاشخستن، قالبێکی سایت هەڵبژێرن. ئەم فیلدە ئێستا بە شێوەیەکی پیش‌تەوا پێشکراو (default) لە فۆرمەکانی پاشخستنی یەک هەنگاو (single step) و چەند هەنگاو (multi-step) کە لە Ultimate Multisite v2.6.1 دا زیادکراون، گونجاوە.
 
-#### بە شێوەیەکی دەستکرد زیادکردنی فیلدەکە
+#### بە شێوەیەکی دەستکرد زیادکردنی فیلدەکە {#adding-the-field-manually}
 
 ئەگەر لەگەڵ فۆرمێک کار دەکەیت کە پێش v2.6.1 دروستکراوە، یان لە شێوازی پۆلێمبێکی پارێزراو (blank template) دەستپێکردووە:
 
@@ -200,11 +200,11 @@ _**تێبینی:** username، email، password، site title، site URL، order s
    - **Label** — سەرۆکەکەی کە کڕیارەکان لەسەر تۆڕەکە دەبینن لەسەر گۆڕێکی پۆلێمب (وەک "راوەکی پۆلێمب هەڵبژێرە").
    - **Required** — ئایا کڕیارەکان پێویستە پۆلێمبێک هەڵبژێرن پێش بەردەوامبوون؟
 
-#### چۆنیەتی کارکردن
+#### چۆنیەتی کارکردن {#how-it-works}
 
 کاتێک کڕیاری پۆلێمبێک لە کاتی کۆتایی دابینکردندا (checkout) هەڵدەبژێرێت، Ultimate Multisite ئەو پۆلێمبەی دەستکاری دەکات بۆ دروستکردنی سایتێکی نوێی ئەوان. پۆلێمبەکانی نیشانکراوەکان لە لیستەکەتدا **Site Templates** (**Ultimate Multisite > Site Templates**) دەربارەی پێشکەوتوون. تەنها ئەو پۆلێمب یانە کە بۆ کڕیاران بە ئامادەیە (available) هاتوون لێرە دەبینن.
 
-### ناوەکانی سەرەکی فۆرمەکە بۆ کۆتایی دابینکردن (Checkout-form base domains)
+### ناوەکانی سەرەکی فۆرمەکە بۆ کۆتایی دابینکردن (Checkout-form base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 ناوەکانی دامەزراوەکانی تۆڕی کە لە فیلدەکانی **Site URL** ی فۆرمی کۆتایی دابینکراون وەک ناوەکانی سەرەکی تۆڕی دەبینێت. کاتێک دەتەوێت کڕیاران سایتێک بە ناوی تۆمارێکی هاوبەش دروست بکەن، وەک `example.com` و `sites.example.com`، لە ڕێگەی تنظیمەکانی فیلدەکە بۆ ناوەکانی دامەزراوەکانی هاوبەش بەکاربهێنە.
 
@@ -212,6 +212,6 @@ Ultimate Multisite v2.13.0 ناوەکانی دامەزراوەکانی تۆڕی 
 
 ناوەکانی تایبەت (custom domains) بۆ هاستکردنی پۆلێمبێک بۆ کڕیار، وەک `customer-example.com`، پارێزراو بکە. ناوەکانی سەرەکی فۆرمەکە بۆ هاستکردنی تۆمارە هاوباش کە چەندین سایت دەتوانن بەکاربهێنن، پارێزراو بکە.
 
-#### هەڵگرتنی فیلدەکە (Removing the field)
+#### هەڵگرتنی فیلدەکە (Removing the field) {#removing-the-field}
 
 ئەگەر تۆ قالبەکانی سایت پێشکەش ناکەیت، فیلد "Template Selection" لە فۆرمەکەت دەربکە. بەم شێوەیە، کڕیارەکان ئەو قالبەی کە بەپێی دیاریکراوی **Ultimate Multisite > Settings > Site Templates** هەڵبژێردرێت، وەردەگرن.

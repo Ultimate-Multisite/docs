@@ -3,11 +3,11 @@ title: Огляд панелі керування
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Огляд панелі керування
+# Огляд панелі керування {#dashboard-overview}
 
 Ultimate Multisite має окрему **Панель керування** в меню Ultimate Multisite, а також додає віджети до Панелі керування мережі. У цій статті розглянемо, що ви побачите в обох місцях.
 
-## Панель керування мережі
+## Панель керування мережі {#the-network-dashboard}
 
 Ultimate Multisite додає корисні віджети до панелі керування мережі, яку можна знайти за шляхом **Мої сайти → Адмін мережі → Панель керування**.
 
@@ -35,7 +35,7 @@ Ultimate Multisite додає корисні віджети до панелі к
 
 ![Віджет «Новини»](/img/admin/network-dashboard-news.png)
 
-## Панель керування Ultimate Multisite
+## Панель керування Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Якщо панель керування мережі показує загальну інформацію про мережу, то панель керування Ultimate Multisite (у верхній частині меню Ultimate Multisite) показує інформацію про сервіс.
 

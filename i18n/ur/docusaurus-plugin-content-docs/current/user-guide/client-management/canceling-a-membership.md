@@ -1,31 +1,32 @@
 ---
-title: ممبرشپ منسوخ کرنا
+title: رکنیت منسوخ کرنا
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# رکنیت منسوخ کرنا (v2)
+# Membership منسوخ کرنا (v2) {#canceling-a-membership-v2}
 
 _**اہم نوٹ: یہ مضمون Ultimate Multisite ورژن 2.x سے متعلق ہے۔**_
 
-آپ کے صارفین کی طرف سے رکنیت منسوخ کرنا کافی آسان ہے۔
+آپ کے صارفین کی طرف سے membership منسوخ کرنا کافی آسان ہے۔
 
-اگر آپ کا صارف اپنی رکنیت منسوخ کرنا چاہتا ہے، تو انہیں پہلے اپنے ****Account**** صفحے پر جانا چاہیے۔
+اگر آپ کا صارف اپنی membership منسوخ کرنا چاہتا ہے، تو اسے پہلے اپنے ****Account**** صفحے تک رسائی حاصل کرنی چاہیے۔
 
-وہاں، انہیں **Danger Zone** پر جانا چاہیے، اور **Delete Account** پر کلک کرنا چاہیے۔
+وہاں، اسے **خطرے کا علاقہ** کی طرف جانا چاہیے، اور **Account حذف کریں** پر کلک کرنا چاہیے۔
 
-![Account صفحہ Danger Zone جس میں Delete Account بٹن ہے](/img/admin/memberships-list.png)
+![Delete Account بٹن کے ساتھ Account صفحے کا خطرے کا علاقہ](/img/account-page/danger-zone.png)
 
-ایک ونڈو کھلے گی جو ان سے تصدیق مانگے گی۔ انہیں **Confirm Account Deletion** آپشن کو آن کرنا ہوگا اور **Delete Account** پر کلک کرنا ہوگا۔
+ایک ماڈیول کھلے گا جو ان سے تصدیق طلب کرے گا۔ انہیں **Account حذف کرنے کی تصدیق کریں** اختیار کو آن کرنا چاہیے اور **Account حذف کریں** پر کلک کرنا چاہیے۔
 
-![Confirm Account Deletion ڈائیلاگ](/img/admin/memberships-list.png)
+![Account حذف کرنے کی تصدیق کا ڈائیلاگ](/img/account-page/delete-account-confirm.png)
 
-اس سے وہ سائٹ سے لاگ آؤٹ ہو جائیں گے اور آپ کے نیٹ ورک پر ان کی رکنیت منسوخ ہو جائے گی، ساتھ ہی ان کی سائٹ بھی آپ کے نیٹ ورک سے حذف ہو جائے گی۔
+یہ انہیں سائٹ سے لاگ آؤٹ کر دے گا اور آپ کے نیٹ ورک پر ان کی membership منسوخ کر دے گا، نیز آپ کے نیٹ ورک سے ان کی سائٹ حذف کر دے گا۔
 
-![اکاؤنٹ حذف ہونے کے بعد لاگ آؤٹ](/img/admin/memberships-list.png)
+![اکاؤنٹ حذف کرنے کے بعد لاگ آؤٹ](/img/account-page/logged-out-after-delete.png)
 
-![رکنیت منسوخ ہونے کی تصدیق](/img/admin/memberships-list.png)
+![Membership منسوخ ہونے کی تصدیق](/img/account-page/membership-canceled.png)
 
-**اہم:** نوٹ کریں کہ اس عمل سے صارف آپ کے نیٹ ورک سے مکمل طور پر نہیں ہٹے گا، کیونکہ ایک صارف کی ایک سے زیادہ رکنیتیں ہو سکتی ہیں یا کوئی رکنیت نہیں بھی ہو سکتی۔
+**اہم:** نوٹ کریں کہ یہ عمل customer کو آپ کے نیٹ ورک سے خارج نہیں کرے گا، کیونکہ ایک customer کے ساتھ ایک سے زیادہ memberships منسلک ہو سکتی ہیں یا کوئی membership منسلک نہیں ہو سکتی۔
 
-![منسوخی کے بعد صارف اب بھی نیٹ ورک میں موجود ہے](/img/admin/memberships-list.png) | ![کوئی فعال رکنیت نہ رکھنے والا صارف](/img/admin/memberships-list.png)  
----|---
+![منسوخی کے بعد customer اب بھی نیٹ ورک میں موجود ہے](/img/admin/customer-after-cancel.png)
+
+![customer جس کے پاس کوئی فعال memberships نہیں ہیں](/img/admin/memberships-customer-empty.png)

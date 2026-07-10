@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 menambah pemuat (loader) sambungan sunrise untuk add-on dan integrasi custom MU-plugin yang perlu berjalan semasa proses permulaan (bootstrapping) WordPress sunrise tanpa perlu menyunting fail `wp-content/sunrise.php` yang dijana.
 
-## Bila menggunakannya
+## Bila menggunakannya {#when-to-use-it}
 
 Gunakan sambungan sunrise apabila integrasi anda mesti berjalan sebelum plugin biasa dimuatkan, seperti perutean domain custom, pengendalian permintaan spesifik hos, atau pelarasan awal bootstrapping network.
 
 Untuk integrasi biasa, lebih baik gunakan plugin WordPress biasa, MU-plugin, dan hook Ultimate Multisite yang telah didokumentasikan. Kod sunrise berjalan sangat awal dan haruslah ringkas, defensif, dan bebas daripada kebergantungan (dependency-free).
 
-## Konvensyen penamaan fail
+## Konvensyen penamaan fail {#file-naming-convention}
 
 Cipta fail PHP bernama `sunrise.php` dalam direktori add-on yang namanya bermula dengan `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Fail yang sepadan akan dimuatkan mengikut urutan abjad mengikut laluan add-on.
 
-## Tempat meletakkan fail
+## Tempat meletakkan fail {#where-to-place-the-file}
 
 Letakkan fail tersebut dalam direktori akar (root directory) add-on yang memiliki tingkah laku sunrise:
 
@@ -45,7 +45,7 @@ Pengimbasan ini diselesaikan relatif kepada `WP_CONTENT_DIR`, bukan nilai semasa
 
 Jangan sunting fail `wp-content/sunrise.php` yang dijana secara langsung. Pemuat ini membenarkan kod custom untuk memperluaskan tingkah laku sunrise tanpa perlu membuat *fork* fail sunrise teras yang dipasang dan dikemas kini oleh Ultimate Multisite.
 
-## Hook dan filter yang tersedia
+## Hook dan filter yang tersedia {#hooks-and-filters-available}
 
 Fail sunrise add-on berjalan selepas pemetaan domain Ultimate Multisite dimuatkan dan sebelum WordPress mencetuskan `ms_loaded`. Pada peringkat ini, fail sunrise boleh:
 
@@ -58,7 +58,7 @@ Ultimate Multisite mencetuskan `wu_sunrise_loaded` selepas pemuat sunrise-nya se
 
 Hanya panggil fungsi yang sudah dimuatkan dalam fasa sunrise. Elakkan kerja yang berat pada pangkalan data, rendering template, permintaan HTTP, dan kod yang mengandaikan urutan muat plugin biasa telah selesai.
 
-## Contoh minimum
+## Contoh minimum {#minimal-example}
 
 ```php
 <?php

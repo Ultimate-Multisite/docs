@@ -1,40 +1,46 @@
 ---
-title: ڕێنمایی تنظیمەکان
+title: سەرچاوەی ڕێکخستنەکان
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Reference Paramètrèk
+# سەرچاوەی ڕێکخستنەکان {#settings-reference}
 
-Prèjeya u liq qe pèsiênn prèjèk kîjan an jî guhneyên nûjen a karê diyar dikin a Ultimate Multisite.
+ئەم پەڕەیە شوێنپێی ئەو ڕێکخستنانە دەگرێت کە کاریگەرن لەسەر بەڕێوەبردنی ڕۆژانە و گۆڕانکارییە نوێیەکانی ڕەفتار لە Ultimate Multisite.
 
-## Diçûlên din
+## هەڵبژاردەکانی تر {#other-options}
 
-Bixêrka **Diçûlên din** li kêleke **Ultimate Multisite > Settings > Login & Registration** derdike.
+ناوچەی **هەڵبژاردەکانی تر** لە ژێر **Ultimate Multisite > Settings > Login & Registration** دەر دەکەوێت.
 
-| Paramètrèk | Pêşnînek |
+| ڕێکخستن | وەسف |
 |---|---|
-| **Enable Jumper** | Çavkanîna çarkê navigasyonê ya Jumper di navgehên adminê nîşan dawe dike. Ji wê bikaranîn ji bo kirin rast ji ekranên Ultimate Multisite, objeyên şebetê (network objects) û leşânên adminên pûr. E wan bi destnaxwîn bike heger hûn ne dixwazin ev çukûl deriyan. |
+| **چالاککردنی Jumper** | ئامرازی ڕێنیشاندانی خێرای Jumper لە ناوچەی بەڕێوەبردن پیشان دەدات. بەکاری بهێنە بۆ بازدان بە ڕاستەوخۆ بۆ شاشەکانی Ultimate Multisite، شتەکانی تۆڕ، و مەبەستە پشتگیریکراوەکانی بەڕێوەبردن. ناچالاکی بکە ئەگەر ناتەوێت ئەم کورتکراوەیە دیار بێت. |
 
-## Raporandina pirsgirêk û telemetry
+## ڕاپۆرتکردنی هەڵە و telemetry {#error-reporting-and-telemetry}
 
-Paramètrèka ji bo piştjahanîna pirsgirêk a pirsgirêkê ji porsèya parametrekan derdike. Telemetry-a anonim bi destnaxwîn bike û ne hewceyê li ser UI ye ku wê aktife bike.
+ڕێکخستنی پێشووی ڕەزامەندی بۆ ڕاپۆرتکردنی هەڵە لە پەڕەی ڕێکخستنەکان لابراوە. telemetry ـی نەناسراو ناچالاک کراوە و هیچ دوگمەیەکی UI نییە بۆ چالاککردنی.
 
-Heger hûn runbookên girîng an screenshotên ji bo porsèya parametreka derdoreke, referansên ji bo porsèya pirsgirêkê ya ji berê derdoreke derdike, da ku adminên ne bi neçîna paramètrèkên ne deriyan.
+ئەگەر runbook ـی ناوخۆیی یان وێنەی شاشە بۆ پەڕەی ڕێکخستنەکان دەپارێزیت، ئاماژەکان بە خانەی کۆنی ڕەزامەندی ڕاپۆرتکردنی هەڵە لابەرە، تاکو بەڕێوەبەران بەدوای ڕێکخستنێک نەگەڕێن کە چیتر بوونی نییە.
 
-## Paramètrèkên Import/Export
+## ڕێکخستنەکانی هاوردە/هەناردە {#importexport-settings}
 
-Tabêka **Import/Export** li ser çêkirina parametrekan derdike ku ew kontrol dikin û rast ji **Ultimate Multisite > Site Export** ji bo arşivên site û şebetê derxiş dike. Ji bo ravaseya import/export a siteyek, ji van parametrekan bikaranîn; ji bo export/importa siteyek bi karê `Tools > Export & Import` bikaranîn; û ji bo archive-a eksportiya gelekî ya şebetê (Network Export) ji van instrumentên Site Export derxiş bike.
+تابی ڕێکخستنەکانی **هاوردە/هەناردە** ئەو ڕێکخستنانە وەسف دەکات کە کۆنترۆڵی دەکات و ڕاستەوخۆ بە **Ultimate Multisite > Site Export** بۆ ئەرشیڤەکانی ماڵپەڕ و تۆڕەوە بەستەر دەدات. تابی ڕێکخستنەکان بۆ شێوەپێدانی هاوردە/هەناردە بەکاربهێنە، **Tools > Export & Import** بۆ ڕەوتکاری هەناردە/هاوردەی تاکە-ماڵپەڕ بەکاربهێنە، و ئامرازی Site Export بەکاربهێنە کاتێک پێویستت بە ئەرشیڤێکی تەواوی Network Export هەیە.
 
-## Paramètrèkên porskerê AI
+## ئاگادارکردنەوەی باڵانسی Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Paramètrèkên porskerê AI niha ne ku biştenî pêlvanên OAuth-a piştjahan:
+کاتێک پێوەکراوی Domain Seller بە HostAfrica پەیوەست بێت، بەڕێوەبەرانی تۆڕ ئێستا ئاگادارکردنەوەیەکی کەمبوونی باڵانس دەبینن کە دەتوانرێت دابخرێت، کاتێک باڵانسی Account ـی reseller زۆر کەمە بۆ پرۆسەکردنی تۆمارکردن یان نوێکردنەوەی دۆمەین بە شێوەی متمانەپێکراو.
 
-| Pêşkashkār | Rêvekirina (Setup flow) |
+ئەم ئاگادارکردنەوەیە وەک ئاگادارکردنەوەیەکی کارگێڕی مامەڵە لەگەڵ بکە: پێش وەرگرتنی تۆمارکردنی دۆمەینی پارەدراوی زیاتر، باڵانسی reseller ـی HostAfrica پڕ بکەرەوە، پاشان بگەڕێوە بۆ ڕێکخستنەکانی Domain Seller یان شاشەی چاودێریکردنی دۆمەین بۆ دڵنیابوون لەوەی تۆمارکردنەکان و نوێکردنەوەکان دەتوانن بە ئاسایی بەردەوام بن.
+
+## ڕێکخستنەکانی پەیوەستکەری دابینکەری AI {#ai-provider-connector-settings}
+
+ڕێکخستنەکانی پەیوەستکەری دابینکەری AI ئێستا تەنها کۆمەڵە Account ـە پشتگیریکراوەکانی OAuth پیشان دەدەن:
+
+| دابینکەر | ڕەوتی Setup |
 |---|---|
-| **Anthropic Max** | Hekîtiyek anarî Anthropic Max bi butona OAuth ve hatirandin. Ji dema ku browserê sandboxed ne dikare redirect-ê bi xwe bi taybetxwebûn, ji bo vê yekê ji aliyê manuel ye. |
-| **OpenAI ChatGPT/Codex** | Hekîtiyên ChatGPT bi samehoya OAuth li ser samehoya workflow yên heman hatirandin. Operasyonên piştgirî ji aliyê connector ve dikarin ji carika hatirandina heman, ji bo ku ji ber vê yekê ji aliyê ChatGPT Codex tool calls ve bikar bibe pashî konektkirin. |
-| **Google AI Pro** | Hekîtiyên Google AI Pro bi OAuth hatirandin, paşê heger li ser li gorî liştna heman ne rast bike, connector-ê ji nû ve bikin (refresh). |
+| **Anthropic Max** | یەک یان زیاتر Account ـی Anthropic Max بە دوگمەی OAuth پەیوەست بکە. بەدیلە دەستییەکەی OAuth بەکاربهێنە کاتێک وێبگەڕێکی سنووردار ناتوانێت redirect ـەکە بە شێوەی خۆکار تەواو بکات. |
+| **OpenAI ChatGPT/Codex** | Account ـەکانی ChatGPT لە ڕێگەی هەمان ڕەوتکاری کۆمەڵەی OAuth پەیوەست بکە. کردەوە پشتگیریکراوەکانی پەیوەستکەر دەتوانن بانگەوازەکانی ئامرازی ChatGPT Codex بەکاربهێنن دوای ئەوەی Account ـەکە پەیوەست کرا. |
+| **Google AI Pro** | Account ـەکانی Google AI Pro لە ڕێگەی OAuth پەیوەست بکە، پاشان پەیوەستکەرەکە نوێ بکەرەوە ئەگەر لیستی Account ـەکان دەستبەجێ نوێ نەبووەوە. |
 
-Cursor Pro anarî de parastin nîne. Wê wêneyên girîngan yên girîngî dêrîn û destpêkirina (runbooks) an paşxistina ku li ser fîldên setup anarî Cursor Pro an jî yê şêweya connector hatine zêde, hatin hatine hatirandin.
+Cursor Pro چیتر دابینکەرێکی پشتگیریکراو نییە. وێنەی شاشە ناوخۆییە کۆنەکان، runbook ـەکان، یان هەنگاوەکانی دەستپێکردن لابەرە کە باس لە خانەکانی Setup ـی Cursor Pro یان ڕێچکەکانی پەیوەستکەر دەکەن.
 
-Dema ku heman anarî ji bo şanîn kirin an ji ber wê hatirin, adresa e-mailê rast a anarî bişorînê (refresh) an ji bo silandinê girîngî biafirîne û settings yên anarî vekirin pêştekirî lê piştira operasyonên ku li ser connector ne bazdar ye.
+کاتێک Account ـەکانی دابینکەر زیاد دەکەیت یان لادەبەیت، ناونیشانی ئیمەیڵێکی دروست بۆ ئەو Account ـە بنووسە کە نوێ دەکرێتەوە یان دەسڕدرێتەوە و پێش تاقیکردنەوەی کردەوەکانی پشتبەستوو بە پەیوەستکەر، ڕێکخستنەکانی دابینکەر پاشەکەوت بکە.

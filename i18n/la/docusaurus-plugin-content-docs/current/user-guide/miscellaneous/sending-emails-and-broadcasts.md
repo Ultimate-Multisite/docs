@@ -1,129 +1,124 @@
 ---
-title: |-
-  E-mails et broadcastus
-
-  (or)
-
-  Admissio epistularum et diffusionum
+title: Missio epistularum electronicarum et nuntiationum diffusarum
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Envío de Correos Electrónicos y Difusión (v2)
+# Mittendis Epistulis Electronicis et Nuntiis Latis (v2) {#sending-emails-and-broadcasts-v2}
 
-_**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
+_**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x refertur.**_
 
-Ultimate Multisite viene con una función que te permitirá comunicarte con tus clientes enviando un correo electrónico a un usuario específico o a un grupo de usuarios, así como enviando avisos en su panel de administración para difundir anuncios.
+Ultimate Multisite cum facultate venit quae tibi permittet cum clientibus tuis communicare, epistulam electronicam ad usorem destinatum aut ad gregem usorum mittendo, necnon monita in eorum Dashboard administratoris mittendo ad annuntiationes divulgandas
 
-## Añadir avisos de administrador al panel de control de tus clientes con Difusiones (Broadcasts)
+## Adde monita administratoris ad Dashboard clientium tuorum per Nuntios Latos {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Usando la función de difusión de Ultimate Multisite, puedes añadir **avisos de administrador** al panel de administración del subdominio de tu usuario.
+Utendo facultate nuntiorum latorum Ultimate Multisite, potes **monita administratoris** ad Dashboard administratoris subsitus usoris tui addere.
 
-Esto es extremadamente útil si necesitas hacer un anuncio como mantenimiento del sistema o ofrecer nuevos productos o servicios a tus usuarios existentes. Así es como se verá el aviso de administrador en el panel de control de tu usuario.
+Hoc maxime utile est si annuntiationem facere debes, sicut sustentationem systematis, aut nova producta vel officia usoribus tuis exstantibus offerre. Sic monitum administratoris in Dashboard usoris tui apparebit.
 
-<!-- Screenshot unavailable: Aviso de difusión de administrador mostrado en el panel de control de un subdominio de cliente -->
+<!-- Imago tegumentaria non praesto: Monitum administratoris per nuntium latum in Dashboard subsitus clientis monstratum -->
 
-Para empezar un aviso de administrador, ve a tu panel de administración de red y bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts** (Difusiones).
+Ut monitum administratoris incipias, vade ad Dashboard administratoris retis tui et sub menu **Ultimate Multisite**, optionem **Nuntii lati** invenies.
 
-![Página de lista de Difusiones en la administración de Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Pagina indicis nuntiorum latorum in administratione Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-También puedes editar las difusiones existentes:
+Potes etiam nuntios latos iam exstantes recensere:
 
-![Interfaz de edición de difusión](/img/admin/broadcast-edit.png)
+![Interfacies recensendi nuntium latum](/img/admin/broadcast-edit.png)
 
-Desde esta página, haz clic en el botón **Add Broadcast** (Añadir Difusión) en la parte superior.
+Ex hac pagina, preme puga **Adde Nuntium Latum** in summo.
 
-Esto abrirá la ventana modal "Add broadcast" donde podrás elegir qué tipo de difusión deseas enviar.
+Hoc fenestram modalem Adde nuntium latum aperiet, ubi eligere potes quod genus nuntii lati mittere velis.
 
-Selecciona **Message** (Mensaje) y luego haz clic en el botón **Next Step** (Siguiente Paso).
+Perge et elige **Nuntium**, deinde preme puga **Gradus Proximus**.
 
-![Ventana modal para añadir difusión con la opción Message seleccionada](/img/admin/broadcast-add-message.png)
+![Fenestella modalis addendi nuntium latum cum optione Nuntium electa](/img/admin/broadcast-add-message.png)
 
-La siguiente ventana te preguntará por el **Target customer** (Cliente objetivo) o el **Target product** (Producto objetivo). Ten en cuenta que puedes seleccionar más de un usuario o más de un producto.
+Proxima fenestra te rogabit de **Cliente destinato** vel **Producto destinato**. Nota te plus quam unum usorem aut plus quam unum productum eligere posse.
 
-Ad rem utrōr in usuāre aut prodūctum quaerere, necne tibi est in campo typis verbum incipere.
+Ut aut rationem usoris aut productum quaeras, debes verbum clavis intra campum scribere incipere.
 
-Sub campo **Message type**, potes eligere colorem notificationis. Hoc enfatizet urgentiam tuī mississūs.
+Sub campo **Genus nuntii**, colorem moniti eligere potes. Hoc urgentiam nuntii tui efferet.
 
-Postea potes clīdere **Next Step**.
+Deinde premere potes **Gradus Proximus**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Campi clientium destinatiorum, producti destinati et generis nuntii pro nuntio lato Nuntii](/img/admin/broadcast-message-targets.png)
 
-In window successivoi potes ut mississum componere incipere, inserens subjectum et contentum/missam quam ad utrōr diffundere vis.
+Proxima fenestra est ubi nuntium tuum componere incipere potes, subiectum et contentum/nuntium quem usoribus divulgare vis inserendo.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Subiectum nuntii lati et editor contenti in gradu componendi](/img/admin/broadcast-edit.png)
 
-Postquam mississum creavit, potes tē **Send** botonem clīdere.
+Postquam nuntium tuum creaveris, deinde puga **Mitte** premere potes.
 
-Et hoc est finis. Notitia admin immediata in dashboard utrōris tuī debet apparere.
+Et hoc est. Monitum administratoris statim in Dashboard usoris tui apparere debet.
 
-## Email ad utrōr tuōs diffundere
+## Mitte epistulas electronicas clientibus tuis {#send-emails-to-your-customers}
 
-Utilizans attributum broadcast Ultimate Multisite, possis email ad utrōr tuōs diffundere. Optionem habes ut mississum solum ad utrōr specificos sendis aut unum grupum utrōrum targetes basus prodūcti vel planī sub quo subscribunt.
+Utendo facultate nuntiorum latorum Ultimate Multisite, epistulam electronicam usoribus tuis mittere potes. Optionem habes ut epistulam electronicam solum certis usoribus mittas, aut gregem usorum certum destines secundum productum vel consilium sub quo subscripserunt.
 
-Ad initium broadcast email, ad dashboard admin network tūm et sub menu Ultimate Multisite, optionem Broadcast invenies.
+Ut nuntium latum per epistulam electronicam incipias, vade ad Dashboard administratoris retis tui et sub menu Ultimate Multisite, optionem Nuntii lati invenies.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Pagina indicis nuntiorum latorum adhibita ut initium nuntii lati per epistulam electronicam](/img/admin/broadcasts-list.png)
 
-Ab hoc pagina, clīdere botonem **Add broadcast** in superi parte.
+Ex hac pagina, preme puga **Adde nuntium latum** in summo.
 
-Hoc aperiet modal window Add broadcast ubi potes eligere quid ut generis broadcast diffundere vis. Procede et selecta **Email** deinde clīdere botonem **Next Step**.
+Hoc fenestram modalem Adde nuntium latum aperiet, ubi eligere potes quod genus nuntii lati mittere velis. Perge et elige **Epistula electronica**, deinde preme puga **Gradus Proximus**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Fenestella modalis addendi nuntium latum cum optione Epistula electronica electa](/img/admin/broadcast-add-email.png)
 
-In window successivoi tibi quaeretur aut **Target customer** aut **Target productum**. Nota, quod plures utrōr aut plura prodūctum selecta possis.
+Proxima fenestra te rogabit de **Cliente destinato** vel **Producto destinato**. Nota te plus quam unum usorem aut plus quam unum productum eligere posse.
 
-Ad rem ut aliquid aut productem vel pro homine utque in campo ipsum initium typus verbum debet.
+Ut aut rationem usoris aut productum quaeras, debes verbum clavis intra campum scribere incipere.
 
-Cum tu audientia obiectalis selecta est, potes cliquare in **Next Step**.
+Cum auditores destinati tui electi sunt, premere potes **Gradus Proximus**.
 
-![Selectio clientum et producti target pro broadcast email](/img/admin/broadcast-email-targets.png)
+![Selectio clientium destinatiorum et producti destinati pro nuntio lato per epistulam electronicam](/img/admin/broadcast-email-targets.png)
 
-Fenestra successiva est ubi potes initium componendi epistulam introducendo subjectum et contentum/nuntium quod audientibus enviere vis.
+Proxima fenestra est ubi epistulam electronicam tuam componere incipere potes, subiectum et contentum/nuntium quem usoribus mittere vis inserendo.
 
-<!-- Screenshot unavailable: Editor subjectus et contenti broadcast email in step compositionis -->
+<!-- Imago tegumentaria non praesto: Subiectum nuntii lati per epistulam electronicam et editor contenti in gradu componendi -->
 
-Post creationem nuntii, potes cliquare in boton **Send**.
+Postquam nuntium tuum creaveris, puga **Mitte** premere potes.
 
-Et ita facile est epistulam ad usum tuorum finialium enviare per fusionem (broadcast feature).
+Et ita facile est epistulam electronicam ad usores finales tuos mittere utendo facultate nuntiorum latorum.
 
-## Epistulae systemicae (System emails)
+## Epistulae electronicae systematis {#system-emails}
 
-Epistulae systemicae in Ultimate Multisite sunt illa **notificiae automaticae** quas systemem post actiones certas, sicut inscriptionem, pagamentum, mappam domini, etc., enviat. Hoc epistulam potest editari vel modifiari ex parametris Ultimate Multisite. Etiam cum ea venit instrumentum quod te permittit redi ut settings existentes a alia installatione Ultimate Multisite importes.
+Epistulae electronicae systematis in Ultimate Multisite sunt illae **notificationes automaticae** a systemate missae post certas actiones sicut registrationem, solutionem, assignationem dominii, etc. Hae epistulae electronicae ex optionibus Ultimate Multisite recenseri vel mutari possunt. Etiam cum facultate venit quae tibi permittet optiones exstantes ex alia institutione Ultimate Multisite restituere et importare.
 
-### Redactio et Importatio (Resetting & Importing)
+### Restitutio & Importatio {#resetting--importing}
 
-Novae versiones Ultimate Multisite, sicut add-ons, occasionaliter et futura registrare epistulas novas.
+Novae versiones Ultimate Multisite, sicut etiam additamenta, novas epistulas electronicas interdum registrare possunt et registrabunt.
 
-Ad conflictus et alios quaestionibus praevenire, **nostra nova formae epistulae non addeamus automatico ut System Emails in installatione tua sint**, salis quod crucialia sunt ad correctam functionem belli operationis datae.
+Ut conflictus aliaque problemata vitentur, **nova exemplaria epistularum electronicarum ut Epistulas Electronicas Systematis in institutione tua automatice non addemus** , nisi necessaria sint ad rectam functionem cuiusdam facultatis.
 
-Sed super administratores et agentes possunt estas epistulae novae registrata importare per instrumentum importer. Hoc processus novam epistulam systemicae creabit cum contentu et configuratione formae epistulae novae, permittens super adminem facere omnia modificationes quas vult aut e conservare sicut sunt.
+Tamen, super administratores et agentes has epistulas electronicas nuper registratas per instrumentum importationis importare possunt. Ille processus novam epistulam electronicam systematis creabit cum contento et configuratione novi exemplaris epistulae electronicae, permittens super administratori quascumque modificationes velit facere aut eas sicut sunt servare.
 
-#### Quomodo epistulas systemicae importari
+#### Quomodo epistulas electronicas systematis importare {#how-to-import-system-emails}
 
-Adveniat ad paginam de Setări Ultimate Multisite și merite la tabul **Emails**.
+Vade ad paginam Optionum Ultimate Multisite tuam et procede ad tab **Epistulae electronicae**.
 
-![Tabula Emails in setari Ultimate Multisite ostendens section System Emails](/img/config/settings-emails-tab.png)
+![Tab Epistulae electronicae in optionibus Ultimate Multisite sectionem Epistulae Electronicae Systematis monstrans](/img/config/settings-emails-tab.png)
 
-Anule, pe bara lateral, butonul **Customize System Emails**.
+Deinde, in barra laterali, preme puga **Epistulas Electronicas Systematis Personaliza**.
 
-<!-- Screenshot unavailable: Buton Customize System Emails pe panoul de lateral al System Emails -->
+<!-- Imago tegumentaria non praesto: Puga Personaliza Epistulas Electronicas Systematis in tabula laterali Epistularum Electronicarum Systematis -->
 
-Pe pagina System Emails vei vedea butonul de acțiune **Reset & Import** în partea de sus. Când faci clic pe acel buton, se va deschide fereastra modală import și reset.
+In pagina Epistularum Electronicarum Systematis, puga actionis **Restitue & Importa** in summo videbis. Premendo illam pugam fenestra modalis importationis et restitutionis aperiri debet.
 
-![Buton Reset sau Import pe pagina admin System Emails](/img/admin/system-emails-reset-import.png)
+![Puga actionis Restitue vel Importa in pagina administrationis Epistularum Electronicarum Systematis](/img/admin/system-emails-reset-import.png)
 
-Apoi, poți activa opțiunile de Import Email pentru a vedea care emailuri sistem sunt disponibile pentru import.
+Deinde, optiones Importa Epistulas Electronicas commutare potes ut videas quae epistulae electronicae systematis importari praesto sint.
 
-<!-- Screenshot unavailable: Modalul Reset și Import cu opțiunile de Import Emails extinse -->
+<!-- Captura non praesto: fenestra modalis Reponendi et Importandi cum optionibus Importandi Epistulas expansis -->
 
-#### Resetarea System Emails
+#### Epistulae Electronicae Systematis Reponendae {#reseting-system-emails}
 
-În alte cazuri, vei observa că modificările pe care le-ai făcut unui anumit șablon de email nu mai funcționează pentru tine și dorești să îl setezi la **starea sa implicită**.
+Aliquando intelleges mutationes quas in dato exemplari epistulae electronicae fecisti tibi iam non prodesse, atque velis illud ad suum **statum praedefinitum** reponere.
 
-În astfel de cazuri ai două opțiuni: poți pur și simplu șterge emailul sistem și să îl importe din nou (folosind instrucțiunile de mai sus) - ceea ce va șterge metricile trimiterii și alte lucruri, făcând această metodă cea mai puțin preferată.
+In talibus casibus duas optiones habes: potes simpliciter epistulam electronicam systematis delere et rursus importare (instructionibus supra adhibitis) — quod metricas missionum et alia delebit, unde haec ratio minime praeferenda est.
 
-Sau poți folosi **Reset & Import tool** pentru a reseta acel șablon de email.
+Aut potes uti instrumento **Reponendi et Importandi** ut illud exemplar epistulae electronicae reponas.
 
-Pentru a reseta un șablon de email, poți urma pașii de mai sus până când ajungi la Reset & Import tool, apoi activează opțiunea **Reset** și selectează emailurile pe care vrei să le setezi înapoi conținutul lor implicit.
+Ut exemplar epistulae electronicae reponas, gradus supra sequi potes donec ad instrumentum Reponendi et Importandi pervenias, deinde optionem **Reponere** commuta et elige epistulas electronicas quas ad earum argumentum praedefinitum reponere vis.
 
-<!-- Screenshot unavailable: Modalul Reset și Import cu opțiunile de Reset Emails extinse -->
+<!-- Captura non praesto: fenestra modalis Reponendi et Importandi cum optionibus Reponendarum Epistularum expansis -->

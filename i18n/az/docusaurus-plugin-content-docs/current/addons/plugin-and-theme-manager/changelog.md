@@ -3,7 +3,7 @@ title: Plugin & Theme Manager Changelog
 sidebar_position: 99
 _i18n_hash: 8a4c9c6e16e1226e9ffcfc7c05f3d13e
 ---
-# Plugin və Tema Meneceri Yeniliklər Qeydi
+# Plugin və Tema Meneceri Yeniliklər Qeydi {#plugin--theme-manager-changelog}
 
 Versiya: 2.0.8 - Yayınlanma tarixi: 2026-05-05
 * Təkmilləşdirildi: Plugin siyahısı artıq verilənlər bazası sorğularını azaltmaq və performansı artırmaq üçün sayt keş-indən istifadə edir.

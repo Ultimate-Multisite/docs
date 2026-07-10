@@ -1,120 +1,120 @@
 ---
-title: Mokėjimai
+title: Mokesčių tvarkymas
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Apmokestyti mokesčius
+# Mokesčių tvarkymas {#tax-handling}
 
-Ultimate Multisite turi įtrauktą mokesčių surinkimo modulinį savo pagrindiniame pluginui, todėl jei turite surinkti pardavimų mokesčius jūsų planų, paketų ir paslaugų uždarymo metu, tai galite patogiai padaryti nepasirinkdami jokio papildymo.
+Ultimate Multisite turi mokesčių surinkimo modulį, integruotą į mūsų pagrindinį įskiepį, todėl jei jums reikia surinkti pardavimo mokesčius už savo planus, paketus ir paslaugas, tai galite lengvai padaryti neįdiegdami jokių priedų.
 
-Europos beiems įmonėms mes siūlo **papildomą**, kuris pridės įrankius ir funkcijas, kurios geriau **pateiks VAT** atitikimą.
+Europoje įsikūrusioms įmonėms siūlome **priedą**, kuris prideda įrankių ir funkcijų, padedančių geriau **palaikyti VAT** atitiktį.
 
-Ultimate Multisite neįsigalioja ir neatskelia mokesčių jūsų vardu valstybėms; mes tik padeda jums surinkti tinkamus mokesčius transakcijos metu. Jums vis tiek reikės atsiskelioti mokesčius savai.
+Ultimate Multisite nepateikia ir neperveda mokesčių jūsų vardu vyriausybei; mes tiesiog padedame jums surinkti tinkamus mokesčius operacijos metu. **Jums vis tiek reikės patiems pervesti mokesčius.**
 
-## Mokesčių surinkimo įjungimas
+## Mokesčių surinkimo įjungimas {#enabling-tax-collection}
 
-Mokesčių surinkimas nėra įjungtas kaip pagrindinis nustatymas. Ją įjungimui turite eiti į **Ultimate Multisite > Settings > Taxes** ir įjungti nustatymą Enable Taxes.
+Mokesčių surinkimas pagal numatytuosius nustatymus nėra įjungtas. Norėdami jį įjungti, turite eiti į **Ultimate Multisite > Nustatymai > Mokesčiai** ir perjungti, kad įjungtumėte nustatymą Įjungti mokesčius.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Įjungti mokesčius perjungiklis mokesčių nustatymų puslapio viršuje](/img/config/settings-taxes-enable.png)
 
 Štai visas mokesčių nustatymų puslapio vaizdas:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Visas mokesčių nustatymų puslapis](/img/config/settings-taxes-full.png)
 
-Jau galite peržiūrėti mokesčių nustatymus individualiems produktams:
+Taip pat galite peržiūrėti atskirų produktų mokesčių nustatymus:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Produktų mokesčių nustatymai](/img/config/settings-taxes.png)
 
-### Mokesčiai išskirti vs. Mokesčiai įtraukti
+### Mokesčiai neįtraukti ir mokesčiai įtraukti {#tax-excluded-vs-tax-included}
 
-Pagrindiniu nustatymu visi jūsų produktų kaina yra išskirtos mokesčių, o tai reiškia, kad mokesčiai **nėra įtraukti** produkto kainos į skaičiaus. Jei nustotime, kad klientas turi mokėti mokesčius už konkrečią pirkimą, mes pridės mokesčius **už subtotalą**.
+Pagal numatytuosius nustatymus visų jūsų produktų kainos yra be mokesčių, tai reiškia, kad mokesčiai **nėra įtraukti** į produkto kainą. Jei nustatysime, kad klientas turėtų mokėti mokesčius už konkretų pirkinį, pridėsime mokesčius **prie** tarpinės sumos.
 
-Jei norite, kad mokesčiai būtų įtraukti į jūsų produkto kainą, galite tai padaryti įjungdami nustatymą Inclusive Tax.
+Jei norite, kad mokesčiai būtų įtraukti į jūsų produkto kainą, galite tai padaryti įjungę nustatymą **Įtrauktinis mokestis**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Įtrauktinio mokesčio perjungiklio eilutė po nustatymu Įjungti mokesčius](/img/config/settings-taxes-inclusive.png)
 
-Nepaminkite **sauveikti** atliktas pakeitimus.
+Nepamirškite **išsaugoti** atliktų pakeitimų.
 
 ###
 
-## Mokesčių vertių kūrimas
+## Mokesčių tarifų kūrimas {#creating-tax-rates}
 
-Po to, kai įjungote mokesčių surinkimą, turėsite sukurti mokesčių vertus specifinėms vietoms naudojant mūsų mokesčių vertių redaktorią.
+Įjungę mokesčių surinkimą, turėsite sukurti mokesčių tarifus konkrečioms vietovėms naudodami mūsų mokesčių tarifų redaktorių.
 
-Redakci galite peržiūrėti galima paspaudus mygtuką **Manage Tax Rates** (Tvarkyti mokesčių lygis) svetainės stebėlyje Mokesčių nustatymų puslapyje.
+Redaktorių galite pasiekti spustelėję šoniniame mokesčių nustatymų puslapio skydelyje esantį mygtuką **Tvarkyti mokesčių tarifus**.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Nuoroda Tvarkyti mokesčių tarifus mokesčių tarifų skydelyje nustatymų puslapyje](/img/config/settings-taxes-manage-rates.png)
 
-Mokesčių lygio redaktoriame puslapyje galite pridėti naujus mokesčių lygis, paspaudus mygtuką **Add new Row** (Pridėti naują eilutę).
+Mokesčių tarifų redaktoriaus puslapyje galite pridėti naujus mokesčių tarifus spustelėję mygtuką **Pridėti naują eilutę**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Mokesčių tarifų redaktoriaus lentelė su mygtuku Pridėti naują eilutę viršuje](/img/config/tax-rates-editor.png)
 
-Jums reikės nurodyti kiekvienam mokesčių lygimui **pavadinimą** (naudojamas naršalose). Tada galite pasirinkti **valstybę** (reikalaujama), **statą** ir **miestą** (ambas opcionai), kurioje bus mokama šie mokesčiai. Vaisiai pridėkite **mokesčio lygį procentais**.
+Kiekvienam mokesčių tarifui turėsite suteikti **pavadinimą** (naudojamą sąskaitose faktūrose). Tada galite pasirinkti **šalį** (privaloma), **valstiją,** ir **miestą** (abu neprivalomi), kur bus taikomas šis mokestis. Galiausiai pridėkite **mokesčio tarifą procentais**.
 
-### Mokesčių kategorijos
+### Mokesčių kategorijos {#tax-categories}
 
-Galite sukurti keletas Mokesčių kategorijų, kad pridėtumėte skirtingus mokesčių lygis skirtingiems produktams.
+Taip pat galite sukurti kelias mokesčių kategorijas, kad skirtingų rūšių produktams pridėtumėte skirtingus mokesčių tarifus.
 
-Paspauskite **Add new Tax Category** (Pridėti naują mokesčių kategoriją), nurodykite jūsų kategorijos pavadinimą ir spauskite **Create** (Sukurti).
+Spustelėkite **Pridėti naują mokesčių kategoriją** , tada įrašykite kategorijos pavadinimą ir paspauskite **Sukurti**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Mygtukas Pridėti naują mokesčių kategoriją mokesčių tarifų redaktoriaus viršuje](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Mokesčių kategorijos pavadinimo įvesties laukas kategorijos kūrimo modaliniame lange](/img/config/tax-categories-create-modal.png)
 
-Kad peržiūrėti kategorijas, paspauskite **Switch** (Pakeisti) ir pasirinkite tą kategoriją, į kurią norite pridėti naujus mokesčius.
+Norėdami naršyti kategorijas, spustelėkite **Perjungti** ir pasirinkite kategoriją, kuriai norite pridėti naujų mokesčių.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Perjungimo išskleidžiamasis mygtukas, skirtas keisti mokesčių kategorijas](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Mokesčių kategorijos pasirinkimo išskleidžiamasis sąrašas, rodantis prieinamas kategorijas](/img/config/tax-categories-select.png)
 
-Galite nustatyti mokesčių kategoriją tam tikram produktui, eiti į **Product edit page** (Redaguoti produktą) ir tada į Taxes (Mokesčiai) tvarką.
+Konkretaus produkto mokesčių kategoriją galite nustatyti eidami į **Produkto redagavimo puslapį**, o tada į skirtuką Mokesčiai.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Produkto mokesčių skirtukas su mokesčių kategorija ir apmokestinimo perjungikliu](/img/config/product-taxes.png)
 
-Teksame ekrane galite išjungti **Is Taxable?** (Ar tai mokamas?) mygtuką, kad praneštumėte Ultimate Multisite, kad jis nebus surinkti mokesčių už šį nurodytą produktą.
+Tame pačiame ekrane galite išjungti perjungiklį **Ar apmokestinama?**, kad Ultimate Multisite žinotų, jog neturėtų rinkti mokesčių už tą konkretų produktą.
 
-## Europos VAT palaikymas
+## Europos VAT palaikymas {#european-vat-support}
 
-Ka kaip minėta, kad turime įrenginį klientams ES, kuriems yra papildomi reikalavimai dėl Europos PVM reguliavimo.
+Kaip minėta anksčiau, turime priedą klientams ES, kuriems taikomi papildomi reikalavimai dėl Europos VAT reglamentų.
 
-Mūsų PVM įrankiai padeda su keliais svarbiais dalyklais:
+Mūsų VAT įrankiai padeda su keliais svarbiais dalykais:
 
-  * Lengva įkrovimas ES PVM tarifų;
+  * Lengvas ES VAT tarifų įkėlimas;
 
-  * PVM numerių surinkimas ir patikrinimas – taip pat atliekant reverse charging (atvirkščią įsigijimo) entitetams, kuriems nėra PVM (pvz., įmonėms su galiojais PVM numeriais);
+  * VAT numerio surinkimas ir patvirtinimas – ir atvirkštinis apmokestinimas VAT neapmokestinamiems subjektams (pvz., įmonėms su galiojančiais VAT numeriais);
 
-Kad instaluoti šį įrenginį, eikite į **Ultimate Multisite > Settings** ir tada paspauskite nuorodą **Check our Add-ons** pusėje.
+Norėdami įdiegti šį priedą, eikite į **Ultimate Multisite > Nustatymai** ir tada spustelėkite šoninės juostos nuorodą **Peržiūrėkite mūsų priedus**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Nustatymų puslapio šoninė juosta su nuoroda Peržiūrėkite mūsų priedus](/img/config/settings-taxes-addons-link.png)
 
-Jūs būsite nukreipti į mūsų įrenginių puslapį. Ten galite ieškoti ir instaluoti **Ultimate Multisite VAT add-on**.
+Būsite nukreipti į mūsų priedų puslapį. Ten galite ieškoti **Ultimate Multisite VAT priedo** ir jį įdiegti.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Ekrano kopija nepasiekiama: VAT priedo kortelė priedų puslapyje -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Ekrano kopija nepasiekiama: VAT priedo dialogas Įdiegti dabar -->
 
-Tada eikite į **Network Admin > Plugins** ir aktyvuokite šį įrenginį visame tinklu.
+Tada eikite į **Tinklo administravimas > Įskiepiai** ir aktyvuokite šį priedą visame tinkle.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Ekrano kopija nepasiekiama: veiksmas Aktyvuoti tinkle VAT priedui įskiepių puslapyje -->
 
-Jei grįsite į **Tax Settings tab**, pamatysite naujus pasirinkimus. Paspauskite **Enable VAT Support** (Įjungti PVM palaikymą) opsinę, kad aktyvuotumėte naujus PVM įrankius. Neleidžkitės **sauveikti** savo nustatymus!
+Jei grįšite į **Mokesčių nustatymų skirtuką** , pamatysite naujas prieinamas parinktis. Perjunkite parinktį **Įjungti VAT palaikymą**, kad įjungtumėte naujus VAT įrankius. Nepamirškite **išsaugoti** savo nustatymų!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Ekrano kopija nepasiekiama: Įjungti VAT palaikymą perjungiklis mokesčių nustatymuose po priedo aktyvavimo -->
 
-### Priešdaryti PVM tarifus
+### VAT mokesčių tarifų įkėlimas {#pulling-on-vat-tax-rates}
 
-Viena iš įrankių, kuriuos pridėtas mūsų integracijoje, yra galimybė įkrovyti PVM tarifus ES narystams. Tai galima padaryti pasiekan puslapį PVM tarifų redaktoriui po aktyvavimu ES PVM palaikymo.
+Vienas iš įrankių, kuriuos prideda mūsų integracija, yra galimybė įkelti ES valstybių narių mokesčių tarifus. Tai galima padaryti apsilankius mokesčių tarifų redaktoriaus puslapyje po ES VAT palaikymo įjungimo.
 
-A apačioje puslapyje pamatysite VAT įtraukimo (VAT pulling) nustatymus. Pasirinkdami tarifų tipą ir paspaudę mygtuką **Update EU VAT Rates** pateiksite lentelę su pajamų tarifais kiekvienai ES narybiui, kuri automatiškai užpildys. Tada visada turite ją išsaugoti.
+Puslapio apačioje matysite VAT įkėlimo parinktis. Pasirinkus tarifo tipą ir spustelėjus mygtuką **Atnaujinti ES VAT tarifus**, lentelė bus užpildyta kiekvienos ES valstybės narės mokesčių tarifais. Tada jums tereikės ją išsaugoti.
 
-![Update EU VAT Rates mygtukas apačioje pajamų tarifų redaktore](/img/config/tax-rates-vat-pull.png)
+![Mygtukas Atnaujinti ES VAT tarifus mokesčių tarifų redaktoriaus apačioje](/img/config/tax-rates-vat-pull.png)
 
-Galite taip pat keisti vertus po to, kai juos pateiksite. Tam tai padarykite, kad atkreiptumėte reikiamą lentelės eilutę ir paspaudtumėte, kad išsaugotumėte naujus vertus.
+Taip pat galite redaguoti reikšmes po jų įkėlimo. Norėdami tai padaryti, tiesiog redaguokite reikiamą lentelės eilutę ir spustelėkite, kad išsaugotumėte naujas reikšmes.
 
-### VAT Patikrinimas (VAT Validation)
+### VAT patvirtinimas {#vat-validation}
 
-Kai VAT palaikymas bus įjungtas, Ultimate Multisite pridės papildomą laukelį prie kasos formos, po paskirties adresų laukelio. Šis laukelis pasirodys tik klientams, esantems ES.
+Kai VAT palaikymas įjungtas, Ultimate Multisite pridės papildomą lauką prie atsiskaitymo formos, po atsiskaitymo adreso lauku. Laukas bus rodomas tik ES esantiems klientams.
 
-<!-- Screenshot unavailable: VAT numerio laukelis ant naujo kasos formos puslapyje, po paskirties adresų -->
+<!-- Ekrano kopija nepasiekiama: VAT numerio laukas naudotojo sąsajos atsiskaitymo formoje po atsiskaitymo adresu -->
 
-Tada Ultimate Multisite patikrinys VAT numerį ir jei jis bus galiojantis, taikomas atvirkščio įtraukimo (reverse charge mechanism) mechanizmas ir pajamos tarifas nustatos 0% šiai užsakymui.
+Ultimate Multisite tada patikrins PVM mokėtojo kodą ir, jei jis bus pripažintas galiojančiu, bus pritaikytas atvirkštinio apmokestinimo mechanizmas, o to užsakymo mokesčio tarifas bus nustatytas į 0 %.

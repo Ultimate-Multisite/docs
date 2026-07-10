@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite-ի համատեղելիություն
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress plugin, որը ավելացնում է համատեղելիության շտկումներ Tutor LMS-ի համար multisite միջավայրերում։
+
+## Նկարագրություն {#description}
+
+Այս plugin-ը տրամադրում է անհրաժեշտ համատեղելիության շտկումներ՝ Tutor LMS-ը WordPress multisite ցանցերում գործարկելու համար։ Այն մշակում է օգտատերերի գրանցումը դասընթացներում, հրահանգիչների կառավարումը, դասընթացների սահմանափակումները և multisite-ին հատուկ այլ գործառույթներ։
+
+## Հնարավորություններ {#features}
+
+- **Տվյալների բազայի աղյուսակների կառավարում**: Ավտոմատ հայտնաբերում և ստեղծում է բացակայող Tutor LMS աղյուսակները, որոնք չեն ստեղծվել multisite-ի արտաքին բանալիների սահմանափակումների պատճառով
+- **Multisite օգտատերերի գրանցում**: Հարմարեցված AJAX մշակիչներ՝ ցանցի կայքերում օգտատերերի գրանցումը կառավարելու համար
+- **Հրահանգչի դերի կառավարում**: Հրահանգչի դերի ավտոմատ նշանակումն ու կառավարումը multisite միջավայրերում
+- **Դասընթացների սահմանափակումներ**: Ինտեգրում Ultimate Multisite-ի հետ՝ կայքի պլանների հիման վրա դասընթացների և funnel-ների ստեղծման սահմանաչափերը կառավարելու համար
+- **Հարմարեցված ադմինիստրատորի դիտումներ**: Multisite-ին հարմարեցված հրահանգիչների ցանկ և կառավարման միջերես
+- **Ադմինիստրատորի գործիքներ**: Տվյալների բազայի կառավարման միջերես ցանցի և կայքի ադմինիստրատորների համար
+
+## Պահանջներ {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (ավտոմատ պարտադրվում է `Requires Plugins` header-ի միջոցով)
+- WordPress Multisite տեղադրում
+- Ultimate Multisite plugin (դասընթացների սահմանափակումների գործառույթի համար)
+
+## Տեղադրում {#installation}
+
+1. Վերբեռնեք plugin-ի ֆայլերը `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Համոզվեք, որ Tutor LMS-ը տեղադրված և ակտիվացված է
+3. Ակտիվացրեք plugin-ը WordPress-ի «Plugins» մենյուի միջոցով
+4. Plugin-ը ավտոմատ կինտեգրվի Tutor LMS-ի հետ
+
+## Ֆայլերի կառուցվածք {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU plugin-ից տեղափոխված գործառույթներ {#functionality-moved-from-mu-plugin}
+
+Այս plugin-ը պարունակում է գործառույթներ, որոնք նախկինում գտնվում էին `wp-content/mu-plugins/daves.php`-ում՝
+
+- Դասընթացի կարգավիճակի փոփոխման սահմանափակումներ
+- Դասընթացի ստեղծման սահմանափակումներ
+- CartFlows ինտեգրում և սահմանաչափեր
+- Tutor հրահանգչի դերի կառավարում
+- Multisite օգտատերերի գրանցման մշակում
+- Դասընթացի product ID-ի ցուցադրում
+
+## Տվյալների բազայի կառավարում {#database-management}
+
+### Խնդիրը {#the-problem}
+
+WordPress multisite միջավայրերում Tutor LMS աղյուսակների ստեղծումը ձախողվում է այն աղյուսակների համար, որոնք ունեն արտաքին բանալիների սահմանափակումներ դեպի օգտատերերի աղյուսակ։ Սա տեղի է ունենում, քանի որ՝
+
+- Կայքին հատուկ աղյուսակներն օգտագործում են այնպիսի նախածանցներ, ինչպիսիք են `wp_2_tutor_carts`
+- Արտաքին բանալիները հղվում են `wp_2_users`-ին (որը գոյություն չունի)
+- Իրական օգտատերերի աղյուսակը `wp_users` է (ընդհանուր ամբողջ ցանցի համար)
+
+### Լուծումը {#the-solution}
+
+Այս plugin-ը ավտոմատ՝
+
+1. **Հայտնաբերում է բացակայող աղյուսակները**: Ստուգում է աղյուսակները, որոնք չեն ստեղծվել արտաքին բանալիների սահմանափակումների պատճառով
+2. **Ստեղծում է աղյուսակներ ճիշտ հղումներով**: Օգտագործում է օգտատերերի աղյուսակի ճիշտ անունը (`wp_users` multisite-ում)
+3. **Մշակում է բազմաթիվ սցենարներ**:
+   - Plugin-ի ակտիվացում/վերաակտիվացում
+   - Ցանցում նոր կայքի ստեղծում
+   - Աղյուսակների ձեռքով ստուգում ադմինիստրատորի միջերեսի միջոցով
+
+### Ազդեցության ենթակա աղյուսակներ {#affected-tables}
+
+- `tutor_coupon_usages` - Պարունակում է արտաքին բանալի դեպի օգտատերերի աղյուսակ
+- `tutor_carts` - Պարունակում է արտաքին բանալի դեպի օգտատերերի աղյուսակ
+- `tutor_notification_preferences` - TutorPro աղյուսակ՝ արտաքին բանալիով դեպի օգտատերերի աղյուսակ
+
+### Ադմինիստրատորի միջերես {#admin-interface}
+
+Մուտք գործեք տվյալների բազայի կառավարման գործիքներին այստեղ՝
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Միջերեսը թույլ է տալիս՝
+- Դիտել բացակայող աղյուսակները բոլոր կայքերում
+- Ձեռքով գործարկել աղյուսակների ստեղծումը
+- Ստուգել տվյալների բազայի կազմաձևումը
+- Դիտել մանրամասն կարգավիճակի տեղեկատվություն
+
+## Աջակցություն {#support}
+
+Այս plugin-ը հատուկ մշակված է KursoPro հարթակի համար։ Տեխնիկական աջակցության համար կապվեք մշակման թիմի հետ։

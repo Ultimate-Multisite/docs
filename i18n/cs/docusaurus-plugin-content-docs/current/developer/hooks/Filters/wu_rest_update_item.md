@@ -4,11 +4,11 @@ title: Filtrační funkce - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# Filtr: wu_rest_update_item
+# Filtr: wu_rest_update_item {#filter-wurestupdateitem}
 
 Filtr určuje, zda je možné požadavek zpracovat, nebo ne.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Filtr určuje, zda je možné požadavek zpracovat, nebo ne.
 | $rest_base | `array` | Slug entity. |
 | $this | `\Base_Manager` | Instancí objektu. |
 
-### Od verze
+### Od verze {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) na řádku 414

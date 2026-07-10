@@ -3,7 +3,7 @@ title: 如何安裝 WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# 如何安裝 WordPress Multisite？
+# 如何安裝 WordPress Multisite？ {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite 讓你可以在單一安裝中管理多個網站。這是 WordPress 內建的功能，但預設並未啟用。
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 填寫完所有欄位後，點擊「Add site」按鈕。新的子網站建立後，請前往該網站確認子網站運作正常。
 
-## 常見問題：
+## 常見問題： {#common-problems}
 
-### 1\. 我可以建立新網站，但無法存取這些網站。
+### 1\. 我可以建立新網站，但無法存取這些網站。 {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 如果你選擇了子網域，你還需要為 multisite 網路設定萬用字元子網域。
 

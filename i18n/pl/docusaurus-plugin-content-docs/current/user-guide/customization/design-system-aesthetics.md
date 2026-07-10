@@ -3,11 +3,11 @@ title: Umiejętność estetyki systemu projektowego
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Estetyka Systemu Projektowego
+# Estetyka Systemu Projektowego {#design-system-aesthetics-skill}
 
 **Umiejętność Estetyka Systemu Projektowego** to ustrukturyzowane podejście do dopracowania wizualnej tożsamości Twojej witryny. Pomaga Ci podejmować spójne decyzje dotyczące typografii, kolorów, odstępów i tokenów ruchu, które definiują Twój system projektowy.
 
-## Co to jest Estetyka Systemu Projektowego?
+## Co to jest Estetyka Systemu Projektowego? {#what-is-design-system-aesthetics}
 
 Estetyka Systemu Projektowego to ustrukturyzowana umiejętność, która obejmuje:
 
@@ -20,9 +20,9 @@ Estetyka Systemu Projektowego to ustrukturyzowana umiejętność, która obejmuj
 
 Te decyzje są zapisywane w pliku `theme.json` Twojego motywu, tworząc spójny system wizualny.
 
-## Dlaczego używać Estetyki Systemu Projektowego?
+## Dlaczego używać Estetyki Systemu Projektowego? {#why-use-design-system-aesthetics}
 
-### Spójność
+### Spójność {#consistency}
 
 System projektowy zapewnia:
 
@@ -31,7 +31,7 @@ System projektowy zapewnia:
 - Że odstępy podążają przewidywalnym wzorcem
 - Że animacje wydają się zunifikowane
 
-### Efektywność
+### Efektywność {#efficiency}
 
 Zamiast podejmować decyzje projektowe strona po stronie, Ty:
 
@@ -39,7 +39,7 @@ Zamiast podejmować decyzje projektowe strona po stronie, Ty:
 - Stosujesz je wszędzie
 - Aktualizujesz globalnie, zmieniając jedną wartość
 
-### Elastyczność
+### Elastyczność {#flexibility}
 
 Możesz:
 
@@ -47,9 +47,9 @@ Możesz:
 - Eksperymentować z różnymi estetykami
 - Utrzymywać spójność marki, jednocześnie się rozwijając
 
-## Aktywacja Umiejętności Estetyka Systemu Projektowego
+## Aktywacja Umiejętności Estetyka Systemu Projektowego {#triggering-the-design-system-aesthetics-skill}
 
-### Aktywacja ręczna
+### Aktywacja ręczna {#manual-activation}
 
 Możesz uruchomić tę umiejętność w dowolnym momencie, używając:
 
@@ -69,7 +69,7 @@ lub
 "Poprowadź mnie przez decyzje dotyczące systemu projektowego"
 ```
 
-### Automatyczne sugestie
+### Automatyczne sugestie {#automatic-suggestions}
 
 Agent może zasugerować użycie tej umiejętności, gdy:
 
@@ -78,9 +78,9 @@ Agent może zasugerować użycie tej umiejętności, gdy:
 - Chcesz poprawić spójność wizualną
 - Przygotowujesz się do uruchomienia witryny
 
-## Proces Estetyka Systemu Projektowego
+## Proces Estetyka Systemu Projektowego {#the-design-system-aesthetics-process}
 
-### Krok 1: Typografia
+### Krok 1: Typografia {#step-1-typography}
 
 Agent pyta o Twoje preferencje dotyczące czcionek:
 
@@ -110,7 +110,7 @@ Następnie agent definiuje:
 - **Skala grubości**: Grubości czcionek (regular, medium, bold itp.)
 - **Wysokość linii**: Odstęp między liniami dla czytelności
 
-### Krok 2: Paleta kolorów
+### Krok 2: Paleta kolorów {#step-2-color-palette}
 
 ```
 Zdefiniujmy Twoją paletę kolorów.
@@ -140,7 +140,7 @@ Agent tworzy pełną paletę, obejmującą:
 - Kolory semantyczne (sukces, ostrzeżenie, błąd)
 - Stany najazdu (hover) i aktywne
 
-### Krok 3: Odstępy
+### Krok 3: Odstępy {#step-3-spacing}
 
 ```
 Jak dużo "oddechu" chcesz?
@@ -162,7 +162,7 @@ Agent definiuje tokeny odstępów:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Konkretne wartości dla paddingu, marginu, gapu
 
-### Krok 4: Obramowania i Cienie
+### Krok 4: Obramowania i Cienie {#step-4-borders-and-shadows}
 
 ```
 Wizyczna głębia i definicja:
@@ -185,7 +185,7 @@ Agent tworzy:
 - Tokeny cieni dla różnych poziomów elewacji
 - Tokeny szerokości obramowań
 
-### Krok 5: Ruch i Animacja
+### Krok 5: Ruch i Animacja {#step-5-motion-and-animation}
 
 ```
 Jak ma się czuć Twoja witryna podczas interakcji?
@@ -207,9 +207,9 @@ Agent definiuje:
 - Funkcje wygładzania (ease-in, ease-out, ease-in-out)
 - Kluczowe klatki animacji dla powszechnych interakcji
 
-## Stosowanie Estetyki Systemu Projektowego
+## Stosowanie Estetyki Systemu Projektowego {#applying-design-system-aesthetics}
 
-### Automatyczne zastosowanie
+### Automatyczne zastosowanie {#automatic-application}
 
 Po ukończeniu umiejętności, agent:
 
@@ -218,7 +218,7 @@ Po ukończeniu umiejętności, agent:
 3. Regeneruje style bloków, aby pasowały do nowego systemu
 4. Aktywuje zaktualizowany motyw
 
-### Ręczne zastosowanie
+### Ręczne zastosowanie {#manual-application}
 
 Możesz również edytować `theme.json` bezpośrednio:
 
@@ -257,9 +257,9 @@ Możesz również edytować `theme.json` bezpośrednio:
 }
 ```
 
-## Podgląd Systemu Projektowego
+## Podgląd Systemu Projektowego {#viewing-your-design-system}
 
-### Zapytaj agenta
+### Zapytaj agenta {#ask-the-agent}
 
 ```
 "Pokaż mi mój system projektowy"
@@ -273,13 +273,13 @@ lub
 
 Agent wyświetli Twoją typografię, kolory, odstępy i inne tokeny.
 
-### Podgląd theme.json
+### Podgląd theme.json {#view-themejson}
 
 Otwórz `/wp-content/themes/[theme-name]/theme.json` w edytorze tekstu, aby zobaczyć surowe definicje tokenów.
 
-## Aktualizacja Systemu Projektowego
+## Aktualizacja Systemu Projektowego {#updating-your-design-system}
 
-### Szybkie aktualizacje
+### Szybkie aktualizacje {#quick-updates}
 
 Poproś agenta o konkretne zmiany:
 
@@ -299,7 +299,7 @@ lub
 "Zmień font nagłówkowy na serif"
 ```
 
-### Pełny redesign
+### Pełny redesign {#full-redesign}
 
 Ponownie uruchom umiejętność Estetyka Systemu Projektowego:
 
@@ -309,7 +309,7 @@ Ponownie uruchom umiejętność Estetyka Systemu Projektowego:
 
 Poprowadzi Cię ponownie przez wszystkie decyzje, zaczynając od Twoich obecnych wartości.
 
-### Częściowe aktualizacje
+### Częściowe aktualizacje {#partial-updates}
 
 Aktualizuj konkretne aspekty:
 
@@ -317,15 +317,15 @@ Aktualizuj konkretne aspekty:
 "Aktualizuj tylko paletę kolorów, reszta ma pozostać bez zmian"
 ```
 
-## Najlepsze Praktyki Systemu Projektowego
+## Najlepsze Praktyki Systemu Projektowego {#design-system-best-practices}
 
-### Spójność
+### Spójność {#consistency-1}
 
 - Używaj tych samych tokenów wszędzie
 - Nie twórz jednorazowych kolorów ani rozmiarów
 - Odwołuj się do tokenów, zamiast hardkodować wartości
 
-### Nazewnictwo
+### Nazewnictwo {#naming}
 
 Używaj jasnych, semantycznych nazw:
 
@@ -335,7 +335,7 @@ Używaj jasnych, semantycznych nazw:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalowalność
+### Skalowalność {#scalability}
 
 Projektuj system, który się skaluje:
 
@@ -343,7 +343,7 @@ Projektuj system, który się skaluje:
 - Twórz skale (xs, sm, md, lg, xl) zamiast dowolnych wartości
 - Planuj przyszłe dodawania
 
-### Dokumentacja
+### Dokumentacja {#documentation}
 
 Dokumentuj swój system projektowy:
 
@@ -351,9 +351,9 @@ Dokumentuj swój system projektowy:
 - Kiedy używać każdego tokenu
 - Wyjątki i przypadki brzegowe
 
-## Typowe Wzorce Systemu Projektowego
+## Typowe Wzorce Systemu Projektowego {#common-design-system-patterns}
 
-### Nowoczesny Minimalizm
+### Nowoczesny Minimalizm {#modern-minimalist}
 
 - Typografia sans-serif (Inter, Helvetica)
 - Ograniczona paleta kolorów (2-3 kolory)
@@ -361,7 +361,7 @@ Dokumentuj swój system projektowy:
 - Subtelne cienie
 - Płynne, szybkie animacje
 
-### Ciepły i Przyjazny
+### Ciepły i Przyjazny {#warm-and-friendly}
 
 - Mieszanka serif i sans-serif
 - Ciepła paleta kolorów (pomarańcze, ciepłe szarości)
@@ -369,7 +369,7 @@ Dokumentuj swój system projektowy:
 - Miękkie cienie
 - Zabawne animacje
 
-### Profesjonalny Korporacyjny
+### Profesjonalny Korporacyjny {#professional-corporate}
 
 - Czysty sans-serif (Roboto, Open Sans)
 - Neutralna paleta z kolorem akcentowym
@@ -377,7 +377,7 @@ Dokumentuj swój system projektowy:
 - Minimalne cienie
 - Subtelne przejścia
 
-### Kreatywny i Odważny
+### Kreatywny i Odważny {#creative-and-bold}
 
 - Charakterystyczna typografia
 - Odważna paleta kolorów
@@ -385,7 +385,7 @@ Dokumentuj swój system projektowy:
 - Mocne cienie
 - Widoczne animacje
 
-## Rozwiązywanie Problemów
+## Rozwiązywanie Problemów {#troubleshooting}
 
 **Zmiany w systemie projektowym nie są widoczne**
 - Wyczyść pamięć podręczną przeglądarki
@@ -403,7 +403,7 @@ Dokumentuj swój system projektowy:
 - Ręcznie edytuj `theme.json` do poprzednich wartości
 - Ponownie uruchom umiejętność z innymi wyborami
 
-## Następne Kroki
+## Następne Kroki {#next-steps}
 
 Po zdefiniowaniu systemu projektowego:
 

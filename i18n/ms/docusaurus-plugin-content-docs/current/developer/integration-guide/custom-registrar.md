@@ -3,13 +3,13 @@ title: Membina Integrasi Pendaftar Tersuai
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Membina Integrasi Registrar Tersuai
+# Membina Integrasi Registrar Tersuai {#building-a-custom-registrar-integration}
 
 Addon Domain Seller menggunakan corak **Integration Registry**. Setiap registrar adalah kelas PHP yang melaksanakan `Domain_Selling_Capability` dan mendaftarkan dirinya melalui *action hook* `wu_domain_seller_register_capabilities`.
 
 Panduan ini menunjukkan cara menyambungkan registrar tersuai anda.
 
-## Antaramuka (The interface)
+## Antaramuka (The interface) {#the-interface}
 
 Kelas anda mesti melaksanakan `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` dan memperluaskan (extend) `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Kaedah Pilihan (Optional methods)
+### Kaedah Pilihan (Optional methods) {#optional-methods}
 
 Laksanakan kaedah ini untuk membuka ciri tambahan. Addon mengesan sokongan melalui `method_exists()`:
 
@@ -81,7 +81,7 @@ Laksanakan kaedah ini untuk membuka ciri tambahan. Addon mengesan sokongan melal
 | `get_epp_code(string $domain_name): array` | Pemindahan domain (keluar) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Pemindahan domain (masuk) |
 
-### Konvensyen Nilai Pulangan (Return value convention)
+### Konvensyen Nilai Pulangan (Return value convention) {#return-value-convention}
 
 Semua kaedah memulangkan array dengan sekurang-kurangnya kunci `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Ralat yang boleh dibaca oleh manusia']
 
 ---
 
-## Mendaftarkan keupayaan anda (Registering your capability)
+## Mendaftarkan keupayaan anda (Registering your capability) {#registering-your-capability}
 
 Daftarkan kelas anda menggunakan *action* `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Hujah pertama kepada `add_capability()` ialah **provider ID** — slug huruf kec
 
 ---
 
-## Menambah medan kelayakan ke wizard (Adding credential fields to the wizard)
+## Menambah medan kelayakan ke wizard (Adding credential fields to the wizard) {#adding-credential-fields-to-the-wizard}
 
 Untuk membenarkan admin memasukkan kelayakan melalui wizard persediaan, daftarkan integrasi anda:
 
@@ -137,7 +137,7 @@ Kelayakan disimpan sebagai *network options* menggunakan ID medan sebagai kunci.
 
 ---
 
-## Hooks untuk tindakan pasca-pendaftaran (Hooks for post-registration actions)
+## Hooks untuk tindakan pasca-pendaftaran (Hooks for post-registration actions) {#hooks-for-post-registration-actions}
 
 Gunakan *action* ini untuk mencetuskan *webhook*, penyediaan (provisioning), pemberitahuan, atau kemas kini CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Tulis ke saluran log khusus provider anda menggunakan `wu_log_add()`:
 

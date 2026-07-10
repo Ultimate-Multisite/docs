@@ -1,161 +1,210 @@
 ---
 title: Superdav AI Agent
 sidebar_position: 1
-_i18n_hash: fbe0e63338239eafb9c45ea96f46cb08
+_i18n_hash: 2b2e9bdb35ef08e146dcd0c5d307a467
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="superdav-ai-agent" name="Superdav AI Agent" />
 
-# Superdav AI Agent
+# Superdav AI Agent {#superdav-ai-agent}
 
-Superdav AI Agent 是一款先进的 WordPress AI 助手，它在 Gratis AI Agent 的基础上增加了主题感知能力、增强的互联网搜索功能以及改进的网站构建器功能。版本 1.16.0 新增了自定义 Logo 生成、调色板对比度验证、发现访谈中的照片上传、结构化酒店菜单生成，以及主题构建器中的桌面/移动端预览渲染功能。
+Superdav AI Agent 是一款高级 WordPress AI 助手，它扩展了 Gratis AI Agent，提供感知主题的技能、增强的互联网搜索能力、站点构建器功能以及可选的自动化集成。版本 1.18.0 增加了 Google Calendar 读取工具、联系人和参与者映射、人工审批关卡、提醒去重、TextBee SMS 通知、托管 Superdav 服务配置，以及一个单独分发的 Advanced 伴随包，用于受信任的开发者工作流。
 
-## 主要功能
+## 主要功能 {#key-features}
 
-- **主题感知能力 (Theme-aware skills)** — 根据您当前激活的 WordPress 主题和已安装的插件，自动调整指导和能力。
-- **多互联网搜索提供商** — 可在 Brave Search 和 Tavily 之间选择，以获得更丰富的搜索结果和高级研究能力。
-- **网站构建器联系表单** — 使用您已安装的表单插件，直接通过聊天界面创建功能完善的联系表单。
-- **增强的网站构建器** — 改进了多阶段网站构建计划，具备更好的插件发现和错误恢复能力。
-- **内置主题技能** — 为 Block Themes、Classic Themes、Kadence Blocks 和 Kadence Theme 提供专业指导。
-- **改进的 WooCommerce 集成** — 重构为使用原生的 WooCommerce API，提高了可靠性和兼容性。
-- **自动提供商检测** — 当插件或主题被激活或停用时，自动检测并刷新可用的插件和主题列表。
-- **自定义 Logo 生成** — 生成并嵌入自定义 SVG Logo，并自动进行命名空间安全的清理。
-- **调色板对比度验证** — 在将颜色应用到主题之前，检查颜色组合是否符合 WCAG 可访问性标准。
-- **照片增强的发现过程** — 在主题构建器发现访谈中上传照片，以影响设计方向。
-- **酒店菜单** — 为餐厅、咖啡馆和酒店等行业生成结构化的食品和饮料菜单页面。
-- **桌面和移动预览** — 在选择设计方向时，可以在桌面和移动设备上预览您的设计。
-- **一级网站抓取 (Tier 1 site scraping)** — sd-ai-agent/site-scrape 默认可用，用于分析竞争对手和灵感网站。
+- **感知主题的技能** — 根据你当前启用的 WordPress 主题和已安装的插件自动调整指导和能力
+- **多个互联网搜索提供商** — 可在 Brave Search 和 Tavily 之间选择，以获得更丰富的搜索结果和高级研究能力
+- **站点构建器联系表单** — 使用已安装的表单插件，直接从聊天界面创建功能完整的联系表单
+- **增强的站点构建器** — 改进的多阶段站点构建计划，具备更好的插件发现和错误恢复能力
+- **内置主题技能** — 针对区块主题、经典主题、Kadence Blocks 和 Kadence Theme 的专门指导
+- **改进的 WooCommerce 集成** — 重构为使用原生 WooCommerce API，以获得更好的可靠性和兼容性
+- **自动提供商检测** — 当插件和主题被启用或停用时，自动检测并刷新可用插件和主题
+- **自定义标志生成** — 生成并嵌入自定义 SVG 标志，并自动进行命名空间安全的清理
+- **调色板对比度验证** — 在应用到你的主题之前，检查颜色组合是否符合 WCAG 无障碍要求
+- **照片增强的发现** — 在 Theme Builder 发现访谈期间上传照片，以影响设计方向
+- **餐旅菜单** — 为餐厅、咖啡馆和餐旅企业生成结构化的食品与饮品菜单页面
+- **桌面和移动端预览** — 在设计方向选择期间，在桌面和移动设备上预览你的设计
+- **第 1 层站点抓取** — sd-ai-agent/site-scrape 现在默认可用于分析竞争对手和灵感网站
+- **Google Calendar 读取工具** — 读取已配置的日历和事件，使自动化能够推理即将到来的日程上下文
+- **联系人和参与者映射** — 在生成后续工作之前，将日历参与者匹配到已知站点用户和联系人
+- **人工审批关卡** — 在发送消息、恢复工作或进行更改之前，暂停敏感自动化以供审核
+- **提醒记录和去重** — 跟踪已发送的提醒，避免重复自动化运行向同一接收者通知两次
+- **TextBee SMS 通知** — 启用 SMS 提供商后，通过 TextBee 发送已配置的短信通知
+- **托管 Superdav 服务配置** — 将受支持的站点连接到托管的 Superdav 端点，通过自动设置替代手动端点配置
+- **Advanced 伴随包** — 单独分发的受信任开发者工具，用于文件系统、数据库、WP-CLI、REST 调度器、插件构建器、git 快照、用户管理和基准测试工作流
 
-## 要求
+## 要求 {#requirements}
 
 - WordPress 6.0 或更高版本
 - PHP 8.1 或更高版本
-- WordPress Multisite（网络激活）或单站点安装
-- 一个活动的 AI 提供商连接插件（Anthropic、OpenAI 或兼容插件）
-- Gratis AI Agent v1.9.0 或更高版本（Superdav AI Agent 扩展了 Gratis AI Agent）
+- WordPress Multisite（网络启用）或单站点安装
+- 一个已启用的 AI 提供商连接器插件（Anthropic、OpenAI 或兼容项）
+- Gratis AI Agent v1.9.0 或更高版本（Superdav AI Agent 扩展 Gratis AI Agent）
 
-## 安装
+## 安装 {#installation}
 
 1. 将插件文件上传到 `/wp-content/plugins/superdav-ai-agent`
-2. 在 WordPress 的 **插件 (Plugins)** 界面激活插件
-3. 确保 Gratis AI Agent 也已激活
-4. 导航到 **Gratis AI Agent → 设置 (Settings)** 并配置您的互联网搜索提供商（可选）
+2. 通过 WordPress 中的 **插件** 屏幕启用该插件
+3. 确保 Gratis AI Agent 也已启用
+4. 导航到 **Gratis AI Agent → 设置**，并根据需要配置你的互联网搜索提供商、托管 Superdav 服务连接、Google Calendar 或 TextBee 凭据
 
-## 快速上手
+WordPress.org 包包含核心 Superdav AI Agent 功能。Advanced 伴随包是为明确安装并授权受信任开发者工具的环境单独构建和分发的。
 
-激活后，Superdav AI Agent 会自动使用主题感知能力和额外的功能增强您的 Gratis AI Agent 安装。打开 WordPress 管理侧边栏中的 **Gratis AI Agent** 面板，即可开始使用新功能。
+## 快速开始 {#quick-start}
+
+启用后，Superdav AI Agent 会自动增强你的 Gratis AI Agent 安装，加入感知主题的技能和其他能力。打开 WordPress 管理侧边栏中的 **Gratis AI Agent** 面板，并开始使用新功能。
 
 **示例指令：**
 
 ```
-在联系页面添加一个联系表单。
+向联系页面添加一个联系表单。
 ```
 
 ```
-搜索网络上最新的 WordPress 安全最佳实践。
+搜索网络，查找最新的 WordPress 安全最佳实践。
 ```
 
 ```
-使用当前主题的区块模式创建一个英雄区域。
+使用当前启用主题的区块样板创建一个首屏区域。
 ```
 
-## 主题感知能力 (Theme-Aware Skills)
+```
+查看明天已配置的 Google Calendar 事件，并为参与者起草提醒。
+```
 
-Superdav AI Agent 会自动检测您当前的主题和已安装的插件，并将相应的主题感知技能加载到助手的上下文环境中。可用的技能包括：
+```
+在我批准消息后发送一条 SMS 提醒。
+```
 
-| 技能 | 适用对象 |
+## 感知主题的技能 {#theme-aware-skills}
+
+Superdav AI Agent 会自动检测你的当前启用主题和已安装插件，将合适的感知主题技能加载到助手上下文中。可用技能包括：
+
+| 技能 | 适用于 |
 |---|---|
-| **Block Themes** | 使用 WordPress 区块式（全站编辑）架构的主题 |
-| **Classic Themes** | 使用 PHP 模板和经典编辑器的传统 WordPress 主题 |
-| **Kadence Blocks** | 激活了 Kadence Blocks 插件的网站 |
-| **Kadence Theme** | 使用 Kadence 主题作为当前主题的网站 |
+| **区块主题** | 使用 WordPress 基于区块（全站编辑）架构的主题 |
+| **经典主题** | 使用 PHP 模板和经典编辑器的传统 WordPress 主题 |
+| **Kadence Blocks** | 已启用 Kadence Blocks 插件的站点 |
+| **Kadence Theme** | 将 Kadence theme 作为当前启用主题的站点 |
 
-有关每项技能的详细指导，请参阅 [主题感知能力](../../user-guide/configuration/theme-aware-skills)。
+请参阅 [感知主题的技能](../../user-guide/configuration/theme-aware-skills)，了解每项技能的详细指导。
 
-## 互联网搜索提供商
+## 互联网搜索提供商 {#internet-search-providers}
 
-Superdav AI Agent v1.10.0 增加了 **Tavily** 作为 Brave Search 的替代品，用于互联网搜索查询。这两个提供商都提供实时搜索结果，并且可以在 **Gratis AI Agent → 设置 (Settings) → 高级 (Advanced)** 中进行配置。
+Superdav AI Agent v1.10.0 新增 **Tavily**，作为 Brave Search 的互联网搜索查询替代方案。两个提供商都提供实时搜索结果，并可在 **Gratis AI Agent → 设置 → 高级** 中配置。
 
 | 提供商 | 功能 | 设置 |
 |---|---|---|
 | **Brave Search** | 快速、注重隐私的搜索结果 | [Brave Search API](https://brave.com/search/api/) |
-| **Tavily** | 更丰富的搜索结果，高级研究能力 | [Tavily API](https://tavily.com/) |
+| **Tavily** | 更丰富的搜索结果、高级研究能力 | [Tavily API](https://tavily.com/) |
 
-有关配置说明，请参阅 [互联网搜索](../../user-guide/configuration/internet-search)。
+有关配置说明，请参阅 [Internet Search](../../user-guide/configuration/internet-search)。
 
-## 网站构建器联系表单
+## 日历、审批和通知工作流 {#calendar-approval-and-notification-workflows}
 
-网站构建器（Site Builder）代理现在可以直接从聊天界面创建联系表单。只需要求网站构建器创建一个联系表单，它就会自动检测您已安装的表单插件（Contact Form 7、WPForms、Fluent Forms 或 Gravity Forms），并生成一个可立即使用的表单。
+Superdav AI Agent v1.18.0 将自动化工作流扩展到内容和站点构建任务之外：
 
-有关详细指导，请参阅 [网站构建器联系表单](../../user-guide/administration/site-builder-contact-forms)。
+- **Google Calendar 工具**允许 agent 在日历凭据可用时读取已配置的日历和事件详情。
+- **联系人和与会者辅助工具**会在准备提醒或后续任务之前，将事件参与者映射到 WordPress 用户或已知联系人。
+- **人工审批门控**允许自动化暂停，直到授权用户审核拟议操作。
+- **提醒记录**可在自动化重试或反复计划运行时，防止重复的日历或通知提醒。
+- **TextBee SMS 支持**可在配置 TextBee 提供商后启用短信通知。
 
-## 主题构建器功能
+使用这些工具来实现具备日程感知能力的协助、与会者跟进和提醒工作流，同时在发送敏感消息之前仍需要人工审核。
 
-Superdav AI Agent v1.16.0 的主题构建器包含强大的新功能：
+## Site Builder 联系表单 {#site-builder-contact-forms}
 
-### 带照片的发现访谈
+Site Builder agent 现在可以直接从聊天界面创建联系表单。只需要求 Site Builder 创建联系表单，它就会自动检测你已安装的表单 plugin（Contact Form 7、WPForms、Fluent Forms 或 Gravity Forms），并生成可直接使用的表单。
 
-主题构建器的发现访谈现在包含照片上传步骤，您可以在此提供视觉灵感。上传您品牌、竞争对手网站或设计灵感的照片，以帮助主题构建器了解您的设计方向。
+有关详细指导，请参阅 [Site Builder 联系表单](../../user-guide/administration/site-builder-contact-forms)。
+
+## Theme Builder 功能 {#theme-builder-features}
+
+Superdav AI Agent v1.16.0 中的 Theme Builder 包含强大的新功能：
+
+### 带照片上传的发现访谈 {#discovery-interview-with-photo-upload}
+
+Theme Builder 发现访谈现在包含照片上传步骤，你可以在其中提供视觉灵感。上传你的品牌、竞争对手站点或设计灵感的照片，帮助 Theme Builder 理解你的设计方向。
 
 有关详细指导，请参阅 [发现访谈](./theme-builder/discovery-interview.md)。
 
-### 带有桌面和移动预览的设计方向
+### 带桌面端和移动端预览的设计方向 {#design-direction-with-desktop-and-mobile-previews}
 
-在主题构建器生成完整主题之前，可以在桌面和移动设备上查看您的设计。可以在多个响应式断点查看实时预览。
+在 Theme Builder 生成完整 theme 之前，先在桌面端和移动设备上查看你的设计。在多个响应式断点查看实时预览。
 
 有关详细指导，请参阅 [设计方向](./theme-builder/design-direction.md)。
 
-### 酒店菜单
+### 酒店餐饮菜单 {#hospitality-menus}
 
-主题构建器现在可以为餐厅、咖啡馆、酒吧和其他酒店业务生成结构化的食品和饮料菜单页面。菜单包括定价、描述、饮食信息和过敏原警告。
+Theme Builder 现在可以为餐厅、咖啡馆、酒吧和其他酒店餐饮业务生成结构化的食品和饮品菜单页面。菜单包括价格、描述、膳食信息和过敏原警告。
 
-有关详细指导，请参阅 [酒店菜单](./theme-builder/hospitality-menus.md)。
+有关详细指导，请参阅 [酒店餐饮菜单](./theme-builder/hospitality-menus.md)。
 
-### 新增能力
+### 新能力 {#new-abilities}
 
-- **[生成 Logo SVG](./abilities/generate-logo-svg.md)** — 创建自定义 SVG Logo，并自动进行清理
-- **[验证调色板对比度](./abilities/validate-palette-contrast.md)** — 检查颜色组合是否符合 WCAG 标准
+- **[生成 Logo SVG](./abilities/generate-logo-svg.md)** — 创建自定义 SVG logo，并自动清理
+- **[验证调色板对比度](./abilities/validate-palette-contrast.md)** — 检查颜色组合是否符合 WCAG
 - **[创建菜单](./abilities/create-menu.md)** — 创建带有不同导航标签的导航菜单
 
-有关可用工具和一级网站抓取工具的信息，请参阅 [工具和配置](./theme-builder/tools.md)。
+有关可用工具和 Tier 1 站点抓取工具的信息，请参阅 [工具和配置](./theme-builder/tools.md)。
 
-## 配置
+## 配置 {#configuration}
 
-所有设置都在 WordPress 管理后台的 **Gratis AI Agent → 设置 (Settings)** 下。Superdav AI Agent 添加了以下配置选项：
+所有设置都位于 WordPress 管理后台的 **Gratis AI Agent → Settings** 下。Superdav AI Agent 添加了以下配置选项：
 
 | 设置 | 描述 |
 |---|---|
-| **互联网搜索提供商** | 在 Brave Search 和 Tavily 之间选择（可选） |
-| **Tavily API Key** | Tavily 互联网搜索的 API 密钥（如果选择了 Tavily） |
+| **Internet Search Provider** | 在 Brave Search 和 Tavily 之间选择（可选） |
+| **Tavily API Key** | Tavily 互联网搜索的 API key（如果选择 Tavily） |
+| **Managed Superdav Service** | 通过自动 endpoint 预配，将受支持的站点连接到托管的 Superdav 服务 |
+| **Google Calendar Credentials** | 配置日历访问权限，以便 agent 可以读取日历和事件 |
+| **TextBee SMS Provider** | 为已批准的 SMS 通知工作流配置 TextBee 凭据 |
 
-## v1.16.0 改进
+## 高级配套包 {#advanced-companion-package}
 
-- **AI 客户端缓存** — 现在由瞬态 (transients) 支持，实现跨请求持久化，防止长时间运行的代理任务丢失数据。
-- **一级网站抓取工具** — sd-ai-agent/site-scrape 现在在主题构建器中默认可用，用于分析竞争对手和灵感网站。
-- **插件行操作链接** — 已修正并重命名以提高清晰度。
+Superdav AI Agent v1.18.0 添加了一个单独分发的 Advanced 配套包，用于受信任的开发者工作流。这些能力未捆绑在 WordPress.org 核心包中。仅在管理员明确信任 agent 访问开发者工具的站点上安装该配套包。
 
-## v1.10.0 改进
+高级工具包括文件系统操作、数据库访问、WP-CLI、REST 调度器工作流、plugin 构建器实用工具、git 快照、用户管理辅助工具和基准测试工具。请将这些工具仅限于受信任的管理员使用，并在生产站点启用之前审核审批门控配置。
 
-- **WooCommerce 集成重构** — 现在使用原生的 WooCommerce API，提高了可靠性和兼容性。
-- **提供商列表自动刷新** — 自动检测插件是否被激活或停用，并更新可用提供商列表。
-- **增强的网站构建器** — 改进了多阶段网站构建计划，具备更好的错误恢复能力。
-- **主题感知能力** — 四项新的内置技能，可自动适应您的当前主题。
+## v1.18.0 中的改进 {#improvements-in-v1180}
 
-## v1.10.0 Bug 修复
+- **Google Calendar 支持** — 读取已配置的日历和事件，用于具备日程感知能力的自动化
+- **联系人和与会者映射** — 将日历参与者匹配到站点用户和联系人
+- **人工审批门控** — 在继续之前暂停敏感自动化以供审核
+- **提醒去重** — 记录提醒，以避免在重试或重复运行时发送重复通知
+- **TextBee SMS 提供商** — 在获得所需审批后发送已配置的短信通知
+- **Managed Superdav 服务设置** — 为受支持站点自动预配托管服务 endpoint
+- **高级配套分发** — 将受信任开发者工具与 WordPress.org 核心构建分开发布
+- **可靠性修复** — 改进模型选择、请求超时、默认设置模型处理、推理文本处理、重试指导、日历 token 加固、提醒加固、入门启动、已确认能力恢复，以及 WordPress.org 打包审核问题
 
-- 修复了 `navigate-to` 能力在某些管理页面上导致无限重新加载循环的问题。
-- 修复了 `list-posts` 能力未能正确将分类和标签名称解析为 slug 的问题。
-- 修复了 WP-CLI 命令在上次重构后缺少命名空间别名的问题。
-- 修复了事件自动化在尚未创建自动化表的情况下也能优雅处理网站的问题。
-- 修复了 `memory-save` 能力在系统指令构建器中使用正确的命名空间前缀的问题。
-- 修复了标量工具结果在返回给 AI 之前被正确包裹的问题。
-- 修复了使用统计数据在从旧版本升级时，能正确处理遗留能力键格式的问题。
+## v1.16.0 中的改进 {#improvements-in-v1160}
 
-## 支持
+- **AI Client 缓存** — 现在由 transients 支持，可实现跨请求持久化，防止长时间运行的 agent 任务发生数据丢失
+- **Tier 1 站点抓取工具** — sd-ai-agent/site-scrape 现在在 Theme Builder 中默认可用，用于分析竞争对手和灵感来源网站
+- **插件行操作链接** — 已修正并重命名，以提高清晰度
 
-如需支持，请访问 [ultimatemultisite.com](https://ultimatemultisite.com) 或在插件仓库中提交 Issue。
+## v1.10.0 中的改进 {#improvements-in-v1100}
 
-## 更新日志
+- **WooCommerce 集成已重构** — 现在使用原生 WooCommerce API，以获得更好的可靠性和兼容性
+- **Provider 列表自动刷新** — 自动检测插件何时被激活或停用，并更新可用的 Provider 列表
+- **增强的站点构建器** — 改进了多阶段站点构建计划，并提供更好的错误恢复
+- **感知主题的技能** — 四个新的内置技能，会自动适配你的当前启用主题
 
-有关完整的版本历史记录，请参阅 [更新日志](./changelog)。
+## v1.10.0 中的错误修复 {#bug-fixes-in-v1100}
+
+- 修复了 `navigate-to` 能力在某些管理页面上导致无限重新加载循环的问题
+- 修复了 `list-posts` 能力未正确将分类和标签名称解析为别名的问题
+- 修复了此前重构后 WP-CLI 命令缺少命名空间别名的问题
+- 修复了事件自动化在自动化表尚未创建的站点上无法优雅处理的问题
+- 修复了 `memory-save` 能力在系统指令构建器中使用正确命名空间前缀的问题
+- 修复了标量工具结果在返回给 AI 之前被正确包装的问题
+- 修复了使用统计信息在从旧版本升级时正确处理旧版能力键格式的问题
+
+## 支持 {#support}
+
+如需支持，请访问 [ultimatemultisite.com](https://ultimatemultisite.com) 或在插件仓库中提交问题。
+
+## 更新日志 {#changelog}
+
+请参阅 [更新日志](./changelog) 了解完整版本历史。

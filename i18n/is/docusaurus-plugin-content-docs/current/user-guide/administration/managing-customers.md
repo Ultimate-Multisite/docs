@@ -3,7 +3,7 @@ title: Stjórnun viðskiptavina
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Stjórnun viðskiptavina
+# Stjórnun viðskiptavina {#managing-customers}
 
 Sida **Customers** sýnir lista litið meðlimum sem eru registered í nálgunni þinni. Þessi síða sýnir grunnupplýsingar um notandann, eins og nafn, tölvuinnri e-postrétt og síðustu innburði, samt **skipti til** link sem leitar þig að innri í subsite notandans sem stafræðingur.
 

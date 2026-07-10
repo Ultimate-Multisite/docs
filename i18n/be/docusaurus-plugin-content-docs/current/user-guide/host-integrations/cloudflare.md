@@ -3,18 +3,18 @@ title: Інтыграцыя з Cloudflare
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Інтеграцыя з Cloudflare
+# Інтеграцыя з Cloudflare {#cloudflare-integration}
 
-## Агляд
+## Агляд {#overview}
 Cloudflare — гэта вядомы content delivery network (CDN) і пастаўшчык бяспекі, які дапамагае абараніць і паскорыць працу сайтаў. Гэтая интеграцыя дазваляе аўтаматычнае кіраванне домейнам паміж Ultimate Multisite і Cloudflare, асабліва для ўстаноў на базе субдоменаў (subdomain multisite).
 
-## Функцыі
+## Функцыі {#features}
 - Аўтаматычнае стварэнне субдоменаў у Cloudflare
 - Падтрымка субдоменаў, якія праходзяць праз proxy
 - Кіраванне DNS-запісамі
 - Палепшаны адбывальнік DNS-запісаў у адмініструванні Ultimate Multisite
 
-## Патрабаванні
+## Патрабаванні {#requirements}
 У наступных канстантах павінны быць вызначаны ў файле `wp-config.php`:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Інструкцыі па ўстаноўцы
+## Інструкцыі па ўстаноўцы {#setup-instructions}
 
-### 1. Апісаць API Key Cloudflare
+### 1. Апісаць API Key Cloudflare {#1-get-your-cloudflare-api-key}
 
 1. Увайдзіце на свой dashboard Cloudflare
 2. Адыйдзіце ў "My Profile" (націсніце на свой электронны адрас у верхнем правым кутку)
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit
 5. Скопіруйце свой API token
 
-### 2. Апісаць Zone ID
+### 2. Апісаць Zone ID {#2-get-your-zone-id}
 
 1. У dashboard Cloudflare выберыце домен, які хочаце выкарыстоўваць
 2. Zone ID бачны ў тэбе "Overview", у правым боковым меню пад "API"
 3. Скопіруйце Zone ID
 
-### 3. Дадаць канстанты ў wp-config.php
+### 3. Дадаць канстанты ў wp-config.php {#3-add-constants-to-wp-configphp}
 
 Дадайце наступныя канстанты ў свой файл `wp-config.php`:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Актываваць интеграцыю
+### 4. Актываваць интеграцыю {#4-enable-the-integration}
 
 1. У адмініструванні WordPress адыйдзіце ў Ultimate Multisite > Settings
 2. Адыйдзіце ў тэб "Domain Mapping"
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Актывуйце интеграцыю Cloudflare
 5. Націсніце "Save Changes"
 
-## Як гэта працуе
+## Як гэта працуе {#how-it-works}
 
-### Кіраванне субдоменамі
+### Кіраванне субдоменамі {#subdomain-management}
 
 Калі ствараецца новы сайт у ўстаноўцы субдоменнага мультысайта:
 
@@ -67,7 +67,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. Субдомен па спецыяльнасці наладжаны на праходжанне праз Cloudflare (гэты моцна можна змяніць праз filters)
 3. Калі сайт выматваецца, интеграцыя выдаліць субдомен з Cloudflare
 
-### Адбывальнік DNS-запісаў
+### Адбывальнік DNS-запісаў {#dns-record-display}
 
 Інтеграцыя палепшае адбывальнік DNS-запісаў у адмініструванні Ultimate Multisite, што робіцца праз:
 
@@ -75,11 +75,11 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 2. Адбыванне інфармацыі аб тым, ці праходзяць запісы праз proxy
 3. Паказванне дадатковай інфармацыі аб DNS-запісах
 
-## Cloudflare Custom Hostnames
+## Cloudflare Custom Hostnames {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames** (раней называўся "Cloudflare for SaaS") — гэта функцыя Cloudflare, якая дазваляе вашым кліентам выкарыстоўваць ўласныя доме́ны з SSL на вашым мультысайце. Гэта рэкамендаваны падыход для ўстаноў мультысайтаў, якія мапуюць доме́ны і выкарыстоўваюць Cloudflare, бо Cloudflare аўтаматычна кіруе выдачай і пановленнем сертыфікатаў SSL для кожнага карыстальніцкага домена.
 
-### Як гэта адрозніваецца ад стандартнай интеграцыі Cloudflare
+### Як гэта адрозніваецца ад стандартнай интеграцыі Cloudflare {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Стандартная интеграцыя | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 | **Найлепш падыходзіць для** | Мультысайт на базе субдоменаў | Мультысайт, які мапуе доме́ны |
 | **SSL** | Кіруецца асобна | Кіруецца Cloudflare аўтаматычна |
 
-### Наладжанне Cloudflare Custom Hostnames
+### Наладжанне Cloudflare Custom Hostnames {#setting-up-cloudflare-custom-hostnames}
 
 1. У dashboard Cloudflare адкройце зону для вашыга галоўнага домена.
 2. Адыйдзіце ў **SSL/TLS > Custom Hostnames**.
@@ -101,23 +101,23 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 З датыкай Ultimate Multisite v2.6.1 гэтая функцыя называецца **Cloudflare Custom Hostnames** ў усіх настройках і ярлыках плагіна. Ранейшыя версіі выкарыстоўвалі назву "Cloudflare for SaaS", якая з'яўляецца падлёкай назвай прадукту Cloudflare.
 :::
 
-## Важнае паведамленне
+## Важнае паведамленне {#important-notes}
 
 З датыкай недавніх абнаўленняў Cloudflare, wildcard proxying цяпер доступны для ўсіх кліентаў. Гэта азначае, што стандартная интеграцыя DNS Cloudflare стала менш крытычнай для ўстаноў субдоменнага мультысайта, чым рані было, бо вы проста можаце наладзіць wildcard DNS-запіс у Cloudflare.
 
-## Выяўленне праблем
+## Выяўленне праблем {#troubleshooting}
 
-### Праблемы з падключэннем API
+### Праблемы з падключэннем API {#api-connection-issues}
 - Праверце, ці правільны ваш API token і ці ёсць у яго неабходныя права
 - Праверце, ці правільны ваш Zone ID
 - Убедзіцеся, што ваш аккаунт Cloudflare мае неабходныя права
 
-### Субдомен не дададзены
+### Субдомен не дададзены {#subdomain-not-added}
 - Праверце журналы Ultimate Multisite на наяўнасць паведамленняў аб памылках
 - Убедзіцеся, што субдомен яшчэ не дададзены ў Cloudflare
 - Убедзіцеся, што ваш план Cloudflare падтрымлівае колькасць DNS-запісаў, якія вы ствараеце
 
-### Праблемы з proxying
+### Праблемы з proxying {#proxying-issues}
 - Калі вы не хочаце, каб субдомены праходзілі праз proxy, вы можаце выкарыстоўваць filter `wu_cloudflare_should_proxy`
 - Nieкі функциональнасці можа працаваць не правільна ў рэжыме proxy (напрыклад, некаторыя функцыі адміністрування WordPress)
 - Раскансультавацца з выкарыстаннем Page Rules Cloudflare, каб праскочыць кэшаванне для адмініструвальных старонкі.

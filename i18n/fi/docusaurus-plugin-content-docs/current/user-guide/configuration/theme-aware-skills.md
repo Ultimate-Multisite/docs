@@ -3,11 +3,11 @@ title: Teemavetoiset taidot
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Teemästyne taitot
+# Teemästyne taitot {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 sisältää neljä uutta teemäkohteen tietoon perustuvaa (theme-aware) sisäänrakennettua taitoa, jotka sopeutuvat automaattisesti aktiiviseen WordPress-teemaasi. Nämä taidot tarjoavat erikoistunutta ohjausta ja kykyjä, jotka on räätälöity teeman arkkitehtuuriin ja ominaisuuksiin.
 
-## Mitkä ovat teemäkohteen tietävät taidot?
+## Mitkä ovat teemäkohteen tietävät taidot? {#what-are-theme-aware-skills}
 
 Teemäkohteen tietävät taidot ovat valmiiksi konfiguroituja tietokantoja ja työkaluja, joita AI-assistentti valitsee automaattisesti sen perusteella, mikä WordPress-teema on tällä hetkellä aktiivinen sivustollasi. Kun vaihdat teemoja, asistentin saatavilla olevat taidot päivittyvät automaattisesti – ei tarvita manuaalista konfigurointia.
 
@@ -18,9 +18,9 @@ Jokainen taito sisältää:
 - **Muokkausesimerkkejä** — koodinpätkiä ja konfiguraatiomalleja yleisiin tehtäviin
 - **Paras käytäntöjä** — suosituksia teeman arkkitehtuurille ja työnkululle
 
-## Saatavilla olevat teemäkohteen tietävät taidot
+## Saatavilla olevat teemäkohteen tietävät taidot {#available-theme-aware-skills}
 
-### Lohkot-teemat (Block Themes)
+### Lohkot-teemat (Block Themes) {#block-themes}
 
 **Soveltuu:** Teemoille, jotka käyttävät WordPressin lohkoperustista (Full Site Editing) arkkitehtuuria.
 
@@ -34,7 +34,7 @@ Lohkot-teen taito tarjoaa ohjeita:
 
 **Aktivoituu automaattisesti, kun:** Aktiivinen teema on lohko-teema (tuki `block-templates`-ominaisuudelle).
 
-### Klassiset teemat (Classic Themes)
+### Klassiset teemat (Classic Themes) {#classic-themes}
 
 **Soveltuu:** Perinteisiin WordPress-teemoihin, jotka käyttävät PHP-mallinnuksia ja klassista editoria.
 
@@ -48,7 +48,7 @@ Klassisten teemojen taito tarjoaa ohjeita:
 
 **Aktivoituu automaattisesti, kun:** Aktiivinen teemasi on klassinen (ei-block) teema.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Soveltuu:** Sivuille, joilla käytetään Kadence Blocks -lisäosa edistettava blockien perusteista suunnittelua varten.
 
@@ -62,7 +62,7 @@ Kadence Blocks -taito tarjoaa ohjeita:
 
 **Aktivoituu automaattisesti, kun:** Kadence Blocks -lisäosa on aktiivinen sivustollasi.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Soveltuu:** Sivuille, joilla käytetään Kadence-teemaa blockien perusteiseen suunnitteluun ja muokattavuuteen.
 
@@ -76,15 +76,15 @@ Kadence Theme -taito tarjoaa ohjeita:
 
 **Aktivoituu automaattisesti, kun:** Kadence-teema on aktiivinen teemasi.
 
-## Miten taidot valitaan
+## Miten taidot valitaan {#how-skills-are-selected}
 
 Apulaisohjelma havaitsee automaattisesti aktiivisen teeman ja asennetut lisäosat jokaisen viestin yhteydessä. Jos saatavilla on vastaava teemaa tunnistava taito, se ladataan automaattisesti apulaisohjelman kontekstiin. Sinun ei tarvitse aktivoida tai vaihtaa taitoja manuaalisesti.
 
-### Useat taidot
+### Useat taidot {#multiple-skills}
 
 Jos useassa on useita taitoja sivustollasi (esimerkiksi jos käytät sekä Kadence Blocks -moduulia että Kadence Theme -teemaa), avustaja pääsee käsiksi kaikkiin sovellettaviin taitoihin ja voi viitata ohjeisiin jokaisesta.
 
-### Teemojen vaihtaminen
+### Teemojen vaihtaminen {#switching-themes}
 
 Kun vaihdat aktiivista teemaasi, avustajan saatavilla olevat taidot päivittyvät automaattisesti seuraavassa viestissä. Esimerkiksi:
 
@@ -92,11 +92,11 @@ Kun vaihdat aktiivista teemaasi, avustajan saatavilla olevat taidot päivittyvä
 2. Vaihdat klassiseen teemaan.
 3. Seuraavassa viestissä **Classic Themes** -taito latautuu automaattisesti, ja **Block Themes** -taito ei ole enää käytettävissä.
 
-## Teemojen tietoisia taitojen käyttö
+## Teemojen tietoisia taitojen käyttö {#using-theme-aware-skills}
 
 Hyödynnät teemajasi tiedostavan taidon yksinkertaisesti kuvaamalla, mitä haluat tehdä keskusteluohjelmassa. Avustaja viittaa automaattisesti asianmukaisen taidon ohjeisiin.
 
-### Esimerkkejä kehotteista
+### Esimerkkejä kehotteista {#example-prompts}
 
 **Moduuliteemoille:**
 > "Luo hero-osio taustakuvillla ja keskitetulla tekstillä käyttämällä moduulin malleja."

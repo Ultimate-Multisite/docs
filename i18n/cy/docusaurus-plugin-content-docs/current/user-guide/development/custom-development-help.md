@@ -3,13 +3,13 @@ title: Help gyda ddatblygiad cyflwrigol
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Sut iach y help ddatblygolydd o Codeable?
+# Sut iach y help ddatblygolydd o Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Am ychydig, mae angen i'r ddangosioedd gwych yn rhywfaint i wneud ein gyfylchrau yn llwyr fel y byddwn yn ei eisiau. Os ydych chi'n chwilio am hyn, rydym ni'n cywir eich cynrychioliad â [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), lle gallwch ddod o hyd i ddatblygwyr gair gyda chyflwyniad gyda chwarae Ultimate Multisite.
 
 Mae [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) yn ffurf cyfathrebu mae cydwirion â ddatblygwyr WordPress freelanc wedi'u cyflwyno, sydd yn gallu gweithio ar y prosiectau o bob grädd. Mae ganddyntar proses cais llwyr i sicr eich bod yn cael eich cyfathrebu â ddatblygwyr sydd yn cael eu chyflwyno'r gweithredol i'r gwaith sydd yn eich sylw.
 
-### Sut i creu prosiect yn Codeable?
+### Sut i creu prosiect yn Codeable? {#how-to-create-a-project-in-codeable}
 
 Yn gyntaf, mynd i [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) a clisiwch ar y bot **Start a Project** (Dechrau'r Prosiect).
 

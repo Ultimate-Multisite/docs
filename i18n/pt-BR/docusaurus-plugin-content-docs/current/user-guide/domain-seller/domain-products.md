@@ -3,11 +3,11 @@ title: Produtos de Domínio e Preços
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produtos e Preços de Domínio
+# Produtos e Preços de Domínio {#domain-products-and-pricing}
 
 Os produtos de domínio são a forma como você controla preços, TLDs, privacidade WHOIS e a seleção de provedores. Cada produto de domínio é um produto padrão do Multisite Ultimate com uma aba extra chamada **Domain Settings**.
 
-## Criando um produto de domínio
+## Criando um produto de domínio {#creating-a-domain-product}
 
 1. Vá para **Network Admin › Ultimate Multisite › Products**
 2. Clique em **Add New**
@@ -17,13 +17,13 @@ Os produtos de domínio são a forma como você controla preços, TLDs, privacid
 
 Os produtos de domínio aparecem com um distintivo roxo **Domain** na lista de produtos e podem ser filtrados usando a aba **Domain Products**.
 
-## Aba Domain Settings
+## Aba Domain Settings {#domain-settings-tab}
 
-### Provedor
+### Provedor {#provider}
 
 Selecione qual registrador fará o registro para este produto. Por padrão, ele usa o **Default provider** global definido nas configurações do Domain Seller.
 
-### TLDs Suportados
+### TLDs Suportados {#supported-tlds}
 
 Deixe em branco para criar um **produto catch-all** que se aplica a todos os TLDs não correspondidos por outro produto.
 
@@ -31,7 +31,7 @@ Insira uma lista de TLDs separados por vírgula (ex: `.com, .net, .org`) para cr
 
 **Como funciona a correspondência de produtos:** Quando um cliente pesquisa um domínio, o addon escolhe o produto correspondente mais específico. Um produto com `.com` em sua lista de TLDs tem precedência sobre um produto catch-all. Se nenhum produto específico de TLD corresponder, o catch-all é usado. Se não houver produtos, a busca por domínio não será exibida.
 
-### Tipo de Markup
+### Tipo de Markup {#markup-type}
 
 Três modos controlam como seu preço de varejo é calculado a partir do custo de atacado:
 
@@ -41,11 +41,11 @@ Três modos controlam como seu preço de varejo é calculado a partir do custo d
 | **Fixed markup** | Adiciona um valor fixo em dólares. Um markup de $5 em um domínio de $10 resulta em $15. |
 | **Fixed price** | Ignora completamente o custo de atacado. Sempre cobra o valor que você inserir. |
 
-### Preços Introdutórios
+### Preços Introdutórios {#introductory-pricing}
 
 Ative para oferecer um preço com desconto no primeiro ano. Defina um **Introductory price** separado (o preço do ano 1) junto com o **Renewal price** regular (ano 2+). O cliente verá os dois preços exibidos durante o checkout para saber o que esperar na renovação.
 
-### Privacidade WHOIS
+### Privacidade WHOIS {#whois-privacy}
 
 Controla se a proteção de privacidade WHOIS é oferecida para domínios registrados através deste produto.
 
@@ -59,7 +59,7 @@ Para Namecheap, a privacidade WHOIS usa WhoisGuard (sempre gratuito). Para OpenS
 
 ---
 
-## Importação e Sincronização de TLDs
+## Importação e Sincronização de TLDs {#tld-import-and-sync}
 
 Os produtos de domínio exibem preços de atacado em tempo real, obtidos do provedor conectado. Para que isso funcione, os TLDs devem ser importados.
 
@@ -70,7 +70,7 @@ Após uma sincronização, vá para a aba Domain Settings de qualquer produto de
 
 ---
 
-## Renovação Automática
+## Renovação Automática {#auto-renewal}
 
 As renovações de domínio estão vinculadas ao status de associação do cliente:
 
@@ -90,7 +90,7 @@ IDs de modelo de e-mail para eventos de ciclo de vida do domínio:
 
 ---
 
-## Admin: Registro Manual de Domínio
+## Admin: Registro Manual de Domínio {#admin-manual-domain-registration}
 
 Para registrar um domínio em nome de um cliente sem que ele precise passar pelo checkout:
 

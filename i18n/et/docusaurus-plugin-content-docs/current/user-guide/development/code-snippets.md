@@ -3,7 +3,7 @@ title: Koodikonnad
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koodi-nõuded v2 versioonile
+# Koodi-nõuded v2 versioonile {#code-snippets-for-v2}
 
 Põhine on **WordPress** koodinõudmeid kasutatakse teatud toimende sooritamiseks, mida oleks võimalik teha eraldatuna väiksemaks pluginiga. Sellise koodinõudmeid paigutatakse ühe WordPress core või teema faili (otsinguks tavaliselt teie teema `functions.php` fail) sisse või neid saab kasutada MU pluginina.
 
@@ -15,7 +15,7 @@ Selles artiklis näitame kolme koodinõudmeid, mida saab kasutada **Ultimate Mul
 
   * [**CORS-probleemide lahendamine Font-Iconsiga mappitud domeenides**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Arvestusmenüüpunkti paigutuse muutmine
+## Arvestusmenüüpunkti paigutuse muutmine {#changing-the-position-of-the-account-menu-item}
 
 Kliendi Dashboardil olev arvestusmenüüpunkti paigutuse muutamiseks lisa lihtsalt järgmine koodinõudmeel faili `functions.php` oma peal olevas teemas. Saate ka seda koodinõudmet sisse ühe oma mu-pluginiga või custom pluginiga.
 
@@ -23,7 +23,7 @@ Kliendi Dashboardil olev arvestusmenüüpunkti paigutuse muutamiseks lisa lihtsa
 add_filter('wu_my_account_menu_position', function() { return 10; // Muuta seda väärtust, et paigutada menüü soovitud asendesse.
 ```
 
-## Käsimale kontroll, kas kasutaja on antud plaanil ja/või on aktiivne subskriptioon
+## Käsimale kontroll, kas kasutaja on antud plaanil ja/või on aktiivne subskriptioon {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Võrreva administraatorina võib vaja olla luua custom funktsioone, mis teostavad alusel toiminguid või lühendavad teenust/funktsiooni valitud subskriptorite või lõppklientide grupi jaoks nende subskriptiooni ja selle plaani staatuse põhjal.
 
@@ -57,20 +57,20 @@ Päraste on meelestada, et kasutajad võivad subskribe ainult **Planni**, mitte 
 
 ![Tootete lista näide plaani ID-d](/img/admin/products-list.png)
 
-## CORS-probleemide lahendamine Font-Iconsiga mappitud domeenides
-## CORS-probleemide lahendamine Font-Iconsiga mappitud domeenides
+## CORS-probleemide lahendamine Font-Iconsiga mappitud domeenides {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## CORS-probleemide lahendamine Font-Iconsiga mappitud domeenides {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Domeeni sub-saitile mappamise pärast saates teada, et veebilehel on probleem fontide laadimisel. See põhjustab ületatud (cross-origin) blokeerimise teie serveri seadistustes.
 
 Kuna fontifailid on lähes alati laaditud otseselt CSS-st, meie domeeni mappimise plugin ei saa URL-id ümberkirjutada ja kasutada mappitud domeeni asemel algset, seetõttu tuleb probleem lahendamiseks muuta teie serveri konfiguratsioonifailid.
 
-### Apache
+### Apache {#apache}
 
 Lisate oma .htaccess faili, lisage:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Server konfiguratsioonifailis (koht on serveri järgi erinev) lisage:
 

@@ -3,7 +3,7 @@ title: Paano Mag-install ng WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Paano Mag-install ng WordPress Multisite?
+# Paano Mag-install ng WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Ang WordPress Multisite ay nagpapahintulot sa iyo na magkaroon ng isang network ng mga site sa iisang installation. Ito ay isang built-in feature, pero hindi ito naka-activate nang default.
 
@@ -99,9 +99,9 @@ Para gumawa ng subsite:
 
 Pagkatapos punan ang mga fields, i-click ang "Add site" button. Kapag na-create na ang bagong subsite, pumunta at i-access ito para masigurado na gumagana ang subsite.
 
-## Mga Karaniwang Problema:
+## Mga Karaniwang Problema: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Kaya kong gumawa ng mga bagong site pero hindi ko ma-access.
+### 1. Kaya kong gumawa ng mga bagong site pero hindi ko ma-access. {#common-problems}
 
 Kung pinili mo ang mga subdomain, kailangan mo ring mag-setup ng wildcard subdomains para sa iyong multisite network.
 

@@ -4,11 +4,11 @@ title: Acció - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Aquesta funció: set_auth_cookie
+# Aquesta funció: set_auth_cookie {#action-setauthcookie}
 
 S'executa immediatament abans que es estableixi la cookie d'autenticació.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tip | Descripció |
 |------|------|-------------|
@@ -19,10 +19,10 @@ S'executa immediatament abans que es estableixi la cookie d'autenticació.
 | $scheme | `string` | Esquema d'autenticació. Els valors inclouen 'auth' o 'secure_auth'. |
 | $token | `string` | El token de sessió de l'usuari que s'utilitzarà per aquesta cookie. |
 
-### Des de
+### Des de {#since}
 
 - 2.5.0
 - 4.9.0: Es va afegir el paràmetre `<code$token</code>`.
-### Font
+### Font {#source}
 
 Definida en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) a la línia 124

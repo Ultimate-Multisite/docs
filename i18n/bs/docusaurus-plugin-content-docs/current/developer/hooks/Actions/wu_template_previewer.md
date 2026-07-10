@@ -4,19 +4,19 @@ title: Akcija - wu_template_previewer
 sidebar_label: wu_template_previewer
 _i18n_hash: 24d8487cd357329327315986d776a8a9
 ---
-# Akcija: wu_template_previewer
+# Akcija: wu_template_previewer {#action-wutemplatepreviewer}
 
 Pokreće se kada je unutar konteksta pregledača šablona.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
 | $template_previewer | `self` | Instanca trenutne klase. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 2.0.4
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/ui/class-template-previewer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-template-previewer.php#L86) na liniji 86

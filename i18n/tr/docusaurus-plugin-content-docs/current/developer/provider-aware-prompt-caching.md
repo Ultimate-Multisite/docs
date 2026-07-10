@@ -3,11 +3,11 @@ title: Sağlayıcı Farkındalıklı İstek Önbellekleme
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Sağlayıcıya Duyarlı Prompt Önbellekleme
+# Sağlayıcıya Duyarlı Prompt Önbellekleme {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0, farklı LLM sağlayıcıları arasında prompt'ları önbelleğe alarak API maliyetlerini ve gecikmeyi optimize eden **sağlayıcıya duyarlı prompt önbellekleme** özelliğini sunuyor. Her sağlayıcının farklı önbellekleme mekanizmaları ve yapılandırmaları vardır.
 
-## Genel Bakış
+## Genel Bakış {#overview}
 
 Prompt önbellekleme, size şunları yapma imkanı tanır:
 
@@ -23,11 +23,11 @@ Farklı sağlayıcılar önbellekleme özelliğini farklı şekillerde uygular:
 - **OpenRouter**: Sağlayıcıya özgü önbellekleme
 - **Vertex Anthropic**: Önbellek kontrolü ile Prompt önbellekleme
 
-## Google Gemini: cachedContents API
+## Google Gemini: cachedContents API {#google-gemini-cachedcontents-api}
 
 Google Gemini, `cachedContents` API aracılığıyla açık önbellek yönetimi sağlar.
 
-### Yapılandırma
+### Yapılandırma {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Önbelleklenmiş Prompt Oluşturma
+### Önbelleklenmiş Prompt Oluşturma {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Dönüş: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Önbelleklenmiş Prompt Kullanma
+### Önbelleklenmiş Prompt Kullanma {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Önbellek Yaşam Döngüsü
+### Önbellek Yaşam Döngüsü {#cache-lifecycle}
 
 ```php
 // Önbelleklenmiş içerikleri listele
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Gemini İçin En İyi Uygulamalar
+### Gemini İçin En İyi Uygulamalar {#best-practices-for-gemini}
 
 - **Uygun TTL belirleyin**: Maliyet tasarrufu ile önbellek güncelliği arasında denge kurun
 - **Sistem prompt'larını önbelleğe alın**: İstekler arasında aynı sistem prompt'unu yeniden kullanın
 - **Önbellek kullanımını izleyin**: Hangi önbelleklerin en çok kullanıldığını takip edin
 - **Süresi dolmuş önbellekleri temizleyin**: Kullanılmayan önbellekleri periyodik olarak silin
 
-## Azure OpenAI: Prompt Önbellekleme
+## Azure OpenAI: Prompt Önbellekleme {#azure-openai-prompt-caching}
 
 Azure OpenAI, otomatik TTL yönetimi ile prompt önbellekleme desteği sunar.
 
-### Yapılandırma
+### Yapılandırma {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Önbellekleme Etkinleştirme
+### Önbellekleme Etkinleştirme {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Önbellek Başlıkları (Cache Headers)
+### Önbellek Başlıkları (Cache Headers) {#cache-headers}
 
 Azure OpenAI, önbellek kontrolü için HTTP başlıkları kullanır:
 
@@ -152,7 +152,7 @@ Desteklenen değerler:
 - `no_cache`: Bu isteği önbelleğe alma
 - `no_store`: Önbelleğe alma ve yeniden kullanma
 
-### Önbellek Kullanımını İzleme
+### Önbellek Kullanımını İzleme {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Önbellek oluşturma: $cache_tokens token\n";
 echo "Önbellek isabeti: $cache_hits token\n";
 ```
 
-### Azure OpenAI İçin En İyi Uygulamalar
+### Azure OpenAI İçin En İyi Uygulamalar {#best-practices-for-azure-openai}
 
 - **Tutarlı prompt'lar kullanın**: Aynı prompt'lar önbelleklemeden faydalanır
 - **Makul bir TTL belirleyin**: Maliyet ile tazelik arasında denge kurun
 - **Önbellek metriklerini izleyin**: Önbellek oluşturma ile isabet sayısını takip edin
 - **Benzer istekleri toplu işleyin**: Önbellek isabetlerini en üst düzeye çıkarmak için istekleri gruplayın
 
-## OpenRouter: Sağlayıcıya Özgü Önbellekleme
+## OpenRouter: Sağlayıcıya Özgü Önbellekleme {#openrouter-provider-specific-caching}
 
 OpenRouter, alttaki sağlayıcılar (OpenAI, Anthropic vb.) aracılığıyla önbellekleme desteği sunar.
 
-### Yapılandırma
+### Yapılandırma {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### OpenRouter Önbellekleme Kullanımı
+### OpenRouter Önbellekleme Kullanımı {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Sağlayıcıya Özgü Seçenekler
+### Sağlayıcıya Özgü Seçenekler {#provider-specific-options}
 
 Farklı sağlayıcıların farklı önbellekleme mekanizmaları vardır:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### OpenRouter İçin En İyi Uygulamalar
+### OpenRouter İçin En İyi Uygulamalar {#best-practices-for-openrouter}
 
 - **Sağlayıcınızın önbelleklemesini bilin**: Her sağlayıcının farklı mekanizmaları vardır
 - **Önbellekleme davranışını test edin**: Seçtiğiniz sağlayıcıyla önbelleklemenin çalıştığından emin olun
 - **Maliyetleri izleyin**: Önbelleklemeden elde edilen tasarrufları takip edin
 - **Tutarlı modeller kullanın**: Model değiştirmek, önbellek isabetlerini bozar
 
-## Vertex Anthropic: Önbellek Kontrollü Prompt Önbellekleme
+## Vertex Anthropic: Önbellek Kontrollü Prompt Önbellekleme {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud), açık önbellek kontrolü ile prompt önbellekleme desteği sunar.
 
-### Yapılandırma
+### Yapılandırma {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Vertex Anthropic Önbellekleme Kullanımı
+### Vertex Anthropic Önbellekleme Kullanımı {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Önbellek Kontrol Türleri
+### Önbellek Kontrol Türleri {#cache-control-types}
 
 - **ephemeral**: İstek süresince önbellek tut (varsayılan)
 - **persistent**: Birden fazla istekte önbellek tut (destekleniyorsa)
 
-### Önbellek Kullanımını İzleme
+### Önbellek Kullanımını İzleme {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Oluşturulan önbellek: $cache_created token\n";
 echo "Okunan önbellek: $cache_read token\n";
 ```
 
-### Vertex Anthropic İçin En İyi Uygulamalar
+### Vertex Anthropic İçin En İyi Uygulamalar {#best-practices-for-vertex-anthropic}
 
 - **Ephemeral önbellekleme kullanın**: Tek oturum önbelleklemesi için iyidir
 - **max_tokens'ı uygun şekilde ayarlayın**: Önbellek boyutu ile maliyet arasında denge kurun
 - **Önbellek metriklerini izleyin**: Önbellek etkinliğini takip edin
 - **İş yükünüzle test edin**: Önbelleklemenin kullanım senaryonuza fayda sağladığını doğrulayın
 
-## Sağlayıcılar Arası Önbellekleme Stratejisi
+## Sağlayıcılar Arası Önbellekleme Stratejisi {#cross-provider-caching-strategy}
 
-### Birleştirilmiş Yapılandırma
+### Birleştirilmiş Yapılandırma {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Sağlayıcı Algılama
+### Sağlayıcı Algılama {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Sağlayıcıya özgü önbellek yapılandırmasını kullan
 ```
 
-### Geri Dönüş (Fallback) Stratejisi
+### Geri Dönüş (Fallback) Stratejisi {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Maliyet Optimizasyonu
+## Maliyet Optimizasyonu {#cost-optimization}
 
-### Tasarrufu Hesaplama
+### Tasarrufu Hesaplama {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Tahmini tasarruf: \$$savings\n";
 ```
 
-### Optimizasyon İpuçları
+### Optimizasyon İpuçları {#optimization-tips}
 
 - **Büyük sistem prompt'larını önbelleğe alın**: En büyük maliyet tasarrufu
 - **Bağlamı yeniden kullanın**: Sık kullanılan bağlam belgelerini önbelleğe alın
@@ -395,30 +395,30 @@ echo "Tahmini tasarruf: \$$savings\n";
 - **Önbellek etkinliğini izleyin**: Gerçek tasarrufları takip edin
 - **TTL'yi ayarlayın**: Maliyet ile güncellik arasında denge kurun
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### Önbellek kullanılmıyorsa
+### Önbellek kullanılmıyorsa {#cache-not-being-used}
 
 - Yapılandırmada önbelleklemenin etkinleştirildiğini doğrulayın
 - Prompt'ların aynı olduğundan emin olun (önbellekleme tam eşleşme gerektirir)
 - Önbelleğin süresinin dolmadığını kontrol edin
 - Sağlayıcıya özgü önbellek limitlerini kontrol edin
 
-### Önbellek oluşturma başarısız olursa
+### Önbellek oluşturma başarısız olursa {#cache-creation-failing}
 
 - Önbellek boyutunun sağlayıcı limitleri dahilinde olduğunu doğrulayın
 - Önbellek kontrol sözdiziminin doğru olduğundan emin olun
 - Sağlayıcının modeliniz için önbellekleme desteklediğini kontrol edin
 - Sınırlamalar için sağlayıcı dokümantasyonunu gözden geçirin
 
-### Beklenmedik maliyetler
+### Beklenmedik maliyetler {#unexpected-costs}
 
 - Önbellek oluşturma ile önbellek okuma token'larını izleyin
 - Önbelleğin gerçekten kullanılıp kullanılmadığını doğrulayın
 - Prompt varyasyonları nedeniyle önbellek kaçırması olup olmadığını kontrol edin
 - TTL'yi veya önbellekleme stratejisini ayarlamayı düşünün
 
-## Sağlayıcı Karşılaştırması
+## Sağlayıcı Karşılaştırması {#provider-comparison}
 
 | Özellik | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Tahmini tasarruf: \$$savings\n";
 | Maliyet azaltma | %90 | %90 | Sağlayıcıya bağlı | %90 |
 | İzleme | Detaylı | Metrikler aracılığıyla | Sağlayıcıya bağlı | Kullanım aracılığıyla |
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 1. **Sağlayıcınızı seçin**: İhtiyaçlarınıza göre seçim yapın
 2. **Önbellekleme yapılandırın**: Sağlayıcıya özgü ayarları yapın

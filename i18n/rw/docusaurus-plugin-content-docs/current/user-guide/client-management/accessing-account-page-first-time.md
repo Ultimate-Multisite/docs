@@ -3,7 +3,7 @@ title: Gukoresha Icyemezo cy'Account Page
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Uburyo nshobora kugera ku ipage yawe y'ubwoko mu gihe cyo gishobora kuba cyo gishobora (Ultimate Multisite)?
+# Uburyo nshobora kugera ku ipage yawe y'ubwoko mu gihe cyo gishobora kuba cyo gishobora (Ultimate Multisite)? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Murakoze ku Ultimate Multisite!
 

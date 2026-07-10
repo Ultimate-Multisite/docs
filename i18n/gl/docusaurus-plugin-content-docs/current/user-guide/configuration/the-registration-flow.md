@@ -3,13 +3,13 @@ title: O Flujo de Registo
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# O Fluxo de Registo (v2)
+# O Fluxo de Registo (v2) {#the-registration-flow-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere a Ultimate Multisite versão 2.x.**_
 
 Os usuarios poden rexistrarse de diferentes maneras na vosa rede. Poden usar o vosso formulario de registo ou un enlace partilhable para un plan preseleccionado. Aquí mostramos como os vuestros clientes poden rexistrarse na vosa rede usando as rutas dispoñibles e que acontece despois de que se registren na vosa rede.
 
-## Usando o Formulario de Registo:
+## Usando o Formulario de Registo: {#using-the-registration-form}
 
 Este é o proceso de registo estándar. Crea unha páxina de registo con un **checkout form** (formulario de caixa) e aquí é onde os vuestros clientes irán para rexistrarse na vosa rede e suscribirse a un plan. Podéis ter varias páxinas de registo, cada unha con un formulario diferente se quere.
 
@@ -35,13 +35,13 @@ Se se registaron con un plan de pago ou se a verificación do correo electrónic
 
 ![Sitio activado con enlace para iniciar sesión no dashboard](/img/frontend/site-activated.png)
 
-## Usando un Enlace Compartible:
+## Usando un Enlace Compartible: {#using-a-shareable-link}
 
 O proceso de registarse usando un enlace compartible é basicamente o mesmo que o formulario de registo, a única diferenza é que ao usar un enlace compartible, os seus clientes poderán tener preseleccionado un producto ou modelo de sitio web no formulario de compra (ve co sección Preselección de produtos e modelos vía parámetros URL) ou tal vez un código de cupón añadido (ve co sección Usando Parámetros URL).
 
 O proceso de registo será o mesmo: deberán completar o seu nome, nome de utilizador, dirección de correo electrónico, nome do sitio web e título, etc... pero o plan ou modelo de sitio web ya estarán preseleccionados para eles.
 
-### Registrarse Usando Pagamentos Manuais:
+### Registrarse Usando Pagamentos Manuais: {#registering-using-manual-payments}
 
 Se non queira usar PayPal, Stripe ou algún otro portal de pagamento ofrecido por Ultimate Multisite ou as súas integracións adicionales, pode usar pagamentos manuais para os seus clientes. Así, poderá crear unha factura para que paguen no procesador de pagamento preferido después de se registaren na súa rede.
 

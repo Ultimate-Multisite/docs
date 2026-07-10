@@ -1,0 +1,117 @@
+---
+title: Planovi s mjerenom potrošnjom
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Metered Plans {#metered-plans}
+
+Dodatak Ultimate Multisite: Metered Plans transformira način na koji naplaćujete svojim korisnicima uvođenjem fleksibilnih mogućnosti naplate prema potrošnji. Umjesto krutih tvrdih ograničenja koja blokiraju korisnike kada ih premaše, omogućite naknade za prekoračenje koje korisnicima automatski naplaćuju dodatnu upotrebu.
+
+## Ključne značajke {#key-features}
+
+* **Naplata prema potrošnji**: Naplaćujte korisnicima na temelju stvarne upotrebe umjesto fiksnih razina
+* **Upravljanje prekoračenjima**: Automatski naplaćujte upotrebu koja premašuje ograničenja plana
+* **Praćenje upotrebe**: Pratite potrošnju korisničkih resursa u stvarnom vremenu
+* **Fleksibilno određivanje cijena**: Postavite prilagođene tarife za različite resurse (pohrana, propusnost, web-mjesta itd.)
+* **Naplata AI tokena**: Pratite i naplaćujte ulazne i izlazne tokene za upotrebu AI-ja na korisničkim podweb-mjestima
+* **Automatsko fakturiranje**: Automatski generirajte račune kada se premaše pragovi upotrebe
+* **Izvješća o upotrebi**: Detaljna analitika upotrebe i izvješćivanje za korisnike i administratore
+
+## Savršeno za {#perfect-for}
+
+* **Pružatelje hostinga**: Ponudite skalabilne planove koji rastu s potrebama korisnika
+* **SaaS platforme**: Naplaćujte na temelju stvarne potrošnje resursa
+* **Agencijske mreže**: Fleksibilni modeli određivanja cijena za klijentske projekte
+* **Reseller hosting**: Omogućite partnerima ponudu cijena temeljenih na upotrebi
+
+## Kako funkcionira {#how-it-works}
+
+1. Konfigurirajte mjerene resurse (prostor na disku, propusnost, broj web-mjesta itd.)
+2. Postavite osnovna ograničenja plana i tarife za prekoračenje
+3. Sustav automatski prati upotrebu kroz vašu mrežu
+4. Kada korisnici premaše ograničenja, izračunavaju se naknade za prekoračenje
+5. Računi se automatski generiraju na temelju obračunskog ciklusa
+6. Korisnici mogu vidjeti svoju upotrebu i nadolazeće naknade u stvarnom vremenu
+
+## Naplata AI tokena {#ai-token-billing}
+
+Verzija 1.1.0 dodaje naplatu AI tokena za mreže koje nude AI značajke putem WordPress AI Client SDK-a. Metered Plans osluškuje dovršene zahtjeve za AI generiranje, bilježi brojeve ulaznih i izlaznih tokena za trenutačno podweb-mjesto te pretvara te tokene u naplativi AI trošak za trenutačno obračunsko razdoblje korisnika.
+
+Upotrijebite naplatu AI tokena kada želite ponuditi AI alate na korisničkim web-mjestima bez preuzimanja nepredvidivih troškova modela. Svaki se zahtjev pripisuje podweb-mjestu, korisniku, članstvu, pružatelju i modelu kako bi administratori mogli revidirati upotrebu, dok korisnici mogu vidjeti kako njihova AI potrošnja utječe na njihov račun.
+
+### Konfigurirajte tarife po tokenu {#configure-per-token-rates}
+
+AI tarife konfiguriraju se po modelu kao zasebne ulazne i izlazne tarife. Tarife se izračunavaju po 1 milijun tokena, što odgovara uobičajenim stranicama s cijenama AI pružatelja.
+
+1. U mrežnoj administraciji otvorite **Multisite Ultimate → Postavke → Metered Plans**.
+2. Omogućite mjerenje AI troška za proizvod ili članstvo koje treba naplaćivati AI upotrebu.
+3. Dodajte unose tarifa modela pomoću ID-ova modela koje vraća vaš connector, kao što su `gpt-4o`, `gpt-4o-mini` ili drugi identifikator modela kompatibilan s OpenAI-jem.
+4. Unesite zasebne vrijednosti **Ulazna tarifa** i **Izlazna tarifa** u valuti svojeg web-mjesta po 1 milijun tokena.
+5. Postavite uključenu dopuštenu AI potrošnju korisnika i ponašanje prekoračenja za plan.
+
+Kada točan ID modela nije konfiguriran, Metered Plans može podudarati prema prefiksu modela. Na primjer, tarifa konfigurirana za `claude-sonnet-4` može se primijeniti na vremenski označene ID-ove modela koji počinju tim prefiksom. Developeri također mogu prilagoditi konačnu tablicu tarifa pomoću filtra [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Podržani AI connectori {#supported-ai-connectors}
+
+Naplata AI tokena radi s connectorima koji emitiraju događaje generiranja WordPress AI Client SDK-a i uključuju upotrebu tokena u metapodatke odgovora. To uključuje obitelj Ultimate Multisite AI connectora dokumentiranu ovdje:
+
+* [Ultimate AI Connector za kompatibilne endpointove](../ultimate-ai-connector-compatible-endpoints/) za API-je kompatibilne s OpenAI-jem, uključujući OpenAI, Mistral, gatewaye kompatibilne s Ollamom i druge pružatelje koji izlažu kompatibilne metapodatke o upotrebi tokena
+* [Ultimate AI Connector za WebLLM](../ultimate-ai-connector-webllm/) za izvorno WebLLM korištenje u pregledniku kada se zahtjevi usmjeravaju kroz tok događaja AI Client SDK-a
+* AI provideri koje koristi [Gratis AI Agent](../gratis-ai-agent/) kada odabrani provider prijavljuje broj tokena upita i dovršetka putem SDK-a
+
+Prilagođeni connectori mogu sudjelovati pokretanjem standardnih događaja `wp_ai_client_before_generate_result` i `wp_ai_client_after_generate_result` s metapodacima o modelu, provideru i upotrebi tokena. Postavke connectora provode se s glavnog web-mjesta na podweb-mjesta kako bi korisnička web-mjesta koristila mrežno odobrene providere i ograničenja.
+
+### Upotreba korisničkog Accounta {#customer-account-usage}
+
+Korisnici vide AI upotrebu uz svoje druge mjerene resurse u području svojeg Accounta. Redak AI troška prikazuje trenutačni zbroj obračunskog razdoblja izveden iz zabilježenih tokena upita i dovršetka, konfiguriranih tarifa modela i bilo koje uključene dopuštene potrošnje u planu.
+
+Ako korisnik ima evidentiran način plaćanja, upotreba iznad uključene dopuštene potrošnje tretira se kao naplativo prekoračenje. Ako je plan konfiguriran za tvrdo zaustavljanje, a korisnik nema dostupan način plaćanja, AI zahtjevi mogu biti blokirani nakon što se dosegne dopuštena potrošnja, a korisnik će biti zatražen da doda podatke o plaćanju prije nastavka.
+
+## Podržani resursi {#supported-resources}
+
+* Pohrana na disku
+* Propusnost/prijenos podataka
+* Broj web-mjesta
+* Broj korisnika
+* Upotreba AI tokena i AI trošak
+* Prilagođene vrste resursa
+
+## Zahtjevi {#requirements}
+
+* Multisite Ultimate 2.0.0 ili noviji
+* WordPress Multisite instalacija
+* PHP 7.4 ili noviji
+
+## Instalacija {#installation}
+
+1. Prenesite datoteke plugina u `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivirajte plugin putem zaslona 'Plugini' u WordPressu
+3. Idite na Multisite Ultimate → Postavke → Metered Plans
+4. Konfigurirajte svoje mjerene resurse i cijene
+5. Omogućite naplatu prema potrošnji za proizvode u uređivaču proizvoda
+
+## Često postavljana pitanja {#frequently-asked-questions}
+
+## Što se događa kada korisnik premaši svoje ograničenje? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Umjesto blokiranja pristupa, sustav prati prekoračenje i dodaje ga njihovoj sljedećoj fakturi na temelju stopa koje ste konfigurirali.
+
+## Mogu li postaviti različite stope prekoračenja za različite proizvode? {#can-i-set-different-overage-rates-for-different-products}
+
+Da, svaki proizvod može imati jedinstvene mjerene resurse i cijene prekoračenja.
+
+## Kako se kupci obavještavaju o upotrebi? {#how-are-customers-notified-about-usage}
+
+Kupci mogu vidjeti svoju trenutačnu upotrebu u svojem Dashboardu i primati neobavezne obavijesti kada se približavaju ograničenjima ili ih premašuju.
+
+## Kako se određuje cijena upotrebe AI tokena? {#how-is-ai-token-usage-priced}
+
+Upotreba AI tokena određuje se prema konfiguriranim stopama ulaza i izlaza modela po 1 milijun tokena. Mjereni planovi množe broj tokena prompta i dovršetka svakog zahtjeva tim stopama, dodaju rezultat trenutačnoj AI potrošnji kupca za obračunsko razdoblje i primjenjuju uključenu količinu plana ili pravila prekoračenja.
+
+## Mogu li i dalje koristiti stroga ograničenja? {#can-i-still-use-hard-limits}
+
+Da, mjereno fakturiranje neobavezno je po proizvodu. Možete kombinirati tradicionalne proizvode sa strogim ograničenjima s mjerenim proizvodima.

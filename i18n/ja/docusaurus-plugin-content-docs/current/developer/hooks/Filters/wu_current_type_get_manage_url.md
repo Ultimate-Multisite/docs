@@ -4,11 +4,11 @@ title: 'フィルタ - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# フィルタ: wu_current_\{$type\}_get_manage_url
+# フィルタ: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 開発者が管理サイトURLパラメータを変更できるようにします。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 | $id | `int` | サイトIDです。 |
 | $site_hash | `string` | サイトハッシュです。 |
 
-### Since
+### Since {#since}
 
 - 2.0.9
 
-### Source
+### Source {#source}
 
 定義されている [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) 行 214
 
-## Returns
+## Returns {#returns}
 変更された管理URLです。

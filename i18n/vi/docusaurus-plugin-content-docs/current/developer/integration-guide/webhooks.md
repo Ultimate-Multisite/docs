@@ -3,11 +3,11 @@ title: Xử lý Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Xử lý Webhook
+# Xử lý Webhook {#webhook-handling}
 
 Tạo các điểm cuối webhook tùy chỉnh để nhận sự kiện từ các dịch vụ bên ngoài và đồng bộ hóa dữ liệu với Ultimate Multisite.
 
-## Điểm cuối Webhook Tùy chỉnh
+## Điểm cuối Webhook Tùy chỉnh {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Lưu ý về bảo mật
+## Lưu ý về bảo mật {#security-considerations}
 
 - Luôn xác minh chữ ký webhook bằng HMAC hoặc một khóa bí mật chung.
 - Sử dụng `permission_callback` trên tuyến đường REST của bạn — không bao giờ đặt nó thành `__return_true` trong môi trường sản xuất (production).

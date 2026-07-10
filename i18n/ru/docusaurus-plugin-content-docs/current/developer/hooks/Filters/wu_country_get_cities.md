@@ -4,11 +4,11 @@ title: Фильтр - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Фильтр: wu_country_get_cities
+# Фильтр: wu_country_get_cities {#filter-wucountrygetcities}
 
 Возвращает список городов для штата в стране.
 
-## Параметры
+## Параметры {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Двухбуквенный ISO-код штата. |
 | $current_country | `\WP_Ultimo\Country\Country` | Экземпляр текущего класса. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.11
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) на строке 146
 
-## Возвращает
+## Возвращает {#returns}
 Отфильтрованный список штатов.

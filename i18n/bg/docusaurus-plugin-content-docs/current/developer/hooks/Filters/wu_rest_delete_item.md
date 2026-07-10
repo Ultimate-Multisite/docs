@@ -4,11 +4,11 @@ title: Филтър - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Филтър: wu_rest_delete_item
+# Филтър: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Филтрира дали е разрешено продължителството на заявката или не.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | Слог на сутността. |
 | $this | `\Base_Manager` | Инстанцията на обекта. |
 
-### От версия
+### От версия {#since}
 
 - 2.0.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) на линия 440

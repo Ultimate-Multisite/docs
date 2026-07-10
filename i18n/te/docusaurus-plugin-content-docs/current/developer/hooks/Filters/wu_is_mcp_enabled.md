@@ -4,22 +4,22 @@ title: Filter - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled
+# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 ప్లగిన్ డెవలపర్‌లు MCP అడాప్టర్‌కు ఒక నిర్దిష్ట స్థితిని (state) నిర్ణయించడానికి వీలు కల్పిస్తుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $enabled | `bool` | MCP అడాప్టర్ ఎనేబుల్ చేయబడిందో లేదో. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 Defined in [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) at line 250
 
 
-## Returns
+## Returns {#returns}

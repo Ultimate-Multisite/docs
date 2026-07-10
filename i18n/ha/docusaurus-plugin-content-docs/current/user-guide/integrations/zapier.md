@@ -3,7 +3,7 @@ title: Saurin Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# شمول دادن Ultimate Multisite با Zapier
+# شمول دادن Ultimate Multisite با Zapier {#integrating-ultimate-multisite-with-zapier}
 
 در یکی از مقالات، ما در مورد [Webhooks](webhooks.md) صحبت کردیم و اینکه چطور می‌توان از آن‌ها برای اتصال به اپلیکیشن‌های شخص ثالث استفاده کرد.
 
@@ -15,7 +15,7 @@ Zapier با بیش از ۵۰۰۰ اپلیکیشن ادغام شده است که 
 
 این امکان‌پذیر است زیرا **Triggers** و **Actions** مربوط به **Ultimate Multisite Zapier** توسط [REST API](https://developer.ultimatemultisite.com/api/docs/) پشتیبانی می‌شوند.
 
-## چطور شروع کنیم
+## چطور شروع کنیم {#how-to-start}
 
 ابتدا، Ultimate Multisite را در لیست اپلیکیشن‌های Zapier جستجو کنید. یا می‌توانید روی [این لینک](https://zapier.com/apps/wp-ultimo/integrations) کلیک کنید.
 
@@ -51,7 +51,7 @@ A fildin URL (URL field), ka saka URL ɗin gaba na network, tare da cikakken tsa
 
 Danna maɓallin **Yes, Continue** (Eh, ci gaba) don tafiya zuwa mataki na gaba. Idan komai ya yi kyau, za ka samu binciken sabon asusunka! Danna don **Continue** (Ci gaba) don samar da wani trigger na sabon lokaci.
 
-## Yadda ake ƙirƙirar Trigger na sabon lokaci (new Trigger)
+## Yadda ake ƙirƙirar Trigger na sabon lokaci (new Trigger) {#how-to-create-a-new-trigger}
 
 Yanzu da aka haɗa asusinka, za ka iya ganin ayyukan da ke nan. Bari mu zaɓi ayyukan **payment_received** don wannan koyarwar.
 
@@ -69,7 +69,7 @@ A wannan matakan, Zapier zai gwada idan iya **samun bayanin da ya shafi wannan a
 
 لە ڕێنمایی ئێمەدا تاقیکردنەوەکە بە سەرکەوتوویی تەواو بووە و زانیاری نیشاندنی پەیامەکە (payload example information) دەگەڕێتەوە. ئەم زانیارییە بۆ ئێمە بەسوودە لە کاتی دروستکردنی اکشنەکاندا. تریگرەکەت ئێستا دروستکراوە و ئامادەیە بۆ پەیوەستکردن بە ئەپڵیکاتەکانی دیکە.
 
-## چۆن اکشن (Actions) دروست بکەین
+## چۆن اکشن (Actions) دروست بکەین {#how-to-create-actions}
 
 اکشنەکان زانیاری لە تریگرەکانی دیکە دەگرنەوە بۆ دروستکردنی نوێی پۆلێنکردن لە تۆڕەکەتدا.
 
@@ -81,7 +81,7 @@ A wannan matakan, Zapier zai gwada idan iya **samun bayanin da ya shafi wannan a
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### ڕێکخستنی اکشن (Setting up the Action)
+### ڕێکخستنی اکشن (Setting up the Action) {#setting-up-the-action}
 
 ئەمە **هەنگاوی سەرەکیی اکشنە**یە و لێرە شتەکان کمیان جیاوازن. یەکەم زانیاری کە دەبنە چاودێری، **Item** (بۆلۆم)ە. Item بریتییە لە **مودێلی زانیاریی تۆڕەکەت** وەک **Customers, Payments, Sites, Emails** و دیکە.
 

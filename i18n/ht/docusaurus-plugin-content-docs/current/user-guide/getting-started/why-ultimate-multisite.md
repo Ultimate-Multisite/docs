@@ -3,11 +3,11 @@ title: Pou kisa Ultimate Multisite la?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Poukisa Ultimate Multisite
+# Poukisa Ultimate Multisite {#why-ultimate-multisite}
 
 Si ou rive nan atik sa a, ou ka te tande ke plugin nou an ka solisyon pou fè ide biznis ou vin reyalite. Nou espere ou gen tout repons ou bezwen nan fen tèks sa a.
 
-## Ki sa Ultimate Multisite ye?
+## Ki sa Ultimate Multisite ye? {#what-is-ultimate-multisite}
 
 Ultimate Multisite se yon plugin WordPress Multisite ki pèmèt ou ofri kliyan yon WaaS (un Sitè kòm yon sèvis). Avèk plugin nou an, ou ka gen plizyè nivo abònman epi fè kliyan yo peye ou yon fîe regilye pou gen yon sit ki bay nan rezo Multisite ou a.
 
@@ -15,7 +15,7 @@ Ultimate Multisite pèmèt ou resevwa paman ou ak diferan gateway (tankou WooCom
 
 E sa se sèl kòmansman paske ou ka elaji fonksyon li ak add-ons ak webhooks.
 
-## Lòt fonksyon
+## Lòt fonksyon {#other-features}
 
 Ultimate Multisite ofri tou:
 
@@ -33,11 +33,11 @@ E plis bagay avanse:
 
 * Search and Replace API: Ou ka tou mete anotasyon sou site templates yo tankou {{site_name}} epi itilize Search and Replace API a pou otomatikman ranplase yo ak enfòmasyon ki bay pa kliyan an apre anrejistrasyon, otomatikman.
 
-## Cas d'Itilizasyon (Use cases)
+## Cas d'Itilizasyon (Use cases) {#use-cases}
 
 Kounye a se lè pou w wè kèk nan cas posib pou Ultimate Multisite.
 
-### Cas 1: Yon Agence
+### Cas 1: Yon Agence {#case-1-an-agency}
 
 Anjeneral, konpèns souvan yon agence la ye nan konsepsyon sit entènèt ki gen aspè tankou wèb yo oswa marketing yo ap lis kòm sèvis adisyonèl.
 
@@ -47,7 +47,7 @@ Kontwòl rèd sou plugins ak tem yo kenbe sou baz chak pwodwi atravè konfigiras
 
 Agencies yo gen an kalme ak Ultimate Multisite la pèmèt yo fè sa ki pi bon pou yo - konsepsyon sit entènèt eksepsyonèl.
 
-### Cas 2: Founisè Niche (Spesyalize)
+### Cas 2: Founisè Niche (Spesyalize) {#case-2-niche-provider}
 
 Gen yon vye dezi ki di, “Fè yon bagay epi fè li byen”. Pou anpil espesyalist, sa vle di kreye yon pwodwi oswa sèvis ki baze sou yon sèl ide prensipal.
 
@@ -57,7 +57,7 @@ Youn nan fonksyon inovatè Ultimate Multisite a, se yon site template: se lè te
 
 Pou yon founisè sit ak sèvis niche, sa bay avantaj san parèy nan kapasite pou ou kreye yon sit ki pare pou itilize imedyatman ak plugin ak konsepsyon espesyalize. Kliyan an sèlman bezwen bay repons minimize pou konplèt sèvis la.
 
-### Cas 3: Wèb Hosting WordPress
+### Cas 3: Wèb Hosting WordPress {#case-3-wordpress-web-hosting}
 
 Gen anpil fason pou w fè hosting sit WordPress, men sa pa janm pi senp tankou ofri espas entènèt pou yon kliyan ak yon vèsyon WordPress ki deja enstale. Sa se paske plizyè desizyon ak konsiderasyon bezwen vin ansanm pou ou bay yon sèvis ki gen sans.
 

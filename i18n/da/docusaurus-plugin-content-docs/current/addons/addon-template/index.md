@@ -3,25 +3,25 @@ title: Add-on Skabelon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller højere
 - PHP 7.4 eller højere
 - Multisite Ultimate plugin (aktiv)
 
-## Installation
+## Installation {#installation}
 
 1. Upload addon-filerne til din `/wp-content/plugins/` mappe
 2. Aktiver plugin'et via 'Plugins'-menuen i WordPress
 3. Konfigurer addon-indstillingerne i netværksadministratoren
 
-## Udvikling
+## Udvikling {#development}
 
-### Opsætning
+### Opsætning {#setup}
 
 ```bash
 # Installer afhængigheder
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Kodemoderniseringsregler
 ```
 
-### Testning
+### Testning {#testing}
 
 Add-onet inkluderer et omfattende testframework:
 
@@ -75,43 +75,43 @@ Add-onet inkluderer et omfattende testframework:
 - **Testdækning**: Konfigureret til at spore kode dækning
 - **Multisite Testning**: Tests kører i multisite miljø
 
-### Kode standarder
+### Kode standarder {#code-standards}
 
 **WordPress Kodningsstandarder**: Håndhævet via PHPCS
 **PHP 7.4+ Kompatibilitet**: Understøtter moderne PHP-funktioner
 **Statisk Analyse**: PHPStan integration til type-tjek
 
-### Byggesystem
+### Byggesystem {#build-system}
 
 - **Asset Processing**: Minificering af CSS/JS filer
 - **Oversættelse**: Generering af POT fil
 - **Pakning**: Arkivoprettelse til distribution
 - **Udviklingsmode**: Uminificerede aktiveringer til debugging
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Addon'et understøtter forskellige konfigurationsmuligheder, som er tilgængelige via netværksadministrator-grænsefladen.
 
-## Hooks og Filters
+## Hooks og Filters {#hooks-and-filters}
 
-### Actions (Handlinger)
+### Actions (Handlinger) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Udløses efter addon-initialisering
 - `ultimate-multisite-addon-template_loaded` - Udløses efter at alle addon-filer er indlæst
 
-### Filters (Filtre)
+### Filters (Filtre) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Ændrer addon-indstillingerne
 - `ultimate-multisite-addon-template_enabled` - Overrider status for aktivering/deaktivering af addon'et
 
-## Licens
+## Licens {#license}
 
 Dette addon er licenseret under GPL v3 eller senere.
 
-## Support
+## Support {#support}
 
 For support og dokumentation besøg [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): omdøb præfiks til ultimate-multisite; opdater tekstdomæne; version opgradering.
 

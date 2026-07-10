@@ -3,7 +3,7 @@ title: Whakamutunga i te Whakawhanaungatanga
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Whakamutunga Membershipu (v2)
+# Whakamutunga Membershipu (v2) {#canceling-a-membership-v2}
 
 _**NOTE WHAKANGA: Ko tēnei tikanga he tino whakamahinga mō Ultimate Multisite v2.x.**_
 

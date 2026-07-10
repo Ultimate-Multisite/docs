@@ -1,120 +1,120 @@
 ---
-title: Ho lula le tšhaba
+title: Tsamaiso ea Lekhetho
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Ho Faka Tsetso (Tax Handling)
+# Tsamaiso ya Lekgetho {#tax-handling}
 
-Ultimate Multisite e na module ya faka tsetso (tax collection) e ntshwiso ea plugin ea rona e ntlha, kaale u na le ho hlokomela ho kolela tsetso ea selo (sales taxes) ka monate oa hau oa plans, packages le litšomo tsa hau, u ka etsa le lalo ha u hloka ho sa u fana le ho sa u fana le add-ons.
+Ultimate Multisite e na le mojule wa pokello ya lekgetho o hahilweng ka hara plugin ya rona ya mantlha, kahoo haeba o hloka ho bokella makgetho a thekiso mererong, diphuthelwaneng le ditshebeletsong tsa hao, o ka etsa jwalo ha bonolo ntle le ho kenya add-ons efe kapa efe.
 
-Ho ba le lipuo tse nang le Europe, re numela **add-on** ea e tsoang eo e ntse e ntsa litšomo (tools) le litšomo tsa ho fana ka ho tsamaea kae le VAT compliance.
+Bakeng sa dikhamphani tse fumanehang Europe, re fana ka **add-on** e eketsang dithulusi le dikarolo ho **support VAT** compliance hamolemo.
 
-Ultimate Multisite ha e fana le ho fana kapa ho fana tsetso ea hau ka ba le government; re fana fa u sa u fana le tsetso tse nang ka monate oa ho etsa lipuo. **U tla nna u hloka ho fana tsetso ea hau.**
+Ultimate Multisite ha e faye kapa ho romela makgetho lebitsong la hao mmusong; re o thusa feela ho bokella makgetho a nepahetseng nakong ya kgwebisano. **O ntse o tla hloka ho romela makgetho ka bowena.**
 
-## Ho Fana Le Ho Tsamaea Tsetso (Enabling Tax Collection)
+## Ho Dumella Pokello ya Lekgetho {#enabling-tax-collection}
 
-Ho tsamaea tsetso ha se na le ho fana ka lalo. Ho fana ka ho tsamaea, u tla ba le ho laola **Ultimate Multisite > Settings > Taxes** le ho fana le Enable Taxes setting.
+Pokello ya lekgetho ha e a dumellwa ka boiketsetso. Ho e dumella, o hloka ho ya ho **Ultimate Multisite > Settings > Taxes** mme o fetolele ho dumella setting ya Enable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Konopo ya Enable Taxes hodimo leqepheng la di-setting tsa Lekgetho](/img/config/settings-taxes-enable.png)
 
-Kea le teng le litšomo tsa sehlopha sa tsetso (tax settings page):
+Mona ke pono e felletseng ya leqephe la di-setting tsa lekgetho:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Leqephe le felletseng la di-setting tsa lekgetho](/img/config/settings-taxes-full.png)
 
-U ka fana ka ho bona litšomo tsa tsetso tsa litšomo tse nang le monate o hau:
+O ka boela wa sheba di-setting tsa lekgetho bakeng sa dihlahiswa ka bonngwe:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Di-setting tsa lekgetho bakeng sa dihlahiswa](/img/config/settings-taxes.png)
 
-### Tsetso e ntse e tsamaea (Tax excluded vs. Tax included)
+### Lekgetho le sa kenyeletswang kgahlanong le lekgetho le kenyeleditsweng {#tax-excluded-vs-tax-included}
 
-Kaale, litšomo tsa lipuo tsa hau hloekileng ha di fana ka ho sa di fane tsetso, e bolela hore tsetso **ha se fana** ka monate oa lipuo. Ha re tseba hore morao o tla hloka ho fana tsetso ka monate oa lipuo ea monate, re etsa tsetso **ka lehle** ka subtotal.
+Ka boiketsetso, ditheko tsohle tsa dihlahiswa tsa hao ha di kenyeletse lekgetho, ho bolelang hore makgetho **ha a kenyeletswe** thekong ya sehlahiswa. Haeba re fumana hore moreki o lokela ho lefa makgetho thekong e itseng, re tla eketsa makgetho **hodima** kakaretso e nyane.
 
-Ha u batla ho ba le tsetso e tsamaea ka monate oa lipuo ea hau, u ka etsa le lalo ka ho fana le Inclusive Tax setting.
+Haeba o rata hore makgetho a kenyeletswe thekong ya sehlahiswa sa hao, o ka etsa jwalo ka ho dumella setting ya **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Mola wa konopo ya Inclusive Tax ka tlasa setting ya Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-E re nna ho **save** litšomo tsa hau tse u etse.
+Se lebale ho **boloka** diphetoho tseo o di entseng.
 
 ###
 
-## Ho Fetang Litšomo (Creating Tax Rates)
+## Ho Etsa Ditekanyo tsa Lekgetho {#creating-tax-rates}
 
-Kaale ea u fana le Tax Collection, u tla hloka ho fetang rates tsa tsetso tsa monate ka monate o hau ka monate o hau ka editor ea litšomo tsa rona.
+Kamora hore o dumelle Pokello ya Lekgetho, o tla hloka ho etsa ditekanyo tsa lekgetho bakeng sa dibaka tse itseng o sebedisa mohlophisi wa rona wa ditekanyo tsa lekgetho.
 
-Ho ka fihla ho ba editor ka ho leka ho ho ka a tsela la "Manage Tax Rates" button ea panel ea tax settings page.
+O ka fihlella mohlophisi ka ho tobetsa konopo ya **Manage Tax Rates** lehlakoreng la leqephe la di-setting tsa Lekgetho.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Sehokelo sa Manage Tax Rates phaneleng ya Tax Rates leqepheng la di-setting](/img/config/settings-taxes-manage-rates.png)
 
-Ka page ea editor ea tax rates, u ka re tloha Tax Rates tse ntlha ho ba leka ho "Add new Row" button.
+Leqepheng la mohlophisi wa ditekanyo tsa lekgetho, o ka eketsa Tax Rates tse ntjha ka ho tobetsa konopo ya **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tafole ya mohlophisi wa ditekanyo tsa lekgetho e nang le konopo ya Add new Row hodimo](/img/config/tax-rates-editor.png)
 
-O tla hloka ho ba leka lehle ea tax rate **title** (e tloha ka invoices). Ho tla u ka utloha **country** (ho hloka), **state**, le **city** (lihi li hloka) se se tla ba leka ho fana ka tax ena. Ho fetileng, re tloha **tax rate in percents**.
+O tla hloka ho fa tekanyo ka nngwe ya lekgetho **sehlooho** (se sebediswang ho di-invoice). Jwale o ka kgetha **naha** (e hlokahalang), **provense,** le **toropo** (tse pedi ke tsa boikgethelo) moo lekgetho lena le tla lefiswa. Qetellong, eketsa **tekanyo ya lekgetho ka diphesente**.
 
-### Tax Categories
+### Dihlopha tsa Lekgetho {#tax-categories}
 
-U ka re tloha Tax Categories tse fapaneng, ho ba leka ho ba leka rates tse fapaneng ho dula dintlha tse fapaneng.
+O ka boela wa etsa Tax Categories tse ngata, ho eketsa ditekanyo tse fapaneng tsa lekgetho bakeng sa mefuta e fapaneng ya dihlahiswa.
 
-Re tloha ho "Add new Tax Category", ho re se lehle ea lela la category ea hau le ho tsamaea "Create".
+Tobetsa ho **Add new Tax Category** , ebe o ngola lebitso la sehlopha sa hao mme o tobetse **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Konopo ya Add new Tax Category hodimo ho mohlophisi wa ditekanyo tsa lekgetho](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Lebala la ho kenya Tax Category Name ho modal ya ho etsa sehlopha](/img/config/tax-categories-create-modal.png)
 
-Ho ba leka ho bona categories, re tloha "Switch" le ho utloha category ea hau e leng seo u batlang ho ba leka ho ba leka rates tse ntlha.
+Ho sheba dihlopha, tobetsa **Switch** mme o kgethe sehlopha seo o batlang ho eketsa makgetho a matjha ho sona.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Konopo ya dropdown ya Switch ho fetola pakeng tsa dihlopha tsa lekgetho](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Dropdown ya kgetho ya sehlopha sa lekgetho e bontshang dihlopha tse teng](/img/config/tax-categories-select.png)
 
-U ka setseba tax category ea dintlha e leng ho ba leka ho ba leka ho ba leka rates tse ntlha ka ho laola **Product edit page** le ho fetola ho Taxes tab.
+O ka seta sehlopha sa lekgetho bakeng sa sehlahiswa se itseng ka ho ya ho **Product edit page** ebe o ya tabeng ya Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Tab ya lekgetho la sehlahiswa e nang le sehlopha sa lekgetho le konopo ya taxable](/img/config/product-taxes.png)
 
-Ka screen eona, u ka re tloha **Is Taxable?** toggle ho ba leka ho fana ka Ultimate Multisite hore e tsebe hore e ka ba leka ho ba leka rates tsa dintlha ena.
+Skirining sona seo, o ka tima konopo ya **Is Taxable?** ho tsebisa Ultimate Multisite hore ha e a lokela ho bokella makgetho sehlahisweng seo se itseng.
 
-## European VAT Support
+## Tshehetso ya VAT ya Yuropa {#european-vat-support}
 
-Le re, o ne a re, re na le fa'aalo e fa'aopo ma le tagata o le tagata e o le EU ua fa'aopo ma le fa'aopo e tatau i se fa'aopo e fesoasoa.
+Jwalo ka ha ho boletswe pejana, re na le add-on e fumanehang bakeng sa moreki ya EU ya nang le ditlhoko tse eketsehileng ka lebaka la melao ya European VAT.
 
-O fe'i o ia masea o VAT (VAT tools) ua fa'aopo ma le fa'aopo e tatau i se fa'aopo e fa'aopo mo se fa'aopo e taua:
+Dithulusi tsa rona tsa VAT di thusa ka dintho tse mmalwa tsa bohlokwa:
 
-  * Fa'aopo e fa'aopo a le rates o VAT o le EU;
+  * Ho kenya ditekanyo tsa EU VAT ha bonolo;
 
-  * Le fa'aopo o le VAT Number (VAT Number) ma le fa'aopo o le validation - ma le reverse charging mo mga entity e tatau i se VAT exemption (o le tagata o le companies e tatau i se VAT numbers).
+  * Pokello le netefatso ya Nomoro ya VAT - le tefiso e kgutlisetswang morao bakeng sa ditheo tse lokolotsweng ho VAT (jwalo ka dikhamphani tse nang le dinomoro tsa VAT tse sebetsang);
 
-Mo fa'aopo o lona add-on, ia fesoasoani i **Ultimate Multisite > Settings** ma fa'aopo i le link o le sidebar e fa'aopo a le **Check our Add-ons**.
+Ho kenya add-on eo, ya ho **Ultimate Multisite > Settings** ebe o tobetsa sehokelo sa lehlakore sa **Check our Add-ons**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Lehlakore la leqephe la Settings le nang le sehokelo sa Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-O fa'aopo i se fa'aopo e tatau i le add-on o ia masea. I lona, o fa'aopo mo le **Ultimate Multisite VAT add-on** ma fa'aopo i ia.
+O tla fetisetswa leqepheng la rona la add-ons. Moo, o ka batla **Ultimate Multisite VAT add-on** mme wa e kenya.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Screenshot unavailable: Tile ya VAT add-on leqepheng la Add-ons -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot unavailable: Puisano ya Install Now ya VAT add-on -->
 
-O fa'aopo mo **Network Admin > Plugins** ma fa'aopo i le add-on o ia masea mo le tagata o le network (network-wide).
+Ebe, o ya ho **Network Admin > Plugins** mme o activate add-on eo ho netweke yohle.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Screenshot unavailable: Ketso ya Network Activate bakeng sa VAT add-on leqepheng la Plugins -->
 
-O fa'aopo i se fa'aopo e tatau i le **Tax Settings tab**, o fa'aopo i se mga opsiona e fesoasoa ua fa'aopo. Fa'aopo i le opsiona o **Enable VAT Support** mo le fa'aopo a le new VAT tools. O fa'aopo mo le **save** o lona settings!
+Haeba o kgutlela ho **Tax Settings tab** , o tla bona dikgetho tse ntjha tse fumanehang. Fetolela kgetho ya **Enable VAT Support** ho dumella dithulusi tse ntjha tsa VAT. Se lebale ho **boloka** di-setting tsa hao!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Screenshot unavailable: Konopo ya Enable VAT Support ho di-setting tsa Lekgetho kamora ho activate add-on -->
 
-### Fa'aopo i se rates o VAT Tax
+### Ho Hula Ditekanyo tsa Lekgetho la VAT {#pulling-on-vat-tax-rates}
 
-O fe'i o ia masea o lona integration ua fa'aopo ma le fa'aopo e tatau i se mga rates o VAT mo mga member states o le EU. O fa'aopo i lea mo le fa'aopo a le tax rates editor page i le fa'aopo a le Enable EU VAT support.
+E nngwe ya dithulusi tseo kopanyo ya rona e di eketsang ke bokgoni ba ho kenya ditekanyo tsa lekgetho bakeng sa dinaha tseo e leng ditho tsa EU. Seo se ka etswa ka ho etela leqephe la mohlophisi wa ditekanyo tsa lekgetho kamora ho dumella tshehetso ya EU VAT.
 
-A tsela le fa'aopo i le VAT pulling options o le fa'aopo i le fa'aopo. O le fa'aopo o le fa'aopo, e fesoasoani atu ia te oe e seleisa se tasi o le rate type ma e klikia i le **Update EU VAT Rates** button, o le a mafai ona fa'aopo ai ma fa'aopo ai le table ma le tax rates mo tasi tasi o le member state o le EU. O le a lelei, o le a mafai ona save fo'i.
+Botlaseng ba leqephe, o tla bona dikgetho tsa ho hula VAT. Ho kgetha mofuta wa tekanyo le ho tobetsa konopo ya **Update EU VAT Rates** ho tla hula le ho tlatsa tafole ka boiketsetso ka ditekanyo tsa lekgetho bakeng sa naha ka nngwe eo e leng setho sa EU. Ebe, o hloka feela ho e boloka.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Konopo ya Update EU VAT Rates botlaseng ba mohlophisi wa ditekanyo tsa lekgetho](/img/config/tax-rates-vat-pull.png)
 
-O le a mafai ona fa'aopo ai i le values a le fa'aopo i le fa'aopo. Mo le a tatou fa'aopo ai, o le a mafai ona fa'aopo ai le line o le table lea e oe e talia ma klikia mo save i le mga values sili.
+O ka boela wa hlophisa boleng kamora ho bo hula. Ho etsa jwalo, hlophisa feela mola wa tafole oo o o hlokang mme o tobetse ho boloka boleng bo botjha.
 
-### VAT Validation
+### Netefatso ya VAT {#vat-validation}
 
-Pe lava o se VAT support, Ultimate Multisite o le a fa'aopo ai se field tasi i le checkout form, i le a lelei o le billing address field. O le field o le a mafai ona fa'aopo mo mga customer e fa'aopo i le EU.
+Ha tshehetso ya VAT e dumelletswe, Ultimate Multisite e tla eketsa lebala le eketsehileng foromong ya checkout, ka tlasa lebala la aterese ya billing. Lebala le tla hlaha feela bakeng sa bareki ba fumanehang EU.
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+<!-- Screenshot unavailable: Lebala la Nomoro ya VAT foromong ya checkout ya frontend ka tlasa aterese ya billing -->
 
-O le a Ultimate Multisite o le a validate ai le VAT Number ma o le a fa'aopo ai se tasi o le reverse charge mechanism ma o le a setai le tax rate i le 0% mo lona order.
+Ultimate Multisite e tla netefatsa Nomoro ya VAT, mme haeba e kgutla e le e nepahetseng, mokgwa wa reverse charge o a sebediswa mme sekhahla sa lekgetho se behwa ho 0% odareng eo.

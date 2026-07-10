@@ -4,15 +4,15 @@ title: Filter - wu_element_maybe_extract_arguments
 sidebar_label: wu_element_maybe_extract_arguments
 _i18n_hash: 89a723830b7999d35c5a7a7531260d20
 ---
-# Фільтр: wu_element_maybe_extract_arguments
+# Фільтр: wu_element_maybe_extract_arguments {#filter-wuelementmaybeextractarguments}
 
 Додає загальний фільтр, який дозволяє розробникам розширити цей парсер для роботи з додатковими конструкторами або плагінами.
 
-### З версії
+### З версії {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено у [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L584) на рядку 584
 
-## Повертає
+## Повертає {#returns}

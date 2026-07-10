@@ -1,15 +1,17 @@
 ---
-title: የማዋሃድ መመሪያ
+title: የውህደት መመሪያ
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# የኢንተግሬሽን መመሪያ
+# የማዋሃድ መመሪያ {#integration-guide}
 
-ይህ መመሪያ ከUltimate Multisite ጋር በተለመዱ የኢንተግሬሽን ስልቶች ላይ መረጃ ይሰጣል፤ ይህም የውጭ አገልግሎቶችን ከማገናኘት፣ የራሳቸውን የክፍያ መግቢያዎች (payment gateways) መገንባት፣ እና webhooksን መያዝን ያካትታል።
+ይህ መመሪያ ከUltimate Multisite ጋር የተለመዱ የማዋሃድ ንድፎችን ይሸፍናል፣ ወደ ውጫዊ አገልግሎቶች መገናኘትን፣ ብጁ የክፍያ መግቢያዎችን መገንባትን፣ እና webhooks መቆጣጠርን ጨምሮ።
 
-## የCRM ኢንተግሬሽን
+ለተለየ የተከራይ መሠረተ ልማት፣ ለሉዓላዊ ተከራይ መጀመሪያ ማዘጋጀት፣ የማዛወር ማረጋገጫ፣ SSO፣ እና የማፍረስ መመሪያ [የብዙ ተከራይነት ማዋሃድ](./multi-tenancy) ይመልከቱ።
 
-አዳዲስ ደንበኞች ሲመዘገቡ የደንበኛ መረጃን ወደ CRMዎ ማመሳሰል (Sync):
+## CRM ማዋሃድ {#crm-integration}
+
+አዲስ ደንበኞች ሲመዘገቡ የደንበኛ ውሂብን ወደ የእርስዎ CRM ያመሳስሉ፦
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## የትንተና (Analytics) ኢንተግሬሽን
+## የትንታኔ ማዋሃድ {#analytics-integration}
 
-በደንበኛ የህይወት ዑደት ውስጥ ያሉ ቁልፍ የንግድ ክስተቶችን ይከታተሉ:
+በደንበኛ የሕይወት ዑደት ላይ ቁልፍ የንግድ ክስተቶችን ይከታተሉ፦
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ቀጣይ እርምጃዎች
+## ቀጣይ እርምጃዎች {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — የራሳቸውን የክፍያ መግቢያ (payment gateway) ይገንቡ
-- [Webhook Handling](./webhooks) — የራሳቸውን custom webhook endpoints ይፍጠሩ
+- [ብጁ የGateway ልማት](./custom-gateway) — የራስዎን የክፍያ መግቢያ ይገንቡ
+- [Webhook አያያዝ](./webhooks) — ብጁ webhook endpoints ይፍጠሩ
+- [የብዙ ተከራይነት ማዋሃድ](./multi-tenancy) — ከሉዓላዊ ተከራይ የሕይወት ዑደት ፍሰቶች ጋር ያዋህዱ

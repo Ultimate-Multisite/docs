@@ -3,7 +3,7 @@ title: Sunrise File Error
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ఫైల్ ఇన్‌స్టాల్ చేయడంలో Error
+# Sunrise ఫైల్ ఇన్‌స్టాల్ చేయడంలో Error {#error-installing-the-sunrise-file}
 
 sunrise.php ఫైల్ అనేది WordPress బూట్‌స్ట్రాప్ అవుతున్నప్పుడు వెతికే ఒక ప్రత్యేక ఫైల్. WordPress ఈ sunrise.php ఫైల్‌ను గుర్తించాలంటే, అది **wp-content ఫోల్డర్** లో ఉండాలి.
 

@@ -3,7 +3,7 @@ title: Membership Management
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Üyelikleri Yönetmek
+# Üyelikleri Yönetmek {#managing-memberships}
 
 Ultimate Multisite'ta üyelikleri yönetebilir ve ağınızdaki tüm aboneliklere erişebilirsiniz. Planlar ve ürünler, site sayısı, faturalandırma miktarı ve sıklığı, ödeme geçmişi ve zaman damgaları gibi abonelik detaylarını inceleyebilir ve düzenleyebilirsiniz.
 

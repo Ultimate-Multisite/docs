@@ -1,119 +1,120 @@
 ---
-title: Verot käsittely
+title: Verojen käsittely
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Verojen käsittely
+# Verojen käsittely {#tax-handling}
 
-Ultimate Multisite -lisäosa sisältää verojen keräämisen moduulin ytimeenme rakennettuna, joten jos tarvitset myyntiveroja suunnitelmiisi, paketteihisi ja palveluihisi, voit tehdä sen helposti ilman lisäosia.
+Ultimate Multisite sisältää verojen keräysmoduulin ydinpluginissamme, joten jos sinun täytyy kerätä myyntiveroja paketeistasi, kokonaisuuksistasi ja palveluistasi, voit tehdä sen helposti ilman lisäosien asentamista.
 
-Euroopassa sijaitseville yrityksille tarjoamme **lisäosan**, joka lisää työkaluja ja ominaisuuksia parempaan **arvonlisäveron (VAT)** noudattamisen tukemiseen.
+Euroopassa sijaitseville yrityksille tarjoamme **lisäosan**, joka lisää työkaluja ja ominaisuuksia **ALV**-vaatimustenmukaisuuden parempaan tukemiseen.
 
-Ultimate Multisite ei jätä tai maksa veroja puolestasi hallitukselle; me autamme sinua vain keräämään asianmukaiset verot tapahtuman yhteydessä. Sinun on silti maksettava verot itse.
+Ultimate Multisite ei ilmoita tai tilitä veroja puolestasi viranomaisille; autamme sinua vain keräämään asianmukaiset verot tapahtuman yhteydessä. **Sinun täytyy silti tilittää verot itse.**
 
-## Verojen mahdollistaminen
+## Verojen keräämisen käyttöönotto {#enabling-tax-collection}
 
-Verojen kerääminen ei ole oletuksena käytössä. Sen aktivoimiseksi sinun täytyy mennä **Ultimate Multisite > Asetukset > Verot** ja kytkeä päälle "Enable Taxes" -asetus.
+Verojen kerääminen ei ole oletuksena käytössä. Ottaaksesi sen käyttöön sinun täytyy siirtyä kohtaan **Ultimate Multisite > Asetukset > Verot** ja ottaa käyttöön Ota verot käyttöön -asetus.
 
-![Verojen aktivointikytkin verojen asetussivun yläosassa](/img/config/settings-taxes-enable.png)
+![Ota verot käyttöön -kytkin Veroasetukset-sivun yläosassa](/img/config/settings-taxes-enable.png)
 
-Tässä on koko näkymä verojen asetussivulta:
+Tässä on koko näkymä veroasetussivusta:
 
-![Verojen asetukset koko sivu](/img/config/settings-taxes-full.png)
+![Veroasetusten koko sivu](/img/config/settings-taxes-full.png)
 
-Voit myös tarkastella yksittäisten tuotteiden verotilauksia:
+Voit myös tarkastella yksittäisten tuotteiden veroasetuksia:
 
-![Tuotteiden verotilaukset](/img/config/settings-taxes.png)
+![Tuotteiden veroasetukset](/img/config/settings-taxes.png)
 
-### Verotus poissuljettu vs. Verotus sisältynyt
+### Veroton vs. verollinen {#tax-excluded-vs-tax-included}
 
-Oletuksena kaikki tuotteidesi hinnat ovat verojen ulkopuolella, mikä tarkoittaa, että verot **eivät ole sisällytetty** tuotteen hintaan. Jos päädymme päätelmään, että asiakkaan tulisi maksaa veroja tietystä ostoksesta, lisätään verot **summan päälle**.
+Oletuksena kaikki tuotteidesi hinnat ovat verottomia, mikä tarkoittaa, että verot **eivät sisälly** tuotteen hintaan. Jos määritämme, että asiakkaan tulee maksaa veroja tietystä ostosta, lisäämme verot **välisumman päälle**.
 
-Jos haluat verojen sisällyttämisen tuotteen hintaan, voit tehdä sen aktivoimalla "Inclusive Tax" -asetuksen.
+Jos haluat, että verot sisältyvät tuotteesi hintaan, voit tehdä sen ottamalla käyttöön **Sisältyvä vero** -asetuksen.
 
-![Veron sisällyttäminen kytkin Enable Taxes -asetuksen alapuolella](/img/config/settings-taxes-inclusive.png)
+![Sisältyvä vero -kytkinrivi Ota verot käyttöön -asetuksen alla](/img/config/settings-taxes-inclusive.png)
 
-Älä unohda **tallentaa** tekemäsi muutokset.
+Älä unohda **tallentaa** tekemiäsi muutoksia.
 
 ###
 
-## Verotason luominen
+## Verokantojen luominen {#creating-tax-rates}
 
-Kun olet aktivoimassa verojen keräämistä, sinun on luotava verotasoja tiettyihin sijainteihin käyttämällä verotasoeditoria.
+Kun olet ottanut verojen keräämisen käyttöön, sinun täytyy luoda verokantoja tietyille sijainneille verokantojen muokkaimellamme.
 
-Voit päästä editoriin klikkaamalla sivupalkissa verovelon asetusten sivun **Hallinnoi verotasoja** -painiketta.
+Pääset muokkaimeen napsauttamalla **Hallitse verokantoja** -painiketta Veroasetukset-sivun sivupalkissa.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Hallitse verokantoja -linkki asetussivun Verokannat-paneelissa](/img/config/settings-taxes-manage-rates.png)
 
-Verotasoeditorisivulla voit lisätä uusia verotasoja klikkaamalla **Lisää uusi rivi** -painiketta.
+Verokantojen muokkaussivulla voit lisätä uusia verokantoja napsauttamalla **Lisää uusi rivi** -painiketta.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Verokantojen muokkaustaulukko, jonka yläosassa on Lisää uusi rivi -painike](/img/config/tax-rates-editor.png)
 
-Sinun täytyy antaa jokaiselle verotasolle **otsikko** (käytetään laskuissa). Sen jälkeen voit valita **maan** (pakollinen), **maan**, ja **kaupungin** (molemmat valinnaisia), jossa tämä verotus veloitetaan. Lopuksi lisää **veroprosentti**.
+Sinun täytyy antaa jokaiselle verokannalle **otsikko** (käytetään laskuissa). Sen jälkeen voit valita **maan** (pakollinen), **osavaltion/alueen** ja **kaupungin** (molemmat valinnaisia), joissa tätä veroa veloitetaan. Lisää lopuksi **verokanta prosentteina**.
 
-### Verotyyppit
-Voit myös luoda useita verotyyppejä, jotta voit lisätä eri verotasoja eri tuotteille.
+### Verokategoriat {#tax-categories}
 
-Klikkaa **Lisää uusi verotyyppi** -painiketta, kirjoita tyyppisi nime ja paina **Luo**.
+Voit myös luoda useita verokategorioita, jotta voit lisätä erilaisia verokantoja erilaisille tuotteille.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+Napsauta **Lisää uusi verokategoria** , kirjoita sitten kategorian nimi ja paina **Luo**.
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Lisää uusi verokategoria -painike verokantojen muokkaimen yläosassa](/img/config/tax-categories-add.png)
 
-Tyypeittäin selaamaan voit klikata **Vaihtoehto** ja valita tyypin, johon haluat lisätä uusia verotasoja.
+![Verokategorian nimi -syöttökenttä kategorian luontimodaalissa](/img/config/tax-categories-create-modal.png)
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+Selaa kategorioita napsauttamalla **Vaihda** ja valitsemalla kategoria, johon haluat lisätä uusia veroja.
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Vaihda-pudotusvalikkopainike verokategorioiden vaihtamista varten](/img/config/tax-categories-switch.png)
 
-Voit asettaa tietyn tuotteen verotyyppiä siirtyä **Tuotteen muokkaussivulle** ja sitten **Verot** -välilehdelle.
+![Verokategorian valitsin -pudotusvalikko, jossa näkyvät käytettävissä olevat kategoriat](/img/config/tax-categories-select.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+Voit asettaa tietyn tuotteen verokategorian siirtymällä **Tuotteen muokkaussivulle** ja sitten Verot-välilehdelle.
 
-Samaa ruudulla voit kytkeä pois päältä **Onko verotettava?** -kytkimen, jotta Ultimate Multisite tietää, että se ei veloita verotietoja kyseisestä tuotteesta.
+![Tuotteen verot -välilehti, jossa on verokategoria ja veronalainen-kytkin](/img/config/product-taxes.png)
 
-## Euroopan arvonlisäveron (VAT) tuki
+Samalla näytöllä voit poistaa **Onko veronalainen?** -kytkimen käytöstä, jotta Ultimate Multisite tietää, ettei sen tule kerätä veroja kyseisestä tuotteesta.
 
-Kuten aiemmin mainittu, meillä on lisäosa asiakkaille EU:n maissa, joilla on lisävaatimuksia eurooppalaisen arvonlisäveron säännösten vuoksi.
+## Euroopan ALV-tuki {#european-vat-support}
 
-Arvonlisäveron työkalumme auttavat muutamassa tärkeässä asyylissä:
+Kuten aiemmin mainittiin, meillä on saatavilla lisäosa EU:ssa oleville asiakkaille, joilla on Euroopan ALV-säädöksistä johtuvia lisävaatimuksia.
 
-  * EU-arvonlisäveroprosenttien helppo lataaminen;
+ALV-työkalumme auttavat muutamassa tärkeässä asiassa:
 
-  * Arvonlisänumeroiden kerääminen ja validointi – sekä kääntövero (reverse charging) arvonlisäveroilta vapaista yrityksistä (kuten yrityksille, joilla on kelvollisia arvonlisänumeroita).
+  * EU:n ALV-kantojen helppo lataaminen;
 
-Lisäosan asennusta varten siirry **Ultimate Multisite > Settings** -sivulle ja napsauta sitten sivupalkin linkkiä **Check our Add-ons**.
+  * ALV-numeron kerääminen ja validointi – sekä käännetty verovelvollisuus ALV-vapaille tahoille (kuten yrityksille, joilla on voimassa olevat ALV-numerot);
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+Asentaaksesi tämän lisäosan siirry kohtaan **Ultimate Multisite > Asetukset** ja napsauta sitten **Tarkista lisäosamme** -sivupalkkilinkkiä.
 
-Sinut ohjataan lisäosan sivuille. Siellä voit etsiä **Ultimate Multisite VAT add-on** -lisäosan ja asentaa sen.
+![Asetussivun sivupalkki, jossa on Tarkista lisäosamme -linkki](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+Sinut ohjataan lisäosasivullemme. Siellä voit etsiä **Ultimate Multisite ALV -lisäosan** ja asentaa sen.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Kuvakaappaus ei saatavilla: ALV-lisäosan ruutu Lisäosat-sivulla -->
 
-Sitten siirry **Network Admin > Plugins** -sivulle ja aktivoi se lisäosa koko verkossa.
+<!-- Kuvakaappaus ei saatavilla: ALV-lisäosan Asenna nyt -valintaikkuna -->
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+Siirry sitten kohtaan **Verkon ylläpito > Lisäosat** ja aktivoi kyseinen lisäosa koko verkossa.
 
-Jos palaat takaisin **Tax Settings** -välilehdelle, näet uusia vaihtoehtoja saatavilla. Kytke päälle **Enable VAT Support** -vaihtoehdon aktivoimalla uudet arvonlisäveron työkalut. Älä unohda **tallentaa** asetuksesi!
+<!-- Kuvakaappaus ei saatavilla: Verkkoaktivointi-toiminto ALV-lisäosalle Lisäosat-sivulla -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+Jos palaat **Veroasetukset-välilehdelle** , näet uusia vaihtoehtoja. Ota uudet ALV-työkalut käyttöön kytkemällä **Ota ALV-tuki käyttöön** -vaihtoehto päälle. Älä unohda **tallentaa** asetuksiasi!
 
-### Arvonlisäveroprosenttien haku
+<!-- Kuvakaappaus ei saatavilla: Ota ALV-tuki käyttöön -kytkin Veroasetuksissa lisäosan aktivoinnin jälkeen -->
 
-Yksi työkaluista, jonka integrointi lisää, on kyky ladata arvonlisäveroprosentit EU:n jäsenmaiden osalta. Tämä voidaan tehdä vierailemalla veroprosenttien muokkaussivulla sen jälkeen, kun olet aktivoimassa EU VAT Supportia.
+### ALV-verokantojen noutaminen {#pulling-on-vat-tax-rates}
 
-Sivun alare näet arvosopimusten hakuvaihtoehdot (VAT pulling options). Valitsemalla verotason tyyppiä ja napsauttamalla **Update EU VAT Rates** -painiketta taulukko avautuu ja täytetään automaattisesti EU:n jokaisen jäsenmaan verokertoimilla. Sen jälkeen sinun tarvitsee vain tallentaa muutokset.
+Yksi integraatiomme lisäämistä työkaluista on mahdollisuus ladata EU:n jäsenvaltioiden verokannat. Tämä voidaan tehdä käymällä verokantojen muokkaussivulla EU:n ALV-tuen käyttöönoton jälkeen.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+Sivun alareunassa näet ALV:n noutovaihtoehdot. Kannan tyypin valitseminen ja **Päivitä EU:n ALV-kannat** -painikkeen napsauttaminen noutaa ja täyttää taulukon automaattisesti kunkin EU:n jäsenvaltion verokannoilla. Sen jälkeen sinun tarvitsee vain tallentaa se.
 
-Voit myös muokata arvoja hakemisen jälkeen. Tekemiseksi riittää, että muokkaat tarvitsemasi taulukon riviä ja napsautat tallentaaksesi uudet arvot.
+![Päivitä EU:n ALV-kannat -painike verokantojen muokkaimen alaosassa](/img/config/tax-rates-vat-pull.png)
 
-### VAT-vahvistus (VAT Validation)
+Voit myös muokata arvoja niiden noutamisen jälkeen. Tee se yksinkertaisesti muokkaamalla tarvitsemaasi taulukon riviä ja napsauttamalla tallennusta uusille arvoille.
 
-Kun VAT-tuki on käytössä, Ultimate Multisite lisää lisäkentän kassaportaaliin maksutietojen kentän alle. Tämä kenttä näkyy vain EU:n asukkaille.
+### ALV-validointi {#vat-validation}
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+Kun ALV-tuki on käytössä, Ultimate Multisite lisää checkout-lomakkeeseen lisäkentän laskutusosoitekentän alle. Kenttä näytetään vain EU:ssa sijaitseville asiakkaille.
 
-Ultimate Multisite vahvistaa sen jälkeen VAT-numeron ja jos se palaa kelvolliseksi, käänteinen velvoitteen mekanismi (reverse charge mechanism) sovelletaan ja verotaso asetetaan 0 prosenttiin kyseiselle tilaukselle.
+<!-- Kuvakaappaus ei saatavilla: ALV-numero-kenttä frontend-checkout-lomakkeessa laskutusosoitteen alla -->
+
+Ultimate Multisite vahvistaa sitten ALV-numeron, ja jos se todetaan kelvolliseksi, käännetyn verovelvollisuuden mekanismia sovelletaan ja kyseisen tilauksen verokannaksi asetetaan 0 %.

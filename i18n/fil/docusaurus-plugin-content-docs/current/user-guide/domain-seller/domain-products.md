@@ -3,11 +3,11 @@ title: Mga Produkto at Pagpepresyo ng Domain
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domain Products at Pagpepresyo
+# Domain Products at Pagpepresyo {#domain-products-and-pricing}
 
 Ang mga domain product ay kung paano mo kokontrolin ang pagpepresyo, TLDs, WHOIS privacy, at ang pagpili ng provider. Ang bawat domain product ay isang standard Multisite Ultimate product na may dagdag na tab na **Domain Settings**.
 
-## Paglikha ng domain product
+## Paglikha ng domain product {#creating-a-domain-product}
 
 1. Pumunta sa **Network Admin › Ultimate Multisite › Products**
 2. I-click ang **Add New**
@@ -17,13 +17,13 @@ Ang mga domain product ay kung paano mo kokontrolin ang pagpepresyo, TLDs, WHOIS
 
 Makikita ang mga domain product na may kulay lila na **Domain** badge sa listahan ng produkto at maaari itong i-filter gamit ang **Domain Products** tab.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Piliin kung anong registrar ang magha-handle ng pagpaparehistro para sa product na ito. Default itong gagamit ng global **Default provider** na itinakda sa Domain Seller settings.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Iwanang blangko para makagawa ng **catch-all product** na magagamit sa lahat ng TLD na hindi tugma sa ibang product.
 
@@ -31,7 +31,7 @@ Maglagay ng comma-separated list ng TLDs (hal., `.com, .net, .org`) para makagaw
 
 **Paano gumagana ang product matching:** Kapag naghahanap ang isang customer ng domain, pipiliin ng addon ang pinaka-specific na tumutugma na product. Ang product na may `.com` sa TLD list nito ay mas may prayoridad kaysa sa catch-all product. Kung walang TLD-specific product na tumutugma, gagamitin ang catch-all. Kung walang products, hindi ipapakita ang domain search.
 
-### Markup type
+### Markup type {#markup-type}
 
 Tatlong mode ang kumokontrol kung paano kinakalkula ang iyong retail price mula sa wholesale cost:
 
@@ -41,11 +41,11 @@ Tatlong mode ang kumokontrol kung paano kinakalkula ang iyong retail price mula 
 | **Fixed markup** | Nagdaragdag ng fixed dollar amount. Ang $5 markup sa $10 domain ay magbibigay ng $15. |
 | **Fixed price** | Hindi pinapansin ang wholesale cost. Palaging sisingilin ang halaga na iyong inilagay. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 I-enable ito para mag-alok ng discounted first-year price. Magtakda ng hiwalay na **Introductory price** (ang presyo sa unang taon) kasabay ng regular na **Renewal price** (taon 2 pataas). Makikita ng customer ang dalawang presyo na ipinapakita habang nagche-checkout para malaman nila kung ano ang aasahan sa renewal.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Kumokontrol ito kung ang WHOIS privacy protection ay iaalok para sa mga domain na narehistro sa pamamagitan ng product na ito.
 
@@ -59,7 +59,7 @@ Para sa Namecheap, ang WHOIS privacy ay gumagamit ng WhoisGuard (palaging libre)
 
 ---
 
-## TLD import at sync
+## TLD import at sync {#tld-import-and-sync}
 
 Nagpapakita ang mga domain product ng real-time wholesale pricing na kinukuha mula sa konektadong provider. Para gumana ito, kailangang i-import ang mga TLD.
 
@@ -70,7 +70,7 @@ Pagkatapos mag-sync, pumunta sa anumang Domain Settings tab ng domain product at
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Ang mga domain renewal ay nakatali sa membership status ng customer:
 
@@ -90,7 +90,7 @@ Email template IDs para sa domain lifecycle events:
 
 ---
 
-## Admin: Manual domain registration
+## Admin: Manual domain registration {#admin-manual-domain-registration}
 
 Para magparehistro ng domain para sa isang customer nang hindi sila dumadaan sa checkout:
 

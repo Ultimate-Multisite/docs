@@ -3,13 +3,13 @@ title: Konstruksi Integrasi Registrar Kustom
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Özel Bir Registrar Entegrasyonu Oluşturma
+# Özel Bir Registrar Entegrasyonu Oluşturma {#building-a-custom-registrar-integration}
 
 Domain Seller addon'ı bir **Entegrasyon Kaydı (Integration Registry)** yapısını kullanır. Her registrar, `Domain_Selling_Capability` arayüzünü uygulayan ve `wu_domain_seller_register_capabilities` action hook'u üzerinden kendini kaydeden bir PHP sınıfıdır.
 
 Bu rehber, özel bir registrar'ı sisteme nasıl bağlayacağınızı gösteriyor.
 
-## Arayüz (The interface)
+## Arayüz (The interface) {#the-interface}
 
 Sınıfınızın `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` arayüzünü uygulaması ve `WP_Ultimo\Integrations\Base_Capability_Module` sınıfından miras alması gerekir.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opsiyonel metotlar
+### Opsiyonel metotlar {#optional-methods}
 
 Ek özellikler açmak için bunları uygulayın. Addon, desteği `method_exists()` ile algılar:
 
@@ -81,7 +81,7 @@ Ek özellikler açmak için bunları uygulayın. Addon, desteği `method_exists(
 | `get_epp_code(string $domain_name): array` | Domain transferi (giden) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domain transferi (gelen) |
 
-### Dönüş Değeri Kuralları
+### Dönüş Değeri Kuralları {#return-value-convention}
 
 Tüm metotlar, en az bir `success` anahtarı içeren bir dizi döndürür:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Okunabilir hata mesajı'];
 
 ---
 
-## Yeteneğinizi Kaydetme
+## Yeteneğinizi Kaydetme {#registering-your-capability}
 
 Sınıfınızı `wu_domain_seller_register_capabilities` action'ını kullanarak kaydedin:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Sihirbaz'a Kimlik Bilgisi Alanları Ekleme
+## Sihirbaz'a Kimlik Bilgisi Alanları Ekleme {#adding-credential-fields-to-the-wizard}
 
 Yöneticilerin kurulum sihirbazı üzerinden kimlik bilgilerini girmesine izin vermek için entegrasyonunuzu kaydedin:
 
@@ -137,7 +137,7 @@ Kimlik bilgileri, alan ID'leri anahtar olarak kullanılarak ağ seçenekleri (ne
 
 ---
 
-## Kayıt Sonrası İşlemler İçin Hook'lar
+## Kayıt Sonrası İşlemler İçin Hook'lar {#hooks-for-post-registration-actions}
 
 Webhook'ları tetiklemek, hizmet sağlamak (provisioning), bildirimler veya CRM güncellemeleri yapmak için bu action'ları kullanın:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Loglama
+## Loglama {#logging}
 
 `wu_log_add()` kullanarak sağlayıcınıza özel log kanalına yazın:
 

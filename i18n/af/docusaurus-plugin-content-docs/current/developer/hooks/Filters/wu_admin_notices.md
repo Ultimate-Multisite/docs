@@ -4,11 +4,11 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 Laat ontwikkelaars die admin-kennisgewings wat deur Ultimate Multisite bygevoeg is, filter.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Laat ontwikkelaars die admin-kennisgewings wat deur Ultimate Multisite bygevoeg 
 | $filter | `string` | Indien die afgeskryfbare kennisgewings gefilter is. |
 | $dismissed_messages | `array` | Lys van afgeskryfde kennisgewingssleutels. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Gebewe in [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) op lyn 121
 
 
-## Gee terug
+## Gee terug {#returns}

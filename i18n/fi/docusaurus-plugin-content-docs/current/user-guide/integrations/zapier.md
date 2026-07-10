@@ -3,7 +3,7 @@ title: Zapier-integraatio
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisiten integrointi Zapierin kanssa
+# Ultimate Multisiten integrointi Zapierin kanssa {#integrating-ultimate-multisite-with-zapier}
 
 Yhdessä artikkelissa kävimme läpi [Webhooks](webhooks.md) -mekanismeista ja siitä, miten niitä voidaan käyttää kolmannen osapuolen sovellusten integroimiseen.
 
@@ -15,7 +15,7 @@ Voit luoda **Triggers** (laukaisimia), jotka käynnistyvät, kun tapahtuu jotain
 
 Tämä on mahdollista, koska **Ultimate Multisiten Zapier-laukaisimet ja -toiminnot** toimivat [REST API](https://developer.ultimatemultisite.com/api/docs/) -rajapinnan avulla.
 
-## Kuinka aloittaa
+## Kuinka aloittaa {#how-to-start}
 
 Etsi ensin Ultimate Multisite Zapier-sovelluslistalta. Vaihtoehtoisesti voit klikata [tätä linkkiä](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ URL-kenttään kirjoita verkon koko URL, mukaan lukien protokolla (HTTP tai HTTP
 
 Napsauta **Yes, Continue** -painiketta siirtyäksesi seuraavaan vaiheeseen. Jos kaikki toimii oikein, sinut odottaa uusi yhdistetty tili! Napsauta **Continue** luodaksesi uuden triggerin.
 
-## Uuden Triggerin luominen
+## Uuden Triggerin luominen {#how-to-create-a-new-trigger}
 
 Kun tilisi on yhdistetty, näet saatavilla olevat tapahtumat. Valitkaa tässä ohjeessa **payment_received** -tapahtumaa.
 
@@ -67,7 +67,7 @@ Tässä vaiheessa Zapier testaaa, pystyykö Zapisi hakeutumaan kyseiseen tapahtu
 
 Tutorialissa test oli **suoritettu onnistuneesti** ja se palautti esimerkkitietoja lataukseksi (payload). Nämä esimerkkitiedot auttavat meitä ohjaamaan toimintojen luomista. Laukaimesi on nyt luotu ja valmis yhdistettävä muihin sovelluksiin.
 
-## Miten luodaan Actions
+## Miten luodaan Actions {#how-to-create-actions}
 
 Actions käyttävät tietoa muista laukaimisista luodakseen uusia merkintöjä verkkoosi.
 
@@ -79,7 +79,7 @@ Seuraavassa vaiheessa joko luot autentikoidun tiedon, kuten teimme **Aloitusohje
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Actionin asettelu
+### Actionin asettelu {#setting-up-the-action}
 
 Tämä on **actionin päävaihe** ja tässä asiat ovat hieman erilaisia. Ensimmäinen tieto, jonka valitset, on **Item**. Item on verkkomallesi **tiedon malli**, kuten **Customers (Asiakkaat), Payments (Maksut), Sites (Sivustot), Emails (Sähköpostit)** ja muut.
 

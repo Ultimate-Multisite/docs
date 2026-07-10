@@ -1,105 +1,127 @@
 ---
-title: ዝግጅት እና የአቅራቢ ቅንብር
+title: ማዋቀር እና የአቅራቢ ውቅር
 sidebar_position: 1
-_i18n_hash: 2a9c0d63fc6ee6bad011c099707fb3f3
+_i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# የዶሜን ሻጮች (Domain Seller): መቅረጽ እና የሰሪ (Provider) ቅንብር
+# የDomain ሻጭ፦ ማዋቀር እና የአቅራቢ ውቅር {#domain-seller-setup-and-provider-configuration}
 
-የDomain Seller Addon በቅድሚያ የተዘጋጀ የቅንብር አስማሚ (setup wizard) አለው። ይህ አስማሚ የሚያስፈልጉትን እያንዳንዱን እርምጃ ይመራዎታል። ይህ ገጽ የአስማሚውን ሂደት እና በኋላ ላይ ሰሪዎችን (providers) እንዴት ማዋቀር ወይም እንደገና ማዋቀር እንደሚቻል ይዳስሳል።
+የDomain ሻጭ addon በሚያስፈልጉ ደረጃዎች ሁሉ የሚመራዎትን የማዋቀር wizard ይዞ ይመጣል። ይህ ገጽ የwizard ፍሰትን እና በኋላ አቅራቢዎችን እንዴት ማዋቀር ወይም እንደገና ማዋቀር እንደሚቻል ይሸፍናል።
 
-## የሚያስፈልጉት ነገሮች (Requirements)
+## መስፈርቶች {#requirements}
 
-- **Multisite Ultimate** v2.4.12 ወይም ከዚያ በላይ፣ በኔትወርክ ደረጃ መفعيل (network-activated) መሆን አለበት።
+- **Multisite Ultimate** v2.4.12 ወይም ከዚያ በላይ፣ በኔትወርክ የነቃ
 - **PHP** 7.4+
-- ቢያንስ ለአንድ የሚደገፍ ሬጅስትራ (registrar) የAPI መለያዎች (credentials)።
+- ቢያንስ ለአንድ የሚደገፍ ሬጅስትራር የAPI ማረጋገጫ መረጃዎች
 
-## የመጀመሪያ ጊዜ የቅንብር አስማሚ (First-run setup wizard)
+## የመጀመሪያ ማስኬጃ ማዋቀር wizard {#first-run-setup-wizard}
 
-የቅንብር አስማሚው ለመጀመሪያ ጊዜ በኔትወርክ ደረጃ ሲያነቃቁ (network-activate) በራስ-ሰር ይጀምራል። እንዲሁም በማንኛውም ጊዜ ከ **Network Admin › Ultimate Multisite › Domain Seller Setup** ውስጥ ሊገኝ ይችላል።
+plugin-ን በኔትወርክ ለመጀመሪያ ጊዜ ሲያነቁ የማዋቀር wizard በራሱ ይጀምራል። እንዲሁም በማንኛውም ጊዜ ከ**Network Admin › Ultimate Multisite › Domain Seller Setup** ይገኛል።
 
-### ደረጃ 1 — ሰሪን ይምረጡ (Choose a provider)
+### ደረጃ 1 — አቅራቢ ይምረጡ {#step-1--choose-a-provider}
 
-ከማገናኘት የሚፈልጉትን ሬጅስትራ ይምረጡ። የሚደገፉ አማራጮች የሚከተሉት ናቸው፦
+ሊያገናኙት የሚፈልጉትን ሬጅስትራር ይምረጡ። የሚደገፉ አማራጮች፦
 
-| Provider | DNS management | WHOIS privacy |
+| አቅራቢ | የDNS አስተዳደር | የWHOIS ግላዊነት |
 |---|---|---|
-| OpenSRS | Yes | Yes |
-| Namecheap | No | Yes (WhoisGuard, free) |
-| GoDaddy | No | No |
-| ResellerClub | Yes | No |
-| NameSilo | No | No |
-| Enom | Yes | No |
+| OpenSRS | አዎ | አዎ |
+| Namecheap | አይ | አዎ (WhoisGuard፣ ነፃ) |
+| HostAfrica | አዎ | አዎ (የID ጥበቃ) |
+| Openprovider | አዎ | አዎ |
+| Hostinger | ለተስተናገዱ domains በዋናው Hostinger domain mapping በኩል | አዎ |
+| GoDaddy | አይ | አይ |
+| ResellerClub | አዎ | አይ |
+| NameSilo | አይ | አይ |
+| Enom | አዎ | አይ |
 
-### ደረጃ 2 — መለያዎችን ያስገቡ (Enter credentials)
+### ደረጃ 2 — ማረጋገጫ መረጃዎችን ያስገቡ {#step-2--enter-credentials}
 
-እያንዳንዱ ሰሪ የተለያየ የቅንብር መስኮት አለው፦
+እያንዳንዱ አቅራቢ የተለያዩ የማረጋገጫ መስኮች አሉት፦
 
-**OpenSRS** — የተጠቃሚ ስም (Username) እና የግል ቁልፍ (private key) (ከOpenSRS Reseller Control Panel)
+**OpenSRS** — የተጠቃሚ ስም እና የግል ቁልፍ (ከOpenSRS Reseller Control Panel)
 
-**Namecheap** — የተጠቃሚ ስም (Username) እና የAPI ቁልፍ (API key) (ከAccount › Tools › API Access)
+**Namecheap** — የተጠቃሚ ስም እና API key (ከAccount › Tools › API Access)
 
-**GoDaddy** — የAPI ቁልፍ (API key) እና ሚስጥ (secret) (ከdeveloper.godaddy.com)
+**HostAfrica** — የDomains Reseller API endpoint እና ማረጋገጫ መረጃዎች ከHostAfrica የreseller ሞጁል። የተለየ sandbox endpoint በአሁኑ ጊዜ አልተመዘገበም፤ ቀጥታ ምዝገባዎችን ከማስኬድ በፊት በደህና የንባብ-ብቻ ምርመራዎች ይፈትኑ።
 
-**ResellerClub** — የሪሴለር መለያ ቁጥር (Reseller ID) እና የAPI ቁልፍ (API key) (ከResellerClub control panel)
+**Openprovider** — የAPI መዳረሻ የነቃለት የተጠቃሚ ስም እና የይለፍ ቃል። አማራጭ sandbox ሁነታ የOpenprovider sandbox API ይጠቀማል፣ እና አማራጭ ነባሪ የደንበኛ handle ለምዝገባዎች እንደገና ሊጠቀም ይችላል።
 
-**NameSilo** — የAPI ቁልፍ (API key) (ከnamesilo.com › Account › API Manager)
+**Hostinger** — ከዋናው Hostinger ውህደት የተጋራው Hostinger hPanel API token። ተመሳሳይ token ዋናውን domain mapping እና የDomain ሻጭ ምዝገባ ክዋኔዎችን ያንቀሳቅሳል።
 
-**Enom** — የሂሳብ መለያ ቁጥር (Account ID) እና የAPI ቶከን (API token)
+**GoDaddy** — API key እና secret (ከdeveloper.godaddy.com)
 
-ወደ አገልግሎት ከመስጠትዎ በፊት፣ በተቻለበት ቦታ ላይ፣ ሰሪው (provider) የፈተና አካባቢን (test environment) ለመፈተን **Sandbox mode**ን ያረጋግጡ።
+**ResellerClub** — Reseller ID እና API key (ከResellerClub control panel)
 
-### ደረጃ 3 — ግንኙነቱን ይፈትሹ (Test the connection)
+**NameSilo** — API key (ከnamesilo.com › Account › API Manager)
 
-**Test Connection** የሚለውን ይጫኑ። አስማሚው የክሬዲንሸል እና የግንኙነት ሁኔታን ለማረጋገጥ ቀላል የAPI ጥሪ ይልካል። ከመቀጠልዎ በፊት ማንኛውንም የክሬዲንሸል ችግር ያስተካክሉ።
+**Enom** — Account ID እና API token
 
-### ደረጃ 4 — TLDs ማስመጣት (Import TLDs)
+ቀጥታ ከመሄድ በፊት በአቅራቢው የሙከራ አካባቢ ለመፈተን በሚገኝበት ቦታ **Sandbox mode** ይምረጡ።
 
-ከየተገናኘው ሰሪ ሁሉንም የሚገኙ TLDs እና የጅምላ ዋጋዎችን (wholesale pricing) ለማስገባት **Import TLDs** የሚለውን ይጫኑ። ይህ በዶሜን ምርቶች የሚያገለግል የTLD ዝርዝርን ይሞላል። ትልልቅ የTLD ካታሎግ ባላቸው ሰሪዎች ላይ ማስመጣቱ 30–60 ሰከንዶች ሊወስድ ይችላል።
+### ደረጃ 3 — ግንኙነቱን ይፈትኑ {#step-3--test-the-connection}
 
-TLDs በየቀኑ አንድ ጊዜ በየጊዜው በሚሰራል የcron job አማካኝነት በራስ-ሰር ይመሳሰላሉ (re-synced)።
+**Test Connection** ይጫኑ። wizard ማረጋገጫ መረጃዎችን እና ግንኙነትን ለማረጋገጥ ቀላል የAPI ጥሪ ይልካል። ከመቀጠልዎ በፊት ማንኛውንም የማረጋገጫ መረጃ ችግኝ ያስተካክሉ።
 
-### ደረጃ 5 — የዶሜን ምርት መፍጠር (Create a domain product)
+### ደረጃ 4 — TLDs ያስመጡ {#step-4--import-tlds}
 
-አስማሚው በ10% ጭማሪ (markup) የተዘጋጀ መደበኛ የዶሜን ምርት ይፈጥራል። ይህንን ምርት ወዲያውኑ ማርትዕ ይችላሉ ወይም መዝለል (skip) እና ምርቶችን በ**Ultimate Multisite › Products** ስር በእጅ መፍጠር ይችላሉ።
+ከተገናኘው አቅራቢ ሁሉንም የሚገኙ TLDs እና የጅምላ ዋጋ ለመሳብ **Import TLDs** ይጫኑ። ይህ በdomain ምርቶች የሚጠቀሙበትን የTLD ዝርዝር ይሞላል። ትልቅ የTLD ካታሎግ ላላቸው አቅራቢዎች ማስመጣቱ 30–60 ሰከንዶች ሊወስድ ይችላል።
 
-ሙሉ የምርት ቅንብር መመሪያን ለማግኘት [Domain Products and Pricing](./domain-products) ይመልከቱ።
+TLDs እንዲሁም በተያዘ የcron ስራ በኩል በቀን አንድ ጊዜ በራስ-ሰር እንደገና ይሰምራሉ።
 
----
+### ደረጃ 5 — የdomain ምርት ይፍጠሩ {#step-5--create-a-domain-product}
 
-## ሰሪን እንደገና ማዋቀር (Reconfiguring a provider)
+wizard 10% ትርፍ ያለው ነባሪ ሁሉን-የሚይዝ የdomain ምርት ይፈጥራል። ይህንን ምርት ወዲያውኑ ማርትዕ ወይም መዝለል እና ምርቶችን በእጅ በ**Ultimate Multisite › Products** ስር መፍጠር ይችላሉ።
 
-ወደ **Network Admin › Ultimate Multisite › Settings › Domain Seller** ይሂዱ (ወይም በፕልጊን ዝርዝር ውስጥ **Settings** የሚለውን ይጫኑ)።
-
-የቅንብር ገጹ የሚከተሉትን ይይዛል፦
-
-- **Enable domain selling** — መላውን ባህሪ (feature) ለማብራት/ማጥፋት ያገለግላል።
-- **Default provider** — ለዶሜን ፍለጋዎች እና አዳዲስ ምርቶች የሚያገለግለው ሰሪ።
-- **Max TLDs per search** — ደንበኛ ሲፈልግ ስንት TLDs እንደሚፈትሽ፤ ከፍተኛ ዋጋ ያላቸው እሴቶች ብዙ አማራጮችን ያሳያሉ ግን ቀርፋፋ ናቸው።
-- **Availability cache duration** — የአመራረት እና የዋጋ ውጤቶችን ለማስቀመጥ (cache) ምን ያህል ጊዜ ነው፤ ዝቅተኛ ዋጋ ያላቸው እሴቶች ይበልጥ ትክክለኛ ግን የAPI ጥሪዎችን ይጨምራሉ።
-- **Manage domain products** — ወደ Products ዝርዝር የሚያስቸኩር ፈጣን ሊንክ።
-- **Configure providers** — ሰሪዎችን ለመጨመር ወይም እንደገና ለማዋቀር ወደ Integration Wizard ይከፍታል።
-
-### ሁለተኛ ሰሪ መጨመር (Adding a second provider)
-
-**Configure providers** የሚለውን ይጫኑ እና ለአዲሱ ሬጅስትራ አስማሚውን እንደገና ያሂዱ። በአንድ ጊዜ ብዙ ሰሪዎችን ማዋቀር ይችላሉ። እያንዳንዱን የዶሜን ምርት በተወሰነ ሰሪ ላይ መመደብ ይችላሉ፣ ወይም በነባሪው (default) ላይ መተው ይችላሉ።
-
-### TLDs በእጅ መመሳሰል (Syncing TLDs manually)
-
-በቅንብር ገጹ ላይ፣ የቅንብር ሰሪ አጠገብ **Sync TLDs** የሚለውን ይጫኑ የቅርብ ጊዜውን ዋጋ ለማስገባት። ይህ ሰሪው የጅምላ ዋጋዎችን ካዘመነ ወይም አዳዲስ TLDs ከጨመረ በኋላ ጠቃሚ ነው።
+ሙሉውን የምርት ውቅር መመሪያ ለማየት [የDomain ምርቶች እና ዋጋ አወጣጥ](./domain-products) ይመልከቱ።
 
 ---
 
-## መዝገቦች (Logs)
+## አቅራቢን እንደገና ማዋቀር {#reconfiguring-a-provider}
 
-እያንዳንዱ ሰሪ ለራሱ የሎግ ሰርጥ (log channel) ይጽፋል። መዝገቦቹ በ **Network Admin › Ultimate Multisite › Logs** ስር ይታያሉ፦
+ወደ **Network Admin › Ultimate Multisite › Settings › Domain Seller** ይሂዱ (ወይም በplugin ዝርዝር ውስጥ **Settings** ይጫኑ)።
 
-| Log channel | Contents |
+የቅንብሮች ገጽ የሚከተሉትን ይዟል፦
+
+- **Enable domain selling** — ሙሉ ባህሪውን ያብሩ/ያጥፉ
+- **Default provider** — ለdomain ፍለጋዎች እና አዲስ ምርቶች የሚጠቀም አቅራቢ
+- **Max TLDs per search** — ደንበኛ ሲፈልግ ስንት TLDs እንደሚፈተሹ፤ ከፍ ያሉ እሴቶች ተጨማሪ አማራጮችን ያሳያሉ ነገር ግን ዝግ ናቸው
+- **Availability cache duration** — የመገኘት እና የዋጋ ውጤቶችን ምን ያህል ጊዜ cache እንደሚደረግ፤ ዝቅተኛ እሴቶች የበለጠ ትክክለኛ ናቸው ነገር ግን የAPI ጥሪዎችን ይጨምራሉ
+- **Manage domain products** — ወደ ምርቶች ዝርዝር ፈጣን አገናኝ
+- **Configure providers** — አቅራቢዎችን ለመጨመር ወይም እንደገና ለማዋቀር Integration Wizard ይከፍታል
+
+### ሁለተኛ አቅራቢ መጨመር {#adding-a-second-provider}
+
+**Configure providers** ይጫኑ እና ለአዲሱ ሬጅስትራር wizard-ን እንደገና ያስኬዱ። ብዙ አቅራቢዎችን በአንድ ጊዜ ማዋቀር ይችላሉ። እያንዳንዱን የdomain ምርት ለተወሰነ አቅራቢ ይመድቡ፣ ወይም በነባሪው ላይ ይተዉት።
+
+### TLDs በእጅ ማሰምራት {#syncing-tlds-manually}
+
+በቅንብሮች ገጽ ውስጥ የቅርብ ጊዜ ዋጋን ለመሳብ ከማንኛውም የተዋቀረ አቅራቢ አጠገብ **Sync TLDs** ይጫኑ። ይህ አንድ አቅራቢ የጅምላ ዋጋን ካዘመነ ወይም አዲስ TLDs ካከለ በኋላ ጠቃሚ ነው።
+
+---
+
+## መዝገቦች {#logs}
+
+እያንዳንዱ አቅራቢ ወደ የራሱ የመዝገብ ቻናል ይጽፋል። መዝገቦች በ**Network Admin › Ultimate Multisite › Logs** ስር ሊታዩ ይችላሉ፦
+
+| የመዝገብ ቻናል | ይዘቶች |
 |---|---|
-| `domain-seller-registration` | ሁሉም የንጽጽር ሙከራዎች (በስኬት እና በውድቀት) |
-| `domain-seller-renewal` | የየጊዜው የንጽጽር ስራ ውጤቶች |
+| `domain-seller-registration` | ሁሉም የምዝገባ ሙከራዎች (ስኬት እና ውድቀት) |
+| `domain-seller-renewal` | የእድሳት ስራ ውጤቶች |
 | `domain-seller-opensrs` | ጥሬ የOpenSRS API እንቅስቃሴ |
 | `domain-seller-namecheap` | ጥሬ የNamecheap API እንቅስቃሴ |
+| `domain-seller-hostafrica` | ጥሬ የHostAfrica API እንቅስቃሴ |
+| `domain-seller-openprovider` | ጥሬ የOpenprovider API እንቅስቃሴ |
+| `domain-seller-hostinger` | ጥሬ የHostinger API እንቅስቃሴ |
 | `domain-seller-godaddy` | ጥሬ የGoDaddy API እንቅስቃሴ |
 | `domain-seller-resellerclub` | ጥሬ የResellerClub API እንቅስቃሴ |
 | `domain-seller-namesilo` | ጥሬ የNameSilo API እንቅስቃሴ |
 | `domain-seller-enom` | ጥሬ የEnom API እንቅስቃሴ |
+
+---
+
+## የአቅራቢ ችሎታ ማስታወሻዎች {#provider-capability-notes}
+
+ሁሉም የሬጅስትራር API ተመሳሳይ ክዋኔዎችን አያቀርቡም። addon የማይደገፉ ክዋኔዎችን በጸጥታ ከመውደቅ ይልቅ ለadmin ግልጽ የሆኑ ስህተቶችን ያሳያል።
+
+- **HostAfrica** ፍለጋ፣ TLD/የዋጋ ማመሳሰል፣ ምዝገባ፣ እድሳት፣ ዝውውር፣ የnameserver ዝማኔዎች፣ DNS መዝገቦች፣ EPP ኮዶች፣ የregistrar ቁልፍ፣ እና ID ጥበቃን ጨምሮ በጣም ሰፊውን የቀጥታ የreseller የሥራ ፍሰት ይደግፋል።
+- **Openprovider** በreseller ዋጋ የተመዘነ TLD ማመሳሰል፣ ምዝገባ፣ እድሳት፣ ዝውውሮች፣ የnameserver ዝማኔዎች፣ DNS ዞኖች፣ EPP ኮዶች፣ የregistrar ቁልፍ፣ እና WHOIS ግላዊነትን ይደግፋል። addon በራስ-ሰር የሚያድሰውን አጭር ጊዜ የሚቆይ bearer token በመጠቀም ማረጋገጫ ያደርጋል።
+- **Hostinger** በተጋራ hPanel API token በኩል የመገኘት ፍለጋ፣ ምዝገባ፣ የportfolio ፍለጋ፣ የnameserver ዝማኔዎች፣ የregistrar ቁልፍ፣ እና WHOIS ግላዊነትን ይደግፋል። የHostinger የሕዝብ Domains API የreseller/wholesale ዋጋን፣ ወደ ውስጥ ዝውውርን፣ ግልጽ እድሳትን፣ ወይም የEPP-code ማግኛን አያቀርብም፤ እድሳቶች በራስ-እድሳት ብቻ ናቸው።

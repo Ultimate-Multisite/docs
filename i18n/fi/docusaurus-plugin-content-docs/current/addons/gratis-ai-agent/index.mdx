@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent on autonominen WordPress AI -avustaja, joka voi suunnitella, rakentaa ja hallita kokonaisia WordPress-sivustoja luonnollisen kielen ohjeiden avulla. Se tarjoaa jäsennellyn joukon **kykyjä** — erillisiä, testattavia toimintoja, joita agentti voi kutsua — kattaen kaiken sisällönhallinnasta design-järjestelmän mukauttamiseen. Versio 1.9.0 lisää sisällöntuotantokykyjä, visuaalisen sivutarkastelun asiakaspuolen kuvakaappausten avulla, viisi sisäänrakennettua agenttiprofiilia sekä feature flagit käyttöoikeuksien hallintaan ja brändäykseen.
+
+## Keskeiset ominaisuudet {#key-features}
+
+- **Kykyjärjestelmä** — modulaarinen, laajennettava toimintoluettelo, jota agentti voi kutsua WordPress-asennuksessasi
+- **Sisällönhallinta** — luo artikkeleita ja sivuja (mukaan lukien sivupohjien määrittäminen), luo useita artikkeleita erissä yhdellä kutsulla, aseta artikkelikuvia ja rakenna yhteydenottolomakkeita
+- **Visuaalinen tarkastelu** — ota kuvakaappauksia julkaistuista sivuista, vertaile ennen/jälkeen-tiloja ja saa AI:n tuottama design-arvio, joka kattaa asettelun, typografian, värit ja saavutettavuuden
+- **Viisi sisäänrakennettua agenttia** — Content Writer, Site Builder, Design Studio, Plugin Manager ja Support Assistant; vaihdettavissa chat-otsikon Agent Pickerin kautta
+- **Feature flagit** — käyttöoikeuksien hallinnan ja brändäyksen valitsimet kohdassa Settings → Feature Flags roolirajoituksia, white-label-nimeämistä ja widgetin mukauttamista varten
+- **Mukautettujen artikkelityyppien hallinta** — rekisteröi, listaa ja poista mukautettuja artikkelityyppejä niin, että ne säilyvät uudelleenkäynnistysten yli
+- **Mukautettujen taksonomioiden hallinta** — rekisteröi, listaa ja poista mukautettuja taksonomioita pysyvästi
+- **Design System -kyvyt** — lisää mukautettua CSS:ää, hallitse kuratoituja lohkomalleja, aseta sivuston logo ja ota käyttöön theme.json-esiasetuksia
+- **Global Styles -hallinta** — lue ja kirjoita theme.json-arvoja väripaleteille, typografialle, välistyksille ja muulle
+- **Navigointivalikoiden hallinta** — luo ja päivitä navigointivalikoita ja niiden kohteita ohjelmallisesti
+- **Asetusten hallinta** — lue ja kirjoita WordPress-asetuksia sisäänrakennetulla turvallisuusestolistalla, joka suojaa kriittisiä asetuksia
+- **Asennettavien kykyjen rekisteri** — löydä ja aktivoi lisäkykypaketteja muokkaamatta ydinlaajennuksen tiedostoja
+- **Site Builder Orchestration v2** — monivaiheiset sivuston rakennussuunnitelmat, joissa on pluginien haku, edistymisen seuranta ja virheistä palautuminen
+- **WP-CLI-benchmark-komento** — suorita agentin kyvykkyyksien benchmark-testisarja komentoriviltä CI:tä ja mallien arviointia varten
+
+## Vaatimukset {#requirements}
+
+- WordPress 6.0 tai uudempi
+- PHP 8.1 tai uudempi
+- WordPress Multisite (verkkoaktivoitu) tai yhden sivuston asennus
+- Aktiivinen AI-palveluntarjoajan liitin-plugin (Anthropic, OpenAI tai yhteensopiva)
+
+## Asennus {#installation}
+
+1. Lataa plugin-tiedostot hakemistoon `/wp-content/plugins/gratis-ai-agent`
+2. Aktivoi plugin WordPressin **Plugins**-näkymässä
+3. Siirry kohtaan **Gratis AI Agent → Settings** ja yhdistä AI-palveluntarjoajasi
+4. (Valinnainen) Selaa **Abilities Registry** -osiota asentaaksesi lisää kykypaketteja
+
+## Pika-aloitus {#quick-start}
+
+Kun se on aktivoitu ja yhdistetty AI-palveluntarjoajaan, avaa **Gratis AI Agent** -paneeli WordPressin ylläpidon sivupalkista. Kirjoita luonnollisen kielen ohje, ja agentti suunnittelee ja suorittaa tarvittavat vaiheet käytettävissä olevien kykyjensä avulla.
+
+**Esimerkkiohjeet:**
+
+```
+Luo "Portfolio"-mukautettu artikkelityyppi ja "Project Category" -taksonomia.
+```
+
+```
+Lisää tummaa tilaa varten väripaletti teemaan ja aseta pääväriksi #1a1a2e.
+```
+
+```
+Rakenna ravintolasivusto, jossa on verkkovalikko, varauslomake ja yhteystietosivu.
+```
+
+## Kykyjen yleiskatsaus {#abilities-overview}
+
+Kyvyt ovat atomisia toimintoja, joita agentti voi suorittaa. Jokainen kyky on rekisteröity PHP-luokka, joka tarjoaa skeeman (parametrit ja palautustyypit), jonka agentti lukee ajon aikana. Kyvyt on ryhmitelty toiminnallisiin alueisiin:
+
+| Alue | Kyvyt |
+|---|---|
+| **Sisällönhallinta** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Visuaalinen tarkastelu** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Mukautetut artikkelityypit** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Mukautetut taksonomiat** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigointivalikot** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Asetusten hallinta** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Asennettavat kyvyt** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Katso täydellinen parametridokumentaatio ja käyttöesimerkit [Kykyjen viitteestä](./abilities).
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent sisältää `wp gratis-ai-agent` -komentoperheen benchmark-testien suorittamiseen ja kykyjen hallintaan komentoriviltä. Katso koko komentoluettelo [WP-CLI-viitteestä](./wp-cli).
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Määritys {#configuration}
+
+Kaikki asetukset ovat WordPress-ylläpidossa kohdassa **Gratis AI Agent → Settings**:
+
+| Asetus | Kuvaus |
+|---|---|
+| **AI-palveluntarjoaja** | Valitse ja määritä aktiivinen AI-palveluntarjoajan liitin |
+| **Malli** | Valitse agentti-istunnoissa käytettävä kielimalli |
+| **Max Tokens** | Pyyntökohtainen token-budjetti (oletus 4096) |
+| **Kyvyn aikakatkaisu** | Enimmäissekunnit, joiden ajan yksittäinen kyky voi olla käynnissä (oletus 30) |
+| **Debug-lokitus** | Kirjaa kykykutsut ja agentin päättely WordPressin debug-lokiin |
+
+## Asetusten hallinnan turvallisuusestolista {#options-management-safety-blocklist}
+
+Options Management -kyky sisältää sisäänrakennetun estolistan, joka estää agenttia lukemasta tai kirjoittamasta arkaluonteisia WordPress-asetuksia. Oletusestolista kattaa:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (URL-asetukset — käytä näihin erillistä migraatiotyökalua)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (salaiset avaimet)
+- `active_plugins`, `template` (lisäosan/teeman aktivointi — käytä erillisiä kykyjä)
+- Maksuyhdyskäytävien tunnistetiedot ja API-avaimet, jotka asennetut lisäosat ovat rekisteröineet
+
+Lisämerkintöjä voidaan lisätä `gratis_ai_agent_options_blocklist`-suodattimen kautta.
+
+## Hookit ja suodattimet {#hooks-and-filters}
+
+### Toiminnot {#actions}
+
+- `gratis_ai_agent_ability_registered` — suoritetaan, kun kyky on rekisteröity; vastaanottaa kyvyn luokkanimen
+- `gratis_ai_agent_plan_started` — suoritetaan, kun sivustonrakennussuunnitelman suoritus alkaa
+- `gratis_ai_agent_plan_completed` — suoritetaan, kun suunnitelma päättyy onnistuneesti
+- `gratis_ai_agent_plan_failed` — suoritetaan, kun suunnitelma kohtaa peruuttamattoman virheen
+
+### Suodattimet {#filters}
+
+- `gratis_ai_agent_abilities` — muokkaa rekisteröityjen kykyjen luetteloa ennen kuin agentti lataa sen
+- `gratis_ai_agent_options_blocklist` — laajenna tai supista asetusten turvallisuuteen liittyvää estolistaa
+- `gratis_ai_agent_benchmark_questions` — lisää mukautettuja vertailutestikysymyksiä arviointikokonaisuuteen
+- `gratis_ai_agent_plan_plugins` — muokkaa lisäosien hakuluetteloa sivustosuunnitelman luonnin aikana
+
+## Tuki {#support}
+
+Saat tukea käymällä osoitteessa [ultimatemultisite.com](https://ultimatemultisite.com) tai avaamalla ongelman lisäosan repositoriossa.
+
+## Muutosloki {#changelog}
+
+Katso täydellinen versiohistoria [muutoslokista](./changelog).

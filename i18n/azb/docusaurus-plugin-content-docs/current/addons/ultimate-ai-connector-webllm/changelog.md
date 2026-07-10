@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Lịch sử thay đổi của Ultimate AI Connector cho WebLLM
+# Lịch sử thay đổi của Ultimate AI Connector cho WebLLM {#ultimate-ai-connector-for-webllm-changelog}
 
-## Phiên bản 1.1.0 — Phát hành ngày 2026-04-09
+## Phiên bản 1.1.0 — Phát hành ngày 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **Mới:** Tiện ích chat nổi với chỉ báo trạng thái trên admin-bar — bất kỳ người dùng nào đăng nhập đều có thể yêu cầu LLM phía trình duyệt trực tiếp từ giao diện người dùng.
 * **Mới:** SharedWorker runtime — engine MLC giờ đây chạy trong SharedWorker, cho phép nhiều tab chia sẻ một phiên GPU thay vì phải tranh giành nhau.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **Sửa:** Kết nối WebLLM vào bộ lọc wpai_preferred_text_models để tính năng AI Experiments sẽ chuyển hướng đến engine trình duyệt khi mô hình được cấu hình.
 * **Cải tiến:** Đã khắc phục các vấn đề về cache-busting, chuẩn hóa nội dung (content normalisation) và tham chiếu phần cứng (hardware-reference) trong quá trình kiểm thử end-to-end.
 
-## Phiên bản 1.0.0 — Phát hành ban đầu
+## Phiên bản 1.0.0 — Phát hành ban đầu {#version-100--initial-release}

@@ -3,7 +3,7 @@ title: Mawu wa code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2
+# Code Snippets for v2 {#code-snippets-for-v2}
 
 Mwayi, code snippets yaite kusedwa kuti mwayi wina woyenera kufanya zinthu zina zomwe zingakhale zikufunika plugin yina yomwe wina. Zomwe zikuyenera kodewo zikuyenera kuwera m'file ya WordPress kapena theme yanu (kuti nthawi zambiri ndi file ya functions.php ya theme yanu) kapena zingathe kutendeka m'MU plugin.
 
@@ -15,13 +15,13 @@ M'articleoni, ndikukwera m'code snippets ntatu zomwe mung kusedwe kuti mwayi win
 
   * [**Kuteteza CORS issues ndi Font-Icons m'domains zomwe zikuyenera**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Kutsegula malo a menu ya Account
+## Kutsegula malo a menu ya Account {#changing-the-position-of-the-account-menu-item}
 
 Kuti mutsegule malo a menu ya Account pa Dashboard ya wina wanu, ndikufuna kuti mwayi wina woyenera kuwera code snippet iliyonse mu functions.php ya theme yanu yomwe ikulimbikira. Mumweyi mung utendeka snippet iye mu MU plugin kapena custom plugins.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Kufotokoza izi kuti mwayi wina woyenera kukhala pa malo omwe mukuwoneza.
 
-## Kutsegula kuti mwayi wina ali ndi plan yomwe yenera ndipo/kapena ali ndi subscription yomwe ikulimbikira
+## Kutsegula kuti mwayi wina ali ndi plan yomwe yenera ndipo/kapena ali ndi subscription yomwe ikulimbikira {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Koma mwayi wina wa network admin, mung kukonzekere functions zosonyeza zomwe zimene kufanya zinthu zina zosangalatsa kapena kuti m'service/feature iwonse imathandizira kwa group ya subscribers kapena endusers omwe ali ndi status ya subscription yake ndipo plan yomwe ikulimbikira.
 
@@ -47,8 +47,8 @@ Qaphela ukuthi abantu bangasubunzi ku-**Plan**, hhayi ku-Package noma i-Service,
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Ukuphepha izinkinga zokuhlangana kweCORS nenthemba (Font-Icons) ezinhlelo eziphambili
-## Ukuphepha izinkinga zokuhlangana kweCORS nenthemba (Font-Icons)
+## Ukuphepha izinkinga zokuhlangana kweCORS nenthemba (Font-Icons) ezinhlelo eziphambili {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Ukuphepha izinkinga zokuhlangana kweCORS nenthemba (Font-Icons) {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Ngemuva kokuthi uqaphele i-domain esihambiswe ku-sub-site, ungakwazi ukuthi isikhathi sokuhlola i-font ezithile kukhona amancane. Lokhu kukhona ngoba kukhona ukususa (cross-origin block) emisebenzini yasekhaya lakho.
 
@@ -56,13 +56,13 @@ Njengoba i-font files ziningi kakhulu zihambiswe ngendlela efana ne-CSS, i-plugi
 
 Malingaliwo monga mwayi wopambana n’Apache ndi NGINX. Malingaliwo monga mwayi wopambana n’Apache ndi NGINX. Kukhala kofunika kuti muli ndi chidziwika kwambiri pa zinthu zomwe zimene m’server configuration files (zifotokozi za .htaccess ndi zifotokozi za NGINX). Ngati simukuti mukuti muli woyenera kuchitira zoti mumapambana, ndikufunsa kuti mupereke upeti wanu wopambana kuti akupatseni chithandizo.
 
-### Apache
+### Apache {#apache}
 
 Pa .htaccess yanu, pogonani:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 Pa server config file (moyo wopambana umakhala m’server monga m’server), pogonani:
 

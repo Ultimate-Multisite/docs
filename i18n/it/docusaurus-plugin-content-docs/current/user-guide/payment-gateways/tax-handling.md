@@ -1,111 +1,120 @@
 ---
 title: Gestione delle imposte
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Gestione delle imposte
+# Gestione delle imposte {#tax-handling}
 
-Ultimate Multisite dispone di un modulo di riscossione delle imposte integrato nel nostro plugin principale, quindi se hai bisogno di raccogliere le imposte sulle vendite per i tuoi piani, pacchetti e servizi, puoi farlo facilmente senza dover installare alcun add‑on.
+Ultimate Multisite ha un modulo di riscossione delle imposte integrato nel nostro core plugin, quindi se devi riscuotere imposte sulle vendite sui tuoi piani, pacchetti e servizi, puoi farlo facilmente senza ricorrere all'installazione di add-on.
 
-Per le aziende situate in Europa, offriamo un **add‑on** che aggiunge strumenti e funzionalità per supportare meglio la conformità all'IVA.
+Per le aziende con sede in Europa, offriamo un **add-on** che aggiunge strumenti e funzionalità per supportare meglio la conformità **VAT**.
 
-Ultimate Multisite non presenta o versare le imposte per tuo conto al governo; ti aiutiamo semplicemente a raccogliere le imposte appropriate al momento della transazione. **Dovrai comunque versare le imposte da solo.**
+Ultimate Multisite non dichiara né versa le imposte per tuo conto al governo; ti aiutiamo semplicemente a riscuotere le imposte appropriate al momento della transazione. **Dovrai comunque versare le imposte autonomamente.**
 
-## Abilitare la riscossione delle imposte
+## Abilitare la riscossione delle imposte {#enabling-tax-collection}
 
 La riscossione delle imposte non è abilitata per impostazione predefinita. Per abilitarla, devi andare su **Ultimate Multisite > Settings > Taxes** e attivare l'impostazione Enable Taxes.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![Interruttore Enable Taxes nella parte superiore della pagina delle impostazioni Tax](/img/config/settings-taxes-enable.png)
 
-### Imposte escluse vs. imposte incluse
+Ecco una vista completa della pagina delle impostazioni delle imposte:
 
-Per impostazione predefinita, tutti i prezzi dei tuoi prodotti sono esclusi dalle imposte, il che significa che le imposte **non sono incluse** nel prezzo del prodotto. Se determiniamo che un cliente debba pagare le imposte su un determinato acquisto, aggiungeremo le imposte **sopra** il subtotale.
+![Pagina completa delle impostazioni delle imposte](/img/config/settings-taxes-full.png)
+
+Puoi anche visualizzare le impostazioni delle imposte per i singoli prodotti:
+
+![Impostazioni delle imposte per i prodotti](/img/config/settings-taxes.png)
+
+### Imposta esclusa vs. imposta inclusa {#tax-excluded-vs-tax-included}
+
+Per impostazione predefinita, tutti i prezzi dei tuoi prodotti sono al netto delle imposte, il che significa che le imposte **non sono incluse** nel prezzo del prodotto. Se determiniamo che un cliente deve pagare imposte su un determinato acquisto, aggiungeremo le imposte **in aggiunta** al subtotale.
 
 Se preferisci che le imposte siano incluse nel prezzo del tuo prodotto, puoi farlo abilitando l'impostazione **Inclusive Tax**.
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![Riga dell'interruttore Inclusive Tax sotto l'impostazione Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-Non dimenticare di **salvare** le modifiche apportate.
+Non dimenticare di **salvare** le modifiche che hai apportato.
 
-### 
+###
 
-## Creare aliquote fiscali
+## Creare aliquote fiscali {#creating-tax-rates}
 
-Dopo aver abilitato la riscossione delle imposte, dovrai creare le aliquote fiscali per località specifiche utilizzando il nostro editor delle aliquote fiscali.
+Dopo aver abilitato la riscossione delle imposte, dovrai creare aliquote fiscali per località specifiche utilizzando il nostro editor delle aliquote fiscali.
 
-Puoi accedere all'editor facendo clic sul pulsante **Manage Tax Rates** nella barra laterale della pagina delle impostazioni fiscali.
+Puoi accedere all'editor facendo clic sul pulsante **Manage Tax Rates** nella barra laterale della pagina delle impostazioni Tax.
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+![Link Manage Tax Rates nel pannello Tax Rates nella pagina delle impostazioni](/img/config/settings-taxes-manage-rates.png)
 
 Nella pagina dell'editor delle aliquote fiscali, puoi aggiungere nuove aliquote fiscali facendo clic sul pulsante **Add new Row**.
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+![Tabella dell'editor delle aliquote fiscali con pulsante Add new Row in alto](/img/config/tax-rates-editor.png)
 
-Dovrai assegnare a ciascuna aliquota un **titolo** (utilizzato nelle fatture). Quindi puoi scegliere il **paese** (obbligatorio), lo **stato** e la **città** (entrambi opzionali) in cui verrà addebitata l'imposta. Infine, aggiungi l'**aliquota in percentuale**.
+Dovrai assegnare a ciascuna aliquota fiscale un **titolo** (usato nelle fatture). Poi puoi scegliere il **paese** (obbligatorio), lo **stato,** e la **città** (entrambi facoltativi) in cui questa imposta verrà addebitata. Infine, aggiungi l'**aliquota fiscale in percentuale**.
 
-### Categorie di imposta
+### Categorie fiscali {#tax-categories}
 
-Puoi anche creare più Categorie di Imposta, per aggiungere aliquote diverse per diversi tipi di prodotti.
+Puoi anche creare più categorie fiscali, per aggiungere aliquote fiscali diverse per diversi tipi di prodotti.
 
-Fai clic su **Add new Tax Category**, quindi scrivi il nome della tua categoria e premi **Create**.
+Fai clic su **Add new Tax Category** , quindi scrivi il nome della tua categoria e premi **Create**.
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+![Pulsante Add new Tax Category nella parte superiore dell'editor delle aliquote fiscali](/img/config/tax-categories-add.png)
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+![Campo di input Tax Category Name nel modale di creazione categoria](/img/config/tax-categories-create-modal.png)
 
-Per sfogliare le categorie, fai clic su **Switch** e seleziona la categoria a cui vuoi aggiungere nuove imposte.
+Per navigare tra le categorie, fai clic su **Switch** e seleziona la categoria a cui vuoi aggiungere nuove imposte.
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+![Pulsante a discesa Switch per passare da una categoria fiscale all'altra](/img/config/tax-categories-switch.png)
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![Menu a discesa del selettore di categoria fiscale che mostra le categorie disponibili](/img/config/tax-categories-select.png)
 
-Puoi impostare la categoria di imposta per un prodotto specifico andando alla **Product edit page** e poi alla scheda Taxes.
+Puoi impostare la categoria fiscale per un prodotto specifico andando alla **Product edit page** e poi alla scheda Taxes.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Scheda imposte del prodotto con categoria fiscale e interruttore taxable](/img/config/product-taxes.png)
 
-Nello stesso schermo, puoi disattivare l'interruttore **Is Taxable?** per far sapere a Ultimate Multisite che non dovrebbe raccogliere imposte su quel prodotto.
+Nella stessa schermata, puoi disattivare l'interruttore **Is Taxable?** per far sapere a Ultimate Multisite che non deve riscuotere imposte su quel determinato prodotto.
 
-## Supporto IVA europeo
+## Supporto VAT europeo {#european-vat-support}
 
-Come menzionato in precedenza, disponiamo di un add‑on disponibile per i clienti nell'UE che hanno requisiti aggiuntivi a causa delle normative sull'IVA europea.
+Come accennato in precedenza, abbiamo un add-on disponibile per i clienti nell'UE che hanno requisiti aggiuntivi dovuti alle normative europee sulla VAT.
 
-I nostri strumenti IVA aiutano con un paio di cose importanti:
+I nostri strumenti VAT aiutano con un paio di aspetti importanti:
 
-* Caricamento facile delle aliquote IVA UE;
-* Raccolta e convalida del numero IVA - e reverse charge per entità esenti IVA (come aziende con numeri IVA validi);
+  * Caricamento semplice delle aliquote VAT dell'UE;
 
-Per installare quell'add‑on, vai su **Ultimate Multisite > Settings** e poi fai clic sul collegamento della barra laterale **Check our Add-ons**.
+  * Raccolta e convalida del numero VAT - e inversione contabile per le entità esenti da VAT (come le aziende con numeri VAT validi);
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+Per installare quell'add-on, vai su **Ultimate Multisite > Settings** e poi fai clic sul link della barra laterale **Check our Add-ons**.
 
-Verrai reindirizzato alla nostra pagina degli add‑on. Lì, puoi cercare il **Ultimate Multisite VAT add-on** e installarlo.
+![Barra laterale della pagina Settings con link Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+Verrai reindirizzato alla nostra pagina degli add-on. Lì puoi cercare l'**add-on Ultimate Multisite VAT** e installarlo.
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
-Quindi vai su **Network Admin > Plugins** e attiva quell'add‑on a livello di rete.
+<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+Quindi, vai su **Network Admin > Plugins** e attiva quell'add-on a livello di rete.
 
-Se torni alla scheda **Tax Settings**, vedrai nuove opzioni disponibili. Attiva l'opzione **Enable VAT Support** per abilitare i nuovi strumenti IVA. Non dimenticare di **salvare** le impostazioni!
+<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+Se torni alla **scheda Tax Settings** , vedrai nuove opzioni disponibili. Attiva l'opzione **Enable VAT Support** per abilitare i nuovi strumenti VAT. Non dimenticare di **salvare** le tue impostazioni!
 
-### Recupero delle aliquote IVA
+<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-Uno degli strumenti che la nostra integrazione aggiunge è la capacità di caricare le aliquote fiscali per gli Stati membri dell'UE. Questo può essere fatto visitando la pagina dell'editor delle aliquote fiscali dopo aver abilitato il supporto IVA UE.
+### Recuperare le aliquote fiscali VAT {#pulling-on-vat-tax-rates}
 
-In fondo alla pagina, vedrai le opzioni di recupero IVA. Selezionando un tipo di aliquota e facendo clic sul pulsante **Update EU VAT Rates**, verrà recuperata e popolata automaticamente la tabella con le aliquote fiscali per ciascuno Stato membro UE. Quindi, dovrai solo salvarla.
+Uno degli strumenti aggiunti dalla nostra integrazione è la possibilità di caricare le aliquote fiscali per gli stati membri dell'UE. Questo può essere fatto visitando la pagina dell'editor delle aliquote fiscali dopo aver abilitato il supporto EU VAT.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+In fondo alla pagina vedrai le opzioni di recupero VAT. Selezionare un tipo di aliquota e fare clic sul pulsante **Update EU VAT Rates** recupererà e popolerà automaticamente la tabella con le aliquote fiscali per ciascuno stato membro dell'UE. Poi dovrai solo salvarla.
 
-Puoi anche modificare i valori dopo averli recuperati. Per farlo, basta modificare la riga della tabella di cui hai bisogno e fare clic per salvare i nuovi valori.
+![Pulsante Update EU VAT Rates in fondo all'editor delle aliquote fiscali](/img/config/tax-rates-vat-pull.png)
 
-### Validazione IVA
+Puoi anche modificare i valori dopo averli recuperati. Per farlo, modifica semplicemente la riga della tabella di cui hai bisogno e fai clic per salvare i nuovi valori.
 
-Quando il supporto IVA è abilitato, Ultimate Multisite aggiungerà un campo aggiuntivo al modulo di checkout, sotto il campo dell'indirizzo di fatturazione. Il campo verrà visualizzato solo per i clienti situati nell'UE.
+### Convalida VAT {#vat-validation}
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+Quando il supporto VAT è abilitato, Ultimate Multisite aggiungerà un campo aggiuntivo al modulo di checkout, sotto il campo dell'indirizzo di fatturazione. Il campo verrà mostrato solo ai clienti situati nell'UE.
 
-Ultimate Multisite quindi convaliderà il numero IVA e, se risulta valido, verrà applicato il meccanismo di reverse charge e l'aliquota fiscale sarà impostata al 0% su quell'ordine.
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+
+Ultimate Multisite convaliderà quindi il numero di partita IVA e, se risulterà valido, verrà applicato il meccanismo di inversione contabile e l'aliquota fiscale sarà impostata allo 0% su quell'ordine.

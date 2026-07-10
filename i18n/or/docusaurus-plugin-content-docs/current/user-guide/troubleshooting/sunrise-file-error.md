@@ -3,7 +3,7 @@ title: ସୂର୍ଯ୍ୟୋଦୟ ଫାଇଲ୍ ତ୍ରୁଟି
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ফাইল ইনস্টল করার ত্রুটি
+# Sunrise ফাইল ইনস্টল করার ত্রুটি {#error-installing-the-sunrise-file}
 
 sunrise.php ফাইলটি একটি বিশেষ ফাইল যা ওয়ার্ডপ্রেস নিজেকে চালু (bootstrap) করার সময় খোঁজে। ওয়ার্ডপ্রেসে sunrise.php ফাইলটি সনাক্ত করতে হলে, এটিকে **wp-content ফোল্ডারের** ভেতরে থাকতে হবে।
 

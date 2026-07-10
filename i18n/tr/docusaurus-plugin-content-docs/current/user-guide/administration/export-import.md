@@ -3,17 +3,17 @@ title: Dışa Aktarma ve İçe Aktarma
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Dışa Aktarma ve İçe Aktarma
+# Dışa Aktarma ve İçe Aktarma {#export--import}
 
 Ultimate Multisite 2.9.0, **Araçlar > Dışa Aktarma ve İçe Aktarma** altında tek bir site için **Dışa Aktarma ve İçe Aktarma** aracı ekler. Bu aracı, bir WordPress sitesini ZIP dosyası olarak paketlemeniz, bu ZIP dosyasını geri yüklemeniz veya bir siteyi uyumlu Ultimate Multisite ve tek site WordPress kurulumları arasında taşımanız gerektiğinde kullanın.
 
-## Gerekli İzinler
+## Gerekli İzinler {#required-permissions}
 
 Dışa aktaracağınız veya içe aktaracağınız sitede WordPress **Araçlar** menüsüne erişebilen bir yönetici olarak oturum açmanız gerekir. Bir multisite ağında, alt siteleri ağ düzeyindeki Ultimate Multisite araçlarından dışa aktarırken veya içe aktarırken bir ağ yöneticisi hesabı kullanın.
 
 Dışa aktarma ZIP indirmeleri, kimlik doğrulaması yapılmış bir indirme uç noktası üzerinden sunulduğu için, indirme işlemi bitene kadar yönetici oturumunuzu aktif tutun ve oluşturulan indirme URL'lerini kamuya açık paylaşmayın.
 
-## Bir Siteyi ZIP Olarak Dışa Aktarma
+## Bir Siteyi ZIP Olarak Dışa Aktarma {#exporting-a-site-to-a-zip}
 
 1. Kopyalamak istediğiniz sitenin WordPress yöneticisine gidin ve **Araçlar > Dışa Aktarma ve İçe Aktarma** yolunu izleyin.
 2. Dışa aktarma alanını açın ve paketlemek istediğiniz siteyi seçin.
@@ -23,7 +23,7 @@ Dışa aktarma ZIP indirmeleri, kimlik doğrulaması yapılmış bir indirme uç
 
 ZIP dosyasını güvenli bir yerde saklayın. Site içeriği, ayarlar, medya dosyaları ve seçilen kod varlıklarını içerebilir.
 
-## Dışa Aktarma Neleri İçerir
+## Dışa Aktarma Neleri İçerir {#what-the-export-includes}
 
 Bir dışa aktarma ZIP dosyası şunları içerebilir:
 
@@ -34,7 +34,7 @@ Bir dışa aktarma ZIP dosyası şunları içerebilir:
 
 Tam ZIP boyutu, medya miktarına, seçilen eklenti ve temalara ve sitenin veritabanı tablolarının boyutuna bağlıdır.
 
-## Bir Siteyi ZIP'ten İçe Aktarma
+## Bir Siteyi ZIP'ten İçe Aktarma {#importing-a-site-from-a-zip}
 
 1. Hedef WordPress sitesinde **Araçlar > Dışa Aktarma ve İçe Aktarma** yolunu izleyin.
 2. İçe aktarma alanını açın ve Dışa Aktarma ve İçe Aktarma aracı tarafından oluşturulan ZIP dosyasını yükleyin.
@@ -46,7 +46,7 @@ Tam ZIP boyutu, medya miktarına, seçilen eklenti ve temalara ve sitenin verita
 
 Tek site WordPress kurulumunda, bir ZIP dosyası içe aktarılması mevcut siteyi içe aktarılan site ile değiştirir. Başlamadan önce hedef sitenin tam bir yedeğini alın ve aynı anda aynı site için birden fazla içe aktarma başlatmaktan kaçının.
 
-## Sınırlamalar ve Uyumluluk Notları
+## Sınırlamalar ve Uyumluluk Notları {#limitations-and-compatibility-notes}
 
 - Çok büyük yüklemeler dizinleri veya medya kütüphaneleri büyük ZIP dosyaları oluşturabilir. Büyük siteleri dışa aktarmadan veya içe aktarmadan önce PHP yükleme limitlerini, yürütme limitlerini, disk alanını, belleği ve sunucu zaman aşımı ayarlarını kontrol edin.
 - Çok büyük medya kütüphaneleri, düşük trafikli bir bakım penceresinde taşınması gerekebilir.

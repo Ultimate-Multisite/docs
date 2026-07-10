@@ -3,11 +3,11 @@ title: Kura ir Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Kāpēc Ultimate Multisite
+# Kāpēc Ultimate Multisite {#why-ultimate-multisite}
 
 Ja jūs esat lasījis šo rakstu, iespējams jūs gavurējies, ka mūsu plugin var būt risinājums jūsu biznesa idejas izrealizēšanai. Mēs hopejam, ka jums būs atbildes, kas jums nepieciešamas šīs raksta beigās.
 
-## Kāds ir Ultimate Multisite?
+## Kāds ir Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ir WordPress Multisite plugin, kas ļauj jums piedāvāt klientiem WaaS (Website as a Service). Ar mūsu pluginu jūs varat turēt dažādus abīgu līmeņus un klientiem ietverēt periodiskus maksājumus, lai viņi varētu izmantot jūsu Multisite tīklu hostēto vietni.
 
@@ -15,7 +15,7 @@ Ultimate Multisite ļauj jums saņemt maksājumus ar dažādiem iekļaujami (pie
 
 Un tas ir tikai sākums, jo jūs varat paplašināt tās funkcijas ar add-ons un webhooks.
 
-## Citas funkcijas
+## Citas funkcijas {#other-features}
 
 Ultimate Multisite arī piedāvā:
 
@@ -33,11 +33,11 @@ Un vēl sarežģītāki lietotniecības:
 
 * Mēģinājuma un mainīšanas API (Search and Replace API): Jūs varat arī annotēt vietnes šablonus ar zīmes, piemēram `{{site_name}}`, un izmantot Search and Replace API automātiski aizpildīt šīs zīmes ar informāciju, ko jūsu klientam sniedz pēc reģistrācijas.
 
-## Lietošanas scenāriji (Use cases)
+## Lietošanas scenāriji (Use cases) {#use-cases}
 
 Tagad ir laiks redzēt dažus iespējamos lietojumus Ultimate Multisite.
 
-### Scēnarijs 1: Aģentūra
+### Scēnarijs 1: Aģentūra {#case-1-an-agency}
 
 Tipiski aģentūras galvenās prasmes atrodas vietņu dizainā, kuram ir aspekti, piemēram, viņu hostings vai mārketinga piedāvājumi kā papildu pakalpojumi.
 
@@ -47,7 +47,7 @@ Pluginu un temoj stīgs kontroli tiek saglabāts pēc produktu (per-product basi
 
 Agentūrija var saņemt klaupniecību ar Ultimate Multisite, kas ļauj viņiem darīt to, ko labāk: izveidot izcilus vietnes dizainus.
 
-### Pārdevējs 2: Niche pakalpojumu sniedzējs
+### Pārdevējs 2: Niche pakalpojumu sniedzējs {#case-2-niche-provider}
 
 Ir viena veca izteika, ka saka: "Izveidi vienu lietu un izveidi to labi". Daudziem speciālistiem tas nozīmē produktu vai pakalpojuma izveidi centrāno vienas galvenās idejas.
 
@@ -57,7 +57,7 @@ Ultimate Multisite inovative funkcija ir tāds template vietnes, kurā temā ir 
 
 Niche vietņu un pakalpojumu sniedzējam tas nodrošina neparvērīgu priekšrocību: spēju ātri izveidot vietni, kas ir gatava lietošanai ar personizētām pluginiem un dizainu. Klientam pietiek minimālas ievadības, lai pabeigtu pakalpojumu.
 
-### Pārdevējs 3: WordPress vebhostings
+### Pārdevējs 3: WordPress vebhostings {#case-3-wordpress-web-hosting}
 
 Ir negrūta veidu hostēt WordPress vietnes, bet ļoti retkasti tas ir tik vienkārši kā sniegt klientam vebu vietu ar iepriekš instalētu WordPress versiju. Tas ir tā, jo vairāki lēmumi un apsvērumi jāvienojas, lai sniegtu nozīmīgu pakalpojumu.
 

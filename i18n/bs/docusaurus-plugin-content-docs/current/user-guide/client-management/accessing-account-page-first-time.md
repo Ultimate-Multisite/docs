@@ -3,7 +3,7 @@ title: Pristup stranici računa
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Kako mogu pristupiti stranici svog računa prvi put?
+# Kako mogu pristupiti stranici svog računa prvi put? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Dobrodošli u Ultimate Multisite!
 

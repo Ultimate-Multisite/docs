@@ -3,11 +3,11 @@ title: Egemen Taşıma İş Akışı
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Egemen Taşıma İş Akışı
+# Egemen Taşıma İş Akışı {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, standart bir alt siteyi egemen kiracı altyapısına taşımak için taşıma doğrulama kapıları ekler.
 
-## Başlamadan Önce
+## Başlamadan Önce {#before-you-start}
 
 Şunların olduğundan emin olun:
 
@@ -17,7 +17,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0, standart bir alt siteyi egemen kiracı 
 - Hedef ortamla eşleşen bir veritabanı sunucu bağlaması (binding).
 - Ağ için WP-CLI komutlarını çalıştırma erişimi.
 
-## Önerilen İş Akışı
+## Önerilen İş Akışı {#recommended-workflow}
 
 1. Hedef kiracı veritabanını ve dosya sistemini hazırlayın.
 2. Kiracı izolasyon ayarlarını kaydedin veya güncelleyin.
@@ -28,7 +28,7 @@ Ultimate Multisite: Multi-Tenancy 1.2.0, standart bir alt siteyi egemen kiracı 
 7. SSO ile kiracıya gidin.
 8. Doğrulama geçtikten sonra DNS'i veya yönlendirmeyi değiştirin.
 
-## Doğrulama Kapıları
+## Doğrulama Kapıları {#verification-gates}
 
 Doğrulama iş akışı taşımayı çeşitli açılardan kontrol eder:
 
@@ -40,6 +40,6 @@ Doğrulama iş akışı taşımayı çeşitli açılardan kontrol eder:
 
 Doğrulama hatalarını lansman öncesi engel olarak görün. Bildirilen veritabanı, kullanıcı, kuyruk veya yönlendirme sorununu düzeltin, ardından kiracıyı müşterilere açmadan tekrar doğrulama yapın.
 
-## İlk Üretim Ziyareti
+## İlk Üretim Ziyareti {#first-production-visit}
 
 Doğrulama başarıyla geçtikten sonra, ilk yönetici ziyareti için site yönetim ekranından **Ziyaret Et (SSO)** özelliğini kullanın. Bu, kiracı yönlendirmesini, SSO token işleme, kaynak sabitleme ve kiracı tarafı kullanıcı sağlama işlemlerini tek bir kontrollü adımda doğrular.

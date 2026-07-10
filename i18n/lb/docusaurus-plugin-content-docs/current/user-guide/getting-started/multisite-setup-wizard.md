@@ -3,7 +3,7 @@ title: Multisite-Usetzigsassistent
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite beinhaltet en eingebauten wizard, wo eifach e normale WordPress-Installation automatisch in es WordPress Multisite Netzwerk umwandlet. Das heisst, du muesch nöd manuell `wp-config.php` bearbeite oder Datenbankbefehl usfüehre.
 
@@ -11,13 +11,13 @@ Ultimate Multisite beinhaltet en eingebauten wizard, wo eifach e normale WordPre
 Wenn dini WordPress-Installation scho als Multisite-Netzwerk lauft, chasch dä Schritt ganz überspringe. De wizard zeigt sich nur a, wenn Multisite no nöd aktiviert isch.
 :::
 
-## Wann erscheint de Wizard?
+## Wann erscheint de Wizard? {#when-does-the-wizard-appear}
 
 Wenn du Ultimate Multisite uf e normale (nöd-Multisite) WordPress-Installation aktiviersch, merkt s Plugin, dass Multisite nöd aktiviert isch, und leitet dich automatisch zum Multisite Setup Wizard statt zum normale Setup Wizard wiiter.
 
 Du chasch ihn au direkt unter **WP Admin > Ultimate Multisite > Multisite Setup** erreiche.
 
-## Voraussetzungen
+## Voraussetzungen {#prerequisites}
 
 Bevor du de wizard startisch, stell sicher:
 
@@ -29,7 +29,7 @@ Bevor du de wizard startisch, stell sicher:
 De wizard verändert dini `wp-config.php` Datei und erstellt neui Datenbanktabellen. Mach immer es Backup, bevor du wiitergaasch.
 :::
 
-## Schritt 1: Willkomme
+## Schritt 1: Willkomme {#step-1-welcome}
 
 D'ersti Bildschirm erklärt dir, was WordPress Multisite isch und was de wizard macht:
 
@@ -42,11 +42,11 @@ D'ersti Bildschirm erklärt dir, was WordPress Multisite isch und was de wizard 
 
 Klick uf **Weiter**, um wiiterzgah.
 
-## Schritt 2: Netzwerkkonfiguration
+## Schritt 2: Netzwerkkonfiguration {#step-2-network-configuration}
 
 Dä Schritt fragt dich, wie du dini Netzwerkeinstellungen konfiguriere wetsch.
 
-### Site Struktur
+### Site Struktur {#site-structure}
 
 Wähle, wie dini Netzwerbsite organisiert wëll sinn:
 
@@ -57,17 +57,17 @@ Wähle, wie dini Netzwerbsite organisiert wëll sinn:
 Wenn du Subdomains wählst, muesch **wildcard DNS** und en **wildcard SSL certificate** fir dini Domain konfiguréieren. D'meescht verwaltete WordPress-Hosts mache das automatisch. Lueg [Ultimate Multisite 101](./ultimate-multisite-101) für en detailléierte Verglich.
 :::
 
-### Netzwerknam
+### Netzwerknam {#network-title}
 Gib en Name fir din Netzwer. Dat standardmäßig de Titel vo din aktuelle Site mit "Network" am End hät. Du chann dä speter us de Netzwerkeinstellungen ändere.
 
-### Netzwerkinformatioun Email
+### Netzwerkinformatioun Email {#network-admin-email}
 D'E-Mail-Adrässe, déi fir d'Netzwerkadministratiounsinifikatiounsmeldungen bruucht gëtt. Dat standardmäßig d'E-Mail-Adrässe vum aktuelle Benutzer hät.
 
 ![Multisite Setup Wizard - Network Configuration](/img/installation/multisite-wizard/wizard-network-configuration.png)
 
 Nachdem du déi Felcher ugefült häsch, klick uf **Continue**, um wiiterz'fahre.
 
-## Schritt 3: Installation
+## Schritt 3: Installation {#step-3-installation}
 
 Klick uf de **Install** Button, um z'beginnen. De Wizard führt fünf automatiséiert Schrëtt i Sekwenz us, wobei jede sin Fortschritt in Echtzita zeigt:
 
@@ -94,7 +94,7 @@ Sobald alli Schritt erfolgreich fertig sind, gsehsch für jede Punkt en grüene 
 
 De Wizard gaht denn automatisch zur Abschlussbildschirm über.
 
-## Schritt 4: Fertig
+## Schritt 4: Fertig {#step-4-complete}
 
 Sobald d'Installation fertig isch, gsehsch en Erfolgsmeldig, wo bestätigt, dass WordPress Multisite aktiviert worde isch.
 
@@ -106,7 +106,7 @@ Jetzt chasch mit em Ultimate Multisite Setup Wizard wiiterfahre und dini WaaS Pl
 Nachdem d'Multisite-Installation fertig isch, wird din Browser über de neu aktivierti Netzwerkadmin umgleitet. Du chönntsch eventuell no mal iilogge müesse, will d'Authentifizierigs-Cookies für d'Multisite-Umgebig aktualisiert sind.
 :::
 
-## Manuelle Einrichtung als Fallback
+## Manuelle Einrichtung als Fallback {#manual-setup-fallback}
 
 Wenn de Wizard nöd in dini `wp-config.php` Datei schriibe cha (wäg Dateberechtigunge oder Serverbeschränkige), zeigt er dir genau de Code, wo du manuell dezuefüege muesch:
 
@@ -115,9 +115,9 @@ Wenn de Wizard nöd in dini `wp-config.php` Datei schriibe cha (wäg Dateberecht
 
 Nachdem du die manuelle Änderige gmacht hesch, lade d'Seite neu und de Wizard wird merke, dass s'Multisite jetzt aktiv isch.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-### De Wizard seit, wp-config.php isch nöd schriibbar (not writable)
+### De Wizard seit, wp-config.php isch nöd schriibbar (not writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Dini Webserver-Prozess brucht Schreibberechtigunge für d'Datei `wp-config.php`. Du chasch entweder:
 
@@ -125,7 +125,7 @@ Dini Webserver-Prozess brucht Schreibberechtigunge für d'Datei `wp-config.php`.
 - D'Anleitige zur manuellen Einrichtung vom Wizard verwände
 - Din Hosting-Provider um Hilf bitte
 
-### Sites sind nach de Einrichtung nöd zuegänglich (Subdomains)
+### Sites sind nach de Einrichtung nöd zuegänglich (Subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Wenn du d'Subdomain-Struktur gwählt hesch, muesch du **Wildcard DNS** für dini Domain konfiguriere. Füeg en DNS-Eintrag dezue:
 
@@ -137,7 +137,7 @@ Value: [din Server IP]
 
 Frag din Hosting-Provider, wenn du nöd weisch, wie du das konfiguriersch.
 
-### Authentifizierigs-Problem nach de Einrichtung
+### Authentifizierigs-Problem nach de Einrichtung {#authentication-issues-after-setup}
 
 Wenn du abglogge bisch oder Cookie-Fehler häsch nach de Multisite-Einrichtig:
 
@@ -145,7 +145,7 @@ Wenn du abglogge bisch oder Cookie-Fehler häsch nach de Multisite-Einrichtig:
 2. Log di no mal i uf `yourdomain.com/wp-login.php`
 3. Wenn s'Problem wiitergoht, überprüef, ob dini `wp-config.php` nöd `COOKIE_DOMAIN` uf `false` gsetzt het — das isch es bekanntes Problem bi Multisite-Installationen mit Subdomains.
 
-### En Schritt isch während de Installation fehlgschlage
+### En Schritt isch während de Installation fehlgschlage {#a-step-failed-during-installation}
 
 Wenn eini vo de Installatierschritt en Fehler zeigt:
 

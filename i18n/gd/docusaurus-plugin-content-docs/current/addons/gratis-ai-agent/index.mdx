@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Tha Gratis AI Agent na neach-cuideachaidh AI WordPress fèin-riaghailteach as urrainn làraichean WordPress slàn a phlanadh, a thogail, agus a stiùireadh tro stiùiridhean ann an cànan nàdarra. Bidh e a’ nochdadh seata structaraichte de **chomasan** — gnìomhan fa leth, so-dhearbhaidh as urrainn dhan agent a ghairm — a’ còmhdach gach nì bho stiùireadh susbaint gu gnàthachadh siostam dealbhaidh. Tha tionndadh 1.9.0 a’ cur comasan cruthachaidh susbaint ris, lèirmheas lèirsinneach air duilleagan tro dhealbhan-sgrìn taobh-client, còig pròifilean agent togte, agus brataichean feart airson smachd-ruigsinneachd agus branndadh.
+
+## Prìomh Fheartan {#key-features}
+
+- **Siostam chomasan** — catalóg mhodalach, leudachail de ghnìomhan as urrainn dhan agent a ghairm air an stàladh WordPress agad
+- **Stiùireadh Susbaint** — cruthaich puist agus duilleagan (a’ gabhail a-steach sònrachadh teamplaidean duilleige), cruthaich iomadh post ann am baidse ann an aon ghairm, suidhich ìomhaighean comharraichte, agus tog foirmean conaltraidh
+- **Lèirmheas Lèirsinneach** — glac dealbhan-sgrìn de dhuilleagan beò, dèan coimeas eadar stàitean ro/às dèidh, agus faigh lèirmheas dealbhaidh air a ghineadh le AI a’ còmhdach cruth, clò-ghrafachd, dath, agus ruigsinneachd
+- **Còig agents togte** — Sgrìobhadair Susbaint, Togail Làraich, Stiùidio Dealbhaidh, Manaidsear Plugin, agus Neach-cuideachaidh Taice; gabh atharrachadh tro Agent Picker ann am bann-cinn a’ chabadaich
+- **Brataichean feart** — suidsichean smachd-ruigsinneachd agus branndaidh ann an Settings → Feature Flags airson cuingealachaidhean dreuchd, ainmeachadh white-label, agus gnàthachadh widget
+- **Stiùireadh Seòrsa Post Gnàthaichte** — clàraich, liostaich, agus sguab às seòrsaichean post gnàthaichte le seasmhachd thar ath-thòiseachaidhean
+- **Stiùireadh Tacsonamaidh Gnàthaichte** — clàraich, liostaich, agus sguab às tacsonamaidhean gnàthaichte le seasmhachd
+- **Comasan Siostam Dealbhaidh** — cuir a-steach CSS gnàthaichte, stiùir pàtrain bhlocaichean air an taghadh, suidhich suaicheantas na làraich, agus cuir ro-shuidhichidhean theme.json an sàs
+- **Stiùireadh Stoidhlichean Cruinneil** — leugh agus sgrìobh luachan theme.json airson paileatan dath, clò-ghrafachd, beàrnadh, agus barrachd
+- **Stiùireadh Clàr-taice Seòlaidh** — cruthaich agus ùraich clàran-taice seòlaidh agus na nithean aca gu prògramaichte
+- **Stiùireadh Roghainnean** — leugh agus sgrìobh roghainnean WordPress le blocklist sàbhailteachd togte gus roghainnean èiginneach a dhìon
+- **Clàr Chomasan Stàlaichte** — lorg agus cuir an gnìomh pacaidean comais a bharrachd gun fhaidhlichean bunaiteach a’ plugin atharrachadh
+- **Orcastrachadh Site Builder v2** — planaichean togail làraich ioma-cheum le lorg plugin, tracadh adhartais, agus faighinn seachad air mearachdan
+- **Àithne tomhais WP-CLI** — ruith sreath-tomhais comasan an agent bhon loidhne-àithne airson CI agus measadh modail
+
+## Riatanasan {#requirements}
+
+- WordPress 6.0 no nas àirde
+- PHP 8.1 no nas àirde
+- WordPress Multisite (air a ghnìomhachadh air an lìonra) no stàladh aon-làraich
+- Plugin ceanglaiche solaraiche AI gnìomhach (Anthropic, OpenAI, no co-chòrdail)
+
+## Stàladh {#installation}
+
+1. Luchdaich suas faidhlichean a’ plugin gu `/wp-content/plugins/gratis-ai-agent`
+2. Cuir an plugin an gnìomh tron sgrìn **Plugins** ann an WordPress
+3. Seòl gu **Gratis AI Agent → Settings** agus ceangail an solaraiche AI agad
+4. (Roghainneil) Brabhsaich an **Clàr Chomasan** gus pacaidean comais a bharrachd a stàladh
+
+## Tòiseachadh Luath {#quick-start}
+
+Nuair a bhios e air a ghnìomhachadh agus ceangailte ri solaraiche AI, fosgail pannal **Gratis AI Agent** ann am bàr-taoibh rianachd WordPress. Sgrìobh stiùireadh ann an cànan nàdarra agus planaidh agus coileanaidh an agent na ceuman a tha a dhìth a’ cleachdadh nan comasan a tha ri fhaighinn dha.
+
+**Eisimpleirean de stiùiridhean:**
+
+```
+Cruthaich seòrsa post gnàthaichte “Pasgan-obrach” le tacsonamaidh “Roinn-seòrsa Pròiseict”.
+```
+
+```
+Cuir paileat dath modh-dorcha a-steach dhan theme agus suidhich am prìomh dhath gu #1a1a2e.
+```
+
+```
+Tog làrach-lìn taigh-bìdh le clàr-bìdh air-loidhne, foirm glèidhidh, agus duilleag conaltraidh.
+```
+
+## Sealladh Coitcheann air Comasan {#abilities-overview}
+
+Is e comasan na gnìomhan atamach as urrainn dhan agent a dhèanamh. Tha gach comas na chlas PHP clàraichte a nochdas sgeama (paramadairean agus seòrsaichean tilleadh) a leughas an agent aig àm-ruith. Tha comasan air an cruinneachadh ann an raointean gnìomhach:
+
+| Raon | Comasan |
+|---|---|
+| **Stiùireadh Susbaint** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Lèirmheas Lèirsinneach** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Seòrsaichean Post Gnàthaichte** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Tacsonamaidhean Gnàthaichte** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Siostam Dealbhaidh** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Stoidhlichean Cruinneil** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Clàran-taice Seòlaidh** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Stiùireadh Roghainnean** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Comasan Stàlaichte** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Faic an [Tùs-iomradh Chomasan](./abilities) airson làn sgrìobhainnean pharamadairean agus eisimpleirean cleachdaidh.
+
+## WP-CLI {#wp-cli}
+
+Tha Gratis AI Agent a’ tighinn le teaghlach àitheantan `wp gratis-ai-agent` airson tomhasan a ruith agus comasan a stiùireadh bhon loidhne-àithne. Faic an [Tùs-iomradh WP-CLI](./wp-cli) airson làn liosta nan àitheantan.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Rèiteachadh {#configuration}
+
+Tha a h-uile suidheachadh fo **Gratis AI Agent → Settings** ann an rianachd WordPress:
+
+| Suidheachadh | Tuairisgeul |
+|---|---|
+| **Solaraiche AI** | Tagh agus rèitich ceanglaiche an t-solaraiche AI ghnìomhaich |
+| **Modail** | Tagh am modail cànain ri chleachdadh airson seiseanan agent |
+| **Max Tokens** | Buidseat token gach iarrtais (bunaiteach 4096) |
+| **Ùine-crìochnachaidh Comais** | An àireamh as motha de dhiogan as urrainn do chomas fa leth ruith (bunaiteach 30) |
+| **Logadh Dì-bhugachaidh** | Logaich gairmean chomais agus reusanachadh an agent gu loga dì-bhugachaidh WordPress |
+
+## Blocklist Sàbhailteachd Stiùireadh Roghainnean {#options-management-safety-blocklist}
+
+Tha comas Stiùireadh Roghainnean a’ gabhail a-steach blocklist thogte a chuireas casg air an agent bho bhith a’ leughadh no a’ sgrìobhadh roghainnean WordPress mothachail. Tha am blocklist bunaiteach a’ còmhdach:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (roghainnean URL — cleachd inneal imrich sònraichte dhaibh seo)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (iuchraichean dìomhair)
+- `active_plugins`, `template` (gnìomhachadh plugin/theme — cleachd comasan sònraichte)
+- Teisteanasan payment gateway agus iuchraichean API clàraichte le plugins stàlaichte
+
+Faodar inntrigidhean a bharrachd a chur ris tron filter `gratis_ai_agent_options_blocklist`.
+
+## Hooks agus Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — air a chur an gnìomh às dèidh comas a chlàradh, a’ faighinn ainm clas a’ chomais
+- `gratis_ai_agent_plan_started` — air a chur an gnìomh nuair a thòisicheas plana togail làraich air ruith
+- `gratis_ai_agent_plan_completed` — air a chur an gnìomh nuair a chrìochnaicheas plana gu soirbheachail
+- `gratis_ai_agent_plan_failed` — air a chur an gnìomh nuair a thachras mearachd nach gabh fhaighinn seachad oirre ann am plana
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — atharraich liosta nan comasan clàraichte mus luchdaich an agent i
+- `gratis_ai_agent_options_blocklist` — leudaich no lùghdaich blocklist sàbhailteachd nan roghainnean
+- `gratis_ai_agent_benchmark_questions` — cuir ceistean benchmark gnàthaichte ris an t-sreath mheasaidh
+- `gratis_ai_agent_plan_plugins` — atharraich liosta lorg nam plugins rè gineadh plana làraich
+
+## Taic {#support}
+
+Airson taic, tadhail air [ultimatemultisite.com](https://ultimatemultisite.com) no fosgail issue ann an stòr-dàta a’ plugin.
+
+## Changelog {#changelog}
+
+Faic an [Changelog](./changelog) airson eachdraidh iomlan nan tionndaidhean.

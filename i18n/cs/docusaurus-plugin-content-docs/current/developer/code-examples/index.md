@@ -3,11 +3,11 @@ title: Pokročilé příklady kódu
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Pokročilé příklady kódu
+# Pokročilé příklady kódu {#advanced-code-examples}
 
 Tyto příklady demonstrují pokročilé vzory integrace s Ultimate Multisite.
 
-## Dynamický motor cenotvorby
+## Dynamický motor cenotvorby {#dynamic-pricing-engine}
 
 Motor cenotvorby založený na pravidlech, který aplikuje slevy zohledňující objem, loajalitu a sezónnost:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Pokročilé poskytování sítí (Site Provisioning)
+## Pokročilé poskytování sítí (Site Provisioning) {#advanced-site-provisioning}
 
 Automatické nakonfigurování nových sítí s pluginy, SSL, CDN, zálohováním a monitorováním na základě funkcí plánu:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Systém vlastních omezení (Custom Limitations System)
+## Systém vlastních omezení (Custom Limitations System) {#custom-limitations-system}
 
 Sledování a vynucování limitů zdrojů s varováním o překročení limitu:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Atomický počítadlo BerlinDB s `increment_item()`
+## Atomický počítadlo BerlinDB s `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 přidalo metodu `increment_item()` do třídy `Query` v BerlinDB. Použijte ji k provedení bezpečných, atomických inkrementací na numerických sloupcích bez problémů závěsných stavů (read-modify-write races) — je to užitečné pro počítadla, kvóty využití a kontroly rychlosti (rate-limiting), které běží při souběžných požadavcích.
 
-### Signatura metody
+### Signatura metody {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 přidalo metodu `increment_item()` do třídy `Query` 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Základní použití
+### Základní použití {#basic-usage}
 
 ```php
 // Přičte 1 k sloupci `api_calls` pro ID členství 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Sledování využití API na základě členství
+### Sledování využití API na základě členství {#tracking-api-usage-per-membership}
 
 Praktický vzor pro vynucování limitů rychlosti API na úrovni členství:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Proč `increment_item()` místo `update_item()`
+### Proč `increment_item()` místo `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Nívejší přístup čtení-modifikace-zápisu (read-modify-write) není bezpečný při souběžných požadavcích:
 

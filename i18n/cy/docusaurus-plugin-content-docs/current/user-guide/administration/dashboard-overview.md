@@ -3,11 +3,11 @@ title: Oversiwn y Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Oglwyddol y Cyflwyniadau
+# Oglwyddol y Cyflwyniadau {#dashboard-overview}
 
 Mae Ultimate Multisite yn cael **Dashboard** clinol olaf i'r menydd Ultimate Multisite, ac hefyd yn ychwanegu widgets i'r Network Dashboard. Mae'r ail ddefnyddiad hwn yn gwrcio beth byddwch yn gweld mewn both lle.
 
-## Y Network Dashboard
+## Y Network Dashboard {#the-network-dashboard}
 
 Mae Ultimate Multisite yn cyflwyno widgets sydd yn ddefnyddiol i'r dashboard-level y network, a fydd yn cael ei ddarganfod ar gyfer **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Dyma beth mae pob widget yn rhoi:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Y Dashboard Ultimate Multisite
+## Y Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Er bod y dashboard network yn dangos wybodaeth holol am y network, mae'r dashboard Ultimate Multisite (ar cefn-goleg menydd Ultimate Multisite) yn dangos wybodaeth am y gwasanaeth.
 

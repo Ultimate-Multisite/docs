@@ -3,15 +3,15 @@ title: Orchestration v2 του Site Builder
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Το Site Builder Orchestration v2 (ενλήφθη στο Gratis AI Agent v1.4.0) είναι ο μηχανισμός που τροφοδοτεί τη δημιουργία ιστοσελίδων με πολλαπλά βήματα. Όταν ζητάτε από το agent να «χτίσει μια ιστοσελίδα για εστιατόριο» ή να «δημιουργήσει ένα portfolio με blog», ο orchestrator αναλύει αυτόν τον υψηλού επιπέδου στόχο σε ένα δομημένο **plan**, ανακαλύπτει τα plugins που χρειάζονται για να το επιτύχει, εκτελεί κάθε βήμα με τη σειρά, παρακολουθεί την πρόοδο και ανακτά αυτόνομα από λάθη.
 
 ---
 
-## Πώς Λειτουργεί
+## Πώς Λειτουργεί {#how-it-works}
 
-### 1. Δημιουργία Plan (Plan Generation)
+### 1. Δημιουργία Plan (Plan Generation) {#1-plan-generation}
 
 Όταν το agent λαμβάνει μια εντολή για τη δημιουργία ενός site, καλεί την ability `create_site_plan` για να παράγει ένα JSON **site plan**. Το plan περιγράφει:
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. Plugin Discovery
+### 2. Plugin Discovery {#2-plugin-discovery}
 
 Πριν ξεκινήσει η εκτέλεση, ο orchestrator σαρώνει τα `plugin_requirements` του plan και ελέγχει ποια plugins είναι ήδη ενεργά. Για τα λείποντα plugins, κάνει τα εξής:
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 Οι αποτυχίες αναγνώρισης plugins δεν είναι καταστροφικές — ο orchestrator σημειώνει τα επηρεασμένα βήματα ως `skipped` και συνεχίζει με τα υπόλοιπα βήματα του plan.
 
-### 3. Plan Execution
+### 3. Plan Execution {#3-plan-execution}
 
 Ο orchestrator καλεί το `execute_site_plan` με το plan ID. Η εκτέλεση προχωρά phase-by-phase, step-by-step:
 
@@ -79,7 +79,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 - **Parallel steps** — τα βήματα εντός της ίδιας phase που δεν έχουν εξαρτήσεις μεταξύ τους εκτελούνται ταυτόχρονα όταν ο flag `parallel` είναι ενεργός.
 - **Step timeout** — κάθε βήμα έχει ένα μεμονωμένο timeout (default: η ρύθμιση `Ability Timeout`). Ένα βήμα που έχει λήξει το χρόνο σημειώνεται ως `failed` και το plan συνεχίζει.
 
-### 4. Progress Tracking
+### 4. Progress Tracking {#4-progress-tracking}
 
 Κλήστε το `get_plan_progress` οποιαδήποτε στιγμή για να ελέγξετε την κατάσταση εκτέλεσης:
 
@@ -104,7 +104,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Error Recovery
+### 5. Error Recovery {#5-error-recovery}
 
 Όταν αποτύχει ένα βήμα, ο orchestrator ελέγχει για ένα **fallback** βήμα που ορίστηκε στο plan:
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Δημιουργεί ένα δομημένο site plan από μια περιγραφή στόχου σε φυσική γλώσσα.
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Ξεκινά την εκτέλεση ενός προηγουμένως δημιουργημένου site plan.
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Επιστρέφει την τρέχουσα κατάσταση εκτέλεσης ενός site plan.
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Διευθετεί χειροκίνητα ένα αποτυχημένο βήμα και συνεχίζει την εκτέλεση του plan από το επόμενο βήμα. Χρησιμοποιήστε αυτό όταν η αυτόματη ανάκτηση δεν ήταν δυνατή και θέλετε να παρέμβετε.
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## Σύγκριση v1 και v2
+## Σύγκριση v1 και v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI Plan Commands
+## WP-CLI Plan Commands {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Δημιουργεί ένα site plan από μια περιγραφή στόχου.
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Εκτελεί ένα προηγουμένως δημιουργημένο plan.
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Εμφανίζει την τρέχουσα πρόοδο για ένα εκτελούμενο ή ολοκληρωμένο plan.
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Λίσταρε όλα τα site plans (pending, in-progress, και completed).
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Επαναφέρει ένα αποτυχημένο plan σε `pending` ώστε να μπορεί να εκτελεστεί ξανά από την αρχή.
 

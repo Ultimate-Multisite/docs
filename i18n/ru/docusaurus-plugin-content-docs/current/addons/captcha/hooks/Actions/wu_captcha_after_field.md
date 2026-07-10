@@ -4,21 +4,21 @@ title: Действие - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Действие: wu_captcha_after_field
+# Действие: wu_captcha_after_field {#action-wucaptchaafterfield}
 
 Срабатывает после отображения поля капчи.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $args | `array` | Аргументы рендеринга. |
 | $output | `string` | Отрендеренный HTML. |
 
-### С версии
+### С версии {#since}
 
 - 1.2.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L144) на строке 144

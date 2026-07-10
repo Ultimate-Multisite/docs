@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Conector Ultimate AI para Endpoints Compatibles" />
 
-# Conector Ultimate AI para Endpoints Compatibles
+# Conector Ultimate AI para Endpoints Compatibles {#ultimate-ai-connector-for-compatible-endpoints}
 
 El Conector Ultimate AI para Endpoints Compatibles integra APIs de proveedores de IA compatibles con OpenAI en su red multisite de WordPress. Configure múltiples proveedores de IA — cada uno con su propia URL de endpoint, clave API y modelo predeterminado — y enrute las solicitudes con una recuperación automática cuando un proveedor no está disponible.
 
-## Características Clave
+## Características Clave {#key-features}
 
 - **Soporte multi-proveedor**: Agregue múltiples tarjetas de proveedores de IA, cada una con su propia URL de endpoint, clave API y modelo predeterminado.
 - **Reordenar arrastrando**: Organice los proveedores por prioridad usando el asa de agarre de cada tarjeta; las solicitudes utilizan los proveedores en orden.
@@ -21,26 +21,26 @@ El Conector Ultimate AI para Endpoints Compatibles integra APIs de proveedores d
 - **Autoexpansión al agregar**: Las nuevas tarjetas de proveedores se expanden automáticamente para que pueda ingresar los detalles de inmediato.
 - **Anti-caché de scripts**: Los scripts de los proveedores se eliminan de la caché al actualizar el plugin para garantizar que se cargue la última versión.
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.3 o superior
 - PHP 7.4 o superior
 - Plugin Ultimate Multisite (activo)
 - Un endpoint API compatible con OpenAI (autohospedado o de terceros)
 
-## Instalación
+## Instalación {#installation}
 
 1. Suba los archivos del complemento a su directorio `/wp-content/plugins/`
 2. Active el plugin desde el menú 'Plugins' de WordPress
 3. Navegue a **Ultimate Multisite → AI Connector** para configurar el complemento
 
-## Configuración
+## Configuración {#configuration}
 
-### Configuración Multi-Proveedor
+### Configuración Multi-Proveedor {#multi-provider-setup}
 
 La pantalla de configuración utiliza un diseño basado en tarjetas, donde cada tarjeta representa un proveedor de IA. Puede agregar tantos proveedores como necesite.
 
-#### Agregar un Proveedor
+#### Agregar un Proveedor {#adding-a-provider}
 
 1. Vaya a **Ultimate Multisite → AI Connector** en el administrador de la red.
 2. Haga clic en **Add Provider** (Agregar proveedor).
@@ -52,15 +52,15 @@ La pantalla de configuración utiliza un diseño basado en tarjetas, donde cada 
    - **Default Model** (Modelo predeterminado): el identificador del modelo a usar por defecto para este proveedor (ej. `gpt-4o`, `mistral-small`).
 5. Haga clic en **Save Settings** (Guardar configuración).
 
-#### Eliminar un Proveedor
+#### Eliminar un Proveedor {#removing-a-provider}
 
 Haga clic en el botón **Remove** (Eliminar) en cualquier tarjeta de proveedor para borrarlo. Guarde la configuración para aplicar el cambio.
 
-#### Reordenar Proveedores
+#### Reordenar Proveedores {#reordering-providers}
 
 Arrastre el icono de agarre (⣿) en el lado izquierdo de cualquier tarjeta de proveedor para reordenarlo. El orden determina la prioridad de recuperación: las solicitudes se envían al primer proveedor y se recuperan con los proveedores subsiguientes si una solicitud falla.
 
-### Recuperación Automática de Rutas (Fallback Routing)
+### Recuperación Automática de Rutas (Fallback Routing) {#fallback-routing}
 
 Cuando una solicitud al proveedor principal falla — debido a un tiempo de espera agotado, límite de tasa o interrupción del servicio — el conector intenta automáticamente con el siguiente proveedor de la lista. Esto continúa por la lista hasta que un proveedor tiene éxito o se han intentado todos los proveedores.
 
@@ -72,7 +72,7 @@ Cuando una solicitud al proveedor principal falla — debido a un tiempo de espe
 
 La recuperación automática es transparente para el plugin o tema que llama; reciben una respuesta exitosa o un error final, independientemente de cuántos proveedores se hayan intentado.
 
-### Referencia de Configuración de Proveedores
+### Referencia de Configuración de Proveedores {#provider-configuration-reference}
 
 | Campo | Requerido | Descripción |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ La recuperación automática es transparente para el plugin o tema que llama; re
 | API Key | Sí | Clave de autenticación para este proveedor |
 | Default Model | Sí | Identificador de modelo utilizado cuando no se especifica un modelo en la solicitud |
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
-### No se muestran proveedores
+### No se muestran proveedores {#no-providers-are-listed}
 
 Si la lista de proveedores está vacía después de guardar, confirme que:
 
@@ -91,21 +91,21 @@ Si la lista de proveedores está vacía después de guardar, confirme que:
 - Su navegador no bloqueó el guardado de la página de configuración (revise la consola del navegador en busca de errores de JavaScript).
 - El plugin está activo y se encuentra en la pantalla del administrador de la red.
 
-### Las solicitudes fallan para todos los proveedores
+### Las solicitudes fallan para todos los proveedores {#requests-are-failing-for-all-providers}
 
 - Verifique que la URL de endpoint de cada proveedor sea accesible desde su servidor (no solo desde su navegador).
 - Compruebe que cada clave API sea válida y no haya caducado.
 - Revise el estado de límite de tasa y cuota del proveedor en su panel de control.
 - Active el registro de depuración de WordPress (`WP_DEBUG_LOG`) para capturar mensajes de error detallados del conector.
 
-### Un proveedor no se utiliza para la recuperación automática
+### Un proveedor no se utiliza para la recuperación automática {#a-provider-is-not-being-used-for-fallback}
 
 Reordenar arrastrando cambia el orden de recuperación. Confirme que el proveedor que espera recibir solicitudes de recuperación automática esté posicionado correctamente en la lista y que su URL de endpoint y clave API sean correctas.
 
-### La nueva tarjeta de proveedor no se expande automáticamente
+### La nueva tarjeta de proveedor no se expande automáticamente {#new-provider-card-does-not-expand-automatically}
 
 La autoexpansión requiere que JavaScript esté habilitado en su navegador. Si la tarjeta no se expande al hacer clic, revise la consola del navegador en busca de errores. El contenido de la tarjeta siempre es accesible haciendo clic en el encabezado de la tarjeta, incluso si la autoexpansión no se activa.
 
-## Registro de Cambios
+## Registro de Cambios {#changelog}
 
 Consulte [Changelog](./changelog) para ver el historial completo de versiones.

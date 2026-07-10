@@ -3,18 +3,18 @@ title: Abilitoj de Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Kapableite: Scaffoldado kaj Aktivado de Bloko Temoj
+# Theme Builder Kapableite: Scaffoldado kaj Aktivado de Bloko Temoj {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introducis du potempaj kapableite, kiuj pervasivas vi generi kaj deplopi personalajn bloko temojn direkten per la chataj interfacoj.
 
-## Vidoj
+## Vidoj {#overview}
 
 La kapabletoj **scaffold-block-theme** kaj **activate-theme** permesas agentoj:
 - Generi kompletan, produkcie bone temojn bazitajn sur viaj specifikoj
 - Automatik akтивi temojn sur via sitio sen manua intervento
 - Krei kohesian vizual identon per gviditaj dezajno decisionoj
 
-## Scaffoldado de Bloko Temo
+## Scaffoldado de Bloko Temo {#scaffold-block-theme}
 
 La kapablete **scaffold-block-theme** generas novan WordPress bloko temon kun kompleta temo strukturo, inkluzive:
 
@@ -23,7 +23,7 @@ La kapablete **scaffold-block-theme** generas novan WordPress bloko temon kun ko
 - Personalaj bloko stiloj kaj variaĵoj
 - Temo metadatenoj kaj suport deklaroj
 
-### Kiel Vokvi
+### Kiel Vokvi {#how-to-invoke}
 
 En via chato kun Superdav AI Agent, vi povas peti temon generadon:
 
@@ -38,7 +38,7 @@ La agent faros la seguinte:
 3. Krei ĉiuj necesajn temo filojn
 4. Prepara la temon por aktivado
 
-### Esperita Output
+### Esperita Output {#expected-output}
 
 Kiam la kapableto funkcias sukcese, vi vidus:
 
@@ -56,11 +56,11 @@ Ekzempla output:
   Status: Mekza por aktivado
 ```
 
-## Aktivado de Temo
+## Aktivado de Temo {#activate-theme}
 
 La abilitatività **activate-theme** ŝanĝas vian siton al novaj skaffoditaj aŭ ekzistantaj bloka temoj.
 
-### Kiel diri
+### Kiel diri {#how-to-invoke-1}
 
 Post kiam vi skaffodas temon, vi povas aktivi ĝin tute!
 
@@ -74,7 +74,7 @@ Aŭ aktivi ĉutajn temojn:
 "Mankovri al Twentytwentyfour temo"
 ```
 
-### Esperata rezulto
+### Esperata rezulto {#expected-output-1}
 
 Kiam aktiva sukcesas:
 
@@ -92,7 +92,7 @@ Ekzempla rezulto:
   Notado: Kontresas vian homilan pageon por verifi la layout
 ```
 
-## Flujo de laboro: Skaffodo kaj Aktiva
+## Flujo de laboro: Skaffodo kaj Aktiva {#workflow-scaffold-and-activate}
 
 Tutan flujon de laboro kombinas amba abilitajn:
 
@@ -102,7 +102,7 @@ Tutan flujon de laboro kombinas amba abilitajn:
 4. **Aktivi**: "Aktivi temon nun"
 5. **Verifi**: Viziti vian siton por konfirme novan dezajn vivaj
 
-## Dezajnovoj (Design Tokens) kaj Personaligo
+## Dezajnovoj (Design Tokens) kaj Personaligo {#design-tokens-and-customization}
 
 Skaffoditaj temoj uzas WordPress design tokens (via `theme.json`) por:
 
@@ -114,9 +114,9 @@ Skaffoditaj temoj uzas WordPress design tokens (via `theme.json`) por:
 
 Ĉi tiuj tokenoj estas sentrizitaj en `theme.json`, kion facile ŝanĝi vian tutan dezajnovajn sistemon el unu filiĝo.
 
-## Limitaĵoj kaj Notoj
+## Limitaĵoj kaj Notoj {#limitations-and-notes}
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Tema ne aperas po scaffoldado**
 - Verifiku si direktorio tema existe kaj havas la ĝustajn permesojn
@@ -133,7 +133,7 @@ Skaffoditaj temoj uzas WordPress design tokens (via `theme.json`) por:
 - Limigu (clear) ĉian cache pluginojn
 - Kontenu se via WordPress versio suportas la tokenojn, kiujn vi uzas
 
-## Proksimaj Paŝoj
+## Proksimaj Paŝoj {#next-steps}
 
 Post aktivado de via tema, vi povas:
 - Uzui la **Design System Aesthetics skill** por refine la tipografion, koloro kaj espacon

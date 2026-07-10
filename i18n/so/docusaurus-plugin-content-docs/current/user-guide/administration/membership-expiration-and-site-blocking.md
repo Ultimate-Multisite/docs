@@ -3,11 +3,11 @@ title: Wax-soo-gaalka Xubnaha iyo Ka-duubista Goobta
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Dhammaan Bixinta Xogta iyo Ka-dhacista Website-ka
+# Dhammaan Bixinta Xogta iyo Ka-dhacista Website-ka {#membership-expiration-and-site-blocking}
 
 Tani hagaha wuxuu sharxayaa sida Ultimate Multisite u maamulo dhimaadda bixintii (membership expiration), dhammaadka trial-yada, iyo ka-dhacista website-ka hore (frontend site blocking). Waa in la fahmo nolosha bixinta oo ka bilaabta hawl-qabashada ilaa dhamaadkiisa, dejimaha xakameeya in ma aha website-yada la ka hor istaagayo, iyo waxa la eego marka website-yadu weli la heli karo ka dib markii bixinta ay dhammaatay.
 
-## Nolosha Xaaladda Bixinta (Membership Status Lifecycle)
+## Nolosha Xaaladda Bixinta (Membership Status Lifecycle) {#membership-status-lifecycle}
 
 Bixinta kasta oo ku jirta Ultimate Multisite waxay leedahay hal xaalad oo ka mid ah kuwa soo socda:
 
@@ -24,7 +24,7 @@ Bixinta bilaashka ma dhamaato si toos ah. Ultimate Multisite waxay u aragtaa ina
 | **Expired** | Waa ka gudbay taariikhda dhimaadka iyo mudada fudud ee aan la cusboonaysiin |
 | **Cancelled** | Macaamiilka ama admin-ka si cad ay u xiray
 
-### Sida Xubnaha U Beddelo "Expired" (Ka Gudbaya)
+### Sida Xubnaha U Beddelo "Expired" (Ka Gudbaya) {#how-memberships-transition-to-expired}
 
 Ultimate Multisite wuxuu mar kasta oo saacado ah ka sameeyaa baaritaan dhab ah (background check) kaas oo raadinaya xubnaha ee ay u arki karaan inay yihiin kuwa la qabto in la calaamadeeyay "Expired". Baaritaankan wuxuu isticmaalaa [Action Scheduler](https://actionscheduler.org/) (islaa ah WP-Cron si toos ah) oo shaqaynaya sidii action-ka loo qorsheeyay `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Fiiro-gaar ah, hubinta muddo kasta waxay leedahay **muddo fudud oo ah 3 maalmood
 Muddo fudud ee 3 maalmood oo laga saaray mudada dhacda (expiration grace period) waxay kala duwan tahay qorshaha Muddo Fudud ee Block-ga Frontend (Frontend Block Grace Period) oo la sharaxay hoose. Muddo fududka mudada ayaa xakameeya markii **mustaqbalka (status) uu isbeddelayo** lagaa "active/on-hold" (hawl badan/la haysto) ilaa "expired". Qorshaha mudada Frontend Block-ga wuxuu xakameeyaa markii **website-ka la xannayn karo** (blocked) ka dib markii mustaqbalka hore uu isbeddelay.
 :::
 
-#### Xubnaha Isdhaafsan oo Isdhaafsiinaya vs. Aan Isdhaafsiinayn
+#### Xubnaha Isdhaafsan oo Isdhaafsiinaya vs. Aan Isdhaafsiinayn {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Farqanihiinaas waa mid muhiim ah si loo fahmo sida mudada dhacda (expiration) u shaqeyso:
 
@@ -42,7 +42,7 @@ Farqanihiinaas waa mid muhiim ah si loo fahmo sida mudada dhacda (expiration) u 
 
 - **Xaqiijinta dib u bilaabidda** (`auto_renew = true`): Baaritaanka dhamaadka wakhtiga dib u bilaabidda (cron expiration check) **wuxuu si buuxda uga iska dhaafaa**. Waxaa la filayaa in habka lacagta (Stripe, PayPal, iwm.) uu ogeysii Ultimate Multisite iyada oo loo marayo webhooks marka qiimaha guudka ama dib u bilaabidda lagaa burburiyo. Haddii webhook-gaas aan la helin -- sababta ay tahay meel si xun loo habeeyay (misconfigured endpoint), walaac ka dhasha habka lacagta, ama dib u bilaabidda oo laga burburiyay system-ka -- aabuurista waxay sii awoodi kartaa inay noqoto `active` (hawl badan) ilaa wakhtiga dhamaadka uu gudbo.
 
-### Sida loo dhammaado Trial-yada
+### Sida loo dhammaado Trial-yada {#how-trials-end}
 
 Marka muddo trial-ka aabuurista la dhammaado, nidaamku:
 
@@ -52,11 +52,11 @@ Marka muddo trial-ka aabuurista la dhammaado, nidaamku:
 
 Habkani wuxuu socdaa jadwalka saaciga isku midka ah sida hubinta dhamaadka caadiga ah, laakiin **haddii ay yihiin aasiasho aan dib u bilaabanayn (non-auto-renewing memberships)**. Haddii ay yihiin tijaabooyin oo dib u bilaabaya (auto-renewing trials), habka lacagta ayaa maamulaya isbeddelka ka guurka tijaabada subscription-ka lacagta leh.
 
-## Furaanka Faa'iidada Frontend-ka (Block Frontend Access)
+## Furaanka Faa'iidada Frontend-ka (Block Frontend Access) {#block-frontend-access}
 
 Si caadi ah, marka aasiashadu ay dhamaato ama ay ku lahayd xaalad joogto ah (on hold), **oo kaliya dashboard-ka wp-admin ayaa la xiraya**. Frontend-ka dadweynaha ee website-ka wuu sii socdaa in la heli karo dadka booqanaya. Si aad sidoo kale ka hor istaagto helitaanka dadweynaha, waa inaad iirigaysaa dejinta **Block Frontend Access**.
 
-### Habka Dejinta Dejinta (Configuring the Setting)
+### Habka Dejinta Dejinta (Configuring the Setting) {#configuring-the-setting}
 
 Ujeeddooyinka **Ultimate Multisite > Settings > Memberships** u socda oo ku faafin **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Waxaa saddexeen settings la xiriira waxay maamulaan dhaqankaas:
 | **Frontend Block Grace Period** | Tirada maalmodyada la sugayo ka dib markii xubsiinta (membership) ay is-dhaafay inta ay diidna inay si buuxda u xirayaan. Waxaa la saaraya `0` haddii la rabay in si degdeg ah loo xiro. | 0 |
 | **Frontend Block Page** | Bog ku yaalla website-ka ugu weyn oo lagu soo rabo dadka marka uu website-ku la isxirro (blocked). Haddii aan la saarin, dadka waxay arkaan fariin guud oo ah "Website-ka ma heli karo". | None |
 
-### Waxa Dadka Arka Marka Website-ku La Isxiro
+### Waxa Dadka Arka Marka Website-ku La Isxiro {#what-visitors-see-when-a-site-is-blocked}
 
 Marka la xiro helitaanka qaybta hore ee website-ka (frontend access), dadka booqanaya website-ka waxay ama:
 
@@ -83,7 +83,7 @@ Marka la xiro helitaanka qaybta hore ee website-ka (frontend access), dadka booq
 
 Admin-ka website-ku weli wuxuu galayaa -- bogga galista ma lahayn wax ka hor istaagaya.
 
-### Waa Maxay Waxa Lagu Horojinayo iyo Goorma?
+### Waa Maxay Waxa Lagu Horojinayo iyo Goorma? {#what-gets-blocked-and-when}
 
 Waxyaabaha lagu horjoogsado waxay ku xiran tahay mustaqbalka (membership status):
 
@@ -104,21 +104,21 @@ Xitaa haddii muddo trial-ka uu dhammaaday, xogista aabbiyaasha oo leh status `tr
 Xogista aabbiyaasha la dib u caymisay waxay mar kasta waa la xaddiddo marka taariikhda dhamaarka ay ka gudubaan, iyadoo aan loo eegin in Block Frontend Access uu furan yahay mise ah. Mudada naxariista ee Frontend Block ma shaqeyso xogista aabbiyaasha la dib u caymisay.
 :::
 
-## Hagaajinta: Goobaha oo weli la heli karo ka dib dhamaarka mudada
+## Hagaajinta: Goobaha oo weli la heli karo ka dib dhamaarka mudada {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Haddii goobaha (sites) ay weli dadka la heli karo ka dib markii xubsi uu dhamaado, si tartiib ah u fuli hagaajintaas:
 
-### 1. Hubi in Qorshaha Helitaanka Frontend Access-ka uu Midhay Inuu Shaqeeyo
+### 1. Hubi in Qorshaha Helitaanka Frontend Access-ka uu Midhay Inuu Shaqeeyo {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Tag **Ultimate Multisite > Settings > Memberships** oo hubi in badhanka (toggle) ee **Block Frontend Access** uu mid yahay "on". Tani waxay ku taal **"off by default"**, taasoo macnaheedu yahay in kaliya wp-admin la xidho marka xubsi uu siinayo mustaqbalka u dhammaanayo.
 
-### 2. Hubi Muddada Iska caawinta (Grace Period) ee Frontend Block-ga
+### 2. Hubi Muddada Iska caawinta (Grace Period) ee Frontend Block-ga {#2-check-the-frontend-block-grace-period}
 
 Isi tartiibkaas, hubi qiimaha **Frontend Block Grace Period** ee bogga settings-kaas. Haddii tani ay lahayd 7 maalmood, tusaale ahaan, bogga frontend uma xirna inuu ka hor istaago ilaa 7 maalmood ka dib taariikhda dhammaadka xubshii -- xitaa haddii mustaqbalka xubshii horeba uu yahay `expired`.
 
 Haddii aad rabto in si degdeg ah loo xiro bogga marka xubshii iska caawiyo, u qabso qiimahaas `0`.
 
-### 3. Hubinta Xaaladda Xubnaha Si Dhab ah U Beddesho
+### 3. Hubinta Xaaladda Xubnaha Si Dhab ah U Beddesho {#3-confirm-the-membership-status-has-actually-changed}
 
 Tag **Ultimate Multisite > Memberships** oo hubi xaaladda xubnaha la saameeyay. Haddii weli uu muujiyo `active` (hawl-gal ah) inkasta oo taariikhda dhacdo ay dhaaftay, transition-ka xaaladdu ma dhicin. Sababaha caawinaya:
 
@@ -126,7 +126,7 @@ Tag **Ultimate Multisite > Memberships** oo hubi xaaladda xubnaha la saameeyay. 
 
 - **Cron job-ku ma socdo**: Arka tallaabada soo socota.
 
-### 4. Hubinta Socodka Action Scheduler
+### 4. Hubinta Socodka Action Scheduler {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite waxay isticmaashaa Action Scheduler si ay u maamulaan jobs-ka cron-ka (cron jobs). Ku socda **Tools > Scheduled Actions** ee network admin, isku hubi waxyaabahan:
 
@@ -148,7 +148,7 @@ Si aad u hubiso in cron-kaaga si ammaan ah u shaqeeyo, samee habkan:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Hubi dhibaatooyinka Gateway Webhook (Auto-Renewing Memberships)
+### 5. Hubi dhibaatooyinka Gateway Webhook (Auto-Renewing Memberships) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Haddii booska (membership) uu is-dhaafayo (auto-renewing) laakiin ciyaarta gateway-ga (gateway subscription) la xiray ama ay ku guuldareysatay, laakiin Ultimate Multisite weli si `active` u muujinayo:
 
@@ -157,7 +157,7 @@ Haddii booska (membership) uu is-dhaafayo (auto-renewing) laakiin ciyaarta gatew
 
 Haddii gateway-guu muujiyo in subscription-ku uu dib loo go'aamiyay (cancelled) laakiin Ultimate Multisite aysan muujin, waxaa laga yaabaa in ogeysiiska webhook-ka la lumin yahay. Waxaad si gacanta u beddeli kartaa xaaladda membership-ka adiga oo tagaya **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Hubi Muddada La'aanta Dhammaan (Cron Level)
+### 6. Hubi Muddada La'aanta Dhammaan (Cron Level) {#6-check-the-expiration-grace-period-cron-level}
 
 Fiiro-gaarrada cron-ka wuxuu leeyahay muddo gaar ah (default: 3 maalmood) ka hor inta aan la calaamadeyn xubsi ahaan inay dhammaatay. Tani waa mid kala duwan oo ka hor imtixaanka mudadda qabowga qaybta hore (frontend block grace period). Muddada guud ee ka hor inta website-ka laga xirmo waxay noqon kartaa:
 
@@ -165,7 +165,7 @@ Fiiro-gaarrada cron-ka wuxuu leeyahay muddo gaar ah (default: 3 maalmood) ka hor
 
 Tusaale ahaan, haddii aad isticmaalayso dejimaha caadiga ah iyo muddo 7 maalmood oo qabowga qaybta hore, waxay qaadan kartaa ilaa 10 maalmood ka dib markii la samaynayo `date_expiration` in website-ka si dhab ah looga xiro.
 
-### 7. Si gacanta loo dhigo Xubsi Dhamaad ah (Manually Expire a Membership)
+### 7. Si gacanta loo dhigo Xubsi Dhamaad ah (Manually Expire a Membership) {#7-manually-expire-a-membership}
 
 Haddii aad u baahan tahay inaad si degdeg ah u xirto website-ka adiga oo aan la sugayn wareegga cron-ka, waxaad si gacanta uga beddeli kartaa mustaqbalka xubshada:
 
@@ -176,7 +176,7 @@ Haddii aad u baahan tahay inaad si degdeg ah u xirto website-ka adiga oo aan la 
 
 Blokadka frontend-ka wuxuu bilaabayaa markii bogga la soo geliyo (wixii ay ku xiran tahay muddo fudud ee Frontend Block-ga haddii xaqa uu dhacay, ama isla markiiba haddii xaqa la diray).
 
-## Soo koobid
+## Soo koobid {#summary}
 
 Mudada oo dhan laga bilaabo taariikhda dhammaadka ilaa bogga la xirmo:
 
@@ -208,7 +208,7 @@ Haddii xaqa la diray, wicitaanka waa kooban:
   Frontend-ka bogga waxaa si degdeg ah loo xiray
 ```
 
-## Macluumaadka Muurka (Developer Reference)
+## Macluumaadka Muurka (Developer Reference) {#developer-reference}
 
 Hooks iyo filters ee soo socda waxay kuu oggolaanayaan inaad qaabka dhacdo (expiration) iyo sida loo xannibayo (blocking) u beddesho:
 

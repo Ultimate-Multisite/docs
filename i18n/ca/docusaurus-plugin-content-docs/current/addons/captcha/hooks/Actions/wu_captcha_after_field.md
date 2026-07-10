@@ -4,20 +4,20 @@ title: Acció - wu_captcha_after_field
 sidebar_label: wu_captcha_after_field
 _i18n_hash: 83cc2a6d96a830a8ddc524ad43898f7d
 ---
-# Acció: wu_captcha_after_field
+# Acció: wu_captcha_after_field {#action-wucaptchaafterfield}
 
 S'executa després que el camp de captcha s'hagi renderitzat.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $args | `array` | Els arguments de renderització. |
 | $output | `string` | L'HTML renderitzat. |
 
-### Des
+### Des {#since}
 
 - 1.2.0
-### Font
+### Font {#source}
 
 Definit a [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L144) a la línia 144

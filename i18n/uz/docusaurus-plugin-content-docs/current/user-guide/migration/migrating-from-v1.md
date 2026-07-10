@@ -3,9 +3,9 @@ title: V1 dan o'tkazish
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1 dan o'tkazish (Migratsiya)
+# V1 dan o'tkazish (Migratsiya) {#migrating-from-v1}
 
-## Ultimate Multisite dastlabki 1.x versiyasidan 2.x versiyasi bilan almashtirildi.
+## Ultimate Multisite dastlabki 1.x versiyasidan 2.x versiyasi bilan almashtirildi. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite 2.0 va undan keyingi versiyalar kod bazasining to'liq qayta yozilganini anglatadi, bu esa eski versiya va yangi versiya o'rtasida juda kam umumiy narsalarni degani. Shu sababli, 1.x dan 2.x ga ko'tarish paytida ma'lumotlaringizni yangi versiyalar tushunadigan formatga migratsiya qilish kerak bo'ladi.
 
@@ -15,7 +15,7 @@ Bu darsda migrator qanday ishlashini, muvaffaqiyatsizlik holatlarida nima qilish
 
 _**MUHIM: 1.x versiyasidan 2.0 versiyasiga o'tkazishdan oldin sayt ma'lumotlar bazasining zaxirasini (backup) yaratganingizga ishonch hosil qiling**_
 
-## Birinchi qadamlar
+## Birinchi qadamlar {#first-steps}
 
 Birinchi qadam — plugin .zip faylini yuklab olish va 2.0 versiyasini o'zingizning tarmoq administrator panelingizda o'rnatishdir.
 
@@ -49,19 +49,19 @@ Kalitni kiritganingizdan so'ng, **Agree & Activate** tugmasini bosing.
 
 Litsenziya faollashtirilgandan so'ng, siz keyingi sahifadagi **Install** tugmasini bosib haqiqiy o'rnatishni boshlashingiz mumkin. Bu versiya 2.0 ishlay olishi uchun zarur bo'lgan kerakli fayllarni va ma'lumotlar bazasini avtomatik yaratadi.
 
-## Endirol, migratsiya
+## Endirol, migratsiya {#now-the-migration}
 
 Migratorda ichki xavfsizlik funksiyasi mavjud. U sizning butun multisite'ingizni tekshirib, Ultimate Multisite ma'lumotlaringiz hech qanday muammo bo'lmasdan migratsiya qilish mumkinligini ta'minlaydi. Jarayonni boshlash uchun **Run Check** tugmasini bosing.
 
 Jarayonni tekshirgandan so'ng, siz ikki xil holat bilan yuzlanishingiz mumkin: natija xato bilan **yoki** xato bo'lmagan holda chiqishi mumkin.
 
-### Xato bo'lgan holatda
+### Xato bo'lgan holatda {#with-error}
 
 Agar sizga xato xabari bersa, muammoni tuzishda yordam berishi uchun bizning texnik qo'llab-quvvatlash jamoasiga murojaat qilishingiz kerak bo'ladi. Tiket ochayotganda iltimos etingizki **xato logini taqdim etsangiz**. Logni yuklab olishingiz yoki qo'llab-quvvatlash jamoamiz bilan bog'lanish haqidagi linkga bosishingiz mumkin. Bu sizning sahifangizning o'ng tomonida yordam paneli ochiladi va unda tavsif ostida xato loglari allaqachon to'ldirilgan maydonlar bo'ladi.
 
 _**Tizim xatoni topganligi sababli, 2.0 versiyasiga migratsiya qilish imkoniyatsiz bo'ladi. Shundan so'ng, xato tuzatilmaguncha tarmoqni ishlatishni davom ettirish uchun 1.x versiyasiga qaytishingiz mumkin.**_
 
-### Xato bo'lmagan holatda
+### Xato bo'lmagan holatda {#without-error}
 
 Agar tizim hech qanday xatoni topmasa, siz muvaffaqiyat xabarini va migratsiyani davom ettirishingiz mumkin bo'lgan pastki qismdagi **Migrate** tugmasini ko'rasiz. Bu sahifada oldindan tavsiya etiladigan narsa — keyingi qadamlar uchun ma'lumotlar bazasining zaxirasini yaratish kerakligini eslatiladi. Agar sizda allaqachon zaxira bo'lsa, **Migrate** tugmasini bosing.
 

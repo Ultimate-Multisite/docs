@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent est adiutor AI autonomus pro WordPress, qui situs WordPress completos per instructiones lingua naturali disponere, aedificare, et administrare potest. Praebet ordinatam seriem **facultatum** — actionum discretarum et probabilium quas agens invocare potest — quae omnia a moderatione contenti usque ad customizationem systematis designationis complectuntur. Versio 1.9.0 addit facultates creationis contenti, recognitionem visualem paginarum per imagines captas in parte clientis, quinque profilia agentis inclusa, et signa proprietatum ad moderationem accessus et branding.
+
+## Proprietates Praecipuae {#key-features}
+
+- **Systema facultatum** — catalogus modularis et extensibilis actionum quas agens in tua installatione WordPress invocare potest
+- **Moderatio Contenti** — crea articulos et paginas (etiam assignando templates paginarum), plures articulos uno appellu in fasciculo crea, imagines praecipuas constitue, et formulas contactus aedifica
+- **Recognitio Visualis** — cape imagines paginarum viventium, compara status ante/post, et accipe recognitionem designationis ab AI generatam quae compositionem, typographiam, colorem, et accessibilitatem complectitur
+- **Quinque agentes inclusi** — Content Writer, Site Builder, Design Studio, Plugin Manager, et Support Assistant; commutabiles per Agent Picker in capite colloquii
+- **Signa proprietatum** — optiones moderationis accessus et branding in Settings → Feature Flags ad restrictiones munerum, nomen sine nota venditoris, et customizationem widget
+- **Moderatio generum articulorum custom** — registra, enumera, et dele genera articulorum custom cum persistentia per reinitia
+- **Moderatio taxonomiarum custom** — registra, enumera, et dele taxonomias custom cum persistentia
+- **Facultates Systematis Designationis** — insere CSS custom, administra exemplaria block curata, constitue logotypum situs, et applica praescripta theme.json
+- **Moderatio Global Styles** — lege et scribe valores theme.json pro palettis colorum, typographia, spatiis, et aliis
+- **Moderatio Menus Navigationis** — crea et renova menus navigationis atque eorum elementa programmatice
+- **Moderatio Optionum** — lege et scribe optiones WordPress cum indiculo interno tutelarum exclusarum ad occasus criticos protegendos
+- **Registrum Facultatum Installabilium** — reperi et activa fasciculos facultatum additos sine modificatione fasciculorum nuclei plugin
+- **Orchestratio Site Builder v2** — consilia aedificationis situs plurium graduum cum inventione plugin, vestigatione progressionis, et recuperatione errorum
+- **Mandatum experimenti WP-CLI** — exseque seriem experimentorum facultatis agentis e linea mandatorum pro CI et aestimatione exemplaris
+
+## Requisita {#requirements}
+
+- WordPress 6.0 aut superior
+- PHP 8.1 aut superior
+- WordPress Multisite (in reti activatum) aut installatio unius situs
+- Plugin connectoris provisoris AI activum (Anthropic, OpenAI, aut compatibile)
+
+## Installatio {#installation}
+
+1. Immitte fasciculos plugin in `/wp-content/plugins/gratis-ai-agent`
+2. Activa plugin per velum **Plugins** in WordPress
+3. Naviga ad **Gratis AI Agent → Settings** et coniunge provisorem tuum AI
+4. (Optionaliter) Percurre **Registrum Facultatum** ad fasciculos facultatum additos installandos
+
+## Initium Celer {#quick-start}
+
+Postquam activatus et cum provisore AI coniunctus est, aperi tabulam **Gratis AI Agent** in barra laterali administrationis WordPress. Scribe instructionem lingua naturali, et agens gradus necessarios disponet et exsequetur utens facultatibus sibi praesto.
+
+**Exempla instructionum:**
+
+```
+Crea genus articuli custom "Portfolio" cum taxonomia "Project Category".
+```
+
+```
+Insere palettam colorum modi obscuri in thema et constitue colorem primarium ad #1a1a2e.
+```
+
+```
+Aedifica locum interretialem cauponae cum menu online, formula reservationis, et pagina contactus.
+```
+
+## Conspectus Facultatum {#abilities-overview}
+
+Facultates sunt actiones atomicae quas agens perficere potest. Quaeque facultas est classis PHP registrata quae schema (parametros et genera reditus) exponit, quod agens tempore exsecutionis legit. Facultates in areas functionales distribuuntur:
+
+| Area | Facultates |
+|---|---|
+| **Moderatio Contenti** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Recognitio Visualis** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Genera Articulorum Custom** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Taxonomiae Custom** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Systema Designationis** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menus Navigationis** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Moderatio Optionum** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Facultates Installabiles** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Vide [Relationem Facultatum](./abilities) pro plena documentatione parametrorum et exemplis usus.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent tradit familiam mandatorum `wp gratis-ai-agent` ad experimenta currenda et facultates e linea mandatorum administrandas. Vide [Relationem WP-CLI](./wp-cli) pro pleno indice mandatorum.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuratio {#configuration}
+
+Omnes occasus sunt sub **Gratis AI Agent → Settings** in administratione WordPress:
+
+| Occasus | Descriptio |
+|---|---|
+| **Provisor AI** | Elige et configura connectorem provisoris AI activum |
+| **Exemplar** | Elige exemplar linguae adhibendum pro sessionibus agentis |
+| **Max Tokens** | Summa token per petitionem (praedefinita 4096) |
+| **Tempus Maximum Facultatis** | Maximus numerus secundorum quibus facultas singula currere potest (praedefinitus 30) |
+| **Registratio Debug** | Registra appellus facultatum et ratiocinationem agentis in registrum debug WordPress |
+
+## Indiculus Tutelarum Exclusarum Moderationis Optionum {#options-management-safety-blocklist}
+
+Facultas Administrationis Optionum indicem exclusionis inclusum habet, qui prohibet ne agens optiones sensitivas WordPress legat aut scribat. Index exclusionis praedefinitus complectitur:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (optiones URL — ad haec instrumento migrationis dedicato utere)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (claves secretae)
+- `active_plugins`, `template` (activatio plugin/thematis — facultatibus dedicatis utere)
+- Credentialia portarum solutionis et claves API a pluginis institutis registratae
+
+Additamenta per filtrum `gratis_ai_agent_options_blocklist` addi possunt.
+
+## Unci et Filtra {#hooks-and-filters}
+
+### Actiones {#actions}
+
+- `gratis_ai_agent_ability_registered` — accenditur postquam facultas registrata est, nomen classis facultatis accipit
+- `gratis_ai_agent_plan_started` — accenditur cum consilium aedificatoris siti exsecutionem incipit
+- `gratis_ai_agent_plan_completed` — accenditur cum consilium feliciter finitur
+- `gratis_ai_agent_plan_failed` — accenditur cum consilium errorem insanabilem offendit
+
+### Filtra {#filters}
+
+- `gratis_ai_agent_abilities` — indicem facultatum registratarum mutat antequam agens eum onerat
+- `gratis_ai_agent_options_blocklist` — indicem exclusionis salutis optionum extendit aut minuit
+- `gratis_ai_agent_benchmark_questions` — quaestiones mensurae proprias ad seriem aestimationis addit
+- `gratis_ai_agent_plan_plugins` — indicem inventionis pluginorum dum consilium siti generatur mutat
+
+## Auxilium {#support}
+
+Pro auxilio, visita [ultimatemultisite.com](https://ultimatemultisite.com) aut quaestionem in repositorio plugin aperi.
+
+## Index Mutationum {#changelog}
+
+Vide [Indicem Mutationum](./changelog) pro plena historia versionum.

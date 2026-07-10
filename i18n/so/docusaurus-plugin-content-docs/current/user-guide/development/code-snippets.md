@@ -3,7 +3,7 @@ title: Qoraallo koodka
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets oo v2
+# Code Snippets oo v2 {#code-snippets-for-v2}
 
 Guud, code snippets-ka **WordPress** waxaa loo isticmaalaa in lagu sameeyo waxyaabo gaar ah oo laga yaabo inay u baahan yihiin plugin yar oo gaar ah. Code snippets-kan waxaa lagu dhejin karaa mid ka mid ah faylasha asalka (core) ee WordPress ama theme-kaaga (guud ahaan faylka functions.php ee theme-kaaga), ama waxaad isticmaali kartaa inay noqdaan MU plugin.
 
@@ -15,7 +15,7 @@ Maqaalkan, waxaan ku bandhigi doonaa saddex code snippets oo aad u isticmaali ka
 
   * [**Xallinta dhibaatooyinka CORS ee Font-Icons-ka meelaha la qorsheeyay (mapped domains)**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Beddelidda meesha qaybta Account menu-ga
+## Beddelidda meesha qaybta Account menu-ga {#changing-the-position-of-the-account-menu-item}
 
 Si aad u beddesho meesha qaybta Account menu-ga ee Dashboard-ka macaamiishaada, kaliya ku dar code snippet-kan faylka functions.php ee theme-kaaga asalka ah. Waxaad sidoo kale dari kartaa in aad code-kaas ku dhejiso mid ka mid ah MU plugin-yadaada ama custom plugins-kaaga.
 
@@ -37,8 +37,8 @@ add_filter('wu_my_account_menu_position', function() { return 10; // Beddel qeex
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## چارەسەرکردنی کێشەکانی CORS لەگەڵ Font-Icons لە دۆمەینە مابووبراوەکاندا
-## چارەسەرکردنی کێشەکانی CORS لەگەڵ Font-Icons لە دۆمەینە مابووبراوەکاندا
+## چارەسەرکردنی کێشەکانی CORS لەگەڵ Font-Icons لە دۆمەینە مابووبراوەکاندا {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## چارەسەرکردنی کێشەکانی CORS لەگەڵ Font-Icons لە دۆمەینە مابووبراوەکاندا {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 پاش ئەوەی یەکێک لە دۆمەینەکان بۆ زیرەکی ناوخۆ (sub-site) مابووبراوە، دەتوانیت بزانیت کە ئەو سایتە کێشەیەک لە گۆڕینی فۆنتە تایبەتەکانی سەرەوە دەکات. ئەمە بەهۆی ڕێگریکاری کرۆس-ئۆریجین (cross-origin block) لە ڕێکخستنی خەریکی ئێوە دەبێت.
 
@@ -46,13 +46,13 @@ add_filter('wu_my_account_menu_position', function() { return 10; // Beddel qeex
 
 Waxaan ku siinayaa qoraalka loo turjumay luuqadda Soomaaliga, adigoo ilaalinaya qaabka iyo macnaha farsamada:
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Faylkaaga .htaccess-ka, ku dar waxa hoose:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Faylkaaga server config-ka (meesha uu ka yaallo waxay ku kala duwan tahay server kasta), ku dar:
 

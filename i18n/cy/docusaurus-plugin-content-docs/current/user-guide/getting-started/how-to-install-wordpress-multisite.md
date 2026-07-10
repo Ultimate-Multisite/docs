@@ -3,7 +3,7 @@ title: Sutaliad yr WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Sut yn Installio WordPress Multisite?
+# Sut yn Installio WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 Mae WordPress Multisite yn sylwch i'n gael rheol o wefan ar gyfer ystod unig. Mae hyn yn ffeithau wedi'i cyfathoghio, ond nid yw'n weithredol yn ddefnyddiol yn ddefnyddiol yn ddefnyddiol.
 
@@ -89,9 +89,9 @@ I creu subsite:
 
 Ar ôl gyflwyno'r ffeiliau, clywed y "Add site". Ar ôl creu'r subsite newydd, mynd arno i chwarae iddo i sicr bod y subsite yn gweithredol.
 
-## Problemy Cyffredinol:
+## Problemy Cyffredinol: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Gallaf i ffresgu siat newydd ond nid yw'n cyffredinol.
+### 1. Gallaf i ffresgu siat newydd ond nid yw'n cyffredinol. {#common-problems}
 
 Os ydych chi wedi dewis subdomainau, mae angen hefyd i ddefnyddio subdomainau wildcards ar gyfer eich rheol multisite.
 

@@ -4,11 +4,11 @@ title: フィルタ - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# フィルタ: wu_post_count
+# フィルタ: wu_post_count {#filter-wupostcount}
 
 プラグイン開発者が合計投稿数を変更できるようにします
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 | $post_counts | `object` | wp_count_posts 関数が返す WordPress オブジェクト |
 | $post_type | `string` | 投稿タイプのスラッグ |
 
-### Since
+### Since {#since}
 
 - 1.9.1
 
-### Source
+### Source {#source}
 
 定義場所: [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) の 136 行目
 
-## Returns
+## Returns {#returns}
 
 新しい合計

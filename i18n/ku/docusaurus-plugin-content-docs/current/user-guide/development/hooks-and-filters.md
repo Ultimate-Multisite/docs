@@ -3,7 +3,7 @@ title: Hook û Filterên
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks و Filters
+# Ultimate Multisite Hooks و Filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite پرسیارەکان و فیلترەکانێکی زۆرن کە لەو سیستەمەدا کار دەکەن. ئەمانە یارمەتیت دەدەن شێوەیەکی نوێکاری بکەیت یان کۆدی نوێ بۆ ئەو کارانەی پێشتر هەتە، بەبێ گۆڕینی کاتی سەرەکی.
 

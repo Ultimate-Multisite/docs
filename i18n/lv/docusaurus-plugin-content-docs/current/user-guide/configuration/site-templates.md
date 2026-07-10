@@ -3,13 +3,13 @@ title: Siti šabloni
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Vietas šabloni (v2)
+# Vietas šabloni (v2) {#site-templates-v2}
 
 _**PĀRĶINĀJUMS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x. Ja jūs izmantojat versiju 1.x,**_ **skatieties šo rakstu.**_
 
 Mums mērķis, veidojot premium tīklu ar Ultimate Multisite, automāties iespējami visbiežākās procesus, nodrošinot klientiem elastību un dažādus variantus izvēlēties, kad veido savus vietnes. Vienkāršais veids, kā to sasniegt šo līdzsvienojumu, ir izmantot Ultimate Multisite Site Templates funkciju.
 
-## Kas ir Vietnes šablons?
+## Kas ir Vietnes šablons? {#what-is-a-site-template}
 
 Kā nosaukums norāda, Vietnes šablons ir bazas vietne (boilerplate site), kas var lietot kā pamatu, kad veidat jaunas vietnes savā tīklā.
 
@@ -17,7 +17,7 @@ Tas nozīmē, ka jūs varat izveidot bazas vietni, aktivizēt dažādus pluginus
 
 Tas skaista, bet kā man veidot jaunu vietnes šablonu? Tas ir tik vienkārši, cik var būt iespējams.
 
-## Jauno Vietnes šablona izveide un rediģēšana
+## Jauno Vietnes šablona izveide un rediģēšana {#creating-and-editing-a-new-site-template}
 
 Vietnes šabloni ir vienkārši normālas vietnes jūsu tīklā. Ja jūs vēlaties veidot jaunu šablonu, jums pietiks doties uz **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Formu apakās, jūs redzat **Copy Site** slēdzu skritu. Tas ļaus jums izveidot
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Vietnes šablona satura pielāgošana
+### Vietnes šablona satura pielāgošana {#customizing-the-contents-of-a-site-template}
 
 Lai pielāgotu savu vietnes šablonu, vienkārši pārvietojieties uz tā dashboard panelu un veici to izmaiņas, kas jums nepieciešamas. Jūs varat izveidot jaunas postes, lapas, aktivizēt pluginus un mainīt aktīvo tēmu. Jūs varat pat ietikt Customizeri un mainīt vispusīgus pielāgošanas opcijas.
 
@@ -43,11 +43,11 @@ Lai pielāgotu savu vietnes šablonu, vienkārši pārvietojieties uz tā dashbo
 
 Visas šīs dati tiks kopētas, kad kliente izveido jaunu vietni uz pamata šim Vietnes šablonam.
 
-### Uzlabotas opcijas
+### Uzlabotas opcijas {#advanced-options}
 
 Ja jums ir kāds pieredze ar dažiem custom kodiem, jūs varat izmantot mūsu Search and Replace API, lai automātiski mainītu informāciju jaunajā vietnē pēc tās izveidošanas. Tas ir noderīgs lietām, piemēram, uzmainīt uzņēmuma nosaukumus "Par mums" lapā vai uzmainīt kontaktinformācijas e-pastu Kontakta lapā, gan tas vēl vairāk.
 
-### Vietnes šablonu izmantošana
+### Vietnes šablonu izmantošana {#using-site-templates}
 
 Esam, jūs izveidojusi daudus dažādus vietnes šablonus ar atšķirīgām dizainiem, tēmām un iestatījumiem. Kā jūs tagad varat tos izmantot savā tīklā?
 
@@ -59,7 +59,7 @@ Vispār ir divas pieproceses, ko varat izmantot (ne vienlaikus):
 
   * Uzļaut klientiem izvēlēties vietnes šablonus sevi reģistrācijas laikā.
 
-#### Režims 1: Piesaistīt Vietnes šablonu
+#### Režims 1: Piesaistīt Vietnes šablonu {#mode-1-assign-site-template}
 
 Šajā režīmā jūsu klientiem nevarēs izvēlēties šabli, kad radīsies konta, bet tā vietā jūs definējat, kurš shablis jāizmanto katram no jūsu Plāna.
 
@@ -71,7 +71,7 @@ Tas aizved jūs uz **Edit Product** lapu. Ap **Product Options** sadaļas atrodi
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Režīms 2: Izvēlies pieejamu shabli
+#### Režīms 2: Izvēlies pieejamu shabli {#mode-2-choose-available-site-template}
 
 Šajā režīmā jūs piedāvāt klientiem izvēli procesu reģistrācijas laikā. Viņi varēs izvēlēties no dažādiem shabljiem, ko definējat produktam iestatījumiem. Jums ir iespēja ierobeigt šablu, no kurš viņi var izvēlēties, uz izvēlēto produktu. Tas ļaus jums turēt dažādus shabļu sērijas katram produktam, kas ir ideāli piemērots, lai izceltu dažādas funkcijas un pielikumus augstākas cenas produktos.
 
@@ -81,7 +81,7 @@ Uz **Produkta rediģēšanas** lapas sadaļā **Produkta opcijas** atrodiet tabu
 
 ![Izvēlies pieejami saites šablonus ar uzvedības opcijām](/img/config/product-site-templates.png)
 
-### Auto režīms: Saites šablona izvēle atpildinājuma formā (Checkout form)
+### Auto režīms: Saites šablona izvēle atpildinājuma formā (Checkout form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Ja vēlaties, lai visi jūsu saites šabloni būtu pieejami reģistrācijas laikā, vai neuzvērts papildu darbu, kas attiecībā uz katru produktu, ko jūs izveidzat, tad varat vienkārši noteikt saites šablonu izvēli zem savas **Atpildinājuma formā** (Checkout Form). Lai to darītu, dodieties uz **Ultimate Multisite > Atpildinājuma formāt** un nospiediet **Rediģēt** zem formām, ko vēlaties konfigurēt.
 
@@ -95,29 +95,29 @@ Frontendā klientam reģistrācijas laikā parādās šablonu izvēle un viņš 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Vietas templatizācijas opcijas
+### Vietas templatizācijas opcijas {#site-template-options}
 
 Ir vēl dažādas vietnes templatizācijas funkcijas, ko varat ieslēgt vai izslēgt Ultimate Multisite iestatījumos.
 
 ![Vietnes templatizācijas opcijas Ultimate Multisite iestatījumos](/img/config/settings-sites-templates-section.png)
 
-#### Permitīt templatizācijas mainīšanu
+#### Permitīt templatizācijas mainīšanu {#allow-template-switching}
 
 Izslēgšana šīs opcijas ļaus jūsu klientiem mainīt templatzi, ko viņi izvēlējas reģistrācijas laikā pēc konta un vietnes izveidošanas. Tas ir noderīgs no klienta uzskatu, jo tas ļauj viņiem vēlāk izvēlēties templatzi, ja viņi atklās, ka sākotnējais izvēle nav labākais piemērots viņu konkrētām vajadzībām.
 
-#### Permitīt lietotāji izmantot savu vietni kā templatizes
+#### Permitīt lietotāji izmantot savu vietni kā templatizes {#allow-users-to-use-their-site-as-templates}
 
 Tā kā subvietnes lietotāji izņem laiku veidot un dizainēt savu vietni, viņi var vilti un izmantot to kā vienu no vietņu templatizēm, kas ir pieejamas citās subvietnēs izveidošanas laikā jūsu tīklā. Šī opcija ļaus viņiem to sasniegt.
 
-#### Mediju kopēšana templatizes duplikācijas laikā
+#### Mediju kopēšana templatizes duplikācijas laikā {#copy-media-on-template-duplication}
 
 Pārbaudot šo opciju, jūs kopējat mediju, kas ieplūkoties templatizētajā vietnē, ja tas tiek izveidota jauna vietne. Šo var pārslēgt katrā plānā.
 
-#### **Ievairīt meklēji indeksēt vietnes templatizes**
+#### **Ievairīt meklēji indeksēt vietnes templatizes** {#prevent-search-engines-from-indexing-site-templates}
 
 Vietnes templatizes, kas apspriežtas šajā rakstā, ir boilerplate (izdevīti) bet joprojām ir daļa no jūsu tīkla, kas nozīmē, ka tās vēl ir pieejamas meklēji atrast. Šaīta opcija ļaus jums slüstēt vietnes templatizes, lai meklēji varētu tos indeksēt.
 
-## Vietnes templatizācijas iepriekšējā iestatīšana ar auto meklēšanu un aizstāšanu
+## Vietnes templatizācijas iepriekšējā iestatīšana ar auto meklēšanu un aizstāšanu {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite vienā spēcīgākām funkcijām ir iespēja pievienot jebkuru tekstu, krāsas un izvēles laukus reģistrācijas formai. Kad mums šīs datus saglabājam, mēs varam tos izmantot, lai iepriekš iestatītu saturu konkrētās vietnes šablona daļās. Tad, kad ja visu jauna vietne publisē, Ultimate Multisite aizmainīs šos laukus ar reģistrācijas laikā ievadīto faktiskajiem informācijām.
 
@@ -137,7 +137,7 @@ Ultimate Multisite tad automātiski aizmainīs šos laukus ar klientam sniegto d
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Problemas risināšana "šablona pilna lauku" problēmai
+### Problemas risināšana "šablona pilna lauku" problēmai {#solving-the-template-full-of-placeholders-problem}
 
 Tas viss ir lieliski, bet mēs saskaramies ar nepatīkamu problēmu: tagad mūsu vietnes šabloni - kas var tiek apmeklēti mūsu klientiem - ir pilni nepatīkamiem laukiem, kas neizdev vielu.
 

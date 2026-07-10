@@ -1,34 +1,42 @@
 ---
-title: Klientwebbplatser
+title: Kundwebbplatser
 sidebar_position: 5
-_i18n_hash: 07c4fdb6bc41c0a9d211d21e2878f7d3
+_i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Dina kunders webbplatser (v2)
+# Din klients webbplatser (v2) {#your-clients-websites-v2}
 
-Efter registrering på ditt nätverk kan dina kunder komma åt sin kontrollpanel.
+Efter registrering i ditt nätverk kan dina kunder komma åt sin Dashboard.
 
-Förutom sidan **Konto**, där de kan se viktig information om sina betalningar, medlemskap, domäner, planbegränsningar och mer, har de även tillgång till sidan **Mina webbplatser**, där de kan se och hantera alla sina webbplatser. Allt de behöver göra är att klicka på Mina webbplatser i sin kontrollpanel.
+Förutom sidan **Account**, där de kan se viktig information om sina betalningar, medlemskap, domäner, planbegränsningar och mer, har de också tillgång till sidan **Mina webbplatser**, där de kan se och hantera alla sina webbplatser. Allt de behöver göra är att klicka på Mina webbplatser i sin Dashboard.
 
-![Länk till Mina webbplatser i kundens kontrollpanel](/img/admin/customers-list.png)
+![Länk till Mina webbplatser i kundens Dashboard](/img/account-page/my-sites-link.png)
 
-De kommer att se alla sina webbplatser, med en **Hantera**-knapp precis under varje webbplats. Om de klickar på den kommer de till **kontrollpanelen för just den webbplatsen**.
+De kommer att visas alla sina webbplatser, med en **Hantera**-knapp direkt under var och en av dem. Om de klickar på den omdirigeras de till **Dashboard för denna specifika webbplats**.
 
 De kan också se vilken av deras webbplatser som är den **primära** för planer som tillåter dem att ha mer än en webbplats.
 
-![Sidan Mina webbplatser som visar kundens webbplatser med Hantera-knappar](/img/admin/customers-list.png)
+![Sidan Mina webbplatser som visar kundens webbplatser med Hantera-knappar](/img/account-page/my-sites-page.png)
 
-Om de vill ändra sin primära webbplats behöver de gå till sidan Konto genom att klicka på menyn **Konto**.
+Här är en fullständig vy av gränssnittet för att redigera webbplatsen:
 
-![Länk till Konto-menyn i kundens kontrollpanel](/img/admin/customers-list.png)
+![Fullständigt gränssnitt för webbplatsredigering](/img/admin/site-edit-full.png)
 
-Sedan klickar de på **Ändra standardwebbplats**.
+Om de vill ändra sin primära webbplats behöver de gå till sidan Account genom att klicka på menyn **Account**.
 
-![Knappen Ändra standardwebbplats på kontosidan](/img/admin/customers-list.png)
+![Menylänk till Account i kundens Dashboard](/img/account-page/account-menu.png)
 
-Ett popup-fönster visas. Klicka på rullgardinsmenyn och välj vilken webbplats du vill göra till primär webbplats.
+Du kan också visa och redigera kunduppgifter:
 
-![Val av standardwebbplats i rullgardinsmenyn](/img/admin/customers-list.png)
+![Gränssnitt för kundredigering](/img/admin/customer-edit.png)
 
-Klicka sedan bara på **Ändra standardwebbplats** så är du klar!
+Sedan ska de klicka på **Ändra standardwebbplats**.
 
-![Bekräftelse av ändring av standardwebbplats](/img/admin/customers-list.png)
+![Knapp för Ändra standardwebbplats på Account-sidan](/img/account-page/change-default-site.png)
+
+Ett popup-fönster visas. Klicka på rullgardinslistan och välj vilken webbplats du vill göra till den primära webbplatsen.
+
+![Val i rullgardinslista för Ändra standardwebbplats](/img/account-page/change-default-site-dropdown.png)
+
+Sedan klickar du bara på **Ändra standardwebbplats** och så är du klar!
+
+![Bekräftelse av ändring av standardwebbplatsen](/img/account-page/change-default-site-confirm.png)

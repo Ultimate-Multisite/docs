@@ -3,15 +3,15 @@ title: Orquestació de Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestration v2
+# Site Builder Orchestration v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introduït en Gratis AI Agent v1.4.0) és el motor que alimenta la creació de llocs web amb múltiples passos. Quan demanes a l'agent que "crei un lloc web de restaurant" o "crei un portefoli amb un blog", l'orquestador desglossaria aquest objectiu de nivell superior en un **pla** estructurat, descobreix els plugins necessaris per complir-lo, executa cada pas en seqüència, fa un seguiment del progrés i es recupera d'errors de manera autònoma.
 
 ---
 
-## Com funciona
+## Com funciona {#how-it-works}
 
-### 1. Generació del pla
+### 1. Generació del pla {#1-plan-generation}
 
 Quan l'agent rebre una instrucció per construir un lloc web, crida a la capacitat `create_site_plan` per produir un **pla de site** en format JSON. El pla descriu:
 
@@ -61,7 +61,7 @@ Quan l'agent rebre una instrucció per construir un lloc web, crida a la capacit
 }
 ```
 
-### 2. Descobriment de plugins
+### 2. Descobriment de plugins {#2-plugin-discovery}
 
 Abans de començar l'execució, l'orquestador escaneja els `plugin_requirements` del pla i comprueba quins plugins ja estan actius. Per als plugins faltants, fa:
 
@@ -71,7 +71,7 @@ Abans de començar l'execució, l'orquestador escaneja els `plugin_requirements`
 
 Els fallos en el descobriment de plugins no són fatals: l'orquestador marca les etapes afectades com a `skipped` (saltades) i continua amb el reste del pla.
 
-### 3. Execució del pla
+### 3. Execució del pla {#3-plan-execution}
 
 L'orquestador crida a `execute_site_plan` amb l'ID del pla. L'execució procedeix fase per fase, etapa per etapa:
 
@@ -79,7 +79,7 @@ L'orquestador crida a `execute_site_plan` amb l'ID del pla. L'execució procedei
 - **Etapes paral·leles** — les etapes dins de la mateixa fase que no tenen interdependències es desplaçaixen de manera concurrents quan s'estableix la bandera `parallel`.
 - **Expiració de l'etapa** — cada etapa té una expiració individual (per defecte: la configuració `Ability Timeout`). Una etapa que caduca es marca com a `failed` (fallida) i el pla continua.
 
-### 4. Seguiment del progrés
+### 4. Seguiment del progrés {#4-progress-tracking}
 
 Truca `get_plan_progress` en qualsevol moment per comprovar l'estat de l'execució:
 
@@ -104,7 +104,7 @@ Els usuaris de WP-CLI poden monitoritzar el progrés amb:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Recuperació d'errors
+### 5. Recuperació d'errors {#5-error-recovery}
 
 Quan una etapa falla, l'orquestador busca una etapa de **fallback** definida al pla:
 
@@ -115,9 +115,9 @@ L'agent reporta tots els fallos en el resum final del pla i pot suggerir passos 
 
 ---
 
-## Capacitats de Pla (Site Plan Abilities)
+## Capacitats de Pla (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Genera un pla de site estructurat a partir d'una descripció d'objectiu en llenguatge natural.
 
@@ -134,7 +134,7 @@ Genera un pla de site estructurat a partir d'una descripció d'objectiu en lleng
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Comença a executar un pla de site generat prèviament.
 
@@ -150,7 +150,7 @@ Comença a executar un pla de site generat prèviament.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Retorna l'estat d'execució actual d'un pla de site.
 
@@ -164,7 +164,7 @@ Retorna l'estat d'execució actual d'un pla de site.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Resoluciona manualment una etapa fallida i rebona l'execució del pla des de la propera etapa. Utilitza això quan la recuperació automàtica no va ser possible i vols intervenir.
 
@@ -180,7 +180,7 @@ Resoluciona manualment una etapa fallida i rebona l'execució del pla des de la 
 
 ---
 
-## Comparativa v1 i v2
+## Comparativa v1 i v2 {#comparing-v1-and-v2}
 
 | Funcionalitat | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Resoluciona manualment una etapa fallida i rebona l'execució del pla des de la 
 
 ---
 
-## Comandos de Pla de WP-CLI
+## Comandos de Pla de WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Genera un pla de site a partir d'una descripció d'objectiu.
 
@@ -205,7 +205,7 @@ Genera un pla de site a partir d'una descripció d'objectiu.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Executa un pla generat prèviament.
 
@@ -213,7 +213,7 @@ Executa un pla generat prèviament.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Mostra el progrés actual d'un pla en execució o completat.
 
@@ -221,7 +221,7 @@ Mostra el progrés actual d'un pla en execució o completat.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lista tots els plans de site (pendents, en progrés i completats).
 
@@ -229,7 +229,7 @@ Lista tots els plans de site (pendents, en progrés i completats).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reseteja un pla fallit a `pending` perquè es pugui reexecutar des de l'inici.
 

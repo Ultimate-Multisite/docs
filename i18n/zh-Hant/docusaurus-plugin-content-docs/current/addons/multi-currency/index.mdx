@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# 多幣度
+# 多幣度 {#multi-currency}
 
 Ultimate Multisite: Multi-Currency 讓您的網路商店能夠接受多種貨幣的付款。它能使用即時或手動的匯率自動轉換價格，讓您為任何產品設定特定貨幣的精確價格，並透過地理位置偵測每位訪客偏好的貨幣 — 所有功能都可以在單一的管理儀表板中管理。
 
-## 主要功能
+## 主要功能 {#key-features}
 
 - **自動匯率轉換** — 價格會使用從您選擇的提供者獲取的匯率，從您的基礎貨幣進行轉換。
 - **產品單價覆寫** — 您可以在任何產品上設定特定貨幣的精確價格，以繞過自動轉換。
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency 讓您的網路商店能夠接受多種貨幣
 - **基於地理位置的貨幣偵測** — 自動預先選擇與訪客國家相符的貨幣。
 - **管理儀表板** — 從一個地方管理活躍的貨幣、匯率和提供者設定。
 
-## 要求
+## 要求 {#requirements}
 
 - Ultimate Multisite 2.0.0 或更高版本
 - WordPress Multisite 安裝
 - PHP 7.4 或更高版本
 
-## 安裝
+## 安裝 {#installation}
 
 1. 將外掛檔案上傳到 `/wp-content/plugins/ultimate-multisite-multi-currency`。
 2. 透過 WordPress 的 **Plugins** 畫面啟用外掛（網路啟用）。
 3. 導航到 **Ultimate Multisite → Multi-Currency** 以開啟管理儀表板。
 4. 新增您想要接受的貨幣，並設定您的匯率提供者。
 
-## 設定
+## 設定 {#configuration}
 
-### 管理儀表板
+### 管理儀表板 {#admin-dashboard}
 
 Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是以下功能的中心位置：
 
@@ -44,7 +44,7 @@ Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是
 - 查看所有活躍貨幣的當前匯率。
 - 當自動提供者不適用時，設定手動匯率。
 
-### 匯率提供者
+### 匯率提供者 {#exchange-rate-providers}
 
 | 提供者 | 說明 |
 |---|---|
@@ -55,7 +55,7 @@ Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是
 
 請在 **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider** 下選擇您的提供者。匯率可以隨時手動刷新，或設定自動更新。
 
-### 產品單價覆寫
+### 產品單價覆寫 {#per-product-pricing-overrides}
 
 當自動轉換的價格不夠精確時，您可以為任何產品設定特定貨幣的精確價格：
 
@@ -66,7 +66,7 @@ Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是
 
 沒有覆寫的產品將使用從您的基礎貨幣轉換而來的價格。
 
-### 貨幣選擇器註冊欄位
+### 貨幣選擇器註冊欄位 {#currency-selector-signup-field}
 
 您可以將貨幣選擇器欄位新增到您的註冊/結帳流程中，讓客戶在註冊時選擇他們偏好的貨幣：
 
@@ -76,7 +76,7 @@ Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是
 
 所選的貨幣會與訂閱資訊一起儲存，並用於所有後續的計費。
 
-### 基於地理位置的貨幣偵測
+### 基於地理位置的貨幣偵測 {#geolocation-based-currency-detection}
 
 當啟用地理位置偵測時，此附加元件會將訪客的國家映射到一種貨幣，並在貨幣選擇器欄位中預先選定它。若要啟用：
 
@@ -86,27 +86,27 @@ Multi-Currency 管理儀表板（**Ultimate Multisite → Multi-Currency**）是
 
 如果訪客的國家沒有映射，系統將使用網路的基礎貨幣作為備用選項。
 
-## 常見問題
+## 常見問題 {#frequently-asked-questions}
 
-### 如果匯率提供者無法使用，會發生什麼事？
+### 如果匯率提供者無法使用，會發生什麼事？ {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 此附加元件會回退到上次成功獲取的匯率。如果從未獲取過匯率，則會回退到您設定的手動匯率。建議您設定手動匯率作為安全網。
 
-### 我可以為不同的貨幣使用不同的提供者嗎？
+### 我可以為不同的貨幣使用不同的提供者嗎？ {#can-i-use-different-providers-for-different-currencies}
 
 不可以 — 所有貨幣目前只啟用一個提供者。如果您需要完全控制單個匯率，請使用 **Manual**。
 
-### 地理位置偵測需要額外的外掛嗎？
+### 地理位置偵測需要額外的外掛嗎？ {#does-geolocation-require-a-separate-plugin}
 
 不需要外部的地理位置外掛。此附加元件使用 WordPress 內建的 IP 到國家偵測功能。若需要更高的準確性，可以透過提供的 filter hooks 整合專用的地理位置服務。
 
-### 產品單價覆寫是在稅前還是稅後計算的？
+### 產品單價覆寫是在稅前還是稅後計算的？ {#are-per-product-overrides-applied-before-or-after-tax}
 
 產品單價覆寫設定的是目標貨幣的稅前價格。稅金會使用您現有的稅務設定，在覆寫價格的基礎上計算。
 
-## 更新日誌
+## 更新日誌 {#changelog}
 
-### Version 1.0.0 — 釋出於 2026-04-02
+### Version 1.0.0 — 釋出於 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - 新增：支援多幣度，並具備自動匯率轉換功能。
 - 新增：產品單價覆寫，用於設定精確的貨幣特定價格。

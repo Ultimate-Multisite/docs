@@ -1,0 +1,194 @@
+---
+title: Ntụaka Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Ntụaka Hooks {#hooks-reference}
+
+Akwụkwọ ntụaka emepụtara na-akpaghị aka maka **omume 59** niile na **nzacha 118** niile dị na Ultimate Multisite.
+
+## Omume {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Na-arụ tupu ntụgharị njirimara.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Na-arụ ozugbo tupu edobe cookie njirimara.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Na-arụ ozugbo tupu edobe cookie njirimara nke onye banyere.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Kwe ka ndị mmepe tinye njikọta ndị na-enye host nke ha site na plugins wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Na-akpalite mgbe ebulitela dependencies niile
+- [wu_activation](./Actions/wu_activation) — Kwe ka akụkụ ndị ọzọ nke plugin jikọọ usoro ha maka activation
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Kwe ka ndị mmepe plugin tinye functions mgbe onye ọrụ ma ọ bụ super admin gbanwere ndebiri saịtị
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — N'ọnọdụ ụfọdụ, anyị ga-achọ ibunye ike mgbakwunye iji jikwaa actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Na-arụ tupu nhazi arịrịọ ọchụchọ.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Kwe ka ndị mmepe mee mgbanwe mgbakwunye na checkout object.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Kwe ka ndị mmepe mee mgbanwe mgbakwunye na checkout object.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Na-arụ tupu agbakwunye field na checkout form.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Kwe ka ndị mmepe kpalite hooks mgbakwunye.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Tupu anyị hazie checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Na-arụ mgbe agbakọtachara checkout order kpamkpam.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Kwe ka ndị mmepe plugin tinye widgets na Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Kwe ka ndị mmepe plugin tinye widgets na Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Kwe ka akụkụ ndị ọzọ nke plugin jikọọ usoro ha maka deactivation
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Kwe ka ndị mmepe plugin tinye actions na usoro ihichapụ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Na-arụ mgbe domain ghọrọ domain bụ isi maka saịtị.
+- [wu_domain_created](./Actions/wu_domain_created) — Na-akpalite mgbe agbakwunyere mapping domain ọhụrụ.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Arụrụ mgbe ebulitela Domain Mapping bụ isi anyị
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ụfọdụ plugins ga-echekwa URL tupu mapping ahụ dị irè ma ọ bụ wuo URLs n'ụzọ dị iche nke etinyeghị o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Kwe ka ndị mmepe tinye hook mgbe idetuo saịtị gasịrị.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Kwe ka ndị mmepe plugin tinye hooks mgbakwunye
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook maka nhicha mgbakwunye
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Na-arụ tupu ijikwa arịrịọ modal tinye domain ọhụrụ.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Kwe ka ndị mmepe plugin chekwaa meta data n'ụzọ dị iche ma ọ bụrụ na ha chọrọ.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Kwe ka ndị mmepe plugin chekwaa user meta data n'ụzọ dị iche ma ọ bụrụ na ha chọrọ.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Na-arụ mgbe a zutere magic link token na-adịghị irè.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Na-arụ mgbe onye ọrụ banyere site na magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Kwe ka ndị mmepe plugin mee ihe mgbakwunye mgbe agbakwunyere customer.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Na-arụ mgbe edebanyere ikike MCP maka entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Na-arụ mgbe ebidola MCP adapter.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Na-akpalite mgbe akagbuola membership.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Na-akpalite mgbe mmegharị membership gasịrị.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Na-akpalite tupu akagbuo membership.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Na-akpalite tupu mmegharị membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Na-arụ mgbe echekwara object n'ime database.
+- [wu_page_added](./Actions/wu_page_added) — Kwe ka ndị mmepe plugin rụọ ihe mgbakwunye mgbe edebanyere pages.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Kwe ka ndị mmepe plugin tinye ọdịnaya mgbakwunye mgbe anyị bipụtachara page
+- [wu_page_before_render](./Actions/wu_page_before_render) — Kwe ka ndị mmepe plugin tinye ọdịnaya mgbakwunye tupu anyị bipụta page.
+- [wu_page_load](./Actions/wu_page_load) — Kwe ka ndị mmepe plugin tinye hooks mgbakwunye na pages anyị.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Kwe ka ndị mmepe plugin tinye ọdịnaya mgbakwunye mgbe anyị bipụtachara page
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Kwe ka ndị mmepe plugin tinye ọdịnaya mgbakwunye tupu anyị bipụta page.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Kwe ka ndị mmepe plugin tinye hooks mgbakwunye na pages anyị.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Na-arụ mgbe edebanyere widgets maka page a.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Na-arụ ọrụ iji kwe ka addons tinye modul ikike na integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Na-arụ ọrụ iji kwe ka integrations debanye onwe ha.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Kwe ka edebanye ụzọ ndị ọzọ.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Kwe ka ndị mmepe plugin tinye omume na usoro ịchekwa
+- [wu_site_created](./Actions/wu_site_created) — Na-arụ ọrụ mgbe e mepụtara saịtị na nke mbụ.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Kwe ka ndị mmepe plugin tinye hooks ndị ọzọ, ma ọ bụrụ na achọrọ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Na-agba mgbe ọ nọ n’ọnọdụ template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Na-akpalite enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Na-arụ ọrụ mgbe echekwara ihe n’ime database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Na-arụ ọrụ mgbe echekwara ihe n’ime database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Na-arụ ọrụ mgbe echekwara ihe n’ime database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Kwe ka ndị mmepe plugin tinye omume na usoro imeghe.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Na-enyocha ogologo oge njedebe cookie nkwenye njirimara.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Na-enyocha atụmatụ redirect nkwenye njirimara.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Na-emegharị WP Filter mbụ ebe a, maka ezigbo ihe.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Kwe ka ndị mmepe plugin nyochaa URL eji na previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Na-enyocha ma cookie auth kwesịrị iziga naanị site na HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Na-enyocha ma a ga-eji redirect nkwenye njirimara dị nchebe.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Na-enyocha ma cookie nke logged in kwesịrị iziga naanị site na HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Na-enye ohere igbochi auth cookies ka e zigara ya n'ezie na client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Tọọ URL redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Tinye nzọụkwụ ndị ọzọ site na filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Kwe ka ndị mmepe plugin tinye variable mgbakwunye na render context n'ụwa niile.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Kwe ka ndị mmepe mee short-circuit na check a.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Na-enyocha fields maka modal tinye domain ọhụrụ.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Kwe ka ndị mmepe mee mgbanwe na line item ụgwọ setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Kwe ka ndị mmepe nyochaa admin notices Ultimate Multisite tinyere.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Nyochaa mgbe agbanwechara ya.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ugbu a, anyị na-emeso ụdị niile.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Kwe ka ndị mmepe plugin mee short-circuit na mmachi.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Na-enyocha ma a ga-etinye ụgwọ signup ma ọ bụ na a gaghị etinye ya.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Nyochaa arguments api mbụ.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Kwe ka ndị mmepe plugin nyochaa fields adreesị billing.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Kwe ka ndị mmepe gafee output ma tọọ nke ọhụrụ
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Kwe ka ndị mmepe gafee code unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Na-enyocha ngụkọta "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Nyochaa ngụkọta "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Nyochaa ngụkọta "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Kwe ka ndị mmepe plugin metụ uru kredit aka.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Na-enyocha shared checkout-form base domains ndị na-ekwesịghị ịghọ ndekọ mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API anyị maka itinye field templates ọhụrụ na-ejikọta ebe a.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API anyị maka itinye ụdị field ọhụrụ na-ejikọta ebe a.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Nyochaa ozi njehie.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Kwe ka ndị mmepe gafee check ma ọ bụrụ na field bụ auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Kwe ka ndị mmepe plugin tinye aliases omenala na form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Kwe ka ndị mmepe plugin nyochaa iwu validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Wepụ Params achọghị.
+- [wu_contains_element](./Filters/wu_contains_element) — Kwe ka ndị mmepe gbanwee nsonaazụ ọchụchọ mbụ.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Kwe ka ndị na-enye host wụnye constant n'ụzọ dị iche.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Na-alaghachi aha mara mma nke sub-divisions nchịkwa obodo.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Na-alaghachi ndepụta obodo maka steeti n'ime obodo.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Na-alaghachi ndepụta steeti maka obodo a.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Kwe ka ndị mmepe gbanwee omume ndabara ma tọọ customer dị ugbu a n'ụzọ dị iche.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Kwe ka ndị mmepe gbanwee omume ndabara ma tọọ membership dị ugbu a n'ụzọ dị iche.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Kwe ka ndị mmepe gbanwee omume ndabara ma tọọ site dị ugbu a n'ụzọ dị iche.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Kwe ka ndị mmepe gbanwee parameters URL manage site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Kwe ka ndị mmepe plugin nyochaa njikọ.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Kwe ka ndị mmepe plugin tinye checks ọhụrụ iji kọwaa nsonaazụ.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Anyị nwere ike ịchọ itinye blọk ndị ọzọ ma e mesịa.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Na-agbakwunye filter izugbe iji kwe ka ndị mmepe gbasaa parser a ka ọ rụọ ọrụ na builders ma ọ bụ plugins ndị ọzọ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter ma a ga-amanye iwu okwuntughe ndị ọzọ.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter aha njirimara onye ahịa emepụtara.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Kwe ka ndị mmepe plugin kpochapụ pre-sets nke ibe checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Kwe ka ndị mmepe tinye slugs fọm ọhụrụ iji gafee omume a.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Kwe ka ndị mmepe na add-ons tinye nzọụkwụ migration ọhụrụ
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Lee ihe ndị ọzọ gbasara filter a n’okpuru, na otu method a.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Kwe ka ndị mmepe họrọ ụdị post ndị kwesịrị igosipụta.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Weghachi Ahịrị, nke a pụrụ ị-filter
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Kwe ka ndị mmepe gbanwee ụzọ abụọ domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Na-filter ngalaba wizard maka nhazi njikọta hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Na-filter fields dị na fọm. A na-amata fọm ahụ site na ID dị n’aha filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filter ụdị ngwaahịa nwere okirikiri ịgba ụgwọ nọọrọ onwe ha.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Kwe ka ndị mmepe plugin manye ọnọdụ enyere maka API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Kwe ka ndị mmepe plugin tinye ule ndị ọzọ maka ọnọdụ mmepe.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Kwe ka ndị mmepe plugin manye ọnọdụ enyere maka MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Maka ihe nchekwa, anyị na-amachi ọnụ ọgụgụ actions dị maka hooking into. Filter a na-enye ndị mmepe ohere ịgbasa
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Na-enyocha ma ọ bụrụ na a na-ekwe ụdị post enyere na plan a Kwe ka ndị mmepe plugin filter uru e weghachiri
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter ma a ga-amanye nkwenye adreesị IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter ma a ga-amanye nkwenye user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter URL magic link emepụtara.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter ma magic links dị enabled.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Na-filter URL redirect mgbe emechara domain ka ọ bụrụ primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Mepụta ndepụta mwepu nke parameters na-egbochi auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter iji gbanwee mkpebi itinye MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Na-filter ụbọchị ngwụcha a gbakọtara.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Na-filter ụbọchị ngwụcha a gbakọtara ka etinye ya mgbe renewal gasịrị.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Kwe ka ndị mmepe tinye slugs fọm mmelite ọhụrụ.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter ogologo okwuntughe kacha nta.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter ike okwuntughe kacha nta achọrọ (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Kwe ka ndị mmepe plugin, na anyị onwe anyị, tinye action links na ibe ndezi anyị
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter ma a ga-achọ mkpụrụedemede obere n’ime okwuntughe.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter ma a ga-achọ ọnụọgụ n’ime okwuntughe.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter ma a ga-achọ mkpụrụedemede pụrụ iche n’ime okwuntughe.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter ma a ga-achọ mkpụrụedemede ukwu n’ime okwuntughe.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Kwe ka onye ọrụ gbanwee ozi gbasara ịkwụ ụgwọ ndị ka na-eche.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filter ụdị ngwaahịa kwesịrị ịtụle dị ka plans.
+- [wu_post_count](./Filters/wu_post_count) — Kwe ka ndị mmepe plugin gbanwee mkpokọta ọnụ ọgụgụ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Kwe ka ndị mmepe plugin gbanwee status post ndị kwesịrị ịgụ Site na ndabara, a na-agụ posts e bipụtara na nkeonwe
+- [wu_post_default_status](./Filters/wu_post_default_status) — Na-filter data object tupu echekwa ya n’ime database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Kwe ka ndị mmepe filter ntọala tupu Ultimate Multisite echekwaa ya.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Na-filter ma a na-ekwe ka a gaa n’ihu na request ahụ ma ọ bụ na ọ bụghị.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Na-filter ma a na-ekwe ka a gaa n’ihu na request ahụ ma ọ bụ na ọ bụghị.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Na-enyocha ma a na-ekwe ka ọ gaa n'ihu na arịrịọ ahụ ma ọ bụ na mba.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Na-enyocha ma a na-ekwe ka ọ gaa n'ihu na arịrịọ ahụ ma ọ bụ na mba.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Na-enyocha ma a na-ekwe ka ọ gaa n'ihu na arịrịọ ahụ ma ọ bụ na mba.
+- [wu_return_url](./Filters/wu_return_url) — Na-enye ndị mmepe ohere ịgbanwe URL nloghachi gateway a na-eji mgbe usoro ịkwụ ụgwọ ikpeazụ gasịrị.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Na-enye ndị mmepe ngwa mgbakwunye ohere ịgbakwunye ọrụ ụdị ọchụchọ ndị ọzọ.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Na-enye ndị mmepe ohere ịgbakwunye nzọụkwụ setup wizard ndị ọzọ.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Na-enyocha ma Ultimate Multisite kwesịrị ịmepụta ndekọ domain maka saịtị e kere ọhụrụ.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Na-enye ndị mmepe ohere ịkwụsị ntụgharị ụzọ ahụ ozugbo, na-egbochi ya ime.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Na-enye ohere idegharị handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Nyochaa omume bulk dị maka saịtị.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Nyocha iji gbanwee uru maka get pluginssites n'ime netwọkụ.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Kwado/gbanyụọ ikike ịbanye otu ugboro n'ofe domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Na-enyocha URL SSO emepụtara tupu eweghachite ha maka omume ndị ahịa n'ofe domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Nyochaa data ndenye aha Stripe. Nwere ike dochie success_url ma ọ bụ cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Na-enyocha arụmụka ebumnuche ịkwụ ụgwọ.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Na-enyocha ID nke atụmatụ a ga-elele. Ọ bụrụ na nke a dị, ndenye aha ọhụrụ ga-eji atụmatụ a.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Na-enyocha ID nke ngwaahịa a ga-elele. Ọ bụrụ na nke a dị, ndenye aha ọhụrụ ga-eji ngwaahịa a.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Na-enyocha uru idempotency_key ezitere ya na nhọrọ ụgwọ Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Na-enyocha ndekọ otu-ndebanye jikọtara na webhook a.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Na-enyocha meta data tupu e mee ya serialized ka echekwaa ya n'ime ebe nchekwa data.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Na-enyocha data ihe ahụ tupu echekwaa ya n'ime ebe nchekwa data.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Na-enye ndị mmepe ohere ịgbanwe URL kwalite iji kpọghee
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Kpebie ma e kwesịrị iji mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Nyochaa aha njirimara onye ahịa ọhụrụ.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Na-enye ndị mmepe ohere ịgbanwe ozi gbasara oke ndị ọrụ otu-ndebanye
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Na-enye ndị mmepe ohere ịgbakwunye folda ndị ọzọ na ndepụta a pụrụ dochie.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Na-enyocha sub_commands ndị akwadoro maka entity a.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Anyị na-enyocha ụkpụrụ atọ mgbe anyị na-agbalị ịchọpụta ebe anyị nwere ike itinye constants anyị:

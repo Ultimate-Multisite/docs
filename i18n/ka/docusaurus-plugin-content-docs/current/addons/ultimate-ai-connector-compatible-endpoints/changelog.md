@@ -1,0 +1,19 @@
+---
+title: Ultimate AI Connector თავსებადი საბოლოო წერტილებისთვის ცვლილებების ჟურნალი
+sidebar_position: 99
+_i18n_hash: bc1e5acc3b2415defb863e64a18d271c
+---
+# Ultimate AI Connector for Compatible Endpoints ცვლილებების ჟურნალი {#ultimate-ai-connector-for-compatible-endpoints-changelog}
+
+## ვერსია 2.0.0 — გამოვიდა 2026-04-24 {#version-200--released-on-2026-04-24}
+
+* ახალი: მრავალი პროვაიდერის მხარდაჭერა — დააკონფიგურირეთ რამდენიმე AI endpoint და მიმართეთ მოთხოვნები ავტომატური fallback-ით პროვაიდერებს შორის.
+* შესწორება: მრავალი პროვაიდერის SDK ინტეგრაცია სწორი პროვაიდერის ID-ებით, რეგისტრაციის URL-ებით და HTTP filter-ის scope-ით თითოეული პროვაიდერისთვის.
+* შესწორება: ახალი პროვაიდერის ბარათი ახლა დამატებისას ავტომატურად იშლება; script cache busting plugin-ის განახლებისას.
+* შესწორება: დინამიკური პროვაიდერის კლასის namespace eval()-ისთვის და ავტომატური გაშლის ქცევა ახლად დამატებული პროვაიდერებისთვის.
+* შესწორება: იყენებს სტაბილურ Card/CardBody/CardHeader/CardDivider კომპონენტებს (აღარ არის ექსპერიმენტული) WordPress 6.9+-თან თავსებადობისთვის.
+* შესწორება: undefined DragHandle ჩანაცვლდა unicode grip ხატულით პროვაიდერის drag-to-reorder-ისთვის.
+* შესწორება: აღმოფხვრილია ბლოკირების HTTP მოთხოვნა, რომელიც ყოველი გვერდის ჩატვირთვისას ეშვებოდა.
+* გაუმჯობესება: GitHub Actions workflows განახლდა Node.js 24-მდე.
+
+## ვერსია 1.0.0 — საწყისი გამოშვება {#version-100--initial-release}

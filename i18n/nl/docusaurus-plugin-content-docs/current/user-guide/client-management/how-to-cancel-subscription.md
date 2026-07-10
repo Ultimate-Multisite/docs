@@ -1,11 +1,12 @@
 ---
-title: Hoe een abonnement annuleert
+title: Een abonnement opzeggen
 sidebar_position: 17
-_i18n_hash: 775190fa348501ea8d557b51c0b9acd9
+_i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Hoe kan ik mijn abonnement annuleren?
+# Hoe kan ik mijn abonnement opzeggen? {#how-can-i-cancel-my-subscription}
 
-Als je een Ultimate Multisite-licentie hebt, kun je de verlenging op elk gewenst moment annuleren. Volg gewoon de onderstaande stappen:
+Als je een Ultimate Multisite-licentie hebt, kun je de verlenging ervan op elk gewenst moment annuleren. Volg gewoon de onderstaande stappen:
+
 
 <!-- Screenshot unavailable: Account page email with access link -->
 
@@ -13,20 +14,20 @@ Gebruik het e-mailadres dat je tijdens de aankoop hebt opgegeven en je wachtwoor
 
 <!-- Screenshot unavailable: Login page with email and password fields -->
 
-Dit is het eerste scherm van je Accountpagina:
+Dit is het beginscherm van je Account Page:
 
 <!-- Screenshot unavailable: Account page initial screen showing subscription details -->
 
-Om je abonnement te annuleren, ga je in het menu aan de linkerkant naar _Renewing & Billing_.
+Om je abonnement op te zeggen, ga je in het menu aan de linkerkant naar _Renewing & Billing._
 
 <!-- Screenshot unavailable: Renewing & Billing page with cancel option -->
 
-Klik op de pijl aan de rechterkant om een zijvenster te openen. Selecteer vervolgens de optie die de **auto-renew** annuleert.
+Klik op de pijl aan de rechterkant om een zijvenster te openen. Vervolgens moet je de optie selecteren waarmee de **auto-renew** wordt geannuleerd.
 
 Het systeem toont je een bevestigingsbericht.
 
-Als je zeker weet dat je je abonnement wilt annuleren, klik dan op de knop _**Cancel Renewals**_. Na deze actie word je gevraagd een korte enquête in te vullen.
+Als je zeker weet dat je je abonnement wilt opzeggen, klik je gewoon op de knop _**Cancel Renewals**_. Na deze actie wordt je gevraagd een korte enquête te beantwoorden.
 
 Klaar! Je abonnement wordt niet automatisch verlengd.
 
-Je hebt een geldige sleutel tot het moment dat je abonnement verloopt. Als je je abonnement opnieuw wilt activeren, moet je dit handmatig doen.
+**Je hebt een geldige sleutel totdat je abonnement verloopt**. Als je je abonnement opnieuw wilt activeren, moet je dit handmatig doen.

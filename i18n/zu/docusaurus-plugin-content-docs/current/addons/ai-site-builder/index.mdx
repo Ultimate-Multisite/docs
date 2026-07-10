@@ -1,0 +1,124 @@
+---
+title: Umakhi Wesayithi we-AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Umakhi Wesayithi we-AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Izidingo {#requirements}
+
+- WordPress 5.3 noma ngaphezulu
+- PHP 7.4 noma ngaphezulu
+- i-plugin ye-Multisite Ultimate (isebenza)
+
+## Ukufaka {#installation}
+
+1. Layisha amafayela e-addon kuhla lwemibhalo yakho ethi `/wp-content/plugins/`
+2. Yenza i-plugin isebenze ngemenyu ethi 'Ama-plugin' ku-WordPress
+3. Lungiselela izilungiselelo ze-addon kumphathi wenethiwekhi
+
+## Ukuthuthukisa {#development}
+
+### Ukusetha {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Isakhiwo Sephrojekthi {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Amakilasi e-PHP nokufakiwe
+│   ├── class-multisite-ultimate-updater.php  # Isibambi sokubuyekeza
+│   └── class-ai_site_builder-main.php             # Umsebenzi oyinhloko
+├── tests/                        # Ukuhlolwa kwamayunithi
+│   ├── bootstrap.php            # Ukuqalisa ukuhlolwa
+│   ├── class-*-base.php         # Ikilasi lokuhlola eliyisisekelo
+│   └── class-*-test.php         # Amacala okuhlola
+├── views/                       # Amafayela esifanekiso
+├── assets/                      # Izimpahla ezimile
+│   ├── css/                     # Amashidi esitayela
+│   ├── js/                      # Amafayela e-JavaScript
+│   └── images/                  # Izithombe
+├── lang/                        # Amafayela olimi
+├── composer.json                # Okuncikile kwe-PHP
+├── package.json                 # Okuncikile kwe-Node.js
+├── phpunit.xml.dist             # Ukulungiselelwa kwe-PHPUnit
+├── .phpcs.xml.dist              # Ukulungiselelwa kwamazinga ekhodi
+└── rector.php                   # Imithetho yokwenza ikhodi ibe yesimanje
+```
+
+### Ukuhlola {#testing}
+
+I-addon ihlanganisa uhlaka lokuhlola oluphelele:
+
+- **Ukuhlolwa Kwamayunithi**: Ukuhlolwa okusekelwe ku-PHPUnit ngeqoqo lokuhlola le-WordPress
+- **Ikilasi Lokuhlola Eliyisisekelo**: Linikeza izindlela zosizo zezimo zokuhlola ezivamile
+- **Ukumbozwa Kokuhlola**: Kulungiselelwe ukulandelela ukumbozwa kwekhodi
+- **Ukuhlolwa kwe-Multisite**: Ukuhlolwa kusebenza endaweni ye-multisite
+
+### Amazinga Ekhodi {#code-standards}
+
+- **Amazinga Okubhala Ikhodi e-WordPress**: Aphoqelelwa nge-PHPCS
+- **Ukuhambisana ne-PHP 7.4+**: Izici zesimanje ze-PHP ziyasekelwa
+- **Ukuhlaziywa Okumile**: Ukuhlanganiswa kwe-PHPStan ukuze kuhlolwe izinhlobo
+- **Ukwenza Ikhodi Ibe Yesimanje**: Imithetho ye-Rector yokuthuthukiswa kwe-PHP
+
+### Uhlelo Lokwakha {#build-system}
+
+- **Ukucubungula Izimpahla**: Ukunciphisa amafayela e-CSS/JS
+- **Ukuhumusha**: Ukwakhiwa kwefayela le-POT
+- **Ukupakisha**: Ukwakhiwa kwe-archive yokusabalalisa
+- **Imodi Yokuthuthukisa**: Izimpahla ezingancishisiwe zokulungisa amaphutha
+
+## Ukulungiselela {#configuration}
+
+I-addon isekela izinketho ezihlukahlukene zokulungiselela ezifinyeleleka ngesixhumi esibonakalayo somphathi wenethiwekhi.
+
+## Ama-hook Nama-filter {#hooks-and-filters}
+
+### Izenzo {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Kudutshulwa ngemva kokuqaliswa kwe-addon
+- `ultimate-multisite-ai-site-builder_loaded` - Kudutshulwa ngemva kokuthi wonke amafayela e-addon eselayishiwe
+
+### Ama-filter {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Shintsha izilungiselelo ze-addon
+- `ultimate-multisite-ai-site-builder_enabled` - Yeqa isimo sokuvumela/ukukhubaza i-addon
+
+## Ilayisensi {#license}
+
+Le addon ilayisenswe ngaphansi kwe-GPL v3 noma yakamuva.
+
+## Usekelo {#support}
+
+Ukuze uthole usekelo nemibhalo, vakashela [MultisiteUltimate.com](https://multisiteultimate.com)
+## Umlando Wezinguquko {#changelog}
+
+- Inguqulo 1.0.1 (2025-09-28): qamba kabusha isiqalo sibe ultimate-multisite; buyekeza isizinda sombhalo; khuphula inguqulo.
+
+
+- Inguqulo  (2025-09-28): qamba kabusha isiqalo sibe ultimate-multisite; buyekeza isizinda sombhalo; khuphula inguqulo.

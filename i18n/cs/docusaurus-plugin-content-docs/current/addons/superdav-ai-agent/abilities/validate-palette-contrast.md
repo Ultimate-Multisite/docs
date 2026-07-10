@@ -3,15 +3,15 @@ title: Validace kontrastu palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validace kontrastu palety
+# Validace kontrastu palety {#validate-palette-contrast}
 
 Funkce **Validace kontrastu palety** kontroluje, zda jsou barevné kombinace v vaší designové paletě shodu s WCAG (Web Content Accessibility Guidelines) předtím, než je aplikujete na svou tému.
 
-## Přehled
+## Přehled {#overview}
 
 Tato funkce zajišťuje, že barevná schéma vašeho webu splňuje standardy pro přístupnost, protože ověřuje kontrastní poměry mezi textem a pozadím. Pomáhá tak zabránit barevným kombinacím, které by mohly být pro uživatele s vizuálními potížemi obtížně čitelné.
 
-## Formát vstupu
+## Formát vstupu {#input-format}
 
 Funkce přijímá jako vstup barevnou paletu:
 
@@ -35,7 +35,7 @@ Funkce přijímá jako vstup barevnou paletu:
 }
 ```
 
-### Parametry
+### Parametry {#parameters}
 
 | Parametr | Typ | Požadováno | Popis |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Funkce přijímá jako vstup barevnou paletu:
 | `wcag_level` | string | Ne | Úroveň shody s WCAG: "A", "AA" (výchozí) nebo "AAA" |
 | `pairs_to_check` | array | Ne | Specifické barevné kombinace pro validaci (např. `["primary-text", "background-text"]`) |
 
-## Kontrolované úrovně WCAG
+## Kontrolované úrovně WCAG {#wcag-levels-checked}
 
 Funkce validuje kontrastní poměry podle standardů WCAG:
 
@@ -56,7 +56,7 @@ Funkce validuje kontrastní poměry podle standardů WCAG:
 - **Normální text** — text menší než 18pt (nebo 14pt tučně)
 - **Velký text** — text 18pt nebo větší (nebo 14pt tučně nebo větší)
 
-## Schéma výstupu
+## Schéma výstupu {#output-schema}
 
 Funkce vrátí podrohový zprávu o validaci:
 
@@ -95,7 +95,7 @@ Funkce vrátí podrohový zprávu o validaci:
 }
 ```
 
-### Pole výstupu
+### Pole výstupu {#output-fields}
 
 | Pole | Typ | Popis |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Funkce vrátí podrohový zprávu o validaci:
 | `status` | string | "pass" nebo "fail" pro každou kombinaci |
 | `recommendations` | array | Návrhy na vylepšení neshodujících kombinací |
 
-## Příklad použití
+## Příklad použití {#usage-example}
 
 **Dotaz:**
 ```
@@ -119,7 +119,7 @@ Funkce validuje všechny barevné kombinace a vrátí:
 - ✅ Pozadí + Text: poměr 12.1:1 (splňuje WCAG AAA)
 - Celkově: Splňuje WCAG AA
 
-## Integrace s Theme Builderem
+## Integrace s Theme Builderem {#integration-with-theme-builder}
 
 Když používáte výběr směřování designu v Theme Builderu, funkce Validace kontrastu palety:
 
@@ -129,7 +129,7 @@ Když používáte výběr směřování designu v Theme Builderu, funkce Valida
 4. Poskytuje doporučení pro neshodující kombinace
 5. Zabraňuje aplikaci nedostupných barevných schémat
 
-## Nejlepší praxe
+## Nejlepší praxe {#best-practices}
 
 - **Začněte úrovní AA** — WCAG AA je standard pro většinu webových stránek
 - **Testujte před aplikací** — validujte svou paletu, než se zavete do designu
@@ -137,7 +137,7 @@ Když používáte výběr směřování designu v Theme Builderu, funkce Valida
 - **Zvažte preference uživatelů** — někteří uživatelé mohou mít dodatečnou citlivost na barvy
 - **Používejte kontroléry kontrastu** — zkombinujte tuto funkci s nástroji prohlížeče pro ověření
 
-## Neshodující kombinace a doporučení
+## Neshodující kombinace a doporučení {#failing-pairs-and-recommendations}
 
 Pokud barevná kombinace selže validaci, funkce poskytne doporučení:
 
@@ -155,7 +155,7 @@ Pokud barevná kombinace selže validaci, funkce poskytne doporučení:
 }
 ```
 
-## Související funkce
+## Související funkce {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — vytvořte loga pomocí vaší ověřené barevné palety
 - [Create Menu](./create-menu.md) — sestavte navigaci s přístupnými barvami

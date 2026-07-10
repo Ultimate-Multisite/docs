@@ -3,7 +3,7 @@ title: Integração com MailChimp
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# Integração com MailChimp
+# Integração com MailChimp {#mailchimp-integration}
 
 Este recurso é fornecido pelo addon **Mailchimp**.
 

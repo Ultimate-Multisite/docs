@@ -1,35 +1,35 @@
 ---
-title: Tools en Configuratie
+title: Tools en configuratie
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Tools en Configuratie
+# Tools en configuratie {#tools-and-configuration}
 
-Theme Builder gebruikt een set tools om uw WordPress-site te analyseren, te ontwerpen en te bouwen. In versie 1.16.0 is **sd-ai-agent/site-scrape nu een Tier 1 tool**, waardoor deze standaard beschikbaar is in Theme Builder.
+Theme Builder gebruikt een set tools om je WordPress-site te analyseren, ontwerpen en bouwen. In versie 1.16.0 is **sd-ai-agent/site-scrape nu een Tier 1-tool**, waardoor deze standaard beschikbaar is in Theme Builder. Superdav AI Agent v1.18.0 introduceert ook een apart gedistribueerd geavanceerd companion-pakket voor vertrouwde ontwikkelaarsworkflows; die tools maken geen deel uit van het WordPress.org-kernpakket en moeten afzonderlijk worden geïnstalleerd en geautoriseerd.
 
-## Beschikbare Tools
+## Beschikbare tools {#available-tools}
 
-### Tier 1 Tools (Altijd Beschikbaar)
+### Tier 1-tools (altijd beschikbaar) {#tier-1-tools-always-available}
 
-Tier 1 tools zijn standaard beschikbaar in Theme Builder zonder extra configuratie.
+Tier 1-tools zijn standaard beschikbaar in Theme Builder zonder aanvullende configuratie.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Doel:** Bestaande websites analyseren om inspiratie voor het ontwerp, de inhoudsstructuur en de functionaliteit te halen.
+**Doel:** Bestaande websites analyseren om ontwerpinspiratie, contentstructuur en functionaliteit te extraheren.
 
 **Mogelijkheden:**
 
-- **Website-analyse** — webpagina's van concurrenten of inspiratiebronnen scrapen en analyseren
+- **Websiteanalyse** — websites van concurrenten of ter inspiratie scrapen en analyseren
 - **Ontwerpextractie** — kleuren, lettertypen en lay-outpatronen identificeren
-- **Inhoudsstructuur** — het begrip van de paginavormgeving en hiërarchie
-- **Feature detectie** — plugins en functionaliteit identificeren
-- **Prestatieanalyse** — de paginisnelheid en optimalisatie controleren
-- **SEO-analyse** — meta tags en gestructureerde data beoordelen
+- **Contentstructuur** — paginaorganisatie en hiërarchie begrijpen
+- **Functiedetectie** — plugins en functionaliteit identificeren
+- **Prestatieanalyse** — paginasnelheid en optimalisatie controleren
+- **SEO-analyse** — metatags en gestructureerde data beoordelen
 
 **Gebruik:**
 
 ```
-Analyseer het ontwerp van example.com en gebruik dit als inspiratie voor mijn site.
+Analyseer het ontwerp van example.com en gebruik het als inspiratie voor mijn site.
 ```
 
 **Wat het extraheert:**
@@ -38,218 +38,240 @@ Analyseer het ontwerp van example.com en gebruik dit als inspiratie voor mijn si
 - Typografie (lettertypen en groottes)
 - Lay-outstructuur en witruimte
 - Navigatiepatronen
-- Inhoudsorganisatie
-- Afbeeldingen en mediagebruik
+- Contentorganisatie
+- Gebruik van afbeeldingen en media
 - Interactieve elementen
-- Mobile responsiveness
+- Mobiele responsiviteit
 
 **Beperkingen:**
 
-- Kan geen sites scrapen die beveiligd zijn met een wachtwoord
+- Kan geen met wachtwoord beveiligde sites scrapen
 - Respecteert robots.txt en sitebeleid
-- Kan dynamische inhoud mogelijk niet vastleggen
-- Sites met veel JavaScript kunnen beperkte analyse hebben
+- Legt dynamische content mogelijk niet vast
+- JavaScript-intensieve sites kunnen beperkte analyse hebben
 - Grote sites kunnen langer duren om te analyseren
 
-### Tier 2 Tools (Optioneel)
+### Tier 2-tools (optioneel) {#tier-2-tools-optional}
 
-Tier 2 tools zijn beschikbaar wanneer ze expliciet zijn ingeschakeld in de Theme Builder instellingen.
+Tier 2-tools zijn beschikbaar wanneer ze expliciet zijn ingeschakeld in de instellingen van Theme Builder.
 
-#### Advanced Analytics
+#### Geavanceerde analytics {#advanced-analytics}
 
-Biedt gedetailleerde prestatiegegevens:
+Biedt gedetailleerde prestatiestatistieken:
 
-- Pagina laadtijden
+- Laadtijden van pagina's
 - Core Web Vitals
 - SEO-score
 - Toegankelijkheidsscore
-- Best practices score
+- Score voor best practices
 
-#### Content Optimizer
+#### Contentoptimalisator {#content-optimizer}
 
 Analyseert en stelt verbeteringen voor voor:
 
 - Leesbaarheid
 - SEO-optimalisatie
 - Gebruik van trefwoorden
-- Inhoudsstructuur
-- Plaatsing van call-to-action
+- Contentstructuur
+- Plaatsing van call-to-actions
 
-### Tier 3 Tools (Premium)
+### Tier 3-tools (Premium) {#tier-3-tools-premium}
 
-Tier 3 tools vereisen extra configuratie of premium functies.
+Tier 3-tools vereisen aanvullende configuratie of premiumfuncties.
 
-#### AI Content Generator
+#### AI-contentgenerator {#ai-content-generator}
 
-Genereert inhoud voor:
+Genereert content voor:
 
 - Productbeschrijvingen
 - Servicepagina's
-- Blogposts
-- Meta beschrijvingen
-- Call-to-action teksten
+- Blogberichten
+- Metabeschrijvingen
+- Call-to-action-tekst
 
-#### Advanced Design Tools
+#### Geavanceerde ontwerptools {#advanced-design-tools}
 
 Biedt geavanceerde ontwerpmogelijkheden:
 
-- Generatie van custom CSS
-- Creatie van animaties
+- Aangepaste CSS-generatie
+- Animatiecreatie
 - Ontwerp van interactieve elementen
 - Geavanceerde kleurentheorie
-- Typografische optimalisatie
+- Typografie-optimalisatie
 
-## Tool Configuratie
+### Geavanceerde companion-tools (apart pakket) {#advanced-companion-tools-separate-package}
 
-### Tools Inschakelen
+Het geavanceerde companion-pakket wordt apart gedistribueerd van de kernrelease van Superdav AI Agent. Het is bedoeld voor vertrouwde omgevingen van ontwikkelaars en site-eigenaren waar beheerders de agent expliciet toestaan om tooling met grote impact te gebruiken.
 
-Om extra tools in Theme Builder in te schakelen:
+Geavanceerde companion-mogelijkheden kunnen omvatten:
 
-1. Navigeer naar **Gratis AI Agent → Settings**
+- **Bestandssysteemtools** — goedgekeurde bestanden in vertrouwde omgevingen inspecteren en wijzigen
+- **Databasetools** — sitegegevens opvragen of bijwerken wanneer dit expliciet is geautoriseerd
+- **WP-CLI-tools** — WordPress-onderhouds- en inspectiecommando's uitvoeren
+- **REST-dispatchertools** — geregistreerde REST-endpoints aanroepen via gecontroleerde dispatchworkflows
+- **Pluginbouwer-tools** — plugincode scaffolden en itereren
+- **Git-snapshottools** — snapshots maken vóór risicovolle ontwikkelaarsoperaties
+- **Gebruikersbeheertools** — helpen gebruikersrecords te beoordelen of aan te passen waar toegestaan
+- **Benchmarktools** — prestatie- of capaciteitsbenchmarks uitvoeren voor ontwikkelingsbeoordeling
+
+Documenteer deze niet als algemeen beschikbare Theme Builder-tools voor elke installatie. Ze zijn alleen beschikbaar wanneer het geavanceerde companion-pakket is geïnstalleerd, ingeschakeld en beperkt tot vertrouwde beheerders.
+
+## Toolconfiguratie {#tool-configuration}
+
+### Tools inschakelen {#enabling-tools}
+
+Om aanvullende tools in Theme Builder in te schakelen:
+
+1. Navigeer naar **Gratis AI Agent → Instellingen**
 2. Ga naar **Theme Builder → Tools**
-3. Schakel tools in/uit naar behoefte
-4. Sla de instellingen op
+3. Schakel tools naar behoefte aan/uit
+4. Sla instellingen op
 
-### Tool Rechten
+### Toolrechten {#tool-permissions}
 
 Sommige tools vereisen rechten:
 
-- **Site scraping** — vereist internettoegang
-- **Analytics** — vereist Google Analytics integratie
-- **Content generation** — vereist API-sleutels
-- **Advanced features** — kan een premium abonnement vereisen
+- **Site-scraping** — vereist internettoegang
+- **Analytics** — vereist Google Analytics-integratie
+- **Contentgeneratie** — vereist API keys
+- **Geavanceerde functies** — kunnen een premiumabonnement vereisen
+- **Geavanceerde companion-tools** — vereisen het apart gedistribueerde geavanceerde pakket en expliciet beheerdersvertrouwen
 
-### API Sleutels en Gegevens
+### API keys en inloggegevens {#api-keys-and-credentials}
 
-Configureer API-sleutels voor tools die deze vereisen:
+Configureer API keys voor tools die deze vereisen:
 
-1. Ga naar **Gratis AI Agent → Settings → API Keys**
-2. Voer de gegevens in voor elke tool
+1. Ga naar **Gratis AI Agent → Instellingen → API keys**
+2. Voer inloggegevens in voor elke tool
 3. Test de verbinding
 4. Sla veilig op
 
-## Gebruik van sd-ai-agent/site-scrape
+### Het geavanceerde companion-pakket installeren {#installing-the-advanced-companion-package}
 
-### Basisgebruik
+Het geavanceerde companion-pakket wordt apart uitgebracht van de WordPress.org-kern-ZIP. Installeer het alleen via het officiële distributiekanaal van het project voor de release, en beperk daarna de toegang tot vertrouwde beheerders. Beoordeel menselijke goedkeuringsstappen en git-snapshotgedrag voordat je bestandssysteem-, database-, WP-CLI-, REST-dispatcher-, pluginbouwer-, gebruikersbeheer- of benchmarktools op een productiesite inschakelt.
+
+## sd-ai-agent/site-scrape gebruiken {#using-sd-ai-agentsite-scrape}
+
+### Basisgebruik {#basic-usage}
 
 Vraag Theme Builder om een website te analyseren:
 
 ```
 Analyseer het ontwerp van de site van mijn concurrent op competitor.com
-en stel ontwerpsuggesties voor mijn site.
+en stel ontwerpverbeteringen voor mijn site voor.
 ```
 
-### Specifieke Analyse
+### Specifieke analyse {#specific-analysis}
 
 Vraag specifieke soorten analyse aan:
 
 ```
-Haal het kleurenpalet van example.com en gebruik dit als inspiratie.
+Extraheer het kleurenpalet van example.com en gebruik het als inspiratie.
 ```
 
 ```
-Analyseer de navigatiestructuur van example.com en pas een vergelijkbare
+Analyseer de navigatiestructuur van example.com en pas vergelijkbare
 organisatie toe op mijn site.
 ```
 
 ```
-Controleer de mobile responsiveness van example.com en zorg ervoor dat mijn site
+Controleer de mobiele responsiviteit van example.com en zorg ervoor dat mijn site
 even responsief is.
 ```
 
-### Vergelijkende Analyse
+### Vergelijkingsanalyse {#comparison-analysis}
 
 Vergelijk meerdere sites:
 
 ```
-Vergelijk de ontwerpen van site1.com en site2.com en creëer een ontwerp
+Vergelijk de ontwerpen van site1.com en site2.com en maak een ontwerp
 dat de beste elementen van beide combineert.
 ```
 
-## Beperkingen en Overwegingen van Tools
+## Toolbeperkingen en overwegingen {#tool-limitations-and-considerations}
 
-### Rate Limiting
+### Rate limiting {#rate-limiting}
 
-- Scrapen is beperkt om overbelasting van de server te voorkomen
-- Meerdere verzoeken naar dezelfde site kunnen worden beperkt
+- Scrapen is beperkt in snelheid om overbelasting van de server te voorkomen
+- Meerdere verzoeken aan dezelfde site kunnen worden vertraagd
 - Grote sites kunnen langer duren om te analyseren
 
-### Nauwkeurigheid van Inhoud
+### Nauwkeurigheid van inhoud {#content-accuracy}
 
-- Dynamische inhoud kan niet volledig worden vastgelegd
-- Inhoud gerenderd door JavaScript kan onvolledig zijn
-- Real-time data kan niet worden weerspiegeld
+- Dynamische inhoud wordt mogelijk niet volledig vastgelegd
+- Door JavaScript weergegeven inhoud kan onvolledig zijn
+- Realtime gegevens worden mogelijk niet weerspiegeld
 - Sommige inhoud kan achter betaalmuren zitten
 
-### Juridische en Ethische Overwegingen
+### Juridische en ethische overwegingen {#legal-and-ethical-considerations}
 
 - Respecteer robots.txt en sitebeleid
-- Scraap geen auteursrechtelijk beschermde inhoud voor reproductie
-- Gebruik analyse voor inspiratie, niet voor kopiëren
-- Controleer of u het recht heeft om de geëxtraheerde inhoud te gebruiken
-- Volg de servicevoorwaarden van de geanalyseerde sites
+- Scrape geen auteursrechtelijk beschermde inhoud voor reproductie
+- Gebruik analyse ter inspiratie, niet om te kopiëren
+- Controleer of je rechten hebt om geëxtraheerde inhoud te gebruiken
+- Volg de servicevoorwaarden van geanalyseerde sites
 
-### Prestatie-impact
+### Impact op prestaties {#performance-impact}
 
 - Het scrapen van grote sites kan tijd kosten
 - Meerdere gelijktijdige scrapes kunnen langzamer zijn
-- Netwerkverbinding beïnvloedt de snelheid
+- Netwerkconnectiviteit beïnvloedt de snelheid
 - Grote datasets kunnen meer verwerking vereisen
 
-## Best Practices
+## Best practices {#best-practices}
 
-### Site Analyse Gebruiken
+### Site-analyse gebruiken {#using-site-analysis}
 
-1. **Analyseer meerdere sites** — verzamel inspiratie uit verschillende bronnen
-2. **Focus op structuur** — leer lay-out- en organisatiepatronen
-3. **Extracteer kleuren** — gebruik kleurenpaletten als startpunt
-4. **Bestudeer typografie** — identificeer lettertypecombinaties die u mooi vindt
-5. **Bekijk navigatie** — begrijp de menu-organisatie
+1. **Analyseer meerdere sites** — verzamel inspiratie uit meerdere bronnen
+2. **Focus op structuur** — leer patronen voor lay-out en organisatie
+3. **Extraheer kleuren** — gebruik kleurenpaletten als startpunt
+4. **Bestudeer typografie** — identificeer lettertypecombinaties die je mooi vindt
+5. **Bekijk navigatie** — begrijp menuorganisatie
 
-### Ethisch Scrapen
+### Ethisch scrapen {#ethical-scraping}
 
-1. **Respecteer robots.txt** — volg de richtlijnen van de site
-2. **Kopieer geen inhoud** — gebruik analyse uitsluitend voor inspiratie
-3. **Controleer rechten** — zorg ervoor dat u de geëxtraheerde inhoud mag gebruiken
-4. **Vermeld bronnen** — geef inspiratiebronnen credit
-5. **Volg voorwaarden** — voldoen aan de servicevoorwaarden van de site
+1. **Respecteer robots.txt** — volg siterichtlijnen
+2. **Kopieer geen inhoud** — gebruik analyse alleen ter inspiratie
+3. **Controleer rechten** — zorg dat je geëxtraheerde inhoud mag gebruiken
+4. **Vermeld bronnen** — geef inspiratiebronnen erkenning
+5. **Volg voorwaarden** — voldoe aan de servicevoorwaarden van de site
 
-### Effectiviteit van Tools Maximaliseren
+### Effectiviteit van tools maximaliseren {#maximizing-tool-effectiveness}
 
 1. **Wees specifiek** — vraag om specifieke soorten analyse
-2. **Geef context** — leg het doel van uw site uit
-3. **Stel verwachtingen** — beschrijf uw ontwerddoelen
-4. **Itereer** — verfijn op basis van de resultaten
-5. **Combineer tools** — gebruik meerdere tools voor een uitgebreide analyse
+2. **Geef context** — leg het doel van je site uit
+3. **Stel verwachtingen** — beschrijf je ontwerpdoelen
+4. **Itereer** — verfijn op basis van resultaten
+5. **Combineer tools** — gebruik meerdere tools voor uitgebreide analyse
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### Site Scrapt Niet
+### Site kan niet worden gescrapet {#site-wont-scrape}
 
 - Controleer of de site openbaar toegankelijk is
-- Controleer of robots.txt scraping toestaat
+- Controleer of robots.txt scrapen toestaat
 - Probeer een andere site
 - Controleer de internetverbinding
-- Neem contact op met de support als het probleem aanhoudt
+- Neem contact op met support als het probleem aanhoudt
 
-### Onvolledige Analyse
+### Onvolledige analyse {#incomplete-analysis}
 
-- De site kan dynamische inhoud hebben
-- JavaScript kan niet volledig zijn gerenderd
+- Site kan dynamische inhoud hebben
+- JavaScript wordt mogelijk niet volledig weergegeven
 - Grote sites kunnen een time-out krijgen
 - Probeer in plaats daarvan specifieke pagina's te analyseren
-- Vraag specifieke analyse-typen aan
+- Vraag om specifieke analysetypen
 
-### Trage Prestaties
+### Trage prestaties {#slow-performance}
 
 - Grote sites duren langer om te analyseren
 - Meerdere gelijktijdige scrapes zijn langzamer
-- Netwerkverbinding beïnvloedt de snelheid
-- Probeer tijdens daluren
+- Netwerkconnectiviteit beïnvloedt de snelheid
+- Probeer het buiten piekuren
 - Analyseer eerst kleinere secties
 
-## Gerelateerde Documentatie
+## Gerelateerde documentatie {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — verzamel ontwerpinformatie
-- [Design Direction](./design-direction.md) — verfijn uw ontwerp
-- [Hospitality Menus](./hospitality-menus.md) — creëer menupagina's
+- [Ontwerprichting](./design-direction.md) — verfijn je ontwerp
+- [Hospitality Menus](./hospitality-menus.md) — maak menupagina's

@@ -4,11 +4,11 @@ title: Filter - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 এই ফিল্টাৰে কোন কোন `sub_commands` এই উপাদানটোৰ বাবে সক্ষম (enabled) হৈ আছে, সেয়া ফিল্টাৰ কৰে।
 
-## পৰামিটারসমূহ (Parameters)
+## পৰামিটারসমূহ (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 | $command_base | `string` | মূল (root)ৰ ঠিক পিছত ব্যৱহৃত আধাৰ (base)। |
 | $this | `\Base_Manager` | বস্তুৰ প্ৰতিলিপি (object instance)। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) at line 198

@@ -1,15 +1,17 @@
 ---
-title: Ghid de Integrare
+title: Ghid de integrare
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Ghid de Integrare
+# Ghid de integrare {#integration-guide}
 
-Acest ghid acoperă tiparele comune de integrare cu Ultimate Multisite, incluzând conectarea la servicii externe, crearea de gateway-uri de plată personalizate și gestionarea webhook-urilor.
+Acest ghid acoperă tipare comune de integrare cu Ultimate Multisite, inclusiv conectarea la servicii externe, construirea de gateway-uri de plată personalizate și gestionarea webhook-urilor.
 
-## Integrarea cu CRM
+Pentru infrastructura de tenant izolată, consultați [Integrarea Multi-Tenancy](./multi-tenancy) pentru bootstrap-ul tenant-ului suveran, verificarea migrării, SSO și îndrumări pentru teardown.
 
-Sincronizați datele clienților cu CRM-ul pentru a vă asigura că sunt actualizate când clienții se înscriu:
+## Integrare CRM {#crm-integration}
+
+Sincronizați datele clienților cu CRM-ul dvs. atunci când clienții noi se înregistrează:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integrarea cu Analitica
+## Integrare analytics {#analytics-integration}
 
-Urmăriți evenimentele cheie din afaceri pe tot parcursul ciclului de viață al clientului:
+Urmăriți evenimentele-cheie de business pe parcursul ciclului de viață al clientului:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Pași Următori
+## Pașii următori {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Creați propriul gateway de plată
-- [Webhook Handling](./webhooks) — Creați puncte de intrare (endpoints) webhook personalizate
+- [Dezvoltare gateway personalizat](./custom-gateway) — Construiți-vă propriul gateway de plată
+- [Gestionarea webhook-urilor](./webhooks) — Creați endpoint-uri webhook personalizate
+- [Integrare Multi-Tenancy](./multi-tenancy) — Integrați-vă cu fluxurile ciclului de viață al tenant-ului suveran

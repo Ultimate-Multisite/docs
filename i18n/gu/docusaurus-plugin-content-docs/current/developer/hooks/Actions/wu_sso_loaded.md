@@ -4,21 +4,21 @@ title: Action - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded
+# Action: wu_sso_loaded {#action-wussoloaded}
 
 પ્લગઇન ડેવલપર્સને જરૂર પડ્યે વધારાના હૂક્સ ઉમેરવાની મંજૂરી આપે છે.
 
 આને `init` સુધી વિલંબિત કરવાની જરૂર છે કારણ કે SSO એ કંઈક છે જે `sunrise` પર ચાલે છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $sso | `self` | SSO ક્લાસ. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L285) at line 285

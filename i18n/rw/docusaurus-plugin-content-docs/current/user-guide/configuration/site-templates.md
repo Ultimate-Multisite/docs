@@ -3,13 +3,13 @@ title: Urugero rw'ubwoko bw'ibanga
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**Icyemezo: Icyemezo: Urukozi rya Ultimate Multisite version 2.x. He ugiye mu version 1.x,**_ **gukoresha uyu article.**_**.**_
 
 Umuco wacu igikorwa cyane ni gukora impamvu zikomeye n'ubwo twagira umwanya kandi tukaba n'uburyo bwinshi bwo kubona ibyo twashobora kugira ngo abakoresha twabone uburyo bwo gukora websites. Uruhuruko rwandiko mu gutera uyu uburenganzira ni gukoresha feature ya Ultimate Multisite Site Templates.
 
-## Icyo ni Site Template?
+## Icyo ni Site Template? {#what-is-a-site-template}
 
 Nko ryumva, Site Template ni site y'ubwoko (boilerplate) yashobora gukoreshwa nk'umutera w'ibyo bishobora kuba mu gukora sites yshya mu rwego rwawe.
 
@@ -17,7 +17,7 @@ Ibi byera ko uza gukora site ya mbere, ugahindura plugins bizwi, ugashyira theme
 
 Icyo ni cyiza cyane, ariko ntabwo nshobora gukora Site Template ishyirye? Ni inshingiro itandukanye kandi irahinduka cyane.
 
-## Gukora no Guhindura Site Template yshya
+## Gukora no Guhindura Site Template yshya {#creating-and-editing-a-new-site-template}
 
 Site Templates ni sites zikomeye mu rwego rwawe. Kugira ngo ugera Site Template yshya, wumva gusa kumenya **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Ku nshobora kugira umbwire mu gihe cyo gukoresha **Copy Site** toggle switch ku 
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Gukoresha ibintu by'ubwoko bw'ibindi (Customizing the contents of a Site Template)
+### Gukoresha ibintu by'ubwoko bw'ibindi (Customizing the contents of a Site Template) {#customizing-the-contents-of-a-site-template}
 
 Kugira ngo uburyo bwo gukora site template wako, ushaka gukora ibyo ukwiriye, ushobora gukora umunsi w'ubwoko bwawe kandi ugukoresha. Usaba igikorwa cyangwa amagambo y'ibindi, ushobora gukora posts, pages, kugabanya plugins, no gukoresha theme yakiriye. Ushobora kandi gukora umuntu mu Customizer kandi uburyo bwo gukora ibintu by'ubwoko bwose.
 
@@ -51,7 +51,7 @@ Ibi bishobora gutangira ku rubuga rwa **Edit Product**. Mu igice cy'ibyo uziye n
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Gukoresha Site Template Zikwiriye
+#### Mode 2: Gukoresha Site Template Zikwiriye {#advanced-options}
 
 Mu gihe cyo, ugiye gutanga abantu bako gushyira umuntu wese mu gihe cyo yashaka gukora account. Bashobora gukoresha site templates zikwiye nzi mu gihe cyo cy'ubwujgwa bw'umuntu (product settings). Uziye uburyo bwo kwizera ko bashobora gukoresha template zikwiye ku gihe cyo cyose. Uziye uburyo bwo guhindura uko bashobora gukoresha site templates mu gihe cyo cyose, kandi ibi byari byiza cyane kugira ngo ushumeze uburyo bw'ibintu n'ibyo bishobora gukora ku product yizera.
 
@@ -59,7 +59,7 @@ Ku **Edit Product** page. Hifashije mu section ya **Product Options**, utera tab
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Uburyo bw'Urugero: Gukoresha site template ku Checkout form
+### Uburyo bw'Urugero: Gukoresha site template ku Checkout form {#using-site-templates}
 
 Niba wumva ko site templates yose zishobora kuba itera mu gihe cyo gukoresha (registration), cyangwa niba ushaka kwirinda gukora umuhere w'ubwoko bw'site templates muri product wese ugiye gukora, uba mushobora gukora ibi bikurikira: utera site template selection mu **Checkout Form** yawe. Uko gukora iki, gukoresha **Ultimate Multisite > Checkout Forms** kandi utera **Edit** kuri form yose ushaka guhindura.
 
@@ -73,29 +73,29 @@ Ku frontend (mu gihe cyo abakoresha bafite), abakoresha babona template chooser 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Icyo za Template ya Site
+### Icyo za Template ya Site {#mode-1-assign-site-template}
 
 Hari ubuteza uburyo bw'ibyo bishobora kuboneka (site templates functions) uzi kubonja cyangwa gukemura mu gihe cy'Ultimate Multisite settings.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Guhura ku gukoresha Template
+#### Guhura ku gukoresha Template {#mode-2-choose-available-site-template}
 
 Gukora iki kizabasha abakoresha bako kubona uburyo bashobora gutera (switch the template) cyane mu gihe cy'registration, ariko ni mu gihe cyo gukora account n'ubwoko bw'site. Iki ni ikintu gikomeye ku muntu w'umukoresha (client), kuko bibasha kubona uburyo bwo gutera template yose iyo abantu babona ko itari yashobora kuba si ya mbere cyangwa si ya mbere kandi ari nziza kuri bo.
 
-#### Guhura abantu gukoresha Site n'ibyo bashobora kuba template
+#### Guhura abantu gukoresha Site n'ibyo bashobora kuba template {#default-mode-site-template-selection-on-the-checkout-form}
 
 Kuko abantu banyuze mu subsite babone uburyo bw'ubwoko bwo gutera (building and designing) site yabo, bashobora kugira intambere yo kubonja (clone) kandi gukoresha nk'imwe mu mibare ya template iyo bahereye gukora subsite runaka ku ntego yawe. Iki kintu kizabasha kubona iki.
 
-#### Gukopya Media ku gihe cyo gutera Template
+#### Gukopya Media ku gihe cyo gutera Template {#site-template-options}
 
 Gukora iki kizabasha gukopya media yashyirwaho kuri site y'template ku site yashyirwaho mu gihe cyo gutera template runaka. Iki kintu kizabasha guhinduka ku gihe cyo gukoresha ubwoko bwo (plans) bintu byiza.
 
-#### **Gusobanura abantu banyuze mu Site Templates n'ibyo bashobora kuba template**
+#### **Gusobanura abantu banyuze mu Site Templates n'ibyo bashobora kuba template** {#allow-template-switching}
 
 Site templates nk'uko twari twajyanye mu gihe cyo kumenya, ni ibyo bikoreshwa mu gukorera (boilerplate) ariko ni igice cy'ubwoko bw'umuryango wanyu. Ibi byashobora kuboneka n'abantu banyuze mu site templates kandi bitewe n'ibyo abantu bashobora kubona. Iki kintu kizabasha kugukemura iki: gushyira ibyo site templates mu gihe cyo gutera (hide) kugira ngo abantu banyuze mu search engines bashobore kubona.
 
-## Gukoresha Site Templates n'ibyo bashobora kuba template ku gukoresha auto search-and-replace
+## Gukoresha Site Templates n'ibyo bashobora kuba template ku gukoresha auto search-and-replace {#allow-users-to-use-their-site-as-templates}
 
 Icyo mu gukoresha ubutumwa bwiza cyane mu Ultimate Multisite ni ubushobozi bwo gushyira amakuru, amakuru y'ubwoko (color), n'amashyirahamwe ku form ya registration. Iyo twishobora gutangira amakuru yoroshye, twashobora gukoresha ubutumwa bwo mu gihe cyose mu muryango w'ubwoko (site template) wako wariwe. Nyuma, iyo umwe muri site yashyirwa mu bikorwa, Ultimate Multisite izakoresha amakuru atangwa mu gihe cyo gushyira mu gihe cyose amakuru atangwa mu gihe cyo registration.
 
@@ -115,7 +115,7 @@ Ultimate Multisite izakoresha amakuru atangwa n'umukoresha mu gihe cyose mu gihe
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Gutera uburyo bwo "ubwoko buhagarwa n'amakuru yoroshye"
+### Gutera uburyo bwo "ubwoko buhagarwa n'amakuru yoroshye" {#copy-media-on-template-duplication}
 
 Icyo cyose ni cyiza, ariko twishobora gushyira umuntu ubunyangamugayo: amashyirahamwe ya site zacu - aho abakoresha baturuka bafashe - zishobora kuba zishyira amakuru atangwa (placeholders) y'ubwoko buhagarwa n'amakuru atangwa, kandi nta cyo gukoresha.
 

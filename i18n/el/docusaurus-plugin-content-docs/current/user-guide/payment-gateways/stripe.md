@@ -3,19 +3,19 @@ title: Ρύθμιση του Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ρύθμιση της Πύλης Πληρωμών Stripe (v2)
+# Ρύθμιση της Πύλης Πληρωμών Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ΣΗΜΑΝΤΙΚΗ ΣΗΜΕΙΩΣΗ: Αυτό το άρθρο αφορά την έκδοση 2.x του Ultimate Multisite.**_
 
 Μπορείτε να ενεργοποιήσετε έως τέσσερις τρόπους πληρωμής στη σελίδα ρυθμίσεων πληρωμών: Stripe, Stripe Checkout, PayPal και Χειροκίνητη πληρωμή. Σε αυτό το άρθρο, θα δούμε πώς να ενσωματώσετε το **Stripe**.
 
-## Ενεργοποίηση του Stripe
+## Ενεργοποίηση του Stripe {#enabling-stripe}
 
 Για να ενεργοποιήσετε το Stripe ως διαθέσιμη πύλη πληρωμών στο δίκτυό σας, μεταβείτε στο **Ultimate Multisite > Settings > Payments** και ενεργοποιήστε το διακόπτη δίπλα στο **Stripe** ή **Stripe Checkout** στην ενότητα Active Payment Gateways.
 
 ![Ενεργοποίηση του Stripe στις διαθέσιμες πύλες πληρωμών](/img/config/settings-payment-gateways.png)
 
-### Stripe έναντι Stripe Checkout:
+### Stripe έναντι Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Αυτή η μέθοδος εμφανίζει ένα πεδίο για την εισαγωγή του αριθμού πιστωτικής κάρτας κατά τη διάρκεια του checkout.
 
@@ -47,7 +47,7 @@ _**Σημείωση:** μπορείτε να ενεργοποιήσετε τη *
 
 ![Επικόλληση κλειδιών Stripe στις ρυθμίσεις του Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Ρύθμιση του Stripe Webhook
+## Ρύθμιση του Stripe Webhook {#setting-up-stripe-webhook}
 
 Το Stripe αποστέλλει webhook events που ειδοποιούν το Ultimate Multisite κάθε φορά που συμβαίνει κάτι στον **λογαριασμό σας στο Stripe**.
 

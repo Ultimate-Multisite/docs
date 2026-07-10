@@ -3,7 +3,7 @@ title: Suunnitelman päivittäminen
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Suunnitelman päivittäminen (v2)
+# Suunnitelman päivittäminen (v2) {#upgrading-a-plan-v2}
 
 _**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
 
@@ -37,7 +37,7 @@ Jos valitset suunnitelman tai paketin, joka ei muuta mitään nykyisestä tilauk
 
 Kun kassalle siirryt ja osto on suoritettu, uudet tuotteet lisätään asiakkaiden tililleen heti, ja uusien tuotteiden kaikki rajoitukset tai ominaisuudet lisätään heti: vierailut, tallennustila, julkaisut jne...
 
-## Päivitys- ja alennusreitit (Upgrade and Downgrade Paths)
+## Päivitys- ja alennusreitit (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Jokaisessa tuotteessasi on **Up & Downgrades** -välilehti. Tämän välilehden ensimmäinen vaihtoehto on kenttä nimeltä **Plan Group**.
 

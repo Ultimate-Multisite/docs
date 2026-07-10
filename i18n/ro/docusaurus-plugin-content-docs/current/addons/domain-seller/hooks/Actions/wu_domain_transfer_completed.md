@@ -4,20 +4,20 @@ title: Acțiune - wu_domain_transfer_completed
 sidebar_label: wu_domain_transfer_completed
 _i18n_hash: e50e8bb82f31cdf65af114919b65343a
 ---
-# Action: wu_domain_transfer_completed
+# Action: wu_domain_transfer_completed {#action-wudomaintransfercompleted}
 
 Se declanșează după ce transferul de domeniu este finalizat.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
 | $domain | `\WP_Ultimo\Models\Domain` | Obiectul de domeniu. |
 | $transfer_data | `array` | Datele de finalizare a transferului. |
 
-### De la
+### De la {#since}
 
 - 2.1.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/class-domain-transfer-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-transfer-manager.php#L690) la linia 690

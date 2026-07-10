@@ -1,46 +1,68 @@
 ---
-title: Mga Pagbabago
+title: Talaan ng Pagbabago
 sidebar_position: 5
-_i18n_hash: d18a5d0a6c766913ed5d348b54dd6acc
+_i18n_hash: 9747e37b1fd831941c9f86e6c3f85c81
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.16.0 — Released on 2026-05-20
+## 1.18.0 — Inilabas noong 2026-06-29 {#1180--released-on-2026-06-29}
 
-### New
+### Bago {#new}
 
-- **Generate Logo SVG ability** — Kaya na ngayon ng Theme Builder na gumawa at mag-embed ng custom logo SVG na ligtas sa namespace (namespace-safe sanitisation).
-- **Photo upload in discovery interview** — Ang Theme Builder discovery interview ay may kasama na ngayon ng hakbang sa pag-upload ng litrato para sa mas mayamang konteksto ng disenyo.
-- **Validate Palette Contrast ability** — Maaari nang suriin ang mga pares ng kulay para sa pag-ayon sa WCAG bago ito ilapat sa isang tema.
-- **Hospitality menus** — Kaya na ngayon ng Theme Builder na gumawa ng structured na mga pahina ng menu ng pagkain at inumin para sa mga negosyo sa hospitality.
-- **Desktop and mobile preview rendering** — Maaari nang i-preview ang iyong disenyo sa mga device na desktop at mobile habang nagse-select ng direksyon ng disenyo.
-- **Navigation label parameter** — Ang kakayahan na Gumawa ng Menu (Create Menu) ay sumusuporta na ngayon sa isang hiwalay na `navigation_label` na naiiba sa pamagat ng pahina.
-- **Tier 1 tool availability** — Ang sd-ai-agent/site-scrape ay isa nang Tier 1 tool na available by default sa Theme Builder.
+- **Mga tool ng Google Calendar** — basahin ang naka-configure na mga calendar at event para sa mga automation na may kamalayan sa iskedyul
+- **Pagmamapa ng contact at mga helper ng attendee** — itugma ang mga kalahok sa calendar sa mga user at contact ng site
+- **Mga gate ng pag-apruba ng tao at mga record ng paalala** — i-pause ang mga automation para sa pagsusuri at iwasan ang dobleng notification
+- **TextBee SMS provider** — magpadala ng naka-configure na mga notification na text-message sa pamamagitan ng TextBee
+- **Advanced companion package** — magdagdag ng pinagkakatiwalaang-developer na filesystem, database, WP-CLI, REST dispatcher, plugin builder, git snapshot, pamamahala ng user, at mga benchmark tool na hiwalay na ipinamahagi mula sa WordPress.org build
 
-### Fixed
+### Pinahusay {#improved}
 
-- **AI Client cache** — Ngayon ay sinusuportahan na ito ng transients para sa pagpapanatili ng data sa pagitan ng mga request, na pumipigil sa pagkawala ng data sa mga mahabang gawain ng agent.
-- **Plugin row action links** — Inayos at binago ang pangalan para sa kalinawan.
+- **Setup ng pinamamahalaang Superdav service** — magdagdag ng mga naka-host na service endpoint at awtomatikong paglalaan ng koneksyon para sa mga sinusuportahang site
+- **Pag-package ng release** — bumuo ng hiwalay na core at Advanced ZIP, i-publish pareho sa GitHub, at ipadala lamang ang core package sa WordPress.org
 
-## 1.10.0 — Released on 2026-05-05
+### Naayos {#fixed}
 
-### New
+- **Pagiging maaasahan ng AI request** — pahusayin ang pagpili ng model, mga timeout ng request, default na setup model, paghawak ng reasoning-text, at gabay sa retry para sa mga invalid na tool call
+- **Pagpapatibay ng calendar at paalala** — patibayin ang mga Google Calendar token at deduplication ng paalala
+- **Onboarding at pagpapatuloy ng pag-apruba** — ayusin ang mga paglulunsad ng onboarding sa frontend at mga pagpapatuloy ng nakumpirmang ability
+- **Mga isyu sa review ng packaging sa WordPress.org** — tugunan ang feedback sa review ng packaging para sa core release
 
-- **Tavily internet search** — Nagdagdag ng Tavily bilang isang search provider para sa mas mayamang resulta ng paghahanap sa internet, kasama ang Brave Search.
-- **Theme-aware built-in skills** — Kasama na ngayon sa plugin ang mga gabay ng skill para sa Block Themes, Classic Themes, Kadence Blocks, at Kadence Theme.
-- **Site builder contact form ability** — Maaari nang magdagdag ng contact form sa anumang pahina nang direkta mula sa chat interface.
+## 1.16.0 — Inilabas noong 2026-05-20 {#1160--released-on-2026-05-20}
 
-### Improved
+### Bago {#new-1}
 
-- **WooCommerce integration refactored** — Gumagamit na ngayon ng native WooCommerce APIs para sa mas mahusay na pagiging maaasahan at compatibility.
-- **Provider list refreshes automatically** — Kapag may plugin na na-activate o na-deactivate.
+- **Ability na Generate Logo SVG** — maaari na ngayong bumuo at mag-embed ang Theme Builder ng mga custom na logo SVG na may namespace-safe na sanitisation
+- **Pag-upload ng larawan sa discovery interview** — kasama na ngayon sa discovery interview ng Theme Builder ang hakbang ng pag-upload ng larawan para sa mas mayamang konteksto ng disenyo
+- **Ability na Validate Palette Contrast** — suriin ang mga pares ng kulay para sa pagsunod sa WCAG bago ilapat sa isang theme
+- **Mga menu para sa hospitality** — maaari na ngayong bumuo ang Theme Builder ng mga naka-structure na pahina ng menu ng pagkain at inumin para sa mga negosyong hospitality
+- **Pag-render ng preview sa desktop at mobile** — i-preview ang iyong disenyo sa desktop at mobile na mga device habang pumipili ng direksyon ng disenyo
+- **Parameter ng navigation label** — sinusuportahan na ngayon ng Create Menu ability ang hiwalay na `navigation_label` na iba sa pamagat ng pahina
+- **Availability ng Tier 1 tool** — ang sd-ai-agent/site-scrape ay isa na ngayong Tier 1 tool na available bilang default sa Theme Builder
 
-### Fixed
+### Naayos {#fixed-1}
 
-- **navigate-to ability** — Inayos ang infinite reload loop sa ilang admin pages.
-- **list-posts ability** — Tama nang inaayos ang mga pangalan ng kategorya at tag sa mga slug.
-- **WP-CLI commands** — Ibinabalik ang mga nawawalang namespace aliases pagkatapos ng isang naunang refactor.
-- **Event automation** — Maayos na hinahawakan ang mga site kung saan hindi pa nalilikha ang mga automation table.
-- **memory-save ability** — Gumagamit na ngayon ng tamang namespace prefix sa system instruction builder.
-- **Scalar tool results** — Tama nang binabalot bago ibalik sa AI.
-- **Usage statistics** — Tama nang hinahawakan ang legacy ability key format sa pag-upgrade mula sa mas lumang bersyon.
+- **Cache ng AI Client** — sinusuportahan na ngayon ng transients para sa cross-request persistence, na pumipigil sa pagkawala ng data sa mga matagalang agent task
+- **Mga link ng aksyon sa plugin row** — itinama at pinalitan ang pangalan para sa kalinawan
+
+## 1.10.0 — Inilabas noong 2026-05-05 {#1100--released-on-2026-05-05}
+
+### Bago {#new-2}
+
+- **Tavily internet search** — idagdag ang Tavily bilang search provider para sa mas mayamang resulta ng paghahanap sa internet kasama ng Brave Search
+- **Mga built-in skill na may kamalayan sa theme** — kasama na ngayon sa plugin ang mga gabay sa skill para sa Block Themes, Classic Themes, Kadence Blocks, at Kadence Theme
+- **Ability ng contact form ng site builder** — magdagdag ng contact form sa anumang pahina direkta mula sa chat interface
+
+### Pinahusay {#improved-1}
+
+- **Ni-refactor ang WooCommerce integration** — gumagamit na ngayon ng native WooCommerce APIs para sa mas mahusay na pagiging maaasahan at compatibility
+- **Awtomatikong nagre-refresh ang listahan ng provider** — kapag anumang plugin ay na-activate o na-deactivate
+
+### Naayos {#fixed-2}
+
+- **navigate-to ability** — inayos ang infinite reload loop sa ilang admin page
+- **list-posts ability** — tama na ngayong nire-resolve ang mga pangalan ng category at tag sa mga slug
+- **WP-CLI commands** — ibinalik ang nawawalang mga namespace alias pagkatapos ng nakaraang refactor
+- **Event automation** — maayos na hinahawakan ang mga site kung saan hindi pa nalilikha ang mga automation table
+- **memory-save ability** — ginagamit na ngayon ang tamang namespace prefix sa system instruction builder
+- **Mga scalar na resulta ng tool** — tama na ngayong naka-wrap bago ibalik sa AI
+- **Mga statistic ng paggamit** — tama na ngayong hinahawakan ang legacy ability key format sa upgrade mula sa mas lumang mga version

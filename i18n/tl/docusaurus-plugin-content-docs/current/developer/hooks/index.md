@@ -1,0 +1,194 @@
+---
+title: Sanggunian ng Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Sanggunian ng Hooks {#hooks-reference}
+
+Awtomatikong nalikhang dokumentasyon para sa lahat ng **59 action** at **118 filter** sa Ultimate Multisite.
+
+## Mga Action {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Nagaganap bago ang redirect ng authentication.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Nagaganap kaagad bago itakda ang cookie ng authentication.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Nagaganap kaagad bago itakda ang naka-log in na cookie ng authentication.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Pinapayagan ang mga developer na magdagdag ng sarili nilang mga integrasyon ng host provider sa pamamagitan ng mga wp plugin.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Nagti-trigger kapag na-load na ang lahat ng dependency
+- [wu_activation](./Actions/wu_activation) — Hayaan ang ibang bahagi ng plugin na ikabit ang kanilang mga routine para sa activation
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Pinapayagan ang mga developer ng plugin na mag-hook ng mga function pagkatapos palitan ng user o super admin ang template ng site
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Sa ilang kaso, kakailanganin nating mag-load ng dagdag na lakas para pangasiwaan ang mga action.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Nagaganap bago iproseso ang search request.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Pinapayagan ang mga developer na gumawa ng karagdagang mga pagbabago sa checkout object.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Pinapayagan ang mga developer na gumawa ng karagdagang mga pagbabago sa checkout object.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Nagaganap bago idagdag ang field sa checkout form.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Pinapayagan ang mga developer na mag-trigger ng karagdagang mga hook.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Bago namin iproseso ang checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Nagaganap pagkatapos ganap na mabuo ang checkout order.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Pinapayagan ang mga developer ng plugin na magdagdag ng mga widget sa Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Pinapayagan ang mga developer ng plugin na magdagdag ng mga widget sa Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Hayaan ang ibang bahagi ng plugin na ikabit ang kanilang mga routine para sa deactivation
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Pinapayagan ang mga developer ng plugin na magdagdag ng mga action sa proseso ng pagbubura
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Nagaganap kapag ang isang domain ay naging pangunahing domain para sa isang site.
+- [wu_domain_created](./Actions/wu_domain_created) — Nagti-trigger kapag idinagdag ang bagong domain mapping.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Nagaganap pagkatapos ma-load ang aming core Domain Mapping
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Isi-save ng ilang plugin ang URL bago naging aktibo ang mapping o bubuo ng mga URL sa ibang paraan na hindi kasama o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Pinapayagan ang mga developer na mag-hook pagkatapos mangyari ang pagduplika ng site.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang mga hook
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook para sa karagdagang paglilinis
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Nagaganap bago pangasiwaan ang request sa modal ng pagdaragdag ng bagong domain.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Pinapayagan ang mga developer ng plugin na mag-save ng meta data sa iba't ibang paraan kung kailangan nila.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Pinapayagan ang mga developer ng plugin na mag-save ng user meta data sa iba't ibang paraan kung kailangan nila.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Nagaganap kapag nakatagpo ng invalid na magic link token.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Nagaganap pagkatapos ma-log in ang user sa pamamagitan ng magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Pinapayagan ang mga developer ng plugin na gumawa ng karagdagang bagay kapag idinagdag ang customer.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Nagaganap pagkatapos ma-register ang mga MCP ability para sa isang entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Nagaganap pagkatapos ma-initialize ang MCP adapter.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Nagti-trigger pagkatapos makansela ang membership.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Nagti-trigger pagkatapos ng membership renewal.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Nagti-trigger bago makansela ang membership.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Nagti-trigger bago ang membership renewal.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Nagaganap pagkatapos ma-store ang object sa database.
+- [wu_page_added](./Actions/wu_page_added) — Pinapayagan ang mga developer ng plugin na magpatakbo ng karagdagang mga bagay kapag na-register ang mga page.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang content pagkatapos naming i-print ang page
+- [wu_page_before_render](./Actions/wu_page_before_render) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang content bago namin i-print ang page.
+- [wu_page_load](./Actions/wu_page_load) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang mga hook sa aming mga page.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang content pagkatapos naming i-print ang page
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang content bago namin i-print ang page.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Pinapayagan ang mga developer ng plugin na magdagdag ng karagdagang mga hook sa aming mga page.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Nagaganap pagkatapos ma-register ang mga widget para sa page na ito.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Nagti-trigger upang payagan ang mga addon na mag-attach ng mga capability module sa mga integration.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Nagti-trigger upang payagan ang mga integration na i-register ang kanilang sarili.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Payagan na ma-register ang karagdagang mga route.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Payagan ang mga plugin developer na magdagdag ng mga action sa proseso ng pag-save
+- [wu_site_created](./Actions/wu_site_created) — Nagti-trigger pagkatapos malikha ang isang site sa unang pagkakataon.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Payagan ang mga plugin developer na magdagdag ng karagdagang mga hook, kung kinakailangan.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Tumatakbo kapag nasa loob ng konteksto ng template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Nagti-trigger sa enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Nagti-trigger pagkatapos ma-store ang isang object sa database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Nagti-trigger pagkatapos ma-store ang isang object sa database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Nagti-trigger pagkatapos ma-store ang isang object sa database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Payagan ang mga plugin developer na magdagdag ng mga action sa proseso ng pag-unlock.
+
+## Mga Filter {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Sinasala ang tagal ng panahon ng pag-expire ng authentication cookie.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Sinasala ang authentication redirect scheme.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ginagaya rito ang orihinal na WP Filter, para makasiguro.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Pinapayagan ang mga developer ng plugin na salain ang URL na ginagamit sa previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Sinasala kung ang auth cookie ay dapat ipadala lamang sa HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Sinasala kung gagamit ng secure authentication redirect.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Sinasala kung ang logged in cookie ay dapat ipadala lamang sa HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Pinapayagang pigilan ang auth cookies na aktuwal na maipadala sa client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Itakda ang redirect URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Magdagdag ng mga karagdagang hakbang sa pamamagitan ng filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Pinapayagan ang mga developer ng plugin na magdagdag ng dagdag na variable sa render context sa buong sistema.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Pinapayagan ang mga developer na i-short-circuit ang pagsusuring ito.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Sinasala ang mga field para sa modal ng pagdagdag ng bagong domain.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Pinapayagan ang mga developer na gumawa ng mga pagbabago sa setup fee line item.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Pinapayagan ang mga developer na salain ang admin notices na idinagdag ng Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Salain pagkatapos mabago.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ngayon, pinangangasiwaan natin ang lahat ng uri.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Pinapayagan ang mga developer ng plugin na i-short-circuit ang mga limitasyon.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Sinasala kung dapat ilapat o hindi ang signup fee.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Salain ang orihinal na api arguments.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Pinapayagan ang mga developer ng plugin na salain ang mga billing address field.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Pinapayagan ang mga developer na lampasan ang output at magtakda ng bago
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Pinapayagan ang mga developer na lampasan ang unset current user code.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Sinasala ang kabuuang "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Salain ang kabuuang "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Salain ang kabuuang "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Pinapayagan ang mga developer ng plugin na pakialaman ang halaga ng credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Sinasala ang shared checkout-form base domains na hindi dapat maging mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Dito kumakabit ang aming mga API para magdagdag ng mga bagong field template.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Dito kumakabit ang aming mga API para magdagdag ng mga bagong uri ng field.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Salain ang mga mensahe ng error.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Pinapayagan ang mga developer na lampasan ang pagsusuri kung ang isang field ay auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Pinapayagan ang mga developer ng plugin na magdagdag ng mga custom alias sa form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Pinapayagan ang mga developer ng plugin na salain ang mga validation rule.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — I-unset ang mga hindi kanais-nais na Params.
+- [wu_contains_element](./Filters/wu_contains_element) — Pinapayagan ang mga developer na baguhin ang mga resulta ng unang paghahanap.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Pinapayagan ang mga host provider na i-install ang constant sa ibang paraan.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Ibinabalik ang maayos na pangalan ng mga administratibong sub-division ng bansa.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Ibinabalik ang listahan ng mga lungsod para sa isang estado sa isang bansa.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Ibinabalik ang listahan ng mga estado para sa bansang ito.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Pinapayagan ang mga developer na baguhin ang default na gawi at itakda ang kasalukuyang customer sa ibang paraan.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Pinapayagan ang mga developer na baguhin ang default na gawi at itakda ang kasalukuyang membership sa ibang paraan.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Pinapayagan ang mga developer na baguhin ang default na gawi at itakda ang kasalukuyang site sa ibang paraan.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Pinapayagan ang mga developer na baguhin ang mga parameter ng manage site URL.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Pinapayagan ang mga developer ng plugin na salain ang mga link.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Pinapayagan ang mga developer ng plugin na magdagdag ng mga bagong pagsusuri upang tukuyin ang mga resulta.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Maaaring kailanganin nating magdagdag ng karagdagang mga block sa hinaharap.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Nagdaragdag ng generic na filter upang payagan ang mga developer na palawakin ang parser na ito para humawak ng karagdagang mga builder o plugin.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — I-filter kung ipapatupad ang karagdagang mga patakaran sa password.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — I-filter ang nabuong username ng customer.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Payagan ang mga developer ng plugin na i-filter ang mga pre-set ng isang checkout page.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Payagan ang mga developer na magdagdag ng mga bagong form slug upang lampasan ang pag-uugaling ito.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Payagan ang mga developer at add-on na magdagdag ng mga bagong hakbang sa migration
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Tingnan ang higit pa tungkol sa filter na ito sa ibaba, sa parehong method na ito.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Payagan ang mga developer na piliin kung aling mga uri ng post ang dapat ipakita.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Ibalik ang Lines, maaaring i-filter
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Payagan ang mga developer na manipulahin ang mga pares ng domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Sinasala ang mga seksyon ng wizard para sa setup ng hosting integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Sinasala ang mga field sa isang form. Natutukoy ang form sa pamamagitan ng ID sa pangalan ng filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — I-filter ang mga uri ng product na may mga independiyenteng billing cycle.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Payagan ang mga developer ng plugin na piliting itakda ang isang ibinigay na estado para sa API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Payagan ang mga developer ng plugin na magdagdag ng karagdagang mga test para sa development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Payagan ang mga developer ng plugin na piliting itakda ang isang ibinigay na estado para sa MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Para sa mga kadahilanang pangseguridad, nililimitahan namin ang bilang ng mga action na available para sa hooking into. Pinapayagan ng filter na ito ang mga developer na palawakin
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Sinusuri kung pinapayagan ang isang ibinigay na uri ng post sa plan na ito Payagan ang mga developer ng plugin na i-filter ang return value
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — I-filter kung ipapatupad ang pag-verify ng IP address.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — I-filter kung ipapatupad ang pag-verify ng user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — I-filter ang nabuong magic link URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — I-filter kung naka-enable ang mga magic link.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Sinasala ang redirect URL pagkatapos gawing primary ang isang domain.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Gumawa ng exclusion list ng mga parameter na pumipigil sa auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter upang i-override ang desisyon sa pagsasama ng MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Sinasala ang nakalkulang petsa ng expiration.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Sinasala ang nakalkulang petsa ng expiration na itatakda pagkatapos ng renewal.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Payagan ang mga developer na magdagdag ng mga bagong update form slug.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — I-filter ang minimum na haba ng password.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — I-filter ang minimum na lakas ng password na kinakailangan (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Payagan ang mga developer ng plugin, at kami mismo, na magdagdag ng mga action link sa aming mga edit page
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — I-filter kung hihingi ng lowercase na mga titik sa mga password.
+- [wu_password_require_number](./Filters/wu_password_require_number) — I-filter kung hihingi ng mga numero sa mga password.
+- [wu_password_require_special](./Filters/wu_password_require_special) — I-filter kung hihingi ng mga special character sa mga password.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — I-filter kung hihingi ng uppercase na mga titik sa mga password.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Payagan ang user na baguhin ang mensahe tungkol sa mga nakabinbing payment.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — I-filter ang mga uri ng product na dapat ituring bilang mga plan.
+- [wu_post_count](./Filters/wu_post_count) — Payagan ang mga developer ng plugin na baguhin ang kabuuang bilang
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Payagan ang mga developer ng plugin na baguhin kung aling post status ang dapat bilangin Bilang default, binibilang ang mga published at private post
+- [wu_post_default_status](./Filters/wu_post_default_status) — Sinasala ang data ng object bago ito i-store sa database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Payagan ang mga developer na i-filter ang settings bago i-save ng Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Sinasala kung pinapayagang magpatuloy sa request o hindi.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Sinasala kung pinapayagang magpatuloy sa request o hindi.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Sinasala kung pinapayagan itong magpatuloy sa kahilingan o hindi.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Sinasala kung pinapayagan itong magpatuloy sa kahilingan o hindi.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Sinasala kung pinapayagan itong magpatuloy sa kahilingan o hindi.
+- [wu_return_url](./Filters/wu_return_url) — Payagan ang mga developer na baguhin ang gateway return URL na ginagamit pagkatapos ng mga proseso ng checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Payagan ang mga developer ng plugin na magdagdag ng mas marami pang function ng mga modelo sa paghahanap.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Payagan ang mga developer na magdagdag ng karagdagang mga hakbang sa setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Sinasala kung dapat gumawa ang Ultimate Multisite ng domain record para sa bagong likhang site.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Payagan ang mga developer na i-short-circuit ang pag-redirect, na pumipigil dito na mangyari.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Nagbibigay-daan sa muling pagsulat ng handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Salain ang mga bulk action na available para sa mga site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filter upang baguhin ang value para sa get pluginssites sa loob ng network.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — I-enable/i-disable ang kakayahan sa cross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — Sinasala ang mga nabuong SSO URL bago ibalik ang mga ito para sa mga cross-domain na aksyon ng customer.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Salain ang data ng Stripe Subscription. Maaaring i-override ang success_url o cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Sinasala ang mga argumento ng payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Sinasala ang ID ng plan na susuriin. Kung umiiral ito, gagamitin ng bagong subscription ang plan na ito.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Sinasala ang ID ng product na susuriin. Kung umiiral ito, gagamitin ng bagong subscription ang product na ito.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Sinasala ang value ng idempotency_key na ipinapadala kasama ng mga opsyon ng Stripe charge.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Sinasala ang rekord ng membership na kaugnay ng webhook na ito.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Sinasala ang data meta bago ito i-serialize upang itago sa database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Sinasala ang data ng object bago ito itago sa database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Payagan ang mga developer na baguhin ang upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Tukuyin kung dapat gumamit ng mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Salain ang username ng bagong customer.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Payagan ang mga developer na baguhin ang mensahe tungkol sa limitasyon ng mga user ng membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Nagbibigay-daan sa mga developer na magdagdag ng karagdagang mga folder sa listahang maaaring palitan.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Sinasala kung aling mga sub_commands ang naka-enable para sa entity na ito.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Sinusuri namin ang tatlong pattern kapag sinusubukang alamin kung saan namin maaaring ipasok ang aming mga constant:

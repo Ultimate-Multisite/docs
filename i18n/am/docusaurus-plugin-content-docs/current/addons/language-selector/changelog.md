@@ -3,7 +3,7 @@ title: የቋንቋ መምረጫ የለውጥ መዝገብ
 sidebar_position: 99
 _i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# የቋንቋ መምረጥ የለውጥ ታሪክ (Language Selector Changelog)
+# የቋንቋ መምረጥ የለውጥ ታሪክ (Language Selector Changelog) {#language-selector-changelog}
 
 ስሪት: 1.1.3 - የተለቀቀበት ቀን 2026-05-05
 * ማስተካከያ (Fix): የግብዓት ተለዋዋጮች (Input variables) አሁን ተንጽፈዋል (sanitized)፣ እንዲሁም ከሶስተኛ ወገን ፕልጊኖች ጋር የሚፈጠሩ ግጭቶችን ለመከላከል የባህላዊ (custom) hook ስሞች ተቀድመዋል።

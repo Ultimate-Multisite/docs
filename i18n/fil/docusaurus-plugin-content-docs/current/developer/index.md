@@ -3,11 +3,11 @@ title: Dokumentasyon para sa Developer
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentasyon para sa mga Developer
+# Dokumentasyon para sa mga Developer {#developer-documentation}
 
 Ang gabay na ito ay naglalaman ng lahat ng kailangan ng mga developer para makapag-integrate, makapag-extend, o makagawa ng mga addon para sa Ultimate Multisite. Ginagawang Website-as-a-Service (WaaS) platform ng Ultimate Multisite ang isang WordPress Multisite network.
 
-## Ano ang Available
+## Ano ang Available {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Kumpletong CRUD operations para sa lahat ng entities (customers, sites, memberships, payments, products, domains) na may API key authentication
 - **[Hooks Reference](./hooks/guide)** — Mahigit 200 action hooks at mahigit 280 filter hooks para sa mga lifecycle events at customization
@@ -15,13 +15,13 @@ Ang gabay na ito ay naglalaman ng lahat ng kailangan ng mga developer para makap
 - **[Code Examples](./code-examples/)** — Advanced patterns para sa dynamic pricing, site provisioning, custom limitations, at multi-gateway processing
 - **[Addon Development](./addon-development/getting-started)** — Structured framework para sa pagbuo ng addon plugins
 
-## Requirements
+## Requirements {#requirements}
 
 - WordPress Multisite installation
 - PHP 7.4 or higher
 - Ultimate Multisite plugin activated
 
-## Composer / Bedrock Installation
+## Composer / Bedrock Installation {#composer--bedrock-installation}
 
 Available ang Ultimate Multisite sa [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) bilang `ultimate-multisite/ultimate-multisite`. Ito ang inirerekomendang paraan ng pag-install para sa mga setup na gumagamit ng [Bedrock](https://roots.io/bedrock/)-based WordPress at iba pang kapaligirang pinamamahalaan ng Composer.
 
@@ -45,15 +45,15 @@ O, kung ikaw ay naglo-load ng plugin bilang must-use plugin sa pamamagitan ng au
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Quick Start
+## Quick Start {#quick-start}
 
-### Gamitin ang REST API
+### Gamitin ang REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Mag-hook sa mga Events
+### Mag-hook sa mga Events {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {

@@ -3,18 +3,18 @@ title: Tema-byggerfunktioner
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Temaopbyggerens evner: Scaffold og aktiver bloktemaer
+# Temaopbyggerens evner: Scaffold og aktiver bloktemaer {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introducerer to kraftfulde funktioner, der lader dig generere og udrulle skræddersyede bloktemaer direkte fra chatgrænsefladen.
 
-## Oversigt
+## Oversigt {#overview}
 
 Evnerne **scaffold-block-theme** og **activate-theme** gør det muligt for agenter at:
 - Generere komplette, produktionsklare bloktemaer baseret på dine specifikationer
 - Automatisk aktivere temaer på din side uden manuel indgriben
 - Skabe sammenhængende visuelle identiteter gennem vejledte designbeslutninger
 
-## Scaffold Bloktema
+## Scaffold Bloktema {#scaffold-block-theme}
 
 Evnen **scaffold-block-theme** genererer et nyt WordPress bloktema med en komplet tema-struktur, herunder:
 
@@ -23,7 +23,7 @@ Evnen **scaffold-block-theme** genererer et nyt WordPress bloktema med en komple
 - Skræddersyede blokstile og variationer
 - Tema metadata og supportdeklarationer
 
-### Sådan kalder du den på
+### Sådan kalder du den på {#how-to-invoke}
 
 I din chat med Superdav AI Agent kan du anmode om temaopbygning:
 
@@ -38,7 +38,7 @@ Agenten vil:
 3. Oprette alle nødvendige temafiler
 4. Forberede temaet til aktivering
 
-### Forventet output
+### Forventet output {#expected-output}
 
 Når evnen kører succesfuldt, vil du se:
 
@@ -56,11 +56,11 @@ Eksempel på output:
   Status: Klar til aktivering
 ```
 
-## Aktiver Tema
+## Aktiver Tema {#activate-theme}
 
 Evnen til at aktivere temaet skifter din side til et nyt opbygget eller eksisterende bloktema.
 
-### Sådan aktiverer du det
+### Sådan aktiverer du det {#how-to-invoke-1}
 
 Efter du har opbygget et tema, kan du aktivere det med det samme:
 
@@ -74,7 +74,7 @@ Eller aktiver ethvert eksisterende tema:
 "Skift til Twentytwentyfour-temaet"
 ```
 
-### Forventet output
+### Forventet output {#expected-output-1}
 
 Når aktiveringen lykkes:
 
@@ -92,7 +92,7 @@ Eksempel på output:
   Bemærk: Tjek din forside for at bekræfte layoutet
 ```
 
-## Arbejdsgang: Opbyg og Aktiver
+## Arbejdsgang: Opbyg og Aktiver {#workflow-scaffold-and-activate}
 
 En typisk arbejdsgang kombinerer begge evner:
 
@@ -102,7 +102,7 @@ En typisk arbejdsgang kombinerer begge evner:
 4. **Aktiver**: "Aktiver temaet nu"
 5. **Verificer**: Besøg din side for at bekræfte, at det nye design er live
 
-## Design Tokens og Tilpasning
+## Design Tokens og Tilpasning {#design-tokens-and-customization}
 
 Opbyggede temaer bruger WordPress design tokens (via `theme.json`) til:
 
@@ -114,14 +114,14 @@ Opbyggede temaer bruger WordPress design tokens (via `theme.json`) til:
 
 Disse tokens er centraliseret i `theme.json`, hvilket gør det nemt at justere hele dit designsystem fra én fil.
 
-## Begrænsninger og noter
+## Begrænsninger og noter {#limitations-and-notes}
 
 Temaer skal oprettes i `/wp-content/themes/` og skal følge WordPress' navngivningskonventioner
 Aktivering kræver de rette rettigheder på din WordPress-side
 Tilpasset PHP-kode i temaer er minimal; brug plugins til kompleks funktionalitet
 Bloktemaer fungerer bedst med WordPress 5.9 og nyere
 
-## Fejlfinding
+## Fejlfinding {#troubleshooting}
 
 **Tema vises ikke efter oprettelse (scaffolding)**
 - Tjek, at temadirektoriet eksisterer og har de korrekte rettigheder
@@ -138,7 +138,7 @@ Bloktemaer fungerer bedst med WordPress 5.9 og nyere
 - Ryd eventuelle caching plugins
 - Kontroller, om din WordPress-version understøtter de tokens, du bruger
 
-## Næste skridt
+## Næste skridt {#next-steps}
 
 Efter at have aktiveret dit tema kan du:
 - Bruge **Design System Aesthetics skill** til at finjustere typografi, farver og afstanden mellem elementerne

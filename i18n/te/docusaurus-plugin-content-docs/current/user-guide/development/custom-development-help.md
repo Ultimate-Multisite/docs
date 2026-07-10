@@ -3,13 +3,13 @@ title: Custom Development Help
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable నుండి Custom Development సహాయం ఎలా పొందాలి?
+# Codeable నుండి Custom Development సహాయం ఎలా పొందాలి? {#how-to-get-custom-development-help-from-codeable}
 
 కొన్నిసార్లు, మన network flows ను మనకు కావలసిన విధంగా సెట్ చేసుకోవడానికి అద్భుతమైన customization అవసరమవుతుంది. మీరు అదే వెతుకుతుంటే, Ultimate Multisite అనుభవం ఉన్న developers ను కనుగొనగల ప్రదేశమైన [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ని మేము సిఫార్సు చేస్తాము.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) అనేది కస్టమర్లను అర్హత కలిగిన WordPress freelance developers తో కనెక్ట్ చేసే platform, వారు ఏ సైజు projects పైనైనా పని చేయగలరు. మీ మనసులో ఉన్న పని కోసం ప్రత్యేకంగా అర్హత కలిగిన experts తో మిమ్మల్ని match చేయడానికి వారికి చాలా జాగ్రత్తగా రూపొందించిన application process ఉంది.
 
-### Codeable లో project ఎలా create చేయాలి?
+### Codeable లో project ఎలా create చేయాలి? {#how-to-create-a-project-in-codeable}
 
 మొదట, [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) కి వెళ్ళి **Start a Project** బటన్ పై క్లిక్ చేయండి.
 

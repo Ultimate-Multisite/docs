@@ -3,17 +3,17 @@ title: 'Leçon 9 : Tarification pour le profit'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Leçon 9 : Tarification pour la rentabilité
+# Leçon 9 : Tarification pour la rentabilité {#lesson-9-pricing-for-profit}
 
 Dans la Leçon 5, nous avons défini les prix initiaux pour les plans FitSite. Maintenant, nous allons affiner la stratégie de tarification avec des techniques qui augmentent les revenus, encouragent les mises à niveau et réduisent le taux de désabonnement.
 
-## Où nous nous étions arrêtés
+## Où nous nous étions arrêtés {#where-we-left-off}
 
 FitSite dispose des plans, des modèles, du processus de paiement, du branding et de l'intégration. La tarification initiale était de 49 $/99 $/199 $ par mois. Maintenant, nous allons faire travailler cette tarification plus efficacement.
 
-## Principes de tarification pour les plateformes de niche
+## Principes de tarification pour les plateformes de niche {#pricing-principles-for-niche-platforms}
 
-### Tarifer sur la valeur, pas sur le coût
+### Tarifer sur la valeur, pas sur le coût {#price-on-value-not-cost}
 
 Vos coûts d'hébergement peuvent être de 5 $ à 15 $ par site client. Cela ne signifie pas que votre prix doit être de 20 $. Vous ne vendez pas l'hébergement. Vous vendez :
 
@@ -24,7 +24,7 @@ Vos coûts d'hébergement peuvent être de 5 $ à 15 $ par site client. Cela ne 
 
 Tarifiez en fonction de la valeur que vous apportez, et non du coût de cette valeur.
 
-### Ancrer par rapport aux alternatives
+### Ancrer par rapport aux alternatives {#anchor-to-alternatives}
 
 Lorsqu'un propriétaire de studio de fitness évalue FitSite, il le compare à :
 
@@ -34,7 +34,7 @@ Lorsqu'un propriétaire de studio de fitness évalue FitSite, il le compare à :
 
 À 49 $ - 199 $/mois, FitSite est moins cher qu'un développeur, plus performant que les constructeurs génériques, et infiniment meilleur que de ne pas avoir de site web.
 
-## Mise en œuvre des variations de prix
+## Mise en œuvre des variations de prix {#implementing-price-variations}
 
 La tarification annuelle encourage l'engagement et réduit le taux de désabonnement. Accédez à l'onglet **Variations de prix** de chaque plan et ajoutez des options annuelles :
 
@@ -46,12 +46,12 @@ La tarification annuelle encourage l'engagement et réduit le taux de désabonne
 
 Ajoutez un champ de **Sélection de période** à votre formulaire de paiement afin que les clients puissent basculer entre la facturation mensuelle et annuelle. Consultez [Formulaires de paiement](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Pourquoi la tarification annuelle fonctionne
+### Pourquoi la tarification annuelle fonctionne {#why-annual-pricing-works}
 
 - **Pour vous** : Des liquidités immédiates, un taux de désabonnement plus faible (les clients qui paient annuellement sont moins susceptibles d'annuler à mi-parcours)
 - **Pour eux** : Des économies réelles, une prévisibilité budgétaire
 
-## Frais de configuration
+## Frais de configuration {#setup-fees}
 
 Envisagez des frais de configuration uniques pour les plans qui incluent une configuration manuelle :
 
@@ -61,7 +61,7 @@ Envisagez des frais de configuration uniques pour les plans qui incluent une con
 
 Configurez les frais de configuration dans la section de tarification de chaque plan. Consultez [Créer votre premier produit par abonnement](/user-guide/configuration/creating-your-first-subscription-product) pour plus de détails.
 
-## Périodes d'essai
+## Périodes d'essai {#trial-periods}
 
 Offrir une période d'essai réduit la friction à l'inscription, mais introduit le risque de non-conversion. Pour FitSite :
 
@@ -70,11 +70,11 @@ Offrir une période d'essai réduit la friction à l'inscription, mais introduit
 
 Configurez l'essai sur la section de tarification du plan Starter en activant le basculeur **Offrir un essai** et en réglant la durée sur 7 jours.
 
-### Comment faire convertir les essais
+### Comment faire convertir les essais {#making-trials-convert}
 
 Un essai ne fonctionne que si le client en tire de la valeur pendant cette période. Votre séquence d'intégration (Leçon 8) est essentielle ici : les e-mails de bienvenue doivent être synchronisés pour stimuler l'engagement dans les 7 jours.
 
-## Codes de réduction
+## Codes de réduction {#discount-codes}
 
 Créez des codes de réduction stratégiques pour des objectifs spécifiques :
 
@@ -88,7 +88,7 @@ Accédez à **Ultimate Multisite > Discount Codes** pour les créer. Consultez [
 Les réductions doivent être des outils stratégiques, pas des éléments permanents. Si tout le monde bénéficie d'une réduction, ce n'est pas une réduction — c'est votre prix réel. Utilisez-les pour des campagnes spécifiques, des recommandations et des promotions à durée limitée.
 :::
 
-## Gestion des taxes
+## Gestion des taxes {#tax-handling}
 
 Si vous opérez dans une juridiction qui exige la collecte de taxes :
 
@@ -98,7 +98,7 @@ Si vous opérez dans une juridiction qui exige la collecte de taxes :
 
 Consultez [Gestion des taxes](/user-guide/payment-gateways/tax-handling) pour une configuration détaillée. Si vous servez des clients à l'international, envisagez l'[addon VAT](/addons/vat) pour la conformité européenne.
 
-## Révision de votre tarification
+## Révision de votre tarification {#reviewing-your-pricing}
 
 Après le lancement, réévaluez les prix trimestriellement. Observez :
 
@@ -107,7 +107,7 @@ Après le lancement, réévaluez les prix trimestriellement. Observez :
 - **Taux de désabonnement par plan** : Si les clients annuels se désabonnent moins, insistez davantage sur la tarification annuelle
 - **Tarification des concurrents** : Que facturent les alternatives ? Êtes-vous bien positionné ?
 
-## Le réseau FitSite jusqu'à présent
+## Le réseau FitSite jusqu'à présent {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Prêt pour le lancement (prochaine leçon)
 ```
 
-## Ce que nous avons construit dans cette leçon
+## Ce que nous avons construit dans cette leçon {#what-we-built-this-lesson}
 
 - **Tarification annuelle** avec une réduction de 20 % pour encourager l'engagement
 - **Frais de configuration** sur les niveaux supérieurs pour couvrir l'effort d'intégration

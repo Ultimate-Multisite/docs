@@ -1,127 +1,140 @@
 ---
-title: Pagina Contului Clientului
+title: Pagina Account a clientului
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagina de cont a clientului tău (v2)
+# Pagina Account a clientului tău (v2) {#your-clients-account-page-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
-Când clienții se abonează la un plan în rețeaua ta, primesc acces la un site web și la dashboard-ul acestuia, care conține informații importante despre plățile lor, abonamente, domenii, limitările planului etc...
+Când clienții se abonează la un plan în rețeaua ta, primesc acces la un site web și la Dashboard-ul acestuia, cu informații importante despre plățile, abonamentele, domeniile, limitările planului etc...
 
-În acest tutorial, te vom ghida prin pagina de cont a clientului și vei vedea ce pot vizualiza și face clienții tăi în cadrul acesteia.
+În acest tutorial, te vom ghida prin pagina de Account a clientului și vei vedea ce pot vedea și face clienții tăi în interiorul acesteia.
 
-## Pagina de cont
+## Pagina Account {#the-account-page}
 
-Pagina de cont este accesibilă dând clic pe **Account** din dashboard-ul clientului tău.
+Pagina de Account este accesibilă făcând clic pe **Account** în Dashboard-ul clientului tău.
 
-![Meniul Account în dashboard-ul clientului](/img/admin/dashboard.png)
+![Meniul Account în Dashboard-ul clientului](/img/account-page/account-menu.png)
 
-![Prezentare generală a paginii de cont a clientului](/img/admin/dashboard.png)
+Pe rețelele tenant suverane, Ultimate Multisite v2.13.0 păstrează această experiență de gestionare a clienților pe site-ul principal. Dacă un client deschide acțiuni de account, checkout, facturare, factură, gestionare a site-ului, schimbare de șablon sau mapare de domeniu dintr-un tenant suveran, acțiunea indică înapoi către panoul de client al site-ului principal, astfel încât înregistrările de facturare și de membership ale rețelei să rămână autoritare.
 
-După ce un client dă clic pe aceasta, va vedea o prezentare generală a abonamentului său, adresa de facturare, facturile, domeniile, limitările site-ului și va putea, de asemenea, să schimbe **Site Template** (dacă acest lucru este permis în rețeaua ta).
+Când clientul ajunge dintr-un tenant suveran, panoul de client al site-ului principal poate include un link de întoarcere către site-ul tenant. Linkul de întoarcere este afișat doar când Ultimate Multisite poate valida ținta de întoarcere ca fiind unul dintre site-urile clientului, ceea ce previne redirecționările arbitrare, păstrând în același timp fluxul de lucru al tenantului.
 
-De asemenea, pot schimba abonamentul la un alt plan sau pot achiziționa un alt pachet sau serviciu pe care îl oferi. Să analizăm fiecare secțiune separat.
+![Prezentare generală a paginii Account a clientului](/img/account-page/overview.png)
 
-### Prezentarea generală a abonamentului:
+După ce un client face clic pe aceasta, va vedea o prezentare generală a membership-ului, adresei de facturare, facturilor, domeniilor, limitărilor site-ului și va putea, de asemenea, să schimbe ****Șablonul site-ului** (dacă acest lucru este permis în rețeaua ta)**.
 
-Primul bloc, chiar sub numele site-ului clientului tău, arată o prezentare generală a planului actual și a serviciilor/pachetelor achiziționate împreună cu acesta. Blocul afișează, de asemenea, numărul abonamentului, suma inițială plătită pentru acesta, cât costă planul și orice serviciu/pachet, precum și de câte ori au fost facturați pentru acest abonament. Pot vedea, de asemenea, dacă abonamentul este **Active**, **Expired** sau **Canceled**.
+De asemenea, poate schimba membership-ul la un alt plan sau poate achiziționa un alt pachet sau serviciu pe care îl oferi. Să analizăm fiecare secțiune separat.
 
-![Prezentarea generală a abonamentului care arată planul, suma și detaliile de facturare](/img/admin/memberships-list.png)
+### Prezentarea generală a membership-ului tău: {#your-membership-overview}
 
-Chiar sub acest bloc, clienții tăi pot vedea blocurile **About This Site** și **Site Limits**. Aceste blocuri le arată toate limitările care vin cu planul lor: spațiu pe disc, articole, pagini, vizite etc... Aceste limite pot fi configurate pe pagina fiecărui plan din **Ultimate Multisite > Products**.
+Primul bloc chiar sub numele site-ului web al clienților tăi afișează o prezentare generală a planului lor curent și a serviciilor/pachetelor care au fost achiziționate împreună cu acesta. Blocul afișează și numărul membership-ului, suma inițială plătită pentru acesta, cât costă planul și orice serviciu/pachet și de câte ori au fost facturați pentru acest membership. De asemenea, pot vedea dacă membership-ul este **Activ** , **Expirat** sau **Anulat**.
 
-![Blocurile About This Site și Site Limits care arată limitările planului](/img/admin/dashboard.png)
+![Prezentare generală a membership-ului care arată planul, suma și detaliile de facturare](/img/account-page/membership-card.png)
 
-În partea dreaptă a **Your Membership**, clienții pot da clic pe **Change**. Aceasta le va arăta toate planurile și pachetele/serviciile disponibile. Dacă aleg un alt plan, limitările noului plan vor înlocui limitările actuale ale abonamentului - indiferent dacă fac downgrade sau upgrade.
+Chiar sub acest bloc, clienții tăi pot vedea blocurile **Despre acest site** și **Limitele site-ului**. Aceste blocuri le arată toate limitările care vin cu planul lor: spațiu pe disc, articole, pagini, vizite etc... Aceste limite pot fi configurate pe fiecare pagină de plan din **Ultimate Multisite > Products**.
 
-Acum, dacă clienții tăi aleg să achiziționeze pachete sau servicii pentru acest abonament curent - cum ar fi mai mult spațiu pe disc sau vizite - abonamentul curent nu va fi schimbat, ci doar noile pachete vor fi adăugate la acesta.
+![Blocurile Despre acest site și Limitele site-ului care arată limitările planului](/img/account-page/site-limits.png)
 
-Reține că codurile de cupon nu pot fi adăugate pe această pagină de schimbare a abonamentului. Dacă clientul a folosit un cod de cupon la prima achiziție a abonamentului, codul se va aplica și la acest nou abonament.
+În partea dreaptă a **Membership-ului tău** , clienții pot face clic pe **Schimbă**. Aceasta le va afișa toate planurile și pachetele/serviciile disponibile. Dacă aleg un alt plan, limitările pentru acel plan vor intra în vigoare în locul limitărilor curente ale membership-ului - indiferent dacă fac downgrade sau upgrade.
 
-### Actualizarea adresei de facturare:
+Acum, dacă clienții tăi aleg să achiziționeze pachete sau servicii pentru acest membership curent - precum mai mult spațiu pe disc sau mai multe vizite - membership-ul curent nu va fi schimbat, ci doar noile pachete vor fi adăugate la acesta.
 
-Pe pagina de cont, clienții tăi pot actualiza, de asemenea, adresa de facturare. Trebuie doar să dea clic pe **Update** lângă _Billing Address_.
+Reține că codurile de cupon nu pot fi adăugate pe această pagină de schimbare a membership-ului. Dacă clientul a folosit un cod de cupon la prima achiziție de membership, codul se va aplica și acestui nou membership.
 
-![Secțiunea Billing Address cu butonul Update](/img/admin/customers-list.png)
+### Actualizarea adresei de facturare: {#updating-the-billing-address}
 
-Va apărea o nouă fereastră pentru clientul tău. Tot ce trebuie să facă este să completeze noua adresă și să dea clic pe _Save Changes_.
+Pe pagina de Account, clienții tăi își pot actualiza și adresa de facturare. Trebuie doar să facă clic pe **Actualizează** lângă _Adresa de facturare_.
 
-![Formular de actualizare a adresei de facturare](/img/admin/customers-list.png)
+![Secțiunea Adresa de facturare cu butonul Actualizează](/img/account-page/billing-address.png)
 
-### Schimbarea template-ului site-ului:
+O fereastră nouă va apărea pentru clientul tău. Tot ce trebuie să facă este să completeze noua adresă și să facă clic pe _Salvează modificările_.
 
-Pentru a permite clienților tăi să își schimbe template-urile site-ului, trebuie să mergi la **Ultimate Multisite > Settings > Sites** și să activezi opțiunea **Allow Template Switching**.
+![Formular de actualizare a adresei de facturare](/img/account-page/billing-address-form.png)
 
-De asemenea, în **Ultimate Multisite > Products**, selectează planurile tale și mergi la tab-ul **Site Templates**. Asigură-te că opțiunea **Allow Site Templates** este activată și la **Site Template Selection Mode** este selectată opțiunea **Choose Available Site Templates**.
+### Schimbarea șablonului site-ului: {#changing-the-site-template}
 
-![Tab-ul Site Templates al produsului cu modul de selecție a template-ului](/img/config/product-site-templates.png)
+Pentru a le permite clienților tăi să schimbe șabloanele site-urilor lor, trebuie să mergi la **Ultimate Multisite > Settings > Sites** și să activezi opțiunea **Allow Template Switching**.
 
-Vei putea vedea toate template-urile de site disponibile pe site-ul tău. Alege care vrei să fie disponibile și care vrei să nu fie disponibile pentru clienții tăi abonați la acest plan. Reține că aceste opțiuni afectează și formularul de checkout, așa că orice template ales ca **Not Available** nu va apărea pe pagina de înregistrare pentru acest plan.
+De asemenea, în **Ultimate Multisite > Products**, selectează planurile tale și mergi la fila **Site Templates**. Asigură-te că opțiunea **Allow Site Templates** este activată și că la **Site Template Selection Mode** , opțiunea **Choose Available Site Templates** este selectată.
 
-Acum clienții tăi pot da clic pe **Change Site Template** în pagina lor de cont.
+![Fila de șabloane ale site-ului pentru produs cu modul de selecție a șabloanelor](/img/config/product-site-templates.png)
 
-![Butonul Change Site Template pe pagina de cont](/img/admin/dashboard.png)  
-O listă cu toate template-urile de site disponibile pentru acest plan va apărea clientului tău.
+Vei putea vedea toate șabloanele de site disponibile pe site-ul tău web. Alege pe care dorești să le faci disponibile și pe care dorești să nu le faci disponibile clienților tăi abonați la acest plan. Reține că aceste opțiuni afectează și formularul de checkout, astfel că orice șablon ales ca **Indisponibil** nu va apărea pe pagina de înregistrare pentru acest plan.
 
-![Lista template-urilor de site disponibile pentru plan](/img/config/site-templates-list.png)
+Acum clienții tăi pot face clic pe **Schimbă șablonul site-ului** în pagina lor de Account.
 
-După ce selectează cel la care vor să schimbe, li se va cere să confirme schimbarea.
+![Butonul Schimbă șablonul site-ului pe pagina Account](/img/account-page/change-template-button.png)
 
-![Dialog de confirmare a schimbării template-ului de site](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 afișează un panou reproiectat pentru schimbarea șablonului. Panoul începe cu un **card al șablonului curent**, astfel încât clienții să poată vedea ce șablon este activ înainte de a alege un înlocuitor.
 
-După activarea confirmării și clic pe **Process Switch**, noul template de site va fi folosit pe site-ul clientului tău.
+O grilă persistentă de șabloane de site disponibile rămâne vizibilă în timp ce clienții își revizuiesc opțiunile. Acest lucru îi ajută să compare șabloanele permise pentru planul lor fără a pierde din vedere selecția curentă.
 
-### Adăugarea domeniilor personalizate:
+![Lista șabloanelor de site disponibile pentru plan](/img/config/site-templates-list.png)
 
-Clienții tăi vor avea, de asemenea, opțiunea de a adăuga un domeniu personalizat pentru acest plan pe pagina lor de cont. Pentru a permite clienților tăi să folosească domenii personalizate, mergi la **Ultimate Multisite > Settings >** **Domain Mapping**.
+După ce îl selectează pe cel la care doresc să treacă, li se va cere să confirme schimbarea.
 
-Activează opțiunea **Enable Domain Mapping**. Aceasta va permite clienților tăi să folosească domenii personalizate la nivel de rețea.
+![Dialog de confirmare pentru schimbarea șablonului site-ului](/img/account-page/template-switch-confirm.png)
 
-Nu uita să verifici, de asemenea, dacă maparea domeniilor este activată la nivel de produs - pentru că poți limita un produs să nu permită clienților tăi să folosească domenii personalizate.
+După activarea confirmării și clic pe **Procesează schimbarea** , noul șablon de site va fi folosit pe site-ul web al clientului tău.
 
-Mergi la **Ultimate Multisite > Products**. Selectează planul dorit și mergi la tab-ul **Custom Domains**. Activează opțiunea **Allow Custom Domains**.
+Clienții pot folosi și **Reset current template** din acest panou atunci când trebuie să reseteze site-ul înapoi la șablonul atribuit în prezent. La fel ca trecerea la un alt șablon, resetarea unui șablon poate suprascrie conținutul site-ului, așa că clienții ar trebui să confirme doar atunci când înțeleg acțiunea de resetare.
 
-![Tab-ul Custom Domains cu butonul Allow Custom Domains](/img/config/product-custom-domains.png)
+### Adăugarea domeniilor personalizate: {#adding-custom-domains}
 
-Aceasta va permite tuturor clienților abonați la acest plan specific să folosească domenii personalizate. Acum, pe pagina de cont, clienții tăi pot adăuga un domeniu personalizat dând clic pe **Add Domain**.
+Clienții tăi vor avea, de asemenea, opțiunea de a adăuga un domeniu personalizat pentru acest plan pe pagina lor Account. Pentru a le permite clienților tăi să folosească domenii personalizate, mergi la **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-![Butonul Add Domain pe pagina de cont](/img/admin/domains-list.png)
+Activează opțiunea **Enable Domain Mapping**. Acest lucru le va permite clienților tăi să folosească domenii personalizate la nivel de rețea.
 
-Prima fereastră care se deschide va arăta clienților tăi un mesaj cu instrucțiuni despre cum să își actualizeze înregistrările DNS pentru ca acest domeniu personalizat să funcționeze în rețeaua ta.
+Nu uita să verifici și dacă maparea domeniilor este activată la nivel de produs - deoarece poți limita un produs astfel încât să nu le permită clienților tăi să folosească domenii personalizate.
 
-![Instrucțiuni DNS afișate la adăugarea unui domeniu personalizat](/img/admin/domains-list.png)
+Mergi la **Ultimate Multisite > Products**. Selectează planul dorit și mergi la tabul **Custom Domains**. Activează opțiunea **Allow Custom Domains**.
 
-Acest mesaj poate fi editat (de către tine) în **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+![Tabul Custom Domains cu comutatorul Allow Custom Domains](/img/config/product-custom-domains.png)
+
+Acest lucru le va permite tuturor clienților abonați la acest plan specific să folosească domenii personalizate. Acum, pe pagina Account, clienții tăi pot adăuga un domeniu personalizat făcând clic pe **Add Domain**.
+
+![Butonul Add Domain pe pagina Account](/img/account-page/add-domain-button.png)
+
+Prima fereastră care se deschide le va afișa clienților tăi un mesaj care îi instruiește cum să își actualizeze înregistrările DNS pentru ca acest domeniu personalizat să funcționeze în rețeaua ta.
+
+![Instrucțiuni DNS afișate la adăugarea unui domeniu personalizat](/img/account-page/add-domain-dns.png)
+
+Acest mesaj poate fi editat (de tine) în **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
 ![Setarea Add New Domain Instructions în Domain Mapping](/img/config/settings-domain-mapping.png)
 
-După ce dau clic pe **Next Step**, clienții tăi pot adăuga numele domeniului personalizat și pot alege dacă acest domeniu personalizat va fi cel principal. Reține că clienții tăi pot folosi mai mult de un domeniu personalizat pentru site-urile lor, așa că pot alege care va fi cel principal.
+Iată o vedere completă a paginii de setări pentru maparea domeniilor:
 
-![Introducerea numelui domeniului personalizat cu opțiunea de domeniu principal](/img/admin/domains-list.png)
+![Pagina completă de setări pentru maparea domeniilor](/img/config/settings-domain-mapping-full.png)
 
-După ce dau clic pe **Add Domain**, domeniul va fi adăugat la contul clientului tău. Tot ce trebuie să facă acum este să schimbe înregistrările DNS ale acestui domeniu personalizat la registratorul lor de domenii.
+După ce fac clic pe **Next Step** , clienții tăi pot adăuga numele domeniului lor personalizat și pot alege dacă acest domeniu personalizat va fi cel principal. Reține că clienții tăi pot folosi mai mult de un domeniu personalizat pentru site-urile lor, așa că pot alege care va fi cel principal.
 
-### Schimbarea parolei:
+![Introducerea numelui domeniului personalizat cu opțiunea de domeniu principal](/img/account-page/add-domain-primary.png)
 
-În dashboard-ul contului, clienții tăi pot, de asemenea, să își schimbe parola dând clic pe **Change Password**.
+După ce fac clic pe **Add Domain** , domeniul va fi adăugat în contul clientului tău. Tot ce trebuie să facă acum este să schimbe înregistrările DNS ale acestui domeniu personalizat la registratorul lor de domeniu.
 
-![Butonul Change Password pe pagina de cont](/img/admin/dashboard.png)
+### Schimbarea parolei: {#changing-password}
 
-Aceasta va afișa o nouă fereastră unde clienții tăi vor trebui să completeze parola actuală și apoi să completeze noua parolă pe care vor să o folosească.
+În interiorul dashboardului contului, clienții tăi își pot schimba și parola făcând clic pe **Change Password**.
 
-![Formular de schimbare a parolei cu câmpurile pentru parola actuală și cea nouă](/img/admin/dashboard.png)
+![Butonul Change Password pe pagina contului](/img/account-page/change-password-button.png)
 
-### Zona periculoasă:
+Aceasta va afișa o fereastră nouă în care clienții tăi vor trebui să completeze parola lor actuală și apoi să completeze noua parolă pe care doresc să o folosească.
 
-Avem, de asemenea, două opțiuni care sunt afișate în partea **Danger Zone**: **Delete Site** și **Delete Account**. Ambele sunt în Zona periculoasă pentru că aceste două acțiuni sunt ireversibile. Dacă clienții tăi își șterg site-ul sau contul, nu le pot recupera înapoi.
+![Formular de schimbare a parolei cu câmpuri pentru parola actuală și parola nouă](/img/account-page/change-password-form.png)
 
-![Danger Zone cu opțiunile Delete Site și Delete Account](/img/admin/dashboard.png)
+### Zona de pericol: {#danger-zone}
 
-Dacă clienții tăi dau clic pe oricare dintre aceste două opțiuni, li se va afișa o fereastră unde vor trebui să activeze opțiunea pentru a elimina site-ul sau contul și vor fi avertizați că această acțiune nu poate fi anulată.
+Avem, de asemenea, două opțiuni care sunt afișate în partea **Danger Zone**: **Delete Site** și **Delete Account**. Ambele sunt în partea Danger Zone deoarece aceste două acțiuni sunt ireversibile. Dacă clienții tăi își șterg site-ul sau contul, nu le pot recupera.
 
-![Dialog de confirmare Delete Site](/img/admin/dashboard.png)
+![Danger Zone cu opțiunile Delete Site și Delete Account](/img/account-page/danger-zone.png)
 
-![Dialog de confirmare Delete Account](/img/admin/dashboard.png)
+Dacă clienții tăi fac clic pe oricare dintre aceste două opțiuni, li se va afișa o fereastră în care vor trebui să activeze opțiunea de a elimina site-ul sau contul și vor fi avertizați că această acțiune nu poate fi anulată.
+
+![Dialog de confirmare Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Dialog de confirmare Delete Account](/img/account-page/delete-account-confirm.png)
 
 Dacă își șterg site-ul, contul și abonamentul lor vor rămâne neatinse. Vor pierde doar tot conținutul de pe site-ul lor. Dacă își șterg contul, toate site-urile, abonamentele și informațiile referitoare la acest cont vor fi pierdute.

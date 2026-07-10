@@ -4,18 +4,18 @@ title: Filtre - network_options_to_copy
 sidebar_label: network_options_to_copy
 _i18n_hash: f603aa627d8e29764d749a36886bc04c
 ---
-# Filtre : network_options_to_copy
+# Filtre : network_options_to_copy {#filter-networkoptionstocopy}
 
 Filtre les options réseau par défaut à copier.
 
-### Since
+### Since {#since}
 
 - 1.3.0
 
-### Source
+### Source {#source}
 
 Defined in [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1649) at line 1649
 
-## Returns
+## Returns {#returns}
 
 Liste des paires $option_name => $option_label du réseau.

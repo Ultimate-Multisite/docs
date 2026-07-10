@@ -3,19 +3,19 @@ title: Nastavení Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Nastavení platební brány Stripe (v2)
+# Nastavení platební brány Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
 
 Na stránce nastavení plateb můžete aktivovat až čtyři způsoby platby: Stripe, Stripe Checkout, PayPal a Manuální. V tomto článku si ukážeme, jak integrovat **Stripe**.
 
-## Aktivace Stripe
+## Aktivace Stripe {#enabling-stripe}
 
 Pokud chcete povolit Stripe jako dostupnou platební bránu ve vaší síti, přejděte do **Ultimate Multisite > Settings > Payments** a zaškrtněte přepínač u položky **Stripe** nebo **Stripe Checkout** v sekci Active Payment Gateways.
 
 ![Aktivace Stripe v dostupných platebních bránách](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Tato metoda zobrazí během pokladny pole pro zadání čísla kreditní karty.
 
@@ -47,7 +47,7 @@ Zkopírujte hodnotu **Publishable key** a **Secret key** ze sloupce **Token** a 
 
 ![Vložení klíčů Stripe do nastavení Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Nastavení Stripe Webhooku
+## Nastavení Stripe Webhooku {#setting-up-stripe-webhook}
 
 Stripe odesílá webhook události, které informují Ultimate Multisite pokaždé, když se něco stane na **vašem Stripe účtu**.
 

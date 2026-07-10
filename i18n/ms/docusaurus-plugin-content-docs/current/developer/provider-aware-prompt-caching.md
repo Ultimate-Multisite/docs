@@ -3,11 +3,11 @@ title: Penyimpanan Cache Prompt Sedar Penyedia
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# Penyimpanan Cache Prompt Berdasarkan Provider
+# Penyimpanan Cache Prompt Berdasarkan Provider {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 memperkenalkan **penyimpanan cache prompt berdasarkan provider** (*provider-aware prompt caching*), yang mengoptimumkan kos API dan latensi dengan menyimpan cache prompt merentasi pelbagai provider LLM. Setiap provider mempunyai mekanisme dan konfigurasi caching yang berbeza.
 
-## Gambaran Keseluruhan
+## Gambaran Keseluruhan {#overview}
 
 Penyimpanan cache prompt membolehkan anda untuk:
 
@@ -23,11 +23,11 @@ Setiap provider melaksanakan caching secara berbeza:
 - **OpenRouter**: Caching khusus provider
 - **Vertex Anthropic**: Penyimpanan cache prompt dengan kawalan cache
 
-## Google Gemini: API cachedContents
+## Google Gemini: API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini menyediakan pengurusan cache yang eksplisit melalui API `cachedContents`.
 
-### Konfigurasi
+### Konfigurasi {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### Mencipta Prompt yang Di-cache
+### Mencipta Prompt yang Di-cache {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // Mengembalikan: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### Menggunakan Prompt yang Di-cache
+### Menggunakan Prompt yang Di-cache {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### Kitaran Hayat Cache
+### Kitaran Hayat Cache {#cache-lifecycle}
 
 ```php
 // Senaraikan kandungan yang di-cache
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### Amalan Terbaik untuk Gemini
+### Amalan Terbaik untuk Gemini {#best-practices-for-gemini}
 
 - **Tetapkan TTL yang sesuai**: Imbangkan penjimatan kos berbanding keusangan cache
 - **Cache system prompts**: Gunakan semula system prompt yang sama merentasi permintaan
 - **Pantau penggunaan cache**: Jejaki cache mana yang paling banyak digunakan
 - **Bersihkan cache luput**: Padam cache yang tidak digunakan secara berkala
 
-## Azure OpenAI: Penyimpanan Cache Prompt
+## Azure OpenAI: Penyimpanan Cache Prompt {#azure-openai-prompt-caching}
 
 Azure OpenAI menyokong penyimpanan cache prompt dengan pengurusan TTL automatik.
 
-### Konfigurasi
+### Konfigurasi {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### Mengaktifkan Caching
+### Mengaktifkan Caching {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### Header Cache
+### Header Cache {#cache-headers}
 
 Azure OpenAI menggunakan header HTTP untuk kawalan cache:
 
@@ -152,7 +152,7 @@ Nilai yang disokong:
 - `no_cache`: Jangan cache permintaan ini
 - `no_store`: Jangan cache dan jangan guna semula
 
-### Memantau Penggunaan Cache
+### Memantau Penggunaan Cache {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "Cache creation: $cache_tokens tokens\n";
 echo "Cache hits: $cache_hits tokens\n";
 ```
 
-### Amalan Terbaik untuk Azure OpenAI
+### Amalan Terbaik untuk Azure OpenAI {#best-practices-for-azure-openai}
 
 - **Gunakan prompt yang konsisten**: Prompt yang sama mendapat manfaat daripada caching
 - **Tetapkan TTL yang munasabah**: Imbangkan kos berbanding kesegaran
 - **Pantau metrik cache**: Jejaki penciptaan cache berbanding kejayaan bacaan cache
 - **Kumpulkan permintaan serupa**: Kumpulkan permintaan untuk memaksimumkan kejayaan cache
 
-## OpenRouter: Caching Khusus Provider
+## OpenRouter: Caching Khusus Provider {#openrouter-provider-specific-caching}
 
 OpenRouter menyokong caching melalui provider asas (OpenAI, Anthropic, dsb.).
 
-### Konfigurasi
+### Konfigurasi {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### Menggunakan Caching OpenRouter
+### Menggunakan Caching OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### Pilihan Khusus Provider
+### Pilihan Khusus Provider {#provider-specific-options}
 
 Provider yang berbeza mempunyai mekanisme caching yang berbeza:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### Amalan Terbaik untuk OpenRouter
+### Amalan Terbaik untuk OpenRouter {#best-practices-for-openrouter}
 
 - **Ketahui caching provider anda**: Setiap provider mempunyai mekanisme yang berbeza
 - **Uji tingkah laku caching**: Sahkan caching berfungsi dengan provider pilihan anda
 - **Pantau kos**: Jejaki penjimatan daripada caching
 - **Gunakan model yang konsisten**: Menukar model akan memecahkan kejayaan cache
 
-## Vertex Anthropic: Penyimpanan Cache Prompt dengan Kawalan Cache
+## Vertex Anthropic: Penyimpanan Cache Prompt dengan Kawalan Cache {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) menyokong penyimpanan cache prompt dengan kawalan cache yang eksplisit.
 
-### Konfigurasi
+### Konfigurasi {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### Menggunakan Caching Vertex Anthropic
+### Menggunakan Caching Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### Jenis Kawalan Cache
+### Jenis Kawalan Cache {#cache-control-types}
 
 - **ephemeral**: Cache untuk tempoh permintaan (lalai)
 - **persistent**: Cache merentasi pelbagai permintaan (jika disokong)
 
-### Memantau Penggunaan Cache
+### Memantau Penggunaan Cache {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "Cache created: $cache_created tokens\n";
 echo "Cache read: $cache_read tokens\n";
 ```
 
-### Amalan Terbaik untuk Vertex Anthropic
+### Amalan Terbaik untuk Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **Gunakan caching ephemeral**: Bagus untuk caching sesi tunggal
 - **Tetapkan max_tokens dengan sesuai**: Imbangkan saiz cache berbanding kos
 - **Pantau metrik cache**: Jejaki keberkesanan cache
 - **Uji dengan beban kerja anda**: Sahkan caching memberi manfaat kepada kes penggunaan anda
 
-## Strategi Caching Merentasi Provider
+## Strategi Caching Merentasi Provider {#cross-provider-caching-strategy}
 
-### Konfigurasi Bersepadu
+### Konfigurasi Bersepadu {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### Pengesanan Provider
+### Pengesanan Provider {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // Gunakan konfigurasi caching khusus provider
 ```
 
-### Strategi Fallback
+### Strategi Fallback {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## Pengoptimuman Kos
+## Pengoptimuman Kos {#cost-optimization}
 
-### Kira Penjimatan
+### Kira Penjimatan {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "Estimated savings: \$$savings\n";
 ```
 
-### Tips Pengoptimuman
+### Tips Pengoptimuman {#optimization-tips}
 
 - **Cache system prompts yang besar**: Penjimatan kos terbesar
 - **Guna semula konteks**: Cache dokumen konteks yang sering digunakan
@@ -395,30 +395,30 @@ echo "Estimated savings: \$$savings\n";
 - **Pantau keberkesanan cache**: Jejaki penjimatan sebenar
 - **Laraskan TTL**: Imbangkan kos berbanding kesegaran
 
-## Penyelesaian Masalah
+## Penyelesaian Masalah {#troubleshooting}
 
-### Cache tidak digunakan
+### Cache tidak digunakan {#cache-not-being-used}
 
 - Sahkan caching diaktifkan dalam konfigurasi
 - Semak bahawa prompt adalah sama (caching memerlukan padanan yang tepat)
 - Sahkan cache belum luput
 - Semak had cache khusus provider
 
-### Kegagalan penciptaan cache
+### Kegagalan penciptaan cache {#cache-creation-failing}
 
 - Sahkan saiz cache berada dalam had provider
 - Semak sintaks `cache_control` adalah betul
 - Pastikan provider menyokong caching untuk model anda
 - Semak dokumentasi provider untuk had-had
 
-### Kos yang tidak dijangka
+### Kos yang tidak dijangka {#unexpected-costs}
 
 - Pantau token penciptaan cache berbanding token bacaan cache
 - Sahkan cache benar-benar digunakan
 - Semak cache miss kerana variasi prompt
 - Pertimbangkan untuk melaraskan TTL atau strategi cache
 
-## Perbandingan Provider
+## Perbandingan Provider {#provider-comparison}
 
 | Feature | Gemini | Azure OpenAI | OpenRouter | Vertex Anthropic |
 |---------|--------|--------------|-----------|------------------|
@@ -428,7 +428,7 @@ echo "Estimated savings: \$$savings\n";
 | Cost reduction | 90% | 90% | Provider-dependent | 90% |
 | Monitoring | Detailed | Via metrics | Provider-dependent | Via usage |
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 1. **Pilih provider anda**: Pilih berdasarkan keperluan anda
 2. **Konfigurasi caching**: Sediakan caching khusus provider

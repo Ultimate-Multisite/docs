@@ -3,13 +3,13 @@ title: Support Tickets Endringslogg
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Endringslogg for Support Tickets
+# Endringslogg for Support Tickets {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Forbedret: Fjernet `vendor/`-mappen fra Git-sporing (dette dekkes allerede av `.gitignore`), noe som reduserer størrelsen på repositoryet.
 * Forbedret: Testet opp til WordPress 7.0.
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Løst: Aksepterer null-verdier i setterne for nullbare ticket-modeller.
 * Løst: Lagrer alle tickets i globale, nettverksomspennende tabeller for korrekt multisite-støtte.
 * Løst: Skjuler staff-felt og fikser blank-side-omdirigering på kundens `new-ticket`-skjema.
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Forbedret: Laster kun frontend-ressurser betinget på support ticket-sider.
 * Forbedret: Hopper over plugin autoloader når Bedrock root autoloader allerede har lastet inn avhengighetene.
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Lagt til: Full funksjonalitet for visning av tickets for både admin og frontend.
 * Lagt til: AJAX-håndterer for innsending av ticket-svar.
 * Lagt til: Støtte for funksjonalitet for ticket-svar med korrekt skjema-håndtering.
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Forbedret: Databasestruktur med korrekte spørrings- og skjema-klasser for svar og vedlegg.
 * Forbedret: Migrering til faktiske egenskaper (real properties) i stedet for attributter for ticket-modeller.
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Oppdatert: Omdøpt prefikset til `ultimate-multisite` for konsistens.
 * Oppdatert: Standardisering av tekstdomene.
 * Løst: Mindre feilrettinger og forbedringer.
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Første utgivelse
 * Komplett system for administrasjon av tickets
 * Flernivå tilgangskontroll

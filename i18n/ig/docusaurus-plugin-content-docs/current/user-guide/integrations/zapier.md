@@ -3,7 +3,7 @@ title: Nkwado Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kết nối Ultimate Multisite với Zapier
+# Kết nối Ultimate Multisite với Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Trong một bài viết, chúng tôi đã nói về [Webhooks](webhooks.md) và cách chúng có thể được dùng để kết nối với các ứng dụng bên thứ ba.
 
@@ -15,7 +15,7 @@ Bạn có thể tạo ra các **Triggers** (Bộ kích hoạt) sẽ được kí
 
 Điều này khả thi vì các **triggers** và **actions** của **Ultimate Multisite Zapier** được cung cấp bởi [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Cách bắt đầu
+## Cách bắt đầu {#how-to-start}
 
 Đầu tiên, hãy tìm kiếm Ultimate Multisite trong danh sách ứng dụng của Zapier. Hoặc bạn có thể nhấp vào [đường dẫn này](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Trong ô URL, hãy nhập toàn bộ URL mạng của bạn, bao gồm cả giao
 
 Nhấn nút **Yes, Continue** (Có, Tiếp tục) để chuyển sang bước tiếp theo. Nếu mọi thứ hoạt động tốt, bạn sẽ được chào đón bởi tài khoản đã kết nối mới của mình! Nhấn vào **Continue** (Tiếp tục) để tạo một trigger mới.
 
-## Cách tạo một Trigger mới
+## Cách tạo một Trigger mới {#how-to-create-a-new-trigger}
 
 Bây giờ khi tài khoản của bạn đã được kết nối, bạn có thể xem các sự kiện khả dụng. Hãy chọn sự kiện **payment_received** cho hướng dẫn này nhé.
 
@@ -67,7 +67,7 @@ Sau khi đã chọn sự kiện và nhấn **continue**, một bước kiểm tr
 
 Na tutorial của chúng tôi, bài kiểm tra đã được **hoàn thành thành công** và trả về thông tin ví dụ về payload. Thông tin ví dụ này sẽ hữu ích để hướng dẫn chúng ta khi tạo các hành động (actions). Trigger của bạn hiện đã được tạo và sẵn sàng để kết nối với các ứng dụng khác.
 
-## Cách tạo Actions
+## Cách tạo Actions {#how-to-create-actions}
 
 Actions sử dụng thông tin từ các trigger khác để tạo các mục mới trong mạng lưới của bạn.
 
@@ -79,7 +79,7 @@ Trong phần **tạo một bước action**, bạn sẽ chọn Ultimate Multisit
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Thiết lập Action
+### Thiết lập Action {#setting-up-the-action}
 
 Đây là **bước chính của action** và ở đây mọi thứ hơi khác một chút. Thông tin đầu tiên bạn sẽ chọn là **Item**. Item là **mô hình thông tin** của mạng lưới của bạn như **Customers (Khách hàng), Payments (Thanh toán), Sites (Trang web), Emails (Email)** và các mục khác.
 

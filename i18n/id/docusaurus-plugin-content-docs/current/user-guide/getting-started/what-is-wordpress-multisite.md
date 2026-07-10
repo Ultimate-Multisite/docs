@@ -3,7 +3,7 @@ title: Apa itu WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Apa itu WordPress Multisite?
+# Apa itu WordPress Multisite? {#what-is-wordpress-multisite}
 
 Di dalam intinya, WordPress menyediakan fitur bernama 'Multisite' yang berakar sejak tahun 2010 saat peluncuran WordPress 3.0. Sejak saat itu, fitur ini telah mengalami berbagai pembaruan untuk menambah fitur baru dan meningkatkan keamanan.
 
@@ -11,7 +11,7 @@ Sederhananya, WordPress multisite bisa dipahami seperti ini: Sebuah universitas 
 
 ## 
 
-## Apa Sebenarnya WordPress Multisite?
+## Apa Sebenarnya WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite adalah fitur WordPress yang memungkinkan beberapa situs berbagi satu instalasi WordPress. Ketika multisite diaktifkan, situs WordPress asli diubah untuk mendukung apa yang biasa disebut sebagai **jaringan situs**.
 
@@ -23,7 +23,7 @@ Fakta ini adalah salah satu keunggulan utama multisite, karena memungkinkan Anda
 
 ## 
 
-## Subdomain atau Subdirektori?
+## Subdomain atau Subdirektori? {#subdomain-or-subdirectory}
 
 Ada dua mode menjalankan WordPress multisite – dan Anda harus memilih salah satu saat mengubah instalasi WordPress biasa menjadi instalasi multisite:
 
@@ -49,7 +49,7 @@ Salah satu tantangan utama dalam mengatur mode subdomain adalah cakupan SSL (HTT
 
 Berbeda dengan mode subdirektori, subsite di jaringan berbasis subdomain dianggap oleh mesin pencari sebagai situs web terpisah, yang berarti konten di satu subsite tidak memengaruhi performa SEO subsite lain sama sekali.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Instalasi WordPress situs tunggal memungkinkan Anda menambahkan pengguna dalam jumlah tak terbatas dan memberikan pengguna tersebut peran berbeda dengan izin yang berbeda pula.
 
@@ -63,7 +63,7 @@ Plugin dan tema hanya bisa diinstal atau dihapus dari panel admin jaringan oleh 
 
 _Catatan: seperti yang Anda lihat, mengundang seseorang ke jaringan Anda dan memberikan mereka status super admin memberikan pengguna ini kendali penuh atas jaringan Anda. Sebagai contoh, super admin lain bahkan bisa menghapus status super admin Anda, yang secara efektif mengunci Anda dari panel admin jaringan Anda sendiri. Untuk memungkinkan pelanggan Ultimate Multisite memiliki kontrol terperinci atas apa yang bisa dilakukan super admin tambahan, kami memiliki add-on bernama Support Agents. Add-on ini memungkinkan Anda membuat jenis pengguna lain – agen – dengan hanya izin yang mereka butuhkan untuk melakukan tugas di jaringan._
 
-## Apa yang Dibagikan Antar Subsite dan Apa yang Tidak
+## Apa yang Dibagikan Antar Subsite dan Apa yang Tidak {#what-is-shared-among-subsites-and-what-is-not}
 
 Seperti yang kami sebutkan sebelumnya, salah satu keunggulan utama WordPress multisite adalah semua subsite berbagi konfigurasi, file inti, tema, plugin, file inti WordPress, dan sebagainya yang sama.
 
@@ -75,7 +75,7 @@ Namun, ada elemen-elemen yang dengan rapi dipisahkan per subsite.
 
 \- Sebagian besar tabel database dibuat untuk setiap subsite, artinya post, komentar, halaman, pengaturan, dan lainnya dipisahkan untuk setiap subsite.
 
-## Manajemen Pengguna di WordPress Multisite
+## Manajemen Pengguna di WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Satu topik sensitif di WordPress multisite adalah manajemen pengguna. Tabel pengguna WordPress adalah salah satu dari sedikit yang dibagikan di antara semua subsite.
 
@@ -99,7 +99,7 @@ _Catatan: Kami menyadari betapa buruknya ini tergantung pada kasus penggunaan An
 
 Meskipun tabel pengguna dibagikan, pengguna dapat ditambahkan dan dihapus dari subsite oleh admin subsite atau super admin, dan mereka bahkan bisa memiliki peran pengguna berbeda di subsite yang berbeda.
 
-## Pertimbangan Performa
+## Pertimbangan Performa {#performance-considerations}
 
 WordPress multisite sangat powerful dalam hal jumlah situs yang dapat didukungnya. Ini dapat dibuktikan dengan fakta bahwa [WordPress.com](https://WordPress.com), Edublogs, dan Campuspress semuanya adalah layanan berbasis multisite dan masing-masing meng-hosting ribuan situs.
 

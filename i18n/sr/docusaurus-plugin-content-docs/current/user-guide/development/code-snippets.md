@@ -3,7 +3,7 @@ title: Kod fragmenata koda
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Kod fragmen za v2
+# Kod fragmen za v2 {#code-snippets-for-v2}
 
 U osnovi, kod fragmeni za **WordPress** se koriste da se obavljaju određene akcije koje bi inače zahtevale poseban manji plugin. Takvi kod fragmeni se postavljaju u jedan od WordPress jezgra ili tematskih fajlova (obično u `functions.php` fajlu vaše teme) ili se mogu koristiti kao MU plugin.
 
@@ -15,7 +15,7 @@ U ovom članku ćemo vam pokazati tri kod fragmena koje možete koristiti sa **U
 
   * [**Rešavanje problema CORS-a sa Font-Icons na mapiranim domenima**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Promena pozicije stavke menija naloga
+## Promena pozicije stavke menija naloga {#changing-the-position-of-the-account-menu-item}
 
 Da biste promenili poziciju stavke menija naloga na Dashboard-u vašeg klijenta, jednostavno dodajte sledeći kod fragmen u `functions.php` fajl vaše glavne teme. Možete takođe umetnuti fragmen unutar jednog od vaših mu-pluginova ili prilagođenih pluginova.
 
@@ -23,7 +23,7 @@ Da biste promenili poziciju stavke menija naloga na Dashboard-u vašeg klijenta,
 add_filter('wu_my_account_menu_position', function() { return 10; // Prilagodite ovu vrednost da biste postavili meni na željenu poziciju.
 ```
 
-## Kako proveriti da li korisnik spada u određeni plan i/ili ima aktivnu pretplatu
+## Kako proveriti da li korisnik spada u određeni plan i/ili ima aktivnu pretplatu {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Kao administrator mreže, možda ćete morati da kreirate prilagođene funkcije koje će obavljati osnovne akcije ili omogućavati uslugu/funkciju određenoj grupi pretplatnika ili krajnjim korisnicima, na osnovu statusa njihove pretplate i plana na kojem su pretplaćeni.
 
@@ -54,20 +54,20 @@ Napomena: korisnici se mogu pretplatiti samo na **Plan**, a ne na Paket ili Uslu
 
 ![Lista proizvoda koja pokazuje ID planova](/img/admin/products-list.png)
 
-## Rešavanje problema CORS-a sa Font-Icons u mapiranim domenima
-## Rešavanje problema CORS-a sa Font-Icons u mapiranim domenima
+## Rešavanje problema CORS-a sa Font-Icons u mapiranim domenima {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Rešavanje problema CORS-a sa Font-Icons u mapiranim domenima {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Nakon što mapirate domen na poddomen, možete primetiti da je sajtu teško učitati prilagođene fontove. To je uzrokovano blokadom izvan izvora (cross-origin block) u podešavanjima vašeg servera.
 
 Pošto su fajlovi fontova skoro uvek učitani direktno iz CSS-a, naš plugin za mapiranje domena ne može da prepisuje URL-ove kako bi koristio mapirani domen umesto originalnog, tako da biste rešili problem potrebno je da modifikujete svoje server konfiguracione fajlove.
 
-### Apache
+### Apache {#apache}
 
 U vašem .htaccess fajlu dodajte slede liniju:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#nginx}
 
 U vašem server konfiguracionom fajlu (lokacija se razlikuje od servera do servera), dodajte:
 

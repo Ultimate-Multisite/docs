@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Plác Adah na ọkụmụta gị na Ultimate Multisite: Ad Injector
+# Plác Adah na ọkụmụta gị na Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector bụ **plugin mai** nke na-eme ka ị nwere ihe ndị ahụ iji plác adah na ọkụmụta gị direkt na sahọdụ edit page ha.
 
@@ -35,7 +35,7 @@ _Ọ bụrụ na ị chọpụta ad code-onye, ọ ga-anọ n'posts na pages ah�
 
 _Jikọpụta (go) Admin Panel Ad Code option ma ị chọrọ ịplác adah na back-end nke ndị na-eme ọrụ ahụ._
 
-### Ọ dị n'ụ allá Adịghị Nwere
+### Ọ dị n'ụ allá Adịghị Nwere {#beyond-advertising}
 
 Ị chụrụ Ultimate Multisite: Ad Injector maka ịnwale ihe ọrụ maka plans ndị bi nwere kedu.
 

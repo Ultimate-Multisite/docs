@@ -1,40 +1,46 @@
 ---
 title: Referenca e cilësimeve
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenca të cilësimeve
+# Referenca e Settings {#settings-reference}
 
-Kjo faqe ndjek cilësimet që ndikojnë në menaxhimin e përditshëm dhe ndryshimet e fundit në sjellje në Ultimate Multisite.
+Kjo faqe ndjek Settings që ndikojnë në administrimin e përditshëm dhe ndryshimet e fundit të sjelljes në Ultimate Multisite.
 
-## Të tjera opsione
+## Opsione të tjera {#other-options}
 
-Zona **Të tjera opsione** shfaqet nën **Ultimate Multisite > Settings > Login & Registration**.
+Zona **Opsione të tjera** shfaqet nën **Ultimate Multisite > Settings > Login & Registration**.
 
-| Cilësimi | Përshkrimi |
+| Setting | Përshkrimi |
 |---|---|
-| **Enable Jumper** (Krijoni Jumper) | Tregon mjetin e navigimit të shpejtë Jumper në zonën admin. Përdorni atë për të kaluar drejtpërdrejt në ekranet e Ultimate Multisite, objekte të rrjetit dhe destinacionet e suportuara të adminit. Disaktivizoni nëse nuk dëshironi që ky shkurtim të jetë i dukshëm. |
+| **Enable Jumper** | Shfaq mjetin e navigimit të shpejtë Jumper në zonën e administrimit. Përdoreni për të kaluar drejtpërdrejt te ekranet e Ultimate Multisite, objektet e rrjetit dhe destinacionet e mbështetura të administrimit. Çaktivizojeni nëse nuk dëshironi që kjo shkurtore të jetë e dukshme. |
 
-## Raportimi i gabimeve dhe telemetria
+## Raportimi i gabimeve dhe telemetria {#error-reporting-and-telemetry}
 
-Cilësimi i mëparshëm për pjesëmarrjen në raportimin e gabimeve është hiqur nga faqja e cilësimeve. Telemetria anonime është e deaktivizuar dhe nuk ka ndonjë opsion vizual (UI toggle) për ta aktivizuar.
+Cilësimi i mëparshëm opt-in për raportimin e gabimeve është hequr nga faqja e settings. Telemetria anonime është e çaktivizuar dhe nuk ka asnjë UI toggle për ta aktivizuar.
 
-Nëse keni runbooks të brendshëm ose skedarë ekran (screenshots) për faquin e cilësimeve, hiq referencat në fushën e vjetër të raportimit të gabimeve që administratorët të mos kërkojnë një cilësimi që nuk ekziston më.
+Nëse mirëmbani runbooks të brendshme ose pamje ekrani për faqen e settings, hiqni referencat te fusha e vjetër opt-in për raportimin e gabimeve, në mënyrë që administratorët të mos kërkojnë një cilësim që nuk ekziston më.
 
-## Cilësimet e importit/eksportit
+## Settings për import/eksport {#importexport-settings}
 
-Tabja **Import/Export** përshkruan cilat cilësime i kontrollon dhe lidhet drejtpërdrejt me **Ultimate Multisite > Site Export** për arkivët e saj të sitit dhe rrjetit. Përdorni tabin e cilësimeve për konfigurimin e importit/eksportit, përdorni **Tools > Export & Import** për procesin e importit/eksportit të një shtëpie të vetme, dhe përdorni mjetin Site Export kur keni nevojë për arkivin e plotë të Eksportit të Rrjetit.
+Skeda e settings **Import/Export** përshkruan cilat settings kontrollon dhe lidhet drejtpërdrejt me **Ultimate Multisite > Site Export** për arkivat e site dhe rrjetit. Përdorni skedën e settings për konfigurimin e import/eksportit, përdorni **Tools > Export & Import** për rrjedhën e punës së eksport/importit për një site të vetëm, dhe përdorni mjetin Site Export kur ju nevojitet një arkiv i plotë Network Export.
 
-## Cilësimet e lidhjes me ofruesin AI
+## Paralajmërim për bilancin e Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Cilësimet e lidhjes me ofruesin AI tani eksponojnë vetëm grupet e llogave OAuth që mbështeten:
+Kur addoni Domain Seller lidhet me HostAfrica, administratorët e rrjetit tani shohin një paralajmërim të mbyllshëm për bilanc të ulët kur bilanci i Account të reseller është tepër i ulët për përpunim të besueshëm të regjistrimit ose rinovimit të domain.
 
-| Përfshësi | Fluksi i konfigurimit |
+Trajtojeni këtë njoftim si paralajmërim operacional: mbushni bilancin e reseller në HostAfrica përpara se të pranoni më shumë regjistrime domain me pagesë, pastaj kthehuni te settings e Domain Seller ose te ekrani i monitorimit të domain për të konfirmuar që regjistrimet dhe rinovimet mund të vazhdojnë normalisht.
+
+## Settings të lidhësit të ofruesit AI {#ai-provider-connector-settings}
+
+Settings të lidhësit të ofruesit AI tani ekspozojnë vetëm grupet e mbështetura të Account OAuth:
+
+| Ofruesi | Rrjedha e konfigurimit |
 |---|---|
-| **Anthropic Max** | Lidheni një ose më shumë llogari Anthropic Max duke përdorur butonin OAuth. Përdorni opsionin e rezervës manuale të OAuth kur shfletuesi në sandbox nuk mund të plotësojë redirektimin automatikisht. |
-| **OpenAI ChatGPT/Codex** | Lidheni llogaritjet ChatGPT përmes të njëjtës rrjedhje (workflow) OAuth. Operimet e mbështetura nga konnektori mund të përdorin thirrjet e mjetit Codex të ChatGPT pasi llogaria është lidhur. |
-| **Google AI Pro** | Lidheni llogaritjet Google AI Pro përmes OAuth, pastaj refreshojeni konnektorin nëse lista e llogarive nuk përditësohet menjëherë. |
+| **Anthropic Max** | Lidhni një ose më shumë Account Anthropic Max me butonin OAuth. Përdorni alternativën manuale OAuth kur një shfletues në sandbox nuk mund ta përfundojë automatikisht ridrejtimin. |
+| **OpenAI ChatGPT/Codex** | Lidhni Account ChatGPT përmes së njëjtës rrjedhë pune të grupit OAuth. Operacionet e mbështetura nga lidhësi mund të përdorin thirrje mjetesh ChatGPT Codex pasi Account të jetë lidhur. |
+| **Google AI Pro** | Lidhni Account Google AI Pro përmes OAuth, pastaj rifreskoni lidhësin nëse lista e Account nuk përditësohet menjëherë. |
 
-Cursor Pro nuk është më një ofrues i mbështetur. Heqni skenat e vjetra të screenshot-eve interne, runbook-e ose hapat e onboarding që përmendin fusha konfigurore ose rrugët e konnektorëve për Cursor Pro.
+Cursor Pro nuk është më një ofrues i mbështetur. Hiqni pamjet e vjetra të brendshme të ekranit, runbooks ose hapat e onboarding që përmendin fusha konfigurimi ose shtigje lidhësi për Cursor Pro.
 
-Kur shtoni ose heqni llogaritje ofruese (provider accounts), vendosni një adresë email të vlefshme për llogarinë që po refreshohet ose fshihet dhe ruani cilësimet e ofrues para se të testoni operacionet me mbështetje konnektorit.
+Kur shtoni ose hiqni Account të ofruesit, vendosni një adresë email të vlefshme për Account që po rifreskohet ose fshihet dhe ruani settings e ofruesit përpara se të testoni operacione të mbështetura nga lidhësi.

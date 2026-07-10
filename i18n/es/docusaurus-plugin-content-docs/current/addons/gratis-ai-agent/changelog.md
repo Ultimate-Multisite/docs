@@ -3,11 +3,11 @@ title: Registro de cambios
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Lanzado el 2026-04-28
+## 1.9.0 — Lanzado el 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nuevo
+### Nuevo {#new}
 
 - **Capacidad `create_contact_form`** — crea un formulario de contacto utilizando el plugin de formularios activo (Contact Form 7, WPForms, Fluent Forms o Gravity Forms) y devuelve un shortcode listo para incrustar en cualquier entrada o página.
 - **Capacidad `set_featured_image`** — asigna una imagen destacada a una entrada o página a partir de un ID de adjunto existente en la Biblioteca de Medios o una URL remota; importa la imagen automáticamente cuando se proporciona una URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurar última sesión** — el panel de chat ahora recarga automáticamente la conversación más reciente al cargar la página y al abrir el widget, por lo que el contexto nunca se pierde durante la navegación por páginas.
 - **Enlaces de acción de plugins** — ahora aparecen enlaces rápidos a Ajustes y al Registro de Capacidades (Abilities Registry) en la pantalla **Plugins → Plugins instalados** de WordPress, debajo de la descripción del plugin.
 
-### Mejorado
+### Mejorado {#improved}
 
 - **Reintento de fuente de imagen** — el agente ahora reintenta todas las fuentes de imágenes gratuitas configuradas antes de recurrir a una imagen generada por IA en caso de fallo de descarga.
 - **Panel de información del modelo** — siempre visible en el encabezado del chat; ya no está oculto después del primer mensaje.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Rediseño del widget de chat** — el icono unificado de IA reemplaza el antiguo avatar personalizado; es consistente con el sistema de agentes integrados.
 - **Vínculo de URLs (URL linkification)** — las URLs que aparecen en los mensajes del sistema y en las burbujas de mensajes de error ahora se muestran como enlaces clicables.
 
-### Corregido
+### Corregido {#fixed}
 
 - **Descubribilidad de capacidades (Ability discoverability)** — se corrigieron descripciones, referencias de prompts de sistema y alineación de espacios de nombres para que todas las capacidades aparezcan en la lista de herramientas del agente de manera fiable.
 - **Caché de proveedores (Providers cache)** — los proveedores ahora se almacenan en caché en todo el sitio mediante un contador de versiones, lo que evita problemas de proveedores obsoletos en redes multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Lanzado el 2026-04-09
+## 1.4.0 — Lanzado el 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nuevo
+### Nuevo {#new-1}
 
 - **Comando de benchmark de WP-CLI** (`wp gratis-ai-agent benchmark`) — ejecuta el conjunto de pruebas de referencia Agent Capabilities v1 desde la línea de comandos para pipelines de CI y flujos de trabajo de evaluación de modelos. Admite ejecuciones por pregunta, anulación de proveedores/modelos y salida JSON/CSV.
 - **Conjunto de pruebas de referencia Agent Capabilities v1** — un conjunto estructurado de prompts complejos y de múltiples pasos que ejercitan toda la superficie de capacidades, con puntuación y reportes de tokens/duración.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pregunta de benchmark para sitio web de restaurante (`q-restaurant-website`)** — prueba de extremo a extremo que cubre el registro de CPT, sistema de diseño, navegación y descubrimiento de plugins.
 - **Plugins con conector de proveedores de IA** añadidos a los blueprints de WordPress Playground para una configuración de desarrollo local más rápida.
 
-### Mejorado
+### Mejorado {#improved-1}
 
 - README actualizado con documentación e instrucciones de configuración para el conector de proveedores de IA.
 
-### Corregido
+### Corregido {#fixed-1}
 
 - Resueltos 25 fallos de prueba PHPUnit en la rama `main`.
 - Corregado el formato de URL de lanzamientos de GitHub en `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Las notas de la versión anterior se mantienen en el repositorio del plugin._

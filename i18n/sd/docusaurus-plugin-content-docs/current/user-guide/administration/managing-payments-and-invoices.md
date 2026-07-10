@@ -3,9 +3,9 @@ title: Payments aur invoices ka prabandhan
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# ادائیگیوں اور انوائسز کا انتظام کرنا
+# ادائیگیوں اور انوائسز کا انتظام کرنا {#managing-payments-and-invoices}
 
-## ادائیگی کی سیٹنگز
+## ادائیگی کی سیٹنگز {#payment-settings}
 
 ادائیگی ملنا شروع کرنے سے پہلے، آپ کو ادائیگی سے متعلق سیٹنگز ترتیب دینی ہوں گی۔ **Ultimate Multisite → Settings** پر جائیں اور **Payment** ٹیب پر کلک کریں۔
 
@@ -15,7 +15,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### عمومی ادائیگی کے اختیارات
+### عمومی ادائیگی کے اختیارات {#general-payment-options}
 
 عمومی سیٹنگز میں آپ یہ ترتیب دے سکتے ہیں:
 
@@ -24,7 +24,7 @@ _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### ادائیگی کے گیٹ ویز (Payment Gateways)
+### ادائیگی کے گیٹ ویز (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite متعدد ادائیگی کے گیٹ ویز کو سپورٹ کرتا ہے۔ آپ ہر ایک کو Payment settings ٹیب سے آن کر سکتے ہیں اور ترتیب دے سکتے ہیں۔
 
@@ -40,11 +40,11 @@ Ultimate Multisite متعدد ادائیگی کے گیٹ ویز کو سپورٹ 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### سੈਂڈ باکس موڈ (Sandbox Mode)
+### سੈਂڈ باکس موڈ (Sandbox Mode) {#sandbox-mode}
 
 آپ اپنے ادائیگی کے انٹیگریشن کو لائیو کرنے سے پہلے ٹیسٹ کرنے کے لیے **Sandbox Mode** آن کر سکتے ہیں۔ جب سੈਂڈ باکس موڈ فعال ہوتا ہے، تو کوئی حقیقی چارجز نہیں کیے جاتے ہیں۔
 
-## ادائیگیوں کو دیکھنا
+## ادائیگیوں کو دیکھنا {#viewing-payments}
 
 اپنے نیٹ ورک میں ہونے والے تمام لین دین دیکھنے کے لیے Ultimate Multisite کے تحت **Payments** پیج پر جائیں۔
 
@@ -54,7 +54,7 @@ Ultimate Multisite متعدد ادائیگی کے گیٹ ویز کو سپورٹ 
 
 پیمنٹ پر کلک کریں تا اس کی مکمل تفصیلات دیکھ سکیں جن میں لائن آئٹمز، متعلقہ ممبرشپ، کسٹمر کی معلومات اور پیمنٹ گیٹ وے ڈیٹا شامل ہوتا ہے۔
 
-## انوائسز (Invoices)
+## انوائسز (Invoices) {#invoices}
 
 Ultimate Multisite آپ کے پیمنٹس کے لیے خود بخود انوائسز بنا سکتا ہے۔ آپ پیمنٹ سیٹنگز سے انوائس ٹیمپلیٹ اور نمبرنگ فارمیٹ کو اپنی مرضی کے مطابق بنا سکتے ہیں۔
 

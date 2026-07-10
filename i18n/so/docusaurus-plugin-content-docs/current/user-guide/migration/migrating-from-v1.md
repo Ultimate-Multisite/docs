@@ -3,9 +3,9 @@ title: Uunidda ka guurista V1-ka
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Ku-dhafa ka V1-ka u beddelidda
+# Ku-dhafa ka V1-ka u beddelidda {#migrating-from-v1}
 
-## Ultimate Multisite waxay ka guuraysay qoyska soo saarista (releases) ee asalka ah ee 1.x si ay u gudubto qoyska 2.x.
+## Ultimate Multisite waxay ka guuraysay qoyska soo saarista (releases) ee asalka ah ee 1.x si ay u gudubto qoyska 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Nooca Ultimate Multisite 2.0 iyo kuwa ka dambeeya waa dib u qorista buuxda oo code-ka, taasoo macnaheedu yahay in la isku xirna wax badan oo ka jira nooca hore iyo kan cusub. Sababtan, marka aad ka gudbaysid 1.x ilaa 2.x, macluumaadkaaga (data) waa inaad u beddeshaa qaab uu noocan cusubka fahmi karo.
 
@@ -15,7 +15,7 @@ Casharkan wuxuu ka hadlayaa sida uu u shaqeeyo migrator-ka, waxa aad samaynaysaa
 
 _**MUHIIM: Intaadan bilaabin upgrading-ga nooca 1.x ilaa nooca 2.0, fadlan hubi inaad samayso backup (nooc lahayd) database-ka website-kaaga**_
 
-## Tallaabooyinka hore
+## Tallaabooyinka hore {#first-steps}
 
 Tallaabada ugu horreysa waa in aad soo dejisid faylka .zip ee plugin-ka oo aad ku installay nooca 2.0 dashboard-ka maamulka shirkaddaada (network admin dashboard).
 
@@ -49,19 +49,19 @@ Marka aad ku qorto furahaaga, riix **Agree & Activate** (Aqbal oo Fuligo).
 
 Ka dib markii la fuliyo lisansiga, waxaad bilaabi kartaa install-ka dhabta ah adigoo riixaya **Install** (Install) bogga xigta. Tani waxay si toos ah u samayn doontaa faylasha iyo database-ka loo baahan yahay version 2.0 si ay shaqeeyaan.
 
-## Hadda, wareejinta (Migration)
+## Hadda, wareejinta (Migration) {#now-the-migration}
 
 Migrator-ku wuxuu leeyahay hab ammaan ah oo uu hubiyo dhammaan multisite-kaaga Ultimate Multisite si uu u hubiyo in dhammaan xogtaada ay ku laaban karaan iyadoo aan wax dhibaato ah ka dhalan. Si aad u bilaaw nidaamka, riix badhanka **Run Check**.
 
 Marka aad samayso hubinta, waxaa jira laba fursad: natiijadu waxay noqon kartaa **iyadoo la'aansan** ama **iyadoo la'aan qalad (without an error)**.
 
-### Iyadoo la'aan qalad (With Error)
+### Iyadoo la'aan qalad (With Error) {#with-error}
 
 Haddii aad hesho fariin qalad ah, waxaad u baahan tahay inaad la xiriirto kooxda taageerada (support team) si ay ku caawiyaan hagaajinta qaladka. Hubi inaad **bixisid log-ga qaladka** marka aad samaynayso ticket. Waxaad soo dejin kartaa log-ga ama waxaad riixin kartaa xiriirka ah ee sheegaya "contact our support team". Wuxuu furayaa widget-ka caawinta (help widget) dhinaca midig ee boggaaga, kaas oo si diyaar ah ugu buuxin doona meelaha ay ku jiraan log-yada qaladka.
 
 _**Maadaama nidaamku uu helay qalad, ma heli kartid in aad u sii socoto wareejinta (migrate) version 2.0. Markaas waxaad dib u soo celin kartaa version 1.x si aad dib ugu bilaaw shaqaynta shabakadahaaga ilaa la hagaajiyo qaladka.**_
 
-### Iyadoo la'aan qalad (Without Error)
+### Iyadoo la'aan qalad (Without Error) {#without-error}
 
 Haddii nidaamku aanu helin wax qalad ah, waxaad arki doontaa fariin guul leh (success message) iyo badhan **Migrate** oo ku yaalla hoose kaas oo kuu oggolaan doona inaad sii socoto wareejinta. Boggan, waxaa lagu xusuusin doonaa inaad samayso backup-ka database-kaaga ka hor intaadan sii socon, taasoo aan si xoog leh ugu talinayno. Haddii aad horey u lahayd backup, riix **Migrate**.
 

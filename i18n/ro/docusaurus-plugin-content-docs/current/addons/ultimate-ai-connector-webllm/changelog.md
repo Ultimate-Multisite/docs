@@ -3,9 +3,9 @@ title: Ultimate AI Connector pentru WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector pentru WebLLM Jurnal de Modificări
+# Ultimate AI Connector pentru WebLLM Jurnal de Modificări {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versiunea 1.1.0 — Lansată pe 2026-04-09
+## Versiunea 1.1.0 — Lansată pe 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * **Noutate:** Widget de chat plutitor cu indicator de stare în bara de administrare — orice utilizator autentificat poate trimite un prompt către LLM-ul de pe browser direct de pe partea de față (front end).
 * **Noutate:** Runtime SharedWorker — motorul MLC rulează acum într-un SharedWorker, astfel încât mai multe tab-uri să folosească aceeași sesiune GPU, în loc să se luptă pentru ea.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **Corecție:** Acoplingerea WebLLM la filtrul `wpai_preferred_text_models` pentru ca funcția AI Experiments să ruteze către motorul browserului atunci când un model este configurat.
 * **Îmbunătățit:** Corecții de *cache-busting*, normalizare conținut și referințe hardware, descoperite în timpul testării de la capăt la capăt.
 
-## Versiunea 1.0.0 — Lansare inițială
+## Versiunea 1.0.0 — Lansare inițială {#version-100--initial-release}

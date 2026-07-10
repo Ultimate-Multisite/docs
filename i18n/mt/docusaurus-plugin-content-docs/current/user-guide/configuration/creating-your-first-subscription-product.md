@@ -3,13 +3,13 @@ title: Għmli l-primuna tiegħek prodotta ta sħubba
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kemmis l-Prodotto Abonament Ewlewwel (v2)
+# Kemmis l-Prodotto Abonament Ewlewwel (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTA IMPORTANTI: Dan questa l-artikolu hija għall-utenti b'versjoni 2.x ta Ultimate Multisite. Jekk qed tista' użaw b'versjoni 1.x,**_ **_ħtieġ tkun qed użaw dan l-artikolu**_**.
 
 Biex tibda tgħmli l-network tiegħek jifmu u tibda tiffaċċja is-servizzi tagħdak għall-utenti potenzjali, għandek opzioni abonament differenti. Come tgħmli dan il-prodotti? Mamm huma l-tipijiet ta prodotti li tista' toffri? F'dan l-artikolu, nġġib kollha l-informazzjoni li għandek تعرف dwar il-prodotti.
 
-## Tip tal-Prodotto
+## Tip tal-Prodotto {#product-type}
 
 Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet tagħhom: **plans** u **add-ons (Order Bump)**. L-add-ons tista' jitqsegwuna f 'tipijiet': **packages** u **services**. Nnaqsbux il-differenzi u l-partikolaritajiet tagħhom fil-qed.
 
@@ -19,7 +19,7 @@ Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet 
 
   * **Services**: Add-ons li ma jaffettwawx l-funzjonalità ta Ultimate Multisite. Hum it-taskijiet li tista' tgħmli lil kliemiet tiegħek għal għaddar mill-plan li qed tista'. Biex t-tqiegħed, il-customer tiegħek tista' jixgħel plan li jippoġġi sito waħda u jippagja għal servizio ekstra li jiddisegna dan is-sito.
 
-## Iżgura tal-Prodotti
+## Iżgura tal-Prodotti {#managing-products}
 
 للكثيرين، يمكن مقارنة علامة التبويب **Products** في Ultimate Multisite **(Ultimate Multisite > Products)** مع الخطط (plans) في بيئة استضافة تقليدية.
 
@@ -29,7 +29,7 @@ Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet 
 
 ![Products list page](/img/config/products-list.png)
 
-## إضافة منتجات (Adding Products)
+## إضافة منتجات (Adding Products) {#adding-products}
 
 سواء كان الخطة أو الحزمة أو الخدمة هي نقطة البداية لتحديد عنصر جديد، فذلك يتم عبر **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet 
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### الوصف (Description)
+### الوصف (Description) {#description}
 
 يمكن تحديد معلومات المنتج الأساسية عن طريق إدخال اسم المنتج ووصفه. يتم عرض هذه المعرفات في أي مكان يتطلب معلومات المنتج مثل اختيار الخطة والتسعير، والفواتير، والترقيات، وما إلى ذلك.
 
 ![Product description section](/img/config/product-description.png)
 
-### نوع التسعير (Pricing Type)
+### نوع التسعير (Pricing Type) {#pricing-type}
 
 على الجانب الأيمن من الواجهة، يمكن تحديد التسعير الأساسي.
 
@@ -53,7 +53,7 @@ Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet 
 
 يدعم Ultimate Multisite ثلاثة أنواع مختلفة من التسعير. الخيار **paid** يطلب من مسؤول الشبكة معلومات بخصوص سعر المنتج وتكرار الفوترة (billing frequency).
 
-### التسعير (Pricing)
+### التسعير (Pricing) {#pricing}
 
 مكون السعر يحدد سعر المنتج الأساسي وفترة الفوترة.
 
@@ -61,7 +61,7 @@ Ma' Ultimate Multisite tista' toffri żewġ kategories ta prodotti lil kliemiet 
 
 quddi, l-eżempju prezzu ta $29.99 ma impostazzjoni ta 1 msemmija, bilabbil biex jbillu $29.99 kull msemmija. Fl-mod blaw, prezz ta $89.97 ma jgħanduq qed 3 msemmijiet, bilabbil dak l-ammont kada kwartal.
 
-### Cicli tal-Bill
+### Cicli tal-Bill {#billing-cycles}
 
 Il-sezzjoni tal-Cicli tal-Bill tespella l-frequenza tal-intervall tal-bill menħtieġa u tiffaħħam b'mod ġeneral fil-kontrakti jew termini fixi.
 
@@ -69,7 +69,7 @@ Il-sezzjoni tal-Cicli tal-Bill tespella l-frequenza tal-intervall tal-bill menħ
 
 Bħal it-tostament, prezz ta prodott ta $29.99 ma jgħanduq qed msemmija ta 1 msemmija u 12 cicli tal-bill jbillu $29.99 kull msemmija għall-prodott għal sena li twil. B'mod ākrob, dan l-setting jista' jiffaċċja terminu ta prezz fix ta $29.99 kull msemmija għal 12 msemmijiet u poi jinterru l-bill.
 
-### Perjodu Trial
+### Perjodu Trial {#trial-period}
 
 Attivazzjoni tal-toggle tal-offerta trial tista' tiddifdef il-perjodu trial għall-prodott minn l-administrator ta' la rete.
 
@@ -77,7 +77,7 @@ Attivazzjoni tal-toggle tal-offerta trial tista' tiddifdef il-perjodu trial għa
 
 Intempu perjodu trial, il-klijenti huma aġġuttati biex jgħanduq l-prodott u ma jbillu għalhekk fin ma jintlaq il-perjodu trial.
 
-### Fee ta Setup
+### Fee ta Setup {#setup-fee}
 
 Tista' tqappli skontu ta setup għall-plan tiegħek.
 
@@ -85,20 +85,20 @@ Tista' tqappli skontu ta setup għall-plan tiegħek.
 
 Dan jkun significa li il-klijent tiegħek jbillu importanta quantità fuq l-primier bill (għadd il-prezz tal-plan) li tiffaċċja skontu li definitt għalnu f'dinja.
 
-### Attiv
+### Attiv {#active}
 Il-toggle ta 'Active' definix kif jkun disponibbli l-prodott għall-klijenti biex jidħlu għall-new sign-up.
 
 ![Active toggle](/img/config/product-active.png)
 
 אם għandhom kliemti esistenti fuq dan il-plan, impostare il toggle b'stato di disabilitat jgħin effettivamente li tixgħel il-plan u tiġi eliminati minn is-sigħba futuri. **Il-kliemti esistenti fuq il-plan jinettilju wkoll** fin ma jiġu trassiti għal plan ġdid jew jiġu eliminati mill-plan.
 
-### Immagine tal-Produk
+### Immagine tal-Produk {#product-image}
 
 Il-button **Upload Image** jippermetta lill-administrator ta la rete u jista' jsegwja o jgħallma immaġini tal-produku minn il-media library.
 
 ![Product image section](/img/config/product-image.png)
 
-### Elimina
+### Elimina {#delete}
 
 Il-button **Delete Product** jelimina il-produku mill-sistema. Juri se l-produku jkun pubbliku.
 
@@ -106,11 +106,11 @@ Il-button **Delete Product** jelimina il-produku mill-sistema. Juri se l-produku
 
 Bħal li fil-eliminazzjonijiet oħra, il-produku ma jiġix posa f'stato tal-trash. Għalhe, min jiddeletx l-azione hija irreversibbli waqt li tidddelet.
 
-### Opzjonijiet tal-Produk
+### Opzjonijiet tal-Produk {#product-options}
 
 Wara li jkun definit informazzjoni b'livell bbażi tal-produku, il-opzjonijiet tal-produku jgħinu lill-administrator ta la rete biex jiddefini aktar atributi speċifi tal-produku.
 
-#### Generali
+#### Generali {#general}
 
 Il-tab **General** jiddefinisxi l-atributi generali tal-produku li ma jkunx applikabbli għal xogħol o tab speċifi oħra tal-produku.
 
@@ -124,7 +124,7 @@ Il-**Customer Role** jiddefinisxi l-ruolo li jkun attwalizzati għall-kliemti me
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Upgrade & Downgrades
+#### Upgrade & Downgrades {#up--downgrades}
 
 Dan tab huwa li definixxi l-trajecti ta upgrade u downgrade li jiduni lil customer f'tier speċifiku tiegħu.
 
@@ -142,7 +142,7 @@ Biex tiddifini plan group, ispeċifika dan t-planji kompatibbli f'lista **plan g
 
 Ultimate Multisite jinkludi wkoll il-feature ta **order bump**, li f'postappropriat, prodotti u servizzi aggiemiet (add-on) jistgħu jiġu aḍiddat lil planji. Dan jofferta lil isseħħi bħala item aggiemiet li jistgħu jiġu aḍiddat lil planji fl-checkout jew klabbiex għall upgrade.
 
-#### Price Variations
+#### Price Variations {#price-variations}
 
 Itiġib il varijaturi tal-preċu jagħti lil amministratur ta' reġistrazzjoni l-possibilità ta li jipprogramma livelli preċużi alternativi dwar id-durata. Dan is-setting jippassiva l-possibbiltà li jkun offriti periodi tal-fatturament monthly, quarterly, annuali, jew qualsess waħda oħra għall-istess prodotto. Biex t-tħalli, tista' tgħatti prodot tal-preċu $29.99/mleju dwar l-mleju b'opzjoni annwali discounta dwar $249.99/annu.
 
@@ -164,7 +164,7 @@ Biex t-tħalli, jekk il-preċu base tal-prodot tiegħek huwa $29.99 per mleju, t
 Il-varijaturi tal-preċu mhux jgħaddaw toggle jew switch fuq il-checkout tal-frontend. Biex tista' t-ħalli bejn periodi tal-fatturament (meta l-mleju / annwali), għandek li t-addissi l-field **Period Selection** għall-form tal-checkout tiegħek. Applika [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) biex tiġi direttiva step-by-step.
 :::
 
-#### Taxijiet
+#### Taxijiet {#taxes}
 
 Il-tab **Taxes** jidher u jittienha mal-setting tal-taxijiet definit f'**Ultimate Multisite > Settings > Taxes** u, bejn ħaġa aktar, il-tax rates li huma definiti. Biex t-attiva l-taxijiet u t-definixxi tax-rates applikabbli, jekk jogħġbok għandu tipprovdi mill-dokumentazzjoni f **Ultimate Multisite: Settings**.
 
@@ -178,7 +178,7 @@ Il-tab **Taxes** jidher u jittienha mal-setting tal-taxijiet definit f'**Ultimat
 
 כדי לציין שמוצר הוא מוצר חייב במס, הגדירו את המתג **Is Taxable** להיות פעיל ובחרו את שיעור המס הרלוונטי מתוך התפריט הנפתח של קטגוריית המס (Tax Category).
 
-#### תבניות אתר (Site Templates)
+#### תבניות אתר (Site Templates) {#site-templates}
 
 במהותן, תבניות אתר הן אתרי WordPress שלמים שמועתקים לאתר של הלקוח בתחילת המנוי שלו.
 
@@ -200,7 +200,7 @@ F'aħħar, **C** **Choose Available Site Templates** (Iżżir Template Tal-Site 
 
 F'aħħar, jekk l-administrator tal-network jittieni li selezzjoni template tipprovdi fil-stepijiet tal-checkout, is-setting ta '_default_' huwa suffiċiente. Alternattiv biex elimini u tikkli l-selezzjoni tal-template u tgħallis il-selezzjoni għall-settings tal-plan, l-opzioni '_assign new template_' jew '_choose available site templates_' jista' jkunu merita.
 
-#### Sites (Siti)
+#### Sites (Siti) {#sites}
 
 L-tab **Sites** (Siti) hija parte minn funksjonalità limitazzjoni ta Ultimate Multisite.
 
@@ -210,7 +210,7 @@ Dan is-setting jiddefinisxi l-num massimu tal-siti li l-customer jistax jieħu f
 
 Biex tivveglah il-limitazzjoni, setta l-toggle **limit sites** (limit siti) għall-stato attiv tiegħu u speċifika l-num massimu tal-siti fil-field **site allowance** (permess siti).
 
-#### Visits (Visite)
+#### Visits (Visite) {#visits}
 
 L-tab **Visits** (Visite) hija parte oħra minn sistema limitazzjoni ta Ultimate Multisite. Dan is-setting jippermettix l-kontabbju u il-throttling tal-unique visitors għas-siti tal-customer.
 
@@ -222,7 +222,7 @@ Biex tutilizzaw dan feature, setzu l-toggle **limit unique visits** għall-stato
 
 Mda jintilqu dan limit, Ultimate Multisite se tiffid isserva l-site tal-klijent invece ta li tispariċi missaġġ li jgħid li l-limit huwa superat.
 
-#### Users
+#### Users {#users}
 
 Il-limitazzjonijiet tal-Ultimate Multisite 'Users' jagħmlu lill-administrator tal-network biex japplika limitazzjonijiet fuq il-num ta utenti li jistgħu jiġu creati u giċċifikati għal ruoli.
 
@@ -232,7 +232,7 @@ Biex tivveglio l-feature tal-limitazzjoni, setzu l-toggle **limit user** għall-
 
 Mentre li jkun għal kada ruolo li jgħandu limitat, setzu l-toggle qabel tiegħu għall-stato attivi u definix il-limit massimu f'il-field appropriat.
 
-#### Post Types
+#### Post Types {#post-types}
 
 Il-tab **Post Types** jagħmlu lill-administrator tal-network biex japplika limitazzjonijiet granulari fuq l-array estensiv ta post types f WordPress.
 
@@ -244,7 +244,7 @@ Biex tivveglio dan subsystem tal-limitazzjoni, setzu l-toggle **limit post types
 
 הבא, עבור כל סוג פוסט שברצונך להגביל, הפעל אותו על ידי גרירה ימינה והגדרת המקסימום העליון בשדה המתאים.
 
-#### מרחב דיסק (Disk Space)
+#### מרחב דיסק (Disk Space) {#disk-space}
 
 ללשונית **Disk Space** מאפשרים למנהלי רשת להגביל את המרחב שמשתמשים צורכים.
 
@@ -256,13 +256,13 @@ Biex tivveglio dan subsystem tal-limitazzjoni, setzu l-toggle **limit post types
 
 לאחר מכן, ציין את המקסימום העליון במגה-בייטים בשדה **disk space allowance**.
 
-#### דומיין מותאם אישית (Custom Domain)
+#### דומיין מותאם אישית (Custom Domain) {#custom-domain}
 
 על ידי הפעלת אפשרות זו, תוכל לאפשר דומיינים מותאמים אישית רק עבור תוכנית זו.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### תבניות (Themes)
+#### תבניות (Themes) {#themes}
 
 ללשונית **Themes** בתוך אפשרויות המוצר, מאפשר למנהל הרשת להפוך את התבניות לזמינות עבור לקוחות לבחירה ולכפות באופן אופציונלי את מצב התבנית.
 
@@ -280,7 +280,7 @@ _**הערה: כדי שתוכלו להיות זמינים עבור הלקוחות
 
 F'stato **A** **Disponibbli**, il tema è disponibile per l'attivazione autonoma da parte tal-neħħu. Kontra, lo stato **Mani Disponibbli** elimina dal neħħu l-possibilità ta attivaw il tema. L-terz, l-opzione **Forza Attiva** tqas il selezzjoni u l-attivazzjoni tal-tema, sabiex jista' definita come default fl-istruttura tal-sito meta l-kunsillta.
 
-#### Plugins
+#### Plugins {#plugins}
 
 F'modu mhux differenti mill-tab tal-Themes, Ultimate Multisite jippermettix lil l-administrator ta la rete definix l-visibilità tal-plugins għall il-kunsillti u l-stato tagħhom meta jitcrea un sito جديد.
 
@@ -300,7 +300,7 @@ Il-setting **Force Activate & Lock** jopera bmodli, iżda impedisce li attwali t
 
 Il-administrator tal-network jista' isir b'ħsieb li jħtieġu ssegwix il-setting Force Activate & Lock u Force Inactivate & Lock fitta mal-template tal-site bħala plugin, u l-stato tal-plugin f-fitta tiddarba minn dan is-setting jekk jiġi selezzjonat.
 
-#### Reset Limitations
+#### Reset Limitations {#reset-limitations}
 
 L-tab **Reset Limitations** tiffaċċja (resetta) kull limitazzjoni kustom definita fuq il-prodott. Għal resetta tal-limitazzjonijiet, għalfej l-botton **reset limitations**.
 
@@ -310,7 +310,7 @@ Għal konferma tal-azione, ssegwi (slide) il toggle **confirm reset** għall-sta
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Edit, Duplicate, or Delete Product
+## Edit, Duplicate, or Delete Product {#edit-duplicate-or-delete-product}
 
 Il-prodotti esistenti jistgħu jiġu emendati (edit), duplikat (duplicate) jew mal-delettu minn navigazzjoni għal **Ultimate Multisite > Products** u hover fuq ism il-prodott esistenti.
 

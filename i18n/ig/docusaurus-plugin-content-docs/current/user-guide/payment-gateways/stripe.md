@@ -3,19 +3,19 @@ title: Nkwado Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ndem Nkwado Stripe Gateway (v2)
+# Ndem Nkwado Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
 Bạn có thể bật tới bốn phương thức thanh toán trên trang cài đặt thanh toán của chúng tôi: Stripe, Stripe Checkout, PayPal và Thủ công. Trong bài viết này, chúng ta sẽ xem cách tích hợp với **Stripe**.
 
-## Bật Stripe
+## Bật Stripe {#enabling-stripe}
 
 Để bật Stripe làm cổng thanh toán có sẵn trên mạng của bạn, hãy vào **Ultimate Multisite > Settings > Payments** và đánh dấu vào nút chuyển đổi bên cạnh **Stripe** hoặc **Stripe Checkout** trong phần Active Payment Gateways.
 
 ![Bật Stripe trong các cổng thanh toán đang hoạt động](/img/config/settings-payment-gateways.png)
 
-### Stripe so với Stripe Checkout:
+### Stripe so với Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Phương thức này sẽ hiển thị một chỗ để bạn nhập số thẻ tín dụng trong quá trình thanh toán.
 
@@ -47,7 +47,7 @@ Kopi giá trị n'ụ **Publishable key** na **Secret key**, na ndụ column **T
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Ịgbanwe Stripe Webhook
+## Ịgbanwe Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe ga nwere webhook events nke na-akwụsị Ultimate Multisite ọ bụrụ na ebe ihe ọ bụla na **account stripe** ha na-eme.
 

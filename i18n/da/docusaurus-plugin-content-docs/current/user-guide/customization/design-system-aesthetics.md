@@ -3,11 +3,11 @@ title: Designsystem Æstetik færdighed
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Æstetik Færdighed
+# Design System Æstetik Færdighed {#design-system-aesthetics-skill}
 
 **Design System Æstetik færdigheden** er en vejledt tilgang til at finpudse dit sites visuelle identitet. Den hjælper dig med at træffe konsistente beslutninger om typografi, farver, afstanden og motion tokens, som definerer dit design system.
 
-## Hvad er Design System Æstetik?
+## Hvad er Design System Æstetik? {#what-is-design-system-aesthetics}
 
 Design System Æstetik er en struktureret færdighed, der dækker:
 
@@ -20,9 +20,9 @@ Design System Æstetik er en struktureret færdighed, der dækker:
 
 Disse beslutninger fanges i din themes `theme.json` fil, hvilket skaber et sammenhængende visuelt system.
 
-## Hvorfor bruge Design System Æstetik?
+## Hvorfor bruge Design System Æstetik? {#why-use-design-system-aesthetics}
 
-### Konsistens
+### Konsistens {#consistency}
 
 Et design system sikrer:
 
@@ -31,7 +31,7 @@ Et design system sikrer:
 - At afstanden følger et forudsigeligt mønster
 - At animationer føles samlede
 
-### Effektivitet
+### Effektivitet {#efficiency}
 
 I stedet for at træffe designbeslutninger side for side, gør du:
 
@@ -39,7 +39,7 @@ I stedet for at træffe designbeslutninger side for side, gør du:
 - Anvend dem overalt
 - Opdater globalt ved blot at ændre én værdi
 
-### Fleksibilitet
+### Fleksibilitet {#flexibility}
 
 Du kan:
 
@@ -47,9 +47,9 @@ Du kan:
 - Eksperimentere med forskellige æstetikker
 - Bevare brandkonsistens, mens du udvikler dig
 
-## Aktivering af Design System Æstetik Færdigheden
+## Aktivering af Design System Æstetik Færdigheden {#triggering-the-design-system-aesthetics-skill}
 
-### Manuel aktivering
+### Manuel aktivering {#manual-activation}
 
 Du kan starte færdigheden når som helst:
 
@@ -69,7 +69,7 @@ eller
 "Guide me through design system decisions"
 ```
 
-### Automatiske forslag
+### Automatiske forslag {#automatic-suggestions}
 
 Agenter kan foreslå at bruge færdigheden, når du:
 
@@ -78,9 +78,9 @@ Agenter kan foreslå at bruge færdigheden, når du:
 - Vil forbedre den visuelle konsistens
 - Forbereder dig på at lancere dit site
 
-## Designsystemets Æstetikproces
+## Designsystemets Æstetikproces {#the-design-system-aesthetics-process}
 
-### Trin 1: Typografi
+### Trin 1: Typografi {#step-1-typography}
 
 Agenten spørger om dine skrifttypevalg:
 
@@ -110,7 +110,7 @@ Agenten definerer derefter:
 - **Vægtsskala**: Skrifttypevægte (normal, medium, fed osv.)
 - **Linjehøjde**: Afstanden mellem linjerne for læsbarhed
 
-### Trin 2: Farvepalet
+### Trin 2: Farvepalet {#step-2-color-palette}
 
 ```
 Lad os definere din farvepalet.
@@ -158,7 +158,7 @@ Agenten definerer afstands-tokens:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Specifikke værdier for padding, margin, gap
 
-### Trin 4: Grænser og skygger
+### Trin 4: Grænser og skygger {#step-3-spacing}
 
 ```
 Visuel dybde og definition:
@@ -181,7 +181,7 @@ Agenten opretter:
 - Skygge tokens til elevationsniveauer
 - Border bredde tokens
 
-### Trin 5: Bevægelse og animation
+### Trin 5: Bevægelse og animation {#step-4-borders-and-shadows}
 
 ```
 Hvordan skal din side føles, når den er interaktiv?
@@ -203,9 +203,9 @@ Agenten definerer:
 - Easing funktioner (ease-in, ease-out, ease-in-out)
 - Animationskeyframes til almindelige interaktioner
 
-## Anvendelse af Designsystem Æstetik
+## Anvendelse af Designsystem Æstetik {#step-5-motion-and-animation}
 
-### Automatisk anvendelse
+### Automatisk anvendelse {#applying-design-system-aesthetics}
 
 Når du har fuldført færdigheden, vil agenten:
 
@@ -214,13 +214,13 @@ Når du har fuldført færdigheden, vil agenten:
 3. Genoprette blokstile for at matche det nye system
 4. Aktivere den opdaterede theme
 
-### Manuel anvendelse
+### Manuel anvendelse {#automatic-application}
 
 Du kan også redigere `theme.json` direkte:
 
-## Se din designsystemet
+## Se din designsystemet {#manual-application}
 
-### Spørg agenten
+### Spørg agenten {#viewing-your-design-system}
 
 ```
 "Vis mig mit designsystem"
@@ -234,13 +234,13 @@ eller
 
 Agenten vil vise dine typografi, farver, afstanden og andre tokens.
 
-### Vis theme.json
+### Vis theme.json {#ask-the-agent}
 
 Åbn `/wp-content/themes/[theme-name]/theme.json` i en tekstredigerer for at se de rå token-definitioner.
 
-## Opdater dit designsystem
+## Opdater dit designsystem {#view-themejson}
 
-### Hurtige opdateringer
+### Hurtige opdateringer {#updating-your-design-system}
 
 Bed agenten om specifikke ændringer:
 
@@ -260,7 +260,7 @@ eller
 "Skift overskriftsfont til en serif"
 ```
 
-### Fuldt redesign
+### Fuldt redesign {#quick-updates}
 
 Kør Design System Aesthetics færdigheden igen:
 
@@ -270,7 +270,7 @@ Kør Design System Aesthetics færdigheden igen:
 
 Dette vil guide dig igennem alle beslutninger igen, startende med dine nuværende værdier.
 
-### Delvise opdateringer
+### Delvise opdateringer {#full-redesign}
 
 Opdater specifikke aspekter:
 
@@ -278,15 +278,15 @@ Opdater specifikke aspekter:
 "Opdater kun farvepaletten, behold resten"
 ```
 
-## Designsystem bedste praksis
+## Designsystem bedste praksis {#partial-updates}
 
-### Konsistens
+### Konsistens {#design-system-best-practices}
 
 - Brug de samme tokens overalt
 - Undgå at lave unikke farver eller størrelser
 - Henvis til tokens i stedet for at indkode værdier direkte
 
-### Navngivning
+### Navngivning {#consistency-1}
 
 Brug klare, semantiske navne:
 
@@ -296,9 +296,9 @@ Brug klare, semantiske navne:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalerbarhed
+### Skalerbarhed {#naming}
 
-### Dokumentation
+### Dokumentation {#scalability}
 
 Dokumentér dit design system:
 
@@ -306,9 +306,9 @@ Dokumentér dit design system:
 - Hvornår du skal bruge hver token
 - Undtagelser og kanttilfælde
 
-## Almindelige Design System Mønstre
+## Almindelige Design System Mønstre {#documentation}
 
-### Moderne Minimalist
+### Moderne Minimalist {#common-design-system-patterns}
 
 - Sans-serif typografi (Inter, Helvetica)
 - Begrænset farvepalet (2-3 farver)
@@ -316,7 +316,7 @@ Dokumentér dit design system:
 - Subtile skygger
 - Glatte, hurtige animationer
 
-### Varm og Venlig
+### Varm og Venlig {#modern-minimalist}
 
 - Blandinger af serif og sans-serif
 - Varm farvepalet (orange, varme gråtoner)
@@ -324,7 +324,7 @@ Dokumentér dit design system:
 - Bløde skygger
 - Legende animationer
 
-### Professionel Virksomhed
+### Professionel Virksomhed {#warm-and-friendly}
 
 - Ren sans-serif (Roboto, Open Sans)
 - Neutral palet med en accentfarve
@@ -332,7 +332,7 @@ Dokumentér dit design system:
 - Minimale skygger
 - Subtile overgange
 
-### Kreativ og Dristig
+### Kreativ og Dristig {#professional-corporate}
 
 - Distinkt typografi
 - Dristig farvepalet
@@ -340,7 +340,7 @@ Dokumentér dit design system:
 - Stærke skygger
 - Bemærkelsesværdige animationer
 
-## Fejlfinding
+## Fejlfinding {#creative-and-bold}
 
 **Mine design system ændringer vises ikke**
 - Ryd din browsercache
@@ -358,7 +358,7 @@ Dokumentér dit design system:
 - Rediger manuelt theme.json til tidligere værdier
 - Kør færdigheden igen med forskellige valg
 
-## Næste Skridt
+## Næste Skridt {#troubleshooting}
 
 Efter at have defineret dit design system:
 

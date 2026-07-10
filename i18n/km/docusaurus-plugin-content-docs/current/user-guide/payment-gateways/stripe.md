@@ -3,19 +3,19 @@ title: ការកំណត់រចនាសម្ព័ន្ធ Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# ការตั้งค่า Stripe Gateway (v2)
+# ការตั้งค่า Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ចំណាំសំខាន់: អត្ថបទនេះសំដៅលើ Ultimate Multisite version 2.x។**_
 
 អ្នកអាចបើកវិធីសាស្ត្របង់ប្រាក់បានរហូតដល់បួនវិធីនៅលើទំព័រការកំណត់នៃការបង់ប្រាក់របស់យើង៖ Stripe, Stripe Checkout, PayPal និងដោយដៃ (Manual)។ នៅក្នុងអត្ថបទនេះ យើងនឹងមើលពីរបៀបភ្ជាប់ជាមួយ **Stripe**។
 
-## ការបើកដំណើរការ Stripe
+## ការបើកដំណើរការ Stripe {#enabling-stripe}
 
 ដើម្បីបើកដំណើរការ Stripe ជាច្រកបង់ប្រាក់ដែលអាចប្រើបាននៅលើបណ្តាញរបស់អ្នក សូមចូលទៅកាន់ **Ultimate Multisite > Settings > Payments** ហើយធីកប៊ូតុង (toggle) នៅជាប់នឹង **Stripe** ឬ **Stripe Checkout** នៅក្នុងផ្នែក Active Payment Gateways។
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe ប៉ះ Stripe Checkout៖
+### Stripe ប៉ះ Stripe Checkout៖ {#stripe-vs-stripe-checkout}
 
 **Stripe:** វិធីសាស្ត្រនេះនឹងបង្ហាញកន្លែងសម្រាប់បញ្ចូលលេខកាតឥណទានក្នុងអំឡុងពេលបង់ប្រាក់។
 
@@ -47,7 +47,7 @@ _**ចំណាំ:** អ្នកអាចបើកដំណើរការ **S
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## ការកំណត់រចនាសម្ព័ន្ធ Stripe Webhook
+## ការកំណត់រចនាសម្ព័ន្ធ Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe ផ្ញើព្រឹត្តិការណ៍ webhook ដែលជូនដំណឹងដល់ Ultimate Multisite រាល់ពេលដែលមានព្រឹត្តិការណ៍កើតឡើងនៅលើ **គណនី stripe** របស់អ្នក។
 

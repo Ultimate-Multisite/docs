@@ -3,11 +3,11 @@ title: Zvinorero Rupa ya Site
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Ndekorera Kufanana NeSite Specification
+# Ndekorera Kufanana NeSite Specification {#site-specification-skill}
 
 **Skill ya Site Specification** ndiyo nzira yakajeka yekubatanidza zvakaita kuti uingane nemakore aino, vanhu vanogona kuenda pano (audience), uye chiri chete chendo chekugadzirisa kwako (brand identity). Ndivo kunoita munzvimbo yenyu **site_brief** memory, inoshandiswa neagents kuti vone zvinhu zvinobatanidza kudzera mazuva ose.
 
-## Site Specification Iyi Chii?
+## Site Specification Iyi Chii? {#what-is-site-specification}
 
 Site Specification ndiyo nzira yekubatanidza:
 
@@ -19,9 +19,9 @@ Site Specification ndiyo nzira yekubatanidza:
 
 Iyi specification inogona kuva **site_brief** yako, memory inoshandiswa neagents kuti vone chiri chete chekugadzirisa kwako.
 
-## Ndiwezvo Kuita Site Specification?
+## Ndiwezvo Kuita Site Specification? {#why-use-site-specification}
 
-### Kuti Zvinobatanidza Mazuva Ose
+### Kuti Zvinobatanidza Mazuva Ose {#consistency-across-sessions}
 
 Usina site_brief, unogona kuingira zvakare kudzokera nguva yakare kuti uingire chiri chete chesite chesite chesite. Neuso, agents vanoziva mufaro:
 
@@ -30,7 +30,7 @@ Usina site_brief, unogona kuingira zvakare kudzokera nguva yakare kuti uingire c
 - Chinhu chinokosha chehupenyu chako
 - Vakore vako vebusiness
 
-### Kuratidza Zvinobatsira
+### Kuratidza Zvinobatsira {#better-recommendations}
 
 Agents vanoshandisa site_brief yako kuti:
 
@@ -39,7 +39,7 @@ Agents vanoshandisa site_brief yako kuti:
 - Vashandise nzira dzekugadzirisa kwakaita kuti zvinobatanidze nemwariro wakako
 - Vave zvinhu zvinogona kuita zvisina kubatanidza
 
-### Kuti Uingire Nguva Yakare
+### Kuti Uingire Nguva Yakare {#faster-onboarding}
 
 Agents vatsviki (agents) (kana agents vakare mazuva ose) vanogona kuingira zvakare nekuita site_brief yako kune kuona zvinhu zvakaita kuti vone zvinhu zvinobatanidza, pane kuita maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura maumu ekuti vave vachida kupfuura
 
@@ -55,9 +55,9 @@ kana
 "Ndinenge kuita site brief"
 ```
 
-## Prosesi weSite Specification
+## Prosesi weSite Specification {#initiating-site-specification}
 
-### Chii 1: Zvinangwa reSite (Site Purpose)
+### Chii 1: Zvinangwa reSite (Site Purpose) {#during-theme-builder-onboarding}
 
 Agent ine kutaura:
 
@@ -73,7 +73,7 @@ Chii chiri chinangwa chesite?
 
 Unogona kutaura category kana kuita chiri chiri.
 
-### Chii 2: Vadzidzi Vanofanira Kuona (Target Audience)
+### Chii 2: Vadzidzi Vanofanira Kuona (Target Audience) {#manual-initiation}
 
 ```
 Vadzidzi vanofanira kuona vana vashandi?
@@ -86,7 +86,7 @@ Vadzidzi vanofanira kuona vana vashandi?
 Ndinenge zvinhu zvinofanira kuona?
 ```
 
-### Chii 3: Mwari weBrand (Brand Identity)
+### Chii 3: Mwari weBrand (Brand Identity) {#the-site-specification-process}
 
 ```
 Mwari weBrand wako unenge?
@@ -102,7 +102,7 @@ Unenge uunoda kuita mwari weBrand wako sei?
 - Warm / friendly (Maviri)
 ```
 
-### Chii 4: Zvinangwa zveBusiness (Business Goals)
+### Chii 4: Zvinangwa zveBusiness (Business Goals) {#step-1-site-purpose}
 
 ```
 Zvinenge zvinhu zvinofanira kuonekwa kuti site yako inenge yakapfura?
@@ -121,7 +121,7 @@ Chii chinenge chiri chiri?
 - Other
 ```
 
-### Chii 5: Mhando yeContent (Content Structure)
+### Chii 5: Mhando yeContent (Content Structure) {#step-2-target-audience}
 
 ```
 Zvinhu zvecontent rine chii?
@@ -140,13 +140,13 @@ Mhando dzinenge dzineita?
 - Other
 ```
 
-## Memory ya site_brief yako
+## Memory ya site_brief yako {#step-3-brand-identity}
 
 Panguva unokura Site Specification, matanho ako anogara mune memory ya agent wako se **site_brief**. Iyi ndiyo rekati rine kuratidza zvinhu izvi:
 
-## Kuona na Kupa Site_brief yako
+## Kuona na Kupa Site_brief yako {#step-4-business-goals}
 
-### Kuona Site_brief yako
+### Kuona Site_brief yako {#step-5-content-structure}
 
 Chiraira kwa agent iunyangana:
 
@@ -162,7 +162,7 @@ kana kana
 
 Agent idzowona zvinotanga specification yako yakaiwe.
 
-### Kupa Update ku Site_brief yako
+### Kupa Update ku Site_brief yako {#your-sitebrief-memory}
 
 Kana site yako inenge kuitorera, unogona kukupa update:
 
@@ -178,9 +178,9 @@ kana kana
 
 Izvi zvinotora upfungwa (skill) ya Site Specification ne zvinhu zvako zvakaita kunge kune kuratidza.
 
-## Agents Inoita Sei Site_brief
+## Agents Inoita Sei Site_brief {#viewing-and-updating-your-sitebrief}
 
-### Zvibvunzo zveDesign
+### Zvibvunzo zveDesign {#view-your-sitebrief}
 
 Kana uri kuenda kuita mhinduro dzeDesign, agents dzichigadzirisa zvinotora site_brief yako:
 
@@ -191,7 +191,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Zvibvunzo zveFeatures
+### Zvibvunzo zveFeatures {#update-your-sitebrief}
 
 Agents dzichigadzirisa features dzinotowana nezvakaita zvako:
 
@@ -202,20 +202,20 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Structure ya Content
+### Structure ya Content {#how-agents-use-sitebrief}
 
 Agents dzichigadzirisa kuratidza content kune structure yako:
 
-## Mfano Yemero (Best Practices)
+## Mfano Yemero (Best Practices) {#design-recommendations}
 
-### Kutaura (Be Specific)
+### Kutaura (Be Specific) {#feature-suggestions}
 
 Nekuti "vito vose" (general audience), ndichida kuti unenge uone munhu wako wechokwadi:
 
 - ✓ "Nomasika vachikuru, vanoda nhasi dzinobata moda yainguva"
 - ✗ "Vose"
 
-### Kuratidza Nekuti (Update Regularly)
+### Kuratidza Nekuti (Update Regularly) {#content-structure}
 
 Kutaurira nguva yakawanda, ndichida kuti ureshe **site_brief** yako:
 
@@ -224,14 +224,14 @@ Kutaurira nguva yakawanda, ndichida kuti ureshe **site_brief** yako:
 - Kana chiri chinobata mupfumo wako (brand identity)
 - Kana zvinoda kubatwa zvakasiyana
 
-### Kuratidza Mufaro Wezvinodiwa (Use Consistent Terminology)
+### Kuratidza Mufaro Wezvinodiwa (Use Consistent Terminology) {#best-practices}
 
 Rendisa zvinhu zvakasiyana nguva dzose:
 
 - ✓ Ndichida kuti ndizivone "sustainable jewelry" (haina "eco-friendly jewelry" uye "green products")
 - ✓ Ndichida kuti ndizivone munhu wako wechokwadi nekuti chiri chinobata.
 
-### Kuratidza Mufaro WeChikoro (Include Context)
+### Kuratidza Mufaro WeChikoro (Include Context) {#be-specific}
 
 Rendisa zvinhu zvinobva kuti agent inoziva zvinhu zvako:
 
@@ -239,7 +239,7 @@ Rendisa zvinhu zvinobva kuti agent inoziva zvinhu zvako:
 - "Munhu wangu anogona kutamba nehutano uye anoda nzira dzinobva"
 - "Tiri startup inosvika, ndichida zvinodiwa zvinhu zvekuita zvinhu zvine vashandi"
 
-## Kuratidza Urimi (Relationship to Theme Builder Onboarding)
+## Kuratidza Urimi (Relationship to Theme Builder Onboarding) {#update-regularly}
 
 Skill ya Site Specification inogona kuenda mumwe muno ne **Theme Builder onboarding flow**. Kana uchishandisa onboarding, **site_brief** yako inozivakirwa nekuti ndiri munhu wako.
 
@@ -258,7 +258,7 @@ Unogona kutaura Site Specification pamwe nekuita izvi kana:
 - Kuratidza Site brief wako kana unenge uine zvinoreva kuti zvinobva dzinotamba (outdated).
 - Pfungwa zvakawanda (additional context) muita zvinhu dzose.
 
-## Zvinhu Zvinotevera (Next Steps)
+## Zvinhu Zvinotevera (Next Steps) {#use-consistent-terminology}
 
 Panguva unenge wakaunganidira Site Specification yako:
 

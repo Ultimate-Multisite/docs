@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Επεκτάσεις Ultimate Multisite
+# Επεκτάσεις Ultimate Multisite {#ultimate-multisite-addons}
 
 Οι επεκτάσεις (Addons) εμπλουτίζουν το Ultimate Multisite με επιπλέον λειτουργίες και ενσωματώσεις. Οι περισσότερες επεκτάσεις είναι επί πληρωμή και μπορούν να αγοραστούν από το [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Εγκατάσταση
+## Εγκατάσταση {#installation}
 
 Οι επεκτάσεις μπορούν να εγκατασταθούν με δύο τρόπους:
 
 1. **Μέσω της Σελίδας Επεκτάσεων** -- Πλοηγηθείτε στη σελίδα διαχείρισης των επεκτάσεων του site σας στο WordPress admin
 2. **Χειροκίνητη Λήψη** -- Κατεβάστε από το [account σας](https://ultimatemultisite.com/my-account/downloads/) και ανεβάστε μέσω Plugins > Add New
 
-## Διαθέσιμες Επεκτάσεις
+## Διαθέσιμες Επεκτάσεις {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

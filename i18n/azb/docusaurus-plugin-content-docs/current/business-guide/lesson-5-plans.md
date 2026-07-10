@@ -3,15 +3,15 @@ title: 'Lesson 5: Plans-ing Your Designs'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Ders 5: Planlarınızı Tasarlamak
+# Ders 5: Planlarınızı Tasarlamak {#lesson-5-designing-your-plans}
 
 Plan katmanlarınız sadece fiyat seviyeleri değil; niş müşterilerinizin gerçekte nasıl çalıştığının bir yansımasıdır. Bu derste, farklı aşamalardaki fitness işletmelerinin gerçek ihtiyaçlarına uygun ürün katmanları tasarlayacaksınız.
 
-## Nereden Başlamıştık
+## Nereden Başlamıştık {#where-we-left-off}
 
 FitSite'ın üç hazır şablonu var (Studio Essential, Gym Pro, Fitness Chain). Şimdi, müşterilerin neye erişebileceğini ve ne ödeyeceğini belirleyen planları oluşturacağız.
 
-## Müşteri Segmentleri Üzerine Düşünmek
+## Müşteri Segmentleri Üzerine Düşünmek {#thinking-in-customer-segments}
 
 Çoğu kişinin yaptığı hata, planları teknik özellikler (depolama, bant genişliği, sayfa sayısı) etrafında tasarlamaktır. Niş müşterileriniz bu terimlerle düşünmez. Bir spor salonu sahibi, işini yürütebilmek için neye ihtiyacı olduğunu düşünür.
 
@@ -25,11 +25,11 @@ Fitness stüdyoları için üç doğal segment var:
 
 Planlarınız, keyfi özellik paketlerine değil, bu segmentlere göre haritalanmalıdır.
 
-## FitSite Planlarını Oluşturma
+## FitSite Planlarını Oluşturma {#creating-the-fitsite-plans}
 
 Her plan için **Ultimate Multisite > Products > Add Product** yolunu izleyin.
 
-### Plan 1: FitSite Starter -- Aylık $49
+### Plan 1: FitSite Starter -- Aylık $49 {#plan-1-fitsite-starter----49month}
 
 **Hedef**: Solo eğitmenler ve küçük stüdyolar
 
@@ -59,7 +59,7 @@ Her plan için **Ultimate Multisite > Products > Add Product** yolunu izleyin.
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- Aylık $99
+### Plan 2: FitSite Growth -- Aylık $99 {#plan-2-fitsite-growth----99month}
 
 **Hedef**: Kurulmuş tek lokasyonlu spor salonları
 
@@ -85,7 +85,7 @@ Her plan için **Ultimate Multisite > Products > Add Product** yolunu izleyin.
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- Aylık $199
+### Plan 3: FitSite Pro -- Aylık $199 {#plan-3-fitsite-pro----199month}
 
 **Hedef**: Çok lokasyonlu fitness zincirleri
 
@@ -109,7 +109,7 @@ Her plan için **Ultimate Multisite > Products > Add Product** yolunu izleyin.
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Plan Grubunu Kurma
+## Plan Grubunu Kurma {#setting-up-the-plan-group}
 
 Plan grubu, müşterilerin yalnızca FitSite plan ailesi içinde yükseltme veya düşürme yapmasını sağlar. Her planın **Up & Downgrades** sekmesinde:
 
@@ -118,7 +118,7 @@ Plan grubu, müşterilerin yalnızca FitSite plan ailesi içinde yükseltme veya
 
 Bu, net bir yükseltme yolu oluşturur: Starter → Growth → Pro.
 
-## Order Bump Ekleme
+## Order Bump Ekleme {#adding-order-bumps}
 
 Order bump'lar, ödeme sırasında sunulan ek ürünlerdir. FitSite için şunları düşünebilirsiniz:
 
@@ -128,7 +128,7 @@ Order bump'lar, ödeme sırasında sunulan ek ürünlerdir. FitSite için şunla
 
 Bunları Ultimate Multisite'ta **Package** tipi ürünler olarak oluşturun ve ilgili planlarla ilişkilendirin.
 
-## Bu Yapı Neden İşe Yarıyor
+## Bu Yapı Neden İşe Yarıyor {#why-this-structure-works}
 
 - **Starter**, giriş engellerini kaldırır -- düşük fiyat, basit teklif, eğitmenleri hızla çevrimiçi yapar
 - **Growth**, spor salonlarının gerçekten sorduğu özellikleri ekler -- rezervasyon, galeriler, özel alan adları
@@ -136,7 +136,7 @@ Bunları Ultimate Multisite'ta **Package** tipi ürünler olarak oluşturun ve i
 - **Order bump'lar**, müşterilerin temel planları karmaşıklaştırmadan özelleştirmesine izin verir
 - **Net yükseltme yolu**, müşterilerin ayrılmak yerine sizinle birlikte büyümesini sağlar
 
-## Şu Ana Kadar FitSite Ağı
+## Şu Ana Kadar FitSite Ağı {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Bu Derste Neler Yaptık
+## Bu Derste Neler Yaptık {#what-we-built-this-lesson}
 
 - Gerçek fitness iş segmentlerine eşlenmiş **üç plan katmanı**
 - Ultimate Multisite'ın plugin ve şablon kontrolleri kullanılarak **özellik kısıtlaması**

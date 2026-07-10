@@ -3,7 +3,7 @@ title: Aaforderungsformular
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms sind eifach und flexibel, um mit verschiedene Aasätz z'experimentiere, wenn mer nöi Chunde konversiere wott.
 
@@ -36,13 +36,13 @@ Alternativ chönntet Sie d'Formular, wo Sie scho händ, bearbeite oder duplizier
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Überblick über de Checkout Form Editor
+#### Überblick über de Checkout Form Editor {#checkout-form-editor-overview}
 
 De Checkout Form Editor bietet e umfassendi Oberfläche, um Ihre Registrierigsformular z'baue. Do isch en Überblick über d'Layout vom Editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### E Checkout Form bearbeite
+### E Checkout Form bearbeite {#editing-a-checkout-form}
 
 Sie chönd Checkout Forms für verschideni Zwecke erstelle. In däm Bischpil wärde mir a ere Registrierigsformular schaffe.
 
@@ -112,7 +112,7 @@ Om de shortcode van je form te krijgen, klik op Generate Shortcode en kopieer he
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Het Pricing Table veld
+### Het Pricing Table veld {#the-pricing-table-field}
 
 Het **Pricing Table** veld toont je producten op de checkout form zodat klanten een plan kunnen kiezen. Wanneer je dit veld bewerkt, kun je verschillende opties instellen:
 
@@ -130,17 +130,17 @@ Hier is hoe het pricing table eruitziet op het frontend registratieformulier:
 
 Als je een product toevoegt aan het Pricing Table voordat het formulier de velden bevat die nodig zijn om dat product's checkout-flow af te ronden, toont de editor nu een waarschuwing. Gebruik deze waarschuwing om het ontbrekende vereiste veld toe te voegen voordat je wijzigingen publiceert of opslaat voor een live registratieformulier.
 
-### Hinzufüeg vo ere Periodeuswahl-Umschalter
+### Hinzufüeg vo ere Periodeuswahl-Umschalter {#adding-a-period-selection-toggle}
 
 Wenn Sie [Price Variations](creating-your-first-subscription-product#price-variations) uf Ihre Produkt konfiguriert händ (zum Bischpil monatlich und jährlichi Priise), chönntet Sie es **Period Selection** Feld zu Ihrem Checkout Form dezuefüege. Das Feld zeigt en Umschalter a, wo de Chund chann zwüsche de Abrechnigsperiodene wächsle, und d'Priis-Tabelle aktualisiert sich dynamisch in Echtzit.
 
-#### Schritt 1: Priisvariante uf Ihre Produkt iistelle
+#### Schritt 1: Priisvariante uf Ihre Produkt iistelle {#step-1-set-up-price-variations-on-your-products}
 
 Bevor Sie s Period Selection Feld dezuefüege, stell sicher, dass Ihre Produkt mit Priisvariante konfiguriert sind. Geit zu **Ultimate Multisite > Products**, bearbeite es Produkt und navigieret zur Registerkarte **Price Variations**, um alternativi Abrechnigsperiodene dezuefüege (zum Bischpil Jährlich zu eme vergünstigte Priis).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Schritt 2: Period Selection Feld zu Ihrem Checkout Form dezuefüege
+#### Schritt 2: Period Selection Feld zu Ihrem Checkout Form dezuefüege {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Geit zu **Ultimate Multisite > Checkout Forms** und bearbeite Ihren Checkout Form.
 
@@ -163,13 +163,13 @@ Bevor Sie s Period Selection Feld dezuefüege, stell sicher, dass Ihre Produkt m
 
 7. Klicke uf **Save Field**.
 
-#### Schritt 3: Positioniere das Feld über der Preisübersicht
+#### Schritt 3: Positioniere das Feld über der Preisübersicht {#step-3-position-the-field-above-the-pricing-table}
 
 Für die bestmögli Erfahrig söttet Sie sicherstelle, dass das Feld Period Selection vor dem Pricing Table Feld in Ihrem Checkout-Schritt erscheint. Sie chönne Felder per Ziehe und Ablege neu ordne im checkout form editor. So wähle d'Kunde zersch e Abrechnigsperiode us und gsehnd denn de Priise für die Periode.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Wie das uf em Frontend funktioniert
+#### Wie das uf em Frontend funktioniert {#how-it-works-on-the-frontend}
 
 Sobald es konfiguriert isch, werdet d'Kunde, wo uf Ihre Registrierigsseite chömmed, de Period Selector über de Preisübersicht gseh. Wenn sie e anderi Abrechnigsperiode anklicke:
 
@@ -177,7 +177,7 @@ Sobald es konfiguriert isch, werdet d'Kunde, wo uf Ihre Registrierigsseite chöm
   * Wenn **Force Different Durations** uf em Pricing Table Feld deaktiviert isch, werdet Produkt ohni Priisvariation für die gwählti Periode versteckt.
   * Wenn **Force Different Durations** aktiviert isch, bliebed alli Produkt sichtbar, au wenn sie kei Variation für die gwählti Periode händ (sie zeige de Standardpriis).
 
-#### Vorab e Abrechnigsperiode über d'URL wähle
+#### Vorab e Abrechnigsperiode über d'URL wähle {#pre-selecting-a-billing-period-via-url}
 
 Sie chönne au en Produkt und e Abrechnigsperiode über d'URL vorab uswähle. Ultimate Multisite unterstützt die folgende URL-Muster:
 
@@ -185,11 +185,11 @@ Sie chönne au en Produkt und e Abrechnigsperiode über d'URL vorab uswähle. Ul
   * `/register/premium/12` — Wählt s'Produkt und d'12-monetlichi Laufzit vor
   * `/register/premium/1/year` — Wählt s'Produkt mit ere 1-jährige Laufzit vor
 
-### Das Template Selection Feld
+### Das Template Selection Feld {#the-template-selection-field}
 
 Das **Template Selection** Feld erlaubt de Kunde, e Site-Vorlage während em Checkout uszwähle. Es isch jetzt standardmässig in de **single step** und **multi-step** checkout form templates vo Ultimate Multisite v2.6.1 iigfüegt.
 
-#### Das Feld manuell hinzufügen
+#### Das Feld manuell hinzufügen {#adding-the-field-manually}
 
 Wenn Sie mit eme Form schaffed, wo vor v2.6.1 erstellt worde isch, oder vo eme leere Template aafange händ:
 
@@ -200,11 +200,11 @@ Wenn Sie mit eme Form schaffed, wo vor v2.6.1 erstellt worde isch, oder vo eme l
    - **Label** — D'Überschrift, wo d'Kunde über em Template-Grid gsehnd (z.B. "Wähle es Site-Template").
    - **Required** — Ob d'Kunde es Template müend wähle, bevor sie wiiter chönd.
 
-#### Wie funktioniert das?
+#### Wie funktioniert das? {#how-it-works}
 
 Wenn en Kunde während em Checkout es Template wählt, brucht Ultimate Multisite s'für sini neui Site bi de Bereitstellig. D'Templates, wo do gzeigt wärde, chömmed us dinere Liste vo **Site Templates** (**Ultimate Multisite > Site Templates**). Nur d'Templates, wo als verfügbar für Kunde markiert sind, erscheine do.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 behandelt Domains, wo im Feld **Site URL** vom Checkout Form konfiguriert sind, als Netzwerk-Base-Domains. Bruche d'Einstellungen vo de verfügbare Domain vom Feld, wenn du wetsch, dass d'Kunde Site unter einere oder meh gemeinsame Registrierigsdomains erstellt, wie zum Biispil `example.com` und `sites.example.com`.
 
@@ -212,6 +212,6 @@ Gemeinsami Checkout-form base domains werded nöd als per-Site benutzerdefiniert
 
 Halt benutzerdefinierti Domains für per-Kunde mappti Hosts, wie zum Biispil `customer-example.com`. Halt Checkout-form base domains für gemeinsami Registrierigs-Hosts, wo vill Sites bruche chönd.
 
-#### Das Feld entfernen
+#### Das Feld entfernen {#removing-the-field}
 
 Wenn Sie kei Website-Vorlagen anbieten, entfernen Sie das Feld „Template Selection“ aus Ihrem Formular. Die Kunden erhalten dann die Standardvorlage, die unter **Ultimate Multisite > Settings > Site Templates** konfiguriert ist.

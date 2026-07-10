@@ -3,11 +3,11 @@ title: Yêu cầu
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Yêu cầu hệ thống cho Ultimate Multisite
+# Yêu cầu hệ thống cho Ultimate Multisite {#ultimate-multisite-requirements}
 
 Điều đầu tiên bạn có thể tự hỏi trước khi mua Ultimate Multisite là plugin của chúng tôi cần những yêu cầu gì để hoạt động. May mắn thay, chỉ có một vài yêu cầu cơ bản để chạy Ultimate Multisite: một **tên miền**, một **nhà cung cấp hosting** tốt và một bản cài đặt WordPress **Multisite**. Đó là tất cả những gì bạn cần!
 
-## Tên miền
+## Tên miền {#domain-name}
 
 Trước tiên, hãy nói về tên miền.
 
@@ -17,7 +17,7 @@ Plugin của chúng tôi cung cấp các dịch vụ đăng ký, thu tiền than
 
 Bất kỳ lĩnh vực nào bạn chọn đều có thể quản lý được bằng plugin của chúng tôi, miễn là bạn bán website như một dịch vụ! Hãy chắc chắn chọn tên miền phù hợp với kế hoạch kinh doanh của bạn.
 
-## Nhà cung cấp Hosting
+## Nhà cung cấp Hosting {#hosting-provider}
 
 Bây giờ bạn đã có một tên miền hấp dẫn đại diện cho lĩnh vực và doanh nghiệp của mình, bạn sẽ cần chọn một công ty web hosting tốt để lưu trữ mạng lưới của bạn với Ultimate Multisite. Có một số lựa chọn tốt trên thị trường. Một số nhà cung cấp hosting tích hợp tốt với Ultimate Multisite, điều này có thể là yếu tố quyết định tùy thuộc vào những gì bạn định xây dựng.
 
@@ -25,7 +25,7 @@ Ultimate Multisite sẽ hoạt động trên bất kỳ nhà cung cấp hosting 
 
 Về thông số kỹ thuật máy chủ, không có công thức cụ thể nào vì nó sẽ phụ thuộc vào các tính năng và chức năng bạn cung cấp cũng như quy mô mạng lưới của bạn. Shared hosting có thể là khởi đầu tốt, nhưng ngay khi mạng lưới của bạn bắt đầu phát triển, bạn có thể sẽ cần một VPS chuyên dụng.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Bây giờ, hãy nói một chút về việc cài đặt WordPress Multisite.
 

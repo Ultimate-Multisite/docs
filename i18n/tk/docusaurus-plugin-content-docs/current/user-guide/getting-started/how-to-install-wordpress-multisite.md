@@ -3,7 +3,7 @@ title: WordPress Multisite nireň nädip kurmak?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-i Nasıl Kurulur?
+# WordPress Multisite-i Nasıl Kurulur? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite, tek bir kurulumda sitelerden oluşan bir ağ oluşturmanıza olanak tanır. Bu, yerleşik bir özelliktir ancak varsayılan olarak aktif değildir.
 
@@ -57,7 +57,7 @@ RewriteEngine On
 RewriteBase /
 RewriteRule ^index.php$ - [L]
 
-# wp-admin'e sonuna eğik çizgi (trailing slash) ekle
+# wp-admin'e sonuna eğik çizgi (trailing slash) ekle {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -90,9 +90,9 @@ Subsite döretmek üçin:
 
 Ulanyjylary doldurandan soň, "Add site" (Site goşmak) düwmenine basyň. Täze subsite döredilip bilende, olu işjeňdir diýip barlamak üçin ony girizip görüň.
 
-## Üýtgeş Problem:
+## Üýtgeş Problem: {#common-problems}
 
-### 1. Täze site döredip bilýärin, ýöne olara girip bilmeýärin.
+### 1. Täze site döredip bilýärin, ýöne olara girip bilmeýärin. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Eger siz subdomainleri saýlaýan bolsaňyz, multisite ulgamyňyz üçin "wildcard" (täkli) subdomainleri hem sozlamagyňyz zerurdyr.
 

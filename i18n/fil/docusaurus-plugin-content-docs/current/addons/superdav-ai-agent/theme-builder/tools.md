@@ -1,255 +1,277 @@
 ---
-title: Mga Kasangkapan at Pag-aayos
+title: Mga Tool at Konfigurasyon
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Mga Tool at Pag-configure
+# Mga Tool at Configuration {#tools-and-configuration}
 
-Gumagamit ang Theme Builder ng isang set ng mga tool para suriin, idisenyo, at buuin ang iyong site sa WordPress. Sa bersyon 1.16.0, **sd-ai-agent/site-scrape ay isa nang Tier 1 tool**, kaya ito ay available by default sa Theme Builder.
+Gumagamit ang Theme Builder ng isang hanay ng mga tool para suriin, idisenyo, at buuin ang iyong WordPress site. Sa bersyon 1.16.0, **sd-ai-agent/site-scrape ay isa na ngayong Tier 1 tool**, kaya available ito bilang default sa Theme Builder. Ipinapakilala rin ng Superdav AI Agent v1.18.0 ang hiwalay na ipinamamahaging Advanced companion package para sa mga pinagkakatiwalaang workflow ng developer; ang mga tool na iyon ay hindi bahagi ng WordPress.org core package at dapat i-install at pahintulutan nang hiwalay.
 
-## Mga Available na Tool
+## Mga Available na Tool {#available-tools}
 
-### Tier 1 Tools (Laging Available)
+### Tier 1 Tools (Laging Available) {#tier-1-tools-always-available}
 
-Ang mga Tier 1 tools ay available by default sa Theme Builder nang walang dagdag na pag-configure.
+Available bilang default ang Tier 1 tools sa Theme Builder nang walang anumang karagdagang configuration.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Layunin:** Suriin ang mga umiiral na website upang kumuha ng inspirasyon sa disenyo, istruktura ng nilalaman, at functionality.
+**Layunin:** Suriin ang mga umiiral na website para kumuha ng inspirasyon sa disenyo, estruktura ng nilalaman, at functionality.
 
-**Kakayahan:**
+**Mga Kakayahan:**
 
-- **Pagsusuri ng Website** — i-scrape at suriin ang mga website ng kakumpitensya o inspirasyon
-- **Pagkuha ng Disenyo** — tukuyin ang mga kulay, font, at pattern ng layout
-- **Istruktura ng Nilalaman** — maunawaan ang pag-oorganisa at hierarchy ng pahina
-- **Pagtukoy ng Feature** — tukuyin ang mga plugin at functionality
-- **Pagsusuri ng Pagganap** — suriin ang bilis ng pahina at optimization
-- **Pagsusuri ng SEO** — suriin ang meta tags at structured data
+- **Pagsusuri ng website** — i-scrape at suriin ang mga website ng kakumpitensya o inspirasyon
+- **Pagkuha ng disenyo** — tukuyin ang mga kulay, font, at pattern ng layout
+- **Estruktura ng nilalaman** — unawain ang organisasyon at hierarchy ng pahina
+- **Pagtukoy ng feature** — tukuyin ang mga plugin at functionality
+- **Pagsusuri ng performance** — suriin ang bilis ng pahina at optimization
+- **Pagsusuri ng SEO** — repasuhin ang mga meta tag at structured data
 
 **Paggamit:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Suriin ang disenyo ng example.com at gamitin ito bilang inspirasyon para sa aking site.
 ```
 
 **Ano ang Kinukuha Nito:**
 
 - Color palette at paggamit ng kulay
-- Typography (fonts at laki)
-- Istruktura ng layout at pagitan (spacing)
-- Pattern ng navigation
-- Pag-oorganisa ng nilalaman
-- Paggamit ng mga imahe at media
-- Interactive elements
+- Typography (mga font at laki)
+- Estruktura ng layout at spacing
+- Mga pattern ng nabigasyon
+- Organisasyon ng nilalaman
+- Paggamit ng mga larawan at media
+- Mga interactive na elemento
 - Mobile responsiveness
 
-**Limitasyon:**
+**Mga Limitasyon:**
 
-- Hindi makaka-scrape ng mga site na may password protection
-- Gumagalang sa robots.txt at mga patakaran ng site
-- Maaaring hindi makuha ang dynamic content
-- Ang mga site na maraming JavaScript ay maaaring may limitadong pagsusuri
-- Ang malalaking site ay maaaring mas matagal suriin
+- Hindi makakapag-scrape ng mga site na protektado ng password
+- Iginagalang ang robots.txt at mga patakaran ng site
+- Maaaring hindi makuha ang dynamic na nilalaman
+- Maaaring limitado ang pagsusuri sa mga site na mabigat sa JavaScript
+- Maaaring mas matagal suriin ang malalaking site
 
-### Tier 2 Tools (Opsyonal)
+### Tier 2 Tools (Opsyonal) {#tier-2-tools-optional}
 
-Ang mga Tier 2 tools ay available kapag sinadya itong pinagana sa Theme Builder settings.
+Available ang Tier 2 tools kapag tahasang naka-enable sa mga setting ng Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
-Nagbibigay ng detalyadong performance metrics:
+Nagbibigay ng detalyadong mga sukatan ng performance:
 
-- Page load times
+- Mga oras ng pag-load ng pahina
 - Core Web Vitals
 - SEO score
 - Accessibility score
 - Best practices score
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
-Sinusuri at nagmumungkahi ng pagpapabuti para sa:
+Sinusuri at nagmumungkahi ng mga pagpapabuti para sa:
 
-- Readability
+- Kadaling basahin
 - SEO optimization
-- Keyword usage
-- Content structure
-- Call-to-action placement
+- Paggamit ng keyword
+- Estruktura ng nilalaman
+- Paglalagay ng call-to-action
 
-### Tier 3 Tools (Premium)
+### Tier 3 Tools (Premium) {#tier-3-tools-premium}
 
-Ang mga Tier 3 tools ay nangangailangan ng dagdag na pag-configure o premium features.
+Nangangailangan ang Tier 3 tools ng karagdagang configuration o mga premium na feature.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
 Gumagawa ng nilalaman para sa:
 
-- Product descriptions
-- Service pages
-- Blog posts
-- Meta descriptions
+- Mga paglalarawan ng produkto
+- Mga pahina ng serbisyo
+- Mga blog post
+- Mga meta description
 - Call-to-action copy
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
-Nagbibigay ng advanced design capabilities:
+Nagbibigay ng mga advanced na kakayahan sa disenyo:
 
-- Custom CSS generation
-- Animation creation
-- Interactive element design
-- Advanced color theory
+- Pagbuo ng custom CSS
+- Paglikha ng animation
+- Disenyo ng interactive na elemento
+- Advanced na teorya ng kulay
 - Typography optimization
 
-## Pag-configure ng Tool
+### Advanced Companion Tools (Hiwalay na Package) {#advanced-companion-tools-separate-package}
 
-### Pagpapagana ng Tools
+Ang Advanced companion package ay ipinamamahagi nang hiwalay mula sa core na release ng Superdav AI Agent. Nilalayon ito para sa mga pinagkakatiwalaang kapaligiran ng developer at may-ari ng site kung saan tahasang pinapayagan ng mga administrator ang agent na gumamit ng tooling na may malaking epekto.
 
-Upang paganahin ang mga karagdagang tool sa Theme Builder:
+Maaaring kasama sa mga kakayahan ng Advanced companion ang:
+
+- **Mga filesystem tool** — inspeksyunin at baguhin ang mga aprubadong file sa mga pinagkakatiwalaang kapaligiran
+- **Mga database tool** — mag-query o mag-update ng data ng site kapag tahasang pinahintulutan
+- **Mga WP-CLI tool** — magpatakbo ng mga command sa maintenance at inspeksyon ng WordPress
+- **Mga REST dispatcher tool** — tumawag ng mga nakarehistrong REST endpoint sa pamamagitan ng mga kontroladong dispatch workflow
+- **Mga plugin builder tool** — gumawa ng scaffold at mag-iterate sa plugin code
+- **Mga Git snapshot tool** — gumawa ng mga snapshot bago ang mapanganib na mga operasyon ng developer
+- **Mga user-management tool** — tumulong magrepaso o mag-adjust ng mga tala ng user kung saan pinahihintulutan
+- **Mga benchmark tool** — magpatakbo ng mga benchmark ng performance o kakayahan para sa pagsusuri sa development
+
+Huwag idokumento ang mga ito bilang pangkalahatang available na Theme Builder tools para sa bawat installation. Available lamang ang mga ito kapag naka-install at naka-enable ang Advanced companion package, at limitado sa mga pinagkakatiwalaang administrator.
+
+## Configuration ng Tool {#tool-configuration}
+
+### Pag-enable ng Mga Tool {#enabling-tools}
+
+Para i-enable ang karagdagang mga tool sa Theme Builder:
 
 1. Pumunta sa **Gratis AI Agent → Settings**
 2. Pumunta sa **Theme Builder → Tools**
-3. I-toggle ang mga tool ayon sa pangangailangan
-4. I-save ang settings
+3. I-toggle ang mga tool on/off ayon sa kailangan
+4. I-save ang mga setting
 
-### Tool Permissions
+### Mga Pahintulot ng Tool {#tool-permissions}
 
-Ang ilang tools ay nangangailangan ng mga permiso:
+Nangangailangan ng mga pahintulot ang ilang tool:
 
-- **Site scraping** — nangangailangan ng internet access
+- **Pag-scrape ng site** — nangangailangan ng internet access
 - **Analytics** — nangangailangan ng Google Analytics integration
-- **Content generation** — nangangailangan ng API keys
-- **Advanced features** — maaaring nangailangan ng premium subscription
+- **Pagbuo ng nilalaman** — nangangailangan ng mga API key
+- **Mga advanced na feature** — maaaring mangailangan ng premium subscription
+- **Advanced companion tools** — nangangailangan ng hiwalay na ipinamamahaging Advanced package at tahasang tiwala ng administrator
 
-### API Keys at Credentials
+### Mga API Key at Credential {#api-keys-and-credentials}
 
-I-configure ang mga API keys para sa mga tool na nangangailangan nito:
+I-configure ang mga API key para sa mga tool na nangangailangan ng mga ito:
 
 1. Pumunta sa **Gratis AI Agent → Settings → API Keys**
-2. Ilagay ang credentials para sa bawat tool
+2. Ilagay ang mga credential para sa bawat tool
 3. Subukan ang koneksyon
-4. I-save nang ligtas
+4. I-save nang secure
 
-## Paggamit ng sd-ai-agent/site-scrape
+### Pag-install ng Advanced Companion Package {#installing-the-advanced-companion-package}
 
-### Basic Usage
+Ang Advanced companion package ay inilalabas nang hiwalay mula sa WordPress.org core ZIP. I-install lamang ito mula sa opisyal na channel ng pamamahagi ng proyekto para sa release, pagkatapos ay limitahan ang access sa mga pinagkakatiwalaang administrator. Repasuhin ang mga gate ng pag-apruba ng tao at asal ng git snapshot bago i-enable ang filesystem, database, WP-CLI, REST dispatcher, plugin builder, user-management, o benchmark tools sa isang production site.
+
+## Paggamit ng sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
+
+### Pangunahing Paggamit {#basic-usage}
 
 Hilingin sa Theme Builder na suriin ang isang website:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Suriin ang disenyo ng site ng aking kakumpitensya sa competitor.com
+at magmungkahi ng mga pagpapabuti sa disenyo para sa aking site.
 ```
 
-### Specific Analysis
+### Partikular na Pagsusuri {#specific-analysis}
 
-Hilingin ang tiyak na uri ng pagsusuri:
-
-```
-Extract the color palette from example.com and use it as inspiration.
-```
+Humiling ng partikular na mga uri ng pagsusuri:
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Kunin ang color palette mula sa example.com at gamitin ito bilang inspirasyon.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Suriin ang estruktura ng nabigasyon ng example.com at ilapat ang katulad na
+organisasyon sa aking site.
 ```
 
-### Comparison Analysis
-
-Ikumpara ang maraming site:
-
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Suriin ang mobile responsiveness ng example.com at tiyaking ang aking site
+ay kasing-responsive.
 ```
 
-## Limitasyon at Dapat Tandaan sa Tool
+### Paghahambing na Pagsusuri {#comparison-analysis}
 
-### Rate Limiting
+Ihambing ang maraming site:
 
-- Ang scraping ay may limitasyon para maiwasan ang pag-overload ng server
-- Ang maraming request sa iisang site ay maaaring ma-throttle
-- Ang malalaking site ay maaaring mas matagal suriin
+```
+Ihambing ang mga disenyo ng site1.com at site2.com at gumawa ng disenyo
+na pinagsasama ang pinakamahuhusay na elemento ng dalawa.
+```
 
-### Katumpakan ng Nilalaman
+## Mga Limitasyon at Pagsasaalang-alang ng Tool {#tool-limitations-and-considerations}
 
-- Ang dynamic content ay maaaring hindi ganap na makuha
-- Ang content na naka-render sa JavaScript ay maaaring hindi kumpleto
-- Ang real-time data ay maaaring hindi makita
-- Ang ilang content ay maaaring nasa likod ng paywalls
+### Rate Limiting {#rate-limiting}
 
-### Legal at Etikal na Konsiderasyon
+- Nililimitahan ang rate ng scraping upang maiwasan ang sobrang load sa server
+- Maaaring i-throttle ang maraming request sa parehong site
+- Maaaring mas matagal suriin ang malalaking site
 
-- Gumagalang sa robots.txt at mga patakaran ng site
-- Huwag i-scrape ang copyrighted content para sa pagkopya
-- Gamitin ang pagsusuri para sa inspirasyon, hindi para sa pagkopya
-- Siguraduhin na may karapatan kang gamitin ang kinuhang content
+### Katumpakan ng Nilalaman {#content-accuracy}
+
+- Maaaring hindi ganap na makuha ang dynamic content
+- Maaaring hindi kumpleto ang JavaScript-rendered content
+- Maaaring hindi maipakita ang real-time na datos
+- Maaaring nasa likod ng mga paywall ang ilang nilalaman
+
+### Legal at Etikal na Pagsasaalang-alang {#legal-and-ethical-considerations}
+
+- Igalang ang robots.txt at mga patakaran ng site
+- Huwag mag-scrape ng copyrighted content para sa reproduksyon
+- Gamitin ang pagsusuri para sa inspirasyon, hindi pagkopya
+- Tiyaking may karapatan kang gamitin ang na-extract na nilalaman
 - Sundin ang terms of service ng mga sinuring site
 
-### Epekto sa Pagganap
+### Epekto sa Performance {#performance-impact}
 
-- Ang pag-scrape ng malalaking site ay maaaring tumagal
-- Ang maraming sabay-sabay na scrape ay maaaring mas mabagal
-- Ang network connectivity ay nakakaapekto sa bilis
-- Ang malalaking dataset ay maaaring mangailangan ng mas maraming processing
+- Maaaring tumagal ang scraping ng malalaking site
+- Maaaring mas mabagal ang maraming sabay-sabay na scrape
+- Nakaaapekto ang koneksyon sa network sa bilis
+- Maaaring mangailangan ng mas maraming pagproseso ang malalaking dataset
 
-## Best Practices
+## Pinakamahuhusay na Gawain {#best-practices}
 
-### Paggamit ng Site Analysis
+### Paggamit ng Pagsusuri ng Site {#using-site-analysis}
 
-1. **Suriin ang maraming site** — kumuha ng inspirasyon mula sa iba't ibang sources
-2. **Mag-focus sa istruktura** — matutunan ang mga pattern ng layout at pag-oorganisa
-3. **Kumuha ng kulay** — gamitin ang color palettes bilang panimula
+1. **Suriin ang maraming site** — mangalap ng inspirasyon mula sa ilang pinagmulan
+2. **Magpokus sa estruktura** — alamin ang mga pattern ng layout at organisasyon
+3. **Kunin ang mga kulay** — gamitin ang mga color palette bilang panimulang punto
 4. **Pag-aralan ang typography** — tukuyin ang mga kombinasyon ng font na gusto mo
-5. **Suriin ang navigation** — maunawaan ang pag-oorganisa ng menu
+5. **Suriin ang navigation** — unawain ang organisasyon ng menu
 
-### Etikal na Scraping
+### Etikal na Scraping {#ethical-scraping}
 
-1. **Gumalang sa robots.txt** — sundin ang mga patakaran ng site
-2. **Huwag kopyahin ang content** — gamitin ang pagsusuri para sa inspirasyon lamang
-3. **Tiyakin ang karapatan** — siguraduhin na magagamit mo ang kinuhang content
-4. **I-attribute ang sources** — bigyan ng kredito ang mga pinagkunan ng inspirasyon
-5. **Sundin ang terms** — sumunod sa terms of service ng site
+1. **Igalang ang robots.txt** — sundin ang mga alituntunin ng site
+2. **Huwag kopyahin ang nilalaman** — gamitin lamang ang pagsusuri bilang inspirasyon
+3. **Tiyakin ang mga karapatan** — tiyaking magagamit mo ang na-extract na nilalaman
+4. **Banggitin ang mga pinagmulan** — bigyan ng kredito ang mga pinagmulan ng inspirasyon
+5. **Sundin ang mga tuntunin** — sumunod sa terms of service ng site
 
-### Pagpapalaki ng Effectiveness ng Tool
+### Pagpapalaki ng Bisa ng Tool {#maximizing-tool-effectiveness}
 
-1. **Maging tiyak** — humiling ng tiyak na uri ng pagsusuri
-2. **Magbigay ng context** — ipaliwanag ang layunin ng iyong site
-3. **Magtakda ng expectations** — ilarawan ang iyong mga layunin sa disenyo
-4. **Mag-iterate** — pagandahin batay sa mga resulta
-5. **Pagsamahin ang tools** — gamitin ang maraming tool para sa komprehensibong pagsusuri
+1. **Maging espesipiko** — humiling ng espesipikong mga uri ng pagsusuri
+2. **Magbigay ng konteksto** — ipaliwanag ang layunin ng iyong site
+3. **Itakda ang mga inaasahan** — ilarawan ang iyong mga layunin sa disenyo
+4. **Ulit-ulitin** — pinuhin batay sa mga resulta
+5. **Pagsamahin ang mga tool** — gumamit ng maraming tool para sa komprehensibong pagsusuri
 
-## Troubleshooting
+## Pag-troubleshoot {#troubleshooting}
 
-### Hindi Ma-scrape ang Site
+### Hindi Ma-scrape ang Site {#site-wont-scrape}
 
-- Tingnan kung ang site ay publicly accessible
-- I-verify kung pinapayagan ng robots.txt ang scraping
+- Suriin kung ang site ay naa-access ng publiko
+- Tiyaking pinapayagan ng robots.txt ang scraping
 - Subukan ang ibang site
-- Tingnan ang internet connection
-- Makipag-ugnayan sa support kung nagpapatuloy ang problema
+- Suriin ang koneksyon sa internet
+- Makipag-ugnayan sa support kung magpapatuloy ang isyu
 
-### Hindi Kumpletong Analysis
+### Hindi Kumpletong Pagsusuri {#incomplete-analysis}
 
 - Maaaring may dynamic content ang site
-- Ang JavaScript ay maaaring hindi ganap na na-render
-- Ang malalaking site ay maaaring mag-timeout
-- Subukang suriin ang mga tiyak na pahina sa halip
-- Hilingin ang tiyak na uri ng pagsusuri
+- Maaaring hindi ganap na ma-render ang JavaScript
+- Maaaring mag-timeout ang malalaking site
+- Subukang suriin na lang ang espesipikong mga page
+- Humiling ng espesipikong mga uri ng pagsusuri
 
-### Mabagal na Pagganap
+### Mabagal na Performance {#slow-performance}
 
-- Ang malalaking site ay mas matagal suriin
-- Ang maraming sabay-sabay na scrape ay mas mabagal
-- Ang network connectivity ay nakakaapekto sa bilis
-- Subukan sa off-peak hours
-- Suriin muna ang mas maliliit na sections
+- Mas matagal suriin ang malalaking site
+- Mas mabagal ang maraming sabay-sabay na scrape
+- Nakaaapekto ang koneksyon sa network sa bilis
+- Subukan sa mga oras na hindi peak
+- Suriin muna ang mas maliliit na seksyon
 
-## Kaugnay na Dokumentasyon
+## Kaugnay na Dokumentasyon {#related-documentation}
 
-- [Discovery Interview](./discovery-interview.md) — kumuha ng design information
-- [Design Direction](./design-direction.md) — pagandahin ang iyong disenyo
-- [Hospitality Menus](./hospitality-menus.md) — gumawa ng mga pahina ng menu
+- [Panayam sa Pagtuklas](./discovery-interview.md) — mangalap ng impormasyon sa disenyo
+- [Direksyon ng Disenyo](./design-direction.md) — pinuhin ang iyong disenyo
+- [Mga Menu ng Hospitality](./hospitality-menus.md) — gumawa ng mga pahina ng menu

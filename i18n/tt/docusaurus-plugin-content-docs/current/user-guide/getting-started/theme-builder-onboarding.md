@@ -3,11 +3,11 @@ title: Тема İntegrasiya Akışı
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0-da guided **Theme Builder onboarding flow** introduces a guided **Tema Builder onboarding flow**, which helps you create a custom block theme during your initial setup. This replaces the legacy Site Builder mode with a more flexible, agent-assisted approach.
 
-## What is the Theme Builder Onboarding Flow?
+## What is the Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 The Theme Builder onboarding flow is an interactive setup wizard that:
 
@@ -18,9 +18,9 @@ The Theme Builder onboarding flow is an interactive setup wizard that:
 
 This flow is powered by the **Setup Assistant agent**, which asks clarifying questions and builds your theme incrementally.
 
-## Starting the Theme Builder Onboarding
+## Starting the Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### First-Run Setup
+### First-Run Setup {#first-run-setup}
 
 When you first launch Superdav AI Agent on a new WordPress installation, you'll see:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Select **"Build a custom theme"** to enter the Theme Builder onboarding flow.
 
-### Manual Activation
+### Manual Activation {#manual-activation}
 
 You can also start the Theme Builder onboarding at any time by requesting:
 
@@ -49,9 +49,9 @@ or
 "Help me create a custom theme"
 ```
 
-## The Onboarding Steps
+## The Onboarding Steps {#the-onboarding-steps}
 
-### Step 1: Mode Selection
+### Step 1: Mode Selection {#step-1-mode-selection}
 
 The Setup Assistant agent asks about your preference:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** is recommended for most users; the agent makes design recommendations based on your industry and goals.
 
-### Step 2: Site Specification
+### Step 2: Site Specification {#step-2-site-specification}
 
 You'll be asked about your site:
 
@@ -74,7 +74,7 @@ You'll be asked about your site:
 
 Эту информацию сохраняется в вашей памяти **site_brief**, на которую обращаются агенты в будущих сессиях.
 
-### Шаг 3: Решения по дизайн-системе (Design System Decisions)
+### Шаг 3: Решения по дизайн-системе (Design System Decisions) {#step-3-design-system-decisions}
 
 Агент проведет вас через выбор дизайн-токенов:
 
@@ -83,7 +83,7 @@ You'll be asked about your site:
 - **Отступы (Spacing)**: Компактные, нормальные или просторные макеты
 - **Анимация (Motion)**: Анимации и переходы (если нужно)
 
-### Шаг 4: Генерация темы (Theme Generation)
+### Шаг 4: Генерация темы (Theme Generation) {#step-4-theme-generation}
 
 Агент помощник по настройке создаст вашу кастомную блочную тему со следующими элементами:
 
@@ -92,7 +92,7 @@ You'll be asked about your site:
 - Стили кастомных блоков, соответствующие вашей дизайн-системе
 - Метаданные темы и объявления о поддержке WordPress
 
-### Шаг 5: Активация и проверка (Activation and Verification)
+### Шаг 5: Активация и проверка (Activation and Verification) {#step-5-activation-and-verification}
 
 Тема активируется автоматически, и вы увидите следующее:
 
@@ -107,7 +107,7 @@ You'll be asked about your site:
 
 Затем вы можете зайти на свой сайт и проверить, отображается ли тема правильно.
 
-## Спецификация сайта и память site_brief
+## Спецификация сайта и память site_brief {#site-specification-and-sitebrief-memory}
 
 Во время настройки агент фиксирует спецификацию вашего сайта в категории памяти **site_brief**. Это включает:
 
@@ -117,11 +117,11 @@ You'll be asked about your site:
 - Дизайнерские предпочтения
 - Структура контента
 
-### Почему site_brief важен
+### Почему site_brief важен {#why-sitebrief-matters}
 
 В будущих сессиях агенты обращаются к вашей памяти **site_brief** для:
 
-### Sitenizin özeti görünümü (Viewing Your site_brief)
+### Sitenizin özeti görünümü (Viewing Your site_brief) {#viewing-your-sitebrief}
 
 Aşağıdaki komutları kullanarak ajana sorabilirsiniz:
 
@@ -137,11 +137,11 @@ veya
 
 Ajans, kayıtlı site spesifikasyonunuzu gösterecektir.
 
-## Kurulum Sonrası Özelleştirme (Customizing After Onboarding)
+## Kurulum Sonrası Özelleştirme (Customizing After Onboarding) {#customizing-after-onboarding}
 
 Tema Oluşturucu (Theme Builder) kurulumu tamamlandıktan sonra şunları yapabilirsiniz:
 
-### Tasarım Sistemi Estetiği Beceresini Kullanma (Use the Design System Aesthetics Skill)
+### Tasarım Sistemi Estetiği Beceresini Kullanma (Use the Design System Aesthetics Skill) {#use-the-design-system-aesthetics-skill}
 
 Tasarım iyileştirmeleri isteyebilirsiniz:
 
@@ -157,7 +157,7 @@ veya
 
 **Design System Aesthetics skill** size hedeflenmiş tasarım güncellemeleri konusunda yol gösterecektir.
 
-### theme.json Dosyasını Doğrudan Düzenleme (Edit theme.json Directly)
+### theme.json Dosyasını Doğrudan Düzenleme (Edit theme.json Directly) {#edit-themejson-directly}
 
 İleri düzey kullanıcılar için, aşağıdaki ayarları değiştirmek üzere `/wp-content/themes/[theme-name]/theme.json` dosyasını düzenleyin:
 
@@ -166,7 +166,7 @@ veya
 - Spacing values (Boşluk değerleri)
 - Border and shadow definitions (Kenarlık ve gölge tanımları)
 
-### Özel Blok Şablonları Oluşturma (Create Custom Block Templates)
+### Özel Blok Şablonları Oluşturma (Create Custom Block Templates) {#create-custom-block-templates}
 
 WordPress blok düzenleyicisini kullanarak şunlar için özel şablonlar oluşturabilirsiniz:
 
@@ -175,7 +175,7 @@ WordPress blok düzenleyicisini kullanarak şunlar için özel şablonlar oluşt
 - Product pages (Ürün sayfaları)
 - Contact forms (İletişim formları)
 
-## Karşılaştırma: Eski vs. Yeni Kurulum (Comparison: Old vs. New Onboarding)
+## Karşılaştırma: Eski vs. Yeni Kurulum (Comparison: Old vs. New Onboarding) {#comparison-old-vs-new-onboarding}
 
 | Özellik | Site Builder (Eski) | Theme Builder (Yeni) |
 |---------|----------------------|-------------------|
@@ -185,7 +185,7 @@ WordPress blok düzenleyicisini kullanarak şunlar için özel şablonlar oluşt
 | Esneklik | Fixed options (Sabit seçenekler) | Customizable (Özelleştirilebilir) |
 | Gelecekteki güncellemeler | Not referenced (Referans verilmiyor) | Stored in site_brief (site_brief'te saklanıyor) |
 
-## Sorun Giderme (Troubleshooting)
+## Sorun Giderme (Troubleshooting) {#troubleshooting}
 
 **Kurulum akışı tamamlanmadı (The onboarding flow didn't complete)**
 - Akışı yeniden başlatın: "Start the Theme Builder onboarding" (Theme Builder kurulumunu başlat)
@@ -202,7 +202,7 @@ WordPress blok düzenleyicisini kullanarak şunlar için özel şablonlar oluşt
 - Ajanı "[belirli değişikliklerle] temayı yeniden oluşturmaya" söyleyin
 - Hassas kontrol için theme.json dosyasını doğrudan düzenleyin
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Tema Oluşturucu (Theme Builder) kurulumunu tamamladıktan sonra:
 

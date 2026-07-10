@@ -1,120 +1,120 @@
 ---
-title: Налоговый учет
+title: Салымнар белән эш итү
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Налоговый учет
+# Салымнар белән эш итү {#tax-handling}
 
-Ultimate Multisite-амальimizde ana pluginimiz içine yerleşik bir vergi toplama modülü var. Bu yüzden planlarınızda, paketlerinizde ve hizmetlerinizde satış vergilerini toplamanız gerekiyorsa, herhangi bir eklenti kurmaya gerek kalmadan bunu kolayca yapabilirsiniz.
+Ultimate Multisite безнең төп plugin эченә урнаштырылган салым җыю модуленә ия, шуңа күрә планнарыгыз, пакетларыгыз һәм хезмәтләрегез өчен сату салымнарын җыярга кирәк булса, моны бернинди add-on урнаштырмыйча да җиңел генә эшли аласыз.
 
-Avrupa'daki şirketler için, **KDV uyumluluğunu** daha iyi desteklemek için araçlar ve özellikleri ekleyen bir **eklenti** sunuyoruz.
+Европада урнашкан ширкәтләр өчен без **add-on** тәкъдим итәбез, ул **VAT** таләпләрен яхшырак **хуплау** өчен кораллар һәм мөмкинлекләр өсти.
 
-Ultimate Multisite sizin adınıza hükümete vergi beyannamesi vermez veya ödeme yapmaz; biz sadece işlemi gerçekleştirdiğiniz anda uygun vergileri toplamanıza yardımcı oluruz. Vergi ödemesini yine kendiniz yapmanız gerekecek.
+Ultimate Multisite сезнең исемнән хөкүмәткә салымнарны тапшырмый һәм күчерми; без бары тик транзакция вакытында тиешле салымнарны җыярга ярдәм итәбез. **Сезгә барыбер салымнарны үзегез күчерергә кирәк булачак.**
 
-## Vergi Toplamayı Etkinleştirme
+## Салым җыюны кабызу {#enabling-tax-collection}
 
-Vergi toplama varsayılan olarak etkin değildir. Bunu etkinleştirmek için **Ultimate Multisite > Ayarlar > Vergiler** bölümüne gitmeniz ve "Vergileri Etkinleştir" ayarını açmanız gerekir.
+Салым җыю килешү буенча кабызылмаган. Аны кабызу өчен, **Ultimate Multisite > Көйләүләр > Салымнар** бүлегенә кереп, Салымнарны кабызу көйләвен кабызырга кирәк.
 
-![Vergileri Etkinleştir düğmesi Vergi ayarları sayfasının en üstünde](/img/config/settings-taxes-enable.png)
+![Салым көйләүләре битенең өске өлешендә Салымнарны кабызу күчергече](/img/config/settings-taxes-enable.png)
 
-İşte vergi ayarları sayfasının tam görünümü:
+Менә салым көйләүләре битенең тулы күренеше:
 
-![Vergi ayarları tam sayfa](/img/config/settings-taxes-full.png)
+![Салым көйләүләренең тулы бите](/img/config/settings-taxes-full.png)
 
-Ayrıca ürünler için de vergi ayarlarını görüntüleyebilirsiniz:
+Аерым продуктлар өчен салым көйләүләрен дә карый аласыз:
 
-![Ürünler için vergi ayarları](/img/config/settings-taxes.png)
+![Продуктлар өчен салым көйләүләре](/img/config/settings-taxes.png)
 
-### Vergi Dahil Olmayan vs. Vergi Dahil Olan
+### Салым кертелмәгән vs. Салым кертелгән {#tax-excluded-vs-tax-included}
 
-Varsayılan olarak, tüm ürün fiyatlarınız vergiden istisnadır, bu da vergilerin ürünün fiyatına **dahil olmadığı** anlamına gelir. Belirli bir satın alım için müşterinin vergi ödemesi gerektiğini belirlersek, vergileri toplam tutarın **üzerine** ekleyeceğiz.
+Килешү буенча, барлык продукт бәяләрегезгә салым кертелмәгән, ягъни салымнар продукт бәясенә **кертелмәгән**. Әгәр без клиент билгеле бер сатып алу өчен салым түләргә тиеш дип билгеләсәк, салымнарны арадаш сумма **өстенә** өстәрбез.
 
-Vergilerin ürün fiyatına dahil olmasını tercih ederseniz, **Dahil Vergi** ayarını etkinleştirerek bunu yapabilirsiniz.
+Әгәр салымнарның продукт бәясенә кертелүен өстен күрсәгез, моны **Салымны кертеп** көйләвен кабызып эшли аласыз.
 
-![Vergileri Etkinleştir ayarının altındaki Dahil Vergi düğme satırı](/img/config/settings-taxes-inclusive.png)
+![Салымнарны кабызу көйләве астында Салымны кертеп күчергече юлы](/img/config/settings-taxes-inclusive.png)
 
-Yaptığınız değişiklikleri **kaydetmeyi** unutmayın.
+Кертелгән үзгәрешләрне **сакларга** онытмагыз.
 
 ###
 
-## Vergi Oranları Oluşturma
+## Салым ставкаларын булдыру {#creating-tax-rates}
 
-Vergi Toplamayı etkinleştirdikten sonra, vergi oranlarını belirli konumlar için vergi oranları düzenleyicimizi kullanarak oluşturmanız gerekecek.
+Салым җыюны кабызганнан соң, безнең салым ставкалары мөхәррирен кулланып, аерым урыннар өчен салым ставкалары булдырырга кирәк булачак.
 
-Вы можете открыть редактор, нажав кнопку **Manage Tax Rates** (Управление ставками налогов) на боковой панели страницы настроек налогов.
+Мөхәрриргә Салым көйләүләре битенең ян панелендәге **Салым ставкаларын идарә итү** төймәсенә басып керә аласыз.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Көйләүләр битендәге Салым ставкалары панелендә Салым ставкаларын идарә итү сылтамасы](/img/config/settings-taxes-manage-rates.png)
 
-На странице редактора ставок налогов вы можете добавить новые ставки налогов, нажав кнопку **Add new Row** (Добавить новую строку).
+Салым ставкалары мөхәррире битендә **Яңа юл өстәү** төймәсенә басып, яңа салым ставкалары өсти аласыз.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Өстә Яңа юл өстәү төймәсе булган салым ставкалары мөхәррире таблицасы](/img/config/tax-rates-editor.png)
 
-Вам нужно дать каждой ставке налога **title** (название), которое будет использоваться в счетах. Затем вы можете выбрать **country** (страну) (обязательно), а также **state** (штат) и **city** (город) (оба необязательны), где будет взиматься этот налог. Наконец, добавьте **tax rate in percents** (ставку налога в процентах).
+Һәр салым ставкасына **исем** бирергә кирәк булачак (ул счет-фактураларда кулланыла). Аннары бу салым алыначак **илне** (мәҗбүри), **штатны,** һәм **шәһәрне** (икесе дә ихтыяри) сайлый аласыз. Ахырда, **процентларда салым ставкасын** өстәгез.
 
-### Категории налогов (Tax Categories)
+### Салым категорияләре {#tax-categories}
 
-Вы также можете создать несколько Категорий налогов, чтобы добавить разные ставки для разных видов товаров.
+Төрле төрдәге продуктлар өчен төрле салым ставкаларын өстәү өчен, берничә салым категориясе дә булдыра аласыз.
 
-Нажмите **Add new Tax Category** (Добавить новую категорию налогов), затем напишите название вашей категории и нажмите **Create** (Создать).
+**Яңа салым категориясе өстәү** төймәсенә басыгыз, аннары категориягезнең исемен языгыз һәм **Булдыру** төймәсенә басыгыз.
 
-![Add new Tax Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Салым ставкалары мөхәрриренең өске өлешендә Яңа салым категориясе өстәү төймәсе](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Категория булдыру модаль тәрәзәсендә Салым категориясе исеме кертү кыры](/img/config/tax-categories-create-modal.png)
 
-Чтобы просмотреть категории, нажмите **Switch** (Переключить) и выберите категорию, к которой вы хотите добавить новые налоги.
+Категорияләрне карап чыгу өчен, **Күчерү** төймәсенә басыгыз һәм яңа салымнар өстәргә теләгән категорияне сайлагыз.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Салым категорияләре арасында күчү өчен Күчерү ачылма төймәсе](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Мөмкин булган категорияләрне күрсәткән салым категориясе сайлагычы ачылма исемлеге](/img/config/tax-categories-select.png)
 
-Вы можете установить категорию налога для определенного продукта, перейдя на **Product edit page** (страницу редактирования продукта), а затем на вкладку Taxes (Налоги).
+Билгеле бер продукт өчен салым категориясен **Продуктны үзгәртү битенә** кереп, аннары Салымнар өстәлмәсенә күчеп билгели аласыз.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Салым категориясе һәм салым салына торган күчергече булган продукт салымнары өстәлмәсе](/img/config/product-taxes.png)
 
-На том же экране вы можете включить или выключить переключатель **Is Taxable?** (Подлежит ли налогообложению?), чтобы сообщить Ultimate Multisite, что на этот конкретный продукт налоги не нужно собирать.
+Шул ук экранда, Ultimate Multisite бу бирелгән продукт өчен салым җыймаска тиеш икәнен белсен өчен, **Салым салынамы?** күчергечен сүндерә аласыз.
 
-## Поддержка европейского НДС (European VAT Support)
+## Европа VAT ярдәме {#european-vat-support}
 
-Ещё раз упомянули, у нас есть дополнение для клиентов в ЕС, которым нужны дополнительные требования из-за европейских правил НДС (VAT).
+Алда әйтелгәнчә, Европа VAT кагыйдәләре аркасында өстәмә таләпләре булган EU клиентлары өчен бездә add-on бар.
 
-Наши инструменты по НДС помогают с несколькими важными вещами:
+Безнең VAT кораллары берничә мөһим нәрсәдә ярдәм итә:
 
-  * Легкая загрузка ставок НДС для стран ЕС;
+  * EU VAT ставкаларын җиңел йөкләү;
 
-  * Сбор и проверка номера НДС — а также обратное начисление НДС для организаций, освобожденных от НДС (например, компаний с действующими номерами НДС).
+  * VAT номерын җыю һәм тикшерү — һәм VATтан азат ителгән субъектлар өчен кире исәпләү (мәсәлән, гамәлдәге VAT номерлары булган ширкәтләр);
 
-Чтобы установить это дополнение, перейдите в **Ultimate Multisite > Settings** (Настройки) и затем нажмите на ссылку в боковой панели **Check our Add-ons** (Проверить наши дополнения).
+Бу add-onны урнаштыру өчен, **Ultimate Multisite > Көйләүләр** бүлегенә керегез һәм аннары ян панельдәге **Безнең Add-ons карау** сылтамасына басыгыз.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Безнең Add-ons карау сылтамасы булган Көйләүләр бите ян панеле](/img/config/settings-taxes-addons-link.png)
 
-Вы будете перенаправлены на нашу страницу дополнений. Там вы сможете найти и установить **Ultimate Multisite VAT add-on** (дополнение Ultimate Multisite по НДС).
+Сез безнең add-ons битенә юнәлтеләчәксез. Анда **Ultimate Multisite VAT add-on** эзләп таба һәм урнаштыра аласыз.
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+<!-- Скриншот юк: Add-ons битендә VAT add-on плиткасы -->
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Скриншот юк: VAT add-on Хәзер урнаштыру диалогы -->
 
-Затем перейдите в **Network Admin > Plugins** (Администрирование сети > Плагины) и активируйте это дополнение для всей сети.
+Аннары, **Челтәр администраторы > Plugins** бүлегенә керегез һәм бу add-onны бөтен челтәр буенча активлаштырыгыз.
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+<!-- Скриншот юк: Plugins битендә VAT add-on өчен Челтәрдә активлаштыру гамәле -->
 
-Если вы вернетесь на вкладку **Tax Settings** (Настройки налогов), вы увидите новые доступные опции. Переключите опцию **Enable VAT Support** (Включить поддержку НДС), чтобы активировать новые инструменты по НДС. Не забудьте **save** (сохранить) ваши настройки!
+**Салым көйләүләре өстәлмәсенә** кире кайтсагыз, яңа параметрлар барлыкка килгәнен күрерсез. Яңа VAT коралларын кабызу өчен **VAT ярдәмен кабызу** параметрын кабызыгыз. Көйләүләрегезне **сакларга** онытмагыз!
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+<!-- Скриншот юк: add-on активлаштырылганнан соң Салым көйләүләрендә VAT ярдәмен кабызу күчергече -->
 
-### Загрузка ставок НДС
+### VAT салым ставкаларын алу {#pulling-on-vat-tax-rates}
 
-Один из инструментов, который добавляет наша интеграция, — это возможность загружать ставки налогов для стран-членов ЕС. Это можно сделать, посетив страницу редактора ставок налогов после включения поддержки НДС в ЕС.
+Безнең интеграция өстәгән коралларның берсе — EU әгъза дәүләтләре өчен салым ставкаларын йөкләү мөмкинлеге. Моны EU VAT ярдәмен кабызганнан соң салым ставкалары мөхәррире битенә кереп эшләп була.
 
-Sayganın en altında KDV çekme seçeneklerini göreceksiniz. Bir oran türü seçip **Update EU VAT Rates** butonuna tıkladığınızda, her bir AB üye ülkesi için vergi oranlarını içeren tablo otomatik olarak açılır ve doldurulur. Sonra sadece kaydetmeniz yeterli olur.
+Битнең аскы өлешендә VAT алу параметрларын күрерсез. Ставка төрен сайлап һәм **EU VAT ставкаларын яңарту** төймәсенә басып, һәр EU әгъза дәүләте өчен салым ставкалары таблицага алынып автоматик тутырылачак. Аннары аны сакларга гына кирәк.
 
-![Vergi oranlarını güncelleme butonu en altta](/img/config/tax-rates-vat-pull.png)
+![Салым ставкалары мөхәрриренең аскы өлешендә EU VAT ставкаларын яңарту төймәсе](/img/config/tax-rates-vat-pull.png)
 
-Onları çektikten sonra değerleri de düzenleyebilirsiniz. Bunu yapmak için ihtiyacınız olan satırı düzenleyin ve yeni değerleri kaydetmek için tıklayın.
+Аларны алганнан соң кыйммәтләрне дә үзгәртә аласыз. Моның өчен, кирәкле таблица юлын гына үзгәртегез һәм яңа кыйммәтләрне саклау өчен басыгыз.
 
-### KDV Doğrulama (VAT Validation)
+### VAT тикшерү {#vat-validation}
 
-KDV desteği etkinleştirildiğinde, Ultimate Multisite ödeme formuna fatura adresi alanının altına ek bir alan ekler. Bu alan sadece AB'de bulunan müşteriler için görünür olur.
+VAT ярдәме кабызылганда, Ultimate Multisite checkout формасына, исәп-хисап адресы кыры астына, өстәмә кыр өстәячәк. Бу кыр бары тик EUда урнашкан клиентлар өчен генә күрсәтеләчәк.
 
-<!-- Screenshot unavailable: Fatura adresi altındaki ön yüz ödeme formundaki KDV Numarası alanı -->
+<!-- Скриншот юк: frontend checkout формасында исәп-хисап адресы астындагы VAT номеры кыры -->
 
-Ultimate Multisite daha sonra KDV Numarasını doğrular ve geçerli bir numara olarak dönerse, ters yükümlülük mekanizması uygulanır ve o sipariş için vergi oranı %0 olarak ayarlanır.
+Ultimate Multisite аннары VAT Number-ны тикшерәчәк, һәм ул дөрес дип кайтса, reverse charge механизмы кулланыла, ә шул заказда салым ставкасы 0% итеп куела.

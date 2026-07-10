@@ -3,11 +3,11 @@ title: Kugara/Kubatsira Email dzemabhizinesi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Kurudzira Emails Yemashoko YeMabhumbi (Managing System Emails)
+# Kurudzira Emails Yemashoko YeMabhumbi (Managing System Emails) {#managing-system-emails}
 
 Ultimate Multisite inenge imihiro yezimbali yemashoko (system emails) izivaka kune zvinhu zvakasiyana-yana, zvichiri kuita zvinhu zvakaita kubatsirwa kupfungwa kwe signup, zvinokubatsira nekuona nekubatsira nekuwedzera membership. Unogona kungeura (customize) imihiro iyi yemashoko kuti zvigone nemabasa ako.
 
-## Kuti Uone Imishoko Yemashoko (Viewing System Emails)
+## Kuti Uone Imishoko Yemashoko (Viewing System Emails) {#viewing-system-emails}
 
 Enda kuenda kune **Ultimate Multisite → Settings** uye chibvumirano chete **Emails** kuti uone zvinhu zvinogona kubva nemihiro yemashoko.
 
@@ -21,7 +21,7 @@ Unogonawo kungeura imihiro yakasiyana-yana nemashoko nekubata imihiro iyi munzvi
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Kuratidza Imishoko Yemashoko Dziri Dzinotsvaga (Importing New Email Templates)
+## Kuratidza Imishoko Yemashoko Dziri Dzinotsvaga (Importing New Email Templates) {#importing-new-email-templates}
 
 Ndinogona kuti Ultimate Multisite vashandiswa zvinhu zvinotamba uye add-ons dzineva dzinogona kuita imihiro yemashoko dzakadzama. Kuti usina kuratidza (conflicts), imihiro yakadzama haizovaka nekubata nekuita zvakanaka — unofanira kuyera (import) zvino munzvimbo.
 
@@ -32,7 +32,7 @@ Kuti utore (import) imihiro yakadzama:
 3.simba (toggle) option ya **Import Emails** kuti uone imihiro yakasiyana-yana dzinogona kuita
 4.chigadzira imihiro unoziva kuti utore uye chigadzirisa
 
-## Kuratidza Imihiro Yemashoko (Resetting Email Templates)
+## Kuratidza Imihiro Yemashoko (Resetting Email Templates) {#resetting-email-templates}
 
 Kana uri kuratidza imihiro yemashoko yakasiyana-yana uye uchida kuenda kune zvinhu zvinogona kubva nedefault, unenge uene mhinduro mbiri:
 

@@ -3,7 +3,7 @@ title: PayFast ပြောင်းလဲမှု မှတ်တမ်း
 sidebar_position: 99
 _i18n_hash: af0a4a3a187d8c6a40366a5a354ea122
 ---
-# PayFast ပြောင်းလဲမှု မှတ်တမ်း
+# PayFast ပြောင်းလဲမှု မှတ်တမ်း {#payfast-changelog}
 
 Version: 1.0.2 - 2025-09-28 တွင် ထုတ်ဝေခဲ့သည်
 

@@ -4,11 +4,11 @@ title: Action - wu_domain_renewal_completed
 sidebar_label: wu_domain_renewal_completed
 _i18n_hash: d4aa4ba2d3cd00aaa0ea699102a863e6
 ---
-# Action: wu_domain_renewal_completed
+# Action: wu_domain_renewal_completed {#action-wudomainrenewalcompleted}
 
 Utløses etter at et domene er blitt vellykket fornyet.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Utløses etter at et domene er blitt vellykket fornyet.
 | $renewal_data | `array<string,mixed>` | Metadata for fornyelsen (domene_navn, år, kunde_id, osv.). |
 | $result | `array<string,mixed>` | Rå resultat-array returnert av registrar, inkludert ny `expiry_date`. |
 
-### Siden
+### Siden {#since}
 
 - 2.0.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L594) på linje 594

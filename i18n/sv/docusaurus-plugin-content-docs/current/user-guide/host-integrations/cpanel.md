@@ -3,17 +3,17 @@ title: cPanel-integration
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# cPanel-integration
+# cPanel-integration {#cpanel-integration}
 
-## Översikt
+## Översikt {#overview}
 cPanel är en av de mest populära kontrollpanelerna för webbhotell och används av många delade och dedikerade hostingleverantörer. Den här integrationen möjliggör automatisk domänsynkronisering mellan Ultimate Multisite och cPanel, vilket låter dig automatiskt lägga till domänalias och subdomäner till ditt cPanel-konto.
 
-## Funktioner
+## Funktioner {#features}
 - Automatiskt skapande av addon-domäner i cPanel
 - Automatiskt skapande av subdomäner i cPanel (för multisite-installationer med subdomäner)
 - Borttagning av domäner när mappningar tas bort
 
-## Krav
+## Krav {#requirements}
 Följande konstanter måste definieras i din `wp-config.php`-fil:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default is 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default is /public_html
 ```
 
-## Installationsinstruktioner
+## Installationsinstruktioner {#setup-instructions}
 
-### 1. Hämta dina cPanel-uppgifter
+### 1. Hämta dina cPanel-uppgifter {#1-get-your-cpanel-credentials}
 
 1. Skaffa ditt cPanel-användarnamn och lösenord från din hostingleverantör
 2. Ta reda på din cPanel-värd (vanligtvis `cpanel.yourdomain.com` eller `yourdomain.com:2083`)
 
-### 2. Lägg till konstanter i wp-config.php
+### 2. Lägg till konstanter i wp-config.php {#2-add-constants-to-wp-configphp}
 
 Lägg till följande konstanter i din `wp-config.php`-fil:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Change if your cPanel uses a different port
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is different
 ```
 
-### 3. Aktivera integrationen
+### 3. Aktivera integrationen {#3-enable-the-integration}
 
 1. I din WordPress-admin, gå till Ultimate Multisite > Settings
 2. Navigera till fliken "Domain Mapping"
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Change if your document root is
 4. Aktivera cPanel-integrationen
 5. Klicka på "Save Changes"
 
-## Så fungerar det
+## Så fungerar det {#how-it-works}
 
-### Addon-domäner
+### Addon-domäner {#addon-domains}
 
 När en domän mappas i Ultimate Multisite:
 
@@ -71,7 +71,7 @@ När en domän mappas i Ultimate Multisite:
 2. Domänen konfigureras att peka mot din rotkatalog
 3. När en domänmappning tas bort kommer integrationen att ta bort addon-domänen från cPanel
 
-### Subdomäner
+### Subdomäner {#subdomains}
 
 För multisite-installationer med subdomäner, när en ny webbplats skapas:
 
@@ -79,27 +79,27 @@ För multisite-installationer med subdomäner, när en ny webbplats skapas:
 2. Den skickar en förfrågan till cPanels API för att lägga till subdomänen
 3. Subdomänen konfigureras att peka mot din rotkatalog
 
-## Viktigt att veta
+## Viktigt att veta {#important-notes}
 
 - Integrationen använder cPanels API2 för att kommunicera med ditt cPanel-konto
 - Ditt cPanel-konto måste ha behörighet att lägga till addon-domäner och subdomäner
 - Vissa hostingleverantörer kan begränsa antalet addon-domäner eller subdomäner du kan skapa
 - Integrationen hanterar inte DNS-konfiguration; du behöver fortfarande peka dina domäner mot din servers IP-adress
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Problem med API-anslutning
+### Problem med API-anslutning {#api-connection-issues}
 - Kontrollera att ditt cPanel-användarnamn och lösenord är korrekta
 - Kontrollera att din cPanel-värd är korrekt och tillgänglig
 - Se till att ditt cPanel-konto har de nödvändiga behörigheterna
 - Försök använda den fullständiga URL:en för värden (t.ex. `https://cpanel.yourdomain.com`)
 
-### Domän läggs inte till
+### Domän läggs inte till {#domain-not-added}
 - Kontrollera Ultimate Multisite-loggarna efter eventuella felmeddelanden
 - Verifiera att domänen inte redan är tillagd i cPanel
 - Se till att ditt cPanel-konto inte har nått sin gräns för addon-domäner eller subdomäner
 
-### Problem med SSL-certifikat
+### Problem med SSL-certifikat {#ssl-certificate-issues}
 - Integrationen hanterar inte utfärdande av SSL-certifikat
 - Du behöver använda cPanels SSL/TLS-verktyg eller AutoSSL-funktion för att utfärda SSL-certifikat för dina domäner
 - Alternativt kan du använda en tjänst som Let's Encrypt med cPanels AutoSSL

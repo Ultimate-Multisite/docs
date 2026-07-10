@@ -1,40 +1,46 @@
 ---
-title: Referenca na nastavitve
+title: Referenca nastavitev
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Reference nastavitve
+# Referenca nastavitev {#settings-reference}
 
-Ta stran sledi nastavitvam, ki vplivajo na vsakodnevno upravljanje in zadnje spremembe vedenja v Ultimate Multisite.
+Ta stran spremlja nastavitve, ki vplivajo na vsakodnevno administracijo, in nedavne spremembe vedenja v Ultimate Multisite.
 
-## Druge možnosti
+## Druge možnosti {#other-options}
 
-Območje **Druge možnosti** se nahaja pod **Ultimate Multisite > Settings > Login & Registration**.
+Območje **Druge možnosti** je prikazano pod **Ultimate Multisite > Settings > Login & Registration**.
 
 | Nastavitev | Opis |
 |---|---|
-| **Enable Jumper** (Omogoči Jumper) | Prikazuje orodje hitre navigacije Jumper v adminni strani. Uporabite ga, da se neposredno preskačete na ekrane Ultimate Multisite, mrežne objekte in podporne destinacije za admin. Omogočite ga, če želite ta prihodnji povezavo videti. Omogočite ga, če ne želite tega skrajšanja videti. |
+| **Omogoči Jumper** | Prikaže orodje Jumper za hitro navigacijo v skrbniškem območju. Uporabite ga za neposreden skok na zaslone Ultimate Multisite, omrežne objekte in podprte skrbniške cilje. Onemogočite ga, če ne želite, da je ta bližnjica vidna. |
 
-## Obveščanje o napakahih in telemetri
+## Poročanje o napakah in telemetrija {#error-reporting-and-telemetry}
 
-Nastavitev za vključenje obveščanja o napakahih je odstranjena z strani za nastavitve. Anonimna telemetrija ni vklopljena in na UI ni možnost, da jo omogočite.
+Prejšnja nastavitev za privolitev v poročanje o napakah je bila odstranjena s strani z nastavitvami. Anonimna telemetrija je onemogočena in ni preklopnika v UI, ki bi jo omogočil.
 
-Če imate interne runbooks ali snimke zaslona za stran za nastavitve, odstranite reference do starega polja za vključenje obveščanja o napakahih, tako da administratorji ne iščejo nastavitve, ki ni več prisotna.
+Če vzdržujete interne priročnike za postopke ali posnetke zaslona za stran z nastavitvami, odstranite sklice na staro polje za privolitev v poročanje o napakah, da skrbniki ne bodo iskali nastavitve, ki ni več prisotna.
 
-## Nastavitve za import/export
+## Nastavitve uvoza/izvoza {#importexport-settings}
 
-Tab **Import/Export** opisuje, kakšne nastavitve upravlja in je neposredno povezana z **Ultimate Multisite > Site Export** za arhiviranje strani in mreže. Uporabite tab za nastavitve za konfiguracijo importiranja/eksportiranja, uporabite **Tools > Export & Import** za delovni tok exportiranja/importiranja za eno stran, in uporabite orodje Site Export, če potrebujete celotno arhiviranje mreže.
+Zavihek nastavitev **Uvoz/izvoz** opisuje, katere nastavitve nadzira, in neposredno povezuje na **Ultimate Multisite > Site Export** za arhive spletnih mest in omrežja. Zavihek nastavitev uporabite za konfiguracijo uvoza/izvoza, **Tools > Export & Import** uporabite za potek dela izvoza/uvoza za posamezno spletno mesto, orodje Site Export pa uporabite, ko potrebujete celoten arhiv Network Export.
 
-## Nastavitve konektora AI ponudnika
+## Opozorilo o stanju Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Nastavitve konektora AI ponudnika prikazujejo zdaj le podporne OAuth računske baz:
+Ko je dodatek Domain Seller povezan s HostAfrica, omrežni skrbniki zdaj vidijo opozorilo o nizkem stanju, ki ga je mogoče opustiti, kadar je stanje računa reseller prenizko za zanesljivo obdelavo registracij ali podaljšanj domen.
 
-| Dostavitelj | Postopek nastavitve |
+To obvestilo obravnavajte kot operativno opozorilo: dopolnite stanje reseller HostAfrica, preden sprejmete več plačanih registracij domen, nato se vrnite v nastavitve Domain Seller ali na zaslon za spremljanje domen, da potrdite, da se registracije in podaljšanja lahko nadaljujejo normalno.
+
+## Nastavitve povezovalnika ponudnika AI {#ai-provider-connector-settings}
+
+Nastavitve povezovalnika ponudnika AI zdaj izpostavljajo samo podprte nabore OAuth računov:
+
+| Ponudnik | Potek nastavitve |
 |---|---|
-| **Anthropic Max** | Povežite eno ali več računov Anthropic Max z gumbom OAuth. Uporabite ručno povezavo (manual OAuth fallback), če sandboxed browser ne more samodejno dokončati preusmerjanje. |
-| **OpenAI ChatGPT/Codex** | Povežite račune ChatGPT skozi isti workflow s OAuth-om. Operacije, ki jih podpirajo konektorji, lahko uporablja ChatGPT Codex tool calls po povezavi računa. |
-| **Google AI Pro** | Povežite račune Google AI Pro skozi OAuth, nato pa osvežite konektor, če se seznam računov ne obredi takoj. |
+| **Anthropic Max** | Povežite enega ali več računov Anthropic Max z gumbom OAuth. Uporabite ročno nadomestno možnost OAuth, kadar brskalnik v peskovniku ne more samodejno dokončati preusmeritve. |
+| **OpenAI ChatGPT/Codex** | Povežite račune ChatGPT prek istega poteka dela nabora OAuth. Operacije, ki jih podpira povezovalnik, lahko po povezavi računa uporabljajo klice orodij ChatGPT Codex. |
+| **Google AI Pro** | Povežite račune Google AI Pro prek OAuth, nato osvežite povezovalnik, če se seznam računov ne posodobi takoj. |
 
-Cursor Pro ni več podprt dostavitelj. Odstranite stare interne snimke zaslona (screenshots), runbooks ali korake za vključitev, ki omenjajo nastavitve Cursor Pro ali poti konektorjev.
+Cursor Pro ni več podprt ponudnik. Odstranite stare interne posnetke zaslona, priročnike za postopke ali korake uvajanja, ki omenjajo nastavitvena polja Cursor Pro ali poti povezovalnika.
 
-Ob dodajan ali odstranjevanje računov dostaviteljev vnesite validno e-poštno naslov za račun, ki ga osvežite ali odstranite, in shranite nastavitve dostavitelja pred preizkušanjem operacij, ki se oslanjajo na konektorje.
+Pri dodajanju ali odstranjevanju računov ponudnikov vnesite veljaven e-poštni naslov za račun, ki se osvežuje ali briše, in shranite nastavitve ponudnika, preden preizkusite operacije, podprte s povezovalnikom.

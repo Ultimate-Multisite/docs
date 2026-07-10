@@ -3,13 +3,13 @@ title: Stworzenie biznesu na niszy internetowej
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Budowanie biznesu stron niszowych z Ultimate Multisite
+# Budowanie biznesu stron niszowych z Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Większość osób, które próbują sprzedawać strony internetowe, konkuruje ceną z Wixem, Squarespace i tysiącami freelancerów. I przegrywają. Ci, którzy wygrywają, wybierają konkretną grupę docelową, tworzą rozwiązanie dopasowane do tej grupy i pobierają opłatę za wartość, jaką dostarczają.
 
 Ten kurs uczy Cię, jak zrobić dokładnie to samo, używając Ultimate Multisite.
 
-## Co zbudujesz
+## Co zbudujesz {#what-you-will-build}
 
 Przez cały kurs zbudujesz prawdziwą, działającą sieć o nazwie **FitSite** — platformę stron internetowych stworzoną specjalnie dla studiów fitness, trenerów personalnych i właścicieli siłowni.
 
@@ -23,7 +23,7 @@ Do ostatniego zajęcia FitSite będzie pełnoprawną platformą niszową, która
 
 Będziesz podążać krok po kroku, a na koniec będziesz mieć zarówno działającą platformę, jak i wiedzę, aby powtórzyć ten proces dla dowolnej niszy, którą wybierzesz.
 
-## Dlaczego studia fitness?
+## Dlaczego studia fitness? {#why-fitness-studios}
 
 Potrzebowaliśmy konkretnego przykładu, który każdy może śledzić. Studia fitness działają, ponieważ:
 
@@ -34,7 +34,7 @@ Potrzebowaliśmy konkretnego przykładu, który każdy może śledzić. Studia f
 
 Wszystko, czego się nauczysz, budując FitSite, można bezpośrednio zastosować do dowolnej niszy, którą wybierzesz: restauracji, agentów nieruchomości, kancelarii prawnych, kościołów, wykonawców budowlanych czy dowolnej innej branży.
 
-## Struktura kursu
+## Struktura kursu {#course-structure}
 
 Każde zajęcia wprowadza jedną koncepcję, wyjaśnia, dlaczego jest ona ważna, i prowadzi Cię przez jej wdrożenie w sieci FitSite. Każde zajęcia opiera się na poprzednim.
 
@@ -55,7 +55,7 @@ Każde zajęcia wprowadza jedną koncepcję, wyjaśnia, dlaczego jest ona ważna
 | [13. Scaling Up](lesson-13-growth) | Rosnąć od pierwszych klientów do prawdziwego biznesu | Strategia wzrostu i automatyzacji FitSite |
 | [14. What Comes Next](lesson-14-whats-next) | Rozszerzanie na sąsiadujące nisze i nowe możliwości | Twoja mapa drogowa poza FitSite |
 
-## Wymagania wstępne
+## Wymagania wstępne {#prerequisites}
 
 - Instalacja WordPress Multisite (lub chęć jej skonfigurowania)
 - Aktywna licencja Ultimate Multisite
@@ -63,6 +63,6 @@ Każde zajęcia wprowadza jedną koncepcję, wyjaśnia, dlaczego jest ona ważna
 
 Nie jest wymagane żadne kodowanie. Jeśli nigdy wcześniej nie używałeś Ultimate Multisite, nic straconego — Lekcja 3 zaczyna się od świeżej instalacji.
 
-## Gotowy?
+## Gotowy? {#ready}
 
 Zacznij od [Lekcja 1: Dlaczego nisza wygrywa](lesson-1-why-niche).

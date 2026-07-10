@@ -4,11 +4,11 @@ title: فیلتر - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Filter: wu_username_from_email
+# Filter: wu_username_from_email {#filter-wuusernamefromemail}
 
 فیلتر نام کاربری مشتری جدید.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: ab432839e318d008d082383ff5a18467
 | $new_user_args | `array` | آرایه‌ای از آرگومان‌های کاربر جدید، که ممکن است شامل نام و نام خانوادگی باشد. |
 | $suffix | `string` | رشته‌ای که برای منحصر به فرد کردن نام کاربری به آن اضافه می‌شود. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) در خط ۵۱۶ تعریف شده است.

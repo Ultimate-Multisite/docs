@@ -3,7 +3,7 @@ title: Kedu ihe na ịlanjiri WordPress Multisite?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Naa m ga-adị WordPress Multisite?
+# Naa m ga-adị WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite na-eme gị ịkwado mere site ndị dị n'ụ ha ọkụ ọkụ (single installation). O chebe bụ ihe a anọchịrị, mana ọ dịghịrụ ọrụ (not active) ma ọ bụ default.
 
@@ -60,7 +60,7 @@ Ma ọ bụ code a, nke WordPress ji gị gị file _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -96,9 +96,9 @@ Cuối cùng, hãy đăng nhập lại vào trang WordPress của bạn để tr
 
 Sau khi điền đầy các trường, hãy nhấn nút "Add site" (Thêm trang web). Khi subsite mới được tạo, hãy truy cập nó để đảm bảo rằng subsite hoạt động tốt.
 
-## Các Vấn đề Thường gặp:
+## Các Vấn đề Thường gặp: {#common-problems}
 
-### 1. Tôi có thể tạo trang web mới nhưng không truy cập được.
+### 1. Tôi có thể tạo trang web mới nhưng không truy cập được. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Nếu bạn chọn dùng subdomain, bạn cũng cần thiết lập các wildcard subdomain cho mạng multisite của mình.
 

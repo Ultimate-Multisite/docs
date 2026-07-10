@@ -4,11 +4,11 @@ title: ตัวกรอง - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 ฟิลเตอร์นี้จะส่งคืนรายการเมืองสำหรับรัฐที่อยู่ในประเทศนั้นๆ
 
-## พารามิเตอร์
+## พารามิเตอร์ {#parameters}
 
 | Name | Type | คำอธิบาย |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | รหัส ISO สองตัวอักษรสำหรับรัฐ |
 | $current_country | `\WP_Ultimo\Country\Country` | อินสแตนซ์ของคลาสปัจจุบัน |
 
-### ตั้งแต่
+### ตั้งแต่ {#since}
 
 - 2.0.11
-### แหล่งที่มา
+### แหล่งที่มา {#source}
 
 กำหนดไว้ใน [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) ที่บรรทัด 146
 
 
-## ค่าที่ส่งคืน
+## ค่าที่ส่งคืน {#returns}
 รายการรัฐที่ถูกกรองแล้ว

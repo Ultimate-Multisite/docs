@@ -3,7 +3,7 @@ title: PRO ಥೀಮ್
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ಬಳಸಿ ನಿಮ್ಮ Admin Panel ಅನ್ನು ಕಸ್ಟಮೈಜ್ ಮಾಡುವುದು
+# PRO Theme ಬಳಸಿ ನಿಮ್ಮ Admin Panel ಅನ್ನು ಕಸ್ಟಮೈಜ್ ಮಾಡುವುದು {#customizing-your-admin-panel-with-pro-theme}
 
 ಕ್ಲೈಂಟ್ ಕೆಲಸ ಮಾಡುವಾಗ, WordPress ನ admin dashboard ನಲ್ಲಿ ನಮ್ಮ ಕ್ಲೈಂಟ್‌ಗಳಿಗೆ ಕಸ್ಟಮ್ ಅನುಭವವನ್ನು ನೀಡುವ ಅಗತ್ಯ ಹೆಚ್ಚಾಗಿ ಬರುತ್ತದೆ. ನೀವು ಹೆಚ್ಚು ವೃತ್ತಿಪರ ನೋಟ ಮತ್ತು ಅನುಭವವನ್ನು ಹುಡುಕುತ್ತಿದ್ದರೆ, PRO Theme ನಿಮಗೆ ಸಹಾಯ ಮಾಡಬಹುದು.
 

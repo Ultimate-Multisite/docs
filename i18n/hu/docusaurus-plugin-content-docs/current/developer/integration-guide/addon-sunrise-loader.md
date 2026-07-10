@@ -3,17 +3,17 @@ title: Addon Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Az Ultimate Multisite 2.8.0 egy sunrise bővítményöltőt (extension loader) ad hozzá az add-onokhoz és a benutzerdefini Ultimate Multisite-plugin integrációkhoz, amelyeknek a WordPress sunrise bootrapping alatt kell futniük, anélkül, hogy szerkeszteni kellene a generált `wp-content/sunrise.php` fájlt.
 
-## Mikor kell használni
+## Mikor kell használni {#when-to-use-it}
 
 Sunrise bővítményöltőt akkor kell használni, ha az integrációjának a rendszeres pluginek betöltése előtt kell futnia, például benutzerdefini domain útvonalazás (custom domain routing), host-specifikus kéréskezelés vagy korai hálózat (network) bootrap beállítások.
 
 A normál integrációk esetén előnyben részesíteni kell a rendszeres WordPress plugineket, MU-plugineket és az Ultimate Multisite dokumentált hook-jait. A sunrise kód nagyon korán fut, és kicsi, védelmi és függőségmentesnek kell maradnia.
 
-## A fájl elnevezési konvenció
+## A fájl elnevezési konvenció {#file-naming-convention}
 
 Létrehoz egy PHP fájlt, nevetve `sunrise.php`, egy add-on könyvtárában, amelynek neve `ultimate-multisite-` karakterekkel kezdődik:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 A megeálló fájlokat az add-on útvonalának ABC sorrendjében tölti be.
 
-## Hol helyezzük el a fájlt
+## Hol helyezzük el a fájlt {#where-to-place-the-file}
 
 Helyezze el a fájlt az add-on gyökérkönyvtárában, amely a sunrise viselkedéséért felelős:
 
@@ -45,7 +45,7 @@ A scan a `WP_CONTENT_DIR` relatív értelméhez viszonyít, nem a `WP_PLUGIN_DIR
 
 Ne szerkeszze közvetlenül a generált `wp-content/sunrise.php` fájlt. Az ööltő lehetővé teszi a benutzerdefini kódról, hogy bővítsen a sunrise viselkedését, anélkül, hogy a core sunrise fájlt forgatna (forking), amit az Ultimate Multisite telepít és frissít.
 
-## Elérhető hook-ok és filterek
+## Elérhető hook-ok és filterek {#hooks-and-filters-available}
 
 Az addon sunrise fájlok az Ultimate Multisite domain mapping betöltése után, és a WordPress által `ms_loaded` kiüsselése előtt futnak. Ebben a pontban egy sunrise fájl:
 
@@ -58,7 +58,7 @@ Az Ultimate Multisite a `wu_sunrise_loaded` action-t küldi ki, miután az ööl
 
 Csak olyan függvényeket hívjon meg, amelyek már betöltődtek a sunrise fázisában. Kerülje el a adatbázis-intensive munkát, a template rendering-t, az HTTP kéréseket és azokat a kódot, amelyek feltételezik, hogy a normál plugin betöltési sorrendje befejeződött.
 
-## Minimális példa
+## Minimális példa {#minimal-example}
 
 ```php
 <?php

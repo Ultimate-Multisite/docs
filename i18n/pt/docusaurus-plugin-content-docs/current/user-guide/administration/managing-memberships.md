@@ -3,7 +3,7 @@ title: Gerenciando Assinaturas
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gerenciando Assinaturas
+# Gerenciando Assinaturas {#managing-memberships}
 
 No Ultimate Multisite, você pode gerenciar assinaturas e acessar todas as subscrições da sua rede. Revise e edite detalhes das assinaturas, como planos e produtos, o número de sites, valor de cobrança e frequência, histórico de pagamentos e carimbos de data/hora.
 

@@ -3,13 +3,13 @@ title: Sunrise konstanti määratamine Clostil
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Sunrise konstanti Closte'is tõstmine true-ksiks
+# Sunrise konstanti Closte'is tõstmine true-ksiks {#setting-the-sunrise-constant-to-true-on-closte}
 
 Mõแน hosti tarjoaja lukustab wp-config.php turvalisuse tõttu. See tähendab, et Ultimate Multisite ei saa automaatselt muuta faili ja lisada vajalikke konstante, et domeenimappimist ja muid funktsioone töötaks. Closte on üks sellise hostide.
 
 Kuid Closte pakub viiva selle, kuidas konstante lisada wp-config.php turvaliselt. Pead lihtsalt järgima all olevat sammude:
 
-## Closte dashboardil
+## Closte dashboardil {#on-the-closte-dashboard}
 
 Enne, [logi sisse oma Closte kontole](https://app.closte.com/), klõpsake Sites menüüpunktile, seejärel klõpsake Dashboard-linki sellele lehel, kus töötate:
 

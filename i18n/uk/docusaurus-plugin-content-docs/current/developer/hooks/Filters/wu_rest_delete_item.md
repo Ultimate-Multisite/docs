@@ -4,11 +4,11 @@ title: Фільтр - wu_rest_delete_item
 sidebar_label: wu_rest_delete_item
 _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 ---
-# Фільтр: wu_rest_delete_item
+# Фільтр: wu_rest_delete_item {#filter-wurestdeleteitem}
 
 Фільтрує, чи дозволено продовжувати обробку запиту.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: ea4a29625c1aef260edc421b300d59cc
 | $rest_base | `array` | Слаг сутності. |
 | $this | `\Base_Manager` | Екземпляр об'єкта. |
 
-### Зверніть увагу
+### Зверніть увагу {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено у [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L440) на рядку 440

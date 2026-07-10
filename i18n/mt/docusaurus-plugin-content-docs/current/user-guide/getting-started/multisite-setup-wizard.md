@@ -3,7 +3,7 @@ title: Wizard għall-Istitwixxi Multitesse
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite jidda un wizard mhux huwa built-in li jidda WordPress, li jidda jidda WordPress standard biex jidda networks WordPress. Dan jidda l-esigenza ta li tġib manualment għal edit tal-`wp-config.php` jew li tgħmli komandi tal-database.
 
@@ -11,13 +11,13 @@ Ultimate Multisite jidda un wizard mhux huwa built-in li jidda WordPress, li jid
 Jekk il-installazzjoni tiegħek ta WordPress hija già qed tservi bħala network Multisite, tista' tgħmli bypass għall-step dan kollha. Il-wizard juri se jidda biss meta Multisite m'għandux jkun aktib.
 :::
 
-## Meta Juri l-Wizard?
+## Meta Juri l-Wizard? {#when-does-the-wizard-appear}
 
 Meta tagħmel attivazzjoni tal-Ultimate Multisite fuq installazzjoni WordPress standard (li mhix Multisite), il-plugin jifhax li Multisite m'għandux jkun aktib u jirrettija'k awtomatik għall-Multisite Setup Wizard invece tal-wizard ta l-setup regolari.
 
 Tista' tivvolaqhu dirett fuq **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prerequisiti
+## Prerequisiti {#prerequisites}
 
 Qabel ma tgħmli l-wizard, assigurja li:
 
@@ -29,7 +29,7 @@ Qabel ma tgħmli l-wizard, assigurja li:
 Il-wizard jmodifika il-file `wp-config.php` tiegħek u jikkonċerta tables tal-database ġodda. Imma' l-progressa, għandu tivvolaq backup.
 :::
 
-## Step 1: Welcome (Benġix)
+## Step 1: Welcome (Benġix) {#step-1-welcome}
 
 Il-screen ewliem jispjega x'ja WordPress Multisite u x'għandu jiddegħel:
 
@@ -42,11 +42,11 @@ Il-screen ewliem jispjega x'ja WordPress Multisite u x'għandu jiddegħel:
 
 Iċċekkja **Continue** biex tmur in avanti.
 
-## Step 2: Network Configuration (Konfigurazzjoni ta' Network)
+## Step 2: Network Configuration (Konfigurazzjoni ta' Network) {#step-2-network-configuration}
 
 Dan l-step jista' jiddehek biex tkonfiguri l-settings tal-network tiegħek.
 
-### Site Structure (Struttura tal-Site)
+### Site Structure (Struttura tal-Site) {#site-structure}
 
 Scegli kif titola siti reti tieħek:
 
@@ -57,11 +57,11 @@ Scegli kif titola siti reti tieħek:
 Jekk tagħżlu sub-domains, għandek biex tsetConfiga **wildcard DNS** u **wildcard SSL certificate** għall-domain tiegħek. Il-hosts WordPress gestiti biex jgħażlu dan l-istruttura awtomatikament. Applika [Ultimate Multisite 101](./ultimate-multisite-101) għal konfrontazzjoni dettaljata.
 :::
 
-### Titoli Reġistraliet (Network Title)
+### Titoli Reġistraliet (Network Title) {#network-title}
 
 Iscrivi isimħaw għall retta tiegħek. Dan jista' jintlaq minn titol it-sit tiegħek tal-aħħar ma jinkludi "Network". Tista' tġiegħel xi ħaġa aktar fil-post imħobb tal-retta (network settings).
 
-### Email Admin Reġistraliet (Network Admin Email)
+### Email Admin Reġistraliet (Network Admin Email) {#network-admin-email}
 
 L-indirizz email li jinkludi l-notifikazzjonijiet ta amministrazzjoni tal-retta. Dan jista' jintlaq minn l-indirizz email tal-utent kien.
 
@@ -69,7 +69,7 @@ L-indirizz email li jinkludi l-notifikazzjonijiet ta amministrazzjoni tal-retta.
 
 Wara ma tmelliet il-campi, issaċċa **Continue** biex tkompli.
 
-## Iż-Żgier 3: Installazzjoni (Step 3: Installation)
+## Iż-Żgier 3: Installazzjoni (Step 3: Installation) {#step-3-installation}
 
 Iċċakka l-botton **Install** biex tibda. Il-wizard jagħmel it-tliet fasi awtomatiku f sequenza, u għal kulħadd juri l-progress tiegħu fil-mument:
 
@@ -96,7 +96,7 @@ Mdaqqa l-koll step jgħidu b'suċċess, taraw status aħħar aħħar:
 
 Il-wizard jmur poi għall-scherm tal-kompletament awtomatik.
 
-## Step 4: Kompliet
+## Step 4: Kompliet {#step-4-complete}
 
 Mdaqqa l-installazzjoni tmur, taraw messaġġ ta suċċess li jkonferma li WordPress Multisite huwa abilitat.
 
@@ -108,7 +108,7 @@ Tista' tkompli l-setup tal-Ultimate Multisite biex tkun konfigurata l-platform t
 Dopo che l'installazione del multisite è terminata, il tuo browser verrà reindirizzato tramite il nuovo amministratore di rete abilitato. Potrebbe essere necessario effettuare nuovamente il login poiché i cookie di autenticazione vengono aggiornati per l'ambiente multisite.
 :::
 
-## Fallback per la configurazione manuale
+## Fallback per la configurazione manuale {#manual-setup-fallback}
 
 Se il wizard non riesce a scrivere sul file `wp-config.php` (a causa dei permessi del file o delle restrizioni del server), ti mostrerà esattamente il codice che devi aggiungere manualmente:
 
@@ -117,9 +117,9 @@ Se il wizard non riesce a scrivere sul file `wp-config.php` (a causa dei permess
 
 Dopo aver apportato le modifiche manuali, aggiorna la pagina e il wizard rileverà che il multisite è ora attivo.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-### Il wizard dice che wp-config.php non è scrivibile
+### Il wizard dice che wp-config.php non è scrivibile {#the-wizard-says-wp-configphp-is-not-writable}
 
 Il processo del tuo web server ha bisogno di permessi di scrittura sul file `wp-config.php`. Puoi fare una delle seguenti cose:
 
@@ -127,7 +127,7 @@ Il processo del tuo web server ha bisogno di permessi di scrittura sul file `wp-
 - Usare le istruzioni di fallback per la configurazione manuale fornite dal wizard
 - Chiedere assistenza al tuo provider di hosting
 
-### I siti non sono accessibili dopo l'installazione (subdomini)
+### I siti non sono accessibili dopo l'installazione (subdomini) {#sites-are-not-accessible-after-setup-subdomains}
 
 Se hai scelto la struttura del subdominio, devi configurare il **wildcard DNS** per il tuo dominio. Aggiungi un record DNS:
 
@@ -139,7 +139,7 @@ Value: [la tua IP del server]
 
 Verifica con il tuo provider di hosting se non sei sicuro su come configurarlo.
 
-### Problemi di autenticazione dopo l'installazione
+### Problemi di autenticazione dopo l'installazione {#authentication-issues-after-setup}
 
 Se sei disconnesso o riscontri errori sui cookie dopo la configurazione del multisite:
 
@@ -147,7 +147,7 @@ Se sei disconnesso o riscontri errori sui cookie dopo la configurazione del mult
 2. Effettua nuovamente il login a `yourdomain.com/wp-login.php`
 3. Se il problema persiste, controlla che il tuo `wp-config.php` non abbia `COOKIE_DOMAIN` impostato su `false` — questo è un problema noto nelle installazioni multisite su subdomain
 
-### È fallito un passaggio durante l'installazione
+### È fallito un passaggio durante l'installazione {#a-step-failed-during-installation}
 
 אם אחד maħruq tal-installazzjoni juri xi errore:
 

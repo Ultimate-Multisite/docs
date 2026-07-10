@@ -1,154 +1,156 @@
 ---
-title: Rekisteröintilomakkeen muokkaaminen
+title: Rekisteröitymislomakkeen mukauttaminen
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Rekisteröintolomakkeen muokkaaminen
+# Rekisteröintilomakkeen mukauttaminen {#customizing-your-registration-form}
 
-Jotta verkostosi näyttäisi ainutlaatuiselta kaikista muista WordPress-alustalla rakennetuista SaaS-palveluista, Ultimate Multisite antaa sinun räätälöidä rekisteröitymispainikkeesi ja sisäänkirjautumispainikkeesi ominaisuudella **Checkout Forms**.
+Jotta verkostosi näyttäisi ainutlaatuiselta verrattuna kaikkiin muihin WordPress-alustalle rakennettuihin SaaS-palveluihin, Ultimate Multisite antaa sinun mukauttaa rekisteröinti- ja kirjautumissivujasi **Checkout Forms** -ominaisuudellamme.
 
-Vaikka ne ovat helppo tapa kokeilla erilaisia lähestymistapoja uuden asiakkaan konversioon pyrkivän, niitä käytetään pääasiassa henkilökohtaisten rekisteröitymislomakkeiden luomiseen. Tässä artikkelissa otamme sinulle esimerkin siitä, miten voit tehdä sen.
+Vaikka ne ovat helppo ja joustava tapa kokeilla erilaisia lähestymistapoja uusien asiakkaiden konvertoimiseksi, niitä käytetään enimmäkseen personoitujen rekisteröintilomakkeiden luomiseen. Tämän artikkelin tarkoituksena on näyttää, miten voit tehdä sen.
 
-## Kirjautumispainikkeet ja rekisteröitymisivut:
+## Kirjautumis- ja rekisteröintisivut: {#login-and-registration-pages}
 
-Ultimate Multisite -asennuksen jälkeen se luo automaattisesti räätälöidyt kirjautumis- ja rekisteröitymissivut pääsivullesi. Voit muuttaa näitä oletus-sivuja milloin tahansa siirtyäksesi **Ultimate Multisite > Settings > Login & Registration** -sivulle.
+Ultimate Multisite luo asennuksen yhteydessä automaattisesti mukautetut kirjautumis- ja rekisteröintisivut pääsivustollesi. Voit vaihtaa näitä oletussivuja milloin tahansa siirtymällä sivulle **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Kirjautumisen ja rekisteröinnin asetussivu](/img/config/settings-general.png)
 
-Tässä on koko näkymä kirjautumisen ja rekisteröitymisen asetussivusta:
+Tässä on koko näkymä kirjautumisen ja rekisteröinnin asetussivusta:
 
-![Kirjautumisen ja rekisteröitymisen asetusten kokonäkymä](/img/config/settings-login-registration-full.png)
+![Kirjautumisen ja rekisteröinnin asetusten koko sivu](/img/config/settings-login-registration-full.png)
 
-Katsotaanpa kerralla niitä vaihtoehtoja, joita voit muokata **Login & Registration** -sivulla:
+Katsotaan jokaista vaihtoehtoa, jota voit mukauttaa **Login & Registration** -sivulla:
 
-  * **Enable registration (Rekisteröitymisen salliminen):** Tämä vaihtoehto mahdollistaa tai estää rekisteröinnin verkostossasi. Jos se on pois päältä, asiakkaat eivät voi rekisteröity eikä tilata tuottejasi.
+  * **Ota rekisteröinti käyttöön:** Tämä vaihtoehto ottaa rekisteröinnin käyttöön tai poistaa sen käytöstä verkostossasi. Jos se on poistettu käytöstä, asiakkaasi eivät voi rekisteröityä eivätkä tilata tuotteitasi.
 
-  * **Enable email verification (Sähköpostivahvistuksen salliminen):** Jos tämä vaihtoehto on päällä, ilmaisella tai kokeilujakson kanssa maksullisella suunnitelmalla tilaavat asiakkaat saavat vahvistussähköpostin ja heidän on klikattava vahvistuslinkki sivustonsa luomiseksi.
+  * **Ota sähköpostivahvistus käyttöön:** Jos tämä vaihtoehto on otettu käyttöön, asiakkaat, jotka tilaavat ilmaisen suunnitelman tai maksullisen suunnitelman kokeilujaksolla, saavat vahvistussähköpostin ja heidän on napsautettava vahvistuslinkkiä, jotta heidän verkkosivustonsa luodaan.
 
-* **Oletusrekisteröintisivu:** Tämä on oletussivu rekisteröitymiseen. Tämän sivun tulee julkaista verkkosivustollasi ja siinä täytyy olla rekisteröintilomake (jota kutsutaan myös ostoskori-/tilauslomakkeeksi) – jonne asiakkaat tilaavat tuotteidesi. Voit luoda kuinka monta rekisteröintisivua ja tilauslomaketta haluat, mutta muista lisätä tilauslomakkeen shortcode rekisteröintisivulle, jos muuten se ei näy.
+  * **Oletusrekisteröintisivu:** Tämä on rekisteröinnin oletussivu. Tämän sivun on oltava julkaistu verkkosivustollasi ja siinä on oltava rekisteröintilomake (tunnetaan myös nimellä checkout-lomake) – jossa asiakkaasi tilaavat tuotteitasi. Voit luoda niin monta rekisteröintisivua ja checkout-lomaketta kuin haluat, mutta muista lisätä checkout-lomakkeen shortcode rekisteröintisivulle, muuten se ei näy.
 
-* **Käytä omaa kirjautumissivua:** Tämä vaihtoehto antaa sinun käyttää räätälöityä kirjautumissivua, joka on erilainen kuin oletuslomake `wp-login.php`. Jos tätä vaihtoehtoa kytketään päälle, voit valita, mikä sivu käytetään sisäänkirjautumiseen **Oletuskirjautumissivu** -vaihtoehdossa (juuri sen alapuolella).
+  * **Käytä mukautettua kirjautumissivua:** Tämä vaihtoehto antaa sinun käyttää mukautettua kirjautumissivua oletusarvoisen wp-login.php-sivun sijaan. Jos tämä vaihtoehto on otettu käyttöön, voit valita, mitä sivua käytetään kirjautumiseen **Oletuskirjautumissivu**-vaihtoehdossa (heti alla).
 
-* **Piilota alkuperäinen kirjautumisosoite (`wp-login.php`):** Jos haluat piilottaa alkuperäisen kirjautumisosoitteen, voit kytkeä tämän vaihtoehdon päälle. Tämä on hyödyllistä estämään brute-force -hyökkäyksiä. Jos tämä vaihtoehto on aktiivinen, Ultimate Multisite näyttää 404-virheen, kun käyttäjä yrittää käyttää alkuperäistä `wp-login.php` -linkkiä.
+  * **Piilota alkuperäinen kirjautumisosoite (wp-login.php)** : Jos haluat piilottaa alkuperäisen kirjautumis-URL:n, voit ottaa tämän vaihtoehdon käyttöön. Tämä on hyödyllistä brute-force-hyökkäysten estämiseksi. Jos tämä vaihtoehto on käytössä, Ultimate Multisite näyttää 404-virheen, kun käyttäjä yrittää käyttää alkuperäistä wp-login.php-linkkiä
 
-* **Pakota synkroninen sivun julkaisu:** Kun asiakas tilaa tuotteen verkossa, uusi odottava sivu on muunnettava todelliseksi verkko-sivuksi. Julkaisuvaihe tapahtuu Job Queue:n kautta asynkronisesti. Aktivoimalla tämän vaihtoehdon pakotat julkaisun tapahtuvan samassa pyynnössä kuin rekisteröityminen.
+  * **Pakota synkroninen sivuston julkaisu:** Kun asiakas tilaa tuotteen verkostossa, uusi odottava sivusto on muunnettava oikeaksi verkostosivustoksi. Julkaisuprosessi tapahtuu Job Queue -jonon kautta asynkronisesti. Ota tämä vaihtoehto käyttöön pakottaaksesi julkaisun tapahtumaan samassa pyynnössä kuin rekisteröityminen.
 
-Nyt tarkastellaan muita vaihtoehtoja, jotka ovat edelleen relevantteja kirjautumisen ja rekisteröinnin prosessille. Ne löytyvät **Muut vaihtoehdot** -osiosta samalta Kirjautumis- ja rekisteröintisivulta:
+Katsotaan nyt muita vaihtoehtoja, jotka liittyvät edelleen kirjautumis- ja rekisteröintiprosessiin. Ne ovat saman Login & registration -sivun **Muut vaihtoehdot** -kohdan alapuolella:
 
-* **Oletusrooli:** Tämä on rooli, jonka asiakkaat saavat omalle verkkosivulle rekisteröitymisen jälkeen.
+  * **Oletusrooli:** Tämä on rooli, joka asiakkaillasi on verkkosivustollaan rekisteröitymisprosessin jälkeen.
 
-* **Ota Jumper:** Tämä mahdollistaa Jumper -lyhyen reitin hallintapaneelissa. Jumper antaa ylläpitäjille nopeasti siirtyä Ultimate Multisite -sivuihin, verkkoobjekteihin ja muihin tuettuihin kohteisiin ilman, että tarvitsee selata jokaisen valikkoa. Voit sammuttaa sen, jos haluat piilottaa tämän nopean navigointityökalun hallintapaneelista.
+  * **Ota Jumper käyttöön:** Ottaa Jumper-pikakuvakkeen käyttöön hallinta-alueella. Jumper antaa järjestelmänvalvojien siirtyä nopeasti Ultimate Multisite -näkymiin, verkosto-objekteihin ja muihin tuettuihin kohteisiin ilman, että heidän tarvitsee selata jokaista valikkoa. Poista se käytöstä, jos haluat piilottaa tämän nopean navigointityökalun hallintakäyttöliittymästä.
 
-  * **Lisää käyttäjiä myös pääsivustolle:** Tämän vaihtoehdon aktivoiminen lisää käyttäjän myös verkoston pääsivustolle rekisteröitymisprosessin jälkeen. Jos aktivoit tämän vaihtoehdon, sen alapuolelle ilmestyy myös valinta näiden käyttäjien **oletusroolista** verkkosivustollasi.
+  * **Lisää käyttäjät myös pääsivustolle:** Tämän vaihtoehdon käyttöönotto lisää käyttäjän myös verkostosi pääsivustolle rekisteröitymisprosessin jälkeen. Jos otat tämän vaihtoehdon käyttöön, heti sen alle ilmestyy myös vaihtoehto näiden käyttäjien **oletusroolin** asettamiseksi verkkosivustollasi.
 
-  * **Aktivoi useat tilit:** Mahdollista käyttäjille saada tilin eri sivustoilla verkostossasi samalla sähköpostiosoitteella. Jos tämä vaihtoehto on pois päältä, asiakkaat eivät pysty luomaan tiliin muihin verkkosivustoihin, jotka toimivat verkostossasi ja joilla on sama sähköpostiosoite.
+  * **Ota useat tilit käyttöön:** Salli käyttäjien pitää tilejä verkostosi eri sivustoilla samalla sähköpostiosoitteella. Jos tämä vaihtoehto on pois käytöstä, asiakkaasi eivät voi luoda tiliä muille verkostossasi toimiville verkkosivustoille samalla sähköpostiosoitteella.
 
-Nämä ovat kaikki ne vaihtoehdot, joita voit muokata kirjautumiseen ja rekisteröitymiseen liittyen! Älä unohda tallentaa asetuksesi, kun olet valmis muokkaamaan niitä.
+Ja siinä ovat kaikki kirjautumiseen ja rekisteröintiin liittyvät vaihtoehdot, joita voit mukauttaa! Älä unohda tallentaa asetuksiasi, kun olet lopettanut niiden muokkaamisen.
 
-## Useiden rekisteröintilomakkeiden käyttö:
+## Useiden rekisteröintilomakkeiden käyttäminen: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 tarjoaa kassaprosessin lomakkeen editorin, jonka avulla voit luoda kuinka monta lomaketta haluat, eri kentillä, tuotteilla jne.
+Ultimate Multisite 2.0 tarjoaa checkout-lomake-editorin, jonka avulla voit luoda niin monta lomaketta kuin haluat, eri kentillä, tarjolla olevilla tuotteilla jne.
 
-Sekä kirjautumissivulle että rekisteröintilomakkeelle on upotettu lyhyitä koodinpätkiä (shortcodes): **[wu_login_form]** kirjautumissivulla ja **[wu_checkout]** rekisteröintilomakkeelle. Voit muokata rekisteröintilomaketta tarkemmin rakentamalla tai luomalla kassalomakkeita.
+Sekä kirjautumis- että rekisteröintisivut upotetaan shortcodeilla: **[wu_login_form]** kirjautumissivulla ja**[wu_checkout]** rekisteröintisivua varten. Voit mukauttaa rekisteröintisivua lisää rakentamalla tai luomalla checkout-lomakkeita.
 
-Tämän ominaisuuden avaamiseksi siirry vasemmassa sivupalkissa olevaan **Checkout Forms** -valikkoon.
+Pääset tähän ominaisuuteen siirtymällä vasemman sivupalkin **Checkout Forms** -valikkoon.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Checkout Forms -valikko sivupalkissa](/img/config/checkout-forms-list.png)
 
-Tällä sivulla näet kaikki omistamasi kassalomakkeet.
+Tällä sivulla näet kaikki checkout-lomakkeesi.
 
-Jos haluat luoda uuden, klikkaa vain sivun yläreunassa **Add Checkout Form** -painiketta.
+Jos haluat luoda uuden, napsauta sivun yläosassa **Lisää checkout-lomake**.
 
-Voit valita näistä kolmesta vaihtoehdosta lähtöpisteenä: yksivaiheinen, monivaiheinen tai tyhjä. Valitsessasi voit klikata **Siirry editoriin**.
+Voit valita lähtökohdaksesi yhden näistä kolmesta vaihtoehdosta: yksi vaihe, monivaiheinen tai tyhjä. Napsauta sitten **Siirry editoriin**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Lisää checkout-lomake yhden vaiheen, monivaiheisen tai tyhjän vaihtoehdoilla](/img/config/checkout-forms-list.png)
 
-Vaihtoehtoisesti voit muokata tai kopioida jo olemassa olevia lomakkeita klikkaamalla niiden nimen alla olevia vaihtoehtoja. Siellä löydät myös vaihtoehdot lomakkeen lyhyen koodin (shortcode) kopioimiseen tai lomakkeen poistamiseen.
+Vaihtoehtoisesti voit muokata tai monistaa jo olemassa olevia lomakkeita napsauttamalla niiden nimen alla olevia vaihtoehtoja. Sieltä löydät myös vaihtoehdot lomakkeen shortcoden kopioimiseen tai lomakkeen poistamiseen.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Checkout-lomakkeen hover-toiminnot: muokkaa, monista ja poista](/img/config/checkout-form-hover-actions.png)
 
-Jos valitset yksivaiheisen tai monivaiheisen, kassalomake on jo esivalmisteltu perusvaiheilla sen toimimiseksi. Sitten voit halutessasi lisätä siihen ylimääräisiä vaiheita.
+Jos valitset yhden vaiheen tai monivaiheisen, checkout-lomake on jo valmiiksi täytetty sen toimimiseen tarvittavilla perusvaiheilla. Sen jälkeen voit halutessasi lisätä siihen ylimääräisiä vaiheita.
 
-### Kassalomakkeen muokkaaminen:
+### Checkout-lomakkeen muokkaaminen: {#editing-a-checkout-form}
 
-Kuten aiemmin mainitsimme, voit luoda kassalomakkeita eri tarkoituksiin. Tässä esimerkissä teemme työtä rekisteröintilomakkeen kanssa.
+Kuten aiemmin mainitsimme, voit luoda checkout-lomakkeita eri tarkoituksiin. Tässä esimerkissä työskentelemme rekisteröintilomakkeen parissa.
 
-Siirry ensin kassalomakkeen editoriin ja anna lomakkeelle nimen (jota käytetään vain sisäiseen viittaukseen) ja slugin (jota käytetään lyhyen koodin luomiseen, esimerkiksi).
+Kun olet siirtynyt checkout-lomake-editoriin, anna lomakkeellesi nimi (jota käytetään vain sisäisenä viitteenä) ja slug (käytetään esimerkiksi shortcakejen luomiseen).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Kassalomakkeen editori, jossa on nimi- ja slug-kentät](/img/config/checkout-form-name-slug.png)
 
-Lomakkeet koostuvat vaiheista ja kentistä. Voit lisätä uuden vaiheen klikkaamalla **Lisää uusi kassavaihe**.
+Lomakkeet koostuvat vaiheista ja kentistä. Voit lisätä uuden vaiheen napsauttamalla **Lisää uusi kassavaihe**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Lisää uusi kassavaihe -painike](/img/config/checkout-form-add-step.png)
 
-Modaalin ikkunan ensimmäisellä välilehdellä täytä lomakkeen vaiheen sisältö. Anna sille ID:n, nimen ja kuvauksen. Nämä kohdat käytetään pääasiassa sisäisesti.
+Täytä modaali-ikkunan ensimmäisellä välilehdellä lomakkeesi vaiheen sisältö. Anna sille ID, nimi ja kuvaus. Näitä kohteita käytetään enimmäkseen sisäisesti.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Kassavaiheen sisältövälilehti, jossa on ID, nimi ja kuvaus](/img/config/checkout-form-step-content.png)
 
-Seuraavaksi aseta vaiheen näkyvyys. Voit valita vaihtoehdon **Näytä aina**, **Näytä vain kirjautuneille käyttäjille** tai **Näytä vain vieraille**.
+Aseta seuraavaksi vaiheen näkyvyys. Voit valita vaihtoehdoista **Näytä aina** , **Näytä vain kirjautuneille käyttäjille** tai **Näytä vain vieraille**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Kassavaiheen näkyvyysasetukset](/img/config/checkout-form-step-visibility.png)
 
-Lopeta lopuksi vaiheen tyylin määrittely. Nämä ovat valinnaisia kenttiä.
+Määritä lopuksi vaiheen tyyli. Nämä kentät ovat valinnaisia.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Kassavaiheen tyylin määritys](/img/config/checkout-form-step-style.png)
 
-Nyt on aika lisätä kenttiä ensimmäiseen vaiheeseen. Klikkaa vain **Lisää uusi kenttä** ja valitse haluamasi osion tyyppi.
+Nyt on aika lisätä kenttiä ensimmäiseen vaiheeseemme. Napsauta vain **Lisää uusi kenttä** ja valitse haluamasi osion tyyppi.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Lisää uusi kenttä -painike](/img/config/checkout-form-add-field-button.png)![Kenttätyypin valinnan pudotusvalikko](/img/config/checkout-form-field-type-dropdown.png)
 
-Jokaisella kentällä on erilaiset parametrit, jotka täytyy täyttää. Tämän ensimmäisen vaiheen kohdalla valitsemme **Käyttäjätunnus** -kentän.
+Jokaisella kentällä on eri parametreja täytettäväksi. Tähän ensimmäiseen aloitukseen valitsemme **Käyttäjätunnus**-kentän.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Käyttäjätunnus-kentän määritys](/img/config/checkout-form-username-content.png)![Käyttäjätunnus-kentän parametrit](/img/config/checkout-form-username-visibility.png)![Käyttäjätunnus-kentän lisäasetukset](/img/config/checkout-form-username-style.png)
 
-Voit lisätä kuinka monta vaihetta ja kenttää tahansa tarvitaksesi. Tuotteidesi näyttämiseen asiakkaiden valitsemiseksi käytä Hintatasoa (Pricing Table) -kenttää. Jos haluat antaa asiakkaillesi valita mallin, lisää Mallivalinta (Template Selection) -kenttä jne.
+Voit lisätä niin monta vaihetta ja kenttää kuin tarvitset. Jos haluat näyttää tuotteesi asiakkaillesi, jotta he voivat valita yhden, käytä hinnoittelutaulukon kenttää. Jos haluat antaa asiakkaidesi valita mallipohjan, lisää mallipohjan valintakenttä. Ja niin edelleen.
 
-_**Huomautus:** Jos luot tuotteen checkout-lomakkeen luomisen jälkeen, sinun on lisättävä tuote Hintatason osioon. Jos et lisää sitä, tuote ei ilmesty asiakkaidesivulle rekisteröitymissivulla._
+![Kassalomakkeen editori, jossa on mallipohjan valintakenttä](/img/config/checkout-form-with-template-field.png)
 
-_**Huomautus 2:** Käyttäjätunnus (username), sähköposti (email), salasana (password), sivuston nimi (site title), sivuston URL-osoite (site URL), tilausyhteenveto (order summary), maksutapa (payment) ja lähetä-painike (submit button) ovat pakollisia kenttiä checkout-lomakkeen luomiseksi._
+_**Huomautus:** Jos luot tuotteen kassalomakkeen luomisen jälkeen, sinun täytyy lisätä tuote hinnoittelutaulukon osioon. Jos et lisää sitä, tuote ei näy asiakkaillesi rekisteröitymissivulla._
 
-Kun työskentelet checkout-lomakkeen kanssa, voit aina käyttää **Esikatselua** (Preview) -painiketta nähdäksesi, miltä lomake näyttää asiakkaalle. Voit myös vaihtaa näkymää olemassa olevana käyttäjänä tai vierailijana.
+_**Huomautus 2:** käyttäjätunnus, sähköposti, salasana, sivuston otsikko, sivuston URL, tilauksen yhteenveto, maksu ja lähetyspainike ovat pakollisia kenttiä kassalomakkeen luomiseksi._
 
-![Katselupain painike kassalleen laadussa](/img/config/checkout-form-preview-button.png)![Kassauslomakkeen esikatselu vierailijana tai olemassa olevana käyttäjänä](/img/config/checkout-form-preview-modal.png)
+Kun työskentelet kassalomakkeesi parissa, voit aina käyttää Esikatselu-painiketta nähdäksesi, miten asiakkaasi näkevät lomakkeen. Voit myös vaihtaa näkymää olemassa olevan käyttäjän ja vierailijan välillä.
 
-Lopulta **Advanced Options** -osiossa voit määrittää viestin kiitossivulle, lisätä osioita konversioiden seurantaa varten, lisätä omaa CSS:ää kassasivullesi tai rajoittaa lomakkeen tiettyihin maihin.
+![Esikatselu-painike kassalomakkeen editorissa](/img/config/checkout-form-preview-button.png)![Kassalomakkeen esikatselu vierailijana tai olemassa olevana käyttäjänä](/img/config/checkout-form-preview-modal.png)
 
-![Tarkemmat vaihtoehdot kiitossivulla, konversioiden seurannalla ja omalla CSS:llä](/img/config/checkout-form-advanced.png)
+Lopuksi kohdassa **Lisäasetukset** voit määrittää **Kiitos**-sivun viestin, lisätä koodinpätkiä konversioiden seurantaan, lisätä mukautettua CSS:ää kassalomakkeeseesi tai rajoittaa sen tiettyihin maihin.
 
-Voit myös käynnistää tai sammuttaa kassasivulomakkeen manuaalisesti kytkemällä tätä vaihtoehtoa oikean sarakkeen painikkeessa, tai poistaa lomakkeen pysyvästi.
+![Lisäasetukset, joissa on Kiitos-sivu, konversioseuranta ja mukautettu CSS](/img/config/checkout-form-advanced.png)
 
-![Aktiivinen kytkin ja poisto-vaihtoehto kassasivulomakkeelle](/img/config/checkout-form-active.png)
+Voit myös ottaa kassalomakkeen käyttöön tai poistaa sen käytöstä manuaalisesti vaihtamalla tätä asetusta oikeassa sarakkeessa, tai poistaa lomakkeen pysyvästi.
 
-Älä unohda tallentaa kassasivulomakkeen!
+![Aktiivinen-kytkin ja poistovaihtoehto kassalomakkeelle](/img/config/checkout-form-active.png)
 
-![Tallenna kassasivulomake -painike](/img/config/checkout-form-save.png)
+Älä unohda tallentaa kassalomakettasi!
 
-Lomakkeen lyhyen koodin (shortcode) saamiseksi napsauta **Generate Shortcode** -painiketta ja kopioi modal-ikkunassa näkyvä tulos.
+![Tallenna kassalomake -painike](/img/config/checkout-form-save.png)
 
-![Lyhyen koodin luonti -modal, josta voi kopioida lyhyen koodin](/img/config/checkout-form-editor.png)
+Saat lomakkeesi lyhytkoodin napsauttamalla **Luo lyhytkoodi** ja kopioimalla modaali-ikkunassa näkyvän tuloksen.
 
-_**Huomautus:** Sinun on lisättävä tämä lyhyt koodi rekisteröintisivullesi, jotta tämä kassasivulomake voidaan lisätä siihen._
+![Luo lyhytkoodi -modaali, jossa on kopioitava lyhytkoodi](/img/config/checkout-form-editor.png)
 
-## Tuotteiden ja mallien valitseminen URL-parametrien avulla:
+_**Huomautus:** Sinun täytyy lisätä tämä lyhytkoodi rekisteröitymissivullesi, jotta tämä kassalomake lisätään siihen._
 
-Jos haluat luoda räätälöityjä hinnoittelutabelia tuotteillesi ja valita kassasivulla etukäteen, mitä tuotetta tai mallia asiakas valitsee hintatabelistasi tai mallisivulta, voit käyttää URL-parametreja tähän.
+## Tuotteiden ja mallipohjien esivalinta URL-parametrien avulla: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Suunnitelmien kohdalla:**
+Jos haluat luoda mukautettuja hinnoittelutaulukoita tuotteillesi ja esivalita kassalomakkeessa tuotteen tai mallipohjan, jonka asiakkaasi valitsee hinnoittelutaulukostasi tai mallipohjasivultasi, voit käyttää tähän URL-parametreja.
 
-Siirry kohtaan **Ultimate Multisite > Products > Select a plan**. Näet sivun yläosassa painikkeen **Click to copy Shareable Link** (Napsauta kopioi jaettava linkki). Tämä on linkki, jota voit käyttää kyseisen suunnitelman etukäteen valitsemiseen kassasivullasi.
+### **Paketeille:** {#for-plans}
 
-![Tuotesivu ja jaettavan linkin painike](/img/config/products-list.png)
+Siirry kohtaan **Ultimate Multisite > Tuotteet > Valitse paketti**. Sinun pitäisi nähdä **Napsauta kopioidaksesi jaettava linkki** -painike sivun yläosassa. Tämä on linkki, jota voit käyttää tämän tietyn paketin esivalintaan kassalomakkeessasi.
 
-Huomioi, että tämä jaettava linkki on voimassa vain **Suunnitelmille (Plans)**. Jaettavissa linkkejä ei voi käyttää paketeille tai palveluille.
+![Tuotesivu, jossa on jaettavan linkin painike](/img/config/products-list.png)
 
-### Mallien (templates) kohdalla:
+Huomaa, että tämä jaettava linkki on voimassa vain **Paketeille**. Et voi käyttää jaettavia linkkejä pakettikokonaisuuksille tai palveluille.
 
-Jos haluat valita sivustomalleja etukäteen ostoslomakkeessasi, voit käyttää parametria: **?template_id=X** rekisteröitys-sivun URL-osoitteessa. "X" tulee korvata **sivumallin ID-numerolla**. Tätä numeroa löydät menimällä kohtaan **Ultimate Multisite > Sites**.
+### Mallipohjille: {#for-templates}
 
-Napsauta **Manage** (Hallinnoi) suoraan sivustomallin alapuolella, jota haluat käyttää. Näet siinä SITE ID -numeron. Käytä tätä numeroa vain tälle tietylle sivumallille, jotta se valitaan etukäteen ostoslomakkeessasi. Meidän tapauksessamme URL-parametri olisi **?template_id=2**.
+Jos haluat esivalita sivustomallipohjia kassalomakkeessasi, voit käyttää parametria: **?template_id=X** rekisteröitymissivusi URL-osoitteessa. "X" täytyy korvata **sivustomallipohjan ID-numerolla**. Saat tämän numeron siirtymällä kohtaan **Ultimate Multisite > Sivustot**.
 
-![Sivustojen lista näyttää sivumallin ID:n](/img/config/site-templates-list.png)
+Napsauta **Hallinnoi** heti sen sivustomallipohjan alapuolella, jota haluat käyttää. Näet SITE ID -numeron. Käytä tätä numeroa tälle tietylle sivustomallipohjalle, jotta se esivalitaan kassalomakkeessasi. Tässä tapauksessamme URL-parametri olisi **?template_id=2**.
 
-Oletetaan, että verkko-sivustomme on [**www.mynetwork.com**](http://www.mynetwork.com) ja rekisteröityssivu ostoslomakkeellasi sijaitsee **/register** -sivulla. Koko URL-osoite, jossa sivumalli on valittu etukäteen, näyttää tältä: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Sivustoluettelo, jossa näkyy sivustomallipohjan ID](/img/config/site-templates-list.png)
 
-Ja jos haluat valita sekä tuotteet että mallit ostoslomakkeessasi etukäteen, sinun tarvitsee vain kopioida suunnitelman ja liittää malliparametri lopuksi. Se näyttää tältä: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Oletetaan, että verkkosivustomme verkosto on [**www.mynetwork.com**](http://www.mynetwork.com) ja kassalomakkeemme sisältävä rekisteröitymissivumme sijaitsee **/register**-sivulla. Koko URL, jossa tämä sivustomallipohja on esivalittuna, näyttää tältä: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ja jos haluat, voit esivalita kassalomakkeeseesi sekä tuotteet että mallipohjat. Sinun tarvitsee vain kopioida paketin jaettava linkki ja liittää mallipohjaparametri sen loppuun. Se näyttää tältä: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

@@ -3,7 +3,7 @@ title: Référence des capacités
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Référence des capacités
+# Référence des capacités {#abilities-reference}
 
 Les capacités sont les actions atomiques que l'Agent IA Gratuit peut déclencher sur votre installation WordPress. Chaque capacité est une classe PHP enregistrée qui expose un schéma JSON — l'agent lit ce schéma à l'exécution pour comprendre quels paramètres sont requis et ce que la capacité retourne.
 
@@ -11,11 +11,11 @@ Cette page documente toutes les capacités incluses avec Gratis AI Agent v1.9.0.
 
 ---
 
-## Types de publications personnalisés (Custom Post Types)
+## Types de publications personnalisés (Custom Post Types) {#custom-post-types}
 
 Ces capacités gèrent les types de publications personnalisés (CPT) enregistrés via l'agent. Les enregistrements sont sauvegardés dans la table des options de WordPress, ce qui signifie qu'ils survivent à la désactivation et à la réactivation du plugin.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Enregistre un nouveau type de publication personnalisé.
 
@@ -50,7 +50,7 @@ Enregistre un nouveau type de publication personnalisé.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Retourne tous les types de publication personnalisés enregistrés par l'agent.
 
@@ -71,7 +71,7 @@ Retourne tous les types de publication personnalisés enregistrés par l'agent.
 }
 ```
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Désenregistre un type de publication personnalisé précédemment enregistré par l'agent. Les publications existantes de ce type restent dans la base de données mais ne sont plus accessibles via le type de publication.
 
@@ -85,11 +85,11 @@ Désenregistre un type de publication personnalisé précédemment enregistré p
 
 ---
 
-## Taxonomies personnalisées (Custom Taxonomies)
+## Taxonomies personnalisées (Custom Taxonomies) {#custom-taxonomies}
 
 Ces fonctionnalités gèrent les taxonomies personnalisées. Tout comme les CPTs (Types de publications personnalisés), les enregistrements de taxonomie sont conservés.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Enregistre une nouvelle taxonomie personnalisée.
 
@@ -119,7 +119,7 @@ Enregistre une nouvelle taxonomie personnalisée.
 
 **Retourne** `{ "success": true, "slug": "project-category" }`
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 Retourne toutes les taxonomies personnalisées enregistrées par l'agent.
 
@@ -142,7 +142,7 @@ Retourne toutes les taxonomies personnalisées enregistrées par l'agent.
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 Désenregistre une taxonomie personnalisée précédemment enregistrée par l'agent.
 
@@ -156,11 +156,11 @@ Désenregistre une taxonomie personnalisée précédemment enregistrée par l'ag
 
 ---
 
-## Design System
+## Design System {#design-system}
 
 Les capacités du système de design modifient la présentation visuelle du site WordPress — allant du CSS personnalisé aux modèles de blocs et au logo du site.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 Ajoute du CSS dans la balise `<head>` du site via `wp_add_inline_style`. Le CSS est stocké dans l'option `gratis_ai_agent_custom_css` et est nettoyé proprement lorsque cette capacité est réinitialisée.
 
@@ -186,7 +186,7 @@ Ajoute du CSS dans la balise `<head>` du site via `wp_add_inline_style`. Le CSS 
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 Enregistre un modèle de bloc réutilisable dans la bibliothèque de modèles WordPress.
 
@@ -205,7 +205,7 @@ Enregistre un modèle de bloc réutilisable dans la bibliothèque de modèles Wo
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 Liste tous les modèles de blocs enregistrés par l'agent.
 
@@ -227,7 +227,7 @@ Liste tous les modèles de blocs enregistrés par l'agent.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 Définit le logo du site WordPress à un ID de pièce jointe donné ou à une URL d'image distante. Lorsqu'une URL est fournie, l'image est téléchargée et importée dans la Bibliothèque de médias.
 
@@ -244,7 +244,7 @@ L'un des paramètres `attachment_id` ou `url` doit être fourni.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 Applique un modèle de couleur/typographie nommé au fichier `theme.json` (ou `global-styles`) du thème actif. Les modèles sont des ensembles soigneusement sélectionnés et maintenus par l'équipe de l'agent IA Gratuit.
 
@@ -269,11 +269,11 @@ Applique un modèle de couleur/typographie nommé au fichier `theme.json` (ou `g
 
 ---
 
-## Styles Globaux
+## Styles Globaux {#global-styles}
 
 Les capacités des Styles Globaux lisent et écrivent les valeurs du fichier `theme.json` via l'API Global Styles de WordPress, affectant tous les blocs et modèles sur tout le site.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 Retourne la configuration actuelle des styles globaux.
 
@@ -287,7 +287,7 @@ Retourne la configuration actuelle des styles globaux.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 Met à jour une ou plusieurs valeurs dans la configuration des styles globaux.
 
@@ -314,7 +314,7 @@ Met à jour une ou plusieurs valeurs dans la configuration des styles globaux.
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 Réinitialise toutes les modifications des styles globaux appliquées par l'agent, restaurant ainsi les valeurs par défaut du thème.
 
@@ -324,11 +324,11 @@ Réinitialise toutes les modifications des styles globaux appliquées par l'agen
 
 ---
 
-## Menus de navigation
+## Menus de navigation {#navigation-menus}
 
 Les capacités des menus de navigation créent et gèrent les menus WordPress et leurs éléments.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 Crée un nouveau menu de navigation WordPress.
 
@@ -341,7 +341,7 @@ Crée un nouveau menu de navigation WordPress.
 
 **Retourne** `{ "success": true, "menu_id": 7 }`
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 Renomme un menu ou réaffecte-le à un emplacement de thème.
 
@@ -357,7 +357,7 @@ Renomme un menu ou réaffecte-le à un emplacement de thème.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 Ajoute un élément à un menu de navigation existant.
 
@@ -377,7 +377,7 @@ Ajoute un élément à un menu de navigation existant.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 Supprime un élément d'un menu de navigation.
 
@@ -391,7 +391,7 @@ Supprime un élément d'un menu de navigation.
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 Liste tous les menus de navigation WordPress, y compris leurs emplacements de thème assignés.
 
@@ -399,11 +399,11 @@ Liste tous les menus de navigation WordPress, y compris leurs emplacements de th
 
 **Retourne**
 
-## Gestion des options
+## Gestion des options {#options-management}
 
 Les capacités d'options permettent de lire et d'écrire les options WordPress via `get_option` / `update_option`. Un bloc de sécurité intégré empêche toute modification accidentelle des paramètres critiques.
 
-### `get_option`
+### `get_option` {#getoption}
 
 Lit une option WordPress.
 
@@ -419,7 +419,7 @@ Renvoie une erreur si `option_name` est sur la liste de blocage de sécurité.
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 Écrit une option WordPress.
 
@@ -437,7 +437,7 @@ Renvoie une erreur si `option_name` est sur la liste de blocage de sécurité.
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 Supprime une option WordPress.
 
@@ -451,7 +451,7 @@ Renvoie une erreur si `option_name` est sur la liste de blocage de sécurité.
 
 **Retourne** `{ "success": true, "option_name": "my_custom_option" }`
 
-### `list_options`
+### `list_options` {#listoptions}
 
 Liste les options WordPress correspondant à un motif.
 
@@ -475,11 +475,11 @@ Liste les options WordPress correspondant à un motif.
 
 ---
 
-## Gestion du contenu (Content Management)
+## Gestion du contenu (Content Management) {#content-management}
 
 Les capacités de gestion du contenu permettent de créer et modifier les articles et pages WordPress. Les IDs des articles sont retournés afin que les étapes suivantes dans les plans multi-capacités puissent faire référence au contenu créé.
 
-### `create_post`
+### `create_post` {#createpost}
 
 Crée un nouvel article, une page ou une entrée de type de publication personnalisé WordPress.
 
@@ -514,7 +514,7 @@ Crée un nouvel article, une page ou une entrée de type de publication personna
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 Met à jour une publication ou une page WordPress existante.
 
@@ -544,7 +544,7 @@ Met à jour une publication ou une page WordPress existante.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 Crée plusieurs articles en une seule requête d'appel, ce qui réduit le nombre de communications pendant la construction du site ou l'importation de contenu en masse. Les articles sont créés séquentiellement ; si un article échoue, les autres continuent et l'échec est signalé dans le tableau des résultats.
 

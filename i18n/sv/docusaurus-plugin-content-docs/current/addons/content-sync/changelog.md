@@ -3,9 +3,9 @@ title: Content Sync Changelog
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Ändringslogg för Content Sync
+# Ändringslogg för Content Sync {#content-sync-changelog}
 
-### Version 1.1.0 - Släppt den 2025-12-31
+### Version 1.1.0 - Släppt den 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nytt: Stöd för synkronisering av alla innehållstyper (inlägg, sidor, anpassade innehållstyper)
 * Nytt: Filtrering av innehållstyper i steget för innehållsval
 * Nytt: Val av källsajt – synka från vilken sajt som helst, inte bara huvudwebbplatsen
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Ändrat: Steget "Select Templates" bytt namn till "Select Data"
 * Förbättrat: Elementor-specifik kod körs nu endast för post-typen elementor_library
 
-### Version 1.0.0 - Släppt den 2025-12-19
+### Version 1.0.0 - Släppt den 2025-12-19 {#version-100---released-on-2025-12-19}
 * Första releasen
 * Guidad process för val av mall och sajt
 * Batchbearbetning med realtidsfeedback om framsteg

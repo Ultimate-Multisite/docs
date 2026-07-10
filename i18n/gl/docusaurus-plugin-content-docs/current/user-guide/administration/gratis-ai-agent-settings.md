@@ -1,105 +1,152 @@
 ---
-title: Configuración de Agente IA gratis
+title: Configuración de Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Configuración Gratuita del Agente de IA
+# Configuración de Gratis AI Agent {#gratis-ai-agent-settings}
 
-La pantalla **Configuración → Avanzado** en Gratis AI Agent te da la configuración de nivel administrador para las integraciones del backend introducidas en v1.5.0. Esta página documenta los campos del **Feedback Endpoint** y su formato esperado.
+A pantalla **Configuración → Avanzado** en Gratis AI Agent proporciona configuración de nivel administrador para integracións de backend. Esta páxina documenta o reenvío de feedback, as claves de provedores de busca, a configuración do servizo Superdav xestionado, os controis de Google Calendar, a configuración de SMS de TextBee e as marcas de funcionalidade para toda a rede.
 
-## Acceso a la Configuración
+## Acceder á configuración {#accessing-settings}
 
-1. En el panel de administración de WordPress, ve a **Gratis AI Agent → Configuración**.
-2. Haz clic en la pestaña **Avanzado**.
+1. No administrador de WordPress, vai a **Gratis AI Agent → Configuración**.
+2. Fai clic na lapela **Avanzado**.
 
-## Configuración del Feedback Endpoint
+## Configuración do endpoint de feedback {#feedback-endpoint-configuration}
 
-El feedback endpoint recibe peticiones POST del agente de IA cada vez que un usuario envía comentarios a través del botón de pulgar hacia abajo (thumbs-down), el banner de autocompletado o el comando `/report-issue`.
+O endpoint de feedback recibe solicitudes POST do AI agent sempre que un usuario envía feedback mediante o botón de polgar cara abaixo, o banner de aviso automático ou o comando `/report-issue`.
 
-| Campo | Descripción |
+| Campo | Descrición |
 |---|---|
-| **Feedback Endpoint URL** | La URL que recibe los envíos de feedback como peticiones HTTP POST con un cuerpo JSON. |
-| **Feedback API Key** | Un token de portador (bearer token) enviado en la cabecera `Authorization` de cada solicitud de feedback. Déjalo en blanco si tu endpoint no requiere autenticación. |
+| **URL do endpoint de feedback** | O URL que recibe os envíos de feedback como solicitudes HTTP POST cun corpo JSON. |
+| **Feedback API Key** | Un bearer token enviado no `Authorization` header de cada solicitude de feedback. Déixao en branco se o teu endpoint non require autenticación. |
 
-### Carga Útil Esperada (JSON Payload)
+### Payload JSON esperado {#expected-json-payload}
 
-Tu feedback endpoint debe aceptar un cuerpo JSON con al menos los siguientes campos:
+O teu endpoint de feedback debe aceptar un corpo JSON con polo menos os seguintes campos:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "La respuesta fue incorrecta sobre la precios.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Pueden estar presentes campos adicionales en la carga útil dependiendo del contexto de la conversación.
+Poden estar presentes campos adicionais no payload dependendo do contexto da conversa.
 
-### Valores de `triage_category`
+### Valores de `triage_category` {#triagecategory-values}
 
-La capa de triaje de IA asigna uno de los siguientes valores a `triage_category` antes de reenviar la carga útil:
+A capa de triaxe de AI asigna un dos seguintes valores a `triage_category` antes de reenviar o payload:
 
 | Valor | Significado |
 |---|---|
-| `factual_error` | El asistente proporcionó información fáctica incorrecta. |
-| `unhelpful_answer` | La respuesta era técnicamente correcta pero no útil. |
-| `inappropriate_content` | La respuesta contenía contenido que no debe mostrarse a los usuarios. |
-| `other` | El feedback no coincidió con una categoría conocida. |
+| `factual_error` | O asistente proporcionou información factual incorrecta. |
+| `unhelpful_answer` | A resposta era tecnicamente correcta, pero non útil. |
+| `inappropriate_content` | A resposta contiña contido que non debería mostrarse aos usuarios. |
+| `other` | O feedback non coincidiu cunha categoría coñecida. |
 
-### Autenticación
+### Autenticación {#authentication}
 
-Se o seu endpoint requere authentication, ponha a **Feedback API Key** no seu bearer token. O agente envia:
+Se o teu endpoint require autenticación, define o campo **Feedback API Key** co teu bearer token. O axente envía:
 
 ```
-Authorization: Bearer <sua-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Se o campo **Feedback API Key** estiver vazio, nenhum cabeçalho `Authorization` é enviado.
+Se o campo **Feedback API Key** está baleiro, non se envía ningún `Authorization` header.
 
-### Desativar a Recolha de Feedback
+### Desactivar a recollida de feedback {#disabling-feedback-collection}
 
-Deixe tanto o campo **Feedback Endpoint URL** como o **Feedback API Key** em branco. O botão de polegar para baixo e a interface de feedback continuam visíveis aos utilizadores, mas os envios não são encaminhados a ningún serviço externo.
+Deixa en branco os campos **URL do endpoint de feedback** e **Feedback API Key**. O botón de polgar cara abaixo e a interface de feedback seguen visibles para os usuarios, pero os envíos non se reenvían a ningún servizo externo.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Também na aba **Advanced**, o campo **Brave Search API Key** permite a funcionalidade de [Internet Search](../configuration/internet-search).
+Tamén na lapela **Avanzado**, o campo **Brave Search API Key** activa a capacidade de [Busca en internet](../configuration/internet-search).
 
-| Campo | Descrição |
+| Campo | Descrición |
 |---|---|
-| **Brave Search API Key** | A sua chave de API do painel de desenvolvedor Brave Search. Necessária para ativar a pesquisa na internet no assistente de IA. |
+| **Brave Search API Key** | A túa clave de API do dashboard de desenvolvedor de Brave Search. Necesaria para activar a busca en internet no asistente de AI. |
 
-O rótulo do campo inclui um link clicável para a página de inscrição da API Brave Search. Deixe em branco para desativar a pesquisa na internet.
+A etiqueta do campo inclúe unha ligazón premible á páxina de rexistro da API de Brave Search. Déixao en branco para desactivar a busca en internet.
 
-Veja [Internet Search](../configuration/internet-search) para documentação para o utilizador final sobre esta funcionalidade.
+Consulta [Busca en internet](../configuration/internet-search) para a documentación de usuario final sobre esta funcionalidade.
 
-## Feature Flags (Sinalizadores de Funcionalidade)
+## Servizo Superdav xestionado {#managed-superdav-service}
 
-Também introduzido na v1.9.0, a aba **Settings → Feature Flags** fornece interruptores para funcionalidades opcionais. Cada *flag* está ativado ou desativado em toda a rede; neste momento, não há sobrescrita por site.
+Superdav AI Agent v1.18.0 engade endpoints de servizo Superdav xestionado e aprovisionamento automático de conexións para sitios compatibles. Usa estes controis cando o teu sitio deba conectarse ao provedor aloxado en lugar dun endpoint de servizo configurado manualmente.
 
-### Aceder aos Feature Flags
+| Campo | Descrición |
+|---|---|
+| **Servizo Superdav xestionado** | Activa a conexión co servizo Superdav aloxado para sitios compatibles. |
+| **Aprovisionar conexión** | Inicia o aprovisionamento automático de endpoint e credenciais. Usa isto despois de confirmar que o sitio debe usar o provedor xestionado. |
+| **Endpoint do servizo / Estado da conexión** | Mostra o endpoint actual ou o estado da conexión despois do aprovisionamento. |
 
-1. No admin do WordPress, vá a **Gratis AI Agent → Settings**.
-2. Clique na aba **Feature Flags**.
+Despois do aprovisionamento, garda a configuración e verifica o estado da conexión antes de confiar en fluxos de traballo de servizo xestionado. Se o aprovisionamento falla, revisa a guía de reintento mostrada e confirma que o sitio ten permiso para usar o provedor aloxado.
 
-### Feature Flags de Controlo de Acceso
+## Configuración de Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Descripción |
+Cando as funcionalidades de calendario de Superdav AI Agent v1.18.0 están activadas, o axente pode ler calendarios configurados e detalles de eventos. As ferramentas de calendario están orientadas á lectura e son útiles para recordatorios conscientes da axenda, seguimento de asistentes e correspondencia de contactos.
+
+| Campo | Descrición |
+|---|---|
+| **Credenciais de Google Calendar** | Garda as credenciais ou a conexión de token necesarias para ler datos do calendario. |
+| **Selección de calendario** | Limita que calendarios configurados pode inspeccionar o axente. |
+| **Estado da conexión do calendario** | Confirma se as credenciais actuais poden ler calendarios e eventos. |
+
+Mantén as credenciais de calendario limitadas aos calendarios que o axente necesita. Volve conectar ou rota as credenciais se o estado indica un token caducado.
+
+## Notificacións SMS de TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 engade TextBee como provedor de SMS para fluxos de traballo de notificación configurados. As notificacións SMS deberían combinarse con portas de aprobación humana para mensaxes sensibles ou dirixidas a usuarios.
+
+| Campo | Descrición |
+|---|---|
+| **Clave de API de TextBee** | Autentica as solicitudes ao provedor de SMS TextBee. |
+| **Dispositivo / Remitente de TextBee** | Selecciona o remitente ou dispositivo de TextBee usado para mensaxes saíntes, cando o provedor o require. |
+| **Notificacións SMS activadas** | Permite que os fluxos de traballo aprobados envíen notificacións por mensaxe de texto. Déixao desactivado para impedir envíos de SMS. |
+
+Envía unha mensaxe de proba só a un número propiedade dun administrador e, a continuación, confirma o comportamento da porta de aprobación antes de activar recordatorios programados ou dirixidos a asistentes.
+
+## Marcas de funcionalidade {#feature-flags}
+
+Tamén introducida na v1.9.0, a lapela **Configuración → Marcas de funcionalidade** proporciona interruptores de activación para funcionalidades opcionais. Cada marca está activada ou desactivada para toda a rede; neste momento non hai anulación por sitio.
+
+### Acceder ás marcas de funcionalidade {#accessing-feature-flags}
+
+1. No administrador de WordPress, vai a **Gratis AI Agent → Configuración**.
+2. Fai clic na lapela **Marcas de funcionalidade**.
+
+### Marcas de control de acceso {#access-control-flags}
+
+| Bandeira | Predeterminado | Descrición |
 |---|---|---|
-| **Restringir a Administradores** | Desligado (Off) | Quando ativado, só os utilizadores com o papel `administrator` podem abrir o painel de chat do Agente de IA. Todos os outros papéis veem uma mensagem de "Contacte o seu administrador". |
-| **Restringir a Administradores da Rede** | Desligado (Off) | Quando ativado numa rede multisite, apenas Super Administradores podem usar o agente. Os administradores dos sites individuais são bloqueados. Tem precedência sobre "Restringir a Administradores" se ambos estiverem ativos. |
-| **Permitir Acesso de Subscritor** | Desligado (Off) | Quando ativado, os utilizadores com o papel `subscriber` podem usar a interface de chat, mas estão limitados a capacidades de leitura (sem criação de posts ou alterações de configurações). |
-| **Desativar para Não-Membros** | Desligado (Off) | Integra-se com o estado de membro do Ultimate Multisite. Quando ativado, o chat fica oculto para os sites que não têm uma adesão ativa. |
+| **Restrinxir a administradores** | Desactivado | Cando está activado, só os usuarios co rol `administrator` poden abrir o panel de chat do AI Agent. Todos os demais roles ven no seu lugar unha mensaxe de "Contacta co teu administrador". |
+| **Restrinxir a Network Admins** | Desactivado | Cando está activado nunha rede multisite, só os Super Admins poden usar o axente. Os administradores de sitios individuais quedan bloqueados. Ten prioridade sobre "Restrinxir a administradores" se ambas opcións están activadas. |
+| **Permitir acceso a subscritores** | Desactivado | Cando está activado, os usuarios co rol `subscriber` poden usar a interface de chat, pero están limitados a capacidades de só lectura (sen creación de entradas nin cambios de configuración). |
+| **Desactivar para non membros** | Desactivado | Intégrase co estado de adhesión de Ultimate Multisite. Cando está activado, o chat ocúltase para os sitios que non teñen unha adhesión activa. |
 
-### Bandeiras de Marca (Branding Flags)
+### Bandeiras de marca {#branding-flags}
 
-| Flag | Default | Descripción |
+| Bandeira | Predeterminado | Descrición |
 |---|---|---|
-| **Ocultar Rodapé "Powered by Gratis AI Agent"** | Desligado (Off) | Remove a linha de atribuição de marca mostrada no final do widget de chat. Recomendado para implementações white-label. |
-| **Nome Personalizado do Agente** | *(vazio)* | Substitui o rótulo padrão "Gratis AI Agent" no cabeçalho do chat e no menu de administração pelo seu nome de produto. Deixe em branco para usar o padrão. |
-| **Ocultar Seletor de Agentes** | Desligado (Off) | Quando ativado, os utilizadores não podem mudar entre os cinco agentes integrados. O agente atual fica fixo no que estiver configurado como padrão em Settings → General. |
-| **Usar Ícone do Site como Avatar do Chat** | Desligado (Off) | Substitui o ícone de IA padrão no cabeçalho do widget de chat pelo ícone do site WordPress (definido em Appearance → Customize → Site Identity). |
+| **Ocultar o pé "Powered by Gratis AI Agent"** | Desactivado | Elimina a liña de atribución da marca que se mostra na parte inferior do widget de chat. Recomendado para despregamentos de marca branca. |
+| **Nome de axente personalizado** | *(en branco)* | Substitúe a etiqueta predeterminada "Gratis AI Agent" na cabeceira do chat e no menú de administración polo nome do teu propio produto. Déixao en branco para usar o predeterminado. |
+| **Ocultar selector de axente** | Desactivado | Cando está activado, os usuarios non poden alternar entre os cinco axentes integrados. O axente actual queda fixado ao que estea configurado como predeterminado en Configuración → Xeral. |
+| **Usar a icona do sitio como avatar do chat** | Desactivado | Substitúe a icona de AI predeterminada na cabeceira do widget de chat pola icona do sitio WordPress (definida en Aparencia → Personalizar → Identidade do sitio). |
 
-### Aplicar Alterações
+### Bandeiras de seguridade da automatización {#automation-safety-flags}
 
-Clique em **Guardar Configurações** após alternar qualquer bandeira. As alterações têm efeito imediato — não é necessário limpar o cache ou reagir o plugin.
+Superdav AI Agent v1.18.0 introduce portas de aprobación humana e rexistros de recordatorios para execucións de automatización máis seguras. Estes controis poden aparecer nas bandeiras de funcións ou na configuración avanzada de automatización, segundo o paquete instalado.
+
+| Bandeira | Predeterminado | Descrición |
+|---|---|---|
+| **Requirir aprobación humana** | Recomendado activado | Pausa as automatizacións sensibles ata que un usuario autorizado revise e confirme a acción proposta. |
+| **Deduplicación de recordatorios** | Activado | Rexistra os recordatorios enviados para que os reintentos ou as execucións programadas non envíen notificacións duplicadas. |
+| **Activar ferramentas de calendario** | Desactivado ata que se configure | Permite ao axente ler calendarios e eventos de Google configurados. |
+| **Activar notificacións SMS** | Desactivado ata que se configure | Permite aos fluxos de traballo aprobados enviar notificacións SMS de TextBee despois de gardar as credenciais. |
+
+### Aplicación de cambios {#applying-changes}
+
+Fai clic en **Gardar configuración** despois de activar ou desactivar calquera bandeira. Os cambios teñen efecto inmediatamente: non é necesario baleirar a caché nin reactivar o plugin.

@@ -4,16 +4,16 @@ title: Действие - wu_captcha_integrations_init
 sidebar_label: wu_captcha_integrations_init
 _i18n_hash: 1e8040d06ed70bc1e02e7797280d4dc1
 ---
-# Действие: wu_captcha_integrations_init
+# Действие: wu_captcha_integrations_init {#action-wucaptchaintegrationsinit}
 
 Вызывается после инициализации всех интеграций.
 
 Интеграции сторонних разработчиков могут подключиться здесь, чтобы добавить свои собственные.
 
-### С версии
+### С версии {#since}
 
 - 1.2.0
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/captcha-providers/class-captcha-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/captcha-providers/class-captcha-manager.php#L106) на строке 106

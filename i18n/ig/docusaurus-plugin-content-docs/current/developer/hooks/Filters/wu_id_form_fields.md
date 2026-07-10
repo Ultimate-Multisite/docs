@@ -1,0 +1,22 @@
+---
+id: wu_id_form_fields
+title: 'Nzacha - wu_{$id}_form_fields'
+sidebar_label: 'wu_{$id}_form_fields'
+_i18n_hash: 4ce34f82555356308c280b58fd6b4b26
+---
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+
+Na-enyocha fields dị na form. A na-amata form ahụ site na ID dị n’aha filter.
+
+## Parameters {#parameters}
+
+| Aha | Ụdị | Nkọwa |
+|------|------|-------------|
+| $fields | `array` | Ndepụta fields nke form ahụ. |
+
+### Kemgbe {#since}
+
+- 2.0.0
+### Isi mmalite {#source}
+
+A kọwara ya na [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) n’ahịrị 148

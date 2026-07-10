@@ -3,15 +3,15 @@ title: Menús d'hospitalitat
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menús de Hostaleria
+# Menús de Hostaleria {#hospitality-menus}
 
 La característica **Hospitality Menus** te permite al Theme Builder generar e incrustar pàgines de menús estructurades de comida y bebida directament en el teu site WordPress.
 
-## Resum
+## Resum {#overview}
 
 El Theme Builder ara pot crear pàgines de menús professionals i estructurats per a negocis d'hostaleria com restaurants, cafès, bars i serveis de catering. Aquests menús estan completament integrats al disseny del teu site i es poden actualitzar i gestionar fàcilment.
 
-## Tipus d'Hostaleria Compatibles
+## Tipus d'Hostaleria Compatibles {#supported-hospitality-types}
 
 - **Restaurants** — menús de menjar de servei complet
 - **Cafès** — menús de cafè i menjar lleuger
@@ -21,9 +21,9 @@ El Theme Builder ara pot crear pàgines de menús professionals i estructurats p
 - **Food Trucks** — menús de servei de menjar mòbil
 - **Cerveceries i Vineries** — menús de begudes amb descripcions
 
-## Estructura del Menú
+## Estructura del Menú {#menu-structure}
 
-### Categories de Menú
+### Categories de Menú {#menu-categories}
 
 Els menús es organitzen en categories:
 
@@ -34,7 +34,7 @@ Els menús es organitzen en categories:
 - **Begudes** — begudes (alcohòliques i no alcohòliques)
 - **Especials** — menús diaris o de temporada
 
-### Format de l'Article del Menú
+### Format de l'Article del Menú {#menu-item-format}
 
 Cada article de menú inclou:
 
@@ -49,7 +49,7 @@ Cada article de menú inclou:
 }
 ```
 
-#### Campos de l'Article
+#### Campos de l'Article {#item-fields}
 
 | Camp | Tip | Descripció |
 |---|---|---|
@@ -60,9 +60,9 @@ Cada article de menú inclou:
 | `allergens` | array | Alèrgens comuns (Nots, Marisco, etc.) |
 | `availability` | string | Quan està disponible (Diari, Estacional, etc.) |
 
-## Creació de Menús per a Hostaleria
+## Creació de Menús per a Hostaleria {#creating-hospitality-menus}
 
-### Pas 1: Proporcionar Informació del Menú
+### Pas 1: Proporcionar Informació del Menú {#step-1-provide-menu-information}
 
 Diga al Theme Builder sobre el seu menú:
 
@@ -71,7 +71,7 @@ Crea un menú de restaurant per al meu restaurant italià amb entrades,
 plats de pasta, plats principals i desserts. Inclou preus i descripcions.
 ```
 
-### Pas 2: El Theme Builder Genera el Menú
+### Pas 2: El Theme Builder Genera el Menú {#step-2-theme-builder-generates-menu}
 
 El Theme Builder fa les següents coses:
 
@@ -81,7 +81,7 @@ El Theme Builder fa les següents coses:
 4. Formata els preus i descripcions
 5. Afegeix informació dietètica i d'alèrgens
 
-### Pas 3: Revisar i Personalitzar
+### Pas 3: Revisar i Personalitzar {#step-3-review-and-customize}
 
 Podrà fer les següents coses:
 
@@ -91,9 +91,9 @@ Podrà fer les següents coses:
 4. Actualitzar descripcions i informació dietètica
 5. Ajustar el estil i la disposició
 
-## Opcions d'Exposició del Menú
+## Opcions d'Exposició del Menú {#menu-display-options}
 
-### Pàgina Completa del Menú
+### Pàgina Completa del Menú {#full-menu-page}
 
 Una pàgina dedicada que mostra el seu menú complet:
 
@@ -102,7 +102,7 @@ Una pàgina dedicada que mostra el seu menú complet:
 - Disposició adequada per a imprimir
 - Disseny responsiv al mòbil
 
-### Widget de Menú
+### Widget de Menú {#menu-widget}
 
 Incorporar seccions de menú en altres pàgines:
 
@@ -111,7 +111,7 @@ Incorporar seccions de menú en altres pàgines:
 - Menú de bebidas en la página de la barra
 - Exhibición de postres en el pie de página
 
-### PDF del menú
+### PDF del menú {#menu-pdf}
 
 Genera un menú descargable en formato PDF:
 
@@ -120,9 +120,9 @@ Genera un menú descargable en formato PDF:
 - Incluye imágenes y descripciones
 - Fácil de compartir por correo electrónico
 
-## Información dietética y alérgenos
+## Información dietética y alérgenos {#dietary-and-allergen-information}
 
-### Atributos dietéticos
+### Atributos dietéticos {#dietary-attributes}
 
 Marca los artículos con información dietética:
 
@@ -134,7 +134,7 @@ Marca los artículos con información dietética:
 - **Bajo en carbohidratos** — carbohidratos reducidos
 - **Alto en proteínas** — rico en proteínas
 
-### Advertencias de alérgenos
+### Advertencias de alérgenos {#allergen-warnings}
 
 Incluye los alérgenos comunes:
 
@@ -147,9 +147,9 @@ Incluye los alérgenos comunes:
 - **Gluten** — trigo y cereales con gluten
 - **Sésamo** — semillas de sésamo y aceite
 
-## Gestión del menú
+## Gestión del menú {#menu-management}
 
-### Actualización de precios
+### Actualización de precios {#updating-prices}
 
 Actualiza fácilmente los precios del menú:
 
@@ -159,7 +159,7 @@ Actualiza fácilmente los precios del menú:
 4. Guarda los cambios
 5. Los cambios aparecen inmediatamente en tu sitio
 
-### Añadir artículos de temporada
+### Añadir artículos de temporada {#adding-seasonal-items}
 
 Crea variaciones de menú estacionales:
 
@@ -169,7 +169,7 @@ Crea variaciones de menú estacionales:
 4. Programa las fechas de disponibilidad
 5. Se muestran automáticamente durante la temporada
 
-### Gestión de ofertas especiales
+### Gestión de ofertas especiales {#managing-specials}
 
 Muestra ofertas diarias o semanales:
 
@@ -179,7 +179,7 @@ Muestra ofertas diarias o semanales:
 4. Actualizar diariamente o semanalmente
 5. Archivar los especiales antiguos
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Cuando utilitzes Theme Builder per a webs d'hostaleria:
 
@@ -189,9 +189,9 @@ Cuando utilitzes Theme Builder per a webs d'hostaleria:
 4. **Optimització per a mòbils** — els menus es veuen molt bé en telèfons
 5. **Optimització SEO** — els menus són amics dels motors de cerca
 
-## Bones Pràctiques
+## Bones Pràctiques {#best-practices}
 
-### Disseny del menú
+### Disseny del menú {#menu-design}
 
 - **Organització clara** — una estructura de categories lògica
 - **Descripcions legibles** — apetitses i informatives
@@ -199,7 +199,7 @@ Cuando utilitzes Theme Builder per a webs d'hostaleria:
 - **Fotos professionals** — imatges d'aliments de alta qualitat
 - **Espai blanc** — no sobrecarregar la pàgina
 
-### Contingut
+### Contingut {#content}
 
 - **Descripcions precises** — descriu els articles amb exactitud
 - **Destacar els especials** — fa que els especials destaquin
@@ -207,7 +207,7 @@ Cuando utilitzes Theme Builder per a webs d'hostaleria:
 - **Actualització regular** — mantén actuals els preus i articles
 - **Usar un llenguatge apetissant** — fa que els articles sonen deliciços
 
-### Accessibilitat
+### Accessibilitat {#accessibility}
 
 - **Fonts legibles** — utilitza tipografies clares i molt leggibles
 - **Contraste suficient** — assegura que el text és clar de llegir
@@ -215,9 +215,9 @@ Cuando utilitzes Theme Builder per a webs d'hostaleria:
 - **Advertències d'allergens** — mostra els allergens de manera destacada
 - **Amics dels mòbils** — testa en tots els dispositius
 
-## Exemplos
+## Exemplos {#examples}
 
-### Estructura del Menú de Restauració
+### Estructura del Menú de Restauració {#restaurant-menu-structure}
 
 ```
 Aperitivos
@@ -241,7 +241,7 @@ Desserts
 └── Selecció de Gelat
 ```
 
-### Estructura del Menú de Cafè
+### Estructura del Menú de Cafè {#cafe-menu-structure}
 
 ```
 Cafès
@@ -260,7 +260,7 @@ Bocadures (Sandwiches)
 └── Wrap Vegetarià
 ```
 
-## Característiques Relacionades
+## Característiques Relacionades {#related-features}
 
 - [Crear Menú](../abilities/create-menu.md) — crea menús de navegació
 - [Direcció de Disseny](./design-direction.md) — personalitza el disseny del teu lloc web

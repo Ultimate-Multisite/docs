@@ -1,26 +1,26 @@
 ---
-title: Beheren van deelbare links voor plannen
+title: Deelbare links voor abonnementen beheren
 sidebar_position: 18
-_i18n_hash: c891b25549cd81c8f45ba60ee6e74105
+_i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Beheren van deelbare links voor plannen
+# Deelbare links voor abonnementen beheren {#managing-shareable-links-for-plans}
 
-Ultimate Multisite biedt u de mogelijkheid om planlinks rechtstreeks met uw klanten te delen. Ga hiervoor naar een van de bewerkpagina's van uw plannen en klik op de _Klik om de deelbare link te kopiëren_ knop.
+Ultimate Multisite biedt je de mogelijkheid om links naar abonnementen rechtstreeks met je klanten te delen. Ga hiervoor naar een bewerkingspagina van een van je abonnementen en klik op de knop _Klik om de deelbare link te kopiëren_.
 
-![Product edit page with shareable link button](/img/config/product-edit-full.png)
+![Bewerkingspagina van product met knop voor deelbare link](/img/config/product-edit-full.png)
 
-_Op de bewerkpagina van het plan vindt u de knop om deelbare links te maken_
+_Op de bewerkingspagina van het abonnement vind je de knop om deelbare links te maken_
 
-Merk op dat dit mechanisme de standaard factureringsfrequentie gebruikt om de link te bouwen. Dit betekent dat als uw standaard facturering bijvoorbeeld maandelijks is, uiteindelijk een link als deze zal zijn: [_**https://network.com/register/premium/**_](https://network.com/register/premium/)
+Let op dat dit mechanisme de standaard factureringsfrequentie gebruikt om de link op te bouwen. Dit betekent dat als je standaard facturering bijvoorbeeld maandelijks is, je uiteindelijk een link zoals deze hebt: [_**https://network.com/register/premium/**_](https://network.com/register/premium/)
 
-Als u wilt dat de deelbare link standaard op kwartaal wordt ingesteld, moet u 3 aan het einde toevoegen
+Als je wilt dat de deelbare link standaard per kwartaal is, moet je 3 aan het einde toevoegen
 
 [_**https://network.com/register/premium/3**_](https://network.com/register/premium/3)
 
-Om het plan _premium_ op een jaarlijks schema te selecteren, voegt u 1 toe en vervolgens het woord:
+Om het abonnement _premium_ met een jaarlijks schema te selecteren, voeg je 1 toe en daarna het woord:
 
 [_**https://network.com/register/premium/1/year**_](https://network.com/register/premium/1/year)
 
-Houd er rekening mee dat u niet slechts één link kunt hebben voor verschillende factureringsfrequenties. U moet een specifieke link delen voor elke van uw factureringsfrequenties.
+Houd er rekening mee dat je niet één link kunt hebben voor verschillende factureringsfrequenties. Je moet voor elk van je factureringsfrequenties één specifieke link delen.
 
-Zodra u de link met uw klanten deelt, wordt hen doorgestuurd naar de eerste stap van uw aanmeldingsstroom.
+Zodra je de link met je klanten deelt, worden zij doorgestuurd naar de eerste stap van je aanmeldingsproces.

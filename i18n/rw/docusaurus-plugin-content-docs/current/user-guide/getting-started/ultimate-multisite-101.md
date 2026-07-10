@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite ni plugin ya WordPress Multisite inashawishi wewe kutoa WaaS au Websites kama Huduma (as a Service) kwa wateja. Kabla ya kuingia na kujifunza jinsi Ultimate Multisite inaweza kukusaidia biashara yako na wateja, kuna maarifa ya msingi tunayohitaji kupata.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Wengi wetu tunajua usakinishaji wa kawaida (stock-standard) wa WordPress. Unaweza kuunda kwa kutumia control panel ya mtoa huduma wako wa hosting au, kwa wale wenye ujasiri, kuweka seva mpya na database, kupakua faili za msingi na kuanza mchakato wa usakinishaji.
 
@@ -21,13 +21,13 @@ Kwa kifupi, unaweza kufikiria kuwa WordPress multisite ni kama hii: Chuo Kikuu k
 
 Iyi, kugira ngo twishime ibi bikoresho by'ubwujobozi bishobora gukoreshwa mu kumenya uburyo bw'ubwujobozi bwa WordPress n'ibindi mu gukoresha.
 
-### Icyemezo (The Network)
+### Icyemezo (The Network) {#the-network}
 
 Mu gihe cy'ubwujobozi bwa WordPress, multisite network ni aho umuntu ashobora gushyira umubiri (subsites) inshuro nyinshi ku dashboard ya mbere. Iyo gukora multisite network bikwiye mu gihe cy'ubwujobozi bw'hosting bitandukanye, ariko uburyo bwo gukemura ibi ni ko hari ibindi by'umwihariko mu file wp-config.php kugira ngo WordPress yitokeze ko ikora muri iki gihe kirekire.
 
 Hari ibintu by'umwihariko byinshi bitandukanye hagati multisite network n'ikoresha WordPress ya mbere (stand-alone installation) kandi twashobora kubyaza uburyo bwo gukemura ibi mu buryo gifite urugero.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Icyemezo cyiza cyane ushaka gukora ni ukuri kuko multisite installation izakora ku buryo bw'subdirectories (ubwoko bw'amabwiriza) cyangwa subdomains (ubwoko bw'ibinyumbura). Ultimate Multisite ikora neza ku bibiri byo, ariko hari ibintu by'umwihariko mu gutandukanya hagati iki gice.
 
@@ -43,7 +43,7 @@ Mu gihe cyo _subdomain_ configuration, gukoresha wildcard SSL certificate ni mu 
 
 Urugero rugufi rwo gukoresha mu gihe cyo kera, hari ibindi byo gukora, ariko bikorwa cyane kandi bikoreshwa mu gihe cyane kandi bikwiriye kugira ngo uzi uko bishobora gukoreshwa.
 
-#### Plugins n'Themes
+#### Plugins n'Themes {#plugins-and-themes}
 
 Icyo WordPress kigomba kwitera, mu gihe cyo umukoresha w'umuryango (customer), niho mu rurimi rw'WordPress ryo mbere (stand-alone installation) ubutumwa bwo gukoresha plugin yizera cyangwa ukagira ikibazo kuko uratera kwitonderwa, umuntu wowe niwe wari umugambi kandi umwihariko. Ariko, mu gihe cyo umukoresha w'umuryango ukaratera plugin yizera kuri multisite installation, umuntu wowe ni umugambi wese w'imyera itangwa mu rwego rwa mbere.
 
@@ -51,7 +51,7 @@ Iyi hari ko, mu gihe uburyo nkoze ku bijyanye n'UWP (WordPress) w'itegura nk'uko
 
 Ku gihe cyo, muntu w'umwihariko w'uburenganzira ni umwe w'uko byitwa mu network kandi yashobora gushyira ubushobozi bwo gukoresha plugins n'themes ku myitango itera mu network. Abanyamwugasubaki (site administrators) batagira ubushobozi bwo gushyira plugins cyangwa themes cyangwa gukoresha ibyo ntibyo byashyizwe kuri site yabo.
 
-#### Abantu n'Abanyamwugasubaki (Users and Administrators)
+#### Abantu n'Abanyamwugasubaki (Users and Administrators) {#users-and-administrators}
 
 Mu WordPress Multisite, myitango yose itera mu network yishobora gushyira database yashya kandi biba bakoresha abantu bashya, roles, n'ubushobozi biba byiza. Uburyo bwiza bwo kwerekana ibi ni uko abantu bose bari mu network kandi batari umuntu w'itegura cyangwa site itera runaka.
 
@@ -63,13 +63,13 @@ Kubyara ibyo, ntabwo abantu bashya biba biboneka mu gihe cyo itera ku site yabo;
 
 Même si sita ntabwo ikintu cy'ubwoko bw'ibikorwa by'ubucuruzi, uburyo bwo gukoresha umuntu wese kugira aka kanya (registration) no guhura (authentication) ni ikintu cyiza kumenya cyane ku bantu bashobora kwishobora kubona inyandiko z'WordPress zikoreshwa mu buryo bw'ibyo ntabwo mu mashami y'WordPress yisanzwe, aho uburyo bwo gukemura ibyo by'umuntu (user administration) ni cyiza cyane.
 
-#### Media
+#### Media {#media}
 
 Mu gihe sita ry'ubwoko bw'uburyo bwa WordPress Multisite rishyira umudashyiramo wose mu database, bitera uburyo bwo gukoresha amakuru (media files) ku ntego z'umwihariko kuri filesystem.
 
 Uburyo bwa sita ryisanzwe (wp-content/uploads) rikoreshwa; ariko, uburyo bw'izo file cy'amakuru bikoreshwa bishoboraga gukoreshwa mu buryo bwo kubyara umwihariko w'uburyo bwa sita. Mu gihe cyose, amakuru y'umwihariko kuri sita ry'uburyo bwa Multisite bitangwa nk'wp-contents/uploads/site/[id].
 
-#### Permalinks (Uburyo bwo gukoresha uburyo bwo kubyara)
+#### Permalinks (Uburyo bwo gukoresha uburyo bwo kubyara) {#permalinks}
 
 Tariye yitangiraga ko hari ibyo byiza by'ubwoko bw'subdomain cyane ku gihe cy'uburyo bwa subdirectory, kandi hari iki: amakuru (paths).
 
@@ -83,7 +83,7 @@ Mu buryo bwa subdomain, uburyo bwa gukemura iki ntabwo ari ngombwa kuko sita ry'
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages (Icyiciro cy'amajwi)
+#### Static Pages (Icyiciro cy'amajwi) {#static-pages}
 
 Mu gihe y'ubwuzi mu _subdirectory_ configuration, ubushobozi bwo gukora ibyemezo byo gusohora (naming conflicts) cyemerera ku nshingiro ry'amajyango (static pages) nk'uko uburyo bw'umuryo w'umwebwe (main site) n'amajyango y'uburyo bwo umuryo w'ubwoko (network sites) yashyira mu gihe cy'umwihariko.
 
@@ -93,7 +93,7 @@ Kugira ngo uratire ibi, WordPress yifasha gukora uburyo bwo kwitera ibyo byo gus
 
 Mu _subdomain_ configuration, ubushobozi bwo gukora ibyemezo byo gusohora (naming conflicts) bishoboraga ku gutera mu buryo bw'uburyo bwo umuryo w'ubwoko (subdomain) kuko uburyo bwo umuryo w'ubwoko (subdomain) ni cy'umwihariko ku muryo w'ubwoko (network site) kandi si ryihariye n'ibyo byo mu buryo bw'umwebwe w'umuryo w'ubwoko (main site).
 
-### Gukoresha (Registration)
+### Gukoresha (Registration) {#registration}
 
 Mu ngaruka za gukora ibi mu settings y'uburyo bwo umuryo w'ubwoko (network settings) ya WordPress Multisite, hari uburyo bwo gukora abantu bafite ubushobozi bwo gukora amajyango atandukanye (sites). Ibi byitera abantu bafite ibyo babaye kandi abantu bafite ibyo babaye.
 
@@ -111,7 +111,7 @@ Ku gihe cyacu, iyo umuntu yanditira aka account, atangira kumenya ku network kan
 
 Ariko, iyo uburyo bwo gukoresha multisite yari ari ukugira site za network zishobora kuba zishobora kubaho mu buryo bwo gushyira umuntu ku ubwoko bw'uburyo (user roles) n'ibyo byari bitagufi, ni cyo hari ibindi plugins cyangwa ibindi byiza byashobora guhindura uburyo bwo gukoresha iyo user.
 
-### Domain n'SSL
+### Domain n'SSL {#domain-and-ssl}
 
 Tugereye ku WordPress Multisite yari itera umuntu mu gihe cyose - Wordpress.com. Iyo ni inama ya mbere kandi ifite uburyo bwiza bwo kumenya ibyo multisite yashobora gukora, kandi ikoresha ubushobozi bwawe bwo gukoresha no guhindura ngo itera umuntu mu buryo bwo gukora ibyo byiza.
 
@@ -125,11 +125,11 @@ Kuva ku muryango w'abanyamwugasiramo, iki kigaragaza uburyo bwo gukora ibintu by
 
 Icyo cyitwa ni ko, n'uko WordPress Multisite igira uburyo bwo kugira [www.anotherdomain.com](http://www.anotherdomain.com) guhagarirwa kuri 'site1', umuryango w'abanyamwugasiramo yiboneka n'ubushobozi bwo gukora DNS entries mu buryo bw'ibindi, no gukoresha SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Ntabwo twishobora kumenya ingano nyinshi hasi hasi hasi hagati y'indwara ya WordPress installation ishyirwaho n'indwara ya Multisite, twashobora kubona uko Ultimate Multisite ni igikorwa cyiza cyane mu gukoresha Websites as a Service (WaaS).
 
-### Intumbuka
+### Intumbuka {#introduction}
 
 Ultimate Multisite ni ikintu cyiza cyane kuri wowe mu gukora Website as a Service (WaaS). Nshobora kugufiwe n'ibyo bishobora kubona Wix.com, Squarespace, WordPress.com kandi ntabwo kwiyumva uyuho.
 
@@ -137,9 +137,9 @@ Hisi hasi hasi hasi, Ultimate Multisite igira uburyo bwo gukoresha WordPress Mul
 
 Mu nshami zikurikira, twagira uburyo bwo kumenya ibintu byose byihariye kandi byerekana uko twashobora gufasha iyo ndwara.
 
-### Uburyo Bwo Gukoresha (Use Cases)
+### Uburyo Bwo Gukoresha (Use Cases) {#use-cases}
 
-#### Icyiciro 1: Inshuti (An Agency)
+#### Icyiciro 1: Inshuti (An Agency) {#case-1-an-agency}
 
 Gusa, uburyo bwo gukora inshuti cyangwa agency ni ko ubushobozi bw'ubwoko bwa website bishobora kuba ariko byitwa nk'ibindi ibintu nko hosting cyangwa marketing.
 
@@ -165,7 +165,7 @@ Themes zishobora gukora uburyo runaka, bikorera kugira ngo umwe mu myaka y'umweb
 
 Agencies zishobora kwishimira n'Ultimate Multisite kugira ngo zikora ibyo zizera neza - gukoresha umwebwe nziza.
 
-#### Icyiciro 2: Umuntu w'uburyo (Niche Provider)
+#### Icyiciro 2: Umuntu w'uburyo (Niche Provider) {#case-2-niche-provider}
 
 Hari igice cy'umwaka cyemeje cyane kigaga ko, “gukora ikintu cyiza kandi cyemeje.” Ku gihe cyinshi b'abantu bashobora gukoresha ibi, ibyo bikunda byari gukora ikintu runaka cyangwa gukoresha umuntu w'uburyo (specialist) uwo muntu yashobora gukora ikintu runaka ku gihe cyiza.
 
@@ -173,7 +173,7 @@ Urugero, wumva ko wumva ngo wumva ngo wumva ngo wumva ngo wumva ngo wumva ngo wu
 
 Kuriye uburyo bwo kubyara ubushobozi bw'ubwujobozi (requirements), ubushobozi bwa _subdirectory_ cyangwa _subdomain_ cyashobora gukunda, mu gihe cyose ibyo byaba ni ibyo byaba mu gutegura uburyo bwo gukoresha. Mu gihe cyo, ibyo byaba ni ibyo byaba mu gutegura uburyo bwo gukoresha SSL certificate y'ubwoko bw'ubwoko (subdirectory) cyangwa wildcard SSL certificate y'ubwoko bw'ubwoko (subdomain).
 
-#### Icyiciro 3: Urugendo rwa WordPress Web Hosting
+#### Icyiciro 3: Urugendo rwa WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Hari uburyo bwinshi bwo gukoresha WordPress sites, ariko hari ikirere kire cyane cyo gukoresha ubushobozi bwo kubyara umuntu n'ubwoko bw'ubwoko (web space) ku muntu kandi yashobora kuba yakunda. Icyo ni kubera ko hari ibindi byinshi byemezo n'ibindi byemezo byaba bifite uburyo bwo gukoresha kugira ngo umuntu atangire ubuzima bwiza.
 
@@ -185,11 +185,11 @@ Ku gihe cyo abakoresha ibintu byo gukora ubushobozi na Ultimate Multisite, ubury
 
 Buri gihe, Ultimate Multisite yitera uburyo bwo kubyara umuntu kandi bicweho uburyo bwo gukora ibintu by'ubwoko bw'ubwoko (feature rich solution) cyangwa ibyo byaba bifite ubushobozi bwa Wix, Squarespace, WordPress.com n'ibindi.
 
-### Icyemezo cyo Gukoresha Uburyo Bwo Gukoresha (Architecture Considerations)
+### Icyemezo cyo Gukoresha Uburyo Bwo Gukoresha (Architecture Considerations) {#architecture-considerations}
 
 Ntabwo ni inshingano y'ubwujobozi bwose, ibintu byo mu gihe cyo bishobora kuba ari inama kugira ngo umuntu atangire uburyo bwo gukoresha ibintu byemezo byo kubyara (selection of technologies) kugira ngo Ultimate Multisite yitandire.
 
-#### Gukoresha Ubwoko Bw'ubwoko bw'ubwoko (Shared vs. Dedicated Hosting)
+#### Gukoresha Ubwoko Bw'ubwoko bw'ubwoko (Shared vs. Dedicated Hosting) {#shared-vs-dedicated-hosting}
 
 Muriye, nta wese uburyo mu gukoresha hosting. Hari abantu bishobora kuba barashyira ubushobozi bw'ubwoko (server densities) cyane. Abanyubyuranye bafite ubwoko bw'umutera (low-cost providers) bashobora kugera ku mwera bakoresha ubushobozi bw'ubwoko kenshi. Nubwo, uburyo w'Ultimate Multisite yashobora kuba umwe mu nshingano z'abantu bishobora kubyara cyane mu gihe runaka ku server imwe.
 
@@ -203,7 +203,7 @@ Ultimate Multisite yizera ko ituma neza n'abantu bishobora kubona hosting bwinsh
 
 Kugira uburyo bwo kubona abantu banyuze hosting n'uburyo bwo gukora ibyo bacyo mu gihe runaka, n'ibyo byitwa 'complete set-up instructions' kuri buri wese, ushobora kumenya ku documentation ya Compatible Providers.
 
-#### Gusobanura Icyemezo cyo Ubwoko (Performance Considerations)
+#### Gusobanura Icyemezo cyo Ubwoko (Performance Considerations) {#performance-considerations}
 
 Ultimate Multisite si uburyo bwo gukoresha mu gihe runaka, ahubwo ni uburyo bwiza kandi buhoraho cyane. Ariko, yituma neza gusa nk'uko byerekana uburyo bwiza n'ubwoko bw'umutera (underlying application and infrastructure) kandi yashobora gukoresha gusa ibyo bishobora kubona.
 
@@ -225,7 +225,7 @@ Kuko byo, abanyamukuru bwa network babona ko bakoresha front-end caching solutio
 
 Ultimate Multisite yifashishije Cloudflare add-on ikomeye kenshi kugira ngo abanyamukuru bwa network bashobore gushyira ibyo bifite ingano zikwiriye ku gukoresha mu buryo bw'ingingo, kandi bigira uburyo bwo gukoresha ubushobozi bwa caching, DNS hosting, SSL certificates n'ibindi byo mu gihe runaka.
 
-#### Backups (Ubugenzuzi)
+#### Backups (Ubugenzuzi) {#backups}
 
 Ushobora umuntu yari yashyira abantu 50 kugira ngo bashobore gutanga ubufasha ku bugenzuzi kandi yashobora gushyira ingano zikwiriye mu gihe runaka, kandi byo bishobora kuba bifite ingano zikwiriye mu buryo bw'ingenzi bwa bugenzuzi. Icyo cyo guhindura iki kibazo ni kumenya ko hari ibyo bikwiriye ku gukoresha.
 
@@ -237,7 +237,7 @@ Icyoho, mu gihe uburyo bwo kubaka (backup) byo gishobora kugera ku file cyangwa 
 
 Snapshots ishobora gutera ikintu cyo gukomeye n'umukoresha w'hosting, ariko ni uburyo bwo kubaka (insurance policy) kuri ibyo byo gishobora kwitwa ku gihe cyiza.
 
-#### External Scripts
+#### External Scripts {#snapshots}
 
 Buri hari uburyo bwo gukoresha scripts zikoreshwa mu gihe cyiza kugira ngo ubaka (backup) WordPress n'MySQL resources, kandi ibyo byoza cyane kuri Ultimate Multisite kuko ni plugin ya WordPress ikoresha filesystem n'database ya WordPress. Bityo uburyo bwo kubaka sites za WordPress byumva gukemura ibyo Ultimate Multisite yashobora gutera ku gihe cyiza.
 
@@ -245,7 +245,7 @@ Tari tushobora kugira umuntu w'ibiri mu scripts, ariko uburyo bw'ubwujgwa ni ugu
 
 Ni byiza kumenya ko scripts iryo mu gihe yikoreshwa, izakomeza gutera umunsi w'umunsi (system load) kandi byitwa ku gihe cyiza.
 
-#### Plugins
+#### Plugins {#external-scripts}
 
 Buri hari ikibazo mu WordPress cyo gushobora guhindurwa n'plugin, kandi niba ubanzi mu gukoresha scripts zikoreshwa mu gihe cyiza, uburyo bwo gukoresha plugin ni umuntu w'ibindi.
 
@@ -253,7 +253,7 @@ Icyo mu byo mu gihe, ntabwo plugins zishobora kuba zishobora mu buryo runaka cya
 
 Iyo utera plugin yawe, ugomba kwerekana ko ifite uburyo bwo gukora multisite (multisite aware). Kubera uburyo bwo gukora ibi mu gihe cy'backup ikora, uza kubona inyungu itandukanye ku server mbere y'ibyo yakomplirwa.
 
-#### Domain n'SSL
+#### Domain n'SSL {#plugins}
 
 Bikurikira, hari uburyo runaka bw'ubwujumbura bwo domain names mu buryo bwa _subdomain_ multisite. Uburyo runaka cyane ku gihe cy'abantu bashobora gukoresha ni gukoresha wildcard DNS entries.
 
@@ -277,7 +277,7 @@ Kwa watu wengi, kutumia Cloudflare ni chaguo rahisi. Mteja anahitaji tu kuweka d
 
 Nje ya hili, ni lazima kutafuta sulumavu zingine ambazo ndizo kwa nini Ultimate Multisite inarekomanya orodha ya Watoa Huduma Wenye Ufanisi (Compatible Providers). Hii inatokana na kwamba mchakato wa kuweka DNS na SSL unaweza kuwa mchakato mgumu. Hata hivyo, kwa sababu ya ushirikishwaji wa Ultimate Multisite na watoa huduma hawa, ugumu unakuwa mdogo sana na utaratibu unakuwa unafanywa kiotomatiki.
 
-#### Plugins (Vifaa vya ziada)
+#### Plugins (Vifaa vya ziada) {#domain-and-ssl-1}
 
 Ni jambo la kawaida kwamba utahitaji plugins nyingine ili kutoa utendaji kwa wateja wako au maeneo ya mtandao yako. Je, plugins zote zinafanya kazi na WordPress Multisite na Ultimate Multisite? Jibu ni hutegemea.
 

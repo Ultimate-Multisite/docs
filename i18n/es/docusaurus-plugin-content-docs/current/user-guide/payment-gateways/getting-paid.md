@@ -1,110 +1,126 @@
 ---
 title: Recibir pagos
 sidebar_position: 15
-_i18n_hash: b7e644488bb1bef802e024319be88725
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Recibiendo pagos (v2)
+# Recibir pagos (v2) {#getting-paid-v2}
 
-_**NOTA IMPORTANTE: Este artículo se refiere a la versión 2.x de Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
-Ultimate Multisite tiene un sistema de membresía y facturación incorporado. Para que nuestro sistema de facturación funcione, hemos integrado las pasarelas de pago más comunes utilizadas en el comercio electrónico. Las pasarelas de pago predeterminadas en Ultimate Multisite son _Stripe_, _PayPal_ y Manual Payment. También puedes usar _WooCommerce_, _GoCardless_ y _Payfast_ para recibir pagos instalando sus respectivos complementos.
+Ultimate Multisite tiene un sistema integrado de membresías y facturación. Para que nuestro sistema de facturación funcione, hemos integrado las pasarelas de pago más comunes utilizadas en el comercio electrónico. Las pasarelas de pago predeterminadas en Ultimate Multisite son _Stripe_ , _PayPal_ y Pago manual. También puedes usar _WooCommerce_ , _GoCardless_ y _Payfast_ para recibir pagos instalando sus respectivos add-ons.
 
-## Configuración básica
+## Ajustes básicos {#basic-settings}
 
-Puedes configurar cualquiera de estas pasarelas de pago en la configuración de pagos de Ultimate Multisite. Puedes encontrarla yendo a **Ultimate Multisite menu > Settings > Payments.**
+Puedes configurar cualquiera de estas pasarelas de pago en los ajustes de pago de Ultimate Multisite. Puedes encontrarlos yendo a **menú de Ultimate Multisite > Settings > Payments.**
 
-![Payment settings page in Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Página de ajustes de pagos en Ultimate Multisite que muestra el panel de Payments](/img/config/payments-settings-page.png)
 
-Antes de configurar tu pasarela de pago, por favor revisa la configuración básica de pagos que puedes configurar:
+Antes de configurar tu pasarela de pago, revisa los ajustes básicos de pago que puedes configurar:
 
-**Forzar auto-renovación** **w:** Esto asegurará que el pago se renueve automáticamente al final de cada ciclo de facturación, dependiendo de la frecuencia de facturación que el usuario haya seleccionado.
+**Forzar renovación automática** **:** Esto garantizará que el pago se repita automáticamente al final de cada ciclo de facturación según la frecuencia de facturación que haya seleccionado el usuario.
 
-![Force auto-renew toggle setting](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Permitir pruebas sin pago** **method:** Con esta opción habilitada, tu cliente no tendrá que agregar información financiera durante el proceso de registro. Esto solo será necesario una vez que expire el período de prueba.
+Ultimate Multisite v2.13.0 comprueba si la pasarela activa tiene una credencial de renovación reutilizable antes de guardar una membresía recurrente con la renovación automática activada. Una credencial de renovación puede ser una suscripción de la pasarela, un acuerdo de facturación, un token de bóveda guardado o un método de pago reutilizable equivalente. Si la pasarela informa que no existe ninguna credencial utilizable, Ultimate Multisite guarda la membresía, pero desactiva la renovación automática y registra el estado de credencial faltante para que un administrador o un flujo de soporte pueda pedir al cliente que vuelva a autorizar el pago antes de la fecha de renovación.
 
-![Allow trials without payment method toggle](/img/config/settings-payment-gateways.png)
+Esto evita que una membresía parezca renovarse automáticamente cuando la pasarela solo puede cobrar pagos únicos. Los add-ons de pasarela deben confirmar que los checkouts recurrentes almacenan una credencial reutilizable, especialmente cuando la pasarela admite tanto captura de pago único como modos de pago en bóveda/suscripción.
 
-**Enviar factura en la confirmación de pago:** Esta opción te permite decidir si enviar o no una factura después del pago. Ten en cuenta que los usuarios tendrán acceso a su historial de pagos en el panel de su subsitio. Esta opción no se aplica a la pasarela Manual.
+**Permitir pruebas sin método** **de pago:** Con esta opción activada, tu cliente no tendrá que añadir ninguna información financiera durante el proceso de registro. Esto solo será necesario una vez que venza el período de prueba.
 
-![Send invoice on payment confirmation toggle](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Esquema de numeración de facturas:** Aquí puedes seleccionar ya sea un código de referencia de pago o un esquema de número secuencial. Si eliges usar un código de referencia de pago para tus facturas, no necesitas configurar nada. Si eliges usar un esquema de número secuencial, deberás configurar el **siguiente número de factura** (Este número se usará como el número de factura para la próxima factura generada en el sistema. Se incrementa en uno cada vez que se crea una nueva factura. Puedes cambiarlo y guardarlo para restablecer el número secuencial de facturas a un valor específico) y el **prefijo del número de factura.**
+**Enviar factura al confirmar el pago:** Esto te da la opción de enviar o no una factura después del pago. Ten en cuenta que los usuarios tendrán acceso a su historial de pagos desde el dashboard de su subsitio. Esta opción no se aplica a la pasarela manual.
 
-![Invoice numbering scheme selection](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Sequential invoice number and prefix settings](/img/config/settings-payment-gateways.png)
+**Esquema de numeración de facturas:** Aquí puedes seleccionar un código de referencia de pago o un esquema de numeración secuencial. Si eliges usar un código de referencia de pago para tus facturas, no necesitas configurar nada. Si eliges usar un esquema de numeración secuencial, tendrás que configurar el **siguiente número de factura** (este número se usará como número de factura para la próxima factura generada en el sistema. Se incrementa en uno cada vez que se crea una nueva factura. Puedes cambiarlo y guardarlo para restablecer el número secuencial de factura a un valor específico) y el **prefijo del número de factura.**
 
-## Dónde encontrar las pasarelas:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Puedes configurar las pasarelas de pago en la misma página ( **Ultimate Multisite > Settings > Payments**). Justo debajo de **active payment gateways**, podrás ver: _Stripe_, _Stripe Checkout_, _PayPal_ y _Manual_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Active payment gateways list](/img/config/settings-payment-gateways.png)
+## Dónde encontrar las pasarelas: {#where-to-find-the-gateways}
 
-Tenemos un artículo dedicado para cada pasarela de pago que te guiará a través de los pasos para configurarla, los cuales puedes encontrar en los enlaces a continuación.
+Puedes configurar las pasarelas de pago en la misma página ( **Ultimate Multisite > Settings > Payments**). Justo debajo de **pasarelas de pago activas** , podrás ver: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ y _Manual_.
 
-**Configuración de la pasarela Stripe**
+![Sección Active Payment Gateways que lista Stripe, Stripe Checkout, PayPal y Manual](/img/config/payments-active-gateways.png)
 
-**Configuración de la pasarela PayPal**
+Tenemos un artículo dedicado para cada pasarela de pago que te guiará por los pasos para configurarla, que puedes encontrar en los enlaces siguientes.
 
-**Configuración de pagos manuales**
+Puedes ver y editar los detalles de pago:
 
-Ahora, si deseas usar _WooCommerce_, _GoCardless_ o _Payfast_ como tu pasarela de pago, necesitarás **instalar y configurar sus complementos**.
+![Interfaz de edición de pago](/img/admin/payment-edit.png)
 
-### Cómo instalar el complemento WooCommerce:
+Aquí tienes una vista completa de la página de edición de pago:
 
-Entendemos que _Stripe_ y _PayPal_ no están disponibles en algunos países, lo que limita o dificulta a los usuarios de Ultimate Multisite usar nuestro plugin de manera efectiva. Por eso creamos un complemento para integrar _WooCommerce_, que es un plugin de comercio electrónico muy popular. Desarrolladores de todo el mundo han creado complementos para integrar diferentes pasarelas de pago. Aprovechamos esto para ampliar las pasarelas de pago que puedes usar con el sistema de facturación de Ultimate Multisite.
+![Interfaz completa de edición de pago](/img/admin/payment-edit-full.png)
+
+Aquí también tienes una vista completa de los ajustes de las pasarelas de pago:
+
+![Página completa de ajustes de pasarelas de pago](/img/config/settings-payments-gateways-full.png)
+
+**Configurar la pasarela Stripe**
+
+**Configurar la pasarela PayPal**** **
+
+**Configurar pagos manuales**
+
+Ahora, si quieres usar _WooCommerce_ , _GoCardless_ o _Payfast_ como tu pasarela de pago, tendrás que **instalar y configurar sus add-ons**.
+
+### Cómo instalar el add-on de WooCommerce: {#how-to-install-the-woocommerce-add-on}
+
+Entendemos que _Stripe_ y _PayPal_ no están disponibles en algunos países, lo que limita o impide que los usuarios de Ultimate Multisite utilicen eficazmente nuestro plugin. Por eso creamos un add-on para integrar _WooCommerce,_ que es un plugin de comercio electrónico muy popular. Desarrolladores de todo el mundo crearon add-ons para integrar diferentes pasarelas de pago con él. Aprovechamos esto para ampliar las pasarelas de pago que puedes usar con el sistema de facturación de Ultimate Multisite.
 
 _**IMPORTANTE:** Ultimate Multisite: WooCommerce Integration requiere que WooCommerce esté activado al menos en tu sitio principal._
 
-Primero, por favor ve a la página de complementos. Puedes encontrarla yendo a **Ultimate Multisite > Settings**. Deberías ver la tabla **Add-ons**. Haz clic en **Check our Add-ons**.
+Primero, ve a la página de add-ons. Puedes encontrarla yendo a **Ultimate Multisite > Settings**. Deberías ver la tabla **Add-ons**. Haz clic en **Check our Add-ons**.
 
-![Settings page with add-ons section](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Después de hacer clic en **Check our Add-ons**, serás redirigido a la página de complementos. Aquí puedes encontrar todos los complementos de Ultimate Multisite. Haz clic en el complemento **Ultimate Multisite: WooCommerce Integration**.
+Después de hacer clic en **Check our Add-ons** , se te redirigirá a la página de add-ons. Aquí puedes encontrar todos los add-ons de Ultimate Multisite. Haz clic en el add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+![Página de add-ons que lista add-ons de Ultimate Multisite, incluida WooCommerce Integration](/img/addons/addons-page.png)
 
-Se abrirá una ventana con los detalles del complemento. Simplemente haz clic en **Install Now**.
+Aparecerá una ventana con los detalles del add-on. Solo haz clic en **Install Now**.
 
-![WooCommerce add-on install dialog](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: cuadro de diálogo de detalles del add-on Ultimate Multisite WooCommerce Integration con el botón Install Now -->
 
-Una vez finalizada la instalación, serás redirigido a la página de plugins. Aquí, simplemente haz clic en **Network Activate** y el complemento WooCommerce se activará en tu red.
+Una vez finalizada la instalación, se te redirigirá a la página de plugins. Aquí, solo haz clic en **Network Activate** y el add-on de WooCommerce se activará en tu red.
 
-![Network Activate the WooCommerce add-on](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: página de plugins con el enlace Network Activate para el add-on WooCommerce Integration -->
 
 Después de activarlo, si aún no tienes el plugin WooCommerce instalado y activado en tu sitio web, recibirás un recordatorio.
 
-![WooCommerce activation reminder notice](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: aviso de administración que recuerda al administrador instalar y activar el plugin WooCommerce -->
 
-Para leer más sobre el complemento WooCommerce Integration, **haz clic aquí**.
+Para leer más sobre el add-on WooCommerce Integration, **haz clic aquí**.
 
-### Cómo instalar el complemento GoCardless:
+### Cómo instalar el add-on GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Los pasos para instalar el complemento _GoCardless_ son prácticamente los mismos que los del complemento _WooCommerce_. Por favor, ve a la página de complementos y selecciona el complemento **Ultimate Multisite: GoCardless Gateway**.
+Los pasos para instalar el add-on _GoCardless_ son prácticamente los mismos que para el add-on _WooCommerce_. Ve a la página de add-ons y selecciona el add-on **Ultimate Multisite: GoCardless Gateway**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: página de add-ons con el add-on Ultimate Multisite GoCardless Gateway resaltado -->
 
-Se abrirá una ventana con el complemento. Haz clic en **Install Now**.
+Aparecerá la ventana del add-on. Haz clic en **Install Now**.
 
-![GoCardless add-on install dialog](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: cuadro de diálogo de detalles del add-on Ultimate Multisite GoCardless Gateway con el botón Install Now -->
 
-Una vez finalizada la instalación, serás redirigido a la página de plugins. Aquí, simplemente haz clic en **Network Activate** y el complemento _GoCardless_ se activará en tu red.
+Una vez finalizada la instalación, se te redirigirá a la página de plugins. Aquí, solo haz clic en **Network Activate** y el add-on _GoCardless_ se activará en tu red.
 
-![Network Activate the GoCardless add-on](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: página de plugins con el enlace Network Activate para el add-on GoCardless Gateway -->
 
-Para aprender cómo comenzar con la pasarela _GoCardless_, **lee este artículo**.
+Para aprender cómo empezar con la pasarela _GoCardless_, **lee este artículo**.
 
-### Cómo instalar el complemento Payfast:
+### Cómo instalar el add-on Payfast: {#how-to-install-the-payfast-add-on}
 
-Ve a la página de complementos y selecciona el complemento **Ultimate Multisite: Payfast Gateway**.
+Ve a la página de add-ons y selecciona el add-on **Ultimate Multisite: Payfast Gateway**.
 
-![Add-ons page listing available add-ons](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: página de add-ons con el add-on Ultimate Multisite Payfast Gateway resaltado -->
 
-Se abrirá una ventana con el complemento. Haz clic en **Install Now.**
+Aparecerá la ventana del add-on. Haz clic en **Install Now.**
 
-![Payfast add-on install dialog](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: cuadro de diálogo de detalles del add-on Ultimate Multisite Payfast Gateway con el botón Install Now -->
 
-Una vez finalizada la instalación, serás redirigido a la página de plugins. Aquí, simplemente haz clic en **Network Activate** y el complemento _Payfast_ se activará en tu red.
+Una vez finalizada la instalación, se te redirigirá a la página de plugins. Aquí, solo haz clic en **Network Activate** y el add-on _Payfast_ se activará en tu red.
 
-![Network Activate the Payfast add-on](/img/config/settings-general.png)
+<!-- Captura de pantalla no disponible: página de plugins con el enlace Network Activate para el add-on Payfast Gateway add-on -->

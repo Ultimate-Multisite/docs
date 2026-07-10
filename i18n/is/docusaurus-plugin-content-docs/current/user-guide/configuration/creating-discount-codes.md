@@ -3,13 +3,13 @@ title: Skráning viðskildi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Skráning Viðskiptaheimildar (v2)
+# Skráning Viðskiptaheimildar (v2) {#creating-discount-codes-v2}
 
 _**VIÐSKIPURLEIKN: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 
 Með Ultimate Multisite geturðu skapa viðskiptaheimildar til að gefa þínum viðskiptavinum álagningu á skýrslu sína. Og að skapa þau er englega ekki í vé.
 
-## Skráning og breyting af Viðskiptaheimildum
+## Skráning og breyting af Viðskiptaheimildum {#creating-and-editing-discount-codes}
 
 Til að skapa eða breyta viðskiptaheimild, ferðu yfir til **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupóninn er nú á lista þinni, og frá þá geturðu klikka í **edit or dele
 
 ###
 
-### Notkun URL-parametrast:
+### Notkun URL-parametrast: {#using-url-parameters}
 
 Ef þú vilt sérsniða príslista eða byggja fínlega kupónakóðu síðu fyrir netseyðingu og vilja nota kupónakóðuna á skráningarsíðunni þinni, geturð þetta gera með URL-parametrast.
 

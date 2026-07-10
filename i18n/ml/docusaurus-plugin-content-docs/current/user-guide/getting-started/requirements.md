@@ -3,11 +3,11 @@ title: ആവശ്യകതകൾ
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite ആവശ്യകതകൾ
+# Ultimate Multisite ആവശ്യകതകൾ {#ultimate-multisite-requirements}
 
 Ultimate Multisite വാങ്ങുന്നതിന് മുമ്പ് നിങ്ങൾ ആദ്യം ചോദിച്ചേക്കാവുന്ന കാര്യം, ഞങ്ങളുടെ plugin പ്രവർത്തിപ്പിക്കാൻ എന്തൊക്കെ ആവശ്യകതകൾ വേണമെന്നാണ്. ഭാഗ്യവശാൽ, Ultimate Multisite പ്രവർത്തിപ്പിക്കാൻ ചില അടിസ്ഥാന ആവശ്യകതകൾ മാത്രമേ വേണ്ടൂ: ഒരു **domain name**, ഒരു നല്ല **hosting provider**, ഒരു WordPress **Multisite** ഇൻസ്റ്റലേഷൻ. ഇത്രയും മതി!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 ആദ്യം, domain name-നെ കുറിച്ച് സംസാരിക്കാം.
 
@@ -17,7 +17,7 @@ Domain name തിരഞ്ഞെടുക്കുമ്പോൾ, നിങ്
 
 നിങ്ങൾ വെബ്‌സൈറ്റുകൾ ഒരു സേവനമായി വിൽക്കുന്നിടത്തോളം, തിരഞ്ഞെടുക്കുന്ന ഏത് മേഖലയും ഞങ്ങളുടെ plugin ഉപയോഗിച്ച് കൈകാര്യം ചെയ്യാൻ കഴിയും! നിങ്ങളുടെ ബിസിനസ് പ്ലാനുമായി ചേരുന്ന ഒരു domain name തിരഞ്ഞെടുക്കുന്നത് ഉറപ്പാക്കുക.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 ഇപ്പോൾ നിങ്ങളുടെ മേഖലയെയും ബിസിനസിനെയും പ്രതിനിധീകരിക്കുന്ന ആകർഷകമായ ഒരു domain name ഉണ്ട്, Ultimate Multisite-ൽ നിങ്ങളുടെ network host ചെയ്യാൻ ഒരു നല്ല web hosting കമ്പനി തിരഞ്ഞെടുക്കേണ്ടതുണ്ട്. വിപണിയിൽ ചില നല്ല ഓപ്ഷനുകൾ ലഭ്യമാണ്. ചില hosting providers Ultimate Multisite-മായി നന്നായി സംയോജിക്കുന്നു, നിങ്ങൾ നിർമ്മിക്കാൻ ഉദ്ദേശിക്കുന്നതിനെ ആശ്രയിച്ച് ഇത് ഒരു നിർണായക ഘടകമായേക്കാം.
 
@@ -25,7 +25,7 @@ Ultimate Multisite ഏത് hosting provider-ലും പ്രവർത്ത
 
 Server specifications-ന്റെ കാര്യത്തിൽ, പ്രത്യേക ഫോർമുലയൊന്നുമില്ല, കാരണം ഇത് നിങ്ങൾ വാഗ്ദാനം ചെയ്യുന്ന features-നെയും functions-നെയും നിങ്ങളുടെ network-ന്റെ വലുപ്പത്തെയും ആശ്രയിച്ചിരിക്കും. Shared hosting ഒരു നല്ല തുടക്കമായിരിക്കാം, പക്ഷേ നിങ്ങളുടെ network വളരാൻ തുടങ്ങുമ്പോൾ, ഒരു dedicated VPS ആവശ്യമായി വന്നേക്കാം.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 ഇനി, WordPress Multisite installation-നെ കുറിച്ച് കുറച്ച് സംസാരിക്കാം.
 

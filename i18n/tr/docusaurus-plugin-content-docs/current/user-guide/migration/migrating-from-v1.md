@@ -3,9 +3,9 @@ title: V1'den Geçiş
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# V1'den Geçiş Yapma
+# V1'den Geçiş Yapma {#migrating-from-v1}
 
-## Ultimate Multisite, orijinal 1.x sürüm ailesinden 2.x sürüm ailesine geçiş yapmıştır.
+## Ultimate Multisite, orijinal 1.x sürüm ailesinden 2.x sürüm ailesine geçiş yapmıştır. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite 2.0 ve üzeri sürümler, kod tabanının tamamen yeniden yazılmış halidir. Bu da eski sürümle yeni sürüm arasında neredeyse hiçbir ortak nokta olmadığı anlamına gelir. Bu nedenle, 1.x'ten 2.x'e yükseltme yaparken verilerinizin yeni sürümlerin anlayabileceği bir formata taşınması gerekir.
 
@@ -15,7 +15,7 @@ Bu derste taşıma aracının nasıl çalıştığını, başarısızlık duruml
 
 _**ÖNEMLİ: 1.x sürümünden 2.0 sürümüne yükseltme yapmadan önce lütfen site veritabanınızın yedeğini aldığınızdan emin olun**_
 
-## İlk adımlar
+## İlk adımlar {#first-steps}
 
 İlk adım, eklenti .zip dosyasını indirmek ve 2.0 sürümünü ağ yönetici panelinize yüklemektir.
 
@@ -51,7 +51,7 @@ Lisans etkinleştirmesinden sonra, sonraki sayfadaki **Yükle** düğmesine tık
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Şimdi taşıma işlemi
+## Şimdi taşıma işlemi {#now-the-migration}
 
 Taşıma aracında yerleşik bir güvenlik özelliği bulunmaktadır; bu özellik tüm multisite'ınızı kontrol ederek Ultimate Multisite verilerinizin sorunsuz bir şekilde taşınabileceğinden emin olur. İşlemi başlatmak için **Kontrol Et** düğmesine tıklayın.
 
@@ -59,13 +59,13 @@ Taşıma aracında yerleşik bir güvenlik özelliği bulunmaktadır; bu özelli
 
 Kontrolü çalıştırdıktan sonra iki olasılıkla karşılaşabilirsiniz: sonuç ya **hatalı** ya da **hatasız** olabilir.
 
-### Hatalı Sonuç
+### Hatalı Sonuç {#with-error}
 
 Bir hata mesajı alırsanız, hatayı düzeltmenizde yardımcı olmaları için destek ekibimizle iletişime geçmeniz gerekecektir. Bir destek talebi oluştururken **hata günlüğünü eklediğinizden** emin olun. Günlüğü indirebilir veya destek ekibimizle iletişime geçin yazan bağlantıya tıklayabilirsiniz. Bu, sayfanızın sağ tarafında yardım widget'ını açacak ve açıklama bölümünde hata günlükleri dahil olmak üzere alanlar sizin için önceden doldurulmuş olacaktır.
 
 _**Sistem bir hata bulduğundan, 2.0 sürümüne taşıma işlemine devam edemezsiniz. Hata düzelene kadar ağınızı çalışır durumda tutmak için 1.x sürümüne geri dönebilirsiniz.**_
 
-### Hatasız Sonuç
+### Hatasız Sonuç {#without-error}
 
 Sistem herhangi bir hata bulamazsa, bir başarı mesajı ve altta taşıma işlemine devam etmenizi sağlayan bir **Taşı** düğmesi göreceksiniz. Bu sayfada, ilerlemeden önce veritabanınızın yedeğini almanız hatırlatılacaktır; bunu şiddetle tavsiye ediyoruz. Zaten bir yedeğiniz varsa **Taşı** düğmesine tıklayın.
 

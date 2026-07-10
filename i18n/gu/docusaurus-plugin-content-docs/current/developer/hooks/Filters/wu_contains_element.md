@@ -4,13 +4,13 @@ title: ફિલ્ટર - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# Filter: wu_contains_element
+# Filter: wu_contains_element {#filter-wucontainselement}
 
 ડેવલપર્સને શરૂઆતના સર્ચના પરિણામો બદલવાની મંજૂરી આપે છે.
 
 આ ત્રીજા પક્ષના બિલ્ડર્સ (third-party builders) અને આવા અન્ય કાર્યો માટે ઉપયોગી છે.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,9 +19,9 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | હાલનો એલિમેન્ટ. |
 | $post | `null\|\WP_Post` | તપાસ કરવા માટેનો પોસ્ટ. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) at line 534

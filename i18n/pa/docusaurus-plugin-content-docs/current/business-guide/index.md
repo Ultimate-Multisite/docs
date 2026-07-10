@@ -3,13 +3,13 @@ title: ਇੱਕ ਨਿਸ਼ਾ ਵੈੱਬਸਾਈਟ ਕਾਰੋਬਾਰ 
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite ਨਾਲ ਇੱਕ Niche Website Business ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ
+# Ultimate Multisite ਨਾਲ ਇੱਕ Niche Website Business ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ {#build-a-niche-website-business-with-ultimate-multisite}
 
 ਜਿਹੜੇ ਲੋਕ ਵੈੱਬਸਾਈਟਾਂ ਵੇਚਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਨ, ਉਹ ਜ਼ਿਆਦਾਤਰ Wix, Squarespace, ਅਤੇ ਹਜ਼ਾਰਾਂ ਫ੍ਰੀਲਾਂਸਰਾਂ ਨਾਲ ਕੀਮਤ 'ਤੇ ਮੁਕਾਬਲਾ ਕਰਦੇ ਹਨ। ਉਹ ਹਾਰ ਜਾਂਦੇ ਹਨ। ਜਿਹੜੇ ਜਿੱਤਦੇ ਹਨ, ਉਹ ਇੱਕ ਖਾਸ ਸਰੋਤ (audience) ਚੁਣਦੇ ਹਨ, ਉਸ ਸਰੋਤ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਹੱਲ ਬਣਾਉਂਦੇ ਹਨ, ਅਤੇ ਉਸ ਮੁੱਲ (value) ਲਈ চার্জ ਕਰਦੇ ਹਨ ਜੋ ਉਹ ਪਹੁੰਚਾਉਂਦੇ ਹਨ।
 
 ਇਹ ਕੋਰਸ ਤੁਹਾਨੂੰ ਸਿਖਾਉਂਦਾ ਹੈ ਕਿ Ultimate Multisite ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਬਿਲਕੁਲ ਇਹੀ ਕਿਵੇਂ ਕਰਨਾ ਹੈ।
 
-## ਤੁਸੀਂ ਕੀ ਬਣਾਓਗੇ
+## ਤੁਸੀਂ ਕੀ ਬਣਾਓਗੇ {#what-you-will-build}
 
 ਇਸ ਕੋਰਸ ਦੌਰਾਨ ਤੁਸੀਂ **FitSite** ਨਾਮ ਦਾ ਇੱਕ ਅਸਲ, ਕੰਮ ਕਰਦਾ ਨੈੱਟਵਰਕ ਬਣਾਓਗੇ — ਇੱਕ ਵੈੱਬਸਾਈਟ ਪਲੇਟਫਾਰਮ ਜੋ ਖਾਸ ਤੌਰ 'ਤੇ ਫਿਟਨੈਸ ਸਟੂਡੀਓ, ਪਰਸਨਲ ਟ੍ਰੇਨਰਾਂ, ਅਤੇ ਜਿਮ ਮਾਲਕਾਂ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ।
 
@@ -23,7 +23,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 ਤੁਸੀਂ ਕਦਮ-ਦਰ-ਕਦਮ ਪਿੱਛੇ ਰਹੋਗੇ, ਅਤੇ ਦੇ ਅੰਤ ਤੱਕ ਤੁਹਾਡੇ ਕੋਲ ਇੱਕ ਕੰਮ ਕਰਦਾ ਪਲੇਟਫਾਰਮ ਅਤੇ ਕੋਈ ਵੀ Niche ਚੁਣਨ ਲਈ ਇਸ ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਦੁਹਰਾਉਣ ਦਾ ਗਿਆਨ ਹੋਵੇਗਾ।
 
-## ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਕਿਉਂ?
+## ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਕਿਉਂ? {#why-fitness-studios}
 
 ਸਾਨੂੰ ਇੱਕ ਕੰਕਰੀਟ ਉਦਾਹਰਨ ਦੀ ਲੋੜ ਸੀ ਜਿਸ 'ਤੇ ਕੋਈ ਵੀ ਕੋਈ ਪਾਲਣਾ ਕਰ ਸਕਦਾ ਹੋਵੇ। ਫਿਟਨੈਸ ਸਟੂਡੀਓ ਇਸ ਲਈ ਕੰਮ ਕਰਦੇ ਹਨ ਕਿਉਂਕਿ:
 
@@ -34,7 +34,7 @@ _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 
 FitSite ਬਣਾਉਣ ਵਿੱਚ ਤੁਸੀਂ ਜੋ ਕੁਝ ਵੀ ਸਿੱਖਦੇ ਹੋ, ਉਹ ਸਿੱਧੇ ਤੌਰ 'ਤੇ ਉਸ ਕਿਸੇ ਵੀ Niche 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ ਜੋ ਤੁਸੀਂ ਚੁਣਦੇ ਹੋ: ਰੈਸਟੋਰੈਂਟ, ਰੀਅਲ ਅਸਟੇਟ 에ਜੰਟ, ਲਾਅ ਫਰਮ, ਚਰਚ, ਟ੍ਰੇਡ ਕੰਟਰੈਕਟਰ, ਜਾਂ ਕੋਈ ਹੋਰ ਵਰਟੀਕਲ।
 
-## ਕੋਰਸ ਦੀ ਬਣਤਰ
+## ਕੋਰਸ ਦੀ ਬਣਤਰ {#course-structure}
 
 ਹਰ ਲੈਸਨ ਇੱਕ ਸੰਕਲਪ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਸਮਝਾਉਂਦਾ ਹੈ ਕਿ ਇਹ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹੈ, ਅਤੇ ਤੁਹਾਨੂੰ FitSite ਨੈੱਟਵਰਕ ਵਿੱਚ ਇਸਨੂੰ ਲਾਗੂ ਕਰਨ ਵਿੱਚ ਮਾਰਗਦਰਸ਼ਨ ਕਰਦਾ ਹੈ। ਹਰ ਲੈਸਨ ਪਿਛਲੇ ਲੈਸਨ 'ਤੇ ਬਣਦਾ ਹੈ।
 
@@ -55,7 +55,7 @@ FitSite ਬਣਾਉਣ ਵਿੱਚ ਤੁਸੀਂ ਜੋ ਕੁਝ ਵੀ ਸ
 | [13. Scaling Up](lesson-13-growth) | Growing from first customers to a real business | FitSite growth and automation strategy |
 | [14. What Comes Next](lesson-14-whats-next) | Expanding to adjacent niches and new opportunities | Your roadmap beyond FitSite |
 
-## Prerequisites
+## Prerequisites {#prerequisites}
 
 - A WordPress Multisite installation (or willingness to set one up)
 - An active Ultimate Multisite license
@@ -63,6 +63,6 @@ FitSite ਬਣਾਉਣ ਵਿੱਚ ਤੁਸੀਂ ਜੋ ਕੁਝ ਵੀ ਸ
 
 ਕੋਡਿੰਗ ਦੀ ਕੋਈ ਲੋੜ ਨਹੀਂ ਹੈ। ਜੇ ਤੁਸੀਂ ਪਹਿਲਾਂ ਕਦੇ Ultimate Multisite ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕੀਤੀ ਹੈ, ਤਾਂ ਕੋਈ ਗੱਲ ਨਹੀਂ — Lesson 3 ਇੱਕ ਤਾਜ਼ੇ ਇੰਸਟਾਲੇਸ਼ਨ ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।
 
-## ਤਿਆਰ ਹੋ?
+## ਤਿਆਰ ਹੋ? {#ready}
 
 [Lesson 1: Why Niche Wins](lesson-1-why-niche) ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ।

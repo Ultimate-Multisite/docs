@@ -3,11 +3,11 @@ title: Fòcas a h-ealaidh
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Fhaighinnachd a' Chàrach (Ability Visibility)
+# Fhaighinnachd a' Chàrach (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 a thann a' chlàradh **Ability Visibility** a tha a' leige sinn a' chlàradh, a tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh. Tha seo a' leige sinn do chùineadh a' chlàradh gu sònraich gu cumhachd a tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh, a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh.
 
-## Cò a tha Ability Visibility? (What is Ability Visibility?)
+## Cò a tha Ability Visibility? (What is Ability Visibility?) {#what-is-ability-visibility}
 
 Ability Visibility is se system de chàrach a tha a' chlàradh:
 
@@ -18,9 +18,9 @@ Ability Visibility is se system de chàrach a tha a' chlàradh:
 
 Tha chàrach a tha eachdraidh leithid a tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh.
 
-## Leithidhan a tha Ability Visibility? (Visibility Levels)
+## Leithidhan a tha Ability Visibility? (Visibility Levels) {#visibility-levels}
 
-### Public (Public)
+### Public (Public) {#public}
 
 **Ability Public** tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh:
 
@@ -32,7 +32,7 @@ Tha chàrach a tha eachdraidh leithid a tha a' chlàradh a' chlàradh a' chlàra
 
 Eisimpleir: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Intearnel)
+### Internal (Intearnel) {#internal}
 
 **Ability Intearnel** tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh:
 
@@ -43,7 +43,7 @@ Eisimpleir: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Eisimpleir: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Ability Partner** tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh:
 
@@ -54,7 +54,7 @@ Eisimpleir: `manage-settings`, `view-analytics`, `export-data`
 
 Eisimpleir: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Deabhailte)
+### Disabled (Deabhailte) {#disabled}
 
 **Ability Deabhailte** tha a' chlàradh a' chlàradh a' chlàradh a' chlàradh a' chlàradh:
 
@@ -63,15 +63,15 @@ Eisimpleir: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Cha tha a' chlàradh gu cùinean a' chlàradh
 - Tha eòlasach airson abilityn a tha a' chlàradh a' chlàradh.
 
-## A' chlàradhchail a' chlàradhchail
+## A' chlàradhchail a' chlàradhchail {#managing-ability-visibility}
 
-### A' chlàradhchail a' chlàradhchail de dhòighinn a' chlàradhchail
+### A' chlàradhchail a' chlàradhchail de dhòighinn a' chlàradhchail {#accessing-ability-visibility-settings}
 
 1. Ràdhdaidh **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Clicke ar taobh **Abilities** (A' chlàradhchail)
 3. Bidh thu ag faic seachd de luchd-chlàradh a' chlàradhchail a' chlàradhchail agus eadar-dheargadh na stiùiriche chlàradhchail.
 
-### A' chlàradhchail a' chlàradhchail a' chlàradhchail
+### A' chlàradhchail a' chlàradhchail a' chlàradhchail {#viewing-ability-details}
 
 Clicke ar aon chlàradhchail airson faic:
 
@@ -82,7 +82,7 @@ Clicke ar aon chlàradhchail airson faic:
 - **Last updated**: Cuimhneach air an t-am sin a' chlàradhchail a' chlàradhchail a' chlàradhchail
 - **Status**: A' chlàradhchail a' faic air no Unclassified (Chan a tha e 'Unclassified')
 
-### A' chlàradhchail a' chlàradhchail a' chlàradhchail
+### A' chlàradhchail a' chlàradhchail a' chlàradhchail {#changing-visibility-levels}
 
  airson atharrachadh a' chlàradhchail a' chlàradhchail:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### A' chlàradhchail a' chlàradhchail a' chlàradhchail
+### A' chlàradhchail a' chlàradhchail a' chlàradhchail {#bulk-operations}
 
  airson atharrachadh a' chlàradhchail gu mbeidh thu de dhòighinn (multiple abilities):
 
@@ -108,7 +108,7 @@ Partner allow-list: partner-123, partner-456
 2. Taisg an t-am sin air a thabhairt de dhòighinn a' chlàradhchail a' chlàradhchail
 3. Clicke ar **Apply**
 
-## A' chlàradhchail a' faic a gineadh (Partner Allow-List)
+## A' chlàradhchail a' faic a gineadh (Partner Allow-List) {#partner-allow-list}
 
 A' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlà
 
@@ -118,7 +118,7 @@ A' chlàradhchail a' faic a gineadh a' chlàradhchail a' faic a gineadh a' chlà
 4. I stiùir "Partner allow-list", thoir an t-tagh (checkbox) airson na partner a tha thuig a tha thuig a bheith le fhaisg
 5. Click **Save**
 
-### A' chlàradh fhaisg Partner (Revoking Partner Access)
+### A' chlàradh fhaisg Partner (Revoking Partner Access) {#adding-partners}
 
 Tha e cheannach a bhith a' chlàradh fhaisg an partner:
 
@@ -128,11 +128,11 @@ Tha e cheannach a bhith a' chlàradh fhaisg an partner:
 
 Bidh an partner a tharraing agad fhaisg air an ability sin gu sgeulach.
 
-## Abilities a cha bhith a' chlàradh (Unclassified Abilities)
+## Abilities a cha bhith a' chlàradh (Unclassified Abilities) {#assigning-abilities-to-partners}
 
 Nuair a tha thuig a bhith a' chlàradh ability a tha le fhaighinn Superdav AI Agent, tha e a' chlàradh mar **Unclassified**.
 
-### A' chlàradh admin airson abilities a cha bhith a' chlàradh (Admin Notice for Unclassified Abilities)
+### A' chlàradh admin airson abilities a cha bhith a' chlàradh (Admin Notice for Unclassified Abilities) {#revoking-partner-access}
 
 Bidh thuig a fheuchain tòiseachadh admin:
 
@@ -149,7 +149,7 @@ De uile, tha thuig a bhith a' chlàradh agus a' chlàradh.
 [Review Abilities] [Dismiss]
 ```
 
-### A' chlàradh abilities a cha bhith a' chlàradh (Reviewing Unclassified Abilities)
+### A' chlàradh abilities a cha bhith a' chlàradh (Reviewing Unclassified Abilities) {#unclassified-abilities}
 
 1. Click **Review Abilities** anns an tòiseachadh
 2. airson each unclassified ability, tha thuig a fheuchain:
@@ -166,7 +166,7 @@ De uile, tha thuig a bhith a' chlàradh agus a' chlàradh.
 
 4. Click **Classify** airson a' chlàradh tòisich agad
 
-### Cuimhneachadh: A bheil thuig a' chlàradh abilities a cha bhith a' chlàradh? (Why Classify Unclassified Abilities?)
+### Cuimhneachadh: A bheil thuig a' chlàradh abilities a cha bhith a' chlàradh? (Why Classify Unclassified Abilities?) {#admin-notice-for-unclassified-abilities}
 
 A chlàradh abilities:
 
@@ -175,9 +175,9 @@ A chlàradh abilities:
 - **A' chlàradh feumaidh e**: An uair a tha e a' chlàradh, tha an ability air a bheith.
 - **Cuimhneachadh na deisghean**: Tha tòisich agad a' chlàradh a' chlàradh airson faighinn.
 
-## Fhaisg an Eadar Airtean
+## Fhaisg an Eadar Airtean {#reviewing-unclassified-abilities}
 
-### REST API
+### REST API {#why-classify-unclassified-abilities}
 
 **Abhailteine publiquinte** tha a' cheannachda gu REST endpoints:
 
@@ -189,7 +189,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Abhailteine seallach agus pàirtnerichean** cha tha a' cheannachda gu REST API.
 
-### MCP Servers
+### MCP Servers {#visibility-in-different-surfaces}
 
 **Abhailteine publiquinte** tha a' cheannachda gu MCP:
 
@@ -205,7 +205,7 @@ Abhailteine a' cheannachda:
 
 **Abhailteine pàirtnerichean** cha tha a' cheannachda nam deireadh le cridheann pàirtnerichean.
 
-### WooCommerce Integration
+### WooCommerce Integration {#rest-api}
 
 **Abhailteine publiquinte** a' cheannachda gu WooCommerce tha a' cheannachda:
 
@@ -215,7 +215,7 @@ Abhailteine a' cheannachda:
 
 **Abhailteine seallach cha tha a' cheannachda gu WooCommerce.
 
-### Chat Interface
+### Chat Interface {#mcp-servers}
 
 **Bhaidh **a' chùisbeulagan** (publiquinte, seallach, pàirtnerichean) a' cheannachda anns an chat, ag iarraidh amh dhuthist air a' chùisbeulagan:
 
@@ -223,33 +223,33 @@ Abhailteine a' cheannachda:
 - Tha na chùisbeulagan seallach a' cheannachda nam publiquinte
 - Tha na pàirtnerichean a' cheannachda nam publiquinte + pàirtnerichean (chan sealltaint)
 
-## Bhràith-bhàith-bhàith Sgàilidhean
+## Bhràith-bhàith-bhàith Sgàilidhean {#woocommerce-integration}
 
-### Prìnise an tòisichd le fhaighinn as beag
+### Prìnise an tòisichd le fhaighinn as beag {#chat-interface}
 
 - Rinn a' cheannachda gu fhaighinn as beag as fheàrr a tha a' tolaidh sinn
 - Usgaidh chùisbeulagan pàirtnerichean airson obair sealltainneach
 - Chanachda abhailteine a tha thu cha tha a' uile
 
-### Audits a' cheannachda
+### Audits a' cheannachda {#security-best-practices}
 
 - Ràdhsaichd a' cheannachda gu mhaigh a' chùisbeulagan a' cheannachda
 - Cheannachda airson abhailteine cha tha a' cheannachda
 - Chanachda fhaighinn air a' cheannachda airson pàirtnerichean a tha a' uile
 
-### Lògachadh agus Sealltainn
+### Lògachadh agus Sealltainn {#principle-of-least-privilege}
 
 - Cheannachda gu faicinn a' chùisbeulagan a tha a' cheannachda gu mòr
 - Tagaichd na far-ràdhsaichean pàirtnerichean
 - Sealltainn air uile a' cheannachda
 
-### Abhailteine a' chùisbeulagan a' chùisbeulagan
+### Abhailteine a' chùisbeulagan a' chùisbeulagan {#regular-audits}
 
 - Ràdhsaichd abhailteine a' chùisbeulagan a' cheannachda air a bhith a' cheannachda
 - Chlàradhdaidh sinn gu fhaicinn nam deireadh le sealltainn seallach
 - Slàth a' cheannachda nam publiquinte nam deireadh tar a tha a' chùisbeulagan
 
-## Troubleshooting
+## Troubleshooting {#logging-and-monitoring}
 
 **Nìl a' chunnich a' fhaighinn an eòlas** (An ability isn't showing in the list)
 - Bheir a' chunnich a' fhaighinn agus a' tha air a' chluich (Verify the ability is installed and active)
@@ -272,7 +272,7 @@ Abhailteine a' cheannachda:
 - Bheir a' chunnich air a chluich gu bheil an fhaighinn a' leatairt (Check that your classification was saved)
 - Bheir a' chunnich an plugin a tha a' tòisich an eòlas air a bhith a' leatairt (Verify the plugin providing the ability is up to date)
 
-## Migration from Legacy Mode
+## Migration from Legacy Mode {#third-party-abilities}
 
 Tha thu air a' chluich air a' chluich air an fhaighinn Superdav AI Agent a tha air a' chluich:
 
@@ -282,7 +282,7 @@ Tha thu air a' chluich air a' chluich air an fhaighinn Superdav AI Agent a tha a
 
 Fàg air **Third-Party Mode Migration** airson fhaighinn asgaidh air an tòisich dhan API Abilities.
 
-## Next Steps
+## Next Steps {#troubleshooting}
 
 An uair a tha thu a' suidheachadh an fhaighinn a' chluich:
 

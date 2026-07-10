@@ -3,15 +3,15 @@ title: 'Loj 5: Tsim Kev Tsim Kev Txais'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesson 5: ការរៀបចំផែនការរបស់អ្នក
+# Lesson 5: ការរៀបចំផែនការរបស់អ្នក {#lesson-5-designing-your-plans}
 
 កម្រិតផែនការរបស់អ្នកមិនមែនគ្រាន់តែជាកម្រិតតម្លៃទេ ប៉ុន្តែវាឆ្លុះបញ្ចាំងពីរបៀបដែលអតិថិជនក្នុងទីផ្សាររបស់អ្នកពិតជាដំណើរការ។ នៅក្នុងមេរៀននេះ អ្នកនឹងរចនាប្លង់ផលិតផលដែលត្រូវនឹងតម្រូវការជាក់ស្តែងរបស់អាជីវកម្មហាត់ប្រាណនៅដំណាក់កាលផ្សេងៗគ្នា។
 
-## យើងបានឈប់នៅត្រង់ណា
+## យើងបានឈប់នៅត្រង់ណា {#where-we-left-off}
 
 FitSite មាន قالب (template) រួចហើយបីប្រភេទគឺ (Studio Essential, Gym Pro, Fitness Chain)។ ឥឡូវនេះ យើងនឹងបង្កើតផែនការដែលកំណត់ថាអតិថិជនទទួលបានអ្វីខ្លះ និងចំណាយប៉ុន្មាន។
 
-## ការគិតតាមក្រុមអតិថិជន (Customer Segments)
+## ការគិតតាមក្រុមអតិថិជន (Customer Segments) {#thinking-in-customer-segments}
 
 កំហុសភាគច្រើនដែលមនុស្សធ្វើគឺរចនាប្លង់ដោយផ្អែកលើមុខងារបច្ចេកទេស (ការផ្ទុកទិន្នន័យ, បណ្តាញ, ចំនួនទំព័រ)។ អតិថិជនក្នុងទីផ្សាររបស់អ្នកមិនគិតតាមលក្ខខណ្ឌទាំងនោះទេ។ ម្ចាស់ហាត់ប្រាណគិតអំពីអ្វីដែលពួកគេត្រូវការដើម្បីដំណើរការអាជីវកម្មរបស់ពួកគេ។
 
@@ -25,11 +25,11 @@ FitSite មាន قالب (template) រួចហើយបីប្រភេទ
 
 ផែនការរបស់អ្នកគួរតែត្រូវនឹងក្រុមទាំងនេះ មិនមែនផ្អែកលើការប묶មុខងារតាមចិត្តទេ។
 
-## ការបង្កើតផែនការ FitSite
+## ការបង្កើតផែនការ FitSite {#creating-the-fitsite-plans}
 
 ចូលទៅកាន់ **Ultimate Multisite > Products > Add Product** សម្រាប់ផែនការនីមួយៗ។
 
-### ផែនការទី ១: FitSite Starter -- $49/month
+### ផែនការទី ១: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Plan 1: FitSite Starter**
 
@@ -61,7 +61,7 @@ FitSite មាន قالب (template) រួចហើយបីប្រភេទ
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Target**: Established single-location gyms
 
@@ -87,7 +87,7 @@ FitSite មាន قالب (template) រួចហើយបីប្រភេទ
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Target**: Multi-location fitness chains
 
@@ -111,7 +111,7 @@ FitSite មាន قالب (template) រួចហើយបីប្រភេទ
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Setting Up the Plan Group
+## Setting Up the Plan Group {#setting-up-the-plan-group}
 
 Plan group нь хэрэглэгчдийг зөвхөн FitSite төлөвлөгөөний гэр бүлийн дотор шинэчлэх эсвэл бууруулах боломжтой болгодог. Нэг төлөвлөгөөний **Up & Downgrades** таб дээр:
 
@@ -120,7 +120,7 @@ Plan group нь хэрэглэгчдийг зөвхөн FitSite төлөвлөг
 
 Энэ нь Starter → Growth → Pro гэсэн тодорхой шинэчлэх зам үүсгэнэ.
 
-## Adding Order Bumps
+## Adding Order Bumps {#adding-order-bumps}
 
 Order bumps гэдэг нь төлбөрийг хийх үед санал болгогддог нэмэлт бүтээгдэхүүн юм. FitSite-ийн хувьд дараах зүйлсийг авч үзээрэй:
 
@@ -130,7 +130,7 @@ Order bumps гэдэг нь төлбөрийг хийх үед санал бол
 
 Эдгээр нь Ultimate Multisite дээр **Package** төрлийн бүтээгдэхүүн болгож, харгалзах төлөвлөгөөтэй холбоно.
 
-## Why This Structure Works
+## Why This Structure Works {#why-this-structure-works}
 
 - **Starter** ຖອນຄວາມຫຍຸ້ງຍາກເຂົ້າສູ່ຕະຫຼາດ -- ລາຄາຖືກ, ສະເໜີງ່າຍ, ເຮັດໃຫ້ຄູຝຶກສາມາດອອນລາຍໄດ້ໄວ
 - **Growth** ເພີ່ມຟີເຈີທີ່ສະໝັກສະເພາະທີ່ສະໜາມກຳລັງຕ້ອງການ -- ການຈອງ, ແກລເລີ, ໂດເມນທີ່ປັບເຮັດเอง
@@ -138,7 +138,7 @@ Order bumps гэдэг нь төлбөрийг хийх үед санал бол
 - **Order bumps** ຊ່ວຍໃຫ້ລູກຄ້າສາມາດປັບຕາມຄວາມຕ້ອງການໂດຍບໍ່ເຮັດໃຫ້ແຜນຫຼັກສັບສົນຂຶ້ນ
 - **Clear upgrade path** ໝາຍຄວາມວ່າລູກຄ້າຈະເຕີບໂຕໄປກັບເຮົາ ແທນທີ່ຈະລາອອກ
 
-## FitSite Network ຈົນຮອດດຽວນີ້
+## FitSite Network ຈົນຮອດດຽວນີ້ {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -154,7 +154,7 @@ FitSite Network
 └── ພ້ອມສຳລັບການຕັ້ງຄ່າ checkout (ບົດຮຽນຕໍ່ໄປ)
 ```
 
-## ສິ່ງທີ່ເຮົາສ້າງໃນບົດຮຽນນີ້
+## ສິ່ງທີ່ເຮົາສ້າງໃນບົດຮຽນນີ້ {#what-we-built-this-lesson}
 
 - **ສາມລະດັບແຜນ** ທີ່ກົງກັບສ່ວນຂອງທຸລະກິດຟິດເນສທີ່ເປັນຈິງ
 - **ການກັ້ນຟີເຈີ (Feature gating)** ໂດຍໃຊ້ plugin ແລະ ການຄວບຄຸມ template ຂອງ Ultimate Multisite

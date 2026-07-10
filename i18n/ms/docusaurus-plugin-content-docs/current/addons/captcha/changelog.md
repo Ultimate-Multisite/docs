@@ -3,7 +3,7 @@ title: Pembaruan Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Log Perubahan Captcha
+# Log Perubahan Captcha {#captcha-changelog}
 
 Versi: 1.5.0 - Dikeluarkan pada 2026-05-22
 * Baharu: Had kadar hentian keras (Hard-stop rate limiter) — mengira setiap GET dan POST pada permukaan yang dilindungi captcha (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) dan membalas dengan HTTP 429, header `Retry-After`, dan jeda tarpit rawak (1–5 saat, dihadkan keras pada 15 saat).

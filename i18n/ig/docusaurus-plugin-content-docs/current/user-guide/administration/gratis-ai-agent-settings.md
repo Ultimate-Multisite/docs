@@ -1,105 +1,152 @@
 ---
-title: Settings na-agba AI Agent
+title: Ntọala Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Cài Đặt Tự Động AI Miễn Phí
+# Nhazi Gratis AI Agent {#gratis-ai-agent-settings}
 
-Màn hình **Settings → Advanced** trong Gratis AI Agent cho phép bạn cấu hình cấp quản trị cho các tích hợp backend được giới thiệu từ phiên bản v1.5.0 trở lên. Trang này mô tả các trường của **Feedback Endpoint** và định dạng mong đợi của chúng.
+Ihuenyo **Settings → Advanced** na Gratis AI Agent na-enye nhazi ọkwa onye nchịkwa maka njikọta backend. Peeji a na-akọwa iziga feedback n’ihu, igodo ndị na-enye ọchụchọ, nhazi ọrụ Superdav a na-elekọta, njikwa Google Calendar, nhazi TextBee SMS, na ọkọlọtọ njirimara gbasara netwọkụ niile.
 
-## Truy Cập Cài Đặt
+## Ịnweta Settings {#accessing-settings}
 
-1. Trong admin WordPress, hãy vào **Gratis AI Agent → Settings**.
-2. Nhấn vào tab **Advanced**.
+1. Na WordPress admin, gaa na **Gratis AI Agent → Settings**.
+2. Pịa taabụ **Advanced**.
 
-## Cấu Hình Feedback Endpoint
+## Nhazi Endpoint Feedback {#feedback-endpoint-configuration}
 
-Feedback endpoint sẽ nhận các yêu cầu POST từ agent AI bất cứ khi nào người dùng gửi phản hồi qua nút thumbs-down (giảm thích), banner gợi ý tự động, hoặc lệnh `/report-issue`.
+Endpoint feedback na-anata arịrịọ POST sitere n’aka AI agent mgbe ọ bụla onye ọrụ nyefere feedback site na bọtịnụ thumbs-down, banner auto-prompt, ma ọ bụ iwu `/report-issue`.
 
-| Trường | Mô tả |
+| Field | Description |
 |---|---|
-| **Feedback Endpoint URL** | URL mà nơi nhận các phản hồi dưới dạng yêu cầu HTTP POST với nội dung JSON. |
-| **Feedback API Key** | Một bearer token được gửi trong header `Authorization` của mỗi yêu cầu phản hồi. Hãy để trống nếu endpoint của bạn không yêu cầu xác thực. |
+| **Feedback Endpoint URL** | URL nke na-anata nnyefe feedback dị ka arịrịọ HTTP POST nwere ahụ JSON. |
+| **Feedback API Key** | bearer token a na-eziga na `Authorization` header nke arịrịọ feedback ọ bụla. Hapụ ya oghere ma ọ bụrụ na endpoint gị achọghị authentication. |
 
-### Payload JSON Mong Đợi
+### Payload JSON A Na-atụ Anya {#expected-json-payload}
 
-Endpoint phản hồi của bạn phải chấp nhận một body JSON với ít nhất các trường sau:
+Endpoint feedback gị ga-anabata ahụ JSON nwere opekata mpe fields ndị a:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Câu trả lời không chính xác về giá cả.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Các trường bổ sung có thể xuất hiện trong payload tùy thuộc vào ngữ cảnh của cuộc trò chuyện.
+Fields ndị ọzọ nwere ike ịdị na payload dabere na ọnọdụ mkparịta ụka.
 
-### Các Giá Trị `triage_category`
+### Uru `triage_category` {#triagecategory-values}
 
-Lớp phân loại (triage layer) của AI sẽ gán một trong các giá trị sau cho `triage_category` trước khi chuyển tiếp payload:
+Akụkụ triage AI na-etinye otu n’ime uru ndị a na `triage_category` tupu iziga payload n’ihu:
 
-| Giá Trị | Ý Nghĩa |
+| Value | Meaning |
 |---|---|
-| `factual_error` | Trợ lý đã cung cấp thông tin sai về sự thật. |
-| `unhelpful_answer` | Phản hồi đúng về mặt kỹ thuật nhưng không hữu ích. |
-| `inappropriate_content` | Phản hồi chứa nội dung không nên hiển thị cho người dùng. |
-| `other` | Phản hồi không khớp với bất kỳ danh mục nào đã biết. |
+| `factual_error` | Assistant nyere ozi eziokwu na-ezighi ezi. |
+| `unhelpful_answer` | Nzaghachi ahụ ziri ezi n’ụzọ teknụzụ mana ọ baghị uru. |
+| `inappropriate_content` | Nzaghachi ahụ nwere ọdịnaya ekwesịghị igosi ndị ọrụ. |
+| `other` | Feedback ahụ adabaghị na category a maara. |
 
-### Xác Thực
+### Authentication {#authentication}
 
-Ka ọkụ, ma ọ bụrụ na endpoint ọ bụla na-agba otu nkwado (authentication), ri dịghị **Feedback API Key** field ruo nkwado tupu. Agent ahụ ga-anọ:
+Ọ bụrụ na endpoint gị chọrọ authentication, tinye field **Feedback API Key** ka ọ bụrụ bearer token gị. Agent na-eziga:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Ọ bụrụ na **Feedback API Key** field ahụ ọkụ, a ga-anọghị anyị anọ `Authorization` header.
+Ọ bụrụ na field **Feedback API Key** tọgbọ chakoo, a gaghị eziga `Authorization` header.
 
-### Azoghị Ihe Feedback Collection
+### Igbanyụọ Nchịkọta Feedback {#disabling-feedback-collection}
 
-Rị dịghị **Feedback Endpoint URL** na **Feedback API Key** fields ruo nkwado. Button thumbs-down na UI feedback bụrụ ihe ndị mmadụ na-agba, ma ọ bụ na-anọghị anyị anọ submissions ahụ n'ime ndụ anyị.
+Hapụ fields **Feedback Endpoint URL** na **Feedback API Key** abụọ ahụ oghere. Bọtịnụ thumbs-down na UI feedback ka na-apụta n’ihu ndị ọrụ, mana a naghị eziga nnyefe ọ bụla n’ọrụ mpụga.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Ọ dị n'ebe **Advanced** tab ahụ, **Brave Search API Key** field ahụ ga-anọchi ike [Internet Search](../configuration/internet-search).
+Ọzọkwa na taabụ **Advanced**, field **Brave Search API Key** na-eme ka ikike [Ọchụchọ Ịntanetị](../configuration/internet-search) rụọ ọrụ.
 
 | Field | Description |
 |---|---|
-| **Brave Search API Key** | API key ahụ nwere n'ime dashboard developer Brave Search. Ọ dị mkpa maka ịgbanwe internet search na AI assistant. |
+| **Brave Search API Key** | API key gị sitere na dashboard onye nrụpụta Brave Search. Achọrọ ya iji mee ka ọchụchọ ịntanetị rụọ ọrụ n’ime AI assistant. |
 
-Label field ahụ ga-anọchi link a na akụkọ ọrụ ndị mmadụ na shiger Brave Search API sign-up page. Rị dịghị ruo nkwado iji gbanwe internet search.
+Akara field ahụ gụnyere njikọ a pụrụ ịpị gaa na peeji ndebanye aha Brave Search API. Hapụ oghere iji gbanyụọ ọchụchọ ịntanetị.
 
-See [Internet Search](../configuration/internet-search) maka akụkọ ọrụ ndị mmadụ ma ọ bụ ihe a na feature ahụ.
+Lee [Ọchụchọ Ịntanetị](../configuration/internet-search) maka akwụkwọ nkọwa onye ọrụ ikpeazụ gbasara njirimara a.
 
-## Feature Flags
+## Ọrụ Superdav A Na-elekọta {#managed-superdav-service}
 
-Ọ dị nwere n'ime v1.9.0, **Settings → Feature Flags** tab ahụ ga-anọchi toggle switches (on/off) maka ike ndị dị mma. Ogni flag bụ either enabled (on) ma ọ bụ disabled (off) na gbogho ndụ; a dịghị override per-site (na site ọ bụla) n'ebe a ọ bụla.
+Superdav AI Agent v1.18.0 na-agbakwunye endpoints ọrụ Superdav a na-elekọta na provisioning njikọ akpaaka maka saịtị ndị akwadoro. Jiri njikwa ndị a mgbe saịtị gị kwesịrị ijikọ na provider a na-host kama endpoint ọrụ e haziri aka.
 
-### Ọkụ Feature Flags
+| Field | Description |
+|---|---|
+| **Managed Superdav Service** | Na-eme ka njikọ ọrụ Superdav a na-host rụọ ọrụ maka saịtị ndị akwadoro. |
+| **Provision Connection** | Na-amalite provisioning endpoint na credential akpaaka. Jiri nke a mgbe ị kwadoro na saịtị ahụ kwesịrị iji provider a na-elekọta. |
+| **Service Endpoint / Connection Status** | Na-egosi endpoint dị ugbu a ma ọ bụ ọnọdụ njikọ mgbe provisioning gachara. |
 
-1. Na WordPress admin, jikọ ya **Gratis AI Agent → Settings**.
-2. Jikọya tab **Feature Flags**.
+Mgbe provisioning gachara, chekwaa settings ma nyochaa ọnọdụ njikọ tupu ịdabere na usoro ọrụ managed-service. Ọ bụrụ na provisioning dara, nyochaa nduzi retry egosiri ma kwado na saịtị ahụ nwere ikike iji provider a na-host.
 
-### Access Control Flags
+## Nhazi Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Mô tả |
+Mgbe agbanyere njirimara kalenda Superdav AI Agent v1.18.0, agent nwere ike ịgụ kalenda ahaziri na nkọwa event. Ngwaọrụ kalenda bụ nke na-elekwasị anya n’ịgụ ma baa uru maka ncheta maara usoro oge, iso ndị bịara emume soro, na imekọrịta kọntaktị.
+
+| Field | Description |
+|---|---|
+| **Google Calendar Credentials** | Na-echekwa credentials ma ọ bụ njikọ token achọrọ iji gụọ data kalenda. |
+| **Calendar Selection** | Na-amachi kalenda ahaziri nke agent nwere ike nyochaa. |
+| **Calendar Connection Status** | Na-akwado ma credentials dị ugbu a nwere ike ịgụ kalenda na events. |
+
+Debe credentials kalenda ka ha bụrụ naanị kalenda agent chọrọ. Jikọọ ọzọ ma ọ bụ gbanwee credentials ma ọ bụrụ na status na-egosi token gwụrụla.
+
+## Ịma Ọkwa TextBee SMS {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 na-agbakwunye TextBee dị ka provider SMS maka usoro ọrụ ịma ọkwa ahaziri. Ekwesịrị ijikọ ịma ọkwa SMS na ọnụ ụzọ nkwado mmadụ maka ozi ndị dị nro ma ọ bụ ndị na-eche ndị ọrụ ihu.
+
+| Field | Description |
+|---|---|
+| **TextBee API Key** | Na-eme authentication arịrịọ gaa na provider TextBee SMS. |
+| **TextBee Device / Sender** | Na-ahọrọ sender ma ọ bụ ngwaọrụ TextBee eji maka ozi na-apụ apụ, mgbe provider chọrọ ya. |
+| **SMS Notifications Enabled** | Na-ekwe ka workflows akwadoro ziga ịma ọkwa ozi ederede. Hapụ ya ka ọ gbanyụọ iji gbochie iziga SMS. |
+
+Ziga ozi nnwale naanị na nọmba onye nchịkwa nwe ya, mgbe ahụ kwado omume approval-gate tupu ịgbanye ncheta e zubere n’oge ma ọ bụ nke na-eche ndị bịara emume ihu.
+
+## Ọkọlọtọ Njirimara {#feature-flags}
+
+E webatakwara ya na v1.9.0, taabụ **Settings → Feature Flags** na-enye toggle switches maka ọrụ nhọrọ. Flag ọ bụla ma ọ bụ agbanyere ya ma ọ bụ agbanyụrụ ya n’ogo netwọkụ niile; enweghị override kwa saịtị n’oge a.
+
+### Ịnweta Feature Flags {#accessing-feature-flags}
+
+1. Na WordPress admin, gaa na **Gratis AI Agent → Settings**.
+2. Pịa taabụ **Feature Flags**.
+
+### Ọkọlọtọ Njikwa Nweta {#access-control-flags}
+
+| Flag | Ndabere | Nkọwa |
 |---|---|---|
-| **Hạn chế cho Quản trị viên** | Tắt | Khi bật, chỉ những người dùng có vai trò `administrator` mới có thể mở bảng chat AI Agent. Các vai trò khác sẽ thấy thông báo "Liên hệ với quản trị viên của bạn". |
-| **Hạn chế cho Quản trị viên Mạng** | Tắt | Khi được bật trên mạng multisite, chỉ Super Admin mới có thể sử dụng agent. Quản trị viên trang riêng bị chặn. Nó sẽ ưu tiên hơn "Hạn chế cho Quản trị viên" nếu cả hai đều được bật. |
-| **Cho phép Người đăng ký Truy cập** | Tắt | Khi được bật, người dùng có vai trò `subscriber` có thể sử dụng giao diện chat nhưng chỉ giới hạn ở khả năng đọc (không tạo bài viết hay thay đổi cài đặt). |
-| **Tắt cho Người không phải Thành viên** | Tắt | Tích hợp với trạng thái thành viên của Ultimate Multisite. Khi được bật, chat sẽ bị ẩn đối với các trang web chưa có tư cách thành viên đang hoạt động. |
+| **Kpọchie naanị nye Administrators** | Off | Mgbe agbanyere ya, naanị ndị ọrụ nwere ọrụ `administrator` nwere ike imeghe panel nkata AI Agent. Ọrụ ndị ọzọ niile na-ahụ ozi "Kpọtụrụ administrator gị" kama. |
+| **Kpọchie naanị nye Network Admins** | Off | Mgbe agbanyere ya na netwọkụ multisite, naanị Super Admins nwere ike iji agent ahụ. A na-egbochi admins saịtị n'otu n'otu. Ọ na-ebute ụzọ karịa "Kpọchie naanị nye Administrators" ma ọ bụrụ na agbanyere ha abụọ. |
+| **Kwe ka Subscriber Nweta Ya** | Off | Mgbe agbanyere ya, ndị ọrụ nwere ọrụ `subscriber` nwere ike iji ihu nkata mana a na-amachi ha n'ikike ịgụ naanị (enweghị imepụta post ma ọ bụ mgbanwe ntọala). |
+| **Gbanyụọ maka Ndị Na-abụghị Members** | Off | Na-ejikọta na ọnọdụ membership Ultimate Multisite. Mgbe agbanyere ya, a na-ezo nkata maka saịtị ndị na-enweghị membership dị ire. |
 
-### Cờ Thương hiệu (Branding Flags)
+### Flag Akara Njirimara {#branding-flags}
 
-| Flag | Default | Mô tả |
+| Flag | Ndabere | Nkọwa |
 |---|---|---|
-| **Ẩn chân trang "Được cung cấp bởi Gratis AI Agent"** | Tắt | Loại bỏ dòng ghi nhận thương hiệu được hiển thị ở cuối widget chat. Khuyến nghị cho các triển khai nhãn trắng (white-label). |
-| **Tên Agent Tùy chỉnh** | *(trống)* | Thay thế nhãn mặc định "Gratis AI Agent" trong tiêu đề chat và menu admin bằng tên sản phẩm của bạn. Để trống để sử dụng mặc định. |
-| **Ẩn Bộ chọn Agent** | Tắt | Khi được bật, người dùng không thể chuyển đổi giữa năm agent tích hợp sẵn. Agent hiện tại sẽ được cố định theo bất cứ thứ gì được cấu hình làm mặc định trong Settings → General. |
-| **Sử dụng Biểu tượng Trang web làm Ảnh đại diện Chat** | Tắt | Thay thế biểu tượng AI mặc định trong tiêu đề widget chat bằng biểu tượng trang web WordPress (được đặt dưới Appearance → Customize → Site Identity). |
+| **Zoo Footer "Powered by Gratis AI Agent"** | Off | Na-ewepụ ahịrị nkwupụta branding a na-egosi n'ala chat widget. A na-akwado ya maka mbipụta white-label. |
+| **Aha Agent Omenala** | *(oghere)* | Na-eji aha ngwaahịa gị dochie akara ndabere "Gratis AI Agent" na header nkata na menu admin. Hapụ ya oghere iji jiri ndabere. |
+| **Zoo Agent Picker** | Off | Mgbe agbanyere ya, ndị ọrụ enweghị ike ịgbanwe n'etiti agents ise e wuru n'ime ya. Agent dị ugbu a na-anọgide na nke a haziri dị ka ndabere na Settings → General. |
+| **Jiri Akara Saịtị dị ka Avatar Nkata** | Off | Na-eji akara saịtị WordPress (edobere n'okpuru Appearance → Customize → Site Identity) dochie akara AI ndabere na header chat widget. |
 
-### Áp dụng Thay đổi
+### Flag Nchekwa Automation {#automation-safety-flags}
 
-Nhấn **Save Settings** sau khi chuyển đổi bất kỳ cờ nào. Các thay đổi có hiệu lực ngay lập tức — không cần xóa cache hay kích hoạt lại plugin.
+Superdav AI Agent v1.18.0 na-ewebata ọnụ ụzọ nkwado mmadụ na ndekọ ncheta maka ịrụ automation n'enweghị ihe egwu. Njikwa ndị a nwere ike ịpụta na feature flags ma ọ bụ ntọala automation dị elu, dabere na ngwugwu etinyere.
+
+| Flag | Ndabere | Nkọwa |
+|---|---|---|
+| **Chọọ Nkwado Mmadụ** | Akwadoro ka ọ dị on | Na-akwụsịtụ automations dị mkpa ruo mgbe onye ọrụ enyere ikike nyochara ma kwado ihe a tụrụ aro ime. |
+| **Mwepụ Ncheta Ugboro Abụọ** | On | Na-edekọ ncheta ezipụrụ ka nnwale ọzọ ma ọ bụ ọsọ a haziri oge ghara izipu ọkwa ugboro abụọ. |
+| **Kwado Ngwaọrụ Kalenda** | Off ruo mgbe ahaziri ya | Na-ekwe ka agent gụọ kalenda Google na ihe omume ahaziri. |
+| **Kwado Ọkwa SMS** | Off ruo mgbe ahaziri ya | Na-ekwe ka workflows akwadoro zipu ọkwa TextBee SMS mgbe echekwara credentials. |
+
+### Itinye Mgbanwe {#applying-changes}
+
+Pịa **Chekwaa Ntọala** mgbe ịgbanwechara flag ọ bụla. Mgbanwe na-amalite ozugbo — achọghị cache flush ma ọ bụ imegharịa plugin.

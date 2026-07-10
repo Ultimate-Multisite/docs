@@ -1,22 +1,22 @@
 ---
 title: Integrazzjoni Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integrà Hostinger (hPanel)
+# Integrà Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Panoramika
+## Panoramika {#overview}
 
 Hostinger huwa fornitore popolari di hosting li jista pannellu di controllo modernu chiamatu hPanel. L'integrà Ultimate Multisite Hostinger tal-għajnuna ti permessi sincronizzazzjoni awtomatiku tad-domeni bejn Ultimate Multisite u hPanel ta Hostinger, li jagħti l-possibbiltà tiegħek tmachjen il-mappamenti tad-domeni u subdomeni b'mod awtomatiku dirett mill-admin tal-WordPress tiegħek.
 
-## Funzjonijiet
+## Funzjonijiet {#features}
 
 - Kreawment awtomatika ta domeni addon f hPanel
 - Kreawment awtomatika ta subdomeni f hPanel (għall installazzjonijiet multisite ta subdomeni)
 - Eliminazzjoni tad-domenu meta jkun il-mappamenti eliminati
 - Integrà senċi mal-API tal-managament tad-domeni ta' hPanel
 
-## Reġistrazzjonijiet
+## Reġistrazzjonijiet {#requirements}
 
 Biex tista' uża l-integrà Hostinger, għandek:
 
@@ -35,9 +35,9 @@ B'opzjoni, tista' definixxi wkoll:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API difiċjar
 ```
 
-## Istruzzjonijiet ta l-Istitwix
+## Istruzzjonijiet ta l-Istitwix {#setup-instructions}
 
-### 1. Genera il Token API tal-Hostinger Tieħdak
+### 1. Genera il Token API tal-Hostinger Tieħdak {#1-generate-your-hostinger-api-token}
 
 1. Inlogja fil-kont tiegħek ta Hostinger u għinnile aċċess għal hPanel
 2. Naviga għall-**Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Endpoint API 
    - Subdomain management
 6. Kopja it-token generat u spejja flitt bil-sigurt
 
-### 2. Iscrivi l-ID tal-Kont Tieħdak
+### 2. Iscrivi l-ID tal-Kont Tieħdak {#2-find-your-account-id}
 
 1. F hPanel, navigja għall-**Account Settings** → **Account Information**
 2. L-Account ID tiegħek jappari fuq danja
 3. Kopja u spejja dan l-ID għall-istep xieq
 
-### 3. Aggiungi Konstanti għal wp-config.php
+### 3. Aggiungi Konstanti għal wp-config.php {#3-add-constants-to-wp-configphp}
 
 Aggiungi l-konstanti tal-folji fil-file tiegħek `wp-config.php`:
 
@@ -69,7 +69,7 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Iżna' l-Integrazzjoni (Enable the Integration)
+### 4. Iżna' l-Integrazzjoni (Enable the Integration) {#4-enable-the-integration}
 
 1. F'admin tal-WordPress tiegħek, għandi tnejj **Ultimate Multisite > Settings**
 2. Naviga għall-tab **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Iżna' l-integrazzjoni **Hostinger (hPanel)**
 5. Klikka fuq **Save Changes**
 
-## Come Funziona
+## Come Funziona {#how-it-works}
 
-### Addon Domains (Domini Aggiuntivi)
+### Addon Domains (Domini Aggiuntivi) {#addon-domains}
 
 Meta tmappi dominu f'Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Meta tmappi dominu f'Ultimate Multisite:
 2. Id-dominu huwa konfigurat biex jidirettaw għall-root directory tiegħek
 3. Meta tiddirba l-mapping tal-dominu, l-integrazzjoni tiffaqa biex tixleb d-addon domain min hPanel
 
-### Subdomains (Subdomini)
+### Subdomains (Subdomini) {#subdomains}
 
 Biex għall-installazzjonijiet ta multisite subdomini, meta tiddirja siti ġdidi:
 
@@ -95,7 +95,7 @@ Biex għall-installazzjonijiet ta multisite subdomini, meta tiddirja siti ġdidi
 2. Trassmil request għall-API tal-Hostinger biex tiddarba d-subdomain
 3. Id-subdomain huwa konfigurat biex jidirettaw għall-root directory tiegħek
 
-## Nota Importanti (Important Notes)
+## Nota Importanti (Important Notes) {#important-notes}
 
 - L-integrazzjoni tista' tiffaqa biex tkomunika mal-account tiegħek u tiffaqa biex tkomunika mal-account tiegħek.
 - Il-API token tiegħek għandu l-permessijiet neċessarji għall-managament tal-domini u subdomini
@@ -103,32 +103,32 @@ Biex għall-installazzjonijiet ta multisite subdomini, meta tiddirja siti ġdidi
 - Il-API requests jitqassmu b'mod sicuro über HTTPS
 - Ixxi l-API token tiegħek sal-sigurt u ma tqassimuxhu pubbliċi
 
-## Problemi (Troubleshooting)
+## Problemi (Troubleshooting) {#troubleshooting}
 
-### Issewju f'Konnessjoni API
+### Issewju f'Konnessjoni API {#api-connection-issues}
 
 - Verifika li li token API tiegħek huwa korrett u ma għandu xirq.
 - Kontrolla li l-Account ID tiegħek huwa korrett.
 - Assigurja li l-API token tiegħek għandu l-permessiet nepreżso għall-ġestjoni tal-domain.
 - Verifika li l-account Hostinger tiegħek huwa attif u f kondizzjoni tajba.
 
-### Domain Mġobb
+### Domain Mġobb {#domain-not-added}
 - Kontrolla il-logs ta Ultimate Multisite għal pirċa msgjiġi diġett.
 - Verifika li d-dominju ma jkunx imġobb aħna fil-account Hostinger tiegħek.
 - Assigurja li l-account Hostinger tiegħek ma għandu xirq għall-addon domains.
 - Konferma li d-dominju hija direttament impostata għal il-nameservers ta Hostinger tiegħek.
 
-### Problemi b'Certifikat SSL
+### Problemi b'Certifikat SSL {#ssl-certificate-issues}
 
 - Il-integrazzjoni ma tiffaħlix l-emissioni tal-certifikati SSL.
 - Hostinger tipikament joffri certifikati SSL free peress hi AutoSSL.
 - Tista' tmexxi il-certifikati SSL direttament f'hPanel ta qudd **SSL/TLS**.
 - Alternattivament, uż Let's Encrypt مع feature AutoSSL ta Hostinger.
 
-## Support
+## Support {#support}
 
 Biex tiġi għajnuna aggišjonali mal-integrazzjoni tal-Hostinger, jseħħa għal:
 
 - [Dokumentazzjoni API ta Hostinger](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Dokumentazzjoni ta Ultimate Multisite](/docs)
+- [Dokumentazzjoni ta Ultimate Multisite](/)
 - [Support ta Ultimate Multisite](https://ultimatemultisite.com/support)

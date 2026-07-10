@@ -3,11 +3,11 @@ title: Journal des modifications
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Publié le 2026-04-28
+## 1.9.0 — Publié le 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nouveautés
+### Nouveautés {#new}
 
 - **Capacité `create_contact_form`** — crée un formulaire de contact en utilisant le plugin de formulaire actif (Contact Form 7, WPForms, Fluent Forms ou Gravity Forms) et renvoie un shortcode prêt à être inséré dans n'importe quel article ou page.
 - **Capacité `set_featured_image`** — assigne une image à la une à un article ou une page à partir d'un ID d'attachement existant dans la Bibliothèque de médias ou d'une URL distante ; importe automatiquement l'image lorsqu'une URL est fournie.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurer la dernière session** — le panneau de chat recharge désormais automatiquement la conversation la plus récente au chargement de la page et lors de l'ouverture du widget, de sorte que le contexte n'est jamais perdu lors de la navigation entre les pages.
 - **Liens d'action de plugin** — des liens rapides vers les Réglages et le Registre des capacités apparaissent désormais sur l'écran **Plugins → Plugins installés** de WordPress, sous la description du plugin.
 
-### Amélioré
+### Amélioré {#improved}
 
 - **Nouvelle source d'image** — l'agent tente désormais toutes les sources d'images gratuites configurées avant de passer à une image générée par IA en cas d'échec du téléchargement.
 - **Panneau d'informations sur le modèle** — toujours visible dans l'en-tête du chat ; n'est plus masqué après le premier message.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Refonte du widget de chat** — une icône IA unifiée remplace l'ancien avatar personnalisé ; elle est cohérente avec le système d'agents intégré.
 - **Lien de l'URL** — les URL apparaissant dans les messages système et les bulles de messages d'erreur sont désormais affichées comme des liens cliquables.
 
-### Corrigé
+### Corrigé {#fixed}
 
 - **Découvrabilité des capacités** — descriptions, références de prompts système et alignement des espaces de noms corrigés afin que toutes les capacités apparaissent de manière fiable dans la liste des outils de l'agent.
 - **Cache des fournisseurs** — les fournisseurs sont désormais mis en cache à l'échelle du site via un compteur de version, empêchant les problèmes de fournisseurs obsolètes sur les réseaux multisites.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Publié le 2026-04-09
+## 1.4.0 — Publié le 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nouveautés
+### Nouveautés {#new-1}
 
 - **Commande de référence WP-CLI** (`wp gratis-ai-agent benchmark`) — exécute la suite de référence Agent Capabilities v1 depuis la ligne de commande pour les pipelines CI et les flux de travail d'évaluation de modèle. Prend en charge les exécutions par question, les substitutions de fournisseurs/modèles, et les sorties JSON/CSV.
 - **Suite de référence Agent Capabilities v1** — un ensemble structuré de prompts complexes et multi-étapes qui font travailler toute la surface des capacités, avec un classement et un rapport de jetons/durée.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Question de référence pour site de restaurant** (`q-restaurant-website`) — test de bout en bout couvrant l'enregistrement de CPT, le système de design, la navigation et la découverte de plugins.
 - **Plugins connecteurs de fournisseurs IA** ajoutés aux blueprints de WordPress Playground pour une configuration de développement local plus rapide.
 
-### Amélioré
+### Amélioré {#improved-1}
 
 - Le fichier README a été mis à jour avec la documentation et les instructions de configuration des connecteurs de fournisseurs IA.
 
-### Corrigé
+### Corrigé {#fixed-1}
 
 - 25 échecs de tests PHPUnit sur la branche `main` résolus.
 - Format de l'URL de publication GitHub dans `blueprint.json` corrigé.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Les notes de version précédentes sont maintenues dans le dépôt du plugin._

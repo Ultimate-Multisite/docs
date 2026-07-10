@@ -3,27 +3,27 @@ title: Kupanga kwa Site
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Kutsira kwa Site (Site Export)
+# Kutsira kwa Site (Site Export) {#site-export}
 
 Page ya admin ya **Site Export** inalipa administrators wa mtandao kuweka site moja, au mtandao wote, katika archive inayoweza kupakuliwa kwa ajili ya kusogeza (migration), backup, au kazi za kukabidhi.
 
-## Kusogeza site moja
+## Kusogeza site moja {#exporting-one-site}
 
 Nenda kwenye **Ultimate Multisite > Site Export** na chagua **Generate new Site Export**. Chagua subsite unayotaka kusogeza, kisha chagua kama archive inapaswa kujumuisha uploads, plugins, na themes.
 
 Wakati export inapoisha, pakua ZIP kutoka orodha ya **Existing Exports**. ZIPs za export zinaweza kuwepo `index.php` inayojitokeza (self-booting) na `readme.txt`, hivyo archive inaweza kupakuliwa kwenye host mpya na kuanza bila lazima kusakinisha plugin ya importer tofauti kwanza.
 
-## Kusogeza mtandao wote
+## Kusogeza mtandao wote {#exporting-the-whole-network}
 
 Tumia **Network Export** kwenye ukurasa wa Site Export wakati unahitaji archive moja inayojumuisha subsites zote katika mtandao. Hii ni muhimu kabla ya kubadilisha host, majaribio ya kurudisha hali (disaster-recovery drills), au ujenzi upya wa staging ambapo kila subsite inahitaji kusafiri pamoja.
 
 Kwa sababu network export inaweza kuwa kubwa kuliko site moja export, fanya wakati wa kipindi cha mtandao kinachokuwa na msongamano mdogo (low-traffic window) na thibitisha kwamba storage yako ya lengo ina nafasi ya kutosha kwa uploads, plugins, themes, na ZIP files zilizotengenezwa.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Kuanzia Ultimate Multisite 2.12.0, Site Exporter inaweza kutengeneza **network import bundles** — archives maalum zilizoundwa kwa ajili ya kurudisha site wote wa mtandao kwa urahisi. Network import bundle inajumuisha faili na metadata yote yanayohitajika ili kurudisha sites nyingi kwenye usakinishaji mpya wa mtandao.
 
-#### Kutengeneza Network Import Bundle
+#### Kutengeneza Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Tenda ku **Ultimate Multisite > Site Export**
 2. Kulela **Generate new Network Export**
@@ -32,7 +32,7 @@ Kuanzia Ultimate Multisite 2.12.0, Site Exporter inaweza kutengeneza **network i
 5. Kulela **Generate**
 6. Idonda bundle ZIP ku list ya **Existing Exports**
 
-#### Kukhazikitsa kuchokera kwa Network Import Bundle
+#### Kukhazikitsa kuchokera kwa Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Kuti mukhazikitseni sites kuchokera kwa network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles zimapangalala:
 - Media uploads (njelanso zikati m'bundle)
 - Custom database tables ndi data
 
-## Kukhazikitsa ZIP la export lomwe limakula pafupi (self-booting) pa host yetsopano
+## Kukhazikitsa ZIP la export lomwe limakula pafupi (self-booting) pa host yetsopano {#installing-a-self-booting-export-zip}
 
 Kuti mukhazikitseni ZIP lomwe limakula pafupi pa host yetsopano:
 

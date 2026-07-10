@@ -4,11 +4,11 @@ title: Bộ lọc - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Bộ lọc: wu_apc_process_page_content
+# Bộ lọc: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Cho phép các nhà phát triển tùy chỉnh nội dung cuối cùng.
 
-## Tham số
+## Tham số {#parameters}
 
 | Tên | Kiểu dữ liệu | Mô tả |
 |------|------|-------------|
@@ -17,12 +17,12 @@ Cho phép các nhà phát triển tùy chỉnh nội dung cuối cùng.
 | $to_replace | `array` | Mảng chứa các placeholder (vị trí giữ chỗ). |
 | $placeholder_count | `int` | Số lượng placeholder được tìm thấy. |
 
-### Từ phiên bản
+### Từ phiên bản {#since}
 
 - 1.4.0
-### Nguồn
+### Nguồn {#source}
 
 Được định nghĩa trong [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) tại dòng 46
 
-## Giá trị trả về
+## Giá trị trả về {#returns}
 Nội dung sau khi được chỉnh sửa.

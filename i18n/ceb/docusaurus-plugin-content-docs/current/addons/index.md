@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Mga Adon sa Ultimate Multisite
+# Mga Adon sa Ultimate Multisite {#ultimate-multisite-addons}
 
 Ang mga Addons nagdugang og daghang functionality ug integration sa Ultimate Multisite. Kasagaran, ang kadaghanan niini bayad, ug mabakal kini sa [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Pag-install (Installation)
+## Pag-install (Installation) {#installation}
 
 Ang mga Addons mahimo i-install sa duha ka paagi:
 
 1. **Pinaagi sa Adon Page** — Pagadto sa add-on management page sa imong site sa WordPress admin
 2. **Manu-nal na Pag-download** — I-download gikan sa [your account](https://ultimatemultisite.com/my-account/downloads/) ug i-upload pinaagi sa Plugins > Add New
 
-## Mga Available nga Addons
+## Mga Available nga Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

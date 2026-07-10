@@ -4,11 +4,11 @@ title: 'Acțiune - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_\{$this->id\}_load
+# Action: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 Permite dezvoltatorilor de plugin să adauge hook-uri suplimentare paginilor noastre.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Permite dezvoltatorilor de plugin să adauge hook-uri suplimentare paginilor noa
 | $page_hook | `string` | Hook-ul paginii acestei pagini. |
 | $admin_page | `self` | Instanța paginii. |
 
-### De la
+### De la {#since}
 
 - 1.8.2
 - 2.0.4: Adăugat al treilea parametru: instanța paginii.
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) la linia 332

@@ -4,20 +4,20 @@ title: Acción - wu_mt_migration_cancelled
 sidebar_label: wu_mt_migration_cancelled
 _i18n_hash: 315390b7190dab27f6ca16a6eff5e407
 ---
-# Acción: wu_mt_migration_cancelled
+# Acción: wu_mt_migration_cancelled {#action-wumtmigrationcancelled}
 
 Se dispara cuando una migración es cancelada.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |--------|------|-------------|
 | $job | `\Migration_Job` | El trabajo de migración cancelado. |
 
-### Desde
+### Desde {#since}
 
 - 1.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L765) en la línea 765

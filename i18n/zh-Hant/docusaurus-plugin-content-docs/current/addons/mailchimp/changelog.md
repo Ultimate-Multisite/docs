@@ -3,7 +3,7 @@ title: Mailchimp 更新日誌
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp 更新日誌
+# Mailchimp 更新日誌 {#mailchimp-changelog}
 
 版本：1.1.1 - 發布日期：2025-09-28
 

@@ -4,9 +4,9 @@ title: アクション - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# アクション: wu_handle_customer_meta_fields
+# アクション: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -14,10 +14,10 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | Ultimate Multisite の顧客オブジェクト。 |
 | $checkout | `\Checkout` | チェックアウトクラス。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 定義されている [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) 行 1211

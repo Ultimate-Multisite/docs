@@ -3,11 +3,11 @@ title: Il-ġestjoni tal-email sistemi
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Aġġustament tal Email System
+# Aġġustament tal Email System {#managing-system-emails}
 
 Ultimate Multisite traddem email systemie biex japplikaw għal eventi bħal konfirmazzjonijiet taħtieqa, ricevitajiet tal-pagamenti u bidżi diġitali. Tista' tustomizza dan il-template ta l-email biex jidupika mal-brand tiegħek.
 
-## Aħfar Email Systemie
+## Aħfar Email Systemie {#viewing-system-emails}
 
 Naviga għal **Ultimate Multisite → Settings** u għall-tab **Emails** biex tara l-settings relatati mill-email.
 
@@ -21,7 +21,7 @@ Tista' tustomizza wkoll templates ta l-email individwali biex tista' uża l-edit
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Importa Template Email Naddarmati
+## Importa Template Email Naddarmati {#importing-new-email-templates}
 
 Bizzjoni bizzjoni tal-Ultimate Multisite u add-ons jiddispożizzaw templates ta l-email ġodda. Biex tista' tneħħi conflitti, template ġodda ma jiddukkaw aktar; għandek li ti importihom manualment.
 
@@ -32,7 +32,7 @@ Biex ti importi templates ta l-email ġodda:
 3. Attiva l-opzjoni **Import Emails** biex tara templates disponibili
 4. Sseħħi li template li tista' ti importi u konfirmali
 
-## Resetta Template Email
+## Resetta Template Email {#resetting-email-templates}
 
 Jekk kustomizzaw template ta l-email u tixtieq traddem għall-kontenut difiċjar, għandek żgħar opzjonijiet:
 

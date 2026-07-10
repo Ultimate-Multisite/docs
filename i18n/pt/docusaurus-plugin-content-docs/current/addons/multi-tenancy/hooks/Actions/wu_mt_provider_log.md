@@ -1,0 +1,24 @@
+---
+id: wu_mt_provider_log
+title: Ação - wu_mt_provider_log
+sidebar_label: wu_mt_provider_log
+_i18n_hash: 49cbf31c8fe84b408e663e8a9587de58
+---
+# Ação: wu_mt_provider_log {#action-wumtproviderlog}
+
+Disparada quando um provider regista uma mensagem.
+
+## Parâmetros {#parameters}
+
+| Nome | Tipo | Descrição |
+|------|------|-------------|
+| $message | `string` | Mensagem de log. |
+| $level | `string` | Nível de log. |
+| $context | `array` | Contexto adicional. |
+
+### Desde {#since}
+
+- 1.0.0
+### Fonte {#source}
+
+Definida em [`inc/providers/class-base-provider.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/providers/class-base-provider.php#L400) na linha 400

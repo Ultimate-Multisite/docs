@@ -3,7 +3,7 @@ title: VAT चेंजलॉग
 sidebar_position: 99
 _i18n_hash: 6a39ef4779b6ed52a08804c75ca25fc9
 ---
-# VAT Changelog
+# VAT Changelog {#vat-changelog}
 
 Version 1.0.7 - Released on 2026-02-03
 

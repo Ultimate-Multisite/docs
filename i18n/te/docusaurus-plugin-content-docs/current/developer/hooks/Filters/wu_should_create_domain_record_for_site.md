@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: ఫిల్టర్ - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# ఫిల్టర్: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+కొత్తగా సృష్టించిన సైట్‌ కోసం Ultimate Multisite డొమైన్ రికార్డు సృష్టించాలా వద్దా అని ఫిల్టర్ చేస్తుంది.
+
+భాగస్వామ్య చెల్లింపు-పూర్తి ఫారం ప్రాథమిక డొమైన్, అంతర్గత హోస్ట్, లేదా మరొక అనుసంధానం విడిగా నిర్వహించే డొమైన్‌ను ఉపయోగించే సైట్‌లకు స్వయంచాలక డొమైన్-రికార్డు సృష్టిని అణచివేయడానికి లేదా వాయిదా వేయడానికి ఈ ఫిల్టర్‌ను ఉపయోగించండి.
+
+## పారామీటర్లు {#parameters}
+
+| పేరు | రకం | వివరణ |
+|------|------|-------------|
+| $create | `bool` | డొమైన్ రికార్డు సృష్టించాలా వద్దా. |
+| $site | `WP_Site` | కొత్తగా సృష్టించిన సైట్ ఆబ్జెక్ట్. |
+
+### ఈ వెర్షన్ నుండి {#since}
+
+- 2.13.0
+
+### మూలం {#source}
+
+`inc/functions/domain.php` లో నిర్వచించబడింది.
+
+
+## రిటర్న్‌లు {#returns}
+
+డొమైన్ రికార్డు సృష్టించాలా వద్దా అని సూచించే బూలియన్.

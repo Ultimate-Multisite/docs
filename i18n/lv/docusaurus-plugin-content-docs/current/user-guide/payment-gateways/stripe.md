@@ -3,19 +3,19 @@ title: Stripe iestatīšana
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe ģintala konfigurēšana (v2)
+# Stripe ģintala konfigurēšana (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**SVARĪTIE PIEMĒRUMI: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Jūs varat aktivizēt līdz četrām maksājuma metodiem mūsu maksājumu iestatījumu lapā: Stripe, Stripe Checkout, PayPal un Manuāli. Šajā rakstā redzam, kā integrēties ar **Stripe**.
 
-## Stripe aktivizēšana
+## Stripe aktivizēšana {#enabling-stripe}
 
 Lai aktivizētu Stripe kā pieejamu maksājuma ģintalu savā tīklā, pārvietojies uz **Ultimate Multisite > Iestatījumi > Maksājumi** un atskaņojiet (tick) skaitli blakus **Stripe** vai **Stripe Checkout** "Aktīvo maksājumu ģintalu" sadaļā.
 
 ![Stripe aktivizēšana aktīvās maksājuma ģintalu sadaļā](/img/config/settings-payment-gateways.png)
 
-### Stripe pret Stripe Checkout:
+### Stripe pret Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Šis veids parādīs vietu, kur jūs iestatīsiet kredītu kartes numuru laikā kases procesā.
 
@@ -25,7 +25,7 @@ Lai aktivizētu Stripe kā pieejamu maksājuma ģintalu savā tīklā, pārvieto
 
 ![Stripe Checkout novirzīšanas lapa kases laikā](/img/config/settings-payment-gateways.png)
 
-### iegūšana Stripe API svariem
+### iegūšana Stripe API svariem {#setting-up-stripe-webhook}
 
 Kad Stripe būs aktivizēts kā maksājuma ģintals, jums būs jāievada **Stripe Publishable Key** un **Stripe Secret Key** laukos. Jūs varat to ieguvit, logojoties uz savu Stripe kontu.
 

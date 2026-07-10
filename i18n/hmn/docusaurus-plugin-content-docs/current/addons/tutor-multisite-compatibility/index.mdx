@@ -1,0 +1,116 @@
+---
+title: Kev sib haum nrog Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Ib qho WordPress plugin uas ntxiv cov kev kho kom sib haum rau Tutor LMS hauv cov ib puag ncig multisite.
+
+## Kev piav qhia {#description}
+
+Qhov plugin no muab cov kev kho tseem ceeb kom sib haum rau kev khiav Tutor LMS saum WordPress multisite networks. Nws saib xyuas kev sau npe neeg siv, kev tswj instructor, kev txwv course, thiab lwm yam functionality tshwj xeeb rau multisite.
+
+## Cov yam ntxwv {#features}
+
+- **Kev tswj database table**: Nrhiav thiab tsim cov Tutor LMS tables uas ploj lawm thiab tsim tsis tau vim multisite foreign key constraints
+- **Kev sau npe neeg siv hauv multisite**: Cov AJAX handlers tshwj xeeb rau kev tswj neeg siv kev sau npe hla cov network sites
+- **Kev tswj instructor role**: Muab thiab tswj instructor role cia li tau hauv cov ib puag ncig multisite
+- **Kev txwv course**: Kev koom nrog Ultimate Multisite rau kev tswj cov kev txwv tsim course thiab funnel raws li site plans
+- **Custom Admin Views**: Instructor list thiab management interface uas paub multisite
+- **Admin Tools**: Database management interface rau network thiab site administrators
+
+## Yam yuav tsum muaj {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (yuav raug yuam kom muaj cia li dhau ntawm `Requires Plugins` header)
+- WordPress Multisite installation
+- Ultimate Multisite plugin (rau course limitations functionality)
+
+## Kev teeb tsa {#installation}
+
+1. Upload cov plugin files mus rau `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Nco ntsoov tias Tutor LMS twb raug nruab thiab qhib lawm
+3. Qhib plugin dhau ntawm 'Plugins' menu hauv WordPress
+4. Plugin yuav cia li koom nrog Tutor LMS
+
+## File Structure {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality uas tau tsiv los ntawm MU Plugin {#functionality-moved-from-mu-plugin}
+
+Qhov plugin no muaj functionality uas yav dhau los nyob hauv `wp-content/mu-plugins/daves.php`:
+
+- Kev txwv hloov course status
+- Kev txwv tsim course
+- CartFlows integration thiab limits
+- Tutor instructor role management
+- Kev tuav multisite user enrollment
+- Kev tso saib course product ID
+
+## Kev tswj database {#database-management}
+
+### Qhov teeb meem {#the-problem}
+
+Hauv cov ib puag ncig WordPress multisite, kev tsim Tutor LMS table poob rau cov tables uas muaj foreign key constraints mus rau users table. Qhov no tshwm sim vim tias:
+
+- Cov tables tshwj xeeb rau site siv prefixes xws li `wp_2_tutor_carts`
+- Foreign keys reference `wp_2_users` (uas tsis muaj nyob)
+- Users table tiag tiag yog `wp_users` (sib koom thoob plaws network)
+
+### Qhov kev daws {#the-solution}
+
+Qhov plugin no yuav cia li:
+
+1. **Nrhiav Tables uas ploj lawm**: Xyuas cov tables uas tsim tsis tiav vim foreign key constraints
+2. **Tsim Tables nrog cov References raug**: Siv user table name uas raug (`wp_users` hauv multisite)
+3. **Tuav ntau qhov xwm txheej**:
+   - Plugin activation/reactivation
+   - Tsim site tshiab hauv network
+   - Kev kuaj table manually dhau ntawm admin interface
+
+### Cov Tables uas cuam tshuam {#affected-tables}
+
+- `tutor_coupon_usages` - Muaj foreign key mus rau users table
+- `tutor_carts` - Muaj foreign key mus rau users table
+- `tutor_notification_preferences` - TutorPro table nrog foreign key mus rau users table
+
+### Admin Interface {#admin-interface}
+
+Nkag mus rau database management tools ntawm:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Interface no tso cai rau koj:
+- Saib cov tables uas ploj lawm thoob plaws txhua sites
+- Trigger kev tsim table manually
+- Kuaj database configuration
+- Saib cov ntaub ntawv status ntxaws
+
+## Kev txhawb nqa {#support}
+
+Qhov plugin no raug tsim tshwj xeeb rau KursoPro platform. Rau kev txhawb nqa technical, hu rau pab pawg development.

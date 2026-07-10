@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Mailchimp-samþætting
+
+Samþættu Multisite Ultimate-netið þitt við Mailchimp. Þú getur tengt tilteknar áskriftarleiðir við Mailchimp-lista og sjálfkrafa bætt áskrifendum við þá lista við skráningu.
+
+## Uppsetning {#installation}
+
+1. Hladdu 'ultimate-multisite-mailchimp' upp í '/wp-content/plugins/' möppuna
+2. Virkjaðu viðbótina í gegnum 'Viðbætur' valmyndina í WordPress Network Admin
+
+## Notkunarleiðbeiningar {#usage-guide}
+
+Það er mjög auðvelt að samstilla netföng áskrifenda við MailChimp-listana þína með Ultimate Multisite: MailChimp Integration-viðbótinni okkar. Þessi leiðarvísir er ætlaður til að hjálpa þér að setja allt upp!
+
+## Að fá API-lykil {#getting-an-api-key}
+
+Áður en við byrjum að skoða mismunandi stillingar sem eru í boði þurfum við MailChimp API-lykil. Þetta gerir Ultimate Multisite kleift að hafa samskipti við MailChimp API til að sækja lista, hópa og bæta netföngum við þá lista og hópa þegar notendur skrá sig.
+
+Fylgdu þessum leiðarvísi til að fá þinn eigin MailChimp API-lykil: [Um API-lykla | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Skjámynd ekki tiltæk: Stillingar MailChimp API-lykils í Ultimate Multisite-viðbótarstillingum -->
+
+_Bættu MailChimp API-lyklinum þínum við í_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Samþættingarhamur {#integration-mode}
+
+MailChimp Integration-viðbótin býður upp á tvo „samþættingarhami“, sem þýðir að það eru tvær mismunandi leiðir til að nota viðbótina til að samstilla netföng.
+
+<!-- Skjámynd ekki tiltæk: Val á MailChimp-samþættingarham með valkostunum Margir listar og Einn listi -->
+
+_Tveir samþættingarhamir fyrir meiri sveigjanleika!_
+
+### Hamur 1: Margir listar {#mode-1-multiple-lists}
+
+Sjálfgefni hamurinn notar **Marga lista**. Þessi hamur gerir þér kleift að velja marga MailChimp-lista fyrir hverja áskriftarleið. Þetta er besti valkosturinn ef þú skiptir notendum þínum niður á mismunandi lista.
+
+Til dæmis skulum við gera ráð fyrir að þú sért með 3 mismunandi lista á MailChimp Account-inum þínum: **Fréttabréf** , **Áætlun A** , og **Áætlun B**. Þú vilt að allir notendur, óháð áskriftarleið sinni, séu einnig með á Fréttabréfslistanum, svo þeir missi ekki af uppfærslunum þínum.
+
+Til að ná þessu geturðu notað haminn Margir listar til að bæta bæði listunum **Fréttabréf** og **Áætlun A** við MailChimp-stillingar Áætlunar A, og **Fréttabréf** og **Áætlun B** við MailChimp-stillingar Áætlunar B.
+
+<!-- Skjámynd ekki tiltæk: Val á sjálfgefnum MailChimp-listum fyrir nýja Account-a og lokaða Account-a -->
+
+_Veldu sjálfgefnu listana fyrir nýja Account-a og fyrir lokaða Account-a_
+
+### Hamur 2: Einn listi + margir hópar {#mode-2-single-list--multiple-groups}
+
+MailChimp gerir þér kleift að skipta listanum þínum niður í smærri hópa notenda sem kallast **Hópar**. Þetta veitir þér meiri stjórn þar sem þú getur sent herferð til tiltekins undirhóps áskrifenda þinna án þess að þurfa að búa til mörg afrit af sömu herferðinni í MailChimp (sem gerir erfitt að greina mælikvarða þeirrar herferðar síðar).
+
+Til dæmis geturðu verið með einn lista sem heitir **Áskrifendur netsins míns,** og inni í honum hópa fyrir **Áætlun A** og **Áætlun B**.
+
+<!-- Skjámynd ekki tiltæk: Val á einum MailChimp-lista og hópum fyrir sjálfgefna lista -->
+
+_Veldu sjálfgefnu listana og hópana, ef þú notar samþættingarhaminn „einn listi + margir hópar“_
+
+## Sjálfgefnir listar og hópar {#default-lists-and-groups}
+
+Eftir að þú velur hvaða samþættingarhamur hentar þínu tiltekna notkunartilviki betur er kominn tími til að velja sjálfgefnu listana (og hópa, eftir hamnum). Sjálfgefni listinn verður notaður þegar tiltekin áskriftarleið er ekki með sérstakan lista valinn.
+
+Þú getur einnig valið sjálfgefna listann fyrir lokaða Account-a. Í hvert sinn sem notandi lýkur áskrift sinni og fjarlægir Account-inn sinn úr netinu þínu verður netfangið hans flutt á listann sem er stilltur fyrir lokaða Account-a.
+
+## Að virkja tvöfalda áskrift {#enabling-double-subscription}
+
+Á sömu stillingasíðu geturðu virkjað **Tvöfalda áskrift**. Þessi valkostur bætir notandanum bæði við valda sjálfgefna listann OG listann sem er valinn fyrir áskriftarleið notandans. Ef þessi valkostur er ekki virkjaður verður notandanum aðeins bætt við listann sem er valinn fyrir áskriftarleið notandans. Ef enginn listi er stilltur fyrir þá tilteknu áskriftarleið verður notandanum bætt við valda sjálfgefna listann.
+
+<!-- Skjámynd ekki tiltæk: Stillingarrofi fyrir tvöfalda MailChimp-áskrift -->
+
+_Þú getur látið notendur þína vera áskrifendur bæði að sjálfgefna listanum og lista áskriftarleiðarinnar við skráningu_
+
+## Að velja lista og hópa fyrir hverja áskriftarleið {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Farðu í **Áskriftarleiðir** og veldu áskriftarleiðina sem þú vilt breyta. Athugaðu að í **Ítarlegir valkostir** meta-boxinu verður nýr flipi sem heitir MailChimp tiltækur.
+
+Á þeim flipa geturðu valið marga lista eða einn lista og marga hópa (eftir samþættingarhamnum) fyrir þá áskriftarleið.
+
+<!-- Skjámynd ekki tiltæk: MailChimp-flipi á breytingarsíðu áskriftarleiðar sem sýnir val á listum og hópum -->
+
+_Veldu listana og hópana sem þú vilt nota fyrir hverja áskriftarleið þína_
+
+Þegar nýr notandi skráir sig í þá áskriftarleið verður netfanginu hans bætt við valda lista og hópa!

@@ -1,0 +1,117 @@
+---
+title: Paket Dumasar Pamakéan
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Rencana Diméteran {#metered-plans}
+
+Addon Ultimate Multisite: Metered Plans ngarobah cara anjeun nagih ka palanggan ku ngenalkeun kamampuhan tagihan diméteran anu fléksibel. Tibatan wates kaku anu meungpeuk pamaké lamun kaliwat, aktipkeun waragad kaleuwihan anu otomatis nagih palanggan pikeun pamakéan tambahan.
+
+## Fitur Utama {#key-features}
+
+* **Tagihan Diméteran**: Tagih palanggan dumasar kana pamakéan sabenerna tibatan tingkatan tetep
+* **Pangatur Kaleuwihan**: Otomatis nagih pikeun pamakéan anu ngaleuwihan wates rencana
+* **Ngalacak Pamakéan**: Pantau konsumsi sumberdaya palanggan sacara real-time
+* **Harga Fléksibel**: Setél tarif husus pikeun sumberdaya béda (panyimpenan, bandwidth, situs, jsb.)
+* **Tagihan Token AI**: Lacak jeung tagih token asupan jeung kaluaran pikeun pamakéan AI di sakuliah subsite palanggan
+* **Invoice Otomatis**: Jieun invoice sacara otomatis nalika ambang pamakéan kaliwat
+* **Laporan Pamakéan**: Analitik jeung laporan pamakéan anu rinci pikeun palanggan jeung administrator
+
+## Cocog Pikeun {#perfect-for}
+
+* **Panyadia Hosting**: Tawarkeun rencana anu bisa diskalakeun jeung tumuwuh nurutkeun kabutuhan palanggan
+* **Platform SaaS**: Tagih dumasar kana konsumsi sumberdaya sabenerna
+* **Jaringan Agénsi**: Modél harga fléksibel pikeun proyék klien
+* **Reseller Hosting**: Aktipkeun mitra pikeun nawarkeun harga dumasar pamakéan
+
+## Kumaha Gawéna {#how-it-works}
+
+1. Konpigurasikeun sumberdaya diméteran (rohangan disk, bandwidth, jumlah situs, jsb.)
+2. Setél wates rencana dasar jeung tarif kaleuwihan
+3. Sistem sacara otomatis ngalacak pamakéan di sakuliah jaringan anjeun
+4. Nalika palanggan ngaleuwihan wates, waragad kaleuwihan diitung
+5. Invoice dijieun sacara otomatis dumasar kana siklus tagihan
+6. Palanggan bisa ningali pamakéan jeung waragad anu bakal datang sacara real-time
+
+## Tagihan Token AI {#ai-token-billing}
+
+Vérsi 1.1.0 nambahkeun tagihan token AI pikeun jaringan anu nawarkeun fitur AI ngaliwatan WordPress AI Client SDK. Metered Plans ngadéngékeun paménta generasi AI anu réngsé, ngarékam jumlah token asupan jeung kaluaran pikeun subsite ayeuna, sarta ngarobah token éta jadi belanja AI anu bisa ditagih pikeun période tagihan ayeuna palanggan.
+
+Anggo tagihan token AI nalika anjeun rék nawarkeun pakakas AI dina situs palanggan tanpa nanggung biaya modél anu hésé diprediksi. Unggal paménta diatributkeun ka subsite, palanggan, membership, panyadia, jeung modél sangkan administrator bisa ngaudit pamakéan bari palanggan bisa ningali kumaha konsumsi AI maranéhna mangaruhan account maranéhna.
+
+### Konpigurasikeun Tarif Per-Token {#configure-per-token-rates}
+
+Tarif AI dikonpigurasikeun per modél salaku tarif asupan jeung kaluaran anu misah. Tarif diitung per 1 juta token, anu saluyu jeung kaca harga panyadia AI umum.
+
+1. Dina admin jaringan, buka **Multisite Ultimate → Settings → Metered Plans**.
+2. Aktipkeun pangukuran belanja AI pikeun produk atawa membership anu kudu nagih pamakéan AI.
+3. Tambahkeun éntri tarif modél maké ID modél anu dibalikeun ku connector anjeun, saperti `gpt-4o`, `gpt-4o-mini`, atawa identifier modél séjén anu cocog jeung OpenAI.
+4. Eusian nilai **Tarif Asupan** jeung **Tarif Kaluaran** sacara misah dina mata uang situs anjeun per 1 juta token.
+5. Setél jatah belanja AI anu kaasup pikeun palanggan jeung paripolah kaleuwihan pikeun rencana éta.
+
+Nalika ID modél anu persis teu dikonpigurasikeun, Metered Plans bisa nyocogkeun dumasar kana préfix modél. Contona, tarif anu dikonpigurasikeun pikeun `claude-sonnet-4` bisa dilarapkeun ka ID modél nganggo timestamp anu dimimitian ku préfix éta. Developer ogé bisa nyaluyukeun tabel tarif ahir ku filter [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Connector AI anu Dirojong {#supported-ai-connectors}
+
+Tagihan token AI jalan jeung connector anu ngaluarkeun kajadian generasi WordPress AI Client SDK sarta ngalebetkeun pamakéan token dina metadata réspon. Ieu ngawengku kulawarga connector AI Ultimate Multisite anu didokumentasikeun di dieu:
+
+* [Ultimate AI Connector pikeun Endpoint anu Cocog](../ultimate-ai-connector-compatible-endpoints/) pikeun API anu cocog jeung OpenAI, kaasup OpenAI, Mistral, gateway anu cocog jeung Ollama, jeung panyadia séjén anu nembongkeun metadata pamakéan token anu cocog
+* [Ultimate AI Connector pikeun WebLLM](../ultimate-ai-connector-webllm/) pikeun pamakéan WebLLM asli browser nalika paménta dialirkeun ngaliwatan alur kajadian AI Client SDK
+* Connector panyadia AI anu dipaké ku [Gratis AI Agent](../gratis-ai-agent/) nalika panyadia anu dipilih ngalaporkeun jumlah token prompt jeung completion ngaliwatan SDK
+
+Connector custom bisa ilubiung ku ngahurungkeun kajadian standar `wp_ai_client_before_generate_result` jeung `wp_ai_client_after_generate_result` kalayan metadata modél, panyadia, jeung pamakéan token. Setélan connector dipaksakeun ti situs utama ka subsite sangkan situs palanggan maké panyadia jeung wates anu disatujuan ku jaringan.
+
+### Pamakéan Account Palanggan {#customer-account-usage}
+
+Pelanggan ningali pamakéan AI babarengan jeung sumberdaya diméteran séjénna dina wewengkon account maranéhna. Baris belanja AI némbongkeun total période tagihan ayeuna anu diturunkeun tina token prompt jeung completion anu dirékam, tarif modél anu dikonpigurasikeun, jeung jatah naon waé anu kaasup dina rencana.
+
+Lamun palanggan boga métode pamayaran dina file, pamakéan di luhur jatah anu kaasup dianggap salaku kaleuwihan anu bisa ditagih. Lamun rencana dikonpigurasikeun pikeun cutoff kaku sarta palanggan teu boga métode pamayaran anu sayaga, paménta AI bisa dipeungpeuk sanggeus jatah kahontal sarta palanggan dipenta pikeun nambahkeun rinci pamayaran saméméh neruskeun.
+
+## Sumberdaya anu Dirojong {#supported-resources}
+
+* Panyimpenan disk
+* Bandwidth/transfer data
+* Jumlah situs
+* Jumlah pamaké
+* Pamakéan token AI jeung belanja AI
+* Jenis sumberdaya custom
+
+## Sarat {#requirements}
+
+* Multisite Ultimate 2.0.0 atawa leuwih luhur
+* Instalasi WordPress Multisite
+* PHP 7.4 atawa leuwih luhur
+
+## Pamasangan {#installation}
+
+1. Unggah file plugin ka `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktipkeun plugin ngaliwatan layar 'Plugins' dina WordPress
+3. Arahkeun ka Multisite Ultimate → Settings → Metered Plans
+4. Konpigurasikeun sumberdaya diméteran jeung harga anjeun
+5. Aktipkeun tagihan diméteran pikeun produk dina éditor produk
+
+## Patarosan anu Mindeng Ditaroskeun {#frequently-asked-questions}
+
+## Naon anu kajadian nalika palanggan ngaleuwihan watesna? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Tibatan meungpeuk aksés, sistem ngalacak kaleuwihan pamakéan jeung nambahkeunana kana tagihan salajengna maranéhna dumasar kana tarif anu geus anjeun atur.
+
+## Naha abdi tiasa netepkeun tarif kaleuwihan anu béda pikeun produk anu béda? {#can-i-set-different-overage-rates-for-different-products}
+
+Leres, unggal produk tiasa miboga sumber daya metered jeung harga kaleuwihan anu unik.
+
+## Kumaha palanggan dibéjaan ngeunaan pamakéan? {#how-are-customers-notified-about-usage}
+
+Palanggan tiasa ningali pamakéan ayeuna maranéhna dina Dashboard maranéhna sarta nampa béwara opsional nalika ngadeukeutan atawa ngaleuwihan wates.
+
+## Kumaha harga pamakéan AI token diitung? {#how-is-ai-token-usage-priced}
+
+Pamakéan AI token dihargaan tina tarif input jeung output modél anu geus dikonfigurasi per 1 juta token. Metered Plans ngalikeun jumlah token prompt jeung completion unggal pamundut ku tarif éta, nambahkeun hasilna kana pangeluaran AI palanggan dina période tagihan ayeuna, sarta nerapkeun allowance atawa aturan kaleuwihan tina plan éta.
+
+## Naha abdi masih tiasa ngagunakeun wates teuas? {#can-i-still-use-hard-limits}
+
+Leres, tagihan metered téh opsional per produk. Anjeun tiasa nyampur produk wates teuas tradisional jeung produk metered.

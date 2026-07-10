@@ -3,11 +3,11 @@ title: Ra'ayoyin Abokan Ciniki da Bincike Game da Matakai
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Shaidar da Abubuwan Aminta da Bincike Masu Musamman
+# Shaidar da Abubuwan Aminta da Bincike Masu Musamman {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 yana kafa tsarin samun ra'ayoyi da bincike masubbar wanda ke ba masu amfani ƙarshe damar bayyana amsa ba ce mai kyau ko kuma yin tururan matsaloli kai tsaye daga interface na tattaunawa. Wannan tsari yana nuna sarrafa izinin samun ra'ayoyi, umarni bincike na ma'aikata (automated reporting command), da kuma tsare-tsaren bincike ta AI a bayan wajen gudanarwa.
 
-## Ma'auni Na "Thumbs-Down" (Wannan Ba Mai Kyau Ba)
+## Ma'auni Na "Thumbs-Down" (Wannan Ba Mai Kyau Ba) {#thumbs-down-button}
 
 Kowane saƙo da AI assistant ya aiko yana nuna ma'aunin **thumbs-down** (👎). Lokacin da mai amfani ya danna shi, zai iya alamar amsa ba ce mai kyau ko kuma ta yi laifi.
 
@@ -15,7 +15,7 @@ Kowane saƙo da AI assistant ya aiko yana nuna ma'aunin **thumbs-down** (👎). 
 - Lokacin da aka danna shi, ana buɗe **Feedback Consent Modal** (Wannan Wajen Samun Ra'ayoyi).
 - Ra'ayin samun ra'ayi yana shafi lissafin tattaunawa da saƙo na musamman.
 
-## Feedback Consent Modal (Wajen Samun Ra'ayoyi)
+## Feedback Consent Modal (Wajen Samun Ra'ayoyi) {#feedback-consent-modal}
 
 Lokacin da mai amfani ya danna ma'aunin thumbs-down, wajen samun ra'ayoyi zai bayyana kafin a aiko duk wani data. Wajen samun ra'ayoyi yana:
 
@@ -26,13 +26,13 @@ Lokacin da mai amfani ya danna ma'aunin thumbs-down, wajen samun ra'ayoyi zai ba
 
 Ba duk ra'ayi za a riƙe ba har sai mai amfani ya tabbatar shi kai tsaye.
 
-## Auto-Prompt Feedback Banner (Bannin Samun Ra'ayoyi Na Automa)
+## Auto-Prompt Feedback Banner (Bannin Samun Ra'ayoyi Na Automa) {#auto-prompt-feedback-banner}
 
 A ƙarshen tattaunawa, ma'aikata zai iya nuna **auto-prompt feedback banner** — wani saƙo na ba da shawarwari mai sauki wanda ke tambaya ko tattaunawarta ta yi kyau.
 
 Wannan banner yana bayyana ne kawai bisa tsawon tattaunawa da sakamakon bincike. Yana haɗa da hanyar samun ra'ayoyi kamar ma'aunin thumbs-down. Mai amfani zai iya tsayawa wannan banner ba tare da ba da ra'ayi ba.
 
-## /report-issue Slash Command (Umarni Na Bincike Masubbar)
+## /report-issue Slash Command (Umarni Na Bincike Masubbar) {#report-issue-slash-command}
 
 Mai amfani zai iya fara bayar da samun ra'ayoyi kai tsaye ta hanyar rubuta `/report-issue` a cikin wurin shigarwa na tattaunawa. Wannan umarni yana:
 
@@ -42,7 +42,7 @@ Mai amfani zai iya fara bayar da samun ra'ayoyi kai tsaye ta hanyar rubuta `/rep
 
 Amr `/report-issue` yana dawo a duk nau'ikan tattaunawa (inline, floating widget, full-screen).
 
-## Tabbatarwa ta AI (AI-Assisted Triage)
+## Tabbatarwa ta AI (AI-Assisted Triage) {#ai-assisted-triage}
 
 Bayanan ra'ayoyin da aka tura za a wuce tsarin tabbatarwar AI wanda ke:
 

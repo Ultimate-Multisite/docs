@@ -3,11 +3,11 @@ title: Upravljanje sistemnih e-poštnih sporočil
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Upravljanje sistemskimi e-mailimi
+# Upravljanje sistemskimi e-mailimi {#managing-system-emails}
 
 Ultimate Multisite pošilja različne sistemske e-mailove za dogodke, kot so potrdbe registracije, potrdbe plačil in spremembe članstva. Te e-mail template lahko prilagodite svoji marki.
 
-## Ogled sistemskih e-mailov
+## Ogled sistemskih e-mailov {#viewing-system-emails}
 
 Navigirajte do **Ultimate Multisite → Settings** in kliknite na tab **Emails**, da vidite nastavitve povezane z e-mailom.
 
@@ -21,7 +21,7 @@ Lahko lahko redaktirate individualne e-mail template z uporabo editorja sistemsk
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Import novih e-mail template
+## Import novih e-mail template {#importing-new-email-templates}
 
 Nova verzija Ultimate Multisite in dodatki lahko registrirajo nove e-mail template. Da bi preprečili konflikte, nove template se ne dodajajo samodejno — morate jih importirati ručno.
 
@@ -32,7 +32,7 @@ Za import novih e-mail template:
 3. Preklopite možnost **Import Emails**, da vidite na voljo template
 4. Izberite template, ki jih želite importirati in potrdite
 
-## Resetiranje e-mail template
+## Resetiranje e-mail template {#resetting-email-templates}
 
 Če ste prilagodili e-mail template in želite se vrniti na standardni vsebino, imate dve možnosti:
 

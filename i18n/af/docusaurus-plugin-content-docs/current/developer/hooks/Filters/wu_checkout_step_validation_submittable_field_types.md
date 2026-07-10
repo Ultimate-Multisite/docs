@@ -4,22 +4,22 @@ title: Filter - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Filter: wu_checkout_step_validation_submittable_field_types
+# Filter: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 Laat ontwikkelaars die kontrole omseil as 'n vel outomaties ingestuur kan word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $submittable_field_types | `array` | Die lys van veltipes. |
 
-### Sed
+### Sed {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/helpers/validation-rules/class-checkout-steps.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/validation-rules/class-checkout-steps.php#L92) op lyn 92
 
 
-## Gee Terug
+## Gee Terug {#returns}

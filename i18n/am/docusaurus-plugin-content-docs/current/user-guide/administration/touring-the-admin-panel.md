@@ -1,118 +1,122 @@
 ---
-title: የአስተዳደር ፓነልን መጎብኘት
+title: የአስተዳዳሪ ፓነሉን መጎብኘት
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# የአስተዳደር ፓነል ጉብኝት
+# የአስተዳዳሪ ፓነሉን መጎብኘት {#touring-the-admin-panel}
 
-Ultimate Multisite በተቻለ መጠን ቀላል እና በራሱ ሊብራራ የሚችል እንዲሆን ታስቦ የተሰራ ቢሆንም፣ ይህን ያህል ኃይለኛ መሳሪያ ስላለው፣ መመሪያ ጉብኝት ሊረዳ ይችላል። እርስዎ ቦታ እንዲይዙ ለመርዳት የአስተዳደር ገጾችን እንቃኛለን።
+Ultimate Multisite በተቻለ መጠን ቀላል እና ራሱን የሚያብራራ እንዲሆን ይهدفል፣ ግን ይህን ያህል ኃይለኛ መሣሪያ ሲሆን የተመራ ጉብኝት መኖሩ ሊረዳ ይችላል። እርስዎ እንዲለምዱ ለመርዳት የአስተዳዳሪ ገጾቹን እንመልከት።
 
-## Dashboard
+## Dashboard {#dashboard}
 
-የUltimate Multisite **Dashboard** ገጽ ገቢዎችን፣ የጣቢያ እንቅስቃሴዎችን፣ የአባልነት ዕድገትን፣ የጎብኝ ብዛት እና የጂኦግራፊያዊ መረጃን ጨምሮ መሠረታዊ ሪፖርቶችን እና ስታቲስቲክስ ያሳያል።
+የUltimate Multisite **Dashboard** ገቢዎችን፣ የጣቢያ እንቅስቃሴዎችን፣ የአባልነት እድገትን፣ የጎብኚዎች ብዛትን እና ጂኦግራፊያዊ ውሂብን ጨምሮ መሠረታዊ ሪፖርቶችን እና ትንታኔዎችን ያሳያል።
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-የdashboard ሙሉ እይታ እነሆ፦
+የDashboard ሙሉ እይታ እነሆ፦
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard ሙሉ ገጽ](/img/admin/um-dashboard-full.png)
 
-እና የdashboard የታች ክፍል፦
+እና የDashboard የታችኛው ክፍል፦
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard የታችኛው ክፍል](/img/admin/um-dashboard-bottom.png)
 
-የኔትወርክ dashboard ሙሉ እይታም እነሆ፦
+እንዲሁም የኔትወርክ Dashboard ሙሉ እይታ እነሆ፦
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![የኔትወርክ Dashboard ሙሉ ገጽ](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## የክፍያ ማጠናቀቂያ ቅጾች {#checkout-forms}
 
-**Checkout Forms** የራስዎን ምዝገባ ገጾችን ለመፍጠር ተጣጣፊነት ይሰጥዎታል። መስኮቶችን (fields) ማበጀት፣ የራስዎን classes እና scripts ማስገባት፣ እና ተጠቃሚው ከየትኛው ሀገር ወይም ቦታ እንደመጣ በመመሥረት መዳረሻን መገደብ ይችላሉ።
+**የክፍያ ማጠናቀቂያ ቅጾች** ብጁ የምዝገባ ገጾችን ለመፍጠር ተለዋዋጭነት ይሰጡዎታል። መስኮችን ማበጀት፣ ብጁ ክፍሎችን እና ስክሪፕቶችን ማስገባት፣ እና በጎብኚ አገር ወይም አካባቢ መሠረት መዳረሻን መገደብ ይችላሉ።
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![የክፍያ ማጠናቀቂያ ቅጾች ዝርዝር](/img/admin/checkout-forms-list.png)
 
-## Products
+## ምርቶች {#products}
 
-የ**Products** ክፍል ለኔትወርክዎ የተለያዩ ዕቅዶችን፣ ፓኬጆችን እና አገልግሎቶችን የሚያዘጋጁበት ቦታ ነው። የዋጋዎችን ዝርዝር፣ የክፍያ ድግግሞሾችን እና በምርት ደረጃ ያሉ ገደቦችን እና መጠኖችን (limits & quotas) ይግለጹ።
+የ**ምርቶች** ክፍል ለኔትወርክዎ የተለያዩ ዕቅዶችን፣ ጥቅሎችን እና አገልግሎቶችን የሚፈጥሩበት ቦታ ነው። ዋጋዎችን፣ የክፍያ ድግግሞሾችን፣ እና ገደቦችን እና ኮታዎችን በምርት ደረጃ ይግለጹ።
 
-![Products list](/img/admin/products-list.png)
+![የምርቶች ዝርዝር](/img/admin/products-list.png)
 
-## Memberships
+## አባልነቶች {#memberships}
 
-የ**Memberships** ገጽ በኔትወርክዎ ውስጥ ያሉ ሁሉንም ምዝገባዎች ያሳያል። ዕቅዶችን፣ ምርቶችን፣ የክፍያ መጠኖችን እና ድግግሞሾችን፣ የክፍያ ታሪክን እና የጊዜ ማህተሞችን (timestamps) ጨምሮ የደንበኝነት ምዝገባ ዝርዝሮችን ይገምግሙ እና ያርትዑ።
+የ**አባልነቶች** ገጽ በኔትወርክዎ ውስጥ ያሉ ሁሉንም የአባልነት ምዝገባዎች ያሳያል። ዕቅዶችን፣ ምርቶችን፣ የክፍያ መጠኖችን እና ድግግሞሾችን፣ የክፍያ ታሪክን እና የጊዜ ማህተሞችን ጨምሮ የአባልነት ምዝገባ ዝርዝሮችን ይገምግሙ እና ያርትዑ።
 
-![Memberships list](/img/admin/memberships-list.png)
+![የአባልነቶች ዝርዝር](/img/admin/memberships-list.png)
 
-## Payments
+## ክፍያዎች {#payments}
 
-የ**Payments** ገጽ በጠቅላላው ኔትወርክዎ ውስጥ የክፍያ ታሪክን በፍጥነት እንዲመለከቱ ያስችላል። የተወሰኑ ምርቶችን እና መጠኖችን ጨምሮ ዝርዝር የግብይት መረጃን ያቀርባል።
+የ**ክፍያዎች** ገጽ በመላ ኔትወርክዎ ውስጥ የክፍያ ታሪክን ፈጣን እይታ ይሰጣል፣ ከተወሰኑ ምርቶች እና መጠኖች ጋር ዝርዝር የግብይት መረጃን ጨምሮ።
 
-![Payments list](/img/admin/payments-list.png)
+![የክፍያዎች ዝርዝር](/img/admin/payments-list.png)
 
-## Customers
+## ደንበኞች {#customers}
 
-የ**Customers** ገጽ በኔትወርክዎ ውስጥ የተመዘገቡትን ሁሉንም አባላት ያሳያል፤ ስም፣ የኢሜይል አድራሻ፣ የመጨረሻ መግባት እና ወደ ንዑስ ጣቢያቸው ለመግባት የሚያስችል "switch to" ሊንክን ጨምሮ መሠረታዊ የተጠቃሚ መረጃን ያካትታል።
+የ**ደንበኞች** ገጽ በኔትወርክዎ ውስጥ የተመዘገቡ ሁሉንም አባላት ያሳያል፣ ስም፣ የኢሜይል አድራሻ፣ የመጨረሻ መግቢያ፣ እና ወደ ንዑስ ጣቢያቸው ለመግባት “ወደ ይቀይሩ” የሚል አገናኝ ጨምሮ መሠረታዊ የተጠቃሚ መረጃ ይዟል።
 
-![Customers list](/img/admin/customers-list.png)
+![የደንበኞች ዝርዝር](/img/admin/customers-list.png)
 
-## Sites
+## ጣቢያዎች {#sites}
 
-የ**Sites** ገጽ በኔትወርክዎ ውስጥ ያሉ ሁሉንም ንዑስ ጣቢያዎችን (subsites) በየጣቢያ አብነጣዎች (site templates) እና በደንበኞች የራሳቸው ጣቢያዎችን ያዘረጅልዎታል። የየተመደቡ የዶሜን ስሞችን፣ ገደቦችን እና መጠኖችን፣ plugins እና themes እንዲሁም የጣቢያ አናባቢዎችን (thumbnails) በቀላሉ ያስተዳድራሉ።
+የ**ጣቢያዎች** ገጽ በኔትወርክዎ ውስጥ ያሉ ሁሉንም ንዑስ ጣቢያዎች ይዘረዝራል፣ የጣቢያ አብነቶችን እና በደንበኛ የተያዙ ጣቢያዎችን ጨምሮ። የተመደቡ ዶሜኖችን፣ ገደቦችን እና ኮታዎችን፣ ተሰኪዎችን እና ገጽታዎችን፣ እና የጣቢያ ጥፍር አክል ምስሎችን በቀላሉ ያስተዳድሩ።
 
-![Sites list](/img/admin/sites-list.png)
+![የጣቢያዎች ዝርዝር](/img/admin/sites-list.png)
 
-## Domains
+## ዶሜኖች {#domains}
 
-የ**Domains** ገጽ ለንዑስ ጣቢያዎች (subsites) ከተመደቡ የቅንብረ የዶሜን ስሞች (custom domains) የተሰጠ ነው። እንደ super admin፣ የቅንብረ የዶሜን ስሞችን በእጅ መጨመር ወይም መመደብ እና የDNS መዝገቦችን እና መረጃዎችን (logs) ማየት ይችላሉ።
+የ**ዶሜኖች** ገጽ ወደ ንዑስ ጣቢያዎች ለተመደቡ ብጁ ዶሜኖች የተሰጠ ነው። እንደ ዋና አስተዳዳሪ፣ ብጁ የዶሜን ስሞችን በእጅ ማከል ወይም መመደብ እና የDNS መዝገቦችን እና ሎጎችን ማየት ይችላሉ።
 
-![Domains list](/img/admin/domains-list.png)
+![የዶሜኖች ዝርዝር](/img/admin/domains-list.png)
 
-## Discount Codes
+## የቅናሽ ኮዶች {#discount-codes}
 
-**Discount Codes** ለተጠቃሚዎችዎ ቅናሽ ለመስጠት የኩፖን ኮዶችን እንዲፈጥሩ ያስችሉዎታል። የቅናሽ እሴቱን መግለጽ እና የተወሰኑ ተጠቃሚዎችን ወይም ቡድኖችን መምረጥ ይችላሉ።
+**የቅናሽ ኮዶች** ለመጨረሻ ተጠቃሚዎችዎ ቅናሾችን ለማቅረብ የኩፖን ኮዶችን እንዲፈጥሩ ያስችሉዎታል። የቅናሽ እሴቱን ይግለጹ እና የተወሰኑ ተጠቃሚዎችን ወይም ቡድኖችን ዒላማ ያድርጉ።
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![የቅናሽ ኮዶች ዝርዝር](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## ስርጭቶች {#broadcasts}
 
-**Broadcasts** ለንዑስ ጣቢያ ተጠቃሚዎች ማስታወቂያዎችን ለማሰራጨት ወይም የግል መልዕክቶችን ለመላክ የሚያገለግል መሳሪያ ነው። ተጠቃሚው የሰበሰበበትን ዕቅድ ወይም ምርት በመሠረት የተወሰኑ የተጠቃሚ ቡድኖችን መምረጥ ይችላሉ።
+**ስርጭቶች** ማስታወቂያዎችን ለማሰራጨት ወይም ለንዑስ ጣቢያ ተጠቃሚዎችዎ የግል መልዕክቶችን ለመላክ መሣሪያ ነው። ተመዝግበውበት ባለው ዕቅድ ወይም ምርት መሠረት የተወሰኑ የተጠቃሚ ቡድኖችን ዒላማ ያድርጉ።
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![የስርጭቶች ዝርዝር](/img/admin/broadcasts-list.png)
 
-## Settings
+## ቅንብሮች {#settings}
 
-የ**Settings** ገጽ Ultimate Multisite የሚሰሩበት ቦታ ነው — የምዝገባ ቅንብሮች፣ ክፍያዎች፣ API እና webhooks፣ የዶሜን መመደብ እና ሌሎች ውህደቶች (integrations)።
+የ**ቅንብሮች** ገጽ Ultimate Multisite የሚያዋቅሩበት ቦታ ነው — የምዝገባ ቅንብሮች፣ ክፍያዎች፣ API እና ዌብሁኮች፣ የዶሜን መመደብ፣ እና ሌሎች ውህደቶች።
 
-![Settings page](/img/admin/settings-general.png)
+የAI ኮኔክተር ቅንብሮች አሁን የሚደገፉ የOAuth አቅራቢ ጥምረቶችን ይዘረዝራሉ፦ Anthropic Max, OpenAI ChatGPT/Codex, እና Google AI Pro። እያንዳንዱ የአቅራቢ ካርድ ዋና አስተዳዳሪዎች Account እንዲያገናኙ፣ የተቀመጡ Account እንዲያድሱ፣ Account በኢሜይል እንዲያስወግዱ፣ እና የsandbox አካባቢ የአሳሽ ማዞሪያውን ሲከለክል የበእጅ OAuth አማራጭን እንዲጠቀሙ ያስችላል። የCursor Pro ማዋቀሪያ አማራጮች ከአስተዳዳሪ ፓነሉ ተወግደዋል።
+
+የChatGPT/Codex Account ክዋኔው መሣሪያዎችን በሚፈቅድበት ቦታ በኮኔክተር የተደገፈ የመሣሪያ አጠቃቀምን ይደግፋሉ፣ ስለዚህ በኮኔክተር በሚደገፉ ክዋኔዎች ላይ የሚመሰረቱ የአስተዳዳሪ የሥራ ፍሰቶች OpenAI Account ከተገናኘ በኋላ የCodex መሣሪያ ባህሪን መጠቀም ይችላሉ።
+
+![የቅንብሮች ገጽ](/img/admin/settings-general.png)
 
 የአጠቃላይ ቅንብሮች ገጽ ሙሉ እይታ እነሆ፦
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![የአጠቃላይ ቅንብሮች ሙሉ ገጽ](/img/admin/settings-general-full.png)
 
-እና የኢሜል ቅንብሮች ገጽ፦
+እና የኢሜይሎች ቅንብሮች ገጽ፦
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![የኢሜይሎች ቅንብሮች ሙሉ ገጽ](/img/admin/settings-emails-full.png)
 
-እና የክፍያ ቅንብሮች ገጽ፦
+እና የክፍያዎች ቅንብሮች ገጽ፦
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![የክፍያዎች ቅንብሮች ሙሉ ገጽ](/img/admin/settings-payments-full.png)
 
-እና የክፍያ ቅንብሮች የታች ክፍል፦
+እና የክፍያዎች ቅንብሮች የታችኛው ክፍል፦
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![የክፍያዎች ቅንብሮች የታችኛው ክፍል](/img/admin/settings-payments-bottom.png)
 
-እና የጣቢያ ቅንብሮች ገጽ፦
+እና የጣቢያዎች ቅንብሮች ገጽ፦
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![የጣቢያዎች ቅንብሮች ሙሉ ገጽ](/img/admin/settings-sites-full.png)
 
-## Events
+## ክስተቶች {#events}
 
-የ**Events** ገጽ በኔትወርክዎ ውስጥ የተከናወኑ ሁሉንም ክስተቶች እና መረጃዎችን (logs) ይመዘግባል። የዕቅድ ለውጦችን፣ ምዝገባዎችን እና ሌሎች እንቅስቃሴዎችን ይከታተላል—ይህም የmultisiteዎን ክትትል ለማድረግ ጠቃሚ ነው።
+የ**ክስተቶች** ገጽ በኔትወርክዎ ውስጥ ያሉ ሁሉንም ክስተቶች እና ሎጎች መዝገብ ያቆያል። እንደ የዕቅድ ለውጦች፣ ምዝገባዎች፣ እና ሌሎች እንቅስቃሴዎች ያሉ እንቅስቃሴዎችን ይከታተላል — የmultisite ንዎን ለመቆጣጠር ጠቃሚ ነው።
 
-![Events list](/img/admin/events-list.png)
+![የክስተቶች ዝርዝር](/img/admin/events-list.png)
 
-## Webhooks
+## ዌብሁኮች {#webhooks}
 
-**Webhooks** መረጃን ወደ ሌላ መተግበሪያ (application) እንዲልኩ ያስችሉዎታል። Ultimate Multisite ላይ ያለ መረጃ ወደ Zapier ባሉ መድረኮች መላክ ጠቃሚ ነው።
+**ዌብሁኮች** ውሂብን ወደ ሌላ መተግበሪያ እንዲያቀርቡ ያስችሉዎታል። ውሂብን ከUltimate Multisite ወደ እንደ Zapier ያሉ መድረኮች ለመላክ ጠቃሚ ነው።
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![የዌብሁኮች ዝርዝር](/img/admin/webhooks-list.png)

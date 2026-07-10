@@ -3,11 +3,11 @@ title: Tasarım Sistemi Estetik Becerisi
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Tasarım Sistemi Estetiği Beceri Seti
+# Tasarım Sistemi Estetiği Beceri Seti {#design-system-aesthetics-skill}
 
 **Tasarım Sistemi Estetiği beceri seti**, sitenizin görsel kimliğini iyileştirmek için rehberli bir yaklaşımdır. Tasarım sisteminizi tanımlayan tipografi, renk, boşluk ve hareket tokenları hakkında tutarlı kararlar almanıza yardımcı olur.
 
-## Tasarım Sistemi Estetiği Nedir?
+## Tasarım Sistemi Estetiği Nedir? {#what-is-design-system-aesthetics}
 
 Tasarım Sistemi Estetiği, aşağıdaki konuları kapsayan yapılandırılmış bir beceri setidir:
 
@@ -20,9 +20,9 @@ Tasarım Sistemi Estetiği, aşağıdaki konuları kapsayan yapılandırılmış
 
 Bu kararlar, temanızın `theme.json` dosyasına kaydedilir ve uyumlu bir görsel sistem oluşturur.
 
-## Tasarım Sistemi Estetiği Neden Kullanılmalı?
+## Tasarım Sistemi Estetiği Neden Kullanılmalı? {#why-use-design-system-aesthetics}
 
-### Tutarlılık
+### Tutarlılık {#consistency}
 
 Bir tasarım sistemi şunları sağlar:
 
@@ -31,7 +31,7 @@ Bir tasarım sistemi şunları sağlar:
 - Boşluklar öngörülebilir bir düzen izler
 - Animasyonlar bir bütünlük hissi verir
 
-### Verimlilik
+### Verimlilik {#efficiency}
 
 Sayfa sayfa tasarım kararları vermek yerine, şunları yaparsınız:
 
@@ -39,7 +39,7 @@ Sayfa sayfa tasarım kararları vermek yerine, şunları yaparsınız:
 - Her yerde uygularsınız
 - Tek bir değeri değiştirerek global olarak güncellersiniz
 
-### Esneklik
+### Esneklik {#flexibility}
 
 Şunları yapabilirsiniz:
 
@@ -47,9 +47,9 @@ Sayfa sayfa tasarım kararları vermek yerine, şunları yaparsınız:
 - Farklı estetiklerle deney yapabilirsiniz
 - Gelişirken marka tutarlılığını koruyabilirsiniz
 
-## Tasarım Sistemi Estetiği Beceri Setini Tetikleme
+## Tasarım Sistemi Estetiği Beceri Setini Tetikleme {#triggering-the-design-system-aesthetics-skill}
 
-### Manuel Aktivasyon
+### Manuel Aktivasyon {#manual-activation}
 
 Beceri setini istediğiniz zaman başlatabilirsiniz:
 
@@ -69,7 +69,7 @@ veya
 "Guide me through design system decisions"
 ```
 
-### Otomatik Öneriler
+### Otomatik Öneriler {#automatic-suggestions}
 
 Aşağıdaki durumlarda ajan, beceriyi kullanmanızı önerebilir:
 
@@ -78,9 +78,9 @@ Aşağıdaki durumlarda ajan, beceriyi kullanmanızı önerebilir:
 - Görsel tutarlılığı artırmak istediğinizde
 - Sitenizi yayınlamaya hazırlanırken
 
-## Tasarım Sistemi Estetiği Süreci
+## Tasarım Sistemi Estetiği Süreci {#the-design-system-aesthetics-process}
 
-### Adım 1: Tipografi
+### Adım 1: Tipografi {#step-1-typography}
 
 Ajan, yazı tipi seçimleriniz hakkında sorular sorar:
 
@@ -110,7 +110,7 @@ Ajan daha sonra şunları tanımlar:
 - **Ağırlık ölçeği**: Font ağırlıkları (regular, medium, bold vb.)
 - **Satır yüksekliği**: Okunabilirlik için satırlar arasındaki boşluk
 
-### Adım 2: Renk Paleti
+### Adım 2: Renk Paleti {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Ajan, şunları içeren eksiksiz bir palet oluşturur:
 - Semantik renkler (başarı, uyarı, hata)
 - Üzerine gelme (hover) ve aktif durumlar
 
-### Adım 3: Boşluk
+### Adım 3: Boşluk {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Ajan boşluk tokenlarını tanımlar:
 - Ölçek: xs, sm, md, lg, xl, 2xl
 - Padding, margin, gap için özel değerler
 
-### Adım 4: Kenarlıklar ve Gölgeler
+### Adım 4: Kenarlıklar ve Gölgeler {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Ajan şunları oluşturur:
 - Yükselti seviyeleri için gölge tokenları
 - Kenarlık genişliği tokenları
 
-### Adım 5: Hareket ve Animasyon
+### Adım 5: Hareket ve Animasyon {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Ajan şunları tanımlar:
 - Yumuşatma fonksiyonları (ease-in, ease-out, ease-in-out)
 - Yaygın etkileşimler için animasyon anahtar kareleri
 
-## Tasarım Sistemi Estetiğini Uygulama
+## Tasarım Sistemi Estetiğini Uygulama {#applying-design-system-aesthetics}
 
-### Otomatik Uygulama
+### Otomatik Uygulama {#automatic-application}
 
 Beceri setini tamamladıktan sonra ajan:
 
@@ -218,7 +218,7 @@ Beceri setini tamamladıktan sonra ajan:
 3. Yeni sisteme uyması için blok stillerini yeniden oluşturur
 4. Güncellenmiş temayı etkinleştirir
 
-### Manuel Uygulama
+### Manuel Uygulama {#manual-application}
 
 Ayrıca `theme.json` dosyasını doğrudan düzenleyebilirsiniz:
 
@@ -257,9 +257,9 @@ Ayrıca `theme.json` dosyasını doğrudan düzenleyebilirsiniz:
 }
 ```
 
-## Tasarım Sisteminizi Görüntüleme
+## Tasarım Sisteminizi Görüntüleme {#viewing-your-design-system}
 
-### Ajana Sorun
+### Ajana Sorun {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ veya
 
 Ajan, tipografinizi, renklerinizi, boşluklarınızı ve diğer tokenlarınızı gösterecektir.
 
-### theme.json'ı Görüntüleme
+### theme.json'ı Görüntüleme {#view-themejson}
 
 Ham token tanımlarını görmek için `/wp-content/themes/[theme-name]/theme.json` dosyasını bir metin düzenleyicide açın.
 
-## Tasarım Sisteminizi Güncelleme
+## Tasarım Sisteminizi Güncelleme {#updating-your-design-system}
 
-### Hızlı Güncellemeler
+### Hızlı Güncellemeler {#quick-updates}
 
 Ajan'dan belirli değişiklikler isteyin:
 
@@ -299,7 +299,7 @@ veya
 "Change the heading font to a serif"
 ```
 
-### Tam Yeniden Tasarım
+### Tam Yeniden Tasarım {#full-redesign}
 
 Tasarım Sistemi Estetiği beceri setini tekrar çalıştırın:
 
@@ -309,7 +309,7 @@ Tasarım Sistemi Estetiği beceri setini tekrar çalıştırın:
 
 Bu, mevcut değerlerinizden başlayarak tüm kararlar boyunca size rehberlik edecektir.
 
-### Kısmi Güncellemeler
+### Kısmi Güncellemeler {#partial-updates}
 
 Belirli yönleri güncelleyin:
 
@@ -317,15 +317,15 @@ Belirli yönleri güncelleyin:
 "Just update the color palette, keep everything else"
 ```
 
-## Tasarım Sistemi En İyi Uygulamaları
+## Tasarım Sistemi En İyi Uygulamaları {#design-system-best-practices}
 
-### Tutarlılık
+### Tutarlılık {#consistency-1}
 
 - Her yerde aynı tokenları kullanın
 - Tek seferlik renkler veya boyutlar oluşturmayın
 - Değerleri doğrudan kodlamak yerine tokenlara referans verin
 
-### Adlandırma
+### Adlandırma {#naming}
 
 Açık, anlamsal isimler kullanın:
 
@@ -335,7 +335,7 @@ Açık, anlamsal isimler kullanın:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Ölçeklenebilirlik
+### Ölçeklenebilirlik {#scalability}
 
 Sisteminizi ölçeklenecek şekilde tasarlayın:
 
@@ -343,7 +343,7 @@ Sisteminizi ölçeklenecek şekilde tasarlayın:
 - Keyfi değerler yerine ölçekler oluşturun (xs, sm, md, lg, xl)
 - Gelecekteki eklemeler için plan yapın
 
-### Dokümantasyon
+### Dokümantasyon {#documentation}
 
 Tasarım sisteminizi belgeleyin:
 
@@ -351,9 +351,9 @@ Tasarım sisteminizi belgeleyin:
 - Her token ne zaman kullanılmalı
 - İstisnalar ve uç durumlar
 
-## Yaygın Tasarım Sistemi Kalıpları
+## Yaygın Tasarım Sistemi Kalıpları {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Sans-serif tipografi (Inter, Helvetica)
 - Sınırlı renk paleti (2-3 renk)
@@ -361,7 +361,7 @@ Tasarım sisteminizi belgeleyin:
 - Hafif gölgeler
 - Akıcı, hızlı animasyonlar
 
-### Sıcak ve Samimi
+### Sıcak ve Samimi {#warm-and-friendly}
 
 - Serif ve sans-serif karışımı
 - Sıcak renk paleti (turuncu, sıcak griler)
@@ -369,7 +369,7 @@ Tasarım sisteminizi belgeleyin:
 - Yumuşak gölgeler
 - Eğlenceli animasyonlar
 
-### Profesyonel Kurumsal
+### Profesyonel Kurumsal {#professional-corporate}
 
 - Temiz sans-serif (Roboto, Open Sans)
 - Vurgu rengi ile nötr palet
@@ -377,7 +377,7 @@ Tasarım sisteminizi belgeleyin:
 - Minimal gölgeler
 - Hafif geçişler
 
-### Yaratıcı ve Cesur
+### Yaratıcı ve Cesur {#creative-and-bold}
 
 - Belirgin tipografi
 - Cesur renk paleti
@@ -385,7 +385,7 @@ Tasarım sisteminizi belgeleyin:
 - Güçlü gölgeler
 - Dikkat çekici animasyonlar
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
 **Tasarım sistemi değişikliklerim görünmüyor**
 - Tarayıcı önbelleğinizi temizleyin
@@ -403,7 +403,7 @@ Tasarım sisteminizi belgeleyin:
 - theme.json'ı manuel olarak önceki değerlere düzenleyin
 - Farklı seçimlerle beceri setini tekrar çalıştırın
 
-## Sonraki Adımlar
+## Sonraki Adımlar {#next-steps}
 
 Tasarım sisteminizi tanımladıktan sonra:
 

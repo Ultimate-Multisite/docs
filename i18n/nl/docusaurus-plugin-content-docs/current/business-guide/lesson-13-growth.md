@@ -3,19 +3,19 @@ title: 'Les 13: Opschalen'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Les 13: Opschalen
+# Les 13: Opschalen {#lesson-13-scaling-up}
 
 Je hebt een werkende platform met betalende klanten. Deze les gaat over hoe je van een kleine operatie kunt groeien naar een duurzaam bedrijf – door de infrastructuur op te schalen, processen te automatiseren en de inkomsten per klant te verhogen.
 
-## Waar we gebleven waren
+## Waar we gebleven waren {#where-we-left-off}
 
 FitSite is live, klanten melden zich aan en je voert dagelijkse operaties uit. Nu richten we ons op groei.
 
-## Ken je cijfers
+## Ken je cijfers {#know-your-numbers}
 
 Voordat je opschaalt, moet je weten waar je staat:
 
-### Belangrijkste metrieken
+### Belangrijkste metrieken {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: De totale maandelijkse abonnementsomzet
 - **Klantenaantal**: Het totale aantal actieve abonnees
@@ -24,7 +24,7 @@ Voordat je opschaalt, moet je weten waar je staat:
 - **LTV (Lifetime Value)**: De gemiddelde omzet per klant gedurende de gehele looptijd van het abonnement
 - **CAC (Customer Acquisition Cost)**: De gemiddelde kosten om één klant te werven
 
-### Voorbeeld: FitSite met 50 klanten
+### Voorbeeld: FitSite met 50 klanten {#example-fitsite-at-50-customers}
 
 | Metriek | Waarde |
 |--------|-------|
@@ -36,9 +36,9 @@ Voordat je opschaalt, moet je weten waar je staat:
 
 Deze cijfers vertellen je waar je je op moet richten. Hoge churn? Verbeter de retentie. Lage ARPU? Stimuleer upgrades. Hoge CAC? Optimaliseer de acquisitiekanalen.
 
-## Infrastructuur opschalen
+## Infrastructuur opschalen {#scaling-infrastructure}
 
-### Wanneer opschalen
+### Wanneer opschalen {#when-to-scale}
 
 Schaal je hosting op wanneer:
 
@@ -47,7 +47,7 @@ Schaal je hosting op wanneer:
 - Je de 100+ actieve sites nadert
 - Klachten van klanten over de snelheid toenemen
 
-### Hoe opschalen
+### Hoe opschalen {#how-to-scale}
 
 - **Verticale opschaling**: Upgrade naar een grotere server (meer CPU, RAM)
 - **Cachinglagen**: Voeg Redis/Memcached toe voor objectcaching en paginacaching voor statische content
@@ -55,7 +55,7 @@ Schaal je hosting op wanneer:
 - **Databaseoptimalisatie**: Naarmate het netwerk groeit, vertragen de databasequeries. Optimaliseer tabellen, voeg indexen toe en overweeg een dedicated database server.
 - **Scheiding van zorgen**: Verplaats mediastorage naar objectopslag (S3-compatibel) en externaliseer e-mail naar een transactionele e-mailservice
 
-### Hosting migratie
+### Hosting migratie {#hosting-migration}
 
 Als je huidige host niet verder kan opschalen, plan dan een migratie:
 
@@ -65,11 +65,11 @@ Als je huidige host niet verder kan opschalen, plan dan een migratie:
 4. Update de DNS met een minimale TTL van tevoren
 5. Controleer of alles na de migratie werkt
 
-## Processen automatiseren
+## Processen automatiseren {#automating-operations}
 
 Naarmate je groeit, worden handmatige processen knelpunten. Automatiseer wat je kunt:
 
-### Webhooks en Zapier
+### Webhooks en Zapier {#webhooks-and-zapier}
 
 Gebruik [Webhooks](/user-guide/integrations/webhooks) of [Zapier](/user-guide/integrations/zapier) om te automatiseren:
 
@@ -78,7 +78,7 @@ Gebruik [Webhooks](/user-guide/integrations/webhooks) of [Zapier](/user-guide/in
 - **Betalingsfouten** → waarschuwing in je monitoringtool
 - **Planupgrades** → felicitatie-e-mail met een gids voor nieuwe functies
 
-### E-mailautomatisering
+### E-mailautomatisering {#email-automation}
 
 Ga van handmatige e-mails naar geautomatiseerde reeksen:
 
@@ -87,30 +87,30 @@ Ga van handmatige e-mails naar geautomatiseerde reeksen:
 - Upgrade-prompts wanneer klanten de planlimieten benaderen
 - Verlengingsherinneringen voor jaarabonnementen
 
-### Supportautomatisering
+### Supportautomatisering {#support-automation}
 
 - **Voorgeprogrammeerde antwoorden** voor veelgestelde vragen
 - **Auto-reply's** die bevestigen dat een supportticket is ontvangen
 - **Suggesties voor kennisbankartikelen** wanneer klanten tickets indienen die overeenkomen met bestaande artikelen
 
-## Inkomsten verhogen
+## Inkomsten verhogen {#increasing-revenue}
 
 Groei gaat niet alleen over meer klanten. Het gaat ook over meer inkomsten per klant.
 
-### Bestaande klanten up-sellen
+### Bestaande klanten up-sellen {#upselling-existing-customers}
 
 - **Planupgrades**: Gerichte campagnes die Growth/Pro functies tonen aan Starter-klanten
 - **Order bumps**: Promoot add-on producten aan bestaande klanten via e-mail
 - **Jaarlijkse conversie**: Bied maandelijkse klanten een korting om over te stappen naar jaarlijkse facturering
 
-### Nieuwe inkomstenstromen
+### Nieuwe inkomstenstromen {#new-revenue-streams}
 
 - **'Done-for-you' setup**: Vraag een premium bedrag om de site van een klant voor hen in te richten en te personaliseren
 - **Maatwerk ontwerpservices**: Bied bespoke ontwerpproducten bovenop het template aan
 - **Trainingssessies**: Betaalde één-op-één walkthroughs voor klanten die hands-on hulp willen
 - **Premium plugins**: Bied niche-specifieke premium plugins aan als betaalde add-ons (bijv. een widget voor fitnesslesboeking)
 
-### Prijsverhoging
+### Prijsverhoging {#raising-prices}
 
 Naarmate je platform volwassen wordt en meer waarde toevoegt:
 
@@ -118,7 +118,7 @@ Naarmate je platform volwassen wordt en meer waarde toevoegt:
 - Verhoog de prijzen voor nieuwe aanmeldingen
 - Rechtvaardig de verhogingen met nieuwe functies en verbeteringen
 
-## Een team opbouwen
+## Een team opbouwen {#building-a-team}
 
 Op een gegeven moment kun je niet alles alleen doen. Veelvoorkomende eerste aanwervingen:
 
@@ -128,7 +128,7 @@ Op een gegeven moment kun je niet alles alleen doen. Veelvoorkomende eerste aanw
 
 Je hebt geen werknemers nodig. Contractanten en freelancers werken goed voor een platformbedrijf.
 
-## Groeimijlpalen
+## Groeimijlpalen {#growth-milestones}
 
 | Mijlpaal | Geschatte MRR | Focus |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ Je hebt geen werknemers nodig. Contractanten en freelancers werken goed voor een
 | 250-500 klanten | $25.000-$50.000 | Teamopbouw, nieuwe inkomstenstromen, premium functies |
 | 500+ klanten | $50.000+ | Platformvolwassenheid, aangrenzende niches, potentiële exit |
 
-## Wat we in deze les hebben geleerd
+## Wat we in deze les hebben geleerd {#what-we-built-this-lesson}
 
 - **Een metriekenkader** om de gezondheid van het bedrijf te begrijpen
 - **Een infrastructuurplan voor opschaling** van tientallen naar honderden sites

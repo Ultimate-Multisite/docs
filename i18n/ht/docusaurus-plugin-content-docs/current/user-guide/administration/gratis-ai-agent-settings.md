@@ -1,105 +1,152 @@
 ---
-title: Règleman AI Agent Paramètres gratis
+title: Anviwònman Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Paramètres de l'Agent IA Gratuit
+# Gratis AI Agent Anviwònman {#gratis-ai-agent-settings}
 
-L'écran **Paramètres → Avancé** dans Gratis AI Agent offre une configuration de niveau administrateur pour les intégrations backend introduites dans la version v1.5.0. Cette page documente les champs du **Feedback Endpoint** et leur format attendu.
+Ekran **Settings → Advanced** nan Gratis AI Agent bay konfigirasyon nivo administratè pou entegrasyon backend yo. Paj sa a dokimante voye feedback, kle founisè rechèch, konfigirasyon sèvis Superdav jere, kontwòl Google Calendar, anviwònman SMS TextBee, ak drapo fonksyonalite pou tout rezo a.
 
-## Accéder aux Paramètres
+## Aksede Anviwònman yo {#accessing-settings}
 
-1. Dans l'administration WordPress, allez à **Gratis AI Agent → Paramètres**.
-2. Cliquez sur l'onglet **Avancé**.
+1. Nan admin WordPress la, ale nan **Gratis AI Agent → Settings**.
+2. Klike sou onglet **Advanced** la.
 
-## Configuration du Feedback Endpoint
+## Konfigirasyon Endpoint Feedback {#feedback-endpoint-configuration}
 
-Le feedback endpoint reçoit des requêtes POST de l'agent IA chaque fois qu'un utilisateur soumet un commentaire via le bouton pouce vers le bas, la bannière d'auto-invite ou la commande `/report-issue`.
+Endpoint feedback la resevwa demann POST soti nan ajan AI a chak fwa yon itilizatè soumèt feedback atravè bouton pous-anba a, banyè auto-prompt la, oswa kòmand `/report-issue` la.
 
-| Champ | Description |
+| Chan | Deskripsyon |
 |---|---|
-| **Feedback Endpoint URL** | L'URL qui reçoit les soumissions de commentaires en tant que requêtes HTTP POST avec un corps JSON. |
-| **Feedback API Key** | Un jeton bearer envoyé dans l'en-tête `Authorization` de chaque requête de feedback. Laissez vide si votre endpoint ne nécessite pas d'authentification. |
+| **Feedback Endpoint URL** | URL ki resevwa soumisyon feedback yo kòm demann HTTP POST ak yon kò JSON. |
+| **Feedback API Key** | Yon bearer token ki voye nan `Authorization` header chak demann feedback. Kite vid si endpoint ou a pa mande otantifikasyon. |
 
-### Charge Utile Attendue (JSON Payload)
+### Payload JSON ki Atann {#expected-json-payload}
 
-Votre feedback endpoint doit accepter un corps JSON avec au moins les champs suivants :
+Endpoint feedback ou a dwe aksepte yon kò JSON ak omwen chan sa yo:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "La réponse était incorrecte concernant les prix.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Des champs supplémentaires peuvent être présents dans la charge utile en fonction du contexte de la conversation.
+Chan adisyonèl ka prezan nan payload la selon kontèks konvèsasyon an.
 
-### Valeurs de `triage_category`
+### Valè `triage_category` {#triagecategory-values}
 
-La couche de triage de l'IA attribue l'une des valeurs suivantes à `triage_category` avant de transmettre la charge utile :
+Kouch triage AI a bay youn nan valè sa yo pou `triage_category` anvan li voye payload la:
 
-| Valeur | Signification |
+| Valè | Siyifikasyon |
 |---|---|
-| `factual_error` | L'assistant a fourni une information factuelle incorrecte. |
-| `unhelpful_answer` | La réponse était techniquement correcte mais pas utile. |
-| `inappropriate_content` | La réponse contenait un contenu qui ne devrait pas être montré aux utilisateurs. |
-| `other` | Le commentaire ne correspondait à aucune catégorie connue. |
+| `factual_error` | Asistan an te bay enfòmasyon faktik ki pa kòrèk. |
+| `unhelpful_answer` | Repons lan te teknikman kòrèk men li pa t itil. |
+| `inappropriate_content` | Repons lan te gen kontni ki pa ta dwe montre itilizatè yo. |
+| `other` | Feedback la pa t koresponn ak yon kategori li konnen. |
 
-### Authentification
+### Otantifikasyon {#authentication}
 
-Si ou nivo endpoint la mande yon autentifikasyon, mete valè **Feedback API Key** a token bearer ou an. Agant la voye:
+Si endpoint ou a mande otantifikasyon, mete chan **Feedback API Key** la ak bearer token ou. Ajan an voye:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Si valè **Feedback API Key** la vid, pa gen okenn `Authorization` header k ap voye.
+Si chan **Feedback API Key** la vid, yo pa voye okenn `Authorization` header.
 
-### Desaktive Koleksyon Feedback
+### Dezaktive Koleksyon Feedback {#disabling-feedback-collection}
 
-Lèt tou de **Feedback Endpoint URL** ak **Feedback API Key** yo vid. Bouton thumbs-down la ak UI feedback la rete vizib pou itilizatè yo, men soumission yo pa telechaje nan okenn sèvis eksteryè.
+Kite toude chan **Feedback Endpoint URL** ak **Feedback API Key** yo vid. Bouton pous-anba a ak UI feedback la rete vizib pou itilizatè yo, men soumisyon yo pa voye bay okenn sèvis ekstèn.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Sou tab **Advanced** la tou, valè **Brave Search API Key** la k ap aktive kapasite [Internet Search](../configuration/internet-search).
+Epitou sou onglet **Advanced** la, chan **Brave Search API Key** la aktive kapasite [Rechèch Entènèt](../configuration/internet-search) la.
 
-| Field | Description |
+| Chan | Deskripsyon |
 |---|---|
-| **Brave Search API Key** | API key ou a soti nan dashboard devlopè Brave Search. Li nesesè pou aktive internet search nan asistan AI la. |
+| **Brave Search API Key** | Kle API ou soti nan dashboard devlopè Brave Search la. Obligatwa pou aktive rechèch entènèt nan asistan AI a. |
 
-Etikèt l gen yon link klike ki mennen nan paj enskripsyon API Brave Search. Kite li vid pou desaktive internet search la.
+Etikèt chan an gen ladan yon lyen ou ka klike pou ale nan paj enskripsyon Brave Search API a. Kite vid pou dezaktive rechèch entènèt.
 
-Gade [Internet Search](../configuration/internet-search) pou dokiman itilizatè sou fonksyon sa a.
+Gade [Rechèch Entènèt](../configuration/internet-search) pou dokimantasyon itilizatè final sou fonksyonalite sa a.
 
-## Feature Flags
+## Sèvis Superdav Jere {#managed-superdav-service}
 
-Toujou antre nan v1.9.0, tab **Settings → Feature Flags** la bay switch yo pou fonksyonalite opsyonèl. Chak flag se ki aktif oswa desaktive tout rezo a; pa gen okenn override pèsite sit la kounye a.
+Superdav AI Agent v1.18.0 ajoute endpoint sèvis Superdav jere ak pwovizyònman koneksyon otomatik pou sit ki sipòte yo. Sèvi ak kontwòl sa yo lè sit ou a ta dwe konekte ak founisè òganize a olye de yon endpoint sèvis ki konfigire manyèlman.
 
-### Akses nan Feature Flags
+| Chan | Deskripsyon |
+|---|---|
+| **Managed Superdav Service** | Aktive koneksyon sèvis Superdav òganize a pou sit ki sipòte yo. |
+| **Provision Connection** | Kòmanse pwovizyònman otomatik endpoint ak idantifyan. Sèvi ak sa apre ou fin konfime sit la ta dwe sèvi ak founisè jere a. |
+| **Service Endpoint / Connection Status** | Montre endpoint aktyèl la oswa eta koneksyon an apre pwovizyònman. |
 
-1. Nan admin WordPress, ale **Gratis AI Agent → Settings**.
-2. Klike sou tab **Feature Flags**.
+Apre pwovizyònman, sove anviwònman yo epi verifye eta koneksyon an anvan ou konte sou workflow sèvis jere yo. Si pwovizyònman echwe, revize gid rekòmanse ki parèt la epi konfime sit la gen pèmisyon pou sèvi ak founisè òganize a.
 
-### Access Control Flags
+## Konfigirasyon Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Deskripsyon |
+Lè fonksyonalite kalandriye Superdav AI Agent v1.18.0 yo aktive, ajan an ka li kalandriye ki konfigire yo ak detay evènman yo. Zouti kalandriye yo oryante pou lekti epi yo itil pou rapèl ki konsyan de orè, swivi patisipan, ak matche kontak.
+
+| Chan | Deskripsyon |
+|---|---|
+| **Google Calendar Credentials** | Sere idantifyan oswa koneksyon token ki nesesè pou li done kalandriye. |
+| **Calendar Selection** | Limite ki kalandriye ki konfigire ajan an ka enspekte. |
+| **Calendar Connection Status** | Konfime si idantifyan aktyèl yo ka li kalandriye ak evènman. |
+
+Kenbe idantifyan kalandriye yo limite ak kalandriye ajan an bezwen yo. Rekonekte oswa wotasyon idantifyan yo si eta a endike yon token ki ekspire.
+
+## Notifikasyon SMS TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 ajoute TextBee kòm yon founisè SMS pou workflow notifikasyon ki konfigire yo. Notifikasyon SMS yo ta dwe makonnen ak baryè apwobasyon imen pou mesaj sansib oswa mesaj ki vizib pou itilizatè yo.
+
+| Chan | Deskripsyon |
+|---|---|
+| **TextBee API Key** | Otantifye demann yo bay founisè SMS TextBee a. |
+| **TextBee Device / Sender** | Chwazi ekspeditè oswa aparèy TextBee yo itilize pou mesaj k ap soti yo, lè founisè a mande sa. |
+| **SMS Notifications Enabled** | Pèmèt workflow ki apwouve yo voye notifikasyon mesaj tèks. Kite dezaktive pou anpeche voye SMS. |
+
+Voye yon mesaj tès sèlman bay yon nimewo ki pou yon administratè, apre sa konfime konpòtman baryè apwobasyon an anvan ou aktive rapèl pwograme oswa rapèl ki vizib pou patisipan yo.
+
+## Drapo Fonksyonalite {#feature-flags}
+
+Yo te entwodui li tou nan v1.9.0, onglet **Settings → Feature Flags** la bay bouton baskil pou fonksyonalite opsyonèl. Chak drapo swa aktive swa dezaktive pou tout rezo a; pa gen okenn ranplasman pou chak sit nan moman sa a.
+
+### Aksede Drapo Fonksyonalite yo {#accessing-feature-flags}
+
+1. Nan admin WordPress la, ale nan **Gratis AI Agent → Settings**.
+2. Klike sou onglet **Feature Flags** la.
+
+### Drapo Kontwòl Aksè {#access-control-flags}
+
+| Drapo | Defo | Deskripsyon |
 |---|---|---|
-| **Restreigni pou Administrateur yo** | Off | Lè ou active sa, sèl itilizat ki gen wòl `administrator` ka ouvri panel chat AI Agent la. Tout lòt wòl ap wè yon mesaj "Kontakte administrateur ou". |
-| **Restreigni pou Admin Rezo a** | Off | Lè li aktive sou rezo multisite, sèl Super Admins yo ka itilize agent la. Admin sit endividyèl yo bloke. Li pran plis enpòtans pase "Restreigni pou Administrateur yo" si toude yo active. |
-| **Permet Akses Subscriber** | Off | Lè li aktive, itilizat ki gen wòl `subscriber` ka itilize entèfas chat la men yo limite a kapasite li li sèlman (pa ka kreye pòs oswa chanje tout bagay). |
-| **Dezactive pou Non-Membre** | Off | Li konekte ak statistik manm Ultimate Multisite. Lè li aktive, chat la rete kache pou sit ki pa gen yon manm aktif. |
+| **Limite pou Administratè** | Off | Lè li aktive, sèlman itilizatè ki gen wòl `administrator` la ka ouvri panèl chat AI Agent lan. Tout lòt wòl yo wè yon mesaj "Kontakte administratè ou" pito. |
+| **Limite pou Admin Rezo** | Off | Lè li aktive sou yon rezo multisite, sèlman Super Admins ka itilize ajan an. Admin sit endividyèl yo bloke. Sa gen priyorite sou "Limite pou Administratè" si toude aktive. |
+| **Pèmèt Aksè Abòne** | Off | Lè li aktive, itilizatè ki gen wòl `subscriber` la ka itilize koòdone chat la men yo limite ak kapasite lekti-sèlman (pa gen kreyasyon pòs oswa chanjman paramèt). |
+| **Dezaktive pou Moun ki Pa Manm** | Off | Entegre ak estati manm Ultimate Multisite. Lè li aktive, chat la kache pou sit ki pa gen yon manm aktif. |
 
-### Flag Branding (Branding Flags)
+### Drapo Mak {#branding-flags}
 
-| Flag | Default | Deskripsyon |
+| Drapo | Defo | Deskripsyon |
 |---|---|---|
-| **Kache "Powered by Gratis AI Agent" Footer** | Off | Retire liy atribisyon branding ki montre anba widget chat la. Li rekòmande pou deplwaman ki gen yon label ou pwòp (white-label). |
-| **Non Agent Koutim** | *(vide)* | Li ranplase etiket "Gratis AI Agent" de default nan tèt chat la ak mennu admin la ak non pwòp pwodwi ou. Kite li vide pou itilize default la. |
-| **Kache Choix Agent la** | Off | Lè li aktive, itilizat pa ka chanje ant twa agent inite yo ki vini avan. Agent kounye a rete fiks sou sa k ap configure kòm default nan Settings → General. |
-| **Itilize Ikon Sit la Kòm Avatar Chat la** | Off | Li ranplase ikon AI de default nan tèt widget chat la ak ikon sit WordPress la (configure anba Appearance → Customize → Site Identity). |
+| **Kache Pye Paj "Powered by Gratis AI Agent"** | Off | Retire liy atribisyon mak la ki parèt anba widget chat la. Rekòmande pou deplwaman white-label. |
+| **Non Ajan Pèsonalize** | *(vid)* | Ranplase etikèt defo "Gratis AI Agent" la nan antèt chat la ak meni admin lan ak pwòp non pwodwi ou. Kite vid pou itilize defo a. |
+| **Kache Chwazi Ajan an** | Off | Lè li aktive, itilizatè yo pa ka chanje ant senk ajan entegre yo. Ajan aktyèl la fikse sou sa ki konfigire kòm defo nan Settings → General. |
+| **Itilize Ikòn Sit kòm Avatar Chat** | Off | Ranplase ikòn AI defo a nan antèt widget chat la ak ikòn sit WordPress la (mete anba Appearance → Customize → Site Identity). |
 
-### Aplike Chanjman yo
+### Drapo Sekirite Otomatik {#automation-safety-flags}
 
-Klike sou **Save Settings** apre ou fin chanje nenpòt flag. Chanjman yo ap mache imedyatman — pa gen okenn netwayaj cache oswa reaktive plugin ki nesesè.
+Superdav AI Agent v1.18.0 prezante baryè apwobasyon moun ak dosye rapèl pou ekzekisyon otomatik ki pi an sekirite. Kontwòl sa yo ka parèt nan drapo fonksyon yo oswa paramèt otomatik avanse yo, selon pake ki enstale a.
+
+| Drapo | Defo | Deskripsyon |
+|---|---|---|
+| **Mande Apwobasyon Moun** | Rekòmande aktive | Mete otomatik sansib yo an poz jiskaske yon itilizatè otorize revize epi konfime aksyon yo pwopoze a. |
+| **Dediplikasyon Rapèl** | On | Anrejistre rapèl ki voye yo pou tantativ ankò oswa ekzekisyon pwograme yo pa voye notifikasyon doub. |
+| **Aktive Zouti Kalandriye** | Off jiskaske li konfigire | Pèmèt ajan an li kalandriye ak evènman Google ki konfigire yo. |
+| **Aktive Notifikasyon SMS** | Off jiskaske li konfigire | Pèmèt workflows apwouve yo voye notifikasyon SMS TextBee apre kalifikasyon yo sove. |
+
+### Aplike Chanjman yo {#applying-changes}
+
+Klike **Save Settings** apre ou chanje nenpòt drapo. Chanjman yo pran efè imedyatman — pa bezwen vide kach oswa reyaktive plugin.

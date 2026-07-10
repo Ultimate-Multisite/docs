@@ -3,17 +3,17 @@ title: Integrasi GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integrasi GridPane
+# Integrasi GridPane {#gridpane-integration}
 
-## Ringkasan
+## Ringkasan {#overview}
 GridPane adalah control panel hosting WordPress khusus yang dibuat untuk para profesional WordPress. Integrasi ini memungkinkan sinkronisasi domain otomatis dan pengelolaan sertifikat SSL antara Ultimate Multisite dan GridPane.
 
-## Fitur
+## Fitur {#features}
 - Sinkronisasi domain otomatis
 - Pengelolaan sertifikat SSL
 - Konfigurasi otomatis konstanta SUNRISE
 
-## Persyaratan
+## Persyaratan {#requirements}
 Konstanta berikut harus didefinisikan di file `wp-config.php` Anda:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Panduan Pengaturan
+## Panduan Pengaturan {#setup-instructions}
 
-### 1. Dapatkan Kredensial API GridPane Anda
+### 1. Dapatkan Kredensial API GridPane Anda {#1-get-your-gridpane-api-credentials}
 
 1. Masuk ke dashboard GridPane Anda
 2. Buka "Settings" > "API"
 3. Buat API key jika Anda belum memilikinya
 4. Salin API key Anda
 
-### 2. Dapatkan Server ID dan Site ID Anda
+### 2. Dapatkan Server ID dan Site ID Anda {#2-get-your-server-and-site-ids}
 
 1. Di dashboard GridPane Anda, buka "Servers"
 2. Pilih server tempat WordPress multisite Anda di-hosting
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Buka "Sites" dan pilih situs WordPress Anda
 5. Catat Site ID (terlihat di URL atau di halaman detail situs)
 
-### 3. Tambahkan Konstanta ke wp-config.php
+### 3. Tambahkan Konstanta ke wp-config.php {#3-add-constants-to-wp-configphp}
 
 Tambahkan konstanta berikut ke file `wp-config.php` Anda:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Aktifkan Integrasi
+### 4. Aktifkan Integrasi {#4-enable-the-integration}
 
 1. Di admin WordPress Anda, buka Ultimate Multisite > Settings
 2. Navigasi ke tab "Domain Mapping"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Aktifkan integrasi GridPane
 5. Klik "Save Changes"
 
-## Cara Kerjanya
+## Cara Kerjanya {#how-it-works}
 
 Ketika sebuah domain dipetakan di Ultimate Multisite:
 
@@ -69,23 +69,23 @@ Ketika sebuah domain dipetakan di Ultimate Multisite:
 
 Integrasi ini juga secara otomatis menangani konstanta SUNRISE di file wp-config.php Anda, yang diperlukan agar pemetaan domain dapat berfungsi dengan benar.
 
-## Pengelolaan Konstanta SUNRISE
+## Pengelolaan Konstanta SUNRISE {#sunrise-constant-management}
 
 Salah satu fitur unik dari integrasi GridPane adalah secara otomatis mengembalikan konstanta SUNRISE di wp-config.php untuk mencegah konflik dengan sistem pemetaan domain milik GridPane. Ini memastikan kedua sistem dapat bekerja bersama tanpa masalah.
 
-## Pemecahan Masalah
+## Pemecahan Masalah {#troubleshooting}
 
-### Masalah Koneksi API
+### Masalah Koneksi API {#api-connection-issues}
 - Pastikan API key Anda sudah benar
 - Periksa apakah server ID dan site ID Anda sudah benar
 - Pastikan akun GridPane Anda memiliki izin yang diperlukan
 
-### Masalah Sertifikat SSL
+### Masalah Sertifikat SSL {#ssl-certificate-issues}
 - GridPane mungkin membutuhkan waktu untuk menerbitkan sertifikat SSL
 - Pastikan domain Anda sudah mengarah dengan benar ke alamat IP server Anda
 - Periksa pengaturan SSL GridPane untuk situs Anda
 
-### Domain Tidak Ditambahkan
+### Domain Tidak Ditambahkan {#domain-not-added}
 - Periksa log Ultimate Multisite untuk melihat pesan error
 - Pastikan domain tersebut belum ditambahkan ke GridPane
 - Pastikan record DNS domain Anda sudah dikonfigurasi dengan benar

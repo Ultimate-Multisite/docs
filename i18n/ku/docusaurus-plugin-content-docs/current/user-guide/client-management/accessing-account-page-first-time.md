@@ -3,7 +3,7 @@ title: گرتاندنە بۆ لاپەڕەی خشتەکەت
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# چۆن دەتوانم بۆ یەکەم جار سەرچاوەی تایبەتی خۆم ببینم؟
+# چۆن دەتوانم بۆ یەکەم جار سەرچاوەی تایبەتی خۆم ببینم؟ {#how-can-i-access-my-account-page-for-the-first-time}
 
 بەخێربێن بۆ Ultimate Multisite!
 

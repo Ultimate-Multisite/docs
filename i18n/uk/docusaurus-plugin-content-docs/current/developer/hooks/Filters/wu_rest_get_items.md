@@ -4,11 +4,11 @@ title: Фільтр - wu_rest_get_items
 sidebar_label: wu_rest_get_items
 _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 ---
-# Фільтр: wu_rest_get_items
+# Фільтр: wu_rest_get_items {#filter-wurestgetitems}
 
 Фільтрує, чи дозволено продовжувати обробку запиту чи ні.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: cc7851a8307ce40de0b75fc0d9d50693
 | $rest_base | `array` | Слаг сутності. |
 | $this | `\Base_Manager` | Екземпляр об'єкта. |
 
-### Зверніть увагу
+### Зверніть увагу {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L336) на рядку 336

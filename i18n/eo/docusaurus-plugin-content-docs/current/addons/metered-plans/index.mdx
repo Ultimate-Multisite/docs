@@ -1,0 +1,117 @@
+---
+title: Laŭuzaj planoj
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Mezuritaj Planoj {#metered-plans}
+
+La aldonaĵo de Ultimate Multisite: Mezuritaj Planoj transformas kiel vi fakturas viajn klientojn per enkonduko de flekseblaj mezuritaj fakturaj kapabloj. Anstataŭ rigidaj absolutaj limoj, kiuj blokas uzantojn kiam ili estas superitaj, ebligu superuzajn ŝargojn, kiuj aŭtomate fakturas klientojn por aldona uzado.
+
+## Ĉefaj Trajtoj {#key-features}
+
+* **Mezurita Fakturado**: Ŝargu klientojn laŭ efektiva uzado anstataŭ fiksitaj niveloj
+* **Administrado de Superuzo**: Aŭtomate fakturu por uzado superanta planajn limojn
+* **Spurado de Uzado**: Monitoru klientan konsumon de rimedoj en reala tempo
+* **Fleksebla Prezigado**: Agordu proprajn tarifojn por malsamaj rimedoj (stokado, bendolarĝo, retejoj, ktp.)
+* **Fakturado de AI Tokenoj**: Spuru kaj fakturu enigajn kaj eligajn tokenojn por AI-uzado tra klientaj subretejoj
+* **Aŭtomata Fakturado**: Generu fakturojn aŭtomate kiam uzadaj sojloj estas superitaj
+* **Raportoj pri Uzado**: Detalaj analizoj kaj raportado pri uzado por klientoj kaj administrantoj
+
+## Perfekta Por {#perfect-for}
+
+* **Gastigaj Provizantoj**: Proponu skaleblajn planojn, kiuj kreskas laŭ klientaj bezonoj
+* **SaaS-Platformoj**: Fakturu laŭ efektiva konsumo de rimedoj
+* **Agentejaj Retoj**: Flekseblaj prezaj modeloj por klientaj projektoj
+* **Revenda Gastigado**: Ebligu al partneroj proponi uzad-bazitan prezigadon
+
+## Kiel Ĝi Funkcias {#how-it-works}
+
+1. Agordu mezuritajn rimedojn (diskspaco, bendolarĝo, nombro de retejoj, ktp.)
+2. Agordu bazajn planlimojn kaj superuzajn tarifojn
+3. La sistemo aŭtomate spuras uzadon tra via reto
+4. Kiam klientoj superas limojn, superuzaj ŝargoj estas kalkulitaj
+5. Fakturoj estas generitaj aŭtomate laŭ fakturada ciklo
+6. Klientoj povas vidi sian uzadon kaj venontajn ŝargojn en reala tempo
+
+## Fakturado de AI Tokenoj {#ai-token-billing}
+
+Versio 1.1.0 aldonas fakturadon de AI tokenoj por retoj, kiuj proponas AI-trajtojn per la WordPress AI Client SDK. Mezuritaj Planoj aŭskultas pri finitaj AI-generadaj petoj, registras nombrojn de enigaj kaj eligaj tokenoj por la nuna subretejo, kaj konvertas tiujn tokenojn en faktureblan AI-elspezon por la nuna fakturada periodo de la kliento.
+
+Uzu fakturadon de AI tokenoj kiam vi volas proponi AI-ilojn en klientaj retejoj sen sorbi neantaŭvideblajn modelkostojn. Ĉiu peto estas atribuita al la subretejo, kliento, membreco, provizanto kaj modelo, tiel ke administrantoj povas kontroli uzadon dum klientoj povas vidi kiel ilia AI-konsumo influas ilian Account.
+
+### Agordi Tarifojn por Ĉiu Tokeno {#configure-per-token-rates}
+
+AI-tarifoj estas agorditaj laŭ modelo kiel apartaj enigaj kaj eligaj tarifoj. Tarifoj estas kalkulitaj po 1 miliono da tokenoj, kio kongruas kun oftaj prezpaĝoj de AI-provizantoj.
+
+1. En la reta administrejo, malfermu **Multisite Ultimate → Agordoj → Mezuritaj Planoj**.
+2. Ebligu mezuradon de AI-elspezo por la produkto aŭ membreco, kiu devus fakturi AI-uzadon.
+3. Aldonu modeltarifajn enirojn uzante la modelajn ID-ojn redonitajn de via konektilo, kiel `gpt-4o`, `gpt-4o-mini`, aŭ alian OpenAI-kongruan modelidentigilon.
+4. Enigu apartajn valorojn por **Eniga Tarifo** kaj **Eliga Tarifo** en la valuto de via retejo po 1 miliono da tokenoj.
+5. Agordu la inkluzivitan AI-elspezan permeson de la kliento kaj superuzan konduton por la plano.
+
+Kiam preciza modela ID ne estas agordita, Mezuritaj Planoj povas kongrui laŭ modela prefikso. Ekzemple, tarifo agordita por `claude-sonnet-4` povas aplikiĝi al tempomarkitaj modelaj ID-oj, kiuj komenciĝas per tiu prefikso. Programistoj ankaŭ povas ĝustigi la finan tariftabelon per la [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtrilo.
+
+### Subtenataj AI-Konektiloj {#supported-ai-connectors}
+
+Fakturado de AI tokenoj funkcias kun konektiloj, kiuj elsendas generadajn eventojn de WordPress AI Client SDK kaj inkluzivas tokenan uzadon en la respondaj metadatumoj. Ĉi tio inkluzivas la familion de AI-konektiloj de Ultimate Multisite dokumentitan ĉi tie:
+
+* [Ultimate AI-Konektilo por Kongruaj Endpointoj](../ultimate-ai-connector-compatible-endpoints/) por OpenAI-kongruaj API-oj, inkluzive de OpenAI, Mistral, Ollama-kongruaj enirejoj, kaj aliaj provizantoj, kiuj elmontras kongruajn metadatumojn pri tokena uzado
+* [Ultimate AI-Konektilo por WebLLM](../ultimate-ai-connector-webllm/) por retumile indiĝena WebLLM-uzado kiam petoj estas direktitaj tra la eventa fluo de AI Client SDK
+* AI-provizantaj konektiloj uzataj de [Gratis AI Agent](../gratis-ai-agent/) kiam la elektita provizanto raportas nombrojn de promptaj kaj kompletigaj tokenoj tra la SDK
+
+Propraj konektiloj povas partopreni per ekigo de la normaj eventoj `wp_ai_client_before_generate_result` kaj `wp_ai_client_after_generate_result` kun metadatumoj pri modelo, provizanto kaj tokena uzado. Konektilaj agordoj estas devigitaj de la ĉefa retejo al subretejoj, tiel ke klientaj retejoj uzas la ret-aprobitajn provizantojn kaj limojn.
+
+### Uzado en Klienta Account {#customer-account-usage}
+
+Klientoj vidas AI-uzadon kune kun siaj aliaj mezuritaj rimedoj en sia Account-areo. La vico pri AI-elspezo montras la totalon de la nuna fakturada periodo derivitan el registritaj promptaj kaj kompletigaj tokenoj, la agorditaj modeltarifoj, kaj ajna inkluzivita permeso en la plano.
+
+Se kliento havas pagmetodon registritan, uzado super la inkluzivita permeso estas traktata kiel fakturebla superuzo. Se la plano estas agordita por absoluta ĉesigo kaj la kliento ne havas disponeblan pagmetodon, AI-petoj povas esti blokitaj post kiam la permeso estas atingita kaj la kliento estas instigita aldoni pagodetalojn antaŭ ol daŭrigi.
+
+## Subtenataj Rimedoj {#supported-resources}
+
+* Diska stokado
+* Bendolarĝo/Datuma transdono
+* Nombro de retejoj
+* Nombro de uzantoj
+* Uzado de AI tokenoj kaj AI-elspezo
+* Propraj rimedotipoj
+
+## Postuloj {#requirements}
+
+* Multisite Ultimate 2.0.0 aŭ pli alta
+* WordPress Multisite-instalaĵo
+* PHP 7.4 aŭ pli alta
+
+## Instalado {#installation}
+
+1. Alŝutu la plugin-dosierojn al `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivigu la plugin per la ekrano 'Plugins' en WordPress
+3. Iru al Multisite Ultimate → Agordoj → Mezuritaj Planoj
+4. Agordu viajn mezuritajn rimedojn kaj prezigadon
+5. Ebligu mezuritan fakturadon por produktoj en la produkta redaktilo
+
+## Oftaj Demandoj {#frequently-asked-questions}
+
+## Kio okazas kiam kliento superas sian limon? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Anstataŭ bloki aliron, la sistemo spuras la superuzon kaj aldonas ĝin al ilia sekva fakturo laŭ la tarifoj, kiujn vi agordis.
+
+## Ĉu mi povas agordi malsamajn superuzajn tarifojn por malsamaj produktoj? {#can-i-set-different-overage-rates-for-different-products}
+
+Jes, ĉiu produkto povas havi unikajn mezuritajn rimedojn kaj superuzan prezadon.
+
+## Kiel klientoj estas sciigataj pri uzo? {#how-are-customers-notified-about-usage}
+
+Klientoj povas vidi sian aktualan uzon en sia Dashboard kaj ricevi laŭvolajn sciigojn kiam ili alproksimiĝas al aŭ superas limojn.
+
+## Kiel estas prezata uzo de AI-tokenoj? {#how-is-ai-token-usage-priced}
+
+Uzo de AI-tokenoj estas prezata laŭ la agorditaj eniraj kaj eliraj tarifoj de la modelo por 1 miliono da tokenoj. Mezuritaj Planoj multiplikas la nombron de promptaj kaj kompletigaj tokenoj de ĉiu peto per tiuj tarifoj, aldonas la rezulton al la aktuala AI-elspezo de la kliento por la faktura periodo, kaj aplikas la inkluzivon aŭ superuzajn regulojn de la plano.
+
+## Ĉu mi ankoraŭ povas uzi striktajn limojn? {#can-i-still-use-hard-limits}
+
+Jes, mezurita fakturado estas laŭvola por ĉiu produkto. Vi povas miksi tradiciajn produktojn kun striktaj limoj kun mezuritaj produktoj.

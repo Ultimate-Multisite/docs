@@ -3,11 +3,11 @@ title: Espirienza tal Membership u Blokkazzjoni tal Sito
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Espirament tal Membership u Bloccjiet tal Sito
+# Espirament tal Membership u Bloccjiet tal Sito {#membership-expiration-and-site-blocking}
 
 Dan li guida tispjega kif jidiex l-Ultimate Multisite idirix il-espirament tal membership, il-finiti tal trial u il-bloccjiet tal frontend tal sito. Tispjega l-ciclu tal membership min aktiva għal espirata, il-setting li kontrollaw jew siti jiddukkju, u x'la tfittex meta siti jiddukkju biex jipprovvdu l-membership.
 
-## Ciclu tal-Status tal-Membership
+## Ciclu tal-Status tal-Membership {#membership-status-lifecycle}
 
 Kull membership f Ultimate Multisite għandu waħda minn il-status dejjem:
 
@@ -24,7 +24,7 @@ Il-membershipijiet free ma jiddukkju awtomatik. Ultimate Multisite jidirhom bħa
 | **Expired** | Jiddukkju d-dettal tal-espirament u perjodu għall-għajnuna biex ma jkunx rinewwizzat |
 | **Cancelled** | Jiddukkju esplicitament minn l-customer jew madministratore |
 
-### Come t-Transitiona il-Membershipijiet għal Expired
+### Come t-Transitiona il-Membershipijiet għal Expired {#how-memberships-transition-to-expired}
 
 Ultimate Multisite jikkontrolla is-check tal-background **kull ora** li jipprovvdi biex jfiltri l-membershipijiet li għandhom jiġu marrati bħala espirati. Dan is-check jiddefinisji bi [Action Scheduler](https://actionscheduler.org/) (ma qed jiddefinisji WP-Cron direttament) u jtorrqa bħala l-action skedulata `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Il-check tal-espirament għandu **perjodu għall-għajnuna (grace period) mhux m
 Il-period ta grazzja tal-espirazzjoni ta 3 jurnat huwa separatu mill-setting tal-grace period tal-Frontend Block li descritti aħna. Il-period ta grazzja tal-espirazzjoni jipprogramu meta **tġiegħed il status** min attiv/on-hold għal espirazzjonijiet. Il-grace period tal-frontend block jipprogramu meta **il-site jitbloka** wara li il-status jgħadd.
 :::
 
-#### Membershipi Li Jiddehnju Minħabba l-Auto-Renewal vs. Li Ma Jiddehnju
+#### Membershipi Li Jiddehnju Minħabba l-Auto-Renewal vs. Li Ma Jiddehnju {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Dan l-distinzi għandu jkun kritiku biex tfitteh kif tistabbilixxi l-behavior tal-espirazzjoni:
 
@@ -42,7 +42,7 @@ Dan l-distinzi għandu jkun kritiku biex tfitteh kif tistabbilixxi l-behavior ta
 
 - **Membershipi li jiddehnju minħabba l-auto-renewal** (`auto_renew = true`): Il-check tal-espirazzjoni tal-cron **jikkawża għalihom kollha**. Il-payment gateway (Stripe, PayPal, ecc.) huwa kunsiddirr jgħin li jgħatti Ultimate Multisite per id-webhook meta tħalli sħubskrizzjoni jew tit-tella. Jekk il-webhook ma jirċievi -- min dovument miskonfigurat b'mod xlepp, uġigħda tal-gateway, jew sħubskrizzjoni tit-tella ewpaċċati sistema -- l-membership tista' tkun `active` għal ħin ininterrobbili meta d-data tal-espirazzjoni jittla.
 
-### Come Ttira il-Trials (Periodi Tal-Test)
+### Come Ttira il-Trials (Periodi Tal-Test) {#how-trials-end}
 
 Meta jmur il-period tal-trial ta membership trialing, is-sistema:
 
@@ -52,11 +52,11 @@ Meta jmur il-period tal-trial ta membership trialing, is-sistema:
 
 Dan il-proċess jmur fuq is-skedjolu hourly isiemaw b'mod isiemaw l-check tal-espirazzjoni regolari, iżda **ghola għal membershipi li ma jiddehnju minħabba l-auto-renewal**. Għal trials li jiddehnju minħabba l-auto-renewal, il-payment gateway huwa li jgħatti it-trasizzjoni min trial għasubskrizzjoni pagata.
 
-## Blokk Access Frontend
+## Blokk Access Frontend {#block-frontend-access}
 
 בי default, כאשר членות (memberships) משתלמות או נכנסות בהשהיה, **רק לוח הבקרה של wp-admin** מוגבל. ה-frontend הציבורי של האתר נשאר נגיש לכל המבקרים. כדי לחסום גם את הגישה הציבורית, עליך להפעיל את ההגדרה **Block Frontend Access**.
 
-### הגדרת ההגדרה
+### הגדרת ההגדרה {#configuring-the-setting}
 
 נווט אל **Ultimate Multisite > Settings > Memberships** והפעל את **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Dan il-proċess jmur fuq is-skedjolu hourly isiemaw b'mod isiemaw l-check tal-es
 | **Frontend Block Grace Period** | מספר הימים שצריך לחכות לאחר שהחברות לא פעילה לפני החסימה. הגדר ל-`0` כדי לחסום מיד. | 0 |
 | **Frontend Block Page** | דף באתר הראשי שאליו מפנים את המבקרים כאשר אתר נחסם. אם לא מוגדר, המבקרים רואים הודעה כללית "האתר אינו זמין כרגע" עם קישור לדף הכניסה למנהל האתר. | None |
 
-### מה המבקרים רואים כאשר אתר נחסם
+### מה המבקרים רואים כאשר אתר נחסם {#what-visitors-see-when-a-site-is-blocked}
 
 כאשר הגישה ל-frontend נחסמת, מבקרים באתר יצטרכו:
 
@@ -83,7 +83,7 @@ Dan il-proċess jmur fuq is-skedjolu hourly isiemaw b'mod isiemaw l-check tal-es
 
 מנהלי אתרים עדיין יכולים להתחבר -- דף הכניסה לעולם לא נחסם.
 
-### מה נחסם ומתי
+### מה נחסם ומתי {#what-gets-blocked-and-when}
 
 התנהגות החסימה תלויה במצב החברות:
 
@@ -104,21 +104,21 @@ Anche se il periodo di prova è terminat, un membership con lo status `trialing`
 I membership Cancelled vengono sempre bloccati una volta scaduto il data di scadenza, indipendentemente dal fatto che Block Frontend Access sia abilitato. Il Periodo di Grazia del Blocco Frontend **non** si applica ai membership cancellati.
 :::
 
-## Troubleshooting: Siti Rimangono Accessibili Dopo la Scadenza
+## Troubleshooting: Siti Rimangono Accessibili Dopo la Scadenza {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Se i siti rimangono accessibili pubblicamente dopo la scadenza di un membership, segui questi controlli nell'ordine:
 
-### 1. Verifica che l'impostazione Block Frontend Access sia attiva
+### 1. Verifica che l'impostazione Block Frontend Access sia attiva {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Vai a **Ultimate Multisite > Settings > Memberships** e conferma che l'interruttore **Block Frontend Access** sia attivo. Questa impostazione è **disattivata di default**, il che significa che solo wp-admin viene ristretto quando un membership diventa inattivo.
 
-### 2. Controlla il Periodo di Grazia del Blocco Frontend
+### 2. Controlla il Periodo di Grazia del Blocco Frontend {#2-check-the-frontend-block-grace-period}
 
 عليكم نفس صفحة الإعدادات، تحقق من قيمة **Frontend Block Grace Period**. إذا كانت مضبوطة على 7 أيام مثلاً، فلن يتم حظر الواجهة الأمامية حتى مرور 7 أيام بعد تاريخ انتهاء صلاحية العضوية -- حتى لو كان حالة العضوية `expired` بالفعل.
 
 اضبطها على `0` إذا كنت تريد الحظر الفوري بعد أن تصبح العضوية غير نشطة.
 
-### 3. تأكد من أن حالة العضوية قد تغيرت فعلاً
+### 3. تأكد من أن حالة العضوية قد تغيرت فعلاً {#3-confirm-the-membership-status-has-actually-changed}
 
 اذهب إلى **Ultimate Multisite > Memberships** وتحقق من حالة العضوية المتأثرة. إذا كانت لا تزال تُظهر `active` على الرغم من مرور تاريخ الانتهاء، فهذا يعني أن انتقال الحالة لم يحدث. الأسباب الشائعة لذلك:
 
@@ -126,7 +126,7 @@ Vai a **Ultimate Multisite > Settings > Memberships** e conferma che l'interrutt
 
 - **لم تعمل مهمة cron**: انظر للخطوة التالية.
 
-### 4. تحقق من تشغيل Action Scheduler
+### 4. تحقق من تشغيل Action Scheduler {#4-verify-action-scheduler-is-running}
 
 يستخدم Ultimate Multisite Action Scheduler لمهمات cron الخاصة به. اذهب إلى **Tools > Scheduled Actions** في إدارة الشبكة وابحث عن:
 
@@ -148,7 +148,7 @@ Per assicurarti che il cron funzioni in modo affidabile, configura un job cron d
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Controlla problemi con Gateway Webhook (Abbonamenti che si rinnovano automaticamente)
+### 5. Controlla problemi con Gateway Webhook (Abbonamenti che si rinnovano automaticamente) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Se l'abbonamento si rinnova automaticamente e il sottoscrizione del gateway è stata annullata o ha fallito, ma Ultimate Multisite lo mostra ancora come `active`:
 
@@ -157,7 +157,7 @@ Se l'abbonamento si rinnova automaticamente e il sottoscrizione del gateway è s
 
 Se il gateway mostra l'abbonamento come annullato ma Ultimate Multisite no, è probabile che la notifica webhook sia andata persa. Puoi cambiare manualmente lo stato dell'abbonamento in **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Controlla il Periodo di Grazia per la Scadenza (Livello Cron)
+### 6. Controlla il Periodo di Grazia per la Scadenza (Livello Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Il controllo cron ha il suo periodo di grazia (default: 3 giorni) prima di segnare un abbonamento come scaduto. Questo è separato dal periodo di grazia del blocco frontend. Il tempo totale prima che un sito venga bloccato può essere:
 
@@ -165,7 +165,7 @@ Il controllo cron ha il suo periodo di grazia (default: 3 giorni) prima di segna
 
 għال المثال, mal-istabbilizzamenti default u per periódi għall-frontend ta 7 jiem, ittrattja tista' teħdem għal massimu 10 jiem wara minn `date_expiration` qabel ma l-sajt jiġi blokat.
 
-### 7. Expira Membership Manualment
+### 7. Expira Membership Manualment {#7-manually-expire-a-membership}
 
 Jekk għandek bżonn li tixgħel isit mill-immediat بلا ma tixwaita lil ciclu tal-cron, tista' tġib il-status tal-membership manualment:
 
@@ -176,7 +176,7 @@ Jekk għandek bżonn li tixgħel isit mill-immediat بلا ma tixwaita lil ciclu
 
 Il-bloking tal-frontend jidħol b'mod aktar qabel fil-load ta dwejja (għal periódi grace period tal-frontend għall-memberships expired, jew immediat għall-memberships cancelled).
 
-## Sintesi
+## Sintesi {#summary}
 
 Il-timeline kollu mill-data tal-espirazzjoni għall-bloking tal-sajt:
 
@@ -208,7 +208,7 @@ Għal memberships cancellati, il-trajektu huwa qurt:
   L-frontend tal-sajt jiġi blokat immediat
 ```
 
-## Riferiment għall-Developer
+## Riferiment għall-Developer {#developer-reference}
 
 Il-hooks u filters li segwix huma li jagħti l-possibilità ليك tista' tistabbilji b'mod personalizzat l-espirazzjoni u l-comportament tal-bloking:
 

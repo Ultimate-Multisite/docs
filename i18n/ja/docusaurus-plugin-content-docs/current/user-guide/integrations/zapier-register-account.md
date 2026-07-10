@@ -1,40 +1,40 @@
 ---
-title: Zapier を使ってアカウントを登録する
+title: Zapier経由でAccountを登録
 sidebar_position: 1
-_i18n_hash: b77221f8098a0280ce78f481e328f9af
+_i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# イベント：Zapierでアカウントを登録する
+# イベント: Zapier で Account を登録する {#event-register-an-account-via-zapier}
 
-記事 [Integrating Ultimate Multisite with Zapier](zapier.md) では、Zapier を使用してトリガーとイベントに基づいて Ultimate Multisite 内でさまざまなアクションを実行する方法について説明しました。本記事では、サードパーティアプリケーションを統合する方法を示します。Google Sheets をデータソースとして使用し、情報を Ultimate Multisite に送信してアカウントを登録します。
+記事 [Ultimate Multisite と Zapier の連携](zapier.md) では、トリガーやイベントに基づいて Ultimate Multisite 内でさまざまな操作を実行するために Zapier を使う方法を説明しました。この記事では、サードパーティアプリケーションを連携する方法を紹介します。データの取得元として Google スプレッドシートを使い、その情報を Ultimate Multisite に送信して Account を登録します。
 
-まず、Google Drive の下に **Google Sheet** を作成する必要があります。後でデータを簡単にマッピングできるように、各列を適切に定義してください。
+Zapier に接続する前に、**Ultimate Multisite > 設定 > API と Webhooks** に移動し、API が有効になっていることを確認してください。Zapier が Ultimate Multisite の Account 認証情報を求めたら、この画面から API キーと API シークレットをコピーします。
 
-![Google Sheet with columns for customer data](/img/admin/webhooks-list.png)After creating a Google sheet, you can log in to your Zapier account and start creating a zap.
+![API キー、API シークレット、API 有効化オプションを含む API と Webhooks の設定](/img/admin/settings-api-webhooks.png)
 
-![Zapier dashboard to start creating a zap](/img/admin/webhooks-list.png)Under the search field for **"App event"** select **"Google Sheets"**
+まず、Google Drive 内に **Google スプレッドシート**を作成する必要があります。後でデータを簡単にマッピングできるように、各列を適切に定義してください。
 
-![Selecting Google Sheets as the app event](/img/admin/webhooks-list.png)
+Google スプレッドシートを作成したら、Zapier の Account にログインして zap の作成を開始できます。
 
-次に、**「Event」** フィールドで **「New spreadsheet row」** を選択し、**「Continue」** をクリックします。
+**「アプリイベント」**の検索フィールドで **「Google Sheets」** を選択します。
 
-![Selecting New spreadsheet row event in Zapier](/img/admin/webhooks-list.png)The next step will ask you to select a **Google Account** where the **Google Sheet** is saved. So just make sure that the right google account is specified.
 
-![Selecting Google Account for the Google Sheet](/img/admin/webhooks-list.png)
+次に、**「イベント」**フィールドで **「新しいスプレッドシート行」**を選択し、**「続行」**を押します。
 
-**「Set up trigger」** では、データが取得される Google スプレッドシートとワークシートを選択し、指定する必要があります。入力して **「Continue」** をクリックしてください。
+次の手順では、**Google Sheet** が保存されている **Google Account** を選択するよう求められます。正しい Google Account が指定されていることを確認してください。
 
-![Set up trigger with spreadsheet and worksheet selection](/img/admin/webhooks-list.png)Next is to "**test your trigger** " to make sure that your google sheet is properly connected.
 
-![Test your trigger step in Zapier](/img/admin/webhooks-list.png)If your test is successful, you should see the result showing some values from your spreadsheets. Click "**Continue** " to proceed.
+**「トリガーを設定」**で、データの取得元として使用する Google スプレッドシートとワークシートを選択して指定する必要があります。必要事項を入力し、**「続行」**を押してください。
 
-![Successful trigger test showing spreadsheet values](/img/admin/webhooks-list.png)The next step is to set up the second action that will create or register an account in Ultimate Multisite. On the search field select "**Ultimate Multisite(2.0.2)** "
+次に、Google スプレッドシートが正しく接続されていることを確認するために、**「トリガーをテスト」**します。
 
-![Selecting Ultimate Multisite as the action app](/img/admin/webhooks-list.png)
+テストが成功すると、スプレッドシートのいくつかの値を含む結果が表示されます。続行するには **「続行」**をクリックします。
 
-**「Event」** フィールドで **「Register an Account in Ultimate Multisite」** を選択し、**「Continue」** ボタンをクリックします。
+次の手順では、Ultimate Multisite で Account を作成または登録する 2 つ目のアクションを設定します。検索フィールドで **「Ultimate Multisite(2.0.2)」**を選択します。
 
-![Register an Account in Ultimate Multisite action event](/img/admin/webhooks-list.png)Under "**Set up an action** ", you will see different fields available for customer data, memberships, products, etc. You can map the values under your google sheet and assign them to the proper field where they should be populated as shown in the screenshot below.
 
-![Mapping Google Sheet values to Ultimate Multisite fields](/img/admin/webhooks-list.png)
+**「イベント」**フィールドで、**「Ultimate Multisite で Account を登録」**を選択し、**「続行」**ボタンをクリックします。
 
-![Testing the register account Zapier action](/img/admin/webhooks-list.png)
+**「アクションを設定」**では、顧客データ、メンバーシップ、商品などに使用できるさまざまなフィールドが表示されます。下のスクリーンショットに示すように、Google スプレッドシートの値をマッピングし、入力されるべき適切なフィールドに割り当てることができます。
+
+
+値をマッピングしたら、アクションをテストできます。

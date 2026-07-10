@@ -3,7 +3,7 @@ title: Kuaheke i te whakahoki i te pēpi
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# He aha ahau e taea ai te whakatau i te whakataunga (subscription) ahau?
+# He aha ahau e taea ai te whakatau i te whakataunga (subscription) ahau? {#how-can-i-cancel-my-subscription}
 
 Kia ora! Ko koe he tino multisite license (Ultimate Multisite license), ka taea e koe te whakatau i te whakataunga o ia i ngā wakamārama (renewal) i te wakamārama (time) kua e hiahia. Ka whai i ngā mahi i runga i te whakatipu (steps) ki muri:
 

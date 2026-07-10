@@ -1,69 +1,69 @@
 ---
 title: Sehemu ya Malipo na DNS ya Mteja
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Usimamizi wa Sehemu ya Malipo na DNS ya Mteja
+# Uwanja wa Malipo na Usimamizi wa DNS wa Wateja {#checkout-field-and-customer-dns-management}
 
-## Sehemu ya Kuchagua Domain
+## Uwanja wa malipo wa Uteuzi wa Kikoa {#the-domain-selection-checkout-field}
 
-Sehemu ya **Domain Selection** ni kiungo cha malipo kinachompa wateja chaguo la jinsi ya kupata domain ya tovuti yao. Ongeza sehemu hii kwenye fomu yoyote ya malipo ili kuwezesha uuzaji wa domain.
+Uwanja wa **Uteuzi wa Kikoa** ni kipengele cha malipo kinachowapa wateja chaguo la jinsi ya kupata kikoa cha tovuti yao. Uongeze kwenye fomu yoyote ya malipo ili kuwezesha uuzaji wa vikoa.
 
-### Kuongeza sehemu kwenye fomu ya malipo
+### Kuongeza uwanja kwenye fomu ya malipo {#adding-the-field-to-a-checkout-form}
 
-1. Nenda kwenye **Network Admin › Ultimate Multisite › Checkout Forms**
+1. Nenda kwenye **Msimamizi wa Mtandao › Ultimate Multisite › Fomu za Malipo**
 2. Fungua au unda fomu ya malipo
-3. Katika kuhariri malipo, bonyeza **Add Field**
-4. Chagua **Domain Selection** kutoka kwenye orodha ya sehemu
-5. Sanifisha chaguo za sehemu (ona hapa chini)
+3. Katika kihariri cha malipo, bofya **Ongeza Uwanja**
+4. Chagua **Uteuzi wa Kikoa** kutoka kwenye orodha ya nyuga
+5. Sanidi chaguo za uwanja (tazama hapa chini)
 6. Hifadhi fomu
 
-### Chaguo za sehemu
+### Chaguo za uwanja {#field-options}
 
-**Domain modes** — Chagua tabs ambazo mteja ataziona. Kila mode inaweza kuwimiliki au kuzimishwa kivyake:
+**Hali za kikoa** — Chagua vichupo ambavyo mteja ataona. Kila hali inaweza kuwezeshwa au kulemazwa kivyake:
 
-| Mode | Inafanya nini |
+| Hali | Inachofanya |
 |---|---|
-| **Subdomain** | Mteja anatumia subdomain ya bure kwenye network yako (mfano, `mysite.yournetwork.com`). Hakuna malipo yanayohitajika. |
-| **Register New Domain** | Mteja anatafuta domain mpya na kuisajili kupitia provider uliyefanya mipangilio yake. Inatumia bidhaa ya domain inayolingana kwa bei. |
-| **Existing Domain** | Mteja anapanga domain ambayo tayari anamiliki. Hakuna ada ya usajili. Domain inapaswa kiotolewe kiotomatiki kwenye tovuti yao. |
+| **Kikoa kidogo** | Mteja hutumia kikoa kidogo cha bure kwenye mtandao wako (mf., `mysite.yournetwork.com`). Hakuna malipo yanayohitajika. |
+| **Sajili Kikoa Kipya** | Mteja hutafuta kikoa kipya na kukisajili kupitia mtoa huduma uliyemsanidi. Hutumia bidhaa ya kikoa inayolingana kwa upangaji bei. |
+| **Kikoa Kilichopo** | Mteja huunganisha kikoa anachomiliki tayari. Hakuna ada ya usajili. Kikoa huunganishwa kiotomatiki kwenye tovuti yao. |
 
-**Default mode** — Wakati modes zote tatu zimezimwa, tab gani inafunguliwa kwanza. Weka kwenye **Subdomain** ili kuacha usajili wa domain kuwa wa hiari, au **Register New Domain** ili kuhamasisha ununuzi.
+**Hali chaguomsingi** — Wakati hali zote tatu zimewezeshwa, ni kichupo kipi hufunguka kwanza. Weka kuwa **Kikoa kidogo** ili kufanya usajili wa kikoa uwe wa hiari, au **Sajili Kikoa Kipya** ili kuhimiza ununuzi.
 
-**Domain product** — Chaguo la kuunganisha sehemu hii na bidhaa maalum ya domain. Ikiwa haijafanywa, addon inachagua kiotomatiki bidhaa inayolingana kulingana na TLD ambayo mteja anatafuta.
+**Bidhaa ya kikoa** — Kwa hiari, weka uwanja huu ushikwe na bidhaa mahususi ya kikoa. Ikiwa haijawekwa, addon huchagua kiotomatiki bidhaa inayolingana kulingana na TLD ambayo mteja anatafuta.
 
-### Sehemu za Mawasiliano za Msajili
+### Nyuga za mawasiliano ya msajili {#registrant-contact-fields}
 
-Wakati mteja anachagua tab ya **Register New Domain**, fomu ya malipo inoongeza sehemu za mawasiliano za msajili moja kwa moja:
+Mteja anapochagua kichupo cha **Sajili Kikoa Kipya**, fomu ya malipo huongeza nyuga za mawasiliano ya msajili ndani ya mstari:
 
-- Jina la kwanza / Jina la ukoo
+- Jina la kwanza / Jina la mwisho
 - Anwani ya barua pepe
-- Anwani (mstari 1, mji, jimbo/wilaya, nambari ya posta, nchi)
-- Namba ya simu
+- Anwani (mstari wa 1, jiji, jimbo/mkoa, msimbo wa posta, nchi)
+- Nambari ya simu
 
-Hizi ni muhimu kwa wasajili wote na zinathibitishwa kabla ya kupewa wito wa API wa usajili. Namba za simu huandaliwa kiotomatiki kuwa muundo wa kimataifa wa `+CC.NNN` unaotakiwa na wasajili.
+Hizi zinahitajika na wasajili wote na huthibitishwa kabla ya mwito wa API wa usajili kufanywa. Nambari za simu huumbizwa kiotomatiki kuwa muundo wa kimataifa wa `+CC.NNN` unaotarajiwa na wasajili.
 
-### URL ya Tovuti Inayoundwa Kiotomatiki
+### URL ya tovuti inayozalishwa kiotomatiki {#auto-generated-site-url}
 
-Wakati mteja anasajili au anapanga domain, sehemu ya URL ya tovuti inajazwa kiotomatiki kutoka kwenye domain iliyochaguliwa. Wateja hawahitaji kujaza sehemu tofauti ya URL.
+Mteja anaposajili au kuunganisha kikoa, uwanja wa URL ya tovuti hujazwa kiotomatiki kutoka kwenye kikoa kilichochaguliwa. Wateja hawahitaji kujaza uwanja tofauti wa URL.
 
-### Tabia ya Utafutaji
+### Tabia ya utafutaji {#search-behaviour}
 
-- Upataji wa domain unathibitishwa kwa wakati halisi kwa kutumia AJAX kadri mteja anavyoandika
-- Mapendekezo mbadala ya TLD yanaonyeshwa wakati domain inayopendeza haipo
-- Bei inachukuliwa moja kwa moja na kuonyeshwa wazi (bei ya usajili, bei ya urenewal, ada ya faragha ya WHOIS inayoweza kutokea)
-- Barua za kupona (Coupon codes) zinatumika kwa bidhaa za domain kama ilivyo kwa bidhaa yoyote nyingine
+- Upatikanaji wa kikoa hukaguliwa kwa wakati halisi kwa AJAX kadiri mteja anavyoandika
+- Mapendekezo mbadala ya TLD huonyeshwa wakati kikoa kinachopendelewa hakipatikani
+- Bei huchukuliwa moja kwa moja na kuonyeshwa wazi (bei ya usajili, bei ya usasishaji, ada ya hiari ya faragha ya WHOIS)
+- Misimbo ya kuponi hutumika kwa bidhaa za kikoa sawa na bidhaa nyingine yoyote
 
 **Kurekebisha mwitikio wa utafutaji:**
 
 ```php
-// Ongeza kuchelewesha debounce (milliseconds) ili kupunguza wito wa API kwenye miunganisho ya polepole
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Kuongeza sehemu maalum kwenye fomu ya utafutaji wa domain:**
+**Kuongeza nyuga maalum kwenye fomu ya utafutaji wa kikoa:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Usimamizi wa DNS wa Mteja
+## Usimamizi wa DNS wa wateja {#customer-dns-management}
 
-Wateja wanaweza kusimamia rekodi za DNS kwa domain zao zilizosajiliwa kutoka kwenye ukurasa wa **My Account**, chini ya eneo la domain yao.
+Wateja wanaweza kudhibiti rekodi za DNS kwa vikoa vyao vilivyosajiliwa kutoka ukurasa wa **Akaunti Yangu**, chini ya ingizo la kikoa chao.
 
-### Aina za Rekodi Zinazodumishwa
+### Aina za rekodi zinazotumika {#supported-record-types}
 
 | Aina | Matumizi |
 |---|---|
-| **A** | Panga jina la tovuti (hostname) na anwani ya IPv4 |
-| **AAAA** | Panga jina la tovuti (hostname) na anwani ya IPv6 |
-| **CNAME** | Unda jina la kiashiria (alias) linaloonyesha jina la tovuti lingine |
-| **MX** | Weka seva ya kubadilishana barua (mail exchange server) |
-| **TXT** | Ongeza rekodi za SPF, DMARC, uthibitisho, au rekodi zingine za maandishi |
+| **A** | Unganisha jina la hosti na anwani ya IPv4 |
+| **AAAA** | Unganisha jina la hosti na anwani ya IPv6 |
+| **CNAME** | Unda jina mbadala linaloelekeza kwenye jina lingine la hosti |
+| **MX** | Weka seva ya ubadilishanaji wa barua |
+| **TXT** | Ongeza SPF, DMARC, uthibitishaji, au rekodi nyingine za maandishi |
 
-### Ni Providers gani zinazosaidia usimamizi wa DNS?
+### Ni watoa huduma gani wanaounga mkono usimamizi wa DNS? {#which-providers-support-dns-management}
 
-Usimamizi wa DNS (kuongeza, kuhariri, kufuta rekodi) unapatikana na **OpenSRS**, **ResellerClub**, na **Enom**. Domain za Namecheap, GoDaddy, na NameSilo zinaonyesha hali na taarifa za kuisha, lakini DNS lazima isimamishwa moja kwa moja kwenye control panel ya registrar.
+Usimamizi wa DNS (kuongeza, kuhariri, kufuta rekodi) unapatikana kwa **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, na **Openprovider**. Vikoa vya **Hostinger** vinaweza kusasisha nameservers kupitia Domain Seller; rekodi za DNS kwa vikoa vilivyohostiwa hudhibitiwa na muunganisho mkuu wa uunganishaji-vikoa wa Hostinger. Vikoa vya Namecheap, GoDaddy, na NameSilo huonyesha hali na taarifa za mwisho wa muda, lakini DNS lazima idhibitiwe moja kwa moja kwenye paneli ya udhibiti ya msajili.
 
-### Rekodi za DNS za Kiotomatiki
+### Rekodi chaguomsingi za DNS {#default-dns-records}
 
-Unaweza kupanga rekodi za DNS za kiotomatiki ambazo zinatumika kiotomatiki wakati domain inasajiliwa. Nenda kwenye **Settings › Domain Seller › Default DNS Records**.
+Unaweza kusanidi rekodi chaguomsingi za DNS zinazotumika kiotomatiki kikoa kinaposajiliwa. Nenda kwenye **Mipangilio › Domain Seller › Rekodi Chaguomsingi za DNS**.
 
-Thamani za rekodi za kiotomatiki zinasaidia tokens mbili:
+Thamani chaguomsingi za rekodi zinaunga mkono tokeni mbili:
 
-| Token | Inabadilishwa na |
+| Tokeni | Hubadilishwa na |
 |---|---|
-| `{DOMAIN}` | Jina la domain lililosajiliwa (mfano, `example.com`) |
+| `{DOMAIN}` | Jina la kikoa kilichosajiliwa (mf., `example.com`) |
 | `{SITE_URL}` | URL ya tovuti ya WordPress kwa tovuti ya mteja |
 
-**Mfano — kuonyesha domain kuu na www kwenye IP ya seva yako:**
+**Mfano — elekeza kikoa cha apex na www kwenye IP ya seva yako:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: kuangalia na kuhariri DNS
+### Msimamizi: kutazama na kuhariri DNS {#admin-viewing-and-editing-dns}
 
-Watumishi wa network wanaweza kuangalia na kuhariri rekodi za DNS kwa domain yoyote ya mteja kutoka kwenye ukurasa wa kuhariri domain katika **Network Admin › Ultimate Multisite › Domains**.
+Wasimamizi wa mtandao wanaweza kutazama na kuhariri rekodi za DNS kwa kikoa chochote cha mteja kutoka ukurasa wa kuhariri wa kikoa katika **Msimamizi wa Mtandao › Ultimate Multisite › Vikoa**.

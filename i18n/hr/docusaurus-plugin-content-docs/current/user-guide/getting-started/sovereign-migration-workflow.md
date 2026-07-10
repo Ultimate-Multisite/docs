@@ -3,11 +3,11 @@ title: Radni tok migracije suverenog sustava
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Rad Sovereign Migracijski Proces
+# Rad Sovereign Migracijski Proces {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje proge za provjeru migracije prilikom premještanja standardnog subsitea u infrastrukturu suverenog najmoprimca (tenant).
 
-## Prije nego što počnete
+## Prije nego što počnete {#before-you-start}
 
 Provjerite da imate sljedeće spremno:
 
@@ -17,7 +17,7 @@ Provjerite da imate sljedeće spremno:
 - Povezivanje baze podataka na host koji odgovara ciljnom okruženju.
 - Pristup za pokretanje WP-CLI naredbi za mrežu.
 
-## Preporučeni proces
+## Preporučeni proces {#recommended-workflow}
 
 1. Pripremite ciljnu bazu podataka najmoprimca i sustav datoteka.
 2. Registrirajte ili ažurirajte postavke izolacije najmoprimca (tenant isolation settings).
@@ -28,7 +28,7 @@ Provjerite da imate sljedeće spremno:
 7. Posjetite najmoprimca s SSO-om.
 8. Promijenite DNS ili rutiranje tek nakon što provera prođe.
 
-## Proge za provjeru (Verification gates)
+## Proge za provjeru (Verification gates) {#verification-gates}
 
 Proces provjere provjerava migraciju iz nekoliko uglova:
 
@@ -40,6 +40,6 @@ Proces provjere provjerava migraciju iz nekoliko uglova:
 
 Osvojećite neuspjehe provjere kao blokade prije pokretanja. Popravite navedenu problematičnu bazu podataka, korisnika, zadatka ili rutiranja, a zatim ponovite provjeru prije nego što otvorite najmoprimca za kupce.
 
-## Prvi prodajni posjet (First production visit)
+## Prvi prodajni posjet (First production visit) {#first-production-visit}
 
 Nakon što provera prođe, koristite **Posjeti (SSO)** s ekrana upravljanja sajtom za prvi administrativni posjet. Ovo potvrđuje rutiranje najmoprimca, obradu SSO tokena, origin pinning i postavljanje korisnika na strani najmoprimca u jednom kontroliranom koraku.

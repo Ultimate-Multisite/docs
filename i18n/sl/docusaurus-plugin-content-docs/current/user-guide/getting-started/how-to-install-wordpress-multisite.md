@@ -3,7 +3,7 @@ title: Kako instalirati WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kako namestiti WordPress Multisite?
+# Kako namestiti WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite vam omogoča, da imate mrežno delo spletnih strani na eni instalaciji. To je vgrajen funkcija, vendar ni aktivna po podrazmerju.
 
@@ -99,9 +99,9 @@ Za ustvarjanje podspletne strani:
 
 Po zapolnjenju polj kliknite gumb "Add site". Ko je nova podspletna stran ustvarjena, jo dostopajte in preizkusite, da se zagotite, da deluje.
 
-## Pogostejše težave:
+## Pogostejše težave: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Lahko ustvarjam nove strani, vendar jih ni dostopne.
+### 1. Lahko ustvarjam nove strani, vendar jih ni dostopne. {#common-problems}
 
 Če ste izbrali poddomene, morate tudi nastaviti wildcard poddomene za vašo multisite mrežno.
 

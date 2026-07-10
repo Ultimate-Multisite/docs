@@ -3,9 +3,9 @@ title: Assistant de configuration Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Assistant
+# Assistant {#multisite-setup-wizard}
 
-## Multisite Setup Wizard
+## Multisite Setup Wizard {#when-does-the-wizard-appear}
 
 Ultimate Multisite inclut un assistant intégré qui convertit automatiquement une installation WordPress standard en un réseau WordPress Multisite. Cela élimine le besoin d’éditer manuellement `wp-config.php` ou d’exécuter des commandes de base de données.
 
@@ -13,13 +13,13 @@ Ultimate Multisite inclut un assistant intégré qui convertit automatiquement u
 Si votre installation WordPress fonctionne déjà en tant que réseau Multisite, vous pouvez ignorer cette étape. L’assistant n’apparaît que lorsque le Multisite n’est pas encore activé.
 :::
 
-## Quand l’assistant apparaît-il ?
+## Quand l’assistant apparaît-il ? {#prerequisites}
 
 Lorsque vous activez Ultimate Multisite sur une installation WordPress standard (non Multisite), le plugin détecte que le Multisite n’est pas activé et vous redirige automatiquement vers l’assistant de configuration Multisite au lieu de l’assistant de configuration régulier.
 
 Vous pouvez également y accéder directement via **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Prérequis
+## Prérequis {#step-1-welcome}
 
 Avant d’exécuter l’assistant, assurez‑vous que :
 
@@ -31,7 +31,7 @@ Avant d’exécuter l’assistant, assurez‑vous que :
 L’assistant modifie votre fichier `wp-config.php` et crée de nouvelles tables de base de données. Créez toujours une sauvegarde avant de continuer.
 :::
 
-## Étape 1 : Bienvenue
+## Étape 1 : Bienvenue {#step-2-network-configuration}
 
 L’écran d’accueil explique ce qu’est le WordPress Multisite et ce que l’assistant fera :
 
@@ -44,11 +44,11 @@ L’écran d’accueil explique ce qu’est le WordPress Multisite et ce que l�
 
 Cliquez sur **Continue** pour poursuivre.
 
-## Étape 2 : Configuration du réseau
+## Étape 2 : Configuration du réseau {#site-structure}
 
 Cette étape vous demande de configurer les paramètres de votre réseau.
 
-### Structure du site
+### Structure du site {#network-title}
 
 Choisissez comment vos sites réseau seront organisés :
 
@@ -59,11 +59,11 @@ Choisissez comment vos sites réseau seront organisés :
 Si vous choisissez les sous‑domaines, vous devrez configurer un **DNS générique** (wildcard DNS) et un **certificat SSL générique** (wildcard SSL) pour votre domaine. La plupart des hébergeurs WordPress gérés le font automatiquement. Consultez [Ultimate Multisite 101](./ultimate-multisite-101) pour une comparaison détaillée.
 :::
 
-### Titre du réseau
+### Titre du réseau {#network-admin-email}
 
 Entrez un nom pour votre réseau. Cela par défaut est le titre actuel de votre site avec « Network » ajouté. Vous pourrez le modifier plus tard depuis les paramètres du réseau.
 
-### Email d’administration du réseau
+### Email d’administration du réseau {#step-3-installation}
 
 L’adresse e‑mail utilisée pour les notifications d’administration du réseau. Cela par défaut est l’adresse e‑mail de l’utilisateur actuel.
 
@@ -71,7 +71,7 @@ L’adresse e‑mail utilisée pour les notifications d’administration du rés
 
 Après avoir rempli les champs, cliquez sur **Continue** pour poursuivre.
 
-## Étape 3 : Installation
+## Étape 3 : Installation {#step-4-complete}
 
 Cliquez sur le bouton **Install** pour commencer. L’assistant effectue cinq étapes automatisées séquentiellement, chacune affichant son avancement en temps réel :
 
@@ -98,7 +98,7 @@ Une fois toutes les étapes terminées avec succès, vous verrez un statut vert 
 
 L’assistant passera alors automatiquement à l’écran de fin.
 
-## Étape 4 : Terminé
+## Étape 4 : Terminé {#manual-setup-fallback}
 
 Une fois l’installation terminée, vous verrez un message de succès confirmant que WordPress Multisite a été activé.
 
@@ -110,7 +110,7 @@ Vous pouvez maintenant poursuivre avec l’assistant de configuration Ultimate M
 Après la fin de l’installation multisite, votre navigateur sera redirigé vers l’administration réseau nouvellement activée. Vous devrez peut‑être vous reconnecter car les cookies d’authentification sont mis à jour pour l’environnement multisite.
 :::
 
-## Récupération manuelle
+## Récupération manuelle {#troubleshooting}
 
 Si l’assistant ne peut pas écrire dans votre fichier `wp-config.php` (en raison des permissions de fichier ou des restrictions du serveur), il affichera le code exact que vous devez ajouter manuellement :
 
@@ -119,9 +119,9 @@ Si l’assistant ne peut pas écrire dans votre fichier `wp-config.php` (en rais
 
 Après avoir effectué les modifications manuelles, actualisez la page et l’assistant détectera que le multisite est maintenant actif.
 
-## Dépannage
+## Dépannage {#the-wizard-says-wp-configphp-is-not-writable}
 
-### L’assistant indique que wp-config.php n’est pas écrivable
+### L’assistant indique que wp-config.php n’est pas écrivable {#sites-are-not-accessible-after-setup-subdomains}
 
 Le processus serveur web a besoin d’un droit d’écriture sur le fichier `wp-config.php`. Vous pouvez :
 
@@ -129,7 +129,7 @@ Le processus serveur web a besoin d’un droit d’écriture sur le fichier `wp-
 - Utiliser les instructions de récupération manuelle fournies par l’assistant
 - Demander l’assistance de votre hébergeur
 
-### Les sites ne sont pas accessibles après la configuration (sous‑domaines)
+### Les sites ne sont pas accessibles après la configuration (sous‑domaines) {#authentication-issues-after-setup}
 
 Si vous avez choisi la structure sous‑domaine, vous devez configurer un **DNS générique** (wildcard DNS) pour votre domaine. Ajoutez un enregistrement DNS :
 
@@ -141,7 +141,7 @@ Value: [votre IP serveur]
 
 Vérifiez auprès de votre hébergeur si vous n’êtes pas sûr de la configuration.
 
-### Problèmes d’authentification après la configuration
+### Problèmes d’authentification après la configuration {#a-step-failed-during-installation}
 
 Si vous êtes déconnecté ou rencontrez des erreurs de cookie après la configuration multisite :
 

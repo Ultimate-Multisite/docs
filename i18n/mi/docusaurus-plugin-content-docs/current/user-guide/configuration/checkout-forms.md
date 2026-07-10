@@ -3,7 +3,7 @@ title: Ngā whakamārama o te whakatū
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Tāhuhu o te Checkout Forms (Checkout Forms)
+# Tāhuhu o te Checkout Forms (Checkout Forms) {#checkout-forms}
 
 He wahi ātaheke me tino whiriwhiri ki te whai i whakamārama atu i āhua haere atu i roto i te whakawhanaungatanga hou me ngā mea wāhi.
 
@@ -38,13 +38,13 @@ He mea e taea ai koe te whakaiti akorua, he whai ake ana i roto i ngā optiona i
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Whakawātea Tōna Editor o Te Checkout Form
+#### Whakawātea Tōna Editor o Te Checkout Form {#checkout-form-editor-overview}
 
 Ko te editor o te checkout form e whakamōhaka atu ana i te whānui ki te whakamaoritanga o ngā formata whakapūatanga (registration forms). He pūrākau mā te whakamārama i te whare wāhi o te editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Whakawātea Tōna Checkout Form
+### Whakawātea Tōna Checkout Form {#editing-a-checkout-form}
 
 He mea e taea ai koe te whakamaoritanga checkout forms mō ngā whakamahinga ā-au. I tēnei pūrākau, ka mahi mātou i tōna formata whakapūatanga (registration form).
 
@@ -96,7 +96,7 @@ Kia pēhea te mōhaka o tō fōrm? Whakatipu i te Generate Shortcode (Whakatipu 
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Te Field Pricing Table
+### Te Field Pricing Table {#the-pricing-table-field}
 
 Ko te **Pricing Table** field (Te Whakamārama Pākehā o Ngā Pākehā) e whakaatu i tō mga tauira (products) ki te fōrm checkout kia taea ai ngā mea kōrero (customers) te whiri i te plan. I roto i roto i te whakamaoritanga i tēnei field, kua taea e koe te whakarite i option mōhiamo (several options):
 
@@ -114,17 +114,17 @@ He aha te mea e whakaatu ana te pricing table ki te fōrm registration o te fron
 
 Kia i roto i te whero i tauira (add a product) ki te Pricing Table mō ngā mea kōrero (customers) i whakaaahihia i te fōrm, me te whakatū i ngā fields e pēnei ana ki te whakatā i tō flow o checkout mō tēnei tauira, ko te editor e whakaatu ana he warning. Whakarite i tēnei warning kia whero i te field e pōtanga (missing required field) mō te whakatū i ngā whakawhiti (publishing) ahau ka whakahou (saving) i ngā chānga o te fōrm registration live.
 
-### Whakawhanaungatanga Tō Whakamahi Whakaritenga Pēri
+### Whakawhanaungatanga Tō Whakamahi Whakaritenga Pēri {#adding-a-period-selection-toggle}
 
 Ko he tino whakahirahira ki te whai whakamārama i tēnei: Ko koe he pēri (price variations) e whakatairite ana i ngā aua (e.g., monthly and annual pricing) mo ngā taonga ahau, he taea ai i a koe te āwhitu i te **Period Selection** field ki tō fōmā checkout. Ko tēnei field e whakaatu he toggle (switch) e hiahia ana i ngā mea mō te mea whai ake, he pēri (billing periods), ā, ko te table o ngā aua e whakawirera atu i runga i te wā real-time.
 
-#### Te Wiki 1: Whakawhanaungatanga Pēri ahau mo Ngā Taonga Ahau
+#### Te Wiki 1: Whakawhanaungatanga Pēri ahau mo Ngā Taonga Ahau {#step-1-set-up-price-variations-on-your-products}
 
 Iha koe i te whai whakamārama ki te Period Selection field, kia kore koe i te whakaaro he heke i ngā pēri (price variations) e whakatairite ana i ngā taonga ahau. Kia kaha ki **Ultimate Multisite > Products**, whakarere i te taonga, ā, whai atu ki te tab **Price Variations** kia āwhitu i ngā pēri (billing periods) e hiahia ana (e.g., Annual at a discounted price).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Te Wiki 2: Whakawhanaungatanga Period Selection Field ki Tō Fōmā Checkout
+#### Te Wiki 2: Whakawhanaungatanga Period Selection Field ki Tō Fōmā Checkout {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Kia kaha ki **Ultimate Multisite > Checkout Forms** ā, whakarere i tō fōmā checkout.
 
@@ -147,13 +147,13 @@ Iha koe i te whai whakamārama ki te Period Selection field, kia kore koe i te w
 
 7. Whakaa **Save Field**.
 
-#### Te Wikiata 3: Taki i te Wikiata i runga i te Tarama Pākehā (Pricing Table)
+#### Te Wikiata 3: Taki i te Wikiata i runga i te Tarama Pākehā (Pricing Table) {#step-3-position-the-field-above-the-pricing-table}
 
 Mō te wahi whaiora mō te mea whaiora katoa, kia kore e taea te whakamahi te wikiata o te Whakawhiti Wā (Period Selection field) **i muri** i te Tarama Pākehā (Pricing Table field) i tō wā whakawhiti. Kei te tino pai te mea, he taea ai ki te whakatika i te rārangi i runga i te editor o te fōrm whakawhiti. Ko te mea, ka whai whakaaro ngā mea whaiora i te whakatūwhera i te wāwharangi (billing period) mo te mea whaiora, ā, i tēnei wā, ka taea e ngā mea whaiora te whakaatu i ngā whakaingo o te wā wharera hāpai.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### He aha te mahi ana i te Frontend (Te Wāwharangi Whakamahi)
+#### He aha te mahi ana i te Frontend (Te Wāwharangi Whakamahi) {#how-it-works-on-the-frontend}
 
 I tōna whakamahinga, ka whakaatu ngā mea whaiora i te wāwharangi o te wā wharera i runga i te wāwharangi whai whakawhiti i roto i te wāwharangi whai ora. I roto i tō wā, i roto i te wā ka whakatipu ngā wikiata wharera atu:
 
@@ -161,7 +161,7 @@ I tōna whakamahinga, ka whakaatu ngā mea whaiora i te wāwharangi o te wā wha
   * Ko te mea, ko te **Force Different Durations** (Whakawhiti Wharera) ka whakahou i ngā mea whaiora ki te whakaatu i ngā whakaingo o te wā wharera e whai whakawhiti (einahe mea nui te whakatūwhera i te wāwharangi).
   * Ko te mea, ko te **Force Different Durations** ka whakahou i ngā mea whaiora ki te whakaatu i ngā whakaingo o te wā wharera e whai whakawhiti (einahe mea nui te whakatūwhera i te wāwharangi).
 
-#### Whakawhiti Wā Wharera i runga i te URL
+#### Whakawhiti Wā Wharera i runga i te URL {#pre-selecting-a-billing-period-via-url}
 
 Ka taea ai koe te whakatō i te mea whaiora me te wā wharera mo te URL. Ultimate Multisite e whai ana ki ngā pattern o URL-i mō:
 
@@ -169,11 +169,11 @@ Ka taea ai koe te whakatō i te mea whaiora me te wā wharera mo te URL. Ultimat
   * `/register/premium/12` — Ka whakawhiti i te mea whaiora me te wāwharera 12 mokete
   * `/register/premium/1/year` — Ka whakawhiti i te mea whaiora me te wāwharera 1 mwaka
 
-### Te Wikiata Whakawhiti (Template Selection Field)
+### Te Wikiata Whakawhiti (Template Selection Field) {#the-template-selection-field}
 
 Ka pōwhiri i te **Template Selection** field ngā mea whaiora ki te whai whakaaro i te template o te wāwharangi i roto i te wā whakawhiti. Ko te mea, ka puta ana i te fōrm whakawhiti "single step" me "multi-step" e pātaki ana i Ultimate Multisite v2.6.1.
 
-#### Whakawhiti i te wikiata manuahi (Adding the field manually)
+#### Whakawhiti i te wikiata manuahi (Adding the field manually) {#adding-the-field-manually}
 
 Ko te whakamārama: Ko koe e whakawiranga ana i tētahi form kua oti i te v2.6.1, he tino pai ki te whakatika i ai, he pēnei i ko te kaha o te whakaaro.
 
@@ -184,11 +184,11 @@ Ko te whakamārama: Ko koe e whakawiranga ana i tētahi form kua oti i te v2.6.1
    - **Label** — Ko te rangatira kua whakarite e ngā mea e whakaaKia ngā mea e whakaahua i ngā mea e hoki mai ki te template grid (e.g., "Titiro i te template o te wāhi").
    - **Required** — Me whaiaro ngā pūtaiao ko ka taea te whaiaro i te template koe i te whaiaro i te whakatika.
 
-#### He aha tēnei? (How it works)
+#### He aha tēnei? (How it works) {#how-it-works}
 
 I te wā kua whaiaro he template he whaiaro i te checkout, Ultimate Multisite e whakamahi ai i a ia i te wā ka e whakawiranga i tō aua site hou. Ko ngā template e whakaataki ana kia puta mai ana i tō **Site Templates** list (**Ultimate Multisite > Site Templates**). Ko ngā template e whakahouhia ki te pūtaiao o ngā mea e hoki mai ana ko e puta mai ana i tēnei wāhi.
 
-### Checkout-form base domains (Ngā domaini pukapuka mō te checkout form)
+### Checkout-form base domains (Ngā domaini pukapuka mō te checkout form) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 e whai whakaaro ki ngā domaini kua whakarite i ngā wāhi o te **Site URL** o te checkout form ko ngā network base domains. Whakarite i ngā settings o available-domain o te wāhi he tino pai ki te wā koe e hiahia ana ke ngā mea e whaiaro i ngā site i runga i ngā domaini whakahouhia kua whakahoki mai, pēnei i `example.com` me `sites.example.com`.
 
@@ -196,6 +196,6 @@ Ngā checkout-form base domains whakahoki mai ko tautoko ana ki te whakamahi o p
 
 Whakawātea ngā custom domains mō ngā hosts e whakahouhia i runga i te per-customer, pēnei i `customer-example.com`. Whakawātea ngā checkout-form base domains mō ngā hosts whakahouhia shared kua taea te whakamahi i ngā site maha.
 
-#### Whakawātea te wāhi (Removing the field)
+#### Whakawātea te wāhi (Removing the field) {#removing-the-field}
 
 Ko koe e kore e hoaro tāmata (site templates) i te ofo, whero i te fāme o te Template Selection. Ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka pēnei te whai ake: ka p

@@ -1,114 +1,197 @@
 ---
 title: E-posse
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-pos
+# E-pos {#emails}
 
-Die Ultimate Multisite: E-pos bykomend laat netwerk-eienaars toe om kliënt-e-pos rekeninge te voorsien en te bestuur saam met webwerwe en lidmaatskappe. Weergawe 1.1.0 voeg kliënt-kant e-pos rekeningbestuur, webmail single sign-on, CyberPanel forwarder ondersteuning, en verbeterings aan by tyd van uitrekening (checkout).
+Die Ultimate Multisite: Emails-byvoeging laat netwerkeienaars klante se e-posrekeninge saam met werwe en lidmaatskappe voorsien en bestuur. Weergawe 1.1.0 voeg klantgerigte e-posrekeningbestuur, webmail-enkeltekenaanmelding, CyberPanel-aanstuurdersteuning, en verbeterings vir voorsiening tydens checkout by.
 
-## Sleutelkenmerke
+## Sleutelkenmerke {#key-features}
 
-* **Kliënt-e-pos rekening-widget**: Kliënte kan e-pos rekeninge skep en bestuur vanaf hul rekeningsblad sonder om 'n ondersteuningskaartjie te open.
-* **Webmail SSO en magiese skakels**: Kliënte kan webmail direk vanaf die rekeningsblad oopmaak met eend-klik outentisering wanneer die voorsienaar dit ondersteun.
-* **Wagwoordveranderinge**: Kliënte en administrateurs kan wagwoord van e-pos posbusse by die e-posbestuur-widget opdateer.
-* **Uitrekening-voorsiening**: Die skep van kliënt-e-pos rekeninge kan tydens die uitrekening plaasvind sodat die posbus gereed is nadat die aankoopproses voltooi is.
-* **CyberPanel forwarders**: Netwerke wat deur CyberPanel ondersteun word, kan e-pos forwarders skep en bestuur as deel van die e-posdiensvloei.
-* **Voorsienaar-bewuste instellings**: Die instellingsbladsy filter voorsieners na aktiewe, geconfigureerde integrasies sodat administrateurs slegs bruikbare opsies sien.
+* **Klant-e-posrekeninglegstuk**: Klante kan posbusse vanaf hul Account-bladsy skep en bestuur nadat hulle ’n aktiewe e-poslidmaatskap het.
+* **Webmail SSO en magic links**: Klante kan webmail direk vanaf die Account-bladsy met eenklik-verifikasie oopmaak wanneer die verskaffer dit ondersteun.
+* **Wagwoordveranderings**: Klante en administrateurs kan posbuswagwoorde vanaf die e-posbestuurlegstuk opdateer.
+* **Voorsiening van checkout-regte**: Checkout skep die e-poslidmaatskap, koppel dit aan die klant se werfdomein, en maak die Account-bladsy se posbusnutsgoed beskikbaar.
+* **CyberPanel-aanstuurders**: CyberPanel-gesteunde netwerke kan e-posaanstuurders skep en bestuur as deel van die e-posdiensvloei.
+* **Verskafferbewuste instellings**: Die instellingsbladsy filtreer verskaffers na aktiewe, gekonfigureerde integrasies sodat administrateurs net bruikbare opsies sien.
 
-## Vereistes
+## Vereistes {#requirements}
 
 * Ultimate Multisite 2.0.0 of hoër
 * WordPress Multisite-installasie
-* Ten minste een geconfigureerde e-pos voorsienaar-integrasie
-* Voorsienaar API-wagwoord met toestemming om posbusse te skep, wagwoorde te verander en webmail-toegangskakke uit te reik waar ondersteun.
+* Ten minste een gekonfigureerde e-posverskafferintegrasie
+* Verskaffer-API-geloofsbriewe met toestemming om posbusse te skep, wagwoorde te verander, en webmailtoegangskakels uit te reik waar dit ondersteun word
 
-## Instalering
+## Installasie {#installation}
 
-1. Laai die plugin-lêre op na `/wp-content/plugins/ultimate-multisite-emails`.
-2. Aktiveer die bykomend vanaf **Plugins** in die WordPress netwerkadministrasie.
-3. Gaan na **Ultimate Multisite** > **Settings** en maak die bykomend e-posinstellings oop.
-4. Aktiveer die e-pos voorsienaar-integrasies wat jy wil hê kliënte moet gebruik.
-5. Stoor die instellings, en toets dan rekening skep met 'n nie-produksie kliënt of staging-webwerf.
+1. Laai die plugin-lêers op na `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktiveer die byvoeging netwerkwyd vanaf **Plugins** in die WordPress-netwerkadministrasie.
+3. Gaan na **Ultimate Multisite** > **Settings** en maak die byvoeging se e-posinstellings oop.
+4. Aktiveer die e-posverskafferintegrasies wat jy wil hê klante moet gebruik.
+5. Stoor instellings, en toets dan rekeningskepping met ’n nie-produksieklant of toetswerf.
 
-## Kliënt-rekening E-pos Bestuur
+## Hoe die e-posverkoopvloei werk {#how-the-email-seller-flow-works}
 
-Weergawe 1.1.0 voeg 'n e-pos bestuur-widget by die kliëntrekeningsblad. Gebruik dit wanneer kliënte self-diens posbus skep en onderhou vir hul eie webwerwe.
+E-posverkope het twee afsonderlike lae:
 
-Vanaf die rekeningsblad kan kliënte:
+1. **Reg** — ’n Ultimate Multisite-e-posproduk/lidmaatskap wat sê dat die klant e-pos vir ’n spesifieke werfdomein, verskaffer, kwota, en rekeninglimiet mag gebruik.
+2. **Posbusskepping** — die werklike verskafferposbus, soos `info@example.com`, wat geskep word wanneer die klant of ’n netwerkadministrateur die plaaslike deel en wagwoord kies.
 
-1. E-pos rekeninge sien wat aan hul huidige lidmaatskap of webwerf gekoppel is.
-2. 'n Nuwe posbus skep wanneer hul plan bykomende rekeninge toelaat.
-3. Die wagwoord van 'n bestaande posbus verander.
-4. Ondersteunde webmail voorsieners oopmaak deur SSO of 'n magiese skakel-aanmelding.
+Tydens checkout skep of aktiveer die byvoeging die **e-poslidmaatskap** en teken die klant se werfdomein en verskaffer op daardie lidmaatskap aan. Dit raai nie ’n posbusnaam of wagwoord nie. Nadat die aankoop voltooi is en die werf-/domeinkonteks bestaan, kan die klant die Account-bladsy oopmaak en die posbusname skep wat hulle wil hê.
 
-Die widget gebruik die Ultimate Multisite rekeningsblad-huidige stelsel, sodat aksies beperk word tot die rekenmingkonteks wat die kliënt sien. Dit verhoed dat kliënte e-pos rekeninge bestuur wat aan 'n ander lidmaatskap of webwerf behoort.
+Dit beteken ’n normale klantvloei is:
 
-## Webmail SSO en Magiese Skakel-Aanmelding
+1. Die klant koop ’n werfplan en voeg ’n e-posproduk tydens checkout by.
+2. Ultimate Multisite skep die werflidmaatskap en die sekondêre e-poslidmaatskap.
+3. Die Emails-byvoeging koppel die e-poslidmaatskap aan die klant se werfdomein en verskaffer.
+4. Die klant maak **Account** in hul Dashboard oop.
+5. Die **E-posrekeninge**-paneel verskyn vir daardie aktiewe e-poslidmaatskap.
+6. Die klant klik **Skep Account**, voer die plaaslike deel soos `info` in, stel ’n wagwoord, en die byvoeging skep `info@their-domain.com` by die gekonfigureerde verskaffer.
 
-Webmail SSO gee kliënte 'n direkte **Open webmail** aksie vanaf die rekeningsblad. Wanneer dit deur die aktiewe voorsienaar ondersteun word, versoek die bykomend 'n kort-lewensduur toegangsvoorbeeld en herlei die kliënt na webmail sonder om hulle te vra om posbuswagwoordgegevens te kopieer.
+## Stel ’n e-posproduk op {#configure-an-email-product}
 
-Voorsienaar-gedrag kan verskil:
+Skep een e-posproduk vir elke e-pospakket wat jy wil verkoop of weggee. As jy nuut is met produkinstelling, begin met [Skep jou eerste intekeningproduk](../../user-guide/configuration/creating-your-first-subscription-product) en keer dan hierheen terug vir die e-posspesifieke instellings.
 
-* Voorsieners met natuurlike SSO API's kan 'n direkte outentiseerde webmail-sessie skep.
-* Voorsieners met magiese skakel-ondersteuning kan 'n tydbeperkte aanmeldingsskakel genereer.
-* Voorsieners sonder SSO of magiese skakel-ondersteuning moet steeds die posbusbesonderhede en wagwoordbestuur-aksies wys, maar geen eend-klik webmail-knoppie nie.
+1. Gaan na **Netwerkadministrasie > Ultimate Multisite > Produkte > Voeg produk by**.
+2. Stel **Produksoort** op **E-pos**.
+3. Stel pryse op. Gebruik ’n betaalde herhalende prys vir ’n verkoopte plan, of stel die produk op gratis/nulprys as dit ’n komplimentêre e-posplan moet wees.
+4. Maak die **E-posinstellings**-afdeling oop.
+5. Kies die gekonfigureerde **E-posverskaffer**.
+6. Stel **Aantal rekeninge**, **Bergingskwota (MB)**, aliaslimiete, aanstuurders, en outo-antwoorders soos nodig.
+7. Stoor die produk.
 
-Aktiveer webmail-toegang slegs vir voorsieners waar jy die vereiste API-wagwoorde geconfigureer het. As die aksie vir 'n voorsienaar ontbreek, bevestig eers dat die voorsienaar aktief, geconfigureer en webmail-aanmeldingsskakels ondersteun word.
+Slegs verskaffers wat op die **Integrations**-bladsy geaktiveer en volledig gekonfigureer is, verskyn in die verskafferkieser. As die kieser leeg is, konfigureer en toets eers die verskaffer.
 
-## Uitrekening-Voorsiening
+## Voeg e-pos by checkout {#add-email-to-checkout}
 
-Die bykomend kan kliënt-e-pos rekeninge skep as deel van die uitrekening. Dit is nuttig wanneer die plan standaard 'n posbus insluit of wanneer die uitrekeningsformulier e-pos-rekeningbesonderhede insamel.
+E-posprodukte word gewoonlik as byvoegings tot ’n werfplan aangebied. Sien [Checkout-vorms](../../user-guide/configuration/checkout-forms) vir die algemene checkout-redigeerderwerkvloei.
+
+1. Skep of wysig die werfplan wat klante eerste koop.
+2. Voeg die e-posproduk as ’n beskikbare byvoeging/bestelverhoging vir daardie checkout-vloei by.
+3. Bevestig dat die checkout-vorm steeds die normale vereiste werfvelde insluit, veral die werf-URL-/domeinveld.
+4. Voer ’n toets-checkout met ’n toetsklant uit.
+5. Ná checkout, maak die klant se [Account-bladsy](../../user-guide/client-management/account-page) oop en bevestig dat die **E-posrekeninge**-paneel verskyn.
+
+Die e-posdomein word uit die klant se werfdomein geneem. Klante voer nie die e-posdomein in die e-posprodukstap in nie.
+
+## Klantrekening-e-posbestuur {#customer-account-email-management}
+
+Weergawe 1.1.0 voeg ’n e-posbestuurlegstuk by die klant se Account-bladsy. Gebruik dit wanneer klante selfdiens-posbusskepping en -instandhouding vir hul eie werwe moet kan doen.
+
+Vanaf die Account-bladsy kan klante:
+
+1. E-posrekeninge sien wat aan hul huidige e-poslidmaatskap/werfdomein gekoppel is.
+2. ’n Nuwe posbus skep wanneer hul e-posproduk addisionele rekeninge toelaat.
+3. ’n Bestaande posbuswagwoord verander.
+4. Ondersteunde webmail-verskaffers deur SSO of ’n magic-link-aanmelding oopmaak.
+
+Die legstuk gebruik die Ultimate Multisite Account-bladsy se huidige-stelsel, dus word aksies beperk tot die Account-konteks wat die klant besigtig. Dit voorkom dat klante e-posrekeninge bestuur wat aan ’n ander lidmaatskap of werf behoort.
+
+As die klant nie die e-pospaneel sien nie, kontroleer dat hulle ’n **aktiewe e-posproduklidmaatskap** het, dat die lidmaatskap aan ’n werfdomein gekoppel is, en dat die produk ’n gekonfigureerde verskaffer het.
+
+## Gee ’n klant ’n gratis e-posplan {#giving-a-customer-a-free-email-plan}
+
+Om ’n klant e-pos te gee sonder om hulle te hef, ken eers die **e-posreg** toe, en skep dan die posbus of laat die klant dit skep.
+
+Aanbevole opsies:
+
+* **Skep ’n gratis e-posproduk**: stel die e-posprodukprys op gratis/nul, en voeg dan ’n aktiewe lidmaatskap vir daardie klant by vanaf **Ultimate Multisite > Memberships > Add Membership**. Gratis lidmaatskappe is lewenslank totdat dit verander of gekanselleer word. As die e-poslidmaatskap bedoel is om ’n bestaande werf te volg, maak seker dit is aan daardie werf-/domeinkonteks gekoppel.
+* **Gebruik ’n 100%-afslag of gratis checkout-skakel**: laat die klant deur checkout gaan sodat Ultimate Multisite die e-poslidmaatskap en betalingsrekord outomaties skep.
+* **Administrateur-skep ’n posbus**: gaan na **Ultimate Multisite > Email Accounts > Add Email Account** om ’n spesifieke posbus by die verskaffer vir ’n klant te skep. Dit is nuttig vir ondersteuning, maar dit vervang nie die e-posproduklidmaatskap wat die klant se selfdiens-Account-bladsy-nutsgoed aandryf nie.
+
+As jy wil hê die klant moet die posbus self vanaf die Account-bladsy bestuur, maak seker hulle het ’n aktiewe e-poslidmaatskap vir die domein. ’n Handmatig geskepte verskafferposbus sonder daardie lidmaatskap kan bestaan, maar die klant sien dalk nie die selfdiens-e-pospaneel daarvoor nie.
+
+## Administrateur-geskepte rekeninge en "Geen bestelnommer" {#admin-created-accounts-and-no-order-number}
+
+Die **E-posrekeninge**-administrasiebladsy skep of wysig ’n verskafferposbus. Dit is nie die eerste stap om ’n e-posplan te verkoop of toe te ken nie.
+
+Wanneer ’n e-posrekening gewysig word, soek die **Membership**-veld bestaande Ultimate Multisite-lidmaatskappe volgens hul verwysings-/bestelnommer. As jy probeer om ’n rekening toe te wys voordat die klant ’n e-poslidmaatskap het, is daar dalk geen bestelnommer om te kies nie.
+
+Gebruik eerder hierdie volgorde van handelinge:
+
+1. Skep of vind die klant se e-poslidmaatskap. Vir aankope doen checkout dit. Vir ’n komplimentêre plan, skep die lidmaatskap handmatig vanaf [Lidmaatskappe](../../user-guide/administration/managing-memberships) of stuur die klant deur ’n gratis checkout.
+2. Bevestig die lidmaatskap is aktief en gebruik ’n e-posproduk.
+3. Bevestig die e-poslidmaatskap is aan die werfdomein/verskaffer gekoppel.
+4. Skep die posbus vanaf die klant se Account-bladsy of vanaf **Ultimate Multisite > Email Accounts**.
+5. Indien nodig, wysig die posbusrekord en wys die klant, lidmaatskap, en werf toe.
+
+As jy net ’n verskafferposbus vir die klant hoef te skep en nie selfdiens-Account-bladsybestuur nodig het nie, kan die administrateur-geskepte rekening genoeg wees. As jy wil hê die klant moet dit in Ultimate Multisite sien en bestuur, skep ook die e-poslidmaatskap.
+
+## Webmail SSO en magic-link-aanmelding {#webmail-sso-and-magic-link-login}
+
+Webmail SSO gee klante ’n direkte **Maak webmail oop**-aksie vanaf die Account-bladsy. Wanneer dit deur die aktiewe verskaffer ondersteun word, versoek die byvoeging ’n kortlewende toegang-URL en herlei die klant na webmail sonder om hulle te vra om posbusgeloofsbriewe te kopieer.
+
+Verskaffergedrag kan wissel:
+
+* Verskaffers met inheemse SSO-API’s kan ’n direkte geverifieerde webmail-sessie skep.
+* Verskaffers met magic-link-ondersteuning kan ’n tydbeperkte aanmeldskakel genereer.
+* Verskaffers sonder SSO- of magic-link-ondersteuning behoort steeds die posbusbesonderhede en wagwoordbestuuraksies te wys, maar geen eenklik-webmail-knoppie nie.
+
+Aktiveer webmailtoegang slegs vir verskaffers waarvoor jy die vereiste API-geloofsbriewe gekonfigureer het. As die aksie vir ’n verskaffer ontbreek, bevestig eers dat die verskaffer aktief en gekonfigureer is, en webmail-aanmeldskakels ondersteun.
+
+## Checkout-voorsiening {#checkout-provisioning}
+
+Die byvoeging voorsien die e-pos-**lidmaatskapkonteks** tydens checkout. Dit teken die verskaffer, rekeninglimiet, kwota, en werfdomein aan sodat klante hul eie posbusname vanaf die Account-bladsy ná aankoop kan skep.
 
 Aanbevole uitrol:
 
-1. Konfigureer die voorsienaar en planlimiete voordat jy uitrekening-voorsiening aktiveer.
-2. Toets 'n aankoop met 'n staging-produk en bevestig dat die posbus geskep word na die uitrekening.
-3. Hersien die kliëntrekeningsblad om te bevestig dat die nuwe posbus in die e-pos-widget verskyn.
-4. Bevestig wagwoordverandering- en webmail-aksies voordat jy die vloei vir produkte aktiveer.
+1. Konfigureer die verskaffer- en produklimiete voordat jy die e-posproduk aanbied.
+2. Toets ’n aankoop met ’n toetsproduk en bevestig dat die e-poslidmaatskap geskep word.
+3. Hersien die klant se Account-bladsy om te bevestig dat die **E-posrekeninge**-legstuk vir die domein verskyn.
+4. Skep ’n toetposbus vanaf die legstuk.
+5. Bevestig wagwoordveranderings- en webmail-aksies voordat die vloei vir produksieprodukte geaktiveer word.
 
-Indien die voorsiening misluk, kan die kliëntrekening en lidmaatskap steeds bestaan terwyl die posbus administrasie-opvolging benodig. Kontroleer die Ultimate Multisite aktiwiteitslogboeke en die voorsienaar-logboeke voordat jy herhaal.
+As voorsiening misluk, kan die klantrekening en lidmaatskap steeds bestaan terwyl die e-poslidmaatskap of verskafferposbus administrateur-opvolg vereis. Kontroleer die Ultimate Multisite-aktiwiteitslogboeke en die verskafferlogboeke voordat jy weer probeer.
 
-## CyberPanel E-pos Forwarders
+## CyberPanel-e-posaanstuurders {#cyberpanel-email-forwarders}
 
-Vir CyberPanel-ondersteunde netwerke voeg weergawe 1.1.0 e-pos forwarder ondersteuning by. Gebruik forwarders wanneer kliënte adresse benodig soos `info@klient-domein.test` om e-pos na 'n ander posbus te herlei sonder om 'n volledige posbus te skep.
+Vir CyberPanel-gesteunde netwerke voeg weergawe 1.1.0 e-posaanstuurdersteuning by. Gebruik aanstuurders wanneer klante adresse soos `info@customer-domain.test` nodig het om pos na ’n ander inkassie te herlei sonder om ’n volledige posbus te skep.
 
-Voordat jy forwarders aanbied, bevestig dat die CyberPanel-integrasie geconfigureer en bereikbaar is. Kyk na die [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) gids vir die vereiste gasheer, gebruikersnaam, wagwoord en pakketkonstantes.
+Voordat jy aanstuurders aanbied, bevestig dat die CyberPanel-integrasie gekonfigureer en bereikbaar is. Sien die [CyberPanel-integrasie](../../user-guide/administration/cyberpanel-integration)-gids vir die vereiste gasheer, gebruikersnaam, wagwoord, en pakketkonstantes.
 
-## Veranderingslogboek
+## Veranderingslog {#changelog}
 
-### Weergawe 1.1.0 - Vrygestel op 2026-05-05
+### Weergawe 1.1.0 - Vrygestel op 2026-05-05 {#version-110---released-on-2026-05-05}
 
-* Nuut: Webmail SSO en magiese skakel-aanmelding — kliënte kan direk vanaf hul rekening webmail met eend-klik outentisering oopmaak.
-* Nuut: Wagwoordveranderingsfunksionaliteit bygevoeg aan die e-pos rekeningbestuur-widget.
-* Nuut: CyberPanel e-pos forwarder ondersteuning.
-* Nuut: E-pos bestuur-widget op die kliëntrekeningsblad vir self-diens rekening skep en bestuur.
-* Nuut: Kliënt-e-pos rekening skep geïntegreer in die uitrekeningsvloei vir outomatiese voorsiening.
-* Herstel: Rekingsblad-widget-haak opgedateer om die korrekte UMS-registrasiepatroon te gebruik.
-* Herstel: Skep Rekening-formulier vervang met vanilla JS en korrek volledige HTML-dokumentuitvoer.
-* Herstel: E-pos bestuur-widget gebruik nou die UMS currents stelsel vir admin rekeningsbladsye.
-* Herstel: Admin e-pos rekening skep-formulier sluit wagwoordveld in en gebruik Email_Account_Manager.
-* Herstel: Per-versoek log spam verwyder uit Email_Account_Manager inisiële.
-* Verbeter: Instellingsbladsy filter nou om slegs aktiewe en gekonfigureerde e-pos voorsieners te wys.
+* Nuut: Webmail SSO en magic-link-aanmelding — kliënte kan webmail direk vanaf hul Account met eenklik-verifikasie toegang kry.
+* Nuut: Wagwoordveranderingsfunksionaliteit by die e-posrekeningbestuur-widget gevoeg.
+* Nuut: CyberPanel-e-posaanstuurder-ondersteuning.
+* Nuut: E-posbestuur-widget op die kliënt se Account-bladsy vir selfdiens-rekeningskepping en -bestuur.
+* Nuut: Kliënt-e-posrekening-aanspraakvoorsiening geïntegreer in die checkout-vloei.
+* Regstelling: Account-bladsy-widget-hook opgedateer om die korrekte UMS-registrasiepatroon te gebruik.
+* Regstelling: Create Account-vorm vervang met vanilla JS en korrekte volledige HTML-dokumentuitset.
+* Regstelling: E-posbestuur-widget gebruik nou die UMS currents-stelsel vir admin-rekeningbladsye.
+* Regstelling: Admin-e-posrekeningskeppingsvorm sluit wagwoordveld in en gebruik Email_Account_Manager.
+* Regstelling: Per-versoek-logstrooipos verwyder uit Email_Account_Manager-inisialisering.
+* Verbeter: Settings-bladsy filter nou om slegs aktiewe en gekonfigureerde e-posverskaffers te wys.
 
-## Algemene Vrae
+## Gereelde Vrae {#frequently-asked-questions}
 
-## Kan kliënte hul eie e-pos rekeninge skep?
+### Kan kliënte hul eie e-posrekeninge skep? {#can-customers-create-their-own-email-accounts}
 
-Ja. Wanneer die kliëntrekening-widget geaktiveer is en die plan e-pos rekeninge toelaat, kan kliënte hul eie posbusse skep en bestuur vanaf die rekeningsblad.
+Ja. Wanneer die kliënt ’n aktiewe e-posmembership vir ’n domein het en die product bykomende rekeninge toelaat, kan kliënte hul eie posbusse vanaf die Account-bladsy skep en bestuur.
 
-## Ondersteun elke voorsienaar webmail SSO?
+### Ondersteun elke verskaffer webmail SSO? {#does-every-provider-support-webmail-sso}
 
-Nee. SSO- en magiese skakel-ondersteuning hang af van die aktiewe e-pos voorsienaar. Voorsieners sonder 'n toegangskakel API kan steeds posbus skep en wagwoorde verander.
+Nee. SSO- en magic-link-ondersteuning hang af van die aktiewe e-posverskaffer. Verskaffers sonder ’n toegangskakel-API kan steeds posbusskepping en wagwoordveranderings ondersteun.
 
-## Kan administrateurs e-pos rekeninge vir kliënte skep?
+### Kan administrateurs e-posrekeninge vir kliënte skep? {#can-administrators-create-email-accounts-for-customers}
 
-Ja. Administrateurs kan e-pos rekeninge skep vanaf die admin-koppelvlak, insluitend die stel van die aanvanklike wagwoord wanneer die rekening geskep word.
+Ja. Administrateurs kan e-posrekeninge vanaf die admin-koppelvlak skep, insluitend die stel van die aanvanklike wagwoord wanneer die rekening geskep word. Vir kliënt-selfdiensbestuur, maak ook seker dat die kliënt ’n aktiewe e-posmembership vir die domein het.
 
-## Is forwarders dieselfde as posbusse?
+### Kan ek ’n e-posrekening gratis weggee? {#can-i-give-an-email-account-away-for-free}
 
-Nee. 'n Posbus stoor e-pos en het aanmeldingswagwoorde. 'n Forwarder herlei e-pos na 'n ander adres en verskaf nie 'n aparte posbus nie.
+Ja. Skep ’n gratis/nulprys Email product en voeg dit as ’n aktiewe membership vir die kliënt by, of laat die kliënt checkout met ’n 100%-afslag voltooi. Nadat die e-posmembership bestaan, kan die kliënt of ’n administrateur die werklike posbus skep.
+
+### Waarom vra die toekenning van ’n e-posrekening vir ’n bestelnommer? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Die Membership-veld soek ’n bestaande Ultimate Multisite membership volgens sy verwysing-/bestelnommer op. As die kliënt nie ’n e-posproduct gekoop het nie en jy nie handmatig ’n e-posmembership geskep het nie, is daar geen e-posmembership/bestelling om toe te ken nie. Skep eers die e-posmembership, skep of ken dan die posbus toe.
+
+### Is aanstuurders dieselfde as posbusse? {#are-forwarders-the-same-as-mailboxes}
+
+Nee. ’n Posbus stoor pos en het aanmeldbewyse. ’n Aanstuurder herlei pos na ’n ander adres en bied nie ’n aparte inkassie nie.

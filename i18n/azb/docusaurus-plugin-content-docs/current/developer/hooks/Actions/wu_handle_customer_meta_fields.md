@@ -4,11 +4,11 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields
+# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 Bu aksiyon, eklenti geliştiricilerinin ihtiyaç duydukları durumlarda meta verileri farklı şekillerde kaydetmelerine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Ad | Tip | Açıklama |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Bu aksiyon, eklenti geliştiricilerinin ihtiyaç duydukları durumlarda meta ver
 | $customer | `\Customer` | Ultimate Multisite müşteri nesnesi. |
 | $checkout | `\Checkout` | Ödeme (checkout) sınıfı. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) dosyasının 1211. satırında tanımlanmıştır.

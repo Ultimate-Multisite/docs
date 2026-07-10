@@ -3,18 +3,18 @@ title: 主題建立器功能
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Abilities: Scaffold and Activate Block Themes
+# Theme Builder Abilities: Scaffold and Activate Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 引入了兩項強大的功能，讓您可以直接透過聊天介面生成和部署自訂的 Block Themes（區塊主題）。
 
-## 概述
+## 概述 {#overview}
 
 **scaffold-block-theme** 和 **activate-theme** 這兩項功能讓 Agent 能夠：
 - 根據您的需求，生成完整、可直接上線的 Block Themes
 - 自動在您的網站上啟用主題，無需手動操作
 - 透過引導式的設計決策，建立一致的視覺風格
 
-## Scaffold Block Theme（搭建 Block Theme）
+## Scaffold Block Theme（搭建 Block Theme） {#scaffold-block-theme}
 
 **scaffold-block-theme** 功能會生成一個具有完整主題結構的 WordPress Block Theme，包括：
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 引入了兩項強大的功能，讓您可以直接透
 - 自訂的 Block 風格和變體
 - 主題的元數據和支援宣告
 
-### 如何呼叫
+### 如何呼叫 {#how-to-invoke}
 
 在您與 Superdav AI Agent 的聊天中，您可以要求生成主題：
 
@@ -38,7 +38,7 @@ Agent 將會：
 3. 建立所有必要的主題檔案
 4. 準備主題以供啟用
 
-### 預期輸出
+### 預期輸出 {#expected-output}
 
 當此功能成功執行時，您會看到：
 
@@ -56,11 +56,11 @@ Agent 將會：
   Status: Ready to activate
 ```
 
-## Activate Theme（啟用主題）
+## Activate Theme（啟用主題） {#activate-theme}
 
 **activate-theme** 功能會將您的網站切換到一個新搭建或現有的 Block Theme。
 
-### 如何呼叫
+### 如何呼叫 {#how-to-invoke-1}
 
 在搭建完主題後，您可以立即啟用它：
 
@@ -74,7 +74,7 @@ Agent 將會：
 "Switch to the Twentytwentyfour theme"
 ```
 
-### 預期輸出
+### 預期輸出 {#expected-output-1}
 
 當啟用成功時：
 
@@ -92,7 +92,7 @@ Agent 將會：
   Note: Check your homepage to verify the layout
 ```
 
-## 工作流程：搭建與啟用
+## 工作流程：搭建與啟用 {#workflow-scaffold-and-activate}
 
 一個典型的工作流程會結合這兩個功能：
 
@@ -102,7 +102,7 @@ Agent 將會：
 4. **啟用**：「現在啟用這個主題」
 5. **驗證**：造訪您的網站，確認新設計已上線
 
-## Design Tokens 和自訂化
+## Design Tokens 和自訂化 {#design-tokens-and-customization}
 
 搭建的主題使用 WordPress 的設計 Token（透過 `theme.json`）來管理以下內容：
 
@@ -114,14 +114,14 @@ Agent 將會：
 
 這些 Token 都集中在 `theme.json` 中，讓您只需修改一個檔案，就能輕鬆調整整個設計系統。
 
-## 限制與注意事項
+## 限制與注意事項 {#limitations-and-notes}
 
 - 主題會被搭建到 `/wp-content/themes/` 目錄下，並且必須遵循 WordPress 的命名慣例
 - 啟用主題需要您在 WordPress 網站上擁有適當的權限
 - 主題中的自訂 PHP 程式碼極少；複雜的功能請使用 plugins
 - Block Themes 在搭配 WordPress 5.9 或更高版本時表現最佳
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
 **搭建後主題沒有出現**
 - 驗證主題目錄是否存在且權限正確
@@ -138,7 +138,7 @@ Agent 將會：
 - 清除任何快取 plugins
 - 檢查您的 WordPress 版本是否支援您使用的 Token
 
-## 下一步
+## 下一步 {#next-steps}
 
 啟用主題後，您可以：
 - 使用 **Design System Aesthetics skill** 來精修字體、顏色和間距

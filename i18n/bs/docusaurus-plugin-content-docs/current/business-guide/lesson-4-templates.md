@@ -3,15 +3,15 @@ title: 'Lekcija 4: Izgradnja nišnih šablona'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lekcija 4: Izgradnja šablona za nišu
+# Lekcija 4: Izgradnja šablona za nišu {#lesson-4-building-niche-templates}
 
 Šabloni su jezgro vaše vrijednosti za nišu. Vlasnik fitness studija koji se prijavi i vidi sajt koji već izgleda kao fitness sajt — sa rasporedima časova, profilima trenera i pravom vizualnom opremom — mnogo je skloniji da ostane s nama nego onaj koji vidi prazno platno.
 
-## Gdje smo stali
+## Gdje smo stali {#where-we-left-off}
 
 Imamo funkcionalnu FitSite mrežu sa instaliranim i konfigurisanim Ultimate Multisite. Sada ćemo izgraditi šablone koji će FitSite učiniti da izgleda namjerno napravljen za fitness poslovanja.
 
-## Zašto su šabloni za nišu važni
+## Zašto su šabloni za nišu važni {#why-niche-templates-matter}
 
 Opći šabloni prisiljavaju vaše klijente da urade težak posao: da sami shvate koje stranice im trebaju, koji sadržajni strukturira radi, i kako to sve učiniti da izgleda pravilno za njihovu industriju. Šabloni za nišu eliminiraju tu težinu.
 
@@ -24,11 +24,11 @@ Vlasnik fitness studija koji se prijavi na FitSite trebao bi vidjeti:
 
 Oni samo unose svoje detalje. Ne počinju od nule.
 
-## Planiranje šablona
+## Planiranje šablona {#planning-your-templates}
 
 Prije izgradnje, odlučite koje šablone ćete ponuditi. Za FitSite, kreiraćemo tri:
 
-### Šablon 1: Studio Esencijal (Studio Essential)
+### Šablon 1: Studio Esencijal (Studio Essential) {#template-1-studio-essential}
 
 Za male studije i privatne trenere.
 
@@ -39,7 +39,7 @@ Za male studije i privatne trenere.
 - **Kontakt** stranica sa mapom lokacije i formularom
 - **Čist, modern dizajn** sa paletom boja prikladnom za fitness
 
-### Šablon 2: Gym Pro
+### Šablon 2: Gym Pro {#template-2-gym-pro}
 
 Za uspostavljene teretane sa više usluga.
 
@@ -50,7 +50,7 @@ Za uspostavljene teretane sa više usluga.
 - **Testimoniali** sekcija na naslovnoj stranici
 - **Više istaknutih** opcija brendiranja
 
-### Šablon 3: Fitness Chain
+### Šablon 3: Fitness Chain {#template-3-fitness-chain}
 
 Za operacije sa više lokacija.
 
@@ -60,17 +60,17 @@ Za operacije sa više lokacija.
 - **Centralizirano brendiranje** sa detaljima specifičnim za lokaciju
 - **Katalog osoblja** za sve lokacije
 
-## Izgradnja sajta šablona
+## Izgradnja sajta šablona {#building-a-template-site}
 
 U Ultimate Multisiteu, šablon je jednostavno WordPress sajt konfigurisan na način na koji želite da izgledaju novi klijentski sajtovi. Evo kako ga kreirati:
 
-### Korak 1: Kreiranje sajta šablona
+### Korak 1: Kreiranje sajta šablona {#step-1-create-the-template-site}
 
 1. Idite na **Sites > Add New** u vašem network adminu
 2. Kreirajte sajt nazvan `template-studio-essential`
 3. Ovaj sajt postaje vaše radno platno
 
-### Korak 2: Instalacija i konfiguracija teme
+### Korak 2: Instalacija i konfiguracija teme {#step-2-install-and-configure-the-theme}
 
 Prebacite se na dashboard sajta šablona i:
 
@@ -82,7 +82,7 @@ Prebacite se na dashboard sajta šablona i:
 Izaberite temu koja je dovoljno fleksibilna da izgleda dobro za fitness, ali nije prekomplicirana da je vaši klijenti ne mogu upravljati. Teme poput Astra, GeneratePress ili Kadence dobro funkcioniraju jer su lagane, prilagodljive i dobro podržane.
 :::
 
-### Korak 3: Kreiranje stranica
+### Korak 3: Kreiranje stranica {#step-3-create-the-pages}
 
 Izgradite svaku stranicu sa:
 
@@ -92,7 +92,7 @@ Izgradite svaku stranicu sa:
 
 Zamjenski sadržaj neka bude uputjiv gdje je to moguće. Umjesto generičkog popunjavajućeg teksta, napišite sadržaj poput: "Zamijenite ovo sa kratkim opisom vašeg studija i onoga što ga čini posebnim. Spomenite svoju trenersku filozofiju, godine iskustva ili šta klijenti mogu očekivati."
 
-### Korak 4: Konfiguracija pluginova
+### Korak 4: Konfiguracija pluginova {#step-4-configure-plugins}
 
 Instalirajte i aktivirajte pluginove koji fitness studiji trebaju:
 
@@ -100,7 +100,7 @@ Instalirajte i aktivirajte pluginove koji fitness studiji trebaju:
 - Plugin za kontakt formular
 - SEO plugin (prekonfigurisan sa podrazumevanim vrijednostima relevantnim za fitness)
 
-### Korak 5: Označavanje kao šablon
+### Korak 5: Označavanje kao šablon {#step-5-mark-as-template}
 
 1. Idite na **Ultimate Multisite > Sites**
 2. Uredite sajt šablona
@@ -108,7 +108,7 @@ Instalirajte i aktivirajte pluginove koji fitness studiji trebaju:
 
 Ponovite ovaj proces za svaki šablon koji želite ponuditi.
 
-## Lista provjere kvalitete šablona
+## Lista provjere kvalitete šablona {#template-quality-checklist}
 
 Prije što šablona učinite dostupnim, provjerite:
 
@@ -121,7 +121,7 @@ Prije što šablona učinite dostupnim, provjerite:
 - [ ] Nema pokvarenih linkova ili nedostajućih resursa
 - [ ] Brzina učitavanja stranice je prihvatljiva
 
-## FitSite mreža do sada
+## FitSite mreža do sada {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Spreman za konfiguraciju planova (sljedeća lekcija)
 ```
 
-## Što smo izgradili u ovoj lekciji
+## Što smo izgradili u ovoj lekciji {#what-we-built-this-lesson}
 
 - **Tri šablona specifična za nišu** dizajnirana za različite veličine fitness poslovanja
 - **Sadržaj i vizualni materijal prikladni za fitness** koji platformu čini namjerno napravljenom

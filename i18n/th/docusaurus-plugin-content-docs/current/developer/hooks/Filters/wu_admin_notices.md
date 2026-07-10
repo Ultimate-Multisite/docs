@@ -4,11 +4,11 @@ title: ตัวกรอง - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 อนุญาตให้นักพัฒนาสามารถกรองข้อความแจ้งเตือน (admin notices) ที่เพิ่มโดย Ultimate Multisite ได้
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | ระบุว่าข้อความแจ้งเตือนที่สามารถปิดได้ (dismissable notices) ได้ถูกกรองออกไปแล้วหรือไม่ |
 | $dismissed_messages | `array` | รายการคีย์ของข้อความแจ้งเตือนที่ถูกปิดไปแล้ว |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 กำหนดไว้ใน [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) บรรทัดที่ 121
 
 
-## Returns
+## Returns {#returns}

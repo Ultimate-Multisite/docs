@@ -4,11 +4,11 @@ title: Filter - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filter: wu_membership_renewal_expiration_date
+# Filter: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Sinusuri ng filter na ito ang kalkuladong petsa ng pag-expire upang matiyak na ito ay itatakda pagkatapos ng pag-renew.
 
-## Mga Parameter
+## Mga Parameter {#parameters}
 
 | Name | Type | Paglalarawan |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Sinusuri ng filter na ito ang kalkuladong petsa ng pag-expire upang matiyak na i
 | $membership_id | `int` | Ang ID ng membership. |
 | $membership | `\Membership` | Ang object ng membership. |
 
-### Mula
+### Mula {#since}
 
 - 2.0.0
-### Pinagmulan
+### Pinagmulan {#source}
 
 Tinukoy sa [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) sa linya 2192

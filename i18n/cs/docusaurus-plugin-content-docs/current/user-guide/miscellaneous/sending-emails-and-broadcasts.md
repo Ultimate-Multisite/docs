@@ -1,120 +1,124 @@
 ---
-title: Odesílání e-mailů a hromadných zpráv
+title: Odesílání e-mailů a hromadných rozesílek
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Odesílání e-mailů a hromadných oznámení (v2)
+# Odesílání e-mailů a Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
-Ultimate Multisite obsahuje funkci, která vám umožní komunikovat se zákazníky pomocí e-mailů zasílaných konkrétním uživatelům nebo skupinám uživatelů. Můžete také zobrazovat oznámení přímo v jejich administraci a informovat je o důležitých novinkách.
+Ultimate Multisite obsahuje funkci, která vám umožní komunikovat se zákazníky odesláním e-mailu cílenému uživateli nebo skupině uživatelů, stejně jako odesíláním oznámení na jejich admin dashboard pro vysílání oznámení
 
-## Zobrazování oznámení v administraci zákazníků pomocí hromadných oznámení
+## Přidání admin oznámení na dashboard vašich zákazníků pomocí Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Pomocí funkce hromadných oznámení v Ultimate Multisite můžete přidávat **administrátorská oznámení** do administrace podřízených webů vašich uživatelů.
+Pomocí funkce Broadcast Ultimate Multisite můžete přidat **admin oznámení** na admin dashboard subsitu vašeho uživatele.
 
-To se hodí například tehdy, když potřebujete informovat o plánované údržbě systému nebo nabídnout stávajícím uživatelům nové produkty či služby. Takto bude oznámení vypadat v administraci uživatele.
+To je mimořádně užitečné, pokud potřebujete učinit oznámení, například o údržbě systému nebo nabídce nových produktů či služeb vašim stávajícím uživatelům. Takto bude admin oznámení vypadat na dashboardu vašeho uživatele.
 
-![Hromadné oznámení zobrazené v administraci zákazníka](/img/admin/broadcasts-list.png)
+<!-- Snímek obrazovky není k dispozici: Vysílané admin oznámení zobrazené na dashboardu subsitu zákazníka -->
 
-Chcete-li vytvořit administrátorské oznámení, přejděte do administrace sítě a v menu **Ultimate Multisite** najdete položku **Broadcasts**.
+Chcete-li spustit admin oznámení, přejděte na svůj síťový admin dashboard a v nabídce **Ultimate Multisite** najdete možnost **Broadcasts**.
 
-![Menu Broadcasts v administraci Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Stránka seznamu Broadcasts v administraci Ultimate Multisite](/img/admin/broadcasts-list.png)
+
+Můžete také upravovat stávající Broadcasts:
+
+![Rozhraní pro úpravu Broadcast](/img/admin/broadcast-edit.png)
 
 Na této stránce klikněte nahoře na tlačítko **Add Broadcast**.
 
-Zobrazí se modální okno pro přidání oznámení, kde si můžete vybrat typ oznámení, které chcete odeslat.
+Tím se otevře modální okno Add broadcast, kde můžete zvolit, jaký typ Broadcast chcete odeslat.
 
-Vyberte **Message** a klikněte na tlačítko **Next Step**.
+Vyberte **Message** a poté klikněte na tlačítko **Next Step**.
 
-![Modální okno pro přidání oznámení s vybraným typem Message](/img/admin/broadcasts-list.png)
+![Modální okno Add broadcast s vybranou možností Message](/img/admin/broadcast-add-message.png)
 
-V dalším okně vyberte buď **Target customer** (cílového zákazníka), nebo **Target product** (cílový produkt). Můžete vybrat více uživatelů nebo více produktů najednou.
+Další okno vás vyzve k zadání buď **Target customer**, nebo **Target product**. Všimněte si, že můžete vybrat více než jednoho uživatele nebo více než jeden produkt.
 
-Pro vyhledání uživatelského účtu nebo produktu začněte psát klíčové slovo do pole.
+Chcete-li vyhledat uživatelský Account nebo produkt, musíte začít psát klíčové slovo do pole.
 
-V poli **Message type** můžete vybrat barvu oznámení. Tím zdůrazníte naléhavost vaší zprávy.
+V poli **Message type** můžete vybrat barvu oznámení. Tím zdůrazníte naléhavost své zprávy.
 
-Poté klikněte na **Next Step**.
+Poté můžete kliknout na **Next Step**.
 
-![Výběr cílového zákazníka a produktu pro oznámení](/img/admin/broadcasts-list.png)
+![Pole Target customers, Target product a Message type pro Message Broadcast](/img/admin/broadcast-message-targets.png)
 
-V dalším okně můžete začít psát zprávu – zadejte předmět a obsah oznámení, které chcete uživatelům zobrazit.
+V dalším okně můžete začít psát svou zprávu zadáním předmětu a obsahu/zprávy, kterou chcete uživatelům odeslat jako Broadcast.
 
-![Editor předmětu a obsahu hromadného oznámení](/img/admin/broadcasts-list.png)
+![Předmět Broadcast zprávy a editor obsahu v kroku sestavení](/img/admin/broadcast-edit.png)
 
-Po vytvoření zprávy klikněte na tlačítko **Send**.
+Po vytvoření zprávy můžete kliknout na tlačítko **Send**.
 
-A to je vše. Oznámení se okamžitě zobrazí v administraci vašich uživatelů.
+A to je vše. Admin oznámení by se mělo okamžitě zobrazit na dashboardu vašeho uživatele.
 
-## Odesílání e-mailů zákazníkům
+## Odesílání e-mailů zákazníkům {#send-emails-to-your-customers}
 
-Pomocí funkce hromadných oznámení v Ultimate Multisite můžete svým uživatelům posílat e-maily. Můžete e-mail odeslat pouze konkrétním uživatelům, nebo zacílit skupinu uživatelů podle produktu či tarifu, který mají předplacený.
+Pomocí funkce Broadcast Ultimate Multisite můžete svým uživatelům odeslat e-mail. Máte možnost odeslat e-mail pouze konkrétním uživatelům nebo zacílit na konkrétní skupinu uživatelů podle produktu nebo plánu, ke kterému jsou přihlášeni.
 
-Chcete-li spustit hromadné rozesílání e-mailů, přejděte do administrace sítě a v menu Ultimate Multisite najdete položku Broadcast.
+Chcete-li spustit e-mailový Broadcast, přejděte na svůj síťový admin dashboard a v nabídce Ultimate Multisite najdete možnost Broadcast.
 
-![Stránka Broadcasts v administraci Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Stránka seznamu Broadcasts použitá jako výchozí bod pro e-mailový Broadcast](/img/admin/broadcasts-list.png)
 
 Na této stránce klikněte nahoře na tlačítko **Add broadcast**.
 
-Zobrazí se modální okno pro přidání oznámení, kde si můžete vybrat typ oznámení, které chcete odeslat. Vyberte **Email** a klikněte na tlačítko **Next Step**.
+Tím se otevře modální okno Add broadcast, kde můžete zvolit, jaký typ Broadcast chcete odeslat. Vyberte **Email** a poté klikněte na tlačítko **Next Step**.
 
-![Modální okno pro přidání oznámení s vybraným typem Email](/img/admin/broadcasts-list.png)
+![Modální okno Add broadcast s vybranou možností Email](/img/admin/broadcast-add-email.png)
 
-V dalším okně vyberte buď **Target customer** (cílového zákazníka), nebo **Target product** (cílový produkt). Můžete vybrat více uživatelů nebo více produktů najednou.
+Další okno vás vyzve k zadání buď **Target customer**, nebo **Target produc** t. Všimněte si, že můžete vybrat více než jednoho uživatele nebo více než jeden produkt.
 
-Pro vyhledání uživatelského účtu nebo produktu začněte psát klíčové slovo do pole.
+Chcete-li vyhledat uživatelský Account nebo produkt, musíte začít psát klíčové slovo do pole.
 
-Jakmile máte cílovou skupinu vybranou, klikněte na **Next Step**.
+Jakmile je vybrána vaše cílová skupina, můžete kliknout na **Next Step**.
 
-![Výběr cílového zákazníka a produktu pro e-mailové oznámení](/img/admin/broadcasts-list.png)
+![Výběr Target customers a Target product pro Email Broadcast](/img/admin/broadcast-email-targets.png)
 
-V dalším okně můžete začít psát e-mail – zadejte předmět a obsah zprávy, kterou chcete uživatelům odeslat.
+V dalším okně můžete začít psát svůj e-mail zadáním předmětu a obsahu/zprávy, kterou chcete uživatelům odeslat.
 
-![Editor předmětu a obsahu e-mailového oznámení](/img/admin/broadcasts-list.png)
+<!-- Snímek obrazovky není k dispozici: Předmět e-mailového Broadcast a editor obsahu v kroku sestavení -->
 
-Po vytvoření zprávy klikněte na tlačítko **Send**.
+Po vytvoření zprávy můžete kliknout na tlačítko **Send**.
 
-A takto jednoduše můžete pomocí funkce hromadných oznámení posílat e-maily svým koncovým uživatelům.
+A tak snadné je odeslat e-mail vašim koncovým uživatelům pomocí funkce Broadcast.
 
-## Systémové e-maily
+## Systémové e-maily {#system-emails}
 
-Systémové e-maily v Ultimate Multisite jsou **automatická upozornění**, která systém odesílá po určitých akcích, jako je registrace, platba, mapování domény apod. Tyto e-maily můžete upravovat v nastavení Ultimate Multisite. K dispozici je také funkce pro reset a import existujícího nastavení z jiné instalace Ultimate Multisite.
+Systémové e-maily v Ultimate Multisite jsou **automatická oznámení** odesílaná systémem po určitých akcích, jako je registrace, platba, mapování domény atd. Tyto e-maily lze upravovat nebo měnit v nastaveních Ultimate Multisite. Obsahuje také funkci, která vám umožní resetovat a importovat stávající nastavení z jiné instalace Ultimate Multisite.
 
-### Reset a import
+### Resetování a import {#resetting--importing}
 
-Nové verze Ultimate Multisite i doplňky mohou průběžně registrovat nové e-maily.
+Nové verze Ultimate Multisite, stejně jako add-ony, mohou a budou čas od času registrovat nové e-maily.
 
-Abychom předešli konfliktům a dalším problémům, **nové e-mailové šablony se do systémových e-mailů na vaší instalaci nepřidávají automaticky**, pokud nejsou nezbytné pro správné fungování dané funkce.
+Abychom předešli konfliktům a dalším problémům, **nepřidáme nové e-mailové šablony jako System Emails do vaší instalace automaticky**, pokud nejsou zásadní pro správné fungování dané funkce.
 
-Super administrátoři a agenti však mohou nově registrované e-maily importovat pomocí nástroje pro import. Tento proces vytvoří nový systémový e-mail s obsahem a konfigurací nové e-mailové šablony, což super administrátorovi umožní provést libovolné úpravy nebo ponechat vše beze změny.
+Super admini a agenti však mohou tyto nově registrované e-maily importovat pomocí nástroje pro import. Tento proces vytvoří nový systémový e-mail s obsahem a konfigurací nové e-mailové šablony, což super adminovi umožní provést libovolné úpravy nebo je ponechat tak, jak jsou.
 
-#### Jak importovat systémové e-maily
+#### Jak importovat systémové e-maily {#how-to-import-system-emails}
 
-Přejděte na stránku nastavení Ultimate Multisite a otevřete záložku **Emails**.
+Přejděte na stránku Ultimate Multisite Settings a otevřete kartu **Emails**.
 
-![Záložka Emails v nastavení Ultimate Multisite](/img/config/settings-emails.png)
+![Karta Emails v nastaveních Ultimate Multisite zobrazující sekci System Emails](/img/config/settings-emails-tab.png)
 
 Poté v postranním panelu klikněte na tlačítko **Customize System Emails**.
 
-![Tlačítko Customize System Emails v postranním panelu](/img/config/settings-emails.png)
+<!-- Snímek obrazovky není k dispozici: Tlačítko Customize System Emails na postranním panelu System Emails -->
 
-Na stránce System Emails uvidíte nahoře akční tlačítko **Reset & Import**. Kliknutím na něj otevřete modální okno pro import a reset.
+Na stránce System Emails uvidíte nahoře akční tlačítko **Reset & Import**. Kliknutí na toto tlačítko by mělo otevřít modální okno pro import a resetování.
 
-![Akční tlačítko Reset and Import na stránce System Emails](/img/config/settings-emails.png)
+![Akční tlačítko Reset nebo Import na administrační stránce System Emails](/img/admin/system-emails-reset-import.png)
 
-Poté můžete přepnout možnosti Import Emails a zobrazit, které systémové e-maily jsou k dispozici pro import.
+Poté můžete přepnout možnosti Import Emails a zobrazit, které systémové e-maily jsou k dispozici k importu.
 
-![Možnosti Import Emails zobrazující dostupné systémové e-maily](/img/config/settings-emails.png)
+<!-- Snímek obrazovky není k dispozici: Modální okno Obnovit a importovat s rozbalenými možnostmi Importovat e-maily -->
 
-#### Resetování systémových e-mailů
+#### Obnovení systémových e-mailů {#reseting-system-emails}
 
-Někdy zjistíte, že úpravy, které jste v e-mailové šabloně provedli, vám už nevyhovují a chtěli byste ji vrátit do **výchozího stavu**.
+Jindy si uvědomíte, že změny, které jste provedli v dané šabloně e-mailu, vám už nevyhovují a chcete ji obnovit do jejího **výchozího stavu**.
 
-V takovém případě máte dvě možnosti: můžete systémový e-mail jednoduše smazat a znovu importovat (podle výše uvedeného postupu) – tím se však vymažou statistiky odesílání a další údaje, proto tato metoda není preferovaná.
+V takových případech máte dvě možnosti: můžete systémový e-mail jednoduše smazat a znovu jej importovat (podle pokynů výše) – tím se však vymažou metriky odesílání a další věci, takže tato metoda je nejméně preferovaná.
 
-Nebo můžete použít nástroj **Reset & Import** k resetování dané e-mailové šablony.
+Nebo můžete k obnovení této šablony e-mailu použít **nástroj Obnovit a importovat**.
 
-Chcete-li resetovat e-mailovou šablonu, postupujte podle výše uvedených kroků, dokud se nedostanete k nástroji Reset & Import. Poté přepněte možnost **Reset** a vyberte e-maily, které chcete vrátit do výchozího obsahu.
+Chcete-li obnovit šablonu e-mailu, postupujte podle kroků výše, dokud se nedostanete k nástroji Obnovit a importovat, a poté přepněte možnost **Obnovit** a vyberte e-maily, které chcete obnovit zpět na jejich výchozí obsah.
 
-![Možnost Reset pro obnovení e-mailových šablon do výchozího stavu](/img/config/settings-emails.png)
+<!-- Snímek obrazovky není k dispozici: Modální okno Obnovit a importovat s rozbalenými možnostmi Obnovit e-maily -->

@@ -4,11 +4,11 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 এই ফিল্টাৰে ডেভেলপাৰসকলক Ultimate Multisite দ্বাৰা যোগ কৰা অ্যাডমিন নোটিচ ফিল্টাৰ কৰিবলৈ অনুমতি দিয়ে।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 | $filter | `string` | যদি আঁতৰাব পৰা নোটিচবোৰ ফিল্টাৰ কৰা হৈছে। |
 | $dismissed_messages | `array` | আঁতৰাই দিয়া নোটিচৰ কীসমূহৰ তালিকা। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) ত লাইন ১২১ मा সংজ্ঞায়িত কৰা হৈছে।
 
 
-## Returns
+## Returns {#returns}

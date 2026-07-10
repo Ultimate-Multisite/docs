@@ -3,11 +3,11 @@ title: Напреднали примери за код
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Напреднали Примери за Код
+# Напреднали Примери за Код {#advanced-code-examples}
 
 Тези примери демонстрират напреднали модели за интеграция с Ultimate Multisite.
 
-## Двигател за Динамично Ценообразуване
+## Двигател за Динамично Ценообразуване {#dynamic-pricing-engine}
 
 Двигател за ценообразуване, базиран на правила, който прилага отстъпки за обем, лоялност и сезонност:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Напреднало Установяване на Сайтове (Site Provisioning)
+## Напреднало Установяване на Сайтове (Site Provisioning) {#advanced-site-provisioning}
 
 Автоматично конфигуриране на нови сайтове с plugins, SSL, CDN, резервни копия и мониторинг, базирано на функциите на плана:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Система за Персонализирани Ограничения
+## Система за Персонализирани Ограничения {#custom-limitations-system}
 
 Проследяване и прилагане на лимити на ресурсите с предупреждения за използване:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Атомичен Брояч с `increment_item()`
+## BerlinDB Атомичен Брояч с `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 добави метод `increment_item()` към класа `Query` на BerlinDB. Използвайте го, за да извършвате безопасни, атомарни инкременти на числови колони, без да имате проблеми с "прочитане-модифициране-записване" (read-modify-write races) — това е полезно за броячи, квоти за използване и проверки за ограничаване на честотата, които работят при едновременни заявки.
 
-### Сигнатура на метода
+### Сигнатура на метода {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 добави метод `increment_item()` към кл
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Основно Използване
+### Основно Използване {#basic-usage}
 
 ```php
 // Добавяне на 1 към колоната `api_calls` за членство с ID 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Проследяване на Използването на API на Членство
+### Проследяване на Използването на API на Членство {#tracking-api-usage-per-membership}
 
 Практически модел за прилагане на лимити на честотата на API на ниво членство:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Защо `increment_item()` вместо `update_item()`
+### Защо `increment_item()` вместо `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Нативният подход "прочитане-модифициране-записване" (read-modify-write) е опасен при едновременни заявки:
 

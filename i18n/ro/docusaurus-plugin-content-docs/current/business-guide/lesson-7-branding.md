@@ -3,15 +3,15 @@ title: 'Lecția 7: Personalizarea'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lecția 7: Să-l faci să fie al tău
+# Lecția 7: Să-l faci să fie al tău {#lesson-7-making-it-yours}
 
 Clienții tăi nu trebuie să aibă niciodată senzația că folosesc „un plugin WordPress”. Ar trebui să simtă că folosesc FitSite — o platformă construită pentru industria lor. Această lecție acoperă branding-ul, white-labeling-ul și cum să faci ca platforma să pară un produs propriu.
 
-## Unde ne-am oprit
+## Unde ne-am oprit {#where-we-left-off}
 
 FitSite are un flux de checkout funcțional care îl ghidează pe proprietarii de studiouri de fitness de la selectarea planului până la un site activ. Acum, facem ca întreaga experiență să pară un produs coerent și brandat.
 
-## Domeniul Platformei Tale
+## Domeniul Platformei Tale {#your-platform-domain}
 
 Fundamentul brandului tău este domeniul tău. Pentru FitSite:
 
@@ -19,7 +19,7 @@ Fundamentul brandului tău este domeniul tău. Pentru FitSite:
 - **Site-urile clienților**: `studioname.fitsite.com` (subdomenii)
 - **Domenii personalizate**: Clienții cu planurile Growth și Pro pot mapa propriul domeniu
 
-### Configurarea Domeniului Tău
+### Configurarea Domeniului Tău {#setting-up-your-domain}
 
 1. Înregistrează domeniul platformei tale
 2. Atinge-l către furnizorul tău de hosting
@@ -28,11 +28,11 @@ Fundamentul brandului tău este domeniul tău. Pentru FitSite:
 
 Vezi [Cum să configurezi maparea domeniului](/user-guide/domain-mapping/how-to-configure-domain-mapping) pentru instrucțiuni detaliate.
 
-## White-Labeling Experiența Adminului
+## White-Labeling Experiența Adminului {#white-labeling-the-admin-experience}
 
 Când un proprietar de studio de fitness se autentifică pe dashboard-ul său, ar trebui să vadă brandul tău, nu brandul WordPress sau Ultimate Multisite.
 
-### Pagina de Login Personalizată
+### Pagina de Login Personalizată {#custom-login-page}
 
 Customizează pagina de login WordPress pentru a afișa:
 
@@ -40,7 +40,7 @@ Customizează pagina de login WordPress pentru a afișa:
 - Imagini de fundal potrivite pentru fitness
 - Culorile brandului tău
 
-### Branding-ul Dashboard-ului
+### Branding-ul Dashboard-ului {#dashboard-branding}
 
 Folosește addon-ul [Admin Page Creator](/addons/admin-page-creator) sau CSS personalizat pentru a:
 
@@ -48,7 +48,7 @@ Folosește addon-ul [Admin Page Creator](/addons/admin-page-creator) sau CSS per
 - Să customizezi schema de culori a adminului pentru a se potrivi brandului tău
 - Să adaugi un widget personalizat în dashboard, cu link-uri rapide și resurse de ajutor specifice fitness-ului
 
-### Pagini Admin Personalizate
+### Pagini Admin Personalizate {#custom-admin-pages}
 
 Ia în considerare crearea de pagini admin personalizate care să evidențieze acțiunile cele mai relevante pentru proprietarii de studiouri de fitness:
 
@@ -58,11 +58,11 @@ Ia în considerare crearea de pagini admin personalizate care să evidențieze a
 
 Acest lucru reduce curba de învățare, mutând acțiunile nișe-relevante în prim-plan, în loc să le îngroape în meniul standard WordPress.
 
-## Branding-ul Comunicărilor Tale
+## Branding-ul Comunicărilor Tale {#branding-your-communications}
 
 Fiecare email, factură și notificare ar trebui să întărească brandul tău.
 
-### Email-uri Sistemice
+### Email-uri Sistemice {#system-emails}
 
 Navighează la **Ultimate Multisite > Settings > Emails** și customizează toate email-urile sistemice:
 
@@ -79,7 +79,7 @@ Email-urile cheie de personalizat:
 | Confirmare plată | "Plata primită" | "Plata abonamentului FitSite confirmată" |
 | Încetarea trial-ului | "Trial-ul tău se termină curând" | "Trial-ul FitSite se termină în 3 zile — menține site-ul studioului tău online" |
 
-### Facturi
+### Facturi {#invoices}
 
 Customizează template-urile de factură cu:
 
@@ -87,7 +87,7 @@ Customizează template-urile de factură cu:
 - Detaliile tale de afaceri
 - Nume de produse specifice fitness-ului (nu ID-uri generice de plan)
 
-## Site-ul către Client
+## Site-ul către Client {#the-customer-facing-site}
 
 Domeniul tău principal (`fitsite.com`) are nevoie de un site de marketing care să vândă platforma. Acesta este separat de adminul rețelei Ultimate Multisite — este fața publică a afacerii tale.
 
@@ -103,7 +103,7 @@ Pagini cheie:
 Creează site-ul de marketing ca un site în cadrul propriei rețele. Acest lucru îți permite să îl gestionezi din același dashboard și demonstrează capacitățile platformei tale.
 :::
 
-## Domeniu Personalizat pentru Clienți
+## Domeniu Personalizat pentru Clienți {#custom-domain-for-customers}
 
 Pentru clienții cu planuri care includ domenii personalizate, documentează procesul clar:
 
@@ -113,7 +113,7 @@ Pentru clienții cu planuri care includ domenii personalizate, documentează pro
 
 Creează un articol de ajutor sau o intrare în baza de cunoștințe specifică pentru acest proces, scris pentru proprietari de studiouri de fitness care nu sunt tehnicieni.
 
-## Rețeaua FitSite până acum
+## Rețeaua FitSite până acum {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Gata pentru fluxul de onboarding (lecția următoare)
 ```
 
-## Ce Am Construit în Această Lecție
+## Ce Am Construit în Această Lecție {#what-we-built-this-lesson}
 
 - **Domeniul platformei și DNS-ul** configurate pentru o experiență brandată
 - **Admin white-labeled** cu branding FitSite în toate părțile

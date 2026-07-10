@@ -4,13 +4,13 @@ title: Filtre - wu_documentation_get_link
 sidebar_label: wu_documentation_get_link
 _i18n_hash: f69ab55cc5c402cc4cb52df5601a3255
 ---
-# Filtre : wu_documentation_get_link
+# Filtre : wu_documentation_get_link {#filter-wudocumentationgetlink}
 
 Permet aux développeurs de plugins de filtrer les liens.
 
 Pas sûr que cela puisse être utile, mais cela ne fait pas de mal d'en avoir.
 
-## Paramètres
+## Paramètres {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -18,10 +18,10 @@ Pas sûr que cela puisse être utile, mais cela ne fait pas de mal d'en avoir.
 | $slug | `string` | Le slug utilisé pour récupérer le lien |
 | $default_link | `string` | Le lien par défaut enregistré |
 
-### Depuis
+### Depuis {#since}
 
 - 1.7.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-documentation.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-documentation.php#L125) à la ligne 125

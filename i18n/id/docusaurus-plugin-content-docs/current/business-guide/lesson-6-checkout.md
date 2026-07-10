@@ -3,15 +3,15 @@ title: 'Pelajaran 6: Pengalaman Pendaftaran'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Pelajaran 6: Pengalaman Pendaftaran
+# Pelajaran 6: Pengalaman Pendaftaran {#lesson-6-the-signup-experience}
 
 Alur checkout adalah tempat minat berubah menjadi pendapatan. Proses pendaftaran yang membingungkan atau terlalu umum akan membuat pelanggan kabur. Alur yang spesifik untuk ceruk pasar mereka, yang menggunakan bahasa mereka, dan terasa mudah digunakan akan mengubah mereka menjadi pelanggan yang membayar.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite sudah memiliki template dan rencana yang dikonfigurasi. Sekarang kita akan membangun pengalaman pendaftaran dan checkout yang mengubah pemilik studio kebugaran menjadi pelanggan yang membayar.
 
-## Memahami Alur Pendaftaran
+## Memahami Alur Pendaftaran {#understanding-the-registration-flow}
 
 Formulir checkout Ultimate Multisite adalah formulir multi-langkah yang sepenuhnya dapat disesuaikan. Untuk FitSite, kita menginginkan alur yang:
 
@@ -21,11 +21,11 @@ Formulir checkout Ultimate Multisite adalah formulir multi-langkah yang sepenuhn
 
 Lihat [The Registration Flow](/user-guide/configuration/the-registration-flow) untuk referensi teknis lengkap.
 
-## Mendesain Checkout FitSite
+## Mendesain Checkout FitSite {#designing-the-fitsite-checkout}
 
 Arahkan ke **Ultimate Multisite > Checkout Forms** dan buat formulir baru.
 
-### Langkah 1: Pemilihan Rencana
+### Langkah 1: Pemilihan Rencana {#step-1-plan-selection}
 
 Hal pertama yang harus dilihat pemilik studio kebugaran adalah rencana-rencana tersebut, disajikan dalam istilah yang mereka pahami.
 
@@ -37,7 +37,7 @@ Hal pertama yang harus dilihat pemilik studio kebugaran adalah rencana-rencana t
 "Penyimpanan 1 GB" tidak berarti apa-apa bagi pemilik gym. "Semua yang Anda butuhkan untuk situs web studio profesional" berarti segalanya. Tulis deskripsi rencana menggunakan bahasa pelanggan Anda.
 :::
 
-### Langkah 2: Pemilihan Template
+### Langkah 2: Pemilihan Template {#step-2-template-selection}
 
 Setelah memilih rencana, pelanggan akan memilih template awal mereka.
 
@@ -45,7 +45,7 @@ Setelah memilih rencana, pelanggan akan memilih template awal mereka.
 - Template yang tersedia akan difilter berdasarkan rencana yang mereka pilih (dikonfigurasi di Pelajaran 5)
 - Setiap template harus memiliki gambar pratinjau yang menampilkan desain spesifik kebugaran
 
-### Langkah 3: Pembuatan Akun
+### Langkah 3: Pembuatan Akun {#step-3-account-creation}
 
 Jaga ini tetap minimal. Hanya kumpulkan:
 
@@ -55,27 +55,27 @@ Jaga ini tetap minimal. Hanya kumpulkan:
 
 Jangan meminta informasi yang tidak Anda butuhkan saat pendaftaran. Setiap bidang tambahan akan mengurangi konversi.
 
-### Langkah 4: Pengaturan Situs
+### Langkah 4: Pengaturan Situs {#step-4-site-setup}
 
 - **Site title**: Isi otomatis dari nama studio yang dimasukkan di Langkah 3
 - **Site URL**: Dihasilkan otomatis dari nama studio (misalnya, `ironworks.fitsite.com`)
 
-### Langkah 5: Pembayaran
+### Langkah 5: Pembayaran {#step-5-payment}
 
 - Tambahkan bidang **Payment**
 - Konfigurasikan payment gateway Anda ([Stripe](/user-guide/payment-gateways/stripe) direkomendasikan untuk penagihan langganan)
 - Jika Anda membuat *order bumps* di Pelajaran 5, tambahkan bidang **Order Bump** sebelum langkah pembayaran
 
-### Langkah 6: Konfirmasi
+### Langkah 6: Konfirmasi {#step-6-confirmation}
 
 - Sesuaikan pesan konfirmasi dengan bahasa spesifik kebugaran
 - Contoh: "Situs web studio kebugaran Anda sedang dibuat. Anda akan diarahkan ke situs baru Anda dalam beberapa detik."
 
-## Menambahkan Toggle Pemilihan Periode
+## Menambahkan Toggle Pemilihan Periode {#adding-a-period-selection-toggle}
 
 Jika Anda mengatur variasi harga dalam rencana Anda (bulanan vs. tahunan), tambahkan bidang **Period Selection** ke formulir checkout agar pelanggan dapat beralih antara periode penagihan. Lihat [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) untuk petunjuknya.
 
-## Mengonfigurasi Pembayaran
+## Mengonfigurasi Pembayaran {#configuring-payment}
 
 Jika Anda belum mengatur payment gateway:
 
@@ -85,7 +85,7 @@ Jika Anda belum mengatur payment gateway:
 
 Lihat [Getting Paid](/user-guide/payment-gateways/getting-paid) untuk detail tentang bagaimana pembayaran masuk ke akun Anda.
 
-## Menguji Alur
+## Menguji Alur {#testing-the-flow}
 
 Sebelum melanjutkan, selesaikan uji pendaftaran penuh:
 
@@ -105,7 +105,7 @@ Periksa bahwa:
 - [ ] Pelanggan mendarat di situs yang berfungsi dengan template yang dipilih
 - [ ] Email konfirmasi menggunakan bahasa spesifik kebugaran
 
-## Jaringan FitSite Sejauh Ini
+## Jaringan FitSite Sejauh Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Siap untuk branding (pelajaran berikutnya)
 ```
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Formulir checkout multi-langkah** yang disesuaikan untuk pemilik studio kebugaran
 - **Bahasa spesifik ceruk pasar** di seluruh alur pendaftaran

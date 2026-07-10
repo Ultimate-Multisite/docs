@@ -3,13 +3,13 @@ title: Crear un Negoci de Webs de Nicho
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Crea un Negoci de Webs de Niche amb Ultimate Multisite
+# Crea un Negoci de Webs de Niche amb Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 La majoria de les persones que intenten vendre webs competeixen per preu contra Wix, Squarespace i milers de *freelancers*. I perden. Aquells que guanyen es centren en un públic específic, construeixen una solució adaptada a aquest públic i cobren pel valor que ofereixen.
 
 Aquest curs et ensenya com a fer exactament això utilitzant Ultimate Multisite.
 
-## El que construiràs
+## El que construiràs {#what-you-will-build}
 
 Durant aquest curs, construiràs una xarxa real i funcional anomenada **FitSite** —una plataforma web construïda específicament per a estudis de fitness, *personal trainers* i propietaris de gimnasos.
 
@@ -23,7 +23,7 @@ A la seva conclusió, FitSite serà una plataforma de niche completa amb:
 
 Seguiràs pas a pas, i al final tindràs tant una plataforma funcional com el coneixement per replicar el procés per qualsevol niche que esquin.
 
-## Per què estudis de fitness?
+## Per què estudis de fitness? {#why-fitness-studios}
 
 Necessitàvem un exemple concret que qualsevol pot seguir. Els estudis de fitness funcionen perquè:
 
@@ -34,7 +34,7 @@ Necessitàvem un exemple concret que qualsevol pot seguir. Els estudis de fitnes
 
 Tot el que apriques construint FitSite s'aplica directament a qualsevol niche que esquin: restaurants, agències immobiliàries, despatxos d'advocats, església, contractors, o qualsevol altra vertical.
 
-## Estructura del curs
+## Estructura del curs {#course-structure}
 
 Cada lliçó presenta un concepte, explica per què és important i et guia en la seva implementació a la xarxa FitSite. Cada lliçó es construeix sobre la anterior.
 
@@ -55,7 +55,7 @@ Cada lliçó presenta un concepte, explica per què és important i et guia en l
 | [13. Escalar](lesson-13-growth) | Creixer de els primers clients a un negoci real | Estratègia de creixement i automatització FitSite |
 | [14. Què hi ve per diner](lesson-14-whats-next) | Expandir-se a niches adjacents i noves oportunitats | La teva hoja de ruta més enllà de FitSite |
 
-## Prerequisits
+## Prerequisits {#prerequisites}
 
 - Una instal·lació de WordPress Multisite (o la voluntat de configurar-ne una)
 - Una llicència activa d'Ultimate Multisite
@@ -63,6 +63,6 @@ Cada lliçó presenta un concepte, explica per què és important i et guia en l
 
 No és necessari coneixement de codi. Si mai no has utilitzat Ultimate Multisite, no passa res: la Lliçó 3 comença des d'una instal·lació fresca.
 
-## Preparat?
+## Preparat? {#ready}
 
 Comença amb [Lliçó 1: Per què guanya la niche](lesson-1-why-niche).

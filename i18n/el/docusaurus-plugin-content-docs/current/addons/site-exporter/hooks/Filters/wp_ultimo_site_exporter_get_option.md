@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_site_exporter_get_option
 sidebar_label: wp_ultimo_site_exporter_get_option
 _i18n_hash: b71f40074791710b78680952dc1e16ad
 ---
-# Filter: wp_ultimo_site_exporter_get_option
+# Filter: wp_ultimo_site_exporter_get_option {#filter-wpultimositeexportergetoption}
 
 Επιστρέφει την τιμή επιλογής δικτύου με μορφή slug.
 
-## Παράμετροι
+## Παράμετροι {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: b71f40074791710b78680952dc1e16ad
 | $option_name | `string` | Το όνομα της επιλογής. |
 | $default | `mixed` | Η προεπιλεγμένη τιμή. |
 
-### Από
+### Από {#since}
 
 - 1.9.6
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/class-helper.php#L126) στην γραμμή 126
 
 
-## Επιστρέφει
+## Επιστρέφει {#returns}
 Την τιμή επιλογής δικτύου με μορφή slug.

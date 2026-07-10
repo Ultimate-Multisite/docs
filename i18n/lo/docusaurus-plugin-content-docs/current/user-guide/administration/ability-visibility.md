@@ -3,11 +3,11 @@ title: ຄວາມສາມາດໃນການເຫັນ
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# ການເຫັນຄວາມສາມາດ (Ability Visibility)
+# ການເຫັນຄວາມສາມາດ (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 ເປີດໂຕຄຸນສົມບັດ **Ability Visibility** ເຊິ່ງເປັນການຄວບຄຸມວ່າໜ້າຕ່າງໃດໆຈະສະແດງຄວາມສາມາດ (ability) ໃດໃຫ້ເຫັນ. ສິ່ງນີ້ຊ່ວຍໃຫ້ຜູ້ບໍລິຫານສາມາດປັບຕາລາງໄດ້ວ່າຄວາມສາມາດຂອງ agent ໃດທີ່ສາມາດໃຊ້ໄດ້ຜ່ານ REST APIs, MCP servers, WooCommerce integrations ແລະ ພື້ນທີ່ອື່ນໆ.
 
-## Ability Visibility ແມ່ນຫຍັງ?
+## Ability Visibility ແມ່ນຫຍັງ? {#what-is-ability-visibility}
 
 Ability Visibility ແມ່ນລະບົບສິດທິ (permission system) ທີ່ຄວບຄຸມ:
 
@@ -18,9 +18,9 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 
 ຄວາມສາມາດແຕ່ລະຢ່າງມີລະດັບການເຫັນ (visibility level) ເຊິ່ງກຳນົດວ່າສາມາດໃຊ້ງານໄດ້ໃນໜ້າຕ່າງທີ່ແຕກຕ່າງກັນໄດ້ແນວໃດ.
 
-## ລະດັບການເຫັນ (Visibility Levels)
+## ລະດັບການເຫັນ (Visibility Levels) {#visibility-levels}
 
-### ສາທາລະນະ (Public)
+### ສາທາລະນະ (Public) {#public}
 
 **Ability ສາທາລະນະ** ແມ່ນສາມາດໃຊ້ໄດ້ທຸກບ່ອນ:
 
@@ -32,7 +32,7 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 
 ຕົວຢ່າງ: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### ພາຍໃນ (Internal)
+### ພາຍໃນ (Internal) {#internal}
 
 **Ability ພາຍໃນ** ແມ່ນສາມາດໃຊ້ໄດ້ພາຍໃນການຕິດຕັ້ງ WordPress ຂອງທ່ານເທົ່ານັ້ນ:
 
@@ -43,7 +43,7 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 
 ຕົວຢ່າງ: `manage-settings`, `view-analytics`, `export-data`
 
-### ຄູ່ຮ່ວມງານ (Partner)
+### ຄູ່ຮ່ວມງານ (Partner) {#partner}
 
 **Ability ຄູ່ຮ່ວມງານ** ແມ່ນສາມາດໃຊ້ໄດ້ກັບຄູ່ຮ່ວມງານທີ່ຢູ່ໃນລາຍຊື່ສິດ (whitelisted partners) ເທົ່ານັ້ນ:
 
@@ -54,7 +54,7 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 
 ຕົວຢ່າງ: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### ປິດ (Disabled)
+### ປິດ (Disabled) {#disabled}
 
 **Ability ທີ່ຖືກປິດ** ແມ່ນບໍ່ສາມາດໃຊ້ໄດ້ໃນບ່ອນໃດໆ:
 
@@ -63,15 +63,15 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 - ບໍ່ມີຢູ່ໃນ Admin panels
 - ມີປະໂຫຍດສຳລັບ ability ທີ່ເກັບໄວ້ ຫຼື ທົດລອງໃຊ້ເທົ່ານັ້ນ
 
-## ການຈັດການຄວາມເຫັນຂອງຄວາມສາມາດ (Managing Ability Visibility)
+## ການຈັດການຄວາມເຫັນຂອງຄວາມສາມາດ (Managing Ability Visibility) {#managing-ability-visibility}
 
-### ການເຂົ້າເຖິງການຕັ້ງຄ່າຄວາມເຫັນຂອງຄວາມສາມາດ (Accessing Ability Visibility Settings)
+### ການເຂົ້າເຖິງການຕັ້ງຄ່າຄວາມເຫັນຂອງຄວາມສາມາດ (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. ໄປທີ່ **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. ចុចលើ tab **Abilities**
 3. អ្នកនឹងឃើញລາຍຊື່ຂອງຄວາມສາມາດທັງໝົດທີ່ຕິດຕັ້ງໄວ້ພ້ອມລະດັບການເຫັນຂອງມັນ
 
-### ການເບິ່ງລາຍລະອຽດຂອງຄວາມສາມາດ (Viewing Ability Details)
+### ການເບິ່ງລາຍລະອຽດຂອງຄວາມສາມາດ (Viewing Ability Details) {#viewing-ability-details}
 
 ໃຫ້ចុចໃສ່ຄວາມສາມາດໃດໜຶ່ງເພື່ອເບິ່ງ:
 
@@ -82,7 +82,7 @@ Ability Visibility ແມ່ນລະບົບສິດທິ (permission system
 - **Last updated**: ເວລາສຸດທ້າຍທີ່ໄດ້ປ່ຽນການເຫັນ
 - **Status**: ຮັບຮູ້ແລ້ວ (Recognized) ຫຼື ບໍ່ຈັດປະເພດ (Unclassified)
 
-### ການປ່ຽນລະດັບຄວາມເຫັນ (Changing Visibility Levels)
+### ການປ່ຽນລະດັບຄວາມເຫັນ (Changing Visibility Levels) {#changing-visibility-levels}
 
 ເພື່ອປ່ຽນການເຫັນຂອງຄວາມສາມາດ:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### ການປະຕິບັດງານແບບເປັນກຸ່ມ (Bulk Operations)
+### ການປະຕິບັດງານແບບເປັນກຸ່ມ (Bulk Operations) {#bulk-operations}
 
 ເພື່ອປ່ຽນການເຫັນຂອງຄວາມສາມາດຫຼາຍຢ່າງໃນເວລາດຽວກັນ:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. ເລືອກລະດັບຄວາມເຫັນໃໝ່ຈາກ dropdown ການກະທຳແບບເປັນກຸ່ມ (bulk action)
 3. ចុច **Apply**
 
-## ລາຍການອະນຸຍາດຄູ່ຮ່ວມງານ (Partner Allow-List)
+## ລາຍການອະນຸຍາດຄູ່ຮ່ວມງານ (Partner Allow-List) {#partner-allow-list}
 
 **partner allow-list** ແມ່ນສິ່ງທີ່ຄວບຄຸມວ່າຄູ່ຮ່ວມງານພາຍນອກໃດສາມາດເຂົ້າເຖິງຄວາມສາມາດລະດັບ Partner ໄດ້.
 
-### ການເພີ່ມຄູ່ຮ່ວມງານ (Adding Partners)
+### ການເພີ່ມຄູ່ຮ່ວມງານ (Adding Partners) {#adding-partners}
 
 1. ໄປທີ່ **Superdav AI Agent** → **Settings** → **Partners**
 2. ចុច **Add Partner**
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. ສາມາດເພີ່ມຊື່ ແລະ ຄຳອະທິບາຍຂອງຄູ່ຮ່ວມງານໄດ້ (ເປັນທາງເລືອກ)
 5. ចុច **Save**
 
-### ການມອບໝາຍຄວາມສາມາດໃຫ້ຄູ່ຮ່ວມງານ (Assigning Abilities to Partners)
+### ການມອບໝາຍຄວາມສາມາດໃຫ້ຄູ່ຮ່ວມງານ (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 ຫຼັງຈາກເພີ່ມຄູ່ຮ່ວມງານແລ້ວ:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. ในส่วน "Partner allow-list" ให้ติ๊กถูกช่องสำหรับพาร์ทเนอร์ที่จะต้องเข้าถึงได้
 5. คลิก **Save** (บันทึก)
 
-### การเพิกถอนสิทธิ์การเข้าถึงของ Partner
+### การเพิกถอนสิทธิ์การเข้าถึงของ Partner {#revoking-partner-access}
 
 หากต้องการเอาสิทธิ์การเข้าถึงของพาร์ทเนอร์ออก:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 พาร์ทเนอร์คนนั้นจะสูญเสียสิทธิ์ในการเข้าถึงความสามารถนั้นทันที
 
-## ความสามารถที่ยังไม่ได้จัดประเภท (Unclassified Abilities)
+## ความสามารถที่ยังไม่ได้จัดประเภท (Unclassified Abilities) {#unclassified-abilities}
 
 เมื่อคุณติดตั้งความสามารถจากภายนอกที่ Superdav AI Agent ไม่รู้จัก ระบบจะทำเครื่องหมายว่าเป็น **Unclassified** (ยังไม่ได้จัดประเภท)
 
-### ประกาศสำหรับผู้ดูแลระบบเกี่ยวกับความสามารถที่ยังไม่ได้จัดประเภท
+### ประกาศสำหรับผู้ดูแลระบบเกี่ยวกับความสามารถที่ยังไม่ได้จัดประเภท {#admin-notice-for-unclassified-abilities}
 
 คุณจะเห็นประกาศของผู้ดูแลระบบดังนี้:
 
@@ -160,7 +160,7 @@ Partner allow-list: partner-123, partner-456
 [Review Abilities] [Dismiss]
 ```
 
-### การตรวจสอบความสามารถที่ยังไม่ได้จัดประเภท
+### การตรวจสอบความสามารถที่ยังไม่ได้จัดประเภท {#reviewing-unclassified-abilities}
 
 1. คลิก **Review Abilities** (ตรวจสอบความสามารถ) ในประกาศนั้น
 2. สำหรับความสามารถแต่ละรายการที่คุณจะเห็น:
@@ -177,7 +177,7 @@ Partner allow-list: partner-123, partner-456
 
 4. คลิก **Classify** (จัดประเภท) เพื่อบันทึกการตัดสินใจของคุณ
 
-### ทำไมต้องจัดประเภทความสามารถที่ยังไม่ได้จัดประเภท?
+### ทำไมต้องจัดประเภทความสามารถที่ยังไม่ได้จัดประเภท? {#why-classify-unclassified-abilities}
 
 การจัดประเภทความสามารถ:
 
@@ -186,9 +186,9 @@ Partner allow-list: partner-123, partner-456
 - **เปิดใช้งานฟีเจอร์**: เมื่อจัดประเภทแล้ว ความสามารถนั้นก็จะพร้อมใช้งาน
 - **บันทึกการตัดสินใจ**: การเลือกของคุณจะถูกบันทึกไว้เพื่อวัตถุประสงค์ในการตรวจสอบ
 
-## ການເຫັນໄດ້ຊ່ອງໃນພື້ນທີ່ຕ່າງໆ
+## ການເຫັນໄດ້ຊ່ອງໃນພື້ນທີ່ຕ່າງໆ {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **ຄວາມສາມາດທີ່ເປີດເຜີຍຕໍ່ສາທາລະນະ (Public abilities)** ສາມາດເຂົ້າເຖິງໄດ້ຜ່ານ REST endpoints:
 
@@ -200,7 +200,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **ຄວາມສາມາດພາຍໃນ (Internal) ແລະ ຄວາມສາມາດຂອງຄູ່ຮ່ວມງານ (Partner abilities)** ບໍ່ສາມາດເຂົ້າເຖິງໄດ້ຜ່ານ REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **ຄວາມສາມາດທີ່ເປີດເຜີຍຕໍ່ສາທາລະນະ (Public abilities)** ສາມາດເຂົ້າເຖິງໄດ້ຜ່ານ MCP:
 
@@ -216,7 +216,7 @@ Available abilities:
 
 **ຄວາມສາມາດຂອງຄູ່ຮ່ວມງານ (Partner abilities)** ສາມາດເຂົ້າເຖິງໄດ້ສະເພາະເວລາທີ່ມີຂໍ້ມູນການເຂົ້າສູ່ລະບົບຂອງຄູ່ຮ່ວມງານ.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **ຄວາມສາມາດທີ່ເປີດເຜີຍຕໍ່ສາທາລະນະ (Public abilities)** ທີ່ກ່ຽວຂ້ອງກັບ WooCommerce ມີດັ່ງນີ້:
 
@@ -226,7 +226,7 @@ Available abilities:
 
 **ຄວາມສາມາດພາຍໃນ (Internal abilities)** ບໍ່ຖືກເປີດເຜີຍໃຫ້ WooCommerce ເຫັນ.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **ທຸກຄວາມສາມາດ** (Public, Internal, Partner) ສາມາດເຂົ້າເຖິງໄດ້ໃນການແຊັດ ຂຶ້ນກັບສິດຂອງຜູ້ໃຊ້:
 
@@ -234,34 +234,34 @@ Available abilities:
 - ຜູ້ໃຊ້ປົກກະຕິ (Regular users) ເຫັນພຽງແຕ່ Public abilities
 - ຄູ່ຮ່ວມງານ (Partners) ເຫັນ Public + Partner abilities (ຖ້າໄດ້ຮັບການອະນຸຍາດໃຫ້ເຂົ້າເຖິງ)
 
-## ແນວທາງປະຕິບັດທີ່ດີດ້ານຄວາມປອດໄພ (Security Best Practices)
+## ແນວທາງປະຕິບັດທີ່ດີດ້ານຄວາມປອດໄພ (Security Best Practices) {#security-best-practices}
 
-### ຫຼັກການສິດທິພິເສດໜ້ອຍທີ່ສຸດ (Principle of Least Privilege)
+### ຫຼັກການສິດທິພິເສດໜ້ອຍທີ່ສຸດ (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - ຕັ້ງຄ່າຄວາມສາມາດໃຫ້ມີການເຫັນໄດ້ທີ່ຈຳກັດທີ່ສຸດ ເຊິ່ງຍັງເຮັດໃຫ້ສາມາດນຳໃຊ້ໄດ້
 - ໃຊ້ Partner visibility ສຳລັບການປະຕິບັດງານທີ່ອ່ອນໄຫວ
 - ປິດການເປີດໃຊ້ຄວາມສາມາດທີ່ບໍ່ໄດ້ນຳໃຊ້
 
-### ການກວດສອບເປັນປະຈຳ (Regular Audits)
+### ການກວດສອບເປັນປະຈຳ (Regular Audits) {#regular-audits}
 
 - ກວດສອບການເຫັນໄດ້ຂອງຄວາມສາມາດທຸກໆເດືອນ
 - ເບິ່ງຫາຄວາມສາມາດທີ່ບໍ່ໄດ້ຈັດປະເພດ (unclassified abilities)
 - ລຶບການເຂົ້າເຖິງຂອງຄູ່ຮ່ວມງານທີ່ບໍ່ໄດ້ໃຊ້ແລ້ວ
 
-### ການບັນທຶກຂໍ້ມູນ ແລະ ການຕິດຕາມ (Logging and Monitoring)
+### ການບັນທຶກຂໍ້ມູນ ແລະ ການຕິດຕາມ (Logging and Monitoring) {#logging-and-monitoring}
 
 - ຕິດຕາມວ່າຄວາມສາມາດໃດຖືກນຳໃຊ້ຫຼາຍທີ່ສຸດ
 - ຕິດຕາມຮູບແບບການເຂົ້າເຖິງຂອງຄູ່ຮ່ວມງານ
 - ສົ່ງການແຈ້ງເຕືອນເມື່ອມີການນຳໃຊ້ຄວາມສາມາດທີ່ຜິດປົກກະຕິ
 
-### ຄວາມສາມາດຂອງພາກສ່ວນທີສາມ (Third-Party Abilities)
+### ຄວາມສາມາດຂອງພາກສ່ວນທີສາມ (Third-Party Abilities) {#third-party-abilities}
 
 - ກວດສອບຄວາມສາມາດຂອງພາກສ່ວນທີສາມກ່ອນທີ່ຈະເປີດໃຊ້
 - ຈັດປະເພດໃຫ້ຊັດເຈນວ່າແມ່ນຫຍັງ
 - ເລີ່ມຕົ້ນດ້ວຍ Partner visibility ຫຼື Internal visibility ກ່ອນ
 - ຈຶ່ງຈະຍົກລະດັບເປັນ Public ຫຼັງຈາກໄດ້ກວດສອບຢ່າງລະອຽດແລ້ວ
 
-## ການແກ້ໄຂບັນຫາ
+## ການແກ້ໄຂບັນຫາ {#troubleshooting}
 
 **ບໍ່ສາມາດເຫັນຄວາມສາມາດໃນລາຍການໄດ້**
 - ກວດສອບວ່າຄວາມສາມາດນັ້ນຖືກຕິດຕັ້ງ ແລະ ເປີດໃຊ້ງານແລ້ວບໍ
@@ -284,7 +284,7 @@ Available abilities:
 - ກວດສອບວ່າການຈັດປະເພດຂອງທ່ານຖືກບັນທຶກແລ້ວບໍ
 - ກວດສອບວ່າ plugin ທີ່ໃຫ້ຄວາມສາມາດນັ້ນມີອັບເດດແລ້ວ
 
-## ການຍົກລະດັບຈາກໂໝດເກົ່າ (Migration from Legacy Mode)
+## ການຍົກລະດັບຈາກໂໝດເກົ່າ (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 ຖ້າທ່ານກຳລັງອັບເກຣດຈາກເວີຊັນເກົ່າຂອງ Superdav AI Agent:
 
@@ -294,7 +294,7 @@ Available abilities:
 
 ເບິ່ງ **Third-Party Mode Migration** ເພື່ອຂໍ້ມູນເພີ່ມເຕີມเกี่ยวกับการផ្លាស់ប្តូរໄປສູ່ Native Abilities API integration.
 
-## ຂັ້ນຕອນຕໍ່ໄປ (Next Steps)
+## ຂັ້ນຕອນຕໍ່ໄປ (Next Steps) {#next-steps}
 
 ຫຼັງຈາກຕັ້ງຄ່າການເຫັນຂອງຄວາມສາມາດແລ້ວ:
 

@@ -1,0 +1,124 @@
+---
+title: KI-Site-Ersteller
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI-Site-Ersteller {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Ufuerderungen {#requirements}
+
+- WordPress 5.3 oder méi héich
+- PHP 7.4 oder méi héich
+- Multisite Ultimate-Plugin (aktiv)
+
+## Installatioun {#installation}
+
+1. Luet d'Erweiderungsdateien an Ären `/wp-content/plugins/`-Dossier erop
+2. Aktivéiert de Plugin iwwer de 'Plugins'-Menü am WordPress
+3. Konfiguréiert d'Astellunge vun der Erweiderung am Netzwierk-Admin
+
+## Entwécklung {#development}
+
+### Ariichtung {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projetstruktur {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP-Klassen an Includes
+│   ├── class-multisite-ultimate-updater.php  # Update-Handler
+│   └── class-ai_site_builder-main.php             # Haaptfunktionalitéit
+├── tests/                        # Unittester
+│   ├── bootstrap.php            # Test-Bootstrap
+│   ├── class-*-base.php         # Basis-Testklass
+│   └── class-*-test.php         # Testfäll
+├── views/                       # Template-Dateien
+├── assets/                      # Statesch Assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript-Dateien
+│   └── images/                  # Biller
+├── lang/                        # Sproochdateien
+├── composer.json                # PHP-Ofhängegkeeten
+├── package.json                 # Node.js-Ofhängegkeeten
+├── phpunit.xml.dist             # PHPUnit-Konfiguratioun
+├── .phpcs.xml.dist              # Code-Standards-Konfiguratioun
+└── rector.php                   # Reegele fir Code-Moderniséierung
+```
+
+### Testen {#testing}
+
+D'Erweiderung enthält en ëmfaassenden Test-Framework:
+
+- **Unittester**: PHPUnit-baséiert Tester mat WordPress-Test-Suite
+- **Basis-Testklass**: Stellt Hëllefsmethoden fir heefeg Testszenarie bereet
+- **Testofdeckung**: Konfiguréiert fir d'Codeofdeckung ze verfollegen
+- **Multisite-Testen**: Tester lafen an enger Multisite-Ëmgebung
+
+### Code-Standarden {#code-standards}
+
+- **WordPress Coding Standards**: Duerchgesat iwwer PHPCS
+- **PHP 7.4+ Kompatibilitéit**: Modern PHP-Funktiounen ënnerstëtzt
+- **Statesch Analys**: PHPStan-Integratioun fir Typiwwerpréiwung
+- **Code-Moderniséierung**: Rector-Reegele fir PHP-Upgrades
+
+### Build-System {#build-system}
+
+- **Asset-Veraarbechtung**: Minifizéierung fir CSS/JS-Dateien
+- **Iwwersetzung**: Generéierung vu POT-Dateien
+- **Verpakung**: Archiv-Erstellung fir d'Verdeelung
+- **Entwécklungsmodus**: Net minifizéiert Assets fir Debugging
+
+## Konfiguratioun {#configuration}
+
+D'Erweiderung ënnerstëtzt verschidde Konfiguratiounsoptiounen, déi iwwer d'Netzwierk-Admin-Interface zougänglech sinn.
+
+## Hooks a Filteren {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Ausgeléist no der Initialiséierung vun der Erweiderung
+- `ultimate-multisite-ai-site-builder_loaded` - Ausgeléist nodeems all Erweiderungsdateie geluede sinn
+
+### Filteren {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Astellunge vun der Erweiderung änneren
+- `ultimate-multisite-ai-site-builder_enabled` - Aktivéieren/Desaktivéieren-Status vun der Erweiderung iwwerschreiwen
+
+## Lizenz {#license}
+
+Dës Erweiderung ass ënner der GPL v3 oder méi spéit lizenzéiert.
+
+## Support {#support}
+
+Fir Support an Dokumentatioun, besicht [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Versioun 1.0.1 (2025-09-28): Prefix op ultimate-multisite ëmbenannt; text domain aktualiséiert; Versioun erhéicht.
+
+
+- Versioun  (2025-09-28): Prefix op ultimate-multisite ëmbenannt; text domain aktualiséiert; Versioun erhéicht.

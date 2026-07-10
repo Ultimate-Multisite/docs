@@ -3,9 +3,9 @@ title: Cambiar de xarxa (Multi-Network) Changelog
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Diari de canvis de Multi-Xarxa
+# Diari de canvis de Multi-Xarxa {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Nou: Visualitzador de plantilles de xarxa — navega i previsualitza plantilles de xarxa amb un panell en directe abans de comprar.
 * Nou: Selector de plantilles de xarxa al checkout — els clients poden seleccionar una plantilla de xarxa durant el procés de pagament d'alta.
 * Nou: SSO d'enllaç màgic entre xarxes — els clients poden accedir a subxarxes de manera fluida mitjançant autenticació amb enllaç màgic.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Correcció: Protecció contra la clau `network_id` indefinida en el scope de la consulta del lloc web.
 * Correcció: La verificació de permisos de xarxa abans de canviar de context previene errors de propietat de taula `wpdb`.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Correcció: Creació de nova xarxa.
 * Correcció: Renderitzat de menús.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Actualitzat a Plugin Update Checker v5
 * Se han afegat en-capçalats de plugin de WordPress moderns
 * Millorada la compatibilitat amb les últimes versions de WordPress
 
-### 1.0.2
+### 1.0.2 {#102}
 * Correccions de bugs i millores de rendiment
 * Aïllament de xarxa millorat
 
-### 1.0.0
+### 1.0.0 {#100}
 * Lliurament inicial
 * Funcionalitat bàsica de multi-xarxa
 * Integració amb Multisite Ultimate

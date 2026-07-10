@@ -3,19 +3,19 @@ title: 'Lekce 10: Den spuštění'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Lekce 10: Den spuštění
+# Lekce 10: Den spuštění {#lesson-10-launch-day}
 
 Vše je postaveno. Než otevřete dveře, tato lekce vás provede kontrolním seznamem před spuštěním, abychom se ujistili, že nic není poškozené, chybějící nebo neohrabané.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 FitSite má připravené šablony, plány, proces platby, branding, onboarding a ceny. Nyní ověříme, že vše funguje a spuštíme službu.
 
-## Kontrolní seznam před spuštěním
+## Kontrolní seznam před spuštěním {#pre-launch-checklist}
 
 Projděte každý položku. Nic nesk 나서te.
 
-### Infrastruktura platformy
+### Infrastruktura platformy {#platform-infrastructure}
 
 - [ ] Hosting je stabilní a dobře funguje pod zátěží
 - [ ] Wildcard SSL je aktivní a všechny poddomény jsou dostupné přes HTTPS
@@ -23,7 +23,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Zálohování je nakonfigurováno a otestováno (obnovte alespoň jednu, abyste to ověřili)
 - [ ] Monitorování je zajištěno – budete vědět, pokud platforma selže
 
-### Šablony
+### Šablony {#templates}
 
 - [ ] Všechny tři šablony se na nových webech načítají správně
 - [ ] Zástupný obsah je užitečný a je bez překlepů
@@ -32,7 +32,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Rychlost načítání stránky je přijatelná (testujte nástroji jako GTmetrix nebo PageSpeed Insights)
 - [ ] Žádné rozbité odkazy ani chybějící soubory na žádné šabloně
 
-### Plány a produkty
+### Plány a produkty {#plans-and-products}
 
 - [ ] Všechny tři plány jsou aktivní a viditelné
 - [ ] Popisy plánů jsou přesné a specifické pro danou oblast
@@ -42,7 +42,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Doplnění objednávky (Order bumps) se zobrazují správně během platby
 - [ ] Omezení pluginů a témat jsou správně vynucena pro každý plán
 
-### Proces platby (Checkout Flow)
+### Proces platby (Checkout Flow) {#checkout-flow}
 
 - [ ] Dokončte kompletní testovací registraci pro každý plán (použijte testovací režim platby)
 - [ ] Výběr šablony zobrazuje správné šablony pro každý plán
@@ -52,7 +52,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Zákazník může okamžitě přihlásit na svůj nový web
 - [ ] Slevové kódy fungují správně
 
-### Branding
+### Branding {#branding}
 
 - [ ] Stránka přihlášení zobrazuje branding FitSite
 - [ ] Administrační dashboard zobrazuje branding FitSite
@@ -60,7 +60,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Faktury se zobrazují správně s vašimi obchodními údaji
 - [ ] Marketingová stránka je aktivní a odkazuje na formulář platby
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] Widget Quick Start se zobrazuje na dashboardu nových zákazníků
 - [ ] Všechny odkazy Quick Start vedou na správné stránky
@@ -68,7 +68,7 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Články v bázi znalostí jsou publikovány a dostupné
 - [ ] Stránka účtu zobrazuje správné informace o plánu a možnosti upgrade
 
-### Právní a obchodní
+### Právní a obchodní {#legal-and-business}
 
 - [ ] Obchodní podmínky jsou publikovány a odkázány z procesu platby
 - [ ] Zásady ochrany osobních údajů jsou publikovány a dostupné
@@ -77,11 +77,11 @@ Projděte každý položku. Nic nesk 나서te.
 - [ ] Brána pro platby je v live režimu (ne v test režimu)
 - [ ] Konfigurace daní je správná pro vaši jurisdikci
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Zvažte dvoufázový spuštění:
 
-### Fáze 1: Soft Launch
+### Fáze 1: Soft Launch {#phase-1-soft-launch}
 
 Začněte s 5–10 majiteli fitness studií, kteří se zaregistrují před veřejným spuštěním. Jsou to vaši beta zákazníci. Nabídněte jim významnou slevu (50 % doživotně, nebo 3 měsíce zdarma) výměnou za:
 
@@ -91,7 +91,7 @@ Začněte s 5–10 majiteli fitness studií, kteří se zaregistrují před veř
 
 To vám poskytne skutečný feedback od zákazníků a živé weby k ukázání, než se otevřete veřejnosti.
 
-### Fáze 2: Public Launch
+### Fáze 2: Public Launch {#phase-2-public-launch}
 
 Jakmile je feedback z soft launchu zohledněn:
 
@@ -100,7 +100,7 @@ Jakmile je feedback z soft launchu zohledněn:
 - Začněte získávat zákazníky (Lekce 11)
 - Oznámení na relevantních kanálech fitness průmyslu
 
-## Akce dne spuštění
+## Akce dne spuštění {#launch-day-actions}
 
 V den, kdy se stáváte veřejní:
 
@@ -110,7 +110,7 @@ V den, kdy se stáváte veřejní:
 4. **Buďte dostupní** – vaši první skuteční zákazníci mohou potřebovat pomoc a rychlá reakce buduje důvěru
 5. **Oslavte krátce** – pak se vraťte k práci
 
-## Co může jít špatně
+## Co může jít špatně {#what-can-go-wrong}
 
 Buďte připraveni na:
 
@@ -120,7 +120,7 @@ Buďte připraveni na:
 - **Výkon pod zátěží**: Pokud dojde k náhlému nárůstu návštěvnosti, vězte, jak škálovat svůj hosting
 - **Zmatek zákazníků**: Mějte připravenou bázi znalostí a kanály podpory
 
-## FitSite Network do teď
+## FitSite Network do teď {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Co jsme v této lekci postavili
+## Co jsme v této lekci postavili {#what-we-built-this-lesson}
 
 - **Komplexní kontrolní seznam před spuštěním**, který pokrývá infrastrukturu, obsah, platby a právní záležitosti
 - **Strategii soft launchu** pro získání skutečného feedbacku před spuštěním

@@ -3,13 +3,13 @@ title: Ulanıň düşürmek
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planı aşağı alma (v2)
+# Planı aşağı alma (v2) {#downgrading-a-plan-v2}
 
 _**ÖNEMLİ QAYDAMA: Bu məqalə Ultimate Multisite versiya 2.x-i nəzərdə tutur.**_
 
 Planı və ya abunəçiliyə aşağı almaq, müştərilərin öz sitelerini işlətmək üçün çox az resursa ehtiyacı olmadığını düşünməsi və ya məhdud büdcələri olduqda etdikləri bir addımdır.
 
-## Planı necə aşağı salmaq olar
+## Planı necə aşağı salmaq olar {#how-to-downgrade-a-plan}
 
 Müştərilər hər zaman subsite admin paneli üzərində daxil olaraq hesab səhifəsində **Change** (Dəyiş) düyməsini klikləyərək planlarını aşağı sala bilərlər.
 
@@ -25,7 +25,7 @@ Bu nümunədə, biz planı **Premium**dan **Free**yə aşağı salırıq.
 
 ![Gözlənilən abunəçilik dəyişikliyi bannerı olan hesab səhifəsi](/img/account-page/pending-change.png)
 
-### İstifadəçi planını aşağı saldıqda nə baş verir?
+### İstifadəçi planını aşağı saldıqda nə baş verir? {#what-happens-when-a-user-downgrades-their-plan}
 
 Planı aşağı salmanın istifadəçinin subsiteində mövcud konfiqurasiyasını dəyişmədiyini qeyd etmək vacibdir.
 
@@ -37,7 +37,7 @@ Paket üzerinde belirlenen limite aşan gönderiler için size 3 farklı seçene
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ödeme ne olur?
+### Ödeme ne olur? {#what-happens-to-the-payment}
 
 2.0 sürümünde, prorsiyonlama (proration) açısından ödemede artık herhangi bir ayarlama yapmanıza gerek kalmıyor.
 

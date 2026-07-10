@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Siste Automata. Protege Reditus. Nulla Configurandi Molestia.**
+
+Rete multisite cum dominiis propriis administras? Dolorem nosti: Google reCAPTCHA et hCaptcha te cogunt *unumquodque dominium singillatim* in eorum consola administrativa registrare. Novum situm emptoris addis? Config captcha renova. Dominium proprium mappas? Iterum renova. Numquam desinit.
+
+**Ultimate Multisite: Captcha omnia mutat.**
+
+## Cap Captcha: Tutela Apud Te Hospitata Quae Simpliciter Operatur {#cap-captcha-self-hosted-protection-that-just-works}
+
+Novus noster provisor **Cap Captcha** rem totam mutat pro retibus multisite:
+
+* **Nulla Configuratio** — Addon activa et protectus es. Nullae claves API, nullus Google account, nullum hCaptcha dashboard, nulla dominiorum permissio.
+* **In Omni Dominio Automatice Operatur** — Subdominia, dominia mappata, dominia emptorum—omnia statim proteguntur.
+* **Apud Te Hospitata et Privata** — Data tua numquam servatorem tuum relinquunt. Plene GDPR consentanea sine vestigatione tertiae partis.
+* **Invisibilis Probatio Operis** — Utentes aenigma computationale in curriculo solvunt. Nulla hydrantia incendii premenda, nullae crates imaginum molestae.
+* **Levis** — Tantum 20KB. Checkout tuum non retardabit.
+
+## Tutela Contra Probationem Chartarum in WooCommerce {#woocommerce-card-testing-protection}
+
+Impetus probationis chartarum mercatores quotannis miliardis constant. Fraudatores automata adhibent ut chartas creditarum furtivas contra checkout WooCommerce tuum confirment—tu mercedes processuum solvis, illi numeros chartarum validos obtinent.
+
+**Protegimus ubi maxime interest:**
+
+* **Tutela Store API** — Impetus automatōrum in `/wp-json/wc/store/v1/checkout` impedit, qui captchas formarum traditas praetereunt
+* **Cum PayPal Payments Compatibilis** — Sine difficultate cum WooCommerce PayPal Payments operatur
+* **Statisticae Tempore Reali** — Vide exacte quot impetus impedias
+
+## Adhucne Google reCAPTCHA aut hCaptcha Tibi Opus Est? {#still-need-google-recaptcha-or-hcaptcha}
+
+Te curavimus. Plenum subsidium pro:
+
+* Google reCAPTCHA v2 (Arca selectionis)
+* Google reCAPTCHA v2 (Invisibilis)
+* Google reCAPTCHA v3 (Ex punctis aestimationis)
+* hCaptcha (Standard)
+* hCaptcha (Invisibilis)
+
+Inter provisores quovis tempore ex optionibus retis tui commuta.
+
+## Ad Magnitudinem Aedificatum {#built-for-scale}
+
+* Optiones per totum rete cum exceptionibus per singulos situs
+* Dashboard statisticarum ad tutelam observandam
+* Gradus securitatis accommodabiles (Celer, Medius, Maximus)
+* Architectura provisorum extensibili, evolutoribus amica
+
+## Installatio {#installation}
+
+1. Mitte `ultimate-multisite-captcha` in directorium tuum `/wp-content/plugins/`
+2. Per rete plugin activa
+3. **Id totum est. Protectus es.**
+
+Cap Captcha automatice activatur—nullae optiones configurandae, nullae claves API inserendae. Omne punctum terminale sustentatum per totum rete tuum protegitur eo ipso momento quo activas.
+
+**Ad libitum:** Ut Google reCAPTCHA aut hCaptcha potius utaris, naviga ad **Ultimate Multisite → Optiones → Captcha** et provisorem praelatum elige.
+
+## Quaestiones Frequenter Positae {#frequently-asked-questions}
+
+## Mihi opusne est aliquid configurare? {#do-i-need-to-configure-anything}
+
+Non! Cap Captcha automatice efficitur cum addon activas. Totum rete tuum statim protegitur—nullae optiones configurandae, nullae claves API inserendae.
+
+## Mihi opusne sunt claves API pro Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Non. Cap Captcha omnino apud te hospitatur. Nulli accounts externi, nulla registratio dominiorum, nullae molestiae configurationis.
+
+## Hocne checkout meum retardabit? {#will-this-slow-down-my-checkout}
+
+Cap Captcha tantum 20KB est et provocationes probationis operis in curriculo exsequitur. Emptores tui nullam moram animadvertent.
+
+## Hocne contra impetus probationis chartarum protegit? {#does-this-protect-against-card-testing-attacks}
+
+Ita! Dissimile captchis traditis quae tantum formas HTML protegunt, nostra integratio WooCommerce directe in Store API connectitur ut impetus automatōrum in gradu API impediat—ubi plerique impetus probationis chartarum fiunt.
+
+## Possumne diversos provisores captcha in diversis sitibus uti? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Provisor captcha per totum rete statuitur, sed gradus difficultatis pro necessitatibus tuis accommodare potes.
+
+## Estne hoc GDPR consentaneum? {#is-this-gdpr-compliant}
+
+Cap Captcha 100% apud te hospitatur, nullis datis ad officia externa missis. Pro Google reCAPTCHA et hCaptcha, quaeso consilia eorum privata respective recense.
+
+## Limitatio Frequentiae {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 inducit limitatorem frequentiae cum sistendo absoluto, qui rete tuum ab impetibus brute-force et probationis chartarum protegit.
+
+### Quomodo Operatur {#how-it-works}
+
+Limitator frequentiae omnem petitionem GET et POST in superficiebus captcha-protectis numerat:
+
+* **Puncta terminalia initii sessionis WordPress** — wp-login, register, lost-password, comments
+* **Checkout WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Cum visitator limitem frequentiae excedit, plugin respondet cum:
+
+* Codice status **HTTP 429 (Nimis Multae Petitiones)**
+* Header **Retry-After** indicante quando iterum temptandum sit
+* **Somno tarpit fortuito** (1–5 secundis per defaltam, limite duro ad 15 secunda) ut oppugnatores retardentur
+
+### Configuratio {#configuration}
+
+#### Tempus Tarpit {#tarpit-timing}
+
+Rege moram fortuitam petitionibus limite frequentiae affectis applicatam:
+
+* **`cap_rate_limit_tarpit_min`** — Duratio minima somni in secundis (defaltum: 1)
+* **`cap_rate_limit_tarpit_max`** — Duratio maxima somni in secundis (defaltum: 5, limite duro ad 15)
+
+Hae optiones praesto sunt in **Ultimate Multisite → Optiones → Captcha**.
+
+### Extensibilitas {#extensibility}
+
+#### Filtrum Indicis Albi IP {#ip-whitelist-filter}
+
+Exime ambitus IP fideles a limitatione frequentiae:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Actio Ante Obstructionem {#pre-block-action}
+
+Exsequere logicam propriam statim antequam obstructio limitis frequentiae mittatur:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Detectio IP Clientis et Procuratores Fideles {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 inducit detectionem IP clientis simulationi resistantem. Methodus `Captcha_Core::get_client_ip()` nunc est unica fons veritatis attributionis IP visitatoris per:
+
+* Claves sitularum limitis frequentiae
+* Provisor Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Excerpta IP statistica
+
+### Modus Fiduciae {#trust-model}
+
+Additamentum strictam hierarchiam fiduciae IP exigit:
+
+1. **REMOTE_ADDR** — Semper creditum (IP paris immediati)
+2. **CF-Connecting-IP** — Observatur tantum cum:
+   - Par immediatus intra hodiernum intervallum IP Cloudflare est
+   - `cap_trust_cloudflare_headers` activatum est (praedefinitum: OFF)
+3. **X-Forwarded-For** — Observatur tantum cum:
+   - Par immediatus in indice procuratorum creditorum a administratore tuo configurato est
+   - Caput a dextra ad sinistram enodatur, saltibus creditis/Cloudflare praetermissis
+
+### Configuratio {#configuration-1}
+
+#### Fiducia Capitis Cloudflare {#cloudflare-header-trust}
+
+Activa fiduciam capitis `CF-Connecting-IP` Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Constitue ad ON ut fiduciam `CF-Connecting-IP` eligas
+  - Praedefinitum: OFF (deactivatum)
+  - Additamentum cum fasciculo incluso instantaneae CIDR Cloudflare traditur
+  - Intervalla CIDR singulis hebdomadibus per wp-cron renovantur
+  - Subsidium inclusum adhibetur si renovatio deficit
+
+#### Configuratio Procuratorum Creditorum {#trusted-proxy-configuration}
+
+Defini procuratores et libratores oneris primae lineae tuos:
+
+* **`cap_trusted_proxies`** — Area textus CIDR aut IP nudorum (unum per lineam)
+  - Commentarii permittuntur (lineae quae a `#` incipiunt)
+  - Sine hac configuratione, `X-Forwarded-For` neglegitur etiam cum limitator frequentiae activatus est
+  - Exemplum:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Auto-Detectio Prima Activatio {#first-enable-auto-detection}
+
+Cum limitatorem frequentiae primum activas, additamentum habitum tuum probabilem Cloudflare et procuratoris deprehendit atque nuntium administratoris unius-click "Adhibe configurationes detectas" ostendit.
+
+* Additamentum valores servatos tuos **numquam superscribit**
+* Si commeatus subsequens indicat configurationem tuam iam cum re non congruere (exempli gratia, Cloudflare intervalla CIDR mutavit), nuntius discrepantiae non dimittendus renovationem commendatam ostendit
+
+### Cur Hoc Interest {#why-this-matters}
+
+Strictus modus fiduciae IP vectorem criticum falsificationis claudit: petitiones directa ad ministratorem originis quae caput `CF-Connecting-IP` fictum ferebant antea secundum IP fictum potius quam verum parem in situla positae essent. Hoc praesertim magni momenti est pro:
+
+* **Limitatio frequentiae** — Impugnatores limites fingendis IPs vitare non possunt
+* **Statistica** — Mensurae impugnationum tuae IPs visitatorum veros referunt, non fictos
+* **Verificatio Captcha** — Provisores IP visitatoris rectum accipiunt ad aestimationem periculi

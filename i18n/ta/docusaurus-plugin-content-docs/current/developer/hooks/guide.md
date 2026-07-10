@@ -3,15 +3,15 @@ title: Hooks பயன்பாட்டு வழிகாட்டி
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# ஹூக்குகள் பயன்பாட்டு வழிகாட்டி
+# ஹூக்குகள் பயன்பாட்டு வழிகாட்டி {#hooks-usage-guide}
 
 Ultimate Multisite ஆனது 200-க்கும் மேற்பட்ட action hooks மற்றும் 280-க்கும் மேற்பட்ட filter hooks-ஐ வழங்குகிறது. இந்தப் பக்கம் மிகவும் பொதுவாகப் பயன்படுத்தப்படும் ஹூக்குகளை நடைமுறை உதாரணங்களுடன் விளக்குகிறது. முழுமையான தானாக உருவாக்கப்பட்ட குறிப்புக்கு, இந்தப் பிரிவில் உள்ள மற்ற பக்கங்களைப் பார்க்கவும்.
 
-## Action Hooks (செயல் ஹூக்குகள்)
+## Action Hooks (செயல் ஹூக்குகள்) {#action-hooks}
 
-### Customer Lifecycle (வாடிக்கையாளர் வாழ்க்கைச் சுழற்சி)
+### Customer Lifecycle (வாடிக்கையாளர் வாழ்க்கைச் சுழற்சி) {#customer-lifecycle}
 
-#### After Customer Creation (வாடிக்கையாளர் உருவாக்கப்பட்ட பிறகு)
+#### After Customer Creation (வாடிக்கையாளர் உருவாக்கப்பட்ட பிறகு) {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Customer Status Change (வாடிக்கையாளர் நிலை மாற்றம்)
+#### Customer Status Change (வாடிக்கையாளர் நிலை மாற்றம்) {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks (தள ஹூக்குகள்)
+### Site Hooks (தள ஹூக்குகள்) {#site-hooks}
 
-#### After Site Published (தளம் வெளியிடப்பட்ட பிறகு)
+#### After Site Published (தளம் வெளியிடப்பட்ட பிறகு) {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Before Template Application (டெம்ப்ளேட் பயன்படுத்தப்படுவதற்கு முன்)
+#### Before Template Application (டெம்ப்ளேட் பயன்படுத்தப்படுவதற்கு முன்) {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks (உறுப்பினர் ஹூக்குகள்)
+### Membership Hooks (உறுப்பினர் ஹூக்குகள்) {#membership-hooks}
 
-#### Status Transitions (நிலை மாற்றங்கள்)
+#### Status Transitions (நிலை மாற்றங்கள்) {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks (பணம் செலுத்தும் ஹூக்குகள்)
+### Payment Hooks (பணம் செலுத்தும் ஹூக்குகள்) {#payment-hooks}
 
-#### Payment Completed / Failed (பணம் செலுத்துதல் நிறைவு / தோல்வி)
+#### Payment Completed / Failed (பணம் செலுத்துதல் நிறைவு / தோல்வி) {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks (செக்அவுட் ஹூக்குகள்)
+### Checkout Hooks (செக்அவுட் ஹூக்குகள்) {#checkout-hooks}
 
-#### Before Processing / After Completion (செயலாக்கப்படுவதற்கு முன் / நிறைவுக்குப் பிறகு)
+#### Before Processing / After Completion (செயலாக்கப்படுவதற்கு முன் / நிறைவுக்குப் பிறகு) {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks (டொமைன் ஹூக்குகள்)
+### Domain Hooks (டொமைன் ஹூக்குகள்) {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks (ஃபில்டர் ஹூக்குகள்)
+## Filter Hooks (ஃபில்டர் ஹூக்குகள்) {#filter-hooks}
 
-### Pricing Filters (விலை நிர்ணய ஃபில்டர்கள்)
+### Pricing Filters (விலை நிர்ணய ஃபில்டர்கள்) {#pricing-filters}
 
-#### Cart Total (கார்ட் மொத்தத் தொகை)
+#### Cart Total (கார்ட் மொத்தத் தொகை) {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Tax Rates (வரி விகிதங்கள்)
+#### Tax Rates (வரி விகிதங்கள்) {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Template Filters (டெம்ப்ளேட் ஃபில்டர்கள்)
+### Template Filters (டெம்ப்ளேட் ஃபில்டர்கள்) {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Limitation Filters (வரம்பு ஃபில்டர்கள்)
+### Limitation Filters (வரம்பு ஃபில்டர்கள்) {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters (கேட்வே ஃபில்டர்கள்)
+### Gateway Filters (கேட்வே ஃபில்டர்கள்) {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout Form Fields (செக்அவுட் படிவ புலங்கள்)
+### Checkout Form Fields (செக்அவுட் படிவ புலங்கள்) {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email Content (மின்னஞ்சல் உள்ளடக்கம்)
+### Email Content (மின்னஞ்சல் உள்ளடக்கம்) {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

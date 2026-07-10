@@ -3,13 +3,13 @@ title: Xüsusi bir Registrar inteqrasiyası qurmaq
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Xüsusi Registrar İntegrasiyası Qurmaq
+# Xüsusi Registrar İntegrasiyası Qurmaq {#building-a-custom-registrar-integration}
 
 Domain Seller addon-u **Integration Registry** (İnteqrasiya Qeydiyyatı) modelindən istifadə edir. Hər bir registrar, `Domain_Selling_Capability` interfeysini tətbiq edən və `wu_domain_seller_register_capabilities` action hook-u vasitəsilə özünü qeyd edən bir PHP sinifidir.
 
 Bu bələdçi sizə xüsusi bir registrar necə qoşacağınızı göstərir.
 
-## İnterfeys
+## İnterfeys {#the-interface}
 
 Sinifiniz `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` interfeysini tətbiq etməli və `WP_Ultimo\Integrations\Base_Capability_Module` sinifindən irsi götürməlidir.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Seçimlə metodlar
+### Seçimlə metodlar {#optional-methods}
 
 Əlavə funksionallıqları açmaq üçün bunları tətbiq edin. Addon, dəstəyi `method_exists()` vasitəsilə aşkarlayır:
 
@@ -81,7 +81,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 | `get_epp_code(string $domain_name): array` | Domen köçürməsi (çıxış) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Domen köçürməsi (giriş) |
 
-### Qaytarılan dəyər konvensiyası
+### Qaytarılan dəyər konvensiyası {#return-value-convention}
 
 Bütün metodlar minimum `success` açarı olan bir array qaytarır:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'İnsan tərəfindən oxuna bilən xət
 
 ---
 
-## Funksionallığınızı Qeyd Etmək
+## Funksionallığınızı Qeyd Etmək {#registering-your-capability}
 
 Sinifinizi `wu_domain_seller_register_capabilities` action-u istifadə edərək qeyd edin:
 
@@ -109,7 +109,7 @@ add_action('wu_domain_seller_register_capabilities', function(\WP_Ultimo\Integra
 
 ---
 
-## Wizard-a Təsdiq Məlumatı Sahələri Əlavə Etmək
+## Wizard-a Təsdiq Məlumatı Sahələri Əlavə Etmək {#adding-credential-fields-to-the-wizard}
 
 Adminlərin quruluş wizard-ı vasitəsilə təsdiq məlumatlarını daxil etməsinə imkan vermək üçün inteqrasiyanızı qeyd edin:
 
@@ -137,7 +137,7 @@ Təsdiq məlumatları, sahə ID-ləri kimi açarlar istifadə edərək network o
 
 ---
 
-## Qeydiyyatdan Sonrakı İşlər üçün Hooks
+## Qeydiyyatdan Sonrakı İşlər üçün Hooks {#hooks-for-post-registration-actions}
 
 Webhook-ları işə salmaq, təminat (provisioning), bildirişlər və ya CRM yeniləmələri üçün bu action-lardan istifadə edin:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Loglama
+## Loglama {#logging}
 
 `wu_log_add()` istifadə edərək provider-a xas log kanalınıza yazın:
 

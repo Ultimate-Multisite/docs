@@ -3,15 +3,15 @@ title: Valideer paletcontrast
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Controleer Paletcontrast
+# Controleer Paletcontrast {#validate-palette-contrast}
 
 De functionaliteit **Controleer Paletcontrast** controleert kleurparen in uw ontwerppalet op naleving van WCAG (Web Content Accessibility Guidelines) voordat ze worden toegepast op uw thema.
 
-## Overzicht
+## Overzicht {#overview}
 
 Deze functionaliteit zorgt ervoor dat het kleurenschema van uw site voldoet aan de toegankelijkheidsnormen door de contrastverhoudingen tussen tekst- en achtergrondkleuren te valideren. Het helpt te voorkomen dat kleurcombinaties moeilijk leesbaar zijn voor gebruikers met visuele beperkingen.
 
-## Input Formaat
+## Input Formaat {#input-format}
 
 De functionaliteit accepteert een kleurenpalet als input:
 
@@ -35,7 +35,7 @@ De functionaliteit accepteert een kleurenpalet als input:
 }
 ```
 
-### Parameters
+### Parameters {#parameters}
 
 | Parameter | Type | Vereist | Beschrijving |
 |-----------|------|---------|-------------|
@@ -43,7 +43,7 @@ De functionaliteit accepteert een kleurenpalet als input:
 | `wcag_level` | string | Nee | WCAG-nalevnheidsniveau: "A", "AA" (standaard), of "AAA" |
 | `pairs_to_check` | array | Nee | Specifieke kleurparen om te valideren (bijv. `["primary-text", "background-text"]`) |
 
-## Gecontroleerde WCAG Niveaus
+## Gecontroleerde WCAG Niveaus {#wcag-levels-checked}
 
 De functionaliteit valideert contrastverhoudingen volgens de WCAG-normen:
 
@@ -56,7 +56,7 @@ De functionaliteit valideert contrastverhoudingen volgens de WCAG-normen:
 - **Normale Tekst** — tekst kleiner dan 18pt (of 14pt vet)
 - **Grote Tekst** — tekst van 18pt of groter (of 14pt vet of groter)
 
-## Output Schema
+## Output Schema {#output-schema}
 
 De functionaliteit retourneert een gedetailleerd validatierapport:
 
@@ -95,7 +95,7 @@ De functionaliteit retourneert een gedetailleerd validatierapport:
 }
 ```
 
-### Output Velden
+### Output Velden {#output-fields}
 
 | Veld | Type | Beschrijving |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ De functionaliteit retourneert een gedetailleerd validatierapport:
 | `status` | string | "pass" of "fail" voor elk paar |
 | `recommendations` | array | Suggesties voor het verbeteren van falende paren |
 
-## Gebruiksvoorbeeld
+## Gebruiksvoorbeeld {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ De functionaliteit valideert alle kleurcombinaties en retourneert:
 - ✅ Background + Text: 12.1:1 verhouding (voldoet aan WCAG AAA)
 - Algemeen: Voldoet aan WCAG AA
 
-## Integratie met Theme Builder
+## Integratie met Theme Builder {#integration-with-theme-builder}
 
 Wanneer u de selectie van ontwerktijdsbestemming in Theme Builder gebruikt, dan:
 
@@ -129,7 +129,7 @@ Wanneer u de selectie van ontwerktijdsbestemming in Theme Builder gebruikt, dan:
 4. Biedt aanbevelingen voor niet-conforme paren
 5. Voorkomt het toepassen van onbereikbare kleurenschema's
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Begin met niveau AA** — WCAG AA is de standaard voor de meeste websites
 - **Test voordat u toepast** — valideer uw palet voordat u een ontwerp vastlegt
@@ -137,7 +137,7 @@ Wanneer u de selectie van ontwerktijdsbestemming in Theme Builder gebruikt, dan:
 - **Overweeg gebruikersvoorkeuren** — sommige gebruikers kunnen extra kleurgevoel hebben
 - **Gebruik contrastcheckers** — combineer deze functionaliteit met browserhulpmiddelen voor verificatie
 
-## Falende Paren en Aanbevelingen
+## Falende Paren en Aanbevelingen {#failing-pairs-and-recommendations}
 
 Als een kleurpaar de validatie faalt, geeft de functionaliteit aanbevelingen:
 
@@ -155,7 +155,7 @@ Als een kleurpaar de validatie faalt, geeft de functionaliteit aanbevelingen:
 }
 ```
 
-## Gerelateerde Functionaliteiten
+## Gerelateerde Functionaliteiten {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — maak logo's met uw gevalideerde kleurenpalet
 - [Create Menu](./create-menu.md) — bouw navigatie met toegankelijke kleuren

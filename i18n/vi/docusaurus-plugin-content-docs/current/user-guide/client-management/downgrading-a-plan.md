@@ -1,44 +1,44 @@
 ---
-title: Hạ cấp gói dịch vụ
+title: Hạ cấp gói
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Hạ cấp gói dịch vụ (v2)
+# Hạ cấp một gói (v2) {#downgrading-a-plan-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 
-Hạ cấp gói dịch vụ hoặc đăng ký là một thao tác phổ biến mà khách hàng của bạn có thể thực hiện khi họ có ngân sách hạn chế hoặc khi họ quyết định rằng không cần nhiều tài nguyên để vận hành subsite của mình.
+Hạ cấp một gói hoặc đăng ký là một thao tác phổ biến mà khách hàng của bạn có thể thực hiện nếu họ có ngân sách hạn chế hoặc họ đã quyết định rằng họ sẽ không cần nhiều tài nguyên để vận hành trang con của mình.
 
-## Cách hạ cấp gói dịch vụ
+## Cách hạ cấp một gói {#how-to-downgrade-a-plan}
 
-Khách hàng của bạn có thể hạ cấp gói dịch vụ bất cứ lúc nào bằng cách đăng nhập vào trang quản trị subsite và nhấp vào **Change** trong trang tài khoản của họ.
+Khách hàng của bạn có thể hạ cấp gói của họ bất cứ lúc nào bằng cách đăng nhập vào dashboard quản trị trang con của họ và nhấp vào **Change** dưới trang account của họ.
 
-![Trang tài khoản với nút Change bên dưới thông tin thành viên](/img/admin/memberships-list.png)
+![Trang account của khách hàng với thẻ Your Membership và nút Change](/img/account-page/membership-change-button.png)
 
-Khi nhấp vào nút **Change**, người dùng/khách hàng sẽ được chuyển đến trang thanh toán, nơi họ có thể chọn gói dịch vụ mà họ muốn đổi sang.
+Khi nhấp vào nút **Change**, người dùng/khách hàng sẽ được chuyển hướng đến trang thanh toán, nơi họ có thể chọn gói mà họ muốn đổi đăng ký của mình sang.
 
-![Trang thanh toán hiển thị các tùy chọn gói dịch vụ để hạ cấp](/img/admin/memberships-list.png)
+![Trang tùy chọn hạ cấp gói ở phía khách hàng](/img/account-page/downgrade-picker.png)
 
-Trong ví dụ này, chúng ta đang hạ cấp gói dịch vụ từ **Premium** xuống **Free**.
+Trong ví dụ này, chúng ta đang hạ cấp gói từ **Premium** xuống **Free**.
 
-Để tiếp tục, người dùng chỉ cần nhấp vào nút **Complete Checkout**. Sau đó, họ sẽ được đưa trở lại trang tài khoản với thông báo về thay đổi đang chờ xử lý cho gói thành viên. Các thay đổi sẽ có hiệu lực vào **chu kỳ thanh toán tiếp theo** của khách hàng.
+Để tiếp tục, người dùng chỉ cần nhấp vào nút **Complete Checkout**. Sau đó, hệ thống sẽ đưa họ trở lại trang account, hiển thị thông báo về thay đổi đang chờ xử lý đối với membership. Các thay đổi sẽ có hiệu lực vào **chu kỳ thanh toán tiếp theo** của khách hàng.
 
-![Trang tài khoản hiển thị thông báo thay đổi gói thành viên đang chờ xử lý](/img/admin/memberships-list.png)
+![Trang Account hiển thị banner thay đổi membership đang chờ xử lý](/img/account-page/pending-change.png)
 
-### Điều gì xảy ra khi người dùng hạ cấp gói dịch vụ
+### Điều gì xảy ra khi người dùng hạ cấp gói của họ {#what-happens-when-a-user-downgrades-their-plan}
 
-Điều quan trọng cần lưu ý là việc hạ cấp gói dịch vụ không làm thay đổi cấu hình hiện có trên subsite của người dùng.
+Điều quan trọng cần lưu ý là việc hạ cấp gói không làm thay đổi cấu hình hiện có trong trang con của người dùng.
 
-Hệ thống không tự động thay đổi template của trang vì việc thay đổi template sẽ xóa hoàn toàn và đặt lại subsite. Điều này nhằm tránh mất dữ liệu không cần thiết. Vì vậy, dung lượng ổ đĩa, theme, plugin, v.v. sẽ được giữ nguyên, ngoại trừ các bài viết.
+Nó không tự động thay đổi mẫu trang vì việc thay đổi mẫu trang sẽ xóa hoàn toàn và đặt lại trang con. Điều này nhằm tránh mất dữ liệu không cần thiết. Vì vậy, dung lượng đĩa, giao diện, plugin, v.v. sẽ được giữ nguyên, ngoại trừ các bài viết.
 
-Chúng tôi hiểu rằng mối quan tâm chính của bạn sẽ là các giới hạn và hạn mức bạn đã thiết lập cho mỗi gói dịch vụ, nhưng chúng tôi phải cân nhắc đến những thiệt hại có thể xảy ra cho subsite của người dùng nếu chúng tôi xóa hoặc thay đổi bất kỳ cấu hình nào của họ.
+Chúng tôi hiểu rằng mối quan tâm chính của bạn sẽ là các giới hạn và hạn ngạch mà bạn đặt dưới mỗi gói, nhưng chúng tôi phải cân nhắc thiệt hại có thể gây ra cho trang con của người dùng nếu chúng tôi xóa hoặc thay đổi bất kỳ cấu hình nào của nó.
 
-Đối với các bài viết vượt quá giới hạn được thiết lập trong gói dịch vụ, bạn có 3 tùy chọn khác nhau: **Giữ nguyên các bài viết**, **Chuyển các bài viết vào thùng rác**, hoặc **Chuyển các bài viết sang bản nháp**. Bạn có thể cấu hình điều này trong phần cài đặt Ultimate Multisite.
+Đối với các bài viết vượt quá giới hạn được đặt trong gói, bạn có 3 tùy chọn khác nhau: **Giữ nguyên các bài viết** *,* **Chuyển các bài viết vào thùng rác** *,* hoặc **Chuyển các bài viết sang bản nháp** *.* Bạn có thể cấu hình điều này trong cài đặt Ultimate Multisite.
 
-![Các tùy chọn khi vượt quá giới hạn bài viết trong cài đặt Ultimate Multisite](/img/config/settings-sites.png)
+![Trang Sites trong Network Admin Settings hiển thị các tùy chọn hành vi khi vượt quá giới hạn bài viết](/img/account-page/settings-sites-post-limit.png)
 
-### Điều gì xảy ra với khoản thanh toán
+### Điều gì xảy ra với khoản thanh toán {#what-happens-to-the-payment}
 
-Trong phiên bản 2.0, hệ thống không còn yêu cầu bất kỳ điều chỉnh nào về thanh toán liên quan đến tính toán theo tỷ lệ.
+Trong phiên bản 2.0, hệ thống không còn yêu cầu bất kỳ điều chỉnh nào đối với khoản thanh toán về mặt tính theo tỷ lệ.
 
-Điều này là do hệ thống sẽ đợi gói thành viên hiện tại **hoàn thành chu kỳ thanh toán trước khi** gói dịch vụ/thành viên mới có hiệu lực. Số tiền thanh toán mới cho gói thành viên mới sẽ tự động được áp dụng và tính phí vào chu kỳ thanh toán tiếp theo.
+Điều này là vì hệ thống sẽ chờ membership hiện tại **hoàn tất chu kỳ thanh toán trước khi** gói/membership mới có hiệu lực. Số tiền thanh toán mới cho membership mới sẽ tự động được áp dụng và tính phí vào chu kỳ thanh toán tiếp theo.

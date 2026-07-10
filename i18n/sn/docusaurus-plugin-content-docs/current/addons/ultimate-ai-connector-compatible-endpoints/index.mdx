@@ -1,0 +1,111 @@
+---
+title: Chinobatanidza AI Chepamusoro-soro cheEndpoints Anoenderana
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector yeNzvimbo dzeKugumira Dzinoenderana {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector yeNzvimbo dzeKugumira Dzinoenderana inobatanidza maAPI evapi veAI anoenderana neOpenAI nenetiweki yako yeWordPress multisite. Gadzirisa vapi veAI vakawanda — mumwe nemumwe aine endpoint URL yake, API key, uye default model — uye fambisa zvikumbiro uchishandisa fallback otomatiki kana mupi asiri kuwanikwa.
+
+## Zvinhu Zvikuru {#key-features}
+
+- **Rutsigiro rwevapi vakawanda**: Wedzera makadhi evapi veAI akawanda, rimwe nerimwe riine endpoint URL yaro, API key, uye default model
+- **Kudhonza kuti uronge patsva**: Ronga vapi maererano nekukosha uchishandisa grip handle pakadhi rimwe nerimwe; zvikumbiro zvinoshandisa vapi maererano nehurongwa
+- **Kufambisa nefallback otomatiki**: Kana mupi mukuru asiri kuwanikwa, zvikumbiro zvinodzokera otomatiki kumupi anotevera akagadziriswa
+- **Kugadzirisa pamupi mumwe nemumwe**: Mupi mumwe nemumwe anogadziriswa akazvimirira aine magwaro ake ekupinda uye kusarudzwa kwemodel
+- **UI yezvirongwa yakavakirwa pamakadhi**: Yakavakwa pazvikamu zveWordPress 6.9+ Card zvakagadzikana (CardBody, CardHeader, CardDivider)
+- **Kuwedzera otomatiki pakuwedzera**: Makadhi matsva evapi anovhurika otomatiki kuitira kuti uzadze mashoko ipapo ipapo
+- **Kubvisa cache yezvinyorwa**: Zvinyorwa zvevapi zvinobvisirwa cache pakuvandudzwa kweplugin kuti ive nechokwadi chekuti shanduro yazvino yatakurwa
+
+## Zvinodiwa {#requirements}
+
+- WordPress 5.3 kana yepamusoro
+- PHP 7.4 kana yepamusoro
+- Ultimate Multisite plugin (inoshanda)
+- Nzvimbo yekugumira yeAPI inoenderana neOpenAI (yakazvitambirwa kana yechitatu-bato)
+
+## Kuisa {#installation}
+
+1. Isa mafaera eaddon mudhairekitori rako re`/wp-content/plugins/`
+2. Batidza plugin kuburikidza nemenu ye'Plugins' muWordPress
+3. Enda ku **Ultimate Multisite → AI Connector** kuti ugadzirise addon
+
+## Kugadzirisa {#configuration}
+
+### Kugadzirwa kweVapi Vakawanda {#multi-provider-setup}
+
+Sikirini yekugadzirisa inoshandisa marongerwo akavakirwa pamakadhi apo kadhi rimwe nerimwe rinomiririra mupi mumwe weAI. Unogona kuwedzera vapi vakawanda sezvaunoda.
+
+#### Kuwedzera Mupi {#adding-a-provider}
+
+1. Enda ku **Ultimate Multisite → AI Connector** muadmin yenetiweki
+2. Dzvanya **Wedzera Mupi**
+3. Kadhi idzva remupi rinoonekwa uye rinovhurika otomatiki
+4. Zadza mashoko emupi:
+   - **Zita reMupi** — label yekuzivisa mupi uyu (semuenzaniso "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — URL yepasi yeAPI inoenderana neOpenAI (semuenzaniso `https://api.openai.com/v1`)
+   - **API Key** — API key yako yemupi uyu
+   - **Default Model** — chiziviso chemodel chinoshandiswa nekusarudzika kumupi uyu (semuenzaniso `gpt-4o`, `mistral-small`)
+5. Dzvanya **Chengetedza Zvirongwa**
+
+#### Kubvisa Mupi {#removing-a-provider}
+
+Dzvanya bhatani re**Bvisa** pakadhi chero ripi remupi kuti uridzime. Chengetedza zvirongwa kuti shanduko ishandiswe.
+
+#### Kuronga Patsva Vapi {#reordering-providers}
+
+Dhonza icon yegrip (⣿) kurutivi rwekuruboshwe rwekadhi chero ripi remupi kuti urironge patsva. Hurongwa hunotarisa kukosha kwefallback: zvikumbiro zvinotumirwa kumupi wekutanga uye zvinodzokera kuvapi vanotevera kana chikumbiro chikakundikana.
+
+### Kufambisa neFallback {#fallback-routing}
+
+Kana chikumbiro kumupi mukuru chikakundikana — nekuda kwekupera kwenguva, rate limit, kana kukanganisika kwesevhisi — connector inoedza zvakare otomatiki nemupi anotevera murondedzero. Izvi zvinoenderera pasi perondedzero kusvikira mupi abudirira kana vapi vese vaedzwa.
+
+| Mamiriro | Maitiro |
+|----------|-----------|
+| Mupi mukuru anopindura | Chikumbiro chinoshandirwa senguva dzose |
+| Mupi mukuru anokundikana | Chikumbiro chinoedzwa zvakare nemupi anotevera |
+| Vapi vese vanokundikana | Kukanganisa kunodzoserwa kune akadaidza |
+
+Fallback iri pachena kuplugin kana theme iri kudaidza — vanogamuchira mhinduro yakabudirira kana kukanganisa kwekupedzisira, zvisinei nekuti vapi vangani vakaedzwa.
+
+### Referensi yeKugadzirisa Mupi {#provider-configuration-reference}
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| Provider Name | Yes | Label yekuratidza yemupi uyu |
+| Endpoint URL | Yes | URL yepasi yeAPI inoenderana neOpenAI |
+| API Key | Yes | Kiyi yekusimbisa yemupi uyu |
+| Default Model | Yes | Chiziviso chemodel chinoshandiswa kana pasina model yatsanangurwa muchikumbiro |
+
+## Kugadzirisa Matambudziko {#troubleshooting}
+
+### Hapana vapi vari kuratidzwa {#no-providers-are-listed}
+
+Kana rondedzero yevapi isina chinhu mushure mekuchengetedza, simbisa kuti:
+
+- Wadzvanya **Chengetedza Zvirongwa** mushure mekuwedzera vapi
+- Bhurawuza rako harina kuvhara peji rezvirongwa pakuchengetedza (tarisa console yebhurawuza kuti uone zvikanganiso zveJavaScript)
+- Plugin iri kushanda uye uri pasikirini yeadmin yenetiweki
+
+### Zvikumbiro zviri kukundikana kuvapi vese {#requests-are-failing-for-all-providers}
+
+- Simbisa kuti endpoint URL yemupi mumwe nemumwe inosvikika kubva kuseva yako (kwete kubva kubhurawuza rako chete)
+- Tarisa kuti API key imwe neimwe iri kushanda uye haisati yapera nguva
+- Ongorora rate-limit yemupi uye mamiriro equota mudashboard yavo
+- Gonesa WordPress debug logging (`WP_DEBUG_LOG`) kuti ubate mameseji ezvikanganiso ane udzamu kubva kuconnector
+
+### Mupi haasi kushandiswa pafallback {#a-provider-is-not-being-used-for-fallback}
+
+Kudhonza kuti uronge patsva kunochinja hurongwa hwefallback. Simbisa kuti mupi waunotarisira kuti agamuchire zvikumbiro zvefallback akaiswa panzvimbo yakarurama murondedzero uye kuti endpoint URL yake neAPI key zvakarurama.
+
+### Kadhi idzva remupi harivhuriki otomatiki {#new-provider-card-does-not-expand-automatically}
+
+Kuvhurika otomatiki kunoda kuti JavaScript igoneswe mubhurawuza rako. Kana kadhi risingavhuriki pakudzvanya, tarisa console yebhurawuza kuti uone zvikanganiso. Zviri mukadhi zvinogara zvichiwanikwa nekudzvanya musoro wekadhi kunyange kana kuvhurika otomatiki kukasaitika.
+
+## Chinyorwa cheShanduko {#changelog}
+
+Ona [Chinyorwa cheShanduko](./changelog) kuti uwane nhoroondo yakazara yeshanduro.

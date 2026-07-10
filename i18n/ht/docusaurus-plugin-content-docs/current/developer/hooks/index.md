@@ -1,0 +1,194 @@
+---
+title: Referans Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referans Hooks {#hooks-reference}
+
+Dokimantasyon ki pwodwi otomatikman pou tout **59 actions** ak **118 filters** nan Ultimate Multisite.
+
+## Actions {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Deklanche anvan redireksyon otantifikasyon an.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Deklanche touswit anvan yo fikse cookie otantifikasyon an.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Deklanche touswit anvan yo fikse cookie otantifikasyon logged-in nan.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Pèmèt devlopè yo ajoute pwòp entegrasyon founisè hosting yo atravè wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Deklanche lè tout depandans yo te chaje
+- [wu_activation](./Actions/wu_activation) — Kite lòt pati nan plugin an atache woutin yo pou aktivasyon
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Pèmèt devlopè plugin yo branche fonksyon apre yon itilizatè oswa super admin chanje modèl sit la
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Nan kèk ka, n ap bezwen chaje plis resous pou jere aksyon yo.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Deklanche anvan tretman demann rechèch la.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Pèmèt devlopè yo fè chanjman adisyonèl nan objè checkout la.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Pèmèt devlopè yo fè chanjman adisyonèl nan objè checkout la.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Deklanche anvan yo ajoute yon chan nan fòm checkout la.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Pèmèt devlopè yo deklanche hooks adisyonèl.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Anvan nou trete checkout la.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Deklanche apre lòd checkout la fin konplètman rasanble.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Pèmèt devlopè plugin yo ajoute widgets nan Panèl Network Dashboard la.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Pèmèt devlopè plugin yo ajoute widgets nan Panèl Network Dashboard la.
+- [wu_deactivation](./Actions/wu_deactivation) — Kite lòt pati nan plugin an atache woutin yo pou dezaktivasyon
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Pèmèt devlopè plugin yo ajoute aksyon nan pwosesis efasman an
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Deklanche lè yon domèn vin domèn prensipal pou yon sit.
+- [wu_domain_created](./Actions/wu_domain_created) — Deklanche lè yo ajoute yon nouvo mapping domèn.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Deklanche apre Domain Mapping debaz nou an fin chaje
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Kèk plugins ap sove URL anvan mapping lan te aktif oswa y ap konstwi URL yo yon lòt fason ki pa enkli o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Pèmèt devlopè yo branche apre yon kopi sit fèt.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Pèmèt devlopè plugin yo ajoute hooks adisyonèl
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook pou netwayaj adisyonèl
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Deklanche anvan jere demann modal ajoute nouvo domèn nan.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Pèmèt devlopè plugin yo sove done meta yo diferan fason si yo bezwen.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Pèmèt devlopè plugin yo sove done meta itilizatè yo diferan fason si yo bezwen.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Deklanche lè yo rankontre yon token lyen majik ki pa valid.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Deklanche apre yon itilizatè konekte atravè lyen majik.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Pèmèt devlopè plugin yo fè bagay adisyonèl lè yo ajoute kliyan an.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Deklanche apre yo anrejistre kapasite MCP yo pou yon antite.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Deklanche apre adaptè MCP a inisyalize.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Deklanche apre yo anile abònman an.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Deklanche apre renouvèlman abònman an.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Deklanche anvan yo anile abònman an.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Deklanche anvan renouvèlman abònman an.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Deklanche apre yo estoke yon objè nan baz done a.
+- [wu_page_added](./Actions/wu_page_added) — Pèmèt devlopè plugin yo kouri bagay adisyonèl lè paj yo anrejistre.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Pèmèt devlopè plugin yo ajoute kontni adisyonèl apre nou enprime paj la
+- [wu_page_before_render](./Actions/wu_page_before_render) — Pèmèt devlopè plugin yo ajoute kontni adisyonèl anvan nou enprime paj la.
+- [wu_page_load](./Actions/wu_page_load) — Pèmèt devlopè plugin yo ajoute hooks adisyonèl nan paj nou yo.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Pèmèt devlopè plugin yo ajoute kontni adisyonèl apre nou enprime paj la
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Pèmèt devlopè plugin yo ajoute kontni adisyonèl anvan nou enprime paj la.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Pèmèt devlopè plugin yo ajoute hooks adisyonèl nan paj nou yo.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Deklanche apre widgets yo anrejistre pou paj sa a.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Deklanche pou pèmèt addons tache modil kapasite ak entegrasyon yo.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Deklanche pou pèmèt entegrasyon yo anrejistre tèt yo.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Pèmèt yo anrejistre wout adisyonèl.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Pèmèt devlopè plugin ajoute aksyon nan pwosesis sovgad la
+- [wu_site_created](./Actions/wu_site_created) — Deklanche apre yo fin kreye yon sit pou premye fwa.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Pèmèt devlopè plugin ajoute hooks adisyonèl, si sa nesesè.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Kouri lè li nan kontèks aperçu modèl la.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Deklanche hook pou mete scripts nan keu a.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Deklanche apre yo fin estoke yon objè nan baz done a.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Deklanche apre yo fin estoke yon objè nan baz done a.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Deklanche apre yo fin estoke yon objè nan baz done a.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Pèmèt devlopè plugin ajoute aksyon nan pwosesis deblokaj la.
+
+## Filtè {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtre dire peryòd ekspirasyon cookie otantifikasyon an.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtre plan redireksyon otantifikasyon an.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Repwodui Filter WP orijinal la isit la, pou fè bagay yo byen.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Pèmèt devlopè plugin yo filtre URL yo itilize nan previewer a
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtre si cookie otantifikasyon an ta dwe voye sèlman sou HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtre si pou itilize yon redireksyon otantifikasyon ki sekirize.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtre si cookie koneksyon an ta dwe voye sèlman sou HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Pèmèt anpeche cookie otantifikasyon yo aktyèlman voye bay kliyan an.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Mete URL redireksyon an.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ajoute etap anplis atravè filtè
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Pèmèt devlopè plugin yo ajoute varyab anplis nan kontèks rann lan globalman.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Pèmèt devlopè yo kout-sikui verifikasyon sa a.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtre chan yo pou modal ajoute nouvo domèn nan.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Pèmèt devlopè yo fè chanjman nan atik liy frè konfigirasyon an.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Pèmèt devlopè yo filtre avi admin Ultimate Multisite ajoute yo.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtre apre li fin chanje.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Kounye a, nou jere tout kalite yo.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Pèmèt devlopè plugin yo kout-sikui limitasyon yo.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtre si frè enskripsyon an ta dwe aplike oswa non.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtre agiman api orijinal yo.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Pèmèt devlopè plugin yo filtre chan adrès fakti yo.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Pèmèt devlopè yo kontoune sòti a epi mete yon nouvo
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Pèmèt devlopè yo kontoune kòd unset current user la.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtre total "montan renouvlab" la.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtre total "montan inisyal" la.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtre total "montan inisyal" la.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Pèmèt devlopè plugin yo mele ak valè kredi a.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtre domèn baz fòm checkout pataje ki pa ta dwe vin dosye domèn katografye.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs nou yo pou ajoute nouvo modèl chan konekte isit la.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs nou yo pou ajoute nouvo kalite chan konekte isit la.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtre mesaj erè yo.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Pèmèt devlopè yo kontoune verifikasyon an si yon chan ka soumèt otomatikman.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Pèmèt devlopè plugin yo ajoute alyas pèsonalize nan validatè fòm lan.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Pèmèt devlopè plugin yo filtre règ validasyon yo.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Retire Params endezirab yo.
+- [wu_contains_element](./Filters/wu_contains_element) — Pèmèt devlopè yo chanje rezilta rechèch inisyal la.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Pèmèt founisè hosting yo enstale konstan an yon fason diferan.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Retounen bèl non sou-divizyon administratif peyi a.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Retounen lis vil yo pou yon eta nan yon peyi.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Retounen lis eta yo pou peyi sa a.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Pèmèt devlopè yo modifye konpòtman defo a epi mete kliyan aktyèl la yon fason diferan.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Pèmèt devlopè yo modifye konpòtman defo a epi mete membership aktyèl la yon fason diferan.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Pèmèt devlopè yo modifye konpòtman defo a epi mete sit aktyèl la yon fason diferan.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Pèmèt devlopè yo modifye paramèt URL jere sit la.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Pèmèt devlopè plugin yo filtre lyen yo.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Pèmèt devlopè plugin yo ajoute nouvo verifikasyon pou defini rezilta yo.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Nou ka bezwen ajoute blòk siplemantè pita.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Ajoute filtè jenerik pou pèmèt devlopè yo elaji analizè sa a pou jere lòt builders oswa plugins siplemantè.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtre si pou aplike règ modpas siplemantè yo.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtre non itilizatè kliyan ki jenere a.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Pèmèt devlopè plugin yo filtre pre-konfigirasyon yon paj checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Pèmèt devlopè yo ajoute nouvo slugs fòm pou kontoune konpòtman sa a.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Pèmèt devlopè ak add-ons yo ajoute nouvo etap migrasyon
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Gade plis sou filtè sa a anba a, sou menm metòd sa a.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Pèmèt devlopè yo chwazi ki kalite posts ki ta dwe parèt.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Retounen liy yo, ki ka filtre
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Pèmèt devlopè yo manipile pè domain/path yo.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtre seksyon wizard yo pou konfigirasyon entegrasyon hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtre chan yo sou yon fòm. Yo idantifye fòm nan pa ID ki nan non filtè a.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtre kalite pwodwi yo ki gen sik faktirasyon endepandan.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Pèmèt devlopè plugin yo fòse yon eta espesifik pou API a.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Pèmèt devlopè plugin yo ajoute tès siplemantè pou mòd devlopman.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Pèmèt devlopè plugin yo fòse yon eta espesifik pou adaptè MCP a.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Pou rezon sekirite, nou limite kantite aksyon ki disponib pou branche ladan yo. Filtè sa a pèmèt devlopè yo elaji
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Verifye si yon kalite post espesifik otorize sou plan sa a. Pèmèt devlopè plugin yo filtre valè retou a
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtre si pou aplike verifikasyon adrès IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtre si pou aplike verifikasyon ajan itilizatè.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtre URL magic link ki jenere a.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtre si magic links yo aktive.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtre URL redireksyon an apre yon domèn vin prensipal.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Kreye yon lis eksklizyon paramèt ki anpeche redireksyon otomatik la.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtè pou ranplase desizyon enklizyon kapasite MCP a.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtre dat ekspirasyon kalkile a.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtre dat ekspirasyon kalkile a pou mete apre renouvèlman an.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Pèmèt devlopè yo ajoute nouvo slugs fòm aktyalizasyon.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtre longè minimòm modpas la.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtre fòs minimòm modpas ki obligatwa (nòt zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Pèmèt devlopè plugin yo, ak nou menm, ajoute lyen aksyon nan paj edisyon nou yo
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtre si pou egzije lèt miniskil nan modpas yo.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtre si pou egzije nimewo nan modpas yo.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtre si pou egzije karaktè espesyal nan modpas yo.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtre si pou egzije lèt majiskil nan modpas yo.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Pèmèt itilizatè a chanje mesaj sou peman ki annatant yo.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtre kalite pwodwi yo ki ta dwe trete kòm plans.
+- [wu_post_count](./Filters/wu_post_count) — Pèmèt devlopè plugin yo chanje total konte a
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Pèmèt devlopè plugin yo chanje ki estati post ki ta dwe konte. Pa defo, posts pibliye ak prive yo konte
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtre done objè a anvan yo estoke li nan baz done a.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Pèmèt devlopè yo filtre paramèt yo anvan Ultimate Multisite sove yo.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtre si li otorize kontinye ak demann lan oswa non.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtre si li otorize kontinye ak demann lan oswa non.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtre si li gen pèmisyon pou kontinye ak demann lan oswa non.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtre si li gen pèmisyon pou kontinye ak demann lan oswa non.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtre si li gen pèmisyon pou kontinye ak demann lan oswa non.
+- [wu_return_url](./Filters/wu_return_url) — Pèmèt devlopè yo chanje URL retou gateway la yo itilize apre pwosesis checkout yo.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Pèmèt devlopè plugin yo ajoute plis fonksyon modèl rechèch.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Pèmèt devlopè yo ajoute etap anplis nan asistan konfigirasyon an.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtre si Ultimate Multisite ta dwe kreye yon dosye domèn pou yon site ki fèk kreye.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Pèmèt devlopè yo koupe redireksyon an bonè, pou anpeche li fèt.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Pèmèt re-ekriti handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtre aksyon an mas ki disponib pou site yo.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtre pou chanje valè pou jwenn pluginssites andedan rezo a.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Aktive/dezaktive kapasite single-sign-on ant domèn yo.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtre URL SSO ki jenere yo anvan yo retounen pou aksyon kliyan ant domèn yo.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtre done Abònman Stripe. Ka ranplase success_url oswa cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtre agiman entansyon peman yo.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtre ID plan pou verifye a. Si sa egziste, nouvo abònman an ap itilize plan sa a.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtre ID product pou verifye a. Si sa egziste, nouvo abònman an ap itilize product sa a.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtre valè idempotency_key yo voye ak opsyon chaj Stripe yo.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtre dosye manm ki asosye ak webhook sa a.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtre meta done yo anvan yo serialize yo pou estoke nan bazdone a.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtre done objè a anvan yo estoke li nan bazdone a.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Pèmèt devlopè yo chanje URL ajou pou debloke a
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Detèmine si yo ta dwe itilize yon mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtre non itilizatè nouvo kliyan an.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Pèmèt devlopè yo chanje mesaj sou limit itilizatè manm yo
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Pèmèt devlopè yo ajoute dosye anplis nan lis ki ka ranplase a.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtre ki sub_commands ki aktive pou antite sa a.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Nou verifye twa modèl lè n ap eseye konprann ki kote nou ka enjekte konstan nou yo:

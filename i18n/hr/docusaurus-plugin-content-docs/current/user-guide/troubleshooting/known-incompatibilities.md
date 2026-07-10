@@ -3,7 +3,7 @@ title: Poznate nekompatibilnosti
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Poznate nekompatibilnosti s drugim pluginovima
+# Poznate nekompatibilnosti s drugim pluginovima {#known-incompatibilities-with-other-plugins}
 
 Nakon instalacije i aktiviranja Ultimate Multisite, možete naići na probleme zbog neispravno riješenih nekompatibilnosti s drugim pluginovima.
 

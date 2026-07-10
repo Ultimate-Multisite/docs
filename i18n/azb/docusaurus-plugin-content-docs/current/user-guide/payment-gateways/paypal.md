@@ -3,7 +3,7 @@ title: PayPal-ni quraq
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway Kurulumu (v2)
+# PayPal Gateway Kurulumu (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
 
@@ -13,13 +13,13 @@ Tıpkı Stripe gibi, PayPal da online ödemeler için yaygın olarak kullanılan
 
 Bu entegrasyon için gerekli olan API kimlik bilgilerini alabilmek için bir **PayPal Business hesabına** sahip olmanız gerektiğini unutmayın.
 
-## Ağınızda PayPal'ı Etkinleştirme
+## Ağınızda PayPal'ı Etkinleştirme {#enabling-paypal-on-your-network}
 
 PayPal'ı ağınızda kullanabileceğiniz bir ödeme yöntemi olarak etkinleştirmek için **Ultimate Multisite > Ayarlar > Ödemeler** sekmesine gidin ve PayPal'ın yanındaki kutucuğu işaretleyin.
 
 ![Aktif ödeme ağ geçitlerinde PayPal'ı etkinleştirme](/img/config/settings-payment-gateways.png)
 
-## Rehberli Kurulum Sihirbazını Kullanma
+## Rehberli Kurulum Sihirbazını Kullanma {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0, ödeme ağ geçidi ayarlarına rehberli bir PayPal kurulum sihirbazı eklemiştir. PayPal'ı etkinleştirdikten sonra, ağ geçidini nasıl bağlamak istediğinizi seçmek ve kaydetmeden önce hangi kimlik bilgilerinin hala gerekli olduğunu onaylamak için **Ultimate Multisite > Ayarlar > Ödemeler** üzerindeki sihirbazı kullanın.
 
@@ -30,7 +30,7 @@ Sihirbaz iki kurulum yolu destekler:
 
 Sihirbazda OAuth seçeneğini görmüyorsanız, aşağıdaki manuel kimlik girişi akışını tamamlayın. Ağ geçidi, önceki Ultimate Multisite 2.x sürümleriyle aynı PayPal Business API kimlik bilgilerini kullanır.
 
-## PayPal API Kimlik Bilgilerini Alma
+## PayPal API Kimlik Bilgilerini Alma {#getting-the-paypal-api-credentials}
 
 PayPal bir ödeme ağ geçidi olarak etkinleştirildikten sonra, PayPal API **Kullanıcı Adı** , PayPal API **Şifresi** ve PayPal API **İmzası** alanlarını doldurmanız gerekecektir.
 

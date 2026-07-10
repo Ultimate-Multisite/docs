@@ -3,9 +3,9 @@ title: Dziennik zmian Ultimate AI Connector dla Kompatybilnych Punktów Końcowy
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints — Historia zmian
+# Ultimate AI Connector for Compatible Endpoints — Historia zmian {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Wersja 2.0.0 — Wydana 2026-04-24
+## Wersja 2.0.0 — Wydana 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nowość: Wsparcie dla wielu dostawców — skonfiguruj wiele endpointów AI i kieruj żądania z automatycznym przełączaniem (fallback) między dostawcami.
 * Poprawka: Integracja SDK dla wielu dostawców z poprawnymi ID dostawców, adresami rejestracji i zakresem filtrowania HTTP dla każdego dostawcy.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Poprawka: Usunięto blokujące żądanie HTTP, które wywoływało się przy każdym ładowaniu strony.
 * Ulepszenie: Przepływy pracy GitHub Actions zaktualizowano do Node.js 24.
 
-## Wersja 1.0.0 — Wydanie początkowe
+## Wersja 1.0.0 — Wydanie początkowe {#version-100--initial-release}

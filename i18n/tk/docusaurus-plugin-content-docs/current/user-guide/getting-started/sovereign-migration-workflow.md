@@ -3,11 +3,11 @@ title: Hükümdar Geçiş İş Akymy
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Egemen Migrasi İş Akışı
+# Egemen Migrasi İş Akışı {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 standart bir alt sitesini egemen kiracı altyapısına taşımak için migrasyon doğrulama kapılarını əlavə edir.
 
-## Başlamadan Əvvəl
+## Başlamadan Əvvəl {#before-you-start}
 
 Aşağıdakıları etdiyinizdən əmin olun:
 
@@ -17,7 +17,7 @@ Aşağıdakıları etdiyinizdən əmin olun:
 - Hədəf mühitlə uyğun olan bir bazası host bindingin olması.
 - Şəbəkə üçün WP-CLI əmrlərini işlətmək imkanının olması.
 
-## Tövsiyə olunan iş axını
+## Tövsiyə olunan iş axını {#recommended-workflow}
 
 1. Hədəf kiracı bazasını və fayl sistemini hazırlayın.
 2. Kiracı izolyasiya ayarlarını qeyd edin və ya yeniləyin.
@@ -28,7 +28,7 @@ Aşağıdakıları etdiyinizdən əmin olun:
 7. SSO ilə kiracının ziyarət etməsini edin.
 8. Doğrulamadan sonra yalnız DNS və ya yönləndirməni dəyişin.
 
-## Doğrulama kapıları
+## Doğrulama kapıları {#verification-gates}
 
 Doğrulama iş axını migrasiyanı bir neçə bucaqdan yoxlayır:
 
@@ -40,6 +40,6 @@ Doğrulama iş axını migrasiyanı bir neçə bucaqdan yoxlayır:
 
 Doğrulama səhvlərini işə salmadan əvvəl maneə kimi qəbul edin. Bildirildiyi bazası, istifadəçini, kuyunu və ya yönləndirməni düzəldin, sonra kiracını müştərilərə göstərməzdən əvvəl yenidən doğrulama işini işlədin.
 
-## İlk istehsal ziyarəti
+## İlk istehsal ziyarəti {#first-production-visit}
 
 Doğrulama uğurladıqdan sonra, ilk administrator ziyarəti üçün sayt idarəetmə ekranından **Visit (SSO)** funksiyasını istifadə edin. Bu, kiracı yönləndirməsini, SSO tokeninin idarə edilməsini, mənbəni sabitlətməni və kiracı tərəfində istifadəçi təminatını bir nəzarət olunan addımda təsdiqləyir.

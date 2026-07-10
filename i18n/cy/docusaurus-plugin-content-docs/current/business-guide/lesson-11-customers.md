@@ -3,14 +3,14 @@ title: 'Dysgu 11: Chwilio amgylcheddwyr'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Leses 11: Gwriadau Cliention
+# Leses 11: Gwriadau Cliention {#lesson-11-finding-customers}
 
 Mae ffurfwrda'n dda heb unrhyw gwriadau yn rhywbeth o ddefnydd. Mae’r les hon yn gwmpasu sut i gael gwriadau mewn cyfderiad penodol – strategaid sydd yn weithio yn benodol oherwydd bod chi wedi sefylltu ar un dyfodol.
 
-## Oes yma lle ni dod
+## Oes yma lle ni dod {#where-we-left-off}
 Mae FitSite yn llai. Mae angen i'r rheolwr studio fithrin gym sydd yn dod i ddarganfod ei fod ac i gael eu cyflwyniad.
 
-## Pam mae cyfderiad penodol yn gwahanol
+## Pam mae cyfderiad penodol yn gwahanol {#why-niche-acquisition-is-different}
 
 Pan mae chi'n bawbio i holl dda, mae chi'n cyd-deallu am y sylw mewn bazar drefn. Pan mae chi'n bawbio i rhywbeth penodol, mae gennychauch cynrychiadau:
 
@@ -19,26 +19,26 @@ Pan mae chi'n bawbio i holl dda, mae chi'n cyd-deallu am y sylw mewn bazar drefn
 
 - **Mae cyflwyniadau'n cyfleu** -- mae rheolwr studio fithrin yn gwybod am dda studio fithrin byth
 
-## Cyfylchedd 1: Cyflwyniad Direct
+## Cyfylchedd 1: Cyflwyniad Direct {#channel-1-direct-outreach}
 
 Mae'r llwybr gyflymod i'ch gwriadau cyntaf yw cyflwyniad personol a direct.
 
-### Dod i ddarganfod gwriadau
+### Dod i ddarganfod gwriadau {#find-prospects}
 - Cynhelwch Google Maps ar gyfer studio fithrin, gym, a gweithwyr fithrin personol yn eich ardal
 - Ymddangos ar eu weibynion ar hyn o bryd (neu nodwch bod nhw heb un)
 - Cynhyrchu gair cyfathogh o'u profiadau Google Business neu media sosial
 
-### Adfilio eu sefyllfa angen
+### Adfilio eu sefyllfa angen {#evaluate-their-current-situation}
 Ar gyfer pob profiad, nodwch:
 
 - **Nid oes weibyn:** Profiad cynhwyslon -- mae angen nhw i beth chi'n cynnig
 - **Weibyn dda:** Profiad cynhwyslon -- dangos iddo beth yw opsiwn gwell
 - **Weibyn dda:** Profiad bach -- mae nhw wedi cyflawdd y problem hwn
 
-### Cyfathogh
+### Cyfathogh {#make-contact}
 Anfon e-bost o personol neu sefyllfa:
 
-## Canol 2: Cymunedau Niche (Niche Communities)
+## Canol 2: Cymunedau Niche (Niche Communities) {#channel-2-niche-communities}
 
 Mae rheolwrstodau fithres yn cyfuno mewn lleoliadau penodol ar-lein:
 
@@ -47,7 +47,7 @@ Mae rheolwrstodau fithres yn cyfuno mewn lleoliadau penodol ar-lein:
 - **Fforwm yr olygon (Industry forums)** a bwrdd dysgu.
 - **Gruppau LinkedIn** ar gyfer proffesiynau fithres.
 
-### Sut i Gynllunio (How to Participate)
+### Sut i Gynllunio (How to Participate) {#how-to-participate}
 
 Peidiwch â chynllunio ac ychwanegu eich cynnyrch yn gyntaf. Er thayddwch:
 
@@ -56,7 +56,7 @@ Peidiwch â chynllunio ac ychwanegu eich cynnyrch yn gyntaf. Er thayddwch:
 3. **Rhannu pan fydd yn hanfodol** -- pan mae rhyw yn gofyn am wefan, rhannwch eich platform yn naturiol.
 4. **Creu cynnyrch ddefnyddiol** -- ysgrif postau am "pa beth sy'n gwneud wefan fithres gwych" sydd yn arwain i'ch platform.
 
-## Canol 3: Cynhyrchu Cynllunio (Content Marketing)
+## Canol 3: Cynhyrchu Cynllunio (Content Marketing) {#channel-3-content-marketing}
 
 Creu cynnyrch sydd yn cael ei chwilio gan rheolwrstodau fithres:
 
@@ -94,7 +94,7 @@ Mae eich marciaeth orau yw cyflwyniadau'r cyd-deallwyr sydd ar gael. gyda chymor
 - Mae'n gofyn i golygu'r cydweithwyr lawerol am ddefnyddio testimonialau
 - Gofyn i'r cydweithwyr i ddweud y FitSite pan cael eu cael eu cwestiynau am eu gwefan
 
-## Rheoli Program Cydweithwyr (Referral Program)
+## Rheoli Program Cydweithwyr (Referral Program) {#channel-4-partnerships}
 
 Mae siarad o'r gwaith yn ffordd mwyaf cyfyngedig mewn niche. Gofyn iddo fod yn ffurfiol:
 
@@ -102,7 +102,7 @@ Mae siarad o'r gwaith yn ffordd mwyaf cyfyngedig mewn niche. Gofyn iddo fod yn f
 2. Cynnig amrywiaeth i'r cydweithwyr sydd ar gael am wobr am cydweithwyr (un mlynedd o ddefnyddio, credit cyfrifol, etc.)
 3. Gwyafwch ei ddefnyddio -- rhoi link cydweithwyr a message siŵr y gallu eu hanfodol
 
-## Drau'r Cyfathrebu Ymddangos
+## Drau'r Cyfathrebu Ymddangos {#channel-5-industry-events}
 
 Ar gyfer pob cydweithred, drau:
 
@@ -112,7 +112,7 @@ Ar gyfer pob cydweithred, drau:
 
 Gofyn iddo fod yn ddefnyddio'r gymharol sydd yn gweithio. Trosglwch y gymharol sydd yn cael ei ddefnyddio.
 
-## Cyfathrebu Cynlluniau Realistig
+## Cyfathrebu Cynlluniau Realistig {#channel-6-showcase-sites}
 
 - **Mlynedd 1-3**: 5-20 cydweithred, yn bennaf o ddefnyddio cyflwyniadau cyflwyniadol a gymunedau
 - **Mlynedd 4-6**: 20-50 cydweithred, mae cynlluniau gweithredol yn dechrau chynllunio
@@ -120,7 +120,7 @@ Gofyn iddo fod yn ddefnyddio'r gymharol sydd yn gweithio. Trosglwch y gymharol s
 
 Mae'r amserau hyn yn ewch, ond mae'r model yn unig: y cydweithwyr uchel yn dod o ddefnyddio cyflwyniadau cyffredin, y cydweithwyr yn ddiweddar yn dod o effaith cymharol o cynlluniau, cydweithwyr lawerol, a chwarae.
 
-## Beth Rydyn Niethau Hwnnw
+## Beth Rydyn Niethau Hwnnw {#setting-up-a-referral-program}
 
 ---
 

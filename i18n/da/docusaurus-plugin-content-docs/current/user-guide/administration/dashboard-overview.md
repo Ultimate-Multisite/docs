@@ -3,11 +3,11 @@ title: Overblik over dashboardet
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Oversigt over Dashboardet
+# Oversigt over Dashboardet {#dashboard-overview}
 
 Ultimate Multisite har et dedikeret **Dashboard** under Ultimate Multisite-menuen, og det tilføjer også widgets til Network Dashboard. Denne artikel dækker, hvad du vil se i begge steder.
 
-## Network Dashboardet
+## Network Dashboardet {#the-network-dashboard}
 
 Ultimate Multisite indsætter nyttige widgets i netværksniveau dashboardet, som findes under **Mine Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Her er, hvad hvert widget giver dig:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboardet
+## Ultimate Multisite Dashboardet {#the-ultimate-multisite-dashboard}
 
 Mens netværksdashboardet præsenterer et helhedsbillede af netværket, præsenterer Ultimate Multisite dashboardet (på topniveau i Ultimate Multisite-menuen) information om selve tjenesten.
 

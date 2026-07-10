@@ -3,7 +3,7 @@ title: Hloka le tšhobo ka Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Event: Register an account via Zapier
+# Event: Register an account via Zapier {#event-register-an-account-via-zapier}
 
 Mme le ntlha [Integrating Ultimate Multisite with Zapier](zapier.md), re bua hore na ba leba ka u sebel Zapier ho dira litlhahlo tse fapaneng mo Ultimate Multisite ka ho fetola ka boemo (triggers) le litšepo (events). Mo lapa la this article, re tla go bona ka u leka ho fana ka bonako le taba tsa boroli ba lefatshe la 3rd party. Re tla sebelisa Google Sheets e le mofuta o mo thabela le ho seletsa litlhahlo ho Ultimate Multisite ho dira boemo (register an account).
 

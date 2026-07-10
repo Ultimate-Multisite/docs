@@ -3,9 +3,9 @@ title: Mailster Changelog
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Mailster మార్పుల వివరాలు
+# Mailster మార్పుల వివరాలు {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * తొలి విడుదల
 * సైన్అప్ లేదా చెల్లింపు సమయంలో ఆటోమేటిక్ సబ్‌స్క్రైబర్ సింక్
 * ఉత్పత్తి-నిర్దిష్ట జాబితా కేటాయింపులు

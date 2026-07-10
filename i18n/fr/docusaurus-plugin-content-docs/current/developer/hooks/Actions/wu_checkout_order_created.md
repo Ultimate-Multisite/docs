@@ -4,13 +4,13 @@ title: Action - wu_checkout_order_created
 sidebar_label: wu_checkout_order_created
 _i18n_hash: b84a1cefda2300f7fc20b2f069799f00
 ---
-# Action: wu_checkout_order_created
+# Action: wu_checkout_order_created {#action-wucheckoutordercreated}
 
 S'exécute après que la commande de paiement soit entièrement assemblée.
 
 Les modules complémentaires peuvent l'utiliser pour créer des adhésions secondaires pour les produits ayant des cycles de facturation indépendants.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Les modules complémentaires peuvent l'utiliser pour créer des adhésions secon
 | $membership | `\WP_Ultimo\Models\Membership` | L'adhésion principale. |
 | $payment | `\WP_Ultimo\Models\Payment` | Le paiement. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L891) à la ligne 891

@@ -1,138 +1,156 @@
 ---
-title: Whakawātea i tō fōme o te whakatakino
+title: Te Whakarite i Tō Puka Rēhita
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Whakamahi i tō Tātai Whakawhanaungatanga (Registration Form)
+# Te Whakarite i tō Puka Rehitatanga {#customizing-your-registration-form}
 
-Kia tino whakamua ahau i te wāhi o tō whānau i te ao, he pēnei i ngā SaaS (Software as a Service) katoa e ana i WordPress, ka taea e Ultimate Multisite i koe te whakamaoritanga i ngā manawa whakaahua (registration) me ngā manawa whakauru (login pages) mā te whakamahi i te āhuatanga **Checkout Forms** o tātou.
+Kia motuhake ai te āhua o tō whatunga i ērā atu SaaS katoa i hangaia ki runga i te tūāpapa WordPress, ka āhei a Ultimate Multisite ki te whakarite i ō whārangi rehitatanga me ō whārangi takiuru mā tā mātou āhuatanga **Puka Takiutu**.
 
-Mā te mea he tino ātaahua ana me tino whai tikanga, he pēnei i te whakamahinga mō te whakatū whakamārama i āhua hoki katoa i roto i te whakawhanaungatanga hou, he tino whakamahia ana ki te whakatō manawa whakaahua (registration forms) mā te whakamahi i āhuatanga mō te whai tikanga. Ko tēnei kōrero he pēnei i te whakaatu atu ki a koe i te mea i ka taea e koe te whakamahi i te āhuatanga o te whakaaro ahau.
+Ahakoa he ara māmā, he ngāwari hoki ēnei hei whakamātau i ngā huarahi rerekē ina ngana ana ki te huri i ngā kiritaki hou, ka whakamahia te nuinga hei waihanga puka rehitatanga whaiaro. Ko te whāinga o tēnei tuhinga he whakaatu ki a koe me pēhea e taea ai e koe tēnei.
 
-## Ngā manawa whakauru me ngā manawa whakaahua (Login and registration pages):
+## Ngā whārangi takiuru me te rehitatanga: {#login-and-registration-pages}
 
-I muri i te whakatū Ultimate Multisite, ka tino whakamahia ana ia i te whakamahi i ngā manawa whakauru me ngā manawa whakaahua mō tō wāhi nui. Ko taea ai koe te whakawhiti i ngā manawa pēnei i teinei e i runga i tō **Ultimate Multisite > Settings > Login & Registration** page.
+I te tāutanga o Ultimate Multisite, ka waihanga aunoa i ngā whārangi takiuru me ngā whārangi rehitatanga ritenga ki tō pae matua. Ka taea e koe te huri i ēnei whārangi taunoa i ngā wā katoa mā te haere ki tō whārangi **Ultimate Multisite > Tautuhinga > Takiuru me te Rehitatanga**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Whārangi tautuhinga Takiuru me te Rehitatanga](/img/config/settings-general.png)
 
-He pēnei te whakaatu atu ki te whānui o te manawa whakauru me ngā manawa whakaahua:
+Anei tētahi tirohanga katoa o te whārangi tautuhinga takiuru me te rehitatanga:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Whārangi katoa o ngā tautuhinga Takiuru me te Rehitatanga](/img/config/settings-login-registration-full.png)
 
-Kia mau ahau i tētahi whakamārama mō ngā tuatahi o ngā āhuatanga e taea ai koe te whakamaoritanga ana i te **Login & Registration** page:
+Me titiro tātou ki ia kōwhiringa ka taea e koe te whakarite i te whārangi **Takiuru me te Rehitatanga**:
 
-  * **Enable registration (Whakawhanaungatanga):** Ko tēnei option ka whakatika ahau ko te whakamahi i te whakaahua mō te whakahou (enable) he tino pēnei, he whakatika ahau ko te whakatika i te whakaahua mō te whakatika (disable). Ko te mea e whakatika ana ia, ka taea e ngā wāhi o koe te whakamahi i te whakataunga me te whai tikanga i ngā āhuatanga o koe.
+  * **Whakahohe rehitatanga:** Mā tēnei kōwhiringa e whakahohe, e mono rānei te rehitatanga i tō whatunga. Ki te whakawetohia, kāore ō kiritaki e āhei ki te rēhita me te ohauru ki ō hua.
 
-  * **Enable email verification (Whakawhiti Email Verification):** Ko te mea e whakatika ahau ko te whakahou ia, ka ngā wāhi e whai i te whakataunga mō te plan mō te free (free plan) he tino pēnei, he ka whai i ngā email whakamārama (verification email) me ka whai i ngā link o whakamārama (verification link) kia taea ai ngā wāhi o koe te whakamaoritanga.
+  * **Whakahohe manatoko īmēra:** Ki te whakakāngia tēnei kōwhiringa, ka whiwhi ngā kiritaki e ohauru ana ki tētahi mahere kore utu, ki tētahi mahere utu rānei me te wā whakamātau, i tētahi īmēra manatoko, ā, me pāwhiri rātou i te hononga manatoko kia waihangatia ai ā rātou paetukutuku.
 
-* **Pepeha Pāpeha (Registration Page) Default:** He pēpeha he nui ko te peapea mō te whakamārama i te registration. Ko tēnei peapea me te whai ake i te waka o te wera (registration form) – ko te waka he ka taea e ngā wāhi (clients) te piraki i ngā aua aua (products). Ko te tino nui, e taea ai koe te whakamaoritanga (create) i ngā peapea registration me ngā waka checkout e e hiahia atu. Engari he tino mōhio: kia puta te waka checkout mo te peapea registration, engari kia puta te waka checkout mo te peapea registration, engari kia puta te waka checkout mo te peapea registration, engari kia puta te waka checkout mo te peapea registration.
+  * **Whārangi rehitatanga taunoa:** Koinei te whārangi taunoa mō te rehitatanga. Me whakaputa tēnei whārangi ki tō paetukutuku, ā, me whai puka rehitatanga (e mōhiotia ana hoki hei puka takiutu) - ko reira ō kiritaki e ohauru ai ki ō hua. Ka taea e koe te waihanga i te maha o ngā whārangi rehitatanga me ngā puka takiutu e hiahia ana koe, me maumahara noa ki te tuku i te shortcode puka takiutu ki te whārangi rehitatanga, ki te kore, kāore e puta.
 
-  * **Whai i peapea login (Use custom login page):** Ko tēnei option e hiahia ana ki te whakamahi i peapea login he tino whakahua (customized) he wae, he wae he hoki i te wp-login.php default. Ko te mea, ko i roto i te option **Default login page** (he pēpeha he titiro i runga i te option e hoki i te peapea registration), koe e whakaaro he peapea waiata (page) wai e whakamahia mō te login.
+  * **Whakamahia te whārangi takiuru ritenga:** Mā tēnei kōwhiringa koe e āhei ki te whakamahi i tētahi whārangi takiuru kua whakaritea, kē atu i te whārangi taunoa wp-login.php. Ki te whakakāngia tēnei kōwhiringa, ka taea e koe te tīpako ko tēhea whārangi ka whakamahia mō te takiuru i te kōwhiringa **Whārangi takiuru taunoa** (kei raro tonu).
 
-  * **Whakaahua/Whakamārama i te URL o te login (Obfuscate the original login url - wp-login.php):** Ko te mea, ko engari he tino nui ki te whakatika ngā URL o te login he tino whakamua (hide) te URL o te login hou (wp-login.php). He tino mārama ana tēnei mō te whakamaoritanga i ngā attack brute-force. Ko i roto i te option ko, Ultimate Multisite e whakaatu error 404 ki te wāhi he whai ake i te user e pēnei i te link o te wp-login.php hou.
+  * **Huna i te url takiuru taketake (wp-login.php)** : Ki te hiahia koe ki te huna i te URL takiuru taketake, ka taea e koe te whakakā i tēnei kōwhiringa. He whaihua tēnei hei ārai i ngā whakaeke brute-force. Ki te whakahohea tēnei kōwhiringa, ka whakaatu a Ultimate Multisite i tētahi hapa 404 ina ngana tētahi kaiwhakamahi ki te uru atu ki te hononga wp-login.php taketake
 
-  * **Whakaora/Whakawhanaungatanga site (Force synchronous site publication):** I roto i te whenua, i raro i te mea kei te piraki te customer i aua product he tino nui ana ki te site hou e hiahia ana ki te whakawhanaunga i te site o te whenua. Ko te whakatau (publishing) ko e rite ana ki Job Queue, he asynchronous. Whakaaro koe i tēnei option kia puta te whakatau (publication) i te wāhera o te signup.
+  * **Whakahau whakaputanga pae tukutahi:** I muri i te ohauru a tētahi kiritaki ki tētahi hua i runga i tētahi whatunga, me huri te pae hou e tārewa ana hei pae whatunga tūturu. Ka tū te tukanga whakaputa mā Job Queue, ā-tukutahi-kore. Whakahohea tēnei kōwhiringa kia whakahautia te whakaputanga kia tū i roto i taua tono anō o te waitohutanga.
 
-I te mea, he tino nui ngā option hou he hoki ana ki te login me te registration process. Ko i runga i **Other options** e hoki ana ki te Login & registration page:
+Inaianei, me kite i ētahi atu kōwhiringa e hāngai tonu ana ki te tukanga takiuru me te rehitatanga. Kei raro tonu ēnei i **Ētahi atu kōwhiringa** i taua whārangi Takiuru me te rehitatanga anō:
 
-  * **Tāpe/Rau (Default role):** Ko tēnei tāpe ko te tauira (role) he whai ake i ngā wāhi o te signup, he heke ai i te website o te customer.
+  * **Tūranga taunoa:** Koinei te tūranga ka whai ō kiritaki i runga i tō rātou paetukutuku i muri i te tukanga waitohu.
 
-* **Whakarite Jumper:** Whakarite i te shortcut Jumper i te arewa admin. E kitea ai ki ngā administrator ki te whakawhanake rā i Ultimate Multisite, ngā object o te wairua (network objects), me ngā wāhi e whai ake ana e tino whaiaro ana, i roto i te mea he pēnei i te whakatipu i te menu katoa. Whakarite ki te whakatika i tēnei whakatau kia whakaatu i tēnei taonga whakamahi rā i te interface admin.
+  * **Whakahohe Jumper:** Ka whakahohe i te pokatata Jumper i te wāhi kaiwhakahaere. Ka āhei a Jumper i ngā kaiwhakahaere ki te peke tere ki ngā mata Ultimate Multisite, ngā ahanoa whatunga, me ētahi atu ūnga tautokona, me te kore e tirotiro i ia tahua. Whakawetohia mēnā e hiahia ana koe ki te huna i taua taputapu whakatere tere i te atanga kaiwhakahaere.
 
-  * **Whakawhanainga ngā wāhi ana i te site nui:** Whakarite i tēnei option e whaiaro ai te wāhi ana ki te site nui o tō network i runga i te whakataunga (signup) iho. Ko te mea, ko i roto i te whakatau koe, ka hoatu i tētahi option kia whakatika i te **default role** o ngā wāhi ana i runga i tō website.
+  * **Tāpiri hoki i ngā kaiwhakamahi ki te pae matua:** Mā te whakahohe i tēnei kōwhiringa ka tāpirihia hoki te kaiwhakamahi ki te pae matua o tō whatunga i muri i te tukanga waitohu. Ki te whakahohe koe i tēnei kōwhiringa, ka puta hoki tētahi kōwhiringa hei tautuhi i te **tūranga taunoa** o ēnei kaiwhakamahi ki tō paetukutuku kei raro tonu.
 
-  * **Whakarite mō ngā account mō ngā site:** Whakarite ki e taea ai ngā wāhi ana he account i ngā site hawha o tō network me te email address pēnei. Ko i roto i te whakatau koe, ka taea te whakamahi i tēnei option e kore ai ngā mea katoa e taea ai ngā mea o koe ki te whakawhanainga account i ngā website hawha o tō network me te email address pēnei.
+  * **Whakahohe pūkete maha:** Tukuna ngā kaiwhakamahi kia whai pūkete i ngā pae rerekē o tō whatunga me te wāhitau īmēra kotahi. Ki te whakawetohia tēnei kōwhiringa, kāore ō kiritaki e āhei ki te waihanga pūkete ki ētahi atu paetukutuku e rere ana i runga i tō whatunga me taua wāhitau īmēra kotahi.
 
-Me tēnei te option katoa e whaiaro ana mō te login me te registration! Huia kia whakatika i ngā whakaritenga ahau i roto i te whakaora i ngā mea i roto i te editing ahau whai ora.
+Ā, koirā katoa ngā kōwhiringa e pā ana ki te takiuru me te rehitatanga ka taea e koe te whakarite! Kaua e wareware ki te tiaki i ō tautuhinga i muri i tō whakaoti i te whakatika.
 
-Kua taea e koe te pilihati taro nei optioni katoa mō te whakamārama i te kaha, mō te whakatū i roto i ngā mahi, he tino pai. He tino pai te whakatū i tēnei form, he tino pai te whakatū i tētahi form, he tino pai te whakatū i tētahi form. Kei te mea e koe, kia kliki ki **Go to the Editor**.
+## Te whakamahi i ngā puka rehitatanga maha: {#using-multiple-registration-forms}
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Ka tuku a Ultimate Multisite 2.0 i tētahi ētita puka takiutu e āhei ai koe ki te waihanga i te maha o ngā puka e hiahia ana koe, me ngā āpure rerekē, ngā hua e tukuna ana, me ērā atu.
 
-He tino pai te whakaiti akorua i ngā forms kua whakatū koe eke ana, he tino pai te whakaiti akorua i ngā forms kua whakatū koe eke ana, he tino pai te whakaiti akorua i ngā forms kua whakatū koe eke ana. I tēnei wā, ka whai koe ki ngā optioni i runga i te ingoa o te form kia whakaiti i te shortcode o te form ahau, he tino pai te whakamahi i te shortcode o te form ahau, he tino pai te whakamahi i te shortcode o te form ahau. He tino pai te whakatika akorua i ngā forms kua whakatū koe eke ana, he tino pai te whakatika akorua i ngā forms kua whakatū koe eke ana.
+Ka whakaurua ngā whārangi takiuru me te rehitatanga e rua ki ngā shortcode: **[wu_login_form]** ki te whārangi takiuru me**[wu_checkout]** mō te whārangi rehitatanga. Ka taea e koe te whakarite anō i te whārangi rehitatanga mā te hanga, mā te waihanga rānei i ngā puka takiutu.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+Hei uru ki tēnei āhuatanga, haere ki te tahua **Puka Takiutu**, kei te pae-taha mauī.
 
-Ko te tino pai i te single step ahau, he tino pai te whakamahi i te single step ahau, he tino pai te whakamahi i te single step ahau. Ko te form checkout eke ana he tino pai te whakatū i ngā apa basic mō tōna mahi. He tino pai te whakatika akorua i ngā steps extra ki ai.
+![Tahua Puka Takiutu i te pae-taha](/img/config/checkout-forms-list.png)
 
-### Whakawātea i te Checkout Form:
+I tēnei whārangi, ka taea e koe te kite i ngā puka takiutu katoa kei a koe.
 
-He tino pai te whakamahi i te forms mō whakamahinga katoa. I tēnei whakamārama, ka whakatika atu mātou ki te form registration.
+Ki te hiahia koe ki te waihanga i tētahi mea hou, pāwhiritia noa **Tāpiri Puka Takiutu** kei runga o te whārangi.
 
-I tēnei wā, he tino pai te whakatū i te ingoa (he whakamahinga ana akorua mō te whakamahi mō te whakamārama anake) me te slug (he whakamahinga ana mō te whakamaoritanga o ngā shortcode ahau).
+Ka taea e koe te tīpako i tētahi o ēnei kōwhiringa e toru hei tīmatanga māu: hipanga kotahi, hipanga-maha, pātea rānei. Kātahi, pāwhiritia **Haere ki te Ētita**.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Tāpiri Puka Takiutu me ngā kōwhiringa hipanga kotahi, hipanga-maha, pātea rānei](/img/config/checkout-forms-list.png)
 
-Ko ngā forms he tino pai i ngā steps me ngā fields. Ko te tino pai i te whakatū i tētahi step hou eke ana i **Add New Checkout Step**.
+Hei kē atu, ka taea e koe te whakatika, te tārua rānei i ngā puka kei a koe kē mā te pāwhiri i ngā kōwhiringa kei raro i tōna ingoa. I reira, ka kitea hoki e koe ngā kōwhiringa hei tārua i te shortcode o te puka, hei muku rānei i te puka.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Ngā hohenga whakapaho puka takiutu me te whakatika, te tārua, me te muku](/img/config/checkout-form-hover-actions.png)
 
-I te tab wāhi tūroa (first tab) o te modal window, whakatika i te mōhaka o tō step o te form. Give it an ID, a name and a description. He tino pai ngā mea heea he whakamahinga ana akorua.
+Ki te tīpako koe i te hipanga kotahi, i te hipanga-maha rānei, kua whakakīa kē te puka takiutu ki ngā hipanga taketake kia mahi ai. Kātahi, ki te hiahia koe, ka taea e koe te tāpiri hipanga anō ki reira.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+### Te whakatika i tētahi Puka Takiutu: {#editing-a-checkout-form}
 
-He tino pai te whakatika i te visibility o tō step. Ko te tino pai i te **Always show** , **Only show for logged in users** or **Only show for guests**.
+Pērā i tā mātou i kōrero ake nei, ka taea e koe te waihanga puka takiutu mō ngā kaupapa rerekē. I tēnei tauira ka mahi tātou ki tētahi puka rehitatanga.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+I muri i te whakatere ki te ētita puka takiutu, hoatu he ingoa ki tō puka (ka whakamahia mō te tohutoro ā-roto anake) me tētahi slug (ka whakamahia hei waihanga shortcode, hei tauira).
 
-Kua whakamutunga, whakarite i te style o te step (mehe). He āhuatanga hoki ahau ana.
+![Kaiwhakatika puka utu me ngā āpure ingoa me te slug](/img/config/checkout-form-name-slug.png)
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+Ka hangaia ngā puka ki ngā hipanga me ngā āpure. Ka taea e koe te tāpiri hipanga hou mā te pāwhiri i **Tāpiri Hipanga Utu Hou**.
 
-I tēnei wā, he tino kitea atu ki te whai whakaaro i ngā field (whakamahi). Whakatipu i te **Add New Field** kia whiri i te wāhi (type) o te section (mehe) e tino pai ana ahau.
+![Pātene Tāpiri Hipanga Utu Hou](/img/config/checkout-form-add-step.png)
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+I te ripa tuatahi o te matapihi modal, whakakīia ngā ihirangi o te hipanga o tō puka. Hoatu he ID, he ingoa, me tētahi whakaahuatanga. Ko ēnei tūemi ka whakamahia te nuinga ā-roto.
 
-Kaori i roto i roto i ngā field, he mea nui (parameters) tino whakahirahika kia whakatipu. Mo te whakatūatanga tēnei, ka whiri i te field **Username** (Tāwhiri).
+![Ripa ihirangi hipanga utu me te ID, te ingoa, me te whakaahuatanga](/img/config/checkout-form-step-content.png)
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+Whai muri, tautuhia te kitenga o te hipanga. Ka taea e koe te kōwhiri i waenga i **Whakaatu i ngā wā katoa** , **Whakaatu anake mō ngā kaiwhakamahi kua takiuru** rānei **Whakaatu anake mō ngā manuhiri**.
 
-Ka taea e koe te whero ngā step me ngā field e tino pai ana ahau. Mo te whakaatu i ngā product (taonga) mo ngā mea e tika ana ki te whiri mai, whakamahi i te field **Pricing Table** (Te Whakamahi Pākehā). Ko te mea e tino pai ana ahau ko, he tino pai ana ahau ki te whero i te template (form) mo ngā waka (clients), whakamahi i te field **Template Selection**. Me pēhea?
+![Ngā kōwhiringa kitenga hipanga utu](/img/config/checkout-form-step-visibility.png)
 
-_**He Whakamārama:** Ko i roto i te wā e whero koe i te checkout form, ka taea e koe te whakamahi i te button **Preview** kia whakaahua i te mea he kitea ahau ngā form (form) mo ngā waka. Ka taea hoki koe te whakawhiti i te whakaaro he heke (existing user) ahau ki te heke (visitor).
+Hei whakamutunga, whirihorahia te kāhua o te hipanga. He āpure kōwhiringa ēnei.
 
-_**He Whakamārama 2:** Ko username, email, password, site title, site URL, order summary, payment, me te button submit (whakaaro) he mea tino nui kia whero i te checkout form._
+![Whirihoranga kāhua hipanga utu](/img/config/checkout-form-step-style.png)
 
-![Preview button on the checkout form editor](/img/config/checkout-form-preview-button.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-preview-modal.png)
+Inaianei, kua tae ki te wā ki te tāpiri āpure ki tā tātou hipanga tuatahi. Pāwhiri noa ki **Tāpiri Āpure Hou** ka tīpako i te momo wāhanga e hiahia ana koe.
 
-Kuaheke, i **Advanced Options** (Opshio Whakamahi Whakamahi), kua taea e koe te whakarite te pūrākau mō te puta mai o te **Thank You** page (Pāpā i te Whakawhanaungatanga), ā, nui ki te whaiaro (snippets) mō te whakamahi te whakahaere (tracking conversions), CSS mō te form checkout mo te whaikōrero, au te whakatū i ai mō ngā wāhi-ā-au.
+![Pātene Tāpiri Āpure Hou](/img/config/checkout-form-add-field-button.png)![Tahua takaiho kōwhiringa momo āpure](/img/config/checkout-form-field-type-dropdown.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+He rerekē ngā tawhā hei whakakī mā ia āpure. Mō tēnei tomokanga tuatahi, ka tīpako mātou i te āpure **Ingoa Kaiwhakamahi**.
 
-Kua taea hoki koe te whakamahi manu (toggle) ki te whakaroa ana au te form checkout mo te whaikōrero, ā, kua taea hoki i te whakatū i ai mō ngā wāhi-ā-au, ka taea hoki i te whakatū i ai mō ngā wāhi-ā-au.
+![Whirihoranga āpure Ingoa Kaiwhakamahi](/img/config/checkout-form-username-content.png)![Ngā tawhā āpure Ingoa Kaiwhakamahi](/img/config/checkout-form-username-visibility.png)![Ngā tautuhinga tāpiri āpure Ingoa Kaiwhakamahi](/img/config/checkout-form-username-style.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Ka taea e koe te tāpiri i te maha o ngā hipanga me ngā āpure e hiahiatia ana e koe. Hei whakaatu i ō hua kia kōwhiria e ō kiritaki tētahi, whakamahia te āpure Tēpu Utu. Ki te hiahia koe kia kōwhiri ō kiritaki i tētahi tauira, tāpirihia te āpure Kōwhiringa Tauira. Pērā tonu atu.
 
-He tino nui: kia whaiaro (save) i tō form checkout!
+![Kaiwhakatika puka utu me te āpure kōwhiringa tauira](/img/config/checkout-form-with-template-field.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+_**Tuhipoka:** Ki te waihanga koe i tētahi hua i muri i te waihanganga o tō puka utu, me tāpiri koe i te hua ki te wāhanga Tēpu utu. Ki te kore koe e tāpiri, kāore te hua e puta ki ō kiritaki i te whārangi rēhitatanga._
 
-Kia pēnei te pēpēke o tō form mō te shortcode, whakatipu i **Generate Shortcode** ā, whakakaha i te whakamahi i te whaiaro (copy) i te whakatū i te modal window.
+_**Tuhipoka 2:** ko te ingoa kaiwhakamahi, te īmēra, te kupuhipa, te taitara pae, te URL pae, te whakarāpopototanga ota, te utu, me te pātene tuku he āpure herea hei waihanga i tētahi puka utu._
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+I a koe e mahi ana i tō puka utu, ka taea tonu e koe te whakamahi i te pātene Arokite kia kite ai me pēhea te kite a ō kiritaki i te puka. Ka taea hoki e koe te whakawhiti i waenga i te tirohanga hei kaiwhakamahi tīariari, hei manuhiri rānei.
 
-_**He whakamārama:** Kia tino nui ki te whaiaro (add) tēnei shortcode ki tō registration page kia taea ai koe te whaiaro i tēnei form checkout i tona. _
+![Pātene arokite i te kaiwhakatika puka utu](/img/config/checkout-form-preview-button.png)![Arokite puka utu hei manuhiri, hei kaiwhakamahi tīariari rānei](/img/config/checkout-form-preview-modal.png)
 
-## Whakawhiti i au ngā au URL (URL parameters) mō te whiri i mga au me template:
+Hei whakamutunga, i **Ngā Kōwhiringa Arā Atu Anō** ka taea e koe te whirihora i te karere mō te whārangi **Mihi Atu**, te tāpiri snippet hei whai i ngā hurihanga, te tāpiri CSS ritenga ki tō puka utu, te here rānei ki ētahi whenua.
 
-Kia tino pai ahau i te whakatō mga au au mō tō mga tauira mo tō mga au, ā, kia whiri i te au he pēnei i te whiri o tō koutou customer i tō au pricing table (table o te whakaingo) ka taea e koe te whakamahi i au URL parameters mō tēnei.
+![Ngā Kōwhiringa Arā Atu Anō me te whārangi Mihi Atu, te whai hurihanga, me te CSS ritenga](/img/config/checkout-form-advanced.png)
 
-### **Mō ngā plans:**
+Ka taea hoki e koe te whakahohe, te mono ā-ringa rānei i tō puka utu mā te takahuri i tēnei kōwhiringa i te tīwae matau, te muku tūturu rānei i te puka.
 
-Pāinga ki **Ultimate Multisite > Products > Select a plan**. Kia kaha, kia whakaatu i tō **Click to copy Shareable Link** (Whakawhiti ki te copy Link Whakawhanaungatanga) button i te whakatū i te pēke. He au he taea ai koe te whakamahi i tēnei link mō te whiri i tēnei plan-ā-au mo tō checkout form.
+![Takakā hohe me te kōwhiringa muku mō te puka utu](/img/config/checkout-form-active.png)
 
-![Product page with shareable link button](/img/config/products-list.png)
+Kaua e wareware ki te tiaki i tō puka utu!
 
-He whakamārama: Ko te link e taea te share he tino tika ana mō **Plans** (Plana). Kei te mea, ka taea e koe te whakamahi i ngā link e taea te share mō mga package (package) me mga service (service) nei.
+![Pātene Tiaki Puka Utu](/img/config/checkout-form-save.png)
 
-### Mō mga template:
+Hei tiki i te shortcode o tō puka, pāwhiria **Hanga Shortcode** ka tāruatia te hua e whakaaturia ana i te matapihi modal.
 
-Kia tino pai ahau ki te whai whakaaro mō mga site templates (template) mo te checkout form o koe, ka taea e koe te whakamahi i te parameter: **?template_id=X** i runga i te URL o te manawa (registration page) o koe. Ka pēnei te whakamahi ana i te "X" – ka taea e koe te whakaiti i te "X" ki te **site template ID number**. Kei te mea, kia pēnei te whai whakaaro i tēnei number, pono ki te **Ultimate Multisite > Sites**.
+![Modal Hanga Shortcode me te shortcode hei tārua](/img/config/checkout-form-editor.png)
 
-Whakatipu i **Manage** i runga i te site template o koe e hiahia ana ki te whakamahi. Ka taea e koe te whakaahua i te SITE ID number. Kia kaha, ka whakamahi i tēnei number mo tēnei site template-specific kia tika ai ia pre-selected (whakawātea) mo te checkout form o koe. I tēnei wā, ko te parameter URL he pēnei: **?template_id=2**.
+_**Tuhipoka:** Me tāpiri koe i tēnei shortcode ki tō whārangi rēhitatanga kia tāpirihia ai tēnei puka utu ki reira._
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+## Te kōwhiri tōmua i ngā hua me ngā tauira mā ngā tawhā URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Kia kaha ahau ki te whai whakaaro i te website o te whānau (network website) o koe, he [**www.mynetwork.com**](http://www.mynetwork.com) me te manawa o koe e hiahia ana mo te checkout form o koe he tūnga mo te site template pre-selected, ka pēnei te whakamahi i te URL katoa: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Ki te hiahia koe ki te waihanga i ngā tēpu utu kua whakaritea mō ō hua, ā, ki te kōwhiri tōmua i runga i te puka utu i te hua, i te tauira rānei e kōwhiria ana e tō kiritaki mai i tō tēpu utu, i tō whārangi tauira rānei, ka taea e koe te whakamahi i ngā tawhā URL mō tēnei.
 
-Me pēnei ahau ki te whai whakaaro mō mga product me templates mo te checkout form o koe. Ko te mea katoa e hiahia ana i te whakamahi, he whakakanga (copy) i te shareable link o te plan me te whai whakaaro template (template parameter) i te pētaki (end). Ka pēnei te whakamahinga: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+### **Mō ngā mahere:** {#for-plans}
+
+Haere ki **Ultimate Multisite > Ngā Hua > Tīpakohia tētahi mahere**. Me kite koe i te pātene **Pāwhiri hei tārua i te Hononga Tiri** kei runga rawa o te whārangi. Koinei te hononga ka taea e koe te whakamahi hei kōwhiri tōmua i tēnei mahere motuhake i runga i tō puka utu.
+
+![Whārangi hua me te pātene hononga tiri](/img/config/products-list.png)
+
+Kia mōhio he whai mana tēnei hononga tiri mō **Ngā Mahere** anake. Kāore e taea e koe te whakamahi hononga tiri mō ngā mōkī, mō ngā ratonga rānei.
+
+### Mō ngā tauira: {#for-templates}
+
+Ki te hiahia koe ki te kōwhiri tōmua i ngā tauira pae i runga i tō puka utu, ka taea e koe te whakamahi i te tawhā: **?template_id=X** i runga i te URL o tō whārangi rēhitatanga. Me whakakapi te "X" ki te **tau ID tauira pae**. Hei tiki i tēnei tau, haere ki **Ultimate Multisite > Ngā Pae**.
+
+Pāwhiria **Whakahaere** kei raro tonu i te tauira pae e hiahia ana koe ki te whakamahi. Ka kite koe i te tau SITE ID. Whakamahia noa tēnei tau mō tēnei tauira pae motuhake kia kōwhiria tōmuatia i runga i tō puka utu. I tō mātou tauira i konei, ko te tawhā URL ko **?template_id=2**.
+
+![Rārangi pae e whakaatu ana i te ID tauira pae](/img/config/site-templates-list.png)
+
+Me kī ko tā tātou paetukutuku whatunga ko [**www.mynetwork.com**](http://www.mynetwork.com), ā, kei te whārangi **/register** tō tātou whārangi rēhitatanga me tō tātou puka utu. Ka pēnei te āhua o te URL katoa me tēnei tauira pae kua kōwhiria tōmuatia: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ā, ki te hiahia koe, ka taea e koe te kōwhiri tōmua i ngā hua me ngā tauira e rua ki tō puka utu. Ko tāu noa he tārua i te hononga tiri o te mahere, ā, whakapiria te tawhā tauira ki te mutunga. Ka pēnei te āhua: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

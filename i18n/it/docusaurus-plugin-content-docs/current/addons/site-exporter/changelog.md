@@ -1,31 +1,38 @@
 ---
 title: Registro delle modifiche di Site Exporter
 sidebar_position: 99
-_i18n_hash: 596b03b94c7ecef848e88b2af657a614
+_i18n_hash: 6ce7f1a3c455b0afe71a841b7b82319a
 ---
-# Registro modifiche Site Exporter
+# Changelog di Site Exporter {#site-exporter-changelog}
+
+Versione: 1.0.6 - Rilasciata il 2026-05-11
+* Nuovo: le esportazioni dei siti ora includono un index.php autoavviante, così lo ZIP può essere installato su un host pulito senza un’installazione separata del plugin
+* Nuovo: l’esportazione della rete consente agli amministratori di esportare tutti i sottositi in un unico archivio dalla pagina di amministrazione Site Export
+
+Versione: 1.0.5 - Rilasciata il 2026-05-05
+* Correzione: aggiunto __callStatic allo stub polyfill WP_CLI per gestire metodi non mockati come get_config, evitando errori di bootstrap dei test
 
 Versione: 1.0.4 - Rilasciata il 2025-11-25
 
-* Correggi la compatibilità con Ultimate Multisite 2.4.
+* Correzione della compatibilità con Ultimate Multisite 2.4.
 
 Versione: 1.0.2 - Rilasciata il 2025-09-28
 
-* Rinomina il prefisso in ultimate-multisite; aggiorna il dominio di testo; incrementa la versione.
+* Rinominato il prefisso in ultimate-multisite; aggiornato il dominio di testo; incremento di versione.
 
-### Versione 1.0.1 - Rilasciata il 2023-08-09
+### Versione 1.0.1 - Rilasciata il 2023-08-09 {#version-101---released-on-2023-08-09}
 
-* Migliorato: Ora garantisce che venga ottenuto il percorso corretto del file importer.
-* Corretto: Disabilitato la cache degli oggetti per prevenire errori durante l'importazione.
-* Corretto: Risolto il problema del link di download del plugin importer che non funzionava.
+* Migliorato: ora assicura che venga ottenuto il percorso file corretto del file dell’importatore.
+* Corretto: disabilitata la cache oggetti per prevenire errori durante l’importazione.
+* Corretto: risolto il problema del link di download del plugin importatore non funzionante.
 
-### Versione 1.0.0 - Rilasciata il 2022-12-23
+### Versione 1.0.0 - Rilasciata il 2022-12-23 {#version-100---released-on-2022-12-23}
 
-* Corretto: Popup del modulo di esportazione non si carica;
-* Corretto: File Javascript non si caricano nella pagina di esportazione;
-* Interno: Nuovo processo di build;
+* Corretto: popup del modulo di esportazione non caricato;
+* Corretto: file Javascript non caricati nella pagina di esportazione;
+* Interno: nuovo processo di build;
 
-### Versione 1.0.0-beta.4 - Rilasciata il 2022-01-13
+### Versione 1.0.0-beta.4 - Rilasciata il 2022-01-13 {#version-100-beta4---released-on-2022-01-13}
 
-* Interno: Aggiunto generatore di hook e filtri;
-* Interno: Aggiunti stubs di Ultimate Multisite per la qualità della vita dello sviluppatore;
+* Interno: aggiunti generatore di hook e filtri;
+* Interno: aggiunti stub WP Ultimo per migliorare la qualità della vita degli sviluppatori;

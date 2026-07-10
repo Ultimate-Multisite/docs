@@ -3,25 +3,25 @@ title: Επεκτατικό Πρότυπο
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template Addon
+# Template Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Απαιτήσεις
+## Απαιτήσεις {#requirements}
 
 - WordPress 5.3 ή νεότερη έκδοση
 - PHP 7.4 ή νεότερη έκδοση
 - Plugin Ultimate Multisite (ενεργοποιημένο)
 
-## Εγκατάσταση
+## Εγκατάσταση {#installation}
 
 1. Ανεβάστε τα αρχεία του addon στον κατάλογο `/wp-content/plugins/`
 2. Ενεργοποιήστε το plugin μέσω του μενού 'Plugins' στο WordPress
 3. Διαμορφώστε τις ρυθμίσεις του addon στον network admin
 
-## Ανάπτυξη
+## Ανάπτυξη {#development}
 
-### Ρύθμιση
+### Ρύθμιση {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Δομή Έργου
+### Δομή Έργου {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Δοκιμή (Testing)
+### Δοκιμή (Testing) {#testing}
 
 Το addon περιλαμβάνει ένα ολοκληρωμένο πλαίσιο δοκιμών:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Test Coverage**: Ρυθμισμένο για παρακολούθηση της κάλυψης του κώδικα
 - **Multisite Testing**: Οι δοκιμές εκτελούνται σε περιβάλλον multisite
 
-### Κωδικοί Κανονισμοί (Code Standards)
+### Κωδικοί Κανονισμοί (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: Εφαρμόζονται μέσω PHPCS
 - **PHP 7.4+ Compatibility**: Υποστηρίζονται σύγχρονα χαρακτηριστικά PHP
 - **Static Analysis**: Ενσωμάτωση PHPStan για έλεγχο τύπων (type checking)
 - **Code Modernization**: Κανόνες Rector για αναβάθμιση PHP
 
-### Σύστημα Build (Build System)
+### Σύστημα Build (Build System) {#build-system}
 
 - **Asset Processing**: Minification για αρχεία CSS/JS
 - **Translation**: Δημιουργία αρχείων POT
 - **Packaging**: Δημιουργία αρχείου archive για κατανομή
 - **Development Mode**: Αρχεία χωρίς minification για debugging
 
-## Διαμόρφωση (Configuration)
+## Διαμόρφωση (Configuration) {#configuration}
 
 Το addon υποστηρίζει διάφορες επιλογές διαμόρφωσης που είναι προσβάσιμες μέσω της διεπαφής του network admin.
 
-## Hooks και Filters
+## Hooks και Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Εκτελείται μετά την αρχικοποίηση του addon
 - `ultimate-multisite-addon-template_loaded` - Εκτελείται μετά το φόρτωση όλων των αρχείων του addon
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Για τη τροποποίηση των ρυθμίσεων του addon
 - `ultimate-multisite-addon-template_enabled` - Για την αντικατάσταση της κατάστασης ενεργοποίησης/απενεργοποίησης του addon
 
-## Άδεια Χρήσης (License)
+## Άδεια Χρήσης (License) {#license}
 
 Αυτό το addon έχει άδεια χρήσης βάσει GPL v3 ή νεότερη.
 
-## Υποστήριξη (Support)
+## Υποστήριξη (Support) {#support}
 
 Για υποστήριξη και τεκμηρίωση, επισκεφθείτε το [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): ανατοπισμός prefix σε ultimate-multisite· ενημέρωση text domain· αύξηση έκδοσης.
 

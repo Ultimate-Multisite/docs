@@ -3,7 +3,7 @@ title: Automātiskais meklēšana un aizstāšana vietnes šabloniem
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automāts me aizstāšana vietnes šabloniem (v2)
+# Automāts me aizstāšana vietnes šabloniem (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Šis tutorial prasa Ultimate Multisite versiju 2.x.**_
 
@@ -17,7 +17,7 @@ Tad jūsu klienti varēs iepildīt šo lauku reģistrēšanās laikā.
 
 Ultimate Multisite automātiski aizstāve (placeholders) mainīs ar klientam sniegto informāciju.
 
-## **Līdzsvarot "šablons pilns placeholders" problēmu**
+## **Līdzsvarot "šablons pilns placeholders" problēmu** {#solving-the-template-full-of-placeholders-problem}
 
 Tas viss ir lieliski, bet mēs saskaramies ar nepatīkamu problēmu: tagad mūsu vietnes šabloni - kas var tiek apmeklēti klienti - ir pilni nepatīkamiem placeholders, kas neiztiek daudz.
 

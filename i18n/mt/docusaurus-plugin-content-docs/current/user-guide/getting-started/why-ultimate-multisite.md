@@ -3,11 +3,11 @@ title: Appuntament għall-Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Perché Ultimate Multisite
+# Perché Ultimate Multisite {#why-ultimate-multisite}
 
 Se ti sei arrivat' a questo articolo, probabilmente hai sentito che il nostro plugin potrebbe essere la soluzione per realizzare la tua idea di business. Speriamo tu abbia le risposte di cui hai bisogno alla fine di questo testo.
 
-## Cos'è Ultimate Multisite?
+## Cos'è Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite è un plugin WordPress Multisite che ti permette di offrire ai clienti WaaS (un Sito come Servizio). Con il nostro plugin, puoi avere diversi livelli di abbonamento e far pagare ai clienti una tariffa ricorrente per avere un sito ospitato nella tua rete Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite ti permette di ricevere i tuoi pagamenti con diversi gateway 
 
 E questo è solo l'inizio, dato che puoi estendere le sue funzioni con add-on e webhooks.
 
-## Altre funzionalità
+## Altre funzionalità {#other-features}
 
 Ultimate Multisite offre anche:
 
@@ -33,11 +33,11 @@ Ultimate Multisite offre anche:
 
 * واجهة برمجة التطبيقات للبحث والاستبدال (Search and Replace API): تقدر تعليق قوالب الموقع بمكان محجوز مثل {{site_name}} وتستخدم Search and Replace API باش تملأ هالمكان تلقائياً بالمعلومات اللي يعطيها لك العميل بعد التسجيل، بشكل آلي.
 
-## حالات الاستخدام
+## حالات الاستخدام {#use-cases}
 
 دلوقت وقت نشوف بعض الحالات المحتملة لاستخدام Ultimate Multisite.
 
-### الحالة 1: وكالة (Agency)
+### الحالة 1: وكالة (Agency) {#case-1-an-agency}
 
 عادةً المهارات الأساسية لوكالة تكمن في تصميم المواقع مع جوانب مثل استضافة أو تسويق يتم إدراجهما كخدمات إضافية.
 
@@ -47,7 +47,7 @@ Ultimate Multisite offre anche:
 
 Agencies jidruq pax għolja b'Ultimate Multisite li jippermet laħqu l-għan tagħhom – disignaw siti ekcezjonali.
 
-### Kaso 2: Fornitori Niche (Niche Provider)
+### Kaso 2: Fornitori Niche (Niche Provider) {#case-2-niche-provider}
 
 Jum huwa parola qadima li tgħid, "Għidu xi ħaġa waħda u għandu għalha b'perfetta". L Mellieja speċjalisti, dissi significa li jikkonċentraw fuq kemm huwa creatu prodotta jew servizzi dwar idea sentral waħda.
 
@@ -57,7 +57,7 @@ Unit minn il-funzjonijiet innovattivi ta Ultimate Multisite, sito template huwa 
 
 Forfornitori ta siti u servizzi niche, dan jgħandu vanta uniku fil-abbilija b'potenzjalità biex tgħmli sito جاهża b'istanti dwar plugin u disigni kustomi. L-customer għandu fornix biss input minimi biex jkompleta is-servizz.
 
-### Kaso 3: Hosting WordPress Web
+### Kaso 3: Hosting WordPress Web {#case-3-wordpress-web-hosting}
 
 Jum hija ħafna mod biex tista hosting siti WordPress, iżda mhux qasir li toffri spazzju web lil customer b'versjoni pre-installata ta WordPress. Dan hija minħabba li għalnum tiegħu biex jkun servizz mwiss, għandu jitqassmu l-deċizzjonijiet u l-considerazzjonijiet.
 

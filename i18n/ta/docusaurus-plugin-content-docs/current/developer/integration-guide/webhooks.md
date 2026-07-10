@@ -3,11 +3,11 @@ title: வெப்ஹூக் கையாளுதல்
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# வெப்ஹூக் கையாளுதல்
+# வெப்ஹூக் கையாளுதல் {#webhook-handling}
 
 வெளிப்புற சேவைகளிலிருந்து (external services) வரும் நிகழ்வுகளை (events) பெறவும், Ultimate Multisite உடன் தரவை ஒத்திசைக்கவும் (sync) தனிப்பயன் வெப்ஹூக் எண்ட்பாயிண்ட்களை உருவாக்கவும்.
 
-## தனிப்பயன் வெப்ஹூக் எண்ட்பாயிண்ட்
+## தனிப்பயன் வெப்ஹூக் எண்ட்பாயிண்ட் {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## பாதுகாப்பு அம்சங்கள்
+## பாதுகாப்பு அம்சங்கள் {#security-considerations}
 
 - HMAC அல்லது பகிரப்பட்ட ரகசியத்தைப் (shared secret) பயன்படுத்தி எப்போதும் வெப்ஹூக் கையொப்பங்களை (signatures) சரிபார்க்கவும்.
 - உங்கள் REST ரூட்டில் ஒரு `permission_callback`-ஐப் பயன்படுத்தவும் — இதை ஒருபோதும் தயாரிப்புச் சூழலில் (production) `__return_true` என்று அமைக்க வேண்டாம்.

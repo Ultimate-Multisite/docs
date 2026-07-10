@@ -1,120 +1,120 @@
 ---
-title: Taxes-manado
+title: Imposta traktado
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Taksadministriĝo
+# Imposta Traktado {#tax-handling}
 
-Ultimate Multisite havas modulu por kolekti taksas, kiu estas konstruita en nia bazaj plugino. Se vi bezonas kolekti vendaj taksajnajn taksas sur viajn planojn, paketojn kaj servojn, vi povas fari tion sen necesi instali okazas.
+Ultimate Multisite havas impostkolektan modulon enkonstruitan en nia kerna plugin, do se vi bezonas kolekti vendimpostojn por viaj planoj, pakaĵoj kaj servoj, vi povas facile fari tion sen devi instali iujn ajn aldonaĵojn.
 
-Por kompanio loĝantaj en Europo, ni ofersas **okazon**, kiu aĉetas instrumenton kaj funkciojn por pli bone **subteni VAT** konformancon.
+Por kompanioj situantaj en Eŭropo, ni ofertas **aldonaĵon** kiu aldonas ilojn kaj funkciojn por pli bone **subteni VAT**-konformecon.
 
-Ultimate Multisite ne deklaras aŭ transmigras taksajn taksajn sur viajn nombone al la governeco; ni simple helpas vi kolekti la apropriajn taksajn taksajn en la tempe de la transakcio. **Vi noge bezonas transmigri taksajn taksajn mem.**
+Ultimate Multisite ne deklaras aŭ transdonas impostojn nome de vi al la registaro; ni simple helpas vin kolekti la taŭgajn impostojn je la tempo de la transakcio. **Vi ankoraŭ devos transdoni impostojn memstare.**
 
-## Aktivado de taksa kolektado
+## Ebligi Impostkolektadon {#enabling-tax-collection}
 
-Taksaj kolektado ne estas aktivita per default. Por aktivi, vi devas iri al **Ultimate Multisite > Settings > Taxes** kaj ŝanĝi la Enable Taxes (Aktivado de Takso) ĝin en aktiva.
+Impostkolektado ne estas ebligita defaŭlte. Por ebligi ĝin, vi devas iri al **Ultimate Multisite > Agordoj > Impostoj** kaj ŝalti por ebligi la agordon Ebligi Impostojn.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Ŝaltilo Ebligi Impostojn ĉe la supro de la paĝo pri impostaj agordoj](/img/config/settings-taxes-enable.png)
 
-Jen kompleta vidigo de la paĝo de taksa administriĝo:
+Jen plena vido de la paĝo pri impostaj agordoj:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Plena paĝo de impostaj agordoj](/img/config/settings-taxes-full.png)
 
-Vi ankaŭ povas vidi la taksa administriĝon por individua produktaj temoj:
+Vi ankaŭ povas vidi la impostajn agordojn por individuaj produktoj:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Impostaj agordoj por produktoj](/img/config/settings-taxes.png)
 
-### Takso ekskludita kontraŭ takso inkluziva
+### Imposto ekskludita kontraŭ imposto inkluzivita {#tax-excluded-vs-tax-included}
 
-Per default, ĉiuj viaj produktaj precoj estas taksajn taksajn ekskluditaj, tio signifas, ke taksaj taksaj **ne estas inkluzivaj** en la produktaj preco. Se ni determinas, ke klienteco devas pagui taksajn taksajn sur dada transakcio, ni aldonos la taksajn taksajn **super** la subtotalon.
+Defaŭlte, ĉiuj viaj produktaj prezoj estas sen imposto, kio signifas, ke impostoj **ne estas inkluzivitaj** en la prezo de la produkto. Se ni determinas, ke kliento devas pagi impostojn por donita aĉeto, ni aldonos la impostojn **super** la subtuto.
 
-Se vi preferas havi taksajn taksajn inkluzivajn en via produktaj preco, vi povas fari tion per aktiva la Enable Inclusive Tax (Inkluziva Takso) ŝanĝon.
+Se vi preferas havi impostojn inkluzivitajn en la prezo de via produkto, vi povas fari tion ebligante la agordon **Inkluziva Imposto**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Vico de ŝaltilo Inkluziva Imposto sub la agordo Ebligi Impostojn](/img/config/settings-taxes-inclusive.png)
 
-Ne forgi **salvi** la ŝanĝojn, kiujn vi faris.
+Ne forgesu **konservi** la ŝanĝojn, kiujn vi faris.
 
 ###
 
-## Kreo de taksa ratoj
+## Krei Impostajn Tarifojn {#creating-tax-rates}
 
-Post kiam vi aktivas Taksa Kolektadon, vi bezonas krei taksajn ratojn por specifaj lokoj uzante nian redaktilon de taksa ratoj.
+Post kiam vi ebligas Impostkolektadon, vi devos krei impostajn tarifojn por specifaj lokoj uzante nian redaktilon de impostaj tarifoj.
 
-Vi povas akcesi redaktorin per klikadon la butono **Manage Tax Rates** (Administri Tarifojn de Taksaj Nivelo) sur la flanchoj de la paĝo de konfigura kaj taxaj niveloj.
+Vi povas aliri la redaktilon alklakante la butonon **Administri Impostajn Tarifojn** en la flankobreto de la paĝo pri impostaj agordoj.
 
-![Link Manage Tax Rates en la panelo de Tax Rates sur la paĝo de konfigura](/img/config/settings-taxes-manage-rates.png)
+![Ligilo Administri Impostajn Tarifojn en la panelo Impostaj Tarifoj sur la agorda paĝo](/img/config/settings-taxes-manage-rates.png)
 
-Sur la paĝo de redaktoro de taxaj niveloj vi povas aĉoti novajn Tax Rates per klikado sur la butono **Add new Row** (Añadi novan rangon).
+Sur la paĝo de la redaktilo de impostaj tarifoj, vi povas aldoni novajn Impostajn Tarifojn alklakante la butonon **Aldoni novan Vicon**.
 
-![Tablo de redaktoro de taxaj niveloj kun butono Add new Row en la supereco](/img/config/tax-rates-editor.png)
+![Tabelo de redaktilo de impostaj tarifoj kun butono Aldoni novan Vicon supre](/img/config/tax-rates-editor.png)
 
-Vi bezonas doni ĉiu taxaj nivelo **titolon** (utilita sur fakturoj). Tiam vi povas elekti la **paŝton** (obbliga), la **staton**, kaj la **vicon** (ambe optionala), kie ĉi tiu takso sera plibondita. Finalkaj, aĉi la **taxajn nivelojn en procentoj**.
+Vi devos doni al ĉiu imposta tarifo **titolon** (uzatan sur fakturoj). Poste vi povas elekti la **landon** (deviga), la **ŝtaton,** kaj la **urbon** (ambaŭ nedevigaj) kie ĉi tiu imposto estos ŝargata. Fine, aldonu la **impostan tarifon en procentoj**.
 
-### Taxaj Kategorioj
+### Impostaj Kategorioj {#tax-categories}
 
-Vi ankaŭ povas krei plurajn Taxaj Kategoriojn, por aĉoti diversajn taxajn nivelojn por diversajn tipojn produktoj.
+Vi ankaŭ povas krei plurajn Impostajn Kategoriojn, por aldoni malsamajn impostajn tarifojn por malsamaj specoj de produktoj.
 
-Kliku sur **Add new Tax Category** (Añadi novan Taxajn Kategorion), tiam skribi la nomon de via kategorio kaj premi **Create** (Krei).
+Alklaku por **Aldoni novan Impostan Kategorion** , poste skribu la nomon de via kategorio kaj premu **Krei**.
 
-![Butono Add new Tax Category en la supereco de la redaktoro de taxaj niveloj](/img/config/tax-categories-add.png)
+![Butono Aldoni novan Impostan Kategorion ĉe la supro de la redaktilo de impostaj tarifoj](/img/config/tax-categories-add.png)
 
-![Input-termo Nom de Taxa Kategorio en la modalita kreo de kategorio](/img/config/tax-categories-create-modal.png)
+![Eniga kampo Nomo de Imposta Kategorio en la modalo krei kategorion](/img/config/tax-categories-create-modal.png)
 
-Por navigui tra kategorioj, kliku sur **Switch** (Mankovri) kaj elektu la kategorion, al kiu vi volas aĉi novajn taksojn.
+Por foliumi kategoriojn, alklaku **Ŝanĝi** kaj elektu la kategorion al kiu vi volas aldoni novajn impostojn.
 
-![Butono Switch por ŝanĝi inter taxaj kategorioj](/img/config/tax-categories-switch.png)
+![Falmenua butono Ŝanĝi por ŝanĝi inter impostaj kategorioj](/img/config/tax-categories-switch.png)
 
-![Dropdown-termo selektanto de taxaj kategorioj montrante disponibles kategorioj](/img/config/tax-categories-select.png)
+![Falmenuo de impostkategoria elektilo montranta disponeblajn kategoriojn](/img/config/tax-categories-select.png)
 
-Vi povas doni la taxajn kategoriojn por partikulan produkton per navigadon al **Product edit page** (Paĝo de redaktado de produkto) kaj tiam al la tabulo Taxes (Taxaj).
+Vi povas agordi la impostan kategorion por specifa produkto irante al la **paĝo de redaktado de produkto** kaj poste al la langeto Impostoj.
 
-![Tabulo Taxaj produktoj kun taxaj kategorio kaj toggle Is Taxable?](/img/config/product-taxes.png)
+![Produkta impostlangeto kun imposta kategorio kaj impostebla ŝaltilo](/img/config/product-taxes.png)
 
-Sur tiu sama skreena vi povas desligi la **Is Taxable?** (Estas taksa?) togglon por informi Ultimate Multisite, ke ĝi ne devas kolekti taksojn sur ti donitan produkton.
+Sur tiu sama ekrano, vi povas malŝalti la ŝaltilon **Ĉu Impostebla?** por informi Ultimate Multisite, ke ĝi ne kolektu impostojn por tiu donita produkto.
 
-## Europaj VAT Subteno
+## Eŭropa VAT-Subteno {#european-vat-support}
 
-Kiel a pred avante, ni temos un add-on ki estas dispona por klientoj en la UE kiuj havas pli da bezonado grun la reguligoj de IVA europeaj.
+Kiel menciite antaŭe, ni havas aldonaĵon disponeblan por klientoj en la EU kiuj havas aldonajn postulojn pro eŭropaj VAT-regularoj.
 
-Niaj VAT instrumentoj helpas kun du importantaj aferoj:
+Niaj VAT-iloj helpas pri kelkaj gravaj aferoj:
 
-  * Facila cargado de EU VAT ratoj;
+  * Facila ŝargado de EU VAT-tarifoj;
 
-  * Kolekto kaj validado de VAT-nombroj – kaj inversa akuzado por entitetoj sen IVA (tiel, kompanioj kun validadaj VAT-nombroj);
+  * Kolektado kaj validigo de VAT-Numero - kaj inversa ŝargado por VAT-esceptitaj entoj (kiel kompanioj kun validaj VAT-numeroj);
 
-Por instali ti add-on, dirigi al **Ultimate Multisite > Settings** kaj tiam kliku sur la linko en la flanboŭlo **Check our Add-ons**.
+Por instali tiun aldonaĵon, iru al **Ultimate Multisite > Agordoj** kaj poste alklaku la flankobretan ligilon **Kontrolu niajn Aldonaĵojn**.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Flankobreto de agorda paĝo kun ligilo Kontrolu niajn Aldonaĵojn](/img/config/settings-taxes-addons-link.png)
 
-Vi estu redirigitaj al nia add-on paĝo. Tiam vi povas cherui la **Ultimate Multisite VAT add-on** kaj instali ĝin.
+Vi estos redirektita al nia paĝo de aldonaĵoj. Tie, vi povas serĉi la **Ultimate Multisite VAT-aldonaĵon** kaj instali ĝin.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Tiam, dirigi al **Network Admin > Plugins** kaj aktivi ti add-on per la tuta retoj.
+Poste, iru al **Reta Administrado > Plugins** kaj aktivigu tiun aldonaĵon tra la tuta reto.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Se vi revenas al la **Tax Settings tab**, vi vidos novajn opciojn. Turnu la opcio **Enable VAT Support** por aktivi la novajn VAT instrumentojn. Ne forgi **salvi** vian konfiguracion!
+Se vi revenas al la **langeto Impostaj Agordoj** , vi vidos novajn disponeblajn opciojn. Ŝaltu la opcion **Ebligi VAT-Subtenon** por ebligi la novajn VAT-ilojn. Ne forgesu **konservi** viajn agordojn!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Tirado de VAT Ratoj
+### Elŝuti VAT-Impostajn Tarifojn {#pulling-on-vat-tax-rates}
 
-Un de la instrumentoj, kiun nia integriĝo adigas, estas la kapablo cargi la ratojn de akuzado por EU-membroj. Tio povas fariĝi per viziti la paĝon redaktado de akuzadratoj post aktivaŭi EU VAT support.
+Unu el la iloj, kiujn nia integriĝo aldonas, estas la kapablo ŝargi la impostajn tarifojn por EU-membroŝtatoj. Tio povas esti farita vizitante la paĝon de la redaktilo de impostaj tarifoj post ebligo de EU VAT-subteno.
 
-Al la baz de la paĝo vi vidos opcio por tirare la VAT (MVA). Se vi elektas tip raton kaj klikas sur butonon **Update EU VAT Rates** (Aktualizi EU MVA Ratojn), ĝi tiros kaj aŭtomate plenumi la tablon kun la turoj de akizoj por ĉiu EU-membroŝtato. Tiam vi nur bezonas salvi ĝin.
+Ĉe la malsupro de la paĝo, vi vidos la VAT-elŝutajn opciojn. Elekti tarifan tipon kaj alklaki la butonon **Ĝisdatigi EU VAT-Tarifojn** elŝutos kaj aŭtomate plenigos la tabelon per la impostaj tarifoj por ĉiu EU-membroŝtato. Poste, vi nur bezonas konservi ĝin.
 
-![Butono Update EU VAT Rates al baz de la editoraĵo de akizaj ratoj](/img/config/tax-rates-vat-pull.png)
+![Butono Ĝisdatigi EU VAT-Tarifojn ĉe la malsupro de la redaktilo de impostaj tarifoj](/img/config/tax-rates-vat-pull.png)
 
-Vi ankaŭ povas modifi la valorojn post kiam vi tiris ilin. Por tio, simple modifos la linion de la tablon necesan por vi kaj kliku por salvi novajn valorojn.
+Vi ankaŭ povas redakti la valorojn post elŝuti ilin. Por fari tion, simple redaktu la tabelan linion, kiun vi bezonas, kaj alklaku por konservi la novajn valorojn.
 
-### VAT Valido
+### VAT-Validigo {#vat-validation}
 
-Kiam subteno de VAT estas aktivita, Ultimate Multisite aldonas plian kampon al la formo de akizo, sub la kampo de fakturaj adresoj. La kampo montrosĝos nur por klientoj loĝantaj en EU.
+Kiam VAT-subteno estas ebligita, Ultimate Multisite aldonos plian kampon al la pagoformularo, sub la fakturadadresa kampo. La kampo aperos nur por klientoj situantaj en la EU.
 
-<!-- Screenshot unavailable: Campo Numero de VAT sur la antaŭa akizaj formo sub la faktura adreso -->
+<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite tiam validas la Numero de VAT, kaj se ĝi revenas kiel valida, la mekanismo de inversaj akizoj (reverse charge mechanism) estas aplika kaj la turo de akizo estas setita al 0% por tiu ordem.
+Ultimate Multisite tiam validigos la VAT Number kaj, se ĝi revenas kiel valida, la inversa ŝargomekanismo estas aplikata kaj la imposttarifo estas agordita al 0% por tiu mendo.

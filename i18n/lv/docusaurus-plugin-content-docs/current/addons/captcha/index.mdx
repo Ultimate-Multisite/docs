@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Apturiet botus. Aizsargājiet ieņēmumus. Nekādu konfigurācijas galvassāpju.**
+
+Pārvaldāt multisite tīklu ar pielāgotiem domēniem? Jūs zināt šo sāpi: Google reCAPTCHA un hCaptcha pieprasa reģistrēt *katru atsevišķo domēnu* to administrēšanas konsolē. Pievienojat jaunu klienta vietni? Atjauniniet captcha konfigurāciju. Piesaistāt pielāgotu domēnu? Atjauniniet vēlreiz. Tas nekad nebeidzas.
+
+**Ultimate Multisite: Captcha maina visu.**
+
+## Cap Captcha: pašmitināta aizsardzība, kas vienkārši darbojas {#cap-captcha-self-hosted-protection-that-just-works}
+
+Mūsu jaunais **Cap Captcha** nodrošinātājs ir izšķirošs pavērsiens multisite tīkliem:
+
+* **Nulles konfigurācija** — Aktivizējiet papildinājumu, un jūs esat aizsargāts. Nav API atslēgu, nav Google konta, nav hCaptcha Dashboard, nav domēnu baltā saraksta.
+* **Automātiski darbojas katrā domēnā** — Apakšdomēni, piesaistītie domēni, klientu domēni — tie visi tiek aizsargāti uzreiz.
+* **Pašmitināts un privāts** — Jūsu dati nekad neatstāj jūsu serveri. Pilnībā atbilst GDPR bez trešo pušu izsekošanas.
+* **Neredzams proof-of-work** — Lietotāji fonā atrisina skaitļošanas uzdevumu. Nekādas klikšķināšanas uz hidrantiem, nekādu kaitinošu attēlu režģu.
+* **Viegls** — Tikai 20 KB. Nepalēninās jūsu checkout.
+
+## WooCommerce karšu testēšanas aizsardzība {#woocommerce-card-testing-protection}
+
+Karšu testēšanas uzbrukumi tirgotājiem ik gadu izmaksā miljardus. Krāpnieki izmanto botus, lai pārbaudītu zagtas kredītkartes jūsu WooCommerce checkout — jūs maksājat apstrādes komisijas, viņi iegūst derīgus karšu numurus.
+
+**Mēs aizsargājam tur, kur tas ir vissvarīgāk:**
+
+* **Store API aizsardzība** — Bloķē botu uzbrukumus `/wp-json/wc/store/v1/checkout`, kas apiet tradicionālos veidlapu captcha
+* **Saderīgs ar PayPal Payments** — Nevainojami darbojas ar WooCommerce PayPal Payments
+* **Reāllaika statistika** — Skatiet precīzi, cik uzbrukumu jūs bloķējat
+
+## Joprojām nepieciešams Google reCAPTCHA vai hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Mēs par to esam parūpējušies. Pilns atbalsts:
+
+* Google reCAPTCHA v2 (izvēles rūtiņa)
+* Google reCAPTCHA v2 (neredzams)
+* Google reCAPTCHA v3 (balstīts uz vērtējumu)
+* hCaptcha (standarta)
+* hCaptcha (neredzams)
+
+Jebkurā laikā pārslēdzieties starp nodrošinātājiem savos tīkla iestatījumos.
+
+## Veidots mērogošanai {#built-for-scale}
+
+* Tīkla mēroga iestatījumi ar atsevišķu vietņu pārrakstījumiem
+* Statistikas panelis aizsardzības uzraudzībai
+* Pielāgojami drošības līmeņi (ātrs, vidējs, maksimāls)
+* Izstrādātājiem draudzīga paplašināma nodrošinātāju arhitektūra
+
+## Instalēšana {#installation}
+
+1. Augšupielādējiet `ultimate-multisite-captcha` savā `/wp-content/plugins/` direktorijā
+2. Aktivizējiet plugin tīklā
+3. **Tas arī viss. Jūs esat aizsargāts.**
+
+Cap Captcha aktivizējas automātiski — nav konfigurējamu iestatījumu, nav ievadāmu API atslēgu. Katrs atbalstītais galapunkts visā jūsu tīklā tiek aizsargāts brīdī, kad aktivizējat.
+
+**Neobligāti:** Lai tā vietā izmantotu Google reCAPTCHA vai hCaptcha, dodieties uz **Ultimate Multisite → Settings → Captcha** un atlasiet vēlamo nodrošinātāju.
+
+## Biežāk uzdotie jautājumi {#frequently-asked-questions}
+
+## Vai man kaut kas jākonfigurē? {#do-i-need-to-configure-anything}
+
+Nē! Cap Captcha tiek iespējots automātiski, kad aktivizējat papildinājumu. Viss jūsu tīkls tiek aizsargāts nekavējoties — nav konfigurējamu iestatījumu, nav ievadāmu API atslēgu.
+
+## Vai Cap Captcha nepieciešamas API atslēgas? {#do-i-need-api-keys-for-cap-captcha}
+
+Nē. Cap Captcha ir pilnībā pašmitināts. Nav ārēju kontu, nav domēnu reģistrācijas, nav konfigurācijas galvassāpju.
+
+## Vai tas palēninās manu checkout? {#will-this-slow-down-my-checkout}
+
+Cap Captcha ir tikai 20 KB un fonā izpilda proof-of-work pārbaudes. Jūsu klienti nepamanīs nekādu aizkavi.
+
+## Vai tas aizsargā pret karšu testēšanas uzbrukumiem? {#does-this-protect-against-card-testing-attacks}
+
+Jā! Atšķirībā no tradicionālajiem captcha, kas aizsargā tikai HTML veidlapas, mūsu WooCommerce integrācija pieslēdzas tieši Store API, lai bloķētu botu uzbrukumus API līmenī — tur, kur notiek lielākā daļa karšu testēšanas uzbrukumu.
+
+## Vai dažādās vietnēs varu izmantot dažādus captcha nodrošinātājus? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Captcha nodrošinātājs tiek iestatīts tīkla mērogā, bet jūs varat pielāgot sarežģītības iestatījumus atbilstoši savām vajadzībām.
+
+## Vai tas atbilst GDPR? {#is-this-gdpr-compliant}
+
+Cap Captcha ir 100% pašmitināts, un dati netiek sūtīti uz ārējiem pakalpojumiem. Google reCAPTCHA un hCaptcha gadījumā, lūdzu, pārskatiet to attiecīgās privātuma politikas.
+
+## Pieprasījumu biežuma ierobežošana {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 ievieš stingru pieprasījumu biežuma ierobežotāju, kas aizsargā jūsu tīklu no brute-force un karšu testēšanas uzbrukumiem.
+
+### Kā tas darbojas {#how-it-works}
+
+Pieprasījumu biežuma ierobežotājs skaita katru GET un POST pieprasījumu captcha aizsargātajās virsmās:
+
+* **WordPress pieteikšanās galapunkti** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Kad apmeklētājs pārsniedz pieprasījumu biežuma limitu, plugin atbild ar:
+
+* **HTTP 429 (pārāk daudz pieprasījumu)** statusa kodu
+* **Retry-After** header, kas norāda, kad mēģināt vēlreiz
+* **Nejaušinātu tarpit miegu** (pēc noklusējuma 1–5 sekundes, stingri ierobežots līdz 15 sekundēm), lai palēninātu uzbrucējus
+
+### Konfigurācija {#configuration}
+
+#### Tarpit laiks {#tarpit-timing}
+
+Kontrolējiet nejaušināto aizkavi, kas tiek piemērota pieprasījumiem ar ierobežotu biežumu:
+
+* **`cap_rate_limit_tarpit_min`** — Minimālais miega ilgums sekundēs (noklusējums: 1)
+* **`cap_rate_limit_tarpit_max`** — Maksimālais miega ilgums sekundēs (noklusējums: 5, stingri ierobežots līdz 15)
+
+Šie iestatījumi ir pieejami **Ultimate Multisite → Settings → Captcha**.
+
+### Paplašināmība {#extensibility}
+
+#### IP baltā saraksta filtrs {#ip-whitelist-filter}
+
+Atbrīvojiet uzticamus IP diapazonus no pieprasījumu biežuma ierobežošanas:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pirmsbloķēšanas darbība {#pre-block-action}
+
+Izpildiet pielāgotu loģiku tieši pirms pieprasījumu biežuma ierobežojuma bloka nosūtīšanas:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Klienta IP noteikšana un uzticami starpniekserveri {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 ievieš pret viltošanu noturīgu klienta IP noteikšanu. Metode `Captcha_Core::get_client_ip()` tagad ir vienīgais patiesības avots apmeklētāju IP atribūcijai visā:
+
+* Ātruma ierobežošanas grozu atslēgas
+* Captcha nodrošinātāja `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Statistikas IP hash vērtības
+
+### Uzticēšanās modelis {#trust-model}
+
+Plugin ievieš stingru IP uzticēšanās hierarhiju:
+
+1. **REMOTE_ADDR** — Vienmēr uzticams (tiešā savienojuma otra gala IP)
+2. **CF-Connecting-IP** — Tiek ņemts vērā tikai tad, ja:
+   - Tiešais savienojuma otrs gals atrodas pašreizējā Cloudflare IP diapazonā
+   - `cap_trust_cloudflare_headers` ir iespējots (noklusējums: OFF)
+3. **X-Forwarded-For** — Tiek ņemts vērā tikai tad, ja:
+   - Tiešais savienojuma otrs gals ir jūsu administratora konfigurētajā uzticamo starpniekserveru sarakstā
+   - Galvene tiek parsēta no labās uz kreiso pusi, izlaižot uzticamos/Cloudflare posmus
+
+### Konfigurācija {#configuration-1}
+
+#### Cloudflare galvenes uzticēšanās {#cloudflare-header-trust}
+
+Iespējojiet uzticēšanos Cloudflare `CF-Connecting-IP` galvenei:
+
+* **`cap_trust_cloudflare_headers`** — Iestatiet uz ON, lai izvēlētos uzticēties `CF-Connecting-IP`
+  - Noklusējums: OFF (atspējots)
+  - Plugin tiek piegādāts ar iekļautu Cloudflare CIDR momentuzņēmumu
+  - CIDR diapazoni tiek atsvaidzināti katru nedēļu, izmantojot wp-cron
+  - Ja atsvaidzināšana neizdodas, tiek izmantota iekļautā rezerves kopija
+
+#### Uzticamo starpniekserveru konfigurācija {#trusted-proxy-configuration}
+
+Definējiet savus priekšlīnijas starpniekserverus un slodzes balansētājus:
+
+* **`cap_trusted_proxies`** — Teksta lauks ar CIDR vai vienkāršām IP adresēm (pa vienai rindā)
+  - Komentāri ir atļauti (rindas, kas sākas ar `#`)
+  - Bez šī iestatījuma `X-Forwarded-For` tiek ignorēts pat tad, ja ātruma ierobežotājs ir iespējots
+  - Piemērs:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Automātiska noteikšana pirmajā iespējošanas reizē {#first-enable-auto-detection}
+
+Kad pirmo reizi iespējojat ātruma ierobežotāju, plugin nosaka jūsu iespējamo Cloudflare un starpniekserveru stāvokli un parāda administratora paziņojumu ar vienu klikšķi "Lietot noteiktos iestatījumus".
+
+* Plugin **nekad nepārraksta** jūsu saglabātās vērtības
+* Ja turpmākā datplūsma norāda, ka jūsu konfigurācija vairs neatbilst realitātei (piemēram, Cloudflare mainīja CIDR diapazonus), nenoraidāms neatbilstības paziņojums parāda ieteicamo atjauninājumu
+
+### Kāpēc tas ir svarīgi {#why-this-matters}
+
+Stingrs IP uzticēšanās modelis aizver kritisku viltošanas vektoru: tiešie pieprasījumi uz izcelsmes serveri ar viltotu `CF-Connecting-IP` galveni iepriekš tiktu iedalīti pēc viltotās IP adreses, nevis pēc īstā savienojuma otra gala. Tas ir īpaši svarīgi šādiem nolūkiem:
+
+* **Ātruma ierobežošana** — Uzbrucēji nevar apiet ierobežojumus, viltojot IP adreses
+* **Statistika** — Jūsu uzbrukumu metrikas atspoguļo īstās apmeklētāju IP adreses, nevis viltotas
+* **Captcha pārbaude** — Nodrošinātāji saņem pareizo apmeklētāja IP riska novērtēšanai

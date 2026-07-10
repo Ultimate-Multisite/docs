@@ -3,13 +3,13 @@ title: Template Situs
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**CATATAN: Artikel iki merujuk marang Ultimate Multisite versi 2.x. Yen sampeyan nggunakake versi 1.x,**_ **deleng artikel iki.**_
 
 Tujuan kita nalika nggawe jaringan premium nganggo Ultimate Multisite ya kanggo ngotomatisasi sak akeh proses sing wis ana, karo menehi fleksibilitas lan pilihan beda marang pelanggan nalika nggawe website-e. Salah siji cara gampang kanggo nggayuh keseimbangan iki ya kanthi nggunakake fitur Site Templates ing Ultimate Multisite.
 
-## Apa kuwi Site Template?
+## Apa kuwi Site Template? {#what-is-a-site-template}
 
 Miturut jenenge, Site Template iku kaya template dasar (boilerplate site) sing bisa dienggo minangka dhasar nalika nggawe website anyar ing jaringan sampeyan.
 
@@ -17,7 +17,7 @@ Iki tegese, sampeyan bisa nggawe website dhasar, ngaktifake plugin-plugin beda, 
 
 Iki kedengerane mantep banget, nanging kepiye caraku nggawe template site anyar? Iki gampang banget.
 
-## Nggawe lan Ngedit Site Template Anyar
+## Nggawe lan Ngedit Site Template Anyar {#creating-and-editing-a-new-site-template}
 
 Site Templates iku mung website biasa ing jaringan sampeyan. Kanggo nggawe template anyar, sampeyan cukup tindakake **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Ing ngisor formulir, sampeyan bakal nemokake sak tombol toggle **Copy Site**. Ik
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Ngowahi isi Template Situs
+### Ngowahi isi Template Situs {#customizing-the-contents-of-a-site-template}
 
 Kanggo ngowahi template situs panjenengan, cukup tindakake dashboard panelé lan laksanakake owahan sing dibutuhake. Panjenengan bisa nggawe postingan anyar, halaman, ngaktifake plugin, lan ngowahi tema aktif. Panjenengan uga bisa menyang Customizer lan ngowahi macem-macem pilihan kustomisasi.
 
@@ -43,11 +43,11 @@ Kanggo ngowahi template situs panjenengan, cukup tindakake dashboard panelé lan
 
 Kabeh data kuwi bakal di-copy nalika pelanggan nggawe situs anyar adhedhasar Template Situs kasebut.
 
-### Pilihan Lanjutan (Advanced Options)
+### Pilihan Lanjutan (Advanced Options) {#advanced-options}
 
 Yen panjenengan wis ngerti cara nulis kode kustom, panjenengan bisa nganggo Search and Replace API kita kanggo ngowahi informasi secara otomatis ing situs anyar sawise digawe. Iki migunani kanggo bab-bab kaya ngowahi jeneng perusahaan ing halaman Tentang (About page), ngowahi email kontak ing halaman Kontak, lsp.
 
-### Nggunakake Template Situs
+### Nggunakake Template Situs {#using-site-templates}
 
 Oke, panjenengan wis nggawe akeh Template Situs sing beda-beda desain, tema, lan pengaturan. Kepiye carane supaya dadi migunani ing jaringan panjenengan saiki?
 
@@ -59,7 +59,7 @@ Intine, ana rong cara sing bisa panjenengan gunakake saiki (ora barengan):
 
   * Menehi pilihan marang pelanggan kanggo milih template situs dhewe nalika daftar.
 
-#### Mode 1: Menugaskan Site Template
+#### Mode 1: Menugaskan Site Template {#mode-1-assign-site-template}
 
 Ing mode iki, pelanggan sampeyan ora bakal bisa milih template nalika nggawe akun, nanging malah sampeyan sing bakal nentokake template endi sing kudu digunakake kanggo saben Plan sampeyan.
 
@@ -71,7 +71,7 @@ Iki bakal nggawa sampeyan menyang halaman **Edit Product**. Ing bagian **Product
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Pilih Template Situs Sing Tersedia
+#### Mode 2: Pilih Template Situs Sing Tersedia {#mode-2-choose-available-site-template}
 
 Ing mode iki, sampeyan bakal menehi pilihan marang pelanggan nalika proses daftar (sign-up). Dheweke bakal bisa milih saka template situs sing beda sing sampeyan definisik ing pengaturan produk. Sampeyan duwe pilihan kanggo nggawa wates template situs sing bisa dipilih dhewe kanthi ngisor produk sing wis dipilih. Iki bakal ngidini sampeyan duwe kelompok template situs sing beda saben produk, sing pas banget kanggo nandhakake fungsi lan fitur sing beda kanggo produk sing regane luwih dhuwur.
 
@@ -79,7 +79,7 @@ Ing halaman **Edit Product**. Ing bagian **Product Options**, goleki tab **Site 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Mode Default: Pemilihan template situs ing formulir Checkout
+### Mode Default: Pemilihan template situs ing formulir Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Yen sampeyan kepengin kabeh template situs sampeyan bisa diakses nalika registrasi, utawa mungkin ora seneng repot nggawe tugas tambahan kanggo milih utawa ngewangi template situs ing saben produk sing sampeyan gawe. Banjur, sampeyan cukup setel pemilihan template situs ing **Checkout Form** sampeyan. Kanggo nindakake iki, tindakake menyang **Ultimate Multisite > Checkout Forms** lan klik **Edit** ing formulir sing arep sampeyan konfigurasike.
 
@@ -93,29 +93,29 @@ Ing *frontend*, pelanggan bakal weruh pemilih template nalika *checkout* lan bis
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Pilihan Template Situs
+### Pilihan Template Situs {#site-template-options}
 
 Ana ana fungsi template situs liyane bisa diaktifake utawa dinonaktifake ing pengaturan Ultimate Multisite.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Izinkan Pergantian Template
+#### Izinkan Pergantian Template {#allow-template-switching}
 
 Ngasah pilihan iki bakal ngidini klien sampeyan ganti template sing dipilih nalika proses daftar sawise akun lan situs wis digawe. Iki migunani saka sudut pandang klien amarga dheweke bisa milih template maneh yen banjur dheweke nemokake yen pilihan asline ora paling pas kanggo kebutuhan spesifiké.
 
-#### Izinkan Pengguna Nggunakake Situs Dheweke Minangka Template
+#### Izinkan Pengguna Nggunakake Situs Dheweke Minangka Template {#allow-users-to-use-their-site-as-templates}
 
 Amarga pengguna subsite wis ngenteni wektu kanggo nggawe lan ngrancang situs dhewe, mungkin dheweke arep nyalin lan nggunakake iku minangka salah siji template situs sing bisa dipilih nalika nggawe subsite liyane ing jaringan sampeyan. Pilihan iki bakal ngidini dheweke nindakake kuwi.
 
-#### Salin Media Nalika Duplikasi Template
+#### Salin Media Nalika Duplikasi Template {#copy-media-on-template-duplication}
 
 Ngasah pilihan iki bakal nyalin media sing diunggah ing situs template menyang situs anyar sing wis digawe. Iki bisa ditimpa (override) ing saben rencana.
 
-#### **Pencegah Mesin Pencari Nggoleki Site Templates**
+#### **Pencegah Mesin Pencari Nggoleki Site Templates** {#prevent-search-engines-from-indexing-site-templates}
 
 Site templates kaya sing dibahas ing artikel iki iku mung kerangka (boilerplate) nanging tetep dadi bagian saka jaringan sampeyan, tegese isih ana kanggo mesin pencari nemokake. Pilihan iki bakal ngidini sampeyan nyembunyikake site templates supaya mesin pencari bisa nggoleki lan mengindeksé.
 
-## Mengisi Site Templates Kanthi auto search-and-replace
+## Mengisi Site Templates Kanthi auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Salah siji fitur paling ampuh dari Ultimate Multisite ya, yaitu bisa nambahin teks, warna, dan pilihan field apa aja di form registrasi. Setelah data itu kita tangkap, kita bisa pakai buat ngisi konten awal di bagian tertentu dari template situs yang udah dipilih. Terus, pas situs baru itu dipublikasikan, Ultimate Multisite bakal ganti tempat penampung (placeholder) itu dengan informasi asli yang sudah dimasukkan saat registrasi.
 
@@ -135,7 +135,7 @@ Ultimate Multisite akan otomatis mengganti tempat penampung (placeholder) dengan
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Mengatasi masalah "template penuh dengan placeholder"
+### Mengatasi masalah "template penuh dengan placeholder" {#solving-the-template-full-of-placeholders-problem}
 
 Semua itu bagus, tapi kita ketemu masalah yang kurang enak: sekarang template situs kita - yang bisa dikunjungi sama pelanggan kita - isinya banyak tempat penampung (placeholder) yang jelek dan nggak kasih banyak informasi.
 

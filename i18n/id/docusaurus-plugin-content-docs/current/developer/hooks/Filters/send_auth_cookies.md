@@ -4,19 +4,19 @@ title: Filter - send_auth_cookies
 sidebar_label: send_auth_cookies
 _i18n_hash: b4e7974df7394f865bbf7450c9a1cd37
 ---
-# Filter: send_auth_cookies
+# Filter: send_auth_cookies {#filter-sendauthcookies}
 
 Memungkinkan pencegahan cookie otentikasi (auth cookies) agar tidak benar-benar dikirim ke klien.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
 | $send | `bool` | Apakah cookie otentikasi harus dikirim ke klien. |
 
-### Sejak
+### Sejak {#since}
 
 - 4.7.4
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L150) pada baris 150

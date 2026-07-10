@@ -1,64 +1,68 @@
 ---
 title: Kusimamia Malipo na Ankara
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Kusimamia Malipo na Ankara
+# Kusimamia Malipo na Ankara {#managing-payments-and-invoices}
 
-## Mipangilio ya Malipo
+## Mipangilio ya Malipo {#payment-settings}
 
-Kabla ya kuanza kupokea malipo, utahitaji kusanidi mipangilio inayohusiana na malipo. Nenda kwenye **Ultimate Multisite → Settings** na ubofye kichupo cha **Payment**.
+Kabla hujaanza kupokea malipo, utahitaji kusanidi mipangilio inayohusiana na malipo. Nenda kwenye **Ultimate Multisite → Settings** na ubofye kichupo cha **Payment**.
 
 ![Kichupo cha mipangilio ya malipo](/img/admin/settings-payments-top.png)
 
-### Chaguo za Jumla za Malipo
+Huu hapa mwonekano kamili wa ukurasa wa mipangilio ya malipo:
+
+![Ukurasa kamili wa mipangilio ya malipo](/img/admin/settings-payments-full.png)
+
+### Chaguo za Jumla za Malipo {#general-payment-options}
 
 Katika mipangilio ya jumla unaweza kusanidi:
 
-- **Currency** — Sarafu ya msingi inayotumika kwa miamala
-- **Currency Position** — Mahali ambapo ishara ya sarafu inaonekana (kabla/baada ya kiasi)
+- **Sarafu** — Sarafu chaguomsingi inayotumika kwa miamala
+- **Nafasi ya Sarafu** — Mahali ambapo alama ya sarafu inaonekana (kabla/baada ya kiasi)
 
-![Mipangilio ya gateway ya malipo](/img/admin/settings-payments-options.png)
+![Mipangilio ya lango la malipo](/img/admin/settings-payments-options.png)
 
-### Gateway za Malipo
+### Malango ya Malipo {#payment-gateways}
 
-Ultimate Multisite inasaidia gateway nyingi za malipo. Unaweza kuwezesha na kusanidi kila moja kutoka kwenye kichupo cha mipangilio ya Payment.
+Ultimate Multisite inasaidia malango mengi ya malipo. Unaweza kuwezesha na kusanidi kila moja kutoka kwenye kichupo cha mipangilio ya Payment.
 
-![Usanidi wa gateway ya malipo](/img/admin/settings-payments-gateways.png)
+![Usanidi wa lango la malipo](/img/admin/settings-payments-gateways.png)
 
-Gateway zinazopatikana ni pamoja na:
+Malango yanayopatikana ni pamoja na:
 
 - **Stripe** — Malipo ya kadi ya mkopo kupitia Stripe
 - **PayPal** — Malipo ya PayPal
-- **Manual** — Kwa malipo ya nje ya mtandao au usindikaji wa malipo maalum
+- **Manual** — Kwa uchakataji wa malipo nje ya mtandao au maalum
 
-Kila gateway ina sehemu yake ya usanidi ambapo unaingiza funguo za API na mipangilio mingine.
+Kila lango lina sehemu yake ya usanidi ambapo unaingiza API keys na mipangilio mingine.
 
-![Mipangilio ya ziada ya gateway](/img/admin/settings-payments-gateways-2.png)
+![Mipangilio ya ziada ya lango](/img/admin/settings-payments-gateways-2.png)
 
-### Hali ya Majaribio
+### Hali ya Sandbox {#sandbox-mode}
 
-Unaweza kuwezesha **Sandbox Mode** ili kujaribu muunganisho wako wa malipo kabla ya kwenda moja kwa moja. Wakati hali ya sandbox imewashwa, hakuna malipo halisi yatakayofanywa.
+Unaweza kuwezesha **Hali ya Sandbox** ili kujaribu muunganisho wako wa malipo kabla ya kuanza rasmi. Hali ya sandbox inapokuwa hai, hakuna malipo halisi yatakayofanywa.
 
-## Kuangalia Malipo
+## Kuangalia Malipo {#viewing-payments}
 
 Nenda kwenye ukurasa wa **Payments** chini ya Ultimate Multisite ili kuona miamala yote katika mtandao wako.
 
 ![Orodha ya malipo](/img/admin/payments-list.png)
 
-Unaweza kuchuja malipo kwa hali (imekamilika, inasubiri, imeshindwa, imerudishwa) na kutafuta miamala maalum.
+Unaweza kuchuja malipo kwa hali (yaliyokamilika, yanayosubiri, yaliyoshindwa, yaliyorejeshwa) na kutafuta miamala mahususi.
 
-Bofya kwenye malipo ili kuona maelezo yake kamili ikiwa ni pamoja na vipengele vya mstari, uanachama unaohusiana, taarifa za mteja, na data ya gateway ya malipo.
+Bofya malipo ili kuona maelezo yake kamili, ikijumuisha vipengee vya mstari, membership husika, taarifa za mteja, na data ya lango la malipo.
 
-## Ankara
+## Ankara {#invoices}
 
-Ultimate Multisite inaweza kuzalisha ankara kiotomatiki kwa malipo. Unaweza kubinafsisha kiolezo cha ankara na muundo wa nambari kutoka kwenye mipangilio ya Payment.
+Ultimate Multisite inaweza kuzalisha ankara za malipo kiotomatiki. Unaweza kubinafsisha kiolezo cha ankara na muundo wa nambari kutoka kwenye mipangilio ya Payment.
 
 Chaguo za kubinafsisha ankara ni pamoja na:
 
-- **Jina na anwani ya kampuni** inayoonyeshwa kwenye ankara
-- **Muundo wa nambari za ankara** na mfuatano
+- **Jina na anwani ya kampuni** vinavyoonyeshwa kwenye ankara
+- **Nambari za ankara** muundo na mfuatano
 - **Nembo** inayoonyeshwa kwenye kichwa cha ankara
-- **Maandishi ya chini ya ukurasa** kwa masharti, maelezo, au taarifa za kisheria
+- **Maandishi maalum ya kijachini** kwa masharti, maelezo, au taarifa za kisheria
 
 Ili kubinafsisha kiolezo cha ankara, nenda kwenye **Ultimate Multisite → Settings → Payment** na utafute mipangilio inayohusiana na ankara.

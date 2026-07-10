@@ -3,13 +3,13 @@ title: Izveidot atlaides kodu
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Izvēlnos kodu (v2)
+# Izvēlnos kodu (v2) {#creating-discount-codes-v2}
 
 _**SVARĪTIE PIEMĒRUMS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
 Ar Ultimate Multisite jūs varat izveidot atlaides kodus, lai sniegtu saviem klientiem atlaides uz savām abonentēm. Un to izveide ir viegli!
 
-## Izveide un rediģēšana atlaides kodiem
+## Izveide un rediģēšana atlaides kodiem {#creating-and-editing-discount-codes}
 
 Lai izveidotu vai rediģētu atlaides kodu, pārvietojieties uz **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kupona tagad ir jūsu sarakstā, un no tā jūs varat nospiedēt, lai to **edit*
 
 ###
 
-### URL parametru izmantošanu:
+### URL parametru izmantošanu: {#using-url-parameters}
 
 Ja vēlaties pielāgot savas cenu tabulas vai izveidot skaistu kupona koda lapu vietnei un vēlaties automātiski lietot atlaidi kodu jūsu kasina formā, jūs to varat darīt ar URL parametrus.
 

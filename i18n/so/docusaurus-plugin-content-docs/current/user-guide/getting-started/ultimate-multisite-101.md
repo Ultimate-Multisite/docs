@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite waa plugin-ka WordPress Multisite oo kuu oggolaanaya inaad u bixiso WaaS ama Websites as a Service macaamiishaada. Inta aanan dhex galin oo aan barato sida Ultimate Multisite ay ku caawin karto ganacsigaaga iyo macaamiishaada, waxaa jira aqoon aasaasi ah oo aan u baahanahay inaan helo.
 
-## WordPress Multisite-ka
+## WordPress Multisite-ka {#the-wordpress-multisite}
 
 Inta badan waxaan la yaqaan qaabka ugu caansan ee installation-ka WordPress. Waxaad ku samaysaa mid iyadoo la isticmaalayo control panel-ka bixiyaha hostinggaaga ama, kuwa badbaadinaya, waxaad samayn kartaa server iyo database cusub, aad ka soo dejisid faylasha muhiimka ah oo bilaaw inaad bilaawdo habka installation-ka.
 
@@ -21,13 +21,13 @@ Si kooban, WordPress multisite-ka waxa loo arki karaa sidan: Jaamacadda waxay il
 
 Si aan u kala qaadno qoraalkan, aan eegno qaar ka mid ah erayada asaasiga ah ee jira, ma aha oo kaliya qoraalka Ultimate Multisite-ka laakiin sidoo kale bulshada WordPress-ka oo dhan.
 
-### Shirkadda (The Network)
+### Shirkadda (The Network) {#the-network}
 
 Waxaa loo tixraaca WordPress, shirkadda multisite waa meesha laga maamuli karo inta badan subsite-yo iyadoo la isticmaalayo dashboard hal ah. In kasta oo hababka sameynta shirkadda multisite ay kala duwan yihiin bixiyeya hosting-ka, natiijada ugu dambeysa waxay caadi ahaan tahay in la ku darno qaar ka mid ah tilmaamaha dheeraadka ah faylka wp-config.php si WordPress u ogaado inay shaqaynaysaa qaabkan gaarka ah.
 
 Waxaa jira farqanno cad oo inta badan u kala duwan inta u dhaxaysa shirkadda multisite iyo warxad (installation) WordPress oo ku jirta hal meel, waxaan si kooban uga wada hadli doonaa.
 
-#### Subdomain vs. Subdirectory
+#### Subdomain vs. Subdirectory {#subdomain-vs-subdirectory}
 
 Mid ka mid ah go'aanka ugu degdega ah ee aad qaadi doontid waa in shirkadda multisite ay shaqaynayso _subdirectories_ (wadajirro yar oo ku jira) ama _subdomains_ (domain-yo yaryar). Ultimate Multisite si isku macquulsan u shaqeeyaa labada dooro, laakiin waxaa jira farqanno qaab-dhismeed ah oo u dhexeeya labada qaabkaas.
 
@@ -43,7 +43,7 @@ Marka aad dejisdo _subdomain_, isticmaalka shahaaynta wildcard SSL waa mid ka mi
 
 In kasta oo ay jiraan fursado kale, inta badan kuwaas waxaa lagaa koobid meel yar oo isticmaalka ah waxayna u baahan yihiin dejin dheeri ah iyo tixgelin ku saabsan in la hubiyo in ay si habboon ugu habboon yihiin.
 
-#### Plugins and Themes
+#### Plugins and Themes {#plugins-and-themes}
 
 Waxaa jira wax kale oo WordPress uu ka qaado, ugu yaraan isticmaalayaasha. Haddii maamulaha bogga (site administrator) uu ku rakibo plugin xun ama u fashilmo inuu si joogto ah ula habboon yahay, qofka kaliya ee laabta iyo dhibaatada ay ka soo horjeeddo yahay waa isaga. Si kastaba ha ahaatee, haddii maamulaha bogga uu ku rakibo plugin xun oo ku jira isticmaal multisite (multisite installation), wuxuu abuuraa qof laabta dhammaan goobaha lagu rakibo shirkadda.
 
@@ -51,7 +51,7 @@ Sababtan, marka WordPress Multisite sida loo dejiyo, waxay ka saaraa awoodda maa
 
 Ilkaygaas, maamulaha shirkadda wuxuu mas'uul ka yahay in lagu installo plugins iyo themes meelaha shirkadda oo uu u siinayo oggolaanshaha loo isticmaalo plugins iyo themes-kaas ee meelaha shirkadda. Maamulayaasha meelaha (site administrators) ma heli karaan ama ku soo installaan plugins iyo themes aan la siinin meelaha ay ku jiraan.
 
-#### Isticmaalayaasha iyo Maamulayaasha
+#### Isticmaalayaasha iyo Maamulayaasha {#users-and-administrators}
 
 WordPress Multisite-ka, dhammaan meelaha shirkadda waxay wadaagaa database-ka isku mid ah, sidaas darteed waxay wadaagaa isticmaalayaasha, doorka (roles) iyo awoodaha (capabilities). Habka ugu habboon ee aad u fikirayso waa in dhammaan isticmaalayaashu ay yihiin xubnaha shirkadda oo aan ahayn meel gaar ah.
 
@@ -63,13 +63,13 @@ Marka la soo celiyo qodobka kor ku xusan, inkasta oo xisaabta isticmaalayaasha a
 
 In kasta ah, in kastoo ma aha fikrad aan la ogaansii ganacsiga, haddana xogta isticmaalayaasha iyo aqoonsiga (authentication) ee hal meel oo keliya ayaa inta badan adag in la fahmo dadka yaqaan WordPress-ka lagu dhisay si mid iska ah.
 
-#### Media
+#### Media {#media}
 
 Haddii hay'adaha shirkadda (network sites) ay wadaagaan database hal oo WordPress ku jirta, waxay ilaaliyaan goobyo kala duwan oo faylasha media ah (media files) ee fayl-qaabka (filesystem).
 
 Goobta caadiga ah ee WordPress-ka (wp-content/uploads) weli waxay sii jirtaa; si kastaba, habka ay u socoto wuxuu la beddelayaa si uu u muujiyo ID gaarka ah ee hay'adda shirkadda. Natiijada ah, faylasha media ee hay'adda shirkadda ayaa si `wp-contents/uploads/site/[id]` loo arki doonaa.
 
-#### Permalinks (Goobaha Link-ka)
+#### Permalinks (Goobaha Link-ka) {#permalinks}
 
 Waxaan hore u sheegnay in qaabka _subdomain_ uu ka faa'iido badan yahay qaabka _subdirectory_, halkan waa goobaha link-kaas.
 
@@ -83,7 +83,7 @@ Haddii aad isticmaalayso qaabka _subdomain_, ma loo baahnayn tallaabadaas sababt
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages (Maqaallada Joogtada ah)
+#### Static Pages (Maqaallada Joogtada ah) {#static-pages}
 
 Intaabka _subdirectory_ (sub-directory) oo la xiriira isbeddellada magacyada, sida bogga ugu muhiimsan iyo bogagga kale ee shirkadda (network sites), sababtoo ah labadaba waxay isticmaalaan isku-dhafka faylka.
 
@@ -93,7 +93,7 @@ Si aan tani u ka horjoogsado, WordPress wuxuu bixiyaa hab lagu xirmo magacyada b
 
 Inta badan _subdomain_ (sub-domain) oo la xiriira, suurtagalnimada isku dhac magacyada waxaa yareynaya _subdomain_-ka sababtoo ah wuxuu u gaar ah yahay bogga shirkadda (network site) mana la xiriirin waxba bogga muhiimka ah.
 
-### Diyaarinta (Registration)
+### Diyaarinta (Registration) {#registration}
 
 Waxaa jira fursado cusub oo diiwaangelinta isticmaalayaal ah oo ku jira settings-ka network-ka WordPress Multisite, taasoo u oggolaanaysa isticmaalayaasha cusub iyo kuwa hore inay abuuraan bogag.
 
@@ -111,7 +111,7 @@ Ilma inta badan markii isticmaaluhu galo, wuxuu ku galayaa network-ka oo ugalaya
 
 Haddii, si kastaba, dabeecadda iyo ujeeddada loogu talagalay multisite-ka ah ay tahay inuu bixiyo network sites kala duwan oo aan la xiriirin midba kale, inta badan waxaa loo baahan yahay plugins ama qaybo dheeri ah oo lagu maamulo doorashada isticmaalayaasha (user roles).
 
-### Domain iyo SSL
+### Domain iyo SSL {#domain-and-ssl}
 
 Aynu ka hadalno installation-ka WordPress Multisite ee dhinaca domain-ka iyo SSL-ka. Waxaan ka hadlaynaa Wordpress.com, taasoo si weyn u tusaale ah sida multisite-ka ugu ballaaran, waxayna muujineysaa awooddiisa weyn ee loo beddeli karo oo lagu fuliyo ujeedo gaar ah.
 
@@ -125,11 +125,11 @@ Maamulayaasha shirkadda ayaa siisaa heer kale oo adag, iyadoo la tixgelinayo dej
 
 In la xiriirdoas, inkasta oo WordPress Multisite uu bixiyo hab lagu oggolaado in [www.anotherdomain.com](http://www.anotherdomain.com) la xiro 'site1', maamulaha shirkadda wuxuu weli la kulmaa caqabadka maamulka DNS-ka dibadda iyo fulinta SSL certificates-ka.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Marka la fahmay kala duwanaanshaha inta u dhaxaysa installation-ka WordPress ee ku socda (stand-alone) iyo installation-ka Multisite, aan eegno sida Ultimate Multisite uu yahay awoodda ugu weyn ee bixinta Websites as a Service.
 
-### Hordhac
+### Hordhac {#introduction}
 
 Ultimate Multisite waa qalabka aad u baahan tahay marka la timaado samaynta Website as a Service (WaaS). Ka fikir Wix.com, Squarespace, WordPress.com, ka dibna ka fikir in aad leedahay adeeggaaga gaarka ah.
 
@@ -137,9 +137,9 @@ Dhinaca gudaha (under the hood), Ultimate Multisite wuxuu isticmaalaa WordPress 
 
 Qaybaha soo socda waxaan eynaa qaar ka mid ah noocyada isticmaalka caadiga ah iyo tixgeliyada loo baahan yahay si loo taageero noocyadaas.
 
-### Noocyada Isticmaalka (Use Cases)
+### Noocyada Isticmaalka (Use Cases) {#use-cases}
 
-#### Tallaabada 1: Hay'ad (An Agency)
+#### Tallaabada 1: Hay'ad (An Agency) {#case-1-an-agency}
 
 Guud ahaan, xirfadaha asaasiga ee hay'adda waxay ku jiraan naqshadaynta websites iyadoo la raacayo qaybo sida hosting-ka ama suuqgeynta inay ahaadaan adeegyo dheeri ah.
 
@@ -165,7 +165,7 @@ Themes waxay bixiyaan habab la mid ah, oo u oggolaanaya in qoraallo gaar ah lagu
 
 Agencies (hay'adaha) waxay heshiis wanaagsan ka helayaan Ultimate Multisite sababtoo ah waxay u oggolaanaysaa inay galaan waxa ay ugu fiican yihiin - in ay qaataan design-ka website-yada aan caawimaad lahayn.
 
-#### Ardhka 2: Bixiyaha Gaarka Ah (Niche Provider)
+#### Ardhka 2: Bixiyaha Gaarka Ah (Niche Provider) {#case-2-niche-provider}
 
 Waxaa jiray hadal qadiim ah oo leh, "hal shay ka samee oo si fiican u samee". Inta badan khabiirrada, tani waxay micnaheedu tahay in ay abuuraan alaab ama adeeg ku salaysan fikrad hal ah.
 
@@ -179,7 +179,7 @@ Haddii aad tahay bixiyaha niche sites iyo adeegyada gaarka ah, tani waxay si wey
 
 Marka ah oo ku xiran baahiyaha, labada qaab ee _subdirectory_ ama _subdomain_ waxay si wanaagsan u habboon yihiin, halkaasoo doorashada qaabka farsamada ay noqon doonto inta badan in la kala saaro shahaadada SSL-ka fudud ee _subdirectories_ ama shahaadada wildcard (wildcard) ee _subdomains_.
 
-#### Sheekada 3: Adeegsiga Web Hosting-ga WordPress
+#### Sheekada 3: Adeegsiga Web Hosting-ga WordPress {#case-3-wordpress-web-hosting}
 
 Waxaa jira qaabab badan oo aad ku samayn karto hosting-ka WordPress, laakiin si dhakhso ah ayuu u fudud yahay in lagu bixiyo meel web (web space) macmiilka oo leh nooc hore loo soo saaray WordPress. Tani waxay sababtahan muhiim ah ayaa ka dhasha in qaadashada go'aanno iyo tixgelinayaal badan ay isugu yimaadaan si loo bixiyo adeeg la qiimo leh.
 
@@ -191,11 +191,11 @@ Waxaa sidoo kale, developer-ka ah kuwa raba inay la shaqeeyaan Ultimate Multisit
 
 Iyadoo aan ku tiirsan plugin-yada iyo lisansiyadaha dibadda badan, Ultimate Multisite wuxuu bixiyaa xalka leh astaamo badan oo la barbardhiga sida Wix, Squarespace, WordPress.com iyo kuwa kale.
 
-### Tixgelinta Qaabka Farsamada (Architecture Considerations)
+### Tixgelinta Qaabka Farsamada (Architecture Considerations) {#architecture-considerations}
 
 In kasta oo aan ahayn hagitaan dhammaystiran, qodobadan hoose waa inay noqdaan hageysid si loo doorto tignoolojiyadda saxda ah ee taageeraysa install-ka Ultimate Multisite.
 
-#### Hosting Waa La Mid Nahay (Shared vs. Dedicated Hosting)
+#### Hosting Waa La Mid Nahay (Shared vs. Dedicated Hosting) {#shared-vs-dedicated-hosting}
 
 بالأسف ليس كل مزودي الاستضافة متساوين، وبعضهم يمارسون كثافة خوادم عالية جداً. عادةً ما يحقق المزودون ذوو التكلفة المنخفضة إيراداتهم عن طريق زيادة كثافة الخادم قدر الإمكان. ولهذا السبب قد يكون تثبيت Ultimate Multisite الخاص بك مجرد واحد من مئات المواقع على نفس الخادم.
 
@@ -207,7 +207,7 @@ In kasta oo aan ahayn hagitaan dhammaystiran, qodobadan hoose waa inay noqdaan h
 
 للحصول على قائمة بالمزودين المتوافقين وتعليمات الإعداد الكامل لكل منهم، يرجى مراجعة وثائق "Compatible Providers" (المزودون المتوافقون).
 
-#### اعتبارات الأداء
+#### اعتبارات الأداء {#performance-considerations}
 
 Ultimate Multisite ليس تطبيقاً بطيئاً، بل هو سريع بشكل ملحوظ. ومع ذلك، فإنه يعمل فقط بقدر جودة التطبيق والبنية التحتية الأساسية ويمكنه الاستفادة فقط مما لديه وصول إليه.
 
@@ -225,7 +225,7 @@ Waxa ka dambaysa sababtan, inta badan maamulayaasha shabakaddu waxay isticmaalaa
 
 Ultimate Multisite wuxuu raacayaa add-on (add-on) qurux badan oo Cloudflare ah kaas oo u oggolaanaya maamulayaasha shabakaddu inay ku dhistaan install-koodihii ay Cloudflare ka hor taagan yihiin, iyagoo isticmaalaya awoodaha caching-ga iyo sidoo kale hosting-ka DNS, SSL certificates (sertifikadu), iyo hababka amniga.
 
-#### Backups (Waxyaabaha la ilaaliyo)
+#### Backups (Waxyaabaha la ilaaliyo) {#backups}
 
 Waxaad u weydiin kartaa dadka 50 oo talo ku saabsan backups ah waxaadna heli doontaa ra'ayino kala duwan oo ku saabsan istiraatiijiyadda backup-ka. Jawabdu waa, waxay ku xiran tahay.
 
@@ -235,7 +235,7 @@ Ujeeddooyinka qaybtaani, aan heshiiyo in hagaajinta faylasha (backup) ay tahay n
 
 Marka aan heshiiyay arrintan, sida loo gaaro hagaajinta faylasha iyo waxa ugu fiican deegaankaaga waxay si weyn ku xiran doonto baahiyahaaga iyo awoodda bixiyaha hosting ee ah inuu buuxiyo baahiyahaas. Si kastaba ha ahaatee, iyadoo la eegayo kuwa ugu dareenka badan ee fikradaha ilaa kuwa ugu yar, doorbada hoose waa inay si weyn u hagtaa.
 
-#### Snapshots (Nuqshado hal mar ah)
+#### Snapshots (Nuqshado hal mar ah) {#snapshots}
 
 Snapshots-ku waa waxa ugu fiican hagaajinta faylasha sababtoo ah waxay fududahay, ma aha mid adag (ilama aad rabto inaad soo celiso), waxayna si toos ah u shaqeeyaan. Si kastaba ha ahaatee, waxay u baahan tahay caawimaad ka helidda bixiyahaaga, waxaana inta badan waxay kuugu habboon tahay haddii aad leedahay VPS (Virtual Private Server) ama mid la mid ah. Bixiye badan oo lagu soo bandhigay dukumentigaaga 'Compatible Providers' waxay bixiyaan hagaajinta faylasha iyadoo aan loo baahnayn wax dheeri ah oo maamulaha shabakadda ka qabto ama ka tago.
 
@@ -243,7 +243,7 @@ Backup-yada caabka dhaqanka waxay diiradda saartaa faylasha iyo database-yada, h
 
 Snapshot-yada waxay keeni karaan kharash dheeri ah iyadoo la wareegayo bixiyaha hosting-ka, laakiin waa siyaasadda lagu ilaaliyo dhibaatooyinka.
 
-#### External Scripts (Scripts Dibadda)
+#### External Scripts (Scripts Dibadda) {#external-scripts}
 
 Waxaa u muuqda in aysan jirin wax badan oo scripts iyo xalabaad dibadda ah oo lagu backup-gareeyo agabka WordPress iyo MySQL, kuwaasuna si fiican ay u shaqayn lahaayeen Ultimate Multisite sababtoo ah waa plugin WordPress oo isticmaala faylasha iyo database-ka WordPress. Sidaa darteed xalka ee hagaajinaya (backup) website-yada WordPress wuxuu si wanaagsan ugu qaban doonaa baahiyaha Ultimate Multisite.
 
@@ -251,7 +251,7 @@ Ma awoodno inaan mid ka soo qaadano mid kale laakiin talada guud waa inaad samay
 
 Waa in la xusuusto in scripts-kan, inta ay socdaan, ay kordhiyaan cabbirka nidaamka (system load) taasina waa inaad ka tixgelisaa.
 
-#### Plugins (Plugins)
+#### Plugins (Plugins) {#plugins}
 
 Waxaa dhac weyn oo aan la heli karin WordPress oo lagu xalliyo plugin, haddii ma ahayn qof ku takhasusay maaraynta scripts-ka dibadda ah, waxaa laga yaabaa in plugin uu yahay doorashada ugu wanaagsan.
 
@@ -259,7 +259,7 @@ Plugins-yadaa waxay leeyihiin dooro iyo astaamo kala duwan, laakiin inta badan w
 
 Marka aad dooranayso plugin-kaaga, hubi inuu awoodu yahay multisite (macaamiil badan). Sababtoo ah habka uu u shaqeeyo inta lagu jiro socodka backup-ka, waxaad filan kartaa in server-ka uu si kooban u xirmo ilaa la dhammeeyo habkaas.
 
-#### Domain iyo SSL
+#### Domain iyo SSL {#domain-and-ssl-1}
 
 Wax badan ayaa hore loo ka hadlayay magacyada domain-ka marka la isticmaalayo mode-ka _subdomain_ ee multisite. Xalka ugu caansan ee maamulayaal shirkadaha waa in la isticmaalo DNS wildcard entries (qoraallo kala duwan oo DNS ah).
 
@@ -283,7 +283,7 @@ Badanaa, isticmaalka Cloudflare waa doorooyin fudud oo dad badan lahayn. Macaami
 
 Waxaa dibaddaas, waa in la raadiyo xalalka kale oo loo isticmaali karo taasina macnaheedu yahay in Ultimate Multisite uu soo jeediyo liis ka mid ah Bixiyeya La Midloobay (Compatible Providers). Tani waa sababta ah sababta habka aasaasidda DNS iyo SSL-ka noqon karo mid aan fududayn. Si kastaba ha ahaatee, isdhexgalka Ultimate Multisite la bixiyeya bixiyeyaasi waxay yareysaa adiga oo ka saaraysa dhibaatada, waxaana habkaas si toos ah u samaynaya (automated).
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Waa laga yaabaa inaad u baahan tahay plugins kale oo aad ku siiso shaqo dadkaaga ama meelaha shirkadda. Ma dhammaan plugins-ku shaqeeyaan WordPress Multisite iyo Ultimate Multisite? Waa ku xiran.
 

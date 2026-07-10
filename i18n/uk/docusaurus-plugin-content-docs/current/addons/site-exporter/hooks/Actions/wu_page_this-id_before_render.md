@@ -4,22 +4,22 @@ title: 'Дія - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c2622b55e1ff656ba579f3ee25646584
 ---
-# Action: wu_page_{$this->id}_before_render
+# Action: wu_page_{$this->id}_before_render {#action-wupagethis-idbeforerender}
 
 Викликається перед тим, як буде відрендерена (відображена) конкретна сторінка.
 
 Usage: Динамічну частину потрібно замінити на коректний ID сторінки, наприклад: add_action('wu_page_events_before_render', 'do_something_callback', 10, 2);
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | ID сторінки. |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Екземпляр Base Admin Page. |
 
-### Починаючи з
+### Починаючи з {#since}
 
 - 1.8.2
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L368) на рядку 368

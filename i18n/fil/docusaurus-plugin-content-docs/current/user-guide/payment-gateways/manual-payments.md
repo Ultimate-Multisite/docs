@@ -1,42 +1,46 @@
 ---
-title: Pagse-set Up ng Manual Payments
+title: Pag-set up ng Mga Manu-manong Pagbabayad
 sidebar_position: 20
-_i18n_hash: 1046fae1e97189ace8966057920da6eb
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Pag-setup ng Manual na Pagbabayad (v2)
+# Pag-set Up ng Manual Payments (v2) {#setting-up-manual-payments-v2}
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay para sa Ultimate Multisite version 2.x.**_
+_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
 
-Ang manual na pagbabayad ay isang paraan para makapag-alok ka ng ibang payment method kung sakaling hindi available ang **Stripe** o **PayPal** para sa iyong mga user. Maaari itong wire o bank transfer o kahit anong payment method na available sa iyong mga user sa kanilang lugar.
+Ang manual payments ay isang paraan para makapag-alok ka ng ibang mga paraan ng pagbabayad kung hindi available ang **Stripe** o **PayPal** para sa iyong mga user. Maaari itong wire o bank transfer o anumang ibang paraan ng pagbabayad na available sa iyong mga user sa kanilang lugar.
 
-## Paano i-enable ang Manual na Pagbabayad
+## Paano i-enable ang Manual Payments {#how-to-enable-manual-payments}
 
-Napakadali lang mag-setup ng manual payment. Kailangan mo lang itong i-enable sa payment gateways at maglagay ng detalyadong instruksyon kung paano magpapadala ng bayad ang user.
+Napakadali ng pag-set up ng manual payment. Kailangan mo lang itong i-enable sa ilalim ng payment gateways at maglagay ng detalyadong mga tagubilin kung paano dapat ipadala ng user ang bayad.
 
-Una, pumunta sa **Ultimate Multisite > Settings > Payments**. Sa ilalim ng **Payment Gateways**, i-toggle ang **Manual** para ma-on ito. Makikita mo na may lalabas na **Payment Instructions** box.
+Una, pumunta sa **Ultimate Multisite > Settings > Payments**. Sa ibaba ng **Payment Gateways** , i-toggle on ang **Manual**. Makikita mong may lalabas na kahon ng **Payment Instructions** para sa iyo.
 
-Ilagay sa box na ito ang impormasyon na kakailanganin ng iyong customer para makabayad. Halimbawa, pwede mong ilagay ang iyong bank account details at email para makapagpadala sila ng payment confirmation sa iyo.
+Idagdag sa kahong ito ang impormasyong kakailanganin ng iyong customer para gawin ang bayad. Maaari itong mga detalye ng iyong bank account at iyong email para maipadala sa iyo ng customer ang kumpirmasyon ng bayad, halimbawa.
 
-![Manual payment gateway toggle at payment instructions box](/img/config/settings-payment-gateways.png)
+![Toggle ng manual payment gateway na may text area ng Payment Instructions](/img/config/manual-gateway-expanded.png)
 
-Pagkatapos i-setup, i-click lang ang **Save Settings** at tapos na. Kapag nagparehistro ang mga user sa iyong network, makikita nila ang mensahe na makakatanggap sila ng instruksyon mo para makumpleto ang pagbili.
+Narito ang interface ng mga setting ng manual gateway:
 
-![Mensahe ng manual payment na ipinapakita habang nagpaparehistro](/img/config/settings-payment-gateways.png)
+![Mga setting ng manual gateway](/img/config/manual-gateway-settings.png)
 
-Makakatanggap din sila ng mensahe sa iyong **Thank You** page na may kasamang payment instructions.
+Pagkatapos itong i-set up, i-click lang ang **Save Settings** at tapos na. Kapag nagrehistro ang mga user sa iyong network, makakakita sila ng mensaheng nagsasabi na matatanggap nila ang iyong mga tagubilin para kumpletuhin ang pagbili.
 
-![Thank You page na nagpapakita ng payment instructions](/img/config/settings-payment-gateways.png)
+![Mensahe ng kumpirmasyon sa pagpaparehistro na nagsasabi sa user na matatanggap nila ang mga tagubilin sa pagbabayad](/img/frontend/registration-manual-notice.png)
 
-## Pagkumpirma ng manual na pagbabayad
+At makakatanggap din sila ng mensahe sa iyong **Thank You** page kasama ang iyong mga tagubilin sa pagbabayad.
 
-Para kumpirmahin ang manual payment, pumunta sa **Payments** menu sa kaliwang sidebar. Doon makikita mo ang lahat ng payments sa iyong network at ang mga detalye nito, kasama na ang **status**. Ang manual payment ay laging may **Pending** na status hangga't hindi mo ito manu-manong binabago.
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-![Listahan ng payments na nagpapakita ng pending na manual payment](/img/admin/payments-list.png)
+## Pagkumpirma ng manual payments {#confirming-manual-payments}
 
-Pumasok sa payment page sa pamamagitan ng pag-click sa **reference code**. Sa page na ito, makikita mo ang lahat ng detalye ng pending payment, tulad ng reference ID, products, timestamps at iba pa.
+Para kumpirmahin ang manual payment, pumunta sa menu na **Payments** sa kaliwang bar. Doon makikita mo ang lahat ng bayad sa iyong network at ang mga detalye ng mga ito, kabilang ang kanilang **status**. Ang manual payment ay palaging magkakaroon ng status na **Pending** hanggang manu-mano mo itong baguhin.
 
-![Payment details page na may reference code at products](/img/admin/payments-list.png)
+![Listahan ng payments na nagpapakita ng nakabinbing manual payment](/img/admin/payments-list.png)
 
-Sa kanang column, maaari mong baguhin ang status ng payment. Kapag pinalitan mo ito ng **Completed** at **in-on ang Activate Membership** option, ma-e-enable ang site ng iyong customer at magiging active na ang kanilang membership.
+Pumasok sa page ng bayad sa pamamagitan ng pag-click sa **reference code**. Sa page na ito, mayroon kang lahat ng detalye ng nakabinbing bayad, tulad ng reference ID, mga produkto, timestamps, at iba pa.
 
-![Pagbabago ng payment status sa Completed na may Activate Membership toggle](/img/admin/payments-list.png)
+![Page ng mga detalye ng bayad na nagpapakita ng reference code, mga produkto, at mga kabuuan](/img/admin/payment-edit.png)
+
+Sa kanang column, maaari mong baguhin ang status ng bayad. Ang pagpapalit nito sa **Completed** at **pag-toggle sa opsyong Activate Membership** ay mag-e-enable sa site ng iyong customer at magiging aktibo ang kanilang membership.
+
+![Page ng pag-edit ng bayad na may Status na nakatakda sa Completed at toggle ng Activate Membership](/img/admin/payment-activate-membership.png)

@@ -3,9 +3,9 @@ title: Lipa la ho tshepa
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Litso tsa Hoho (Release Notes)
+# Litso tsa Hoho (Release Notes) {#release-notes}
 
-## Versheni 2.13.0 — Ho litsohangwa ka 2026-06-05
+## Versheni 2.13.0 — Ho litsohangwa ka 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Hoho: Re tšepo le ho fetola: Re ntsa tšepo ya "sovereign-tenant" (tenant e ntle) ho se leboho ba mofuta oa khutso ea sehlopha sa morao, checkout, billing, site, invoice, ho fetola template, le ho mapola domain. Le tla etsa hore nete tsa tenant ho ka tloha bohlokoa ba mofuta oa khutso ho leboho la morao.
 
@@ -28,7 +28,7 @@ Fix: Ho fana'a email le fa baithuti ba tsoalo, ho hlalosa bohlokoa haholo hore h
 
 - Ho fihla: WordPress compatibility e fetilwa ho upa 7.0, assets ea Vue ea ho ba production a fetilwa mo npm sources, le Cypress end-to-end coverage etsa ho ba leboha haholo ka flows ea checkout, setup, SSO, le gateway.
 
-## Version 2.12.0 — Ho baetsiile la 2026-05-15
+## Version 2.12.0 — Ho baetsiile la 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Hoho: Hoho e ne e fana ka ho fana ka Hostinger (hPanel) le boitshwaro ba mapang a tšoa le ho rata mapang a domain.
 - Hoho: Site Exporter e nna e fana ka ho rata bundles ea network import ho fana ka ho rata site ka ho fetola ho lehle.
@@ -44,7 +44,7 @@ Fix: Ho fana'a email le fa baithuti ba tsoalo, ho hlalosa bohlokoa haholo hore h
 
 - Ho fihlelo: Re ntshethwa wp-cli e ntsha ka tsela e ntle ho sae le pakeng ya plugin, e ntsha habile la plugin
 
-## Version 2.11.0 — E rilile ka 2026-05-11
+## Version 2.11.0 — E rilile ka 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Ho fela: Boitshwaro ba site hloboahla (Site exports) ba ntsa ho ba le `index.php` e ntse e-booting ka sebope, hore ZIP e ka ba leka ho i-installera ka host e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e ntse e nt
 
@@ -55,7 +55,7 @@ Fix: Ho fana'a email le fa baithuti ba tsoalo, ho hlalosa bohlokoa haholo hore h
 
 - Tshembe: Tab ya Import/Export e re, e re bolela ka kholo hore na lefa se se fana ka (scope) le se se tsamisa ka tool ya Site Export.
 
-## Version 2.10.0 — E tšebeleng la 2026-05-05
+## Version 2.10.0 — E tšebeleng la 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Tshembe: Ho fana'a le ho setse ka PayPal, ho fetoga le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho fana'a le ho f
 
@@ -69,7 +69,7 @@ Fix: Ho fana'a email le fa baithuti ba tsoalo, ho hlalosa bohlokoa haholo hore h
 - A tšepo: Leano la SSO le lefihlelwe le le fihlele ka molao o fihlalang le litšepo hloekileng.
 - A tšepo: Litšepo tsa site e ntlha (blank site identity options) di fihlilwe ho fihla pele ho fihlela go fihla.
 
-## Versa 2.9.0 — Ho fotsa ha le 2026-04-30
+## Versa 2.9.0 — Ho fotsa ha le 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Tshembe: Ho fana'a le ho fetola (export) le ho fana'a (import) tsa site e le kholo ha a fetilwe ka **Tools > Export & Import**.
 - Fetola: ZIP files tse di fetilwe ka sebo sa download se se fanaang ka tsela e ntshwago.
@@ -84,7 +84,7 @@ Fix: Ho fana'a email le fa baithuti ba tsoalo, ho hlalosa bohlokoa haholo hore h
 - A rekhutso: Tour IDs a fetang (normalised) ho underscores ba keys ea user settings.
 - Ho ntšoa: ZipArchive o batla ho fetoga le Alchemy/Zippy ho ba le bohlokoa haholoanyane.
 
-## Verson 2.8.0 — Ho tsoela ka 2026-04-29
+## Verson 2.8.0 — Ho tsoela ka 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Ho fela: A re ka fana ka jumper toggle e fetileng ka setshwantsho sa "Other Options".
 - Ho fela: Kolofana le lula la checkout forms list table, ho fana kolofana la status.

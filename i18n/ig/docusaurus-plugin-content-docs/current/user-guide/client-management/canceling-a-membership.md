@@ -3,7 +3,7 @@ title: Kachie Mgbere
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Cancel Membership (v2)
+# Cancel Membership (v2) {#canceling-a-membership-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến Ultimate Multisite phiên bản 2.x.**_
 

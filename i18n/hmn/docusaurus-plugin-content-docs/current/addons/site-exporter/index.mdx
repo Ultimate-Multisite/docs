@@ -1,0 +1,101 @@
+---
+title: Tus xa tawm site
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Site Exporter {#site-exporter}
+
+## Cov ntsiab lus {#content}
+
+Peb nkag siab tias koj xav tau kev txav tau cov vev xaib me hauv koj lub network mus rau ib qho kev teeb tsa vev xaib nkaus xwb thiab rov qab tau, yog tias koj tus neeg siv khoom txiav txim siab tsiv lawv lub vev xaib. Qhov Site exporter thiab importer txuas ntxiv no ua rau txoj haujlwm no yooj yim dua. Qhov cuab yeej no export thiab import cov vev xaib siv zip files, uas kuj siv tau ua backup.
+
+## Cov yam ntxwv {#features}
+
+* Export thiab Import cov vev xaib
+
+* Interface siv yooj yim
+
+* Tsim backup rau vev xaib
+
+## Cov ntaub ntawv qhia {#documentation}
+**Yuav Export thiab Import ib lub vev xaib li cas**
+
+## Kev teeb tsa {#installation}
+
+1. Upload **ultimate-multisite-site-exporter** mus rau hauv **/wp-content/plugins/** directory
+2. Activate lub plugin ntawm **Plugins** menu hauv WordPress
+3. Ua raws tus Wizard ib kauj ruam zuj zus kom teeb lub plugin
+
+## Phau ntawv qhia kev siv {#usage-guide}
+
+Nrog Ultimate Multisite koj tuaj yeem export ib lub vev xaib ntawm koj lub network lossis import ib lub vev xaib mus rau koj qhov multisite lossis single-site installation.
+
+Txhawm rau pib txoj kev no, mus rau peb nplooj add-ons thiab nruab qhov Ultimate Multisite: Site Exporter & Importer add-on.![Nplooj add-ons](/img/admin/addons-page.png)
+
+![Nplooj add-ons nrog kev xaiv nruab](/img/admin/addons-page.png)
+
+Mus rau koj nplooj Plugins thiab nias **Network Activate** rau qhov add-on uas koj nyuam qhuav nruab.<!-- Screenshot tsis muaj: WP Plugins nplooj qhia Network Activate khawm rau Site Exporter addon -->
+
+Qhov kev xaiv **Export & Import** nrhiav tau hauv Ultimate Multisite menu, nyob sab laug.
+
+<!-- Screenshot tsis muaj: Ultimate Multisite menu qhia Export thiab Import kev xaiv -->
+
+## Yuav export ib lub vev xaib li cas {#how-to-export-a-site}
+
+Txhawm rau export ib lub vev xaib ntawm koj lub network, mus rau **Export & Import** hauv Ultimate Multisite menu thiab, hauv tab **Export Sites**, nias **Generate new Site Export**.
+
+<!-- Screenshot tsis muaj: Export Sites tab nrog Generate new Site Export khawm -->
+
+Nrhiav lub vev xaib uas koj xav export thiab xaiv cov khoom uas koj xav kom muaj nyob hauv file uas export tawm. Koj tuaj yeem suav nrog themes, plugins, thiab uploads. Yog koj lub vev xaib loj dhau, koj tuaj yeem xaiv kom khiav txoj kev export nyob hauv background.<!-- Screenshot tsis muaj: Cov kev xaiv site export nrog site search, include themes/plugins/uploads checkboxes -->
+
+Nias khawm **Export Site**. Koj lub vev xaib uas export tawm yuav muaj nyob hauv daim ntawv **Existing Exports**. Nias khawm **Download ZIP** kom download file. Export ZIPs muaj ib qho `index.php` uas pib tau nws tus kheej thiab `readme.txt`, yog li lawv tuaj yeem raug nruab rau ntawm ib tus host tshiab yam tsis tas xub nruab lwm lub importer plugin.<!-- Screenshot tsis muaj: Existing Exports daim ntawv nrog Download ZIP khawm -->
+
+## Yuav export tag nrho network li cas {#how-to-export-the-whole-network}
+
+Txhawm rau export tag nrho cov subsites ua ke, mus rau **Export & Import** hauv Ultimate Multisite menu thiab siv qhov kev xaiv **Network Export** nyob rau ntawm export screen. Lub archive uas tsim tawm muaj tag nrho cov subsites nyob hauv ib qho ZIP nkaus xwb rau host migrations, staging rebuilds, lossis network-level backups.
+
+Network exports yuav loj tau. Khiav lawv thaum traffic tsawg thiab xyuas kom tseeb tias server muaj chaw khaws ntaub ntawv txaus rau lub archive thiab txhua yam uploads, plugins, thiab themes uas suav nrog.
+
+## Yuav import ib lub vev xaib li cas {#how-to-import-a-site}
+
+Txhawm rau import ib lub vev xaib, mus rau tab **Import a Site** thiab upload .zip file ntawm lub vev xaib uas koj xav import. Koj tuaj yeem hloov URL mus rau ib qho tshiab lossis khaws URL qub cia los ntawm kev tso qhov chaw ntawd tseg kom khoob. Tsis tas li ntawd, koj tuaj yeem kos lub box kom rho tawm .zip file ntawm koj qhov installation tom qab import tas. Ces nias **Begin Import**.
+
+<!-- Screenshot tsis muaj: Import a Site tab nrog zip upload field thiab Begin Import khawm -->
+
+Txoj kev no yuav siv sijhawm me ntsis. Koj yuav pom ib qho import uas tseem tos nyob hauv daim ntawv hauv qab importer.
+
+<!-- Screenshot tsis muaj: Pending import hauv daim ntawv hauv qab importer -->
+
+Koj tuaj yeem nres txoj kev no los ntawm kev nias **Cancel Import**.
+
+<!-- Screenshot tsis muaj: Cancel Import khawm los nres txoj kev import -->
+
+Tom qab txoj kev no tiav, koj lub vev xaib twb muaj nyob hauv koj lub network lawm.
+
+## Yuav import ib lub vev xaib rau hauv ib qho single install li cas {#how-to-import-a-site-on-a-single-install}
+
+Txhawm rau import ib lub vev xaib mus rau koj qhov single install, xub nruab thiab activate lub importer rau ntawm koj lub vev xaib. Koj tuaj yeem nrhiav qhov link download nws nyob hauv exporter tab.
+
+<!-- Screenshot tsis muaj: Exporter tab nrog link los download single-site importer -->
+
+Koj tuaj yeem nrhiav importer hauv **Tools** menu, nyob sab laug, hauv subitem **Export & Import**.
+
+<!-- Screenshot tsis muaj: Single-site Tools menu qhia Export thiab Import submenu -->
+
+Upload .zip file ntawm lub vev xaib uas koj xav import. Koj tuaj yeem hloov URL mus rau ib qho tshiab lossis khaws URL qub cia los ntawm kev tso qhov chaw ntawd tseg kom khoob. Tsis tas li ntawd, koj tuaj yeem kos lub box kom rho tawm .zip file ntawm koj qhov installation tom qab import tas. Ces nias **Begin Import**.
+
+<!-- Screenshot tsis muaj: Single-site import form nrog zip upload thiab Begin Import khawm -->
+
+Txoj kev no yuav siv sijhawm me ntsis. Koj yuav pom ib qho import uas tseem tos nyob hauv daim ntawv hauv qab importer.
+
+<!-- Screenshot tsis muaj: Single-site pending import hauv daim ntawv -->
+
+Koj tuaj yeem nres txoj kev no los ntawm kev nias **Cancel Import**.
+
+<!-- Screenshot tsis muaj: Cancel Import khawm los nres txoj kev import -->
+
+Tom qab txoj kev no tiav lawm, koj lub vev xaib yuav raug hloov los ntawm lub vev xaib uas koj nyuam qhuav import.

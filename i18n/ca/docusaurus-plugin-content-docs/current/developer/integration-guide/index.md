@@ -1,15 +1,17 @@
 ---
 title: Guia d'integració
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guia d'integració
+# Guia d’integració {#integration-guide}
 
-Aquesta guia cobreix patrons d'integració comuns amb Ultimate Multisite, incloent la connexió a serveis externs, la creació de passarelles de pagament personalitzades i la gestió de webhooks.
+Aquesta guia cobreix patrons d’integració habituals amb Ultimate Multisite, incloent-hi la connexió a serveis externs, la creació de passarel·les de pagament personalitzades i la gestió de webhooks.
 
-## Integració amb CRM
+Per a infraestructura de tenant aïllada, consulteu [Integració Multi-Tenancy](./multi-tenancy) per obtenir orientació sobre bootstrap de tenant sobirà, verificació de migracions, SSO i desmuntatge.
 
-Sincronitza les dades dels clients amb el teu CRM quan hi ha clients nous que s'hi cadu.
+## Integració CRM {#crm-integration}
+
+Sincronitzeu les dades de clients amb el vostre CRM quan es registrin clients nous:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integració d'anàlítica
+## Integració d’analítiques {#analytics-integration}
 
-Rastreja esdeveniments clau de negoci durant el cicle de vida del client:
+Feu el seguiment d’esdeveniments empresarials clau al llarg del cicle de vida del client:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Pròxims passos
+## Passos següents {#next-steps}
 
-- [Desenvolupament de passarelles personalitzades](./custom-gateway) — Crea la teva pròpia passarella de pagament
-- [Gestió de webhooks](./webhooks) — Crea punts d'extrama webhook personalitzats
+- [Desenvolupament de passarel·la personalitzada](./custom-gateway) — Creeu la vostra pròpia passarel·la de pagament
+- [Gestió de webhooks](./webhooks) — Creeu endpoints de webhook personalitzats
+- [Integració Multi-Tenancy](./multi-tenancy) — Integreu-vos amb fluxos del cicle de vida de tenant sobirà

@@ -3,17 +3,17 @@ title: Xuất & Nhập
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Xuất & Nhập
+# Xuất & Nhập {#export--import}
 
 Ultimate Multisite 2.9.0 bổ sung công cụ **Xuất & Nhập** dành cho trang đơn dưới mục **Tools > Export & Import**. Bạn nên sử dụng công cụ này khi cần đóng gói một trang WordPress thành tệp ZIP, khôi phục từ tệp ZIP đó, hoặc di chuyển một trang giữa các cài đặt WordPress Ultimate Multisite và trang đơn tương thích.
 
-## Quyền hạn cần thiết
+## Quyền hạn cần thiết {#required-permissions}
 
 Bạn phải đăng nhập với tư cách quản trị viên có thể truy cập menu **Tools** của WordPress trên trang đang được xuất hoặc nhập. Trên mạng lưới multisite, hãy sử dụng tài khoản quản trị viên mạng khi xuất hoặc nhập các trang con từ các công cụ Ultimate Multisite cấp mạng.
 
 Các tệp ZIP xuất sẽ được phục vụ qua một điểm cuối tải xuống đã xác thực, vì vậy hãy giữ phiên quản trị viên hoạt động cho đến khi quá trình tải xuống hoàn tất và không chia sẻ các URL tải xuống được tạo ra này công khai.
 
-## Xuất trang thành tệp ZIP
+## Xuất trang thành tệp ZIP {#exporting-a-site-to-a-zip}
 
 1. Trong khu vực quản trị WordPress của trang bạn muốn sao chép, truy cập **Tools > Export & Import**.
 2. Mở khu vực xuất và chọn trang bạn muốn đóng gói.
@@ -23,7 +23,7 @@ Các tệp ZIP xuất sẽ được phục vụ qua một điểm cuối tải x
 
 Hãy giữ tệp ZIP ở nơi an toàn. Nó có thể chứa nội dung trang, cài đặt, tệp media và các tài sản mã đã chọn.
 
-## Nội dung xuất bao gồm
+## Nội dung xuất bao gồm {#what-the-export-includes}
 
 Một tệp ZIP xuất có thể bao gồm:
 
@@ -34,7 +34,7 @@ Một tệp ZIP xuất có thể bao gồm:
 
 Kích thước tệp ZIP chính xác phụ thuộc vào lượng media, các plugins và themes được chọn, và kích thước các bảng cơ sở dữ liệu của trang.
 
-## Nhập trang từ tệp ZIP
+## Nhập trang từ tệp ZIP {#importing-a-site-from-a-zip}
 
 1. Truy cập **Tools > Export & Import** trên trang WordPress đích.
 2. Mở khu vực nhập và tải lên tệp ZIP được tạo bởi công cụ Export & Import.
@@ -46,7 +46,7 @@ Kích thước tệp ZIP chính xác phụ thuộc vào lượng media, các plu
 
 Trên cài đặt WordPress trang đơn, việc nhập một tệp ZIP sẽ thay thế trang hiện tại bằng trang đã nhập. Hãy tạo bản sao lưu đầy đủ của trang đích trước khi bạn bắt đầu, và tránh khởi động nhiều lần nhập cho cùng một trang cùng lúc.
 
-## Hạn chế và lưu ý tương thích
+## Hạn chế và lưu ý tương thích {#limitations-and-compatibility-notes}
 
 - Các thư mục uploads hoặc thư viện media quá lớn có thể tạo ra các tệp ZIP dung lượng lớn. Vui lòng xác nhận giới hạn tải lên PHP, giới hạn thực thi, dung lượng đĩa, bộ nhớ và cài đặt timeout máy chủ trước khi xuất hoặc nhập các trang lớn.
 - Các thư viện media quá lớn có thể cần được di chuyển trong một khoảng thời gian bảo trì có lưu lượng truy cập thấp.

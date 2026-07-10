@@ -3,11 +3,11 @@ title: ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਦਾ ਹ
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ
+# ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ {#design-system-aesthetics-skill}
 
 **ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ** ਇੱਕ ਗਾਈਡਡ ਪਹੁੰਚ ਹੈ ਜੋ ਤੁਹਾਡੀ ਸਾਈਟ ਦੀ ਵਿਜ਼ੂਅਲ ਪਛਾਣ ਨੂੰ ਸੁਧਾਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਇਹ ਤੁਹਾਨੂੰ ਟਾਈਪੋਗ੍ਰਾਫੀ, ਰੰਗ, ਸਪੇਸਿੰਗ, ਅਤੇ ਮੋਸ਼ਨ ਟੋਕਨ ਬਾਰੇ ਇਕਸਾਰ ਫੈਸਲੇ ਲੈਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਜੋ ਤੁਹਾਡੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਪਰਿਭਾਸ਼ਿਤ ਕਰਦੇ ਹਨ।
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਕੀ ਹੈ?
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਕੀ ਹੈ? {#what-is-design-system-aesthetics}
 
 ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਇੱਕ ਢਾਂਚਾਗਤ ਸਕਿੱਲ ਹੈ ਜੋ ਇਹ ਕਵਰ ਕਰਦਾ ਹੈ:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 ਇਹ ਫੈਸਲੇ ਤੁਹਾਡੇ ਥੀਮ ਦੇ `theme.json` ਫਾਈਲ ਵਿੱਚ ਕੈਪਚਰ ਕੀਤੇ ਜਾਂਦੇ ਹਨ, ਜਿਸ ਨਾਲ ਇੱਕ ਇਕਜੁੱਟ ਵਿਜ਼ੂਅਲ ਸਿਸਟਮ ਬਣਦਾ ਹੈ।
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਕਿਉਂ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ?
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਕਿਉਂ ਵਰਤਣਾ ਚਾਹੀਦਾ ਹੈ? {#why-use-design-system-aesthetics}
 
-### ਇਕਸਾਰਤਾ (Consistency)
+### ਇਕਸਾਰਤਾ (Consistency) {#consistency}
 
 ਇੱਕ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਇਹ ਯਕੀਨੀ ਬਣਾਉਂਦਾ ਹੈ:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ਸਪੇਸਿੰਗ ਇੱਕ ਪੂਰਵ-ਭਾਵਨਾਤਮਕ ਪੈਟਰਨ ਦੀ ਪਾਲਣਾ ਕਰਦੀ ਹੈ
 - ਐਨੀਮੇਸ਼ਨ ਇਕਜੁੱਟ ਮਹਿਸੂਸ ਹੁੰਦੇ ਹਨ
 
-### ਕੁਸ਼ਲਤਾ (Efficiency)
+### ਕੁਸ਼ਲਤਾ (Efficiency) {#efficiency}
 
 ਇੱਕ-ਇੱਕ ਪੰਨੇ 'ਤੇ ਡਿਜ਼ਾਈਨ ਫੈਸਲੇ ਲੈਣ ਦੀ ਬਜਾਏ, ਤੁਸੀਂ:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ਉਹਨਾਂ ਨੂੰ ਹਰ ਜਗ੍ਹਾ ਲਾਗੂ ਕਰਦੇ ਹੋ
 - ਇੱਕ ਮੁੱਲ ਬਦਲ ਕੇ ਗਲੋਬਲੀ ਅਪਡੇਟ ਕਰਦੇ ਹੋ
 
-### ਲਚਕੀਲਾਪਣ (Flexibility)
+### ਲਚਕੀਲਾਪਣ (Flexibility) {#flexibility}
 
 ਤੁਸੀਂ ਇਹ ਕਰ ਸਕਦੇ ਹੋ:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ਵੱਖ-ਵੱਖ ਐਸਥੈਟਿਕਸ ਨਾਲ ਪ੍ਰਯੋਗ ਕਰਨਾ
 - ਵਿਕਸਤ ਹੋਣ ਦੇ ਨਾਲ ਬ੍ਰਾਂਡ ਦੀ ਇਕਸਾਰਤਾ ਬਣਾਈ ਰੱਖਣਾ
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ ਨੂੰ ਟ੍ਰਿਗਰ ਕਰਨਾ
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ ਨੂੰ ਟ੍ਰਿਗਰ ਕਰਨਾ {#triggering-the-design-system-aesthetics-skill}
 
-### ਹੱਥੀਂ ਐਕਟੀਵੇਸ਼ਨ (Manual Activation)
+### ਹੱਥੀਂ ਐਕਟੀਵੇਸ਼ਨ (Manual Activation) {#manual-activation}
 
 ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਇਸ ਸਕਿੱਲ ਨੂੰ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### ਆਟੋਮੈਟਿਕ ਸੁਝਾਅ (Automatic Suggestions)
+### ਆਟੋਮੈਟਿਕ ਸੁਝਾਅ (Automatic Suggestions) {#automatic-suggestions}
 
 ਏਜੰਟ ਤੁਹਾਨੂੰ ਇਹਨਾਂ ਸਥਿਤੀਆਂ ਵਿੱਚ ਸਕਿੱਲ ਵਰਤਣ ਦਾ ਸੁਝਾਅ ਦੇ ਸਕਦੇ ਹਨ:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ਜਦੋਂ ਤੁਸੀਂ ਵਿਜ਼ੂਅਲ ਇਕਸਾਰਤਾ ਸੁਧਾਰਨਾ ਚਾਹੁੰਦੇ ਹੋ
 - ਜਦੋਂ ਤੁਸੀਂ ਆਪਣੀ ਸਾਈਟ ਲਾਂਚ ਕਰਨ ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੁੰਦੇ ਹੋ
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਪ੍ਰਕਿਰਿਆ
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਪ੍ਰਕਿਰਿਆ {#the-design-system-aesthetics-process}
 
-### ਕਦਮ 1: ਟਾਈਪੋਗ੍ਰਾਫੀ
+### ਕਦਮ 1: ਟਾਈਪੋਗ੍ਰਾਫੀ {#step-1-typography}
 
 ਏਜੰਟ ਤੁਹਾਡੇ ਫੌਂਟ ਚੋਣਾਂ ਬਾਰੇ ਪੁੱਛਦਾ ਹੈ:
 
@@ -110,7 +110,7 @@ For your body font:
 - **Weight scale**: ਫੌਂਟ ਵੇਟਸ (regular, medium, bold, ਆਦਿ)
 - **Line height**: ਪੜ੍ਹਨਯੋਗਤਾ ਲਈ ਲਾਈਨਾਂ ਵਿਚਕਾਰ ਸਪੇਸਿੰਗ
 
-### ਕਦਮ 2: ਰੰਗ ਪੈਲੇਟ (Color Palette)
+### ਕਦਮ 2: ਰੰਗ ਪੈਲੇਟ (Color Palette) {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Neutral palette (grays for text, borders, backgrounds):
 - ਸੈਮੈਂਟਿਕ ਰੰਗ (success, warning, error)
 - ਹੋਵਰ ਅਤੇ ਐਕਟਿਵ ਸਟੇਟਸ
 
-### ਕਦਮ 3: ਸਪੇਸਿੰਗ (Spacing)
+### ਕਦਮ 3: ਸਪੇਸਿੰਗ (Spacing) {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ This affects:
 - Scale: xs, sm, md, lg, xl, 2xl
 - ਪੈਡਿੰਗ, ਮਾਰਜਿਨ, ਗੈਪ ਲਈ ਖਾਸ ਮੁੱਲ
 
-### ਕਦਮ 4: ਬਾਰਡਰ ਅਤੇ ਸ਼ੈਡੋਜ਼ (Borders and Shadows)
+### ਕਦਮ 4: ਬਾਰਡਰ ਅਤੇ ਸ਼ੈਡੋਜ਼ (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Shadow depth:
 - ਐਲੀਵੇਸ਼ਨ ਲੈਵਲਾਂ ਲਈ ਸ਼ੈਡੋ ਟੋਕਨ
 - ਬਾਰਡਰ ਵਿਡਥ ਟੋਕਨ
 
-### ਕਦਮ 5: ਐਨੀਮੇਸ਼ਨ ਅਤੇ ਮੋਸ਼ਨ (Motion and Animation)
+### ਕਦਮ 5: ਐਨੀਮੇਸ਼ਨ ਅਤੇ ਮੋਸ਼ਨ (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Specific animations:
 - ਈਜ਼ਿੰਗ ਫੰਕਸ਼ਨ (ease-in, ease-out, ease-in-out)
 - ਆਮ ਇੰਟਰੈਕਸ਼ਨਾਂ ਲਈ ਐਨੀਮੇਸ਼ਨ ਕੀਫਰੇਮਜ਼
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਲਾਗੂ ਕਰਨਾ
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਲਾਗੂ ਕਰਨਾ {#applying-design-system-aesthetics}
 
-### ਆਟੋਮੈਟਿਕ ਐਪਲੀਕੇਸ਼ਨ (Automatic Application)
+### ਆਟੋਮੈਟਿਕ ਐਪਲੀਕੇਸ਼ਨ (Automatic Application) {#automatic-application}
 
 ਜਦੋਂ ਤੁਸੀਂ ਸਕਿੱਲ ਪੂਰਾ ਕਰ ਲੈਂਦੇ ਹੋ, ਤਾਂ ਏਜੰਟ:
 
@@ -218,7 +218,7 @@ Specific animations:
 3. ਨਵੇਂ ਸਿਸਟਮ ਨਾਲ ਮੇਲ ਖਾਂਦੇ ਹੋਣ ਲਈ ਬਲਾਕ ਸਟਾਈਲਜ਼ ਨੂੰ ਰੀਜਨਰੇਟ ਕਰਦਾ ਹੈ
 4. ਅਪਡੇਟ ਕੀਤੇ ਥੀਮ ਨੂੰ ਐਕਟੀਵੇਟ ਕਰਦਾ ਹੈ
 
-### ਹੱਥੀਂ ਐਪਲੀਕੇਸ਼ਨ (Manual Application)
+### ਹੱਥੀਂ ਐਪਲੀਕੇਸ਼ਨ (Manual Application) {#manual-application}
 
 ਤੁਸੀਂ ਸਿੱਧੇ ਤੌਰ 'ਤੇ `theme.json` ਨੂੰ ਵੀ ਐਡਿਟ ਕਰ ਸਕਦੇ ਹੋ:
 
@@ -257,9 +257,9 @@ Specific animations:
 }
 ```
 
-## ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਦੇਖਣਾ
+## ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਦੇਖਣਾ {#viewing-your-design-system}
 
-### ਏਜੰਟ ਨੂੰ ਪੁੱਛੋ
+### ਏਜੰਟ ਨੂੰ ਪੁੱਛੋ {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ Specific animations:
 
 ਏਜੰਟ ਤੁਹਾਡੀ ਟਾਈਪੋਗ੍ਰਾਫੀ, ਰੰਗ, ਸਪੇਸਿੰਗ, ਅਤੇ ਹੋਰ ਟੋਕਨ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰੇਗਾ।
 
-### theme.json ਦੇਖਣਾ
+### theme.json ਦੇਖਣਾ {#view-themejson}
 
 ਰॉ ਟੋਕਨ ਪਰਿਭਾਸ਼ਾ ਦੇਖਣ ਲਈ `/wp-content/themes/[theme-name]/theme.json` ਨੂੰ ਇੱਕ ਟੈਕਸਟ ਐਡੀਟਰ ਵਿੱਚ ਖੋਲ੍ਹੋ।
 
-## ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਅਪਡੇਟ ਕਰਨਾ
+## ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਅਪਡੇਟ ਕਰਨਾ {#updating-your-design-system}
 
-### ਜਲਦੀ ਅਪਡੇਟ (Quick Updates)
+### ਜਲਦੀ ਅਪਡੇਟ (Quick Updates) {#quick-updates}
 
 ਏਜੰਟ ਨੂੰ ਖਾਸ ਬਦਲਾਅ ਬਾਰੇ ਪੁੱਛੋ:
 
@@ -299,7 +299,7 @@ Specific animations:
 "Change the heading font to a serif"
 ```
 
-### ਪੂਰਾ ਰੀਡਿਜ਼ਾਈਨ (Full Redesign)
+### ਪੂਰਾ ਰੀਡਿਜ਼ਾਈਨ (Full Redesign) {#full-redesign}
 
 ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਐਸਥੈਟਿਕਸ ਸਕਿੱਲ ਨੂੰ ਦੁਬਾਰਾ ਚਲਾਓ:
 
@@ -309,7 +309,7 @@ Specific animations:
 
 ਇਹ ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਮੌਜੂਦਾ ਮੁੱਲਾਂ ਨਾਲ ਸ਼ੁਰੂ ਕਰਦੇ ਹੋਏ, ਸਾਰੇ ਫੈਸਲਿਆਂ ਵਿੱਚ ਦੁਬਾਰਾ ਗਾਈਡ ਕਰੇਗਾ।
 
-### ਅੰਸ਼ਕ ਅਪਡੇਟ (Partial Updates)
+### ਅੰਸ਼ਕ ਅਪਡੇਟ (Partial Updates) {#partial-updates}
 
 ਖਾਸ ਪਹਿਲੂਆਂ ਨੂੰ ਅਪਡੇਟ ਕਰੋ:
 
@@ -317,15 +317,15 @@ Specific animations:
 "Just update the color palette, keep everything else"
 ```
 
-## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਦੀਆਂ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰੈਕਟਿਸਾਂ (Best Practices)
+## ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਦੀਆਂ ਸਭ ਤੋਂ ਵਧੀਆ ਪ੍ਰੈਕਟਿਸਾਂ (Best Practices) {#design-system-best-practices}
 
-### ਇਕਸਾਰਤਾ (Consistency)
+### ਇਕਸਾਰਤਾ (Consistency) {#consistency-1}
 
 - ਹਰ ਜਗ੍ਹਾ ਇੱਕੋ ਟੋਕਨ ਵਰਤੋ
 - ਇੱਕ-ਇੱਕ ਵਾਰ ਦੇ ਰੰਗ ਜਾਂ ਸਾਈਜ਼ ਨਾ ਬਣਾਓ
 - ਮੁੱਲਾਂ ਨੂੰ ਹਾਰਡਕੋਡ ਕਰਨ ਦੀ ਬਜਾਏ ਟੋਕਨ ਦਾ ਹਵਾਲਾ ਲਓ
 
-### ਨਾਮਕਰਨ (Naming)
+### ਨਾਮਕਰਨ (Naming) {#naming}
 
 ਸਪੱਸ਼ਟ, ਸੈਮੈਂਟਿਕ ਨਾਮ ਵਰਤੋ:
 
@@ -335,7 +335,7 @@ Specific animations:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### ਸਕੇਲੇਬਿਲਟੀ (Scalability)
+### ਸਕੇਲੇਬਿਲਟੀ (Scalability) {#scalability}
 
 ਆਪਣੇ ਸਿਸਟਮ ਨੂੰ ਸਕੇਲ ਕਰਨ ਲਈ ਡਿਜ਼ਾਈਨ ਕਰੋ:
 
@@ -343,7 +343,7 @@ Specific animations:
 - ਮਨਮਾਨੇ ਮੁੱਲਾਂ ਦੀ ਬਜਾਏ ਸਕੇਲ ਬਣਾਓ (xs, sm, md, lg, xl)
 - ਭਵਿੱਖ ਦੇ ਜੋੜਾਂ ਲਈ ਯੋਜਨਾ ਬਣਾਓ
 
-### ਦਸਤਾਵੇਜ਼ੀਕਰਨ (Documentation)
+### ਦਸਤਾਵੇਜ਼ੀਕਰਨ (Documentation) {#documentation}
 
 ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਨੂੰ ਦਸਤਾਵੇਜ਼ੀਕਰਨ ਕਰੋ:
 
@@ -351,9 +351,9 @@ Specific animations:
 - ਹਰੇਕ ਟੋਕਨ ਕਦੋਂ ਵਰਤਣਾ ਹੈ
 - ਛੋਟੇ-ਮੋਟੇ ਅਪਵਾਦ ਅਤੇ ਕਿਨਰੇ ਕੇਸ
 
-## ਆਮ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਪੈਟਰਨ (Common Design System Patterns)
+## ਆਮ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਪੈਟਰਨ (Common Design System Patterns) {#common-design-system-patterns}
 
-### ਮਾਡਰਨ ਮਿਨੀਮਾਲਿਸਟ (Modern Minimalist)
+### ਮਾਡਰਨ ਮਿਨੀਮਾਲਿਸਟ (Modern Minimalist) {#modern-minimalist}
 
 - ਸੈਨਸ-ਸੈਰਿਫ ਟਾਈਪੋਗ੍ਰਾਫੀ (Inter, Helvetica)
 - ਸੀਮਤ ਰੰਗ ਪੈਲੇਟ (2-3 ਰੰਗ)
@@ -361,7 +361,7 @@ Specific animations:
 - ਸੂਖਮ ਸ਼ੈਡੋਜ਼
 - ਸੁਹਾਵਣ, ਤੇਜ਼ ਐਨੀਮੇਸ਼ਨ
 
-### ਗਰਮ ਅਤੇ ਦੋਸਤਾਨਾ (Warm and Friendly)
+### ਗਰਮ ਅਤੇ ਦੋਸਤਾਨਾ (Warm and Friendly) {#warm-and-friendly}
 
 - ਸੈਰਿਫ ਅਤੇ ਸੈਨਸ-ਸੈਰਿਫ ਦਾ ਮਿਸ਼ਰਣ
 - ਗਰਮ ਰੰਗ ਪੈਲੇਟ (ਨਾਰੰਝਾ, ਗਰਮ ਗ੍ਰੇ)
@@ -369,7 +369,7 @@ Specific animations:
 - ਨਰਮ ਸ਼ੈਡੋਜ਼
 - ਖੇਡਣ ਵਾਲੇ ਐਨੀਮੇਸ਼ਨ
 
-### ਪ੍ਰੋਫੈਸ਼ਨਲ ਕਾਰਪੋਰੇਟ (Professional Corporate)
+### ਪ੍ਰੋਫੈਸ਼ਨਲ ਕਾਰਪੋਰੇਟ (Professional Corporate) {#professional-corporate}
 
 - ਸਾਫ਼ ਸੈਨਸ-ਸੈਰਿਫ (Roboto, Open Sans)
 - ਐਕਸੈਂਟ ਰੰਗ ਵਾਲਾ ਨਿਊਟਰਲ ਪੈਲੇਟ
@@ -377,7 +377,7 @@ Specific animations:
 - ਘੱਟ ਸ਼ੈਡੋਜ਼
 - ਸੂਖਮ ਟ੍ਰਾਂਜ਼ੀਸ਼ਨ
 
-### ਰਚਨਾਤਮਕ ਅਤੇ ਬੋਲਡ (Creative and Bold)
+### ਰਚਨਾਤਮਕ ਅਤੇ ਬੋਲਡ (Creative and Bold) {#creative-and-bold}
 
 - ਵਿਲੱਖਣ ਟਾਈਪੋਗ੍ਰਾਫੀ
 - ਬੋਲਡ ਰੰਗ ਪੈਲੇਟ
@@ -385,7 +385,7 @@ Specific animations:
 - ਮਜ਼ਬੂਤ ਸ਼ੈਡੋਜ਼
 - ਨੋਟਿਸਯेबल ਐਨੀਮੇਸ਼ਨ
 
-## ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ (Troubleshooting)
+## ਸਮੱਸਿਆ ਨਿਪਟਾਰਾ (Troubleshooting) {#troubleshooting}
 
 **ਮੇਰੇ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਬਦਲਾਅ ਦਿਖ ਨਹੀਂ ਰਹੇ**
 - ਆਪਣੇ ਬ੍ਰਾਊਜ਼ਰ ਕੈਸ਼ ਨੂੰ ਸਾਫ਼ ਕਰੋ
@@ -403,7 +403,7 @@ Specific animations:
 - ਪਿਛਲੇ ਮੁੱਲਾਂ ਲਈ theme.json ਨੂੰ ਹੱਥੀਂ ਐਡਿਟ ਕਰੋ
 - ਵੱਖਰੇ ਚੋਣਾਂ ਨਾਲ ਸਕਿੱਲ ਨੂੰ ਦੁਬਾਰਾ ਚਲਾਓ
 
-## ਅਗਲੇ ਕਦਮ (Next Steps)
+## ਅਗਲੇ ਕਦਮ (Next Steps) {#next-steps}
 
 ਆਪਣਾ ਡਿਜ਼ਾਈਨ ਸਿਸਟਮ ਪਰਿਭਾਸ਼ਿਤ ਕਰਨ ਤੋਂ ਬਾਅਦ:
 

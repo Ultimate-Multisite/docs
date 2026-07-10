@@ -3,13 +3,13 @@ title: Plan'ı Düşürme
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planı Düşürmek (v2)
+# Planı Düşürmek (v2) {#downgrading-a-plan-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x'i kapsamaktadır.**_
 
 Plan veya abonelik düşürmek, müşterilerinizin bütçeleri kısıtlıysa veya alt siteleri çalıştırmak için çok fazla kaynağa ihtiyaç duymayacaklarına karar verdilerse yapabilecekleri yaygın bir işlemdir.
 
-## Planı nasıl düşürürsünüz
+## Planı nasıl düşürürsünüz {#how-to-downgrade-a-plan}
 
 Müşterileriniz, alt site admin dashboard'larına giriş yaparak ve hesap sayfasındaki **Change** (Değiştir) butonuna tıklayarak planlarını istediği zaman düşürebilirler.
 
@@ -25,7 +25,7 @@ Devam etmek için kullanıcının yapması gereken tek şey **Complete Checkout*
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Kullanıcı planını düşürdüğünde ne olur
+### Kullanıcı planını düşürdüğünde ne olur {#what-happens-when-a-user-downgrades-their-plan}
 
 Planı düşürmenin, kullanıcının alt sitesindeki mevcut yapılandırmayı değiştirmediğini belirtmek önemlidir.
 
@@ -37,7 +37,7 @@ Planın belirlediği limiti aşan gönderiler için 3 farklı seçeneğiniz var:
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ödemeye ne olur
+### Ödemeye ne olur {#what-happens-to-the-payment}
 
 Sürüm 2.0'da, ödeme açısından artık bir oranlama (proration) ayarlamasına gerek yoktur.
 

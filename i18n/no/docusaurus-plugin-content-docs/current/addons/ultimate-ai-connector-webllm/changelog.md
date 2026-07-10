@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Endringslogg
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM Endringslogg
+# Ultimate AI Connector for WebLLM Endringslogg {#ultimate-ai-connector-for-webllm-changelog}
 
-## Versjon 1.1.0 — Utgitt 2026-04-09
+## Versjon 1.1.0 — Utgitt 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Nytt: Flytende chat-widget med statusindikator i admin-baren — enhver innlogget bruker kan gi prompt til LLM-en i nettleseren direkte fra front-enden.
 * Nytt: SharedWorker runtime — MLC-motoren kjører nå i en SharedWorker, slik at flere faner deler én GPU-økt i stedet for å kjempe om den.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Fix: Knytter WebLLM til filteret wpai_preferred_text_models, slik at AI Experiments-funksjonen rutes til nettlesermotoren når en modell er konfigurert.
 * Forbedret: Cache-busting, innholdsnormalisering og maskinvare-referanse-fikser som ble avdekket under ende-til-ende-testing.
 
-## Versjon 1.0.0 — Første utgivelse
+## Versjon 1.0.0 — Første utgivelse {#version-100--initial-release}

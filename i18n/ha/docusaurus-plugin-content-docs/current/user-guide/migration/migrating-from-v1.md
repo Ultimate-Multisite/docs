@@ -3,9 +3,9 @@ title: Tawale daga V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Gaba da Shiga daga V1
+# Gaba da Shiga daga V1 {#migrating-from-v1}
 
-## Ultimate Multisite ya canza daga yaron farkinsa na 1.x zuwa yaron 2.x.
+## Ultimate Multisite ya canza daga yaron farkinsa na 1.x zuwa yaron 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite vershon 2.0 kuma da wata, tana gina sabon tsari (complete rewrite) na codebase, wato akwai ƙaramin abubuwan da suka dace tsakanin wannan farkon da na sabo. Don haka, lokacin da kake mai motsawa daga 1.x zuwa 2.x, dole ne ka tura data ɗinka zuwa format da sabbin hanyoyin iya fahimarsa.
 
@@ -15,7 +15,7 @@ Wannan bayanin yana ba ka san yadda migrator ke aiki, abin da za ka yi idan akwa
 
 _**MUHIMMI: Kafin ka fara motsawa daga vershon 1.x zuwa vershon 2.0, ka tabbata cewa ka yi backup na database ɗinka**_
 
-## Matakan na farko
+## Matakan na farko {#first-steps}
 
 Mataki na farko shi ne da wajen wadda za ka shiga fayil (plugin) .zip kuma ka install vershon 2.0 a dashboard na gudanarwa (admin dashboard) na ƙungiyarka.
 
@@ -49,19 +49,19 @@ _**MUHIMMI:** Idan ka samu Ultimate Multisite 1.x a cikin Multisite ɗinka, za k
 
 پس از فعال شدن لایسنس، می‌توانید نصب واقعی را با کلیک روی **Install** (نصب) در صفحه بعدی شروع کنید. این کار فایل‌ها و پایگاه داده لازم برای عملکرد نسخه ۲.۰ را به صورت خودکار ایجاد می‌کند.
 
-## Ayy, Yanzu, Migrasyon
+## Ayy, Yanzu, Migrasyon {#now-the-migration}
 
 Migrator wani ƙaramin tsaro ne da aka ajiye shi don ya bincika dukkan multisite ɗinka don tabbatar da cewa dukkan bayanai na Ultimate Multisite za su iya migratar ba tare da wata matsala ba. Da kyau, danna maɓallin **Run Check** (Gudanar da Bincike) don fara wannan tsarin.
 
 Ba daga cikin zaɓuɓɓuka biyo binciken, za ka samu sakamakon ya zama **da** wata matsala ko **ba tare da** wata matsala ba.
 
-### Da Matsala
+### Da Matsala {#with-error}
 
 Idan ka samu saƙo na matali (error message), dole ne ka tuntuɓi ƙungiyar tallafin mu don su taimaka maka a gyara wannan matalawa. Ka tabbatar ka **bincika log na matalan** (error log) lokacin da kake samar da wani rorin tallafi (ticket). Za ka iya sake saukar da log ko kuma ka danna link ɗin da ke nuna "contact our support team". Zai buɗe wajen taimako (help widget) a gefen hagu na shafin ka tare da bayanan da aka shirya maka, waɗanda suna ciki log-log na matalan a ƙarƙashin bayanin.
 
 _**Daga yadda tsarin ya samu matsala, ba za ka iya ci gaba da migratar zuwa wajen farko (version 2.0). Za ka iya saucaci (roll back) zuwa farkon farko (version 1.x) don ci gaba da aiki na shafin ku har da an gyara matalawa.**_
 
-### Ba Da Matsala
+### Ba Da Matsala {#without-error}
 
 Idan tsarin ba ya samu wata matsala, za ka ga saƙo na nasara (success message) da maɓallin **Migrate** (Migratar) a ƙasan ƙasa wanda zai ba ka damar ci gaba da migratar. A wannan shafin, za a gaya maka ka yi saucaci (backup) ga database ɗinka kafin ka ci gaba, wanda muke ba ka shawarar sosai. Danna **Migrate** idan kana da backup.
 

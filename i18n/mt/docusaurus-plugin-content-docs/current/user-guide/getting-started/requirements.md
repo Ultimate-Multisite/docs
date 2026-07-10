@@ -3,11 +3,11 @@ title: Preżumidji
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisiti Ultimi Multisite
+# Requisiti Ultimi Multisite {#ultimate-multisite-requirements}
 
 Il primu aspettu tal-tergħu qabel ma ti kompristi Ultimate Multisite huwa li għalfej il-requisiti biex tgħmli l-plugin tiegħek jifuna. B'saħħa, għandna biss pquċinu ħafna requisiti bżonnijiet biex tgħmli l-Ultimate Multisite jifuna: **domen name**, fornitur ta hosting tajba u installazzjoni WordPress **Multisite**. Seħħa, huwa da kien il-għadd li għandek!
 
-## Domen Name
+## Domen Name {#domain-name}
 
 Prima, nħalli l-domen name.
 
@@ -17,7 +17,7 @@ Il-plugin tiegħene jipprovide servizzi ta abbonament, kolezzjoni tal-pagamenti,
 
 Ogni niche li tixxjoq tista' tidir ma' plugin tiegħene fin ma tivendi siti bħala servizz! Assigurja li tgħżel domene name li jidher u jkonkordanixxi mal-plan tal-negozju tiegħek.
 
-## Fornitur ta Hosting
+## Fornitur ta Hosting {#hosting-provider}
 
 Meta għandek domene name xabbir li jirrappreżenta is-niche u l-negozju tiegħek, għandek bżonn tgħżel fornitur ta hosting tajba biex ti hosti n-network tiegħek ma' Ultimate Multisite. Hu l-opzioni tajba fuq is-merkat. Il-fornituri ta hosting xiin jidħol tajjeb ma' Ultimate Multisite, li jista' jkollu impatto diċidenti dwar x'in qed tgħmli.
 
@@ -26,7 +26,7 @@ Ultimate Multisite għandu jgħidu fuq konoborju hosting. L-għadd huwa li xi fo
 
 Meta iżwi għall-specifikazzjonijiet tal-server, ma hemm formula speċifika biex jkun, it-tajjeb jaqrob mill-funzjonijiet u l-għażla ta networks tiegħek. Shared hosting jista' tkun bixibbir aħjar bħal inċipjenti, iżda meta networks tiegħek jibdew tkaslu, għad tħtieġ biex tkun VPS dedikata.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Morn, nħobb nħaddem qليل dwar l-installazzjoni ta WordPress Multisite.
 

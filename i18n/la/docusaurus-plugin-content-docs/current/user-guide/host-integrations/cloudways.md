@@ -3,18 +3,18 @@ title: Integratio Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Integrare Cloudways
+# Integrare Cloudways {#cloudways-integration}
 
-## Visio
+## Visio {#overview}
 Cloudways est platforma d'hébergement cloud gérée quae te permittit deplurare sita WordPress in diversis provideribus cloud ut DigitalOcean, AWS, Google Cloud, et al. Haec integrare permittit sincronizandum automaticum domini et gestionem certificatibus SSL inter Ultimate Multisite et Cloudways.
 
-## Caritatis
+## Caritatis {#features}
 - Sincronizatio automatica dominii
 - Gestionem certificatorum SSL
 - Supportum ad domina extra
 - Validatio DNS pro certificatibus SSL
 
-## Requisitos
+## Requisitos {#requirements}
 Quod constants sequentia in file tuo `wp-config.php` definire debes:
 
 ```php
@@ -30,16 +30,16 @@ Optionem, etiam definire possis:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'lista_domini_separata_per_virgulam');
 ```
 
-## Instructiones Configurandi
+## Instructiones Configurandi {#setup-instructions}
 
-### 1. Obtine Credentias API Cloudways Tuum
+### 1. Obtine Credentias API Cloudways Tuum {#1-get-your-cloudways-api-credentials}
 
 1. Accede ad dashboard tuum Cloudways
 2. Ve ad "Account" > "API Keys" (Contio)
 3. Genera una API key si non habes iam una
 4. Copia te-mail et API key tui
 
-### 2. Obtine IDs Server et Application Tuum
+### 2. Obtine IDs Server et Application Tuum {#2-get-your-server-and-application-ids}
 
 1. In dashboard tuum Cloudways, ve ad "Servers" (Serveres)
 2. Selecta server ubi multisite WordPress tuum hospitatur
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'lista_domini_separata_per_virgulam');
 4. Ve ad "Applications" et selecta application WordPress tuam
 5. ID Application est visibilis in URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Add Constants in wp-config.php
+### 3. Add Constants in wp-config.php {#3-add-constants-to-wp-configphp}
 
 Add constants sequentia in file tuo `wp-config.php`:
 
@@ -70,7 +70,7 @@ No añadas `*.tu-red.com` (o cualquier patrón de subdominio de tu propia red) a
 a continuación para saber por qué esto impide la emisión de certificados SSL por inquilino.
 :::
 
-### 4. Habilitar la Integración
+### 4. Habilitar la Integración {#4-enable-the-integration}
 
 1. En tu administración de WordPress, ve a Ultimate Multisite > Settings (Configuración)
 2. Navega a la pestaña "Domain Mapping" (Mapeo de Dominios)
@@ -78,9 +78,9 @@ a continuación para saber por qué esto impide la emisión de certificados SSL 
 4. Habilita la integración de Cloudways
 5. Haz clic en "Save Changes" (Guardar Cambios)
 
-## Cómo Funciona
+## Cómo Funciona {#how-it-works}
 
-### Sincronización de Dominios
+### Sincronización de Dominios {#domain-syncing}
 
 Cuando se mapea un dominio en Ultimate Multisite:
 
@@ -91,7 +91,7 @@ Cuando se mapea un dominio en Ultimate Multisite:
 
 Nota: La API de Cloudways requiere enviar la lista completa de dominios cada vez, no solo añadir o eliminar dominios individuales.
 
-### Gestión de Certificados SSL
+### Gestión de Certificados SSL {#ssl-certificate-management}
 
 Después de sincronizar los dominios:
 
@@ -101,7 +101,7 @@ Después de sincronizar los dominios:
 
 La integratio semper pete certomata Let's Encrypt **standard** (non-wildcard) ab Cloudways. Si in `WU_CLOUDWAYS_EXTRA_DOMAINS` praesumatur pattern wildcard, antequam petitio SSL leading `*.` est truncata — wildcat ipsa numquam per hanc integration instalatur. Ut certatum wildcard in Cloudways uti possumus, debet manualiter instalare, sed talis operatio obstat issuance Let's Encrypt pro dominis customis mappatis (vide periculum infra).
 
-## Domini Extra
+## Domini Extra {#extra-domains}
 
 Constantia `WU_CLOUDWAYS_EXTRA_DOMAINS` te permittit specicare domina **externa** additionales quae semper in lista alias applicationis Cloudways conservari debent. Usus eius est ad:
 
@@ -110,13 +110,13 @@ Constantia `WU_CLOUDWAYS_EXTRA_DOMAINS` te permittit specicare domina **externa*
 
 **Non** usus hoc constantiae pro subdomain wildcard network tuam (e.g. `*.your-network.com`). Vide periculum SSL wildcard infra.
 
-## Importante — Periculum SSL Wildcard
+## Importante — Periculum SSL Wildcard {#important--wildcard-ssl-pitfall}
 
 Error communis cum sequendis configuration default Cloudways est ad additionem wildcat tunc in `WU_CLOUDWAYS_EXTRA_DOMAINS`, aut manualiter instalationem certatus SSL wildcard Cloudways pro illo wildcat.
 
 **Si hoc facis, Cloudways negabit issuance certificatuum Let's Encrypt pro dominis customis per-tenant quibus Ultimate Multisite mappatur.** Cloudways certificatem SSL activum in applicatione semper substituit, et certificate wildcard preexistentium in applicatione obstat issuance Let's Encrypt pro dominio per dominio ad quo integrationem dependet.
 
-### Configuratio SSL Cloudways recomendata pro network Ultimate Multisite
+### Configuratio SSL Cloudways recomendata pro network Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. In tabe **SSL Certificate** applicationis Cloudways, install certificatum **standard Let's Encrypt** quod solum `your-network.com` et `www.your-network.com` copiat, — **non** wildcard.
 2. Ne in `WU_CLOUDWAYS_EXTRA_DOMAINS` ponas `*.your-network.com` (vel quamcum pattern subdomini proprii network tuum). Illud constantem reserva solum ad domina **externa**.
@@ -124,20 +124,20 @@ Error communis cum sequendis configuration default Cloudways est ad additionem w
 
 Si dominae customes tuorum tenantium sine SSL accidunt, verifica tabulam SSL applicationis Cloudways. Si certificat wildcard in ea activus est, removem, re-emitte certificatum standard Let's Encrypt solum ad dominum network principalem, et remove de omnibus entry clausulis wildcard ex `WU_CLOUDWAYS_EXTRA_DOMAINS`. Deinde re-trigger domain mapping (vel pati ad proximo) et integration incipiet emittere certificat per domenam.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Problematum Connectionis API
+### Problematum Connectionis API {#api-connection-issues}
 - Verifica quod tua email et key API sunt rectae
 - Verifica quod ID server et applicationis tuus sunt recti
 - Assura quod account Cloudways tuus habet necessarias permissiones
 
-### Problematicae Certificatus SSL
+### Problematicae Certificatus SSL {#ssl-certificate-issues}
 - Cloudways exigit, ut dominae habent registros DNS validos qui ad server tuum ponunt antequam certificata SSL emittant.
 - Integra valida registros DNS antequam certomata SSL petat.
 - Si certificata SSL non emittuntur, verifica si dominae tua sunt propriamque modo ad adressam IP server tuus ponent.
 - **Domini custom per tenant in stasis sine SSL?** Verifica tabulam Certificatus SSL applicationis Cloudways. Si certificat wildcard (manualiter instalatus, vel qui `*.your-network.com` coprit) est activus, Cloudways non emittent certificata Let's Encrypt pro dominis custom individuis mappatis. Substitue eum certificate Let's Encrypt standard quod solum domen network principal (`your-network.com`, `www.your-network.com`) coprit et remove quibusque entries wildcard ex `WU_CLOUDWAYS_EXTRA_DOMAINS`. Deinde re-trigger domini mapping (vel expecta pro uno successivo) et integra pete certomata per domenam.
 
-### Dominium Non Aditum
+### Dominium Non Aditum {#domain-not-added}
 - Verifica logs Ultimate Multisite ad quosdam missagium erroris.
 - Verificae si dominium iam in Cloudways additum est.
 - Assura te quod plan Cloudways tuus numerum domiorum quibus additis sustinet.

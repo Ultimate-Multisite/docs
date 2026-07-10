@@ -1,15 +1,17 @@
 ---
 title: Průvodce integrací
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Průvodce integrací
+# Průvodce integrací {#integration-guide}
 
-Tento průvodce pokrývá běžné vzory integrací s Ultimate Multisite, včetně připojení k externím službám, vytváření vlastních brán platby a zpracování webhooků.
+Tento průvodce pokrývá běžné vzory integrace s Ultimate Multisite, včetně připojení k externím službám, vytváření vlastních platebních bran a zpracování webhooků.
 
-## Integrace s CRM
+Pro izolovanou infrastrukturu tenantů viz [Integrace multi-tenancy](./multi-tenancy) pro pokyny k bootstrapu suverénních tenantů, ověření migrace, SSO a teardownu.
 
-Synchronizujte data zákazníků do vašeho CRM, když se zaregistruje nový zákazník:
+## Integrace CRM {#crm-integration}
+
+Synchronizujte zákaznická data do svého CRM, když se zaregistrují noví zákazníci:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -24,14 +26,14 @@ function sync_customer_to_crm($customer) {
         'plan' => $customer->get_membership()->get_plan()->get_name()
     ]);
 
-    // Uložení ID CRM pro budoucí použití
+    // Store CRM ID for future reference
     $customer->add_meta('crm_contact_id', $crm_api->get_last_contact_id());
 }
 ```
 
-## Integrace s analýzou dat
+## Integrace analytiky {#analytics-integration}
 
-Sledujte klíčové obchodní události po celém životním cyklu zákazníka:
+Sledujte klíčové obchodní události napříč životním cyklem zákazníka:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Další kroky
+## Další kroky {#next-steps}
 
-- [Vývoj vlastního gatewayu](./custom-gateway) — Vytvořte vlastní bránu platby
-- [Zpracování webhooků](./webhooks) — Vytvořte vlastní koncové body pro webhooky
+- [Vývoj vlastní brány](./custom-gateway) — Vytvořte si vlastní platební bránu
+- [Zpracování webhooků](./webhooks) — Vytvořte vlastní endpointy webhooků
+- [Integrace multi-tenancy](./multi-tenancy) — Integrujte se s toky životního cyklu suverénních tenantů

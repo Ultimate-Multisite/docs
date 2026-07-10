@@ -3,11 +3,11 @@ title: Nkwado Nkwado
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Overwàda Dashboard Overview
+# Overwàda Dashboard Overview {#dashboard-overview}
 
 Ultimate Multisite na ọkụ **Dashboard** nwere ike ịrụ ọrụ n'ime menyu Ultimate Multisite, ma ọ bụrụ na ị chọrọ widget ndị dị n'ime Network Dashboard ahụ, ị nwere ike ịchukwu (add) widget-ahụ. Atụkọ a na-eji ịgbagba ihe ị ga ịhụ n'ebe obere ahụ.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite na-agbanwe widget ndị dị mkpa n'ime dashboard nke network ahụ, nke si nwere n'ebe **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Nke a bụ ihe ọ bụ na ma ọ bụ ihe widget ọ bụla na-agbanwe:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Maka network dashboard na-ekwu ihe dị obere na network ahụ, maka Ultimate Multisite dashboard (n'ime top level menyu Ultimate Multisite) na-ekwu ihe nwere n'ime service ahụ.
 

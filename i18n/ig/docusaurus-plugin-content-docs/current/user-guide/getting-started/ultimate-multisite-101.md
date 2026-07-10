@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite na-plugin WordPress nke na-eme ka ị nwere ike ịdepụta WaaS (Websites as a Service) ma ọ bụ Websites kama A Service maka ndị khách. Ka anyị abụghị ịgwo n'obi na ịmụ ihe Ultimate Multisite ga-arị ịnweta ụlọ gị na ndị khách gị, onweghị ihe njikọ nke abụgbara dị mma nke a bụ ihe niile anyị ga-agbaje.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Ọ nwere ike ịmara ọtụtụ anyị na-install WordPress standard (stock). Ị chụrụ ya eziokwu na control panel nke hosting provider gị, ma ọ bụ, maka ndị nwere ọchịchị, ị nwere ike ịset web server na database baru, download core files na comدأ ihe ịgba ọrụ.
 
@@ -15,13 +15,13 @@ Ultimate Multisite na-plugin WordPress nke na-eme ka ị nwere ike ịdepụta W
 
 Ime n'ụm ihe ndị dị mba anyị gbanwe ihe a bụ ịhụ ụfọdụ terminoloji ọ bụla dị n'ime dokumentation Ultimate Multisite ma ọ bụ n'ime cộnguntiy WordPress.
 
-### The Network (Ọnụlọ)
+### The Network (Ọnụlọ) {#the-network}
 
 N'ime WordPress, multisite network bụ enyi ebe onye chụrụ subsites mgbe ọ nwere ike ịgwụmere site ọkụ (dashboard) Ọzọ. Ọ bụrụ na ịchịta multisite network dị iche iche n'ime ndị nwere ike ịnwụ, ọ bụ na ihe a na-eme dị iche iche n'ime hosting providers, onweghị ya anọchịrị, ọ bụ na ihe a na-eme dị iche iche n'ime wp-config.php file ka iji le WordPress ịmata na ọ na na-arụrụ n'ebe ahụ.
 
 Nwere ike ịhụnanya ụfọdụ dị iche iche n'ime multisite network ma ọ bụ instalasiya WordPress standalone, nke anyị ga-eme ihe a dị n'ime.
 
-#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory)
+#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Onye nkwado mgbe ị chọrọ bụkwa na instalasiya multisite ahụ ga-arụrụ na _subdirectories_ (subdirectories) ma ọ bụ _subdomains_ (subdomains). Ultimate Multisite na-agbanwe dị mma na obaaka ndị a, mana nwere ụfọdụ dị iche iche n'ime nkuchi anọchịrị n'ime architecture ahụ.
 
@@ -37,7 +37,7 @@ Trong cấu hình _subdomain_, việc sử dụng chứng chỉ SSL wildcard là
 
 Mặc dù có những lựa chọn khác, nhưng chúng thường bị giới hạn về phạm vi và ứng dụng và đòi hỏi thêm cấu hình cũng như cân nhắc về sự phù hợp của chúng.
 
-#### Plugins và Themes
+#### Plugins và Themes {#plugins-and-themes}
 
 WordPress mang lại điều gì thì nó cũng lấy đi cả, ít nhất là từ góc độ khách hàng. Trong một cài đặt WordPress độc lập, nếu quản trị viên trang web cài một plugin xấu hoặc không cập nhật bản cài đặt của họ, thì nạn nhân duy nhất và tổn thất duy nhất của hành động này chính là bản thân họ. Tuy nhiên, khi một quản trị viên trang web cài một plugin xấu trên một cài đặt multisite, nó sẽ tạo ra nạn nhân cho mọi trang được cài đặt trong mạng lưới đó.
 
@@ -45,7 +45,7 @@ Bởi vì lý do này, khi bạn cấu hình nó như một WordPress multisite,
 
 Ở mức độ này, quản trị viên mạng chịu trách nhiệm cài đặt plugin và theme vào mạng và ủy quyền cho phép sử dụng các plugin và theme đó trên các trang mạng. Quản trị viên trang web không thể cài đặt plugin và theme hoặc truy cập các plugin và theme không được gán cho trang của họ.
 
-#### Người dùng và Quản trị viên
+#### Người dùng và Quản trị viên {#users-and-administrators}
 
 Trong một WordPress Multisite, tất cả các trang mạng đều chia sẻ cùng một cơ sở dữ liệu và do đó chia sẻ cùng một người dùng, vai trò và khả năng (roles and capabilities). Cách dễ hiểu nhất để hình dung điều này là tất cả người dùng đều là thành viên của mạng chứ không phải của một trang cụ thể nào.
 
@@ -57,13 +57,13 @@ Nhắc lại điều trên, mặc dù các tài khoản người dùng dường 
 
 Makaa, iji bụ na ọ bụ ebe ọ bụla n'ụzọ ọrụ enterprise systems, a dị mma ịghọta ihe ọ bụ na ebe ọnụ ọ bụla ịregistre ndị ama (user registration) na akaụkọ ọrịre (authentication). Na ọ bụ na WordPress standalone installations (nke a ịdị mma ịgwara admin user), ihe a dị mma ịghọta.
 
-#### Media
+#### Media {#media}
 
 Ndeewo, ebe sites ndị nwere network site na-agba database ọkụ ọkụ (single database) na WordPress Multisite, ha na-aga okwu (separate paths) n'filesystem (file system) maka media files.
 
 Ebe kawaida a WordPress (wp-content/uploads) na-enwe; ihe a bụ; ọ bụ na ebe ya na-agba ịdị dị ka ID ọkụ ọkụ (unique ID) nke network site ahụ. Maka nke ahụ, media files maka network site na-aga wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Anyị gosi ya mgbe ọ bụla na ebe _subdomain_ dị mma dị ka _subdirectory_ configuration, ma a jiri ihe ndị a: paths.
 
@@ -77,7 +77,7 @@ N'ụzọ _subdomain_ configuration, ihe a dị mma ịdị dị na-akpọ (this
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 Na konfiguracja _subdirectory_ (podkatalog), ryzyko kolizji nazw się rozciąga na statyczne strony jako główna strona, ponieważ strony sieciowe i główne udostępniają ten sam ścieżkę.
 
@@ -87,7 +87,7 @@ Aby temu zapobiec, WordPress daje sposób na zablokowanie pewnych nazw stron, ab
 
 W konfiguracji _subdomain_ (poddomen), możliwość kolizji nazw jest łagodzona przez _subdomain_, ponieważ jest on unikalny dla strony sieciowej i nie ma żadnego związku ze stroną główną.
 
-### Rejestracja użytkowników
+### Rejestracja użytkowników {#registration}
 
 W ustawieniach sieciowych WordPress Multisite dostępne są kilka nowych opcji rejestracji użytkowników, które pozwalają zarówno nowym, jak i istniejącym użytkownikom na tworzenie stron.
 
@@ -105,7 +105,7 @@ Nói cách khác, giả sử WordPress Multisite của bạn làm về tin tức
 
 Tuy nhiên, nếu mục đích và bản chất dự định của multisite là cung cấp các trang mạng không liên quan đến nhau thì hầu như luôn cần có các plugin bên ngoài hoặc bổ sung để thao tác với vai trò người dùng (user roles).
 
-### Tên miền và SSL
+### Tên miền và SSL {#domain-and-ssl}
 
 Hãy nói về một cài đặt WordPress Multisite mà gần như chúng ta bỏ qua – đó là Wordpress.com. Đây là ví dụ toàn diện nhất về wordpress multisite và cho thấy khả năng tùy chỉnh cũng như định hình của nó để hoàn thành mục đích.
 
@@ -119,7 +119,7 @@ WordPress Multisite ndụ (Multisite) na-eme ihe n'ụdị domain mapping functi
 
 N'ụzọ ahụ, ọbụghị WordPress Multisite na-eme ihe dị ka ịkwado [www.anotherdomain.com](http://www.anotherdomain.com) na-asụgharị na ‘site1’, onye ndụ (network administrator) na-agba mma na-eme DNS entries ma ọ bụ na-eme SSL certificates.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Ọ bụrụ na ị chọrọ ịghọta ọnụ dị n'etiti WordPress installation dị ka site-alone na Multisite installation, chogo ị chọpụta na Ultimate Multisite bụ ihe a na-eme ihe dị mma maka ịnwass Website as a Service (WaaS). Ọ dị ka Wix.com, Squarespace, WordPress.com ma ọ bụ ịnwass service gị die.
 
@@ -127,9 +127,9 @@ N'ụzọ ahụ, Ultimate Multisite na-agbanwe WordPress Multisite, onye na-eme 
 
 N'ịkpọ ahụ, anyị ga-eme ihe ndị dị mkpa ma ọ bụ ihe ndị dị nwere ike ịghọta maka ịnwass ihe ndị a.
 
-### Use Cases (Ihe Ndị A na-eme Ihe)
+### Use Cases (Ihe Ndị A na-eme Ihe) {#introduction}
 
-#### Case 1: An Agency (Ofa)
+#### Case 1: An Agency (Ofa) {#use-cases}
 
 N'ụzọ ahụ, ihe ndị dị mma nke agency ga-anọ na-eme website ndị e ji design na-eme ihe dị ka hosting ma marketing dịka ọrụ ndị ọzọ.
 
@@ -155,7 +155,7 @@ Themes nwere ike functionality, na-eme choa particular themes beere activate or 
 
 Agencies ga-agba peace of mind na Ultimate Multisite na-eme allow them do what they do best - design exceptional web sites.
 
-#### Case 2: Niche Provider
+#### Case 2: Niche Provider {#case-1-an-agency}
 
 Ebe nwere ihe ọkụ dị nke ọma na na-eme iyi. Na ọtụtụ ndị especialista, ihe a na-eme na ịrụ ihe ọchịrị na-akpọta aka ihe ọkụrị ọ bụ.
 
@@ -169,7 +169,7 @@ Na-eme ihe a na-eme advantage unparalleled na ability to instantly create a site
 
 Ndeewo, na-akụkọ ihe ndị a bụ ihe ọ bụla ị chọrọ. Ọ bụ ihe dị mma nwere ike ịdị _subdirectory_ ma _subdomain_, ọ bụrụ na ị chọrọ ihe ahụ, ma ọ bụrụ na ị chọrọ ihe ahụ, ọ bụrụ na ị chọrọ ihe ahụ, ma ọ bụrụ na ị chọrọ ihe ahụ. Ọ bụrụ na ị chọrọ ihe ahụ, architecture choices ga-anọ mma n'ime SSL certificate simple fɛ _subdirectories_ ma wildcard SSL certificate fɛ _subdomains_.
 
-#### Case 3: WordPress Web Hosting
+#### Case 3: WordPress Web Hosting {#case-2-niche-provider}
 
 Nwere ọtụtụ ihe dị n'ime cara ịkwado WordPress sites, ma ọ bụ na-akwado site ahụ gị na ebe a na-eme. Na-akwado nke a bụ ihe dị mma nwere ike ịdị simple na ịkwado web space gị na customer na-eme version WordPress ya na-eme. Ọ bụrụ na nke ahụ, ọ bụ na ọtụtụ ihe maara na-eme ga-anọ n'ime ịnweta ihe ndị a na-eme ka ịkwado ihe dị mma.
 
@@ -181,11 +181,11 @@ Ultimate Multisite na-akwado ihe a na-eme na-eme solution turnkey (solution na-e
 
 Ma ọ bụ na ị chọrọ reliance na ọtụtụ external plugins na licenses, Ultimate Multisite na-akwado solution rich feature and comparable na Wix, Squarespace, WordPress.com na ndị ọzọ.
 
-### Architecture Considerations
+### Architecture Considerations {#case-3-wordpress-web-hosting}
 
 Ọ bụrụ na nke a bụ ihe dị mma na-eme ga-anọ n'ime ịchochere technologies na-eme ka ịkwado Ultimate Multisite installation.
 
-#### Shared vs. Dedicated Hosting
+#### Shared vs. Dedicated Hosting {#architecture-considerations}
 
 Mụn, ọ bụla hosting provider na-enweghị dị sama, ma ụfọ nọ na-agbaje server density dị nri-ụzọ. Hosting ndị ebe-nri-ụzọ (low-cost providers) ga-enwe agbanwe n'ime ịkwado server density. Oge a bụ, installation Ultimate Multisite ha ga-enwe ihe ọ bụla Ọ bụ ụka n'ime ọtụtụ site ndị dị n'ime server ebe ahụ.
 
@@ -199,7 +199,7 @@ Ultimate Multisite ga-enwe ike ịrụrụ na ụfọdụ hosting provider dị 
 
 Ọ bụrụ na ị chọrọ oge ọ bụla maka hosting provider dị mma ma set-up instructions dị completeness, jiji check documentation nke Compatible Providers.
 
-#### Performance Considerations
+#### Performance Considerations {#shared-vs-dedicated-hosting}
 
 Ultimate Multisite bụ application dị slow, ma ọ bụghị, ọ dị ụtọ nkwado. Mana, ọ ga-eme ihe dị mma anọ n'ime application na infrastructure ahụ ma ọ ga-enwe ike ịrụrụ ihe ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ bụla ọ
 
@@ -215,7 +215,7 @@ Vì lý do này, hầu hết các quản trị viên mạng sử dụng các gi�
 
 Ultimate Multisite bao gồm một add-on Cloudflare tinh vi cho phép các quản trị viên mạng đặt cài đặt của họ phía sau Cloudflare và tận dụng không chỉ khả năng bộ nhớ đệm mà còn là lưu trữ DNS, chứng chỉ SSL và các cơ chế bảo mật khác.
 
-#### Sao lưu (Backups)
+#### Sao lưu (Backups) {#performance-considerations}
 
 Bạn có thể hỏi 50 người về lời khuyên về sao lưu và nhận được 50 ý kiến khác nhau về các chiến lược sao lưu. Câu trả lời là, nó phụ thuộc vào bạn.
 
@@ -225,7 +225,7 @@ Maka ihe dị ka nke a, anyị ga-anọchị na backup bụ sao nwere ihe dịka
 
 Ma anyị ga-anọchị na ịnweta ihe ndị a na ndụ ahụ, ma ọ bụ ihe mgbe ọ dị mma maka omụmọdụ anọchi gị ga-anọchị na ihe ndị a na nkọwa nwere ike ịbata na ihe ndị a na iji nyere. Ọ bụrụ na anyị ga-anọchị na ndụ ahụ, ọ bụ ihe dị mma maka omụmọdụ anọchi gị ga-anọchị na ihe ndị a na nkọwa nwere ike ịbata na ihe ndị a na iji nyere. Ọ bụrụ na anyị ga-anọchị na ndụ ahụ, ọ bụ ihe dị mma maka omụmọdụ anọchi gị ga-anọchị na ihe ndị a na nkọwa nwere ike ịbata na ihe ndị a na iji nyere.
 
-#### Snapshots (Ihe Nkwupụta)
+#### Snapshots (Ihe Nkwupụta) {#backups}
 
 Snapshots bụ ihe dịka sao nwere mme backup because they are easy, uncomplicated (until you want to restore) and ‘just work’. Ọ ga-anọchi ụfọdụ aiuto n'ime provider gị ma ọ bụrụ na ị nwere VPS (Virtual Private Server) ma ọ bụ ihe dị ka ọ bụ. Ihe ndị dị iche iche ndị a nwere n'ime dokumentation 'Compatible Providers' anyị ga-anọchị nyere backup ndị ahụ na-anọchi mme ọzọ ma ọ bụ ịgbagba na network administrator.
 
@@ -233,7 +233,7 @@ Backup truyền thống nhắm vào các file và database, còn snapshot thì n
 
 Snapshot có thể phát sinh chi phí bổ sung với nhà cung cấp dịch vụ lưu trữ nhưng nó giống như một chính sách bảo hiểm chống lại những sự cố không mong muốn.
 
-#### External Scripts (Các Script Bên Ngoài)
+#### External Scripts (Các Script Bên Ngoài) {#snapshots}
 
 Có vẻ như không thiếu các script và giải pháp bên ngoài để backup tài nguyên WordPress và MySQL, và chúng sẽ hoạt động tốt cho Ultimate Multisite vì đây là một plugin WordPress sử dụng hệ thống file và database của WordPress. Vì vậy, một giải pháp sao lưu các trang web WordPress sẽ đáp ứng được nhu cầu của Ultimate Multisite.
 
@@ -241,7 +241,7 @@ Chúng tôi không thể đề xuất script này hơn script khác, nhưng lờ
 
 Cần lưu ý rằng trong quá trình chạy các script này, chúng sẽ làm tăng tải hệ thống, điều này cần được tính đến.
 
-#### Plugins (Các Plugin)
+#### Plugins (Các Plugin) {#external-scripts}
 
 Hầu như không có vấn đề gì trong WordPress mà không thể giải quyết bằng một plugin và nếu việc quản lý các script bên ngoài không phải là sở trường của bạn thì có lẽ plugin là lựa chọn tốt tiếp theo.
 
@@ -249,7 +249,7 @@ Plugins ọ bụla na-enwe ike ịchekwa na oge na ihe ndị ọrụ, mana ha d�
 
 Ihe ị chọrọ plugin, ị ga-akpọta ịche na ọ dị mma na-enwe ike ịgụ akụkọ multisite (multisite aware). Da ọrụ ha, mgbe backup na-ejikọ, ị ga-anọ nkwado dịka ọ bụrụ ihe dị ka onye ahụ anaghị anyere.
 
-#### Domain and SSL
+#### Domain and SSL {#plugins}
 
 Ọ dị nwere ike ịkọwa ihe malaya ma ọ bụ domain names na mode _subdomain_ multisite. Ihe a dị ka ihe dị ka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka ọ bụrụ ihe dịka
 
@@ -265,7 +265,7 @@ Manya ndị ọzọ, na-eji Cloudflare bụ oparịta dị mbanye. Ọkọngi na
 
 N'ụzọ ọzọ, ọ dị m nwere ihe ndị ọzọ dị m nwere ike ịhụ, nke bụrụ ihe kedu ka Ultimate Multisite na-anọcha oparịta Provider ndị dị mbanye Compatible Providers. Ọ bụ onye na-eme ka ihe a bụ na-eji DNS na SSL bụ ihe dị n'aka ọrụ dị mkpa. Mana, ma ọ bụ na-akara Ultimate Multisite na-anọcha ndị a providers ahụ, ihe dị mkpa ahụ na-abụghị dị, ma ọ bụ na-eme ka ihe a na-agba mma site na-abụghị dị, ma ọ bụ na-eme ka ihe a na-agba mma.
 
-#### Plugins
+#### Plugins {#domain-and-ssl-1}
 
 Ọ dị nwere ike ịbụrịka ịchukwu plugins ndị ọzọ iji gbanwe ihe ha maka ndị khách ha ma sites network. Ọ bụrụ na olany all plugins na-eji WordPress Multisite na Ultimate Multisite? Naa, ọ bụ ihe na-eme ka ọ dị.
 

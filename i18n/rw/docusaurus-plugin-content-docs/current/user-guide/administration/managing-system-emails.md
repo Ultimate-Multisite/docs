@@ -3,11 +3,11 @@ title: Gukemura Email za System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Gukoresha Email za Sistema
+# Gukoresha Email za Sistema {#managing-system-emails}
 
 Ultimate Multisite yifungura email zikomeye za sistema mu gihe cy'ibintu nko gukoresha (signup confirmations), ibyonyi bwo kwishyura, no guhindura ubushobozi bw'umwe. Ufite uburyo bwo gutera ku email templates kugira ngo yifashe kwerekana umwanya w'ubwoko runa n'ubwoko rwawe.
 
-## Gukoresha Email za Sistema
+## Gukoresha Email za Sistema {#viewing-system-emails}
 
 Gukoresha **Ultimate Multisite → Settings** kandi ugukora kuri tab ya **Emails** kugira ngo ubonde ibyemezo by'email.
 
@@ -21,7 +21,7 @@ Ushobora kandi gukora ibindi ku email templates zikomeye cyangwa ugukoresha syst
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Gukoresha Email Templates Zishya
+## Gukoresha Email Templates Zishya {#importing-new-email-templates}
 
 Urugero, n'ubwoko runaka rwa Ultimate Multisite n'ibindi byo (add-ons) bishobora gushyira email templates zishya. Kugira ngo nta kigabanyiramo cyangwa uburyo bwo kwihangira, email templates zishya ntizikoreshwa mu gihe cy'ubwoko runaka — ugomba kuzikoresha mu buryo bw'umukono (manually).
 
@@ -32,7 +32,7 @@ Kugira ngo uburyo bwo gukoresha email templates zishya:
 3. Gukoresha option ya **Import Emails** kugira ngo ubone templates zishobora gukoreshwa
 4. Gukoresha email templates ugiye gukoresha kandi ukwibanda
 
-## Guhindura Email Templates
+## Guhindura Email Templates {#resetting-email-templates}
 
 Niba wagiye gukoresha email template kandi wumva ko ugomba gufata mu gihe cy'ubwoko runaka, ufite uburyo bwo gutera ku byo bibaje:
 

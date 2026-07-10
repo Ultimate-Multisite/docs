@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons అనేవి Ultimate Multisiteకి అదనపు ఫీచర్లు మరియు ఇంటిగ్రేషన్స్‌తో విస్తరణను అందిస్తాయి. చాలా Addons చెల్లింపుగా ఉంటాయి మరియు వీటిని [ultimatemultisite.com](https://ultimatemultisite.com) నుండి కొనుగోలు చేయవచ్చు.
 
-## Installation
+## Installation {#installation}
 
 Addons ను రెండు విధాలుగా ఇన్‌స్టాల్ చేయవచ్చు:
 
 1. **Addon Page ద్వారా** -- WordPress admin లో మీ సైట్ యొక్క addon management page కి వెళ్లండి.
 2. **మాన్యువల్ డౌన్‌లోడ్** -- [your account](https://ultimatemultisite.com/my-account/downloads/) నుండి డౌన్‌లోడ్ చేసి, Plugins > Add New ద్వారా అప్‌లోడ్ చేయండి.
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

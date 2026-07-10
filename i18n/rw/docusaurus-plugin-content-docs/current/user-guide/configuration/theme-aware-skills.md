@@ -3,11 +3,11 @@ title: Ubwumvikane bw'Urugero rwa Umuhanga
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Kỹ năng Nhạy cảm với Chủ đề
+# Kỹ năng Nhạy cảm với Chủ đề {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 mang theo bốn kỹ năng tích hợp mới tự động thích ứng với chủ đề WordPress bạn đang sử dụng. Những kỹ năng này cung cấp hướng dẫn và khả năng chuyên biệt được điều chỉnh theo kiến trúc và các tính năng của chủ đề đó.
 
-## Kỹ năng Nhạy cảm với Chủ đề là gì?
+## Kỹ năng Nhạy cảm với Chủ đề là gì? {#what-are-theme-aware-skills}
 
 Kỹ năng nhạy cảm với chủ đề là những cơ sở kiến thức và bộ công cụ được cấu hình sẵn mà trợ lý AI sẽ tự động chọn dựa trên chủ đề WordPress đang hoạt động trên trang web của bạn. Khi bạn chuyển đổi chủ đề, các kỹ năng có sẵn của trợ lý sẽ tự động cập nhật — không cần cấu hình thủ công.
 
@@ -18,9 +18,9 @@ Mỗi kỹ năng bao gồm:
 - **Ví dụ về tùy chỉnh** — các đoạn mã và mẫu cấu hình cho các tác vụ phổ biến
 - **Các phương pháp thực hành tốt nhất** — các khuyến nghị về kiến trúc và quy trình làm việc của chủ đề
 
-## Các Kỹ năng Nhạy cảm với Chủ đề Có Sẵn
+## Các Kỹ năng Nhạy cảm với Chủ đề Có Sẵn {#available-theme-aware-skills}
 
-### Chủ đề Khối (Block Themes)
+### Chủ đề Khối (Block Themes) {#block-themes}
 
 **Áp dụng cho:** Các chủ đề sử dụng kiến trúc dựa trên khối WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Kỹ năng Block Themes cung cấp hướng dẫn về:
 
 **Tự động kích hoạt khi:** Chủ đề đang hoạt động của bạn là một chủ đề khối (hỗ trợ tính năng `block-templates`).
 
-### Chủ đề Cổ điển (Classic Themes)
+### Chủ đề Cổ điển (Classic Themes) {#classic-themes}
 
 **Áp dụng cho:** Các chủ đề WordPress truyền thống sử dụng các mẫu PHP và trình soạn thảo cổ điển.
 
@@ -48,7 +48,7 @@ Kumenya ubwujega bw'umutema n'uburyo bw'umutema (template tags)
 
 **Bishobora gukorwa mu gihe cyose:** Umutema wako wariwe ari umutema wa classic (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Bishobora gukoreshwa kuri:** Sites zikoresha plugin ya Kadence Blocks kugira ngo zikoreshe uburyo bw'umutandukiro bishobora gukorwa n'amashobora (block-based design).
 
@@ -62,7 +62,7 @@ Ubwujega bw'Kadence Blocks bukurinda ku:
 
 **Bishobora gukorwa mu gihe cyose:** Plugin ya Kadence Blocks yariwe kuri site yawe.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Bishobora gukoreshwa kuri:** Sites zikoresha umutema wa Kadence kugira ngo zikoreshe uburyo bw'umutandukiro bishobora gukorwa n'amashobora (block-based design) no gukoresha.
 
@@ -76,15 +76,15 @@ Ubwujega bw'Kadence Theme bukurinda ku:
 
 **Bishobora gukorwa mu gihe cyose:** Umutema wa Kadence wariwe ari umutema wako.
 
-## Uburyo bw'Ubwujega Bw'Umwujega (How Skills Are Selected)
+## Uburyo bw'Ubwujega Bw'Umwujega (How Skills Are Selected) {#how-skills-are-selected}
 
 Assistant yagize uburyo bwo kumenya umutema wako wariwe n'ibindi by'umuntu bafite ubwujega kuri kila message. Hejuru, iyo ubu bwujega bukurinda ku umutema wako wariwe no plugins zawe zikoreshwa. Iyo hari ubwujega bushobora gukorwa mu gihe cyose, bitangira mu context ya assistant. Umatwe n'uburyo bwo gukoresha skills (skills) nta kumenya cyangwa gukoresha uburyo bwo gukoresha skills (skills) mu gihe cyose.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Niba hari uburyo bishobora kubyara ku rugero rwawe (urugero, niba ufite Kadence Blocks n'ibyo mu Theme yashobora gukoreshwa), umusanzwe ushaka uburyo bwose bwo gukoresha. Icyemezo cyangwa inama zikoreshwa zikoreshwa ku rugero rwawe.
 
-### Gukoresha Themes (Ubwumvikane)
+### Gukoresha Themes (Ubwumvikane) {#switching-themes}
 
 Iyo utangira gukora theme yashobora gukoreshwa, uburyo bwo gukoresha skills za assistant bizakomeza kubara mu gihe cy'ibindi byo bikurikira. Urugero:
 
@@ -92,11 +92,11 @@ Iyo utangira gukora theme yashobora gukoreshwa, uburyo bwo gukoresha skills za a
 2. Ugiye gukora theme ya classic (classic theme).
 3. Mu gihe cy'ibindi byo bikurikira, **Classic Themes** skill izakomeza kubara, kandi **Block Themes** skill itabara.
 
-## Gukoresha Skills Zikoresha Theme
+## Gukoresha Skills Zikoresha Theme {#using-theme-aware-skills}
 
 Kugira ngo uburyo bwo gukora ibyo wifuza mu chat interface, ugiye kuvuga iki cyangwa iki. Assistant izakoresha inama z'skill zikoreshwa ku rugero rwawe.
 
-### Inama za Urugero (Example Prompts)
+### Inama za Urugero (Example Prompts) {#example-prompts}
 
 **Kuva ku Block Themes:**
 > "Yitondera hero section yizwi n'ibyo mu gukoresha block patterns."

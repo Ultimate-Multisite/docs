@@ -1,116 +1,194 @@
 ---
-title: Адсылкі на хукі
+title: Даведнік па хуках
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Адвязка хукаў
+# Даведнік па хуках {#hooks-reference}
 
-Аўтагенэраваная дакументацыя для ўсіх **59 дзеянняў** і **115 фільтраў** у Ultimate Multisite.
+Аўтаматычна згенераваная дакументацыя для ўсіх **59 дзеянняў** і **118 фільтраў** у Ultimate Multisite.
 
-## Дзеянні
+## Дзеянні {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Выклікаецца перад перанаправаннем для аўтэнтыфікацыі.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Выклікаецца неадкладна перад вызначэннем cookie для аўтэнтыфікацыі.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Выклікаецца неадкладна перад вызначэннем cookie для ўвайшоўшага карыстальніка.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Дазваляе раробнікам дадаць свае інтэграцыі пастаўшчыкоў хостынг-паслуг праз wp plugins.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Выклікаецца, калі загружаны ўсе залежнасці.
-- [wu_activation](./Actions/wu_activation) — Дазваляе іншым часткам плагіна дадаць свае рутыны для актывацыі.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Дазваляе раробнікам плагіна дадаць хукі пасля таго, калі карыстальнік або суперадмін змяняе тэмату сайта.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — У некаторых выпадках нам трэба загрузіць дадатковыя рэсурсы для апрацоўкі дзеянняў.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Выклікаецца перад апрацоўкай пошукавага запроса.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Дазваляе раробнікам дадаць дадатковыя змены ў аб'ект карыстання карыстальніка.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Дазваляе раробнікам дадаць дадатковыя змены ў аб'ект карыстання карыстальніка.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Выклікаецца перад дадаваннем поля ў форму карыстання карыстальніка.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Дазваляе раробнікам дадаць дадатковыя хукі.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Перад апрацоўкай карыстання карыстальніка.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Выклікаецца пасля поўнага збору замовы карыстання карыстальніка.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Дазваляе раробнікам плагіна дадаць віджэты ў Панель карыстальніка сеткі.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Дазваляе раробнікам плагіна дадаць віджэты ў Панель карыстальніка сеткі.
-- [wu_deactivation](./Actions/wu_deactivate) — У адключэнні.
-- [wu_get_user_id] — Атрыманне ID карыстальніка.
-- [wu_get_site_id] — Атрыманне ID сайта.
-- [wu_get_current_user_id] — Атрыманне ID бягучага карыстальніка.
-- [wu_get_current_site_id] — Атрыманне ID бягучага сайта.
+- [auth_redirect](./Actions/auth_redirect) — Спрацоўвае перад перанакіраваннем аўтэнтыфікацыі.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Спрацоўвае непасрэдна перад усталяваннем cookie аўтэнтыфікацыі.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Спрацоўвае непасрэдна перад усталяваннем cookie аўтэнтыфікацыі для карыстальніка, які ўвайшоў.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Дазваляе распрацоўшчыкам дадаваць уласныя інтэграцыі хост-правайдэраў праз WordPress plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Спрацоўвае, калі ўсе залежнасці былі загружаны
+- [wu_activation](./Actions/wu_activation) — Дазваляе іншым часткам plugin далучаць свае працэдуры для актывацыі
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Дазваляе распрацоўшчыкам plugin падключаць функцыі пасля таго, як карыстальнік або суперадміністратар пераключыць шаблон сайта
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — У некаторых выпадках нам трэба будзе загрузіць дадатковыя рэсурсы для апрацоўкі дзеянняў.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Спрацоўвае перад апрацоўкай пошукавага запыту.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Дазваляе распрацоўшчыкам уносіць дадатковыя змены ў аб’ект афармлення замовы.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Дазваляе распрацоўшчыкам уносіць дадатковыя змены ў аб’ект афармлення замовы.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Спрацоўвае перад даданнем поля ў форму афармлення замовы.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Дазваляе распрацоўшчыкам запускаць дадатковыя hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Перад тым як мы апрацоўваем афармленне замовы.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Спрацоўвае пасля таго, як замова афармлення цалкам сабрана.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Дазваляе распрацоўшчыкам plugin дадаваць віджэты ў панэль Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Дазваляе распрацоўшчыкам plugin дадаваць віджэты ў панэль Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Дазваляе іншым часткам plugin далучаць свае працэдуры для дэактывацыі
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Дазваляе распрацоўшчыкам plugin дадаваць дзеянні да працэсу выдалення
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Спрацоўвае, калі дамен становіцца асноўным даменам для сайта.
+- [wu_domain_created](./Actions/wu_domain_created) — Спрацоўвае, калі дадаецца новае супастаўленне дамена.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Спрацавала пасля загрузкі нашага асноўнага супастаўлення даменаў
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Некаторыя plugins захаваюць URL да таго, як супастаўленне было актыўным, або будуць будаваць URL іншым спосабам, які не ўключаны o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Дазваляе распрацоўшчыкам падключацца пасля дубліравання сайта.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковыя hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook для дадатковай ачысткі
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Спрацоўвае перад апрацоўкай запыту мадальнага акна дадання новага дамена.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Дазваляе распрацоўшчыкам plugin захоўваць метададзеныя рознымі спосабамі, калі ім гэта трэба.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Дазваляе распрацоўшчыкам plugin захоўваць метададзеныя карыстальніка рознымі спосабамі, калі ім гэта трэба.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Спрацоўвае, калі сустракаецца несапраўдны token магічнай спасылкі.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Спрацоўвае пасля таго, як карыстальнік увайшоў праз магічную спасылку.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Дазваляе распрацоўшчыкам plugin рабіць дадатковыя рэчы, калі кліент дададзены.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Спрацоўвае пасля рэгістрацыі магчымасцей MCP для сутнасці.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Спрацоўвае пасля ініцыялізацыі адаптара MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Спрацоўвае пасля адмены сяброўства.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Спрацоўвае пасля падаўжэння сяброўства.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Спрацоўвае перад адменай сяброўства.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Спрацоўвае перад падаўжэннем сяброўства.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Спрацоўвае пасля захавання аб’екта ў базе даных.
+- [wu_page_added](./Actions/wu_page_added) — Дазваляе распрацоўшчыкам plugin запускаць дадатковыя дзеянні, калі старонкі рэгіструюцца.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковы кантэнт пасля таго, як мы выводзім старонку
+- [wu_page_before_render](./Actions/wu_page_before_render) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковы кантэнт перад тым, як мы выводзім старонку.
+- [wu_page_load](./Actions/wu_page_load) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковыя hooks да нашых старонак.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковы кантэнт пасля таго, як мы выводзім старонку
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковы кантэнт перад тым, як мы выводзім старонку.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Дазваляе распрацоўшчыкам plugin дадаваць дадатковыя hooks да нашых старонак.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Спрацоўвае пасля рэгістрацыі віджэтаў для гэтай старонкі.
 
-## Функцыі, якія выклікаюцца
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Спрацоўвае, каб дазволіць дадаткам далучаць модулі магчымасцей да інтэграцый.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Спрацоўвае, каб дазволіць інтэграцыям зарэгістраваць сябе.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Дазваляе рэгістраваць дадатковыя маршруты.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Дазваляе распрацоўшчыкам плагіна дадаваць дзеянні ў працэс захавання
+- [wu_site_created](./Actions/wu_site_created) — Спрацоўвае пасля таго, як сайт створаны ўпершыню.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Дазваляе распрацоўшчыкам плагіна дадаваць дадатковыя хукі, калі неабходна.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Выконваецца ў кантэксце праглядальніка шаблонаў.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Запускае хук пастаноўкі скрыптоў у чаргу.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Спрацоўвае пасля таго, як аб’ект захаваны ў базе даных.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Спрацоўвае пасля таго, як аб’ект захаваны ў базе даных.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Спрацоўвае пасля таго, як аб’ект захаваны ў базе даных.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Дазваляе распрацоўшчыкам плагіна дадаваць дзеянні ў працэс разблакіроўкі.
 
-* **`wu_get_user_id()`**: Атрыманне ID карыстальніка.
-* **`wu_get_site_id()`**: Атрыманне ID сайта.
-* **`wu_get_current_user_id()`**: Атрыманне ID бягучага карыстальніка.
-* **`wu_get_current_site_id()`**: Атрыманне ID бягучага сайта.
+## Фільтры {#filters}
 
-## Апісан
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Фільтруе працягласць перыяду заканчэння тэрміну дзеяння cookie аўтэнтыфікацыі.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Фільтруе схему перанакіравання аўтэнтыфікацыі.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Узнаўляе тут арыгінальны WP-фільтр, для пэўнасці.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Дазваляе распрацоўшчыкам плагінаў фільтраваць URL, які выкарыстоўваецца ў сродку папярэдняга прагляду
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Фільтруе, ці павінна cookie аўтэнтыфікацыі адпраўляцца толькі праз HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Фільтруе, ці выкарыстоўваць бяспечнае перанакіраванне аўтэнтыфікацыі.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Фільтруе, ці павінна cookie ўваходу ў сістэму адпраўляцца толькі праз HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Дазваляе прадухіліць фактычную адпраўку cookie аўтэнтыфікацыі кліенту.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Задае URL перанакіравання.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Дадае дадатковыя крокі праз фільтры
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Дазваляе распрацоўшчыкам плагінаў дадаваць дадатковую зменную ў кантэкст рэндэрынгу глабальна.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Дазваляе распрацоўшчыкам датэрмінова перапыніць гэтую праверку.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Фільтруе палі для мадальнага акна дадання новага дамена.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Дазваляе распрацоўшчыкам уносіць змены ў радок платы за наладжванне.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Дазваляе распрацоўшчыкам фільтраваць апавяшчэнні адміністратара, дададзеныя Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Фільтр пасля змянення.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Цяпер мы працуем з усімі тыпамі.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Дазваляе распрацоўшчыкам плагінаў датэрмінова перапыніць абмежаванні.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Фільтруе, ці павінна прымяняцца плата за рэгістрацыю.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Фільтруе арыгінальныя аргументы api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Дазваляе распрацоўшчыкам плагінаў фільтраваць палі плацежнага адраса.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Дазваляе распрацоўшчыкам абысці вывад і задаць новы
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Дазваляе распрацоўшчыкам абысці код скідання бягучага карыстальніка.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Фільтруе агульную суму "перыядычнай сумы".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Фільтруе агульную суму "пачатковай сумы".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Фільтруе агульную суму "пачатковай сумы".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Дазваляе распрацоўшчыкам плагінаў змяняць значэнне крэдыту.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Фільтруе агульныя базавыя дамены формы афармлення замовы, якія не павінны станавіцца запісамі супастаўленых даменаў.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Нашы API для дадання новых шаблонаў палёў падключаюцца сюды.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Нашы API для дадання новых тыпаў палёў падключаюцца сюды.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Фільтруе паведамленні пра памылкі.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Дазваляе распрацоўшчыкам абысці праверку, калі поле можа аўтаматычна адпраўляцца.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Дазваляе распрацоўшчыкам плагінаў дадаваць уласныя псеўданімы ў валідатар формы.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Дазваляе распрацоўшчыкам плагінаў фільтраваць правілы праверкі.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Скідае непажаданыя параметры.
+- [wu_contains_element](./Filters/wu_contains_element) — Дазваляе распрацоўшчыкам змяняць вынікі першапачатковага пошуку.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Дазваляе хостынг-правайдарам усталёўваць канстанту іншым чынам.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Вяртае прыгожую назву адміністрацыйных падраздзяленняў краіны.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Вяртае спіс гарадоў для штата ў краіне.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Вяртае спіс штатаў для гэтай краіны.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Дазваляе распрацоўшчыкам змяняць стандартныя паводзіны і задаваць бягучага кліента іншым чынам.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Дазваляе распрацоўшчыкам змяняць стандартныя паводзіны і задаваць бягучае сяброўства іншым чынам.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Дазваляе распрацоўшчыкам змяняць стандартныя паводзіны і задаваць бягучы сайт іншым чынам.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Дазваляе распрацоўшчыкам змяняць параметры URL кіравання сайтам.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Дазваляе распрацоўшчыкам плагінаў фільтраваць спасылкі.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Дазваляе распрацоўшчыкам плагінаў дадаваць новыя праверкі, каб вызначаць вынікі.
 
-Гэты файл змяшчае функцыі, якія дазваляюць атрыманне ID карыстальніка і ID сайта ў кантэксце WordPress. Гэтыя функцыі вельмі карысныя для кадэвання, калі вам патрэбна ўзаемадзеянне з карыстальнікамі або сайтамі.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Магчыма, нам спатрэбіцца дадаць дадатковыя блокі пазней.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Дадае агульны фільтр, каб дазволіць распрацоўшчыкам пашырыць гэты парсер для працы з дадатковымі канструктарамі або plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Фільтраваць, ці прымяняць дадатковыя правілы пароляў.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Фільтраваць згенераванае імя карыстальніка кліента.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Дазволіць распрацоўшчыкам plugins фільтраваць папярэднія наборы старонкі checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Дазволіць распрацоўшчыкам дадаваць новыя slugs форм, каб абысці гэтыя паводзіны.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Дазволіць распрацоўшчыкам і дадаткам дадаваць новыя крокі міграцыі
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Глядзіце больш пра гэты фільтр ніжэй, у гэтым жа метадзе.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Дазволіць распрацоўшчыкам выбіраць, якія тыпы запісаў павінны адлюстроўвацца.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Вярнуць радкі, якія можна фільтраваць
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Дазволіць распрацоўшчыкам змяняць пары дамен/шлях.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Фільтруе раздзелы майстра для наладжвання інтэграцыі хостынгу.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Фільтруе палі ў форме. Форма ідэнтыфікуецца па ID у назве фільтра.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Фільтраваць тыпы прадуктаў, якія маюць незалежныя плацежныя цыклы.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Дазволіць распрацоўшчыкам plugins прымусова задаваць пэўны стан для API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Дазволіць распрацоўшчыкам plugins дадаваць дадатковыя тэсты для рэжыму распрацоўкі.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Дазволіць распрацоўшчыкам plugins прымусова задаваць пэўны стан для адаптара MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — З меркаванняў бяспекі мы абмяжоўваем колькасць дзеянняў, даступных для падключэння. Гэты фільтр дазваляе распрацоўшчыкам пашыраць
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Правярае, ці дазволены дадзены тып запісу ў гэтым плане. Дазволіць распрацоўшчыкам plugins фільтраваць вяртанае значэнне
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Фільтраваць, ці прымяняць праверку IP-адраса.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Фільтраваць, ці прымяняць праверку user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Фільтраваць URL згенераванай магічнай спасылкі.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Фільтраваць, ці ўключаны магічныя спасылкі.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Фільтруе URL перанакіравання пасля прызначэння дамена асноўным.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Стварыць спіс выключэнняў параметраў, якія прадухіляюць аўтаматычнае перанакіраванне.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Фільтр для перавызначэння рашэння аб уключэнні здольнасці MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Фільтруе разлічаную дату заканчэння.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Фільтруе разлічаную дату заканчэння, якая будзе ўсталявана пасля падаўжэння.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Дазволіць распрацоўшчыкам дадаваць новыя slugs форм абнаўлення.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Фільтраваць мінімальную даўжыню пароля.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Фільтраваць мінімальную патрабаваную надзейнасць пароля (ацэнка zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Дазволіць распрацоўшчыкам plugins і нам самім дадаваць спасылкі дзеянняў на нашы старонкі рэдагавання
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Фільтраваць, ці патрабаваць малыя літары ў паролях.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Фільтраваць, ці патрабаваць лічбы ў паролях.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Фільтраваць, ці патрабаваць спецыяльныя сімвалы ў паролях.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Фільтраваць, ці патрабаваць вялікія літары ў паролях.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Дазволіць карыстальніку змяніць паведамленне пра плацяжы ў чаканні.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Фільтраваць тыпы прадуктаў, якія павінны разглядацца як планы.
+- [wu_post_count](./Filters/wu_post_count) — Дазволіць распрацоўшчыкам plugins змяняць агульную колькасць
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Дазволіць распрацоўшчыкам plugins змяняць, які статус запісу павінен падлічвацца. Па змаўчанні падлічваюцца апублікаваныя і прыватныя запісы
+- [wu_post_default_status](./Filters/wu_post_default_status) — Фільтруе даныя аб’екта перад захаваннем у базе даных.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Дазволіць распрацоўшчыкам фільтраваць налады перад захаваннем Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Фільтруе, ці дазволена працягваць запыт ці не.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Фільтруе, ці дазволена працягваць запыт ці не.
 
-## Выкарыстанне
-
-**Атрыманне ID карыстальніка:**
-
-```php
-$user_id = wu_get_user_id();
-echo "ID карыстальніка: " . $user_id;
-```
-
-**Атрыманне ID сайта:**
-
-```php
-$site_id = wu_get_site_id();
-echo "ID сайта: " . $site_id;
-```
-
-**Атрыманне ID бягучага карыстальніка:**
-
-```php
-$current_user_id = wu_get_current_user_id();
-echo "ID бягучага карыстальніка: " . $current_user_id;
-```
-
-**Атрыманне ID бягучага сайта:**
-
-```php
-$current_site_id = wu_get_current_site_id();
-echo "ID бягучага сайта: " . $current_site_id;
-```
-
-## Паўная рэалізацыя
-
-```php
-/**
- * Атрыманне ID карыстальніка.
- *
- * @return int ID карыстальніка.
- */
-function wu_get_user_id() {
-    return get_current_user_id();
-}
-
-/**
- * Атрыманне ID сайта.
- *
- * @return int ID сайта.
- */
-function wu_get_site_id() {
-    return get_blog_id();
-}
-
-/**
- * Атрыманне ID бягучага карыстальніка.
- *
- * @return int ID бягучага карыстальніка.
- */
-function wu_get_current_user_id() {
-    return get_current_user_id();
-}
-
-/**
- * Атрыманне ID бягучага сайта.
- *
- * @return int ID бягучага сайта.
- *
- * @return int ID бягучага сайта.
- */
-function wu_get_current_site_id() {
-    return get_blog_id();
-}
-```
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Фільтруе, ці дазволена працягваць запыт ці не.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Фільтруе, ці дазволена працягваць запыт ці не.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Фільтруе, ці дазволена працягваць запыт ці не.
+- [wu_return_url](./Filters/wu_return_url) — Дазваляе распрацоўшчыкам змяняць URL вяртання шлюза, які выкарыстоўваецца пасля працэсаў афармлення замовы.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Дазваляе распрацоўшчыкам плагінаў дадаваць больш функцый мадэляў пошуку.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Дазваляе распрацоўшчыкам дадаваць дадатковыя крокі майстра наладжвання.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Фільтруе, ці павінен Ultimate Multisite ствараць запіс дамена для новастворанага сайта.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Дазваляе распрацоўшчыкам перапыніць перанакіраванне, прадухіляючы яго выкананне.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Дазваляе перапісаць апрацоўшчык
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Фільтруе масавыя дзеянні, даступныя для сайтаў.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Фільтр для змянення значэння для атрымання сайтаў плагіна ўнутры сеткі.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Уключыць/адключыць магчымасць адзінага ўваходу паміж даменамі.
+- [wu_sso_url](./Filters/wu_sso_url) — Фільтруе згенераваныя URL SSO перад іх вяртаннем для міждаменных дзеянняў кліента.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Фільтруе даныя падпіскі Stripe. Можа перавызначыць success_url або cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Фільтруе аргументы намеру аплаты.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Фільтруе ID тарыфнага плана для праверкі. Калі ён існуе, новая падпіска будзе выкарыстоўваць гэты план.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Фільтруе ID прадукту для праверкі. Калі ён існуе, новая падпіска будзе выкарыстоўваць гэты прадукт.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Фільтруе значэнне idempotency_key, якое адпраўляецца з параметрамі спісання Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Фільтруе запіс членства, звязаны з гэтым webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Фільтруе метаданыя перад іх серыялізацыяй для захавання ў базе даных.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Фільтруе даныя аб'екта перад іх захаваннем у базе даных.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Дазваляе распрацоўшчыкам змяняць URL абнаўлення для разблакіроўкі
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Вызначае, ці павінна выкарыстоўвацца супастаўленне
+- [wu_username_from_email](./Filters/wu_username_from_email) — Фільтруе імя карыстальніка новага кліента.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Дазваляе распрацоўшчыкам змяняць паведамленне пра ліміт карыстальнікаў членства
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Дазваляе распрацоўшчыкам дадаваць дадатковыя папкі ў спіс заменяемых.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Фільтруе, якія sub_commands уключаны для гэтай сутнасці.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Мы правяраем тры шаблоны, калі спрабуем вызначыць, куды можам уставіць нашы канстанты:

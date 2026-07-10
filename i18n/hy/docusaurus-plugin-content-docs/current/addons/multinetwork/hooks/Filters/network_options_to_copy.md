@@ -1,0 +1,20 @@
+---
+id: network_options_to_copy
+title: Զտիչ - պատճենման ենթակա network_options
+sidebar_label: network_options_to_copy
+_i18n_hash: f603aa627d8e29764d749a36886bc04c
+---
+# Զտիչ՝ network_options_to_copy {#filter-networkoptionstocopy}
+
+Զտում է պատճենման համար լռելյայն ցանցի ընտրանքները։
+
+### Սկսած {#since}
+
+- 1.3.0
+### Աղբյուր {#source}
+
+Սահմանված է [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1649)-ում՝ 1649-րդ տողում
+
+
+## Վերադարձնում է {#returns}
+List of network $option_name =&gt; $option_label pairs.

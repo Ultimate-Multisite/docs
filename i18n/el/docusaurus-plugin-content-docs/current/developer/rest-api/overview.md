@@ -1,30 +1,30 @@
 ---
-title: Γενική Επισκόπηση REST API
+title: Επισκόπηση REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Αναφορά REST API
+# Αναφορά REST API {#rest-api-reference}
 
-## Βασική Διαμόρφωση
+## Βασική διαμόρφωση {#base-configuration}
 
-**Βασική Διεύθυνση (Base URL):** `{site_url}/wp-json/wu/v2/`
-**Εauthentിക്കποίηση:** API Key & Secret (HTTP Basic Auth ή Παράμετροι URL)
+**Βασικό URL:** `{site_url}/wp-json/wu/v2/`
+**Έλεγχος ταυτότητας:** API Key & Secret (HTTP Basic Auth ή παράμετροι URL)
 
-## Εauthentിക്കποίηση
+## Έλεγχος ταυτότητας {#authentication}
 
-### Ενεργοποίηση API
+### Ενεργοποίηση API {#enable-api}
 ```php
-// Ενεργοποίηση του API στις ρυθμίσεις του Ultimate Multisite ή μέσω κώδικα
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Λήψη Δεδομένων Εauthentικότητας API
+### Λήψη διαπιστευτηρίων API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Μέθοδοι Εauthentικότητας
+### Μέθοδοι ελέγχου ταυτότητας {#authentication-methods}
 
 **HTTP Basic Auth (Συνιστάται):**
 ```bash
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Βασικοί Endpoints
+## Κύρια τελικά σημεία {#core-endpoints}
 
-### 1. API Πελατών (Customers API)
+### 1. API πελατών {#1-customers-api}
 
-**Βασική Διαδρομή (Base Route):** `/customers`
+**Βασική διαδρομή:** `/customers`
 
-**Λήψη Όλων των Πελατών**
+**Λήψη όλων των πελατών**
 ```http
 GET /wu/v2/customers
 ```
 
-**Λήψη Ένα Μοναδικού Πελάτη**
+**Λήψη μεμονωμένου πελάτη**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Δημιουργία Πελάτη**
+**Δημιουργία πελάτη**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Ενημέρωση Πελάτη**
+**Ενημέρωση πελάτη**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Σημειώσεις για VIP πελάτη"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Διαγραφή Πελάτη**
+**Διαγραφή πελάτη**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API Ιστοσελίδων (Sites API)
+### 2. API ιστότοπων {#2-sites-api}
 
-**Βασική Διαδρομή (Base Route):** `/sites`
+**Βασική διαδρομή:** `/sites`
 
-**Δημιουργία Ιστοσελίδας**
+**Δημιουργία ιστότοπου**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Η Νέα Ιστοσελίδα μου",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API Μητρησιויות (Memberships API)
+### 3. API συνδρομών {#3-memberships-api}
 
-**Βασική Διαδρομή (Base Route):** `/memberships`
+**Βασική διαδρομή:** `/memberships`
 
-**Δημιουργία Μητρησμίας**
+**Δημιουργία συνδρομής**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API Προϊόντων (Products API)
+### 4. API προϊόντων {#4-products-api}
 
-**Βασική Διαδρομή (Base Route):** `/products`
+**Βασική διαδρομή:** `/products`
 
-**Λήψη Όλων των Προϊόντων**
+**Λήψη όλων των προϊόντων**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API Πληρωμών (Payments API)
+### 5. API πληρωμών {#5-payments-api}
 
-**Βασική Διαδρομή (Base Route):** `/payments`
+**Βασική διαδρομή:** `/payments`
 
-**Δημιουργία Πληρωμής**
+**Δημιουργία πληρωμής**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API Τομέων (Domains API)
+### 6. API τομέων {#6-domains-api}
 
-**Βασική Διαδρομή (Base Route):** `/domains`
+**Βασική διαδρομή:** `/domains`
 
-**Εκ매핑 Τομέα**
+**Αντιστοίχιση τομέα**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint Εγγραφής (Registration Endpoint)
+## Τελικό σημείο εγγραφής {#registration-endpoint}
 
-Το endpoint `/register` παρέχει μια πλήρη ροή checkout/εγγραφής:
+Το τελικό σημείο `/register` παρέχει μια πλήρη ροή checkout/εγγραφής:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Η Νέα Ιστοσελίδα μου",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Απάντηση (Response):**
+**Απόκριση:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Απαντήσεις Σφάλματος (Error Responses)
+## Τελικά σημεία κυρίαρχων μισθωτών {#sovereign-tenant-endpoints}
+
+Το Ultimate Multisite: Multi-Tenancy 1.2.0 προσθέτει κάλυψη REST για κυρίαρχους μισθωτές για ενσωματώσεις που παρέχουν, επιθεωρούν ή επαληθεύουν απομονωμένους μισθωτές.
+
+Το ακριβές ωφέλιμο φορτίο αιτήματος εξαρτάται από την ενεργοποιημένη δυνατότητα του host, αλλά οι ενσωματώσεις θα πρέπει να αναμένουν αυτές τις ομάδες τελικών σημείων:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Χρησιμοποιήστε το τελικό σημείο bootstrap για να προετοιμάσετε το μητρώο μισθωτή, τη βάση δεδομένων, το σύστημα αρχείων και την κατάσταση δρομολόγησης. Χρησιμοποιήστε τα τελικά σημεία κατάστασης μετεγκατάστασης και επαλήθευσης πριν αλλάξετε την παραγωγική κίνηση. Χρησιμοποιήστε το τελικό σημείο διαγραφής για κυρίαρχη κατάργηση, ώστε τα διαπιστευτήρια βάσης δεδομένων να αφαιρεθούν μέσω της ροής εκκαθάρισης του addon.
+
+Οι τυπικές αποκρίσεις κατάστασης μετεγκατάστασης περιλαμβάνουν:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Αντιμετωπίστε το `ready: false` ως εμπόδιο πριν από την κυκλοφορία. Ελέγξτε τις λεπτομέρειες επαλήθευσης, διορθώστε τη σύνδεση host της βάσης δεδομένων, την ουρά, την παροχή χρηστών ή το ζήτημα δρομολόγησης και, στη συνέχεια, δοκιμάστε ξανά την επαλήθευση.
+
+## Αποκρίσεις σφαλμάτων {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Μη έγκυρη τιμή παραμέτρου",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Μη έγκυρο μορφότυπο email"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginação και Φιλτράρισμα (Pagination and Filtering)
+## Σελιδοποίηση και φιλτράρισμα {#pagination-and-filtering}
 
-**Παράμετροι Ερωτήματος (Query Parameters):**
+**Παράμετροι ερωτήματος:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Συχνές παράμετροι:
-- `per_page` - Πληροφορίες ανά σελίδα (default: 20, max: 100)
+Συνήθεις παράμετροι:
+- `per_page` - Στοιχεία ανά σελίδα (προεπιλογή: 20, μέγιστο: 100)
 - `page` - Αριθμός σελίδας
 - `search` - Όρος αναζήτησης
 - `orderby` - Πεδίο ταξινόμησης
 - `order` - Κατεύθυνση ταξινόμησης (asc/desc)
-- `status` - Φιλτράρισμα βάσει status
-- `date_created` - Φιλτράρισμα βάσει εύρους ημερομης
+- `status` - Φιλτράρισμα κατά κατάσταση
+- `date_created` - Φιλτράρισμα κατά εύρος ημερομηνιών

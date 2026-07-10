@@ -3,13 +3,13 @@ title: Vytváranie kódu zľavy
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Vytváranie zľavných kódov (v2)
+# Vytváranie zľavných kódov (v2) {#creating-discount-codes-v2}
 
 _**DÁVAJTE DOPÔRADNUTE: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
 S Ultimate Multisite môžete vytvárať zľavné kódy, aby ste svojim klientom poskytli zľavy na svoje ponuky. A ich vytvorenie je jednoduché!
 
-## Vytváranie a upravie zľavných kódov
+## Vytváranie a upravie zľavných kódov {#creating-and-editing-discount-codes}
 
 Aby ste mohli nový zľavný kód vytvoriť alebo upraviť, prejdite do **Ultimate Multisite > Discount Codes**.
 
@@ -85,7 +85,7 @@ Kupon je teraz v vašej zozname a z neho môžete kliknúť na **edit alebo dele
 
 ![Riadok kódu kuponu v zozname s hover akciami Edit a Delete](/img/config/discount-codes-list-hover.png)
 
-### Používanie URL parametrov:
+### Používanie URL parametrov: {#using-url-parameters}
 
 Ak chcete prispôsobiť svoje tabuľky cien alebo vytvoriť lepú stránku pre kód kuponu na vašej webovej stránke a chcete automaticky aplikovať kód zľavy na váš formulár na pokladni, môžete to urobiť pomocou URL parametrov.
 

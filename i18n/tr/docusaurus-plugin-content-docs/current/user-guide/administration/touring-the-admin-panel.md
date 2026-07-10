@@ -1,86 +1,122 @@
 ---
-title: Yönetim Panelini Gezme
+title: Yönetici Paneli Turu
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Yönetim Paneli Turu
+# Admin Paneli Gezintisi {#touring-the-admin-panel}
 
-Ultimate Multisite mümkün olduğunca basit ve anlaşılır olmayı hedefliyor, ancak bu denli güçlü bir araçta rehberli bir tur işinize yarayabilir. Yönetim sayfalarını birlikte inceleyelim ve size genel bir bakış sunalım.
+Ultimate Multisite mümkün olduğunca basit ve kendi kendini açıklayan bir yapıda olmayı hedefler, ancak bu kadar güçlü bir araçta rehberli bir tur faydalı olabilir. Yerleşmenize yardımcı olmak için admin sayfalarını birlikte inceleyelim.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite **Dashboard**'u, gelirler, site aktiviteleri, üyelik büyümesi, ziyaretçi sayıları ve coğrafi veriler dahil olmak üzere temel raporları ve analizleri gösterir.
+Ultimate Multisite **Dashboard**; gelirler, site etkinlikleri, üyelik büyümesi, ziyaretçi sayıları ve coğrafi veriler dahil temel raporları ve analizleri gösterir.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Dashboard’un tam görünümü burada:
 
-**Checkout Forms**, özel kayıt sayfaları oluşturmanızı sağlar. Alanları özelleştirebilir, özel class'lar ve script'ler ekleyebilir, ziyaretçinin ülkesine veya konumuna göre erişimi kısıtlayabilirsiniz.
+![Ultimate Multisite Dashboard tam sayfa](/img/admin/um-dashboard-full.png)
+
+Ve dashboard’un alt bölümü:
+
+![Ultimate Multisite Dashboard alt bölümü](/img/admin/um-dashboard-bottom.png)
+
+Ayrıca network dashboard’un tam görünümü de burada:
+
+![Network Dashboard tam sayfa](/img/admin/network-dashboard-full-page.png)
+
+## Checkout Forms {#checkout-forms}
+
+**Checkout Forms**, özel kayıt sayfaları oluşturma esnekliği sağlar. Alanları özelleştirebilir, özel sınıflar ve betikler ekleyebilir, ziyaretçinin ülkesine veya konumuna göre erişimi kısıtlayabilirsiniz.
 
 ![Checkout Forms listesi](/img/admin/checkout-forms-list.png)
 
-## Products
+## Ürünler {#products}
 
-**Products** bölümü, ağınız için farklı planlar, paketler ve hizmetler oluşturduğunuz yerdir. Fiyatları, faturalandırma sıklıklarını ve limit ile kotaları ürün düzeyinde tanımlayabilirsiniz.
+**Ürünler** bölümü, ağınız için farklı planlar, paketler ve hizmetler oluşturduğunuz yerdir. Fiyatları, faturalandırma sıklıklarını ve sınırları ile kotaları ürün düzeyinde tanımlayın.
 
-![Products listesi](/img/admin/products-list.png)
+![Ürünler listesi](/img/admin/products-list.png)
 
-## Memberships
+## Üyelikler {#memberships}
 
-**Memberships** sayfası, ağınızdaki tüm abonelikleri gösterir. Planlar, ürünler, faturalandırma tutarları ve sıklıkları, ödeme geçmişi ve zaman damgaları dahil olmak üzere abonelik detaylarını inceleyebilir ve düzenleyebilirsiniz.
+**Üyelikler** sayfası, ağınızdaki tüm abonelikleri gösterir. Planlar, ürünler, faturalandırma tutarları ve sıklıkları, ödeme geçmişi ve zaman damgaları dahil abonelik ayrıntılarını inceleyin ve düzenleyin.
 
-![Memberships listesi](/img/admin/memberships-list.png)
+![Üyelikler listesi](/img/admin/memberships-list.png)
 
-## Payments
+## Ödemeler {#payments}
 
-**Payments** sayfası, tüm ağınızdaki ödeme geçmişini hızlıca görüntülemenizi sağlar. Belirli ürünler ve tutarlar dahil ayrıntılı işlem bilgilerini içerir.
+**Ödemeler** sayfası, belirli ürünler ve tutarlar dahil ayrıntılı işlem bilgileriyle tüm ağınızdaki ödeme geçmişinin hızlı bir görünümünü sağlar.
 
-![Payments listesi](/img/admin/payments-list.png)
+![Ödemeler listesi](/img/admin/payments-list.png)
 
-## Customers
+## Müşteriler {#customers}
 
-**Customers** sayfası, ağınızda kayıtlı tüm üyeleri temel kullanıcı bilgileriyle birlikte gösterir: ad, e-posta adresi, son giriş tarihi ve alt sitelerine giriş yapmanızı sağlayan "geçiş yap" bağlantısı.
+**Müşteriler** sayfası, ad, e-posta adresi, son giriş ve alt sitelerine giriş yapmak için bir "geçiş yap" bağlantısı dahil temel kullanıcı bilgileriyle ağınızda kayıtlı tüm üyeleri gösterir.
 
-![Customers listesi](/img/admin/customers-list.png)
+![Müşteriler listesi](/img/admin/customers-list.png)
 
-## Sites
+## Siteler {#sites}
 
-**Sites** sayfası, site şablonları ve müşterilere ait siteler dahil olmak üzere ağınızdaki tüm alt siteleri listeler. Eşlenmiş alan adlarını, limit ve kotaları, plugin'leri ve temaları, site küçük resimlerini kolayca yönetebilirsiniz.
+**Siteler** sayfası, site şablonları ve müşterilere ait siteler dahil ağınızdaki tüm alt siteleri listeler. Eşlenmiş alan adlarını, sınırları ve kotaları, plugin’leri ve theme’leri ve site küçük resimlerini kolayca yönetin.
 
-![Sites listesi](/img/admin/sites-list.png)
+![Siteler listesi](/img/admin/sites-list.png)
 
-## Domains
+## Alan Adları {#domains}
 
-**Domains** sayfası, alt sitelere eşlenmiş özel alan adlarına ayrılmıştır. Süper yönetici olarak özel alan adlarını manuel olarak ekleyebilir veya eşleyebilir, DNS kayıtlarını ve logları görüntüleyebilirsiniz.
+**Alan Adları** sayfası, alt sitelere eşlenmiş özel alan adlarına ayrılmıştır. Super admin olarak özel alan adlarını manuel olarak ekleyebilir veya eşleyebilir; DNS kayıtlarını ve günlükleri görüntüleyebilirsiniz.
 
-![Domains listesi](/img/admin/domains-list.png)
+![Alan Adları listesi](/img/admin/domains-list.png)
 
-## Discount Codes
+## İndirim Kodları {#discount-codes}
 
-**Discount Codes**, son kullanıcılarınıza indirim sunmak için kupon kodları oluşturmanızı sağlar. İndirim değerini belirleyebilir ve belirli kullanıcıları veya grupları hedefleyebilirsiniz.
+**İndirim Kodları**, son kullanıcılarınıza indirim sunmak için kupon kodları oluşturmanızı sağlar. İndirim değerini belirtin ve belirli kullanıcıları veya grupları hedefleyin.
 
-![Discount Codes listesi](/img/admin/discount-codes-list.png)
+![İndirim Kodları listesi](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Duyurular {#broadcasts}
 
-**Broadcasts**, alt site kullanıcılarınıza duyuru yapmanızı veya özel mesaj göndermenizi sağlayan bir araçtır. Abone oldukları plan veya ürüne göre belirli kullanıcı gruplarını hedefleyebilirsiniz.
+**Duyurular**, alt site kullanıcılarınıza duyurular yayınlamak veya özel mesajlar göndermek için kullanılan bir araçtır. Abone oldukları plana veya ürüne göre belirli kullanıcı gruplarını hedefleyin.
 
-![Broadcasts listesi](/img/admin/broadcasts-list.png)
+![Duyurular listesi](/img/admin/broadcasts-list.png)
 
-## Settings
+## Ayarlar {#settings}
 
-**Settings** sayfası, Ultimate Multisite'ı yapılandırdığınız yerdir — kayıt ayarları, ödemeler, API ve webhook'lar, alan adı eşleme ve diğer entegrasyonlar.
+**Ayarlar** sayfası, Ultimate Multisite’ı yapılandırdığınız yerdir — kayıt ayarları, ödemeler, API ve webhooks, alan adı eşleme ve diğer entegrasyonlar.
 
-![Settings sayfası](/img/admin/settings-general.png)
+AI connector ayarları, şu anda desteklenen OAuth provider havuzlarını listeler: Anthropic Max, OpenAI ChatGPT/Codex ve Google AI Pro. Her provider kartı, super admin’lerin account’ları bağlamasına, kaydedilmiş account’ları yenilemesine, account’ları e-postaya göre kaldırmasına ve sandbox ortamı tarayıcı yönlendirmesini engellediğinde manuel OAuth yedek yöntemini kullanmasına olanak tanır. Cursor Pro kurulum seçenekleri admin panelinden kaldırılmıştır.
 
-## Events
+ChatGPT/Codex account’ları, işlemin araçlara izin verdiği yerlerde connector destekli araç kullanımını destekler; böylece connector destekli işlemlere bağlı admin iş akışları, OpenAI account’u bağlandıktan sonra Codex araç davranışını kullanabilir.
 
-**Events** sayfası, ağınızdaki tüm olayların ve logların kaydını tutar. Plan değişiklikleri, kayıtlar ve diğer hareketleri takip eder — multisite'ınızı izlemek için oldukça kullanışlıdır.
+![Ayarlar sayfası](/img/admin/settings-general.png)
 
-![Events listesi](/img/admin/events-list.png)
+Genel ayarlar sayfasının tam görünümü burada:
 
-## Webhooks
+![Ayarlar genel tam sayfa](/img/admin/settings-general-full.png)
 
-**Webhooks**, başka bir uygulamaya veri göndermenizi sağlar. Ultimate Multisite'tan Zapier gibi platformlara veri göndermek için kullanışlıdır.
+Ve e-posta ayarları sayfası:
+
+![Ayarlar e-postalar tam sayfa](/img/admin/settings-emails-full.png)
+
+Ve ödeme ayarları sayfası:
+
+![Ayarlar ödemeler tam sayfa](/img/admin/settings-payments-full.png)
+
+Ve ödeme ayarlarının alt bölümü:
+
+![Ayarlar ödemeler alt bölümü](/img/admin/settings-payments-bottom.png)
+
+Ve site ayarları sayfası:
+
+![Ayarlar siteler tam sayfa](/img/admin/settings-sites-full.png)
+
+## Etkinlikler {#events}
+
+**Etkinlikler** sayfası, ağınızdaki tüm etkinliklerin ve günlüklerin kaydını tutar. Plan değişiklikleri, kayıtlar ve diğer hareketler gibi etkinlikleri izler — multisite’ınızı takip etmek için kullanışlıdır.
+
+![Etkinlikler listesi](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks**, verileri başka bir uygulamaya iletmenizi sağlar. Ultimate Multisite’tan Zapier gibi platformlara veri göndermek için kullanışlıdır.
 
 ![Webhooks listesi](/img/admin/webhooks-list.png)

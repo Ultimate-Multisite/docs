@@ -3,11 +3,11 @@ title: Estetika de Design Sistemo Skilo
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetika Hile
+# Design System Estetika Hile {#design-system-aesthetics-skill}
 
 La **Design System Estetika hile** estas gvidita metodo por plenumi vian sita's vizual identecon. Ĝi helpas vi fari konsistencajn decisionojn pri tipografia, koloroj, espaco kaj movi token'oj, kiuj definas vian design systemon.
 
-## Kion estas Design System Estetika?
+## Kion estas Design System Estetika? {#what-is-design-system-aesthetics}
 
 Design System Estetika estas struktura hile, kiu cakvas:
 
@@ -20,9 +20,9 @@ Design System Estetika estas struktura hile, kiu cakvas:
 
 Ĉi ti decisionoj estas kaptitaj en vian temo's `theme.json` fakto, kreante kohezivan vizual sistemon.
 
-## Kion uzui Design System Estetikon?
+## Kion uzui Design System Estetikon? {#why-use-design-system-aesthetics}
 
-### Konsistenco
+### Konsistenco {#consistency}
 
 Design system garantias:
 
@@ -31,7 +31,7 @@ Design system garantias:
 - Espaco sekvas predekdban pateron
 - Animoj sentas unueco
 
-### Efikeco
+### Efikeco {#efficiency}
 
 En elio de fari design decisionojn paĝe per paĝo, vi:
 
@@ -39,7 +39,7 @@ En elio de fari design decisionojn paĝe per paĝo, vi:
 - Aplikas ilin ĉie
 - Modernigas globalan per ŝanĝi unan valoron
 
-### Flexibilidade
+### Flexibilidade {#flexibility}
 
 Vi povas:
 
@@ -47,9 +47,9 @@ Vi povas:
 - Eksperari kun diversaj estetikoj
 - Konservi markbrandkonsistenco dum evoluo
 
-## Kion provo Design System Estetikon?
+## Kion provo Design System Estetikon? {#triggering-the-design-system-aesthetics-skill}
 
-### Manua Aktivado
+### Manua Aktivado {#manual-activation}
 
 Vi povas komenci la hile en kiam kiel vi volas:
 
@@ -69,7 +69,7 @@ aŭ
 "Guide me through design system decisions"
 ```
 
-### Automatikaj Sugestioj
+### Automatikaj Sugestioj {#automatic-suggestions}
 
 Agentoj povas sugesti uzu la hile, kiam vi:
 
@@ -78,9 +78,9 @@ Agentoj povas sugesti uzu la hile, kiam vi:
 - Volas plibonigi vizual konsistenco
 - Estas preparita por elŝuti vian siton
 
-## La Proceso Estético del Sistema de Diseño
+## La Proceso Estético del Sistema de Diseño {#the-design-system-aesthetics-process}
 
-### Paso 1: Tipografía
+### Paso 1: Tipografía {#step-1-typography}
 
 El agente pregunta sobre tus elecciones de fuente:
 
@@ -110,7 +110,7 @@ El agente luego define:
 - **Escala de pesos (Weight scale)**: Pesos de fuente (regular, medio, negrita, etc.)
 - **Altura de línea (Line height)**: Espaciado entre líneas para la legibilidad
 
-### Paso 2: Paleta de Colores
+### Paso 2: Paleta de Colores {#step-2-color-palette}
 
 ```
 Definamos tu paleta de colores.
@@ -140,7 +140,7 @@ El agente crea una paleta completa que incluye:
 - Colores semánticos (éxito, advertencia, error)
 - Estados de paso (hover) y activos (active states)
 
-### Paso 3: Espaciado
+### Paso 3: Espaciado {#step-3-spacing}
 
 Kiel respiri la vol vi uzu?
 
@@ -160,7 +160,7 @@ La agente definas spacing tokens:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Specifika valoroj por paddingo, marginoj, gapoj
 
-### Paŝo 4: Borderaj kaj Šedoj
+### Paŝo 4: Borderaj kaj Šedoj {#step-4-borders-and-shadows}
 
 ```
 Viza profundaj kaj definitaĵo:
@@ -183,7 +183,7 @@ La agente kreas:
 - Šedo tokens por niveloj de elevitaĝo
 - Borderio largteco tokens
 
-### Paŝo 5: Movado kaj Animado
+### Paŝo 5: Movado kaj Animado {#step-5-motion-and-animation}
 
 ```
 Kiel tembeĝiĝos viaj dum interaktivaj?
@@ -205,9 +205,9 @@ La agente definas:
 - Easing funkcioj (ease-in, ease-out, ease-in-out)
 - Animado keyframe'oj por malsamaj interakcioj
 
-## Apliko de Estetiko de Design System
+## Apliko de Estetiko de Design System {#applying-design-system-aesthetics}
 
-### Automata Apliko
+### Automata Apliko {#automatic-application}
 
 Post kiam vi finas la abilitecon, la agente:
 
@@ -216,7 +216,7 @@ Post kiam vi finas la abilitecon, la agente:
 3. Regeneras blokaj stilojn por korespondi kun la nova sistema
 4. Aktivigas la modernizitan temon
 
-### Manua Apliko
+### Manua Apliko {#manual-application}
 
 Vi ankaŭ povas modifi `theme.json` direkte:
 
@@ -255,9 +255,9 @@ Vi ankaŭ povas modifi `theme.json` direkte:
 }
 ```
 
-## Ĝi Viesian Vian Sistemin
+## Ĝi Viesian Vian Sistemin {#viewing-your-design-system}
 
-### Demando de la Agenta
+### Demando de la Agenta {#ask-the-agent}
 
 ```
 "Montre mi la sisteme de diseno"
@@ -271,13 +271,13 @@ aŭ
 
 La agente montros vian tipografion, kolorojn, espacadon kaj aliajn tokenojn.
 
-### Vidi theme.json
+### Vidi theme.json {#view-themejson}
 
 Opun `/wp-content/themes/[theme-name]/theme.json` en teksta redaktoro por vidi la raw definicio de tokenoj.
 
-## Modernig Vian Sistemin
+## Modernig Vian Sistemin {#updating-your-design-system}
 
-### Rapida Modernigoj
+### Rapida Modernigoj {#quick-updates}
 
 Demando de la agente pri specifaj ŝanĝoj:
 
@@ -297,7 +297,7 @@ aŭ
 "Mangi la titolfonton al serifa"
 ```
 
-### Plena Redizajno
+### Plena Redizajno {#full-redesign}
 
 Rianfari la abiliteco de Estetiko de Sistemo de Diseno:
 
@@ -307,7 +307,7 @@ Rianfari la abiliteco de Estetiko de Sistemo de Diseno:
 
 Tio guidos vin per ĉiuj decisionoj pliaŭ, komencante kun viaj aktualaj valoroj.
 
-### Partiaj Modernigoj
+### Partiaj Modernigoj {#partial-updates}
 
 Modernizi specifajn aspektojn:
 
@@ -315,15 +315,15 @@ Modernizi specifajn aspektojn:
 "Plie modernizi la kolorpaleton, sekvi ĉion aliajn"
 ```
 
-## La Mejterpraktikoj de Sistemo de Diseno
+## La Mejterpraktikoj de Sistemo de Diseno {#design-system-best-practices}
 
-### Konsisteco
+### Konsisteco {#consistency-1}
 
 - Uzu la saman tokenojn ĉie.
 - Ne kreu unu-tari koloro aŭ bazon.
 - Referu tokenojn en sto ke vi ne kodigas valorojn direkte.
 
-### Nomado
+### Nomado {#naming}
 
 Uzu clarajn, semantajn nomojn:
 
@@ -333,7 +333,7 @@ Uzu clarajn, semantajn nomojn:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabileco
+### Skalabileco {#scalability}
 
 Projekti desti skalari:
 
@@ -341,7 +341,7 @@ Projekti desti skalari:
 - Skalojn (xs, sm, md, lg, xl) kreonte, enveco valoro uzante.
 - La estonteco de la estonteco de nova elementoj plani.
 
-### Dokumenti la sistemon de design
+### Dokumenti la sistemon de design {#documentation}
 
 Dokumenti vian sistemon de design:
 
@@ -349,9 +349,9 @@ Dokumenti vian sistemon de design:
 - Kiam uzuante ĉion tokenon
 - Egzcepcioj kaj limigaj kazoj
 
-## Komuna Design System Pateroj
+## Komuna Design System Pateroj {#common-design-system-patterns}
 
-### Moderna Minimalista
+### Moderna Minimalista {#modern-minimalist}
 
 - Sans-serif tipografia (Inter, Helvetica)
 - Limita kolorparto (2-3 koloroj)
@@ -359,7 +359,7 @@ Dokumenti vian sistemon de design:
 - Subtaŭaj ombraj (shadows)
 - Fluaj, rapide animoj
 
-### Kalda kaj Amika
+### Kalda kaj Amika {#warm-and-friendly}
 
 - Miksaĵo de serif kaj sans-serif
 - Kalda kolorparto (oranjoj, kaldegrējoj)
@@ -367,7 +367,7 @@ Dokumenti vian sistemon de design:
 - Maltaj ombraj
 - Ludiga animoj
 
-### Profesila Korporativa
+### Profesila Korporativa {#professional-corporate}
 
 - Pulita sans-serif (Roboto, Open Sans)
 - Neutrala kolorparto kun akcento koloroj
@@ -375,7 +375,7 @@ Dokumenti vian sistemon de design:
 - Minimalaj ombraj
 - Subtaŭaj transitoj (transitions)
 
-### Kreativa kaj Bolda
+### Kreativa kaj Bolda {#creative-and-bold}
 
 - Distingiva tipografia
 - Bolda kolorparto
@@ -383,7 +383,7 @@ Dokumenti vian sistemon de design:
 - Fortaj ombraj
 - Noteblaj animoj
 
-## Problemoresolviĝo
+## Problemoresolviĝo {#troubleshooting}
 
 **Mia design sistemaj ŝanĝoj ne montras**
 - Limigu la cache de via brauzero (clear your browser cache)
@@ -401,7 +401,7 @@ Dokumenti vian sistemon de design:
 - Manuele modifi theme.json al antaŭaj valoroj
 - Rete diri la skilon per diversajn elecojn
 
-## Proksma Paŝo
+## Proksma Paŝo {#next-steps}
 
 Post definita vian design sistema:
 

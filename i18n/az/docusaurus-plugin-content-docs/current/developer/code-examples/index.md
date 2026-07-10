@@ -3,11 +3,11 @@ title: Təkmil Kod Nümunələri
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# İrəli Kod Nümunələri
+# İrəli Kod Nümunələri {#advanced-code-examples}
 
 Bu nümunələr Ultimate Multisite ilə irəli inteqrasiya modellərini göstərir.
 
-## Dinamik Qiymətləndirmə Mühərriki
+## Dinamik Qiymətləndirmə Mühərriki {#dynamic-pricing-engine}
 
 Bu, həcm, sadiqlik və mövsimlə bağlı endirimləri tətbiq edən qaydalara əsaslanan bir qiymətləndirmə mühərrikindir:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## İrəli Sayt Təminatı
+## İrəli Sayt Təminatı {#advanced-site-provisioning}
 
 Plan xüsusiyyətlərinə əsasən yeni saytları pluginlər, SSL, CDN, backup və monitorinq vasitəsilə avtomatik konfiqurasiya edin:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Xüsusi Məhdudiyyətlər Sistemi
+## Xüsusi Məhdudiyyətlər Sistemi {#custom-limitations-system}
 
 İstifadə məhdudiyyətlərini izləyin və tətbiq edin, istifadə xəbərdarlığı ilə birlikdə:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomik Sayğac `increment_item()` ilə
+## BerlinDB Atomik Sayğac `increment_item()` ilə {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1, BerlinDB `Query` sinifinə `increment_item()` metodu əlavə edib. Bu metodu oxu-dəyişdir-yazma yarışları olmadan, rəqəmsal sütunlar üzərində təhlükəsiz, atomik artım yerinə yetirmək üçün istifadə edin — bu, sayğaclar, istifadə kvotaları və eyni anda gələn sorğular altında işləyən rate-limiting yoxlamaları üçün faydalıdır.
 
-### Metod imzası
+### Metod imzası {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1, BerlinDB `Query` sinifinə `increment_item()` metodu 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Əsas istifadə
+### Əsas istifadə {#basic-usage}
 
 ```php
 // 42 membership ID üçün `api_calls` sütununa 1 əlavə edin.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Hər bir membership üçün API istifadəsinin izlənilməsi
+### Hər bir membership üçün API istifadəsinin izlənilməsi {#tracking-api-usage-per-membership}
 
 Membership başına API rate limitlərini tətbiq etmək üçün praktik bir model:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Niyə `increment_item()` və `update_item()` deyil?
+### Niyə `increment_item()` və `update_item()` deyil? {#why-incrementitem-instead-of-updateitem}
 
 Sadə bir oxu-dəyişdir-yazma yanaşması eyni anda gələn sorğular altında təhlükəsiz deyil:
 

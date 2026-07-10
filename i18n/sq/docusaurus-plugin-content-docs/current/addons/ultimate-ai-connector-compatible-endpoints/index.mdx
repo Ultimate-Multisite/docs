@@ -1,0 +1,111 @@
+---
+title: Konektori Ultimate AI për endpoint-e të përputhshme
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector për pika fundore të pajtueshme {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector për pika fundore të pajtueshme integron API-të e ofruesve AI të pajtueshëm me OpenAI me rrjetin tuaj multisite WordPress. Konfiguroni disa ofrues AI — secili me URL-në e vet të pikës fundore, çelësin API dhe modelin e parazgjedhur — dhe drejtoni kërkesat me kalim rezervë automatik kur një ofrues nuk është i disponueshëm.
+
+## Veçoritë kryesore {#key-features}
+
+- **Mbështetje për shumë ofrues**: Shtoni disa karta ofruesish AI, secila me URL-në e vet të pikës fundore, çelësin API dhe modelin e parazgjedhur
+- **Tërhiq për të rirenditur**: Rregulloni ofruesit sipas përparësisë duke përdorur dorezën e kapjes në secilën kartë; kërkesat përdorin ofruesit sipas radhës
+- **Drejtim automatik me kalim rezervë**: Nëse ofruesi kryesor nuk është i disponueshëm, kërkesat kalojnë automatikisht te ofruesi tjetër i konfiguruar
+- **Konfigurim për secilin ofrues**: Çdo ofrues konfigurohet në mënyrë të pavarur me kredencialet dhe përzgjedhjen e vet të modelit
+- **UI cilësimesh me bazë kartash**: Ndërtuar mbi komponentët e qëndrueshëm Card të WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Zgjerim automatik gjatë shtimit**: Kartat e reja të ofruesve zgjerohen automatikisht që të mund të plotësoni menjëherë detajet
+- **Anashkalim i cache-it të skripteve**: Skriptet e ofruesve anashkalojnë cache-in gjatë përditësimit të shtojcës për të siguruar që ngarkohet versioni më i fundit
+
+## Kërkesat {#requirements}
+
+- WordPress 5.3 ose më i lartë
+- PHP 7.4 ose më i lartë
+- shtojca Ultimate Multisite (aktive)
+- Një pikë fundore API e pajtueshme me OpenAI (e vetëhostuar ose nga palë të treta)
+
+## Instalimi {#installation}
+
+1. Ngarkoni skedarët e shtesës në direktoriumin tuaj `/wp-content/plugins/`
+2. Aktivizoni shtojcën përmes menysë 'Plugins' në WordPress
+3. Shkoni te **Ultimate Multisite → AI Connector** për të konfiguruar shtesën
+
+## Konfigurimi {#configuration}
+
+### Konfigurimi me shumë ofrues {#multi-provider-setup}
+
+Ekrani i konfigurimit përdor një paraqitje me bazë kartash ku çdo kartë përfaqëson një ofrues AI. Mund të shtoni aq ofrues sa ju nevojiten.
+
+#### Shtimi i një ofruesi {#adding-a-provider}
+
+1. Shkoni te **Ultimate Multisite → AI Connector** në administrimin e rrjetit
+2. Klikoni **Shto ofrues**
+3. Shfaqet një kartë e re ofruesi dhe zgjerohet automatikisht
+4. Plotësoni detajet e ofruesit:
+   - **Emri i ofruesit** — një etiketë për të identifikuar këtë ofrues (p.sh. "OpenAI", "Mistral", "Local Ollama")
+   - **URL e pikës fundore** — URL-ja bazë e API-së së pajtueshme me OpenAI (p.sh. `https://api.openai.com/v1`)
+   - **Çelësi API** — çelësi juaj API për këtë ofrues
+   - **Modeli i parazgjedhur** — identifikuesi i modelit që do të përdoret si parazgjedhje për këtë ofrues (p.sh. `gpt-4o`, `mistral-small`)
+5. Klikoni **Ruaj cilësimet**
+
+#### Heqja e një ofruesi {#removing-a-provider}
+
+Klikoni butonin **Hiq** në cilëndo kartë ofruesi për ta fshirë atë. Ruani cilësimet për të aplikuar ndryshimin.
+
+#### Rirenditja e ofruesve {#reordering-providers}
+
+Tërhiqni ikonën e kapjes (⣿) në anën e majtë të cilësdo kartë ofruesi për ta rirenditur. Rendi përcakton përparësinë e kalimit rezervë: kërkesat dërgohen te ofruesi i parë dhe kalojnë te ofruesit pasues nëse një kërkesë dështon.
+
+### Drejtimi me kalim rezervë {#fallback-routing}
+
+Kur një kërkesë te ofruesi kryesor dështon — për shkak të një tejkalimi kohe, kufiri norme ose ndërprerjeje shërbimi — lidhësi riprovon automatikisht me ofruesin tjetër në listë. Kjo vazhdon poshtë listës derisa një ofrues të ketë sukses ose të jenë provuar të gjithë ofruesit.
+
+| Skenari | Sjellja |
+|----------|-----------|
+| Ofruesi kryesor përgjigjet | Kërkesa shërbehet normalisht |
+| Ofruesi kryesor dështon | Kërkesa riprovohet me ofruesin tjetër |
+| Të gjithë ofruesit dështojnë | Gabimi i kthehet thirrësit |
+
+Kalimi rezervë është transparent për shtojcën ose temën thirrëse — ato marrin ose një përgjigje të suksesshme, ose një gabim përfundimtar, pavarësisht sa ofrues u provuan.
+
+### Referenca e konfigurimit të ofruesit {#provider-configuration-reference}
+
+| Fusha | E detyrueshme | Përshkrimi |
+|-------|----------|-------------|
+| Emri i ofruesit | Po | Etiketa e shfaqjes për këtë ofrues |
+| URL e pikës fundore | Po | URL-ja bazë e API-së së pajtueshme me OpenAI |
+| Çelësi API | Po | Çelësi i autentikimit për këtë ofrues |
+| Modeli i parazgjedhur | Po | Identifikuesi i modelit që përdoret kur në kërkesë nuk specifikohet asnjë model |
+
+## Zgjidhja e problemeve {#troubleshooting}
+
+### Nuk shfaqen ofrues {#no-providers-are-listed}
+
+Nëse lista e ofruesve është bosh pas ruajtjes, konfirmoni që:
+
+- Keni klikuar **Ruaj cilësimet** pas shtimit të ofruesve
+- Shfletuesi juaj nuk e bllokoi ruajtjen e faqes së cilësimeve (kontrolloni konsolën e shfletuesit për gabime JavaScript)
+- Shtojca është aktive dhe jeni në ekranin e administrimit të rrjetit
+
+### Kërkesat po dështojnë për të gjithë ofruesit {#requests-are-failing-for-all-providers}
+
+- Verifikoni që URL-ja e pikës fundore të secilit ofrues është e arritshme nga serveri juaj (jo vetëm nga shfletuesi juaj)
+- Kontrolloni që çdo çelës API është i vlefshëm dhe nuk ka skaduar
+- Rishikoni statusin e kufirit të normës dhe kuotës së ofruesit në panelin e tyre
+- Aktivizoni regjistrimin e debug në WordPress (`WP_DEBUG_LOG`) për të kapur mesazhe të detajuara gabimi nga lidhësi
+
+### Një ofrues nuk po përdoret për kalim rezervë {#a-provider-is-not-being-used-for-fallback}
+
+Tërheqja për rirenditje ndryshon rendin e kalimit rezervë. Konfirmoni që ofruesi që prisni të marrë kërkesa rezervë është pozicionuar saktë në listë dhe që URL-ja e tij e pikës fundore dhe çelësi API janë të sakta.
+
+### Karta e re e ofruesit nuk zgjerohet automatikisht {#new-provider-card-does-not-expand-automatically}
+
+Zgjerimi automatik kërkon që JavaScript të jetë i aktivizuar në shfletuesin tuaj. Nëse karta nuk zgjerohet gjatë klikimit, kontrolloni konsolën e shfletuesit për gabime. Përmbajtja e kartës është gjithmonë e aksesueshme duke klikuar kokën e kartës edhe nëse zgjerimi automatik nuk aktivizohet.
+
+## Regjistri i ndryshimeve {#changelog}
+
+Shihni [Regjistri i ndryshimeve](./changelog) për historikun e plotë të versioneve.

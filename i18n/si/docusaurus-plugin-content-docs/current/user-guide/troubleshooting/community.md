@@ -3,7 +3,7 @@ title: සමාජය
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimates Multisite ප්‍රජාවට සම්බන්ධ වීම
+# Ultimates Multisite ප්‍රජාවට සම්බන්ධ වීම {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community කියන්නේ අනිත් Ultimate Multisite පරිශීලකයන් සමඟ සම්බන්ධ වෙන්න, උපදෙස්, අත්දැකීම් සහ තවත් දේවල් බෙදාගන්න පුළුවන් තැනක්. Ultimate Multisite Community වෙත පිවිසීමට https://community.ultimatemultisite.com/home වෙත යන්න.
 

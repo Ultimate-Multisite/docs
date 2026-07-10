@@ -1,0 +1,116 @@
+---
+title: Kacocogan Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Kompatibilitas Tutor Multisite {#tutor-multisite-compatibility}
+
+Tambahan WordPress sing nambahake perbaikan kompatibilitas kanggo Tutor LMS ing lingkungan multisite.
+
+## Katrangan {#description}
+
+Tambahan iki nyedhiyakake perbaikan kompatibilitas wigati kanggo mbukak Tutor LMS ing jaringan multisite WordPress. Iki nangani pendaftaran pangguna, pangelolaan instruktur, watesan kursus, lan fungsi liyane sing khusus kanggo multisite.
+
+## Fitur {#features}
+
+- **Pangaturan Tabel Basis Data**: Kanthi otomatis ndeteksi lan nggawe tabel Tutor LMS sing ilang amarga gagal merga watesan foreign key multisite
+- **Pendaftaran Pangguna Multisite**: Panangan AJAX kustom kanggo ngatur pendaftaran pangguna ing antarane situs jaringan
+- **Pangaturan Peran Instruktur**: Penetapan lan pangaturan peran instruktur kanthi otomatis ing lingkungan multisite
+- **Watesan Kursus**: Integrasi karo Ultimate Multisite kanggo ngatur watesan nggawe kursus lan corong adhedhasar plan situs
+- **Tampilan Admin Kustom**: Dhaptar instruktur lan antarmuka pangaturan sing ngerti multisite
+- **Piranti Admin**: Antarmuka pangaturan basis data kanggo pangurus jaringan lan situs
+
+## Syarat {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tambahan Tutor LMS (kanthi otomatis diwajibake liwat header `Requires Plugins`)
+- Instalasi WordPress Multisite
+- Tambahan Ultimate Multisite (kanggo fungsi watesan kursus)
+
+## Instalasi {#installation}
+
+1. Unggah berkas tambahan menyang `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Pesthekake Tutor LMS wis diinstal lan diaktifake
+3. Aktifake tambahan liwat menu 'Tambahan' ing WordPress
+4. Tambahan bakal kanthi otomatis terintegrasi karo Tutor LMS
+
+## Struktur Berkas {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Fungsi sing Dipindhah saka MU plugin {#functionality-moved-from-mu-plugin}
+
+Tambahan iki ngemot fungsi sing sadurunge ana ing `wp-content/mu-plugins/daves.php`:
+
+- Watesan owah-owahan status kursus
+- Watesan nggawe kursus
+- Integrasi lan watesan CartFlows
+- Pangaturan peran instruktur Tutor
+- Penanganan pendaftaran pangguna multisite
+- Tampilan ID produk kursus
+
+## Pangaturan Basis Data {#database-management}
+
+### Masalah {#the-problem}
+
+Ing lingkungan multisite WordPress, nggawe tabel Tutor LMS gagal kanggo tabel sing nduweni watesan foreign key menyang tabel users. Iki kedadeyan amarga:
+
+- Tabel khusus situs nggunakake prefiks kaya `wp_2_tutor_carts`
+- Foreign key ngrujuk menyang `wp_2_users` (sing ora ana)
+- Tabel users sing sejatine yaiku `wp_users` (dienggo bareng ing saindhenging jaringan)
+
+### Solusi {#the-solution}
+
+Tambahan iki kanthi otomatis:
+
+1. **Ndeteksi Tabel sing Ilang**: Mriksa tabel sing gagal digawe amarga watesan foreign key
+2. **Nggawe Tabel nganggo Rujukan sing Bener**: Nggunakake jeneng tabel pangguna sing trep (`wp_users` ing multisite)
+3. **Nangani Pirang-pirang Skenario**:
+   - Aktivasi/reaktivasi tambahan
+   - Nggawe situs anyar ing jaringan
+   - Mriksa tabel kanthi manual liwat antarmuka admin
+
+### Tabel sing Kena Pengaruh {#affected-tables}
+
+- `tutor_coupon_usages` - Ngemot foreign key menyang tabel users
+- `tutor_carts` - Ngemot foreign key menyang tabel users
+- `tutor_notification_preferences` - Tabel TutorPro nganggo foreign key menyang tabel users
+
+### Antarmuka Admin {#admin-interface}
+
+Akses piranti pangaturan basis data ing:
+
+- **Admin Jaringan**: Setelan → Tutor Multisite DB
+- **Admin Situs**: Piranti → Tutor Multisite DB
+
+Antarmuka iki ngidini sampeyan:
+- Ndeleng tabel sing ilang ing kabeh situs
+- Micu nggawe tabel kanthi manual
+- Mriksa konfigurasi basis data
+- Ndeleng informasi status sing rinci
+
+## Dhukungan {#support}
+
+Tambahan iki dirancang khusus kanggo platform KursoPro. Kanggo dhukungan teknis, hubungi tim pangembang.

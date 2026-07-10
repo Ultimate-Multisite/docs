@@ -3,18 +3,18 @@ title: Teema ehitamise võimalused
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Teemaehundlikud võimalused: Bloki teemide rakendamine ja aktiveerimine
+# Teemaehundlikud võimalused: Bloki teemide rakendamine ja aktiveerimine {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 sisaldab kaks võimasid võimalust, mis võimaldavad teil luua ja lahendada oma isiklikud blokteemad otse chati paigutuse kaudu.
 
-## Üldkoppe
+## Üldkoppe {#overview}
 
 **scaffold-block-theme** ja **activate-theme** võimalused võimaldavad agentide:
 - Luua täielikult valmis, tootmiks sobiva blokteemad teie spetsifikatsioonide põhjal
 - Aktiveerida teemad oma veebileil automaatselt ilma manuaalset seadistustel
 - Luua ühise visuaalse identiteedi juhendatud disainide otsuste abil
 
-## Bloki teema rakendamine (Scaffold Block Theme)
+## Bloki teema rakendamine (Scaffold Block Theme) {#scaffold-block-theme}
 
 **scaffold-block-theme** võimalus luuab uue WordPress blokteema, mis sisaldab täieliku teemastruktuuri, sealhulgas:
 
@@ -23,7 +23,7 @@ Superdav AI Agent v1.12.0 sisaldab kaks võimasid võimalust, mis võimaldavad t
 - Kasutatud blokkide stiilid ja variantid
 - Teema metadand ja toetuse deklaratsioonid
 
-### Kuidas kasutada
+### Kuidas kasutada {#how-to-invoke}
 
 Chatist Superdav AI Agentiga saate teema loomise küsimuse esitada:
 
@@ -37,7 +37,7 @@ Agent teeb järgmised asjad:
 3. Kõik vajalikud teema failide valmistamine
 4. Teema aktiveerimiseks valmis valmistamine
 
-### Ootatud väljund
+### Ootatud väljund {#expected-output}
 
 Kui võimalus edastatakse õnnestult, näete järgmine:
 
@@ -55,11 +55,11 @@ Näide väljund:
   Staatuse: Valmis aktiveerimiseks
 ```
 
-## Teema aktiveerimine (Activate Theme)
+## Teema aktiveerimine (Activate Theme) {#activate-theme}
 
 **activate-theme** võimaldab siit oma veebilehte ühel uuest loodud või olemasoleva blokteema üle lülitada.
 
-### Kuidas kasutada
+### Kuidas kasutada {#how-to-invoke-1}
 
 Teema loodud pärast seda, kui teema on loodud, saate seda kohe aktiveerida:
 
@@ -73,7 +73,7 @@ Või aktiivige mis taht mis taema olemasoleva teema:
 "Lülita Twentytwentyfour teema'le"
 ```
 
-### Ootatud väljund
+### Ootatud väljund {#expected-output-1}
 
 Kui aktiveerimine õnnestub:
 
@@ -91,7 +91,7 @@ Näide väljund:
   Märk: Kontrollige oma etuplaati, et kinnitada uut disain
 ```
 
-## Lähtevahe: Loo ja aktiveeri
+## Lähtevahe: Loo ja aktiveeri {#workflow-scaffold-and-activate}
 
 Tüüpiline töövoori koosneb mõlemast võimalust:
 
@@ -101,7 +101,7 @@ Tüüpiline töövoori koosneb mõlemast võimalust:
 4. **Aktiveeri:** "Aktiveeri teema nüüd"
 5. **Kontrolli:** Kanda oma veebilehele külastamiseks kinnitada uue disaini olemasolu
 
-## Disainitokenid ja kohandamine
+## Disainitokenid ja kohandamine {#design-tokens-and-customization}
 
 Loodud teemad kasutavad WordPressi disainitokenide (via `theme.json`) järgi:
 
@@ -113,14 +113,14 @@ Loodud teemad kasutavad WordPressi disainitokenide (via `theme.json`) järgi:
 
 Need tokenid on keskkondselt `theme.json`-is, mis muudab kogu disainisüsteemi seadistamist ühest failist lihtsaks.
 
-## Piirangud ja märkused
+## Piirangud ja märkused {#limitations-and-notes}
 
 - Temad onnistub `/wp-content/themes/`-kataloogi ja peab alustada WordPressi nimekirjaga.
 - Aktiveerim nõuab sobiva lubundite WordPressi juures.
 - Tema PHP koodiga on minimaalne; keeruliste funktsioonide jaoks kasutage pluginid.
 - Block themad töötavad kõige paremini WordPressi versioonist 5.9 ja hiljem.
 
-## Probleemide lahendamine
+## Probleemide lahendamine {#troubleshooting}
 
 **Tema ei ilmune pärast alustamist**
 - Kontrollige, kas tema direktorium on olemas ja sellel on õigused lubundid.
@@ -137,7 +137,7 @@ Need tokenid on keskkondselt `theme.json`-is, mis muudab kogu disainisüsteemi s
 - Püristage kõik kaudutamise pluginid.
 - Kontrollige, kas teie WordPress versioon toetab kasutatavaid tokenid.
 
-## Järgmine sammud
+## Järgmine sammud {#next-steps}
 
 Tema aktiveerimise pärast saate:
 - Kasutada **Design System Aesthetics** oskust tipograafia, värvid ja vahelused hiankavaks.

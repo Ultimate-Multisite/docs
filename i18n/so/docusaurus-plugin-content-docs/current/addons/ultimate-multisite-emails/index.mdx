@@ -1,0 +1,197 @@
+---
+title: Iimayllo
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Emails {#emails}
+
+Addon-ka Ultimate Multisite: Emails wuxuu u oggolaanayaa milkiilayaasha shabakadda inay diyaariyaan oo maamulaan xisaabaadka iimaylka macaamiisha iyadoo lala socdo site-yada iyo xubinimada. Nooca 1.1.0 wuxuu ku darayaa maaraynta xisaabta iimaylka ee macaamilku isticmaalo, webmail single sign-on, taageerada CyberPanel forwarder, iyo hagaajinta diyaarinta waqtiga checkout.
+
+## Astaamaha Muhiimka ah {#key-features}
+
+* **Widget-ka xisaabta iimaylka macaamiisha**: Macaamiishu waxay ka abuuri karaan oo ka maamuli karaan sanduuqyada boostada boggooda account kadib marka ay yeeshaan xubinimo iimayl oo firfircoon.
+* **Webmail SSO iyo magic links**: Macaamiishu waxay si toos ah uga furi karaan webmail bogga account iyadoo la adeegsanayo xaqiijin hal-gujis ah marka provider-ku taageero.
+* **Beddelka erayga sirta ah**: Macaamiisha iyo maamulayaashu waxay ka cusboonaysiin karaan erayada sirta ah ee sanduuqyada boostada widget-ka maaraynta iimaylka.
+* **Diyaarinta xaq-u-yeelashada checkout**: Checkout wuxuu abuuraa xubinimada iimaylka, wuxuu ku xiraa domain-ka site-ka macaamilka, wuxuuna diyaariyaa qalabka sanduuqa boostada ee bogga account.
+* **CyberPanel forwarders**: Shabakadaha ku tiirsan CyberPanel waxay abuuri karaan oo maamuli karaan email forwarders sida qayb ka mid ah socodka adeegga iimaylka.
+* **Dejinta provider-ka la socota**: Bogga dejintu wuxuu shaandheeyaa providers-ka si ay u noqdaan isdhexgalyo firfircoon oo la habeeyey, si maamulayaashu u arkaan oo keliya ikhtiyaarrada la isticmaali karo.
+
+## Shuruudaha {#requirements}
+
+* Ultimate Multisite 2.0.0 ama ka sarreeya
+* Rakibid WordPress Multisite ah
+* Ugu yaraan hal isdhexgal email provider oo la habeeyey
+* Aqoonsiyada Provider API oo leh oggolaansho lagu abuuro sanduuqyo boosto, lagu beddelo erayada sirta ah, laguna soo saaro xiriiriyeyaasha gelitaanka webmail halka laga taageero
+
+## Rakibid {#installation}
+
+1. Soo geli faylasha plugin-ka `/wp-content/plugins/ultimate-multisite-emails`.
+2. Si shabakad ahaan uga hawlgeli addon-ka **Plugins** gudaha maamulka shabakadda WordPress.
+3. Tag **Ultimate Multisite** > **Settings** oo fur dejinta iimaylka ee addon-ka.
+4. Daar isdhexgalka email provider ee aad rabto in macaamiishu isticmaalaan.
+5. Kaydi dejinta, kadib tijaabi abuurista account adigoo adeegsanaya macaamil aan wax-soo-saar ahayn ama staging site.
+
+## Sida Socodka Iibiyaha Iimaylku u Shaqeeyo {#how-the-email-seller-flow-works}
+
+Iibinta iimaylku waxay leedahay laba lakab oo kala duwan:
+
+1. **Xaq-u-yeelasho** — Ultimate Multisite email product/membership oo sheegaya in macaamilku loo oggol yahay inuu iimayl u isticmaalo domain site gaar ah, provider, quota, iyo xadka account.
+2. **Abuurista sanduuqa boostada** — sanduuqa boostada dhabta ah ee provider-ka, sida `info@example.com`, oo la abuuro marka macaamilka ama maamulaha shabakadda doorto qaybta maxalliga ah iyo erayga sirta ah.
+
+Inta lagu jiro checkout, addon-ku wuxuu abuuraa ama hawlgeliyaa **xubinimada iimaylka** wuxuuna diiwaangeliyaa domain-ka site-ka macaamilka iyo provider-ka xubinimadaas. Ma saadaaliyo magaca sanduuqa boostada ama erayga sirta ah. Kadib marka iibsigu dhammaado oo macnaha site/domain-ku jiro, macaamilku wuxuu furi karaa bogga account oo abuuri karaa magacyada sanduuqyada boostada ee uu rabo.
+
+Tani waxay ka dhigan tahay in socodka caadiga ah ee macaamilku yahay:
+
+1. Macaamilku wuxuu iibsadaa site plan wuxuuna ku daraa email product inta lagu jiro checkout.
+2. Ultimate Multisite wuxuu abuuraa xubinimada site-ka iyo xubinimada iimaylka labaad.
+3. Addon-ka Emails wuxuu ku xiraa xubinimada iimaylka domain-ka site-ka macaamilka iyo provider-ka.
+4. Macaamilku wuxuu furaa **Account** gudaha dashboard-kooda.
+5. Guddiga **Email Accounts** ayaa u muuqda xubinimadaas iimayl ee firfircoon.
+6. Macaamilku wuxuu gujiyaa **Create Account**, wuxuu geliyaa qaybta maxalliga ah sida `info`, wuxuu dejiyaa eray sir ah, addon-kuna wuxuu ku abuuraa `info@their-domain.com` provider-ka la habeeyey.
+
+## Habee Email Product {#configure-an-email-product}
+
+U samee hal email product xirmo kasta oo iimayl ah oo aad rabto inaad iibiso ama bixiso. Haddii aad ku cusub tahay dejinta product, ka bilow [Abuurista Product-kiiaga Koowaad ee Subscription](../../user-guide/configuration/creating-your-first-subscription-product) kadibna halkan ugu soo noqo dejinta gaarka u ah iimaylka.
+
+1. Tag **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. U deji **Product Type** inuu noqdo **Email**.
+3. Habee qiimeynta. U isticmaal qiimo soo noqnoqda oo lacag leh plan la iibinayo, ama product-ka u deji bilaash/qiimo-eber haddii uu noqonayo plan iimayl oo dhammaystir ah.
+4. Fur qaybta **Email Settings**.
+5. Dooro **Email Provider**-ka la habeeyey.
+6. Deji **Number of Accounts**, **Storage Quota (MB)**, xaddidaadaha alias, forwarders, iyo autoresponders sida loo baahdo.
+7. Kaydi product-ka.
+
+Kaliya providers-ka la daaray oo si buuxda loogu habeeyey bogga **Integrations** ayaa ka muuqda xulaha provider-ka. Haddii xuluhu madhan yahay, marka hore habee oo tijaabi provider-ka.
+
+## Ku Dar Iimayl Checkout {#add-email-to-checkout}
+
+Email products badanaa waxaa loo bixiyaa add-ons ahaan oo lagu daro site plan. Ka eeg [Foomamka Checkout](../../user-guide/configuration/checkout-forms) habraaca guud ee tifaftiraha checkout.
+
+1. Abuur ama wax ka beddel site plan-ka ay macaamiishu marka hore iibsadaan.
+2. Ku dar email product-ka add-on/order bump la heli karo oo loogu talagalay socodka checkout-kaas.
+3. Xaqiiji in foomka checkout weli ku jiro fields-ka site ee caadiga ah ee loo baahan yahay, gaar ahaan field-ka site URL/domain.
+4. Samee checkout tijaabo ah adigoo adeegsanaya macaamil staging ah.
+5. Kadib checkout, fur [bogga account](../../user-guide/client-management/account-page) ee macaamilka oo xaqiiji in guddiga **Email Accounts** muuqdo.
+
+Domain-ka iimaylka waxaa laga qaadaa domain-ka site-ka macaamilka. Macaamiishu ma geliyaan domain-ka iimaylka tallaabada email product.
+
+## Maaraynta Iimaylka Account-ka Macaamilka {#customer-account-email-management}
+
+Nooca 1.1.0 wuxuu ku darayaa widget maaraynta iimaylka bogga account-ka macaamilka. Isticmaal marka macaamiishu ay tahay inay iskood u adeegtaan abuurista iyo dayactirka sanduuqyada boostada ee site-yadooda.
+
+Laga bilaabo bogga account, macaamiishu waxay awoodaan inay:
+
+1. Eegaan xisaabaadka iimaylka ee ku xiran xubinimadooda iimayl ee hadda/domain-ka site.
+2. Abuuraan sanduuq boosto cusub marka email product-koodu oggol yahay xisaabaad dheeraad ah.
+3. Beddelaan erayga sirta ah ee sanduuq boosto jira.
+4. Ku furaan webmail providers-ka la taageero iyagoo adeegsanaya SSO ama magic-link login.
+
+Widget-ku wuxuu adeegsadaa nidaamka account-page currents ee Ultimate Multisite, sidaas darteed ficilladu waxay ku kooban yihiin macnaha account-ka uu macaamilku daawanayo. Tani waxay ka hortagtaa in macaamiishu maamulaan xisaabaadka iimaylka ee ay leedahay xubinimo ama site kale.
+
+Haddii macaamilku uusan arkin qaybta email-ka, hubi inay leeyihiin **xubinimo Email product oo firfircoon**, in xubinimada lagu xiray domain-ka site-ka, iyo in product-ku leeyahay provider la habeeyey.
+
+## Siinta Macaamilka Qorshe Email Bilaash ah {#giving-a-customer-a-free-email-plan}
+
+Si aad macaamil email ugu siiso adigoon lacag ka qaadin, marka hore sii **email entitlement**, ka dibna samee mailbox ama u oggolow macaamilka inuu sameeyo.
+
+Ikhtiyaarrada lagu taliyey:
+
+* **Samee email product bilaash ah**: dhig qiimaha email product-ka bilaash/eber, ka dibna ku dar xubinimo firfircoon macaamilkaas adigoo ka bilaabaya **Ultimate Multisite > Memberships > Add Membership**. Dooro email product-ka iyo macaamilka. Xubinimada bilaashka ahi waa cimri-dherer ilaa la beddelo ama la joojiyo. Haddii email membership-ku loogu talagalay inuu raaco site jira, hubi in lagu xiray macnaha site/domain-kaas.
+* **Isticmaal qiimo-dhimis 100% ah ama xiriiriye checkout bilaash ah**: u oggolow macaamilka inuu maro checkout si Ultimate Multisite si otomaatig ah u abuuro email membership-ka iyo diiwaanka lacag-bixinta.
+* **Admin ahaan u samee mailbox**: tag **Ultimate Multisite > Email Accounts > Add Email Account** si aad provider-ka ugu samayso mailbox gaar ah oo macaamil leeyahay. Tani waxay waxtar u leedahay taageerada, laakiin ma beddesho email product membership-ka awood siiya qalabka is-adeegga ee bogga Account-ka macaamilka.
+
+Haddii aad rabto in macaamilku mailbox-ka laftoodu ka maamulaan bogga Account-ka, hubi inay leeyihiin email membership firfircoon oo domain-ka ah. Provider mailbox gacanta lagu sameeyey oo aan lahayn xubinimadaas wuu jiri karaa, laakiin macaamilku waxaa laga yaabaa inuusan arkin qaybta email-ka is-adeegga ee loogu talagalay.
+
+## Accounts uu Admin Sameeyey iyo "No Order Number" {#admin-created-accounts-and-no-order-number}
+
+Bogga admin-ka ee **Email Accounts** wuxuu sameeyaa ama wax ka beddelaa provider mailbox. Ma aha tallaabada koowaad ee iibinta ama bixinta qorshe email.
+
+Marka la tafatirayo email account, field-ka **Membership** wuxuu ka raadiyaa xubinimada Ultimate Multisite ee jira lambarkooda tixraac/dalab. Haddii aad isku daydo inaad account u qoondeyso ka hor inta macaamilku yeelan email membership, waxaa laga yaabaa inuusan jirin lambar dalab oo la dooran karo.
+
+Halkii, isticmaal kala horreyntan hawlgalka:
+
+1. Samee ama hel email membership-ka macaamilka. Iibsiyada, checkout ayaa tan sameeya. Qorshe hadiyad ah, xubinimada gacanta uga samee [Memberships](../../user-guide/administration/managing-memberships) ama macaamilka mari checkout bilaash ah.
+2. Xaqiiji in xubinimadu firfircoon tahay oo ay isticmaasho Email product.
+3. Xaqiiji in email membership-ku ku xiran yahay site domain/provider-ka.
+4. Ka samee mailbox-ka bogga Account-ka macaamilka ama **Ultimate Multisite > Email Accounts**.
+5. Haddii loo baahdo, tafatir diiwaanka mailbox-ka oo u qoondee macaamilka, xubinimada, iyo site-ka.
+
+Haddii aad kaliya u baahan tahay inaad macaamilka u samayso provider mailbox oo aadan u baahnayn maarayn is-adeeg ah oo bogga Account-ka ah, account-ka admin-ku sameeyey wuu ku filnaan karaa. Haddii aad rabto in macaamilku ku arko oo ku maamulo Ultimate Multisite, sidoo kale samee email membership-ka.
+
+## Webmail SSO iyo Magic-Link Login {#webmail-sso-and-magic-link-login}
+
+Webmail SSO wuxuu macaamiisha siiyaa ficil toos ah oo **Open webmail** ah oo ka yimaada bogga Account-ka. Marka uu taageero provider-ka firfircoon, addon-ku wuxuu codsadaa URL gelitaan oo waqti-gaaban shaqeeya wuxuuna macaamilka u wareejiyaa webmail isagoo aan ka codsan inay nuqul ka sameeyaan aqoonsiyada mailbox-ka.
+
+Dhaqanka provider-ku wuu kala duwanaan karaa:
+
+* Providers leh SSO APIs asal ah waxay samayn karaan fadhiga webmail oo toos loo xaqiijiyey.
+* Providers leh taageero magic-link waxay abuuri karaan xiriiriye Login oo waqti xaddidan leh.
+* Providers aan lahayn taageero SSO ama magic-link waa inay weli muujiyaan faahfaahinta mailbox-ka iyo ficillada maaraynta password-ka, laakiin ma lahaan doonaan badhan webmail hal-gujin ah.
+
+U oggolow gelitaanka webmail kaliya providers-ka aad u habaysay aqoonsiyada API ee loo baahan yahay. Haddii ficilku ka maqan yahay provider, marka hore xaqiiji in provider-ku firfircoon yahay, la habeeyey, oo taageero xiriiriyeyaasha webmail login.
+
+## Checkout Provisioning {#checkout-provisioning}
+
+Addon-ku wuxuu inta lagu jiro checkout diyaariyaa **macnaha xubinimada** email-ka. Wuxuu diiwaangeliyaa provider-ka, xadka account-ka, quota, iyo site domain si macaamiishu uga sameysan karaan magacyadooda mailbox-ka bogga Account-ka ka dib iibsashada.
+
+Habka hirgelinta ee lagu taliyey:
+
+1. Habeey provider-ka iyo xadka product-ka ka hor intaadan bixin email product-ka.
+2. Tijaabi iibsi adigoo adeegsanaya staging product oo xaqiiji in email membership-ka la sameeyey.
+3. Dib u eeg bogga Account-ka macaamilka si aad u xaqiijiso in widget-ka **Email Accounts** uu u muuqdo domain-ka.
+4. Ka samee mailbox tijaabo ah widget-ka.
+5. Xaqiiji ficillada beddelka password-ka iyo webmail ka hor intaadan socodka u suurtagelin production products.
+
+Haddii provisioning-ku fashilmo, account-ka macaamilka iyo xubinimadu weli way jiri karaan iyadoo email membership-ka ama provider mailbox-ku u baahan yahay dabagal administrator. Hubi diiwaannada hawlaha Ultimate Multisite iyo diiwaannada provider-ka ka hor intaadan dib isku dayin.
+
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
+
+Shabakadaha ku tiirsan CyberPanel, nooca 1.1.0 wuxuu ku daraa taageerada email forwarder. Isticmaal forwarders marka macaamiishu u baahan yihiin cinwaanno sida `info@customer-domain.test` si mail loogu gudbiyo inbox kale iyada oo aan la samayn mailbox buuxa.
+
+Ka hor intaadan bixin forwarders, xaqiiji in isku-xirka CyberPanel la habeeyey lana gaari karo. Ka eeg hagaha [Isku-xirka CyberPanel](../../user-guide/administration/cyberpanel-integration) host-ka, username-ka, password-ka, iyo constants-ka package ee loo baahan yahay.
+
+## Changelog {#changelog}
+
+### Nooca 1.1.0 - La sii daayey 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Cusub: Webmail SSO iyo magic-link login — macaamiishu waxay webmail si toos ah uga geli karaan Account-kooda iyagoo isticmaalaya xaqiijin hal-gujin ah.
+* Cusub: Shaqada beddelka erayga sirta ah ayaa lagu daray widget-ka maamulka Account-ka iimaylka.
+* Cusub: Taageerada gudbiyaha iimaylka ee CyberPanel.
+* Cusub: Widget-ka maamulka iimaylka ee bogga Account-ka macmiilka si ay iskood ugu abuuraan una maamulaan Account.
+* Cusub: Bixinta xaq-u-lahaanshaha Account-ka iimaylka macmiilka ayaa lagu dhex daray socodka checkout.
+* Hagaajin: Hook-ka widget-ka bogga Account-ka ayaa la cusboonaysiiyay si uu u isticmaalo qaabka diiwaangelinta UMS ee saxda ah.
+* Hagaajin: Foomka Create Account waxaa lagu beddelay vanilla JS iyo soo saarista dukumeenti HTML buuxa oo sax ah.
+* Hagaajin: Widget-ka maamulka iimaylka hadda wuxuu u isticmaalaa nidaamka UMS currents bogagga Account-ka maamulka.
+* Hagaajin: Foomka abuurista Account-ka iimaylka ee admin-ka wuxuu ku jiraa field-ka erayga sirta ah wuxuuna isticmaalaa Email_Account_Manager.
+* Hagaajin: Qashinka log-ka codsi-kasta ah ayaa laga saaray bilowga Email_Account_Manager.
+* La hagaajiyay: Bogga Settings hadda wuxuu shaandheeyaa si uu u muujiyo oo keliya bixiyeyaasha iimaylka ee firfircoon oo la habeeyay.
+
+## Su'aalaha Inta Badan La Isweydiiyo {#frequently-asked-questions}
+
+### Macaamiishu ma abuuri karaan Account-yadooda iimaylka? {#can-customers-create-their-own-email-accounts}
+
+Haa. Marka macmiilku uu leeyahay membership iimayl oo firfircoon oo domain ah, product-kuna uu oggol yahay Account-yo dheeraad ah, macaamiishu waxay ka abuuri karaan oo ka maamuli karaan sanduuqyadooda boostada bogga Account-ka.
+
+### Bixiye kasta ma taageeraa webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Maya. Taageerada SSO iyo magic-link waxay ku xiran tahay bixiyaha iimaylka ee firfircoon. Bixiyeyaasha aan lahayn access-link API weli waxay taageeri karaan abuurista mailbox iyo beddelka erayga sirta ah.
+
+### Maamulayaashu ma u abuuri karaan Account-yo iimayl macaamiisha? {#can-administrators-create-email-accounts-for-customers}
+
+Haa. Maamulayaashu waxay ka abuuri karaan Account-yo iimayl interface-ka admin-ka, oo ay ku jirto dejinta erayga sirta ah ee bilowga ah marka Account-ka la abuurayo. Maamulka is-adeegga macmiilka, sidoo kale hubi in macmiilku leeyahay membership iimayl oo firfircoon oo domain-ka ah.
+
+### Account iimayl bilaash ah ma bixin karaa? {#can-i-give-an-email-account-away-for-free}
+
+Haa. Abuuri product Iimayl bilaash ah/qiimihiisu eber yahay oo ku dar sidii membership firfircoon oo macmiilka ah, ama u oggolow macmiilka inuu dhammaystiro checkout isagoo wata 100% qiimo-dhimis. Marka membership-ka iimaylku jiro ka dib, macmiilka ama maamule ayaa abuuri kara mailbox-ka dhabta ah.
+
+### Maxay u dhacdaa in marka Account iimayl la qoondeynayo la weydiiyo lambarka dalabka? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Field-ka Membership wuxuu raadiyaa membership Ultimate Multisite oo jira isagoo adeegsanaya lambarkiisa tixraaca/dalabka. Haddii macmiilku uusan iibsan product iimayl oo aadan gacanta ku abuurin membership iimayl, ma jiro membership/dalab iimayl oo la qoondeeyo. Marka hore abuuri membership-ka iimaylka, ka dibna abuuri ama qoondee mailbox-ka.
+
+### Forwarders ma la mid baa mailboxes? {#are-forwarders-the-same-as-mailboxes}
+
+Maya. Mailbox wuxuu kaydiyaa boostada wuxuuna leeyahay aqoonsiyo login. Forwarder wuxuu boostada u weeciyaa cinwaan kale mana bixiyo inbox gaar ah.

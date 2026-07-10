@@ -4,11 +4,11 @@ title: Actie - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Actie: wu_membership_pre_renew
+# Actie: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Activeert vóór de verlenging van het lidmaatschap.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Activeert vóór de verlenging van het lidmaatschap.
 | $membership_id | `int` | Het ID van het lidmaatschap. |
 | $membership | `\Membership` | Lidmaatschap object. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) op regel 2204

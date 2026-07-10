@@ -3,11 +3,11 @@ title: Specifikace webu dovednost
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Došvihování specifikace webu
+# Došvihování specifikace webu {#site-specification-skill}
 
 **Došvihování specifikace webu** je strukturovaný přístup k zachycení cílů vašeho webu, cílové skupiny a značkové identity. Tyto informace jsou uloženy do vaší paměti **site_brief**, kterou agenti používají napříč různými sezeními, aby poskytovali konzistentní a kontextově vědomou pomoc.
 
-## Co je specifikace webu?
+## Co je specifikace webu? {#what-is-site-specification}
 
 Specifikace webu je proces dokumentování následujících bodů:
 
@@ -19,9 +19,9 @@ Specifikace webu je proces dokumentování následujících bodů:
 
 Tato specifikace se stává vaším **site_brief**, trvalou pamětí, kterou agenti používají k pochopení kontextu vašeho webu.
 
-## Proč použít specifikaci webu?
+## Proč použít specifikaci webu? {#why-use-site-specification}
 
-### Konzistence napříč sezeními
+### Konzistence napříč sezeními {#consistency-across-sessions}
 
 Bez site_briefu byste museli svůj účel webu vysvětlovat znovu při každém zahájení nového sezení. S ním agenti okamžitě pochopí:
 
@@ -30,7 +30,7 @@ Bez site_briefu byste museli svůj účel webu vysvětlovat znovu při každém 
 - Strukturu vašeho obsahu
 - Vaše obchodní cíle
 
-### Lepší doporučení
+### Lepší doporučení {#better-recommendations}
 
 Agenti používají váš site_brief k:
 
@@ -39,17 +39,17 @@ Agenti používají váš site_brief k:
 - Navrhování designů konzistentních s vaší značkou
 - Vyhýbání se navrhování nekompatibilních funkcí
 
-### Rychlejší orientace
+### Rychlejší orientace {#faster-onboarding}
 
 Noví agenti (nebo agenti v nových sezeních) se rychle orientují, když čtou váš site_brief, namísto toho, aby museli klást vysvětlující otázky.
 
-## Spuštění specifikace webu
+## Spuštění specifikace webu {#initiating-site-specification}
 
-### Během onboardingu Theme Builderu
+### Během onboardingu Theme Builderu {#during-theme-builder-onboarding}
 
 Došvihování specifikace webu je automaticky spuštěno během procesu **onboardingu Theme Builderu**. Agent Setup Assistant klade otázky a vytváří váš site_brief.
 
-### Ruční spuštění
+### Ruční spuštění {#manual-initiation}
 
 Můžete začít s Došvihováním specifikace webu kdykoli:
 
@@ -63,9 +63,9 @@ nebo
 "Pomoz mi vytvořit site brief"
 ```
 
-## Proces specifikace webu
+## Proces specifikace webu {#the-site-specification-process}
 
-### Krok 1: Účel webu
+### Krok 1: Účel webu {#step-1-site-purpose}
 
 Agent se ptá:
 
@@ -81,7 +81,7 @@ Jaký je primární účel vašeho webu?
 
 Můžete vybrat kategorii nebo popsat svůj vlastní účel.
 
-### Krok 2: Cílová skupina
+### Krok 2: Cílová skupina {#step-2-target-audience}
 
 ```
 Kdo je vaše primární cílová skupina?
@@ -94,7 +94,7 @@ Kdo je vaše primární cílová skupina?
 Jaké jsou jejich hlavní potřeby?
 ```
 
-### Krok 3: Značková identita
+### Krok 3: Značková identita {#step-3-brand-identity}
 
 ```
 Jaké jsou barvy vaší značky?
@@ -110,7 +110,7 @@ Jak byste popsal/a tón vaší značky?
 - Teplý / přátelský
 ```
 
-### Krok 4: Firemní cíle
+### Krok 4: Firemní cíle {#step-4-business-goals}
 
 ```
 Jak vypadá úspěch pro váš web?
@@ -129,7 +129,7 @@ Jaká je vaše primární metrika?
 - Jiné
 ```
 
-### Krok 5: Struktura obsahu
+### Krok 5: Struktura obsahu {#step-5-content-structure}
 
 ```
 Jak je váš obsah uspořádan?
@@ -148,7 +148,7 @@ Jaké typy obsahu používáte?
 - Jiné
 ```
 
-## Vaše paměť site_brief
+## Vaše paměť site_brief {#your-sitebrief-memory}
 
 Po dokončení specifikace webu jsou vaše informace uloženy jako **site_brief** do paměti vašeho agenta. Jedná se o strukturovaný záznam obsahující:
 
@@ -169,9 +169,9 @@ Po dokončení specifikace webu jsou vaše informace uloženy jako **site_brief*
 }
 ```
 
-## Prohlížení a aktualizace site_briefu
+## Prohlížení a aktualizace site_briefu {#viewing-and-updating-your-sitebrief}
 
-### Zobrazení site_briefu
+### Zobrazení site_briefu {#view-your-sitebrief}
 
 Zeptejte agenta:
 
@@ -187,7 +187,7 @@ nebo
 
 Agent zobrazí vaši uloženou specifikaci.
 
-### Aktualizace site_briefu
+### Aktualizace site_briefu {#update-your-sitebrief}
 
 Pokud se váš web vyvíjí, můžete jej aktualizovat:
 
@@ -203,9 +203,9 @@ nebo
 
 To znovu spustí schopnost Došvihování specifikace webu s vašimi stávajícími informacemi jako výchozní bodem.
 
-## Jak agenti používají site_brief
+## Jak agenti používají site_brief {#how-agents-use-sitebrief}
 
-### Doporučení designu
+### Doporučení designu {#design-recommendations}
 
 Když požadujete změny designu, agenti se odvolávají na váš site_brief:
 
@@ -214,7 +214,7 @@ Vy: "Přepracuj mi domovskou stránku"
 Agent: "Na základě vašeho site briefu cílíte na ženy ve věku 25–45 let s teplým, ručním tónem. Vytvořím design, který zdůrazní vaše ručně vyráběné klenotnictví a udržitelné hodnoty."
 ```
 
-### Návrhy funkcí
+### Návrhy funkcí {#feature-suggestions}
 
 Agenti navrhují funkce odpovídající vašim cílům:
 
@@ -223,7 +223,7 @@ Vy: "Jaké funkce bych měl přidat?"
 Agent: "Pro e-shop zaměřený na loajalitu zákazníků doporučuji: program loajality, recenze zákazníků, newsletter a doporučení produktů."
 ```
 
-### Struktura obsahu
+### Struktura obsahu {#content-structure}
 
 Agenti navrhují uspořádání obsahu na základě vaší struktury:
 
@@ -232,16 +232,16 @@ Vy: "Jak mám uspořádat svůj blog?"
 Agent: "Protože používáte produktový katalog s blogem, navrhuji uspořádat příspěvky podle kategorie produktů a vytvořit 'stylistické průvodce', které ukazují více produktů dohromady."
 ```
 
-## Nejlepší praxe
+## Nejlepší praxe {#best-practices}
 
-### Buďte konkrétní
+### Buďte konkrétní {#be-specific}
 
 Místo "obecné publikum" popište svou skutečnou cílovou skupinu:
 
 - ✓ "Ženy ve věku 25–45 let, zainteresované na udržitelné módě"
 - ✗ "Všichni"
 
-### Aktualizujte pravidelně
+### Aktualizujte pravidelně {#update-regularly}
 
 Jak se váš web vyvíjí, aktualizujte svůj site_brief:
 
@@ -250,14 +250,14 @@ Jak se váš web vyvíjí, aktualizujte svůj site_brief:
 - Když se změní identita vaší značky
 - Když se změní vaše obchodní cíle
 
-### Používejte konzistentní terminologii
+### Používejte konzistentní terminologii {#use-consistent-terminology}
 
 Používejte stejné termíny napříč sezeními:
 
 - ✓ Vždy řekněte "udržitelné klenotnictví" (ne "ekologické klenotnictví" a "zelené produkty")
 - ✓ Vždy se odkazujte na svou cílovou skupinu stejným způsobem
 
-### Zahrňte kontext
+### Zahrňte kontext {#include-context}
 
 Poskytněte pozadí, které agentům pomůže pochopit vaše rozhodnutí:
 
@@ -265,7 +265,7 @@ Poskytněte pozadí, které agentům pomůže pochopit vaše rozhodnutí:
 - "Naše publikum je technologicky vyspělé a očekává moderní design"
 - "Jsme startup bez financování, takže potřebujeme řešení s nízkými náklady"
 
-## Vztṛnost k onboardingu Theme Builderu
+## Vztṛnost k onboardingu Theme Builderu {#relationship-to-theme-builder-onboarding}
 
 Schopnost Došvihování specifikace webu je integrována do procesu **onboardingu Theme Builderu**. Když dokončíte onboarding, váš site_brief je automaticky vytvořen s poskytnutými informacemi.
 
@@ -275,7 +275,7 @@ Můžete také spouštět Došvihování specifikace webu nezávisle, pokud chce
 - Aktualizovat svůj site_brief, jak se váš web vyvíjí
 - Vytvořit podrobnou specifikaci před zahájením Theme Builderu
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
 **Můj site_brief není použit**
 - Potvrďte, že má agent přístup k paměti
@@ -291,7 +291,7 @@ Můžete také spouštět Došvihování specifikace webu nezávisle, pokud chce
 - Aktualizujte svůj site_brief, pokud je zastaralý
 - Poskytněte další kontext ve svých požadavcích
 
-## Další kroky
+## Další kroky {#next-steps}
 
 Po definování specifikace webu:
 

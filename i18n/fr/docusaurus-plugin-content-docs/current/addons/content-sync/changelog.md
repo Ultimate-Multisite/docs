@@ -3,9 +3,9 @@ title: Journal des modifications de Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Changelog de la synchronisation de contenu
+# Changelog de la synchronisation de contenu {#content-sync-changelog}
 
-### Version 1.1.0 - Publié le 2025-12-31
+### Version 1.1.0 - Publié le 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nouveau : prise en charge de la synchronisation de tous les types de publication (articles, pages, types de publication personnalisés)
 * Nouveau : filtrage des types de publication lors de l'étape de sélection de contenu
 * Nouveau : étape de sélection du site source - synchronisation depuis n'importe quel site, pas seulement le site principal
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Modifié : l'étape "Select Templates" renommée en "Select Data"
 * Amélioré : le code spécifique à Elementor ne s'exécute désormais que pour le type de publication elementor_library
 
-### Version 1.0.0 - Publié le 2025-12-19
+### Version 1.0.0 - Publié le 2025-12-19 {#version-100---released-on-2025-12-19}
 * Version initiale
 * Assistant à plusieurs étapes pour la sélection de modèles et de sites
 * Traitement par lots avec retour d'information en temps réel sur la progression

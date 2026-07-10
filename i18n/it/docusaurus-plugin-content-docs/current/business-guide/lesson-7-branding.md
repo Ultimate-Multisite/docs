@@ -3,15 +3,15 @@ title: 'Lezione 7: Rendilo tuo'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lezione 7: Rendilo Tuo
+# Lezione 7: Rendilo Tuo {#lesson-7-making-it-yours}
 
 I tuoi clienti non dovrebbero mai sentire di usare "un plugin WordPress". Devono sentire di usare FitSite: una piattaforma costruita per il loro settore. Questa lezione copre il branding, il white-labeling e come far sembrare la piattaforma un prodotto autonomo.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 FitSite ha un flusso di checkout funzionante che porta i proprietari di studi fitness dalla selezione del piano fino al sito attivo. Ora facciamo in modo che l'intera esperienza sembri un prodotto coeso e con un brand definito.
 
-## Il Dominio della Tua Piattaforma
+## Il Dominio della Tua Piattaforma {#your-platform-domain}
 
 Il fondamento del tuo brand è il tuo dominio. Per FitSite:
 
@@ -19,7 +19,7 @@ Il fondamento del tuo brand è il tuo dominio. Per FitSite:
 - **Siti clienti**: `studioname.fitsite.com` (sottodomini)
 - **Domini personalizzati**: I clienti con i piani Growth e Pro possono collegare il proprio dominio
 
-### Configurare il Dominio
+### Configurare il Dominio {#setting-up-your-domain}
 
 1. Registra il dominio della tua piattaforma
 2. Puntalo al tuo provider di hosting
@@ -28,11 +28,11 @@ Il fondamento del tuo brand è il tuo dominio. Per FitSite:
 
 Consulta [Come configurare il mapping dei domini](/user-guide/domain-mapping/how-to-configure-domain-mapping) per istruzioni dettagliate.
 
-## White-Labeling dell'Esperienza Amministrativa
+## White-Labeling dell'Esperienza Amministrativa {#white-labeling-the-admin-experience}
 
 Quando un proprietario di studio fitness accede alla dashboard del proprio sito, dovrebbe vedere il tuo brand, non il branding di WordPress o Ultimate Multisite.
 
-### Pagina di Login Personalizzata
+### Pagina di Login Personalizzata {#custom-login-page}
 
 Personalizza la pagina di login di WordPress per mostrare:
 
@@ -40,7 +40,7 @@ Personalizza la pagina di login di WordPress per mostrare:
 - Immagini di sfondo adatte al settore fitness
 - I colori del tuo brand
 
-### Branding della Dashboard
+### Branding della Dashboard {#dashboard-branding}
 
 Usa l'addon [Admin Page Creator](/addons/admin-page-creator) o CSS personalizzato per:
 
@@ -48,7 +48,7 @@ Usa l'addon [Admin Page Creator](/addons/admin-page-creator) o CSS personalizzat
 - Personalizzare lo schema colori dell'admin per farlo corrispondere al tuo brand
 - Aggiungere un widget personalizzato alla dashboard con collegamenti rapidi e risorse di aiuto specifiche per il fitness
 
-### Pagine Amministrative Personalizzate
+### Pagine Amministrative Personalizzate {#custom-admin-pages}
 
 Considera di creare pagine amministrative personalizzate che mettano in risalto le azioni più rilevanti per i proprietari di studi fitness:
 
@@ -58,11 +58,11 @@ Considera di creare pagine amministrative personalizzate che mettano in risalto 
 
 Questo riduce la curva di apprendimento mettendo le azioni rilevanti per il settore in primo piano, invece di nasconderle nel menu standard di WordPress.
 
-## Branding delle Comunicazioni
+## Branding delle Comunicazioni {#branding-your-communications}
 
 Ogni email, fattura e notifica dovrebbe rafforzare il tuo brand.
 
-### Email di Sistema
+### Email di Sistema {#system-emails}
 
 Vai su **Ultimate Multisite > Settings > Emails** e personalizza tutte le email di sistema:
 
@@ -79,7 +79,7 @@ Email chiave da personalizzare:
 | Ricevuta pagamento | "Pagamento ricevuto" | "Pagamento abbonamento FitSite confermato" |
 | Prova in scadenza | "La tua prova sta per scadere" | "La tua prova FitSite scade tra 3 giorni – mantieni il tuo sito dello studio attivo" |
 
-### Fatture
+### Fatture {#invoices}
 
 Personalizza i modelli di fattura con:
 
@@ -87,7 +87,7 @@ Personalizza i modelli di fattura con:
 - I dettagli della tua attività
 - Nomi di prodotti specifici per il fitness (non ID di piani generici)
 
-## Il Sito Visibile al Cliente
+## Il Sito Visibile al Cliente {#the-customer-facing-site}
 
 Il tuo dominio principale (`fitsite.com`) ha bisogno di un sito di marketing che venda la piattaforma. Questo è separato dall'admin della rete Ultimate Multisite: è il volto pubblico della tua attività.
 
@@ -103,7 +103,7 @@ Pagine chiave:
 Crea il tuo sito di marketing come un sito all'interno della tua rete. Questo ti permette di gestirlo dalla stessa dashboard e dimostra le capacità della tua piattaforma.
 :::
 
-## Dominio Personalizzato per i Clienti
+## Dominio Personalizzato per i Clienti {#custom-domain-for-customers}
 
 Per i clienti che utilizzano piani che includono domini personalizzati, documenta il processo in modo chiaro:
 
@@ -113,7 +113,7 @@ Per i clienti che utilizzano piani che includono domini personalizzati, document
 
 Crea un articolo di aiuto o un entry nella knowledge base specificamente per questo processo, scritto per proprietari di studi fitness non tecnici.
 
-## La Rete FitSite Finora
+## La Rete FitSite Finora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Dominio della piattaforma e DNS** configurati per un'esperienza con brand
 - **Admin white-labeled** con branding FitSite in tutto

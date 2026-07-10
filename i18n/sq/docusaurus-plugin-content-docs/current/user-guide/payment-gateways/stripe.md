@@ -3,19 +3,19 @@ title: Konfigurimi i Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigurimi i Stripe Gateway (v2)
+# Konfigurimi i Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
 
 Mund të aktivizoni deri në katër metoda pagese në faqen tuaj e cilësimeve të pagesave: Stripe, Stripe Checkout, PayPal dhe Manual. Në këtë artikull, do të shohim se si të integruani me **Stripe**.
 
-## Aktivizimi i Stripe-it
+## Aktivizimi i Stripe-it {#enabling-stripe}
 
 Për të aktivizuar Stripe si një gateway pagese të disponueshëm në rrjetin tuaj, shkoni te **Ultimate Multisite > Settings > Payments** dhe klikoni mbi ndryshimin (toggle) pranë **Stripe** ose **Stripe Checkout** në seksionin Active Payment Gateways.
 
 ![Aktivizimi i Stripe-it në gateway të pagesave aktive](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Kjo metodë do t'ju tregojë një hapësirë për të vendosur numrin e kartës krediti gjatë procesit të pagesës (checkout).
 
@@ -47,7 +47,7 @@ Kopjoni vlerën nga **Publishable key** dhe **Secret key**, nga kolona **Token**
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Konfigurimi i Webhook-ut Stripe
+## Konfigurimi i Webhook-ut Stripe {#setting-up-stripe-webhook}
 
 Stripe dërgon ngjarje webhook që informojnë Ultimate Multisite çdo herë që ndodh një ngjarje në **konton tuaj të stripe**.
 

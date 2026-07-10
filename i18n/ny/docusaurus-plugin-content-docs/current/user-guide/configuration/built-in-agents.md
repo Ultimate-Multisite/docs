@@ -1,108 +1,148 @@
 ---
-title: Mawone awo m'moyo wopambwa
+title: Ma agent omangidwiramo
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zilipo (Built-in)
+# Agents Omangidwira Mkati {#built-in-agents}
 
-Gratis AI Agent v1.9.0 ilipere m'agent alambiri limodzi, m'm'agent alambiri limodzi wosamwa ndi zinthu zomwe zimeneledwa m'mwayi, zomwe zimeneledwa ndi zinthu zomwe zimeneledwa m'mwayi, ndipo zimeneledwa ndi zinthu zomwe zimeneledwa m'mwayi zomwe zimeneledwa m'mwayi. Kukhazikitsa m'mwayi ndi m'mwayi kumenezo ndi m'mwayi wosonyeza zomwe zimeneledwa m'mwayi zomwe zimeneledwa m'mwayi. Kukhazikitsa m'mwayi ndi m'mwayi kumenezo ndi m'mwayi wosonyeza zomwe zimeneledwa m'mwayi zomwe zimeneledwa m'mwayi.
+Gratis AI Agent v1.9.0 imabwera ndi agents asanu omangidwira mkati, aliyense wokonzedweratu ndi gulu la zida lolunjika pa ntchito inayake, system prompt yosinthidwa, ndi malingaliro oyambira ogwirizana ndi ntchito zofala m’gawolo. Kusintha pakati pa agents kumasintha zomwe assistant angachite ndi mmene amayankhira — popanda kasinthidwe kalikonse kuchokera kwa inu. Superdav AI Agent v1.18.0 ikhoza kuwonjezera zida zoganizira ndandanda, zolemba za zikumbutso, zipata zovomereza, ndi zidziwitso za SMS ku mayendedwe a ntchito awa pamene ma integrations okhudzana nawo akonzedwa.
 
-## M'Agent ndi chiyani?
+## Agent Ndi Chiyani? {#what-is-an-agent}
 
-M'agent imodzi ndi m'configuration profile lomwe limapambana:
+Agent aliyense ndi mbiri ya kasinthidwe yokhala ndi dzina yomwe imaphatikiza:
 
-- **Tools** — zinthu zomwe m'agent aliyense kuyesa (mwachitsanzo, Content Writer ali ndi ulemu wopereka kuti atse post; Design Studio ali ndi ulemu wopereka CSS ndi theme.json).
-- **System prompt** — mafunso omwe amapambana mwayi wa m'agent, zowonjezera zomwe amagwiritsa ntchito, ndipo zinthu zomwe zimeneledwa.
-- **Suggestions** — mafunso omwe amapambana m'chat interface kuti mukhale ndi chidziwitso kwa nthawi yomwe mukuම්භa.
+- **Zida** — kuthekera komwe agent amaloledwa kuyitanitsa (mwachitsanzo Content Writer ali ndi mwayi wogwiritsa ntchito kuthekera kopanga zolemba; Design Studio ili ndi mwayi wogwiritsa ntchito CSS ndi kuthekera kwa theme.json)
+- **System prompt** — malangizo omwe amakhazikitsa kalankhulidwe ka agent, zofunika kwambiri, ndi malire
+- **Malingaliro** — ma prompts olembedwa kale omwe amawonetsedwa mu chat interface kuti akuthandizeni kuyamba mwachangu
 
-## Kukhazikitsa M'Agent Picker
+## Kupeza Agent Picker {#accessing-the-agent-picker}
 
-1. Longani panel ya **Gratis AI Agent** m'WordPress admin sidebar.
-2. Longani **agent icon** m'malo wopambana wa chat header (icon imayenera kuti itanthauze m'agent wosonyeza).
-3. **Agent Picker** limapambana monga form-table overlay. M'agent imodzi imalimbidwa ndi icon yake, dzina lake, ndipo mwayi wosonyeza wosonyeza m'mwayi.
-4. Longani row ya agent kuti mukhazikitsidwe. Chat header limapambana mwachangu.
+1. Tsegulani panel ya **Gratis AI Agent** mu sidebar ya admin wa WordPress.
+2. Dinani **chizindikiro cha agent** pamwamba kumanzere kwa header ya chat (chizindikirocho chimasintha kuti chiwonetse agent wogwira ntchito).
+3. **Agent Picker** imatseguka ngati overlay ya form-table. Agent aliyense amalembedwa ndi chizindikiro chake, dzina, ndi kufotokozera kwa mzere umodzi.
+4. Dinani mzere wa agent kuti muyiyambitse. Header ya chat imasinthidwa nthawi yomweyo.
 
-Mukuwoneka kuti mukhazikitsa m'agent m'mwayi — mwayi wa m'agent wosonyeza wosonyeza m'mwayi mwamenezo m'mwayi wosonyeza m'mwayi.
+Mungathenso kusintha agents pakati pa zokambirana — system prompt ya agent watsopano imayamba kugwira ntchito kuchokera pa uthenga wotsatira.
 
-**Kufunapulidwa bwino:**
-- Kufotokozera ndi blog posts kuchokera ku outline kapena mwayi wosonyeza
-- Kukhazikitsa batches za landing pages zokhudza site lino lili lino
-- Kukhazikitsa forms za kukhala ndi malo (contact and enquiry forms)
+## Agents Asanu Omangidwira Mkati {#the-five-built-in-agents}
 
-**Mawonjezere a m'moyo:**
-- *Tikhani blog post ya mitundu yomwe WordPress multisite imapereka.*
-- *Tikhazikitsa About, Services, ndipo Contact page ndipo tikhazikitsani.*
-- *Tikhazikitsani form ya kukhala ndi malo (booking enquiry form) pa Contact page.*
+### Content Writer {#content-writer}
 
----
+**Cholinga:** Kupanga ndi kusintha zolemba, masamba, ndi mafomu olumikizirana.
 
-### Site Builder
+**Zida zomwe zilipo:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Ndi ma integrations a Superdav AI Agent v1.18.0 atayatsidwa, calendar context yokonzedwa, zipata zovomereza, zikumbutso, ndi zida za zidziwitso za SMS zingakhalenso zilipo ku mayendedwe a ntchito ovomerezeka.
 
-**Mwayi:** Kukhazikitsa website lino lili lino kuchokera ku mwayi wosonyeza wosonyeza.
+**Zomwe imachita bwino:**
+- Kulemba zoyambira ndi kusindikiza zolemba za blog kuchokera ku brief kapena outline
+- Kupanga magulu a landing pages pa site yatsopano
+- Kumanga mafomu olumikizirana ndi ofunsa mafunso
+- Kuyika zithunzi zosankhidwa pa zolemba kuchokera ku URL kapena kusaka
+- Kulemba uthenga wotsatira wa chochitika kuchokera ku Google Calendar context yokonzedwa, kenako kuyima kuti ivomerezedwe musanatumize zidziwitso
 
-**Zinthu zomwe zimakwanirira:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Kufotokozera bwino:**
-- Kukhazikitsa mwayi wosonyeza wa site wosonyeza kwa ntchito yomwe imapereka.
-- Kukhazikitsani m'moyo m'moyo m'moyo — njira, malo (content), njira ya kukhala (navigation), ndipo zinthu zomwe zimapereka (design).
-- Kukhazikitsa kuchokera ku mavuto m'moyo pamene simukufunika kuti mumalipirere.
-- Kukhazikitsani plugins zomwe zimapereka monga chifukwa cha kukhazikitsa site lino lili lino.
-- Kukhazikitsani contact forms kuchokera m'moyo wosonyeza (Superdav AI Agent v1.10.0+).
-
-**Mawonjezere a m'moyo:**
-- *Tikhazikitsani site ya maphunziro yomwe imapereka post type ya gallery, booking page, ndipo contact form.*
-- *Tikhazikitsani website la restaurant ndi menu yomwe imapereka online, masiku a kupita (opening hours), ndipo form ya kukhala ndi malo ya kuphatikiza uli. (table-booking enquiry form).*
-- *Tikhazikitsani site la m'moyo wosonyeza (freelance consulting) ndi service pages, section ya portfolio, ndipo blog.*
-- *Tikhazikitsani contact form pa Contact page monga momwe Site Builder imapereka.*
+**Malingaliro oyambira:**
+- *Lemba cholemba cha blog cha mawu 500 chokhudza ubwino wa WordPress multisite.*
+- *Panga tsamba la About, Services, ndi Contact ndipo usindikize.*
+- *Onjezani fomu yofunsira booking patsamba la Contact.*
+- *Lemba chikumbutso kwa opezeka pa chochitika cha calendar yokonzedwa cha mawa ndipo dikirani chivomerezo musanachitumize.*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**Mwayi:** Kukhazikitsa zinthu zomwe zimapereka kwa maviri — malo (colours), njira ya kulankhula (typography), CSS, ndipo mapulogalamu a block.
+**Cholinga:** Kupanga website yonse kuyambira pachilimbikitso chimodzi.
 
-**Mawu ya Zochulidwa (Available Tools):** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Zida zomwe zilipo:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Ndi Superdav AI Agent v1.18.0, zida zokonzedwa za managed-service, chivomerezo, chikumbutso, calendar, ndi SMS zingakhale zilipo kumene oyang’anira amaziyatsa.
 
-**Kufunsa Kuti Zikufunse (What it does well):**
-- Kufuna presets za theme zolembedwa (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Kufinira typography ndi palettes za chinthu kwa mpaka m'moyo monga m'theme.json
-- Kuwerenga CSS yomwe imapereka zolembedwa (overrides) zomwe zimapereka kwa brand ya wamene
-- Kupanga screenshot ya page ndikufuna kuti muwone mavuto a design
+**Zomwe imachita bwino:**
+- Kupanga plan yomanga site ya magawo angapo ya mtundu wa bizinesi wofotokozedwa
+- Kuchita gawo lililonse payokha — kapangidwe, zomwe zili, navigation, design
+- Kubwezeretsa kuchokera ku zolakwika pakati pa plan popanda kufuna kulowererapo pamanja
+- Kuyika ma plugins ovomerezedwa ngati gawo la kumanga
+- Kupanga mafomu olumikizirana mwachindunji kuchokera ku chat interface (Superdav AI Agent v1.10.0+)
+- Kugwirizanitsa zikumbutso za kutsegulira kapena kutsatira opezeka popanda zidziwitso zobwerezedwa pamene zipata zovomereza ndi zolemba za zikumbutso zayatsidwa
 
-**Mawu Okhudzana Kuti Muli ndi Mwayi (Starter Suggestions):**
-- *Apply the warm-editorial preset ndipo set primary colour ku #2d6a4f.*
-- *Take a screenshot ya homepage ndikufuna kuti mupereke chiyani chomwe mungofunse.*
-- *Create reusable hero block pattern ndi full-width background image ndikugwiritsa ntchito heading yomwe ndi m'moyo wopereka (centred).*
-
----
-
-### Plugin Manager
-
-**Mwayi:** Kufuna, kuwerenga, ndikuyendetsa WordPress plugins.
-
-**Mawu Okhudzana Kuti Muli ndi Mwayi (Available Tools):** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Kufunsa Kuti Zikufunse (What it does well):**
-- Kuwerenga plugin yomwe ndi yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yomwe yom
-
-**Kutendeka kulipeza bwino:**
-- Kufuna zinthu zomwe ziliwonse pa site (site settings and options)
-- Kufotokozera kuti post types, taxonomies, ndi menus zimene ziliwonse pa site.
-- Kupereka upatanirano "kodi ndiyo kulipeza?" mwachidule kwa kulimbikira maungano omwe ali ndi mavuto (live values).
-- Kukhala m'malo wopereka chithandizo cha kupanga (read-only diagnostic layer) mopereka kuchitira mabwera.
-
-**Zilondolo za kuchotsa m'malo:**
-- *Ndi m'malo ndi zinthu zoteteza (plugins and settings) zomwe ziliwonse pa site?*
-- *Limbikani post types zonse zomwe ziliwonse pa site.*
-- *Kodi pali menus za kupanga (navigation menus) ndipo zimapereka kuwene?*
+**Malingaliro oyambira:**
+- *Mangani site ya photography portfolio yokhala ndi gallery post type, tsamba la booking, ndi fomu yolumikizirana.*
+- *Pangani website ya restaurant yokhala ndi menu ya pa intaneti, nthawi zotsegulira, ndi fomu yofunsira table-booking.*
+- *Khazikitsani site ya freelance consulting yokhala ndi masamba a services, gawo la portfolio, ndi blog.*
+- *Onjezani fomu yolumikizirana patsamba la Contact pogwiritsa ntchito site builder.*
+- *Pambuyo povomereza site launch checklist, tumizani chikumbutso cha SMS ku stakeholder contact yokonzedwa.*
 
 ---
 
-## Kukhazikitsa Agents (Customising Agents)
+### Design Studio {#design-studio}
 
-M'malo wosonyeza m'malo (built-in agent) lomwe ndi wogulitsa (extended) kapena kuchotsedwa m'malo, mumagwiritsa ntchito filter yomwe imapanga `gratis_ai_agent_agents`.
+**Cholinga:** Kusintha maonekedwe — mitundu, typography, CSS, ndi block patterns.
 
-### Kukhazikitsa system prompt yosonyeza m'malo kwa agent wosonyeza m'malo wosonyeza m'malo (Adding a custom system prompt to an existing agent)
+**Zida zomwe zilipo:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+
+**Zomwe imachita bwino:**
+- Kugwiritsa ntchito theme presets okhala ndi mayina (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Kukonza mwatsatanetsatane typography yapadziko lonse ndi ma colour palettes kudzera pa theme.json
+- Kuyika CSS yapadera ya zosintha za brand inayake
+- Kujambula screenshot ya tsamba ndi kuliona kuti mupeze zovuta za design
+
+**Malingaliro oyambira:**
+- *Gwiritsani ntchito preset ya warm-editorial kenako khazikitsani mtundu woyambirira kukhala #2d6a4f.*
+- *Tengani screenshot ya homepage ndipo mundiuze zomwe mungasinthe.*
+- *Pangani reusable hero block pattern yokhala ndi chithunzi cha background chodzaza m’lifupi lonse ndi heading yapakati.*
+
+### Plugin Manager {#plugin-manager}
+
+**Cholinga:** Kupeza, kuyika, ndi kuyang’anira ma plugins a WordPress.
+
+**Zida zomwe zilipo:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Zomwe imachita bwino:**
+- Kulangiza plugin yabwino kwambiri pa ntchito yomwe yafotokozedwa
+- Kuyika ability packs kuchokera ku registry
+- Kusakatula catalogue ya abilities yomwe ilipo pogwiritsa ntchito gulu
+
+**Malingaliro oyambira:**
+- *Kodi plugin yabwino kwambiri ya membership directory ndi iti?*
+- *Ikani pack ya WooCommerce abilities.*
+- *Ndiwonetseni mapaketi onse a ecommerce abilities omwe alipo.*
+
+---
+
+### Support Assistant {#support-assistant}
+
+**Cholinga:** Kuyankha mafunso okhudza zomwe zili pa site, makonda, ndi kasinthidwe ka WordPress.
+
+**Zida zomwe zilipo:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Zomwe imachita bwino:**
+- Kufufuza makonda ndi zosankha zapano za tsambali
+- Kufotokoza mitundu ya zolemba, ma taxonomy, ndi mindandanda yomwe yakonzedwa pa tsambali
+- Kuyankha mafunso a "kodi makondawa amachita chiyani?" powerenga mtengo womwe ulipo
+- Kukhala ngati gawo lowerenga kokha lopezera mavuto musanasinthe zinthu
+
+**Malingaliro oyambira:**
+- *Ndi ma plugin ndi makonda ati omwe akugwira ntchito pano pa tsambali?*
+- *Lembani mitundu yonse ya zolemba zapadera zomwe zalembetsedwa pa tsambali.*
+- *Ndi mindandanda yanji yoyendera yomwe ilipo ndipo yapatsidwa kuti?*
+
+---
+
+## Kuphatikiza kwa Superdav Automation {#superdav-automation-integrations}
+
+Pamene kuphatikiza kwa Superdav AI Agent v1.18.0 kwakonzedwa, othandizira omangidwamo angathe kutenga nawo mbali mu njira za automation zotetezeka kwambiri zomwe zimadziwa ndandanda:
+
+- **Zida zowerengera Google Calendar** zimalola othandizira kuyang'ana makalendala ndi zochitika zokonzedwa asanalembe ntchito yotsatira.
+- **Kuyerekezera ma contact ndi opezeka pamsonkhano** kumathandiza kugwirizanitsa otenga nawo mbali pa chochitika ndi ogwiritsa ntchito WordPress kapena ma contact odziwika.
+- **Zipata zovomerezedwa ndi munthu** zimayimitsa zochita zovuta mpaka wogwiritsa ntchito wovomerezeka awunikire ndi kuzitsimikizira.
+- **Zolemba za zikumbutso** zimalepheretsa zidziwitso zobwerezabwereza pamene ntchito zokonzedwa ziyesedwanso kapena zibwerezedwa.
+- **Zidziwitso za TextBee SMS** zimatumiza mauthenga alemba okonzedwa pokhapokha ngati ma credentials a SMS ndi zilolezo za workflow zayatsidwa.
+
+Njira yolimbikitsidwa: pemphani wothandizira kukonzekera uthenga kapena chochita, onaninso pempho lovomereza, kenako lolani chochita chovomerezedwacho kupitiriza. Kwa zikumbutso zobwerezabwereza, sungani kuchotsa zobwereza kwa zikumbutso kuyatsidwa kuti chochitika kapena contact yemweyo asadziwitsidwe mobwerezabwereza.
+
+---
+
+## Kusintha Othandizira {#customising-agents}
+
+Wothandizira aliyense womangidwamo angakulitsidwe kapena kusinthidwa kudzera mu filter ya `gratis_ai_agent_agents`.
+
+### Kuwonjezera system prompt yapadera kwa wothandizira amene alipo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -113,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kukhazikitsa agent watsopano (Registering a new agent)
+### Kulembetsa wothandizira watsopano {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -132,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Mwana wamba wamba uliyooneka m'Agent Picker mara ya m'filter ikamaliza.
+Wothandizira watsopanoyo amawoneka mu Agent Picker nthawi yomweyo filter ikangoyenda.
 
-### Kuondoa agent iliyopo
+### Kuchotsa wothandizira womangidwamo {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

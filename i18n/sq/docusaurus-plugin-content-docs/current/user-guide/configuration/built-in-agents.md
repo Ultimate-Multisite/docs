@@ -1,132 +1,148 @@
 ---
 title: Agjentë të integruar
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agjentët e integruar
+# Agentët e integruar {#built-in-agents}
 
-Gratis AI Agent v1.9.0 dërgon pesë agjentë të integruar, secili i konfiguruar paraprakisht me një grup të fokusuar mjeteve, një prompt sistemi të përshtatur dhe sugjerime fillestare që përputhen me detyrat e zakonshme në atë fushë. Ndryshimi midis agjentëve ndryshon se çfarë mund të bëjë asistentit dhe si do të reagojë — pa asnjë konfigurim nga ana jote.
+Gratis AI Agent v1.9.0 vjen me pesë agentë të integruar, secili i parakonfiguruar me një grup të fokusuar mjetesh, një system prompt të përshtatur dhe sugjerime fillestare që përputhen me detyra të zakonshme në atë fushë. Kalimi nga një agent te tjetri ndryshon çfarë mund të bëjë asistenti dhe si përgjigjet — pa asnjë konfigurim nga ana juaj. Superdav AI Agent v1.18.0 mund t’u shtojë këtyre rrjedhave të punës mjete të vetëdijshme për oraret, regjistra kujtesash, porta miratimi dhe njoftime SMS kur integrimet përkatëse janë të konfiguruara.
 
-## Çfarë është një Agent?
+## Çfarë është një agent? {#what-is-an-agent}
 
-Secili agent është një profil konfiguratues me emër që bashkon:
+Çdo agent është një profil konfigurimi me emër që kombinon:
 
-- **Mjetet (Tools)** — aftësitë që agjenti lejohet të thirrë (p.sh., një Shkrim Kontenuesi ka akses në aftësitë e krijimit të postimeve; një Studio Dizajni ka akses në aftësitë CSS dhe theme.json).
-- **Prompt Sistemi (System prompt)** — udhëzimet që vendosin tonin, prioritetet dhe kufizimet e agjentit.
-- **Sugjerimet (Suggestions)** — promptet të shkruara paraprakisht që shfaqen në interfejsin e bisedës për t'ju ndihmuar të filloni shpejt.
+- **Mjetet** — aftësitë që agenti lejohet të thërrasë (p.sh. një Shkrues Përmbajtjeje ka qasje në aftësi për krijimin e postimeve; një Studio Dizajni ka qasje në aftësi për CSS dhe theme.json)
+- **System prompt** — udhëzime që përcaktojnë tonin, përparësitë dhe kufizimet e agentit
+- **Sugjerimet** — prompt-e të shkruara paraprakisht që shfaqen në ndërfaqen e bisedës për t’ju ndihmuar të nisni shpejt
 
-## Qasja në Zgjidhjen e Agjentëve (Agent Picker)
+## Qasja te zgjedhësi i agentit {#accessing-the-agent-picker}
 
-1. Hapni paneli **Gratis AI Agent** në panelin anësor të adminit WordPress-it.
-2. Klikoni ikonen e **agentit** në krye-tavllin e bisedës (ikona ndryshon për të pasqyruar agjentin aktiv).
-3. **Agent Picker** hapet si një sovranje me tabelë formati. Secili agent liston me ikonën, emrin dhe një përshkrim njëvjet.
-4. Klikoni në një rresht agjenti për ta aktivizuar. Krye-tavllia përditësohet menjëherë.
+1. Hapni panelin **Gratis AI Agent** në shiritin anësor të administrimit të WordPress.
+2. Klikoni **ikonën e agentit** në këndin e sipërm majtas të kokës së bisedës (ikona ndryshon për të pasqyruar agentin aktiv).
+3. **Agent Picker** hapet si një mbivendosje form-table. Çdo agent renditet me ikonën, emrin dhe një përshkrim me një rresht.
+4. Klikoni një rresht agenti për ta aktivizuar. Koka e bisedës përditësohet menjëherë.
 
-Ndonjëherë mund të ndryshoni agjentët gjatë bisedës — prompt sistemi i agjentit të ri hyn në fuqi nga mesazhi i ardhshëm.
+Mund të ndërroni agentë edhe në mes të bisedës — system prompt i agentit të ri hyn në fuqi nga mesazhi i radhës.
 
-## Pesë Agjentët e Integruar
+## Pesë agentët e integruar {#the-five-built-in-agents}
 
-### Shkrim Kontenuesi (Content Writer)
+### Shkrues Përmbajtjeje {#content-writer}
 
-**Fokus:** Krijimi dhe redaktimi i postimeve, faqeve dhe formularëve të kontaktit.
+**Fokusi:** Krijimi dhe redaktimi i postimeve, faqeve dhe formularëve të kontaktit.
 
-**Mjetet e disponueshme:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Mjetet e disponueshme:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Me integrimet e Superdav AI Agent v1.18.0 të aktivizuara, konteksti i konfiguruar i kalendarit, portat e miratimit, kujtesat dhe mjetet e njoftimeve SMS mund të jenë gjithashtu të disponueshme për rrjedha pune të miratuara.
 
 **Çfarë bën mirë:**
-- Përgatitja dhe publikimi i postimeve në blog nga një skicë ose plani
-- Krijimi të grupe të faqjeve landing për një faqe të re
-- Ndërtimi i formularëve të kontaktit dhe kërkesave
-- Vendosja e imazheve të ngarkuara në postime nga një URL ose kërkimi
+- Harton dhe publikon postime blogu nga një përmbledhje ose skicë
+- Krijon grupe faqesh landing për një sajt të ri
+- Ndërton formularë kontakti dhe kërkesash
+- Vendos imazhe të veçuara në postime nga një URL ose kërkim
+- Harton mesazhe pasuese për ngjarje nga konteksti i konfiguruar i Google Calendar, pastaj ndalet për miratim përpara dërgimit të njoftimeve
 
 **Sugjerime fillestare:**
-- *Shkruani një postim blog prej 500 fjalësh mbi përfitimet e WordPress multisite.*
-- *Krijoni faqet About, Shërbime dhe Kontakt dhe publikojeni ato.*
-- *Shtoni një formular kërkesash rezervimi në faqen Kontakt.*
+- *Shkruaj një postim blogu me 500 fjalë rreth përfitimeve të WordPress multisite.*
+- *Krijo një faqe Rreth nesh, Shërbime dhe Kontakt dhe publikoji.*
+- *Shto një formular kërkese për rezervim në faqen Kontakt.*
+- *Harto një kujtesë për pjesëmarrësit në ngjarjen e konfiguruar të kalendarit për nesër dhe prit miratimin përpara se ta dërgosh.*
 
 ---
 
-### Site Builder (Ndërtues i Faqes)
+### Ndërtues Sajti {#site-builder}
 
-**Fokus:** Krijimi i të gjithë faqeve të internetit nga një komandë e vetme.
+**Fokusi:** Krijim i plotë i uebsajtit nga një prompt i vetëm.
 
-**Mjetet e disponueshme:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Mjetet e disponueshme:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Me Superdav AI Agent v1.18.0, mjetet e konfiguruara për shërbim të menaxhuar, miratim, kujtesa, kalendar dhe SMS mund të jenë të disponueshme aty ku administratorët i aktivizojnë.
 
 **Çfarë bën mirë:**
-- Krijimin e një plani ndërtimi të faqeve në disa faza për një lloj biznesi të përshkruar
-- Ekzekutimi i çdo faze pa ndërhyjë — struktura, përmbajtja, navigacioni, dizajni
-- Rikonstruksioni nga gabimet gjatë planit pa nevojë për ndërhyrje manuale
-- Instalimi i plugin-eve të rekomanduara si pjesë e ndërtimit
-- Krijimi i formularëve të kontaktit direkt nga interfejsi i bisedës (Superdav AI Agent v1.10.0+)
+- Gjeneron një plan ndërtimi sajti me shumë faza për një lloj biznesi të përshkruar
+- Ekzekuton çdo fazë në mënyrë autonome — strukturë, përmbajtje, navigim, dizajn
+- Rikuperohet nga gabimet në mes të planit pa kërkuar ndërhyrje manuale
+- Instalon plugin-e të rekomanduara si pjesë e ndërtimit
+- Krijon formularë kontakti drejtpërdrejt nga ndërfaqja e bisedës (Superdav AI Agent v1.10.0+)
+- Koordinon kujtesat e lansimit ose ndjekjen pasuese të pjesëmarrësve pa njoftime të dyfishta kur portat e miratimit dhe regjistrat e kujtesave janë të aktivizuara
 
 **Sugjerime fillestare:**
-- *Ndërtoni një faqe portofoli fotografik me llojin postimi gallery, një faqe rezervimi dhe një formular kontakt.*
-- *Krijoni një faqe restoranti me meniu online, oraret e hapjes dhe një formular kërkesash rezervimi të tavoline.*
-- *Vendosni një faqe konsultimesh freelance me faqe shërbimesh, një seksion portofoli dhe një blog.*
-- *Shtoni një formular kontakt në faqen Kontakt duke përdorur Site Builder.*
+- *Ndërto një sajt portofoli fotografie me një lloj postimi galerie, një faqe rezervimi dhe një formular kontakti.*
+- *Krijo një uebsajt restoranti me një menu online, orare hapjeje dhe një formular kërkese për rezervim tavoline.*
+- *Konfiguro një sajt konsulence të pavarur me faqe shërbimesh, një seksion portofoli dhe një blog.*
+- *Shto një formular kontakti në faqen Kontakt duke përdorur ndërtuesin e sajtit.*
+- *Pasi lista e kontrollit për lansimin e sajtit të miratohet, dërgo një kujtesë SMS te kontakti i konfiguruar i palës së interesuar.*
 
 ---
 
-### Design Studio (Studiu i Dizajnit)
+### Studio Dizajni {#design-studio}
 
-**Fokus:** Personalizimi vizual — ngjyrat, tipografia, CSS dhe modelet e blloqeve.
+**Fokusi:** Përshtatje vizuale — ngjyra, tipografi, CSS dhe modele blloqesh.
 
-**Mjetet e mjetë:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Mjetet e disponueshme:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
 **Çfarë bën mirë:**
-- Aplikimin e presetave të temës me emër (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Përshtatja e detajeve globale të tipografisë dhe paletave të ngjyrave përmes theme.json
-- Injeksioni i CSS-s të personalizuar për mbyllje specifike të markës
-- Marrja një screenshot-i i një face dhe vlerësimi i saj për probleme dizajni
+- Aplikon preset-e të emërtuara teme (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Rregullon me imtësi tipografinë globale dhe paletat e ngjyrave përmes theme.json
+- Injekton CSS të personalizuar për ndryshime specifike të brandit
+- Merr një pamje ekrani të një faqeje dhe e shqyrton për probleme dizajni
 
 **Sugjerime fillestare:**
-- *Aplikoni presetin warm-editorial dhe më pas vendosni ngjyrën primare në #2d6a4f.*
-- *Marrja screenshot-i të faqes kryesore dhe më tregoni se çfarë do të përmirësonit.*
-- *Krijoni një model (pattern) hero me hapësirë plotësisht gjerësi për sfond imazhi dhe titull i qendruar.*
+- *Apliko preset-in warm-editorial dhe pastaj vendos ngjyrën kryesore në #2d6a4f.*
+- *Merr një pamje ekrani të faqes kryesore dhe më thuaj çfarë do të përmirësoje.*
+- *Krijo një model blloku hero të ripërdorshëm me një imazh sfondi me gjerësi të plotë dhe titull të qendërzuar.*
 
----
+### Menaxher Plugin-esh {#plugin-manager}
 
-### Menaxhuesi i Plugin-eve (Plugin Manager)
-
-**Fokus:** Zbulimi, instalimi dhe menaxhimi i plugin-eve të WordPress.
+**Fokusi:** Zbulimi, instalimi dhe menaxhimi i plugin-eve WordPress.
 
 **Mjetet e disponueshme:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
 **Çfarë bën mirë:**
-- Rekomandimin e pluginit më të mirë për një rast përdorimi i përshkruar
-- Instalimi i paketave të aftësive (ability packs) nga regjistri
-- Browsimi i katalogut të aftësive të disponueshme sipas kategorive
+- Rekomandon plugin-in më të mirë për një rast përdorimi të përshkruar
+- Instalon paketa aftësish nga regjistri
+- Shfleton katalogun e aftësive të disponueshme sipas kategorisë
 
 **Sugjerime fillestare:**
-- *Cila është plugin më i mirë për një direktori anëtarësh?*
-- *Instaloni paketën e aftësive WooCommerce.*
-- *Më tregoni të gjitha paketat e aftësive të komercializimit (ecommerce) të disponueshme.*
+- *Cili është plugin-i më i mirë për një direktori anëtarësie?*
+- *Instalo paketën e aftësive WooCommerce.*
+- *Më trego të gjitha paketat e disponueshme të aftësive për ecommerce.*
 
 ---
 
-### Asistenti i Mbështetjes (Support Assistant)
+### Asistent Mbështetjeje {#support-assistant}
 
-**Fokus:** Përgjigja në pyetje rreth përmbajtjes së faqes, cilësimeve dhe konfigurimit të WordPress.
+**Fokusi:** Përgjigjja ndaj pyetjeve rreth përmbajtjes së sajtit, cilësimeve dhe konfigurimit të WordPress.
 
 **Mjetet e disponueshme:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
 **Çfarë bën mirë:**
-- Kërkon cilësimet dhe opsionet e aktualit të faqes së internetit.
-- Shpjegon çfarë post types, taxonomies dhe menues janë konfiguruar në faqe.
-- Përgjigjet pyetjeve "çfarë bën kjo opsion?" duke lexuar vlerat live.
-- Shërben si një shtresë diagnostike të vetme leximi para se të bëni ndryshime.
+- Kërkimi i cilësimeve dhe opsioneve aktuale të sajtit
+- Shpjegimi se cilat lloje postimesh, taksonomi dhe menu janë konfiguruar në sajt
+- Përgjigjja ndaj pyetjeve "çfarë bën ky cilësim?" duke lexuar vlerat live
+- Shërbimi si një shtresë diagnostikuese vetëm për lexim përpara se të bëhen ndryshime
 
 **Sugjerime fillestare:**
-- *Çfarë pluginë dhe cilësime janë aktive në këtë faqe?*
-- *Listoni të gjitha custom post types që janë regjistruar në këtë faqe.*
-- *Cilat menues navigimi ekzistojnë dhe ku janë të lidhur?*
+- *Cilët plugin-e dhe cilësime janë aktualisht aktive në këtë sajt?*
+- *Listo të gjitha llojet e personalizuara të postimeve të regjistruara në këtë sajt.*
+- *Cilat menu navigimi ekzistojnë dhe ku janë caktuar?*
 
 ---
 
-## Personalizimi i Agjentëve (Customising Agents)
+## Integrimet e Automatizimit Superdav {#superdav-automation-integrations}
 
-Çdo agent i ndërtuar mund të zgjerohet ose zbehet përmes filtrit `gratis_ai_agent_agents`.
+Kur integrimet e Superdav AI Agent v1.18.0 janë konfiguruar, agjentët e integruar mund të marrin pjesë në rrjedha pune automatizimi më të sigurta dhe të vetëdijshme për orarin:
 
-### Shtimi i një system prompt custom në një agent ekzistues
+- **Mjetet e leximit të Google Calendar** u lejojnë agjentëve të inspektojnë kalendarët dhe ngjarjet e konfiguruara përpara se të hartojnë punë pasuese.
+- **Hartëzimi i kontakteve dhe pjesëmarrësve** ndihmon në përputhjen e pjesëmarrësve të ngjarjeve me përdoruesit e WordPress ose kontaktet e njohura.
+- **Portat e miratimit njerëzor** ndalojnë veprimet e ndjeshme derisa një përdorues i autorizuar t’i shqyrtojë dhe konfirmojë ato.
+- **Regjistrimet e kujtesave** parandalojnë njoftimet e dyfishta kur punët e planifikuara riprovohen ose përsëriten.
+- **Njoftimet SMS TextBee** dërgojnë mesazhe tekst të konfiguruara vetëm kur kredencialet SMS dhe lejet e rrjedhës së punës janë të aktivizuara.
+
+Rrjedhë pune e rekomanduar: kërkoji agjentit të përgatisë mesazhin ose veprimin, shqyrto njoftimin e miratimit, pastaj lejo që veprimi i miratuar të rifillojë. Për kujtesat e përsëritura, mbaje të aktivizuar deduplikimin e kujtesave që i njëjti event ose kontakt të mos njoftohet vazhdimisht.
+
+---
+
+## Personalizimi i agjentëve {#customising-agents}
+
+Çdo agjent i integruar mund të zgjerohet ose zëvendësohet përmes filtrit `gratis_ai_agent_agents`.
+
+### Shtimi i një kërkese sistemi të personalizuar te një agjent ekzistues {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Regjistrimi i një agenti të ri
+### Regjistrimi i një agjenti të ri {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Optimizon postet dhe faqet për mjetet e kërkimit.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Ti je një specialist SEO. Fokusohu në optimizimin e fjalëve kyçe, përshkrimet meta dhe të dhënat strukturuar.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Përpiquni titullin e faqes kryesore dhe përshkrimin meta.',
-            'Sugjeroni përmirësime të tagut të titullit për pesë postat më të fundit.',
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Agenti i ri shfaqet në Agent Picker menjëherë pasi ekzekutohet filtri.
+Agjenti i ri shfaqet në Agent Picker menjëherë pasi filtri të ekzekutohet.
 
-### Heqja e një agenti të integruar
+### Heqja e një agjenti të integruar {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

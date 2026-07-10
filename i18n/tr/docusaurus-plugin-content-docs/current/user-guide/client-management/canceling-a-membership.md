@@ -1,31 +1,32 @@
 ---
-title: Üyelik İptali
+title: Üyeliği İptal Etme
 sidebar_position: 2
-_i18n_hash: 2d99402d43697b8c70aa53690690a474
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Üyelik İptali (v2)
+# Üyeliği İptal Etme (v2) {#canceling-a-membership-v2}
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümü için geçerlidir.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümünü ifade eder.**_
 
-Müşterileriniz açısından üyelik iptali oldukça kolaydır.
+Müşterileriniz tarafında bir üyeliği iptal etmek oldukça kolaydır.
 
-Kullanıcınız üyeliğini iptal etmek istiyorsa, öncelikle ****Hesap**** sayfasına erişmelidir.
+Kullanıcınız üyeliğini iptal etmek isterse, önce ****Account**** sayfasına erişmelidir.
 
-Burada **Tehlikeli Bölge** kısmına gitmeli ve **Hesabı Sil** butonuna tıklamalıdır.
+Orada **Danger Zone** bölümüne gitmeli ve **Delete Account** öğesine tıklamalıdır.
 
-![Hesap sayfası Tehlikeli Bölge ve Hesabı Sil butonu](/img/admin/memberships-list.png)
+![Delete Account düğmesiyle Account sayfasındaki Danger Zone](/img/account-page/danger-zone.png)
 
-Onay isteyen bir pencere açılacaktır. **Hesap Silme İşlemini Onayla** seçeneğini etkinleştirmeli ve **Hesabı Sil** butonuna tıklamalıdır.
+Onaylarını isteyen bir modül açılacaktır. **Confirm Account Deletion** seçeneğini açmalı ve **Delete Account** öğesine tıklamalıdırlar.
 
-![Hesap Silme Onay penceresi](/img/admin/memberships-list.png)
+![Confirm Account Deletion iletişim kutusu](/img/account-page/delete-account-confirm.png)
 
-Bu işlem kullanıcının oturumunu kapatacak, ağınızdaki üyeliğini iptal edecek ve sitesini ağınızdan silecektir.
+Bu işlem onları siteden çıkış yaptıracak ve ağınızdaki üyeliklerini iptal edecek, ayrıca sitelerini ağınızdan silecektir.
 
-![Hesap silindikten sonra oturum kapatıldı](/img/admin/memberships-list.png)
+![Hesap silindikten sonra çıkış yapılmış](/img/account-page/logged-out-after-delete.png)
 
-![Üyelik iptal edildi onayı](/img/admin/memberships-list.png)
+![Üyelik iptali onayı](/img/account-page/membership-canceled.png)
 
-**Önemli:** Bu işlemin müşteriyi ağınızdan tamamen kaldırmayacağını unutmayın. Bir müşteri birden fazla üyeliğe sahip olabilir veya hiç üyeliği olmayabilir.
+**Önemli:** Bu işlemin müşteriyi ağınızdan hariç tutmayacağını unutmayın; çünkü bir müşterinin kendisine bağlı birden fazla üyeliği veya hiç üyeliği olmayabilir.
 
-![İptal sonrası müşteri hâlâ ağda mevcut](/img/admin/memberships-list.png) | ![Aktif üyeliği olmayan müşteri](/img/admin/memberships-list.png)  
----|---
+![İptalden sonra müşteri ağda hâlâ var](/img/admin/customer-after-cancel.png)
+
+![Etkin üyeliği olmayan müşteri](/img/admin/memberships-customer-empty.png)

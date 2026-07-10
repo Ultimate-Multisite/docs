@@ -3,7 +3,7 @@ title: Mene ne WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Menene WordPress Multisite ne ke?
+# Menene WordPress Multisite ne ke? {#what-is-wordpress-multisite}
 
 A cikin tsarin shi na asali, WordPress yana ba wani ƙwarewa mai suna ‘Multisite’ wanda ya fara daga shekarar 2010 da farawa da WordPress 3.0. Tun daga wannan lokacin ya samu wasu gyare-gyare ne don haɗa sabbin ƙwarewa da kuma inganta tsaro.
 
@@ -11,7 +11,7 @@ A gaba, za ka iya tunanin WordPress multisite kamar haka: Wani Jami'a yana ajiye
 
 ##
 
-## Menene WordPress Multisite a zahiri?
+## Menene WordPress Multisite a zahiri? {#what-exactly-is-wordpress-multisite}
 
 Multisite wani ƙwarewa ne na WordPress wanda ke ba damar samar da wuraren da dama su yi amfani da wuri ɗaya na WordPress. Lokacin da aka fi ƙarfafa multisite, wurin WordPress na asali yana canza don tattauna abin da ake kira **wannan gida na wurare (network of sites)**.
 
@@ -23,7 +23,7 @@ Wannan gaskiya ita ce ɗaya daga cikin manyan fa'idodin multisite, saboda tana b
 
 ##
 
-## Subdomain ko Subdirectory?
+## Subdomain ko Subdirectory? {#subdomain-or-subdirectory}
 
 Akwai hanyoyi biyu na gudanar da WordPress multisite – kuma dole ne ka zaɓi ɗaya lokacin da kake canza wurin WordPress na yau zuwa multisite:
 
@@ -49,7 +49,7 @@ A lokacin da haka, saboda tsarin URL-sa, Google da mafi yawan injin bincike ba z
 
 در مقابل حالت زیردایرکتوری (subdirectory mode)، سایت‌های فرعی در یک شبکه مبتنی بر دامین زیرمجموعه توسط موتورهای جستجو به عنوان وب‌سایت‌های جداگانه در نظر گرفته می‌شوند، به این معنی که محتوایی که روی یک سایت فرعی وجود دارد، اصلاً بر عملکرد سئو (SEO performance) سایر سایت‌های فرعی تأثیری ندارد.
 
-## سوپر ادمین (The Super Admin)
+## سوپر ادمین (The Super Admin) {#the-super-admin}
 
 نصب‌های وردپرس تک‌سایتی (single-site WordPress installations) به شما اجازه می‌دهد تعداد نامحدودی کاربر اضافه کنید و نقش‌های کاربری مختلف با مجوزهای متفاوت به آن کاربران بدهید.
 
@@ -63,7 +63,7 @@ A lokacin da haka, saboda tsarin URL-sa, Google da mafi yawan injin bincike ba z
 
 _Gargaɗi: Kuma kuka kuka, girmama wani mutum zuwa cikin shaidarka da ba shi matsayin super admin yana ba wannan mai amfani dukkan tallafin shaidarka. A matsayin misali, wasu super admins na iya canza matsalar super admin ta, wanda hakan ya ƙara maka rashin damar shiga wajen sarbin aikin shaidarka kansa. Don ba 'yan kliyenten Ultimate Multisite damar samun kawai (granular control) kan abin da wasu super admins za su iya yi, muna da wani add-on da ake kira Support Agents. Wannan add-on yana ba ka damar ƙirƙirar wani nau'in mai amfani – agent – tare da ikon da ya kamata shi don aikin da zai yi kan shaidarka._
 
-## Me kake raba tsakanin subsites kuma me ba ka raba?
+## Me kake raba tsakanin subsites kuma me ba ka raba? {#what-is-shared-among-subsites-and-what-is-not}
 
 Kamar yadda muka ambata a baya, ɗaya daga cikin manyan fa'idodin WordPress multisite shine cewa duk subsites suna raba dukkan tsarin (configurations), fayilolin asali (core files), themes, plugins, fayilolin asali na WordPress, da sauransu.
 
@@ -73,7 +73,7 @@ Amma akwai wasu abubuwa da aka tsara shi sosai ga kowane subsite.
 - Kowane subsite yana da ikon sarbin aikin daban kuma zai iya samarwa ko kawar da kayan aiki (plugins) ko themes idan ba super admin ya yi wa shaidarka aiki.
 - Babban jadawalin database kowane subsite an ƙirƙira, wanda hakan na nufin cewa posts, comments, pages, settings, da sauransu suna tsara ga kowane subsite.
 
-## Gudanar da amfani (User management) a WordPress Multisite
+## Gudanar da amfani (User management) a WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Babu wata batun da ya shafi gudanar da amfani a WordPress multisite wanda ya kasance mai sauƙi sosai. Jadawalin masu amfani na WordPress ɗaya ne daga cikin waɗanda aka raba tsakanin dukkan subsites.
 
@@ -97,7 +97,7 @@ _Ga bayani: Mun fahimci yadda wannan zai iya zama mai rashin kyau dangane da nau
 
 حتی اگر جدول کاربران اشتراکی باشد، مدیران سایت‌های فرعی یا مدیر فوق‌العاده می‌توانند کاربران را به زیرسایت‌ها اضافه یا حذف کنند و حتی ممکن است کاربران در زیرسایت‌های مختلف نقش‌های کاربری متفاوتی داشته باشند.
 
-## ملاحظات عملکرد (Performance considerations)
+## ملاحظات عملکرد (Performance considerations) {#performance-considerations}
 
 وردپرس چندسایتی وقتی پای تعداد سایت‌هایی که می‌تواند پشتیبانی کند، وسط باشد واقعاً قدرتمند است. این موضوع را می‌توان با این حقیقت آزمایش کرد که [WordPress.com](https://WordPress.com)، Edublogs و Campuspress همگی سرویس‌های مبتنی بر چندسایتی هستند و هر کدام هزاران سایت را میزبانی می‌کنند.
 

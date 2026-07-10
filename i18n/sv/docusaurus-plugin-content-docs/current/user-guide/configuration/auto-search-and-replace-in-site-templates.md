@@ -1,32 +1,32 @@
 ---
-title: Automatisk sök och ersätt i webbplatsmallar
+title: Automatisk sökning och ersättning i webbplatsmallar
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk sök och ersätt i webbplatsmallar (v2)
+# Automatisk sökning och ersättning i webbplatsmallar (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**Denna handledning kräver WP UItimo version 2.x.**_
+_**Den här handledningen kräver WP UItimo version 2.x.**_
 
-En av de mest kraftfulla funktionerna i Ultimate Multisite är möjligheten att lägga till egna text-, färg- och urvalsfält i registreringsformuläret. När vi har samlat in den informationen kan vi använda den för att förifylla innehåll i vissa delar av den valda webbplatsmallen. När den nya webbplatsen sedan publiceras ersätter Ultimate Multisite platshållarna med den faktiska informationen som angavs vid registreringen.
+En av de mest kraftfulla funktionerna i Ultimate Multisite är möjligheten att lägga till godtyckliga text-, färg- och valfält i registreringsformuläret. När vi har fångat in dessa data kan vi använda dem för att förifylla innehållet i vissa delar av den valda webbplatsmallen. När den nya webbplatsen sedan publiceras kommer Ultimate Multisite att ersätta platshållarna med den faktiska information som angavs under registreringen.
 
-Du kan till exempel skapa dina mallwebbplatser med platshållare. Platshållare ska omges av dubbla klammerparenteser - {{placeholder_name}}.
+Till exempel kan du skapa dina mallwebbplatser med platshållare. Platshållare ska läggas till omgivna av dubbla klammerparenteser - {{placeholder_name}}.
 
-Sedan lägger du helt enkelt till ett matchande registreringsfält för att samla in den informationen.
+Sedan kan du helt enkelt lägga till ett matchande registreringsfält för att fånga in dessa data
 
-Din kund kan sedan fylla i det fältet under registreringen.
+Din kund kommer sedan att kunna fylla i det fältet under registreringen.
 
-Ultimate Multisite ersätter därefter automatiskt platshållarna med den information som kunden angett.
+Ultimate Multisite kommer sedan automatiskt att ersätta platshållarna med de data som kunden har angett.
 
-## **Att lösa problemet med "mallar fulla av platshållare"**
+## **Lösa problemet med "mall full av platshållare"** {#solving-the-template-full-of-placeholders-problem}
 
-Allt detta är utmärkt, men vi stöter på ett fult problem: nu är våra webbplatsmallar – som kan besökas av våra kunder – fulla av otydliga platshållare som inte säger så mycket.
+Allt detta är bra, men vi stöter på ett fult problem: nu är våra webbplatsmallar - som kan besökas av våra kunder - fulla av fula platshållare som inte säger särskilt mycket.
 
-För att lösa detta erbjuder vi möjligheten att ange tillfälliga värden för platshållarna. Vi använder sedan dessa värden för att söka och ersätta innehållet på mallwebbplatserna medan dina kunder besöker dem.
+För att lösa det erbjuder vi möjligheten att ange låtsasvärden för platshållarna, och vi använder dessa värden för att söka och ersätta deras innehåll på mallwebbplatserna medan dina kunder besöker dem.
 
-Du kommer åt redigeraren för mallplatshållare genom att gå till **Ultimate Multisite > Inställningar > Webbplatser** och sedan klicka på länken Redigera platshållare i sidofältet.
+Du kan komma åt redigeraren för mallplatshållare genom att gå till **Ultimate Multisite > Settings > Sites**, bläddra till området Site Template Options och sedan klicka på länken **Edit Placeholders**.
 
-![Länken Redigera platshållare i sidofältet för webbplatsinställningar](/img/config/settings-sites.png)
+![Området Site Template Options på inställningssidan Sites](/img/config/settings-sites-templates-section.png)
 
-Det tar dig till innehållsredigeraren för platshållare, där du kan lägga till platshållare och deras respektive innehåll.
+Det tar dig till platshållarnas innehållsredigerare, där du kan lägga till platshållare och deras respektive innehåll.
 
-![Innehållsredigerare för platshållare med platshållarnamn och värden](/img/config/settings-sites.png)
+![Ingångspunkt för redigeraren för mallplatshållare](/img/config/settings-sites-templates-section.png)

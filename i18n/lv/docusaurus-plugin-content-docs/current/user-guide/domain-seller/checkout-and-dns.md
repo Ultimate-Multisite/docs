@@ -3,13 +3,13 @@ title: Pārdošanas lauka un klienta DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout laukums un domēna pārvaldība
+# Checkout laukums un domēna pārvaldība {#checkout-field-and-customer-dns-management}
 
-## Domānas izvēles lauks
+## Domānas izvēles lauks {#the-domain-selection-checkout-field}
 
 **Domānas izvēles** lauks ir checkout elements, kas nodrošina klientiem izvēli, kā saņemt savas vietnes domānu. Pievienojiet to jebkuram checkout formai, lai atrodotu iespēju pārdot domānas.
 
-### Laukuma pievienošana checkout formai
+### Laukuma pievienošana checkout formai {#adding-the-field-to-a-checkout-form}
 
 1. Navigojiet uz **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Atveriet vai izveidojiet checkout formu
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Konfiguriet lauka opcijas (skatīt lai)
 6. Saglabājiet formu
 
-### Lauku opcijas
+### Lauku opcijas {#field-options}
 
 **Domānas režīmi** — Izvēlieties, kuras tabulas redz klientam. Katrs režīms var būt ieslēgts vai izslēgts nepalīgi:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domānas produkts** — Optiāli saistiet šo lauku ar konkrētu domānas produktu. Ja nav iestatīts, addon automātiski izvēlas atbilstošu produktu, pamatojoties uz TLD, ko klient meklē.
 
-### Reģistranta kontakta laukumi
+### Reģistranta kontakta laukumi {#registrant-contact-fields}
 
 Kad klient izvēlas **Register New Domain** tabu, checkout forma iekļauj reģistranta kontakta laukus:
 
@@ -43,11 +43,11 @@ Kad klient izvēlas **Register New Domain** tabu, checkout forma iekļauj reģis
 
 Šie ir nepieciešmas visiem registratoriem un tiek validēti pirms API zīmes reģistrācijas sūtīšanas. Telefoni automātiski formatējas pēc starptautiskās `+CC.NNN` formāta, ko registratori sagaida.
 
-### Automāti generētais vietnes URL adrese
+### Automāti generētais vietnes URL adrese {#auto-generated-site-url}
 
 Kad kliente reģistrējas vai mape domainu, vietnes URL adrese automātiski tiek ietilpina no izvēlētā domēna. Klientiem nav nepieciešams aizpildīt atsevišķu URL lauku.
 
-### Mēģinājuma uzvedība (Search behaviour)
+### Mēģinājuma uzvedība (Search behaviour) {#search-behaviour}
 
 - Domēnas pieejamība tiek pārbaudīta reāllaikā ar AJAX, kad kliente ievada tekstu
 - Ja iepriekš izvēlētā domēna nav pieejama, tiek parādīti alternatīvās TLD (top-level domain) ieteikumi
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Klientu DNS pārvaldība (Customer DNS management)
+## Klientu DNS pārvaldība (Customer DNS management) {#customer-dns-management}
 
 Klienti var pārvaldīt DNS ierakstus saviem reģistrētiem domēniem no **Mans konta** lapas, zem domēnas ienākuma.
 
-### Atbalstītie ierakstu tipa
+### Atbalstītie ierakstu tipa {#supported-record-types}
 
 | Tips | Lietošana |
 |---|---|
@@ -91,11 +91,11 @@ Klienti var pārvaldīt DNS ierakstus saviem reģistrētiem domēniem no **Mans 
 | **MX** | Noteēt e-pasta serveri (mail exchange server) |
 | **TXT** | Pievienot SPF, DMARC, apstiprinājumu vai citus tekstus ierakstus |
 
-### Kādi pakalpojumi atbalsta DNS pārvaldību?
+### Kādi pakalpojumi atbalsta DNS pārvaldību? {#which-providers-support-dns-management}
 
 DNS pārvaldība (reģistrēt, rediģēt, izslēgt ierakstus) ir pieejama ar **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** un **Openprovider**. Hostinger domāni var atjaunināt nameserverus caur Domain Seller; hostēto domānu DNS ieraksti tiek pārvaldīti ar galvenās Hostinger domānas mapi integrāciju. Namecheap, GoDaddy un NameSilo domāni parāda statusu un pēkšlapas termiņus, bet DNS ir jāpārvalda tieši reģistrāra kontrolpanelē.
 
-### Default DNS ieraksti
+### Default DNS ieraksti {#default-dns-records}
 
 Jūs varat konfigurēt default DNS ierakstus, kas automātiski piemērots, kad domāns tiek reģistrēts. Navigējieties uz **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS skatīšana un rediģēšana
+### Admin: DNS skatīšana un rediģēšana {#admin-viewing-and-editing-dns}
 
 Tīrnieku administratori var skatīt un rediģēt DNS ierakstus jebkuram klienta domānas no domānas rediģēšanas lapas caur **Network Admin › Ultimate Multisite › Domains**.

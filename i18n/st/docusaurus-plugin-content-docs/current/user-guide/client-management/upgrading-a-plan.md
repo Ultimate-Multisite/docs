@@ -3,7 +3,7 @@ title: Ho fetola lapa le fetileng
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Goala ho Hoho (v2)
+# Goala ho Hoho (v2) {#upgrading-a-plan-v2}
 
 _**LIPOTSE E KOTSI: Le tsela e thisa e le seo se Ultimate Multisite v2.x.**_
 
@@ -43,7 +43,7 @@ Ha ufeha ho feta (checkout) haholo, ntho e ntlha (new product(s)) e tla fana ka 
 
 ##
 
-## Tsela ea ho fetola le ho fana (Upgrade and Downgrade Paths)
+## Tsela ea ho fetola le ho fana (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Ka nako ea ntho ea hau ka nako ea hau, o tla bona tab e ntse e bolelang **Up & Downgrades**. Opoto oa ntlha ea tab eohle ke sehlopso se na le le bitso **Plan Group**.
 

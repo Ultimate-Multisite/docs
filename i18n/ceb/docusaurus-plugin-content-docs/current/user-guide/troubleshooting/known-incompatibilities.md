@@ -3,7 +3,7 @@ title: Mga Kinabukasan nga Dili Mag-uyon
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Mga Kinabtanan nga dili pagsagol sa ubang Plugins
+# Mga Kinabtanan nga dili pagsagol sa ubang Plugins {#known-incompatibilities-with-other-plugins}
 
 Pagkahuman nimo i-install ug i-activate ang Ultimate Multisite, posible nga makasinati ka og problema tungod sa mga dili pa nasulbad nga incompatibility sa ubang plugins.
 

@@ -3,15 +3,15 @@ title: Ho hlobo ea internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Ho Hloboho (Internet Search)
+# Ho Hloboho (Internet Search) {#internet-search}
 
 Gratis AI Agent v1.5.0 e ntse na boitshwaro joalo la **Internet Search**. Le tla ntho e tlhola mofuta o o tsamaea le bohlokoa ho ba le ka botshelo, e ntse e fana ka litlhahiselo tse di fetang mo web. Le se se fana ke [Brave Search API](https://brave.com/search/api/) kapa [Tavily API](https://tavily.com/).
 
-# Ka Matlae A Re: Ka Hoetso
+# Ka Matlae A Re: Ka Hoetso {#how-it-works}
 
 Ka hoetso ka sefalo, ke lefa le fetang le sefalo. Ke tla u reka hore na lefa le fetang le sefalo le sefalo se fana ka eng.
 
-## Ka Hoetso Ka Sefalo (How It Works)
+## Ka Hoetso Ka Sefalo (How It Works) {#enabling-internet-search}
 
 Ka hoetso ka sefalo, ke le fa lefetso le fetang la sefalo. Ke tla u reka hore na lefa le fetang le sefalo le sefalo se fana ka eng.
 
@@ -54,7 +54,7 @@ Ha o le tšepo ea ho fana ka internet search, boithakiso bo tla u fana ka ho hla
 
 Ho fetoga ka tsela e fanaeng ka nako ea re, ho fana ka sehlopha sa mofuta oa bohloko (context) ha lehle ho hlalosetsa ho ba leboho. Bohloko bo bolela hore bo ba leba leba leboho leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba leba.
 
-## Ho ba leboho bo Internet (Enabling Internet Search)
+## Ho ba leboho bo Internet (Enabling Internet Search) {#brave-search}
 
 Ho fana'a ho fetola, o hloka API key ho tšoa le sebo sa ho hlalosa (search provider) seo u batlang. Ho fetola kae:
 
@@ -66,9 +66,9 @@ Ho fana'a ho fetola, o hloka API key ho tšoa le sebo sa ho hlalosa (search prov
 
 Ha o fetolela le fa se se fetolwe, bo nna ho ba le bohlokoa ba hlokomela Internet Search ho bohleletso ka morao.
 
-## Brave Search
+## Brave Search {#obtaining-a-brave-search-api-key}
 
-### Ho Ba Le API Key ea Brave Search
+### Ho Ba Le API Key ea Brave Search {#usage-limits}
 
 
 
@@ -78,15 +78,15 @@ Ha o fetolela le fa se se fetolwe, bo nna ho ba le bohlokoa ba hlokomela Interne
 
 4. Ho fana ka sefaka le **Brave Search API Key** fa sefaka sa "Gratis AI Agent" (Gratis AI Agent) settings.
 
-### Limpo ea Ho sebelisa (Usage Limits)
+### Limpo ea Ho sebelisa (Usage Limits) {#tavily}
 
 Ho fana'a ho tšepetša, ho fana'a ka tsela e fanaeng ke Brave Search, e fana'a ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fanaeng ka tsela e fana'a. Go fana'a ka tsela e fanaeng ka tsela e fana'a, go fana'a ka tsela e fana'a, ho fana'a ka tsela e fana'a, le ho fana'a ka tsela e fana'a. Go fana'a ka tsela e fana'a, go fana'a ka tsela e fana'a, le ho fana'a ka tsela e fana'a.
 
-## Tavily
+## Tavily {#obtaining-a-tavily-api-key}
 
 Superdav AI Agent v1.10.0 e ntse etsa **Tavily** ho ba le tsela efe ea ho hlalosa intaneti, e numela litšomo tse faneletso le boikotso ba hlalosang le boikotso ba hlalosang ba hlophisoa.
 
-### Ho Bauloa Tavily API Key
+### Ho Bauloa Tavily API Key {#usage-limits-1}
 
 Ho bauloa tavily API key:
 
@@ -96,7 +96,7 @@ Ho bauloa tavily API key:
 
 4. Ho fana ka sebope sa **Tavily API Key** mo setšhaba sa Gratis AI Agent.
 
-### Limpo ea Ho sebelisa (Usage Limits)
+### Limpo ea Ho sebelisa (Usage Limits) {#disabling-internet-search}
 
 Ho fana'a ka ho fana'a le lapa la internet (Internet Search)
 

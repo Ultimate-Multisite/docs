@@ -1,64 +1,68 @@
 ---
 title: 支払いと請求書の管理
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# 支払と請求書の管理
+# 支払いと請求書の管理 {#managing-payments-and-invoices}
 
-## 支払設定
+## 支払い設定 {#payment-settings}
 
-支払を受け付ける前に、支払関連の設定を構成する必要があります。**Ultimate Multisite → Settings** に移動し、**Payment** タブをクリックしてください。
+支払いを受け取り始める前に、支払い関連の設定を構成する必要があります。**Ultimate Multisite → 設定**に移動し、**支払い**タブをクリックします。
 
-![Payment settings tab](/img/admin/settings-payments-top.png)
+![支払い設定タブ](/img/admin/settings-payments-top.png)
 
-### 一般的な支払オプション
+支払い設定ページ全体は次のとおりです。
 
-一般設定では、以下を構成できます：
+![支払い設定の全ページ](/img/admin/settings-payments-full.png)
 
-- **Currency** — 取引で使用されるデフォルト通貨
-- **Currency Position** — 通貨記号が表示される位置（金額の前/後）
+### 一般的な支払いオプション {#general-payment-options}
 
-![Payment gateway settings](/img/admin/settings-payments-options.png)
+一般設定では、次を構成できます。
 
-### 支払ゲートウェイ
+- **通貨** — 取引に使用される既定の通貨
+- **通貨位置** — 通貨記号が表示される位置（金額の前／後）
 
-Ultimate Multisite は複数の支払ゲートウェイをサポートしています。各ゲートウェイは、支払設定タブから有効化および構成できます。
+![支払いゲートウェイ設定](/img/admin/settings-payments-options.png)
 
-![Payment gateway configuration](/img/admin/settings-payments-gateways.png)
+### 支払いゲートウェイ {#payment-gateways}
 
-利用可能なゲートウェイは次のとおりです：
+Ultimate Multisite は複数の支払いゲートウェイをサポートしています。Payment 設定タブから、それぞれを有効化して構成できます。
 
-- **Stripe** — Stripe を使用したクレジットカード決済
-- **PayPal** — PayPal 決済
-- **Manual** — オフラインまたはカスタム決済処理用
+![支払いゲートウェイ構成](/img/admin/settings-payments-gateways.png)
 
-各ゲートウェイには、API キーやその他の設定を入力する独自の構成セクションがあります。
+利用可能なゲートウェイは次のとおりです。
 
-![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
+- **Stripe** — Stripe によるクレジットカード支払い
+- **PayPal** — PayPal 支払い
+- **Manual** — オフラインまたはカスタムの支払い処理用
 
-### サンドボックスモード
+各ゲートウェイには専用の構成セクションがあり、API キーやその他の設定を入力します。
 
-**Sandbox Mode** を有効にすると、本番環境に移行する前に支払統合をテストできます。サンドボックスモードが有効な場合、実際の請求は行われません。
+![追加のゲートウェイ設定](/img/admin/settings-payments-gateways-2.png)
 
-## 支払の閲覧
+### サンドボックスモード {#sandbox-mode}
 
-**Payments** ページに移動して、ネットワーク全体のすべての取引を確認してください。
+本番運用を開始する前に支払い連携をテストするため、**サンドボックスモード**を有効化できます。サンドボックスモードが有効な間は、実際の請求は発生しません。
 
-![Payments list](/img/admin/payments-list.png)
+## 支払いの表示 {#viewing-payments}
 
-支払をステータス（完了、保留、失敗、返金）でフィルタリングし、特定の取引を検索できます。
+ネットワーク全体のすべての取引を確認するには、Ultimate Multisite の下にある**支払い**ページに移動します。
 
-支払をクリックすると、ラインアイテム、関連メンバーシップ、顧客情報、支払ゲートウェイデータなどの詳細を確認できます。
+![支払い一覧](/img/admin/payments-list.png)
 
-## 請求書
+ステータス（完了、保留中、失敗、返金済み）で支払いを絞り込んだり、特定の取引を検索したりできます。
 
-Ultimate Multisite は支払の請求書を自動生成できます。支払設定から請求書テンプレートと番号付け形式をカスタマイズできます。
+支払いをクリックすると、明細項目、関連するメンバーシップ、顧客情報、支払いゲートウェイデータを含む詳細全体を確認できます。
 
-請求書カスタマイズオプションには次のものがあります：
+## 請求書 {#invoices}
 
-- **Company name and address**（請求書に表示される会社名と住所）
-- **Invoice numbering**（番号付け形式と順序）
-- **Logo**（請求書ヘッダーに表示されるロゴ）
-- **Custom footer text**（利用規約、メモ、法的情報用）
+Ultimate Multisite は支払いに対して請求書を自動生成できます。Payment 設定から請求書テンプレートと番号形式をカスタマイズできます。
 
-請求書テンプレートをカスタマイズするには、**Ultimate Multisite → Settings → Payment** に移動し、請求書関連の設定を探してください。
+請求書のカスタマイズオプションには次が含まれます。
+
+- 請求書に表示される**会社名と住所**
+- **請求書番号**の形式と連番
+- 請求書ヘッダーに表示される**ロゴ**
+- 利用規約、注記、または法的情報のための**カスタムフッターテキスト**
+
+請求書テンプレートをカスタマイズするには、**Ultimate Multisite → 設定 → Payment**に移動し、請求書関連の設定を探します。

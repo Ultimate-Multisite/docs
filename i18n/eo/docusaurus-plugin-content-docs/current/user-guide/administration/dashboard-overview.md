@@ -3,11 +3,11 @@ title: Tablo supervizo
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Panparto da Dashboard'a
+# Panparto da Dashboard'a {#dashboard-overview}
 
 Ultimate Multisite havas **Dashboard** dedikitan sub menuko Ultimate Multisite, kaj ankaŭ aĉas widget'ojn al la Network Dashboard. Ĉi tiu artikolo mastriĝas, kion vi vidos en amba tioj lokoj.
 
-## La Network Dashboard
+## La Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite injektas utilejn widget'ojn en la network-nivelan dashboardon, kiun vi povas trovi ĉe **Miaj Sitoj → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Jen kion ĉiu widget transprenas:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## La Ultimate Multisite Dashboard'a
+## La Ultimate Multisite Dashboard'a {#the-ultimate-multisite-dashboard}
 
 Ĉalistita dashboardo prezentas holistikan informon pri la network, sed la Ultimate Multisite dashboardo (sur la supernivelon de la menuko Ultimate Multisite) prezentas informojn pri la servco mem.
 

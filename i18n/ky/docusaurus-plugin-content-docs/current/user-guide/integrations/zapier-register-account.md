@@ -3,7 +3,7 @@ title: Zapier аркылуу аккаунт тіркеңиз
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Ойрон: Zapier аркылуу аккаунт каттоо
+# Ойрон: Zapier аркылуу аккаунт каттоо {#event-register-an-account-via-zapier}
 
 [Ultimate Multisite-ти Zapier менен интеграциялоо] макаарясында биз Zapierди Ultimate Multisite ичиндеги ар кандай иш-аракеттерди триггерлер жана окуялар негизинде кантип колдонуп көрүү керектигин талкуулак. Бул макаланда биз үчүнчү тараптын тиркемелерди (3rd party applications) кантип интеграциялоону көрсөтөбүз. Биз Google Sheets-ти маалымат булагы катары колдонуп, Ultimate Multisiteге аккаунт каттоо үчүн маалымат жөнөтөбүз.
 

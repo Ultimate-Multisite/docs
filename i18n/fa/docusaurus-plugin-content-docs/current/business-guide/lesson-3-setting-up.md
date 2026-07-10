@@ -3,32 +3,32 @@ title: 'درس ۳: راه‌اندازی شبکه شما'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# درس ۳: راه‌اندازی شبکه شما
+# درس ۳: راه‌اندازی شبکه شما {#lesson-3-setting-up-your-network}
 
 وقت ساختن است. در این درس، Ultimate Multisite را نصب کرده و زیرساخت شبکه FitSite را پیکربندی خواهید کرد. هر تصمیمی که در اینجا گرفته می‌شود، با در نظر گرفتن حوزه تناسب اندام (fitness niche) اتخاذ شده است.
 
-## از کجا پیش رفته بودیم
+## از کجا پیش رفته بودیم {#where-we-left-off}
 
 ما استودیوهای تناسب اندام را به عنوان حوزه تخصصی خود انتخاب کرده و فرصت را تأیید کردیم. حالا وقت آن است که این ایده را به یک پلتفرم عملی تبدیل کنیم.
 
-## انتخاب هاستینگ (Hosting)
+## انتخاب هاستینگ (Hosting) {#choosing-your-hosting}
 
 انتخاب هاستینگ برای یک پلتفرم تخصصی، اهمیت بیشتری نسبت به یک وب‌سایت منفرد دارد. شما در حال هاست کردن یک سایت نیستید؛ شما در حال هاست کردن یک شبکه هستید که قرار است به ده‌ها یا صدها سایت رشد کند.
 
-### چه مواردی باید جستجو کنید
+### چه مواردی باید جستجو کنید {#what-to-look-for}
 
 - **پشتیبانی از WordPress Multisite**: همه هاست‌ها به خوبی از multisite پشتیبانی نمی‌کنند.
 - **Wildcard SSL**: برای شبکه‌های مبتنی بر زیردامنه (subdomain) ضروری است.
 - **منابع مقیاس‌پذیر (Scalable resources)**: شما باید فضایی برای رشد داشته باشید بدون اینکه نیاز به مهاجرت داشته باشید.
 - **یکپارچه‌سازی Ultimate Multisite**: نگاشت خودکار دامنه و SSL، تلاش عملیاتی قابل توجهی را کاهش می‌دهد.
 
-### رویکرد پیشنهادی
+### رویکرد پیشنهادی {#recommended-approach}
 
 از لیست [ارائه‌دهندگان سازگار](/user-guide/host-integrations/closte) یک هاست انتخاب کنید. این هاست‌ها با Ultimate Multisite تست شده‌اند و یکپارچه‌سازی‌های لازم برای نگاشت دامنه و اتوماسیون SSL را فراهم می‌کنند.
 
 برای FitSite، ما از پیکربندی زیردامنه استفاده خواهیم کرد. این بدان معناست که سایت‌های مشتری در ابتدا به صورت `studioname.fitsite.com` ظاهر می‌شوند، قبل از اینکه آن‌ها به صورت اختیاری دامنه اختصاصی خود را نگاشت کنند.
 
-## نصب WordPress Multisite
+## نصب WordPress Multisite {#installing-wordpress-multisite}
 
 اگر هنوز نصب WordPress Multisite ندارید:
 
@@ -40,7 +40,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 زیردامنه، به هر سایت مشتری یک آدرس متمایز (مانند `studio.fitsite.com`) می‌دهد تا یک مسیر (مانند `fitsite.com/studio`). این برای مشتریان شما حرفه‌ای‌تر است و از تداخل‌های پرمالینک (permalink conflicts) جلوگیری می‌کند. برای مقایسه کامل‌تر، به [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) مراجعه کنید.
 :::
 
-## نصب Ultimate Multisite
+## نصب Ultimate Multisite {#installing-ultimate-multisite}
 
 برای انجام مراحل زیر، راهنمای [نصب Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) را دنبال کنید:
 
@@ -53,11 +53,11 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **نام شرکت (Company name)**: "FitSite" (یا نام برند انتخابی شما).
 - **لوگوی شرکت (Company logo)**: لوگوی برند خود را آپلود کنید -- این لوگو روی فاکتورها و ایمیل‌ها نمایش داده می‌شود.
 
-## پیکربندی برای حوزه تناسب اندام (Fitness Niche)
+## پیکربندی برای حوزه تناسب اندام (Fitness Niche) {#configuring-for-the-fitness-niche}
 
 پس از نصب Ultimate Multisite، این انتخاب‌های پیکربندی خاص حوزه تخصصی را انجام دهید:
 
-### تنظیمات عمومی (General Settings)
+### تنظیمات عمومی (General Settings) {#general-settings}
 
 به **Ultimate Multisite > Settings** بروید و موارد زیر را پیکربندی کنید:
 
@@ -65,7 +65,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **نقش پیش‌فرض (Default role)**: Administrator -- صاحبان استودیوهای تناسب اندام نیاز به کنترل کامل محتوای سایت خود دارند.
 - **ثبت‌نام (Registration)**: ثبت‌نام کاربر را فعال کنید تا صاحبان استودیو بتوانند خودشان ثبت‌نام کنند.
 
-### پیکربندی ایمیل (Email Configuration)
+### پیکربندی ایمیل (Email Configuration) {#email-configuration}
 
 ایمیل‌های سیستمی شما باید زبان حوزه تخصصی شما را صحبت کنند. به **Ultimate Multisite > Settings > Emails** بروید و موارد زیر را سفارشی کنید:
 
@@ -75,7 +75,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 ما این موارد را در درس ۸ (ثبت‌نام مشتری) بیشتر اصلاح خواهیم کرد، اما تنظیم لحن از همین حالا تضمین می‌کند که حتی ثبت‌نام‌های آزمایشی اولیه نیز تخصصی به نظر برسند.
 
-### پیکربندی دامنه (Domain Configuration)
+### پیکربندی دامنه (Domain Configuration) {#domain-configuration}
 
 اگر از یک ارائه‌دهنده هاست سازگار استفاده می‌کنید، اکنون نگاشت دامنه را پیکربندی کنید:
 
@@ -85,7 +85,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 این کار تضمین می‌کند که وقتی در درس بعدی شروع به ساخت قالب‌ها و سایت‌های آزمایشی می‌کنیم، همه چیز به صورت کامل کار کند.
 
-## شبکه FitSite تا اینجا
+## شبکه FitSite تا اینجا {#the-fitsite-network-so-far}
 
 در پایان این درس، این موارد را خواهید داشت:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## آنچه در این درس ساختیم
+## آنچه در این درس ساختیم {#what-we-built-this-lesson}
 
 - **یک نصب WordPress Multisite کارآمد** در حالت زیردامنه (subdomain mode).
 - **نصب Ultimate Multisite** و پیکربندی آن با برند FitSite.

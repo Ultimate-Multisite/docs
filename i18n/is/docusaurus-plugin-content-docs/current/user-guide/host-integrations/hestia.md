@@ -3,28 +3,28 @@ title: Integuation í Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Samning við Hestia Control Panel
+# Samning við Hestia Control Panel {#hestia-control-panel-integration}
 
 Þessi leiðferð útskýrir hvernig þú getur sett upp samning með Ultimate Multisite og Hestia svo að dómagnir sem eru mappa í nýtingu þín séu sjálfvirkt sagt í (og fjarlægð) sem Web Domain Aliases í Hestia.
 
 - Samning við Hestia CLI: v-add-web-domain-alias / v-delete-web-domain-alias
 - Officiell REST API skjalði: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Hvað þetta gerir
+## Hvað þetta gerir {#what-it-does}
 - Þegar dómagnir eru mappa í Ultimate Multisite, kallar samningur á Hestia API til að framkvæma eftirfarandi:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Þegar mappa dómagnarsamningur er fjarlægð, framkvæmdast þetta:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Valfræðarlega sagt í/fjarlægja `www.` alias eftir settum „Auto-create www subdomain“ (Sjá uppsetningu fyrir dómagnarsamningar).
 
-## Skilyrði fyrir framkvæmd
+## Skilyrði fyrir framkvæmd {#prerequisites}
 - Eitt núverandi Hestia Web Domain sem þegar er mappa á WordPress innreiðingu þinni. Samningurinn mun setja aliases á þennan grunn-dómagn.
 - Hestia API aðgangur er sett upp. Þú getur staðfest þig með styrknum eða tokeni API-sins.
 
 Sjá Hestias REST API skjalði fyrir að opna API aðgang og staðfestingstauða:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Uppsetning (Wizard → Integrations → Hestia)
+## Uppsetning (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Gjöf eftirfarandi gildi:
 
 - `WU_HESTIA_API_URL` (nødvendig)
@@ -42,16 +42,16 @@ Gjöf eftirfarandi gildi:
 
 Du kan la magiske verktøyet injisere desse konstanteverdiane i `wp-config.php`, eller definere dei manuelt.
 
-## Verifisering av oppsettet
+## Verifisering av oppsettet {#verifying-setup}
 - I magiske verktøyets «Testing»-steg kallar pluginet `v-list-web-domains <WU_HESTIA_ACCOUNT> json` via API-en. Eit suksessrespons stadfestar tilkopling og autentisering.
 - Etter at du har mappa eit domene, sjekk i Hestia: Web > grunnleggjande domene > Alias. Du skal sjå den nye aliasen lagt til.
 
-## Merknader & tips
+## Merknader & tips {#notes--tips}
 - Sør for at `WU_HESTIA_WEB_DOMAIN` allereie eksisterer og er eigd av `WU_HESTIA_ACCOUNT`.
 - Om SSL er nødvendig, administrer sertifikat i Hestia. Denne integrasjonen handterer berre alias no.
 - Pluginet kan òg legge til/fjerne `www.<domain>` avhengig av innstillinga di for domenenavmapping «www subdomain».
 
-## Eksempel på API-kall (cURL)
+## Eksempel på API-kall (cURL) {#example-api-call-curl}
 Her er eit konseptuelt eksempel (juster etter miljøet ditt). Sjå den offisielle dokumentasjonen for nøyaktige parameterar.
 
 POST https://your-hestia-host:8083/api/
@@ -68,11 +68,11 @@ cmd=v-add-web-domain-alias
 
 Til fjarlægja nota `cmd=v-delete-web-domain-alias` og sama argument.
 
-## Feilanfjölgun
+## Feilanfjölgun {#troubleshooting}
 - HTTP villur frá API: skoða, hvort er `WU_HESTIA_API_URL` aðgengileg og innihalda `/api`.
 - Inndýpisvillur (Auth errors): staðfesta `WU_HESTIA_API_USER` og eða `WU_HESTIA_API_PASSWORD` eða `WU_HESTIA_API_HASH`.
 - „Missing account/base domain” í loggum: saksafni, hvort er `WU_HESTIA_ACCOUNT` og `WU_HESTIA_WEB_DOMAIN` sett og viðeigandi í Hestia.
 
-## Viðmiðlar
+## Viðmiðlar {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Hestia CLI Viðmið (Aliases): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

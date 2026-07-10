@@ -3,13 +3,13 @@ title: اطلاعیه حذف حالت سازنده سایت
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# حذف حالت سازنده سایت (Site Builder Mode)
+# حذف حالت سازنده سایت (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **حالت Site Builder در Superdav AI Agent v1.12.0 حذف شده است.** اگر از حالت Site Builder استفاده می‌کردید، باید برای ساخت قالب و راه‌اندازی سایت به **عامل Setup Assistant** مهاجرت کنید.
 
-## چه اتفاقی افتاد؟
+## چه اتفاقی افتاد؟ {#what-happened}
 
-### Site Builder Mode (قدیمی)
+### Site Builder Mode (قدیمی) {#site-builder-mode-legacy}
 
 حالت Site Builder یک رابط کاربری مبتنی بر ویزارد (Wizard) برای موارد زیر بود:
 
@@ -18,7 +18,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - انتخاب یک قالب (Theme)
 - تنظیم محتوای اولیه
 
-### جایگزین آن چه شد؟
+### جایگزین آن چه شد؟ {#what-replaced-it}
 
 اکنون **عامل Setup Assistant** تمام قابلیت‌های Site Builder را با موارد زیر مدیریت می‌کند:
 
@@ -27,15 +27,15 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - یکپارچه‌سازی با آشناسازی Theme Builder
 - حافظه site_brief دائمی برای جلسات بعدی
 
-## اگر از Site Builder Mode استفاده می‌کردید
+## اگر از Site Builder Mode استفاده می‌کردید {#if-you-were-using-site-builder-mode}
 
-### سایت‌های شما امن هستند
+### سایت‌های شما امن هستند {#your-sites-are-safe}
 
 - سایت‌های موجود که با Site Builder Mode ساخته شده‌اند، همچنان کار می‌کنند.
 - هیچ گونه از دست رفتن داده یا اختلال در سایت وجود ندارد.
 - می‌توانید به طور عادی به مدیریت سایت‌های خود ادامه دهید.
 
-### به عامل Setup Assistant مهاجرت کنید
+### به عامل Setup Assistant مهاجرت کنید {#migrate-to-setup-assistant-agent}
 
 برای راه‌اندازی سایت جدید یا تغییر قالب، از عامل Setup Assistant استفاده کنید:
 
@@ -51,7 +51,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 
 عامل Setup Assistant با انعطاف‌پذیری بیشتر، همان عملکرد را ارائه می‌دهد.
 
-## مقایسه: Site Builder در مقابل Setup Assistant
+## مقایسه: Site Builder در مقابل Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | ویژگی | Site Builder (حذف شده) | Setup Assistant (جدید) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 | جلسات آینده | تکرار راه‌اندازی | استفاده از site_brief ذخیره‌شده |
 | انعطاف‌پذیری | گردش کار ثابت | مکالمه تطبیقی |
 
-## مهاجرت به عامل Setup Assistant
+## مهاجرت به عامل Setup Assistant {#migrating-to-setup-assistant-agent}
 
-### برای سایت‌های جدید
+### برای سایت‌های جدید {#for-new-sites}
 
 به جای استفاده از Site Builder Mode:
 
@@ -76,7 +76,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
    - تولید قالب (Theme generation)
    - پیکربندی اولیه
 
-### برای سایت‌های موجود
+### برای سایت‌های موجود {#for-existing-sites}
 
 اگر سایت موجودی از Site Builder Mode دارید:
 
@@ -85,7 +85,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ۳. عامل Setup Assistant به شما کمک می‌کند تا یک قالب جدید بسازید.
 ۴. داده‌های سایت شما بدون تغییر باقی می‌مانند.
 
-### برای تغییر قالب
+### برای تغییر قالب {#for-theme-changes}
 
 به جای انتخاب قالب در Site Builder Mode:
 
@@ -95,9 +95,9 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
    - یک قالب سفارشی تولید می‌کند.
    - آن را روی سایت شما فعال می‌کند.
 
-## تفاوت‌های کلیدی
+## تفاوت‌های کلیدی {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 ۱. انتخاب یک قالب
@@ -106,7 +106,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ۴. اتمام
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 ۱. توصیف هدف سایت شما
@@ -117,36 +117,36 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ۶. site_brief برای جلسات آینده ذخیره می‌شود
 ```
 
-## مزایای عامل Setup Assistant
+## مزایای عامل Setup Assistant {#benefits-of-setup-assistant-agent}
 
-### انعطاف‌پذیری بیشتر
+### انعطاف‌پذیری بیشتر {#more-flexible}
 
 - توصیف سایت خود به زبان طبیعی
 - دریافت توصیه‌های سفارشی
 - تطبیق با نیازهای خاص شما
 
-### سفارشی‌سازی بهتر
+### سفارشی‌سازی بهتر {#better-customization}
 
 - تولید قالب سفارشی
 - تصمیم‌گیری در سیستم طراحی
 - توکن‌های طراحی دائمی (Persistent design tokens)
 
-### حافظه دائمی
+### حافظه دائمی {#persistent-memory}
 
 - site_brief شما ذخیره می‌شود.
 - عامل‌های آینده سایت شما را درک می‌کنند.
 - نیازی به تکرار اطلاعات راه‌اندازی نیست.
 
-### گردش کار یکپارچه
+### گردش کار یکپارچه {#integrated-workflow}
 
 - آشناسازی Theme Builder
 - مهارت Design System Aesthetics
 - کنترل‌های قابلیت در دسترس بودن (Ability Visibility controls)
 - همه چیز به طور یکپارچه کار می‌کنند.
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
-### من Site Builder Mode را پیدا نمی‌کنم
+### من Site Builder Mode را پیدا نمی‌کنم {#i-cant-find-site-builder-mode}
 
 حالت Site Builder حذف شده است. در عوض از عامل Setup Assistant استفاده کنید:
 
@@ -154,7 +154,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 "Help me set up a new site"
 ```
 
-### می‌خواهم سایتی را که با Site Builder ساخته شده بود، بازسازی کنم
+### می‌خواهم سایتی را که با Site Builder ساخته شده بود، بازسازی کنم {#i-want-to-recreate-a-site-from-site-builder}
 
 می‌توانید آن را با عامل Setup Assistant بازسازی کنید:
 
@@ -163,7 +163,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ۳. عامل یک قالب مشابه تولید خواهد کرد.
 ۴. site_brief شما برای مراجع بعدی ذخیره خواهد شد.
 
-### سایت Site Builder موجود من کار نمی‌کند
+### سایت Site Builder موجود من کار نمی‌کند {#my-existing-site-builder-site-isnt-working}
 
 سایت‌های موجود ساخته شده با Site Builder Mode همچنان کار می‌کنند. اگر با مشکل مواجه شدید:
 
@@ -172,7 +172,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ۳. گزارش‌های خطای WordPress را بررسی کنید.
 ۴. اگر مشکل ادامه داشت، با پشتیبانی تماس بگیرید.
 
-### آیا هنوز می‌توانم از قالب‌های قدیمی Site Builder خودم استفاده کنم؟
+### آیا هنوز می‌توانم از قالب‌های قدیمی Site Builder خودم استفاده کنم؟ {#can-i-still-use-my-old-site-builder-templates}
 
 قالب‌های Site Builder دیگر در دسترس نیستند. با این حال:
 
@@ -180,14 +180,14 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - می‌توانید سایت‌های مشابه را با عامل Setup Assistant بازسازی کنید.
 - عامل Setup Assistant گزینه‌های سفارشی‌سازی بیشتری ارائه می‌دهد.
 
-## مراحل بعدی
+## مراحل بعدی {#next-steps}
 
 ۱. **برای سایت‌های جدید**: از عامل Setup Assistant استفاده کنید.
 ۲. **برای سایت‌های موجود**: همچنان از آن‌ها استفاده کنید.
 ۳. **برای تغییر قالب**: از عامل Setup Assistant کمک بگیرید.
 ۴. **برای بهبود طراحی**: از مهارت Design System Aesthetics استفاده کنید.
 
-## موضوعات مرتبط
+## موضوعات مرتبط {#related-topics}
 
 - **Theme Builder Onboarding**: راه‌اندازی راهنمای قالب‌های سفارشی
 - **Setup Assistant Agent**: راه‌اندازی سایت با راهنمایی عامل

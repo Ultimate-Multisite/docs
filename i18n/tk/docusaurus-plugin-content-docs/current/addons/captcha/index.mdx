@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Botlary saklaň. Girdejini goraň. Sazlama kynçylygy ýok.**
+
+Ýörite domenli multisite ulgamyny işledýärsiňizmi? Bu agyryny bilýärsiňiz: Google reCAPTCHA we hCaptcha öz admin konsollarynda *her bir domeni aýratyn* bellige almagyňyzy talap edýär. Täze müşderi saýtyny goşduňyzmy? captcha sazlamasyny täzeläň. Ýörite domen bagladyňyzmy? Ýene täzeläň. Bu hiç gutarmaýar.
+
+**Ultimate Multisite: Captcha hemme zady üýtgedýär.**
+
+## Cap Captcha: Diňe işleýän öz serweriňizde ýerleşdirilen gorag {#cap-captcha-self-hosted-protection-that-just-works}
+
+Täze **Cap Captcha** üpjün edijimiz multisite ulgamlary üçin oýny üýtgedýän çözgütdir:
+
+* **Sazlama ýok** — addon-y işjeňleşdiriň we gorag astynda boluň. API açarlary ýok, Google Account ýok, hCaptcha dashboard ýok, domen whitelist ýok.
+* **Her domende awtomatik işleýär** — Subdomenler, baglanan domenler, müşderi domenleri — olaryň ählisi dessine gorag astynda.
+* **Öz serweriňizde ýerleşdirilen we hususy** — Maglumatlaryňyz serweriňizden hiç haçan çykmaýar. Üçünji tarap yzarlamasy bolmazdan doly GDPR laýyk.
+* **Görünmeýän iş subutnamasy** — Ulanyjylar fonda hasaplama tapmasyny çözýärler. Ýangyn gidrantlaryna basmak ýok, gaharlandyrýan surat torlary ýok.
+* **Ýeňil** — Diňe 20KB. Checkout-yňyzy haýallatmaz.
+
+## WooCommerce kart synagyndan gorag {#woocommerce-card-testing-protection}
+
+Kart synag hüjümleri söwdagärlere her ýyl milliardlarça zyýan ýetirýär. Aldawçylar ogurlanan kredit kartlaryny WooCommerce checkout-yňyzda barlamak üçin botlary ulanýarlar — işlem töleglerini siz töleýärsiňiz, olar bolsa dogry kart belgilerini alýarlar.
+
+**Biz iň möhüm ýerleri goraýarys:**
+
+* **Store API goragy** — Adaty forma captcha-laryndan sowlup geçýän `/wp-json/wc/store/v1/checkout` üstündäki bot hüjümlerini bloklaýar
+* **PayPal Payments bilen laýyk** — WooCommerce PayPal Payments bilen bökdençsiz işleýär
+* **Hakyky wagt statistikasy** — Näçe hüjümi bloklaýandygyňyzy takyk görüň
+
+## Henizem Google reCAPTCHA ýa-da hCaptcha gerekmi? {#still-need-google-recaptcha-or-hcaptcha}
+
+Biz muny hem üpjün edýäris. Doly goldaw:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Ulgam sazlamalaryňyzdan üpjün edijileriň arasynda islän wagtyňyz geçiň.
+
+## Giň gerim üçin gurlan {#built-for-scale}
+
+* Her saýta aýratyn üýtgetmeler bilen ulgam boýunça sazlamalar
+* Goragy gözegçilik etmek üçin statistika dashboard-y
+* Sazlanyp bolýan howpsuzlyk derejeleri (Fast, Medium, Maximum)
+* Giňeldilip bolýan üpjün ediji arhitekturasy bilen developer üçin amatly
+
+## Gurnama {#installation}
+
+1. `ultimate-multisite-captcha`-ny `/wp-content/plugins/` bukjasyna ýükläň
+2. Plugin-i ulgam boýunça işjeňleşdiriň
+3. **Şuňa boldy. Siz gorag astynda.**
+
+Cap Captcha awtomatik işjeňleşýär — sazlamaly hiç zat ýok, girizmeli API açarlary ýok. Tutuş ulgamyňyzdaky goldanýan her endpoint işjeňleşdiren pursatyňyzdan gorag astynda bolýar.
+
+**Meýletin:** Munuň ýerine Google reCAPTCHA ýa-da hCaptcha ulanmak üçin **Ultimate Multisite → Settings → Captcha** bölümine geçiň we islän üpjün edijiňizi saýlaň.
+
+## Köp soralýan soraglar {#frequently-asked-questions}
+
+## Bir zat sazlamalymy? {#do-i-need-to-configure-anything}
+
+Ýok! Addon-y işjeňleşdireniňizde Cap Captcha awtomatik açylýar. Tutuş ulgamyňyz dessine gorag astynda bolýar — sazlamaly zat ýok, girizmeli API açarlary ýok.
+
+## Cap Captcha üçin API açarlary gerekmi? {#do-i-need-api-keys-for-cap-captcha}
+
+Ýok. Cap Captcha doly öz serweriňizde ýerleşdirilýär. Daşarky account-lar ýok, domen bellige almak ýok, sazlama kelleagyrylary ýok.
+
+## Bu checkout-ymy haýalladarmy? {#will-this-slow-down-my-checkout}
+
+Cap Captcha bary-ýogy 20KB we iş subutnamasy synaglaryny fonda ýerine ýetirýär. Müşderileriňiz hiç hili gijikmäni duýmaz.
+
+## Bu kart synag hüjümlerinden goraýarmy? {#does-this-protect-against-card-testing-attacks}
+
+Hawa! Diňe HTML formalaryny goraýan adaty captcha-lardan tapawutlylykda, biziň WooCommerce integrasiýamyz Store API içine göni baglanýar we bot hüjümlerini API derejesinde bloklaýar — kart synag hüjümleriniň köpüsi şol ýerde bolýar.
+
+## Dürli saýtlarda dürli captcha üpjün edijilerini ulanyp bilerinmi? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Captcha üpjün edijisi ulgam boýunça kesgitlenýär, ýöne zerurlygyňyza görä kynçylyk sazlamalaryny üýtgedip bilersiňiz.
+
+## Bu GDPR laýykmy? {#is-this-gdpr-compliant}
+
+Cap Captcha 100% öz serweriňizde ýerleşdirilýär we daşarky hyzmatlara hiç hili maglumat iberilmeýär. Google reCAPTCHA we hCaptcha üçin, olaryň degişli gizlinlik syýasatlaryny gözden geçiriň.
+
+## Tizlik çäklendirmesi {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 ulgamyňyzy brute-force we kart synag hüjümlerinden goraýan berk saklaýjy tizlik çäklendirijisini hödürleýär.
+
+### Nädip işleýär {#how-it-works}
+
+Tizlik çäklendirijisi captcha bilen goralan ýüzlerde her GET we POST haýyşyny sanaýar:
+
+* **WordPress login endpoint-leri** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Bir zyýaratçy tizlik çäginden geçende, plugin şeýle jogap berýär:
+
+* **HTTP 429 (Too Many Requests)** status kody
+* **Retry-After** header gaýtadan synanyşmaly wagty görkezýär
+* Hüjümçileri haýallatmak üçin **tötänleýin tarpit ukusy** (deslapky ýagdaýda 1–5 sekunt, berk iň ýokary çäk 15 sekunt)
+
+### Sazlama {#configuration}
+
+#### Tarpit wagty {#tarpit-timing}
+
+Tizlik bilen çäklendirilen haýyşlara ulanylýan tötänleýin gijikmäni dolandyryň:
+
+* **`cap_rate_limit_tarpit_min`** — Sekuntlarda iň az uky dowamlylygy (deslapky: 1)
+* **`cap_rate_limit_tarpit_max`** — Sekuntlarda iň köp uky dowamlylygy (deslapky: 5, berk iň ýokary çäk 15)
+
+Bu sazlamalar **Ultimate Multisite → Settings → Captcha** bölüminde elýeterlidir.
+
+### Giňeldip bolujylyk {#extensibility}
+
+#### IP whitelist filtri {#ip-whitelist-filter}
+
+Ynamdar IP aralyklaryny tizlik çäklendirmesinden boşadyň:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Blokdan öňki amal {#pre-block-action}
+
+Tizlik çäklendirme blogy iberilmezden göni öň ýörite logikany ýerine ýetiriň:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Müşderi IP-ni anyklamak we ynamdar proksiler {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 spoof-a çydamly müşderi-IP anyklamasyny hödürleýär. `Captcha_Core::get_client_ip()` usuly indi şu ýerler boýunça zyýaratçy IP degişli edilmegi üçin ýeke-täk hakykat çeşmesidir:
+
+* Rate-limit bucket açarlary
+* Captcha üpjün edijiniň `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Statistikadaky IP hashleri
+
+### Ynam modeli {#trust-model}
+
+Plagin berk IP ynam iýerarhiýasyny mejbury ulanýar:
+
+1. **REMOTE_ADDR** — Hemişe ynamly (göni baglanan tarapyň IP-si)
+2. **CF-Connecting-IP** — Diňe aşakdaky ýagdaýlarda hasaba alynýar:
+   - Göni baglanan tarap häzirki Cloudflare IP aralygynyň içinde bolsa
+   - `cap_trust_cloudflare_headers` işledilen bolsa (deslapky: ÖÇÜRILEN)
+3. **X-Forwarded-For** — Diňe aşakdaky ýagdaýlarda hasaba alynýar:
+   - Göni baglanan tarap siziň admin tarapyndan sazlanan ynamly proxy sanawyňyzda bolsa
+   - Header sagdan çepe derňelip, ynamly/Cloudflare geçişleri geçilip gidilse
+
+### Sazlama {#configuration-1}
+
+#### Cloudflare Header ynamy {#cloudflare-header-trust}
+
+Cloudflare-nyň `CF-Connecting-IP` header-ine ynamy işlediň:
+
+* **`cap_trust_cloudflare_headers`** — `CF-Connecting-IP` ynamyna goşulmak üçin ON edip belläň
+  - Deslapky: OFF (öçürilen)
+  - Plagin içinde toplanylgy Cloudflare CIDR snapshot bilen gelýär
+  - CIDR aralyklary wp-cron arkaly hepdede täzelenýär
+  - Täzelenme başa barmasa, içindäki ätiýaçlyk ulanylýar
+
+#### Ynamly proxy sazlamasy {#trusted-proxy-configuration}
+
+Öň hatardaky proxyleriňizi we load-balancerleriňizi kesgitläň:
+
+* **`cap_trusted_proxies`** — CIDR-leriň ýa-da ýalaňaç IP-leriň tekst meýdany (her setirde biri)
+  - Teswirlere rugsat berilýär (`#` bilen başlanýan setirler)
+  - Bu sazlama bolmasa, rate limiter işledilen hem bolsa `X-Forwarded-For` äsgerilmeýär
+  - Mysal:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Ilkinji işledilende awtomatik anyklama {#first-enable-auto-detection}
+
+Rate limiter-i ilkinji gezek işleden wagtyňyzda, plagin siziň ähtimal Cloudflare we proxy ýagdaýyňyzy anyklaýar we bir gezek basylýan "Anyklanan sazlamalary ulan" admin duýduryşyny görkezýär.
+
+* Plagin saklanan gymmatlaryňyzy **hiç haçan üstünden ýazmaýar**
+* Eger soňraky traffik config-iňiziň indi hakyky ýagdaýa gabat gelmeýändigini görkezse (meselem, Cloudflare CIDR aralyklaryny üýtgeden bolsa), ýapyp bolmaýan gabat gelmezlik duýduryşy maslahat berilýän täzelenmäni görkezýär
+
+### Munuň näme üçin ähmiýeti bar {#why-this-matters}
+
+Berk IP ynam modeli möhüm spoofing wektoryny ýapýar: galp `CF-Connecting-IP` header-i bilen göni origin-server haýyşlary öň hakyky göni baglanan tarapyň ýerine galplaşdyrylan IP boýunça bucket edilýärdi. Bu aýratyn hem aşakdakylar üçin möhümdir:
+
+* **Rate limiting** — Hüjümçiler IP-leri galplaşdyryp çäklendirmelerden aýlanyp bilmeýärler
+* **Statistika** — Hüjüm ölçegleriňiz galplaşdyrylan IP-leri däl-de, hakyky gelýänleriň IP-lerini görkezýär
+* **Captcha barlagy** — Üpjin edijiler töwekgelçiligi bahalandyrmak üçin dogry geliji IP-sini alýarlar

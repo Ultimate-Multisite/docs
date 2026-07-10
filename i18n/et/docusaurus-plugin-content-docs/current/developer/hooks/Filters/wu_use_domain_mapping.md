@@ -1,0 +1,23 @@
+---
+id: wu_use_domain_mapping
+title: Filter - wu_use_domain_mapping
+sidebar_label: wu_use_domain_mapping
+_i18n_hash: 34f9d3e6a6d1b98dd72cf5c21250b6e7
+---
+# Filter: wu_use_domain_mapping {#filter-wuusedomainmapping}
+
+Määra, kas kaardistust tuleks kasutada
+
+Tavaliselt soovid lubada kasutada ainult aktiivseid kaardistusi. Kui aga soovid kasutada keerukamat loogikat või lubada ka mitteaktiivsete domeenide kaardistamist, saad seda siin filtri abil teha.
+
+## Parameetrid {#parameters}
+
+| Nimi | Tüüp | Kirjeldus |
+|------|------|-------------|
+| $is_active | `bool` | Kas kaardistust tuleks käsitleda aktiivsena? |
+| $mapping | `\Domain` | Kaardistus, mida me kontrollime |
+| $domain | `string` |  |
+
+### Allikas {#source}
+
+Määratletud failis [`inc/class-domain-mapping.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-domain-mapping.php#L391) real 391

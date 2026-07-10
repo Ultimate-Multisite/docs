@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons-हरूले Ultimate Multisite लाई थप सुविधाहरू (features) আৰু ইন্টিগ্ৰেচনৰ জৰিয়তে শক্তিশালী কৰে। বেছিভাগ Addons পেইড হয় আৰু আপুনি [ultimatemultisite.com](https://ultimatemultisite.com) बाट কিনিব পাৰে।
 
-## Installation
+## Installation {#installation}
 
 Addons-সমূহ দুটা উপায়ে install কৰিব পাৰি:
 
 1. **Addon Page-ৰ জৰিয়তে** -- WordPress admin-ত আপোনাৰ site-ৰ addon management page-লৈ যাওক।
 2. **Manual Download** -- [your account](https://ultimatemultisite.com/my-account/downloads/) बाट ডাউনলোড কৰক আৰু Plugins > Add New মাজেৰে upload কৰক।
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

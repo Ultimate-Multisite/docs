@@ -3,11 +3,11 @@ title: Onboarding-flow for Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introducerer en vejledende **Theme Builder onboarding flow**, som hjælper dig med at oprette et custom block theme under din indledende opsætning. Dette erstatter den gamle Site Builder mode med en mere fleksibel, agentassisteret tilgang.
 
-## Hvad er Theme Builder Onboarding Flow?
+## Hvad er Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow er en interaktiv opsætningswizard, der:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow er en interaktiv opsætningswizard, der:
 
 Flowet drives af **Setup Assistant agent**, som stiller opklarende spørgsmål og bygger dit tema trin for trin.
 
-## Start med Theme Builder Onboarding
+## Start med Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Første Kørsel Opsætning (First-Run Setup)
+### Første Kørsel Opsætning (First-Run Setup) {#first-run-setup}
 
 Når du først starter Superdav AI Agent på en ny WordPress installation, vil du se:
 
@@ -35,7 +35,7 @@ Hvad vil du gerne gøre?
 
 Vælg **"Build a custom theme"** for at komme ind i Theme Builder onboarding flow.
 
-### Manuel Aktivering
+### Manuel Aktivering {#manual-activation}
 
 Du kan også starte Theme Builder onboarding når som helst ved at anmode om:
 
@@ -49,9 +49,9 @@ eller
 "Help me create a custom theme"
 ```
 
-## Onboarding Trinene
+## Onboarding Trinene {#the-onboarding-steps}
 
-### Trin 1: Modevalg (Mode Selection)
+### Trin 1: Modevalg (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent spørger om din præference:
 
@@ -63,7 +63,7 @@ Hvordan vil du bygge dit tema?
 
 **Vejledt mode** anbefales til de fleste brugere; agenten giver designanbefalinger baseret på din branche og dine mål.
 
-### Trin 2: Sitespecifikation (Site Specification)
+### Trin 2: Sitespecifikation (Site Specification) {#step-2-site-specification}
 
 Du vil blive spurgt om dit site:
 
@@ -74,7 +74,7 @@ Du vil blive spurgt om dit site:
 
 Denne information gemmes i din **site_brief** hukommelse, som agenterne refererer til i fremtidige sessioner.
 
-### Trin 3: Designsystembeslutninger
+### Trin 3: Designsystembeslutninger {#step-3-design-system-decisions}
 
 Agenten guider dig igennem valget af design tokens:
 
@@ -83,7 +83,7 @@ Agenten guider dig igennem valget af design tokens:
 - **Afstand**: Kompakt, normal eller rummelige layouts
 - **Bevægelse**: Animationer og overgange (hvis ønsket)
 
-### Trin 4: Tema-generering
+### Trin 4: Tema-generering {#step-4-theme-generation}
 
 Setup Assistant agenten opretter dit custom block theme med:
 
@@ -92,7 +92,7 @@ Setup Assistant agenten opretter dit custom block theme med:
 - Custom block styles der matcher dit designsystem
 - Tema metadata og WordPress support erklæringer
 
-### Trin 5: Aktivering og Verifikation
+### Trin 5: Aktivering og Verifikation {#step-5-activation-and-verification}
 
 Temaet aktiveres automatisk, og du vil se:
 
@@ -107,7 +107,7 @@ Temaet aktiveres automatisk, og du vil se:
 
 Du kan derefter besøge din side for at bekræfte, at temaet vises korrekt.
 
-## Websidespecifikation og site_brief Hukommelse
+## Websidespecifikation og site_brief Hukommelse {#site-specification-and-sitebrief-memory}
 
 Under onboarding indsamler agenten specifikationen af din side i en **site_brief** hukommelseskategori. Dette inkluderer:
 
@@ -117,16 +117,16 @@ Under onboarding indsamler agenten specifikationen af din side i en **site_brief
 - Designpræferencer
 - Indholdsstruktur
 
-### Hvorfor site_brief betyder noget
+### Hvorfor site_brief betyder noget {#why-sitebrief-matters}
 
 I fremtidige sessioner refererer agenterne til din site_brief for at:
 
-### Vedligehold designkonsistens ved ændringer
-### Foreslå funktioner i overensstemmelse med dit sites formål
-### Give kontekstbaserede anbefalinger
-### Undgå at gentage opsætningsspørgsmål
+### Vedligehold designkonsistens ved ændringer {#viewing-your-sitebrief}
+### Foreslå funktioner i overensstemmelse med dit sites formål {#customizing-after-onboarding}
+### Give kontekstbaserede anbefalinger {#use-the-design-system-aesthetics-skill}
+### Undgå at gentage opsætningsspørgsmål {#edit-themejson-directly}
 
-### Se din site_brief
+### Se din site_brief {#create-custom-block-templates}
 
 Du kan spørge agenten:
 
@@ -142,11 +142,11 @@ eller
 
 Agenten vil vise din gemte sitespecifikation.
 
-## Tilpasning efter onboarding
+## Tilpasning efter onboarding {#comparison-old-vs-new-onboarding}
 
 Når Theme Builder-onboardingen er færdig, kan du:
 
-### Brug Design System Aesthetics skillen
+### Brug Design System Aesthetics skillen {#troubleshooting}
 
 Bed om designforbedringer:
 
@@ -162,7 +162,7 @@ eller
 
 **Design System Aesthetics skillen** guider dig gennem målrettede designopdateringer.
 
-### Rediger theme.json direkte
+### Rediger theme.json direkte {#next-steps}
 
 For avancerede brugere kan du redigere `/wp-content/themes/[theme-name]/theme.json` for at justere:
 

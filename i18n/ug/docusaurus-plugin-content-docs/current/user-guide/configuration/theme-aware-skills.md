@@ -3,11 +3,11 @@ title: Tema-Boshqchilikli Ko'nikmalar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Theme-Aware Skills
+# Theme-Aware Skills {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 چهار تا قابلیت جدید، موضوعه-هوا (theme-aware) داخلی را عرضه می‌کند که به طور خودکار ووردپرس قالبünüzün aktif olan temasına uyum sağlar. Bu yetenekler, temanızın mimarisine ve özelliklerine özel uzman rehberlik ve yetenekler sunar.
 
-## Theme-Aware Skills Nedir?
+## Theme-Aware Skills Nedir? {#what-are-theme-aware-skills}
 
 Theme-aware skills, sitenizde şu anda aktif olan WordPress temasına dayanarak yapay zeka asistanının otomatik olarak seçeceği önceden yapılandırılmış bilgi tabanları ve araç setleridir. Temaları değiştirdiğinizde, asistanın mevcut yetenekleri otomatik olarak güncellenir — manuel yapılandırma gerekmez.
 
@@ -18,9 +18,9 @@ Her skill şunları içerir:
 - **Özelleştirme örnekleri** — yaygın görevler için kod parçacıkları ve yapılandırma kalıpları
 - **En iyi uygulamalar (Best practices)** — temanın mimarisi ve iş akışı için öneriler
 
-## Mevcut Theme-Aware Skills
+## Mevcut Theme-Aware Skills {#available-theme-aware-skills}
 
-### Blok Temaları (Block Themes)
+### Blok Temaları (Block Themes) {#block-themes}
 
 **Uygulanır:** WordPress blok tabanlı (Full Site Editing) mimarisini kullanan temalara.
 
@@ -34,7 +34,7 @@ Blok Temaları skill'i şunlar konusunda rehberlik sağlar:
 
 **Ne zaman otomatik etkinleşir:** Aktif temanız bir blok teması olduğunda ( `block-templates` özelliğini destekler).
 
-### Klasik Temalar (Classic Themes)
+### Klasik Temalar (Classic Themes) {#classic-themes}
 
 **Uygulanır:** PHP şablonları ve klasik editörü kullanan geleneksel WordPress temalarına.
 
@@ -48,7 +48,7 @@ PHP قالب فایل‌ها و هوک‌ها با آن‌ها کار کردن
 
 **هنگامی که به صورت خودکار فعال می‌شود:** اگر تم فعلی شما یک تم کلاسیک (غیر بلوکی) باشد.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **مناسب برای:** سایت‌هایی که برای طراحی پیشرفته مبتنی بر بلوک از افزونه Kadence Blocks استفاده می‌کنند.
 
@@ -62,7 +62,7 @@ PHP قالب فایل‌ها و هوک‌ها با آن‌ها کار کردن
 
 **هنگامی که به صورت خودکار فعال می‌شود:** اگر افزونه Kadence Blocks روی سایت شما فعال باشد.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **مناسب برای:** سایت‌هایی که برای طراحی مبتنی بر بلوک و شخصی‌سازی از تم Kadence استفاده می‌کنند.
 
@@ -76,15 +76,15 @@ PHP قالب فایل‌ها و هوک‌ها با آن‌ها کار کردن
 
 **هنگامی که به صورت خودکار فعال می‌شود:** اگر تم Kadence تم فعلی شما باشد.
 
-## چگونه مهارت‌ها انتخاب می‌شوند
+## چگونه مهارت‌ها انتخاب می‌شوند {#how-skills-are-selected}
 
 دستیار (assistant) به طور خودکار تم فعال و افزونه‌های نصب شده روی هر پیام را تشخیص می‌دهد. اگر یک مهارت مرتبط با تم موجود باشد، به طور خودکار در زمینه دستیار بارگذاری می‌شود. نیازی نیست که شما به صورت دستی مهارت‌ها را فعال یا تغییر دهید.
 
-### چندین مهارت (Multiple Skills)
+### چندین مهارت (Multiple Skills) {#multiple-skills}
 
 Əgər saytınızda bir neçə bacarıq tətbiq olunursa (məsələn, həm Kadence Blocks, həm də Kadence Theme aktivdirsə), asistan bütün müvafiq bacarıqlara çıxış edir və hər birindən göstərişlərdən istifadə edə bilər.
 
-### Tema Dəyişdirmək (Switching Themes)
+### Tema Dəyişdirmək (Switching Themes) {#switching-themes}
 
 Aktiv temanı dəyişəndə, asistanın mövcud bacarıqları növbəti mesajda avtomatik olaraq yenilənir. Məsələn:
 
@@ -92,11 +92,11 @@ Aktiv temanı dəyişəndə, asistanın mövcud bacarıqları növbəti mesajda 
 2. Siz klassik temaya keçirsiniz.
 3. Növbəti mesajınızda, **Classic Themes** bacarığı avtomatik yüklənir və **Block Themes** bacarığı artıq mövcud olmur.
 
-## Tema-Müvafiq Bacarıqlardan İstifadə Etmək (Using Theme-Aware Skills)
+## Tema-Müvafiq Bacarıqlardan İstifadə Etmək (Using Theme-Aware Skills) {#using-theme-aware-skills}
 
 Tema-müvafiq bir bacarıqdan istifadə etmək üçün sadəcə söhbət interfeysində nə etmək istədiyinizi təsvir edin. Asistan avtomatik olaraq müvafiq bacarığın göstərişlərindən istifadə edəcək.
 
-### Nümunə Sual-Cavablar (Example Prompts)
+### Nümunə Sual-Cavablar (Example Prompts) {#example-prompts}
 
 **Block Themes üçün:**
 > "Blok nümunələrindən istifadə edərək fon şəkli və mərkəzləşdirilmiş mətnlə bir hero bölmə yaradın."

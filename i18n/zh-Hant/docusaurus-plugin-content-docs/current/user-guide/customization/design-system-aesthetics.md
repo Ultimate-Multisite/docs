@@ -3,11 +3,11 @@ title: 設計系統美學技能
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# 設計系統美學技能
+# 設計系統美學技能 {#design-system-aesthetics-skill}
 
 **設計系統美學技能**是一個引導式的流程，旨在完善您網站的視覺識別度。它能幫助您在字體排版、色彩、間距和動態效果（motion tokens）等定義設計系統的元素上，做出一致的決策。
 
-## 什麼是設計系統美學？
+## 什麼是設計系統美學？ {#what-is-design-system-aesthetics}
 
 設計系統美學是一個結構化的技能，涵蓋以下幾個方面：
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 這些決策會被記錄在您主題的 `theme.json` 檔案中，從而建立一個協調一致的視覺系統。
 
-## 為什麼要使用設計系統美學？
+## 為什麼要使用設計系統美學？ {#why-use-design-system-aesthetics}
 
-### 一致性 (Consistency)
+### 一致性 (Consistency) {#consistency}
 
 設計系統確保了：
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 間距遵循可預測的模式
 - 動畫效果感覺統一流暢
 
-### 效率 (Efficiency)
+### 效率 (Efficiency) {#efficiency}
 
 您不必為每個頁面單獨做設計決策，而是可以：
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 在所有地方應用這些代碼標記
 - 透過修改一個數值來進行全局更新
 
-### 彈性 (Flexibility)
+### 彈性 (Flexibility) {#flexibility}
 
 您可以：
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 嘗試不同的美學風格
 - 在不斷發展的同時，維持品牌的一致性
 
-## 觸發設計系統美學技能
+## 觸發設計系統美學技能 {#triggering-the-design-system-aesthetics-skill}
 
-### 手動啟動
+### 手動啟動 {#manual-activation}
 
 您隨時都可以啟動此技能：
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### 自動建議
+### 自動建議 {#automatic-suggestions}
 
 當您執行以下操作時，系統可能會建議使用此技能：
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 希望提升視覺一致性
 - 準備發布網站時
 
-## 設計系統美學流程
+## 設計系統美學流程 {#the-design-system-aesthetics-process}
 
-### 步驟 1：字體排版 (Typography)
+### 步驟 1：字體排版 (Typography) {#step-1-typography}
 
 系統會詢問您的字體選擇：
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **字重比例 (Weight scale)**：字體字重（常規、中等、粗體等）
 - **行高 (Line height)**：用於提高可讀性的行間距
 
-### 步驟 2：色彩調色盤 (Color Palette)
+### 步驟 2：色彩調色盤 (Color Palette) {#step-2-color-palette}
 
 ```
 讓我們定義您的色彩調色盤。
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 語義色（成功、警告、錯誤）
 - 懸停 (Hover) 和啟用 (Active) 狀態
 
-### 步驟 3：間距 (Spacing)
+### 步驟 3：間距 (Spacing) {#step-3-spacing}
 
 ```
 您想要多少呼吸空間？
@@ -162,7 +162,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 比例：xs, sm, md, lg, xl, 2xl
 - 用於內邊距、外邊距和間隙的具體數值
 
-### 步驟 4：邊框和陰影 (Borders and Shadows)
+### 步驟 4：邊框和陰影 (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 視覺深度和定義：
@@ -185,7 +185,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 用於提升等級的陰影代碼標記
 - 邊框寬度代碼標記
 
-### 步驟 5：動態效果和動畫 (Motion and Animation)
+### 步驟 5：動態效果和動畫 (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 當網站進行互動時，您希望它感覺如何？
@@ -207,9 +207,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 彈性函數 (Easing functions)（ease-in, ease-out, ease-in-out）
 - 用於常見互動的動畫關鍵幀 (keyframes)
 
-## 應用設計系統美學
+## 應用設計系統美學 {#applying-design-system-aesthetics}
 
-### 自動應用
+### 自動應用 {#automatic-application}
 
 完成此技能後，系統會：
 
@@ -218,7 +218,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 3. 重新生成區塊樣式以匹配新的系統
 4. 啟用更新後的主題
 
-### 手動應用
+### 手動應用 {#manual-application}
 
 您也可以直接編輯 `theme.json`：
 
@@ -257,9 +257,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 }
 ```
 
-## 查看您的設計系統
+## 查看您的設計系統 {#viewing-your-design-system}
 
-### 詢問系統
+### 詢問系統 {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 系統將會顯示您的字體排版、色彩、間距和其他代碼標記。
 
-### 查看 theme.json
+### 查看 theme.json {#view-themejson}
 
 請在文字編輯器中開啟 `/wp-content/themes/[theme-name]/theme.json`，即可查看原始的代碼標記定義。
 
-## 更新您的設計系統
+## 更新您的設計系統 {#updating-your-design-system}
 
-### 快速更新
+### 快速更新 {#quick-updates}
 
 詢問系統進行特定更改：
 
@@ -299,7 +299,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Change the heading font to a serif"
 ```
 
-### 全面重新設計
+### 全面重新設計 {#full-redesign}
 
 重新執行設計系統美學技能：
 
@@ -309,7 +309,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 這將引導您再次完成所有決策，從您當前的數值開始。
 
-### 部分更新
+### 部分更新 {#partial-updates}
 
 只更新特定方面：
 
@@ -317,15 +317,15 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Just update the color palette, keep everything else"
 ```
 
-## 設計系統最佳實踐
+## 設計系統最佳實踐 {#design-system-best-practices}
 
-### 一致性
+### 一致性 {#consistency-1}
 
 - 在所有地方使用相同的代碼標記
 - 不要創建一次性的顏色或尺寸
 - 引用代碼標記，而不是硬編碼數值
 
-### 命名
+### 命名 {#naming}
 
 使用清晰、語義化的名稱：
 
@@ -335,7 +335,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### 可擴展性 (Scalability)
+### 可擴展性 (Scalability) {#scalability}
 
 設計您的系統使其具備擴展性：
 
@@ -343,7 +343,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 創建比例尺 (scales) (xs, sm, md, lg, xl) 而非任意數值
 - 為未來的增補做好規劃
 
-### 文件化 (Documentation)
+### 文件化 (Documentation) {#documentation}
 
 記錄您的設計系統：
 
@@ -351,9 +351,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 何時使用每個代碼標記
 - 例外情況和邊緣案例
 
-## 常見設計系統模式
+## 常見設計系統模式 {#common-design-system-patterns}
 
-### 現代極簡風 (Modern Minimalist)
+### 現代極簡風 (Modern Minimalist) {#modern-minimalist}
 
 - 無襯線體字體排版 (Inter, Helvetica)
 - 有限的色彩調色盤 (2-3 種顏色)
@@ -361,7 +361,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 細微的陰影
 - 流暢、快速的動畫
 
-### 溫暖友善風 (Warm and Friendly)
+### 溫暖友善風 (Warm and Friendly) {#warm-and-friendly}
 
 - 襯線體和無襯線體的混合搭配
 - 溫暖的色彩調色盤（橘色、暖灰色）
@@ -369,7 +369,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 柔和的陰影
 - 活潑的動畫
 
-### 專業企業風 (Professional Corporate)
+### 專業企業風 (Professional Corporate) {#professional-corporate}
 
 - 簡潔的無襯線體 (Roboto, Open Sans)
 - 帶有強調色的中性調色盤
@@ -377,7 +377,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 極簡的陰影
 - 細微的過渡效果
 
-### 創意大膽風 (Creative and Bold)
+### 創意大膽風 (Creative and Bold) {#creative-and-bold}
 
 - 獨特的字體排版
 - 大膽的色彩調色盤
@@ -385,7 +385,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 強烈的陰影
 - 可察覺的動畫
 
-## 故障排除 (Troubleshooting)
+## 故障排除 (Troubleshooting) {#troubleshooting}
 
 **我的設計系統更改沒有顯示**
 - 清除瀏覽器快取
@@ -403,7 +403,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - 手動編輯 `theme.json` 以恢復到舊值
 - 使用不同的選擇重新執行此技能
 
-## 下一步 (Next Steps)
+## 下一步 (Next Steps) {#next-steps}
 
 定義完設計系統後：
 

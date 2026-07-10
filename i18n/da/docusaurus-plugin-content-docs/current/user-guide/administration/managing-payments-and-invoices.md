@@ -3,9 +3,9 @@ title: Håndtering af betalinger og fakturaer
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Administrering betalinger og fakturaer
+# Administrering betalinger og fakturaer {#managing-payments-and-invoices}
 
-## Betalingsindstillinger
+## Betalingsindstillinger {#payment-settings}
 
 Før du begynder at modtage betalinger, skal du indstille de relevante betalingsrelaterede indstillinger. Gå til **Ultimate Multisite → Indstillinger** og klik på fanen **Betaling**.
 
@@ -15,7 +15,7 @@ Her er et fuldt overblik over siden for betalingsindstillinger:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Generelle betalingsmuligheder
+### Generelle betalingsmuligheder {#general-payment-options}
 
 I de generelle indstillinger kan du konfigurere:
 
@@ -24,7 +24,7 @@ I de generelle indstillinger kan du konfigurere:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Betalingsportaler (Payment Gateways)
+### Betalingsportaler (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite understøtter flere betalingsportaler. Du kan aktivere og konfigurere hver enkelt fra fanen Betaling.
 
@@ -40,11 +40,11 @@ Hver portal har sin egen konfigurationssektion, hvor du indtaster API-nøgler og
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox-tilstand (Sandbox Mode)
+### Sandbox-tilstand (Sandbox Mode) {#sandbox-mode}
 
 Du kan aktivere **Sandbox Mode** til at teste din betalingsintegration, før du går i produktion. Når sandbox mode er aktiv, vil der ikke blive foretaget rigtige opkrævninger.
 
-## Se betalinger
+## Se betalinger {#viewing-payments}
 
 Gå til siden **Betalinger** under Ultimate Multisite for at se alle transaktioner på tværs af dit netværk.
 
@@ -54,7 +54,7 @@ Du kan filtrere betalingerne efter status (fuldført, ventende, mislykket, refun
 
 Klik på en betaling for at se alle detaljer, herunder varelisten, tilknyttet medlemskab, kundedata og data fra betalingsportalen.
 
-## Fakturaer (Invoices)
+## Fakturaer (Invoices) {#invoices}
 
 Ultimate Multisite kan automatisk generere fakturaer for betalinger. Du kan tilpasse fakturaskabelonen og nummerformatet fra Indstillingerne for Betalinger (Payment settings).
 

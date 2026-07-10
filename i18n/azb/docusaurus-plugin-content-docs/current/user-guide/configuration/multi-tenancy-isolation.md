@@ -3,11 +3,11 @@ title: Çoklu Kiracılık İzolasyonu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Çoklu Kiracılık İzolasyonu
+# Çoklu Kiracılık İzolasyonu {#multi-tenancy-isolation}
 
 Ultimate Multisite: Çoklu Kiracılık 1.2.0, egemen kiracılar için her alt siteye özel veritabanı ve dosya sistemi izolasyonu desteği sunar. Bu özellik, kiracı verilerini birbirinden ayırırken ağ düzeyindeki sağlama (provisioning), faturalandırma ve yönetimi korur.
 
-## İzolasyon stratejisi
+## İzolasyon stratejisi {#isolation-strategy}
 
 Daha güçlü veri ayrımı, özel dosya sistemi depolama veya ayrı bir barındırma sınırı gerektiren müşteriler için egemen izolasyonu kullanın.
 
@@ -18,7 +18,7 @@ Her egemen kiracının şunlara sahip olması gerekir:
 - Siteyi veritabanına, kök yollarına, ana bilgisayar adına ve izolasyon modeline eşleyen bir kiracı kayıt girişi (registry entry).
 - Kiracının canlı kabul edilmeden önce bir geçiş doğrulama sonucu.
 
-## Veritabanı sunucu bağlama (Database host binding)
+## Veritabanı sunucu bağlama (Database host binding) {#database-host-binding}
 
 Sürüm 1.2.0, egemen kurulumlar için varsayılan aynı makineye bağlı olma davranışını değiştiriyor. `localhost` gibi aynı makine değerleri normalize ediliyor, böylece Bedrock, FrankenPHP ve konteynerleştirilmiş WordPress kurulumları, MySQL'in aslında gördüğü ana bilgisayar dizesine karşı izinleri verebilir ve doğrulayabilir.
 
@@ -31,11 +31,11 @@ Bir egemen kiracı yapılandırırken:
 
 Doğrulama raporları izin hataları bildirirse, kiracı veritabanı kullanıcı yetkilerini yapılandırılmış ana bilgisayar bağlamıyla karşılaştırın. `user@localhost` için verilen bir kullanıcı, `user@127.0.0.1` veya `user@%` ile farklıdır.
 
-## Dosya sistemi kök dizini
+## Dosya sistemi kök dizini {#filesystem-root}
 
 Kiraya kök dizini yeniden başlatmalarda ve dağıtımlarda sabit olmalıdır. Geçici bağlama yollarından kaçının. Bedrock tarzı kurulumlar için, tenant root'un sadece proje köküne değil, aynı zamanda kiracının bootstrap'u tarafından beklenen WordPress web köküne de işaret ettiğinden emin olun.
 
-## Hazırlama sırası
+## Hazırlama sırası {#provisioning-order}
 
 Yeni egemen (sovereign) kiracılar için bu sırayı kullanın:
 
@@ -49,7 +49,7 @@ Yeni egemen (sovereign) kiracılar için bu sırayı kullanın:
 
 Bu sıra, veritabanı yazıcısı, kullanıcılar ve dosya sisteminin hazır olmasından önce kısmen izole edilmiş kiracıların trafiği almasını engeller.
 
-## Egemen müşteri yönetim akışları
+## Egemen müşteri yönetim akışları {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0, egemen mod etkinleştirildiğinde müşteri yönetim işlemlerini ana sitede tutar. Bir kiracı hala izole bir WordPress kurulumu olarak çalışabilir, ancak ağ faturalandırması, üyelik veya paylaşılan hesap verilerine bağlı olan müşteriyle ilgili eylemler, işlemi kiracı çalışma zamanının içinde tamamlamaya çalışmak yerine müşteriyi ana siteye geri göndermelidir.
 

@@ -3,11 +3,11 @@ title: Dokumentazioa desarrollador artealeak
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Desarrollapurri Dokumentazioa
+# Desarrollapurri Dokumentazioa {#developer-documentation}
 
 Hau gure gure gizartean Ultimate Multisite-arekin integratzea, hobetzea edo addon-ak datu behar dituzten guztia ematen da. Ultimate Multisite-ak WordPress Multisite network bat Website-as-a-Service (WaaS) platform batean funtziatzen du.
 
-## Zer dago?
+## Zer dago? {#whats-available}
 
 - **[REST API](./rest-api/overview)** — All entities-ek (klientzak, sitiak, membership-ak, labenguen, produkzioak, domain-ak) CRUD operazio guztietarako API key autentifikazioarekin
 - **[Hooks Reference](./hooks/guide)** — Lifecycle events eta personalizazio arteko 200+ action hooks eta 280+ filter hooks
@@ -15,13 +15,13 @@ Hau gure gure gizartean Ultimate Multisite-arekin integratzea, hobetzea edo addo
 - **[Code Examples](./code-examples/)** — Dynamic pricing, site provisionamenduak, custom limitazioak eta multi-gateway prosesamentu arteko advanced pattern-ek
 - **[Addon Development](./addon-development/getting-started)** — Addon plugins sortzeko estruktura bat
 
-## Erreguntzak
+## Erreguntzak {#requirements}
 
 - WordPress Multisite instalazioa
 - PHP 7.4 edo handiagoa
 - Ultimate Multisite plugin batek aktibatu dagoela
 
-## Composer / Bedrock Instalazioa
+## Composer / Bedrock Instalazioa {#composer--bedrock-installation}
 
 Ultimate Multisite-ak [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite)rean `ultimate-multisite/ultimate-multisite` bezala aurkitu da. Hau da Bedrock-baziko WordPress setup-ek eta beste Composer-eko erakundutako erabilgarrietan bestelako instalazio metodoa.
 
@@ -45,15 +45,15 @@ Muga, pluginaren bedoak Bedrock-en autoloader gisa erabiltzen ari zete, aktibazi
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Aurrera egin behar duten jarduerak (Quick Start)
+## Aurrera egin behar duten jarduerak (Quick Start) {#quick-start}
 
-### REST API erabili
+### REST API erabili {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Espenerietan (Events) hookatu
+### Espenerietan (Events) hookatu {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Addon bat sortu
+### Addon bat sortu {#build-an-addon}
 
 ```bash
 # Template-ek gogoratu addon scaffold sortu du

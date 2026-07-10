@@ -3,11 +3,11 @@ title: Cerințe
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Cerințe pentru Ultimate Multisite
+# Cerințe pentru Ultimate Multisite {#ultimate-multisite-requirements}
 
 Primul lucru pe care ți-l vei întreba înainte de a achiziționa Ultimate Multisite este care sunt cerințele pentru a rula pluginul nostru. Din fericire, există doar câteva cerințe de bază pentru a rula Ultimate Multisite: un **nume de domeniu**, un **furnizor de găzduire** bun și o instalare WordPress **Multisite**. Asta e tot ce ai nevoie!
 
-## Nume de domeniu
+## Nume de domeniu {#domain-name}
 
 Mai întâi, să vorbim despre numele de domeniu.
 
@@ -17,7 +17,7 @@ Pluginul nostru oferă servicii de abonament, colectare de plăți, formulare de
 
 Orice nișă alegi poate fi gestionată folosind pluginul nostru, atâta timp cât vinzi site-uri web ca serviciu! Asigură-te că alegi un nume de domeniu care se potrivește cu planul tău de afaceri.
 
-## Furnizor de găzduire
+## Furnizor de găzduire {#hosting-provider}
 
 Acum că ai un nume de domeniu atrăgător care reprezintă nișa și afacerea ta, va trebui să alegi o companie de găzduire web bună pentru a găzdui rețeaua ta cu Ultimate Multisite. Există câteva opțiuni bune pe piață. Unii furnizori de găzduire se integrează bine cu Ultimate Multisite, ceea ce poate fi un factor decisiv în funcție de ce plănuiești să construiești.
 
@@ -25,7 +25,7 @@ Ultimate Multisite ar trebui să funcționeze la orice furnizor de găzduire. Si
 
 Când vine vorba de specificațiile serverului, nu există o formulă specifică, deoarece va depinde de funcționalitățile pe care le vei oferi și de dimensiunea rețelei tale. O găzduire partajată poate fi un bun început, dar de îndată ce rețeaua ta începe să crească, probabil vei avea nevoie de un VPS dedicat.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Acum, să vorbim puțin despre o instalare WordPress Multisite.
 

@@ -4,22 +4,22 @@ title: 'Aksie - wu_page_{$this->id}_before_render'
 sidebar_label: 'wu_page_{$this->id}_before_render'
 _i18n_hash: c2622b55e1ff656ba579f3ee25646584
 ---
-# Action: wu_page_\{$this->id\}_before_render
+# Action: wu_page_\{$this->id\}_before_render {#action-wupagethis-idbeforerender}
 
 Word geaktiveer voordat 'n spesifieke bladsy gerender word.
 
 Gebruik: Die dinamiese deel moet vervang word met 'n geldige bladsy-ID, b.v. `add_action('wu_page_events_before_render', 'do_something_callback', 10, 2);`
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
 | $page_id | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Die ID van die bladsy. |
 | $this | `\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Die Base Admin Page-instansie. |
 
-### Sedert
+### Sedert {#since}
 
 - 1.8.2
-### Bron
+### Bron {#source}
 
 Gedefinieer in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L368) by lyn 368

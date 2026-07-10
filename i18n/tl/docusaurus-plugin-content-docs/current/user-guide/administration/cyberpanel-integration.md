@@ -3,25 +3,25 @@ title: Integrasyon ng CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Ipaliwanag ng gabay na ito kung paano i-configure ang Ultimate Multisite CyberPanel integration para awtomatikong idagdag (at tanggalin) ang mga domain na naka-map sa iyong network bilang virtual host sa CyberPanel, kasama ang opsyon para sa auto-SSL provisioning gamit ang Let's Encrypt.
 
-## Ano ang Ginagawa Nito
+## Ano ang Ginagawa Nito {#what-it-does}
 
 - Kapag may domain na naka-map sa Ultimate Multisite, tatawagin ng integration ang CyberPanel API para gumawa ng virtual host para sa domain na iyon.
 - Kapag tinanggal ang pag-map ng domain, tatawagin ng integration ang API para burahin ang katumbas na virtual host.
 - Kapag naka-enable ang auto-SSL, agad na magti-trigger ang integration ng Let's Encrypt certificate issuance pagkatapos lumikha ng virtual host.
 - Opsyonal na nagdaragdag/nagtatanggal ng `www.` alias depende sa iyong setting na "Auto-create www subdomain" sa Domain Mapping settings.
 
-## Mga Kinakailangan (Prerequisites)
+## Mga Kinakailangan (Prerequisites) {#prerequisites}
 
 - Isang tumatakbong CyberPanel instance (inirerekomenda ang v2.3 o mas bago) na naaabot mula sa iyong WordPress server.
 - Isang umiiral na website sa CyberPanel na nagsisilbing root ng iyong WordPress network. Ang integration ay magdadagdag ng mga bagong virtual host sa server na ito.
 - Naka-enable ang CyberPanel API access. Ang pag-authenticate ay gumagamit ng iyong CyberPanel admin username at password.
 - Dapat ay nakatuturo na ang iyong DNS records para sa mga naka-map na domain sa IP address ng iyong server bago maibigay ng auto-SSL ang isang balidong sertipiko.
 
-## Mga Pangangailangan (Requirements)
+## Mga Pangangailangan (Requirements) {#requirements}
 
 Ang mga sumusunod na constant ay dapat tukuyin sa iyong `wp-config.php` file:
 
@@ -82,9 +82,9 @@ Gamitin ang built-in connection test sa settings wizard:
 2. I-click ang **Test Connection**.
 3. Isang mensahe ng tagumpay ang kumpirmang ang plugin ay nakakaabot sa CyberPanel API at nag-authenticate nang tama.
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#setup-instructions}
 
-### Domain Mapping
+### Domain Mapping {#1-enable-the-cyberpanel-api}
 
 Kapag may domain na ini-map sa Ultimate Multisite:
 
@@ -93,7 +93,7 @@ Kapag may domain na ini-map sa Ultimate Multisite:
 3. Itinakda ang document root upang ituro ito sa network root directory ng iyong WordPress.
 4. Kapag tinanggal ang domain mapping, tatawagin ng integration ang `/api/deleteWebsite` para linisin ang virtual host.
 
-### Auto-SSL
+### Auto-SSL {#2-add-constants-to-wp-configphp}
 
 Kapag ang `WU_CYBERPANEL_AUTO_SSL` ay `true`:
 
@@ -103,11 +103,11 @@ Kapag ang `WU_CYBERPANEL_AUTO_SSL` ay `true`:
 
 > **Mahalaga:** Dapat na lubusang naipapasa (propagated) ang DNS sa IP address ng iyong server bago ma-validate ng Let's Encrypt ang domain. Kung nabigo ang pag-issue ng SSL agad pagkatapos i-map, maghintay muna sa DNS propagation at muling i-trigger ang SSL mula sa CyberPanel dashboard sa ilalim ng **SSL** > **Manage SSL**.
 
-### www Subdomain
+### www Subdomain {#3-enable-the-integration}
 
 Kung naka-enable ang **Auto-create www subdomain** sa iyong Domain Mapping settings, gagawa rin ang integration ng isang virtual host alias para sa `www.<domain>` at, kapag naka-on ang auto-SSL, maglalabas ito ng sertipiko na sumasaklaw sa parehong apex at www variants.
 
-### Email Forwarders
+### Email Forwarders {#4-verify-connectivity}
 
 Kapag aktibo ang [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon, kaya ring magbigay ang CyberPanel ng customer email forwarders. Ang mga forwarder na ito ay nagre-route ng mensahe mula sa isang domain address patungo sa ibang inbox nang hindi kailangang gumawa ng buong mailbox, na kapaki-pakinabang para sa mga alias tulad ng `info@customer-domain.test` o `support@customer-domain.test`.
 
@@ -120,7 +120,7 @@ Bago i-enable ang forwarders para sa mga customer:
 
 Kung nabigo ang paggawa ng forwarder, tingnan muna ang Ultimate Multisite activity logs, at pagkatapos ay i-confirm sa CyberPanel na umiiral ang source domain at may email-management permissions ang API user.
 
-## Gabay sa Konfigurasyon
+## Gabay sa Konfigurasyon {#how-it-works}
 
 | Constant | Kinakailangan | Default | Deskripsyon |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Kung nabigo ang paggawa ng forwarder, tingnan muna ang Ultimate Multisite activi
 | `WU_CYBERPANEL_PHP_VERSION` | Hindi | `PHP 8.2` | Bersyon ng PHP para sa mga bagong virtual host (dapat tumugma sa bersyong naka-install sa CyberPanel) |
 | `WU_CYBERPANEL_EMAIL` | Hindi | — | Email na makokontak para sa pagpaparehistro ng SSL certificate |
 
-## Mahalagang Paalala
+## Mahalagang Paalala {#domain-mapping}
 
 Ginagamit ng API ng CyberPanel ang session-based token authentication. Awtomatikong kinukuha ng integration ang token sa bawat tawag sa API.
 Dapat may pahintulot (permissions) ang iyong CyberPanel admin account na lumikha at magbura ng mga website.
@@ -140,33 +140,33 @@ Ang CyberPanel ay tumatakbo sa port `8090` nang default. Kung ang server mo ay g
 Hindi ina-manage ng integration ang DNS records. Kailangan mong ituro ang domain DNS sa IP address ng iyong server bago i-mapa ang domain sa Ultimate Multisite.
 Kung gumagamit ka ng OpenLiteSpeed (OLS), awtomatikong magsasagawa ng graceful restart pagkatapos ng mga pagbabago sa virtual host. Walang kailangang manual na interbensyon.
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#auto-ssl}
 
-### API Connection Refused
+### API Connection Refused {#www-subdomain}
 
 - Siguraduhin na bukas ang port `8090` sa firewall ng iyong server.
 - I-confirm na ang halaga ng `WU_CYBERPANEL_HOST` ay may tamang protocol (`https://`) at port.
 - Tingnan kung balido ang CyberPanel SSL certificate mo; ang mga self-signed certificate ay maaaring magdulot ng TLS verification failures. Itakda ang `WU_CYBERPANEL_VERIFY_SSL` sa `false` lamang sa mga trusted private network environment.
 
-### Authentication Errors
+### Authentication Errors {#email-forwarders}
 
 - I-confirm na tama ang iyong `WU_CYBERPANEL_USERNAME` at `WU_CYBERPANEL_PASSWORD` sa pamamagitan ng direktang pag-login sa CyberPanel.
 - Kinokondena (locks) ng CyberPanel ang mga account pagkatapos ng paulit-ulit na hindi matagumpay na pag-login. Tingnan ang **Security** > **Brute Force Monitor** sa loob ng CyberPanel kung mayroong lockouts.
 
-### Domain Not Created
+### Domain Not Created {#configuration-reference}
 
 - Tingnan ang activity log ng Ultimate Multisite (**Ultimate Multisite** > **Activity Logs**) para sa mga error message ng API.
 - I-verify na umiiral ang package na tinukoy sa `WU_CYBERPANEL_PACKAGE` sa CyberPanel (**Packages** > **List Packages**).
 - Siguraduhin na hindi pa nakarehistro ang domain bilang website sa CyberPanel — ang paglikha ng duplicate website ay magreresulta sa error.
 
-### SSL Certificate Not Issued
+### SSL Certificate Not Issued {#important-notes}
 
 - I-confirm na fully propagated ang DNS: Dapat ibalik ng `dig +short your-domain.com` ang IP address ng iyong server.
 - Ang Let's Encrypt ay may mga limitasyon sa bilis (rate limits). Kung kamakailan mo pa lang nag-issue ng ilang sertipiko para sa parehong domain, maghintay muna bago subukan ulit.
 - Tingnan ang CyberPanel SSL logs sa ilalim ng **Logs** > **Error Logs** para sa detalye tungkol sa mga pagkabigo sa pag-issue ng sertipiko.
 - Bilang fallback, maaari kang mag-issue ng SSL nang mano-mano mula sa CyberPanel: Pumunta sa **SSL** > **Manage SSL** > piliin ang domain > **Issue SSL**.
 
-## Mga Sanggunian
+## Mga Sanggunian {#troubleshooting}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

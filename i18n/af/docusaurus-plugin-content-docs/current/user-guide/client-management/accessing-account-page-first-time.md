@@ -3,7 +3,7 @@ title: Toegang tot die Rekeningblad
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Hoe kan ek vir die eerste keer toegang tot my rekeningblad kry?
+# Hoe kan ek vir die eerste keer toegang tot my rekeningblad kry? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Welkom by Ultimate Multisite!
 

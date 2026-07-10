@@ -3,15 +3,15 @@ title: 'Dars 6: Tajriba-ye-Naw-kard'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Ders 6: Kayıt Olma Deneyimi
+# Ders 6: Kayıt Olma Deneyimi {#lesson-6-the-signup-experience}
 
 Ödeme (checkout) akışı, ilgiyi gelire dönüştürdüğünüz yerdir. Karmaşık veya genel bir kayıt süreci, müşterileri kaçırır. Müşterinin dilini konuşan ve zahmetsiz hissettiren niş odaklı bir akış ise onları dönüştürür.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite'ta şablonlar ve planlar ayarlandı. Şimdi, fitness stüdyosu sahiplerini ödeme yapan müşterilere dönüştürecek kayıt ve ödeme deneyimini inşa edeceğiz.
 
-## Kayıt Akışını Anlamak
+## Kayıt Akışını Anlamak {#understanding-the-registration-flow}
 
 Ultimate Multisite'ın ödeme formları, tamamen özelleştirilebilir çok adımlı formlardır. FitSite için istediğimiz akış şudur:
 
@@ -21,11 +21,11 @@ Ultimate Multisite'ın ödeme formları, tamamen özelleştirilebilir çok adım
 
 Tüm teknik referans için [Kayıt Akışı](/user-guide/configuration/the-registration-flow) sayfasına bakın.
 
-## FitSite Ödeme Sayfasını Tasarlamak
+## FitSite Ödeme Sayfasını Tasarlamak {#designing-the-fitsite-checkout}
 
 **Ultimate Multisite > Checkout Forms** yolunu izleyerek yeni bir form oluşturun.
 
-### Adım 1: Plan Seçimi
+### Adım 1: Plan Seçimi {#step-1-plan-selection}
 
 Bir fitness stüdyosu sahibi ilk gördüğü şeyin, anladığı terimlerle sunulmuş planlar olması gerekir.
 
@@ -37,7 +37,7 @@ Bir fitness stüdyosu sahibi ilk gördüğü şeyin, anladığı terimlerle sunu
 "1 GB depolama alanı" bir spor salonu sahibi için hiçbir şey ifade etmez. "Profesyonel bir stüdyo web sitesi için ihtiyacınız olan her şey" ise her şeyi ifade eder. Plan açıklamalarını müşterinizin dilinde yazın.
 :::
 
-### Adım 2: Şablon Seçimi
+### Adım 2: Şablon Seçimi {#step-2-template-selection}
 
 Bir plan seçtikten sonra, müşteri başlangıç şablonunu seçer.
 
@@ -45,7 +45,7 @@ Bir plan seçtikten sonra, müşteri başlangıç şablonunu seçer.
 - Mevcut şablonlar, seçtikleri plana göre filtrelenir (bu, 5. Derste yapılandırıldı)
 - Her şablon, fitness odaklı bir tasarım gösteren bir önizleme görseline sahip olmalıdır
 
-### Adım 3: Hesap Oluşturma
+### Adım 3: Hesap Oluşturma {#step-3-account-creation}
 
 Bunu minimumda tutun. Sadece şunları toplayın:
 
@@ -55,27 +55,27 @@ Bunu minimumda tutun. Sadece şunları toplayın:
 
 Kayıt sırasında ihtiyacınız olmayan hiçbir bilgiyi istemeyin. Her fazladan alan, dönüşüm oranını düşürür.
 
-### Adım 4: Site Kurulumu
+### Adım 4: Site Kurulumu {#step-4-site-setup}
 
 - **Site başlığı**: 3. Adımda girilen stüdyo adından otomatik doldurun
 - **Site URL'si**: Stüdyo adından otomatik oluşturun (örneğin, `ironworks.fitsite.com`)
 
-### Adım 5: Ödeme
+### Adım 5: Ödeme {#step-5-payment}
 
 - **Payment** alanını ekleyin
 - Ödeme ağ geçidinizi yapılandırın ([Stripe](/user-guide/payment-gateways/stripe) abonelik faturalandırması için önerilir)
 - Eğer 5. Derste sipariş artırıcılar (order bumps) oluşturduysanız, ödeme adımından önce bir **Order Bump** alanı ekleyin
 
-### Adım 6: Onaylama
+### Adım 6: Onaylama {#step-6-confirmation}
 
 - Onay mesajını fitness odaklı bir dil ile özelleştirin
 - Örnek: "Fitness stüdyosu web siteniz oluşturuluyor. Birkaç saniye içinde yeni sitenize yönlendirileceksiniz."
 
-## Dönem Seçimi Anahtarı Ekleme
+## Dönem Seçimi Anahtarı Ekleme {#adding-a-period-selection-toggle}
 
 Planlarınızda fiyat varyasyonları ayarladıysanız (aylık vs. yıllık), müşterilerin faturalandırma dönemleri arasında geçiş yapabilmesi için ödeme formuna bir **Period Selection** alanı ekleyin. Talimatlar için [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) sayfasına bakın.
 
-## Ödeme Yapılandırması
+## Ödeme Yapılandırması {#configuring-payment}
 
 Henüz bir ödeme ağ geçidi kurmadıysanız:
 
@@ -85,7 +85,7 @@ Henüz bir ödeme ağ geçidi kurmadıysanız:
 
 Paraların hesabınıza nasıl aktığı hakkında detaylar için [Getting Paid](/user-guide/payment-gateways/getting-paid) sayfasına bakın.
 
-## Akışı Test Etme
+## Akışı Test Etme {#testing-the-flow}
 
 Devam etmeden önce, tam bir test kaydı yapın:
 
@@ -105,7 +105,7 @@ Devam etmeden önce, tam bir test kaydı yapın:
 - [ ] Müşteri, seçilen şablonla çalışan bir siteye ulaşıyor mu
 - [ ] Onay e-postaları fitness odaklı dil kullanıyor mu
 
-## FitSite Ağı Şu Ana Kadar
+## FitSite Ağı Şu Ana Kadar {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Markalama için hazır (bir sonraki ders)
 ```
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - Fitness stüdyosu sahiplerine özel bir **çok adımlı ödeme formu**
 - Kayıt akışı boyunca **niş odaklı dil**

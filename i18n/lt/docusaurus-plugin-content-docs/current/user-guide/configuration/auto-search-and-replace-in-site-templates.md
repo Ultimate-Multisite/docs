@@ -3,7 +3,7 @@ title: Automatinis paieška ir keitimas svetainės šablonuose
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatinas ir keitimas svetainės šabloonu (v2)
+# Automatinas ir keitimas svetainės šabloonu (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Šis tutorial reikalauja Ultimate Multisite versiją 2.x.**_
 
@@ -17,7 +17,7 @@ Jūsų klientas tada bus gali užpildyti šį lauką registracijos metu.
 
 Ultimate Multisite tada automatiškai atitiks vietines įvestais duomenimis, pateiktais klientui.
 
-## **Problemos sprendimas „šabloonas pilnas vietiniais“**
+## **Problemos sprendimas „šabloonas pilnas vietiniais“** {#solving-the-template-full-of-placeholders-problem}
 
 Visi tai yra puiku, bet susidaro su nepatogiu problemu: dabar mūsų svetainės šabloonai – kuriuos gali vizinti kiti vartotojai – užpildyti nepatogiai vietiniais, kurie ne du daug informacijos.
 

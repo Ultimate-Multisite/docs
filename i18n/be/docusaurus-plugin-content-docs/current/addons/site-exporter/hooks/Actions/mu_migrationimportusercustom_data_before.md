@@ -4,20 +4,20 @@ title: Action - mu_migration/import/user/custom_data_before
 sidebar_label: mu_migration/import/user/custom_data_before
 _i18n_hash: dd547798f24ac891e6132ce450eac010
 ---
-# Action: mu_migration/import/user/custom_data_before
+# Action: mu_migration/import/user/custom_data_before {#action-mumigrationimportusercustomdatabefore}
 
 Выконваецца да выхаду (экспорта) карыстальніцкіх карысных дадзеных.
 
-## Паметнікі
+## Паметнікі {#parameters}
 
 | Назва | Тып | Апісанне |
 |------|------|-------------|
 | $user_data | `array` | Массив дадзеных карыстальніка. |
 | $user | `\WP_User` | Объект карыстальніка. |
 
-### З версіі
+### З версіі {#since}
 
 - 0.1.0
-### Выкненне
+### Выкненне {#source}
 
 Вызначана ў [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L139) у 139-й пасылцы.

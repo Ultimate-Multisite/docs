@@ -3,13 +3,13 @@ title: Ngabagi Rencana
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Ngubah Rencana (v2)
+# Ngubah Rencana (v2) {#downgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel ini merujuk pada Ultimate Multisite versi 2.x.**_
 
 Ngubah rencana atau langganan itu hal biasa yang bisa dilakukan klien Anda kalau mereka punya anggaran terbatas atau memutuskan bahwa mereka tidak butuh banyak sumber daya untuk menjalankan subsite mereka.
 
-## Cara ngubah rencana
+## Cara ngubah rencana {#how-to-downgrade-a-plan}
 
 Klien Anda bisa mengubah rencana kapan saja dengan *login* ke *admin dashboard* subsite mereka dan mengklik **Change** di bawah halaman akun mereka.
 
@@ -25,7 +25,7 @@ Untuk melanjutkan, pengguna hanya perlu mengklik tombol **Complete Checkout**. S
 
 ![Halaman akun yang menunjukkan banner perubahan keanggotaan yang tertunda](/img/account-page/pending-change.png)
 
-### Apa yang terjadi ketika pengguna menurunkan rencana mereka
+### Apa yang terjadi ketika pengguna menurunkan rencana mereka {#what-happens-when-a-user-downgrades-their-plan}
 
 Penting untuk diingat bahwa menurunkan rencana tidak mengubah konfigurasi yang sudah ada di subsite pengguna.
 
@@ -37,7 +37,7 @@ Mun postingan leuwih ti batas anu ditetepkeun dina rencana, anjeun miboga 3 pili
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Naon kajadianna jeung pembayaran
+### Naon kajadianna jeung pembayaran {#what-happens-to-the-payment}
 
 Dina versi 2.0, teu perlu deui ngarobah hal naon dina pembayaran patalihan (proration).
 

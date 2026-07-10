@@ -4,21 +4,21 @@ title: Actie - wu_magic_link_login
 sidebar_label: wu_magic_link_login
 _i18n_hash: 4682ae341c1806000c2d4ca3f0af0b2e
 ---
-# Actie: wu_magic_link_login
+# Actie: wu_magic_link_login {#action-wumagiclinklogin}
 
 Activeert nadat een gebruiker is ingelogd via een magische link.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $user_id | `int` | De gebruikers-ID. |
 | $site_id | `int` | De site-ID. |
 
-### Sinds
+### Sinds {#since}
 
 - 2.0.0
 
-### Bron
+### Bron {#source}
 
 Gedefinieerd in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L240) op regel 240

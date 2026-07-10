@@ -4,11 +4,11 @@ title: Action - wu_domain_renewal_failed
 sidebar_label: wu_domain_renewal_failed
 _i18n_hash: bff3fd7903485780766e490300546070
 ---
-# Action: wu_domain_renewal_failed
+# Action: wu_domain_renewal_failed {#action-wudomainrenewalfailed}
 
 जब डोमेन नवीनीकरण का प्रयास विफल हो जाता है, तो यह ट्रिगर होता है।
 
-## पैरामीटर्स
+## पैरामीटर्स {#parameters}
 
 | Name | Type | विवरण |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bff3fd7903485780766e490300546070
 | $renewal_data | `array&lt;string,mixed&gt;` | नवीनीकरण का मेटाडेटा (जैसे domain_name, years, आदि)। |
 | $error_message | `string` | रजिस्ट्रार द्वारा दिया गया इंसान के पढ़ने योग्य त्रुटि संदेश। |
 
-### कब से उपलब्ध
+### कब से उपलब्ध {#since}
 
 - 2.0.0
-### स्रोत
+### स्रोत {#source}
 
 [`inc/class-domain-renewal-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-renewal-manager.php#L630) में लाइन 630 पर परिभाषित।

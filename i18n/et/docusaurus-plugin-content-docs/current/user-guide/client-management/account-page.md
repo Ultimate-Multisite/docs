@@ -3,7 +3,7 @@ title: Klienti konto lehel
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Teie kliendi konto lehekül (v2)
+# Teie kliendi konto lehekül (v2) {#your-clients-account-page-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 
@@ -11,7 +11,7 @@ Kui kliendid tekitavad oma võrku allikates plaaniga, saavad nad külastada veeb
 
 Selle tutori juhendame teid kliendi konto lehekül läbiviimise läbi ja näete, mida teie kliendid seal näha ja teha saavad.
 
-## Konto lehekül
+## Konto lehekül {#the-account-page}
 
 Konto lehekül on kättesaadav **Account** (Konto) klõpsimisel oma kliendi dashboardis.
 
@@ -27,7 +27,7 @@ Kui klient selle klõpsab, ta näeb ülevaate oma jälgendustest, maksutamise aa
 
 Nad saavad ka muuta jälgenduse teise plaani või osta teid paketi või teenust, mida te pakute. Lühidame iga osi eraldi.
 
-### Teie jälgide ülevaade:
+### Teie jälgide ülevaade: {#your-membership-overview}
 
 Esimene blok, mis asub otseselt teie kliendite veebilehe nime all, annab ülevaate nende praeguse plaani ja sellega kaasnenud ostetud teenuste/pakettide kohta. Blok näitab ka jälgide numberit, esialgsetelt makset summa, kui plaani eest on makset, kui palju plaani ja miskettek pakette/teenusi maksavad ning kui palju neid jälgid selle jälgiga. Neid saab ka näha, kas jälg on **Active** (aktiivne), **Expired** (lõppunud) või **Canceled** (tühistatud).
 
@@ -43,7 +43,7 @@ Nüüd, kui kliendid valivad selle praeguse jälgiga pakette või teenusi – na
 
 Päraste on märkida, et kuponikoodi saab lisada ainult jälgide muutmislehel. Kui klient kasutas kuponikoodi esimese jälgimiskogude ostu ajal, siis kood toimib ka selle uue jälgiga.
 
-### Jälgimise aadressi uuendamine:
+### Jälgimise aadressi uuendamine: {#updating-the-billing-address}
 
 Arvu konto lehel on teie kliendid võivad ka oma lahendusadressi uuendada. Neile tuleb lihtsalt klõpsata **Ühenda** (Update) "Lahendusadressi" kõrval.
 
@@ -53,7 +53,7 @@ Teile ilmub uue akn. Kõik, mida peate teema, on täita uue aadress ja klõpsata
 
 ![Lahendusadresseseksti vormi uuendamiseks](/img/account-page/billing-address-form.png)
 
-### Veebilehva malli muutmise:
+### Veebilehva malli muutmise: {#changing-the-site-template}
 
 Et võimaldada klienditele oma veebilehtide malle muuta, peate minema **Ultimate Multisite > Settings > Sites** sektsiooni ja välja lülitamise **Mallide ülemine**.
 
@@ -81,7 +81,7 @@ Kinnituskirjenda aktiveerimise ja **Muutu** klõpsamise pärast kasutatakse uut 
 
 Kliendid võivad kasutada ka **Praegu oleva teema taastamist**, kui nad soovivad veebilehe tagasi praegu määratud teemale. Teema muutmise nagu teise teema valimise korral, võib see ületada veebilehe sisu, seetõttu peaks kliendid seda kinnitamast ainult siis, kui nad mõistavad taastamise toimiku.
 
-### Kasutatud domeenide lisamine:
+### Kasutatud domeenide lisamine: {#adding-custom-domains}
 
 Klienditele on ka võimalus selle plaaniga oma konto lehel isiklikud domeenid lisada. Et võimaldada klientidel kasutada isiklikuid domeene, külastage **Ultimate Multisite > Seaded >** **Domeeni mappimine**.
 
@@ -115,7 +115,7 @@ Siin on täielik näues domain mappingi seadistustel:
 
 **Lisada domeeni** (Add Domain) klõpsamise pärast lisatakse domeen klientide kontole. Kõige, mida nad peavad teostama nüüd, on muuta selle isikliku domeeni DNS-registreid oma domeenregistrari.
 
-### Paroolu muutmine:
+### Paroolu muutmine: {#changing-password}
 
 Konto dashboardis saate klientid parooli ka muuta klõpsates **Muuda parool** (Change Password).
 
@@ -125,7 +125,7 @@ See uueduud ja uued akenditulekust, kus teie kliendid peavad sisestama oma praeg
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Ohtlik alue:
+### Ohtlik alue: {#danger-zone}
 
 Meil on ka kaks valikut, mis on näidatud **Ohtliku alal**, nimega **Saite eemaldamine** ja **Akenditulekust eemaldamine**. Need on nii ohtlikud alal, kuna need toimingud ei saa tagada. Kui kliendid eemaldavad oma veebisaidi või akenditulekuse, nad ei saa seda taastada.
 

@@ -3,11 +3,11 @@ title: Paglibot sa Admin Panel
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Paglibot sa Admin Panel
+# Paglibot sa Admin Panel {#touring-the-admin-panel}
 
 Ang Ultimate Multisite ay naglalayong maging simple at madaling intindihin, pero dahil napakalakas ng tool na ito, makakatulong din itong magkaroon ng guided tour. Lalakbay tayo sa mga admin page para matulungan kang mag-adjust.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ipinapakita ng **Dashboard** ng Ultimate Multisite ang mga pangunahing ulat at analytics gaya ng kita (revenues), aktibidad ng site, paglaki ng membership, bilang ng bisitang tao, at geographic data.
 
@@ -25,61 +25,61 @@ Narito rin ang buong tingin sa network dashboard:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Checkout Forms {#checkout-forms}
 
 Ang **Checkout Forms** ay nagbibigay sa iyo ng kalayaang gumawa ng mga custom registration pages. Maaari mong i-customize ang mga fields, magpasok ng custom classes at scripts, at magtakda ng limitasyon batay sa bansa o lokasyon ng bisita.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products
+## Products {#products}
 
 Ang seksyong **Products** ay kung saan ka gumagawa ng iba't ibang plano, package, at serbisyo para sa iyong network. Tukuyin ang mga presyo, dalas ng pagbili (billing frequencies), at limitasyon at quota sa antas ng produkto.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships
+## Memberships {#memberships}
 
 Ipinapakita ng pahina ng **Memberships** ang lahat ng subscription sa iyong network. Suriin at i-edit ang mga detalye ng subscription kabilang ang mga plano, produkto, halaga ng pagbabayad (billing amounts), at dalas nito, kasama ang kasaysayan ng bayad at timestamps.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments
+## Payments {#payments}
 
 Ang pahinang **Payments** ay nagbibigay sa iyo ng mabilis na tingin sa kasaysayan ng bayad sa buong network mo, kasama ang detalyadong impormasyon tungkol sa mga transaksyon kabilang ang mga partikular na produkto at halaga.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Mga Customer
+## Mga Customer {#customers}
 
 Ang pahinang **Customers** ay nagpapakita ng lahat ng miyembro na naka-register sa iyong network kasama ang pangunahing impormasyon ng user gaya ng pangalan, email address, huling pagpasok (last login), at isang "switch to" link para mag-log in sa kanilang subsite.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Mga Site
+## Mga Site {#sites}
 
 Ang pahinang **Sites** ay naglilista ng lahat ng subsites sa iyong network kasama ang mga site template at mga site na pag-aari ng customer. Madaling i-manage ang mga naka-map na domain, limitasyon at quota, plugins at themes, at mga thumbnail ng site.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Mga Domain
+## Mga Domain {#domains}
 
 Ang pahinang **Domains** ay nakalaan para sa mga custom domain na naka-map sa mga subsites. Bilang super admin, maaari mong manu-manong idagdag o i-map ang mga pangalan ng custom domain at tingnan ang DNS records at logs.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Mga Discount Code
+## Mga Discount Code {#discount-codes}
 
 Ang **Discount Codes** ay nagbibigay-daan sa iyo na gumawa ng coupon codes para magbigay ng diskwento sa iyong mga end-user. Tukuyin ang halaga ng diskwento at targetin ang mga partikular na user o grupo.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Mga Broadcast
+## Mga Broadcast {#broadcasts}
 
 Ang **Broadcasts** ay isang tool para maglabas ng mga anunsyo o magpadala ng pribadong mensahe sa mga user ng iyong subsite. Targetin ang mga partikular na grupo ng user batay sa plano o produktong kanilang sinubukan (subscribed to).
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Mga Setting
+## Mga Setting {#settings}
 
 Ang pahinang **Settings** ay kung saan mo ini-configure ang Ultimate Multisite — mga setting ng pagpaparehistro, bayaran, API at webhooks, pagmamapa ng domain, at iba pang integrasyon.
 
@@ -109,13 +109,13 @@ At ang sites settings page:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events
+## Events {#events}
 
 Pinapanatili ng **Events** page ang talaan ng lahat ng events at logs sa iyong network. Sinusubaybayan nito ang mga aktibidad tulad ng pagbabago ng plano, signups, at iba pang galaw — kapaki-pakinabang ito para sa pagsubaybay sa iyong multisite.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
 Ang **Webhooks** ay nagpapahintulot sa iyo na magpadala ng data sa ibang application. Kapaki-pakinabang ito para sa pagpapadala ng data mula sa Ultimate Multisite patungo sa mga platform tulad ng Zapier.
 

@@ -3,15 +3,15 @@ title: 'Lezione 4: Costruire Modelli di Nicchia'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lezione 4: Creare Template di Nicchia
+# Lezione 4: Creare Template di Nicchia {#lesson-4-building-niche-templates}
 
 I template sono il cuore della tua proposta di valore di nicchia. Un proprietario di uno studio fitness che si iscrive e vede un sito che assomiglia già a un sito di fitness — con orari delle lezioni, profili degli istruttori e le immagini giuste — è molto più propenso a rimanere che uno che vede una tela bianca.
 
-## Dove ci eravamo lasciati
+## Dove ci eravamo lasciati {#where-we-left-off}
 
 Abbiamo un network FitSite funzionante con Ultimate Multisite installato e configurato. Ora creeremo i template che faranno sembrare FitSite un sistema costruito appositamente per le attività di fitness.
 
-## Perché i template di nicchia sono importanti
+## Perché i template di nicchia sono importanti {#why-niche-templates-matter}
 
 I template generici costringono i tuoi clienti a fare il lavoro difficile: capire quali pagine hanno bisogno, quale struttura di contenuti funziona e come far sembrare tutto giusto per il loro settore. I template di nicchia eliminano questa frizione.
 
@@ -24,11 +24,11 @@ Un proprietario di uno studio fitness che si iscrive a FitSite dovrebbe vedere:
 
 Loro devono solo inserire i propri dettagli. Non partono da zero.
 
-## Pianificare i template
+## Pianificare i template {#planning-your-templates}
 
 Prima di costruire, decidi quali template offrire. Per FitSite, ne creeremo tre:
 
-### Template 1: Studio Essenziale
+### Template 1: Studio Essenziale {#template-1-studio-essential}
 
 Per piccoli studi e personal trainer.
 
@@ -39,7 +39,7 @@ Per piccoli studi e personal trainer.
 - Pagina **Contatti** con mappa della posizione e modulo
 - **Design pulito e moderno** con una palette colori adatta al fitness
 
-### Template 2: Gym Pro
+### Template 2: Gym Pro {#template-2-gym-pro}
 
 Per palestre consolidate con più servizi.
 
@@ -50,7 +50,7 @@ Per palestre consolidate con più servizi.
 - Sezione **Testimonianze** sulla homepage
 - **Opzioni di branding più evidenti**
 
-### Template 3: Fitness Chain
+### Template 3: Fitness Chain {#template-3-fitness-chain}
 
 Per operazioni con più sedi.
 
@@ -60,17 +60,17 @@ Per operazioni con più sedi.
 - **Branding centralizzato** con dettagli specifici per la sede
 - **Elenco del personale** per tutte le sedi
 
-## Creare un sito template
+## Creare un sito template {#building-a-template-site}
 
 In Ultimate Multisite, un template è semplicemente un sito WordPress configurato nel modo in cui vuoi che appaiano i nuovi siti dei clienti. Ecco come crearne uno:
 
-### Passo 1: Creare il sito template
+### Passo 1: Creare il sito template {#step-1-create-the-template-site}
 
 1. Vai su **Sites > Add New** nel tuo network admin
 2. Crea un sito chiamato `template-studio-essential`
 3. Questo sito diventerà la tua tela di lavoro
 
-### Passo 2: Installare e configurare il tema
+### Passo 2: Installare e configurare il tema {#step-2-install-and-configure-the-theme}
 
 Passa al dashboard del sito template e:
 
@@ -82,7 +82,7 @@ Passa al dashboard del sito template e:
 Scegli un tema abbastanza flessibile da apparire bene per il fitness, ma non così complesso da non poter essere gestito dai tuoi clienti. Temi come Astra, GeneratePress o Kadence funzionano bene perché sono leggeri, personalizzabili e ben supportati.
 :::
 
-### Passo 3: Creare le pagine
+### Passo 3: Creare le pagine {#step-3-create-the-pages}
 
 Costruisci ogni pagina con:
 
@@ -92,7 +92,7 @@ Costruisci ogni pagina con:
 
 Rendi i contenuti segnaposto istruttivi per quanto possibile. Invece di testo riempitivo generico, scrivi contenuti come: "Sostituisci questo con una breve descrizione del tuo studio e ciò che lo rende speciale. Menziona la tua filosofia di allenamento, gli anni di esperienza o cosa possono aspettarsi i clienti."
 
-### Passo 4: Configurare i plugin
+### Passo 4: Configurare i plugin {#step-4-configure-plugins}
 
 Installa e attiva i plugin di cui hanno bisogno gli studi fitness:
 
@@ -100,7 +100,7 @@ Installa e attiva i plugin di cui hanno bisogno gli studi fitness:
 - Un plugin per i moduli di contatto
 - Un plugin SEO (pre-configurato con valori predefiniti rilevanti per il fitness)
 
-### Passo 5: Segnalarlo come template
+### Passo 5: Segnalarlo come template {#step-5-mark-as-template}
 
 1. Vai su **Ultimate Multisite > Sites**
 2. Modifica il sito template
@@ -108,7 +108,7 @@ Installa e attiva i plugin di cui hanno bisogno gli studi fitness:
 
 Ripeti questo processo per ogni template che desideri offrire.
 
-## Checklist sulla qualità del template
+## Checklist sulla qualità del template {#template-quality-checklist}
 
 Prima di rendere un template disponibile, verifica:
 
@@ -121,7 +121,7 @@ Prima di rendere un template disponibile, verifica:
 - [ ] Non ci sono link rotti o asset mancanti
 - [ ] La velocità di caricamento della pagina è accettabile
 
-## Il network FitSite finora
+## Il network FitSite finora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Pronto per la configurazione dei piani (prossima lezione)
 ```
 
-## Cosa abbiamo costruito in questa lezione
+## Cosa abbiamo costruito in questa lezione {#what-we-built-this-lesson}
 
 - **Tre template specifici per nicchia** progettati per diverse dimensioni di attività fitness
 - **Contenuti e immagini adatti al fitness** che fanno sembrare la piattaforma costruita appositamente

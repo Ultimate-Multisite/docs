@@ -1,138 +1,147 @@
 ---
-title: Orodha ya Mabadiliko ya Uunganishaji wa WooCommerce
+title: Kumbukumbu ya Mabadiliko ya Ujumuishaji wa WooCommerce
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# Historia ya Mabadiliko za Uunganishaji na WooCommerce
+# Kumbukumbu ya Mabadiliko ya WooCommerce Integration {#woocommerce-integration-changelog}
 
-Toleo 2.0.6 - Iliachwa tarehe 2026-01-16
-* Uboreshaji: Kuunganisha usajili wa msingi (core subscriptions) katika addon. Sasa haihitaji tena extension ya Woocommerce Subscriptions.
+Toleo 2.2.0 - Limetolewa tarehe 2026-07-01
+* Mpya: Kiasi cha kodi cha Ultimate Multisite sasa kinaonekana kama mistari tofauti ya ada za WooCommerce wakati wa checkout, na kufanya jumla za kodi ziwe wazi zaidi kabla ya malipo.
+* Mpya: Kimeongezwa mpangilio wa kuchagua kujiunga wa "Suspend Memberships Immediately on Failed Renewals" na kichujio cha `wu_woo_suspend_on_payment_failure` kwa tovuti zinazotaka kusimamisha uanachama baada ya renewal kushindwa wakati wa dirisha la kujaribu tena la WooCommerce Subscriptions.
+* Marekebisho: Zimeoanishwa hali za WooCommerce Subscription ambazo zingeweza kubaki nje ya ulandanishi na membership za Ultimate Multisite baada ya renewal zilizoshindwa au kurejeshwa.
+* Marekebisho: Imeongezwa sarafu ya duka la WooCommerce kwenye orodha ya sarafu ya Ultimate Multisite ilipokuwa haipo.
+* Marekebisho: Zimehifadhiwa maelezo ya bili ya mteja wakati wa kuelekeza subscribers kwenda WooCommerce checkout.
+* Imeboreshwa: Ulinganifu na Jetpack Autoloader 5 umeongezwa.
+* Imeboreshwa: Uundaji wa kifurushi cha toleo umesafishwa ili zip za GitHub na marketplace ziepuke saraka za staging zilizowekwa ndani na faili za maendeleo.
 
-Toleo 2.0.5 - Iliachwa tarehe 2026-01-09
-* Uboreshaji: Kupakia tafsiri kutoka API ya glotpress.
-* Kurekebisha: Hitilafu kubwa kwenye jengo la kurasa (page builders) baadhi.
-* Kurekebisha: Kuelekeza mara kwa mara (infinite redirect) wakati mteja ni mwanachama wa tovuti kuu.
+Toleo 2.0.6 - Limetolewa tarehe 2026-01-16
+* Uboreshaji: Jumuisha subscriptions za msingi katika addon. Haihitaji tena extension ya Woocommerce Subscriptinos.
 
-Toleo 2.0.4 - Iliachwa tarehe 2025-11-14
+Toleo 2.0.5 - Limetolewa tarehe 2026-01-09
+* Uboreshaji: Pakia tafsiri kutoka glotpress API.
+* Marekebisho: Hitilafu mbaya katika baadhi ya page builders.
+* marekebisho: Uelekezaji upya usio na mwisho wakati mteja ni mwanachama wa tovuti kuu.
+
+Toleo 2.0.4 - Limetolewa tarehe 2025-11-14
 * Imeongezwa: Tafsiri kwa lugha nyingi zaidi.
-* Imebadilishwa: Jina limebadilishwa kuwa Ultimate Multisite: Woocommerce Integration.
-* Imeongezwa: Upatanisho na Woocommerce 10.2.1.
-* Imeongezwa: Upatanisho na Woocommerce Subscriptions 7.7.0.
-* Kurekebisha: Upatanisho na PHP 8.4
-* Kurekebisha: Kuelekeza lakini wakati hakuna ukurasa wa akaunti ya WC.
+* Imebadilishwa: Imepewa jina jipya Ultimate Multisite: Woocommerce Integration.
+* Imeongezwa: Ulinganifu na Woocommerce 10.2.1.
+* Imeongezwa: Ulinganifu na Woocommerce Subscriptions 7.7.0.
+* Marekebisho: Ulinganifu na PHP 8.4
+* Marekebisho: Elekeza upya lakini wakati hakuna ukurasa wa WC account uliopo.
 
-Toleo 2.0.3 - Iliachwa tarehe 2025-08-13
-* Imebadilishwa: Kuwezesha masasisho ya kiotomatiki na soko jipya.
+Toleo 2.0.3 - Limetolewa tarehe 2025-08-13
+* Imebadilishwa: Masasisho ya kiotomatiki yamewezeshwa na marketplace mpya.
 
-Toleo 2.0.2 - Iliachwa tarehe 2025-07-05
-* Imebadilishwa: Jina limebadilishwa kuwa Multisite Ultimate: Woocommerce Integration.
-* Imeongezwa: Upatanisho na Woocommerce 9.8.1.
-* Imeongezwa: Upatanisho na Woocommerce Subscriptions 7.3.0.
-* Kurekebisha: Kufuta usajili na mteja.
-* Kurekebisha: Hitilafu kubwa wakati wa kutumia block ya malipo (checkout block).
-* Uboreshaji: Sasa inapatanisha na meza za agizo maalum za malipo ya juu ya WooCommerce.
-* Kurekebisha: Kufuta kwenye malipo ya WooCommerce bado kunaweza kuboresha uanachama.
+Toleo 2.0.2 - Limetolewa tarehe 2025-07-05
+* Imebadilishwa: Imepewa jina jipya Multisite Ultimate: Woocommerce Integration.
+* Imeongezwa: Ulinganifu na Woocommerce 9.8.1.
+* Imeongezwa: Ulinganifu na Woocommerce Subscriptions 7.3.0.
+* Marekebisho: Kughairi subscription na mteja.
+* Marekebisho: Hitilafu mbaya wakati wa kutumia checkout block.
+* Uboreshaji: Sasa inalingana na majedwali maalum ya oda ya utendaji wa juu ya Woocommerce.
+* Marekebisho: Kughairi kwenye WooCommerce checkout bado kunaweza kuboresha membership.
 
-Toleo 2.0.1 - Iliachwa tarehe 2023-08-09
+Toleo 2.0.1 - Limetolewa tarehe 2023-08-09
 
-* Imeongezwa: Upatanisho na Woocommerce 7.9.0.
-* Imeongezwa: Upatanisho na Woocommerce Subscriptions 5.3.0.
-* Imeongezwa: Usaidizi wa masasisho ya uanachama.
-* Imeongezwa: Taarifa kuhusu majaribio (trials) na ada za upangaaji katika Woocommerce.
-* Imeongezwa: Kutambua bidhaa za Ultimate Multisite WooCommerce kwa kutumia meta value.
-* Imeongezwa: Kuweka marekebisho ya mara moja ili kuweka bidhaa zote za WooCommerce zinazohusiana na Ultimate Multisite.
-* Imeongezwa: Kuondoa bidhaa zilizoundwa na Ultimate Multisite kutoka kwenye orodha ya WooCommerce.
-* Uboreshaji: Kuunda punguzo la WooCommerce lisilojirudia ili kutumika kwenye gari la malipo (cart).
-* Uboreshaji: Kurudisha punguzo linalojirudia kwenye bidhaa ya WooCommerce.
-* Uboreshaji: Kuongeza lebo ya punguzo linalojirudia kwenye bidhaa ya WooCommerce.
-* Uboreshaji: Kuhakikisha aina ya bidhaa kwenye malipo.
-* Kurekebisha: Kudumisha hadhi ya uanachama wakati wa mchakato wa kupunguza (downgrade).
-* Kurekebisha: Kuangalia kama usajili upo ili kuepuka makosa wakati wa kufuta.
-* Kurekebisha: Kuongeza tarehe ya kuanza usajili kutumika katika usajili wa WooCommerce.
-* Ndani: Kuimarisha mchakato mpya wa PHP 8.1.
+* Imeongezwa: Ulinganifu na Woocommerce 7.9.0.
+* Imeongezwa: Ulinganifu na Woocommerce Subscriptions 5.3.0.
+* Imeongezwa: Usaidizi kwa masasisho ya membership.
+* Imeongezwa: Arifa kuhusu majaribio na ada za usanidi katika Woocommerce.
+* Imeongezwa: Utambuzi wa bidhaa za Ultimate Multisite Woocommerce kwa thamani ya meta.
+* Imeongezwa: Limeingizwa rekebisho la mara moja kuweka alama kwa bidhaa zote za Woocommerce zinazohusiana na Ultimate Multisite.
+* Imeongezwa: Bidhaa zilizoundwa na Ultimate Multisite zimeondolewa kutoka orodha ya Woocommerce.
+* Uboreshaji: Imeundwa punguzo la Woocommerce lisilojirudia ili kutumika kwenye cart.
+* Uboreshaji: Punguzo linalojirudia limerejeshwa kwenye bidhaa ya Woocommerce.
+* Uboreshaji: Imeongezwa lebo ya punguzo linalojirudia kwenye bidhaa ya Woocommerce.
+* Uboreshaji: Imehakikishwa aina ya bidhaa kwenye checkout.
+* Marekebisho: Hali ya membership imedumishwa wakati wa mchakato wa kushusha kiwango.
+* Marekebisho: Imeangaliwa kama subscription ipo ili kuepuka hitilafu wakati wa mchakato wa kughairi.
+* Marekebisho: Imeongezwa tarehe ya kuanza kwa subscription ili itumike katika Woocommerce subscriptions.
+* Ndani: Utekelezaji wa mchakato mpya wa kujenga wa PHP 8.1.
 
-Toleo 2.0.0 - Kuandikwa upya kabisa.
+Toleo 2.0.0 - Uandishi upya kamili.
 
-* Imeongezwa: Njia ya kufuta mchakato ili kuondoa usajili wa woo wakati wa kubadilisha gateway au kufuta uanachama;
-* Imeongezwa: Msimamizi wa kupunguza na kuboresha uanachama;
-* Uboreshaji: Kupakia vyanzo vya data vya woocommerce kwenye fomu ya sasisho la mteja katika subsites ili kuruhusu sasisho la akaunti;
-* Uboreshaji: Kuhakikisha kupakia gari la malipo la WooCommerce ikiwa halipo;
-* Uboreshaji: Kuhakikisha tupo kwenye meza za tovuti kuu tunapopitia malipo;
-* Uboreshaji: Kuifanya agizo la upya la Ultimo liwe kulingana na thamani ya agizo la usajili wa WooCommerce na sio kutoka kwa malipo ya mwisho;
-* Kurekebisha: Kwenda kwenye kiungo cha kitufe cha WU Membership;
-* Kurekebisha: Kuweka agizo la Ultimo kama limefanywa malipo wakati usajili wa WooCommerce umefanywa malipo ya upya;
-* Ujenzi: Kuongeza MPB kama jengo (builder);
+* Imeongezwa: Mbinu ya kuchakata kughairi ili kuondoa woo subscription wakati wa kubadilisha gateway au kughairi membership;
+* Imeongezwa: Handler wa kushusha na kupandisha viwango vya memberships;
+* Uboreshaji: Pakia vitegemezi vya woocommerce kwenye fomu ya kusasisha mteja katika subsite ili kuruhusu sasisho la account;
+* Uboreshaji: Pakia cart ya Woocommerce kwa usahihi ikiwa haipo;
+* Uboreshaji: Hakikisha tupo kwenye majedwali ya tovuti kuu wakati wa kuchakata checkout;
+* Uboreshaji: Fanya oda ya renewal ya Ultimo itegemee thamani ya oda ya Woocommerce subscription na si malipo ya mwisho;
+* Marekebisho: Kiungo cha kitufe cha Nenda kwenye WU Membership;
+* Marekebisho: Weka oda ya Ultimo kama imelipwa wakati renewal ya Woocommerce subscriptions imelipwa;
+* Ujenzi: Ongeza MPB kama builder;
 
-Toleo 2.0.0-beta-5 - Iliachwa tarehe 2022-01-21
+Toleo 2.0.0-beta-5 - Limetolewa tarehe 2022-01-21
 
-* Ndani: Kuongeza vipengele vya hooks na filters generator;
-* Ndani: Kuongeza stubs za Ultimate Multisite kwa ubora wa maisha ya developer;
-* Kurekebisha: Kuzuia kuundwa kwa bidhaa nyingi bila kuhitajika;
+* Ndani: Generator ya hooks na filters imeongezwa;
+* Ndani: Stubs za Ultimate Multisite zimeongezwa kwa kuboresha maisha ya developer;
+* Imerekebishwa: Zuia uundaji wa bidhaa nyingi wakati si lazima;
 
 Toleo 2.0.0-beta.4 - 2021-09-23
 
-* Kurekebisha: Kuhitaji WooCommerce kuwa hai katika mtandao badala ya tovuti kuu pekee;
-* Uboreshaji: Kuongeza filter ili kuruhusu addon kutumika kama mu-plugin;
+* Marekebisho: kuhitaji WooCommerce iwe active kwenye network badala ya tovuti kuu pekee;
+* Uboreshaji: kimeongezwa kichujio kuruhusu add-on itumike kama mu-plugin;
 
 Toleo 2.0.0-beta.3 - 2021-05-28
 
-* Kurekebisha: Udhibiti wa ufikiaji wa dashboard ulikuwa mkali sana;
-* Uboreshaji: Kuongeza viungo vya msaada wa WooCommerce kwenye menyu ya juu ya Ultimate Multisite;
+* Marekebisho: udhibiti wa ufikiaji wa dashboard ulikuwa mkali kupita kiasi;
+* Uboreshaji: Viungo vya msaada vya WooCommerce vimeongezwa kwenye top-menu ya Ultimate Multisite;
 
 Toleo 2.0.0-beta.2 - 2021-05-04
 
-* Uboreshaji: Kuunda malipo yanayosubiri (pending payments) kwenye Ultimo wakati wa kuunda agizo la upya la WCS;
-* Uboreshaji: Kujaza mapima ya bili na data ya mteja wa Ultimate Multisite;
-* Uboreshaji: Kuongeza mapima ya bili kwa gateways;
+* Uboreshaji: huunda malipo yanayosubiri kwenye Ultimo wakati wa uundaji wa oda ya renewal ya WCS;
+* Uboreshaji: hujaza mapema fields za bili kwa data ya mteja wa Ultimate Multisite;
+* Uboreshaji: huongeza tena fields za bili kwa gateways;
 
 Toleo 2.0.0-beta.1 - 2021-05-04
 
-* Toleo la beta la awali
+* Toleo la awali la beta
 
--- Toleo za Zamani --
+-- Matoleo ya Zamani --
 
 Toleo 1.2.6 - 26/03/2020
 
-* Kurekebisha: Kutokubaliana kidogo na matoleo mapya ya WooCommerce Subscriptions;
+* Imerekebishwa: Kutolingana kidogo na matoleo mapya zaidi ya WooCommerce Subscriptions;
 
 Toleo 1.2.5 - 26/08/2019
 
-* Kurekebisha: Hitilafu kwenye toleo lililopita;
+* Imerekebishwa: Hitilafu kwenye toleo lililotangulia;
 
 Toleo 1.2.4 - 22/08/2019
 
-* Kuboresha: Kuongeza chaguo la kuelekeza kwenye skrini ya malipo ya WooCommerce baada ya uunganishaji mara moja;
+* Imeboreshwa: Imeongezwa chaguo la kuelekeza kwenye skrini ya WooCommerce checkout mara moja baada ya integration;
 
 Toleo 1.2.3 - 26/05/2019
 
-* Kurekebisha: Barua pepe ya malipo kwa WooCommerce ilipotea katika hali chache;
+* Imerekebishwa: Barua pepe ya malipo ya WooCommerce ilitoweka katika baadhi ya edge cases;
 
 Toleo 1.2.2 - 27/02/2019
 
-* Imeongezwa: Usaidizi wa ada za upangaaji (setup fees) kwenye uunganishaji wa WooCommerce Subscription;
+* Imeongezwa: Usaidizi wa ada za usanidi kwenye integration ya WooCommerce Subscription;
 
 Toleo 1.2.1 - 17/11/2018
 
-* Kurekebisha: Masuala ya upatanisho na toleo la Ultimate Multisite 1.9.0;
+* Imerekebishwa: Masuala ya ulinganifu na toleo la Ultimate Multisite 1.9.0;
 
 Toleo 1.2.0 - 10/09/2018
 
-* Kuboresha: URL mpya ya masasisho kwa addons;
+* Imeboreshwa: URL mpya ya masasisho kwa add-ons;
 * Imeongezwa: Usaidizi wa beta kwa WooCommerce Subscription;
 
 Toleo 1.1.2 - 11/02/2018
 
-* Kurekebisha: Kiungo cha Lipa (Pay) kinatengenezwa kwa njia ya kiotomatiki ili kujibu mabadiliko kwenye endpoints za WooCommerce;
-* Kuboresha: Sasa tunalazimisha hadhi ya kukamilika kwa maagizo yetu wakati `payment_completed` inaitwa ili kuhakikisha hooks zetu za upya zinatembea wakati zinapaswa;
+* Imerekebishwa: Kiungo cha Kulipa kinachozalishwa kidinamikia ili kujibu mabadiliko ya endpoints za WooCommerce;
+* Imeboreshwa: Sasa tunalazimisha hali iliyokamilika kwa oda zetu wakati payment_completed inapoitwa ili kuhakikisha hooks zetu za renewal zinaendeshwa wakati zinapopaswa;
 
 Toleo 1.1.1 - 24/01/2018
 
-* Kurekebisha: Sasa pia inangalia kama WooCommerce imefuatuliwa tu kwenye tovuti kuu;
-* Kurekebisha: Kuunganisha over-loadings ili kuruhusu kuunda maagizo yakiwa na kodi;
+* Imerekebishwa: Sasa pia hukagua kuona ikiwa WooCommerce imewashwa tu kwenye tovuti kuu;
+* Imerekebishwa: Imejumuisha upakiaji wa ziada ili kuruhusu uundaji wa oda kujumuisha kodi;
 
 Toleo 1.1.0 - 04/11/2017
 
-* Kurekebisha: Sasa lebo ya kitufe cha uunganishaji inabadilika kweli ili kuonyesha mipangilio. Inahitaji Ultimate Multisite 1.5.0;
-* Kurekebisha: Uunganishaji wa WooCommerce sasa unafanya kazi hata kama WooCommerce haiko hai kwenye mtandao na imefuatuliwa tu kwenye tovuti kuu;
+* Imerekebishwa: Sasa lebo ya kitufe cha ujumuishaji hubadilika kweli ili kuakisi mipangilio. Inahitaji Ultimate Multisite 1.5.0;
+* Imerekebishwa: Ujumuishaji wa WooCommerce sasa hufanya kazi hata kama WooCommerce haijawashwa kwenye mtandao na imewashwa tu kwenye tovuti kuu;
 
 1.0.0 - Toleo la Awali

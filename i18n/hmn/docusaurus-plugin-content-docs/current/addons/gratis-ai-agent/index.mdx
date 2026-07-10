@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent yog ib tug WordPress AI pabcuam uas ua haujlwm tau nws tus kheej, muaj peev xwm npaj, tsim, thiab tswj cov WordPress site tag nrho los ntawm cov lus qhia siv lus ntuj. Nws nthuav tawm ib txheej **peev xwm** uas muaj qauv meej — yog tej yam haujlwm cais, sim tau, uas tus agent hu tau los siv — npog txhua yam txij kev tswj cov ntsiab lus mus txog kev kho design system. Version 1.9.0 ntxiv peev xwm tsim cov ntsiab lus, xyuas nplooj ntawv qhov pom los ntawm client-side screenshots, tsib hom agent uas twb muaj los nrog, thiab feature flags rau kev tswj kev nkag thiab branding.
+
+## Cov Yam Tseem Ceeb {#key-features}
+
+- **Abilities system** — ib phau catalogue ntawm cov haujlwm uas faib ua module, nthuav tau ntxiv, uas tus agent hu tau rau hauv koj qhov WordPress installation
+- **Kev Tswj Cov Ntsiab Lus** — tsim posts thiab pages (nrog rau kev muab page templates), tsim ntau posts ua ke hauv ib zaug hu, teeb featured images, thiab tsim contact forms
+- **Kev Xyuas Qhov Pom** — ntes screenshots ntawm cov pages uas tab tom khiav, piv qhov txawv ua ntej/tom qab, thiab tau txais AI tsim kev tshuaj xyuas design uas npog layout, typography, xim, thiab accessibility
+- **Tsib tus agents uas twb muaj los nrog** — Content Writer, Site Builder, Design Studio, Plugin Manager, thiab Support Assistant; hloov tau ntawm Agent Picker hauv chat header
+- **Feature flags** — cov toggle rau access-control thiab branding hauv Settings → Feature Flags rau role restrictions, white-label naming, thiab widget customisation
+- **Kev tswj Custom Post Type** — register, sau npe, thiab rho tawm custom post types nrog persistence hla restarts
+- **Kev tswj Custom Taxonomy** — register, sau npe, thiab rho tawm custom taxonomies nrog persistence
+- **Design System peev xwm** — txhaj custom CSS, tswj curated block patterns, teeb site logo, thiab siv theme.json presets
+- **Kev tswj Global Styles** — nyeem thiab sau theme.json values rau colour palettes, typography, spacing, thiab lwm yam ntxiv
+- **Kev tswj Navigation Menu** — tsim thiab hloov navigation menus thiab lawv cov items raws programmatically
+- **Kev Tswj Options** — nyeem thiab sau WordPress options nrog ib daim safety blocklist uas twb muaj los nrog los tiv thaiv cov settings tseem ceeb
+- **Installable Abilities Registry** — nrhiav thiab qhib ntxiv ability packs yam tsis tas hloov core plugin files
+- **Site Builder Orchestration v2** — site build plans muaj ntau kauj ruam nrog plugin discovery, progress tracking, thiab error recovery
+- **WP-CLI benchmark command** — khiav agent capability benchmark suite ntawm command line rau CI thiab model evaluation
+
+## Yam Yuav Tsum Muaj {#requirements}
+
+- WordPress 6.0 lossis siab dua
+- PHP 8.1 lossis siab dua
+- WordPress Multisite (network-activated) lossis single-site installation
+- Ib qho AI provider connector plugin uas active (Anthropic, OpenAI, lossis compatible)
+
+## Kev Nruab {#installation}
+
+1. Upload plugin files mus rau `/wp-content/plugins/gratis-ai-agent`
+2. Activate plugin los ntawm **Plugins** screen hauv WordPress
+3. Mus rau **Gratis AI Agent → Settings** thiab txuas koj tus AI provider
+4. (Yeem) Xauj **Abilities Registry** los nruab ability packs ntxiv
+
+## Pib Sai {#quick-start}
+
+Thaum activated thiab txuas rau ib tug AI provider lawm, qhib **Gratis AI Agent** panel hauv WordPress admin sidebar. Sau ib qho lus qhia siv lus ntuj thiab tus agent yuav npaj thiab ua cov kauj ruam uas xav tau siv nws cov peev xwm uas muaj.
+
+**Piv txwv lus qhia:**
+
+```
+Tsim ib qho "Portfolio" custom post type nrog ib qho "Project Category" taxonomy.
+```
+
+```
+Txhaj ib qho dark-mode colour palette rau hauv theme thiab teeb primary colour rau #1a1a2e.
+```
+
+```
+Tsim ib lub website rau tsev noj mov nrog online menu, booking form, thiab contact page.
+```
+
+## Kev Piav Qhia Abilities {#abilities-overview}
+
+Abilities yog cov haujlwm me tshaj uas tus agent ua tau. Txhua ability yog ib qho registered PHP class uas nthuav tawm ib schema (parameters thiab return types) uas tus agent nyeem thaum runtime. Abilities raug muab faib ua tej cheeb tsam ua haujlwm:
+
+| Cheeb tsam | Abilities |
+|---|---|
+| **Kev Tswj Cov Ntsiab Lus** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Kev Xyuas Qhov Pom** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Design System** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Kev Tswj Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Installable Abilities** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Saib [Abilities Reference](./abilities) rau tag nrho cov ntaub ntawv parameters thiab cov piv txwv siv.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent muaj ib tsev neeg command `wp gratis-ai-agent` rau kev khiav benchmarks thiab tswj abilities ntawm command line. Saib [WP-CLI Reference](./wp-cli) rau daim command list tag nrho.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Configuration {#configuration}
+
+Txhua settings nyob hauv **Gratis AI Agent → Settings** hauv WordPress admin:
+
+| Setting | Lus piav qhia |
+|---|---|
+| **AI Provider** | Xaiv thiab configure tus AI provider connector uas active |
+| **Model** | Xaiv language model uas yuav siv rau agent sessions |
+| **Max Tokens** | Token budget rau ib request (default 4096) |
+| **Ability Timeout** | Cov seconds siab tshaj uas ib qho ability khiav tau (default 30) |
+| **Debug Logging** | Log ability calls thiab agent reasoning rau WordPress debug log |
+
+## Options Management Safety Blocklist {#options-management-safety-blocklist}
+
+Lub peev xwm Options Management muaj ib daim ntawv blocklist uas twb muaj los lawm, uas tiv thaiv tus agent kom tsis txhob nyeem lossis sau cov WordPress options uas muaj ntaub ntawv rhiab. Daim blocklist pib ntawd muaj xws li:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (cov URL options — siv ib lub cuab yeej migration tshwj xeeb rau cov no)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (cov secret keys)
+- `active_plugins`, `template` (kev qhib plugin/theme — siv cov peev xwm tshwj xeeb)
+- Cov ntaub ntawv nkag payment gateway thiab API keys uas cov plugins uas twb nruab lawm tau register
+
+Muaj peev xwm ntxiv entries ntxiv tau los ntawm `gratis_ai_agent_options_blocklist` filter.
+
+## Hooks thiab Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — raug tua tom qab ib lub peev xwm raug register, txais lub npe ability class
+- `gratis_ai_agent_plan_started` — raug tua thaum ib qho site builder plan pib khiav
+- `gratis_ai_agent_plan_completed` — raug tua thaum ib qho plan xaus tiav zoo
+- `gratis_ai_agent_plan_failed` — raug tua thaum ib qho plan ntsib ib qho yuam kev uas kho tsis tau
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — hloov daim ntawv teev cov peev xwm uas register lawm ua ntej tus agent thauj nws
+- `gratis_ai_agent_options_blocklist` — nthuav lossis txo daim options safety blocklist
+- `gratis_ai_agent_benchmark_questions` — ntxiv cov lus nug benchmark uas koj tsim rau hauv pawg ntsuam xyuas
+- `gratis_ai_agent_plan_plugins` — hloov daim ntawv nrhiav plugin thaum tsim site plan
+
+## Kev Txhawb Nqa {#support}
+
+Yog xav tau kev txhawb nqa, mus saib [ultimatemultisite.com](https://ultimatemultisite.com) lossis qhib ib qho issue hauv plugin repository.
+
+## Changelog {#changelog}
+
+Saib [Changelog](./changelog) rau tag nrho keeb kwm version.

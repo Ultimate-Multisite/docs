@@ -3,17 +3,17 @@ title: 'Lição 9: Precificação para Lucro'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lição 9: Precificação para Lucro
+# Lição 9: Precificação para Lucro {#lesson-9-pricing-for-profit}
 
 Na Lição 5, definimos os preços iniciais para os planos do FitSite. Agora, vamos refinar a estratégia de preços com técnicas que aumentam a receita, incentivam upgrades e reduzem o *churn*.
 
-## Onde Paramos
+## Onde Paramos {#where-we-left-off}
 
 O FitSite já possui planos, templates, *checkout*, branding e *onboarding* configurados. O preço inicial era de $49/$99/$199 por mês. Agora, vamos fazer com que essa precificação trabalhe mais duro.
 
-## Princípios de Precificação para Plataformas de Nicho
+## Princípios de Precificação para Plataformas de Nicho {#pricing-principles-for-niche-platforms}
 
-### Precifique pelo Valor, Não pelo Custo
+### Precifique pelo Valor, Não pelo Custo {#price-on-value-not-cost}
 
 Seus custos de hospedagem podem ser de $5 a $15 por site do cliente. Isso não significa que seu preço deva ser $20. Você não está vendendo hospedagem. Você está vendendo:
 
@@ -24,7 +24,7 @@ Seus custos de hospedagem podem ser de $5 a $15 por site do cliente. Isso não s
 
 Precifique com base no valor que você entrega, e não no custo para entregar.
 
-### Ancore em Alternativas
+### Ancore em Alternativas {#anchor-to-alternatives}
 
 Quando um dono de estúdio de fitness avalia o FitSite, ele compara com:
 
@@ -34,7 +34,7 @@ Quando um dono de estúdio de fitness avalia o FitSite, ele compara com:
 
 Com $49-$199/mês, o FitSite é mais barato que um desenvolvedor, mais capaz que construtores genéricos e infinitamente melhor do que não ter um site.
 
-## Implementando Variações de Preço
+## Implementando Variações de Preço {#implementing-price-variations}
 
 A precificação anual incentiva o comprometimento e reduz o *churn*. Navegue até a aba **Price Variations** de cada plano e adicione as opções anuais:
 
@@ -46,12 +46,12 @@ A precificação anual incentiva o comprometimento e reduz o *churn*. Navegue at
 
 Adicione um campo **Period Selection** ao seu formulário de *checkout* para que os clientes possam alternar entre cobrança mensal e anual. Veja [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Por Que a Precificação Anual Funciona
+### Por Que a Precificação Anual Funciona {#why-annual-pricing-works}
 
 - **Para você**: Dinheiro adiantado, menor *churn* (clientes que pagam anualmente têm menos probabilidade de cancelar no meio do período)
 - **Para eles**: Economia real, previsibilidade orçamentária
 
-## Taxas de Configuração (*Setup Fees*)
+## Taxas de Configuração (*Setup Fees*) {#setup-fees}
 
 Considere uma taxa de configuração única para planos que incluem configuração manual:
 
@@ -61,7 +61,7 @@ Considere uma taxa de configuração única para planos que incluem configuraç�
 
 Configure as taxas de configuração na seção de preços de cada plano. Veja [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) para mais detalhes.
 
-## Períodos de Teste (*Trial Periods*)
+## Períodos de Teste (*Trial Periods*) {#trial-periods}
 
 Oferecer um teste reduz o atrito no cadastro, mas introduz o risco de não conversão. Para o FitSite:
 
@@ -70,11 +70,11 @@ Oferecer um teste reduz o atrito no cadastro, mas introduz o risco de não conve
 
 Configure o teste na seção de preços do plano Starter, ativando o *toggle* **Offer Trial** e definindo a duração para 7 dias.
 
-### Fazendo os Testes Converterem
+### Fazendo os Testes Converterem {#making-trials-convert}
 
 Um teste só funciona se o cliente vivenciar valor durante o período de teste. Sua sequência de *onboarding* (Lição 8) é crítica aqui — os e-mails de boas-vindas devem ser programados para gerar engajamento dentro da janela de 7 dias.
 
-## Códigos de Desconto
+## Códigos de Desconto {#discount-codes}
 
 Crie códigos de desconto estratégicos para propósitos específicos:
 
@@ -88,7 +88,7 @@ Navegue até **Ultimate Multisite > Discount Codes** para criar estes. Veja [Cre
 Os descontos devem ser ferramentas estratégicas, não itens permanentes. Se todo mundo recebe um desconto, não é um desconto — é o seu preço real. Use-os para campanhas específicas, indicações e promoções por tempo limitado.
 :::
 
-## Tratamento de Impostos (*Tax Handling*)
+## Tratamento de Impostos (*Tax Handling*) {#tax-handling}
 
 Se você opera em uma jurisdição que exige a cobrança de impostos:
 
@@ -98,7 +98,7 @@ Se você opera em uma jurisdição que exige a cobrança de impostos:
 
 Veja [Tax Handling](/user-guide/payment-gateways/tax-handling) para configuração detalhada. Se você atende clientes internacionalmente, considere o [VAT addon](/addons/vat) para conformidade com a UE.
 
-## Revisando Sua Precificação
+## Revisando Sua Precificação {#reviewing-your-pricing}
 
 Após o lançamento, revise a precificação trimestralmente. Observe:
 
@@ -107,7 +107,7 @@ Após o lançamento, revise a precificação trimestralmente. Observe:
 - **Churn por plano**: Se os clientes anuais têm menos *churn*, promova a precificação anual com mais força
 - **Precificação da concorrência**: Quanto as alternativas estão cobrando? Você está posicionado corretamente?
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Precificação anual** com 20% de desconto para incentivar o comprometimento
 - **Taxas de configuração** nos níveis mais altos para cobrir o esforço de *onboarding*

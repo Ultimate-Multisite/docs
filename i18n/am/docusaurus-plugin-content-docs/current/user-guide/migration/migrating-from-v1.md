@@ -3,9 +3,9 @@ title: ከV1 ወደ መሸጋገር
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# ከV1 ወደ ማሻገር
+# ከV1 ወደ ማሻገር {#migrating-from-v1}
 
-## Ultimate Multisite ከቀድሞው 1.x የሪልስ ስብስብ ወደ 2.x የሪልስ ስብስብ ተቀይሯል።
+## Ultimate Multisite ከቀድሞው 1.x የሪልስ ስብስብ ወደ 2.x የሪልስ ስብስብ ተቀይሯል። {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite version 2.0 እና ከዚያ በላይ የኮድ መሰረቱ ሙሉ በሙሉ ተለውጧል (complete rewrite of the codebase)። ይህ ማለት በድሮው ስሪት እና በአዲሱ ስሪት መካከል ብዙ የተጋራ ነገር የለም ማለት ነው። በዚህ ምክንያት፣ ከ1.x ወደ 2.x ሲያድጉ፣ መረጃዎ አዲሱ ስሪት ሊረዳው በሚችል ቅርጸት እንዲዛወር (migrate) ማድረግ ያስፈልጋል።
 
@@ -15,7 +15,7 @@ Ultimate Multisite version 2.0 እና ከዚያ በላይ የኮድ መሰረቱ
 
 _**ጠቃሚ ማሳሰቢያ፡ ከversion 1.x ወደ version 2.0 ማሻገር ከመጀመርዎ በፊት እባክዎ የsite databaseዎን ምትኬ (backup) መፍጠርዎን ያረጋግጡ።**_
 
-## የመጀመሪያ እርምጃዎች
+## የመጀመሪያ እርምጃዎች {#first-steps}
 
 የመጀመሪያው እርምጃ የplugin .zip ፋይልን ማውረድ እና version 2.0ን በnetwork admin dashboardዎ ላይ መጫን ነው።
 
@@ -51,7 +51,7 @@ _**ማስታወሻ፡ በMultisiteዎ ላይ Ultimate Multisite 1.x ካስጫኑ
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## አሁን፣ ማሻገሩ (Migration)
+## አሁን፣ ማሻገሩ (Migration) {#now-the-migration}
 
 የmigrator በውስጡ የደህንነት ባህሪ አለው። ይህ ባህሪ ሁሉንም Ultimate Multisite መረጃዎ ምንም ችግር ሳይገጥመው መዛወር (migrate) እንደሚችል ለማረጋገጥ ሁሉንም multisiteዎን ይፈትሻል። ሂደቱን ለመጀመር **Run Check** የሚለውን አዝራር ይጫኑ።
 
@@ -59,13 +59,13 @@ _**ማስታወሻ፡ በMultisiteዎ ላይ Ultimate Multisite 1.x ካስጫኑ
 
 ፈተናውን ካስኬዱ በኋላ፣ ሁለት ዕድሎች አሉዎት፡ ውጤቱ **በስህተት (with)** ሊሆን ይችላል ወይም **በስህተት ሳይሆን (without error)** ሊሆን ይችላል።
 
-### ስህተት ካለ (With Error)
+### ስህተት ካለ (With Error) {#with-error}
 
 የስህተት መልዕክት ከተቀበሉ፣ ስህተቱን እንዲያስተካክሉ የድጋፍ ቡድናችንን (support team) ማነጋገር ያስፈልግዎታል። 티ኬት (ticket) ሲፈጥሩ **የስህተት መዝገቡን (error log)** ማቅረብዎን ያረጋግጡ። መዝገቡን ማውረድ ይችላሉ ወይም "contact our support team" የሚለውን ሊንክ መጫን ይችላሉ። ይህ በገጽዎ በቀኝ በኩል ባለው help widget ላይ ይከፍታል፣ እና መግለጫው ስር የስህተት መዝገቦች (error logs) የያዙ የቅድመ መሙላት መስኮቶች ይኖሩዎታል።
 
 _**ሲስተሙ ስህተት አግኝቷል፣ ወደ version 2.0 ለማሻገር መሄድ አይችሉም። ስህተቱ እስኪስተካከል ድረስ የnetworkዎን ስራ ለመቀጠል ወደ version 1.x መመለስ (roll back) ይችላሉ።**_
 
-### ስህተት ባይኖርም (Without Error)
+### ስህተት ባይኖርም (Without Error) {#without-error}
 
 ሲስተሙ ምንም ስህተት ካልገኘ፣ የስኬት መልዕክት እና ከታች **Migrate** የሚል አዝራር ያያሉ፣ ይህም ከማሻገሩ ጋር ለመቀጠል ያስችሎታል። በዚህ ገጽ ላይ፣ ወደፊት ከመሄድዎ በፊት የdatabaseዎን ምትኬ (backup) እንድትፈጥሩ ያስታውሱዎታል፣ ይህም በጠንካራ ሁኔታ እንመክራለን። ምትኬ ካሎት **Migrate** ላይ ይጫኑ።
 

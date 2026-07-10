@@ -3,18 +3,18 @@ title: Cloudflare ինտեգրում
 sidebar_position: 16
 _i18n_hash: 36ac9de19b1dc53fefd407fb8d21b563
 ---
-# Cloudflare Entegrasyonu
+# Cloudflare Entegrasyonu {#cloudflare-integration}
 
-## Genel Bakış
+## Genel Bakış {#overview}
 Cloudflare, web sitelerini korumaya ve hızlandırmaya yardımcı olan önde gelen bir içerik dağıtım ağı (CDN) ve güvenlik sağlayıcısıdır. Bu entegrasyon, Ultimate Multisite ile Cloudflare arasında otomatik alan adı yönetimini sağlar, özellikle alt alan adı çoklu site kurulumları için.
 
-## Özellikler
+## Özellikler {#features}
 - Cloudflare'da otomatik alt alan adı oluşturma
 - Proxy edilmiş alt alan adı desteği
 - DNS kaydı yönetimi
 - Ultimate Multisite admin panelinde gelişmiş DNS kaydı görüntüleme
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 Aşağıdaki sabitleri `wp-config.php` dosyanıza tanımlamanız gerekir:
 
 ```php
@@ -22,9 +22,9 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_key');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-## Kurulum Talimatları
+## Kurulum Talimatları {#setup-instructions}
 
-### 1. Cloudflare API Anahtarınızı Alın
+### 1. Cloudflare API Anahtarınızı Alın {#1-get-your-cloudflare-api-key}
 
 1. Cloudflare panonuza giriş yapın
 2. "My Profile" (sağ üst köşedeki e-posta adresinize tıklayın) bölümüne gidin
@@ -34,13 +34,13 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
    - Zone.DNS: Edit (Düzenleme)
 5. API token'ınızı kopyalayın
 
-### 2. Alan Adı Kimliğinizi (Zone ID) Alın
+### 2. Alan Adı Kimliğinizi (Zone ID) Alın {#2-get-your-zone-id}
 
 1. Cloudflare panonuzda kullanmak istediğiniz alanı seçin
 2. Zone ID, "Overview" sekmesinde, "API" başlığının altında sağ kenar çubuğunda görünür
 3. Zone ID'yi kopyalayın
 
-### 3. wp-config.php'ye Sabitleri Ekleyin
+### 3. wp-config.php'ye Sabitleri Ekleyin {#3-add-constants-to-wp-configphp}
 
 Aşağıdaki sabitleri `wp-config.php` dosyanıza ekleyin:
 
@@ -49,7 +49,7 @@ define('WU_CLOUDFLARE_API_KEY', 'your_api_token');
 define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 ```
 
-### 4. Entegrasyonu Etkinleştirin
+### 4. Entegrasyonu Etkinleştirin {#4-enable-the-integration}
 
 1. WordPress admin panelinizde Ultimate Multisite > Settings (Ayarlar) bölümüne gidin
 2. "Domain Mapping" (Alan Adı Eşlemesi) sekmesine gidin
@@ -57,9 +57,9 @@ define('WU_CLOUDFLARE_ZONE_ID', 'your_zone_id');
 4. Cloudflare entegrasyonunu etkinleştirin
 5. "Save Changes" (Değişiklikleri Kaydet) butonuna tıklayın
 
-## Nasıl Çalışır
+## Nasıl Çalışır {#how-it-works}
 
-### Alt Alan Adı Yönetimi
+### Alt Alan Adı Yönetimi {#subdomain-management}
 
 Bir alt alan adı çoklu site kurulumunda yeni bir site oluşturulduğunda:
 
@@ -67,7 +67,7 @@ Bir alt alan adı çoklu site kurulumunda yeni bir site oluşturulduğunda:
 2. Ենթադիր տիրույթը սովորաբար կարգավորվում է Cloudflare-ի միջոցով պրոքսավորման (proxied) համար (այս կարելի է փոխել ֆիլտրերի միջոցով)։
 3. Երբ կայքը ջնջվում է, ინտեգրացիան ենթադիր տիրույթը Cloudflare-ից հեռացնում է։
 
-### DNS գրանցման ցուցադրում (DNS Record Display)
+### DNS գրանցման ցուցադրում (DNS Record Display) {#dns-record-display}
 
 Ինտեգրացիան Ultimate Multisite-ի адሚնիստրատիվ պահեստքում DNS գրանցման ցուցադրումը բարելավում է հետևյալով.
 
@@ -75,11 +75,11 @@ Bir alt alan adı çoklu site kurulumunda yeni bir site oluşturulduğunda:
 2. Ցույց տալով, արդյոք գրանցումները պրոքսավորված են կամ չեն
 3. Ցուցադրելով DNS գրանցումների մասին լրացուցիչ տեղեկություն
 
-## Cloudflare-ի Հատուկ Հոස්տեյներ (Cloudflare Custom Hostnames)
+## Cloudflare-ի Հատուկ Հոස්տեյներ (Cloudflare Custom Hostnames) {#cloudflare-custom-hostnames}
 
 **Cloudflare Custom Hostnames**-ը (նախկին կոչվում էր "Cloudflare for SaaS") Cloudflare-ի մի հնարավորություն է, որը թույլ է տալիս ձեր հաճախորդներին օգտագործել իրենց սեփական ադմինները՝ SSL-ով ձեր մուլտիմալիտների ցանցում։ Սա խորհուրդ է տրվող մոտեցումը ադմինային կայքերի համար, որոնք օգտագործում են Cloudflare-ը, քանի որ Cloudflare-ը ավտոմատ կերպով կառավարում է SSL վկայագրի տրամադրումն ու թարմացումը յուրաքանչյուր սեփական ադմինային տիրույթի համար։
 
-### Ինչպես է այն տարբերվում ստանդարտ Cloudflare-ի հետ
+### Ինչպես է այն տարբերվում ստանդարտ Cloudflare-ի հետ {#how-it-differs-from-the-standard-cloudflare-integration}
 
 | | Ստանդարտ ინտեգրացիա (Standard integration) | Cloudflare Custom Hostnames |
 |---|---|---|
@@ -87,7 +87,7 @@ Bir alt alan adı çoklu site kurulumunda yeni bir site oluşturulduğunda:
 | **Լավագույն տարբերակը** | Ենթադիր տիրույթների մուլտիմալիտներ (Subdomain multisite) | Տիրույթով մելափոխված մուլտիմալիտներ (Domain-mapped multisite) |
 | **SSL** | Համակարգվում է առանձին | Ավտոմատ կերպով կառավարվում է Cloudflare-ի կողմից |
 
-### Cloudflare Custom Hostnames-ի կարգավորում
+### Cloudflare Custom Hostnames-ի կարգավորում {#setting-up-cloudflare-custom-hostnames}
 
 1. Ձեր Cloudflare dashboard-ում բացեք ձեր հիմնական տիրույթի (domain) զոնան։
 2. Գնացեք **SSL/TLS > Custom Hostnames**-ին։
@@ -101,23 +101,23 @@ Bir alt alan adı çoklu site kurulumunda yeni bir site oluşturulduğunda:
 Ultimate Multisite v2.6.1-ից սկսած, այս հնարավորությունը կոչվում է բոլոր պլայնիչների կարգավորումներում և նշագրություններում **Cloudflare Custom Hostnames**։ Ավելի հին տարբերակներում օգտագործվում էր «Cloudflare for SaaS» անունը, որը Cloudflare-ի հիմնական ապրանքային անվանումն է։
 :::
 
-## Կարևոր նշումներ
+## Կարևոր նշումներ {#important-notes}
 
 Cloudflare-ի վերջին թարմացումների համաձայն, բոլոր հաճախորդների համար հասանելի է wildcard proxying-ը (բազմակի կետով փոխանցում)։ Սա նշանակում է, որ ստանդարտ Cloudflare DNS-ի ինտեգրումը քիչ կարևոր է ենթատիրույթների բազմակերպման համար, քան երկար ժամանակ առաջ էր, քանի որ դուք կարող եք պարզապես Cloudflare-ում սահմանել wildcard DNS գրանցում։
 
-## Խնդրի լուծում (Troubleshooting)
+## Խնդրի լուծում (Troubleshooting) {#troubleshooting}
 
-### API միացման խնդիրներ
+### API միացման խնդիրներ {#api-connection-issues}
 - Ստուգեք, թե արդյոք ձեր API token-ը ճիշտ է և ունի անհրաժեշտ թույլտվությունները։
 - Ստուգեք, թե արդյոք ձեր Zone ID-ն ճիշտ է։
 - Համոզվեք, որ ձեր Cloudflare հաշվին ունեք անհրաժեշտ թույլտվությունները։
 
-### Ենթատիրույթը չի ավելացվել
+### Ենթատիրույթը չի ավելացվել {#subdomain-not-added}
 - Ստուգեք Ultimate Multisite-ի logs-ում ցանկացած սխալի հաղորդագրության համար։
 - Հաստատեք, որ ենթատիրույթը արդեն Cloudflare-ում չի ավելացվել։
 - Համոզվեք, որ ձեր Cloudflare պլանը աջակցում է ստեղծվող DNS գրանցումների քանակին։
 
-### Պրոքսիայի խնդիրներ
+### Պրոքսիայի խնդիրներ {#proxying-issues}
 
 - Եթե չեք ուզում, որ ենթադոյական տիրույթները (subdomains) պրոքսվեն, կարող եք օգտագործել `wu_cloudflare_should_proxy` ֆիլտրը։
 - Որոշ հնարավորություններ կարող են ճիշտ չաշխատել, երբ դրանք պրոքսվում են (օրինակ՝ որոշ WordPress ადմին ֆունկցիաներ)։

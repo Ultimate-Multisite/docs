@@ -3,25 +3,25 @@ title: Integrasyon sa CyberPanel
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Kini ipasabot kung unsaon pag-configure sa Ultimate Multisite CyberPanel integration para awtomatikong madugang (ug gipahawa) ang mga domain nga gi-map sa imong network isip virtual hosts sa CyberPanel, uban sa opsyon nga auto-SSL provisioning pinaagi sa Let's Encrypt.
 
-## Unsa Niini Ang Buhaton
+## Unsa Niini Ang Buhaton {#what-it-does}
 
 - Kung adunay domain nga gi-map sa Ultimate Multisite, ang integration magtawag sa CyberPanel API aron maghimo og virtual host para sa domain nga na-map.
 - Kung ang pag-map sa domain gubton, ang integration magtawag sa API aron madili ang katumbas nga virtual host.
 - Kung ang auto-SSL gi-enable, ang integration magpukaw sa pag-issue sa certificate sa Let's Encrypt dayon human na mahimo ang virtual host.
 - Opsina nga magdugang/magbawas sa `www.` alias depende sa imong setting sa "Auto-create www subdomain" sa Domain Mapping settings.
 
-## Mga Kinahanglanon (Prerequisites)
+## Mga Kinahanglanon (Prerequisites) {#prerequisites}
 
 - Usa ka nag-andar nga CyberPanel instance (recommended v2.3 o mas bag-o) nga maabot gikan sa imong WordPress server.
 - Usa ka naay existing website sa CyberPanel nga nag-serve na sa root domain sa imong WordPress network. Ang integration magdugang og mga bag-ong virtual host niini nga server.
 - Gi-enable ang CyberPanel API access. Ang authentication naggamit sa imong CyberPanel admin username ug password.
 - Kinahanglan pa nga ang imong DNS records para sa mga gi-map nga domain nagtudlo na sa IP address sa imong server sa dili pa makahatag og balido nga certificate ang auto-SSL.
 
-## Mga Kinahanglanon (Requirements)
+## Mga Kinahanglanon (Requirements) {#requirements}
 
 Ang mosunod nga mga constant kinahanglan i-define sa imong `wp-config.php` file:
 
@@ -82,9 +82,9 @@ Gamita ang built-in connection test sa settings wizard:
 2. I-click ang **Test Connection**.
 3. Usa ka success message nga nagpamatuod nga makabaton ang plugin sa CyberPanel API ug ma-authenticate kini og tarong.
 
-## Unsaon Niini Paglihok
+## Unsaon Niini Paglihok {#setup-instructions}
 
-### Domain Mapping
+### Domain Mapping {#1-enable-the-cyberpanel-api}
 
 Kung na-mapa ang usa ka domain sa Ultimate Multisite:
 
@@ -93,7 +93,7 @@ Kung na-mapa ang usa ka domain sa Ultimate Multisite:
 3. Ang document root gi-set aron magtudlo sa imong WordPress network root directory.
 4. Kung alihon ang domain mapping, ang integration magtawag sa `/api/deleteWebsite` aron limpyohan ang virtual host.
 
-### Auto-SSL
+### Auto-SSL {#2-add-constants-to-wp-configphp}
 
 Kung ang `WU_CYBERPANEL_AUTO_SSL` kay `true`:
 
@@ -103,11 +103,11 @@ Kung ang `WU_CYBERPANEL_AUTO_SSL` kay `true`:
 
 > **Importante:** Kinahanglan nga hingpit na ma-propagate ang DNS ngadto sa IP address sa imong server sa dili pa makapamatud-an og domain ang Let's Encrypt. Kung mapakyas ang pag-issue og SSL dayon human sa mapping, paghulat sa DNS propagation ug i-trigger pag-usab ang SSL gikan sa CyberPanel dashboard ubos sa **SSL** > **Manage SSL**.
 
-### www Subdomain
+### www Subdomain {#3-enable-the-integration}
 
 Kung ang **Auto-create www subdomain** gi-enable sa imong Domain Mapping settings, ang integration maghimo usab og virtual host alias para sa `www.<domain>` ug, kung ang auto-SSL anaa, mag-issue kini og certificate nga sakop sa apex ug www variants.
 
-### Email Forwarders
+### Email Forwarders {#4-verify-connectivity}
 
 Kung aktibo na ang [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) addon, mahimo usab nga maghatag og customer email forwarders ang CyberPanel. Ang mga forwarder nagpadala sa mga mensahe gikan sa usa ka domain address ngadto sa laing inbox nga dili kinahanglan maghimo og tibuok mailbox, nga nindot gamiton para sa mga alias sama sa `info@customer-domain.test` o `support@customer-domain.test`.
 
@@ -120,7 +120,7 @@ Sa dili pa mag-enable og forwarders alang sa mga customer:
 
 Kung mapakyas ang paghimo sa forwarder, sulayi una ang Ultimate Multisite activity logs, dayon kumpirmaha sa CyberPanel nga anaa ra ang source domain ug nga ang API user adunay email-management permissions.
 
-## Configuration Reference
+## Configuration Reference {#how-it-works}
 
 | Constant | Kinahanglan? | Default | Deskripsyon |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Kung mapakyas ang paghimo sa forwarder, sulayi una ang Ultimate Multisite activi
 | `WU_CYBERPANEL_PHP_VERSION` | Dili | `PHP 8.2` | PHP version para sa bag-ong virtual hosts (kinahanglan magtugma sa version nga gi-install sa CyberPanel) |
 | `WU_CYBERPANEL_EMAIL` | Dili | — | Email contact para sa pagparehistro sa SSL certificate |
 
-## Important Notes
+## Important Notes {#domain-mapping}
 
 Ang API sa CyberPanel naggamit og session-based token authentication. Ang integration ma-acquire na automatic ang token sa matag tawag sa API.
 Kinahanglan nga ang imong admin account sa CyberPanel adunay mga permiso sa paghimo ug pagtanggal og websites.
@@ -140,33 +140,33 @@ Ang CyberPanel nag-andar sa port `8090` sa default. Kung ang imong server naggam
 Ang integration dili magdumala og DNS records. Kinahanglan nimong itudlo ang domain DNS ngadto sa IP address sa imong server sa dili pa ma-mapa (mapa) ang domain sa Ultimate Multisite.
 Kung naggamit ka og OpenLiteSpeed (OLS), awtomatikong mag-trigger og graceful restart human sa mga pagbag-o sa virtual host. Walay kinahanglan nga manual intervention.
 
-## Troubleshooting
+## Troubleshooting {#auto-ssl}
 
-### API Connection Refused
+### API Connection Refused {#www-subdomain}
 
 - Siguraduhon nga bukas ang port `8090` sa firewall sa imong server.
 - Kumpirmaha nga ang value sa `WU_CYBERPANEL_HOST` naglakip sa saktong protocol (`https://`) ug port.
 - Siguroha nga ang CyberPanel SSL certificate nimo valid; ang self-signed certificates mahimong maghatag og TLS verification failures. Ihaplos ang `WU_CYBERPANEL_VERIFY_SSL` ngadto sa `false` lamang sa mga trusted private network environment.
 
-### Authentication Errors
+### Authentication Errors {#email-forwarders}
 
 - Kumpirmaha nga tama ang imong `WU_CYBERPANEL_USERNAME` ug `WU_CYBERPANEL_PASSWORD` pinaagi sa direktang pag-login sa CyberPanel.
 - Ang CyberPanel mag-lock sa mga account human sa paulit-ulit nga mapakyas nga mga pag-login. Siguroha ang **Security** > **Brute Force Monitor** sa CyberPanel kung adunay mga lockout.
 
-### Domain Not Created
+### Domain Not Created {#configuration-reference}
 
 - Siguroha ang Ultimate Multisite activity log (**Ultimate Multisite** > **Activity Logs**) alang sa mga error messages sa API.
 - Kumpirmaha nga ang package nga gihubad sa `WU_CYBERPANEL_PACKAGE` anaa sa CyberPanel (**Packages** > **List Packages**).
 - Siguraduhon nga wala pa na nagparehistro isip website ang domain sa CyberPanel — ang paghimo og duplikat nga website maghatag og error.
 
-### SSL Certificate Not Issued
+### SSL Certificate Not Issued {#important-notes}
 
 Kumpirmaha kung ang DNS na nag-propagate na gyud: Ang `dig +short your-domain.com` kinahanglan magbalik sa IP address sa imong server.
 Ang Let's Encrypt naghatag og rate limits. Kung bag-o lang kaayo mogawas og daghang mga certificate para sa parehas nga domain, paghulat una sa pag-retry.
 Susiha ang CyberPanel SSL logs ubos sa **Logs** > **Error Logs** para makita ang detalye kung ngano napakyas ang pag-issue sa certificate.
 Isip fallback, pwede ka mag-issue og SSL manually gikan sa CyberPanel: **SSL** > **Manage SSL** > piliha ang domain > **Issue SSL**.
 
-## Mga Reference
+## Mga Reference {#troubleshooting}
 
 - CyberPanel API Documentation: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Management: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

@@ -3,7 +3,7 @@ title: Күн шығу файлындағы қателік
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Файлын Орнатуда Қателік
+# Sunrise Файлын Орнатуда Қателік {#error-installing-the-sunrise-file}
 
 `sunrise.php` файлы — бұл WordPress өзін іске қоса отырып іздейтін арнайы файл. WordPress-тің `sunrise.php` файлын анықтай алуы үшін ол **wp-content папкасының** ішінде болуы керек.
 

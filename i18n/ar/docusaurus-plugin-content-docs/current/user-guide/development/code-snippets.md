@@ -3,7 +3,7 @@ title: مقتطفات الكود
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2
+# Code Snippets for v2 {#code-snippets-for-v2}
 
 بشكل أساسي، تُستخدم مقتطفات الكود لـ **WordPress** لتنفيذ إجراءات معينة قد تتطلب إضافة مكون إضافي أصغر. تُوضع هذه المقتطفات في أحد ملفات نواة WordPress أو قالبك (عادةً ملف functions.php في قالبك النشط) أو يمكن استخدامها كمكوّن MU.
 
@@ -15,7 +15,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**تصحيح مشاكل CORS مع أيقونات الخطوط في النطاقات المربوطة**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Changing the position of the Account menu item
+## Changing the position of the Account menu item {#changing-the-position-of-the-account-menu-item}
 
 لتغيير موضع عنصر قائمة الحساب في لوحة تحكم عميلك، فقط أضف مقتطف الكود التالي إلى ملف functions.php في قالبك النشط. يمكنك أيضًا وضع المقتطف داخل أحد مكوّنات MU أو مكوّنات مخصصة.
 
@@ -23,7 +23,7 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 add_filter('wu_my_account_menu_position', function() { return 10; // عدل هذه القيمة لوضع القائمة في الموضع المطلوب.
 ```
 
-## How to check if the user is under a given plan and/or has an active subscription
+## How to check if the user is under a given plan and/or has an active subscription {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 كمدير شبكة، قد تحتاج إلى إنشاء وظائف مخصصة تقوم بتنفيذ إجراءات أساسية أو تفعيل خدمة/ميزة لمجموعة مختارة من المشتركين أو المستخدمين النهائيين، بناءً على حالة اشتراكهم والخطة التي يشتركون فيها.
 
@@ -55,9 +55,9 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![قائمة المنتجات مع أرقام تعريف الخطة](/img/admin/products-list.png)
 
-## Fixing CORS issues with Font-Icons in mapped domains
+## Fixing CORS issues with Font-Icons in mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
-## Fixing CORS issues with Font-Icons in mapped domains
+## Fixing CORS issues with Font-Icons in mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 بعد ربط نطاق بموقع فرعي قد تكتشف أن الموقع يواجه صعوبة في تحميل الخطوط المخصصة. يحدث ذلك بسبب حظر عبر الأصل في إعدادات الخادم.
 
@@ -65,7 +65,7 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 فيما يلي مقتطفات كود لتصحيح المشكلة لـ Apache و NGINX. تتطلب هذه التغييرات معرفة متقدمة بملفات تكوين الخادم (.htaccess وملفات تكوين NGINX). إذا لم تكن مرتاحًا لإجراء هذه التغييرات بنفسك، أرسل هذه الصفحة إلى وكلاء دعم مزود الاستضافة عند طلب المساعدة.
 
-### Apache
+### Apache {#apache}
 
 في ملف .htaccess الخاص بك، أضف:
 
@@ -73,7 +73,7 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 ```
 
-### NGINX
+### NGINX {#nginx}
 
 في ملف تكوين الخادم (الموقع يختلف من خادم لآخر)، أضف:
 

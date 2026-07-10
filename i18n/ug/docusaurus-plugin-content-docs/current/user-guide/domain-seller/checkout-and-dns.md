@@ -3,13 +3,13 @@ title: Чек-آوت قىلىش فیلدى ۋە مى้ําل DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Сапоқ (Checkout) Sahasi va Muxlis DNS Boshqaruvi
+# Сапоқ (Checkout) Sahasi va Muxlis DNS Boshqaruvi {#checkout-field-and-customer-dns-management}
 
-## Domen Tanlash sahası
+## Domen Tanlash sahası {#the-domain-selection-checkout-field}
 
 **Domain Seçimi** alanı, müşterilere sitelerinin alan adını nasıl alacaklarına dair bir seçim yapma imkanı veren bir ödeme (checkout) öğesidir. Alan adı satışı yapabilmek için bunu herhangi bir ödeme formuna ekleyebilirsiniz.
 
-### Alanı ödeme formuna ekleme
+### Alanı ödeme formuna ekleme {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** بويزىڭ.
 2. Checkout formni açing yoki yaratıng.
@@ -19,7 +19,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 ٦. Форму сақлаңыз
 
-### Уч элементлар (Field options)
+### Уч элементлар (Field options) {#field-options}
 
 **Домен режимleri (Domain modes)** — Müşterinin hangi sekmeleri göreceğini seçin. Her bir mod bağımsız olarak etkinleştirilebilir veya devre dışı bırakılabilir:
 
@@ -35,7 +35,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **دومين منتج (Domain product)** — Булман، бу да ميدни белгиланган دومين продуктега тақдим этиш мумкин. Агар белгиланмаса, аддон автоматик равишда мижоз қидирган TLD асосида мос келадиган продуктни танлайди.
 
-### Регистратор контакт маълумотлари (Registrant contact fields)
+### Регистратор контакт маълумотлари (Registrant contact fields) {#registrant-contact-fields}
 
 Müşteri **Yeni Alan Adı Kaydetme** sekmesini seçtiğinde, ödeme formu kayıtlı kişi iletişim bilgilerini yan yana ekler:
 
@@ -46,11 +46,11 @@ Müşteri **Yeni Alan Adı Kaydetme** sekmesini seçtiğinde, ödeme formu kayı
 
 هذە تجميعلار بجميع ريجيسترارلار تالاب قىلىدۇ ۋە ريجيسترatsiya API чаلىنى ئۆتۈنچە تالاب قىلىدۇ. โทรفوْمات رقملار ريجيسترارلارنىڭ تالاب قىلغان خاليقەتكەن $+CC.NNN$ نونتال خاليقەتكەن ئۆتۈنچە شێكللەنچى.
 
-### ئۆتۈنچە يېڭى تالاب URL
+### ئۆتۈنچە يېڭى تالاب URL {#auto-generated-site-url}
 
 Müşteri rolat oluşturduğında və ya domen əlavə etməsində sayt URL sahəsi seçilmiş domen dənindən avtomatik doldurulır. Müşterilər ayrıca bir URL sahəsini doldurmağa ehtiyac duymazlar.
 
-### Axtarış davranışı
+### Axtarış davranışı {#search-behaviour}
 
 Müşteri domen yazarken anlık olarak AJAX ile kontrol edilir. Tercih edilen alan adı müsait değilse alternatif TLD (üst düzey alan adı) önerileri gösterilir.
 
@@ -75,11 +75,11 @@ add_filter('wu_domain_seller_search_delay', function($delay) {
     return $fields;
 });
 
-## Миشتەر DNS тартибини басقалма (Customer DNS Management)
+## Миشتەر DNS тартибини басقалма (Customer DNS Management) {#customer-dns-management}
 
 Миشتەرлер ўзлари тіркелген домендеріне тиісті DNS жазуларын **My Account** бетінен, доменінің кірісі астында басқара алады.
 
-### Қолдау берілетін жазу түрлері (Supported record types)
+### Қолдау берілетін жазу түрлері (Supported record types) {#supported-record-types}
 
 | Tür | Kullanım Amacı |
 |---|---|
@@ -90,11 +90,11 @@ add_filter('wu_domain_seller_search_delay', function($delay) {
 
 | **TXT** | SPF، DMARC، تایید (verification) ياتيديك، أو غيرها ديال نصوص (text records) |
 
-### قاينا (providers) DNS إدارة (management) ديدى داورجان؟
+### قاينا (providers) DNS إدارة (management) ديدى داورجان؟ {#which-providers-support-dns-management}
 
 DNS yönetimi (kayıt ekleme, düzenleme, silme) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** ve **Openprovider** ile mevcuttur. **Hostinger** alan adları için isim sunucularını Alan Adı Satıcısı (Domain Seller) aracılığıyla güncelleyebilirsiniz; barındırılan alan adlarının DNS kayıtları ise çekirdek Hostinger alan adı eşleştirme entegrasyonu tarafından yönetilir. Namecheap, GoDaddy ve NameSilo alan adları durum ve son kullanma tarihi bilgilerini gösterse de, DNS'in doğrudan kayıt kuruluşunun kontrol panelinde yönetilmesi gerekir.
 
-### Default DNS kayıtları
+### Default DNS kayıtları {#default-dns-records}
 
 Bir alan adı kaydedildiğinde otomatik olarak uygulanan varsayılan DNS kayıtlarını ayarlayabilirsiniz. **Ayarlar › Alan Adı Satıcısı › Varsayılan DNS Kayıtları** yoluna gidin.
 
@@ -115,6 +115,6 @@ Varsayılan kayıt değerleri iki tür tokeni destekler:
 نام: www.{DOMAIN}
 مقدار: {DOMAIN}
 
-### ادمین: DNS گۆڕی و تادیبی (viewing and editing DNS)
+### ادمین: DNS گۆڕی و تادیبی (viewing and editing DNS) {#admin-viewing-and-editing-dns}
 
 عنصر ağı yöneticileri, alan adının düzenleme sayfasından **Network Admin › Ultimate Multisite › Domains** (Ağ Yöneticisi › Ultimate Çoklu Site › Alan Adları) bölümünden herhangi bir müşteri alan adı için DNS kayıtlarını görüntüleyebilir ve düzenleyebilirler.

@@ -4,11 +4,11 @@ title: စစ်ထုတ်မှု - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filter: wu_apply_signup_fee
+# Filter: wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 စာရင်းသွင်းခကို အသုံးပြုရမလား၊ မရဘူးလားဆိုတာကို စစ်ထုတ်ပေးတဲ့ filter တစ်ခု ဖြစ်ပါတယ်။
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 | $product | `object` | အဖွဲ့ဝင်အဆင့် (Membership level) အရာဝတ္ထု။ |
 | $this | `\WP_Ultimo\Checkout\Cart` | မှတ်ပုံတင်ခြင်း အရာဝတ္ထု။ |
 
-### Since
+### Since {#since}
 
 - 3.1
-### Source
+### Source {#source}
 
 [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) ၏ ၁၇၆၉ လိုင်းတွင် သတ်မှတ်ထားပါသည်။

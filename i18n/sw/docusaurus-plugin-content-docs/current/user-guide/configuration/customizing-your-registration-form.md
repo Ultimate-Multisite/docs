@@ -1,148 +1,156 @@
 ---
-title: Kubadilisha Fomu Yako ya Usajili
+title: Kubinafsisha Fomu Yako ya Usajili
 sidebar_position: 17
-_i18n_hash: 01f3aeee38a564a8b5c4676a229748cf
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kubadilisha Fomu Yako ya Usajili
+# Kubinafsisha Fomu yako ya Usajili {#customizing-your-registration-form}
 
-Ili mtandao wako uonekane tofauti na SaaS nyingine zilizojengwa kwenye jukwaa la WordPress, Ultimate Multisite inakuruhusu kubadilisha kurasa zako za usajili na kuingia kwa kutumia kipengele chetu cha **Checkout Forms**.
+Ili kufanya network yako ionekane ya kipekee tofauti na SaaS nyingine zote zilizojengwa kwenye WordPress platform, Ultimate Multisite hukuruhusu kubinafsisha kurasa zako za usajili na kuingia kwa kutumia kipengele chetu cha **Checkout Forms**.
 
-Ingawa ni njia rahisi na inayobadilika ya kujaribu mbinu tofauti unapojaribu kuvutia wateja wapya, mara nyingi hutumiwa kuunda fomu za usajili zilizobinafsishwa. Makala hii inakuonyesha jinsi unavyoweza kufanya hivyo.
+Ingawa ni njia rahisi na nyumbufu ya kujaribu mbinu tofauti unapojaribu kuwabadilisha wateja wapya, hutumika zaidi kuunda fomu za usajili zilizobinafsishwa. Makala hii inalenga kukuonyesha jinsi unavyoweza kufanya hivyo.
 
-## Kurasa za kuingia na usajili:
+## Kurasa za kuingia na usajili: {#login-and-registration-pages}
 
-Wakati wa usakinishaji wa Ultimate Multisite, mfumo huunda moja kwa moja kurasa maalum za kuingia na usajili kwenye tovuti yako kuu. Unaweza kubadilisha kurasa hizi za msingi wakati wowote kwa kwenda chini ya ukurasa wako wa **Ultimate Multisite > Settings > Login & Registration**.
+Baada ya usakinishaji wa Ultimate Multisite, huunda kiotomatiki kurasa maalum za kuingia na usajili kwenye site yako kuu. Unaweza kubadilisha kurasa hizi chaguomsingi wakati wowote kwa kwenda kwenye ukurasa wako wa **Ultimate Multisite > Settings > Login & Registration**.
 
 ![Ukurasa wa mipangilio ya Kuingia na Usajili](/img/config/settings-general.png)
 
-Hebu tuangalie kila moja ya chaguo unazoweza kubadilisha kwenye ukurasa wa **Login & Registration**:
+Huu hapa mwonekano kamili wa ukurasa wa mipangilio ya kuingia na usajili:
 
-  * **Enable registration:** Chaguo hili litawezesha au kuzima usajili kwenye mtandao wako. Ikiwa imezimwa, wateja wako hawataweza kusajili na kujisajilisha kwa bidhaa zako.
+![Ukurasa kamili wa mipangilio ya Kuingia na Usajili](/img/config/settings-login-registration-full.png)
 
-  * **Enable email verification:** Ikiwa chaguo hili limewashwa, wateja wanaojisajilisha kwa mpango wa bure au mpango wa kulipia wenye kipindi cha majaribio watapokea barua pepe ya uthibitisho na watahitaji kubofya kiungo cha uthibitisho ili tovuti zao ziundwe.
+Hebu tuangalie kila mojawapo ya chaguo unazoweza kubinafsisha kwenye ukurasa wa **Login & Registration**:
 
-  * **Default registration page:** Hii ni ukurasa wa msingi wa usajili. Ukurasa huu unahitaji kuchapishwa kwenye tovuti yako na kuwa na fomu ya usajili (pia inajulikana kama checkout form) - ambapo wateja wako watajisajilisha kwa bidhaa zako. Unaweza kuunda kurasa nyingi za usajili na checkout forms unavyotaka, kumbuka tu kuweka shortcode ya checkout form kwenye ukurasa wa usajili, vinginevyo haitaonekana.
+  * **Wezesha usajili:** Chaguo hili litawezesha au kuzima usajili kwenye network yako. Ikiwa limezimwa, wateja wako hawataweza kujisajili na kujiunga na products zako.
 
-  * **Use custom login page:** Chaguo hili linakuruhusu kutumia ukurasa wa kuingia ulioboreshwa, tofauti na ukurasa wa msingi wa wp-login.php. Ikiwa chaguo hili limewashwa, unaweza kuchagua ukurasa upi utatumiwa kuingia kwenye chaguo la **Default login page** (lililopo chini yake).
+  * **Wezesha uthibitishaji wa barua pepe:** Ikiwa chaguo hili limewashwa, wateja wanaojiunga na plan ya bure au plan ya kulipia yenye kipindi cha majaribio watapokea barua pepe ya uthibitishaji na watahitaji kubofya kiungo cha uthibitishaji ili websites zao ziundwe.
 
-  * **Obfuscate the original login url (wp-login.php)** : Ikiwa unataka kuficha URL ya awali ya kuingia, unaweza kuwasha chaguo hili. Hii ni muhimu kuzuia mashambulizi ya brute-force. Ikiwa chaguo hili limewezeshwa, Ultimate Multisite itaonyesha kosa la 404 wakati mtumiaji anajaribu kufikia kiungo cha awali cha wp-login.php
+  * **Ukurasa chaguomsingi wa usajili:** Huu ndio ukurasa chaguomsingi wa usajili. Ukurasa huu unahitaji kuchapishwa kwenye website yako na uwe na fomu ya usajili (pia inajulikana kama checkout form) - ambapo clients wako watajiunga na products zako. Unaweza kuunda kurasa nyingi za usajili na checkout forms kadiri unavyotaka, kumbuka tu kuweka shortcode ya checkout form kwenye ukurasa wa usajili, vinginevyo haitaonekana.
 
-  * **Force synchronous site publication:** Baada ya mteja kujisajilisha kwa bidhaa kwenye mtandao, tovuti mpya inayosubiri inahitaji kubadilishwa kuwa tovuti halisi ya mtandao. Mchakato wa kuchapisha hutokea kupitia Job Queue, kwa njia ya asynchronous. Wezesha chaguo hili kulazimisha uchapishaji kutokea katika ombi lile lile la kusajili.
+  * **Tumia ukurasa maalum wa kuingia:** Chaguo hili hukuruhusu kutumia ukurasa wa kuingia uliobinafsishwa, tofauti na ukurasa chaguomsingi wa wp-login.php. Ikiwa chaguo hili limewashwa, unaweza kuchagua ni ukurasa gani utakaotumika kwa kuingia kwenye chaguo la **Ukurasa chaguomsingi wa kuingia** (moja kwa moja hapa chini).
 
-Sasa, hebu tuone chaguo nyingine ambazo bado zinahusiana na mchakato wa kuingia na usajili. Zipo chini ya **Other options** kwenye ukurasa huo wa Login & registration:
+  * **Ficha URL asili ya kuingia (wp-login.php)** : Ikiwa unataka kuficha URL asili ya kuingia, unaweza kuwasha chaguo hili. Hii ni muhimu kuzuia mashambulizi ya brute-force. Ikiwa chaguo hili limewezeshwa, Ultimate Multisite itaonyesha kosa la 404 mtumiaji anapojaribu kufikia kiungo asili cha wp-login.php
 
-  * **Default role:** Hii ni jukumu ambalo wateja wako watakuwa nalo kwenye tovuti yao baada ya mchakato wa kusajili.
+  * **Lazimisha uchapishaji wa site kwa usawazishaji:** Baada ya mteja kujiunga na product kwenye network, site mpya inayosubiri inahitaji kubadilishwa kuwa site halisi ya network. Mchakato wa kuchapisha hufanyika kupitia Job Queue, bila kusawazishwa. Wezesha chaguo hili kulazimisha uchapishaji ufanyike katika ombi lilelile kama usajili.
 
-  * **Add users to the main site as well:** Kuwezesha chaguo hili pia kutaongeza mtumiaji kwenye tovuti kuu ya mtandao wako baada ya mchakato wa kusajili. Ukiwezesha chaguo hili, chaguo la kuweka **default role** ya watumiaji hawa kwenye tovuti yako litaonekana pia chini yake.
+Sasa, hebu tuone chaguo nyingine ambazo bado zinahusiana na mchakato wa kuingia na usajili. Ziko moja kwa moja chini ya **Other options** kwenye ukurasa uleule wa Login & registration:
 
-  * **Enable multiple accounts:** Ruhusu watumiaji kuwa na akaunti katika tovuti tofauti za mtandao wako kwa kutumia anwani moja ya barua pepe. Ikiwa chaguo hili limezimwa, wateja wako hawataweza kuunda akaunti kwenye tovuti nyingine zinazofanya kazi kwenye mtandao wako kwa kutumia anwani ile ile ya barua pepe.
+  * **Jukumu chaguomsingi:** Hili ndilo jukumu ambalo wateja wako watakuwa nalo kwenye website yao baada ya mchakato wa kujisajili.
 
-Na hizo ndizo chaguo zote zinazohusiana na kuingia na usajili unazoweza kubadilisha! Usisahau kuhifadhi mipangilio yako baada ya kumaliza kuihariri.
+  * **Wezesha Jumper:** Huwezesha njia ya mkato ya Jumper katika eneo la admin. Jumper huruhusu wasimamizi kuruka haraka hadi skrini za Ultimate Multisite, vitu vya network, na maeneo mengine yanayoungwa mkono bila kuvinjari kila menyu. Izime ikiwa unapendelea kuficha zana hiyo ya urambazaji wa haraka kutoka kwenye interface ya admin.
 
-## Kutumia fomu nyingi za usajili:
+  * **Ongeza watumiaji kwenye site kuu pia:** Kuwezesha chaguo hili pia kutaongeza mtumiaji kwenye site kuu ya network yako baada ya mchakato wa kujisajili. Ikiwa utawezesha chaguo hili, chaguo la kuweka **jukumu chaguomsingi** la watumiaji hawa kwenye website yako pia litaonekana moja kwa moja hapa chini.
 
-Ultimate Multisite 2.0 inatoa kihariri cha checkout form kinachokuruhusu kuunda fomu nyingi unavyotaka, zenye sehemu tofauti, bidhaa zinazopatikana, na kadhalika.
+  * **Wezesha accounts nyingi:** Ruhusu watumiaji kuwa na accounts kwenye sites tofauti za network yako kwa kutumia anwani ileile ya barua pepe. Ikiwa chaguo hili limezimwa, wateja wako hawataweza kuunda account kwenye websites nyingine zinazoendeshwa kwenye network yako kwa kutumia anwani ileile ya barua pepe.
 
-Kurasa zote za kuingia na usajili zimewekwa na shortcodes: **[wu_login_form]** kwenye ukurasa wa kuingia na **[wu_checkout]** kwa ukurasa wa usajili. Unaweza kubadilisha zaidi ukurasa wa usajili kwa kujenga au kuunda checkout forms.
+Na hayo ndiyo chaguo zote zinazohusiana na kuingia na usajili ambazo unaweza kubinafsisha! Usisahau kuhifadhi mipangilio yako baada ya kumaliza kuihariri.
 
-Kufikia kipengele hiki, nenda kwenye menyu ya **Checkout Forms**, kwenye upau wa pembeni kushoto.
+## Kutumia fomu nyingi za usajili: {#using-multiple-registration-forms}
 
-![Menyu ya Checkout Forms kwenye upau wa pembeni](/img/config/checkout-forms-list.png)
+Ultimate Multisite 2.0 hutoa kihariri cha checkout form kinachokuruhusu kuunda fomu nyingi kadiri unavyotaka, zenye fields tofauti, products zinazotolewa, n.k.
+
+Kurasa zote mbili za kuingia na usajili zimepachikwa kwa shortcodes: **[wu_login_form]** kwenye ukurasa wa kuingia na**[wu_checkout]** kwa ukurasa wa usajili. Unaweza kubinafsisha zaidi ukurasa wa usajili kwa kujenga au kuunda checkout forms.
+
+Ili kufikia kipengele hiki, nenda kwenye menyu ya **Checkout Forms**, kwenye sidebar ya kushoto.
+
+![Menyu ya Checkout Forms kwenye sidebar](/img/config/checkout-forms-list.png)
 
 Kwenye ukurasa huu, unaweza kuona checkout forms zote ulizonazo.
 
-Ikiwa unataka kuunda mpya, bofya tu **Add Checkout Form** juu ya ukurasa.
+Ikiwa unataka kuunda mpya, bonyeza tu **Add Checkout Form** juu ya ukurasa.
 
-Unaweza kuchagua moja ya chaguo hizi tatu kama hatua yako ya kuanzia: hatua moja, hatua nyingi au tupu. Kisha, bofya **Go to the Editor**.
+Unaweza kuchagua mojawapo ya chaguo hizi tatu kama mahali pa kuanzia: hatua moja, hatua nyingi au tupu. Kisha, bofya **Go to the Editor**.
 
-![Kuongeza Checkout Form na chaguo za hatua moja, hatua nyingi, au tupu](/img/config/checkout-forms-list.png)
+![Ongeza Checkout Form yenye chaguo za hatua moja, hatua nyingi, au tupu](/img/config/checkout-forms-list.png)
 
-Vinginevyo, unaweza kuhariri au kunakili fomu ulizonazo tayari kwa kubofya chaguo zilizo chini ya jina lake. Hapo, pia utapata chaguo za kunakili shortcode ya fomu au kuifuta.
+Vinginevyo, unaweza kuhariri au kunakili fomu ulizonazo tayari kwa kubofya chaguo zilizo chini ya jina lake. Hapo, pia utapata chaguo za kunakili shortcode ya fomu au kufuta fomu.
 
-![Vitendo vya hover vya checkout form na kuhariri, kunakili, na kufuta](/img/config/checkout-form-hover-actions.png)
+![Vitendo vya kuelea juu ya checkout form vyenye hariri, nakili, na futa](/img/config/checkout-form-hover-actions.png)
 
-Ukichagua hatua moja au hatua nyingi, checkout form itakuwa tayari imejazwa mapema na hatua za msingi ili ifanye kazi. Kisha, ukitaka, unaweza kuongeza hatua zaidi.
+Ukichagua hatua moja au hatua nyingi, checkout form itakuwa tayari imejazwa awali na hatua za msingi ili ifanye kazi. Kisha, ukitaka, unaweza kuongeza hatua za ziada kwake.
 
-### Kuhariri Checkout Form:
+### Kuhariri Checkout Form: {#editing-a-checkout-form}
 
-Kama tulivyosema awali, unaweza kuunda checkout forms kwa madhumuni tofauti. Katika mfano huu tutafanya kazi kwenye fomu ya usajili.
+Kama tulivyotaja awali, unaweza kuunda checkout forms kwa madhumuni tofauti. Katika mfano huu tutashughulikia fomu ya usajili.
 
-Baada ya kwenda kwenye kihariri cha checkout form, ipe fomu yako jina (ambalo litatumika kwa marejeleo ya ndani tu) na slug (inayotumika kuunda shortcodes, kwa mfano).
+Baada ya kwenda kwenye kihariri cha checkout form, ipa fomu yako jina (litakalotumika kwa marejeleo ya ndani pekee) na slug (inayotumika kuunda shortcakes, kwa mfano).
 
-![Kihariri cha checkout form chenye sehemu za jina na slug](/img/config/checkout-form-editor.png)
+![Kihariri cha fomu ya checkout chenye sehemu za jina na slug](/img/config/checkout-form-name-slug.png)
 
-Fomu zimeundwa na hatua na sehemu. Unaweza kuongeza hatua mpya kwa kubofya **Add New Checkout Step**.
+Fomu zinaundwa na hatua na sehemu. Unaweza kuongeza hatua mpya kwa kubofya **Ongeza Hatua Mpya ya Checkout**.
 
-![Kitufe cha Add New Checkout Step](/img/config/checkout-form-add-step.png)
+![Kitufe cha Ongeza Hatua Mpya ya Checkout](/img/config/checkout-form-add-step.png)
 
-Kwenye kichupo cha kwanza cha dirisha la modal, jaza maudhui ya hatua ya fomu yako. Ipe ID, jina na maelezo. Vipengele hivi vinatumika zaidi kwa ndani.
+Kwenye kichupo cha kwanza cha dirisha la modal, jaza maudhui ya hatua ya fomu yako. Ipe ID, jina na maelezo. Vipengee hivi hutumika zaidi ndani ya mfumo.
 
-![Kichupo cha maudhui ya hatua ya checkout chenye ID, jina, na maelezo](/img/config/checkout-form-step.png)
+![Kichupo cha maudhui ya hatua ya checkout chenye ID, jina, na maelezo](/img/config/checkout-form-step-content.png)
 
-Ifuatayo, weka uonekaji wa hatua. Unaweza kuchagua kati ya **Always show**, **Only show for logged in users** au **Only show for guests**.
+Kisha, weka mwonekano wa hatua. Unaweza kuchagua kati ya **Onyesha kila wakati** , **Onyesha tu kwa watumiaji walioingia** au **Onyesha tu kwa wageni**.
 
-![Chaguo za uonekaji wa hatua ya checkout](/img/config/checkout-form-step.png)
+![Chaguo za mwonekano wa hatua ya checkout](/img/config/checkout-form-step-visibility.png)
 
 Hatimaye, sanidi mtindo wa hatua. Hizi ni sehemu za hiari.
 
-![Usanidi wa mtindo wa hatua ya checkout](/img/config/checkout-form-step.png)
+![Usanidi wa mtindo wa hatua ya checkout](/img/config/checkout-form-step-style.png)
 
-Sasa, ni wakati wa kuongeza sehemu kwenye hatua yetu ya kwanza. Bofya tu **Add New Field** na uchague aina ya sehemu unayotaka.
+Sasa, ni wakati wa kuongeza sehemu kwenye hatua yetu ya kwanza. Bofya tu **Ongeza Sehemu Mpya** na uchague aina ya sehemu unayotaka.
 
-![Kitufe cha Add New Field](/img/config/checkout-form-editor.png)![Menyu ya kuchagua aina ya sehemu](/img/config/checkout-form-step.png)
+![Kitufe cha Ongeza Sehemu Mpya](/img/config/checkout-form-add-field-button.png)![Menyu kunjuzi ya uteuzi wa aina ya sehemu](/img/config/checkout-form-field-type-dropdown.png)
 
-Kila sehemu ina vigezo tofauti vya kujazwa. Kwa ingizo hili la kwanza, tutachagua sehemu ya **Username**.
+Kila sehemu ina vigezo tofauti vya kujazwa. Kwa ingizo hili la kwanza, tutachagua sehemu ya **Jina la mtumiaji**.
 
-![Usanidi wa sehemu ya Username](/img/config/checkout-form-step.png)![Vigezo vya sehemu ya Username](/img/config/checkout-form-step.png)![Mipangilio ya ziada ya sehemu ya Username](/img/config/checkout-form-step.png)
+![Usanidi wa sehemu ya jina la mtumiaji](/img/config/checkout-form-username-content.png)![Vigezo vya sehemu ya jina la mtumiaji](/img/config/checkout-form-username-visibility.png)![Mipangilio ya ziada ya sehemu ya jina la mtumiaji](/img/config/checkout-form-username-style.png)
 
-Unaweza kuongeza hatua na sehemu nyingi unavyohitaji. Ili kuonyesha bidhaa zako kwa wateja wako wachague moja, tumia sehemu ya Pricing Table. Ikiwa unataka kuwaruhusu wateja wako kuchagua template, ongeza sehemu ya Template Selection. Na kadhalika.
+Unaweza kuongeza hatua na sehemu nyingi kadiri unavyohitaji. Ili kuonyesha bidhaa zako ili wateja wako wachague moja, tumia sehemu ya Jedwali la Bei. Ikiwa unataka kuwaruhusu wateja wako wachague kiolezo, ongeza sehemu ya Uteuzi wa Kiolezo. Na kadhalika.
 
-_**Kumbuka:** Ukiunda bidhaa baada ya kuunda checkout form yako, utahitaji kuongeza bidhaa katika sehemu ya Pricing table. Usipoiongeza, bidhaa haitaonekana kwa wateja wako kwenye ukurasa wa usajili._
+![Kihariri cha fomu ya checkout chenye sehemu ya uteuzi wa kiolezo](/img/config/checkout-form-with-template-field.png)
 
-_**Kumbuka 2:** username, email, password, site title, site URL, order summary, payment, na submit button ni sehemu za lazima kuunda checkout form._
+_**Kumbuka:** Ukifanya bidhaa baada ya kuunda fomu yako ya checkout, utahitaji kuongeza bidhaa katika sehemu ya Jedwali la Bei. Usipoiongeza, bidhaa haitaonekana kwa wateja wako kwenye ukurasa wa usajili._
 
-Unapofanya kazi kwenye checkout form yako, unaweza kutumia kitufe cha Preview kuona jinsi wateja wako watakavyoiona fomu. Unaweza pia kubadilisha kati ya kuona kama mtumiaji aliyepo au mgeni.
+_**Kumbuka 2:** jina la mtumiaji, barua pepe, nenosiri, kichwa cha tovuti, URL ya tovuti, muhtasari wa oda, malipo, na kitufe cha kuwasilisha ni sehemu za lazima ili kuunda fomu ya checkout._
 
-![Kitufe cha Preview kwenye kihariri cha checkout form](/img/config/checkout-form-editor.png)![Onyesho la awali la checkout form kama mgeni au mtumiaji aliyepo](/img/config/checkout-form-editor.png)
+Unapofanya kazi kwenye fomu yako ya checkout, unaweza kutumia kitufe cha Hakiki wakati wowote kuona jinsi wateja wako watakavyoiona fomu. Unaweza pia kubadilisha kati ya mwonekano kama mtumiaji aliyepo au mgeni.
 
-Hatimaye, kwenye **Advanced Options** unaweza kusanidi ujumbe wa ukurasa wa **Thank You**, kuongeza snippets za kufuatilia conversion, kuongeza CSS maalum kwenye checkout form yako au kuizuia kwa nchi fulani.
+![Kitufe cha Hakiki kwenye kihariri cha fomu ya checkout](/img/config/checkout-form-preview-button.png)![Hakiki ya fomu ya checkout kama mgeni au mtumiaji aliyepo](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options na ukurasa wa Thank You, ufuatiliaji wa conversion, na CSS maalum](/img/config/checkout-form-advanced.png)
+Hatimaye, kwenye **Chaguo za Kina** unaweza kusanidi ujumbe wa ukurasa wa **Asante**, kuongeza snippets za kufuatilia conversions, kuongeza CSS maalum kwenye fomu yako ya checkout au kuiwekea kikomo kwa nchi fulani.
 
-Unaweza pia kuwezesha au kuzima checkout form yako kwa mikono kwa kubadilisha chaguo hili kwenye safu ya kulia, au kufuta fomu kabisa.
+![Chaguo za Kina zenye ukurasa wa Asante, ufuatiliaji wa conversions, na CSS maalum](/img/config/checkout-form-advanced.png)
 
-![Kibadilisha cha Active na chaguo la kufuta kwa checkout form](/img/config/checkout-form-active.png)
+Unaweza pia kuwezesha au kulemaza fomu yako ya checkout mwenyewe kwa kuwasha au kuzima chaguo hili kwenye safu wima ya kulia, au kufuta fomu kabisa.
 
-Usisahau kuhifadhi checkout form yako!
+![Kitufe cha kuwasha/kuzima hali ya aktivu na chaguo la kufuta fomu ya checkout](/img/config/checkout-form-active.png)
 
-![Kitufe cha Save Checkout Form](/img/config/checkout-form-save.png)
+Usisahau kuhifadhi fomu yako ya checkout!
 
-Kupata shortcode ya fomu yako bofya **Generate Shortcode** na unakili matokeo yanayoonyeshwa kwenye dirisha la modal.
+![Kitufe cha Hifadhi Fomu ya Checkout](/img/config/checkout-form-save.png)
 
-![Modal ya Generate Shortcode yenye shortcode ya kunakili](/img/config/checkout-form-editor.png)
+Ili kupata shortcode ya fomu yako, bofya **Tengeneza Shortcode** na unakili matokeo yanayoonyeshwa kwenye dirisha la modal.
 
-_**Kumbuka:** Utahitaji kuongeza shortcode hii kwenye ukurasa wako wa usajili ili checkout form hii iongezwe humo._
+![Modal ya Tengeneza Shortcode yenye shortcode ya kunakili](/img/config/checkout-form-editor.png)
 
-## Kuchagua mapema bidhaa na templates kupitia vigezo vya URL:
+_**Kumbuka:** Utahitaji kuongeza shortcode hii kwenye ukurasa wako wa usajili ili fomu hii ya checkout iongezwe humo._
 
-Ikiwa unataka kuunda jedwali za bei zilizobinafsishwa kwa bidhaa zako na kuchagua mapema kwenye checkout form bidhaa au template ambayo mteja wako anachagua kutoka kwenye jedwali lako la bei au ukurasa wa templates, unaweza kutumia vigezo vya URL kwa hili.
+## Kuchagua mapema bidhaa na violezo kupitia vigezo vya URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Kwa mipango:**
+Ikiwa unataka kuunda majedwali ya bei yaliyobinafsishwa kwa bidhaa zako na kuchagua mapema kwenye fomu ya checkout bidhaa au kiolezo ambacho mteja wako anachagua kutoka kwenye jedwali lako la bei au ukurasa wa violezo, unaweza kutumia vigezo vya URL kwa hili.
 
-Nenda **Ultimate Multisite > Products > Chagua mpango**. Utaona kitufe cha **Click to copy Shareable Link** juu ya ukurasa. Hiki ni kiungo unachoweza kutumia kuchagua mapema mpango huu mahususi kwenye checkout form yako.
+### **Kwa mipango:** {#for-plans}
 
-![Ukurasa wa bidhaa na kitufe cha kiungo kinachoshirikiwa](/img/config/products-list.png)
+Nenda kwenye **Ultimate Multisite > Bidhaa > Chagua mpango**. Unapaswa kuona kitufe cha **Bofya kunakili Kiungo Kinachoweza Kushirikiwa** juu ya ukurasa. Hiki ndicho kiungo unachoweza kutumia kuchagua mapema mpango huu maalum kwenye fomu yako ya checkout.
 
-Kumbuka kwamba kiungo hiki kinachoshirikiwa ni halali tu kwa **Plans**. Huwezi kutumia viungo vinavyoshirikiwa kwa packages au services.
+![Ukurasa wa bidhaa wenye kitufe cha kiungo kinachoweza kushirikiwa](/img/config/products-list.png)
 
-### Kwa templates:
+Kumbuka kuwa kiungo hiki kinachoweza kushirikiwa ni halali tu kwa **Mipango**. Huwezi kutumia viungo vinavyoweza kushirikiwa kwa vifurushi au huduma.
 
-Ikiwa unataka kuchagua mapema site templates kwenye checkout form yako, unaweza kutumia kigezo: **?template_id=X** kwenye URL ya ukurasa wako wa usajili. "X" inahitaji kubadilishwa na **nambari ya site template ID**. Kupata nambari hii, nenda **Ultimate Multisite > Sites**.
+### Kwa violezo: {#for-templates}
 
-Bofya **Manage** chini ya site template unayotaka kutumia. Utaona nambari ya SITE ID. Tumia tu nambari hii ili site template hii mahususi ichaguliwe mapema kwenye checkout form yako. Katika kesi yetu hapa, kigezo cha URL kingekuwa **?template_id=2**.
+Ikiwa unataka kuchagua mapema violezo vya tovuti kwenye fomu yako ya checkout, unaweza kutumia kigezo: **?template_id=X** kwenye URL ya ukurasa wako wa usajili. "X" inahitaji kubadilishwa na **nambari ya ID ya kiolezo cha tovuti**. Ili kupata nambari hii, nenda kwenye **Ultimate Multisite > Tovuti**.
 
-![Orodha ya Sites inayoonyesha site template ID](/img/config/site-templates-list.png)
+Bofya **Dhibiti** moja kwa moja chini ya kiolezo cha tovuti unachotaka kutumia. Utaona nambari ya ID YA TOVUTI. Tumia tu nambari hii kwa kiolezo hiki maalum cha tovuti ili kichaguliwe mapema kwenye fomu yako ya checkout. Katika mfano wetu hapa, kigezo cha URL kitakuwa **?template_id=2**.
 
-Tuseme tovuti yetu ya mtandao ni [**www.mynetwork.com**](http://www.mynetwork.com) na ukurasa wetu wa usajili wenye checkout form yetu uko kwenye ukurasa wa **/register**. URL nzima ikiwa na site template hii imechaguliwa mapema itaonekana kama [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Orodha ya tovuti inayoonyesha ID ya kiolezo cha tovuti](/img/config/site-templates-list.png)
 
-Na ukitaka, unaweza kuchagua mapema bidhaa zote na templates kwenye checkout form yako. Unachohitaji kufanya ni kunakili kiungo kinachoshirikiwa cha mpango na kubandika kigezo cha template mwishoni. Kitaonekana kama [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Tuseme tovuti yetu ya mtandao ni [**www.mynetwork.com**](http://www.mynetwork.com) na ukurasa wetu wa usajili wenye fomu yetu ya checkout uko kwenye ukurasa wa **/register**. URL nzima ikiwa na kiolezo hiki cha tovuti kimechaguliwa mapema itaonekana kama [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Na ikiwa unataka, unaweza kuchagua mapema bidhaa na violezo vyote viwili kwenye fomu yako ya checkout. Unachohitaji kufanya ni kunakili kiungo kinachoweza kushirikiwa cha mpango na kubandika kigezo cha kiolezo mwishoni. Kitaonekana kama [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

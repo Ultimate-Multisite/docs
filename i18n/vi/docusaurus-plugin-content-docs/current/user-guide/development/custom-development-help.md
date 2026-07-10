@@ -3,13 +3,13 @@ title: Trợ giúp Phát triển Tùy chỉnh
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Làm thế nào để nhận hỗ trợ phát triển tùy chỉnh từ Codeable?
+# Làm thế nào để nhận hỗ trợ phát triển tùy chỉnh từ Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Đôi khi, chúng ta thực sự cần những tùy chỉnh tuyệt vời để làm cho quy trình mạng lưới hoạt động đúng theo ý muốn. Nếu đó là điều bạn đang tìm kiếm, chúng tôi khuyên bạn nên sử dụng [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), nơi bạn có thể tìm thấy các nhà phát triển giàu kinh nghiệm với chuyên môn về Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) là một nền tảng kết nối khách hàng với các lập trình viên WordPress freelance có trình độ, có khả năng làm việc với các dự án ở mọi quy mô. Họ có quy trình tuyển chọn kỹ lưỡng để đảm bảo bạn được kết nối với các chuyên gia có đủ năng lực cho công việc bạn cần.
 
-### Làm thế nào để tạo dự án trên Codeable?
+### Làm thế nào để tạo dự án trên Codeable? {#how-to-create-a-project-in-codeable}
 
 Đầu tiên, truy cập [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) và nhấp vào nút **Start a Project**.
 

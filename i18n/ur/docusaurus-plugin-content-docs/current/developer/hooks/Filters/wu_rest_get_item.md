@@ -4,11 +4,11 @@ title: فلٹر - wu_rest_get_item
 sidebar_label: wu_rest_get_item
 _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 ---
-# Filter: wu_rest_get_item
+# Filter: wu_rest_get_item {#filter-wurestgetitem}
 
 یہ فلٹر طے کرتا ہے کہ کیا درخواست (request) کو آگے بڑھنے کی اجازت ہے یا نہیں۔
 
-## پیرا میٹرز (Parameters)
+## پیرا میٹرز (Parameters) {#parameters}
 
 | نام (Name) | قسم (Type) | تفصیل (Description) |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 6e3f51a53f5b4bafef3d438273c979c8
 | $rest_base | `array` | اینٹیٹی سلگ (Entity slug)۔ |
 | $this | `\Base_Manager` | آبجیکٹ کا انسٹنس (The object instance)۔ |
 
-### سے (Since)
+### سے (Since) {#since}
 
 - 2.0.0
-### ماخذ (Source)
+### ماخذ (Source) {#source}
 
 [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L388) میں لائن 388 پر بیان کیا گیا ہے۔

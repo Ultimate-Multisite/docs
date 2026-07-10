@@ -3,11 +3,11 @@ title: Ho lula le Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flow a Tlalelelo ea Theme Builder
+# Flow a Tlalelelo ea Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 e ntse le **flow ea onboarding ea Theme Builder** ea ho thusa hau ho fetola theme e tšoa (custom block theme) mme a re kae sa setso se se sehle. Sena se fetola mode ea Site Builder e ntlha le maemo a leboho, a tšoa le ho thusa le agent.
 
-## Flow ea Onboarding ea Theme Builder ke eng?
+## Flow ea Onboarding ea Theme Builder ke eng? {#what-is-the-theme-builder-onboarding-flow}
 
 Flow ea onboarding ea Theme Builder ke wizard ea setso e tsamaea e e tseba:
 
@@ -18,9 +18,9 @@ Flow ea onboarding ea Theme Builder ke wizard ea setso e tsamaea e e tseba:
 
 Flow ea hau e fana ka **Setup Assistant agent**, e tseba mofuta oa dipotso le e fetola theme ea hau ka tsela e ntlha.
 
-## Ho Qala Flow ea Theme Builder
+## Ho Qala Flow ea Theme Builder {#starting-the-theme-builder-onboarding}
 
-### Setso sa ho Qala (First-Run Setup)
+### Setso sa ho Qala (First-Run Setup) {#first-run-setup}
 
 Ha u qala Superdav AI Agent haholo le setso se sehle sa WordPress, o tla bona:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Sa utloi **"Build a custom theme"** ho fana ka flow ea onboarding ea Theme Builder.
 
-### Ho Baola Leho (Manual Activation)
+### Ho Baola Leho (Manual Activation) {#manual-activation}
 
 U ka qala flow ea onboarding ea Theme Builder haholo le nako fa u hloka:
 
@@ -49,9 +49,9 @@ me
 "Help me create a custom theme"
 ```
 
-## Steps ea Onboarding
+## Steps ea Onboarding {#the-onboarding-steps}
 
-### Step 1: Ho Baola Mofuta (Mode Selection)
+### Step 1: Ho Baola Mofuta (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent e tseba ka mofuta oa hau:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** e tsamaisa ba batho ba bohlokoa; agent e fetola litšomo tsa design ka tsela ea setso le mofuta oa hau.
 
-### Step 2: Setso sa Site (Site Specification)
+### Step 2: Setso sa Site (Site Specification) {#step-2-site-specification}
 
 O tla bua ka site ea hau:
 
@@ -74,7 +74,7 @@ O tla bua ka site ea hau:
 
 Le mofuta o fetang o fana kae ho feteng ka le **site_brief** memory ea hau, seo ba agents ba tla li hlalosa ka tsamaiso tse ding.
 
-### Step 3: Mabonso a Setso (Design System Decisions)
+### Step 3: Mabonso a Setso (Design System Decisions) {#step-3-design-system-decisions}
 
 Agent o tla u hlalosa ka tsela e fanaeng ea mofuta oa design token:
 
@@ -83,7 +83,7 @@ Agent o tla u hlalosa ka tsela e fanaeng ea mofuta oa design token:
 - **Spacing**: Layouts e le le le le le le, e le le le le le le.
 - **Motion**: Animations le transitions (ho feta ho batla).
 
-### Step 4: Ho Fetang Le Theme (Theme Generation)
+### Step 4: Ho Fetang Le Theme (Theme Generation) {#step-4-theme-generation}
 
 Agent oa Setup Assistant o tla u fetola theme ea hau e fetang ka:
 
@@ -92,7 +92,7 @@ Agent oa Setup Assistant o tla u fetola theme ea hau e fetang ka:
 - Styles tsa block e fetang le mofuta o fetang oa design system ea hau
 - Metadata ea theme le diketso tsa WordPress
 
-### Step 5: Ho Fetola Le Ho Ba Hlalosa (Activation and Verification)
+### Step 5: Ho Fetola Le Ho Ba Hlalosa (Activation and Verification) {#step-5-activation-and-verification}
 
 Theme e tla fetolwa ka ho feteng, u tla bona:
 
@@ -107,7 +107,7 @@ Theme e tla fetolwa ka ho feteng, u tla bona:
 
 U ka fetola kae site ea hau ho bona hore theme e feteng e fetolwa ka bonako.
 
-## Mokhoa oa Site le Site_brief Memory
+## Mokhoa oa Site le Site_brief Memory {#site-specification-and-sitebrief-memory}
 
 Ka tsela ya setso, agent o tla tsamaetsa mofuta oa hau ka **site_brief** memory category. Le tla ba le:
 
@@ -117,7 +117,7 @@ Ka tsela ya setso, agent o tla tsamaetsa mofuta oa hau ka **site_brief** memory 
 - Maikutlo a design
 - Ho tsamaiso ea content
 
-### Kea ba le Site_brief Ee Fetang
+### Kea ba le Site_brief Ee Fetang {#why-sitebrief-matters}
 
 Ka tsamaiso tse ding, agents ba tla hlalosa site_brief ea hau ho:
 
@@ -126,7 +126,7 @@ Ka tsamaiso tse ding, agents ba tla hlalosa site_brief ea hau ho:
 - Provide context-aware recommendations
 - Avoid repeating setup questions
 
-### Melihat Site Brief Aapao
+### Melihat Site Brief Aapao {#viewing-your-sitebrief}
 
 Aap kaet u le:
 
@@ -142,11 +142,11 @@ ka le
 
 Agent o tla go ntlha sisa la aapao.
 
-## Go Dirha Le Baikanyong (After Onboarding)
+## Go Dirha Le Baikanyong (After Onboarding) {#customizing-after-onboarding}
 
 Ha o fetolela onboarding la Theme Builder, o ka:
 
-### Use the Design System Aesthetics Skill
+### Use the Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Tlhoka liphutso tsa design:
 
@@ -162,7 +162,7 @@ ka le
 
 **Design System Aesthetics skill** o tla go ntlha ka liphutso tsa design tse di fetang.
 
-### Edit theme.json Directly
+### Edit theme.json Directly {#edit-themejson-directly}
 
 Ba le ba le thata, ba ka fetola `/wp-content/themes/[theme-name]/theme.json` ho fetola:
 
@@ -171,7 +171,7 @@ Ba le ba le thata, ba ka fetola `/wp-content/themes/[theme-name]/theme.json` ho 
 - Spacing values
 - Border and shadow definitions
 
-### Create Custom Block Templates
+### Create Custom Block Templates {#create-custom-block-templates}
 
 Use WordPress block editor ho fetola templates tse di fetang:
 
@@ -180,7 +180,7 @@ Use WordPress block editor ho fetola templates tse di fetang:
 - Product pages
 - Contact forms
 
-## Comparison: Old vs. New Onboarding
+## Comparison: Old vs. New Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Use WordPress block editor ho fetola templates tse di fetang:
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## Go Nna Le Dikarolo (Troubleshooting)
+## Go Nna Le Dikarolo (Troubleshooting) {#troubleshooting}
 
 **Onboarding flow ha o fetolele**
 - Letheloa flow: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Use WordPress block editor ho fetola templates tse di fetang:
 - Hlalosa monyetla ho bolella "reka theme le [fetohang tse ka]"
 - Leha theme.json ho fetola ka khale ho le le khale
 
-## Setso sa Ho Fetola
+## Setso sa Ho Fetola {#next-steps}
 
 Ha o fetolele hore Theme Builder a fetolele:
 

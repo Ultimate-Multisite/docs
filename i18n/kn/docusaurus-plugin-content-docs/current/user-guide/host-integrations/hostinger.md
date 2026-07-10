@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) ಏಕೀಕರಣ
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integration
+# Hostinger (hPanel) Integration {#hostinger-hpanel-integration}
 
-## Overview
+## Overview {#overview}
 
 Hostinger ಎಂಬುದು hPanel ಎಂಬ ಆಧುನಿಕ ಕಂಟ್ರೋಲ್ ಪ್ಯಾನೆಲ್ ಹೊಂದಿರುವ ಜನಪ್ರಿಯ ವೆಬ್ ಹೋಸ್ಟಿಂಗ್ ಪроваಡರ್ ಆಗಿದೆ. Ultimate Multisite Hostinger integration ಅನ್ನು ಬಳಸುವುದರಿಂದ Ultimate Multisite ಮತ್ತು Hostinger ನ hPanel ನಡುವೆ ಡೊಮೇನ್ ಸಿঙ্কিং ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಆಗುತ್ತದೆ. ಇದರಿಂದ ನೀವು ನಿಮ್ಮ WordPress ಆಡ್ಮಿನಿಂದಲೇ ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್‌ಗಳು ಮತ್ತು ಸಬ್‌ಡೊಮೇನ್‌ಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ವಹಿಸಬಹುದು.
 
-## Features
+## Features {#features}
 
 - hPanel ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಆಡ್‌ಆನ್ ಡೊಮೇನ್ ರಚನೆ
 - hPanel ನಲ್ಲಿ ಸ್ವಯಂಚಾಲಿತ ಸಬ್‌ಡೊಮೇನ್ ರಚನೆ (ಸಬ್‌ಡೊಮೇನ್ ಮಲ್ಟಿಸಿಟ್ ಸ್ಥಾಪನೆಗಳಿಗೆ)
 - ಮ್ಯಾಪಿಂಗ್‌ಗಳನ್ನು ಅಳಿಸಿದಾಗ ಡೊಮೇನ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ
 - hPanel ನ ಡೊಮೇನ್ ಮ್ಯಾನೇಜ್ಮೆಂಟ್ API ಜೊತೆ ಸುಗಮ ಸಂಯೋಜನೆ
 
-## Requirements
+## Requirements {#requirements}
 
 Hostinger integration ಅನ್ನು ಬಳಸಲು, ನಿಮಗೆ ಈ ಕೆಳಗಿನವುಗಳು ಬೇಕಾಗುತ್ತವೆ:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API endpoint
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. ನಿಮ್ಮ Hostinger API ಟೋಕನ್ ರಚಿಸಿ
+### 1. ನಿಮ್ಮ Hostinger API ಟೋಕನ್ ರಚಿಸಿ {#1-generate-your-hostinger-api-token}
 
 1. ನಿಮ್ಮ Hostinger ಖಾತೆಗೆ ಲಾಗಿನ್ ಆಗಿ ಮತ್ತು hPanel ಗೆ ಪ್ರವೇಶಿಸಿ
 2. **Account Settings** → **API Tokens** ಗೆ ಹೋಗಿ
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API e
    - Subdomain management
 6. ರಚಿಸಲಾದ ಟೋಕನ್ ಅನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಅದನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಿ
 
-### 2. ನಿಮ್ಮ Account ID ಹುಡುಕಿ
+### 2. ನಿಮ್ಮ Account ID ಹುಡುಕಿ {#2-find-your-account-id}
 
 1. hPanel ನಲ್ಲಿ, **Account Settings** → **Account Information** ಗೆ ಹೋಗಿ
 2. ನಿಮ್ಮ Account ID ಈ ಪುಟದಲ್ಲಿ ಪ್ರದರ್ಶಿಸಲಾಗುತ್ತದೆ
 3. ಮುಂದಿನ ಹಂತಕ್ಕಾಗಿ ಈ ID ಅನ್ನು ನಕಲಿಸಿ ಮತ್ತು ಉಳಿಸಿ
 
-### 3. wp-config.php ಗೆ ಸ್ಥಿರಾಂಕಗಳನ್ನು ಸೇರಿಸಿ
+### 3. wp-config.php ಗೆ ಸ್ಥಿರಾಂಕಗಳನ್ನು ಸೇರಿಸಿ {#3-add-constants-to-wp-configphp}
 
 ಈ ಕೆಳಗಿನ ಸ್ಥಿರಾಂಕಗಳನ್ನು ನಿಮ್ಮ `wp-config.php` ಫೈಲ್‌ಗೆ ಸೇರಿಸಿ:
 
@@ -69,7 +69,7 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. integration ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
+### 4. integration ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ {#4-enable-the-integration}
 
 1. ನಿಮ್ಮ WordPress ಆಡ್ಮಿನಾದಲ್ಲಿ, **Ultimate Multisite > Settings** ಗೆ ಹೋಗಿ
 2. **Domain Mapping** ಟ್ಯಾಬ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. **Hostinger (hPanel)** integration ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ
 5. **Save Changes** ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ
 
-## How It Works
+## How It Works {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 ನೀವು Ultimate Multisite ನಲ್ಲಿ ಒಂದು ಡೊಮೇನ್ ಅನ್ನು ಮ್ಯಾಪ್ ಮಾಡಿದಾಗ:
 
@@ -87,7 +87,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 2. ಆ ಡೊಮೇನ್ ಅನ್ನು ನಿಮ್ಮ ರೂಟ್ ಡೈರೆಕ್ಟರಿಗೆ (root directory) ಪಾಯಿಂಟ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗುತ್ತದೆ.
 3. ಡೊಮೇನ್ ಮ್ಯಾಪಿಂಗ್ ಅನ್ನು ತೆಗೆದುಹಾಕಿದಾಗ, integration ಆಡ್‌ಆನ್ ಡೊಮೇನ್ ಅನ್ನು hPanel ನಿಂದ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ತೆಗೆದುಹಾಕುತ್ತದೆ.
 
-### Subdomains
+### Subdomains {#subdomains}
 
 ಸಬ್‌ಡೊಮೇನ್ ಮಲ್ಟಿಸಿಟ್ ಸ್ಥಾಪನೆಗಳಿಗೆ, ಹೊಸ ಸೈಟ್ ಅನ್ನು ರಚಿಸಿದಾಗ:
 
@@ -95,7 +95,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 2. ಅದು ಸಬ್‌ಡೊಮೇನ್ ಅನ್ನು ಸೇರಿಸಲು Hostinger ನ API ಗೆ ವಿನಂತಿಯನ್ನು ಕಳುಹಿಸುತ್ತದೆ.
 3. ಸಬ್‌ಡೊಮೇನ್ ಅನ್ನು ನಿಮ್ಮ ರೂಟ್ ಡೈರೆಕ್ಟರಿಗೆ ಪಾಯಿಂಟ್ ಮಾಡಲು ಕಾನ್ಫಿಗರ್ ಮಾಡಲಾಗುತ್ತದೆ.
 
-## Important Notes
+## Important Notes {#important-notes}
 
 - integration, ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸಂವಹನ ನಡೆಸಲು Hostinger ನ REST API ಅನ್ನು ಬಳಸುತ್ತದೆ.
 - ನಿಮ್ಮ API ಟೋಕನ್‌ನಲ್ಲಿ ಡೊಮೇನ್ ಮತ್ತು ಸಬ್‌ಡೊಮೇನ್ ನಿರ್ವಹಣೆಗಾಗಿ ಅಗತ್ಯವಾದ ಅನುಮತಿಗಳು ಇರಬೇಕು.
@@ -103,33 +103,33 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 - API ವಿನಂತಿಗಳನ್ನು HTTPS ಮೂಲಕ ಸುರಕ್ಷಿತವಾಗಿ ಮಾಡಲಾಗುತ್ತದೆ.
 - ನಿಮ್ಮ API ಟೋಕನ್ ಅನ್ನು ಸುರಕ್ಷಿತವಾಗಿಡಿ ಮತ್ತು ಅದನ್ನು ಎಂದಿಗೂ ಸಾರ್ವಜನಿಕವಾಗಿ ಹಂಚಿಕೊಳ್ಳಬೇಡಿ.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 
 - ನಿಮ್ಮ API ಟೋಕನ್ ಸರಿಯಾಗಿದೆಯೇ ಮತ್ತು ಅದು ಅವಧಿ ಮೀರದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.
 - ನಿಮ್ಮ Account ID ಸರಿಯಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.
 - ನಿಮ್ಮ API ಟೋಕನ್‌ನಲ್ಲಿ ಡೊಮೇನ್ ನಿರ್ವಹಣೆಗಾಗಿ ಅಗತ್ಯವಾದ ಅನುಮತಿಗಳು ಇವೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 - ನಿಮ್ಮ Hostinger ಖಾತೆ ಸಕ್ರಿಯವಾಗಿದೆ ಮತ್ತು ಉತ್ತಮ ಸ್ಥಿತಿಯಲ್ಲಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ.
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 
 - ಯಾವುದೇ ಎರೆರ್ ಸಂದೇಶಗಳಿಗಾಗಿ Ultimate Multisite logs ಅನ್ನು ಪರಿಶೀಲಿಸಿ.
 - ಆ ಡೊಮೇನ್ ಅನ್ನು ಈಗಾಗಲೇ ನಿಮ್ಮ Hostinger ಖಾತೆಗೆ ಸೇರಿಸಲಾಗಿಲ್ಲ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 - ನಿಮ್ಮ Hostinger ಖಾತೆಯು ಆಡ್‌ಆನ್ ಡೊಮೇನ್‌ಗಳ ಮಿತಿಯನ್ನು ತಲುಪಿಲ್ಲ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 - ಆ ಡೊಮೇನ್ ಅನ್ನು ನಿಮ್ಮ Hostinger nameservers ಗೆ ಸರಿಯಾಗಿ ಪಾಯಿಂಟ್ ಮಾಡಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 
-### SSL Certificate Issues
+### SSL Certificate Issues {#ssl-certificate-issues}
 
 - integration, SSL ಸರ್ಟಿಫಿಕೇಟ್ ನೀಡುವ ಪ್ರಕ್ರಿಯೆಯನ್ನು ನಿರ್ವಹಿಸುವುದಿಲ್ಲ.
 - Hostinger ಸಾಮಾನ್ಯವಾಗಿ AutoSSL ಮೂಲಕ ಉಚಿತ SSL ಸರ್ಟಿಫಿಕೇಟ್‌ಗಳನ್ನು ಒದಗಿಸುತ್ತದೆ.
 - ನೀವು **SSL/TLS** ಅಡಿಯಲ್ಲಿ hPanel ನಲ್ಲಿ ನೇರವಾಗಿ SSL ಸರ್ಟಿಫಿಕೇಟ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಬಹುದು.
 - ಪರ್ಯಾಯವಾಗಿ, Hostinger ನ AutoSSL ವೈಶಿಷ್ಟ್ಯದೊಂದಿಗೆ Let's Encrypt ಅನ್ನು ಬಳಸಿ.
 
-## Support
+## Support {#support}
 
 Hostinger integration ಕುರಿತು ಹೆಚ್ಚಿನ ಸಹಾಯ ಬೇಕಿದ್ದರೆ, ದಯವಿಟ್ಟು ಈ ಕೆಳಗಿನವುಗಳನ್ನು ನೋಡಿ:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

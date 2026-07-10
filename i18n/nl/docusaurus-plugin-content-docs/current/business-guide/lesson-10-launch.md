@@ -3,19 +3,19 @@ title: 'Les 10: Lanceringdag'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Les 10: Lancering
+# Les 10: Lancering {#lesson-10-launch-day}
 
 Alles is gebouwd. Voordat je de deuren opent, gaat deze les door de pre-launch checklist om ervoor te zorgen dat niets kapot, ontbreekt of gênant is.
 
-## Waar we gebleven waren
+## Waar we gebleven waren {#where-we-left-off}
 
 FitSite heeft templates, plannen, checkout, branding, onboarding en prijzen geconfigureerd. Nu verifiëren we of alles werkt en gaan we live.
 
-## Pre-Launch Checklist
+## Pre-Launch Checklist {#pre-launch-checklist}
 
 Werk elk item af. Laat niets over.
 
-### Platform Infrastructuur
+### Platform Infrastructuur {#platform-infrastructure}
 
 - [ ] Hosting is stabiel en presteert goed onder belasting
 - [ ] Wildcard SSL is actief en alle subdomeinen draaien via HTTPS
@@ -23,7 +23,7 @@ Werk elk item af. Laat niets over.
 - [ ] Backups zijn geconfigureerd en getest (herstel minstens één om te verifiëren)
 - [ ] Monitoring is op जगह – je weet of het platform uitvalt
 
-### Templates
+### Templates {#templates}
 
 - [ ] Alle drie de templates laden correct op nieuwe sites
 - [ ] Placeholder content is nuttig en vrij van typefouten
@@ -32,7 +32,7 @@ Werk elk item af. Laat niets over.
 - [ ] De laadsnelheid van de pagina is acceptabel (test met een tool zoals GTmetrix of PageSpeed Insights)
 - [ ] Geen kapotte links of ontbrekende assets op een enkele template
 
-### Plannen en Producten
+### Plannen en Producten {#plans-and-products}
 
 - [ ] Alle drie de plannen zijn actief en zichtbaar
 - [ ] Planbeschrijvingen zijn accuraat en niche-specifiek
@@ -42,7 +42,7 @@ Werk elk item af. Laat niets over.
 - [ ] Order bumps verschijnen correct tijdens de checkout
 - [ ] Beperkingen van plugins en thema's worden correct afgedwongen per plan
 
-### Checkout Flow
+### Checkout Flow {#checkout-flow}
 
 - [ ] Voltooi een volledige testaanmelding op elk plan (gebruik test betaalmodus)
 - [ ] Template selectie toont de juiste templates per plan
@@ -52,7 +52,7 @@ Werk elk item af. Laat niets over.
 - [ ] De klant kan direct inloggen op hun nieuwe site
 - [ ] Kortingscodes werken correct
 
-### Branding
+### Branding {#branding}
 
 - [ ] De inlogpagina toont FitSite branding
 - [ ] Het admin dashboard toont FitSite branding
@@ -60,7 +60,7 @@ Werk elk item af. Laat niets over.
 - [ ] Facturen worden correct weergegeven met uw bedrijfsgegevens
 - [ ] De marketingwebsite is live en linkt naar het checkout formulier
 
-### Onboarding
+### Onboarding {#onboarding}
 
 - [ ] De Quick Start widget verschijnt op nieuwe klant dashboards
 - [ ] Alle Quick Start links wijzen naar de juiste pagina's
@@ -68,7 +68,7 @@ Werk elk item af. Laat niets over.
 - [ ] Knowledge base artikelen zijn gepubliceerd en toegankelijk
 - [ ] De accountpagina toont de juiste planinformatie en upgrade-opties
 
-### Juridisch en Zakelijk
+### Juridisch en Zakelijk {#legal-and-business}
 
 - [ ] Servicevoorwaarden zijn gepubliceerd en gelinkt vanaf de checkout
 - [ ] Het privacybeleid is gepubliceerd en toegankelijk
@@ -77,11 +77,11 @@ Werk elk item af. Laat niets over.
 - [ ] De payment gateway staat in live modus (niet testmodus)
 - [ ] De belastingconfiguratie is correct voor uw jurisdictie
 
-## Soft Launch vs. Hard Launch
+## Soft Launch vs. Hard Launch {#soft-launch-vs-hard-launch}
 
 Overweeg een lancering in twee fasen:
 
-### Fase 1: Soft Launch
+### Fase 1: Soft Launch {#phase-1-soft-launch}
 
 Nodig 5-10 fitness studio-eigenaren uit om zich aan te melden vóór de publieke lancering. Dit zijn uw bèta klanten. Bied hen een aanzienlijke korting (50% korting voor het leven, of 3 maanden gratis) in ruil voor:
 
@@ -91,7 +91,7 @@ Nodig 5-10 fitness studio-eigenaren uit om zich aan te melden vóór de publieke
 
 Dit geeft je echte klantfeedback en live sites om te tonen voordat je het publiek opent.
 
-### Fase 2: Public Launch
+### Fase 2: Public Launch {#phase-2-public-launch}
 
 Zodra de feedback van de soft launch is verwerkt:
 
@@ -100,7 +100,7 @@ Zodra de feedback van de soft launch is verwerkt:
 - Begin met klantacquisitie (Les 11)
 - Kondig aan op relevante fitnessindustrie kanalen
 
-## Acties op de Lancering
+## Acties op de Lancering {#launch-day-actions}
 
 Op de dag dat je publiek wordt:
 
@@ -110,7 +110,7 @@ Op de dag dat je publiek wordt:
 4. **Wees beschikbaar** – uw eerste echte klanten hebben misschien hulp nodig, en een snelle reactie bouwt vertrouwen op.
 5. **Vier kort** – en ga dan weer aan het werk.
 
-## Wat kan misgaan
+## Wat kan misgaan {#what-can-go-wrong}
 
 Wees voorbereid op:
 
@@ -120,7 +120,7 @@ Wees voorbereid op:
 - **Prestaties onder belasting**: Als u een verkeerspiek krijgt, weet dan hoe u uw hosting kunt opschalen.
 - **Verwarring bij klanten**: Zorg dat uw knowledge base en supportkanalen klaarstaan.
 
-## Het FitSite Netwerk Tot Nu Toe
+## Het FitSite Netwerk Tot Nu Toe {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── LIVE ✓
 ```
 
-## Wat we in deze les hebben gebouwd
+## Wat we in deze les hebben gebouwd {#what-we-built-this-lesson}
 
 - **Een uitgebreide pre-launch checklist** die infrastructuur, content, betalingen en juridische zaken dekt.
 - **Een soft launch strategie** om echte feedback te krijgen voordat u publiek wordt.

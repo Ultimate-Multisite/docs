@@ -1,40 +1,46 @@
 ---
-title: Whakawātea Whakawātea
+title: Tohutoro Tautuhinga
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Whakamahi Tautokoa
+# Tohutoro Tautuhinga {#settings-reference}
 
-Ko tēnei manawa e whakatakihia i ngā whakaritenga (settings) e eora ana ki te whakahaere rawa-rawa o rā i te rā, me ngā whakawhiti nei i te mahi i te Ultimate Multisite.
+Ka aroturuki tēnei whārangi i ngā tautuhinga e pā ana ki te whakahaere o ia rā, me ngā panonitanga whanonga hou i Ultimate Multisite.
 
-## Ngā Tautoko Irahi
+## Ētahi Atu Kōwhiringa {#other-options}
 
-Ko te wāhi **Other Options** e pēnei i te whakataki: **Ultimate Multisite > Settings > Login & Registration**.
+Ka puta te wāhanga **Ētahi Atu Kōwhiringa** i raro i **Ultimate Multisite > Tautuhinga > Takiuru me te Rēhitatanga**.
 
-| Tautoko | Whakawāhi |
+| Tautuhinga | Whakamārama |
 |---|---|
-| **Enable Jumper** | E tōku te whakamahi i te taonga navigation (Jumper) ki te admin area. Whai i ai ki te whakawhiti tika ki ngā screen o Ultimate Multisite, ngā objects o te wāhi whānui (network), me ngā wāhi admin e kaha ana. Whakamutai i a ia akowhino ahau i te mea he tino kitea tēnei shortcut. |
+| **Whakahohea te Jumper** | Ka whakaatu i te taputapu whakatere tere Jumper ki te wāhanga kaiwhakahaere. Whakamahia hei peke tōtika ki ngā mata Ultimate Multisite, ngā ahanoa whatunga, me ngā ūnga kaiwhakahaere e tautokona ana. Monokia mēnā kāore koe e hiahia kia kitea tēnei ara poto. |
 
-## Whakawhiti Kōrero Whakamahi me Telemetry
+## Te pūrongo hapa me te telemetry {#error-reporting-and-telemetry}
 
-He whakatūwha i te whakarite whakamahi kōrero (error-reporting opt-in) i te wā o te settings page. He whakawhiti telemetry anoname (anonymous telemetry) e whakahau, ā, he kore UI (UI toggle) ki te whakatau i a ia.
+Kua tangohia te tautuhinga whakaae-mua mō te pūrongo hapa o mua i te whārangi tautuhinga. Kua monokia te telemetry ingoamuna, ā, kāore he whakakā UI hei whakahohe.
 
-Ko te mea i roto i ngā runbook mō te whakamahi me ngā screenshot mo te settings page, whakatika i ngā whakarāua (references) ki te whakawhiti kōrero whakamahi i te wā o te whakatūwha hou, kia kore ngā administrator e hiahia i te setting e hoki mai.
+Mēnā ka tiaki koe i ngā pukapuka whakahaere ā-roto, i ngā hopukanga mata rānei mō te whārangi tautuhinga, tangohia ngā tohutoro ki te āpure whakaae-mua pūrongo hapa tawhito kia kaua ngā kaiwhakahaere e kimi i tētahi tautuhinga kāore i reira ināianei.
 
-## Ngā Tautoko Whakarite Import/Export
+## Ngā tautuhinga kawemai/kaweake {#importexport-settings}
 
-Ko te tab **Import/Export** mōhihia i ngā whakaritenga e whakakawārie ana me te whakatoke tika ki **Ultimate Multisite > Site Export** mo ngā archive o te site me te wāhi whānui (network). Whakamahi te tab settings mō te whakamārama import/export, whakamahi i **Tools > Export & Import** mō te workflow o export/import o te site paku (single-site), ā, whakamahi i te Site Export tool i roto i ngā wā i runga i te mea e hiahia koe i he archive o Network Export mō te tino.
+Ka whakamārama te ripa tautuhinga **Kawemai/Kaweake** ko ēhea tautuhinga e whakahaeretia ana e ia, ā, ka hono tōtika ki **Ultimate Multisite > Kaweake Pae** mō ngā pūranga pae me ngā pūranga whatunga. Whakamahia te ripa tautuhinga mō te whirihoranga kawemai/kaweake, whakamahia **Ngā Taputapu > Kaweake me te Kawemai** mō te rerengamahi kaweake/kawemai pae-kotahi, ā, whakamahia te taputapu Kaweake Pae ina hiahia koe ki tētahi pūranga Kaweake Whatunga katoa.
 
-## Ngā Tautoko Connector AI Provider
+## Whakatūpato toenga Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Ngā tautoko connector AI provider e whakatika ana i ngā account pool OAuth e kaha ana:
+Ina hono te tāpiritanga Domain Seller ki HostAfrica, ka kite ngā kaiwhakahaere whatunga ināianei i tētahi whakatūpato toenga-iti ka taea te whakakore, ina he iti rawa te toenga o te pūkete kaihoko-anō mō te tukatuka rēhitatanga, whakahoutanga rānei o ngā domain kia pono.
 
-| Pākehā/Pūtaiao | Whakaritenga (Setup flow) |
+Me whakaarohia tēnei pānui hei whakatūpato whakahaere: whakakīia te toenga kaihoko-anō HostAfrica i mua i te whakaae ki ētahi atu rēhitatanga domain kua utua, kātahi ka hoki ki ngā tautuhinga Domain Seller, ki te mata aroturuki-domain rānei, hei whakaū ka taea tonu ngā rēhitatanga me ngā whakahoutanga te haere noa.
+
+## Ngā tautuhinga tūhono kaiwhakarato AI {#ai-provider-connector-settings}
+
+Ka whakaatu ināianei ngā tautuhinga tūhono kaiwhakarato AI i ngā puna pūkete OAuth e tautokona ana anake:
+
+| Kaiwhakarato | Rerenga whakarite |
 |---|---|
-| **Anthropic Max** | Whakawhiti (Connect) akaupā Anthropic Max ki te button OAuth. Whakarongo ki te whakataunga manu (manual OAuth fallback) i roto i ngā browser sandboxed kia taea ai te redirect automatically. |
-| **OpenAI ChatGPT/Codex** | Whakawhiti akaupā ChatGPT mō te wahi workflow OAuth. Ngā mahi e hua ana i te Connector-supported can use ChatGPT Codex tool calls i muri i te whakatō akaupā. |
-| **Google AI Pro** | Whakawhiti akaupā Google AI Pro mō OAuth, ā, whakaora (refresh) te connector i roto i te wakamārama i te whakataunga akaupā e hoki ana i te list o akaupā i tēnei wakamārama. |
+| **Anthropic Max** | Honoa tētahi, ētahi rānei o ngā pūkete Anthropic Max mā te pātene OAuth. Whakamahia te kōwhiringa ā-ringa OAuth ina kāore e taea e tētahi pūtirotiro kua herea ki te sandbox te whakaoti aunoa i te whakawhitinga. |
+| **OpenAI ChatGPT/Codex** | Honoa ngā pūkete ChatGPT mā taua rerengamahi puna OAuth anō. Ka taea e ngā mahi e tautokona ana e te tūhono te whakamahi i ngā karanga taputapu ChatGPT Codex i muri i te hononga o te pūkete. |
+| **Google AI Pro** | Honoa ngā pūkete Google AI Pro mā OAuth, kātahi ka whakahoungia te tūhono mēnā kāore te rārangi pūkete e whakahou wawe. |
 
-Noa e noho Cursor Pro he pūtaiao e hiahia atu ki te whakamahi. Whakaa (Remove) ngā screenshot mō te whaiaro, runbooks, auatanga whakatō (onboarding steps), kia whai i te whakaritenga o Cursor Pro setup fields ahau.
+Kua kore a Cursor Pro e tautokona hei kaiwhakarato. Tangohia ngā hopukanga mata ā-roto tawhito, ngā pukapuka whakahaere, ngā hipanga whakauru kaiwhakamahi rānei e whakahua ana i ngā āpure whakarite Cursor Pro, i ngā ara tūhono rānei.
 
-I roto i te wakamārama akaupā e hoki ana ki te whakamahi he tino pai, takea email valid (valid email address) mō te akaupā e whakaora ake ana peheke kia whakatō akaupā kia whakatika i ngā mahi e hua ana i te Connector.
+Ina tāpiri, ina tango rānei i ngā pūkete kaiwhakarato, tāurua he wāhitau īmēra whaimana mō te pūkete e whakahoungia ana, e mukua ana rānei, ā, tiakina ngā tautuhinga kaiwhakarato i mua i te whakamātau i ngā mahi e tautokona ana e te tūhono.

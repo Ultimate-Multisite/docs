@@ -1,124 +1,124 @@
 ---
-title: E-mail va yirik xabar yuborish
+title: ئېلخەتلەر ۋە كەڭ تارقىتىشلارنى ئەۋەتىش
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ইমেল gönderme və Yayım (v2)
+# ئېلخەت ۋە تارقىتىشلارنى ئەۋەتىش (v2) {#sending-emails-and-broadcasts-v2}
 
-_**ÇOX VACİB QEYD: Bu məqalə Ultimate Multisite versiya 2.x-i nəzərdə tutur.**_
+_**مۇھىم ئەسكەرتىش: بۇ ماقالە Ultimate Multisite 2.x نەشرىگە قارىتىلغان.**_
 
-Ultimate Multisite-da müştərilərlə əlaqə qurmaq üçün həm birbaşa e-poçt göndərməyə, həm də onların admin panellərinə xəbər yaymaq üçün elanlar göndərməyə imkan verən bir funksiya var.
+Ultimate Multisite سىزگە نىشانلانغان بىر ئىشلەتكۈچىگە ياكى بىر گۇرۇپپا ئىشلەتكۈچىلەرگە ئېلخەت ئەۋەتىش، شۇنداقلا ئېلانلارنى تارقىتىش ئۈچۈن ئۇلارنىڭ باشقۇرۇش تاختىسىدا ئۇقتۇرۇشلارنى كۆرسىتىش ئارقىلىق خېرىدارلىرىڭىز بىلەن ئالاقە قىلىش ئىمكانىيىتى بېرىدىغان ئىقتىدار بىلەن كېلىدۇ
 
-## Yayım (Broadcasts) ilə müştərilərin panellərinə admin xəbərləri əlavə edin
+## Broadcasts ئارقىلىق خېرىدارلىرىڭىزنىڭ باشقۇرۇش تاختىسىغا باشقۇرغۇچى ئۇقتۇرۇشلىرىنى قوشۇڭ {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ultimate Multisite-ın yayım funksiyasını istifadə edərək, siz **admin xəbərlərini** istifadəçinizin alt saytının admin paneli (subsite admin dashboard) üzərinə əlavə edə bilərsiniz.
+Ultimate Multisite تارقىتىش ئىقتىدارىنى ئىشلىتىپ، ئىشلەتكۈچىڭىزنىڭ تارماق تور بېكىتى باشقۇرۇش تاختىسىغا **باشقۇرغۇچى ئۇقتۇرۇشلىرى**نى قوشالايسىز.
 
-Bu, sistemin texniki baxımdan təmizlənməsi kimi elanlar etmək və ya mövcud müştərilərə yeni məhsullar və xidmətlər təklif etmək kimi işlər görmək istəsəniz çox faydalıdır. Admin xəbər sizin istifadəçinizin paneli üzərində belə görünəcək.
+سىستېما ئاسراش ياكى مەۋجۇت ئىشلەتكۈچىلىرىڭىزگە يېڭى مەھسۇلاتلار ياكى مۇلازىمەتلەرنى تەمىنلەش قاتارلىق ئېلانلارنى قىلىشىڭىز كېرەك بولسا، بۇ ئىنتايىن پايدىلىق. باشقۇرغۇچى ئۇقتۇرۇشى ئىشلەتكۈچىڭىزنىڭ باشقۇرۇش تاختىسىدا مۇنداق كۆرۈنىدۇ.
 
-<!-- Screenshot unavailable: Müştəri alt saytının paneli üzərində admin xəbər yayımı göstərilir -->
+<!-- ئېكران كۆرۈنۈشى يوق: خېرىدارنىڭ تارماق تور بېكىتى باشقۇرۇش تاختىسىدا كۆرسىتىلگەن باشقۇرغۇچى ئۇقتۇرۇشى تارقىتىشى -->
 
-Admin xəbərini başlatmaq üçün şəbəkə admin panellərinizə gedin və **Ultimate Multisite** menyusunun altında **Broadcasts** (Yayımlar) seçənəyini tapacaqsınız.
+باشقۇرغۇچى ئۇقتۇرۇشىنى باشلاش ئۈچۈن، تور باشقۇرغۇچى باشقۇرۇش تاختىڭىزغا كىرىڭ ۋە **Ultimate Multisite** تىزىملىكى ئاستىدا **Broadcasts** تاللانمىسىنى تاپالايسىز.
 
-![Ultimate Multisite adminində Yayımlar siyahısı səhifəsi](/img/admin/broadcasts-list.png)
+![Ultimate Multisite باشقۇرغۇچىسىدىكى Broadcasts تىزىملىك بېتى](/img/admin/broadcasts-list.png)
 
-Mövcud yayımları redaktə edə bilərsiniz:
+مەۋجۇت تارقىتىشلارنىمۇ تەھرىرلىيەلەيسىز:
 
-![Yayım redaktə interfeysi](/img/admin/broadcast-edit.png)
+![تارقىتىش تەھرىرلەش ئارايۈزى](/img/admin/broadcast-edit.png)
 
-Bu səhifədən yuxarıdakı **Add Broadcast** (Yayım əlavə et) düyməsinə klikləyin.
+بۇ بەتتىن، ئۈستىدىكى **تارقىتىش قوشۇش** كۇنۇپكىسىنى چېكىڭ.
 
-Bu, hansı növ yayımı göndərmək istədiyinizi seçə biləcəyiniz Add broadcast modal pəncərəsini açacaq.
+بۇ تارقىتىش قوشۇش مودال كۆزنىكىنى چىقىرىدۇ، بۇ يەردە ئەۋەتمەكچى بولغان تارقىتىش تۈرىنى تاللىيالايسىز.
 
-Sadəcə **Message** (Məktub/Xəbər) seçin və sonra **Next Step** (Növbəti addım) düyməsinə basın.
+داۋاملاشتۇرۇپ **ئۇچۇر**نى تاللاڭ، ئاندىن **كېيىنكى قەدەم** كۇنۇپكىسىنى چېكىڭ.
 
-![Message seçilmiş yayım əlavə et modal pəncərəsi](/img/admin/broadcast-add-message.png)
+![ئۇچۇر تاللانمىسى تاللانغان تارقىتىش قوشۇش مودالى](/img/admin/broadcast-add-message.png)
 
-Növbəti pəncərə sizdən ya **Target customer** (Hədəf müştəri) və ya **Target product** (Hədəf məhsul) soruşacaq. Qeyd edin ki, birbiri ilə daha çox istifadəçini və ya daha çox məhsulu seçə bilərsiniz.
+كېيىنكى كۆزنەك سىزدىن يا **نىشان خېرىدار** ياكى **نىشان مەھسۇلات**نى سورايدۇ. بىردىن ئارتۇق ئىشلەتكۈچى ياكى بىردىن ئارتۇق مەھسۇلات تاللىيالايدىغانلىقىڭىزغا دىققەت قىلىڭ.
 
-کاربر حساب یا محصول جستجو کردن برای پیدا کردنشون باید کلمه مورد نظرت رو داخل فیلد تایپ کنی.
+ئىشلەتكۈچى Account ياكى مەھسۇلات ئىزدەش ئۈچۈن، سۆز ئاچقۇچنى سۆز بۆلىكىگە كىرگۈزۈشنى باشلىشىڭىز كېرەك.
 
-زیر فیلد **Message type** (نوع پیام)، می‌تونی رنگ اطلاعیه رو انتخاب کنی. این کار اهمیت فوری پیام شما رو بیشتر نشان میده.
+**ئۇچۇر تۈرى** سۆز بۆلىكى ئاستىدا، ئۇقتۇرۇشنىڭ رەڭگىنى تاللىيالايسىز. بۇ ئۇچۇرىڭىزنىڭ جىددىيلىكىنى گەۋدىلەندۈرىدۇ.
 
-بعد می‌تونی روی **Next Step** کلیک کنی.
+ئاندىن **كېيىنكى قەدەم**نى چېكىڭ.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![ئۇچۇر تارقىتىشى ئۈچۈن نىشان خېرىدارلار، نىشان مەھسۇلات ۋە ئۇچۇر تۈرى سۆز بۆلەكلىرى](/img/admin/broadcast-message-targets.png)
 
-پنجره بعدی جاییه که می‌تونی با وارد کردن موضوع و محتوای پیام مورد نظرت برای کاربران، شروع به نوشتن پیام کنی.
+كېيىنكى كۆزنەكتە، ئىشلەتكۈچىلەرگە تارقاتماقچى بولغان تېما ۋە مەزمۇن/ئۇچۇرنى كىرگۈزۈپ، ئۇچۇرىڭىزنى يېزىشنى باشلىيالايسىز.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![تۈزۈش قەدىمىدىكى تارقىتىش ئۇچۇرى تېمىسى ۋە مەزمۇن تەھرىرلىگۈچىسى](/img/admin/broadcast-edit.png)
 
-بعد از ساختن پیام، می‌تونی روی دکمه **Send** کلیک کنی.
+ئۇچۇرىڭىزنى قۇرغاندىن كېيىن، **ئەۋەتىش** كۇنۇپكىسىنى باسالايسىز.
 
-و همین. اطلاعیه مدیر باید بلافاصله روی داشبورد کاربر نمایش داده بشه.
+مانا شۇ. باشقۇرغۇچى ئۇقتۇرۇشى دەرھال ئىشلەتكۈچىڭىزنىڭ باشقۇرۇش تاختىسىدا كۆرۈنۈشى كېرەك.
 
-## ارسال ایمیل به مشتریان خود
+## خېرىدارلىرىڭىزغا ئېلخەت ئەۋەتىڭ {#send-emails-to-your-customers}
 
-با استفاده از قابلیت پخش (broadcast feature) Ultimate Multisite، می‌تونی یک ایمیل به کاربران خود بفرستی. شما این امکان رو دارید که ایمیل رو فقط برای کاربران خاصی بفرستی یا بر اساس محصول یا طرحی که آنها مشترک هستن، روی یک گروه خاص از کاربران هدف قرار بدی.
+Ultimate Multisite تارقىتىش ئىقتىدارىنى ئىشلىتىپ، ئىشلەتكۈچىلىرىڭىزگە ئېلخەت ئەۋەتەلەيسىز. ئېلخەتنى پەقەت مەلۇم ئىشلەتكۈچىلەرگە ئەۋەتىش ياكى ئۇلار مۇشتەرى بولغان مەھسۇلات ياكى پىلانغا ئاساسەن مەلۇم بىر ئىشلەتكۈچى گۇرۇپپىسىنى نىشانلاش تاللانمىڭىز بار.
 
-برای شروع پخش ایمیل، به داشبورد مدیر شبکه (network admin dashboard) خود برو و در منوی Ultimate Multisite، گزینه Broadcast رو پیدا خواهی کرد.
+ئېلخەت تارقىتىشىنى باشلاش ئۈچۈن، تور باشقۇرغۇچى باشقۇرۇش تاختىڭىزغا كىرىڭ ۋە Ultimate Multisite تىزىملىكى ئاستىدا Broadcast تاللانمىسىنى تاپالايسىز.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![ئېلخەت تارقىتىشى ئۈچۈن باشلىنىش نۇقتىسى سۈپىتىدە ئىشلىتىلىدىغان Broadcasts تىزىملىك بېتى](/img/admin/broadcasts-list.png)
 
-از این صفحه، روی دکمه **Add broadcast** در بالا کلیک کن.
+بۇ بەتتىن، ئۈستىدىكى **تارقىتىش قوشۇش** كۇنۇپكىسىنى چېكىڭ.
 
-این کار پنجره مودال (modal window) Add broadcast رو باز می‌کنه که می‌تونی انتخاب کنی چه نوع پخشی رو می‌خوای بفرستی. برو و **Email** رو انتخاب کن بعد روی دکمه **Next Step** کلیک کن.
+بۇ تارقىتىش قوشۇش مودال كۆزنىكىنى چىقىرىدۇ، بۇ يەردە ئەۋەتمەكچى بولغان تارقىتىش تۈرىنى تاللىيالايسىز. داۋاملاشتۇرۇپ **ئېلخەت**نى تاللاڭ، ئاندىن **كېيىنكى قەدەم** كۇنۇپكىسىنى چېكىڭ.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![ئېلخەت تاللانمىسى تاللانغان تارقىتىش قوشۇش مودالى](/img/admin/broadcast-add-email.png)
 
-پنجره بعدی ازت می‌پرسه که یا **Target customer** (مشتری هدف) یا **Target product** (محصول هدف) رو انتخاب کنی. توجه داشته باش که می‌تونی بیش از یک کاربر یا بیش از یک محصول را انتخاب کنی.
+كېيىنكى كۆزنەك سىزدىن يا **نىشان خېرىدار** ياكى **نىشان مەھسۇلا** تنى سورايدۇ. بىردىن ئارتۇق ئىشلەتكۈچى ياكى بىردىن ئارتۇق مەھسۇلات تاللىيالايدىغانلىقىڭىزغا دىققەت قىلىڭ.
 
-یک کاربر حساب یا محصول را جستجو کردن برای هر دو، باید کلمه کلیدی را داخل فیلد تایپ کنید.
+ئىشلەتكۈچى Account ياكى مەھسۇلات ئىزدەش ئۈچۈن، سۆز ئاچقۇچنى سۆز بۆلىكىگە كىرگۈزۈشنى باشلىشىڭىز كېرەك.
 
-وقتی مخاطب هدف خود را انتخاب کردید، می‌توانید روی **Next Step** کلیک کنید.
+نىشان ئاڭلىغۇچىلىرىڭىز تاللانغاندىن كېيىن، **كېيىنكى قەدەم**نى چېكىڭ.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![ئېلخەت تارقىتىشى ئۈچۈن نىشان خېرىدارلار ۋە نىشان مەھسۇلات تاللاش](/img/admin/broadcast-email-targets.png)
 
-پنجره بعدی جایی است که می‌توانید با وارد کردن موضوع و محتوا/پیامی که می‌خواهید به کاربران بفرستید، شروع به نوشتن ایمیل خود کنید.
+كېيىنكى كۆزنەكتە، ئىشلەتكۈچىلەرگە ئەۋەتمەكچى بولغان تېما ۋە مەزمۇن/ئۇچۇرنى كىرگۈزۈپ، ئېلخىتىڭىزنى يېزىشنى باشلىيالايسىز.
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- ئېكران كۆرۈنۈشى يوق: تۈزۈش قەدىمىدىكى ئېلخەت تارقىتىشى تېمىسى ۋە مەزمۇن تەھرىرلىگۈچىسى -->
 
-بعد از ساخت پیام خود، می‌توانید روی دکمه **Send** کلیک کنید.
+ئۇچۇرىڭىزنى قۇرغاندىن كېيىن، **ئەۋەتىش** كۇنۇپكىسىنى باسالايسىز.
 
-و این هم اینکه چقدر ارسال ایمیل به کاربران نهایی با قابلیت broadcast خیلی آسان است.
+تارقىتىش ئىقتىدارىنى ئىشلىتىپ ئاخىرقى ئىشلەتكۈچىلىرىڭىزگە ئېلخەت ئەۋەتىش مانا شۇنچىلىك ئاسان.
 
-## ایمیل‌های سیستمی (System emails)
+## سىستېما ئېلخەتلىرى {#system-emails}
 
-ایمیل‌های سیستمی در Ultimate Multisite، آن **اطلاعیه‌های خودکار** هستند که سیستم بعد از کارهای خاصی مثل ثبت‌نام، پرداخت، نگاشت دامنه و غیره ارسال می‌کند. این ایمیل‌ها را می‌توان از تنظیمات Ultimate Multisite ویرایش یا تغییر داد. همچنین یک قابلیت وجود دارد که به شما اجازه می‌دهد تنظیمات موجود را از نصب دیگر Ultimate Multisite بازنشانی (reset) کرده و وارد کنید (import).
+Ultimate Multisite دىكى سىستېما ئېلخەتلىرى بولسا تىزىملىتىش، پۇل تۆلەش، دائىرە خەرىتىلەش قاتارلىق مەلۇم ھەرىكەتلەردىن كېيىن سىستېما تەرىپىدىن ئەۋەتىلىدىغان **ئاپتوماتىك ئۇقتۇرۇشلار**دۇر. بۇ ئېلخەتلەرنى Ultimate Multisite تەڭشەكلىرىدىن تەھرىرلەشكە ياكى ئۆزگەرتىشكە بولىدۇ. ئۇ يەنە باشقا بىر Ultimate Multisite ئورنىتىشىدىن مەۋجۇت تەڭشەكلەرنى ئەسلىگە قايتۇرۇش ۋە ئىمپورت قىلىش ئىمكانىيىتى بېرىدىغان ئىقتىدار بىلەنمۇ كېلىدۇ.
 
-### بازنشانی و وارد کردن (Resetting & Importing)
+### ئەسلىگە قايتۇرۇش ۋە ئىمپورت قىلىش {#resetting--importing}
 
-نسخه‌های جدید Ultimate Multisite، و همچنین افزونه‌ها، گاهی ایمیل‌های جدیدی ثبت می‌کنند.
+يېڭى Ultimate Multisite نەشرلىرى، شۇنداقلا قوشۇمچىلارمۇ، پات-پات يېڭى ئېلخەتلەرنى تىزىملىتىدۇ ۋە تىزىملىتىشى مۇمكىن.
 
-برای جلوگیری از تداخل و مشکلات دیگر، **ما قالب‌های ایمیل جدید را به صورت خودکار به عنوان ایمیل‌های سیستمی در نصب شما اضافه نمی‌کنیم**، مگر اینکه برای عملکرد صحیح یک ویژگی خاص حیاتی باشند.
+توقۇنۇش ۋە باشقا مەسىلىلەرنىڭ ئالدىنى ئېلىش ئۈچۈن، بېرىلگەن ئىقتىدارنىڭ توغرا ئىشلەشى ئۈچۈن زۆرۈر بولمىسىلا، **بىز يېڭى ئېلخەت قېلىپلىرىنى ئورنىتىشىڭىزغا ئاپتوماتىك ھالدا سىستېما ئېلخەتلىرى قىلىپ قوشمايمىز**.
 
-با این حال، سوپر ادمین‌ها (super admins) و آژانس‌ها می‌توانند این ایمیل‌های تازه ثبت شده را از طریق ابزار importer وارد کنند. این فرآیند یک ایمیل سیستمی جدید با محتوا و تنظیمات قالب ایمیل جدید ایجاد می‌کند تا سوپر ادمین بتواند هر تغییری که بخواهد ایجاد کند یا آن را همان‌طور که هست نگه دارد.
+لېكىن، دەرىجىدىن تاشقىرى باشقۇرغۇچىلار ۋە ۋاكالەتچىلەر بۇ يېڭى تىزىملانغان ئېلخەتلەرنى ئىمپورت قىلغۇچ قورالى ئارقىلىق ئىمپورت قىلالايدۇ. بۇ جەريان يېڭى ئېلخەت قېلىپىنىڭ مەزمۇنى ۋە سەپلىمىسى بىلەن يېڭى بىر سىستېما ئېلخىتى قۇرىدۇ، شۇنىڭ بىلەن دەرىجىدىن تاشقىرى باشقۇرغۇچى خالىغان ئۆزگەرتىشلەرنى قىلالايدۇ ياكى ئۇلارنى ئەسلى ھالىتىدە ساقلىيالايدۇ.
 
-#### نحوه وارد کردن ایمیل‌های سیستمی (How to import system emails)
+#### سىستېما ئېلخەتلىرىنى قانداق ئىمپورت قىلىش {#how-to-import-system-emails}
 
-Ultimate Multisite Ayarlar saytına gidin ve **Emails** sekmesine geçin.
+Ultimate Multisite تەڭشەكلىرى بېتىڭىزگە كىرىپ، **ئېلخەتلەر** بەتكۈچىگە يۆتكىلىڭ.
 
-![Ultimate Multisite ayarlarındaki Emails sekmesi, Sistem E-postaları bölümünü gösteriyor](/img/config/settings-emails-tab.png)
+![Ultimate Multisite تەڭشەكلىرىدىكى سىستېما ئېلخەتلىرى بۆلىكىنى كۆرسىتىدىغان ئېلخەتلەر بەتكۈچى](/img/config/settings-emails-tab.png)
 
-Sonra, yan menüden **Customize System Emails** düğmesine tıklayın.
+ئاندىن، يان بالداقتا **سىستېما ئېلخەتلىرىنى خاسلاشتۇرۇش** كۇنۇپكىسىنى چېكىڭ.
 
-<!-- Screenshot unavailable: Sistem E-Postalarını Özelleştirme düğmesi, Sistem E-Postaları yan panelinde gösteriliyor -->
+<!-- ئېكران كۆرۈنۈشى يوق: سىستېما ئېلخەتلىرى يان بالداق تاختىسىدىكى سىستېما ئېلخەتلىرىنى خاسلاشتۇرۇش كۇنۇپكىسى -->
 
-Sistem E-Postaları sayfasında en üstte **Reset & Import** eylem düğmesini göreceksiniz. Bu düğmeye tıkladığınızda import ve sıfırlama penceresi açılacaktır.
+سىستېما ئېلخەتلىرى بېتىدە، ئۈستىدە **ئەسلىگە قايتۇرۇش ۋە ئىمپورت قىلىش** ھەرىكەت كۇنۇپكىسىنى كۆرىسىز. ئۇ كۇنۇپكىنى چەكسىڭىز، ئىمپورت ۋە ئەسلىگە قايتۇرۇش مودال كۆزنىكى ئېچىلىشى كېرەك.
 
-![Sistem E-Postaları yönetim sayfasındaki Reset veya Import eylem düğmesi](/img/admin/system-emails-reset-import.png)
+![سىستېما ئېلخەتلىرى باشقۇرغۇچى بېتىدىكى ئەسلىگە قايتۇرۇش ياكى ئىمپورت قىلىش ھەرىكەت كۇنۇپكىسى](/img/admin/system-emails-reset-import.png)
 
-Ardından, Import Emails seçeneklerini açarak hangi sistem e-postalarının içe aktarılabileceğini görebilirsiniz.
+ئاندىن، قايسى سىستېما ئېلخەتلىرىنى ئىمپورت قىلىشقا بولىدىغانلىقىنى كۆرۈش ئۈچۈن ئېلخەتلەرنى ئىمپورت قىلىش تاللانمىلىرىنى ئالماشتۇرالايسىز.
 
-<!-- Screenshot unavailable: Import Emails seçenekleri genişletilmiş olan Reset ve Import modalı -->
+<!-- ئېكران كۆرۈنۈشى يوق: ئىمپورت ئېلخەت تاللانمىلىرى كېڭەيتىلگەن قايتا تەڭشەش ۋە ئىمپورتلاش مودالى -->
 
-#### Sistem E-Postalarını Sıfırlama
+#### سىستېما ئېلخەتلىرىنى قايتا تەڭشەش {#reseting-system-emails}
 
-Bazen, belirli bir e-posta şablonuna yaptığınız değişikliklerin artık işe yaramadığını fark edebilir ve onu **varsayılan durumuna** sıfırlamak isteyebilirsiniz.
+بەزى ۋاقىتلاردا، مەلۇم بىر ئېلخەت قېلىپىغا قىلغان ئۆزگەرتىشلىرىڭىزنىڭ ئەمدى سىزگە ماس كەلمەيدىغانلىقىنى ھېس قىلىسىز ۋە ئۇنى ئۆزىنىڭ **كۆڭۈلدىكى ھالىتى**گە قايتا تەڭشىمەكچى بولىسىز.
 
-Bu durumlarda iki seçeneğiniz var: ya sistem e-postasını tamamen silip (yukarıdaki talimatları kullanarak) tekrar içe aktarabilirsiniz - bu, gönderim metriklerini ve diğer şeyleri sileceği için bu yöntem en az tercih edilen yöntemdir.
+بۇنداق ئەھۋاللاردا، سىزدە ئىككى تاللاش بار: سىستېما ئېلخېتىنى ئاددىيلا ئۆچۈرۈپ، ئۇنى قايتا ئىمپورتلىسىڭىز بولىدۇ (يۇقىرىدىكى كۆرسەتمىلەرنى ئىشلىتىپ) - بۇ ئەۋەتىش ئۆلچەملىرى ۋە باشقا نەرسىلەرنى ئۆچۈرۈۋېتىدۇ، شۇڭا بۇ ئۇسۇل ئەڭ ئاز تەۋسىيە قىلىنىدۇ.
 
-Ya da o e-posta şablonunu sıfırlamak için **Reset & Import tool**'u kullanabilirsiniz.
+ياكى ئۇ ئېلخەت قېلىپىنى قايتا تەڭشەش ئۈچۈن **قايتا تەڭشەش ۋە ئىمپورتلاش قورالى**نى ئىشلىتەلەيسىز.
 
-Bir e-posta şablonunu sıfırlamak için yukarıdaki adımları izleyip Reset & Import aracına ulaşırsınız ve ardından **Reset** seçeneğini açıp varsayılan içeriğe geri döndürmek istediğiniz e-postaları seçebilirsiniz.
+ئېلخەت قېلىپىنى قايتا تەڭشەش ئۈچۈن، يۇقىرىدىكى قەدەملەرگە ئەگىشىپ قايتا تەڭشەش ۋە ئىمپورتلاش قورالىغا يەتكۈچە داۋاملاشتۇرالايسىز، ئاندىن **قايتا تەڭشەش** تاللانمىسىنى ئېچىپ، كۆڭۈلدىكى مەزمۇنىغا قايتۇرماقچى بولغان ئېلخەتلەرنى تاللاڭ.
 
-<!-- Screenshot unavailable: Reset ve Import seçenekleri genişletilmiş olan Reset E-posta sıfırlama modalı -->
+<!-- ئېكران كۆرۈنۈشى يوق: قايتا تەڭشەش ئېلخەت تاللانمىلىرى كېڭەيتىلگەن قايتا تەڭشەش ۋە ئىمپورتلاش مودالى -->

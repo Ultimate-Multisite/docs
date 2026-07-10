@@ -4,13 +4,13 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load
+# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Bu aksiyon, geliştiricilerin kendi barındırma sağlayıcı entegrasyonlarını wp eklentileri aracılığıyla eklemesine olanak tanır.
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) at line 1107

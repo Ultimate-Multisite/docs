@@ -3,13 +3,13 @@ title: Birinji Abonamentli Mahsuluny Döretmek
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ilkinji Abonament Mahsulatyňy Döretmek (v2)
+# Ilkinji Abonament Mahsulatyňy Döretmek (v2) {#creating-your-first-subscription-product-v2}
 
 _**ÄHMIY HABAR: Bu makale diňe Ultimate Multisite 2.x sanyny ulanyjylar üçin. Eger siz 1.x sanyny ulanyp başlasaňyz,**_ **bu makalany okap geçiň.**_
 
 Şirketini işlemek we potentsial ulanyjylara hyzmatlaryňyzy satmaga başlamagy üçin size dürli abonament opsionalary gerek. Bu mahsulatlary nädip döredip bilersiňiz? Näme türleri teklip edip bilerisiz? Bu makalede mahsuplar barada bilmeniz gereken ähli zatlary görkezeli.
 
-## Mahsulatyň Türü
+## Mahsulatyň Türü {#product-type}
 
 Ultimate Multisite bilen siz müşderilere iki görnüşde mahsulatlary teklip edip bilersiňiz: **planlar** we **add-ons (Order Bump)**. Add-ons iki görnüşe bölünip bilner: **paketler** we **hizmatlar**. Olaryň arasyndaky tapawudy we aýratynlyklary indiki bölümde görkezeli.
 
@@ -19,7 +19,7 @@ Ultimate Multisite bilen siz müşderilere iki görnüşde mahsulatlary teklip e
 
   * **Hizmatlar**: Ultimate Multisite-yň işlemekde üýtgeşmeýän add-ons-lar. Olar müşderi satyn alyp biljek planlaryna goşmaça, siz ol üçin ýerine ýetirip biljek tapgyrlar bolup biler. Mysal üçin, müşderiniz bir sahypa üçin icazä berýän plan satyn alsa we bu sahypany tasawur etmek üçin ek hizmeti hem tölemegi teklip etse.
 
-## Mahsulatlary Dolandyrmak
+## Mahsulatlary Dolandyrmak {#managing-products}
 
 Birçok adam üçin Ultimate Multisite-da **Products** sekmasyny (**Ultimate Multisite > Products**) geleneksel hosting ortamadaky planlar bilen deňeşdirip düşünebilirler.
 
@@ -29,7 +29,7 @@ Bu bölek size Ultimate Multisite-yň bu möhüim esasyny düşündirmegi üpjü
 
 ![Products list page](/img/config/products-list.png)
 
-## Products goşmak
+## Products goşmak {#adding-products}
 
 Plan, paket ýa-da hyzmat bolsa hem, täze bir zatı kesgitlemek üçin girýeterlik **Ultimate Multisite > Products > Add Product** arkaly bolup biler.
 
@@ -39,13 +39,13 @@ Arayüzde iki esasy bölümi bar. Sol tarapda produkty kesgitlemekde kömek edý
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Tasyrma (Description)
+### Tasyrma (Description) {#description}
 
 Esasy produkt maglumatlary produkt adyny we taslamasyny bermegi arkaly kesgitlemek mümkin. Bu belli belgiler plan we bahalaýyş seçimi, hasapnamalar, ýokarlandyrmalar we şeýle zatlar gerek bolan her ýerde görkezilýär.
 
 ![Product description section](/img/config/product-description.png)
 
-### Bahalaýyş Türlemi (Pricing Type)
+### Bahalaýyş Türlemi (Pricing Type) {#pricing-type}
 
 Arayüzüň sag tarapda esas bahasy kesgitlemek mümkin.
 
@@ -53,7 +53,7 @@ Arayüzüň sag tarapda esas bahasy kesgitlemek mümkin.
 
 Ultimate Multisite üç dürli bahalaýyş türlerini goldaýar. **paid** (tölen) opsiyasy ulgam administratoryna produktyň bahasy we hasaplama oralary barada maglumat bermegi soraýar.
 
-### Bahalaýyş (Pricing)
+### Bahalaýyş (Pricing) {#pricing}
 
 Bahsa komponent esasy produkt bahasy we hasaplama aralygyny kesgitleýär.
 
@@ -61,7 +61,7 @@ Bahsa komponent esasy produkt bahasy we hasaplama aralygyny kesgitleýär.
 
 bu belgeye görä çyzyk $29.99 narxı, 1 aýyl döwürde saklamak bilen her aý bu mebläge $29.99 toplanmaga başlanar. Şonuňla, $89.97 narxyny we 3 aý döwürde saklamak bilen her çeyrek bu mebläge toplanýar.
 
-### Billing Cycles (Toplanma Döwürleri)
+### Billing Cycles (Toplanma Döwürleri) {#billing-cycles}
 
 Billing Cycles bölümi ýuxurdy görkezilen toplanma aralygyň gaparyşyklaryny kesgitleýär we bu umumy şertnametalarda ýa-da belli wagtlarynda düşündirilýär.
 
@@ -69,7 +69,7 @@ Billing Cycles bölümi ýuxurdy görkezilen toplanma aralygyň gaparyşyklaryny
 
 Mesele, 1 aý aralygy we 12 toplanma döwürü bilen $29.99 narxyny bolan bir meblägiň her aý bu mebläge $29.99 toplanmaga başlanar we bu 12 aý boyunca bu mebläge ýol bermek üçin bu görkezme kesgitlenir. Başgaça aýdylanda, bu görkezme 12 aý üçin her aý $29.99 narxyny belli narx bilen kesgitleýär we soňra toplanma durdurylýar.
 
-### Trial Period (Sazlama Döwürü)
+### Trial Period (Sazlama Döwürü) {#trial-period}
 
 Offer trial toggle-y işjeňleşdirilse, ulanyjy ağnamak üçin mebläge sazlama döwürini kesgitlemek mümkin bolan bolýar.
 
@@ -77,7 +77,7 @@ Offer trial toggle-y işjeňleşdirilse, ulanyjy ağnamak üçin mebläge sazlam
 
 Sazlama döwrü boýunça, iňlisler meblägi iselemegi üçin we sazlama döwrü bitdirilýänçä toplanma edilmez.
 
-### Setup Fee (Gurluşylyk Maslahaty)
+### Setup Fee (Gurluşylyk Maslahaty) {#setup-fee}
 
 Size planlaryňize gurluşylyk maslahaty hem goýap bilersiňiz.
 
@@ -85,7 +85,7 @@ Size planlaryňize gurluşylyk maslahaty hem goýap bilersiňiz.
 
 Bu, iňlisler narxyny bilen bagly bir hasar bermegi aňladýar; bu, size kesgitlenipdir we ilkinji toplanma üçin (narx planyna goşmaça) hökmançylyk maslahaty bolan ek summa.
 
-### Active (Işjeňlikde)
+### Active (Işjeňlikde) {#active}
 
 Active toggle-i işjeňleşdirmek, meblägi iňlisler üçin täze ýazgylary üçin bar bolup bolmadykdyr diýip kesgitleýär.
 
@@ -93,13 +93,13 @@ Active toggle-i işjeňleşdirmek, meblägi iňlisler üçin täze ýazgylary ü
 
 Eger bu plan üçin bar bolsa, toggle-i disabled (deaktif) duruma goýdýan zat, onu plan bilen bilelikden çykaryp gelejekde täze ýazgylara ýa-da planlaryna ýüklemekdan soň ony goldap bilmez. **Plan üçin bar bolan adamlar täze plan bilen geçirilýän ýa-da plan bilen çykarylyp gitdiginden soň hem tolak hasaplaýjy bolup biljekdir.**
 
-### Mahsul Resmi
+### Mahsul Resmi {#product-image}
 
 **Upload Image** düwätini ulanyp, ulanyjy (network administrator) media kitaphanasyny ulanyp mahsul resmi saýlap ýa-da ýükleýär.
 
 ![Product image section](/img/config/product-image.png)
 
-### Aýyrmak
+### Aýyrmak {#delete}
 
 **Delete Product** düwätini ulanyp, mahsul systemdan aýyrýarsyň. Mahsul işlenip çykarylyp (published) soň görkezilýär.
 
@@ -107,11 +107,11 @@ Eger bu plan üçin bar bolsa, toggle-i disabled (deaktif) duruma goýdýan zat,
 
 Beýleki aýyrmaklardan başga, mahsul hiç hili "trash" (çöplük) döwrebapda ýerleşdirilmez. Şonuň üçin, aýyrylan soň bu hereket geri gelip biljek däl.
 
-### Mahsul Opsionalary
+### Mahsul Opsionalary {#product-options}
 
 Esasy mahsul maglumatlary kesgitlenip biler bolsa, mahsul opsionalary ulanyjyny (network administrator) mahsulun özüni has girdeji nähili görkezmek üçin kömek edýär.
 
-#### Umumy
+#### Umumy {#general}
 
 **General** tab-y başga bir hili mahsul spesifik tablaryna laýyk gelmese hem, mahsulun umumy häsiýetlerini kesgitleýär.
 
@@ -125,7 +125,7 @@ Ultimate Multisite Plan, Package we Service ýaly birnäçe mahsul görnüşini 
 
 ![Müşteri rol ayarları](/img/config/product-customer-role-settings.png)
 
-#### Yükseliş ve Aşağı İndirme (Up & Downgrades)
+#### Yükseliş ve Aşağı İndirme (Up & Downgrades) {#up--downgrades}
 
 Bu sekme, bir müşterinin özgül katmanında (tier) mövbetdeki yükseliş və aşağı inme yollarını göstərir.
 
@@ -143,7 +143,7 @@ Bir plan qrupu təyin etmək üçün **plan qrupu** siyahısındakı uyğun plan
 
 Ultimate Multisite həmçinin bir **order bump** funksiyası da əhatə edir, burada uyğun olduqda planlara əlavə məhsullar və xidmətlər əlavə edilə bilər. Bunlar müştəriyə əlavə əşyalar kimi təklif edilir ki, onlar sifariş zamanı və ya yüksəliş zamanı planlara əlavə edilə bilər.
 
-#### Qiymət Fərqləri (Price Variations)
+#### Qiymət Fərqləri (Price Variations) {#price-variations}
 
 Fiyat çeşitləri şəbəkə administratoruna müddətə görə fərqli qiymət səviyyələrini təyin etməyə imkan verir. Bu ayar eyni məhsul üçün aylıq, üç aylıq, illik və ya başqa hər hansı bir ödəniş dövrünün təklif edilməsini mümkün edir. Məsələn, siz bir məhsulu ayda 29.99 dollar qiymətində, illik versiyada isə 249.99 dollar endirimli qiymətində təyin edə bilərsiniz.
 
@@ -165,7 +165,7 @@ Məsələn, əgər bazada məhsulunuzun aylıq qiyməti 29.99 dollar olarsa, siz
 Qiymət çeşitləri tək, frontend ödənişində bir çeşid və ya keçid əlavə etmir. Müştərilərin ödəniş dövrləri arasında (məsələn, Aylıq / Illik) keçid etməsinə imkan vermək üçün ödəniş formanıza **Period Selection** (Dövr Seçimi) sahəsi əlavə etməlisiniz. Addım-addım təlimatlar üçün [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) linkinə baxın.
 :::
 
-#### Vergilər
+#### Vergilər {#taxes}
 
 **Taxes** (Vergilər) tabı **Ultimate Multisite > Settings > Taxes** (Ultimate Multisite > Ayarlar > Vergilər) içində göstərilən vergi ayarları və daha xüsusilə müəyyən edilmiş vergi dərəcələri ilə uyğun gəlir. Vergiləri aktivləşdirmək və tətbiq olunan vergi dərəcələrini müəyyən etmək üçün zəhmət olmasa **Ultimate Multisite: Settings** sənədlərinə baxın.
 
@@ -179,7 +179,7 @@ Guralylyk kesgiti **Ultimate Multisite > Settings > Manage Tax Rates** bölümin
 
 Bir maglumat kesgitini guralylyk bilen hasaplanýan zat diýmek üçin, **Is Taxable** düğünü aktifleşdirip we Guralylyk Kategoriasyny (Tax Category) açar sanawdan laýyk kesgiti saýlaň.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Esasy düşünje boýunça, site template-ler bu maglumatlar bilen doly WordPress web sayatlarydyr we olar klientiň saytyna subskripsiýa başlapda klonlanýar.
 
@@ -201,7 +201,7 @@ Son olarak, **C** **Mevcut Site Şablonlarını Seçin**, checkout adımında be
 
 Nihayetinde, eğer ağ yöneticisi şablon seçiminin checkout adımlarında gerçekleşmesini istiyorsa, ' _default_ ' ayarı yeterli olacaktır. Alternatif olarak, şablon seçimini kaldırmak ve seçimi plan ayarlarına devretmek için ' _assign new template_ ' veya ' _choose available site templates_ ' seçenekleri istenebilir.
 
-#### Siteler
+#### Siteler {#sites}
 
 **Sites** sekmesi Ultimate Multisite'ın sınırlama işlevselliğinin bir parçasıdır.
 
@@ -211,7 +211,7 @@ Bu ayar, bir müşterinin üyelikleri altında oluşturabileceği maksimum site 
 
 Sınırlamayı etkinleştirmek için **limit sites** düğmesini aktif duruma getirin ve **site allowance** alanında maksimum site sayısını belirtin.
 
-#### Ziyaretler
+#### Ziyaretler {#visits}
 
 **Visits** sekmesi Ultimate Multisite'ın sınırlama sisteminin bir diğer parçasıdır. Bu ayar, bir müşterinin sitesine gelen benzersiz ziyaretçileri kaydetmeyi ve ardından kısıtlamayı sağlar.
 
@@ -223,7 +223,7 @@ Bu funksionaly ulanyp bilmek üçin, **limit unique visits** düğümini aktivle
 
 Bu limit dolanda Ultimate Multisite hakykatdan müşteri site-sini hyzmat etmek yerine, limitler aşyrylmaganligi aýtdyrmak üçin mesage görkezmek yerine durduryladyr.
 
-#### Userlar
+#### Userlar {#users}
 
 Ultimate Multisite'däki 'Users' cheklendirmeleri admini hasap ediliprolar we rollara laýyklykda berilip biljek user sanyna chekdeşlik goýmagyňa mümkinçilik berýär.
 
@@ -233,7 +233,7 @@ Cheklendirme funksionalyny işlemek üçin, **limit user** düğümini sağa sü
 
 Soňra her bir cheklendiriljek rol üçin, ýagny onuň ýanyndaky düğümini aktivleşdirilen duruma goýuň we laýyk ulgamynda iň ýokary limiti kesiň.
 
-#### Post Türleri
+#### Post Türleri {#post-types}
 
 **Post Types** tabyny aýratynlykda WordPressdäki giňişleýin post türleri üçin cheklendirmeleri goýmagyňa mümkinçilik berýär.
 
@@ -245,7 +245,7 @@ Bu cheklendirme sub-sistemini işlemek üçin, **limit post types** düğümini 
 
 Her bir post tipi üçin cheklendirilmesini islemek üçin, onu sağa sürükleyip uygun alanda maksimum üst limiti belirtmek bilen aktivleşdirin.
 
-#### Disk Boşluğu (Disk Space)
+#### Disk Boşluğu (Disk Space) {#disk-space}
 
 **Disk Boşluğu** sekmesi ağ administratorlaryna müşderiler tarapyndan iýigelen boýulmagan meýdany çäklemek üçin mümkinçilik berýär.
 
@@ -257,13 +257,13 @@ Disk boýulmagyny çäklemek üçin, **limit disk size per site** düğümini sa
 
 Soňra, **disk space allowance** (disk boýluğu mümkinçligi) saklanjysynda maksimum üst limiti megabaytda belirtiň.
 
-#### Özel Domaina (Custom Domain)
+#### Özel Domaina (Custom Domain) {#custom-domain}
 
 Bu opsiyany aktivleşdirmek arkaly bu plan üçin özel domenleri müşderlere kabul edip bilersiňiz.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Tema (Themes)
+#### Tema (Themes) {#themes}
 
 Ürün opsionalaryndaky **Themes** sekmesi ağ administratoruna tema ýörelgelerini müşderler üçin saýlamak üçin we opsional bolmaly, tema ýörelgesini zorunlu etmek üçin mümkinçilik berýär.
 
@@ -281,7 +281,7 @@ _**Not: Temalary müşderler üçin bar bolmagy üçin olary ağ administratorla
 
 Mevcut durumda tema müçebbetlik (self-activation) üçin müştemmali üzeledilendirilir. Diğer taraftan, **Mevcut Değil** durumu temany aktivasiýa mümkinçiligini müştemmali aňdan alýar. Soň, **Aktivasiýa Zorlamak** opsiyasy temany saýlaýan we aktivleşdirýän we ol site döredilende awtomatik tapawutly (default) etmegi üpjün edýär.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Themes tab-dan hasapdaşlykda, Ultimate Multisite ulgamy ağ administratoryna pluginleri müştemmali müşteri üçin görkezmek we täze site döredilende olaryň dowamly ýagdaýyny kesgitlemek mümkinçilik berýär.
 
@@ -301,7 +301,7 @@ Ağ administratory pluginleriň işlemekde nädip hereket edjegini **işlem (beh
 
 Ağ yöneticisi Force Activate & Lock ve Force Inactivate & Lock ayarlarını site şablonları ile birlikte düşünmek isteyebilir; çünkü bu ayarlar seçildiğinde şablonlardaki eklenti durumları etkilenebilir.
 
-#### Sıfırlama Sınırlamaları
+#### Sıfırlama Sınırlamaları {#reset-limitations}
 
 **Reset Limitations** sekmesi, üründe tanımlanan tüm özel limitleri sıfırlar. Limitleri sıfırlamak için **reset limitations** düğmesine tıklayın.
 
@@ -311,7 +311,7 @@ Eylemi onaylamak için sağdaki **confirm reset** anahtarını aktif duruma kayd
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Ürünü Düzenle, Çoğalt veya Sil
+## Ürünü Düzenle, Çoğalt veya Sil {#edit-duplicate-or-delete-product}
 
 Mevcut ürünler, **Ultimate Multisite > Products** menüsüne gidip mevcut ürün adına fareyle gelerek düzenlenebilir, çoğaltılabilir veya silinebilir.
 

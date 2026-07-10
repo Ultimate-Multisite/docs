@@ -3,11 +3,11 @@ title: Qig tau txhaum tshiab hmoov
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0-ээр нь standard subsite-a sovereign tenant infrastructure-t nuam teeb (migration) verification gates-u laikin.
 
-## Start-laik hauv thaum
+## Start-laik hauv thaum {#before-you-start}
 
 Kuv tsuj tsuj yeej:
 
@@ -17,7 +17,7 @@ Kuv tsuj tsuj yeej:
 - Database host binding-u destination environment-t hèn.
 - Network-t WP-CLI commands aiv tsuj los tau.
 
-## Recommended workflow
+## Recommended workflow {#recommended-workflow}
 
 1. Prepare the destination tenant database thiab filesystem.
 2. Register lossis or update the tenant isolation settings.
@@ -28,7 +28,7 @@ Kuv tsuj tsuj yeej:
 7. Visit the tenant with SSO.
 8. Switch DNS lossis routing-u verification pass los yog tsis tas li.
 
-## Verification gates
+## Verification gates {#verification-gates}
 
 Verification workflow-u teeb loj hmoob no hauv tab tom nrho:
 
@@ -40,6 +40,6 @@ Verification workflow-u teeb loj hmoob no hauv tab tom nrho:
 
 Verification failures-u launch-t tshiab blockers ua. Database, user, queue, lossis routing issue-u hloov, thiab verification u tsim los yog customer-t tsim los thaum tsis txhob muaj.
 
-## First production visit
+## First production visit {#first-production-visit}
 
 Verification pass los yog, site management screen-t **Visit (SSO)** hauv first admin visit-t siv. Qhov no tenant routing, SSO token handling, origin pinning, thiab tenant-side user provisioning lossis tsim los thaum tsis tas li ua ib lub ntsej muaj.

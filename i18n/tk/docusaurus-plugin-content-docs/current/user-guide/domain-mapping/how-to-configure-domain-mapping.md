@@ -1,136 +1,138 @@
 ---
-title: Domain mappingi nireden görkezmek?
+title: Domain Mapping-i nädip sazlamaly
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mappingy Nasıl Yapılır (v2)
+# Domen kartalaşdyrmany nädip sazlamaly (v2) {#how-to-configure-domain-mapping-v2}
 
-_**ÖNEMLİ QAYDAMA: Bu məqalə Ultimate Multisite versiya 2.x-i nəzərdə tutur.**_
+_**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
-Premium bir şəbəkənin ən güclü funksiyalarından biri, müştərilərimizə öz sitələrinə üst səviyyə domen əlavə etmə imkanı təklif etməkdir. Əlbəttə, hansı daha peşəkar görünür: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoxsa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Bu səbəbdən Ultimate Multisite bu funksiyanı üçüncü tərəf pluginlərindən istifadə etmək lazım olmadan daxil edilmiş şəkildə təklif edir.
+Premium toruň iň güýçli aýratynlyklarynyň biri müşderilerimize öz saýtlaryna ýokary derejeli domen birikdirmek mümkinçiligini hödürlemekdir. Ahyrsoňunda, haýsysy has professional görünýär: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ýa-da [_**joesbikeshop.com**_](http://joesbikeshop.com)? Şol sebäpli Ultimate Multisite bu aýratynlygy üçünji tarap plugin-leri ulanmagyň zerurlygy bolmazdan, öz içine goşulan görnüşde hödürleýär.
 
-## Domain mapping nədir?
+## Domen kartalaşdyrma näme? {#whats-domain-mapping}
 
-Adından göründüyü kimi, domain mapping, Ultimate Multisite tərəfindən xüsusi domen üçün sorğuyu qəbul etmə və həmin sorğunu şəbəkədəki müvafiq sitə o domen əlavə edilmiş şəkildə bağlama imkanıdır.
+Adyndan belli bolşy ýaly, domen kartalaşdyrma Ultimate Multisite tarapyndan hödürlenýän, ýörite domen üçin soragy kabul edip, şol soragy şol aýratyn domen birikdirilen tordaky degişli saýta kartalaşdyrmak mümkinçiligidir.
 
-### Ultimate Multisite Şebekenizde Domain Mapping Nasıl Yapılır
+### Ultimate Multisite toruňyzda domen kartalaşdyrmany nädip sazlamaly {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping (alan eşleştirme) çalışması için sizden bazı ayarlar yapmanız gerekiyor. Neyse ki, Ultimate Multisite bu zor işi sizin yerinize otomatikleştirir, böylece gereklilikleri kolayca yerine getirebilirsiniz.
+Domen kartalaşdyrmanyň işlemegi üçin siziň tarapyňyzdan käbir sazlamalar gerek. Bagtymyza, Ultimate Multisite agyr işi siziň üçin awtomatlaşdyrýar, şonuň üçin talaplary aňsatlyk bilen ýerine ýetirip bilersiňiz.
 
-Ultimate Multisite kurulumu sırasında sihirbaz (wizard), **sunrise.php** dosyasını otomatik olarak belirlenen klasöre kopyalar ve kurar. Bu adımdan önce ilerlemenize izin verilmez.
+Ultimate Multisite gurnama wagtynda, ussat **sunrise.php** faýlyny bellenen bukja awtomatik göçürip gurnar. **Bu ädim tamamlanýança ussat size dowam etmäge rugsat bermez**.
 
-<!-- Screenshot unavailable: ultimate multisite installation wizard with sunrise.php step -->
+<!-- Ekran suraty elýeterli däl: sunrise.php ädimi bilen Ultimate Multisite gurnama ussady -->
 
-Bu, Ultimate Multisite kurulum sihirbazı ağınızı ayarlamayı bitirdikten sonra özel domaini hemen eşleştirmeye başlayabileceğiniz anlamına gelir.
+Bu, Ultimate Multisite gurnama ussady toruňyzy sazlamagy tamamlan badyna ýörite domeni derrew kartalaşdyryp başlap biljekdigiňizi aňladýar.
 
-Ultimate Multisite'da domain mapping (alan eşleşdirme) mütlək de gerek däldir. Siz WordPress Multisite-in özü olan domain mapping funksiyasından ýa-da başga bir domain mapping çözundän peýdalanmagy üçin opsiyanyň bar bolmagyny saklaýarsyňyz.
+Ultimate Multisite-de domen kartalaşdyrmanyň hökmany däldigine üns beriň. WordPress Multisite-iň öz domen kartalaşdyrma funksiýasyny ýa-da islendik başga domen kartalaşdyrma çözgüdini ulanmak mümkinçiligiňiz bar.
 
-Eger başga domain mapping çözgütlerine geçmek üçin Ultimate Multisite domain mappingini özüňiz deaktiv etmek isleseňiz, bu funksiyany **Ultimate Multisite > Settings > Domain Mapping** boýunça deaktiv edip bilersiňiz.
+Başga domen kartalaşdyrma çözgütlerine ýol bermek üçin Ultimate Multisite domen kartalaşdyrmasyny öçürmeli bolsaňyz, bu aýratynlygy **Ultimate Multisite > Sazlamalar > Domen kartalaşdyrma** astynda öçürip bilersiňiz.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Admin ugrukdyrmasyny, kartalaşdyrma habaryny we DNS opsiýalaryny görkezýän Domen kartalaşdyrma sazlamalary sahypasy](/img/config/domain-mapping-settings.png)
 
-Bu opsiyanyň hemen aşagynda **Force Admin Redirect** (Administratora zorla yöneltmek) opsiyasyny hem görkezeliň. Bu opsiyanta size, müşderileriniz özlerini custom domaini we subdomaini arkaly admin dashboarduna girip biljekmi ýa-da diňe birindäki arkaly girip bilerlerdi kontrol etmek üçin mümkinçilik berýär.
+Bu opsiýanyň göni aşagynda **Admin ugrukdyrmany mejbur et** opsiýasyny hem görüp bilersiňiz. Bu opsiýa müşderileriňiziň admin Dashboard-yna hem ýörite domeninde, hem-de subdomende girip biljekdigini ýa-da diňe olaryň birinde girip biljekdigini dolandyrmaga mümkinçilik berýär.
 
-Eger siz **Force redirect to mapped domain** (maplanýan domaina zorla ýerlendirji) opsiyasyny saýlarsanız, müşderileriniz özleriniň admin panellerine diňe özlerindikleri custom domenleri arkaly girip bilerler.
+Eger **Kartalaşdyrylan domene mejbury ugrukdyr** saýlasaňyz, müşderileriňiz admin Dashboard-yna diňe ýörite domenlerinde girip bilerler.
 
-**Force redirect to network domain** (täsirleme domana zorla ýerlendirji) opsiyasy bolsa tam tersini edýär – müşderileriniz özlerindikleri custom domenlerde saglyk bermekden hem, diňe öz subdomenleri arkaly panellere girip bilerler.
+**Tor domenine mejbury ugrukdyr** opsiýasy bolsa munuň tersini eder — müşderileriňize, hatda ýörite domenlerinde girmäge synanyşsalar hem, Dashboard-laryna diňe subdomende girmäge rugsat berler.
 
-We hemişe **Allow access to the admin by both mapped domain domain and network domain** (maplanýan domany we täsirleme domany bilen adminine girirmegi ýetirmek) opsiyasy bilen müşderilere hem subdomenleri, hem custom domenleri arkaly admin panellerine girip barmaga mümkinçilik berilýär.
+**Admin bölegine hem kartalaşdyrylan domen, hem-de tor domeni arkaly girmäge rugsat ber** opsiýasy bolsa olara admin Dashboard-laryna hem subdomende, hem-de ýörite domende girmäge mümkinçilik berýär.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Üç ugrukdyrma opsiýasyny görkezmek üçin açylan Admin ugrukdyrma sanawy](/img/config/domain-mapping-redirect-options.png)
 
-Custom domenleri eşdelegal etmek üç usul bar. Birinji usulda siz domen adyny ağlar (network admin) paneli arkaly super admin hasabyndan eşdelegal edip, ikinji usulda bolsa hasap sahabyndaky subsite admin paneli arkaly.
+Ýörite domeni kartalaşdyrmagyň iki usuly bar. Birinjisi, domen adyny tor admin Dashboard-yňyzdan super admin hökmünde kartalaşdyrmak, ikinjisi bolsa account sahypasynyň aşagyndaky subsaýt admin Dashboard-y arkaly amala aşyrylýar.
 
-Eger siz custom domenini ağınızdaky bir subsite-e eşdelegal etmäge başlaňdan öň, domen adynyň **DNS sozlamalaryny** düzgün görkezýändiginden hem habar etmek gerek.
+Emma ýörite domeni toruňyzdaky subsaitleriň birine kartalaşdyrmaga başlamazdan öň, domen adynyň **DNS sazlamalarynyň** dogry sazlanandygyna göz ýetirmeli bolarsyňyz.
 
-### Domen DNS sozlamalaryny düzgün görkezmek
+###
 
+### Domeniň DNS sazlamalarynyň dogry sazlanandygyna göz ýetirmek {#making-sure-the-domain-dns-settings-are-properly-configured}
 
+Kartalaşdyrmanyň işlemegi üçin, kartalaşdyrmagy meýilleşdirýän domeniňiziň toruňyzyň IP salgysyna gönükdirilendigine göz ýetirmeli. Size tor IP salgysynyň gerekdigine üns beriň — Ultimate Multisite gurnalan domeniň IP salgysy — kartalaşdyrmak isleýän ýörite domeniňiziň IP salgysy däl. Belli bir domeniň IP salgysyny gözlemek üçin, mysal üçin, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) sahypasyna geçmegi maslahat berýäris.
 
-Mapping işlemini düzgün etmegi üçin, mapalamak isleýän domen siziň ulgamyňyz (Network) IP adresine ýol berýändiginden hem hasaplaň. Ýöne size Network IP adresini - Ultimate Multisite-y nire ýüklendigini görkezýän domen adynyň IP adresini däl, mapalamak isleýän custom domen siziň elinizde bolmaly. Belirli bir domen IP adresini tapmak üçin, mysal üçin [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) bilen gözegçilmek islärin.
+Domeni dogry kartalaşdyrmak üçin, **DNS** konfigurasiýaňyzda şol **IP salgysyna** gönükdirýän **A RECORD** goşmaly. DNS dolandyryşy dürli domen registratorlarynyň arasynda ep-esli tapawutlanýar, ýöne XXXX siziň domen registratoryňyz bolan ýagdaýda " _XXXX-de A Record döretmek_ " diýip gözleseňiz, bu barada internetde köp gollanma bar (mysal: " _GoDaddy-de A Record döretmek_ ").
 
-Alanadyny dogry görkezmek üçin, siz **DNS** sozlamasyna şol **IP adresi** bilen baglanýan bir **A RECORD** goýmagyňiz zerurdyr. DNS dolandyrmagy dürli domen resminamalary (domain registrars) aralygynda örän üýtgeýär, ýöne bu barada onlaýnda köp tutorialary bar, eger siz " _XXXX-de A Record döretmek_ " diýip gözleýän bolsaňyz, eýsem XXXX bilen siziň domen resminamany (mysal üçin: " _GoDaddy-de A Record döretmek_ ").
+Muny işledip bilmeýän kynçylyk bilen ýüzbe-ýüz bolsaňyz, **domen registratoryňyzyň goldawyna ýüz tutuň** we olar bu bölekde size kömek edip bilerler.
 
-Bu işi etmekde kynçylyk çekseňiz, **domen resminamanyňdyzyň destek birikmesini** hataryna çykaryň we olar size bu bölekde kömek edip bilerler.
+Müşderileriňize öz domenlerini kartalaşdyrmaga rugsat bermegi meýilleşdirýän bolsaňyz, olar bu bölekdäki işi özleri etmeli bolarlar. A Record döredip bilmeýän ýagdaýlarynda olary registratorlarynyň goldaw ulgamyna ugrukdyryň.
 
-Eger siz müşderiňizi öz domenlerini görkezmäge rugsat bermegi meýilidysyz bolsaňyz, olar bu bölegi özleri etmeli. A Record döredip bilmese diýse, olary resminamanyňdyzyň destek ulgamyna ýol görkezmekden soň kömek edip bilerisiz.
+### Ýörite domen adyny Super Admin hökmünde kartalaşdyrmak {#mapping-custom-domain-name-as-super-admin}
 
-### Custom domen adyny Super Admin bilen görkezmek
+Toruňyzda super admin hökmünde giren wagtyňyz, **Ultimate Multisite > Domenler** astyna geçip, ýörite domen atlaryny aňsatlyk bilen goşup we dolandyryp bilersiňiz.
 
-Şirketinizde super admin olarak ýerine düşseňiz, **Ultimate Multisite > Domains** başlygyna girip özüňizden hasaplanan domenleri aýlamak we dolandyrmak örän aňsatdyr.
+![Ultimate Multisite-de domenler sanawy sahypasy](/img/admin/domains-list.png)
 
-![Ultimate Multisite-da Domenler listi səhpeni](/img/admin/domains-list.png)
+Bu sahypanyň aşagynda ýokardaky **Domen goş** düwmesine basyp bilersiňiz we bu size **ýörite domen adyny**, ýörite domen adyny ulanmak isleýän **subsaýtyňyzy** sazlap we dolduryp biljek, şeýle hem ony **esasy domen** ady hökmünde bellemek isleýändigiňizi ýa-da ýokdugyny çözüp biljek modal penjiräni açar (bir subsaýta **birnäçe domen adyny kartalaşdyryp** biljekdigiňize üns beriň).
 
-Bu sabyrlyp, üstdäki **Add Domain** düwmenine basyp bilersiňiz we bu size modal oynatýan bir bölek açar. Bu ýerde siz özüňizden hasaplanan domen adyny, özüňizden hasaplanan domen adyny ulanyp biljek subsite-i we onuň üstüne özüňizden hasaplanan domen adyny goýmak isleýärsiňizmi ýa-da ýok isleýärsiňizmi (esasy domany goýmak isleýärsiňizmi) barlap bilersiňiz. (Elde etmeli, bir subsiteye köp domen adyny eşde meýil edip bilersiňiz).
+![Domen ady, saýt saýlaýjy we esasy domen açyp-ýapyjysy bolan Domen goş modal penjiresi](/img/admin/domain-add-modal.png)
 
-![Domen adı, site saýlayjysy we esasy domen düwmesi bilen Add Domain modalyna](/img/admin/domain-add-modal.png)
+Ähli maglumatlary girizeniňizden soň, aşakdaky **Bar bolan domeni goş** düwmesine basyp bilersiňiz.
 
-Bütün maglumatlary girirdikten sonra, altındaky **Add Existing Domain** düwmenine basyp bilersiňiz.
+Bu ýörite domeniň DNS maglumatlaryny barlamak we almak prosesini başlar. Şeýle hem sahypanyň aşagynda onuň geçýän prosesini yzarlamagyňyz üçin log görersiňiz. Bu proses tamamlanmak üçin birnäçe minut alyp biler.
 
-Bu, mysal domenini barlap we DNS maglumatlaryny almagyň prosesini başlatýar. Prosesi geçip duran aşakdaky logda hem görkezeli, bu proses birnäçe minut geçip bilýär.
+Ultimate Multisite v2.13.0 täze saýt, her-saýt domeni hökmünde garalmaly hostda döredilende, içerki domen ýazgysyny hem awtomatik döredýär. Eger host toruň esasy domeni bolsa ýa-da **Site URL** meýdanynda sazlanan umumy checkout-form esasy domenleriniň biri bolsa, awtomatik mapped-domain ýazgysy geçirilýär, şeýdip şol umumy esasy domen ony ulanýan her bir saýt üçin elýeterli bolup galýar.
 
-Ultimate Multisite v2.13.0-da, eger täze site hostda döredilse we ol her bir site üçin özel domen hasaplanmaly bolsa, sistem awtomatiki doganym (internal domain record) ýazgysyny hem döredýär. Eger host ulgamyň esasy domeny bolsa ýa-da **Site URL** ulanylyp goýulan paylaşımlı ödemäji formalar bazasynyň domanyndan biri bolsa, awtomatiki eşleşdirilen domen maglumatlary atlandyrylýar. Bu, paylaşımlı bazany ulanýan her bir site üçin hem bar bolmaga mümkinçilik berýär.
+Müşderi Domain Seller v1.3.0 ýa-da has täze wersiýa arkaly täze domen bellige alanda, Ultimate Multisite bellige alnan domeni deslapky ýagdaýda müşderiniň tor saýtyna awtomatik map edýär. Administratorlara üstünlikli bellige alyşdan soň, esasy-domen baýdagy, işjeňleşdiriş ýagdaýy ýa-da SSL dolandyryşy ýaly opsiýalary üýtgetmek islemeýän bolsalar, aýratyn mapped-domain ýazgysyny goşmak indi gerek däl.
 
-**Stage** ýa-da hallary **Checking DNS** (DNS barlanylypdir) bilen **Ready** (Taýyn) diwaryna üýtgeşmeli bolsa, her zat düzgün goýulsa.
+Eger hemme zat dogry sazlanan bolsa, **Stage** ýa-da status **Checking DNS**-den **Ready** ýagdaýyna üýtgemeli.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Domain adyna basanda, onuň içinde birnäçe opsionalary göräýärsiňiz. Onlara çalt bir göz atalyň:
+Domen adyna bassaňyz, onuň içinde käbir opsiýalary görüp bilersiňiz. Olara tiz göz aýlalyň:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Stage, saýt, işjeň, esasy we SSL açyp-ýapgyçlary bolan domen jikme-jiklik sahypasy](/img/admin/domain-edit.png)
 
-**Stage (Mara):** Bu, domenňiziň şu wariantda bolan aşamasy. Domeni ilkinji gezi goýanda, o muhtemelen **DNS-i Barlamak** aşamasında bolup biler. Bu proses DNS ýazgylaryny barlap we olaryň dogrydyr-de däl-dejekdigini anyklap biler. Sonra, domen **SSL-i Barlamak** aşamasına geçirilýär. Ultimate Multisite domeni SSL-e eýe mi bolup baýlandyryp baýlanmaýandygy barada barlap we siziň domenini **Ready (Daşaryk SSLsiz)** ýa-da **Ready (SSLsiz Ready)** hasaba alýar.
+**Stage:** Bu domeniň häzirki tapgyrydyr. Domeni ilkinji gezek goşanyňyzda, ol ähtimal **Checking DNS** tapgyrynda bolar. Proses DNS ýazgylaryny barlar we olaryň dogrudygyny tassyklar. Soňra domen **Checking SSL** tapgyryna geçirilýär. Ultimate Multisite domeniň SSL-i bardygyny ýa-da ýokdugyny barlar we domeniňizi **Ready** ýa-da **Ready (without SSL)** hökmünde toparlandyrar.
 
-**Site (Sahypa):** Bu domen bilen baglanylan alt domenidir. Barlanan domen bu belli sahypanyň mazmunyny görkezýär.
+**Site:** Bu domen bilen baglanyşykly subdomain. Mapped domen şu anyk saýtyň mazmunyny görkezer.
 
-**Active (Aktiw):** Domeni işlemek üçin bu opsiyany ýana-da ýapyp bilersiňiz, ol domenini aktivleşdirmek ýa-da deaktiv etmek üçin ulanyp bilersiňiz.
+**Active:** Domeni işjeňleşdirmek ýa-da işjeňsizleşdirmek üçin bu opsiýany açyp ýa-da ýapyp bilersiňiz.
 
-**Is Primary Domain? (Esasy Domenmi?):** Işdeki müşteri bir sahypa üçin birnäçe baglanylan domeny bolup biler. Bu opsiyany ulanyp bu belli sahypa üçin esasy domen olup olmadığını saýlaýarsyňyz.
+**Is Primary Domain?:** Müşderileriňizde her saýt üçin birden köp mapped domen bolup biler. Munuň anyk saýt üçin esasy domen bolup-bolmandygyny saýlamak üçin bu opsiýany ulanyň.
 
-**Güvenli mi?:** Ultimate Multisite domeninizde SSL sertifikatı baradyn ýa-da damadyn olmadığını barlap geçse hem, siz onu SSL sertifikaty bolan ýa-da bolmaýan domany yüklemek üçin manual (göçürip) saýlap bilersiňiz. Etleýman, web saytynda SSL sertifikaty ýok bolsa we ony SSL bilen zor yüklemäge synanyp, size baýatlyk berip biler.
+**Is Secure?:** Ultimate Multisite domeni işjeňleşdirmezden öň onuň SSL şahadatnamasynyň bardygyny ýa-da ýokdugyny barlasa-da, domeni SSL şahadatnamasy bilen ýa-da onsuz ýüklemegi el bilen saýlap bilersiňiz. Üns beriň: eger websaýtda SSL şahadatnamasy ýok bolsa we ony SSL bilen mejbury ýüklemäge synanyşsaňyz, size ýalňyşlyklar berip biler.
 
-### Custom domen adyny Subsite ulanyjysy hökmünde eşde dowam etmek (Mapping)
+### Custom domen adyny Subsite ulanyjysy hökmünde map etmek {#mapping-custom-domain-name-as-subsite-user}
 
-Subsite administratorlary öz subsite administrasiýa panelinden custom domen adlaryny hem eşde dowam edip bilersiňiz.
+Subsite administratorlary hem öz subsite admin dashboard-yndan custom domen atlaryny map edip bilerler.
 
-Ilki bilen, bu opsiony **Domain mapping** (Domen eşde dowam etdirme) sozlamalarynda işjeňleşdirýändigi üpjün etmeli. Aşakdaky skrinşoti görkeziň.
+Ilki bilen, bu opsiýany **Domain mapping** sazlamalarynyň aşagynda işjeňleşdirendigiňize göz ýetirmeli. Aşakdaky skrinşota serediň.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Bu opsiyany **Ultimate Multisite > Products** dükkanlar (Plan) səviyyəsində və ya məhsul seçimlərində də təyin edə və konfiqurasiya edə bilərsiniz.
+Bu opsiýany **Plan** derejesinde ýa-da **Ultimate Multisite > Products** içindäki önüm opsiýalarynda hem belläp ýa-da sazlap bilersiňiz.
 
-![Product edit page-də Custom Domains bölməsi](/img/config/product-custom-domains.png)
+![Önüm redaktirleme sahypasyndaky Custom Domains bölümi](/img/config/product-custom-domains.png)
 
-Bu opsiyalardan hər hansı biri aktiv olduqda və subsite istifadəçisinə custom domain adlarını tapmaq icazəsi verildikdə, subsite istifadəçisi **Account** səhifəsində **Domains** adlı bir metabox görəcək.
+Şol opsiýalaryň haýsydyr biri işjeňleşdirilende we subsite ulanyjysyna custom domen atlaryny map etmäge rugsat berlende, subsite ulanyjysy **Account** sahypasynyň aşagynda **Domains** atly metabox görmeli.
 
-<!-- Screenshot unavailable: Subsite Account səhifəsində Domains metaboxu və Add Domain düyməsi -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-İstifadəçi **Add Domain** düyməsinə klikləyə bilər və bu, bəzi təlimatlar olan bir modal pəncərə açacaq.
+Ulanyjy **Add Domain** düwmesine basyp biler we bu käbir görkezmeler bilen modal penjire açar.
 
-<!-- Screenshot unavailable: Subsite istifadəçiləri üçün DNS A-record təlimatlarını göstərən Add Domain modalı -->
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-User soňra **Next Step** düwmesini basyp, mysal üçin, size öz web saygyny goýmak üçin gowy bolan domeny goşmaga geçip biler. Şeýle hem bu domany esasy (primary) domany bolup bolmazdygyny saýlaýar.
+Soňra ulanyjy **Next Step** düwmesine basyp, custom domen adyny goşmagy dowam etdirip biler. Olar munuň esasy domen boljakdygyny ýa-da däldigini hem saýlap bilerler.
 
-<!-- Screenshot unavailable: Custom domain name field and primary domain toggle with Add Domain form -->
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-<!-- Screenshot unavailable: DNS verification step that triggers DNS verification with Add Domain confirmation step -->
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-**Add Domain** düwmesine basmak, custom domanyň DNS maglumatlaryny barlap we almagy prosesini başzatýar.
+**Add Domain** düwmesine basmak custom domeniň DNS maglumatlaryny barlamak we almak prosesini başlatar.
 
-### Domain Syncing barada
+### Domain Syncing hakynda {#about-domain-syncing}
 
-Domain Syncing – bu prosesde Ultimate Multisite custom domany size hosting hasabyňyzda goşmaýar, **domany eşleşdirmek üçin** ek domanyň biri hökmünde.
+Domain Syncing — Ultimate Multisite-iň custom domen adyny hosting hasabyňyza add-on domen hökmünde goşýan prosesidir, **domen mapping işlemegi üçin**.
 
-Domainler awtomatik senkronizirlenir, eger hosting provayderi Ultimate Multisite domen eşleşdirme (domain mapping) özelliği bilen baglantsal bolsa. Şu wagt bu hosting provayderleri _Runcloud_, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ we _Cpanel_ dir.
+Eger hosting üpjünçiňiz Ultimate Multisite domain mapping aýratynlygy bilen integrasiýa eýe bolsa, domain syncing awtomatik bolup geçýär. Häzirki wagtda bu hosting üpjünçileri _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ we _Cpanel._
 
-Hosting-provayderi baglantsalyk işledikde, Ultimate Multisite täze döredilen saytlar üçin provayder tərəfindir DNS ýa-da subdomain döretmek tapşyrygyny hem kuyruğa alyp bilýär. Eger bu tapşyrygy dinleýän baglantsalyk ýok bolsa, arka plan işi (background job) no-op kuyruklarynyň ýüklendirilmeginden saklamak üçin atlandyrylýar. Eşleşdirilen domenler üçin DNS we SSL barlaglary normal domen aşamasy arkaly dowam edýär.
+Host-üüpünçi integrasiýasy işjeň bolanda, Ultimate Multisite täze döredilen saýtlar üçin üpjünçi tarapyndaky DNS ýa-da subdomain döretmek wezipesini hem nobata goşup biler. Eger hiç bir integrasiýa şol wezipäni diňlemeýän bolsa, no-op nobat ýazgylarynyň öňüni almak üçin fon işi geçirilýär. Mapped domenler üçin DNS we SSL barlaglary adaty domen-tapgyr prosesi arkaly dowam edýär.
 
-Bu baglantsalyk bilen Ultimate Multisite-da **Integration** (Baglantsalyk) tabyny görkezilýän sozlamalarda işe geçirmeli size gerek bolmadyk.
+Bu integrasiýany Ultimate Multisite sazlamalarynda **Integration** tabynyň aşagynda işjeňleşdirmeli bolarsyňyz.
 
-![Ultimate Multisite sozlamalarynda integrasiýa tabyny görkezýän resminiz](/img/config/integrations-tab.png)
+![Hosting üpjünçilerini görkezýän Ultimate Multisite sazlamalaryndaky Integrations taby](/img/config/integrations-tab.png)
 
-<!-- Screenshot unavailable: Integrasiýa sozlamalarynyň hosting provayderleri linkleri resminiňiz -->
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Elde etmeli ýatda saklaň ki, eger siziň hosting provayderi ýok bolsa, ýokarda agzalanyşykda görkezilen provayderler bilen birleşmese, **siziň domain adyny özüňiz manual ýaly senkronlamagyň ýa-da goşmagyň** gerek boljakdyr._
+_Hosting üpjünçiňiz ýokarda agzalan üpjünçileriň biri däl bolsa, **domen adyny hosting hasabyňyz bilen el bilen sync etmeli ýa-da goşmaly bolarsyňyz**._

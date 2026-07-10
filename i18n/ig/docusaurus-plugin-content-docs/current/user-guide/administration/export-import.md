@@ -3,13 +3,13 @@ title: Ekwerịrị & Ịkọrọ
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ultimate Multisite 2.9.0 n-afori oru **Export & Import** tool ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụ ọkụọ. Ọ bụrụ na ịdị n'ime administrator onye nwere ike ịnwale menyu **Tools** na WordPress site a na-agbanye, iji amụta ahụ. Na mbụ akụkọ multisite, ri dịka aka aka administrator network (network administrator account) mgbe ịdị Export or Import subsites n'ime Ultimate Multisite tools na level network.
 
 Export ZIP downloads ndị a na-agbany anghọta download authenticated endpoint, karịsịa ka ị chọrọ iji ahụ, docha session admin-ahụ dị active tupu ọkụrụa download ya na e ji ahụ n'ime public URL-aha.
 
-## Exporting a site to a ZIP
+## Exporting a site to a ZIP {#required-permissions}
 
 1. Na WordPress admin nke site ị chọrọ copy, joko **Tools > Export & Import**.
 2. Jiji are anyị anọchịrị (export area) ma chọrọ site ị chọrọ package.
@@ -17,7 +17,7 @@ Export ZIP downloads ndị a na-agbany anghọta download authenticated endpoint
 
 Ukara ozi n'ụmme ZIP na-akọwa bụ ihe dị iche iche na mpụta media, plugins na themes ndị a chọrọ, na oge database tables nke site ahụ.
 
-## Ịkọwa site n'ụmme ZIP
+## Ịkọwa site n'ụmme ZIP {#exporting-a-site-to-a-zip}
 
 1. Jupụ **Tools > Export & Import** (Nkwupụrụ > Export & Import) ọkụ site WordPress ahụ ị chọrọ.
 2. Open the import area na-akọwa na upload oge ZIP nke a bụ tool Export & Import ji akọwa.
@@ -29,7 +29,7 @@ Ukara ozi n'ụmme ZIP na-akọwa bụ ihe dị iche iche na mpụta media, plug
 
 Na WordPress installation nke ọnụ site, ịkọwa ZIP na-akọwa site ahụ ahụ na-akọwa site ahụ n'aka site a bụ site ahụ na-akọwa. Jupụ backup nke site target ahụ rite ị gbegbe ma jikọta ka ị chọrọ ka ị gbegbe imports dị iche iche maka site ahụ na oge dị ọjọọ.
 
-## Limitations and compatibility notes
+## Limitations and compatibility notes {#what-the-export-includes}
 
 Direktori upload çok büyük olan veya medya kütüphaneleri çok geniş olan yerler büyük ZIP dosyaları oluşturabilir. Büyük siteleri dışa aktarırken veya içe aktarırken PHP yükleme limitlerini, çalıştırma limitlerini, disk alanını, belleği ve sunucu zaman aşımı ayarlarını kontrol edin.
 Çok büyük medya kütüphaneleri düşük trafikli bakım penceresinde taşınması gerekebilir.

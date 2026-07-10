@@ -3,7 +3,7 @@ title: Mudzidzisi
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Kuita sei kuita Kujira Ultimate Multisite Community
+# Kuita sei kuita Kujira Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community ndiyo space inotenderi kuti uone nemunhu wose we Ultimate Multisite uye kuti munenge uchishandisa zvinhu, zvinhu zvinogona kubatanidza, uye zvinhu zvakawanda. Kuti utange kuenda kune Ultimate Multisite Community, enda ku https://community.ultimatemultisite.com/home.
 

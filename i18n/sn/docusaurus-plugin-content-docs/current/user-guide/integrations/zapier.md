@@ -3,7 +3,7 @@ title: Kugadzirisa Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Kuita Ultimate Multisite neine Zapier
+# Kuita Ultimate Multisite neine Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Mune muita mweya, tinagadzirisa [Webhooks](webhooks.md) uye kuti zviri kuendesa naye nekuti zvichangopfungwa kuitanisa nemapuator anonyanya vakaoma.
 
@@ -15,7 +15,7 @@ Unogona kuita **Triggers** (Mavhondso) anozivaka kana zvichangopfungwa kana zvin
 
 Izvi zvinoita nekuti **Ultimate Multisite Zapier's triggers** uye actions dzine kuita ne [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Kuita sei
+## Kuita sei {#how-to-start}
 
 Mazuva akapfiri, unogona kutanga kunge Ultimate Multisite mu app list ya Zapier. Nekuti iwe rakaunyangana, unogona kuita [this link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Kwenye fani ya URL, chagua URL yako yote ya mtandao, iwe ni HTTP au HTTPS.
 
 Chagua kitufe cha **Yes, Continue** ukuiende kwa hatua inayofuata. Kana chokwadi chinonwa kuona akaunti yako mpya iliyoungana! Chagua **Continue** ili kuanza trigger mpya.
 
-## Jinsi ya kuunda Trigger mpya
+## Jinsi ya kuunda Trigger mpya {#how-to-create-a-new-trigger}
 
 Sasa uko na akaunti imejungushwa, unaweza kuona matukio yanayopatikana. Tuchague matukio ya **payment_received** kwa ajili ya hio tutorial.
 
@@ -67,7 +67,7 @@ Katika hatua hii, Zapier itajaribu kama Zap yako inaweza **kupata payload maalum
 
 Muninga wese mutoriro wose, ndiri **akagadzirwa zvakanaka** uye achipa chishanduro chekuita (payload example information). Chishanduro ichi chinogona kuita kuti tiri kuratidze kana tikatiine zvinotora. Trigger yako imweya yakagadzirwa uye inogona kutanga kuitana nekuita zvinhu zvakasiyana-nyaya.
 
-## Sei Kuratidza Actions (Actions)
+## Sei Kuratidza Actions (Actions) {#how-to-create-actions}
 
 Actions dzinoratidza matanho ekuti dziri kuita zvinotora mune nzvimbo yako yakawanda (network).
 
@@ -79,7 +79,7 @@ Mune nguva isingiro, unogona kuratidza authentication yako, seunenge rakaita mu 
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Kuratidza Action (Setting up the Action)
+### Kuratidza Action (Setting up the Action) {#setting-up-the-action}
 
 Iyi **nguva yakakosha yekuti action iite**, uye pano zvinhu zviri kune kuratidzo kwakasiyana. Chishanduro chatinogona kuita nguva yakare, ndiri **Item**. Item ndiri **model ye matanho** ekunzwisisa yako yakawanda, se **Customers (Vakakubatsira), Payments (Mhando dzemakasi), Sites (Maviri), Emails**, uye zvinhu zvakasiyana.
 

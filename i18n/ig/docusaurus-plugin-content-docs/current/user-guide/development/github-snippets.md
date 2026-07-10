@@ -3,7 +3,7 @@ title: Nkwado GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Cara dùng các đoạn mã Ultimate Multisite trên kho GitHub của chúng tôi
+# Cara dùng các đoạn mã Ultimate Multisite trên kho GitHub của chúng tôi {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Có những đoạn mã (code snippets) có sẵn trong kho GitHub mà người dùng Ultimate Multisite hay yêu cầu để thêm các chức năng nhỏ như thêm script Google Analytics vào trang đăng ký hoặc ẩn một meta box khỏi bảng điều khiển admin.
 
@@ -19,7 +19,7 @@ Có 2 cách để bạn thêm mã vào:
 
   2. Các Plugin Must-Use (mu-plugins).
 
-# Cách thêm đoạn mã vào file functions.php của theme của bạn.
+# Cách thêm đoạn mã vào file functions.php của theme của bạn. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Đăng nhập vào bảng điều khiển admin Network WordPress của bạn và đi đến Themes > Theme Editor (Xem ảnh chụp màn hình bên dưới).
 
@@ -29,7 +29,7 @@ Có 2 cách để bạn thêm mã vào:
 
 <!-- Ảnh chụp màn hình không có sẵn: WordPress Theme Editor hiển thị việc chỉnh sửa file functions.php -->
 
-# Cách tạo các Plugin Must-Use (mu-plugins)
+# Cách tạo các Plugin Must-Use (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress có một tính năng cho phép bạn tải các chức năng tùy chỉnh được gọi là "Must-Use Plugins", hay viết tắt là "mu-plugins".
 

@@ -4,19 +4,19 @@ title: Filtre - wu_apply_plan_limits
 sidebar_label: wu_apply_plan_limits
 _i18n_hash: bd9ef0fee7898150c2b822a714f498c1
 ---
-# Filter: wu_apply_plan_limits
+# Filter: wu_apply_plan_limits {#filter-wuapplyplanlimits}
 
 Permettre aux développeurs de plugins de contourner les limitations.
 
 Vous pouvez utiliser ce filtre pour exécuter du code arbitraire avant que les limites ne soient initialisées. Si votre filtre renvoie une valeur vraie, le processus continuera ; s'il renvoie une valeur fausse, le code s'arrêtera et aucun des hooks ci-dessous ne sera exécuté.
 
-### Since
+### Since {#since}
 
 - 1.7.0
 
-### Source
+### Source {#source}
 
 - Défini dans [`inc/limits/class-post-type-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-post-type-limits.php#L52) à la ligne 52
 - Défini dans [`inc/limits/class-di&#115;k-space-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limits/class-di%73k-space-limits.php#L98) à la ligne 98
 
-## Returns
+## Returns {#returns}

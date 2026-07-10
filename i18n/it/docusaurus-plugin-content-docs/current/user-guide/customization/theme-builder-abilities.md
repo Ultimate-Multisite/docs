@@ -3,18 +3,18 @@ title: Funzionalità del Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Funzionalità del Theme Builder: Strutturare e Attivare i Block Theme
+# Funzionalità del Theme Builder: Strutturare e Attivare i Block Theme {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduce due potenti funzionalità che ti permettono di generare e implementare block theme personalizzati direttamente dall'interfaccia chat.
 
-## Panoramica
+## Panoramica {#overview}
 
 Le funzionalità **scaffold-block-theme** e **activate-theme** consentono agli agenti di:
 - Generare block theme completi e pronti per la produzione, basati sulle tue specifiche
 - Attivare automaticamente i temi sul tuo sito senza interventi manuali
 - Creare identità visive coerenti attraverso decisioni di design guidate
 
-## Strutturare un Block Theme (Scaffold Block Theme)
+## Strutturare un Block Theme (Scaffold Block Theme) {#scaffold-block-theme}
 
 La funzionalità **scaffold-block-theme** genera un nuovo block theme WordPress con una struttura completa, che include:
 
@@ -23,7 +23,7 @@ La funzionalità **scaffold-block-theme** genera un nuovo block theme WordPress 
 - Stili e variazioni di block personalizzati
 - Metadati e dichiarazioni di supporto del tema
 
-### Come richiamarla
+### Come richiamarla {#how-to-invoke}
 
 Nella tua chat con Superdav AI Agent, puoi richiedere la generazione del tema:
 
@@ -38,7 +38,7 @@ L'agente:
 3. Creerà tutti i file necessari del tema
 4. Preparerà il tema per l'attivazione
 
-### Output atteso
+### Output atteso {#expected-output}
 
 Quando la funzionalità viene eseguita con successo, vedrai:
 
@@ -56,11 +56,11 @@ Esempio di output:
   Status: Ready to activate
 ```
 
-## Attivare il Tema (Activate Theme)
+## Attivare il Tema (Activate Theme) {#activate-theme}
 
 La funzionalità **activate-theme** cambia il tuo sito su un block theme appena strutturato o esistente.
 
-### Come richiamarla
+### Come richiamarla {#how-to-invoke-1}
 
 Dopo aver strutturato un tema, puoi attivarli immediatamente:
 
@@ -74,7 +74,7 @@ Oppure attivare qualsiasi tema esistente:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Output atteso
+### Output atteso {#expected-output-1}
 
 Quando l'attivazione ha successo:
 
@@ -92,7 +92,7 @@ Esempio di output:
   Note: Check your homepage to verify the layout
 ```
 
-## Flusso di lavoro: Strutturare e Attivare
+## Flusso di lavoro: Strutturare e Attivare {#workflow-scaffold-and-activate}
 
 Un flusso di lavoro tipico combina entrambe le funzionalità:
 
@@ -102,7 +102,7 @@ Un flusso di lavoro tipico combina entrambe le funzionalità:
 4. **Attivare**: "Activate the theme now"
 5. **Verificare**: Visitare il tuo sito per confermare che il nuovo design è attivo
 
-## Design Tokens e Personalizzazione
+## Design Tokens e Personalizzazione {#design-tokens-and-customization}
 
 I temi strutturati utilizzano i design tokens di WordPress (tramite `theme.json`) per:
 
@@ -114,14 +114,14 @@ I temi strutturati utilizzano i design tokens di WordPress (tramite `theme.json`
 
 Questi token sono centralizzati in `theme.json`, rendendo facile regolare l'intero sistema di design da un unico file.
 
-## Limitazioni e Note
+## Limitazioni e Note {#limitations-and-notes}
 
 - I temi vengono strutturati in `/wp-content/themes/` e devono seguire le convenzioni di denominazione di WordPress
 - L'attivazione richiede permessi appropriati sul tuo sito WordPress
 - Il codice PHP personalizzato nei temi è minimo; usa i plugin per funzionalità complesse
 - I block theme funzionano meglio con WordPress 5.9 e versioni successive
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
 **Il tema non appare dopo lo scaffolding**
 - Verifica che la directory del tema esista e abbia i permessi corretti
@@ -138,7 +138,7 @@ Questi token sono centralizzati in `theme.json`, rendendo facile regolare l'inte
 - Cancella eventuali plugin di caching
 - Controlla che la tua versione di WordPress supporti i token che stai utilizzando
 
-## Prossimi Passi
+## Prossimi Passi {#next-steps}
 
 Dopo aver attivato il tuo tema, puoi:
 - Usare la skill **Design System Aesthetics** per affinare tipografia, colori e spaziatura

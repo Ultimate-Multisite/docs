@@ -3,15 +3,15 @@ title: 'Öségnapok 7: A saját stílusod kialakítása'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# 7. Lesson: Ahhoz, hogy a sajátjuknak érezhető legyen
+# 7. Lesson: Ahhoz, hogy a sajátjuknak érezhető legyen {#lesson-7-making-it-yours}
 
 A vásárlóknak soha nem szabad úgy érezniük, mintha "valami WordPress plugin-ot" használnának. Úgy kell érezniük, mintha a FitSite-ot használnák – egy platformot, amelyet az ő iparájukra építettünk. Ez a lecke a márkázásra, a fehér címkézésre (white-labeling) és arra, hogy a platform egy terméknek tűnjön.
 
-## Hol voltam?
+## Hol voltam? {#where-we-left-off}
 
 A FitSite rendelkezik egy működő fizetési folyamattal, amely a fitness stúdió tulajdonosokat a tervválasztástól egy élő oldalig viszi. Most pedig az egész élményt egy egységes, márkázott terméknek kell csinálni.
 
-## Az Ön platform-domainje
+## Az Ön platform-domainje {#your-platform-domain}
 
 Az Ön márkájának alapja a domainje. A FitSite esetén:
 
@@ -19,7 +19,7 @@ Az Ön márkájának alapja a domainje. A FitSite esetén:
 - **Vásárlói oldalak**: `studionév.fitsite.com` (altdomainek)
 - **Egyedi domainek**: A Growth és Pro csomaggal rendelkező vásárlók saját domainjukat tudják hozzárendelni.
 
-### Domain beállítása
+### Domain beállítása {#setting-up-your-domain}
 
 1. Regisztrálja a platform domainját.
 2. Merítsen rá a hosting szolgáltatójára.
@@ -28,11 +28,11 @@ Az Ön márkájának alapja a domainje. A FitSite esetén:
 
 Részletes utasításokhoz lásd a [How to Configure Domain Mapping](/user-guide/domain-mapping/how-to-configure-domain-mapping) című cikket.
 
-## Az adminisztrációs felület fehér címkézése (White-Labeling)
+## Az adminisztrációs felület fehér címkézése (White-Labeling) {#white-labeling-the-admin-experience}
 
 Amikor egy fitness stúdió tulajdonosa belép az oldalának dashboard-ja vào, nem a WordPress vagy Ultimate Multisite márkáját, hanem az Ön márkáját kell látnia.
 
-### Saját bejelentkezési oldal
+### Saját bejelentkezési oldal {#custom-login-page}
 
 Egyedi beállításokkal láthatóvá teheti a WordPress bejelentkezési oldalt, hogy megjelenjen:
 
@@ -40,7 +40,7 @@ Egyedi beállításokkal láthatóvá teheti a WordPress bejelentkezési oldalt,
 - Fitness-hez illő háttérképek
 - Az Ön márkavonalainak színei
 
-### Dashboard márkázása
+### Dashboard márkázása {#dashboard-branding}
 
 Használja az [Admin Page Creator](/addons/admin-page-creator) addon-t vagy egyedi CSS-t, hogy:
 
@@ -48,7 +48,7 @@ Használja az [Admin Page Creator](/addons/admin-page-creator) addon-t vagy egye
 - Testreszabja az adminisztrációs színschemet, hogy illeszkedjen a márkájához.
 - Egyedi dashboard widget-et ad hozzá, amely fitness-specifikus gyorslinkeket és segítségnyújtási forrásokat tartalmaz.
 
-### Egyedi adminisztrációs oldalak
+### Egyedi adminisztrációs oldalak {#custom-admin-pages}
 
 Fontos megfontolni, hogy létrehozzon egyedi adminisztrációs oldalakat, amelyek kiemelik a fitness stúdió tulajdonosok számára legrelevánsabb műveleteket:
 
@@ -58,11 +58,11 @@ Fontos megfontolni, hogy létrehozzon egyedi adminisztrációs oldalakat, amelye
 
 Ez csökkenti a tanulási görbét, mivel a niche-re releváns műveletek kerülnek előtérbe, nem sülnek el a standard WordPress menüpontok közé.
 
-## A kommunikáció márkázása
+## A kommunikáció márkázása {#branding-your-communications}
 
 Minden e-mail, számla és értesítésnek erősítenie kell az Ön márkáját.
 
-### Rendszeres e-mailok
+### Rendszeres e-mailok {#system-emails}
 
 Navigáljon az **Ultimate Multisite > Settings > Emails** menüpontra, és testreszabassa az összes rendszer e-mailét:
 
@@ -79,7 +79,7 @@ Testreszabíthatók kulcsfontosságú e-mailek:
 | Fizetési értesítés | "Megjövünk a fizetést" | "FitSite előfizetési fizetése megerősítve" |
 | Próbaidő lejárta | "Az Ön próbaideje hamarosan lejár" | "A FitSite próbaideje 3 nap múlva lejár – tartsa online a stúdió oldalát" |
 
-### Számlák
+### Számlák {#invoices}
 
 Testreszabja a számlaeszabványokat az alábbiakkal:
 
@@ -87,7 +87,7 @@ Testreszabja a számlaeszabványokat az alábbiakkal:
 - Az Ön vállalkozási adatai
 - Fitness-specifikus terméknevek (nem általános csomag ID-k)
 
-## A vásárlóknak látható oldal
+## A vásárlóknak látható oldal {#the-customer-facing-site}
 
 Az Ön fő domainje (`fitsite.com`) egy marketing oldalt igényel, amely eladja a platformot. Ez különálló a Ultimate Multisite hálózat adminisztrációjától – ez az Ön vállalkozásának nyilvános arca.
 
@@ -103,7 +103,7 @@ Kulcsfontosságú oldalak:
 Létrehozsa a marketing oldalát saját hálózatán belül. Ez lehetővé teszi, hogy ugyanazon a dashboard-on kezelje, és bemutatja saját platformjának képességeit.
 :::
 
-## Egyedi domain a vásárlóknak
+## Egyedi domain a vásárlóknak {#custom-domain-for-customers}
 
 Azoknak a vásárlóknak, akik olyan csomagot választottak, amelyhez egyedi domainet tartozik, tisztázza a folyamatot:
 
@@ -113,7 +113,7 @@ Azoknak a vásárlóknak, akik olyan csomagot választottak, amelyhez egyedi dom
 
 Létrehozjon egy segítségnyújtási cikket vagy tudásbázis bejegyzést, amelyet kifejezetten a non-teknikai fitness stúdió tulajdonosok számára írtak.
 
-## A FitSite hálózatának eddigi állapota
+## A FitSite hálózatának eddigi állapota {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Amit építettünk ebben a leckében
+## Amit építettünk ebben a leckében {#what-we-built-this-lesson}
 
 - **Platform domain és DNS** beállítása egy márkázott élmény érdekében.
 - **Fehér címkézelt adminisztráció** a FitSite márkájával mindenhol.

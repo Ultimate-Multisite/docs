@@ -1,0 +1,194 @@
+---
+title: سەرچاوەی هۆکەکان
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# سەرچاوەی Hooks {#hooks-reference}
+
+بەڵگەنامەیەکی خۆکار دروستکراو بۆ هەموو **59 کردارەکان** و **118 فلتەرەکان** لە Ultimate Multisite.
+
+## کردارەکان {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — پێش ئاڕاستەکردنەوەی پشتڕاستکردنەوە جێبەجێ دەبێت.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ڕاستەوخۆ پێش دانانی کوکیی پشتڕاستکردنەوە جێبەجێ دەبێت.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ڕاستەوخۆ پێش دانانی کوکیی پشتڕاستکردنەوەی چوونەژوورەوە جێبەجێ دەبێت.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ڕێگە بە گەشەپێدەران دەدات یەکگرتنەکانی دابینکەری خانەخوێی تایبەتی خۆیان لە ڕێگەی پێوەکراوەکانی wp زیاد بکەن.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — کاتێک هەموو پێویستییەکان بارکران دەستپێدەکات
+- [wu_activation](./Actions/wu_activation) — ڕێگە بە بەشەکانی دیکەی پێوەکراوەکە دەدات ڕووتینەکانیان بۆ چالاککردن بلکێنن
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات دوای ئەوەی بەکارهێنەرێک یان بەڕێوەبەری باڵا داڕێژەی ماڵپەڕەکە دەگۆڕێت، فەنکشنەکان ببەستنەوە
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — لە هەندێک حاڵەتدا، پێویستمان دەبێت وزەی زیادە بار بکەین بۆ مامەڵەکردن لەگەڵ کردارەکان.
+- [wu_before_search_models](./Actions/wu_before_search_models) — پێش پرۆسێسکردنی داواکاریی گەڕان جێبەجێ دەبێت.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ڕێگە بە گەشەپێدەران دەدات گۆڕانکاریی زیاتر لە ئۆبجێکتی پڕۆسەی کڕین بکەن.
+- [wu_cart_setup](./Actions/wu_cart_setup) — ڕێگە بە گەشەپێدەران دەدات گۆڕانکاریی زیاتر لە ئۆبجێکتی پڕۆسەی کڕین بکەن.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — پێش ئەوەی خانەیەک زیاد بکرێت بۆ فۆڕمی پڕۆسەی کڕین جێبەجێ دەبێت.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ڕێگە بە گەشەپێدەران دەدات هووکە زیادەکان دەستپێبکەن.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — پێش ئەوەی پڕۆسەی کڕین پرۆسێس بکەین.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — دوای ئەوەی داواکاریی پڕۆسەی کڕین بە تەواوی کۆکراوە دەبێت جێبەجێ دەبێت.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات ویدجێت زیاد بکەن بۆ پانێڵی Dashboardی تۆڕ.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات ویدجێت زیاد بکەن بۆ پانێڵی Dashboardی تۆڕ.
+- [wu_deactivation](./Actions/wu_deactivation) — ڕێگە بە بەشەکانی دیکەی پێوەکراوەکە دەدات ڕووتینەکانیان بۆ ناچالاککردن بلکێنن
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات کردار زیاد بکەن بۆ پرۆسەی سڕینەوە
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — کاتێک دۆمەینێک دەبێتە دۆمەینی سەرەکی بۆ ماڵپەڕێک جێبەجێ دەبێت.
+- [wu_domain_created](./Actions/wu_domain_created) — کاتێک نەخشاندنی دۆمەینێکی نوێ زیاد دەکرێت دەستپێدەکات.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — دوای ئەوەی ناوەڕۆکی سەرەکیی نەخشاندنی دۆمەینمان بارکرا جێبەجێ کرا
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — هەندێک پێوەکراو URL پاشەکەوت دەکەن پێش ئەوەی نەخشاندنەکە چالاک بێت، یان URL بە شێوازێکی جیاواز دروست دەکەن کە تێیدا نییە
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ڕێگە بە گەشەپێدەران دەدات دوای ئەوەی دووبارەکردنەوەی ماڵپەڕێک ڕوو دەدات هووک ببەستنەوە.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات هووکی زیادە زیاد بکەن
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — هووک بۆ پاککردنەوەی زیادە
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — پێش مامەڵەکردن لەگەڵ داواکاریی مۆداڵی زیادکردنی دۆمەینی نوێ جێبەجێ دەبێت.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات ئەگەر پێویستیان پێی هەبوو داتای مێتا بە ڕێگای جیاواز پاشەکەوت بکەن.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات ئەگەر پێویستیان پێی هەبوو داتای مێتای بەکارهێنەر بە ڕێگای جیاواز پاشەکەوت بکەن.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — کاتێک تۆکنی بەستەری جادویی نادروست بەردەکەوێت جێبەجێ دەبێت.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — دوای ئەوەی بەکارهێنەرێک لە ڕێگەی بەستەری جادوییەوە دەچێتە ژوورەوە جێبەجێ دەبێت.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات کاتێک کڕیار زیاد دەکرێت شتی زیادە ئەنجام بدەن.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — دوای ئەوەی تواناکانی MCP بۆ یەکەیەک تۆمار دەکرێن جێبەجێ دەبێت.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — دوای ئەوەی ئادا پتەری MCP دەستپێدەکرێت جێبەجێ دەبێت.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — دوای ئەوەی ئەندامێتی هەڵدەوەشێندرێتەوە دەستپێدەکات.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — دوای نوێکردنەوەی ئەندامێتی دەستپێدەکات.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — پێش ئەوەی ئەندامێتی هەڵبوەشێندرێتەوە دەستپێدەکات.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — پێش نوێکردنەوەی ئەندامێتی دەستپێدەکات.
+- [wu_model_post_save](./Actions/wu_model_post_save) — دوای ئەوەی ئۆبجێکتێک لە بنکەدراوە پاشەکەوت دەکرێت جێبەجێ دەبێت.
+- [wu_page_added](./Actions/wu_page_added) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات کاتێک پەڕەکان تۆمار دەکرێن شتی زیادە جێبەجێ بکەن.
+- [wu_page_after_render](./Actions/wu_page_after_render) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات دوای ئەوەی پەڕەکە چاپ دەکەین ناوەڕۆکی زیادە زیاد بکەن
+- [wu_page_before_render](./Actions/wu_page_before_render) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات پێش ئەوەی پەڕەکە چاپ دەکەین ناوەڕۆکی زیادە زیاد بکەن.
+- [wu_page_load](./Actions/wu_page_load) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات هووکی زیادە بۆ پەڕەکانمان زیاد بکەن.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات دوای ئەوەی پەڕەکە چاپ دەکەین ناوەڕۆکی زیادە زیاد بکەن
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات پێش ئەوەی پەڕەکە چاپ دەکەین ناوەڕۆکی زیادە زیاد بکەن.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — ڕێگە بە گەشەپێدەرانی پێوەکراو دەدات هووکی زیادە بۆ پەڕەکانمان زیاد بکەن.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — دوای ئەوەی ویدجێتەکان بۆ ئەم پەڕەیە تۆمار دەکرێن جێبەجێ دەبێت.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — کارا دەبێت بۆ ئەوەی addons بتوانن مۆدیولەکانی توانایی بە یەکخستنەکانەوە ببەستن.
+- [wu_register_integrations](./Actions/wu_register_integrations) — کارا دەبێت بۆ ئەوەی یەکخستنەکان خۆیان تۆمار بکەن.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — ڕێگە دەدات ڕێڕەوی زیاتر تۆمار بکرێن.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — ڕێگە دەدات پەرەپێدەرانی plugin کردار زیاد بکەن بۆ پرۆسەی پاشەکەوتکردن
+- [wu_site_created](./Actions/wu_site_created) — دوای ئەوەی ماڵپەڕێک بۆ یەکەم جار دروست دەکرێت کارا دەبێت.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — ڕێگە دەدات پەرەپێدەرانی plugin، ئەگەر پێویست بوو، hooks ـی زیاتر زیاد بکەن.
+- [wu_template_previewer](./Actions/wu_template_previewer) — کاتێک لەناو دەقی پێشبینینی ڕووکاردا بێت کار دەکات.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — hook ـی enqueue scripts دەورووژێنێت.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — دوای ئەوەی شتێک لە بنکەی داتادا پاشەکەوت دەکرێت کارا دەبێت.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — دوای ئەوەی شتێک لە بنکەی داتادا پاشەکەوت دەکرێت کارا دەبێت.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — دوای ئەوەی شتێک لە بنکەی داتادا پاشەکەوت دەکرێت کارا دەبێت.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — ڕێگە دەدات پەرەپێدەرانی plugin کردار زیاد بکەن بۆ پرۆسەی کردنەوەی قوفڵ.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — ماوەی بەسەرچوونی cookieـی ڕەسەنایەتی فلتەر دەکات.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — شێوازی ئاراستەکردنەوەی ڕەسەنایەتی فلتەر دەکات.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — لێرە Filterـی ڕەسەنی WP دووبارە دەکاتەوە، بۆ دڵنیایی زیاتر.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — ڕێگە بە پەرەپێدەرانی plugin دەدات ئەو URLـە فلتەر بکەن کە لە پێشبینیکەرەکەدا بەکاردێت
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — فلتەر دەکات ئایا cookieـی auth تەنها دەبێت بەسەر HTTPSـدا بنێردرێت.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — فلتەر دەکات ئایا ئاراستەکردنەوەیەکی پارێزراوی ڕەسەنایەتی بەکاربهێنرێت.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — فلتەر دەکات ئایا cookieـی چوونەژوورەوە تەنها دەبێت بەسەر HTTPSـدا بنێردرێت.
+- [send_auth_cookies](./Filters/send_auth_cookies) — ڕێگە دەدات ڕێگری لەوە بکرێت کە cookieـکانی auth بەڕاستی بۆ client بنێردرێن.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — URLـی ئاراستەکردنەوە دابنێ.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — هەنگاوی زیادە لە ڕێگەی فلتەرەکانەوە زیاد بکە
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — ڕێگە بە پەرەپێدەرانی plugin دەدات گۆڕاوێکی زیادە بە شێوەی جیهانی بۆ کۆنتێکستی ڕەندەرکردن زیاد بکەن.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ڕێگە بە پەرەپێدەران دەدات ئەم پشکنینە بە شێوەی کورت-بڕاو تێپەڕێنن.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — خانەکانی modalـی زیادکردنی domainـی نوێ فلتەر دەکات.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ڕێگە بە پەرەپێدەران دەدات گۆڕانکاری لە line itemـی کرێی setup بکەن.
+- [wu_admin_notices](./Filters/wu_admin_notices) — ڕێگە بە پەرەپێدەران دەدات ئاگادارییەکانی admin کە لەلایەن Ultimate Multisite زیادکراون فلتەر بکەن.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — پاش گۆڕانکاری فلتەر بکە.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ئێستا، مامەڵە لەگەڵ هەموو جۆرەکان دەکەین.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — ڕێگە بە پەرەپێدەرانی plugin دەدات سنووردارکردنەکان بە شێوەی کورت-بڕاو تێپەڕێنن.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — فلتەر دەکات ئایا کرێی signup پێویستە جێبەجێ بکرێت یان نا.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ئارگیومێنتە ڕەسەنەکانی api فلتەر بکە.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — ڕێگە بە پەرەپێدەرانی plugin دەدات خانەکانی ناونیشانی billing فلتەر بکەن.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ڕێگە بە پەرەپێدەران دەدات دەرچوونەکە تێپەڕێنن و یەکێکی نوێ دابنێن
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ڕێگە بە پەرەپێدەران دەدات کۆدی unset current user تێپەڕێنن.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — کۆی "بڕی دووبارەبووەوە" فلتەر دەکات.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — کۆی "بڕی سەرەتایی" فلتەر بکە.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — کۆی "بڕی سەرەتایی" فلتەر بکە.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — ڕێگە بە پەرەپێدەرانی plugin دەدات دەستکاری بەهای credit بکەن.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — domainـە بنەڕەتییە هاوبەشەکانی checkout-form فلتەر دەکات کە نابێت ببنە تۆماری mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIـەکانمان بۆ زیادکردنی قاڵبی خانەی نوێ لێرە hook دەبن.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIـەکانمان بۆ زیادکردنی جۆری خانەی نوێ لێرە hook دەبن.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — پەیامەکانی هەڵە فلتەر بکە.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — ڕێگە بە پەرەپێدەران دەدات پشکنینەکە تێپەڕێنن ئەگەر خانەیەک خۆکارانە دەتوانرێت پێشکەش بکرێت.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — ڕێگە بە پەرەپێدەرانی plugin دەدات aliasـی تایبەت لە form validator زیاد بکەن.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — ڕێگە بە پەرەپێدەرانی plugin دەدات یاساکانی validation فلتەر بکەن.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Paramـە نەخوازراوەکان unset بکە.
+- [wu_contains_element](./Filters/wu_contains_element) — ڕێگە بە پەرەپێدەران دەدات ئەنجامەکانی گەڕانی سەرەتایی بگۆڕن.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — ڕێگە بە دابینکەرانی host دەدات constant بە شێوازێکی جیاواز دابمەزرێنن.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — ناوی جوانی بەشە ئیدارییەکانی وڵات دەگەڕێنێتەوە.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — لیستی شارەکانی بۆ ویلایەتێک لە وڵاتێک دەگەڕێنێتەوە.
+- [wu_country_get_states](./Filters/wu_country_get_states) — لیستی ویلایەتەکانی ئەم وڵاتە دەگەڕێنێتەوە.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ڕێگە بە پەرەپێدەران دەدات ڕەفتاری بنەڕەتی دەستکاری بکەن و customerـی ئێستا بە شێوەیەکی جیاواز دابنێن.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ڕێگە بە پەرەپێدەران دەدات ڕەفتاری بنەڕەتی دەستکاری بکەن و membershipـی ئێستا بە شێوەیەکی جیاواز دابنێن.
+- [wu_current_set_site](./Filters/wu_current_set_site) — ڕێگە بە پەرەپێدەران دەدات ڕەفتاری بنەڕەتی دەستکاری بکەن و siteـی ئێستا بە شێوەیەکی جیاواز دابنێن.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ڕێگە بە پەرەپێدەران دەدات پارامیتەرەکانی URLـی بەڕێوەبردنی site دەستکاری بکەن.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — ڕێگە بە پەرەپێدەرانی plugin دەدات بەستەرەکان فلتەر بکەن.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — ڕێگە بە پەرەپێدەرانی plugin دەدات پشکنینی نوێ زیاد بکەن بۆ دیاریکردنی ئەنجامەکان.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — لەوانەیە دواتر پێویستمان بە زیادکردنی بلۆکی زیاتر هەبێت.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — پاڵێوەری گشتی زیاد دەکات بۆ ئەوەی گەشەپێدەرەکان بتوانن ئەم شیکەرەوەیە فراوان بکەن بۆ مامەڵەکردن لەگەڵ builder یان plugin ـی زیاتر.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — پاڵێوەری ئەوەی ئایا یاسا زیاترەکانی وشەی نهێنی جێبەجێ بکرێن یان نا.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — پاڵێوەری ناوی بەکارهێنەری دروستکراوی کڕیار.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — ڕێگە بە گەشەپێدەرانی plugin دەدات پێش-دانراوەکانی پەڕەی checkout پاڵێو بکەن.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ڕێگە بە گەشەپێدەرەکان دەدات slug ـی فۆڕمی نوێ زیاد بکەن بۆ تێپەڕاندنی ئەم ڕەفتارە.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ڕێگە بە گەشەپێدەرەکان و add-on ـەکان دەدات هەنگاوی کۆچکردنی نوێ زیاد بکەن
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — لە خوارەوە زیاتر دەربارەی ئەم پاڵێوەرە ببینە، لەسەر هەمان ئەم میتۆدە.
+- [wu_get_post_types](./Filters/wu_get_post_types) — ڕێگە بە گەشەپێدەرەکان دەدات ئەو جۆرە پۆستانە هەڵبژێرن کە دەبێت پیشان بدرێن.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — دێڕەکان دەگەڕێنێتەوە، دەتوانرێت پاڵێو بکرێن
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ڕێگە بە گەشەپێدەرەکان دەدات جووتەکانی domain/path دەستکاری بکەن.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — بەشەکانی wizard بۆ ڕێکخستنی یەکخستنی خانەخوێیی پاڵێو دەکات.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — خانەکانی سەر فۆڕمێک پاڵێو دەکات. فۆڕمەکە بە ID ـی ناوی پاڵێوەرەکە دەناسرێتەوە.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — ئەو جۆرە بەرهەمانە پاڵێو دەکات کە خولی پسوڵەی سەربەخۆیان هەیە.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — ڕێگە بە گەشەپێدەرانی plugin دەدات دۆخێکی دیاریکراو بۆ API بەزۆر بسەپێنن.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — ڕێگە بە گەشەپێدەرانی plugin دەدات تاقیکردنەوەی زیاتر بۆ دۆخی گەشەپێدان زیاد بکەن.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — ڕێگە بە گەشەپێدەرانی plugin دەدات دۆخێکی دیاریکراو بۆ گونجێنەری MCP بەزۆر بسەپێنن.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — بەهۆی هۆکارەکانی ئاسایش، ژمارەی ئەو کردارە بەردەستانە سنووردار دەکەین کە دەتوانرێت hook ـیان بۆ بکرێت. ئەم پاڵێوەرە ڕێگە بە گەشەپێدەرەکان دەدات فراوانی بکەن
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — پشکنین دەکات ئایا جۆرێکی دیاریکراوی پۆست لەسەر ئەم plan ـە ڕێپێدراوە یان نا ڕێگە بە گەشەپێدەرانی plugin دەدات بەهای گەڕاوە پاڵێو بکەن
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — پاڵێوەری ئەوەی ئایا پشتڕاستکردنەوەی ناونیشانی IP جێبەجێ بکرێت یان نا.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — پاڵێوەری ئەوەی ئایا پشتڕاستکردنەوەی user agent جێبەجێ بکرێت یان نا.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — URL ـی بەستەری سیحری دروستکراو پاڵێو دەکات.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — پاڵێوەری ئەوەی ئایا بەستەرە سیحرییەکان چالاکن یان نا.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — URL ـی redirect دوای کردنی domain بە سەرەکی پاڵێو دەکات.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — لیستێکی دەرکردن لە پارامەتەرەکان دروست بکە کە ڕێگری لە auto-redirect دەکەن.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — پاڵێوەر بۆ پووچەڵکردنەوەی بڕیاری تێخستنی توانای MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — بەرواری کۆتایی هاتووی ژمێردراو پاڵێو دەکات.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — بەرواری کۆتایی هاتووی ژمێردراو پاڵێو دەکات بۆ ئەوەی دوای نوێکردنەوە دابنرێت.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ڕێگە بە گەشەپێدەرەکان دەدات slug ـی فۆڕمی نوێکردنەوەی نوێ زیاد بکەن.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — کەمترین درێژی وشەی نهێنی پاڵێو دەکات.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — کەمترین هێزی پێویستی وشەی نهێنی پاڵێو دەکات (نمرەی zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — ڕێگە بە گەشەپێدەرانی plugin، و خۆمان، دەدات بەستەری کردار زیاد بکەین بۆ پەڕەکانی دەستکاریکردنمان
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — پاڵێوەری ئەوەی ئایا پیتی بچووک لە وشەی نهێنی دا پێویست بێت یان نا.
+- [wu_password_require_number](./Filters/wu_password_require_number) — پاڵێوەری ئەوەی ئایا ژمارە لە وشەی نهێنی دا پێویست بێت یان نا.
+- [wu_password_require_special](./Filters/wu_password_require_special) — پاڵێوەری ئەوەی ئایا نووسەی تایبەت لە وشەی نهێنی دا پێویست بێت یان نا.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — پاڵێوەری ئەوەی ئایا پیتی گەورە لە وشەی نهێنی دا پێویست بێت یان نا.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ڕێگە بە بەکارهێنەر دەدات پەیامەکە دەربارەی پارەدانە چاوەڕوانەکان بگۆڕێت.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — ئەو جۆرە بەرهەمانە پاڵێو دەکات کە دەبێت وەک plan مامەڵەیان لەگەڵ بکرێت.
+- [wu_post_count](./Filters/wu_post_count) — ڕێگە بە گەشەپێدەرانی plugin دەدات کۆی ژمارەکە بگۆڕن
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — ڕێگە بە گەشەپێدەرانی plugin دەدات بگۆڕن کام دۆخی پۆست دەبێت بژمێردرێت بە شێوەی بنەڕەتی، پۆستە بڵاوکراوە و تایبەتەکان دەژمێردرێن
+- [wu_post_default_status](./Filters/wu_post_default_status) — داتای شتەکە پێش ئەوەی لە بنکەدراوەکەدا هەڵبگیرێت پاڵێو دەکات.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — ڕێگە بە گەشەپێدەرەکان دەدات ڕێکخستنەکان پێش هەڵگرتن لەلایەن Ultimate Multisite ـەوە پاڵێو بکەن.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — پاڵێو دەکات ئایا ڕێپێدراوە بە داواکارییەکە بەردەوام بێت یان نا.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — پاڵێو دەکات ئایا ڕێپێدراوە بە داواکارییەکە بەردەوام بێت یان نا.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — پاڵێو دەکات ئایا ڕێگەی پێدەدرێت بەردەوام بێت لەگەڵ داواکارییەکە یان نا.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — پاڵێو دەکات ئایا ڕێگەی پێدەدرێت بەردەوام بێت لەگەڵ داواکارییەکە یان نا.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — پاڵێو دەکات ئایا ڕێگەی پێدەدرێت بەردەوام بێت لەگەڵ داواکارییەکە یان نا.
+- [wu_return_url](./Filters/wu_return_url) — ڕێگە بە پەرەپێدەران دەدات URL-ی گەڕانەوەی gateway بگۆڕن کە دوای پرۆسەکانی checkout بەکاردێت.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — ڕێگە بە پەرەپێدەرانی plugin دەدات فەنکشنی مۆدێلی گەڕانی زیاتر زیاد بکەن.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ڕێگە بە پەرەپێدەران دەدات هەنگاوەکانی setup wizard-ی زیادە زیاد بکەن.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — پاڵێو دەکات ئایا Ultimate Multisite پێویستە تۆماری دۆمەین بۆ siteێکی تازە دروستکراو دروست بکات.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ڕێگە بە پەرەپێدەران دەدات ڕەوانەکردنەوەکە کورت-بکەنەوە، بۆ ڕێگریکردن لە ڕوودانی.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — ڕێگە بە نووسینەوەی handler دەدات
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — کردارە بەکۆمەڵە بەردەستەکان بۆ siteەکان پاڵێو بکە.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — پاڵێو بۆ گۆڕینی بەهای get pluginssites لەناو تۆڕەکەدا.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — توانای single-sign-onی نێوان-دۆمەین چالاک/ناچالاک بکە.
+- [wu_sso_url](./Filters/wu_sso_url) — URLەکانی SSOی دروستکراو پێش گەڕاندنەوەیان بۆ کردارەکانی کڕیاری نێوان-دۆمەین پاڵێو دەکات.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — داتاکانی Stripe Subscription پاڵێو بکە. دەتوانێت success_url یان cancel_url بگۆڕێت.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — ئارگیومێنتەکانی مەبەستی پارەدان پاڵێو دەکات.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — IDی planەکە پاڵێو دەکات بۆ پشکنین. ئەگەر ئەمە هەبوو، subscriptionی نوێ ئەم planە بەکاردەهێنێت.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — IDی productەکە پاڵێو دەکات بۆ پشکنین. ئەگەر ئەمە هەبوو، subscriptionی نوێ ئەم productە بەکاردەهێنێت.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — بەهای idempotency_key کە لەگەڵ هەڵبژاردنەکانی پارەدانەکەی Stripe دەنێردرێت پاڵێو دەکات.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — تۆماری membershipی پەیوەست بە ئەم webhookە پاڵێو دەکات.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — metaی داتاکان پێش ئەوەی serialized بکرێت بۆ هەڵگرتن لە database پاڵێو دەکات.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — داتاکانی شتەکە پێش ئەوەی لە database هەڵبگیرێت پاڵێو دەکات.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ڕێگە بە پەرەپێدەران دەدات URLی upgrade to unlock بگۆڕن
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — دیاری بکە ئایا mappingێک پێویستە بەکاربهێنرێت
+- [wu_username_from_email](./Filters/wu_username_from_email) — ناوی بەکارهێنەری کڕیاری نوێ پاڵێو بکە.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ڕێگە بە پەرەپێدەران دەدات نامەکەی دەربارەی سنووری بەکارهێنەرانی membership بگۆڕن
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ڕێگە بە پەرەپێدەران دەدات فۆڵدەری زیادە زیاد بکەن بۆ لیستی جێگۆڕکێپێکراو.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — ئەو sub_commandsانە پاڵێو دەکات کە بۆ ئەم entityیە چالاک کراون.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — ئێمە سێ نەخشە دەپشکنین کاتێک هەوڵ دەدەین بزانین لە کوێ دەتوانین نەگۆڕەکانمان دابنێین:

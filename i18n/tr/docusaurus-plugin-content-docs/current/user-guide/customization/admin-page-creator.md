@@ -3,7 +3,7 @@ title: Admin Sayfa Oluşturucu
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# Yönetici Sayfası Oluşturucu
+# Yönetici Sayfası Oluşturucu {#admin-page-creator}
 
 Bu özellik **Admin Page Creator** eklentisi tarafından sağlanmaktadır.
 

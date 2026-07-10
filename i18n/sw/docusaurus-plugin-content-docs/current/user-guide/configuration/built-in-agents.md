@@ -1,132 +1,148 @@
 ---
-title: Wawakala Ndani
+title: Mawakala Waliojengewa Ndani
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents Zilizojengwa
+# Mawakala Waliojengwa Ndani {#built-in-agents}
 
-Gratis AI Agent v1.9.0 inatoa agents tano zilizojengwa ndani, kila moja ikiwa imewekwa awali na seti maalum ya zana, maelekezo ya mfumo (system prompt) yanayolenga jambo moja, na mapendekezo ya kuanzia yanayolingana na kazi za kawaida katika eneo hilo. Kubadilisha kati ya agents hizi kunabadilisha uwezo wa msaidizi na jinsi anavyojibu — bila wewe kufanya mipangilio yoyote.
+Gratis AI Agent v1.9.0 huja na mawakala watano waliojengwa ndani, kila mmoja akiwa amesanidiwa mapema kwa seti maalumu ya zana, system prompt iliyobinafsishwa, na mapendekezo ya kuanzia yanayolingana na kazi za kawaida katika eneo hilo. Kubadilisha kati ya mawakala hubadilisha kile ambacho msaidizi anaweza kufanya na jinsi anavyojibu — bila usanidi wowote kwa upande wako. Superdav AI Agent v1.18.0 inaweza kuongeza zana zinazozingatia ratiba, rekodi za vikumbusho, milango ya idhini, na arifa za SMS kwenye mtiririko huu wa kazi wakati miunganisho husika imesanidiwa.
 
-## Agent ni Nini?
+## Wakala Ni Nini? {#what-is-an-agent}
 
-Agent kila moja ni wasifu wa mipangilio wenye jina linalojumuisha:
+Kila wakala ni wasifu wa usanidi wenye jina unaochanganya:
 
-- **Tools (Zana)** — uwezo ambao agent anaruhusiwa kutumia (k.m., Mwandishi wa Maudhui ana uwezo wa kuunda machapisho; Studio ya Ubunifu ina uwezo wa CSS na theme.json).
-- **System prompt (Maelekezo ya Mfumo)** — maelekezo yanayoweka sauti, vipaumbele, na vikwazo vya agent.
-- **Suggestions (Mapendekezo)** — maandishi yaliyojitayarisha katika kiolesura cha mazungumzo kukusaidia kuanza haraka.
+- **Zana** — uwezo ambao wakala anaruhusiwa kuitumia (k.m. Mwandishi wa Maudhui ana ufikiaji wa uwezo wa kuunda machapisho; Studio ya Ubunifu ina ufikiaji wa uwezo wa CSS na theme.json)
+- **System prompt** — maagizo yanayoweka sauti, vipaumbele, na vikwazo vya wakala
+- **Mapendekezo** — prompts zilizoandikwa mapema zinazoonyeshwa katika kiolesura cha mazungumzo ili kukusaidia kuanza haraka
 
-## Kupata Agent Picker
+## Kufikia Kiteua Wakala {#accessing-the-agent-picker}
 
-1. Fungua sehemu ya **Gratis AI Agent** kwenye menyu ya upangishwaji wa WordPress (admin sidebar).
-2. Bonyeza **icon ya agent** kwenye kona ya juu kushoto ya kichwa cha mazungumzo (icon inabadilika kuonyesha agent anayefanya kazi).
-3. **Agent Picker** inafunguliwa kama tabaka la form-table. Agent kila mmoja anatajwa na icon yake, jina, na maelezo mafupi ya mstari mmoja.
-4. Bonyeza safu ya agent ili kuifanya ianze kazi. Kichwa cha mazungumzo kinabadilika mara moja.
+1. Fungua paneli ya **Gratis AI Agent** kwenye upau wa pembeni wa msimamizi wa WordPress.
+2. Bofya **ikoni ya wakala** upande wa juu-kushoto wa kichwa cha mazungumzo (ikoni hubadilika kuonyesha wakala anayefanya kazi).
+3. **Kiteua Wakala** hufunguka kama safu ya jedwali la fomu. Kila wakala huorodheshwa pamoja na ikoni yake, jina, na maelezo ya mstari mmoja.
+4. Bofya safu ya wakala ili kuiwasha. Kichwa cha mazungumzo husasishwa mara moja.
 
-Unaweza pia kubadilisha agents katikati ya mazungumzo — maelekezo ya mfumo ya agent mpya yanatumika kuanzia ujumbe ujao.
+Unaweza pia kubadilisha mawakala katikati ya mazungumzo — system prompt ya wakala mpya huanza kutumika kuanzia ujumbe unaofuata.
 
-## Agents Tano Zilizojengwa Ndani
+## Mawakala Watano Waliojengwa Ndani {#the-five-built-in-agents}
 
-### Content Writer (Mwandishi wa Maudhui)
+### Mwandishi wa Maudhui {#content-writer}
 
 **Lengo:** Kuunda na kuhariri machapisho, kurasa, na fomu za mawasiliano.
 
-**Zana Zinazopatikana:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Zana zinazopatikana:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Miunganisho ya Superdav AI Agent v1.18.0 ikiwa imewezeshwa, muktadha wa kalenda uliosanidiwa, milango ya idhini, vikumbusho, na zana za arifa za SMS pia zinaweza kupatikana kwa mitiririko ya kazi iliyoidhinishwa.
 
-**Inafanya vizuri nini:**
-- Kuandika na kuchapisha machapisho ya blog kutoka kwa muhtasari au mpangilio wa mawazo.
-- Kuunda makundi ya kurasa za kufika (landing pages) kwa tovuti mpya.
-- Kuunda fomu za mawasiliano na maswali.
-- Kuweka picha za sifa (featured images) kwenye machapisho kutoka kwa URL au kutafuta.
+**Kile inachofanya vizuri:**
+- Kuandaa na kuchapisha machapisho ya blogu kutoka muhtasari au mpangilio
+- Kuunda makundi ya kurasa za kutua kwa site mpya
+- Kujenga fomu za mawasiliano na maswali
+- Kuweka picha teule kwenye machapisho kutoka URL au utafutaji
+- Kuandaa ujumbe wa ufuatiliaji wa tukio kutoka muktadha uliosanidiwa wa Google Calendar, kisha kusitisha kwa idhini kabla ya kutuma arifa
 
-**Mapendekezo ya Kuanzia:**
-- *Andika makala ya blog ya maneno 500 kuhusu faida za WordPress multisite.*
-- *Tengeneza kurasa za Kuhusu, Huduma, na Mawasiliano na kuchapisha.*
-- *Ongeza fomu ya maswali ya uhifadhi kwenye ukurasa wa Mawasiliano.*
-
----
-
-### Site Builder (Mjenzi wa Tovuti)
-
-**Lengo:** Kuunda tovuti kwa jumla kuanzia amri moja tu.
-
-**Zana Zinazopatikana:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Inafanya vizuri nini:**
-- Kuunda mpango wa ujenzi wa tovuti wenye hatua nyingi kwa aina ya biashara iliyoainishwa.
-- Kutekeleza kila hatua kwa uhuru — muundo, maudhui, navigashoni, na usanifu.
-- Kurejesha kutoka kwa makosa katikati ya mpango bila kuhitaji mwingiliano wa kibinadamu.
-- Kusakinisha plugins zinazopendekezwa kama sehemu ya ujenzi.
-- Kuunda fomu za mawasiliano moja kwa moja kutoka kwenye kiolesura cha mazungumzo (Superdav AI Agent v1.10.0+).
-
-**Mapendekezo ya Kuanzia:**
-- *Jenga tovuti ya wasanii wa picha yenye aina ya machapisho ya wasifu, ukurasa wa uhifadhi, na fomu ya mawasiliano.*
-- *Tengeneza tovuti ya mgahawa yenye menyu ya mtandaoni, saa za kazi, na fomu ya maswali ya kuhifadhi meza.*
-- *Weka upangishwaji wa tovuti ya mshauri huru yenye kurasa za huduma, sehemu ya wasifu, na blog.*
-- *Ongeza fomu ya mawasiliano kwenye ukurasa wa Mawasiliano kwa kutumia mjenzi wa tovuti.*
+**Mapendekezo ya kuanzia:**
+- *Andika chapisho la blogu la maneno 500 kuhusu faida za WordPress multisite.*
+- *Unda ukurasa wa Kuhusu, Huduma, na Mawasiliano kisha uzichapishe.*
+- *Ongeza fomu ya swali la kuweka nafasi kwenye ukurasa wa Mawasiliano.*
+- *Andaa kikumbusho kwa wahudhuriaji wa tukio la kalenda iliyosanidiwa la kesho na subiri idhini kabla ya kukituma.*
 
 ---
 
-### Design Studio (Studio ya Ubunifu)
+### Mjenzi wa Site {#site-builder}
 
-**Lengo:** Kubadilisha usanifu kwa macho — rangi, fonti (typography), CSS, na mifumo ya block.
+**Lengo:** Uundaji wa website kutoka mwanzo hadi mwisho kwa prompt moja.
 
-**Zana Zinazopatikana:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Zana zinazopatikana:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Ukiwa na Superdav AI Agent v1.18.0, zana zilizosanidiwa za huduma inayosimamiwa, idhini, kikumbusho, kalenda, na SMS zinaweza kupatikana pale ambapo wasimamizi wanaziwezesha.
 
-**Inafanya vizuri nini:**
-- Kutumia mapendekezo ya usanifu yanayojulikana (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog).
-- Kurekebisha fonti za jumla na mapambo ya rangi kupitia theme.json.
-- Kuweka CSS maalum kwa ajili ya kubadilisha rangi kwa ajili ya chapa (brand-specific overrides).
-- Kuchukua picha ya skrini ya ukurasa na kuichunguza kwa matatizo ya usanifu.
+**Kile inachofanya vizuri:**
+- Kuzalisha mpango wa ujenzi wa site wa awamu nyingi kwa aina ya biashara iliyoelezwa
+- Kutekeleza kila awamu kwa kujitegemea — muundo, maudhui, urambazaji, muundo wa kuona
+- Kupona kutokana na hitilafu katikati ya mpango bila kuhitaji uingiliaji wa mikono
+- Kusakinisha plugins zinazopendekezwa kama sehemu ya ujenzi
+- Kuunda fomu za mawasiliano moja kwa moja kutoka kiolesura cha mazungumzo (Superdav AI Agent v1.10.0+)
+- Kuratibu vikumbusho vya uzinduzi au ufuatiliaji wa wahudhuriaji bila arifa rudufu wakati milango ya idhini na rekodi za vikumbusho zimewezeshwa
 
-**Mapendekezo ya Kuanzia:**
-- *Tumia mapendekezo ya warm-editorial kisha weka rangi kuu kuwa #2d6a4f.*
-- *Chukua picha ya skrini ya ukurasa wa nyumbani na niambie nini ningeboresha.*
-- *Tengeneza mfumo wa block wa hero unaoweza kutumika na picha ya mandhari yenye upana kamili na kichwa kilicho katikati.*
-
----
-
-### Plugin Manager (Meneja wa Plugins)
-
-**Lengo:** Kugundua, kusakinisha, na kusimamia plugins za WordPress.
-
-**Zana Zinazopatikana:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Inafanya vizuri nini:**
-- Kupendekeza plugin bora kwa matumizi yanayoelezewa.
-- Kusakinisha vifurushi vya uwezo (ability packs) kutoka kwenye rejista.
-- Kutazama katalogi ya uwezo inayopatikana kwa kategoria.
-
-**Mapendekezo ya Kuanzia:**
-- *Plugin bora kwa ajili ya saraka ya usanahi (membership directory) ni ipi?*
-- *Sakinisha vifurushi vya uwezo vya WooCommerce.*
-- *Nionyeshe vifurushi vyote vya uwezo vya e-commerce vinavyopatikana.*
+**Mapendekezo ya kuanzia:**
+- *Jenga site ya jalada la upigaji picha yenye aina ya chapisho la matunzio, ukurasa wa kuweka nafasi, na fomu ya mawasiliano.*
+- *Unda website ya mgahawa yenye menyu ya mtandaoni, saa za kufungua, na fomu ya swali la kuhifadhi meza.*
+- *Sanidi site ya ushauri wa kujitegemea yenye kurasa za huduma, sehemu ya jalada, na blogu.*
+- *Ongeza fomu ya mawasiliano kwenye ukurasa wa Mawasiliano kwa kutumia mjenzi wa site.*
+- *Baada ya orodha-hakiki ya uzinduzi wa site kuidhinishwa, tuma kikumbusho cha SMS kwa mawasiliano ya mdau yaliyosanidiwa.*
 
 ---
 
-### Support Assistant (Msaidizi wa Usaidizi)
+### Studio ya Ubunifu {#design-studio}
 
-**Lengo:** Kujibu maswali kuhusu maudhui ya tovuti, mipangilio, na usanidi wa WordPress.
+**Lengo:** Ubinafsishaji wa mwonekano — rangi, tipografia, CSS, na ruwaza za blocks.
 
-**Zana Zinazopatikana:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Zana zinazopatikana:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Inafanya vizuri nini:**
-- Kutafuta mipangilio na chaguzi za sasa za tovuti.
-- Kueleza ni aina gani za machapisho (post types), taxonomies, na menyu zimepangishwa kwenye tovuti.
-- Kujibu maswali ya "hili mipangilio linafanya nini?" kwa kusoma thamani halisi.
-- Kutumikia kama tabaka la uchunguzi (diagnostic layer) lisilo na uwezo wa kubadilisha data kabla ya kufanywa mabadiliko.
+**Kile inachofanya vizuri:**
+- Kutumia mipangilio ya awali ya theme yenye majina (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- Kurekebisha kwa kina tipografia ya kimataifa na paleti za rangi kupitia theme.json
+- Kuingiza CSS maalumu kwa marekebisho yanayohusu chapa
+- Kuchukua picha ya skrini ya ukurasa na kuikagua kwa matatizo ya ubunifu
 
-**Mapendekezo ya Kuanzia:**
-- *Plugins na mipangilio gani ni hai kwenye tovuti hii kwa sasa?*
-- *Orodhesha aina zote za machapisho ya custom zilizosajiliwa kwenye tovuti hii.*
-- *Ni menyu gani za navigashoni zipo na zimepangishwa wapi?*
+**Mapendekezo ya kuanzia:**
+- *Tumia mpangilio wa awali wa warm-editorial kisha weka rangi kuu kuwa #2d6a4f.*
+- *Chukua picha ya skrini ya ukurasa wa nyumbani na uniambie ungeboresha nini.*
+- *Unda ruwaza ya block ya hero inayoweza kutumika tena yenye picha ya mandharinyuma yenye upana kamili na kichwa kilichowekwa katikati.*
+
+### Msimamizi wa Plugin {#plugin-manager}
+
+**Lengo:** Kugundua, kusakinisha, na kusimamia WordPress plugins.
+
+**Zana zinazopatikana:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Kile inachofanya vizuri:**
+- Kupendekeza plugin bora kwa matumizi yaliyoelezwa
+- Kusakinisha vifurushi vya uwezo kutoka registry
+- Kuvinjari katalogi ya uwezo unaopatikana kwa kategoria
+
+**Mapendekezo ya kuanzia:**
+- *Ni plugin ipi bora kwa saraka ya membership?*
+- *Sakinisha kifurushi cha uwezo wa WooCommerce.*
+- *Nionyeshe vifurushi vyote vinavyopatikana vya uwezo wa ecommerce.*
 
 ---
 
-## Kubadilisha Agents
+### Msaidizi wa Usaidizi {#support-assistant}
 
-Agent yeyote iliyojaa ndani inaweza kupanuzwa au kubadilishwa kupitia filter ya `gratis_ai_agent_agents`.
+**Lengo:** Kujibu maswali kuhusu maudhui ya site, mipangilio, na usanidi wa WordPress.
 
-### Kuongeza system prompt maalum kwa agent iliyopo
+**Zana zinazopatikana:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Kile inachofanya vizuri:**
+- Kutafuta mipangilio na chaguo za sasa za tovuti
+- Kueleza ni aina gani za machapisho, taksonomia, na menyu zimesanidiwa kwenye tovuti
+- Kujibu maswali ya "mpangilio huu hufanya nini?" kwa kusoma thamani za moja kwa moja
+- Kutumika kama safu ya uchunguzi ya kusoma pekee kabla ya kufanya mabadiliko
+
+**Mapendekezo ya kuanzia:**
+- *Ni plugins na mipangilio gani inayotumika kwa sasa kwenye tovuti hii?*
+- *Orodhesha aina zote maalum za machapisho zilizosajiliwa kwenye tovuti hii.*
+- *Ni menyu gani za urambazaji zilizopo na zimekabidhiwa wapi?*
+
+---
+
+## Miunganisho ya Superdav Automation {#superdav-automation-integrations}
+
+Wakati miunganisho ya Superdav AI Agent v1.18.0 imesanidiwa, mawakala yaliyojengwa ndani yanaweza kushiriki katika mtiririko wa kazi wa otomatiki ulio salama zaidi na unaozingatia ratiba:
+
+- **Zana za kusoma za Google Calendar** huruhusu mawakala kukagua kalenda na matukio yaliyosanidiwa kabla ya kuandaa kazi ya ufuatiliaji.
+- **Ulinganishaji wa anwani na wahudhuriaji** husaidia kulinganisha washiriki wa tukio na watumiaji wa WordPress au anwani zinazojulikana.
+- **Milango ya idhini ya binadamu** husitisha vitendo nyeti hadi mtumiaji aliyeidhinishwa avikague na kuvithibitisha.
+- **Rekodi za vikumbusho** huzuia arifa rudufu wakati kazi zilizoratibiwa zinajaribu tena au kurudiwa.
+- **Arifa za SMS za TextBee** hutuma ujumbe wa maandishi uliosanidiwa tu wakati vitambulisho vya SMS na ruhusa za mtiririko wa kazi zimewezeshwa.
+
+Mtiririko wa kazi unaopendekezwa: mwombe wakala kuandaa ujumbe au kitendo, kagua kidokezo cha idhini, kisha ruhusu kitendo kilichoidhinishwa kuendelea. Kwa vikumbusho vinavyojirudia, weka uondoaji wa urudufu wa vikumbusho ukiwa umewezeshwa ili tukio au anwani ileile isiarifiwe mara kwa mara.
+
+---
+
+## Kubinafsisha Mawakala {#customising-agents}
+
+Kila wakala aliyejengwa ndani anaweza kupanuliwa au kubadilishwa kupitia kichujio cha `gratis_ai_agent_agents`.
+
+### Kuongeza kidokezo maalum cha mfumo kwa wakala aliyepo {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Kusajili agent mpya
+### Kusajili wakala mpya {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Agent mpya inaonekana kwenye Agent Picker mara moja baada ya filter kuendesha.
+Wakala mpya huonekana kwenye Kiteuzi cha Wakala mara tu baada ya kichujio kuendeshwa.
 
-### Kuondoa agent iliyojaa ndani
+### Kuondoa wakala aliyejengwa ndani {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

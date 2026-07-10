@@ -1,138 +1,147 @@
 ---
-title: Pembaruan Log Integrasi WooCommerce
+title: Log Perubahan Integrasi WooCommerce
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration Changelog
+# Log Perubahan Integrasi WooCommerce {#woocommerce-integration-changelog}
 
-Versi 2.0.6 - Dilancar pada 2026-01-16
-* Peningkatan: Sertakan langganan teras dalam addon. Tidak lagi memerlukan Woocommerce Subscriptinos extension.
+Versi 2.2.0 - Dikeluarkan pada 2026-07-01
+* Baharu: Jumlah cukai Ultimate Multisite kini muncul sebagai baris yuran WooCommerce yang berasingan semasa checkout, menjadikan jumlah cukai lebih jelas sebelum pembayaran.
+* Baharu: Menambah tetapan pilihan ikut serta "Gantung Memberships Serta-merta pada Pembaharuan Gagal" dan penapis `wu_woo_suspend_on_payment_failure` untuk site yang mahukan penggantungan akibat pembaharuan gagal semasa tetingkap percubaan semula WooCommerce Subscriptions.
+* Pembetulan: Menyelaraskan status WooCommerce Subscription yang boleh kekal tidak segerak dengan membership Ultimate Multisite selepas pembaharuan gagal atau dipulihkan.
+* Pembetulan: Menambah mata wang kedai WooCommerce ke senarai mata wang Ultimate Multisite apabila ia tiada.
+* Pembetulan: Mengekalkan butiran bil pelanggan semasa mengalihkan pelanggan langganan ke checkout WooCommerce.
+* Ditambah baik: Menambah keserasian dengan Jetpack Autoloader 5.
+* Ditambah baik: Membersihkan penjanaan pakej keluaran supaya zip GitHub dan marketplace mengelakkan direktori staging bersarang dan fail pembangunan.
 
-Versi 2.0.5 - Dilancar pada 2026-01-09
-* Peningkatan: Memuatkan terjemahan dari API glotpress.
-* Pembaikan: Ralat kritikal pada sesetengah page builder.
-* Pembaikan: Pengalihan tak terhingga apabila pelanggan adalah ahli laman utama.
+Versi 2.0.6 - Dikeluarkan pada 2026-01-16
+* Penambahbaikan: Sertakan langganan teras dalam addon. Tidak lagi memerlukan sambungan Woocommerce Subscriptinos.
 
-Versi 2.0.4 - Dilancar pada 2025-11-14
+Versi 2.0.5 - Dikeluarkan pada 2026-01-09
+* Penambahbaikan: Muatkan terjemahan daripada glotpress API.
+* Pembetulan: Ralat maut dalam sesetengah page builder.
+* pembetulan: Ubah hala tak terhingga apabila pelanggan ialah ahli site utama.
+
+Versi 2.0.4 - Dikeluarkan pada 2025-11-14
 * Ditambah: Terjemahan untuk lebih banyak bahasa.
-* Ditukar: Ditukar nama kepada Ultimate Multisite: Woocommerce Integration.
+* Diubah: Dinamakan semula kepada Ultimate Multisite: Woocommerce Integration.
 * Ditambah: Keserasian dengan Woocommerce 10.2.1.
 * Ditambah: Keserasian dengan Woocommerce Subscriptions 7.7.0.
-* Pembaikan: Keserasian dengan PHP 8.4
-* Pembaikan: Pengalihan tetapi apabila halaman akaun WC tidak wujud.
+* Pembetulan: Keserasian dengan PHP 8.4
+* Pembetulan: Ubah hala tetapi apabila tiada halaman Account WC wujud.
 
-Versi 2.0.3 - Dilancar pada 2025-08-13
-* Ditukar: Mengaktifkan kemas kini automatik dengan marketplace baharu.
+Versi 2.0.3 - Dikeluarkan pada 2025-08-13
+* Diubah: Mendayakan kemas kini automatik dengan marketplace baharu.
 
-Versi 2.0.2 - Dilancar pada 2025-07-05
-* Ditukar: Ditukar nama kepada Multisite Ultimate: Woocommerce Integration.
+Versi 2.0.2 - Dikeluarkan pada 2025-07-05
+* Diubah: Dinamakan semula kepada Multisite Ultimate: Woocommerce Integration.
 * Ditambah: Keserasian dengan Woocommerce 9.8.1.
 * Ditambah: Keserasian dengan Woocommerce Subscriptions 7.3.0.
-* Pembaikan: Pembatalan langganan oleh pelanggan.
-* Pembaikan: Ralat kritikal apabila menggunakan blok checkout.
-* Peningkatan: Kini serasi dengan jadual pesanan tersuai berprestasi tinggi Woocommerce.
-* Pembaikan: Pembatalan di checkout WooCommerce masih boleh menaik taraf keahlian.
+* Pembetulan: Membatalkan langganan oleh pelanggan.
+* Pembetulan: Ralat maut apabila menggunakan blok checkout.
+* Penambahbaikan: Kini serasi dengan jadual pesanan tersuai berprestasi tinggi Woocommerce.
+* Pembetulan: Pembatalan di checkout WooCommerce masih boleh menaik taraf membership.
 
-Versi 2.0.1 - Dilancar pada 2023-08-09
+Versi 2.0.1 - Dikeluarkan pada 2023-08-09
 
 * Ditambah: Keserasian dengan Woocommerce 7.9.0.
 * Ditambah: Keserasian dengan Woocommerce Subscriptions 5.3.0.
-* Ditambah: Sokongan untuk kemas kini keahlian.
-* Ditambah: Notis mengenai percubaan dan yuran persediaan dalam Woocommerce.
-* Ditambah: Pengenalpastian produk Woocommerce Ultimate Multisite dengan nilai meta.
-* Ditambah: Memasukkan pembaikan sekali sahaja untuk menandakan semua produk Woocommerce berkaitan Ultimate Multisite.
-* Ditambah: Mengeluarkan produk yang dicipta oleh Ultimate Multisite daripada senarai Woocommerce.
-* Peningkatan: Mencipta diskaun Woocommerce tidak berulang untuk dikenakan pada troli.
-* Peningkatan: Memulihkan diskaun berulang pada produk Woocommerce.
-* Peningkatan: Menambah label diskaun berulang pada produk Woocommerce.
-* Peningkatan: Memastikan jenis produk pada checkout.
-* Pembaikan: Mengekalkan status keahlian semasa proses penurunan taraf.
-* Pembaikan: Menyemak sama ada langganan wujud untuk mengelakkan ralat semasa proses pembatalan.
-* Pembaikan: Menambah tarikh langganan mula untuk digunakan dalam langganan Woocommerce.
+* Ditambah: Sokongan untuk kemas kini membership.
+* Ditambah: Notis tentang percubaan dan yuran persediaan dalam Woocommerce.
+* Ditambah: Pengenalpastian produk Ultimate Multisite Woocommerce dengan nilai meta.
+* Ditambah: Memasukkan pembetulan sekali sahaja untuk menandakan semua produk Woocommerce berkaitan Ultimate Multisite.
+* Ditambah: Mengalih keluar produk yang dicipta Ultimate Multisite daripada senarai Woocommerce.
+* Penambahbaikan: Mencipta diskaun Woocommerce tidak berulang untuk digunakan pada troli.
+* Penambahbaikan: Memulihkan diskaun berulang kepada produk Woocommerce.
+* Penambahbaikan: Menambah label diskaun berulang pada produk Woocommerce.
+* Penambahbaikan: Memastikan jenis produk semasa checkout.
+* Pembetulan: Mengekalkan status membership semasa proses downgrade.
+* Pembetulan: Menyemak jika langganan wujud untuk mengelakkan ralat semasa proses pembatalan.
+* Pembetulan: Menambah tarikh mula langganan untuk digunakan dalam langganan Woocommerce.
 * Dalaman: Melaksanakan proses binaan PHP 8.1 baharu.
 
-Versi 2.0.0 - Penulisan semula lengkap.
+Versi 2.0.0 - Tulis semula lengkap.
 
-* Ditambah: Proses kaedah pembatalan untuk membuang langganan woo apabila menukar gateway atau membatalkan keahlian;
-* Ditambah: Pengendali untuk menurunkan dan menaik taraf keahlian;
-* Peningkatan: Memuatkan kebergantungan woocommerce pada borang kemas kini pelanggan di subsites untuk membenarkan kemas kini akaun;
-* Peningkatan: Membetulkan muat troli Woocommerce jika tidak wujud;
-* Peningkatan: Memastikan kita berada pada jadual laman utama apabila memproses checkout;
-* Peningkatan: Membuat pesanan pembaharuan Ultimo berdasarkan nilai pesanan langganan Woocommerce dan bukan daripada pembayaran terakhir;
-* Pembaikan: Pergi ke pautan butang WU Membership;
-* Pembaikan: Tetapkan pesanan Ultimo sebagai dibayar apabila pembaharuan langganan Woocommerce telah dibayar;
-* Bina: Menambah MPB sebagai pembina;
+* Ditambah: Kaedah proses pembatalan untuk mengalih keluar langganan woo apabila menukar gateway atau membatalkan membership;
+* Ditambah: Pengendali untuk downgrade dan upgrade membership;
+* Penambahbaikan: Muatkan kebergantungan woocommerce pada borang kemas kini pelanggan dalam subsite untuk membenarkan kemas kini account;
+* Penambahbaikan: Betulkan muatan troli Woocommerce jika tidak wujud;
+* Penambahbaikan: Pastikan kita berada pada jadual site utama apabila memproses checkout;
+* Penambahbaikan: Jadikan pesanan pembaharuan Ultimo berdasarkan nilai pesanan langganan Woocommerce dan bukan daripada pembayaran terakhir;
+* Pembetulan: Pautan butang Pergi ke WU Membership;
+* Pembetulan: Tetapkan pesanan Ultimo sebagai dibayar apabila pembaharuan langganan Woocommerce telah dibayar;
+* Binaan: Tambah MPB sebagai builder;
 
-Versi 2.0.0-beta-5 - Dilancar pada 2022-01-21
+Versi 2.0.0-beta-5 - Dikeluarkan pada 2022-01-21
 
-* Dalaman: Menambah penjana hooks dan filter;
+* Dalaman: Menambah penjana hooks dan filters;
 * Dalaman: Menambah stub Ultimate Multisite untuk kualiti hidup pembangun;
-* Pembaikan: Mencegah penciptaan pelbagai produk apabila tidak perlu;
+* Dibetulkan: Menghalang penciptaan berbilang produk apabila tidak perlu;
 
 Versi 2.0.0-beta.4 - 2021-09-23
 
-* Pembaikan: memerlukan WooCommerce untuk aktif rangkaian dan bukannya hanya laman utama;
-* Peningkatan: menambah filter untuk membenarkan addon digunakan sebagai mu-plugin;
+* Pembetulan: memerlukan WooCommerce aktif rangkaian dan bukannya site utama sahaja;
+* Penambahbaikan: menambah penapis untuk membenarkan add-on digunakan sebagai mu-plugin;
 
 Versi 2.0.0-beta.3 - 2021-05-28
 
-* Pembaikan: kawalan akses dashboard terlalu agresif;
-* Peningkatan: Menambah pautan bantuan WooCommerce ke menu atas Ultimate Multisite;
+* Pembetulan: kawalan akses dashboard terlalu agresif;
+* Penambahbaikan: Menambah pautan bantuan WooCommerce ke menu atas Ultimate Multisite;
 
 Versi 2.0.0-beta.2 - 2021-05-04
 
-* Peningkatan: mencipta pembayaran tertangguh pada Ultimo semasa penciptaan pesanan pembaharuan WCS;
-* Peningkatan: mengisi borang bil dengan data pelanggan Ultimate Multisite;
-* Peningkatan: menambah semula borang bil untuk gateway;
+* Penambahbaikan: mencipta pembayaran belum selesai pada Ultimo semasa penciptaan pesanan pembaharuan WCS;
+* Penambahbaikan: mengisi awal field bil dengan data pelanggan Ultimate Multisite;
+* Penambahbaikan: menambah semula field bil untuk gateway;
 
 Versi 2.0.0-beta.1 - 2021-05-04
 
-* Pelancaran beta awal
+* Keluaran beta awal
 
--- Versi Lama --
+-- Versi Legasi --
 
 Versi 1.2.6 - 26/03/2020
 
-* Pembaikan: Ketidakserasian kecil dengan versi WooCommerce Subscriptions yang lebih baharu;
+* Dibetulkan: Ketidakserasian kecil dengan versi WooCommerce Subscriptions yang lebih baharu;
 
 Versi 1.2.5 - 26/08/2019
 
-* Pembaikan: Ralat pada versi sebelumnya;
+* Dibetulkan: Ralat pada keluaran sebelumnya;
 
 Versi 1.2.4 - 22/08/2019
 
-* Peningkatan: Menambah pilihan untuk mengalihkan ke skrin checkout WooCommerce selepas integrasi serta-merta;
+* Ditambah baik: Menambah pilihan untuk mengalihkan ke skrin checkout WooCommerce selepas integrasi serta-merta;
 
 Versi 1.2.3 - 26/05/2019
 
-* Pembaikan: E-mel pembayaran untuk WooCommerce hilang dalam sesetengah kes.
+* Dibetulkan: E-mel pembayaran untuk WooCommerce hilang dalam beberapa kes pinggir;
 
 Versi 1.2.2 - 27/02/2019
 
-* Ditambah: Sokongan untuk yuran persediaan pada integrasi langganan WooCommerce;
+* Ditambah: Sokongan untuk yuran persediaan pada integrasi WooCommerce Subscription;
 
 Versi 1.2.1 - 17/11/2018
 
-* Pembaikan: Isu keserasian dengan versi Ultimate Multisite 1.9.0;
+* Dibetulkan: Isu keserasian dengan Ultimate Multisite versi 1.9.0;
 
 Versi 1.2.0 - 10/09/2018
 
-* Peningkatan: URL kemas kini baharu untuk addon;
+* Ditambah baik: URL kemas kini baharu untuk add-on;
 * Ditambah: Sokongan beta untuk WooCommerce Subscription;
 
 Versi 1.1.2 - 11/02/2018
 
-* Pembaikan: Pautan ke Pay dijana secara dinamik untuk bertindak balas kepada perubahan pada endpoint WooCommerce;
-* Peningkatan: Kami kini memaksa status selesai untuk pesanan kami apabila payment_completed dipanggil untuk memastikan hook pembaharuan kami berjalan apabila sepatutnya;
+* Dibetulkan: Pautan untuk Membayar dijana secara dinamik untuk bertindak balas terhadap perubahan pada endpoint WooCommerce;
+* Ditambah baik: Kami kini memaksa status selesai untuk pesanan kami apabila payment_completed dipanggil bagi memastikan renewal hooks kami berjalan apabila sepatutnya;
 
 Versi 1.1.1 - 24/01/2018
 
-* Pembaikan: Kini juga menyemak sama ada WooCommerce baru sahaja diaktifkan pada laman utama;
-* Pembaikan: Memasukkan *over-loadings* untuk membenarkan penciptaan pesanan termasuk cukai;
+* Dibetulkan: Kini ia juga menyemak untuk melihat sama ada WooCommerce baru sahaja diaktifkan pada tapak utama;
+* Dibetulkan: Menyertakan over-loadings untuk membolehkan penciptaan pesanan memasukkan cukai;
 
 Versi 1.1.0 - 04/11/2017
 
-* Pembaikan: Kini label butang integrasi benar-benar berubah untuk mencerminkan tetapan. Memerlukan Ultimate Multisite 1.5.0;
-* Pembaikan: Integrasi WooCommerce kini berfungsi walaupun WooCommerce tidak aktif rangkaian dan diaktifkan hanya di laman utama;
+* Dibetulkan: Kini label butang integrasi sebenarnya berubah untuk mencerminkan tetapan. Memerlukan Ultimate Multisite 1.5.0;
+* Dibetulkan: Integrasi WooCommerce kini berfungsi walaupun WooCommerce tidak aktif rangkaian dan hanya diaktifkan dalam tapak utama;
 
-1.0.0 - Pelancaran Awal
+1.0.0 - Keluaran Awal

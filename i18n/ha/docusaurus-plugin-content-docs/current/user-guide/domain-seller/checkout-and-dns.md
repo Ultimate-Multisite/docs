@@ -3,13 +3,13 @@ title: Wurin Bayarwa da DNS na Abokan Ciniki
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Management na Bayanin da Checkout da DNS
+# Management na Bayanin da Checkout da DNS {#checkout-field-and-customer-dns-management}
 
-## Bayaninta da Zaɓar Domain
+## Bayaninta da Zaɓar Domain {#the-domain-selection-checkout-field}
 
 Bayaninta **Domain Selection** wani abu ne a cikin checkout wanda ke ba masu siyarwa zaɓi yadda za su samu domain ɗin wurin su. Ka ƙara shi a kowane shafin checkout don samar da sayarwawar domain.
 
-### A ƙara bayanin a cikin shafin checkout
+### A ƙara bayanin a cikin shafin checkout {#adding-the-field-to-a-checkout-form}
 
 1. Zuwa **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Baka wani checkout form ko ka ƙirƙira wani.
@@ -18,7 +18,7 @@ Bayaninta **Domain Selection** wani abu ne a cikin checkout wanda ke ba masu siy
 5. Ka tsara zaɓuwar bayani (ga kalli a ƙasa).
 6. Ka rufe form ɗin.
 
-### Zaɓuwar bayani
+### Zaɓuwar bayani {#field-options}
 
 **Domain modes** — Zaɓi wanne tabben mai amfani da kai. Kowane mode zai iya samar da shi ko ba haka ba dangane da juna:
 
@@ -32,7 +32,7 @@ Bayaninta **Domain Selection** wani abu ne a cikin checkout wanda ke ba masu siy
 
 **Domain product** — Zaɓi da kake so ka haɗa wannan bayanin da wani kayan ajiya (domain product) na musamman. Idan ba ka tsara shi ba, addon ɗin zai zaɓi kayan ajiya mai dacewa ne dangane da TLD da masu siyarwa ke neman.
 
-### Bayanan addini na riƙafa (Registrant contact fields)
+### Bayanan addini na riƙafa (Registrant contact fields) {#registrant-contact-fields}
 
 Idan wani mai siyarwa ya zaɓi tabben **Register New Domain**, form ɗin checkout zai ƙara bayanan addinin riƙafa a cikin shafin:
 
@@ -43,11 +43,11 @@ Idan wani mai siyarwa ya zaɓi tabben **Register New Domain**, form ɗin checkou
 
 این موارد توسط همه ثبت‌کنندگان مورد نیاز هستند و قبل از فراخوانی API ثبت، تأیید می‌شوند. شماره تلفن‌ها به طور خودکار به فرمت بین‌المللی `+CC.NNN` که ثبت‌کنندگان انتظار دارند، قالب‌بندی می‌شوند.
 
-### آدرس سایت خودکار
+### آدرس سایت خودکار {#auto-generated-site-url}
 
 وقتی یک مشتری ثبت‌نام می‌کند یا یک دامنه را نگاشت (map) می‌کند، فیلد آدرس سایت به طور خودکار از دامنه انتخابی پر می‌شود. مشتریان نیازی به پر کردن یک فیلد جداگانه برای URL ندارند.
 
-### رفتار جستجو
+### رفتار جستجو {#search-behaviour}
 
 - در لحظه با استفاده از AJAX، در حالی که کاربر تایپ می‌کند، موجود بودن دامنه بررسی می‌شود.
 - اگر دامنه مورد نظر در دسترس نباشد، پیشنهادهای TLD جایگزین نمایش داده می‌شوند.
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## مدیریت DNS توسط مشتری
+## مدیریت DNS توسط مشتری {#customer-dns-management}
 
 مشتریان می‌توانند رکورد‌های DNS را برای دامنه‌های ثبت شده خود از صفحه **My Account**، در زیر ورودی دامنه خود، مدیریت کنند.
 
-### انواع رکوردهای پشتیبانی شده
+### انواع رکوردهای پشتیبانی شده {#supported-record-types}
 
 | نوع | کاربرد |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | تنظیم سرور مبادله ایمیل |
 | **TXT** | افزودن رکوردهای SPF، DMARC، تأیید یا سایر رکورد‌های متنی |
 
-### کدام ارائه‌دهندگان مدیریت DNS را پشتیبانی می‌کنند؟
+### کدام ارائه‌دهندگان مدیریت DNS را پشتیبانی می‌کنند؟ {#which-providers-support-dns-management}
 
 مدیریت DNS (افزودن، ویرایش، حذف رکوردها) با **OpenSRS**، **ResellerClub**، **Enom**، **HostAfrica** و **Openprovider** در دسترس است. دامنه‌های **Hostinger** می‌توانند نام سرورها را از طریق Domain Seller به‌روزرسانی کنند؛ رکوردهای DNS برای دامنه‌های میزبانی شده توسط یکپارچه‌سازی اصلی Hostinger مدیریت می‌شود. دامنه‌های Namecheap، GoDaddy و NameSilo وضعیت و اطلاعات انقضا را نمایش می‌دهند اما باید DNS مستقیماً در پنل کنترل ثبت‌کننده مدیریت شود.
 
-### رکوردهای DNS پیش‌فرض
+### رکوردهای DNS پیش‌فرض {#default-dns-records}
 
 شما می‌توانید تنظیمات DNS پیش‌فرض را پیکربندی کنید که به طور خودکار زمانی اعمال می‌شوند که یک دامنه ثبت می‌گردد. به **Settings › Domain Seller › Default DNS Records** بروید.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### مدیریت پنل کاربری: مشاهده و ویرایش DNS
+### مدیریت پنل کاربری: مشاهده و ویرایش DNS {#admin-viewing-and-editing-dns}
 
 مدیران شبکه می‌توانند رکوردهای DNS هر دامنه مشتری را از صفحه ویرایش آن در **Network Admin › Ultimate Multisite › Domains** مشاهده و ویرایش کنند.

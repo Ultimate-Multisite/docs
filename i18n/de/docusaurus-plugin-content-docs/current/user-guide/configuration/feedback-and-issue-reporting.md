@@ -3,11 +3,11 @@ title: Kundenfeedback & Problemmeldung
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundenfeedback und Problemmeldung
+# Kundenfeedback und Problemmeldung {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 führt ein integriertes System zur Abgabe von Feedback und zur Meldung von Problemen ein. Dieses System ermöglicht es Endbenutzern, unbrauchbare Antworten zu kennzeichnen und Probleme direkt über die Chat-Oberfläche zu melden. Das System umfasst die Verwaltung der Zustimmung (Consent Management), einen automatisierten Meldebefehl und eine KI-gestützte Vorprüfung (Triage) im Backend.
 
-## Daumen-runter-Button
+## Daumen-runter-Button {#thumbs-down-button}
 
 Jede Nachricht, die vom KI-Assistenten gesendet wird, zeigt einen **Daumen-runter** (👎)-Button an. Wenn ein Benutzer darauf klickt, kann er eine Antwort als unbrauchbar oder falsch markieren.
 
@@ -15,7 +15,7 @@ Jede Nachricht, die vom KI-Assistenten gesendet wird, zeigt einen **Daumen-runte
 - Ein Klick öffnet das **Feedback Consent Modal**.
 - Das Feedback wird mit dem gesamten Gesprächsverlauf und der spezifischen Nachricht verknüpft.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Wenn ein Benutzer auf den Daumen-runter-Button klickt, erscheint ein Zustimmungs-Modal, bevor Daten gesendet werden. Das Modal:
 
@@ -26,13 +26,13 @@ Wenn ein Benutzer auf den Daumen-runter-Button klickt, erscheint ein Zustimmungs
 
 Es wird kein Feedback gespeichert, bevor der Benutzer explizit zugestimmt hat.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Am Ende eines Gesprächs kann der Assistent ein **auto-prompt Feedback Banner** anzeigen – eine unaufdringliche Nachricht, die fragt, ob die Sitzung hilfreich war.
 
 Dieses Banner erscheint automatisch, basierend auf Heuristiken wie der Gesprächslänge und dem Ergebnis. Es verlinkt auf denselben Feedback-Prozess wie der Daumen-runter-Button. Benutzer können das Banner schließen, ohne Feedback zu geben.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Benutzer können den Feedback-Prozess direkt auslösen, indem sie `/report-issue` in das Chat-Eingabefeld tippen. Dieser Befehl:
 
@@ -42,7 +42,7 @@ Benutzer können den Feedback-Prozess direkt auslösen, indem sie `/report-issue
 
 Der `/report-issue`-Befehl ist in allen Chat-Modi verfügbar (Inline, Floating Widget, Vollbild).
 
-## KI-gestützte Vorprüfung (AI-Assisted Triage)
+## KI-gestützte Vorprüfung (AI-Assisted Triage) {#ai-assisted-triage}
 
 Das übermittelte Feedback wird an eine KI-Vorprüfungs-Schicht weitergeleitet, die:
 

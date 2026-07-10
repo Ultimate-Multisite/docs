@@ -3,11 +3,11 @@ title: Mga Kinakailangan
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Mga Kinakailangan para sa Ultimate Multisite
+# Mga Kinakailangan para sa Ultimate Multisite {#ultimate-multisite-requirements}
 
 Ang unang bagay na maaaring itanong mo sa sarili bago bumili ng Ultimate Multisite ay ano ang mga requirements para tumakbo ang ating plugin. Mabuti naman, iilan lang ang pangunahing kailangan para tumakbo ang Ultimate Multisite: isang **domain name**, isang magandang **hosting provider**, at isang WordPress **Multisite** installation. Iyan lang ang kailangan mo!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Una, pag-usapan natin ang domain name.
 
@@ -17,7 +17,7 @@ Ang plugin namin ay nagbibigay ng mga serbisyo para sa subscription, koleksyon n
 
 Anumang niche na pipiliin mo ay magagamit gamit ang aming plugin basta nagbebenta ka ng mga website bilang serbisyo! Siguraduhin lang na pumili ka ng domain name na tugma sa plano ng iyong negosyo.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Ngayon na mayroon ka nang magandang pangalan ng domain na kumakatawan sa iyong niche at negosyo, kailangan mo nang pumili ng magandang web hosting company para i-host ang iyong network gamit ang Ultimate Multisite. May ilang magagandang opsyon sa merkado. Ang ilang mga hosting provider ay mahusay na nakakasama (integrate) sa Ultimate Multisite, na maaaring maging malaking salik depende sa kung ano ang plano mong itayo.
 
@@ -25,7 +25,7 @@ Ang Ultimate Multisite ay gumagana sa anumang hosting provider. Ang tanging pagk
 
 Pagdating sa mga detalye ng server specifications, walang eksaktong formula dahil nakadepende ito sa mga features at functions na inaalok mo at sa laki ng network mo. Ang shared hosting ay maaaring maging magandang simula, pero kapag nagsimulang lumaki ang iyong network, malamang kailangan mo nang dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Ngayon, pag-usapan natin nang kaunti ang tungkol sa isang WordPress Multisite installation.
 

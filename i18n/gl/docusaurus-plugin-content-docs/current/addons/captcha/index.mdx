@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Detén os bots. Protexe os ingresos. Sen complicacións de configuración.**
+
+Xestionas unha rede multisite con dominios personalizados? Coñeces a dor: Google reCAPTCHA e hCaptcha esíxenche rexistrar *todos e cada un dos dominios* na súa consola de administración. Engades un novo sitio de cliente? Actualiza a configuración do captcha. Mapeas un dominio personalizado? Actualiza outra vez. Nunca remata.
+
+**Ultimate Multisite: Captcha cámbiao todo.**
+
+## Cap Captcha: protección autoaloxada que simplemente funciona {#cap-captcha-self-hosted-protection-that-just-works}
+
+O noso novo provedor **Cap Captcha** supón un cambio radical para as redes multisite:
+
+* **Configuración cero** — Activa o complemento e xa estás protexido. Sen claves de API, sen conta de Google, sen panel de hCaptcha, sen listas brancas de dominios.
+* **Funciona automaticamente en todos os dominios** — Subdominios, dominios mapeados, dominios de clientes: todos quedan protexidos ao instante.
+* **Autoaloxado e privado** — Os teus datos nunca saen do teu servidor. Totalmente conforme co GDPR e sen seguimento de terceiros.
+* **Proba de traballo invisible** — Os usuarios resolven un enigma computacional en segundo plano. Sen facer clic en bocas de incendio, sen frustrantes grellas de imaxes.
+* **Lixeiro** — Só 20KB. Non ralentizará o teu checkout.
+
+## Protección contra probas de tarxetas en WooCommerce {#woocommerce-card-testing-protection}
+
+Os ataques de probas de tarxetas cústanlles miles de millóns aos comerciantes cada ano. Os defraudadores usan bots para validar tarxetas de crédito roubadas contra o teu checkout de WooCommerce: ti pagas as taxas de procesamento, eles obteñen números de tarxeta válidos.
+
+**Protexemos onde máis importa:**
+
+* **Protección da Store API** — Bloquea ataques de bots en `/wp-json/wc/store/v1/checkout` que evitan os captchas tradicionais de formularios
+* **Compatible con PayPal Payments** — Funciona sen problemas con WooCommerce PayPal Payments
+* **Estatísticas en tempo real** — Ve exactamente cantos ataques estás bloqueando
+
+## Aínda precisas Google reCAPTCHA ou hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Temos todo cuberto. Compatibilidade completa con:
+
+* Google reCAPTCHA v2 (caixa de verificación)
+* Google reCAPTCHA v2 (invisible)
+* Google reCAPTCHA v3 (baseado en puntuación)
+* hCaptcha (estándar)
+* hCaptcha (invisible)
+
+Cambia de provedor cando queiras desde a configuración da túa rede.
+
+## Deseñado para escalar {#built-for-scale}
+
+* Configuración para toda a rede con sobrescrituras por sitio
+* Dashboard de estatísticas para supervisar a protección
+* Niveis de seguridade axustables (rápido, medio, máximo)
+* Amigable para desenvolvedores, cunha arquitectura de provedores extensible
+
+## Instalación {#installation}
+
+1. Sobe `ultimate-multisite-captcha` ao teu directorio `/wp-content/plugins/`
+2. Activa o plugin na rede
+3. **Iso é todo. Xa estás protexido.**
+
+Cap Captcha actívase automaticamente: sen configuración que axustar, sen claves de API que introducir. Todos os endpoint compatibles de toda a túa rede quedan protexidos no momento en que o activas.
+
+**Opcional:** Para usar Google reCAPTCHA ou hCaptcha no seu lugar, vai a **Ultimate Multisite → Settings → Captcha** e selecciona o teu provedor preferido.
+
+## Preguntas frecuentes {#frequently-asked-questions}
+
+## Teño que configurar algo? {#do-i-need-to-configure-anything}
+
+Non! Cap Captcha actívase automaticamente cando activas o complemento. Toda a túa rede queda protexida de inmediato: sen configuración que axustar, sen claves de API que introducir.
+
+## Preciso claves de API para Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Non. Cap Captcha é completamente autoaloxado. Sen contas externas, sen rexistro de dominios, sen dores de cabeza de configuración.
+
+## Isto ralentizará o meu checkout? {#will-this-slow-down-my-checkout}
+
+Cap Captcha só ten 20KB e executa desafíos de proba de traballo en segundo plano. Os teus clientes non notarán ningún atraso.
+
+## Protexe isto contra ataques de probas de tarxetas? {#does-this-protect-against-card-testing-attacks}
+
+Si! A diferenza dos captchas tradicionais, que só protexen formularios HTML, a nosa integración con WooCommerce engánchase directamente á Store API para bloquear ataques de bots a nivel de API, que é onde ocorren a maioría dos ataques de probas de tarxetas.
+
+## Podo usar distintos provedores de captcha en sitios diferentes? {#can-i-use-different-captcha-providers-on-different-sites}
+
+O provedor de captcha establécese para toda a rede, pero podes axustar a dificultade segundo as túas necesidades.
+
+## Isto é conforme co GDPR? {#is-this-gdpr-compliant}
+
+Cap Captcha é 100% autoaloxado e non envía datos a servizos externos. Para Google reCAPTCHA e hCaptcha, revisa as súas respectivas políticas de privacidade.
+
+## Limitación de taxa {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 introduce un limitador de taxa estrito que protexe a túa rede contra ataques de forza bruta e probas de tarxetas.
+
+### Como funciona {#how-it-works}
+
+O limitador de taxa conta cada solicitude GET e POST nas superficies protexidas por captcha:
+
+* **Endpoint de inicio de sesión de WordPress** — wp-login, rexistro, contrasinal perdido, comentarios
+* **Checkout de WooCommerce** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Cando un visitante supera o límite de taxa, o plugin responde con:
+
+* Código de estado **HTTP 429 (Too Many Requests)**
+* Cabeceira **Retry-After** que indica cando volver intentalo
+* **Pausa tarpit aleatorizada** (1–5 segundos por defecto, cun límite ríxido de 15 segundos) para retardar os atacantes
+
+### Configuración {#configuration}
+
+#### Temporización do tarpit {#tarpit-timing}
+
+Controla o atraso aleatorizado aplicado ás solicitudes limitadas por taxa:
+
+* **`cap_rate_limit_tarpit_min`** — Duración mínima da pausa en segundos (predeterminado: 1)
+* **`cap_rate_limit_tarpit_max`** — Duración máxima da pausa en segundos (predeterminado: 5, cun límite ríxido de 15)
+
+Estas opcións están dispoñibles en **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibilidade {#extensibility}
+
+#### Filtro de lista branca de IP {#ip-whitelist-filter}
+
+Exime rangos de IP de confianza da limitación de taxa:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Acción previa ao bloqueo {#pre-block-action}
+
+Executa lóxica personalizada inmediatamente antes de enviar un bloqueo por límite de taxa:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Detección de IP do cliente e proxies de confianza {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 introduce unha detección da IP do cliente resistente á suplantación. O método `Captcha_Core::get_client_ip()` é agora a única fonte de verdade para a atribución da IP do visitante en:
+
+* Chaves de bucket de limitación de taxa
+* `remoteip` do provedor de Captcha (reCAPTCHA, hCaptcha `siteverify`)
+* Hashes de IP das estatísticas
+
+### Modelo de confianza {#trust-model}
+
+O plugin aplica unha xerarquía estrita de confianza de IP:
+
+1. **REMOTE_ADDR** — Sempre de confianza (a IP do par inmediato)
+2. **CF-Connecting-IP** — Respectada só cando:
+   - O par inmediato está dentro dun rango de IP actual de Cloudflare
+   - `cap_trust_cloudflare_headers` está activado (predeterminado: OFF)
+3. **X-Forwarded-For** — Respectada só cando:
+   - O par inmediato está na túa lista de proxies de confianza configurada no administrador
+   - O header analízase de dereita a esquerda, omitindo saltos de confianza/Cloudflare
+
+### Configuración {#configuration-1}
+
+#### Confianza no header de Cloudflare {#cloudflare-header-trust}
+
+Activa a confianza no header `CF-Connecting-IP` de Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Establéceo en ON para aceptar a confianza en `CF-Connecting-IP`
+  - Predeterminado: OFF (desactivado)
+  - O plugin inclúe unha instantánea CIDR de Cloudflare empaquetada
+  - Os rangos CIDR actualízanse semanalmente mediante wp-cron
+  - Úsase a alternativa empaquetada se falla a actualización
+
+#### Configuración de proxy de confianza {#trusted-proxy-configuration}
+
+Define os teus proxies de primeira liña e balanceadores de carga:
+
+* **`cap_trusted_proxies`** — Área de texto de CIDR ou IPs sen formato (unha por liña)
+  - Permítense comentarios (liñas que comezan con `#`)
+  - Sen esta configuración, `X-Forwarded-For` ignórase mesmo cando o limitador de taxa está activado
+  - Exemplo:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Detección automática na primeira activación {#first-enable-auto-detection}
+
+Cando activas por primeira vez o limitador de taxa, o plugin detecta a túa probable postura de Cloudflare e proxy e mostra un aviso de administrador cun só clic para "Aplicar a configuración detectada".
+
+* O plugin **nunca sobrescribe** os teus valores gardados
+* Se o tráfico posterior suxire que a túa configuración xa non coincide coa realidade (por exemplo, Cloudflare cambiou os rangos CIDR), aparece un aviso de discrepancia non descartable coa actualización recomendada
+
+### Por que isto importa {#why-this-matters}
+
+Un modelo estrito de confianza de IP pecha un vector crítico de suplantación: as solicitudes directas ao servidor de orixe que leven un header `CF-Connecting-IP` falsificado anteriormente teríanse agrupado pola IP falsificada en lugar do par real. Isto é especialmente importante para:
+
+* **Limitación de taxa** — Os atacantes non poden eludir os límites suplantando IPs
+* **Estatísticas** — As túas métricas de ataque reflicten IPs reais de visitantes, non IPs falsificadas
+* **Verificación de Captcha** — Os provedores reciben a IP correcta do visitante para a avaliación de risco

@@ -3,7 +3,7 @@ title: Llyfrg y newidiadau Captcha
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Changelog y Captcha
+# Changelog y Captcha {#captcha-changelog}
 
 Versi: 1.5.0 - Rheoliwyd ar gyfer 22-05-2026
 * New: Hard-stop rate limiter — cyfrifennu pob GET a POST ar gyflymau wedi'u gwarchod (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) ac yn cyflwyno HTTP 429, header `Retry-After`, a chwylio tarpit randomiseiddiol (1–5s, wedi'i gyfyngu ar 15s).

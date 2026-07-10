@@ -3,9 +3,9 @@ title: Lwm txoj kev tso cai
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# ការចេញផ្សាយកំណែ (Release Notes)
+# ការចេញផ្សាយកំណែ (Release Notes) {#release-notes}
 
-## កំណែ ២.១៣.០ — ចេញផ្សាយនៅថ្ងៃទី ៥ ខែមិថុនា ឆ្នាំ ២០២៦
+## កំណែ ២.១៣.០ — ចេញផ្សាយនៅថ្ងៃទី ៥ ខែមិថុនា ឆ្នាំ ២០២៦ {#version-2130--released-on-2026-06-05}
 
 - ໃໝ່: ເພີ່ມການສະໜັບສະໜູນ sovereign-tenant ສຳລັບ customer account, checkout, billing, site, invoice, template switching, ແລະ domain mapping flows ເພື່ອໃຫ້ tenant networks ສາມາດນຳພາລູກຄ້າກັບຄືນສູ່ main site ສຳລັບການຈັດການທີ່ຖືກຄວບຄຸມ.
 - ໃໝ່: ເພີ່ມການກວດສອບ renewal-credential ສຳລັບ membership ທີ່ເປັນປະຈຳ ເພື່ອໃຫ້ gateway ສາມາດປິດການຕໍ່ອັດຕະໂນມັດໄດ້ເມື່ອຂາດ saved billing agreement, subscription, ຫຼື vault token.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ແກ້ໄຂ: edge cases ຂອງ membership renewals, expiration display, ແລະ payment collection ບໍ່ໄດ້ເຮັດໃຫ້ເກີດການໝົດອາຍຸທັນທີ, crash, ຫຼື ການພາດການຈ່າຍເງິນທີ່ຕ້ອງການ.
 - ປັບປຸງ: WordPress compatibility ໄດ້ຖືກທົດສອບເຖິງ 7.0, production Vue assets ຖືກ build ໃໝ່ຈາກ npm sources, ແລະ Cypress end-to-end coverage ເຮັດໃຫ້ມີການກວດສອບ flow checkout, setup, SSO, ແລະ gateway ຫຼາຍຂຶ້ນ.
 
-## Phiên bản 2.12.0 — Ra mắt ngày 2026-05-15
+## Phiên bản 2.12.0 — Ra mắt ngày 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Mới: Thêm Hostinger (hPanel) làm nhà cung cấp host hỗ trợ cùng tính năng ánh xạ tên miền (domain mapping integration).
 - Mới: Site Exporter giờ có thể xử lý các gói nhập mạng (network import bundles) để khôi phục trang web trên toàn mạng một cách dễ dàng hơn.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Sửa lỗi: CLI của Site Exporter giờ giữ lại lựa chọn trang web mạng mặc định chính xác.
 - Cải tiến: Đã loại bỏ wp-cli được đóng gói trong gói plugin, giúp giảm kích thước plugin.
 
-## Phiên bản 2.11.0 — Ra mắt ngày 2026-05-11
+## Phiên bản 2.11.0 — Ra mắt ngày 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Mới: Site exports giờ sẽ đóng gói một file `index.php` tự khởi động (self-booting) để bạn có thể cài đặt ZIP lên host mới mà không cần cài thêm plugin riêng.
 - Mới: Network export cho phép quản trị viên xuất tất cả các trang con (subsites) thành một archive duy nhất từ trang admin Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Mới: Trình chỉnh sửa form checkout sẽ cảnh báo khi bạn thêm sản phẩm mà chưa cấu hình trường bắt buộc nào.
 - Mới: Tab cài đặt Import/Export giờ mô tả rõ phạm vi hoạt động và liên kết trực tiếp đến công cụ Site Export.
 
-## Phiên bản 2.10.0 — Ra mắt ngày 2026-05-05
+## Phiên bản 2.10.0 — Ra mắt ngày 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - ໃໝ່: PayPal ຕັ້ງຄ່າແບບແນະນຳ (guided setup wizard) ສໍາລັບການໃສ່ຂໍ້ມູນດ້ວຍມື ໂດຍມີ OAuth flag ເພື່ອໃຫ້ການຕັ້ງຄ່າ gateway ເປັນໄປຢ່າງສະດວກ.
 - ໃໝ່: ການປ່ຽນ template ຂອງ customer panel ໄດ້ຖືກອອກແບບໃໝ່ ໂດຍໃຊ້ card **current-template**, persistent grid, ແລະ ປຸ່ມ **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ແກ້ໄຂ: SSO path filter ໄດ້ຮັບການເຄົາລົບໃນທຸກ luw flows ການເຂົ້າສູ່ລະບົບ.
 - ແກ້ໄຂ: ທາງເລືອກ site identity ທີ່ຫວ່າງເປົ່າໄດ້ຖືກຮັກສາໄວ້ເມື່ອບັນທຶດ.
 
-## 2.9.0 — ເປີດຕົວໃນວັນທີ 2026-04-30
+## 2.9.0 — ເປີດຕົວໃນວັນທີ 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - ໃໝ່: ເພີ່ມການສົ່ງອອກ ແລະ ນຳເຂົ້າ single-site ໃສ່ໃນ **Tools > Export & Import**.
 - ແກ້ໄຂ: ໄຟລ໌ ZIP ສົ່ງຜ່ານ download endpoint ທີ່ໄດ້ຮັບການ authenticate ແລ້ວ.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - ແກ້ໄຂ: Tour IDs ຖືກເຮັດໃຫ້ເປັນ underscore ໃນ user settings keys.
 - ປັບປຸງ: ໃຊ້ ZipArchive ແທນ Alchemy/Zippy ເພື່ອຄວາມເຂົ້າກັນໄດ້ທີ່ດີກວ່າ.
 
-## 2.8.0 — ເປີດຕົວໃນວັນທີ 2026-04-29
+## 2.8.0 — ເປີດຕົວໃນວັນທີ 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - ໃໝ່: ເປີດໃຊ້ Jumper toggle ໃນການຕັ້ງຄ່າ Other Options UI ແລ້ວ.
 - ໃໝ່: ເພີ່ມຄໍລumn Statusເຂົ້າໃນຕາຕະລາງ checkout forms list.

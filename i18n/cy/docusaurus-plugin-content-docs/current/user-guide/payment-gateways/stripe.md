@@ -3,19 +3,19 @@ title: Cyflwyno Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Ymddio'r Gweithredoedd Stripe (v2)
+# Ymddio'r Gweithredoedd Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTIADOLIA CRYTID: Mae'r ail ddefnyddiol hwn yn cyfeiriad i Ultimate Multisite ffurf 2.x.**_
 
 Gallwch chi gwneud cyflwyniad i'r pethau ymdrechion ar gyfer ystafell ymdrechion eich gweithredoedd: Stripe, Stripe Checkout, PayPal a Manwl. Yn y ail ddefnyddiol hwn, byddwn yn gweld sut i gysylltu â **Stripe**.
 
-## Gofyn Stride
+## Gofyn Stride {#enabling-stripe}
 
 I'r gael Stripe fel weithrediad ymdrechion ar gyfer eich rheol, mynd i **Ultimate Multisite > Settings > Payments** a chwilio (tick) y cyfathrebu yn y cyfnod Active Payment Gateways yn y cyflwyniad o **Stripe** neu **Stripe Checkout**.
 
 ![Gofyn Stripe mewn weithrediad ymdrechion ar gyfer y rheol](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Mae'r ffordd hwn yn dangos lle i gynnwys rhif card cyflwrdd yn ystafell ymdrechion.
 
@@ -47,7 +47,7 @@ Copwch y gael o'r **Publishable key** a'r **Secret key**, o'r collinell **Token*
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Rheoli Stripe Webhook
+## Rheoli Stripe Webhook {#setting-up-stripe-webhook}
 
 Mae Stripe yn anfon evaintau webhook sy'n cyflwyno Ultimate Multisite unrhyw peth sydd ar ffurf ar eich **cyfathreg stripe**.
 

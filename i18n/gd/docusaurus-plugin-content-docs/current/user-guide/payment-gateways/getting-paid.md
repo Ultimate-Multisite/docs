@@ -1,118 +1,126 @@
 ---
-title: Aonach a' chlàradh
+title: A’ Faighinn Pàigheadh
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Ailinn a gaisgeadh (v2)
+# A’ Faighinn Pàigheadh (v2) {#getting-paid-v2}
 
-_**NOTE CRUCIAL: Tha seann seo a' tighinn air Ultimate Multisite version 2.x.**_
+_**NOTA CUDROMACH: Tha an artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
-Tha Ultimate Multisite deiseil airson siostam a' chluainteachd agus a' gaisgeadh. Gus a bhith ag obair an siostam a gaisgeadh, tha sinn a' chluainteachd daoine a' sgrùdadh (payment gateways) a bhios beag. Tha na seannachdan a gaisgeadh a' chluainteachd anns an Ultimate Multisite: _Stripe_, _PayPal_, agus Gaisgeadh Manuil. Is e cudair gu is eadar a lasa _WooCommerce_, _GoCardless_ agus _Payfast_ gus tòiseachadh air a gaisgeadh a' chluainteachd a' sgrùdadh (add-ons) a bhith agad.
+Tha siostam ballrachd is bileachaidh togte aig Ultimate Multisite. Gus am bi an siostam bileachaidh againn ag obair, tha sinn air na geataichean pàighidh as cumanta a thathar a’ cleachdadh ann am malairt-dhealain a thoirt a-steach. ’S iad na geataichean pàighidh bunaiteach ann an Ultimate Multisite _Stripe_ , _PayPal_ , agus Pàigheadh Làimhe. Faodaidh tu _WooCommerce_ , _GoCardless_ agus _Payfast_ a chleachdadh cuideachd gus pàighidhean fhaighinn le bhith a’ stàladh nan tuilleadan aca fhèin.
 
-## Seannachdan Bhaighmis
+## Roghainnean Bunaiteach {#basic-settings}
 
-Is e gu tric a lasa an seannachdan a gaisgeadh sin air seannachdan a gaisgeadh ann an Ultimate Multisite. Is e gu tric a lasa an seannachdan a gaisgeadh sin air seannachdan a gaisgeadh ann an Ultimate Multisite: **Ultimate Multisite menu > Settings > Payments.**
+Faodaidh tu gin de na geataichean pàighidh seo a rèiteachadh fo roghainnean pàighidh Ultimate Multisite. Gheibh thu e le bhith a’ dol gu **clàr-taice Ultimate Multisite > Roghainnean > Pàighidhean.**
 
-![Seannachdan bhaighmis anns an Ultimate Multisite a' tighinn air an panel Payments](/img/config/payments-settings-page.png)
+![Duilleag roghainnean pàighidh ann an Ultimate Multisite a’ sealltainn pannal nam Pàighidhean](/img/config/payments-settings-page.png)
 
-Tha eadar a lasa seannachdan a gaisgeadh sin air a bhith agad, tha thu a' chluainteachd a' sgrùdadh (payment gateway) a' leum. Tha eadar a lasa seannachdan a gaisgeadh sin air a bhith agad:
+Mus suidhich thu an geata pàighidh agad, thoir sùil air na roghainnean pàighidh bunaiteach as urrainn dhut a rèiteachadh:
 
-**Force auto-rene** **w:** Tha seo ag obair gu bheil an tòiseachadh a' chluainteachd a' tòiseachadh gu fìor air an deugh a tha a' chluainteachd a' sgrùdadh (billing frequency) a tha thu a' tòiseachadh.
+**Èignich fèin-ùrac** **hadh:** Nì seo cinnteach gun tig am pàigheadh air ais gu fèin-obrachail aig deireadh gach cearcall bileachaidh a rèir na tricead bileachaidh a thagh an cleachdaiche.
 
-<!-- Screenshot unavailable: Seannachdan Force Auto-Renew ar seannachdan bhaighmis -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Tha Ultimate Multisite v2.13.0 ag ceann a' chluainteachd an seannachdan a gaisgeadh a tha air a bhith agad gu sònach air tòiseachadh a' chluainteachd a' tòiseachadh (reusable renewal credential) a bhith aig an seannachdan a gaisgeadh a tha a' tòiseachadh. Is e cudair a bhith ag obair an seannachdan a gaisgeadh sin air a bhith agad: is e gu tric a lasa an seannachdan a gaisgeadh sin air a bhith agad: _gateway subscription_, _billing agreement_, _saved vault token_, no amh a' chluainteachd a' sgrùdadh a tha a' tòiseachadh. Má dh’ fhaigh an seannachdan a' sgrùdadh innse dh’ fhaigh an tòiseachadh air na h-uile, tha Ultimate Multisite a' gaisgeadh an chluainteachd ach a' tòiseachadh an auto-renewal agus a' gaisgeadh an stat a tha a' tòiseachadh gu faic a' chluainteachd a' sgrùdadh air a bhith agad gu fìor air na h-uile.
+Bidh Ultimate Multisite v2.13.0 a’ sgrùdadh a bheil teisteanas ùrachaidh ath-chleachdte aig a’ gheata ghnìomhach mus sàbhail e ballrachd ath-chuairteach le fèin-ùrachadh air a chomasachadh. Faodaidh teisteanas ùrachaidh a bhith na fho-sgrìobhadh geata, aonta bileachaidh, tòcan tasgaidh sàbhailte, no dòigh pàighidh ath-chleachdte cho-ionann. Ma dh’aithriseas an geata nach eil teisteanas freagarrach ann, sàbhalaidh Ultimate Multisite a’ bhallrachd ach cuiridh e fèin-ùrachadh dheth agus clàraichidh e staid an teisteanais a tha a dhìth gus an urrainn do rianaire no sruth taice iarraidh air a’ chustamair pàigheadh ath-ùghdarrachadh ron cheann-latha ùrachaidh.
 
-Dè a' chàir an tòiseachadh air an WordPress:
+Bidh seo a’ cur casg air ballrachd bho bhith a’ nochdadh mar gum biodh i a’ fèin-ùrachadh nuair nach urrainn don gheata ach pàighidhean aon-ùine a chruinneachadh. Bu chòir do thuilleadan geata dearbhadh gu bheil pàighidhean ath-chuairteach a’ stòradh teisteanas ath-chleachdte, gu h-àraidh nuair a tha an geata a’ toirt taic do ghlacadh aon-ùine agus do mhodhan pàighidh tasgaidh/fo-sgrìobhaidh.
 
-Sealltainn seo a' chlàradh an tòiseachadh gu robh seasmhachd a' tòiseachadh air a' rianadh gu robh an gathdhal (gateway) a' faighinn tòiseachadh de fhaighinn a' chàir (auto-renew), nuair a tha an gathdhal ag fhaighinn tòiseachadh de fhaighinn tòiseachadh (one-time payments) gu robh e a' faighinn tòiseachadh de fhaighinn tòiseachadh. Caithedh na addannachaid (add-ons) an gathdhal a stadfadh gu robh a' chàir a' rianadh a' tòiseachadh a' tòiseachadh (recurring checkouts) a' faighinn tòiseachadh de fhaighinn tòiseachadh a' chàir a' rianadh, gu sònraichte nuair a tha an gathdhal a' stadfadh am beathaidhean a' tòiseachadh a' tòiseachadh (one-time capture) agus modhan fhaighinn a' tòiseachadh/subskripsyn (vaulted/subscription payment modes).
-
-**A' chlàradh a' tòiseachadh le fhaighinn:** **Method:** Gu h-aonach seo a' stadfadh, ní pàirt a thigidh a ghràdhachair a' faighinn d'fhaighinn (financial information) gu robh e a' chlàradh. Bidh seo a' tòiseachadh gu robh e a' fhaighinn dìreach an sin air a tha an tòiseachadh a' rianadh a' tòiseachadh (trial period expires).
+**Ceadaich deuchainnean às aonais dòigh** **pàighidh:** Leis an roghainn seo air a chomasachadh, cha bhi aig a’ chliant agad ri fiosrachadh ionmhasail sam bith a chur ris rè pròiseas a’ chlàraidh. Cha bhi seo riatanach ach nuair a dh’fhalbhas ùine na deuchainn seachad.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**An tòiseachadh a' chlàradh ar fhaighinn a' chàir:** Tha seo a' tòiseachadh gu robh e a' stadfadh an tòiseachadh a' rianadh a' tòiseachadh (invoice) a' faighinn a' chàir. Gheibheann thu an tòiseachadh a' faighinn a' chàir air a' fhaighinn a' chàir a' rianadh a' tòiseachadh (payment history) air a' chàir subsite dashboard. Tha an tòiseachadh seo a' tòiseachadh gu robh e a' stadfadh an gathdhal a' rianadh a' tòiseachadh (Manual Gateway).
+**Cuir fàirdeal air dearbhadh pàighidh:** Bheir seo roghainn dhut am bu chòir no nach bu chòir fàirdeal a chur às dèidh pàighidh. Thoir an aire gum bi cothrom aig luchd-cleachdaidh air an eachdraidh pàighidh aca fo Dashboard an fho-làraich aca. Chan eil an roghainn seo a’ buntainn ris a’ Gheata Làimhe.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Seasmhachd a' chlàradh:** An tòiseachadh seo, leat a thigidh an tòiseachadh a' rianadh a' tòiseachadh (payment reference code) no seasmhachd sinneachaidh (sequential number scheme). Má thuigidh tu a' chlàradh a' rianadh a' tòiseachadh (payment reference code) a' faighinn air a' chàir, ní fhaodaidh thu a' stadfadh aon rud. Má thuigidh tu a' chlàradh a' rianadh a' tòiseachadh sinneachaidh (sequential number scheme) a' faighinn, rinn thu a' stadfadh an **numbair a' chlàradh a' chlàradh** (This number will be used as the invoice number for the next invoice generated on the system. It is incremented by one every time a new invoice is created. You can change it and save it to reset the invoice sequential number to a specific value) agus an **a' chlàradh a' chlàradh a' chlàradh** (invoice number prefix).
+**Sgeama àireamhachaidh fhàirdealan:** An seo, faodaidh tu còd iomraidh pàighidh no sgeama àireamhan leantainneach a thaghadh. Ma thaghas tu còd iomraidh pàighidh a chleachdadh airson do fhàirdealan, chan fheum thu dad a rèiteachadh. Ma thaghas tu sgeama àireamhan leantainneach a chleachdadh, feumaidh tu an **ath àireamh fàirdeil** a rèiteachadh (Thèid an àireamh seo a chleachdadh mar àireamh na fàirdeil airson an ath fhàirdeal a thèid a chruthachadh air an t-siostam. Thèid a mheudachadh le aon gach turas a thèid fàirdeal ùr a chruthachadh. Faodaidh tu atharrachadh agus a shàbhaladh gus àireamh leantainneach na fàirdeil ath-shuidheachadh gu luach sònraichte) agus **ro-leasachan àireamh na fàirdeil.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## O sge thuairteanach a' chluichean:
+## Far am faighear na geataichean: {#where-to-find-the-gateways}
 
-Is eolra thuairteanach a' chluichean ar fìodh ( **Ultimate Multisite > Settings > Payments**). Tha'm tha thu air a' faighinn: _Stripe_, _Stripe_ _Checkout_, _PayPal_ agus _Manual_ a' chluichean a' tòr a' chluichean.
+Faodaidh tu na geataichean pàighidh a shuidheachadh air an aon duilleag ( **Ultimate Multisite > Roghainnean > Pàighidhean**). Dìreach fo **geataichean pàighidh gnìomhach** , chì thu: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ agus _Làimhe_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Earrann Geataichean Pàighidh Gnìomhach a’ liostadh Stripe, Stripe Checkout, PayPal agus Làimhe](/img/config/payments-active-gateways.png)
 
-Tha meartach air an t-aithris airson ùine airson ch eachdair (payment gateway) a tha thu a' faighinn ar earrachdais a tha a' tòr a' chluichean, agus tha thu a' faighinn iad air an liathnan a tha a' tòr a' chluichean.
+Tha artaigil sònraichte againn airson gach geata pàighidh a stiùireas tu tro na ceumannan airson a shuidheachadh, agus gheibh thu iad air na ceanglaichean gu h-ìosal.
 
-Tha meartach air an t-aithris airson ch eachdair (payment gateway) a tha thu a' faighinn ar earrachdais a tha a' tòr a' chluichean, agus tha thu a' faighinn iad air an liathnan a tha a' tòr a' chluichean.
+Faodaidh tu mion-fhiosrachadh pàighidh fhaicinn agus a dheasachadh:
 
-**A' chluichean Stripe a thabhairt**
+![Eadar-aghaidh deasachaidh pàighidh](/img/admin/payment-edit.png)
 
-**A' chluichean PayPal a thabhairt**** **
+Seo sealladh slàn de dhuilleag deasachaidh a’ phàighidh:
 
-**A' chluichean manual a thabhairt**
+![Eadar-aghaidh slàn deasachaidh pàighidh](/img/admin/payment-edit-full.png)
 
-An uair a tha thu a' faicinn air _WooCommerce_, _GoCardless_ no'n _Payfast_ a bhith agad airson ch eachdair (payment gateway), rinn thu a' faighinn **a' chluichean agus a' chluichean a thabhairt** riad.
+Seo cuideachd sealladh slàn de roghainnean nan geataichean pàighidh:
 
-### Fuairt a' chluichean WooCommerce:
+![Duilleag slàn roghainnean nan geataichean pàighidh](/img/config/settings-payments-gateways-full.png)
 
-Tha sinn a' faicinn gu bheil _Stripe_ agus _PayPal_ ann an t-àiteannach a tha a' leathachadh a' chluichean a' chluichean Ultimate Multisite a' chluichean a' chluichean a' chluichean. Mar sin, rinn sinn a' chluichean airson _WooCommerce_, a tha e plugin e-commerce mòr. Tha deugaidhean air an t-àiteannach a tha a' leathachadh ch eachdair (payment gateway) ùr ri e, agus tha thu a' faighinn iad air a' chluichean a tha a' tòr a' chluichean.
+**A’ suidheachadh geata Stripe**
 
-_**IMPORTANT:** Ultimate Multisite: WooCommerce a' chàir a' chùisachadh (activated) mus tric a bhith ag obair ar an sinne agad._
+**A’ suidheachadh geata PayPal**** **
 
-Prìomhach, leud a' chùisich an seòl de 'add-ons'. Is e cheann a tha e a bhith agat gu faiceadh **Ultimate Multisite > Settings**. Bidh thu a' bheachd a bhith agad de 'Add-ons table'. Til cheann ar **Check our Add-ons**.
+**A’ suidheachadh phàighidhean làimhe**
 
-<!-- Screenshot unavailable: Tabel add-ons ar an seòl de Settings de Ultimate Multisite le link Check our Add-ons -->
+A-nis, ma tha thu airson _WooCommerce_ , _GoCardless_ no _Payfast_ a chleachdadh mar do gheata pàighidh, feumaidh tu **na tuilleadan aca a stàladh agus a rèiteachadh**.
 
-An uair a tha thu a' chùisich ar **Check our Add-ons**, bidh thu a' chluichdheachd air an seòl de 'add-ons'. An sin, is e cheann a tha e a' chùisich a h-uile add-ons de Ultimate Multisite. Chluichdheachd ar an add-on **Ultimate Multisite: WooCommerce Integration**.
+### Mar a stàlaicheas tu an tuilleadan WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
-![Seòl add-ons a' chluichichda Ultimate Multisite add-ons a gleann WooCommerce Integration](/img/addons/addons-page.png)
+Tha sinn a’ tuigsinn nach eil _Stripe_ agus _PayPal_ rim faighinn ann an cuid de dhùthchannan, rud a chuireas cuingealachadh air no a chuireas bacadh air luchd-cleachdaidh Ultimate Multisite bho bhith a’ cleachdadh ar plugin gu h-èifeachdach. Mar sin chruthaich sinn tuilleadan gus _WooCommerce,_ a thoirt a-steach, plugin malairt-dhealain a tha gu math mòr-chòrdte. Chruthaich luchd-leasachaidh air feadh an t-saoghail tuilleadan gus diofar gheataichean pàighidh a thoirt a-steach dha. Ghabh sinn brath air seo gus na geataichean pàighidh as urrainn dhut a chleachdadh le siostam bileachaidh Ultimate Multisite a leudachadh.
 
-Bidh seallad a' chùisich le de sealladh an add-on. Chluichdheachd gu **Install Now**.
+_**CUDROMACH:** Feumaidh Ultimate Multisite: WooCommerce Integration WooCommerce a bhith air a ghnìomhachadh co-dhiù air a’ phrìomh làrach agad._
 
-<!-- Screenshot unavailable: Sealladh de sealladh add-on Ultimate Multisite WooCommerce Integration le nút Install Now -->
+An toiseach, rach gu duilleag nan tuilleadan. Gheibh thu i le bhith a’ dol gu **Ultimate Multisite > Roghainnean**. Bu chòir dhut clàr nan **Tuilleadan** fhaicinn. Briog air **Thoir sùil air na Tuilleadan againn**.
 
-An uair a tha an tòisich a' chùisich, bidh thu a' chluichdheachd air an seòl de 'plugins'. Til cheann ar **Network Activate** agus bidh an add-on WooCommerce a' chùisich ag obair ar an sinne agad.
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-<!-- Screenshot unavailable: Seòl plugins le link Network Activate airson an add-on WooCommerce Integration -->
+Às dèidh dhut briogadh air **Thoir sùil air na Tuilleadan againn** , thèid do ath-stiùireadh gu duilleag nan tuilleadan. An seo gheibh thu a h-uile tuilleadan Ultimate Multisite. Briog air an tuilleadan **Ultimate Multisite: WooCommerce Integration**.
 
-An uair a tha e a' chùisich, mar a tha thu a' chùisich a bhith ag obair ar an sinne agad, bidh thu a' chùisich air an tòisich.
+![Duilleag tuilleadan a’ liostadh tuilleadan Ultimate Multisite, a’ gabhail a-steach WooCommerce Integration](/img/addons/addons-page.png)
 
-<!-- Screenshot unavailable: Notice de admin a' chùisich an admin gu obair agus a' chùisich an plugin WooCommerce -->
+Nochdaidh uinneag leis na mion-fhiosrachadh mun tuilleadan. Dìreach briog air **Stàlaich an-dràsta**.
 
-Tha e cheann a bhith a' faicinn asgaidh air an add-on WooCommerce Integration, **chluichdheachd an sin**.
+<!-- Glacadh-sgrìn ri fhaighinn: còmhradh mion-fhiosrachaidh tuilleadan Ultimate Multisite WooCommerce Integration leis a’ phutan Stàlaich an-dràsta -->
 
-### Conas a chùisich an add-on GoCardless:
+Nuair a bhios an stàladh deiseil, thèid do ath-stiùireadh gu duilleag nam plugan. An seo, dìreach briog air **Cuir an gnìomh air an lìonra** agus thèid an tuilleadan WooCommerce a chur an gnìomh air an lìonra agad.
 
-Tha stiùir airson aistalladh an add-on _GoCardless_ gu eil eamh-fhaighinn mar aistalladh an add-on _WooCommerce_. Til cheannach air an sealladh add-ons agus sceil **Ultimate Multisite: GoCardless Gateway**.
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag nam plugan leis a’ cheangal Cuir an gnìomh air an lìonra airson an tuilleadan WooCommerce Integration -->
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+Às dèidh dhut a chur an gnìomh, mura h-eil am plugan WooCommerce agad fhathast air a stàladh agus air a chur an gnìomh air an làrach-lìn agad, gheibh thu cuimhneachan.
 
-Bhaidh sealladh add-on a' chluin. Chluain air **Install Now**.
+<!-- Glacadh-sgrìn ri fhaighinn: brath rianachd a’ cur an cuimhne an rianaire am plugan WooCommerce a stàladh agus a chur an gnìomh -->
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+Gus barrachd a leughadh mun tuilleadan WooCommerce Integration, **briog an seo**.
 
-An uair a thabhas an aistalladh, byrnoidh thu air an sealladh plugins. Anno, chluain air **Network Activate** agus byrnoidh an add-on _GoCardless_ a' chluin ar tairgse.
+### Mar a stàlaicheas tu an tuilleadan GoCardless: {#how-to-install-the-gocardless-add-on}
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+Tha na ceumannan gus an tuilleadan _GoCardless_ a stàladh gu math coltach ris an tuilleadan _WooCommerce_. Rach gu duilleag nan tuilleadan agus tagh an tuilleadan **Ultimate Multisite: GoCardless Gateway**.
 
-Tha earrachd a bhith a' chluin airson a bhith a' seachdainn an _GoCardless_ gateway, **leugh an article seo**.
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag nan tuilleadan leis an tuilleadan Ultimate Multisite GoCardless Gateway air a chomharrachadh -->
 
-### Conas aistalladh an add-on Payfast:
+Nochdaidh uinneag an tuilleadain. Briog air **Stàlaich an-dràsta**.
 
-Til cheannach air an sealladh add-ons agus sceil **Ultimate Multisite: Payfast Gateway**.
+<!-- Glacadh-sgrìn ri fhaighinn: còmhradh mion-fhiosrachaidh tuilleadan Ultimate Multisite GoCardless Gateway leis a’ phutan Stàlaich an-dràsta -->
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+Nuair a bhios an stàladh deiseil, thèid do ath-stiùireadh gu duilleag nam plugan. An seo, dìreach briog air **Cuir an gnìomh air an lìonra** agus thèid an tuilleadan _GoCardless_ a chur an gnìomh air an lìonra agad.
 
-Bhaidh sealladh add-on a' chluin. Chluain air **Install Now.**
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag nam plugan leis a’ cheangal Cuir an gnìomh air an lìonra airson an tuilleadan GoCardless Gateway -->
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+Gus ionnsachadh mar a thòisicheas tu leis a’ gheata _GoCardless_, **leugh an artaigil seo**.
 
-Tha earrachd a bhith a' chluin airson a bhith a' seachdainn an _Payfast_ add-on ar tairgse.
+### Mar a stàlaicheas tu an tuilleadan Payfast: {#how-to-install-the-payfast-add-on}
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+Rach gu duilleag nan tuilleadan agus tagh an tuilleadan **Ultimate Multisite: Payfast Gateway**.
+
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag nan tuilleadan leis an tuilleadan Ultimate Multisite Payfast Gateway air a chomharrachadh -->
+
+Nochdaidh uinneag an tuilleadain. Briog air **Stàlaich an-dràsta.**
+
+<!-- Glacadh-sgrìn ri fhaighinn: còmhradh mion-fhiosrachaidh tuilleadan Ultimate Multisite Payfast Gateway leis a’ phutan Stàlaich an-dràsta -->
+
+Nuair a bhios an stàladh deiseil, thèid do ath-stiùireadh gu duilleag nam plugan. An seo, dìreach briog air **Cuir an gnìomh air an lìonra** agus thèid an tuilleadan _Payfast_ a chur an gnìomh air an lìonra agad.
+
+<!-- Glacadh-sgrìn ri fhaighinn: duilleag nam plugan leis a’ cheangal Cuir an gnìomh air an lìonra airson an tuilleadan Payfast Gateway -->

@@ -4,11 +4,11 @@ title: 'Filtro - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filtro: wu_\{$this->model\}_meta_pre_save
+# Filtro: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 Filtra os metadados antes de serem serializados para serem armazenados no banco de dados.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-----------|
@@ -16,10 +16,10 @@ Filtra os metadados antes de serem serializados para serem armazenados no banco 
 | $data_unserialized | `array` | Os dados do objeto que serão armazenados. |
 | $this | `\Base_Model` | A instância do objeto. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) na linha 534

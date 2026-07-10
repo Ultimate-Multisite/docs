@@ -3,11 +3,11 @@ title: Domeinprodukte en Prysing
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domeinprodukte en Prysgstelling
+# Domeinprodukte en Prysgstelling {#domain-products-and-pricing}
 
 Domeinprodukte is hoe jy prysgstelling, TLD's, WHOIS-privaatheid en verskafferkeuse beheer. Elke domeinproduk is 'n standaard Multisite Ultimate produk met 'n ekstra **Domeininstellings**-tabblad.
 
-## Die skep van 'n domeinproduk
+## Die skep van 'n domeinproduk {#creating-a-domain-product}
 
 1. Gaan na **Network Admin › Ultimate Multisite › Products**
 2. Klik op **Add New**
@@ -17,13 +17,13 @@ Domeinprodukte is hoe jy prysgstelling, TLD's, WHOIS-privaatheid en verskafferke
 
 Domeinprodukte verskyn met 'n paarse **Domain**-badge in die produklys en kan gefiltreer word met behulp van die **Domain Products**-tabblad.
 
-## Domeininstellings-tabblad
+## Domeininstellings-tabblad {#domain-settings-tab}
 
-### Verskaffer
+### Verskaffer {#provider}
 
 Kies watter registerant die registrasie vir hierdie produk hanteer. Dit skakel standaard na die globale **Default provider** wat in Domain Seller-instellings gestel is.
 
-### Ondersteunde TLD's
+### Ondersteunde TLD's {#supported-tlds}
 
 Laat leeg om 'n **catch-all produk** te skep wat op alle TLD's toegepas word wat nie deur 'n ander produk gematch word nie.
 
@@ -31,7 +31,7 @@ Voer 'n komma-gefrede lys van TLD's in (bv. `.com, .net, .org`) om 'n **TLD-spes
 
 **Hoe produkmatching werk:** Wanneer 'n kliënt na 'n domein soek, kies die bykomende produk die mees spesifieke pas-produk. 'n Produk met `.com` in sy TLD-lys het voorrang op 'n catch-all produk. As geen TLD-spesifieke produk pas nie, word die catch-all gebruik. As geen produkte bestaan nie, word die domeinsoek nie getoon nie.
 
-### Merkopslagtipe
+### Merkopslagtipe {#markup-type}
 
 Drie modi bepaal hoe jou kleinhandelpryse van die groothandelkoste bereken word:
 
@@ -41,11 +41,11 @@ Drie modi bepaal hoe jou kleinhandelpryse van die groothandelkoste bereken word:
 | **Fixed markup** | Voeg 'n vaste geldbedrag by. 'n $5 merkopslag op 'n $10 domein gee $15. |
 | **Fixed price** | Ignoreer die groothandelkoste heeltemal. Het altyd die bedrag wat jy invoer. |
 
-### Inleidende prysgstelling
+### Inleidende prysgstelling {#introductory-pricing}
 
 Aktiveer om 'n geraffelde eerstejaarspris aan te bied. Stel 'n aparte **Introductory price** (die jaar-1-pris) langs die gereelde **Renewal price** (jaar 2+) in. Die kliënt sien beide pryse tydens die afrekening sodat hulle weet wat hulle by hernuwing kan verwag.
 
-### WHOIS-privaatheid
+### WHOIS-privaatheid {#whois-privacy}
 
 Beheer of WHOIS-privaatheid beskerming vir domeine wat deur hierdie produk geregistreer word, aangebied word.
 
@@ -59,7 +59,7 @@ Vir Namecheap gebruik WHOIS-privaatheid WhoisGuard (altyd gratis). Vir OpenSRS g
 
 ---
 
-## TLD-import en sinkronisasie
+## TLD-import en sinkronisasie {#tld-import-and-sync}
 
 Domeinprodukte toon real-time groothandelprysgstelling wat van die gekoppelde verskaffer gehaal word. Vir dit om te werk, moet TLD's ingepop word.
 
@@ -70,7 +70,7 @@ Ná 'n sinkronisasie, gaan na enige domeinproduk se Domeininstellings-tabblad en
 
 ---
 
-## Outo-vernying
+## Outo-vernying {#auto-renewal}
 
 Domeinvernyings is gekoppel aan die kliënt se lidmaatskapstatus:
 
@@ -90,7 +90,7 @@ E-pos sjabloon-ID's vir domeinlewen-siklusgebeurtenisse:
 
 ---
 
-## Admin: Manuele domeinregistrasie
+## Admin: Manuele domeinregistrasie {#admin-manual-domain-registration}
 
 Om 'n domein namens 'n kliënt te registreer sonder dat hulle deur die afrekening gaan:
 

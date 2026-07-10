@@ -3,11 +3,11 @@ title: Az Ultimate Multisite fordítása
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Az Ultimate Multisite fordítása
+# Az Ultimate Multisite fordítása {#translating-ultimate-multisite}
 
 Az Ultimate Multisite fejlesztése angolul történik, de a bővítmény teljes mértékben lefordítható, és örömmel fogadjuk a fordítási hozzájárulásokat.
 
-## Az alapbővítmény fordításai
+## Az alapbővítmény fordításai {#core-plugin-translations}
 
 Az Ultimate Multisite alapbővítményének fordítása a hivatalos **WordPress.org fordítási platformon** keresztül történik:
 
@@ -24,7 +24,7 @@ Ez a WordPress közösség szabványos fordítási rendszere. Amikor egy fordít
 
 Ha szeretnél fordítási szerkesztő lenni a saját nyelveden (aki jóváhagyhatja a fordításokat), vedd fel velünk a kapcsolatot a [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) oldalon.
 
-## Addon fordítások
+## Addon fordítások {#addon-translations}
 
 Az addon bővítmények fordítása külön történik itt:
 
@@ -32,11 +32,11 @@ Az addon bővítmények fordítása külön történik itt:
 
 Az addon fordítások jelenleg mesterséges intelligenciával készültek kiindulási alapként. Minden támogatott nyelvre kiterjednek, de előfordulhatnak bennük suta megfogalmazások vagy pontatlanságok. Örömmel fogadjuk az emberi fordítók átnézését és javaslatait, hogy természetesebbé és pontosabbá tegyük őket.
 
-## Helyi fordítások
+## Helyi fordítások {#local-translations}
 
 Ha inkább saját projektedhez szeretnél helyi fordításokat készíteni ahelyett, hogy a közösségi fordításokhoz járulnál hozzá, két lehetőséged van:
 
-### Poedit használata
+### Poedit használata {#using-poedit}
 
 A **[Poedit](https://poedit.net)** asztali alkalmazással lefordíthatod a `.pot` fájlt:
 
@@ -46,6 +46,6 @@ A **[Poedit](https://poedit.net)** asztali alkalmazással lefordíthatod a `.pot
 4. Mentsd el -- a Poedit létrehozza a `.po` és `.mo` fájlokat
 5. Helyezd a kimeneti fájlokat a `lang` mappába
 
-### Loco Translate használata
+### Loco Translate használata {#using-loco-translate}
 
 A **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress bővítménnyel közvetlenül az admin felületről fordíthatsz, asztali eszközök nélkül. A fordítási fájlok létrehozását és lefordítását a bővítmény elvégzi helyetted.

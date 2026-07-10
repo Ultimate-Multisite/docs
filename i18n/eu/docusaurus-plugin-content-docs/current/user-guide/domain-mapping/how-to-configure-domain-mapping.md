@@ -1,140 +1,138 @@
 ---
-title: |+
-  Domain mapping-a konfiguratzeko
-
+title: Nola konfiguratu domeinu-mapaketa
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapaketa Konfiguratu (v2)
+# Nola konfiguratu Domain Mapping (v2) {#how-to-configure-domain-mapping-v2}
 
-_**IMPORTANTE NOTA: Hauko testu hau Ultimate Multisite 2.x-ean referentzia egiten du.**_
+_**OHAR GARRANTZITSUA: Artikulu honek Ultimate Multisite 2.x bertsioari egiten dio erreferentzia.**_
 
-Premium network bat oso potentziala duen funtuna da, client-ek gai-lehiak (top-level domain) bere web-datuak hartzeko aukera ematean. Hau da, zer pareki da: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) edo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Orain Ultimate Multisite-ek hori funtuna ezarritzen du, trinetza plugin bat erebutera ez du behar.
+Premium sare baten ezaugarri indartsuenetako bat gure bezeroei beren guneei goi-mailako domeinu bat eransteko aukera eskaintzea da. Azken finean, zer da profesionalagoa dirudiena: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) edo [_**joesbikeshop.com**_](http://joesbikeshop.com)? Horregatik Ultimate Multisite-k ezaugarri hori integratuta eskaintzen du, hirugarrenen plugin-ak erabili beharrik gabe.
 
-## Domain mapaketa hau da?
+## Zer da domain mapping? {#whats-domain-mapping}
 
-Euskal irakurriari ondorioztatzen duen bezala, domain mapaketa da Ultimate Multisite-ek emateko funtuna, gai-lehiak (custom domain) eskatzen aurretik eta hori network-eko web-datuarekin parekia egitea, horrek gai-lehia hartuta.
+Izenak iradokitzen duen bezala, domain mapping Ultimate Multisite-k eskaintzen duen gaitasuna da domeinu pertsonalizatu baterako eskaera bat jasotzeko eta eskaera hori sareko dagokion gunera mapatzeko, domeinu jakin hori erantsita duena.
 
-### Domain mapaketa onartzeko gaitasuna Ultimate Multisite Networkan
+### Nola konfiguratu domain mapping zure Ultimate Multisite Sarean {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapaketa funtzionatzeko, siznak parte dezake konfiguratzea. Barkatu, Ultimate Multisite-ek zorrotza duten ez-garrantzitsuagoa gaur egun, gai-lehiak (custom domain) eskatzeko beharrezko jarduerak automatico egiten du, gure irudien edo erantzunak.
+Domain mapping-ek zure aldetik konfigurazio pixka bat behar du funtzionatzeko. Zorionez, Ultimate Multisite-k lan zaila automatizatzen du zuretzat, eskakizunak erraz bete ditzazun.
 
-Ultimate Multisite instalazioan, wizard-ek **sunrise.php**-a automatikoki kopiatu eta emateko datu-gunean instalatzen du. **Ez dago hori amaitzen aurretik ez da konponbidea jarraitzeko**.
+Ultimate Multisite instalazioan zehar, morroiak automatikoki kopiatuko eta instalatuko du **sunrise.php** izendatutako karpetan. **Morroiak ez dizu aurrera egiten utziko urrats hau osatu arte**.
 
-<!-- Screenshot unavailable: Ultimate Multisite instalazio wizardarekin sunrise.php irudiak -->
+<!-- Pantaila-argazkia ez dago erabilgarri: Ultimate Multisite instalazio-morroia sunrise.php urratsarekin -->
 
-Hau da, Ultimate Multisite instalazio wizard-ek siznak networka konfiguratzen duenean, gai-lehia mapatzea hemen aurkitu ez da.
+Horrek esan nahi du Ultimate Multisite instalazio-morroiak zure sarea konfiguratzen amaitu ondoren, berehala has zaitezkeela domeinu pertsonalizatua mapatzen.
 
-Ez aldatu: Ultimate Multisitean domain mapaketa ez da obligazioa. WordPress Multisite-ren natiboa domain mapaketa funtzionari edo beste domain mapaketa soluzion bat erebutzeko aukera duzu.
+Kontuan izan Ultimate Multisite-n domain mapping ez dela derrigorrezkoa. WordPress Multisite-ren jatorrizko domain mapping funtzioa edo beste edozein domain mapping soluzio erabiltzeko aukera duzu.
 
-Ultimate Multisite-aren domain mapinga deshabilitatzeko, beste domain maping solution berekin iraditzen nahi duzu, hori **Ultimate Multisite > Settings > Domain Mapping**-an deshabilitatuta da.
+Beste domain mapping soluzioei bidea emateko Ultimate Multisite domain mapping desgaitu behar baduzu, ezaugarri hau desgaitu dezakezu **Ultimate Multisite > Settings > Domain Mapping** atalean.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Domain Mapping ezarpenen orria admin birbideratzea, mapping mezua eta DNS aukerak erakutsiz](/img/config/domain-mapping-settings.png)
 
-Horren opszioaren hemenaldean, **Force Admin Redirect** opszioa ere begiritu da. Horrek kontrolatzen duzu zehazteko, klienteak bere admin dashboard-era erabiliko baizik, bere domain-a edo subdomain-era, edo batari-k gabe.
+Aukera honen azpian, **Force Admin Redirect** aukera ere ikus dezakezu. Aukera honek kontrolatzeko aukera ematen dizu zure bezeroek beren admin dashboard-era beren domeinu pertsonalizatuan eta azpidomeinuan sartzeko aukera izango duten, edo horietako batean bakarrik.
 
-**Force redirect to mapped domain** (Mapatu domainan fortua rediritu) opszioa aipatzen duzu, klienteak bere custom domain-ekean beste admin dashboard-era erabiliko baizik.
+**Force redirect to mapped domain** hautatzen baduzu, zure bezeroek beren admin dashboard-era beren domeinu pertsonalizatuetan bakarrik sartu ahal izango dute.
 
-**Force redirect to network domain** (Network domainan fortua rediritu) opszioa ezberdina egin du - klienteak subdomain-ekean beste dashboard-era erabiliko baizik, bere custom domain-ekean saiatzen jakinarazteko ere, baina hori dakar.
+**Force redirect to** **network domain** aukerak guztiz kontrakoa egingo du: zure bezeroei beren dashboard-etara beren azpidomeinuan bakarrik sartzea baimenduko zaie, beren domeinu pertsonalizatuetan saioa hasten saiatzen badira ere.
 
-Eta **Allow access to the admin by both mapped domain domain and network domain** (Mapatu domain eta network domain batdu aksesan aukeratu) opszioa ematen du, klienteak subdomain eta custom domain gehiago erabiliko baizik bere admin dashboard-ekean.
+Eta **Allow access to the admin by both mapped domain domain and network domain** aukerak aukera ematen die beren admin dashboard-etara bai azpidomeinuan bai domeinu pertsonalizatuan sartzeko.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Admin Redirect goitibeherakoa zabalduta, hiru birbideratze-aukerak erakutsiz](/img/config/domain-mapping-redirect-options.png)
 
-Custom domain bat mapatzeko bitartean, bi modua daiteke. Lehenak, network admin dashboard-era domain naizlearen (super admin) mapatzea da eta ikusteko, bigarrenak, account page-aren eskolde administratoraren (subsite admin) dashboard-a través.
+Domeinu pertsonalizatu bat mapatzeko bi modu daude. Lehena domeinu-izena zure sareko admin dashboard-etik mapatzea da, super admin gisa, eta bigarrena azpiguneko admin dashboard-aren bidez, account orriaren azpian.
 
-Baina custom domain bat bere network-eko subsite bat mapatzea hasten duzian, domain naizlearen **DNS settings** (DNS aukerak) barne zuzenean konfiguratuta dagoela ziurtatu behar duzu.
+Baina domeinu pertsonalizatua zure sareko azpiguneetako batera mapatzen hasi aurretik, ziurtatu beharko duzu domeinu-izenaren **DNS settings** behar bezala konfiguratuta daudela.
 
 ###
 
-### Domain DNS aukerak barne zuzenean konfiguratuta dagoela ziurtatu
+### Domeinuaren DNS ezarpenak behar bezala konfiguratuta daudela ziurtatzea {#making-sure-the-domain-dns-settings-are-properly-configured}
 
+Mapping batek funtzionatzeko, mapatu nahi duzun domeinua zure Sarearen IP helbidera seinalatzen ari dela ziurtatu behar duzu. Kontuan izan Sarearen IP helbidea behar duzula —Ultimate Multisite instalatuta dagoen domeinuaren IP helbidea—, ez mapatu nahi duzun domeinu pertsonalizatuaren IP helbidea. Domeinu jakin baten IP helbidea bilatzeko, adibidez, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) erabiltzera joatea gomendatzen dugu.
 
+Domeinua behar bezala mapatzeko, **A RECORD** bat gehitu behar duzu zure **DNS** konfigurazioan **IP helbide** horretara seinalatuz. DNS kudeaketa asko aldatzen da domeinu-erregistratzaile batetik bestera, baina horri buruzko tutorial ugari dago online, " _Creating A Record on XXXX_ " bilatzen baduzu, non XXXX zure domeinu-erregistratzailea den (adib.: " _Creating A Record on_ _GoDaddy_ ").
 
-Maping funtzi eta lan egin dezake, den domaina mapatzea planatu duzu behar da bere Network-ren IP adresa zuzenean apuntatu duen. Ez zure custom domainaren IP adrestia behar duzu - Ultimate Multisite instalatutako domainaren IP adrestia behar duzu. Ezin daitezke ezagutzeko IP adrestia eratzeko, gure eskatzen dituz: [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) (adibidez).
+Hau funtzionarazteko arazoak badituzu, **jarri harremanetan zure domeinu-erregistratzailearen laguntzarekin** eta zati honetan lagundu ahal izango dizute.
 
-Domaina zuzenean mapatzea, DNS konfiguratziaraan **A RECORD** bat gehitu behar duzu ze IP adrestia apuntatu duen. DNS administrazioa domain registrarrak ezberdinetan handiagoa da, baina internetan tutorial asko dago eta hori ezagutzeko " _Creating A Record on XXXX_ " (XXXX-ekoa zure domain registrarra da, adibidez: " _Creating A Record on_ _GoDaddy_ ").
+Zure bezeroei beren domeinuak mapatzen uzteko asmoa baduzu, zati honetako lana beraiek egin beharko dute. Bideratu itzazu beren erregistratzailearen laguntza-sistemara A Record sortu ezin badute.
 
-Ez jartzen duzu hori funtzionatzeko hasterako problema izan zen, **zure domain registrarren suportuarekin jarraitu** eta hori ez duzu hori parte batean laguntzeko.
+### Domeinu-izen pertsonalizatua Super Admin gisa mapatzea {#mapping-custom-domain-name-as-super-admin}
 
-Zure klientak bere domainak mapatzea uste duzu, horiek hori partea berehala egin behar dute. A Record ez daite ere ezartzen duen iragatik, hori partea bere registrarren suportu sistema zehala.
+Zure sarean super admin gisa saioa hasita zaudenean, erraz gehitu eta kudea ditzakezu domeinu-izen pertsonalizatuak **Ultimate Multisite > Domains** atalera joanda.
 
-### Custom domain name-a Super Admin gisa mapatzea
+![Domains zerrenda-orria Ultimate Multisite-n](/img/admin/domains-list.png)
 
-Zure networkan super admin gisa logatuta dagoenean, **Ultimate Multisite > Domains** menuaren ondoren custom domainak lehiak eta administrazio dezake luetan.
+Orri honen azpian, goiko **Add Domain** botoian klik egin dezakezu, eta horrek leiho modal bat irekiko du. Bertan **custom domain name** ezarri eta bete dezakezu, domeinu-izen pertsonalizatua aplikatu nahi diozun **azpigunea** aukeratu, eta **primary domain** izen gisa ezarri nahi duzun ala ez erabaki dezakezu (kontuan izan **domeinu-izen anitz azpigune bakar batera** mapa ditzakezula).
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Add Domain modala domeinu-izenarekin, gune-hautatzailearekin eta primary domain txandakatzailearekin](/img/admin/domain-add-modal.png)
 
-Hau daura lapuriko daurean, üstiaren **Add Domain** (Domaine Zaharlik) botoian klik egin dezakezu eta horrek modal bukletu bat iradokitzi du, horretan **custom domain name** (solusiak domain-naiz), custom domain-naiz aplikatzea nahi duzu duen **subsite** (subsitua) eta horrek **primary domain name** (primaria domain-naiz) gisa emateko nahi duzu edo ez duzu (ez zure subsite batrekin domain-naizak mapatu dezakezu).
+Informazio guztia sartu ondoren, behealdeko **Add Existing Domain** botoian klik egin dezakezu.
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+Honek domeinu pertsonalizatuaren DNS informazioa egiaztatzeko eta eskuratzeko prozesua hasiko du. Orriaren behealdean erregistro bat ere ikusiko duzu, martxan dagoen prozesuari jarraipena egin diezaiokezun. Prozesu honek minutu batzuk behar izan ditzake osatzeko.
 
-Informazio guztia ematen ondoren, lehen daurrian **Add Existing Domain** (Eskurtu Domaine Zaharlik) botoian klik egin dezakezu.
+Ultimate Multisite v2.13.0-k barneko domeinu-erregistroa ere automatikoki sortzen du gune berri bat gune bakoitzeko domeinu gisa tratatu behar den ostalari batean sortzen denean. Ostalaria sarearen domeinu nagusia bada, edo **Gunearen URLa** eremu batean konfiguratuta dauden ordainketa-inprimaki partekatuen oinarrizko domeinuetako bat bada, automatikoki mapatutako domeinu-erregistroa saltatu egiten da, partekatutako oinarrizko domeinu hori erabiltzen duen gune guztientzat erabilgarri gera dadin.
 
-Horrek custom domain-naizaren DNS informazioa binarri eta hartzeko prozesua hasten du. Prozesuan jarraitzen dituzteko daurean lehen daurrian log bat ere erabiliko duzu. Horrek gutxiago minutu bat egin dezake.
+Bezero batek Domain Seller v1.3.0 edo berriago baten bidez domeinu berri bat erregistratzen duenean, Ultimate Multisite-k automatikoki mapatzen du erregistratutako domeinua bezeroaren sareko gunera lehenespenez. Administratzaileek ez dute jada mapatutako domeinu-erregistro bereizi bat gehitu behar erregistro arrakastatsu baten ondoren, salbu eta domeinu nagusiaren bandera, aktibazio-egoera edo SSL kudeaketa bezalako aukerak doitu nahi badituzte.
 
-Ultimate Multisite v2.13.0-ek, host-a per-site domain gisa tratatzea diren lekuan, leku batean leku bat lekuak dira (Site URL) edo **Site URL** lekuan konfiguratutako shared checkout-form base domain bat dela, automatikoki internal domain record bat ere ematen du. Host-a network-aren primari domain dela, edo Site URL lekuan konfiguratutako shared checkout-form base domain bat dela, automatikoki mapatutako domain recorda ez daiteko, horrek share domainak erabiltzen duen guztietan erabilera jarraitzen duela.
+**Etapa** edo egoera **DNS egiaztatzen** izatetik **Prest** izatera aldatu beharko litzateke, dena behar bezala konfiguratuta badago.
 
-**Stage** (Fasea) edo statusak **Checking DNS** (DNS Binarri) gogintzen da **Ready** (Preparatu) iridian bat dela, guztia ondorioz gutxiago minutu bat egin behar duzu.
+<!-- Pantaila-argazkia ez dago erabilgarri: Domeinuen zerrendan Checking DNS etapa erakusten duen domeinu-errenkada -->
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+<!-- Pantaila-argazkia ez dago erabilgarri: Ready etapa egoera-adierazle berdearekin erakusten duen domeinu-errenkada -->
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+Domeinu-izenaren gainean klik egiten baduzu, haren barruan aukera batzuk ikusi ahal izango dituzu. Ikus ditzagun azkar:
 
-Domain-naizaren klik egin ondoren, horren beldurako opsioak ikusi ez duzu. Zer daude, lehen daurrian ezagutuz:
+![Domeinuaren xehetasun-orria etapa, gunea, aktiboa, nagusia eta SSL txandakatzaileekin](/img/admin/domain-edit.png)
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+**Etapa:** Hau da domeinua dagoen etapa. Domeinua lehen aldiz gehitzen duzunean, ziurrenik **DNS egiaztatzen** etapan egongo da. Prozesuak DNS sarrerak egiaztatuko ditu eta zuzenak direla baieztatuko du. Ondoren, domeinua **SSL egiaztatzen** etapan jarriko da. Ultimate Multisite-k domeinuak SSL duen ala ez egiaztatuko du eta zure domeinua **Prest** edo **Prest (SSL gabe)** gisa sailkatuko du.
 
-**Fasea:** Hau daura da dago domainak. Lehen aldiz domain bat gehitu dutenean, gogoin da **DNS Kontrolatzeko** faza. Prozesuak DNS entry-ak ikusten du eta zuzena jakinarazten du. Horrekik gero, domainak **SSL Kontrolatzeko** faza laitzen da. Ultimate Multisitea ikusten du lehen domaineko SSL (SSL) dago nola edo ez dago, eta domainak **Preparatua** edo **Preparatua (ez SSL-ditu)** bezala kategoria egiten du.
+**Gunea:** Domeinu honekin lotuta dagoen azpidomeinua. Mapatutako domeinuak gune zehatz honen edukia erakutsiko du.
 
-**Site:** Domainarekin lotuta dagoen subdomaina. Domainak mapatu beharko du honela sitearen kontentua ikusten da.
+**Aktiboa:** Aukera hau aktibatu edo desaktibatu dezakezu domeinua gaitzeko edo desgaitzeko.
 
-**Aktibo (Active):** Domainak aktiboa edo deaktiboa egiteko, lehen aurrera egin dezakezu hori onartu edo deshabilitatu.
+**Domeinu nagusia da?:** Zure bezeroek gune bakoitzerako mapatutako domeinu bat baino gehiago izan ditzakete. Erabili aukera hau gune zehatz honetarako domeinu nagusia den ala ez hautatzeko.
 
-**Domaina Nagusia (Is Primary Domain?):** Kontratueriek site batekin domain bat edo gehiago mapatuta dutelako. Horrek erabiltu duzu honetan jakinarazteko, hau site-bere domain nagusia da non erabiltzen duzu.
+**Segurua da?:** Ultimate Multisite-k domeinuak SSL ziurtagiria duen ala ez egiaztatzen badu ere gaitu aurretik, eskuz hauta dezakezu domeinua SSL ziurtagiriarekin edo gabe kargatzea. Kontuan izan webguneak SSL ziurtagiririk ez badu eta SSL bidez kargatzera behartzen saiatzen bazara, erroreak eman ditzakeela.
 
-**Segura da (Is Secure?):** Ultimate Multisitea SSL sertifikatua dago nola edo ez dago nola ikusten du domainak aktiboa egitean aurretik, baina manuel olarak aukeratu dezakezu domainak SSL-ditu edo ez ditu eta loadatzeko. Ezberdintasuna da, websteina SSL sertifikatua ez dutenean eta SSL-ditu loadatzeko eskatzen duzu, errorrak emateko nahia izan daiteke.
+### Domeinu-izen pertsonalizatua mapatzea azpiguneko erabiltzaile gisa {#mapping-custom-domain-name-as-subsite-user}
 
-### Subsite erabiltzailearen bitartean domaina nagusia (custom domain name) mapatzea
+Azpiguneko administratzaileek ere domeinu-izen pertsonalizatuak mapa ditzakete beren azpiguneko administrazio-Dashboardetik.
 
-Subsite administratorrek ere subsite admin dashboard-etik custom domainak mapatuta ezartzen dituz.
+Lehenik, ziurtatu behar duzu aukera hau gaitzen duzula **Domeinu-mapaketa** ezarpenetan. Ikusi beheko pantaila-argazkia.
 
-Lehenik, **Domain mapping** aukera onartu behar duzu hori Domain mapping heniaren ondorioz. Lehenen ikuspenan ikusi:
+<!-- Pantaila-argazkia ez dago erabilgarri: Azpiguneko erabiltzaileei Customer DNS Management txandakatzailearen bidez domeinuak mapatzen uzten dieten domeinu-mapaketaren ezarpenak -->
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Aukera hau **Plana** mailan edo produktu-aukeretan ere ezarri edo konfiguratu dezakezu hemen: **Ultimate Multisite > Produktuak**.
 
-Mendu edo konfiguratuta ere baduzu, hori **Ultimate Multisite > Products**-eko Plan maila edo produkzio aukeretan onartu dezakezu.
+![Domeinu pertsonalizatuen atala produktua editatzeko orrian](/img/config/product-custom-domains.png)
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Aukera horietako edozein gaituta dagoenean eta azpiguneko erabiltzaile bati domeinu-izen pertsonalizatuak mapatzea baimentzen zaionean, azpiguneko erabiltzaileak **Domains** izeneko metabox bat ikusi beharko luke **Account** orrian.
 
-Gaur duz hori guztiak ondarekin eta subsite erabiltzaileari ez daingoa domainak osoa (custom domain names) mapatu, horrek aktiboa jakin dituzenean, subsite erabiltzailearen Account lapuriko ondorekin **Domains** metabox bat ikusten du.
+<!-- Pantaila-argazkia ez dago erabilgarri: Domains metaboxa azpiguneko Account orrian Add Domain botoiarekin -->
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Erabiltzaileak **Add Domain** botoian klik egin dezake, eta jarraibide batzuk dituen leiho modal bat irekiko da.
 
-Erabiltzaileak **Add Domain** botoia klik egin dezake eta horrek zehaztasunezko modal bukleta bat iradokituz aurkituko du.
+<!-- Pantaila-argazkia ez dago erabilgarri: Add Domain modala, azpiguneko erabiltzaileentzako DNS A-record jarraibideak erakutsiz -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+Ondoren, erabiltzaileak **Next Step** sakatu eta domeinu-izen pertsonalizatua gehitzen jarrai dezake. Domeinu nagusia izango den ala ez ere aukera dezake.
 
-Gero, erabiltzaileak **Next Step** (Irudi lehen) klik egin dezake eta domain osoa mapatzeko prozesua jarraitu dezake. Hau ere zer izango da primario domaina (primary domain) edo ez izango da, hori ere aukeratu dezake.
+<!-- Pantaila-argazkia ez dago erabilgarri: Add Domain inprimakia domeinu-izen pertsonalizatuaren eremuarekin eta domeinu nagusiaren txandakatzailearekin -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- Pantaila-argazkia ez dago erabilgarri: DNS egiaztapena abiarazten duen Add Domain berrespen-urratsa -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+**Add Domain** sakatzeak domeinu pertsonalizatuaren DNS informazioa egiaztatzeko eta eskuratzeko prozesua hasiko du.
 
-**Add Domain** (Domaina gehiago) klik egin beharko du domain osoaren informazioa bideratzea eta jartzen duen prozesua hasi nahi du.
+### Domeinuen sinkronizazioari buruz {#about-domain-syncing}
 
-### Domain Syncing (Domainak sinxetzea)
+Domeinuen sinkronizazioa prozesu bat da, non Ultimate Multisite-k domeinu-izen pertsonalizatua zure ostalaritza-kontura gehitzen duen gehigarri-domeinu gisa, **domeinu-mapaketak funtziona dezan**.
 
-Domain Syncing da prozesua hori da dagoen Ultimate Multisite-ek domain osoa hosting kontuan gehiago domain bat gisa (add-on domain) ezartzen du **domain mapping** (domainak mapatzea) funtzionatzeko.
+Domeinu-sinkronizazioa automatikoki gertatzen da zure ostalaritza-hornitzaileak Ultimate Multisite domeinu-mapaketaren funtzioarekin integrazioa badu. Gaur egun, ostalaritza-hornitzaile hauek dira _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ eta _Cpanel._
 
-Hosting proviziorrek Ultimate Multisite-ko domain mapping funtzioarekin integrazioa dutenean, Domain Syncing automatically geratzen da. Aktualena, hauek hosting proviziorrak dira _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ eta _Cpanel._
+Ostalari-hornitzailearen integrazio bat aktibo dagoenean, Ultimate Multisite-k hornitzailearen aldeko DNS edo azpidomeinu-sorreraren zeregina ere ilaran jar dezake sortu berri diren guneetarako. Integraziorik ez badago zeregin hori entzuten, atzeko planoko lana saltatu egiten da no-op ilara-sarrerak saihesteko. Mapatutako domeinuen DNS eta SSL egiaztapenek domeinu-etapen prozesu arruntaren bidez exekutatzen jarraitzen dute.
 
-Hosting proviziorren integrazioa aktibo dagoenean, Ultimate Multisite-ek lehiak domainak (newly created sites) beste task bat da DNS edo subdomain sortzeko prozesua emateko. Task hori ez duten integrazioak esleitzen duen ikustera ez duenean, background joba (taska bakarra) desbatzen da eta no-op queue entries ez dute aurkitu nahi du. Mapatutako domainak dira normal domain-stage prozesuaren bidez DNS eta SSL kontrolak jarraitzen ditu.
+Integrazio hau Ultimate Multisite ezarpenetan aktibatu beharko duzu, **Integrazioa** fitxan.
 
-Ultimate Multisite hengaiaren **Integration** (Integrazioa) taban, Ultimate Multisite sailkioetan aktibatu behar duzu.
+![Integrazioak fitxa Ultimate Multisite ezarpenetan, ostalaritza-hornitzaileak erakutsiz](/img/config/integrations-tab.png)
 
-![Ultimate Multisite sailkioetan Integrazioak tab-a erakusten duen eskuragarri irudi](/img/config/integrations-tab.png)
+<!-- Pantaila-argazkia ez dago erabilgarri: Ostalaritza-hornitzaileen konfigurazio-estekak Integrazioak ezarpenen fitxan -->
 
-<!-- Screenshot unavailable: Integrazioaren sailkioetan hosting provider konfiguratzeko linkak irudi -->
-
-_Ez zure hosting providera aipatutako hori ez dela, **zure domain naiz manualean sinkronizatu edo domainaren namena gehiago ematu behar duzu**._
+_Kontuan izan zure ostalaritza-hornitzailea goian aipatutako hornitzaile horietako bat ez bada, **domeinu-izena eskuz sinkronizatu edo gehitu beharko duzula** zure ostalaritza-kontuan._

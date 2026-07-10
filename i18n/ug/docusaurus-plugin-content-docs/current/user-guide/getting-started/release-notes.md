@@ -3,9 +3,9 @@ title: Харакат нотлары
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# نِشْيَارِي يَاخْتَار (Release Notes)
+# نِشْيَارِي يَاخْتَار (Release Notes) {#release-notes}
 
-## نسخه ۲.۱۳.۰ — منتشر شده در ۲۰۲۶-۰۶-۰۵
+## نسخه ۲.۱۳.۰ — منتشر شده در ۲۰۲۶-۰۶-۰۵ {#version-2130--released-on-2026-06-05}
 
 - نوید: ملازم حساب، چكست آوت (checkout)، بیलिंग، سايت، اینفويس، ٹیمپليت سويتشنگ، و دومین میپنگ پروسیس‌ها برای اینکه شبکه های تِنانت بتوانند مشتریان را برای کارهای مدیریت شده دوباره به سایت اصلی هدایت کنند اضافه شد.
 - نوید: تکرار شمولیت (renewal) بررسی‌های اعتبارنامه اضافه شد تا در صورت نبود توافق‌نامه بیलिंग ذخیره شده، اشتراک یا توکن گاولت، گیت‌وی‌ها قابلیت خودکار تجدید را غیرفعال کنند.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - رفع اشکال: موارد حاشیه‌ای مربوط به تمدید شمولیت، نمایش انقضا و جمع‌آوری پرداخت اکنون از منقضی شدن فوری، کرش کردن (crash) یا از دست دادن پرداخت‌های مورد نیاز جلوگیری می‌کنند.
 - بهبود یافته: سازگاری با وردپرس تا نسخه ۷.۰ آزمایش شده است، دارایی‌های Vue تولید محصول از منابع npm بازسازی می‌شوند، و پوشش end-to-end Cypress اکنون جریان‌های چكست، راه‌اندازی، SSO و گیت‌وی بیشتری را بررسی می‌کند.
 
-## الإصدار ٢.١٢.٠ — ٢٠٢٦-٠٥-١٥ نُشر
+## الإصدار ٢.١٢.٠ — ٢٠٢٦-٠٥-١٥ نُشر {#version-2120--released-on-2026-05-15}
 
 - جديد: Hostinger (hPanel) را پشتیبانی‌شون به عنوان یک ارائه‌دهنده هاست جدید با قابلیت نگاشت دامنه اضافه شد.
 - جدید: Site Exporter حالا بسته‌های ایمپورت شبکه (network import bundles) رو مدیریت می‌کنه تا بازیابی سایت در کل شبکه خیلی راحت‌تر بشه.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - رفع اشکال: Site Exporter CLI حالا انتخاب سایت شبکه پیش‌فرض درست رو حفظ می‌کنه.
 - بهبود یافته: wp-cli بسته‌بندی شده از بسته پلاگین حذف شد و اندازه پلاگین کوچکتر شد.
 
-## الإصدار ٢.١١.٠ — ٢٠٢٦-٠٥-١١ نُشر
+## الإصدار ٢.١١.٠ — ٢٠٢٦-٠٥-١١ نُشر {#version-2110--released-on-2026-05-11}
 
 - جدید: خروجی سایت‌ها حالا یک `index.php` خود را بوت‌کننده (self-booting) بسته‌بندی می‌کنه تا فایل ZIP بدون نیاز به نصب پلاگین جداگانه روی هاست جدید هم قابل نصب باشه.
 - جدید: خروجی شبکه اجازه می‌ده مدیران از صفحه مدیریت Site Export، همه زیرسایت‌ها رو در یک آرشیو خارج کنن.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - جدید: ویرایشگر فرم چک‌اوت وقتی محصولی اضافه می‌شه که فیلد مورد نیاز تنظیم نشده، هشدار می‌ده.
 - جدید: تب تنظیمات ایمپورت/اکسپورت حالا محدوده کارش رو به وضوح توضیح می‌ده و مستقیماً به ابزار Site Export لینک داده شده.
 
-## الإصدار ٢.١٠.٠ — ٢٠٢٦-٠٥-٠٥ نُشر
+## الإصدار ٢.١٠.٠ — ٢٠٢٦-٠٥-٠٥ نُشر {#version-2100--released-on-2026-05-05}
 
 - نوید: دستی اعتبار bilgileri girişi için PayPal rehberli kurulum sihirbazı, sorunsuz gateway yapılandırması için OAuth bayrak kapısı eklendi.
 - Yeni: Şablon değiştirme müşteri paneli güncellendi; mevcut-şablon kartı, kalıcı ızgara ve **Mevcut şablonu sıfırla** butonu ile yeniden tasarlandı.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Filtrelenmiş SSO yolu tüm giriş akışlarında korunuyor.
 - Düzeltme: Kaydedilirken boş site kimliği seçenekleri korundu.
 
-## Sürüm 2.9.0 — 30 Nisan 2026'da Yayınlandı
+## Sürüm 2.9.0 — 30 Nisan 2026'da Yayınlandı {#version-290--released-on-2026-04-30}
 
 - Yeni: **Araçlar > Dışa/İçe Aktar** altında tek site dışa aktarma ve içe aktarma eklendi.
 - Düzeltme: ZIP dosyaları artık kimlik doğrulamalı bir indirme uç noktası üzerinden sunuluyor.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Kullanıcı ayarları anahtarlarında Tour ID'ler alt çizgiye dönüştürüldü.
 - Geliştirildi: Daha iyi uyumluluk için ZipArchive artık Alchemy/Zippy yerine kullanılıyor.
 
-## Sürüm 2.8.0 — 29 Nisan 2026'da Yayınlandı
+## Sürüm 2.8.0 — 29 Nisan 2026'da Yayınlandı {#version-280--released-on-2026-04-29}
 
 جدید: Other Options تنظیمات رابط کاربری (UI) içine Jumper دکمه‌اش اضافه edildi.
 جدید: Checkout formlar list masasında Status sütunu eklendi.

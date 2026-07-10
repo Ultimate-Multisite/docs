@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Kwishyura ukoresheje GoCardless
+
+Emerera abakiriya bawe kwishyura memberships n’ibicuruzwa bya Multisite Ultimate hakoreshejwe Direct Debit binyuze muri GoCardless!
+
+## Gushyiraho {#installation}
+
+1. Ohereza 'ultimate-multisite-gocardless' muri directory ya '/wp-content/plugins/'
+2. Koresha plugin unyuze muri menu ya 'Plugins' muri WordPress
+3. Kurikiza Wizard intambwe ku yindi kugira ngo ushyireho plugin
+
+## Ubuyobozi bw’Imikoreshereze {#usage-guide}
+
+_GoCardless_ ni payment gateway iboneka muri **Uburayi no mu Bwongereza** yemera kwishyura hakoreshejwe **Direct Debit**.
+
+**Ultimate Multisite: GoCardless Gateway** yongeramo ubufasha bwa _GoCardless_ muri Ultimate Multisite, bikagufasha kwishyuza abakiriya bawe bo muri ako karere ukoresheje Direct Debit.
+
+Iyi nyigisho izerekana uko washyiraho _GoCardless_ kugira ngo utangire kwakira ubwishyu buyinyuzwemo kuri network yawe ya Ultimate Multisite.
+
+_**Icyitonderwa: GoCardless ikorana gusa n’aya mafaranga:**_ **EUR, GBP, AUD, SEK, na DKK.**
+
+## Gushyiraho Add-on {#installing-the-add-on}
+
+Mbere na mbere, uzakenera gushyiraho add-on ya GoCardless ya Ultimate Multisite. Ushobora kubikora ujya kuri **Ultimate Multisite > Settings > Add-ons (ku rubavu)**. Hanyuma ugahitamo add-on ya GoCardless kuri urwo rutonde.
+
+Nyuma y’uko add-on ishyizweho kandi igakoreshwa, jya kuri **Ultimate Multisite > Settings > Payments**, fungura ihitamo rya GoCardless, hanyuma ubike.
+
+![Igenamiterere rya payment gateway](/img/config/settings-payment-gateways.png)
+
+## Kubona Access Token {#getting-an-access-token}
+
+Fungura account kuri _GoCardless_ (cyangwa kuri sandbox ya _GoCardless_, niba ushaka **kubanza kuyigerageza** , ari byo bisabwa). Hanyuma, nyuma yo kwinjira, jya ku kintu cya menu cya **Developers**.
+
+<!-- Ifoto ya mugaragaza ntiboneka: dashboard ya GoCardless yerekana aho menu ya Developers iherereye -->
+
+Ku rupapuro rwa **Developers**, kanda buto ya **Create** iri mu mfuruka yo hejuru iburyo bwa screen, hanyuma ukande ku ihitamo rya **Access Token**.
+
+<!-- Ifoto ya mugaragaza ntiboneka: urupapuro rwa GoCardless Developers ruriho buto ya Create n’ihitamo rya Access Token -->
+
+Ibi bizafungura idirishya rishya rya modal, rigufasha gukora token nshya. Yiha izina ryoroshye kumenya kandi urebe neza ko wahisemo ihitamo rya **Read-write access** muri menu ya **Scope**.
+
+<!-- Ifoto ya mugaragaza ntiboneka: modal ya GoCardless yo gukora access token nshya ifite scope ya Read-write -->
+
+Access token izagaragara kuri screen. Yandukure maze uyomeke muri menu yawe ya **Ultimate Multisite > Settings > Payments > GoCardless**.
+
+Menya neza ko uyishyira mu mwanya ukwiye. Niba ari **token nyakuri** **n** , banza uzimye **sandbox mode** mbere yo komekamo token.
+
+![Igenamiterere rya payment gateway rifite GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Ifoto ya mugaragaza ntiboneka: imwanya ya token ya GoCardless mu igenamiterere ry’ubwishyu rya Ultimate Multisite -->
+
+Ibyo birahagije ku ntambwe ya mbere. Ibikurikira, ukeneye gushyiraho webhook listener.
+
+## Gushyiraho Webhook Listener {#setting-up-the-webhook-listener}
+
+Iyo ukorana na subscriptions, Ultimate Multisite ikenera kumenya impinduka mu miterere ya subscription, ubwishyu bushya bwakozwe, n’ibindi nk’ibyo.
+
+Uburyo payment gateways zimenyesha Ultimate Multisite izo mpinduka ni ugukoresha **webhook calls**. Kubera iyo mpamvu, kugira ngo integration ikore 100%, dukeneye kubwira _GoCardless_ URL igomba guhamagara ifite ayo makuru yose.
+
+Subira kuri panel yawe ya **GoCardless > Developers** maze wongere ukande buto ya Create, ariko kuri iyi nshuro, uhitemo ihitamo rya **Webhook endpoint**.
+
+<!-- Ifoto ya mugaragaza ntiboneka: urupapuro rwa GoCardless Developers rufite ihitamo rya Webhook endpoint -->Idirishya rishya rizafunguka rifite amahitamo ya webhook endpoint. Risaba webhook URL, bityo subira kuri **Ultimate Multisite settings > Payments > GoCardless** yawe maze wandukure webhook URL iriho:
+
+<!-- Ifoto ya mugaragaza ntiboneka: igenamiterere rya Ultimate Multisite GoCardless ryerekana webhook URL -->
+
+Byongeye, ushobora kwinjiza **webhook secret** izakoreshwa gusinya webhook calls zawe. Icyo winjiza cyose muri uwo mwanya, uzakenera no kukinjiza muri **Ultimate Multisite Webhook Secret field**.
+
+<!-- Ifoto ya mugaragaza ntiboneka: ifishi y’igenamiterere rya webhook endpoint ya GoCardless ifite imwanya ya URL n’uwa secret -->
+
+<!-- Ifoto ya mugaragaza ntiboneka: umwanya wa webhook secret wa Ultimate Multisite GoCardless -->
+
+Soza ubika endpoint ukanda buto ya **Create webhook endpoint**, hanyuma **unabike igenamiterere ryawe rya Ultimate Multisite**.
+
+Ugomba kuba witeguye kwakira _GoCardless_ ubu!

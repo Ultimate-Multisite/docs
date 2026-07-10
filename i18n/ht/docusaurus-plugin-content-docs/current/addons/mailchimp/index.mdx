@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Entegrasyon Mailchimp
+
+Entegre rezo Multisite Ultimate ou a ak Mailchimp ou. Ou ka konekte sèten plan ak Lis Mailchimp epi otomatikman ajoute abòne yo nan lis sa yo lè yo enskri.
+
+## Enstalasyon {#installation}
+
+1. Telechaje 'ultimate-multisite-mailchimp' nan repètwa '/wp-content/plugins/' la
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress Network Admin ou
+
+## Gid Itilizasyon {#usage-guide}
+
+Senkronize imel abòne yo ak lis MailChimp ou yo vrèman fasil ak Add-on Ultimate Multisite: MailChimp Integration nou an. Leson sa a vize ede ou mete tout bagay an plas!
+
+## Jwenn yon kle API {#getting-an-api-key}
+
+Anvan nou kòmanse antre nan diferan paramèt ki disponib yo, nou bezwen yon kle API MailChimp. Sa ap pèmèt Ultimate Multisite pale ak API MailChimp la pou rekipere lis, gwoup, epi ajoute adrès imel nan lis ak gwoup sa yo lè itilizatè yo enskri.
+
+Swiv leson sa a pou jwenn pwòp kle API MailChimp ou: [Konsènan Kle API yo | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Ajoute kle API MailChimp ou sou_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Mòd Entegrasyon {#integration-mode}
+
+Add-on MailChimp Integration lan ofri de “mòd entegrasyon”, sa vle di gen de fason diferan ou ka itilize add-on lan pou senkronize adrès imel yo.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_De mòd entegrasyon pou plis fleksibilite!_
+
+### Mòd 1: Plizyè Lis {#mode-1-multiple-lists}
+
+Mòd pa defo a itilize **Plizyè Lis**. Mòd sa a ap pèmèt ou chwazi plizyè lis MailChimp pou chak plan yo. Sa a se pi bon opsyon an si ou segmante itilizatè ou yo nan diferan lis.
+
+Pa egzanp, ann sipoze ou gen 3 diferan lis sou Account MailChimp ou: **Bilten** , **Plan A** , ak **Plan B**. Ou vle tout itilizatè yo, kèlkeswa plan yo, pou yo enkli tou nan lis Bilten an, konsa yo p ap rate mizajou ou yo.
+
+Pou reyalize sa, ou ka itilize mòd Plizyè Lis la pou ajoute toude lis **Bilten** ak **Plan A** nan Paramèt MailChimp Plan A yo, epi **Bilten** ak **Plan B** nan Paramèt MailChimp Plan B yo.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Chwazi lis pa defo yo pou nouvo account yo ak pou account ki anile yo_
+
+### Mòd 2: Yon Sèl Lis + Plizyè Gwoup {#mode-2-single-list--multiple-groups}
+
+MailChimp pèmèt ou segmante lis ou an an pi piti gwoup itilizatè yo rele **Gwoup**. Sa pèmèt ou gen plis kontwòl paske ou ka voye yon kanpay bay yon sous-ansanm espesifik nan abòne ou yo san ou pa oblije kreye plizyè kopi menm kanpay la sou MailChimp (sa ki fè li difisil pou analize metrik kanpay sa a apre).
+
+Pa egzanp, ou ka gen yon sèl lis ki rele **Abòne Rezo Mwen,** epi anndan li gen gwoup pou **Plan A** ak **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Chwazi lis ak gwoup pa defo yo, si w ap itilize mòd entegrasyon “yon sèl lis + plizyè gwoup” la_
+
+## Lis ak Gwoup Pa Defo {#default-lists-and-groups}
+
+Apre ou chwazi ki mòd entegrasyon ki pi fè sans pou ka itilizasyon patikilye ou, li lè pou chwazi lis pa defo yo (ak gwoup yo, selon mòd la). Lis pa defo a ap itilize lè yon plan bay pa gen yon Lis espesifik ki chwazi.
+
+Ou ka chwazi tou lis pa defo pou account ki anile yo. Chak fwa yon itilizatè fini abònman li epi retire account li nan rezo ou, adrès imel li ap deplase nan lis ki fikse pou account ki anile yo.
+
+## Aktive Abònman Doub {#enabling-double-subscription}
+
+Sou menm paj paramèt la, ou pral kapab aktive **Abònman Doub**. Opsyon sa a ap ajoute itilizatè a ni nan lis pa defo ki chwazi a NI nan lis ki chwazi pou plan itilizatè sa a. Si opsyon sa a pa aktive, itilizatè a ap sèlman ajoute nan lis ki chwazi pou plan itilizatè a. Si pa gen okenn ki fikse pou plan patikilye sa a, lè sa a itilizatè a ap ajoute nan lis pa defo ki chwazi a.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Ou ka fè itilizatè ou yo abòne ni nan lis pa defo a ni nan lis plan an lè yo enskri_
+
+## Chwazi Lis ak Gwoup pou chak nan Plan yo {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Ale nan **Plan** ou yo epi chwazi plan ou vle modifye a. Remake sou meta-box **Opsyon Avanse** yo, yon nouvo tab ki rele MailChimp ap disponib.
+
+Sou tab sa a, ou pral kapab chwazi plizyè lis oswa yon sèl lis ak plizyè gwoup (selon mòd entegrasyon an) pou plan sa a.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Chwazi Lis ak Gwoup ou vle itilize pou chak nan plan ou yo_
+
+Lè yon nouvo itilizatè enskri pou plan sa a, adrès imel li ap ajoute nan lis ak gwoup ki chwazi yo!

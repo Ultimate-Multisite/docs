@@ -1,146 +1,150 @@
 ---
 title: 網站範本
 sidebar_position: 4
-_i18n_hash: 35467c61accd92dcfce7e212e2b35474
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# 網站範本 (v2)
+# 網站範本（v2） {#site-templates-v2}
 
-_**注意：本文適用於 Ultimate Multisite 2.x 版本。如果您使用的是 1.x 版本，**_ **請參閱這篇文章** _**。**_
+_**注意：本文適用於 Ultimate Multisite 版本 2.x。如果你使用的是版本 1.x，**_ **請參閱這篇文章** _**。**_
 
-使用 Ultimate Multisite 建立進階網路時，我們的目標是盡可能自動化各種流程，同時讓客戶在建立網站時擁有彈性和多種選擇。要達成這個平衡，一個簡單的方法就是善用 Ultimate Multisite 的網站範本功能。
+我們在使用 Ultimate Multisite 建立進階網路時的目標，是盡可能自動化更多流程，同時在客戶建立網站時，提供彈性與不同選項可供選擇。達成這種平衡的一個簡單方法，就是使用 Ultimate Multisite 網站範本功能。
 
-## 什麼是網站範本？
+## 什麼是網站範本？ {#what-is-a-site-template}
 
-顧名思義，網站範本是一個樣板網站，可作為在網路中建立新網站時的基礎。
+顧名思義，網站範本是一個樣板網站，可在你的網路中建立新網站時作為基礎使用。
 
-這表示您可以建立一個基礎網站、啟用不同的 plugin、設定使用中的佈景主題，並依照喜好進行任何自訂。之後當您的客戶建立新帳號時，他們得到的不會是一個沒有實質內容的預設 WordPress 網站，而是會得到您基礎網站的複本，所有自訂設定和內容都已經就緒。
+這表示你可以建立一個基礎網站、啟用不同 plugin、設定啟用中的 theme，並以任何你喜歡的方式自訂它。接著，當你的客戶建立新 Account 時，他們取得的就不會是一個沒有任何有意義內容的預設 WordPress 網站，而是你的基礎網站副本，其中所有自訂項目與內容都已準備就緒。
 
-這聽起來很棒，但要怎麼建立新的網站範本呢？其實非常簡單。
+這聽起來很棒，但我要如何建立新的網站範本？這件事再簡單不過了。
 
-## 建立和編輯新的網站範本
+## 建立與編輯新的網站範本 {#creating-and-editing-a-new-site-template}
 
-網站範本就是您網路中的一般網站。要建立新範本，只需前往 **Network Admin > Ultimate Multisite > Sites > Add Site**。
+網站範本只是你網路上的一般網站。若要建立新範本，你只要前往 **網路管理 > Ultimate Multisite > 網站 > 新增網站。**
 
-**![Sites 列表頁面中的 Add site 按鈕](/img/config/site-templates-list.png)**
+**![網站清單頁面中的新增網站按鈕](/img/config/site-templates-list.png)**
 
-這會開啟一個彈出視窗，要求您填寫 **Site title（網站標題）、Site Domain/path（網站網域/路徑）** 和 **Site type（網站類型）**。在 **Site Type** 下拉選單中，請確保選擇 **Site Template**。
+這會開啟一個 modal 視窗，要求你填寫 **網站標題、網站網域/路徑，**以及**網站類型**。在**網站類型**下拉欄位中，請務必選擇**網站範本** *。*
 
-_![新增網站範本彈出視窗，顯示網站類型下拉選單](/img/config/site-templates-list.png)_
+_![含網站類型下拉選單的新增網站範本 modal](/img/config/site-templates-list.png)_
 
-在表單底部，您會看到一個 **Copy Site（複製網站）** 切換開關。這可以讓您以現有的網站範本為基礎來建立新的網站範本，節省從零開始建立的時間。
+你也可以新增面向客戶的描述，用來說明範本包含哪些內容：
 
-![新增網站範本彈出視窗，顯示複製網站切換開關](/img/config/site-templates-list.png)
+![網站範本編輯畫面上的網站範本描述欄位](/img/config/site-template-edit-description.png)
 
-### 自訂網站範本的內容
+在表單底部，你會看到一個**複製網站**切換開關。這可讓你以現有網站範本作為起點建立新的網站範本，幫助你節省時間，而不必從零開始建立網站範本。
 
-要自訂您的網站範本，只需前往其控制台面板並進行所需的變更。您可以建立新文章、頁面、啟用 plugin 以及更換使用中的佈景主題。您甚至可以進入自訂器，變更各種自訂選項。
+![含複製網站切換開關的新增網站範本 modal](/img/config/site-templates-list.png)
+
+### 自訂網站範本的內容 {#customizing-the-contents-of-a-site-template}
+
+若要自訂你的網站範本，只需前往它的 Dashboard 面板並進行你需要的變更。你可以建立新文章、頁面、啟用 plugin，並變更啟用中的 theme。你甚至可以前往自訂器，變更各種自訂選項。
+
+![網站範本編輯介面](/img/config/site-template-edit.png)
 
 當客戶根據該網站範本建立新網站時，所有這些資料都會被複製過去。
 
-### 進階選項
+### 進階選項 {#advanced-options}
 
-如果您熟悉自訂程式碼，可以使用我們的搜尋與取代 API，在新網站建立後自動替換其中的資訊。這對於像是在「關於」頁面替換公司名稱、在「聯絡」頁面替換聯絡 email 等情況非常實用。
+如果你熟悉一些自訂程式碼，可以使用我們的搜尋與取代 API，在新網站建立後自動替換其中的資訊。這對於替換「關於」頁面上的公司名稱、替換「聯絡」頁面上的聯絡電子郵件等情境很有用。
 
-### 使用網站範本
+### 使用網站範本 {#using-site-templates}
 
-好的，假設您已經建立了一系列具有不同設計、佈景主題和設定的網站範本。現在要如何讓它們在您的網路中發揮作用呢？
+好，所以你已經建立了一堆具有不同設計、theme 和設定的網站範本。現在要如何讓它們在你的網路中發揮作用？
 
-基本上，您有兩種方式可以選擇（不能同時使用）：
+基本上，現在你可以使用兩種方法（不可同時使用）：
 
-  * 為每個方案指定一個網站範本
+  * 將一個網站範本附加到你的每個方案
 
-**或者**
+**或**
 
-  * 讓客戶在註冊時自行選擇網站範本。
+  * 允許你的客戶在註冊時自行選擇網站範本。
 
-#### 模式 1：指定網站範本
+#### 模式 1：指定網站範本 {#mode-1-assign-site-template}
 
-在此模式下，客戶在建立帳號時無法選擇範本，而是由您來定義每個方案應該使用哪個範本。
+在此模式中，你的客戶在建立 Account 時將無法選擇範本，而是由你定義每個方案應使用哪個範本。
 
-要執行此操作，請前往 **Ultimate Multisite > Products > Edit**。
+若要這麼做，你需要前往 **Ultimate Multisite > 商品 > 編輯**。
 
-![編輯產品以指定網站範本](/img/config/product-site-templates.png)
+![編輯商品以指定網站範本](/img/config/product-site-templates.png)
 
-這會帶您進入 **Edit Product** 頁面。在 **Product Options** 區塊中，找到 **Site template** 分頁，然後從下拉選單中選擇 **Assign Site Template** 選項。這會顯示可用的網站範本列表，讓您為該產品選擇一個專屬的網站範本。
+這會帶你到**編輯商品**頁面。在**商品選項**區段下，找到**網站範本**分頁，並從下拉欄位中選擇**指定網站範本**選項。這會顯示可用的網站範本清單，並允許你只選擇一個專用於該商品的網站範本。
 
-![產品網站範本分頁，顯示指定網站範本選項](/img/config/product-site-templates.png)
+![含指定網站範本選項的商品網站範本分頁](/img/config/product-site-templates.png)
 
-#### 模式 2：選擇可用的網站範本
+#### 模式 2：選擇可用網站範本 {#mode-2-choose-available-site-template}
 
-在此模式下，您會在註冊過程中讓客戶自行選擇。他們可以從您在產品設定中定義的不同網站範本中進行選擇。您可以限制所選產品下可供選擇的網站範本。這讓您可以為每個產品設定不同的網站範本組合，非常適合用來突顯較高價位產品的不同功能和特色。
+在此模式中，你會在註冊流程中讓客戶選擇。他們將能從你在商品設定下定義的不同網站範本中選取。你可以限制他們在所選商品下可選擇的網站範本。這可讓你在每個商品下擁有不同組合的網站範本，非常適合用來突顯較高價格商品的不同功能與特色。
 
-在 **Edit Product** 頁面的 **Product Options** 區塊中，找到 **Site template** 分頁，然後從下拉選單中選擇 **Choose Available Site Template** 選項。這會顯示可用的網站範本列表，讓您選擇要提供哪些網站範本。您可以透過設定其行為來執行此操作：選擇 **Available** 表示該網站範本會包含在列表中；選擇 _**Not Available**_ 表示該網站範本不會顯示為選項；選擇 **Pre-selected** 表示該網站範本會成為預設選取項目。
+在**編輯商品**頁面。在**商品選項**區段下，找到**網站範本**分頁，並從下拉欄位中選擇**選擇可用網站範本**選項。這會顯示可用的網站範本清單，並允許你選擇希望可供使用的網站範本。你可以透過選擇其行為來完成：如果你希望網站範本包含在清單中，選擇**可用**。如果你希望網站範本不要顯示為選項，選擇 _**不可用**_。如果你希望清單中的某個網站範本成為預設選取項目，則選擇**預先選取**。
 
-![選擇可用的網站範本，顯示行為選項](/img/config/product-site-templates.png)
+![使用行為選項選擇可用網站範本](/img/config/product-site-templates.png)
 
-### 預設模式：在結帳表單上選擇網站範本
+### 預設模式：Checkout 表單上的網站範本選擇 {#default-mode-site-template-selection-on-the-checkout-form}
 
-如果您希望所有網站範本在註冊時都可供選擇，或者不想在每個產品下額外指定網站範本，您可以直接在 **Checkout Form（結帳表單）** 中設定網站範本選擇。只需前往 **Ultimate Multisite > Checkout Forms**，然後在您要設定的表單下方點擊 **Edit**。
+如果你希望所有網站範本在註冊期間都可用，或者不偏好在你建立的每個商品下額外指定或設定網站範本，那麼你可以直接在你的 **Checkout 表單**下設定網站範本選擇。若要這麼做，請前往 **Ultimate Multisite > Checkout 表單**，並在你想設定的表單下點擊**編輯**。
 
-![結帳表單列表頁面](/img/config/checkout-forms-list.png)
+這會顯示**編輯 Checkout 表單**頁面。找到**範本選擇**欄位，並在其下點擊**編輯**。
 
-這會開啟 **Edit Checkout Form** 頁面。找到 **Template Selection** 欄位，並點擊其下方的 **Edit**。
+會出現一個彈出視窗。在 **Template Sites** 欄位下，你可以選取並列出所有希望在註冊期間可用的網站範本。你在此指定的網站範本將會可用，無論使用者選擇了哪個產品。
 
-![結帳表單編輯器，顯示範本選擇欄位](/img/config/checkout-form-editor.png)
+![結帳表單編輯器中的範本選擇欄位](/img/config/checkout-form-template-step.png)
 
-會出現一個彈出視窗。在 **Template Sites** 欄位中，您可以選擇並列出所有希望在註冊時提供的網站範本。無論使用者選擇哪個產品，您在此指定的網站範本都會顯示。
+在前端，客戶會在結帳期間看到範本選擇器，並可為他們的新網站挑選起始設計。
 
-![結帳表單編輯器中的範本網站欄位](/img/config/checkout-form-step.png)
+![註冊期間的前端範本選擇器](/img/config/frontend-template-chooser.png)
 
-### 網站範本選項
+### 網站範本選項 {#site-template-options}
 
-在 Ultimate Multisite 設定中，還有其他網站範本功能可以開啟或關閉。
+在 Ultimate Multisite 設定下，還有其他網站範本功能可供你開啟或關閉。
 
-![Ultimate Multisite 設定中的網站範本選項](/img/config/settings-sites.png)
+![Ultimate Multisite 設定中的網站範本選項](/img/config/settings-sites-templates-section.png)
 
-#### 允許切換範本
+#### 允許切換範本 {#allow-template-switching}
 
-啟用此選項後，客戶可以在帳號和網站建立後，更換他們在註冊時選擇的範本。從客戶的角度來看這非常實用，因為如果他們後來發現原本的選擇不太適合自己的需求，可以重新選擇範本。
+啟用此選項將允許你的客戶在 Account 和網站建立後，切換他們在註冊流程中選擇的範本。從客戶的角度來看，這很有用，因為如果他們後來發現原本的選擇並不是最符合其特定需求的範本，就能重新選擇。
 
-#### 允許使用者將自己的網站作為範本
+#### 允許使用者將自己的網站作為範本使用 {#allow-users-to-use-their-site-as-templates}
 
-由於子網站使用者花費了時間建立和設計自己的網站，他們可能會想要複製它，並在您的網路中建立另一個子網站時將其作為可用的網站範本之一。此選項可以讓他們實現這個目標。
+由於子網站使用者花了時間建立並設計自己的網站，他們可能會想要複製並將其作為在你的網路上建立另一個子網站時可用的網站範本之一。此選項將允許他們達成這一點。
 
-#### 複製範本時一併複製媒體
+#### 範本複製時複製媒體 {#copy-media-on-template-duplication}
 
-勾選此選項會將範本網站上傳的媒體複製到新建立的網站。此設定可以在各個方案中單獨覆寫。
+勾選此選項將把範本網站上傳的媒體複製到新建立的網站。這可以在各個方案中覆寫。
 
-#### **防止搜尋引擎索引網站範本**
+#### **防止搜尋引擎索引網站範本** {#prevent-search-engines-from-indexing-site-templates}
 
-如本文所述，網站範本雖然是樣板，但仍是您網路的一部分，這表示搜尋引擎仍然可以找到它們。此選項可以讓您隱藏網站範本，使搜尋引擎無法索引它們。
+本文所討論的網站範本是樣板內容，但仍然是你網路的一部分，這表示搜尋引擎仍可找到它。此選項將允許你隱藏網站範本，使搜尋引擎無法索引它們。
 
-## 使用自動搜尋與取代預先填入網站範本
+## 使用自動搜尋與取代預先填入網站範本 {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Ultimate Multisite 最強大的功能之一，就是能夠在註冊表單上新增任意的文字、顏色和選擇欄位。擷取到這些資料後，我們可以用它來預先填入所選網站範本中特定部分的內容。然後，當新網站發佈時，Ultimate Multisite 會自動將預留位置替換為註冊時輸入的實際資訊。
+Ultimate Multisite 最強大的功能之一，是能夠在註冊表單上加入任意文字、顏色與選取欄位。一旦我們擷取到該資料，就可以用它預先填入所選網站範本中特定部分的內容。接著，當新網站發佈時，Ultimate Multisite 會將預留位置取代為註冊期間輸入的實際資訊。
 
-例如，如果您希望在註冊時取得終端使用者的公司名稱，並自動將公司名稱放在首頁上。在您的範本網站首頁上，需要加入預留位置，如下圖所示（預留位置應該用雙大括號包住 - {{placeholder_name}}）。
+例如，如果你想在註冊期間取得終端使用者的公司名稱，並自動將公司名稱放到首頁上。你需要在範本網站首頁加入預留位置，如下圖所示（預留位置應以雙大括號包住加入 - {{placeholder_name}}）。
 
-![首頁上用大括號標示的預留位置文字](/img/config/site-templates-list.png)
+![首頁上以大括號包住的預留位置文字](/img/config/site-templates-list.png)
 
-然後，您只需在結帳表單上新增一個對應的註冊欄位來擷取該資料：
+然後，你可以直接在結帳表單上新增一個相符的註冊欄位來擷取該資料。用於範本選擇的同一個結帳表單編輯器，也讓你能將自訂欄位放在範本選擇器旁邊：
 
-![結帳表單上對應的註冊欄位](/img/config/checkout-form-editor.png)
+![結帳表單編輯器中的範本選擇與註冊欄位](/img/config/checkout-form-template-step.png)
 
-您的客戶就可以在註冊時填寫該欄位。
+接著，你的客戶就能在註冊期間填寫該欄位。
 
-![客戶填寫的註冊欄位](/img/config/checkout-form-step.png)
+![含範本選擇器的前端結帳表單](/img/config/frontend-template-chooser.png)
 
-![註冊表單預覽](/img/config/checkout-form-editor.png)
+Ultimate Multisite 接著會自動以客戶提供的資料取代預留位置。
 
-Ultimate Multisite 會自動將預留位置替換為客戶提供的資料。
+![網站上以客戶資料取代的預留位置](/img/config/site-templates-list.png)
 
-![網站上的預留位置已替換為客戶資料](/img/config/site-templates-list.png)
+### 解決「充滿預留位置的範本」問題 {#solving-the-template-full-of-placeholders-problem}
 
-### 解決「範本充滿預留位置」的問題
+這一切都很棒，但我們確實會遇到一個不美觀的問題：現在我們的網站範本——也就是可被客戶造訪的範本——充滿了不美觀且資訊量不大的預留位置。
 
-以上這些都很棒，但我們確實會遇到一個不太美觀的問題：現在我們的網站範本——客戶可以瀏覽的——充滿了看起來不太友善的預留位置，無法傳達什麼資訊。
+為了解決這個問題，我們提供為預留位置設定假值的選項，並在客戶造訪範本網站時，使用這些值搜尋並取代其中的內容。
 
-為了解決這個問題，我們提供了為預留位置設定假值的選項，當您的客戶瀏覽範本網站時，我們會使用這些值來搜尋並替換其內容。
+你可以前往 **Ultimate Multisite > Settings > Sites**，然後在側邊欄點擊 **Edit Placeholders** 連結，以存取範本預留位置編輯器。
 
-您可以前往 **Ultimate Multisite > Settings > Sites** 存取範本預留位置編輯器，然後在側邊欄中點擊 **Edit Placeholders** 連結。
+![Sites 設定頁面下的網站範本設定](/img/config/settings-sites-templates-section.png)
 
-![Sites 設定頁面下的預留位置設定](/img/config/settings-sites.png)
+這會帶你前往預留位置內容編輯器，你可以在其中新增預留位置及其對應內容。
 
-這會帶您進入預留位置內容編輯器，您可以在此新增預留位置及其對應的內容。
-
-![範本預留位置內容編輯器](/img/config/settings-sites.png)
+![範本預留位置內容編輯器入口](/img/config/settings-sites-templates-section.png)

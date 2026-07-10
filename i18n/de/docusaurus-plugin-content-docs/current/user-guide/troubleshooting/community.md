@@ -1,40 +1,40 @@
 ---
 title: Community
 sidebar_position: 9
-_i18n_hash: 8fc30c38fc7c143dc911f341ceb8d547
+_i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# How to join Ultimate Multisite Community
+# So trittst du der Ultimate Multisite Community bei {#how-to-join-ultimate-multisite-community}
 
-Ultimate Multisite Community ist ein Raum, in dem Sie mit anderen Ultimate Multisite‑Benutzern in Kontakt treten und Tipps, Erfahrungen und mehr teilen können. Um auf Ultimate Multisite Community zuzugreifen, gehen Sie zu https://community.ultimatemultisite.com/home.
+Ultimate Multisite Community ist ein Ort, an dem du mit anderen Ultimate Multisite-Benutzern in Kontakt treten und Tipps, Erfahrungen und mehr teilen kannst. Um auf Ultimate Multisite Community zuzugreifen, gehe zu https://community.ultimatemultisite.com/home.
 
-Auf der Willkommensseite gehen Sie zum Link „**Ihr Konto hier erstellen**“.
+Gehe auf der Willkommensseite zum Link „**hier dein Account erstellen** ”.
 
-<!-- Screenshot unavailable: Community welcome page with creating your account link -->
+<!-- Screenshot nicht verfügbar: Community-Willkommensseite mit Link zum Erstellen deines Account -->
 
-Sie werden zu unserer Registrierungsseite weitergeleitet. Jetzt müssen Sie einen Benutzernamen, Ihre E‑Mail und ein Passwort eingeben. Führen Sie die Captcha aus und klicken Sie auf die Schaltfläche **Register**.
+Du wirst zu unserer Registrierungsseite weitergeleitet. Jetzt musst du einen Benutzernamen, deine E-Mail-Adresse und ein Passwort eingeben. Löse das Captcha und klicke auf die Schaltfläche **Registrieren**.
 
-<!-- Screenshot unavailable: Community register page with username, email, password fields and Captcha -->
+<!-- Screenshot nicht verfügbar: Community-Registrierungsseite mit Feldern für Benutzername, E-Mail, Passwort und Captcha -->
 
-Nach der Registrierung ist es Zeit, Ihr Profil zu erstellen. Auf dieser Seite können Sie Ihr Foto hochladen, Ihren vollständigen Namen eingeben, eine kleine Biografie schreiben und so weiter. Außerdem fügen Sie Ihre Social‑Media‑Links hinzu und legen Berechtigungen für Ihr Konto fest.
+Nach der Registrierung ist es Zeit, dein Profil zu erstellen. Auf dieser Seite kannst du dein Foto hochladen, deinen vollständigen Namen eingeben, eine kurze Bio schreiben und so weiter. Füge außerdem deine Social-Media-Links hinzu und lege Berechtigungen für deinen Account fest.
 
-<!-- Screenshot unavailable: Community profile creation page with photo upload and bio fields -->
+<!-- Screenshot nicht verfügbar: Community-Seite zur Profilerstellung mit Foto-Upload- und Bio-Feldern -->
 
-Jetzt befinden Sie sich im Kanal „Introductions“, wo Sie sich vorstellen und ein wenig über andere Mitglieder erfahren können. Sie können Ihren Beitrag erstellen, indem Sie auf die Schaltfläche **New Post** klicken.
+Jetzt bist du im Kanal „Vorstellungen“, wo du dich vorstellen und ein wenig über andere Mitglieder erfahren kannst. Du kannst deinen Beitrag erstellen, indem du auf die Schaltfläche **Neuer Beitrag** klickst.
 
-<!-- Screenshot unavailable: Community Introductions channel with New Post button -->
+<!-- Screenshot nicht verfügbar: Community-Kanal „Vorstellungen“ mit Schaltfläche „Neuer Beitrag“ -->
 
-Kanäle im Lounge‑Bereich und im Kanal „Dev Logs“ sind für alle offen. Um jedoch andere Kanäle in der Community zu betreten, benötigen Sie eine spezielle Berechtigung.
+Kanäle im Lounge-Bereich und der Kanal „Dev Logs“ sind für alle offen. Du benötigst jedoch eine spezielle Berechtigung, um auf andere Kanäle in der Community zuzugreifen.
 
-<!-- Screenshot unavailable: Community channels showing Lounge section and Dev Logs channel -->
+<!-- Screenshot nicht verfügbar: Community-Kanäle mit Lounge-Bereich und Dev Logs-Kanal -->
 
-Dieser Zugriff wird gewährt, sobald Sie uns Ihren aktiven Ultimate Multisite‑Lizenzschlüssel zur Verfügung stellen. Dazu klicken Sie auf einen privaten Kanal-Link und anschließend auf die Schaltfläche **Unlock**.
+Dieser Zugriff wird gewährt, sobald du uns deinen aktiven Ultimate Multisite-Lizenzschlüssel bereitstellst. Klicke dazu auf einen beliebigen Link zu einem privaten Kanal und dann auf die Schaltfläche **Freischalten**.
 
-<!-- Screenshot unavailable: Community private channel with Unlock button -->
+<!-- Screenshot nicht verfügbar: Privater Community-Kanal mit Schaltfläche „Freischalten“ -->
 
-Sie werden zu unserer Seite zum Entsperren des Zugriffs weitergeleitet. Geben Sie Ihren Ultimate Multisite‑Lizenzschlüssel ein und klicken Sie auf die Schaltfläche Unlock Access:
+Du wirst zu unserer Seite zum Freischalten des Zugriffs weitergeleitet. Gib deinen Ultimate Multisite-Lizenzschlüssel ein und klicke auf die Schaltfläche Zugriff freischalten:
 
-<!-- Screenshot unavailable: Community unlock access page with license key input -->
+<!-- Screenshot nicht verfügbar: Community-Seite zum Freischalten des Zugriffs mit Eingabefeld für Lizenzschlüssel -->
 
-Ihre Lizenz wird validiert und Sie können auf private Kanäle zugreifen. Dieser Vorgang kann bis zu 24 Stunden dauern, also klicken Sie auf den Link, um zur Community zurückzukehren und die anderen Bereiche zu genießen, während wir Ihre Anfrage bearbeiten.
+Deine Lizenz wird validiert und du kannst auf private Kanäle zugreifen. Dieser Vorgang kann bis zu 24 Stunden dauern. Klicke daher auf den Link, um zur Community zurückzukehren, und genieße die anderen Bereiche, während wir deine Anfrage bearbeiten.
 
-<!-- Screenshot unavailable: Community license validation confirmation page -->
+<!-- Screenshot nicht verfügbar: Community-Bestätigungsseite zur Lizenzvalidierung -->

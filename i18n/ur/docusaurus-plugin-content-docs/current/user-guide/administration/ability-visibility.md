@@ -3,11 +3,11 @@ title: صلاحیت کی مرئیت
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# قابلیت کی ظاہری حیثیت (Ability Visibility)
+# قابلیت کی ظاہری حیثیت (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Ability Visibility)** کنٹرولز متعارف کرائے ہیں جو یہ طے کرتے ہیں کہ کون سی خصوصیت (ability) کن-کن جگہوں پر ظاہر ہوگی۔ اس سے ایڈمنسٹریٹرز کو یہ بہتر طریقے سے ایڈجسٹ کرنے کی اجازت ملتی ہے کہ کون سی ایجنٹ کی صلاحیتیں REST APIs، MCP سرورز، WooCommerce انٹیگریشنز، اور دیگر انٹرفیسز کے ذریعے دستیاب ہوں گی۔
 
-## قابلیت کی ظاہری حیثیت کیا ہے؟
+## قابلیت کی ظاہری حیثیت کیا ہے؟ {#what-is-ability-visibility}
 
 قابلیت کی ظاہری حیثیت ایک اجازت کا نظام ہے جو کن چیزوں کو کنٹرول کرتا ہے:
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 
 ہر صلاحیت کے ساتھ ایک ظاہری سطح (visibility level) منسلک ہوتی ہے جو مختلف جگہوں پر اس کی دستیابی کا تعین کرتی ہے۔
 
-## ظاہری سطحیں (Visibility Levels)
+## ظاہری سطحیں (Visibility Levels) {#visibility-levels}
 
-### پبلک (Public)
+### پبلک (Public) {#public}
 
 **پبلک صلاحیتیں** ہر جگہ دستیاب ہوتی ہیں:
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 
 مثال: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### انٹرنل (Internal)
+### انٹرنل (Internal) {#internal}
 
 **انٹرنل صلاحیتیں** صرف آپ کی WordPress انسٹالیشن کے اندر دستیاب ہوتی ہیں:
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 
 مثال: `manage-settings`, `view-analytics`, `export-data`
 
-### پارٹنر (Partner)
+### پارٹنر (Partner) {#partner}
 
 **پارٹنر صلاحیتیں** صرف ان پارٹنرز کو دستیاب ہوتی ہیں جنہیں وائٹ لسٹ کیا گیا ہے:
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 
 مثال: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### غیر فعال (Disabled)
+### غیر فعال (Disabled) {#disabled}
 
 **غیر فعال صلاحیتیں** کہیں بھی دستیاب نہیں ہوتیں:
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 - ایڈمن پینلز میں دستیاب نہیں
 - پرانے یا تجرباتی صلاحیتوں کے لیے مفید
 
-## قابلیت کی ظاہری حیثیت کو منظم کرنا (Managing Ability Visibility)
+## قابلیت کی ظاہری حیثیت کو منظم کرنا (Managing Ability Visibility) {#managing-ability-visibility}
 
-### قابلیت کی ظاہری حیثیت کی سیٹنگز تک رسائی
+### قابلیت کی ظاہری حیثیت کی سیٹنگز تک رسائی {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** پر جائیں
 2. **Abilities** ٹیب پر کلک کریں
 3. آپ کو تمام انسٹال شدہ صلاحیتوں کی ایک فہرست نظر آئے گی جن کے ساتھ ان کی ظاہری سطح بھی درج ہوگی
 
-### قابلیت کی تفصیلات دیکھنا
+### قابلیت کی تفصیلات دیکھنا {#viewing-ability-details}
 
 کسی بھی قابلیت پر کلک کرنے سے آپ دیکھ سکتے ہیں:
 
@@ -82,7 +82,7 @@ Superdav AI Agent v1.12.0 نے **قابلیت کی ظاہری حیثیت (Abilit
 - **Last updated**: جب ظاہری حیثیت آخری بار تبدیل کی گئی تھی
 - **Status**: شناخته گئی (Recognized) یا غیر شناخته گئی (Unclassified)
 
-### ظاہری سطحیں تبدیل کرنا
+### ظاہری سطحیں تبدیل کرنا {#changing-visibility-levels}
 
 کسی قابلیت کی ظاہری سطح تبدیل کرنے کے لیے:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### بلک آپریشنز (Bulk Operations)
+### بلک آپریشنز (Bulk Operations) {#bulk-operations}
 
 متعدد صلاحیتوں کے لیے ظاہری حیثیت تبدیل کرنے کے لیے:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. بلک ایکشن ڈراپ ڈاؤن سے ایک نئی ظاہری سطح منتخب کریں
 3. **Apply** پر کلک کریں
 
-## پارٹنر کی اجازت والی فہرست (Partner Allow-List)
+## پارٹنر کی اجازت والی فہرست (Partner Allow-List) {#partner-allow-list}
 
 **پارٹنر کی اجازت والی فہرست** یہ کنٹرول کرتی ہے کہ کون سے بیرونی پارٹنرز پارٹنر-level کی صلاحیتوں تک رسائی حاصل کر سکتے ہیں۔
 
-### پارٹنرز شامل کرنا
+### پارٹنرز شامل کرنا {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** پر جائیں
 2. **Add Partner** پر کلک کریں
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. اختیاری طور پر ایک پارٹنر کا نام اور تفصیل شامل کریں
 5. **Save** پر کلک کریں
 
-### پارٹنرز کو صلاحیتیں تفویض کرنا
+### پارٹنرز کو صلاحیتیں تفویض کرنا {#assigning-abilities-to-partners}
 
 ایک پارٹنر شامل کرنے کے بعد:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. "Partner allow-list" سیکشن میں، ان پارٹنرز کے لیے باکسز چیک کریں جنہیں رسائی ہونی چاہیے۔
 5. **Save** پر کلک کریں
 
-### پارٹنر کی رسائی واپس لینا (Revoking Partner Access)
+### پارٹنر کی رسائی واپس لینا (Revoking Partner Access) {#revoking-partner-access}
 
 کسی پارٹنر کی رسائی ہٹانے کے لیے:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 پارٹنر کو فوری طور پر اس صلاحیت تک رسائی سے محروم کر دیا جائے گا۔
 
-## غیر شناخته گئی صلاحیتیں (Unclassified Abilities)
+## غیر شناخته گئی صلاحیتیں (Unclassified Abilities) {#unclassified-abilities}
 
 جب آپ کوئی تھرڈ پارٹی صلاحیت انسٹال کرتے ہیں جسے Superdav AI Agent نہیں پہچانتا، تو اسے **Unclassified** کے طور پر نشان زد کیا جاتا ہے۔
 
-### غیر شناخته گئی صلاحیتوں کے لیے ایڈمن نوٹس
+### غیر شناخته گئی صلاحیتوں کے لیے ایڈمن نوٹس {#admin-notice-for-unclassified-abilities}
 
 آپ کو ایک ایڈمن نوٹس نظر آئے گا:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### غیر شناخته گئی صلاحیتوں کا جائزہ لینا
+### غیر شناخته گئی صلاحیتوں کا جائزہ لینا {#reviewing-unclassified-abilities}
 
 1. نوٹس میں **Review Abilities** پر کلک کریں
 2. ہر غیر شناخته گئی صلاحیت کے لیے، آپ کو یہ نظر آئے گا:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. اپنا فیصلہ محفوظ کرنے کے لیے **Classify** پر کلک کریں
 
-### غیر شناخته گئی صلاحیتوں کو درجہ بندی کیوں کریں؟
+### غیر شناخته گئی صلاحیتوں کو درجہ بندی کیوں کریں؟ {#why-classify-unclassified-abilities}
 
 صلاحیتوں کو درجہ بندی کرنے سے:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **خصوصیات کو فعال بنانا**: ایک بار درجہ بندی ہونے کے بعد، صلاحیت دستیاب ہو جاتی ہے
 - **فیصلوں کی دستاویز بندی**: آپ کے انتخاب آڈٹ کے مقاصد کے لیے ریکارڈ کیے جاتے ہیں
 
-## مختلف سطحوں پر ظاہری حیثیت (Visibility in Different Surfaces)
+## مختلف سطحوں پر ظاہری حیثیت (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **پبلک صلاحیتیں** REST endpoints کے ذریعے دستیاب ہوتی ہیں:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **انٹرنل اور پارٹنر صلاحیتیں** REST API کے ذریعے دستیاب نہیں ہوتی ہیں۔
 
-### MCP سرورز
+### MCP سرورز {#mcp-servers}
 
 **پبلک صلاحیتیں** MCP کے ذریعے دستیاب ہوتی ہیں:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **پارٹنر صلاحیتیں** صرف پارٹنر کی credentials کے ساتھ دستیاب ہوتی ہیں۔
 
-### WooCommerce انٹیگریشن
+### WooCommerce انٹیگریشن {#woocommerce-integration}
 
 WooCommerce سے متعلق **پبلک صلاحیتیں** دستیاب ہوتی ہیں:
 
@@ -227,7 +227,7 @@ WooCommerce سے متعلق **پبلک صلاحیتیں** دستیاب ہوتی 
 
 **انٹرنل صلاحیتیں** WooCommerce کے لیے ظاہر نہیں ہوتی ہیں۔
 
-### چیٹ انٹرفیس (Chat Interface)
+### چیٹ انٹرفیس (Chat Interface) {#chat-interface}
 
 **تمام صلاحیتیں** (پبلک، انٹرنل، پارٹنر) چیٹ میں دستیاب ہوتی ہیں، جو صارف کی اجازتوں پر منحصر ہے:
 
@@ -235,34 +235,34 @@ WooCommerce سے متعلق **پبلک صلاحیتیں** دستیاب ہوتی 
 - عام صارفین صرف پبلک صلاحیتیں دیکھتے ہیں
 - پارٹنرز پبلک + پارٹنر صلاحیتیں دیکھتے ہیں (اگر وائٹ لسٹ کیے گئے ہوں)
 
-## سیکیورٹی کی بہترین پریکٹسز (Security Best Practices)
+## سیکیورٹی کی بہترین پریکٹسز (Security Best Practices) {#security-best-practices}
 
-### کم سے کم سہولت کا اصول (Principle of Least Privilege)
+### کم سے کم سہولت کا اصول (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - صلاحیتوں کو سب سے زیادہ پابند ظاہری حیثیت پر سیٹ کریں جو ان کے استعمال کی اجازت دے
 - حساس آپریشنز کے لیے پارٹنر ظاہری حیثیت استعمال کریں
 - ان صلاحیتوں کو غیر فعال کریں جنہیں آپ استعمال نہیں کرتے
 
-### باقاعدہ آڈٹ (Regular Audits)
+### باقاعدہ آڈٹ (Regular Audits) {#regular-audits}
 
 - ماہانہ طور پر قابلیت کی ظاہری حیثیت کا جائزہ لیں
 - غیر شناخته گئی صلاحیتوں کی جانچ کریں
 - غیر استعمال ہونے والے پارٹنرز کے لیے رسائی ختم کریں
 
-### لاگنگ اور نگرانی (Logging and Monitoring)
+### لاگنگ اور نگرانی (Logging and Monitoring) {#logging-and-monitoring}
 
 - نگرانی کریں کہ کون سی صلاحیتیں سب سے زیادہ استعمال ہوتی ہیں
 - پارٹنر کی رسائی کے پیٹرن ٹریک کریں
 - غیر معمولی صلاحیت کے استعمال پر الرٹ کریں
 
-### تھرڈ پارٹی صلاحیتیں (Third-Party Abilities)
+### تھرڈ پارٹی صلاحیتیں (Third-Party Abilities) {#third-party-abilities}
 
 - فعال کرنے سے پہلے تھرڈ پارٹی صلاحیتوں کا جائزہ لیں
 - انہیں واضح طور پر درجہ بندی کریں
 - انٹرنل یا پارٹنر ظاہری حیثیت سے آغاز کریں
 - صرف جانچ پڑتال کے بعد پبلک پر فروغ دیں
 
-## مسائل کا حل (Troubleshooting)
+## مسائل کا حل (Troubleshooting) {#troubleshooting}
 
 **اگر فہرست میں کوئی صلاحیت نظر نہیں آ رہی**
 - تصدیق کریں کہ صلاحیت انسٹال اور فعال ہے
@@ -285,7 +285,7 @@ WooCommerce سے متعلق **پبلک صلاحیتیں** دستیاب ہوتی 
 - چیک کریں کہ آپ کی درجہ بندی محفوظ ہو گئی ہے
 - تصدیق کریں کہ صلاحیت فراہم کرنے والا پلگ ان اپ ٹو ڈیٹ ہے
 
-## لیگیسی موڈ سے ہجرت (Migration from Legacy Mode)
+## لیگیسی موڈ سے ہجرت (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 اگر آپ Superdav AI Agent کے پرانے ورژن سے اپ گریڈ کر رہے ہیں:
 
@@ -295,7 +295,7 @@ WooCommerce سے متعلق **پبلک صلاحیتیں** دستیاب ہوتی 
 
 مزید تفصیلات کے لیے **Third-Party Mode Migration** دیکھیں۔
 
-## اگلے اقدامات (Next Steps)
+## اگلے اقدامات (Next Steps) {#next-steps}
 
 قابلیت کی ظاہری حیثیت کو ترتیب دینے کے بعد:
 

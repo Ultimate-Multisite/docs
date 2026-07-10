@@ -4,11 +4,11 @@ title: アクション - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# アクション: wu_mcp_abilities_registered
+# アクション: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 エンティティに対してMCP 能力が登録された後に発火します。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | モデル名です。 |
 | $this | `object` | マネージャーインスタンスです。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.5.0
 
-### ソース
+### ソース {#source}
 
 定義されている [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) 行171で

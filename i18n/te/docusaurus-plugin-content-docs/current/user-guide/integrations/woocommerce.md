@@ -3,7 +3,7 @@ title: WooCommerce ఇంటిగ్రేషన్
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# WooCommerce ఇంటిగ్రేషన్
+# WooCommerce ఇంటిగ్రేషన్ {#woocommerce-integration}
 
 ఈ ఫీచర్ **WooCommerce Integration** యాడ్-ఆన్ ద్వారా అందించబడుతుంది.
 

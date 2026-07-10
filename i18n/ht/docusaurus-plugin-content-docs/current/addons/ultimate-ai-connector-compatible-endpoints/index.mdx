@@ -1,0 +1,111 @@
+---
+title: Konektè AI Ultim pou Endpoint Konpatib
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector for Compatible Endpoints entegre API founisè AI ki konpatib ak OpenAI ak rezo WordPress multisite ou a. Konfigure plizyè founisè AI — chak ak pwòp URL endpoint li, kle API li, ak modèl default li — epi dirije demann yo ak fallback otomatik lè yon founisè pa disponib.
+
+## Fonksyonalite Kle {#key-features}
+
+- **Sipò pou plizyè founisè**: Ajoute plizyè kat founisè AI, chak ak pwòp URL endpoint li, kle API li, ak modèl default li
+- **Trennen pou reòdone**: Ranje founisè yo selon priyorite avèk manch priz ki sou chak kat; demann yo itilize founisè yo nan lòd
+- **Wout fallback otomatik**: Si founisè prensipal la pa disponib, demann yo otomatikman fè fallback sou pwochen founisè ki konfigure a
+- **Konfigirasyon pa founisè**: Chak founisè konfigure endepandamman ak pwòp enfòmasyon idantifikasyon li ak seleksyon modèl li
+- **UI paramèt ki baze sou kat**: Bati sou konpozan Card WordPress 6.9+ ki estab (CardBody, CardHeader, CardDivider)
+- **Elaji otomatikman lè ajoute**: Nouvo kat founisè yo elaji otomatikman pou ou ka ranpli detay yo touswit
+- **Anilasyon cache script**: Script founisè yo anile nan cache lè plugin nan mete ajou pou asire dènye vèsyon an chaje
+
+## Kondisyon {#requirements}
+
+- WordPress 5.3 oswa pi wo
+- PHP 7.4 oswa pi wo
+- Plugin Ultimate Multisite (aktif)
+- Yon endpoint API ki konpatib ak OpenAI (sou pwòp sèvè ou oswa twazyèm pati)
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye addon yo nan repèrtwa `/wp-content/plugins/` ou a
+2. Aktive plugin nan atravè meni 'Plugins' nan WordPress
+3. Ale nan **Ultimate Multisite → AI Connector** pou konfigure addon nan
+
+## Konfigirasyon {#configuration}
+
+### Konfigirasyon Plizyè Founisè {#multi-provider-setup}
+
+Ekran konfigirasyon an itilize yon aranjman ki baze sou kat kote chak kat reprezante yon founisè AI. Ou ka ajoute otan founisè ou bezwen.
+
+#### Ajoute yon Founisè {#adding-a-provider}
+
+1. Ale nan **Ultimate Multisite → AI Connector** nan administrasyon rezo a
+2. Klike **Ajoute Founisè**
+3. Yon nouvo kat founisè parèt epi li elaji otomatikman
+4. Ranpli detay founisè a:
+   - **Non Founisè** — yon etikèt pou idantifye founisè sa a (pa egzanp "OpenAI", "Mistral", "Local Ollama")
+   - **URL Endpoint** — URL baz API ki konpatib ak OpenAI la (pa egzanp `https://api.openai.com/v1`)
+   - **Kle API** — kle API ou pou founisè sa a
+   - **Modèl Default** — idantifyan modèl pou itilize pa default pou founisè sa a (pa egzanp `gpt-4o`, `mistral-small`)
+5. Klike **Sove Paramèt**
+
+#### Retire yon Founisè {#removing-a-provider}
+
+Klike bouton **Retire** a sou nenpòt kat founisè pou efase li. Sove paramèt yo pou aplike chanjman an.
+
+#### Reòdone Founisè yo {#reordering-providers}
+
+Trennen ikòn priz la (⣿) sou bò goch nenpòt kat founisè pou reòdone li. Lòd la detèmine priyorite fallback: demann yo voye bay premye founisè a epi yo fè fallback sou founisè ki vin apre yo si yon demann echwe.
+
+### Wout Fallback {#fallback-routing}
+
+Lè yon demann bay founisè prensipal la echwe — akoz yon timeout, limit pousantaj, oswa pann sèvis — connector a otomatikman reeseye ak pwochen founisè ki nan lis la. Sa kontinye desann lis la jiskaske yon founisè reyisi oswa tout founisè yo fin eseye.
+
+| Senaryo | Konpòtman |
+|----------|-----------|
+| Founisè prensipal la reponn | Demann nan sèvi nòmalman |
+| Founisè prensipal la echwe | Demann nan reeseye ak pwochen founisè a |
+| Tout founisè yo echwe | Erè retounen bay moun ki rele a |
+
+Fallback la transparan pou plugin oswa theme k ap rele a — yo resevwa swa yon repons ki reyisi oswa yon erè final, kèlkeswa kantite founisè yo te eseye.
+
+### Referans Konfigirasyon Founisè {#provider-configuration-reference}
+
+| Chan | Obligatwa | Deskripsyon |
+|-------|----------|-------------|
+| Non Founisè | Wi | Etikèt afichaj pou founisè sa a |
+| URL Endpoint | Wi | URL baz API ki konpatib ak OpenAI la |
+| Kle API | Wi | Kle otantifikasyon pou founisè sa a |
+| Modèl Default | Wi | Idantifyan modèl yo itilize lè pa gen okenn modèl ki presize nan demann nan |
+
+## Depanaj {#troubleshooting}
+
+### Pa gen okenn founisè ki nan lis {#no-providers-are-listed}
+
+Si lis founisè a vid apre sove, konfime ke:
+
+- Ou te klike **Sove Paramèt** apre ou te ajoute founisè yo
+- Navigatè ou a pa t bloke paj paramèt la pou sove (tcheke konsole navigatè a pou erè JavaScript)
+- Plugin nan aktif epi ou sou ekran administrasyon rezo a
+
+### Demann yo ap echwe pou tout founisè yo {#requests-are-failing-for-all-providers}
+
+- Verifye URL endpoint chak founisè ka jwenn aksè depi sèvè ou a (pa sèlman depi navigatè ou a)
+- Tcheke ke chak kle API valab epi li poko ekspire
+- Revize estati limit pousantaj ak kota founisè a nan dashboard yo
+- Aktive anrejistreman debug WordPress (`WP_DEBUG_LOG`) pou kaptire mesaj erè detaye ki soti nan connector a
+
+### Yo pa itilize yon founisè pou fallback {#a-provider-is-not-being-used-for-fallback}
+
+Trennen pou reòdone chanje lòd fallback la. Konfime founisè ou espere resevwa demann fallback yo byen plase nan lis la epi URL endpoint li ak kle API li kòrèk.
+
+### Nouvo kat founisè a pa elaji otomatikman {#new-provider-card-does-not-expand-automatically}
+
+Elajisman otomatik mande pou JavaScript aktive nan navigatè ou a. Si kat la pa elaji lè ou klike, tcheke konsole navigatè a pou erè. Kontni kat la toujou aksesib lè ou klike antèt kat la menm si elajisman otomatik la pa deklanche.
+
+## Changelog {#changelog}
+
+Gade [Changelog](./changelog) pou istwa vèsyon konplè a.

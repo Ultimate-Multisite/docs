@@ -3,32 +3,32 @@ title: 'Lição 3: Configurando Sua Rede'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Lição 3: Configurando Sua Rede
+# Lição 3: Configurando Sua Rede {#lesson-3-setting-up-your-network}
 
 É hora de construir. Nesta lição, você instalará o Ultimate Multisite e configurará a base da rede FitSite. Cada decisão aqui é tomada pensando no nicho fitness.
 
-## Onde Paramos
+## Onde Paramos {#where-we-left-off}
 
 Escolhemos estúdios de fitness como nosso nicho e validamos a oportunidade. Agora, transformamos essa ideia em uma plataforma funcional.
 
-## Escolhendo Sua Hospedagem
+## Escolhendo Sua Hospedagem {#choosing-your-hosting}
 
 Sua escolha de hospedagem é mais importante para uma plataforma de nicho do que para um site único. Você não está hospedando um site — você está hospedando uma rede que crescerá para dezenas ou centenas de sites.
 
-### O Que Procurar
+### O Que Procurar {#what-to-look-for}
 
 - **Suporte a WordPress Multisite**: Nem todos os hosts lidam bem com multisite
 - **SSL Wildcard**: Essencial para redes baseadas em subdomínios
 - **Recursos Escaláveis**: Você precisa de espaço para crescer sem precisar migrar
 - **Integração Ultimate Multisite**: Mapeamento automático de domínio e SSL economizam um esforço operacional significativo
 
-### Abordagem Recomendada
+### Abordagem Recomendada {#recommended-approach}
 
 Escolha um host da lista de [Provedores Compatíveis](/user-guide/host-integrations/closte). Eles foram testados com o Ultimate Multisite e fornecem as integrações que você precisa para mapeamento de domínio e automação de SSL.
 
 Para o FitSite, usaremos uma configuração de subdomínio. Isso significa que os sites dos clientes aparecerão inicialmente como `nomedostudio.fitsite.com` antes que eles mapeiem seu próprio domínio, se desejarem.
 
-## Instalando o WordPress Multisite
+## Instalando o WordPress Multisite {#installing-wordpress-multisite}
 
 Se você ainda não tem uma instalação de WordPress Multisite:
 
@@ -40,7 +40,7 @@ Se você ainda não tem uma instalação de WordPress Multisite:
 Subdomínios dão a cada site do cliente um endereço distinto (`studio.fitsite.com`) em vez de um caminho (`fitsite.com/studio`). Isso é mais profissional para seus clientes e evita conflitos de permalink. Veja [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) para uma comparação detalhada.
 :::
 
-## Instalando o Ultimate Multisite
+## Instalando o Ultimate Multisite {#installing-ultimate-multisite}
 
 Siga o guia [Instalando o Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) para:
 
@@ -53,11 +53,11 @@ Durante o setup wizard, mantenha o nicho FitSite em mente:
 - **Nome da empresa**: "FitSite" (ou o nome de marca escolhido)
 - **Logo da empresa**: Faça o upload do logo da sua marca — ele aparecerá em faturas e e-mails
 
-## Configurando para o Nicho Fitness
+## Configurando para o Nicho Fitness {#configuring-for-the-fitness-niche}
 
 Com o Ultimate Multisite instalado, faça estas escolhas de configuração específicas do nicho:
 
-### Configurações Gerais
+### Configurações Gerais {#general-settings}
 
 Navegue até **Ultimate Multisite > Settings** e configure:
 
@@ -65,7 +65,7 @@ Navegue até **Ultimate Multisite > Settings** e configure:
 - **Default role**: Administrator — os donos de estúdios de fitness precisam de controle total sobre o conteúdo do site
 - **Registration**: Ative o registro de usuários para que os donos dos estúdios possam se cadastrar sozinhos
 
-### Configuração de E-mail
+### Configuração de E-mail {#email-configuration}
 
 Os e-mails do seu sistema devem falar a língua do seu nicho. Navegue até **Ultimate Multisite > Settings > Emails** e personalize:
 
@@ -75,7 +75,7 @@ Os e-mails do seu sistema devem falar a língua do seu nicho. Navegue até **Ult
 
 Vamos refinar isso mais na Lição 8 (Onboarding do Cliente), mas definir o tom agora garante que até os primeiros cadastros de teste pareçam específicos do nicho.
 
-### Configuração de Domínio
+### Configuração de Domínio {#domain-configuration}
 
 Se estiver usando um provedor de hospedagem compatível, configure o mapeamento de domínio agora:
 
@@ -85,7 +85,7 @@ Se estiver usando um provedor de hospedagem compatível, configure o mapeamento 
 
 Isso garante que, quando começarmos a criar templates e sites de teste na próxima lição, tudo funcione do início ao fim.
 
-## A Rede FitSite Até Agora
+## A Rede FitSite Até Agora {#the-fitsite-network-so-far}
 
 Ao final desta lição, é isto que você tem:
 
@@ -99,7 +99,7 @@ Rede FitSite
 └── Pronto para templates de site (próxima lição)
 ```
 
-## O Que Construímos Nesta Lição
+## O Que Construímos Nesta Lição {#what-we-built-this-lesson}
 
 - **Uma instalação funcional de WordPress Multisite** em modo de subdomínio
 - **Ultimate Multisite instalado** e configurado com a marca FitSite

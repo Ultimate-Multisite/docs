@@ -4,19 +4,19 @@ title: Action - wu_enqueue_extra_hooks
 sidebar_label: wu_enqueue_extra_hooks
 _i18n_hash: fe7528d9360f9d15fb6f11325ba034f7
 ---
-# Action: wu_enqueue_extra_hooks
+# Action: wu_enqueue_extra_hooks {#action-wuenqueueextrahooks}
 
 Plugin geliştiricilerinin ek hook'lar eklemesine olanak tanır.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | İsim | Tip | Açıklama |
 |------|------|-------------|
 | $page_hook | `string\|\WP_Ultimo_Site_Exporter\Admin_Pages\Base_Admin_Page` | Bu sayfaya oluşturulan hook. |
 
-### Ne Zaman
+### Ne Zaman {#since}
 
 - 1.8.2
-### Kaynak
+### Kaynak {#source}
 
 [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/admin-pages/class-base-admin-page.php#L614) dosyasının 614. satırında tanımlanmıştır.

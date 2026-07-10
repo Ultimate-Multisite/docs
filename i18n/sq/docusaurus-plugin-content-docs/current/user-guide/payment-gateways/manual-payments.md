@@ -1,46 +1,46 @@
 ---
 title: Konfigurimi i pagesave manuale
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Konfigurimi i Pagime Manuale (v2)
+# Konfigurimi i pagesave manuale (v2) {#setting-up-manual-payments-v2}
 
-_**SHËNJE E RËNDË: Ky artikull i referohet Ultimate Multisite version 2.x.**_
+_**SHËNIM I RËNDËSISHËM: Ky artikull i referohet Ultimate Multisite versionit 2.x.**_
 
-Pagimet manual janë një mënyrë për t'u ofruar metoda të pagimeshve të tjera nëse **Stripe** ose **PayPal** nuk janë të disponueshme për përdoruesit tuaj. Mund të jetë transferi i parave (wire) ose bankar, ose ndonjë metodë tjetër që është e disponueshme për përdoruesit tuaj lokal.
+Pagesat manuale janë një mënyrë që ju të ofroni metoda të tjera pagese nëse **Stripe** ose **PayPal** nuk janë të disponueshme për përdoruesit tuaj. Mund të jetë një transfertë bankare ose çdo metodë tjetër pagese e disponueshme lokalisht për përdoruesit tuaj.
 
-## Si të aktivizoni Pagimet Manuale
+## Si të aktivizoni pagesat manuale {#how-to-enable-manual-payments}
 
-Konfigurimi i pagimes manuale është shumë i thjeshtë. Ju duhet thjesht ta keni aktivizuar nën Payment Gateways dhe të vendosni udhëzime të detajuara se si përdoruesi duhet të dërgojë pagesën.
+Konfigurimi i pagesës manuale është shumë i lehtë. Thjesht duhet ta aktivizoni te portat e pagesave dhe të vendosni udhëzime të detajuara se si përdoruesi duhet ta dërgojë pagesën.
 
-Para se ndonjë gjë tjetër, shkoni te **Ultimate Multisite > Settings > Payments**. Poshtë **Payment Gateways**, aktivizoni (toggle on) opsionin **Manual**. Do të shihni se do të shfaqet një kuti **Payment Instructions** për ju.
+Së pari, shkoni te **Ultimate Multisite > Cilësimet > Pagesat**. Poshtë **Portat e pagesave** , aktivizoni **Manuale**. Do të shihni se do të shfaqet një kuti **Udhëzimet e pagesës** për ju.
 
-Shtoni në këtë kuti informacionin që klienti ju nevojitet për të bërë pagesën. Mund të jetë detajet e llogarisë bankare dhe adresa juaj e emailit, që përmes së cilës klienti mund t'ju dërgojë konfirmimin e pagesës, për shembull.
+Shtoni në këtë kuti informacionin që klientit tuaj do t’i duhet për të bërë pagesën. Për shembull, mund të jenë të dhënat e llogarisë suaj bankare dhe email-i juaj, që klienti të mund t’ju dërgojë konfirmimin e pagesës.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Aktivizuesi i portës së pagesës manuale me zonën e tekstit Udhëzimet e pagesës](/img/config/manual-gateway-expanded.png)
 
-Këtu është interfeça e konfigurimit të paguesit manual:
+Ja ndërfaqja e cilësimeve të portës manuale:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Cilësimet e portës manuale](/img/config/manual-gateway-settings.png)
 
-Pas konfiguruar, thjesht klikoni te **Save Settings** dhe keni përfunduar. Kur përdoruesit regjistrohen në rrjetin tuaj, ata do të shohin një mesazh që t'u informon se do të marrin udhëzimet tuaja për të përfunduar blerjen.
+Pasi ta keni konfiguruar, thjesht klikoni te **Ruaj cilësimet** dhe kaq. Kur përdoruesit regjistrohen në rrjetin tuaj, ata do të shohin një mesazh që u tregon se do të marrin udhëzimet tuaja për të përfunduar blerjen.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Mesazh konfirmimi i regjistrimit që i tregon përdoruesit se do të marrë udhëzimet e pagesës](/img/frontend/registration-manual-notice.png)
 
-Dhe ata do të marrin gjithashtu një mesazh në faqen tuaj **Thank You** me udhëzimet tuaja për pagesën.
+Dhe ata gjithashtu do të marrin një mesazh në faqen tuaj **Faleminderit** me udhëzimet tuaja të pagesës.
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+<!-- Pamja e ekranit nuk është e disponueshme: Faqja Faleminderit që tregon udhëzimet e pagesës pas checkout -->
 
-## Konfirmimi i pagimeve manuale
+## Konfirmimi i pagesave manuale {#confirming-manual-payments}
 
-Për të konfirmuar një pagesë manuale, shkoni në menynë **Payments** (Pagesa) në anën e majtë. Atje mund të shihni të gjitha pagesat në rrjetin tuaj dhe detajet e tyre, përfshirë **statusin**. Një pagesë manuale do të ketë gjithmonë statusin **Pending** (Nën proces).
+Për të konfirmuar një pagesë manuale, shkoni te menuja **Pagesat** në shiritin e majtë. Aty mund të shihni të gjitha pagesat në rrjetin tuaj dhe detajet e tyre, duke përfshirë **statusin** e tyre. Një pagesë manuale do të ketë gjithmonë statusin **Në pritje** derisa ta ndryshoni manualisht.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Lista e pagesave që tregon një pagesë manuale në pritje](/img/admin/payments-list.png)
 
-Hyjni faqen e pagesës duke klikuar në **reference code** (kodi referencë). Në këtë faqe keni të gjitha detajet e pagesës së nënvizur, si ID i referencës, produktet, kohdat dhe më shumë.
+Hyni në faqen e pagesës duke klikuar **kodin e referencës**. Në këtë faqe keni të gjitha detajet e pagesës në pritje, si ID-ja e referencës, produktet, shenjat kohore dhe më shumë.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Faqja e detajeve të pagesës që tregon kodin e referencës, produktet dhe totalet](/img/admin/payment-edit.png)
 
-Nën kolonën e djathtë, mund të ndryshoni statusin e pagesës. Ndryshimi në **Completed** (Përfunduar) dhe ndryshimi i opsionit **Activate Membership** (Aktivo mëmimin) do të aktivizojnë faqen e klientit dhe mbeverja e tyre do të jetë aktive.
+Në kolonën e djathtë, mund të ndryshoni statusin e pagesës. Ndryshimi i tij në **E përfunduar** dhe **aktivizimi i opsionit Aktivizo anëtarësimin** do të aktivizojë faqen e klientit tuaj dhe anëtarësimi i tij do të jetë aktiv.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Faqja e redaktimit të pagesës me Statusin të vendosur në E përfunduar dhe aktivizuesin Aktivizo anëtarësimin](/img/admin/payment-activate-membership.png)

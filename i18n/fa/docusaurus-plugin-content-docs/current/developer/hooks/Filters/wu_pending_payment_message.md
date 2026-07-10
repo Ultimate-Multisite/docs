@@ -4,11 +4,11 @@ title: فیلتر - wu_pending_payment_message
 sidebar_label: wu_pending_payment_message
 _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 ---
-# فیلتر: wu_pending_payment_message
+# فیلتر: wu_pending_payment_message {#filter-wupendingpaymentmessage}
 
 به کاربر اجازه می‌دهد تا پیام مربوط به پرداخت‌های معلق را تغییر دهد.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 94115f867afff4cc7741fd5b2ef45bd2
 | $customer | `\WP_Ultimo\Models\Customer` | مشتری فعلی. |
 | $pending_payments | `array` | لیستی از پرداخت‌های معلق. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.19
-### منبع
+### منبع {#source}
 
 در [`inc/managers/class-payment-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-payment-manager.php#L244) در خط ۲۴۴ تعریف شده است.

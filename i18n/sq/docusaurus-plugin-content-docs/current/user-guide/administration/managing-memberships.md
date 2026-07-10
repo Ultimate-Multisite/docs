@@ -3,7 +3,7 @@ title: Menaxhimi i Abonimeve
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Menaxhimi i Abonimeve
+# Menaxhimi i Abonimeve {#managing-memberships}
 
 Ky seksion ju ndihmon të menaxhoni abonimet (memberships) në sistemin tuaj WordPress. Këtu shpjegojmë se si funksionojnë dhe si mund t'i përdorni.
 

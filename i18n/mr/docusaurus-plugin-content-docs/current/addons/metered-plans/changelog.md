@@ -3,7 +3,7 @@ title: वापर आधारित योजना बदलांचा इ
 sidebar_position: 99
 _i18n_hash: ee036a85eb635b4b503c94798251e839
 ---
-# Metered Plans Changelog
+# Metered Plans Changelog {#metered-plans-changelog}
 
 Version 1.1.0 - Released on 2026-05-05
 - New: मल्टीसाइट सबसाइट्ससाठी AI टोकन बिलिंग — ग्राहकांच्या साइट्सवर AI टोकनचा वापर ट्रॅक करा आणि बिल करा, ज्यासाठी प्रति-टोकन दर (per-token rates) सेट करता येतात.
@@ -14,17 +14,17 @@ Version 1.1.0 - Released on 2026-05-05
 - Fix: प्लगइन लोड करताना येणारे घातक त्रुटी (fatal errors) आणि डबल-इनीशियलायझेशन (double-initialization) समस्या सोडवल्या आहेत.
 - Improved: `check-env` npm स्क्रिप्ट जोडली आहे, ज्यामुळे डेव्हलपर एनव्हायरन्मेंट (developer environments) पहिल्यांदा चालवल्यावर आपोआप कॉन्फिगर होतात.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Plugin Update Checker v5 मध्ये अपडेट केले
 * आधुनिक WordPress प्लगइन हेडर (headers) जोडले
 * नवीनतम WordPress आवृत्त्यांशी सुसंगतता (compatibility) सुधारली
 * वापर ट्रॅकिंगची कार्यक्षमता (performance) वाढवली
 
-### 1.0.2
+### 1.0.2 {#102}
 * बग फिक्स आणि कार्यक्षमता सुधारणा
 * वापर अहवाल (usage reporting) सुधारित
 
-### 1.0.0
+### 1.0.0 {#100}
 * प्रारंभिक रिलीज
 * मुख्य मीटर बिलिंग कार्यक्षमता
 * वापर ट्रॅकिंग आणि ओव्हरएज गणना (overage calculation)

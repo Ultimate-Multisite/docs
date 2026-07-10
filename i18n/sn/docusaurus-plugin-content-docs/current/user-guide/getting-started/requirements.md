@@ -3,11 +3,11 @@ title: Zvinoremedzo
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Zvinoro Ruzivo re Ultimate Multisite
+# Zvinoro Ruzivo re Ultimate Multisite {#ultimate-multisite-requirements}
 
 Chii chiri chinogona kuunhu pfungwa pfungwa pfungwa pfungwa munenge wako chinokumbira pamba uchigara Ultimate Multisite? Ndatenda, kune zvinhu zvishoma chete zvinoregeredza kuti Ultimate Multisite inenge inenge yakatarwa. Zvinodiwa: **domain name**, **hosting provider** yakagutsa, uye **WordPress Multisite** installation. Iyi ndiyo zako!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Kuti tiri kuita zvinhu nezve domain name.
 
@@ -17,7 +17,7 @@ Plugin yedu inopa services dzinokubatsira, kunge kupfungwa kwe subscription, kuk
 
 Ndinenge uchigara niche yakanzi, Ultimate Multisite inogona kutariswa nekuti unoda kuita websites se service! Ndinenge uone kuti utange domain name inosimbisa business plan yako.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Nekuti uine domain name yakatarwa inosimbisa niche yako uye business, unofanira kuita chii hosting company yakagutsa kuti inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge
 
@@ -25,7 +25,7 @@ Ultimate Multisite inozvire kuti ndiri kuenderera munzvimbo dzose dzinogona kubv
 
 Pamashoko ekurisa server specifications, hairi formula yakakosha nekuti izvi dzichakwanisa kubva pamusoro pezvinhu zvako zvotaura uye kuita kune network yako. Shared hosting inogona kuva kunyanya kunge chokwadi, asi panguva network yako inoziva, unogona kuenda kuita dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nkuita iwe ndiri kuita mazwi pamusoro peinstallation ya WordPress Multisite.
 

@@ -1,22 +1,22 @@
 ---
 title: Samþætting Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Samning við Hostinger (hPanel)
+# Samning við Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Áhersla
+## Áhersla {#overview}
 
 Hostinger er mjög populma vefsítarþjónustufara með nútíma stjórnunarstjörnu nefndu hPanel. Ultimate Multisite Hostinger samningur gerir möguleika á sjálfsviðandi samning milli Ultimate Multisite og hPanel-sérstingsleika fyrir domæns samræmi, sem leyfir þér að stjórna domænssamninga og undirdomæns (subdomains) sjálfvirklega beint frá WordPress admin.
 
-## Stöðvar
+## Stöðvar {#features}
 
 - Sjálfsviðandi sköpun addon domain í hPanel
 - Sjálfsviðandi sköpun undirdomanna í hPanel (í tilfellum multisite installations fyrir undirdomann)
 - Fjármunnsla domænsins þegar samningarnar eru fjarlægðar
 - Glíma sjálfsviðandi samningur við API stjórnun domænsins í hPanel
 
-## Krefringar
+## Krefringar {#requirements}
 
 Til notkun Hostinger samnings þarf:
 
@@ -35,9 +35,9 @@ Valfræðlega geturðu einnig skilgreina:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Stöðvar API-endur
 ```
 
-## Stöðvarferli
+## Stöðvarferli {#setup-instructions}
 
-### 1. Skapa Hostinger API Token þitt
+### 1. Skapa Hostinger API Token þitt {#1-generate-your-hostinger-api-token}
 
 1. Logga inn í Hostinger reikninginn þinn og hleððu hPanel
 2. Navigera yfir til **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Stöðvar API
    - Subdomain management (Stjórnun undirdomanna)
 6. Kopla tokeninn sem var skapaður og geymiðu hann örugglega
 
-### 2. Finndu reikningarskilninguna þína (Account ID)
+### 2. Finndu reikningarskilninguna þína (Account ID) {#2-find-your-account-id}
 
 1. Í hPanel, fara yfir til **Account Settings** → **Account Information**
 2. Þín Account ID er sýnt á þessum síðu
 3. Kopla og geymiðu þennan ID fyrir næsta skref
 
-### 3. Skilgreina stöðvar í wp-config.php
+### 3. Skilgreina stöðvar í wp-config.php {#3-add-constants-to-wp-configphp}
 
 Skilgreina eftirfarandi stöðvar í `wp-config.php` skjalinu þínu:
 
@@ -69,7 +69,7 @@ Ef þú notar annar API-endur fyrir Hostinger reikninginn, geturðu það séð 
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Skynning á viðskipti (Enable the Integration)
+### 4. Skynning á viðskipti (Enable the Integration) {#4-enable-the-integration}
 
 1. Í WordPress admin-stjórninu þínu, gæfðu yfir í **Ultimate Multisite > Settings**
 2. Navigju yfir til tabinn **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Skynni á viðskipti **Hostinger (hPanel)**
 5. Klikkaðu á **Save Changes**
 
-## Hvernig það virkar
+## Hvernig það virkar {#how-it-works}
 
-### Addon Domains (Viðskipta-domænir)
+### Addon Domains (Viðskipta-domænir) {#addon-domains}
 
 Þegar þú mappa domén í Ultimate Multisite:
 
@@ -87,7 +87,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 2. Domænin er settur til að stjórna til hlutvirkum forðar (root directory) þínum
 3. Þegar mappa domény fjarliggir, fjarliggir skynni á viðskipti sjálf viðskipta-domény úr hPanel
 
-### Subdomains (Undirdomænir)
+### Subdomains (Undirdomænir) {#subdomains}
 
 Fyrir uppsetningar multisite með undirdomænum, þegar nýtt staðsetningur er skráður:
 
@@ -95,7 +95,7 @@ Fyrir uppsetningar multisite með undirdomænum, þegar nýtt staðsetningur er 
 2. Skynni sendir skýrslu til Hostinger API um að bæta undirdomenn í
 3. Undirdomænin eru settur til að stjórna til hlutvirkum forðar (root directory) þínum
 
-## Mikilvægar athugasemdir
+## Mikilvægar athugasemdir {#important-notes}
 
 - Skynni á viðskipti notar Hostinger REST API til samskiptar með reikningnum þínum
 - Þurrinn API token þinn þarf nauðsynlegur rétt til stjórnun domény og undirdomény
@@ -103,21 +103,21 @@ Fyrir uppsetningar multisite með undirdomænum, þegar nýtt staðsetningur er 
 - API-skýrslur eru sendar örugg með HTTPS
 - Halda API token þínum örugglegan og sjávar ekki yfir almenna netið
 
-## Feilfellingar (Troubleshooting)
+## Feilfellingar (Troubleshooting) {#troubleshooting}
 
-### Skynning á viðskipti (API Connection Issues)
+### Skynning á viðskipti (API Connection Issues) {#api-connection-issues}
 
-### Verfiðu að API-tokeninn þinn sé rétt og ekki laukið
+### Verfiðu að API-tokeninn þinn sé rétt og ekki laukið {#domain-not-added}
 
 - Verfið að API-tokeninn þinn sé rétt og hefur ekki laukið
 - Verfið að reikninginúmerinn (Account ID) þinn sé rétt
 - Tryggðu það að API-tokeninn þinn hefur nauðsynlegum réttunum til demanáttarstjórnun
 
-### Verfið að Hostinger reikningurinn þinn sé aktivt og í góðum standi
+### Verfið að Hostinger reikningurinn þinn sé aktivt og í góðum standi {#ssl-certificate-issues}
 
 ---
 
-### Domæni ekki viðbúið
+### Domæni ekki viðbúið {#support}
 
 - Verfið í Ultimate Multisite logs eftir nánari villum
 - Verfið að domænið er ekki enn viðbúið í Hostinger reikninginn þinn
@@ -135,5 +135,5 @@ Fyrir uppsetningar multisite með undirdomænum, þegar nýtt staðsetningur er 
 Vinsamlegast skoða eftirfarandi aðferðir fyrir vöxtu hjá Hostinger samþættingunni:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

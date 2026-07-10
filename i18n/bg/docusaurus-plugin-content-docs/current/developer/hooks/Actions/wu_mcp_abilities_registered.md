@@ -4,11 +4,11 @@ title: Действие - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 Изстрелва след регистрирането на способностите MCP за дадено същество.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | Име на модела. |
 | $this | `object` | Инстанцията на мениджъра. |
 
-### От
+### От {#since}
 
 - 2.5.0
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) на ред 171

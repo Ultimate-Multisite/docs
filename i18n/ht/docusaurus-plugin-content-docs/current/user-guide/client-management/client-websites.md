@@ -3,7 +3,7 @@ title: Sitwè kliyan yo
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Les Sites Kliyan Ou (v2)
+# Les Sites Kliyan Ou (v2) {#your-clients-websites-v2}
 
 Malgre ou fin regisitra sou rezo ou an, nou ka ede kliyan yo jwenn aksè nan dashboard yo.
 

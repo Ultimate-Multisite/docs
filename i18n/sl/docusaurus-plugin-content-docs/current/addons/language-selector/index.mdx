@@ -1,0 +1,75 @@
+---
+title: Izbirnik jezika
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Izbirnik jezika {#language-selector}
+
+Multisite Ultimate: Izbirnik jezika ob registraciji
+
+Dodajte polje za izbiro jezika v potek registracije.
+
+## Namestitev {#installation}
+
+1. Naložite 'ultimate-multisite-language-selector' v imenik '/wp-content/plugins/'
+2. Aktivirajte vtičnik prek menija 'Vtičniki' v svojem WordPress omrežnem skrbniškem vmesniku
+
+## Vodnik za uporabo {#usage-guide}
+
+S tem brezplačnim dodatkom lahko svojim uporabnikom omogočite, da izberejo, kateri jezik želijo videti v poteku registracije in na strani za prijavo.
+
+Po [aktivaciji licence](../../user-guide/getting-started/installing-ultimate-multisite.md) boste lahko namestili dodatke Ultimate Multisite, do katerih vam licenca omogoča dostop.
+
+Pojdite na stran z nastavitvami Ultimate Multisite in nato v meniju na levi kliknite oznako _Dodatki_.
+
+![Stran z dodatki](/img/admin/addons-page.png)
+
+_Pojdite na stran Dodatki, da začnete nameščati Izbirnik jezika_
+
+Tam boste našli vse dodatke, ki jih ponujamo.
+
+Brezplačni dodatki so na voljo vsem našim strankam, ne glede na naročniški paket, na katerega so se prijavile.
+
+Kliknite gumb _Namesti zdaj!_ pod sličico dodatka. Nato ga aktivirajte na strani Vtičniki.
+
+![Stran z dodatki z gumbom za namestitev](/img/admin/addons-page.png)
+
+_Kliknite gumb za namestitev dodatka_
+
+<!-- Posnetek zaslona ni na voljo: stran WP Vtičniki, ki prikazuje gumb Aktiviraj v omrežju za dodatek Izbirnik jezika -->
+
+_Aktivirajte ga na strani Vtičniki_
+
+Zdaj pojdite v meni Nastavitve Ultimate Multisite in odprite zavihek _Omrežne nastavitve_. Tam boste na dnu strani našli nov razdelek z imenom _Jeziki_.
+
+![Stran z nastavitvami](/img/config/settings-general.png)
+
+_Prikazal se je povsem nov razdelek!_
+
+Lahko ga pustite praznega, da kot možnosti prikažete vse jezike, ali izberete, katere želite omogočiti. Jeziki so tisti, ki jih imate nameščene v svoji WordPress namestitvi.
+
+<!-- Posnetek zaslona ni na voljo: spustni seznam za izbiro jezika, ki prikazuje razpoložljive jezike v namestitvi WP -->
+
+_Seznam jezikov, ki so na voljo v tej namestitvi WP_
+
+Ko shranite spremembe, ki ste jih naredili, bo izbirni meni z jeziki, ki ste jih izbrali, prikazan na strani za prijavo in v poteku registracije.
+
+![Nastavitve prijave in registracije](/img/config/settings-login-registration.png)
+
+_Izbirnik jezika na strani za prijavo_
+
+![Stran za registracijo](/img/config/registration-page.png)
+
+_Izbirnik jezika v poteku registracije_
+
+## Nastavitev jezika prek URL-ja {#setting-the-language-via-the-url}
+
+Jezik strani lahko spremenite tudi tako, da URL-ju posredujete parameter locale. Če želite na primer preusmeriti na stran za registracijo v italijanščini, URL-ju dodajte ?locale=it_IT.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Da bo to delovalo, mora biti jezik nameščen v vašem WordPress omrežju.

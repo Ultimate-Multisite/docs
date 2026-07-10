@@ -1,188 +1,194 @@
 ---
-title: Hooks 参考
+title: 钩子参考
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# 钩子参考
+# 钩子参考 {#hooks-reference}
 
-自动生成的文档，包含 Ultimate Multisite 中的 **59 个动作** 和 **115 个过滤器**。
+Ultimate Multisite 中所有 **59 个动作** 和 **118 个过滤器** 的自动生成文档。
 
-## 动作
+## 动作 {#actions}
 
 - [auth_redirect](./Actions/auth_redirect) — 在身份验证重定向之前触发。
-- [set_auth_cookie](./Actions/set_auth_cookie) — 在身份验证 cookie 设置之前立即触发。
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — 在已登录身份验证 cookie 设置之前立即触发。
+- [set_auth_cookie](./Actions/set_auth_cookie) — 在设置身份验证 cookie 之前立即触发。
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — 在设置已登录身份验证 cookie 之前立即触发。
 - [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — 允许开发者通过 wp 插件添加自己的主机提供商集成。
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — 当所有依赖项加载完成时触发。
-- [wu_activation](./Actions/wu_activation) — 让插件的其他部分附加其激活例程。
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — 允许插件开发者在用户或超级管理员切换站点模板后挂钩。
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 在某些情况下，我们需要加载额外的资源来处理动作。
-- [wu_before_search_models](./Actions/wu_before_search_models) — 在搜索请求处理之前触发。
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — 在所有依赖项加载完成时触发
+- [wu_activation](./Actions/wu_activation) — 让插件的其他部分附加其激活例程
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — 允许插件开发者在用户或超级管理员切换站点模板后挂接函数
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — 在某些情况下，我们需要加载额外资源来处理操作。
+- [wu_before_search_models](./Actions/wu_before_search_models) — 在处理搜索请求之前触发。
 - [wu_cart_after_setup](./Actions/wu_cart_after_setup) — 允许开发者对结账对象进行额外更改。
 - [wu_cart_setup](./Actions/wu_cart_setup) — 允许开发者对结账对象进行额外更改。
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — 在将字段添加到结账表单之前触发。
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — 在字段添加到结账表单之前触发。
 - [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — 允许开发者触发额外钩子。
 - [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — 在我们处理结账之前。
 - [wu_checkout_order_created](./Actions/wu_checkout_order_created) — 在结账订单完全组装后触发。
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — 允许插件开发者向网络仪表盘面板添加小工具。
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — 允许插件开发者向网络仪表盘面板添加小工具。
-- [wu_deactivation](./Actions/wu_deactivation) — 让插件的其他部分附加其停用例程。
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — 允许插件开发者在删除过程中添加动作。
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — 当域名成为站点的主域名时触发。
-- [wu_domain_created](./Actions/wu_domain_created) — 当添加新的域名映射时触发。
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — 在我们的核心域名映射加载后触发。
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 某些插件会在映射激活之前保存 URL，或以不同方式构建 URL，但未包含在此处。
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — 允许开发者在站点复制后挂钩。
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — 允许插件开发者添加额外钩子。
-- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 钩子用于额外清理。
-- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — 在处理添加新域名模态请求之前触发。
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — 允许插件开发者向网络 Dashboard 面板添加小工具。
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — 允许插件开发者向网络 Dashboard 面板添加小工具。
+- [wu_deactivation](./Actions/wu_deactivation) — 让插件的其他部分附加其停用例程
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — 允许插件开发者向删除流程添加操作
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — 当某个域名成为站点的主域名时触发。
+- [wu_domain_created](./Actions/wu_domain_created) — 在添加新的域名映射时触发。
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — 在我们的核心域名映射加载后触发
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — 某些插件会在映射处于活动状态之前保存 URL，或以未包含的其他方式构建 URL
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — 允许开发者在站点复制发生后挂接。
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — 允许插件开发者添加额外钩子
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — 用于额外清理的钩子
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — 在处理添加新域名模态框请求之前触发。
 - [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — 允许插件开发者在需要时以不同方式保存元数据。
-- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — 允许插件开发者在需要时以不同方式保存元数据。
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — 允许插件开发者在需要时以不同方式保存用户元数据。
 - [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — 当遇到无效的魔法链接令牌时触发。
 - [wu_magic_link_login](./Actions/wu_magic_link_login) — 在用户通过魔法链接登录后触发。
 - [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — 允许插件开发者在添加客户时执行额外操作。
 - [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — 在为实体注册 MCP 能力后触发。
 - [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — 在 MCP 适配器初始化后触发。
-- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — 在会员被取消后触发。
-- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — 在会员续费后触发。
-- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — 在会员取消之前触发。
-- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — 在会员续费之前触发。
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — 在会员资格取消后触发。
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — 在会员资格续订后触发。
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — 在会员资格取消之前触发。
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — 在会员资格续订之前触发。
 - [wu_model_post_save](./Actions/wu_model_post_save) — 在对象存储到数据库后触发。
-- [wu_page_added](./Actions/wu_page_added) — 允许插件开发者在页面注册时执行额外操作。
-- [wu_page_after_render](./Actions/wu_page_after_render) — 允许插件开发者在我们打印页面后添加额外内容。
-- [wu_page_before_render](./Actions/wu_page_before_render) — 允许插件开发者在我们打印页面前添加额外内容。
-- [wu_page_load](./Actions/wu_page_load) — 允许插件开发者为我们的页面添加额外钩子。
-- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — 允许插件开发者在我们打印页面后添加额外内容。
-- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — 允许插件开发者在我们打印页面前添加额外内容。
-- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — 允许插件开发者为我们的页面添加额外钩子。
+- [wu_page_added](./Actions/wu_page_added) — 允许插件开发者在页面注册时运行额外内容。
+- [wu_page_after_render](./Actions/wu_page_after_render) — 允许插件开发者在我们输出页面后添加额外内容
+- [wu_page_before_render](./Actions/wu_page_before_render) — 允许插件开发者在我们输出页面之前添加额外内容。
+- [wu_page_load](./Actions/wu_page_load) — 允许插件开发者向我们的页面添加额外钩子。
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — 允许插件开发者在我们输出页面后添加额外内容
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — 允许插件开发者在我们输出页面之前添加额外内容。
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — 允许插件开发者向我们的页面添加额外钩子。
 - [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — 在为此页面注册小工具后触发。
-- [wu_register_capabilities](./Actions/wu_register_capabilities) — 触发以允许插件附加能力模块到集成。
-- [wu_register_integrations](./Actions/wu_register_integrations) — 触发以允许集成注册自身。
-- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — 允许注册额外路由。
-- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — 允许插件开发者在保存过程中添加动作。
-- [wu_site_created](./Actions/wu_site_created) — 在首次创建站点后触发。
-- [wu_sso_loaded](./Actions/wu_sso_loaded) — 允许插件开发者在需要时添加额外钩子。
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — 触发以允许 addons 将 capability modules 附加到 integrations。
+- [wu_register_integrations](./Actions/wu_register_integrations) — 触发以允许 integrations 注册自身。
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — 允许注册额外 routes。
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — 允许 plugin 开发者向保存过程添加 actions
+- [wu_site_created](./Actions/wu_site_created) — 在 site 首次创建后触发。
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — 如有需要，允许 plugin 开发者添加额外 hooks。
 - [wu_template_previewer](./Actions/wu_template_previewer) — 在模板预览器上下文中运行。
-- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — 触发排队脚本钩子。
-- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 在对象存储到数据库后触发。
-- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 在对象存储到数据库后触发。
-- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 在对象存储到数据库后触发。
-- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 允许插件开发者在解锁过程中添加动作。
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — 触发入队 scripts hook。
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — 在 object 存储到数据库后触发。
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — 在 object 存储到数据库后触发。
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — 在 object 存储到数据库后触发。
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — 允许 plugin 开发者向解锁过程添加 actions。
 
-## 过滤器
+## Filters {#filters}
 
-- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 过滤身份验证 cookie 过期期间的持续时间。
-- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 过滤身份验证重定向方案。
-- [get_blogs_of_user](./Filters/get_blogs_of_user) — 在此复制原始 WP 过滤器，作为额外措施。
-- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — 允许插件开发者过滤预览器中使用的 URL。
-- [secure_auth_cookie](./Filters/secure_auth_cookie) — 过滤是否仅通过 HTTPS 发送身份验证 cookie。
-- [secure_auth_redirect](./Filters/secure_auth_redirect) — 过滤是否使用安全身份验证重定向。
-- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — 过滤是否仅通过 HTTPS 发送已登录 cookie。
-- [send_auth_cookies](./Filters/send_auth_cookies) — 允许阻止身份验证 cookie 实际发送给客户端。
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — 筛选身份验证 cookie 过期周期的持续时间。
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — 筛选身份验证重定向方案。
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — 为稳妥起见，在此复制原始 WP Filter。
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — 允许 plugin 开发者筛选预览器中使用的 URL
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — 筛选 auth cookie 是否应仅通过 HTTPS 发送。
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — 筛选是否使用安全的身份验证重定向。
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — 筛选 logged in cookie 是否应仅通过 HTTPS 发送。
+- [send_auth_cookies](./Filters/send_auth_cookies) — 允许阻止 auth cookies 实际发送到 client。
 - [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — 设置重定向 URL。
-- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — 通过过滤器添加额外步骤。
-- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — 允许插件开发者全局向渲染上下文添加额外变量。
-- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — 允许开发者跳过此检查。
-- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — 过滤添加新域名模态框的字段。
-- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — 允许开发者更改设置费行项目。
-- [wu_admin_notices](./Filters/wu_admin_notices) — 允许开发者过滤 Ultimate Multisite 添加的管理员通知。
-- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — 更改后过滤。
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — 通过筛选器添加额外步骤
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — 允许 plugin 开发者向渲染上下文全局添加额外变量。
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — 允许开发者短路此检查。
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — 筛选添加新域名模态框的字段。
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — 允许开发者更改 setup fee line item。
+- [wu_admin_notices](./Filters/wu_admin_notices) — 允许开发者筛选 Ultimate Multisite 添加的管理员通知。
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — 更改后进行筛选。
 - [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — 现在，我们处理所有类型。
-- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — 允许插件开发者跳过限制。
-- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — 过滤是否应应用注册费。
-- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — 过滤原始 API 参数。
-- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — 允许插件开发者过滤账单地址字段。
-- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — 允许开发者绕过输出并设置新的。
-- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — 允许开发者绕过取消当前用户代码。
-- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — 过滤“递归金额”总计。
-- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — 过滤“初始金额”总计。
-- [wu_cart_get_total](./Filters/wu_cart_get_total) — 过滤“初始金额”总计。
-- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — 允许插件开发者干预信用值。
-- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — 我们的 API 用于添加新字段模板的钩子在此处。
-- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — 我们的 API 用于添加新字段类型的钩子在此处。
-- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — 过滤错误消息。
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — 允许 plugin 开发者短路限制。
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — 筛选是否应应用注册费。
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — 筛选原始 api 参数。
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — 允许 plugin 开发者筛选账单地址字段。
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — 允许开发者绕过输出并设置新的输出
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — 允许开发者绕过取消设置当前用户的代码。
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — 筛选“ recurring amount ”总计。
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — 筛选“ initial amount ”总计。
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — 筛选“ initial amount ”总计。
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — 允许 plugin 开发者干预信用额度值。
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — 筛选不应成为映射域名记录的共享 checkout-form 基础域名。
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — 我们用于添加新字段模板的 API 挂接到这里。
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — 我们用于添加新字段类型的 API 挂接到这里。
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — 筛选错误消息。
 - [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — 允许开发者在字段可自动提交时绕过检查。
-- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — 允许插件开发者在表单验证器中添加自定义别名。
-- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — 允许插件开发者过滤验证规则。
-- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — 取消不需要的参数。
-- [wu_contains_element](./Filters/wu_contains_element) — 允许开发者更改初始搜索结果。
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — 允许 plugin 开发者在表单验证器中添加自定义别名。
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — 允许 plugin 开发者筛选验证规则。
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — 取消设置不需要的 Params。
+- [wu_contains_element](./Filters/wu_contains_element) — 允许开发者更改初始搜索的结果。
 - [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — 允许主机提供商以不同方式安装常量。
-- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — 返回国家行政子划分的名称。
-- [wu_country_get_cities](./Filters/wu_country_get_cities) — 返回国家中某州的城市列表。
-- [wu_country_get_states](./Filters/wu_country_get_states) — 返回该国家的州列表。
-- [wu_current_set_customer](./Filters/wu_current_set_customer) — 允许开发者修改默认行为并以不同方式设置当前客户。
-- [wu_current_set_membership](./Filters/wu_current_set_membership) — 允许开发者修改默认行为并以不同方式设置当前会员。
-- [wu_current_set_site](./Filters/wu_current_set_site) — 允许开发者修改默认行为并以不同方式设置当前站点。
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — 返回国家行政区划的友好名称。
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — 返回一个国家/地区中某个州的城市列表。
+- [wu_country_get_states](./Filters/wu_country_get_states) — 返回此国家/地区的州列表。
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — 允许开发者修改默认行为，并以不同方式设置当前客户。
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — 允许开发者修改默认行为，并以不同方式设置当前会员资格。
+- [wu_current_set_site](./Filters/wu_current_set_site) — 允许开发者修改默认行为，并以不同方式设置当前站点。
 - [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — 允许开发者修改管理站点 URL 参数。
-- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — 允许插件开发者过滤链接。
-- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — 允许插件开发者添加新检查以确定结果。
-- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — 我们可能需要稍后添加额外块。
-- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — 添加通用过滤器，允许开发者扩展此解析器以处理额外构建器或插件。
-- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — 过滤是否强制执行额外密码规则。
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — 允许 plugin 开发者筛选链接。
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — 允许 plugin 开发者添加新的检查以定义结果。
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — 我们以后可能需要添加其他区块。
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — 添加通用过滤器，允许开发者扩展此解析器，以处理其他构建器或插件。
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — 过滤是否强制执行额外的密码规则。
 - [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — 过滤生成的客户用户名。
-- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — 允许插件开发者过滤结账页面的预设。
-- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — 允许开发者添加新表单 slug 以绕过此行为。
-- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — 允许开发者和插件添加新迁移步骤。
-- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — 请参阅下面此方法的更多信息。
-- [wu_get_post_types](./Filters/wu_get_post_types) — 允许开发者选择要显示的文章类型。
-- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — 返回行，可过滤。
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — 允许插件开发者过滤结账页面的预设项。
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — 允许开发者添加新的表单 slug 以绕过此行为。
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — 允许开发者和 add-ons 添加新的迁移步骤
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — 在下方同一方法中查看更多关于此过滤器的信息。
+- [wu_get_post_types](./Filters/wu_get_post_types) — 允许开发者选择应显示哪些文章类型。
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — 返回行，可过滤
 - [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — 允许开发者操作域名/路径对。
-- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — 过滤托管集成设置向导部分。
-- [wu_id_form_fields](./Filters/wu_id_form_fields) — 过滤表单字段。表单由过滤器名称中的 ID 标识。
-- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — 过滤具有独立计费周期的产品类型。
-- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — 允许插件开发者强制 API 的特定状态。
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — 过滤托管集成设置的向导部分。
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — 过滤表单上的字段。该表单由过滤器名称中的 ID 标识。
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — 过滤具有独立账单周期的产品类型。
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — 允许插件开发者为 API 强制指定状态。
 - [wu_is_development_mode](./Filters/wu_is_development_mode) — 允许插件开发者为开发模式添加额外测试。
-- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — 允许插件开发者强制 MCP 适配器的特定状态。
-- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — 出于安全原因，我们限制可挂钩的操作数。此过滤器允许开发者扩展。
-- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — 检查给定文章类型是否允许在此计划中。允许插件开发者过滤返回值。
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — 允许插件开发者为 MCP 适配器强制指定状态。
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — 出于安全原因，我们限制可用于挂钩的操作数量。此过滤器允许开发者扩展
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — 检查给定文章类型是否在此套餐中被允许；允许插件开发者过滤返回值
 - [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — 过滤是否强制执行 IP 地址验证。
 - [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — 过滤是否强制执行用户代理验证。
 - [wu_magic_link_url](./Filters/wu_magic_link_url) — 过滤生成的魔法链接 URL。
 - [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — 过滤是否启用魔法链接。
-- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — 过滤将域名设为主域后重定向 URL。
-- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — 创建阻止自动重定向的参数排除列表。
-- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — 过滤以覆盖 MCP 能力包含决策。
-- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — 过滤计算的到期日期。
-- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — 过滤续费后设置的计算到期日期。
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — 过滤将域名设为主域名后的重定向 URL。
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — 创建一个参数排除列表，以阻止自动重定向。
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — 用于覆盖 MCP 能力包含决定的过滤器。
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — 过滤计算出的到期日期。
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — 过滤续订后要设置的计算到期日期。
 - [wu_membership_update_forms](./Filters/wu_membership_update_forms) — 允许开发者添加新的更新表单 slug。
 - [wu_minimum_password_length](./Filters/wu_minimum_password_length) — 过滤最小密码长度。
 - [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — 过滤所需的最小密码强度（zxcvbn 分数）。
-- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — 允许插件开发者和我们自己向编辑页面添加操作链接。
-- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — 过滤是否要求密码中包含小写字母。
-- [wu_password_require_number](./Filters/wu_password_require_number) — 过滤是否要求密码中包含数字。
-- [wu_password_require_special](./Filters/wu_password_require_special) — 过滤是否要求密码中包含特殊字符。
-- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — 过滤是否要求密码中包含大写字母。
-- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — 允许用户更改关于待付款的消息。
-- [wu_plan_product_types](./Filters/wu_plan_product_types) — 过滤应视为计划的产品类型。
-- [wu_post_count](./Filters/wu_post_count) — 允许插件开发者更改总计。
-- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — 允许插件开发者更改应计数的文章状态。默认情况下，已发布和私有文章被计数。
-- [wu_post_default_status](./Filters/wu_post_default_status) — 过滤对象数据在存储到数据库之前。
-- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — 允许开发者在 Ultimate Multisite 保存之前过滤设置。
-- [wu_rest_create_item](./Filters/wu_rest_create_item) — 过滤是否允许继续请求。
-- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — 过滤是否允许继续请求。
-- [wu_rest_get_item](./Filters/wu_rest_get_item) — 过滤是否允许继续请求。
-- [wu_rest_get_items](./Filters/wu_rest_get_items) — 过滤是否允许继续请求。
-- [wu_rest_update_item](./Filters/wu_rest_update_item) — 过滤是否允许继续请求。
-- [wu_return_url](./Filters/wu_return_url) — 允许开发者更改结账后使用的网关返回 URL。
-- [wu_search_models_functions](./Filters/wu_search_models_functions) — 允许插件开发者添加更多搜索模型函数。
-- [wu_setup_wizard](./Filters/wu_setup_wizard) — 允许开发者添加额外设置向导步骤。
-- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — 允许开发者跳过重定向，防止其发生。
-- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — 允许处理程序重写。
-- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — 过滤站点可用的批量操作。
-- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — 过滤更改网络内插件站点的值。
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — 允许插件开发者以及我们自己向编辑页面添加操作链接
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — 过滤密码是否要求包含小写字母。
+- [wu_password_require_number](./Filters/wu_password_require_number) — 过滤密码是否要求包含数字。
+- [wu_password_require_special](./Filters/wu_password_require_special) — 过滤密码是否要求包含特殊字符。
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — 过滤密码是否要求包含大写字母。
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — 允许用户更改关于待处理付款的消息。
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — 过滤应被视为套餐的产品类型。
+- [wu_post_count](./Filters/wu_post_count) — 允许插件开发者更改计数总数
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — 允许插件开发者更改应计入的文章状态。默认情况下，会计入已发布和私密文章
+- [wu_post_default_status](./Filters/wu_post_default_status) — 在对象数据存储到数据库之前过滤它。
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — 允许开发者在 Ultimate Multisite 保存设置之前过滤设置。
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — 过滤是否允许继续处理该请求。
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — 过滤是否允许继续处理该请求。
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — 筛选是否允许继续处理该请求。
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — 筛选是否允许继续处理该请求。
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — 筛选是否允许继续处理该请求。
+- [wu_return_url](./Filters/wu_return_url) — 允许开发者更改结账流程后使用的网关返回 URL。
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — 允许 plugin 开发者添加更多搜索模型函数。
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — 允许开发者添加额外的设置向导步骤。
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — 筛选 Ultimate Multisite 是否应为新创建的站点创建域名记录。
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — 允许开发者短路重定向，阻止其发生。
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — 允许重写处理程序
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — 筛选可用于站点的批量操作。
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — 用于更改网络内 get pluginssites 的值的筛选器。
 - [wu_sso_enabled](./Filters/wu_sso_enabled) — 启用/禁用跨域单点登录功能。
-- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — 过滤 Stripe 订阅数据。可覆盖 success_url 或 cancel_url。
-- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — 过滤支付意图参数。
-- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — 过滤要检查的计划 ID。如果存在，则新订阅将使用此计划。
-- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — 过滤要检查的产品 ID。如果存在，则新订阅将使用此产品。
-- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — 过滤与 Stripe 收费选项一起发送的 idempotency_key 值。
-- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — 过滤与此 webhook 关联的会员记录。
-- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — 过滤在序列化并存储到数据库之前的元数据。
-- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — 过滤在对象存储到数据库之前的数据。
-- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — 允许开发者更改升级解锁 URL。
-- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — 确定是否应使用映射。
-- [wu_username_from_email](./Filters/wu_username_from_email) — 过滤新客户用户名。
-- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — 允许开发者更改关于会员用户限制的消息。
+- [wu_sso_url](./Filters/wu_sso_url) — 在返回用于跨域客户操作之前，筛选生成的 SSO URL。
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — 筛选 Stripe 订阅数据。可以覆盖 success_url 或 cancel_url。
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — 筛选付款意图参数。
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — 筛选要检查的 plan 的 ID。如果存在，新订阅将使用此 plan。
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — 筛选要检查的 product 的 ID。如果存在，新订阅将使用此 product。
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — 筛选随 Stripe 扣款选项发送的 idempotency_key 值。
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — 筛选与此 webhook 关联的会员资格记录。
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — 在将数据元信息序列化并存入数据库之前对其进行筛选。
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — 在对象数据存入数据库之前对其进行筛选。
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — 允许开发者更改升级以解锁 URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — 确定是否应使用映射
+- [wu_username_from_email](./Filters/wu_username_from_email) — 筛选新客户用户名。
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — 允许开发者更改有关会员资格用户限制的消息
 - [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — 允许开发者向可替换列表添加额外文件夹。
-- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — 过滤此实体启用的子命令。
-- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — 我们在尝试确定可以注入常量的位置时检查三种模式：
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — 筛选为此实体启用哪些 sub_commands。
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — 在尝试确定可以在何处注入常量时，我们会检查三种模式：

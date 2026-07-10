@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Urugerwa ku Kinyarwanda
+# Urugerwa ku Kinyarwanda {#frequently-asked-questions}
 
 Iki ni uburyo bwo gukoresha Ultimate Multisite mu WordPress.
 

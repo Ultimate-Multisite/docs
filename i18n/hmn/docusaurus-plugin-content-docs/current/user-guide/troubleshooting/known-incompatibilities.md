@@ -3,7 +3,7 @@ title: Txhua yam uas tsis h koj yuav ua haujlwm tias zoo
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# ຄວາມບໍ່ເຂົ້າກັນທີ່ຮູ້ຈັກກັບ Plugin ອື່ນໆ
+# ຄວາມບໍ່ເຂົ້າກັນທີ່ຮູ້ຈັກກັບ Plugin ອື່ນໆ {#known-incompatibilities-with-other-plugins}
 
 ຫຼັງຈາກຕິດຕັ້ງ ແລະ ເປີດໃຊ້ງານ Ultimate Multisite ແລ້ວ, ເຈົ້າອາດຈະ gặp ปัญหาເນື່ອງຈາກມັນບໍ່ເຂົ້າກັນກັບ plugin ອື່ນໆທີ່ຍັງບໍ່ໄດ້ແກ້ໄຂ.
 

@@ -3,7 +3,7 @@ title: Zapier-re argi registroa kontu
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Espener kontu Zapier-re
+# Espener kontu Zapier-re {#event-register-an-account-via-zapier}
 
 Ezaren [Ultimate Multisite-a Zapier-re integratzea](zapier.md) artikuluan, Zapier-ri erabiliziek Ultimate Multisite-an trigger eta event-ez betetzeko nola erabiltzen duen adieraztik. Hegoera, adierazpenak (triggers) eta gebeurtasun-erakundeak (events) erabilizik 3rd party aplikazioak integratzea erakusten dugu. Google Sheets-a datuen esgailu gisa erabilizik Ultimate Multisite-ra kontua emateko informazioa bidali dugu.
 

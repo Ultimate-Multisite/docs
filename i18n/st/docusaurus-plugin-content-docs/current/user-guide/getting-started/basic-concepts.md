@@ -3,7 +3,7 @@ title: Lekutso la ho nna leboha
 sidebar_position: 1
 _i18n_hash: 03ddda7b2873ef4873873b81a1ee546b
 ---
-# Boitshwaro Ba lehle
+# Boitshwaro Ba lehle {#basic-concepts}
 
 Kea fana ka boitshwaro ba lehle ho thata. Ke tla go thusa ho bona hore na lefa se tseba ka WordPress, WooCommerce, le dipuo tsa PHP le MySQL.
 
@@ -15,11 +15,11 @@ Ho ba le mofuta o ntlha wa WordPress Multisite le morao o ntlha, ho na le litaba
 
 Ka lona ka tla batla ho fana ka dikgwetlho tse dintsi tsa bohlokoa le ho thusa ho bona eng ke WordPress. Ka goba, go some li fana ka botshelo la ba neng ba ubatla, go some li fana ka ba neng ba ubatla le ba neng ba ubatla.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 WordPress **Multisite** ke tsela e fapaneng ya WordPress e le e le ka u fana ka ho fetola le ho tsamaisa bonnuma ba website mantsi a fapaneng ka dashboard e kholo ea WordPress. U ka tsamaisa sechaba se sehle, le litaba tse fapaneng, themes, le tsela tsa bohlokoa (user roles). Ho ka tsamaisa bonnuma ba websites haufi haufi.
 
-## Hoetsoetso (Network)
+## Hoetsoetso (Network) {#network}
 
 Hoetsoetso ke le fa se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se se
 
@@ -27,7 +27,7 @@ Ka WordPress e leng, seka multisite network ke leka se ka fana ka hofatsa sefaka
 
 Ho na le litlhoko tse dintsi tse fapaneng tsotlhe ho telohong la WordPress le tsela e nngwe (stand-alone) e ntse e thapeloang, re tla e bua kaona ka lina le lina.
 
-## Database
+## Database {#database}
 
 Database ke setse e ntle le e ntshegile ya data. Morero o mothelo wa teknoloji, database e bolela ka software e fihlela le e tsamaisa data. Re bona se se fetang le file cabinet se fihlela data mo sections tse di tlangogilwa tse di tlangogilwe tse di tlangogilwe tse di tlangogilwe tse di tlangogilwe tse di tlangogilwe tse di tlangogilwe.
 
@@ -37,11 +37,11 @@ _wp_1_options_ - taba ea opshoni ya subsite ya khali (first subsite)
 
 _wp_2_options_ - taba ea opshoni ya subsite ya zwe (second subsite)
 
-## Mofatso oa ho hōlō (Hosting provider)
+## Mofatso oa ho hōlō (Hosting provider) {#hosting-provider}
 
 Mofatso o tlhahlobo (hosting provider) ke sekebetso se fanaang le bone batho ba business le batho ba indlalo ho ba ka ba le web la wena. Ditshwalo tse di fanaang kea tsa mofatso o tlhahlobo li fetoga, empa haholo li fanaang le go rata tsamaiso ya website, boikotso (storage space) le boikotso le Internet.
 
-## Domain
+## Domain {#domain}
 
 **Domain** ke le fa se se sefalo sa website ea hau. Ke le taba e ntle, e ntle ho ba le ho hlokomela ho fana ka seo o o batlang. Ho hloka domain ho ba le ho ba le ho ba le ho ba le ho ba le ho ba le.**
 
@@ -49,7 +49,7 @@ Mofatso o tlhahlobo (hosting provider) ke sekebetso se fanaang le bone batho ba 
 
 Le domain name ke thaba ga batho ba fetang le goba site ya gago. Ke bolela web browser e tla fana ka eng ya go bona site ya gago. Leha ho le thaba la roni, domain name ke ea pele batho ba fetang le go bona website ya gago online. Leha ho le lehle le ho na sign a tšepo fa mo le toko. Ho hloka ho fetang le go bona website ya gago, o tla hloka ho hlalosa web address ya gago fa browser e ntse e le teng, e leng [_www.ultimatemultisite.com_](http://www.ultimatemultisite.com) _,_ joang [**ultimatemultisite.com**](http://ultimatemultisite.com) ke domain name.
 
-## Subdomain
+## Subdomain {#subdomain}
 
 Ho lapa le fetang la mofuta (Subdomain) ke eng? Ke tsela e fana ka ho ba le lapa le le fetang la WordPress. Ho batla ho ba le lapa le lefetang, o tla u rata ho ba le lapa le lefetang le le fetang la mofuta wa site ea hau (site).
 
@@ -65,31 +65,31 @@ Ho ba le lapa le lefetang (Subdomain) ho fana ka ho ba le lapa le lefetang, jaak
 
 Subdomain ke tsela ya website e le morao wa domain e le le liti, empa moo o batla ho sebelisa folders ho hlalosa bohlokoa ba website, e reka website se se fana ka se se se se [**https://site1.domain.com/**](https://site1.domain.com/) moo _site1_ ke lemo la subdomain le [_domain.com_] ke domain e le le liti.
 
-## Subdirectory
+## Subdirectory {#subdirectory}
 
 Kea le lapa la ho fana ka sebope. Ho fana ka sebope, o tla ba le lethu le fetang le lethu lehle. Kea le tloha le lehle.
 
 Subdirectory ke tsela ya website e le morao o ka nna ho dirisi folders ho ranga litaba tsa website. Subdirectory ke le tloha la subfolder, le le bone le ka fetola ka sebope. Ke tla bonahale ka [**https://domain.com/site1**](https://domain.com/site1) e leng _site1_ ke le sebope sa subdirectory le [_domain.com_](http://domain.com) ke domain e le molao o oofetsoeng.
 
-## Subsite
+## Subsite {#subsite}
 
 Subsite ke le site se o fetang (child site) seo o fana ka morao oa ho ba le Network ya Multisite. Ho ba ka **subdomain** kapa **subdirectory**, ho feta ka eona hore na leba lehle la WordPress Multisite ya hau lehlokwa.
 
-## Super Admin
+## Super Admin {#super-admin}
 
 Super Admin ea WordPress ke sebope sa morero (user role) se le bohlokoa ho ba le mekgwa efe ea ho tsamaea ka botshelo bohle ba subsites ka network ea Multisite. Ho batho ba Multisite, ke **sebope sa khotso ea pele** seo u ka ba le ho ba lele le lehlopha la ho ba le le WordPress oa hau.
 
-## Plugin
+## Plugin {#plugin}
 
 Ka tsela la ntlha, **plugin** ke set la code se fana ka boikotso (extra) le ho fana ka tsela e fapaneng ea WordPress ea hau. E ka le fetoga ho fetola logo ea login e le simple, kapa ho le le ho fana ka tsela e fapaneng ea e-commerce. _Woocommerce_ le _Contact Form_ ke mohlodi oa plugin.
 
 Ka WordPress Multisite, bo thaba ba plugin ho ka tšoboa leboho ba admin ea network ke Super Admin. Ba admin ea subsite ba ka fana ka ho tsamaisa le ho fana (activate) le ho fana (deactivate) plugins mo subsite ea bona.
 
-## Themes
+## Themes {#themes}
 
 Theme ea WordPress ke sekolong sa faimana (files) sefapan (graphics, style sheets, le code) se fetang tšepo ekhanya ea litiro. E se na le tsela efe ea ho ba le litiro tsa mofuta o fapaneng, joalo ka ho fana ka tsela ea font, tataisanyong ea litiro (layout), litiro tsa litiro (colors), le hore.
 
-## Site Template
+## Site Template {#site-template}
 
 Ho fana'a hore ba leboha (plugins) le theme tsa WordPress Multisite, ba ka tšoa ho ba leboha ke Super Admin le ba ka ba tšoa ho ba leboha ka lebelo la subsite.
 
@@ -97,13 +97,13 @@ Ho fana'a hore ba leboha (plugins) le theme tsa WordPress Multisite, ba ka tšoa
 
 O re, o ka bolela hore u ka fetola sekhate (base site), u fanaše plugins e fapaneng, u setse theme e fetileng, le u fetole ka tsela e fetileng. Le seng fa morao, ha sefapiso se se fetileng sa WordPress se se fanaše se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng se se fetileng
 
-## Hohohoho ho Hlalosetsa Leano la Domain
+## Hohohoho ho Hlalosetsa Leano la Domain {#domain-mapping}
 
 Kea re bua ka leano la domain mapping. Kea se tsoalo ka eng, kea se bua ka leano tse di fanaang le leano la domain (domain). Kea se thusa ho se se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka se seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka
 
 **Domain mapping** le WordPress ke fihanga e tsoela ba leba ho fana ka sehlopeng sehlopeng (host), ka lebaka la morao oa website. Le WordPress Multisite, subsites e fana ka ho sebelisa subdirectory kapa subdomain. Domain mapping e fana ka ho feta ba subsite ho sebelisa domain e le lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle lehle le
 
-## SSL
+## SSL {#ssl}
 
 SSL eona ke se se ka fihla. Ke tsela e ntle ho ba le seo se fihlalang (secure) haholo, e leng se se fihlalang maele a SEO (Search Engine Optimization). Ho ba le SSL ho bolela hore dipalo tsa hau di fihlalang, e leng se se fihlalang maele a Google.
 
@@ -121,7 +121,7 @@ Ho ka nna le SSL ka tsela efe e ntle ho ba le seo se fihlalang (https://). Ho ka
 
 SSL e bolela **Secure Sockets Layer**. Kea certificate ya dijital e e bona leboho la web site le e tšoa bohloko ba kopo (connection) e e tsamaisang. Leha ho nna leboha, e fana ka sebope (encrypted connection) e ntle. Leha ho na leboha, e fetileng ho uboleletse technology ya standard hore ho ke leboha ho tšoa koneksi ya internet le ho rona data le teng jo bo tsamaisang haholo, ho bona ba kopo ba ba bona le ba ba motha setso se fanaang, ho phethang sebaka se fanaang, le ho phethang ditlhahlo tsa personal tse ka tsamaisang. Browsers e nna le SSL e hloka, e bolela hore e hlophiso haholo ha u leela le ho fana ka website.
 
-## Media
+## Media {#media}
 
 Media ke litšomo, audio, video, le litselo tse dingwe tse di tlhokotsang website.
 
@@ -129,28 +129,28 @@ Sites tsa network li share database e kholo ka WordPress Multisite, li ntsa diko
 
 Le tsoalo se tseo sa tšoa (wp-content/uploads) se tsamaea; empa, le fa se fana'a ho fetoha ho go fana ka lebo la site ea network. Ka thuso, litaba tsa media tsa site ea network li bona ho ba li: wp-contents/uploads/site/[id].
 
-## Permalinks
+## Permalinks {#permalinks}
 
 Permalinks ke le litshomo tsa URL tse di fetang tsa post e leng ya blog ea hau kapa page ea hau ka mo site. Litshomo tsa URL a ka fetogela ho **pretty links**. Ho tšoa, WordPress URLs li ba le format la query string, le li le bona ka sefalo seo:
 
 [**http://www.example.com/registration**](http://www.example.com/registration)
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Ultimate Multisite ke plugin ya WordPress, e fana ka ho ba le le WordPress Multisite, e fetola install ya WordPress ya hau ea sehlopha sa site-sena – jo bolela [WordPress.com](https://WordPress.com) – e tsoela ba leba ho fetola sitesi ka taba ea boano le taba ea tšhethlo (monthly), le taba ea tšhethlo le taba ea tšhethlo le taba ea tšhethlo (quarterly, yearly) (ha u ka fetola plans e fihle).
 
-## Morero ea Leano la Ho Lapa (Checkout Form)
+## Morero ea Leano la Ho Lapa (Checkout Form) {#checkout-form}
 
 Ke tla u thusa ho tseba ka morero oa leano la lapa (checkout form). Ke na leboho leboho leboho leboho leboho leboho.
 
 Form ya Checkout ke le fa seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka seka se
 
-## Webhook
+## Webhook {#webhook}
 
 Webhook (e tla fana ka sehlopha sehlopha sehlopha se hlompha) ke tsela e ntshwago ea app e le ho fana ka rona mofuta o fana ka litsela tse di tsamaea. Webhook e fana data ho apps tse dingwe ka nako e tsamaea, e bolela hore u tla data ka nako e tsamaea, e bolela hore u tla data ka nako e tsamaea.
 
 **webhooks tsa Ultimate Multisite** li bua ka tsela e fapaneng e thata, li leba baithuti ba network (network admins) ba ka dira dikgwetlho tse di leboha-leboha, ho feta moo a fetang ho ho sebelisa litshwiso tse kang _Zapier_ le IFTTT_.
 
-## Events (Dikarolo tsa Thuto/Tsela)
+## Events (Dikarolo tsa Thuto/Tsela) {#events}
 
 Mopua ke tsela e ntse e teng ho sebope sa morao wa motho kapa sebope sa lekgotla, o ka sebope sa go-click mouse. Ultimate Multisite e ntsa rekodi ea litsebi le logs hloekileng tse di tsoang ka mofuta oona ka selope sa hau sebope sehle sa network ea hau. E tsamaetsa litšomo tse fapaneng tse di tsoang ka ho ba le teng mo multisite ea hau, joalo ka liphetso tsa plan.

@@ -3,13 +3,13 @@ title: Ịwụnye Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ntinye nke Ultimate Multisite
+# Ntinye nke Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Ntụziaka a na-ekwu na ị enyela WordPress Multisite ma mee ya ka ọ rụọ ọrụ. Ka ị mụta otú e si eme ya, lelee [ntụziaka a](https://www.wpbeginner.com/glossary/multisite/) nke WP Beginner.
 :::
 
-## Ntinye Plugin
+## Ntinye Plugin {#installing-the-plugin}
 
 Ultimate Multisite dị n'efu na [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Mgbe ịmechara, a ga-ebugharị gị ozugbo gaa na Setup Wizard.
 
 ![Plugin rụrụ ọrụ ma bugharịa gaa na wizard](/img/installation/plugin-activated.png)
 
-## Setup Wizard
+## Setup Wizard {#setup-wizard}
 
 Setup Wizard ga-eduzi gị n'ime nhazi nke Ultimate Multisite n'ime minit 10.
 
-### Nnabata
+### Nnabata {#welcome}
 
 Pịa **Get Started** iji malite.
 
 ![Ibe nnabata nke Setup Wizard](/img/installation/wizard-welcome.png)
 
-### Nlele Tupu Ntụnye
+### Nlele Tupu Ntụnye {#pre-install-checks}
 
 Ukwu a na-elele ozi sistemụ gị na nrụnye WordPress iji hụ ma ọ na-akwado ihe ndị Ultimate Multisite chọrọ. Ọ bụrụ na ihe niile dị mma, pịa **Go to the Next Step**.
 
@@ -51,31 +51,31 @@ Ukwu a na-elele ozi sistemụ gị na nrụnye WordPress iji hụ ma ọ na-akwa
 Ịpị **Network Activate** na-eme ka plugin rụọ ọrụ n'ime netwọk gị niile ozugbo. Ozugbo emechara, wizard ahụ ga-aga n'ihu na usoro nrụnye. Ọ dịghị mkpa ịhapụ wizard iji dozie ọnọdụ nrụnye.
 :::
 
-### Nrụnye
+### Nrụnye {#installation}
 
 Onye nrụnye ga-eme ihe ndị a chọrọ, mebeere tebụl data ma wuo faịl `sunrise.php` nke Ultimate Multisite chọrọ ka ọ rụọ ọrụ. Pịa **Install** iji gaa n'ihu.
 
 ![Ukwu nrụnye na-egosi tebụl data na sunrise.php](/img/installation/wizard-installation.png)
 
-### Ụlọ Ọrụ Gị
+### Ụlọ Ọrụ Gị {#your-company}
 
 Debe ozi ụlọ ọrụ gị ma setịpụ ego ị ga-eji. A ga-eji ozi a n'ime ikpo okwu WaaS gị niile. Pịa **Continue** mgbe emechara.
 
 ![Ukwu nhazi nke Ụlọ Ọrụ Gị](/img/installation/wizard-your-company.png)
 
-### Ihe Ndị Na-adịghị Anyịhụ
+### Ihe Ndị Na-adịghị Anyịhụ {#default-content}
 
 Ukwu a na-enye gị ohere ịwụnye ihe atụpụtara, ngwaahịa, na ndị ọzọ. Ọ bụ ụzọ dị mma iji mata akụkụ nke Ultimate Multisite. Pịa **Install** iji wụnye ihe ndị ahụ, ma ọ bụ hapụrụ ukwu a ka ị malite site n'isi.
 
 ![Ukwu nrụnye ihe ndị na-adịghị anyịhụ](/img/installation/wizard-default-content.png)
 
-### Plugins Ndị Ọ Ga-enwe Mmasi
+### Plugins Ndị Ọ Ga-enwe Mmasi {#recommended-plugins}
 
 Wụnye plugins enyemaka a na-atụ anya. Pịa **Install** iji wụnye ha ma ọ bụ hapụ ya ka ị gaa n'ihu.
 
 ![Ukwu plugins ndụmọ](/img/installation/wizard-recommended-plugins.png)
 
-### Emela!
+### Emela! {#ready}
 
 Ọ dịla! Nrụnye Ultimate Multisite gị emechara. Ị nwere ike malite iwulite ikpo okwu Website as a Service site na **Network Admin Dashboard**.
 

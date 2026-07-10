@@ -1,0 +1,150 @@
+---
+title: Ọtụtụ ndị mgbazinye
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Usoro Ọtụtụ Ndị Mgbazinye {#multi-tenancy}
+
+Kesaa saịtị nta n’etiti sava na ebe nchekwa data maka arụmọrụ na nchekwa
+
+## Isi ihe pụtara ìhè na mwepụta ụdị 1.2.0 {#version-120-release-highlights}
+
+Usoro Ọtụtụ Ndị Mgbazinye 1.2.0 na-agbakwunye ntọala onye mgbazinye nweere onwe ya maka usoro ọrụ ikewapụ mmepụta:
+
+- Nbanye akpaaka onye mgbazinye na-enweghị ọnọdụ nwere nleta SSO dị mkpụmkpụ ma chebe megide ịkpọgharị.
+- Ikewapụ ebe nchekwa data na usoro faịlụ maka saịtị nta ọ bụla maka ndị mgbazinye nweere onwe ha.
+- Ikike Hostinger maka usoro ọtụtụ ndị mgbazinye maka inye onye mgbazinye dabere na host.
+- Ọnụ ụzọ nkwenye mbugharị nweere onwe ya maka nyocha data ochie na nhazi izipu async.
+- Njikọ host ebe nchekwa data otu igwe a pụrụ ịhazi maka Bedrock, FrankenPHP, na nrụnye localhost.
+- Mmezi na mbido onye mgbazinye, onye-ede ebe nchekwa data, mbido schema, na inye onye ọrụ.
+- Iwepụ nweere onwe ya dị nchebe karị nke na-ehicha nzere onye mgbazinye.
+
+Lee ntuziaka onye ọrụ maka [usoro ọrụ mbugharị nweere onwe ya](/user-guide/getting-started/sovereign-migration-workflow), [ikewapụ usoro ọtụtụ ndị mgbazinye](/user-guide/configuration/multi-tenancy-isolation), na [ọrụ onye mgbazinye nweere onwe ya](/user-guide/administration/sovereign-tenant-operations).
+
+## Ihe achọrọ {#requirements}
+
+- WordPress 5.3 ma ọ bụ nke ka elu
+- PHP 7.4 ma ọ bụ nke ka elu
+- Multisite Ultimate plugin (na-arụ ọrụ)
+
+## Nwụnye {#installation}
+
+1. Bulite faịlụ addon gaa na ndekọ `/wp-content/plugins/` gị
+2. Mee ka plugin rụọ ọrụ site na menu 'Plugins' na WordPress
+3. Hazie ntọala addon na network admin
+
+## Mmepe {#development}
+
+### Nhazi {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Nhazi Ọrụ Ngo {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Klas PHP na ihe gụnyere
+│   ├── class-multisite-ultimate-updater.php  # Onye njikwa mmelite
+│   └── class-multi_tenancy-main.php             # Ọrụ bụ isi
+├── tests/                        # Nnwale unit
+│   ├── bootstrap.php            # Mbido nnwale
+│   ├── class-*-base.php         # Klas nnwale isi
+│   └── class-*-test.php         # Ọnọdụ nnwale
+├── views/                       # Faịlụ template
+├── assets/                      # Akụrụngwa static
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Faịlụ JavaScript
+│   └── images/                  # Onyonyo
+├── lang/                        # Faịlụ asụsụ
+├── composer.json                # Ndabere PHP
+├── package.json                 # Ndabere Node.js
+├── phpunit.xml.dist             # Nhazi PHPUnit
+├── .phpcs.xml.dist              # Nhazi ụkpụrụ code
+└── rector.php                   # Iwu ime ka code bụrụ nke oge a
+```
+
+### Nnwale {#testing}
+
+Addon a gụnyere usoro nnwale zuru ezu:
+
+- **Nnwale Unit**: Nnwale dabere na PHPUnit nwere ngwugwu nnwale WordPress
+- **Klas Nnwale Isi**: Na-enye ụzọ enyemaka maka ọnọdụ nnwale a na-ahụkarị
+- **Mkpuchi Nnwale**: Ahaziri iji soro mkpuchi code
+- **Nnwale Multisite**: Nnwale na-agba na gburugburu multisite
+
+### Ụkpụrụ Code {#code-standards}
+
+- **Ụkpụrụ Ide Code WordPress**: A na-amanye ya site na PHPCS
+- **Ndakọrịta PHP 7.4+**: A na-akwado atụmatụ PHP nke oge a
+- **Nnyocha Static**: Njikọ PHPStan maka nyocha type
+- **Ime ka Code Bụrụ Nke Oge A**: Iwu Rector maka nkwalite PHP
+
+### Usoro Iwu {#build-system}
+
+- **Nhazi Akụrụngwa**: Mbelata maka faịlụ CSS/JS
+- **Ntughari**: Mmepụta faịlụ POT
+- **Ịkwakọ**: Ịmepụta archive maka nkesa
+- **Ọnọdụ Mmepe**: Akụrụngwa a na-emeghị ka pere mpe maka debugging
+
+## Nhazi {#configuration}
+
+Addon a na-akwado nhọrọ nhazi dị iche iche a pụrụ iru site na interface network admin.
+
+### Nhazi onye mgbazinye nweere onwe ya {#sovereign-tenant-configuration}
+
+Maka ndị mgbazinye nweere onwe ha, hazie ebe nchekwa data onye mgbazinye, mgbọrọgwụ usoro faịlụ, njikọ host ebe nchekwa data, na ikike host tupu i duzie okporo ụzọ gaa na onye mgbazinye. Gbaa nkwenye mbugharị mgbe mgbanwe ọ bụla metụtara nzere ebe nchekwa data, njikọ host, iduzi ụzọ, ma ọ bụ inye onye ọrụ.
+
+Jiri `localhost` naanị mgbe runtime onye mgbazinye na grants ebe nchekwa data na-atụ anya socket mpaghara ma ọ bụ nnweta otu igwe. Jiri `127.0.0.1` ma ọ bụ aha host ọrụ mgbe nke ahụ bụ grant host nke onye na-enye gị haziri.
+
+### Ikike Hostinger {#hostinger-capability}
+
+Ikike Hostinger maka usoro ọtụtụ ndị mgbazinye na-arụ ọrụ na shared Hostinger integration token. Kwenye na domain dị na hPanel, DNS na-atụ aka na Account Hostinger, na ntọala ebe nchekwa data onye mgbazinye kwekọrọ na hPanel tupu nkwenye.
+
+## Hooks na Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - A na-akpalite ya mgbe mbido addon gasịrị
+- `ultimate-multisite-addon-template_loaded` - A na-akpalite ya mgbe ebugoro faịlụ addon niile
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Gbanwee ntọala addon
+- `ultimate-multisite-addon-template_enabled` - Dochie ọnọdụ ime ka addon rụọ ọrụ/kwụsị ọrụ
+
+## Ikikere {#license}
+
+Enyere addon a ikikere n'okpuru GPL v3 ma ọ bụ nke sochirinụ.
+
+## Nkwado {#support}
+
+Maka nkwado na akwụkwọ nduzi, gaa na [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Ụdị 1.2.0 (2026-06-03): tinye nbanye akpaaka onye mgbazinye na-enweghị ọnọdụ, ikike Hostinger maka usoro ọtụtụ ndị mgbazinye, ikewapụ ebe nchekwa data na usoro faịlụ maka saịtị nta ọ bụla, ọnụ ụzọ nkwenye mbugharị nweere onwe ya, mmezi mbido onye mgbazinye/onye-ede ebe nchekwa data, njikọ host MySQL a pụrụ ịhazi, na iwepụ nweere onwe ya dị nchebe karị.
+
+- Ụdị 1.0.1 (2025-09-28): kpọgharịa prefix gaa na ultimate-multisite; melite text domain; bulie ụdị.
+
+
+- Ụdị  (2025-09-28): kpọgharịa prefix gaa na ultimate-multisite; melite text domain; bulie ụdị.

@@ -3,11 +3,11 @@ title: የፕልጊን አስተዳደር አቅሞች
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# የፕልጊን አስተዳደር አቅሞች
+# የፕልጊን አስተዳደር አቅሞች {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 ከ**7 የፕልጊን አስተዳደር አቅሞች** ጋር ይመጣል፤ እነዚህ አቅሞች AI ረዳቱ በውይይት ወቅት ሊጠቀምባቸው የሚችል ሲሆን። እነዚህ አቅሞች በ[Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) በኩል በተጫኑ WordPress plugins ላይ ፕሮግራማዊ ቁጥጥር ይሰጣሉ።
 
-## የአቅሞች አጠቃላይ እይታ
+## የአቅሞች አጠቃላይ እይታ {#abilities-overview}
 
 | Ability | Slug | Description |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 ከ**7 የፕልጊን አስተዳደር አቅሞች** 
 | Install Plugin | `install_plugin` | አንድ በሳንድቦክስ ውስጥ የተፈተነ plugin ወደ ቀጥታ የWordPress plugin ዳይሬክቶሪ ይጭናል። |
 | Activate Plugin | `activate_plugin` | አንድ በሳንድቦክስ ውስጥ የተፈተነ plugin በwp-env ሳንድቦክስ አካባቢ ያነቃቃል። |
 
-## የPlugin Installer API
+## የPlugin Installer API {#plugin-installer-api}
 
 የplugin installer plugins ሲጫን ወይም ሲያስወግድ የፋይል ሲስተም ስራዎችን ይቆጣጠራል። ዋና ዋና ባህሪያት የሚከተሉት ናቸው፦
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 ከ**7 የፕልጊን አስተዳደር አቅሞች** 
 - **ማዘመን (Update)**: ያሉትን የplugin ፋይሎች ይተካል። በከፊል ሁኔታ ስህተቶችን ለማስወገድ ከመጻፉ በፊት pluginን ያሰናብታል።
 - **በslug መሰረዝ (Delete by slug)**: በslug በመጠቀም የplugin ዳይሬክቶሪውን ያገኛል፣ በሁሉም ድረ-ገጾች ያሰናብታል፣ ከዚያም ዳይሬክቶሪውን ያስወግዳል።
 
-### የCustom Install Handler መመዝገብ
+### የCustom Install Handler መመዝገብ {#registering-a-custom-install-handler}
 
 በ`gratis_ai_plugin_installer_before_install` እና `gratis_ai_plugin_installer_after_install` action በመጠቀም የinstall life cycle ውስጥ መሳተፍ ይችላሉ፦
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## የEcosystem መመዝገቢያ (Ecosystem Registry)
+## የEcosystem መመዝገቢያ (Ecosystem Registry) {#ecosystem-registry}
 
 አቅሞች በ**plugin ecosystem registry** በኩል ይመዘገባሉ። ይህ መመዝገቢያ የability slugsን ወደ handler classes በማዛመድ ለAI agent tool dispatcher ያቀርባቸዋል።
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner ውህደት (HookScanner Integration)
+## HookScanner ውህደት (HookScanner Integration) {#hookscanner-integration}
 
 የ`create_plugin` እና `update_plugin` አቅሞች አዲስ የተፈጠረ ኮድ ሲሰራ በራስ-ሰር **HookScanner**ን ያካሂዳሉ። HookScanner በplugin የተመዘገቡ የWordPress action እና filter hooks ዝርዝርን ይመልሳል።
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner በራስ-ሰር `vendor/` እና `node_modules/` ዳይሬክቶሪዎችን ይዘልቃል።
 
-## Asynchronous Job Architecture
+## Asynchronous Job Architecture {#async-job-architecture}
 
 ረጅም ጊዜ የሚወስዱ የplugin ስራዎች (መፍጠር፣ መጫን) እንደ **async jobs** ተልከስ (dispatch) እና ቀጥተኛ የሂደት ክትትል (live progress tracking) አላቸው። የAI chat interface ለሂደት ይጠይቃል (polls) እና የሁኔታ ዝማኔዎችን ለተጠቃሚው ያተላለፋል (streams)፦
 

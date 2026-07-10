@@ -3,11 +3,11 @@ title: Svetimo specifikacija įgūdžiai
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Skill: Site Specification
+# Skill: Site Specification {#site-specification-skill}
 
 **Site Specification** yra struktūrinis būdas suformuoti jūsų svetainės tikslus, vartotojus ir preikės identitetą. Ši informacija saugoma jūsų **site\_brief** (svetainės aprašymas) sąlygos, kurios agentai naudoja tarp sesijų, kad pateiktų pagal kontekstą informavimą.
 
-## Kas tai yra Site Specification?
+## Kas tai yra Site Specification? {#what-is-site-specification}
 
 Site Specification yra dokumentavimo procesas, kuriame suformuojama:
 
@@ -19,9 +19,9 @@ Site Specification yra dokumentavimo procesas, kuriame suformuojama:
 
 Šis aprašymas tampa jūsų **site\_brief**, persidėvimo sąlygos, kurios agentai naudoja suprantys jūsų svetainės kontekstą.
 
-## Kodėl naudoti Site Specification?
+## Kodėl naudoti Site Specification? {#why-use-site-specification}
 
-### Konsistencija tarp sesijų
+### Konsistencija tarp sesijų {#consistency-across-sessions}
 
 Be site\_brief turėjote reikėtų kiekvienai naujam sesijai atsiargumentuoti savo svetainės tikslus. Su jo, agentai iš karto supranta:
 
@@ -30,7 +30,7 @@ Be site\_brief turėjote reikėtų kiekvienai naujam sesijai atsiargumentuoti sa
 - Jūsų mąstymo struktūrą
 - Jūsų biznesų tikslus
 
-### Geros rekomendacijos
+### Geros rekomendacijos {#better-recommendations}
 
 Agentai naudoja jūsų site\_brief, kad:
 
@@ -39,17 +39,17 @@ Agentai naudoja jūsų site\_brief, kad:
 - Siūlotų dizainus, susijusius su jūsų preikė
 - Vartotu vengtum šių nekompatabilių funkcijos siūlomų
 
-### Greangesnis įsigydimas (Onboarding)
+### Greangesnis įsigydimas (Onboarding) {#faster-onboarding}
 
 Nauji agentai (arba agentai naujose sesijose) greitai įsitikina, perskaitydami jūsų site\_brief, o ne klausdant prekybiškų klausimų.
 
-## Site Specification inicijuoti
+## Site Specification inicijuoti {#initiating-site-specification}
 
-### During Theme Builder Onboarding
+### During Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 Site Specification skiliai inicijuojama during **Theme Builder onboarding flow**. Setup Assistant agent klausosi klausimų ir suforma jūsų site\_brief.
 
-### Manual Initiation
+### Manual Initiation {#manual-initiation}
 
 Galitei galite starti svetain:
 
@@ -63,9 +63,9 @@ ar
 "Padėk man sukurti svetainės apibendrinimą"
 ```
 
-## Svetainės specifikacijos procesas
+## Svetainės specifikacijos procesas {#the-site-specification-process}
 
-### 1. Svetainės tikslas
+### 1. Svetainės tikslas {#step-1-site-purpose}
 
 Agentis klausia:
 
@@ -81,7 +81,7 @@ Koks yra jūsų svetainės pagrindinis tikslas?
 
 Jūs galite pasirinkti kategoriją arba apibūdinti savo tikslą.
 
-### 2. Tikslinė auditorija
+### 2. Tikslinė auditorija {#step-2-target-audience}
 
 ```
 Koks yra jūsų pagrindinis vartotojas?
@@ -94,7 +94,7 @@ Koks yra jūsų pagrindinis vartotojas?
 Ką jie turi pagrindinių poreikių?
 ```
 
-### 3. Prekės ženklas (Brand Identity)
+### 3. Prekės ženklas (Brand Identity) {#step-3-brand-identity}
 
 ```
 Koki yra jūsų prekės ženklo spalvos?
@@ -110,7 +110,7 @@ Kaip aprašytumėte savo prekės ženklo toną?
 - Šiltas / draugiškas
 ```
 
-### 4. Biznesiniai tikslai
+### 4. Biznesiniai tikslai {#step-4-business-goals}
 
 ```
 Kaip atrodo sėkmė jūsų svetainėje?
@@ -129,7 +129,7 @@ Koks jūsų pagrindinis metrikas?
 - Kitas
 ```
 
-### 5. Turinio struktūra
+### 5. Turinio struktūra {#step-5-content-structure}
 
 ```
 Kaip yra organizuotas jūsų turinys?
@@ -148,13 +148,13 @@ Koki turinio tipus naudojate?
 - Kitas
 ```
 
-## Jūsų site_brief sąjoda
+## Jūsų site_brief sąjoda {#your-sitebrief-memory}
 
 Svetainės specifikacijos pabaigoje jūsų informacija saugomi kaip **site_brief** jūsų agentinio sąjoda. Tai struktūrinis įrašas, kuriame yra:
 
-## Prisėjimas ir atnaujinimas jūsų svetainės aprašymui (site_brief)
+## Prisėjimas ir atnaujinimas jūsų svetainės aprašymui (site_brief) {#viewing-and-updating-your-sitebrief}
 
-### Peržiūrėti savo svetainės aprašymą (site_brief)
+### Peržiūrėti savo svetainės aprašymą (site_brief) {#view-your-sitebrief}
 
 Paklausykite agentui:
 
@@ -170,7 +170,7 @@ ar
 
 Agentas pateiks jūsų saugomas specifikaciją.
 
-### Atnaujinti savo svetainės aprašymą (site_brief)
+### Atnaujinti savo svetainės aprašymą (site_brief) {#update-your-sitebrief}
 
 Jei jūsų svetainė keičiasi, galite ją atnaujinti:
 
@@ -186,9 +186,9 @@ ar
 
 Tai atsisiųs jūsų esamą informaciją kaip pradoti. Tai vėl paleis Site Specification įgūdžių, naudojant jūsų esamą informaciją kaip pradinį punktą.
 
-## Kaip agentai naudoja svetainės aprašymą (site_brief)
+## Kaip agentai naudoja svetainės aprašymą (site_brief) {#how-agents-use-sitebrief}
 
-### Dizaino rekomendacijos
+### Dizaino rekomendacijos {#design-recommendations}
 
 Kai klausysite apie dizaino pakeitimus, agentai remiasi jūsų svetainės aprašymu:
 
@@ -197,7 +197,7 @@ Jūs: "Redesize mano pagrindinį puslapį"
 Agentas: "Pagrindines jūsų svetainės aprašymo atveju, jūs tiksluojate į moteris 25-45 metų grupę su šiltu, gamybos charakterio tonu. Apsikursiu dizainą, kuris pabrėžia jūsų gamybus juvelius ir laisvame (sustainabilty) vertus."
 ```
 
-### Funkcionalumo siūlymai
+### Funkcionalumo siūlymai {#feature-suggestions}
 
 Agentai siūlo funkcijas, susijusias su jūsų tikslomis:
 
@@ -206,40 +206,40 @@ Jūs: "Ką turėčiau pridėti?"
 Agentas: "E-komercijai, kurios yra orientuota į klientų lojalumą, aš siūlyčiau: lojalumo programą, klientų atsaugojus, el. laiškų rašylių (newsletter) ir produktų rekomendacijas."
 ```
 
-### Maudė struktūra
+### Maudė struktūra {#content-structure}
 
 Agentai siūlo turinio organizavimą pagal jūsų struktūrą:
 
 Pagalba blogą?
 Agentas: „Kadangi naudojate produktų katalogą su blogu, siūlyčiau saugoti straipsnius pagal produktų kategorijas ir sukurtę 'stilizavimo vadovyrus', kuriuose pateikta kelios produktai kartu.”
 
-## Geriaus praktikai
+## Geriaus praktikai {#best-practices}
 
-### Būkite specifūs
+### Būkite specifūs {#be-specific}
 
 Kai kurį kartą nurodykite savo tikrą skilty.
 - ✓ „Moterys 25–45 metų, susidėvios įtakos laikinai moda“
 - ✗ „Visi“
 
-### Aktualizuokite reguliariai
+### Aktualizuokite reguliariai {#update-regularly}
 Kai jūsų svetainė keičiasi, atnaujinkite savo site_brief:
 - Kai keičiate tikslinę auditoriją
 - Kai pridėjate naujus produktų lainas
 - Kai keičiasi jūsų prekės ženklos identitas
 - Kai keičiasi jūsų verslo tikslai
 
-### Naudokite vienodą terminologiją
+### Naudokite vienodą terminologiją {#use-consistent-terminology}
 Naudokite vienus pačias žodžius visose sesijose:
 - ✓ Visą laiku nurodykite „saugomos juveliai“ (ne „ekoprijuveliai“ ir „grėtinai produktai“)
 - ✓ Konsistentiai nurodykite savo auditoriją tą pačia būdu
 
-### Įtraukite kontekstą
+### Įtraukite kontekstą {#include-context}
 Pateikite pagrindimą, kuris padės agentui suprasti jūsų sprendimus:
 - „Mums tiksluojame profesionalus, kurie vertina kokybę prieš kainą“
 - „Mums auditorija yra technologinio savaliė ir jie kelia modernios dizaino reikalavimus“
 - „Mes esame startupe, kuris finansuojamas iš savo pinigų, todėl mums reikia kainos efektyviausių sprogdymų“
 
-## Nuomonė su Theme Builder įdiegimu
+## Nuomonė su Theme Builder įdiegimu {#relationship-to-theme-builder-onboarding}
 
 Site Specification įgūdžius integruoti į **Theme Builder įdiegimo procesą**. Kai pabaigsite įdiegimą, jūsų site_brief būtų automatiškai sukurtas su tą informaciją, kurią pateikėte.
 
@@ -248,7 +248,7 @@ Jau ar galite naudoti Site Specification nepriklausomai, jei norite:
 - Aktualizuoti savo site_brief, kai jūsų svetainė keičiasi
 - Sukurti detalią specifikaciją prieš pradėdami Theme Builder
 
-## Problemos atšalinimas
+## Problemos atšalinimas {#troubleshooting}
 
 **Mano site_brief ne naudoja**
 - Patikrinkite, ar agentui yra pasiekiamas sąminti (memory)
@@ -264,7 +264,7 @@ Jau ar galite naudoti Site Specification nepriklausomai, jei norite:
 - Atnaujinkite savo site\_brief, jei jis yra sukirimas
 - Užtepkite daugiau konteksto savo pateikimu
 
-## Keturi toliai
+## Keturi toliai {#next-steps}
 
 Po suprantojo jūsų svetainės specifikacijas:
 

@@ -3,11 +3,11 @@ title: Kugara kweMufudzi neKupanga Mufudzi
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Kufungurwa kweMubvunzo neKupara Kuita Site
+# Kufungurwa kweMubvunzo neKupara Kuita Site {#membership-expiration-and-site-blocking}
 
 Ikhasi le chitsanidi chinokubatsira kuona sei Ultimate Multisite inozvifungurwa kwekubvunza (membership expiration), kupara kwetrial, uye kupara kwemweya (frontend site blocking). Inooneka nzira yakaita kubva kune mubvunzo wakachivimbika kunze kuvhi chine kufungurwa, zvinhu zvinoregeredza kuti sites dziri kupera sei, uye zvinhu dzinogona kuona kana sites dziri kuita zvinhu panguva mubvunzo wacho uchivimbika.
 
-## Kufamba kweMubvunzo (Membership Status Lifecycle)
+## Kufamba kweMubvunzo (Membership Status Lifecycle) {#membership-status-lifecycle}
 
 Mubvunzo wese muUltimate Multisite unenge uri mumwe wese wese:
 
@@ -24,7 +24,7 @@ Mubvunzo inosanganisira mweya wose. Mubvunzo inozvifungurwa zvakanaka (automatic
 | **Expired** |Chine kupfuma kwemweya uye grace period isina kupfuma kune kufamba zvakare |
 | **Cancelled** |Kupara kwakare nekuita nekubatsira (customer kana admin) |
 
-### Sei Mubvunzo Inogona Kupera sei
+### Sei Mubvunzo Inogona Kupera sei {#how-memberships-transition-to-expired}
 
 Ultimate Multisite inozviona zvinosanganisira mweya wose **kunge chiri chiri** kuti dzive mubvunzo dzinogone kupera. Izvi zvinhu dzinotsvaga Action Scheduler (haina WP-Cron yakazara) uye inotarisirwa kune action inosanganisira `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Kupfuma kwekubvunza kunooneka **grace period ya 3 dino** nekufamba kwakare. Mubv
 Periodo wa kuchepa (grace period) wechishoma kwezuva 3 kunooneka sechikoro chekuchinjika kwepfrentend. Periodo ya kuchepa inogona kuti zvinhu zvinotevera kana **status inobva kuactive/on-hold kune expired**. Periodo ya frontend block inogona kuti zvinhu zvinotevera kana **site inobva kubva** panguva status yakabva kuchange.
 :::
 
-#### Memberships Anozivimbisa Nekuonana (Auto-Renewing vs. Non-Auto-Renewing)
+#### Memberships Anozivimbisa Nekuonana (Auto-Renewing vs. Non-Auto-Renewing) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Kuti uone sei kuratidzo kwekuchepa, zvakakosha kuti uve munhu anoziva:
 
@@ -42,7 +42,7 @@ Kuti uone sei kuratidzo kwekuchepa, zvakakosha kuti uve munhu anoziva:
 
 - **Memberships dzakavimbiswa nekudzivimbisa (Auto-renewing memberships)** (`auto_renew = true`): Chinyorwa chekuchepa checron inogona kuita izvi zvinobva zvose -- inokera kuti gateway ya pashure (Stripe, PayPal, kana zvinhu zvakasiyana) inonotevera Ultimate Multisite kuburikidza ne-webhooks kana chine kudzivimbisa kana kuva. Kana webhook haunopai -- nekuti endpoint yakagadzirwa sei, kana kuna gateway ya pashure inobva, kana kuna dzinobva dzakavimbiswa zvinobva pane system -- membership inogona kubva kuva `active` pane kunzwisisa kana kunge kune kunzwisisa kupfuura kunzwisisa.
 
-### Sei Trials Dzine Kufamba (How Trials End)
+### Sei Trials Dzine Kufamba (How Trials End) {#how-trials-end}
 
 Kana periodi ya trial ya membership yakaita kufamba, system inotevera:
 
@@ -52,13 +52,13 @@ Kana periodi ya trial ya membership yakaita kufamba, system inotevera:
 
 Iyi nzira inotevera panguva yese yekutevera kwecron job, asi **kune memberships dzakavimbiswa nekudzivimbisa (non-auto-renewing)**. Kune trials dzakavimbiswa nekudzivimbisa (auto-renewing), gateway ya pashure inogona kuita kunge kubva kune subscription yakaita kufamba.
 
-## Kubva Kuonana Frontend Access
+## Kubva Kuonana Frontend Access {#block-frontend-access}
 
 Nekuti, ngachikumbira kuti ndikubatsire kuita iye.
 
 Zvinotevera, kana membership inenge inenge yakaraira kana inenge inenge yakapera (on hold), **chote chinobva kuno chiri kuitwa chete wp-admin dashboard**. Frontend ya site inenge yenyu inenge yakabva kuona nevanhu vose. Kuti unenge ukabva kuona nevanhu vose, unofanira kuwisa (enable) setting **Block Frontend Access**.
 
-### Kuita Setting Iyi
+### Kuita Setting Iyi {#configuring-the-setting}
 
 Enda kuenda kune **Ultimate Multisite > Settings > Memberships** uye wisa (enable) **Block Frontend Access**.
 
@@ -76,7 +76,7 @@ Ndinenge zvinhu zviri kuita iye zvinotevera:
 | **Frontend Block Grace Period** | Ndivo nshwari dzinenge dziri kuita panguva membership inenge inenge yakapera pane kuti iwe utore (wait) panguva inenge inenge yakabva kubva kuteerera. Iyi inenge yakaitwa `0` kuti ibva kuno kubva zvakaita se mberi. | 0 |
 | **Frontend Block Page** | Iyi page yakanaka (page) pane site yacho inenge inobva kuita redirection yemvanhu kana site inenge inenge yakabva kubva kuteerera. Kana isingazivikanzi, vanhu vanenge vachiona chishoma chete "Site isingazivikanzi mberi." ne link kune login page ya admin yenyu. | None |
 
-### Chii Chichiona Vanhu Pane Site Inenge Yakabva Kubva
+### Chii Chichiona Vanhu Pane Site Inenge Yakabva Kubva {#what-visitors-see-when-a-site-is-blocked}
 
 Kana frontend inenge yakabva kubva, vanhu vachiona iye:
 
@@ -85,7 +85,7 @@ Kana frontend inenge yakabva kubva, vanhu vachiona iye:
 
 Site admins vanenge vachivaka (log in) -- login page haingazivikanzi.
 
-### Chii Chinobva Kubva uye Nenzani
+### Chii Chinobva Kubva uye Nenzani {#what-gets-blocked-and-when}
 
 Kuti iye inenge yakabva kubva, nzira inenge inenge yakaita kunge inenge yakaitwa nemembership status:
 
@@ -106,7 +106,7 @@ Pasiye ku settings page yese, ndichinyira **Frontend Block Grace Period** value.
 
 Chingira ku `0` kana uchida kufamba neblocking ngayerei kana membership ine kuitwa inactive.
 
-### 3. Chivisa Kana Status Ya Membership Inenge Yakazvikanwa
+### 3. Chivisa Kana Status Ya Membership Inenge Yakazvikanwa {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Pasiye ku **Ultimate Multisite > Memberships** uye chivisa status ya membership inenge yakagadzirwa. Kana inenge inoratidza `active` kana iweya kubva panguva ya expiration, zvinhu zvakaita kuti transition ya status isingazvinobva. Zvinhu zvakakosha:
 
@@ -114,7 +114,7 @@ Pasiye ku **Ultimate Multisite > Memberships** uye chivisa status ya membership 
 
 - **Cron job haingazovaka**: Tinga kuona step inotevera.
 
-### 4. Chivisa Kana Action Scheduler Inenge Inotenderera
+### 4. Chivisa Kana Action Scheduler Inenge Inotenderera {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Ultimate Multisite inoshandisa Action Scheduler kuti cron jobs dzake dzine. Pasiye ku **Tools > Scheduled Actions** mu network admin uye tinga kuona:
 
@@ -136,7 +136,7 @@ Kuti usimbire kuti cron iwe ine ufanana, shandisa job ya cron ya system:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Kuona Matambudziko ek Gateway Webhook (Memberships inotore nekuvakawo)
+### 5. Kuona Matambudziko ek Gateway Webhook (Memberships inotore nekuvakawo) {#2-check-the-frontend-block-grace-period}
 
 Kana membership inotore nekubatsira kwakawanda uye subscription ya gateway yakavara (cancelled) kana yakabatsirwa, asi Ultimate Multisite inoratidza kuti inenge `active`:
 
@@ -145,7 +145,7 @@ Kana membership inotore nekubatsira kwakawanda uye subscription ya gateway yakav
 
 Kana gateway inoratidza kuti subscription yakavara asi Ultimate Multisite haino, notification ya webhook inogona kuva yakadzikwa. Unogona kubatana status ya membership manually mu **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Kuona Grace Period yekupfuura (Cron Level)
+### 6. Kuona Grace Period yekupfuura (Cron Level) {#3-confirm-the-membership-status-has-actually-changed}
 
 Check ya cron inenge inei grace period yayo (default: 3 days) panguva inoreva membership yakapfuura. Izvi zvinotanga zvakasiyana negrace period ya frontend block. Nhoro yakanaka nedzimba dzese kuti site iwe ine kuva kuitwa blocked inogona kuva:
 
@@ -153,7 +153,7 @@ Check ya cron inenge inei grace period yayo (default: 3 days) panguva inoreva me
 
 Kune, nechinine kuti unenge wazvifunga. Nezvinhu zvakakosha nezveWordPress.
 
-### 7. Kuva Kuti Membership Ione (Manually Expire a Membership)
+### 7. Kuva Kuti Membership Ione (Manually Expire a Membership) {#4-verify-action-scheduler-is-running}
 
 Kana uchida kuva nesitei (site) mufaro nemashure anogona kuitwa, usina kukosha kuti uonde kana cron cycle inotarisirwa, unogona kuunda status yemembership wese:
 
@@ -164,7 +164,7 @@ Kana uchida kuva nesitei (site) mufaro nemashure anogona kuitwa, usina kukosha k
 
 Frontend block uchaonekwa panguva unorega page (subject to Frontend Block Grace Period kuti memberships dzakavara, kana mufaro dzakavara).
 
-## Zvinovhu (Summary)
+## Zvinovhu (Summary) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Moyo wese wekuti date yeexpiration kuita site blocking:
 
@@ -196,7 +196,7 @@ Kana membership inosimbisa, mhando inenge yakapfuura date yeexpiration (hakuna g
   Site frontend inenge inogona kuone mufaro anokosha
 ```
 
-## Reference Kune Developers
+## Reference Kune Developers {#6-check-the-expiration-grace-period-cron-level}
 
 Hooks uye filters izvi dzichizovalira kuti uonde wazvifunga expiration uye kuratidza blocking:
 

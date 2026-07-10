@@ -3,11 +3,11 @@ title: Aftësitë e ndjeshme ndaj temës
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Aftë Skills të Ndjeshmërisme ndaj Temës
+# Aftë Skills të Ndjeshmërisme ndaj Temës {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 merr me vete katër aftësi të reja që janë të ndjeshme ndaj temës dhe automatikisht sekuatojnë temën WordPress aktuale tënde. Këto aftësi ofrojnë udhëzime dhe kapacitete të specializuara të përshtatura me arkitekturën dhe veçoritë e temës suaj.
 
-## Çfarë janë Aftësitë e Ndjeshmërisme ndaj Temës?
+## Çfarë janë Aftësitë e Ndjeshmërisme ndaj Temës? {#what-are-theme-aware-skills}
 
 Aftësitë e ndjeshmërisme ndaj temës janë baza e njohurive dhe setet e mjeteve të parakonfiguruara që asistent AI i zgjedh automatikisht bazuar në temën WordPress aktuale në faqen tuaj. Kur ndryshoni tema, aftësitë e disponueshme të asistentit përditësohen automatikisht — nuk kërkohet konfigurim manual.
 
@@ -18,9 +18,9 @@ Secara aftësi përfshin:
 - **Shembuj personalizimi** — fragmente kode dhe modele konfigurimi për detyra të zakonshme
 - **Praktikat më të mira** — rekomandime për arkitekturën dhe procesin e punës së temës
 
-## Aftësitë e Disponueshme të Ndjeshmërisme ndaj Temës
+## Aftësitë e Disponueshme të Ndjeshmërisme ndaj Temës {#available-theme-aware-skills}
 
-### Temat me Blokë (Block Themes)
+### Temat me Blokë (Block Themes) {#block-themes}
 
 **Aplikim:** Temat që përdorin arkitekturën bazuar në bloka (Full Site Editing) të WordPress.
 
@@ -34,7 +34,7 @@ Aftësia Block Themes ofron udhëzime për:
 
 **Aktivizo automatikisht kur:** Tema aktuale juaj është një temë me blok (mbështet funksionin `block-templates`).
 
-### Temat Klasike (Classic Themes)
+### Temat Klasike (Classic Themes) {#classic-themes}
 
 **Aplikim:** Temat tradicionale WordPress që përdorin template PHP dhe editorin klasik.
 
@@ -50,7 +50,7 @@ Përmbledhja e dokumentacionit:
 
 **Aktivizo automatikisht kur:** Tema aktuale juaj është një temë klassike (jo block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Applikon për:** Shte që përdorin pluginin Kadence Blocks për dizajn të avancuar bazuar në blloqe.
 
@@ -64,7 +64,7 @@ Aftësia Kadence Blocks ju ofron udhëzime mbi:
 
 **Aktivizo automatikisht kur:** Pluginin Kadence Blocks është aktiv në faqen tuaj.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Applikon për:** Shte që përdorin temën Kadence për dizajn bazuar në blloqe dhe personalizim.
 
@@ -78,15 +78,15 @@ Aftësia Kadence Theme ju ofron udhëzime mbi:
 
 **Aktivizo automatikisht kur:** Tema Kadence është tema aktuale juaj.
 
-## Si zgjidhen Aftësitë (Skills)
+## Si zgjidhen Aftësitë (Skills) {#how-skills-are-selected}
 
 Asistenti zbulon automatikisht temën tuaj aktive dhe pluginet e instaluara në çdo mesazh. Nëse një aftësi që i përshtatet me temën është e disponueshme, ajo ngarkohet automatikisht në kontekstin e asistentit. Nuk keni nevojë ta aktivizoni ose ndryshoni aftësitë manualisht.
 
-### Aftësi të shumta
+### Aftësi të shumta {#multiple-skills}
 
 Nëse disa aftësi (skills) i aplikojnë në faqen tuaj (për shembull, nëse keni të aktivizuar si Kadence Blocks dhe Kadence Theme), asistentit mund të aksesojë të gjitha aftësitë e përdërtuara dhe mund të referohet udhëzimeve nga secili prej tyre.
 
-### Ndryshimi i Temave (Switching Themes)
+### Ndryshimi i Temave (Switching Themes) {#switching-themes}
 
 Kur ndryshoni temën aktuale, aftësitë e disponueshme të asistentit përditësohen automatikisht në mesazhin tjetër. Për shembull:
 
@@ -94,11 +94,11 @@ Kur ndryshoni temën aktuale, aftësitë e disponueshme të asistentit përditë
 2. Ndryshoni te një temë klasike (classic theme).
 3. Në mesazhin tuaj të ardhshëm, aftësia **Classic Themes** ngarkohet automatikisht dhe aftësia **Block Themes** nuk është më e disponueshme.
 
-## Përdorimi i Aftësive të Ndjeshme ndaj Temës (Using Theme-Aware Skills)
+## Përdorimi i Aftësive të Ndjeshme ndaj Temës (Using Theme-Aware Skills) {#using-theme-aware-skills}
 
 Për të përfshirë një aftësi të ndjeshme ndaj temës, thjesht përshkruani se çfarë dëshironi të bëni në interfejsin e bisedës. Asistenti do të referohet automatikisht udhëzimeve të aftësisë e duhur.
 
-### Shembuj Pyetjeve (Example Prompts)
+### Shembuj Pyetjeve (Example Prompts) {#example-prompts}
 
 **Për Block Themes:**
 > "Krijoni një seksion hero me imazh sfondi dhe tekst i qendruar duke përdorur modele blloqesh."

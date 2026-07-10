@@ -3,11 +3,11 @@ title: A'zolik muddati tugashi va sayt bloklash
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# A'zo Bo'lish Muddati va Sayt Bloklash
+# A'zo Bo'lish Muddati va Sayt Bloklash {#membership-expiration-and-site-blocking}
 
 Bu qo'llanma Ultimate Multisite ning a'zo bo'lish muddati tugashi, sinov davrlari yakunlanishi va frontend saytlarni bloklash jarayonini tushuntiradi. U a'zo bo'lishning faol holatdan tugagan holatgacha bo'lgan butun siklini, saytlar bloklanishini boshqaradigan sozlamalarni va a'zo muddati tugagandan so'ng saytlarning qanday kirish mumkinligini tekshirish kerak bo'lgan narsalarni o'z ichiga oladi.
 
-## A'zo Bo'lish Holati Sikli
+## A'zo Bo'lish Holati Sikli {#membership-status-lifecycle}
 
 Ultimate Multisite dagi har bir a'zo bo'lishning quyidagi holatlardan biri mavjud:
 
@@ -24,7 +24,7 @@ Bepul a'zo bo'lishlar avtomatik tugamaydi. Ultimate Multisite ularni umr bo'yi k
 | **Expired** | Muddati o'tgan va yangilashsiz kech qo'llanilish muddati tugagan |
 | **Cancelled** | Mijoz yoki administrator tomonidan aniq bekor qilingan |
 
-### A'zoliklar Qanday Tugallanishi (Expired) Holatiga O'tadi
+### A'zoliklar Qanday Tugallanishi (Expired) Holatiga O'tadi {#how-memberships-transition-to-expired}
 
 Ultimate Multisite har soatda avtomatik tekshiruv o'tkazadi va a'zoliklar muddati tugaganligi sababli belgilanishi kerak bo'lgan a'zoliklarni qidiradi. Bu tekshiruv [Action Scheduler](https://actionscheduler.org/) (to'g'ridan-to'g'ri WP-Cron emas) orqali va `wu_membership_check` jadvallangan harakat sifatida ishlaydi.
 
@@ -34,7 +34,7 @@ Cheklov (expiration) tekshiruvi default holda **3 kunlik muddatli uzatma davriga
 3 kunlik muddatli uzatma davri quyida tavsiflanadigan Frontend Block Grace Period sozlamasidan alohida hisoblanadi. Cheklov muddati status **active/on-hold** dan `expired` ga o'tgan paytda qachon o'zgarganini boshqaradi. Frontend blok muddatli uzatma davri esa status o'zgargandan keyin sayt qachon **bloklanishini** boshqaradi.
 :::
 
-#### Avtomatik yangilanuvchi va avtomatik yangilanmaydigan a'zo bo'lishliklar
+#### Avtomatik yangilanuvchi va avtomatik yangilanmaydigan a'zo bo'lishliklar {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Bu farq cheklovning ishlashini tushunish uchun juda muhimdir:
 
@@ -42,7 +42,7 @@ Bu farq cheklovning ishlashini tushunish uchun juda muhimdir:
 
 - **Avtomatik uzaytiriladigan a'zoliklar** (`auto_renew = true`): Cron muddati tekshiruvi **bularni butunlay o'tkazib yuboradi**. To'lov eshlab qoluvchisi (Stripe, PayPal va h.k.) obuna tugagan yoki bekor qilinganida Ultimate Multisite ga webhook orqali xabar berishi kutiladi. Agar webhook kelmasa -- noto'g'ri sozlangandishi, gateway ishlamay qolganligi yoki tizim tashqarisida bekor qilingan obuna tufayli -- a'zolik muddati o'tganidan keyin ham doimiy ravishda `active` (faol) bo'lib qolaveradi.
 
-### Sinovlardan Qanday Yakunlanadi
+### Sinovlardan Qanday Yakunlanadi {#how-trials-end}
 
 Sinov davri tugaganda, tizim:
 
@@ -52,11 +52,11 @@ Sinov davri tugaganda, tizim:
 
 Бу жараён дастурнинг одатдаги муддатни текшириш расми билан бир хил соатлик жадвалида ишга тушади, лекин **фақат автоматик янгиланиш бўлмаган аъзоликлар учун**. Автоматик янгиланиб бораётган тариботи (trial) учун тўлов этакчи (payment gateway) тариботан тўланган аъзоликка ўтиш ҳақидаги ўзгартиришларни бажаради.
 
-## Frontend кириш блокларини бロッқлаш
+## Frontend кириш блокларини бロッқлаш {#block-frontend-access}
 
 Дефолт ҳолатда, аъзолик муддати тугагани ёки у тозаланиб қолса, **фақат `wp-admin` дашборни чекланади**. Сайтнинг оммавий фронтенди (frontend) мезонидан кириш учун очиқ қолади. Оммавий киришни ҳам бロッқлаш учун **Block Frontend Access** sozlamасини фаоллаштиришингиз керак.
 
-### Созламаларни конфигурация қилиш
+### Созламаларни конфигурация қилиш {#configuring-the-setting}
 
 **Ultimate Multisite > Settings > Memberships** ga o'ting va **Block Frontend Access** ni yoqing (enable qiling).
 
@@ -74,7 +74,7 @@ Bu xulq-atvorni boshqaradigan uchta bog'liq sozlamalar mavjud:
 | **Frontend Bloklash Muddatini** | A'zo bo'lish faolligi bekor qilingandan so'ng bloklash uchun kutish kunlari soni. Darhol bloklash uchun `0` ga sozlang. | 0 |
 | **Frontend Bloklanadigan Sahifa** | Sayt bloklanganida tashrif buyuruvchilarni qayta yo'naltirish uchun asosiy saytdagi sahifa. Agar sozlamasa, tashrif buyuruvchilar umumiy "Sayt mavjud emas" xabarini ko'rishadi. | Yo'q |
 
-### Sayt Bloklanganda Tashrif Buyuruvchilar Nima Ko'radi
+### Sayt Bloklanganda Tashrif Buyuruvchilar Nima Ko'radi {#what-visitors-see-when-a-site-is-blocked}
 
 Frontend kirish bloklanganida, saytga kelgan tashrif buyuruvchilar quyidagilardan birini qiladi:
 
@@ -83,7 +83,7 @@ Frontend kirish bloklanganida, saytga kelgan tashrif buyuruvchilar quyidagilarda
 
 Sayt administratorlari login qila olishadi -- login sahifasi hech qachon bloklanmaydi.
 
-### Nima Bloklanadi va Qachon
+### Nima Bloklanadi va Qachon {#what-gets-blocked-and-when}
 
 Bloklash xulq-atvori a'zolik holatiga bog'liq:
 
@@ -104,23 +104,23 @@ Sinov muddati tugagan bo'lsa ham, `trialing` holatidagi a'zolik **frontend**da b
 Bekor qilingan a'zoliklar Blok Frontend Access yoqilgan bo'lsa ham, muddati o'tganidan so'ng doim bloklanadi. Frontend Block Grace Period bekor qilingan a'zoliklar uchun **qo'llanilmaydi**.
 :::
 
-## Muammolarni hal qilish: Muddati o'tganidan keyin saytlar kirish mumkin bo'lishi
+## Muammolarni hal qilish: Muddati o'tganidan keyin saytlar kirish mumkin bo'lishi {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 
 
 Agar saytlar aʼzo boʻlish muddati tugagandan keyin ommaviy (public) qolgan boʻlsa, quyidagi tekshiruvlarni ketma-ket bajarib koʻring:
 
-### 1. Blokning Oldingi Qismga Kirish (Frontend Access) Sozlamasini Faollashtiring
+### 1. Blokning Oldingi Qismga Kirish (Frontend Access) Sozlamasini Faollashtiring {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 **Ultimate Multisite > Settings > Memberships** ga o‘ting va **Block Frontend Access** tugmasi yoqilganligini tasdiqlang. Bu sozlama **standart holda o‘chirilgan** bo‘ladi, bu esa aʼzo boʻlish holati faollashtirilmagan (inactive) boʻlganda faqat wp-adminga cheklov qo‘yilishi degani.
 
-### 2. Oldingi Qism uchun Cheklov Muddasini Tekshiring
+### 2. Oldingi Qism uchun Cheklov Muddasini Tekshiring {#2-check-the-frontend-block-grace-period}
 
 Ayni sozlamalar sahifasida **Frontend Block Grace Period** qiymatini tekshiring. Masalan, bu 7 kunga olingan boʻlsa, aʼzo boʻlish muddati tugaganidan 7 kun o‘tgachgacha oldingi qism bloklanmaydi — hatto aʼzo holati allaqachon `expired` (tugagan) bo‘lgan bo‘lsa ham.
 
 Agar aʼzo boʻlish holati faollashtirilmaganlar uchun darhol bloklashni istasangiz, buni `0` ga sozlang.
 
-### 3. A'zo Holatining Haqiqatan O'zgarganligini Tasdiqlash
+### 3. A'zo Holatining Haqiqatan O'zgarganligini Tasdiqlash {#3-confirm-the-membership-status-has-actually-changed}
 
 **Ultimate Multisite > Memberships** qismiga o'ting va ta'sir qilgan a'zolikning holatini tekshiring. Agar u muddati o'tgan bo'lsa ham hali ham `active` (faol) ko'rsatsa, holat o'zgarishi sodir bo'lmagan degani. Odatdagi sabablari:
 
@@ -128,7 +128,7 @@ Agar aʼzo boʻlish holati faollashtirilmaganlar uchun darhol bloklashni istasan
 
 - **cron ishlamagan:** Keyingi qadamga qarang.
 
-### 4. Action Scheduler Ishlayotganini Tasdiqlash
+### 4. Action Scheduler Ishlayotganini Tasdiqlash {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite o'zining cron joblari uchun Action Scheduler dan foydalanadi. Network admin panelida **Tools > Scheduled Actions** (Vositalar > Jadvallangan harakatlar) bo'limiga kiring va quyidagilarni qidiring:
 
@@ -150,7 +150,7 @@ Ishonchli cron ishga tushishi uchun tizim cron job'ini sozlang:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Gateway Webhook muammolarini tekshirish (Avtomatik yangilanuvchi a'zoliklar)
+### 5. Gateway Webhook muammolarini tekshirish (Avtomatik yangilanuvchi a'zoliklar) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Agar a'zolik avtomatik yangilansa va gateway obunasi bekor qilingan yoki muvaffaqiyatsiz bo'lgan bo'lsa, lekin Ultimate Multisite uni `active` (faol) ko'rsatib turgan bo'lsa:
 
@@ -159,7 +159,7 @@ Agar a'zolik avtomatik yangilansa va gateway obunasi bekor qilingan yoki muvaffa
 
 Agar gateway obunani bekor deb ko'rsatsa, lekin Ultimate Multisiteda shunday bo'lmasa, ehtimol webhook xabari yo'qqa qolib ketgan. Siz **Ultimate Multisite > Memberships > [Edit Membership]** orqali a'zolik holatini qo'lda o'zgartirishingiz mumkin.
 
-### 6. Muddatlarni Tekshirish (Cron Darajasi)
+### 6. Muddatlarni Tekshirish (Cron Darajasi) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron tekshiruvi ham o'zining osonlik davri (default: 3 kun) mavjud, bu esa a'zolikni tugatilgan deb belgilashdan oldin sodir bo'ladi. Bu frontend blokning osonlik davriga nisbatan alohida hisoblanadi. Sayt bloklanishdan oldingi umumiy vaqt quyidagicha bo'lishi mumkin:
 
@@ -167,7 +167,7 @@ Cron tekshiruvi ham o'zining osonlik davri (default: 3 kun) mavjud, bu esa a'zol
 
 Masalan, default sozlamalar va 7 kunlik frontend osonlik davri bilan, sayt haqiqatdan ham bloklanishidan oldin `date_expiration` dan keyin 10 kungaча vaqt ketishi mumkin.
 
-### 7. A'zolikni qo'lda tugatish
+### 7. A'zolikni qo'lda tugatish {#7-manually-expire-a-membership}
 
 Agar siz cron siklini kutmasdan darhol saytni bloklash kerak bo'lsa, a'zolik holatini qo'lda o'zgartirishingiz mumkin:
 
@@ -178,7 +178,7 @@ Agar siz cron siklini kutmasdan darhol saytni bloklash kerak bo'lsa, a'zolik hol
 
 Frontend block yangi sahifa yuklanganda amalga oshadi (vazifalar muddati tugagan a'zoliklar uchun Frontend Block Grace Period yoki bekor qilingan a'zoliklar uchun darhol).
 
-## Xulosa
+## Xulosa {#summary}
 
 tugash sanasidan sayt bloklanishigacha bo'lgan to'liq muddat:
 
@@ -210,7 +210,7 @@ Bekor qilingan a'zoliklar uchun yo'l qisqaroq:
   Sayt frontend darhol bloklanadi
 ```
 
-## Developer Reference
+## Developer Reference {#developer-reference}
 
 Quyidagi hooklar va filterlar sizga muddati tugash (expiration) va bloklash xatti-harakatini sozlash imkonini beradi:
 

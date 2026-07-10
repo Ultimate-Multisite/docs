@@ -1,109 +1,120 @@
 ---
-title: Manejo de Impuestos
+title: Gestión de impuestos
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Manejo de impuestos
+# Gestión de impuestos {#tax-handling}
 
-Ultimate Multisite tiene un módulo de recaudación de impuestos incorporado en nuestro plugin principal, por lo que si necesita recaudar impuestos sobre sus planes, paquetes y servicios, puede hacerlo fácilmente sin recurrir a la instalación de complementos.
+Ultimate Multisite tiene un módulo de recaudación de impuestos integrado en nuestro plugin principal, así que si necesitas recaudar impuestos sobre ventas en tus planes, paquetes y servicios, puedes hacerlo fácilmente sin recurrir a instalar ningún complemento.
 
-Para las empresas ubicadas en Europa, ofrecemos un **add-on** que añade herramientas y funciones para mejorar el soporte de VAT.
+Para empresas ubicadas en Europa, ofrecemos un **complemento** que añade herramientas y funciones para **dar mejor soporte al VAT** compliance.
 
-Ultimate Multisite no presenta ni remite impuestos en su nombre al gobierno; simplemente le ayudamos a recaudar los impuestos apropiados en el momento de la transacción. **Todavía tendrá que remitir los impuestos por su cuenta.**
+Ultimate Multisite no presenta ni remite impuestos en tu nombre al gobierno; simplemente te ayudamos a recaudar los impuestos correspondientes en el momento de la transacción. **Aun así, tendrás que remitir los impuestos por tu cuenta.**
 
-## Habilitando la recolección de impuestos
+## Habilitar la recaudación de impuestos {#enabling-tax-collection}
 
-La recolección de impuestos no está habilitada por defecto. Para activarla, debe ir a **Ultimate Multisite > Settings > Taxes** y activar la opción Enable Taxes.
+La recaudación de impuestos no está habilitada de forma predeterminada. Para habilitarla, debes ir a **Ultimate Multisite > Settings > Taxes** y activar el ajuste Enable Taxes.
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![Alternador Enable Taxes en la parte superior de la página de ajustes de impuestos](/img/config/settings-taxes-enable.png)
 
-### Impuesto excluido vs. impuesto incluido
+Aquí tienes una vista completa de la página de ajustes de impuestos:
 
-Por defecto, todos los precios de sus productos están excluidos de impuestos, lo que significa que los impuestos **no están incluidos** en el precio del producto. Si determinamos que un cliente debe pagar impuestos sobre una compra determinada, añadiremos los impuestos **sobre** el subtotal.
+![Página completa de ajustes de impuestos](/img/config/settings-taxes-full.png)
 
-Si prefiere que los impuestos estén incluidos en el precio de su producto, puede hacerlo habilitando la opción **Inclusive Tax**.
+También puedes ver los ajustes de impuestos para productos individuales:
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![Ajustes de impuestos para productos](/img/config/settings-taxes.png)
 
-No olvide **guardar** los cambios que haya realizado.
+### Impuestos excluidos vs. impuestos incluidos {#tax-excluded-vs-tax-included}
 
-## Creación de tasas de impuestos
+De forma predeterminada, todos los precios de tus productos excluyen impuestos, lo que significa que los impuestos **no están incluidos** en el precio del producto. Si determinamos que un cliente debe pagar impuestos en una compra determinada, añadiremos los impuestos **encima** del subtotal.
 
-Después de habilitar la recolección de impuestos, deberá crear tasas de impuestos para ubicaciones específicas utilizando nuestro editor de tasas de impuestos.
+Si prefieres que los impuestos estén incluidos en el precio de tu producto, puedes hacerlo habilitando el ajuste **Inclusive Tax**.
 
-Puede acceder al editor haciendo clic en el botón **Manage Tax Rates** en la barra lateral de la página de configuración de impuestos.
+![Fila del alternador Inclusive Tax debajo del ajuste Enable Taxes](/img/config/settings-taxes-inclusive.png)
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+No olvides **guardar** los cambios que has realizado.
 
-En la página del editor de tasas de impuestos, puede agregar nuevas Tasas de Impuestos haciendo clic en el botón **Add new Row**.
+###
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+## Crear tasas impositivas {#creating-tax-rates}
 
-Deberá asignar a cada tasa de impuesto un **title** (utilizado en las facturas). Luego puede elegir el **country** (obligatorio), el **state** y la **city** (ambos opcionales) donde se cobrará este impuesto. Finalmente, añada la **tax rate in percents**.
+Después de habilitar la recaudación de impuestos, tendrás que crear tasas impositivas para ubicaciones específicas usando nuestro editor de tasas impositivas.
 
-### Categorías de impuestos
+Puedes acceder al editor haciendo clic en el botón **Manage Tax Rates** en la barra lateral de la página de ajustes de impuestos.
 
-También puede crear múltiples Categorías de Impuestos, para añadir diferentes tasas de impuestos para distintos tipos de productos.
+![Enlace Manage Tax Rates en el panel Tax Rates de la página de ajustes](/img/config/settings-taxes-manage-rates.png)
 
-Haga clic en **Add new Tax Category**, luego escriba el nombre de su categoría y presione **Create**.
+En la página del editor de tasas impositivas, puedes añadir nuevas tasas impositivas haciendo clic en el botón **Add new Row**.
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+![Tabla del editor de tasas impositivas con el botón Add new Row en la parte superior](/img/config/tax-rates-editor.png)
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+Tendrás que dar a cada tasa impositiva un **título** (usado en las facturas). Luego puedes elegir el **país** (obligatorio), el **estado,** y la **ciudad** (ambos opcionales) donde se cobrará este impuesto. Por último, añade la **tasa impositiva en porcentajes**.
 
-Para navegar por las categorías, haga clic en **Switch** y seleccione la categoría a la que desea agregar nuevos impuestos.
+### Categorías de impuestos {#tax-categories}
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+También puedes crear varias categorías de impuestos, para añadir diferentes tasas impositivas para distintos tipos de productos.
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+Haz clic en **Add new Tax Category** , luego escribe el nombre de tu categoría y pulsa **Create**.
 
-Puede establecer la categoría de impuesto para un producto en particular yendo a la **Product edit page** y luego a la pestaña Taxes.
+![Botón Add new Tax Category en la parte superior del editor de tasas impositivas](/img/config/tax-categories-add.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Campo de entrada Tax Category Name en el modal de creación de categoría](/img/config/tax-categories-create-modal.png)
 
-En esa misma pantalla, puede desactivar el interruptor **Is Taxable?** para indicar a Ultimate Multisite que no debe recaudar impuestos sobre ese producto.
+Para navegar por las categorías, haz clic en **Switch** y selecciona la categoría a la que quieres añadir nuevos impuestos.
 
-## Soporte de IVA europeo
+![Botón desplegable Switch para cambiar entre categorías de impuestos](/img/config/tax-categories-switch.png)
 
-Como se mencionó antes, tenemos un add-on disponible para clientes en la UE que tienen requisitos adicionales debido a las regulaciones de IVA europeo.
+![Desplegable selector de categorías de impuestos que muestra las categorías disponibles](/img/config/tax-categories-select.png)
 
-Nuestras herramientas de IVA ayudan con un par de cosas importantes:
+Puedes establecer la categoría de impuestos para un producto concreto yendo a la **página de edición del producto** y luego a la pestaña Taxes.
 
-  * Carga sencilla de tasas de IVA de la UE;
-  * Recolección y validación de números de IVA - y cargo inverso para entidades exentas de IVA (como empresas con números de IVA válidos);
+![Pestaña de impuestos del producto con categoría de impuestos y alternador taxable](/img/config/product-taxes.png)
 
-Para instalar ese add-on, vaya a **Ultimate Multisite > Settings** y luego haga clic en el enlace de la barra lateral **Check our Add-ons**.
+En esa misma pantalla, puedes desactivar el alternador **Is Taxable?** para indicar a Ultimate Multisite que no debe recaudar impuestos en ese producto determinado.
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+## Soporte para VAT europeo {#european-vat-support}
 
-Será redirigido a nuestra página de complementos. Allí, puede buscar el **Ultimate Multisite VAT add-on** y instalarlo.
+Como se mencionó antes, tenemos un complemento disponible para clientes en la UE que tienen requisitos adicionales debido a las normativas europeas de VAT.
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+Nuestras herramientas de VAT ayudan con un par de cosas importantes:
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+  * Carga sencilla de las tasas de VAT de la UE;
 
-Luego, vaya a **Network Admin > Plugins** y active ese add-on a nivel de red.
+  * Recopilación y validación del número de VAT, y aplicación de inversión del sujeto pasivo para entidades exentas de VAT (como empresas con números de VAT válidos);
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+Para instalar ese complemento, ve a **Ultimate Multisite > Settings** y luego haz clic en el enlace de la barra lateral **Check our Add-ons**.
 
-Si vuelve a la pestaña **Tax Settings**, verá nuevas opciones disponibles. Active la opción **Enable VAT Support** para habilitar las nuevas herramientas de IVA. ¡No olvide **guardar** sus ajustes!
+![Barra lateral de la página de ajustes con el enlace Check our Add-ons](/img/config/settings-taxes-addons-link.png)
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+Serás redirigido a nuestra página de complementos. Allí, puedes buscar el **complemento Ultimate Multisite VAT** e instalarlo.
 
-### Descargando tasas de impuestos de IVA
+<!-- Captura de pantalla no disponible: tarjeta del complemento VAT en la página de complementos -->
 
-Una de las herramientas que añade nuestra integración es la capacidad de cargar las tasas de impuestos para los estados miembros de la UE. Esto se puede hacer visitando la página del editor de tasas de impuestos después de habilitar el soporte de IVA de la UE.
+<!-- Captura de pantalla no disponible: diálogo Install Now del complemento VAT -->
 
-En la parte inferior de la página, verá las opciones de descarga de IVA. Seleccionar un tipo de tasa y hacer clic en el botón **Update EU VAT Rates** descargará y completará automáticamente la tabla con las tasas de impuestos para cada estado miembro de la UE. Luego, solo necesita guardarla.
+Luego, ve a **Network Admin > Plugins** y activa ese complemento en toda la red.
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+<!-- Captura de pantalla no disponible: acción Network Activate para el complemento VAT en la página Plugins -->
 
-También puede editar los valores después de descargarlos. Para hacerlo, simplemente edite la línea de la tabla que necesite y haga clic para guardar los nuevos valores.
+Si vuelves a la **pestaña Tax Settings** , verás nuevas opciones disponibles. Activa la opción **Enable VAT Support** para habilitar las nuevas herramientas de VAT. ¡No olvides **guardar** tus ajustes!
 
-### Validación de IVA
+<!-- Captura de pantalla no disponible: alternador Enable VAT Support en los ajustes de impuestos después de la activación del complemento -->
 
-Cuando el soporte de IVA está habilitado, Ultimate Multisite agregará un campo adicional al formulario de pago, debajo del campo de dirección de facturación. El campo solo aparecerá para clientes ubicados en la UE.
+### Importar tasas impositivas de VAT {#pulling-on-vat-tax-rates}
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+Una de las herramientas que añade nuestra integración es la capacidad de cargar las tasas impositivas de los estados miembros de la UE. Esto se puede hacer visitando la página del editor de tasas impositivas después de habilitar el soporte para VAT de la UE.
 
-Ultimate Multisite luego validará el número de IVA y, si resulta ser válido, se aplicará el mecanismo de cargo inverso y la tasa de impuesto se establecerá en 0% en ese pedido.
+En la parte inferior de la página, verás las opciones de importación de VAT. Seleccionar un tipo de tasa y hacer clic en el botón **Update EU VAT Rates** importará y rellenará automáticamente la tabla con las tasas impositivas de cada estado miembro de la UE. Luego, solo necesitas guardarlo.
+
+![Botón Update EU VAT Rates en la parte inferior del editor de tasas impositivas](/img/config/tax-rates-vat-pull.png)
+
+También puedes editar los valores después de importarlos. Para hacerlo, simplemente edita la línea de la tabla que necesites y haz clic para guardar los nuevos valores.
+
+### Validación de VAT {#vat-validation}
+
+Cuando el soporte para VAT está habilitado, Ultimate Multisite añadirá un campo adicional al formulario de pago, debajo del campo de dirección de facturación. El campo solo aparecerá para clientes ubicados en la UE.
+
+<!-- Captura de pantalla no disponible: campo VAT Number en el formulario de pago del frontend debajo de la dirección de facturación -->
+
+Ultimate Multisite validará entonces el número de IVA y, si resulta ser válido, se aplica el mecanismo de inversión del sujeto pasivo y la tasa impositiva se establece en 0 % en ese pedido.

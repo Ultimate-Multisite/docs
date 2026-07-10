@@ -1,29 +1,29 @@
 ---
-title: Whakawāhi Awhi AI Settings
+title: Ngā Tautuhinga Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Settings
+# Tautuhinga Gratis AI Agent {#gratis-ai-agent-settings}
 
-Gratis AI Agent-o **Settings → Advanced** skrinni he wero whakamahi administrator-level configuration mō ngā whaiwhihi (integrations) e pātaka i v1.5.0. I roto i tēnei manawa, āwhina atu ahau ki te whakamārama i ngā fields o te **Feedback Endpoint** me te fōmai (format) e kaha ana ia.
+Ko te mata **Tautuhinga → Arā Atu Anō** i Gratis AI Agent e whakarato ana i te whirihoranga taumata-kaiwhakahaere mō ngā whakaurunga tuarongo. Ka tuhi tēnei whārangi i te tuku whakamua urupare, ngā kī kaiwhakarato rapu, te whakarite ratonga Superdav whakahaerehia, ngā mana Google Calendar, ngā tautuhinga SMS TextBee, me ngā haki āhuatanga puta noa i te whatunga.
 
-## Whakarongo i ngā Settings
+## Te Uru ki ngā Tautuhinga {#accessing-settings}
 
-1. I roto i te WordPress admin, pahi ki **Gratis AI Agent → Settings**.
-2. Klik i te tab **Advanced**.
+1. I te whakahaere WordPress, haere ki **Gratis AI Agent → Tautuhinga**.
+2. Pāwhiritia te ripa **Arā Atu Anō**.
 
-## Configuration o te Feedback Endpoint
+## Whirihoranga Pūwāhi Urupare {#feedback-endpoint-configuration}
 
-Ko te feedback endpoint e pēnei i te POST requests mai i te AI agent i roto i roto i ngā wā e whaiwhia te whakamārama o te mea whai whakaaro (feedback) e whaiwhia ai te user i te button o te thumbs-down, te auto-prompt banner, heta te command `/report-issue`.
+Ka whiwhi te pūwāhi urupare i ngā tono POST mai i te kaiāwhina AI i ngā wā katoa ka tuku urupare tētahi kaiwhakamahi mā te pātene koromatua-ki-raro, te kara akiaki-aunoa, te whakahau `/report-issue` rānei.
 
-| Field | Whakaraupoko |
+| Āpure | Whakaahuatanga |
 |---|---|
-| **Feedback Endpoint URL** | Ko te URL e pēnei i te POST requests mai i te feedback submissions me te body JSON. |
-| **Feedback API Key** | He bearer token e pēnei i te `Authorization` header o every feedback request. Whakarongo ki te blank (blank) i te whakatū, ko te endpoint moero ana i te authentication. |
+| **URL Pūwāhi Urupare** | Te URL ka whiwhi i ngā tukunga urupare hei tono HTTP POST me tētahi tinana JSON. |
+| **Feedback API Key** | He bearer token ka tukuna ki te `Authorization` header o ia tono urupare. Waiho kia wātea mēnā kāore tō pūwāhi e tono motuhēhēnga. |
 
-### Payload JSON E kaha ana ia
+### Kawenga JSON e Tūmanakohia Ana {#expected-json-payload}
 
-Me tino akcepti te feedback endpoint body JSON me ngā fields berikut:
+Me whakaae tō pūwāhi urupare ki tētahi tinana JSON me ēnei āpure e whai ake nei, i te iti rawa:
 
 ```json
 {
@@ -34,86 +34,119 @@ Me tino akcepti te feedback endpoint body JSON me ngā fields berikut:
 }
 ```
 
-He pōmai (payload) whai whakaaro e taea te hoatu i runga i te context o te conversation.
+Ka noho pea he āpure anō i roto i te kawenga, e ai ki te horopaki o te kōrerorero.
 
-### Ngā Whakarau `triage_category`
+### Uara `triage_category` {#triagecategory-values}
 
-Ko te layer o triage o te AI e whai whakaaro i tēnei values ki `triage_category` mō te whakamahi i te payload:
+Ka tautapa te paparanga whakarōpū AI i tētahi o ngā uara e whai ake nei ki `triage_category` i mua i te tuku whakamua i te kawenga:
 
-| Value | He aha? |
+| Uara | Tikanga |
 |---|---|
-| `factual_error` | Ko te assistant i hoatu information wairua (factual) e pēnei. |
-| `unhelpful_answer` | Ko te response i tika anga, engari āhua kino ana. |
-| `inappropriate_content` | Ko te response i whai whakaaro (content) e taea ona whakaatanga ki ngā user. |
-| `other` | Ko te feedback i waenga i ngā category e pēnei. |
+| `factual_error` | I tukuna e te kaiāwhina he pārongo meka hē. |
+| `unhelpful_answer` | I tika ā-hangarau te whakautu, engari kāore i whaihua. |
+| `inappropriate_content` | I roto i te whakautu he ihirangi kāore e tika kia whakaaturia ki ngā kaiwhakamahi. |
+| `other` | Kāore te urupare i ōrite ki tētahi kāwai e mōhiotia ana. |
 
-### Authentication
+### Motuhēhēnga {#authentication}
 
-Māori:
-
-Kia ora! Ko te mea nui, ko ahau e whakatipu i te whakamahi o tēnei dokumentation o WordPress.
-
-Ko te mea nui, ko ahau e whakatipu i te whakamahi o tēnei dokumentation o WordPress.
-
-Ko te mea nui, ko ahau e whakatipu i te whakamahi o tēnei dokumentation o WordPress.
-
-Kia tino tika ana koe i te endpoint (tātai) o koe, he tino mōhio ki te authentication (whakawhanaungatanga), kia rite koe ki te **Feedback API Key** (Mahi Kōrero API Key). Whakarite tēnei field ki te bearer token o koe. Ko te agent e hoki ai:
+Mēnā e tono motuhēhēnga ana tō pūwāhi, tautuhia te āpure **Feedback API Key** ki tō bearer token. Ka tuku te kaiāwhina:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Kia pēnei, ko te **Feedback API Key** field heke ana, he kore header `Authorization` e hoki ai.
+Mēnā he wātea te āpure **Feedback API Key**, kāore he `Authorization` header e tukuna.
 
-### Whakamutunga i te Hua Kōrero (Disabling Feedback Collection)
+### Te Mono i te Kohinga Urupare {#disabling-feedback-collection}
 
-He rite ki te whakatū i te mea, he rite ki te whakamahi o tēnei dokumentation o WordPress.
+Waiho kia wātea ngā āpure **URL Pūwāhi Urupare** me **Feedback API Key** e rua. Ka kitea tonu te pātene koromatua-ki-raro me te UI urupare e ngā kaiwhakamahi, engari kāore ngā tukunga e tukuna whakamua ki tētahi ratonga waho.
 
-Kia rite koe ki te **Feedback Endpoint URL** me te **Feedback API Key**, heke ana ngā field-a. Ko te button e whakaatu te pēpi (thumbs-down) me te UI o te kōrero (feedback UI) ka mau tonu mō ngā mea, engari ko ngā submission (whakawhiti) hei whai ake i te service e kore ana.
+## Brave Search API Key {#brave-search-api-key}
 
-## Brave Search API Key
+Kei te ripa **Arā Atu Anō** hoki, ka whakahohe te āpure **Brave Search API Key** i te āheinga [Rapu Ipurangi](../configuration/internet-search).
 
-He rite ki te whakamahi o tēnei dokumentation o WordPress.
-
-He rite ki te **Advanced** tab, he rite ki te **Brave Search API Key**, ka tino tika ana koe ki te [Internet Search](../configuration/internet-search) ability (whakawhiti i te whakatere i te internet).
-
-| Field | Description |
+| Āpure | Whakaahuatanga |
 |---|---|
-| **Brave Search API Key** | Ko tō API key mai i te developer dashboard o Brave Search. He tino nui ana ki te whakamahi i te whakawhiti i te internet i te AI assistant. |
+| **Brave Search API Key** | Tō kī API mai i te papatohu kaiwhakawhanake Brave Search. E hiahiatia ana hei whakahohe i te rapu ipurangi i roto i te kaiāwhina AI. |
 
-Ko te label o te field he pēpi (clickable link) ki te sign-up page o Brave Search API. Heke ana, he kore e whakatere i te internet.
+Kei roto i te tapanga āpure he hononga pāwhiri ki te whārangi rēhita API Brave Search. Waiho kia wātea hei mono i te rapu ipurangi.
 
-Kia whakaaro i [Internet Search](../configuration/internet-search) mō ngā whakamārama mō te end-user (ngā mea whai tino) mō tēnei feature (whakawhiti).
+Tirohia [Rapu Ipurangi](../configuration/internet-search) mō ngā tuhinga kaiwhakamahi-mutunga mō tēnei āhuatanga.
 
-## Feature Flags
+## Ratonga Superdav Whakahaerehia {#managed-superdav-service}
 
-He rite ki te whakamahi o tēnei dokumentation o WordPress.
+Ka tāpiri a Superdav AI Agent v1.18.0 i ngā pūwāhi ratonga Superdav whakahaerehia me te whakarato hononga aunoa mō ngā pae e tautokona ana. Whakamahia ēnei mana ina me hono tō pae ki te kaiwhakarato manaaki, kaua ki tētahi pūwāhi ratonga kua whirihorahia ā-ringa.
 
-He pōuri i v1.9.0, ko te tab **Settings → Feature Flags** ka mau tonu i ngā toggle switches mō ngā functionality (whakawhiti) e tika ana. He tino whakahou heke ana koe ki te network-wide; he kore override per-site (mō every site) i tēnei wā.
+| Āpure | Whakaahuatanga |
+|---|---|
+| **Ratonga Superdav Whakahaerehia** | Ka whakahohe i te hononga ratonga Superdav manaaki mō ngā pae e tautokona ana. |
+| **Whakarato Hononga** | Ka tīmata i te whakarato pūwāhi me ngā taipitopito tuakiri aunoa. Whakamahia tēnei i muri i te whakaū me whakamahi te pae i te kaiwhakarato whakahaerehia. |
+| **Pūwāhi Ratonga / Tūnga Hononga** | Ka whakaatu i te pūwāhi o nāianei, i te āhua hononga rānei i muri i te whakarato. |
 
-### Whakarongo i Feature Flags
+I muri i te whakarato, tiakina ngā tautuhinga, ā, manatoko i te tūnga hononga i mua i te whakawhirinaki ki ngā rerengamahi ratonga-whakahaerehia. Mēnā ka rahua te whakarato, arotakengia ngā tohutohu ngana-anō kua whakaaturia, ā, whakaūngia kei te pae te whakaaetanga ki te whakamahi i te kaiwhakarato manaaki.
 
-1. I te WordPress admin, pahi ki **Gratis AI Agent → Settings**.
-2. Click the tab **Feature Flags**.
+## Whirihoranga Google Calendar {#google-calendar-configuration}
 
-### Access Control Flags
+Ina whakahohea ngā āhuatanga maramataka Superdav AI Agent v1.18.0, ka taea e te kaiāwhina te pānui i ngā maramataka kua whirihorahia me ngā taipitopito takahanga. He mea anga-ki-te-pānui ngā taputapu maramataka, ā, he whaihua mō ngā whakamaumahara mōhio-ki-te-wātaka, te whai-ake i ngā kaiuru, me te whakaōrite hoapā.
 
-| Flag | Default | Whakarongo |
+| Āpure | Whakaahuatanga |
+|---|---|
+| **Ngā Taipitopito Tuakiri Google Calendar** | Ka rokiroki i ngā taipitopito tuakiri, i te hononga token rānei e hiahiatia ana hei pānui raraunga maramataka. |
+| **Kōwhiringa Maramataka** | Ka whakawhāiti ko ēhea ngā maramataka kua whirihorahia ka āhei te kaiāwhina ki te tirotiro. |
+| **Tūnga Hononga Maramataka** | Ka whakaū mēnā ka taea e ngā taipitopito tuakiri o nāianei te pānui maramataka me ngā takahanga. |
+
+Puritia ngā taipitopito tuakiri maramataka kia whāiti ki ngā maramataka e hiahiatia ana e te kaiāwhina. Hono anō, hurihia rānei ngā taipitopito tuakiri mēnā ka tohu te tūnga kua pau te token.
+
+## Whakamōhiotanga SMS TextBee {#textbee-sms-notifications}
+
+Ka tāpiri a Superdav AI Agent v1.18.0 i a TextBee hei kaiwhakarato SMS mō ngā rerengamahi whakamōhiotanga kua whirihorahia. Me takirua ngā whakamōhiotanga SMS ki ngā kūaha whakaaetanga tangata mō ngā karere tairongo, kanohi-ki-te-kaiwhakamahi rānei.
+
+| Āpure | Whakaahuatanga |
+|---|---|
+| **Kī API TextBee** | Ka motuhēhē i ngā tono ki te kaiwhakarato SMS TextBee. |
+| **Pūrere / Kaituku TextBee** | Ka tīpako i te kaituku, i te pūrere TextBee rānei e whakamahia ana mō ngā karere puta, ina hiahiatia e te kaiwhakarato. |
+| **Kua Whakahohea ngā Whakamōhiotanga SMS** | Ka tuku i ngā rerengamahi kua whakaaetia kia tuku whakamōhiotanga karere-kuputuhi. Waiho kia monokia hei ārai i ngā tukunga SMS. |
+
+Tukuna he karere whakamātautau ki tētahi tau nā te kaiwhakahaere anake, kātahi ka whakaū i te whanonga kūaha-whakaaetanga i mua i te whakahohe i ngā whakamaumahara kua whakaritea, kanohi-ki-ngā-kaiuru rānei.
+
+## Haki Āhuatanga {#feature-flags}
+
+I whakaurua hoki i v1.9.0, ka whakarato te ripa **Tautuhinga → Haki Āhuatanga** i ngā pana takahuri mō ngā mahi kōwhiringa. Ka whakahohea, ka monokia rānei ia haki puta noa i te whatunga; kāore he takahitanga ā-pae i tēnei wā.
+
+### Te Uru ki ngā Haki Āhuatanga {#accessing-feature-flags}
+
+1. I te whakahaere WordPress, haere ki **Gratis AI Agent → Tautuhinga**.
+2. Pāwhiritia te ripa **Haki Āhuatanga**.
+
+### Haki Mana Uru {#access-control-flags}
+
+| Kara | Taunoa | Whakaahuatanga |
 |---|---|---|
-| **Restrict to Administrators** | Off | I roto i te whakatau, ko ngā aua e hoki ana ki te `administrator` role-ahei te whakawhiti i te panel chat o te AI Agent. Ngā aua katoa e hoki ana ki te "Contact your administrator" (Whakarongo ki a koe i tō administrator) he mea e whakaatu ana. |
-| **Restrict to Network Admins** | Off | I roto i te whakatau, ko ngā Super Admin-ahei te whakamahi i te agent i te wā e hoki ana ki te multisite network. Ko ngā admin o te site katoa he whakawhiti. He tino nui ake (takes precedence) no te "Restrict to Administrators" (Whakarongo ki a koe i tō administrator) ko te whakatau e hoki ana ki te multisite. |
-| **Allow Subscriber Access** | Off | I roto i te whakatau, ngā aua e hoki ana ki te `subscriber` role-ahei te whakamahi i te interface chat, engari he whakawhiti ki ngā mea e tika anō (read-only) (he mea e whakaiti i te mahi e whakaora posts ahau). |
-| **Disable for Non-Members** | Off | He whai tikanga ana me te status membership o Ultimate Multisite. I roto i te whakatau, ko te chat he whakahaere ana mō ngā sites e hāpai i te membership (membership) e hoki ana ki te active. |
+| **Whakawhāiti ki ngā Administrators** | Weto | Ina whakakāngia, ko ngā kaiwhakamahi anake whai tūranga `administrator` ka āhei ki te whakatuwhera i te paewhiri kōrerorero AI Agent. Ka kite kē ētahi atu tūranga katoa i tētahi karere "Whakapā atu ki tō administrator". |
+| **Whakawhāiti ki ngā Network Admins** | Weto | Ina whakakāngia i runga i tētahi whatunga multisite, ko ngā Super Admins anake ka āhei ki te whakamahi i te agent. Ka aukatihia ngā kaiwhakahaere pae takitahi. Ka noho matua ake i te "Whakawhāiti ki ngā Administrators" mēnā ka whakakāngia ngā mea e rua. |
+| **Whakaae Urunga Subscriber** | Weto | Ina whakakāngia, ka āhei ngā kaiwhakamahi whai tūranga `subscriber` ki te whakamahi i te atanga kōrerorero, engari ka herea ki ngā āheinga pānui-anake (kāore he waihanga whakairinga, he panoni tautuhinga rānei). |
+| **Monokia mō ngā Hunga ehara i te Mema** | Weto | Ka tūhono ki te tūnga mematanga Ultimate Multisite. Ina whakakāngia, ka hunaia te kōrerorero mō ngā pae kāore he mematanga hohe. |
 
-### Branding Flags
+### Ngā Kara Waitohu {#branding-flags}
 
-| Flag | Default | Whakarongo |
+| Kara | Taunoa | Whakaahuatanga |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | He whakatū he whakaahua (branding attribution line) e hoki ana i te pētaki o te widget chat. He tino whakamārama ana mō ngā white-label deployments. |
-| **Custom Agent Name** | *(blank)* | He whakakitu i te tītī "Gratis AI Agent" (Gratis AI Agent) i te header o te chat me te menu admin ki te ingoa o aua. Whakarongo ki te blank (blank) he tino whakamahi ana ko te default. |
-| **Hide Agent Picker** | Off | I roto i te whakatau, ngā aua e hoki ana ki te five built-in agents (ngā agent katoa e hoki ana) he whakawhiti i waenga i aua. Ko te agent e hoki ana ko he tino tika (fixed) ki te mea e whakatika ana ana i te default i Settings → General. |
-| **Use Site Icon as Chat Avatar** | Off | He whakakitu i te icon o te site i te header o te chat widget, he whakakitu ana i te WordPress site icon (whakatika ana i te Appearance → Customize → Site Identity). |
+| **Hunaia te Hiku "Powered by Gratis AI Agent"** | Weto | Ka tango i te rārangi tohu waitohu e whakaaturia ana ki raro o te widget kōrerorero. E taunakitia ana mō ngā whakatinanatanga white-label. |
+| **Ingoa Agent Ritenga** | *(pātea)* | Ka whakakapi i te tapanga taunoa "Gratis AI Agent" i te pane kōrerorero me te tahua admin ki tō ake ingoa hua. Waiho kia pātea hei whakamahi i te taunoa. |
+| **Hunaia te Kaitīpako Agent** | Weto | Ina whakakāngia, kāore ngā kaiwhakamahi e taea te whakawhiti i waenga i ngā agent e rima kua hangaia ki roto. Ka ū te agent o nāianei ki te mea kua whirihoratia hei taunoa i Settings → General. |
+| **Whakamahia te Ata Pae hei Avatar Kōrerorero** | Weto | Ka whakakapi i te ata AI taunoa i te pane widget kōrerorero ki te ata pae WordPress (kua tautuhia i raro i Appearance → Customize → Site Identity). |
 
-### Applying Changes
+### Ngā Kara Haumaru Aunoatanga {#automation-safety-flags}
 
-Whakarongo ki **Save Settings** i roto i te toggling o ngā flag katoa. Ko ngā whakawhiti e hoki ana i te wā e hoki ana — he mea e hiahia ana ko te cache flush (whakawhiti cache) he tino nui ake (no required).
+Ka whakauru a Superdav AI Agent v1.18.0 i ngā kūaha whakaaetanga tangata me ngā pūkete whakamaumahara mō ngā rere aunoatanga haumaru ake. Ka puta pea ēnei mana ki roto i ngā kara āhuatanga, i ngā tautuhinga aunoatanga matatau rānei, e ai ki te mōkihi kua tāutatia.
+
+| Kara | Taunoa | Whakaahuatanga |
+|---|---|---|
+| **Me Whai Whakaaetanga Tangata** | E taunakitia ana kia kā | Ka whakatārewa i ngā aunoatanga tairongo kia arotake, kia whakaū rā anō tētahi kaiwhakamahi whai mana i te hohenga kua whakaarotia. |
+| **Whakakotahitanga Whakamaumahara Tārua-kore** | Kā | Ka tuhi i ngā whakamaumahara kua tukuna kia kore ai ngā ngana anō, ngā rere kua whakaritea rānei e tuku whakamōhiotanga tārua. |
+| **Whakahohe Utauta Maramataka** | Weto kia whirihoratia rā anō | Ka tuku i te agent kia pānui i ngā maramataka Google me ngā takahanga kua whirihoratia. |
+| **Whakahohe Whakamōhiotanga SMS** | Weto kia whirihoratia rā anō | Ka tuku i ngā rerengamahi kua whakaaetia kia tuku whakamōhiotanga SMS TextBee i muri i te tiakanga o ngā taipitopito takiuru. |
+
+### Te Hoatu Panonitanga {#applying-changes}
+
+Pāwhiritia **Tiaki Tautuhinga** i muri i te whakawhiti i tētahi kara. Ka whai mana ngā panonitanga i taua wā tonu — kāore e hiahiatia he cache flush, he whakahohe anō i te plugin rānei.

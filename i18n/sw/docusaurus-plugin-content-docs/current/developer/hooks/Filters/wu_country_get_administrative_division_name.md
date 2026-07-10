@@ -4,11 +4,11 @@ title: Kichujio - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 Inarejesha jina zuri la sehemu ndogo za kiutawala za nchi.
 
-## Vigezo
+## Vigezo {#parameters}
 
 | Name | Type | Maelezo |
 |------|------|-------------|
@@ -18,13 +18,13 @@ Inarejesha jina zuri la sehemu ndogo za kiutawala za nchi.
 | $ucwords | `bool` | Ikiwa tunataka kuweka herufi kubwa (uppercase) maneno. |
 | $current_country | `\WP_Ultimo\Country\Country` | Tohari (instance) ya darasa la sasa. |
 
-### Tangu
+### Tangu {#since}
 
 - 2.0.11
-### Chanzo
+### Chanzo {#source}
 
 Limefafanuliwa katika [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) kwenye mstari wa 250.
 
 
-## Inarejesha
+## Inarejesha {#returns}
 Jina la sehemu lililobadilishwa.

@@ -3,11 +3,11 @@ title: Vizaibilitas de la abilidad
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kapacita Vizuilibile
+# Kapacita Vizuilibile {#ability-visibility}
 
 Superdav AI Agent v1.12.0 introducit **Ability Visibility** kontrollon, kiuj regas, ki surfoj (surfaces) ekpozas ĉion kapaciton. Tio permesas administratorojn finajni, kiu agent kapabilitate estas disponibile per REST API, MCP serveroj, WooCommerce integrioj kaj aliaj interfacoj.
 
-## Kion estas Kapacita Vizuilibilo?
+## Kion estas Kapacita Vizuilibilo? {#what-is-ability-visibility}
 
 Kapacita Vizuilibilo estas permeso sistema, kiu kontrolas:
 
@@ -18,9 +18,9 @@ Kapacita Vizuilibilo estas permeso sistema, kiu kontrolas:
 
 Chakla kapacito portas vizuilibiliton nivelon, kiu determinas ĝian disponibiliton sur diversaj surfoj.
 
-## Vizuilibilo Niveloj
+## Vizuilibilo Niveloj {#visibility-levels}
 
-### Publika
+### Publika {#public}
 
 **Publikaj kapabilitoj** estas disponibile ĉie:
 
@@ -32,7 +32,7 @@ Chakla kapacito portas vizuilibiliton nivelon, kiu determinas ĝian disponibilit
 
 Ekzemplo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interna
+### Interna {#internal}
 
 **Internaj kapabilitoj** estas disponibile nur en via WordPress instalacio:
 
@@ -43,7 +43,7 @@ Ekzemplo: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Ekzemplo: `manage-settings`, `view-analytics`, `export-data`
 
-### Partnereco
+### Partnereco {#partner}
 
 **Partnerecoj kapabilitoj** estas disponibile nur al listita partnaroj:
 
@@ -54,7 +54,7 @@ Ekzemplo: `manage-settings`, `view-analytics`, `export-data`
 
 Ekzemplo: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dezaktivita
+### Dezaktivita {#disabled}
 
 **Deaktivitaj kapabilitoj** ne estas disponibile ĉie:
 
@@ -63,15 +63,15 @@ Ekzemplo: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Ne disponabla en administra paneloj
 - Utila por dezobrekaj aŭ eksperimentaj kapabilitoj
 
-## Kontrolado de la Visibilidad de Habilidad
+## Kontrolado de la Visibilidad de Habilidad {#managing-ability-visibility}
 
-### Acceso a la Configuración de Visibilidad de Habilidad
+### Acceso a la Configuración de Visibilidad de Habilidad {#accessing-ability-visibility-settings}
 
 1. Vaya a **WordPress Admin** → **Superdav AI Agent** → **Settings** (Configuraciones)
 2. Haga clic en la pestaña **Abilities** (Habilidades)
 3. Verá una lista de todas las habilidades instaladas con sus niveles de visibilidad.
 
-### Visualización de Detalles de Habilidad
+### Visualización de Detalles de Habilidad {#viewing-ability-details}
 
 Haga clic en cualquier habilidad para ver:
 
@@ -82,7 +82,7 @@ Haga clic en cualquier habilidad para ver:
 - **Last updated** (Última actualización): Cuándo se cambió la visibilidad por última vez.
 - **Status** (Estado): Reconocida o No clasificada.
 
-### Cambiar Niveles de Visibilidad
+### Cambiar Niveles de Visibilidad {#changing-visibility-levels}
 
 Para cambiar la visibilidad de una habilidad:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operaciones Masivas
+### Operaciones Masivas {#bulk-operations}
 
 Para cambiar la visibilidad de varias habilidades:
 
@@ -108,11 +108,11 @@ Para cambiar la visibilidad de varias habilidades:
 2. Seleccione un nuevo nivel de visibilidad del menú desplegable de acción masiva.
 3. Haga clic en **Apply** (Aplicar).
 
-## Lista Blanca de Socios (Partner Allow-List)
+## Lista Blanca de Socios (Partner Allow-List) {#partner-allow-list}
 
 La **partner allow-list** controla qué socios externos pueden acceder a las habilidades de nivel socio.
 
-### Añadir Socios
+### Añadir Socios {#adding-partners}
 
 1. Vaya a **Superdav AI Agent** → **Settings** (Configuraciones) → **Partners** (Socios).
 2. Haga clic en **Add Partner** (Añadir Socio).
@@ -120,7 +120,7 @@ La **partner allow-list** controla qué socios externos pueden acceder a las hab
 4. Opcionalmente, añada un nombre y una descripción del socio.
 5. Haga clic en **Save** (Guardar).
 
-### Asignar Habilidades a Socios
+### Asignar Habilidades a Socios {#assigning-abilities-to-partners}
 
 Después de añadir un socio:
 
@@ -130,7 +130,7 @@ Después de añadir un socio:
 4. Dans la seksio "Partner allow-list" (List per partnero), selektas la karrachojn por partnero kiuj devas havi alparenco
 5. Kliku **Save** (Konservu)
 
-### Eliminado de Alparenco de Partnero
+### Eliminado de Alparenco de Partnero {#revoking-partner-access}
 
 Por eliminui alparencon de partnero:
 
@@ -140,11 +140,11 @@ Por eliminui alparencon de partnero:
 
 La partnero perdas alparencon de tiu kapabilitato tandej.
 
-## Kapabilitetoj Neklasifikitaj (Unclassified Abilities)
+## Kapabilitetoj Neklasifikitaj (Unclassified Abilities) {#unclassified-abilities}
 
 Kiam vi instalas terza kapabilitate, ki Superdav AI Agent ne rekonduz, ĝi estas markita kiel **Unclassified** (Ne klasifikita).
 
-### Notado de Administrajo por Unclassified Abilities
+### Notado de Administrajo por Unclassified Abilities {#admin-notice-for-unclassified-abilities}
 
 Vi vidos notadon de la administrado:
 
@@ -161,7 +161,7 @@ Bonvolu renkonti kaj klasifiki ilin.
 [Renkonti Kapabilitetojn] [Elimi]
 ```
 
-### Renkontado de Unclassified Abilities
+### Renkontado de Unclassified Abilities {#reviewing-unclassified-abilities}
 
 1. Kliku **Review Abilities** (Renkonti Kapabilitetojn) en la notado
 2. Por ĉiu neklasifikita kapabiliteto, vi vidos:
@@ -178,7 +178,7 @@ Bonvolu renkonti kaj klasifiki ilin.
 
 4. Kliku **Classify** (Klasifiki) por konservi vian decisionon
 
-### kial Klasifi Unclassified Abilities?
+### kial Klasifi Unclassified Abilities? {#why-classify-unclassified-abilities}
 
 Klasifiki kapabilitetojn:
 
@@ -187,9 +187,9 @@ Klasifiki kapabilitetojn:
 - **Permesas funkciojn**: Une klasifikita, la kapabiliteto fariĝas disponibile
 - **Dokonigas decisionojn**: Via elektado estas logita por auditoj
 
-## Vizuilibra en Diversaj Superfoj
+## Vizuilibra en Diversaj Superfoj {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Publika abilitoj** estas disponiblaj per REST endpointoj:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internaj kaj Partnereco abilitoj** ne estas disponiblaj per REST API.
 
-### MCP Serveroj
+### MCP Serveroj {#mcp-servers}
 
 **Publika abilitoj** estas disponiblaj per MCP:
 
@@ -217,7 +217,7 @@ Disponablaj abilitoj:
 
 **Partnereco abilitoj** estas disponiblaj nur kun partnereco kredencijoj.
 
-### WooCommerce Integrita
+### WooCommerce Integrita {#woocommerce-integration}
 
 **Publikaj abilitoj** rilate al WooCommerce estas disponiblaj:
 
@@ -227,7 +227,7 @@ Disponablaj abilitoj:
 
 **Internaj abilitoj** ne estas eksponitaj al WooCommerce.
 
-### Chat Interfaco
+### Chat Interfaco {#chat-interface}
 
 **Tial ĉiuj abilitoj** (Publikaj, Internaj, Partnereco) estas disponiblaj en chato, dependante de uzantoj permesoj:
 
@@ -235,34 +235,34 @@ Disponablaj abilitoj:
 - Regularuzantoj vidas nur Publikajn abilitojn
 - Partnaroj vidas Publikajn + Partnereco abilitojn (se ili estas listigita)
 
-## Sekurecaj Bestpraktikoj
+## Sekurecaj Bestpraktikoj {#security-best-practices}
 
-### Principo de Minima Privilegio
+### Principo de Minima Privilegio {#principle-of-least-privilege}
 
 - Definiti abilitojn al la plej restriktivita vidibiliteco, kiu tamen permesas ilia uzadon
 - Uzu Partnereco vidibiliton por sensivajn operaciojn
 - Dezaktive habilitojn, kiujn vi ne uzas
 
-### Regularaj Auditoj
+### Regularaj Auditoj {#regular-audits}
 
 - Revizi abilajn vidibiliteco mensonge
 - Kontroli post neklasifikajn abilitojn
 - Eliminigi aliron por neuzitaj partnaroj
 
-### Logado kaj Monitorado
+### Logado kaj Monitorado {#logging-and-monitoring}
 
 - Monitoru, kiuj habilitoj estas uzata plej multe
 - Слеdu partnerecoj alirografiojn
 - Alerdu pri neordinaj abilaj uzadoj
 
-### Tria Vlado Abilitoj
+### Tria Vlado Abilitoj {#third-party-abilities}
 
 - Revizi tria valido abilitojn antaŭ aktivo
 - Klasifiku ilin eksplice
 - Komenci kun Interna aŭ Partnereco vidibiliteco
 - Promovi al Publikajn nur post verifikado
 
-## Problema-lösuri
+## Problema-lösuri {#troubleshooting}
 
 **Capacitet ne aperas en la listo**
 - Verifique si la capacidad está instalada y activa
@@ -285,7 +285,7 @@ Disponablaj abilitoj:
 - Verifique que su clasificación se haya guardado
 - Verifique que el plugin que proporciona la capacidad esté actualizado
 
-## Migración de Modo Hereditario (Legacy Mode)
+## Migración de Modo Hereditario (Legacy Mode) {#migration-from-legacy-mode}
 
 Si está actualizando desde una versión anterior de Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Si está actualizando desde una versión anterior de Superdav AI Agent:
 
 Vea **Migración al Modo Terceros** para más detalles sobre la transición a la integración de API de Capacidades nativas.
 
-## Pasos Siguintes
+## Pasos Siguintes {#next-steps}
 
 Después de configurar la visibilidad de las capacidades:
 

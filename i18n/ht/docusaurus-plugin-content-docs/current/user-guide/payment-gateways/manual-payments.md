@@ -1,46 +1,46 @@
 ---
-title: Konfigire Pemanman Manèl
+title: Konfigire Peman Manyèl
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Fè Meteman Manuel (v2)
+# Mete Peman Manyèl An Plas (v2) {#setting-up-manual-payments-v2}
 
-_**NOTE IMPORTANT: Sa dokiman sa a refere a Ultimate Multisite v2.x.**_
+_**NÒT ENPÒTAN: Atik sa a refere a Ultimate Multisite vèsyon 2.x.**_
 
-Meteman manuel se yon fason ou ka ofri lòt metòd peman si **Stripe** oswa **PayPal** pa disponib pou itilizat ou yo. Li ka gen ladan transfer wire, transfè bank oswa nenpòt lòt metòd peman ki disponib pou itilizat ou lokalman.
+Peman manyèl yo se yon fason pou ou ofri lòt metòd peman si **Stripe** oswa **PayPal** pa disponib pou itilizatè ou yo. Li kapab yon transfè filè oswa transfè labank, oswa nenpòt lòt metòd peman ki disponib lokalman pou itilizatè ou yo.
 
-## Kijan pou kòmanse Meteman Manuel
+## Kijan pou aktive Peman Manyèl {#how-to-enable-manual-payments}
 
-Konfigire meteman manuel se senp anpil. Ou jis bezwen aktif li sous "payment gateways" epi mete enstriksyon detaye sou kijan itilizat la dwe voye peman a.
+Mete peman manyèl an plas trè fasil. Ou sèlman bezwen aktive li anba pasrèl peman yo epi mete enstriksyon detaye sou kijan itilizatè a ta dwe voye peman an.
 
-Premye bagay, ale nan **Ultimate Multisite > Settings > Payments**. Anba **Payment Gateways**, switch **Manual** la an "on". Ou pral wè yon bo k ap parèt pou ou ki montre **Payment Instructions**.
+Premyèman, ale nan **Ultimate Multisite > Anviwònman > Peman**. Anba **Pasrèl Peman** , aktive **Manyèl**. Ou pral wè yon bwat **Enstriksyon Peman** ap parèt pou ou.
 
-Ajoute enfòmasyon sa yo nan bo a ki genyen pou kliyan ou bezwen pou fè peman an. Li ka gen ladan detay kont bank ou epi imèl ou pou kliyan an ka voye konfime peman la ba ou, pa egzanp.
+Ajoute nan bwat sa a enfòmasyon kliyan ou a ap bezwen pou fè peman an. Sa ka detay kont labank ou ak imèl ou pou kliyan an ka voye konfimasyon peman an ba ou, pa egzanp.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+![Bouton pasrèl peman manyèl ak zòn tèks Enstriksyon Peman](/img/config/manual-gateway-expanded.png)
 
-Men entèfas konfigirasyon meteman manuel la:
+Men entèfas anviwònman pasrèl manyèl la:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![Anviwònman pasrèl manyèl](/img/config/manual-gateway-settings.png)
 
-Malgre ou fin configure li, jis klike sou **Save Settings** epi fini. Lè itilizat yo reyegrè nan rezo ou a, yo pral wè yon mesaj ki di yo ap resevwa enstriksyon ou pou konplete achte a.
+Apre ou fin mete li an plas, jis klike sou **Sove Anviwònman** epi li fini. Lè itilizatè yo enskri nan rezo ou a, yo pral wè yon mesaj ki di yo y ap resevwa enstriksyon ou yo pou konplete acha a.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Mesaj konfimasyon enskripsyon ki di itilizatè a li pral resevwa enstriksyon peman](/img/frontend/registration-manual-notice.png)
 
-E yo ap resevwa tou yon mesaj sou paj **Thank You** ou a ak enstriksyon peman ou an.
+Epi yo pral resevwa tou yon mesaj sou paj **Mèsi** ou a ak enstriksyon peman ou yo.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Konfime meteman manuel
+## Konfime peman manyèl yo {#confirming-manual-payments}
 
-Pou konfime yon paman ki fèt manman, ale nan mennu **Payments** sou bar an valè a. La ou ka wè tout paman yo sou rezo ou ak detay yo, ki gen ladan **status** yo. Yon paman manman ap gen status **Pending** toujou jiskaske ou chanje li manman.
+Pou konfime yon peman manyèl, ale nan meni **Peman** ki sou ba agoch la. La ou ka wè tout peman ki sou rezo ou a ak detay yo, ansanm ak **estati** yo. Yon peman manyèl ap toujou gen estati **Annatant** jiskaske ou chanje li manyèlman.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Lis peman ki montre peman manyèl annatant](/img/admin/payments-list.png)
 
-Klike sou **reference code** la pou w ale nan paj paman an. Sou paj sa a, ou gen tout detay paman ki ap tann yo, tankou reference ID, pwodwi, timestam ak plis chans.
+Antre nan paj peman an lè ou klike sou **kòd referans** lan. Sou paj sa a ou gen tout detay peman annatant lan, tankou ID referans, pwodwi yo, dat ak lè yo, ak plis ankò.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Paj detay peman ki montre kòd referans, pwodwi yo, ak total yo](/img/admin/payment-edit.png)
 
-Sou kolòn la a a, ou ka chanje status paman an. Chanje li pou **Completed** epi klike sou opsyon **Activate Membership** ap aktif sit ki gen kliyan ou a ak manman yo ap active.
+Nan kolòn adwat la, ou ka modifye estati peman an. Lè ou chanje li pou **Konplete** epi **aktive opsyon Aktive Abònman** an, sa ap aktive sit kliyan ou a epi abònman li ap aktif.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Paj modifye peman ak Estati mete sou Konplete ak bouton Aktive Abònman](/img/admin/payment-activate-membership.png)

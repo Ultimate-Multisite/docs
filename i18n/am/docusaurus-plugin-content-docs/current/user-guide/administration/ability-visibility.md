@@ -3,11 +3,11 @@ title: የአቅም ታይነት
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# የችሎታ መታየት ሁኔታ (Ability Visibility)
+# የችሎታ መታየት ሁኔታ (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibility)** ቁጥጥሮችን አስተዋውቋል፤ እነዚህም እያንዳንዱን ችሎታ በየትኞቹ ክፍሎች (surfaces) እንደሚታይ ይቆጣጠራሉ። ይህ አድሚኒስትራተሮች የትኞቹ የኤጀንት አቅሞች በREST APIs፣ በMCP servers፣ በWooCommerce integrations እና በሌሎች መገናኛዎች (interfaces) ምን ያህል መገኘት እንዳለባቸው በጥንቃቄ እንዲያስተካክሉ ያስችላቸዋል።
 
-## የችሎታ መታየት ሁኔታ ምንድነው?
+## የችሎታ መታየት ሁኔታ ምንድነው? {#what-is-ability-visibility}
 
 የችሎታ መታየት ሁኔታ (Ability Visibility) የሚቆጣጠረው የሚከተሉትን ነው፦
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 
 እያንዳንዱ ችሎታ በተለያዩ ክፍሎች ላይ ያለውን መገኘት የሚወስን የራሱ የሆነ የታይነት ደረጃ አለው።
 
-## የታይነት ደረጃዎች (Visibility Levels)
+## የታይነት ደረጃዎች (Visibility Levels) {#visibility-levels}
 
-### 1. የህዝብ (Public)
+### 1. የህዝብ (Public) {#public}
 
 **የህዝብ ችሎታዎች** በሁሉም ቦታ ይገኛሉ፦
 
@@ -32,7 +32,7 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 
 ምሳሌ፦ `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### 2. የውስጥ (Internal)
+### 2. የውስጥ (Internal) {#internal}
 
 **የውስጥ ችሎታዎች** በWordPress installationዎ ውስጥ ብቻ ይገኛሉ፦
 
@@ -43,7 +43,7 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 
 ምሳሌ፦ `manage-settings`, `view-analytics`, `export-data`
 
-### 3. የשותፍ (Partner)
+### 3. የשותፍ (Partner) {#partner}
 
 **የשותፍ ችሎታዎች** ለተፈቀዱ (whitelisted) አጋሮች ብቻ ይገኛሉ፦
 
@@ -54,7 +54,7 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 
 ምሳሌ፦ `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### 4. የተሰበሩ (Disabled)
+### 4. የተሰበሩ (Disabled) {#disabled}
 
 **የተሰበሩ ችሎታዎች** በየትኛውም ቦታ አይገኙም።
 
@@ -63,15 +63,15 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 - በአድሚን ፓነሎች አይገኙም።
 - ለተሰረዙ ወይም ለሙከራ ችሎታዎች ጠቃሚ ነው።
 
-## የችሎታ መታየት ሁኔታን ማስተዳደር
+## የችሎታ መታየት ሁኔታን ማስተዳደር {#managing-ability-visibility}
 
-### የችሎታ መታየት ሁኔታ ቅንብሮችን መድረስ
+### የችሎታ መታየት ሁኔታ ቅንብሮችን መድረስ {#accessing-ability-visibility-settings}
 
 1. ወደ **WordPress Admin** → **Superdav AI Agent** → **Settings** ይሂዱ።
 2. **Abilities** ታብ ላይ ይጫኑ።
 3. ሁሉንም የተጫኑ ችሎታዎች እና የየራሳቸው የታይነት ደረጃ ዝርዝር ያያሉ።
 
-### የችሎታ ዝርዝሮችን መመልከት
+### የችሎታ ዝርዝሮችን መመልከት {#viewing-ability-details}
 
 የችሎታውን ማንኛውንም ክፍል በመጫን የሚከተሉትን ይመልከቱ፦
 
@@ -82,7 +82,7 @@ Superdav AI Agent v1.12.0 **የችሎታ መታየት ሁኔታ (Ability Visibil
 - **Last updated**: የታይነቱ የመጨረሻ ጊዜ የተቀየረበት ጊዜ
 - **Status**: የሚታወቅ (Recognized) ወይስ የማይታወቅ (Unclassified)
 
-### የታይነት ደረጃዎችን መቀየር
+### የታይነት ደረጃዎችን መቀየር {#changing-visibility-levels}
 
 የችሎታውን ታይነት ለመቀየር፦
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### በጅምላ ስራዎች (Bulk Operations)
+### በጅምላ ስራዎች (Bulk Operations) {#bulk-operations}
 
 ለብዙ ችሎታዎች ታይነት ለመቀየር፦
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. ከጅምላ የድርጊት ድራፕዳውን (bulk action dropdown) አዲስ የታይነት ደረጃ ይምረጡ።
 3. **Apply** ላይ ይጫኑ።
 
-## የשותፍ ፈቃድ ዝርዝር (Partner Allow-List)
+## የשותፍ ፈቃድ ዝርዝር (Partner Allow-List) {#partner-allow-list}
 
 **የשותፍ ፈቃድ ዝርዝር** የትኞቹ ውጫዊ አጋሮች የשותፍ ደረጃ ችሎታዎችን መድረስ እንደሚችሉ ይቆጣጠራል።
 
-### አጋሮችን መጨመር
+### አጋሮችን መጨመር {#adding-partners}
 
 1. ወደ **Superdav AI Agent** → **Settings** → **Partners** ይሂዱ።
 2. **Add Partner** ላይ ይጫኑ።
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. በঐচ্ছিক ሁኔታ የשותፍ ስም እና መግለጫ ይጨምሩ።
 5. **Save** ላይ ይጫኑ።
 
-### ችሎታዎችን ለአጋሮች መመደብ
+### ችሎታዎችን ለአጋሮች መመደብ {#assigning-abilities-to-partners}
 
 አጋር ከጨመሩ በኋላ፦
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. በ "Partner allow-list" ክፍል ውስጥ፣ መድረስ ያለባቸው አጋሮች ሳጥኖችን ይምረጡ።
 5. **Save** ላይ ይጫኑ።
 
-### የשותፍ መዳረሻን መሰረዝ (Revoking Partner Access)
+### የשותፍ መዳረሻን መሰረዝ (Revoking Partner Access) {#revoking-partner-access}
 
 የአጋር መዳረሻ ለማስወገድ፦
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 አጋሩ ወዲያውኑ ወደዚያ ችሎታ መዳረሻ ያጣል/ታጣል።
 
-## የማይታወቁ ችሎታዎች (Unclassified Abilities)
+## የማይታወቁ ችሎታዎች (Unclassified Abilities) {#unclassified-abilities}
 
 Superdav AI Agent የማይያውቀው የሶስተኛ ወገን ችሎታ ሲጫኑ፣ እንደ **የማይታወቅ (Unclassified)** ምልክት ይደረግበታል።
 
-### ለአድሚን ማሳሰቢያ ስለ የማይታወቁ ችሎታዎች
+### ለአድሚን ማሳሰቢያ ስለ የማይታወቁ ችሎታዎች {#admin-notice-for-unclassified-abilities}
 
 የሚከተለውን የአድሚን ማሳሰቢያ ያያሉ፦
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### የማይታወቁ ችሎታዎችን መገምገም
+### የማይታወቁ ችሎታዎችን መገምገም {#reviewing-unclassified-abilities}
 
 1. በማሳሰቢያው ውስጥ **Review Abilities** ላይ ይጫኑ።
 2. ለእያንዳንዱ የማይታወቅ ችሎታ የሚከተሉትን ያያሉ፦
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. ውሳኔዎን ለማስቀመጥ **Classify** ላይ ይጫኑ።
 
-### የማይታወቁ ችሎታዎችን ለምን መመደብ አለብኝ?
+### የማይታወቁ ችሎታዎችን ለምን መመደብ አለብኝ? {#why-classify-unclassified-abilities}
 
 ችሎታዎችን መመደብ፦
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **ባህሪያትን ያስችላል**: ከተመደቡ በኋላ፣ ችሎታው ይገኛል።
 - **ውሳኔዎችን ይመዘግባል**: ምርጫዎችዎ ለኦዲት ዓላማ ይመዘገባሉ።
 
-## በተለያዩ ክፍሎች ውስጥ ያለው ታይነት
+## በተለያዩ ክፍሎች ውስጥ ያለው ታይነት {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **የህዝብ ችሎታዎች** በREST endpoints ይገኛሉ፦
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **የውስጥ እና የשותፍ ችሎታዎች** በREST API አይገኙም።
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **የህዝብ ችሎታዎች** በMCP ይገኛሉ፦
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **የשותፍ ችሎታዎች** በשותፍ መለያዎች ብቻ ይገኛሉ።
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 ከWooCommerce ጋር የተያያዙ **የህዝብ ችሎታዎች** ይገኛሉ፦
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **የውስጥ ችሎታዎች** በWooCommerce አይታዩም።
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **ሁሉም ችሎታዎች** (Public, Internal, Partner) በቻት ይገኛሉ፣ ይህም የሚወሰነው በተጠቃሚው ስልጣን ነው።
 
@@ -235,34 +235,34 @@ Available abilities:
 - ተራ ተጠቃሚዎች የህዝብ ችሎታዎችን ብቻ ያያሉ።
 - አጋሮች የህዝብ + የשותፍ ችሎታዎችን ያያሉ (የተፈቀዱ ከሆነ)።
 
-## የደህንነት ምርጥ ልምዶች (Security Best Practices)
+## የደህንነት ምርጥ ልምዶች (Security Best Practices) {#security-best-practices}
 
-### የቅንብረቱ መርህ (Principle of Least Privilege)
+### የቅንብረቱ መርህ (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - ችሎታዎችን አጠቃቀማቸውን የሚያስችላቸውን በጣም ገደብ ባለው ታይነት ያዘጋጁ።
 - ለስሜታዊ ስራዎች የשותፍ ታይነትን ይጠቀሙ።
 - የማይጠቀሙባቸውን ችሎታዎች ያሰበሯቸው።
 
-### መደበኛ ኦዲቶች (Regular Audits)
+### መደበኛ ኦዲቶች (Regular Audits) {#regular-audits}
 
 - የችሎታ ታይነትን በየወሩ ይገምግሙ።
 - የማይታወቁ ችሎታዎችን ይፈትሹ።
 - ጥቅም ላይ የማይውሉ አጋሮችን መዳረሻ ያስወግዱ።
 
-### መመዝገብ እና ክትትል (Logging and Monitoring)
+### መመዝገብ እና ክትትል (Logging and Monitoring) {#logging-and-monitoring}
 
 - የትኞቹ ችሎታዎች በብዛት ጥቅም ላይ እንደሚውሉ ይከታተሉ።
 - የአጋር መዳረሻ ዘይቤዎችን ይከታተሉ።
 - ያልተለመደ የችሎታ አጠቃቀም ሲኖር ማንቂያ ይስጡ።
 
-### የሶስተኛ ወገን ችሎታዎች (Third-Party Abilities)
+### የሶስተኛ ወገን ችሎታዎች (Third-Party Abilities) {#third-party-abilities}
 
 - የሶስተኛ ወገን ችሎታዎችን ከመንቃትዎ በፊት ይገምግሙ።
 - በግልጽ መመደብ (Classify) አለባቸው።
 - በየውስጥ (Internal) ወይም በשותፍ (Partner) ታይነት ይጀምሩ።
 - ከተፈተኑ በኋላ ብቻ ወደ ህዝብ (Public) ያሳድጉ።
 
-## ችግር መፍታት (Troubleshooting)
+## ችግር መፍታት (Troubleshooting) {#troubleshooting}
 
 **ችሎታው በዝርዝሩ ላይ አይታይም**
 - ችሎታው ተጫንና ንቁ መሆኑን ያረጋግጡ።
@@ -285,7 +285,7 @@ Available abilities:
 - ምደባዎ እንደተቀመጠ መሆኑን ያረጋግጡ።
 - ችሎታውን የሚያቀርበው plugin ወቅታዊ መሆኑን ያረጋግጡ።
 
-## ከድሮው ሁነታ ወደ ሽግግር (Migration from Legacy Mode)
+## ከድሮው ሁነታ ወደ ሽግግር (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 የSuperdav AI Agent የድሮ ስሪት ከሆነ እያሻሻሉ ከሆነ፦
 
@@ -295,7 +295,7 @@ Available abilities:
 
 ወደ ተወላጅ Abilities API ውህደት ሽግግር (transition) ላይ ተጨማሪ ዝርዝሮች ለማግኘት **Third-Party Mode Migration** ይመልከቱ።
 
-## ቀጣይ እርምጃዎች (Next Steps)
+## ቀጣይ እርምጃዎች (Next Steps) {#next-steps}
 
 የችሎታ መታየት ሁኔታን ከማስዋቀር በኋላ፦
 

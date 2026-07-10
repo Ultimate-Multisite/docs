@@ -3,17 +3,17 @@ title: രൂപകൽപ്പന ദിശ
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# ഡിസൈൻ ഡയറക്ഷൻ (Design Direction)
+# ഡിസൈൻ ഡയറക്ഷൻ (Design Direction) {#design-direction}
 
 **ഡിസൈൻ ഡയറക്ഷൻ** ഘട്ടം നിങ്ങളുടെ തീമിന്റെ വിഷ്വൽ ഡിസൈൻ അവലോകനം ചെയ്യാനും മെച്ചപ്പെടുത്താനും അന്തിമമാക്കാനും സഹായിക്കുന്നു. ഇതിനുശേഷം Theme Builder പൂർണ്ണമായ തീം സൃഷ്ടിക്കും.
 
-## Overview
+## Overview {#overview}
 
 Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, Theme Builder നിങ്ങളുടെ ഡിസൈൻ ഡയറക്ഷൻ **ഡെസ്ക്ടോപ്പ്, മൊബൈൽ പ്രിവ്യൂ റെൻഡറിംഗോടുകൂടി** അവതരിപ്പിക്കുന്നു. തീമിൽ ഉറപ്പിക്കുന്നതിന് മുമ്പ്, വിവിധ ഉപകരണങ്ങളിൽ നിങ്ങളുടെ ഡിസൈൻ എങ്ങനെ കാണപ്പെടുമെന്ന് ഇത് കാണാൻ നിങ്ങളെ അനുവദിക്കുന്നു.
 
-## Design Direction Components
+## Design Direction Components {#design-direction-components}
 
-### 1. Color Palette (നിറങ്ങളുടെ കൂട്ടം)
+### 1. Color Palette (നിറങ്ങളുടെ കൂട്ടം) {#1-color-palette}
 
 നിങ്ങളുടെ തീമിന്റെ കളർ സ്കീം, ഇതിൽ ഉൾപ്പെടുന്നത്:
 
@@ -23,7 +23,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - **Neutral colors** — ബാക്ക്ഗ്രൗണ്ടുകൾക്കും ടെക്സ്റ്റിനും വേണ്ട ഗ്രേയും വെള്ളയും
 - **Text color** — എളുപ്പത്തിൽ വായിക്കാൻ കഴിയുന്നതിനായുള്ള പ്രധാന ടെക്സ്റ്റ് നിറം
 
-### 2. Typography (അക്ഷരരൂപകൽപ്പന)
+### 2. Typography (അക്ഷരരൂപകൽപ്പന) {#2-typography}
 
 ഇവയ്ക്കായി ഫോണ്ട് തിരഞ്ഞെടുക്കാനുള്ള ഓപ്ഷനുകൾ:
 
@@ -33,14 +33,14 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - **Line height** — എളുപ്പത്തിൽ വായിക്കാൻ കഴിയുന്നതിനായുള്ള വരികൾ തമ്മിലുള്ള അകലം
 - **Font weights** — ബോൾഡ്, റെഗുലർ, ലൈറ്റ് തുടങ്ങിയ വ്യതിയാനങ്ങൾ
 
-### 3. Layout and Spacing (ക്രമീകരണവും അകലവും)
+### 3. Layout and Spacing (ക്രമീകരണവും അകലവും) {#3-layout-and-spacing}
 
 - **Container width** — ഉള്ളടക്കത്തിനുള്ള പരമാവധി വീതി
 - **Padding and margins** — ഘടകങ്ങൾรอบവുമുള്ള അകലം
 - **Grid system** — പ്രതികരണശേഷിയുള്ള ഡിസൈനിനായുള്ള കോളം ലേഔട്ട്
 - **Component spacing** — UI ഘടകങ്ങൾ തമ്മിലുള്ള ദൂരം
 
-### 4. Visual Elements (ദൃശ്യ ഘടകങ്ങൾ)
+### 4. Visual Elements (ദൃശ്യ ഘടകങ്ങൾ) {#4-visual-elements}
 
 - **Button styles** — പ്രൈമറി, സെക്കൻഡറി, ടെർഷ്യറി ബട്ടൺ ഡിസൈനുകൾ
 - **Card designs** — ഉള്ളടക്ക ബ്ലോക്കുകൾക്കുള്ള ലേഔട്ടുകൾ
@@ -48,9 +48,9 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - **Borders and shadows** — സൂക്ഷ്മമായ ദൃശ്യ ആഴം
 - **Hover effects** — ഇന്ററാക്ടീവ് സ്റ്റേറ്റ് സ്റ്റൈലിംഗ്
 
-## Preview Rendering (പ്രിവ്യൂ റെൻഡറിംഗ്)
+## Preview Rendering (പ്രിവ്യൂ റെൻഡറിംഗ്) {#preview-rendering}
 
-### Desktop Preview (ഡെസ്ക്ടോപ്പ് പ്രിവ്യൂ)
+### Desktop Preview (ഡെസ്ക്ടോപ്പ് പ്രിവ്യൂ) {#desktop-preview}
 
 ഡെസ്ക്ടോപ്പ് പ്രിവ്യൂ നിങ്ങളുടെ ഡിസൈൻ പൂർണ്ണ വീതിയിൽ (സാധാരണയായി 1200px അല്ലെങ്കിൽ അതിൽ കൂടുതൽ) കാണിക്കുന്നു:
 
@@ -59,7 +59,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - വലിയ ടൈപ്പോഗ്രാഫിയും അകലവും
 - എല്ലാ ദൃശ്യ ഘടകങ്ങളും പൂർണ്ണ വലുപ്പത്തിൽ
 
-### Mobile Preview (മൊബൈൽ പ്രിവ്യൂ)
+### Mobile Preview (മൊബൈൽ പ്രിവ്യൂ) {#mobile-preview}
 
 മൊബൈൽ പ്രിവ്യൂ നിങ്ങളുടെ ഡിസൈൻ മൊബൈൽ വീതിയിൽ (സാധാരണയായി 375px) കാണിക്കുന്നു:
 
@@ -68,7 +68,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - ക്രമീകരിച്ച ടൈപ്പോഗ്രാഫിയും അകലവും
 - ടച്ച് ചെയ്യാൻ എളുപ്പമുള്ള ബട്ടൺ വലുപ്പങ്ങൾ
 
-### Responsive Breakpoints (പ്രതികരണ ബ്രേക്ക്പോയിന്റുകൾ)
+### Responsive Breakpoints (പ്രതികരണ ബ്രേക്ക്പോയിന്റുകൾ) {#responsive-breakpoints}
 
 ഈ ബ്രേക്ക്പോയിന്റുകളിലാണ് Theme Builder പ്രിവ്യൂകൾ റെൻഡർ ചെയ്യുന്നത്:
 
@@ -79,9 +79,9 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Refining Your Design (നിങ്ങളുടെ ഡിസൈൻ മെച്ചപ്പെടുത്തൽ)
+## Refining Your Design (നിങ്ങളുടെ ഡിസൈൻ മെച്ചപ്പെടുത്തൽ) {#refining-your-design}
 
-### Making Adjustments (ക്രമീകരണങ്ങൾ വരുത്തുന്നത്)
+### Making Adjustments (ക്രമീകരണങ്ങൾ വരുത്തുന്നത്) {#making-adjustments}
 
 നിങ്ങൾക്ക് താഴെ പറയുന്ന കാര്യങ്ങളിലൂടെ നിങ്ങളുടെ ഡിസൈൻ ഡയറക്ഷൻ മെച്ചപ്പെടുത്താൻ കഴിയും:
 
@@ -91,7 +91,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 4. **Updating layout** — കണ്ടെയ്‌നർ വീതികളും ഗ്രിഡ് കോളങ്ങളും മാറ്റുക
 5. **Customizing elements** — ബട്ടൺ സ്റ്റൈലുകൾ, കാർഡ് ഡിസൈനുകൾ എന്നിവ മാറ്റിയെഴുതുക
 
-### Preview Updates (പ്രിവ്യൂ അപ്ഡേറ്റുകൾ)
+### Preview Updates (പ്രിവ്യൂ അപ്ഡേറ്റുകൾ) {#preview-updates}
 
 മാറ്റങ്ങൾ തത്സമയം പ്രതിഫലിക്കും:
 
@@ -100,7 +100,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - എല്ലാ പ്രതികരണ ബ്രേക്ക്പോയിന്റുകളും അപ്ഡേറ്റ് ചെയ്യും
 - മാറ്റങ്ങൾ പരിശോധിക്കാൻ നിങ്ങൾക്ക് പ്രിവ്യൂകൾക്കിടയിൽ മാറാൻ കഴിയും
 
-### Comparison View (താരതമ്യ കാഴ്ച)
+### Comparison View (താരതമ്യ കാഴ്ച) {#comparison-view}
 
 നിങ്ങളുടെ ഡിസൈൻ ഡയറക്ഷൻ താഴെ പറയുന്നവയുമായി താരതമ്യം ചെയ്യുക:
 
@@ -108,7 +108,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - **Competitor designs** — പ്രചോദന സൈറ്റുകളുമായി താരതമ്യം ചെയ്യാൻ
 - **Previous versions** — മുൻ ഡിസൈൻ ഡയറക്ഷനുകളിലേക്ക് തിരിച്ചുപോകാൻ
 
-## Design Direction Approval (ഡിസൈൻ ഡയറക്ഷൻ അംഗീകാരം)
+## Design Direction Approval (ഡിസൈൻ ഡയറക്ഷൻ അംഗീകാരം) {#design-direction-approval}
 
 നിങ്ങളുടെ ഡിസൈനിൽ സംതൃപ്തരായാൽ:
 
@@ -118,7 +118,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 4. **Confirm layout** — അകലവും അലൈൻമെന്റും പരിശോധിക്കുക
 5. **Approve design** — തീം ജനറേഷനിലേക്ക് മുന്നോട്ട് പോകുക
 
-## Next Steps (അടുത്ത ഘട്ടങ്ങൾ)
+## Next Steps (അടുത്ത ഘട്ടങ്ങൾ) {#next-steps}
 
 നിങ്ങളുടെ ഡിസൈൻ ഡയറക്ഷൻ അംഗീകരിച്ച ശേഷം:
 
@@ -127,7 +127,7 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 3. WordPress customizer ഉപയോഗിച്ച് നിങ്ങൾക്ക് കൂടുതൽ കസ്റ്റമൈസ് ചെയ്യാൻ കഴിയും
 4. [Hospitality Menus](./hospitality-menus.md) അല്ലെങ്കിൽ മറ്റ് ഫീച്ചറുകളിലേക്ക് പോകുക
 
-## Best Practices (മികച്ച രീതികൾ)
+## Best Practices (മികച്ച രീതികൾ) {#best-practices}
 
 - **Test on real devices** — സാധിക്കുമെങ്കിൽ യഥാർത്ഥ ഫോണുകളും ടാബ്‌ലെറ്റുകളും ഉപയോഗിക്കുക
 - **Check readability** — എല്ലാ വലുപ്പങ്ങളിലും ടെക്സ്റ്റ് വായിക്കാൻ കഴിയുന്നുണ്ടെന്ന് ഉറപ്പാക്കുക
@@ -135,30 +135,30 @@ Discovery Interview പൂർത്തിയാക്കിയ ശേഷം, The
 - **Consider performance** — വേഗതയ്ക്കായി ചിത്രങ്ങളും ഫോണ്ടുകളും ഒപ്റ്റിമൈസ് ചെയ്യുക
 - **Plan for content** — നിങ്ങളുടെ യഥാർത്ഥ ഉള്ളടക്കവുമായി ലേഔട്ട് പ്രവർത്തിക്കുന്നുണ്ടെന്ന് ഉറപ്പാക്കുക
 
-## Troubleshooting (പ്രശ്നപരിഹാരം)
+## Troubleshooting (പ്രശ്നപരിഹാരം) {#troubleshooting}
 
-### Preview Not Updating (പ്രിവ്യൂ അപ്ഡേറ്റ് ആകുന്നില്ല)
+### Preview Not Updating (പ്രിവ്യൂ അപ്ഡേറ്റ് ആകുന്നില്ല) {#preview-not-updating}
 
 - പേജ് റീഫ്രഷ് ചെയ്യുക
 - ബ്രൗസർ കാഷെ ക്ലിയർ ചെയ്യുക
 - മറ്റൊരു ബ്രൗസർ ഉപയോഗിക്കാൻ ശ്രമിക്കുക
 - ഇന്റർനെറ്റ് കണക്ഷൻ പരിശോധിക്കുക
 
-### Colors Look Different (നിറങ്ങൾ വ്യത്യസ്തമായി കാണുന്നു)
+### Colors Look Different (നിറങ്ങൾ വ്യത്യസ്തമായി കാണുന്നു) {#colors-look-different}
 
 - മോണിറ്റർ കളർ സെറ്റിംഗുകൾ പരിശോധിക്കുക
 - വ്യത്യസ്ത ഉപകരണങ്ങളിൽ പരീക്ഷിക്കുക
 - എക്സെസിബിലിറ്റി ടൂളുകൾ ഉപയോഗിച്ച് കളർ കോൺട്രാസ്റ്റ് പരിശോധിക്കുക
 - കളർ ബ്ലൈൻഡ് സിമുലേറ്ററുകൾ പരിഗണിക്കുക
 
-### Typography Issues (ടൈപ്പോഗ്രാഫി പ്രശ്നങ്ങൾ)
+### Typography Issues (ടൈപ്പോഗ്രാഫി പ്രശ്നങ്ങൾ) {#typography-issues}
 
 - ഫോണ്ട് ഫയലുകൾ ലോഡ് ആകുന്നുണ്ടോ എന്ന് പരിശോധിക്കുക
 - വ്യത്യസ്ത ബ്രേക്ക്പോയിന്റുകളിൽ ഫോണ്ട് സൈസ് പരിശോധിക്കുക
 - യഥാർത്ഥ ഉള്ളടക്കവുമായി പരീക്ഷിക്കുക
 - എളുപ്പത്തിൽ വായിക്കാൻ കഴിയുന്നതിനായി വരിയുടെ നീളം പരിഗണിക്കുക
 
-## Related Documentation (ബന്ധപ്പെട്ട ഡോക്യുമെന്റേഷൻ)
+## Related Documentation (ബന്ധപ്പെട്ട ഡോക്യുമെന്റേഷൻ) {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — ഡിസൈൻ വിവരങ്ങൾ ശേഖരിക്കുക
 - [Hospitality Menus](./hospitality-menus.md) — ഘടനാപരമായ മെനു പേജുകൾ സൃഷ്ടിക്കുക

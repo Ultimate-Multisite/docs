@@ -1,32 +1,32 @@
 ---
-title: REST API 概覽
+title: REST API 概觀
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 參考資料
+# REST API 參考 {#rest-api-reference}
 
-## 基礎設定
+## 基本設定 {#base-configuration}
 
-**基礎 URL：** `{site_url}/wp-json/wu/v2/`
-**驗證方式：** API Key 與 Secret (HTTP Basic Auth 或 URL 參數)
+**Base URL：** `{site_url}/wp-json/wu/v2/`
+**Authentication：** API Key 與 Secret（HTTP Basic Auth 或 URL 參數）
 
-## 驗證
+## Authentication {#authentication}
 
-### 啟用 API
+### 啟用 API {#enable-api}
 ```php
-// 在 Ultimate Multisite 設定中或程式碼中啟用 API
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### 取得 API 憑證
+### 取得 API 憑證 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### 驗證方法
+### Authentication 方法 {#authentication-methods}
 
-**HTTP Basic Auth (推薦)：**
+**HTTP Basic Auth（建議）：**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,11 +36,11 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## 核心端點
+## 核心端點 {#core-endpoints}
 
-### 1. 客戶端點 (Customers API)
+### 1. Customers API {#1-customers-api}
 
-**基礎路徑：** `/customers`
+**Base Route：** `/customers`
 
 **取得所有客戶**
 ```http
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP 客戶備註"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,9 +82,9 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. 網站端點 (Sites API)
+### 2. Sites API {#2-sites-api}
 
-**基礎路徑：** `/sites`
+**Base Route：** `/sites`
 
 **建立網站**
 ```http
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "我的新網站",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. 會籍端點 (Memberships API)
+### 3. Memberships API {#3-memberships-api}
 
-**基礎路徑：** `/memberships`
+**Base Route：** `/memberships`
 
-**建立會籍**
+**建立會員資格**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. 產品端點 (Products API)
+### 4. Products API {#4-products-api}
 
-**基礎路徑：** `/products`
+**Base Route：** `/products`
 
 **取得所有產品**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. 付款端點 (Payments API)
+### 5. Payments API {#5-payments-api}
 
-**基礎路徑：** `/payments`
+**Base Route：** `/payments`
 
-**建立付款記錄**
+**建立付款**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. 網域端點 (Domains API)
+### 6. Domains API {#6-domains-api}
 
-**基礎路徑：** `/domains`
+**Base Route：** `/domains`
 
-**映射網域**
+**對應網域**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## 註冊端點
+## 註冊端點 {#registration-endpoint}
 
-`/register` 端點提供完整的註冊/結帳流程：
+`/register` 端點提供完整的結帳／註冊流程：
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "我的新網站",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,22 +209,55 @@ Content-Type: application/json
 }
 ```
 
-## 錯誤回應
+## Sovereign Tenant 端點 {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 為會佈建、檢查或驗證隔離租戶的整合新增 sovereign tenant REST 涵蓋範圍。
+
+確切的請求承載取決於已啟用的主機功能，但整合應預期以下端點群組：
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+使用 bootstrap 端點來準備租戶登錄、資料庫、檔案系統與路由狀態。在切換正式環境流量前，使用遷移狀態與驗證端點。使用刪除端點進行 sovereign 拆除，讓資料庫憑證透過 addon 清理流程移除。
+
+典型的遷移狀態回應包括：
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+將 `ready: false` 視為上線前阻斷因素。檢查驗證詳細資料，修正資料庫主機繫結、佇列、使用者佈建或路由問題，然後重試驗證。
+
+## 錯誤回應 {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "無效的參數值",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "電子郵件格式無效"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## 分頁與篩選
+## 分頁與篩選 {#pagination-and-filtering}
 
 **查詢參數：**
 ```http
@@ -232,10 +265,10 @@ GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 常見參數：
-- `per_page` - 每頁項目數 (預設：20，最大：100)
+- `per_page` - 每頁項目數（預設：20，最大：100）
 - `page` - 頁碼
-- `search` - 搜尋關鍵字
+- `search` - 搜尋詞
 - `orderby` - 排序欄位
-- `order` - 排序方向 (asc/desc)
+- `order` - 排序方向（asc/desc）
 - `status` - 依狀態篩選
 - `date_created` - 依日期範圍篩選

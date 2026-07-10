@@ -3,7 +3,7 @@ title: Fluent Forms Changelog
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms बदलांचा इतिहास
+# Fluent Forms बदलांचा इतिहास {#fluent-forms-changelog}
 
 आवृत्ती: 2.0.1 - रिलीझ केल्याची तारीख: 2025-09-28
 

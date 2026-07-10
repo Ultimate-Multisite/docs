@@ -3,11 +3,11 @@ title: Onborgo de la Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introducitas una **Theme Builder onboarding flow** gvidita kiu helpas vi krei temon bloko personala dum via va nia inicial konfiguracio. Ĝi estas substituo de la malnova Site Builder modo per alpa pli fleksabla, agenta-asistita alproach.
 
-## Kion estas la Theme Builder Onboarding Flow?
+## Kion estas la Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 La Theme Builder onboarding flow estas interaktiva setup wizard kiu:
 
@@ -18,9 +18,9 @@ La Theme Builder onboarding flow estas interaktiva setup wizard kiu:
 
 La flow estas provita de la **Setup Assistant agent**, kiu petas klarigajn demandojn kaj konstruas via temon inkrementalajman.
 
-## Komenci la Theme Builder Onboarding
+## Komenci la Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Unua Lancado Setup
+### Unua Lancado Setup {#first-run-setup}
 
 Kiam vi komencas Superdav AI Agent en novaj WordPress instalacioj, vi vidus:
 
@@ -35,7 +35,7 @@ Kion vi ŝatus fari?
 
 Selekta **"Build a custom theme"** por entri en la Theme Builder onboarding flow.
 
-### Manua Aktivado
+### Manua Aktivado {#manual-activation}
 
 Vi ankaŭ povas komenci la Theme Builder onboarding en kiam kiel vi petas:
 
@@ -49,9 +49,9 @@ aŭ
 "Help me create a custom theme"
 ```
 
-## La Onboarding Step'oj
+## La Onboarding Step'oj {#the-onboarding-steps}
 
-### Step 1: Modo Selektado
+### Step 1: Modo Selektado {#step-1-mode-selection}
 
 La Setup Assistant agent petas pri via preferenco:
 
@@ -63,7 +63,7 @@ Kion vi ŝatus fari kun via temo?
 
 **Gvidita modo** estas rekomendas por la plej multaj uzantoj; la agent faras dezajno rekomendojn bazitajn sur via industrio kaj celoj.
 
-### Step 2: Sitacio Specifika
+### Step 2: Sitacio Specifika {#step-2-site-specification}
 
 Vi wird petita pri via sitio:
 
@@ -74,7 +74,7 @@ Vi wird petita pri via sitio:
 
 Ĉi tiu informeco estas konservita en via memoro **site_brief**, kiun agenoj referas en estontecoj.
 
-### Paŝo 3: Decidoj pri Sistemo de Dezajno (Design System)
+### Paŝo 3: Decidoj pri Sistemo de Dezajno (Design System) {#step-3-design-system-decisions}
 
 La agente gvidas vin per selekto de design tokens:
 
@@ -83,7 +83,7 @@ La agente gvidas vin per selekto de design tokens:
 - **Espaco**: Kompakta, normala aŭ spacosa layout'oj
 - **Movado**: Animoj kaj transitoj (se tio estas desiro)
 
-### Paŝo 4: Temo Genaro
+### Paŝo 4: Temo Genaro {#step-4-theme-generation}
 
 La Setup Assistant agente konstruas vian personalan blok temon kun:
 
@@ -92,7 +92,7 @@ La Setup Assistant agente konstruas vian personalan blok temon kun:
 - Customaj bloko stiloj, kiuj korespondon al viaj design systemo
 - Metadatak pri temo kaj deklaroj pri WordPress suporto
 
-### Paŝo 5: Aktivado kaj Verifikado
+### Paŝo 5: Aktivado kaj Verifikado {#step-5-activation-and-verification}
 
 La temo estas aŭtomate aktivita, kaj vi vidos:
 
@@ -107,7 +107,7 @@ La temo estas aŭtomate aktivita, kaj vi vidos:
 
 Tiam vi povas viziti vian site'on por verifi, ke la temo prezentasĝas bone.
 
-## Site Specifika kaj Memoro site_brief
+## Site Specifika kaj Memoro site_brief {#site-specification-and-sitebrief-memory}
 
 Durante la enontigo (onboarding), la agente kaptas specifikon de via sito en la kategorio memoro **site_brief**. Tio inkluzivas:
 
@@ -117,17 +117,17 @@ Durante la enontigo (onboarding), la agente kaptas specifikon de via sito en la 
 - Dezajnin preferojn
 - Kontenaj strukturo
 
-### Kial site_brief estas grava
+### Kial site_brief estas grava {#why-sitebrief-matters}
 
 En estontecoj, agenoj referas vian site_brief por:
 
-### Konsistente Design während Änderige
+### Konsistente Design während Änderige {#viewing-your-sitebrief}
 
 *   Biete Merkmalen, dem Zweck vo din Site zuegspassend sind.
 *   Gib kontextabhängigi Empfehlige.
 *   Vermeid d'Wiederholig vo Setup-Frage.
 
-### Dini site_brief aaluege
+### Dini site_brief aaluege {#customizing-after-onboarding}
 
 Du chasch de Agent froge:
 
@@ -143,11 +143,11 @@ oder
 
 De Agent wird dini gspeicherte sitespezifikation azeige.
 
-## Nach Onboarding personalisiere
+## Nach Onboarding personalisiere {#use-the-design-system-aesthetics-skill}
 
 Nachdem s'Theme Builder Onboarding fertig isch, chasch du:
 
-### D'Design System Aesthetics Fähigkeit bruche
+### D'Design System Aesthetics Fähigkeit bruche {#edit-themejson-directly}
 
 Froge nach Designverbesserige:
 
@@ -163,7 +163,7 @@ oder
 
 D'**Design System Aesthetics skill** führt dich dur gezielti Design-Updates.
 
-### theme.json direkt bearbeite
+### theme.json direkt bearbeite {#create-custom-block-templates}
 
 Für fortgschritteni Benutzer chasch du `/wp-content/themes/[theme-name]/theme.json` bearbeite, um z'passe:
 
@@ -172,7 +172,7 @@ Für fortgschritteni Benutzer chasch du `/wp-content/themes/[theme-name]/theme.j
 *   Abstandswerte
 *   Rand- und Schatte-Definitione
 
-### Custom Block Templates erstelle
+### Custom Block Templates erstelle {#comparison-old-vs-new-onboarding}
 
 Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 
@@ -181,7 +181,7 @@ Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 *   Produktseiten
 *   Kontaktformular
 
-## Verglich: Alt vs. Neu Onboarding
+## Verglich: Alt vs. Neu Onboarding {#troubleshooting}
 
 | Merkmal | Site Builder (Alt) | Theme Builder (Neu) |
 |---------|----------------------|-------------------|
@@ -191,7 +191,7 @@ Bruche de WordPress block editor, um benutzerdefinierti Vorlage für:
 | Flexibilität | Feschti Optionä | Benutzerdefinierbar |
 | Zuekunftsinfos | Nicht referenziert | In site_brief gspeichert |
 
-## Fehlerbehebig
+## Fehlerbehebig {#next-steps}
 
 **S'Onboarding-Fluss isch nöd fertig worde**
 *   Starte de Fluss neu: "Start the Theme Builder onboarding"

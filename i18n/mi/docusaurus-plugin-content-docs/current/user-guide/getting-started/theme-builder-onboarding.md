@@ -3,11 +3,11 @@ title: Whakaaro Whakamahi Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Whakaritenga Onboarding o te Theme Builder
+# Whakaritenga Onboarding o te Theme Builder {#theme-builder-onboarding-flow}
 
 Ko Superdav AI Agent v1.12.0 e whaihi i **whakaritenga onboarding o te Theme Builder** (Theme Builder onboarding flow) he whakatau ahue, e tino mārama ana, e tohu ana ki te whakamahi i tō mahi i te whakauru i roto i te whakatūatanga wakamārama. Ko ko te mea e whaihi ana i te mode Site Builder o te parata (legacy), me te whakamahi he whakatau mō, e tino whaihohonotanga ai ki te agent.
 
-## He aha te Whakaritenga Onboarding o te Theme Builder?
+## He aha te Whakaritenga Onboarding o te Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Ko te whakaritenga onboarding o te Theme Builder he whakatau ā-interactive (interactive setup wizard) e:
 
@@ -18,9 +18,9 @@ Ko te whakaritenga onboarding o te Theme Builder he whakatau ā-interactive (int
 
 Ko te whakaritenga ko whakamahinga i te **Setup Assistant agent**, e whaihi i ngā āhuatanga mō te whakahau, me te whakamaoritanga i tō theme i roto i te mea e whakatū ana i te wakamārama i roto i te mea kua whakatou.
 
-## Whakarātanga i te Theme Builder Onboarding
+## Whakarātanga i te Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Whakawhiti Wā (First-Run Setup)
+### Whakawhiti Wā (First-Run Setup) {#first-run-setup}
 
 I te wā koe e whakatū i tō Superdav AI Agent i te pēke WordPress hou, ka whakaatu ana koe:
 
@@ -35,7 +35,7 @@ He aha te mea e tino pai ana koe te whakamahi?
 
 Whakatū **"Build a custom theme"** ki te whakire i te whakaritenga onboarding o te Theme Builder.
 
-### Whakawhanaunga Manawa (Manual Activation)
+### Whakawhanaunga Manawa (Manual Activation) {#manual-activation}
 
 Ko koe ka taea hoki te whaihi i te whakaritenga onboarding o te Theme Builder i ngā wā, i te mea ko koe e whaihi ana:
 
@@ -49,9 +49,9 @@ me te
 "Help me create a custom theme"
 ```
 
-## Ngā Whakatau Onboarding (The Onboarding Steps)
+## Ngā Whakatau Onboarding (The Onboarding Steps) {#the-onboarding-steps}
 
-### Te Whakatau Mode (Mode Selection)
+### Te Whakatau Mode (Mode Selection) {#step-1-mode-selection}
 
 Ko te Setup Assistant agent ka whaihi i tō pēke:
 
@@ -63,7 +63,7 @@ He aha te mea e tino pai ana koe te whakamahi?
 
 **Mode Whakatutaku (Guided mode)** he tino whakamāua ana mō te tauira nui o ngā mea; ko te agent e whaihi i ngā whakatau mō te tapu i runga i tō mahi me ngā pēke.
 
-### Te Whakawhanaunga o te Waka (Site Specification)
+### Te Whakawhanaunga o te Waka (Site Specification) {#step-2-site-specification}
 
 Ka e whakamāua ahau i ngā āhuatanga mō tō waka:
 
@@ -74,7 +74,7 @@ Ka e whakamāua ahau i ngā āhuatanga mō tō waka:
 
 Ko tēnei mōhioinga e whakawhanake ana i te **site_brief** o koe, i te mea e whai ake nei ngā agents e whakamahi i i roto i ngā wā pēri.
 
-### Te Wiki 3: Whakawhanaungatanga System Design (Design System Decisions)
+### Te Wiki 3: Whakawhanaungatanga System Design (Design System Decisions) {#step-3-design-system-decisions}
 
 Ko te agent e whaiakitanga ana i a koutou i runga i te pōwhiri o te design tokens:
 
@@ -83,7 +83,7 @@ Ko te agent e whaiakitanga ana i a koutou i runga i te pōwhiri o te design toke
 - **Te Wā (Spacing)**: Layouts e paku, normal, te whero (spacious)
 - **Te Whakamahinga (Motion)**: Ngā whakamārama me ngā whakawhanatanga (animations and transitions) (he tino hiahia ana i a koe)
 
-### Te Wiki 4: Whakapeete o te Theme (Theme Generation)
+### Te Wiki 4: Whakapeete o te Theme (Theme Generation) {#step-4-theme-generation}
 
 Ko te Setup Assistant agent e whakatō ai i tō custom block theme me:
 
@@ -92,7 +92,7 @@ Ko te Setup Assistant agent e whakatō ai i tō custom block theme me:
 - Ngā style o block e hiahia ana i te design system o koe
 - Metadata o te theme me ngā whakatau o WordPress
 
-### Te Wiki 5: Whakawhanaungatanga me Whakamārama (Activation and Verification)
+### Te Wiki 5: Whakawhanaungatanga me Whakamārama (Activation and Verification) {#step-5-activation-and-verification}
 
 Ko te theme e whakawhanake ana automatically, ā, ka whakaatu atu ki a koe:
 
@@ -107,7 +107,7 @@ Ko te theme e whakawhanake ana automatically, ā, ka whakaatu atu ki a koe:
 
 I tēnei wā, e taea ai koe te pahi ki tō site kia whakaae ana ko te theme e whai tikanga ana.
 
-## Te Whakahaere o te Site me te Memory (Site Specification and site_brief Memory)
+## Te Whakahaere o te Site me te Memory (Site Specification and site_brief Memory) {#site-specification-and-sitebrief-memory}
 
 I tō wā pōwhiri, ko te agent e whakatāua i tō whakamahi o te site i te category o **site_brief** memory. Ko koinei e whai ana i:
 
@@ -117,7 +117,7 @@ I tō wā pōwhiri, ko te agent e whakatāua i tō whakamahi o te site i te cate
 - Ngā whakaaro o te design (Design preferences)
 - Te whāngai o te tikanga o te whakahou (Content structure)
 
-### He aha te nui o te site_brief?
+### He aha te nui o te site_brief? {#why-sitebrief-matters}
 
 I ngā wā pēri, ko ngā agents e whakamahi i tō site_brief kia:
 
@@ -136,11 +136,11 @@ ata
 
 Ka whakaatu ai te agent i te whakamahi mo te whakapūmau o te site (site specification) kua ipotahia.
 
-## Whakawātea i te whakatika i arahi (Customizing After Onboarding)
+## Whakawātea i te whakatika i arahi (Customizing After Onboarding) {#viewing-your-sitebrief}
 
 Iha i te whakatō i te Theme Builder, he tino pai ana koe ki:
 
-### Whai i te Kōrero o te Design System Aesthetics Skill
+### Whai i te Kōrero o te Design System Aesthetics Skill {#customizing-after-onboarding}
 
 Whakamārama atu i ngā whakaaro whakamahi design:
 
@@ -156,7 +156,7 @@ ata
 
 Ka tūmanako ai te **Design System Aesthetics skill** ki te whakamana i ngā whakawhiti whakaaro o design.
 
-### Whakawātea i te theme.json Rongo
+### Whakawātea i te theme.json Rongo {#use-the-design-system-aesthetics-skill}
 
 Mō ngā onua whai tino mātanga, whakatika i `/wp-content/themes/[theme-name]/theme.json` kia whakahou:
 
@@ -165,7 +165,7 @@ Mō ngā onua whai tino mātanga, whakatika i `/wp-content/themes/[theme-name]/t
 - Spacing values
 - Border and shadow definitions
 
-### Whakawātea i te Custom Block Templates
+### Whakawātea i te Custom Block Templates {#edit-themejson-directly}
 
 Whai i te WordPress block editor hei whakamaoritanga mō mga template whiriwhiri mo:
 
@@ -174,7 +174,7 @@ Whai i te WordPress block editor hei whakamaoritanga mō mga template whiriwhiri
 - Product pages
 - Contact forms
 
-## Whakamārama: Te Whakatū Ake (Comparison: Old vs. New Onboarding)
+## Whakamārama: Te Whakatū Ake (Comparison: Old vs. New Onboarding) {#create-custom-block-templates}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -184,7 +184,7 @@ Whai i te WordPress block editor hei whakamaoritanga mō mga template whiriwhiri
 | Flexibility | Tāwhiti o ngā onua | Whakaahua whiriwhiri |
 | Future updates | Eke i te whakamahinga | I ipotahia i te site_brief |
 
-## Whakamutunga (Troubleshooting)
+## Whakamutunga (Troubleshooting) {#comparison-old-vs-new-onboarding}
 
 **Ka whakatū i te flow o te onboarding nei i te wāhi**
 - Whakawhiti i te flow: "Start the Theme Builder onboarding"
@@ -203,7 +203,7 @@ Whai i te WordPress block editor hei whakamaoritanga mō mga template whiriwhiri
 - Whakawātea ki a te agent kia "whakamutunga akua i te theme me [specific changes]" (regenerate the theme with [specific changes]).
 - Whakarite i te theme.json i runga i te wāhi, he tino whakamahi ana koe ki te whakahaere i te mea.
 
-## Ngā mahi e kitea i roto i te whakatika (Next Steps)
+## Ngā mahi e kitea i roto i te whakatika (Next Steps) {#troubleshooting}
 
 Iha i te whakatā i te Theme Builder:
 

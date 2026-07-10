@@ -3,11 +3,11 @@ title: Навык спецыфікацыі сайта
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Навык "Спецыфікацыя сайта"
+# Навык "Спецыфікацыя сайта" {#site-specification-skill}
 
 **Навык "Спецыфікацыя сайта"** — гэта арганізаваны падыход да фіксацыі мэтаў вашага сайта, аўдыторыі і брэнда. Гэтыя дадзеныя захоўваюцца ў вашай памяці **site_brief**, якую агенты выкарыстоўваюць у розных сесіянах, каб прадастаўляць адповідальную і ў адпаведнасці з кантэкстам дапамога.
 
-## Што такое Спецыфікацыя сайта?
+## Што такое Спецыфікацыя сайта? {#what-is-site-specification}
 
 Спецыфікацыя сайта — гэта працэс дакументавання:
 
@@ -19,9 +19,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 
 Гэтая спецыфікацыя становіцца вашым **site_brief** — пастаяннай памяццю, якую агенты выкарыстоўваюць, каб разумець кантэкст вашага сайта.
 
-## Чаму выкарыстоўваць Спецыфікацыю сайта?
+## Чаму выкарыстоўваць Спецыфікацыю сайта? {#why-use-site-specification}
 
-### Пастаяннасць у розных сесіянах
+### Пастаяннасць у розных сесіянах {#consistency-across-sessions}
 
 Без site_brief вам трэба будзе павторальна паясняць мэту сайта ў кожны раз, калі вы пачынаеце новую сесію. З яго агенты адразу разумеюць:
 
@@ -30,7 +30,7 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - Структуру вашага кантэнту
 - Вашы бізнес-мэты
 
-### Лучшыя рэкамендацыі
+### Лучшыя рэкамендацыі {#better-recommendations}
 
 Агенты выкарыстоўваюць ваш site_brief, каб:
 
@@ -39,17 +39,17 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 - Прапанаваць дызайн, адпаведны вашым брэнду
 - Пазбегнуць прапановы непазбежных функцый
 
-### Шматштальніка ўваскулення
+### Шматштальніка ўваскулення {#faster-onboarding}
 
 Новыя агенты (або агенты ў новых сесіянах) магуць хутка ўвайсці ў курс справы, чытуючы ваш site_brief, а не задавая ўдакладняльныя пытанні.
 
-## Пачынне Спецыфікацыі сайта
+## Пачынне Спецыфікацыі сайта {#initiating-site-specification}
 
-### Падчас ўваскулення Theme Builder
+### Падчас ўваскулення Theme Builder {#during-theme-builder-onboarding}
 
 Навык Спецыфікацыі сайта аўтаматычна пачынаецца падчас **Theme Builder onboarding flow**. Агент Setup Assistant задае пытанні і буе ваш site_brief.
 
-### Ручнае пачынне
+### Ручнае пачынне {#manual-initiation}
 
 Вы можаце пачаць Спецыфікацыю сайта ў любы час:
 
@@ -63,9 +63,9 @@ _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 "Help me create a site brief"
 ```
 
-## Процэс Спецыфікацыі сайта
+## Процэс Спецыфікацыі сайта {#the-site-specification-process}
 
-### Крок 1: Мэта сайта
+### Крок 1: Мэта сайта {#step-1-site-purpose}
 
 Агент запытвае:
 
@@ -81,7 +81,7 @@ What is your site's primary purpose?
 
 Вы можаце выбраць катэгорыю або апісаць сваю ўласную мэту.
 
-### Крок 2: Цэлевае аўдыторыя
+### Крок 2: Цэлевае аўдыторыя {#step-2-target-audience}
 
 ```
 Who is your primary audience?
@@ -94,7 +94,7 @@ Who is your primary audience?
 What are their main needs?
 ```
 
-### Крок 3: Ідэнтікет брэнда
+### Крок 3: Ідэнтікет брэнда {#step-3-brand-identity}
 
 ```
 What are your brand colors?
@@ -110,7 +110,7 @@ How would you describe your brand tone?
 - Warm / friendly
 ```
 
-### Крок 4: Бізнес-мэты
+### Крок 4: Бізнес-мэты {#step-4-business-goals}
 
 ```
 What does success look like for your site?
@@ -129,7 +129,7 @@ What's your primary metric?
 - Other
 ```
 
-### Крок 5: Структура кантэнту
+### Крок 5: Структура кантэнту {#step-5-content-structure}
 
 ```
 How is your content organized?
@@ -148,7 +148,7 @@ What content types do you use?
 - Other
 ```
 
-## Ваша памяць site_brief
+## Ваша памяць site_brief {#your-sitebrief-memory}
 
 Пасля завяршэння Спецыфікацыі сайта ваша інфармацыя захоўваецца як **site_brief** у памяці вашага агента. Гэта структураваны записи, які ўтрымлівае:
 
@@ -169,9 +169,9 @@ What content types do you use?
 }
 ```
 
-## Пагляд і абнаўленне site_brief
+## Пагляд і абнаўленне site_brief {#viewing-and-updating-your-sitebrief}
 
-### Пагляд site_brief
+### Пагляд site_brief {#view-your-sitebrief}
 
 Запытайце ў агента:
 
@@ -187,7 +187,7 @@ What content types do you use?
 
 Агент адкажа, паказаўшы вашу захоўваную спецыфікацыю.
 
-### Абнаўленне site_brief
+### Абнаўленне site_brief {#update-your-sitebrief}
 
 Калі ваш сайт развіваецца, вы можаце абнавіць яго:
 
@@ -203,9 +203,9 @@ What content types do you use?
 
 Гэта паўторна запусціць навык Спецыфікацыі сайта, выкарыстоўваючы вашу існуючу інфармацыю ў карысных пунктах.
 
-## Як агенты выкарыстоўваюць site_brief
+## Як агенты выкарыстоўваюць site_brief {#how-agents-use-sitebrief}
 
-### Рэкамендацыі па дызайне
+### Рэкамендацыі па дызайне {#design-recommendations}
 
 Калі вы запрашаеце змены ў дызайне, агенты спасылаюцца на ваш site_brief:
 
@@ -216,7 +216,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Падказкі па функцыях
+### Падказкі па функцыях {#feature-suggestions}
 
 Агенты прапаноўваюць функцыі, адпаведныя вашым мэтам:
 
@@ -227,7 +227,7 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Структура кантэнту
+### Структура кантэнту {#content-structure}
 
 Агенты прапаноўваюць арганізацыю кантэнту на аснове вашай структуры:
 
@@ -238,16 +238,16 @@ organizing posts by product category and creating 'styling guides'
 that showcase multiple products together."
 ```
 
-## Найлепшыя практыкі
+## Найлепшыя практыкі {#best-practices}
 
-### Будзьце канкрэтнымі
+### Будзьце канкрэтнымі {#be-specific}
 
 Замест "агульнай аўдыторыі" апішыце вашу сапраўдную аўдыторыю:
 
 - ✓ "Women aged 25-45, interested in sustainable fashion"
 - ✗ "Everyone"
 
-### Абнаўляйце рэгулярычна
+### Абнаўляйце рэгулярычна {#update-regularly}
 
 Па меры развіцця вашага сайта, абнаўляйце свой site_brief:
 
@@ -256,14 +256,14 @@ that showcase multiple products together."
 - Калі змяняецца ідэнтікет вашага брэнда
 - Калі змяшчаюцца вашы бізнес-мэты
 
-### Выкарыстоўвайце адрозненную тэматыку
+### Выкарыстоўвайце адрозненную тэматыку {#use-consistent-terminology}
 
 Выкарыстоўвайце адноўныя тэрміны ў розных сесіянах:
 
 - ✓ Заўсёды кажучы "sustainable jewelry" (а не "eco-friendly jewelry" і "green products")
 - ✓ Пастаянна адносяцца да вашай аўдыторыі адным і тым чынам
 
-### Уключайце кантэкст
+### Уключайце кантэкст {#include-context}
 
 Падавайце фонавую інфармацыю, якая дапамагае агентам разумець вашыя рашэнні:
 
@@ -271,7 +271,7 @@ that showcase multiple products together."
 - "Наша аўдыторыя мае высокі ўзровень тэхналагічнай граматоўнасці і чакае сучаснага дызайну"
 - "Мы — стартап, які фінансуецца ўласнымі сродакамі, таму нам патрэбныя эканамічныя рашэнні"
 
-## Сувязь з Theme Builder Onboarding
+## Сувязь з Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Навык Спецыфікацыі сайта інтэграваны ў **Theme Builder onboarding flow**. Калі вы завяршаеце ўваскуленне, ваш site_brief аўтаматычна ствараецца з інфармацыі, якую вы прадастаўлялі.
 
@@ -281,7 +281,7 @@ that showcase multiple products together."
 - Абнавіць ваш site_brief, калі ваш сайт развіваецца
 - Стварыць дэталёвую спецыфікацыю перад пачаткам Theme Builder
 
-## Выяўленне праблем
+## Выяўленне праблем {#troubleshooting}
 
 **Мій site_brief не выкарыстоўваецца**
 - Патвердзіце, што агент мае доступ да памяці
@@ -297,7 +297,7 @@ that showcase multiple products together."
 - Абнавіць свой site_brief, калі ён застарэлы
 - Падаць дадатковы кантэкст у свае запыты
 
-## Наступныя крокі
+## Наступныя крокі {#next-steps}
 
 Пасля вызначэння спецыфікацыі сайта:
 

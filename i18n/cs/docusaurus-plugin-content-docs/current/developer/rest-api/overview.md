@@ -1,32 +1,32 @@
 ---
 title: Přehled REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Reference REST API
+# Referenční příručka REST API {#rest-api-reference}
 
-## Základní konfigurace
+## Základní konfigurace {#base-configuration}
 
 **Základní URL:** `{site_url}/wp-json/wu/v2/`
-**Autentizace:** API klíč a tajný heslo (HTTP Basic Auth nebo parametry URL)
+**Ověření:** API Key a Secret (HTTP Basic Auth nebo parametry URL)
 
-## Autentizace
+## Ověření {#authentication}
 
-### Aktivace API
+### Povolit API {#enable-api}
 ```php
-// Aktivuje API v nastavení Ultimate Multisite nebo programově
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Získání API údajů
+### Získat přihlašovací údaje API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metody autentizace
+### Metody ověření {#authentication-methods}
 
-**HTTP Basic Auth (Doporučeno):**
+**HTTP Basic Auth (doporučeno):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,11 +36,11 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Základní Endpoints
+## Základní endpointy {#core-endpoints}
 
-### 1. API zákazníků (Customers API)
+### 1. Customers API {#1-customers-api}
 
-**Základní cesta:** `/customers`
+**Základní trasa:** `/customers`
 
 **Získat všechny zákazníky**
 ```http
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Poznámky pro VIP zákazníka"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API webových stránek (Sites API)
+### 2. Sites API {#2-sites-api}
 
-**Základní cesta:** `/sites`
+**Základní trasa:** `/sites`
 
-**Vytvořit webovou stránku**
+**Vytvořit web**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,15 +96,15 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Moje nová stránka",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API členství (Memberships API)
+### 3. Memberships API {#3-memberships-api}
 
-**Základní cesta:** `/memberships`
+**Základní trasa:** `/memberships`
 
 **Vytvořit členství**
 ```http
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. API produktů (Products API)
+### 4. Products API {#4-products-api}
 
-**Základní cesta:** `/products`
+**Základní trasa:** `/products`
 
 **Získat všechny produkty**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API plateb (Payments API)
+### 5. Payments API {#5-payments-api}
 
-**Základní cesta:** `/payments`
+**Základní trasa:** `/payments`
 
 **Vytvořit platbu**
 ```http
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API domén (Domains API)
+### 6. Domains API {#6-domains-api}
 
-**Základní cesta:** `/domains`
+**Základní trasa:** `/domains`
 
-**Mapování domény**
+**Namapovat doménu**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint pro registraci
+## Registrační endpoint {#registration-endpoint}
 
-Endpoint `/register` poskytuje kompletní proces pro dokončení objednávky/registrace:
+Endpoint `/register` poskytuje kompletní tok checkout/registrace:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Moje nová stránka",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Chyby při odezvě
+## Endpointy suverénních tenantů {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 přidává REST pokrytí suverénních tenantů pro integrace, které zřizují, kontrolují nebo ověřují izolované tenanty.
+
+Přesný payload požadavku závisí na povolené schopnosti hostitele, ale integrace by měly očekávat tyto skupiny endpointů:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Použijte bootstrap endpoint k přípravě registru tenantů, databáze, souborového systému a stavu směrování. Použijte endpointy stavu migrace a ověření před přepnutím produkčního provozu. Použijte endpoint pro smazání pro suverénní odstranění, aby byly přihlašovací údaje k databázi odstraněny prostřednictvím toku čištění addonu.
+
+Typické odpovědi stavu migrace zahrnují:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Považujte `ready: false` za blokátor před spuštěním. Zkontrolujte podrobnosti ověření, opravte navázání hostitele databáze, frontu, zřizování uživatelů nebo problém se směrováním a poté ověření zopakujte.
+
+## Chybové odpovědi {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Neplatná hodnota parametru",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Neplatný formát e-mailu"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginační parametry a filtrování
+## Stránkování a filtrování {#pagination-and-filtering}
 
 **Parametry dotazu:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Obecní parametry:
-- `per_page` - Počet položek na stránce (výchozí: 20, max: 100)
+Běžné parametry:
+- `per_page` - Položky na stránku (výchozí: 20, max.: 100)
 - `page` - Číslo stránky
-- `search` - Vyhledávací výraz
-- `orderby` - Pole pro seřazení
-- `order` - Směr seřazení (asc/desc)
-- `status` - Filtrování podle stavu
-- `date_created` - Filtrování podle rozmezí dat
+- `search` - Hledaný výraz
+- `orderby` - Pole řazení
+- `order` - Směr řazení (asc/desc)
+- `status` - Filtrovat podle stavu
+- `date_created` - Filtrovat podle rozsahu dat

@@ -1,0 +1,30 @@
+---
+id: wu_checkout_form_base_domains
+title: فیلتر - wu_checkout_form_base_domains
+sidebar_label: wu_checkout_form_base_domains
+_i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
+---
+# فیلتر: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+
+دامنه‌های پایهٔ مشترک فرم checkout را فیلتر می‌کند که نباید به رکوردهای دامنهٔ نگاشت‌شده تبدیل شوند.
+
+از این فیلتر زمانی استفاده کنید که یک یکپارچه‌سازی دامنه‌های پایهٔ اضافی برای فیلدهای **Site URL** فرم checkout فراهم می‌کند. دامنه‌هایی که این فیلتر برمی‌گرداند، به‌جای دامنه‌های سفارشی برای هر سایت، به‌عنوان میزبان‌های ثبت‌نام مشترک در نظر گرفته می‌شوند.
+
+## پارامترها {#parameters}
+
+| نام | نوع | توضیحات |
+|------|------|-------------|
+| $domains | `array` | دامنه‌های پایهٔ مشترک جمع‌آوری‌شده از پیکربندی فرم checkout. |
+
+### از نسخه {#since}
+
+- 2.13.0
+
+### منبع {#source}
+
+در `inc/functions/domain.php` تعریف شده است.
+
+
+## خروجی‌ها {#returns}
+
+آرایه‌ای از دامنه‌های پایهٔ نرمال‌سازی‌شدهٔ فرم checkout.

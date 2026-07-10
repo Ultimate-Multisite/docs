@@ -3,15 +3,15 @@ title: Hooks-Nutzungsleitfaden
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# Leitfaden zur Verwendung von Hooks
+# Leitfaden zur Verwendung von Hooks {#hooks-usage-guide}
 
 Ultimate Multisite bietet über 200 Aktions-Hooks und über 280 Filter-Hooks. Diese Seite behandelt die am häufigsten verwendeten Hooks mit praktischen Beispielen. Für eine vollständige, automatisch generierte Referenz, stöbern Sie in den anderen Seiten dieses Abschnitts.
 
-## Aktions-Hooks
+## Aktions-Hooks {#action-hooks}
 
-### Kundenlebenszyklus
+### Kundenlebenszyklus {#customer-lifecycle}
 
-#### Nach der Kundenerstellung
+#### Nach der Kundenerstellung {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### Änderung des Kundenstatus
+#### Änderung des Kundenstatus {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site-Hooks
+### Site-Hooks {#site-hooks}
 
-#### Nach der Veröffentlichung der Site
+#### Nach der Veröffentlichung der Site {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### Vor der Anwendung des Templates
+#### Vor der Anwendung des Templates {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Mitgliedschaft-Hooks
+### Mitgliedschaft-Hooks {#membership-hooks}
 
-#### Statuswechsel
+#### Statuswechsel {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Zahlungs-Hooks
+### Zahlungs-Hooks {#payment-hooks}
 
-#### Zahlung abgeschlossen / fehlgeschlagen
+#### Zahlung abgeschlossen / fehlgeschlagen {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout-Hooks
+### Checkout-Hooks {#checkout-hooks}
 
-#### Vor der Verarbeitung / Nach Abschluss
+#### Vor der Verarbeitung / Nach Abschluss {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain-Hooks
+### Domain-Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter-Hooks
+## Filter-Hooks {#filter-hooks}
 
-### Preisfilter
+### Preisfilter {#pricing-filters}
 
-#### Warenkorbgesamt
+#### Warenkorbgesamt {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### Steuersätze
+#### Steuersätze {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Template-Filter
+### Template-Filter {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Beschränkungsfilter
+### Beschränkungsfilter {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway-Filter
+### Gateway-Filter {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout-Formularfelder
+### Checkout-Formularfelder {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### E-Mail-Inhalt
+### E-Mail-Inhalt {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

@@ -3,11 +3,11 @@ title: Veranderingslogboek
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Veranderingslogboek
+# Veranderingslogboek {#changelog}
 
-## 1.9.0 — Vrygestel op 2026-04-28
+## 1.9.0 — Vrygestel op 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nu
+### Nu {#new}
 
 - **`create_contact_form` vermoë** — skep 'n kontakvorm met behulp van die aktiewe vorm-plugin (Contact Form 7, WPForms, Fluent Forms, of Gravity Forms) en keer 'n shortcode terug wat gereed is om in enige plasing of bladsy ingebed te word.
 - **`set_featured_image` vermoë** — skenk 'n uitgeligte beeld aan 'n plasing of bladsy vanaf 'n bestaande Media Library byvoegsel-ID of 'n veilige URL; dit laat die beeld outomaties afbeeld wanneer 'n URL verskaf word.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Herstel laaste sessie** — die chatpaneel laai nou outomaties die mees onlangse gesprek op by bladsylaai en by widget-oopmaak, sodat die konteks nooit verloor word tydens bladsynavigasies nie.
 - **Plugin aksie-skakels** — vinnige skakels na Settings en die Abilities Registry verskyn nou op die WordPress **Plugins → Installed Plugins** skerm onder die plugin-beskrywing.
 
-### Verbeter
+### Verbeter {#improved}
 
 - **Beeldbron-herprobeer** — die agent probeer nou al gekonfigureerde gratis beeldbronne her, voordat dit terugval op 'n AI-gegenereerde beeld by afbeeldingsfout.
 - **Model-info paneel** — altyd sigbaar in die chat-kop; word nie meer verberg na die eerste boodskap nie.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget herontwerp** — 'n verenigde AI-ikoon vervang die vorige aangepaste avatar; dit is konsekwent met die ingeboude agent-sisteem.
 - **URL-linkifisering** — URL's wat in stelselboodskappe en foutboodskabubbles verskyn, word nou as klikbare skakels gerender.
 
-### Reggestel
+### Reggestel {#fixed}
 
 - **Vermoë-ontdekbaarheid** — beskrywings, stelsel-prompt verwysings en nameruimte-uitdrywing is gekorrigeer sodat alle vermoë betroubaar in die agent se gereedskaplys verskyn.
 - **Verskaffers-cache** — verskaffers word nou stelselwyd gekashede via 'n weergawe-teller, wat verouderde-verskaffers probleme op multisite-netwerke voorkom.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Vrygestel op 2026-04-09
+## 1.4.0 — Vrygestel op 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nu
+### Nu {#new-1}
 
 - **WP-CLI benchmark-bevel** (`wp gratis-ai-agent benchmark`) — voer die Agent Capabilities v1 benchmark-suite vanaf die lêlyn uit vir CI-pyplyne en modelbeoordelingswerkvloeite. Ondersteun per-vraag-lop, verskaffers/model-oorride, en JSON/CSV-uitvoer.
 - **Agent Capabilities v1 benchmark-suite** — 'n gestruktureerde stel komplekse, meer-stap-prompts wat die volledige vermoë-oppervlak oefen, met bemarkering en token/duur-rapportering.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant webwerf benchmark-vraag** (`q-restaurant-website`) — end-to-end toets wat CPT-registrasie, design system, navigasie, en plugin-ontdekking dek.
 - **AI verskaffers-verbindingsplugins** bygevoeg aan WordPress Playground blueprints vir vinniger plaaslike ontwikkelingsopstelling.
 
-### Verbeter
+### Verbeter {#improved-1}
 
 - README opgedateer met AI verskaffers-verbindingsdokumentasie en opstel-instruksies.
 
-### Reggestel
+### Reggestel {#fixed-1}
 
 - 25 PHPUnit toetsfoute op die `main` tak opgelos.
 - GitHub vrystellings URL-formaat in `blueprint.json` gekorrigeer.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Vorige vrystellingsnotas word in die plugin-repository gehou._

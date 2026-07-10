@@ -1,126 +1,124 @@
 ---
-title: E-poçtlar we ýaýyşyklar göndermek
+title: E-poçtalary we ýaýlymlary ibermek
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mail Gönderme we Yayma (v2)
+# E-poçtalary we Broadcastlary ibermek (v2) {#sending-emails-and-broadcasts-v2}
 
-_**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiyasının 2.x sürümünü nəzərdə tutur.**_
+_**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
-Ultimate Multisite funksiyası, siz hər hansı bir müştəri və ya müştəri qrupu üzərində e-mail göndərməyiniz və onların admin panellərinə xəbərlər yaymaq üçün bildirişlər göndərməyiniz yolu ilə müştərilərlə əlaqə qurmağa imkan verir.
+Ultimate Multisite, belli bir ulanyja ýa-da ulanyjylar toparyna e-poçta ibermek, şeýle hem bildirişleri ýaýratmak üçin olaryň admin dashboard-ynda habarnamalar ibermek arkaly müşderileriňiz bilen aragatnaşyk saklamaga mümkinçilik berýän aýratynlyk bilen gelýär
 
-## Yaymalarla Müştəri Panellərinizdə Admin Bildirişləri Əlavə Edin
+## Broadcasts bilen müşderileriňiziň dashboard-yna admin habarnamalary goşuň {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ultimate Multisite yayma funksiyasını istifadə edərək, siz **admin bildirişlərini** istifadəçi alt-saytının admin paneli üzərinə əlavə edə bilərsiniz.
+Ultimate Multisite broadcast aýratynlygyny ulanyp, ulanyjyňyzyň subsite admin dashboard-yna **admin habarnamalaryny** goşup bilersiňiz.
 
-Bu, sistemin texniki baxımdan saxlanılması kimi bir elan etmək və ya mövcud müştərilərə yeni məhsulları və xidmətləri təqdim etmək kimi elanlar verməyiniz lazım olduqda çox faydalıdır. Admin bildirişi istifadəçinizin paneli üzərində necə görünəcəyini bu sayda görə bilərsiniz.
+Ulgam hyzmaty ýa-da bar bolan ulanyjylaryňyza täze önümleri ýa-da hyzmatlary hödürlemek ýaly bildiriş etmek zerur bolsa, bu örän peýdalydyr. Admin habarnamasy ulanyjyňyzyň dashboard-ynda şeýle görüner.
 
-<!-- Screenshot unavailable: Müştəri alt-saytının paneli üzərində admin bildirişi göstərilir -->
+<!-- Ekran suraty elýeterli däl: Admin habarnama broadcast müşderiniň subsite dashboard-ynda görkezilýär -->
 
-Admin bildirişini başlatmaq üçün şəbəkə admin panellərinizə gedin və **Ultimate Multisite** menyusunun altında **Broadcasts** seçiminə görə tapacaqsınız.
+Admin habarnamasyny başlatmak üçin network admin dashboard-yňyza gidiň we **Ultimate Multisite** menýusynyň aşagynda **Broadcasts** opsiýasyny taparsyňyz.
 
-![Ultimate Multisite adminində Yaymalar siyahısı səhifəsi](/img/admin/broadcasts-list.png)
+![Ultimate Multisite adminindäki Broadcasts sanaw sahypasy](/img/admin/broadcasts-list.png)
 
-Mövcud yaymaları redaktə edə bilərsiniz:
+Bar bolan broadcastlary hem redaktirläp bilersiňiz:
 
-![Yayma redaktə interfeysi](/img/admin/broadcast-edit.png)
+![Broadcast redaktirleme interfeýsi](/img/admin/broadcast-edit.png)
 
-Bu səhifədən yuxarıdakı **Add Broadcast** düyməsini basın.
+Bu sahypadan ýokardaky **Add Broadcast** düwmesine basyň.
 
-Bu, hansı növ yayma göndərmək istədiyinizi seçə biləcəyiniz Add broadcast modal pəncərəsini açacaq.
+Bu, ibermek isleýän broadcast görnüşiňizi saýlap biljek Add broadcast modal penjiresini açar.
 
-Sadəcə **Message** (Məktub) seçin və sonra **Next Step** düyməsinə basın.
+Dowam ediň we **Message** saýlaň, soňra **Next Step** düwmesine basyň.
 
-![Message seçilmiş add broadcast modalı](/img/admin/broadcast-add-message.png)
+![Message opsiýasy saýlanan Add broadcast modal penjiresi](/img/admin/broadcast-add-message.png)
 
-Növbəti pəncərə sizdən ya **Target customer** (Hədəf müştəri) və ya **Target product** (Hədəf məhsul) soruşacaq. Qeyd edin ki, bir nechta istifadəçini və ya bir nechta məhsulu seçə bilərsiniz.
+Indiki penjire sizden **Target customer** ýa-da **Target product** sorar. Birden köp ulanyjyny ýa-da birden köp önümi saýlap biljekdigiňize üns beriň.
 
-Bir kullanıcı hesabı ýa ürün barada gözlemek üçin, esasy sözü (keyword) ulanyp girmeýäňiz gerek.
+Ulanyjy account-yny ýa-da önümi gözlemek üçin meýdanyň içine açar sözi ýazyp başlamaly.
 
-**Message type** (Mesaj görnüşi) boýundaki ulanyp-girmeli alanda, bildirişin reňkini saýlaýarsyňyz. Bu, mesajlaryňizi has gowy düşündirmek üçin zerurlygy ösdürer.
+**Message type** meýdanynyň aşagynda habarnamanyň reňkini saýlap bilersiňiz. Bu habaryňyzyň gyssaglylygyny nygtar.
 
-Soňra **Next Step** (Indiki ädim) düwmanyna basyp bilersiňiz.
+Soňra **Next Step** basyp bilersiňiz.
 
-![Message broadcast targetlar, target produkt we mesaj görnüşi alany](/img/admin/broadcast-message-targets.png)
+![Message broadcast üçin Target customers, target product we message type meýdanlary](/img/admin/broadcast-message-targets.png)
 
-Indiki pencerede subjekti we ulanyjylara ýaýlamak isleýän mazmuny (content/message) girip öz mesajyňyzy tassyklap bilersiňiz.
+Indiki penjire, ulanyjylara broadcast etmek isleýän temany we mazmuny/habary girizip, habaryňyzy düzmäge başlap bilýän ýeriňizdir.
 
-![Compose ädimi bolan ýaýlama mesaj subjekti we mazmun redaktory](/img/admin/broadcast-edit.png)
+![Düzmek ädiminde broadcast habarynyň temasy we mazmun redaktory](/img/admin/broadcast-edit.png)
 
-Mesajyzy döredenden soň, **Send** (Göndermek) düwmanyna basyp bilersiňiz.
+Habaryňyzy döredeniňizden soň, **Send** düwmesine basyp bilersiňiz.
 
-We bu barada. Administrasiýa bildirişi siziň ulanyjylaryňiz dasha bilen görkezmeli bolmaly.
+Ine, şeýledir. Admin habarnamasy derrew ulanyjyňyzyň dashboard-ynda görünmeli.
 
-## Iň amatly adamlar ücigine e-poçta ýazmak
+## Müşderileriňize e-poçta iberiň {#send-emails-to-your-customers}
 
-Ultimate Multisite ýaýlama funksionalyndan peýdalanmagy bilen, ulanyjylara e-poçta ýazyp bilersiňiz. E-poçtany diňe belli bir ulanyjylara ýa-da olaryň subskribolary bolan produkt ýa-da plan esasyny görkezýän belli bir ulanyjylar toparyna ücigini bermegi üçin mümkinçilik bar.
+Ultimate Multisite broadcast aýratynlygyny ulanyp, ulanyjylaryňyza e-poçta iberip bilersiňiz. E-poçtany diňe belli ulanyjylara ibermek ýa-da olaryň abuna bolan önümi ýa-da meýilnamasy esasynda belli ulanyjy toparyny nyşana almak opsiýaňyz bar.
 
-E-poça ýaýlama başlamak üçin, ulgamyňiz administrasiýa panelindäki (network admin dashboard) size Ultimate Multisite menüsinde Broadcast opsiyasyny tapyp bilersiňiz.
+E-poçta broadcast başlatmak üçin network admin dashboard-yňyza gidiň we Ultimate Multisite menýusynyň aşagynda Broadcast opsiýasyny taparsyňyz.
 
-![E-poça ýaýlamalaryň sanaw lapasy e-poçta ýaýlama başlamak üçin ulanylýan](/img/admin/broadcasts-list.png)
+![E-poçta broadcast üçin başlangyç nokady hökmünde ulanylýan Broadcasts sanaw sahypasy](/img/admin/broadcasts-list.png)
 
-Bu sahanyndan, üstden **Add broadcast** (Ýaýlama goşmak) düwmanyna basyň.
+Bu sahypadan ýokardaky **Add broadcast** düwmesine basyň.
 
-Bu size ýaýlamanyň nähili görnüşini göndermek isleýändigini saýlaýan Add broadcast modal penceresini açar. Ýaýlamak isleýän görnüşi saýlaň, soňra **Email** (E-poçta) bilen saýlaň we **Next Step** düwmanyna basyň.
+Bu, ibermek isleýän broadcast görnüşiňizi saýlap biljek Add broadcast modal penjiresini açar. Dowam ediň we **Email** saýlaň, soňra **Next Step** düwmesine basyň.
 
-![Email opsiyasy saýlanan Add broadcast modal penceresi](/img/admin/broadcast-add-email.png)
+![Email opsiýasy saýlanan Add broadcast modal penjiresi](/img/admin/broadcast-add-email.png)
 
-Indiki pencere size ýa-da **Target customer** (Maddar adam) ýa-da **Target product** (Maddar produkt) sorap biler. Birden birden çendian ulanyjylary ýa-da birden birden ürükleri saýlaýanlaryňyz boljakdygyny ýatlaň.
+Indiki penjire sizden **Target customer** ýa-da **Target produc** t sorar. Birden köp ulanyjyny ýa-da birden köp önümi saýlap biljekdigiňize üns beriň.
 
-Kullanıcı hesabı ýa maglumat hasap üçin gözlemek isleýärsiňiz, sözüni ulanyp girirmeli.
+Ulanyjy account-yny ýa-da önümi gözlemek üçin meýdanyň içine açar sözi ýazyp başlamaly.
 
-Maqsaldaryňyz seçilip biler bolsa, **Next Step**-e basyp bilersiňiz.
+Nyşana alnan diňleýjiňiz saýlanandan soň, **Next Step** basyp bilersiňiz.
 
-![Email habarynyň maksatly ulgam we maksatly maglumat hasaby üçin saýlanmagy](/img/admin/broadcast-email-targets.png)
+![Email broadcast üçin target customers we target product saýlawy](/img/admin/broadcast-email-targets.png)
 
-Indiki pencerede size emaili ýazmaga başlap bilersiňiz, subjekty we ulanyjylara göndermek isleýän mazmunu/mesajy girip bilersiňiz.
+Indiki penjire, ulanyjylara ibermek isleýän temany we mazmuny/habary girizip, e-poçtaňyzy düzmäge başlap bilýän ýeriňizdir.
 
-<!-- Screenshot unavailable: Email habarynyň subjekti we mazmun edarlaşdyrmagyň aşgabatda -->
+<!-- Ekran suraty elýeterli däl: Düzmek ädiminde Email broadcast temasy we mazmun redaktory -->
 
-Mesajy döredenden soň, **Send** düwämesine basyp bilersiňiz.
+Habaryňyzy döredeniňizden soň, **Send** düwmesine basyp bilersiňiz.
 
-We bu broadcast funksionaly bilen ulanyjylara email göndermek nädereeli aňsatdyr.
+Broadcast aýratynlygyny ulanyp ahyrky ulanyjylaryňyza e-poçta ibermek şeýle aňsatdyr.
 
-## Sistem habarlary (System emails)
+## Ulgam e-poçtalary {#system-emails}
 
-Ultimate Multisite-da sistem habarlary – bu resminama, tölemek, domany eşde dowamly ýaly belli hereketlerden soň sistem tarapyndan ýüklenen **awtomatiki bildirişlerdir**. Bu emailleri Ultimate Multisite sozlamalaryndan redaktir edip üýtgetmek mümkin. Şeýle hem, başga bir Ultimate Multisite görnüşindäki mövcud sozlamalaryny hasaplaýjy we ýazyjy üçin özüni täsirlemek we import etmek üçin funksiýa bar.
+Ultimate Multisite-daky ulgam e-poçtalary, hasaba alyş, töleg, domen kartalaşdyrma we ş.m. ýaly belli hereketlerden soň ulgam tarapyndan iberilýän **awtomatik habarnamalardyr**. Bu e-poçtalar Ultimate Multisite sazlamalaryndan redaktirlenip ýa-da üýtgedilip bilner. Ol şeýle hem başga bir Ultimate Multisite gurnamasynyň bar bolan sazlamalaryny täzeden dikeltmäge we import etmäge mümkinçilik berýän aýratynlyk bilen gelýär.
 
-### Hasaplamak we Import etmek (Resetting & Importing)
+### Täzeden dikeltmek we import etmek {#resetting--importing}
 
-New Ultimate Multisite görnüşleri, şeýle hem add-onlar wagtynda täze emailleri hasaplaýar.
+Täze Ultimate Multisite wersiýalary, şeýle hem goşmaçalar, wagtal-wagtal täze e-poçtalary bellige alyp biler we alar.
 
-Çaklyşyklary we beýleki meseleleriň ýüze çykmasynyň öňüni almak üçin, **biz täze email şablonlaryny siziň görnüşiňizde Sistem habarlary hökmünde awtomatiki hasaplamaydyk**, eger o belli bir funksiýanyň düzgün işlemek üçin möhümdir.
+Gapma-garşylyklaryň we beýleki meseleleriň öňüni almak üçin, belli bir aýratynlygyň dogry işlemegi üçin örän möhüm bolmasa, **täze e-poçta şablonlaryny gurnamaňyza System Emails hökmünde awtomatik goşmarys** .
 
-Ýöne super adminler we agentler bu täze hasaplanan emailleri import edip bilýärler, bu proses täze email şablonunyň mazmuny we sozlamalaryny özüniň ýa-da islendik üýtgetmelerini amala aşyrmagy mümkin bolan täze sistem habary hökmünde döredendir.
+Şeýle-de bolsa, super adminler we agentler bu täze bellige alnan e-poçtalary importer guraly arkaly import edip bilerler. Bu proses täze e-poçta şablonynyň mazmuny we konfigurasiýasy bilen täze ulgam e-poçtasyny döreder we super admin-e islän üýtgetmelerini etmäge ýa-da olary bolşy ýaly saklamaga mümkinçilik berer.
 
-#### Sistem habarlaryny nasıl import etmek
+#### Ulgam e-poçtalaryny nädip import etmeli {#how-to-import-system-emails}
 
+Ultimate Multisite Settings sahypaňyza gidiň we **Emails** tab-yna geçiň.
 
+![System Emails bölümini görkezýän Ultimate Multisite sazlamalaryndaky Emails tab-y](/img/config/settings-emails-tab.png)
 
-Ultimate Multisite Ayarlary sayfasyna geçiň we **Emails** sekýiisine gitdiň.
+Soňra, gapdal panelde **Customize System Emails** düwmesine basyň.
 
-![Ultimate Multisite ayarlaryndaky Emails sekýesi görkeziji resmini](/img/config/settings-emails-tab.png)
+<!-- Ekran suraty elýeterli däl: System Emails gapdal panelindäki Customize System Emails düwmesi -->
 
-Soňra, yanrakda, **Customize System Emails** düwmesine basyň.
+System Emails sahypasynda ýokarda **Reset & Import** hereket düwmesini görersiňiz. Şol düwmä basmak import we täzeden dikeltmek modal penjiresini açmaly.
 
-<!-- Screenshot unavailable: System Emails yanrak panelinde Customize System Emails düwmesi resmini -->
+![System Emails admin sahypasyndaky Reset ýa-da Import hereket düwmesi](/img/admin/system-emails-reset-import.png)
 
-System Emails sayfasında, üstde **Reset & Import** işlemleri düwmenini görersiňiz. Bu düwme basylanda import we reset modal penceresi açylmaly.
+Soňra, haýsy ulgam e-poçtalarynyň import edilmäge elýeterlidigini görmek üçin Import Emails opsiýalaryny açyp-ýapyp bilersiňiz.
 
-![System Emails admin sayfasındaki Reset veya Import işlemi düğmenin resmini](/img/admin/system-emails-reset-import.png)
+<!-- Ekran suraty elýeterli däl: E-poçtalary import etmek opsiýalary giňeldilen Täzeden düzmek we Import modal penjiresi -->
 
-Soňra, Import Emails opsionalaryny geçirişip görersiňiz, haýsy sistem e-poçtalary import edilip biljekdigini bilerisiz.
+#### Ulgam e-poçtalaryny täzeden düzmek {#reseting-system-emails}
 
-<!-- Screenshot unavailable: Import Emails opsionalary bilen genişletilmiş Reset ve Import modal resmini -->
+Käwagt belli bir e-poçta şablonyna girizen üýtgetmeleriňiziň indi size laýyk gelmeýändigine düşünersiňiz we ony **deslapky ýagdaýyna** täzeden düzmek islärsiňiz.
 
-#### System Emails-i Sıfırlamak (Reseting)
+Şeýle ýagdaýlarda iki opsiýaňyz bar: ulgam e-poçtasyny ýöne pozup, ony gaýtadan import edip bilersiňiz (ýokardaky görkezmeleri ulanyp) — bu iberiş ölçeglerini we beýleki zatlary pozar, şonuň üçin bu usul iň az maslahat berilýär.
 
-Biziňden başga bir wagt, belli bir e-poçta şablona geçirenleriň özü üçin işe yrim ýetmediğini we ony olaryň **default döwletine** sıfırlamak isleýändiklerini anyklaşdyryp bilersiňiz.
+Ýa-da şol e-poçta şablonyny täzeden düzmek üçin **Täzeden düzmek we Import guralyny** ulanyp bilersiňiz.
 
-Bu ýagdaýlarda, size iki opsiyany bar: siz diňe sistem e-poçtasyny silip soňra onu geri import edip bilersiňiz (üstde berlen talbat bilen) - bu bolsa göndermälik metrikalary we beýleki zatlary ýok eder, bu sebäpli bu usul iň az üstünlikli usuldyr.
+E-poçta şablonyny täzeden düzmek üçin ýokardaky ädimleri Täzeden düzmek we Import guralyna ýetýänçäňiz ýerine ýetirip, soňra **Täzeden düzmek** opsiýasyny açyň we deslapky mazmunyna täzeden düzmek isleýän e-poçtalaryňyzy saýlaň.
 
-Ýa-da siz şablony sıfırlamak üçin **Reset & Import tool**dan sagatly ulanyp bilersiňiz.
-
-E-poçta şablony sıfırlamak üçin, ýokarda görkezilen ädimleri üstünlikli çykan Reset & Import tooluna çenli dowam etdiň we soňra **Reset** opsiyasyny geçiriň we ony default mowzuklaryna geri almak isleýän e-poçtalary saýlaň.
-
-<!-- Screenshot unavailable: Reset ve Import modal resmini ilə genişletilmiş Reset Emails opsionalary resmini -->
+<!-- Ekran suraty elýeterli däl: E-poçtalary täzeden düzmek opsiýalary giňeldilen Täzeden düzmek we Import modal penjiresi -->

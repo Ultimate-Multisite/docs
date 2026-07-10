@@ -3,7 +3,7 @@ title: Konata Inkompatibilitetoj
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Konsciente inkompatibilitate kun alia Plugin-oj
+# Konsciente inkompatibilitate kun alia Plugin-oj {#known-incompatibilities-with-other-plugins}
 
 Ansekvi instalado kaj aktivaigi Ultimate Multisite, vi povas diri problemo grundu neadresita inkompatibilitate kun aliaj plugin-oj.
 

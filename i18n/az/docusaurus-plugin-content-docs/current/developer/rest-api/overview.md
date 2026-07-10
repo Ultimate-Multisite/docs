@@ -1,30 +1,30 @@
 ---
-title: REST API Baxışı
+title: REST API icmalı
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referansı
+# REST API İstinadı {#rest-api-reference}
 
-## Əsas Konfiqurasiya
+## Əsas Konfiqurasiya {#base-configuration}
 
 **Əsas URL:** `{site_url}/wp-json/wu/v2/`
-**Kimlik Doğrulama:** API Key & Secret (HTTP Basic Auth və ya URL Parametrləri)
+**Autentifikasiya:** API Açarı və Secret (HTTP Basic Auth və ya URL Parametrləri)
 
-## Kimlik Doğrulama
+## Autentifikasiya {#authentication}
 
-### API-ni Aktivləşdirmək
+### API-ni Aktivləşdir {#enable-api}
 ```php
-// API-ni Ultimate Multisite ayarlarında və ya proqramatik şəkildə aktivləşdirin
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API Giriş Məlumatlarını Almaq
+### API Məlumatlarını Əldə Et {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Kimlik Doğrulama Metodları
+### Autentifikasiya Üsulları {#authentication-methods}
 
 **HTTP Basic Auth (Tövsiyə olunur):**
 ```bash
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Əsas Endpointlər
+## Əsas Son Nöqtələr {#core-endpoints}
 
-### 1. Müştərilər API-si
+### 1. Müştərilər API-si {#1-customers-api}
 
-**Əsas Yol:** `/customers`
+**Əsas Marşrut:** `/customers`
 
-**Bütün Müştəriləri Almaq**
+**Bütün Müştəriləri Əldə Et**
 ```http
 GET /wu/v2/customers
 ```
 
-**Tək Müştəriləri Almaq**
+**Tək Müştərini Əldə Et**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Müştəri Yaratmaq**
+**Müştəri Yarat**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Müştəridə Dəyişiklik Etmək (Update)**
+**Müştərini Yenilə**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP müştəri qeydləri"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Müştəridi Silmək**
+**Müştərini Sil**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Saytlar API-si
+### 2. Saytlar API-si {#2-sites-api}
 
-**Əsas Yol:** `/sites`
+**Əsas Marşrut:** `/sites`
 
-**Sayt Yaratmaq**
+**Sayt Yarat**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Mənim Yeni Saytım",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. Üçüncü Tərəf (Memberships) API-si
+### 3. Üzvlüklər API-si {#3-memberships-api}
 
-**Əsas Yol:** `/memberships`
+**Əsas Marşrut:** `/memberships`
 
-**Üçüncü Tərəf Yaratmaq**
+**Üzvlük Yarat**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Məhsullar API-si
+### 4. Məhsullar API-si {#4-products-api}
 
-**Əsas Yol:** `/products`
+**Əsas Marşrut:** `/products`
 
-**Bütün Məhsulları Almaq**
+**Bütün Məhsulları Əldə Et**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Ödənişlər API-si
+### 5. Ödənişlər API-si {#5-payments-api}
 
-**Əsas Yol:** `/payments`
+**Əsas Marşrut:** `/payments`
 
-**Ödəniş Yaratmaq**
+**Ödəniş Yarat**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domenlər API-si
+### 6. Domenlər API-si {#6-domains-api}
 
-**Əsas Yol:** `/domains`
+**Əsas Marşrut:** `/domains`
 
-**Domen Mərhələləndirməsi (Map Domain)**
+**Domeni Xəritələ**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Qeydiyyat Endpointi
+## Qeydiyyat Son Nöqtəsi {#registration-endpoint}
 
-`/register` endpointi tam bir checkout/qeydiyyat axını təmin edir:
+`/register` son nöqtəsi tam checkout/qeydiyyat axını təmin edir:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Mənim Yeni Saytım",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Cavab (Response):**
+**Cavab:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Xəta Cavabları
+## Suveren Tenant Son Nöqtələri {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 təcrid olunmuş tenant-ları təmin edən, yoxlayan və ya doğrulayan inteqrasiyalar üçün suveren tenant REST əhatəsini əlavə edir.
+
+Dəqiq sorğu yükü aktivləşdirilmiş host imkanından asılıdır, lakin inteqrasiyalar bu son nöqtə qruplarını gözləməlidir:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Tenant reyestrini, verilənlər bazasını, fayl sistemini və marşrutlaşdırma vəziyyətini hazırlamaq üçün bootstrap son nöqtəsindən istifadə edin. Production trafikini keçirməzdən əvvəl miqrasiya statusu və doğrulama son nöqtələrindən istifadə edin. Suveren söküntü üçün silmə son nöqtəsindən istifadə edin ki, verilənlər bazası məlumatları addon təmizləmə axını vasitəsilə silinsin.
+
+Tipik miqrasiya statusu cavablarına daxildir:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` dəyərini işə salınmadan əvvəl bloklayıcı kimi qəbul edin. Doğrulama təfərrüatlarını yoxlayın, verilənlər bazası host bağlanmasını, növbəni, istifadəçi təminatını və ya marşrutlaşdırma problemini düzəldin, sonra doğrulamanı yenidən sınayın.
+
+## Xəta Cavabları {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Parametr dəyəri yanlışdır",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Yanlış email formatı"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Səhifələndirmə və Filtirləmə
+## Səhifələmə və Filtrləmə {#pagination-and-filtering}
 
-**Query Parametrləri:**
+**Sorğu Parametrləri:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Ümumi parametrlər:
-- `per_page` - Səhifə başına element sayı (default: 20, maksimum: 100)
+- `per_page` - Hər səhifədə elementlər (standart: 20, maksimum: 100)
 - `page` - Səhifə nömrəsi
 - `search` - Axtarış termini
 - `orderby` - Sıralama sahəsi
 - `order` - Sıralama istiqaməti (asc/desc)
-- `status` - Statusa görə filtrləmə
-- `date_created` - Tarix aralığı ilə filtrləmə
+- `status` - Statusa görə filtrlə
+- `date_created` - Tarix aralığına görə filtrlə

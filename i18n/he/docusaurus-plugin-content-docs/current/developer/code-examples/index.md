@@ -3,11 +3,11 @@ title: דוגמאות קוד מתקדמות
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# דוגמאות קוד מתקדמות
+# דוגמאות קוד מתקדמות {#advanced-code-examples}
 
 דוגמאות אלו מדגימות דפוסי אינטגרציה מתקדמים עם Ultimate Multisite.
 
-## מנוע תמחור דינמי
+## מנוע תמחור דינמי {#dynamic-pricing-engine}
 
 מנוע תמחור מבוסס כללים שמיישם הנחות נפח, נאמנות ועונתיות:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## הקמת אתר מתקדמת
+## הקמת אתר מתקדמת {#advanced-site-provisioning}
 
 הגדרת אתרים חדשים באופן אוטומטי עם תוספים (plugins), SSL, CDN, גיבויים וניטור, בהתאם לתכונות המנוי:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## מערכת מגבלות מותאמות אישית
+## מערכת מגבלות מותאמות אישית {#custom-limitations-system}
 
 מעקב ואכיפה של מגבלות משאבים עם אזהרות שימוש:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## מונה אטומי ב-BerlinDB עם `increment_item()`
+## מונה אטומי ב-BerlinDB עם `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 הוסיף מתודה `increment_item()` למחלקת `Query` של BerlinDB. השתמשו בה כדי לבצע הגבלות אטומיות ובטוחות על עמודות מספריות, מבלי להיפגע ממרוצי קריאה-שינוי-כתיבה (read-modify-write races) — שימושי למונים, מכסות שימוש ובדיקות הגבלת קצב (rate-limiting) שרצות תחת בקשות מקבילות.
 
-### חתימת המתודה
+### חתימת המתודה {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 הוסיף מתודה `increment_item()` למחלקת 
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### שימוש בסיסי
+### שימוש בסיסי {#basic-usage}
 
 ```php
 // הוספה של 1 לעמודת `api_calls` עבור מזהה מנוי 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### מעקב אחר שימוש ב-API לכל מנוי בנפרד
+### מעקב אחר שימוש ב-API לכל מנוי בנפרד {#tracking-api-usage-per-membership}
 
 דפוס מעשי לאכיפת מגבלות קצב (rate limits) של API לכל מנוי בנפרד:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### למה `increment_item()` במקום `update_item()`
+### למה `increment_item()` במקום `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 גישת קריאה-שינוי-כתיבה (read-modify-write) פשוטה אינה בטוחה תחת בקשות מקבילות:
 

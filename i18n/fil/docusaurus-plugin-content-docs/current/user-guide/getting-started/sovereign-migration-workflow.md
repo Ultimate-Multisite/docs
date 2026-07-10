@@ -3,11 +3,11 @@ title: Daloy ng Migrasyon ng Sovereign
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migration Workflow
+# Sovereign Migration Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ay nagdaragdag ng mga verification gate para sa paglilipat ng isang standard subsite patungo sa sovereign tenant infrastructure.
 
-## Bago ka magsimula
+## Bago ka magsimula {#before-you-start}
 
 Siguraduhin na mayroon ka nang:
 
@@ -17,7 +17,7 @@ Siguraduhin na mayroon ka nang:
 - Database host binding na tumutugma sa destination environment.
 - Access para magpatakbo ng WP-CLI commands para sa network.
 
-## Inirerekomendang workflow
+## Inirerekomendang workflow {#recommended-workflow}
 
 1. Ihanda ang destination tenant database at filesystem.
 2. I-register o i-update ang mga setting ng tenant isolation.
@@ -28,7 +28,7 @@ Siguraduhin na mayroon ka nang:
 7. Bisitahin ang tenant gamit ang SSO.
 8. Palitan ang DNS o routing lamang pagkatapos maaprubahan ang verification.
 
-## Verification gates
+## Verification gates {#verification-gates}
 
 Sinusuri ng workflow ng verification ang migration mula sa iba't ibang anggulo:
 
@@ -40,6 +40,6 @@ Sinusuri ng workflow ng verification ang migration mula sa iba't ibang anggulo:
 
 Ituring ang mga failure sa verification bilang pre-launch blockers. Ayusin ang reported database, user, queue, o routing issue, pagkatapos ay patakbuhin muli ang verification bago ibunyag ang tenant sa mga customer.
 
-## Unang production visit
+## Unang production visit {#first-production-visit}
 
 Pagkatapos maaprubahan ang verification, gamitin ang **Visit (SSO)** mula sa site management screen para sa unang admin visit. Kinukumpirma nito ang tenant routing, paghawak ng SSO token, origin pinning, at user provisioning sa panig ng tenant sa isang kontroladong hakbang.

@@ -1,150 +1,156 @@
 ---
-title: Kukonza Fomu Yanu ya Kufotokozera
+title: Kusintha Fomu Yanu Yolembetsa
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kufotera Form ya Kufotera (Registration Form)
+# Kusintha Fomu yanu Yolembetsa {#customizing-your-registration-form}
 
-Kuti form ya wopambana wanu (network) yanu itoneka kukhala yomwe yomwe m'other SaaS zosamwira pa WordPress platform, Ultimate Multisite imaliza kufula kuti mupambane ndi kufotera ndi kupanga m'login pages yanu ndi **Checkout Forms** feature yathu.
+Kuti network yanu iwoneke yapadera kuposa ma SaaS ena onse omangidwa pa WordPress platform, Ultimate Multisite imakulolani kusintha masamba anu olembetsa ndi olowera pogwiritsa ntchito mbali yathu ya **Checkout Forms**.
 
-Koma zimene ndi njira yofupi ndimwe yopambana kuti mufotere m'njira zosiyanasiyana pamene mukuphunzira kuwongolera wamene (convert new customers), zimene zikuyendetsedwa kwambiri kuti mupanga forms ya kufotera yanu yomwe ndi yomwe yomwe. Nkhaniyi imayenera kuyesa kuti mufotere kuti mupambane bwanji.
+Ngakhale ndi njira yosavuta komanso yosinthika yoyesera njira zosiyanasiyana poyesa kusintha alendo atsopano kukhala makasitomala, nthawi zambiri amagwiritsidwa ntchito kupanga mafomu olembetsa okonzedwa mwapadera. Nkhaniyi ikufuna kukuwonetsani momwe mungachitire izi.
 
-## Login and registration pages:
+## Masamba olowera ndi olembetsa: {#login-and-registration-pages}
 
-Poyamba pamene mukuphatira Ultimate Multisite, imaliza kupeza login pages ndi registration pages zosiyanasiyana pa site yanu yomwe yomwe yomwe (main site). Muli ndi ulemu wopambana kuti mupambane zimene m'njira ya **Ultimate Multisite > Settings > Login & Registration**.
+Mukangoyika Ultimate Multisite, imangopanga masamba apadera olowera ndi olembetsa pa site yanu yayikulu. Mutha kusintha masamba osasinthika awa nthawi iliyonse popita ku tsamba lanu la **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Tsamba la makonda a Login ndi Registration](/img/config/settings-general.png)
 
-Ili ndi chitsanzo chofupi cha login and registration settings page:
+Nawu muwone wonse wa tsamba la makonda a login ndi registration:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Tsamba lonse la makonda a Login ndi Registration](/img/config/settings-login-registration-full.png)
 
-Tiyenera kupeza m'njira ya zinthu zonse zomwe mupambana pa **Login & Registration** page:
+Tiyeni tiwone njira iliyonse yomwe mungasinthe pa tsamba la **Login & Registration**:
 
-  * **Enable registration:** Ulemu wopambana utha kukhala wopambana kapena kusakhala wopambana pa njira yanu. Ngati utha kuwera, anthu anu sindikugonani kufotera ndi kupanga m'njira ya zinthu zina.
+  * **Yambitsani kulembetsa:** Njirayi idzayambitsa kapena kuzimitsa kulembetsa pa network yanu. Ngati yazimitsidwa, makasitomala anu sadzatha kulembetsa ndi kusubscribe ku zinthu zanu.
 
-  * **Enable email verification:** Ngati ulemu wopambana utha kukhala wopambana, anthu omwe akufotera kwa plan yosangalatsa kapena plan yomwe ndi trial period amapereka email ya kuwonetsa ndipo mukupeza kuti awonjeza link ya kuwonetsa kuti websites yanu zikugonani.
+  * **Yambitsani kutsimikizira email:** Ngati njirayi yayatsidwa, makasitomala omwe asubscribe ku plan yaulere kapena plan yolipira yokhala ndi nthawi yoyesera adzalandira email yotsimikizira ndipo adzafunika kudina ulalo wotsimikizira kuti mawebusayiti awo apangidwe.
 
-* **Registration page ya mwayi (Default registration page):** Iyi ndi mwayi woperekera kuperekera. Mwayi wina umene ulipereka pa website wanu ndipo unapasika fomu ya kukhulupirira (imene imayenera kudziwitsa kuti checkout form) - pamene abwino wanu adzindikire zoperekera zanu. Mumweyi mungapeza mwayi woperekera ndi fomu ya checkout kupambana komwe mungakuthandizeni, koma mwamulitsa kuti mwayi woperekera umene ulipereka shortcode ya checkout form, monga poyenera kukhala.
+  * **Tsamba losasinthika lolembetsa:** Ili ndi tsamba losasinthika lolembetsa. Tsambali liyenera kukhala lofalitsidwa pa website yanu ndipo likhale ndi fomu yolembetsa (yomwe imadziwikanso ngati checkout form) - komwe makasitomala anu adzasubscribe ku zinthu zanu. Mutha kupanga masamba olembetsa ndi checkout forms ochuluka momwe mukufunira, ingokumbukirani kuyika checkout form shortcode pa tsamba lolembetsa, apo ayi sidzawoneka.
 
-  * **Gwiritsani ntchito mwayi woperekera wanu (Use custom login page):** Mwayi wina umene mumakweza mwayi woperekera wanu woperekera, wosiyanasiyana ndi mwayi woperekera woperekera wanu woperekera. Ngati mwayi wina umene ulipereka, mungapeze kuti mwayi wotchedwa **Default login page** (mmodzi m'moyo pansi) uthandizira kuperekera kodi mudzindikire mwayi woperekera.
+  * **Gwiritsani ntchito tsamba lolowera lokonzedwa mwapadera:** Njirayi imakulolani kugwiritsa ntchito tsamba lolowera lokonzedwa mwapadera, losiyana ndi tsamba losasinthika la wp-login.php. Ngati njirayi yayatsidwa, mutha kusankha tsamba lomwe lidzagwiritsidwe ntchito polowera pa njira ya **Tsamba lolowera losasinthika** (pansipa pomwe).
 
-  * **Kuyenera kukonza URL ya operekera woperekera (Obfuscate the original login url (wp-login.php))**: Ngati mukuona kuti mukufuna kukonza URL yoperekera woperekera, mungapeze kuti mwayi wina umene ulipereka. Iyi ndi yenera kuti muchezi zoperekera zomwe zimayenera kudziperekera (brute-force attacks). Ngati mwayi wina umene ulipereka, Ultimate Multisite idzindikira error ya 404 pamene munthu amakuti akufuna kupeza link yoperekera woperekera woperekera.
+  * **Bisani login url yoyambirira (wp-login.php)** : Ngati mukufuna kubisa login URL yoyambirira, mutha kuyatsa njirayi. Izi ndi zothandiza popewa kuukira kwa brute-force. Ngati njirayi yayatsidwa, Ultimate Multisite idzawonetsa cholakwika cha 404 pamene wogwiritsa ntchito ayesa kufikira ulalo woyambirira wa wp-login.php
 
-  * **Kuyenera kukonza kuperekera kwa site (Force synchronous site publication)**: Pambuyo pomwe mwana wanu adzindikire zoperekera pa network, site yanu yosiyanasiyana yomwe yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana yomwe yosiyanasiyana y
+  * **Kakamizani kufalitsa site nthawi yomweyo:** Makasitomala akasubscribe ku chinthu pa network, site yatsopano yomwe ikuyembekezera iyenera kusinthidwa kukhala site yeniyeni ya network. Njira yofalitsa imachitika kudzera mu Job Queue, mosagwirizana ndi nthawi yomweyo. Yambitsani njirayi kuti mukakamize kufalitsa kuchitika mu pempho lomwelo monga signup.
 
-* **Kusanya Jumper:** Kutsanya Jumper shortcut m'maka ndi njira yofupitsa administrators kuti makhale m'maka ya Ultimate Multisite, objects za network, ndi malo ena omwe ndiwo muli woyenera m'maka pamene muli woyenera m'maka. Kutsanya kungakhale muli woyenera m'maka kuti mupereke ntchito yofupitsa imwe ya njira ya kukhala m'maka.
+Tsopano, tiyeni tiwone njira zina zomwe zikadali zofunika pa njira yolowera ndi yolembetsa. Zili pansipa pa **Other options** pa tsamba lomwelo la Login & registration:
 
-  * **Kusankha anthu kwa site yomwe ndi yomwe:** Kusankha opesero ili kudziwitsa anthuwo ku site yomwe ndi yomwe m'maka pambuyo pa njira ya kupanga akaunti. Ngati muli woyenera opesero ili, kukhala opesero kuti mupereke **default role** la anthuwo awa pamene m'website yanu kulibe pamwamba kwake.
+  * **Role yosasinthika:** Iyi ndi role yomwe makasitomala anu adzakhala nayo pa website yawo pambuyo pa njira ya signup.
 
-  * **Kusankha akaunti ambiri:** Kutsatira opesero ili anthu angathe kuti akune akaunti m'sites ena za network yanu ndi email yomwe ndi yomwe. Ngati opesero ili osatira, anthu wanu sindikugonana kukhala akaunti pa websites ena zomwe zikuyendera m'network yanu ndi email yomwe ndi yomwe.
+  * **Yambitsani Jumper:** Imayambitsa njira yachidule ya Jumper mu admin area. Jumper imalola oyang'anira kudumpha mwachangu kupita ku masikirini a Ultimate Multisite, zinthu za network, ndi malo ena othandizidwa popanda kusakatula menyu iliyonse. Izimitseni ngati mukufuna kubisa chida chimenecho choyendera mwachangu pa admin interface.
 
-Ndipo izi ndi njira zonse zomwe muli ndi kusankha kwake za login ndi registration zomwe mungupereke ntchito. Musintha kukhala m'maka pambuyo pamene mumaliza kupanga zinthu.
+  * **Onjezaninso ogwiritsa ntchito ku site yayikulu:** Kuyambitsa njirayi kudzawonjezeranso wogwiritsa ntchito ku site yayikulu ya network yanu pambuyo pa njira ya signup. Ngati muyambitsa njirayi, njira yokhazikitsa **role yosasinthika** ya ogwiritsa ntchito awa pa website yanu idzawonekeranso pansipa pomwe.
 
-## Kukhala ndi forms zosiyanasiyana za registration:
+  * **Yambitsani ma account angapo:** Lolani ogwiritsa ntchito kukhala ndi ma account mu ma site osiyanasiyana a network yanu ndi email address yomweyo. Ngati njirayi yazimitsidwa, makasitomala anu sadzatha kupanga account pa mawebsite ena omwe akuyenda pa network yanu ndi email address yomweyo.
 
-Ultimate Multisite 2.0 imapereka editor ya checkout form yomwe imapangitsa kuti mupange forms zingapo zomwe muli woyenera, ndi fields osiyanasiyana, zinthu zina zomwe muli ndi.
+Ndipo ndizo njira zonse zokhudzana ndi login ndi registration zomwe mungasinthe! Musaiwale kusunga makonda anu mukamaliza kuwasintha.
 
-M'maka ya login ndi registration zimapanga shortcodes: **[wu_login_form]** pa m'maka ya login ndipo **[wu_checkout]** kwa m'maka ya registration. Mungupereke ntchito yomwe mungupereke ntchito ya registration kwambiri monga kupanga kapena kukhala ndi checkout forms.
+## Kugwiritsa ntchito mafomu olembetsa angapo: {#using-multiple-registration-forms}
 
-Kuti muli woyenera imwe ntchitoyi, ndi lembeda ku menu ya **Checkout Forms**, pa upatsa wa chinthu (left side-bar).
+Ultimate Multisite 2.0 imapereka checkout form editor yomwe imakulolani kupanga mafomu ochuluka momwe mukufunira, okhala ndi minda yosiyanasiyana, zinthu zomwe zikuperekedwa, ndi zina zotero.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Masamba onse a login ndi registration amaikidwamo shortcodes: **[wu_login_form]** pa tsamba la login ndi**[wu_checkout]** pa tsamba la registration. Mutha kusinthanso tsamba la registration popanga kapena kumanga checkout forms.
 
-Pa m'maka imeneyi, mungone forms zonse zomwe muli ndi.
+Kuti mufikire mbaliyi, pitani ku menyu ya **Checkout Forms**, kumanzere pa side-bar.
 
-Ngati mukuwoneka kupanga yomwe wosiyanasiyana, kudzipereke pa **Add Checkout Form** pamwamba pa m'maka.
+![Menyu ya Checkout Forms mu sidebar](/img/config/checkout-forms-list.png)
 
-Mungathe monga mwayi mwa mpaka wopereka: single step (mwayi wosamba), multi-step (mwayi wosamba wosamba), kapena blank (mwayi wosamba wosamba). Ondokera, chita kuti **Go to the Editor**.
+Pa tsambali, mutha kuona checkout forms zonse zomwe muli nazo.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Ngati mukufuna kupanga yatsopano, ingodinani **Add Checkout Form** pamwamba pa tsambali.
 
-Mwayi wopereka monga mwayi osamba kapena mwayi wosamba wosamba, mwayi wopereka wosamba uli ndi zinthu zomwe zikuyenera kuti uliwonse. Kodi mukuwoneza kuti mukuwoneza zinthu zina? Mungathe kulemba kapena kuwulitsa (duplicate) mwayi wopereka womwe muli ndiwo mwa mwayi wopereka. Kuti mukuwoneza shortcode ya mwayi wopereka kapena kuti mupereke, mwayi wopereka umene muli ndiwo m'optionzi.
+Mutha kusankha imodzi mwa njira zitatuzi ngati poyambira: sitepe imodzi, masitepe angapo kapena yopanda kanthu. Kenako, dinani **Go to the Editor**.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Onjezani Checkout Form yokhala ndi njira za sitepe imodzi, masitepe angapo, kapena yopanda kanthu](/img/config/checkout-forms-list.png)
 
-Ngati mukuwoneza single step kapena multi-step, mwayi wopereka womwe muli ndiwo mwa mwayi wosamba uliwonse. Kodi mukuwoneza kuti mukuwoneza zinthu zina? Mungathe kuwamba mwayi wosamba wosamba kwa iwo.
+Mwinanso, mutha kusintha kapena kubwereza mafomu omwe muli nawo kale podina njira zomwe zili pansipa pa dzina lake. Kumeneko, mupezanso njira zokopera shortcode ya fomuyo kapena kufufuta fomuyo.
 
-### Kulemba Mwayi Wopereka:
+![Zochita za hover pa checkout form zokhala ndi kusintha, kubwereza, ndi kufufuta](/img/config/checkout-form-hover-actions.png)
 
-Kodi tikuyenera kumwamba, mwayi wopereka womwe muli ndiwo mwa mwayi wopereka wosamba kuti mupereke zinthu zina. M'maka imeneyi, tikukonza mwayi wopereka wosamba.
+Ngati musankha sitepe imodzi kapena masitepe angapo, checkout form idzakhala itadzazidwa kale ndi masitepe ofunikira kuti igwire ntchito. Kenako, ngati mukufuna, mutha kuwonjezera masitepe owonjezera.
 
-Poyamba, mwayi wopereka wosamba, chita dzina (kuti zimene zidzitsogolera m'moyo wopereka) ndi slug (kuti zimene zikuyenera kuti mupereke shortcodes).
+### Kusintha Checkout Form: {#editing-a-checkout-form}
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+Monga tanena kale, mutha kupanga checkout forms pa zolinga zosiyanasiyana. Mu chitsanzo ichi tigwira ntchito pa fomu yolembetsa.
 
-Mwayi wopereka umene muli ndi mwayi wosamba ndi fields. Mungathe kuwamba mwayi wosamba wosamba mwa chithunzi cha **Add New Checkout Step**.
+Mukapita ku checkout form editor, perekani fomu yanu dzina (lomwe lidzagwiritsidwa ntchito ngati cholozera chamkati chokha) ndi slug (yogwiritsidwa ntchito kupanga shortcakes, mwachitsanzo).
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Mkonzi wa fomu ya checkout yokhala ndi minda ya dzina ndi slug](/img/config/checkout-form-name-slug.png)
 
-Pa tab yoyamba ya modal window, limakumbutsa mwayi wopereka womwe muli ndi mwayi wosamba wanu. Limakumbutsa ID, dzina (name), ndipo maonero (description). Izi zinthu zimene zikuyenera kuti m'moyo wopereka womwe muliwo.
+Mafomu amapangidwa ndi masitepe ndi minda. Mungawonjezere sitepe yatsopano podina **Add New Checkout Step**.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Batani la Add New Checkout Step](/img/config/checkout-form-add-step.png)
 
-Mmodzi, limakumbutsa visibility ya mwayi wosamba. Mungathe kukhonza monga **Always show** (kuti zimene zikuyenera kuti zikuyenera kuwoneka), **Only show for logged in users** (kuti zimene zikuyenera kuti zikuyenera kwawo omwe ali ndi account), kapena **Only show for guests** (kuti zimene zikuyenera kwawo omwe si ali ndi account).
+Pa tabu yoyamba ya zenera la modal, lembani zomwe zili mu sitepe ya fomu yanu. Ipatseni ID, dzina ndi kufotokozera. Zinthu izi zimagwiritsidwa ntchito kwambiri mkati.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Tabu ya zomwe zili mu sitepe ya checkout yokhala ndi ID, dzina, ndi kufotokozera](/img/config/checkout-form-step-content.png)
 
-Muli, chifukira mwayi (step style). Izilomwezi izi si zikuluza (optional fields).
+Kenako, khazikitsani kuoneka kwa sitepeyo. Mungasankhe pakati pa **Always show** , **Only show for logged in users** kapena **Only show for guests**.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Zosankha za kuoneka kwa sitepe ya checkout](/img/config/checkout-form-step-visibility.png)
 
-Kuti muli ndi nthawi yomwe mwagwira mwayi wanu womwe (first step), muli kukhulupirira kuti **Add New Field** ndikupereka mtayelo wosonyeza mwayi wanu wotani muli.
+Pomaliza, konzani kalembedwe ka sitepeyo. Iyi ndi minda yosankha.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Kukonzekera kalembedwe ka sitepe ya checkout](/img/config/checkout-form-step-style.png)
 
-Kukati kwa mtayelo (field) muli ndi zinthu zina zomwe muli kukhulupirira. Kuti muli mwayi wanu womwe woyamba, mudzindikire mtayelo wa **Username**.
+Tsopano, ndi nthawi yowonjezera minda ku sitepe yathu yoyamba. Ingodinani **Add New Field** ndikusankha mtundu wa gawo lomwe mukufuna.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Batani la Add New Field](/img/config/checkout-form-add-field-button.png)![Menyu yotsika yosankhira mtundu wa munda](/img/config/checkout-form-field-type-dropdown.png)
 
-Muli kukhulupirira mwayi wanu womwe wosonyeza ndipo muli ndi mtayelo onse omwe muli kukhulupirira. Kuti muli ndi zinthu zomwe anthu anu angathe kuyesa, muli kukhulupirira mtayelo wa Pricing Table. Ngati muli mwayi wanu womwe woyenera kuti anthu anu amagwira chithunzi (template), mudzindikire mtayelo wa Template Selection. Ndipo ndi zina zambiri.
+Munda uliwonse uli ndi magawo osiyanasiyana oti mudzaze. Pa kulowa koyamba uku, tidzasankha munda wa **Username**.
 
-_**Note:** Ngati muli kukhulupirira wopereka product monga muli kukhulupirira checkout form, muli kukhulupirira kuwunika product m'Pricing table section. Ngati muli osalira, product si mwamuka kwa anthu anu pa registration page._
+![Kukonzekera munda wa Username](/img/config/checkout-form-username-content.png)![Magawo a munda wa Username](/img/config/checkout-form-username-visibility.png)![Zokonda zowonjezera za munda wa Username](/img/config/checkout-form-username-style.png)
 
-_**Note 2:** username, email, password, site title, site URL, order summary, payment, ndi submit button ndi zinthu zomwe zimene (mandatory fields) kuti muli kukhulupirira checkout form._
+Mungawonjezere masitepe ndi minda yambiri momwe mungafunire. Kuti muwonetse zinthu zanu kwa makasitomala anu kuti asankhe chimodzi, gwiritsani ntchito munda wa Tebulo la Mitengo. Ngati mukufuna kulola makasitomala anu kusankha template, onjezani munda wa Kusankha Template. Ndi zina zotero.
 
-Muli mwayi wanu womwe mwagwira mwayi wanu wokukhulupirira, muli kuyesa Preview button kuti muli kuona kuti anthu anu adzindikire form bwanji. Muli kuyesa nkhani (alternate) m'view monga user wosonyeza kapena visitor.
+![Mkonzi wa fomu ya checkout yokhala ndi munda wosankha template](/img/config/checkout-form-with-template-field.png)
 
-![Button ya kuona kwenye editor ya fomu ya checkout](/img/config/checkout-form-preview-button.png)![Kuona muonekano wa fomu ya checkout kama mtumiaji au mtumiaji aliye wapo](/img/config/checkout-form-preview-modal.png)
+_**Dziwani:** Mukapanga chinthu mutapanga fomu yanu ya checkout, mudzafunika kuwonjezera chinthucho mu gawo la Tebulo la Mitengo. Ngati simuchiwonjezera, chinthucho sichidzawoneka kwa makasitomala anu pa tsamba lolembetsera._
 
-Mwishowe, kwenye **Advanced Options** unaweza kuweka ujumbe kwa ukurasa wa **Thank You**, kuongeza snippets za kufuatilia conversions, kuongeza CSS ya kibinafsi (custom CSS) kwenye fomu yako ya checkout au kuzuia kutumia fomu hiyo katika nchi fulani.
+_**Dziwani 2:** username, email, password, mutu wa site, URL ya site, chidule cha oda, kulipira, ndi batani lotumiza ndi minda yofunikira kupanga fomu ya checkout._
 
-![Advanced Options na ukurasa wa Thank You, kufuatilia conversion, na CSS ya kibinafsi](/img/config/checkout-form-advanced.png)
+Pamene mukugwira ntchito pa fomu yanu ya checkout, nthawi zonse mungagwiritse ntchito batani la Preview kuti muone momwe makasitomala anu adzaonere fomu. Mungasinthanenso pakati pa kuwona ngati wogwiritsa ntchito yemwe alipo kale kapena mlendo.
 
-Unaweza pia kuwasha au kuzima fomu yako ya checkout kwa kubadilisha chaguo hili kwenye safu ya kulia (right column), au kufuta fomu hiyo milele.
+![Batani la Preview pa mkonzi wa fomu ya checkout](/img/config/checkout-form-preview-button.png)![Kuwoneratu fomu ya checkout ngati mlendo kapena wogwiritsa ntchito yemwe alipo kale](/img/config/checkout-form-preview-modal.png)
 
-![Chombo cha kuwasha na kufuta chaguo la fomu ya checkout](/img/config/checkout-form-active.png)
+Pomaliza, pa **Advanced Options** mungakonze uthenga wa tsamba la **Thank You**, kuwonjezera snippets kuti mutsatire conversions, kuwonjezera CSS yosinthidwa ku fomu yanu ya checkout kapena kuiletsa kumayiko ena.
 
-Usisahau kuhifadhi fomu yako ya checkout!
+![Advanced Options yokhala ndi tsamba la Thank You, kutsatira conversion, ndi CSS yosinthidwa](/img/config/checkout-form-advanced.png)
 
-![Button ya kuhifadhi fomu ya checkout](/img/config/checkout-form-save.png)
+Mungathenso kuyatsa kapena kuzimitsa pamanja fomu yanu ya checkout posintha njira iyi pa kolamu yakumanja, kapena kuchotsa fomuyo kosatha.
 
-Ili kupata shortcode ya fomu yako, bonyeza **Generate Shortcode** na nakili jibu linaloonekana kwenye dirisha la modal.
+![Kusinthira kwa Active ndi njira yochotsa fomu ya checkout](/img/config/checkout-form-active.png)
 
-![Modal ya Generate Shortcode yenye shortcode ya kukopi](/img/config/checkout-form-editor.png)
+Musaiwale kusunga fomu yanu ya checkout!
 
-_**Kumbuka:** Utahitaji kuongeza shortcode hii kwenye ukurasa wako wa usajili ili iweze kuongezwa fomu hiyo ya checkout._
+![Batani la Save Checkout Form](/img/config/checkout-form-save.png)
 
-## Kuchagua bidhaa na templates mapema kupitia URL parameters:
+Kuti mutenge shortcode ya fomu yanu dinani **Generate Shortcode** ndipo koperani zotsatira zomwe zawonetsedwa pa zenera la modal.
 
-Ikiwa unataka kuunda meza za bei maalum kwa bidhaa zako na kuchagua mapema kwenye fomu ya checkout bidhaa au template ambayo mteja anachagua kutoka kwenye ukurasa wako wa bei au templates, unaweza kutumia URL parameters kwa hili.
+![Modal ya Generate Shortcode yokhala ndi shortcode yoti mukopere](/img/config/checkout-form-editor.png)
 
-### **Kwa mipango (plans):**
+_**Dziwani:** Mudzafunika kuwonjezera shortcode iyi pa tsamba lanu lolembetsera kuti fomu ya checkout iyi iwonjezedwe pamenepo._
 
-Nenda kwenye **Ultimate Multisite > Products > Select a plan**. Utakuta kitufe cha **Click to copy Shareable Link** kile juu ya ukurasa huo. Hii ndiyo link unayoweza kutumia kuchagua mpango huu maalum kwenye fomu yako ya checkout.
+## Kusankhiratu zinthu ndi ma template kudzera mu magawo a URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-![Ukurasa wa bidhaa na kitufe cha link kinachoshirikiwa](/img/config/products-list.png)
+Ngati mukufuna kupanga matebulo a mitengo osinthidwa mwamakonda a zinthu zanu ndi kusankhiratu pa fomu ya checkout chinthu kapena template yomwe kasitomala wanu amasankha kuchokera pa tebulo lanu la mitengo kapena tsamba la ma template, mungagwiritse ntchito magawo a URL pa izi.
 
-Kumbuka kuti link iliyonseka lili kwa **Plans** chetu chetu chetu. Simwezi kutumira link iliyonseka kwa packages kapena services.
+### **Kwa mapulani:** {#for-plans}
 
-### Kwa templates:
+Pitani ku **Ultimate Multisite > Products > Select a plan**. Muyenera kuona batani la **Click to copy Shareable Link** pamwamba pa tsambalo. Iyi ndi link yomwe mungagwiritse ntchito kusankhiratu pulani yeniyeniyi pa fomu yanu ya checkout.
 
-Ngati mukufuna kudzira site templates m'mwayi wanu wa checkout, muli ndi ule parameter: **?template_id=X** pa URL ya registration yanu. "X" liyenera kuchotsedwa ndi **site template ID number**. Kuti utenge nambala yeniyo, ndi kuyenda ku **Ultimate Multisite > Sites**.
+![Tsamba la chinthu lokhala ndi batani la link yogawana](/img/config/products-list.png)
 
-Kupseza **Manage** m'mwayi wanu wa site template m'mwayi wanu wosangalatsa. Mudzindikira SITE ID number. Kodi mudzitumize nambala iyi kuti site template lili lili ndi chifukwa chaite pa checkout form yanu? M'mwayi wathu, parameter ya URL idzalimbikira ndi **?template_id=2**.
+Dziwani kuti link yogawana iyi ndi yovomerezeka kokha kwa **Mapulani**. Simungagwiritse ntchito ma link ogawana pa mapaketi kapena ntchito.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+### Kwa ma template: {#for-templates}
 
-Muli ndi website yathu ya network imodzi ndi [**www.mynetwork.com**](http://www.mynetwork.com) ndipo m'mwayi wanu wa registration ndi pa page yomwe muli ndi checkout form. URL yosonyeza zonse ndi site template lili lili ndi chifukwa chaite lili lokhudzana ndi [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Ngati mukufuna kusankhiratu ma template a site pa fomu yanu ya checkout, mungagwiritse ntchito parameter: **?template_id=X** pa URL ya tsamba lanu lolembetsera. "X" iyenera kusinthidwa ndi **nambala ya ID ya site template**. Kuti mutenge nambala iyi, pitani ku **Ultimate Multisite > Sites**.
 
-Ndipo ngati mukufuna kudzira products ndi templates zonse pa checkout form yanu, zomwe muli ndi kuyesa ndi kopyera parameter ya template ku mwamba. Idzalimbikira kuti lili lokhudzana ndi [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Dinani **Manage** pansi pomwe pa site template yomwe mukufuna kugwiritsa ntchito. Mudzawona nambala ya SITE ID. Ingogwiritsani ntchito nambala iyi pa site template yeniyeniyi kuti isankhidwiratu pa fomu yanu ya checkout. Mu nkhani yathu pano, parameter ya URL idzakhala **?template_id=2**.
+
+![Mndandanda wa Sites ukuwonetsa ID ya site template](/img/config/site-templates-list.png)
+
+Tiyerekeze kuti website ya network yathu ndi [**www.mynetwork.com**](http://www.mynetwork.com) ndipo tsamba lathu lolembetsera lokhala ndi fomu yathu ya checkout lili pa tsamba la **/register**. URL yonse yokhala ndi site template iyi yosankhidwiratu idzaoneka ngati [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ndipo ngati mukufuna, mungasankhiretu zonse ziwiri, zinthu ndi ma template, ku fomu yanu ya checkout. Zonse muyenera kuchita ndi kukopera link yogawana ya pulaniyo ndikuyika parameter ya template kumapeto. Idzaoneka ngati [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

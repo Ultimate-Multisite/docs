@@ -1,138 +1,138 @@
 ---
-title: Kedu ihe na ịle n'ụzọdụ mape domain?
+title: Otu esi ahazi Njikọ Ngalaba
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Naa Maakaị Domain Mapping (v2)
+# Otu esi ahazi Ijikọ Ngalaba (v2) {#how-to-configure-domain-mapping-v2}
 
-_**LƯU Ý QUAN TRỌNG: Bài viết này đề cập đến phiên bản Ultimate Multisite 2.x.**_
+_**IHE NDỊ DỊ MKPA: Edemede a na-ezo aka na Ultimate Multisite ụdị 2.x.**_
 
-Một trong những tính năng mạnh mẽ nhất của một mạng lưới cao cấp là khả năng cho khách hàng của chúng ta cơ hội gắn tên miền cấp cao (top-level domain) vào các trang web của họ. Sau cùng, cái nào trông chuyên nghiệp hơn: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) hay [_**joesbikeshop.com**_](http://joesbikeshop.com)? Đó là lý do tại sao Ultimate Multisite cung cấp tính năng đó sẵn có, mà không cần phải dùng đến các plugin của bên thứ ba.
+Otu n’ime njirimara kachasị ike nke netwọkụ premium bụ ikike inye ndị ahịa anyị ohere ijikọ ngalaba dị n’ọkwa elu na saịtị ha. N’ikpeazụ, nke na-adị ka nke ọkachamara karịa: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ma ọ bụ [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ọ bụ ya mere Ultimate Multisite ji enye njirimara ahụ n’ime ya, na-enweghị mkpa iji ngwa mgbakwunye ndị ọzọ.
 
-## Domain mapping là gì?
+## Gịnị bụ ijikọ ngalaba? {#whats-domain-mapping}
 
-Như tên nó gợi ý, domain mapping là khả năng mà Ultimate Multisite mang lại để nhận yêu cầu về một tên miền tùy chỉnh và ánh xạ yêu cầu đó tới trang web tương ứng trong mạng lưới với tên miền cụ thể đó được gắn vào.
+Dị ka aha ahụ na-egosi, ijikọ ngalaba bụ ikike Ultimate Multisite na-enye iji nata arịrịọ maka ngalaba omenala ma jikọọ arịrịọ ahụ na saịtị kwekọrọ na netwọkụ ahụ nke ejikọtara ngalaba ahụ pụrụ iche na ya.
 
-### Cách thiết lập domain mapping trên Mạng Ultimate Multisite của bạn
+### Otu esi ahazi ijikọ ngalaba na Ultimate Multisite Network gị {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping cần có một vài cài đặt từ phía bạn để hoạt động. May mắn thay, Ultimate Multisite tự động hóa công việc vất vả cho bạn để bạn có thể dễ dàng đáp ứng các yêu cầu.
+Ijikọ ngalaba chọrọ ụfọdụ nhazi n’aka gị ka ọ rụọ ọrụ. Ọ dabara nke ọma, Ultimate Multisite na-eme ka ọrụ siri ike bụrụ akpaaka maka gị ka ị nwee ike izute ihe achọrọ n’ụzọ dị mfe.
 
-Trong quá trình cài đặt Ultimate Multisite, wizard sẽ tự động sao chép và cài đặt **sunrise.php** vào thư mục được chỉ định. **Wizard sẽ không cho phép bạn tiếp tục cho đến khi bước này hoàn tất**.
+N’oge nrụnye Ultimate Multisite, wizard ga-edegharị ma wụnye **sunrise.php** na folda e kenyere. **Wizard agaghị ekwe ka ị gaa n’ihu ruo mgbe emechara nzọụkwụ a**.
 
-<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
+<!-- Enweghị screenshot: wizard nrụnye Ultimate Multisite nwere nzọụkwụ sunrise.php -->
 
-Điều này có nghĩa là một khi wizard cài đặt Ultimate Multisite đã hoàn tất thiết lập mạng của bạn, bạn có thể bắt đầu ánh xạ tên miền tùy chỉnh ngay lập tức.
+Nke a pụtara na ozugbo wizard nrụnye Ultimate Multisite mechara ịhazi netwọkụ gị, ị nwere ike ịmalite ijikọ ngalaba omenala ozugbo.
 
-Lưu ý rằng domain mapping trong Ultimate Multisite không bắt buộc. Bạn có lựa chọn sử dụng chức năng domain mapping gốc của WordPress Multisite hoặc bất kỳ giải pháp domain mapping nào khác.
+Rịba ama na ijikọ ngalaba na Ultimate Multisite abụghị iwu. Ị nwere nhọrọ iji ọrụ ijikọ ngalaba nke WordPress Multisite n’onwe ya ma ọ bụ ngwọta ijikọ ngalaba ọ bụla ọzọ.
 
-Ọ bụrụ na ị chọrọ ka ịdisa (disable) domain mapping nke Ultimate Multisite anọchịrị maka ịkwado ụzọ ndị ọzọ, ị nwere ike ịdisa akụrie a ọkụkọ **Ultimate Multisite > Settings > Domain Mapping**.
+Ọ bụrụ na ịchọrọ gbanyụọ ijikọ ngalaba Ultimate Multisite iji nye ohere maka ngwọta ijikọ ngalaba ndị ọzọ, ị nwere ike gbanyụọ njirimara a n’okpuru **Ultimate Multisite > Settings > Ijikọ Ngalaba**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Peeji ntọala Ijikọ Ngalaba na-egosi ntụgharị admin, ozi ijikọ na nhọrọ DNS](/img/config/domain-mapping-settings.png)
 
-N'ime akụrie a, ị Ọ nwere ike ịhụ akụrie **Force Admin Redirect**. Akụrie a na-agbanwe gị ka ị chọrọ ka ndị ọrụ gị nwere ike ịnwassị dashboard admin ha n'aka domain custom ha na subdomain ma ọ bụ karị n'aka ha anọchitere anya.
+Kpọmkwem n’okpuru nhọrọ a, ị nwekwara ike ịhụ nhọrọ **Manye Ntugharị Admin**. Nhọrọ a na-enye gị ohere ijikwa ma ndị ahịa gị ga-enwe ike ịbanye na dashboard admin ha ma na ngalaba omenala ha ma na subdomain ha, ma ọ bụ naanị n’otu n’ime ha.
 
-Ọ bụrụ na ị chọrọ **Force redirect to mapped domain**, ndị ọrụ gị ga-anọchitere anya dashboard admin ha n'aka domain custom ha karị nwere ike, ma ọ bụ site a.
+Ọ bụrụ na ịhọrọ **Manye ntugharị gaa na ngalaba ejikọtara** , ndị ahịa gị ga-enwe ike ịbanye na dashboard admin ha naanị na ngalaba omenala ha.
 
-Akụrie **Force redirect to** **network domain** ga-agbanwe ihe dị iche iche - ndị ọrụ gị ga-anọchitere anya dashboard ha n'aka subdomain ha, ọbụghị na ha chọrọ ịlog in n'aka domain custom ha.
+Nhọrọ **Manye ntugharị gaa na** **ngalaba netwọkụ** ga-eme kpọmkwem ihe megidere ya - a ga-ekwe ka ndị ahịa gị banye na dashboard ha naanị na subdomain ha, ọbụna ma ọ bụrụ na ha na-agbalị ịbanye na ngalaba omenala ha.
 
-Ma akụrie **Allow access to the admin by both mapped domain domain and network domain** ga-agbanwe ka ndị ọrụ gị nwere ike ịnwassị dashboard admin ha n'aka subdomain ma ọ bụ site a.
+Ma nhọrọ **Kwe ka ịbanye na admin site ma na ngalaba ejikọtara ma na ngalaba netwọkụ** na-enye ha ohere ịbanye na dashboard admin ha ma na subdomain ma na ngalaba omenala.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Dropdown Ntugharị Admin gbasapụrụ na-egosi nhọrọ ntugharị atọ ahụ](/img/config/domain-mapping-redirect-options.png)
 
-Nwere mgbe dị mbụ ga ịkwado domain custom. Mgbanwe onye ọzọ bụ ịkwado tên domain ahụ n'aka dashboard admin network gị kama super admin ma onye ọzọ bụ dwupụ onye admin subsite anaa n'aka account page.
+E nwere ụzọ abụọ iji jikọọ ngalaba omenala. Nke mbụ bụ site n’ijikọ aha ngalaba site na dashboard admin netwọkụ gị dịka super admin, nke abụọ bụ site na dashboard admin subsite n’okpuru peeji account.
 
-Ma ọ bụrụ na ị chọrọ ka ị chọrọ ịkwado domain custom ahụ n'ime subsites ha n'aka network gị, ị ga-anọchitere anya ka **DNS settings** tên domain ahụ dị mma.
+Mana tupu ịmalite ijikọ ngalaba omenala na otu n’ime subsites dị na netwọkụ gị, ị ga-achọ ijide n’aka na **ntọala DNS** nke aha ngalaba ahụ ahazirila nke ọma.
 
 ###
 
-### Ka ọ dị mma DNS settings tên domain ahụ
+### Ijide n’aka na ntọala DNS nke ngalaba ahazirila nke ọma {#making-sure-the-domain-dns-settings-are-properly-configured}
 
+Ka ijikọ rụọ ọrụ, ị ga-ejide n’aka na ngalaba ị na-eme atụmatụ ijikọ na-atụ aka na adreesị IP nke Network gị. Rịba ama na ịchọrọ adreesị IP nke Network - adreesị IP nke ngalaba ebe etinyere Ultimate Multisite - ọ bụghị adreesị IP nke ngalaba omenala ịchọrọ ijikọ. Iji chọọ adreesị IP nke ngalaba pụrụ iche, anyị na-atụ aro ịga na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), dịka ọmụmaatụ.
 
+Iji jikọọ ngalaba ahụ nke ọma, ị ga-agbakwunye **A RECORD** na nhazi **DNS** gị na-atụ aka na **adreesị IP** ahụ. Njikwa DNS na-adịgasị iche nke ukwuu n’etiti ndị na-edebanye ngalaba dị iche iche, mana e nwere ọtụtụ nkuzi n’ịntanetị na-ekpuchi nke ahụ ma ọ bụrụ na ịchọọ " _Ịmepụta A Record na XXXX_ " ebe XXXX bụ onye na-edebanye ngalaba gị (dịka: " _Ịmepụta A Record na_ _GoDaddy_ ").
 
-Para mapeamento funcione, bạn cần đảm bảo rằng tên miền mà bạn định ánh xạ đang trỏ về địa chỉ IP của Mạng (Network) của bạn. Lưu ý là bạn cần địa chỉ IP của Mạng - tức là địa chỉ IP của tên miền nơi Ultimate Multisite được cài đặt - chứ không phải địa chỉ IP của tên miền tùy chỉnh mà bạn muốn ánh xạ. Để tìm địa chỉ IP của một tên miền cụ thể, chúng tôi đề nghị bạn truy cập [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ví dụ như vậy.
+Ọ bụrụ na ị hụta na ị na-enwe nsogbu ime ka nke a rụọ ọrụ, **kpọtụrụ nkwado onye na-edebanye ngalaba gị** ma ha ga-enwe ike inyere gị aka na akụkụ a.
 
-Để ánh xạ tên miền chính xác, bạn cần thêm một **A RECORD** vào cấu hình **DNS** của mình trỏ đến địa chỉ IP đó. Việc quản lý DNS khác nhau rất nhiều giữa các nhà đăng ký tên miền khác nhau, nhưng có rất nhiều hướng dẫn trực tuyến bao quát điều đó nếu bạn tìm kiếm " _Creating A Record on XXXX_ " trong đó XXXX là nhà đăng ký tên miền của bạn (ví dụ: " _Creating A Record on_ _GoDaddy_ ").
+Ọ bụrụ na ị na-eme atụmatụ ikwe ka ndị ahịa gị jikọọ ngalaba nke ha, ha ga-eme ọrụ dị n’akụkụ a n’onwe ha. Duga ha gaa na usoro nkwado nke onye na-edebanye ha ma ọ bụrụ na ha hụta na ha enweghị ike ịmepụta A Record.
 
-Nếu bạn gặp khó khăn khi làm cho việc này hoạt động, **hãy liên hệ với bộ phận hỗ trợ của nhà đăng ký tên miền** và họ sẽ giúp bạn phần này.
+### Ijikọ aha ngalaba omenala dịka Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Nếu bạn dự định cho phép khách hàng tự ánh xạ tên miền của họ, họ sẽ phải tự thực hiện công việc này. Hãy hướng dẫn họ đến hệ thống hỗ trợ của nhà đăng ký nếu họ không thể tạo A Record.
+Mgbe ị banyere dịka super admin na netwọkụ gị, ị nwere ike ịgbakwunye ma jikwaa aha ngalaba omenala n’ụzọ dị mfe site n’ịga n’okpuru **Ultimate Multisite > Ngalaba**.
 
-### Ánh xạ tên miền tùy chỉnh làm Super Admin
+![Peeji ndepụta Ngalaba na Ultimate Multisite](/img/admin/domains-list.png)
 
-Khi bạn đăng nhập với tư cách super admin trên mạng của mình, bạn có thể dễ dàng thêm và quản lý các tên miền tùy chỉnh bằng cách vào mục **Ultimate Multisite > Domains**.
+N’okpuru peeji a, ị nwere ike pịa bọtịnụ **Tinye Ngalaba** n’elu, nke a ga-eweta windo modal ebe ị nwere ike ịhazi ma dejupụta **aha ngalaba omenala** , **subsite** ịchọrọ itinye aha ngalaba omenala ahụ na ya, ma kpebie ma ịchọrọ ịhazi ya dịka aha **ngalaba mbụ** ma ọ bụ na ị chọghị (rịba ama na ị nwere ike ijikọ **ọtụtụ aha ngalaba na otu subsite**).
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Modal Tinye Ngalaba nwere aha ngalaba, onye nhọpụta saịtị na toggle ngalaba mbụ](/img/admin/domain-add-modal.png)
 
-N'aka trang này, bạn có thể nhấn nút **Add Domain** ở trên cùng và nó sẽ mở ra một cửa sổ modal nơi bạn có thể thiết lập và điền vào **custom domain name** (tên miền tùy chỉnh), **the subsite** (tiểu trang) mà bạn muốn áp dụng tên miền tùy chỉnh đó, và quyết định xem bạn có muốn đặt nó làm **primary domain** (miền chính) hay không (lưu ý là bạn có thể ánh xạ **multiple domain names to one subsite** - nhiều tên miền vào một tiểu trang).
+Mgbe itinyere ozi niile, ị nwere ike pịa bọtịnụ **Tinye Ngalaba Dị Adị** n’ala.
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+Nke a ga-amalite usoro ịlele ma weta ozi DNS nke ngalaba omenala ahụ. Ị ga-ahụkwa log n’ala peeji ahụ ka ị soro usoro ọ na-agafe. Usoro a nwere ike iwe nkeji ole na ole iji mechaa.
 
-Sau khi điền tất cả thông tin, bạn có thể nhấn nút **Add Existing Domain** ở phía dưới.
+Ultimate Multisite v2.13.0 na-emekwa ndekọ domain dị n’ime na-akpaghị aka mgbe e mepụtara site ọhụrụ n’elu host a ga-ewere dị ka domain nke site ọ bụla. Ọ bụrụ na host ahụ bụ domain bụ isi nke network ahụ, ma ọ bụ otu n’ime shared checkout-form base domains ahaziri na field **Site URL**, a ga-ahapụ ndekọ mapped-domain akpaghị aka ka shared base domain ahụ wee nọgide dịịrị site ọ bụla na-eji ya.
 
-Điều này sẽ bắt đầu quá trình kiểm tra và lấy thông tin DNS của tên miền tùy chỉnh đó. Bạn cũng sẽ thấy một log ở cuối trang để theo dõi quy trình nó đang thực hiện. Quá trình này có thể mất vài phút để hoàn tất.
+Mgbe customer debanyere domain ọhụrụ site na Domain Seller v1.3.0 ma ọ bụ nke ọhụrụ karịa, Ultimate Multisite na-map domain edebanyere aha ahụ na network site nke customer ahụ na ndabara. Administrators agaghịzi achọ itinye ndekọ mapped-domain ọzọ mgbe registration gara nke ọma, belụsọ ma ha chọrọ ịgbanwe options dịka primary-domain flag, activation state, ma ọ bụ SSL handling.
 
-Ultimate Multisite v2.13.0 cũng tự động tạo bản ghi tên miền nội bộ khi một trang web mới được tạo trên máy chủ mà lẽ ra phải được coi là tên miền cho từng trang (per-site domain). Nếu máy chủ đó là tên miền chính của mạng, hoặc một trong các tên miền cơ sở biểu mẫu thanh toán được cấu hình trong trường **Site URL**, thì bản ghi tên miền ánh xạ tự động sẽ bị bỏ qua để tên miền cơ sở dùng chung vẫn luôn sẵn sàng cho mọi trang web sử dụng nó.
-
-Trạng thái **Stage** (Giai đoạn) hoặc trạng thái sẽ thay đổi từ **Checking DNS** (Đang kiểm tra DNS) sang **Ready** (Sẵn sàng) nếu mọi thứ được thiết lập đúng cách.
+**Stage** ma ọ bụ status kwesịrị ịgbanwe site na **Checking DNS** gaa **Ready** ma ọ bụrụ na e haziri ihe niile nke ọma.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Nếu bạn nhấp vào tên miền, bạn sẽ có thể xem một vài tùy chọn bên trong nó. Hãy cùng xem nhanh chúng nhé:
+Ọ bụrụ na ị pịa aha domain ahụ, ị ga-enwe ike ịhụ ụfọdụ options n’ime ya. Ka anyị lelee ha ngwa ngwa:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Peeji nkọwa domain nwere stage, site, active, primary na SSL toggles](/img/admin/domain-edit.png)
 
-**Stage:** Hii na mme stage na domain e nọ. Mgbarị ị chụ domain ah, ọ ga-adị na ọ nọ na stage **Checking DNS**. Nchekwa ah ga-chụ entries DNS ma ọ bụ iji gba ihe ndị ah dị mma. Ndị ah ga-chụ, domain ah ga-adị na stage **Checking SSL**. Ultimate Multisite ga-chụ ma domain ah nwere SSL ma ọ bụ la, ma ọ bụ ga-categorize domain ah na **Ready** ma ọ bụ **Ready (without SSL)**.
+**Stage:** Nke a bụ stage domain ahụ nọ na ya. Mgbe ị gbakwunyere domain ahụ nke mbụ, o yikarịrị ka ọ ga-adị na stage **Checking DNS**. Usoro ahụ ga-elele entries DNS ma kwado na ha ziri ezi. Mgbe ahụ, a ga-etinye domain ahụ na stage **Checking SSL**. Ultimate Multisite ga-elele ma domain ahụ nwere SSL ma ọ bụ na ọ nweghị, ma kee domain gị dị ka **Ready** ma ọ bụ **Ready (without SSL)**.
 
-**Site:** Subdomain ah dị na aka domain a. Domain ah a map pannara ga-gbanwe ihe ndị a site ah ga-adị.
+**Site:** Subdomain ejikọtara na domain a. Mapped domain ahụ ga-egosi ọdịnaya nke site a kpọmkwem.
 
-**Active:** Ị ga-abụghị option a on ma off maka ịgba anọ ma ọ bụ abụghị domain ah.
+**Active:** Ị nwere ike ịgbanye ma ọ bụ gbanyụọ option a iji mee ka domain rụọ ọrụ ma ọ bụ kwụsị ya.
 
-**Is Primary Domain?:** Ọ bụrụ na ndị bi ọrụ gị nwere domain map pannara dị ukwụ dị ukwụ na-akụkọ site ah. Jiri option a maka ị chụ ọ bụ na domain ah bụ primary domain nke site ah ahanyụ.
+**Is Primary Domain?:** Customers gị nwere ike inwe ihe karịrị otu mapped domain maka site ọ bụla. Jiri option a họrọ ma nke a bụ primary domain maka site ahụ kpọmkwem.
 
-**Is Secure?:** Ọ bụ ebe a Ultimate Multisite ga-chụ ma domain ah nwere SSL certificate ma ọ bụ la karịrị gba anọ, on ga-abụghị ya, ị ga-abụghị ya na-load domain ah ma ọ bụ la. Kedu ihe mere na website ah dịghị SSL certificate ma ị chọrọ ka ị force load ya na SSL, ọ ga-anọchi gị errors.
+**Is Secure?:** Ọ bụ ezie na Ultimate Multisite na-elele ma domain ahụ nwere SSL certificate ma ọ bụ na ọ nweghị tupu o mee ka ọ rụọ ọrụ, ị nwere ike iji aka họrọ ka a load domain ahụ na SSL certificate ma ọ bụ na-enweghị ya. Rịba ama na ọ bụrụ na website ahụ enweghị SSL certificate ma ị nwaa ịmanye ya ka ọ load na SSL, ọ nwere ike inye gị errors.
 
-### Mapping custom domain name as Subsite user
+### Ime mapping aha custom domain dịka onye ọrụ Subsite {#mapping-custom-domain-name-as-subsite-user}
 
-Ndị aka site (Subsite administrators) gị nwere ike ịgba custom domain names ji dashboard admin subsite ah dị.
+Subsite administrators nwekwara ike ime mapping aha custom domain site na admin dashboard nke subsite ha.
 
-Ma ọ bụ, ị ga-gba ihe a onwe ya n'ime settings **Domain mapping**. Chere screenshot a agoo.
+Nke mbụ, ị ga-ahụrịrị na ị gbanyere option a n'okpuru settings **Domain mapping**. Lee screenshot dị n'okpuru.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Ị chụ ma ị na-set ma ị na-configure option a n'ime level **Plan** ma ọ bụ product options n'ime **Ultimate Multisite > Products**.
+Ị nwekwara ike ịtọ ma ọ bụ hazie option a n'okpuru ọkwa **Plan** ma ọ bụ product options na **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Ngalaba Custom Domains na peeji edit product](/img/config/product-custom-domains.png)
 
-When any of those options are enabled and a subsite user is allowed to map custom domain names, the subsite user should see a metabox under the **Account** page called **Domains**.
+Mgbe agbanyere otu n’ime options ndị ahụ ma kwe ka onye ọrụ subsite mee mapping aha custom domain, onye ọrụ subsite ahụ kwesịrị ịhụ metabox n'okpuru peeji **Account** a na-akpọ **Domains**.
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-The user can click the **Add Domain** button and it will bring up a modal window with some instructions.
+Onye ọrụ ahụ nwere ike pịa button **Add Domain**, ọ ga-eweta windo modal nwere ụfọdụ ntụziaka.
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-The user can then click **Next Step** and proceed to add the custom domain name. They can also choose if this will be the primary domain or not.
+Onye ọrụ ahụ nwere ike pịa **Next Step** wee gaa n’ihu tinye aha custom domain. Ha nwekwara ike họrọ ma nke a ga-abụ primary domain ma ọ bụ na ọ bụghị.
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Click to **Add Domain** will start the process of verifying and fetching the DNS information of the custom domain.
+Ịpị **Add Domain** ga-amalite usoro nyocha na ịweta ozi DNS nke custom domain ahụ.
 
-### About Domain Syncing
+### Banyere Domain Syncing {#about-domain-syncing}
 
-Domain Syncing na bụ proces na Ultimate Multisite ji adda oname custom domain name n'aka hosting account your as an add-on domain **for the domain mapping to work**.
+Domain Syncing bụ usoro ebe Ultimate Multisite na-agbakwunye aha custom domain na hosting account gị dịka add-on domain **ka domain mapping wee rụọ ọrụ**.
 
-Domain syncing automatically happens if your hosting provider has integration with the Ultimate Multisite domain mapping feature. Currently, these hosting providers are _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ and _Cpanel._
+Domain syncing na-eme na-akpaghị aka ma ọ bụrụ na hosting provider gị nwere integration na feature domain mapping nke Ultimate Multisite. Ugbu a, hosting providers ndị a bụ _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ na _Cpanel._
 
-When a host-provider integration is active, Ultimate Multisite can also enqueue the provider-side DNS or subdomain creation task for newly created sites. If no integration is listening for that task, the background job is skipped to avoid no-op queue entries. DNS and SSL checks for mapped domains continue to run through the normal domain-stage process.
+Mgbe integration nke host-provider nọ n’ọrụ, Ultimate Multisite nwekwara ike itinye task DNS ma ọ bụ subdomain creation n'akụkụ provider n’queue maka sites emepụtara ọhụrụ. Ọ bụrụ na integration ọ bụla anaghị ege ntị maka task ahụ, background job ahụ ga-agafe ya iji zere queue entries na-enweghị ọrụ. Nlele DNS na SSL maka mapped domains na-aga n’ihu ịrụ ọrụ site na usoro domain-stage nkịtị.
 
-Ka ị chọrọ ịgbanwe akụkọ a na settings nke Ultimate Multisite ọkwa **Integration**.
+Ị ga-achọ ime ka integration a rụọ ọrụ na settings Ultimate Multisite n'okpuru tab **Integration**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+![Tab Integrations na settings Ultimate Multisite na-egosi hosting providers](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Bara ị maara na ọ bụrụ na hosting provider ha bụghị ihe ndị a a gbarwerupụta above, **ịde ya ọ dị mma ka ị sync (gbanwe) domain name ahụ ma ọ bụ jiji ya** n'account hosting-ahụ._
+_Rịba ama na ọ bụrụ na hosting provider gị abụghị otu n’ime providers ndị a kpọrọ aha n’elu,**ị ga-achọ iji aka sync ma ọ bụ tinye aha domain** na hosting account gị._

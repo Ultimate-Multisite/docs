@@ -1,54 +1,100 @@
 ---
-title: Multi-Netwerk
+title: Multi-Network
 sidebar_position: 1
-_i18n_hash: d3e7f40079605e692fa6a3110231f0d1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
 
-# Multi-Network
+# Multi-Network {#multi-network}
 
-De Ultimate Multisite: Multinetwork addon breidt uw Multisite Ultimate-platform uit met krachtige multinetwork-functionaliteit. Deze addon stelt uw klanten in staat om volledige WordPress multisite-netwerken te kopen en beheren, niet alleen individuele sites.
+De Ultimate Multisite: Multinetwork-add-on breidt je Ultimate Multisite-platform uit met krachtige multinetwerkfunctionaliteit. Deze add-on stelt je klanten in staat om volledige WordPress multisite-netwerken te kopen en te beheren, niet alleen afzonderlijke sites.
 
-## Belangrijkste functies
+## Belangrijkste functies {#key-features}
 
-* **Netwerkvoorziening**: Automatisch volledige WordPress multisite-netwerken voor uw klanten aanmaken en configureren
-* **Netwerkbeheer**: Volledige beheerfuncties voor multinetwork-omgevingen
-* **Gisolde netwerken**: Elk klantennetwerk werkt onafhankelijk met eigen databanktabellen en configuratie
-* **Schaalbare architectuur**: Beheer meerdere netwerken efficiënt met geoptimaliseerde resourceallocatie
-* **Integratie**: Integreert naadloos met de abonnements- en facturatiesystemen van Multisite Ultimate
+* **Netwerkprovisioning**: Maak en configureer automatisch volledige WordPress multisite-netwerken voor je klanten
+* **Netwerksjablonen**: Laat klanten vóór aanmelding een vooraf gebouwd netwerksjabloon bekijken, voorvertonen en kiezen
+* **Netwerkbeheer**: Volledige beheermogelijkheden voor multinetwerkomgevingen
+* **Geïsoleerde netwerken**: Elk klantnetwerk werkt onafhankelijk met eigen databasetabellen en configuratie
+* **Cross-network SSO**: Geef klanten naadloze toegang tot hun subnetwerken met magic-link-authenticatie
+* **Schaalbare architectuur**: Beheer meerdere netwerken efficiënt met geoptimaliseerde resourcetoewijzing
+* **Integratie**: Integreert naadloos met de abonnements- en factureringssystemen van Ultimate Multisite
 
-## Gebruiksscenario's
+## Gebruiksscenario's {#use-cases}
 
-* **White Label Hosting**: Bied klanten hun eigen merknetwerken voor multisite
-* **Agency Solutions**: Stel bureaus in staat om meerdere klantennetwerken te beheren vanaf één platform
-* **Enterprise Deployments**: Ondersteun grote organisaties met complexe multi-netwerkvereisten
-* **Education Platforms**: Maak aparte netwerken voor verschillende scholen of afdelingen
+* **White-label hosting**: Voorzie klanten van hun eigen gebrandmerkte multisite-netwerken
+* **Bureau-oplossingen**: Stel bureaus in staat om meerdere klantnetwerken vanaf één platform te beheren
+* **Enterprise-implementaties**: Ondersteun grote organisaties met complexe multinetwerkvereisten
+* **Onderwijsplatforms**: Maak afzonderlijke netwerken voor verschillende scholen of afdelingen
 
-## Vereisten
+## Vereisten {#requirements}
 
-* Multisite Ultimate 2.0.0 of hoger
+* Ultimate Multisite 2.0.0 of hoger
 * WordPress Multisite-installatie
 * PHP 7.4 of hoger
 * MySQL 5.6 of hoger
 
-## Installatie
+## Installatie {#installation}
 
-1. Upload de pluginbestanden naar de `/wp-content/plugins/ultimate-multisite-multinetwork` map
-2. Activeer de plugin via het 'Plugins'-scherm in WordPress
-3. Configureer multinetwork-instellingen via Multisite Ultimate → Instellingen
+1. Upload de pluginbestanden naar de map `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Activeer de plugin via het scherm 'Plugins' in WordPress
+3. Configureer multinetwerkinstellingen via Ultimate Multisite → Settings
 
-## Veelgestelde vragen
+## Netwerksjablonen {#network-templates}
 
-## Wat is multinetwork?
+Versie 1.3.0 voegt een flow voor sjabloonontdekking en -selectie toe voor klanten die nieuwe netwerken kopen. Gebruik netwerksjablonen wanneer je wilt dat elk nieuw klantnetwerk begint met een voorbereide structuur, ontwerp, contentbibliotheek of branchespecifieke opzet.
 
-Multinetwork is een WordPress-functie die het mogelijk maakt om meerdere onafhankelijke multisite-netwerken op één WordPress-installatie te draaien.
+### Sjabloonvoorvertoner {#template-previewer}
 
-## Hoe verschilt dit van reguliere multisite?
+Met de netwerksjabloonvoorvertoner kunnen klanten beschikbare sjablonen bekijken vóór het afrekenen. Elk sjabloon kan worden geopend in een live voorvertoningspaneel, zodat klanten lay-outs en content kunnen vergelijken voordat ze een netwerk kopen.
 
-Reguliere multisite laat meerdere sites binnen één netwerk toe. Multinetwork laat meerdere netwerken toe, elk met hun eigen sites, allemaal binnen één WordPress-installatie.
+Gebruik de voorvertoner om klanten te helpen:
 
-## Vereist dit een speciale serverconfiguratie?
+* Het uiterlijk en de structuur van elk beschikbaar netwerksjabloon te beoordelen
+* Meerdere sjablonen te vergelijken zonder de aankoopflow te verlaten
+* Het sjabloon te kiezen dat het beste past bij hun gebruiksscenario vóór aanmelding
 
-Ja, multinetwork vereist een specifieke serverconfiguratie en -opzet. Raadpleeg de documentatie voor gedetailleerde installatie-instructies.
+Houd sjabloonnamen en -beschrijvingen klantvriendelijk. De voorvertoner is het nuttigst wanneer klanten het beoogde gebruiksscenario kunnen begrijpen, zoals bureaunetwerken, schoolnetwerken, franchisenetwerken of white-label hostingbundels.
+
+### Sjabloonkiezer bij het afrekenen {#template-picker-at-checkout}
+
+De sjabloonkiezer kan als veld worden toegevoegd aan de aanmeld-afrekenflow. Wanneer deze is geconfigureerd, selecteren klanten tijdens het afrekenen het netwerksjabloon dat ze willen, en het geselecteerde sjabloon wordt gebruikt wanneer hun nieuwe netwerk wordt geprovisioneerd.
+
+Om de kiezer in een afrekenflow te gebruiken:
+
+1. Bereid de netwerken voor die je als sjablonen wilt aanbieden.
+2. Schakel het veld voor Multinetwork-sjabloonselectie in het relevante aanmeld- of afrekenformulier in.
+3. Kies welke sjablonen beschikbaar moeten zijn voor die afrekenflow.
+4. Publiceer de afrekenflow en test een aanmelding om te bevestigen dat het geselecteerde sjabloon op het nieuwe netwerk wordt toegepast.
+
+Als een afrekenflow slechts één netwerkproduct aanbiedt, kan de kiezer nog steeds nuttig zijn als begeleide onboardingstap. Voor funnels met meerdere plannen toon je alleen de sjablonen die compatibel zijn met het geselecteerde product of plan.
+
+## Cross-network Magic Link SSO {#cross-network-magic-link-sso}
+
+Cross-network magic link SSO laat klanten schakelen tussen hun primaire accountgedeelte en subnetwerken zonder opnieuw handmatig in te loggen. Wanneer een klant een cross-network toegangslink volgt, genereert Ultimate Multisite een tijdsgebonden magic link en authenticeert de klant in het doelnetwerk.
+
+Dit verbetert de ervaring voor klanten die meer dan één netwerk beheren of die direct na aankoop toegang moeten krijgen tot nieuw gekloonde sjabloonnetwerken.
+
+Admin-checklist:
+
+* Bevestig dat de Multinetwork-add-on actief is in de volledige WordPress multisite-installatie.
+* Zorg ervoor dat klanten de juiste netwerktoegang hebben voordat ze cross-network links aangeboden krijgen.
+* Houd netwerkdomeinen en gekoppelde domeinen correct geconfigureerd, zodat magic links naar het beoogde doelnetwerk verwijzen.
+* Test het klantdashboard en eventuele toegangsknoppen na het afrekenen nadat je netwerk-, domein- of afrekeninstellingen hebt gewijzigd.
+
+Magic links moeten worden behandeld als inloglinks. Ze zijn ontworpen voor naadloze klanttoegang en mogen niet buiten de bedoelde sessie worden doorgestuurd of hergebruikt.
+
+## Veelgestelde vragen {#frequently-asked-questions}
+
+### Wat is multinetwerk? {#what-is-multinetwork}
+
+Multinetwerk is een WordPress-functie waarmee je meerdere onafhankelijke multisite-netwerken op één WordPress-installatie kunt draaien.
+
+### Hoe verschilt dit van reguliere multisite? {#how-is-this-different-from-regular-multisite}
+
+Reguliere multisite maakt meerdere sites binnen één netwerk mogelijk. Multinetwerk maakt meerdere netwerken mogelijk, elk met hun eigen sites, allemaal binnen één WordPress-installatie.
+
+### Vereist dit speciale serverconfiguratie? {#does-this-require-special-server-configuration}
+
+Ja, multinetwerk vereist een specifieke serveropzet en configuratie. Raadpleeg de documentatie voor gedetailleerde installatie-instructies.

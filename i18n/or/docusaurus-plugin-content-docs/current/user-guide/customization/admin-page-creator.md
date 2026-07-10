@@ -3,7 +3,7 @@ title: ଆଡମିନ୍ ପେଜ କ୍ରିଏଟର
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# ॲडमिन পেজ ক্রিয়েটর (Admin Page Creator)
+# ॲडमिन পেজ ক্রিয়েটর (Admin Page Creator) {#admin-page-creator}
 
 এই ফিচারটি **Admin Page Creator** অ্যাড-অন দিয়ে সরবরাহ করা হয়েছে।
 

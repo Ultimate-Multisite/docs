@@ -3,19 +3,19 @@ title: Stripe-y goýdyp bilmek
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway'i Kurmak (v2)
+# Stripe Gateway'i Kurmak (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiyasının 2.x sürümünü nəzərdə tutur.**_
 
 Ödəniş ayarlar səhifəsində ödəniş metodlarından qədər dördünü, yəni Stripe, Stripe Checkout, PayPal və Manual-ı aktivləşdirə bilərsiniz. Bu məqalədə biz **Stripe** ilə necə inteqrasiya ediləcəyini görəcəyik.
 
-## Stripe-i Aktivləşdirmək
+## Stripe-i Aktivləşdirmək {#enabling-stripe}
 
 Stripe-i şəbəkənizdə mövcud ödəniş portalı kimi aktiv etmək üçün **Ultimate Multisite > Settings > Payments** bölməsinə gedin və Active Payment Gateways hissəsindəki **Stripe** və ya **Stripe Checkout** yanında olan düyməni işarələyin.
 
 ![Active payment gateways-da Stripe-i aktivləşdirmək](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Bu üsul, ödəniş zamanı kredit kartı nömrəsini daxil etmək üçün bir yer göstərəcək.
 
@@ -47,7 +47,7 @@ Siz **Test Data** (integrasi sizin prodüksiyada işlediğini barlamak üçin) u
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Stripe Webhook goşmagy
+## Stripe Webhook goşmagy {#setting-up-stripe-webhook}
 
 Stripe, **siziň stripe hasabynda** haýsy waka bolanda Ultimate Multisite-e habar bermek üçin webhook hadysatlary göndereýär.
 

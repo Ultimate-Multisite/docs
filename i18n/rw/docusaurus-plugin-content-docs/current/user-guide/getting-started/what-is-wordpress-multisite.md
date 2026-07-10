@@ -3,7 +3,7 @@ title: WordPress Multisite ni iki?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Uburyo w WordPress Multisite?
+# Uburyo w WordPress Multisite? {#what-is-wordpress-multisite}
 
 Mu gihe y'ukozi (core), WordPress yituma uburyo rwa ritewe ry'igice cyo gitwa ku 2010 mu gihe y'umukono wa WordPress 3.0. Kugeza uyu munsi, yitwa n'uburyo bishobora gushyiramo ibintu bishya kandi bikorera ubwumvikane bw'ubwumvikane (security).
 
@@ -11,7 +11,7 @@ Mu gihe cyiza, umwe WordPress multisite ashobora guhagaragara nk'iki: Inzego ya 
 
 ##
 
-## Icyiza ni iki WordPress Multisite?
+## Icyiza ni iki WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite ni uburyo rwa WordPress rishobora guhindura ibyo gishobora gushyiramo sita runaka (multiple sites) kugira ngo yashyire ku gihe cy'umukono wa WordPress wujuje. Iyo multisite ituma, uburyo runaka rwa WordPress rwayo rugera mu buryo bwo gutuma ibyo bitwa **network of sites** (uburyo bw'ibyo sita byitwa n'ubwoko).
 
@@ -23,7 +23,7 @@ Icyemezo cyo hari ni ikindi cyiza cy'ubwumvikane bw'uburyo runaka rwa WordPress 
 
 ##
 
-## Subdomain cyangwa Subdirectory?
+## Subdomain cyangwa Subdirectory? {#subdomain-or-subdirectory}
 
 Hari uburyo runaka runaka rwa gukora WordPress multisite – kandi ugomba guhindura uyu mwe mu gihe utera uburyo runaka rwa WordPress wujuje mu multisite:
 
@@ -49,7 +49,7 @@ Umwe mu gukora subdomain mode, umutekano w'umwihariko ni SSL (HTTPS) ku rugo rwa
 
 Mu gihe cyiza cyane, subsites muri network ya subdomain, amakuru y'amabwira (search engines) bifungura nk'ibindi websites, kandi ibyo bikunda kuri subsite cyose bitandukanye n'ubushobozi bwo SEO bwa subsites byo bitandukanye.
 
-## The Super Admin
+## The Super Admin {#the-super-admin}
 
 Ibyerekezo y'WordPress ya mbere ituma wumva ubushobozi bwo gukoresha abantu bishobora kubyara cyane kandi ubugero bw'ubwoko bw'abantu bifite uburenganzira bukenewe.
 
@@ -63,7 +63,7 @@ Plugins n'themes bishobora guhindurwa cyangwa guhagararirwa kuri network admin p
 
 _Note: uko uri kumenya, gukunda umuntu kuwezi mu gukoresha uburyo bwo kwitonderwa mu rwego rwawe kandi ukugira uburenganzira bwo super admin, bishobora kugira uburyo bwose bwo gutera umuntu ubanze mu rwego rwawe. Nko mu gihe cy'umwihariko, abandi super admins bashobora gukora ibyo bintu byo kwitondera uburenganzira bwawe, bishobora kugukora umuntu wese mu panel yawe y'admin y'network. Kugira ngo Ultimate Multisite abantu bashobore gufata uburyo bwiza ku bijyanye n'ibyo abandi super admins bashobora gukora, twari twagize add-on itarikiye Support Agents. Iyi add-on ituma wumva umuntu wese mu buryo bwo kwiga - agent - kandi yashobora gukoresha gusa ibyo abikoresho bafite uburyo bwo gukora ibyo ba ari kubyishoboka ku network._
 
-## Icyo cyari cyitandukanye hagati y'subsites n'icyo ntacyari cyitandukanye
+## Icyo cyari cyitandukanye hagati y'subsites n'icyo ntacyari cyitandukanye {#what-is-shared-among-subsites-and-what-is-not}
 
 Nko twagaragaje mbere, umwe mu mahamutse y'WordPress multisite ni ko subsites imweyo yashobora gukoresha uburyo bwo kwiga (configurations), ibyemezo by'ubwoko (core files), themes, plugins, ibintu by'umwihariko bwa WordPress, n'ibindi.
 
@@ -73,7 +73,7 @@ Ariko hari ibintu byo mu buryo bwo kubyara cyangwa gukoresha umuntu wese mu subs
 - Subsite imweyo ikunda panel yawe y'admin isanzwe kandi ishobora gukora (activate) cyangwa gufata (deactivate) plugins cyangwa themes nta super admin yashobora kwitondera network.
 - Inyandiko nyinshi z'database zishobora gukoreshwa ku subsite imweyo, bigaragaza ko posts, comments, pages, settings n'ibindi byo mu buryo bwo kubyara bishobora kugira uburyo bwose ku subsite imweyo.
 
-## Umuco w'abantu ku WordPress Multisite
+## Umuco w'abantu ku WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Icyo cyari cyitandukanye cyane kuri WordPress multisite ni umuco w'abantu (user management). Umubyara wa user ya WordPress ni mu muryango wo gukoresha uburyo bwo kwiga (shared) hagati y subsites nyinshi.
 
@@ -95,7 +95,7 @@ _Urahereye: Turime ko iyo uburyo bwo gukoresha cyari cyiza cyane mu gihe cyose c
 
 Ntawe ntabwo ubutabera, ntabwo abantu bashobora gufashishwa cyangwa gukoreshwa mu subsites binyuze mu byerekeza n'abakoresha b'ubusite (users), kandi bashobora kuba na uburenganzira bw'ubusite buvugwa ku subsite, cyangwa se wamukoreshe uburyo bukomeye mu subsite runaka.
 
-## Gusobanura ibyo bikwiriye gukunda (Performance considerations)
+## Gusobanura ibyo bikwiriye gukunda (Performance considerations) {#performance-considerations}
 
 WordPress multisite ni ikintu gikomeye cyane mu gihe cyo kubyara ubushobozi bwo gufashisha abusite. Ibi bisobanura n'ibyo bishobora kwerekana ku facta ko [WordPress.com](https://WordPress.com), Edublogs, n'Campuspress ni ibikorwa byihinduwe mu multisite kandi abantu benshi bashobora gufashisha abusite binyabimwe.
 

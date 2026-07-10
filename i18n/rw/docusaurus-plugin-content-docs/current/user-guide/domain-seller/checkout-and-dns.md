@@ -5,13 +5,13 @@ title: >-
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Ururu ya Checkout na Umuco w'Umuco wa DNS
+# Ururu ya Checkout na Umuco w'Umuco wa DNS {#checkout-field-and-customer-dns-management}
 
-## Fomu ya Ururu ya Domain Selection
+## Fomu ya Ururu ya Domain Selection {#the-domain-selection-checkout-field}
 
 Iyo **Domain Selection** ni ibitemo ry'uko mu checkout riyifasha abakoresha kugira uburyo bwo gushobora kugera ku domain rya site yabo. Yaboneka muri fomu yose ya checkout kugira ngo ubwire ubu bwumco bwa domain.
 
-### Gukoresha ibitemo ry'uko mu fomu ya checkout
+### Gukoresha ibitemo ry'uko mu fomu ya checkout {#adding-the-field-to-a-checkout-form}
 
 1. Gukoresha **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Gusa cyangwa gukora fomu ya checkout
@@ -20,7 +20,7 @@ Iyo **Domain Selection** ni ibitemo ry'uko mu checkout riyifasha abakoresha kugi
 5. Gutera uburyo bwo ibitemo (bona ku mwiza)
 6. Gusa fomu
 
-### Ibyiciro byo ibitemo
+### Ibyiciro byo ibitemo {#field-options}
 
 **Domain modes** — Urugero ubutumwa abakoresha tab izihe. Ubutumwa bw'ibitemo bishobora gukorwa cyangwa guhagarwa mu buryo bw'ingenzi:
 
@@ -34,7 +34,7 @@ Iyo **Domain Selection** ni ibitemo ry'uko mu checkout riyifasha abakoresha kugi
 
 **Domain product** — Urugero ubutumwa bishobora gukorwa ku product w'ubwoko bw'domain runaka. Nta rurimo guhagarwa, ibitemo byiza bigomba gukoreshwa mu buryo bwo kubara product yashobora gukoresha ubwoko (TLD) abakoresha bashobora gukoresha.
 
-### Ibyiciro byo umukoresha w'ubwoko (Registrant contact fields)
+### Ibyiciro byo umukoresha w'ubwoko (Registrant contact fields) {#registrant-contact-fields}
 
 Iyo umukoresha yoroshye **Register New Domain** tab, fomu ya checkout igira ibyiciro byo umukoresha bishobora gukoreshwa mu gihe cyiza:
 
@@ -45,10 +45,10 @@ Iyo umukoresha yoroshye **Register New Domain** tab, fomu ya checkout igira ibyi
 
 Iyi ni ibyo byo mu gihe cyose n'ubwujobozi bwo gukoresha. Icyo cyose bikurikiza mu gihe cyose kandi bikwiye gushyirwa mu gihe cyo gukora registration API call. Icyo cyose cyo telefoni kigira uburyo bw'ibyo byo mu gihe (international format) `+CC.NNN` cyo gukurikiza n'abanyamwuga bwo registration.
 
-### Site URL yashyirwaho yo mu gihe
+### Site URL yashyirwaho yo mu gihe {#auto-generated-site-url}
 Igihe umukoresha yashyira kuri domain cyangwa akoreshe domain, igice cyo site URL kigira uburyo bw'ibyo byo mu gihe (automatically populated) ku domain yashyiramo. Abanyamwuga batagomba gukoresha igice cyo URL cy'ingenzi.
 
-### Gukoresha ubushobozi bwo gushaka
+### Gukoresha ubushobozi bwo gushaka {#search-behaviour}
 - Ubwujobozi bw'ubwoko bwa domain bikwiye gushakira mu gihe (real-time) ku rugero ukoreshe iyo umukoresha yandikira
 - Uburyo bwo gushyiraho TLD ziri zikurikiranwa iyo domain yashaka itarimo
 - Ubwoko bw'ibyo byo mu gihe bikwiye gushakira mu gihe kandi bikwiye gushobora kubona neza (amashyiramo y'registration, amashyiramo y'gukoresha cyangwa amafaranga yo ku WHOIS privacy)
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Gukemura DNS kuri abanyamwuga (Customer DNS management)
+## Gukemura DNS kuri abanyamwuga (Customer DNS management) {#customer-dns-management}
 
 Abanyamwuga bashobora gukemura DNS records ku domain babo bafite mu **My Account**, mu gihe cy'ingenzi y'domain.
 
-### Ubwoko bw'ibyo byo mu gihe bikurikiranwa
+### Ubwoko bw'ibyo byo mu gihe bikurikiranwa {#supported-record-types}
 | Type | Gukoresha
 |---|---|
 | **A** | Gutangira hostname kuri IPv4 address
@@ -90,11 +90,11 @@ Abanyamwuga bashobora gukemura DNS records ku domain babo bafite mu **My Account
 | **MX** | Gutangira server y'email
 | **TXT** | Gutangira SPF, DMARC, gukoresha ubwoko bwa text runaka, cyangwa ibindi byo mu gihe
 
-### Abanyamwuga bafite uburyo bwo gukemura DNS?
+### Abanyamwuga bafite uburyo bwo gukemura DNS? {#which-providers-support-dns-management}
 
 Gusobanura yemezo (gukoresha, gukoresha, gukoresha) cyo DNS (DNS management) ni ari mu gihe cyo **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, n'**Openprovider**. Icyo cyo Hostinger byo cyo domain yashobora guhindura amakuru y'ibanga (nameservers) binyuze mu gihe cyo Domain Seller; ibanga ry'ibanga (DNS records) ku gihe cyo domain yashyiramo ni gukoresha uburyo bw'ubwoko bw'umukono (core Hostinger domain-mapping integration). Namecheap, GoDaddy, n'NameSilo domain byo bishobora kumenya uburenganzira no igihe cyo gufira (expiry information) ariko DNS ni gukoresha mu gihe cyo uburyo bw'umukono bw'ubwoko bw'umukono (registrar's control panel).
 
-### Amakuru y'ibanga ry'umukono (Default DNS records)
+### Amakuru y'ibanga ry'umukono (Default DNS records) {#default-dns-records}
 
 Yishobora gukoresha amakuru y'ibanga ry'umukono (default DNS records) yashobora gufite mu gihe cyo domain yashyiramo. Gukoresha **Settings › Domain Seller › Default DNS Records**.
 
@@ -117,6 +117,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: gukoresha no guhindura DNS
+### Admin: gukoresha no guhindura DNS {#admin-viewing-and-editing-dns}
 
 Abantu b'ubwoko bw'umuganda (Network admins) bashobora kumenya no guhindura amakuru y'ibanga ry'umukono kuri domain yose ya muntu mu gihe cyo gufite ku gihe cyo gukoresha **Network Admin › Ultimate Multisite › Domains**.

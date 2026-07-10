@@ -3,15 +3,15 @@ title: Orchestrace webového konstruktora v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestrace Site Builder v2
+# Orchestrace Site Builder v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (zavedeno v Gratis AI Agent v1.4.0) je motor, který pohání vytváření webových stránek v mnoha krocích. Když požádáte agenta, aby „vytvořil web restaurace“ nebo „vytvořil portfolio s blogem“, orchestrátor rozloží tento vysokoúrovňový cíl na strukturovaný **plán**, zjistí potřebné pluginy pro jeho splnění, provede každý krok postupně, sleduje pokrok a autonomně se zkopne z chyb.
 
 ---
 
-## Jak to funguje
+## Jak to funguje {#how-it-works}
 
-### 1. Generování plánu
+### 1. Generování plánu {#1-plan-generation}
 
 Když agent obdrží instrukci k vytváření webu, zavolá schopnost `create_site_plan` a vytvoří JSON **plán webu**. Plán popisuje:
 
@@ -61,7 +61,7 @@ Když agent obdrží instrukci k vytváření webu, zavolá schopnost `create_si
 }
 ```
 
-### 2. Objevování pluginů
+### 2. Objevování pluginů {#2-plugin-discovery}
 
 Než začne provedení, orchestrátor skenuje `plugin_requirements` plánu a kontroluje, které pluginy jsou již aktivní. Pokud chybí pluginy, provede následující kroky:
 
@@ -71,7 +71,7 @@ Než začne provedení, orchestrátor skenuje `plugin_requirements` plánu a kon
 
 Selhání při objevování pluginů není kritické — orchestrátor označí ovlivněné kroky jako `skipped` (přeskočeno) a pokračuje s ostatními kroky plánu.
 
-### 3. Provedení plánu
+### 3. Provedení plánu {#3-plan-execution}
 
 Orchestrátor zavolá `execute_site_plan` s ID plánu. Provedení probíhá fáze po fázi, krok po kroku:
 
@@ -79,7 +79,7 @@ Orchestrátor zavolá `execute_site_plan` s ID plánu. Provedení probíhá fáz
 - **Paralelní kroky** — kroky v rámci stejné fáze, které nemají vzájemné závislosti, jsou spuštěny souběžně, když je nastaveno přepnutí `parallel`.
 - **Časový limit kroku** — každý krok má individuální časový limit (výchozí: nastavení `Ability Timeout`). Krok, který vyprší, je označen jako `failed` (selhání) a plán pokračuje.
 
-### 4. Sledování pokroku
+### 4. Sledování pokroku {#4-progress-tracking}
 
 Volání `get_plan_progress` kdykoli zkontroluje stav provedení:
 
@@ -104,7 +104,7 @@ Uživatelé WP-CLI mohou sledovat pokrok pomocí:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Zotavení chyb
+### 5. Zotavení chyb {#5-error-recovery}
 
 Pokud selže krok, orchestrátor zkontroluje, zda v plánu existuje **fallback** krok:
 
@@ -115,9 +115,9 @@ Agent reportuje všechny selhání v konečném souhrnu plánu a může navrhnou
 
 ---
 
-## Schopnosti plánu webu (Site Plan Abilities)
+## Schopnosti plánu webu (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generuje strukturovaný plán webu z popisu cíle v přirozeném jazyce.
 
@@ -134,7 +134,7 @@ Generuje strukturovaný plán webu z popisu cíle v přirozeném jazyce.
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Začne provedení předem vygenerovaného plánu webu.
 
@@ -150,7 +150,7 @@ Začne provedení předem vygenerovaného plánu webu.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Vrací aktuální stav provedení plánu webu.
 
@@ -164,7 +164,7 @@ Vrací aktuální stav provedení plánu webu.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Manuálně vyřeší selžený krok a obnoví provedení plánu od dalšího kroku. Použijte to, když automatické zotavení nebylé možné a chcete zasáhnout.
 
@@ -180,7 +180,7 @@ Manuálně vyřeší selžený krok a obnoví provedení plánu od dalšího kro
 
 ---
 
-## Porovnání v1 a v2
+## Porovnání v1 a v2 {#comparing-v1-and-v2}
 
 | Funkce | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Manuálně vyřeší selžený krok a obnoví provedení plánu od dalšího kro
 
 ---
 
-## Příkazy plánu WP-CLI
+## Příkazy plánu WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generuje plán webu z popisu cíle.
 
@@ -205,7 +205,7 @@ Generuje plán webu z popisu cíle.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Spustí provedení předem vygenerovaného plánu.
 
@@ -213,7 +213,7 @@ Spustí provedení předem vygenerovaného plánu.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Zobrazí aktuální pokrok pro spouštěný nebo dokončený plán.
 
@@ -221,7 +221,7 @@ Zobrazí aktuální pokrok pro spouštěný nebo dokončený plán.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Seznam všech plánů webu (outnímající, v průběhu a dokončené).
 
@@ -229,7 +229,7 @@ Seznam všech plánů webu (outnímající, v průběhu a dokončené).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Resetuje selžený plán na stav `pending`, aby jej bylo možné znovu spustit od začátku.
 

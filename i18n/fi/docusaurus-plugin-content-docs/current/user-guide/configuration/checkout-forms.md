@@ -3,7 +3,7 @@ title: Kassaportaalit
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Kassapulomakkeet
+# Kassapulomakkeet {#checkout-forms}
 
 Kassapulomakkeet ovat helppo ja joustava tapa kokeilla erilaisia lähestymistapoja uuden asiakkaan hankkimisessa.
 
@@ -36,13 +36,13 @@ Voit vaihtoehtoisesti muokata tai kopioida jo olemassa olevia lomakkeita napsaut
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor - yleiskatsaus
+#### Checkout Form Editor - yleiskatsaus {#checkout-form-editor-overview}
 
 Checkout Form Editor tarjoaa kattavan käyttöliittymän lomakkeidesi rakentamiseen. Tässä on yleiskatsaus editorin asettelusta:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout Form -muokkaaminen
+### Checkout Form -muokkaaminen {#editing-a-checkout-form}
 
 Voit luoda checkout-lomakkeita eri tarkoituksiin. Tässä esimerkissä teemme työtä rekisteröintilomakkeen kanssa.
 
@@ -112,7 +112,7 @@ Lomakkeen lyhyen koodin (shortcode) saamiseksi klikkaa "Generate Shortcode" ja k
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Hinnoittelutaulukko -kenttä
+### Hinnoittelutaulukko -kenttä {#the-pricing-table-field}
 
 **Pricing Table** (Hinnoittelutaulukko) -kenttä näyttää tuotteesi kassalomakkeella, jotta asiakkaat voivat valita suunnitelman. Kun muokkaat tätä kenttää, voit määrittää useita vaihtoehtoja:
 
@@ -130,17 +130,17 @@ Tässä on, miltä hinnoittelutaulukko näyttää etusivun rekisterilomakkeessa:
 
 Jos lisäät tuotteen Hinnoittelutaulukkoon ennen kuin lomake sisältää kentät, jotka ovat tarpeen kyseisen tuotteen kassavirran täyttämiseen, editor näyttää nyt varoituksen. Käytä varoitusta puuttuvän vaaditun kentän lisäämiseen ennen muutosten julkaisemista tai tallentamista elävälle rekisterilomakkeelle.
 
-### Lisää ajanjakson valintapainike
+### Lisää ajanjakson valintapainike {#adding-a-period-selection-toggle}
 
 Jos olet konfiguroinut [Price Variations](creating-your-first-subscription-product#price-variations) -vaihtelut tuotteillesi (esim. kuukausi- ja vuosimaksu), voit lisätä **Ajanjakson valintapainikkeen** ostoskori-/maksuaformaasiisi. Tämä kenttä näyttää kytkimen, jolla asiakkaat voivat vaihtaa laskutusjaksojen välillä, ja hinnoittelutaulukko päivittyy dynaamisesti reaaliajassa.
 
-#### Vaihe 1: Aseta hinta-vaihtelut tuotteillesi
+#### Vaihe 1: Aseta hinta-vaihtelut tuotteillesi {#step-1-set-up-price-variations-on-your-products}
 
 Ennen ajanjakson valintapainikkeen lisäämistä varmista, että tuotteillasi on konfiguroitu hinta-vaihteluita. Mene kohtaan **Ultimate Multisite > Products**, muokkaa tuotetta ja siirry välilehdelle **Price Variations** lisätä vaihtoehtoisia laskutusjaksoja (esim. Vuosimaksu alennuksella).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Vaihe 2: Lisää ajanjakson valintapainike ostoskori-/maksuaformaasiisi
+#### Vaihe 2: Lisää ajanjakson valintapainike ostoskori-/maksuaformaasiisi {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Mene kohtaan **Ultimate Multisite > Checkout Forms** ja muokkaa ostoskori-/maksuaformaasiisi.
 
@@ -163,13 +163,13 @@ Ennen ajanjakson valintapainikkeen lisäämistä varmista, että tuotteillasi on
 
 7. Napsauta **Save Field**.
 
-#### Vaihe 3: Sijoita kenttä hinnoittelatabelin yläpuolelle
+#### Vaihe 3: Sijoita kenttä hinnoittelatabelin yläpuolelle {#step-3-position-the-field-above-the-pricing-table}
 
 Paras käyttökokemus varmistetaan, jos Period Selection -kenttä ilmestyy **ennen** Pricing Table -kenttää kassaprosessissa. Voit vetää kenttiä uudelleen järjestelläksesi ne kassavalikon muokkaustilassa. Näin asiakkaat valitsevat ensin laskutusjakson ja näkevät sen jälkeen hinnan kyseiselle ajanjaksolle.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Miten se toimii etupäässä (Frontend)
+#### Miten se toimii etupäässä (Frontend) {#how-it-works-on-the-frontend}
 
 Kun olet konfiguroinut kentän, asiakkaat, jotka vierailevat rekisteröitymissivullasi, näkevät jaksovalitsimen hinnoittelatabelin yläpuolella. Kun he napsauttavat eri laskutusjaksoa:
 
@@ -177,7 +177,7 @@ Kun olet konfiguroinut kentän, asiakkaat, jotka vierailevat rekisteröitymissiv
   * Jos **Force Different Durations** on poistettu käytöstä Pricing Table -kentällä, tuotteet, joilla ei ole hintavaihtelua valitulle ajanjaksolle, piilotetaan.
   * Jos **Force Different Durations** on päällä, kaikki tuotteet pysyvät näkyvissä, vaikka niillä ei olisi vaihtelua valitulle ajanjaksolle (ne näyttävät oletushinnan).
 
-#### Laskutusjakson esivalinta URL-osoitteen kautta
+#### Laskutusjakson esivalinta URL-osoitteen kautta {#pre-selecting-a-billing-period-via-url}
 
 Voit myös esivalita tuotteen ja laskutusjakson URL-osoitteen avulla. Ultimate Multisite tukee näitä URL-mallinnuksia:
 
@@ -185,11 +185,11 @@ Voit myös esivalita tuotteen ja laskutusjakson URL-osoitteen avulla. Ultimate M
   * `/register/premium/12` — Esivalitsee tuotteen ja 12 kuukauden kestön
   * `/register/premium/1/year` — Esivalitsee tuotteen 1 vuoden kestolla
 
-### Mallin valintakenttä (Template Selection Field)
+### Mallin valintakenttä (Template Selection Field) {#the-template-selection-field}
 
 **Template Selection** -kenttä antaa asiakkaille valita sivustomallin kassalla. Se on nyt oletuksena sisällytetty **single step** ja **multi-step** kassavalikon malleihin, jotka lisätään Ultimate Multisite v2.6.1:ssä.
 
-#### Kentän lisääminen manuaalisesti
+#### Kentän lisääminen manuaalisesti {#adding-the-field-manually}
 
 Jos työskentelet lomakkeen kanssa, joka on luotu ennen versiota v2.6.1 tai aloitettu tyhjältä mallilla:
 
@@ -200,11 +200,11 @@ Jos työskentelet lomakkeen kanssa, joka on luotu ennen versiota v2.6.1 tai aloi
    - **Label** (Tunniste) — Otsikko, jonka asiakkaat näkevät malligridin yläpuolella (esim. "Valitse sivustomalli").
    - **Required** (Vaadittu) — Tieto siitä, onko asiakkaan täytynyt valita malli ennen jatkamista.
 
-#### Miten se toimii
+#### Miten se toimii {#how-it-works}
 
 Kun asiakas valitsee mallin kassalla, Ultimate Multisite käyttää sitä uuden sivuston luomiseen. Näytettävät mallit tulevat sinun **Site Templates** -listalta (**Ultimate Multisite > Site Templates**). Tässä näkyvät vain ne mallit, jotka on merkitty saatavilla asiakkaille.
 
-### Checkout-form base domains (Kassalomakkeen perusdomeenit)
+### Checkout-form base domains (Kassalomakkeen perusdomeenit) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 käsittelee kassalomakkeen **Site URL** -kentissä määritettyjä domeeneja verkkojen perusdomeeneina. Käytä kentän saatavilla olevia domain-asetuksia, kun haluat asiakkaiden luovan sivustoja yhden tai useamman yhteisen rekisteröintidomeenin alla, kuten `example.com` ja `sites.example.com`.
 
@@ -212,6 +212,6 @@ Yhteiset kassalomakkeen perusdomeenit eivät ole per-sivuston mukaisia custom do
 
 Pidä custom domainit yksittäisille asiakkaille mappatuille isännöille, kuten `customer-example.com`. Pidä kassalomakkeen perusdomeenit yhteisiä rekisteröintihisäntöjä varten, joita monet sivustot voivat käyttää.
 
-#### Kentän poistaminen
+#### Kentän poistaminen {#removing-the-field}
 
 Jos et tarjoa sivustotempleja, poista Template Selection -kenttä lomakkeestasi. Asiakkaat saavat sen sijaan automaattisesti valitun oletustemppelin, joka on määritetty **Ultimate Multisite > Settings > Site Templates** -kohdassa.

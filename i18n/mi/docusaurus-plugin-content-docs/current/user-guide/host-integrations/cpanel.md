@@ -3,17 +3,17 @@ title: Whakawhanaungatanga cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Whakawhanaungatanga me cPanel
+# Whakawhanaungatanga me cPanel {#cpanel-integration}
 
-## Whakataki
+## Whakataki {#overview}
 cPanel he tākaro nui i whānui i panelau whakahaere web hosting, e whakamahia e ngā pahi shared me dedicated hosting marama. He tino whaiaro tēnei integration ki te whakamahi domain syncing automatically i antara Ultimate Multisite me cPanel, e hoki ai i te whero (alias) domain me subdomain ki te account cPanel mo koe automatically.
 
-## Manawa
+## Manawa {#features}
 - Whakawhanaungatanga addon domain automatic i cPanel
 - Whakawhanaungatanga subdomain automatic i cPanel (mo installation subdomain multisite)
 - Whakamutunga domain i roto i te whero mapping tika
 
-## Wāhi Whakaritenga
+## Wāhi Whakaritenga {#requirements}
 Me tino whakaaro ana i ngā constants berikut i tō file `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Chara ki te whakawhiti pō (port) inae e cPan
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Chara ki te root directory i roto i tō document
 ```
 
-## Whakaritenga Whakahaere
+## Whakaritenga Whakahaere {#setup-instructions}
 
-### 1. Takea Iroa Hauora mo cPanel
+### 1. Takea Iroa Hauora mo cPanel {#1-get-your-cpanel-credentials}
 
 1. Takea i tō username me password o cPanel mo tō pahi hosting
 2. Whakawhiti i tō host o cPanel (kāore i te tika `cpanel.yourdomain.com` he `yourdomain.com:2083`)
 
-### 2. Whakawhiti Constants ki wp-config.php
+### 2. Whakawhiti Constants ki wp-config.php {#2-add-constants-to-wp-configphp}
 
 Whakawhiti ngā constants berikut ki tō file `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Chara ki te whakawhiti pō (port) inae e cPan
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Chara ki te root directory i roto i tō document
 ```
 
-### 3. Whakawhanaungatanga Integration
+### 3. Whakawhanaungatanga Integration {#3-enable-the-integration}
 
 Whakawhanaunga i te integration
 
@@ -63,9 +63,9 @@ Whakawhanaunga i te integration
 4. Whakawhanaungatanga (Enable) te integration o cPanel
 5. Whakawātea te "Save Changes"
 
-## He aha ia mahi?
+## He aha ia mahi? {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 I roto i te wā e whakatika i te domain i Ultimate Multisite:
 
@@ -73,7 +73,7 @@ I roto i te wā e whakatika i te domain i Ultimate Multisite:
 2. Ka whakamahinga te domain kia pōutu ki te root directory o koe
 3. I roto i te wā e whakatika i te mapping o domain, ka whero te integration te addon domain i cPanel
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Mō ngā installation multisite subdomain, i roto i te wā e whai whakaaro ana i te site hou:
 
@@ -81,27 +81,27 @@ Mō ngā installation multisite subdomain, i roto i te wā e whai whakaaro ana i
 2. Ka tōku te request ki te API o cPanel kia whero te subdomain
 3. Ka whakamahinga te subdomain kia pōutu ki te root directory o koe
 
-## Ngā Tohutohu Whitianga
+## Ngā Tohutohu Whitianga {#important-notes}
 
 - Ka whakamahia te integration API2 o cPanel mō te whai wāhi ana i te account o cPanel mo koe
 - Me heke i ngā whānau (permissions) o aua domain addon me subdomain i tō account o cPanel
 - He tino whai whakaaro ngaahi whipiti (hosting providers) e taea ai i te whakaputa hoki te whānau addon domains ka taea e koe
 - Kaau ia mō te whakarite DNS; ka taea e koe te pōutu i ngā domain ki te IP address o tō server
 
-## Whakamutunga (Troubleshooting)
+## Whakamutunga (Troubleshooting) {#troubleshooting}
 
-### Ngā Whainga Whitianga API Connection
+### Ngā Whainga Whitianga API Connection {#api-connection-issues}
 - Kia whakamārama ko te username me te password o aua cPanel he tino pai
 - Kia whakatika ko te host o aua cPanel he tino pai ana me ka taea te whai i ai
 - Kia tiaki ko te account o aua cPanel he whipiti (permissions) e pēnei ana
 - Whakarongo ki te whakamahi i te URL katoa mō te host (e.g., `https://cpanel.yourdomain.com`)
 
-### Domain Kaau Ka taea Te Whero
+### Domain Kaau Ka taea Te Whero {#domain-not-added}
 - Kia whakaaro ko ngā logs o Ultimate Multisite he tino pai ana mo ngā error messages
 - Kia whakatika ko te domain kaau ka pēnei ana i cPanel
 - Kia tiaki ko te account o aua cPanel kaau i tō whipiti (limit) mō addon domains me subdomains
 
-### Ngā Whainga Whakamahi Sertifika SSL (SSL Certificate Issues)
+### Ngā Whainga Whakamahi Sertifika SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - Ko te whaiaro e whakamahia ei whakaae ki te whakawhiti i sertifika SSL.
 - Ko te mea, ka taea e koe te whakamahi ngā taonga SSL/TLS o cPanel, heta AutoSSL, kia whakawhiti i sertifika SSL mō i waenga i ngā domain (domain) o koe.
 - He whaiaro atu, ka taea hoki koe te whakamahi te whaiwhero (service) pēnei i Let's Encrypt me te AutoSSL o cPanel.

@@ -3,11 +3,11 @@ title: Domæneprodukter og priser
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domæneprodukter og prissætning
+# Domæneprodukter og prissætning {#domain-products-and-pricing}
 
 Domæneprodukter er, hvordan du styrer prissætning, TLD'er (Top-Level Domains), WHOIS-privatliv og udbyderudvælgelse. Hvert domæneprodukt er et standard Ultimate Multisite produkt med en ekstra **Domain Settings** faneblad.
 
-## Oprettelse af et domæneprodukt
+## Oprettelse af et domæneprodukt {#creating-a-domain-product}
 
 1. Gå til **Network Admin › Ultimate Multisite › Products**
 2. Klik på **Add New** (Tilføj nyt)
@@ -17,19 +17,19 @@ Domæneprodukter er, hvordan du styrer prissætning, TLD'er (Top-Level Domains),
 
 Domæneprodukter vises med et lilla **Domain** badge i produktlisten og kan filtreres ved hjælp af fanen **Domain Products**.
 
-## Domain settings faneblad
+## Domain settings faneblad {#domain-settings-tab}
 
-### Udbyder (Provider)
+### Udbyder (Provider) {#provider}
 
 Vælg, hvilken registreringsudbyder der skal håndtere registreringen for dette produkt. Standardindstillingen er den globale **Default provider**, som er sat i indstillingerne for Domæne Sælger.
 
-### Understøttede TLD'er (Supported TLDs)
+### Understøttede TLD'er (Supported TLDs) {#supported-tlds}
 
 Lad feltet tomt for at oprette et **catch-all produkt**, der gælder for alle TLD'er, som ikke matcher et andet produkt. Indtast en komma-adskilt liste over TLD'er (f.eks. `.com, .net, .org`) for at oprette et **TLD-specifikt produkt**, der kun gælder for disse endelser.
 
 **Hvordan produktmatchning fungerer:** Når en kunde søger efter et domæne, vælger add-on'et det mest specifikke matchende produkt. Et produkt med `.com` i sin TLD-liste har forrang for et catch-all produkt. Hvis der ikke findes et TLD-specifikt produkt, der matcher, bruges catch-all'en. Hvis der slet ikke findes produkter, vises domænesøgningen ikke.
 
-### Prisjusteringstype (Markup type)
+### Prisjusteringstype (Markup type) {#markup-type}
 
 Tre tilstande styrer, hvordan din detailpris beregnes ud fra anskaffelsesprisen:
 
@@ -39,13 +39,13 @@ Tre tilstande styrer, hvordan din detailpris beregnes ud fra anskaffelsesprisen:
 | **Fast prisjustering (Fixed markup)** | Tilføjer et fast beløb i dollars. En $5 markup på et domæne til $10 giver $15. |
 | **Fast pris** | Ignorerer anskaffelsesprisen helt. Opkræver altid det beløb, du indtaster. |
 
-### Indledende prissætning (Introductory pricing)
+### Indledende prissætning (Introductory pricing) {#introductory-pricing}
 
-### Tilbud om rabatter på første år
+### Tilbud om rabatter på første år {#whois-privacy}
 
 Aktiver muligheden for at tilbyde en nedsat pris i det første år. Sæt en separat **Introduktionspris** (prisen for år 1) ud over den almindelige **Fornyelsespris** (for år 2+). Kunden ser begge priser vist under kassen, så de ved, hvad de kan forvente ved fornyelsen.
 
-### WHOIS privatliv
+### WHOIS privatliv {#tld-import-and-sync}
 
 Kontroller om WHOIS privatliv beskyttelse tilbydes for domæner registreret gennem dette produkt.
 
@@ -59,7 +59,7 @@ For Namecheap bruger WHOIS privatliv WhoisGuard (altid gratis). For OpenSRS brug
 
 ---
 
-## TLD import og synkronisering
+## TLD import og synkronisering {#auto-renewal}
 
 Domæneprodukter viser realtids-wholesale-priser hentet fra den forbundne udbyder. For at dette skal virke, skal TLD'er importeres.
 
@@ -70,7 +70,7 @@ Efter en synkronisering skal du gå til fanen Domæneindstillinger for et domæn
 
 ---
 
-## Automatisk fornyelse
+## Automatisk fornyelse {#admin-manual-domain-registration}
 
 Domænefornyelser er knyttet til kundens medlemsstatus:
 

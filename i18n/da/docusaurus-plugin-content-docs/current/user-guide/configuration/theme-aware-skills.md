@@ -3,11 +3,11 @@ title: Tema-bevidste færdigheder
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-bevidste færdigheder
+# Tema-bevidste færdigheder {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 leveres med fire nye tema-bevidste indbyggede færdigheder, der automatisk tilpasser sig dit aktive WordPress-tema. Disse færdigheder giver specialiseret vejledning og funktionalitet skræddersyet til dit themes arkitektur og funktioner.
 
-## Hvad er tema-bevidste færdigheder?
+## Hvad er tema-bevidste færdigheder? {#what-are-theme-aware-skills}
 
 Tema-bevidste færdigheder er forudkonfigurerede videnbaser og værktøjsæt, som AI-assistenten automatisk vælger baseret på det WordPress-tema, der i øjeblikket er aktivt på din side. Når du skifter tema, opdateres assistentens tilgængelige færdigheder automatisk – ingen manuel konfiguration er nødvendig.
 
@@ -18,9 +18,9 @@ Hver færdighed inkluderer:
 - **Tilpasningsforslag** — kodeudsnit og konfigurationsmønstre for almindelige opgaver
 - **Bedste praksis** — anbefalinger til temaets arkitektur og workflow
 
-## Tilgængelige tema-bevidste færdigheder
+## Tilgængelige tema-bevidste færdigheder {#available-theme-aware-skills}
 
-### Bloktemaer
+### Bloktemaer {#block-themes}
 
 **Gælder for:** Temaer, der bruger WordPress blokbaseret (Full Site Editing) arkitektur.
 
@@ -34,7 +34,7 @@ Bloktema-færdigheden giver vejledning i:
 
 **Automatisk aktiveret, når:** Dit aktive tema er et bloktema (understøtter `block-templates` funktion).
 
-### Klassiske temaer
+### Klassiske temaer {#classic-themes}
 
 **Gælder for:** Traditionelle WordPress-temaer, der bruger PHP-templates og det klassiske editor.
 
@@ -48,7 +48,7 @@ Forståelse af temahierarki og template tags
 
 **Automatisk aktiveret når:** Dit aktive tema er et klassisk (ikke-block) tema.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Gælder for:** Sider, der bruger Kadence Blocks plugin til avanceret block-baseret design.
 
@@ -62,7 +62,7 @@ Kadence Blocks færdighed giver vejledning i:
 
 **Automatisk aktiveret når:** Kadence Blocks plugin er aktiv på din side.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Gælder for:** Sider, der bruger Kadence tema til block-baseret design og tilpasning.
 
@@ -76,15 +76,15 @@ Kadence Theme færdighed giver vejledning i:
 
 **Automatisk aktiveret når:** Kadence tema er dit aktive tema.
 
-## Hvordan færdigheder vælges
+## Hvordan færdigheder vælges {#how-skills-are-selected}
 
 Assistenten opdager automatisk dit aktive tema og de installerede plugins i hver besked. Hvis en matchende tema-bevidst færdighed er tilgængelig, indlæses den automatisk i assistentens kontekst. Du behøver ikke manuelt aktivere eller skifte færdigheder.
 
-### Flere færdigheder
+### Flere færdigheder {#multiple-skills}
 
 Hvis flere færdigheder gælder for din side (for eksempel, hvis du har både Kadence Blocks og Kadence Theme aktive), får assistenten adgang til alle relevante færdigheder og kan henvise til vejledninger fra hver af dem.
 
-### Skift mellem temaer
+### Skift mellem temaer {#switching-themes}
 
 Når du skifter dit aktive tema, opdateres assistentens tilgængelige færdigheder automatisk i den næste besked. For eksempel:
 
@@ -92,11 +92,11 @@ Når du skifter dit aktive tema, opdateres assistentens tilgængelige færdighed
 2. Du skifter til et klassisk tema.
 3. I din næste besked indlæses **Classic Themes**-færdigheden automatisk, og **Block Themes**-færdigheden er ikke længere tilgængelig.
 
-## Brug af tema-bevidste færdigheder
+## Brug af tema-bevidste færdigheder {#using-theme-aware-skills}
 
 For at udnytte en tema-bevidst færdighed skal du blot beskrive, hvad du vil gøre i chatgrænsefladen. Assistenten vil automatisk henvise til vejledningen fra den passende færdighed.
 
-### Eksempler på prompts
+### Eksempler på prompts {#example-prompts}
 
 **Til Block Themes:**
 > "Opret en hero-sektion med baggrundsbillede og centreret tekst ved hjælp af blokmønstre."

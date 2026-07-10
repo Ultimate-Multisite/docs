@@ -3,11 +3,11 @@ title: Tema-Barlarynda Beceriler
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills
+# Tema-Aware Skills {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 dört täze tema-aware built-in skillleri ýazyryp çykaryýar, olar siziň aktif WordPress temasy bilen awtomatiki taýynlanýar. Bu skiller siziň temanyň arhitekturasyna we funksiýalaryna laýyklaşdyrylan iňlisden howa goşawlary we ukyplary berýär.
 
-## Tema-Aware Skiller Näme?
+## Tema-Aware Skiller Näme? {#what-are-theme-aware-skills}
 
 Tema-aware skiller bu, siziň sahypada şu wagtda işje edýän WordPress temasy esasynda awtomatiki tanalýan önümçeli bilim bazalary we ulgamlardyr. Temalaryň arasyndan geçseňiz, asistanlaryň bar bolan skilleri awtomatiki täzelenýär — manual dürli gural bermek gerek däl.
 
@@ -18,9 +18,9 @@ Her bir skill şu zatlary özünde jemleýär:
 - **Customization (laýyklaşdyrma) mysallary** — umumy wezipeler üçin kod keselleri we konfigurasiýa modeleri
 - **Best practices (iň gowy usullar)** — temanyň arhitekturasyna we iş akymyna maslahatlar
 
-## Bar Bolan Tema-Aware Skiller
+## Bar Bolan Tema-Aware Skiller {#available-theme-aware-skills}
 
-### Block Temalary
+### Block Temalary {#block-themes}
 
 **Ulanýar:** WordPress bloklary esasynda (Full Site Editing) işje edýän temalar.
 
@@ -34,7 +34,7 @@ Block Themes skilli şu zatlar barada howa goşaw berýär:
 
 **Awtomatiki täzelenýär:** Siziň aktif temasy blok temasy bolsa ( `block-templates` funksiýasyny goldaýar).
 
-### Klassik Temalar
+### Klassik Temalar {#classic-themes}
 
 **Ulanýar:** PHP templateji we klassiki redaktory ulanýan adatça WordPress temalary.
 
@@ -48,7 +48,7 @@ Tema hiyerarşisini we template tag'larını düşündürmek
 
 **Aýtdyrylmagy:** Siziň aktif temany klassik (block-siz) bolsa.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Ulanýanlar üçin:** Öňe süýşirilip biljek bloklary ulanyp, amatly dizayn etmek üçin Kadence Blocks pluginini ulanyp bilýän sitler.
 
@@ -62,7 +62,7 @@ Kadence Blocks becerisi şu zatlar barada ýol berýär:
 
 **Aýtdyrylmagy:** Kadence Blocks pluginini sitinizde işjeňleşdirip ulanyp bilseňiz.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Ulanýanlar üçin:** Bloklary esas alan dizayn we özelleşdirmek üçin Kadence temanyny ulanyp bilýän sitler.
 
@@ -76,15 +76,15 @@ Kadence Theme becerisi şu zatlar barada ýol berýär:
 
 **Aýtdyrylmagy:** Kadence temany siziň işjeňleşdirilen temany bolsa.
 
-## Beceriler nädip saýlanýar
+## Beceriler nädip saýlanýar {#how-skills-are-selected}
 
 Asistan her bir mesagda siziň işjeňleşdirilen temany we ulanylýan pluginleri awtomatiki düşündirip alýar. Eger size laýyk tema bilen baglanyşykly beceri bar bolsa, ol asistanyň kontekstine awtomatiki ýüklenýär. Becerileri manedenelik we özüňiz manual arkaly işjeňleşdirmäge we üýtgetmäge gerek bolmaz.
 
-### Käbir beceriler
+### Käbir beceriler {#multiple-skills}
 
 Sitenize birden çorak skill'ler (meselem, hem Kadence Blocks hem de Kadence Theme aktifse) ul근 skill'lere girýär we her birinden maslahaty almagy mümkinçiligi bar.
 
-### Tema Değişmek
+### Tema Değişmek {#switching-themes}
 
 Aktiw temaňyzda üýtgeşdikde, assistant-i bar bolan skill'ler soňraki mesagda awtomatiki täzelenir. Mysal üçin:
 
@@ -92,11 +92,11 @@ Aktiw temaňyzda üýtgeşdikde, assistant-i bar bolan skill'ler soňraki mesagd
 2. Siz klassik temaga geçýärsiňiz.
 3. Soňraki mesagda, **Classic Themes** skill'i awtomatiki ýüklenýär we **Block Themes** skill'i has howa bolmaz.
 
-## Tema-Barlanan Skill'leri Ulanmak
+## Tema-Barlanan Skill'leri Ulanmak {#using-theme-aware-skills}
 
 Tema-barlanan skill'den peýdalanmak üçin, chat interfeýsinde näme etmek isleýändigiňizi düşündiriň. Assistant awtomatiki dogry skill maslahatyny ýerine ýetirip görkezýär.
 
-### Mysallar
+### Mysallar {#example-prompts}
 
 **Block Themes üçin:**
 > "Blok sazlamalaryny ulanmagy arkaly arka fon resmi we merkezlenip tekst bilen hero bölümini döredip biljekmi?"

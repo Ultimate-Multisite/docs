@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Ychwanegau'r addons yn ymddangos y Ultimate Multisite gyda phrychiadau a chysylltiadau ychwanegol. Mae'r rhaneddau (addons) cyfan yn cael eu cyfathri, ac gallai eu cyfathri o [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Cynllunio (Installation)
+## Cynllunio (Installation) {#installation}
 
 Gallu cynllunio'r addons mewn ddau ffordd:
 
 1. **Drwy y Peidiad Addon** -- Rhewch i'r peidiad rheoli'r addons ar eich siwaith yn y admin WordPress.
 2. **Darlunio Manwl (Manual Download)** -- Darlunio o [cyfathogh eich cyfrifau](https://ultimatemultisite.com/my-account/downloads/) a darlunio drwy Plugins > Add New
 
-## Addons Ar Gweithredol
+## Addons Ar Gweithredol {#available-addons}
 
 | Addon | Disgrifiad |
 |-------|-------------|

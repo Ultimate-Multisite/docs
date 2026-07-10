@@ -3,11 +3,11 @@ title: Avis des clients et signalement de problèmes
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Commentaires et signalement de problèmes des utilisateurs
+# Commentaires et signalement de problèmes des utilisateurs {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduit un système intégré de commentaires et de signalement de problèmes qui permet aux utilisateurs finaux de signaler des réponses inutiles et de rapporter des problèmes directement depuis l'interface de chat. Ce système comprend la gestion du consentement, une commande de signalement automatisée et un tri assisté par IA en arrière-plan.
 
-## Bouton Pouce Bas
+## Bouton Pouce Bas {#thumbs-down-button}
 
 Chaque message envoyé par l'assistant IA affiche un bouton **pouce bas** (👎). Lorsqu'un utilisateur clique dessus, il peut marquer une réponse comme inutile ou incorrecte.
 
@@ -15,7 +15,7 @@ Chaque message envoyé par l'assistant IA affiche un bouton **pouce bas** (👎)
 - Cliquer dessus ouvre la **Modale de consentement aux commentaires**.
 - Le commentaire est associé au fil de conversation et au message spécifique.
 
-## Modale de consentement aux commentaires
+## Modale de consentement aux commentaires {#feedback-consent-modal}
 
 Lorsqu'un utilisateur clique sur le bouton pouce bas, une modale de consentement apparaît avant que toute donnée ne soit envoyée. La modale :
 
@@ -26,13 +26,13 @@ Lorsqu'un utilisateur clique sur le bouton pouce bas, une modale de consentement
 
 Aucun commentaire n'est enregistré tant que l'utilisateur ne confirme pas explicitement.
 
-## Bannière de commentaires automatique
+## Bannière de commentaires automatique {#auto-prompt-feedback-banner}
 
 À la fin d'une conversation, l'assistant peut afficher une **bannière de commentaires automatique** — un message non intrusif demandant si la session a été utile.
 
 Cette bannière apparaît automatiquement en fonction de la longueur de la conversation et des heuristiques de résultat. Elle renvoie au même flux de commentaires que le bouton pouce bas. Les utilisateurs peuvent fermer la bannière sans fournir de commentaires.
 
-## Commande Slash `/report-issue`
+## Commande Slash `/report-issue` {#report-issue-slash-command}
 
 Les utilisateurs peuvent déclencher le flux de commentaires directement en tapant `/report-issue` dans le champ de saisie de chat. Cette commande :
 
@@ -42,7 +42,7 @@ Les utilisateurs peuvent déclencher le flux de commentaires directement en tapa
 
 La commande `/report-issue` est disponible dans tous les modes de chat (en ligne, widget flottant, plein écran).
 
-## Tri assisté par IA
+## Tri assisté par IA {#ai-assisted-triage}
 
 Les commentaires soumis sont acheminés vers une couche de tri IA qui :
 

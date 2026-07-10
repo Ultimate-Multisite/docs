@@ -3,11 +3,11 @@ title: Bincike na Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# جھانکنے کا جائزہ (Dashboard Overview)
+# جھانکنے کا جائزہ (Dashboard Overview) {#dashboard-overview}
 
 Ultimate Multisite mein Ultimate Multisite menun ke andar ek khaas **Dashboard** hota hai, aur yeh Network Dashboard par bhi widgets jodta hai. Is article mein hum dono jagah kya dekhenge iske baare mein batayenge.
 
-## نیٹ ورک ڈیش بورڈ (The Network Dashboard)
+## نیٹ ورک ڈیش بورڈ (The Network Dashboard) {#the-network-dashboard}
 
 Ultimate Multisite network-level dashboard mein istemal hone wale fa'ida mand widgets ko **My Sites → Network Admin → Dashboard** par daakhil karta hai.
 
@@ -35,7 +35,7 @@ Har widget kya cheez deta hai, yeh dekhiye:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite ڈیش بورڈ (The Ultimate Multisite Dashboard)
+## Ultimate Multisite ڈیش بورڈ (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 Jabki network dashboard network ke baare mein poori jaankari deta hai, Ultimate Multisite dashboard (Ultimate Multisite menun ke sabse upar) service ke baare mein jaankari deta hai.
 

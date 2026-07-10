@@ -1,0 +1,26 @@
+---
+id: wu_current_set_customer
+title: Iragazkia - wu_current_set_customer
+sidebar_label: wu_current_set_customer
+_i18n_hash: 27caeb84e05be2f90e1c616b2f772ea5
+---
+# Filter: wu_current_set_customer {#filter-wucurrentsetcustomer}
+
+Garatzaileei portaera lehenetsia aldatzeko eta uneko bezeroa beste modu batean ezartzeko aukera ematen die.
+
+## Parametroak {#parameters}
+
+| Izena | Mota | Deskribapena |
+|------|------|-------------|
+| $customer | `\WP_Ultimo\Models\Customer` | Ezarri beharreko uneko bezeroa. |
+| $ | `self` | Current klasearen instantzia. |
+
+### Noiztik {#since}
+
+- 2.0.9
+### Iturburua {#source}
+
+[`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L377) fitxategian definitua, 377. lerroan
+
+
+## Itzultzen du {#returns}

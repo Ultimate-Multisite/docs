@@ -1,0 +1,124 @@
+---
+title: Tehisintellekti saidilooja
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI saidiehitaja {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Nõuded {#requirements}
+
+- WordPress 5.3 või uuem
+- PHP 7.4 või uuem
+- Multisite Ultimate plugin (aktiivne)
+
+## Paigaldamine {#installation}
+
+1. Laadi lisa failid üles oma `/wp-content/plugins/` kataloogi
+2. Aktiveeri plugin WordPressi menüü „Pluginad” kaudu
+3. Seadista lisa sätted võrguhalduses
+
+## Arendus {#development}
+
+### Seadistamine {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projekti struktuur {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klassid ja lisatavad failid
+│   ├── class-multisite-ultimate-updater.php  # Uuenduste käsitleja
+│   └── class-ai_site_builder-main.php             # Põhifunktsionaalsus
+├── tests/                        # Ühiktestid
+│   ├── bootstrap.php            # Testide käivitusfail
+│   ├── class-*-base.php         # Testi baasklass
+│   └── class-*-test.php         # Testijuhtumid
+├── views/                       # Mallifailid
+├── assets/                      # Staatilised varad
+│   ├── css/                     # Stiililehed
+│   ├── js/                      # JavaScripti failid
+│   └── images/                  # Pildid
+├── lang/                        # Keelefailid
+├── composer.json                # PHP sõltuvused
+├── package.json                 # Node.js sõltuvused
+├── phpunit.xml.dist             # PHPUnit konfiguratsioon
+├── .phpcs.xml.dist              # Koodistandardite konfiguratsioon
+└── rector.php                   # Koodi moderniseerimise reeglid
+```
+
+### Testimine {#testing}
+
+Lisa sisaldab põhjalikku testimisraamistikku:
+
+- **Ühiktestid**: PHPUnit-põhised testid koos WordPressi testikomplektiga
+- **Testi baasklass**: Pakub abimeetodeid tavaliste testistsenaariumide jaoks
+- **Testikatvus**: Seadistatud koodikatvuse jälgimiseks
+- **Multisite testimine**: Testid käivitatakse multisite-keskkonnas
+
+### Koodistandardid {#code-standards}
+
+- **WordPressi koodistandardid**: Jõustatakse PHPCS-i kaudu
+- **PHP 7.4+ ühilduvus**: Toetatud on kaasaegsed PHP funktsioonid
+- **Staatiline analüüs**: PHPStan integratsioon tüübikontrolliks
+- **Koodi moderniseerimine**: Rectori reeglid PHP uuenduste jaoks
+
+### Koostesüsteem {#build-system}
+
+- **Varade töötlemine**: CSS/JS failide minimeerimine
+- **Tõlkimine**: POT-faili genereerimine
+- **Pakendamine**: Arhiivi loomine levitamiseks
+- **Arendusrežiim**: Minimeerimata varad silumiseks
+
+## Konfiguratsioon {#configuration}
+
+Lisa toetab mitmesuguseid konfiguratsioonivalikuid, millele pääseb ligi võrguhalduse liidese kaudu.
+
+## Hookid ja filtrid {#hooks-and-filters}
+
+### Toimingud {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Käivitatakse pärast lisa initsialiseerimist
+- `ultimate-multisite-ai-site-builder_loaded` - Käivitatakse pärast kõigi lisa failide laadimist
+
+### Filtrid {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Muuda lisa sätteid
+- `ultimate-multisite-ai-site-builder_enabled` - Tühista lisa lubamise/keelamise olek
+
+## Litsents {#license}
+
+See lisa on litsentsitud GPL v3 või uuema litsentsi alusel.
+
+## Tugi {#support}
+
+Toe ja dokumentatsiooni jaoks külasta [MultisiteUltimate.com](https://multisiteultimate.com)
+## Muudatuste logi {#changelog}
+
+- Versioon 1.0.1 (2025-09-28): nimeta prefiks ümber kujule ultimate-multisite; uuenda tekstidoomeeni; versiooni tõstmine.
+
+
+- Versioon  (2025-09-28): nimeta prefiks ümber kujule ultimate-multisite; uuenda tekstidoomeeni; versiooni tõstmine.

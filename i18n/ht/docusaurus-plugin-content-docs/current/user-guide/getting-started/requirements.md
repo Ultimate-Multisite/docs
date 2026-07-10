@@ -3,11 +3,11 @@ title: Reqèyman
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Exigances Ultimates Multisite
+# Exigances Ultimates Multisite {#ultimate-multisite-requirements}
 
 Premye ou ka mande pounye ou ta poze tèt ou anvan ou achte Ultimate Multisite, sa ki se exigans pou fè plugin nou la mache. Bon, la, gen sèlman kèk kondisyon batatik pou fè Ultimate Multisite mache: yon **non de domèn** , yon bon **founis hosting** epi yon enstalasyon WordPress **Multisite**. Sa se tout ou bezwen!
 
-## Non De Domèn
+## Non De Domèn {#domain-name}
 
 Premye bagay nou pale a, se non de domèn an.
 
@@ -17,7 +17,7 @@ Plugin nou an bay sèvis abònman, koleksyon pwopòsit, fòm checkout, bonbon ra
 
 Tout niche ou chwazi ka jere itilize plugin nou an tant ou vann sit entènèt kòm yon sèvis! Asire w ou chwazi non de domèn ki koresponn ak plan biznis ou a.
 
-## Founis Hosting
+## Founis Hosting {#hosting-provider}
 
 Kounye ou gen yon non de domèn ki atire ki reprezante niche ou e biznis ou, ou pral bezwen chwazi yon bon konpayi hosting pou bay rete w la ak Ultimate Multisite. Gen kèk opsyon ki byen sou mache a. Gen kèk founis hosting ki entegre byen ak Ultimate Multisite, sa ka se yon faktè desizif selon sa ou planifye pou w bati.
 
@@ -25,7 +25,7 @@ Ultimate Multisite ta fonksyone nan nenpòtible ak tout kalite hosting. Sèl dif
 
 Lè nou pale sou spesifikasyon sèvè a, pa gen okenn fòmil espesifik paske sa ap depann de fonksyonalite ou pral ofri epi gwosè rezo ou. Yon shared hosting ka yon bon kòmanse, men jan rezo ou kòmanse grandi, ou pral bezwen yon dedicated VPS la.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Kounye a, ann pale yon ti jan sou enstalasyon WordPress Multisite.
 

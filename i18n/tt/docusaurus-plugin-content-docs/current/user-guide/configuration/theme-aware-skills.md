@@ -3,11 +3,11 @@ title: Тема-адалы көндүмдәр
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills
+# Tema-Aware Skills {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 dört yeni tema duyarlı yerleşik beceri (skill) getiriyor ki bunlar aktif WordPress temanıza otomatik olarak uyum sağlar. Bu beceriler, temanızın mimarisine ve özelliklerine özel uzman rehberlik ve yetenekler sunar.
 
-## Tema Duyarlı Beceriler Nedir?
+## Tema Duyarlı Beceriler Nedir? {#what-are-theme-aware-skills}
 
 Tema duyarlı beceriler, sitenizde şu anda aktif olan WordPress temasına dayanarak yapay zeka asistanının otomatik olarak seçtiği önceden yapılandırılmış bilgi tabanları ve araç setleridir. Temalar arasında geçtiğinizde, asistanın mevcut becerileri otomatik olarak güncellenir — manuel yapılandırma gerekmez.
 
@@ -18,9 +18,9 @@ Her beceri şunları içerir:
 - **Özelleştirme örnekleri** — yaygın görevler için kod parçacıkları ve yapılandırma kalıpları
 - **En iyi uygulamalar (Best practices)** — temanın mimarisi ve iş akışı için öneriler
 
-## Mevcut Tema Duyarlı Beceriler
+## Mevcut Tema Duyarlı Beceriler {#available-theme-aware-skills}
 
-### Blok Temaları (Block Themes)
+### Blok Temaları (Block Themes) {#block-themes}
 
 **Uygulanır:** WordPress blok tabanlı (Full Site Editing) mimarisini kullanan temalara.
 
@@ -34,7 +34,7 @@ Blok Temalar becerisi şunlar hakkında rehberlik sağlar:
 
 **Ne zaman otomatik etkinleşir:** Aktif temanız bir blok teması olduğunda ( `block-templates` özelliğini destekler).
 
-### Klasik Temalar (Classic Themes)
+### Klasik Temalar (Classic Themes) {#classic-themes}
 
 **Uygulanır:** PHP şablonları ve klasik düzenleyici kullanan geleneksel WordPress temalarına.
 
@@ -48,7 +48,7 @@ Tema hiyerarşisini ve template tag'lerini anlama
 
 **Aşağıdaki durumlarda otomatik olarak etkinleşir:** Aktif temanız klasik (blok olmayan) tema olduğunda.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Uygulanır:** Gelişmiş blok tabanlı tasarım için Kadence Blocks eklentisini kullanan siteler.
 
@@ -62,7 +62,7 @@ Kadence Blocks becerisi şunlar hakkında rehberlik eder:
 
 **Aşağıdaki durumlarda otomatik olarak etkinleşir:** Kadence Blocks eklentisi sitenizde aktif olduğunda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Uygulanır:** Blok tabanlı tasarım ve özelleştirme için Kadence temasını kullanan siteler.
 
@@ -76,15 +76,15 @@ Kadence Theme becerisi şunlar hakkında rehberlik eder:
 
 **Aşağıdaki durumlarda otomatik olarak etkinleşir:** Kadence teması aktif temanız olduğunda.
 
-## Becerilerin Seçilmesi
+## Becerilerin Seçilmesi {#how-skills-are-selected}
 
 Asistan her mesajda aktif temanızı ve kurulu eklentileri otomatik olarak algılar. Eşleşen tema farkındalığı olan bir beceri mevcutsa, bu beceri asistanın bağlamına otomatik olarak yüklenir. Becerileri manuel olarak etkinleştirmenize veya değiştirmenize gerek yoktur.
 
-### Birden Fazla Beceri
+### Birden Fazla Beceri {#multiple-skills}
 
 Если на вашем сайте применяется несколько навыков (например, если у вас активны как Kadence Blocks, так и Kadence Theme), ассистент имеет доступ ко всем применимым навыкам и может ссылаться на руководство из каждого из них.
 
-### Переключение тем
+### Переключение тем {#switching-themes}
 
 Когда вы меняете активную тему, доступные навыки ассистента автоматически обновляются в следующем сообщении. Например:
 
@@ -92,11 +92,11 @@ Asistan her mesajda aktif temanızı ve kurulu eklentileri otomatik olarak algı
 2. Вы переключаетесь на классическую тему.
 3. В вашем следующем сообщении навык **Classic Themes** загружается автоматически, а навык **Block Themes** больше недоступен.
 
-## Использование тематически-зависимых навыков (Theme-Aware Skills)
+## Использование тематически-зависимых навыков (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Чтобы использовать навык, который зависит от темы, просто опишите, что вы хотите сделать в чат-интерфейсе. Ассистент автоматически будет ссылаться на руководство соответствующего навыка.
 
-### Примеры запросов
+### Примеры запросов {#example-prompts}
 
 **Для блочных тем (Block Themes):**
 > "Создайте секцию героя с фоновым изображением и центрированным текстом, используя паттерны блоков."

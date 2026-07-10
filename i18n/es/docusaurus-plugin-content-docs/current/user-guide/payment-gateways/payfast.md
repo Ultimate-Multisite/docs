@@ -3,7 +3,7 @@ title: Pasarela PayFast
 sidebar_position: 18
 _i18n_hash: 522faa86d920457375203119d78650a7
 ---
-# PayFast Pasarela
+# PayFast Pasarela {#payfast-gateway}
 
 Esta característica es proporcionada por el complemento **PayFast**.
 

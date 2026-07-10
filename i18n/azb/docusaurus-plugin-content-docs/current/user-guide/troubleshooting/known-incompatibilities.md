@@ -3,7 +3,7 @@ title: Known Incompatibilities
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Diğer Plugin'lerle Bilinen Uyumsuzluklar
+# Diğer Plugin'lerle Bilinen Uyumsuzluklar {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite'ı kurup etkinleştirdikten sonra, başka plugin'lerle çözülmemiş uyumsuzluklar nedeniyle sorunlarla karşılaşabilirsiniz.
 

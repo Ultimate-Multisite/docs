@@ -1,94 +1,109 @@
 ---
 title: שילוב WooCommerce
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# אינטגרציה עם WooCommerce
+# שילוב WooCommerce {#woocommerce-integration}
 
-האינטגרציה עם WooCommerce עובדת בצורה דומה מאוד לאופן שבו עובד ה-Manual Gateway שלנו. היא מציעה גמישות עצומה למשתמשים שלך, ומאפשרת להם לבחור מבין כל צורות התשלום הזמינות בהתקנה של WooCommerce שלך. וזה פשוט: ברגע שתקופת החיוב של המשתמש מסתיימת, המנוי שלו מושעה. במקביל, יווצר הזמנה בהתקנת WooCommerce של האתר הראשי של הרשת. המשתמש יקבל לאחר מכן חשבונית במייל שלו, עם קישור לבצע את התשלום. לאחר קבלת התשלום, המנוי מתחדש.
+שילוב WooCommerce פועל באופן דומה מאוד לאופן שבו שער התשלום הידני שלנו פועל. הוא מציע גמישות רבה למשתמשים שלך, ומאפשר להם לבחור כל אחד מטופסי התשלום הזמינים בהתקנת WooCommerce שלך. וזה פשוט: לאחר שתקופת החיוב של המשתמש מסתיימת, מנוי המשתמש מושהה. במקביל, תיווצר הזמנה בהתקנת WooCommerce של האתר הראשי ברשת. לאחר מכן המשתמש מקבל חשבונית באימייל שלו, עם קישור לביצוע התשלום. לאחר שהתשלום מתקבל, המנוי מחודש.
 
-## תכונות
+## תכונות {#features}
 
-- אינטגרציה קלה בין Ultimate Multisite ל-WooCommerce
-- מספר שיטות תשלום זמינות
-- תהליך אוטומטי לחלוטין עם WooCommerce Subscriptions
+- שילוב קל בין Ultimate Multisite ל-WooCommerce
+- כמה שיטות תשלום זמינות
+- חיוב חוזר אוטומטי באמצעות ליבת המנויים המצורפת, עם שיפורים אופציונליים של תוסף WooCommerce Subscriptions
+- סכומי ה-checkout כוללים מיסי Ultimate Multisite כשורות עמלה נפרדות ולא חייבות במס ב-WooCommerce, כדי שלקוחות יוכלו לבדוק את סכומי המס לפני התשלום
 
-## תיעוד
+## תיעוד {#documentation}
 
-**הגדרת האינטגרציה עם WooCommerce**
+**הגדרת שילוב WooCommerce**
 
-**הרחבת אפשרויות התשלום שלך עם Ultimate Multisite: אינטגרציה עם WooCommerce**
+**הרחבת אפשרויות התשלום שלך עם Ultimate Multisite: שילוב WooCommerce**
 
-## התקנה
+## התקנה {#installation}
 
-1. העלה את 'ultimate-multisite-woocommerce' לתיקייה '/wp-content/plugins/'
-2. הפעל את התוסף דרך תפריט 'Plugins' ב-WordPress
-3. עקוב אחר המדריך המפורט (Wizard) להגדרת התוסף
+1. העלה את 'ultimate-multisite-woocommerce' לתיקיית '/wp-content/plugins/'
+2. הפעל את התוסף דרך תפריט 'תוספים' ב-WordPress
+3. עקוב אחר האשף שלב אחר שלב כדי להגדיר את התוסף
 
-## מדריך שימוש
+## מדריך שימוש {#usage-guide}
 
-_**הערה חשובה: מאמר זה מתייחס לגרסה 2.x של Ultimate Multisite.**_
+_**הערה חשובה: מאמר זה מתייחס לגרסת Ultimate Multisite 2.x.**_
 
-_**שים לב:** Ultimate Multisite: WooCommerce Integration דורש ש-WooCommerce יהיה מופעל לפחות באתר הראשי שלך._
+_**שימו לב:** Ultimate Multisite: שילוב WooCommerce דורש ש-WooCommerce יהיה מופעל לפחות באתר הראשי שלך._
 
-אנחנו יודעים ש-Stripe ו-PayPal אינם זמינים במדינות מסוימות, מה שמגביל או מעכב את המשתמשים של Ultimate Multisite מלהשתמש ביעילות בתוסף שלנו. לכן יצרנו **תוסף כדי לשלב את WooCommerce**.
+אנחנו מבינים ש-_Stripe_ ו-_PayPal_ אינם זמינים במדינות מסוימות, מה שמגביל או מקשה על משתמשי Ultimate Multisite להשתמש בתוסף שלנו באופן יעיל. לכן יצרנו **תוסף משלים לשילוב _WooCommerce_**.
 
-_WooCommerce_ הוא תוסף eCommerce פופולרי מאוד. מפתחים ברחבי העולם יצרו תוספים כדי לשלב אליו שערים שונים לתשלום. ניצלנו זאת כדי להרחיב את שערים התשלום שתוכל להשתמש בהם במערכת החיוב של Ultimate Multisite.
+_WooCommerce_ הוא תוסף מסחר אלקטרוני פופולרי מאוד. מפתחים ברחבי העולם יצרו תוספים משלימים כדי לשלב בו שערי תשלום שונים. ניצלנו זאת כדי להרחיב את שערי התשלום שבהם אפשר להשתמש במערכת החיוב של Ultimate Multisite.
 
-## הגדרת התוסף
+## הגדרה {#setting-it-up}
 
-ראשית, עליך להתקין את תוסף ה-WooCommerce Integration, והוא **חינמי למשתמשים מורשים**. כדי להתקין אותו, לחץ על Ultimate Multisite ב-Dashboard של ה-Super admin ובחר **Add-ons**.
+ראשית, עליך להתקין את התוסף המשלים WooCommerce Integration, שהוא **חינמי למשתמשים מורשים**. כדי להתקין אותו, לחץ על Ultimate Multisite ב-Dashboard של מנהל-העל שלך ובחר **תוספים משלימים**.
 
-![Add-ons page](/img/admin/addons-page.png)
+![עמוד תוספים משלימים](/img/admin/addons-page.png)
 
-כאן תוכל למצוא את כל התוספים של Ultimate Multisite. לחץ על תוסף **Ultimate Multisite: WooCommerce Integration**.
+כאן ניתן למצוא את כל התוספים המשלימים של Ultimate Multisite. לחץ על התוסף המשלים **Ultimate Multisite: שילוב WooCommerce**.
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![עמוד תוספים משלימים המציג את שילוב WooCommerce](/img/admin/addons-page.png)
 
-חלון קופץ עם פרטי התוסף. פשוט לחץ על **Install Now** *.*
+חלון יקפוץ עם פרטי התוסף המשלים. פשוט לחץ על **התקן עכשיו** *.*
 
 <!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
 
-לאחר ההתקנה, תופנה לדף התוספים. כאן, פשוט לחץ על **Network Activate** והתוסף _WooCommerce_ יופעל ברשת שלך.
+לאחר שההתקנה תסתיים, תופנה לעמוד התוספים. כאן, פשוט לחץ על **הפעלה ברשת** והתוסף המשלים _WooCommerce_ יופעל ברשת שלך.
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
 
-לאחר ההפעלה, אם עדיין לא התקנת והפעלת את תוסף WooCommerce באתר שלך, **תקבל תזכורת**.
+לאחר הפעלתו, אם עדיין אין לך את התוסף WooCommerce מותקן ומופעל באתר שלך, **תקבל תזכורת**.
 
 <!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
 
-לאחר ההתקנה, תראה אפשרות נוספת בהגדרות התשלום של Ultimate Multisite. משם תוכל **להפעיל** את האפשרות של _WooCommerce_.
+לאחר ההתקנה, תראה אפשרות נוספת תחת הגדרות התשלומים של Ultimate Multisite. לאחר מכן תוכל **להפעיל** משם את האפשרות _WooCommerce_.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![הגדרות שער תשלום של Ultimate Multisite עם WooCommerce מופעל](/img/addons/woocommerce-payment-gateway.png)
 
-תוכל להגדיר כמה הגדרות בסיסיות, כמו שם התצוגה שיופיע בחזית האתר והוראות שינחו את המשתמשים שלך בתהליך ה-checkout. לאחר מכן תוכל לעבור ל**הגדרות WooCommerce של האתר הראשי** כדי להפעיל ולהגדיר את שער התשלום המועדף עליך.
+אפשר להגדיר כמה הגדרות בסיסיות, כמו שם התצוגה שיופיע בצד הקדמי והוראות שינחו את המשתמשים שלך בתהליך ה-checkout שלהם. לאחר מכן תוכל לעבור אל **הגדרות _WooCommerce_ של האתר הראשי שלך** כדי להפעיל ולהגדיר את שער התשלום שאתה מעדיף להשתמש בו.
 
-## כיצד לנהל את התשלום
+### שורות עמלת מס ב-checkout {#checkout-tax-fee-lines}
 
-האינטגרציה עם WooCommerce עובדת בצורה דומה מאוד לאופן שבו עובד ה-**Manual Gateway** שלנו. החיסרון הוא שכל תשלום חייב להתבצע ידנית בסוף תקופת החיוב. כך עובד התהליך:
+כאשר checkout של Ultimate Multisite כולל מיסים, השילוב מוסיף כל סכום מס של Ultimate Multisite ל-checkout של WooCommerce כשורת עמלה נפרדת שאינה חייבת במס. כך סכום המס הכולל נשאר גלוי לפני התשלום, תוך מניעת מצב שבו WooCommerce מטיל מס שוב על עמלת המס.
 
-  * ברגע שסבב החיוב של המשתמש מסתיים, המנוי מושעה. במקביל, יווצר הזמנה בהתקנת _WooCommerce_ באתר הראשי של הרשת שלך.
+## איך לנהל את התשלום {#how-to-manage-the-payment}
 
-  * המשתמשים יקבלו לאחר מכן חשבונית במייל שלהם, עם קישור לבצע את התשלום (הקישור מופיע גם בהיסטוריית החיוב שלהם מה-dashboard של תת-האתר). קישור זה מפנה את המשתמש ל-**checkout** של _**WooCommerce**_, שם יוכל לבחור מבין **שערים זמינים של WooCommerce** כדי לעבד את התשלום שלו.
+שילוב WooCommerce פועל באופן דומה מאוד לאופן שבו **השער הידני** שלנו פועל. החיסרון הוא שכל תשלום חייב להתבצע ידנית בסוף תקופת החיוב. כך התהליך עובד:
 
-  * לאחר קבלת התשלום, המנוי מתחדש, התשלום נרשם ב-Ultimate Multisite וההזמנה מוגדרת כהושלמה.
+  * לאחר שמחזור החיוב של המשתמש מסתיים, החברות מועברת למצב **בהשהיה**. במקביל, תיווצר הזמנה בהתקנת _WooCommerce_ באתר הראשי של הרשת שלך.
 
-### כמה הערות חשובות:
+  * לאחר מכן המשתמשים מקבלים חשבונית באימייל שלהם, עם קישור לביצוע התשלום (הקישור מופיע גם בהיסטוריית החיוב שלהם מתוך ה-Dashboard של תת-האתר שלהם). הקישור הזה מפנה את המשתמש אל _**WooCommerce**_ **checkout** , שבו המשתמשים יוכלו לבחור אחד מ-**שערי _WooCommerce_ הזמינים** כדי לעבד את התשלום שלהם.
 
-  * הפונקציונליות המוגדרת כברירת מחדל של Ultimate Multisite עדיין עובדת עם תבנית האינטגרציה הזו. לדוגמה, **הנפקת החזרים** ממסך **ניהול המנויים** תתקשר עם WooCommerce כדי להנפיק את ההחזר באמצעות שער התשלום שנבחר.
+  * לאחר שהתשלום מתקבל, החברות **מחודשת** , התשלום נרשם ב-Ultimate Multisite וההזמנה מוגדרת כהושלמה.
 
-  * Ultimate Multisite: WooCommerce Integration מסתמך על WP-Cron כדי לעבוד. זה עובד מצוין ברוב המקרים, אבל אם לאתר יש תנועה נמוכה, ה-cron לא מקבל הנחיה לבדוק אירועים מתוזמנים והאירוע מוחמץ, מה שיכול לגרום לעיכובים בהרצה.
+### כמה הערות חשובות: {#some-important-notes}
 
-## תוסף WooCommerce Subscriptions
+  * פונקציונליות ברירת המחדל של Ultimate Multisite עדיין פועלת עם צורת שילוב זו. לדוגמה, **הנפקת החזרים** ממסך **ניהול מנויים** תתקשר עם WooCommerce כדי להנפיק את ההחזר באמצעות טופס התשלום שנבחר.
 
-אתחול תשלום ידני בכל חודש אינו אידיאלי עבור משתמשים סופיים, מכיוון שמנוי צפוי להתחדש אוטומטית בכל מחזור חיוב. לכן תכצבנו את תוסף ה-WooCommerce Integration כדי **לתמוך בתוסף WooCommerce Subscriptions**. זה יאוטמט את התשלום ויקל על המעבר עבור המשתמשים הסופיים שלך.
+  * Ultimate Multisite: שילוב WooCommerce מסתמך על WP-Cron כדי לפעול. זה עובד היטב ברוב המקרים, אך אם לאתר יש תנועה נמוכה, אז ה-cron אינו מתבקש לבדוק אירועים מתוזמנים והאירוע מתפספס, מה שעלול לגרום לעיכובי ביצוע.
 
-כל מה שאתה צריך לעשות הוא **להתקין** את [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) ולוודא שהוא **מופעל באתר הראשי שלך**. לאחר מכן חזור להגדרות התשלום של Ultimate Multisite ו**הפעל את האינטגרציה**.
+## תוסף WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
 
-וזהו. המשתמשים הסופיים שלך כבר לא יצטרכו לבצע תשלום ידני בסוף תקופת החיוב שלהם.
+ייזום תשלום ידנית בכל חודש אינו אידיאלי עבור משתמשי קצה, מכיוון שמצופה שמינויים יחזרו אוטומטית בכל מחזור חיוב. תוסף WooCommerce Integration כולל כעת את קוד המינויים המרכזי, כך שמוצרים חוזרים תמיד משתמשים במינויים עבור חיוב חוזר.
 
-מלבד יצירת הזמנה באתר הראשי שלך תחת _WooCommerce_, הוא ייצור גם מנוי עבור כל חשבון.
+אתם **לא** צריכים לרכוש או להתקין את [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) הנפרד כדי למכור מוצרים חוזרים דרך אינטגרציה זו. אם ה-plugin הזה נרכש, מותקן וזמין באתר הראשי שלכם, Ultimate Multisite ישתמש בו ו-WooCommerce יחשוף תכונות נוספות לניהול מינויים. כאשר הוא אינו זמין, ליבת המינויים הכלולה עדיין מטפלת במוצרים חוזרים.
+
+![הגדרות אינטגרציית מנויים של WooCommerce](/img/addons/woocommerce-subscription-integration.png)
+
+וזה הכול. משתמשי הקצה שלכם כבר לא יצטרכו לבצע תשלום ידנית בסוף מחזור החיוב שלהם עבור מוצרים חוזרים.
+
+מלבד הזמנה שתיווצר באתר הראשי שלכם תחת _WooCommerce_, ייווצר גם מינוי עבור כל Account.
+
+### התנהגות השעיה בעת חידוש שנכשל {#failed-renewal-suspension-behavior}
+
+כברירת מחדל, חברויות נשארות פעילות בזמן ש-WooCommerce Subscriptions מעבד את לוח הזמנים לניסיונות חוזרים לאחר תשלום שנכשל. כך נשמר חלון החסד הרגיל של WooCommerce Subscriptions, כדי שחידוש ששוחזר יוכל להחזיר את המינוי והחברות לסנכרון בלי להפסיק את הגישה מוקדם מדי.
+
+מנהלים שרוצים בקרת גישה מחמירה יותר יכולים להפעיל את **Suspend Memberships Immediately on Failed Renewals** בהגדרות WooCommerce Integration. כאשר הגדרת opt-in זו מופעלת, Ultimate Multisite משעה את החברות הקשורה מיד כאשר תשלום חידוש נכשל, במקום להמתין לסיום טיפול הניסיונות החוזרים של WooCommerce Subscriptions.
+
+מפתחים יכולים לעקוף את אותה החלטה באמצעות המסנן `wu_woo_suspend_on_payment_failure`. דפי העיון של hooks נוצרים ממקור התוסף, ולכן סקירה זו מציינת רק את שם המסנן עבור מדיניות השעיה מותאמת אישית.

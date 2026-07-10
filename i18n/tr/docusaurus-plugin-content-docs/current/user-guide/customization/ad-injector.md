@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector ile Ağınıza Reklam Yerleştirme
+# Ultimate Multisite: Ad Injector ile Ağınıza Reklam Yerleştirme {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector, planlarınıza doğrudan düzenleme sayfasından reklam yerleştirmenizi sağlayan **ücretsiz bir eklentidir**.
 
@@ -35,7 +35,7 @@ Ayrıca o plana sahip kullanıcılar için yönetim sayfalarının üst kısmın
 
 _Kullanıcılarınızın yönetim panelinde reklam göstermek istiyorsanız Yönetim Paneli Reklam Kodu seçeneğine gidin_
 
-### Reklamcılığın Ötesinde
+### Reklamcılığın Ötesinde {#beyond-advertising}
 
 Ultimate Multisite: Ad Injector'ı üst seviye planlara destek sunmak için de kullanabilirsiniz.
 

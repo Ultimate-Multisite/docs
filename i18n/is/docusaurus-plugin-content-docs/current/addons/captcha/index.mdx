@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Stöðvaðu botta. Verndaðu tekjur. Engin stillingavandræði.**
+
+Rekurðu multisite-net með sérsniðnum lénum? Þú þekkir vandann: Google reCAPTCHA og hCaptcha krefjast þess að þú skráir *hvert einasta lén* í stjórnborðinu þeirra. Bætirðu við nýjum vef viðskiptavinar? Uppfærðu captcha-stillinguna. Tengirðu sérsniðið lén? Uppfærðu aftur. Þetta tekur aldrei enda.
+
+**Ultimate Multisite: Captcha breytir öllu.**
+
+## Cap Captcha: sjálfhýst vernd sem virkar bara {#cap-captcha-self-hosted-protection-that-just-works}
+
+Nýi **Cap Captcha** veitandinn okkar gjörbreytir leiknum fyrir multisite-net:
+
+* **Engar stillingar** — Virkjaðu viðbótina og þú ert varinn. Engir API-lyklar, enginn Google-reikningur, ekkert hCaptcha stjórnborð, engin hvítlistun léna.
+* **Virkar sjálfkrafa á hverju léni** — Undirlén, tengd lén, lén viðskiptavina—þau eru öll varin samstundis.
+* **Sjálfhýst og einkavænt** — Gögnin þín yfirgefa aldrei þjóninn þinn. Fullkomlega GDPR-samhæft án rakningar þriðja aðila.
+* **Ósýnilegt Proof-of-Work** — Notendur leysa útreikningsþraut í bakgrunni. Engin smelli á brunahana, engin pirrandi myndanet.
+* **Létt** — Aðeins 20KB. Hægir ekki á checkoutinu þínu.
+
+## WooCommerce vernd gegn kortaprófun {#woocommerce-card-testing-protection}
+
+Kortaprófunarárásir kosta söluaðila milljarða árlega. Svindlarar nota botta til að staðfesta stolin kreditkort í WooCommerce checkoutinu þínu—þú greiðir úrvinnslugjöldin, þeir fá gild kortanúmer.
+
+**Við verndum þar sem það skiptir mestu máli:**
+
+* **Store API-vernd** — Lokar á bottaárásir á `/wp-json/wc/store/v1/checkout` sem fara framhjá hefðbundnum form-captcha
+* **Samhæft við PayPal Payments** — Virkar hnökralaust með WooCommerce PayPal Payments
+* **Tölfræði í rauntíma** — Sjáðu nákvæmlega hversu margar árásir þú ert að stöðva
+
+## Þarftu enn Google reCAPTCHA eða hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Við sjáum um það. Fullur stuðningur við:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Skiptu á milli veitenda hvenær sem er úr netstillingunum þínum.
+
+## Byggt fyrir skala {#built-for-scale}
+
+* Stillingar fyrir allt netið með yfirskriftum fyrir hvern vef
+* Tölfræðimælaborð til að fylgjast með vernd
+* Stillanleg öryggisstig (Hratt, Miðlungs, Hámark)
+* Þróunarvænt með útvíkkanlegri veitendaarkitektúr
+
+## Uppsetning {#installation}
+
+1. Hladdu `ultimate-multisite-captcha` upp í `/wp-content/plugins/` möppuna þína
+2. Virkjaðu plugin á netinu
+3. **Það er allt og sumt. Þú ert varinn.**
+
+Cap Captcha virkjast sjálfkrafa—engar stillingar til að stilla, engir API-lyklar til að slá inn. Sérhver studdur endpoint á öllu netinu þínu er varinn um leið og þú virkjar.
+
+**Valfrjálst:** Til að nota Google reCAPTCHA eða hCaptcha í staðinn skaltu fara í **Ultimate Multisite → Settings → Captcha** og velja þann veitanda sem þú vilt.
+
+## Algengar spurningar {#frequently-asked-questions}
+
+## Þarf ég að stilla eitthvað? {#do-i-need-to-configure-anything}
+
+Nei! Cap Captcha er virkt sjálfkrafa þegar þú virkjar viðbótina. Allt netið þitt er varið samstundis—engar stillingar til að stilla, engir API-lyklar til að slá inn.
+
+## Þarf ég API-lykla fyrir Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Nei. Cap Captcha er alveg sjálfhýst. Engir ytri reikningar, engin lénaskráning, engin stillingavandræði.
+
+## Mun þetta hægja á checkoutinu mínu? {#will-this-slow-down-my-checkout}
+
+Cap Captcha er aðeins 20KB og keyrir proof-of-work áskoranir í bakgrunni. Viðskiptavinirnir þínir munu ekki taka eftir neinni töf.
+
+## Verndar þetta gegn kortaprófunarárásum? {#does-this-protect-against-card-testing-attacks}
+
+Já! Ólíkt hefðbundnum captcha sem vernda aðeins HTML-form, tengist WooCommerce-samþættingin okkar beint inn í Store API til að loka á bottaárásir á API-stigi—þar sem flestar kortaprófunarárásir eiga sér stað.
+
+## Get ég notað mismunandi captcha-veitendur á mismunandi vefjum? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Captcha-veitandinn er stilltur fyrir allt netið, en þú getur aðlagað erfiðleikastillingar eftir þínum þörfum.
+
+## Er þetta GDPR-samhæft? {#is-this-gdpr-compliant}
+
+Cap Captcha er 100% sjálfhýst án þess að gögn séu send til ytri þjónusta. Fyrir Google reCAPTCHA og hCaptcha skaltu yfirfara viðeigandi persónuverndarstefnur þeirra.
+
+## Hraðatakmörkun {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 kynnir harðan hraðatakmarkara sem verndar netið þitt gegn brute-force og kortaprófunarárásum.
+
+### Hvernig það virkar {#how-it-works}
+
+Hraðatakmarkarinn telur hverja GET- og POST-beiðni á captcha-vörðum flötum:
+
+* **WordPress innskráningar-endpointar** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Þegar gestur fer yfir hraðatakmörkunina svarar plugin með:
+
+* **HTTP 429 (Of margar beiðnir)** stöðukóða
+* **Retry-After** header sem gefur til kynna hvenær á að reyna aftur
+* **Slembin tarpit-bið** (1–5 sekúndur sjálfgefið, harðtakmörkuð við 15 sekúndur) til að hægja á árásaraðilum
+
+### Stillingar {#configuration}
+
+#### Tarpit-tímasetning {#tarpit-timing}
+
+Stýrðu slembinni seinkun sem beitt er á hraðatakmarkaðar beiðnir:
+
+* **`cap_rate_limit_tarpit_min`** — Lágmarks biðtími í sekúndum (sjálfgefið: 1)
+* **`cap_rate_limit_tarpit_max`** — Hámarks biðtími í sekúndum (sjálfgefið: 5, harðtakmarkað við 15)
+
+Þessar stillingar eru tiltækar í **Ultimate Multisite → Settings → Captcha**.
+
+### Útvíkkanleiki {#extensibility}
+
+#### IP-hvítlistusía {#ip-whitelist-filter}
+
+Undanskildu traust IP-svið frá hraðatakmörkun:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Aðgerð fyrir lokun {#pre-block-action}
+
+Keyrðu sérsniðna rökvísi strax áður en hraðatakmörkunarlokun er send:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Greining á IP-tölu client og traustir proxy-þjónar {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 kynnir greiningu á IP-tölu client sem þolir fölsun. Aðferðin `Captcha_Core::get_client_ip()` er nú eini sannleiksgjafinn fyrir úthlutun IP-tölu gesta yfir:
+
+* Hólfslyklar fyrir takmörkun á beiðnihraða
+* Captcha-veita `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* IP-hösh tölfræði
+
+### Traustlíkan {#trust-model}
+
+Viðbótin framfylgir ströngu stigveldi fyrir IP-traust:
+
+1. **REMOTE_ADDR** — Alltaf treyst (IP-tala beina jafningjans)
+2. **CF-Connecting-IP** — Aðeins virt þegar:
+   - Beini jafninginn er innan gilds Cloudflare IP-bils
+   - `cap_trust_cloudflare_headers` er virkt (sjálfgefið: OFF)
+3. **X-Forwarded-For** — Aðeins virt þegar:
+   - Beini jafninginn er í lista yfir treysta staðgengla sem stjórnandi hefur stillt
+   - Hausinn er þáttaður frá hægri til vinstri, og sleppir treystum/Cloudflare milliliðum
+
+### Stillingar {#configuration-1}
+
+#### Traust á Cloudflare-haus {#cloudflare-header-trust}
+
+Virkjaðu traust á `CF-Connecting-IP` haus Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Stilltu á ON til að samþykkja traust á `CF-Connecting-IP`
+  - Sjálfgefið: OFF (óvirkt)
+  - Viðbótin kemur með innbyggðu Cloudflare CIDR-skyndimynd
+  - CIDR-bil eru endurnýjuð vikulega í gegnum wp-cron
+  - Innbyggða varaleiðin er notuð ef endurnýjun mistekst
+
+#### Stilling treystra staðgengla {#trusted-proxy-configuration}
+
+Skilgreindu framvarðarstaðgengla og álagsdreifara:
+
+* **`cap_trusted_proxies`** — Textasvæði með CIDR eða berum IP-tölum (ein í hverri línu)
+  - Athugasemdir eru leyfðar (línur sem byrja á `#`)
+  - Án þessarar stillingar er `X-Forwarded-For` hunsað jafnvel þegar takmörkun á beiðnihraða er virk
+  - Dæmi:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Sjálfvirk greining við fyrstu virkjun {#first-enable-auto-detection}
+
+Þegar þú virkjar takmörkun á beiðnihraða í fyrsta sinn greinir viðbótin líklega stöðu þína gagnvart Cloudflare og staðgenglum og birtir stjórnandatilkynningu með einum smelli: „Nota greindar stillingar“.
+
+* Viðbótin **yfirskrifar aldrei** vistuðu gildin þín
+* Ef síðari umferð bendir til þess að stillingarnar þínar passi ekki lengur við raunveruleikann (t.d. að Cloudflare hafi breytt CIDR-bilum), birtist ólokanleg misræmistilkynning með ráðlagðri uppfærslu
+
+### Hvers vegna þetta skiptir máli {#why-this-matters}
+
+Strangt IP-traustlíkan lokar mikilvægri fölsunarleið: beinar beiðnir til upprunaþjóns með fölsuðum `CF-Connecting-IP` haus hefðu áður verið flokkaðar eftir fölsuðu IP-tölunni í stað raunverulega jafningjans. Þetta er sérstaklega mikilvægt fyrir:
+
+* **Takmörkun á beiðnihraða** — Árásaraðilar geta ekki komist fram hjá mörkum með því að falsa IP-tölur
+* **Tölfræði** — Árásarmælingar þínar endurspegla raunverulegar IP-tölur gesta, ekki falsaðar
+* **Captcha-staðfesting** — Veitur fá rétta IP-tölu gestsins fyrir áhættumat

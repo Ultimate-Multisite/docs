@@ -3,11 +3,11 @@ title: પ્લગઇન મેનેજમેન્ટ ક્ષમતાઓ
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities
+# Plugin Management Abilities {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0 માં **7 પ્લગઇન મેનેજમેન્ટ ક્ષમતાઓ** છે જે AI સહાયક વાતચીત દરમિયાન ઉપયોગમાં લઈ શકે છે. આ ક્ષમતાઓ [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) દ્વારા ઇન્સ્ટોલ કરેલા WordPress પ્લગઇન્સ પર પ્રોગ્રામિંગ દ્વારા નિયંત્રણ પ્રદાન કરે છે.
 
-## Abilities Overview
+## Abilities Overview {#abilities-overview}
 
 | Ability | Slug | Description |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0 માં **7 પ્લગઇન મેનેજમેન
 | Install Plugin | `install_plugin` | સેન્ડબોક્સ કરેલા પ્લગઇનને લાઇવ WordPress પ્લગઇન ડિરેક્ટરીમાં તૈનાત (deploy) કરે છે. |
 | Activate Plugin | `activate_plugin` | wp-env સેન્ડબોક્સ એન્વાયર્નમેન્ટમાં સેન્ડબોક્સ કરેલા પ્લગઇનને એક્ટિવેટ કરે છે. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 પ્લગઇન ઇન્સ્ટોલર પ્લગઇન તૈનાત (deploy) કરતી વખતે અથવા દૂર કરતી વખતે ફાઇલ સિસ્ટમ ઓપરેશન્સનું સંચાલન કરે છે. મુખ્ય વર્તણૂકો (Key behaviours):
 
@@ -28,7 +28,7 @@ Gratis AI Agent v1.5.0 માં **7 પ્લગઇન મેનેજમેન
 - **Update**: હાલની પ્લગઇન ફાઇલોને બદલે છે. આંશિક-સ્થિતિની ભૂલો ટાળવા માટે લખતા પહેલા પ્લગઇનને ડિએક્ટિવેટ કરે છે.
 - **Delete by slug**: સ્લગ દ્વારા પ્લગઇન ડિરેક્ટરી શોધે છે, તમામ સાઇટ્સ પર ડિએક્ટિવેટ કરે છે, અને પછી ડિરેક્ટરી દૂર કરે છે.
 
-### Registering a Custom Install Handler
+### Registering a Custom Install Handler {#registering-a-custom-install-handler}
 
 તમે `gratis_ai_plugin_installer_before_install` અને `gratis_ai_plugin_installer_after_install` એક્શનનો ઉપયોગ કરીને ઇન્સ્ટોલ લાઇફસાયકલમાં હૂક (hook) કરી શકો છો:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 ક્ષમતાઓ **પ્લગઇન ઇકોસિસ્ટમ રજિસ્ટ્રી** દ્વારા રજીસ્ટર કરવામાં આવે છે. આ રજિસ્ટ્રી એબિલિટી સ્લગ્સને તેમના હેન્ડલર ક્લાસ સાથે મેપ કરે છે અને તેમને AI એજન્ટના ટૂલ ડિસ્પેચરને એક્સપોઝ કરે છે.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 `create_plugin` અને `update_plugin` એબિલિટીઝ આપમેળે નવા જનરેટ કરેલા કોડ પર **HookScanner** ચલાવે છે. HookScanner પ્લગઇન દ્વારા રજીસ્ટર કરાયેલા WordPress એક્શન અને ફિલ્ટર હૂક્સની યાદી પાછી આપે છે.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner આપમેળે `vendor/` અને `node_modules/` ડિરેક્ટરીઓને અવગણે છે.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 લાંબા સમય સુધી ચાલતી પ્લગઇન ઓપરેશન્સ (જનરેટ, ઇન્સ્ટોલ) ને લાઇવ પ્રગતિ ટ્રેકિંગ સાથે **એસિન્ક જોબ્સ** તરીકે ડિસ્પેચ કરવામાં આવે છે. AI ચેટ ઇન્ટરફેસ પ્રગતિ માટે પોલ કરે છે અને વપરાશકર્તાને સ્ટેટસ અપડેટ્સ સ્ટ્રીમ કરે છે:
 

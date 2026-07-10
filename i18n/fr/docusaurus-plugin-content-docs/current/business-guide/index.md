@@ -3,13 +3,13 @@ title: Créer une entreprise de site de niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Créer une entreprise de sites de niche avec Ultimate Multisite
+# Créer une entreprise de sites de niche avec Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 La plupart des gens qui essaient de vendre des sites web rivalisent sur les prix avec Wix, Squarespace et des milliers de freelances. Ils perdent. Ceux qui réussissent choisissent un public spécifique, construisent une solution adaptée à ce public, et facturent la valeur qu'ils apportent.
 
 Ce cours vous apprend à faire exactement cela en utilisant Ultimate Multisite.
 
-## Ce que vous allez construire
+## Ce que vous allez construire {#what-you-will-build}
 
 Tout au long de ce cours, vous allez construire un réseau réel et fonctionnel appelé **FitSite** — une plateforme de site web conçue spécifiquement pour les studios de fitness, les entraîneurs personnels et les propriétaires de salles de sport.
 
@@ -23,7 +23,7 @@ Tout au long de ce cours, vous allez construire un réseau réel et fonctionnel 
 
 Vous suivrez les étapes pas à pas, et à la fin, vous disposerez à la fois d'une plateforme fonctionnelle et des connaissances nécessaires pour reproduire ce processus pour n'importe quelle niche que vous choisirez.
 
-## Pourquoi les studios de fitness ?
+## Pourquoi les studios de fitness ? {#why-fitness-studios}
 
 Nous avions besoin d'un exemple concret que tout le monde pouvait suivre. Les studios de fitness fonctionnent parce que :
 
@@ -34,7 +34,7 @@ Nous avions besoin d'un exemple concret que tout le monde pouvait suivre. Les st
 
 Tout ce que vous apprendrez en construisant FitSite s'applique directement à la niche que vous choisirez : restaurants, agents immobiliers, cabinets d'avocats, églises, entrepreneurs du bâtiment, ou tout autre secteur.
 
-## Structure du cours
+## Structure du cours {#course-structure}
 
 Chaque leçon présente un concept, explique pourquoi il est important, et vous guide dans son implémentation dans le réseau FitSite. Chaque leçon s'appuie sur la précédente.
 
@@ -55,7 +55,7 @@ Chaque leçon présente un concept, explique pourquoi il est important, et vous 
 | [13. Passer à l'échelle](lesson-13-growth) | Passer des premiers clients à une véritable entreprise | La stratégie de croissance et d'automatisation FitSite |
 | [14. Ce qui vient après](lesson-14-whats-next) | Étendre à des niches adjacentes et de nouvelles opportunités | Votre feuille de route au-delà de FitSite |
 
-## Prérequis
+## Prérequis {#prerequisites}
 
 - Une installation WordPress Multisite (ou la volonté d'en créer une)
 - Une licence Ultimate Multisite active
@@ -63,6 +63,6 @@ Chaque leçon présente un concept, explique pourquoi il est important, et vous 
 
 Aucune connaissance en codage n'est requise. Si vous n'avez jamais utilisé Ultimate Multisite, ce n'est pas grave — la Leçon 3 part d'une installation neuve.
 
-## Prêt ?
+## Prêt ? {#ready}
 
 Commencez par la [Leçon 1 : Pourquoi la niche gagne](lesson-1-why-niche).

@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector yhteensopiville päätepisteille
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector yhteensopiville päätepisteille {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector yhteensopiville päätepisteille integroi OpenAI-yhteensopivien tekoälytarjoajien API:t WordPress-multisite-verkkoosi. Määritä useita tekoälytarjoajia — jokaisella oma päätepisteen URL, API-avain ja oletusmalli — ja reititä pyynnöt automaattisella varareitityksellä, kun tarjoaja ei ole käytettävissä.
+
+## Keskeiset ominaisuudet {#key-features}
+
+- **Usean tarjoajan tuki**: Lisää useita tekoälytarjoajakortteja, joista jokaisella on oma päätepisteen URL, API-avain ja oletusmalli
+- **Vedä järjestääksesi uudelleen**: Järjestä tarjoajat prioriteetin mukaan käyttämällä kunkin kortin tartuntakahvaa; pyynnöt käyttävät tarjoajia järjestyksessä
+- **Automaattinen varareititys**: Jos ensisijainen tarjoaja ei ole käytettävissä, pyynnöt siirtyvät automaattisesti seuraavalle määritetylle tarjoajalle
+- **Tarjoajakohtainen määritys**: Jokainen tarjoaja määritetään itsenäisesti omilla tunnistetiedoillaan ja mallivalinnallaan
+- **Korttipohjainen asetusten käyttöliittymä**: Rakennettu vakaiden WordPress 6.9+ Card-komponenttien varaan (CardBody, CardHeader, CardDivider)
+- **Automaattinen laajennus lisättäessä**: Uudet tarjoajakortit laajenevat automaattisesti, jotta voit täyttää tiedot heti
+- **Skriptivälimuistin ohitus**: Tarjoajaskriptien välimuisti ohitetaan lisäosan päivityksen yhteydessä, jotta uusin versio varmasti ladataan
+
+## Vaatimukset {#requirements}
+
+- WordPress 5.3 tai uudempi
+- PHP 7.4 tai uudempi
+- Ultimate Multisite -lisäosa (aktiivinen)
+- OpenAI-yhteensopiva API-päätepiste (itse ylläpidetty tai kolmannen osapuolen)
+
+## Asennus {#installation}
+
+1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
+2. Aktivoi lisäosa WordPressin 'Lisäosat'-valikon kautta
+3. Siirry kohtaan **Ultimate Multisite → AI Connector** määrittääksesi lisäosan
+
+## Määritys {#configuration}
+
+### Usean tarjoajan käyttöönotto {#multi-provider-setup}
+
+Määritysnäkymä käyttää korttipohjaista asettelua, jossa jokainen kortti edustaa yhtä tekoälytarjoajaa. Voit lisätä niin monta tarjoajaa kuin tarvitset.
+
+#### Tarjoajan lisääminen {#adding-a-provider}
+
+1. Siirry verkon ylläpidossa kohtaan **Ultimate Multisite → AI Connector**
+2. Napsauta **Lisää tarjoaja**
+3. Uusi tarjoajakortti tulee näkyviin ja laajenee automaattisesti
+4. Täytä tarjoajan tiedot:
+   - **Tarjoajan nimi** — tunniste, jolla tämä tarjoaja tunnistetaan (esim. "OpenAI", "Mistral", "Local Ollama")
+   - **Päätepisteen URL** — OpenAI-yhteensopivan API:n perus-URL (esim. `https://api.openai.com/v1`)
+   - **API-avain** — API-avaimesi tälle tarjoajalle
+   - **Oletusmalli** — mallin tunniste, jota käytetään oletuksena tälle tarjoajalle (esim. `gpt-4o`, `mistral-small`)
+5. Napsauta **Tallenna asetukset**
+
+#### Tarjoajan poistaminen {#removing-a-provider}
+
+Napsauta minkä tahansa tarjoajakortin **Poista**-painiketta poistaaksesi sen. Tallenna asetukset ottaaksesi muutoksen käyttöön.
+
+#### Tarjoajien järjestäminen uudelleen {#reordering-providers}
+
+Vedä tartuntakuvaketta (⣿) minkä tahansa tarjoajakortin vasemmalla puolella järjestääksesi sen uudelleen. Järjestys määrittää varareitityksen prioriteetin: pyynnöt lähetetään ensimmäiselle tarjoajalle ja siirtyvät seuraaville tarjoajille, jos pyyntö epäonnistuu.
+
+### Varareititys {#fallback-routing}
+
+Kun pyyntö ensisijaiselle tarjoajalle epäonnistuu — aikakatkaisun, käyttörajoituksen tai palvelukatkoksen vuoksi — yhdistin yrittää automaattisesti uudelleen listan seuraavalla tarjoajalla. Tämä jatkuu listaa alaspäin, kunnes joku tarjoaja onnistuu tai kaikki tarjoajat on kokeiltu.
+
+| Tilanne | Toiminta |
+|----------|-----------|
+| Ensisijainen tarjoaja vastaa | Pyyntö palvellaan normaalisti |
+| Ensisijainen tarjoaja epäonnistuu | Pyyntöä yritetään uudelleen seuraavalla tarjoajalla |
+| Kaikki tarjoajat epäonnistuvat | Virhe palautetaan kutsujalle |
+
+Varareititys on läpinäkyvää kutsuvalle lisäosalle tai teemalle — ne saavat joko onnistuneen vastauksen tai lopullisen virheen riippumatta siitä, kuinka montaa tarjoajaa kokeiltiin.
+
+### Tarjoajan määritysten viite {#provider-configuration-reference}
+
+| Kenttä | Pakollinen | Kuvaus |
+|-------|----------|-------------|
+| Tarjoajan nimi | Kyllä | Näyttötunniste tälle tarjoajalle |
+| Päätepisteen URL | Kyllä | OpenAI-yhteensopivan API:n perus-URL |
+| API-avain | Kyllä | Todennusavain tälle tarjoajalle |
+| Oletusmalli | Kyllä | Mallin tunniste, jota käytetään, kun pyynnössä ei määritetä mallia |
+
+## Vianmääritys {#troubleshooting}
+
+### Tarjoajia ei ole listattu {#no-providers-are-listed}
+
+Jos tarjoajalista on tyhjä tallentamisen jälkeen, varmista että:
+
+- Napsautit **Tallenna asetukset** tarjoajien lisäämisen jälkeen
+- Selaimesi ei estänyt asetussivun tallentamista (tarkista selaimen konsoli JavaScript-virheiden varalta)
+- Lisäosa on aktiivinen ja olet verkon ylläpitonäkymässä
+
+### Pyynnöt epäonnistuvat kaikilla tarjoajilla {#requests-are-failing-for-all-providers}
+
+- Varmista, että jokaisen tarjoajan päätepisteen URL on saavutettavissa palvelimeltasi (ei vain selaimestasi)
+- Tarkista, että jokainen API-avain on kelvollinen eikä ole vanhentunut
+- Tarkista tarjoajan käyttörajoitus- ja kiintiötila heidän hallintapaneelistaan
+- Ota WordPressin virheenkorjauslokitus (`WP_DEBUG_LOG`) käyttöön, jotta saat yhdistimen yksityiskohtaiset virheilmoitukset talteen
+
+### Tarjoajaa ei käytetä varareititykseen {#a-provider-is-not-being-used-for-fallback}
+
+Vedä järjestääksesi uudelleen -toiminto muuttaa varareitityksen järjestystä. Varmista, että tarjoaja, jonka odotat vastaanottavan varapyyntöjä, on sijoitettu listassa oikein ja että sen päätepisteen URL ja API-avain ovat oikein.
+
+### Uusi tarjoajakortti ei laajene automaattisesti {#new-provider-card-does-not-expand-automatically}
+
+Automaattinen laajennus edellyttää, että JavaScript on käytössä selaimessasi. Jos kortti ei laajene napsautettaessa, tarkista selaimen konsoli virheiden varalta. Kortin sisältö on aina käytettävissä napsauttamalla kortin otsaketta, vaikka automaattinen laajennus ei käynnistyisi.
+
+## Muutosloki {#changelog}
+
+Katso [Muutosloki](./changelog) saadaksesi koko versiohistorian.

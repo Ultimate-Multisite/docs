@@ -3,11 +3,11 @@ title: Aïsolació Multi-Tenant
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Aïsolació Multi-Tenància
+# Aïsolació Multi-Tenància {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 suporta l'aïsol de bases de dades i del sistema de fitxers per subsite per tenants soberans. Això manté els dades dels tenants separats, però conserva la configuració a nivell de xarxa, facturació i administració.
 
-## Estratègia d'aïsol
+## Estratègia d'aïsol {#isolation-strategy}
 
 Utilitza l'aïsol soberan per als clients que necessiten una separació més forta de dades, un espai de fitxers dedicat o un perímetre d'hipervisor separat.
 
@@ -18,7 +18,7 @@ Cada tenant soberà ha de tenir:
 - Una entrada en el registre del tenant que mapeja el site amb la seva base de dades, la ruta radical, el nom d'host i el model d'aïsol.
 - Un resultat de verificació de migració abans que el tenant es consideri actiu (live).
 
-## Vinculació a l'hipervisor de la base de dades
+## Vinculació a l'hipervisor de la base de dades {#database-host-binding}
 
 La versió 1.2.0 canvia el comportament predefinit de vinculació a l'hipervisor mateix per a les instal·lacions soberanes. Els valors com `localhost` es normalitzen perquè Bedrock, FrankenPHP i les instal·lacions WordPress contenedores puguin concedir i verificar permís contra la cadena d'hipervisor que MySQL ve realment.
 
@@ -31,11 +31,11 @@ Quan configureu un tenant soberà:
 
 Si la verificació reporta fallides en la concessió, compara els privilegis del usuari de la DB del tenant amb la vinculació configurada a l'hipervisor. Un usuari concedit per a `user@localhost` és diferent d'un `user@127.0.0.1` o `user@%`.
 
-## Radical de sistema de fitxers
+## Radical de sistema de fitxers {#filesystem-root}
 
 La carpeta raíz del inquilino debe ser estable tras reinicios y despliegues. Evita rutas de montaje temporales. Para instalaciones estilo Bedrock, confirma que la raíz del inquilino apunte a la raíz web de WordPress esperada por el bootstrap del inquilino, no solo a la raíz del proyecto.
 
-## Orden de aprovisionament
+## Orden de aprovisionament {#provisioning-order}
 
 Para nuevos inquilinos soberanos, utilitza aquest ordre:
 
@@ -49,7 +49,7 @@ Para nuevos inquilinos soberanos, utilitza aquest ordre:
 
 Aquest ordre impedeix que els inquilins parcialment isolats rebutin tràfic abans que el escritor de base de dades, els usuaris i el sistema de fitxers estiguin prontos.
 
-## Fluxos de gestió del client soberan
+## Fluxos de gestió del client soberan {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 manté les accions de gestió del client al site principal quan es activa el mode soberan. Un inquili encara pot funcionar com una instal·lació WordPress isolada, però les accions orientades al client que dependin de la facturació de xarxa, la membresía o dades de comptes compartits hauria de redirigir el client al site principal en lloc d'intentar completar l'acció dins del temps d'execució del inquili.
 

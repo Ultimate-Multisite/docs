@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Anjicium in rete tuum cum Ultimate Multisite: Ad Injector
+# Anjicium in rete tuum cum Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector est **un add-on gratuitus** qui tibi instrumenta daret ad collocandum annons in planibus tuis, iam ex pagina editurae eorum.
 
@@ -35,7 +35,7 @@ Annones etiam in capite (header) paginarum Admin ad usum planitorum tuorum haber
 
 _Ire ad optionem Codicis Annoni in panel Admin si annones in back-end usoris tuorum ostendere vis_
 
-### Ultra Publicitatio
+### Ultra Publicitatio {#beyond-advertising}
 
 Potes etiam Ultimate Multisite: Ad Injector ut supportum planibus optimis offerre.
 

@@ -3,7 +3,7 @@ title: Sunrise faila kļūda
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Kļūda instalēt Sunrise failu
+# Kļūda instalēt Sunrise failu {#error-installing-the-sunrise-file}
 
 `sunrise.php` fails ir īpašs fails, ko WordPress meklē, kad tas startējas. Lai WordPress būtu spējis atpazīt `sunrise.php` failu, tas jāatrod **wp-content** maperā.
 

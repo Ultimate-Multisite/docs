@@ -3,7 +3,7 @@ title: Umuco
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Uburyo mu Komuniti ya Ultimate Multisite
+# Uburyo mu Komuniti ya Ultimate Multisite {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community ni indwara uyuho utera umubiri n'abandi b'umuntu abashobora gukora Ultimate Multisite, kandi wishobora kwishandana ibyo mwiza, uburyo mwe yashoboye gukora, n'ibindi. Kugira ngo ushambire mu Ultimate Multisite Community, ugenda ku https://community.ultimatemultisite.com/home.
 

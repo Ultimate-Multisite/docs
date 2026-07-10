@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Tillägg
+# Ultimate Multisite Tillägg {#ultimate-multisite-addons}
 
 Tilläggen utökar Ultimate Multisite med ytterligare funktioner och integrationer. De flesta tilläggen är betalda och kan köpas från [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Installation
+## Installation {#installation}
 
 Tilläggen kan installeras på två sätt:
 
 1. **Via Tilläggsfliken** – Gå till din webbplatss tilläggshanteringssida i WordPress-administratören.
 2. **Manuellt nedladdning** – Ladda ner från [ditt konto](https://ultimatemultisite.com/my-account/downloads/) och ladda upp via Plugins > Add New.
 
-## Tillgängliga Tillägg
+## Tillgängliga Tillägg {#available-addons}
 
 | Addon | Beskrivning |
 |-------|-------------|

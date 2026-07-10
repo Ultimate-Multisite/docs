@@ -3,13 +3,13 @@ title: Chikoro Chepuro uye DNS ya Mwana
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field and Customer DNS Management
+# Checkout Field and Customer DNS Management {#checkout-field-and-customer-dns-management}
 
-## Famba ya Uchaguo wa Domain
+## Famba ya Uchaguo wa Domain {#the-domain-selection-checkout-field}
 
 Famba la **Domain Selection** ndicho chombo cha checkout kinachompa wateja uwezo wa kuchagua jinsi wanavyopata domain ya tovuti yao. Ongeeni kwenye fomu yoyote ya checkout ili kuwapa wateja uwezo wa kuuza domain.
 
-### Kuongeza famba kwenye fomu ya checkout
+### Kuongeza famba kwenye fomu ya checkout {#adding-the-field-to-a-checkout-form}
 
 1. Nenda kwa **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Fungua au tengeneza fomu ya checkout
@@ -18,7 +18,7 @@ Famba la **Domain Selection** ndicho chombo cha checkout kinachompa wateja uwezo
 5. Ripoti chaguo za famba (angalia chini)
 6. Hifadhi fomu
 
-### Chaguo za famba
+### Chaguo za famba {#field-options}
 
 **Domain modes** — Chagua tab zipi wateja wataziona. Kila mode inaweza kuweshwa au kuizimwa kwa kujitegemea:
 
@@ -32,7 +32,7 @@ Famba la **Domain Selection** ndicho chombo cha checkout kinachompa wateja uwezo
 
 **Domain product** — Unaweza kuweka famba hii kwenye bidhaa maalum ya domain. Ikiwa haijewekwa, addon itachagua kiotomatiki bidhaa inayolingana kulingana na TLD ambayo mteja anatafuta.
 
-### Famba za mawasiliano ya msajili (Registrant contact fields)
+### Famba za mawasiliano ya msajili (Registrant contact fields) {#registrant-contact-fields}
 
 Wakati mteja anapochagua tab ya **Register New Domain**, fomu ya checkout inaanza kuongeza famba za mawasiliano ya msajili moja kwa moja:
 
@@ -42,11 +42,11 @@ Wakati mteja anapochagua tab ya **Register New Domain**, fomu ya checkout inaanz
 
 Nye zvinhu izivakwa nevanhu vose ve registrar uye zvinovavalidwa panguva yakare nekuti API call yekuregistra itarisirwa. Zvinoda inyota dzine namba dzinogadzirwa nekuti zvichigadzirwa kune format ya chinhu chete `+CC.NNN` inotarisirwa nevanhu ve registrar.
 
-### Auto-generated site URL
+### Auto-generated site URL {#auto-generated-site-url}
 
 Nekuti munhu anoregistra kana anopanga domain, field ye site URL inogadzirwa nekuti yeyo domain yakagadzirwa. Vanhu havi na chinangwa chekupa field ye URL pane.
 
-### Search behaviour (Kugadzirisa Kufamba kweSearch)
+### Search behaviour (Kugadzirisa Kufamba kweSearch) {#search-behaviour}
 
 - Kuti zvinhu zvinogona kuonekwa mberi neAJAX kana munhu anoratidza, kunge kune kuratidza domain inoshandiswa nekuti munhu anotaura
 - Zvinhu zveTLD (Top-Level Domain) zvinogone kuonekwa kana domain yakafanana isina kukwanisa kutarisirwa
@@ -75,11 +75,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Customer DNS management (Kugadzirisa DNS kweMunhu)
+## Customer DNS management (Kugadzirisa DNS kweMunhu) {#customer-dns-management}
 
 Vanhu vanogona kugadzirisa DNS records dzine domain dzavo dzinogadzirwa kubva pane page ya **My Account**, panguva yechinyorwa ye domain.
 
-### Supported record types (Zvinhu zviri kuita)
+### Supported record types (Zvinhu zviri kuita) {#supported-record-types}
 
 | Type | Use (Kuti chii) |
 |---|---|
@@ -89,11 +89,11 @@ Vanhu vanogona kugadzirisa DNS records dzine domain dzavo dzinogadzirwa kubva pa
 | **MX** | Kuratidza mail exchange server |
 | **TXT** | Kuratidza SPF, DMARC, verification, kana records dzine text dzine ngano dzine other |
 
-### Which providers support DNS management? (Vanhu vanhu vose vanopara kugadzirisa DNS?)
+### Which providers support DNS management? (Vanhu vanhu vose vanopara kugadzirisa DNS?) {#which-providers-support-dns-management}
 
 Ukurati DNS management (kuongeza, kusasnya, kudivuta records) inowanikwa ne **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, na **Openprovider**. Domain dzine dzinogona kuupedzisira zvinobva nekuti ndiri munzira yakakwana. Domains dzine kudzidzwa (hosted domains) dzine DNS inodzidzwa neintegration ya core Hostinger domain-mapping. Domains dzine Namecheap, GoDaddy, na NameSilo dzinowanzisa status uye expiry information, asi DNS inofanira kuwedziswa nekuti munzira yakakwana yechikwiri (registrar's control panel).
 
-### Default DNS records
+### Default DNS records {#default-dns-records}
 
 Mudawo unogona kuita default DNS records kuti zvizivikaniswe nekuita automatically kana domain iratidzidzwa. Endaenda ku **Settings › Domain Seller › Default DNS Records**.
 
@@ -116,6 +116,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: viewing and editing DNS
+### Admin: viewing and editing DNS {#admin-viewing-and-editing-dns}
 
 Network admins vanogona kuona uye kusasnya DNS records dzine domain yese ya customer kubva munzira yakakwana yeedit page mune **Network Admin › Ultimate Multisite › Domains**.

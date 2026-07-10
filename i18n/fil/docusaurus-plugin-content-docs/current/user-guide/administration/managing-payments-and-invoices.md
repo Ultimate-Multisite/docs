@@ -1,64 +1,68 @@
 ---
 title: Pamamahala ng mga Pagbabayad at Invoice
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pamamahala ng mga Bayad at Invoice
+# Pamamahala ng mga Pagbabayad at Invoice {#managing-payments-and-invoices}
 
-## Mga Setting ng Pagbabayad
+## Mga Setting ng Pagbabayad {#payment-settings}
 
-Bago ka magsimulang tumanggap ng mga bayad, kailangan mong i-configure ang mga setting na may kinalaman sa pagbabayad. Pumunta sa **Ultimate Multisite → Settings** at i-click ang **Payment** tab.
+Bago ka magsimulang tumanggap ng mga pagbabayad, kailangan mong i-configure ang mga setting na may kaugnayan sa pagbabayad. Pumunta sa **Ultimate Multisite → Mga Setting** at i-click ang tab na **Payment**.
 
-![Payment settings tab](/img/admin/settings-payments-top.png)
+![Tab ng mga setting ng pagbabayad](/img/admin/settings-payments-top.png)
 
-### Pangkalahatang Mga Opsyon sa Pagbabayad
+Narito ang buong view ng pahina ng mga setting ng pagbabayad:
 
-Sa pangkalahatang mga setting, maaari mong i-configure ang:
+![Buong pahina ng mga setting ng pagbabayad](/img/admin/settings-payments-full.png)
 
-- **Currency** — Ang default na currency na ginagamit sa mga transaksyon
-- **Currency Position** — Kung saan lalabas ang currency symbol (bago/pagkatapos ng halaga)
+### Mga Pangkalahatang Opsyon sa Pagbabayad {#general-payment-options}
 
-![Payment gateway settings](/img/admin/settings-payments-options.png)
+Sa mga pangkalahatang setting maaari mong i-configure ang:
 
-### Mga Payment Gateway
+- **Currency** — Ang default na currency na ginagamit para sa mga transaksyon
+- **Currency Position** — Kung saan lumalabas ang simbolo ng currency (bago/pagkatapos ng halaga)
 
-Sinusuportahan ng Ultimate Multisite ang maraming payment gateway. Maaari mong i-enable at i-configure ang bawat isa mula sa Payment settings tab.
+![Mga setting ng gateway ng pagbabayad](/img/admin/settings-payments-options.png)
 
-![Payment gateway configuration](/img/admin/settings-payments-gateways.png)
+### Mga Gateway ng Pagbabayad {#payment-gateways}
 
-Kasama sa mga available na gateway ang:
+Sinusuportahan ng Ultimate Multisite ang maraming gateway ng pagbabayad. Maaari mong paganahin at i-configure ang bawat isa mula sa tab ng mga setting ng Payment.
+
+![Configuration ng gateway ng pagbabayad](/img/admin/settings-payments-gateways.png)
+
+Kabilang sa mga available na gateway ang:
 
 - **Stripe** — Mga pagbabayad gamit ang credit card sa pamamagitan ng Stripe
 - **PayPal** — Mga pagbabayad sa PayPal
-- **Manual** — Para sa offline o custom na pagproseso ng bayad
+- **Manual** — Para sa offline o custom na pagproseso ng pagbabayad
 
-Ang bawat gateway ay may sariling configuration section kung saan mo ilalagay ang mga API key at iba pang mga setting.
+Bawat gateway ay may sarili nitong seksyon ng configuration kung saan mo inilalagay ang mga API key at iba pang setting.
 
-![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
+![Karagdagang mga setting ng gateway](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
-Maaari mong i-enable ang **Sandbox Mode** para subukan ang iyong payment integration bago ito gawing live. Kapag aktibo ang sandbox mode, walang totoong singil na gagawin.
+Maaari mong paganahin ang **Sandbox Mode** upang subukan ang iyong integration ng pagbabayad bago ito gawing live. Kapag aktibo ang sandbox mode, walang tunay na singil na gagawin.
 
-## Pagtingin sa mga Bayad
+## Pagtingin sa mga Pagbabayad {#viewing-payments}
 
-Pumunta sa **Payments** page sa ilalim ng Ultimate Multisite para makita ang lahat ng transaksyon sa iyong network.
+Pumunta sa pahinang **Payments** sa ilalim ng Ultimate Multisite upang makita ang lahat ng transaksyon sa iyong network.
 
-![Payments list](/img/admin/payments-list.png)
+![Listahan ng mga pagbabayad](/img/admin/payments-list.png)
 
-Maaari mong i-filter ang mga bayad ayon sa status (completed, pending, failed, refunded) at maghanap ng mga partikular na transaksyon.
+Maaari mong i-filter ang mga pagbabayad ayon sa status (nakumpleto, nakabinbin, nabigo, na-refund) at maghanap ng mga partikular na transaksyon.
 
-I-click ang isang bayad para makita ang buong detalye nito kasama ang mga line item, kaugnay na membership, impormasyon ng customer, at data ng payment gateway.
+I-click ang isang pagbabayad upang makita ang buong detalye nito kabilang ang mga line item, kaugnay na membership, impormasyon ng customer, at data ng gateway ng pagbabayad.
 
-## Mga Invoice
+## Mga Invoice {#invoices}
 
-Awtomatikong makakagawa ng mga invoice ang Ultimate Multisite para sa mga bayad. Maaari mong i-customize ang invoice template at format ng pagnunumero mula sa Payment settings.
+Maaaring awtomatikong gumawa ang Ultimate Multisite ng mga invoice para sa mga pagbabayad. Maaari mong i-customize ang template ng invoice at format ng pagnunumero mula sa mga setting ng Payment.
 
-Kasama sa mga opsyon sa pag-customize ng invoice ang:
+Kabilang sa mga opsyon sa pag-customize ng invoice ang:
 
-- **Pangalan at address ng kumpanya** na ipinapakita sa mga invoice
-- **Format at sequence ng pagnunumero ng invoice**
+- **Pangalan at address ng kompanya** na ipinapakita sa mga invoice
+- **Pagnunumero ng invoice** na format at pagkakasunod-sunod
 - **Logo** na ipinapakita sa header ng invoice
-- **Custom na footer text** para sa mga tuntunin, tala, o legal na impormasyon
+- **Custom na text sa footer** para sa mga tuntunin, tala, o legal na impormasyon
 
-Para i-customize ang invoice template, pumunta sa **Ultimate Multisite → Settings → Payment** at hanapin ang mga setting na may kinalaman sa invoice.
+Upang i-customize ang template ng invoice, pumunta sa **Ultimate Multisite → Mga Setting → Payment** at hanapin ang mga setting na may kaugnayan sa invoice.

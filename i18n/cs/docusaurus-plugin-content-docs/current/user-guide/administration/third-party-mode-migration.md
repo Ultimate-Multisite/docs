@@ -3,13 +3,13 @@ title: Migrace do režimu třetí strany
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migrace do režimu třetích stran
+# Migrace do režimu třetích stran {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 mění způsob, jak jsou zpracovány schopnosti (abilities) třetích stran. **Třetí režim nyní výchozí stav má "auto"**, což umožňuje integraci s nativním WordPress Abilities API na WordPressu 7.0+ bez nutnosti ruční konfigurace.
 
-## Co se změnilo?
+## Co se změnilo? {#what-changed}
 
-### Před v1.12.0
+### Před v1.12.0 {#before-v1120}
 
 Schopnosti třetích stran vyžadovaly ruční konfiguraci:
 
@@ -18,7 +18,7 @@ Schopnosti třetích stran vyžadovaly ruční konfiguraci:
 - Integrace s WordPress Abilities API byla volitelná
 - Výchozí byl režim dědictví (Legacy mode)
 
-### Po v1.12.0
+### Po v1.12.0 {#after-v1120}
 
 Schopnosti třetích stran fungují automaticky:
 
@@ -27,13 +27,13 @@ Schopnosti třetích stran fungují automaticky:
 - Na WordPressu 7.0+ není potřeba ruční konfigurace
 - Režim dědictví je stále k dispozici pro starší verze WordPressu
 
-## Kdo je ovlivněn?
+## Kdo je ovlivněn? {#who-is-affected}
 
-### Nové instalace (WordPress 7.0+)
+### Nové instalace (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Není nutná žádná akce.** Třetí režim je automaticky nastaven na „auto“ a schopnosti fungují z krabici.
 
-### Existující instalace
+### Existující instalace {#existing-installations}
 
 **Vaše nastavení je zachováno.** Pokud jste používali:
 
@@ -41,7 +41,7 @@ Schopnosti třetích stran fungují automaticky:
 - **Ruční režim třetích stran (Manual third-party mode)**: Zůstanete v ručním režimu (bez změny)
 - **Auto režim (Auto mode)**: Pokračujete v auto režimu (bez změny)
 
-### Verze WordPressu před 7.0
+### Verze WordPressu před 7.0 {#wordpress-versions-before-70}
 
 **Režim dědictví je stále k dispozici.** Pokud používáte WordPress 6.x nebo starší:
 
@@ -49,9 +49,9 @@ Schopnosti třetích stran fungují automaticky:
 - Můžete ručně aktivovat třetí režim, pokud to chcete
 - Vylepšete se na WordPress 7.0+ pro použití nativního Abilities API
 
-## Pochopení režimů
+## Pochopení režimů {#understanding-the-modes}
 
-### Auto režim (Nový výchozí stav)
+### Auto režim (Nový výchozí stav) {#auto-mode-new-default}
 
 **Auto režim** využívá nativní integraci s WordPress Abilities API:
 
@@ -62,7 +62,7 @@ Schopnosti třetích stran fungují automaticky:
 
 **Kdy použít**: WordPress 7.0+ se schopnostmi třetích stran
 
-### Ruční režim (Manual Mode)
+### Ruční režim (Manual Mode) {#manual-mode}
 
 **Ruční režim** vyžaduje explicitní konfiguraci:
 
@@ -73,7 +73,7 @@ Schopnosti třetích stran fungují automaticky:
 
 **Kdy použít**: Testování, výběrové načítání schopností nebo vlastní konfigurace
 
-### Režim dědictví (Legacy Mode)
+### Režim dědictví (Legacy Mode) {#legacy-mode}
 
 **Režim dědictví** používá starý systém schopností třetích stran:
 
@@ -84,24 +84,24 @@ Schopnosti třetích stran fungují automaticky:
 
 **Kdy použít**: WordPress 6.x nebo starší, nebo když potřebujete kompatibilitu s režimem dědictví
 
-## Kontrola aktuálního režimu
+## Kontrola aktuálního režimu {#checking-your-current-mode}
 
-### Skrze panel administrátora
+### Skrze panel administrátora {#via-admin-panel}
 
 1. Přejděte na **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Hledejte nastavení **Third-Party Mode**
 3. Uvidíte svůj aktuální režim a možnosti jeho změny
 
-### Skrze kód
+### Skrze kód {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', nebo 'legacy'
 ```
 
-## Změna režimu
+## Změna režimu {#changing-your-mode}
 
-### Přepnutí na Auto režim
+### Přepnutí na Auto režim {#switch-to-auto-mode}
 
 Pokud používáte WordPress 7.0+ a chcete použít auto režim:
 
@@ -112,7 +112,7 @@ Pokud používáte WordPress 7.0+ a chcete použít auto režim:
 
 Superdav AI Agent automaticky odhalí a zaregistruje schopnosti třetích stran.
 
-### Přepnutí na Ruční režim
+### Přepnutí na Ruční režim {#switch-to-manual-mode}
 
 Pokud chcete ručně kontrolovat, které schopnosti se načítají:
 
@@ -122,7 +122,7 @@ Pokud chcete ručně kontrolovat, které schopnosti se načítají:
 4. Klikněte na **Save**
 5. Upravte svůj konfigurační soubor, abyste specifikovali, které schopnosti chcete načíst
 
-### Přepnutí na Režim dědictví
+### Přepnutí na Režim dědictví {#switch-to-legacy-mode}
 
 Pokud potřebujete kompatibilitu s režimem dědictví:
 
@@ -131,9 +131,9 @@ Pokud potřebujete kompatibilitu s režimem dědictví:
 3. Vyberte **Legacy**
 4. Klikněte na **Save**
 
-## Výhody Auto režimu
+## Výhody Auto režimu {#benefits-of-auto-mode}
 
-### Automatické odhalování
+### Automatické odhalování {#automatic-discovery}
 
 Schopnosti jsou automaticky odhalovány z:
 
@@ -144,7 +144,7 @@ Schopnosti jsou automaticky odhalovány z:
 
 Není nutná ruční registrace.
 
-### Nativní integrace
+### Nativní integrace {#native-integration}
 
 Schopnosti se integrují s WordPress Abilities API:
 
@@ -153,67 +153,67 @@ Schopnosti se integrují s WordPress Abilities API:
 - Kompatibilní s dalšími pluginy, které používají Abilities API
 - Zajišťuje kompatibilitu s budoucím rozvojem WordPressu
 
-### Zjednodušené spravování
+### Zjednodušené spravování {#simplified-management}
 
 - Žádné konfigurační soubory k úpravě
 - Žádná ruční registrace schopností
 - Kontrola viditelnosti schopností funguje automaticky
 - Upozornění administrátora vás upozorní na neklasifikované schopnosti
 
-### Lepší výkon
+### Lepší výkon {#better-performance}
 
 - Schopnosti jsou vázány (cached)
 - Načítají se lazy (na vyžádání)
 - Optimalizováno pro WordPress 7.0+
 
-## Cesta migrace
+## Cesta migrace {#migration-path}
 
-### Pokud používáte WordPress 6.x
+### Pokud používáte WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Vylepšete se na WordPress 7.0+** (když budete připraveni)
 2. **Aktualizujte Superdav AI Agent** na v1.12.0+
 3. **Změňte třetí režim na Auto** (volitelné; režim dědictví stále funguje)
 4. **Zkontrolujte viditelnost schopností**, abyste zajistili správné kontroly přístupu
 
-### Pokud používáte WordPress 7.0+
+### Pokud používáte WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Aktualizujte Superdav AI Agent** na v1.12.0+
 2. **Ověřte, že třetí režim je nastaven na Auto** (by měl být výchozí)
 3. **Zkontrolujte viditelnost schopností**, abyste zajistili správné kontroly přístupu
 4. **Otestujte schopnosti třetích stran**, abyste potvrdili, že fungují
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Schopnosti se v auto režimu nenačítají
+### Schopnosti se v auto režimu nenačítají {#abilities-arent-loading-in-auto-mode}
 
 - Ověřte, že používáte WordPress 7.0+
 - Zkontrolujte, že třetí režim je nastaven na „Auto“
 - Ověřte, že plugin poskytující schopnost je aktivní
 - Zkontrolujte log chyb WordPressu kvůli chybám při registraci
 
-### Chci zachovat režim dědictví
+### Chci zachovat režim dědictví {#i-want-to-keep-legacy-mode}
 
 - Přejděte na **Settings** → **Third-Party Mode**
 - Vyberte **Legacy**
 - Klikněte na **Save**
 - Režim dědictví bude nadále fungovat
 
-### Moje vlastní schopnosti se neobjevují
+### Moje vlastní schopnosti se neobjevují {#my-custom-abilities-arent-showing}
 
 - Ověřte, že jsou registrovány pomocí WordPress hooků
 - Zkontrolujte, že správně implementují Abilities API
 - Projděte log chyb WordPressu
 - Použijte stránku administrátora **Ability Visibility**, abyste viděli všechny registrované schopnosti
 
-### Dostávám upozornění „neklasifikovaná schopnost“
+### Dostávám upozornění „neklasifikovaná schopnost“ {#im-getting-unclassified-ability-notices}
 
 - Je to normální pro nové schopnosti třetích stran
 - Projděte je a klasifikujte je v administrátorském upozornění
 - Podrobnosti o klasifikaci najdete na stránce **Ability Visibility**
 
-## Kompatibilita s minulostí
+## Kompatibilita s minulostí {#backward-compatibility}
 
-### Existující konfigurace
+### Existující konfigurace {#existing-configurations}
 
 Pokud máte existující konfigurace schopností třetích stran:
 
@@ -223,33 +223,33 @@ Pokud máte existující konfigurace schopností třetích stran:
 
 Pokud chcete zachovat svou vlastní konfiguraci, zůstaňte v ručním nebo režimu dědictví.
 
-### Časový plán znehodnocení
+### Časový plán znehodnocení {#deprecation-timeline}
 
 - **v1.12.0**: Režimy dědictví i ruční jsou stále plně podporovány
 - **v1.13.0+**: Režim dědictví může zobrazovat upozornění o znehodnocení
 - **v2.0.0**: Režim dědictví může být odstraněn (TBD)
 
-## Nejlepší praxe
+## Nejlepší praxe {#best-practices}
 
-### Pro nové instalace
+### Pro nové instalace {#for-new-installations}
 
 - Používejte Auto režim (je výchozí)
 - Nechte Superdav AI Agent automaticky odhalit schopnosti
 - Používejte Ability Visibility k ovládání přístupu
 
-### Pro existující instalace
+### Pro existující instalace {#for-existing-installations}
 
 - Vylepšete se na WordPress 7.0+ v případě možnosti
 - Přepněte se na Auto režim pro zjednodušené spravování
 - Projděte a klasifikujte schopnosti pomocí Ability Visibility
 
-### Pro vlastní schopnosti
+### Pro vlastní schopnosti {#for-custom-abilities}
 
 - Registrujte schopnosti pomocí WordPress hooků (Abilities API)
 - Vyhněte se vlastním registrům schopností
 - Testujte na WordPressu 7.0+ v Auto režimu
 
-## Další kroky
+## Další kroky {#next-steps}
 
 1. **Zkontrolujte verzi WordPressu**: Ověřte, že používáte 7.0+ pro Auto režim
 2. **Zkontrolujte svůj třetí režim**: Přejděte na Settings a zkontrolujte svůj aktuální režim
@@ -257,7 +257,7 @@ Pokud chcete zachovat svou vlastní konfiguraci, zůstaňte v ručním nebo rež
 4. **Klasifikujte schopnosti**: Projděte a klasifikujte jakékoli neklasifikované schopnosti
 5. **Testujte**: Ověřte, že vaše schopnosti třetích stran fungují správně
 
-## Související témata
+## Související témata {#related-topics}
 
 - **Ability Visibility**: Kontrola, které schopnosti jsou k dispozici kde
 - **WordPress Abilities API**: Naučte se o nativním registraci schopností WordPressu

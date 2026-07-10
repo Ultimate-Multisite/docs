@@ -3,9 +3,9 @@ title: Ngatur Pembayaran je Tagihan
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Ngatur Pembayaran je Invoice
+# Ngatur Pembayaran je Invoice {#managing-payments-and-invoices}
 
-## Pengaturan Pembayaran
+## Pengaturan Pembayaran {#payment-settings}
 
 Samémé anjeun mulai nampa pembayaran, anjeun kudu ngatur pengaturan anu aya patalina jeung pembayaran. Pindah ka **Ultimate Multisite → Settings** terus klik tab **Payment**.
 
@@ -15,7 +15,7 @@ Ieu mangrupake tampilan lengkap halaman pengaturan pembayaran:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Pilihan Pembayaran Umum
+### Pilihan Pembayaran Umum {#general-payment-options}
 
 Di pengaturan umum, anjeun bisa ngatur:
 
@@ -24,7 +24,7 @@ Di pengaturan umum, anjeun bisa ngatur:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Payment Gateways
+### Payment Gateways {#payment-gateways}
 
 Ultimate Multisite ngadukung sababaraha payment gateway. Anjeun bisa ngaktifkeun jeung ngatur masing-masing tina tab Pengaturan Pembayaran (Payment settings).
 
@@ -40,11 +40,11 @@ Unggal gateway miboga bagian pengaturan sorangan di mana anjeun ngaganti API key
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Anjeun bisa ngaktifkeun **Sandbox Mode** pikeun nguji integrasi pembayaran samémé diluncurkeun (going live). Lamun sandbox mode aktif, teu aya tagihan nyata anu bakal dipotong.
 
-## Ngajak Nélak Pembayaran
+## Ngajak Nélak Pembayaran {#viewing-payments}
 
 Pindah ka halaman **Payments** di bawah Ultimate Multisite pikeun ningali sakabé transaksi di sakulawarga anjeun.
 
@@ -54,7 +54,7 @@ Anjeun bisa ngfilter pembayaran dumasar statusna (completed, pending, failed, re
 
 Klik di pembayaran untuk melihat detail lengkapnya termasuk item-item yang dibeli, keanggotaan terkait, informasi pelanggan, dan data gateway pembayaran.
 
-## Faktur (Invoices)
+## Faktur (Invoices) {#invoices}
 
 Ultimate Multisite bisa otomatis bikin faktur buat pembayaran. Anda bisa kustom template faktur dan format penomoran dari pengaturan Pembayaran (Payment settings).
 

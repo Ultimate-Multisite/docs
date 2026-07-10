@@ -3,21 +3,21 @@ title: Fanamboarana sy Fandaharam-potoana Mpamatsy
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Fanamboana sy Fandaharam-potoana Mpamatsy Domaine (Domain Seller)
+# Domain Seller: Fanamboana sy Fandaharam-potoana Mpamatsy Domaine (Domain Seller) {#domain-seller-setup-and-provider-configuration}
 
 Ny addon Domain Seller dia avy miaraka amin'ny wizard fampanaraha-maso izay mitarika anao amin'ny dingana rehetra ilaina. Ity pejy ity dia manazava ny lalana fiasan'ity wizard sy ny fomba hanovana na hamerenana ny mpamatsy (providers) aorian'izay.
 
-## Fepetra Takiana
+## Fepetra Takiana {#requirements}
 
 - **Multisite Ultimate** v2.4.12 na ambony kokoa, miasa amin'ny tambajotra (network-activated)
 - **PHP** 7.4+
 - Fampahalalana API ho an'ny registrar iray na mihoatra ny fanohanana
 
-## Wizard fampanaraha-maso voalohany
+## Wizard fampanaraha-maso voalohany {#first-run-setup-wizard}
 
 Ny wizard fampanaraha-maso dia manomboka azy ho azy rehefa voafidy ny plugin ianao amin'ny alalan'ny "network-activate". Afaka misy anao hatrany amin'ny alalan'ny **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Dingana 1 — Mifidiana mpamatsy (Choose a provider)
+### Dingana 1 — Mifidiana mpamatsy (Choose a provider) {#step-1--choose-a-provider}
 
 Safidio ny registrar tianao hifandray. Ireto ny safidy azo atao:
 
@@ -33,7 +33,7 @@ Safidio ny registrar tianao hifandray. Ireto ny safidy azo atao:
 | NameSilo | Tsia | Tsia |
 | Enom | Eny | Tsia |
 
-### Dingana 2 — Midira ny fampahalalana (Enter credentials)
+### Dingana 2 — Midira ny fampahalalana (Enter credentials) {#step-2--enter-credentials}
 
 Ny mpamatsy tsirairay dia manana toerana hafa ho an'ny fampahalalana:
 
@@ -57,17 +57,17 @@ Ny mpamatsy tsirairay dia manana toerana hafa ho an'ny fampahalalana:
 
 Jereo ny **Sandbox mode** raha misy mba hanandehana amin'ny tontolo fanandramana an'ilay mpamatsy alohan'ny hampiasana azy ho tena izy.
 
-### Dingana 3 — Andrana ny fifandraisana
+### Dingana 3 — Andrana ny fifandraisana {#step-3--test-the-connection}
 
 Tsindrio ny **Test Connection**. Ny wizard dia mandefa antso API kely mba hanamarinana ireo fampahalalana sy ny fifandraisana. Aza adino ny manitsy olana momba ny fampahalalana alohan'ny hanohy.
 
-### Dingana 4 — Intserana TLDs (Top-Level Domains)
+### Dingana 4 — Intserana TLDs (Top-Level Domains) {#step-4--import-tlds}
 
 Tsindrio ny **Import TLDs** mba handefasana ireo TLD rehetra azo sy ny vidin-kevitra ho mpanome (wholesale pricing) avy amin'ilay mpamatsy mifandray. Izany dia mametraka ny lisitry ny TLD ampiasaina amin'ireo vokatra domain. Mety mandritra 30–60 segondra ny fametrahana raha toa ka misy mpamatsy manana lisitry ny TLD lehibe.
 
 Mba haverina indray ny TLD dia automatique isan-kerinandro amin'ny alalan'ny cron job voatendry.
 
-### Dingana 5 — Famoronana vokatra domain
+### Dingana 5 — Famoronana vokatra domain {#step-5--create-a-domain-product}
 
 Ny wizard dia mamorona vokatra domain mialoha (default catch-all) misy fampidirana vidiny 10%. Afaka manova ity vokatra ity ianao avy hatrany na mandalo ary mamorona vokatra manokana amin'ny alalan'ny **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Jereo ny [Domain Products and Pricing](./domain-products) ho an'ny toromarika fe
 
 ---
 
-## Fanovana ny mpamatsy (Reconfiguring a provider)
+## Fanovana ny mpamatsy (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 Mandehana any amin'ny **Network Admin › Ultimate Multisite › Settings › Domain Seller** (na tsindrio ny **Settings** ao anatin'ny lisitry ny plugin).
 
@@ -90,17 +90,17 @@ Ny pejy fampahalalana dia ahitana:
 - **Fitantanana vokatra domain (Manage domain products)** — rohy haingana mankany amin'ny lisitry ny Vokatra (Products list)
 - **Fandinihana mpampiasa (Configure providers)** — manokatra ny Integration Wizard mba hanampiana na hanova ireo mpampiasa
 
-### Fanampiana mpampiasa faharoa
+### Fanampiana mpampiasa faharoa {#adding-a-second-provider}
 
 Tsindrio ny **Configure providers** ary alefa indray ilay wizard ho an'ny registrar vaovao. Afaka manana mpampiasa maro ianao izay voarafitra miaraka amin'izany. Apetraho isaky ny vokatra domain ao amin'ny mpampiasa manokana, na avelao eo amin'ny fototra (default).
 
-### Fandaharam-potoana TLD manokana (Syncing TLDs manually)
+### Fandaharam-potoana TLD manokana (Syncing TLDs manually) {#syncing-tlds-manually}
 
 Ao amin'ny pejy fandrindrana (settings page), tsindrio ny **Sync TLDs** eo anilan'ny mpampiasa voarafitra rehetra mba handefasana ny vidiny vaovao. Tena ilaina izany rehefa manavao ny vidin'ny famatsiana (wholesale pricing) na manampy TLD vaovao ny mpampiasa iray.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Ny mpampiasa tsirairay dia manoratra ao amin'ny lalana fandefasana (log channel) manokana ho azy. Afaka jerena ireo logs eo ambanin'ny **Network Admin › Ultimate Multisite › Logs**:
 
@@ -120,7 +120,7 @@ Ny mpampiasa tsirairay dia manoratra ao amin'ny lalana fandefasana (log channel)
 
 ---
 
-## Fanamarihana momba ny fahaiza-manao an'ny mpanome tolotra (Provider capability notes)
+## Fanamarihana momba ny fahaiza-manao an'ny mpanome tolotra (Provider capability notes) {#provider-capability-notes}
 
 Tsy misy API an'ny registrar rehetra izay manome asa mitovy. Ny addon dia mampiseho ireo asa tsy voatantana amin'ny alalan'ny fahadisoana mazava ho an'ny mpitantana, fa tsy mihena fotsiny ny asany.
 

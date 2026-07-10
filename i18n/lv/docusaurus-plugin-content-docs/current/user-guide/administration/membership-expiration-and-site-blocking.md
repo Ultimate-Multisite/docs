@@ -3,11 +3,11 @@ title: Uzliekšanās termiņš un vietnes bloku
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Uzstāvēšanu un vietnes bloku
+# Uzstāvēšanu un vietnes bloku {#membership-expiration-and-site-blocking}
 
 Šis ceļvedis iepina, kā Ultimate Multisite strādā ar pieejamības beigām, izmēģinājumu beigām un frontenda vietņu bloku. Tas apraksta pieejamības ciklu no aktīva līdz beigtajam, iestatījumus, kas kontrolē, vai vietnes ir bloku, un to pārbaudes, ko jāveic, ja vietnes paliek pieejamas pēc pieejamības beigām.
 
-## Pieejamības statusa cikls
+## Pieejamības statusa cikls {#membership-status-lifecycle}
 
 Katras Ultimate Multisite pieejamības ir viens no šādiem statusi:
 
@@ -24,7 +24,7 @@ Bezmaksas pieejamības automātiski nebeidzas. Ultimate Multisite tos uzskata k�
 | **Expired** (Beigusi) | Pārsniegusi beigām un piedohas periodu bez atjauninājuma |
 | **Cancelled** (Atceltīts) | Izplūsties ekspluatāti no klientam vai administratoram |
 
-### Kā pieejamības pārejas uz beigumu notiek
+### Kā pieejamības pārejas uz beigumu notiek {#how-memberships-transition-to-expired}
 
 Ultimate Multisite veic bakšķerba pārbaudi **katru stundu**, meklot pieejamības, kas jāmarkē kā beigtas. Šī pārbaude izmanto [Action Scheduler](https://actionscheduler.org/) (ne tieši WP-Cron) un veic kā iestatīto bakšķerba darbību `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Beigām pārbaudai ir **iņemtā piedohas perioda, kas ir 3 dienas** pēc defaul
 3 dienas izpildīšanas laika atlaides perioda (expiration grace period) ir atšķirīga no "Frontend Block Grace Period" iestatījuma, kas aprakstīts zemāk. Izpildīšanas laika atlaides periods norāda, kad **statuss mainās** no aktīva/on-hold uz izpildītu (expired). Frontend bloka izpildīšanas laika atlaides periods norāda, kad **situs tiek bloķēts**, pēc tam kad statuss jau ir mainīts.
 :::
 
-#### Automātiskas atjaunojamās vs. Neautomātiskās atjaunojamās piegriezumi (Memberships)
+#### Automātiskas atjaunojamās vs. Neautomātiskās atjaunojamās piegriezumi (Memberships) {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Šis atšķirība ir ļoti svarīga, lai saprastu izpildīšanas uzvedību:
 
@@ -42,7 +42,7 @@ Beigām pārbaudai ir **iņemtā piedohas perioda, kas ir 3 dienas** pēc defaul
 
 - **Automātiskās atjaunojamās piegriezumi** (`auto_renew = true`): Cron izpildīšanas pārbaudes **to pilnībā pārskat**. Maksājuma portāls (Stripe, PayPal un tams) tiek gaidīts, ka informēs Ultimate Multisite ar webhookiem, ja abonentāks neizglīt vai atjaunojums ir atcelt. Ja webhooku nav saņemts — piemēram, dēļ nepareizi konfiguriētās punkta (endpoint), portāla traucējumiem vai abonements atcelties sistēmā ārpus sistēmas — piegriešums var palikt `active` nepārtraukti, pat pēc tam, kad izpildīšanas datums ir pārsniegts.
 
-### Kā beidzast mēģinājumi (Trials End)
+### Kā beidzast mēģinājumi (Trials End) {#how-trials-end}
 
 Kad mēģinājuma piegriešuma laiks beidzās, sistēma:
 
@@ -52,11 +52,11 @@ Kad mēģinājuma piegriešuma laiks beidzās, sistēma:
 
 Šis proces ir tas pats stundu grafiks kā regulāra izpildīšanas pārbaude, bet **tikai neautomātiskajiem piegriešumiem**. Automātiskajiem mēģinājumiem maksājuma portāls pārvalda pāreju no mēģinājuma uz maksājamo abonentojumu.
 
-## Bloķēt frontend piekļuvi
+## Bloķēt frontend piekļuvi {#block-frontend-access}
 
 Parasti, kad robežas, kad tiesams vai atgriežas uz pauzi, **tā ir ierobežots tikai wp-admin dashboard**. Vietas publiska frontsejs paliek pieejama apmeklētājiem. Lai arī blokētu publisko piekļuvi, jums jāpaliek aktīvs iestatījums **Block Frontend Access**.
 
-### Iestatījumu konfigurēšana
+### Iestatījumu konfigurēšana {#configuring-the-setting}
 
 Navigējieties uz **Ultimate Multisite > Settings > Memberships** un ieslauto **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Trīs saistītie iestatījumi kontrolē šo uzvedību:
 | **Frontend Block Grace Period** | Dienu skaits, kas jāgaida pēc tam, kad membersipijs kļūst neaktīvs, pirms blokēšanas. Iestatīts uz `0`, lai blokētu neatgriežoties. | 0 |
 | **Frontend Block Page** | Lapa galvenajā vietnē, kur apmeklētāji tiek novirzīti, ja vietne ir blokēta. Ja tā nav iestatīta, apmeklētāji redz vienkāršu ziņojumu "Šī vietne pašlaik nav pieejama" ar saiti uz admina iekļuve lapu. | None |
 
-### Ko apmeklētāji redz, kad vietne tiek blokēta
+### Ko apmeklētāji redz, kad vietne tiek blokēta {#what-visitors-see-when-a-site-is-blocked}
 
 Kad frontseja piekļuve ir blokēta, apmeklētāji vietnē:
 
@@ -83,7 +83,7 @@ Kad frontseja piekļuve ir blokēta, apmeklētāji vietnē:
 
 Vietnes administratori var joprojām iekļūt -- iekļuve lapas neblokēta nekad.
 
-### Ko blokē un kad
+### Ko blokē un kad {#what-gets-blocked-and-when}
 
 Blokēšanas uzvedība ir atkarīga no membersipja statusa:
 
@@ -104,21 +104,21 @@ Pat ja, lai arī pārsniegusi pārbaudes periodu, uzņēmējdarbība ar statusu 
 Atceltas uzņēmējdarbības vienmēr blokētas, kad beidzies laiks, neatkarīgi no tā, vai "Block Frontend Access" ir ieslēgts. Priekšpuses bloku blokēšanas grāšanas periods **nepiemērots** atceltajām uzņēmējdarbībām.
 :::
 
-## Problēmu likums: Uzņēmumi paliek pieejami pēc laika beigām
+## Problēmu likums: Uzņēmumi paliek pieejami pēc laika beigām {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ja uzņēmumi paliek publiski pieejami pēc uzņēmējdarbības laika beigām, veiciet šos pārbaudes virzienus šādi:
 
-### 1. Pārbaudiet, vai ir ieslēgta "Block Frontend Access" iestatījums
+### 1. Pārbaudiet, vai ir ieslēgta "Block Frontend Access" iestatījums {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Dodieties uz **Ultimate Multisite > Settings > Memberships** un apstipriniet, ka "Block Frontend Access" izvēlne ir ieslēgta. Šis iestatījums pēc defaulta ir **izslēgts**, kas nozīmē, ka ierobežots tikai `wp-admin`, kad uzņēmējdarbība kļūst neaktīva.
 
-### 2. Pārbaudiet priekšpuses bloku blokēšanas grāšanas periodu
+### 2. Pārbaudiet priekšpuses bloku blokēšanas grāšanas periodu {#2-check-the-frontend-block-grace-period}
 
 Pātuviem esošajā iestatījumu lapā pārbaudiet **Frontend Block Grace Period** vērtību. Ja to ir noteikts 7 dienas, piemēram, frontend neбуs blokušts līdz 7 dienām pēc majstības pēkšas beigām – pat ja majstības statuss jau ir `expired`.
 
 Iestatījiet to uz `0`, ja vēlaties pilnīgu blokušanu pirms majstības inaktīvo kļūst.
 
-### 3. Apstipriniet, ka Majstības Statuss Patiešām Mainās
+### 3. Apstipriniet, ka Majstības Statuss Patiešām Mainās {#3-confirm-the-membership-status-has-actually-changed}
 
 Dodieties uz **Ultimate Multisite > Memberships** un pārbaudiet ietekmējamo majstības statusu. Ja tas joprojām redz `active`, lai gan pēkšas beigām ir pārcēgas, statusa pāreja nav notikusi. Kopas kāpēc:
 
@@ -126,7 +126,7 @@ Dodieties uz **Ultimate Multisite > Memberships** un pārbaudiet ietekmējamo ma
 
 - **Cron darbs nav veikts**: Redz to nākamajā solvē.
 
-### 4. Apstipriniet, ka Action Scheduler Darba
+### 4. Apstipriniet, ka Action Scheduler Darba {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite izmanto Action Scheduler cron darbiem. Dodieties uz **Tools > Scheduled Actions** tīkla adminā un meklējiet:
 
@@ -148,7 +148,7 @@ Lai nodrošinātu drošu cron veikšanu, izveidi sistēmas cron darbu:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Pārbaudiet Gateway Webhook problēmas (Automātiskās atjaunojamās piešķirības)
+### 5. Pārbaudiet Gateway Webhook problēmas (Automātiskās atjaunojamās piešķirības) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ja piešķirība automātiski atjaunojas, bet gatewaya abonentāks ir atbalsts vai neizveidots, tomēr Ultimate Multisite to redz kā `active`:
 
@@ -157,7 +157,7 @@ Ja piešķirība automātiski atjaunojas, bet gatewaya abonentāks ir atbalsts v
 
 Ja gateway redz abonentāks kā atbalsts, bet Ultimate Multisite neredz, webhooka paziņojums ir iespējams zaudēts. Jūs varat manuāli mainīt abonentācijas statusu **Ultimate Multisite > Memberships > [Redi abonentāku]**.
 
-### 6. Pārbaudiet izpētes laika periodu (Cron līmenis)
+### 6. Pārbaudiet izpētes laika periodu (Cron līmenis) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron pārbaude savu izpētes laika periodu (default: 3 dienas), pirms piešķirību atzīmē kā izpētītu. Tas ir atšķirīgi no frontenda bloka izpētes laika perioda. Kopējais laiks, kas var bloķēt vietni, ir:
 
@@ -165,7 +165,7 @@ Cron pārbaude savu izpētes laika periodu (default: 3 dienas), pirms piešķir�
 
 Piemēram, ar defaultām iestatījumiem un 7 dienu priekšlaicīgu laiku (grace period) frontendā, tas var aizņemt līdz 10 dienām pēc `date_expiration`, pirms vietne patiešām būs blokuta.
 
-### 7. Maniski pārtiksēt piešķirumu (Membership)
+### 7. Maniski pārtiksēt piešķirumu (Membership) {#7-manually-expire-a-membership}
 
 Ja jums ir nepieciešams nekavējoties blokuja vietni, negaidot cron cikla, varat maniski izveidot piešķiruma statuss:
 
@@ -176,7 +176,7 @@ Ja jums ir nepieciešams nekavējoties blokuja vietni, negaidot cron cikla, vara
 
 Frontendā blokušana ietekmē vietni no nākamās lapas atjaunināšanas laikā (atkarīgs no Frontend Block Grace Period piešķirumiem pārtiksētiem, vai nekavējoties, ja tie ir atcelti).
 
-## Kopsavilkums
+## Kopsavilkums {#summary}
 
 Pilna laika sērija no patiksēšanas datuma līdz vietnes blokušanai:
 
@@ -208,7 +208,7 @@ Atceltajiem piešķirumiem ceļš ir īsāks:
   Vietnes frontend tiek blokuts nekavējoties
 ```
 
-## Izdevēju referance
+## Izdevēju referance {#developer-reference}
 
 Sejauku hooks un filteri ļauj jums pielāgot patiksēšanas un blokušanas uzvedību:
 

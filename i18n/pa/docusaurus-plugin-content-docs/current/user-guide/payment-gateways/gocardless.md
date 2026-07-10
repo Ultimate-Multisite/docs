@@ -3,7 +3,7 @@ title: GoCardless ਗੇਟਵੇ
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# GoCardless ਗੇਟਵੇ
+# GoCardless ਗੇਟਵੇ {#gocardless-gateway}
 
 ਇਹ ਫੀਚਰ **GoCardless** ਐਡਆਨ ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।
 

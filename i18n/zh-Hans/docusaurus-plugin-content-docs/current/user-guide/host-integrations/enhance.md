@@ -3,33 +3,33 @@ title: 增强控制面板集成
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Enhance 控制面板集成
+# Enhance 控制面板集成 {#enhance-control-panel-integration}
 
-## 概述
+## 概述 {#overview}
 Enhance 是一个现代化的控制面板，提供强大的托管自动化和管理功能。本集成实现了 Ultimate Multisite 与 Enhance 控制面板之间的自动域名同步和 SSL 证书管理。
 
 **相关讨论：** 参见 [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) 获取社区提示和更多信息。
 
-## 功能
+## 功能 {#features}
 - 在 Ultimate Multisite 中映射域名时自动同步域名
 - 当 DNS 解析时，使用 LetsEncrypt 自动提供 SSL 证书
 - 支持在子域模式下运行的网络的子域
 - 删除映射时移除域名
 - 连接测试以验证 API 凭证
 
-## 需求
+## 需求 {#requirements}
 
-### 系统需求
+### 系统需求 {#system-requirements}
 - 已安装并可访问 Enhance 控制面板
 - WordPress Multisite 安装托管在或连接到 Enhance 服务器
 - Apache Web 服务器（Enhance 当前支持 Apache 配置；LiteSpeed Enterprise 可按折扣价提供）
 
-### API 访问
+### API 访问 {#api-access}
 您必须拥有 Enhance 控制面板的管理员访问权限才能创建 API 令牌。
 
-## 获取您的 API 凭证
+## 获取您的 API 凭证 {#getting-your-api-credentials}
 
-### 1. 创建 API 令牌
+### 1. 创建 API 令牌 {#1-create-an-api-token}
 
 1. 以管理员身份登录您的 Enhance 控制面板
 2. 在导航菜单中点击 **Settings**
@@ -44,7 +44,7 @@ Enhance 是一个现代化的控制面板，提供强大的托管自动化和管
 
 创建后，您的 **Access Token** 和 **Organization ID** 将显示。**立即保存**，因为令牌只会显示一次。
 
-### 2. 获取您的 Organization ID
+### 2. 获取您的 Organization ID {#2-get-your-organization-id}
 
 Organization ID 在 Access Tokens 页面中蓝色信息框内显示，标签为 “Org ID: {your_id}”。
 
@@ -56,7 +56,7 @@ Organization ID 是类似 `d8554b6d-5d0d-6719-009b-fec1189aa8f3` 的 UUID 格式
 2. 点击相关客户的 **Manage customer**
 3. 查看 URL——Organization ID 是 `/customers/` 后的字母数字字符
 
-### 3. 获取您的 Server ID
+### 3. 获取您的 Server ID {#3-get-your-server-id}
 
 要查找您的 Server ID（域操作所需）：
 
@@ -73,7 +73,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID 采用 UUID 格式：`00000000-0000-0000-0000-000000000000`
 
-### 4. 获取您的 API URL
+### 4. 获取您的 API URL {#4-get-your-api-url}
 
 您的 API URL 是您的 Enhance 控制面板 URL 并追加 `/api/`：
 
@@ -86,9 +86,9 @@ https://your-enhance-panel.com/api/
 - 仅使用域名而不加 `/api/`
 - 使用 HTTP 而非 HTTPS（HTTPS 是安全所需）
 
-## 配置
+## 配置 {#configuration}
 
-### 必需常量
+### 必需常量 {#required-constants}
 
 将以下常量添加到您的 `wp-config.php` 文件中：
 
@@ -99,7 +99,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### 通过集成向导设置
+### 通过集成向导设置 {#setup-via-integration-wizard}
 
 1. 在 WordPress 管理后台，转到 **Ultimate Multisite** > **Settings**
 2. 导航至 **Integrations** 选项卡
@@ -113,18 +113,18 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - 让向导自动将常量注入您的 `wp-config.php` 文件
 - 复制常量定义并手动添加
 
-## 额外的 WordPress 配置
+## 额外的 WordPress 配置 {#additional-wordpress-configuration}
 
 根据社区反馈（[Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)），您可能需要配置以下额外设置：
 
-### .htaccess 配置
+### .htaccess 配置 {#htaccess-configuration}
 
 如果您在域名映射时遇到问题：
 
 1. 删除原始 Enhance `.htaccess` 文件
 2. 用标准 WordPress Multisite `.htaccess` 文件替换它
 
-### Cookie 常量
+### Cookie 常量 {#cookie-constants}
 
 将这些常量添加到 `wp-config.php`，以确保跨映射域名的正确 cookie 处理：
 
@@ -134,9 +134,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## 工作原理
+## 工作原理 {#how-it-works}
 
-### 当域名被映射时
+### 当域名被映射时 {#when-a-domain-is-mapped}
 
 1. 用户在 Ultimate Multisite 中映射自定义域名（或在子域模式下创建新站点）
 2. 集成向 Enhance 的 API 发送 POST 请求：`/servers/{server_id}/domains`
@@ -144,14 +144,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. 当 DNS 解析到您的服务器时，Enhance 自动通过 LetsEncrypt 提供 SSL 证书
 5. 域名启用 HTTPS
 
-### 当域名被移除时
+### 当域名被移除时 {#when-a-domain-is-removed}
 
 1. 在 Ultimate Multisite 中删除域名映射
 2. 集成查询域名的 ID
 3. 发送 DELETE 请求至：`/servers/{server_id}/domains/{domain_id}`
 4. Enhance 从您的服务器配置中移除该域名
 
-### DNS 与 SSL 检查
+### DNS 与 SSL 检查 {#dns-and-ssl-checking}
 
 Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 
@@ -160,9 +160,9 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 - SSL 证书有效性将自动检查
 - Enhance 自动处理 SSL 供应，因此不需要手动 SSL 配置
 
-## 验证设置
+## 验证设置 {#verifying-setup}
 
-### 测试连接
+### 测试连接 {#test-the-connection}
 
 1. 在集成向导中使用 **Test Connection** 步骤
 2. 插件将尝试列出您服务器上的域名
@@ -172,7 +172,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
    - Server ID 有效
    - 权限设置正确
 
-### 在映射域名后
+### 在映射域名后 {#after-mapping-a-domain}
 
 1. 在 Ultimate Multisite 中映射测试域名
 2. 检查 Ultimate Multisite 日志（**Ultimate Multisite** > **Logs** > **integration-enhance**）
@@ -181,9 +181,9 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
    - 新域名应出现在列表中
 4. DNS 传播后，验证 SSL 已自动提供
 
-## 故障排除
+## 故障排除 {#troubleshooting}
 
-### API 连接问题
+### API 连接问题 {#api-connection-issues}
 
 **错误：** “Failed to connect to Enhance API”
 
@@ -204,7 +204,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 - 确保 Server ID 为有效的 UUID 格式
 - 确认服务器存在于您的 Enhance 面板中
 
-### 域名未添加
+### 域名未添加 {#domain-not-added}
 
 **检查日志：**
 
@@ -219,7 +219,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 - API 权限不足（确保令牌具有 System Administrator 角色）
 - Server ID 与 Enhance 中实际服务器不匹配
 
-### SSL 证书问题
+### SSL 证书问题 {#ssl-certificate-issues}
 
 **SSL 未提供：**
 
@@ -235,7 +235,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 2. 找到您的域名并检查其 SSL 状态
 3. 如有需要，您可以手动触发 SSL 供应
 
-### DNS 检查间隔
+### DNS 检查间隔 {#dns-check-interval}
 
 如果域名或 SSL 证书激活过慢：
 
@@ -244,7 +244,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 3. 将默认 300 秒调整为更低值（最小 10 秒）
 4. **注意：** 低间隔意味着更频繁的检查，但服务器负载更高
 
-### 身份验证错误
+### 身份验证错误 {#authentication-errors}
 
 **HTTP 401/403 错误：**
 
@@ -253,7 +253,7 @@ Ultimate Multisite 包含内置的 DNS 与 SSL 检查：
 - 检查令牌是否已过期
 - 确保使用正确的 Organization ID（尽管通常不需要在 URL 中）
 
-### 日志分析
+### 日志分析 {#log-analysis}
 
 启用详细日志：
 
@@ -269,9 +269,9 @@ define('WP_DEBUG_LOG', true);
 - WordPress 调试日志：`wp-content/debug.log`
 - Enhance 面板日志：可在 Enhance 的管理界面查看
 
-## API 参考
+## API 参考 {#api-reference}
 
-### 认证
+### 认证 {#authentication}
 
 所有 API 请求使用 Bearer 令牌认证：
 
@@ -279,7 +279,7 @@ define('WP_DEBUG_LOG', true);
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### 常用端点
+### 常用端点 {#common-endpoints-used}
 
 **列出服务器：**
 
@@ -306,13 +306,13 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### 完整 API 文档
+### 完整 API 文档 {#full-api-documentation}
 
 完整 API 文档： [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## 最佳实践
+## 最佳实践 {#best-practices}
 
-### 安全
+### 安全 {#security}
 
 - **永远不要** 将 API 令牌提交到版本控制
 - 将令牌存储在 `wp-config.php`，并确保从 Git 中排除
@@ -320,20 +320,20 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - 为生产环境设置令牌过期日期
 - 定期轮换令牌
 
-### 性能
+### 性能 {#performance}
 
 - 使用默认 DNS 检查间隔（300 秒）以避免过多 API 调用
 - 在执行大规模域名操作时监控 Enhance 服务器资源
 - 如果一次映射许多域名，请考虑分批添加
 
-### 监控
+### 监控 {#monitoring}
 
 - 定期检查 Ultimate Multisite 日志以获取集成错误
 - 设置监控以捕获域名添加失败
 - 验证 SSL 证书是否正确提供
 - 关注 Enhance 服务器容量和域名限制
 
-## 其他资源
+## 其他资源 {#additional-resources}
 
 - **Enhance 官方文档：** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API 文档：** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -341,7 +341,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **GitHub 讨论：** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite 域名映射指南：** 参见 wiki 页面 “How to Configure Domain Mapping v2”
 
-## 支持
+## 支持 {#support}
 
 如果您遇到问题：
 
@@ -351,7 +351,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 4. 联系 Enhance 支持以获取面板相关问题
 5. 创建一个新讨论，详细错误日志以供社区协助
 
-## 备注
+## 备注 {#notes}
 
 - 本集成仅处理域名别名；Enhance 自动管理 SSL
 - 集成支持自定义域名映射和基于子域的站点

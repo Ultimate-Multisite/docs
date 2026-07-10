@@ -10,17 +10,17 @@ Erlaubt Plugin-Entwicklern, zusätzliche Dinge auszuführen, wenn Seiten registr
 
 Im Gegensatz zum wu_page_load, der nur ausgeführt wird, wenn eine bestimmte Seite angezeigt wird, wird dieser Hook bei der Registrierung für jede Admin-Seite ausgeführt, die mit Ultimate Multisite-Code hinzugefügt wird.
 
-## Parameters
+## Parameters {#action-wupageadded}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
 | $page_id | `string` | Die ID dieser Seite. |
 | $page_hook | `string` | Der Hook-Name dieser Seite. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
 
-### Source
+### Source {#since}
 
 Definiert in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L228) at line 228

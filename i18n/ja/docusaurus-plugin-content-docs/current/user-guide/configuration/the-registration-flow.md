@@ -1,72 +1,76 @@
 ---
 title: 登録フロー
 sidebar_position: 3
-_i18n_hash: 3e38d2f50683a422650956e5a3b0dff9
+_i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# 登録フロー (v2)
+# 登録フロー（v2） {#the-registration-flow-v2}
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注記: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-ユーザーはネットワークに登録する方法を複数持っています。登録フォームを使うか、事前に選択されたプランへの共有リンクを使うことができます。ここでは、利用可能なパスを使って顧客がネットワークに登録する方法と、登録後に何が起こるかを紹介します。
+ユーザーは、あなたのネットワークにさまざまな方法で登録できます。登録フォームを使うことも、事前に選択されたプランへの共有可能なリンクを使うこともできます。ここでは、利用可能な経路を使って顧客があなたのネットワークに登録する方法と、登録後に何が起こるかを説明します。
 
-## 登録フォームを使用する場合：
+## 登録フォームを使用する: {#using-the-registration-form}
 
-これは標準的な登録プロセスです。**checkout form** を備えた登録ページを作成し、そこが顧客がネットワークに登録し、プランに加入する場所になります。必要に応じて、異なる登録フォームを持つ複数の登録ページを作成できます。
+これは標準的な登録手順です。**購入手続きフォーム**を含む登録ページを作成します。顧客はそのページであなたのネットワークに登録し、プランに加入します。必要に応じて、異なる登録フォームを持つ登録ページを複数用意できます。
 
-登録のデフォルトページは [_**yourdomain.com/register**_](http://yourdomain.com/register) ですが、**Ultimate Multisite > Settings > Login & Registration > Default Registration Page** でいつでも変更できます。
+登録用の既定ページは [_**yourdomain.com/register**_](http://yourdomain.com/register) ですが、これは **Ultimate Multisite > 設定 > ログインと登録 > 既定の登録ページ** でいつでも変更できます。
 
-ユーザーが登録ページに到達した後（通常は **Sign in** または **Buy now** ボタンをクリックした時）、そこで登録フォームを見ることになります。
+ユーザーが登録ページに到達すると（通常は **サインイン** または **今すぐ購入** ボタンをクリックします）、そこで登録フォームが表示されます。
 
-![Registration form displayed on the registration page](/img/config/checkout-forms-list.png)
+![登録ページに表示された登録フォーム](/img/frontend/registration-form.png)
 
-必要なのは、必須項目（メール、ユーザー名、パスワードなど）をすべて入力し、プランの料金を支払うか、無料プランや試用期間付きの有料プランで支払い情報なしに登録する場合はメールアドレスを確認することです。
+フロントエンドで表示される購入手続きフォームの例です。
 
-「Thank you」ページで、メールアドレスの確認が必要か、またはウェブサイトがすでに有効化されているかを知らせるメッセージが表示されます。
+![フロントエンドの購入手続き登録フォーム](/img/config/checkout-frontend-registration.png)
 
-![Thank You page after registration](/img/config/checkout-form-editor.png)
+必要なのは、必須項目（メールアドレス、ユーザー名、パスワードなど）をすべて入力し、プランの支払いを行うことです。無料プラン、または支払い情報なしの試用期間付き有料プランに登録する場合は、メールアドレスを確認します。
 
-メールアドレスの確認が必要な場合、メール受信箱にアクセスして確認リンクをクリックする必要があります。メールアドレスが確認されないと、ウェブサイトは有効化されません。
+「ありがとうございます」ページでは、メールアドレスの確認が必要か、またはウェブサイトがすでに有効化されていて利用を開始できるかを知らせるメッセージが表示されます。
 
-有料プランに登録した場合や、ネットワークでメール確認が必須でない場合、チェックアウト直後にウェブサイトが有効化され、ダッシュボードにサインインするリンクが表示されます。
+![登録後のありがとうございますページ](/img/frontend/registration-thank-you.png)
 
-![Site activated with link to sign in to dashboard](/img/config/checkout-form-editor.png)
+メールアドレスの確認が必要な場合、ユーザーはメールの受信箱を開き、確認リンクをクリックする必要があります。メールアドレスが確認されないと、ウェブサイトは有効化されません。
 
-## 共有リンクを使用する場合：
+有料プランに登録した場合、またはあなたのネットワークでメール確認が必須ではない場合、購入手続きの直後にウェブサイトが有効化され、Dashboard にサインインするためのリンクが表示されます。
 
-共有リンクを使った登録プロセスは基本的に登録フォームと同じですが、唯一の違いは共有リンクを使用すると、顧客がチェックアウトフォームで商品やウェブサイトテンプレートを事前に選択済み（URLパラメータでの事前選択に関するセクション参照）や、クーポンコードが追加されている場合があることです。
+![Dashboard にサインインするリンク付きで有効化されたサイト](/img/frontend/site-activated.png)
 
-登録プロセスは同じです：名前、ユーザー名、メールアドレス、ウェブサイト名とタイトルなどを入力する必要がありますが、プランやサイトテンプレートはすでに事前に選択されています。
+## 共有可能なリンクを使用する: {#using-a-shareable-link}
 
-### 手動決済を使用した登録：
+共有可能なリンクを使った登録手順は、基本的には登録フォームと同じです。唯一の違いは、共有可能なリンクを使うことで、購入手続きフォーム上で商品またはウェブサイトテンプレートを事前に選択できることです（URL パラメーターで商品とテンプレートを事前選択するセクションを参照）。また、クーポンコードを追加することもできます（URL パラメーターを使用するセクションを参照）。
 
-PayPal、Stripe、またはUltimate Multisiteやそのアドオン統合で提供される他の決済ゲートウェイを使用したくない場合、顧客に手動決済を利用できます。この方法で、ネットワークに登録後に好みの決済プロセッサで支払うための請求書を生成できます。
+登録手順は同じです。名前、ユーザー名、メールアドレス、ウェブサイト名とタイトルなどを入力する必要がありますが、プランまたはサイトテンプレートはすでに事前選択されています。
 
-登録プロセスは上記と同じですが、登録ページで顧客は支払いを完了するための追加指示が記載されたメールを受け取るというメッセージを見ることになります。
+### 手動支払いで登録する: {#registering-using-manual-payments}
 
-![Manual payment message during registration](/img/config/settings-payment-gateways.png)
+PayPal、Stripe、または Ultimate Multisite やそのアドオン連携が提供するその他の決済ゲートウェイを使いたくない場合は、顧客向けに手動支払いを使用できます。この方法では、顧客があなたのネットワークに登録した後、希望する決済処理サービスで支払うための請求書を発行できます。
 
-登録が完了した後、設定した支払い指示が表示され（そしてメールでも受け取ります）。
+登録手順は上記とまったく同じですが、登録ページでは、支払いを完了するための追加手順が記載されたメールを受け取ることを伝えるメッセージが顧客に表示されます。
 
-![Payment instructions shown after registration](/img/config/settings-payment-gateways.png)
+![登録中の手動支払いメッセージ](/img/frontend/registration-manual-notice.png)
 
-支払い指示は **Ultimate Multisite > Settings > Payments** で **Manual** 支払いオプションを有効にした後、変更できます：
+登録が完了すると、あなたが設定した支払い手順が表示されます（同じ内容がメールでも送信されます）。
 
-![Manual payment toggle with payment instructions field](/img/config/settings-payment-gateways.png)
+![登録後に表示される支払い手順](/img/frontend/registration-payment-instructions.png)
 
-顧客が手動決済を完了し確認を送信した後、**手動で支払いを確認**して顧客のメンバーシップとウェブサイトを有効化する必要があります。
+支払い手順は、**Ultimate Multisite > 設定 > 支払い** で **手動** 支払いオプションをオンにした後に変更できます。
 
-これを行うには、**Ultimate Multisite > Payments** に移動し、顧客の支払いを見つけます。まだ **Pending** ステータスが表示されているはずです。
+![支払い手順欄付きの手動支払い切り替え](/img/config/manual-gateway-settings.png)
 
-![Payments list with pending manual payment](/img/admin/payments-list.png)
+顧客が手動支払いを完了し、確認を送信した後、顧客のメンバーシップとウェブサイトを有効化するには、**支払いを手動で確認**する必要があります。
 
-支払い番号をクリックすると、ステータスを **Completed** に変更できます。
+これを行うには、**Ultimate Multisite > 支払い** に移動し、顧客の支払いを見つけます。まだ **保留中** ステータスとして表示されているはずです。
 
-![Payment details page](/img/admin/payments-list.png)
+![保留中の手動支払いがある支払い一覧](/img/admin/payments-list.png)
 
-![Changing payment status to Completed](/img/admin/payments-list.png)
+支払い番号をクリックすると、ステータスを **完了** に変更できます。
 
-ステータスを **Completed** に変更した後、**Activate membership** メッセージが表示されます。このオプションを **on** に切り替えて、顧客に関連付けられたメンバーシップとウェブサイトを有効化します。次に、**Save Payment** をクリックします。
+![支払い詳細ページ](/img/admin/payment-edit.png)
 
-![Activate membership toggle and Save Payment button](/img/admin/payments-list.png)
+![支払いステータスを完了に変更](/img/admin/payment-status-completed.png)
 
-顧客はダッシュボードと購読したすべての機能にアクセスできるようになります。
+ステータスを **完了** に変更すると、**メンバーシップを有効化** メッセージが表示されるはずです。このオプションを **オン** にして、この顧客に関連付けられたメンバーシップとウェブサイトを有効化します。その後、**支払いを保存** をクリックします。
+
+![メンバーシップを有効化の切り替えと支払いを保存ボタン](/img/admin/payment-activate-membership.png)
+
+これで顧客は Dashboard と、加入したすべての機能にアクセスできるようになります。

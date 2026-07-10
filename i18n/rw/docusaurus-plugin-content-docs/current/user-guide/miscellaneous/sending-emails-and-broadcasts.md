@@ -1,120 +1,124 @@
 ---
-title: Gukoresha Email cyangwa Ubutumwa bwo Gukoresha
+title: Kohereza imeyili n’ubutumwa rusange
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Gutang Email cyangwa Broadcasts (v2)
+# Kohereza Emails na Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
-_**Uruko RUFITE: Icyo ubona kuri uyu rurimi rugera Ultimate Multisite version 2.x.**_
+_**ICYITONDERWA CY’INGENZI: Iyi ngingo ireba Ultimate Multisite verisiyo 2.x.**_
 
-Ultimate Multisite yifite ikintu kishobora kugufasha ukugira uburenganzira n'abakoresha bwawe binyuze mu gutuma email ku muntu cyangwa gukoresha umuryango w'abakoresha, kandi no gukoresha ibyemezo ku dashboard yabo ya admin kugira ngo utangire ibyemezo.
+Ultimate Multisite izana uburyo buzagufasha kuvugana n’abakiriya bawe wohereza email ku mukoresha ugenewe cyangwa itsinda ry’abakoresha, ndetse no kohereza amatangazo kuri admin dashboard yabo kugira ngo utangaze amakuru
 
-## Gutangira ibyemezo ku dashboard y'abakoresha bwawe n'ibyo Broadcasts
+## Ongeraho admin notices kuri dashboard y’abakiriya bawe ukoresheje Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Uko uburyo bwo gukoresha feature ya broadcast kuri Ultimate Multisite, ushobora gutanga **admin notices** (ibyemezo by'ubwoko bw'umuntu w'administration) ku dashboard ya subsite y'umuntu wako.
+Ukoresheje uburyo bwa broadcast bwa Ultimate Multisite, ushobora kongeraho **admin notices** kuri subsite admin dashboard y’umukoresha wawe.
 
-Iki ni ikintu gikomeye cyane niba ukeneye gukoresha ibyemezo nk'ibyo mu gihe cyo gutangira umuganda (system maintenance) cyangwa gukora ibintu bishya by'ubucuruzi cyangwa ibindi by'umuntu wako. Ibi ni ibyo ibyemezo byaba bifite ku dashboard ya umuntu wako.
+Ibi bifasha cyane niba ukeneye gutanga itangazo nko kubungabunga sisitemu cyangwa gutanga products cyangwa services bishya ku bakoresha bawe basanzwe. Uku ni ko admin notice izagaragara kuri dashboard y’umukoresha wawe.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Kugira ngo utangire admin notice, gukora uburyo bwo gukoresha, ugenda kuri network admin dashboard yacu kandi ku menu ya **Ultimate Multisite**, uzabona option ya **Broadcasts**.
+Kugira ngo utangire admin notice, jya kuri network admin dashboard yawe, maze munsi ya menu ya **Ultimate Multisite**, uzahasanga ihitamo rya **Broadcasts**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Paji y’urutonde rwa Broadcasts muri admin ya Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Ushobora kandi guhindura ibyemezo byo mu gihe cyo gutangira:
+Ushobora kandi guhindura broadcasts zisanzwe:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Imigaragarire yo guhindura broadcast](/img/admin/broadcast-edit.png)
 
-Ku gihe cy'ibyo, ugenda kuri button ya **Add Broadcast** (Gufasha Broadcast) y'ingenzi ku gice cy'uri.
+Kuri iyi paji, kanda buto ya **Add Broadcast** iri hejuru.
 
-Iki kintu kizabona modal window ya Add broadcast aho ushobora gukoresha ibyemezo byo wifuza gutangira.
+Ibi bizafungura idirishya rya modal rya Add broadcast aho ushobora guhitamo ubwoko bwa broadcast wifuza kohereza.
 
-Gukora uburyo bwo gukoresha, ugenda kuri **Message** (Urugero) mbere, nyuma ugenda ku button ya **Next Step** (Icyo cyangwa Icyemezo cy'ibindi).
+Komeza uhitemo **Message** hanyuma ukande buto ya **Next Step**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal ya Add broadcast ifite ihitamo rya Message ryatoranyijwe](/img/admin/broadcast-add-message.png)
 
-Icyo kintu kizabona kitangira gukubwira uburyo bwo gutanga **Target customer** (Umuntu wifuza) cyangwa **Target product** (Icyo cyifuza). Ukenya ko ushobora gukoresha abantu cyangwa ibintu byinshi.
+Idirishya rikurikira rizagusaba guhitamo **Target customer** cyangwa **Target product**. Menya ko ushobora guhitamo abakoresha barenze umwe cyangwa product irenze imwe.
 
-Kugira u gukoresha kugira ngo utangire gukoresha keyword mu field.
+Kugira ngo ushakishe account y’umukoresha cyangwa product, ugomba gutangira kwandika ijambo ry’ingenzi imbere mu mwanya.
 
-Hunya mu field **Message type**, uba mushobora gukoresha uburyo bw'ubwoko (color) bw'umugwi w'ibyerekezo (notice). Ibi bituma ubwumvikane bwo mugwi wako.
+Munsi y’umwanya wa **Message type**, ushobora guhitamo ibara rya notice. Ibi bizagaragaza uburemere bw’ubutumwa bwawe.
 
-Kandi uba mushobora gukoresha **Next Step**.
+Ushobora noneho gukanda **Next Step**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Imyanya ya Target customers, target product na message type ya Message broadcast](/img/admin/broadcast-message-targets.png)
 
-Icyemezo cy'ibindi ni umwe mu gihe utangira gukora mugwi wako binyuze mu gukoresha subject n'ubwoko bw'umugwi (content/message) uhoze kwigisha ku bakoresha.
+Idirishya rikurikira ni ho ushobora gutangira gutegura ubutumwa bwawe winjiza umutwe n’ibirimo/ubutumwa wifuza gutangaza ku bakoresha.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Umutwe w’ubutumwa bwa broadcast n’umwanditsi w’ibirimo ku ntambwe yo gutegura](/img/admin/broadcast-edit.png)
 
-Nyuma yo gukora mugwi wako, uba mushobora gukora **Send** button.
+Nyuma yo gukora ubutumwa bwawe, ushobora noneho gukanda buto ya **Send**.
 
-Kandi ni ibyo. Umugwi w'ubwoko (admin notice) uduweze mu dashboard ya umuntu wako cyane.
+Kandi birarangiye. Admin notice igomba guhita igaragara kuri dashboard y’umukoresha wawe.
 
-## Gufata email ku bakoresha bako
+## Ohereza emails ku bakiriya bawe {#send-emails-to-your-customers}
 
-Uko gukoresha feature ya broadcast ya Ultimate Multisite, uba mushobora gutuma email ku bakoresha bako. Uba mufite uburyo bwo gutuma email kuri bakoresha b'ibindi cyangwa gukoresha umuryango w'abakoresha (user group) bishobora kuboneka mu buryo bw'ubwoko (product) cyangwa uburyo bwo gukoresha (plan) bashobora kuba bafite.
+Ukoresheje uburyo bwa broadcast bwa Ultimate Multisite, ushobora kohereza email ku bakoresha bawe. Ufite ihitamo ryo kohereza email gusa ku bakoresha runaka cyangwa kugena itsinda ry’abakoresha rishingiye kuri product cyangwa plan biyandikishijeho.
 
-Kugira ngo utangire broadcast ya email, gaha ku dashboard ya network admin yawe kandi hifashishije menu ya Ultimate Multisite, uza kubona option ya Broadcast.
+Kugira ngo utangire email broadcast, jya kuri network admin dashboard yawe, maze munsi ya menu ya Ultimate Multisite, uzahasanga ihitamo rya Broadcast.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Paji y’urutonde rwa Broadcasts ikoreshwa nk’aho batangirira email broadcast](/img/admin/broadcasts-list.png)
 
-Kunyuma y'iki cyemezo, gaha ugire **Add broadcast** button ku gice cyo gutangira broadcast.
+Kuri iyi paji, kanda buto ya **Add broadcast** iri hejuru.
 
-Ibi bituma modal window ya Add broadcast aho uba mushobora gukoresha uburyo bw'ubwoko (type of broadcast) wifuza gutuma. Gukoresha ibyo, gaha utangire **Email** kandi ugire **Next Step** button.
+Ibi bizafungura idirishya rya modal rya Add broadcast aho ushobora guhitamo ubwoko bwa broadcast wifuza kohereza. Komeza uhitemo **Email** hanyuma ukande buto ya **Next Step**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal ya Add broadcast ifite ihitamo rya Email ryatoranyijwe](/img/admin/broadcast-add-email.png)
 
-Icyemezo cy'ibindi kizabikwiza uburyo bwo gutuma **Target customer** cyangwa **Target product**. Uba mufite ubushobozi gukoresha bakoresha b'ibindi cyangwa ibintu bishobora kuboneka mu gihe runaka.
+Idirishya rikurikira rizagusaba guhitamo **Target customer** cyangwa **Target produc** t. Menya ko ushobora guhitamo abakoresha barenze umwe cyangwa product irenze imwe.
 
-Kugera kugira ngo utangire gukoresha umwujiza (keyword) mu kintu cyangwa ibintu bishobora kuba ari umuntu w'ubwoko cyangwa ikintu, ugomba kwandika ubutumwa (keyword) mu field.
+Kugira ngo ushakishe account y’umukoresha cyangwa product, ugomba gutangira kwandika ijambo ry’ingenzi imbere mu mwanya.
 
-Icyiza cyane iyo utagize umugambi w'abantu wakoze (target audience), uza kuguha **Next Step**.
+Abagenewe ubutumwa bwawe bamaze gutoranywa, ushobora gukanda **Next Step**.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Guhitamo Target customers na target product kuri Email broadcast](/img/admin/broadcast-email-targets.png)
 
-Icyo cy'umwihariko cyo gukoresha, uza kuba ari aho uzafata umwujiza wakoze (subject) n'ubwoko bw'email wifuza guhagarika ku bakoresha.
+Idirishya rikurikira ni ho ushobora gutangira gutegura email yawe winjiza umutwe n’ibirimo/ubutumwa wifuza kohereza ku bakoresha.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Icyo cyangwa uza gukora ibyo, uza kuba ari igitekerezo cyiza kumenya email ku bakoresha wakoze (end-users) bishobora guhagarikaite mu buryo bw'broadcast feature.
+Nyuma yo gukora ubutumwa bwawe, ushobora gukanda buto ya **Send**.
 
-## System emails
+Kandi uko ni ko byoroshye kohereza email ku bakoresha bawe ba nyuma ukoresheje uburyo bwa broadcast.
 
-System emails mu Ultimate Multisite ni **ibiganiro by'umwihariko** (automatic notifications) byihagarikira uburyo bwo gukora ibintu n'ibindi, nk'uko umuntu yagize, igikorwa cyo gukoresha, cyangwa gukoresha domain. Ibi emails bisobanura mu buryo bw'Ultimate Multisite settings kandi bisobanura mu buryo bwo gufata uburyo bwo gukora ibintu n'ibindi. Buri gihe, hari feature itanga uburyo bwo gufata umwujiza (reset) no gukoresha ibyo wari yagize mu kintu cy'umwihariko cy'Ultimate Multisite cyangwa mu kintu cy'umwihariko cy'ibindi.
+## Emails za sisitemu {#system-emails}
 
-### Gufata umwujiza n'Uburyo bwo gukoresha (Resetting & Importing)
+Emails za sisitemu muri Ultimate Multisite ni za **automatic notifications** zoherezwa na sisitemu nyuma y’ibikorwa runaka nko kwiyandikisha, kwishyura, guhuza domain, n’ibindi. Izi emails zishobora guhindurwa cyangwa kuvugururwa uhereye muri settings za Ultimate Multisite. Izana kandi uburyo buzagufasha gusubiza ku ishusho ya mbere no kuzana settings zisanzwe zivuye mu rindi iyinjizwamo rya Ultimate Multisite.
 
-Icyo cy'Ultimate Multisite cyangwa ibyo byihagarikira, hari emails zishobora gufata mu gihe runaka.
+### Gusubiza ku ntangiriro & Kuzana {#resetting--importing}
 
-Kugira ngo bitangire ubushobozi bw'email byshobora kuba byashobora gukoresha mu gihe runaka, **tuzagize kubyara emails yashobora kuba byari mu gihe runaka nk'ibiganiro by'umwihariko** ku kintu cy'Ultimate Multisite cyangwa ibyo byihagarikira, ariko iyo email zishobora kuba byari zifite uruhare rurimo gukora umuntu w'ubwoko (feature) mu buryo bwiza.
+Verisiyo nshya za Ultimate Multisite, kimwe na add-ons, zishobora kandi zizajya zongeramo emails nshya rimwe na rimwe.
 
-Icyo cyangwa abantu bafite uburenganzira bw'super admin n'abantu bashobora kubona emails yashobora kuba byari zifata mu gihe runaka, uza gukoresha importer tool. Iyo gukora ibyo, izakora email y'umwihariko yshobora kuba byari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari yari yashobora kuba byari
+Kugira ngo wirinde amakimbirane n’ibindi bibazo, **ntituzongera email templates nshya nka System Emails ku iyinjizwamo ryawe mu buryo bwikora** , keretse niba ari ingenzi ku mikorere ikwiye y’uburyo runaka.
 
-Kwibuka kwa Page ya Settings ya Ultimate Multisite yako kandi, kora ku tab ya **Emails**.
+Icyakora, super admins n’agents bashobora kuzana izi emails zimaze kwandikwa vuba binyuze ku gikoresho cya importer. Iyo nzira izakora system email nshya ifite ibirimo n’igenamiterere rya email template nshya, igafasha super admin gukora impinduka zose ashaka cyangwa kuzireka uko zimeze.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+#### Uko wazana system emails {#how-to-import-system-emails}
 
-Kandi, kuri sidebar, kira umuntu yashobora gukora button ya **Customize System Emails**.
+Jya kuri paji ya Ultimate Multisite Settings yawe maze ujye kuri tab ya **Emails**.
+
+![Tab ya Emails muri settings za Ultimate Multisite yerekana igice cya System Emails](/img/config/settings-emails-tab.png)
+
+Hanyuma, kuri sidebar, kanda kuri buto ya **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Ku Page ya System Emails, uza kubona button ya **Reset & Import** ku cyo gishobora gukoreshwa mu cyo gishobora gukorwa ku gice cy'topi**. Gukora uyu button uza gutera modal window y'import no gukora reset.
+Kuri paji ya System Emails, uzabona buto y’igikorwa ya **Reset & Import** hejuru. Gukanda iyo buto bigomba gufungura idirishya rya modal ryo kuzana no gusubiza ku ntangiriro.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Buto y’igikorwa ya Reset or Import kuri paji ya admin ya System Emails](/img/admin/system-emails-reset-import.png)
 
-Kandi, uza kuba wumva uza gukoresha option ya Import Emails kugira ngo umenye emails y'system zikoreshwa mu gutanga.
+Hanyuma, ushobora gufungura cyangwa gufunga amahitamo ya Import Emails kugira ngo urebe system emails zihari zishobora kuzanwa.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Ishusho ntiboneka: modal ya Reset and Import ifite amahitamo ya Import Emails yaguwe -->
 
-#### Gukora Reset kwa System Emails
+#### Gusubiza System Emails uko byahoze {#reseting-system-emails}
 
-Hari ibindi gihe, uza kubona ko ibyo wari ukora ku template ya email ikoreshwa cyangwa umuntu yashobye y'ibyo byo baturageye ntabwo byumva ubu kandi wumva wumva mu **default state** (ubwoko bw'urugero).
+Hari igihe uzasanga impinduka wakoze kuri email template runaka zitakigukorera neza, maze ukifuza kuyisubiza ku **miterere yayo isanzwe**.
 
-Mu gihe runzi, uza kuba ufite iki gice: uza kuba ufite uburyo bwo guhagarara email y'system kandi uza kubona ko nta kintu cyangwa ibyo wari ukora byumva. Icyo hari uburyo runaka gukora iki ni ugukoresha umuntu yashobye y'ibyo byo mu gihe cy'import (gukoresha inama z'ibanze), ariko iki kintu ni ubwoko bwiza kandi bishobora gutera ibyo byose byumva.
+Muri ubwo buryo, ufite amahitamo abiri: ushobora gusiba gusa system email ukongera kuyinjiza (ukoresheje amabwiriza ari hejuru) - ibyo bizasiba send metrics n'ibindi bintu, bigatuma ubu buryo butaba bwo bwifuzwa cyane.
 
-Cyangwa, uza kuba ufite **Reset & Import tool** kugira ngo utere ibyo template ya email ku default state.
+Cyangwa ushobora gukoresha **Reset & Import tool** kugira ngo usubize iyo email template uko yari isanzwe.
 
-Kugira ngo utere template ya email ku default state, uza gukoresha inama z'ibyo mu gihe cyo gukora reset no import, kandi uza kubona option ya **Reset** kandi uza gukoresha emails wifuza gutera ku content y'urugero.
+Kugira ngo usubize email template uko yari isanzwe, ushobora gukurikiza intambwe ziri hejuru kugeza ugeze kuri Reset & Import tool, hanyuma ugakanda amahitamo ya **Reset** maze ugahitamo emails ushaka gusubiza ku bikubiyemo byazo bisanzwe.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Ishusho ntiboneka: modal ya Reset and Import ifite amahitamo ya Reset Emails yaguwe -->

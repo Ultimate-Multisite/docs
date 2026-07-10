@@ -3,13 +3,13 @@ title: Msaada wa Uendelezaji Maalum
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Jinsi ya Kupata Msaada wa Uendelezaji wa Kipekee kutoka Codeable?
+# Jinsi ya Kupata Msaada wa Uendelezaji wa Kipekee kutoka Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Wakati mwingine, tunahitaji sana ubinafsishaji mzuri ili kufanya mtiririko wa mtandao wetu uwe jinsi tunavyotaka. Ikiwa hilo ndilo unalotafuta, tunapendekeza [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), mahali ambapo unaweza kupata waendelezaji wenye uzoefu na utaalamu wa Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ni jukwaa linalowasilisha wateja na waendelezaji wa kujitegemea wa WordPress wenye sifa, wanaoweza kufanya kazi kwenye miradi ya ukubwa wowote. Wana mchakato wa kina wa maombi ili kuhakikisha unaoanishwa na wataalamu wenye sifa mahususi kwa kazi unayoikusudia.
 
-### Jinsi ya kuunda mradi katika Codeable?
+### Jinsi ya kuunda mradi katika Codeable? {#how-to-create-a-project-in-codeable}
 
 Kwanza, nenda kwenye [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) na ubofye kitufe cha **Start a Project**.
 

@@ -1,306 +1,318 @@
 ---
-title: Paggawa ng Iyong Unang Subscription Product
+title: Paglikha ng Iyong Unang Produktong Pang-suskripsyon
 sidebar_position: 6
-_i18n_hash: ec2328e89406069449b4078a2724c029
+_i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Paggawa ng Iyong Unang Subscription Product (v2)
+# Paglikha ng Iyong Unang Produkto ng Suskripsiyon (v2) {#creating-your-first-subscription-product-v2}
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay para lamang sa mga gumagamit ng Ultimate Multisite version 2.x. Kung gumagamit ka ng version 1.x,**_ **_**tingnan ang artikulong ito**_**.
+_**MAHALAGANG TALA: Ang artikulong ito ay para lamang sa mga gumagamit ng Ultimate Multisite bersyon 2.x. Kung gumagamit ka ng bersyon 1.x,**_ **_**tingnan ang artikulong ito**_**.
 
-Para masimulan ang pagpapatakbo ng iyong network at makapagbenta ng iyong mga serbisyo sa mga potensyal na user, kailangan mong magkaroon ng iba't ibang subscription options. Paano ka gagawa ng mga products na ito? Ano-ano ang mga uri ng products na maaari mong i-offer? Sa artikulong ito, tatalakayin natin ang lahat ng kailangan mong malaman tungkol sa products.
+Upang simulang patakbuhin ang iyong network at magsimulang ibenta ang iyong mga serbisyo sa mga potensyal na gumagamit, kailangan mong magkaroon ng iba’t ibang opsyon sa suskripsiyon. Paano mo ginagawa ang mga produktong ito? Ano ang mga uri ng produktong maaari mong ialok? Sa artikulong ito, tatalakayin natin ang lahat ng kailangan mong malaman tungkol sa mga produkto.
 
-## Uri ng Product
+## Uri ng Produkto {#product-type}
 
-Sa Ultimate Multisite, maaari kang mag-alok ng dalawang kategorya ng products sa iyong mga kliyente: **plans** at **add-ons** **(Order Bump)**. Ang add-ons ay maaaring hatiin sa dalawang uri: **packages** at **services**. Titingnan natin ang kanilang mga pagkakaiba at katangian sa susunod.
+Sa Ultimate Multisite maaari kang mag-alok ng dalawang kategorya ng mga produkto sa iyong mga kliyente: **mga plano** at **mga dagdag** **(Dagdag sa Order)**. Maaaring hatiin ang mga dagdag sa dalawang uri:**mga pakete** at **mga serbisyo**. Titingnan natin ang kanilang mga pagkakaiba at katangian sa susunod.
 
-  * **Plans**: ang pangunahing product ng Ultimate Multisite. Ang iyong kliyente ay maaari lamang magkaroon ng membership kung ito ay naka-attach sa isang plan. Ang plan ay nagbibigay sa iyong mga kliyente ng isa o higit pang sites (depende sa mga configuration ng iyong plan) na may mga limitasyong itinakda mo sa iyong product editing page.
+  * **Mga plano** : ang pangunahing produkto ng Ultimate Multisite. Maaari lamang magkaroon ng pagiging kasapi ang iyong kliyente kung nakakabit ito sa isang plano. Nagbibigay ang isang plano sa iyong mga kliyente ng isa o higit pang mga site (depende ito sa mga configuration ng iyong plano) na may mga limitasyong itinakda mo sa pahina ng pag-edit ng iyong produkto.
 
-  * **Packages**: mga add-ons na direktang nakakaapekto sa mga functionality ng Ultimate Multisite plans. Binabago nito ang mga limitasyon o nagdadagdag ng bagong resources, plugins o themes sa orihinal na plan na binili ng iyong kliyente. Halimbawa, ang isang basic plan ay maaaring payagan ang 1,000 visits bawat buwan at maaari kang mag-alok ng package na nagpapalawak nito sa 10,000.
+  * **Mga pakete** : mga dagdag na direktang nakaaapekto sa mga functionality ng mga plano ng Ultimate Multisite. Binabago nila ang mga limitasyon o nagdaragdag ng mga bagong resource, plugin, o theme sa orihinal na planong binili ng iyong kliyente. Halimbawa, maaaring magpahintulot ang isang pangunahing plano ng 1,000 pagbisita kada buwan at maaari kang magbigay ng pakete na nagpapalawak sa bilang na ito hanggang 10,000.
 
-  * **Services:** mga add-ons na hindi nagbabago sa mga functionality ng Ultimate Multisite. Ito ay mga gawain na gagawin mo para sa iyong kliyente bilang karagdagan sa plan na binili nila. Halimbawa, ang iyong customer ay maaaring bumili ng plan na nagpapahintulot ng isang site at nagbabayad din ng dagdag na serbisyo na gagawin ang design ng site na ito.
+  * **Mga serbisyo:** mga dagdag na hindi nagbabago sa mga functionality ng Ultimate Multisite. Ang mga ito ay mga gawaing isasagawa mo para sa iyong kliyente bilang karagdagan sa planong binili nila. Halimbawa, maaaring bumili ang iyong customer ng planong nagpapahintulot ng isang site at magbayad rin para sa dagdag na serbisyo na gagawa ng disenyo ng site na ito.
 
-## Pamamahala ng mga Products
+## Pamamahala ng mga Produkto {#managing-products}
 
-Para sa marami, ang **Products** tab sa Ultimate Multisite **(Ultimate Multisite > Products)** ay maaaring ihambing sa plans sa isang tradisyonal na hosting environment.
+Para sa marami, ang tab na **Mga Produkto** sa Ultimate Multisite **(Ultimate Multisite > Mga Produkto)** ay maihahambing sa mga plano sa isang tradisyonal na hosting environment.
 
-Sa loob ng Ultimate Multisite, ang Products tab ay tumutukoy sa structure at mga limitasyong naaangkop sa isang partikular na product o serbisyo. Ang mga structure na ito ay umaabot sa product o service description, presyo, taxes, at permissions.
+Sa loob ng Ultimate Multisite, tinutukoy ng tab na Mga Produkto ang balangkas at mga limitasyong naaangkop sa isang partikular na produkto o serbisyo. Saklaw ng mga ganitong balangkas ang paglalarawan ng produkto o serbisyo, presyo, buwis, at mga pahintulot.
 
-Ang seksyong ito ay gagabay sa iyong pag-unawa sa mahalagang pundasyon ng Ultimate Multisite.
+Gagabayan ng seksyong ito ang iyong pag-unawa sa mahalagang batayang bahagi ng Ultimate Multisite.
 
-![Products list page](/img/config/products-list.png)
+![Pahina ng listahan ng mga produkto](/img/config/products-list.png)
 
-## Pagdagdag ng mga Products
+## Pagdaragdag ng mga Produkto {#adding-products}
 
-Kung plan, package, o service man, ang pasukan sa pagtukoy ng bagong item ay sa pamamagitan ng **Ultimate Multisite > Products > Add Product**.
+Plano man, pakete, o serbisyo, ang pasukan para sa pagtukoy ng bagong item ay sa pamamagitan ng **Ultimate Multisite > Mga Produkto > Magdagdag ng Produkto**.
 
-![Add Product button](/img/config/product-add-button.png)
+![Button na Magdagdag ng Produkto](/img/config/product-add-button.png)
 
-Ang interface ay naglalaman ng dalawang pangunahing seksyon. Sa kaliwa ay may ilang tabs na tumutulong sa pagtukoy ng product at sa kanan ay may ilang seksyon para itakda ang base price ng product, ang active state nito, at product image.
+Naglalaman ang interface ng dalawang pangunahing seksyon. Sa kaliwa ay maraming tab na tumutulong sa pagtukoy ng produkto at sa kanan ay ilang seksyon upang tukuyin ang batayang presyo ng produkto, aktibong estado nito, at larawan ng produkto.
 
-![Product edit page overview](/img/config/product-edit-full.png)
+![Pangkalahatang-ideya ng pahina ng pag-edit ng produkto](/img/config/product-edit-full.png)
 
-### Description
+### Paglalarawan {#description}
 
-Ang pangunahing impormasyon ng product ay maaaring itakda sa pamamagitan ng pagbibigay ng product name at description. Ang mga identifier na ito ay ipinapakita kung saan man kailangan ang product information tulad ng plan at pricing selection, invoices, upgrades, at iba pa.
+Maaaring tukuyin ang pangunahing impormasyon ng produkto sa pamamagitan ng pagbibigay ng pangalan at paglalarawan ng produkto. Ipinapakita ang mga identifier na ito saanman kailangan ang impormasyon ng produkto gaya ng pagpili ng plano at presyo, mga invoice, upgrade, at mga katulad nito.
 
-![Product description section](/img/config/product-description.png)
+![Seksyon ng paglalarawan ng produkto](/img/config/product-description.png)
 
-### Uri ng Pricing
+### Uri ng Pagpepresyo {#pricing-type}
 
-Sa kanang bahagi ng interface, maaaring itakda ang base pricing.
+Sa kanang bahagi ng interface, maaaring tukuyin ang batayang pagpepresyo.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Seksyon ng pagpepresyo at pag-save](/img/config/product-pricing-save.png)
 
-Ang Ultimate Multisite ay sumusuporta sa tatlong magkakaibang uri ng pricing. Ang **paid** option ay nagpapakita sa network administrator ng impormasyon tungkol sa presyo ng product at billing frequency.
+Sinusuportahan ng Ultimate Multisite ang tatlong magkakaibang uri ng pagpepresyo. Hinihingi ng opsyong **bayad** sa network administrator ang impormasyon tungkol sa presyo ng produkto at dalas ng pagsingil.
 
-### Pricing
+### Pagpepresyo {#pricing}
 
-Ang price component ay tumutukoy sa base product price at billing interval.
+Tinutukoy ng bahagi ng presyo ang batayang presyo ng produkto at pagitan ng pagsingil.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Seksyon ng pagpepresyo at pag-save](/img/config/product-pricing-save.png)
 
-kaya ang halimbawang presyo na $29.99 na may setting na 1 month ay magbibill ng $29.99 bawat buwan. Gayundin, ang presyo na $89.97 na may setting na 3 months ay magbibill ng halagang iyon bawat quarter.
+kaya ang halimbawang presyo na $29.99 na may setting na 1 buwan ay sisingil ng $29.99 bawat buwan. Gayundin, ang presyong $89.97 na may setting na 3 buwan ay sisingil ng halagang iyon bawat quarter.
 
-### Billing Cycles
+### Mga Siklo ng Pagsingil {#billing-cycles}
 
-Ang seksyon ng billing cycles ay tumutukoy sa dalas ng nabanggit na billing interval at karaniwang nauunawaan sa konteksto ng contracts o fixed terms.
+Tinutukoy ng seksyon ng mga siklo ng pagsingil ang dalas ng nabanggit na pagitan ng pagsingil at karaniwang nauunawaan sa konteksto ng mga kontrata o nakapirming termino.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Seksyon ng pagpepresyo at pag-save](/img/config/product-pricing-save.png)
 
-Halimbawa, ang product price na $29.99 na may interval na 1 month at 12 billing cycles ay magbibill ng $29.99 bawat buwan para sa product sa loob ng susunod na 12 buwan. Sa madaling salita, ang setting na ito ay magtatakda ng fixed-price term na $29.99 bawat buwan sa loob ng 12 buwan at pagkatapos ay titigil na ang billing.
+Halimbawa, ang presyo ng produkto na $29.99 na may pagitan na 1 buwan at 12 siklo ng pagsingil ay sisingil ng $29.99 kada buwan para sa produkto sa susunod na 12 buwan. Sa madaling salita, magtatatag ang ganitong setting ng nakapirming presyong termino na $29.99 kada buwan sa loob ng 12 buwan at pagkatapos ay titigil ang pagsingil.
 
-### Trial Period
+### Panahon ng Pagsubok {#trial-period}
 
-Ang pag-enable ng offer trial toggle ay nagpapahintulot sa network administrator na magtakda ng trial period para sa product.
+Ang pag-enable sa toggle ng alok na pagsubok ay nagpapahintulot sa network administrator na tukuyin ang panahon ng pagsubok para sa produkto.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Seksyon ng pagpepresyo at pag-save](/img/config/product-pricing-save.png)
 
-Sa panahon ng trial period, malaya ang mga customer na gamitin ang product at hindi sila sisingilin hanggang matapos ang trial period.
+Sa panahon ng pagsubok, malaya ang mga customer na gamitin ang produkto at hindi sila sisingilin hanggang matapos ang panahon ng pagsubok.
 
-### Setup Fee
+### Bayad sa Setup {#setup-fee}
 
-Maaari ka ring mag-apply ng setup fee sa iyong plan.
+Maaari ka ring maglapat ng bayad sa setup sa iyong plano.
 
-![Pricing and save section](/img/config/product-pricing-save.png)
+![Seksyon ng pagpepresyo at pag-save](/img/config/product-pricing-save.png)
 
-Ibig sabihin nito, magbabayad ang iyong kliyente ng dagdag na halaga sa unang charge (bukod pa sa price plan) na katumbas ng fee na itinakda mo sa seksyong ito.
+Ibig sabihin nito, magbabayad ang iyong kliyente ng dagdag na halaga sa unang singil (bilang karagdagan sa presyo ng plano) na tumutugma sa bayad na tinukoy mo sa seksyong ito.
 
-### Active
+### Aktibo {#active}
 
-Ang active toggle ay tumutukoy kung ang product ay available sa mga customer para sa bagong sign-ups.
+Epektibong tinutukoy ng toggle na aktibo kung available ang produkto sa mga customer para sa mga bagong sign-up.
 
-![Active toggle](/img/config/product-active.png)
+![Toggle na aktibo](/img/config/product-active.png)
 
-Kung may mga existing customers sa plan na ito, ang pagtatakda ng toggle sa disabled state ay epektibong naggo-grandfather sa plan at tinatanggal ito sa mga susunod na sign-ups. **Ang mga existing customers sa plan ay patuloy na sisingilin** hanggang sila ay mailipat sa bagong plan o maalis sa plan.
+Kung may mga kasalukuyang customer sa planong ito, ang pagtatakda ng toggle sa disabled na estado nito ay epektibong nag-grandfather sa plano at inaalis ito sa mga susunod na sign-up. **Patuloy na sisingilin ang mga kasalukuyang customer sa plano** hanggang mailipat sila sa bagong plano o maalis mula sa plano.
 
-### Product Image
+### Larawan ng Produkto {#product-image}
 
-Ang **Upload Image** button ay nagpapahintulot sa network administrator na gamitin ang media library para pumili o mag-upload ng product image.
+Pinahihintulutan ng button na **Mag-upload ng Larawan** ang network administrator na gamitin ang media library upang pumili o mag-upload ng larawan ng produkto.
 
-![Product image section](/img/config/product-image.png)
+![Seksyon ng larawan ng produkto](/img/config/product-image.png)
 
-### Delete
+### Tanggalin {#delete}
 
-Ang **Delete Product** button ay nagde-delete ng product mula sa system. Ito ay lumalabas kapag ang product ay na-publish na.
+Tinatanggal ng button na **Tanggalin ang Produkto** ang produkto mula sa system. Lumilitaw ito kapag na-publish na ang produkto.
 
-![Delete product section](/img/config/product-delete.png)
+![Seksyon ng pagtanggal ng produkto](/img/config/product-delete.png)
 
-Hindi tulad ng ibang deletions, ang product ay hindi inilalagay sa anumang trash state. Kaya kapag na-delete na, ang aksyon ay hindi na maibabalik.
+Hindi tulad ng ibang pagtanggal, hindi inilalagay ang produkto sa anumang trash state. Kaya kapag natanggal na, hindi na mababawi ang aksyon.
 
-### Product Options
+### Mga Opsyon ng Produkto {#product-options}
 
-Kapag naitakda na ang base-level product information, ang product options ay tumutulong sa network administrator na mas madetalyadong itakda ang mga partikular na attribute ng product.
+Kapag natukoy na ang pangunahing impormasyon ng produkto, tumutulong ang mga opsyon ng produkto sa network administrator na higit pang tukuyin ang mga partikular na katangian ng produkto.
 
-#### General
+#### Pangkalahatan {#general}
 
-Ang **General** tab ay tumutukoy sa mga pangkalahatang attribute ng product na hindi naaangkop sa alinman sa iba pang product-specific tabs.
+Tinutukoy ng tab na **Pangkalahatan** ang mga pangkalahatang katangian ng produkto na hindi naaangkop sa alinman sa iba pang mga tab na partikular sa produkto.
 
-![General tab](/img/config/product-general-tab.png)
+![Tab na Pangkalahatan](/img/config/product-general-tab.png)
 
-Ang madaling maunawaan na **product slug** ay tumutukoy sa slug kung saan nakikilala ang product sa URLs at iba pang bahagi ng Ultimate Multisite.
+Tinutukoy ng malinaw na **slug ng produkto** ang slug kung saan nakikilala ang produkto sa mga URL at iba pang bahagi ng Ultimate Multisite.
 
-Ang Ultimate Multisite ay sumusuporta sa ilang uri ng product, partikular na Plan, Package, at Service. Ang **Product Options** tabs ay dynamic na inaayos depende sa uri ng product na tinukoy.
+Sinusuportahan ng Ultimate Multisite ang ilang uri ng produkto, gaya ng Plano, Pakete, at Serbisyo. Dinamikong inaangkop ang mga tab na **Mga Opsyon ng Produkto** depende sa tinukoy na uri ng produkto.
 
-Ang **Customer Role** ay tumutukoy sa role na itatalaga sa customer kapag nagawa na ang site. Karaniwan para sa karamihan ng network administrators, ito ay magiging Ultimate Multisite default o Administrator. Ang Ultimate Multisite default role ay maaaring itakda sa **Ultimate Multisite > Settings > Login & Registration**.
+Tinutukoy ng **Tungkulin ng Customer** ang tungkuling itatalaga sa customer kapag ginawa ang site. Karaniwan, para sa karamihan ng network administrator, ito ay magiging default ng Ultimate Multisite o Administrator. Maaaring itakda ang default na tungkulin ng Ultimate Multisite sa **Ultimate Multisite > Settings > Login & Registration**.
 
-![Customer role settings](/img/config/product-customer-role-settings.png)
+![Mga setting ng tungkulin ng customer](/img/config/product-customer-role-settings.png)
 
-#### Up & Downgrades
+#### Mga Pag-upgrade at Pag-downgrade {#up--downgrades}
 
-Ang tab na ito ay tumutukoy sa mga upgrade at downgrade paths na available sa customer sa loob ng kanilang partikular na tier.
+Tinutukoy ng tab na ito ang mga landas ng pag-upgrade at pag-downgrade na available sa isang customer sa loob ng kanilang partikular na antas.
 
-Para maunawaan ang konseptong ito, isaalang-alang ang isang halimbawa kung saan ang isang niche Ultimate Multisite installation ay nagbibigay ng learning management solutions sa mga customer nito. Para makamit ito, tatlong plans (Basic, Plus, at Premium) ang tinutukoy at ang mga partikular na plugins ay ina-activate para sa bawat plan (tingnan mamaya sa seksyong ito para sa mga tagubilin kung paano mag-activate ng plugins).
+Upang maunawaan ang konseptong ito, isaalang-alang ang isang halimbawa kung saan nagbibigay ang isang niche na pag-install ng Ultimate Multisite ng mga solusyon sa pamamahala ng pagkatuto sa mga customer nito. Upang magawa ito, tinutukoy ang tatlong plano (Basic, Plus, at Premium) at ina-activate ang mga partikular na plugin para sa bawat plano (tingnan sa susunod na bahagi ng seksyong ito ang mga tagubilin kung paano mag-activate ng mga plugin).
 
-Kung ang Ultimate Multisite installation ay nagse-service din ng business websites o eCommerce websites, ang mga plans na iyon ay maaaring mangailangan ng ibang plugins na i-install at i-activate.
+Kung nagseserbisyo rin ang pag-install ng Ultimate Multisite sa mga website ng negosyo o mga website ng eCommerce, maaaring mangailangan ang mga planong iyon ng ibang mga plugin na mai-install at ma-activate.
 
-Sa ganitong paraan, hindi kanais-nais at magkakaroon ng problema kung papayagan ang mga eLearning customers na lumipat sa eCommerce plans dahil ang mga plans, pricing, at limitations na ito ay maaaring hindi angkop.
+Sa ganitong lawak, hindi kanais-nais at magiging problematiko na payagan ang mga customer ng eLearning na lumipat sa mga plano ng eCommerce dahil maaaring hindi angkop ang mga planong ito, pagpepresyo, at limitasyon.
 
-Kaya para limitahan ang path ng customer at maiwasan ang mga insidente, maaaring magtakda ang network administrator ng plan group at sa loob ng group na iyon ay tukuyin ang mga plans na maaaring lipatan ng customer.
+Kaya upang limitahan ang landas ng customer at maiwasan ang mga insidente, maaaring tukuyin ng network administrator ang isang grupo ng plano at sa loob ng grupong iyon ay tukuyin ang mga planong maaaring lipatan ng customer.
 
-![Up and Downgrades tab](/img/config/product-upgrades.png)
+![Tab na Mga Pag-upgrade at Pag-downgrade](/img/config/product-upgrades.png)
 
-Para magtakda ng plan group, tukuyin ang mga compatible plans sa loob ng **plan group** list. Ang **product order** ay tumutukoy kung paano inaayos at ipinapakita ang mga plans mula sa pinakamababa hanggang pinakamataas.
+Upang tukuyin ang isang grupo ng plano, tukuyin ang mga katugmang plano sa loob ng listahan ng **grupo ng plano**. Tinutukoy ng **pagkakasunod-sunod ng produkto** kung paano inaayos at ipinapakita ang mga plano mula sa pinakamababa hanggang sa pinakamataas.
 
-Kasama rin sa Ultimate Multisite ang **order bump** feature kung saan ang naaangkop na add-on products at services ay maaaring idagdag sa plans. Ito ay ini-offer sa customer bilang karagdagang items na maaaring idagdag sa plans sa checkout o habang nag-a-upgrade.
+May kasama rin ang Ultimate Multisite na feature na **order bump** kung saan maaaring idagdag sa mga plano ang mga naaangkop na karagdagang produkto at serbisyo. Iniaalok ang mga ito sa customer bilang mga karagdagang item na maaaring idagdag sa mga plano sa pag-checkout o habang nag-a-upgrade.
 
-#### Price Variations
+#### Mga Variation ng Presyo {#price-variations}
 
-Ang price variations ay nagpapahintulot sa network administrator na magtakda ng alternatibong pricing tiers depende sa tagal. Ang setting na ito ay ginagawang posible ang 3 months, 6 months, o annual pricing tiers na maitatag o anumang iba pang tagal at dalas ayon sa use case.
+Pinapayagan ng mga variation ng presyo ang network administrator na tukuyin ang mga alternatibong antas ng pagpepresyo depende sa tagal. Ginagawang posible ng setting na ito na mag-alok ng buwanan, kada tatlong buwan, taunang, o anumang iba pang panahon ng pagsingil para sa parehong produkto. Halimbawa, maaari kang mag-set up ng produkto sa $29.99/buwan na may may-diskuwentong taunang opsyon sa $249.99/taon.
 
-![Price Variations tab](/img/config/product-price-variations.png)
+![Tab na Mga Variation ng Presyo](/img/config/product-price-variations-tab.png)
 
-Para magtakda ng price variations, itakda ang **enable price variations** toggle sa active at i-click ang **Add new Price Variation** button.
+Upang magtatag ng mga variation ng presyo, itakda ang toggle na **I-enable ang Mga Variation ng Presyo** sa active at i-click ang button na **Magdagdag ng bagong Variation ng Presyo**.
 
-Para maglagay ng variation, itakda ang duration, period, at price ng variation. Ang mga karagdagang variations ay maaaring ilagay sa pamamagitan ng pag-click muli sa button.
+![Mga variation ng presyo ng produkto](/img/config/product-price-variations.png)
 
-![Price Variations tab](/img/config/product-price-variations.png)
+Upang maglagay ng variation, itakda ang tagal, panahon, at presyo ng variation. Maaaring maglagay ng karagdagang mga variation sa pamamagitan ng muling pag-click sa button.
 
-#### Taxes
+Halimbawa, kung ang pangunahing presyo ng iyong produkto ay $29.99 bawat buwan, maaari kang magdagdag ng:
 
-Ang **Taxes** tab ay naka-align sa mga tax settings na tinukoy sa **Ultimate Multisite > Settings > Taxes** at mas partikular sa mga tax rates na tinukoy. Para ma-enable ang taxes at magtakda ng applicable tax rates, pakitingnan ang dokumentasyon sa **Ultimate Multisite: Settings**
+  * **3 Buwan** sa $79.99 (maliit na diskuwento kumpara sa buwanan)
+  * **1 Taon** sa $249.99 (malaking diskuwento para sa taunang pangako)
 
-![Taxes tab](/img/config/product-taxes.png)
+:::tip Pagpapakita ng Toggle ng Panahon ng Pagsingil sa Frontend
 
-Sa nakaraang halimbawa, nagtakda tayo ng local tax rate na 7.25% na naaangkop sa mga customer sa California (United States of America).
+Ang mga variation ng presyo lamang ay hindi nagdaragdag ng toggle o switch sa pag-checkout sa frontend. Upang payagan ang mga customer na lumipat sa pagitan ng mga panahon ng pagsingil (hal. Buwanan / Taunan), kailangan mong magdagdag ng field na **Pagpili ng Panahon** sa iyong form sa pag-checkout. Tingnan ang [Mga Form sa Pag-checkout: Pagdaragdag ng Toggle para sa Pagpili ng Panahon](checkout-forms#adding-a-period-selection-toggle) para sa sunod-sunod na mga tagubilin.
+:::
 
-Kapag natukoy na ang tax rate sa **Ultimate Multisite > Settings > Manage Tax Rates**, ito ay mapipili na sa product level.
+#### Mga Buwis {#taxes}
 
-![Taxes tab](/img/config/product-taxes.png)
+Nakaayon ang tab na **Mga Buwis** sa mga setting ng buwis na tinukoy sa **Ultimate Multisite > Settings > Taxes** at, mas partikular, sa mga tinukoy na rate ng buwis. Upang i-enable ang mga buwis at tukuyin ang naaangkop na mga rate ng buwis, pakitingnan ang dokumentasyon sa **Ultimate Multisite: Settings**
 
-Para ipahiwatig na ang isang product ay taxable item, itakda ang **Is Taxable** toggle sa active at piliin ang applicable tax rate mula sa Tax Category dropdown.
+![Tab na Mga Buwis](/img/config/product-taxes.png)
 
-#### Site Templates
+Sa isang naunang halimbawa, tinukoy natin ang lokal na rate ng buwis na 7.25% na naaangkop sa mga customer sa California (United States of America).
 
-Sa esensya, ang site templates ay mga kumpletong WordPress websites na kino-clone sa site ng customer sa simula ng kanilang subscription.
+Kapag natukoy na ang rate ng buwis sa **Ultimate Multisite > Settings > Manage Tax Rates**, maaari na itong piliin sa antas ng produkto.
 
-![Site Templates tab](/img/config/product-site-templates.png)
+![Tab na Mga Buwis](/img/config/product-taxes.png)
 
-Ang network administrator ay gumagawa at nagko-configure ng template site bilang regular na WordPress site na may na-activate at na-configure na themes, plugins, at content. Ang template site ay kino-clone nang eksakto sa customer.
+Upang ipahiwatig na ang isang produkto ay item na may buwis, itakda ang toggle na **May Buwis** sa active at piliin ang naaangkop na rate ng buwis mula sa dropdown ng Kategorya ng Buwis.
 
-Ang tab na ito ay nagpapahintulot sa network administrator na tukuyin ang behavior ng site templates sa bagong subscription. Para magamit ang site templates, itakda ang **allow site templates** toggle sa active state nito.
+#### Mga Template ng Site {#site-templates}
 
-Ang **site template selection mode** ay tumutukoy sa behavior ng site templates sa proseso ng subscription.
+Sa pangkalahatan, ang mga template ng site ay kumpletong mga website ng WordPress na kino-clone sa site ng customer sa simula ng kanilang subscription.
 
-Ang **Default** setting ay sumusunod sa mga hakbang sa checkout form. Kung ang network administrator ay nagtakda ng template selection step sa proseso ng checkout at ang step ay tinukoy na may mga templates, ang setting na ito ay igagalang ang mga direktiba na itinakda sa checkout step.
+![Tab na Mga Template ng Site](/img/config/product-site-templates.png)
 
-Ang pagtukoy ng **Assign Site Template** ay pinipilit ang pagpili ng tinukoy na template. Dahil dito, ang anumang template selection steps sa proseso ng checkout ay aalisin.
+Ginagawa at kino-configure ng network administrator ang template site bilang karaniwang WordPress site na may mga theme, plugin, at content na na-activate at na-configure. Kino-clone nang eksakto ang template site para sa customer.
 
-Panghuli, ang **Choose Available Site Templates** ay ino-override ang mga templates na tinukoy sa checkout step ng mga templates na napili sa setting na ito. Maaari ring magtakda ng pre-selected template para tulungan ang customer sa pagpili.
+Pinapayagan ng tab na ito ang network administrator na tukuyin ang gawi ng mga template ng site sa isang bagong subscription. Upang magamit ang mga template ng site para sa planong ito, itakda ang toggle na **Payagan ang Mga Template ng Site** sa active na estado nito.
 
-Sa huli, kung nais ng network administrator na mangyari ang template selection sa checkout steps, ang setting na '_default_' ay sapat na. Bilang alternatibo, para alisin at i-lock ang template selection at ipagkatiwala ang pagpili sa plan settings, ang '_assign new template_' o '_choose available site templates_' options ay maaaring kanais-nais.
+Kapag naka-disable ang **Payagan ang Mga Template ng Site**, hindi makakapili ng mga template ang mga customer sa plano kahit na kung ang isang form sa pag-checkout, maibabahaging link, o parameter ng URL ay magpapahintulot sana na maging available ang mga template. Ipinapatupad na ngayon ng Ultimate Multisite ang limitasyong ito sa pamamagitan ng fallback chain sa mga available na entry point: unang sinusuri ang mga setting ng plano, pagkatapos ang mga setting ng template ng form sa pag-checkout, at pagkatapos ang mga paunang napili o ibinigay sa URL na mga template. Pinapanatili nitong pare-pareho ang mga limitasyon ng plano at pinipigilan ang paglitaw ng mga template para sa mga produktong hindi dapat mag-alok ng mga ito.
 
-#### Sites
+Ang **mode ng pagpili ng template ng sityo** ay tumutukoy sa asal ng mga template ng sityo habang isinasagawa ang proseso ng suskripsyon.
 
-Ang **Sites** tab ay bahagi ng limitations functionality ng Ultimate Multisite.
+Sinusunod ng setting na **P** **aunang-takda** ang mga hakbang sa checkout form. Kung nagtakda ang tagapangasiwa ng network ng hakbang para sa pagpili ng template sa proseso ng checkout at ang hakbang ay tinukoy na may mga template, igagalang ng setting na ito ang mga direktibang itinakda sa hakbang ng checkout.
 
-![Sites tab](/img/config/product-sites.png)
+Ang pagtukoy sa **M** **agtalaga ng Template ng Sityo** ay pinipilit ang pagpili ng tinukoy na template. Dahil dito, inaalis ang anumang mga hakbang sa pagpili ng template sa proseso ng checkout.
 
-Ang setting na ito ay tumutukoy sa maximum na bilang ng sites na maaaring gawin ng customer sa ilalim ng kanilang membership.
+Panghuli, ino-override ng **P** **umili ng Mga Available na Template ng Sityo** ang mga template na tinukoy sa hakbang ng checkout gamit ang mga template na pinili sa setting na ito. Maaari ring magtakda ng nakaunang pili na template upang tulungan ang kliyente sa pagpili.
 
-Para ma-enable ang limitation, itakda ang **limit sites** toggle sa active state nito at tukuyin ang maximum na bilang ng sites sa **site allowance** field.
+Sa huli, kung nais ng tagapangasiwa ng network na mangyari ang pagpili ng template sa mga hakbang ng checkout, sapat na ang setting na ' _paunang-takda_ '. Bilang alternatibo, upang alisin at i-lock ang pagpili ng template at italaga ang pagpili sa mga setting ng plano, maaaring kanais-nais ang mga opsyong ' _magtalaga ng bagong template_ ' o ' _pumili ng mga available na template ng sityo_ '.
 
-#### Visits
+#### Mga Sityo {#sites}
 
-Ang **Visits** tab ay karagdagang bahagi ng limitations system ng Ultimate Multisite. Ang setting na ito ay nagpapahintulot sa pag-account at kasunod na throttling ng unique visitors sa site ng customer.
+Ang tab na **Mga Sityo** ay bahagi ng functionality ng mga limitasyon ng Ultimate Multisite.
 
-![Visits tab](/img/config/product-visits.png)
+![Tab na Mga Sityo](/img/config/product-sites.png)
 
-Mula sa perspektibong marketing, maaaring gamitin ng mga network administrators ang setting na ito bilang paraan para hikayatin ang mga customer na i-upgrade ang kanilang plan kapag naabot na ang mga limits. Ang setting na ito ay maaari ring makatulong sa network administrator na pigilan at maiwasan ang labis na traffic sa mga sites para mapanatili ang system resources.
+Tinutukoy ng setting na ito ang pinakamataas na bilang ng mga sityo na maaaring gawin ng kliyente sa ilalim ng kanilang membership.
 
-Para magamit ang feature na ito, itakda ang **limit unique visits** toggle sa active state nito at tukuyin ang maximum na bilang ng unique visitors sa **unique visits quota** field.
+Upang paganahin ang limitasyon, itakda ang toggle na **limitahan ang mga sityo** sa aktibong estado nito at tukuyin ang pinakamataas na bilang ng mga sityo sa patlang na **alokasyon ng sityo**.
 
-Kapag naabot ang limit na ito, titigil ang Ultimate Multisite sa pag-serve ng site ng customer at sa halip ay magpapakita ng mensahe na nagsasabing nalampasan na ang mga limits.
+#### Mga Pagbisita {#visits}
 
-#### Users
+Ang tab na **Mga Pagbisita** ay karagdagang bahagi ng sistema ng mga limitasyon ng Ultimate Multisite. Pinapayagan ng setting na ito ang pagtatala at kasunod na pag-throttle ng mga natatanging bisita sa sityo ng kliyente.
 
-Ang 'Users' limitations ng Ultimate Multisite ay nagpapahintulot sa network administrator na magpataw ng mga limitasyon sa bilang ng mga users na maaaring gawin at italaga sa mga roles.
+![Tab na Mga Pagbisita](/img/config/product-visits.png)
 
-![Users tab](/img/config/product-users.png)
+Mula sa pananaw ng marketing, magagamit ng mga tagapangasiwa ng network ang setting na ito bilang paraan upang hikayatin ang mga kliyente na i-upgrade ang kanilang plano kapag naabot na ang mga limitasyon. Makakatulong din ang setting na ito sa tagapangasiwa ng network na pigilan at maiwasan ang labis na trapiko sa mga sityo upang mapanatili ang mga yaman ng sistema.
 
-Para ma-enable ang limitations feature, itakda ang **limit user** toggle sa active state nito sa pamamagitan ng pag-slide nito pakanan.
+Upang magamit ang feature na ito, itakda ang toggle na **limitahan ang mga natatanging pagbisita** sa aktibong estado nito at tukuyin ang pinakamataas na bilang ng mga natatanging bisita sa patlang na **quota ng natatanging pagbisita**.
 
-Susunod, para sa bawat role na lilitawan, itakda ang toggle sa tabi nito sa active state at tukuyin ang maximum upper limit sa angkop na field.
+Kapag naabot ang limitasyong ito, hihinto ang Ultimate Multisite sa pagsisilbi sa sityo ng kliyente sa halip na magpakita ng mensaheng nagsasaad na nalampasan ang mga limitasyon.
 
-#### Post Types
+#### Mga User {#users}
 
-Ang **Post Types** tab ay nagpapahintulot sa network administrator na magpataw ng granular limits sa malawak na hanay ng post types sa loob ng WordPress.
+Pinapayagan ng mga limitasyon sa 'Mga User' ng Ultimate Multisite ang tagapangasiwa ng network na magpatupad ng mga limitasyon sa bilang ng mga user na maaaring gawin at italaga sa mga tungkulin.
 
-![Post Types tab](/img/config/product-post-types.png)
+![Tab na Mga User](/img/config/product-users.png)
 
-Dahil sa construction ng WordPress, ang posts at post types ay isang mahalagang bahagi ng core functionality nito, at dahil dito ang limitations system ng Ultimate Multisite ay idinisenyo para tulungan ang network administrator sa pagtatatag at pagpapanatili ng mga limits.
+Upang paganahin ang feature ng mga limitasyon, itakda ang toggle na **limitahan ang user** sa aktibong estado nito sa pamamagitan ng pag-slide nito pakanan.
 
-Para ma-enable ang limits subsystem na ito, itakda ang **limit post types** toggle sa active state nito sa pamamagitan ng pag-slide nito pakanan.
+Susunod, para sa bawat tungkuling lilimitahan, itakda ang toggle sa tabi nito sa aktibong estado at tukuyin ang pinakamataas na limitasyon sa angkop na patlang.
 
-Susunod, para sa bawat post type na lilitawan, i-toggle ito sa pamamagitan ng pag-slide nito pakanan at tukuyin ang maximum upper limit sa angkop na field.
+#### Mga Uri ng Post {#post-types}
 
-#### Disk Space
+Pinapayagan ng tab na **Mga Uri ng Post** ang tagapangasiwa ng network na magpatupad ng detalyadong mga limitasyon sa malawak na hanay ng mga uri ng post sa loob ng WordPress.
 
-Ang **Disk Space** tab ay nagpapahintulot sa mga network administrators na limitahan ang space na ginagamit ng mga customer.
+![Tab na Mga Uri ng Post](/img/config/product-post-types.png)
 
-![Disk Space tab](/img/config/product-disk-space.png)
+Dahil sa pagkakabuo ng WordPress, ang mga post at mga uri ng post ay mahalagang bahagi ng pangunahing functionality nito, kaya idinisenyo ang sistema ng mga limitasyon ng Ultimate Multisite upang tulungan ang tagapangasiwa ng network sa pagtatakda at pagpapanatili ng mga limitasyon.
 
-Karaniwan sa WordPress multisite, ang mga core files ay ibinabahagi sa lahat ng sites at ang mga indibidwal na directories ay ginagawa para sa media files at uploads kung saan naaangkop ang mga settings at limitations na ito.
+Upang paganahin ang subsystem ng mga limitasyong ito, itakda ang toggle na **limitahan ang mga uri ng post** sa aktibong estado nito sa pamamagitan ng pag-slide nito pakanan.
 
-Para ma-enable ang disk usage limitation, itakda ang **limit disk size per site** toggle sa active state nito sa pamamagitan ng pag-slide nito pakanan.
+Susunod, para sa bawat uri ng post na lilimitahan, i-on ito sa pamamagitan ng pag-slide nito pakanan at pagtukoy ng pinakamataas na limitasyon sa angkop na patlang.
 
-Susunod, tukuyin ang maximum upper limit sa megabytes sa **disk space allowance** field.
+#### Espasyo sa Disk {#disk-space}
 
-#### Custom Domain
+Pinapayagan ng tab na **Espasyo sa Disk** ang mga tagapangasiwa ng network na higpitan ang espasyong ginagamit ng mga kliyente.
 
-Sa pamamagitan ng pag-toggle ng option na ito, maaari mong payagan ang custom domains sa partikular na plan na ito.
+![Tab na Espasyo sa Disk](/img/config/product-disk-space.png)
 
-![Custom Domains tab](/img/config/product-custom-domains.png)
+Karaniwan, sa isang WordPress multisite, ang mga pangunahing file ay ibinabahagi sa lahat ng sityo at gumagawa ng mga indibidwal na direktoryo para sa mga media file at mga upload kung saan nalalapat ang mga setting at limitasyong ito.
 
-#### Themes
+Upang paganahin ang limitasyon sa paggamit ng disk, itakda ang toggle na **limitahan ang laki ng disk bawat sityo** sa aktibong estado nito sa pamamagitan ng pag-slide nito pakanan.
 
-Ang **Themes** tab sa loob ng product options ay nagpapahintulot sa network administrator na gawing available ang mga themes sa mga customer para sa pagpili at opsyonal na pilitin ang state ng theme.
+Susunod, tukuyin ang pinakamataas na limitasyon sa megabytes sa patlang na **alokasyon ng espasyo sa disk**.
 
-![Themes tab](/img/config/product-themes.png)
+#### Custom Domain {#custom-domain}
 
-_**Paalala: Para maging available ang mga themes sa mga customer, kailangan itong ma-network enable ng network administrator.**_
+Sa pamamagitan ng pag-toggle sa opsyong ito, maaari mong payagan ang mga custom domain sa planong ito nang partikular.
 
-![Network themes page](/img/config/product-themes-network-enabled.png)
+![Tab na Mga Custom Domain](/img/config/product-custom-domains.png)
 
-Ang **visibility** option ay tumutukoy kung ang theme na ito ay makikita ng customer kapag tinitingnan ang kanilang **Appearance > Themes** tab sa loob ng kanilang site. Ang pagtatakda ng option na ito sa **Hidden** ay nagtatanggal ng theme mula sa view at sa gayon ay nililimitahan ang kakayahang pumili at i-activate ito.
+#### Mga Tema {#themes}
 
-![Themes tab](/img/config/product-themes.png)
+Pinapayagan ng tab na **Mga Tema** sa loob ng mga opsyon ng produkto ang tagapangasiwa ng network na gawing available sa mga kliyente ang mga tema para sa pagpili at opsyonal na pilitin ang estado ng tema.
 
-Ang **behavior** selection ay nagpapahintulot sa network administrator na tukuyin ang state ng theme sa paglikha ng customer site.
+![Tab na Mga Tema](/img/config/product-themes.png)
 
-Sa **Available** state, ang theme ay ginagawang available sa customer para sa self-activation. Sa kabilang banda, ang **Not Available** state ay nagtatanggal sa customer ng kakayahang i-activate ang theme. Panghuli, ang **Force Activate** option ay pinipilit ang pagpili at pag-activate ng theme kaya ito ay itinakda bilang default sa paglikha ng site.
+_**Tala: Upang gawing available ang mga tema sa mga kliyente, dapat naka-enable ang mga ito sa network ng tagapangasiwa ng network.**_
 
-#### Plugins
+![Pahina ng mga tema ng network](/img/config/product-themes-network-enabled.png)
 
-Katulad ng Themes tab, ang Ultimate Multisite ay nagpapahintulot sa network administrator na tukuyin ang visibility ng plugins sa mga customer pati na rin ang kanilang state sa paglikha ng bagong site.
+Tinutukoy ng opsyong **visibility** kung nakikita o hindi ng kliyente ang temang ito kapag tinitingnan ang kanilang tab na **Appearance > Themes** sa loob ng kanilang sityo. Ang pagtatakda ng opsyong ito sa **Nakatago** ay nag-aalis sa tema sa view at sa gayon ay naghihigpit sa kakayahang piliin at i-activate ito.
 
-![Plugins tab](/img/config/product-plugins.png)
+![Tab na Mga Tema](/img/config/product-themes.png)
 
-Ang **visibility** drop-down ay nagpapahintulot na ang plugin ay maaaring maging visible o nakatago mula sa customer kapag tinitingnan sa kanilang site sa pamamagitan ng Plugins menu option.
+Pinapayagan ng pagpiling **behavior** ang tagapangasiwa ng network na tukuyin ang estado ng tema sa paggawa ng sityo ng kliyente.
 
-Maaari pang manipulahin ng network administrator ang behavior ng mga plugins sa pamamagitan ng paggamit ng mga options sa behavior drop-down.
+Sa estadong **A** **vailable**, ginagawang available ang tema sa kliyente para sa sariling pag-activate. Sa kabaligtaran, inaalis ng estadong **Hindi Available** sa kliyente ang kakayahang i-activate ang tema. Panghuli, pinipilit ng opsyong **Puwersahang I-activate** ang pagpili at pag-activate ng tema kaya itinatakda ito bilang default sa paggawa ng sityo.
 
-![Plugins tab](/img/config/product-plugins.png)
+#### Mga Dagdag {#plugins}
 
-Ang **Default** selection ay iginalang ang plugin state na tinukoy sa site template na pinili ng customer. Kaya ang mga plugins na na-activate sa loob ng template ay mananatiling activated kapag ang template ay na-clone sa site ng customer.
+Katulad ng tab na Mga Tema, pinapayagan ng Ultimate Multisite ang tagapangasiwa ng network na tukuyin ang visibility ng mga dagdag sa mga kliyente pati na rin ang kanilang estado sa paggawa ng bagong sityo.
 
-Ang **Force Activate** ay naglalagay ng plugin sa active state sa paglikha ng site at sa kabilang banda ang **Force Inactivate** ay nagde-deactivate ng plugin sa paglikha ng site. Sa parehong mga pangyayaring ito, ang state ng plugin ay maaaring manu-manong baguhin ng customer sa pamamagitan ng kanilang WordPress Plugins menu.
+![Tab na Mga Dagdag](/img/config/product-plugins.png)
 
-Ang **Force Activate & Lock** setting ay gumagana nang katulad ngunit pinipigilan ang plugin state na mabago ng customer. Kaya ang setting na Force Activate and Lock ay pipilitin ang plugin sa active state nito at pipigilan ang customer na i-deactivate ito. Gayundin, ang **Force Inactivate & Lock** setting ay pipilitin ang plugin sa inactive state nito at pipigilan ang user na i-activate ang plugin.
+Pinapayagan ng drop-down na **visibility** na maging nakikita o nakatago ang dagdag mula sa kliyente kapag tiningnan sa kanilang sityo sa pamamagitan ng opsyon sa menu na Mga Dagdag.
 
-Maaaring isaalang-alang ng network administrator ang Force Activate & Lock at Force Inactivate & Lock settings kasabay ng site templates dahil ang mga plugins at plugin states sa loob ng templates ay maaaring maapektuhan ng mga settings na ito kung napili.
+Mas higit pang makokontrol ng network administrator ang kilos ng mga plugin sa pamamagitan ng paggamit ng mga opsyon sa behavior drop-down.
 
-#### Reset Limitations
+![Tab ng Mga Plugin](/img/config/product-plugins.png)
 
-Ang **Reset Limitations** tab ay nagre-reset ng lahat ng custom limits na tinukoy sa product. Para i-reset ang limitations, i-click ang **reset limitations** button.
+Iginagalang ng pagpiling **Default** ang estado ng plugin na tinukoy sa template ng site na pinili ng customer. Kaya ang mga plugin na naka-activate sa loob ng template ay mananatiling naka-activate kapag na-clone ang template sa site ng customer.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+Inilalagay ng **Force Activate** ang plugin sa aktibong estado sa paggawa ng site at kabaliktaran, dina-deactivate ng **Force Inactivate** ang plugin sa paggawa ng site. Sa parehong mga sitwasyong ito, maaaring manu-manong baguhin ng customer ang estado ng plugin sa pamamagitan ng kanilang WordPress Plugins menu.
 
-Para kumpirmahin ang aksyon, i-slide ang **confirm reset** toggle sa active state nito sa kanan at i-click ang **reset limitations** button.
+Katulad ang paggana ng setting na **Force Activate & Lock** ngunit pinipigilan nitong mabago ng customer ang estado ng plugin. Kaya ang setting na Force Activate and Lock ay pipilitin ang plugin sa aktibong estado nito at pipigilan ang customer na i-deactivate ito. Gayundin, pipilitin ng setting na **Force Inactivate & Lock** ang plugin sa hindi aktibong estado nito at pipigilan ang user na i-activate ang plugin.
 
-![Reset Limitations tab](/img/config/product-reset-limitations.png)
+Maaaring naisin ng network administrator na isaalang-alang ang mga setting na Force Activate & Lock at Force Inactivate & Lock kasabay ng mga template ng site dahil ang mga plugin at mga estado ng plugin sa loob ng mga template ay maaaring maapektuhan ng mga setting na ito kung pinili.
 
-## I-edit, I-duplicate, o I-delete ang Product
+#### I-reset ang Mga Limitasyon {#reset-limitations}
 
-Ang mga existing products ay maaaring i-edit, i-duplicate o i-delete sa pamamagitan ng pag-navigate sa **Ultimate Multisite > Products** at pag-hover sa existing product name.
+Nire-reset ng tab na **Reset Limitations** ang lahat ng custom na limitasyong tinukoy sa produkto. Upang i-reset ang mga limitasyon, i-click ang button na **reset limitations**.
 
-![Product hover actions](/img/config/product-hover-actions.png)
+![Tab ng Reset Limitations](/img/config/product-reset-limitations.png)
+
+Upang kumpirmahin ang aksyon, i-slide ang toggle na **confirm reset** sa aktibong estado nito sa kanan at i-click ang button na **reset limitations**.
+
+![Tab ng Reset Limitations](/img/config/product-reset-limitations.png)
+
+## I-edit, I-duplicate, o I-delete ang Produkto {#edit-duplicate-or-delete-product}
+
+Maaaring i-edit, i-duplicate, o i-delete ang mga umiiral na produkto sa pamamagitan ng pagpunta sa **Ultimate Multisite > Products** at pag-hover sa umiiral na pangalan ng produkto.
+
+![Mga aksyon sa pag-hover sa Produkto](/img/config/product-hover-actions.png)

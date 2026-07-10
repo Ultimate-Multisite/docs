@@ -1,120 +1,124 @@
 ---
-title: E-posta ve Yayın Gönderme
+title: E-postalar ve Duyurular Gönderme
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-posta ve Toplu Duyuru Gönderme (v2)
+# E-postalar ve Yayınlar Gönderme (v2) {#sending-emails-and-broadcasts-v2}
 
-_**ÖNEMLİ NOT: Bu makale Ultimate Multisite 2.x sürümüne aittir.**_
+_**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x ile ilgilidir.**_
 
-Ultimate Multisite, müşterilerinizle iletişim kurmanızı sağlayan bir özellikle birlikte gelir. Bu özellik sayesinde belirli bir kullanıcıya veya kullanıcı grubuna e-posta gönderebilir, ayrıca duyurularınızı yayınlamak için kullanıcıların yönetim panellerinde bildirim gösterebilirsiniz.
+Ultimate Multisite, hedeflenen bir kullanıcıya veya bir kullanıcı grubuna e-posta göndererek müşterilerinizle iletişim kurmanıza ve ayrıca duyuruları yayınlamak için onların yönetici panosunda bildirimler göndermenize olanak tanıyan bir özellikle birlikte gelir.
 
-## Toplu Duyurular ile müşterilerinizin panelinde yönetici bildirimi gösterme
+## Broadcasts ile müşterilerinizin Dashboard'una yönetici bildirimleri ekleyin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ultimate Multisite toplu duyuru özelliğini kullanarak, kullanıcılarınızın alt site yönetim panellerine **yönetici bildirimleri** ekleyebilirsiniz.
+Ultimate Multisite yayın özelliğini kullanarak kullanıcınızın alt site yönetici Dashboard'una **yönetici bildirimleri** ekleyebilirsiniz.
 
-Bu özellik, sistem bakımı gibi bir duyuru yapmanız veya mevcut kullanıcılarınıza yeni ürün ya da hizmetler sunmanız gerektiğinde son derece kullanışlıdır. Yönetici bildirimi, kullanıcınızın panelinde aşağıdaki gibi görünecektir.
+Sistem bakımı gibi bir duyuru yapmanız veya mevcut kullanıcılarınıza yeni ürünler ya da hizmetler sunmanız gerektiğinde bu son derece faydalıdır. Yönetici bildiriminin kullanıcınızın Dashboard'unda nasıl görüneceği budur.
 
-![Müşteri panelinde gösterilen yönetici bildirimi](/img/admin/broadcasts-list.png)
+<!-- Ekran görüntüsü yok: Bir müşterinin alt site Dashboard'unda gösterilen yönetici bildirimi yayını -->
 
-Yönetici bildirimi oluşturmak için ağ yönetim panelinize gidin ve **Ultimate Multisite** menüsü altında **Broadcasts** seçeneğini bulacaksınız.
+Bir yönetici bildirimi başlatmak için ağ yönetici Dashboard'unuza gidin ve **Ultimate Multisite** menüsü altında **Broadcasts** seçeneğini bulacaksınız.
 
-![Ultimate Multisite yönetiminde Broadcasts menüsü](/img/admin/broadcasts-list.png)
+![Ultimate Multisite yönetiminde Broadcasts liste sayfası](/img/admin/broadcasts-list.png)
+
+Mevcut yayınları da düzenleyebilirsiniz:
+
+![Yayın düzenleme arayüzü](/img/admin/broadcast-edit.png)
 
 Bu sayfadan üstteki **Add Broadcast** düğmesine tıklayın.
 
-Karşınıza, göndermek istediğiniz duyuru türünü seçebileceğiniz Add broadcast penceresi açılacaktır.
+Bu, göndermek istediğiniz yayın türünü seçebileceğiniz Yayın ekle modal penceresini açacaktır.
 
-**Message** seçeneğini seçin ve ardından **Next Step** düğmesine tıklayın.
+Devam edin ve **Message** seçeneğini seçin, ardından **Next Step** düğmesine tıklayın.
 
-![Message türü seçilmiş Add broadcast penceresi](/img/admin/broadcasts-list.png)
+![Message seçeneği seçilmiş Yayın ekle modalı](/img/admin/broadcast-add-message.png)
 
-Bir sonraki pencerede **Target customer** veya **Target product** seçenekleri sorulacaktır. Birden fazla kullanıcı veya birden fazla ürün seçebileceğinizi unutmayın.
+Sonraki pencere sizden **Target customer** veya **Target product** isteyecektir. Birden fazla kullanıcı veya birden fazla ürün seçebileceğinizi unutmayın.
 
-Kullanıcı hesabı veya ürün aramak için ilgili alana anahtar kelimeyi yazmaya başlamanız gerekir.
+Bir kullanıcı hesabı veya ürün aramak için alanın içine anahtar kelimeyi yazmaya başlamanız gerekir.
 
-**Message type** alanında bildirimin rengini seçebilirsiniz. Bu, mesajınızın aciliyetini vurgulayacaktır.
+**Message type** alanı altında bildirimin rengini seçebilirsiniz. Bu, mesajınızın aciliyetini vurgulayacaktır.
 
 Ardından **Next Step** düğmesine tıklayabilirsiniz.
 
-![Toplu duyuru için hedef müşteri ve ürün seçimi](/img/admin/broadcasts-list.png)
+![Message yayını için hedef müşteriler, hedef ürün ve mesaj türü alanları](/img/admin/broadcast-message-targets.png)
 
-Bir sonraki pencerede, kullanıcılara duyurmak istediğiniz konuyu ve içeriği/mesajı girerek mesajınızı oluşturabilirsiniz.
+Sonraki pencere, kullanıcılara yayınlamak istediğiniz konuyu ve içeriği/mesajı girerek mesajınızı oluşturmaya başlayabileceğiniz yerdir.
 
-![Toplu duyuru konusu ve içerik düzenleyicisi](/img/admin/broadcasts-list.png)
+![Oluşturma adımında yayın mesajı konusu ve içerik düzenleyicisi](/img/admin/broadcast-edit.png)
 
-Mesajınızı oluşturduktan sonra **Send** düğmesine tıklayabilirsiniz.
+Mesajınızı oluşturduktan sonra **Send** düğmesine basabilirsiniz.
 
-İşte bu kadar. Yönetici bildirimi kullanıcınızın panelinde hemen görünecektir.
+İşte bu kadar. Yönetici bildirimi kullanıcınızın Dashboard'unda hemen görünmelidir.
 
-## Müşterilerinize e-posta gönderme
+## Müşterilerinize e-postalar gönderin {#send-emails-to-your-customers}
 
-Ultimate Multisite toplu duyuru özelliğini kullanarak kullanıcılarınıza e-posta gönderebilirsiniz. E-postayı yalnızca belirli kullanıcılara gönderme veya abone oldukları ürün ya da plana göre belirli bir kullanıcı grubunu hedefleme seçeneğiniz vardır.
+Ultimate Multisite yayın özelliğini kullanarak kullanıcılarınıza e-posta gönderebilirsiniz. E-postayı yalnızca belirli kullanıcılara gönderme veya abone oldukları ürün ya da plana göre belirli bir kullanıcı grubunu hedefleme seçeneğiniz vardır.
 
-E-posta duyurusu başlatmak için ağ yönetim panelinize gidin ve Ultimate Multisite menüsü altında Broadcast seçeneğini bulacaksınız.
+Bir e-posta yayını başlatmak için ağ yönetici Dashboard'unuza gidin ve Ultimate Multisite menüsü altında Broadcast seçeneğini bulacaksınız.
 
-![Ultimate Multisite yönetiminde Broadcasts sayfası](/img/admin/broadcasts-list.png)
+![E-posta yayını için başlangıç noktası olarak kullanılan Broadcasts liste sayfası](/img/admin/broadcasts-list.png)
 
 Bu sayfadan üstteki **Add broadcast** düğmesine tıklayın.
 
-Karşınıza, göndermek istediğiniz duyuru türünü seçebileceğiniz Add broadcast penceresi açılacaktır. **Email** seçeneğini seçin ve ardından **Next Step** düğmesine tıklayın.
+Bu, göndermek istediğiniz yayın türünü seçebileceğiniz Yayın ekle modal penceresini açacaktır. Devam edin ve **Email** seçeneğini seçin, ardından **Next Step** düğmesine tıklayın.
 
-![Email türü seçilmiş Add broadcast penceresi](/img/admin/broadcasts-list.png)
+![Email seçeneği seçilmiş Yayın ekle modalı](/img/admin/broadcast-add-email.png)
 
-Bir sonraki pencerede **Target customer** veya **Target product** seçenekleri sorulacaktır. Birden fazla kullanıcı veya birden fazla ürün seçebileceğinizi unutmayın.
+Sonraki pencere sizden **Target customer** veya **Target produc** t isteyecektir. Birden fazla kullanıcı veya birden fazla ürün seçebileceğinizi unutmayın.
 
-Kullanıcı hesabı veya ürün aramak için ilgili alana anahtar kelimeyi yazmaya başlamanız gerekir.
+Bir kullanıcı hesabı veya ürün aramak için alanın içine anahtar kelimeyi yazmaya başlamanız gerekir.
 
-Hedef kitlenizi seçtikten sonra **Next Step** düğmesine tıklayabilirsiniz.
+Hedef kitleniz seçildikten sonra **Next Step** düğmesine tıklayabilirsiniz.
 
-![E-posta duyurusu için hedef müşteri ve ürün seçimi](/img/admin/broadcasts-list.png)
+![Email yayını için hedef müşteriler ve hedef ürün seçimi](/img/admin/broadcast-email-targets.png)
 
-Bir sonraki pencerede, kullanıcılara göndermek istediğiniz konuyu ve içeriği/mesajı girerek e-postanızı oluşturabilirsiniz.
+Sonraki pencere, kullanıcılara göndermek istediğiniz konuyu ve içeriği/mesajı girerek e-postanızı oluşturmaya başlayabileceğiniz yerdir.
 
-![E-posta duyurusu konusu ve içerik düzenleyicisi](/img/admin/broadcasts-list.png)
+<!-- Ekran görüntüsü yok: Oluşturma adımında e-posta yayını konusu ve içerik düzenleyicisi -->
 
-Mesajınızı oluşturduktan sonra **Send** düğmesine tıklayabilirsiniz.
+Mesajınızı oluşturduktan sonra **Send** düğmesine basabilirsiniz.
 
-İşte toplu duyuru özelliğini kullanarak son kullanıcılarınıza e-posta göndermek bu kadar kolay.
+Yayın özelliğini kullanarak son kullanıcılarınıza e-posta göndermek işte bu kadar kolaydır.
 
-## Sistem e-postaları
+## Sistem e-postaları {#system-emails}
 
-Ultimate Multisite'taki sistem e-postaları, kayıt, ödeme, alan adı eşleme gibi belirli işlemlerden sonra sistem tarafından gönderilen **otomatik bildirimlerdir**. Bu e-postalar Ultimate Multisite ayarlarından düzenlenebilir veya değiştirilebilir. Ayrıca mevcut ayarları sıfırlamanıza ve başka bir Ultimate Multisite kurulumundan içe aktarmanıza olanak tanıyan bir özellik de bulunmaktadır.
+Ultimate Multisite içindeki sistem e-postaları, kayıt, ödeme, domain eşleme vb. belirli eylemlerden sonra sistem tarafından gönderilen **otomatik bildirimlerdir**. Bu e-postalar Ultimate Multisite ayarlarından düzenlenebilir veya değiştirilebilir. Ayrıca, başka bir Ultimate Multisite kurulumundan mevcut ayarları sıfırlamanıza ve içe aktarmanıza olanak tanıyan bir özellikle birlikte gelir.
 
-### Sıfırlama ve İçe Aktarma
+### Sıfırlama ve İçe Aktarma {#resetting--importing}
 
 Yeni Ultimate Multisite sürümleri ve eklentiler zaman zaman yeni e-postalar kaydedebilir ve kaydedecektir.
 
-Çakışmaları ve diğer sorunları önlemek için, **belirli bir özelliğin doğru çalışması için kritik olmadıkça yeni e-posta şablonlarını kurulumunuza otomatik olarak Sistem E-postaları olarak eklemeyeceğiz**.
+Çakışmaları ve diğer sorunları önlemek için, belirli bir özelliğin doğru çalışması açısından kritik olmadıkları sürece **yeni e-posta şablonlarını kurulumunuza otomatik olarak Sistem E-postaları olarak eklemeyeceğiz** .
 
-Ancak süper yöneticiler ve temsilciler, bu yeni kaydedilen e-postaları içe aktarma aracı aracılığıyla içe aktarabilir. Bu işlem, yeni e-posta şablonunun içeriği ve yapılandırmasıyla yeni bir sistem e-postası oluşturacak ve süper yöneticinin istediği değişiklikleri yapmasına veya olduğu gibi bırakmasına olanak tanıyacaktır.
+Ancak super adminler ve ajanlar bu yeni kaydedilen e-postaları içe aktarma aracı aracılığıyla içe aktarabilir. Bu süreç, yeni e-posta şablonunun içeriği ve yapılandırmasıyla yeni bir sistem e-postası oluşturur; böylece super admin istediği değişiklikleri yapabilir veya onları olduğu gibi tutabilir.
 
-#### Sistem e-postalarını içe aktarma
+#### Sistem e-postaları nasıl içe aktarılır {#how-to-import-system-emails}
 
-Ultimate Multisite Ayarları sayfanıza gidin ve **Emails** sekmesine geçin.
+Ultimate Multisite Settings sayfanıza gidin ve **Emails** sekmesine geçin.
 
-![Ultimate Multisite ayarlarında Emails sekmesi](/img/config/settings-emails.png)
+![Sistem E-postaları bölümünü gösteren Ultimate Multisite ayarlarında Emails sekmesi](/img/config/settings-emails-tab.png)
 
-Ardından kenar çubuğunda **Customize System Emails** düğmesine tıklayın.
+Ardından, kenar çubuğunda **Customize System Emails** düğmesine tıklayın.
 
-![Kenar çubuğundaki Customize System Emails düğmesi](/img/config/settings-emails.png)
+<!-- Ekran görüntüsü yok: System Emails kenar çubuğu panelindeki Customize System Emails düğmesi -->
 
-System Emails sayfasında üstte **Reset & Import** işlem düğmesini göreceksiniz. Bu düğmeye tıklamak içe aktarma ve sıfırlama penceresini açacaktır.
+System Emails sayfasında, üstte **Reset & Import** işlem düğmesini göreceksiniz. Bu düğmeye tıklamak içe aktarma ve sıfırlama modal penceresini açmalıdır.
 
-![System Emails sayfasındaki Reset and Import işlem düğmesi](/img/config/settings-emails.png)
+![System Emails yönetici sayfasındaki Reset veya Import işlem düğmesi](/img/admin/system-emails-reset-import.png)
 
-Ardından, hangi sistem e-postalarının içe aktarılmaya uygun olduğunu görmek için Import Emails seçeneklerini açabilirsiniz.
+Ardından, hangi sistem e-postalarının içe aktarılabilir olduğunu görmek için Import Emails seçeneklerini değiştirebilirsiniz.
 
-![Kullanılabilir sistem e-postalarını gösteren Import Emails seçenekleri](/img/config/settings-emails.png)
+<!-- Ekran görüntüsü kullanılamıyor: Import Emails seçenekleri genişletilmiş Reset and Import modalı -->
 
-#### Sistem E-postalarını Sıfırlama
+#### Sistem E-postalarını Sıfırlama {#reseting-system-emails}
 
-Bazen belirli bir e-posta şablonunda yaptığınız değişikliklerin artık işinize yaramadığını fark edebilir ve şablonu **varsayılan durumuna** sıfırlamak isteyebilirsiniz.
+Bazı durumlarda, belirli bir e-posta şablonunda yaptığınız değişikliklerin artık işinize yaramadığını fark eder ve onu **varsayılan durumuna** sıfırlamak isteyebilirsiniz.
 
-Bu durumda iki seçeneğiniz vardır: sistem e-postasını silip tekrar içe aktarabilirsiniz (yukarıdaki talimatları kullanarak) - ancak bu yöntem gönderim istatistiklerini ve diğer verileri sileceği için en az tercih edilen yöntemdir.
+Bu gibi durumlarda iki seçeneğiniz vardır: Sistem e-postasını basitçe silebilir ve (yukarıdaki talimatları kullanarak) yeniden içe aktarabilirsiniz; bu, gönderim metriklerini ve diğer şeyleri sileceğinden bu yöntemi daha az tercih edilir kılar.
 
-Ya da **Reset & Import aracını** kullanarak e-posta şablonunu sıfırlayabilirsiniz.
+Ya da bu e-posta şablonunu sıfırlamak için **Reset & Import aracı**nı kullanabilirsiniz.
 
-Bir e-posta şablonunu sıfırlamak için Reset & Import aracına ulaşana kadar yukarıdaki adımları izleyebilir, ardından **Reset** seçeneğini açıp varsayılan içeriklerine sıfırlamak istediğiniz e-postaları seçebilirsiniz.
+Bir e-posta şablonunu sıfırlamak için, Reset & Import aracına ulaşana kadar yukarıdaki adımları takip edebilir, ardından **Reset** seçeneğini açıp varsayılan içeriklerine geri sıfırlamak istediğiniz e-postaları seçebilirsiniz.
 
-![E-posta şablonlarını varsayılana döndürmek için Reset seçeneği](/img/config/settings-emails.png)
+<!-- Ekran görüntüsü kullanılamıyor: Reset Emails seçenekleri genişletilmiş Reset and Import modalı -->

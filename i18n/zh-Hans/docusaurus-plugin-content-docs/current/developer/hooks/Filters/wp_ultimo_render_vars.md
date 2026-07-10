@@ -4,11 +4,11 @@ title: 过滤器 - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars
+# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 允许插件开发者在全局范围内向渲染上下文添加额外变量。
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 | $view | `string` | 要渲染的视图名称。 |
 | $default_view | `string` | 备用视图的名称。 |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 在 [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) 的第 31 行定义。
 
-## Returns
+## Returns {#returns}

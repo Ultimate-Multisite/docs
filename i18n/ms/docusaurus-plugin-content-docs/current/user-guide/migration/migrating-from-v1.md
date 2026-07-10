@@ -3,9 +3,9 @@ title: Migrasi dari V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Migrasi dari V1
+# Migrasi dari V1 {#migrating-from-v1}
 
-## Ultimate Multisite telah beralih daripada keluaran versi 1.x kepada keluaran versi 2.x.
+## Ultimate Multisite telah beralih daripada keluaran versi 1.x kepada keluaran versi 2.x. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ultimate Multisite versi 2.0 dan ke atas merupakan penulisan semula sepenuhnya kod sumber, bermakna sangat sedikit persamaan antara versi lama dan versi baharu. Oleh sebab itu, apabila menaik taraf dari 1.x ke 2.x, data anda perlu dipindahkan ke format yang boleh difahami oleh versi baharu.
 
@@ -15,7 +15,7 @@ Pelajaran ini menerangkan cara alat pemindahan berfungsi, apa yang perlu dilakuk
 
 _**PENTING: Sebelum anda mula menaik taraf dari versi 1.x ke versi 2.0, sila pastikan anda membuat salinan sandaran pangkalan data laman anda**_
 
-## Langkah pertama
+## Langkah pertama {#first-steps}
 
 Langkah pertama ialah memuat turun fail .zip plugin dan memasang versi 2.0 pada dashboard pentadbir rangkaian anda.
 
@@ -51,7 +51,7 @@ Selepas pengaktifan lesen, anda boleh memulakan pemasangan sebenar dengan mengkl
 
 <!-- Screenshot unavailable: Installation page showing what will be updated with Install button -->
 
-## Sekarang, pemindahan
+## Sekarang, pemindahan {#now-the-migration}
 
 Alat pemindahan mempunyai ciri keselamatan terbina yang akan menyemak keseluruhan multisite anda untuk memastikan semua data Ultimate Multisite anda boleh dipindahkan tanpa sebarang masalah. Klik butang **Run Check** untuk memulakan proses.
 
@@ -59,13 +59,13 @@ Alat pemindahan mempunyai ciri keselamatan terbina yang akan menyemak keseluruha
 
 Selepas menjalankan semakan, terdapat dua kemungkinan: hasilnya boleh jadi **dengan** ralat atau **tanpa ralat**.
 
-### Dengan Ralat
+### Dengan Ralat {#with-error}
 
 Sekiranya anda mendapat mesej ralat, anda perlu menghubungi pasukan sokongan kami supaya mereka dapat membantu anda membetulkan ralat tersebut. Pastikan anda **menyediakan log ralat** apabila membuat tiket. Anda boleh memuat turun log atau anda boleh klik pautan yang tertulis hubungi pasukan sokongan kami. Ia akan membuka widget bantuan di sebelah kanan halaman anda dengan ruangan yang telah diisi untuk anda termasuk log ralat di bawah penerangan.
 
 _**Memandangkan sistem menemui ralat, anda tidak akan dapat meneruskan pemindahan ke versi 2.0. Anda boleh kembali ke versi 1.x untuk terus menjalankan rangkaian anda sehingga ralat dibetulkan.**_
 
-### Tanpa Ralat
+### Tanpa Ralat {#without-error}
 
 Jika sistem tidak menemui sebarang ralat, anda akan melihat mesej berjaya dan butang **Migrate** di bahagian bawah yang membolehkan anda meneruskan pemindahan. Di halaman ini, anda akan diingatkan untuk membuat salinan sandaran pangkalan data anda sebelum meneruskan, yang amat kami syorkan. Tekan **Migrate** jika anda sudah mempunyai salinan sandaran.
 

@@ -3,15 +3,15 @@ title: Valider le contraste de la palette
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Valider le contraste de la palette
+# Valider le contraste de la palette {#validate-palette-contrast}
 
 La fonctionnalité **Valider le contraste de la palette** vérifie les paires de couleurs de votre palette de design pour s'assurer de leur conformité aux normes WCAG (Web Content Accessibility Guidelines) avant de les appliquer à votre thème.
 
-## Vue d'ensemble
+## Vue d'ensemble {#overview}
 
 Cette fonctionnalité garantit que le schéma de couleurs de votre site répond aux normes d'accessibilité en validant les rapports de contraste entre les couleurs de texte et d'arrière-plan. Elle aide à prévenir les combinaisons de couleurs qui pourraient être difficiles à lire pour les utilisateurs ayant des déficiences visuelles.
 
-## Format des entrées
+## Format des entrées {#input-format}
 
 La fonctionnalité accepte une palette de couleurs en entrée :
 
@@ -35,7 +35,7 @@ La fonctionnalité accepte une palette de couleurs en entrée :
 }
 ```
 
-### Paramètres
+### Paramètres {#parameters}
 
 | Paramètre | Type | Requis | Description |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ La fonctionnalité accepte une palette de couleurs en entrée :
 | `wcag_level` | string | Non | Niveau de conformité WCAG : "A", "AA" (par défaut), ou "AAA" |
 | `pairs_to_check` | array | Non | Paires de couleurs spécifiques à valider (ex. : `["primary-text", "background-text"]`) |
 
-## Niveaux WCAG vérifiés
+## Niveaux WCAG vérifiés {#wcag-levels-checked}
 
 La fonctionnalité valide les rapports de contraste selon les normes WCAG :
 
@@ -56,7 +56,7 @@ La fonctionnalité valide les rapports de contraste selon les normes WCAG :
 - **Texte normal** — texte de moins de 18 points (ou 14 points en gras)
 - **Texte grand** — texte de 18 points ou plus (ou 14 points en gras ou plus)
 
-## Schéma de sortie
+## Schéma de sortie {#output-schema}
 
 La fonctionnalité renvoie un rapport de validation détaillé :
 
@@ -95,7 +95,7 @@ La fonctionnalité renvoie un rapport de validation détaillé :
 }
 ```
 
-### Champs de sortie
+### Champs de sortie {#output-fields}
 
 | Champ | Type | Description |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ La fonctionnalité renvoie un rapport de validation détaillé :
 | `status` | string | "pass" ou "fail" pour chaque paire |
 | `recommendations` | array | Suggestions pour améliorer les paires défaillantes |
 
-## Exemple d'utilisation
+## Exemple d'utilisation {#usage-example}
 
 **Requête :**
 ```
@@ -119,7 +119,7 @@ La fonctionnalité valide toutes les combinaisons de couleurs et renvoie :
 - ✅ Arrière-plan + Texte : ratio de 12.1:1 (passe WCAG AAA)
 - Globalement : Conforme avec WCAG AA
 
-## Intégration avec le constructeur de thème
+## Intégration avec le constructeur de thème {#integration-with-theme-builder}
 
 Lorsque vous utilisez la sélection de direction de design du Constructeur de thème, la fonctionnalité Valider le contraste de la palette :
 
@@ -129,7 +129,7 @@ Lorsque vous utilisez la sélection de direction de design du Constructeur de th
 4. Fournit des recommandations pour les paires non conformes
 5. Empêche l'application de schémas de couleurs inaccessibles
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
 - **Commencez par le niveau AA** — WCAG AA est la norme pour la plupart des sites web
 - **Testez avant d'appliquer** — validez votre palette avant de vous engager dans un design
@@ -137,7 +137,7 @@ Lorsque vous utilisez la sélection de direction de design du Constructeur de th
 - **Tenez compte des préférences utilisateur** — certains utilisateurs peuvent avoir une sensibilité accrue aux couleurs
 - **Utilisez des vérificateurs de contraste** — combinez cette fonctionnalité avec des outils de navigateur pour une vérification complète
 
-## Paires défaillantes et recommandations
+## Paires défaillantes et recommandations {#failing-pairs-and-recommendations}
 
 Si une paire de couleurs échoue à la validation, la fonctionnalité fournit des recommandations :
 
@@ -155,7 +155,7 @@ Si une paire de couleurs échoue à la validation, la fonctionnalité fournit de
 }
 ```
 
-## Fonctionnalités associées
+## Fonctionnalités associées {#related-abilities}
 
 - [Générer un SVG de logo](./generate-logo-svg.md) — créer des logos avec votre palette de couleurs validée
 - [Créer un menu](./create-menu.md) — construire une navigation avec des couleurs accessibles

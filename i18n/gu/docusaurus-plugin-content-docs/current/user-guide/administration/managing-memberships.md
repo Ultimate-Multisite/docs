@@ -1,22 +1,30 @@
 ---
-title: સભ્યપદનું સંચાલન
+title: સભ્યપદોનું સંચાલન
 sidebar_position: 9
-_i18n_hash: d941e74e4dd6d6dd462c0dfaaf81736a
+_i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# સભ્યપદનું સંચાલન
+# Membershipsનું સંચાલન {#managing-memberships}
 
-Ultimate Multisite માં તમે તમારા નેટવર્ક પરની બધી સબ્સ્ક્રિપ્શન્સ જોઈ શકો છો અને સભ્યપદનું સંચાલન કરી શકો છો. સબ્સ્ક્રિપ્શનની વિગતો જેમ કે પ્લાન અને પ્રોડક્ટ્સ, સાઇટ્સની સંખ્યા, બિલિંગ રકમ અને આવર્તન, પેમેન્ટ હિસ્ટ્રી અને ટાઇમસ્ટેમ્પ જેવી બાબતો તપાસો અને સંપાદિત કરો.
+Ultimate Multisiteમાં તમે membershipsનું સંચાલન કરી શકો છો અને તમારા network પરની બધી subscriptions ઍક્સેસ કરી શકો છો. plans અને products, sitesની સંખ્યા, billing રકમ અને આવર્તન, payment ઇતિહાસ અને timestamps જેવી subscription વિગતોની સમીક્ષા અને ફેરફાર કરો.
 
-આ પેજ પર જવા માટે, Ultimate Multisite મેનુમાં **Memberships** ટેબ પર ક્લિક કરો.
+આ પૃષ્ઠને ઍક્સેસ કરવા માટે, Ultimate Multisite મેનુમાં **Memberships** ટૅબ પર જાઓ.
 
-![સભ્યપદની યાદી પેજ](/img/admin/memberships-list.png)
+![Memberships યાદી પૃષ્ઠ](/img/admin/memberships-list.png)
 
-Memberships પેજ પર તમે તમારા ગ્રાહકોની યાદી અને તેમના એકાઉન્ટ સાથે સંકળાયેલી પ્રોડક્ટ્સ જોઈ શકો છો. તમે સભ્યપદને સ્ટેટસ પ્રમાણે ફિલ્ટર કરી શકો છો: active, pending, on hold, expired, અથવા cancelled.
+Memberships પૃષ્ઠ પર તમે તમારા customersની યાદી અને તેમના accounts સાથે સંકળાયેલા products જોઈ શકો છો. તમે membershipsને સ્થિતિ પ્રમાણે ફિલ્ટર કરી શકો છો: active, pending, on hold, expired, અથવા cancelled.
 
-સભ્યપદની વિગતો — બિલિંગ માહિતી, સાઇટ અથવા વિઝિટ લિમિટ્સ અને વધુ — સંપાદિત કરવા માટે કોઈ પણ સભ્યપદ પર ક્લિક કરો.
+મફત membershipsને **lifetime** memberships તરીકે ગણવામાં આવે છે. તેમને સમાપ્તિ તારીખ મળતી નથી અને તે આપમેળે સમાપ્ત થશે નહીં. જો કોઈ મફત plan trial અથવા નિશ્ચિત સમયગાળા પછી સમાપ્ત થવો જોઈએ, તો trial ધરાવતા paid productનો ઉપયોગ કરો, membershipને manually cancel કરો, અથવા customerની ઍક્સેસ બદલાવાની હોય ત્યારે તેમને બીજા planમાં ખસેડો.
 
-તમે તમારા નેટવર્ક પર પહેલેથી નોંધાયેલા યુઝર્સ માટે નવી સભ્યપદ પણ ઉમેરી શકો છો. **Add Membership** પર ક્લિક કરો અને વિગતો સેટ કરો.
+membership પર ક્લિક કરીને તે પૃષ્ઠ પર જાઓ જ્યાં તમે membershipની વિગતો — billing માહિતી, site અથવા visit મર્યાદાઓ, અને વધુ — ફેરફાર કરી શકો છો.
 
-![સભ્યપદ ઉમેરો મોડલ](/img/admin/membership-add-modal.png)
+![Membership edit ઇન્ટરફેસ](/img/admin/membership-edit.png)
 
-પછી **Create Membership** પર ક્લિક કરો. નવી સભ્યપદ સભ્યપદની યાદીમાં દેખાશે.
+અહીં membership edit પૃષ્ઠનો સંપૂર્ણ દેખાવ છે:
+
+![Membership edit સંપૂર્ણ ઇન્ટરફેસ](/img/admin/membership-edit-full.png)
+
+તમે તમારા network પર અગાઉથી નોંધાયેલા users સાથે સંકળાયેલી નવી memberships પણ ઉમેરી શકો છો. **Add Membership** પર ક્લિક કરો અને વિગતો configure કરો.
+
+![Add Membership મોડલ](/img/admin/membership-add-modal.png)
+
+પછી **Create Membership** પર ક્લિક કરો. નવી membership memberships યાદીમાં દેખાશે.

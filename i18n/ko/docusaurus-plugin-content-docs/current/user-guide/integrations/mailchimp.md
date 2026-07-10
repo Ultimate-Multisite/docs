@@ -3,7 +3,7 @@ title: MailChimp 통합
 sidebar_position: 7
 _i18n_hash: 9f328f09dc98677c9567636a81a7bf0a
 ---
-# MailChimp 통합
+# MailChimp 통합 {#mailchimp-integration}
 
 이 기능은 **Mailchimp** 애드온에 의해 제공됩니다.
 

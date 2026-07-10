@@ -3,11 +3,11 @@ title: የላቁ የኮድ ምሳሌዎች
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# የላቀ የኮድ ምሳሌዎች
+# የላቀ የኮድ ምሳሌዎች {#advanced-code-examples}
 
 እነዚህ ምሳሌዎች ከUltimate Multisite ጋር የላቀ የኢንትግሬሽን አሰራሮችን ያሳያሉ።
 
-## የዳይናሚክ ዋጋ ስሌት ሞተር (Dynamic Pricing Engine)
+## የዳይናሚክ ዋጋ ስሌት ሞተር (Dynamic Pricing Engine) {#dynamic-pricing-engine}
 
 በብዛት፣ በታማኝነት እና በወቅታዊ ቅናሾች የሚሰራ የዋጋ ስሌት ሞተር፡
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## የላቀ የቦታ አቅርቦት (Advanced Site Provisioning)
+## የላቀ የቦታ አቅርቦት (Advanced Site Provisioning) {#advanced-site-provisioning}
 
 በፕላን ባህሪያት ላይ በመመስረት አዳዲስ ቦታዎችን በፕልጊኖች፣ SSL፣ CDN፣ ባክአፕ እና ክትትል (monitoring) በራስ-ሰር ማዋቀር፡
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## የቅንብር ገደብ ስርዓት (Custom Limitations System)
+## የቅንብር ገደብ ስርዓት (Custom Limitations System) {#custom-limitations-system}
 
 የተጠቃሚዎችን የሀብት ገደቦች (resource limits) መከታተል እና ማስከበር፣ እንዲሁም የአጠቃቀም ማስጠንቀቂያዎችን መስጠት፡
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## በ`increment_item()` የBerlinDB አቶሚክ 카운ተር (Atomic Counter)
+## በ`increment_item()` የBerlinDB አቶሚክ 카운ተር (Atomic Counter) {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 የBerlinDB `Query` ክፍል ውስጥ `increment_item()` ዘዴን ጨምሯል። ይህንን ዘዴ በመጠቀም በቁጥር ዓምዶች ላይ ደህንነቱ የተጠበቀ፣ አቶሚክ ጭማሪ (atomic increments) ማድረግ ይችላሉ። ይህ በተመሳሳይ ጊዜ የሚሰሩ ጥያቄዎች (concurrent requests) በሚፈጠሩበት ጊዜ ለካውንተሮች፣ የአጠቃቀም Kuotaዎች እና የrate-limiting ፍተሻዎች በጣም ጠቃሚ ነው።
 
-### የዘዴው አገባብ (Method signature)
+### የዘዴው አገባብ (Method signature) {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 የBerlinDB `Query` ክፍል ውስጥ `increment_ite
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### መሰረታዊ አጠቃቀም (Basic usage)
+### መሰረታዊ አጠቃቀም (Basic usage) {#basic-usage}
 
 ```php
 // ለየአባልነት ID 42 የ`api_calls` ዓምድ 1 ይጨምሩ።
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### ለእያንዳንዱ አባልነት API አጠቃቀምን መከታተል (Tracking API usage per membership)
+### ለእያንዳንዱ አባልነት API አጠቃቀምን መከታተል (Tracking API usage per membership) {#tracking-api-usage-per-membership}
 
 ለየአባልነት API rate limitsን ለማስከበር የሚያስችል ተግባራዊ አሰራር፡
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### ለምን `increment_item()` እንጂ `update_item()` አይደለም?
+### ለምን `increment_item()` እንጂ `update_item()` አይደለም? {#why-incrementitem-instead-of-updateitem}
 
 በተመሳሳይ ጊዜ በሚሰሩ ጥያቄዎች (concurrent requests) ውስጥ የተለመደው የ'ማንበብ-ለውጥ-መጻፍ' (read-modify-write) አቀራረብ ደህንነቱ የተጠበቀ አይደለም፡
 

@@ -3,11 +3,11 @@ title: Informoj de klientaj recenzoj kaj problemo-raportado
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundenfeedback & Problemberichte
+# Kundenfeedback & Problemberichte {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduziert en integri sistem für Feedback und Problemberichte, wo Endbenutzer unhilfsvolli antworten markiere und Problem direkt us de Chat-Schnittstell melde chön. Sies system beinhaltet Zuestimmigswirt, en automatisierti Meld-Befehl und AI-unterstützte Sortierig im Backend.
 
-## Daumen runter-Knopf (Thumbs-Down Button)
+## Daumen runter-Knopf (Thumbs-Down Button) {#thumbs-down-button}
 
 Jede Nachricht, wo de AI-assistent schickt, zeigt en **Daumen runter** (👎) Knopf a. Wenn en Benutzer druf klickt, chan er e Antwort als unhilfsvoll oder falsch markiere.
 
@@ -15,7 +15,7 @@ Jede Nachricht, wo de AI-assistent schickt, zeigt en **Daumen runter** (👎) Kn
 - Wenn mer druf klickt, öffnet sich s'**Feedback Zuestimmig Modal**.
 - S'Feedback wird mit em Konversationsstrang und de spezifische Nachricht verbunde.
 
-## Feedback Zuestimmig Modal (Feedback Consent Modal)
+## Feedback Zuestimmig Modal (Feedback Consent Modal) {#feedback-consent-modal}
 
 Wenn en Benutzer uf de Daumen runter-Knopf klickt, erscheint vor dem Versende vo Date en Zuestimmigsmodal. De Modal:
 
@@ -26,13 +26,13 @@ Wenn en Benutzer uf de Daumen runter-Knopf klickt, erscheint vor dem Versende vo
 
 Kei Feedback wird ufzeichnet, bis de Benutzer es explizit bestätigt.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Am End vo eme Konversationsstrang chan de Assistent en **Auto-Prompt Feedback Banner** azeige — e nöd-aufdringlichi Nachricht, wo fragt, ob d'Sitzig hilfreich gsi isch.
 
 De Banner erscheint automatisch basierend uf de Länge vom Konversationsstrang und Heuristike über s'Ergebnis. Er verlinkt zum gliiche Feedback-Fluss wie de Daumen runter-Knopf. Benutzer chön de Banner ohni Feedback abschlüsse.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Benutzer chön de Feedback-Fluss direkt uslöse, indem sie `/report-issue` im Chat-Eingabefeld tippe. Dä Befehl:
 
@@ -42,7 +42,7 @@ Benutzer chön de Feedback-Fluss direkt uslöse, indem sie `/report-issue` im Ch
 
 La komando `/report-issue` estas disponabla en ĉiuj chato modoj (inline, flotiĝanta widgeto, plena ekrano).
 
-## AI-Asistita Triĝo
+## AI-Asistita Triĝo {#ai-assisted-triage}
 
 Submitita rekonstruo estas rutita al capa de triĝo per AI, kiu:
 

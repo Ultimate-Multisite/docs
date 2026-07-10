@@ -3,15 +3,15 @@ title: 'Lliurada 14: Què hi ve després'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Aula 14: Què hi ve per diner
+# Aula 14: Què hi ve per diner {#lesson-14-what-comes-next}
 
 Has construït una plataforma de website de niche des de zero. FitSite està en línia, serveix estudi de fitness i genera ingressos recurrents. Aquesta última aula analitza quò fare de més.
 
-## On acabem
+## On acabem {#where-we-left-off}
 
 FitSite és un negoci en marxa amb clients, operacions i una trajectòria de creixement. Ara pensam en què és el pas següent.
 
-## La xarxa completa de FitSite
+## La xarxa completa de FitSite {#the-complete-fitsite-network}
 
 Aquí teniu tot el que hem construït durant 14 classes:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Opció 1: Aprofundir-se en el teu niche
+## Opció 1: Aprofundir-se en el teu niche {#option-1-go-deeper-in-your-niche}
 
 Abans d'expandir-se a nous niches, considera aprofundir-te en el sector del fitness:
 
-### Sub-niches
+### Sub-niches {#sub-niches}
 
 - **Estudi de Yoga** -- templates especialitzats amb funcions de meditació, retiro i taller
 - **CrossFit boxes** -- seguiment de WOD, resultats de competició, funcions comunitari
@@ -59,7 +59,7 @@ Abans d'expandir-se a nous niches, considera aprofundir-te en el sector del fitn
 
 Cada sub-niche pot tenir els seus propis templates i potencialment la seva pròpia marca, tot funcionant en la mateixa xarxa Ultimate Multisite.
 
-### Funcionalitats Premium
+### Funcionalitats Premium {#premium-features}
 
 Crea funcionalitats per les quals els estudi de fitness estarien disposats a pagar extra:
 
@@ -68,14 +68,14 @@ Crea funcionalitats per les quals els estudi de fitness estarien disposats a pag
 - **Templates de blog de fitness** -- estructures de contingut preconstruïdes per al marketing de contingut de fitness
 - **Integració amb xarxes socials** -- publicació automàtica d'horaris de classes i actualitzacions
 
-### Expansió geogràfica
+### Expansió geogràfica {#geographic-expansion}
 
 Si has començat localment, expandeix-te a:
 
 - Altres ciutats del teu país
 - Altres països (utilitza les [funcionalitats de localització](/user-guide/localization/translating) d'Ultimate Multisite per suportar múltiples llengües)
 
-## Opció 2: Expandir-se a niches adjacents
+## Opció 2: Expandir-se a niches adjacents {#option-2-expand-to-adjacent-niches}
 
 El procés que seguiste per els estudi de fitness funciona per a qualsevol niche. El teu segon niche és més fàcil perquè ja tens:
 
@@ -83,7 +83,7 @@ El procés que seguiste per els estudi de fitness funciona per a qualsevol niche
 - L'experiència operativa
 - Un *playbook* demostrat
 
-### Niches adjacents al fitness
+### Niches adjacents al fitness {#adjacent-niches-to-fitness}
 
 - **Benestar i spa** -- terapeutes de massatge, spas diurns, centres de benestar
 - **Colles esportives** -- equips esportius amateurs, lliges, colles recreatives
@@ -91,7 +91,7 @@ El procés que seguiste per els estudi de fitness funciona per a qualsevol niche
 
 Aquests comparteixen superposició d'audiència amb el fitness, així que el teu marketing i les col·laboracions poden transmetre's.
 
-### Niches totalment noves
+### Niches totalment noves {#completely-new-niches}
 
 Aplica el *framework* de la Aula 2 per valorar qualsevol niche:
 
@@ -108,7 +108,7 @@ Cada nou niche necessita:
 
 L'infraestructura de la plataforma, la facturació i els processos operatius es mantenen iguals.
 
-## Opció 3: Construir una plataforma de plataformes
+## Opció 3: Construir una plataforma de plataformes {#option-3-build-a-platform-of-platforms}
 
 A gran escala, pots gestionar múltiples marques de niche en una única xarxa Ultimate Multisite:
 
@@ -118,11 +118,11 @@ A gran escala, pots gestionar múltiples marques de niche en una única xarxa Ul
 
 Cada marca té els seus propis templates, plans i marketing, però comparteixen infraestructura, facturació i processos operatius. Aquí és on l'economia d'Ultimate Multisite esdevé potent: una plataforma, moltes verticals.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Per a una separació completa entre niches, considera l'addon [Multi-Network](/addons/multinetwork), que et permet gestionar múltiples xarxes WordPress des d'una única instal·lació.
 
-## Opció 4: Vendre el negoci
+## Opció 4: Vendre el negoci {#option-4-sell-the-business}
 
 Una plataforma de website de niche amb ingressos recurrents, baix *churn* i una posició de mercat clara és un asset valuós. Els negocis SaaS solen vendre entre 3 i 5 vegades els ingressos anuals.
 
@@ -134,7 +134,7 @@ Un FitSite amb 200 clients a $89 ARPU:
 
 Això no és un resultat garantit, però és un resultat realista per una plataforma de niche ben gestionada.
 
-## El que has aprenat
+## El que has aprenat {#what-you-have-learned}
 
 Aquesta aula et va ensenyar un procés repetible:
 
@@ -150,7 +150,7 @@ Aquesta aula et va ensenyar un procés repetible:
 
 El niche és la estratègia. La plataforma és l'eina. Ultimate Multisite fa possible l'eina. La teva comprensió del niche la fa valuosa.
 
-## Començar a construir
+## Començar a construir {#start-building}
 
 Si has seguit amb FitSite, tens una plataforma funcional. Si has llegit fins al final per trobar el teu propi niche, torna a [Aula 2: Eleegir el teu niche](lesson-2-picking-your-niche) i comença el procés per al teu sector escollit.
 

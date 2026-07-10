@@ -1,60 +1,54 @@
 ---
 title: Webhooks
 sidebar_position: 15
-_i18n_hash: 2246e3cc1ed172d701d898e04088bf29
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Una primera mirada a los webhooks (v2)
+# Un primer cop d'ull als webhooks (v2) {#a-first-look-on-webhooks-v2}
 
-_**ATENCIÓ: Ten en compte que aquesta funció o article és per a usuaris avançats.**_
+_**ATENCIÓ: Tingueu en compte que aquesta funcionalitat o article és per a usuaris avançats.**_
 
-Un **webhook** és una manera d'una app o software com Ultimate Multisite de proporcionar informació en temps real a altres aplicacions. Un webhook entrega dades o payloads a altres aplicacions així que es produeixen, cosa que significa que **obtens les dades immediatament**.
+Un **webhook** és una manera perquè una aplicació o programari com Ultimate Multisite proporcioni informació en temps real a altres aplicacions. Un webhook entrega dades o càrregues útils a altres aplicacions a mesura que es produeixen, cosa que vol dir que **obteniu les dades immediatament.**
 
-Això és útil si necessites integrar o passar certes dades de Ultimate Multisite a un CRM o sistema més cada vegada que es triggeixi un esdeveniment. Per exemple, pots necessitar enviar el nom i l'adreç electrònic de l'usuari a una llista de correus cada vegada que es crea una nova compte d'usuari.
+Això és útil si necessiteu integrar o passar determinades dades des d'Ultimate Multisite cap a un altre CRM o sistema cada vegada que s'activa un esdeveniment. Per exemple, necessiteu enviar el nom i l'adreça electrònica de l'usuari a una llista de correu cada vegada que es crea un compte d'usuari nou.
 
-## Com crear un webhook
+## Com crear un webhook {#how-to-create-a-webhook}
 
-Per crear un webhook, anomena al teu dashboard d'administració de xarxa (network admin dashboard). Clica en **Ultimate Multisite > Webhooks > Add New Webhook.**
+Per crear un webhook, aneu al tauler d'administració de la vostra xarxa. Feu clic a **Ultimate Multisite > Webhooks > Add New Webhook.**
 
-![Pàgina de la llista de webhooks amb el bot Add New Webhook](/img/admin/webhooks-list.png)
+![Pàgina de llista de webhooks buida amb el botó Add New Webhook](/img/admin/webhooks-list-empty.png)
 
-Després pots editar la configuració del webhook:
+A continuació, podeu editar la configuració del webhook:
 
-![Interfície d'edició de webhook](/img/admin/webhook-edit.png)
+![Formulari Add New Webhook amb camps de Name, Event i URL](/img/admin/webhook-add-modal.png)
 
-Quan creis un nou webhook, es teurà peticionar informació com **Nom, URL** i **Esdeveniment (Event)**. Pots utilitzar qualsevol nom que vulguis per al teu webhook. Els camps més importants són la URL i l'Esdeveniment (Event).
+Quan creeu un webhook nou, se us demanarà informació com **Name, URL,** i **Event**. Podeu utilitzar qualsevol nom que vulgueu per al vostre webhook. Els camps més importants són la URL i l'esdeveniment.
 
-![Formulari de nou webhook amb els camps Nom, URL i Event](/img/admin/webhooks-list.png)
+![Interfície d'edició del webhook que mostra el camp URL i la previsualització de la càrrega útil](/img/admin/webhook-url-field.png)
 
-La URL és el **endpoint o el destinació** a la qual Ultimate Multisite enviarà el **payload o les dades**. Aquesta és l'aplicació que rebre les dades.
+La URL és l'**endpoint o la destinació** a la qual Ultimate Multisite enviarà la **càrrega útil o dades**. Aquesta és l'aplicació que rebrà les dades.
 
-Zapier és la solució més comuna que els usuaris utilitzen per facilitar les integracions amb aplicacions de tercers. Sense una plataforma com Zapier, t'ureu que creis manualment una funció personalitzada que capti i processin els dades. Consulta aquest article sobre **com utilitzar el webhook de Ultimate Multisite amb Zapier**.
+Zapier és la solució més comuna que l'usuari utilitza per facilitar la integració amb aplicacions de tercers. Sense una plataforma com Zapier, haureu de crear manualment una funció personalitzada que capturi les dades i les processi. Consulteu aquest article sobre **com utilitzar el webhook d'Ultimate Multisite amb Zapier.**
 
-En aquest article, analitzarem el concepte bàsic de com funciona un webhook i els esdeveniments disponibles en Ultimate Multisite. Utilitzarem una web de tercers anomenada [requestbin.com](https://requestbin.com/). Aquesta web ens permetrà crear un endpoint i capturar la càrrega (payload) sense fer cap codi. _**Avis: tot que farà és mostrar-nos que les dades han estat rebudes.**_ No hi ha cap processament ni cap acció real sobre la càrrega.
+En aquest article, veurem el concepte bàsic de com funciona un webhook i els esdeveniments disponibles a Ultimate Multisite. Utilitzarem un lloc de tercers anomenat [requestbin.com](https://requestbin.com/). Aquest lloc ens permetrà crear un endpoint i capturar la càrrega útil sense escriure cap codi. _**Avís legal: tot el que farà és mostrar-nos que les dades s'han rebut.**_ No hi haurà cap processament ni cap tipus d'acció feta sobre la càrrega útil.
 
-Vés a [requestbin.com](https://requestbin.com/) i fes clic en Create Request Bin (Crear Request Bin).
+Aneu a [requestbin.com](https://requestbin.com/) i feu clic a Create Request Bin.
 
-![Botó Create Request Bin de requestbin.com](/img/admin/webhooks-list.png)
+Després de fer clic en aquest botó, us demanarà que inicieu sessió si ja teniu un compte o que us registreu. Si ja teniu un compte, us portarà directament al seu Dashboard. Al seu Dashboard, veureu immediatament l'endpoint o la URL que podeu utilitzar per crear el vostre webhook d'Ultimate Multisite.
 
-Després de fer clic en aquest botó, us preguntarà si ja teniu compte o si us registreu. Si ja teniu un compte, us dirigirà directament al seu dashboard. Al seu dashboard, veureu immediatament l'endpoint o URL que podreu utilitzar per crear el vostre webhook de Ultimate Multisite.
+Continueu i copieu la URL, i torneu a Ultimate Multisite. Col·loqueu l'endpoint al camp URL i seleccioneu un esdeveniment al desplegable. En aquest exemple, seleccionarem **Payment Received**.
 
-![Dashboard de RequestBin mostrant la URL dell'endpoint](/img/admin/webhooks-list.png)
+Aquest esdeveniment s'activa sempre que un usuari fa un pagament. Tots els esdeveniments disponibles, la seva descripció i les càrregues útils apareixen a la part inferior de la pàgina. Feu clic al botó **Add New Webhook** per desar el webhook.
 
-Arriba, copia la URL i torna a Ultimate Multisite. Col·loca l'endpoint al camp URL i selecciona un esdeveniment des del desplegable. En aquest exemple, seleccionarem **Payment Received** (Pagament Rebut).
+![Desplegable d'esdeveniments del webhook amb Payment Received seleccionat](/img/admin/webhook-event-picker.png)
 
-Aquest esdeveniment s'activa cada vegada que un usu realitza un pagament. A la part inferior de la pàgina trobareu tots els esdeveniments disponibles, la seva descripció i les càrregues (payloads). Clicueu al botó **Add New Webhook** per guardar el webhook.
+Ara podem enviar un esdeveniment de prova a l'endpoint per veure si el webhook que hem creat funciona. Ho podem fer fent clic a **Send Test Event** sota el webhook que hem creat.
 
-![Webhook configurat amb l'esdeveniment Payment Received](/img/admin/webhooks-list.png)
+![Llista de webhooks que mostra un webhook configurat i l'acció Send Test](/img/admin/webhooks-list-populated.png)
 
-Ara podrem enviar un esdeveniment de prova a l'endpoint per veure si el webhook que hem createix funciona. Podem fer això fent clic en **Send Test Event** sota el webhook que hem creat.
+Això mostra una finestra de confirmació que indica que la prova s'ha completat correctament.
 
-![Opció Send Test Event sota el webhook](/img/admin/webhooks-list.png)
+![Resultat de l'esdeveniment de prova del webhook després d'enviar una càrrega útil de prova](/img/admin/webhook-test-result.png)
 
-Aquest mostra una finestra de confirmació que diu que la prova ha estat exitosa.
+Ara, si tornem al lloc _Requestbin_, veurem que s'ha rebut la càrrega útil que conté algunes dades de prova.
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
-
-Ara, si tornem al lloc _Requestbin_, veurem que la càrrega (payload) s'ha rebut contenint algunes dades de prova.
-
-![RequestBin mostrant les dades de la càrrega del webhook rebut](/img/admin/webhooks-list.png)
-
-Aquest és el principi bàsic de com funcionen els webhooks i els endpoints. Si voleu crear un endpoint personalitzat, us cal crear una funció personalitzada per processar les dades que regeu de Ultimate Multisite.
+Aquest és el principi bàsic de com funcionen els webhooks i els endpoints. Si heu de crear un endpoint personalitzat, haureu de crear una funció personalitzada per processar les dades que rebeu d'Ultimate Multisite.

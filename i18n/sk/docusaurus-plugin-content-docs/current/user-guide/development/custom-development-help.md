@@ -3,13 +3,13 @@ title: Pomoc pri prispôsobenom vývoji
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ako si môcť získať prispôsobenú pomoc od Codeable?
+# Ako si môcť získať prispôsobenú pomoc od Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Inékrát potrebujeme skutočne super prispôsobenia, aby sme našich pracovných tokov dosiahli presne tak, ako chceme. Ak hľadáte akékoľvek riešenie, odporúčame [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), miesto, kde nájdete skúsených vývojárov s expertou v Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) je platforma, ktorá spája zákazníkov s kvalifikovanými freelancovými vývojárskymi WordPressom, ktorí sú schopní pracovať na projekto akékoľvek veľkosti. Majú veľmi podrobné aplikácie, aby ste boli eşotovaní s odborníkmi špecializovanými na úlohu, ktorú máte v mysli.
 
-### Ako vytvoriť projekt v Codeable?
+### Ako vytvoriť projekt v Codeable? {#how-to-create-a-project-in-codeable}
 
 Prv prvej chvíli prejdite na [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) a kliknite na tlačidlo **Start a Project** (Začať projekt).
 

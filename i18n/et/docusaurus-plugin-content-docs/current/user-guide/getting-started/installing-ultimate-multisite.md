@@ -3,13 +3,13 @@ title: Ultimate Multisite'i installimine
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite'i paigaldamine
+# Ultimate Multisite'i paigaldamine {#installing-ultimate-multisite}
 
 :::note
 See juhend eeldab, et WordPress Multisite on juba installitud ja konfigureeritud. Selle kohta lisateabe saamiseks vaadake WP Beginneri [seda juhendit](https://www.wpbeginner.com/glossary/multisite/).
 :::
 
-## Plugin'i paigaldamine
+## Plugin'i paigaldamine {#installing-the-plugin}
 
 Ultimate Multisite on tasuta saadaval veebisaidil [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Pärast aktiveerimist suunatakse teid automaatselt seadistusviisardi juurde.
 
 ![Lisandmoodul on aktiveeritud ja kasutaja suunatud viisardisse](/img/installation/plugin-activated.png)
 
-## Seadistusviisard
+## Seadistusviisard {#setup-wizard}
 
 Seadistusviisard juhendab teid Ultimate Multisite'i konfigureerimisel, mis võtab umbes 10 minutit.
 
-### Tere tulemast
+### Tere tulemast {#welcome}
 
 Klõpsake nuppu **Alusta**, et alustada.
 
 ![Seadistusviisardi tervitusleht](/img/installation/wizard-welcome.png)
 
-### Eelpaigalduste kontrollid
+### Eelpaigalduste kontrollid {#pre-install-checks}
 
 See samm kontrollib teie süsteemi teavet ja WordPressi installimist, et veenduda, kas see vastab Ultimate Multisite'i nõuetele. Kui kõik näeb hea välja, klõpsake nuppu **Mine järgmise sammu juurde**.
 
@@ -51,31 +51,31 @@ Kui Ultimate Multisite on paigaldatud, kuid **pole veel võrgus aktiveeritud** �
 Klõpsates nupul **Võrgus aktiveeri**, aktiveeritakse lisandmoodul automaatselt kogu teie mitme veebisaidiga võrgus. Pärast aktiveerimist jätkab viisard tavapäraselt paigaldusetapiga. Te ei pea aktiveerimise oleku parandamiseks viisarist lahkuma.
 :::
 
-### Paigaldamine
+### Paigaldamine {#installation}
 
 Paigaldaja loob vajalikud andmebaasitabelid ja paigaldab faili `sunrise.php`, mida Ultimate Multisite vajab, et toimida. Klõpsake nuppu **Paalda**, et jätkata.
 
 ![Paigaldusetapp, mis näitab andmebaasitablette ja faili sunrise.php](/img/installation/wizard-installation.png)
 
-### Teie ettevõte
+### Teie ettevõte {#your-company}
 
 Sisestage oma ettevõtte teave ja määrake vaikimisi valuuta. Seda teavet kasutatakse kogu teie WaaS-platvormis. Kui olete lõpetanud, klõpsake nuppu **Jätka**.
 
 ![Ettevõtte konfiguratsiooni samm](/img/installation/wizard-your-company.png)
 
-### Vaikimisi sisu
+### Vaikimisi sisu {#default-content}
 
 Selles etapis saate paigaldada eelmääratletud malle, tooteid ja muud algsisu. See on suurepärane viis Ultimate Multisite'i funktsioonidega tutvumiseks. Klõpsake nuppu **Paalda**, et lisada vaikimisi sisu või jätke see samm vahele, kui soovite alustada nullist.
 
 ![Vaikimisi sisu paigaldusetapp](/img/installation/wizard-default-content.png)
 
-### Soovitatud lisandmoodulid
+### Soovitatud lisandmoodulid {#recommended-plugins}
 
 Paigaldage valikuliselt soovitatud täiendavad lisandmoodulid. Klõpsake nuppu **Paalda**, et need lisada, või jätkake.
 
 ![Soovitatud lisandmoodulite samm](/img/installation/wizard-recommended-plugins.png)
 
-### Valmis!
+### Valmis! {#ready}
 
 See on kõik! Teie Ultimate Multisite'i paigaldamine on lõppenud. Nüüd saate alustada oma veebisaidide teenuse platvormi loomist **võrguhalduri armatuurlaudadel**.
 

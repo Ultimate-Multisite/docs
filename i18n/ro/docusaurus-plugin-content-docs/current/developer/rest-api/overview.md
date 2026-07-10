@@ -1,32 +1,32 @@
 ---
-title: Scursul API REST
+title: Prezentare generală a REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referință API REST
+# Referință REST API {#rest-api-reference}
 
-## Configurare de Bază
+## Configurație de bază {#base-configuration}
 
-**URL de Bază:** `{site_url}/wp-json/wu/v2/`
-**Autentificare:** Cheie API și Secret (HTTP Basic Auth sau Parametri URL)
+**URL de bază:** `{site_url}/wp-json/wu/v2/`
+**Autentificare:** cheie API și secret (HTTP Basic Auth sau parametri URL)
 
-## Autentificare
+## Autentificare {#authentication}
 
-### Activarea API-ului
+### Activează API {#enable-api}
 ```php
-// Activarea API-ului în setările Ultimate Multisite sau programatic
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obținerea Credențialelor API
+### Obține credențialele API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Metode de Autentificare
+### Metode de autentificare {#authentication-methods}
 
-**HTTP Basic Auth (Recomandat):**
+**HTTP Basic Auth (recomandat):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints Principale
+## Endpoint-uri principale {#core-endpoints}
 
-### 1. API pentru Clienți (Customers)
+### 1. API pentru clienți {#1-customers-api}
 
-**Ruta de Bază:** `/customers`
+**Rută de bază:** `/customers`
 
-**Obținerea tuturor clienților**
+**Obține toți clienții**
 ```http
 GET /wu/v2/customers
 ```
 
-**Obținerea unui client în particular**
+**Obține un singur client**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Crearea unui client**
+**Creează client**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**Actualizarea unui client**
+**Actualizează client**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Note pentru client VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**Ștergerea unui client**
+**Șterge client**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API pentru Site-uri (Sites)
+### 2. API pentru site-uri {#2-sites-api}
 
-**Ruta de Bază:** `/sites`
+**Rută de bază:** `/sites`
 
-**Crearea unui site**
+**Creează site**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Site-ul Meu Nou",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API pentru Abonamente (Memberships)
+### 3. API pentru abonamente {#3-memberships-api}
 
-**Ruta de Bază:** `/memberships`
+**Rută de bază:** `/memberships`
 
-**Crearea unui abonament**
+**Creează abonament**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API pentru Produse (Products)
+### 4. API pentru produse {#4-products-api}
 
-**Ruta de Bază:** `/products`
+**Rută de bază:** `/products`
 
-**Obținerea tuturor produselor**
+**Obține toate produsele**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API pentru Plăți (Payments)
+### 5. API pentru plăți {#5-payments-api}
 
-**Ruta de Bază:** `/payments`
+**Rută de bază:** `/payments`
 
-**Crearea unei plăți**
+**Creează plată**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API pentru Domenii (Domains)
+### 6. API pentru domenii {#6-domains-api}
 
-**Ruta de Bază:** `/domains`
+**Rută de bază:** `/domains`
 
-**Maparea unui domeniu**
+**Mapează domeniu**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpointul de Înregistrare
+## Endpoint de înregistrare {#registration-endpoint}
 
-Endpointul `/register` oferă un flux complet de checkout/înregistrare:
+Endpoint-ul `/register` oferă un flux complet de checkout/înregistrare:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Site-ul Meu Nou",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Răspunsuri de Eroare
+## Endpoint-uri pentru tenant suveran {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 adaugă acoperire REST pentru tenant suveran pentru integrări care provizionează, inspectează sau verifică tenant-uri izolate.
+
+Payload-ul exact al cererii depinde de capabilitatea de host activată, dar integrările ar trebui să se aștepte la aceste grupuri de endpoint-uri:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Folosește endpoint-ul de bootstrap pentru a pregăti registrul tenant-ului, baza de date, sistemul de fișiere și starea de rutare. Folosește endpoint-urile de stare a migrării și de verificare înainte de a comuta traficul de producție. Folosește endpoint-ul de ștergere pentru dezafectarea suverană, astfel încât credențialele bazei de date să fie eliminate prin fluxul de curățare al addon-ului.
+
+Răspunsurile tipice privind starea migrării includ:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Tratează `ready: false` ca pe un blocaj înainte de lansare. Verifică detaliile de verificare, remediază legarea host-ului bazei de date, coada, provizionarea utilizatorilor sau problema de rutare, apoi reîncearcă verificarea.
+
+## Răspunsuri de eroare {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Valoare de parametru invalidă",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Format de email invalid"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Paginație și Filtrare
+## Paginare și filtrare {#pagination-and-filtering}
 
-**Parametri de Interogare:**
+**Parametri de interogare:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Parametrii comuni:
-- `per_page` - Numărul de elemente pe pagină (implicit: 20, maxim: 100)
+Parametri comuni:
+- `per_page` - Elemente pe pagină (implicit: 20, max.: 100)
 - `page` - Numărul paginii
-- `search` - Termenul de căutare
-- `orderby` - Câmpul după care se sortează
+- `search` - Termen de căutare
+- `orderby` - Câmp de sortare
 - `order` - Direcția de sortare (asc/desc)
-- `status` - Filtrare după status
-- `date_created` - Filtrare după intervalul de date
+- `status` - Filtrează după stare
+- `date_created` - Filtrează după interval de date

@@ -1,0 +1,194 @@
+---
+title: ئىلمەكلەر قوللانمىسى
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks پايدىلانمىسى {#hooks-reference}
+
+Ultimate Multisite دىكى بارلىق **59 مەشغۇلات** ۋە **118 سۈزگۈچ** ئۈچۈن ئاپتوماتىك ھاسىل قىلىنغان ھۆججەت.
+
+## مەشغۇلاتلار {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — كىملىك دەلىللەش قايتا نىشانلاشتىن بۇرۇن ئىجرا بولىدۇ.
+- [set_auth_cookie](./Actions/set_auth_cookie) — كىملىك دەلىللەش cookie تەڭشىلىشتىن دەرھال بۇرۇن ئىجرا بولىدۇ.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — كىرگەن ھالەتتىكى كىملىك دەلىللەش cookie تەڭشىلىشتىن دەرھال بۇرۇن ئىجرا بولىدۇ.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — ئىجادكارلارنىڭ wp plugin ئارقىلىق ئۆز host تەمىنلىگۈچى بىرلەشتۈرۈشلىرىنى قوشۇشىغا يول قويىدۇ.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — بارلىق بېقىندىلىقلار يۈكلەنگەندە قوزغىلىدۇ
+- [wu_activation](./Actions/wu_activation) — plugin نىڭ باشقا بۆلەكلىرىنىڭ ئاكتىپلاشتۇرۇش ئۈچۈن ئۆز تەرتىپلىرىنى باغلىشىغا يول قويىدۇ
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — plugin ئىجادكارلىرىنىڭ ئىشلەتكۈچى ياكى super admin تور بېكەت قېلىپىنى ئالماشتۇرغاندىن كېيىن ئىقتىدارلارنى hook قىلىشىغا يول قويىدۇ
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — بەزى ئەھۋاللاردا، ھەرىكەتلەرنى بىر تەرەپ قىلىش ئۈچۈن قوشۇمچە كۈچ يۈكلەشكە توغرا كېلىدۇ.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ئىزدەش ئىلتىماسى بىر تەرەپ قىلىنىشتىن بۇرۇن ئىجرا بولىدۇ.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — ئىجادكارلارنىڭ checkout ئوبيېكتىغا قوشۇمچە ئۆزگەرتىشلەرنى قىلىشىغا يول قويىدۇ.
+- [wu_cart_setup](./Actions/wu_cart_setup) — ئىجادكارلارنىڭ checkout ئوبيېكتىغا قوشۇمچە ئۆزگەرتىشلەرنى قىلىشىغا يول قويىدۇ.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — بىر field checkout جەدۋىلىگە قوشۇلۇشتىن بۇرۇن ئىجرا بولىدۇ.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — ئىجادكارلارنىڭ قوشۇمچە hooks نى قوزغىتىشىغا يول قويىدۇ.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — checkout نى بىر تەرەپ قىلىشىمىزدىن بۇرۇن.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout زاكازى تولۇق قۇراشتۇرۇلغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin ئىجادكارلىرىنىڭ Network Dashboard Panel غا widgets قوشۇشىغا يول قويىدۇ.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin ئىجادكارلىرىنىڭ Network Dashboard Panel غا widgets قوشۇشىغا يول قويىدۇ.
+- [wu_deactivation](./Actions/wu_deactivation) — plugin نىڭ باشقا بۆلەكلىرىنىڭ ئاكتىپسىزلاشتۇرۇش ئۈچۈن ئۆز تەرتىپلىرىنى باغلىشىغا يول قويىدۇ
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin ئىجادكارلىرىنىڭ ئۆچۈرۈش جەريانىغا ھەرىكەتلەرنى قوشۇشىغا يول قويىدۇ
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — بىر domain بىر تور بېكەت ئۈچۈن ئاساسىي domain بولغاندا ئىجرا بولىدۇ.
+- [wu_domain_created](./Actions/wu_domain_created) — يېڭى domain mapping قوشۇلغاندا قوزغىلىدۇ.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — بىزنىڭ يادرولۇق Domain Mapping يۈكلەنگەندىن كېيىن ئىجرا قىلىندى
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — بەزى plugin لار mapping ئاكتىپ بولۇشتىن بۇرۇن URL ساقلايدۇ ياكى ئۆز ئىچىگە ئالمايدىغان باشقىچە ئۇسۇلدا URL لارنى قۇرىدۇ
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — ئىجادكارلارنىڭ بىر تور بېكەت كۆپەيتىلىشى يۈز بەرگەندىن كېيىن hook قىلىشىغا يول قويىدۇ.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin ئىجادكارلىرىنىڭ قوشۇمچە hooks قوشۇشىغا يول قويىدۇ
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — قوشۇمچە تازىلاش ئۈچۈن hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — يېڭى domain قوشۇش modal ئىلتىماسىنى بىر تەرەپ قىلىشتىن بۇرۇن ئىجرا بولىدۇ.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin ئىجادكارلىرىنىڭ ئېھتىياج بولسا meta data نى باشقىچە ئۇسۇللاردا ساقلىشىغا يول قويىدۇ.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin ئىجادكارلىرىنىڭ ئېھتىياج بولسا ئىشلەتكۈچى meta data نى باشقىچە ئۇسۇللاردا ساقلىشىغا يول قويىدۇ.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ئىناۋەتسىز magic link token ئۇچرىغاندا ئىجرا بولىدۇ.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ئىشلەتكۈچى magic link ئارقىلىق كىرگەندىن كېيىن ئىجرا بولىدۇ.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — plugin ئىجادكارلىرىنىڭ خېرىدار قوشۇلغاندا قوشۇمچە ئىشلارنى قىلىشىغا يول قويىدۇ.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — بىر entity ئۈچۈن MCP ئىقتىدارلىرى تىزىملاتقاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter دەسلەپلەشتۈرۈلگەندىن كېيىن ئىجرا بولىدۇ.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — ئەزالىق ئەمەلدىن قالدۇرۇلغاندىن كېيىن قوزغىلىدۇ.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ئەزالىق يېڭىلانغاندىن كېيىن قوزغىلىدۇ.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — ئەزالىق ئەمەلدىن قالدۇرۇلۇشتىن بۇرۇن قوزغىلىدۇ.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ئەزالىق يېڭىلىنىشتىن بۇرۇن قوزغىلىدۇ.
+- [wu_model_post_save](./Actions/wu_model_post_save) — بىر ئوبيېكت ساندانغا ساقلانغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_page_added](./Actions/wu_page_added) — plugin ئىجادكارلىرىنىڭ بەتلەر تىزىملاتقاندا قوشۇمچە ئىشلارنى ئىجرا قىلىشىغا يول قويىدۇ.
+- [wu_page_after_render](./Actions/wu_page_after_render) — plugin ئىجادكارلىرىنىڭ بەتنى بېسىپ چىقارغاندىن كېيىن قوشۇمچە مەزمۇن قوشۇشىغا يول قويىدۇ
+- [wu_page_before_render](./Actions/wu_page_before_render) — plugin ئىجادكارلىرىنىڭ بەتنى بېسىپ چىقىرىشتىن بۇرۇن قوشۇمچە مەزمۇن قوشۇشىغا يول قويىدۇ.
+- [wu_page_load](./Actions/wu_page_load) — plugin ئىجادكارلىرىنىڭ بەتلىرىمىزگە قوشۇمچە hooks قوشۇشىغا يول قويىدۇ.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — plugin ئىجادكارلىرىنىڭ بەتنى بېسىپ چىقارغاندىن كېيىن قوشۇمچە مەزمۇن قوشۇشىغا يول قويىدۇ
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — plugin ئىجادكارلىرىنىڭ بەتنى بېسىپ چىقىرىشتىن بۇرۇن قوشۇمچە مەزمۇن قوشۇشىغا يول قويىدۇ.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin ئىجادكارلىرىنىڭ بەتلىرىمىزگە قوشۇمچە hooks قوشۇشىغا يول قويىدۇ.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — بۇ بەت ئۈچۈن widgets تىزىملاتقاندىن كېيىن ئىجرا بولىدۇ.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons لارنىڭ ئىقتىدار بۆلەكلىرىنى integrations غا ئۇلىشىغا يول قويۇش ئۈچۈن ئىجرا بولىدۇ.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations لارنىڭ ئۆزىنى تىزىملىتىشىغا يول قويۇش ئۈچۈن ئىجرا بولىدۇ.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — قوشۇمچە يوللارنىڭ تىزىملىتىلىشىغا يول قويىدۇ.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin ئىجادكارلىرىنىڭ ساقلاش جەريانىغا actions قوشۇشىغا يول قويىدۇ
+- [wu_site_created](./Actions/wu_site_created) — بىر site تۇنجى قېتىم قۇرۇلغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — زۆرۈر بولسا، plugin ئىجادكارلىرىنىڭ قوشۇمچە hooks قوشۇشىغا يول قويىدۇ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer مۇھىتى ئىچىدە بولغاندا ئىجرا بولىدۇ.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook نى قوزغىتىدۇ.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — بىر ئوبيېكت database قا ساقلانغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — بىر ئوبيېكت database قا ساقلانغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — بىر ئوبيېكت database قا ساقلانغاندىن كېيىن ئىجرا بولىدۇ.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin ئىجادكارلىرىنىڭ قۇلۇپ ئېچىش جەريانىغا actions قوشۇشىغا يول قويىدۇ.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — دەلىللەش cookie نىڭ ۋاقتى توشۇش مۇددىتىنىڭ ئۇزۇنلۇقىنى سۈزۈيدۇ.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — دەلىللەش قايتا يۆتكەش scheme نى سۈزۈيدۇ.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ئېھتىيات يۈزىسىدىن، ئەسلى WP Filter نى بۇ يەردە قايتا كۆپەيتىدۇ.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin ئىجادكارلىرىغا previewer دا ئىشلىتىلىدىغان URL نى سۈزۈشكە يول قويىدۇ
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie پەقەت HTTPS ئارقىلىقلا ئەۋەتىلىشى كېرەك-كېرەك ئەمەسلىكىنى سۈزۈيدۇ.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — بىخەتەر دەلىللەش قايتا يۆتكەشنى ئىشلىتىش-ئىشلەتمەسلىكنى سۈزۈيدۇ.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — كىرگەن cookie پەقەت HTTPS ئارقىلىقلا ئەۋەتىلىشى كېرەك-كېرەك ئەمەسلىكىنى سۈزۈيدۇ.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookies نىڭ ھەقىقەتەن client قا ئەۋەتىلىشىنىڭ ئالدىنى ئېلىشقا يول قويىدۇ.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — قايتا يۆتكەش URL نى بەلگىلەيدۇ.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filters ئارقىلىق قوشۇمچە باسقۇچلارنى قوشىدۇ
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin ئىجادكارلىرىغا render context قا پۈتكۈل دائىرىدە قوشۇمچە ئۆزگەرگۈچى قوشۇشقا يول قويىدۇ.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — ئىجادكارلارغا بۇ تەكشۈرۈشنى قىسقا يول بىلەن ئايلىنىپ ئۆتۈشكە يول قويىدۇ.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — يېڭى domain قوشۇش modal نىڭ field لىرىنى سۈزۈيدۇ.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — ئىجادكارلارغا setup fee line item غا ئۆزگەرتىش كىرگۈزۈشكە يول قويىدۇ.
+- [wu_admin_notices](./Filters/wu_admin_notices) — ئىجادكارلارغا Ultimate Multisite قوشقان admin ئۇقتۇرۇشلىرىنى سۈزۈشكە يول قويىدۇ.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — ئۆزگەرتىلگەندىن كېيىن سۈزۈيدۇ.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — ئەمدى، بىز بارلىق تۈرلەرنى بىر تەرەپ قىلىمىز.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin ئىجادكارلىرىغا چەكلىمىلەرنى قىسقا يول بىلەن ئايلىنىپ ئۆتۈشكە يول قويىدۇ.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — تىزىملىتىش ھەققى قوللىنىلىشى كېرەك-كېرەك ئەمەسلىكىنى سۈزۈيدۇ.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — ئەسلى api arguments نى سۈزۈيدۇ.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin ئىجادكارلىرىغا billing address field لىرىنى سۈزۈشكە يول قويىدۇ.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — ئىجادكارلارغا output نى ئايلىنىپ ئۆتۈپ يېڭىسىنى بەلگىلەشكە يول قويىدۇ
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — ئىجادكارلارغا نۆۋەتتىكى user نى unset قىلىش code ىنى ئايلىنىپ ئۆتۈشكە يول قويىدۇ.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "تەكرارلىنىدىغان سومما" جەمئىيىنى سۈزۈيدۇ.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "دەسلەپكى سومما" جەمئىيىنى سۈزۈيدۇ.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "دەسلەپكى سومما" جەمئىيىنى سۈزۈيدۇ.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin ئىجادكارلىرىغا credit قىممىتىگە ئارىلىشىشقا يول قويىدۇ.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain records غا ئايلانماسلىقى كېرەك بولغان ئورتاق checkout-form base domains نى سۈزۈيدۇ.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — يېڭى field templates قوشىدىغان APIs لىرىمىز بۇ يەرگە hook قىلىنىدۇ.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — يېڭى field types قوشىدىغان APIs لىرىمىز بۇ يەرگە hook قىلىنىدۇ.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — خاتالىق ئۇچۇرلىرىنى سۈزۈيدۇ.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — ئىجادكارلارغا بىر field نىڭ ئاپتوماتىك تاپشۇرۇلىدىغان-تاپشۇرۇلمايدىغانلىقىنى تەكشۈرۈشنى ئايلىنىپ ئۆتۈشكە يول قويىدۇ.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin ئىجادكارلىرىغا form validator ئىچىدە خاس aliases قوشۇشقا يول قويىدۇ.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin ئىجادكارلىرىغا validation rules نى سۈزۈشكە يول قويىدۇ.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — خالىمايدىغان Params نى unset قىلىدۇ.
+- [wu_contains_element](./Filters/wu_contains_element) — ئىجادكارلارغا دەسلەپكى ئىزدەش نەتىجىلىرىنى ئۆزگەرتىشكە يول قويىدۇ.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host تەمىنلىگۈچىلەرگە constant نى باشقىچە ئورنىتىشقا يول قويىدۇ.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — دۆلەتنىڭ مەمۇرىي تارماق بۆلۈنمىلىرىنىڭ چىرايلىق نامىنى قايتۇرىدۇ.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — بىر دۆلەتتىكى بىر state ئۈچۈن شەھەرلەر تىزىملىكىنى قايتۇرىدۇ.
+- [wu_country_get_states](./Filters/wu_country_get_states) — بۇ دۆلەت ئۈچۈن states تىزىملىكىنى قايتۇرىدۇ.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — ئىجادكارلارغا كۆڭۈلدىكى ھەرىكەتنى ئۆزگەرتىپ نۆۋەتتىكى customer نى باشقىچە بەلگىلەشكە يول قويىدۇ.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — ئىجادكارلارغا كۆڭۈلدىكى ھەرىكەتنى ئۆزگەرتىپ نۆۋەتتىكى membership نى باشقىچە بەلگىلەشكە يول قويىدۇ.
+- [wu_current_set_site](./Filters/wu_current_set_site) — ئىجادكارلارغا كۆڭۈلدىكى ھەرىكەتنى ئۆزگەرتىپ نۆۋەتتىكى site نى باشقىچە بەلگىلەشكە يول قويىدۇ.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — ئىجادكارلارغا site باشقۇرۇش URL پارامېتىرلىرىنى ئۆزگەرتىشكە يول قويىدۇ.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin ئىجادكارلىرىغا ئۇلانمىلارنى سۈزۈشكە يول قويىدۇ.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — نەتىجىلەرنى بېكىتىش ئۈچۈن plugin ئىجادكارلىرىغا يېڭى تەكشۈرۈشلەرنى قوشۇشقا يول قويىدۇ.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — كېيىنچە قوشۇمچە بۆلەكلەرنى قوشۇشىمىز كېرەك بولۇشى مۇمكىن.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — ئاچقۇچىلارنىڭ بۇ پارسېرنى قوشۇمچە قۇرغۇچىلار ياكى plugin لار بىلەن ئىشلىيەلەيدىغان قىلىپ كېڭەيتىشىگە يول قويۇش ئۈچۈن ئادەتتىكى filter قوشىدۇ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — قوشۇمچە پارول قائىدىلىرىنى مەجبۇرىي ئىجرا قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — ھاسىل قىلىنغان خېرىدار ئىشلەتكۈچى نامىنى filter قىلىدۇ.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — plugin ئاچقۇچىلارنىڭ checkout بېتىنىڭ ئالدىن تەڭشەلگەنلىرىنى filter قىلىشىغا يول قويىدۇ.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — ئاچقۇچىلارنىڭ بۇ ھەرىكەتنى ئايلىنىپ ئۆتۈش ئۈچۈن يېڭى جەدۋەل slug لىرىنى قوشۇشىغا يول قويىدۇ.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — ئاچقۇچىلار ۋە add-on لارنىڭ يېڭى كۆچۈرۈش قەدەملىرىنى قوشۇشىغا يول قويىدۇ
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — بۇ filter ھەققىدە تۆۋەندە، مۇشۇ ئوخشاش ئۇسۇلدا تېخىمۇ كۆپ كۆرۈڭ.
+- [wu_get_post_types](./Filters/wu_get_post_types) — ئاچقۇچىلارنىڭ قايسى يازما تۈرلىرى كۆرسىتىلىشى كېرەكلىكىنى تاللىشىغا يول قويىدۇ.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — قۇرلارنى قايتۇرىدۇ، filter قىلغىلى بولىدۇ
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — ئاچقۇچىلارنىڭ دائىرە/يول جۈپلىرىنى ئۆزگەرتىشىگە يول قويىدۇ.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — hosting بىرلەشتۈرۈش تەڭشىكى ئۈچۈن wizard بۆلەكلىرىنى filter قىلىدۇ.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — بىر جەدۋەلدىكى ساھەلەرنى filter قىلىدۇ. جەدۋەل filter نامىدىكى ID ئارقىلىق پەرقلەندۈرۈلىدۇ.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — مۇستەقىل ھەق ئېلىش دەۋرى بار مەھسۇلات تۈرلىرىنى filter قىلىدۇ.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — plugin ئاچقۇچىلارنىڭ API ئۈچۈن بېرىلگەن ھالەتنى مەجبۇرىي بەلگىلىشىگە يول قويىدۇ.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — plugin ئاچقۇچىلارنىڭ ئېچىش ھالىتى ئۈچۈن قوشۇمچە سىناقلارنى قوشۇشىغا يول قويىدۇ.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — plugin ئاچقۇچىلارنىڭ MCP ماسلاشتۇرغۇچىسى ئۈچۈن بېرىلگەن ھالەتنى مەجبۇرىي بەلگىلىشىگە يول قويىدۇ.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — بىخەتەرلىك سەۋەبلىرى تۈپەيلى، hook قىلىشقا بولىدىغان مەشغۇلاتلار سانىنى چەكلەيمىز. بۇ filter ئاچقۇچىلارنىڭ كېڭەيتىشىگە يول قويىدۇ
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — بېرىلگەن يازما تۈرىنىڭ بۇ plan دا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى تەكشۈرىدۇ؛ plugin ئاچقۇچىلارنىڭ قايتۇرۇلغان قىممەتنى filter قىلىشىغا يول قويىدۇ
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP ئادرېسىنى دەلىللەشنى مەجبۇرىي ئىجرا قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — user agent دەلىللەشنى مەجبۇرىي ئىجرا قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — ھاسىل قىلىنغان سېھىرلىك ئۇلانما URL نى filter قىلىدۇ.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — سېھىرلىك ئۇلانمىلارنىڭ قوزغىتىلغان-قوزغىتىلمىغانلىقىنى filter قىلىدۇ.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — بىر دائىرەنى primary قىلغاندىن كېيىنكى قايتا يوللاش URL نى filter قىلىدۇ.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ئاپتوماتىك قايتا يوللاشنىڭ ئالدىنى ئالىدىغان پارامېتىرلارنىڭ چىقىرىۋېتىش تىزىملىكىنى قۇرىدۇ.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP ئىقتىدارىنى كىرگۈزۈش قارارىنى قاپلاپ يېزىش ئۈچۈن filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — ھېسابلانغان مۇددىتى توشۇش چېسلاسىنى filter قىلىدۇ.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — يېڭىلانغاندىن كېيىن بەلگىلىنىدىغان ھېسابلانغان مۇددىتى توشۇش چېسلاسىنى filter قىلىدۇ.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — ئاچقۇچىلارنىڭ يېڭى يېڭىلاش جەدۋەل slug لىرىنى قوشۇشىغا يول قويىدۇ.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — ئەڭ قىسقا پارول ئۇزۇنلۇقىنى filter قىلىدۇ.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — تەلەپ قىلىنىدىغان ئەڭ تۆۋەن پارول كۈچىنى filter قىلىدۇ (zxcvbn نومۇرى).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — plugin ئاچقۇچىلارنىڭ، ۋە ئۆزىمىزنىڭ، تەھرىرلەش بەتلىرىمىزگە مەشغۇلات ئۇلانمىلىرىنى قوشۇشىغا يول قويىدۇ
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — پاروللاردا كىچىك ھەرپلەرنى تەلەپ قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_password_require_number](./Filters/wu_password_require_number) — پاروللاردا سانلارنى تەلەپ قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_password_require_special](./Filters/wu_password_require_special) — پاروللاردا ئالاھىدە بەلگىلەرنى تەلەپ قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — پاروللاردا چوڭ ھەرپلەرنى تەلەپ قىلىش-قىلماسلىقنى filter قىلىدۇ.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — ئىشلەتكۈچىنىڭ كۈتۈۋاتقان چىقىملار ھەققىدىكى ئۇچۇرنى ئۆزگەرتىشىگە يول قويىدۇ.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — plan سۈپىتىدە مۇئامىلە قىلىنىشى كېرەك بولغان مەھسۇلات تۈرلىرىنى filter قىلىدۇ.
+- [wu_post_count](./Filters/wu_post_count) — plugin ئاچقۇچىلارنىڭ ئومۇمىي ساننى ئۆزگەرتىشىگە يول قويىدۇ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — plugin ئاچقۇچىلارنىڭ قايسى يازما ھالىتى سانىلىشى كېرەكلىكىنى ئۆزگەرتىشىگە يول قويىدۇ. سۈكۈتتە، ئېلان قىلىنغان ۋە شەخسىي يازمىلار سانىلىدۇ
+- [wu_post_default_status](./Filters/wu_post_default_status) — ئوبيېكت سانلىق مەلۇماتلىرى ساندانغا ساقلىنىشتىن بۇرۇن filter قىلىدۇ.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — ئاچقۇچىلارنىڭ تەڭشەكلەرنى Ultimate Multisite ساقلاشتىن بۇرۇن filter قىلىشىغا يول قويىدۇ.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — تەلەپنى داۋاملاشتۇرۇشقا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى filter قىلىدۇ.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — تەلەپنى داۋاملاشتۇرۇشقا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى filter قىلىدۇ.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — تەلەپ بىلەن داۋاملاشتۇرۇشقا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى سۈزۈپ بېرىدۇ.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — تەلەپ بىلەن داۋاملاشتۇرۇشقا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى سۈزۈپ بېرىدۇ.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — تەلەپ بىلەن داۋاملاشتۇرۇشقا رۇخسەت قىلىنغان-قىلىنمىغانلىقىنى سۈزۈپ بېرىدۇ.
+- [wu_return_url](./Filters/wu_return_url) — ئاچقۇچىلارغا checkout جەريانلىرىدىن كېيىن ئىشلىتىلىدىغان gateway قايتىش URL نى ئۆزگەرتىشكە يول قويىدۇ.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — plugin ئاچقۇچىلارغا تېخىمۇ كۆپ ئىزدەش model فۇنكسىيەلىرىنى قوشۇشقا يول قويىدۇ.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — ئاچقۇچىلارغا قوشۇمچە setup wizard قەدەملىرىنى قوشۇشقا يول قويىدۇ.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — يېڭى قۇرۇلغان تور بېكەت ئۈچۈن Ultimate Multisite نىڭ domain خاتىرىسى قۇرۇشى كېرەك-كېرەك ئەمەسلىكىنى سۈزۈپ بېرىدۇ.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — ئاچقۇچىلارغا قايتا يۆنىلىشنى قىسقا يول بىلەن توختىتىپ، ئۇنىڭ يۈز بېرىشىنىڭ ئالدىنى ئېلىشقا يول قويىدۇ.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — handler نى قايتا يېزىشقا يول قويىدۇ
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — تور بېكەتلەر ئۈچۈن بار بولغان تۈركۈملەپ مەشغۇلاتلارنى سۈزۈڭ.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — تور ئىچىدىكى get pluginssites ئۈچۈن قىممەتنى ئۆزگەرتىدىغان سۈزگۈچ.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — domain لەر ئارا single-sign-on ئىقتىدارىنى قوزغىتىش/چەكلەش.
+- [wu_sso_url](./Filters/wu_sso_url) — domain لەر ئارا خېرىدار مەشغۇلاتلىرى ئۈچۈن قايتۇرۇلۇشتىن بۇرۇن ھاسىل قىلىنغان SSO URL لەرنى سۈزۈپ بېرىدۇ.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription سانلىق مەلۇماتلىرىنى سۈزۈڭ. success_url ياكى cancel_url نى قاپلىۋېتەلەيدۇ.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — payment intent ئارگۇمېنتلىرىنى سۈزۈپ بېرىدۇ.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — تەكشۈرۈلىدىغان plan نىڭ ID سىنى سۈزۈپ بېرىدۇ. ئەگەر بۇ مەۋجۇت بولسا، يېڭى مۇشتەرىلىك بۇ plan نى ئىشلىتىدۇ.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — تەكشۈرۈلىدىغان مەھسۇلاتنىڭ ID سىنى سۈزۈپ بېرىدۇ. ئەگەر بۇ مەۋجۇت بولسا، يېڭى مۇشتەرىلىك بۇ مەھسۇلاتنى ئىشلىتىدۇ.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe ھەق ئېلىش تاللانمىلىرى بىلەن ئەۋەتىلگەن idempotency_key قىممىتىنى سۈزۈپ بېرىدۇ.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — بۇ webhook بىلەن باغلانغان ئەزالىق خاتىرىسىنى سۈزۈپ بېرىدۇ.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — سانلىق مەلۇمات meta سى database قا ساقلىنىش ئۈچۈن serialization قىلىنىشتىن بۇرۇن ئۇنى سۈزۈپ بېرىدۇ.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — ئوبيېكت سانلىق مەلۇماتلىرى database قا ساقلىنىشتىن بۇرۇن ئۇنى سۈزۈپ بېرىدۇ.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — ئاچقۇچىلارغا unlock قىلىش ئۈچۈن upgrade URL نى ئۆزگەرتىشكە يول قويىدۇ
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — mapping ئىشلىتىلىشى كېرەك-كېرەك ئەمەسلىكىنى بەلگىلەيدۇ
+- [wu_username_from_email](./Filters/wu_username_from_email) — يېڭى خېرىدار username نى سۈزۈڭ.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — ئاچقۇچىلارغا ئەزالىق ئىشلەتكۈچىلىرى چېكى ھەققىدىكى ئۇچۇرنى ئۆزگەرتىشكە يول قويىدۇ
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — ئاچقۇچىلارغا ئالماشتۇرغىلى بولىدىغان تىزىملىككە قوشۇمچە ھۆججەت قىسقۇچلارنى قوشۇشقا يول قويىدۇ.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — بۇ entity ئۈچۈن قايسى sub_commands قوزغىتىلغانلىقىنى سۈزۈپ بېرىدۇ.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — بىز constants لىرىمىزنى قەيەرگە قىستۇرالايدىغانلىقىمىزنى تېپىشقا ئۇرۇنغاندا ئۈچ pattern نى تەكشۈرىمىز:

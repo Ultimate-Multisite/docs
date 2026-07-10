@@ -3,7 +3,7 @@ title: Listahan sa mga Nasud
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Pag-re-order sa listahan sa mga nasud sa Ultimate Multisite
+# Pag-re-order sa listahan sa mga nasud sa Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Ang dropdown para pumili og nasud gi-order base sa alpabeto gamit ang English variants sa mga ngalan sa nasud. Mahimong kini nga ang home country sa imong kompanya ug/o kadaghanan sa imong mga kustomer anaa sa tunga-tunga sa usa ka dako nga listahan sa mga ngalan sa nasud.
 

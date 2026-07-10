@@ -4,11 +4,11 @@ title: Filtru - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filter: wu_country_get_cities
+# Filter: wu_country_get_cities {#filter-wucountrygetcities}
 
 Returnează lista de orașe pentru un stat dintr-o țară.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -17,13 +17,13 @@ Returnează lista de orașe pentru un stat dintr-o țară.
 | $state_code | `string` | Cod ISO de două litere pentru stat. |
 | $current_country | `\WP_Ultimo\Country\Country` | Instanța clasei curente. |
 
-### De la
+### De la {#since}
 
 - 2.0.11
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) la linia 146
 
 
-## Returnează
+## Returnează {#returns}
 Lista filtrată de state.

@@ -1,136 +1,138 @@
 ---
-title: Domain xaritasi qanday sozlanadi
+title: Domen xaritalashni qanday sozlash mumkin
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domenlarni Xarita Qilishni Sozlash (v2)
+# Domen xaritalashni qanday sozlash kerak (v2) {#how-to-configure-domain-mapping-v2}
 
-_**MUHIM Eslatma: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
+_**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
 
-Premium tarmoqning eng kuchli xususiyatlaridan biri — mijozlaringizga o'z sahifalarga yuqori darajadagi domen (top-level domain) qo'shish imkonini taklif qilishdir. Keyin, qaysi ko'proq professional ko'rinadi: [_**joesbikeshop.yournetwork.com**_ yoki [_**joesbikeshop.com**_? Shuning uchun Ultimate Multisite bu xususiyatni uchinchi tomon pluginidan foydalanishga hojat qilmaysiz, unda allaqachon mavjud holatda taklif qiladi.
+Premium tarmoqning eng kuchli xususiyatlaridan biri — mijozlarimizga o‘z saytlariga yuqori darajali domen ulash imkoniyatini berishdir. Axir, qaysi biri professionalroq ko‘rinadi: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoki [_**joesbikeshop.com**_](http://joesbikeshop.com)? Shu sababli Ultimate Multisite bu xususiyatni uchinchi tomon pluginlaridan foydalanish zaruratisiz, ichki tarzda taqdim etadi.
 
-## Domen xaritasi nima?
+## Domen xaritalash nima? {#whats-domain-mapping}
 
-Nomida ko'rsatilganidek, domen xaritasi — Ultimate Multisite tomonidan maxsus domen so'rovi qabul qilish va uni tarmoqdagi tegishli sayt bilan bog'lash imkoniyatidir, shu domen qo'shilgan holda.
+Nomidan ko‘rinib turibdiki, domen xaritalash — Ultimate Multisite tomonidan taqdim etiladigan imkoniyat bo‘lib, maxsus domen uchun kelgan so‘rovni qabul qiladi va ushbu so‘rovni tarmoqdagi aynan shu domen ulangan mos saytga yo‘naltiradi.
 
-### Ultimate Multisite Tarmoqda domen xaritasi qanday sozlanadi
+### Ultimate Multisite tarmog‘ingizda domen xaritalashni qanday sozlash kerak {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domen xaritasi ishlashi uchun sizning tomoningizdan ba'zi sozlamalar talab etiladi. Xursandchilikka, Ultimate Multisite bu og'ir ishni avtomatlashtiradi va sizga talablarga oson mos kelish imkonini beradi.
+Domen xaritalash ishlashi uchun siz tomondan ba’zi sozlashlar talab etiladi. Yaxshiyamki, Ultimate Multisite murakkab ishlarni siz uchun avtomatlashtiradi, shunda talablarni oson bajarishingiz mumkin.
 
-Ultimate Multisite o'rnatilishi davomida, wizard (ko'rsatuvchi) **sunrise.php** faylini belgilangan papkaga avtomatik nusxalaydi va o'rnatadi. **Bu bosqich tugatilmaguncha wizard sizga keyingi qadamga o'tishga ruxsat bermaydi**.
+Ultimate Multisite o‘rnatilishi davomida ustasi **sunrise.php** faylini avtomatik ravishda belgilangan papkaga nusxalaydi va o‘rnatadi. **Bu qadam yakunlanmaguncha usta davom etishingizga ruxsat bermaydi**.
 
-<!-- Screenshot unavailable: Ultimate Multisite o'rnatish wizardi sunrise.php qadami bilan -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Bu shuni anglatadiki, Ultimate Multisite o'rnatish wizardi tarmoqingizni sozlaganidan so'ng, siz darhol maxsus domen xaritasi qilishni boshlashingiz mumkin.
+Bu shuni anglatadiki, Ultimate Multisite o‘rnatish ustasi tarmog‘ingizni sozlashni yakunlagach, maxsus domenni darhol xaritalashni boshlashingiz mumkin.
 
-Eslatma: Ultimate Multisite'dagi domen xaritasi majburiy emas. Siz WordPress Multisite ning mahalliy domen xaritasi funksiyasidan yoki boshqa bir domen xaritasi yechimidan foydalanish imkoniyatiga ega bo'lsangiz ham, shunday qilib tanlov sizda.
+E’tibor bering, Ultimate Multisite ichidagi domen xaritalash majburiy emas. Sizda WordPress Multisite’ning mahalliy domen xaritalash funksiyasidan yoki boshqa istalgan domen xaritalash yechimidan foydalanish imkoniyati bor.
 
-Agar siz Ultimate Multisite domen xaritani boshqa domen xaritasi yechimlari uchun o'chirish kerak bo'lsa, buni **Ultimate Multisite > Settings > Domain Mapping** ichidagi sozlamalar orqali o'chirish mumkin.
+Agar boshqa domen xaritalash yechimlariga yo‘l berish uchun Ultimate Multisite domen xaritalashini o‘chirib qo‘yishingiz kerak bo‘lsa, bu xususiyatni **Ultimate Multisite > Sozlamalar > Domen xaritalash** bo‘limida o‘chirishingiz mumkin.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Admin yo‘naltirish, xaritalash xabari va DNS parametrlarini ko‘rsatadigan Domen xaritalash sozlamalari sahifasi](/img/config/domain-mapping-settings.png)
 
-Bu variantning oldida siz ham **Force Admin Redirect** (Adminni majburiy yo'naltirish) variantini ko'rishingiz mumkin. Bu variant siz mijozlarning o'zlarining maxsus domen va sousdomain orqali admin paneli bilan qaysi biri orqali kirishi mumkinligini boshqarish imkonini beradi.
+Ushbu parametrning aynan pastida **Admin yo‘naltirishni majburlash** parametrini ham ko‘rishingiz mumkin. Bu parametr mijozlaringiz o‘z admin dashboardlariga ham maxsus domeni, ham subdomeni orqali kira oladimi yoki faqat ulardan bittasi orqali kira oladimi — shuni boshqarish imkonini beradi.
 
-Agar siz **Force redirect to mapped domain** (Xaritilgan domenga majburiy yo'naltirish) ni tanlasangiz, mijozlarning admin paneli faqat o'zlarining maxsus domenlari orqali kirishi mumkin bo'ladi.
+Agar **Xaritalangan domenga majburiy yo‘naltirish** ni tanlasangiz, mijozlaringiz o‘z admin dashboardlariga faqat maxsus domenlari orqali kira oladi.
 
-**Force redirect to network domain** (Tarmoq domeniga majburiy yo'naltirish) variant esa teskarisini amalga oshiradi – ular maxsus domenlarida tizimga kirishga urinishsa ham, faqat sousdomainlari orqali panellarga kirishi mumkin bo'ladi.
+**Tarmoq domeniga majburiy yo‘naltirish** parametri esa buning butunlay teskarisini bajaradi — mijozlaringiz, hatto maxsus domenlari orqali kirishga urinsa ham, dashboardlariga faqat subdomenlari orqali kirishiga ruxsat beriladi.
 
-Va **Allow access to the admin by both mapped domain domain and network domain** (Xaritilgan domen va tarmoq domeni orqali adminga kirishga ruxsat berish) variant ularga ham sousdomain, ham maxsus domen orqali panellarga kirish imkonini beradi.
+**Admin qismiga ham xaritalangan domen domeni, ham tarmoq domeni orqali kirishga ruxsat berish** parametri esa ularga admin dashboardlariga ham subdomen, ham maxsus domen orqali kirish imkonini beradi.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Uchta yo‘naltirish variantini ko‘rsatgan holda ochilgan Admin yo‘naltirish ochiluvchi ro‘yxati](/img/config/domain-mapping-redirect-options.png)
 
-Maxsus domenni xaritlashning ikki usuli bor. Birinchisi – tarmoq admin panelidan superadmin sifatida domen nomini xaritlash, ikkinchisi esa hisob sahifasidagi sousite admin paneli orqali amalga oshirishdir.
+Maxsus domenni xaritalashning ikki usuli bor. Birinchisi — super admin sifatida tarmoq admin dashboardingizdan domen nomini xaritalash, ikkinchisi esa Account sahifasi ostidagi quyi sayt admin dashboardi orqali.
 
-Lekin maxsus domenni tarmoqdagi biror sousitega xaritlashdan oldin, domen nomining **DNS sozlamalarining** to'g'ri konfiguratsiya qilingligiga ishonch hosil qilishingiz kerak.
+Ammo tarmog‘ingizdagi quyi saytlardan biriga maxsus domenni xaritalashni boshlashdan oldin, domen nomining **DNS sozlamalari** to‘g‘ri sozlanganiga ishonch hosil qilishingiz kerak bo‘ladi.
 
 ###
 
-### Domen DNS sozlamalarini to'g'ri konfiguratsiya qilish
+### Domen DNS sozlamalari to‘g‘ri sozlanganiga ishonch hosil qilish {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Mapping ishlari ishlamasligi uchun siz rejalashtirayotgan domenning tarmoqning IP manziliga yo'naltirilganligini ta'minlashingiz kerak. Eslatma, sizga Tarmoq IP manzili kerak – bu Ultimate Multisite o'rnatilgan domenning IP manzili bo'lishi kerak, xohlagan domen uchun mo'ljallangan maxsus domen IP manzil emas. Ma'lum bir domen IP manzilini qidirish uchun biz [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) kabi joylarga borishingizni taklif qilamiz, masalan.
+Xaritalash ishlashi uchun xaritalashni rejalashtirayotgan domeningiz tarmog‘ingizning IP manziliga yo‘naltirilganiga ishonch hosil qilishingiz kerak. E’tibor bering, sizga tarmoq IP manzili kerak — Ultimate Multisite o‘rnatilgan domenning IP manzili — xaritalamoqchi bo‘lgan maxsus domenning IP manzili emas. Muayyan domenning IP manzilini qidirish uchun, masalan, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) saytiga kirishni tavsiya qilamiz.
 
-Domenni to'g'ri mapping qilish uchun siz **DNS** konfiguratsizga o'sha **IP manziliga** yo'naltirilgan **A RECORD** qo'shishingiz kerak. DNS boshqaruvi turli domen ro'yxatgiruvchilarda juda farq qiladi, ammo agar siz " _XXXX_ da A Record yaratish" deb qidirsangiz (masalan: " _GoDaddy_ da A Record yaratish"), bu mavzuni qamrab olgan ko'p tutoriallar onlaynda mavjud.
+Domenni to‘g‘ri xaritalash uchun **DNS** konfiguratsiyangizda o‘sha **IP manzil**ga yo‘naltirilgan **A RECORD** qo‘shishingiz kerak. DNS boshqaruvi turli domen registratorlari orasida juda farq qiladi, ammo internetda bu mavzuni yoritgan ko‘plab qo‘llanmalar bor; XXXX sizning domen registratoringiz bo‘lgan holda “ _XXXX’da A Record yaratish_ ” deb qidirsangiz bo‘ladi (masalan: “ _GoDaddy’da_ _A Record yaratish_ ”).
 
-Agar buni ishlatishda muammolarga duch kelsangiz, **domen ro'yxatgiruvchining yordam xizmatiga murojaating**iz mumkin va ular sizga bu qismda yordam berishadi.
+Agar buni ishlatishda qiyinchilikka duch kelsangiz, **domen registratoringiz qo‘llab-quvvatlash xizmatiga murojaat qiling** va ular bu qismda sizga yordam bera oladi.
 
-Agar mijozlaringiz o'z domenlarini mapping qilishga ruxsat etmoqchi bo'lsangiz, ular bu qismdagi ishni o'zlari bajarishi kerak bo'ladi. Agar ular A Record yaratishga qodirsiz deb hisoblasalar, ularni o'z ro'yxatgiruvchining yordam tizimiga yo'naltiring.
+Agar mijozlaringizga o‘z domenlarini xaritalashga ruxsat berishni rejalashtirsangiz, ular bu qismdagi ishni o‘zlari bajarishlari kerak bo‘ladi. Agar ular A Record yarata olmasa, ularni o‘z registratorining qo‘llab-quvvatlash tizimiga yo‘naltiring.
 
-### Super Admin sifatida maxsus domen nomini mapping qilish
+### Maxsus domen nomini Super Admin sifatida xaritalash {#mapping-custom-domain-name-as-super-admin}
 
-Tarmoqning super admini sifatida tizimga kirganingizda, siz **Ultimate Multisite > Domains** bo'limidan o'tib, maxsus domen nomlarini oson qo'shishingiz va boshqarishingiz mumkin.
+Tarmog‘ingizda super admin sifatida tizimga kirganingizda, **Ultimate Multisite > Domenlar** bo‘limiga o‘tib, maxsus domen nomlarini osongina qo‘shishingiz va boshqarishingiz mumkin.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite ichidagi domenlar ro‘yxati sahifasi](/img/admin/domains-list.png)
 
-Bu sahifada yuqoridagi **Add Domain** tugmasiga bosishingiz mumkin va bu sizga modal oynani ochadi. Bu yerda siz **custom domain name** (maxsus domen nomi), maxsus domen nomini qo'llashni istagan **subsite** (ikki qismdagi sayt) ni sozlab to'ldirishingiz va uni **primary domain** (asosiy domen) sifatida belgilash kerakmi yoki yo'qligini aniqlashingiz mumkin (e'tibor bering, bir subsitega **bir nechta domen nomlarini moslash** mumkin).
+Ushbu sahifada yuqoridagi **Domen qo‘shish** tugmasini bosishingiz mumkin va bu modal oynani ochadi; unda siz **maxsus domen nomi**ni, maxsus domen nomini qo‘llamoqchi bo‘lgan **quyi sayt**ni belgilab to‘ldirishingiz hamda uni **asosiy domen** nomi sifatida o‘rnatishni xohlaysizmi-yo‘qmi, shuni tanlashingiz mumkin (e’tibor bering, **bir quyi saytga bir nechta domen nomlarini xaritalashingiz** mumkin).
 
-![Domain nomi, sayt tanlovchi va asosiy domen tugmasi bilan Add Domain modal](https://img/admin/domain-add-modal.png)
+![Domen nomi, sayt tanlagichi va asosiy domen almashtirgichi bo‘lgan Domen qo‘shish modal oynasi](/img/admin/domain-add-modal.png)
 
-Barcha ma'lumotlarni kiritganingizdan so'ng, siz pastdagi **Add Existing Domain** tugmasiga bosishingiz mumkin.
+Barcha ma’lumotlarni kiritganingizdan so‘ng, pastdagi **Mavjud domenni qo‘shish** tugmasini bosishingiz mumkin.
 
-Bu maxsus domenning DNS ma'lumotlarini tekshirish va olish jarayonini boshlaydi. Jarayonni qanday o'tishini kuzatib borishingiz uchun sahifaning pastki qismida log ham ko'rasiz. Bu jarayon tugash uchun bir nechta daqiqa vaqt olishi mumkin.
+Bu maxsus domenning DNS ma’lumotlarini tekshirish va olish jarayonini boshlaydi. Jarayon qanday ketayotganini kuzatishingiz uchun sahifaning pastida log ham ko‘rasiz. Bu jarayon yakunlanishi uchun bir necha daqiqa vaqt olishi mumkin.
 
-Ultimate Multisite v2.13.0 yangi sayt hosil qilindiqda, agar u hostda sayt sifatida ko'rilishi kerak bo'lgan ichki domen yozuvini avtomatik yaratadi. Agar host tarmoqning asosiy domeni yoki **Site URL** maydonida sozlangandek umumiy checkout-form bazaviy domenlardan biridir, avtomatik moslangan domen yozuvi o'tkazilmaydi, shunda bu umumiy bazaviy domen undan foydalanadigan har qanday sayt uchun mavjud bo'lib qoladi.
+Ultimate Multisite v2.13.0 yangi site per-site domain sifatida ko‘rilishi kerak bo‘lgan hostda yaratilganda ichki domain yozuvini ham avtomatik yaratadi. Agar host networkning asosiy domaini yoki **Site URL** maydonida sozlangan umumiy checkout-form asosiy domainlaridan biri bo‘lsa, avtomatik mapped-domain yozuvi o‘tkazib yuboriladi, shunda umumiy asosiy domain undan foydalanadigan har bir site uchun mavjud bo‘lib qoladi.
 
-Agar hamma narsa to'g'ri sozlanib bo'lsa, **Stage** (Bosqich) yoki holat **Checking DNS** dan **Ready** ga o'zgarishi kerak.
+Mijoz Domain Seller v1.3.0 yoki undan yangiroq versiya orqali yangi domain ro‘yxatdan o‘tkazganda, Ultimate Multisite ro‘yxatdan o‘tkazilgan domainni sukut bo‘yicha mijozning network siteiga avtomatik xaritalaydi. Administratorlar muvaffaqiyatli ro‘yxatdan o‘tkazishdan keyin, asosiy-domain belgisi, faollashtirish holati yoki SSL bilan ishlash kabi parametrlarni sozlamoqchi bo‘lmasalar, endi alohida mapped-domain yozuvini qo‘shishlari shart emas.
 
-![Domainlar ro'yxatida Checking DNS bosqichini ko'rsatuvchi Domain qator](https://img/admin/domain-stage-checking.png)
+Agar hammasi to‘g‘ri sozlangan bo‘lsa, **Stage** yoki status **Checking DNS**dan **Ready**ga o‘zgarishi kerak.
 
-![Yashil holat indikatori bilan Ready bosqichini ko'rsatuvchi Domain qator](https://img/admin/domain-stage-ready.png)
+<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
-Agar siz domen nomiga bosgan bo'lsangiz, unda uning ichidagi ba'zi opsiyalarni ko'rishingiz mumkin. Ularni tezda ko'rib chiqamiz:
+<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-![Bosqich, sayt, faol va asosiy domen tugmalarini ko'rsatuv Domain tafsilot sahifasi](https://img/admin/domain-edit.png)
+Agar domain nomini bossangiz, uning ichida ayrim parametrlarni ko‘rishingiz mumkin. Keling, ularga qisqacha nazar tashlaymiz:
 
-**Bosq:** Bu, domenning qaysi bosqichda ekanligini ko'rsatadi. Domenni birinchi marta qo'shganingizda u asosan **DNS tekshirilayotgan** bosqichda bo'ladi. Jarayon DNS kirishlarini tekshirib, ular to'g'ri ekanligini tasdiqlaydi. Keyin domen **SSL tekshirilayotgan** bosqichga o'tadi. Ultimate Multisite domen SSL mavjudmi yoki yo'qligini tekshiradi va sizning domenini **Tayyor** yoki **Tayyor (SSLsiz)** deb tasniflaydi.
+![Stage, site, active, primary va SSL almashtirgichlari bo‘lgan domain tafsilotlari sahifasi](/img/admin/domain-edit.png)
 
-**Site:** Bu domen bilan bog'liq sousdomaindir. Xaritaga solingan domen ushbu aniq saytning mazmunini ko'rsatadi.
+**Stage:** Bu domain turgan bosqich. Domainni birinchi qo‘shganingizda, u ehtimol **Checking DNS** bosqichida bo‘ladi. Jarayon DNS yozuvlarini tekshiradi va ularning to‘g‘ri ekanini tasdiqlaydi. Keyin domain **Checking SSL** bosqichiga o‘tkaziladi. Ultimate Multisite domainda SSL bor-yo‘qligini tekshiradi va domainingizni **Ready** yoki **Ready (without SSL)** sifatida tasniflaydi.
 
-**Active:** Domenni faollashtirish yoki o'chirish uchun bu opsiyani yoqing yoki o'chiring.
+**Site:** Ushbu domain bilan bog‘langan subdomain. Xaritalangan domain aynan shu site kontentini ko‘rsatadi.
 
-**Is Primary Domain?:** Har bir sayt uchun mijozlaringiz bir nechta xaritaga solingan domenlariga ega bo'lishi mumkin. Bu aniq saytning asosiy domenni ekanligini tanlash uchun ushbu opsiyadan foydalaning.
+**Active:** Domainni faollashtirish yoki nofaol qilish uchun bu parametrni yoqish yoki o‘chirishingiz mumkin.
 
-**Is Secure?:** Ultimate Multisite domen SSL sertifikatiga ega ekanligini tekshirib, uni faollashtirishdan oldin tekshiradi, lekin siz qo'lda SSL sertifikati bilan yoki bilmasdan domenni yuklashni tanlashingiz mumkin. Eslatma: agar veb-saytda SSL sertifikati bo'lmasa va uni majburiy ravishda SSL bilan yuklamoqchi bo'lsangiz, bu xatoliklarga olib kelishi mumkin.
+**Is Primary Domain?:** Mijozlaringiz har bir site uchun bittadan ortiq mapped domainlarga ega bo‘lishi mumkin. Bu aniq site uchun asosiy domain ekanini tanlash uchun ushbu parametrdan foydalaning.
 
-### Subsite foydalanuvchisi sifatida maxsus domen nomini xarita qilish
+**Is Secure?:** Ultimate Multisite domainni yoqishdan oldin unda SSL sertifikati bor-yo‘qligini tekshirsa ham, domainni SSL sertifikati bilan yoki usiz yuklashni qo‘lda tanlashingiz mumkin. E’tibor bering, agar website’da SSL sertifikati bo‘lmasa va siz uni SSL bilan majburan yuklashga urinsangiz, xatolar yuzaga kelishi mumkin.
 
-Subsite administratorlari ham o'zlarining subsite admin panelidan maxsus domen nomlarini xarita bera olishadi.
+### Maxsus domain nomini Subsite foydalanuvchisi sifatida xaritalash {#mapping-custom-domain-name-as-subsite-user}
 
-Avvalo, **Domain mapping** sozlamalarida bu opsiyani yoqganligiga ishonch hosil qiling. Quyidagi skrinshotga qarang.
+Subsite administratorlari ham o‘z subsite admin dashboardidan maxsus domain nomlarini xaritalashi mumkin.
+
+Avvalo, **Domain mapping** sozlamalari ostida ushbu parametrni yoqganingizga ishonch hosil qilishingiz kerak. Quyidagi skrinshotga qarang.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Shuningdek, siz **Ultimate Multisite > Products** bo'yicha **Plan** darajasida yoki mahsulot opsiyalari orqali bu opsiyani sozlash yoki konfiguratsiya qilishlari mumkin.
+Bu parametrni **Plan** darajasida yoki **Ultimate Multisite > Products** dagi product parametrlarida ham belgilashingiz yoki sozlashingiz mumkin.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Product tahrirlash sahifasidagi Maxsus domainlar bo‘limi](/img/config/product-custom-domains.png)
 
-Agar ushbu variantlardan biri yoqilgan bo'lsa va subsite foydalanuvchisiga maxsus domen nomlarini (custom domain names) xaritadan o'tkazish ruxsat etilsa, subsite foydalanuvchisi **Account** sahifasida **Domains** deb nomlangan metaboxni ko'rishi kerak.
+Ushbu parametrlardan biri yoqilganda va subsite foydalanuvchisiga maxsus domain nomlarini xaritalashga ruxsat berilganda, subsite foydalanuvchisi **Account** sahifasi ostida **Domains** deb nomlangan metaboxni ko‘rishi kerak.
 
-<!-- Screenshot unavailable: Subsite Account sahifasidagi Domains metaboxining tasviri Add Domain tugmasi bilan -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Foydalanuvchi **Add Domain** tugmasini bosishi mumkin va bu subsite foydalanuvchilari uchun ba'zi ko'rsatmalar bilan modal oynani ochadi.
+Foydalanuvchi **Add Domain** tugmasini bosishi mumkin va bu ayrim ko‘rsatmalar bilan modal oynani ochadi.
 
-<!-- Screenshot unavailable: Subsite foydalanuvchilari uchun DNS A-record ko'rsatmalarini ko'rsatadigan Add Domain modalining tasviri -->
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Keyin foydalanuvchi **Next Step** tugmasini bosib, maxsus domen nomini qo'shish jarayoniga o'tishi mumkin. U shuningdek, bu asosiy (primary) domen bo'lishi kerakmi yoki emasligini tanlash imkoniyatiga ega.
+Keyin foydalanuvchi **Next Step** tugmasini bosib, maxsus domain nomini qo‘shishga o‘tishi mumkin. Ular bu asosiy domain bo‘ladimi yoki yo‘qmi, shuni ham tanlashlari mumkin.
 
-<!-- Screenshot unavailable: Maxsus domen nomi maydoni va asosiy domenni o'chirish tugmasi bilan Add Domain shakli tasviri -->
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-<!-- Screenshot unavailable: DNS tekshiruvini boshlovchi Add Domain tasdiqlash bosqichi tasviri -->
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-**Add Domain** tugmasiga bosish maxsus domenning DNS ma'lumotlarini tekshirish va olish jarayonini boshlaydi.
+**Add Domain**ni bosish maxsus domainning DNS ma’lumotlarini tekshirish va olish jarayonini boshlaydi.
 
-### Domenlarni sinxronlash haqida
+### Domain sinxronlash haqida {#about-domain-syncing}
 
-Domenlarni sinxronlash — bu Ultimate Multisite tomonidan maxsus domen nomini hosting hisobingizga qo'shimcha domen sifatida (add-on domain) qo'shish jarayoni bo'lib, **domen xaritasi ishlashi uchun** amalga oshiriladi.
+Domain sinxronlash — bu **domain mapping ishlashi uchun** Ultimate Multisite maxsus domain nomini hosting accountingizga add-on domain sifatida qo‘shadigan jarayon.
 
-Hosting provayderining Ultimate Multisite domen xaritasi funksiyasi bilan integratsiyalashgan bo'lsa, bu sinxronlash avtomatik ravishda sodir bo'ladi. Hozircha bular hosting provayderlari _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ va _Cpanel._
+Agar hosting provayderingiz Ultimate Multisite domain mapping funksiyasi bilan integratsiyaga ega bo‘lsa, domain sinxronlash avtomatik sodir bo‘ladi. Hozirda bu hosting provayderlari _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ va _Cpanel._
 
-Hosting provayderi integratsiyasi faol bo'lganda, Ultimate Multisite yangi yaratilgan saytlar uchun provayder tomonidagi DNS yoki sousdomain yaratish vazifasini ham kuyga olish (enqueue) imkoniyatiga ega. Agar hech qaysi integratsiya ushbu vazifa uchun tinglamasa, no-op (no-operation) kuy kirishlarini oldini olish uchun fon ishchi vazifasi o'tkazilmaydi. Xaritilgan domenlar uchun DNS va SSL tekshiruvlari normal domen bosqichi jarayoni orqali davom etadi.
+Host-provider integratsiyasi faol bo‘lganda, Ultimate Multisite yangi yaratilgan sitelar uchun provider tomonidagi DNS yoki subdomain yaratish vazifasini navbatga ham qo‘shishi mumkin. Agar hech qanday integratsiya ushbu vazifani tinglamayotgan bo‘lsa, samarasiz navbat yozuvlaridan qochish uchun fon vazifasi o‘tkazib yuboriladi. Mapped domainlar uchun DNS va SSL tekshiruvlari odatiy domain-stage jarayoni orqali ishlashda davom etadi.
 
-Ultimate Multisite sozlamalarida **Integration** (Integratsiya) yorlig'idan o'chirilgan bu integratsiyani faollashtirishingiz kerak.
+Bu integratsiyani Ultimate Multisite sozlamalarida **Integration** varag‘i ostida faollashtirishingiz kerak bo‘ladi.
 
-![Ultimate Multisite sozlamalaridagi Integratsiyalar tabsi](/img/config/integrations-tab.png)
+![Hosting provayderlari ko‘rsatilgan Ultimate Multisite sozlamalaridagi Integratsiyalar varag‘i](/img/config/integrations-tab.png)
 
-<!-- Screenshot unavailable: Integratsiyalar sozlamalari tabidagi hosting provayderlari konfiguratsiya linklari -->
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Eslatma: agar sizning hosting provayderingiz yuqorida sanab o'tilganlardan biri bo'lmasa, **siz domen nomini qo'lda sinxron qilishingiz yoki hosting hisobingizga qo'shishingiz kerak**._
+_E’tibor bering, agar hosting provayderingiz yuqorida tilga olingan provayderlardan biri bo‘lmasa, **domain nomini hosting accountingizga qo‘lda sinxronlashingiz yoki qo‘shishingiz kerak bo‘ladi**._

@@ -3,7 +3,7 @@ title: Mailchimp Changelog
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp Changelog
+# Mailchimp Changelog {#mailchimp-changelog}
 
 వెర్షన్: 1.1.1 - విడుదల తేదీ: 2025-09-28
 

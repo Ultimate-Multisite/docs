@@ -1,0 +1,866 @@
+---
+title: შესაძლებლობების ცნობარი
+sidebar_position: 2
+_i18n_hash: 1a83460648ea789162af417c6b11eecc
+---
+# შესაძლებლობების ცნობარი {#abilities-reference}
+
+შესაძლებლობები არის ატომური მოქმედებები, რომელთა გამოძახებაც Gratis AI Agent-ს შეუძლია თქვენს WordPress ინსტალაციაში. თითოეული შესაძლებლობა არის რეგისტრირებული PHP კლასი, რომელიც JSON სქემას ავლენს — აგენტი ამ სქემას გაშვების დროს კითხულობს, რათა გაიგოს, რომელი პარამეტრებია საჭირო და რას აბრუნებს შესაძლებლობა.
+
+ეს გვერდი დოკუმენტირებს ყველა შესაძლებლობას, რომელიც მოყვება Gratis AI Agent v1.9.0-ს.
+
+---
+
+## მორგებული ჩანაწერის ტიპები {#custom-post-types}
+
+ეს შესაძლებლობები მართავს მორგებულ ჩანაწერის ტიპებს (CPTs), რომლებიც აგენტის მეშვეობით არის რეგისტრირებული. რეგისტრაციები ინახება WordPress-ის პარამეტრების ცხრილში, ამიტომ ისინი ნარჩუნდება plugin-ის დეაქტივაციისა და ხელახლა აქტივაციის შემდეგაც.
+
+### `register_post_type` {#registerposttype}
+
+არეგისტრირებს ახალ მორგებულ ჩანაწერის ტიპს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | ჩანაწერის ტიპის გასაღები (მაქს. 20 სიმბოლო, დიდი ასოების გარეშე, სივრცეების გარეშე) |
+| `singular_label` | string | დიახ | ადამიანისთვის წაკითხვადი მხოლობითი სახელი, მაგ. `Portfolio Item` |
+| `plural_label` | string | დიახ | ადამიანისთვის წაკითხვადი მრავლობითი სახელი, მაგ. `Portfolio Items` |
+| `public` | boolean | არა | არის თუ არა ჩანაწერის ტიპი საჯაროდ ხელმისაწვდომი. ნაგულისხმევი `true` |
+| `supports` | array | არა | მხარდასაჭერი ფუნქციები: `title`, `editor`, `thumbnail`, `excerpt`, `comments`, `revisions`, `custom-fields`. ნაგულისხმევი `["title","editor"]` |
+| `has_archive` | boolean | არა | ჩართულია თუ არა ჩანაწერის ტიპის არქივის გვერდი. ნაგულისხმევი `false` |
+| `menu_icon` | string | არა | Dashicons კლასი ან URL ადმინისტრატორის მენიუს ხატულისთვის. ნაგულისხმევი `"dashicons-admin-post"` |
+| `rewrite_slug` | string | არა | URL slug ჩანაწერის ტიპისთვის. ნაგულისხმევად იყენებს `slug`-ს |
+
+**მაგალითი**
+
+```json
+{
+  "slug": "portfolio",
+  "singular_label": "Portfolio Item",
+  "plural_label": "Portfolio Items",
+  "public": true,
+  "supports": ["title", "editor", "thumbnail"],
+  "has_archive": true,
+  "menu_icon": "dashicons-portfolio"
+}
+```
+
+**აბრუნებს** `{ "success": true, "slug": "portfolio" }`
+
+---
+
+### `list_post_types` {#listposttypes}
+
+აბრუნებს აგენტის მიერ რეგისტრირებულ ყველა მორგებულ ჩანაწერის ტიპს.
+
+**პარამეტრები** — არცერთი
+
+**აბრუნებს**
+
+```json
+{
+  "post_types": [
+    {
+      "slug": "portfolio",
+      "singular_label": "Portfolio Item",
+      "plural_label": "Portfolio Items",
+      "public": true
+    }
+  ]
+}
+```
+
+---
+
+### `delete_post_type` {#deleteposttype}
+
+აუქმებს აგენტის მიერ ადრე რეგისტრირებული მორგებული ჩანაწერის ტიპის რეგისტრაციას. ამ ტიპის არსებული ჩანაწერები მონაცემთა ბაზაში რჩება, მაგრამ აღარ არის ხელმისაწვდომი ჩანაწერის ტიპის მეშვეობით.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | წასაშლელი ჩანაწერის ტიპის გასაღები |
+
+**აბრუნებს** `{ "success": true, "slug": "portfolio" }`
+
+---
+
+## მორგებული ტაქსონომიები {#custom-taxonomies}
+
+ეს შესაძლებლობები მართავს მორგებულ ტაქსონომიებს. CPTs-ის მსგავსად, ტაქსონომიის რეგისტრაციებიც ინახება.
+
+### `register_taxonomy` {#registertaxonomy}
+
+არეგისტრირებს ახალ მორგებულ ტაქსონომიას.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | ტაქსონომიის გასაღები (მაქს. 32 სიმბოლო) |
+| `singular_label` | string | დიახ | ადამიანისთვის წაკითხვადი მხოლობითი სახელი, მაგ. `Project Category` |
+| `plural_label` | string | დიახ | ადამიანისთვის წაკითხვადი მრავლობითი სახელი, მაგ. `Project Categories` |
+| `post_types` | array | დიახ | ჩანაწერის ტიპების slugs, რომლებზეც ეს ტაქსონომია უნდა მიმაგრდეს |
+| `hierarchical` | boolean | არა | `true` კატეგორიის სტილისთვის, `false` ტეგის სტილისთვის. ნაგულისხმევი `true` |
+| `public` | boolean | არა | არის თუ არა ტერმინები საჯაროდ ხელმისაწვდომი. ნაგულისხმევი `true` |
+| `rewrite_slug` | string | არა | URL slug ტაქსონომიისთვის. ნაგულისხმევად იყენებს `slug`-ს |
+
+**მაგალითი**
+
+```json
+{
+  "slug": "project-category",
+  "singular_label": "Project Category",
+  "plural_label": "Project Categories",
+  "post_types": ["portfolio"],
+  "hierarchical": true
+}
+```
+
+**აბრუნებს** `{ "success": true, "slug": "project-category" }`
+
+---
+
+### `list_taxonomies` {#listtaxonomies}
+
+აბრუნებს აგენტის მიერ რეგისტრირებულ ყველა მორგებულ ტაქსონომიას.
+
+**პარამეტრები** — არცერთი
+
+**აბრუნებს**
+
+```json
+{
+  "taxonomies": [
+    {
+      "slug": "project-category",
+      "singular_label": "Project Category",
+      "post_types": ["portfolio"],
+      "hierarchical": true
+    }
+  ]
+}
+```
+
+---
+
+### `delete_taxonomy` {#deletetaxonomy}
+
+აუქმებს აგენტის მიერ ადრე რეგისტრირებული მორგებული ტაქსონომიის რეგისტრაციას.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | წასაშლელი ტაქსონომიის გასაღები |
+
+**აბრუნებს** `{ "success": true, "slug": "project-category" }`
+
+---
+
+## დიზაინის სისტემა {#design-system}
+
+დიზაინის სისტემის შესაძლებლობები ცვლის WordPress საიტის ვიზუალურ წარმოდგენას — მორგებული CSS-დან ბლოკის შაბლონებამდე და საიტის ლოგომდე.
+
+### `inject_custom_css` {#injectcustomcss}
+
+ამატებს CSS-ს საიტის `<head>`-ში `wp_add_inline_style`-ის მეშვეობით. CSS ინახება `gratis_ai_agent_custom_css` პარამეტრში და სუფთად იხსნება რიგიდან, როცა შესაძლებლობა გადაიტვირთება.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `css` | string | დიახ | ჩასამატებელი ვალიდური CSS |
+| `label` | string | არა | ადამიანისთვის წაკითხვადი იარლიყი ამ CSS ბლოკისთვის, გამოიყენება გამართვის ჟურნალებში. ნაგულისხმევი `"agent-injected"` |
+| `replace` | boolean | არა | თუ `true`, ანაცვლებს ყველა ადრე დამატებულ CSS-ს. ნაგულისხმევი `false` (ამატებს ბოლოს) |
+
+**მაგალითი**
+
+```json
+{
+  "css": ":root { --primary: #1a1a2e; --accent: #e94560; } body { font-family: 'Inter', sans-serif; }",
+  "label": "brand-colours",
+  "replace": false
+}
+```
+
+**აბრუნებს** `{ "success": true, "bytes": 96 }`
+
+---
+
+### `add_block_pattern` {#addblockpattern}
+
+არეგისტრირებს მრავალჯერადად გამოყენებად ბლოკის შაბლონს WordPress-ის შაბლონების ბიბლიოთეკაში.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | შაბლონის იდენტიფიკატორი, მაგ. `gratis/hero-dark` |
+| `title` | string | დიახ | ადამიანისთვის წაკითხვადი შაბლონის სახელი, რომელიც editor-ში ჩანს |
+| `content` | string | დიახ | სერიალიზებული ბლოკის მარკირება (HTML) შაბლონისთვის |
+| `categories` | array | არა | შაბლონის კატეგორიების slugs, მაგ. `["featured", "hero"]` |
+| `description` | string | არა | მოკლე აღწერა, რომელიც შაბლონის ამრჩევში ჩანს |
+| `keywords` | array | არა | საძიებო საკვანძო სიტყვები |
+
+**აბრუნებს** `{ "success": true, "slug": "gratis/hero-dark" }`
+
+---
+
+### `list_block_patterns` {#listblockpatterns}
+
+ჩამოთვლის აგენტის მიერ რეგისტრირებულ ყველა ბლოკის შაბლონს.
+
+**პარამეტრები** — არცერთი
+
+**აბრუნებს**
+
+```json
+{
+  "patterns": [
+    {
+      "slug": "gratis/hero-dark",
+      "title": "Dark Hero",
+      "categories": ["hero"]
+    }
+  ]
+}
+```
+
+---
+
+### `set_site_logo` {#setsitelogo}
+
+აყენებს WordPress საიტის ლოგოს მოცემულ დანართის ID-ზე ან დისტანციური სურათის URL-ზე. URL-ის მითითებისას სურათი ჩამოიტვირთება და იმპორტირდება მედია ბიბლიოთეკაში.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `attachment_id` | integer | არა | არსებული მედია ბიბლიოთეკის დანართის ID |
+| `url` | string | არა | დისტანციური სურათის URL იმპორტირებისა და ლოგოდ დასაყენებლად |
+
+აუცილებელია მითითებული იყოს ერთ-ერთი: `attachment_id` ან `url`.
+
+**აბრუნებს** `{ "success": true, "attachment_id": 42 }`
+
+---
+
+### `apply_theme_json_preset` {#applythemejsonpreset}
+
+აქტიური თემის `theme.json`-ზე (ან `global-styles`-ზე) იყენებს დასახელებულ ფერის/ტიპოგრაფიის წინასწარ პარამეტრს. წინასწარი პარამეტრები არის Gratis AI Agent გუნდის მიერ კურირებული პაკეტები.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `preset` | string | დიახ | წინასწარი პარამეტრის სახელი, მაგ. `minimal-dark`, `warm-editorial`, `corporate-blue` |
+| `merge` | boolean | არა | თუ `true` არის, არსებული მნიშვნელობების ჩანაცვლების ნაცვლად მათთან გააერთიანებს. ნაგულისხმევია `false` |
+
+**ხელმისაწვდომი წინასწარი პარამეტრები**
+
+| წინასწარი პარამეტრი | აღწერა |
+|---|---|
+| `minimal-dark` | თითქმის შავი ფონი, თეთრი ტექსტი, ერთი აქცენტის ფერი |
+| `warm-editorial` | თბილი ოდნავ მოთეთრო ფონი, სერიფული სათაურები, მიწისფერი აქცენტის ფერები |
+| `corporate-blue` | მუქი ლურჯისა და თეთრის პალიტრა პროფესიული ტიპოგრაფიით |
+| `vibrant-startup` | კაშკაშა გრადიენტები, მომრგვალებული კუთხეები, თანამედროვე უსერიფო შრიფტი |
+| `classic-blog` | ნეიტრალური ნაცრისფრები, კომფორტული სტრიქონის სიმაღლე, ტრადიციული განლაგების დაშორებები |
+
+**აბრუნებს** `{ "success": true, "preset": "minimal-dark" }`
+
+---
+
+## გლობალური სტილები {#global-styles}
+
+გლობალური სტილების შესაძლებლობები კითხულობს და წერს theme.json მნიშვნელობებს WordPress Global Styles API-ის მეშვეობით, რაც გავლენას ახდენს ყველა ბლოკსა და შაბლონზე მთელ საიტზე.
+
+### `get_global_styles` {#getglobalstyles}
+
+აბრუნებს მიმდინარე გლობალური სტილების კონფიგურაციას.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `path` | string | არა | JSON მაჩვენებელი კონკრეტულ მნიშვნელობაზე, მაგ. `/color/palette` ან `/typography/fontSizes`. გამოტოვების შემთხვევაში აბრუნებს მთელ ობიექტს. |
+
+**აბრუნებს** სრულ გლობალური სტილების ობიექტს ან მნიშვნელობას `path`-ზე.
+
+---
+
+### `set_global_styles` {#setglobalstyles}
+
+აახლებს ერთ ან მეტ მნიშვნელობას გლობალური სტილების კონფიგურაციაში.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `path` | string | დიახ | JSON მაჩვენებელი დასაყენებელ მნიშვნელობაზე, მაგ. `/color/palette` |
+| `value` | any | დიახ | ახალი მნიშვნელობა |
+
+**მაგალითი** — ფერის დამატება პალიტრაში
+
+```json
+{
+  "path": "/color/palette",
+  "value": [
+    { "slug": "primary", "color": "#1a1a2e", "name": "Primary" },
+    { "slug": "accent",  "color": "#e94560", "name": "Accent" }
+  ]
+}
+```
+
+**აბრუნებს** `{ "success": true, "path": "/color/palette" }`
+
+---
+
+### `reset_global_styles` {#resetglobalstyles}
+
+აბრუნებს აგენტის მიერ გამოყენებულ გლობალური სტილების ყველა ცვლილებას საწყის მდგომარეობაში და აღადგენს თემის ნაგულისხმევებს.
+
+**პარამეტრები** — არ არის
+
+**აბრუნებს** `{ "success": true }`
+
+---
+
+## ნავიგაციის მენიუები {#navigation-menus}
+
+ნავიგაციის მენიუს შესაძლებლობები ქმნის და მართავს WordPress ნავიგაციის მენიუებს და მათ ელემენტებს.
+
+### `create_menu` {#createmenu}
+
+ქმნის ახალ WordPress ნავიგაციის მენიუს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `name` | string | დიახ | მენიუს სახელი, მაგ. `Primary Navigation` |
+| `location` | string | არა | თემის მდებარეობა, რომელსაც ეს მენიუ უნდა მიენიჭოს, მაგ. `primary` |
+
+**აბრუნებს** `{ "success": true, "menu_id": 7 }`
+
+---
+
+### `update_menu` {#updatemenu}
+
+უცვლის მენიუს სახელს ან ხელახლა ანიჭებს მას თემის მდებარეობას.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `menu_id` | integer | დიახ | გასაახლებელი მენიუს ID |
+| `name` | string | არა | ახალი მენიუს სახელი |
+| `location` | string | არა | თემის მდებარეობა მინიჭებისთვის ან ხელახლა მინიჭებისთვის |
+
+**აბრუნებს** `{ "success": true, "menu_id": 7 }`
+
+---
+
+### `add_menu_item` {#addmenuitem}
+
+ამატებს ელემენტს არსებულ ნავიგაციის მენიუში.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `menu_id` | integer | დიახ | სამიზნე მენიუს ID |
+| `type` | string | დიახ | ელემენტის ტიპი: `custom`, `post_type` ან `taxonomy` |
+| `title` | string | არა | მენიუს ელემენტის წარწერა (სავალდებულოა `custom` ტიპისთვის) |
+| `url` | string | არა | URL `custom` ელემენტებისთვის |
+| `object_id` | integer | არა | ჩანაწერის ID ან ტერმინის ID `post_type`/`taxonomy` ელემენტებისთვის |
+| `parent_id` | integer | არა | მენიუს ელემენტის ID, რომლის ქვეშაც ეს ელემენტი უნდა განთავსდეს |
+| `position` | integer | არა | ნულიდან დაწყებული პოზიცია მენიუში |
+
+**აბრუნებს** `{ "success": true, "item_id": 12 }`
+
+---
+
+### `remove_menu_item` {#removemenuitem}
+
+შლის ელემენტს ნავიგაციის მენიუდან.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `item_id` | integer | დიახ | წასაშლელი მენიუს ელემენტის ID |
+
+**აბრუნებს** `{ "success": true, "item_id": 12 }`
+
+---
+
+### `list_menus` {#listmenus}
+
+ჩამოთვლის ყველა WordPress ნავიგაციის მენიუს, მათთვის მინიჭებული თემის მდებარეობების ჩათვლით.
+
+**პარამეტრები** — არ არის
+
+**აბრუნებს**
+
+```json
+{
+  "menus": [
+    {
+      "menu_id": 7,
+      "name": "Primary Navigation",
+      "location": "primary",
+      "item_count": 5
+    }
+  ]
+}
+```
+
+---
+
+## პარამეტრების მართვა {#options-management}
+
+პარამეტრების შესაძლებლობები კითხულობს და წერს WordPress პარამეტრებს `get_option` / `update_option`-ის მეშვეობით. ჩაშენებული უსაფრთხოების დაბლოკვის სია თავიდან აცილებს კრიტიკული პარამეტრების შემთხვევით შეცვლას.
+
+### `get_option` {#getoption}
+
+კითხულობს WordPress პარამეტრს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `option_name` | string | დიახ | პარამეტრის გასაღები, მაგ. `blogname` |
+
+**აბრუნებს** `{ "option_name": "blogname", "value": "My Site" }`
+
+აბრუნებს შეცდომას, თუ `option_name` უსაფრთხოების დაბლოკვის სიაშია.
+
+---
+
+### `set_option` {#setoption}
+
+წერს WordPress პარამეტრს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულოა | აღწერა |
+|---|---|---|---|
+| `option_name` | string | დიახ | პარამეტრის გასაღები |
+| `value` | any | დიახ | ახალი მნიშვნელობა (მასივებისთვის/ობიექტებისთვის ავტომატურად სერიალიზდება) |
+| `autoload` | string | არა | `"yes"` ან `"no"`. ნაგულისხმევად ინარჩუნებს არსებულ autoload პარამეტრს |
+
+აბრუნებს შეცდომას, თუ `option_name` უსაფრთხოების ბლოკსიისაშია.
+
+**აბრუნებს** `{ "success": true, "option_name": "blogname" }`
+
+---
+
+### `delete_option` {#deleteoption}
+
+შლის WordPress პარამეტრს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `option_name` | string | დიახ | წასაშლელი პარამეტრის გასაღები |
+
+აბრუნებს შეცდომას, თუ `option_name` უსაფრთხოების ბლოკსიისაშია.
+
+**აბრუნებს** `{ "success": true, "option_name": "my_custom_option" }`
+
+---
+
+### `list_options` {#listoptions}
+
+აჩვენებს WordPress პარამეტრებს, რომლებიც ნიმუშს ემთხვევა.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `pattern` | string | არა | SQL LIKE ნიმუში პარამეტრების სახელების გასაფილტრად, მაგ. `gratis_%`. გამოტოვების შემთხვევაში აბრუნებს ყველა პარამეტრს (დიდ მონაცემთა ბაზებზე გამოიყენეთ სიფრთხილით). |
+| `limit` | integer | არა | შედეგების მაქსიმალური რაოდენობა. ნაგულისხმევი `50`, მაქსიმუმი `500` |
+
+**აბრუნებს**
+
+```json
+{
+  "options": [
+    { "option_name": "gratis_ai_agent_version", "autoload": "yes" }
+  ],
+  "total": 1
+}
+```
+
+---
+
+## კონტენტის მართვა {#content-management}
+
+კონტენტის მართვის შესაძლებლობები ქმნის და არედაქტირებს WordPress პოსტებსა და გვერდებს. პოსტების ID-ები ბრუნდება, რათა მრავალშესაძლებლობიან გეგმებში მომდევნო ნაბიჯებმა შექმნილ კონტენტზე მითითება შეძლოს.
+
+### `create_post` {#createpost}
+
+ქმნის ახალ WordPress პოსტს, გვერდს ან მორგებული პოსტის ტიპის ჩანაწერს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `title` | string | დიახ | პოსტის სათაური |
+| `content` | string | არა | პოსტის ტექსტი — იღებს უბრალო ტექსტს, HTML-ს ან სერიალიზებულ ბლოკურ მარკირებას |
+| `status` | string | არა | `draft`, `publish`, `pending`, `private`. ნაგულისხმევი `draft` |
+| `post_type` | string | არა | პოსტის ტიპის slug, მაგ. `post`, `page`, ან ნებისმიერი რეგისტრირებული CPT. ნაგულისხმევი `post` |
+| `excerpt` | string | არა | მოკლე შეჯამება, რომელიც არქივებსა და ძიების შედეგებში ჩანს |
+| `categories` | array | არა | მისანიჭებელი კატეგორიების სახელების ან ID-ების მასივი |
+| `tags` | array | არა | მისანიჭებელი ტეგების სახელების ან ID-ების მასივი |
+| `author` | integer | არა | WordPress მომხმარებლის ID, რომელიც პოსტის ავტორად უნდა დაყენდეს. ნაგულისხმევად მიმდინარე მომხმარებელია |
+| `date` | string | არა | გამოქვეყნების თარიღი ISO 8601 ფორმატში, მაგ. `2026-05-01T09:00:00` |
+| `page_template` | string | არა | შაბლონის ფაილი, რომელიც ამ პოსტს ან გვერდს უნდა მიენიჭოს, მაგ. `page-full-width.php`. მნიშვნელობა აქვს მხოლოდ მაშინ, როდესაც `post_type` არის `page` ან CPT, რომელიც გვერდის შაბლონებს მხარს უჭერს. |
+
+**მაგალითი**
+
+```json
+{
+  "title": "Welcome to Our New Site",
+  "content": "<!-- wp:paragraph --><p>Hello world!</p><!-- /wp:paragraph -->",
+  "status": "publish",
+  "post_type": "page",
+  "page_template": "page-full-width.php"
+}
+```
+
+**აბრუნებს** `{ "success": true, "post_id": 42, "permalink": "https://example.com/welcome/" }`
+
+---
+
+### `update_post` {#updatepost}
+
+აახლებს არსებულ WordPress პოსტს ან გვერდს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `post_id` | integer | დიახ | გასაახლებელი პოსტის ID |
+| `title` | string | არა | ახალი პოსტის სათაური |
+| `content` | string | არა | ახალი პოსტის ტექსტი |
+| `status` | string | არა | ახალი სტატუსი: `draft`, `publish`, `pending`, `private` |
+| `excerpt` | string | არა | ახალი ამონარიდი |
+| `categories` | array | არა | სრული კატეგორიების სიის შეცვლა სახელების ან ID-ების ამ მასივით |
+| `tags` | array | არა | სრული ტეგების სიის შეცვლა სახელების ან ID-ების ამ მასივით |
+| `page_template` | string | არა | ახალი შაბლონის ფაილი, რომელიც ამ პოსტს ან გვერდს უნდა მიენიჭოს, მაგ. `page-full-width.php`. გადაეცით ცარიელი სტრიქონი შაბლონის მინიჭების მოსაშორებლად და theme-ის ნაგულისხმევზე დასაბრუნებლად. |
+
+**მაგალითი** — შაბლონის შეცვლა შექმნის შემდეგ
+
+```json
+{
+  "post_id": 42,
+  "page_template": "page-full-width.php"
+}
+```
+
+**აბრუნებს** `{ "success": true, "post_id": 42 }`
+
+---
+
+### `batch_create_posts` {#batchcreateposts}
+
+ქმნის რამდენიმე პოსტს ერთი შესაძლებლობის გამოძახებით, რაც ამცირებს მიმოსვლას საიტის აწყობის ან კონტენტის მასობრივი იმპორტის დროს. პოსტები იქმნება თანმიმდევრობით; თუ რომელიმე ვერ შესრულდება, დანარჩენები გაგრძელდება და წარუმატებლობა შედეგების მასივში აისახება.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `posts` | array | დიახ | პოსტის ობიექტების მასივი, სადაც თითოეული იღებს იმავე პარამეტრებს, რასაც `create_post` |
+| `stop_on_error` | boolean | არა | თუ `true`, დამუშავება შეწყდება პირველი წარუმატებლობის შემდეგ. ნაგულისხმევი `false` |
+
+**მაგალითი**
+
+```json
+{
+  "posts": [
+    {
+      "title": "About Us",
+      "post_type": "page",
+      "status": "publish",
+      "page_template": "page-full-width.php"
+    },
+    {
+      "title": "Services",
+      "post_type": "page",
+      "status": "publish"
+    },
+    {
+      "title": "Contact",
+      "post_type": "page",
+      "status": "publish"
+    }
+  ]
+}
+```
+
+**აბრუნებს**
+
+```json
+{
+  "created": 3,
+  "failed": 0,
+  "results": [
+    { "success": true, "post_id": 42, "title": "About Us" },
+    { "success": true, "post_id": 43, "title": "Services" },
+    { "success": true, "post_id": 44, "title": "Contact" }
+  ]
+}
+```
+
+---
+
+### `set_featured_image` {#setfeaturedimage}
+
+არსებულ პოსტს ან გვერდს ანიჭებს გამორჩეულ სურათს (პოსტის მინიატურას). იღებს არსებული Media Library დანართის ID-ს ან დისტანციური სურათის URL-ს; როდესაც URL მიეწოდება, სურათი ავტომატურად ჩამოიტვირთება და იმპორტირდება.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `post_id` | integer | დიახ | გასაახლებელი პოსტის ან გვერდის ID |
+| `attachment_id` | integer | არა | არსებული Media Library დანართის ID |
+| `url` | string | არა | დისტანციური სურათის URL, რომელიც უნდა იმპორტირდეს და გამორჩეულ სურათად დაყენდეს |
+| `alt_text` | string | არა | ალტერნატიული ტექსტი, რომელიც დანართზე უნდა გავრცელდეს, თუ ის URL-დან იმპორტირდება |
+
+`attachment_id` ან `url`-დან ერთ-ერთი უნდა იყოს მიწოდებული.
+
+**აბრუნებს** `{ "success": true, "post_id": 42, "attachment_id": 17 }`
+
+---
+
+### `create_contact_form` {#createcontactform}
+
+ქმნის საკონტაქტო ფორმას აქტიური ფორმის plugin-ის გამოყენებით (Contact Form 7, WPForms, Fluent Forms ან Gravity Forms, იმის მიხედვით, რომელია დაყენებული). აბრუნებს shortcode-ს, რომლის ჩაშენებაც ნებისმიერ პოსტში ან გვერდზეა შესაძლებელი.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `title` | string | დიახ | ფორმის სახელი, რომელიც ჩანს ფორმის plugin-ის ადმინისტრირებაში |
+| `fields` | array | დიახ | ფორმის ველების დალაგებული სია (იხილეთ Field ობიექტი ქვემოთ) |
+| `recipient` | string | არა | Email მისამართი, რომელიც მიიღებს გაგზავნილ მონაცემებს. ნაგულისხმევად გამოიყენება WordPress-ის ადმინისტრატორის email |
+| `subject` | string | არა | Email-ის თემის სტრიქონი. Contact Form 7-ის გამოყენებისას მხარს უჭერს `[your-name]` და `[your-subject]` placeholders-ს |
+| `confirmation_message` | string | არა | შეტყობინება, რომელიც ნაჩვენებია წარმატებული გაგზავნის შემდეგ. ნაგულისხმევი: `"Thank you for your message. We'll be in touch soon."` |
+
+**Field ობიექტი**
+
+| გასაღები | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `name` | string | დიახ | შიდა ველის სახელი / მანქანური გასაღები |
+| `label` | string | დიახ | ადამიანისთვის წაკითხვადი ეტიკეტი, რომელიც ნაჩვენებია ფორმაზე |
+| `type` | string | დიახ | `text`, `email`, `tel`, `textarea`, `select`, `checkbox`, `radio`, `file`, `date` |
+| `required` | boolean | არა | უნდა შეივსოს თუ არა ველი გაგზავნამდე. ნაგულისხმევი `false` |
+| `options` | array | არა | ვარიანტები `select`, `checkbox` და `radio` ველებისთვის |
+| `placeholder` | string | არა | Placeholder ტექსტი ტექსტური ტიპის შეყვანებისთვის |
+
+**მაგალითი**
+
+```json
+{
+  "title": "Restaurant Booking Enquiry",
+  "fields": [
+    { "name": "your-name",    "label": "Name",             "type": "text",     "required": true },
+    { "name": "your-email",   "label": "Email",            "type": "email",    "required": true },
+    { "name": "party-size",   "label": "Party size",       "type": "select",   "options": ["1–2", "3–5", "6–10", "10+"] },
+    { "name": "your-message", "label": "Special requests", "type": "textarea", "required": false }
+  ],
+  "recipient": "bookings@example.com",
+  "subject": "New booking enquiry from [your-name]"
+}
+```
+
+**აბრუნებს**
+
+```json
+{
+  "success": true,
+  "form_id": 3,
+  "shortcode": "[contact-form-7 id=\"3\" title=\"Restaurant Booking Enquiry\"]"
+}
+```
+
+---
+
+## ვიზუალური მიმოხილვა {#visual-review}
+
+ვიზუალური მიმოხილვის შესაძლებლობები agent-ს საშუალებას აძლევს გადაიღოს ცოცხალი გვერდების screenshots და გააანალიზოს ისინი, რაც უზრუნველყოფს ავტონომიურ დიზაინის მიმოხილვას, შედარებებს „მდე/შემდეგ“ და ვიზუალური რეგრესიის შემოწმებებს ნებისმიერი browser extension-ის მოთხოვნის გარეშე.
+
+### `capture_screenshot` {#capturescreenshot}
+
+იღებს WordPress გვერდის screenshot-ს მითითებულ URL-ზე server-side headless browser-ის გამოყენებით. სურათი ინახება მედია ბიბლიოთეკაში და ბრუნდება CDN URL.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `url` | string | დიახ | გვერდის სრული URL screenshot-ისთვის, მაგ. `https://example.com/about/` |
+| `width` | integer | არა | Viewport-ის სიგანე პიქსელებში. ნაგულისხმევი `1280` |
+| `height` | integer | არა | Viewport-ის სიმაღლე პიქსელებში. ნაგულისხმევი `800` |
+| `full_page` | boolean | არა | მხოლოდ viewport-ის ნაცვლად გადაიღეთ სრული გადახვევადი გვერდი. ნაგულისხმევი `false` |
+| `delay_ms` | integer | არა | მილიწამები, რამდენ ხანს უნდა დაიცადოს გვერდის ჩატვირთვის შემდეგ გადაღებამდე; სასარგებლოა ანიმირებული კონტენტისთვის. ნაგულისხმევი `500` |
+| `label` | string | არა | ადამიანისთვის წაკითხვადი ეტიკეტი, რომელიც ინახება დანართთან ერთად მედია ბიბლიოთეკაში |
+
+**აბრუნებს**
+
+```json
+{
+  "success": true,
+  "attachment_id": 88,
+  "url": "https://example.com/wp-content/uploads/2026/04/screenshot-about.png",
+  "width": 1280,
+  "height": 800
+}
+```
+
+---
+
+### `compare_screenshots` {#comparescreenshots}
+
+იღებს ორ screenshots-ს და აბრუნებს ვიზუალური განსხვავების ქულას, ასევე diff სურათს, რომელიც გამოყოფს შეცვლილ რეგიონებს. სასარგებლოა იმის დასადასტურებლად, რომ დიზაინის ცვლილებამ მოსალოდნელი შედეგი გამოიღო, ან უნებლიე რეგრესიების აღმოსაჩენად.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `before_url` | string | დიახ | გვერდის URL, რომელიც უნდა გადაიღოს როგორც „before“ მდგომარეობა |
+| `after_url` | string | დიახ | გვერდის URL, რომელიც უნდა გადაიღოს როგორც „after“ მდგომარეობა. შეიძლება იყოს იგივე URL, თუ შედარება დროში ხდება |
+| `width` | integer | არა | Viewport-ის სიგანე ორივე გადაღებისთვის. ნაგულისხმევი `1280` |
+| `threshold` | float | არა | პიქსელების განსხვავების ზღვარი (0.0–1.0). ამ დაშვების ფარგლებში არსებული პიქსელები უცვლელად ითვლება. ნაგულისხმევი `0.1` |
+
+**აბრუნებს**
+
+```json
+{
+  "success": true,
+  "diff_score": 0.04,
+  "changed_pixels": 2340,
+  "total_pixels": 1024000,
+  "diff_attachment_id": 91,
+  "diff_url": "https://example.com/wp-content/uploads/2026/04/diff-about.png"
+}
+```
+
+`diff_score` მნიშვნელობა `0.0` ნიშნავს, რომ ხილული ცვლილება არ არის; `1.0` ნიშნავს, რომ ყველა პიქსელი შეიცვალა.
+
+---
+
+### `review_page_design` {#reviewpagedesign}
+
+იღებს გვერდის screenshot-ს და აგზავნის მას ენის მოდელში ვიზუალური ანალიზისთვის. აბრუნებს სტრუქტურირებულ შეფასებას, რომელიც მოიცავს განლაგებას, ტიპოგრაფიას, ფერის გამოყენებას და ხელმისაწვდომობასთან დაკავშირებულ საკითხებს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `url` | string | დიახ | გვერდის სრული URL მიმოხილვისთვის |
+| `focus` | string | არა | მძიმით გამოყოფილი მიმოხილვის სფეროების სია, რომლებზეც უნდა გაკეთდეს აქცენტი: `layout`, `typography`, `colour`, `accessibility`, `mobile`. ნაგულისხმევი: ყველა სფერო |
+| `width` | integer | არა | Viewport-ის სიგანე. ნაგულისხმევი `1280` |
+
+**აბრუნებს**
+
+```json
+{
+  "success": true,
+  "screenshot_url": "https://example.com/wp-content/uploads/2026/04/review-about.png",
+  "assessment": {
+    "overall": "The page structure is clean and readable. Two accessibility issues detected.",
+    "layout": "Good visual hierarchy. Hero section is prominent.",
+    "typography": "Body text is 15px — consider increasing to 16px for readability.",
+    "colour": "Contrast ratio on the CTA button (#fff on #4a90e2) is 3.1:1 — below the WCAG AA threshold of 4.5:1.",
+    "accessibility": ["Low contrast on CTA button", "Missing alt text on hero image"],
+    "suggestions": ["Darken the CTA button to #1a5cb0 to pass WCAG AA", "Add descriptive alt text to the hero image"]
+  }
+}
+```
+
+---
+
+## ინსტალირებადი შესაძლებლობები {#installable-abilities}
+
+ინსტალირებადი შესაძლებლობების Registry საშუალებას გაძლევთ გააფართოოთ agent დამატებითი შესაძლებლობების პაკეტებით, რომლებიც ვრცელდება WordPress plugins-ის სახით. თითოეული პაკეტი არეგისტრირებს ერთ ან მეტ შესაძლებლობას სტანდარტული შესაძლებლობების API-ის გამოყენებით.
+
+### `list_available_abilities` {#listavailableabilities}
+
+აბრუნებს Registry-დან ინსტალაციისთვის ხელმისაწვდომი შესაძლებლობების პაკეტების კატალოგს.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `category` | string | არა | გაფილტვრა კატეგორიის მიხედვით: `ecommerce`, `seo`, `media`, `social`, `developer` |
+
+**აბრუნებს**
+
+```json
+{
+  "packs": [
+    {
+      "slug": "gratis-ai-agent-woocommerce",
+      "name": "WooCommerce Abilities",
+      "category": "ecommerce",
+      "version": "1.0.0",
+      "abilities": ["create_product", "update_pricing", "manage_inventory"],
+      "installed": false
+    }
+  ]
+}
+```
+
+---
+
+### `install_ability` {#installability}
+
+ტვირთავს და ააქტიურებს შესაძლებლობების პაკეტს რეესტრიდან.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `slug` | string | დიახ | შესაძლებლობების პაკეტის პლაგინის slug |
+
+**აბრუნებს** `{ "success": true, "slug": "gratis-ai-agent-woocommerce", "abilities_added": 3 }`
+
+---
+
+### `recommend_plugin` {#recommendplugin}
+
+მიმართავს შესაძლებლობების რეესტრს, რათა აღწერილი გამოყენების შემთხვევისთვის საუკეთესო პლაგინი იპოვოს და, სურვილისამებრ, დააყენოს ის.
+
+**პარამეტრები**
+
+| პარამეტრი | ტიპი | სავალდებულო | აღწერა |
+|---|---|---|---|
+| `description` | string | დიახ | სასურველი ფუნქციონალის ბუნებრივი ენით აღწერა |
+| `install` | boolean | არა | თუ `true` არის, რეკომენდებულ პლაგინს დაუყოვნებლივ აყენებს. ნაგულისხმევია `false` |
+
+**მაგალითი**
+
+```json
+{
+  "description": "I need a contact form with file upload support and spam protection",
+  "install": false
+}
+```
+
+**აბრუნებს**
+
+```json
+{
+  "recommendation": {
+    "slug": "contact-form-7",
+    "name": "Contact Form 7",
+    "reason": "Widely adopted, supports file uploads, and integrates with Akismet for spam filtering.",
+    "alternatives": ["wpforms-lite", "fluent-forms"]
+  }
+}
+```

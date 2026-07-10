@@ -3,11 +3,11 @@ title: Menterjemah Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Menterjemah Ultimate Multisite
+# Menterjemah Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite dibangunkan dalam bahasa Inggeris, tetapi plugin ini boleh diterjemahkan sepenuhnya dan kami sangat mengalu-alukan sumbangan terjemahan.
 
-## Terjemahan Plugin Teras
+## Terjemahan Plugin Teras {#core-plugin-translations}
 
 Plugin teras Ultimate Multisite diterjemahkan melalui **platform terjemahan rasmi WordPress.org**:
 
@@ -24,7 +24,7 @@ Ini adalah sistem terjemahan komuniti WordPress yang standard. Apabila terjemaha
 
 Jika anda ingin menjadi editor terjemahan untuk bahasa anda (boleh meluluskan terjemahan), hubungi kami melalui [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Terjemahan Addon
+## Terjemahan Addon {#addon-translations}
 
 Plugin addon diterjemahkan secara berasingan di:
 
@@ -32,11 +32,11 @@ Plugin addon diterjemahkan secara berasingan di:
 
 Terjemahan addon pada masa ini dijana menggunakan AI sebagai titik permulaan. Ia merangkumi semua bahasa yang disokong tetapi mungkin mengandungi frasa yang janggal atau ketidaktepatan. Kami mengalu-alukan penterjemah manusia untuk menyemak dan mencadangkan penambahbaikan supaya terjemahan lebih semula jadi dan tepat.
 
-## Terjemahan Setempat
+## Terjemahan Setempat {#local-translations}
 
 Jika anda lebih suka membuat terjemahan secara setempat untuk projek anda sendiri daripada menyumbang ke hulu, terdapat dua pilihan:
 
-### Menggunakan Poedit
+### Menggunakan Poedit {#using-poedit}
 
 Anda boleh menggunakan aplikasi desktop **[Poedit](https://poedit.net)** untuk menterjemah fail `.pot`:
 
@@ -46,6 +46,6 @@ Anda boleh menggunakan aplikasi desktop **[Poedit](https://poedit.net)** untuk m
 4. Simpan -- Poedit akan menjana fail `.po` dan `.mo`
 5. Letakkan fail output dalam folder `lang`
 
-### Menggunakan Loco Translate
+### Menggunakan Loco Translate {#using-loco-translate}
 
 Plugin WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** membolehkan anda menterjemah terus dari panel admin tanpa memerlukan sebarang alat desktop. Ia mengendalikan penciptaan dan penyusunan fail terjemahan untuk anda.

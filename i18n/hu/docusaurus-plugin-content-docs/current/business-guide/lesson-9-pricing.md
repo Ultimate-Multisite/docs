@@ -3,17 +3,17 @@ title: '9. Tanlessonya: Árazás a profitért'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# 9. Bölöm: Árazás a Profitért
+# 9. Bölöm: Árazás a Profitért {#lesson-9-pricing-for-profit}
 
 A 5. bölségerben meghatároztuk a FitSite csomagok kezdeti árainak. Most finomítjuk az árazási stratégiát olyan technikákkal, amelyek növelik a bevételt, ösztönzik az emelkedést és csökkentik a „churn”-ot (elhasználódást).
 
-## Hol maradtunk?
+## Hol maradtunk? {#where-we-left-off}
 
 A FitSite rendelkezik csomagokkal, sablonokkal, fizetési folyamattal (checkout), márkanonosítással (branding) és bevezetési folyamattal (onboarding). Az elején az árak $49/$99/$199 havonta voltak. Most arra kell, hogy ezek az árak még jobban dolgozzanak.
 
-## Árazási elvek a Niche Platformokhoz
+## Árazási elvek a Niche Platformokhoz {#pricing-principles-for-niche-platforms}
 
-### Árazás az Érték alapján, nem a Költség alapján
+### Árazás az Érték alapján, nem a Költség alapján {#price-on-value-not-cost}
 
 Az általad biztosított hosting költsége akár 5-15 dollár lehet per ügyfél oldalon. Ez nem azt jelenti, hogy az árad 20 dollárnak kell lennie. Te nem hostinget adsz el. Te adsz el:
 
@@ -24,7 +24,7 @@ Az általad biztosított hosting költsége akár 5-15 dollár lehet per ügyfé
 
 Árazd az alapján, hogy milyen értéket adsz, nem pedig az alapján, hogy mennyibe kerülnek neked.
 
-### Összehasonlítás Alternatívákhoz
+### Összehasonlítás Alternatívákhoz {#anchor-to-alternatives}
 
 Amikor egy fitness stúdió tulajdonos értékelгээre kerül a FitSite, összehasonlítja azt:
 
@@ -34,7 +34,7 @@ Amikor egy fitness stúdió tulajdonos értékelгээre kerül a FitSite, össz
 
 49-199 dollár/havonta árazás mellett a FitSite olcsóbb, mint egy webfejlesztő, képább, mint a általános szerkesztők, és sokkal jobb, mint egy teljesen más weboldal.
 
-## Árazási Variációk Megvalósítása
+## Árazási Variációk Megvalósítása {#implementing-price-variations}
 
 Az éves árazás ösztönzi a kötelezettséget és csökkenti a „churn”-ot. Navigálj minden csomag **Price Variations** (Árazási változatok) fülére, és add hozzá az éves opciókat:
 
@@ -46,12 +46,12 @@ Az éves árazás ösztönzi a kötelezettséget és csökkenti a „churn”-ot
 
 Add hozzá egy **Period Selection** (Időszak kiválasztás) mezőt a fizetési űrlapjához, hogy az ügyfelek átválaszthatják a havi és az éves számlázás között. Látogass el a [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) oldalon.
 
-### Miért működik az éves árazás?
+### Miért működik az éves árazás? {#why-annual-pricing-works}
 
 - **Neked**: Előre fizetett készpénz, alacsonyabb „churn” (az éves fizetők kevésbé valószínű, hogy lemondanak idő közben)
 - **Ügyfelednek**: Valódi megtakarítás, költségvetési előrevető képesség
 
-## Beállítási Díjak (Setup Fees)
+## Beállítási Díjak (Setup Fees) {#setup-fees}
 
 Fontos lehet egy egyszeri beállítási díjat (setup fee) olyan csomagok esetén, amelyek kézi konfigurációt igényelnek:
 
@@ -61,7 +61,7 @@ Fontos lehet egy egyszeri beállítási díjat (setup fee) olyan csomagok eseté
 
 Konfiguráld a beállítási díjakat minden csomag árazási szekciójában. Részletesebb információkért lásd a [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) oldalon.
 
-## Próbaidőszakok (Trial Periods)
+## Próbaidőszakok (Trial Periods) {#trial-periods}
 
 Egy próbaidő biztosítása csökkenti a regisztrációk akadályait, de bevezetheti a nem-konverziós kockázatot. A FitSite esetén:
 
@@ -70,11 +70,11 @@ Egy próbaidő biztosítása csökkenti a regisztrációk akadályait, de beveze
 
 Konfiguráld a próbaidőt a Starter csomag árazási szekciójában az **Offer Trial** kapcsoló bekapcsolásával és a tartomány 7 napra állításával.
 
-### Hogyan lehet a próbaidőből konverzni?
+### Hogyan lehet a próbaidőből konverzni? {#making-trials-convert}
 
 Egy próbaidő csak akkor működik, ha az ügyfél értéket tapasztal a próbaidő alatt. Az onboarding sorozatod (8. bölség) itt kulcsfontosságú – az üdvözlő e-maileket úgy kell időzíteni, hogy a 7 napos ablakon belül elkövetjék a felhasználást.
 
-## Kedvkuponok (Discount Codes)
+## Kedvkuponok (Discount Codes) {#discount-codes}
 
 Létrehozj stratégiai kedvkuponokat (discount codes) konkrét célokra:
 
@@ -88,7 +88,7 @@ Navigálj a **Ultimate Multisite > Discount Codes** menüpontra ezek létrehozá
 A kedvezmények stratégiai eszközöknek kell, nem pedig állandó elemeknek. Ha mindenki kedvezményt kap, az nem kedvezmény – az a valódi árad. Hascold őket konkrét kampányokhoz, ajánlásokhoz és időkorlátolt akciókhoz.
 :::
 
-## Adókezelés (Tax Handling)
+## Adókezelés (Tax Handling) {#tax-handling}
 
 Ha olyan jogviszonyban működésed, ahol adóbelevétek kell a behajtaniak:
 
@@ -98,7 +98,7 @@ Ha olyan jogviszonyban működésed, ahol adóbelevétek kell a behajtaniak:
 
 Részletes konfigurációkért lásd a [Tax Handling](/user-guide/payment-gateways/tax-handling) oldalon. Ha nemzetközileg ügyfeleket szolgátozol, fontolja meg a [VAT addon](/addons/vat) használatát az EU megfelelőség érdekében.
 
-## Az Árazás Áttekintése
+## Az Árazás Áttekintése {#reviewing-your-pricing}
 
 A kiindítás után negyedévente térj vissza az árazáshoz. Figyelj rá:
 
@@ -107,7 +107,7 @@ A kiindítás után negyedévente térj vissza az árazáshoz. Figyelj rá:
 - **Churn csomagonként**: Ha az éves ügyfelek kevesebben „churn-olnak”, akkor erőteljesebben kell akcentálni az éves árazást
 - **Versenyző árazás**: Mit kérnek az alternatívák? Megfelelően pozícionálódottál?
 
-## A FitSite Hálózatának Állapotát
+## A FitSite Hálózatának Állapotát {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Amit Építettünk E Bölségerben
+## Amit Építettünk E Bölségerben {#what-we-built-this-lesson}
 
 - **Éves árazás** 20% kedvezménnyel a kötelezettség ösztönzésére
 - **Beállítási díjak** a magasabb szintű csomagokon az onboarding munkára

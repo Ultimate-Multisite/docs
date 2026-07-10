@@ -1,105 +1,152 @@
 ---
-title: Urugero rwa Agente rwa AI rwayo
+title: Igenamiterere rya Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Icyo Settings ya AI Agent
+# Gratis AI Agent Igenamiterere {#gratis-ai-agent-settings}
 
-Icyo screen ya **Settings → Advanced** in Gratis AI Agent yitanga uburyo bwo gukoresha ibyerekeye n'ubwujyanye bw'ibyo byashyizwe mu v1.5.0. Ururu rw'inyandiko rishobora kwerekana ibye ya **Feedback Endpoint** n'uburyo bwo kuyigira.
+Ekrani ya **Settings → Advanced** muri Gratis AI Agent itanga igenamiterere ryo ku rwego rw’umuyobozi ku bw’imikoranire ya backend. Uru rupapuro rusobanura kohereza feedback, imfunguzo z’abatanga ishakisha, igenamigambi rya serivisi ya Superdav icungwa, igenzura rya Google Calendar, igenamiterere rya TextBee SMS, n’ibirango by’imikorere bikora kuri network yose.
 
-## Gukoresha Settings
+## Kugera kuri Settings {#accessing-settings}
 
-1. Mu WordPress admin, gukora ku **Gratis AI Agent → Settings**.
-2. Gukora kuri tab ya **Advanced**.
+1. Muri admin ya WordPress, jya kuri **Gratis AI Agent → Settings**.
+2. Kanda tab ya **Advanced**.
 
-## Kuyigisha Feedback Endpoint
+## Igenamiterere rya Feedback Endpoint {#feedback-endpoint-configuration}
 
-Feedback endpoint yitanga POST requests ku gihe AI agent yitanga ibyo abantu bafungura feedback binyuze mu button ya thumbs-down, auto-prompt banner, cyangwa command `/report-issue`.
+Feedback endpoint yakira ibisabwa bya POST biva kuri AI agent igihe cyose umukoresha atanze feedback anyuze kuri buto ya thumbs-down, banner ya auto-prompt, cyangwa command ya `/report-issue`.
 
-| Field | Uburyo bw'ibyo byerekana |
+| Umwanya | Ibisobanuro |
 |---|---|
-| **Feedback Endpoint URL** | URL yitanga feedback ku gihe bitanga HTTP POST requests n'ubwoko bwa JSON. |
-| **Feedback API Key** | bearer token wishyizwe mu `Authorization` header ya request yose y'ibyo byerekana feedback. Yabara nk'ibyo (leave blank) niba endpoint yawe itagira uburyo bwo gukoresha authentication. |
+| **Feedback Endpoint URL** | URL yakira feedback submissions nk’ibisabwa bya HTTP POST bifite umubiri wa JSON. |
+| **Feedback API Key** | Bearer token yoherezwa muri `Authorization` header ya buri feedback request. Bireke ubusa niba endpoint yawe idasaba authentication. |
 
-### Ubwoko bw'ubwoko bwa JSON (Expected JSON Payload)
+### JSON Payload Itegerejwe {#expected-json-payload}
 
-Feedback endpoint yawe itabaho ubwoko bwa JSON kandi yitanga ibyo byiza:
+Feedback endpoint yawe igomba kwemera umubiri wa JSON ufite nibura imirima ikurikira:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Icyemezo ryari ririmo ku gihe cyo gukoresha.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Icyemezo cy'ibyo byiza cyashobora kuba cyangwa cyitanga mu payload kenshi kenshi kuri conversation.
+Imirima y’inyongera ishobora kuba iri muri payload bitewe n’imiterere y’ikiganiro.
 
-### Ibyerekeye `triage_category`
+### Indangagaciro za `triage_category` {#triagecategory-values}
 
-Tanga ya triage ya AI itanga uburyo bwo gukoresha ibyo byo mu `triage_category` mbere y'ibyo byerekana:
+Igice cya AI triage giha `triage_category` imwe mu ndangagaciro zikurikira mbere yo kohereza payload:
 
-| Value | Uburyo bw'ibyo byerekana |
+| Agaciro | Icyo bisobanura |
 |---|---|
-| `factual_error` | Umunyamakuru yashyize amakuru atari yiza. |
-| `unhelpful_answer` | Icyemezo cyari cyiza mu gice cyangwa cyane cyane, ariko cyabaho ubushobozi bwo gukoresha. |
-| `inappropriate_content` | Icyemezo cyari cyitanga ibyo byashobora kwerekana ku bantu. |
-| `other` | Feedback yari itagira uburyo bw'ibyo byerekana. |
+| `factual_error` | Assistant yatanze amakuru y’ukuri atari yo. |
+| `unhelpful_answer` | Igisubizo cyari cyo mu buryo bwa tekiniki ariko nticyari ingirakamaro. |
+| `inappropriate_content` | Igisubizo cyarimo ibikubiyemo bitagombye kwerekanwa ku bakoresha. |
+| `other` | Feedback ntiyahuje n’icyiciro kizwi. |
 
-### Authentication
+### Authentication {#authentication}
 
-Nta wako uburyo bwo ko uburyo bwa endpoint yawe rwayo umuvugizi (authentication) ukenewe, wifashisha ishusho ry'Feedback API Key ku token yawe mu bearer. Umuvugizi utangira:
+Niba endpoint yawe isaba authentication, shyira umwanya wa **Feedback API Key** kuri bearer token yawe. Agent yohereza:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Nta ko ishusho ry'Feedback API Key rwayo rihagaragara, nta `Authorization` header itangirwa.
+Niba umwanya wa **Feedback API Key** ari ubusa, nta `Authorization` header yoherezwa.
 
-### Kugaragaza Gukoresha Feedback (Disabling Feedback Collection)
+### Guhagarika Ikusanywa rya Feedback {#disabling-feedback-collection}
 
-Raba ishusho ry'Feedback Endpoint URL n'ishusho ry'Feedback API Key mu buryo bwo gushyira umuvugizi (blank). Icyemezo cy'thumbs-down n'umwujaji w'feedback bishobora kuboneka kuri users, ariko ubushobozi bwo gufata uburyo bw'feedback bishobora kwitwa ku service yakuriye.
+Siga imirima yombi ya **Feedback Endpoint URL** na **Feedback API Key** ubusa. Buto ya thumbs-down na feedback UI bikomeza kugaragara ku bakoresha, ariko submissions ntizoherezwa kuri serivisi iyo ari yo yose yo hanze.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Mu gihe cy'Advanced tab, ishusho ry'Brave Search API Key rihagaragara ubushobozi bwo gukoresha Internet Search (Internet Search) mu [configuration/internet-search](https://yourdomain.com/configuration/internet-search).
+No kuri tab ya **Advanced**, umwanya wa **Brave Search API Key** ufungura ubushobozi bwa [Ishakisha rya Internet](../configuration/internet-search).
 
-| Ishusho | Uburyo bw'ishusho |
+| Umwanya | Ibisobanuro |
 |---|---|
-| **Brave Search API Key** | Icyemezo cy'API key yawe y'Brave Search ku dashboard ya developer. Riho cyo gukoresha Internet Search mu AI assistant. |
+| **Brave Search API Key** | API key yawe ivuye kuri dashboard y’abateza imbere ya Brave Search. Irakenewe kugira ngo ufungure ishakisha rya internet muri AI assistant. |
 
-Ishusho ry'label rwayo rihagaragara link itangiraho kuri Brave Search API sign-up page. Raba ishusho (blank) kugira ngo ugaragaze Internet Search.
+Ikirango cy’umwanya kirimo link ikandikika ijya ku rupapuro rwo kwiyandikisha rwa Brave Search API. Bireke ubusa kugira ngo uhagarike ishakisha rya internet.
 
-Bona [Internet Search](../configuration/internet-search) ku buryo bwo kwandika umuvugizi w'end-user ku feature y'ibyo.
+Reba [Ishakisha rya Internet](../configuration/internet-search) ku nyandiko zigenewe abakoresha ba nyuma zerekeye iyi mikorere.
 
-## Feature Flags
+## Serivisi ya Superdav Icungwa {#managed-superdav-service}
 
-Iyi nshya mu v1.9.0, ishusho ry'Settings → Feature Flags rihagaragara toggle switches (izindi ndimi zikoresha gukora/gushyira) kugira ngo uburyo bwo gukora cyangwa gufata umuvugizi (optional functionality). Icyemezo cyose cyangwa kigomba gukorwa mu gice; nta gukoresha kuri site runaka ku gihe cy'ibyo.
+Superdav AI Agent v1.18.0 yongeramo endpoints za serivisi ya Superdav icungwa n’itangwa ry’umuyoboro ryikora ku mbuga zishyigikiwe. Koresha aya magenamigambi igihe urubuga rwawe rugomba kwihuza n’utanga serivisi yakiriwe aho gukoresha service endpoint yagenwe intoki.
 
-### Gukoresha Feature Flags
+| Umwanya | Ibisobanuro |
+|---|---|
+| **Managed Superdav Service** | Ifungura umuyoboro wa serivisi ya Superdav yakiriwe ku mbuga zishyigikiwe. |
+| **Provision Connection** | Itangiza gutegura endpoint n’ibyangombwa byikora. Koresha ibi nyuma yo kwemeza ko urubuga rugomba gukoresha umutanga serivisi ucungwa. |
+| **Service Endpoint / Connection Status** | Yerekana endpoint iriho ubu cyangwa uko umuyoboro uhagaze nyuma yo gutegura. |
 
-1. Mu WordPress admin, gukora **Gratis AI Agent → Settings**.
-2. Gukoresha ishusho ry'Feature Flags.
+Nyuma yo gutegura, bika igenamiterere kandi ugenzure uko umuyoboro uhagaze mbere yo kwishingikiriza ku mikorere ya managed-service. Niba gutegura binaniwe, suzuma amabwiriza yo kongera kugerageza yerekanwe kandi wemeze ko urubuga rufite uburenganzira bwo gukoresha umutanga serivisi yakiriwe.
 
-### Access Control Flags
+## Igenamiterere rya Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Maagambo |
+Iyo imikorere ya calendar ya Superdav AI Agent v1.18.0 ifunguye, agent ishobora gusoma calendars zagenwe n’ibisobanuro by’ibikorwa. Ibikoresho bya calendar bishingiye ku gusoma kandi ni ingirakamaro ku nzibutso zishingiye kuri gahunda, gukurikirana abitabiriye, no guhuza contacts.
+
+| Umwanya | Ibisobanuro |
+|---|---|
+| **Google Calendar Credentials** | Bibika credentials cyangwa token connection ikenewe kugira ngo isome amakuru ya calendar. |
+| **Calendar Selection** | Bigabanya calendars zagenwe agent yemerewe gusuzuma. |
+| **Calendar Connection Status** | Byemeza niba credentials ziriho ubu zishobora gusoma calendars n’ibikorwa. |
+
+Komeza credentials za calendar zigarukira kuri calendars agent ikeneye. Ongera uhuze cyangwa uhindure credentials niba status igaragaza token yarangiye.
+
+## TextBee SMS Notifications {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 yongeramo TextBee nk’utanga SMS ku mikorere y’imenyesha yagenwe. SMS notifications zigomba kujyanishwa n’amarembo yo kwemeza n’umuntu ku butumwa bworoshye cyangwa bugenewe abakoresha.
+
+| Umwanya | Ibisobanuro |
+|---|---|
+| **TextBee API Key** | Yemeza requests zijya ku mutanga TextBee SMS. |
+| **TextBee Device / Sender** | Ihitamo sender cyangwa device ya TextBee ikoreshwa ku butumwa busohoka, igihe bisabwa n’utanga serivisi. |
+| **SMS Notifications Enabled** | Yemerera workflows zemejwe kohereza text-message notifications. Bisige bifunze kugira ngo uburizemo kohereza SMS. |
+
+Ohereza ubutumwa bw’igerageza gusa kuri nimero ifitwe n’umuyobozi, hanyuma wemeze imyitwarire y’irembo ryo kwemeza mbere yo gufungura inzibutso ziteganyijwe cyangwa zigenewe abitabiriye.
+
+## Feature Flags {#feature-flags}
+
+Nanone byatangijwe muri v1.9.0, tab ya **Settings → Feature Flags** itanga toggle switches z’imikorere y’inyongera. Buri flag iba ifunguye cyangwa ifunze kuri network yose; nta per-site override ihari muri iki gihe.
+
+### Kugera kuri Feature Flags {#accessing-feature-flags}
+
+1. Muri admin ya WordPress, jya kuri **Gratis AI Agent → Settings**.
+2. Kanda tab ya **Feature Flags**.
+
+### Ibimenyetso by’Igenzura ry’Uburenganzira {#access-control-flags}
+
+| Ibendera | Mburabuzi | Ibisobanuro |
 |---|---|---|
-| **Gukwibwa kuri Administrators** | Off | Iyo igikorwa cyangwa ikoreshwa, gusa abantu bafite uburenganzira bwa `administrator` bashobora gukoresha panel ya chat ya AI Agent. Abantu benshi bindi bakoresha uburyo bwo kuvuga "Kontakira administrator w'ubwoko". |
-| **Gukwibwa kuri Network Admins** | Off | Iyo igikorwa cyangwa ikoreshwa mu gukoresha multisite network, Super Admins gusa bashobora gukoresha agent. Abantu bafite uburenganzira bwo site benshi bakwibwa. Icyo kigomba kwizera cyane ku "Gukwibwa kuri Administrators" niba byose bifite. |
-| **Kugabanya Uburyo bwa Subscriber** | Off | Iyo igikorwa cyangwa ikoreshwa, abantu bafite uburenganzira bwa `subscriber` bashobora gukoresha interface ya kuvuga ariko bakwibwa ku buryo bw'ubwumvikane (batagashobora gukora posts cyangwa guhindura ibindi). |
-| **Kugabanya kuri Non-Members** | Off | Iyo igikorwa cyangwa ikoreshwa, igice cy'amasezerano ya Ultimate Multisite kigomba kwizera. Iyo igikorwa cyangwa uburyo bwo kuvuga bishobora gukwibwa ku site zitagira uburenganzira bw'ubwumvikane. |
+| **Gushyira ku Bagaragaza gusa** | Bizimye | Iyo bifunguye, abakoresha bafite uruhare rwa `administrator` gusa ni bo bashobora gufungura akanama k'ikiganiro ka AI Agent. Izindi nshingano zose zibona ubutumwa bwa "Menyesha umuyobozi wawe" aho kubifungura. |
+| **Gushyira ku Bayobozi b'Urusobe gusa** | Bizimye | Iyo bifunguye ku rusobe rwa multisite, Super Admins gusa ni bo bashobora gukoresha agent. Abayobozi b'imbuga ku giti cyazo barabuzwa. Bigira ububasha kurusha "Gushyira ku Bagaragaza gusa" niba byombi bifunguye. |
+| **Kwemerera Subscriber Kwinjira** | Bizimye | Iyo bifunguye, abakoresha bafite uruhare rwa `subscriber` bashobora gukoresha interineti y'ikiganiro ariko bagarukira ku bushobozi bwo gusoma gusa (nta kurema inyandiko cyangwa guhindura igenamiterere). |
+| **Guhagarika ku Batari Abanyamuryango** | Bizimye | Bihuzwa na Ultimate Multisite membership status. Iyo bifunguye, ikiganiro gihishwa ku mbuga zidafite membership ikora. |
 
-### Branding Flags (Icyemezo cyo Gukoresha Ubwoko)
+### Amabendera ya Branding {#branding-flags}
 
-| Flag | Default | Maagambo |
+| Ibendera | Mburabuzi | Ibisobanuro |
 |---|---|---|
-| **Kugabanya "Powered by Gratis AI Agent" Footer** | Off | Iyo igikorwa cyangwa ikoreshwa, igice cy'ubwoko (branding) kigomba kwibwa ku mwera w'amasezerano ya chat. Icyo gikoreshwa cyane mu gukoresha uburyo bwo kuvuga "white-label". |
-| **Umuco wa Agent** | *(blank)* | Iyo igikorwa cyangwa ikoreshwa, igice cy'ubwoko (branding) kigomba kwibwa n'izina rya product ryawe mu chat header na menu ya admin. Kugabanya kugira uburyo bwo kuvuga "Gratis AI Agent" gusa, ushobora guhagarara. |
-| **Kugabanya Agent Picker** | Off | Iyo igikorwa cyangwa ikoreshwa, abantu batagashobora gukoresha ibindi agent bizwi mu gice cy'amasezerano (five built-in agents). Agent y'ubwoko bishobora gukoresha igomba kwizera ku gihe cyo kumenya mu Settings → General. |
-| **Gukoresha Site Icon nk'Avatar ya Chat** | Off | Iyo igikorwa cyangwa ikoreshwa, uburyo bwo kuvuga AI (icon) mu chat header kigomba kwibwa n'ubwoko bw'site ya WordPress (kigomba gukorwa mu Appearance → Customize → Site Identity). |
+| **Guhisha Footer ya "Powered by Gratis AI Agent"** | Bizimye | Bikuraho umurongo w'icyemezo cya branding ugaragara hasi kuri chat widget. Bisabwa ku ishyirwa mu bikorwa rya white-label. |
+| **Izina rya Agent Ryihariye** | *(ubusa)* | Bisimbuza akamenyetso mburabuzi ka "Gratis AI Agent" kari mu mutwe w'ikiganiro no muri menu y'ubuyobozi n'izina ry'igicuruzwa cyawe. Bisige ubusa kugira ngo ukoreshe mburabuzi. |
+| **Guhisha Agent Picker** | Bizimye | Iyo bifunguye, abakoresha ntibashobora guhinduranya hagati ya agents eshanu zubatswemo. Agent iriho iba yashyizwe ku cyashizweho nka mburabuzi muri Settings → General. |
+| **Gukoresha Ikirango cy'Urubuga nka Chat Avatar** | Bizimye | Bisimbuza ikimenyetso mburabuzi cya AI kiri mu mutwe wa chat widget n'ikirango cy'urubuga rwa WordPress (gishyirwa munsi ya Appearance → Customize → Site Identity). |
 
-### Gukoresha Uburyo Bwo Kumenya (Applying Changes)
+### Amabendera y'Umutekano w'Ubwikorezi {#automation-safety-flags}
 
-Gukoresha **Save Settings** nyuma yuko wamutseza cyangwa ugiye ku flag yose. Uburyo bwo kuvuga bishobora gukorwa mu gihe cy'ubwoko bw'ibindi byiza — nta kigomba kwitera cache cyangwa gukoresha plugin cyangwa ikoranabuhanga.
+Superdav AI Agent v1.18.0 izana amarembo yo kwemezwa n'umuntu n'inyandiko z'inyibutsa kugira ngo imikorere y'ubwikorezi igende neza kurushaho. Izi ngenzuzi zishobora kugaragara muri feature flags cyangwa mu igenamiterere ry'ubwikorezi ryateye imbere, bitewe na package yashyizwemo.
+
+| Ibendera | Mburabuzi | Ibisobanuro |
+|---|---|---|
+| **Gusaba Kwemezwa n'Umuntu** | Birasabwa kuba bifunguye | Bihagarika automations zifite ingaruka kugeza umukoresha wemerewe asuzumye kandi akemeza igikorwa giteganyijwe. |
+| **Kwirinda Inyibutsa Zisubiyemo** | Bifunguye | Bibika inyibutsa zoherejwe kugira ngo kugerageza kongera cyangwa imikorere iteganyijwe bitohereza imenyesha zisubiyemo. |
+| **Gufungura Ibikoresho bya Calendar** | Bizimye kugeza bibonejwe | Byemerera agent gusoma calendars na events za Google zabonejwe. |
+| **Gufungura SMS Notifications** | Bizimye kugeza bibonejwe | Byemerera workflows zemejwe kohereza TextBee SMS notifications nyuma y'uko credentials zibitswe. |
+
+### Gushyira mu Bikora Impinduka {#applying-changes}
+
+Kanda **Save Settings** nyuma yo guhindura ibendera iryo ari ryo ryose. Impinduka zitangira gukora ako kanya — nta gusiba cache cyangwa kongera gufungura plugin bikenewe.

@@ -3,7 +3,7 @@ title: Site Exporter
 sidebar_position: 20
 _i18n_hash: 80debcf49c9e90b4ec9bf006c52837f3
 ---
-# సైట్ ఎక్స్‌పోర్టర్
+# సైట్ ఎక్స్‌పోర్టర్ {#site-exporter}
 
 ఈ ఫీచర్ **Site Exporter** యాడాన్ ద్వారా అందించబడుతుంది.
 

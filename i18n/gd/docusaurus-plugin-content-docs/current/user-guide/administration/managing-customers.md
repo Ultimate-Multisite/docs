@@ -3,7 +3,7 @@ title: Ceannachda chùitean
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# A' chùlnaich a chùlnaichean (Managing Customers)
+# A' chùlnaich a chùlnaichean (Managing Customers) {#managing-customers}
 
 A chùlnaichean **Customers** a th’ annamh a' chùlnaichean a tha sgrìobhaidh anns a ghnothainn. A chùlnaichean seo a thann a' chùlnaichean ùr a tha sgrìobhaidh, a tha thuair an fòcas air faighinn, a tha am fhaighinn, agus un **switch to** link a tha a' bheachd leat a bhith ag tighinn dhan subsite a' chùlnaichean mar site administrator.
 

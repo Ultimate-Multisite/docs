@@ -3,7 +3,7 @@ title: Eroare Fișier Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Eroare la Instalarea Fișierului Sunrise
+# Eroare la Instalarea Fișierului Sunrise {#error-installing-the-sunrise-file}
 
 Fișierul sunrise.php este un fișier special pe care WordPress îl caută în timpul procesului de inițializare. Pentru ca WordPress să poată detecta fișierul sunrise.php, acesta trebuie să fie localizat în **folderul wp-content**.
 

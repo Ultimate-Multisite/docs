@@ -3,13 +3,13 @@ title: Għmli Codijiet taċċessjoni
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kemmis Discount Codes (v2)
+# Kemmis Discount Codes (v2) {#creating-discount-codes-v2}
 
 _**NOTA IMPORTANTI: Dan dan l-artiklu huwa referenzi għall Ultimate Multisite bizzjoni 2.x.**_
 
 Ma jgħod il-Ultimate Multisite, puoi tcrea discount codes biex tagħmel għolja lil kliemiet tiegħek fuq is-subscription. U tcreahom huwa fasil!
 
-## Tcrea u Edita Discount Codes
+## Tcrea u Edita Discount Codes {#creating-and-editing-discount-codes}
 
 Biex tcrea jew edita un discount code, għandi tmur għand **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Il-coupon jkun issa fil-lista tiegħek u, min din, tista' tikklekk biex **edit j
 
 ###
 
-### U l-Użu ta Parametri URL:
+### U l-Użu ta Parametri URL: {#using-url-parameters}
 
 Jekk tixtieq tista' tistruttura b'mod personalizzat il-pricing tables tiegħek jew tgħmli una pjanell coupon code ieħor għall-website tiegħek u tixtieq applikaw l-coupon code fuq form tal-checkout tiegħek awtomatikament, tista' tfarmi dan minn parametri URL.
 

@@ -4,18 +4,18 @@ title: Filtre - wp_ultimo_skip_network_active_check
 sidebar_label: wp_ultimo_skip_network_active_check
 _i18n_hash: 5965dcf90793f474105b7a5f6a005e8b
 ---
-# Filter: wp_ultimo_skip_network_active_check
+# Filter: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
 
 Permet als desenvolupadors saltar (short-circuit) aquesta comprobació.
 
 Això és útil quan es treballa amb configuracions personalitzades basades en composer, com ara Bedrock, per exemple, on l'ús de plugins com a mu-plugins és la norma.
 
-### Desvinguts
+### Desvinguts {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definit en [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-support-agents/blob/main/inc/class-requirements.php#L229) a la línia 229
 
 
-## Returns
+## Returns {#returns}

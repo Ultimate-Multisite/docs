@@ -3,17 +3,17 @@ title: Urugero rw'Umuco wa RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# Urugendo n'Umuco (RunCloud Integration)
+# Urugendo n'Umuco (RunCloud Integration) {#runcloud-integration}
 
-## Urugero (Overview)
+## Urugero (Overview) {#overview}
 RunCloud ni platform y'uko gukoresha uburyo bwo gutera no gukoresha web applications ku server zawe mu cloud. Iyi gukoresha gishobora guhindura domain (domain syncing) n'ubwumvikane bw'SSL certificate management hagati ya Ultimate Multisite na RunCloud.
 
-## Icyiciro (Features)
+## Icyiciro (Features) {#features}
 - Urugero rwo gutera domain (Automatic domain syncing)
 - Ubwumvikane bwo SSL certificate management
 - Gutera domain iyo uburyo bwo gukoresha mappings (Domain removal when mappings are deleted)
 
-## Amakuru (Requirements)
+## Amakuru (Requirements) {#requirements}
 Icyemezo cy'ibyo byiza (constants) bifite mu file yawe `wp-config.php`:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## Inama yo gukora (Setup Instructions)
+## Inama yo gukora (Setup Instructions) {#setup-instructions}
 
-### 1. Gukoresha API Credentials za RunCloud
+### 1. Gukoresha API Credentials za RunCloud {#1-get-your-runcloud-api-credentials}
 
 1. Gukoresha (Log in) ku dashboard yawe ya RunCloud
 2. Gukoresha "User Profile" (gukoresha ishyura yawe mu kigwaro cy'umutwe mu kigwaro cy'urwo rurimi)
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Gukoresha "Generate API Key" iyo ntawe ufite (if you don't already have one)
 5. Gukoresha API Key na API Secret yawe
 
-### 2. Gukoresha Server ID n'App ID zawe
+### 2. Gukoresha Server ID n'App ID zawe {#2-get-your-server-and-app-ids}
 
 1. Mu dashboard yawe ya RunCloud, gukoresha "Servers"
 2. Gukoresha server aho WordPress multisite yawe yitwa (hosted)
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Gukoresha "Web Applications" na gukoresha application yawe ya WordPress
 5. App ID ukenewe mu URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### 3. Gutera constants ku wp-config.php
+### 3. Gutera constants ku wp-config.php {#3-add-constants-to-wp-configphp}
 
 Gusubira ibyo byiza (constants) byo mu file yawe `wp-config.php`:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### 4. Gutera Urugero (Enable the Integration)
+### 4. Gutera Urugero (Enable the Integration) {#4-enable-the-integration}
 
 1. Muze mu admin ya WordPress, gukora Ultimate Multisite > Settings
 2. Gukoresha "Domain Mapping" tab
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 4. Kora RunCloud integration
 5. Kora "Save Changes"
 
-## Uburyo Bwo Kwibikorwa
+## Uburyo Bwo Kwibikorwa {#how-it-works}
 
 Icyiza cyo domain yashyirwaho mu Ultimate Multisite:
 
@@ -70,19 +70,19 @@ Icyiza cyo domain yashyirwaho mu Ultimate Multisite:
 
 Kugira ngo ubone subdomains, integration izakora uko subdomains zizera mu RunCloud ibyo nshya yawe yakoresheje ku network yawe.
 
-## Gukemura Ibibazo (Troubleshooting)
+## Gukemura Ibibazo (Troubleshooting) {#troubleshooting}
 
-### Ibibazo Byo Kumenya API Connection
+### Ibibazo Byo Kumenya API Connection {#api-connection-issues}
 - Shobora gushyira umwujiza w'API wako ni wiza cyangwa hari ikibazo
 - Shobora gushyira umusanzu w'server yawe n'app IDs zikoreshwa mu buryo bwiza
 - Shobora kwerekana ko account yawe ya RunCloud ifite uburyo bwo gukora ibyo byose
 
-### Ibibazo Byo SSL Certificate
+### Ibibazo Byo SSL Certificate {#ssl-certificate-issues}
 - RunCloud yashobora guteka igihe kire cyane kugira ngo ite SSL certificates
 - Shobora kwerekana ko domain zikoreshwa zizera neza IP address yawe ya server
 - Shobora gushyira umusanzu w'SSL mu RunCloud ku application yawe
 
-### Domain Yashya Yashirwaho
+### Domain Yashya Yashirwaho {#domain-not-added}
 - Shobora kumenya logs za Ultimate Multisite kugira ngo ubonde ibindi byo bikoreshwa
 - Shobora kwerekana ko domain yashyirwaho neza mu RunCloud
 - Shobora gushyira umusanzu w'RunCloud ukoresheje subdomains zikoreshwa

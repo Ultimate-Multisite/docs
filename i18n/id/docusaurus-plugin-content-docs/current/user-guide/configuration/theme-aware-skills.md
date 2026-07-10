@@ -3,11 +3,11 @@ title: Kemampuan Sadar Tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Keterampilan Sadar Tema (Theme-Aware Skills)
+# Keterampilan Sadar Tema (Theme-Aware Skills) {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 hadir dengan empat keterampilan bawaan baru yang sadar tema (*theme-aware*). Keterampilan ini secara otomatis beradaptasi dengan tema WordPress Anda yang sedang aktif. Keterampilan ini menyediakan panduan dan kemampuan khusus yang disesuaikan dengan arsitektur dan fitur tema Anda.
 
-## Apa Itu Keterampilan Sadar Tema?
+## Apa Itu Keterampilan Sadar Tema? {#what-are-theme-aware-skills}
 
 Keterampilan sadar tema adalah basis pengetahuan dan set alat yang sudah dikonfigurasi sebelumnya yang secara otomatis dipilih oleh asisten AI berdasarkan tema WordPress yang sedang aktif di situs Anda. Ketika Anda mengganti tema, keterampilan yang tersedia pada asisten akan diperbarui secara otomatis — tanpa perlu konfigurasi manual.
 
@@ -18,9 +18,9 @@ Setiap keterampilan mencakup:
 - **Contoh kustomisasi** — cuplikan kode dan pola konfigurasi untuk tugas umum
 - **Praktik terbaik** — rekomendasi untuk arsitektur dan alur kerja tema
 
-## Keterampilan Sadar Tema yang Tersedia
+## Keterampilan Sadar Tema yang Tersedia {#available-theme-aware-skills}
 
-### Block Themes (Tema Blok)
+### Block Themes (Tema Blok) {#block-themes}
 
 **Berlaku untuk:** Tema yang menggunakan arsitektur berbasis blok WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Keterampilan Block Themes memberikan panduan tentang:
 
 **Aktif secara otomatis ketika:** Tema aktif Anda adalah tema blok (mendukung fitur `block-templates`).
 
-### Classic Themes (Tema Klasik)
+### Classic Themes (Tema Klasik) {#classic-themes}
 
 **Berlaku untuk:** Tema WordPress tradisional yang menggunakan *template* PHP dan editor klasik.
 
@@ -48,7 +48,7 @@ Keterampilan Classic Themes memberikan panduan tentang:
 
 **Aktif secara otomatis ketika:** Tema aktif Anda adalah tema klasik (non-blok).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Berlaku untuk:** Situs yang menggunakan *plugin* Kadence Blocks untuk desain berbasis blok tingkat lanjut.
 
@@ -62,7 +62,7 @@ Keterampilan Kadence Blocks memberikan panduan tentang:
 
 **Aktif secara otomatis ketika:** *plugin* Kadence Blocks aktif di situs Anda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Berlaku untuk:** Situs yang menggunakan tema Kadence untuk desain dan kustomisasi berbasis blok.
 
@@ -76,15 +76,15 @@ Keterampilan Kadence Theme memberikan panduan tentang:
 
 **Aktif secara otomatis ketika:** Tema Kadence adalah tema aktif Anda.
 
-## Cara Keterampilan Dipilih
+## Cara Keterampilan Dipilih {#how-skills-are-selected}
 
 Asisten secara otomatis mendeteksi tema aktif dan *plugin* yang terpasang pada setiap pesan. Jika keterampilan sadar tema yang cocok tersedia, keterampilan tersebut akan dimuat ke dalam konteks asisten secara otomatis. Anda tidak perlu mengaktifkan atau mengganti keterampilan secara manual.
 
-### Beberapa Keterampilan
+### Beberapa Keterampilan {#multiple-skills}
 
 Jika beberapa keterampilan berlaku untuk situs Anda (misalnya, jika Anda mengaktifkan Kadence Blocks dan Kadence Theme), asisten memiliki akses ke semua keterampilan yang berlaku dan dapat merujuk panduan dari masing-masing.
 
-### Mengganti Tema
+### Mengganti Tema {#switching-themes}
 
 Ketika Anda mengubah tema aktif, keterampilan yang tersedia pada asisten akan diperbarui secara otomatis pada pesan berikutnya. Contohnya:
 
@@ -92,11 +92,11 @@ Ketika Anda mengubah tema aktif, keterampilan yang tersedia pada asisten akan di
 2. Anda beralih ke tema klasik.
 3. Pada pesan Anda berikutnya, keterampilan **Classic Themes** akan dimuat secara otomatis, dan keterampilan **Block Themes** tidak lagi tersedia.
 
-## Menggunakan Keterampilan Sadar Tema
+## Menggunakan Keterampilan Sadar Tema {#using-theme-aware-skills}
 
 Untuk memanfaatkan keterampilan sadar tema, cukup jelaskan apa yang ingin Anda lakukan di antarmuka obrolan. Asisten akan secara otomatis merujuk panduan keterampilan yang sesuai.
 
-### Contoh Prompt
+### Contoh Prompt {#example-prompts}
 
 **Untuk Block Themes:**
 > "Buat bagian hero dengan gambar latar belakang dan teks di tengah menggunakan pola blok."

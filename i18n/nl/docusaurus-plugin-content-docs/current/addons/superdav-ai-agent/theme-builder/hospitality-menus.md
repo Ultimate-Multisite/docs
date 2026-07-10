@@ -3,15 +3,15 @@ title: Gastvrijheidsmenu's
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Gastronomische Menu's
+# Gastronomische Menu's {#hospitality-menus}
 
 De functie **Gastronomische Menu's** stelt Theme Builder in staat om gestructureerde menu's voor voedsel en drank te genereren en in te bedden op uw WordPress-site.
 
-## Overzicht
+## Overzicht {#overview}
 
 Theme Builder kan nu professionele, gestructureerde menu's maken voor horecazakelijke bedrijven, waaronder restaurants, cafés, bars en cateringdiensten. Deze menu's zijn volledig geïntegreerd in het ontwerp van uw site en kunnen eenvoudig worden bijgewerkt en beheerd.
 
-## Ondersteunde Horeca-typen
+## Ondersteunde Horeca-typen {#supported-hospitality-types}
 
 - **Restaurants** — volledige maaltijdmenu's
 - **Cafés** — koffie- en lichte maaltijdmenu's
@@ -21,9 +21,9 @@ Theme Builder kan nu professionele, gestructureerde menu's maken voor horecazake
 - **Food Trucks** — mobiele voedseldienstenmenu's
 - **Brouwerijen en Wijnhuizen** — drankmenu's met beschrijvingen
 
-## Menu Structuur
+## Menu Structuur {#menu-structure}
 
-### Menu Categorieën
+### Menu Categorieën {#menu-categories}
 
 Menu's zijn georganiseerd in categorieën:
 
@@ -34,7 +34,7 @@ Menu's zijn georganiseerd in categorieën:
 - **Dranken** — drankjes (alcoholisch en niet-alcoholisch)
 - **Specials** — dagelijkse of seizoensgebonden specials
 
-### Menu Item Formaat
+### Menu Item Formaat {#menu-item-format}
 
 Elk menu-item bevat:
 
@@ -49,7 +49,7 @@ Elk menu-item bevat:
 }
 ```
 
-#### Veldnamen
+#### Veldnamen {#item-fields}
 
 | Veld | Type | Beschrijving |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Elk menu-item bevat:
 | `allergens` | array | Veelvoorkomende allergenen (Noten, Schelpdieren, etc.) |
 | `availability` | string | Wanneer beschikbaar (Dagelijks, Seizoensgebonden, etc.) |
 
-## Gastronomische Menu's Maken
+## Gastronomische Menu's Maken {#creating-hospitality-menus}
 
-### Stap 1: Menu-informatie Verstrekken
+### Stap 1: Menu-informatie Verstrekken {#step-1-provide-menu-information}
 
 Vertel Theme Builder over uw menu:
 
@@ -71,7 +71,7 @@ Maak een restaurantmenu voor mijn Italiaanse restaurant met voorgerechten,
 pastagerechten, hoofdgerechten en desserts. Neem prijzen en beschrijvingen op.
 ```
 
-### Stap 2: Theme Builder Genereert Menu
+### Stap 2: Theme Builder Genereert Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatteert prijzen en beschrijvingen
 5. Voegt dieet- en allergeneninformatie toe
 
-### Stap 3: Bekijken en Aanpassen
+### Stap 3: Bekijken en Aanpassen {#step-3-review-and-customize}
 
 U kunt:
 
@@ -91,9 +91,9 @@ U kunt:
 4. Beschrijvingen en dieetinfo bijwerken
 5. Styling en lay-out aanpassen
 
-## Menu Weergave Opties
+## Menu Weergave Opties {#menu-display-options}
 
-### Volledige Menu Pagina
+### Volledige Menu Pagina {#full-menu-page}
 
 Een specifieke pagina die uw volledige menu weergeeft:
 
@@ -102,7 +102,7 @@ Een specifieke pagina die uw volledige menu weergeeft:
 - Printvriendelijke lay-out
 - Responsief ontwerp voor mobiel
 
-### Menu Widget
+### Menu Widget {#menu-widget}
 
 Voeg menu-secties toe op andere pagina's:
 
@@ -111,7 +111,7 @@ Voeg menu-secties toe op andere pagina's:
 - Drankmenu op de barpagina
 - Dessertshowcase in de voettekst
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Genereer een downloadbaar PDF-menu:
 
@@ -120,9 +120,9 @@ Genereer een downloadbaar PDF-menu:
 - Bevat afbeeldingen en beschrijvingen
 - Eenvoudig te delen en per e-mail te versturen
 
-## Dieet- en Allergeneninformatie
+## Dieet- en Allergeneninformatie {#dietary-and-allergen-information}
 
-### Dieetattributen
+### Dieetattributen {#dietary-attributes}
 
 Markeer items met dieetinformatie:
 
@@ -134,7 +134,7 @@ Markeer items met dieetinformatie:
 - **Laag-Koolhydraat** — verminderde koolhydraten
 - **Hoog-Eiwit** — rijk aan eiwitten
 
-### Allergenwaarschuwingen
+### Allergenwaarschuwingen {#allergen-warnings}
 
 Sluit veelvoorkomende allergenen op:
 
@@ -147,9 +147,9 @@ Sluit veelvoorkomende allergenen op:
 - **Gluten** — tarwe en glutenhoudende granen
 - **Sesam** — sesamzaad en olie
 
-## Menu Beheer
+## Menu Beheer {#menu-management}
 
-### Prijzen Bijwerken
+### Prijzen Bijwerken {#updating-prices}
 
 Menu-prijzen eenvoudig bijwerken:
 
@@ -159,7 +159,7 @@ Menu-prijzen eenvoudig bijwerken:
 4. Wijzigingen opslaan
 5. Wijzigingen verschijnen direct op uw site
 
-### Seizoensgebonden Items Toevoegen
+### Seizoensgebonden Items Toevoegen {#adding-seasonal-items}
 
 Maak seizoensgebonden menuvariaties:
 
@@ -169,7 +169,7 @@ Maak seizoensgebonden menuvariaties:
 4. Plan de beschikbaarheidsdata
 5. Automatisch weergeven tijdens het seizoen
 
-### Specials Beheren
+### Specials Beheren {#managing-specials}
 
 Toon dagelijkse of wekelijkse specials:
 
@@ -179,7 +179,7 @@ Toon dagelijkse of wekelijkse specials:
 4. Dagelijks of wekelijks updaten
 5. Oude specials archiveren
 
-## Integratie met Theme Builder
+## Integratie met Theme Builder {#integration-with-theme-builder}
 
 Bij het gebruik van Theme Builder voor horecageites:
 
@@ -189,9 +189,9 @@ Bij het gebruik van Theme Builder voor horecageites:
 4. **Mobiele optimalisatie** — menu's worden prachtig weergegeven op telefoons
 5. **SEO-optimalisatie** — menu's zijn vriendelijk voor zoekmachines
 
-## Best Practices
+## Best Practices {#best-practices}
 
-### Menu Ontwerp
+### Menu Ontwerp {#menu-design}
 
 - **Duidelijke organisatie** — logische categorie-structuur
 - **Leesbare beschrijvingen** — smakelijk en informatief
@@ -199,7 +199,7 @@ Bij het gebruik van Theme Builder voor horecageites:
 - **Professionele foto's** — hoogwaardige voedselafbeeldingen
 - **Witruimte** — de pagina niet overladen
 
-### Content
+### Content {#content}
 
 - **Accurate beschrijvingen** — beschrijf items nauwkeurig
 - **Specials benadrukken** — laat specials opvallen
@@ -207,7 +207,7 @@ Bij het gebruik van Theme Builder voor horecageites:
 - **Regelmatig updaten** — houd prijzen en items actueel
 - **Smakelijke taal gebruiken** — laat items lekker klinken
 
-### Toegankelijkheid
+### Toegankelijkheid {#accessibility}
 
 - **Leesbare lettertypen** — gebruik duidelijk leesbare lettertypen
 - **Voldoende contrast** — zorg ervoor dat de tekst leesbaar is
@@ -215,9 +215,9 @@ Bij het gebruik van Theme Builder voor horecageites:
 - **Allergenwaarschuwingen** — toon allergenen prominent
 - **Mobielvriendelijk** — test op alle apparaten
 
-## Voorbeelden
+## Voorbeelden {#examples}
 
-### Restaurant Menu Structuur
+### Restaurant Menu Structuur {#restaurant-menu-structure}
 
 ```
 Voorgerechten
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Café Menu Structuur
+### Café Menu Structuur {#cafe-menu-structure}
 
 ```
 Koffie
@@ -260,7 +260,7 @@ Broodjes
 └── Vegetarisch Wrap
 ```
 
-## Gerelateerde Functies
+## Gerelateerde Functies {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — navigatiemenu's maken
 - [Design Direction](./design-direction.md) — het ontwerp van uw site aanpassen

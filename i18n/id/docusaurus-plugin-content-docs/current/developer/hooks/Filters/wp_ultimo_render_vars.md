@@ -4,11 +4,11 @@ title: Filter - wp_ultimo_render_vars
 sidebar_label: wp_ultimo_render_vars
 _i18n_hash: 2f3f60e0a28a26eca6448de7ea29aadd
 ---
-# Filter: wp_ultimo_render_vars
+# Filter: wp_ultimo_render_vars {#filter-wpultimorendervars}
 
 Memungkinkan pengembang plugin untuk menambahkan variabel tambahan ke konteks render secara global.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Memungkinkan pengembang plugin untuk menambahkan variabel tambahan ke konteks re
 | $view | `string` | Nama tampilan (view) yang akan dirender. |
 | $default_view | `string` | Nama tampilan cadangan (fallback_view). |
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/functions/template.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/template.php#L31) pada baris 31
 
 
-## Mengembalikan
+## Mengembalikan {#returns}

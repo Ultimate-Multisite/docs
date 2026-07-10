@@ -1,132 +1,148 @@
 ---
-title: بنيو آليه
+title: اندروني طور شامل ايجنٽس
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Built-in Agents
+# بلٽ-اِن Agents {#built-in-agents}
 
-Gratis AI Agent v1.9.0 ۾ پنج built-in agents شامل آهن، جن ۾ هر هڪ کي مخصوص ڪيل ٽولز، هڪ مخصوص system prompt، ۽ ان شعبن جي عام ڪم جون شروعاتي تجويرا موجود آهن. ايجنٽس جو بدلائڻ توهان جي طرف کان ڪنهن به configuration کان سواءِ assistant جي صلاحيتون ۽ هو ڪيئن جواب ڏئي ٿو ان کي بدلائي ٿو.
+Gratis AI Agent v1.9.0 پنج بلٽ-اِن agents سان اچي ٿو، هر هڪ کي اوزارن جي مرڪوز سيٽ، ترتيب ڏنل system prompt، ۽ انهي علائقي جي عام ڪمن سان ملندڙ شروعاتي تجويزن سان اڳواٽ ترتيب ڏنو ويو آهي. agents جي وچ ۾ مٽاسٽا ڪرڻ سان assistant ڇا ڪري سگهي ٿو ۽ ڪيئن جواب ڏئي ٿو، اهو بدلجي ٿو — توهان جي طرفان ڪنهن به configuration کان سواءِ. Superdav AI Agent v1.18.0 انهن workflows ۾ schedule-aware اوزار، reminder records، approval gates، ۽ SMS notifications شامل ڪري سگهي ٿو جڏهن لاڳاپيل integrations ترتيب ڏنل هجن.
 
-## Agent ڇا آهي؟
+## Agent ڇا آهي؟ {#what-is-an-agent}
 
-هر agent هڪ نامدار configuration profile آهي جيڪا هيٺيون شيون جو مجموعو ڪري ٿي:
+هر agent هڪ نالي وارو configuration profile آهي جيڪو گڏ ڪري ٿو:
 
-- **Tools** — اهڙا صلاحيتون جن کي agent استعمال ڪرڻ جي اجازت آهي (مثال طور، Content Writer کي post banaڻ جي صلاحيت حاصل آهي; Design Studio کي CSS ۽ theme.json جي صلاحيت حاصل آهي).
-- **System prompt** — اهڙا حڪمناتي جيڪي agent جو انداز، ترجيحون، ۽ حدود مقرر ڪن ٿيون.
-- **Suggestions** — چٽ (chat) انٽرفيس ۾ ڏيکيل پري-رائٽ پ롬پٽس جن سان توهان جلدي شروعات ڪري سگهو ٿا.
+- **اوزار** — اهي صلاحيتون جن کي agent سڏڻ جي اجازت رکي ٿو (مثال طور Content Writer کي post ٺاهڻ وارين صلاحيتن تائين رسائي آهي؛ Design Studio کي CSS ۽ theme.json صلاحيتن تائين رسائي آهي)
+- **System prompt** — هدايتون جيڪي agent جو لهجو، ترجيحون، ۽ حدون مقرر ڪن ٿيون
+- **تجويزون** — اڳواٽ لکيل prompts جيڪي chat interface ۾ ڏيکاريا وڃن ٿا ته جيئن توهان جلدي شروع ڪري سگهو
 
-## Agent Picker کي استعمال ڪرڻ
+## Agent Picker تائين رسائي {#accessing-the-agent-picker}
 
-1. WordPress admin sidebar ۾ **Gratis AI Agent** panel کي کليل ڪريو.
-2. چٽ هڊر جي اوپري باري طرف **agent icon** تي ڪلڪ ڪريو (icon فعال agent جو reflect ڪرڻ لاءِ بدلجي ويندو آهي).
-3. **Agent Picker** هڪ form-table overlay طور کليل ٿئي ٿو. هر agent ان جي icon، نالو ۽ هڪ لائن جو description سان لسٹ ڪيل آهي.
-4. هيٺ ڏنل row تي ڪلڪ ڪريو ان کي فعال ڪرڻ لاءِ. چٽ هڊر فوري طور تي اپڊيٽ ٿيندو آهي.
+1. WordPress admin sidebar ۾ **Gratis AI Agent** panel کوليو.
+2. chat header جي مٿي-کاٻي ۾ **agent icon** تي ڪلڪ ڪريو (icon active agent کي ظاهر ڪرڻ لاءِ تبديل ٿئي ٿو).
+3. **Agent Picker** هڪ form-table overlay طور کلي ٿو. هر agent پنهنجي icon، نالي، ۽ هڪ-لائين وضاحت سان فهرست ٿيل آهي.
+4. agent row تي ڪلڪ ڪري ان کي active ڪريو. chat header فوراً update ٿي وڃي ٿو.
 
-توهان گفتگو دوران به agents بدل سگهو ٿا — نئين agent جو system prompt هيٺ ڏنل message کان شروع ٿي اثر انداز ٿيندو آهي.
+توهان گفتگو جي وچ ۾ به agents مٽائي سگهو ٿا — نئين agent جو system prompt ايندڙ message کان اثر وٺي ٿو.
 
-## پنج Built-in Agents
+## پنج بلٽ-اِن Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
-**Focus:** posts، pages، ۽ contact forms کي banaana ۽ edit ڪرڻ.
+**مرڪز:** posts، pages، ۽ contact forms ٺاهڻ ۽ edit ڪرڻ.
 
-**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**دستياب اوزار:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrations enabled هجڻ سان، configured calendar context، approval gates، reminders، ۽ SMS notification tools به approved workflows لاءِ دستياب ٿي سگهن ٿا.
 
-**ڪه اڪثر ڪري ڪامياب ٿيندي آهي:**
-- مختصر معلومات يا خاکہ (outline) کان بلاگ پوسٽس جو رقت ۽ پبلش ڪرڻ
-- نئين سائيٽ لاءِ لينڊنگ ايجز (landing pages) جو هڪ گروپ بنائڻ
-- رابطي ۽ سوال وٺڻ وارن فارمز (forms) جو ٺهڻ
-- URL يا سرچ کان پوسٽ تي فيچورڊ ايميجز (featured images) جو ترتيبي
+**اهو ڪهڙو ڪم سٺو ڪري ٿو:**
+- brief يا outline مان blog posts جو draft ۽ publish ڪرڻ
+- نئين site لاءِ landing pages جا batches ٺاهڻ
+- contact ۽ enquiry forms ٺاهڻ
+- URL يا search مان posts تي featured images لڳائڻ
+- configured Google Calendar context مان event follow-up messages جو draft ڪرڻ، پوءِ notifications موڪلڻ کان اڳ approval لاءِ روڪڻ
 
 **شروعاتي تجويزون:**
-- *WordPress multisite جا فائدن بابت هڪ 500 لفظن جو بلاگ پوسٽ لکو.*
-- *هڪ About، Services، ۽ Contact پيچ کي بنائ ۽ ان کي پبلش ڪريو.*
-- *Contact پيچ تي ڪا بوڪنگ سوال وٺڻ وارو فارم شامل ڪريو.*
+- *WordPress multisite جي فائدن بابت 500 لفظن جو blog post لکو.*
+- *About، Services، ۽ Contact page ٺاهيو ۽ انهن کي publish ڪريو.*
+- *Contact page ۾ booking enquiry form شامل ڪريو.*
+- *سڀاڻي جي configured calendar event جي attendees لاءِ reminder جو draft ٺاهيو ۽ ان کي موڪلڻ کان اڳ approval جو انتظار ڪريو.*
 
 ---
 
-### سائيٽ بلڊر (Site Builder)
+### Site Builder {#site-builder}
 
-**مرڪز:** هڪ ئي prompt کان پوري وقت سائيٽ بنائڻ.
+**مرڪز:** هڪ واحد prompt مان آخر-کان-آخر website creation.
 
-**موجوده آيل اوزار:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**دستياب اوزار:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 سان، configured managed-service، approval، reminder، calendar، ۽ SMS tools اتي دستياب ٿي سگهن ٿا جتي administrators انهن کي enable ڪن ٿا.
 
-**ڪه اڪثر ڪري ڪامياب ٿيندي آهي:**
-- ڪنه ڪاروبار جي قسم لاءِ هڪ متعدد مرحليان وارو سائيٽ بلڊ پئن (site build plan) ٺاهڻ.
-- هر مرحلو کي خود بخود چلائڻ — هيكل، مواد، نيويجيشن، ۽ дизаين.
-- پلان دوران غلطين کان بچي پاتارڻ جنهن لاءِ ڪنه به عمل جي ضرورت نه هجي.
-- بلڊ جو حصو هجڻ سان سفارش ڪيل plugins جو انحصاني (install) ڪرڻ.
-- چٽ ايفيس (chat interface) کان ئي رابطي فارمز جو سڌو ٺهڻ (Superdav AI Agent v1.10.0+).
+**اهو ڪهڙو ڪم سٺو ڪري ٿو:**
+- بيان ڪيل business type لاءِ multi-phase site build plan ٺاهڻ
+- هر phase کي خودمختيار طور execute ڪرڻ — structure، content، navigation، design
+- manual intervention جي ضرورت کان سواءِ mid-plan errors مان recover ڪرڻ
+- build جي حصي طور recommended plugins install ڪرڻ
+- chat interface مان سڌو contact forms ٺاهڻ (Superdav AI Agent v1.10.0+)
+- جڏهن approval gates ۽ reminder records enabled هجن ته duplicate notifications کان سواءِ launch reminders يا attendee follow-up coordinate ڪرڻ
 
 **شروعاتي تجويزون:**
-- *گلييري پوسٽ طرز، بوڪنگ پيچ ۽ رابطي فارم سان هڪ فوٽوغرافي پورٽفوليو سائيٽ بنائ.*
-- *هڪ ресторан جي سائيٽ banaو جنهن ۾ آن لائن مينيو، ڪاروبار جو وقت، ۽ تيبل بڪنگ جو سوال وٺڻ وارو فارم هجي.*
-- *Freelance ڪن سلتي سائيٽ قائم ڪريو جنهن ۾ سروس پيچ، پورٽفوليو حصو، ۽ بلاگ هجي.*
-- *سائٽ بلڊر جو استعمال ڪندي Contact پيچ تي هڪ رابطي فارم شامل ڪريو.*
+- *gallery post type، booking page، ۽ contact form سان photography portfolio site ٺاهيو.*
+- *online menu، opening hours، ۽ table-booking enquiry form سان restaurant website ٺاهيو.*
+- *service pages، portfolio section، ۽ blog سان freelance consulting site set up ڪريو.*
+- *site builder استعمال ڪندي Contact page ۾ contact form شامل ڪريو.*
+- *site launch checklist approve ٿيڻ کان پوءِ، configured stakeholder contact ڏانهن SMS reminder موڪليو.*
 
 ---
 
-### дизаين اسٽوڊيو (Design Studio)
+### Design Studio {#design-studio}
 
-**مرڪز:** بصري تخصيص — رنگ، فوٽوٽائپي، CSS، ۽ بلاڪ پٽرن.
+**مرڪز:** بصري customisation — colours، typography، CSS، ۽ block patterns.
 
-**उपलब्ध ٹولز:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**دستياب اوزار:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**ڪجهه ڪجهه ڪجهه:**
-- نيمدي ٿيل تھیم پريسٽس (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) کي لاڳو ڪرڻ.
-- theme.json جي مدد سان گлоба تيپوغرافي ۽ رنگن جي پالتو کي بهتر بڻائڻ.
-- برانڊ مخصوص اووررائڊ لاءِ ڪسسٹم CSS شامل ڪرڻ.
-- هڪ صفحي جو screenshot لکو ۽ تصميمي مسئلن لاءِ ان جو جائزو وٺو.
+**اهو ڪهڙو ڪم سٺو ڪري ٿو:**
+- نالي وارا theme presets لاڳو ڪرڻ (minimal-dark، warm-editorial، corporate-blue، vibrant-startup، classic-blog)
+- theme.json ذريعي global typography ۽ colour palettes کي fine-tune ڪرڻ
+- brand-specific overrides لاءِ custom CSS inject ڪرڻ
+- page جو screenshot وٺڻ ۽ design issues لاءِ ان جو جائزو وٺڻ
 
 **شروعاتي تجويزون:**
-- *warm-editorial پريسٽ لاڳو ڪريو ۽ پوءِ پرائمري رنگ کي #2d6a4f تي set ڪريو.*
-- *هوميج صفحي جو screenshot لکو ۽ مون کان ڪهڙا بهتر بڻائڻ گهرجي ان بابت ٻڌايو.*
-- *پوري وڏي (full-width) background image ۽ سنترتي هيڊنگ سان هڪ قابل استعمال هيرو block pattern banao.*
+- *warm-editorial preset لاڳو ڪريو ۽ پوءِ primary colour کي #2d6a4f تي set ڪريو.*
+- *homepage جو screenshot وٺو ۽ مون کي ٻڌايو ته توهان ڇا بهتر ڪندا.*
+- *full-width background image ۽ centred heading سان reusable hero block pattern ٺاهيو.*
 
----
+### Plugin Manager {#plugin-manager}
 
-### Plugin Manager
+**مرڪز:** WordPress plugins ڳولڻ، install ڪرڻ، ۽ manage ڪرڻ.
 
-**مرڪز:** WordPress plugins کي ڳولڻ، نصب ڪرڻ ۽ منظم ڪرڻ.
+**دستياب اوزار:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**उपलब्ध ٹولز:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**ڪجهه ڪجهه ڪجهه:**
-- وضاحت ڪيل استعمال جي صورتحال لاءِ بهترين plugin جو سفارش ڪرڻ.
-- registry کان ability packs نصب ڪرڻ.
-- category واري available ability catalogue کي ڏسڻ.
+**اهو ڪهڙو ڪم سٺو ڪري ٿو:**
+- بيان ڪيل use case لاءِ بهترين plugin recommend ڪرڻ
+- registry مان ability packs install ڪرڻ
+- category موجب دستياب ability catalogue browse ڪرڻ
 
 **شروعاتي تجويزون:**
-- *Membership directory لاءِ بهترين plugin کون آهي؟*
-- *WooCommerce abilities pack نصب ڪريو.*
-- *مونکي سڀئي available ecommerce ability packs ڏيو.*
+- *membership directory لاءِ بهترين plugin ڪهڙو آهي؟*
+- *WooCommerce abilities pack install ڪريو.*
+- *مون کي سڀ دستياب ecommerce ability packs ڏيکاريو.*
 
 ---
 
-### Support Assistant
+### Support Assistant {#support-assistant}
 
-**مرڪز:** سائيٽ جي مواد، setings ۽ WordPress configuration بابت سوالن جو جواب ڏيڻ.
+**مرڪز:** site content، settings، ۽ WordPress configuration بابت سوالن جا جواب ڏيڻ.
 
-**उपलब्ध ٹولز:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**دستياب اوزار:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**ڪه ان ڇا ڪري سگهي ٿو:**
-- موجوده سائٽ جي ترتيبي ۽ خيار (settings and options) کي ڏسڻ.
-- هيٺ ڏنل معلومات آهي ته سائٽ تي ڪهڙيون post types، taxonomies، ۽ menus ڪيئن set ڪيا ويا آهن.
-- لائیو قيمت (live values) کي پڙهي وٺي "هي هي setting ڇا ڪري ٿي؟" جو جواب ڏيڻ.
-- تبديل ڪرڻ کان اڳ هڪ read-only diagnostic layer جي طور تي ڪم ڪرڻ.
+**اهو ڇا چڱيءَ طرح ڪري ٿو:**
+- موجوده سائيٽ جون سيٽنگون ۽ آپشن ڳولڻ
+- وضاحت ڪرڻ ته سائيٽ تي ڪهڙا پوسٽ قسم، ٽيڪسونوميون، ۽ مينيو ترتيب ڏنل آهن
+- لائيو قدر پڙهي "هي سيٽنگ ڇا ڪري ٿي؟" سوالن جا جواب ڏيڻ
+- تبديليون ڪرڻ کان اڳ رڳو پڙهڻ واري تشخيصي پرت طور ڪم ڪرڻ
 
 **شروعاتي تجويزون:**
-- *هي سائٽ تي موجوده plugins ۽ settings ڪهڙيون آهن؟*
-- *هي سائٽ تي register ڪيل سڀني custom post types جو list ڏيو.*
-- *ڪهڙا navigation menus موجود آهن ۽ انهن کي ڪٿي assign ڪيو آهي؟*
+- *هن سائيٽ تي هن وقت ڪهڙا پلگ ان ۽ سيٽنگون فعال آهن؟*
+- *هن سائيٽ تي رجسٽر ٿيل سڀ ڪسٽم پوسٽ قسم لسٽ ڪريو.*
+- *ڪهڙا نيويگيشن مينيو موجود آهن ۽ اهي ڪٿي مقرر ٿيل آهن؟*
 
 ---
 
-## Customising Agents (এجنتس کي ترقي ڏيڻ)
+## Superdav Automation Integrations {#superdav-automation-integrations}
 
-هر built-in agent کي `gratis_ai_agent_agents` filter جي ذريعي extend يا replace ڪري سگهجي ٿو.
+جڏهن Superdav AI Agent v1.18.0 انٽيگريشنز ترتيب ڏنل هجن، ته ٺهيل-ان ايجنٽ وڌيڪ محفوظ شيڊول-آگاهه آٽوميشن ورڪ فلو ۾ حصو وٺي سگهن ٿا:
 
-### موجوده agent ۾ custom system prompt جو اضافو ڪرڻ
+- **Google Calendar پڙهڻ جا اوزار** ايجنٽن کي فالو-اپ ڪم جو مسودو ٺاهڻ کان اڳ ترتيب ڏنل ڪئلينڊر ۽ واقعن جو جائزو وٺڻ ڏين ٿا.
+- **رابطي ۽ شرڪت ڪندڙن جي ميپنگ** واقعي جي شرڪت ڪندڙن کي WordPress استعمال ڪندڙن يا ڄاتل رابطن سان ملائڻ ۾ مدد ڪري ٿي.
+- **انساني منظوري جا دروازا** حساس عملن کي روڪين ٿا جيستائين ڪو بااختيار استعمال ڪندڙ انهن جو جائزو وٺي ۽ تصديق ڪري.
+- **ياد ڏياريندڙ رڪارڊ** شيڊول ٿيل نوڪرين جي ٻيهر ڪوشش يا ورجاءُ وقت نقل نوٽيفڪيشنن کان بچائين ٿا.
+- **TextBee SMS نوٽيفڪيشنز** ترتيب ڏنل ٽيڪسٽ پيغام فقط تڏهن موڪلين ٿا جڏهن SMS سندون ۽ ورڪ فلو اجازتون فعال هجن.
+
+سفارش ڪيل ورڪ فلو: ايجنٽ کان پيغام يا عمل تيار ڪرائڻ لاءِ پڇو، منظوري پرامپٽ جو جائزو وٺو، پوءِ منظور ٿيل عمل کي ٻيهر شروع ٿيڻ جي اجازت ڏيو. ورجائيندڙ ياد ڏيارڻن لاءِ، ياد ڏياريندڙ deduplication فعال رکو ته جيئن ساڳئي واقعي يا رابطي کي بار بار اطلاع نه ملي.
+
+---
+
+## ايجنٽن کي ڪسٽمائيز ڪرڻ {#customising-agents}
+
+هر ٺهيل-ان ايجنٽ کي `gratis_ai_agent_agents` فلٽر ذريعي وڌائي يا مٽائي سگهجي ٿو.
+
+### موجوده ايجنٽ ۾ ڪسٽم سسٽم پرامپٽ شامل ڪرڻ {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### نئين agent جو register ڪرڻ
+### نئون ايجنٽ رجسٽر ڪرڻ {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-نئون Agent Picker ۾ فلٽر چلڻ کان وٺي هي نئين agent جو ڏسيل ٿو.
+نئون ايجنٽ فلٽر هلڻ کان فوراً پوءِ Agent Picker ۾ ظاهر ٿئي ٿو.
 
-### Built-in agent کي ختم ڪرڻ
+### ٺهيل-ان ايجنٽ هٽائڻ {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

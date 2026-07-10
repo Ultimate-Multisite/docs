@@ -1,31 +1,45 @@
 ---
-title: التعددية في المستأجرين
+title: تعدد المستأجرين
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# التعددية
+# تعدد المستأجرين {#multi-tenancy}
 
-توزيع المواقع الفرعية عبر الخوادم وقواعد البيانات لتحسين الأداء والأمان
+وزّع المواقع الفرعية عبر الخوادم وقواعد البيانات لتحسين الأداء والأمان
 
-## المتطلبات
+## أبرز ما في إصدار 1.2.0 {#version-120-release-highlights}
 
-- WordPress 5.3 أو أحدث
-- PHP 7.4 أو أحدث
+يضيف Multi-Tenancy 1.2.0 أساس المستأجر السيادي لتدفقات عمل العزل الإنتاجي:
+
+- تسجيل دخول تلقائي للمستأجر بلا حالة مع زيارات SSO قصيرة العمر ومحمية من إعادة التشغيل.
+- عزل قاعدة البيانات ونظام الملفات لكل موقع فرعي للمستأجرين السياديين.
+- قدرة تعدد المستأجرين في Hostinger لتوفير المستأجرين مع مراعاة المضيف.
+- بوابات تحقق الهجرة السيادية لفحوصات البيانات القديمة ومعالجة الدفع غير المتزامنة.
+- ربط قابل للتكوين لمضيف قاعدة البيانات على الجهاز نفسه لتثبيتات Bedrock وFrankenPHP وlocalhost.
+- تحسينات في تمهيد المستأجر، وكاتب قاعدة البيانات، وتمهيد المخطط، وتوفير المستخدمين.
+- إزالة سيادية أكثر أمانًا تنظّف بيانات اعتماد المستأجر.
+
+راجع أدلة المستخدم حول [تدفق عمل الهجرة السيادية](/user-guide/getting-started/sovereign-migration-workflow)، و[عزل تعدد المستأجرين](/user-guide/configuration/multi-tenancy-isolation)، و[عمليات المستأجر السيادي](/user-guide/administration/sovereign-tenant-operations).
+
+## المتطلبات {#requirements}
+
+- WordPress 5.3 أو أعلى
+- PHP 7.4 أو أعلى
 - إضافة Multisite Ultimate (نشطة)
 
-## التثبيت
+## التثبيت {#installation}
 
-1. قم بتحميل ملفات الإضافة إلى دليل `/wp-content/plugins/` الخاص بك
-2. فعّل الإضافة من خلال قائمة 'الإضافات' في ووردبريس
-3. قم بتكوين إعدادات الإضافة في مدير الشبكة
+1. ارفع ملفات الإضافة إلى دليل `/wp-content/plugins/` لديك
+2. فعّل الإضافة من خلال قائمة 'Plugins' في WordPress
+3. اضبط إعدادات الإضافة في إدارة الشبكة
 
-## التطوير
+## التطوير {#development}
 
-### الإعداد
+### الإعداد {#setup}
 
 ```bash
 # Install dependencies
@@ -46,78 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### هيكل المشروع
+### بنية المشروع {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # أصناف PHP والتضمينات
+│   ├── class-multisite-ultimate-updater.php  # معالج التحديث
+│   └── class-multi_tenancy-main.php             # الوظائف الرئيسية
+├── tests/                        # اختبارات الوحدة
+│   ├── bootstrap.php            # تمهيد الاختبار
+│   ├── class-*-base.php         # صنف الاختبار الأساسي
+│   └── class-*-test.php         # حالات الاختبار
+├── views/                       # ملفات القوالب
+├── assets/                      # الأصول الثابتة
+│   ├── css/                     # أوراق الأنماط
+│   ├── js/                      # ملفات JavaScript
+│   └── images/                  # الصور
+├── lang/                        # ملفات اللغة
+├── composer.json                # تبعيات PHP
+├── package.json                 # تبعيات Node.js
+├── phpunit.xml.dist             # تهيئة PHPUnit
+├── .phpcs.xml.dist              # تهيئة معايير الكود
+└── rector.php                   # قواعد تحديث الكود
 ```
 
-### الاختبار
+### الاختبار {#testing}
 
-الإضافة تتضمن إطار اختبار شامل:
+تتضمن الإضافة إطار اختبار شاملًا:
 
-- **الاختبارات الوحدوية**: اختبارات مبنية على PHPUnit مع مجموعة اختبارات ووردبريس
-- **فئة الاختبار الأساسية**: توفر طرق مساعدة لسيناريوهات الاختبار الشائعة
-- **تغطية الاختبار**: مُكوَّنة لتتبع تغطية الكود
-- **اختبار الشبكة المتعددة**: تُشغَّل الاختبارات في بيئة الشبكة المتعددة
+- **اختبارات الوحدة**: اختبارات قائمة على PHPUnit مع حزمة اختبار WordPress
+- **صنف الاختبار الأساسي**: يوفر طرقًا مساعدة لسيناريوهات الاختبار الشائعة
+- **تغطية الاختبار**: مهيأة لتتبع تغطية الكود
+- **اختبار المواقع المتعددة**: تعمل الاختبارات في بيئة مواقع متعددة
 
-### معايير الكود
+### معايير الكود {#code-standards}
 
-- **معايير ترميز ووردبريس**: تُطبَّق عبر PHPCS
-- **التوافق مع PHP 7.4+**: تدعم ميزات PHP الحديثة
+- **معايير ترميز WordPress**: تُفرض عبر PHPCS
+- **توافق PHP 7.4+**: دعم ميزات PHP الحديثة
 - **التحليل الثابت**: تكامل PHPStan للتحقق من الأنواع
-- **تحديث الكود**: قواعد Rector لترقية PHP
+- **تحديث الكود**: قواعد Rector لترقيات PHP
 
-### نظام البناء
+### نظام البناء {#build-system}
 
 - **معالجة الأصول**: تصغير ملفات CSS/JS
-- **الترجمة**: إنشاء ملفات POT
+- **الترجمة**: إنشاء ملف POT
 - **التغليف**: إنشاء أرشيف للتوزيع
-- **وضع التطوير**: أصول غير مصغرة للخطأ
+- **وضع التطوير**: أصول غير مصغّرة لتصحيح الأخطاء
 
-## التكوين
+## التهيئة {#configuration}
 
-يدعم الإضافة خيارات تكوين مختلفة يمكن الوصول إليها عبر واجهة مدير الشبكة.
+تدعم الإضافة خيارات تهيئة متنوعة يمكن الوصول إليها من خلال واجهة إدارة الشبكة.
 
-## الخطافات والمرشحات
+### تهيئة المستأجر السيادي {#sovereign-tenant-configuration}
 
-### الإجراءات
+بالنسبة إلى المستأجرين السياديين، اضبط قاعدة بيانات المستأجر، وجذر نظام الملفات، وربط مضيف قاعدة البيانات، وقدرة المضيف قبل توجيه الزيارات إلى المستأجر. شغّل تحقق الهجرة بعد كل تغيير يؤثر في بيانات اعتماد قاعدة البيانات، أو ربط المضيف، أو التوجيه، أو توفير المستخدمين.
 
-- `ultimate-multisite-addon-template_init` - يُطلق بعد تهيئة الإضافة
-- `ultimate-multisite-addon-template_loaded` - يُطلق بعد تحميل جميع ملفات الإضافة
+استخدم `localhost` فقط عندما يتوقع وقت تشغيل المستأجر ومنح قاعدة البيانات وصولًا عبر مقبس محلي أو على الجهاز نفسه. استخدم `127.0.0.1` أو اسم مضيف خدمة عندما يكون ذلك هو مضيف المنح الذي هيّأه مزودك.
 
-### المرشحات
+### قدرة Hostinger {#hostinger-capability}
+
+تعمل قدرة تعدد المستأجرين في Hostinger مع رمز تكامل Hostinger المشترك. تأكد من وجود النطاق في hPanel، وأن DNS يشير إلى حساب Hostinger، وأن إعدادات قاعدة بيانات المستأجر تطابق hPanel قبل التحقق.
+
+## الخطافات والمرشحات {#hooks-and-filters}
+
+### الإجراءات {#actions}
+
+- `ultimate-multisite-addon-template_init` - يُشغَّل بعد تهيئة الإضافة
+- `ultimate-multisite-addon-template_loaded` - يُشغَّل بعد تحميل جميع ملفات الإضافة
+
+### المرشحات {#filters}
 
 - `ultimate-multisite-addon-template_settings` - تعديل إعدادات الإضافة
-- `ultimate-multisite-addon-template_enabled` - تجاوز حالة تمكين/تعطيل الإضافة
+- `ultimate-multisite-addon-template_enabled` - تجاوز حالة تفعيل/تعطيل الإضافة
 
-## الترخيص
+## الترخيص {#license}
 
-تمت ترخيص هذه الإضافة بموجب GPL v3 أو أحدث.
+هذه الإضافة مرخصة بموجب GPL v3 أو أحدث.
 
-## الدعم
+## الدعم {#support}
 
-للدعم والوثائق، قم بزيارة [MultisiteUltimate.com](https://multisiteultimate.com)
+للحصول على الدعم والتوثيق، زر [MultisiteUltimate.com](https://multisiteultimate.com)
+## سجل التغييرات {#changelog}
 
-## سجل التغييرات
+- الإصدار 1.2.0 (2026-06-03): إضافة تسجيل دخول تلقائي للمستأجر بلا حالة، وقدرة تعدد المستأجرين في Hostinger، وعزل قاعدة البيانات ونظام الملفات لكل موقع فرعي، وبوابات تحقق الهجرة السيادية، وتحسينات تمهيد المستأجر/كاتب قاعدة البيانات، وربط مضيف MySQL قابل للتكوين، وإزالة سيادية أكثر أمانًا.
 
 - الإصدار 1.0.1 (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.
-- الإصدار (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.
+
+
+- الإصدار  (2025-09-28): إعادة تسمية البادئة إلى ultimate-multisite؛ تحديث نطاق النص؛ رفع الإصدار.

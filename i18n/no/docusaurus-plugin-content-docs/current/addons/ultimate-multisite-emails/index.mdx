@@ -1,114 +1,197 @@
 ---
 title: E-poster
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-poster
+# E-post {#emails}
 
-Ultimate Multisite: Emails-tillegg lar nettverksadministratorer tilby og administrere kundens e-postkontoer sammen med nettsteder og medlemskap. Versjon 1.1.0 legger til kundeorientert e-postkontoadministrasjon, webmail single sign-on, CyberPanel forwarder-støtte og forbedringer for provisioning under kassen.
+Ultimate Multisite: Emails addon lar nettverkseiere opprette og administrere kunders e-postkontoer sammen med nettsteder og medlemskap. Versjon 1.1.0 legger til kundevendt administrasjon av e-postkontoer, enkel pålogging til webmail, støtte for CyberPanel-videresendinger og forbedringer for oppretting ved checkout.
 
-## Nøkkelfunksjoner
+## Nøkkelfunksjoner {#key-features}
 
-* **Widget for kundens e-postkonto:** Kunder kan opprette og administrere e-postkontoer fra kontosiden sin uten å måtte åpne en supporthenvendelse.
-* **Webmail SSO og magiske lenker:** Kunder kan åpne webmail direkte fra kontosiden med ett-klikk-autentisering når tjenesteleverandøren støtter det.
-* **Passordendringer:** Både kunder og administratorer kan oppdatere postkassepassord fra e-postadministrasjonswidgeten.
-* **Provisioning ved kassen:** Opprettelse av kundens e-postkonto kan kjøres under kassen, slik at postkassen er klar etter at kjøpsflyten er fullført.
-* **CyberPanel forwardere:** Nettverk støttet av CyberPanel kan opprette og administrere e-postforwardere som en del av e-posttjenesteflyten.
-* **Tjenesteleverandørbevisste innstillinger:** Innstillingssiden filtrerer leverandører til kun de aktive, konfigurerte integrasjonene, slik at administratorer kun ser brukbare alternativer.
+* **Widget for kundens e-postkonto**: Kunder kan opprette og administrere postbokser fra Account-siden sin etter at de har et aktivt e-postmedlemskap.
+* **Webmail SSO og magiske lenker**: Kunder kan åpne webmail direkte fra Account-siden med ettklikksautentisering når leverandøren støtter det.
+* **Passordendringer**: Kunder og administratorer kan oppdatere postbokspassord fra widgeten for e-postadministrasjon.
+* **Oppretting av checkout-rettigheter**: Checkout oppretter e-postmedlemskapet, kobler det til kundens nettstedsdomene og gjør postboksverktøyene på Account-siden tilgjengelige.
+* **CyberPanel-videresendinger**: CyberPanel-baserte nettverk kan opprette og administrere e-postvideresendinger som en del av flyten for e-posttjenesten.
+* **Leverandørbevisste innstillinger**: Innstillingssiden filtrerer leverandører til aktive, konfigurerte integrasjoner, slik at administratorer bare ser brukbare alternativer.
 
-## Krav
+## Krav {#requirements}
 
 * Ultimate Multisite 2.0.0 eller høyere
 * WordPress Multisite-installasjon
 * Minst én konfigurert e-postleverandørintegrasjon
-* API-legitimasjon fra leverandøren med tillatelse til å opprette postkasser, endre passord og utstede webmail-tilgangslenker der det er støttet
+* Leverandør-API-legitimasjon med tillatelse til å opprette postbokser, endre passord og utstede tilgangslenker til webmail der det støttes
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp plugin-filene til `/wp-content/plugins/ultimate-multisite-emails`.
-2. Aktiver tillegget på nettverksnivå fra **Plugins** i WordPress nettverksadministrasjon.
-3. Gå til **Ultimate Multisite** > **Settings** og åpne e-postinnstillingene for tillegget.
-4. Aktiver e-postleverandørintegrasjonene du ønsker at kundene skal bruke.
-5. Lagre innstillingene, og test deretter kontoopprettelse med en ikke-produksjonskunde eller et staging-nettsted.
+2. Nettverksaktiver addon fra **Plugins** i WordPress-nettverksadministrasjonen.
+3. Gå til **Ultimate Multisite** > **Settings** og åpne e-postinnstillingene for addon.
+4. Aktiver e-postleverandørintegrasjonene du vil at kunder skal bruke.
+5. Lagre innstillingene, og test deretter konto-oppretting med en ikke-produksjonskunde eller et staging-nettsted.
 
-## Administrasjon av kundens e-postkonto
+## Slik fungerer salgsflyten for e-post {#how-the-email-seller-flow-works}
 
-Versjon 1.1.0 legger til en e-postadministrasjonswidget på kundens kontoside. Bruk denne når kundene skal selvbetjene opprettelse og vedlikehold av postkasser for sine egne nettsteder.
+E-postsalg har to separate lag:
 
-Fra kontosiden kan kundene:
+1. **Rettighet** — et Ultimate Multisite e-postprodukt/-medlemskap som sier at kunden har lov til å bruke e-post for et spesifikt nettstedsdomene, en leverandør, kvote og kontogrense.
+2. **Oppretting av postboks** — den faktiske leverandørpostboksen, som `info@example.com`, opprettet når kunden eller en nettverksadministrator velger lokal del og passord.
 
-1. Se e-postkontoer knyttet til deres nåværende medlemskap eller nettsted.
-2. Opprette en ny postkasse når planen deres tillater flere kontoer.
-3. Endre passordet til en eksisterende postkasse.
-4. Åpne støttede webmail-leverandører via SSO eller en magisk lenke-pålogging.
+Under checkout oppretter eller aktiverer addon **e-postmedlemskapet** og registrerer kundens nettstedsdomene og leverandør på det medlemskapet. Det gjetter ikke postboksnavn eller passord. Etter at kjøpet er fullført og konteksten for nettsted/domene finnes, kan kunden åpne Account-siden og opprette postboksnavnene de ønsker.
 
-Widgeten bruker Ultimate Multisite sin nåværende system for kontosiden, slik at handlinger er begrenset til konteksten kontoen kunden ser på. Dette forhindrer at kunder administrerer e-postkontoer som tilhører et annet medlemskap eller nettsted.
+Dette betyr at en normal kundeflyt er:
 
-## Webmail SSO og magisk lenke-pålogging
+1. Kunden kjøper en nettstedsplan og legger til et e-postprodukt under checkout.
+2. Ultimate Multisite oppretter nettstedsmedlemskapet og det sekundære e-postmedlemskapet.
+3. Emails addon kobler e-postmedlemskapet til kundens nettstedsdomene og leverandør.
+4. Kunden åpner **Account** i Dashboard.
+5. Panelet **E-postkontoer** vises for det aktive e-postmedlemskapet.
+6. Kunden klikker **Opprett Account**, skriver inn lokal del som `info`, angir et passord, og addon oppretter `info@their-domain.com` hos den konfigurerte leverandøren.
 
-Webmail SSO gir kundene en direkte **Open webmail**-handling fra kontosiden. Når dette støttes av den aktive leverandøren, ber tillegget om en kortvarig tilgangs-URL og omdirigerer kunden til webmail uten å be dem om å kopiere postkasselegitimasjon.
+## Konfigurer et e-postprodukt {#configure-an-email-product}
 
-Leverandørens oppførsel kan variere:
+Opprett ett e-postprodukt for hver e-postpakke du vil selge eller gi bort. Hvis du er ny med produktoppsett, start med [Opprette ditt første abonnementsprodukt](../../user-guide/configuration/creating-your-first-subscription-product) og kom deretter tilbake hit for de e-postspesifikke innstillingene.
 
-* Leverandører med innebygde SSO API-er kan opprette en direkte autentisert webmail-økt.
-* Leverandører med støtte for magiske lenker kan generere en tidsbegrenset påloggingslenke.
-* Leverandører uten SSO- eller magisk lenke-støtte skal fortsatt vise postkasseinformasjon og passordadministrasjonsfunksjoner, men ingen ett-klikk webmail-knapp.
+1. Gå til **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Sett **Product Type** til **Email**.
+3. Konfigurer priser. Bruk en betalt gjentakende pris for en solgt plan, eller sett produktet til gratis/nullpriset hvis det skal være en kostnadsfri e-postplan.
+4. Åpne delen **Email Settings**.
+5. Velg den konfigurerte **Email Provider**.
+6. Angi **Number of Accounts**, **Storage Quota (MB)**, aliasgrenser, videresendinger og autosvar etter behov.
+7. Lagre produktet.
 
-Aktiver webmail-tilgang kun for leverandører der du har konfigurert de nødvendige API-legitimasjonene. Hvis handlingen mangler for en leverandør, bekreft først at leverandøren er aktiv, konfigurert og støtter webmail-påloggingslenker.
+Bare leverandører som er aktivert og fullstendig konfigurert på siden **Integrations**, vises i leverandørvelgeren. Hvis velgeren er tom, konfigurer og test leverandøren først.
 
-## Provisioning ved kassen
+## Legg til e-post i checkout {#add-email-to-checkout}
 
-Tillegget kan opprette kundens e-postkontoer som en del av kassen. Dette er nyttig når planen inkluderer en postkasse som standard, eller når kasseformularet samler inn e-postkontoinformasjon.
+E-postprodukter tilbys vanligvis som tillegg til en nettstedsplan. Se [Checkout-skjemaer](../../user-guide/configuration/checkout-forms) for den generelle arbeidsflyten i checkout-redigeringsverktøyet.
+
+1. Opprett eller rediger nettstedsplanen som kunder kjøper først.
+2. Legg til e-postproduktet som et tilgjengelig tillegg/order bump for den checkout-flyten.
+3. Bekreft at checkout-skjemaet fortsatt inkluderer de normale påkrevde nettstedsfeltene, spesielt feltet for nettsteds-URL/domene.
+4. Kjør en test-checkout med en staging-kunde.
+5. Etter checkout åpner du kundens [Account-side](../../user-guide/client-management/account-page) og bekrefter at panelet **E-postkontoer** vises.
+
+E-postdomenet hentes fra kundens nettstedsdomene. Kunder skriver ikke inn e-postdomenet i e-postprodukttrinnet.
+
+## Kundens e-postadministrasjon på Account {#customer-account-email-management}
+
+Versjon 1.1.0 legger til en widget for e-postadministrasjon på kundens Account-side. Bruk den når kunder skal selvbetjene oppretting og vedlikehold av postbokser for sine egne nettsteder.
+
+Fra Account-siden kan kunder:
+
+1. Vise e-postkontoer som er koblet til deres gjeldende e-postmedlemskap/nettstedsdomene.
+2. Opprette en ny postboks når e-postproduktet deres tillater flere kontoer.
+3. Endre passordet for en eksisterende postboks.
+4. Åpne støttede webmail-leverandører via SSO eller innlogging med magisk lenke.
+
+Widgeten bruker Ultimate Multisite sitt currents-system for Account-siden, slik at handlinger avgrenses til Account-konteksten kunden viser. Dette hindrer kunder i å administrere e-postkontoer som tilhører et annet medlemskap eller nettsted.
+
+Hvis kunden ikke ser e-postpanelet, sjekk at de har et **aktivt medlemskap for e-postprodukt**, at medlemskapet er koblet til et nettsteddomene, og at produktet har en konfigurert leverandør.
+
+## Gi en kunde en gratis e-postplan {#giving-a-customer-a-free-email-plan}
+
+For å gi en kunde e-post uten å belaste dem, gi **e-postrettigheten** først, og opprett deretter postkassen, eller la kunden opprette den.
+
+Anbefalte alternativer:
+
+* **Opprett et gratis e-postprodukt**: sett prisen på e-postproduktet til gratis/null, og legg deretter til et aktivt medlemskap for den kunden fra **Ultimate Multisite > Medlemskap > Legg til medlemskap**. Velg e-postproduktet og kunden. Gratis medlemskap varer livet ut til de endres eller kanselleres. Hvis e-postmedlemskapet er ment å følge et eksisterende nettsted, må du sørge for at det er koblet til konteksten for dette nettstedet/domenet.
+* **Bruk 100 % rabatt eller gratis checkout-lenke**: la kunden gå gjennom checkout slik at Ultimate Multisite oppretter e-postmedlemskapet og betalingsoppføringen automatisk.
+* **Administratoropprett en postkasse**: gå til **Ultimate Multisite > E-postkontoer > Legg til e-postkonto** for å opprette en bestemt postkasse hos leverandøren for en kunde. Dette er nyttig for support, men det erstatter ikke e-postproduktmedlemskapet som driver kundens selvbetjeningsverktøy på kontosiden.
+
+Hvis du vil at kunden skal administrere postkassen selv fra kontosiden, må du sørge for at de har et aktivt e-postmedlemskap for domenet. En manuelt opprettet leverandørpostkasse uten dette medlemskapet kan eksistere, men kunden ser kanskje ikke selvbetjeningspanelet for e-post for den.
+
+## Administratoropprettede kontoer og «Ingen ordrenummer» {#admin-created-accounts-and-no-order-number}
+
+Administrasjonssiden **E-postkontoer** oppretter eller redigerer en leverandørpostkasse. Den er ikke det første trinnet for å selge eller tildele en e-postplan.
+
+Når du redigerer en e-postkonto, søker feltet **Medlemskap** i eksisterende Ultimate Multisite-medlemskap etter referanse-/ordrenummer. Hvis du prøver å tilordne en konto før kunden har et e-postmedlemskap, kan det hende at det ikke finnes noe ordrenummer å velge.
+
+Bruk denne rekkefølgen i stedet:
+
+1. Opprett eller finn kundens e-postmedlemskap. For kjøp gjør checkout dette. For en gratis plan oppretter du medlemskapet manuelt fra [Medlemskap](../../user-guide/administration/managing-memberships) eller sender kunden gjennom en gratis checkout.
+2. Bekreft at medlemskapet er aktivt og bruker et e-postprodukt.
+3. Bekreft at e-postmedlemskapet er koblet til nettsteddomenet/leverandøren.
+4. Opprett postkassen fra kundens kontoside eller fra **Ultimate Multisite > E-postkontoer**.
+5. Rediger om nødvendig postkasseoppføringen og tilordne kunden, medlemskapet og nettstedet.
+
+Hvis du bare trenger å opprette en leverandørpostkasse for kunden og ikke trenger selvbetjeningsadministrasjon på kontosiden, kan den administratoropprettede kontoen være nok. Hvis du vil at kunden skal se og administrere den i Ultimate Multisite, må du også opprette e-postmedlemskapet.
+
+## Webmail SSO og innlogging med magisk lenke {#webmail-sso-and-magic-link-login}
+
+Webmail SSO gir kunder en direkte handling for **Åpne webmail** fra kontosiden. Når den aktive leverandøren støtter det, ber addon om en kortvarig tilgangs-URL og omdirigerer kunden til webmail uten å be dem kopiere postkasselegitimasjon.
+
+Leverandøratferd kan variere:
+
+* Leverandører med innebygde SSO-API-er kan opprette en direkte autentisert webmail-økt.
+* Leverandører med støtte for magiske lenker kan generere en tidsbegrenset innloggingslenke.
+* Leverandører uten støtte for SSO eller magiske lenker bør fortsatt vise postkassedetaljer og handlinger for passordadministrasjon, men ingen ettklikksknapp for webmail.
+
+Aktiver webmail-tilgang bare for leverandører der du har konfigurert de nødvendige API-legitimasjonene. Hvis handlingen mangler for en leverandør, må du først bekrefte at leverandøren er aktiv, konfigurert og støtter innloggingslenker for webmail.
+
+## Klargjøring ved checkout {#checkout-provisioning}
+
+Addon klargjør **medlemskapskonteksten** for e-post under checkout. Den registrerer leverandør, kontogrense, kvote og nettsteddomene, slik at kunder kan opprette sine egne postkassenavn fra kontosiden etter kjøp.
 
 Anbefalt utrulling:
 
-1. Konfigurer leverandøren og planbegrensningene før du aktiverer provisioning ved kassen.
-2. Test et kjøp med et staging-produkt og bekreft at postkassen opprettes etter kassen.
-3. Gå gjennom kundens kontoside for å bekrefte at den nye postkassen vises i e-postwidgeten.
-4. Bekreft funksjonaliteten for passordendring og webmail-handlinger før du aktiverer flyten for produksjonsprodukter.
+1. Konfigurer leverandøren og produktgrensene før du tilbyr e-postproduktet.
+2. Test et kjøp med et staging-produkt og bekreft at e-postmedlemskapet opprettes.
+3. Gå gjennom kundens kontoside for å bekrefte at widgeten **E-postkontoer** vises for domenet.
+4. Opprett en testpostkasse fra widgeten.
+5. Bekreft handlinger for passordendring og webmail før du aktiverer flyten for produksjonsprodukter.
 
-Hvis provisioning feiler, kan kundekontoen og medlemskapet fortsatt eksistere, selv om postkassen krever oppfølging fra administrator. Sjekk Ultimate Multisite aktivitetslogger og leverandørloggene før du prøver på nytt.
+Hvis klargjøring mislykkes, kan kundekontoen og medlemskapet fortsatt eksistere mens e-postmedlemskapet eller leverandørpostkassen krever oppfølging fra administrator. Sjekk Ultimate Multisite-aktivitetsloggene og leverandørloggene før du prøver på nytt.
 
-## CyberPanel E-postforwardere
+## CyberPanel e-postvideresendinger {#cyberpanel-email-forwarders}
 
-For nettverk støttet av CyberPanel legger versjon 1.1.0 til støtte for e-postforwardere. Bruk forwardere når kundene trenger adresser som `info@customer-domain.test` for å omdirigere e-post til en annen innboks uten å opprette en full postkasse.
+For CyberPanel-støttede nettverk legger versjon 1.1.0 til støtte for e-postvideresendinger. Bruk videresendinger når kunder trenger adresser som `info@customer-domain.test` for å omdirigere e-post til en annen innboks uten å opprette en full postkasse.
 
-Før du tilbyr forwardere, bekreft at CyberPanel-integrasjonen er konfigurert og tilgjengelig. Se [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) for nødvendige vert-, brukernavn-, passord- og pakkekonstanter.
+Før du tilbyr videresendinger, bekreft at CyberPanel-integrasjonen er konfigurert og tilgjengelig. Se veiledningen [CyberPanel-integrasjon](../../user-guide/administration/cyberpanel-integration) for nødvendige konstanter for vert, brukernavn, passord og pakke.
 
-## Endringslogg
+## Endringslogg {#changelog}
 
-### Versjon 1.1.0 - Utgitt 2026-05-05
+### Versjon 1.1.0 - Utgitt 2026-05-05 {#version-110---released-on-2026-05-05}
 
-* Nytt: Webmail SSO og magisk lenke-pålogging — kunder kan få tilgang til webmail direkte fra kontoen sin med ett-klikk-autentisering.
-* Nytt: Funksjonalitet for passordendring lagt til e-postadministrasjonswidgeten.
-* Nytt: CyberPanel e-postforwarder-støtte.
-* Nytt: E-postadministrasjonswidget på kundens kontoside for selvbetjent opprettelse og administrasjon av kontoer.
-* Nytt: Opprettelse av kundens e-postkonto integrert i kasseflyten for automatisk provisioning.
-* Fix: Widget-hook på kontosiden oppdatert til å bruke riktig UMS registreringsmønster.
-* Fix: Create Account-skjema erstattet med vanilla JS og korrekt full HTML-dokumentutdata.
-* Fix: E-postadministrasjonswidgeten bruker nå UMS currents system for admin-kontosider.
-* Fix: Admin e-postkontoopprettingsskjema inkluderer passordfelt og bruker Email_Account_Manager.
-* Fix: Per-request log spam fjernet fra Email_Account_Manager initialisering.
-* Forbedret: Innstillingssiden filtrerer nå for å vise kun aktive og konfigurerte e-postleverandører.
+* Nytt: Webmail SSO og magic-link-innlogging — kunder kan få tilgang til webmail direkte fra sin Account med ettklikksautentisering.
+* Nytt: Funksjonalitet for å endre passord er lagt til i widgeten for administrasjon av e-postkontoer.
+* Nytt: Støtte for CyberPanel-videresending av e-post.
+* Nytt: Widget for e-postadministrasjon på kundens Account-side for selvbetjent kontooppretting og administrasjon.
+* Nytt: Tildeling av kundens rettigheter til e-postkonto integrert i checkout-flyten.
+* Rettelse: Account-sidewidget-hook oppdatert til å bruke riktig UMS-registreringsmønster.
+* Rettelse: Create Account-skjema erstattet med vanilla JS og korrekt fullstendig HTML-dokumentutdata.
+* Rettelse: Widget for e-postadministrasjon bruker nå UMS currents-systemet for admin-kontosider.
+* Rettelse: Skjema for oppretting av e-postkonto for admin inkluderer passordfelt og bruker Email_Account_Manager.
+* Rettelse: Loggspam per forespørsel fjernet fra initialisering av Email_Account_Manager.
+* Forbedret: Settings-side filtrerer nå for å vise bare aktive og konfigurerte e-postleverandører.
 
-## Ofte stilte spørsmål
+## Ofte stilte spørsmål {#frequently-asked-questions}
 
-## Kan kunder opprette egne e-postkontoer?
+### Kan kunder opprette sine egne e-postkontoer? {#can-customers-create-their-own-email-accounts}
 
-Ja. Når widgeten for kundens konto er aktivert og planen tillater e-postkontoer, kan kundene opprette og administrere sine egne postkasser fra kontosiden.
+Ja. Når kunden har et aktivt e-postmedlemskap for et domene og produktet tillater flere kontoer, kan kunder opprette og administrere sine egne postkasser fra Account-siden.
 
-## Støtter alle leverandører webmail SSO?
+### Støtter alle leverandører webmail SSO? {#does-every-provider-support-webmail-sso}
 
-Nei. SSO- og magisk lenke-støtte avhenger av den aktive e-postleverandøren. Leverandører uten et tilgangslenke API kan fortsatt støtte opprettelse av postkasser og passordendringer.
+Nei. Støtte for SSO og magic-link avhenger av den aktive e-postleverandøren. Leverandører uten en API for tilgangslenke kan fortsatt støtte oppretting av postkasser og passordendringer.
 
-## Kan administratorer opprette e-postkontoer for kunder?
+### Kan administratorer opprette e-postkontoer for kunder? {#can-administrators-create-email-accounts-for-customers}
 
-Ja. Administratorer kan opprette e-postkontoer fra admin-grensesnittet, inkludert å sette initialt passord ved opprettelse av kontoen.
+Ja. Administratorer kan opprette e-postkontoer fra admin-grensesnittet, inkludert å angi startpassordet når kontoen opprettes. For selvbetjent administrasjon for kunder må du også sørge for at kunden har et aktivt e-postmedlemskap for domenet.
 
-## Er forwardere det samme som postkasser?
+### Kan jeg gi bort en e-postkonto gratis? {#can-i-give-an-email-account-away-for-free}
 
-Nei. En postkasse lagrer e-post og har påloggingslegitimasjon. En forwarder omdirigerer e-post til en annen adresse og gir ikke en separat innboks.
+Ja. Opprett et gratis/nullpriset e-postprodukt og legg det til som et aktivt medlemskap for kunden, eller la kunden fullføre checkout med 100 % rabatt. Etter at e-postmedlemskapet finnes, kan kunden eller en administrator opprette den faktiske postkassen.
+
+### Hvorfor ber tildeling av en e-postkonto om et ordrenummer? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Membership-feltet slår opp et eksisterende Ultimate Multisite-medlemskap etter referanse-/ordrenummeret. Hvis kunden ikke kjøpte et e-postprodukt og du ikke har opprettet et e-postmedlemskap manuelt, finnes det ikke noe e-postmedlemskap / noen ordre å tildele. Opprett e-postmedlemskapet først, og opprett eller tildel deretter postkassen.
+
+### Er videresendinger det samme som postkasser? {#are-forwarders-the-same-as-mailboxes}
+
+Nei. En postkasse lagrer e-post og har innloggingsinformasjon. En videresending omdirigerer e-post til en annen adresse og gir ikke en separat innboks.

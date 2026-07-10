@@ -3,15 +3,15 @@ title: Sprawdź kontrast palety
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Walidacja Kontrastu Palety
+# Walidacja Kontrastu Palety {#validate-palette-contrast}
 
 Możliwość **Walidacja Kontrastu Palety** sprawdza pary kolorów w palecie Twojego projektu pod kątem zgodności z WCAG (Wytyczne dotyczące dostępności treści w Internecie) zanim zostaną zastosowane do motywu.
 
-## Przegląd
+## Przegląd {#overview}
 
 Ta funkcja zapewnia, że schemat kolorów Twojej witryny spełnia standardy dostępności, walidując stosunki kontrastu między kolorami tekstu a tła. Pomaga to zapobiegać kombinacjom kolorów, które mogą być trudne do odczytania dla użytkowników z niepełnosprawnościami wzroku.
 
-## Format Wejścia
+## Format Wejścia {#input-format}
 
 Funkcja przyjmuje paletę kolorów jako dane wejściowe:
 
@@ -35,7 +35,7 @@ Funkcja przyjmuje paletę kolorów jako dane wejściowe:
 }
 ```
 
-### Parametry
+### Parametry {#parameters}
 
 | Parametr | Typ | Wymagany | Opis |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ Funkcja przyjmuje paletę kolorów jako dane wejściowe:
 | `wcag_level` | string | Nie | Poziom zgodności WCAG: "A", "AA" (domyślny) lub "AAA" |
 | `pairs_to_check` | array | Nie | Konkretne pary kolorów do walidacji (np. `["primary-text", "background-text"]`) |
 
-## Sprawdzane Poziomy WCAG
+## Sprawdzane Poziomy WCAG {#wcag-levels-checked}
 
 Funkcja waliduje stosunki kontrastu zgodnie ze standardami WCAG:
 
@@ -56,7 +56,7 @@ Funkcja waliduje stosunki kontrastu zgodnie ze standardami WCAG:
 - **Tekst Normalny** — tekst mniejszy niż 18pt (lub 14pt pogrubiony)
 - **Tekst Duży** — tekst 18pt lub większy (lub 14pt pogrubiony lub większy)
 
-## Schemat Wyjścia
+## Schemat Wyjścia {#output-schema}
 
 Funkcja zwraca szczegółowy raport walidacyjny:
 
@@ -95,7 +95,7 @@ Funkcja zwraca szczegółowy raport walidacyjny:
 }
 ```
 
-### Pola Wyjściowe
+### Pola Wyjściowe {#output-fields}
 
 | Pole | Typ | Opis |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ Funkcja zwraca szczegółowy raport walidacyjny:
 | `status` | string | "pass" (zaliczone) lub "fail" (niezaliczone) dla każdej pary |
 | `recommendations` | array | Sugestie poprawy dla par, które nie przeszły walidacji |
 
-## Przykład Użycia
+## Przykład Użycia {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ Funkcja waliduje wszystkie kombinacje kolorów i zwraca:
 - ✅ Tło + Tekst: stosunek 12.1:1 (zalicza WCAG AAA)
 - Ogólnie: Zgodne z WCAG AA
 
-## Integracja z Theme Builder
+## Integracja z Theme Builder {#integration-with-theme-builder}
 
 Podczas używania wyboru kierunku projektowego w Theme Builder, funkcja Walidacja Kontrastu Palety:
 
@@ -129,7 +129,7 @@ Podczas używania wyboru kierunku projektowego w Theme Builder, funkcja Walidacj
 4. Dostarcza rekomendacje dla par niezgodnych ze standardami
 5. Zapobiega zastosowaniu niedostępnych schematów kolorów
 
-## Najlepsze Praktyki
+## Najlepsze Praktyki {#best-practices}
 
 - **Zacznij od poziomu AA** — WCAG AA to standard dla większości stron internetowych
 - **Testuj przed zastosowaniem** — waliduj paletę, zanim zobowiążesz się do projektu
@@ -137,7 +137,7 @@ Podczas używania wyboru kierunku projektowego w Theme Builder, funkcja Walidacj
 - **Weź pod uwagę preferencje użytkowników** — niektórzy użytkownicy mogą mieć dodatkową wrażliwość na kolory
 - **Używaj checkerów kontrastu** — połącz tę funkcję z narzędziami przeglądarki w celu weryfikacji
 
-## Pary Niepoprawne i Rekomendacje
+## Pary Niepoprawne i Rekomendacje {#failing-pairs-and-recommendations}
 
 Jeśli para kolorów nie przejdzie walidacji, funkcja dostarczy rekomendacje:
 
@@ -155,7 +155,7 @@ Jeśli para kolorów nie przejdzie walidacji, funkcja dostarczy rekomendacje:
 }
 ```
 
-## Powiązane Funkcje
+## Powiązane Funkcje {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — tworzenie logo z Twoją zweryfikowaną paletą kolorów
 - [Create Menu](./create-menu.md) — budowanie nawigacji z dostępnymi kolorami

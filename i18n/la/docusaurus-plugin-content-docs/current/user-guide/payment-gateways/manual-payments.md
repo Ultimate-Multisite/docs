@@ -1,46 +1,46 @@
 ---
-title: Configurare pagamenti manuali
+title: Configuratio solutionum manualium
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configurare i Pagamenti Manuali (v2)
+# Solutiones Manuales Configurare (v2) {#setting-up-manual-payments-v2}
 
-_**NOTA IMPORTANTA: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
+_**NOTA GRAVIS: Hic articulus ad Ultimate Multisite versionem 2.x pertinet.**_
 
-I pagamenti manuali sono un modo per offrire altri metodi di pagamento se **Stripe** o **PayPal** non sono disponibili per i tuoi utenti. Può essere un bonifico bancario, un trasferimento bancario o qualsiasi altro metodo di pagamento disponibile localmente per i tuoi utenti.
+Solutiones manuales sunt modus quo alias rationes solvendi praebere potes, si **Stripe** vel **PayPal** usoribus tuis praesto non est. Potest esse translatio pecuniae per filum aut argentariam, vel quaelibet alia ratio solvendi quae usoribus tuis localiter praesto est.
 
-## Come abilitare i Pagamenti Manuali
+## Quomodo Solutiones Manuales habilitare {#how-to-enable-manual-payments}
 
-Configurare i pagamenti manuali è molto semplice. Devi solo abilitarlo sotto gateway di pagamento e inserire istruzioni dettagliate su come l'utente dovrebbe inviare il pagamento.
+Solutio manualis constituenda facillima est. Tantum opus est eam sub portis solutionum habilitare et instructiones accuratas inserere de modo quo usor solutionem mittere debeat.
 
-Innanzitutto, vai a **Ultimate Multisite > Impostazioni > Pagamenti**. Sotto **Gateway di Pagamento**, attiva **Manual**. Vedrai apparire una casella **Istruzioni per il Pagamento** per te.
+Primum, vade ad **Ultimate Multisite > Optiones > Solutiones**. Sub **Portae Solutionum** , commuta **Manuale** in statum activum. Videbis capsam **Instructiones Solutionis** tibi apparere.
 
-Aggiungi in questa casella le informazioni di cui il tuo cliente avrà bisogno per effettuare il pagamento. Possono essere i dettagli del tuo conto bancario e la tua email, così il cliente potrà inviarti la conferma del pagamento, ad esempio.
+Adde in hanc capsam informationes quibus cliens tuus indigebit ut solutionem faciat. Exempli gratia, possunt esse singularia rationis argentariae tuae et inscriptio electronica tua, ut cliens confirmationem solutionis tibi mittere possit.
 
-![Interruttore gateway di pagamento manuale con area testo Istruzioni per il Pagamento](/img/config/manual-gateway-expanded.png)
+![Commutator portae solutionis manualis cum area textus Instructionum Solutionis](/img/config/manual-gateway-expanded.png)
 
-Ecco l'interfaccia delle impostazioni del gateway manuale:
+Haec est interfacies optionum portae manualis:
 
-![Impostazioni gateway manuale](/img/config/manual-gateway-settings.png)
+![Optiones portae manualis](/img/config/manual-gateway-settings.png)
 
-Dopo averlo configurato, clicca semplicemente su **Salva Impostazioni** e hai finito. Quando gli utenti si registrano nella tua rete, vedranno un messaggio che li informerà che riceveranno le tue istruzioni per completare l'acquisto.
+Postquam eam constituisti, tantum preme **Serva Optiones** et perfectum est. Cum usores in rete tuo se inscribunt, nuntium videbunt dicentem eos instructiones tuas accepturos esse ad emptionem complendam.
 
-![Messaggio di conferma registrazione che informa l'utente che riceverà istruzioni di pagamento](/img/frontend/registration-manual-notice.png)
+![Nuntius confirmationis registrationis dicens usorem instructiones solutionis accepturum esse](/img/frontend/registration-manual-notice.png)
 
-E riceveranno anche un messaggio sulla tua pagina **Grazie** con le tue istruzioni di pagamento.
+Et nuntium etiam accipient in pagina tua **Gratias Tibi** cum instructionibus solutionis tuis.
 
-<!-- Screenshot unavailable: Pagina Grazie che mostra le istruzioni di pagamento dopo il checkout -->
+<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Conferma dei pagamenti manuali
+## Solutiones manuales confirmare {#confirming-manual-payments}
 
-Ad confirmare un plățile manuale, mergi la meniul **Payments** pe bara stângă. Acolo vei vedea toate plățile din rețeaua ta și detaliile lor, inclusiv **status**. O plată manuală va avea întotdeauna statusul **Pending** până când îl modifici manual.
+Ad solutionem manualem confirmandam, vade ad menu **Solutiones** in barra sinistra. Ibi omnes solutiones in rete tuo et earum singula videre potes, incluso earum **statu**. Solutio manualis semper statum **Pendentem** habebit donec eum manualiter mutes.
 
-![Lista plăților care arată o plată manuală în așteptare](/img/admin/payments-list.png)
+![Index solutionum solutionem manualem pendentem ostendens](/img/admin/payments-list.png)
 
-Introdu pagina de plată făcând clic pe **reference code**. Pe această pagină ai toate detaliile plății în așteptare, cum ar fi ID referință, produsele, timpii și multe altele.
+Intra paginam solutionis premendo **codicem referentiae**. In hac pagina omnia singularia solutionis pendentis habes, sicut ID referentiae, producta, notationes temporis et plura.
 
-![Pagina cu detalii plăților care arată codul de referință, produsele și totalurile](/img/admin/payment-edit.png)
+![Pagina singularium solutionis ostendens codicem referentiae, producta, et summa](/img/admin/payment-edit.png)
 
-În coloana dreaptă, poți modifica statusul plății. Schimbarea la **Completed** și activarea opțiunii **Activate Membership** va activa site-ul clientului și membruirea sa va fi activă.
+In columna dextra, statum solutionis mutare potes. Mutare eum in **Completum** et **commutare optionem Activa Membership** situm clientis tui habilitabit et eius membership activa erit.
 
-![Pagina de editare a plății cu Status setat pe Completed și comutatorul Activate Membership](/img/admin/payment-activate-membership.png)
+![Pagina emendationis solutionis cum Statu ad Completum posito et commutatore Activa Membership](/img/admin/payment-activate-membership.png)

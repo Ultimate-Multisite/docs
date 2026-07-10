@@ -1,29 +1,29 @@
 ---
 id: wu_apc_process_page_content
-title: 'Por favor, forneça o conteúdo que deseja traduzir.'
+title: Filtro - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filtro: wu_apc_process_page_content
+# Filtro: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
-Permite que os desenvolvedores mexam com o conteúdo final
+Permite que desenvolvedores mexam no conteúdo final
 
-## Parameters
+## Parâmetros {#parameters}
 
-| Name | Type | Description |
+| Nome | Tipo | Descrição |
 |------|------|-------------|
-| $content | `string` | Conteúdo após substituições. |
-| $content_before_processing | `string` | Conteúdo antes das substituições. |
-| $to_replace | `array` | Array contendo os placeholders. |
-| $placeholder_count | `int` | Número de placeholders encontrados. |
+| $content | `string` | Content after replacements. |
+| $content_before_processing | `string` | Content pre replecements. |
+| $to_replace | `array` | Array containing the placeholders hold. |
+| $placeholder_count | `int` | Number of placeholders found. |
 
-### Since
+### Desde {#since}
 
 - 1.4.0
-### Source
+### Fonte {#source}
 
-Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) at line 46
+Definido em [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) na linha 46
 
 
-## Returns
-Conteúdo após modificação.
+## Retorna {#returns}
+Conteúdo após a modificação.

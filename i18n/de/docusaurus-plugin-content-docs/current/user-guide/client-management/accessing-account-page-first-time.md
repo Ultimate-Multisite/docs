@@ -1,20 +1,22 @@
 ---
-title: Zugriff auf die Kontoseite
+title: Aufrufen der Account-Seite
 sidebar_position: 3
-_i18n_hash: 0d69bbd563af0fecb531be89ea991f1f
+_i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
+# Wie kann ich zum ersten Mal auf meine Account-Seite zugreifen? {#how-can-i-access-my-account-page-for-the-first-time}
+
 Willkommen bei Ultimate Multisite!
 
-Greifen Sie über den Link zu Ihrer Kontoseite zu, den Sie nach dem Kauf unseres Plugins per E‑Mail erhalten haben:
+Greife über den Link, den du nach dem Kauf unseres Plugins in deiner E-Mail erhalten hast, auf deine Account-Seite zu:
 
-<!-- Screenshot unavailable: Account page email with access link -->
+<!-- Screenshot nicht verfügbar: E-Mail zur Account-Seite mit Zugriffslink -->
 
-Verwenden Sie die E‑Mail, die Sie beim Kauf angegeben haben, und das Passwort, das Sie per E‑Mail erhalten haben.
+Verwende die E-Mail-Adresse, die du beim Kauf angegeben hast, und das Passwort, das du in deiner E-Mail erhalten hast.
 
-<!-- Screenshot unavailable: Login page with email and password fields -->
+<!-- Screenshot nicht verfügbar: Login-Seite mit Feldern für E-Mail und Passwort -->
 
-Da Sie sich zum ersten Mal in dieses Konto einloggen, werden Sie aufgefordert, Ihr Passwort zu ändern. Ändern Sie es und klicken Sie auf die Schaltfläche _Save_.
+Da du dich zum ersten Mal in diesem Account anmeldest, wirst du aufgefordert, dein Passwort zu ändern. Ändere es und klicke auf den Button _Speichern_.
 
-<!-- Screenshot unavailable: Change password form with Save button -->
+<!-- Screenshot nicht verfügbar: Formular zum Ändern des Passworts mit Speichern-Button -->
 
-Auf Ihrer Kontoseite können Sie alle Kontodetails wie Rechnungen, Verlängerungen, Kündigungen und viele weitere Dinge verwalten.
+Auf deiner Account-Seite kannst du alle deine Account-Details wie Rechnungen, Verlängerungen, Kündigungen und vieles mehr verwalten.

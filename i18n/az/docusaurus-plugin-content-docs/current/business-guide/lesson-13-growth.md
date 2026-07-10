@@ -3,19 +3,19 @@ title: 'Dərslik 13: Ölçekləmə'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Dərs 13: Böyümək
+# Dərs 13: Böyümək {#lesson-13-scaling-up}
 
 Sizin artıq ödəniş edən müştəriləri olan işləyən bir platformanız var. Bu dərs, kiçik bir əməliyyatdan davamlı bir biznesə necə böyüyə biləcəyinizi öyrədir: infrastrukturu böyütmək, əməliyyatları avtomatlaşdırmaq və müştəri başına gəliri artırmaq.
 
-## Harada Qaldıq
+## Harada Qaldıq {#where-we-left-off}
 
 FitSite işləyir, müştərilər qeydiyyatdan keçir və siz gündəlik əməliyyatları yerinə yetirirsiniz. İndi isə böyüməyə fokuslanırıq.
 
-## Rəqəmlərinizi Bilin
+## Rəqəmlərinizi Bilin {#know-your-numbers}
 
 Böyüməyə başlamazdan əvvəl, vəziyyətinizə baxın:
 
-### Əsas Metriklər
+### Əsas Metriklər {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Ümumi aylıq abunə gəliri
 - **Müştəri sayı**: Aktiv abunəçilərin ümumi sayı
@@ -24,7 +24,7 @@ Böyüməyə başlamazdan əvvəl, vəziyyətinizə baxın:
 - **LTV (Lifetime Value)**: Müştəri başına ümumi abunə müddətində orta gəlir
 - **CAC (Customer Acquisition Cost)**: Bir müştəri əldə etmək üçün orta xərc
 
-### Nümunə: 50 Müştərilik FitSite
+### Nümunə: 50 Müştərilik FitSite {#example-fitsite-at-50-customers}
 
 | Metrika | Dəyər |
 |--------|-------|
@@ -36,9 +36,9 @@ Böyüməyə başlamazdan əvvəl, vəziyyətinizə baxın:
 
 Bu rəqəmlər sizə nəyə fokuslanmalı olduğunuzu göstərir. Yüksək tərk etmə? Saxlanma strategiyasını düzəlt. Aşağı ARPU? Yüksəkləndirmələri təşviq et. Yüksək CAC? Əldə etmə kanallarını optimallaşdır.
 
-## İnfraqstrukturun Böyütməsi
+## İnfraqstrukturun Böyütməsi {#scaling-infrastructure}
 
-### Nə Vaxt Böyütməli?
+### Nə Vaxt Böyütməli? {#when-to-scale}
 
 Hosting-i aşağıdakı hallarda böyütməlisiniz:
 
@@ -47,7 +47,7 @@ Hosting-i aşağıdakı hallarda böyütməlisiniz:
 - 100-dan çox aktiv sayt yaxınlaşarsa
 - Müştərilər sürət barədə şikayətləri artarsa
 
-### Necə Böyütməli?
+### Necə Böyütməli? {#how-to-scale}
 
 - **Vertikal miqayəllənmə**: Daha böyük bir serverə (daha çox CPU, RAM) keçmək
 - **Keşləmə qatları**: Statik məzmun üçün səhifə keşləməsi, obyekt keşləməsi üçün Redis/Memcached əlavə etmək
@@ -55,7 +55,7 @@ Hosting-i aşağıdakı hallarda böyütməlisiniz:
 - **Verilənlər bazası optimallaşdırması**: Şəbəkə böyüdükcə, verilənlər bazası sorğuları ləngiyir. Cədvəlləri optimallaşdırın, indekslər əlavə edin, ayrılmış bir verilənlər bazası serverini nəzərdən keçirin.
 - **Məsuliyyətləri ayırmaq**: Media saxlama yerini obyekt saxlama yerinə (S3-uyumlu) köçürmək, e-poçtu tranzaksiya e-poçtu xidmətinə ötürmək
 
-### Hosting Köçürməsi
+### Hosting Köçürməsi {#hosting-migration}
 
 Əgər cari hostunuz daha böyüyə bilmirsə, bir köçürmə planlayın:
 
@@ -65,11 +65,11 @@ Hosting-i aşağıdakı hallarda böyütməlisiniz:
 4. Əvvəlcədən minimal TTL ilə DNS-i yeniləmək
 5. Köçürmədən sonra hər şeyin işlədiyini yoxlamaq
 
-## Əməliyyatları Avtomatlaşdırmaq
+## Əməliyyatları Avtomatlaşdırmaq {#automating-operations}
 
 Böyüdükcə, əl ilə yerinə yetirilən proseslər tıxanmalara çevrilir. Edə biləcəyinizi avtomatlaşdırın:
 
-### Webhooks və Zapier
+### Webhooks və Zapier {#webhooks-and-zapier}
 
 Aşağıdakıları avtomatlaşdırmaq üçün [Webhooks](/user-guide/integrations/webhooks) və ya [Zapier](/user-guide/integrations/zapier) istifadə edin:
 
@@ -78,7 +78,7 @@ Aşağıdakıları avtomatlaşdırmaq üçün [Webhooks](/user-guide/integration
 - **Ödəniş uğursuzluğu** → monitorinq alətinizdə xəbərdarlıq
 - **Plan yüksəkləndirmələri** → təbrik e-poçtu və yeni funksiyalarla bələdçi
 
-### E-poçt Avtomatlaşdırması
+### E-poçt Avtomatlaşdırması {#email-automation}
 
 Əl ilə göndərilən e-poçtlardan avtomatlaşdırılmış ardıcımlıqlara keçin:
 
@@ -87,30 +87,30 @@ Aşağıdakıları avtomatlaşdırmaq üçün [Webhooks](/user-guide/integration
 - Müştərilər plan limitlərinə yaxınlaşdıqda yüksəkləndirmə təklifləri
 - İllik abunəçilər üçün yenilənmə xatırlatmaları
 
-### Dəstək Avtomatlaşdırması
+### Dəstək Avtomatlaşdırması {#support-automation}
 
 - Ümumi suallar üçün **Hazır cavablar**
 - Dəstək biletinin alındığını təsdiq edən **Avtomatik cavablar**
 - Müştərilər mövcud məqalələrlə uyğun bilet göndərdikdə **Məlumat bazası təklifləri**
 
-## Gəliri Artırmaq
+## Gəliri Artırmaq {#increasing-revenue}
 
 Böyümək sadəcə daha çox müştəri demək deyil. Həm də müştəri başına daha çox gəlir deməkdir.
 
-### Mövcud Müştəriləri Yüksəkləndirmək (Upselling)
+### Mövcud Müştəriləri Yüksəkləndirmək (Upselling) {#upselling-existing-customers}
 
 - **Plan yüksəkləndirmələri**: Starter müştərilərinə Growth/Pro funksiyalarını göstərən hədəfli kampaniyalar
 - **Sifariş artırımları**: Mövcud müştərilərə e-poçt vasitəsilə əlavə məhsullar təşviq etmək
 - **İllikə keçid**: Aylıq müştərilərə illik ödənişə keçmək üçün endirim təklif etmək
 
-### Yeni Gəlir Axınları
+### Yeni Gəlir Axınları {#new-revenue-streams}
 
 - **Hazır qurulmuş sistem**: Müştərinizin saytını qurmaq və fərdiləşdirmək üçün premium ödəniş tələb etmək
 - **Fərdiləşdirilmiş dizayn xidmətləri**: Şablonun üstünə xüsusi dizayn işləri təklif etmək
 - **Təlim sessiyaları**: Praktiki köməklik istəyən müştərilər üçün ödənişli bir-bir görüşləri
 - **Premium eklentilər**: Nişə xas premium eklentiləri ödənişli əlavələr kimi təklif etmək (məsələn, fitnes sinifi kitabçası)
 
-### Qiymətləri Yüksəltmək
+### Qiymətləri Yüksəltmək {#raising-prices}
 
 Platformanız inkişaf edib və dəyər artdıqca:
 
@@ -118,7 +118,7 @@ Platformanız inkişaf edib və dəyər artdıqca:
 - Yeni qeydiyyatdan keçənlər üçün qiymətləri artırmaq
 - Artırımları yeni funksiyalar və təkmilləşdirmələrlə əsaslandırmaq
 
-## Komanda Qurmaq
+## Komanda Qurmaq {#building-a-team}
 
 Bir nöqtədə hər şeyi tək edə bilməyəcəksiniz. Ən çox rast gəlinən ilk işçilər:
 
@@ -128,7 +128,7 @@ Bir nöqtədə hər şeyi tək edə bilməyəcəksiniz. Ən çox rast gəlinən 
 
 İşçilərə ehtiyacınız yoxdur. Kontraktorlar və freelancerlər platforma biznesi üçün yaxşı işləyir.
 
-## Böyümə Milestonları
+## Böyümə Milestonları {#growth-milestones}
 
 | Mileston | Təxmini MRR | Fokus |
 |-----------|--------------|-------|
@@ -138,7 +138,7 @@ Bir nöqtədə hər şeyi tək edə bilməyəcəksiniz. Ən çox rast gəlinən 
 | 250-500 müştəri | $25,000-$50,000 | Komanda qurmaq, yeni gəlir axınları, premium funksiyalar |
 | 500+ müştəri | $50,000+ | Platforma yetkinliyi, yaxın nişlər, potensial çıxış |
 
-## Bu Dərsdə Nələr Quruldu
+## Bu Dərsdə Nələr Quruldu {#what-we-built-this-lesson}
 
 - Biznes sağlamlığını anlamaq üçün **bir metriklər çərçivəsi**
 - Onlarla saytlardan yüzlərlə saytlara böyümə üçün **infrastruktur böyütmə planı**

@@ -1,118 +1,122 @@
 ---
-title: De Admin Paneel rondloop
+title: Rondleiding deur die administrasiepaneel
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# De Admin Paneel Verken
+# Toer deur die administrasiepaneel {#touring-the-admin-panel}
 
-Ultimate Multisite streef daarna om so eenvoudig en selfverklarend moontlik te wees, maar met so 'n kragtige hulpmiddel kan 'n begeleide toer help. Kom ons loop deur die admin-bladsye om jou te help om jou gevestig te voel.
+Ultimate Multisite poog om so eenvoudig en selfverduidelikend moontlik te wees, maar met ’n hulpmiddel so kragtig kan dit help om ’n begeleide toer te hê. Kom ons stap deur die administrasiebladsye om jou te help oriënteer.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Die Ultimate Multisite **Dashboard** toon basiese verslae en analitiestatistieke, insluitend inkomste, webwerfaktiwiteite, lidmaatskapsgroei, besoekersgetalle en geografiese data.
+Die Ultimate Multisite **Dashboard** wys basiese verslae en analitika, insluitend inkomste, werfaktiwiteite, ledemaatskapgroei, besoekertellings en geografiese data.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-Hier is 'n volledige uitsig van die dashboard:
+Hier is ’n volledige aansig van die Dashboard:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard volle bladsy](/img/admin/um-dashboard-full.png)
 
-En die onderste gedeelte van die dashboard:
+En die onderste afdeling van die Dashboard:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard onderste afdeling](/img/admin/um-dashboard-bottom.png)
 
-Hier is ook 'n volledige uitsig van die netwerk-dashboard:
+Hier is ook ’n volledige aansig van die netwerk-Dashboard:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Netwerk-Dashboard volle bladsy](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Betaalvorms {#checkout-forms}
 
-**Checkout Forms** gee jou die buigsheid om aangepaste registrasiebladsye te skep. Jy kan velde aanpas, aangepaste klasse en skripte insit, en toegang beperk op grond van die besoeker se land of ligging.
+**Betaalvorms** gee jou die buigsaamheid om pasgemaakte registrasiebladsye te skep. Jy kan velde aanpas, pasgemaakte klasse en skripte invoeg, en toegang beperk op grond van besoekerland of -ligging.
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Betaalvormslys](/img/admin/checkout-forms-list.png)
 
-## Products
+## Produkte {#products}
 
-Die **Products**-afdeling is waar jy verskillende planne, pakkette en dienste vir jou netwerk skep. Definieer pryse, faktureringsfrekwensies en limiete en kwotasies op produkvlak.
+Die **Produkte**-afdeling is waar jy verskillende planne, pakkette en dienste vir jou netwerk skep. Definieer pryse, faktureringsfrekwensies, en limiete en kwotas op produkvlak.
 
-![Products list](/img/admin/products-list.png)
+![Produktelys](/img/admin/products-list.png)
 
-## Memberships
+## Ledemaatskappe {#memberships}
 
-Die **Memberships**-bladsy toon alle abonnements in jou netwerk. Hersien en wysig abonnementsbesonderhede, insluitend planne, produkte, faktureringsbedrae en frekwensies, betalingsgeskiedenis en tydstempels.
+Die **Ledemaatskappe**-bladsy wys alle intekeninge in jou netwerk. Hersien en wysig intekeningbesonderhede, insluitend planne, produkte, faktureringsbedrae en -frekwensies, betalingsgeskiedenis en tydstempels.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Ledemaatskappelys](/img/admin/memberships-list.png)
 
-## Payments
+## Betalings {#payments}
 
-Die **Payments**-bladsy bied 'n vinnige oorsig van die betalingsgeskiedenis oor jou hele netwerk, met gedetailleerde transaksie-inligting, insluitend spesifieke produkte en bedrae.
+Die **Betalings**-bladsy bied ’n vinnige aansig van betalingsgeskiedenis oor jou hele netwerk, met gedetailleerde transaksie-inligting, insluitend spesifieke produkte en bedrae.
 
-![Payments list](/img/admin/payments-list.png)
+![Betalingslys](/img/admin/payments-list.png)
 
-## Customers
+## Klante {#customers}
 
-Die **Customers**-bladsy toon alle lidmate wat in jou netwerk geregistreer is, met basiese gebruikersinligting insluitend naam, e-posadres, laaste aanmelding en 'n "switch to"-skakel om in hul subsite aan te meld.
+Die **Klante**-bladsy wys alle lede wat in jou netwerk geregistreer is, met basiese gebruikersinligting, insluitend naam, e-posadres, laaste aanmelding en ’n “skakel oor na”-skakel om by hul subwerf aan te meld.
 
-![Customers list](/img/admin/customers-list.png)
+![Klantelys](/img/admin/customers-list.png)
 
-## Sites
+## Werwe {#sites}
 
-Die **Sites**-bladsy lys alle subsites in jou netwerk, insluitend webwerf-templates en kliënt-geëigde wesites. Bestuur maklik gekoppel domeine, limiete en kwotasies, plugins en temas, en wesite-thumbnails.
+Die **Werwe**-bladsy lys alle subwerwe in jou netwerk, insluitend werfsjablone en werwe wat deur klante besit word. Bestuur maklik gekarteerde domeine, limiete en kwotas, plugins en temas, en werfduimnaels.
 
-![Sites list](/img/admin/sites-list.png)
+![Werflys](/img/admin/sites-list.png)
 
-## Domains
+## Domeine {#domains}
 
-Die **Domains**-bladsy is gereserveer vir aangepaste domeine wat aan subsites gekoppel is. As 'n super-admin kan jy aangepaste domeinnaamname handmatig byvoeg of koppel en DNS-rekords en logboeke sien.
+Die **Domeine**-bladsy is toegewy aan pasgemaakte domeine wat na subwerwe gekarteer is. As ’n superadmin kan jy pasgemaakte domeinname handmatig byvoeg of karteer en DNS-rekords en logs bekyk.
 
-![Domains list](/img/admin/domains-list.png)
+![Domeinlys](/img/admin/domains-list.png)
 
-## Discount Codes
+## Afslagkodes {#discount-codes}
 
-**Discount Codes** laat jou kortingkodes skep om kortings aan jou eindgebruikers te bied. Spesifiseer die kortingwaarde en mik op spesifieke gebruikers of groepe.
+**Afslagkodes** laat jou koeponkodes skep om afslag aan jou eindgebruikers te bied. Spesifiseer die afslagwaarde en teiken spesifieke gebruikers of groepe.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Afslagkodelys](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Uitsendings {#broadcasts}
 
-**Broadcasts** is 'n hulpmiddel vir die uitrol van aankondigings of die stuur van private boodskappe na jou subsite-gebruikers. Mik op spesifieke gebruikersgroepe gebaseer op die plan of produk waaraan hulle gekoppel is.
+**Uitsendings** is ’n hulpmiddel om aankondigings uit te rol of private boodskappe aan jou subwerfgebruikers te stuur. Teiken spesifieke gebruikersgroepe op grond van die plan of produk waarop hulle ingeteken is.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Uitsendingslys](/img/admin/broadcasts-list.png)
 
-## Settings
+## Instellings {#settings}
 
-Die **Settings**-bladsy is waar jy Ultimate Multisite konfigureer — registrasie-instellings, betalings, API en webhooks, domeinkoppelvlakking en ander integrasies.
+Die **Instellings**-bladsy is waar jy Ultimate Multisite konfigureer — registrasie-instellings, betalings, API en webhooks, domeinkartering en ander integrasies.
 
-![Settings page](/img/admin/settings-general.png)
+AI-konnektorinstellings lys die OAuth-verskafferpoele wat tans ondersteun word: Anthropic Max, OpenAI ChatGPT/Codex en Google AI Pro. Elke verskafferkaart laat superadmins rekeninge koppel, gestoorde rekeninge verfris, rekeninge per e-pos verwyder, en die handmatige OAuth-terugval gebruik wanneer ’n sandbox-omgewing die blaaierherleiding blokkeer. Cursor Pro-opstelopsies is uit die administrasiepaneel verwyder.
 
-Hier is 'n volledige uitsig van die algemene instellingsbladsy:
+ChatGPT/Codex-rekeninge ondersteun konnektor-gesteunde hulpmiddelgebruik waar die bewerking hulpmiddels toelaat, sodat administrasie-werkvloeie wat van konnektor-ondersteunde bewerkings afhanklik is, Codex-hulpmiddelgedrag kan gebruik nadat die OpenAI-rekening gekoppel is.
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![Instellingsbladsy](/img/admin/settings-general.png)
+
+Hier is ’n volledige aansig van die algemene instellingsbladsy:
+
+![Algemene instellings volle bladsy](/img/admin/settings-general-full.png)
 
 En die e-posinstellingsbladsy:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![E-posinstellings volle bladsy](/img/admin/settings-emails-full.png)
 
 En die betalingsinstellingsbladsy:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![Betalingsinstellings volle bladsy](/img/admin/settings-payments-full.png)
 
-En die onderste gedeelte van die betalingsinstellings:
+En die onderste afdeling van die betalingsinstellings:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![Betalingsinstellings onderste afdeling](/img/admin/settings-payments-bottom.png)
 
-En die wesite-instellingsbladsy:
+En die werfinstellingsbladsy:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![Werfinstellings volle bladsy](/img/admin/settings-sites-full.png)
 
-## Events
+## Gebeurtenisse {#events}
 
-Die **Events**-bladsy hou 'n rekord van alle gebeurtenisse en logboeke in jou netwerk. Dit spoor aktiwiteite soos planveranderinge, aanmeldings en ander bewegings — nuttig vir die monitering van jou multisite.
+Die **Gebeurtenisse**-bladsy hou rekord van alle gebeurtenisse en logs in jou netwerk. Dit volg aktiwiteite soos planveranderings, registrasies en ander bewegings — nuttig om jou multisite te monitor.
 
-![Events list](/img/admin/events-list.png)
+![Gebeurtenisselys](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooks {#webhooks}
 
-**Webhooks** laat jou data na 'n ander toepassing stuur. Nuttig vir die stuur van data van Ultimate Multisite na platforms soos Zapier.
+**Webhooks** laat jou data aan ’n ander toepassing lewer. Nuttig om data vanaf Ultimate Multisite na platforms soos Zapier te stuur.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhooks-lys](/img/admin/webhooks-list.png)

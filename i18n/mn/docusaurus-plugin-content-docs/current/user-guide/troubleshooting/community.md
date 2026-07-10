@@ -3,7 +3,7 @@ title: Олон нийт
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Сообщелцод барих заавалт
+# Ultimate Multisite Сообщелцод барих заавалт {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community гэдэг нь та өөр Ultimate Multisite хэрэглэгчтэй холбогдож, зөвлөгөө, туршлага болон бусад зүйлээ хуваалцах боломжтой зай юм. Ultimate Multisite Community руу ороход https://community.ultimatemultisite.com/home руу очих хэрэгтэй.
 

@@ -3,19 +3,19 @@ title: Configurar Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Configurar la Pasarela de Pago Stripe (v2)
+# Configurar la Pasarela de Pago Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Puedes activar hasta cuatro métodos de pago en nuestra página de configuración de pagos: Stripe, Stripe Checkout, PayPal y Manual. En este artículo, veremos cómo integrarse con **Stripe**.
 
-## Habilitar Stripe
+## Habilitar Stripe {#enabling-stripe}
 
 Para habilitar Stripe como pasarela de pago disponible en tu red, ve a **Ultimate Multisite > Configuración > Pagos** y marca el interruptor junto a **Stripe** o **Stripe Checkout** en la sección Pasarelas de Pago Activas.
 
 ![Habilitando Stripe en las pasarelas de pago activas](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Este método mostrará un espacio para insertar el número de tarjeta de crédito durante el proceso de compra (checkout).
 
@@ -47,7 +47,7 @@ A la teva dashboard de Stripe, fes clic a **Developers** a l'esquina superior dr
 
 ![Peguant les clefs de Stripe en les configuracions d'Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Configuració del Webhook de Stripe
+## Configuració del Webhook de Stripe {#setting-up-stripe-webhook}
 
 Stripe envia esdeveniments webhook que notifiquen Ultimate Multisite cada vegada que passa un esdeveniment a **la teva compte de stripe**.
 

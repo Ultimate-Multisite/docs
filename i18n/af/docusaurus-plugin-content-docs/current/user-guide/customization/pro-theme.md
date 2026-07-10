@@ -3,7 +3,7 @@ title: PRO Tema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Pas jou Admin Paneel aan met PRO Theme
+# Pas jou Admin Paneel aan met PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Dikwels, wanneer ons kliëntwerk doen, kom die behoefte om aan ons kliënte 'n aangepaste ervaring in die WordPress admin dashboard te bied. As jy op soek is na 'n meer professionele voorkoms en gevoel, kan PRO Theme jou help.
 

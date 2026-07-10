@@ -4,21 +4,21 @@ title: Filtre - wu_password_require_uppercase
 sidebar_label: wu_password_require_uppercase
 _i18n_hash: eeb317b6890110f5f0eac4b541d18213
 ---
-# Filtre : wu_password_require_uppercase
+# Filtre : wu_password_require_uppercase {#filter-wupasswordrequireuppercase}
 
 Filtre pour déterminer si les majuscules sont requises dans les mots de passe.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $require | `bool` | Indique si les majuscules sont requises. Valeur par défaut : vrai lorsque les règles sont appliquées. |
 | $defender_active | `bool` | Indique si Defender Pro Strong Password est actif. |
 
-### Since
+### Since {#since}
 
 - 2.4.0
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L553) à la ligne 553

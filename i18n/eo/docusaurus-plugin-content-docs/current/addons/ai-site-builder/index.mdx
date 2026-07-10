@@ -1,0 +1,124 @@
+---
+title: AI Retejkonstruilo
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI Reteja Konstruilo {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Postuloj {#requirements}
+
+- WordPress 5.3 aŭ pli alta
+- PHP 7.4 aŭ pli alta
+- Multisite Ultimate kromprogramo (aktiva)
+
+## Instalado {#installation}
+
+1. Alŝutu la aldonaĵajn dosierojn al via dosierujo `/wp-content/plugins/`
+2. Aktivigu la kromprogramon per la menuo 'Plugins' en WordPress
+3. Agordu la aldonaĵajn agordojn en la reta administrado
+
+## Evoluigado {#development}
+
+### Agordo {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projekta Strukturo {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klasoj kaj inkluzivaĵoj
+│   ├── class-multisite-ultimate-updater.php  # Ĝisdatiga traktilo
+│   └── class-ai_site_builder-main.php             # Ĉefa funkcieco
+├── tests/                        # Unuotestoj
+│   ├── bootstrap.php            # Testa ekstartigo
+│   ├── class-*-base.php         # Baza testa klaso
+│   └── class-*-test.php         # Testkazoj
+├── views/                       # Ŝablonaj dosieroj
+├── assets/                      # Statikaj aktivaĵoj
+│   ├── css/                     # Stilfolioj
+│   ├── js/                      # JavaScript dosieroj
+│   └── images/                  # Bildoj
+├── lang/                        # Lingvaj dosieroj
+├── composer.json                # PHP dependecoj
+├── package.json                 # Node.js dependecoj
+├── phpunit.xml.dist             # PHPUnit agordo
+├── .phpcs.xml.dist              # Kodnorma agordo
+└── rector.php                   # Kodmodernigaj reguloj
+```
+
+### Testado {#testing}
+
+La aldonaĵo inkluzivas ampleksan testan kadron:
+
+- **Unuotestoj**: PHPUnit-bazitaj testoj kun WordPress testa ilaro
+- **Baza Testa Klaso**: Provizas helpajn metodojn por oftaj testaj scenaroj
+- **Testa Kovrado**: Agordita por spuri kodan kovradon
+- **Multisite Testado**: Testoj ruliĝas en multisite medio
+
+### Kodnormoj {#code-standards}
+
+- **WordPress Kodnormoj**: Devigataj per PHPCS
+- **PHP 7.4+ Kongrueco**: Modernaj PHP funkcioj subtenataj
+- **Statika Analizo**: PHPStan integriĝo por tipkontrolado
+- **Koda Modernigo**: Rector reguloj por PHP ĝisdatigoj
+
+### Konstrusistemo {#build-system}
+
+- **Aktivaĵa Prilaborado**: Malgrandigo por CSS/JS dosieroj
+- **Traduko**: POT dosiera generado
+- **Pakado**: Arkiva kreado por distribuo
+- **Evoluiga Reĝimo**: Nemalgrandigitaj aktivaĵoj por sencimigo
+
+## Agordo {#configuration}
+
+La aldonaĵo subtenas diversajn agordajn opciojn alireblajn per la reta administra interfaco.
+
+## Hokoj kaj Filtriloj {#hooks-and-filters}
+
+### Agoj {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Ekigita post aldonaĵa inicialigo
+- `ultimate-multisite-ai-site-builder_loaded` - Ekigita post kiam ĉiuj aldonaĵaj dosieroj estas ŝargitaj
+
+### Filtriloj {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Modifi aldonaĵajn agordojn
+- `ultimate-multisite-ai-site-builder_enabled` - Anstataŭigi aldonaĵan aktivigan/malaktivigan staton
+
+## Permesilo {#license}
+
+Ĉi tiu aldonaĵo estas licencita laŭ GPL v3 aŭ posta.
+
+## Subteno {#support}
+
+Por subteno kaj dokumentado, vizitu [MultisiteUltimate.com](https://multisiteultimate.com)
+## Ŝanĝprotokolo {#changelog}
+
+- Versio 1.0.1 (2025-09-28): alinomi prefikson al ultimate-multisite; ĝisdatigi tekstdomajnon; versiopliigo.
+
+
+- Versio  (2025-09-28): alinomi prefikson al ultimate-multisite; ĝisdatigi tekstdomajnon; versiopliigo.

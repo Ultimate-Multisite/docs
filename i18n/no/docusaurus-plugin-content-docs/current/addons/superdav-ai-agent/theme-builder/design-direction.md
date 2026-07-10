@@ -3,17 +3,17 @@ title: Designretning
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Designretning
+# Designretning {#design-direction}
 
 Steget **Designretning** lar deg gjennomgå, forfine og ferdigstille det visuelle designet til temaet ditt før Theme Builder genererer det komplette temaet.
 
-## Oversikt
+## Oversikt {#overview}
 
 Etter at du har fullført Discovery Interview, presenterer Theme Builder designretningen din med **forhåndsvisning for både desktop og mobil**. Dette lar deg se nøyaktig hvordan designet ditt vil se ut på forskjellige enheter før du forplikter deg til temaet.
 
-## Designretningskomponenter
+## Designretningskomponenter {#design-direction-components}
 
-### 1. Fargepalett
+### 1. Fargepalett {#1-color-palette}
 
 Temaets fargeskjema, inkludert:
 
@@ -23,7 +23,7 @@ Temaets fargeskjema, inkludert:
 - **Nøytrale farger** — gråtoner og hvitt for bakgrunner og tekst
 - **Tekstfarge** — primærarbeidsfarge for lesbarhet
 
-### 2. Typografi
+### 2. Typografi {#2-typography}
 
 Skrifttypevalg for:
 
@@ -33,14 +33,14 @@ Skrifttypevalg for:
 - **Linjehøyde** — avstanden mellom linjene for bedre lesbarhet
 - **Skriftvekter** — utgaver som fet, normal og lys
 
-### 3. Layout og avstand
+### 3. Layout og avstand {#3-layout-and-spacing}
 
 - **Innholdsbredde** — maksimal bredde for innholdet
 - **Padding og marger** — avstand rundt elementer
 - **Rutenett (Grid system)** — kolonneoppsett for responsivt design
 - **Mellomrom mellom komponenter** — avstand mellom UI-elementer
 
-### 4. Visuelle elementer
+### 4. Visuelle elementer {#4-visual-elements}
 
 - **Knappestiler** — design for primære, sekundære og tertiære knapper
 - **Kortdesign** — oppsett for innholdsblokker
@@ -48,9 +48,9 @@ Skrifttypevalg for:
 - **Bokser og skygger** — subtil visuell dybde
 - **Hover-effekter** — styling for interaktive tilstander
 
-## Forhåndsvisning
+## Forhåndsvisning {#preview-rendering}
 
-### Desktop-forhåndsvisning
+### Desktop-forhåndsvisning {#desktop-preview}
 
 Desktop-forhåndsvisningen viser designet ditt i full bredde (vanligvis 1200 piksler eller bredere):
 
@@ -59,7 +59,7 @@ Desktop-forhåndsvisningen viser designet ditt i full bredde (vanligvis 1200 pik
 - Stor typografi og avstand
 - Alle visuelle elementer i full størrelse
 
-### Mobil-forhåndsvisning
+### Mobil-forhåndsvisning {#mobile-preview}
 
 Mobil-forhåndsvisningen viser designet ditt i mobilbredde (vanligvis 375 piksler):
 
@@ -68,7 +68,7 @@ Mobil-forhåndsvisningen viser designet ditt i mobilbredde (vanligvis 375 piksle
 - Justert typografi og avstand
 - Berøringsvennlige knappestørrelser
 
-### Responsivt bruddpunkt
+### Responsivt bruddpunkt {#responsive-breakpoints}
 
 Theme Builder genererer forhåndsvisninger ved disse bruddpunktene:
 
@@ -79,9 +79,9 @@ Theme Builder genererer forhåndsvisninger ved disse bruddpunktene:
 | **Desktop** | 1200 piksler | Fullbredde desktop |
 | **Stor desktop** | 1920 piksler | Ultra-bred skjerm |
 
-## Forbedring av designet ditt
+## Forbedring av designet ditt {#refining-your-design}
 
-### Gjennomføre justeringer
+### Gjennomføre justeringer {#making-adjustments}
 
 Du kan forbedre designretningen din ved å:
 
@@ -91,7 +91,7 @@ Du kan forbedre designretningen din ved å:
 4. **Oppdatere layout** — endre innholdsbredder og rutenettkolonner
 5. **Tilpasse elementer** — endre knappestiler, kortdesign, osv.
 
-### Oppdateringer i forhåndsvisningen
+### Oppdateringer i forhåndsvisningen {#preview-updates}
 
 Endringene reflekteres i sanntid:
 
@@ -100,7 +100,7 @@ Endringene reflekteres i sanntid:
 - Alle responsive bruddpunkter oppdateres
 - Du kan bytte mellom forhåndsvisningene for å bekrefte endringene
 
-### Sammenligningsvisning
+### Sammenligningsvisning {#comparison-view}
 
 Sammenlign designretningen din med:
 
@@ -108,7 +108,7 @@ Sammenlign designretningen din med:
 - **Konkurrentdesign** — sammenlign med inspirasjonsnettsteder
 - **Tidligere versjoner** — gå tilbake til tidligere designretninger
 
-## Godkjenning av designretning
+## Godkjenning av designretning {#design-direction-approval}
 
 Når du er fornøyd med designet ditt:
 
@@ -118,7 +118,7 @@ Når du er fornøyd med designet ditt:
 4. **Bekreft layouten** — sjekk avstand og justering
 5. **Godkjenn designet** — fortsett til tema-generering
 
-## Neste steg
+## Neste steg {#next-steps}
 
 Etter at du har godkjent designretningen din:
 
@@ -127,7 +127,7 @@ Etter at du har godkjent designretningen din:
 3. Du kan fortsette å tilpasse ved hjelp av WordPress Customizer
 4. Fortsett til [Hospitality Menus](./hospitality-menus.md) eller andre funksjoner
 
-## Beste praksis
+## Beste praksis {#best-practices}
 
 - **Test på ekte enheter** — bruk faktiske telefoner og nettbrett hvis mulig
 - **Sjekk lesbarhet** — sørg for at teksten er lesbar i alle størrelser
@@ -135,30 +135,30 @@ Etter at du har godkjent designretningen din:
 - **Vurder ytelse** — optimaliser bilder og fonter for hastighet
 - **Planlegg innhold** — sørg for at layouten fungerer med ditt faktiske innhold
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
-### Forhåndsvisningen oppdateres ikke
+### Forhåndsvisningen oppdateres ikke {#preview-not-updating}
 
 - Oppdater siden
 - Tøm nettleserens hurtigbuffer (cache)
 - Prøv en annen nettleser
 - Sjekk internettforbindelsen
 
-### Fargene ser annerledes ut
+### Fargene ser annerledes ut {#colors-look-different}
 
 - Sjekk fargeinnstillingene på monitoren
 - Prøv på forskjellige enheter
 - Verifiser fargekontrast med tilgjengelighetsverktøy
 - Vurder fargeblinde simulatorer
 
-### Typografiske problemer
+### Typografiske problemer {#typography-issues}
 
 - Verifiser at skrifttilene lastes
 - Sjekk skriftstørrelsen ved forskjellige bruddpunkter
 - Test med faktisk innhold
 - Vurder linjelengden for lesbarhet
 
-## Relatert dokumentasjon
+## Relatert dokumentasjon {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — samle inn designinformasjon
 - [Hospitality Menus](./hospitality-menus.md) — opprette strukturerte meny-sider

@@ -3,7 +3,7 @@ title: Mokhotso
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Tsela la Hoelo la Ultimate Multisite
+# Tsela la Hoelo la Ultimate Multisite {#ultimate-multisite-requirements}
 
 Ke tla re bolela ka tsela e ntle le ho hloekileng ea Ultimate Multisite.
 
@@ -20,7 +20,7 @@ Ke tla re batla hore hau a bona tsela e ntle ho ba le lehle la hau.
 
 Ho ntlha le thata o ka bua le sefapiso sa Ultimate Multisite ho ba leboho, ke eng e hloka ho fana ka ho tshepa pehli. Ho ntlha, ho na le metsi e fapaneng ea metsi a tsoalo ho fana ka ho tshepa pehli: **domain name** (leela la domaini), **hosting provider** (mora oa hosting) e ntle, le **WordPress Multisite** installation. Kena ke sefapiso se fapaneng se o nang le!
 
-## Leina le Lihlobo (Domain Name)
+## Leina le Lihlobo (Domain Name) {#domain-name}
 
 Ha o tla fana ka leina la domain.
 
@@ -30,7 +30,7 @@ Phetsoetso ea rona e fana ka litshatso tsa khotso (subscription services), ho ko
 
 Hoena le ho fana ka ho na le niche e kholo, ha u na le sehlopha seo u ba le ho feta ka ho fana ka website e le sehlopha (service). A re, u tloha le domain name seo u batlang a fetang le plan ea hau ea luso.
 
-## Hosting Provider
+## Hosting Provider {#hosting-provider}
 
 Ha o ne u le le lela la domain name le le fetang le boikotso ba hau le boikotso ba hau. Le tla hloka ho ba le moetso o bonolo oa web hosting company ho ba le lele la hau le Ultimate Multisite. Ho na le dikgwathlo tse dintsi ka tseng tsa market. Ba ringolo ba hosting e ba le ho ba lela well with Ultimate Multisite, le se ka ba sebetsa ka tsela e fetang ka ho batla ho dira eng.
 
@@ -38,7 +38,7 @@ Ultimate Multisite e ka ba le seka ho ba le anya mofatso oa hosting. Ho ba le mo
 
 Ho nako e ntse le tsela ya server specifications, ha ho na formula e ntse, e tla fihla ka features le functions e tla ba leba le sefapeng sa linetso la hau. Hosting e fetoha (shared hosting) e ka le mangwa a mangwa, empa ha ntlha ea linetso la hau e tla fula, o tla hloka VPS e ntse.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Kea re bua ka leboho ka ho nna lehle ka tsela e ntle ea WordPress Multisite.
 

@@ -3,21 +3,21 @@ title: تنصيب ۽ پرووڊائزر کانگيشن
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# ডোমেইন সেলার: সেটআপ এবং প্রোভাইডার কনফিগারেশন
+# ডোমেইন সেলার: সেটআপ এবং প্রোভাইডার কনফিগারেশন {#domain-seller-setup-and-provider-configuration}
 
 ডোমেইন সেলার অ্যাড-অনটি একটি গাইড করা সেটআপ উইজার্ডের সাথে আসে যা আপনাকে প্রতিটি প্রয়োজনীয় ধাপ ধাপে ধাপে বুঝিয়ে দেবে। এই পেজটিতে আমরা উইজার্ডের প্রবাহ এবং পরে কীভাবে প্রোভাইডার কনফিগার বা পুনরায় কনফিগার করতে হয় তা আলোচনা করব।
 
-## প্রয়োজনীয়তা
+## প্রয়োজনীয়তা {#requirements}
 
 - **Multisite Ultimate** v2.4.12 বা তার বেশি, নেটওয়ার্ক-অ্যাক্টিভেটেড
 - **PHP** 7.4+
 - অন্তত একটি সমর্থিত রেজিস্টারের জন্য API ক্রেডেনশিয়াল
 
-## প্রথমবার সেটআপ উইজার্ড
+## প্রথমবার সেটআপ উইজার্ড {#first-run-setup-wizard}
 
 প্রথমবার আপনি প্লাগইনটি নেটওয়ার্ক-অ্যাক্টিভেট করার সময় সেটআপ উইজার্ডটি স্বয়ংক্রিয়ভাবে চালু হবে। এটি যেকোনো সময় **Network Admin › Ultimate Multisite › Domain Seller Setup** থেকে পাওয়া যাবে।
 
-### ধাপ ১ — একটি প্রোভাইডার বেছে নিন
+### ধাপ ১ — একটি প্রোভাইডার বেছে নিন {#step-1--choose-a-provider}
 
 আপনি যে রেজিস্টারের সাথে সংযোগ করতে চান সেটি নির্বাচন করুন। সমর্থিত বিকল্পগুলি:
 
@@ -33,7 +33,7 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 | NameSilo | না | না |
 | Enom | হ্যাঁ | না |
 
-### ধাপ ২ — ক্রেডেনশিয়াল প্রবেশ করান
+### ধাপ ২ — ক্রেডেনশিয়াল প্রবেশ করান {#step-2--enter-credentials}
 
 প্রতিটি প্রোভাইডারের আলাদা ক্রেডেনশিয়াল ফিল্ড থাকে:
 
@@ -65,17 +65,17 @@ _i18n_hash: 854fd649457edceefde0eb8246446ebe
 
 - **Configure providers** — providers add karne ya unhe dobara set up karne ke liye Integration Wizard kholega
 
-### Doosra provider jorna (Adding a second provider)
+### Doosra provider jorna (Adding a second provider) {#step-3--test-the-connection}
 
 **Configure providers** par click karein aur naye registrar ke liye wizard ko phir se chalaein. Aap ek hi waqt mein kai providers configure kar sakte hain. Har domain product ko kisi khaas provider ko assign karein, ya default par chhod dein.
 
-### TLDs ko manually sync karna (Syncing TLDs manually)
+### TLDs ko manually sync karna (Syncing TLDs manually) {#step-4--import-tlds}
 
 Settings page mein, kisi bhi configured provider ke bagal mein **Sync TLDs** par click karein taaki latest pricing aa jaye. Yeh tab kaam aata hai jab koi provider wholesale pricing update karta hai ya nayi TLDs add karta hai.
 
 ---
 
-## Logs (Logs)
+## Logs (Logs) {#step-5--create-a-domain-product}
 
 Har provider apne alag log channel par likhta hai. Aap **Network Admin › Ultimate Multisite › Logs** ke andar logs dekh sakte hain:
 
@@ -95,7 +95,7 @@ Har provider apne alag log channel par likhta hai. Aap **Network Admin › Ultim
 
 ---
 
-## پراڊائڊر صلاحيتون (Provider capability notes)
+## پراڊائڊر صلاحيتون (Provider capability notes) {#reconfiguring-a-provider}
 
 هر رجيستريٽر جو API هڪ ئي ڪم ڏيکاري ٿو نه. addon ان ڪمن کي جيڪا سپورٽ نه آهي، واضح اڪماء (errors) سان ڏيکاري ٿو جنهن عام طور تي chupchap ناڪام ٿيندا آهن.
 

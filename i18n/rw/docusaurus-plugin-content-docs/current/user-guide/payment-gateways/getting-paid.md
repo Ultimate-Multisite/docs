@@ -1,126 +1,126 @@
 ---
-title: Gukorwa
+title: Kwishyurwa
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Gukoresha (v2)
+# Kwishyurwa (v2) {#getting-paid-v2}
 
-_**IZINYE Y'UMUKUNDI: Igihekiro iryo ryo ririmo riherereye Ultimate Multisite version 2.x.**_
+_**ICYITONDERWA CY'INGENZI: Iyi ngingo ivuga kuri Ultimate Multisite verisiyo 2.x.**_
 
-Ultimate Multisite yashyira uburyo bwo gukundwa n'ubwujobozi bwo gukoresha imi. Kugira ngo umusho w'imikoresho ya gukundwa yashobore gukora, twagize imi za gukoresha imi zizwi cyane zishobora gukoreshwa mu gihe cyo gukoresha ibintu by'umuryango (e-commerce). Imi z'imikoresho ya gukundwa mu Ultimate Multisite ni _Stripe_, _PayPal_, n'Umuco w'ubwoko. Uwo hariho uburyo bwo gukoresha _WooCommerce_, _GoCardless_ na _Payfast_ kugira ngo umusho w'imikoresho yashobore gukora ibyo mu gihe cyo gukundwa ubwoko bwo gukoresha imi zizwi.
+Ultimate Multisite ifite sisitemu y'ubunyamuryango no kwishyuza yubatsemo. Kugira ngo sisitemu yacu yo kwishyuza ikore, twahujije uburyo bwo kwishyura bukoreshwa cyane mu bucuruzi bwo kuri internet. Uburyo bwo kwishyura busanzwe muri Ultimate Multisite ni _Stripe_ , _PayPal_ , na Kwishyura mu buryo bw'intoki. Ushobora kandi gukoresha _WooCommerce_ , _GoCardless_ na _Payfast_ kwakira ubwishyu ushyiraho add-ons zabigenewe.
 
-## Icyemezo Cyiza (Basic Settings)
+## Igenamiterere ry'ibanze {#basic-settings}
 
-Ushobora guhindura uburyo bwose bwo gukoresha imi zizwi ku mibereho y'imikoresho ya gukundwa mu Ultimate Multisite. Uzi n'ubwo bishobora kugera ku **Ultimate Multisite menu > Settings > Payments.**
+Ushobora kugena ubu buryo ubwo ari bwo bwose bwo kwishyura munsi y'igenamiterere ry'ubwishyu rya Ultimate Multisite. Ushobora kubibona ujya kuri **menu ya Ultimate Multisite > Settings > Payments.**
 
-![Icyemezo cyo gukundwa mu Ultimate Multisite kigisha panel ya Payments](/img/config/payments-settings-page.png)
+![Ipaji y'igenamiterere ry'ubwishyu muri Ultimate Multisite yerekana akanama ka Payments](/img/config/payments-settings-page.png)
 
-Mbere yo gutera imi za gukundwa yawe, nshobora kugira umwanya ku mibereho y'imikoresho z'imikoresho cyiza uzi n'ubwo bishobora guhindura:
+Mbere yo gutunganya uburyo bwawe bwo kwishyura, nyamuneka banza urebe igenamiterere ry'ibanze ry'ubwishyu ushobora kugena:
 
-**Force auto-rene w:** Ibi bituma ko imi z'imikoresho zizwi zizera gukundwa mu gihe cyose ku mwera wa gukundwa, aho ibyo bishobora gukorwa byerekana mu gihe cyo gukundwa uzi n'ubwo bw'umuryango wari yashyira.
+**Hatiriza kwivugurur** **a:** Ibi bizemeza ko ubwishyu buzajya bwisubiramo mu buryo bwikora ku mpera ya buri cyiciro cyo kwishyuza, bitewe n'inshuro zo kwishyuza umukoresha yahisemo.
 
-<!-- Screenshot unavailable: Icyemezo cyo Force Auto-Renew kuri Payments settings page -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 yishobora gushyira umwanya ku kumenya niba imi ya mbere (active gateway) irafite uburyo bwo gukoresha cyane mu gukundwa (reusable renewal credential) mbere yo gukora umusho w'imikoresho yashobore gukunda (recurring membership) ufite auto-renewal. Uburyo bwo gukoresha cyane ni uburyo bwo gukoresha imi ya mbere, ibyemezo by'ubwoko bwo gukundwa, token y'ibyo wari yashyiramo mu vault, cyangwa uburyo bwiza bwo gukoresha imi zizwi. Niba imi ya mbere izera ko nta buryo bwo gukoresha cyane ariko, Ultimate Multisite yishobora gukora umusho w'imikoresho yashobore gukunda ariko yagira auto-renewal mu gihe cyo gukundwa kandi yerekana uburyo bwo gukoresha cyane ntabwo yari yashyiramo, kugira ngo umukozi cyangwa umwuga ashobore kumenya ko yashobora guhindura imi z'imikoresho mbere yo gukundwa mbere y'umwera w'ibyo bishobora gukunda.
+Ultimate Multisite v2.13.0 igenzura niba gateway ikora ifite icyemezo cy'ivugurura gishobora kongera gukoreshwa mbere yo kubika ubunyamuryango busubiramo bufite auto-renewal ifunguye. Icyemezo cy'ivugurura gishobora kuba gateway subscription, billing agreement, saved vault token, cyangwa uburyo bwo kwishyura bungana na bwo bushobora kongera gukoreshwa. Niba gateway itangaje ko nta cyemezo gishobora gukoreshwa gihari, Ultimate Multisite ibika ubunyamuryango ariko igafunga auto-renewal kandi ikandika imiterere y'icyemezo kibura kugira ngo umuyobozi cyangwa inzira y'ubufasha ishobore gusaba umukiriya kongera kwemeza ubwishyu mbere y'itariki y'ivugurura.
 
-Iyi ni uburyo bishobora kugira ngo umusaruro (membership) ushobore gukoreshwa mu gihe cy'umutera (auto-renew) iyo igatango (gateway) igaragaza gukora gukoresha amafaranga y'umwihariko (one-time payments) gusa. Icyo cyangwa ibindi, ubufasha bw'add-ons ya gateway ni ukubwira ko uburyo bwo gukoresha amafaranga y'umutera (recurring checkouts) bishobora gukoresha ikoranabuhanga rishobora gutungwa (reusable credential), cyane iyo igatango ryashobora gufasha uburyo bwo gukoresha amafaranga y'umwihariko n'uburyo bwo gukoresha amafaranga y'ubwumvikane/subscription.
+Ibi birinda ko ubunyamuryango bugaragara nk'ubwivugurura mu buryo bwikora kandi gateway ishobora kwakira gusa ubwishyu bw'inshuro imwe. Gateway add-ons zikwiye kwemeza ko recurring checkouts zibika icyemezo gishobora kongera gukoreshwa, cyane cyane iyo gateway ishyigikira uburyo bwombi bwo gufata ubwishyu bw'inshuro imwe n'uburyo bwa vaulted/subscription payment.
 
-**Kugira ngo umusaruro ushobore gukoreshwa nta cyerekezo (trials without payment)** **Uburyo:** Niba wamukoreshe uburyo bwa mbere, uza gutera ko uza gushyira amafaranga y'umwihariko mu gihe cyo gukora registration. Iyo igihe cyo mbere cyangwa umutera (trial period) utarashobora kwihagarara, uza kubyara ibyo.
+**Emerera igerageza nta buryo bwo kwishyura** **busabwe:** Iyo ubu buryo bufunguye, umukiriya wawe ntazakenera kongeramo amakuru ayo ari yo yose ajyanye n'imari mu gihe cyo kwiyandikisha. Ibi bizasabwa gusa igihe cy'igerageza kirangiye.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Gufasha invoice ku gihe cyo gukoresha amafaranga (Send invoice on payment confirmation):** Icyo kigaragaza ko uza gutera cyangwa nta cyerekezo gufasha invoice iyo umuntu yagize amafaranga. Ukenya ko abantu bazabona uburyo bwo gukoresha amafaranga mu dashboard ya subsite yabo. Icyo cyo gushobora kugaragara ku gateway ya Manual Gateway.
+**Ohereza inyemezabwishyu nyuma yo kwemeza ubwishyu:** Ibi biguha uburyo bwo guhitamo niba wohereza inyemezabwishyu nyuma yo kwishyura cyangwa utayohereza. Zirikana ko abakoresha bazabona amateka yabo y'ubwishyu munsi ya dashboard ya subsite yabo. Ubu buryo ntibukora kuri Manual Gateway.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Uburyo bwo gutangira invoice (Invoice numbering scheme):** Hano, uza kubona ko uza gukoresha code y'umwihariko w'umutera cyangwa uburyo bw'ibyo byerekana mu buryo bwa mbere. Niba wamukoreshe code y'umwihariko w'umutera ku invoice zawe, nta kintu ukwiye gushyira mu buryo bwo gufasha. Niba wamukoreshe uburyo bw'ibyo byerekana mu buryo bwa mbere, uza gutera ko ukenya ko uza gutera **invoice number y'umutera w'ingenzi (next invoice number)** (Icyo cyo gushobora gukoreshwa nk'inguzanyo ya invoice itandukanye. Iyo inguzanyo irashobora gufasha mu gihe cyo gukora invoice itandukanye. Iyo inguzanyo igaragara, ikorwa n'imwe. Uza kubyara kandi kugira ngo uya bishobore gushyira mu buryo bwo gufasha). kandi **prefix y'invoice number**.
+**Uburyo bwo gushyira nomero ku nyemezabwishyu:** Hano, ushobora guhitamo hagati ya kode y'icyerekezo cy'ubwishyu cyangwa uburyo bwa nomero zikurikirana. Nuhitamo gukoresha kode y'icyerekezo cy'ubwishyu ku nyemezabwishyu zawe, ntukeneye kugena ikindi kintu. Nuhitamo gukoresha uburyo bwa nomero zikurikirana, uzakenera kugena **nomero y'inyemezabwishyu ikurikira** (Iyi nomero izakoreshwa nka nomero y'inyemezabwishyu ku nyemezabwishyu ikurikira izakorwa na sisitemu. Yiyongeraho rimwe buri gihe inyemezabwishyu nshya ikozwe. Ushobora kuyihindura ukayibika kugira ngo usubize nomero zikurikirana z'inyemezabwishyu ku gaciro runaka) na **prefix ya nomero y'inyemezabwishyu.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Uburyo u gukoresha mga gateway:
+## Aho wasanga gateways: {#where-to-find-the-gateways}
 
-Woweza gutera mga payment gateways ku giheye ( **Ultimate Multisite > Settings > Payments**). Ku gukoresha mu kintu cyiza ku giheye **active payment gateways**, uza kubona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ n'Umuco.
+Ushobora gutunganya gateways z'ubwishyu kuri iyo paji imwe ( **Ultimate Multisite > Settings > Payments**). Hasi gato ya **active payment gateways** , uzashobora kubona: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ na _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Igice cya Active Payment Gateways kigaragaza Stripe, Stripe Checkout, PayPal na Manual](/img/config/payments-active-gateways.png)
 
-Dufite uburyo mu rwego rwa mbere ku giheye cyangwa gukoresha ibyo gateway byo mu gihe cyiza, hari ibindi byo gutandukanya. Hari article cy'ubwujubi kuri kila payment gateway kandi zizera uburyo bwo gutera ku giheye (settings) byo kuyikoresha, uza kubona mu link zizera hejuru.
+Dufite ingingo yihariye kuri buri buryo bwo kwishyura izakuyobora mu ntambwe zo kubutunganya, ushobora kuyisanga ku mahuza ari hasi.
 
-Uza kumenya no gukora ibindi byo payment:
+Ushobora kureba no guhindura ibisobanuro by'ubwishyu:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Imigaragarire yo guhindura ubwishyu](/img/admin/payment-edit.png)
 
-Hari uburyo bwo kubona no gutandukanya ibindi byo payment cyose:
+Dore uko ipaji yo guhindura ubwishyu igaragara yose:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Imigaragarire yose yo guhindura ubwishyu](/img/admin/payment-edit-full.png)
 
-Hari uburyo bwo kubona ibindi byo gateway byo payment cyose:
+Dore kandi uko igenamiterere rya gateways z'ubwishyu rigaragara ryose:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Ipaji yose y'igenamiterere rya gateways z'ubwishyu](/img/config/settings-payments-gateways-full.png)
 
-**Gukoresha Stripe gateway**
+**Gutunganya Stripe gateway**
 
-**Gukoresha PayPal gateway**
+**Gutunganya PayPal gateway**** **
 
-**Gukoresha uburyo bwo gukoresha ibindi (manual payments)**
+**Gutunganya ubwishyu bwo mu buryo bw'intoki**
 
-Ubu, niba wumva wifuza gukoresha _WooCommerce_ , _GoCardless_ cyangwa _Payfast_ nk'ibyo payment gateway yawe, uza gutegura no gukora ibi byo mu gihe **gukoresha no gutera add-ons (add-ons)** byo.
+Noneho, niba ushaka gukoresha _WooCommerce_ , _GoCardless_ cyangwa _Payfast_ nka gateway yawe y'ubwishyu, uzakenera **gushyiraho no kugena add-ons zabyo**.
 
-### Uburyo bwo gukoresha add-on ya WooCommerce:
+### Uko washyiraho WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
-Turagutera ko _Stripe_ n'Umuco ntizera mu gihe cyose, kandi ibyo bituma abantu bashobora gukoresha plugin yacu mu buryo bwiza. Buriwe mu Rwanda hari abantu bashyize add-ons kugira ngo bashobore gutegura ibindi payment gateways ku WooCommerce, ariko twagize uburyo bwo gukoresha ibyo byo kugira ngo twakoreshe ibi gateway byo mu gihe cyiza n'Ultimate Multisite billing system.
+Twumva ko _Stripe_ na _PayPal_ bitaboneka mu bihugu bimwe, ibyo bikagabanya cyangwa bikabangamira abakoresha Ultimate Multisite gukoresha plugin yacu neza. Ni yo mpamvu twakoze add-on yo guhuza _WooCommerce,_ ari yo plugin y'ubucuruzi bwo kuri internet ikunzwe cyane. Abatunganya porogaramu hirya no hino ku isi bakoze add-ons zo kuyihuza n'uburyo butandukanye bwo kwishyura. Twabyifashishije kugira ngo twagure gateways z'ubwishyu ushobora gukoresha hamwe na sisitemu yo kwishyuza ya Ultimate Multisite.
 
-**IMPORTANT:** Ultimate Multisite: WooCommerce Integration ikoresha ko WooCommerce yawe mu site yawe yakomeye.
+_**ICY'INGENZI:** Ultimate Multisite: WooCommerce Integration isaba ko WooCommerce iba ifunguye nibura ku rubuga rwawe nyamukuru._
 
-Muri uyu mwanya, ugenda ku page ya add-ons (add-ons). Uzi yashobora kugenda bishobora gukoresha **Ultimate Multisite > Settings**. Uza kubona table ya **Add-ons**. Gukoresha **Check our Add-ons**.
+Mbere na mbere, nyamuneka jya ku ipaji ya add-ons. Ushobora kuyibona ujya kuri **Ultimate Multisite > Settings**. Ugomba kubona imbonerahamwe ya **Add-ons**. Kanda kuri **Check our Add-ons**.
 
 <!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Ntabwo ugenda ku **Check our Add-ons**, uza gushyirwa mu page ya add-ons. Hano uzi yashobora kugonawe uyu mwezi wose wa Ultimate Multisite. Gukoresha add-on ya **Ultimate Multisite: WooCommerce Integration**.
+Nyuma yo gukanda kuri **Check our Add-ons** , uzoherezwa ku ipaji ya add-ons. Hano ushobora kubona add-ons zose za Ultimate Multisite. Kanda kuri add-on ya **Ultimate Multisite: WooCommerce Integration**.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Ipaji ya add-ons igaragaza add-ons za Ultimate Multisite harimo WooCommerce Integration](/img/addons/addons-page.png)
 
-Umwe mu window uzabone n'ibindi byo byo add-on. Uza gukoresha **Install Now**.
+Hazagaragara idirishya ririmo ibisobanuro by’inyongera. Kanda gusa kuri **Shyiramo Ubu**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Ishusho ntiboneka: Ikiganiro cy’ibisobanuro by’inyongera ya Ultimate Multisite WooCommerce Integration gifite buto ya Shyiramo Ubu -->
 
-Ntabwo uyu mwanya w'ubwujgwa, uza gushyirwa mu page ya plugins (plugins). Hano, gukoresha **Network Activate** kandi add-on ya WooCommerce izabone mu network yawe.
+Iyo gushyiramo birangiye, uzoherezwa ku rupapuro rwa plugins. Aha, kanda gusa kuri **Koresha kuri Network** maze inyongera ya WooCommerce ikorere kuri network yawe.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Ishusho ntiboneka: Urupapuro rwa plugins rufite ihuza rya Koresha kuri Network ry’inyongera ya WooCommerce Integration -->
 
-Ntabwo uza kubona ko nta plugin ya WooCommerce yari yashyiramo kandi yari yakomeye ku website yawe, uzabone umugisha w'ubwujgwa.
+Nyuma yo kuyikoresha, niba utarashyiramo kandi ngo ukoreshe plugin ya WooCommerce ku rubuga rwawe, uzabona ukwibutsa.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Ishusho ntiboneka: Itangazo rya admin ryibutsa umuyobozi gushyiramo no gukoresha plugin ya WooCommerce -->
 
-Kugira uburyo bwo gusoma uburyo bwo gukoresha add-on ya WooCommerce Integration, **gukoresha uyu link**.
+Kugira ngo usome ibindi ku nyongera ya WooCommerce Integration, **kanda hano**.
 
-### Uburyo bwo gukoresha add-on ya GoCardless:
+### Uko washyiramo inyongera ya GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Urugero mu gukoresha _GoCardless_ add-on ni mu gukoresha _WooCommerce_ add-on ni mu gukoresha. Urashyira ku rubuga rwo add-ons kandi wumva **Ultimate Multisite: GoCardless Gateway** add-on.
+Intambwe zo gushyiramo inyongera ya _GoCardless_ zisa cyane n’iz’inyongera ya _WooCommerce_. Nyamuneka jya ku rupapuro rw’inyongera maze uhitemo inyongera ya **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Ishusho ntiboneka: Urupapuro rw’inyongera rwerekana inyongera ya Ultimate Multisite GoCardless Gateway yashyizweho ikimenyetso -->
 
-Icyo cyo gukoresha add-on cyo mu gutangira kigira uburyo bwawe. Gukoresha **Install Now**.
+Idirishya ry’inyongera rizagaragara. Kanda kuri **Shyiramo Ubu**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Ishusho ntiboneka: Ikiganiro cy’ibisobanuro by’inyongera ya Ultimate Multisite GoCardless Gateway gifite buto ya Shyiramo Ubu -->
 
-Nyuma yo gukora, ubushobozi bwawe bwuzuye ku rubuga rwo plugins. Hano, gukoresha **Network Activate** kandi _GoCardless_ add-on izakoreshwa mu rwego rwawe.
+Iyo gushyiramo birangiye, uzoherezwa ku rupapuro rwa plugins. Aha, kanda gusa kuri **Koresha kuri Network** maze inyongera ya _GoCardless_ ikorere kuri network yawe.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Ishusho ntiboneka: Urupapuro rwa plugins rufite ihuza rya Koresha kuri Network ry’inyongera ya GoCardless Gateway -->
 
-Kugira ngo wumve uko ubatangira gukoresha _GoCardless_ gateway, **igawe uyu article**.
+Kugira ngo umenye uko watangira gukoresha irembo rya _GoCardless_, **soma iyi nkuru**.
 
-### Uburyo bwo gukoresha Payfast add-on:
+### Uko washyiramo inyongera ya Payfast: {#how-to-install-the-payfast-add-on}
 
-Urugero ku rubuga rwo add-ons kandi wumva **Ultimate Multisite: Payfast Gateway** add-on.
+Jya ku rupapuro rw’inyongera maze uhitemo inyongera ya **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Ishusho ntiboneka: Urupapuro rw’inyongera rwerekana inyongera ya Ultimate Multisite Payfast Gateway yashyizweho ikimenyetso -->
 
-Icyo cyo gukoresha add-on kigira uburyo bwawe. Gukoresha **Install Now**.
+Idirishya ry’inyongera rizagaragara. Kanda kuri **Shyiramo Ubu.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Ishusho ntiboneka: Ikiganiro cy’ibisobanuro by’inyongera ya Ultimate Multisite Payfast Gateway gifite buto ya Shyiramo Ubu -->
 
-Nyuma yo gukora, ubushobozi bwawe bwuzuye ku rubuga rwo plugins. Hano, gukoresha **Network Activate** kandi _Payfast_ add-on izakoreshwa mu rwego rwawe.
+Iyo gushyiramo birangiye, uzoherezwa ku rupapuro rwa plugins. Aha, kanda gusa kuri **Koresha kuri Network** maze inyongera ya _Payfast_ ikorere kuri network yawe.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Ishusho ntiboneka: Urupapuro rwa plugins rufite ihuza rya Koresha kuri Network ry’inyongera ya Payfast Gateway -->

@@ -3,7 +3,7 @@ title: Ngganti Rencana
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Ng-upgrade Rencana (v2)
+# Ng-upgrade Rencana (v2) {#upgrading-a-plan-v2}
 
 _**CATATAN PENTING: Artikel iki merujuk marang Ultimate Multisite versi 2.x.**_
 
@@ -41,7 +41,7 @@ Setelah pembayaran selesai, produk baru akan ditambahkan ke akun pelanggan Anda 
 
 ##
 
-## Jalur Upgrade dan Downgrade
+## Jalur Upgrade dan Downgrade {#upgrade-and-downgrade-paths}
 
 Di setiap produk Anda, Anda akan memiliki tab **Up & Downgrades**. Opsi pertama di tab itu adalah kolom bernama **Plan Group**.
 

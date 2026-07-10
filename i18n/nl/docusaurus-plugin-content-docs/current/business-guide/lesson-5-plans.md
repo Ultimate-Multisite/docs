@@ -3,15 +3,15 @@ title: 'Les 5: Het ontwerpen van uw plannen'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Les 5: Het Ontwerpen van Uw Plannen
+# Les 5: Het Ontwerpen van Uw Plannen {#lesson-5-designing-your-plans}
 
 Uw planlagen zijn meer dan alleen prijsniveaus – ze zijn een weerspiegeling van hoe uw nicheklanten daadwerkelijk werken. In deze les ontwerpt u productlagen die aansluiten bij de echte behoeften van fitnessbedrijven in verschillende stadia.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 FitSite heeft drie templates klaarstaan (Studio Essential, Gym Pro, Fitness Chain). Nu creëren we de plannen die bepalen waarop klanten toegang krijgen en wat ze betalen.
 
-## Denken in Klachtensegmenten
+## Denken in Klachtensegmenten {#thinking-in-customer-segments}
 
 De fout die de meeste mensen maken, is het ontwerpen van plannen rond technische functies (opslag, bandbreedte, aantal pagina's). Uw nicheklanten denken niet in die termen. Een sportschooleigenaar denkt na over wat ze nodig hebben om hun bedrijf te laten draaien.
 
@@ -25,11 +25,11 @@ Voor fitnessstudio's bestaan er drie natuurlijke segmenten:
 
 Uw plannen moeten hierop gebaseerd zijn, en niet op willekeurige functiegroepen.
 
-## Het Creëren van de FitSite Plannen
+## Het Creëren van de FitSite Plannen {#creating-the-fitsite-plans}
 
 Navigeer naar **Ultimate Multisite > Products > Add Product** voor elk plan.
 
-### Plan 1: FitSite Starter -- $49/maand
+### Plan 1: FitSite Starter -- $49/maand {#plan-1-fitsite-starter----49month}
 
 **Doelgroep**: Solo trainers en kleine studio's
 
@@ -59,7 +59,7 @@ Navigeer naar **Ultimate Multisite > Products > Add Product** voor elk plan.
 - Uw geselecteerde thema: Force Activate
 - Alle andere thema's: Hidden
 
-### Plan 2: FitSite Growth -- $99/maand
+### Plan 2: FitSite Growth -- $99/maand {#plan-2-fitsite-growth----99month}
 
 **Doelgroep**: Gevestigde sportscholen op één locatie
 
@@ -85,7 +85,7 @@ Navigeer naar **Ultimate Multisite > Products > Add Product** voor elk plan.
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/maand
+### Plan 3: FitSite Pro -- $199/maand {#plan-3-fitsite-pro----199month}
 
 **Doelgroep**: Fitnessketens met meerdere locaties
 
@@ -109,7 +109,7 @@ Navigeer naar **Ultimate Multisite > Products > Add Product** voor elk plan.
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Het Instellen van de Plan Groep
+## Het Instellen van de Plan Groep {#setting-up-the-plan-group}
 
 De plan groep zorgt ervoor dat klanten alleen binnen de FitSite planfamilie kunnen upgraden of downgraden. Op de **Up & Downgrades** tab van elk plan:
 
@@ -118,7 +118,7 @@ De plan groep zorgt ervoor dat klanten alleen binnen de FitSite planfamilie kunn
 
 Dit creëert een duidelijke upgrade-route: Starter → Growth → Pro.
 
-## Het Toevoegen van Aankoopaanvullingen (Order Bumps)
+## Het Toevoegen van Aankoopaanvullingen (Order Bumps) {#adding-order-bumps}
 
 Aankoopaanvullingen zijn add-on producten die tijdens het afrekenproces worden aangeboden. Voor FitSite kunt u overwegen:
 
@@ -128,7 +128,7 @@ Aankoopaanvullingen zijn add-on producten die tijdens het afrekenproces worden a
 
 Maak deze aan als producten van type **Package** in Ultimate Multisite en koppel ze aan de relevante plannen.
 
-## Waarom Deze Structuur Werkt
+## Waarom Deze Structuur Werkt {#why-this-structure-works}
 
 - **Starter** verwijdert drempels: lage prijs, eenvoudig aanbod, brengt trainers snel online
 - **Growth** voegt de functies toe waar sportscholen daadwerkelijk om vragen: boeking, galerijen, custom domains
@@ -136,7 +136,7 @@ Maak deze aan als producten van type **Package** in Ultimate Multisite en koppel
 - **Aankoopaanvullingen** stellen klanten in staat om te personaliseren zonder de kernplannen te compliceren
 - **Duidelijke upgrade-route** betekent dat klanten met u groeien in plaats van weg te vallen
 
-## Het FitSite Netwerk Tot Nu Toe
+## Het FitSite Netwerk Tot Nu Toe {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Klaar voor checkout configuratie (volgende les)
 ```
 
-## Wat We Deze Les Hebben Gebouwd
+## Wat We Deze Les Hebben Gebouwd {#what-we-built-this-lesson}
 
 - **Drie planlagen** gekoppeld aan echte fitnessbedrijfssegmenten
 - **Functionaliteitsbeperking** met de plugin- en templatecontroles van Ultimate Multisite

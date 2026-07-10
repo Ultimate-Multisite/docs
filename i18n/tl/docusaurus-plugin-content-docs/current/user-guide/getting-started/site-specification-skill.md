@@ -3,11 +3,11 @@ title: Mga Espesipikasyon ng Site Kasanayan
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kasan ng Kakayahan sa Site Specification
+# Kasan ng Kakayahan sa Site Specification {#site-specification-skill}
 
 Ang **Site Specification skill** ay isang structured na paraan para makuha ang mga layunin, audience, at pagkakakilanlan ng brand ng iyong site. Ang impormasyong ito ay naka-store sa iyong **site_brief memory**, na ginagamit ng mga agent sa iba't ibang sesyon para magbigay ng pare-pareho at kontekstwal na tulong.
 
-## Ano ang Site Specification?
+## Ano ang Site Specification? {#what-is-site-specification}
 
 Ang Site Specification ay ang proseso ng pagdodokumento ng:
 
@@ -19,9 +19,9 @@ Ang Site Specification ay ang proseso ng pagdodokumento ng:
 
 Ang spesipikasyong ito ay nagiging iyong **site_brief**, isang persistent memory na ginagamit ng mga agent para maintindihan ang konteksto ng iyong site.
 
-## Bakit Gumamit ng Site Specification?
+## Bakit Gumamit ng Site Specification? {#why-use-site-specification}
 
-### Pagkakapare-pareho sa Bawat Sesyon (Consistency Across Sessions)
+### Pagkakapare-pareho sa Bawat Sesyon (Consistency Across Sessions) {#consistency-across-sessions}
 
 Kung wala kang site_brief, kailangan mong ulitin ang paliwanag tungkol sa layunin ng iyong site sa bawat simula ng bagong sesyon. Sa pamamagitan nito, agad na naiintindihan ng mga agent:
 
@@ -30,7 +30,7 @@ Kung wala kang site_brief, kailangan mong ulitin ang paliwanag tungkol sa layuni
 - Ang istruktura ng iyong nilalaman
 - Ang mga layuning pangnegosyo mo
 
-### Mas Magagandang Rekomendasyon (Better Recommendations)
+### Mas Magagandang Rekomendasyon (Better Recommendations) {#better-recommendations}
 
 Ginagamit ng mga agent ang iyong site_brief para:
 
@@ -39,17 +39,17 @@ Ginagamit ng mga agent ang iyong site_brief para:
 - Magmungkahi ng mga disenyo na tugma sa iyong brand
 - Iwasan ang pagmumungkahi ng mga feature na hindi bagay
 
-### Mas Mabilis na Pagsisimula (Faster Onboarding)
+### Mas Mabilis na Pagsisimula (Faster Onboarding) {#faster-onboarding}
 
 Maaaring mabilis na makasabay ang mga bagong agent (o mga agent sa bagong sesyon) sa pamamagitan ng pagbabasa ng iyong site_brief sa halip na magtanong ng mga nagpapalinaw.
 
-## Pagpapasimula ng Site Specification
+## Pagpapasimula ng Site Specification {#initiating-site-specification}
 
-### Habang Nag-o-onboard sa Theme Builder
+### Habang Nag-o-onboard sa Theme Builder {#during-theme-builder-onboarding}
 
 Ang Site Specification skill ay awtomatikong nagsisimula habang nasa **Theme Builder onboarding flow** ka. Ang Setup Assistant agent ang magtatanong at bubuo ng iyong site_brief.
 
-### Manual na Pagsisimula
+### Manual na Pagsisimula {#manual-initiation}
 
 Magsimula ka sa Site Specification anumang oras:
 
@@ -63,9 +63,9 @@ o
 "Tulungan mo akong gumawa ng site brief"
 ```
 
-## Ang Proseso ng Site Specification
+## Ang Proseso ng Site Specification {#the-site-specification-process}
 
-### Hakbang 1: Layunin ng Site (Site Purpose)
+### Hakbang 1: Layunin ng Site (Site Purpose) {#step-1-site-purpose}
 
 Itatanong ng agent:
 
@@ -81,7 +81,7 @@ Ano ang pangunahing layunin ng iyong site?
 
 Maaari kang pumili ng kategorya o ilarawan ang sarili mong layunin.
 
-### Hakbang 2: Target na Audience (Target Audience)
+### Hakbang 2: Target na Audience (Target Audience) {#step-2-target-audience}
 
 ```
 Sino ang pangunahing audience mo?
@@ -94,7 +94,7 @@ Sino ang pangunahing audience mo?
 Ano ang kanilang mga pangunahing pangangailangan?
 ```
 
-### Hakbang 3: Pagkakakilanlan ng Brand (Brand Identity)
+### Hakbang 3: Pagkakakilanlan ng Brand (Brand Identity) {#step-3-brand-identity}
 
 ```
 Ano ang mga kulay ng iyong brand?
@@ -110,7 +110,7 @@ Paano mo ilalarawan ang tono ng iyong brand?
 - Mainit / palakaibigan
 ```
 
-### Hakbang 4: Mga Layunin sa Negosyo (Business Goals)
+### Hakbang 4: Mga Layunin sa Negosyo (Business Goals) {#step-4-business-goals}
 
 ```
 Ano ang hitsura ng tagumpay para sa iyong site?
@@ -129,7 +129,7 @@ Ano ang iyong pangunahing metric (sukatan)?
 - Iba pa
 ```
 
-### Hakbang 5: Estruktura ng Nilalaman (Content Structure)
+### Hakbang 5: Estruktura ng Nilalaman (Content Structure) {#step-5-content-structure}
 
 ```
 Paano nakaayos ang iyong nilalaman?
@@ -148,13 +148,13 @@ Anong mga uri ng content ang ginagamit mo?
 - Iba pa
 ```
 
-## Ang Memorya ng iyong site_brief
+## Ang Memorya ng iyong site_brief {#your-sitebrief-memory}
 
 Pagkatapos makumpleto ang Site Specification, ang impormasyon mo ay iniimbak bilang **site_brief** sa memorya ng iyong agent. Ito ay isang structured na talaang naglalaman ng:
 
-## Pagtingin at Pag-update ng iyong site_brief
+## Pagtingin at Pag-update ng iyong site_brief {#viewing-and-updating-your-sitebrief}
 
-### Tingnan ang iyong site_brief
+### Tingnan ang iyong site_brief {#view-your-sitebrief}
 
 Tanungin ang agent:
 
@@ -170,7 +170,7 @@ o
 
 Ipapakita ng agent ang iyong nakaimbak na detalye.
 
-### I-update ang iyong site_brief
+### I-update ang iyong site_brief {#update-your-sitebrief}
 
 Kung nagbabago ang iyong site, maaari mo itong i-update:
 
@@ -186,9 +186,9 @@ o
 
 Muling tatakbo nito ang Site Specification skill gamit ang kasalukuyang impormasyon mo bilang panimulang punto.
 
-## Paano Ginagamit ng mga Agent ang site_brief
+## Paano Ginagamit ng mga Agent ang site_brief {#how-agents-use-sitebrief}
 
-### Mga Rekomendasyon sa Disenyo (Design Recommendations)
+### Mga Rekomendasyon sa Disenyo (Design Recommendations) {#design-recommendations}
 
 Kapag humingi ka ng pagbabago sa disenyo, binabanggit ng mga agent ang iyong site_brief:
 
@@ -199,7 +199,7 @@ na may mainit at artisanal na tono. Gagawan ko ng disenyo na magbibigay-diin
 sa iyong mga handmade jewelry at mga halaga ng sustainability."
 ```
 
-### Mga Mungkahi sa Feature (Feature Suggestions)
+### Mga Mungkahi sa Feature (Feature Suggestions) {#feature-suggestions}
 
 Nagmumungkahi ang mga agent ng mga feature na naaayon sa iyong mga layunin:
 
@@ -210,23 +210,23 @@ irekomenda ko: loyalty program, customer reviews, email newsletter,
 at product recommendations."
 ```
 
-### Estruktura ng Nilalaman (Content Structure)
+### Estruktura ng Nilalaman (Content Structure) {#content-structure}
 
 Iminumungkahi ng mga agent ang pag-oorganisa ng nilalaman batay sa iyong istraktura:
 
 Paano ko dapat ayusin ang aking blog?
 Magsisimula ako sa pag-oorganisa ng mga post ayon sa kategorya ng produkto at gumawa ng mga 'styling guide' na nagpapakita ng maraming produkto nang magkakasama.
 
-## Mga Pinakamahusay na Pamamaraan (Best Practices)
+## Mga Pinakamahusay na Pamamaraan (Best Practices) {#best-practices}
 
-### Maging Espesipiko
+### Maging Espesipiko {#be-specific}
 
 Imbes na "pangkalahatang mambabasa," ilarawan ang iyong aktuwal na audience:
 
 - ✓ "Mga kababaihan na nasa edad 25-45, interesado sa sustainable fashion"
 - ✗ "Lahat ng tao"
 
-### Mag-update nang Regular
+### Mag-update nang Regular {#update-regularly}
 
 Habang nagbabago ang iyong site, i-update ang iyong `site_brief`:
 
@@ -235,14 +235,14 @@ Habang nagbabago ang iyong site, i-update ang iyong `site_brief`:
 - Kapag nagbago ang pagkakakilanlan ng iyong brand
 - Kapag nagbago ang mga layunin ng iyong negosyo
 
-### Gumamit ng Parehong Terminolohiya
+### Gumamit ng Parehong Terminolohiya {#use-consistent-terminology}
 
 Gumamit ng parehong salita sa lahat ng pagkakataon:
 
 - ✓ Palaging sabihin ang "sustainable jewelry" (hindi "eco-friendly jewelry" at "green products")
 - ✓ Patuloy na tukuyin ang iyong audience sa parehong paraan
 
-### Magbigay ng Konteksto
+### Magbigay ng Konteksto {#include-context}
 
 Magbigay ng background na makakatulong sa mga agent na maintindihan ang iyong mga desisyon:
 
@@ -250,7 +250,7 @@ Magbigay ng background na makakatulong sa mga agent na maintindihan ang iyong mg
 - "Ang ating audience ay tech-savvy at inaasahan ang modernong disenyo"
 - "Kami ay isang bootstrapped startup, kaya kailangan namin ng mga solusyong cost-effective"
 
-## Kaugnayan sa Theme Builder Onboarding
+## Kaugnayan sa Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Ang Site Specification skill ay pinagsama sa **Theme Builder onboarding flow**. Kapag natapos mo ang onboarding, awtomatikong gagawin ang iyong `site_brief` gamit ang impormasyong ibinigay mo.
 
@@ -260,7 +260,7 @@ Maaari mo ring patakbuhin ang Site Specification nang mag-isa kung gusto mo:
 - I-update ang iyong site brief habang nagbabago ang iyong site
 - Gumawa ng detalyadong specification bago magsimula sa Theme Builder
 
-## Pag-troubleshoot (Troubleshooting)
+## Pag-troubleshoot (Troubleshooting) {#troubleshooting}
 
 **Hindi ginagamit ang aking `site_brief`**
 - Siguraduhin na may access ang agent sa memorya
@@ -276,7 +276,7 @@ Maaari mo ring patakbuhin ang Site Specification nang mag-isa kung gusto mo:
 - I-update ang iyong site\_brief kung ito ay luma na
 - Magbigay ng karagdagang konteksto sa iyong mga request
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
 Pagkatapos mong tukuyin ang iyong site specification:
 

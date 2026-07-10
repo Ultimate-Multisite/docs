@@ -4,11 +4,11 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 जब कोई ऑब्जेक्ट डेटाबेस में स्टोर हो जाता है, तो यह एक्शन ट्रिगर होता है।
 
-## पैरामीटर्स
+## पैरामीटर्स {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 | $this | `\Base_Model` | ऑब्जेक्ट का इंस्टेंस। |
 | $new | `bool` | यदि ऑब्जेक्ट नया है तो True। |
 
-### कब से उपलब्ध
+### कब से उपलब्ध {#since}
 
 - 2.0.0
-### स्रोत
+### स्रोत {#source}
 
 - [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) में लाइन 624 पर परिभाषित
 - [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) में लाइन 1754 पर परिभाषित

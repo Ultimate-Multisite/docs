@@ -1,26 +1,26 @@
 ---
 title: Sunrise-bestandsfout
 sidebar_position: 12
-_i18n_hash: eec4276c1954a7f93d6d71ef2b15f106
+_i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fout bij het installeren van het Sunrise-bestand
+# Fout bij het installeren van het Sunrise-bestand {#error-installing-the-sunrise-file}
 
-Het **sunrise.php**-bestand is een speciaal bestand waar WordPress naar zoekt tijdens het opstarten. Om WordPress het **sunrise.php**-bestand te laten detecteren, moet het zich bevinden in de **wp-content folder**.
+Het sunrise.php-bestand is een speciaal bestand waar WordPress naar zoekt terwijl het zichzelf opstart. Om WordPress het sunrise.php-bestand te laten detecteren, moet het zich in de **wp-content-map** bevinden.
 
-Wanneer je Ultimate Multisite activeert en door de installatiewizard gaat zoals op de screenshot, probeert Ultimate Multisite ons **sunrise.php**-bestand naar de **wp-content folder** te kopiëren.
+Wanneer je Ultimate Multisite activeert en de installatiewizard doorloopt zoals die op de schermafbeelding, probeert Ultimate Multisite ons sunrise.php-bestand naar de wp-content-map te kopiëren.
 
-<!-- Screenshot unavailable: Setup wizard page showing sunrise.php installation step -->
+<!-- Schermafbeelding niet beschikbaar: pagina van de installatiewizard met installatiestap voor sunrise.php -->
 
-Meestal kunnen we het bestand succesvol kopiëren en werkt alles. Als echter iets niet correct is ingesteld (bijvoorbeeld maprechten), kun je een situatie tegenkomen waarin Ultimate Multisite het bestand niet kan kopiëren.
+Meestal kunnen we het bestand succesvol kopiëren en werkt alles. Als er echter iets niet goed is ingesteld (maprechten, bijvoorbeeld), kun je in een situatie terechtkomen waarin Ultimate Multisite het bestand niet kan kopiëren.
 
-Als je het foutbericht leest dat Ultimo je geeft, zie je dat dit precies is wat hier gebeurde: **Sunrise copy failed**.
+Als je de foutmelding leest die Ultimo je geeft, zie je dat dit precies is wat hier is gebeurd: **Kopiëren van Sunrise mislukt**.
 
-<!-- Screenshot unavailable: Error message showing Sunrise copy failed -->
+<!-- Schermafbeelding niet beschikbaar: foutmelding met Kopiëren van Sunrise mislukt -->
 
-Om dit op te lossen, kun je het **sunrise.php**-bestand simpelweg kopiëren vanuit de **wp-ultimo plugin folder** en het in je **wp-content folder** plakken. Nadat je dat hebt gedaan, laad je de wizardpagina opnieuw en moeten de controles slagen.
+Om dat op te lossen, kun je eenvoudig het sunrise.php-bestand in de wp-ultimo pluginmap kopiëren en in je wp-content-map plakken. Nadat je dat hebt gedaan, laad je de wizardpagina opnieuw en zouden de controles moeten slagen.
 
-<!-- Screenshot unavailable: File manager showing sunrise.php inside wp-ultimo plugin folder --> In any case, this might warrant a general check of your folder permissions to avoid having problems in the future (not only with Ultimate Multisite but with other plugins and themes as well).
+<!-- Schermafbeelding niet beschikbaar: bestandsbeheerder met sunrise.php in de wp-ultimo pluginmap --> Hoe dan ook kan dit een algemene controle van je maprechten rechtvaardigen om problemen in de toekomst te voorkomen (niet alleen met Ultimate Multisite, maar ook met andere plugins en themes).
 
-De **Health Check tool** die onderdeel is van WordPress (je kunt er via je hoofdsite **admin panel > Tools > Health Check** bij) kan je laten weten of je maprechten zijn ingesteld op waarden die problemen met WordPress kunnen veroorzaken.
+Het **Sitediagnose-tool** dat deel uitmaakt van WordPress (je kunt het openen via het **beheerpaneel > Gereedschap > Sitediagnose** van je hoofdsite) kan je laten weten of je maprechten hebt ingesteld op waarden die problemen met WordPress kunnen veroorzaken.
 
-<!-- Screenshot unavailable: WordPress Health Check tool showing folder permissions status -->
+<!-- Schermafbeelding niet beschikbaar: WordPress Sitediagnose-tool met status van maprechten -->

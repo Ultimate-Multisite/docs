@@ -3,17 +3,17 @@ title: 'Pelajaran 9: Penetapan Harga untuk Keuntungan'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Pelajaran 9: Penetapan Harga untuk Keuntungan
+# Pelajaran 9: Penetapan Harga untuk Keuntungan {#lesson-9-pricing-for-profit}
 
 Dalam Pelajaran 5, kita telah menetapkan harga awal untuk pelan FitSite. Kini, kita akan menyempurnakan strategi penetapan harga dengan teknik yang dapat meningkatkan pendapatan, menggalakkan peningkatan pakej (upgrade), dan mengurangkan kadar pelanggan berhenti (churn).
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 FitSite kini mempunyai pelan, templat, checkout, branding, dan onboarding yang lengkap. Penetapan harga awal adalah $49/$99/$199 sebulan. Kini, kita akan membuat penetapan harga itu berfungsi dengan lebih baik.
 
-## Prinsip Penetapan Harga untuk Platform Niche
+## Prinsip Penetapan Harga untuk Platform Niche {#pricing-principles-for-niche-platforms}
 
-### Harga Berdasarkan Nilai, Bukan Kos
+### Harga Berdasarkan Nilai, Bukan Kos {#price-on-value-not-cost}
 
 Kos hosting anda mungkin antara $5-$15 bagi setiap tapak pelanggan. Itu tidak bermakna harga anda harus $20. Anda tidak menjual hosting. Anda menjual:
 
@@ -24,7 +24,7 @@ Kos hosting anda mungkin antara $5-$15 bagi setiap tapak pelanggan. Itu tidak be
 
 Tetapkan harga berdasarkan nilai yang anda berikan, bukan kos untuk menyediakannya.
 
-### Kaitkan dengan Alternatif
+### Kaitkan dengan Alternatif {#anchor-to-alternatives}
 
 Apabila pemilik studio kecergasan menilai FitSite, mereka akan membandingkannya dengan:
 
@@ -34,7 +34,7 @@ Apabila pemilik studio kecergasan menilai FitSite, mereka akan membandingkannya 
 
 Pada harga $49-$199/bulan, FitSite lebih murah daripada web developer, lebih berupaya daripada pembina generik, dan jauh lebih baik daripada tidak mempunyai laman web langsung.
 
-## Melaksanakan Variasi Harga
+## Melaksanakan Variasi Harga {#implementing-price-variations}
 
 Penetapan harga tahunan menggalakkan komitmen dan mengurangkan kadar pelanggan berhenti (churn). Navigasi ke tab **Price Variations** bagi setiap pelan dan tambahkan pilihan tahunan:
 
@@ -46,12 +46,12 @@ Penetapan harga tahunan menggalakkan komitmen dan mengurangkan kadar pelanggan b
 
 Tambahkan medan **Period Selection** pada borang checkout anda supaya pelanggan boleh menukar antara bil bulanan dan tahunan. Lihat [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Mengapa Penetapan Harga Tahunan Berkesan
+### Mengapa Penetapan Harga Tahunan Berkesan {#why-annual-pricing-works}
 
 - **Untuk anda**: Tunai pendahuluan, kadar churn yang lebih rendah (pelanggan yang membayar tahunan kurang berkemungkinan membatalkan di tengah tempoh)
 - **Untuk mereka**: Penjimatan sebenar, jangkaan bajet yang boleh diramal
 
-## Yuran Persediaan (Setup Fees)
+## Yuran Persediaan (Setup Fees) {#setup-fees}
 
 Pertimbangkan yuran persediaan sekali bayar untuk pelan yang merangkumi konfigurasi secara manual:
 
@@ -61,7 +61,7 @@ Pertimbangkan yuran persediaan sekali bayar untuk pelan yang merangkumi konfigur
 
 Konfigurasikan yuran persediaan pada bahagian harga setiap pelan. Lihat [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) untuk butiran lanjut.
 
-## Tempoh Percubaan (Trial Periods)
+## Tempoh Percubaan (Trial Periods) {#trial-periods}
 
 Menawarkan tempoh percubaan mengurangkan geseran pendaftaran tetapi memperkenalkan risiko tidak bertukar kepada pelanggan berbayar. Untuk FitSite:
 
@@ -70,11 +70,11 @@ Menawarkan tempoh percubaan mengurangkan geseran pendaftaran tetapi memperkenalk
 
 Konfigurasikan percubaan pada bahagian harga pelan Starter dengan mengaktifkan toggle **Offer Trial** dan menetapkan tempoh kepada 7 hari.
 
-### Membuat Percubaan Berjaya
+### Membuat Percubaan Berjaya {#making-trials-convert}
 
 Percubaan hanya akan berfungsi jika pelanggan mengalami nilai sepanjang tempoh percubaan. Urutan onboarding anda (Pelajaran 8) sangat penting di sini — e-mel selamat datang harus dijadualkan untuk mendorong penglibatan dalam tempoh 7 hari.
 
-## Kod Diskaun (Discount Codes)
+## Kod Diskaun (Discount Codes) {#discount-codes}
 
 Cipta kod diskaun strategik untuk tujuan tertentu:
 
@@ -88,7 +88,7 @@ Navigasi ke **Ultimate Multisite > Discount Codes** untuk mencipta ini. Lihat [C
 Diskaun harus menjadi alat strategik, bukan kemudahan kekal. Jika semua orang mendapat diskaun, itu bukan diskaun — itu harga sebenar anda. Gunakannya untuk kempen, rujukan, dan promosi terhad masa tertentu.
 :::
 
-## Pengendalian Cukai (Tax Handling)
+## Pengendalian Cukai (Tax Handling) {#tax-handling}
 
 Jika anda beroperasi di bidang kuasa yang memerlukan kutipan cukai:
 
@@ -98,7 +98,7 @@ Jika anda beroperasi di bidang kuasa yang memerlukan kutipan cukai:
 
 Lihat [Tax Handling](/user-guide/payment-gateways/tax-handling) untuk konfigurasi terperinci. Jika anda melayani pelanggan antarabangsa, pertimbangkan [VAT addon](/addons/vat) untuk pematuhan EU.
 
-## Menyemak Penetapan Harga Anda
+## Menyemak Penetapan Harga Anda {#reviewing-your-pricing}
 
 Selepas pelancaran, semak semula penetapan harga setiap suku tahun. Perhatikan:
 
@@ -107,7 +107,7 @@ Selepas pelancaran, semak semula penetapan harga setiap suku tahun. Perhatikan:
 - **Churn mengikut pelan**: Jika pelanggan tahunan kurang churn, galakkan penetapan harga tahunan dengan lebih kuat
 - **Harga pesaing**: Berapa yang dikenakan oleh alternatif? Adakah anda berada pada kedudukan yang betul?
 
-## Rangkaian FitSite Setakat Ini
+## Rangkaian FitSite Setakat Ini {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Apa Yang Kita Bina Dalam Pelajaran Ini
+## Apa Yang Kita Bina Dalam Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Penetapan harga tahunan** dengan diskaun 20% untuk menggalakkan komitmen
 - **Yuran persediaan** pada peringkat yang lebih tinggi untuk menampung usaha onboarding

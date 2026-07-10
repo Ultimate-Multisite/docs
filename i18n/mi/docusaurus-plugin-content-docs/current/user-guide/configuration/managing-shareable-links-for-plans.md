@@ -3,7 +3,7 @@ title: Kaitiakitanga o Whakawhanaungatanga i Tāwhiri
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Whakawhanaungatanga me Link Shareable mō Rapa
+# Whakawhanaungatanga me Link Shareable mō Rapa {#managing-shareable-links-for-plans}
 
 Mahere Ultimate Multisite e tino whai ake ana i koe ki te share plan links akorua ki ngā wakamahi ahau. Ko te whakamahi i tēnei, pēnei i te, go te mana i ngā puta mai o ngā mahere ahau, he rātou i te whakarite i te _Click to copy the Shareable Link_ button.
 

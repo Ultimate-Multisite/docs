@@ -1,40 +1,46 @@
 ---
-title: Konfigurazioaren referentzia
+title: Ezarpenen erreferentzia
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Konfigurazioa Errekontzat
+# Ezarpenen erreferentzia {#settings-reference}
 
-Hau lapuak erregistro egiten du konfiguratura hauek dira, zein iragailu-egun administrazioan eta Ultimate Multisite-aren lehen erregistroetan (recent behaviour changes) erabil daitezkeen.
+Orrialde honek Ultimate Multisite-ren eguneroko administrazioari eragiten dioten ezarpenak eta azken portaera-aldaketak jasotzen ditu.
 
-## Beste Opzioak
+## Beste aukera batzuk {#other-options}
 
-**Beste Opzioak** (Other Options) lekuak eratu da **Ultimate Multisite > Settings > Login & Registration**-aren ondorioz.
+**Beste aukera batzuk** eremua **Ultimate Multisite > Ezarpenak > Saio-hasiera eta erregistroa** atalean agertzen da.
 
-| Konfigurazioa | Deskribapena |
+| Ezarpena | Deskribapena |
 |---|---|
-| **Enable Jumper** | Erakunde administrazioan Jumper quick navigation aletia erakusten du. Ultimate Multisite-ren ekranetara, network object-etara eta suportatutako admin bide-etara direktu zuzenean iragailu dituzte. Hau ez badute nahi baizik lehen bidea (shortcut) erakusteko. Hau ez badute nahi baizik. |
+| **Gaitu Jumper** | Jumper nabigazio azkarreko tresna erakusten du administrazio-eremuan. Erabili Ultimate Multisite pantailatara, sareko objektuetara eta onartutako administrazio-helmugetara zuzenean joateko. Desgaitu lasterbide hau ikusgai egotea nahi ez baduzu. |
 
-## Erreur reporting eta telemetrya
+## Erroreen berri ematea eta telemetria {#error-reporting-and-telemetry}
 
-Lehen erregistroan dagoen error reporting opt-in konfiguraturaa konfigurazioa lapuanaren ondorioz arau da. Anonimo telemetrya ez daiteke erabiltzea eta hori aktiboa egiteko UI toggle bat ez da.
+Aurreko erroreen berri emateko baimen-eskaeraren ezarpena kendu da ezarpenen orrialdetik. Telemetria anonimoa desgaituta dago, eta ez dago hura gaitzeko UI etengailurik.
 
-Konfigurazioa lapuanako internal runbooks edo screenshot-ek du, lehen error reporting opt-in lekuak erregistroak aldatu, administrazioak ez badute konfiguratura bat bilatzen duen.
+Ezarpenen orrialderako barneko runbook-ak edo pantaila-argazkiak mantentzen badituzu, kendu erroreen berri emateko baimen-eskaeraren eremu zaharrari egindako erreferentziak, administratzaileek jada ez dagoen ezarpen bat bila ez dezaten.
 
-## Import/Export konfiguratura hauek
+## Inportazio/esportazio ezarpenak {#importexport-settings}
 
-**Import/Export** (Import/Export) tab-ek deskribatzen du zein konfigurazioak kontrolatzen ditu eta site eta network arkiduak (archives) beste Ultimate Multisite > Site Export-era direktu egiten du. Import/export konfiguratura egiteko konfiguratura tab-ek eratu, single-site export/import workflow-eko **Tools > Export & Import**-a erabiltu, eta Network Export arkidu bat behar dutenean Site Export aletia erabiltu.
+**Inportazioa/esportazioa** ezarpenen fitxak zer ezarpen kontrolatzen dituen deskribatzen du, eta zuzenean estekatzen du **Ultimate Multisite > Gunearen esportazioa** atalera, gune eta sare artxiboetarako. Erabili ezarpenen fitxa inportazio/esportazio konfiguraziorako, erabili **Tresnak > Esportatu eta inportatu** gune bakarreko esportazio/inportazio lan-fluxurako, eta erabili Gunearen esportazioa tresna Sarearen esportazio artxibo oso bat behar duzunean.
 
-## AI provider connector konfigurazioak
+## Domain Seller HostAfrica saldo-oharra {#domain-seller-hostafrica-balance-warning}
 
-AI provider connector konfigurazioak orain suportatutako OAuth account pools-ek diartzen du:
+Domain Seller addona HostAfrica-rekin konektatuta dagoenean, sareko administratzaileek orain bazter daitekeen saldo baxuaren ohar bat ikusten dute, reseller kontuaren saldoa domeinu-erregistro edo berritze prozesamendu fidagarrirako baxuegia denean.
 
-| Provedor | Konfigurazioa |
+Hartu ohar hau eragiketa-ohar gisa: kargatu HostAfrica reseller saldoa ordainpeko domeinu-erregistro gehiago onartu aurretik; ondoren, itzuli Domain Seller ezarpenetara edo domeinu-monitorizazio pantailara, erregistroek eta berritzeek normaltasunez jarrai dezaketela berresteko.
+
+## AI hornitzailearen konektore-ezarpenak {#ai-provider-connector-settings}
+
+AI hornitzaileen konektore-ezarpenek orain onartutako OAuth kontu-poolak bakarrik erakusten dituzte:
+
+| Hornitzailea | Konfigurazio-fluxua |
 |---|---|
-| **Anthropic Max** | Konektatu bat edo gehiago Anthropic Max kontuak OAuth botoi erabiliz. Sandboxed browserra automatikoki redirekta ez duenean, manual OAuth alternatiboa eratu. |
-| **OpenAI ChatGPT/Codex** | ChatGPT kontuak OAuth pool workflow-a bestela konektatu. Kontu konektatuta gabe operazioakaren bitartean, ChatGPT Codex tool calls-ek erabiliko da connector-ek suportatzen duen operazioak. |
-| **Google AI Pro** | Google AI Pro kontuak OAuth botoi erabiliz konektatu, eta kontu listak hemen ez update dira, connector-a refresh egin behar duzu. |
+| **Anthropic Max** | Konektatu Anthropic Max kontu bat edo gehiago OAuth botoiarekin. Erabili eskuzko OAuth ordezko aukera sandboxed nabigatzaile batek birbideratzea automatikoki osatu ezin duenean. |
+| **OpenAI ChatGPT/Codex** | Konektatu ChatGPT kontuak OAuth pool lan-fluxu beraren bidez. Konektoreak onartutako eragiketek ChatGPT Codex tresna-deiak erabil ditzakete kontua konektatu ondoren. |
+| **Google AI Pro** | Konektatu Google AI Pro kontuak OAuth bidez; ondoren, freskatu konektorea kontu-zerrenda berehala eguneratzen ez bada. |
 
-Cursor Pro a lasa suportatutako provedor bat ez da. Cursor Pro setup field edo connector path-ek referentzia duen batzuak, runbook-ak edo onboarding etapak ezberdinetan hartu.
+Cursor Pro jada ez da onartutako hornitzailea. Kendu Cursor Pro konfigurazio-eremuak edo konektore-bideak aipatzen dituzten barneko pantaila-argazki zaharrak, runbook-ak edo onboarding urratsak.
 
-Provedor kontuak gehitu edo lekuitzea, refresh egin behar duguna edo hartu kontuari email adresa bat eratu eta connector-backed operazioak jarteliac baino lehen konfiguratura hauek salduzu.
+Hornitzaile-kontuak gehitzean edo kentzean, sartu freskatu edo ezabatu beharreko kontuaren baliozko helbide elektroniko bat, eta gorde hornitzailearen ezarpenak konektoreak babestutako eragiketak probatu aurretik.

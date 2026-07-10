@@ -4,11 +4,11 @@ title: フィルタ - wu_rest_update_item
 sidebar_label: wu_rest_update_item
 _i18n_hash: 46a659e3004edbe285434103f81bd733
 ---
-# フィルタ: wu_rest_update_item
+# フィルタ: wu_rest_update_item {#filter-wurestupdateitem}
 
 リクエストを進めることが許可されているかどうかをフィルタします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: 46a659e3004edbe285434103f81bd733
 | $rest_base | `array` | エンティティのスラッグ。 |
 | $this | `\Base_Manager` | オブジェクトインスタンス。 |
 
-### バージョン
+### バージョン {#since}
 
 - 2.0.0
 
-### ソース
+### ソース {#source}
 
 定義されている場所: [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L414) 行 414

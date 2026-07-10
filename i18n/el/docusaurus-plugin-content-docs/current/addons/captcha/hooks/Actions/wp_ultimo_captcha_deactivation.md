@@ -4,13 +4,13 @@ title: Action - wp_ultimo_captcha_deactivation
 sidebar_label: wp_ultimo_captcha_deactivation
 _i18n_hash: f249e8746e17669815428d48579f6433
 ---
-# Action: wp_ultimo_captcha_deactivation
+# Action: wp_ultimo_captcha_deactivation {#action-wpultimocaptchadeactivation}
 
 Επιτρέπει σε άλλα μέρη του plugin να συνδέσουν τις ρουτίνες τους για την απενεργοποίηση.
 
-### Από
+### Από {#since}
 
 - 1.9.6
-### Πηγή
+### Πηγή {#source}
 
 Ορίζεται στο [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-hooks.php#L101) στην γραμμή 101

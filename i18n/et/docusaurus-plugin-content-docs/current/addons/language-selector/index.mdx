@@ -1,0 +1,75 @@
+---
+title: Keelevalija
+sidebar_position: 1
+_i18n_hash: 3528955a3b158a8e510a360d70686bfd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-language-selector" name="Language Selector" />
+
+# Keelevalija {#language-selector}
+
+Multisite Ultimate: keelevalija registreerumisel
+
+Lisa registreerumisvoogu keelevaliku väli.
+
+## Paigaldamine {#installation}
+
+1. Laadi 'ultimate-multisite-language-selector' üles kataloogi '/wp-content/plugins/'
+2. Aktiveeri plugin oma WordPress Network Admini menüü 'Plugins' kaudu
+
+## Kasutusjuhend {#usage-guide}
+
+Selle tasuta lisandmooduliga saad lasta kasutajatel valida, millist keelt nad soovivad registreerumisvoos ja sisselogimislehel näha.
+
+Pärast [litsentsi aktiveerimist](../../user-guide/getting-started/installing-ultimate-multisite.md) saad installida Ultimate Multisite lisandmooduleid, millele sinu litsents juurdepääsu annab.
+
+Mine oma Ultimate Multisite seadete lehele ja seejärel klõpsa vasakpoolses menüüs sildil _Lisandmoodulid_.
+
+![Lisandmoodulite leht](/img/admin/addons-page.png)
+
+_Mine lisandmoodulite lehele, et alustada keelevalija installimist_
+
+Seal leiad kõik lisandmoodulid, mida pakume.
+
+Tasuta lisandmoodulid on saadaval kõigile meie klientidele, olenemata tellimusplaanist, millega nad liitusid.
+
+Klõpsa lisandmooduli pisipildi all nuppu _Installi see kohe!_. Seejärel aktiveeri see Plugins lehel.
+
+![Lisandmoodulite leht installinupuga](/img/admin/addons-page.png)
+
+_Klõpsa nuppu, et lisandmoodul installida_
+
+<!-- Ekraanipilt pole saadaval: WP Plugins leht, mis näitab Network Activate nuppu Language Selector lisandmooduli jaoks -->
+
+_Aktiveeri see oma Plugins lehel_
+
+Nüüd mine Ultimate Multisite seadete menüüsse ja ava vahekaart _Network Settings_. Seal, lehe allosas, leiad uue jaotise nimega _Keeled_.
+
+![Seadete leht](/img/config/settings-general.png)
+
+_Ilmub täiesti uus jaotis!_
+
+Võid selle tühjaks jätta, et kuvada valikutena kõik keeled, või valida, millised soovid kättesaadavaks teha. Keeled on need, mis sul on WordPressi seadistuses installitud.
+
+<!-- Ekraanipilt pole saadaval: keelevaliku rippmenüü, mis näitab WP installis saadaolevaid keeli -->
+
+_Selles WP installis saadaolevate keelte loend_
+
+Pärast tehtud muudatuste salvestamist kuvatakse sinu valitud keeltega valikumenüü nii sisselogimislehel kui ka registreerumisvoos.
+
+![Sisselogimise ja registreerimise seaded](/img/config/settings-login-registration.png)
+
+_Keelevalija sisselogimislehel_
+
+![Registreerimisleht](/img/config/registration-page.png)
+
+_Keelevalija registreerumisvoos_
+
+## Keele määramine URL-i kaudu {#setting-the-language-via-the-url}
+
+Saad muuta ka lehe keelt, lisades URL-ile locale parameetri. Kui soovid näiteks suunata itaaliakeelsele registreerimislehele, lisa URL-ile ?locale=it_IT.
+
+[https://yournetwork.com/wp-signup.php?locale=it_IT](https://yournetwork.com/wp-signup.php?locale=it%5FIT)
+
+Selle toimimiseks peab keel olema sinu WordPressi võrku installitud.

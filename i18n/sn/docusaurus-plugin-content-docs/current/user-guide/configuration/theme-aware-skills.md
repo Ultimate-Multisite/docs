@@ -5,11 +5,11 @@ title: >-
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skills Zenye Ndiri Kuti Theme
+# Skills Zenye Ndiri Kuti Theme {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 inosha mhinduro chete ne-theme (theme-aware) chetatu chinoripa zvinoreva kuti zvinhu zvakaita sei kune WordPress theme yako inoshandiswa. Zvinonipa matsvaka anokosha uye zvinhu zvakakosha zvinogadzirwa kune hutano hwako nekuvimbiso uye zvinhu zvakawanda dzine hutano rako.
 
-## Skills Zenye Ndiri Kuti Theme?
+## Skills Zenye Ndiri Kuti Theme? {#what-are-theme-aware-skills}
 
 Skills zenye nhe-theme (Theme-aware skills) ndizvi knowledge bases uye tool sets zviri kuonekwa mberi kuti AI assistant inozivaka nekuti theme ya WordPress inoshandiswa kune site yako. Kana ukagadzirisa theme, zvinonipa skills dzakawanda dzinobva nekuvimbiso — haunoda kuratidza (configure) zvakawanda.
 
@@ -20,9 +20,9 @@ Kune skill ino ine:
 - **Examples dzekuvimbiso** — code snippets uye patterns yekuti zvinhu zvakawanda zvinogona kutanga
 - **Best practices** — zvinhu zvine kuratidza nezve hutano rako uye nzira yakaita sei
 
-## Skills Zenye Ndiri Kuti Theme? Zvinobva
+## Skills Zenye Ndiri Kuti Theme? Zvinobva {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Zvinoshandiswa ne:** Themes dzine architecture ya WordPress block-based (Full Site Editing).
 
@@ -36,7 +36,7 @@ Skill ya Block Themes inopa zvinhu zvinopairika nezve:
 
 **Zvinobva nekuti:** Theme yako inoshandiswa ndiri block theme (inoshandisa feature ya `block-templates`).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Zvinoshandiswa ne:** Traditional WordPress themes dzine PHP templates uye classic editor.
 
@@ -52,7 +52,7 @@ Kutiwe nemafungwaro ekugadzirwa:
 
 **Ino rinogona kuenda nekuti:** Theme yako inoratidzorwa (classic/non-block) iwe.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Rinogona kuenda nekuita:** Sites dzinoremedzo rekugadzirisa kuburikidza neKadence Blocks plugin yekugadzira zvakanyisa (advanced block-based design).
 
@@ -66,7 +66,7 @@ Skill ya Kadence Blocks inopa nguva yakawanda pamusoro pe:
 
 **Rinogona kuenda nekuti:** Kadence Blocks plugin inoratidzorwa mu site yako.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Rinogona kuenda nekuita:** Sites dzinoremedzo rekugadzirisa kuburikidza neKadence theme yekugadzira (block-based design).
 
@@ -80,15 +80,15 @@ Skill ya Kadence Theme inopa nguva yakawanda pamusoro pe:
 
 **Rinogona kuenda nekuti:** Kadence theme inoratidzorwa mu site yako.
 
-## Kuita zveSkills (How Skills Are Selected)
+## Kuita zveSkills (How Skills Are Selected) {#how-skills-are-selected}
 
 Assistant inoziva netheme yako inoratidzorwa uye plugins dzakanyisa dzinowanikwa mu message dzese. Kana kune skill inogona kuenda nekuti inoziva theme, inogadzirwa mune context ya assistant automatically. Haunoda kuita zvinhu zvinogone (manually enable) kana kutamba skills.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Kana kuna mhinduro dzakare kana kune zvinovaka (for example, kana unenge wane Kadence Blocks uye Kadence Theme dzinobva dzinotariswa), asistensti anogona kuona zvinhu zvose zviri kutarisirwa uye inogona kuratidza matendo akawanda ekunzwisisa kubva muuno hweiri.
 
-### Kuti Unge Kuratidza Themes (Switching Themes)
+### Kuti Unge Kuratidza Themes (Switching Themes) {#switching-themes}
 
 Nekuti unenge uri muna theme yako yakare, zvinobva dzinotarisirwa kweasistensti zvakare pamusoro pezvinhajji dzakare. Sei:
 
@@ -96,11 +96,11 @@ Nekuti unenge uri muna theme yako yakare, zvinobva dzinotarisirwa kweasistensti 
 2. Unenge uri muna theme yakare (classic theme).
 3. Pamusoro pezvinhajji dzakare, asistensti inogona ye **Classic Themes** inogone kuenda nekuita, uye asistensti ye **Block Themes** haigone kuonekwa kune meseji yacho.
 
-## Kuti Unenge Ushiitirira Skills dzinovaka Themes (Using Theme-Aware Skills)
+## Kuti Unenge Ushiitirira Skills dzinovaka Themes (Using Theme-Aware Skills) {#using-theme-aware-skills}
 
 Kuti unenge uendesa skills dzinovaka themes, ndichida kuti unenge uri munhu anogona kuita zvinhu zvako mu chat interface. Asistensti inogona kuratidza matendo akawanda ekunzwisisa kubva muno hweiri.
 
-### Mhinduro Dzekuti Unge Kuratidza (Example Prompts)
+### Mhinduro Dzekuti Unge Kuratidza (Example Prompts) {#example-prompts}
 
 **Kune Block Themes:**
 > "Tora hero section nebackground image uye text yakachena neblock patterns."

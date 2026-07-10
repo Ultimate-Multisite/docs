@@ -3,7 +3,7 @@ title: Błąd pliku Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Błąd podczas instalacji pliku Sunrise
+# Błąd podczas instalacji pliku Sunrise {#error-installing-the-sunrise-file}
 
 Plik sunrise.php to specjalny plik, którego WordPress szuka podczas uruchamiania. Aby WordPress mógł wykryć plik sunrise.php, musi on znajdować się w folderze **wp-content**.
 

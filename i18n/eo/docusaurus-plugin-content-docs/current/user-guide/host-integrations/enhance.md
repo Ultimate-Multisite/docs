@@ -3,33 +3,33 @@ title: Pleniĝu la integradon kun la kontrolpaneli
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Pleni Kontrolpanel Integracion
+# Pleni Kontrolpanel Integracion {#enhance-control-panel-integration}
 
-## Rezumi
+## Rezumi {#overview}
 Enhance estas moderna kontrolpanel, kiu donas potentes funkciojnajn aŭtomataj kaj administrajn kapablitajn. Ĉi tiu integracio permesas aŭtomatan domen sincronigon kaj SSL-sertifikatoj laĉon inter Ultimate Multisite kaj Enhance Control Panel.
 
 **Relata Diskuto:** Vidu [GitHub Diskuto #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) por komunaj tipoj kaj pli da informoj.
 
-## Funkcioj
+## Funkcioj {#features}
 - Aŭtomata domen sincronigo, kiam domenoj estas mapitaj en Ultimate Multisite
 - Aŭtomata provizio de SSL-sertifikato per LetsEncrypt, kiam DNS resolvas
 - Subdomajno suporto por retoj, kiuj funkcias en subdomajno modo
 - Domeno forigo, kiam mapoj estas delete
 - Konektado testado por verifi la API kredencojn
 
-## Requisitoj
+## Requisitoj {#requirements}
 
-### Sisteme Requisitoj
+### Sisteme Requisitoj {#system-requirements}
 - Enhance Control Panel instalita kaj alaccessa
 - WordPress Multisite instalita en aŭ konektita al Enhance servero
 - Apache webservero (Enhance suportas aktualne Apache konfiguracojn; LiteSpeed Enterprise estas disponabla per malaj kostoj)
 
-### API Aliro
+### API Aliro {#api-access}
 Vi devas havi administratorj aliro al Enhance Control Panel por krei API token'ojn.
 
-## Akvizi Vian API Kredencojn
+## Akvizi Vian API Kredencojn {#getting-your-api-credentials}
 
-### 1. Krei API Tokenon
+### 1. Krei API Tokenon {#1-create-an-api-token}
 
 1. Logu-sin al via Enhance Control Panel kiel administratoro
 2. Kliku sur **Settings** (Konfigurado) en la navigacia menuko
@@ -44,7 +44,7 @@ Vi devas havi administratorj aliro al Enhance Control Panel por krei API token'o
 
 Pós kreo, la **Access Token** kaj la **Organization ID** estas prezentita. **Sperte ĉi tiuj!** La token sera montrita nur unufoje.
 
-### 2. Altiĝu vian Organization ID
+### 2. Altiĝu vian Organization ID {#2-get-your-organization-id}
 
 La Organization ID estas prezentita sur la paĝo de Access Tokens en blua informita kutimo etiketita "Org ID: {via_id}".
 
@@ -55,7 +55,7 @@ Vi ankaŭ povas trovi la Organization ID de klienton per:
 2. Kliku sur **Manage customer** por la relevante klienton
 3. Rigardu la URL - la Organization ID estas la alfanumeraj karakteroj post `/customers/`
 
-### 3. Altiĝu vian Server ID
+### 3. Altiĝu vian Server ID {#3-get-your-server-id}
 
 Por trovi vian Server ID (neferita por domeno operaciaj):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 La server ID sekvas la UUID formaton: `00000000-0000-0000-0000-000000000000`
 
-### 4. Altiĝu vian API URL
+### 4. Altiĝu vian API URL {#4-get-your-api-url}
 
 Via API URL estas via Enhance Control Panel URL kun `/api/` alteniita:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Uzi nur la domeno sen `/api/`
 - Uzi HTTP en plankton de HTTPS (HTTPS estas necesa por sekureco)
 
-## Konfiguracio
+## Konfiguracio {#configuration}
 
-### Neferitaj konstanta valoroj
+### Neferitaj konstanta valoroj {#required-constants}
 
 Altiĝu la seguenti konstanta valoroj al via `wp-config.php` fakto:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'vies-bearer-token-aie');
 define('WU_ENHANCE_API_URL', 'https://vies-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'vies-server-uuid-aie');
 
-### Montado per la Wizard de Integracio
+### Montado per la Wizard de Integracio {#setup-via-integration-wizard}
 
 1. Na via WordPress admin, al **Ultimate Multisite** > **Settings** (Ajustoj)
 2. Naveche a la pestaña **Integrations** (Integraciones)
@@ -110,17 +110,17 @@ Vi povas elgli:
 - Permitigi al la wizard injekti la konstanto en via `wp-config.php` filon aŭtomate
 - Kopii definiciojn de la konstanto kaj aĉadi ilin manuele
 
-## Pliaj WordPress Konfiguracioj
+## Pliaj WordPress Konfiguracioj {#additional-wordpress-configuration}
 
 Baze sur la recenzoj de la komunumo ([Diskutado #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), vi povas bezoni konfiguri ĉi ti pliajn ŝanĝojn:
 
-### Konfiguracio de .htaccess
+### Konfiguracio de .htaccess {#htaccess-configuration}
 
 Se vi havas problemo kun mapado de domenoj:
 1. Elige la originalan Enhance `.htaccess` filon
 2. Substitu ĝin per la standardan WordPress Multisite `.htaccess` filon
 
-### Cookie Konstantoj
+### Cookie Konstantoj {#cookie-constants}
 
 Aĉadi ĉi ti konstantojn en `wp-config.php` por zorgi pri la ĝusta maneĝo de cookie'oj inter mapitaj domenoj:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Kiel Ĝi Funkcias
+## Kiel Ĝi Funkcias {#how-it-works}
 
-### Kiam Domeno Estas Mapita
+### Kiam Domeno Estas Mapita {#when-a-domain-is-mapped}
 
 1. Uzanto uzanto domen en Ultimate Multisite (a nova saito estas kreita en subdomajno modo)
 2. La integriĝo sendas POST petiron al API de Enhance: `/servers/{server_id}/domains`
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Kiam DNS rezolvas al via servero, Enhance aŭtomate provizas SSL-sertifikaton per LetsEncrypt
 5. La domenoj fariĝas aktive kun HTTPS
 
-### Kiam Domeno Estas Elrečata
+### Kiam Domeno Estas Elrečata {#when-a-domain-is-removed}
 
 1. Uzanto de domenmapado estas elrečata en Ultimate Multisite
 2. La integriĝo interroge Enhance por trovi la ID de la domeno
 3. DELETE petiro estas sendita al: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance elrečatas la domenon de via serverkonfiguracio
 
-### DNS kaj SSL Kontro
+### DNS kaj SSL Kontro {#dns-and-ssl-checking}
 
 Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
 - Vi povas konfiguri intervalon de kontrolon en **Domain Mapping Settings** (defaulto: 300 sekundoj/5 minutoj)
@@ -155,9 +155,9 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
 - Valideco de SSL-sertifikato estas kontrolita aŭtomate
 - Enhance maneĝas la provizadon de SSL aŭtomate, tiel manua SSL konfiguracio ne estas necesa
 
-## Verifiĝo de Konfiguracio
+## Verifiĝo de Konfiguracio {#verifying-setup}
 
-### Testu la Konektan
+### Testu la Konektan {#test-the-connection}
 
 1. En la Integration Wizard, uzu la paŝon **Test Connection**
 2. La plugin provizos listi domenojn sur via servero
@@ -167,7 +167,7 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
    - Server ID estas valide
    - Permesoj estas ĝuste setitaj
 
-### Post Mapado de Domeno
+### Post Mapado de Domeno {#after-mapping-a-domain}
 
 1. Mapu testdomenon en Ultimate Multisite
 2. Kontu la logojn de Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -176,9 +176,9 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
    - La nova domeno devas aperi en la listo
 4. Kiam DNS propagas, verifas, ke SSL estas provizata aŭtomate
 
-## Problemojokaj
+## Problemojokaj {#troubleshooting}
 
-### Problemojokaj kun API konekto
+### Problemojokaj kun API konekto {#api-connection-issues}
 
 **Errare: "Failed to connect to Enhance API" (Nefak konekti al la Enhance API)**
 - Verifuji, ke `WU_ENHANCE_API_URL` finmas `/api/` al la fini.
@@ -196,7 +196,7 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
 - Assureti, ke la Server ID estas valida UUID formato.
 - Konfirme, ke la server ekzistas en via Enhance panelo.
 
-### Domeno ne aldatita (Domain Not Added)
+### Domeno ne aldatita (Domain Not Added) {#domain-not-added}
 
 **Kontrolu la logoj:**
 1. Aliri **Ultimate Multisite** > **Logs**
@@ -209,7 +209,7 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
 - Insuficiaj API permesoj (assureti, ke la token havas la rolon System Administrator).
 - Server ID ne korespondas al reala servero en Enhance.
 
-### SSL Sertifikato Problemoj
+### SSL Sertifikato Problemoj {#ssl-certificate-issues}
 
 **SSL ne provizas:**
 - Verifuji, ke DNS indikas al via servero's IP adreso.
@@ -223,7 +223,7 @@ Ultimate Multisite inkluzas integritajn kontrolon de DNS kaj SSL:
 2. Trovu via domeno kaj kontrolu ĝian SSL staton.
 3. Vi povas manuefe provizi SSL, se necesa.
 
-### DNS Kontrol Intervalo
+### DNS Kontrol Intervalo {#dns-check-interval}
 
 Se domeno aŭ SSL-sertifoj tre longas por aktiviĝi:
 1. Aliri **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -231,7 +231,7 @@ Se domeno aŭ SSL-sertifoj tre longas por aktiviĝi:
 3. Ajustu ĝin de la defaŭlta 300 sekondoj al pli malaj valoro (minimum: 10 sekundoj)
 4. **Notu:** Malaj intervaloj signifas pli frekventajn kontrolojn, sed pli grandan serveran ŝarĝon
 
-### Erraroj de autentifo
+### Erraroj de autentifo {#authentication-errors}
 
 **HTTP 401/403 eraroj:**
 - Regeneru vian API token en Enhance
@@ -239,7 +239,7 @@ Se domeno aŭ SSL-sertifoj tre longas por aktiviĝi:
 - Kontatu, ke la token ne expiris
 - Assuringuĝu, ke vi uzas la ĝustan Organization ID (tamen tio tipikite ne bezonas esti en la URL)
 
-### Log Analizo
+### Log Analizo {#log-analysis}
 
 Aktivi detale logadon:
 ```php
@@ -253,15 +253,15 @@ Tamen kontrolu la logojn al:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logoj: Disponibla en la admin interfaco de Enhance
 
-## API Referenco
+## API Referenco {#api-reference}
 
-### Autentifikado
+### Autentifikado {#authentication}
 Toutes la API petoj uzas Bearer token autentifikadon:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Komunaĵaj Endpointoj Utilizataj
+### Komunaĵaj Endpointoj Utilizataj {#common-endpoints-used}
 
 **List Servers:**
 ```
@@ -284,30 +284,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Plena API Dokumentado
+### Plena API Dokumentado {#full-api-documentation}
 Plena API dokumentado: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## La plej bone praktika
+## La plej bone praktika {#best-practices}
 
-### Sekture (Security)
+### Sekture (Security) {#security}
 - **Ne komituri API tokens al versio kontroluri**
 - Stortu tokens en `wp-config.php`, ki devojĝas el Git
 - Uzu tokens kun la adekva permisadoj (System Administrator por plena integriĝo)
 - Defini uzfariĝtempon de token por prodaj aĉetoj
 - Roti tokens periodice
 
-### Performeco (Performance)
+### Performeco (Performance) {#performance}
 - Uzu la default DNS kontrolintervalon (300 sekundojn), por eviti tro multajn API vokojn
 - Monitoru la resurs de servero Enhance, kiam vi faras grandajn operaciojn de domeno
 - Konsideru stangon de domeno aĉetoj, se vi mapas multajn domenojn ekbevo
 
-### Monitorado (Monitoring)
+### Monitorado (Monitoring) {#monitoring}
 - Kontrolu regularan volte Ultimate Multisite logojn por integriĝer errorej
 - Defini monitoradon por neuzfariĝitaj domeno aĉetoj
 - Verifaru, ke SSL sertifikatoj provizas ĝuste
 - Tenu la oko sur la kapacito de servero Enhance kaj limitajn domenojn
 
-## Pliaj Resursoj (Additional Resources)
+## Pliaj Resursoj (Additional Resources) {#additional-resources}
 
 - **Enhance Ofici tiu Dokumentado:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Dokumentado:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -315,7 +315,7 @@ Plena API dokumentado: [https://apidocs.enhance.com](https://apidocs.enhance.com
 - **GitHub Diskutado:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domeno Mapado Gvidilo:** Vidu wiki pagin "Kiel konfigurigi domeno mapadon v2"
 
-## Subteno (Support)
+## Subteno (Support) {#support}
 
 Se vi enas problemo:
 1. Kontrolu la seksion de Troubleshooting supri
@@ -324,7 +324,7 @@ Se vi enas problemo:
 4. Kontak Enhance subtenon por problemo specifaj al panelo
 5. Kreu novan diskutadon kun detale errore logoj por komunita asisto
 
-## Notoj (Notes)
+## Notoj (Notes) {#notes}
 
 - ĉi tiu integracio handlas nur domajno alias'ojn; Enhancado manĝas la SSL aŭtomatisite.
 - La integracio subtenas per ŝajvenaj domajno mapado kaj subdomajno bazataj sitaĵoj.

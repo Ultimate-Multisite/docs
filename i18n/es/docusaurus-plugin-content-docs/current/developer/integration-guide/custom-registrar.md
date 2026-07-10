@@ -3,13 +3,13 @@ title: Creando una Integración de Registrador Personalizada
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Creando una Integración de Registrador Personalizada
+# Creando una Integración de Registrador Personalizada {#building-a-custom-registrar-integration}
 
 El addon Domain Seller utiliza un patrón llamado **Integration Registry**. Cada registrador es una clase PHP que implementa `Domain_Selling_Capability` y se registra a través del action hook `wu_domain_seller_register_capabilities`.
 
 Esta guía muestra cómo conectar un registrador personalizado.
 
-## La interfaz
+## La interfaz {#the-interface}
 
 Tu clase debe implementar `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` y extender `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Métodos opcionales
+### Métodos opcionales {#optional-methods}
 
 Implementa estos métodos para desbloquear funciones adicionales. El addon detecta el soporte mediante `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementa estos métodos para desbloquear funciones adicionales. El addon detec
 | `get_epp_code(string $domain_name): array` | Transferencia de dominio (saliente) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transferencia de dominio (entrante) |
 
-### Convención de valor de retorno
+### Convención de valor de retorno {#return-value-convention}
 
 Todos los métodos devuelven un array con al menos la clave `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Error legible por humanos'];
 
 ---
 
-## Registro de tu capacidad (Capability)
+## Registro de tu capacidad (Capability) {#registering-your-capability}
 
 Registra tu clase usando el action `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ El primer argumento de `add_capability()` es el **provider ID** (ID del proveedo
 
 ---
 
-## Añadiendo campos de credenciales al asistente
+## Añadiendo campos de credenciales al asistente {#adding-credential-fields-to-the-wizard}
 
 Para permitir que los administradores ingresen credenciales a través del asistente de configuración, registra tu integración:
 
@@ -137,7 +137,7 @@ Las credenciales se almacenan como opciones de red (network options) usando los 
 
 ---
 
-## Hooks para acciones posteriores al registro
+## Hooks para acciones posteriores al registro {#hooks-for-post-registration-actions}
 
 Usa estos actions para activar webhooks, aprovisionamiento, notificaciones o actualizaciones de CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging (Registro de actividad)
+## Logging (Registro de actividad) {#logging}
 
 Escribe en tu canal de logs específico del proveedor usando `wu_log_add()`:
 

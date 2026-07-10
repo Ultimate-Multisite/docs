@@ -3,7 +3,7 @@ title: Kugara neVakakumbiro
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Kurudzera Vamwe (Managing Customers)
+# Kurudzera Vamwe (Managing Customers) {#managing-customers}
 
 Ukupfupi we **Customers** kunokwona list ye vana vakareka vachiri munzwe wenyu. Ipeji iyi inokwona maheniso arapfumo anonyanya, zvichisinga zvinobva neitaura, nguva yakakwana yekutanga kuitanga (last login), uye link ya **kuuta ku** inokupa kuti utange kutanga mune subsite yeumunhu se administrator we site.
 

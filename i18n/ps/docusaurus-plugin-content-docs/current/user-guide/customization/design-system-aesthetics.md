@@ -3,11 +3,11 @@ title: د ډیزاین سیسټم زیبایی مهارت
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# দক্ষতাৰ ডিজাইন সিস্টেম এস্থেটিক্স (Design System Aesthetics Skill)
+# দক্ষতাৰ ডিজাইন সিস্টেম এস্থেটিক্স (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 **ডিজাইন সিস্টেম এস্থেটিক্স স্কিল** হৈছে আপোনাৰ সাইটৰ ভিজ্যুৱেল পৰিচয় উন্নত কৰিবলৈ এটা পথ দেখুওৱা পদ্ধতি। ই টাইপোগ্রাফি, ৰং, স্পেচিং আৰু মুভমেণ্ট টোকেনসমূহৰ বিষয়ে সামঞ্জস্যপূৰ্ণ সিদ্ধান্ত ল'বলৈ সহায় কৰে যিয়ে আপোনাৰ ডিজাইন সিস্টেমক সংজ্ঞায়িত কৰে।
 
-## ডিজাইন সিস্টেম এস্থেটিক্স কি?
+## ডিজাইন সিস্টেম এস্থেটিক্স কি? {#what-is-design-system-aesthetics}
 
 ডিজাইন সিস্টেম এস্থেটিক্স হৈছে এটা সুসংগঠিত দক্ষতা যিয়ে তলত উল্লেখ থকা বিষয়বোৰ ক্ৰমানুভাৱে সামৰি লয়:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 এই সিদ্ধান্তবোৰ আপোনাৰ থীমৰ `theme.json` ফাইলত বন্দী কৰা হয়, যিয়ে এটা সুসংহত ভিজ্যুৱেল সিস্টেম সৃষ্টি কৰে।
 
-## ডিজাইন সিস্টেম এস্থেটিক্স কিয় ব্যৱহাৰ কৰিব লাগে?
+## ডিজাইন সিস্টেম এস্থেটিক্স কিয় ব্যৱহাৰ কৰিব লাগে? {#why-use-design-system-aesthetics}
 
-### সামঞ্জস্য (Consistency)
+### সামঞ্জস্য (Consistency) {#consistency}
 
 এটা ডিজাইন সিস্টেম নিশ্চিত কৰে যে:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - স্পেচিং এটা অনুমানযোগ্য ধৰণত থাকে
 - অ্যানিমেশ্যনবোৰ এক হৈ থকা অনুভৱ কৰে
 
-### দক্ষতা (Efficiency)
+### দক্ষতা (Efficiency) {#efficiency}
 
 পৃষ্ঠা-ভিত্তিক ডিজাইন সিদ্ধান্ত লোৱাৰ পৰিৱৰ্তে, আপুনি:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - সকলো ঠাইতে তাক প্ৰয়োগ কৰে
 - এটা মানিমান মূল্য সলনি কৰি বিশ্বব্যাপী আপডেট কৰে
 
-### নমনীয়তা (Flexibility)
+### নমনীয়তা (Flexibility) {#flexibility}
 
 আপুনি পাৰিব:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - বিভিন্ন এস্থেটিক্সৰ সৈতে পৰীক্ষা কৰিব পাৰে
 - বিকশিত হোৱাৰ সময়ত ব্র্যান্ডৰ সামঞ্জস্য বজাই ৰাখিব পাৰে
 
-## ডিজাইন সিস্টেম এস্থেটিক্স স্কিল ট্ৰিগাৰ কৰা
+## ডিজাইন সিস্টেম এস্থেটিক্স স্কিল ট্ৰিগাৰ কৰা {#triggering-the-design-system-aesthetics-skill}
 
-### হাতেৰে সক্ৰিয় কৰি (Manual Activation)
+### হাতেৰে সক্ৰিয় কৰি (Manual Activation) {#manual-activation}
 
 আপুনি যিকোনো সময়ত এই দক্ষতা আৰম্ভ কৰিব পাৰে:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "Guide me through design system decisions"
 ```
 
-### স্বয়ংক্ৰিয় প্ৰস্তাৱসমূহ (Automatic Suggestions)
+### স্বয়ংক্ৰিয় প্ৰস্তাৱসমূহ (Automatic Suggestions) {#automatic-suggestions}
 
 এজেন্টসমূহে আপুনি নিম্নলিখিত সময়ত এই স্কিল ব্যৱহাৰ কৰিবলৈ পৰামৰ্শ দিব পাৰে:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - ভিজ্যুৱেল সামঞ্জস্য উন্নত কৰিব বিচাৰিলে
 - আপোনাৰ সাইট লানচ কৰাৰ বাবে প্ৰস্তুত হৈ থাকিলে
 
-## دیزاین سیستم زیبایی شناسی فرآیند
+## دیزاین سیستم زیبایی شناسی فرآیند {#the-design-system-aesthetics-process}
 
-### مرحله ۱: تایپوگرافی (Typography)
+### مرحله ۱: تایپوگرافی (Typography) {#step-1-typography}
 
 مساعد از شما در مورد انتخاب فونت‌ها سؤال می‌کند:
 
@@ -110,7 +110,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - **مقیاس وزن (Weight scale)**: وزن‌های فونت (عادی، متوسط، پررنگ و غیره)
 - **ارتفاع خط (Line height)**: فاصله بین خطوط برای خوانایی بهتر
 
-### مرحله ۲: پالت رنگی (Color Palette)
+### مرحله ۲: پالت رنگی (Color Palette) {#step-2-color-palette}
 
 ```
 بیایید پالت رنگی شما را تعریف کنیم.
@@ -140,7 +140,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - رنگ‌های معنایی (موفقیت، هشدار، خطا)
 - حالت‌های هاور (Hover) و فعال (Active states)
 
-### مرحله ۳: فاصله گذاری (Spacing)
+### مرحله ۳: فاصله گذاری (Spacing) {#step-3-spacing}
 
 چولۍ څوم اندازه هوا ورکول غواړئ؟
 
@@ -160,7 +160,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - Scale: xs, sm, md, lg, xl, 2xl
 - Padding, margin, gap का लागि विशिष्ट मानहरू
 
-### चरण ४: Borders र Shadows (छाया)
+### चरण ४: Borders र Shadows (छाया) {#step-4-borders-and-shadows}
 
 ```
 दृश्य गहिराइ र परिभाषा:
@@ -183,7 +183,7 @@ Shadow depth (छायाको गहिराइ):
 - Elevation levels का लागि Shadow tokens
 - Border width tokens
 
-### चरण ५: Motion र Animation (गति र एनिमेसन)
+### चरण ५: Motion र Animation (गति र एनिमेसन) {#step-5-motion-and-animation}
 
 ```
 जब तपाईंको साइट अन्तरक्रियात्मक हुन्छ तब कस्तो महसुस हुनुपर्छ?
@@ -205,9 +205,9 @@ Animation प्राथमिकता:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - सामान्य अन्तरक्रियाका लागि Animation keyframes
 
-## Design System Aesthetics लागू गर्ने
+## Design System Aesthetics लागू गर्ने {#applying-design-system-aesthetics}
 
-### स्वचालित अनुप्रयोग (Automatic Application)
+### स्वचालित अनुप्रयोग (Automatic Application) {#automatic-application}
 
 कुशलता पूरा गरेपछि, एजेन्टले निम्न काम गर्छ:
 
@@ -216,13 +216,13 @@ Animation प्राथमिकता:
 3. नयाँ सिस्टमसँग मेल खाने block styles पुनः उत्पन्न (Regenerate) गर्छ।
 4. अपडेट गरिएको theme सक्रिय गर्छ।
 
-### म्यानुअल अनुप्रयोग (Manual Application)
+### म्यानुअल अनुप्रयोग (Manual Application) {#manual-application}
 
 तपाईंले `theme.json` लाई सिधै पनि सम्पादन गर्न सक्नुहुन्छ:
 
-## دیساین سیستیم مشاهده गर्ने
+## دیساین سیستیم مشاهده गर्ने {#viewing-your-design-system}
 
-### ایجن پوښتنه وکړئ (Ask the Agent)
+### ایجن پوښتنه وکړئ (Ask the Agent) {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -236,13 +236,13 @@ Animation प्राथमिकता:
 
 ایجنले तपाईंको टाइपोग्राफी, रंगहरू, स्पेसइङ र अन्य टोकनहरू देखाउनेछ।
 
-### theme.json हेर्नुहोस् (View theme.json)
+### theme.json हेर्नुहोस् (View theme.json) {#view-themejson}
 
 रॉ टोकन परिभाषा हेर्नका लागि टेक्स्ट एडिटरमा `/wp-content/themes/[theme-name]/theme.json` खोल्नुहोस्।
 
-## आफ्नो डिजाइन सिस्टम अपडेट गर्ने
+## आफ्नो डिजाइन सिस्टम अपडेट गर्ने {#updating-your-design-system}
 
-### छिटो अपडेटहरू (Quick Updates)
+### छिटो अपडेटहरू (Quick Updates) {#quick-updates}
 
 विशिष्ट परिवर्तनहरूको लागि ایजनलाई सोध्नुहोस्:
 
@@ -262,7 +262,7 @@ Animation प्राथमिकता:
 "Change the heading font to a serif"
 ```
 
-### पूर्ण पुनः डिजाइन (Full Redesign)
+### पूर्ण पुनः डिजाइन (Full Redesign) {#full-redesign}
 
 डिजाइन सिस्टमको सुन्दरता सील फेरि चलाउनुहोस्:
 
@@ -272,7 +272,7 @@ Animation प्राथमिकता:
 
 यसले तपाईंलाई तपाईंको अहिलेको मानहरूबाट सुरु गरेर सबै निर्णयहरूमा मार्गदर्शन गर्नेछ।
 
-### आंशिक अपडेटहरू (Partial Updates)
+### आंशिक अपडेटहरू (Partial Updates) {#partial-updates}
 
 विशिष्ट पक्षहरू अपडेट गर्नुहोस्:
 
@@ -280,15 +280,15 @@ Animation प्राथमिकता:
 "Just update the color palette, keep everything else"
 ```
 
-## डिजाइन सिस्टमका उत्तम अभ्यासहरू (Design System Best Practices)
+## डिजाइन सिस्टमका उत्तम अभ्यासहरू (Design System Best Practices) {#design-system-best-practices}
 
-### सुसंगतता (Consistency)
+### सुसंगतता (Consistency) {#consistency-1}
 
 - सबै ठाउँमा एउटै टोकन प्रयोग गर्नुहोस्।
 - एक पटकको लागि बनाइएका रंग वा आकारहरू नबनाउनुहोस्।
 - मानहरूलाई हार्डकोड गर्नुको सट्टा टोकनहरूको सन्दर्भ गर्नुहोस्।
 
-### नामकरण (Naming)
+### नामकरण (Naming) {#naming}
 
 स्पष्ट, अर्थपूर्ण नामहरू प्रयोग गर्नुहोस्:
 
@@ -298,7 +298,7 @@ Animation प्राथमिकता:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### विस्तार गर्ने क्षमता (Scalability)
+### विस्तार गर्ने क्षमता (Scalability) {#scalability}
 
 د خپل نظام د اندازه کولو لپاره ډیزاین کړئ:
 
@@ -306,7 +306,7 @@ Animation प्राथमिकता:
 - بدلونې (values) بدل کړه (xs, sm, md, lg, xl) بದಲು دلخواه مقادیر
 - د راتلونکي اضافو لپاره پلان جوړ کړئ
 
-### مستندachadh (Documentation)
+### مستندachadh (Documentation) {#documentation}
 
 د خپل ډیزاین نظام مستند کړئ:
 
@@ -314,9 +314,9 @@ Animation प्राथमिकता:
 - हरेک token کله کار কৰاله؟
 - استثناونه او سخت حالات څه دي؟
 
-## عام ډیزاین نظام نمونې (Common Design System Patterns)
+## عام ډیزاین نظام نمونې (Common Design System Patterns) {#common-design-system-patterns}
 
-### عصري ساده (Modern Minimalist)
+### عصري ساده (Modern Minimalist) {#modern-minimalist}
 
 - سانسرسی فونټ (Sans-serif typography) (Inter, Helvetica)
 - محدود د رنګونو پالتو (2-3 رنګونه)
@@ -324,7 +324,7 @@ Animation प्राथमिकता:
 - خفي سایه (Subtle shadows)
 - نرم، 빠르고 ګ속ي انیمیشنونه (Smooth, fast animations)
 
-### ګرم او دوستانه (Warm and Friendly)
+### ګرم او دوستانه (Warm and Friendly) {#warm-and-friendly}
 
 - سریف او سانسرسی فونټहरूको ترکیب
 - ګرم رنګونو پالتو (شیرې، ګرم سرمئی)
@@ -332,7 +332,7 @@ Animation प्राथमिकता:
 - نرم سایه
 - بازیال انیمیشنونه (Playful animations)
 
-### حرفي شرکتي (Professional Corporate)
+### حرفي شرکتي (Professional Corporate) {#professional-corporate}
 
 - پاک سانسرسی فونټ (Roboto, Open Sans)
 - توازن رنګونو پالتو چې یو accent color لري
@@ -340,7 +340,7 @@ Animation प्राथमिकता:
 - کمترین سایې
 - خفي ترانسيشنونه (Subtle transitions)
 
-### خلاقانه او قوي (Creative and Bold)
+### خلاقانه او قوي (Creative and Bold) {#creative-and-bold}
 
 - ځانګړې فونټ डिजाइन
 - قوي د رنګونو پالتو
@@ -348,7 +348,7 @@ Animation प्राथमिकता:
 - قوي سایې
 - ممکنه انیمیشنونه (Noticeable animations)
 
-## مشکلات حل کول (Troubleshooting)
+## مشکلات حل کول (Troubleshooting) {#troubleshooting}
 
 **د زما د ډیزاین نظام بدلونې ښودل نه کیږي**
 - خپل براوزرسټ کاش (browser cache) پاک کړئ
@@ -366,7 +366,7 @@ Animation प्राथमिकता:
 - theme.json په پخوانی ارزښتونو کې manuallly edit کړئ
 - Skill بیا اجرا کړئ چې مختلف انتخابونه ورکړل وي
 
-## راتلونکي ګامونه (Next Steps)
+## راتلونکي ګامونه (Next Steps) {#next-steps}
 
 د خپل ډیزاین نظام تعریف کولو وروسته:
 

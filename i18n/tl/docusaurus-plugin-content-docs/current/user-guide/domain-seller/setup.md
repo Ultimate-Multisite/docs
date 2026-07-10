@@ -3,21 +3,21 @@ title: Pag-set up at Konfigurasyon ng Provider
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Pag-setup at Configuration ng Provider
+# Domain Seller: Pag-setup at Configuration ng Provider {#domain-seller-setup-and-provider-configuration}
 
 Ang Domain Seller addon ay kasama ng isang guided setup wizard na gagabay sa iyo sa bawat kinakailangang hakbang. Ang pahinang ito ay tumatalakay sa daloy ng wizard at kung paano i-configure o muling i-configure ang mga provider pagkatapos nito.
 
-## Mga Kinakailangan
+## Mga Kinakailangan {#requirements}
 
 - **Multisite Ultimate** v2.4.12 o mas mataas, network-activated
 - **PHP** 7.4+
 - API credentials para sa kahit isa sa mga sinusuportang registrar
 
-## Unang setup wizard
+## Unang setup wizard {#first-run-setup-wizard}
 
 Awtomatikong magsisimula ang setup wizard sa unang pagkakataon na i-network activate mo ang plugin. Maaari mo rin itong gamitin anumang oras mula sa **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Hakbang 1 — Pumili ng provider
+### Hakbang 1 — Pumili ng provider {#step-1--choose-a-provider}
 
 Pumili ng registrar na gusto mong ikonekta. Mga sinusuportang opsyon:
 
@@ -33,7 +33,7 @@ Pumili ng registrar na gusto mong ikonekta. Mga sinusuportang opsyon:
 | NameSilo | Hindi | Hindi |
 | Enom | Oo | Hindi |
 
-### Hakbang 2 — Ilagay ang mga kredensyal
+### Hakbang 2 — Ilagay ang mga kredensyal {#step-2--enter-credentials}
 
 Ang bawat provider ay may iba't ibang field para sa kredensyal:
 
@@ -57,17 +57,17 @@ Ang bawat provider ay may iba't ibang field para sa kredensyal:
 
 Tingnan ang **Sandbox mode** kung available para subukan laban sa test environment ng provider bago mag-live.
 
-### Hakbang 3 — Subukan ang koneksyon
+### Hakbang 3 — Subukan ang koneksyon {#step-3--test-the-connection}
 
 I-click ang **Test Connection**. Magpapadala ang wizard ng isang magaan na tawag sa API para i-verify ang mga credentials at konektibidad. Ayusin ang anumang isyu sa credential bago magpatuloy.
 
-### Hakbang 4 — I-import ang TLDs
+### Hakbang 4 — I-import ang TLDs {#step-4--import-tlds}
 
 I-click ang **Import TLDs** para kunin ang lahat ng available na TLDs at wholesale pricing mula sa konektadong provider. Pinupunan nito ang listahan ng TLD na ginagamit para sa mga domain product. Maaaring tumagal ng 30–60 segundo ang import para sa mga provider na may malalaking catalog ng TLD.
 
 Awtomatikong muling isasynchronize ang mga TLD pagkatapos ng isang araw sa pamamagitan ng isang scheduled cron job.
 
-### Hakbang 5 — Gumawa ng domain product
+### Hakbang 5 — Gumawa ng domain product {#step-5--create-a-domain-product}
 
 Ang wizard ay gagawa ng default catch-all domain product na may 10% markup. Maaari mong i-edit agad ang produktong ito o hindi iyon at gumawa ng mga produkto nang mano-mano sa ilalim ng **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Tingnan ang [Domain Products and Pricing](./domain-products) para sa kumpletong 
 
 ---
 
-## Pagreconfigure ng provider
+## Pagreconfigure ng provider {#reconfiguring-a-provider}
 
 Pumunta sa **Network Admin › Ultimate Multisite › Settings › Domain Seller** (o i-click ang **Settings** sa listahan ng plugin).
 
@@ -89,17 +89,17 @@ Ang settings page ay naglalaman ng:
 - **Manage domain products** — mabilis na link papunta sa Products list
 - **Configure providers** — nagbubukas ng Integration Wizard para magdagdag o mag-reconfigure ng mga provider
 
-### Pagdaragdag ng pangalawang provider
+### Pagdaragdag ng pangalawang provider {#adding-a-second-provider}
 
 I-click ang **Configure providers** at patakbuhin ulit ang wizard para sa bagong registrar. Maaari kang magkaroon ng maraming provider na naka-configure nang sabay-sabay. I-assign ang bawat domain product sa isang partikular na provider, o iwanan ito sa default.
 
-### Manu-manong pag-sync ng TLDs
+### Manu-manong pag-sync ng TLDs {#syncing-tlds-manually}
 
 Sa settings page, i-click ang **Sync TLDs** sa tabi ng anumang naka-configure na provider para kunin ang pinakabagong pricing. Nakakatulong ito pagkatapos mag-update ng wholesale pricing o magdagdag ng mga bagong TLD ng isang provider.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Bawat provider ay nagsusulat sa sarili nitong log channel. Ang mga logs ay makikita sa ilalim ng **Network Admin › Ultimate Multisite › Logs**:
 
@@ -119,7 +119,7 @@ Bawat provider ay nagsusulat sa sarili nitong log channel. Ang mga logs ay makik
 
 ---
 
-## Mga tala tungkol sa kakayahan ng Provider
+## Mga tala tungkol sa kakayahan ng Provider {#provider-capability-notes}
 
 Hindi lahat ng registrar API ay nagpapakita ng parehong mga operasyon. Ang addon ay nagpapakita ng mga hindi sinusuportang operasyon na may malinaw na error para sa admin kaysa sa tahimik na pagkabigo.
 

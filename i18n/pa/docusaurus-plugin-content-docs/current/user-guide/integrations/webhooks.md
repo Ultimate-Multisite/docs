@@ -1,56 +1,54 @@
 ---
-title: ਵੈੱਬਹੁੱਕਸ
+title: Webhooks
 sidebar_position: 15
-_i18n_hash: b4ccc66ecddbe88bc85f562e32e5dca8
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhooks (v2) ਬਾਰੇ ਪਹਿਲੀ ਝਲਕ
+# Webhooks (v2) ਉੱਤੇ ਪਹਿਲੀ ਝਲਕ {#a-first-look-on-webhooks-v2}
 
-_**ਧਿਆਨ ਦਿਓ: ਇਹ ਫੀਚਰ ਜਾਂ ਲੇਖ ਤਜਰਬੇਕਾਰ ਯੂਜ਼ਰਾਂ ਲਈ ਹੈ।**_
+_**ਧਿਆਨ ਦਿਓ: ਨੋਟ ਕਰੋ ਕਿ ਇਹ ਵਿਸ਼ੇਸ਼ਤਾ ਜਾਂ ਲੇਖ ਉੱਚ ਪੱਧਰ ਦੇ ਵਰਤੋਂਕਾਰਾਂ ਲਈ ਹੈ।**_
 
-**Webhook** ਇੱਕ ਤਰੀਕਾ ਹੈ ਜਿਸ ਰਾਹੀਂ Ultimate Multisite ਵਰਗੀ ਕੋਈ ਐਪ ਜਾਂ ਸਾਫਟਵੇਅਰ ਦੂਜੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨੂੰ ਰੀਅਲ-ਟਾਈਮ ਜਾਣਕਾਰੀ ਦੇ ਸਕਦੀ ਹੈ। Webhook ਡਾਟਾ ਜਾਂ payloads ਨੂੰ ਤੁਰੰਤ ਦੂਜੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਤੱਕ ਪਹੁੰਚਾਉਂਦਾ ਹੈ, ਮਤਲਬ ਤੁਹਾਨੂੰ **ਡਾਟਾ ਫੌਰਨ ਮਿਲ ਜਾਂਦਾ ਹੈ।**
+ਇੱਕ **webhook** ਕਿਸੇ ਐਪ ਜਾਂ Ultimate Multisite ਵਰਗੇ software ਲਈ ਹੋਰ application ਨੂੰ ਰੀਅਲ-ਟਾਈਮ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਨ ਦਾ ਇੱਕ ਤਰੀਕਾ ਹੈ। webhook ਡਾਟਾ ਜਾਂ payloads ਨੂੰ ਘਟਨਾ ਹੋਣ ਦੇ ਨਾਲ ਹੀ ਹੋਰ application ਤੱਕ ਪਹੁੰਚਾਉਂਦਾ ਹੈ, ਜਿਸਦਾ ਅਰਥ ਹੈ ਕਿ ਤੁਸੀਂ **ਤੁਰੰਤ ਡਾਟਾ ਪ੍ਰਾਪਤ ਕਰਦੇ ਹੋ।**
 
-ਇਹ ਉਦੋਂ ਕੰਮ ਆਉਂਦਾ ਹੈ ਜਦੋਂ ਤੁਹਾਨੂੰ Ultimate Multisite ਤੋਂ ਕੋਈ ਖਾਸ ਡਾਟਾ ਕਿਸੇ ਹੋਰ CRM ਜਾਂ ਸਿਸਟਮ ਨਾਲ ਜੋੜਨਾ ਜਾਂ ਭੇਜਣਾ ਹੋਵੇ ਜਦੋਂ ਵੀ ਕੋਈ event ਹੁੰਦੀ ਹੈ। ਮਿਸਾਲ ਲਈ, ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਹਰ ਵਾਰ ਜਦੋਂ ਕੋਈ ਨਵਾਂ ਯੂਜ਼ਰ ਅਕਾਊਂਟ ਬਣੇ ਤਾਂ ਉਸਦਾ ਨਾਂ ਅਤੇ ਈਮੇਲ ਐਡਰੈੱਸ ਕਿਸੇ ਮੇਲਿੰਗ ਲਿਸਟ ਵਿੱਚ ਭੇਜਿਆ ਜਾਵੇ।
+ਇਹ ਤਦ ਮਦਦਗਾਰ ਹੈ ਜੇ ਤੁਹਾਨੂੰ ਹਰ ਵਾਰ ਕੋਈ event trigger ਹੋਣ 'ਤੇ Ultimate Multisite ਤੋਂ ਕਿਸੇ ਹੋਰ CRM ਜਾਂ system ਵੱਲ ਕੁਝ ਖਾਸ ਡਾਟਾ integrate ਜਾਂ pass ਕਰਨ ਦੀ ਲੋੜ ਹੋਵੇ। ਉਦਾਹਰਨ ਲਈ, ਹਰ ਵਾਰ ਨਵਾਂ ਵਰਤੋਂਕਾਰ Account ਬਣਨ 'ਤੇ ਤੁਹਾਨੂੰ ਵਰਤੋਂਕਾਰ ਦਾ ਨਾਮ ਅਤੇ ਈਮੇਲ ਪਤਾ mailing list ਨੂੰ ਭੇਜਣਾ ਹੋਵੇ।
 
-## Webhook ਕਿਵੇਂ ਬਣਾਈਏ
+## webhook ਕਿਵੇਂ ਬਣਾਇਆ ਜਾਵੇ {#how-to-create-a-webhook}
 
-Webhook ਬਣਾਉਣ ਲਈ, ਆਪਣੇ network admin dashboard ਵਿੱਚ ਜਾਓ। **Ultimate Multisite > Webhooks > Add New Webhook** ਤੇ ਕਲਿੱਕ ਕਰੋ।
+webhook ਬਣਾਉਣ ਲਈ, ਆਪਣੇ network admin dashboard 'ਤੇ ਜਾਓ। **Ultimate Multisite > Webhooks > Add New Webhook** 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
-![Webhooks ਲਿਸਟ ਪੇਜ ਜਿਸ ਵਿੱਚ Add New Webhook ਬਟਨ ਹੈ](/img/admin/webhooks-list.png)
+![Add New Webhook ਬਟਨ ਵਾਲਾ ਖਾਲੀ Webhooks ਸੂਚੀ ਪੰਨਾ](/img/admin/webhooks-list-empty.png)
 
-ਨਵੀਂ webhook ਬਣਾਉਂਦੇ ਸਮੇਂ ਤੁਹਾਡੇ ਤੋਂ **Name, URL,** ਅਤੇ **Event** ਵਰਗੀ ਜਾਣਕਾਰੀ ਮੰਗੀ ਜਾਵੇਗੀ। ਤੁਸੀਂ ਆਪਣੀ webhook ਲਈ ਕੋਈ ਵੀ ਨਾਂ ਵਰਤ ਸਕਦੇ ਹੋ। ਸਭ ਤੋਂ ਜ਼ਰੂਰੀ ਫੀਲਡਾਂ URL ਅਤੇ Event ਹਨ।
+ਫਿਰ ਤੁਸੀਂ webhook configuration ਨੂੰ edit ਕਰ ਸਕਦੇ ਹੋ:
 
-![ਨਵੀਂ webhook ਫਾਰਮ ਜਿਸ ਵਿੱਚ Name, URL, ਅਤੇ Event ਫੀਲਡਾਂ ਹਨ](/img/admin/webhooks-list.png)
+![Name, Event, ਅਤੇ URL fields ਵਾਲਾ Add New Webhook ਫਾਰਮ](/img/admin/webhook-add-modal.png)
 
-URL ਉਹ **endpoint ਜਾਂ ਮੰਜ਼ਿਲ** ਹੈ ਜਿੱਥੇ Ultimate Multisite **payload ਜਾਂ ਡਾਟਾ** ਭੇਜੇਗੀ। ਇਹ ਉਹ ਐਪਲੀਕੇਸ਼ਨ ਹੈ ਜੋ ਡਾਟਾ ਪ੍ਰਾਪਤ ਕਰੇਗੀ।
+ਨਵਾਂ webhook ਬਣਾਉਂਦੇ ਸਮੇਂ ਤੁਹਾਡੇ ਤੋਂ **Name, URL,** ਅਤੇ **Event** ਵਰਗੀ ਜਾਣਕਾਰੀ ਪੁੱਛੀ ਜਾਵੇਗੀ। ਤੁਸੀਂ ਆਪਣੇ webhook ਲਈ ਆਪਣੀ ਪਸੰਦ ਦਾ ਕੋਈ ਵੀ ਨਾਮ ਵਰਤ ਸਕਦੇ ਹੋ। ਸਭ ਤੋਂ ਮਹੱਤਵਪੂਰਨ fields URL ਅਤੇ Event ਹਨ।
 
-Zapier ਸਭ ਤੋਂ ਆਮ ਹੱਲ ਹੈ ਜੋ ਯੂਜ਼ਰ ਤੀਜੀ ਧਿਰ ਦੀਆਂ ਐਪਲੀਕੇਸ਼ਨਾਂ ਨਾਲ ਜੋੜਨ ਲਈ ਵਰਤਦੇ ਹਨ। Zapier ਵਰਗੇ ਪਲੇਟਫਾਰਮ ਤੋਂ ਬਿਨਾਂ, ਤੁਹਾਨੂੰ ਖੁਦ ਇੱਕ ਕਸਟਮ ਫੰਕਸ਼ਨ ਬਣਾਉਣਾ ਪਵੇਗਾ ਜੋ ਡਾਟਾ ਫੜੇ ਅਤੇ ਉਸ ਨੂੰ ਪ੍ਰੋਸੈੱਸ ਕਰੇ। **Ultimate Multisite webhook ਨੂੰ Zapier ਨਾਲ ਕਿਵੇਂ ਵਰਤਣਾ ਹੈ** ਇਸ ਬਾਰੇ ਇਹ ਲੇਖ ਦੇਖੋ।
+![URL field ਅਤੇ payload preview ਦਿਖਾਉਂਦਾ webhook edit interface](/img/admin/webhook-url-field.png)
 
-ਇਸ ਲੇਖ ਵਿੱਚ, ਅਸੀਂ webhook ਕਿਵੇਂ ਕੰਮ ਕਰਦੀ ਹੈ ਅਤੇ Ultimate Multisite ਵਿੱਚ ਉਪਲਬਧ events ਬਾਰੇ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ ਲਵਾਂਗੇ। ਅਸੀਂ ਇੱਕ ਤੀਜੀ ਧਿਰ ਦੀ ਸਾਈਟ [requestbin.com](https://requestbin.com/) ਵਰਤਾਂਗੇ। ਇਹ ਸਾਈਟ ਸਾਨੂੰ ਬਿਨਾਂ ਕੋਈ ਕੋਡਿੰਗ ਕੀਤੇ ਇੱਕ endpoint ਬਣਾਉਣ ਅਤੇ payload ਫੜਨ ਦੀ ਸਹੂਲਤ ਦਿੰਦੀ ਹੈ। _**ਸਪੱਸ਼ਟੀਕਰਨ: ਇਹ ਸਿਰਫ਼ ਇਹ ਦਿਖਾਵੇਗੀ ਕਿ ਡਾਟਾ ਮਿਲ ਗਿਆ ਹੈ।**_ Payload ਨੂੰ ਕੋਈ ਪ੍ਰੋਸੈਸਿੰਗ ਜਾਂ ਕੋਈ ਹੋਰ ਕਾਰਵਾਈ ਨਹੀਂ ਹੋਵੇਗੀ।
+URL ਉਹ **endpoint ਜਾਂ destination** ਹੈ ਜਿਸ 'ਤੇ Ultimate Multisite **payload ਜਾਂ ਡਾਟਾ** ਭੇਜੇਗਾ। ਇਹ ਉਹ application ਹੈ ਜੋ ਡਾਟਾ ਪ੍ਰਾਪਤ ਕਰੇਗੀ।
 
-[requestbin.com](https://requestbin.com/) ਤੇ ਜਾਓ ਅਤੇ Create Request Bin ਤੇ ਕਲਿੱਕ ਕਰੋ।
+Zapier ਸਭ ਤੋਂ ਆਮ solution ਹੈ ਜੋ ਵਰਤੋਂਕਾਰ 3rd party application ਨਾਲ integration ਆਸਾਨ ਬਣਾਉਣ ਲਈ ਵਰਤਦਾ ਹੈ। Zapier ਵਰਗੇ platform ਤੋਂ ਬਿਨਾਂ, ਤੁਹਾਨੂੰ ਡਾਟਾ catch ਕਰਕੇ process ਕਰਨ ਲਈ manually ਇੱਕ custom function ਬਣਾਉਣ ਦੀ ਲੋੜ ਪਵੇਗੀ। **Zapier ਨਾਲ Ultimate Multisite webhook ਕਿਵੇਂ ਵਰਤਣਾ ਹੈ** ਬਾਰੇ ਇਹ ਲੇਖ ਵੇਖੋ।
 
-![RequestBin ਵੈੱਬਸਾਈਟ Create Request Bin ਬਟਨ](/img/admin/webhooks-list.png)
+ਇਸ ਲੇਖ ਵਿੱਚ, ਅਸੀਂ webhook ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ ਇਸਦੀ ਬੁਨਿਆਦੀ ਧਾਰਣਾ ਅਤੇ Ultimate Multisite ਵਿੱਚ ਉਪਲਬਧ events ਨੂੰ ਵੇਖਾਂਗੇ। ਅਸੀਂ [requestbin.com](https://requestbin.com/) ਨਾਮ ਦੀ 3rd party site ਵਰਤਾਂਗੇ। ਇਹ site ਸਾਨੂੰ ਕੋਈ coding ਕੀਤੇ ਬਿਨਾਂ endpoint ਬਣਾਉਣ ਅਤੇ payload catch ਕਰਨ ਦੀ ਆਗਿਆ ਦੇਵੇਗੀ। _**Disclaimer: ਇਹ ਸਿਰਫ਼ ਸਾਨੂੰ ਦਿਖਾਏਗੀ ਕਿ ਡਾਟਾ ਪ੍ਰਾਪਤ ਹੋ ਗਿਆ ਹੈ।**_ payload 'ਤੇ ਕੋਈ processing ਜਾਂ ਕਿਸੇ ਵੀ ਕਿਸਮ ਦੀ action ਨਹੀਂ ਕੀਤੀ ਜਾਵੇਗੀ।
 
-ਉਸ ਬਟਨ ਤੇ ਕਲਿੱਕ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਇਹ ਤੁਹਾਨੂੰ ਲੌਗ ਇਨ ਕਰਨ ਲਈ ਕਹੇਗੀ ਜੇ ਤੁਹਾਡਾ ਪਹਿਲਾਂ ਤੋਂ ਅਕਾਊਂਟ ਹੈ ਜਾਂ ਸਾਈਨ ਅੱਪ ਕਰਨ ਲਈ। ਜੇ ਤੁਹਾਡਾ ਪਹਿਲਾਂ ਤੋਂ ਅਕਾਊਂਟ ਹੈ ਤਾਂ ਇਹ ਤੁਹਾਨੂੰ ਸਿੱਧੇ ਉਨ੍ਹਾਂ ਦੇ dashboard ਤੇ ਲੈ ਜਾਵੇਗੀ। ਉਨ੍ਹਾਂ ਦੇ dashboard ਤੇ, ਤੁਹਾਨੂੰ ਤੁਰੰਤ ਉਹ endpoint ਜਾਂ URL ਦਿਖਾਈ ਦੇਵੇਗਾ ਜੋ ਤੁਸੀਂ ਆਪਣੀ Ultimate Multisite webhook ਬਣਾਉਣ ਵਿੱਚ ਵਰਤ ਸਕਦੇ ਹੋ।
+[requestbin.com](https://requestbin.com/) 'ਤੇ ਜਾਓ ਅਤੇ Create Request Bin 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
-![RequestBin dashboard ਜਿਸ ਵਿੱਚ endpoint URL ਦਿਖਾਇਆ ਗਿਆ ਹੈ](/img/admin/webhooks-list.png)
+ਉਹ button ਕਲਿੱਕ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਇਹ ਤੁਹਾਨੂੰ log in ਕਰਨ ਲਈ ਕਹੇਗਾ ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ account ਹੈ ਜਾਂ sign up ਕਰਨ ਲਈ। ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ account ਹੈ ਤਾਂ ਇਹ ਤੁਹਾਨੂੰ ਸਿੱਧਾ ਉਨ੍ਹਾਂ ਦੇ dashboard 'ਤੇ ਲੈ ਜਾਵੇਗਾ। ਉਨ੍ਹਾਂ ਦੇ dashboard 'ਤੇ, ਤੁਸੀਂ ਤੁਰੰਤ ਉਹ endpoint ਜਾਂ URL ਵੇਖੋਗੇ ਜੋ ਤੁਸੀਂ ਆਪਣਾ Ultimate Multisite webhook ਬਣਾਉਣ ਲਈ ਵਰਤ ਸਕਦੇ ਹੋ।
 
-ਅੱਗੇ ਵਧੋ ਅਤੇ URL ਕਾਪੀ ਕਰੋ ਅਤੇ Ultimate Multisite ਤੇ ਵਾਪਸ ਜਾਓ। Endpoint ਨੂੰ URL ਫੀਲਡ ਵਿੱਚ ਪਾਓ ਅਤੇ dropdown ਵਿੱਚੋਂ ਇੱਕ event ਚੁਣੋ। ਇਸ ਮਿਸਾਲ ਵਿੱਚ, ਅਸੀਂ **Payment Received** ਚੁਣਾਂਗੇ।
+ਅੱਗੇ ਵਧੋ ਅਤੇ URL copy ਕਰੋ ਅਤੇ Ultimate Multisite 'ਤੇ ਵਾਪਸ ਜਾਓ। endpoint ਨੂੰ URL field ਵਿੱਚ ਰੱਖੋ ਅਤੇ dropdown ਤੋਂ ਇੱਕ event ਚੁਣੋ। ਇਸ ਉਦਾਹਰਨ ਵਿੱਚ, ਅਸੀਂ **Payment Received** ਚੁਣਾਂਗੇ।
 
-ਇਹ event ਉਦੋਂ ਟ੍ਰਿੱਗਰ ਹੁੰਦੀ ਹੈ ਜਦੋਂ ਕੋਈ ਯੂਜ਼ਰ ਭੁਗਤਾਨ ਕਰਦਾ ਹੈ। ਸਾਰੀਆਂ ਉਪਲਬਧ events, ਉਨ੍ਹਾਂ ਦੀਆਂ ਵੇਰਵੇ, ਅਤੇ payloads ਪੇਜ ਦੇ ਹੇਠਾਂ ਸੂਚੀਬੱਧ ਹਨ। Webhook ਸੇਵ ਕਰਨ ਲਈ **Add New Webhook** ਬਟਨ ਤੇ ਕਲਿੱਕ ਕਰੋ।
+ਇਹ event ਹਰ ਵਾਰ trigger ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਕੋਈ ਵਰਤੋਂਕਾਰ ਭੁਗਤਾਨ ਕਰਦਾ ਹੈ। ਉਪਲਬਧ ਸਾਰੇ events, ਉਨ੍ਹਾਂ ਦਾ ਵੇਰਵਾ, ਅਤੇ payloads ਪੰਨੇ ਦੇ ਹੇਠਾਂ ਸੂਚੀਬੱਧ ਹਨ। webhook save ਕਰਨ ਲਈ **Add New Webhook** button 'ਤੇ ਕਲਿੱਕ ਕਰੋ।
 
-![Payment Received event ਨਾਲ ਸੈੱਟ ਕੀਤੀ Webhook](/img/admin/webhooks-list.png)
+![Payment Received ਚੁਣਿਆ ਹੋਇਆ ਦਿਖਾਉਂਦਾ webhook event dropdown](/img/admin/webhook-event-picker.png)
 
-ਹੁਣ ਅਸੀਂ endpoint ਤੇ ਇੱਕ ਟੈਸਟ event ਭੇਜ ਸਕਦੇ ਹਾਂ ਤਾਂ ਜੋ ਦੇਖ ਸਕੀਏ ਕਿ ਸਾਡੀ ਬਣਾਈ webhook ਕੰਮ ਕਰ ਰਹੀ ਹੈ ਜਾਂ ਨਹੀਂ। ਅਸੀਂ ਇਹ ਆਪਣੀ ਬਣਾਈ webhook ਹੇਠਾਂ **Send Test Event** ਤੇ ਕਲਿੱਕ ਕਰਕੇ ਕਰ ਸਕਦੇ ਹਾਂ।
+ਹੁਣ ਅਸੀਂ endpoint ਨੂੰ test event ਭੇਜ ਸਕਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਸੀਂ ਦੇਖ ਸਕੀਏ ਕਿ ਸਾਡੇ ਦੁਆਰਾ ਬਣਾਇਆ webhook ਕੰਮ ਕਰ ਰਿਹਾ ਹੈ ਜਾਂ ਨਹੀਂ। ਅਸੀਂ ਇਹ ਕੰਮ ਆਪਣੇ ਬਣਾਏ webhook ਦੇ ਹੇਠਾਂ **Send Test Event** 'ਤੇ ਕਲਿੱਕ ਕਰਕੇ ਕਰ ਸਕਦੇ ਹਾਂ।
 
-![Webhook ਹੇਠਾਂ Send Test Event ਵਿਕਲਪ](/img/admin/webhooks-list.png)
+![ਇੱਕ configured webhook ਅਤੇ Send Test action ਦਿਖਾਉਂਦੀ Webhooks ਸੂਚੀ](/img/admin/webhooks-list-populated.png)
 
-ਇਹ ਇੱਕ ਪੁਸ਼ਟੀ ਵਿੰਡੋ ਦਿਖਾਉਂਦੀ ਹੈ ਜੋ ਦੱਸਦੀ ਹੈ ਕਿ ਟੈਸਟ ਸਫਲ ਰਿਹਾ।
+ਇਹ ਇੱਕ confirmation window ਦਿਖਾਉਂਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਕਿਹਾ ਜਾਂਦਾ ਹੈ ਕਿ test successful ਸੀ।
 
-![Webhook ਟੈਸਟ event ਸਫਲ ਹੋਣ ਦੀ ਪੁਸ਼ਟੀ](/img/admin/webhooks-list.png)
+![test payload ਭੇਜਣ ਤੋਂ ਬਾਅਦ webhook test event result](/img/admin/webhook-test-result.png)
 
-ਹੁਣ ਜੇ ਅਸੀਂ _Requestbin_ ਸਾਈਟ ਤੇ ਵਾਪਸ ਜਾਈਏ ਤਾਂ ਅਸੀਂ ਦੇਖਾਂਗੇ ਕਿ payload ਪ੍ਰਾਪਤ ਹੋ ਗਿਆ ਹੈ ਜਿਸ ਵਿੱਚ ਕੁਝ ਟੈਸਟ ਡਾਟਾ ਹੈ।
+ਹੁਣ ਜੇ ਅਸੀਂ _Requestbin_ site 'ਤੇ ਵਾਪਸ ਜਾਵਾਂਗੇ ਤਾਂ ਅਸੀਂ ਵੇਖਾਂਗੇ ਕਿ payload ਕੁਝ test data ਸਮੇਤ ਪ੍ਰਾਪਤ ਹੋ ਗਿਆ ਹੈ।
 
-![RequestBin ਜਿਸ ਵਿੱਚ ਪ੍ਰਾਪਤ webhook payload ਡਾਟਾ ਦਿਖਾਇਆ ਗਿਆ ਹੈ](/img/admin/webhooks-list.png)
-
-ਇਹ webhook ਅਤੇ endpoints ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ ਦਾ ਮੁੱਢਲਾ ਸਿਧਾਂਤ ਹੈ। ਜੇ ਤੁਸੀਂ ਕੋਈ ਕਸਟਮ endpoint ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ Ultimate Multisite ਤੋਂ ਮਿਲੇ ਡਾਟਾ ਨੂੰ ਪ੍ਰੋਸੈੱਸ ਕਰਨ ਲਈ ਇੱਕ ਕਸਟਮ ਫੰਕਸ਼ਨ ਬਣਾਉਣਾ ਪਵੇਗਾ।
+ਇਹ webhook ਅਤੇ endpoints ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ, ਇਸਦਾ ਬੁਨਿਆਦੀ ਸਿਧਾਂਤ ਹੈ। ਜੇ ਤੁਸੀਂ custom endpoint ਬਣਾਉਣਾ ਹੈ, ਤਾਂ ਤੁਹਾਨੂੰ Ultimate Multisite ਤੋਂ ਪ੍ਰਾਪਤ ਕੀਤੇ ਡਾਟਾ ਨੂੰ process ਕਰਨ ਲਈ custom function ਬਣਾਉਣ ਦੀ ਲੋੜ ਪਵੇਗੀ।

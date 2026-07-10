@@ -1,0 +1,117 @@
+---
+title: Flere valutaer
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-valuta {#multi-currency}
+
+Ultimate Multisite: Multi-valuta gør dit netværk i stand til at modtage betalinger i flere valutaer. Det konverterer automatisk priser ved hjælp af live eller manuelle valutakurser, lader dig angive nøjagtige priser pr. produkt for enhver valuta og registrerer hver besøgendes foretrukne valuta via geolokation — alt administreret fra et enkelt admin-Dashboard.
+
+## Nøglefunktioner {#key-features}
+
+- **Automatisk valutakurskonvertering** — priser konverteres fra din basisvaluta ved hjælp af kurser hentet fra din valgte udbyder
+- **Prisoverskridelser pr. produkt** — angiv nøjagtige valutaspecifikke priser på ethvert produkt for at omgå automatisk konvertering
+- **Valutavælger som tilmeldingsfelt** — lader kunder vælge deres foretrukne valuta under betaling/tilmelding
+- **Flere valutakursudbydere** — ECB, Frankfurter, Stripe eller fuldt manuelle kurser
+- **Geolokationsbaseret valutaregistrering** — forudvælger automatisk den valuta, der matcher den besøgendes land
+- **Admin-Dashboard** — administrer aktive valutaer, valutakurser og udbyderindstillinger fra ét sted
+
+## Krav {#requirements}
+
+- Ultimate Multisite 2.0.0 eller nyere
+- WordPress Multisite-installation
+- PHP 7.4 eller nyere
+
+## Installation {#installation}
+
+1. Upload plugin-filerne til `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Aktivér pluginet via skærmen **Plugins** i WordPress (Network Activate)
+3. Gå til **Ultimate Multisite → Multi-Currency** for at åbne admin-Dashboardet
+4. Tilføj de valutaer, du vil acceptere, og konfigurer din valutakursudbyder
+
+## Konfiguration {#configuration}
+
+### Admin-Dashboard {#admin-dashboard}
+
+Multi-valuta admin-Dashboardet (**Ultimate Multisite → Multi-Currency**) er det centrale sted til at:
+
+- Tilføje, aktivere eller deaktivere valutaer
+- Vælge en valutakursudbyder og opdatere kurser efter behov
+- Gennemgå aktuelle kurser for alle aktive valutaer
+- Angive manuelle kurser, når automatiske udbydere ikke er egnede
+
+### Valutakursudbydere {#exchange-rate-providers}
+
+| Udbyder | Beskrivelse |
+|---|---|
+| **ECB** | Den Europæiske Centralbank — gratis daglige kurser til EUR-baserede netværk |
+| **Frankfurter** | Open-source ECB-spejl-API — gratis, ingen API-nøgle påkrævet |
+| **Stripe** | Bruger live FX-kurser fra Stripe — kræver en aktiv Stripe-integration |
+| **Manuel** | Du indtaster kurser direkte; ingen eksterne API-kald |
+
+Vælg din udbyder under **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurser kan opdateres manuelt når som helst eller planlægges til automatisk opdatering.
+
+### Prisoverskridelser pr. produkt {#per-product-pricing-overrides}
+
+Når automatisk konvertering ikke er præcis nok, kan du angive en nøjagtig pris for en bestemt valuta på ethvert produkt:
+
+1. Åbn produkteditoren (**Ultimate Multisite → Products → Edit**)
+2. Rul til sektionen **Currency Pricing**
+3. Indtast den nøjagtige pris for hver valuta, du vil overskrive
+4. Gem produktet
+
+Produkter uden en overskridelse bruger den konverterede pris fra din basisvaluta.
+
+### Valutavælger som tilmeldingsfelt {#currency-selector-signup-field}
+
+Valutavælgerfeltet kan føjes til dit tilmeldings-/betalingsflow, så kunder vælger deres foretrukne valuta ved registrering:
+
+1. Gå til **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivér **Show currency selector on signup**
+3. Angiv eventuelt en standardvaluta, eller lad geolokation bestemme den forudvalgte værdi
+
+Den valgte valuta gemmes med abonnementet og bruges til al efterfølgende fakturering.
+
+### Geolokationsbaseret valutaregistrering {#geolocation-based-currency-detection}
+
+Når geolokationsregistrering er aktiveret, knytter addonet den besøgendes land til en valuta og forudvælger den i valutavælgerfeltet. Sådan aktiveres det:
+
+1. Gå til **Ultimate Multisite → Multi-Currency → Settings**
+2. Aktivér **Detect currency from visitor location**
+3. Knyt lande til valutaer i tabellen **Geolocation Mapping**
+
+Hvis der ikke findes nogen tilknytning for en besøgendes land, bruges netværkets basisvaluta som fallback.
+
+## Ofte stillede spørgsmål {#frequently-asked-questions}
+
+### Hvad sker der, hvis en valutakursudbyder ikke er tilgængelig? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Addonet falder tilbage til de senest hentede kurser. Hvis der aldrig er hentet nogen kurser, falder det tilbage til de manuelle kurser, du har konfigureret. Det anbefales at konfigurere manuelle kurser som et sikkerhedsnet.
+
+### Kan jeg bruge forskellige udbydere til forskellige valutaer? {#can-i-use-different-providers-for-different-currencies}
+
+Nej — én udbyder er aktiv ad gangen for alle valutaer. Brug **Manual**, hvis du har brug for fuld kontrol over individuelle kurser.
+
+### Kræver geolokation et separat plugin? {#does-geolocation-require-a-separate-plugin}
+
+Der kræves ikke noget eksternt geolokationsplugin. Addonet bruger WordPress' indbyggede IP-til-land-registrering. For højere nøjagtighed kan en dedikeret geolokationstjeneste integreres via de medfølgende filter hooks.
+
+### Anvendes overskridelser pr. produkt før eller efter skat? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Overskridelser pr. produkt angiver prisen før skat i målvalutaen. Skat beregnes oven på overskridelsesprisen ved hjælp af din eksisterende skattekonfiguration.
+
+## Changelog {#changelog}
+
+### Version 1.0.0 — Udgivet den 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Ny: Multi-valuta-understøttelse med automatisk valutakurskonvertering
+- Ny: Prisoverskridelser pr. produkt for nøjagtige valutaspecifikke priser
+- Ny: Valutavælger som tilmeldingsfelt til betalingsflowet
+- Ny: Valutakursudbydere: ECB, Frankfurter, Stripe og manuel
+- Ny: Geolokationsbaseret valutaregistrering
+- Ny: Admin-Dashboard til administration af valutaer og valutakurser
+- Rettelse: Dashboard viste altid priser i basisvaluta uanset valgt valuta

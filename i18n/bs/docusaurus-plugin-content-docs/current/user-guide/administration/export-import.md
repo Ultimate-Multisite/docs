@@ -3,17 +3,17 @@ title: Izvoz i uvoz
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Izvoz i Uvoz
+# Izvoz i Uvoz {#export--import}
 
 Ultimate Multisite 2.9.0 dodaje alat za **Izvoz i Uvoz** za samostalnu stranicu, koji se nalazi pod **Alati > Izvoz i Uvoz**. Koristite ga kada trebate spakovati jednu WordPress stranicu u ZIP datoteku, vratiti tu ZIP datoteku, ili premjestiti stranicu između kompatibilnih instalacija WordPress-a za samostalnu stranicu i Ultimate Multisite.
 
-## Zahtjevane dozvole
+## Zahtjevane dozvole {#required-permissions}
 
 Morate se prijaviti kao administrator koji ima pristup meniju **Alati** u WordPressu na stranici koju izvozite ili uvozite. Na Multisite mreži, koristite račun administratora mreže prilikom izvoza ili uvoza podstranica iz alata Ultimate Multisite na nivou mreže.
 
 Preuzimanje ZIP datoteka za izvoz obavlja se putem autentificiranog endpointa za preuzimanje, pa zadržite aktivnu administratorsku sesiju sve dok preuzimanje ne završi i ne dijelite generisane URL adrese za preuzimanje javno.
 
-## Izvoz stranice u ZIP
+## Izvoz stranice u ZIP {#exporting-a-site-to-a-zip}
 
 1. Na WordPress administraciji stranice koju želite kopirati, idite na **Alati > Izvoz i Uvoz**.
 2. Otvorite područje za izvoz i odaberite stranicu koju želite spakovati.
@@ -23,7 +23,7 @@ Preuzimanje ZIP datoteka za izvoz obavlja se putem autentificiranog endpointa za
 
 Sačuvajte ZIP na sigurnom mjestu. Može sadržavati sadržaj stranice, postavke, medijske fajlove i odabrane kodne resurse.
 
-## Šta izvoz uključuje
+## Šta izvoz uključuje {#what-the-export-includes}
 
 ZIP izvoz može uključivati:
 
@@ -34,7 +34,7 @@ ZIP izvoz može uključivati:
 
 Točan veličina ZIP datoteke zavisi od količine medija, odabranih pluginova i tema, te veličine tabela baze podataka stranice.
 
-## Uvoz stranice iz ZIP
+## Uvoz stranice iz ZIP {#importing-a-site-from-a-zip}
 
 1. Idite na **Alati > Izvoz i Uvoz** na ciljnoj WordPress stranici.
 2. Otvorite područje za uvoz i uploadujte ZIP datoteku koju je kreirao alat Izvoz i Uvoz.
@@ -46,7 +46,7 @@ Točan veličina ZIP datoteke zavisi od količine medija, odabranih pluginova i 
 
 Na instalaciji WordPress-a za samostalnu stranicu, uvoz ZIP datoteke zamjenjuje trenutnu stranicu uvoznom stranicom. Napravite kompletnu rezervnu kopiju ciljne stranice prije nego što počnete, i izbjegavajte pokretanje više uvoza za istu stranicu istovremeno.
 
-## Ograničenja i napomene o kompatibilnosti
+## Ograničenja i napomene o kompatibilnosti {#limitations-and-compatibility-notes}
 
 - Vrlo veliki direktorijumi za upload ili medijske biblioteke mogu stvoriti velike ZIP datoteke. Potvrdite PHP limite za upload, limite za izvršavanje, disk prostor, memoriju i postavke timeouta servera prije izvoza ili uvoza velikih stranica.
 - Vrlo velike medijske biblioteke možda će morati biti premeštene tokom perioda održavanja sa niskim prometom.

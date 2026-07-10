@@ -3,7 +3,7 @@ title: Webhooky
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Prvý pohľad na webhooks (v2)
+# Prvý pohľad na webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**POZOR: Tento príspevok alebo funkcia je určená pre pokročilých používateľov.**_
 
@@ -11,7 +11,7 @@ _**POZOR: Tento príspevok alebo funkcia je určená pre pokročilých používa
 
 Toto je užitočné, ak potrebujete integrovať alebo predať určité údaje z Ultimate Multisite do iného CRM alebo systému pri každom spustení udalosti. Napríklad potrebujete poslať meno a e-mail používateľa na mailing list pri každom vytvorení nového účtu používateľa.
 
-## Ako vytvoriť webhook
+## Ako vytvoriť webhook {#how-to-create-a-webhook}
 
 Aby ste vytvorili webhook, prejdite do dashboardu administrátora vašej siete (network admin dashboard). Kliknite na **Ultimate Multisite > Webhooks > Pridať nový webhook**.
 

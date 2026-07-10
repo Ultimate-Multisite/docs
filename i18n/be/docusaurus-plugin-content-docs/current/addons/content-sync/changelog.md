@@ -3,9 +3,9 @@ title: Журнал змен для Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Журнал змены Content Sync
+# Журнал змены Content Sync {#content-sync-changelog}
 
-### Version 1.1.0 - Released on 2025-12-31
+### Version 1.1.0 - Released on 2025-12-31 {#version-110---released-on-2025-12-31}
 * Нова: Падтрымка синхронізацыі ўсіх тыпаў паста (posts, pages, custom post types)
 * Нова: Фільтрацыя тыпаў паста на этапе выбару кантанкту
 * Нова: Этап выбару выточнага сайта — синхронізацыя з любыга сайта, а не толькі з галоўнага
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Зменнена: Этап "Select Templates" перадаўвана на "Select Data"
 * Улепшана: Спецыфічны для Elementor код цяпер працуе толькі для тыпу паста elementor_library
 
-### Version 1.0.0 - Released on 2025-12-19
+### Version 1.0.0 - Released on 2025-12-19 {#version-100---released-on-2025-12-19}
 * Першапачатковае выпусканне
 * Многаэтапны візард для выбару тэматы і сайта
 * Патчэрынг з адказнай прагрэсу ў рэальным часе

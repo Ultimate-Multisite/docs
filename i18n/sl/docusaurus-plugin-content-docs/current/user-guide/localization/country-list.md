@@ -3,7 +3,7 @@ title: Seznam držav
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Preuradja seznamu držav v Ultimate Multisite
+# Preuradja seznamu držav v Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Spisni spisak držav za izbiro se sortirajo po abecednem na podlagi angleških različic imen držav. To lahko pomeni, da je domna država vaše podjetja in/ali večine vaših strank pogosto skrita v sredini ogromnega seznamov imen držav.
 

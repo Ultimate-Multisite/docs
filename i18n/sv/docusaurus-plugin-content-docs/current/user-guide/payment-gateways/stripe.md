@@ -3,19 +3,19 @@ title: Konfigurera Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Konfigurera Stripe som betalgateway (v2)
+# Konfigurera Stripe som betalgateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**VIKTIGT: Den här artikeln gäller Ultimate Multisite version 2.x.**_
 
 Du kan aktivera upp till fyra betalmetoder på vår sida för betalinställningar: Stripe, Stripe Checkout, PayPal och Manuell. I den här artikeln går vi igenom hur du integrerar med **Stripe**.
 
-## Aktivera Stripe
+## Aktivera Stripe {#enabling-stripe}
 
 För att aktivera Stripe som tillgänglig betalgateway på ditt nätverk går du till **Ultimate Multisite > Settings > Payments** och bockar i reglaget bredvid **Stripe** eller **Stripe Checkout** under sektionen Active Payment Gateways.
 
 ![Aktivera Stripe under aktiva betalgatewayer](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Med den här metoden visas ett fält där kunden kan ange sitt kortnummer direkt i kassan.
 
@@ -47,7 +47,7 @@ Kopiera värdena från **Publishable key** och **Secret key** i kolumnen **Token
 
 ![Klistra in Stripe-nycklar i Ultimate Multisite-inställningarna](/img/config/settings-payment-gateways.png)
 
-## Konfigurera Stripe Webhook
+## Konfigurera Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe skickar webhook-händelser som meddelar Ultimate Multisite varje gång något händer på **ditt Stripe-konto**.
 

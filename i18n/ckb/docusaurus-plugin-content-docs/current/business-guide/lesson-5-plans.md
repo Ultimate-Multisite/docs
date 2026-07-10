@@ -3,15 +3,15 @@ title: 'بۆژمێرە ٥: دیزاینی پلاندانانەکەت'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# سبق خامس: دیزاینی پلاندانەکانت
+# سبق خامس: دیزاینی پلاندانەکانت {#lesson-5-designing-your-plans}
 
 ڕێژەکانی پلاندانان (tiers) تەنها ئاستیราقەکان نین، بەڵکو دەربڕین ئەو شێوەیە کە کڕیارانی تایبەت بە تۆ ڕاستەوخۆ کار دەکەن. لەم وانەیە دەتوانیت پلاندانانەکانی بەرهەم دیزاین بکەیت کە باوەرەکان لە پۆلەکانی جیاوازدا پێویستیی ڕاستەقینەیان بگونجێن.
 
-## کێدا لە کۆتایی دەکەوینەوە
+## کێدا لە کۆتایی دەکەوینەوە {#where-we-left-off}
 
 FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym Pro، Fitness Chain). ئێستا پلاندانانەکانی دروست دەکەین کە دیاری دەکەن کڕیار چی دەگرێت و چەند دەدەن.
 
-## بیرکردن لەسەر گرووپە کڕیاران
+## بیرکردن لەسەر گرووپە کڕیاران {#thinking-in-customer-segments}
 
 خەواڵێکی زۆر کەس دەکات هەوڵ بدات پلاندانان بەپێی تایبەتمەندییە تەکنیکییەکان دیزاین بکات (وەک کۆگاکردن، باندهای بیناکار، ژمارەی لاپەڕەکان). کڕیارانی تایبەت بە تۆ لەو شێوازەدا بیر ناکەنەوە. سوودبەخۆیی گۆڕەرێک دەبینێت کە پێویستیی کارکردنی خۆیان هەیە.
 
@@ -25,11 +25,11 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 
 پلاندانانەکانت دەبێت بگونجێن بەم گرووپان، نەک بە کۆمەڵێک تایبەتمەندییە ئاراستەیی.
 
-## دروستکردنی پلاندانانی FitSite
+## دروستکردنی پلاندانانی FitSite {#creating-the-fitsite-plans}
 
 بۆ هەر پلاندانانێک، بگواشبە **Ultimate Multisite > Products > Add Product**.
 
-### پلاندانان ١: FitSite Starter -- $49/month
+### پلاندانان ١: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Cilna:** Solo trainers û studiolikî ki girmenîna gelek naxwaz dikin.
 
@@ -59,7 +59,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 - Theme-a wekî selektif kirine: Aktive bike
 - Hemû themeyên din: Pêkketin
 
-### Plan 2: FitSite Growth -- $99/mêhna
+### Plan 2: FitSite Growth -- $99/mêhna {#plan-2-fitsite-growth----99month}
 
 **Cilna:** Gimnazên yek ji cihê yên bi destpêkê hene
 
@@ -85,7 +85,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 - Gruba planlar: FitSite Plans
 - Sipora sipor: 2
 
-### Plan 3: FitSite Pro -- $199/mêhna
+### Plan 3: FitSite Pro -- $199/mêhna {#plan-3-fitsite-pro----199month}
 
 **Cilna:** Çandên fitnesîkên bi gelek cihê
 
@@ -109,7 +109,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 - گروه طرح: FitSite Plans
 - ترتیب محصول: ۳
 
-## راه‌اندازی گروه طرح (Setting Up the Plan Group)
+## راه‌اندازی گروه طرح (Setting Up the Plan Group) {#setting-up-the-plan-group}
 
 گروه طرح تضمین می‌کند مشتریان فقط می‌توانند در خانواده‌ی طرح‌های FitSite ارتقاء یا降級 کنند. در تب **Up & Downgrades** هر طرح، مراحل زیر را دنبال کنید:
 
@@ -118,7 +118,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 
 این کار یک مسیر ارتقاء واضح ایجاد می‌کند: Starter → Growth → Pro.
 
-## اضافه کردن افزایش سفارش‌ها (Adding Order Bumps)
+## اضافه کردن افزایش سفارش‌ها (Adding Order Bumps) {#adding-order-bumps}
 
 افزایش‌های سفارش (Order bumps) محصولات اضافی هستند که در هنگام پرداخت ارائه می‌شوند. برای FitSite، موارد زیر را در نظر بگیرید:
 
@@ -128,7 +128,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 
 این موارد را در Ultimate Multisite به عنوان محصولات نوع **Package** ایجاد کرده و آن‌ها را با طرح‌های مربوطه مرتبط کنید.
 
-## چرا این ساختار کار می‌کند (Why This Structure Works)
+## چرا این ساختار کار می‌کند (Why This Structure Works) {#why-this-structure-works}
 
 - **Starter** مانعە بۆ دەستپێکردنەکە دەگرێتەوە --ราคای کەم، پێداویستی سادە، خێڕینی trainers بە خێرایی لەسەر ئۆنلاین
 
@@ -140,7 +140,7 @@ FitSite ته‌لاثمبڵ (template) ئامادەیە (Studio Essential، Gym 
 
 - **Clear upgrade path** واتای ئەوەیە کە کڕیاران لەگەڵ ئێمە گەشە بکەن نەک بەجێ بڕۆن
 
-## تۆڕی FitSite تا ئێستا چی دروست کردووین
+## تۆڕی FitSite تا ئێستا چی دروست کردووین {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -156,7 +156,7 @@ FitSite Network
 └── ئامادە بۆ ڕێکخستنی checkout (داواکاریی دووەم)
 ```
 
-## چی ئەم وانەیە دروست کردین
+## چی ئەم وانەیە دروست کردین {#what-we-built-this-lesson}
 
 - **سێ پلەی پلاندانان** کە بە بەشەکانی تایبەت بە کارە فیزیکی دروستکراون
 - **ڕێگریکردنی تایبەتمەندییەکان (Feature gating)** بە بەکارهێنانی plugin و controls ی Ultimate Multisite

@@ -1,13 +1,13 @@
 ---
-title: కస్టమ్ గేట్‌వే డెవలప్‌మెంట్
+title: కస్టమ్ గేట్‌వే అభివృద్ధి
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# కస్టమ్ గేట్‌వే డెవలప్‌మెంట్
+# కస్టమ్ గేట్‌వే అభివృద్ధి {#custom-gateway-development}
 
-మీరు `Base_Gateway` క్లాస్‌ను ఎక్స్‌టెండ్ చేయడం ద్వారా కస్టమ్ పేమెంట్ గేట్‌వేలను సృష్టించవచ్చు.
+`Base_Gateway` క్లాస్‌ను విస్తరించి మీరు కస్టమ్ చెల్లింపు గేట్‌వేలను సృష్టించవచ్చు.
 
-## Gateway Class
+## గేట్‌వే క్లాస్ {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Register the Gateway
+## గేట్‌వేను నమోదు చేయండి {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Key Methods
+## ముఖ్య విధానాలు {#key-methods}
 
-| Method | ఉద్దేశం |
+| విధానం | ఉద్దేశ్యం |
 |--------|---------|
-| `process_single_payment()` | వన్-టైమ్ పేమెంట్‌లను నిర్వహించడం |
-| `process_signup()` | పునరావృత సబ్‌స్క్రిప్షన్‌లను సెటప్ చేయడం |
-| `process_refund()` | రీఫండ్ రిక్వెస్ట్‌లను నిర్వహించడం |
-| `get_payment_methods()` | కస్టమర్ కోసం సేవ్ చేయబడిన పేమెంట్ పద్ధతులను తిరిగి ఇవ్వడం |
+| `process_single_payment()` | ఒకసారి చేసే చెల్లింపులను నిర్వహిస్తుంది |
+| `process_signup()` | పునరావృత subscriptionలను సెటప్ చేస్తుంది |
+| `process_refund()` | refund అభ్యర్థనలను నిర్వహిస్తుంది |
+| `get_payment_methods()` | customer కోసం సేవ్ చేసిన చెల్లింపు విధానాలను తిరిగి ఇస్తుంది |
 
-## Tips
+## పునరావృత membershipల కోసం పునరుద్ధరణ credentials {#renewal-credentials-for-recurring-memberships}
 
-- Ultimate Multisite లో ఎర్రర్ డిస్‌ప్లేను నిర్వహించడానికి, ఎప్పుడూ విఫలమైనప్పుడు `WP_Error` ను తిరిగి ఇవ్వండి.
-- మీ గేట్‌వే ఏ రకమైన పేమెంట్ రకాలను హ్యాండిల్ చేస్తుందో ప్రకటించడానికి `$this->supports` ను సెట్ చేయండి (`one-time`, `recurring`).
-- గేట్‌వేకు సంబంధించిన లాగింగ్ కోసం `wu_log_add()` ను ఉపయోగించండి.
+Ultimate Multisite v2.13.0 లో, `auto_renew` నిల్వ చేయబడే ముందు పునరావృత membershipకు మళ్లీ ఉపయోగించగల పునరుద్ధరణ credential ఉందో లేదో gateway integrations తెలియజేయగలవు. `wu_membership_has_renewal_credential` ను hook చేసి ఇలా తిరిగి ఇవ్వండి:
+
+- membershipకు gateway subscription, billing agreement, vault token, లేదా దానికి సమానమైన మళ్లీ ఉపయోగించగల చెల్లింపు విధానం ఉన్నప్పుడు `true`.
+- పునరావృత credential లేదని లేదా ఉపయోగించలేనిదని gatewayకు తెలిసినప్పుడు `false`.
+- పాల్గొనకూడదనుకుంటే, default ప్రవర్తనను మార్చకుండా ఉంచడానికి `null`.
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+gateway `false` తిరిగి ఇస్తే, Ultimate Multisite ఆ membershipను auto-renewal నిలిపివేసి సేవ్ చేస్తుంది, అలాగే missing-credential markerను నిల్వ చేస్తుంది. నిర్వాహకులకు తెలియజేయడానికి, re-authorization flow ప్రారంభించడానికి, లేదా support notes జోడించడానికి `wu_membership_renewal_credential_missing` ను ఉపయోగించండి:
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+కొత్తగా మళ్లీ ఉపయోగించగల credential నిల్వ చేసిన తర్వాత, మీ gateway యొక్క విజయవంతమైన re-authorization flow లో భాగంగా missing-credential markerను క్లియర్ చేయండి.
+
+## సూచనలు {#tips}
+
+- విఫలమైనప్పుడు ఎల్లప్పుడూ `WP_Error` ను తిరిగి ఇవ్వండి, తద్వారా Ultimate Multisite లోపం ప్రదర్శనను నిర్వహించగలదు
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- gatewayకు సంబంధించిన logging కోసం `wu_log_add()` ను ఉపయోగించండి
+
+## AI connector provider సామర్థ్యాలు {#ai-connector-provider-capabilities}
+
+AI connector ఆధారిత చర్యలను పిలిచే కస్టమ్ integrations, AI Provider for Anthropic Max v1.3.0 తో పరిచయం చేసిన మద్దతు ఉన్న OAuth provider సమితికి అనుగుణంగా ఉండాలి:
+
+| ప్రొవైడర్ | సామర్థ్య గమనికలు |
+|---|---|
+| **Anthropic Max** | ప్రస్తుత OAuth account pool workflowకు మద్దతు ఇస్తుంది. connector అభ్యర్థనలను proxy చేస్తున్నప్పుడు, ఖాళీ tool arrays మరియు round-trip thinking signatures సహా Anthropic tool-use payloadలను అలాగే ఉంచండి. |
+| **OpenAI ChatGPT/Codex** | OAuth pool workflowకు మరియు connector మద్దతు ఉన్న చర్యల కోసం పూర్తి tool-support ప్రవర్తనకు మద్దతు ఇస్తుంది. Codexకు ప్రత్యేకమైన tool metadataను తొలగించకుండా tool definitions మరియు tool-call resultsను పంపండి. |
+| **Google AI Pro** | OAuth pool workflowకు మరియు SDK ఆధారిత provider integrationకు మద్దతు ఇస్తుంది. అభ్యర్థనలను route చేయడానికి ముందు OAuth completion తర్వాత provider accountsను refresh చేయండి. |
+
+Cursor Pro integration మరియు setup మార్గాలు తీసివేయబడ్డాయి. custom connector UIsలో Cursor Proను ఎంచుకోగల providerగా నమోదు చేయవద్దు లేదా Cursorకు సంబంధించిన OAuth సూచనలు చూపవద్దు.
+
+sandboxed లేదా headless environments కోసం, manual OAuth fallback pathను అందుబాటులో ఉంచండి. దాంతో నిర్వాహకులు తిరిగి వచ్చిన authorization dataను paste చేసి, automatic browser redirectపై ఆధారపడకుండా account connectionను పూర్తి చేయగలరు.

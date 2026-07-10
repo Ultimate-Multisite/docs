@@ -1,22 +1,22 @@
 ---
 title: Hostinger (hPanel) -integraatio
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integrointi
+# Hostinger (hPanel) Integrointi {#hostinger-hpanel-integration}
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 
 Hostinger on suosittu verkkopalveluntarjoaja, jolla on moderni hallintapaneeli nimeltään hPanel. Ultimate Multisite Hostinger -integraatio mahdollistaa automaattisen domeenisi synkronoinnin Ultimate Multisiten ja Hostingerin hPanel välillä, jonka avulla voit hallita domeenin mappauksia ja alavalikoita suoraan WordPress-adminisi kautta.
 
-## Ominaisuudet
+## Ominaisuudet {#features}
 
 - Automatiivinen lisädomeenin luominen hPanelissa
 - Automatiivinen alavalikon luominen hPanelissa (alavalikkomut multisite -asennuksille)
 - Domeenin poisto, kun mappaukset poistetaan
 - Sujuva integraatio hPanelin domeeninhallintaportaaliin
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 
 Hostinger-integraation käyttämiseksi sinun tarvitsee:
 
@@ -35,9 +35,9 @@ Valinnaisuutena voit myös määritellä:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Oletus-API-päätepiste
 ```
 
-## Asetusohjeet
+## Asetusohjeet {#setup-instructions}
 
-### 1. Luo Hostinger API-tokenisi
+### 1. Luo Hostinger API-tokenisi {#1-generate-your-hostinger-api-token}
 
 1. Kirjaudu sisään Hostinger-tilillesi ja pääset hPanelin kautta
 2. Siirry kohtaan **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Oletus-API-p�
    - Subdomain management (Alavalikon hallinta)
 6. Kopioi luotu token ja tallenna se turvallisesti
 
-### 2. Etsi Tilin IDsi
+### 2. Etsi Tilin IDsi {#2-find-your-account-id}
 
 1. hPanelissa siirry kohtaan **Account Settings** → **Account Information**
 2. Tili-IDsi näkyy tällä sivulla
 3. Kopioi ja tallenna tämä ID seuraavaa vaihetta varten
 
-### 3. Lisää vakioita wp-config.php:ään
+### 3. Lisää vakioita wp-config.php:ään {#3-add-constants-to-wp-configphp}
 
 Lisää seuraavat vakioiden määritelmät tiedostoon `wp-config.php`:
 
@@ -74,7 +74,7 @@ Jos Hostinger-tilisi käyttää eri API-päätepistettä, voit muokata sitä:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Aktivoi integraatio
+### 4. Aktivoi integraatio {#4-enable-the-integration}
 
 1. WordPressin hallintapaneelissa (admin) siirry kohtaan **Ultimate Multisite > Settings**
 2. Siirry välilehdelle **Domain Mapping**
@@ -82,9 +82,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Aktivoi **Hostinger (hPanel)** -integraatio
 5. Napsauta **Save Changes**
 
-## Miten se toimii
+## Miten se toimii {#how-it-works}
 
-### Lisäalueet (Addon Domains)
+### Lisäalueet (Addon Domains) {#addon-domains}
 
 Kun mappaat aluetta Ultimate Multisite-ohjelmassa:
 
@@ -92,7 +92,7 @@ Kun mappaat aluetta Ultimate Multisite-ohjelmassa:
 2. Alue on konfiguroitu osoittamaan juurihakemistoosi (root directory)
 3. Kun aluetta ei enää ole mappattu, integraatio poistaa sen automaattisesti hPanelista
 
-### Alavaluet (Subdomains)
+### Alavaluet (Subdomains) {#subdomains}
 
 Alavalue-multisiteasennuksissa uuden sivuston luomisen yhteydessä:
 
@@ -100,7 +100,7 @@ Alavalue-multisiteasennuksissa uuden sivuston luomisen yhteydessä:
 2. Se lähettää pyynnön Hostingerin API:lle lisätäkseen alavalueen
 3. Alavalue on konfiguroitu osoittamaan juurihakemistoosi (root directory)
 
-## Tärkeät huomiot
+## Tärkeät huomiot {#important-notes}
 
 - Integraatio käyttää Hostingerin REST API:a yhteydenottoon tilillesi
 - Sinulla on oltava tarvittavat oikeudet domeenin ja alavalueiden hallintaan API-tokenisi
@@ -108,33 +108,33 @@ Alavalue-multisiteasennuksissa uuden sivuston luomisen yhteydessä:
 - API-pyynnöt tehdään turvallisesti HTTPS:n kautta
 - Pidä API-tokenisi turvassa ja älä koskaan jaa sitä julkisesti
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
-### API-yhteydenottoputket
+### API-yhteydenottoputket {#api-connection-issues}
 
 Varmista, että API-tokenisi on oikein ja se ei ole vanhentunut
 Tarkista, että tili-IDsi on oikein
 Varmista, että API-tokenillasi on tarvittavat oikeudet verkkotunnusten hallintaan
 Varmista, että Hostinger-tili on aktiivinen ja hyvässä kunnossa
 
-### Verkkotunnusta ei lisätty
+### Verkkotunnusta ei lisätty {#domain-not-added}
 
 Tarkista Ultimate Multisite -logit mahdollisten virheilmoitusten löytämiseksi
 Varmista, että verkkotunnus ei ole jo lisätty Hostinger-tilillesi
 Varmista, että Hostinger-tilillä ei ole saavuttanut rajoitustaan lisäverkkotunnuksille
 Varmista, että verkkotunnus on osoitettu oikein Hostingerin nameservereihin
 
-### SSL-sertifikaatin ongelmat
+### SSL-sertifikaatin ongelmat {#ssl-certificate-issues}
 
 Integraatio ei käsittele SSL-sertifikaattien myöntämistä
 Hostinger tarjoaa tyypillisesti ilmaisia SSL-sertifikaatteja AutoSSL:n avulla
 Voit hallita SSL-sertifikaatteja suoraan hPanelissa **SSL/TLS** -osiossa
 Vaihtoehtoisesti käytä Let's Encryptin AutoSSL-ominaisuutta Hostingerin kanssa
 
-## Tuki
+## Tuki {#support}
 
 Lisätukeen Hostinger-integraatioon voit katsoa seuraaviin:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

@@ -3,7 +3,7 @@ title: Registrar punt d'acció API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# L'endpoint API de registre d'Ultimate Multisite
+# L'endpoint API de registre d'Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 En aquest tutorial, aprendreu com utilitzar l'endpoint API `/register` d'Ultimate Multisite per crear tot el procés d'onboarding (incorporació) d'un nou client a la vostra xarxa i com fer-ho amb Zapier.
 
@@ -26,11 +26,11 @@ Seleccioneu **Enable API** i obteneu les vostres credencials API.
 
 Ara, explorarem l'endpoint i després crearem una acció de registre a Zapier.
 
-## Paràmetres del cos de l'endpoint
+## Paràmetres del cos de l'endpoint {#endpoint-body-parameters}
 
 Farem una revisió de la informació mínima que hem de enviar a l'endpoint. A la fi d'aquest article, trobareu la crida completa.
 
-### Customer
+### Customer {#customer}
 
 Aquesta és la informació necessària per al procés de creació de l'Usuari i del Client (Customer) d'Ultimate Multisite:
 
@@ -40,25 +40,25 @@ Aquesta és la informació necessària per al procés de creació de l'Usuari i 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 L'única informació que necessitem dins d'aquest objecte és l'Estat de la Membresia (Membership Status).
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Els productes es proporcionen en un array amb 1 o més IDs de producte de la vostra xarxa. Ateneu, aquest endpoint no crea productes. Consulteu la documentació d'Ultimate Multisite per entendre millor l'endpoint de creació de productes.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Com amb Membership, només necessitem l'estat.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 I per tancar el cos necessitem l'URL i el Títol del lloc web, ambdós dins de l'objecte Site.
 
@@ -66,13 +66,13 @@ I per tancar el cos necessitem l'URL i el Títol del lloc web, ambdós dins de l
 
 La resposta de l'endpoint de registre serà un array amb la informació de la membresia acabada de crear.
 
-## Creació d'una acció a Zapier
+## Creació d'una acció a Zapier {#creating-an-action-in-zapier}
 
 Amb la introducció d'aquest nou i més robust endpoint de creació de comptes, també accedeu a una nova acció a Zapier.
 
 Sabeu com utilitzar i gaudir de tot el que ofereix la nova versió de Zapier? Apreneu més aquí. (link?)
 
-### Creació d'una acció
+### Creació d'una acció {#creating-an-action}
 
 Per il·lustrar millor com utilitzar l'endpoint de registre amb Zapier, creem una integració amb Google Forms. Cada vegada que es pengui aquest formulari i la informació es guarda a la hoja de respostes del formulari, es crearà una nova membresia a la xarxa d'Ultimate Multisite.
 
@@ -102,7 +102,7 @@ Amb la informació configurada, continueu amb la prova final. A la última panta
 
 Proeu el vostre nou Zap i hauria de completar-se amb èxit. Si apareix qualsevol error, reviseu tots els camps i si es estan enviant correctament. Com que hi ha molta informació, algunes coses poden passar desaperceptades.
 
-### Paràmetres complets de l'endpoint
+### Paràmetres complets de l'endpoint {#complete-endpoint-parameters}
 
 Aquí teniu la crida completa i totes les possibilitats de camps que es poden enviar.
 

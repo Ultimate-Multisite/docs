@@ -3,11 +3,11 @@ title: Expiração de Membro e Bloqueio do Site
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Expiração de Membro e Bloqueio do Site
+# Expiração de Membro e Bloqueio do Site {#membership-expiration-and-site-blocking}
 
 Este guia explica como o Ultimate Multisite lida com a expiração de membros, o término de testes e o bloqueio do frontend do site. Ele cobre o ciclo de vida de um membro, desde o ativo até o expirado, as configurações que controlam se os sites são bloqueados e o que verificar quando os sites permanecem acessíveis após a expiração de uma membresia.
 
-## Ciclo de Vida do Status do Membro
+## Ciclo de Vida do Status do Membro {#membership-status-lifecycle}
 
 Todo membro no Ultimate Multisite possui um dos seguintes status:
 
@@ -24,7 +24,7 @@ Membrosias gratuitas não expiram automaticamente. O Ultimate Multisite as trata
 | **Expired** | Passou da data de expiração e do período de carência sem renovação |
 | **Cancelled** | Cancelado explicitamente pelo cliente ou administrador |
 
-### Como as Membrosias Transicionam para Expirado
+### Como as Membrosias Transicionam para Expirado {#how-memberships-transition-to-expired}
 
 O Ultimate Multisite executa uma verificação em segundo plano **a cada hora** que procura por membrosias que devem ser marcadas como expiradas. Esta verificação usa [Action Scheduler](https://actionscheduler.org/) (e não o WP-Cron diretamente) e é executada como a ação agendada `wu_membership_check`.
 
@@ -34,7 +34,7 @@ A verificação de expiração possui um **período de carência embutido de 3 d
 O período de carência de expiração de 3 dias é separado da configuração de Período de Carência de Bloqueio do Frontend, descrita abaixo. O período de carência de expiração controla quando o **status muda** de ativo/suspenso para expirado. O período de carência de bloqueio do frontend controla quando o **site é bloqueado** depois que o status já mudou.
 :::
 
-#### Membrosias de Renovação Automática vs. Não Automática
+#### Membrosias de Renovação Automática vs. Não Automática {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Esta distinção é crucial para entender o comportamento de expiração:
 
@@ -42,7 +42,7 @@ Esta distinção é crucial para entender o comportamento de expiração:
 
 - **Membrosias de renovação automática** (`auto_renew = true`): A verificação de expiração cron **ignora completamente estas**. Espera-se que o gateway de pagamento (Stripe, PayPal, etc.) notifique o Ultimate Multisite via webhooks quando uma assinatura falhar ou for cancelada. Se o webhook não for recebido — devido a um endpoint mal configurado, uma interrupção do gateway ou uma assinatura cancelada fora do sistema — a membresia pode permanecer `active` indefinidamente mesmo após a data de expiração.
 
-### Como os Testes Terminam
+### Como os Testes Terminam {#how-trials-end}
 
 Quando o período de teste de uma membresia termina, o sistema:
 
@@ -52,11 +52,11 @@ Quando o período de teste de uma membresia termina, o sistema:
 
 Este processo é executado no mesmo cron horário da verificação regular de expiração, mas **apenas para membrosias não de renovação automática**. Para testes de renovação automática, o gateway de pagamento cuida da transição de teste para assinatura paga.
 
-## Bloquear Acesso ao Frontend
+## Bloquear Acesso ao Frontend {#block-frontend-access}
 
 Por padrão, quando uma membresia expira ou fica suspensa, **apenas o painel wp-admin é restrito**. O frontend público do site permanece acessível aos visitantes. Para bloquear também o acesso público, você deve ativar a configuração **Block Frontend Access**.
 
-### Configurando a Configuração
+### Configurando a Configuração {#configuring-the-setting}
 
 Vá para **Ultimate Multisite > Settings > Memberships** e ative **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Três configurações relacionadas controlam este comportamento:
 | **Frontend Block Grace Period** | Número de dias para esperar após a membresia ficar inativa antes de bloquear. Defina como `0` para bloquear imediatamente. | 0 |
 | **Frontend Block Page** | Uma página no site principal para redirecionar os visitantes quando um site é bloqueado. Se não for definida, os visitantes verão uma mensagem genérica de "Site não disponível". | None |
 
-### O que os Visitantes Veem Quando um Site é Bloqueado
+### O que os Visitantes Veem Quando um Site é Bloqueado {#what-visitors-see-when-a-site-is-blocked}
 
 Quando o acesso ao frontend é bloqueado, os visitantes do site irão:
 
@@ -83,7 +83,7 @@ Quando o acesso ao frontend é bloqueado, os visitantes do site irão:
 
 Os administradores do site ainda podem fazer login — a página de login nunca é bloqueada.
 
-### O que é Bloqueado e Quando
+### O que é Bloqueado e Quando {#what-gets-blocked-and-when}
 
 O comportamento de bloqueio depende do status da membresia:
 
@@ -104,21 +104,21 @@ Mesmo que um período de teste tenha terminado, uma membresia com status `triali
 Membrosias canceladas são sempre bloqueadas assim que a data de expiração passa, independentemente de o Block Frontend Access estar ativado. O Período de Carência de Bloqueio do Frontend **não** se aplica a membrosias canceladas.
 :::
 
-## Solução de Problemas: Sites Permanecendo Acessíveis Após a Expiração
+## Solução de Problemas: Sites Permanecendo Acessíveis Após a Expiração {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Se os sites permanecerem publicamente acessíveis após a expiração de uma membresia, siga estas verificações em ordem:
 
-### 1. Verifique se a Configuração Block Frontend Access Está Ativada
+### 1. Verifique se a Configuração Block Frontend Access Está Ativada {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Vá para **Ultimate Multisite > Settings > Memberships** e confirme se o toggle **Block Frontend Access** está ligado. Esta configuração está **desativada por padrão**, o que significa que apenas o wp-admin é restrito quando uma membresia se torna inativa.
 
-### 2. Verifique o Período de Carência de Bloqueio do Frontend
+### 2. Verifique o Período de Carência de Bloqueio do Frontend {#2-check-the-frontend-block-grace-period}
 
 Na mesma página de configurações, verifique o valor de **Frontend Block Grace Period**. Se este estiver definido como 7 dias, por exemplo, o frontend não será bloqueado até 7 dias após a data de expiração da membresia — mesmo que o status da membresia já esteja `expired`.
 
 Defina como `0` se você quiser o bloqueio imediato após a membresia se tornar inativa.
 
-### 3. Confirme se o Status da Membresia Realmente Mudou
+### 3. Confirme se o Status da Membresia Realmente Mudou {#3-confirm-the-membership-status-has-actually-changed}
 
 Vá para **Ultimate Multisite > Memberships** e verifique o status da membresia afetada. Se ainda mostrar `active` apesar de a data de expiração ter passado, a transição de status não ocorreu. Causas comuns:
 
@@ -126,7 +126,7 @@ Vá para **Ultimate Multisite > Memberships** e verifique o status da membresia 
 
 - **O job cron não foi executado**: Veja o próximo passo.
 
-### 4. Verifique se o Action Scheduler Está Funcionando
+### 4. Verifique se o Action Scheduler Está Funcionando {#4-verify-action-scheduler-is-running}
 
 O Ultimate Multisite usa o Action Scheduler para seus jobs cron. Vá para **Tools > Scheduled Actions** no admin da rede e procure por:
 
@@ -148,7 +148,7 @@ Para garantir uma execução cron confiável, configure um job cron de sistema:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://seu-url-da-rede.com
 ```
 
-### 5. Verifique Problemas de Webhook do Gateway (Membrosias de Renovação Automática)
+### 5. Verifique Problemas de Webhook do Gateway (Membrosias de Renovação Automática) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Se a membresia for de renovação automática e a assinatura do gateway tiver sido cancelada ou falhada, mas o Ultimate Multisite ainda a mostrar como `active`:
 
@@ -157,7 +157,7 @@ Se a membresia for de renovação automática e a assinatura do gateway tiver si
 
 Se o gateway mostrar a assinatura como cancelada, mas o Ultimate Multisite não, é provável que a notificação webhook tenha sido perdida. Você pode alterar manualmente o status da membresia em **Ultimate Multisite > Memberships > [Editar Membresia]**.
 
-### 6. Verifique o Período de Carência de Expiração (Nível Cron)
+### 6. Verifique o Período de Carência de Expiração (Nível Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 A verificação cron possui seu próprio período de carência (padrão: 3 dias) antes de marcar uma membresia como expirada. Isso é separado do período de carência de bloqueio do frontend. O tempo total antes que o site seja bloqueado pode ser:
 
@@ -165,7 +165,7 @@ A verificação cron possui seu próprio período de carência (padrão: 3 dias)
 
 Por exemplo, com as configurações padrão e um período de carência de frontend de 7 dias, pode levar até 10 dias após a `date_expiration` para que o site seja realmente bloqueado.
 
-### 7. Expirar uma Membresia Manualmente
+### 7. Expirar uma Membresia Manualmente {#7-manually-expire-a-membership}
 
 Se você precisar bloquear um site imediatamente sem esperar pelo ciclo cron, você pode alterar manualmente o status da membresia:
 
@@ -176,7 +176,7 @@ Se você precisar bloquear um site imediatamente sem esperar pelo ciclo cron, vo
 
 O bloqueio do frontend entrará em vigor no próximo carregamento de página (sujeito ao Período de Carência de Bloqueio do Frontend para membrosias expiradas, ou imediatamente para membrosias canceladas).
 
-## Resumo
+## Resumo {#summary}
 
 O cronograma completo desde a data de expiração até o bloqueio do site:
 
@@ -208,7 +208,7 @@ Para membrosias canceladas, o caminho é mais curto:
   O frontend do site é bloqueado imediatamente
 ```
 
-## Referência para Desenvolvedores
+## Referência para Desenvolvedores {#developer-reference}
 
 Os seguintes hooks e filtros permitem que você personalize o comportamento de expiração e bloqueio:
 

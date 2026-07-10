@@ -3,15 +3,15 @@ title: Menu Perhotelan
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menu Hospitality
+# Menu Hospitality {#hospitality-menus}
 
 Fitur **Hospitality Menus** memungkinkan Theme Builder untuk membuat dan menyematkan halaman menu makanan dan minuman yang terstruktur langsung ke situs WordPress Anda.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Theme Builder kini dapat membuat halaman menu profesional dan terstruktur untuk bisnis perhotelan, termasuk restoran, kafe, bar, dan layanan katering. Menu-menu ini terintegrasi sepenuhnya dengan desain situs Anda dan mudah diperbarui serta dikelola.
 
-## Jenis Hospitality yang Didukung
+## Jenis Hospitality yang Didukung {#supported-hospitality-types}
 
 - **Restoran** — menu makan lengkap
 - **Kafe** — menu kopi dan makanan ringan
@@ -21,9 +21,9 @@ Theme Builder kini dapat membuat halaman menu profesional dan terstruktur untuk 
 - **Food Truck** — menu layanan makanan keliling
 - **Pabrik Bir dan Kebun Anggur (Breweries and Wineries)** — menu minuman dengan deskripsi
 
-## Struktur Menu
+## Struktur Menu {#menu-structure}
 
-### Kategori Menu
+### Kategori Menu {#menu-categories}
 
 Menu diorganisasi ke dalam kategori:
 
@@ -34,7 +34,7 @@ Menu diorganisasi ke dalam kategori:
 - **Minuman (Beverages)** — minuman (beralkohol dan non-alkohol)
 - **Spesial (Specials)** — menu spesial harian atau musiman
 
-### Format Item Menu
+### Format Item Menu {#menu-item-format}
 
 Setiap item menu mencakup:
 
@@ -49,7 +49,7 @@ Setiap item menu mencakup:
 }
 ```
 
-#### Bidang Item
+#### Bidang Item {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Setiap item menu mencakup:
 | `allergens` | array | Alergen umum (Kacang, Kerang, dll.) |
 | `availability` | string | Ketersediaan (Harian, Musiman, dll.) |
 
-## Membuat Menu Hospitality
+## Membuat Menu Hospitality {#creating-hospitality-menus}
 
-### Langkah 1: Berikan Informasi Menu
+### Langkah 1: Berikan Informasi Menu {#step-1-provide-menu-information}
 
 Beritahu Theme Builder tentang menu Anda:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Langkah 2: Theme Builder Membuat Menu
+### Langkah 2: Theme Builder Membuat Menu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Memformat harga dan deskripsi
 5. Menambahkan informasi diet dan alergen
 
-### Langkah 3: Tinjau dan Kustomisasi
+### Langkah 3: Tinjau dan Kustomisasi {#step-3-review-and-customize}
 
 Anda dapat:
 
@@ -91,9 +91,9 @@ Anda dapat:
 4. Memperbarui deskripsi dan info diet
 5. Menyesuaikan gaya dan tata letak
 
-## Opsi Tampilan Menu
+## Opsi Tampilan Menu {#menu-display-options}
 
-### Halaman Menu Lengkap
+### Halaman Menu Lengkap {#full-menu-page}
 
 Halaman khusus yang menampilkan seluruh menu Anda:
 
@@ -102,7 +102,7 @@ Halaman khusus yang menampilkan seluruh menu Anda:
 - Tata letak yang ramah cetak
 - Desain responsif untuk perangkat seluler
 
-### Widget Menu
+### Widget Menu {#menu-widget}
 
 Sematkan bagian menu di halaman lain:
 
@@ -111,7 +111,7 @@ Sematkan bagian menu di halaman lain:
 - Menu minuman di halaman bar
 - Pameran makanan penutup di footer
 
-### Menu PDF
+### Menu PDF {#menu-pdf}
 
 Hasilkan menu PDF yang dapat diunduh:
 
@@ -120,9 +120,9 @@ Hasilkan menu PDF yang dapat diunduh:
 - Termasuk gambar dan deskripsi
 - Mudah dibagikan dan dikirim melalui email
 
-## Informasi Diet dan Alergen
+## Informasi Diet dan Alergen {#dietary-and-allergen-information}
 
-### Atribut Diet
+### Atribut Diet {#dietary-attributes}
 
 Tandai item dengan informasi diet:
 
@@ -134,7 +134,7 @@ Tandai item dengan informasi diet:
 - **Low-Carb** — karbohidrat berkurang
 - **High-Protein** — kaya protein
 
-### Peringatan Alergen
+### Peringatan Alergen {#allergen-warnings}
 
 Sertakan alergen umum:
 
@@ -147,9 +147,9 @@ Sertakan alergen umum:
 - **Gluten** — gandum dan biji-bijian yang mengandung gluten
 - **Wijen (Sesame)** — biji wijen dan minyak
 
-## Manajemen Menu
+## Manajemen Menu {#menu-management}
 
-### Memperbarui Harga
+### Memperbarui Harga {#updating-prices}
 
 Perbarui harga menu dengan mudah:
 
@@ -159,7 +159,7 @@ Perbarui harga menu dengan mudah:
 4. Simpan perubahan
 5. Perubahan akan muncul segera di situs Anda
 
-### Menambah Item Musiman
+### Menambah Item Musiman {#adding-seasonal-items}
 
 Buat variasi menu musiman:
 
@@ -169,7 +169,7 @@ Buat variasi menu musiman:
 4. Jadwalkan tanggal ketersediaan
 5. Otomatis ditampilkan selama musim
 
-### Mengelola Spesial
+### Mengelola Spesial {#managing-specials}
 
 Tampilkan spesial harian atau mingguan:
 
@@ -179,7 +179,7 @@ Tampilkan spesial harian atau mingguan:
 4. Perbarui harian atau mingguan
 5. Arsipkan spesial lama
 
-## Integrasi dengan Theme Builder
+## Integrasi dengan Theme Builder {#integration-with-theme-builder}
 
 Saat menggunakan Theme Builder untuk situs hospitality:
 
@@ -189,9 +189,9 @@ Saat menggunakan Theme Builder untuk situs hospitality:
 4. **Optimasi seluler** — menu ditampilkan dengan indah di ponsel
 5. **Optimasi SEO** — menu ramah mesin pencari
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
-### Desain Menu
+### Desain Menu {#menu-design}
 
 - **Organisasi yang jelas** — struktur kategori yang logis
 - **Deskripsi yang mudah dibaca** — menggugah selera dan informatif
@@ -199,7 +199,7 @@ Saat menggunakan Theme Builder untuk situs hospitality:
 - **Foto profesional** — gambar makanan berkualitas tinggi
 - **Ruang kosong (Whitespace)** — jangan terlalu padat di halaman
 
-### Konten
+### Konten {#content}
 
 - **Deskripsi akurat** — jelaskan item secara akurat
 - **Sorot spesial** — buat spesial menonjol
@@ -207,7 +207,7 @@ Saat menggunakan Theme Builder untuk situs hospitality:
 - **Perbarui secara teratur** — jaga harga dan item tetap terkini
 - **Gunakan bahasa yang menggugah selera** — buat item terdengar lezat
 
-### Aksesibilitas
+### Aksesibilitas {#accessibility}
 
 - **Font yang mudah dibaca** — gunakan jenis huruf yang jelas dan mudah dibaca
 - **Kontras yang cukup** — pastikan teks mudah dibaca
@@ -215,9 +215,9 @@ Saat menggunakan Theme Builder untuk situs hospitality:
 - **Peringatan alergen** — tampilkan alergen secara menonjol
 - **Ramah seluler** — uji di semua perangkat
 
-## Contoh
+## Contoh {#examples}
 
-### Struktur Menu Restoran
+### Struktur Menu Restoran {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Struktur Menu Kafe
+### Struktur Menu Kafe {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Fitur Terkait
+## Fitur Terkait {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — membuat menu navigasi
 - [Design Direction](./design-direction.md) — menyesuaikan desain situs Anda

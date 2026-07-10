@@ -3,7 +3,7 @@ title: Formulariak
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms hauek eta erabilera bat eraginkora eta fleksiboa da irudiak jarraitu zen new customer berekin konvertizatzeko aukera.
 
@@ -38,13 +38,13 @@ Alternatiboa, jo daude duzu ez dagoen forma hauek editatu edo duplikatzen ditzak
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor-aren Deskribapena
+#### Checkout Form Editor-aren Deskribapena {#checkout-form-editor-overview}
 
 Checkout Form Editor-ek irregistro formak ezartzeko interfaz bat ematen du. Editor-aren eskaintza deskribapen batekin:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout Forma Editatu
+### Checkout Forma Editatu {#editing-a-checkout-form}
 
 Formak erabilera espezifikueko bizkarriak eta lekuak (fields) sortzen dituzte. Horren bitartean, irregistro forma bat egiteko jarduera egin dugu.
 
@@ -114,7 +114,7 @@ Formaren shortcode aldatzeko, "Generate Shortcode" (Shortcode generatzea) klikat
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### The Pricing Table Field (Prezioaren taldea)
+### The Pricing Table Field (Prezioaren taldea) {#the-pricing-table-field}
 
 **Pricing Table** (Prezioaren taldea) lekuak produktu hauek checkout forman erakusten du, nahiz eta klientak plan bat ere elebide dezaten. Lege hau aldatzen duenean, opsio batzuk konfiguru dezakezu:
 
@@ -132,17 +132,17 @@ Hau da ere prezioaren taldea frontend (irudi-frontendu) registro forman onartzek
 
 Produktua Pricing Table-era ez hasi duen lekuan formak horren produktua orokizten behar dituzten lekuak sartu duenean, editorra aurrepen bat ematen du. Publiko edo aldatuetan save egin baino lehen, beharrezko leku hau hasterako produktuaren lekuak ez dagoela eratu dezakezu.
 
-### Periodo Alegiaren (Toggle) Ez Aurretzea
+### Periodo Alegiaren (Toggle) Ez Aurretzea {#adding-a-period-selection-toggle}
 
 Produktuak dauden [Price Variations](creating-your-first-subscription-product#price-variations) konfiguratuta dut (adibidez, mensual eta anual prezioak), checkout form-eko **Period Selection** (Periodo Alegiaren) leku bat ezartu dituz. Leeku hau toggle batekin erakusten da irudiari erabiltzaileei bildu periodoak handi edo txiki间 (billing periods) hasterri eta prezioaren taldea bere horretan dinamiak update egiten du.
 
-#### Irudi 1: Produktuakarekin Prezio Variazioak Konfiguratu
+#### Irudi 1: Produktuakarekin Prezio Variazioak Konfiguratu {#step-1-set-up-price-variations-on-your-products}
 
 Periodo Alegiaren leku ezartzea baino lehen, produktuak parezioa prezio variazioak konfiguratuta dutela seguruatu behar duzu. **Ultimate Multisite > Products**-era jarraitu, produktua editatu eta **Price Variations** (Prezio Variazioak) tab-era aurkitu, eta alternatibo periodoak hasterri (adibidez, Anual txiki prezioarekin).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Irudi 2: Periodo Alegiaren Leeku Checkout Form-eko Ezartzea
+#### Irudi 2: Periodo Alegiaren Leeku Checkout Form-eko Ezartzea {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. **Ultimate Multisite > Checkout Forms**-era jarraitu eta checkout form-a editatu.
 
@@ -165,13 +165,13 @@ Periodo Alegiaren leku ezartzea baino lehen, produktuak parezioa prezio variazio
 
 7. Kliku **Save Field**.
 
-#### Irrenda 3: Egiarenak Prezioaren Laguntzailean Oinarritzen
+#### Irrenda 3: Egiarenak Prezioaren Laguntzailean Oinarritzen {#step-3-position-the-field-above-the-pricing-table}
 
 Guztundia erabiltzaileari laguntzeko, asegatz daude "Period Selection" (Aldi-erren Alegia) lehiakoa prezioaren laguntzailea aurretik eratu behar duzu checkout-en irrendarrian. Lehiakoe irekitzeko modu formaturian ezartzen dituztezu. Hau funtsezkoa da, nahiz eta erabiltzaileak lehenik aldiaren alegia aldatu, horrek prezioak ikusten dute.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### On Frontend (Irrendarrian) Zerren Moduarekin
+#### On Frontend (Irrendarrian) Zerren Moduarekin {#how-it-works-on-the-frontend}
 
 Konfiguratu gtainaren ondoren, erabiltzaileak irregistro lapurialdi zezkera bisitatzen duela, periodoa aukeratzeko lehiakoa prezioaren laguntzailearen üstoan ikusten dute. Berria aldiaren alegia klikatzen duenean:
 
@@ -179,7 +179,7 @@ Konfiguratu gtainaren ondoren, erabiltzaileak irregistro lapurialdi zezkera bisi
   * Lehiakoe prezioaren laguntzailearen "Force Different Durations" (Aldiaren Erdiffaz Formatu) deshabilitatuta dagoenean, aukeratutako periodoko prezio erdiffaz ez duten produktuak horretan gizituta egon daitezke.
   * Lehiakoe prezioaren laguntzailearen "Force Different Durations" habilitatuta dagoenean, aukeratutako periodoko erdiffaz ez dutelako produktuak ere erakusten dira (horrek bere prezioa erakusten du).
 
-#### URL-ek Erratzen Prezioaren Alegia
+#### URL-ek Erratzen Prezioaren Alegia {#pre-selecting-a-billing-period-via-url}
 
 URL-ek arren produktu eta aldiaren alegia aurretik aukeratu ditzake. Ultimate Multisite hauek URL-ek hauek suportatzen dute:
 
@@ -187,11 +187,11 @@ URL-ek arren produktu eta aldiaren alegia aurretik aukeratu ditzake. Ultimate Mu
   * `/register/premium/12` — Produktua eta 12-gainko aldiaren erdiffaz aurretik aukeratzen du
   * `/register/premium/1/year` — 1-gainko aldiaren erdiffaz produktua lehenik aukeratzen du
 
-### Lehiakoe Aukeratzeko Laguntzailearen (Template Selection Field)
+### Lehiakoe Aukeratzeko Laguntzailearen (Template Selection Field) {#the-template-selection-field}
 
 Lehiakoe Aukeratzeko laguntzailearenak erabiltzaileei checkout-ean web-sailen modelua (template) aukeratzeko aukera ematen dio. Ultimate Multisite v2.6.1-an gisa, hori orduan "single step" eta "multi-step" checkout form template hauek ezarrituta dagoena da.
 
-#### Laguntzailearen Manualen Aditura
+#### Laguntzailearen Manualen Aditura {#adding-the-field-manually}
 
 (Esku-ezpenak edo manualen adituen testu hau aipatzen du)
 
@@ -204,11 +204,11 @@ Forma erabiltzen du v2.6.1-ren antes edo bat moldeak (template) batzuk gabe hasi
    - **Label** — Kliakumeak moldearen gridaren üstoan ikusten duen tituluak (adibidez, "Site moldua aukeratu").
    - **Required** — Kliakumeak aurrera egin baino lehen molde bat aukeratu behar duen.
 
-#### Ondo jakinarazteko
+#### Ondo jakinarazteko {#how-it-works}
 
 Kliakume bat checkout-alde molde bat aukartzen duenean, Ultimate Multisite irudi berri sitea ematean (provisioning) erabiltzen du. Ekin dituzten moldeak daude zure **Site Templates** listatik (**Ultimate Multisite > Site Templates**). Kliakumeak erabilera daingo dituzten moldeak jarduera honetan erakusten dira.
 
-### Checkout-form base domains
+### Checkout-form base domains {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 checkout formaren **Site URL** lekuan konfiguratutako domain-ak network base domains (base domainak) gisa tratatzen dira. Kliakumeak bat edo gehiago saltu domainak, gure `example.com` eta `sites.example.com` bezala, erabiltzen siteak sortzeko aukera dutenean, lekuaren available-domain konfiguratura ezarri duzu.
 
@@ -216,6 +216,6 @@ Saltu checkout formaren base domains per-site custom domain mappingak (per-site-
 
 Per-customer mapeatutako hosteak, adibidez `customer-example.com` bezala, custom domainak jasotzen duzu. Saltu registration hosteak (base domains) jasotzen duzu beste site-ekari erabiliko dituztenak.
 
-#### Lehenago irudien hartzea
+#### Lehenago irudien hartzea {#removing-the-field}
 
 Ez dago: Ez emisten leku-templateak (site templates) eta formularioaren iraditzen zein erantzuten dena. Zaharliaren artean, erabiltzaileak **Ultimate Multisite > Settings > Site Templates**-eko bat dauden default template-a hartuko dira.

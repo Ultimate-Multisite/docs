@@ -1,144 +1,156 @@
 ---
-title: Nkwado Ọrụ Ịkpọta Ìfọmọ Ịkpọta Gị
+title: Ịhazigharị fọm ndebanye aha gị
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Customizing Registration Form-n Your
+# Ịhazigharị Registration Form gị {#customizing-your-registration-form}
 
-Na maka iji ịchekwa form registration-n gị.
+Iji mee ka network gị dị iche na SaaS ndị ọzọ niile e wuru n’elu WordPress platform, Ultimate Multisite na-enye gị ohere ịhazi registration na login peeji gị site na njirimara **Checkout Forms** anyị.
 
-Ka ka ị chụrụ nkwu gị dị iche iche na ọkụ ụgbọ ọha (SaaS) ndị ọzọ na platform WordPress, Ultimate Multisite na-agbanwe gị ịchekwa akụkọ ịgba akaụ (registration) na login pages gị ebe anyị na-agbanwe ya na fitur **Checkout Forms** anyị.
+Ọ bụ ezie na ha bụ ụzọ dị mfe ma na-agbanwe agbanwe iji nwalee usoro dị iche iche mgbe ị na-agbalị ịtụgharị ndị ahịa ọhụrụ, a na-ejikarị ha mepụta registration forms ahaziri onwe. Edemede a bu n’obi igosi gị otu ị ga-esi mee ya.
 
-Ọ bụrụ na ha bụ ọrịa dị mma na nchebe ihe ndị ọzọ mgbe ị chọrọ ịgbagba ndị khách nwere ike ịbụ, ha ga-adịghị mma n'ụzọ ahụ mgbe ị chọrọ ịchụrụ form registration dị personal. A maara ihe a bụ ịle gị ihe ọ bụ na ị chụrụ ya.
+## Login na registration peeji: {#login-and-registration-pages}
 
-## Login and registration pages:
+Mgbe etinyere Ultimate Multisite, ọ na-emepụta login na registration peeji ahaziri iche na main site gị na-akpaghị aka. Ị nwere ike ịgbanwe peeji ndabara ndị a n’oge ọ bụla site n’ịga na peeji **Ultimate Multisite > Settings > Login & Registration** gị.
 
-Ọ bụrụ na ị na-install Ultimate Multisite, ọ ga-agbanwe akụkọ login na registration custom na site nchekwa gị mgbe ọ na-abịa. Ị ga-anọchịrị ike ndị dị ahụ mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na-abanye ya mgbe ị na
+![Peeji ntọala Login na Registration](/img/config/settings-general.png)
 
-* **Default registration page:** Hii, đây là trang mặc định cho việc đăng ký. Trang này cần được xuất bản trên website của bạn và phải có một form đăng ký (còn gọi là checkout form) - nơi khách hàng của bạn sẽ đăng ký sản phẩm của bạn. Bạn có thể tạo bao nhiêu trang đăng ký và form thanh toán tùy thích, chỉ nhớ đặt shortcode của form checkout vào trang đăng ký, nếu không nó sẽ không hiện ra đâu.
+Nke a bụ nlele zuru ezu nke peeji ntọala login na registration:
 
-* **Use custom login page:** Tùy chọn này cho phép bạn dùng một trang đăng nhập tùy chỉnh, khác với trang mặc định wp-login.php. Nếu bật tùy chọn này, bạn có thể chọn trang nào sẽ được dùng để đăng nhập ở mục **Default login page** (ngay bên dưới).
+![Peeji zuru ezu nke ntọala Login na Registration](/img/config/settings-login-registration-full.png)
 
-* **Obfuscate the original login url (wp-login.php)** : Nếu bạn muốn giấu URL đăng nhập gốc, bạn có thể bật tùy chọn này. Cái này hữu ích để ngăn chặn các cuộc tấn công brute-force. Nếu tùy chọn này được bật, Ultimate Multisite sẽ hiển thị lỗi 404 khi người dùng cố gắng truy cập vào liên kết wp-login.php ban đầu.
+Ka anyị leba anya na nke ọ bụla n’ime nhọrọ ị nwere ike ịhazi na peeji **Login & Registration**:
 
-* **Force synchronous site publication:** Sau khi khách hàng đăng ký một sản phẩm trên mạng lưới của bạn, trang web đang chờ xử lý mới cần được chuyển thành một trang mạng thực sự. Quá trình xuất bản diễn ra qua Job Queue, không đồng bộ (asynchronously). Bật tùy chọn này để buộc việc xuất bản phải xảy ra trong cùng một yêu cầu với việc đăng ký.
+  * **Kwado registration:** Nhọrọ a ga-akwado ma ọ bụ gbanyụọ registration na network gị. Ọ bụrụ na agbanyụrụ ya, ndị ahịa gị agaghị enwe ike ịdebanye aha ma subscribe na ngwaahịa gị.
 
-Bây giờ, chúng ta hãy xem các lựa chọn khác vẫn còn liên quan đến quy trình đăng nhập và đăng ký. Chúng nằm ngay bên dưới **Other options** trên trang Đăng nhập & đăng ký:
+  * **Kwado nkwenye email:** Ọ bụrụ na agbanyere nhọrọ a, ndị ahịa na-subscribe maka plan efu ma ọ bụ plan akwụ ụgwọ nwere oge trial ga-enweta email nkwenye ma ga-achọ ịpị verification link ka e wee mepụta website ha.
 
-* **Default role:** Đây là vai trò mà khách hàng của bạn sẽ có trên website sau quá trình đăng ký.
+  * **Peeji registration ndabara:** Nke a bụ peeji ndabara maka registration. Peeji a kwesịrị ka e bipụta ya na website gị ma nwee registration form (a makwaara dị ka checkout form) - ebe ndị client gị ga-subscribe na ngwaahịa gị. Ị nwere ike ịmepụta registration peeji na checkout forms ole ịchọrọ, cheta naanị itinye checkout form shortcode na registration page, ma ọ bụghị ya ọ gaghị apụta.
 
-* **Habilite Jumper:** Habilite shortcut Jumper na khu vực admin. Jumper hụrụ administrators n'ime Ultimate Multisite screens, network objects, na nhihiye ndị ọzọ a dị mma anọrọ maara bila n'ime menu. B ga-arụta ya ma ọ bụrụ na ị na-agba mma ka ị chine akwa navigasyon gbasara ahụ n'ime interface admin.
+  * **Jiri login page ahaziri iche:** Nhọrọ a na-enye gị ohere iji login page ahaziri, karịa peeji wp-login.php ndabara. Ọ bụrụ na agbanyere nhọrọ a, ị nwere ike ịhọrọ peeji a ga-eji maka login na nhọrọ **Default login page** (nke dị n’okpuru ozugbo).
 
-  * **Add users to the main site as well:** Habilite opsi a ga-adị mma na ị chine user ahụ na site utama nke network gị tarakwa ọrụ signup be. Ma ka ị chine opsi a, oge ọrụ **default role** ndị a na website gị ga-abụghị dị n'ime anọrọa yabebe.
+  * **Zoo original login url (wp-login.php)** : Ọ bụrụ na ịchọrọ izochi original login URL, ị nwere ike ịgbanye nhọrọ a. Nke a bara uru iji gbochie mwakpo brute-force. Ọ bụrụ na agbanyere nhọrọ a, Ultimate Multisite ga-egosi njehie 404 mgbe onye ọrụ na-agbalị ịbanye na njikọ wp-login.php mbụ
 
-  * **Enable multiple accounts:** Chara ndị ọzọ na ị chine account na sites dị iche dị na network gị na-eme email dị sama. Ma ka opsi a bụ off, ndị ọzọ gị ga-abụghị ike ịchiese account na websites dị n'ime network gị na-eme email dị sama.
+  * **Manye mbipụta site ka ọ bụrụ synchronous:** Mgbe onye ahịa subscribe na ngwaahịa na network, pending site ọhụrụ ahụ kwesịrị ịgbanwe bụrụ ezigbo network site. Usoro mbipụta na-eme site na Job Queue, n'ụzọ asynchronous. Gbanye nhọrọ a iji manye mbipụta ahụ ime n'otu request ahụ dịka signup.
 
-Ma ọ bụrụ na ebe a bụ options ndị dị n'ime login na registration nke ị chine ya! Ahụrụ m n'ime settings gị onwe gị onweike anọrọa karịa ị chine ya.
+Ugbu a, ka anyị hụ nhọrọ ndị ọzọ ka dị mkpa n’usoro login na registration. Ha dị ozugbo n’okpuru **Nhọrọ ndị ọzọ** na otu peeji Login & registration ahụ:
 
-## Ụdị Registration Forms dị iche dị:
+  * **Role ndabara:** Nke a bụ role ndị ahịa gị ga-enwe na website ha mgbe usoro signup gasịrị.
 
-Ultimate Multisite 2.0 na-eme checkout form editor na-eme ka ị chine ọtụtụ forms dị mma gịnị ị chine, na-agba fields dị iche iche, products dị n'ime anọrọ, na ihe ndị ọzọ.
+  * **Kwado Jumper:** Na-akwado shortcut Jumper n’ebe admin. Jumper na-enye ndị administrators ohere ịgafe ngwa ngwa gaa na ihuenyo Ultimate Multisite, ihe network, na ebe ndị ọzọ akwadoro na-enweghị ịgagharị menu ọ bụla. Gbanyụọ ya ma ọ bụrụ na ịchọrọ izochi ngwa ngwa navigation ahụ site na interface admin.
 
-Login page na registration page na-eme embedded shortcodes: **[wu_login_form]** na login page ma **[wu_checkout]** na registration page. ị ga-abụghị mma registration page ahụ na-eme checkout forms dị n'ime anọrọa ma ọ bụ na-eme ka ọ dị.
+  * **Tinye ndị ọrụ na main site kwa:** Ịgbanye nhọrọ a ga-etinyekwa onye ọrụ na main site nke network gị mgbe usoro signup gasịrị. Ọ bụrụ na ịgbanye nhọrọ a, nhọrọ iji tọọ **role ndabara** nke ndị ọrụ ndị a na website gị ga-apụtakwa ozugbo n’okpuru.
 
-Na-eme feature a, jupụ n'ime menu **Checkout Forms**, na thelajiri akwa (left side-bar).
+  * **Kwado ọtụtụ accounts:** Nye ndị ọrụ ohere inwe accounts na site dị iche iche nke network gị site na iji otu email address. Ọ bụrụ na nhọrọ a agbanyụrụ, ndị ahịa gị agaghị enwe ike ịmepụta Account na website ndị ọzọ na-agba ọsọ na network gị site na iji otu email address.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Nke ahụ bụkwa nhọrọ niile metụtara login na registration ị nwere ike ịhazi! Echefukwala ichekwa ntọala gị mgbe ị mechara idezi ha.
 
-Na page a, ị ga-abịa mma ọ bụrụ na ị chine checkout forms dị n'ime anọrọa gị.
+## Iji ọtụtụ registration forms: {#using-multiple-registration-forms}
 
-Ọ bụrụ na ị chine ọhụrụ, jupụ na **Add Checkout Form** na top nke page ahụ.
+Ultimate Multisite 2.0 na-enye checkout form editor nke na-enye gị ohere ịmepụta forms ole ịchọrọ, nwere fields dị iche iche, ngwaahịa a na-enye, wdg.
 
-Kaanyi ka ịgbanye ọkụ akụkọ ihe mere a na oge ọ bụla: single step (iji ọkụ Ọkụ), multi-step (iji ọkụ ọtụtụ), ma blank (iji ọkụ). Kaanyi, click upara **Go to the Editor**.
+A na-etinye ma login ma registration peeji site na shortcodes: **[wu_login_form]** na login page na**[wu_checkout]** maka registration page. Ị nwere ike ịhazi registration page ọzọ site n’ịrụ ma ọ bụ imepụta checkout forms.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Iji nweta njirimara a, gaa na menu **Checkout Forms**, n’akụkụ aka ekpe side-bar.
 
-Ma ọ bụ, ị chọrọ ịgbagba ma ọ bụ gbanwe akụkọ ihe mere ị mere na-enweghị ya, kaanyi click upara cácọọ options ndị a na siri ahụ. Ọ bụrụ na ị chọrọ, ị ga-eme ka ị chọrọ copy shortcode na form ahụ ma ọ bụ ị hụrụ form ahụ nchekwa.
+![Menu Checkout Forms n’ime sidebar](/img/config/checkout-forms-list.png)
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+Na peeji a, ị nwere ike ịhụ checkout forms niile ị nwere.
 
-Ọ bụrụ na ị chọrọ single step ma multi-step, akụkọ ihe mere checkout ahụ ga-abụghị ya pre-populated (pre-filled) na cácọ ọkụ ndị dị mma iji ya le gbanke. Kaanyi, ọ bụrụ na ị chọrọ, ị ga-eme ka ị chọrọ ịcha ọkụ ọzọ n'ihi ya.
+Ọ bụrụ na ịchọrọ ịmepụta nke ọhụrụ, pịa naanị **Tinye Checkout Form** n’elu peeji ahụ.
 
-### Ọgbanwe Akụkọ Ihe Mere Checkout:
+Ị nwere ike ịhọrọ otu n’ime nhọrọ atọ ndị a dịka ebe ị ga-amalite: otu nzọụkwụ, ọtụtụ nzọụkwụ ma ọ bụ efu. Mgbe ahụ, pịa **Gaa na Editor**.
 
-Ma ọ bụrụ na anyị gbarwerị ya mgbe ọ bụla, ị ga-anọchịrị akụkọ ihe mere checkout maka ihe ndị dị iche iche. Na ihe atụ eto, anyị ga-eme ka anyị gbarwerị akụkọ registration (registration form).
+![Tinye Checkout Form nwere nhọrọ otu nzọụkwụ, ọtụtụ nzọụkwụ, ma ọ bụ efu](/img/config/checkout-forms-list.png)
 
-Ọ bụrụ na ị gbarwerị n'ime editor akụkọ ihe mere checkout, jiji ọkụ ahụ aka na onye a naaka (name) ma slug (iji a na-agbanwe shortcodes, ọ bụghị ya).
+N’ụzọ ọzọ, ị nwere ike idezi ma ọ bụ mepụta oyiri forms ị nwere ugbu a site n’ịpị nhọrọ ndị dị n’okpuru aha ya. N’ebe ahụ, ị ga-ahụkwa nhọrọ iji detuo shortcode nke form ahụ ma ọ bụ hichapụ form ahụ.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Omume hover nke checkout form nwere idezi, mepụta oyiri, na hichapụ](/img/config/checkout-form-hover-actions.png)
 
-Akụkọ ihe mere ndị a na-eme ka ọ bụ akụkọ ọkụ (steps) ma fields (fields). Kaanyi, ị ga-eme ka ị chọrọ step ọhụrụ ma ọ bụ click upara **Add New Checkout Step**.
+Ọ bụrụ na ị họrọ otu nzọụkwụ ma ọ bụ ọtụtụ nzọụkwụ, checkout form ahụ ga-adịlarị juputara na nzọụkwụ bụ isi ka ọ rụọ ọrụ. Mgbe ahụ, ọ bụrụ na ịchọrọ, ị nwere ike itinye nzọụkwụ ndị ọzọ na ya.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+### Idezi Checkout Form: {#editing-a-checkout-form}
 
-Na tab ọkụ ọzọ na modal window ahụ, jiji content akụkọ ihe mere ọkụ ahụ. Jiji ya ID, name ma description. Ọ bụrụ na ndị a na-eme ka ọ dị n'ime anọchịrị (internal).
+Dị ka anyị kwuburu, ị nwere ike ịmepụta checkout forms maka ebumnuche dị iche iche. N’ihe atụ a anyị ga-arụ ọrụ na registration form.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+Mgbe ị gara na checkout form editor, nye form gị aha (a ga-eji ya naanị maka ntụaka ime) na slug (e ji emepụta shortcodes, dịka ọmụmaatụ).
 
-Tetingba visibility (iji ịhụ akụkọ ahụ). Kaanyi, ị ga-chọrọ n'ime **Always show** , **Only show for logged in users** ma ọ bụ **Only show for guests**.
+![Onye ndezi fọm ịkwụ ụgwọ nwere mpaghara aha na slug](/img/config/checkout-form-name-slug.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+A na-eme fọm site na nzọụkwụ na mpaghara. Ị nwere ike ịgbakwunye nzọụkwụ ọhụrụ site n'ịpị **Tinye Nzọụkwụ Ịkwụ Ụgwọ Ọhụrụ**.
 
-Mme, configure style na step-ah. Buene, nda ma ihe ndị a bụ optional (naa).
+![Bọtịnụ Tinye Nzọụkwụ Ịkwụ Ụgwọ Ọhụrụ](/img/config/checkout-form-add-step.png)
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+Na taabụ mbụ nke windo modal, dejupụta ọdịnaya nke nzọụkwụ fọm gị. Nye ya ID, aha na nkọwa. A na-ejikarị ihe ndị a eme ihe n'ime sistemụ.
 
-Nke a bụ dokkenya ị chọrọ fields na step ọzọ anyị. Rị click na **Add New Field** (Add New Field) ma chọrọ ihe ị chọrọ type section ahụ.
+![Taabụ ọdịnaya nzọụkwụ ịkwụ ụgwọ nwere ID, aha, na nkọwa](/img/config/checkout-form-step-content.png)
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+Ọzọ, hazie ịdị-ahụ anya nke nzọụkwụ ahụ. Ị nwere ike ịhọrọ n'etiti **Gosi mgbe niile** , **Gosi naanị maka ndị ọrụ banyere** ma ọ bụ **Gosi naanị maka ndị ọbịa**.
 
-Chii field na-enwe parameters dị iche iche ị chọrọ to. Na ihe a bụ ọzọ, anyị ga-chọrọ field **Username**.
+![Nhọrọ ịdị-ahụ anya nke nzọụkwụ ịkwụ ụgwọ](/img/config/checkout-form-step-visibility.png)
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+N'ikpeazụ, hazie ụdị nzọụkwụ ahụ. Ndị a bụ mpaghara nhọrọ.
 
-Kee ị chọrọ, ị ga-chụkọ ọtụtụ steps na fields dị m nwere. Ka ị nwere ihe ndị a maka products ha gbanwe maka ndị khách nwere ike chụkọ ihe anyị chọrọ, jiji Pricing Table field. Ka ị chọrọ ka ndị khách chụkọ template, jiji Template Selection field. Na ihe dị m nwere.
+![Nhazi ụdị nzọụkwụ ịkwụ ụgwọ](/img/config/checkout-form-step-style.png)
 
-_**Note:** Ma ị chụkọ product ọzọ onwe gaa anọ n'ime checkout form ahụ, ị ga-chụkọ product ahụ na Pricing table section. Ka ị kอดa, product ahụ hụtara maka ndị khách ha na registration page._
+Ugbu a, oge eruola ịgbakwunye mpaghara na nzọụkwụ mbụ anyị. Pịa naanị **Tinye Mpaghara Ọhụrụ** ma họrọ ụdị ngalaba ịchọrọ.
 
-_**Note 2:** username, email, password, site title, site URL, order summary, payment, and submit button bụ fields mandatory (dị m nwere) maka ị chụkọ checkout form._
+![Bọtịnụ Tinye Mpaghara Ọhụrụ](/img/config/checkout-form-add-field-button.png)![Dropdown nhọrọ ụdị mpaghara](/img/config/checkout-form-field-type-dropdown.png)
 
-Ma ị nwere work na checkout form ahụ, ị ga-anọghị anyị Preview button ka ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọrọ ị chọ
+Mpaghara ọ bụla nwere parameters dị iche iche a ga-ejupụta. Maka ntinye mbụ a, anyị ga-ahọrọ mpaghara **Aha njirimara**.
 
-![Buton xem trước biểu mẫu thanh toán trên trình chỉnh sửa](/img/config/checkout-form-preview-button.png)![Xem trước biểu mẫu thanh toán như khách truy cập hoặc người dùng hiện tại](/img/config/checkout-form-preview-modal.png)
+![Nhazi mpaghara aha njirimara](/img/config/checkout-form-username-content.png)![Parameters mpaghara aha njirimara](/img/config/checkout-form-username-visibility.png)![Ntọala mgbakwunye mpaghara aha njirimara](/img/config/checkout-form-username-style.png)
 
-Cuối cùng, trong **Advanced Options** (Tùy chọn nâng cao), bạn có thể thiết lập thông báo cho trang **Thank You** (Cảm ơn), thêm các đoạn mã để theo dõi lượt chuyển đổi (conversions), thêm CSS tùy chỉnh cho biểu mẫu thanh toán của bạn hoặc giới hạn nó ở một số quốc gia nhất định.
+Ị nwere ike ịgbakwunye nzọụkwụ na mpaghara ole ọ bụla ị chọrọ. Iji gosipụta ngwaahịa gị ka ndị ahịa gị họrọ otu, jiri mpaghara Tebụl Ọnụahịa. Ọ bụrụ na ịchọrọ ikwe ka ndị ahịa gị họrọ ndebiri, tinye mpaghara Nhọrọ Ndebiri. Na ihe ndị ọzọ.
 
-![Các Tùy chọn nâng cao với trang Cảm ơn, theo dõi chuyển đổi và CSS tùy chỉnh](/img/config/checkout-form-advanced.png)
+![Onye ndezi fọm ịkwụ ụgwọ nwere mpaghara nhọrọ ndebiri](/img/config/checkout-form-with-template-field.png)
 
-Bạn cũng có thể bật hoặc tắt biểu mẫu thanh toán của mình bằng cách chuyển công tắc này ở cột bên phải, hoặc xóa vĩnh viễn biểu mẫu đó.
+_**Rịba ama:** Ọ bụrụ na ị mepụta ngwaahịa mgbe ị mepụtara fọm ịkwụ ụgwọ gị, ị ga-achọ ịgbakwunye ngwaahịa ahụ na ngalaba Tebụl Ọnụahịa. Ọ bụrụ na ị tinyeghị ya, ngwaahịa ahụ agaghị apụta nye ndị ahịa gị na ibe ndebanye aha._
 
-![Công tắc hoạt động và tùy chọn xóa cho biểu mẫu thanh toán](/img/config/checkout-form-active.png)
+_**Rịba ama 2:** aha njirimara, email, password, aha saịtị, URL saịtị, nchịkọta iwu, ịkwụ ụgwọ, na bọtịnụ izipu bụ mpaghara iwu ji iji mepụta fọm ịkwụ ụgwọ._
 
-Đừng quên lưu biểu mẫu thanh toán của bạn nhé!
+Mgbe ị na-arụ ọrụ na fọm ịkwụ ụgwọ gị, ị nwere ike iji bọtịnụ Nhụchalụ mgbe niile iji hụ otú ndị ahịa gị ga-esi hụ fọm ahụ. Ị nwekwara ike ịgbanwe n'etiti ile ya dị ka onye ọrụ dị adị ma ọ bụ onye ọbịa.
 
-![Nút Lưu Biểu mẫu Thanh toán](/img/config/checkout-form-save.png)
+![Bọtịnụ Nhụchalụ na onye ndezi fọm ịkwụ ụgwọ](/img/config/checkout-form-preview-button.png)![Nhụchalụ fọm ịkwụ ụgwọ dị ka onye ọbịa ma ọ bụ onye ọrụ dị adị](/img/config/checkout-form-preview-modal.png)
 
-Để lấy shortcode (mã ngắn) của biểu mẫu, hãy nhấp vào **Generate Shortcode** (Tạo Shortcode) và sao chép kết quả hiển thị trong cửa sổ modal.
+N'ikpeazụ, na **Nhọrọ Dị Elu** ị nwere ike ịhazi ozi maka ibe **Daalụ**, tinye snippets iji soro conversions, tinye CSS ahaziri iche na fọm ịkwụ ụgwọ gị ma ọ bụ gbochie ya ka ọ bụrụ naanị mba ụfọdụ.
 
-![Modal Tạo Shortcode với shortcode để sao chép](/img/config/checkout-form-editor.png)
+![Nhọrọ Dị Elu nwere ibe Daalụ, nsuso conversion, na CSS ahaziri iche](/img/config/checkout-form-advanced.png)
 
-_**Lưu ý:** Bạn sẽ cần thêm shortcode này vào trang đăng ký của mình để có thể thêm biểu mẫu thanh toán này vào đó._
+Ị nwekwara ike iji aka gị mee ka fọm ịkwụ ụgwọ gị rụọ ọrụ ma ọ bụ kwụsị ya site n'ịgbanwe nhọrọ a na kọlụm aka nri, ma ọ bụ hichapụ fọm ahụ kpamkpam.
 
-## Chọn trước sản phẩm và mẫu qua các tham số URL:
+![Toggle arụ ọrụ na nhọrọ ihichapụ maka fọm ịkwụ ụgwọ](/img/config/checkout-form-active.png)
 
-Nếu bạn muốn tạo bảng giá tùy chỉnh cho sản phẩm của mình và chọn sẵn trên biểu mẫu thanh toán sản phẩm hoặc mẫu mà khách hàng của bạn chọn từ bảng giá hoặc trang mẫu, bạn có thể sử dụng các tham số URL cho việc này.
+Echefukwala ịchekwa fọm ịkwụ ụgwọ gị!
 
-### **Đối với các gói (plans):**
+![Bọtịnụ Chekwaa Fọm Ịkwụ Ụgwọ](/img/config/checkout-form-save.png)
 
-Truy cập **Ultimate Multisite > Products > Select a plan**. Bạn sẽ thấy nút **Click to copy Shareable Link** (Nhấp để sao chép Liên kết chia sẻ) ở đầu trang. Đây là liên kết bạn có thể dùng để chọn trước gói cụ thể này trên biểu mẫu thanh toán của mình.
+Iji nweta shortcode nke fọm gị, pịa **Mepụta Shortcode** ma detuo nsonaazụ egosiri na windo modal.
 
-![Trang sản phẩm với nút liên kết chia sẻ](/img/config/products-list.png)
+![Modal Mepụta Shortcode nwere shortcode a ga-edetu](/img/config/checkout-form-editor.png)
 
-Lưu ý rằng liên kết chia sẻ này chỉ có giá trị cho các **Gói dịch vụ (Plans)**. Bạn không thể dùng liên kết chia sẻ cho các gói sản phẩm hoặc dịch vụ.
+_**Rịba ama:** Ị ga-achọ ịgbakwunye shortcode a na ibe ndebanye aha gị ka etinye fọm ịkwụ ụgwọ a na ya._
 
-### Đối với mẫu thiết kế (templates):
+## Ịhọrọ ngwaahịa na ndebiri tupu oge eruo site na parameters URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Nếu bạn muốn chọn sẵn các mẫu trang web trên biểu mẫu thanh toán của mình, bạn có thể sử dụng tham số: **?template_id=X** trong URL trang đăng ký của bạn. Bạn cần thay thế "X" bằng **số ID của mẫu trang web**. Để lấy số này, hãy vào **Ultimate Multisite > Sites**.
+Ọ bụrụ na ịchọrọ imepụta tebụl ọnụahịa ahaziri iche maka ngwaahịa gị ma họrọ tupu oge eruo na fọm ịkwụ ụgwọ ngwaahịa ma ọ bụ ndebiri onye ahịa gị họrọ site na tebụl ọnụahịa gị ma ọ bụ ibe ndebiri, ị nwere ike iji parameters URL maka nke a.
 
-Nhấn vào **Manage** ngay bên dưới mẫu trang web mà bạn muốn sử dụng. Bạn sẽ thấy số SITE ID. Chỉ cần dùng số này cho mẫu trang web cụ thể đó để nó được chọn sẵn trên biểu mẫu thanh toán của bạn. Trong trường hợp của chúng tôi, tham số URL sẽ là **?template_id=2**.
+### **Maka atụmatụ:** {#for-plans}
 
-![Danh sách các trang web hiển thị ID mẫu trang web](/img/config/site-templates-list.png)
+Gaa na **Ultimate Multisite > Ngwaahịa > Họrọ atụmatụ**. Ị kwesịrị ịhụ bọtịnụ **Pịa iji detuo Njikọ A Pụrụ Ịkekọrịta** n'elu ibe ahụ. Nke a bụ njikọ ị nwere ike iji họrọ atụmatụ a kpọmkwem tupu oge eruo na fọm ịkwụ ụgwọ gị.
 
-Giả sử trang web mạng của chúng ta là [**www.mynetwork.com**](http://www.mynetwork.com) và trang đăng ký với biểu mẫu thanh toán của chúng ta nằm ở trang **/register**. Toàn bộ URL với mẫu trang web được chọn sẵn sẽ trông như thế này: [**www.mynetwork.com/register/?template_id=2**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Ibe ngwaahịa nwere bọtịnụ njikọ a pụrụ ịkekọrịta](/img/config/products-list.png)
 
-Và nếu bạn muốn, bạn có thể chọn trước cả sản phẩm và mẫu thiết kế cho biểu mẫu thanh toán của mình. Tất cả những gì bạn cần làm là sao chép liên kết chia sẻ của gói dịch vụ và dán tham số mẫu vào cuối. Nó sẽ trông như thế này: [**www.mynetwork.com/register/premium-plan/?template_id=2**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Rịba ama na njikọ a pụrụ ịkekọrịta a bara uru naanị maka **Atụmatụ**. Ị nweghị ike iji njikọ a pụrụ ịkekọrịta maka ngwugwu ma ọ bụ ọrụ.
+
+### Maka ndebiri: {#for-templates}
+
+Ọ bụrụ na ịchọrọ ịhọrọ ndebiri saịtị tupu oge eruo na fọm ịkwụ ụgwọ gị, ị nwere ike iji parameter: **?template_id=X** na URL ibe ndebanye aha gị. A ga-eji **nọmba ID ndebiri saịtị** dochie "X". Iji nweta nọmba a, gaa na **Ultimate Multisite > Saịtị**.
+
+Pịa **Jikwaa** ozugbo n'okpuru ndebiri saịtị ịchọrọ iji. Ị ga-ahụ nọmba SITE ID. Jiri naanị nọmba a maka ndebiri saịtị a kpọmkwem ka ahọrọ ya tupu oge eruo na fọm ịkwụ ụgwọ gị. N'ọnọdụ anyị ebe a, parameter URL ga-abụ **?template_id=2**.
+
+![Ndepụta saịtị na-egosi ID ndebiri saịtị](/img/config/site-templates-list.png)
+
+Ka anyị kwuo na webụsaịtị netwọkụ anyị bụ [**www.mynetwork.com**](http://www.mynetwork.com) na ibe ndebanye aha anyị nwere fọm ịkwụ ụgwọ anyị dị na ibe **/register**. URL zuru ezu nwere ndebiri saịtị a ahọpụtara tupu oge eruo ga-adị ka [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ma ọ bụrụ na ịchọrọ, ị nwere ike ịhọrọ ma ngwaahịa ma ndebiri tupu oge eruo na fọm ịkwụ ụgwọ gị. Ihe niile ị ga-eme bụ idetuo njikọ a pụrụ ịkekọrịta nke atụmatụ ahụ ma tinye parameter ndebiri na njedebe. Ọ ga-adị ka [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

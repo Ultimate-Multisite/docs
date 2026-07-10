@@ -3,7 +3,7 @@ title: Auto Search and Replace in Site Templates
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace in Site Templates (v2)
+# Auto Search and Replace in Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ez dago WP UItimo bertsio 2.x behar da.**_
 
@@ -17,7 +17,7 @@ Gero, klienteak registrazioan hori lekua amaitu dezaketak.
 
 Ultimate Multisite-ak hori datuak klientearen aurretik ematen duen informazioarekin otomatikoki placeholder-ek erabat hartuko dira.
 
-## **"placeholder-ek ematuta template" problemazia iradokizuna**
+## **"placeholder-ek ematuta template" problemazia iradokizuna** {#solving-the-template-full-of-placeholders-problem}
 
 Hau guztia da amaiginta, baina ez du gertatzen: site template-ek - klienteak bisitatzen dituztenak - placeholder-ek oso horriak dago, eta ez dute askotan informazioa ematen.
 

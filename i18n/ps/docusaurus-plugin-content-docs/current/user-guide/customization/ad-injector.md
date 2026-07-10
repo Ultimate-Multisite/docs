@@ -3,7 +3,7 @@ title: د اشتہار انيکټر
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# خپل شبکهमा اشتہارونه درج کولو لپاره Ultimate Multisite: Ad Injector
+# خپل شبکهमा اشتہارونه درج کولو لپاره Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector دا یو **رایگان اضافي** دی چې تاسو ته اجازه ورکوي په راتلونکي ویرایش صفحه له لارې خپل پلانونوमा اشتہارونه درج کولوका लागि وسایل وي.
 
@@ -35,7 +35,7 @@ _तपाईंले आफ्नो विज्ञापनको कोड 
 
 _यदि तपाईं आफ्नो प्रयोगकर्ताको ब्याक-एन्डमा विज्ञापन देखाउन चाहनुहुन्छ भने, एडमिन प्यानलको Ad Code विकल्पमा जानुहोस्_
 
-### विज्ञापनभन्दा बढी
+### विज्ञापनभन्दा बढी {#beyond-advertising}
 
 तपाईं उच्च-स्तरका प्लानहरूलाई समर्थन प्रदान गर्न पनि Ultimate Multisite: Ad Injector प्रयोग गर्न सक्नुहुन्छ।
 

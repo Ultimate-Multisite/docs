@@ -3,19 +3,19 @@ title: Wax-soo-gaarsiinta Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Wax-sareyntaaya ee Stripe Gateway-ga (v2)
+# Wax-sareyntaaya ee Stripe Gateway-ga (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**Fadlan o daran: Maqaalkan wuxuu la xiriira Ultimate Multisite noortii 2.x.**_
 
 Waxaad u fur kartaa ilaa afar hab oo lacag bixinta ah oo aad ku samayn karto bogga settings-kaaga lacag bixinta: Stripe, Stripe Checkout, PayPal iyo Manual. Maqaalkan, waxaan arki doonaa sida loo isku xiro **Stripe**.
 
-## Furitaanka Stripe
+## Furitaanka Stripe {#enabling-stripe}
 
 Si aad u furto Stripe sidii hab lacag bixinta oo la heli karo barahaaga, tag **Ultimate Multisite > Settings > Payments** oo ku riix toggle-ka ee dhanka **Stripe** ama **Stripe Checkout** ee qaybta Active Payment Gateways.
 
 ![Furitaanka Stripe ee gateway-yada lacag bixinta ee firfircoon](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Habkan wuxuu kuu soo bandhigi doona meel lagu dhejin karo lambarka card-ka si aad u bixiso inta lagu jiro checkout-ka.
 
@@ -47,7 +47,7 @@ Ka soo koob qiimaha laga qaado **Publishable key** iyo **Secret key**, oo ka yim
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Ujeedinta Webhook-ka Stripe (Setting up Stripe Webhook)
+## Ujeedinta Webhook-ka Stripe (Setting up Stripe Webhook) {#setting-up-stripe-webhook}
 
 Stripe wuxuu u dirayaa dhacdo webhook ah oo si loo ogeysiiyo Ultimate Multisite markasta ay dhacdo wax ku dhaca **account-kaaga stripe**.
 

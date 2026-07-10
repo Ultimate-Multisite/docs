@@ -3,7 +3,7 @@ title: Průvodce nastavením Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Průvodce nastavením Multisite
+# Průvodce nastavením Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite obsahuje vestavěného průvodce, který automaticky převede standardní instalaci WordPress na síť WordPress Multisite. Díky tomu nemusíte ručně upravovat `wp-config.php` ani spouštět databázové příkazy.
 
@@ -11,13 +11,13 @@ Ultimate Multisite obsahuje vestavěného průvodce, který automaticky převede
 Pokud vaše instalace WordPress už běží jako síť Multisite, tento krok můžete zcela přeskočit. Průvodce se zobrazí pouze tehdy, když Multisite ještě není povoleno.
 :::
 
-## Kdy se průvodce zobrazí?
+## Kdy se průvodce zobrazí? {#when-does-the-wizard-appear}
 
 Když aktivujete Ultimate Multisite na standardní (ne-Multisite) instalaci WordPress, plugin zjistí, že Multisite není povoleno, a automaticky vás přesměruje na Průvodce nastavením Multisite místo běžného průvodce nastavením.
 
 Můžete ho také otevřít přímo v **WP Admin > Ultimate Multisite > Nastavení Multisite**.
 
-## Předpoklady
+## Předpoklady {#prerequisites}
 
 Před spuštěním průvodce se ujistěte, že:
 
@@ -29,7 +29,7 @@ Před spuštěním průvodce se ujistěte, že:
 Průvodce upravuje soubor `wp-config.php` a vytváří nové databázové tabulky. Před pokračováním si vždy vytvořte zálohu.
 :::
 
-## Krok 1: Uvítání
+## Krok 1: Uvítání {#step-1-welcome}
 
 První obrazovka vysvětluje, co je WordPress Multisite a co průvodce provede:
 
@@ -42,11 +42,11 @@ První obrazovka vysvětluje, co je WordPress Multisite a co průvodce provede:
 
 Klikněte na **Pokračovat** pro přechod na další krok.
 
-## Krok 2: Konfigurace sítě
+## Krok 2: Konfigurace sítě {#step-2-network-configuration}
 
 V tomto kroku nastavíte parametry vaší sítě.
 
-### Struktura webů
+### Struktura webů {#site-structure}
 
 Vyberte, jak budou weby ve vaší síti organizovány:
 
@@ -57,11 +57,11 @@ Vyberte, jak budou weby ve vaší síti organizovány:
 Pokud zvolíte subdomény, budete muset nakonfigurovat **wildcard DNS** a **wildcard SSL certifikát** pro vaši doménu. Většina spravovaných WordPress hostingů to řeší automaticky. Podrobné srovnání najdete v článku [Ultimate Multisite 101](./ultimate-multisite-101).
 :::
 
-### Název sítě
+### Název sítě {#network-title}
 
 Zadejte název vaší sítě. Výchozí hodnota je název vašeho současného webu s připojeným slovem „Síť". Toto můžete později změnit v nastavení sítě.
 
-### E-mail administrátora sítě
+### E-mail administrátora sítě {#network-admin-email}
 
 E-mailová adresa používaná pro oznámení správy sítě. Výchozí hodnota je e-mailová adresa aktuálního uživatele.
 
@@ -69,7 +69,7 @@ E-mailová adresa používaná pro oznámení správy sítě. Výchozí hodnota 
 
 Po vyplnění polí klikněte na **Pokračovat** pro přechod na další krok.
 
-## Krok 3: Instalace
+## Krok 3: Instalace {#step-3-installation}
 
 Klikněte na tlačítko **Instalovat** pro zahájení. Průvodce postupně provede pět automatizovaných kroků, přičemž u každého zobrazuje průběh v reálném čase:
 
@@ -96,7 +96,7 @@ Po úspěšném dokončení všech kroků uvidíte u každé položky zelený st
 
 Průvodce poté automaticky přejde na obrazovku dokončení.
 
-## Krok 4: Dokončení
+## Krok 4: Dokončení {#step-4-complete}
 
 Po dokončení instalace uvidíte zprávu o úspěchu potvrzující, že WordPress Multisite bylo povoleno.
 
@@ -108,7 +108,7 @@ Nyní můžete pokračovat průvodcem nastavení Ultimate Multisite a nakonfigur
 Po dokončení instalace multisite vás prohlížeč přesměruje přes nově povolenou správu sítě. Možná se budete muset znovu přihlásit, protože autentizační cookies se aktualizují pro prostředí multisite.
 :::
 
-## Záložní ruční nastavení
+## Záložní ruční nastavení {#manual-setup-fallback}
 
 Pokud průvodce nemůže zapisovat do souboru `wp-config.php` (kvůli oprávněním souborů nebo omezením serveru), zobrazí přesný kód, který musíte přidat ručně:
 
@@ -117,9 +117,9 @@ Pokud průvodce nemůže zapisovat do souboru `wp-config.php` (kvůli oprávněn
 
 Po provedení ručních změn obnovte stránku a průvodce zjistí, že multisite je nyní aktivní.
 
-## Řešení problémů
+## Řešení problémů {#troubleshooting}
 
-### Průvodce hlásí, že wp-config.php není zapisovatelný
+### Průvodce hlásí, že wp-config.php není zapisovatelný {#the-wizard-says-wp-configphp-is-not-writable}
 
 Proces webového serveru potřebuje oprávnění k zápisu do souboru `wp-config.php`. Můžete buď:
 
@@ -127,7 +127,7 @@ Proces webového serveru potřebuje oprávnění k zápisu do souboru `wp-config
 - Použít záložní instrukce pro ruční nastavení poskytnuté průvodcem
 - Požádat o pomoc vašeho poskytovatele hostingu
 
-### Weby nejsou po nastavení přístupné (subdomény)
+### Weby nejsou po nastavení přístupné (subdomény) {#sites-are-not-accessible-after-setup-subdomains}
 
 Pokud jste zvolili strukturu se subdoménami, musíte nakonfigurovat **wildcard DNS** pro vaši doménu. Přidejte DNS záznam:
 
@@ -139,7 +139,7 @@ Hodnota: [IP adresa vašeho serveru]
 
 Pokud si nejste jisti, jak toto nakonfigurovat, obraťte se na svého poskytovatele hostingu.
 
-### Problémy s autentizací po nastavení
+### Problémy s autentizací po nastavení {#authentication-issues-after-setup}
 
 Pokud jste odhlášeni nebo máte problémy s cookies po nastavení multisite:
 
@@ -147,7 +147,7 @@ Pokud jste odhlášeni nebo máte problémy s cookies po nastavení multisite:
 2. Přihlaste se znovu na `vasedomena.cz/wp-login.php`
 3. Pokud problém přetrvává, zkontrolujte, že v `wp-config.php` nemáte `COOKIE_DOMAIN` nastaveno na `false` — toto je známý problém u instalací multisite se subdoménami
 
-### Některý krok během instalace selhal
+### Některý krok během instalace selhal {#a-step-failed-during-installation}
 
 Pokud některý z instalačních kroků zobrazí chybu:
 

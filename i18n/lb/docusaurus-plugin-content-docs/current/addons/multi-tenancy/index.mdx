@@ -1,0 +1,150 @@
+---
+title: Multi-Mandantenfäegkeet
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy {#multi-tenancy}
+
+Verdeelt Ënnersäiten iwwer Serveren an Datebanken fir Leeschtung a Sécherheet
+
+## Héichpunkte vun der Verëffentlechung vun der Versioun 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 füügt d'souverän Tenant-Grondlag fir Produktiouns-Isolatiouns-Workflows derbäi:
+
+- Zoustandslos Tenant-Autologin mat kuerzliewegen, géint Replay geschützte SSO-Visitten.
+- Datebank- a Dateiesystem-Isolatioun pro Ënnersäit fir souverän Tenant-en.
+- Hostinger Multi-Tenancy-Fäegkeet fir host-bewosst Tenant-Bereetstellung.
+- Souverän Migratiouns-Verifikatiounsgaten fir Legacy-Datenkontrollen an asynchron Push-Veraarbechtung.
+- Konfiguréierbar Datebank-Host-Bindung op der selwechter Maschinn fir Bedrock, FrankenPHP an localhost-Installatiounen.
+- Verbesserunge beim Tenant-Bootstrap, Datebank-Writer, Schema-Bootstrap a Benotzer-Bereetstellung.
+- Méi sécher souverän Ofrappen, dat Tenant-Umeldungsdaten botzt.
+
+Kuckt d'Benotzerguiden fir [souverän Migratiouns-Workflow](/user-guide/getting-started/sovereign-migration-workflow), [Multi-Tenancy-Isolatioun](/user-guide/configuration/multi-tenancy-isolation) an [souverän Tenant-Operatiounen](/user-guide/administration/sovereign-tenant-operations).
+
+## Ufuerderungen {#requirements}
+
+- WordPress 5.3 oder méi héich
+- PHP 7.4 oder méi héich
+- Multisite Ultimate plugin (aktiv)
+
+## Installatioun {#installation}
+
+1. Luet d'Addon-Dateien an Äert `/wp-content/plugins/` Verzeechnes erop
+2. Aktivéiert de plugin iwwer de 'Plugins' Menü a WordPress
+3. Konfiguréiert d'Addon-Astellungen am Netzwierk-Admin
+
+## Entwécklung {#development}
+
+### Ariichtung {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projetstruktur {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP-Klassen an Includes
+│   ├── class-multisite-ultimate-updater.php  # Update-Handler
+│   └── class-multi_tenancy-main.php             # Haaptfunktionalitéit
+├── tests/                        # Eenheetstester
+│   ├── bootstrap.php            # Test-Bootstrap
+│   ├── class-*-base.php         # Basis-Testklass
+│   └── class-*-test.php         # Testfäll
+├── views/                       # Template-Dateien
+├── assets/                      # Statesch Assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript-Dateien
+│   └── images/                  # Biller
+├── lang/                        # Sproochdateien
+├── composer.json                # PHP-Ofhängegkeeten
+├── package.json                 # Node.js-Ofhängegkeeten
+├── phpunit.xml.dist             # PHPUnit-Konfiguratioun
+├── .phpcs.xml.dist              # Code-Standarden-Konfiguratioun
+└── rector.php                   # Reegelen zur Code-Moderniséierung
+```
+
+### Testen {#testing}
+
+Den Addon enthält en ëmfaassenden Test-Framework:
+
+- **Eenheetstester**: PHPUnit-baséiert Tester mat WordPress-Test-Suite
+- **Basis-Testklass**: Bitt Hëllefsmethoden fir heefeg Testszenarien
+- **Testofdeckung**: Konfiguréiert fir Code-Ofdeckung ze verfollegen
+- **Multisite-Testen**: Tester lafen an enger Multisite-Ëmgéigend
+
+### Code-Standarden {#code-standards}
+
+- **WordPress Coding Standards**: Duerch PHPCS duerchgesat
+- **PHP 7.4+ Kompatibilitéit**: Modern PHP-Funktiounen ënnerstëtzt
+- **Statesch Analys**: PHPStan-Integratioun fir Typkontroll
+- **Code-Moderniséierung**: Rector-Reegele fir PHP-Upgrades
+
+### Build-System {#build-system}
+
+- **Asset-Veraarbechtung**: Minifikatioun fir CSS/JS-Dateien
+- **Iwwersetzung**: POT-Datei-Generéierung
+- **Verpakung**: Archiv-Erstellung fir Verdeelung
+- **Entwécklungsmodus**: Net minifizéiert Assets fir Debugging
+
+## Konfiguratioun {#configuration}
+
+Den Addon ënnerstëtzt verschidde Konfiguratiounsoptiounen, déi iwwer d'Netzwierk-Admin-Interface zougänglech sinn.
+
+### Souverän Tenant-Konfiguratioun {#sovereign-tenant-configuration}
+
+Fir souverän Tenant-en konfiguréiert d'Tenant-Datebank, d'Dateiesystem-Wuerzel, d'Datebank-Host-Bindung an d'Host-Fäegkeet, ier Dir Traffic un den Tenant rout. Féiert no all Ännerung, déi Datebank-Umeldungsdaten, Host-Bindung, Routing oder Benotzer-Bereetstellung beaflosst, eng Migratiouns-Verifikatioun aus.
+
+Benotzt `localhost` nëmmen dann, wann d'Tenant-Runtime an d'Datebank-Grants lokale Socket- oder Zougrëff op der selwechter Maschinn erwaarden. Benotzt `127.0.0.1` oder e Service-Hostname, wann dat de Grant-Host ass, deen vun Ärem Provider konfiguréiert gouf.
+
+### Hostinger-Fäegkeet {#hostinger-capability}
+
+D'Hostinger Multi-Tenancy-Fäegkeet funktionéiert mam gedeelt Hostinger-Integratiouns-Token. Confirméiert, datt d'Domain an hPanel disponibel ass, DNS op den Hostinger account weist, an d'Tenant-Datebank-Astellunge mat hPanel iwwereneestëmmen, ier Dir verifizéiert.
+
+## Hooks a Filteren {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - Ausgeléist no der Addon-Initialiséierung
+- `ultimate-multisite-addon-template_loaded` - Ausgeléist nodeems all Addon-Dateie geluede sinn
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Addon-Astellungen änneren
+- `ultimate-multisite-addon-template_enabled` - Addon-Aktivéieren/Desaktivéieren-Status iwwerschreiwen
+
+## Lizenz {#license}
+
+Dësen Addon ass ënner der GPL v3 oder méi spéit lizenzéiert.
+
+## Support {#support}
+
+Fir Support an Dokumentatioun, besicht [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Versioun 1.2.0 (2026-06-03): füügt zoustandslos Tenant-Autologin, Hostinger Multi-Tenancy-Fäegkeet, Datebank- a Dateiesystem-Isolatioun pro Ënnersäit, souverän Migratiouns-Verifikatiounsgaten, Verbesserunge beim Tenant-Bootstrap/Datebank-Writer, konfiguréierbar MySQL-Host-Bindung a méi sécher souverän Ofrappen derbäi.
+
+- Versioun 1.0.1 (2025-09-28): Prefix op ultimate-multisite ëmbenennen; Text-Domain aktualiséieren; Versiouns-Erhéijung.
+
+
+- Versioun  (2025-09-28): Prefix op ultimate-multisite ëmbenennen; Text-Domain aktualiséieren; Versiouns-Erhéijung.

@@ -3,17 +3,17 @@ title: Kugadzirwa ne cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# CPanel Integration
+# CPanel Integration {#cpanel-integration}
 
-## Oraphorwe
+## Oraphorwe {#overview}
 cPanel ndiyo inoshoko yavo ye zvinovhu vachikwa nevanhu vange vashandisa kune hosting dzakawanda dze share na dedicated. Iyi integration inosimbisa syncing ya domain automatically kubva mu Ultimate Multisite ne cPanel, inosimbisa kuti utange kuenda nekubuda aliases uye subdomains ku account yako ye cPanel.
 
-## Features
+## Features {#features}
 - Kuita addon domain automatic mu cPanel
 - Kuita subdomain automatic mu cPanel (kune installations dzakawanda dze multisite dzakubva subdomain)
 - Kufamba nedomain kana mappings acho akavara
 
-## Requirements
+## Requirements {#requirements}
 Zvinotora constants izvi zvandinidzidzisa mu file yako `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Default ndiri 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Default ndiri /public_html
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. Shandisa Credentials dzako dze cPanel
+### 1. Shandisa Credentials dzako dze cPanel {#1-get-your-cpanel-credentials}
 
 1. Ndidzidzisa username nepassword yako ye cPanel kubva mu hosting provider wako
 2. Tsvaka host yako ya cPanel (usually `cpanel.yourdomain.com` kana `yourdomain.com:2083`)
 
-### 2. Shandisa Constants mu wp-config.php
+### 2. Shandisa Constants mu wp-config.php {#2-add-constants-to-wp-configphp}
 
 Shandisa constants izvi mu file yako `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Gara kana cPanel yako inoshandisa port inotev
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Gara kana document root yako inosvika sei
 ```
 
-### 3. Onesha Integration
+### 3. Onesha Integration {#3-enable-the-integration}
 
 1. Muenda ku admin ya WordPress yako, uenda kwa Ultimate Multisite > Settings
 2. Uenda kwenye tab inotizira "Domain Mapping" (Kupanga Domain)
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Gara kana document root yako in
 4. Washa (Enable) uunganishaji wa cPanel
 5. Bonya "Save Changes" (Hifadhi Mabadiliko)
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Addon Domains (Domain za Ziada)
+### Addon Domains (Domain za Ziada) {#addon-domains}
 
 Inapokuwa domain inapangwa (mapped) katika Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Inapokuwa domain inapangwa (mapped) katika Ultimate Multisite:
 2. Domain inafanywa iwe na maelezo yanayoonyesha directory yako kuu (root directory)
 3. Wakati unapofuta upangaji wa domain, uunganishaji utafuta addon domain kutoka cPanel
 
-### Subdomains (Subdomains)
+### Subdomains (Subdomains) {#subdomains}
 
 Kwa usakinishaji wa multisite unaotumia subdomains, wakati msimbo mpya unapoundwa:
 
@@ -79,27 +79,27 @@ Kwa usakinishaji wa multisite unaotumia subdomains, wakati msimbo mpya unapoundw
 2. Unatuma ombi kwa API ya cPanel ili kuongeza subdomain hiyo
 3. Subdomain inafanywa iwe na maelezo yanayoonyesha directory yako kuu (root directory)
 
-## Maelezo Muhimu
+## Maelezo Muhimu {#important-notes}
 
 - Uunganishaji unatumia API2 ya cPanel ili kuwasiliana na akaunti yako ya cPanel
 - Akaunti yako ya cPanel lazima iwe na ruhusa za kuongeza addon domains na subdomains
 - Watoa huduma wengine wanaweza kupunguza idadi ya addon domains au subdomains unazoweza kutengeneza
 - Uunganishaji haufanyi kazi ya DNS configuration; bado unahitaji kuonyesha domain zako kwenye anwani (IP address) ya seva yako
 
-## Kutatua Matatizo (Troubleshooting)
+## Kutatua Matatizo (Troubleshooting) {#troubleshooting}
 
-### Masuala ya Muunganisho wa API (API Connection Issues)
+### Masuala ya Muunganisho wa API (API Connection Issues) {#api-connection-issues}
 - Thibitisha kwamba jina la mtumiaji na nenosiri lako la cPanel ni sahihi
 - Angalia kwamba host yako ya cPanel inafanya kazi vizuri na inaweza kufikiwa
 - Hakikisha kuwa akaunti yako ya cPanel ina ruhusa zinazohitajika
 - Jaribu kutumia URL kamili ya host (k.m., `https://cpanel.yourdomain.com`)
 
-### Domain Haikuongezwi (Domain Not Added)
+### Domain Haikuongezwi (Domain Not Added) {#domain-not-added}
 - Angalia logs za Ultimate Multisite kwa ujumbe wowote wa makosa
 - Thibitisha kwamba domain haipo tayari kwenye cPanel
 - Hakikisha kuwa akaunti yako ya cPanel haijafikia kikomo cha addon domains au subdomains
 
-### Matambudziko anokuti SSL Certificate
+### Matambudziko anokuti SSL Certificate {#ssl-certificate-issues}
 
 - Integration iyi inozoshanda kuteera (issue) SSL certificate.
 - Unoziva kuti unoda kutenda (use) zvitulo zveSSL/TLS zvakasiyana-nyaya dzinogadzirwa nepanel cPanel kana feature ya AutoSSL kuti utende SSL certificates dzako dzine domain dzako.

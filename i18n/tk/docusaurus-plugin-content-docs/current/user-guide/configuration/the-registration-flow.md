@@ -3,13 +3,13 @@ title: Ýeňilendirme Akymy
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Kydaşylyk Prosesi (v2)
+# Kydaşylyk Prosesi (v2) {#the-registration-flow-v2}
 
 _**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiyasyny 2.x-e aýdylýar.**_
 
 Userlar ulgamyza dürli usullar bilen ýa-da ulanyp biljekdir. Olar siziň döredip bilýän ýazgy formasyndan ýa-da önümçeli plan üçin paylaýan linkden (shareable link) ulyp biljekdir. Bu ýerde biz size, müşderileriniz ulgamyza nähili ulyp bilerler we olar ulyp bilerinden soň näme boljakdygyny görkezeli.
 
-## Ulyp Bilen Formany Ulanmak:
+## Ulyp Bilen Formany Ulanmak: {#using-the-registration-form}
 
 Bu standart ulyp bilmek prosesidir. Siz **checkout formasy** bilen bir ulyp bilmek üçin ulyp biljek bir sayty döredip, müşderileriniz ulgamyza ulyp we plan üçin ulyp bilerler. Islegsyz bolsa, her biri dürli ulyp bilmek üçin dürli ulyp formasy bilen köp ulyp bilmek mümkin.
 
@@ -35,13 +35,13 @@ Eger olar toplanan plan üçin ýa-da ulgamanızdaky ağda e-poçta tasdik zat m
 
 ![Dashboardyza girmezlik linki bilen işlenen web sahypasy](/img/frontend/site-activated.png)
 
-## Paylaşylmadyk Linkden Ulanmak:
+## Paylaşylmadyk Linkden Ulanmak: {#using-a-shareable-link}
 
 Paylaşylmadyk link arkaly goşylyp bilmek prosesi, goşylyp barlamak üçin görkezilen formanyň bilen esasanam birme-bir degişlidir. Diňe, paylaşylmadyk linkden ulanyp, müşderileriniz tölem formu üçin önüm ýa-da web sayty şablonyny önceden saýla biljekdigi (URL parametrlary arkaly önümleri we şablonlary önceden saýlamak barada bölümä seret) ýa-da belki hem kupon kody goşmak biler (URL parametrlary ulanyp barada bölümä seret).
 
 Goşylyp barlamak prosesi birme-bir degişlidir: olar adlaryny, ulanyjylar adyny, e-poçta adresini, web saytynyň adyny we sanyny we ş.m. ýazmalydyr... ýöne plan ýa-da web sahypasy şablonu olary üçin önceden saýlan bolup biler.
 
-### Manual Tolemden Goşylyp Barlamak:
+### Manual Tolemden Goşylyp Barlamak: {#registering-using-manual-payments}
 
 Eger siz Ultimate Multisite ýa-da onuň goşulmalaryny teklip edýän PayPal, Stripe ýa-da beýleki tölemek portalyny ulamak istemezse, müşderiňiz üçin manual tölemden peýdalanyp bilersiňiz. Bu ýagdaýda, olar ağyza goşulandan soň sizleriň üstünlikli tölemek işlenijinizde tölem etmek üçin olaryň üçin has howpsuzlygy we tölemi görkezmek üçin hisab (invoice) döredip bilersiňiz.
 

@@ -1,120 +1,124 @@
 ---
-title: Trimiterea Email-urilor și a Mesajelor Broadcast
+title: Trimiterea e-mailurilor și a difuzărilor
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Trimiterea de emailuri și anunțuri (v2)
+# Trimiterea de emailuri și Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
-Ultimate Multisite include o funcționalitate care îți permite să comunici cu clienții tăi prin trimiterea unui email către un utilizator specific sau un grup de utilizatori, precum și prin afișarea de notificări în panoul lor de administrare pentru a transmite anunțuri.
+Ultimate Multisite vine cu o funcționalitate care îți va permite să comunici cu clienții tăi trimițând un email către un utilizator țintit sau un grup de utilizatori, precum și trimițând notificări pe Dashboard-ul lor de administrare pentru a difuza anunțuri
 
-## Adaugă notificări de administrare în dashboard-ul clienților tăi cu Broadcasts
+## Adaugă notificări de administrare în dashboard-ul clienților tăi cu Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Folosind funcționalitatea de broadcast din Ultimate Multisite, poți adăuga **notificări de administrare** în panoul de administrare al subsiturilor utilizatorilor tăi.
+Folosind funcționalitatea de broadcast Ultimate Multisite, poți adăuga **notificări de administrare** în dashboard-ul de administrare al subsite-ului utilizatorului tău.
 
-Acest lucru este extrem de util atunci când trebuie să faci un anunț despre mentenanța sistemului sau să oferi produse sau servicii noi utilizatorilor existenți. Așa va arăta notificarea de administrare în dashboard-ul utilizatorului tău.
+Acest lucru este extrem de util dacă trebuie să faci un anunț, precum mentenanță de sistem sau oferirea de produse ori servicii noi utilizatorilor tăi existenți. Așa va arăta notificarea de administrare pe dashboard-ul utilizatorului tău.
 
-![Notificare broadcast afișată în dashboard-ul clientului](/img/admin/broadcasts-list.png)
+<!-- Captură de ecran indisponibilă: Broadcast cu notificare de administrare afișat pe dashboard-ul subsite-ului unui client -->
 
-Pentru a crea o notificare de administrare, accesează panoul de administrare al rețelei și în meniul **Ultimate Multisite** vei găsi opțiunea **Broadcasts**.
+Pentru a începe o notificare de administrare, mergi la dashboard-ul de administrare al rețelei și, sub meniul **Ultimate Multisite**, vei găsi opțiunea **Broadcasts**.
 
-![Meniul Broadcasts în administrarea Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Pagina listei Broadcasts în administrarea Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Din această pagină, apasă butonul **Add Broadcast** din partea de sus.
+De asemenea, poți edita broadcast-uri existente:
 
-Aceasta va deschide fereastra modală Add broadcast unde poți alege ce tip de broadcast dorești să trimiți.
+![Interfața de editare a broadcast-ului](/img/admin/broadcast-edit.png)
 
-Selectează **Message** și apoi apasă butonul **Next Step**.
+Din această pagină, apasă butonul **Adaugă Broadcast** din partea de sus.
 
-![Fereastra modală Add broadcast cu tipul Message selectat](/img/admin/broadcasts-list.png)
+Aceasta va deschide fereastra modală Adăugare broadcast, unde poți alege ce tip de broadcast dorești să trimiți.
 
-Următoarea fereastră îți va cere să alegi **Target customer** sau **Target product**. Poți selecta mai mult de un utilizator sau mai mult de un produs.
+Continuă și selectează **Mesaj**, apoi apasă butonul **Pasul următor**.
 
-Pentru a căuta un cont de utilizator sau un produs, trebuie să începi să tastezi cuvântul cheie în câmp.
+![Modalul de adăugare broadcast cu opțiunea Mesaj selectată](/img/admin/broadcast-add-message.png)
 
-În câmpul **Message type**, poți selecta culoarea notificării. Aceasta va sublinia urgența mesajului tău.
+Următoarea fereastră îți va cere fie **Client țintă**, fie **Produs țintă**. Reține că poți selecta mai mult de un utilizator sau mai mult de un produs.
 
-Apoi poți apăsa **Next Step**.
+Pentru a căuta fie un Account de utilizator, fie un produs, trebuie să începi să tastezi cuvântul-cheie în câmp.
 
-![Selectarea clientului țintă și a produsului pentru broadcast](/img/admin/broadcasts-list.png)
+Sub câmpul **Tip mesaj**, poți selecta culoarea notificării. Aceasta va sublinia urgența mesajului tău.
 
-Următoarea fereastră este locul unde poți compune mesajul tău introducând subiectul și conținutul/mesajul pe care dorești să îl transmiți utilizatorilor.
+Apoi poți apăsa **Pasul următor**.
 
-![Editorul pentru subiect și conținut al mesajului broadcast](/img/admin/broadcasts-list.png)
+![Câmpurile clienți țintă, produs țintă și tip mesaj pentru un broadcast de tip Mesaj](/img/admin/broadcast-message-targets.png)
 
-După ce ai creat mesajul, poți apăsa butonul **Send**.
+Următoarea fereastră este locul unde poți începe să compui mesajul, introducând subiectul și conținutul/mesajul pe care dorești să îl difuzezi utilizatorilor.
 
-Și asta e tot. Notificarea de administrare ar trebui să apară imediat în dashboard-ul utilizatorului tău.
+![Subiectul mesajului de broadcast și editorul de conținut la pasul de compunere](/img/admin/broadcast-edit.png)
 
-## Trimite emailuri clienților tăi
+După ce ai creat mesajul, poți apăsa butonul **Trimite**.
 
-Folosind funcționalitatea de broadcast din Ultimate Multisite, poți trimite un email utilizatorilor tăi. Ai opțiunea de a trimite emailul doar unor utilizatori specifici sau de a viza un grup specific de utilizatori în funcție de produsul sau planul la care sunt abonați.
+Și asta este tot. Notificarea de administrare ar trebui să apară imediat pe dashboard-ul utilizatorului tău.
 
-Pentru a începe un broadcast prin email, accesează panoul de administrare al rețelei și în meniul Ultimate Multisite vei găsi opțiunea Broadcast.
+## Trimite emailuri clienților tăi {#send-emails-to-your-customers}
 
-![Pagina Broadcasts în administrarea Ultimate Multisite](/img/admin/broadcasts-list.png)
+Folosind funcționalitatea de broadcast Ultimate Multisite, poți trimite un email utilizatorilor tăi. Ai opțiunea de a trimite emailul doar anumitor utilizatori sau de a ținti un anumit grup de utilizatori pe baza produsului sau planului la care sunt abonați.
 
-Din această pagină, apasă butonul **Add broadcast** din partea de sus.
+Pentru a începe un broadcast prin email, mergi la dashboard-ul de administrare al rețelei și, sub meniul Ultimate Multisite, vei găsi opțiunea Broadcast.
 
-Aceasta va deschide fereastra modală Add broadcast unde poți alege ce tip de broadcast dorești să trimiți. Selectează **Email** și apoi apasă butonul **Next Step**.
+![Pagina listei Broadcasts folosită ca punct de pornire pentru un broadcast prin email](/img/admin/broadcasts-list.png)
 
-![Fereastra modală Add broadcast cu tipul Email selectat](/img/admin/broadcasts-list.png)
+Din această pagină, apasă butonul **Adaugă broadcast** din partea de sus.
 
-Următoarea fereastră îți va cere să alegi **Target customer** sau **Target product**. Poți selecta mai mult de un utilizator sau mai mult de un produs.
+Aceasta va deschide fereastra modală Adăugare broadcast, unde poți alege ce tip de broadcast dorești să trimiți. Continuă și selectează **Email**, apoi apasă butonul **Pasul următor**.
 
-Pentru a căuta un cont de utilizator sau un produs, trebuie să începi să tastezi cuvântul cheie în câmp.
+![Modalul de adăugare broadcast cu opțiunea Email selectată](/img/admin/broadcast-add-email.png)
 
-După ce ai selectat audiența țintă, poți apăsa **Next Step**.
+Următoarea fereastră îți va cere fie **Client țintă**, fie **Produs țintă**. Reține că poți selecta mai mult de un utilizator sau mai mult de un produs.
 
-![Selectarea clientului țintă și a produsului pentru broadcast prin email](/img/admin/broadcasts-list.png)
+Pentru a căuta fie un Account de utilizator, fie un produs, trebuie să începi să tastezi cuvântul-cheie în câmp.
 
-Următoarea fereastră este locul unde poți compune emailul tău introducând subiectul și conținutul/mesajul pe care dorești să îl trimiți utilizatorilor.
+După ce publicul țintă este selectat, poți apăsa **Pasul următor**.
 
-![Editorul pentru subiect și conținut al broadcast-ului prin email](/img/admin/broadcasts-list.png)
+![Selecția clienților țintă și a produsului țintă pentru un broadcast prin Email](/img/admin/broadcast-email-targets.png)
 
-După ce ai creat mesajul, poți apăsa butonul **Send**.
+Următoarea fereastră este locul unde poți începe să compui emailul, introducând subiectul și conținutul/mesajul pe care dorești să îl trimiți utilizatorilor.
 
-Și iată cât de ușor este să trimiți un email utilizatorilor tăi folosind funcționalitatea de broadcast.
+<!-- Captură de ecran indisponibilă: Subiectul broadcast-ului prin email și editorul de conținut la pasul de compunere -->
 
-## Emailuri de sistem
+După ce ai creat mesajul, poți apăsa butonul **Trimite**.
 
-Emailurile de sistem din Ultimate Multisite sunt acele **notificări automate** trimise de sistem după anumite acțiuni precum înregistrarea, plata, maparea domeniului etc. Aceste emailuri pot fi editate sau modificate din setările Ultimate Multisite. De asemenea, există o funcționalitate care îți permite să resetezi și să imporți setări existente dintr-o altă instalare Ultimate Multisite.
+Și așa de ușor este să trimiți un email utilizatorilor tăi finali folosind funcționalitatea de broadcast.
 
-### Resetare și Import
+## Emailuri de sistem {#system-emails}
+
+Emailurile de sistem din Ultimate Multisite sunt acele **notificări automate** trimise de sistem după anumite acțiuni, precum înregistrarea, plata, maparea domeniului etc. Aceste emailuri pot fi editate sau modificate din setările Ultimate Multisite. De asemenea, vine cu o funcționalitate care îți va permite să resetezi și să imporți setările existente dintr-o altă instalare Ultimate Multisite.
+
+### Resetare și importare {#resetting--importing}
 
 Noile versiuni Ultimate Multisite, precum și add-on-urile, pot și vor înregistra emailuri noi din când în când.
 
-Pentru a preveni conflictele și alte probleme, **nu vom adăuga automat noile șabloane de email ca Emailuri de sistem în instalarea ta**, decât dacă sunt esențiale pentru funcționarea corectă a unei anumite funcționalități.
+Pentru a preveni conflictele și alte probleme, **nu vom adăuga automat noile șabloane de email ca Emailuri de sistem în instalarea ta** , decât dacă sunt esențiale pentru funcționarea corectă a unei anumite funcționalități.
 
-Cu toate acestea, super adminii și agenții pot importa aceste emailuri nou înregistrate prin instrumentul de import. Acest proces va crea un nou email de sistem cu conținutul și configurația noului șablon de email, permițând super adminului să facă orice modificări dorește sau să le păstreze așa cum sunt.
+Totuși, super administratorii și agenții pot importa aceste emailuri nou înregistrate prin instrumentul de import. Acest proces va crea un nou email de sistem cu conținutul și configurația noului șablon de email, permițând super administratorului să facă orice modificări dorește sau să le păstreze așa cum sunt.
 
-#### Cum să imporți emailuri de sistem
+#### Cum să imporți emailuri de sistem {#how-to-import-system-emails}
 
-Accesează pagina de setări Ultimate Multisite și navighează la tab-ul **Emails**.
+Mergi la pagina Setări Ultimate Multisite și accesează fila **Emailuri**.
 
-![Tab-ul Emails în setările Ultimate Multisite](/img/config/settings-emails.png)
+![Fila Emailuri din setările Ultimate Multisite afișând secțiunea Emailuri de sistem](/img/config/settings-emails-tab.png)
 
-Apoi, în bara laterală, apasă pe butonul **Customize System Emails**.
+Apoi, în bara laterală, apasă pe butonul **Personalizează Emailurile de sistem**.
 
-![Butonul Customize System Emails în bara laterală](/img/config/settings-emails.png)
+<!-- Captură de ecran indisponibilă: Butonul Personalizează Emailurile de sistem în panoul lateral Emailuri de sistem -->
 
-Pe pagina System Emails, vei vedea butonul de acțiune **Reset & Import** în partea de sus. Apăsând acel buton ar trebui să deschidă fereastra modală de import și resetare.
+Pe pagina Emailuri de sistem, vei vedea butonul de acțiune **Resetare și importare** în partea de sus. Apăsarea acelui buton ar trebui să deschidă fereastra modală de importare și resetare.
 
-![Butonul de acțiune Reset and Import pe pagina System Emails](/img/config/settings-emails.png)
+![Butonul de acțiune Resetare sau Importare pe pagina de administrare Emailuri de sistem](/img/admin/system-emails-reset-import.png)
 
-Apoi, poți activa opțiunile Import Emails pentru a vedea ce emailuri de sistem sunt disponibile pentru import.
+Apoi, poți comuta opțiunile Import Emails pentru a vedea ce emailuri de sistem sunt disponibile pentru importare.
 
-![Opțiunile Import Emails care arată emailurile de sistem disponibile](/img/config/settings-emails.png)
+<!-- Captură de ecran indisponibilă: fereastra modală Resetare și importare cu opțiunile de importare a emailurilor extinse -->
 
-#### Resetarea Emailurilor de sistem
+#### Resetarea emailurilor de sistem {#reseting-system-emails}
 
-Alteori, vei realiza că modificările pe care le-ai făcut unui anumit șablon de email nu mai funcționează pentru tine și ai dori să îl resetezi la **starea implicită**.
+Alteori, îți vei da seama că modificările pe care le-ai făcut unui anumit șablon de email nu mai funcționează pentru tine și ai dori să îl resetezi la **starea implicită**.
 
-În astfel de cazuri, ai două opțiuni: poți pur și simplu să ștergi emailul de sistem și să îl imporți înapoi (folosind instrucțiunile de mai sus) - ceea ce va șterge metricile de trimitere și alte date, făcând această metodă mai puțin preferată.
+În astfel de cazuri, ai două opțiuni: poți pur și simplu să ștergi emailul de sistem și să îl imporți înapoi (folosind instrucțiunile de mai sus) - ceea ce va șterge metricile de trimitere și alte lucruri, făcând această metodă cea mai puțin preferată.
 
-Sau poți folosi instrumentul **Reset & Import** pentru a reseta acel șablon de email.
+Sau poți folosi **instrumentul Resetare și importare** pentru a reseta acel șablon de email.
 
-Pentru a reseta un șablon de email, poți urma pașii de mai sus până ajungi la instrumentul Reset & Import, și apoi, activează opțiunea **Reset** și selectează emailurile pe care dorești să le resetezi la conținutul lor implicit.
+Pentru a reseta un șablon de email, poți urma pașii de mai sus până ajungi la instrumentul Resetare și importare, apoi activează opțiunea **Resetare** și selectează emailurile pe care vrei să le resetezi la conținutul lor implicit.
 
-![Opțiunea Reset pentru restaurarea șabloanelor de email la valorile implicite](/img/config/settings-emails.png)
+<!-- Captură de ecran indisponibilă: fereastra modală Resetare și importare cu opțiunile de resetare a emailurilor extinse -->

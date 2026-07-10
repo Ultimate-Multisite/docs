@@ -1,0 +1,31 @@
+---
+id: wu_should_create_domain_record_for_site
+title: តម្រង - wu_should_create_domain_record_for_site
+sidebar_label: wu_should_create_domain_record_for_site
+_i18n_hash: d97b52f157228e570818c153e96a609c
+---
+# តម្រង: wu_should_create_domain_record_for_site {#filter-wushouldcreatedomainrecordforsite}
+
+តម្រងនេះកំណត់ថាតើ Ultimate Multisite គួរបង្កើតកំណត់ត្រា​ដែនសម្រាប់តំបន់បណ្ដាញដែលទើបបង្កើតថ្មីឬអត់។
+
+ប្រើតម្រងនេះដើម្បីទប់ស្កាត់ ឬពន្យារការបង្កើតកំណត់ត្រា​ដែនដោយស្វ័យប្រវត្តិ សម្រាប់តំបន់បណ្ដាញដែលប្រើដែនមូលដ្ឋាននៃសំណុំបែបបទបង់ប្រាក់រួម ម៉ាស៊ីនខាងក្នុង ឬដែនដែលការរួមបញ្ចូលផ្សេងទៀតនឹងគ្រប់គ្រងដោយឡែក។
+
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
+
+| ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
+|------|------|-------------|
+| $create | `bool` | ថាតើគួរបង្កើតកំណត់ត្រា​ដែនឬអត់។ |
+| $site | `WP_Site` | វត្ថុតំបន់បណ្ដាញដែលទើបបង្កើតថ្មី។ |
+
+### ចាប់ពី {#since}
+
+- 2.13.0
+
+### ប្រភព {#source}
+
+បានកំណត់នៅក្នុង `inc/functions/domain.php`។
+
+
+## តម្លៃត្រឡប់ {#returns}
+
+Boolean ដែលបង្ហាញថាតើត្រូវបង្កើតកំណត់ត្រា​ដែនឬអត់។

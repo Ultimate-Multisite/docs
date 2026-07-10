@@ -4,14 +4,14 @@ title: عمل - wu_activation
 sidebar_label: wu_activation
 _i18n_hash: 0ec467d0264892e36370c595d97b91be
 ---
-# Action: wu_activation
+# Action: wu_activation {#action-wuactivation}
 
 پلاگ ان کے دیگر حصوں کو فعال ہونے (activation) کے لیے اپنے فنکشنز (routines) منسلک کرنے کی اجازت دیتا ہے۔
 
-### سے
+### سے {#since}
 
 - 1.9.6
 
-### ماخذ
+### ماخذ {#source}
 
 یہ [`inc/class-hooks.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-hooks.php#L91) میں لائن 91 پر بیان کیا گیا ہے۔

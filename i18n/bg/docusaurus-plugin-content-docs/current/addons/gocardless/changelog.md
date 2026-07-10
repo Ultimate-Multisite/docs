@@ -3,7 +3,7 @@ title: GoCardless Changelog
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Журнал с промени на GoCardless
+# Журнал с промени на GoCardless {#gocardless-changelog}
 
 Version: 1.0.3 - Публикувано на 2026-05-05
 * Поправка: Напуснатите сайтове, които са в процес на обработка, сега се почистват, когато членството в GoCardless бъде отменено, докато е в процес на обработка или в режим на задържане.

@@ -1,0 +1,19 @@
+---
+id: wu_element_block_types_to_check
+title: Filtrs - wu_element_block_types_to_check
+sidebar_label: wu_element_block_types_to_check
+_i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
+---
+# Filtrs: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+
+Iespējams, vēlāk būs jāpievieno papildu bloki.
+
+### Kopš {#since}
+
+- 2.0.0
+### Avots {#source}
+
+Definēts [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) 300. rindā
+
+
+## Atgriež {#returns}

@@ -4,22 +4,22 @@ title: Фильтр - wu_checkout_step_validation_submittable_field_types
 sidebar_label: wu_checkout_step_validation_submittable_field_types
 _i18n_hash: e7a60bbcaf5ac9ec1ce547370ef447fc
 ---
-# Фильтр: wu_checkout_step_validation_submittable_field_types
+# Фильтр: wu_checkout_step_validation_submittable_field_types {#filter-wucheckoutstepvalidationsubmittablefieldtypes}
 
 Позволяет разработчикам обойти проверку, если поле автоматически отправляется.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
 | $submittable_field_types | `array` | Список типов полей. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.0
 
-### Источник
+### Источник {#source}
 
 Определено в `inc/helpers/validation-rules/class-checkout-steps.php` на строке 92
 
-## Возвращает
+## Возвращает {#returns}

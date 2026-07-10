@@ -3,7 +3,7 @@ title: Konfigurado de PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# La Konfiguracio de la Pasarela PayPal (v2)
+# La Konfiguracio de la Pasarela PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**NOTO IMPORTANTE: Esta artikolo se refi a Ultimate Multisite versio 2.x.**_
 
@@ -13,13 +13,13 @@ Simile kiel Stripe, PayPal estas ampi uziata por online pagoj, precipe sur WordP
 
 Notu, vi bezonas **konton de Biznes PayPal** por akuti la kredencojn API necesajn por ĉi tiu integriĝo.
 
-## Aktivado de PayPal sur via rero
+## Aktivado de PayPal sur via rero {#enabling-paypal-on-your-network}
 
 Por aktivi PayPal kiel disponible metodo de pago sur via rero, dirigi al **Ultimate Multisite > Settings > Payments** tab kaj marku la kordon apud PayPal.
 
 ![Aktivado de PayPal en aktifaj pagaj pasiloj](/img/config/settings-payment-gateways.png)
 
-## Uzo de la gvidita montraĝo (wizard)
+## Uzo de la gvidita montraĝo (wizard) {#using-the-guided-setup-wizard}
 
 Ultimate Multisite 2.10.0 aĉas gviditan montraĝon de PayPal por konfigurado de pasiloj de pago. Post kiam vi aktivas PayPal, uzu la montraĝon sur **Ultimate Multisite > Settings > Payments** por elgi kiel vi volas konekti la pasilon kaj konfirme ki kie kredencoj estas necesaj antaŭ salvado.
 
@@ -30,7 +30,7 @@ La montraĝo suportas du montraj vojoj:
 
 Se você não vir a opção OAuth no assistente, complete o fluxo de inserção manual de credenciais abaixo. O gateway funciona com as mesmas credenciais da API do PayPal Business das versões anteriores do Ultimate Multisite 2.x.
 
-## Obtendo as credenciais da API do PayPal
+## Obtendo as credenciais da API do PayPal {#getting-the-paypal-api-credentials}
 
 Depois que o PayPal for ativado como gateway de pagamento, você precisará preencher os campos para **Nome de Usuário da API** (PayPal API Username), **Senha da API** (PayPal API Password) e **Assinatura da API** (PayPal API Signature).
 

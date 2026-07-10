@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency permite rețelei dvs. să accepte plăți în mai multe monede. Acesta convertesc automat prețurile folosind rate de schimb în timp real sau manuale, vă permite să setați prețuri exacte per produs pentru orice monedă și detectează moneda preferată a fiecărui vizitator prin geolocație — toate gestionate dintr-un singur dashboard de administrare.
 
-## Funcționalități Cheie
+## Funcționalități Cheie {#key-features}
 
 - **Conversie automată a ratei de schimb** — prețurile sunt convertite din moneda de bază folosind rate prelevate de la furnizorul ales
 - **Suprascri scrierea prețurilor per produs** — setați prețuri exacte, specifice unei monede, pe orice produs pentru a ocoli conversia automată
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency permite rețelei dvs. să accepte plăți în
 - **Detectarea monedei bazată pe geolocație** — selectează automat moneda care corespunde țării vizitatorului
 - **Dashboard de administrare** — gestionați monedele active, ratele de schimb și setările furnizorului dintr-un singur loc
 
-## Cerințe
+## Cerințe {#requirements}
 
 - Ultimate Multisite 2.0.0 sau mai mare
 - Instalare WordPress Multisite
 - PHP 7.4 sau mai mare
 
-## Instalare
+## Instalare {#installation}
 
 1. Uploadați fișierele plugin-ului în `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Activați plugin-ul prin ecranul **Plugins** din WordPress (Network Activate)
 3. Navigați la **Ultimate Multisite → Multi-Currency** pentru a deschide dashboard-ul de administrare
 4. Adăugați monedele pe care doriți să le acceptați și configurați furnizorul de rate de schimb
 
-## Configurare
+## Configurare {#configuration}
 
-### Dashboard-ul de Administrare
+### Dashboard-ul de Administrare {#admin-dashboard}
 
 Dashboard-ul Multi-Currency (**Ultimate Multisite → Multi-Currency**) este locul central pentru:
 
@@ -44,7 +44,7 @@ Dashboard-ul Multi-Currency (**Ultimate Multisite → Multi-Currency**) este loc
 - Revizuirea ratelor curente pentru toate monedele active
 - Setarea ratelor manuale atunci când furnizorii automatici nu sunt potriviți
 
-### Furnizori de Rate de Schimb
+### Furnizori de Rate de Schimb {#exchange-rate-providers}
 
 | Provider | Descriere |
 |---|---|
@@ -55,7 +55,7 @@ Dashboard-ul Multi-Currency (**Ultimate Multisite → Multi-Currency**) este loc
 
 Selectați furnizorul sub **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ratele pot fi actualizate manual în orice moment sau programate pentru a se actualiza automat.
 
-### Suprascri scrierea prețurilor per produs
+### Suprascri scrierea prețurilor per produs {#per-product-pricing-overrides}
 
 Când conversia automată nu este suficient de precisă, puteți seta un preț exact pentru o monedă specifică pe orice produs:
 
@@ -66,7 +66,7 @@ Când conversia automată nu este suficient de precisă, puteți seta un preț e
 
 Produsele fără suprascriere folosesc prețul convertit din moneda de bază.
 
-### Câmp de înregistrare cu selector de monede
+### Câmp de înregistrare cu selector de monede {#currency-selector-signup-field}
 
 Câmpul selector de monede poate fi adăugat fluxului dvs. de înregistrare/checkout, astfel încât clienții să își aleagă moneda preferată la înregistrare:
 
@@ -76,7 +76,7 @@ Câmpul selector de monede poate fi adăugat fluxului dvs. de înregistrare/chec
 
 Moneda selectată este stocată împreună cu abonamentul și folosită pentru toate facturările ulterioare.
 
-### Detectarea monedei bazată pe geolocație
+### Detectarea monedei bazată pe geolocație {#geolocation-based-currency-detection}
 
 Când detectarea geolocației este activată, addon-ul mapează țara vizitatorului la o monedă și o selectează preselectat în câmpul selector de monede. Pentru a activa:
 
@@ -86,27 +86,27 @@ Când detectarea geolocației este activată, addon-ul mapează țara vizitatoru
 
 Dacă nu există o mapare pentru țara vizitatorului, se folosește moneda de bază a rețelei ca fallback.
 
-## Întrebări Frecvente
+## Întrebări Frecvente {#frequently-asked-questions}
 
-### Ce se întâmplă dacă un furnizor de rate de schimb nu este disponibil?
+### Ce se întâmplă dacă un furnizor de rate de schimb nu este disponibil? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon-ul revine la ultimele rate prelevate cu succes. Dacă nu au fost prelevate rate niciodată, revine la ratele manuale pe care le-ați configurat. Este recomandat să configurați ratele manuale ca măsură de siguranță.
 
-### Pot folosi furnizori diferiți pentru monede diferite?
+### Pot folosi furnizori diferiți pentru monede diferite? {#can-i-use-different-providers-for-different-currencies}
 
 Nu — un singur furnizor este activ în orice moment pentru toate monedele. Folosiți **Manual** dacă aveți nevoie de control complet asupra ratelor individuale.
 
-### Geolocația necesită un plugin separat?
+### Geolocația necesită un plugin separat? {#does-geolocation-require-a-separate-plugin}
 
 Nu este necesar un plugin extern de geolocație. Addon-ul folosește detectarea IP-la-țară încorporată în WordPress. Pentru o precizie mai mare, o serviciu dedicat de geolocație poate fi integrat prin hook-urile de filtrare furnizate.
 
-### Suprascrierile per produs se aplică înainte sau după taxă?
+### Suprascrierile per produs se aplică înainte sau după taxă? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Suprascrierile per produs setează prețul înainte de taxă în moneda țintă. Taxa este calculată peste prețul de suprascriere, folosind configurarea dvs. existentă a taxelor.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versiunea 1.0.0 — Lansat pe 2026-04-02
+### Versiunea 1.0.0 — Lansat pe 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Nou: Suport multi-monedă cu conversie automată a ratei de schimb
 - Nou: Suprascrieri per produs pentru prețuri exacte, specifice unei monede

@@ -3,7 +3,7 @@ title: Fehy Fandaharam-potoana Sunrise
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Fahasami ny fametrahana ny Sunrise File
+# Fahasami ny fametrahana ny Sunrise File {#error-installing-the-sunrise-file}
 
 Ny rakitra `sunrise.php` dia rakitra manokana izay mitady azy ny WordPress rehefa mandeha (bootstraps) izy. Mba hahafahana mahita ilay `sunrise.php` an'ny WordPress, tsy maintsy eo ao anatin'ny **wp-content folder** izy.
 

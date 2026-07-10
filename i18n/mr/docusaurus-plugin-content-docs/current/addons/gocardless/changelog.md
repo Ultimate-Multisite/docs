@@ -3,7 +3,7 @@ title: GoCardless बदलांचा इतिहास
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# GoCardless बदलांचा इतिहास
+# GoCardless बदलांचा इतिहास {#gocardless-changelog}
 
 Version: 1.0.3 - रिलीझ केल्याची तारीख 2026-05-05
 * दुरुस्ती: जेव्हा GoCardless सदस्यता 'pending' (प्रतीक्षा) किंवा 'on-hold' (थांबलेल्या) स्थितीत रद्द केली जाते, तेव्हा विरहित (orphaned) प्रलंबित साइट्स आपोआप साफ केल्या जातात.

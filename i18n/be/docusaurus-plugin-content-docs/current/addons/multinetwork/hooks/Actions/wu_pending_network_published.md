@@ -4,11 +4,11 @@ title: Action - wu_pending_network_published
 sidebar_label: wu_pending_network_published
 _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 ---
-# Action: wu_pending_network_published
+# Action: wu_pending_network_published {#action-wupendingnetworkpublished}
 
 Выклікаецца пасля апублікавання чакальнай сеткі.
 
-## Паметрыкі
+## Паметрыкі {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
@@ -16,6 +16,6 @@ _i18n_hash: 2cd5b02aa4fa11d92610bf2952f4b1f6
 | $membership | `\WP_Ultimo\Models\Membership` | Членства. |
 | $pending_network | `array` | Пачатковыя дадзеныя чакальнай сеткі. |
 
-### Выказчык
+### Выказчык {#source}
 
 Вызначаны ў [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1815) на 1815-й пакульцы.

@@ -3,13 +3,13 @@ title: Tabang sa Custom Development
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Unsaon Pagkuha og Custom Development Help gikan sa Codeable?
+# Unsaon Pagkuha og Custom Development Help gikan sa Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Usahay, kinahanglan gyud nato og maayo nga customization para mahimong perpekto ang among network flows sama sa gusto nato. Kung mao kana ang imong gipangita, kami nagrekomenda sa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), usa ka lugar diin makakita ka og mga experienced developer nga adunay Ultimate Multisite expertise.
 
 Ang [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) usa ka platform nga nagkonektar sa mga customer sa mga qualified WordPress freelance developers, nga makahimo og mga proyekto bisan unsa pa kini kadako. Aduna sila usa ka detalyado nga proseso sa aplikasyon aron masiguro nga ikaw ma-match sa mga eksperto nga espesyalista para sa trabaho nga imong gihunahuna.
 
-### Unsaon Paghimo og Project sa Codeable?
+### Unsaon Paghimo og Project sa Codeable? {#how-to-create-a-project-in-codeable}
 
 Una, pumunta sa [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ug i-click ang **Start a Project** button.
 

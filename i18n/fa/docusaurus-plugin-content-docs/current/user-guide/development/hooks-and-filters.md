@@ -3,7 +3,7 @@ title: هوک‌ها و فیلترها
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# هوک‌ها و فیلترهای Ultimate Multisite
+# هوک‌ها و فیلترهای Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite از تعداد زیادی توابع و کوئری‌های دیتابیس تشکیل شده است. این افزونه دارای هوک‌ها و فیلترهایی است که به شما امکان می‌دهد کدهای جدید به توابع موجود اضافه کنید یا آن‌ها را تغییر دهید.
 

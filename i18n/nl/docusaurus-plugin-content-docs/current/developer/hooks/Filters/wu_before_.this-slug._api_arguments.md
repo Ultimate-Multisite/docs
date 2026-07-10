@@ -6,16 +6,16 @@ _i18n_hash: ee800d8a03702733cd3a08863f0de17c
 ---
 Filter de oorspronkelijke API-argumenten.
 
-## Parameters
+## Parameters {#filter-wubefore--this-slug--apiarguments}
 
 | Naam | Type | Beschrijving |
 |------|------|-------------|
 | $args | `array` | API-argumenten voor deze manager. |
 | $this | `object` | Deze manager. |
 
-### Sinds
+### Sinds {#parameters}
 
 - 2.0.0
-### Bron
+### Bron {#since}
 
 Defined in [`inc/apis/trait-rest-api.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-rest-api.php#L522) at line 522

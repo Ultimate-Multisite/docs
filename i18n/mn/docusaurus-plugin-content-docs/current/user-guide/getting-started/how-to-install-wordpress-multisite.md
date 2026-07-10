@@ -3,7 +3,7 @@ title: WordPress Multisite-ийг хэрхэн суулгах вэ?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# WordPress Multisite-ийг хэрхэн суулгах вэ?
+# WordPress Multisite-ийг хэрхэн суулгах вэ? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite нь нэг талбарт олон сайтын сүлжээг үүсгэх боломжийг олгодог. Энэ нь системд заавал ирж байдаг функц боловч анх стандарт тохиргоогүй байна.
 
@@ -93,9 +93,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 Та бүх талбарыг дүүргээд "Add site" (Сайт нэмэх) товчийг дарна. Шинэ дэдсайт үүссэн бол түүнд ороод, дэдсайт ажиллаж байгаа эсэхийг шалгаарай.
 
-## Ерөнхий асуудлууд:
+## Ерөнхий асуудлууд: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Би шинэ сайт үүсгэж чадах ч хандах боломжгүй байна.
+### 1. Би шинэ сайт үүсгэж чадах ч хандах боломжгүй байна. {#common-problems}
 
 Хэрэв та subdomain-ыг сонгосон бол, Multisite сүлжээнд wildcard (бүрэн давхаргатай) subdomain-уудыг тохируулах хэрэгтэй.
 

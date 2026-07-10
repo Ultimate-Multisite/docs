@@ -3,7 +3,7 @@ title: Anghyffriadau gynnwys
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Pethau'r ychwanegiadau gyda pluginau eraill
+# Pethau'r ychwanegiadau gyda pluginau eraill {#known-incompatibilities-with-other-plugins}
 
 Ar ôl i'w chwarae a chynllunio Ultimate Multisite, gallwch dod â'r angen o problemau oherwydd ychwanegiadau eraill sydd wedi'u gwneud yn ddefnyddiol.
 

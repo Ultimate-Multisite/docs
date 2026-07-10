@@ -3,17 +3,17 @@ title: WP Engine Integration
 sidebar_position: 2
 _i18n_hash: ceeee20432439d8afb3002dd0dd1ff12
 ---
-# การเชื่อมต่อกับ WP Engine
+# การเชื่อมต่อกับ WP Engine {#wp-engine-integration}
 
-## ภาพรวม
+## ภาพรวม {#overview}
 WP Engine เป็นแพลตฟอร์มโฮสติ้ง WordPress แบบจัดการระดับพรีเมียม ที่มอบประสิทธิภาพ ความปลอดภัย และความสามารถในการรองรับการขยายตัวที่เหมาะสมสำหรับเว็บไซต์ WordPress การเชื่อมต่อนี้ช่วยให้สามารถซิงค์โดเมนอัตโนมัติระหว่าง Ultimate Multisite และ WP Engine ได้
 
-## คุณสมบัติ
+## คุณสมบัติ {#features}
 - ซิงค์โดเมนอัตโนมัติ
 - รองรับ subdomain สำหรับการติดตั้งแบบ multisite
 - เชื่อมต่อกับระบบที่มีอยู่ของ WP Engine ได้อย่างราบรื่น
 
-## ความต้องการของระบบ
+## ความต้องการของระบบ {#requirements}
 การเชื่อมต่อนี้จะตรวจจับโดยอัตโนมัติว่าคุณกำลังโฮสต์บน WP Engine หรือไม่ และใช้ WP Engine API ที่มีอยู่ในตัว ไม่จำเป็นต้องตั้งค่าเพิ่มเติมหาก WP Engine plugin เปิดใช้งานและตั้งค่าไว้อย่างถูกต้องแล้ว
 
 อย่างไรก็ตาม หากคุณต้องการตั้งค่าการเชื่อมต่อด้วยตนเอง คุณสามารถกำหนดค่าคงที่ (constant) อย่างใดอย่างหนึ่งในไฟล์ `wp-config.php` ของคุณ:
@@ -24,16 +24,16 @@ define('WPE_APIKEY', 'your_api_key'); // วิธีที่แนะนำ
 define('WPE_API', 'your_api_key'); // วิธีทางเลือก
 ```
 
-## คำแนะนำการตั้งค่า
+## คำแนะนำการตั้งค่า {#setup-instructions}
 
-### 1. ตรวจสอบ WP Engine Plugin
+### 1. ตรวจสอบ WP Engine Plugin {#1-verify-wp-engine-plugin}
 
 หากคุณโฮสต์บน WP Engine แล้ว WP Engine plugin ควรจะถูกติดตั้งและเปิดใช้งานอยู่แล้ว โปรดตรวจสอบว่า:
 
 1. WP Engine plugin เปิดใช้งานอยู่
 2. ไฟล์ `wp-content/mu-plugins/wpengine-common/class-wpeapi.php` มีอยู่
 
-### 2. เปิดใช้งานการเชื่อมต่อ
+### 2. เปิดใช้งานการเชื่อมต่อ {#2-enable-the-integration}
 
 1. ในหน้าผู้ดูแลระบบ WordPress ของคุณ ไปที่ Ultimate Multisite > Settings
 2. ไปที่แท็บ "Domain Mapping"
@@ -41,9 +41,9 @@ define('WPE_API', 'your_api_key'); // วิธีทางเลือก
 4. เปิดใช้งานการเชื่อมต่อ WP Engine
 5. คลิก "Save Changes"
 
-## วิธีการทำงาน
+## วิธีการทำงาน {#how-it-works}
 
-### การซิงค์โดเมน
+### การซิงค์โดเมน {#domain-syncing}
 
 เมื่อมีการแมปโดเมนใน Ultimate Multisite:
 
@@ -51,7 +51,7 @@ define('WPE_API', 'your_api_key'); // วิธีทางเลือก
 2. WP Engine จะจัดการการตั้งค่าโดเมนและการออกใบรับรอง SSL
 3. เมื่อลบการแมปโดเมน การเชื่อมต่อจะลบโดเมนออกจาก WP Engine
 
-### การรองรับ Subdomain
+### การรองรับ Subdomain {#subdomain-support}
 
 สำหรับการติดตั้ง multisite แบบ subdomain:
 
@@ -59,28 +59,28 @@ define('WPE_API', 'your_api_key'); // วิธีทางเลือก
 2. WP Engine จะจัดการการตั้งค่า subdomain
 3. เมื่อลบเว็บไซต์ การเชื่อมต่อจะลบ subdomain ออกจาก WP Engine
 
-## หมายเหตุสำคัญ
+## หมายเหตุสำคัญ {#important-notes}
 
-### โดเมนแบบ Wildcard
+### โดเมนแบบ Wildcard {#wildcard-domains}
 
 สำหรับการติดตั้ง multisite แบบ subdomain แนะนำให้ติดต่อฝ่ายสนับสนุนของ WP Engine เพื่อขอการตั้งค่าโดเมนแบบ wildcard ซึ่งจะทำให้ subdomain ทั้งหมดทำงานได้โดยอัตโนมัติโดยไม่ต้องเพิ่มทีละรายการ
 
-### ใบรับรอง SSL
+### ใบรับรอง SSL {#ssl-certificates}
 
 WP Engine จัดการการออกและต่ออายุใบรับรอง SSL โดยอัตโนมัติสำหรับโดเมนทั้งหมดที่เพิ่มผ่านการเชื่อมต่อนี้ ไม่จำเป็นต้องตั้งค่าเพิ่มเติม
 
-## การแก้ไขปัญหา
+## การแก้ไขปัญหา {#troubleshooting}
 
-### ปัญหาการเชื่อมต่อ API
+### ปัญหาการเชื่อมต่อ API {#api-connection-issues}
 - ตรวจสอบว่า WP Engine plugin เปิดใช้งานและตั้งค่าอย่างถูกต้อง
 - หากคุณกำหนด API key ด้วยตนเอง ให้ตรวจสอบว่าถูกต้อง
 - ติดต่อฝ่ายสนับสนุนของ WP Engine หากคุณมีปัญหาเกี่ยวกับ API
 
-### ไม่สามารถเพิ่มโดเมนได้
+### ไม่สามารถเพิ่มโดเมนได้ {#domain-not-added}
 - ตรวจสอบบันทึก (logs) ของ Ultimate Multisite เพื่อดูข้อความแสดงข้อผิดพลาด
 - ตรวจสอบว่าโดเมนยังไม่ได้ถูกเพิ่มไปยัง WP Engine
 - ตรวจสอบว่าแผนการใช้งาน WP Engine ของคุณรองรับจำนวนโดเมนที่คุณต้องการเพิ่ม
 
-### ปัญหา Subdomain
+### ปัญหา Subdomain {#subdomain-issues}
 - หาก subdomain ไม่ทำงาน ให้ติดต่อฝ่ายสนับสนุนของ WP Engine เพื่อขอการตั้งค่าโดเมนแบบ wildcard
 - ตรวจสอบว่าการตั้งค่า DNS ของคุณถูกต้องสำหรับโดเมนหลักและ subdomain

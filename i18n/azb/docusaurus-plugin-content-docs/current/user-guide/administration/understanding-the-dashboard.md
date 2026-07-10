@@ -3,31 +3,31 @@ title: Azb-kontrolni anlash
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Ultimate Multisite Dashboard'ı Anlamak
+# Ultimate Multisite Dashboard'ı Anlamak {#understanding-the-ultimate-multisite-dashboard}
 
 Ultimate Multisite'ın daha gelişmiş yapılandırma seçeneklerine ve operasyonel yönlerine dalmadan önce, dashboard'a bir göz atalım.
 
 Diğer birçok WordPress plugin'i gibi, Ultimate Multisite de **Ultimate Multisite** başlıklı, ağ düzeyinde bir menü girişi oluşturur ve altında bir dizi alt menü girişi bulunur.
 
-## Network Dashboard Widget'ları
+## Network Dashboard Widget'ları {#network-dashboard-widgets}
 
 Ultimate Multisite, network düzeyindeki dashboard'a birkaç kullanışlı widget ekler. Bu dashboard'a **My Sites → Network Admin → Dashboard** yolunu izleyerek ulaşabilirsiniz. Widget'lar, ağ yöneticisi için bilgiye ve yaygın işlemlere kolay erişim sağlamak üzere tasarlanmıştır.
 
 ![Network Dashboard with Ultimate Multisite widgets](/img/admin/network-dashboard-full.png)
 
-### İlk Adımlar (First Steps)
+### İlk Adımlar (First Steps) {#first-steps}
 
 ![First Steps widget](/img/admin/network-dashboard-first-steps.png)
 
 Bu widget, Ultimate Multisite'ın ilk kurulumunda görünür ve ağ yöneticisini ödeme yöntemi yapılandırma ve test hesabı oluşturma gibi ek görevleri tamamlaması konusunda uyarır.
 
-### Özet (Summary)
+### Özet (Summary) {#summary}
 
 ![Summary widget](/img/admin/network-dashboard-summary.png)
 
 Summary widget'ı, gün içindeki kayıt sayısını ve bu kayıtlardan elde edilen geliri raporlar. MRR (Aylık Tekrarlayan Gelir), gelir getiren üyeliklere sahip müşteriler genelinde beklenen toplam tutarı gösterir.
 
-### Aktivite Akışı (Activity Stream)
+### Aktivite Akışı (Activity Stream) {#activity-stream}
 
 ![Activity Stream widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Bu widget, Ultimate Multisite genelindeki olayları raporlar. Olaylar arasında 
 
 Daha detaylı bir açıklama için lütfen dokümantasyonun Events bölümüne bakınız.
 
-### Şu Anda (Right Now)
+### Şu Anda (Right Now) {#right-now}
 
 ![Right Now widget](/img/admin/network-dashboard-right-now.png)
 
 Bu yardımcı widget, ağdaki kullanıcılar ve siteler hakkında kısa bir özet görüntüler. En üstteki kullanışlı kısayollar, yeni site veya kullanıcı oluşturmak için tek tıkla erişim sağlar.
 
-### Haberler ve Tartışmalar (News and Discussions)
+### Haberler ve Tartışmalar (News and Discussions) {#news-and-discussions}
 
 ![News and Discussions widget](/img/admin/network-dashboard-news.png)
 
 Bu widget, en son Ultimate Multisite haberlerini çeker ve gösterir. Güncellemeler, kritik hatalar ve güvenlik düzeltmeleri hakkındaki bilgiler için bu widget'ı takip edin.
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#ultimate-multisite-dashboard}
 
 Network düzeyindeki dashboard genel bir ağ bilgisi sunarken, Ultimate Multisite dashboard'u (Ultimate Multisite menüsünün en üst seviyesinde bulunur) hizmetle ilgili bilgileri sunar.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Aylık Tekrarlayan Gelir Büyümesi (Monthly Recurring Revenue Growth)
+### Aylık Tekrarlayan Gelir Büyümesi (Monthly Recurring Revenue Growth) {#monthly-recurring-revenue-growth}
 
 MRR (Aylık Tekrarlayan Gelir) grafiği, 12 aylık bir takvim dönemine yayılan aylık gelir dökümünü gösterir.
 
@@ -61,7 +61,7 @@ MRR (Aylık Tekrarlayan Gelir) grafiği, 12 aylık bir takvim dönemine yayılan
 
 Yeni gelir mavi renkte, iptaller ise kırmızı renkte yansıtılır.
 
-### Tarih Aralığı Desteği (Date-range Support)
+### Tarih Aralığı Desteği (Date-range Support) {#date-range-support}
 
 Müşteri ve aktivite sayısına bağlı olarak istatistikler bunaltıcı olabilir. Dashboard'a yerleştirilmiş tarih aralığı desteği, ağ yöneticisinin yalnızca ihtiyaç duyduğu bilgi ve zaman dilimine odaklanmasını sağlar.
 

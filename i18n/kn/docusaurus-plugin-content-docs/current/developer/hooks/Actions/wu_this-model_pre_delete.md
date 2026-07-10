@@ -4,20 +4,20 @@ title: 'Action - wu_{$this->model}_pre_delete'
 sidebar_label: 'wu_{$this->model}_pre_delete'
 _i18n_hash: 12d965c5aed740f08dba9a3d9cbfb2b5
 ---
-# Action: wu_\{$this->model\}_pre_delete
+# Action: wu_\{$this->model\}_pre_delete {#action-wuthis-modelpredelete}
 
 ಒಂದು ಆಬ್ಜೆಕ್ಟ್ ಅನ್ನು ಡೇಟಾಬೇಸ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ನಂತರ ಇದು ಕಾರ್ಯಗತವಾಗುತ್ತದೆ.
 
-## ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು
+## ಪ್ಯಾರಾಮೀಟರ್‌ಗಳು {#parameters}
 
 | ಹೆಸರು | ಪ್ರಕಾರ | ವಿವರಣೆ |
 |------|------|-------------|
 | $this | `\Base_Model` | ಆಬ್ಜೆಕ್ಟ್‌ನ ಉದಾಹರಣೆ. |
 
-### ಯಾವಾಗ ಲಭ್ಯ
+### ಯಾವಾಗ ಲಭ್ಯ {#since}
 
 - 2.0.0
-### ಮೂಲ
+### ಮೂಲ {#source}
 
 - Defined in [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L649) at line 649
 - Defined in [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1485) at line 1485

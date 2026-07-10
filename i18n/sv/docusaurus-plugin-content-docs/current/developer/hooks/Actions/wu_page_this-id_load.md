@@ -4,11 +4,11 @@ title: 'Action - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_{$this->id}_load
+# Action: wu_page_{$this->id}_load {#action-wupagethis-idload}
 
 Låter plugin-utvecklare lägga till ytterligare hooks på våra sidor.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Låter plugin-utvecklare lägga till ytterligare hooks på våra sidor.
 | $page_hook | `string` | Sidans hook för den här sidan. |
 | $admin_page | `self` | Sidinstansen. |
 
-### Sedan
+### Sedan {#since}
 
 - 1.8.2
 - 2.0.4: Lägger till tredje parametern: sidinstansen.
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) på rad 332

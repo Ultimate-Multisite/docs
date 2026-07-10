@@ -1,33 +1,33 @@
 ---
-title: アドオン開発入門
+title: Addon 開発の始め方
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# アドオン開発
+# Addon 開発 {#addon-development}
 
-## アドオン構造
+## Addon 構造 {#addon-structure}
 
 ```
 my-addon/
 ├── my-addon.php                 # メインプラグインファイル
 ├── inc/
-│   ├── class-my-addon.php       # メインアドオンクラス
-│   ├── admin-pages/             # 管理インターフェース
+│   ├── class-my-addon.php       # メイン Addon クラス
+│   ├── admin-pages/             # 管理画面
 │   ├── models/                  # カスタムデータモデル
-│   └── integrations/            # サードパーティ統合
+│   └── integrations/            # サードパーティ連携
 ├── assets/
 │   ├── js/
 │   └── css/
 └── templates/                   # テンプレートファイル
 ```
 
-## メインアドオンファイルテンプレート
+## メイン Addon ファイルテンプレート {#main-addon-file-template}
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Ultimate Multisite用のカスタムアドオン
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
  * Author: Your Name
  * Requires PHP: 7.4
@@ -45,7 +45,7 @@ define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisiteが有効か確認
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
@@ -56,85 +56,85 @@ add_action('plugins_loaded', function() {
         return;
     }
 
-    // アドオンを初期化
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * メインアドオンクラス
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * アドオンを初期化
+     * Initialize the addon
      */
     public function init() {
-        // 依存関係を読み込む
+        // Load dependencies
         $this->load_dependencies();
 
-        // フックを設定
+        // Setup hooks
         $this->setup_hooks();
 
-        // コンポーネントを初期化
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * 必要なファイルを読み込む
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * WordPressフックを設定
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // 有効化/無効化
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisiteフック
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * アドオンコンポーネントを初期化
+     * Initialize addon components
      */
     private function init_components() {
-        // 管理ページ、モデルなどを初期化
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * プラグイン有効化
+     * Plugin activation
      */
     public function activate() {
-        // カスタムテーブルを作成し、オプションを設定するなど
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * プラグイン無効化
+     * Plugin deactivation
      */
     public function deactivate() {
-        // 必要に応じてクリーンアップ
+        // Cleanup if needed
     }
 
     /**
-     * チェックアウト完了時の処理
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // チェックアウト完了時のカスタムロジック
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * カスタムチェックアウトフィールドを追加
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## カスタムモデル例
+## カスタムモデルの例 {#custom-model-example}
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * カスタムリードモデル
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * モデル名
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * データベーステーブルを設定
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * 会社名を取得
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * 会社名を設定
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * リードを顧客に変換
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // WordPressユーザーを作成
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite顧客を作成
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // リードデータを顧客にコピー
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // リードを変換済みとしてマーク
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## 管理ページ統合
+## 管理ページ連携 {#admin-page-integration}
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * カスタム管理ページ
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ページID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * メニュー位置
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * ページを初期化
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisiteに登録
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * 管理ページを登録
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * ページをレンダリング
+     * Render the page
      */
     public function render() {
-        // リードデータを取得
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // テンプレートをレンダリング
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## アドオンのテスト
+## Addon のテスト {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // テスト顧客を作成
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // テストメンバーシップを作成
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // フォーム送信をシミュレート
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // データが保存されたことを確認
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## 次のステップ
+## v2.13.0 の拡張ポイント {#v2130-extension-points}
 
-- 利用可能なアクションとフィルタについては、[Hooks Reference](/developer/hooks) を確認してください
-- API統合については、[REST API Overview](/developer/rest-api/overview) を確認してください
-- 開始スキャフォールドとして [Addon Template](/addons/addon-template) を使用してください
+Ultimate Multisite v2.13.0 では、主権テナント、購入手続きドメイン、またはホストプロバイダーの DNS 自動化と連携する Addon に役立つ、いくつかの拡張ポイントが追加されています。
+
+### SSO とメインサイト管理 URL {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### 購入手続きフォームのベースドメイン {#checkout-form-base-domains}
+
+Addon が、サイトごとのカスタムマッピングではなく購入手続きフォームの **サイト URL** ドメインのように動作すべき追加の共有ベースドメインを提供する場合は、`wu_checkout_form_base_domains` を使用します。
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite はこれらのホストを正規化し、それらに対するサイトごとのマップ済みドメインレコードの自動作成をスキップします。
+
+### ドメインレコードの自動作成 {#automatic-domain-record-creation}
+
+Addon で、新しく作成されたサイトに対するドメインレコードの自動作成を抑制または延期する必要がある場合は、`wu_should_create_domain_record_for_site` を使用します。
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` をリッスンするホストプロバイダー連携は、サイトが作成されたときにプロバイダー側の DNS レコードを作成できます。そのアクションに登録された連携がない場合、Ultimate Multisite は空のバックグラウンドジョブをスキップします。
+
+## 次のステップ {#next-steps}
+
+- 利用可能なアクションとフィルターについては、[Hooks リファレンス](/developer/hooks) を確認してください
+- API 連携については、[REST API 概要](/developer/rest-api/overview) を確認してください
+- 開始用の土台として [Addon テンプレート](/addons/addon-template) を使用してください

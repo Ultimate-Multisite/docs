@@ -3,11 +3,11 @@ title: Naraa Email System
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Ọrụ na Email-ị System
+# Ọrụ na Email-ị System {#managing-system-emails}
 
 Ultimate Multisite ọtụtụ ihe email system dịbi maka ndị a bụ events dịka nwere confirmation signup, receipt payment, na change membership. ị ga-agbanye (customize) email templates ndị a ka ọ gba aka gị.
 
-## Ịgbagba Email-ị System
+## Ịgbagba Email-ị System {#viewing-system-emails}
 
 Jitụrụ **Ultimate Multisite → Settings** ma jikọta tab **Emails** maka ị chọpụta settings dịka nwere nhazị email.
 
@@ -21,7 +21,7 @@ Mkpụrụeduro, ị ga-agbanye (access) page **System Emails** maka ị chọp�
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Ọrụ New Email Templates
+## Ọrụ New Email Templates {#importing-new-email-templates}
 
 New versions na add-ons nke Ultimate Multisite ga-anọghị ihe new email templates. Ka ọ dịghị ịdị anọchịrị, a ga-anọghị ịdị anọchịrị automatically — ị ga-agbanye (import) ha ọ bụla by di.
 
@@ -32,7 +32,7 @@ New versions na add-ons nke Ultimate Multisite ga-anọghị ihe new email templ
 3. Chọpụta option **Import Emails** maka ị chọpụta mmadụ templates ndị dị na-akọwa
 4. Chọpụta templates ndị ị chọrọ ka ị gbagba
 
-## Ọrụ Email Templates
+## Ọrụ Email Templates {#resetting-email-templates}
 
 Ọ bụrụ na ị ga-agbanye (customize) email template ma ị chọrọ ịlụso back to default content, ị nwere ọrụ abụọ:
 

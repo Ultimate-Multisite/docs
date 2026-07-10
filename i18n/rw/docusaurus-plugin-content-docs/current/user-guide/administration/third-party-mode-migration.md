@@ -3,13 +3,13 @@ title: Umuco w'Urugero rw'Ubwumvikane
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migération vers le mode Tiers (Third-Party Mode)
+# Migération vers le mode Tiers (Third-Party Mode) {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 a changé la façon dont les capacités tierces sont gérées. **Le mode tiers passe désormais par défaut en "auto"**, ce qui permet l'intégration native de l'API des Capacités WordPress sur WordPress 7.0+ sans configuration manuelle.
 
-## Qu'est-ce qui a changé ?
+## Qu'est-ce qui a changé ? {#what-changed}
 
-### Avant v1.12.0
+### Avant v1.12.0 {#before-v1120}
 
 Les capacités tierces nécessitaient une configuration manuelle :
 
@@ -18,7 +18,7 @@ Les capacités tierces nécessitaient une configuration manuelle :
 - L'intégration avec l'API des Capacités WordPress était optionnelle
 - Le mode hérité (legacy mode) était par défaut.
 
-### Après v1.12.0
+### Après v1.12.0 {#after-v1120}
 
 Les capacités tierces fonctionnent automatiquement :
 
@@ -27,13 +27,13 @@ Les capacités tierces fonctionnent automatiquement :
 - Aucune configuration manuelle n'est nécessaire sur WordPress 7.0+
 - Le mode hérité est toujours disponible pour les anciennes versions de WordPress.
 
-## Qui est concerné ?
+## Qui est concerné ? {#who-is-affected}
 
-### Nouvelles Installations (WordPress 7.0+)
+### Nouvelles Installations (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Aucune action requise.** Le mode tiers est automatiquement réglé sur "auto", et les capacités fonctionnent dès l'installation.
 
-### Installations Existantes
+### Installations Existantes {#existing-installations}
 
 **Vos paramètres sont conservés.** Si vous utilisiez :
 
@@ -41,7 +41,7 @@ Les capacités tierces fonctionnent automatiquement :
 - **Le mode tiers manuel (Manual third-party mode)** : Vous restez en mode manuel (pas de changement)
 - **Le mode auto (Auto mode)** : Vous continuez avec le mode auto (pas de changement)
 
-### Versions de WordPress Avant 7.0
+### Versions de WordPress Avant 7.0 {#wordpress-versions-before-70}
 
 **Le mode hérité est toujours disponible.** Si vous êtes sur WordPress 6.x ou antérieur :
 
@@ -49,9 +49,9 @@ Les capacités tierces fonctionnent automatiquement :
 - Vous pouvez activer manuellement le mode tiers si vous le souhaitez
 - Passez à WordPress 7.0+ pour utiliser l'API des Capacités native.
 
-## Comprendre les Modes
+## Comprendre les Modes {#understanding-the-modes}
 
-### Mode Auto (Nouveau Défaut)
+### Mode Auto (Nouveau Défaut) {#auto-mode-new-default}
 
 **Le mode auto** utilise l'intégration native de l'API des Capacités WordPress :
 
@@ -62,7 +62,7 @@ Les capacités tierces fonctionnent automatiquement :
 
 **Icyo ku gukoresha**: WordPress 7.0+ n'ubwoko bw'ibintu by'abantu (third-party)
 
-### Manual Mode (Uburyo bwa Gukora N'ubwoko)
+### Manual Mode (Uburyo bwa Gukora N'ubwoko) {#manual-mode}
 
 **Manual mode** ukenya n'uko ubushobora gukorwa mu buryo bukenye:
 
@@ -74,7 +74,7 @@ Ukenya cyane, ariko ukenya n'ubwoko bwa gukorwa bishobora kuba bishobora gukorwa
 
 **Icyo gukoresha**: Gukora test, gukoresha ibintu byo gukoresha mu buryo bukenye cyangwa gukora uburyo bukenye bw'ibintu.
 
-### Legacy Mode (Uburyo bwa Mu gihe)
+### Legacy Mode (Uburyo bwa Mu gihe) {#legacy-mode}
 
 **Legacy mode** yagize uburyo bw'ibintu by'abantu bukenye bw'umwe:
 
@@ -85,24 +85,24 @@ Ukenya cyane, ariko ukenya n'ubwoko bwa gukorwa bishobora kuba bishobora gukorwa
 
 **Icyo gukoresha**: WordPress 6.x cyangwa mbere, cyangwa ukenya n'uko ubikoresha ibintu bya mu gihe (legacy compatibility).
 
-## Gukoresha Uburyo Bwawe Huri Umu gihe
+## Gukoresha Uburyo Bwawe Huri Umu gihe {#checking-your-current-mode}
 
-### Binyuze mu Admin Panel
+### Binyuze mu Admin Panel {#via-admin-panel}
 
 1. Gukoresha **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Gushakira uburyo bwa **Third-Party Mode**
 3. Uza kumenya uburyo bwawe n'ibyo ukenye gukora ibyo.
 
-### Binyuze mu Code
+### Binyuze mu Code {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', cyangwa 'legacy'
 ```
 
-## Gukoresha Uburyo Bwawe
+## Gukoresha Uburyo Bwawe {#changing-your-mode}
 
-### Gukoresha Auto Mode (Uburyo bwa Kumenya)
+### Gukoresha Auto Mode (Uburyo bwa Kumenya) {#switch-to-auto-mode}
 
 Iyo ukenye mu WordPress 7.0+ kandi wumva uburyo bwa auto:
 
@@ -113,7 +113,7 @@ Iyo ukenye mu WordPress 7.0+ kandi wumva uburyo bwa auto:
 
 Superdav AI Agent uzakora gukoresha n'ibintu byo third-party mu buryo bukenye.
 
-### Gukoresha Manual Mode (Gukoresha N'ubwoko)
+### Gukoresha Manual Mode (Gukoresha N'ubwoko) {#switch-to-manual-mode}
 
 Iyo ukenya n'uko wumva ibintu byo gukoresha mu buryo bukenye:
 
@@ -123,7 +123,7 @@ Iyo ukenya n'uko wumva ibintu byo gukoresha mu buryo bukenye:
 4. Click **Save**
 5. Edit ubutera bwawe kugira ngo wumve ibintu byo gukoresha mu buryo bukenye.
 
-### Gukoresha Legacy Mode (Gukoresha Mu gihe)
+### Gukoresha Legacy Mode (Gukoresha Mu gihe) {#switch-to-legacy-mode}
 
 Iyo ukenya n'uko ubikoresha ibintu bya mbere:
 
@@ -132,9 +132,9 @@ Iyo ukenya n'uko ubikoresha ibintu bya mbere:
 3. Shaka **Legacy**
 4. Cunga **Save**
 
-## Ubutunso mu Auto Mode (Benefits of Auto Mode)
+## Ubutunso mu Auto Mode (Benefits of Auto Mode) {#benefits-of-auto-mode}
 
-### Umucozi w'Auto (Automatic Discovery)
+### Umucozi w'Auto (Automatic Discovery) {#automatic-discovery}
 
 Uburyo bwo gukoresha ubushobozi bishobora gutungwa mu buryo bw'auto ku:
 
@@ -145,7 +145,7 @@ Uburyo bwo gukoresha ubushobozi bishobora gutungwa mu buryo bw'auto ku:
 
 Nta ngombwa yo gutanga mu buryo bw'itandwaho.
 
-### Urugendo rwa Gutandukanya (Native Integration)
+### Urugendo rwa Gutandukanya (Native Integration) {#native-integration}
 
 Ubushobozi bishobora gukoreshwa n'Abilities API ya WordPress:
 
@@ -154,66 +154,66 @@ Ubushobozi bishobora gukoreshwa n'Abilities API ya WordPress:
 - Bishobora guhindurwa n'amaplugin zikoresha Abilities API
 - Bishobora gutandukanya nk'uko WordPress ikomeye
 
-### Urugendo rwa Gutera Ubwumvikane (Simplified Management)
+### Urugendo rwa Gutera Ubwumvikane (Simplified Management) {#simplified-management}
 
 - Nta fici ya gukoresha (configuration files) kugira ngo uhindure
 - Nta ngombwa yo gutanga ubushobozi mu buryo bw'itandwaho
 - Icyemezo cyo gukoresha Ubushobozi (Ability Visibility controls) bishobora guhindurwa byiza
 - Amakuru y'Admin (Admin notices) bishobora kukugira umwujaji ku bushobozi bishya ntabwo bishoborwe.
 
-### Uburyo bwiza bwo Gutera Ubwumvikane (Better Performance)
+### Uburyo bwiza bwo Gutera Ubwumvikane (Better Performance) {#better-performance}
 
 - Ubushobozi bishobora gukoreshwa mu cache
 - Bishobora gutungwa mu gihe cy'ibyo bitazwaga (Lazy-loaded on demand)
 - Bishobora guhindurwa ku mpamvu ya WordPress 7.0+
 
-## Urugendo rwa Gutera Ubushobozi (Migration Path)
+## Urugendo rwa Gutera Ubushobozi (Migration Path) {#migration-path}
 
-### He ugiye kuri WordPress 6.x
+### He ugiye kuri WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Gukoresha WordPress 7.0+** (igihe cyo gutandukanya)
 2. **Guhindura Superdav AI Agent** ku v1.12.0+
 3. **Ghindura third-party mode ku Auto** (ngombwa; legacy mode bishobora gukoreshwa)
 4. **Gushyira mu mategeko ubwumvikane bw'ability** kugira ngo uburyo bwo kwizera bishoboreka
 
-### He ugiye kuri WordPress 7.0+
+### He ugiye kuri WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Guhindura Superdav AI Agent** ku v1.12.0+
 2. **Kugera ko third-party mode yari yashyiramo Auto** (igice cyo gukoresha)
 3. **Gushyira mu mategeko ubwumvikane bw'ability** kugira ngo uburyo bwo kwizera bishoboreka
 4. **Kugenzura third-party abilities** kugira ngo utandukanye n'uko bishobora gukoreshwa
 
-## Gukemura Icyemezo (Troubleshooting)
+## Gukemura Icyemezo (Troubleshooting) {#troubleshooting}
 
-### Ubushobozi bishobora guhindurwa mu auto mode (Abilities aren't loading in auto mode)
+### Ubushobozi bishobora guhindurwa mu auto mode (Abilities aren't loading in auto mode) {#abilities-arent-loading-in-auto-mode}
 
 - Kugenzura ko ugiye kuri WordPress 7.0+
 - Kugenzura ko third-party mode yari yashyiramo "Auto"
 - Kugenzura ko plugin igira ubushobozi bishobora guhindurwa yari yashyiramo (active)
 - Kugenzura error logs ya WordPress kugira ngo utandukanye mu gutanga
 
-### Nshaka kwibuka legacy mode (I want to keep legacy mode)
+### Nshaka kwibuka legacy mode (I want to keep legacy mode) {#i-want-to-keep-legacy-mode}
 
 - Kwibuka **Settings** $\rightarrow$ **Third-Party Mode**
 - Shaka **Legacy**
 - Cunga **Save**
 - Legacy mode bishobora gukoreshwa ku gukoresha
 
-### Uburyo mu bikorwa by'umwe ntabwo yari yuriye
+### Uburyo mu bikorwa by'umwe ntabwo yari yuriye {#my-custom-abilities-arent-showing}
 
 - Gushyira umwihariko bwawe uburyo bwa WordPress (WordPress hooks)
 - Kugera ko ushobora uburenganzira bw'Abilities API neza
 - Gukoresha ibyemezo byo gukoresha error logs ya WordPress
 
-### Ntabwo ntabwo nshobora "ability" zishobora kuboneka
+### Ntabwo ntabwo nshobora "ability" zishobora kuboneka {#im-getting-unclassified-ability-notices}
 
 - Iki ni cyiza ku rugero rwa "abilities" ziri za gihugu (third-party) zishya
 - Gushyira umwihariko bwawe neza mu admin notice
 - Kugera ku **Ability Visibility** kugira ngo usere ibyo byo gukoresha
 
-## Uburyo bw'umwihariko (Backward Compatibility)
+## Uburyo bw'umwihariko (Backward Compatibility) {#backward-compatibility}
 
-### Icyemezo cyo hagati y'ibyo yashyize
+### Icyemezo cyo hagati y'ibyo yashyize {#existing-configurations}
 
 Niba hari uburyo bwa "ability" ziri za gihugu zishobora kuba ari mu gihe, ushobora gukoresha:
 
@@ -223,33 +223,33 @@ Niba hari uburyo bwa "ability" ziri za gihugu zishobora kuba ari mu gihe, ushobo
 
 Kugira ngo uburyo bwawe bwawe bishobora kwizera, ugomba gukoresha Manual cyangwa Legacy mode.
 
-### Icyemezo cyo gufata umwihariko
+### Icyemezo cyo gufata umwihariko {#deprecation-timeline}
 
 - **v1.12.0**: Legacy and Manual modes bishobora kwizera neza
 - **v1.13.0+**: Legacy mode yashobora gushyira ibyo byo gukoresha (deprecation notices)
 - **v2.0.0**: Legacy mode yashobora gufata (TBD)
 
-## Uburyo bwiza bwa gukoresha (Best Practices)
+## Uburyo bwiza bwa gukoresha (Best Practices) {#best-practices}
 
-### Ku gihe cy'ibyo bishya
+### Ku gihe cy'ibyo bishya {#for-new-installations}
 
 - Gukoresha Auto mode (iki ni uburyo bwa mbere)
 - Kugera ko Superdav AI Agent yashobora kugera ku "abilities" zihinduka mu buryo bwiza
 - Gukoresha Ability Visibility kugira ngo ushagarire uburenganzira
 
-### Ku gihe cy'ibyo bishya byari yari yari yari
+### Ku gihe cy'ibyo bishya byari yari yari yari {#for-existing-installations}
 
 - Kugera ku WordPress 7.0+ niba hari ikindi
 - Gukoresha Auto mode kugira ngo ugahagaririre gukora ibintu mu buryo bwiza
 - Kugera no gushyira umwihariko bwawe neza mu admin notice
 
-### Ku gihe cy'ibyo byari yari yari yari yari yari
+### Ku gihe cy'ibyo byari yari yari yari yari yari {#for-custom-abilities}
 
 - Gushyira "abilities" zikoresha ku WordPress hooks (Abilities API)
 - Kugera ko ushobora gukoresha registry ya "custom abilities"
 - Kugera ku WordPress 7.0+ uburyo bwa Auto mode
 
-## Icyemezo cy'ibyo byo gukora mu gihe cy'ibyo byo mu nzira
+## Icyemezo cy'ibyo byo gukora mu gihe cy'ibyo byo mu nzira {#next-steps}
 
 Next Steps
 
@@ -259,7 +259,7 @@ Next Steps
 4. **Kugenzura ubushobozi**: Genzura kandi kugenzura ubushobozi bose bishya ntabwo byumwe mu buryo bw'ibindi.
 5. **Gukora test**: Shobora gukora test kugira ngo ushije ko ubushobozi bwa third-party bishobora gukora neza.
 
-## Inzego Zikoreshwa
+## Inzego Zikoreshwa {#related-topics}
 
 - **Uburyo bwo gushobora kubona ubushobozi (Ability Visibility)**: Uko ufungire ibyo ubushobozi byose mu buryo bw'ibindi.
 - **WordPress Abilities API**: Gukwira ngo wumve kuri registration yawe y'ability ya WordPress.

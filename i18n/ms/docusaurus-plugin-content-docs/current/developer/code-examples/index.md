@@ -3,11 +3,11 @@ title: Contoh Kod Lanjutan
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# Contoh Kod Lanjutan
+# Contoh Kod Lanjutan {#advanced-code-examples}
 
 Contoh-contoh ini menunjukkan corak integrasi lanjutan dengan Ultimate Multisite.
 
-## Enjin Harga Dinamik
+## Enjin Harga Dinamik {#dynamic-pricing-engine}
 
 Enjin penetapan harga berasaskan peraturan yang mengaplikasikan diskaun volum, kesetiaan, dan musiman:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Penyediaan Tapak Lanjutan
+## Penyediaan Tapak Lanjutan {#advanced-site-provisioning}
 
 Mengkonfigurasi tapak baharu secara automatik dengan plugin, SSL, CDN, sandaran (backups), dan pemantauan berdasarkan ciri-ciri pelan:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Sistem Had Khas
+## Sistem Had Khas {#custom-limitations-system}
 
 Mengesan dan menguatkuasakan had sumber dengan amaran penggunaan:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## Pengira Atomik BerlinDB dengan `increment_item()`
+## Pengira Atomik BerlinDB dengan `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 telah menambah kaedah `increment_item()` pada kelas `Query` BerlinDB. Gunakan kaedah ini untuk melakukan peningkatan atomik yang selamat pada lajur numerik tanpa risiko perlumbaan baca-ubah-tulis (read-modify-write races) — berguna untuk pengira, kuota penggunaan, dan semakan had kadar yang berjalan di bawah permintaan serentak.
 
-### Tandatangan Kaedah
+### Tandatangan Kaedah {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 telah menambah kaedah `increment_item()` pada kelas `Q
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Penggunaan Asas
+### Penggunaan Asas {#basic-usage}
 
 ```php
 // Tambah 1 kepada lajur `api_calls` untuk ID keahlian 42.
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Mengesan penggunaan API bagi setiap keahlian
+### Mengesan penggunaan API bagi setiap keahlian {#tracking-api-usage-per-membership}
 
 Corak praktikal untuk menguatkuasakan had kadar API bagi setiap keahlian:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Mengapa `increment_item()` berbanding `update_item()`
+### Mengapa `increment_item()` berbanding `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 Pendekatan baca-ubah-tulis yang naif adalah tidak selamat di bawah permintaan serentak:
 

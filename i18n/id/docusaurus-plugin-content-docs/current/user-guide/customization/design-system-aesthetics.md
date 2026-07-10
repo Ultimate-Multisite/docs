@@ -3,11 +3,11 @@ title: Keterampilan Estetika Sistem Desain
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Keahlian Estetika Design System
+# Keahlian Estetika Design System {#design-system-aesthetics-skill}
 
 **Keahlian Estetika Design System** adalah pendekatan terpandu untuk menyempurnakan identitas visual situs Anda. Keahlian ini membantu Anda membuat keputusan yang konsisten mengenai tipografi, warna, spasi, dan *motion tokens* yang mendefinisikan *design system* Anda.
 
-## Apa itu Estetika Design System?
+## Apa itu Estetika Design System? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics adalah keahlian terstruktur yang mencakup:
 
@@ -20,9 +20,9 @@ Design System Aesthetics adalah keahlian terstruktur yang mencakup:
 
 Keputusan-keputusan ini dicatat dalam file `theme.json` tema Anda, menciptakan sistem visual yang kohesif.
 
-## Mengapa Menggunakan Estetika Design System?
+## Mengapa Menggunakan Estetika Design System? {#why-use-design-system-aesthetics}
 
-### Konsistensi
+### Konsistensi {#consistency}
 
 Sebuah *design system* memastikan:
 
@@ -31,7 +31,7 @@ Sebuah *design system* memastikan:
 - Spasi mengikuti pola yang dapat diprediksi
 - Animasi terasa seragam
 
-### Efisiensi
+### Efisiensi {#efficiency}
 
 Daripada membuat keputusan desain halaman demi halaman, Anda:
 
@@ -39,7 +39,7 @@ Daripada membuat keputusan desain halaman demi halaman, Anda:
 - Menerapkannya di mana saja
 - Memperbarui secara global hanya dengan mengubah satu nilai
 
-### Fleksibilitas
+### Fleksibilitas {#flexibility}
 
 Anda dapat:
 
@@ -47,9 +47,9 @@ Anda dapat:
 - Bereksperimen dengan estetika yang berbeda
 - Mempertahankan konsistensi merek sambil terus berkembang
 
-## Memicu Keahlian Estetika Design System
+## Memicu Keahlian Estetika Design System {#triggering-the-design-system-aesthetics-skill}
 
-### Aktivasi Manual
+### Aktivasi Manual {#manual-activation}
 
 Anda dapat memulai keahlian ini kapan saja:
 
@@ -69,7 +69,7 @@ atau
 "Pandu saya melalui keputusan design system"
 ```
 
-### Saran Otomatis
+### Saran Otomatis {#automatic-suggestions}
 
 Agen mungkin menyarankan penggunaan keahlian ini ketika Anda:
 
@@ -78,9 +78,9 @@ Agen mungkin menyarankan penggunaan keahlian ini ketika Anda:
 - Ingin meningkatkan konsistensi visual
 - Bersiap untuk meluncurkan situs Anda
 
-## Proses Estetika Design System
+## Proses Estetika Design System {#the-design-system-aesthetics-process}
 
-### Langkah 1: Tipografi
+### Langkah 1: Tipografi {#step-1-typography}
 
 Agen akan menanyakan tentang pilihan font Anda:
 
@@ -110,7 +110,7 @@ Agen kemudian akan mendefinisikan:
 - **Skala ketebalan (*Weight scale*)**: Ketebalan font (reguler, medium, bold, dll.)
 - **Tinggi baris (*Line height*)**: Jarak antar baris untuk keterbacaan
 
-### Langkah 2: Palet Warna
+### Langkah 2: Palet Warna {#step-2-color-palette}
 
 ```
 Mari kita definisikan palet warna Anda.
@@ -140,7 +140,7 @@ Agen membuat palet lengkap termasuk:
 - Warna semantik (sukses, peringatan, error)
 - Status *hover* dan aktif
 
-### Langkah 3: Spasi
+### Langkah 3: Spasi {#step-3-spacing}
 
 ```
 Berapa banyak ruang bernapas yang Anda inginkan?
@@ -162,7 +162,7 @@ Agen mendefinisikan *spacing tokens*:
 - Skala: xs, sm, md, lg, xl, 2xl
 - Nilai spesifik untuk *padding*, *margin*, *gap*
 
-### Langkah 4: Batas dan Bayangan
+### Langkah 4: Batas dan Bayangan {#step-4-borders-and-shadows}
 
 ```
 Kedalaman dan definisi visual:
@@ -185,7 +185,7 @@ Agen membuat:
 - *Tokens* bayangan untuk tingkat elevasi
 - *Tokens* lebar batas
 
-### Langkah 5: Gerakan dan Animasi
+### Langkah 5: Gerakan dan Animasi {#step-5-motion-and-animation}
 
 ```
 Bagaimana situs Anda seharusnya terasa saat interaktif?
@@ -207,9 +207,9 @@ Agen mendefinisikan:
 - Fungsi *easing* (ease-in, ease-out, ease-in-out)
 - *Keyframes* animasi untuk interaksi umum
 
-## Menerapkan Estetika Design System
+## Menerapkan Estetika Design System {#applying-design-system-aesthetics}
 
-### Penerapan Otomatis
+### Penerapan Otomatis {#automatic-application}
 
 Setelah Anda menyelesaikan keahlian ini, agen:
 
@@ -218,7 +218,7 @@ Setelah Anda menyelesaikan keahlian ini, agen:
 3. Meregenerasi gaya blok agar sesuai dengan sistem baru
 4. Mengaktifkan tema yang diperbarui
 
-### Penerapan Manual
+### Penerapan Manual {#manual-application}
 
 Anda juga dapat mengedit `theme.json` secara langsung:
 
@@ -257,9 +257,9 @@ Anda juga dapat mengedit `theme.json` secara langsung:
 }
 ```
 
-## Melihat Design System Anda
+## Melihat Design System Anda {#viewing-your-design-system}
 
-### Tanya Agen
+### Tanya Agen {#ask-the-agent}
 
 ```
 "Tunjukkan design system saya"
@@ -273,13 +273,13 @@ atau
 
 Agen akan menampilkan tipografi, warna, spasi, dan *tokens* lainnya.
 
-### Lihat theme.json
+### Lihat theme.json {#view-themejson}
 
 Buka `/wp-content/themes/[nama-tema]/theme.json` di editor teks untuk melihat definisi *token* mentah.
 
-## Memperbarui Design System Anda
+## Memperbarui Design System Anda {#updating-your-design-system}
 
-### Pembaruan Cepat
+### Pembaruan Cepat {#quick-updates}
 
 Minta agen untuk perubahan spesifik:
 
@@ -299,7 +299,7 @@ atau
 "Ubah font judul menjadi serif"
 ```
 
-### Desain Ulang Penuh
+### Desain Ulang Penuh {#full-redesign}
 
 Jalankan kembali keahlian Estetika Design System:
 
@@ -309,7 +309,7 @@ Jalankan kembali keahlian Estetika Design System:
 
 Ini akan memandu Anda melalui semua keputusan lagi, dimulai dari nilai Anda saat ini.
 
-### Pembaruan Parsial
+### Pembaruan Parsial {#partial-updates}
 
 Perbarui aspek tertentu:
 
@@ -317,15 +317,15 @@ Perbarui aspek tertentu:
 "Hanya perbarui palet warna, biarkan sisanya"
 ```
 
-## Praktik Terbaik Design System
+## Praktik Terbaik Design System {#design-system-best-practices}
 
-### Konsistensi
+### Konsistensi {#consistency-1}
 
 - Gunakan *tokens* yang sama di mana saja
 - Jangan membuat warna atau ukuran yang hanya sekali pakai
 - Merujuk pada *tokens* daripada *hardcoding* nilai
 
-### Penamaan
+### Penamaan {#naming}
 
 Gunakan nama yang jelas dan semantik:
 
@@ -335,7 +335,7 @@ Gunakan nama yang jelas dan semantik:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabilitas
+### Skalabilitas {#scalability}
 
 Rancang sistem Anda agar dapat diskalakan:
 
@@ -343,7 +343,7 @@ Rancang sistem Anda agar dapat diskalakan:
 - Buat skala (xs, sm, md, lg, xl) daripada nilai sembarang
 - Rencanakan penambahan di masa depan
 
-### Dokumentasi
+### Dokumentasi {#documentation}
 
 Dokumentasikan *design system* Anda:
 
@@ -351,9 +351,9 @@ Dokumentasikan *design system* Anda:
 - Kapan menggunakan setiap *token*
 - Pengecualian dan kasus tepi
 
-## Pola Design System Umum
+## Pola Design System Umum {#common-design-system-patterns}
 
-### Minimalis Modern
+### Minimalis Modern {#modern-minimalist}
 
 - Tipografi sans-serif (Inter, Helvetica)
 - Palet warna terbatas (2-3 warna)
@@ -361,7 +361,7 @@ Dokumentasikan *design system* Anda:
 - Bayangan halus
 - Animasi yang mulus dan cepat
 
-### Hangat dan Ramah
+### Hangat dan Ramah {#warm-and-friendly}
 
 - Campuran serif dan sans-serif
 - Palet warna hangat (oranye, abu-abu hangat)
@@ -369,7 +369,7 @@ Dokumentasikan *design system* Anda:
 - Bayangan lembut
 - Animasi ceria
 
-### Korporat Profesional
+### Korporat Profesional {#professional-corporate}
 
 - Sans-serif bersih (Roboto, Open Sans)
 - Palet netral dengan warna aksen
@@ -377,7 +377,7 @@ Dokumentasikan *design system* Anda:
 - Bayangan minimal
 - Transisi halus
 
-### Kreatif dan Berani
+### Kreatif dan Berani {#creative-and-bold}
 
 - Tipografi khas
 - Palet warna berani
@@ -385,7 +385,7 @@ Dokumentasikan *design system* Anda:
 - Bayangan kuat
 - Animasi yang terlihat
 
-## Pemecahan Masalah (*Troubleshooting*)
+## Pemecahan Masalah (*Troubleshooting*) {#troubleshooting}
 
 **Perubahan design system saya tidak terlihat**
 - Bersihkan *cache* peramban Anda
@@ -403,7 +403,7 @@ Dokumentasikan *design system* Anda:
 - Edit `theme.json` secara manual ke nilai sebelumnya
 - Jalankan kembali keahlian dengan pilihan yang berbeda
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 Setelah mendefinisikan *design system* Anda:
 

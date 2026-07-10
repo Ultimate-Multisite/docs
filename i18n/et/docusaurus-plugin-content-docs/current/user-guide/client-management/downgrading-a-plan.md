@@ -3,13 +3,13 @@ title: Plani allundamine
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plaani alla liigutamine (v2)
+# Plaani alla liigutamine (v2) {#downgrading-a-plan-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 
 Plaani või jälgenduse alla liigutamine on tavaline tegevus, mida teie kliendid võivad teha, kui nad on piiratud eelarvega või otsustavad, et neil ei vaja palju ressursside oma subsite juhendamiseks.
 
-## Kuidas plaani alla liigutada
+## Kuidas plaani alla liigutada {#how-to-downgrade-a-plan}
 
 Teised kliendid võivad plaani alla liigutada millalgi sisse logimaks oma subsite administraatori dashboardile ja klõpsamaks **Muuda** (Change) üles kasutaja/kliendi kontorile.
 
@@ -25,7 +25,7 @@ Järgmine jaoks kasutaja peab lihtsalt klõpsama **Kassande lõpetamine** (Compl
 
 ![Kontori lehekülje pilt, kus on jälgenduse muutmine ootamises banner](/img/account-page/pending-change.png)
 
-### Mis happens, kui kasutaja alla liigutab plaani?
+### Mis happens, kui kasutaja alla liigutab plaani? {#what-happens-when-a-user-downgrades-their-plan}
 
 On oluline märida, et plaani alla liigutamine ei muuta olemasoleva konfiguratsiooni subsite sisse.
 
@@ -37,7 +37,7 @@ Postide, mis ületavad plaani seadsetud piirid, on teil 3 erinevat valikut: **Ha
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Mis happens on maksuga
+### Mis happens on maksuga {#what-happens-to-the-payment}
 
 Versioon 2.0 ei nõua enam prooratsiooni osutamise reguleerimist maksuluse osas.
 

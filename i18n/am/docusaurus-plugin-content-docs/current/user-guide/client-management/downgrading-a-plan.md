@@ -3,13 +3,13 @@ title: የፕላን ደረጃን ዝቅ ማድረግ
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planን መቀነስ (v2)
+# Planን መቀነስ (v2) {#downgrading-a-plan-v2}
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 
 Planን ወይም የደንበኝነት ምዝገባን (subscription) መቀነስ ተጠቃሚዎች በጀት ውስን ከሆነ ወይም የሰርተን ሰብሳይት (subsite) ለማስኬድ ብዙ ሀብቶች እንደማይፈልጉ ወስደው ከሆነ ሊያደርጉት የሚችሉ የተለመደ እርምጃ ነው።
 
-## Planን እንዴት መቀነስ ይቻላል
+## Planን እንዴት መቀነስ ይቻላል {#how-to-downgrade-a-plan}
 
 ተጠቃሚዎች በየጊዜው በsubsite admin dashboard ገብተው እና በአካባቢያቸው ባለው የሂሳብ ገጽ (account page) ላይ **Change** የሚለውን በመጫን Planን መቀነስ ይችላሉ።
 
@@ -25,7 +25,7 @@ Planን ወይም የደንበኝነት ምዝገባን (subscription) መቀነ
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### ተጠቃሚ Planን ሲቀንስ ምን ይሆናል
+### ተጠቃሚ Planን ሲቀንስ ምን ይሆናል {#what-happens-when-a-user-downgrades-their-plan}
 
 Planን መቀነስ ያለበት ነገር ቢኖር፣ በተጠቃሚው subsite ውስጥ ያለውን ነባር ቅንብር (existing configuration) አይቀይርም።
 
@@ -37,7 +37,7 @@ Planን መቀነስ ያለበት ነገር ቢኖር፣ በተጠቃሚው subs
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### ለክፍያው ምን ይሆናል
+### ለክፍያው ምን ይሆናል {#what-happens-to-the-payment}
 
 በversion 2.0 ላይ፣ የክፍያ ስሌት (proration) አንፃር ምንም ማስተካከያ አያስፈልግም።
 

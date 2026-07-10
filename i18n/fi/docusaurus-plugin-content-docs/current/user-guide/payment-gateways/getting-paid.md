@@ -1,126 +1,126 @@
 ---
-title: Palkkion saaminen
+title: Maksujen vastaanottaminen
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Maksutuksen saaminen (v2)
+# Maksujen vastaanottaminen (v2) {#getting-paid-v2}
 
-_**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite version 2.x.**_
+_**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -versiota 2.x.**_
 
-Ultimate Multisiteessa on sisäänrakennettu jäsen- ja laskutusjärjestelmä. Jotta laskutusjärjestelmämme toimisi, olemme integroineet yleisimmät maksutulvaukset, joita käytetään verkkokaupoissa. Ultimate Multisiten oletusmaksutulvaukset ovat _Stripe_, _PayPal_ ja Manuaalinen maksu. Voit myös käyttää _WooCommerce_, _GoCardless_ ja _Payfastia_ vastaanottamaan maksuja asennuttamalla niihin liittyvät lisäosat (add-ons).
+Ultimate Multisite sisältää sisäänrakennetun jäsenyys- ja laskutusjärjestelmän. Jotta laskutusjärjestelmämme toimisi, olemme integroineet yleisimmät verkkokaupassa käytettävät maksuväylät. Ultimate Multisite -palvelun oletusmaksuväylät ovat _Stripe_ , _PayPal_ ja manuaalinen maksu. Voit myös käyttää _WooCommerce_ , _GoCardless_ ja _Payfast_ maksujen vastaanottamiseen asentamalla niiden vastaavat lisäosat.
 
-## Perusasetukset
+## Perusasetukset {#basic-settings}
 
-Voit määrittää mitä tahansa näistä maksutulvauksista Ultimate Multisiten maksusäädösten alla. Voit löytää ne siirtymällä **Ultimate Multisite -valikko > Asetukset > Maksut**.
+Voit määrittää minkä tahansa näistä maksuväylistä Ultimate Multisite -maksuasetuksissa. Löydät ne siirtymällä kohtaan **Ultimate Multisite menu > Settings > Payments.**
 
-![Maksutusasetusten sivu Ultimate Multisiteessa, joka näyttää Payments-paneelin](/img/config/payments-settings-page.png)
+![Ultimate Multisite -palvelun maksuasetussivu, jossa näkyy Payments-paneeli](/img/config/payments-settings-page.png)
 
-Ennen kuin asettaisit maksutulvauksesi, katso ensin perusmaksutulvaukset, joita voit määrittää:
+Ennen kuin määrität maksuväyläsi, tutustu perusmaksuasetuksiin, joita voit määrittää:
 
-**Force auto-rene (Pakota automaattinen uusi)** **w:** Tämä varmistaa, että maksu toistuu automaattisesti jokaisen laskutusjakson lopussa riippuen käyttäjän valitsemasta laskutusajankohdasta.
+**Pakota automaattinen uu** **sinta:** Tämä varmistaa, että maksu toistuu automaattisesti jokaisen laskutusjakson lopussa käyttäjän valitseman laskutustiheyden mukaan.
 
-<!-- Screenshot unavailable: Force Auto-Renew -kytkinasetus Maksut asetusten sivulla -->
+<!-- Kuvakaappaus ei saatavilla: Force Auto-Renew -kytkinasetus Payments-asetussivulla -->
 
-Ultimate Multisite v2.13.0 tarkistaa, onko aktiivisella maksutulvauksella käytettävissä uudelleenkäytettävä uusi (renewal credential), ennen kuin tallennetaan toistuva jäsenyys automaattisella uusimisella päällä. Uudelleenkäytettävä uusi voi olla maksutulvauksen tilaus, laskutussopimus, tallennettu vault-token tai vastaava uudelleenkäytettävä maksutapa. Jos maksutulvauksen ilmoitus kertoo, että käytettävissä ei ole kelvollista tunnusta, Ultimate Multisite tallentaa jäsenyden mutta sammuttaa automaattisen uusi ja merkitsee puuttuvaksi tunnistetilaa, jotta ylläpitäjä tai tukiprosessi voi pyytää asiakasta vahvistamaan maksun ennen uusintapäivää.
+Ultimate Multisite v2.13.0 tarkistaa ennen toistuvan jäsenyyden tallentamista automaattinen uusinta käytössä, onko aktiivisella maksuväylällä uudelleenkäytettävä uusintavaltuutus. Uusintavaltuutus voi olla maksuväylän tilaus, laskutussopimus, tallennettu vault token tai vastaava uudelleenkäytettävä maksutapa. Jos maksuväylä ilmoittaa, ettei käyttökelpoista valtuutusta ole olemassa, Ultimate Multisite tallentaa jäsenyyden mutta poistaa automaattisen uusinnan käytöstä ja kirjaa puuttuvan valtuutuksen tilan, jotta ylläpitäjä tai tukiprosessi voi pyytää asiakasta valtuuttamaan maksun uudelleen ennen uusintapäivää.
 
-Tämä estää jäsenyyden näkymisen automaattisena uusimisena, jos gateway tukee vain kertamaksullisia maksuja. Gateway add-onit tulisi varmistaa, että toistuvat maksut tallentavat uudelleenkäytettävän tunnuksen, erityisesti kun gateway tukee sekä kertamaksujen ottamista että arkistoitua/tilausmaksuvaihtoehtoja.
+Tämä estää jäsenyyttä näyttämästä siltä, että se uusiutuisi automaattisesti, kun maksuväylä voi veloittaa vain kertamaksuja. Maksuväylien lisäosien tulisi varmistaa, että toistuvat kassaprosessit tallentavat uudelleenkäytettävän valtuutuksen, erityisesti silloin, kun maksuväylä tukee sekä kertaveloitusta että vault-/tilausmaksutiloja.
 
-**Salli kokeilujakso ilman maksua** **materiaali:** Tämän vaihtoehdon päälle asettaminen tarkoittaa, että asiakkaasi ei tarvitse antaa mitään taloudellista tietoa rekisteröitysprosessissa. Tämä vaaditaan vain silloin, kun kokeilujakso on päättynyt.
+**Salli kokeilujaksot ilman maksu** **tapaa:** Kun tämä vaihtoehto on käytössä, asiakkaasi ei tarvitse lisätä mitään taloudellisia tietoja rekisteröitymisprosessin aikana. Tätä vaaditaan vasta, kun kokeilujakso päättyy.
 
-<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
+<!-- Kuvakaappaus ei saatavilla: Allow Trials Without Payment Method -kytkin Payments-asetussivulla -->
 
-**Lähetä lasku maksuvahvistuksen jälkeen:** Tämä antaa sinulle mahdollisuuden valita, lähetätkö laskun maksun jälkeen vai et. Huomaa, että käyttäjillä on pääsy maksuhistoriaan alayksikkönsä dashboardista. Tämän vaihtoehdon ei ole käytössä Manual Gateway -vaihtoehdolla.
+**Lähetä lasku maksuvahvistuksen yhteydessä:** Tämä antaa sinulle vaihtoehdon lähettää tai olla lähettämättä lasku maksun jälkeen. Huomaa, että käyttäjillä on pääsy maksuhistoriaansa oman alisivustonsa Dashboardissa. Tämä vaihtoehto ei koske manuaalista maksuväylää.
 
-<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
+<!-- Kuvakaappaus ei saatavilla: Send Invoice on Payment Confirmation -kytkin Payments-asetussivulla -->
 
-**Laskunumerointijärjestelmä:** Tässä voit valita joko maksutiedot viittauskoodin tai peräkkäisen numerointijärjestelmän. Jos valitset maksuviittauskoodia laskuihin, sinun ei tarvitse konfiguroida mitään. Jos valitset peräkkäisen numerointijärjestelmän, sinun on konfiguroitava **seuraava laskunumero** (Tämä numero käytetään seuraavan järjestelmän luomalle laskulle laskunumerona. Se kasvaa yhdellä kerran joka kerta kun uusi lasku luodaan. Voit muuttaa sitä ja tallentaa sen nollaamaan laskun peräkkäinen numero tiettyyn arvoon) sekä **laskunumeron etuliite**.
+**Laskunumerointijärjestelmä:** Tässä voit valita joko maksun viitekoodin tai juoksevan numerointijärjestelmän. Jos päätät käyttää maksun viitekoodia laskuissasi, sinun ei tarvitse määrittää mitään. Jos päätät käyttää juoksevaa numerointijärjestelmää, sinun on määritettävä **seuraava laskunumero** (tätä numeroa käytetään seuraavana järjestelmässä luotavan laskun laskunumerona. Sitä kasvatetaan yhdellä aina, kun uusi lasku luodaan. Voit muuttaa sitä ja tallentaa sen palauttaaksesi laskujen juoksevan numeroinnin tiettyyn arvoon) ja **laskunumeron etuliite.**
 
-<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
+<!-- Kuvakaappaus ei saatavilla: Invoice numbering scheme -pudotusvalikko, jossa Payment Reference Code- ja Sequential Number -vaihtoehdot -->
 
-<!-- Screenshot unavailable: Seuraava laskutusnumero ja laskutusnumeron etuliitteen kentät näkyvät, kun valittu on Sekventiaalinen numero -->
+<!-- Kuvakaappaus ei saatavilla: Next invoice number- ja invoice number prefix -kentät, jotka näytetään, kun Sequential Number on valittuna -->
 
-## Missä löydät maksutovut (gateways):
+## Mistä löydät maksuväylät: {#where-to-find-the-gateways}
 
-Voit asettaa maksutovut samalle sivulle (**Ultimate Multisite > Settings > Payments**). **Aktiivisten maksutovujen** alapuolella näet: _Stripe_, _Stripe_ Checkout, _PayPal_ ja _Manual_.
+Voit määrittää maksuväylät samalla sivulla ( **Ultimate Multisite > Settings > Payments**). Heti kohdan **active payment gateways** alapuolella näet: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ja _Manual_.
 
-![Aktiivisten maksutovujen osio listana Stripe-, Stripe Checkout- ja PayPal-maksutovut](/img/config/payments-active-gateways.png)
+![Active Payment Gateways -osio, jossa luetellaan Stripe, Stripe Checkout, PayPal ja Manual](/img/config/payments-active-gateways.png)
 
-Meillä on erillinen artikkeli jokaiselle maksutovulle, joka ohjaa sinut asennusvaiheisiin, jota löydät alla olevista linkeistä.
+Meillä on oma artikkeli jokaiselle maksuväylälle, ja ne opastavat sinut käyttöönoton vaiheiden läpi. Löydät ne alla olevista linkeistä.
 
-Voit tarkastella ja muokata maksuja:
+Voit tarkastella ja muokata maksutietoja:
 
-![Maksujen muokkausliittymä](/img/admin/payment-edit.png)
+![Maksun muokkausnäkymä](/img/admin/payment-edit.png)
 
 Tässä on koko näkymä maksun muokkaussivusta:
 
-![Maksujen muokkaus täysi käyttöliittymä](/img/admin/payment-edit-full.png)
+![Maksun muokkauksen koko näkymä](/img/admin/payment-edit-full.png)
 
-Tässä on myös maksumakutovujen asetusten kokonäkymä:
+Tässä on myös koko näkymä maksuväylien asetuksista:
 
-![Maksutovujen asetukset koko sivu](/img/config/settings-payments-gateways-full.png)
+![Maksuväylien asetusten koko sivu](/img/config/settings-payments-gateways-full.png)
 
-**Stripe-tovun asennus**
+**Stripe gatewayn määrittäminen**
 
-**PayPal-tovun asennus**** **
+**PayPal gatewayn määrittäminen**** **
 
-**Manuaalisten maksujen asennus**
+**Manuaalisten maksujen määrittäminen**
 
-Nyt, jos haluat käyttää _WooCommerce_a, _GoCardlessia_ tai _Payfastia_ maksutovuna, sinun on **asennettava ja konfiguroitava niiden add-onit**.
+Jos nyt haluat käyttää _WooCommerce_ , _GoCardless_ tai _Payfast_ maksuväylänäsi, sinun on **asennettava ja määritettävä niiden lisäosat**.
 
-### WooCommerce-add-onin asennus:
+### WooCommerce-lisäosan asentaminen: {#how-to-install-the-woocommerce-add-on}
 
-Ymmärrämme, että _Stripe_ä ja _PayPal_ eivät ole saatavilla joissakin maissa, mikä rajoittaa tai estää Ultimate Multisite -käyttäjiä käyttämästä laajennustamme tehokkaasti. Siksi olemme luoneet add-onin, joka integroidaako _WooCommerce_n, joka on erittäin suosittu verkkokauppalaitteisto. Maailmanlaajuiset kehittäjät ovat luoneet add-onit integroimiseksi eri maksutovuja siihen. Hyödynnämme tätä laajentaaksemme maksutovuja, joita voit käyttää Ultimate Multisite -laskujärjestelmän kanssa.
+Ymmärrämme, että _Stripe_ ja _PayPal_ eivät ole saatavilla joissakin maissa, mikä rajoittaa tai estää Ultimate Multisite -käyttäjiä käyttämästä lisäosaamme tehokkaasti. Siksi loimme lisäosan _WooCommerce,_-integraatiota varten; se on erittäin suosittu verkkokauppalisäosa. Kehittäjät ympäri maailmaa ovat luoneet siihen lisäosia eri maksuväylien integroimiseksi. Hyödynsimme tätä laajentaaksemme maksuväyliä, joita voit käyttää Ultimate Multisite -laskutusjärjestelmän kanssa.
 
-**TÄRKEÄ:** Ultimate Multisite - WooCommerce -integraatio vaatii WooCommerce-lisäosan aktivoimisen vähintään pääsivustollasi.
+_**TÄRKEÄÄ:** Ultimate Multisite: WooCommerce Integration edellyttää, että WooCommerce on aktivoitu vähintään pääsivustollasi._
 
-Aloita ensin lisäosien (add-ons) sivulle. Voit löytää sen mennään **Ultimate Multisite > Settings** -valikkoon. Sinun pitäisi nähdä **Add-ons** -taulukko. Napsauta **Check our Add-ons**.
+Siirry ensin lisäosien sivulle. Löydät sen siirtymällä kohtaan **Ultimate Multisite > Settings**. Sinun pitäisi nähdä **Add-ons**-taulukko. Napsauta **Check our Add-ons**.
 
-<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
+<!-- Kuvakaappaus ei saatavilla: Add-ons-taulukko Ultimate Multisite Settings -sivupalkissa ja Check our Add-ons -linkki -->
 
-Napsauttamalla **Check our Add-ons** sinut ohjataan lisäosille sivuun, josta löydät kaikki Ultimate Multisite -lisäosat. Napsauta **Ultimate Multisite: WooCommerce Integration** -lisäosaa.
+Kun olet napsauttanut **Check our Add-ons** , sinut ohjataan lisäosien sivulle. Täältä löydät kaikki Ultimate Multisite -lisäosat. Napsauta **Ultimate Multisite: WooCommerce Integration** -lisäosaa.
 
-![Add-ons page listing Ultimate Multisite add-ons including WooCommerce Integration](/img/addons/addons-page.png)
+![Lisäosien sivu, jossa luetellaan Ultimate Multisite -lisäosia, mukaan lukien WooCommerce Integration](/img/addons/addons-page.png)
 
-Ikkuna avautuu lisäosan tiedoilla. Napsauta vain **Install Now**.
+Näkyviin avautuu ikkuna, jossa on lisäosan tiedot. Napsauta vain **Asenna nyt**.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration add-on details dialog with Install Now button -->
+<!-- Kuvakaappaus ei saatavilla: Ultimate Multisite WooCommerce -integrointilisäosan tietovalintaikkuna, jossa on Asenna nyt -painike -->
 
-Asennuksen jälkeen sinut ohjataan plugin-sivulle. Napsauta siellä vain **Network Activate**, ja WooCommerce -lisäosa aktivoituu verkostossasi.
+Kun asennus on valmis, sinut ohjataan lisäosien sivulle. Napsauta tässä vain **Ota käyttöön verkostossa**, ja WooCommerce-lisäosa aktivoidaan verkostossasi.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the WooCommerce Integration add-on -->
+<!-- Kuvakaappaus ei saatavilla: Lisäosien sivu, jossa on Ota käyttöön verkostossa -linkki WooCommerce-integrointilisäosalle -->
 
-Aktivoimisen jälkeen, jos sinulla ei ole vielä asennettuna eikä aktivoitu WooCommerce -lisäosaa verkkosivustollasi, saat muistutuksen.
+Kun olet aktivoinut sen, jos WooCommerce-lisäosaa ei vieläkään ole asennettu ja aktivoitu verkkosivustollasi, saat muistutuksen.
 
-<!-- Screenshot unavailable: Admin notice reminding the administrator to install and activate the WooCommerce plugin -->
+<!-- Kuvakaappaus ei saatavilla: Ylläpitäjän ilmoitus, joka muistuttaa ylläpitäjää asentamaan ja aktivoimaan WooCommerce-lisäosan -->
 
-Lue lisää WooCommerce Integration -lisäosasta **napsauttamalla täällä**.
+Jos haluat lukea lisää WooCommerce Integration -lisäosasta, **napsauta tästä**.
 
-### Miten asentaa GoCardless -lisäosa:
+### GoCardless-lisäosan asentaminen: {#how-to-install-the-gocardless-add-on}
 
-Asennusohjeet GoCardless -lisäosan asentamiseen ovat lähes samat kuin WooCommerce -lisäosassa. Mene lisäosien sivulle ja valitse **Ultimate Multisite: GoCardless Gateway** -lisäosa.
+_GoCardless_-lisäosan asentamisen vaiheet ovat lähes samat kuin _WooCommerce_-lisäosan. Siirry lisäosien sivulle ja valitse **Ultimate Multisite: GoCardless Gateway** -lisäosa.
 
-<!-- Screenshot unavailable: Lisäosien sivu, jossa Ultimate Multisite GoCardless Gateway -lisäosa on korostettu -->
+<!-- Kuvakaappaus ei saatavilla: Lisäosien sivu, jossa Ultimate Multisite GoCardless Gateway -lisäosa on korostettuna -->
 
-Lisäosan ikkuna avautuu. Napsauta **Install Now**.
+Lisäosan ikkuna avautuu. Napsauta **Asenna nyt**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway -lisäosan tiedotikkuna Install Now -painike -->
+<!-- Kuvakaappaus ei saatavilla: Ultimate Multisite GoCardless Gateway -lisäosan tietovalintaikkuna, jossa on Asenna nyt -painike -->
 
-Asennuksen jälkeen sinut ohjataan plugin-sivulle. Siellä napsauta vain **Network Activate** ja _GoCardless_-lisäosa aktivoituu verkossasi.
+Kun asennus on valmis, sinut ohjataan lisäosien sivulle. Napsauta tässä vain **Ota käyttöön verkostossa**, ja _GoCardless_-lisäosa aktivoidaan verkostossasi.
 
-<!-- Screenshot unavailable: Plugin-sivu, jossa GoCardless Gateway -lisäosan Network Activate -linkki on -->
+<!-- Kuvakaappaus ei saatavilla: Lisäosien sivu, jossa on Ota käyttöön verkostossa -linkki GoCardless Gateway -lisäosalle -->
 
-Lue tämä artikkeli saadaksesi tietoa _GoCardless_-portaalista:
+Jos haluat oppia, miten pääset alkuun _GoCardless_-gatewayn kanssa, **lue tämä artikkeli**.
 
-### Miten asentaa Payfast -lisäosa:
+### Payfast-lisäosan asentaminen: {#how-to-install-the-payfast-add-on}
 
-Mene lisäosien sivulle ja valitse **Ultimate Multisite: Payfast Gateway** -lisäosa.
+Siirry lisäosien sivulle ja valitse **Ultimate Multisite: Payfast Gateway** -lisäosa.
 
-<!-- Screenshot unavailable: Lisäosien sivu, jossa Ultimate Multisite Payfast Gateway -lisäosa on korostettu -->
+<!-- Kuvakaappaus ei saatavilla: Lisäosien sivu, jossa Ultimate Multisite Payfast Gateway -lisäosa on korostettuna -->
 
-Lisäosan ikkuna avautuu. Napsauta **Install Now**.
+Lisäosan ikkuna avautuu. Napsauta **Asenna nyt.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway -lisäosan tiedotikkuna Install Now -painike -->
+<!-- Kuvakaappaus ei saatavilla: Ultimate Multisite Payfast Gateway -lisäosan tietovalintaikkuna, jossa on Asenna nyt -painike -->
 
-Asennuksen jälkeen sinut ohjataan plugin-sivulle. Siellä napsauta vain **Network Activate** ja _Payfast_-lisäosa aktivoituu verkossasi.
+Kun asennus on valmis, sinut ohjataan lisäosien sivulle. Napsauta tässä vain **Ota käyttöön verkostossa**, ja _Payfast_-lisäosa aktivoidaan verkostossasi.
 
-<!-- Screenshot unavailable: Plugin-sivu, jossa Payfast Gateway -lisäosan Network Activate -linkki on -->
+<!-- Kuvakaappaus ei saatavilla: Lisäosien sivu, jossa on Ota käyttöön verkostossa -linkki Payfast Gateway -lisäosalle -->

@@ -1,146 +1,150 @@
 ---
-title: Website‑Vorlagen
+title: Website-Vorlagen
 sidebar_position: 4
-_i18n_hash: 05938a764a4fd230e32fa0ef39d35ebd
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site-Vorlagen (v2)
+# Website-Vorlagen (v2) {#site-templates-v2}
 
-_**HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x. Wenn Sie Version 1.x verwenden,**_ **siehe diesen Artikel** _**.**_
+_**HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x. Wenn du Version 1.x verwendest,**_ **siehe diesen Artikel** _**.**_
 
-Unser Ziel beim Erstellen eines Premium-Netzwerks mit Ultimate Multisite ist es, so viele Prozesse wie möglich zu automatisieren und gleichzeitig unseren Kunden Flexibilität und verschiedene Optionen zu bieten, aus denen sie bei der Erstellung ihrer Websites wählen können. Ein einfacher Weg, dieses Gleichgewicht zu erreichen, besteht darin, die Ultimate Multisite Site Templates-Funktion zu nutzen.
+Unser Ziel beim Erstellen eines Premium-Netzwerks mit Ultimate Multisite ist es, so viele Prozesse wie möglich zu automatisieren und unseren Kunden gleichzeitig Flexibilität und verschiedene Optionen zur Auswahl zu geben, wenn sie ihre Websites erstellen. Eine einfache Möglichkeit, dieses Gleichgewicht zu erreichen, ist die Nutzung der Website-Vorlagen-Funktion von Ultimate Multisite.
 
-## Was ist eine Site-Vorlage?
+## Was ist eine Website-Vorlage? {#what-is-a-site-template}
 
-Wie der Name schon sagt, ist eine Site-Vorlage eine Boilerplate-Website, die als Basis beim Erstellen neuer Websites in Ihrem Netzwerk verwendet werden kann.
+Wie der Name schon sagt, ist eine Website-Vorlage eine Boilerplate-Website, die beim Erstellen neuer Websites in deinem Netzwerk als Grundlage verwendet werden kann.
 
-Das bedeutet, Sie können eine Basis-Website erstellen, verschiedene Plugins aktivieren, ein aktives Theme festlegen und sie nach Belieben anpassen. Wenn Ihr Kunde dann ein neues Konto erstellt, erhält er anstelle einer Standard-WordPress-Website ohne sinnvollen Inhalt eine Kopie Ihrer Basis-Website mit allen Anpassungen und Inhalten bereits vorhanden.
+Das bedeutet, dass du eine Basis-Website erstellen, verschiedene Plugins aktivieren, ein aktives Theme festlegen und sie auf jede gewünschte Weise anpassen kannst. Wenn dein Kunde dann einen neuen Account erstellt, erhält er statt einer standardmäßigen WordPress-Website ohne sinnvolle Inhalte eine Kopie deiner Basis-Website, bei der alle Anpassungen und Inhalte bereits vorhanden sind.
 
-Das klingt großartig, aber wie erstelle ich eine neue Site-Vorlage? Es ist so einfach wie möglich.
+Das klingt großartig, aber wie erstelle ich eine neue Website-Vorlage? Es ist so einfach, wie es nur sein kann.
 
-## Erstellen und Bearbeiten einer neuen Site-Vorlage
+## Erstellen und Bearbeiten einer neuen Website-Vorlage {#creating-and-editing-a-new-site-template}
 
-Site-Vorlagen sind einfach normale Websites in Ihrem Netzwerk. Um eine neue Vorlage zu erstellen, gehen Sie einfach zu **Network Admin > Ultimate Multisite > Sites > Add Site.**
+Website-Vorlagen sind einfach normale Websites in deinem Netzwerk. Um eine neue Vorlage zu erstellen, kannst du einfach zu **Netzwerk-Admin > Ultimate Multisite > Websites > Website hinzufügen** gehen.
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Schaltfläche „Website hinzufügen“ auf der Websites-Listenseite](/img/config/site-templates-list.png)**
 
-Dies öffnet ein Modal-Fenster, in dem Sie nach dem **Site title, Site Domain/path** und **Site type** gefragt werden. Im Dropdown-Feld **Site Type** stellen Sie sicher, dass Sie **Site Template** auswählen *.*  
+Dadurch wird ein modales Fenster geöffnet, in dem nach dem **Website-Titel, der Website-Domain/dem Website-Pfad** und dem **Website-Typ** gefragt wird. Stelle im Dropdown-Feld **Website-Typ** sicher, dass du **Website-Vorlage** auswählst *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Modalfenster zum Hinzufügen einer Website-Vorlage mit Dropdown für den Website-Typ](/img/config/site-templates-list.png)_
 
-Unten im Formular sehen Sie einen **Copy Site**-Toggle-Schalter. Damit können Sie eine neue Site-Vorlage auf Basis einer bestehenden Site-Vorlage erstellen, um Zeit zu sparen, anstatt eine Site-Vorlage von Grund auf neu zu erstellen.
+Du kannst auch eine kundenorientierte Beschreibung hinzufügen, um zu erklären, was die Vorlage enthält:
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Beschreibungsfeld der Website-Vorlage auf dem Bearbeitungsbildschirm der Website-Vorlage](/img/config/site-template-edit-description.png)
 
-### Anpassen des Inhalts einer Site-Vorlage
+Am unteren Rand des Formulars wirst du einen Umschalter **Website kopieren** bemerken. Damit kannst du eine neue Website-Vorlage auf Grundlage einer bestehenden Website-Vorlage als Ausgangspunkt erstellen, um Zeit zu sparen, anstatt eine Website-Vorlage von Grund auf neu zu erstellen.
 
-Um Ihre Site-Vorlage anzupassen, navigieren Sie einfach zu ihrem Dashboard-Panel und nehmen die gewünschten Änderungen vor. Sie können neue Beiträge, Seiten erstellen, Plugins aktivieren und das aktive Theme ändern. Sie können sogar zum Customizer gehen und alle Arten von Anpassungsoptionen ändern.
+![Modalfenster zum Hinzufügen einer Website-Vorlage mit Umschalter zum Kopieren der Website](/img/config/site-templates-list.png)
 
-Alle diese Daten werden kopiert, wenn ein Kunde eine neue Website basierend auf dieser Site-Vorlage erstellt.
+### Anpassen der Inhalte einer Website-Vorlage {#customizing-the-contents-of-a-site-template}
 
-### Erweiterte Optionen
+Um deine Website-Vorlage anzupassen, navigiere einfach zu ihrem Dashboard-Bereich und nimm die benötigten Änderungen vor. Du kannst neue Beiträge und Seiten erstellen, Plugins aktivieren und das aktive Theme ändern. Du kannst sogar zum Customizer gehen und alle möglichen Anpassungsoptionen ändern.
 
-Wenn Sie sich mit etwas benutzerdefiniertem Code auskennen, können Sie unsere Search and Replace API nutzen, um Informationen auf der neuen Website nach ihrer Erstellung automatisch zu ersetzen. Das ist nützlich für Dinge wie das Ersetzen von Firmennamen auf einer About-Seite, das Ersetzen der Kontakt-E-Mail auf der Kontakt-Seite usw.
+![Bearbeitungsoberfläche der Website-Vorlage](/img/config/site-template-edit.png)
 
-### Verwendung von Site-Vorlagen
+All diese Daten werden kopiert, wenn ein Kunde eine neue Website auf Grundlage dieser Website-Vorlage erstellt.
 
-Ok, Sie haben also eine Reihe verschiedener Site-Vorlagen mit unterschiedlichen Designs, Themes und Einstellungen erstellt. Wie machen Sie sie jetzt in Ihrem Netzwerk nützlich?
+### Erweiterte Optionen {#advanced-options}
 
-Im Wesentlichen gibt es jetzt zwei Ansätze, die Sie nutzen können (nicht gleichzeitig):
+Wenn du dich mit etwas individuellem Coding auskennst, kannst du unsere Search and Replace API nutzen, um Informationen auf der neuen Website nach ihrer Erstellung automatisch zu ersetzen. Das ist nützlich für Dinge wie das Ersetzen von Firmennamen auf einer Über-uns-Seite, das Ersetzen der Kontakt-E-Mail auf der Kontaktseite usw.
 
-  * Eine Site-Vorlage jedem Ihrer Pläne zuweisen
+### Website-Vorlagen verwenden {#using-site-templates}
+
+Okay, du hast also eine Reihe verschiedener Website-Vorlagen mit unterschiedlichen Designs, Themes und Einstellungen erstellt. Wie machst du sie jetzt in deinem Netzwerk nützlich?
+
+Grundsätzlich gibt es zwei Ansätze, die du jetzt verwenden kannst (nicht gleichzeitig):
+
+  * Eine Website-Vorlage jedem deiner Tarife zuweisen
 
 **ODER**
 
-  * Ihren Kunden die Möglichkeit geben, die Site-Vorlagen selbst während der Anmeldung auszuwählen.
+  * Deinen Kunden erlauben, die Website-Vorlagen während der Registrierung selbst auszuwählen.
 
-#### Modus 1: Site-Vorlage zuweisen
+#### Modus 1: Website-Vorlage zuweisen {#mode-1-assign-site-template}
 
-In diesem Modus können Ihre Kunden keine Vorlage auswählen, wenn sie ein Konto erstellen, sondern Sie definieren, welche Vorlage für jeden Ihrer Pläne verwendet werden soll.
+In diesem Modus können deine Kunden beim Erstellen eines Account keine Vorlage auswählen; stattdessen legst du fest, welche Vorlage bei jedem deiner Tarife verwendet werden soll.
 
-Um dies zu tun, gehen Sie zu **Ultimate Multisite > Products > Edit**.
+Dazu musst du zu **Ultimate Multisite > Produkte > Bearbeiten** gehen.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![Produkt bearbeiten, um Website-Vorlage zuzuweisen](/img/config/product-site-templates.png)
 
-Dies führt Sie zur **Edit Produc** t-Seite. Unter dem Abschnitt **Product Options** finden Sie die Registerkarte **Site template** und wählen die Option **Assign Site** **Template** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Site-Vorlagen angezeigt und Sie können nur eine Site-Vorlage auswählen, die dem Produkt zugeordnet ist.
+Dies bringt dich zur Seite **Produkt bearbeiten**. Suche im Abschnitt **Produktoptionen** den Tab **Website-Vorlage** und wähle die Option **Website-Vorlage zuweisen** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Website-Vorlagen angezeigt, und du kannst nur eine Website-Vorlage auswählen, die dem Produkt zugeordnet ist.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Produkt-Tab „Website-Vorlage“ mit Option zum Zuweisen einer Website-Vorlage](/img/config/product-site-templates.png)
 
-#### Modus 2: Verfügbare Site-Vorlage auswählen
+#### Modus 2: Verfügbare Website-Vorlage auswählen {#mode-2-choose-available-site-template}
 
-In diesem Modus geben Sie Ihren Kunden während des Anmeldevorgangs die Möglichkeit zur Auswahl. Sie können aus verschiedenen Site-Vorlagen wählen, die Sie unter den Produkteeinstellungen definieren. Sie haben die Möglichkeit, die Site-Vorlage, die sie unter dem ausgewählten Produkt wählen können, einzuschränken. Dadurch können Sie unterschiedliche Sets von Site-Vorlagen unter jedem Produkt haben, was ideal ist, um verschiedene Funktionen und Features für ein höherpreisiges Produkt hervorzuheben.
+In diesem Modus gibst du deinen Kunden während des Registrierungsprozesses eine Auswahl. Sie können aus verschiedenen Website-Vorlagen auswählen, die du in den Produkteinstellungen definierst. Du hast die Möglichkeit, die Website-Vorlagen einzuschränken, aus denen sie unter dem ausgewählten Produkt wählen können. So kannst du unter jedem Produkt unterschiedliche Gruppen von Website-Vorlagen haben, was ideal ist, um verschiedene Funktionen und Features für ein höherpreisiges Produkt hervorzuheben.
 
-Auf der **Edit Product**-Seite. Unter dem Abschnitt **Product Options** finden Sie die Registerkarte **Site template** und wählen die Option **Choose Available Site Template** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Site-Vorlagen angezeigt und Sie können die Site-Vorlage auswählen, die verfügbar sein soll. Sie können dies tun, indem Sie ihr Verhalten wählen: **Available**, wenn Sie möchten, dass die Site-Vorlage in der Liste enthalten ist. _**Not Available**_, wenn Sie möchten, dass die Site-Vorlage nicht als Option angezeigt wird. Und **Pre-selected**, wenn Sie möchten, dass eine der aufgeführten Site-Vorlagen als Standard ausgewählt ist.
+Auf der Seite **Produkt bearbeiten**. Suche im Abschnitt **Produktoptionen** den Tab **Website-Vorlage** und wähle die Option **Verfügbare Website-Vorlage auswählen** aus dem Dropdown-Feld. Dadurch wird die Liste der verfügbaren Website-Vorlagen angezeigt, und du kannst die Website-Vorlage auswählen, die verfügbar sein soll. Du kannst dies tun, indem du ihr Verhalten auswählst: **Verfügbar**, wenn die Website-Vorlage in die Liste aufgenommen werden soll. _**Nicht verfügbar**_, wenn die Website-Vorlage nicht als Option angezeigt werden soll. Und **Vorausgewählt**, wenn eine der aufgeführten Website-Vorlagen standardmäßig ausgewählt sein soll.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Verfügbare Website-Vorlagen mit Verhaltensoptionen auswählen](/img/config/product-site-templates.png)
 
-### Standardmodus: Auswahl der Site-Vorlage im Checkout-Formular
+### Standardmodus: Auswahl der Website-Vorlage im Checkout-Formular {#default-mode-site-template-selection-on-the-checkout-form}
 
-Wenn Sie möchten, dass alle Ihre Site-Vorlagen während der Registrierung verfügbar sind, oder wenn Sie es nicht bevorzugen, zusätzliche Arbeit zu leisten, um Site-Vorlagen unter jedem von Ihnen erstellten Produkt zuzuweisen oder festzulegen, können Sie einfach die Auswahl der Site-Vorlage unter Ihrem **Checkout Form** festlegen. Dazu gehen Sie zu **Ultimate Multisite > Checkout Forms**. Klicken Sie dann auf **Edit** unter dem Formular, das Sie konfigurieren möchten.
+Wenn du möchtest, dass alle deine Website-Vorlagen während der Registrierung verfügbar sind, oder vielleicht keine zusätzliche Arbeit damit haben möchtest, Website-Vorlagen unter jedem von dir erstellten Produkt zuzuweisen oder festzulegen. Dann kannst du die Auswahl der Website-Vorlage einfach in deinem **Checkout-Formular** festlegen. Gehe dazu zu **Ultimate Multisite > Checkout-Formulare** und klicke unter dem Formular, das du konfigurieren möchtest, auf **Bearbeiten**.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+Dies bringt dich zur Seite **Checkout-Formular bearbeiten**. Suche das Feld **Vorlagenauswahl** und klicke darunter auf **Bearbeiten**.
 
-Dies öffnet die Seite **Edit Checkout Form**. Finden Sie das Feld **Template Selection** und klicken Sie auf **Edit** darunter.
+Ein modales Fenster wird angezeigt. Unter dem Feld **Vorlagen-Websites** kannst du alle Website-Vorlagen auswählen und auflisten, die während der Registrierung verfügbar sein sollen. Die Website-Vorlagen, die du hier angibst, sind unabhängig davon verfügbar, welches Produkt der Benutzer ausgewählt hat.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![Vorlagenauswahlfeld im Bestellformular-Editor](/img/config/checkout-form-template-step.png)
 
-Ein Modal-Fenster erscheint. Unter dem Feld **Template Sites** können Sie alle Site-Vorlagen auswählen und auflisten, die während der Registrierung verfügbar sein sollen. Die von Ihnen hier angegebenen Site-Vorlagen sind unabhängig vom ausgewählten Produkt verfügbar.
+Im Frontend sehen Kunden die Vorlagenauswahl während des Bestellabschlusses und können das Startdesign für ihre neue Website auswählen.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Frontend-Vorlagenauswahl während der Registrierung](/img/config/frontend-template-chooser.png)
 
-### Site-Vorlagen-Optionen
+### Optionen für Website-Vorlagen {#site-template-options}
 
-Es gibt weitere Funktionen für Site-Vorlagen, die Sie unter den Ultimate Multisite-Einstellungen ein- oder ausschalten können.
+Es gibt weitere Funktionen für Website-Vorlagen, die du in den Einstellungen von Ultimate Multisite ein- oder ausschalten kannst.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Optionen für Website-Vorlagen in den Ultimate Multisite-Einstellungen](/img/config/settings-sites-templates-section.png)
 
-#### Template Switching erlauben
+#### Vorlagenwechsel erlauben {#allow-template-switching}
 
-Durch Aktivieren dieser Option können Ihre Kunden die von ihnen während des Anmeldevorgangs gewählte Vorlage nach der Erstellung des Kontos und der Website wechseln. Das ist aus Sicht des Kunden nützlich, da es ihnen ermöglicht, eine Vorlage erneut auszuwählen, wenn sie später feststellen, dass ihre ursprüngliche Wahl nicht die beste für ihre spezifischen Bedürfnisse war.
+Wenn du diese Option aktivierst, können deine Kunden die Vorlage, die sie während des Registrierungsprozesses ausgewählt haben, nach der Erstellung von Account und Website wechseln. Das ist aus Sicht eines Kunden nützlich, da es ihm ermöglicht, eine Vorlage erneut auszuwählen, wenn er später feststellt, dass seine ursprüngliche Wahl nicht die beste für seine speziellen Anforderungen war.
 
-#### Benutzern erlauben, ihre Website als Vorlagen zu verwenden
+#### Benutzern erlauben, ihre Website als Vorlagen zu verwenden {#allow-users-to-use-their-site-as-templates}
 
-Da Subsite-Benutzer Zeit damit verbracht haben, ihre eigene Website zu erstellen und zu gestalten, möchten sie sie möglicherweise klonen und als eine der Site-Vorlagen verwenden, die beim Erstellen einer weiteren Subsite in Ihrem Netzwerk verfügbar sind. Diese Option ermöglicht es ihnen, dies zu erreichen.
+Da Benutzer von Unterwebsites Zeit damit verbracht haben, ihre eigene Website zu erstellen und zu gestalten, möchten sie sie möglicherweise klonen und als eine der Website-Vorlagen verwenden, die beim Erstellen einer weiteren Unterwebsite in deinem Netzwerk verfügbar sind. Diese Option ermöglicht ihnen das.
 
-#### Medien bei Vorlagen-Duplikation kopieren
+#### Medien bei Vorlagenduplizierung kopieren {#copy-media-on-template-duplication}
 
-Durch Aktivieren dieser Option werden die auf der Vorlagen-Website hochgeladenen Medien in die neu erstellte Website kopiert. Dies kann für jeden Plan überschrieben werden.
+Wenn du diese Option aktivierst, werden die auf der Vorlagen-Website hochgeladenen Medien auf die neu erstellte Website kopiert. Dies kann in jedem der Tarife überschrieben werden.
 
-#### **Verhindern, dass Suchmaschinen Site-Vorlagen indexieren**
+#### **Verhindern, dass Suchmaschinen Website-Vorlagen indexieren** {#prevent-search-engines-from-indexing-site-templates}
 
-Site-Vorlagen, wie in diesem Artikel besprochen, sind Boilerplate, aber dennoch Teil Ihres Netzwerks, was bedeutet, dass sie für Suchmaschinen weiterhin auffindbar sind. Diese Option ermöglicht es Ihnen, die Site-Vorlagen zu verbergen, damit Suchmaschinen sie nicht indexieren.
+Website-Vorlagen, wie in diesem Artikel beschrieben, sind Grundgerüste, aber dennoch Teil deines Netzwerks, was bedeutet, dass sie für Suchmaschinen weiterhin auffindbar sind. Mit dieser Option kannst du die Website-Vorlagen ausblenden, sodass Suchmaschinen sie nicht indexieren können.
 
-## Vorbefüllung von Site-Vorlagen mit automatischem Suchen-und-Ersetzen
+## Website-Vorlagen per automatischem Suchen-und-Ersetzen vorbefüllen {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Eine der leistungsstärksten Funktionen von Ultimate Multisite ist die Möglichkeit, beliebigen Text, Farbe und Auswahlfelder zum Registrierungsformular hinzuzufügen. Sobald wir diese Daten erfasst haben, können wir sie verwenden, um den Inhalt bestimmter Teile der ausgewählten Site-Vorlage vorzufüllen. Wenn die neue Website veröffentlicht wird, ersetzt Ultimate Multisite die Platzhalter automatisch durch die tatsächlich während der Registrierung eingegebenen Informationen.
+Eine der leistungsstärksten Funktionen von Ultimate Multisite ist die Möglichkeit, beliebige Text-, Farb- und Auswahlfelder zum Registrierungsformular hinzuzufügen. Sobald wir diese Daten erfasst haben, können wir sie verwenden, um den Inhalt in bestimmten Bereichen der ausgewählten Website-Vorlage vorab zu befüllen. Wenn die neue Website dann veröffentlicht wird, ersetzt Ultimate Multisite die Platzhalter durch die tatsächlichen Informationen, die während der Registrierung eingegeben wurden.
 
-Beispielsweise, wenn Sie den Firmennamen des Endbenutzers während der Registrierung erfassen und automatisch auf der Startseite platzieren möchten. Auf der Startseite Ihrer Vorlagen-Website müssen Sie die Platzhalter hinzufügen, wie im Bild unten (Platzhalter sollten von doppelten geschweiften Klammern umgeben sein – {{placeholder_name}}).
+Wenn du beispielsweise während der Registrierung den Firmennamen deines Endbenutzers erfassen und den Firmennamen automatisch auf der Startseite einfügen möchtest. Auf der Startseite deiner Vorlagen-Website musst du die Platzhalter hinzufügen, wie im Bild unten gezeigt (Platzhalter sollten von doppelten geschweiften Klammern umgeben hinzugefügt werden – {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![Startseite mit Platzhaltertext in geschweiften Klammern](/img/config/site-templates-list.png)
 
-Dann können Sie einfach ein entsprechendes Registrierungsfeld in Ihrem Checkout-Formular hinzufügen, um diese Daten zu erfassen:
+Dann kannst du einfach ein passendes Registrierungsfeld in deinem Bestellformular hinzufügen, um diese Daten zu erfassen. Derselbe Bestellformular-Editor, der für die Vorlagenauswahl verwendet wird, lässt dich benutzerdefinierte Felder neben der Vorlagenauswahl platzieren:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Vorlagenauswahl und Registrierungsfelder im Bestellformular-Editor](/img/config/checkout-form-template-step.png)
 
-Ihr Kunde kann dieses Feld dann während der Registrierung ausfüllen.
+Dein Kunde kann dieses Feld dann während der Registrierung ausfüllen.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Frontend-Bestellformular mit Vorlagenauswahl](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite ersetzt die Platzhalter dann automatisch durch die vom Kunden bereitgestellten Daten.
 
-Ultimate Multisite ersetzt dann die Platzhalter automatisch durch die vom Kunden bereitgestellten Daten.
+![Platzhalter auf der Website durch Kundendaten ersetzt](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### Das Problem „Vorlage voller Platzhalter“ lösen {#solving-the-template-full-of-placeholders-problem}
 
-### Lösung des Problems „Vorlage voller Platzhalter“
+All das ist großartig, aber wir stoßen auf ein unschönes Problem: Unsere Website-Vorlagen – die von unseren Kunden besucht werden können – sind nun voller unschöner Platzhalter, die nicht viel aussagen.
 
-All das ist großartig, aber wir stoßen auf ein hässliches Problem: Unsere Site-Vorlagen – die von unseren Kunden besucht werden können – sind voller hässlicher Platzhalter, die wenig aussagen.
+Um das zu lösen, bieten wir die Möglichkeit, Platzhaltern Scheinwerte zuzuweisen, und wir verwenden diese Werte, um deren Inhalte auf den Vorlagen-Websites zu suchen und zu ersetzen, während deine Kunden sie besuchen.
 
-Um das zu lösen, bieten wir die Möglichkeit, gefälschte Werte für die Platzhalter festzulegen, und wir verwenden diese Werte, um deren Inhalte auf den Vorlagen-Websites zu suchen und zu ersetzen, während Ihre Kunden diese besuchen.
+Du erhältst Zugriff auf den Editor für Vorlagen-Platzhalter, indem du zu **Ultimate Multisite > Einstellungen > Websites** gehst und dann in der Seitenleiste auf den Link **Platzhalter bearbeiten** klickst.
 
-Sie können auf den Editor für Vorlagen-Platzhalter zugreifen, indem Sie zu **Ultimate Multisite > Settings > Sites** gehen und dann im Seitenmenü auf den Link **Edit Placeholders** klicken.
+![Einstellungen für Website-Vorlagen auf der Seite mit den Website-Einstellungen](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+Dadurch gelangst du zum Inhaltseditor der Platzhalter, in dem du Platzhalter und deren jeweilige Inhalte hinzufügen kannst.
 
-Damit gelangen Sie zum Inhalt-Editor der Platzhalter, in dem Sie Platzhalter und deren jeweiligen Inhalte hinzufügen können.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Einstiegspunkt des Inhaltseditors für Vorlagen-Platzhalter](/img/config/settings-sites-templates-section.png)

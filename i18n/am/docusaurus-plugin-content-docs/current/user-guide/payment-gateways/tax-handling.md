@@ -1,119 +1,120 @@
 ---
 title: የግብር አያያዝ
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# የግብር አያያዝ
+# የግብር አያያዝ {#tax-handling}
 
-Ultimate Multisite በዋናው plugin ውስጥ የግብር መሰብሰቢያ ሞጁል ስላለው፣ በፕላንዎ፣ በፓኬጅዎ እና በሰርቪስዎ ላይ የሽያጭ ግብር (sales taxes) መሰብሰብ ከፈለጉ፣ ምንም ተጨማሪ add-on መጫን ሳያስፈልግዎ በቀላሉ ማድረግ ይችላሉ።
+Ultimate Multisite በዋና plugin ውስጥ የተገነባ የግብር መሰብሰቢያ ሞጁል አለው፣ ስለዚህ በዕቅዶች፣ ጥቅሎች እና አገልግሎቶችዎ ላይ የሽያጭ ግብሮችን መሰብሰብ ካስፈለገዎት፣ ማንኛውንም ተጨማሪ ሞጁል መጫን ሳያስፈልግዎት በቀላሉ ማድረግ ይችላሉ።
 
-በአውሮፓ የሚገኙ ኩባንያዎችን ስንመለከት፣ የVAT (የተጨመረ ቀጥተኛ ግብር) ተገዢነትን በተሻለ ሁኔታ ለመደገፍ የሚያስችሉ መሳሪያዎችን እና ባህሪያትን የሚያጨምር **add-on** እናቀርባለን።
+በአውሮፓ ለሚገኙ ኩባንያዎች፣ የVAT ተገዢነትን በተሻለ ለመደገፍ መሣሪያዎችን እና ባህሪያትን የሚጨምር **ተጨማሪ ሞጁል** እናቀርባለን።
 
-Ultimate Multisite በኩል ለገበያ ባልሆነ አካል በኩል ግብሮችን አይሰበስብም ወይም አያስተላልፍም። እኛ የምናደርገው በግብይቱ ጊዜ ተገቢውን ግብር እንድትሰበስብ ብቻ መርዳት ነው። **ግብርን በራስዎ መክፈል አለብዎት።**
+Ultimate Multisite በእርስዎ ስም ለመንግሥት ግብሮችን አያስገባም ወይም አይከፍልም፤ እኛ በግብይቱ ጊዜ ተገቢውን ግብር እንዲሰበስቡ ብቻ እንረዳዎታለን። **አሁንም ግብሮችን በራስዎ መክፈል ያስፈልግዎታል።**
 
-## የግብር መሰብሰብን ማብቃት
+## የግብር መሰብሰብን ማንቃት {#enabling-tax-collection}
 
-የግብር መሰብሰብ በቅድፋት (default) አይበቃም። ለማብቃት፣ ወደ **Ultimate Multisite > Settings > Taxes** በመሄድ እና Enable Taxes የሚለውን ማዘጋጀት (toggle) መጫን አለብዎት።
+የግብር መሰብሰብ በነባሪነት አልተነቃም። ለማንቃት፣ ወደ **Ultimate Multisite > ቅንብሮች > ግብሮች** መሄድ እና Enable Taxes ቅንብርን ለማንቃት መቀያየር ያስፈልግዎታል።
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![በግብር ቅንብሮች ገጽ ከላይ ያለው Enable Taxes መቀያየሪያ](/img/config/settings-taxes-enable.png)
 
-የግብር ቅንብሮች ሙሉ እይታ እነሆ፦
+የግብር ቅንብሮች ገጽ ሙሉ እይታ ይህ ነው፦
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![የግብር ቅንብሮች ሙሉ ገጽ](/img/config/settings-taxes-full.png)
 
-የግብር ቅንብሮችን ለግለሰብ ምርቶችም ማየት ይችላሉ፦
+ለግለሰብ ምርቶች የግብር ቅንብሮችንም ማየት ይችላሉ፦
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![ለምርቶች የግብር ቅንብሮች](/img/config/settings-taxes.png)
 
-### በግብር ያልተካተተ vs. በግብር የተካተተ
+### ግብር ያልተካተተበት ከ ግብር የተካተተበት {#tax-excluded-vs-tax-included}
 
-በቅድፋት፣ ሁሉም የምርት ዋጋዎች በግብር ያልተካተቱ ናቸው። ይህ ማለት ግብሮች በምርት ዋጋ ውስጥ **አይካተቱም** ማለት ነው። አንድ ደንበኛ በየግዢው ላይ ግብር መክፈል እንዳለበት እናገኘዋለን፣ ግብሮችን ከጠቅላላው ዋጋ **በላይ** እናስቀምጣለን።
+በነባሪነት፣ የሁሉም ምርቶችዎ ዋጋዎች ግብር ያልተካተተባቸው ናቸው፣ ማለትም ግብሮች በምርቱ ዋጋ ውስጥ **አልተካተቱም**። ደንበኛ በተወሰነ ግዢ ላይ ግብር መክፈል እንዳለበት ከወሰንን፣ ግብሮቹን በንዑስ ድምሩ **ላይ ተጨማሪ** እንጨምራለን።
 
-ግብሮች በምርት ዋጋዎ ውስጥ እንዲካተቱ ከፈለጉ፣ **Inclusive Tax** የሚለውን ቅንብር በማብቃት ይህንን ማድረግ ይችላሉ።
+ግብሮች በምርትዎ ዋጋ ውስጥ እንዲካተቱ ከመረጡ፣ **Inclusive Tax** ቅንብርን በማንቃት ማድረግ ይችላሉ።
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![ከEnable Taxes ቅንብር በታች ያለው Inclusive Tax መቀያየሪያ ረድፍ](/img/config/settings-taxes-inclusive.png)
 
-የቀየሩትን ቅንብሮች ማስቀመጥ (save) አይርሱ።
+ያደረጉትን ለውጦች **ማስቀመጥ** አይርሱ።
 
 ###
 
-## የግብር መጠኖችን መፍጠር
+## የግብር ተመኖችን መፍጠር {#creating-tax-rates}
 
-የግብር መሰብሰብን ከaktyivate ካደረጉ በኋላ፣ በግብር መጠኖቻችን አርታኢ (tax rates editor) በመጠቀም ለተለያዩ ቦታዎች የግብር መጠኖችን መፍጠር ያስፈልግዎታል።
+የግብር መሰብሰብን ካነቁ በኋላ፣ የግብር ተመኖች አርታዒያችንን በመጠቀም ለተወሰኑ አካባቢዎች የግብር ተመኖችን መፍጠር ያስፈልግዎታል።
 
-በየግብር ቅንብሮች ገጽ በኩል ባለው የጎን አሞሌ (sidebar) ላይ ባለው **Manage Tax Rates** ቁልፍ በመጫን አርታኢውን መድረስ ይችላሉ።
+በግብር ቅንብሮች ገጽ የጎን አሞሌ ላይ ያለውን **የግብር ተመኖችን አስተዳድር** አዝራር በመጫን አርታዒውን መድረስ ይችላሉ።
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![በቅንብሮች ገጽ ላይ በግብር ተመኖች ፓነል ውስጥ ያለው የግብር ተመኖችን አስተዳድር አገናኝ](/img/config/settings-taxes-manage-rates.png)
 
-በየግብር መጠኖች አርታኢ ገጽ ላይ፣ በ**Add new Row** ቁልፍ በመጫን አዳዲስ የግብር መጠኖችን መጨመር ይችላሉ።
+በግብር ተመኖች አርታዒ ገጽ ላይ፣ **አዲስ ረድፍ ጨምር** አዝራርን በመጫን አዲስ የግብር ተመኖችን ማከል ይችላሉ።
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![ከላይ የአዲስ ረድፍ ጨምር አዝራር ያለው የግብር ተመኖች አርታዒ ሰንጠረዥ](/img/config/tax-rates-editor.png)
 
-እያንዳንዱን የግብር መጠን **ርዕስ** (በደረሰኝ ላይ ጥቅም ላይ ይውላል) መስጠት ያስፈልግዎታል። ከዚያም ይህ ግብር የሚሰበሰብበትን **ሀገር** (አስፈላጊ ነው)፣ **ክልል** እና **ከተማ** (ሁለቱም አማራጭ ናቸው) መምረጥ ይችላሉ። በመጨረሻም፣ **በፐርሰንት የግብር መጠን** ይጨምሩ።
+ለእያንዳንዱ የግብር ተመን **ርዕስ** (በኢንቮይሶች ላይ የሚጠቀም) መስጠት ያስፈልግዎታል። ከዚያ ይህ ግብር የሚከፈልበትን **አገር** (አስፈላጊ)፣ **ክልል፣** እና **ከተማ** (ሁለቱም አማራጭ) መምረጥ ይችላሉ። በመጨረሻ፣ **የግብር ተመን በመቶኛ** ያክሉ።
 
-### የግብር ምድቦች (Tax Categories)
+### የግብር ምድቦች {#tax-categories}
 
-የተለያዩ የግብር መጠኖችን ለመጨመር በርካታ የግብር ምድቦችን መፍጠር ይችላሉ።
+ለተለያዩ የምርቶች አይነቶች የተለያዩ የግብር ተመኖችን ለመጨመር፣ በርካታ የግብር ምድቦችንም መፍጠር ይችላሉ።
 
-ለመፍጠር ይጫኑ **Add new Tax Category**፣ ከዚያ የምድብዎን ስም ይጻፉ እና **Create** ይጫኑ።
+**አዲስ የግብር ምድብ ጨምር** ለማድረግ ይጫኑ፣ ከዚያ የምድብዎን ስም ይጻፉ እና **ፍጠር** ይጫኑ።
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![በግብር ተመኖች አርታዒ ከላይ ያለው አዲስ የግብር ምድብ ጨምር አዝራር](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![በምድብ መፍጠሪያ modal ውስጥ ያለው የግብር ምድብ ስም ግቤት መስክ](/img/config/tax-categories-create-modal.png)
 
-ምድቦችን ለማየት፣ **Switch** የሚለውን ይጫኑ እና አዳዲስ ግብሮችን ሊጨምሩበት የሚፈልጉትን ምድብ ይምረጡ።
+በምድቦች መካከል ለመመልከት፣ **ቀይር** ይጫኑ እና አዲስ ግብሮችን ማከል የሚፈልጉበትን ምድብ ይምረጡ።
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![በግብር ምድቦች መካከል ለመቀየር የቀይር dropdown አዝራር](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![ያሉትን ምድቦች የሚያሳይ የግብር ምድብ መምረጫ dropdown](/img/config/tax-categories-select.png)
 
-ለተወሰነ ምርት የግብር ምድብ ለማስቀመጥ፣ ወደ **Product edit page** በመሄድ እና ከዚያ ወደ Taxes ታብ መሄድ ይችላሉ።
+ወደ **የምርት አርትዖት ገጽ** እና ከዚያ ወደ ግብሮች ትር በመሄድ ለተወሰነ ምርት የግብር ምድቡን ማቀናበር ይችላሉ።
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![የምርት ግብሮች ትር ከግብር ምድብ እና taxable መቀያየሪያ ጋር](/img/config/product-taxes.png)
 
-በዚያው ስክሪን ላይ፣ Ultimate Multisite በዚያ በተሰጠው ምርት ግብር አለመሰብሰብ እንዳለበት ለማሳወቅ **Is Taxable?** የሚለውን ማዘጋጀት (toggle) ማጥፋት ይችላሉ።
+በዚያው ማያ ገጽ ላይ፣ Ultimate Multisite በዚያ ተወሰነ ምርት ላይ ግብሮችን መሰብሰብ እንደሌለበት እንዲያውቅ **Is Taxable?** መቀያየሪያውን ማጥፋት ይችላሉ።
 
-## የአውሮፓ VAT ድጋፍ
+## የአውሮፓ VAT ድጋፍ {#european-vat-support}
 
-ከዚህ በፊት እንደተጠቀሰው፣ በአውሮፓ VAT ደንቦች ምክንያት ተጨማሪ መስፈርቶች ላላቸው በEU የሚገኙ ደንበኞች የሚሆን add-on አለን።
+ቀደም ሲል እንደተጠቀሰው፣ በአውሮፓ VAT ደንቦች ምክንያት ተጨማሪ መስፈርቶች ላሏቸው በEU ውስጥ ላሉ ደንበኞች የሚገኝ ተጨማሪ ሞጁል አለን።
 
-የእኛ የVAT መሳሪያዎች በሚከተሉት ሁለት አስፈላጊ ነገሮች ይረዳሉ፦
+የVAT መሣሪያዎቻችን በጥቂት አስፈላጊ ነገሮች ይረዳሉ፦
 
-*   የEU የVAT መጠኖችን በቀላሉ መጫን፤
-*   የVAT ቁጥር መሰብሰብ እና ማረጋገጥ - እንዲሁም ለVAT ነፃ አካላት (እንደ ትክክለኛ የVAT ቁጥር ያላቸው ኩባንያዎች) የኋላ ክፍያ (reverse charging)።
+  * የEU VAT ተመኖችን በቀላሉ መጫን፤
 
-ይህንን add-on ለመጫን፣ ወደ **Ultimate Multisite > Settings** በመሄድ ከዚያም በጎን አሞሌ ላይ ባለው **Check our Add-ons** ሊንክ ላይ መጫን ይችላሉ።
+  * የVAT ቁጥር መሰብሰብ እና ማረጋገጥ - እና ከVAT ነፃ ለሆኑ አካላት (ለምሳሌ ትክክለኛ የVAT ቁጥር ያላቸው ኩባንያዎች) በተቃራኒ ማስከፈል፤
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+ያንን ተጨማሪ ሞጁል ለመጫን፣ ወደ **Ultimate Multisite > ቅንብሮች** ይሂዱ እና ከዚያ የጎን አሞሌውን **ተጨማሪ ሞጁሎቻችንን ይመልከቱ** አገናኝ ይጫኑ።
 
-ወደ የadd-ons ገጻችን ይላካሉ። እዚያም **Ultimate Multisite VAT add-on** መፈለግ እና መጫን ይችላሉ።
+![የቅንብሮች ገጽ የጎን አሞሌ ከተጨማሪ ሞጁሎቻችንን ይመልከቱ አገናኝ ጋር](/img/config/settings-taxes-addons-link.png)
+
+ወደ ተጨማሪ ሞጁሎቻችን ገጽ ይዛወራሉ። በዚያ፣ **Ultimate Multisite VAT ተጨማሪ ሞጁል** መፈለግ እና መጫን ይችላሉ።
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-ከዚያም፣ ወደ **Network Admin > Plugins** በመሄድ ያንን add-on በሁሉም የኔትወርክ ደረጃ ያንቁ።
+ከዚያ፣ ወደ **የኔትወርክ አስተዳዳሪ > ተሰኪዎች** ይሂዱ እና ያንን ተጨማሪ ሞጁል በመላው ኔትወርክ ያንቁ።
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-ወደ **Tax Settings tab** ከተመለሱ፣ አዳዲስ አማራጮች ታይ ይሆናል። አዲሱን የVAT መሳሪያ ለማብቃት **Enable VAT Support** የሚለውን አማራጭ ያዘጋጁ (toggle)። የቅንብሮችዎን ማስቀመጥ (save) አይርሱ!
+ወደ **የግብር ቅንብሮች ትር** ተመልሰው ከሄዱ፣ አዲስ አማራጮች እንደሚገኙ ያያሉ። አዲሶቹን የVAT መሣሪያዎች ለማንቃት **Enable VAT Support** አማራጭን ይቀያይሩ። ቅንብሮችዎን **ማስቀመጥ** አይርሱ!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### የVAT የግብር መጠኖችን መሳብ (Pulling)
+### የVAT ግብር ተመኖችን መሳብ {#pulling-on-vat-tax-rates}
 
-የእኛ ውህደት (integration) የሚጨምረው መሳሪያዎች አንዱ ለEU አባል ሀገራት የግብር መጠኖችን የመጫን ችሎታ ነው። ይህን ማድረግ የሚቻለው የEU VAT ድጋፍን ከaktyivate ካደረጉ በኋላ የግብር መጠኖች አርታኢ ገጽ በመጎብኘት ነው።
+ውህደታችን ከሚጨምራቸው መሣሪያዎች አንዱ ለEU አባል አገራት የግብር ተመኖችን የመጫን ችሎታ ነው። ይህ የEU VAT ድጋፍን ካነቁ በኋላ የግብር ተመኖች አርታዒ ገጽን በመጎብኘት ሊደረግ ይችላል።
 
-በገጹ ግርጌ፣ የVAT የመሳብ አማራጮችን ያያሉ። የጥቅም አይነት (rate type) በመምረጥ እና **Update EU VAT Rates** የሚለውን ቁልፍ በመጫን፣ የየEU አባል ሀገር የግብር መጠኖችን በራስ-ሰር የሚሞላውን ሰንጠረዥ ይጎትታል። ከዚያም፣ ማስቀመጥ (save) ብቻ ያስፈልግዎታል።
+በገጹ ታችኛው ክፍል፣ የVAT መሳቢያ አማራጮችን ያያሉ። የተመን አይነት መምረጥ እና **የEU VAT ተመኖችን አዘምን** አዝራርን መጫን ለእያንዳንዱ የEU አባል አገር የግብር ተመኖችን ይስባል እና ሰንጠረዡን በራስ-ሰር ይሞላል። ከዚያ፣ ማስቀመጥ ብቻ ያስፈልግዎታል።
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![በግብር ተመኖች አርታዒ ታችኛው ክፍል ያለው የEU VAT ተመኖችን አዘምን አዝራር](/img/config/tax-rates-vat-pull.png)
 
-ከመሳባቸው በኋላ እሴቶቹን ማርትዕ (edit) ይችላሉ። ይህን ለማድረግ፣ የሚያስፈልግዎትን የሰንጠረዥ መስመር ብቻ አርትዕ ያድርጉ እና አዲሱን እሴቶች ለማስቀመጥ ይጫኑ።
+ከሳቧቸው በኋላ እሴቶቹንም ማርትዕ ይችላሉ። ለማድረግ፣ በቀላሉ የሚያስፈልግዎትን የሰንጠረዥ መስመር ያርትዑ እና አዲሶቹን እሴቶች ለማስቀመጥ ይጫኑ።
 
-### የVAT ማረጋገጫ (VAT Validation)
+### የVAT ማረጋገጥ {#vat-validation}
 
-የVAT ድጋፍ ሲበቃ፣ Ultimate Multisite ከየሂሳብ አድራሻ (billing address) መስክ በታች በቼክአውት ቅጽ ላይ ተጨማሪ መስክ ይጨምራል። ይህ መስክ ለEU የሚገኙ ደንበኞች ብቻ ይታያል።
+የVAT ድጋፍ ሲነቃ፣ Ultimate Multisite በcheckout ቅጽ ላይ፣ ከክፍያ አድራሻ መስክ በታች፣ ተጨማሪ መስክ ያክላል። መስኩ በEU ውስጥ ለሚገኙ ደንበኞች ብቻ ይታያል።
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite ከዚያ የVAT ቁጥሩን ያረጋግጣል (validate)። እና ትክክለኛ ከሆነ፣ የኋላ ክፍያ ዘዴ (reverse charge mechanism) ይተገበራል እና የግብር መጠኑ በዚያ ትዕዛዝ ላይ ወደ 0% ይቀመጣል።
+Ultimate Multisite ከዚያ VAT Numberን ያረጋግጣል፣ እና ትክክለኛ መሆኑ ከተመለሰ፣ የreverse charge ስርዓቱ ይተገበራል እና በዚያ ትዕዛዝ ላይ የታክስ መጠን ወደ 0% ይቀናበራል።

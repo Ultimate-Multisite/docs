@@ -3,7 +3,7 @@ title: Ho lula le ho fana'a
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Tsela le litata le fano le lua o lona (Known incompatibilities with other Plugins)
+# Tsela le litata le fano le lua o lona (Known incompatibilities with other Plugins) {#known-incompatibilities-with-other-plugins}
 
 Ha o fana ua le Ultimate Multisite, e faka fa mafafio ka feta le plugins a le fano a le tsela.
 

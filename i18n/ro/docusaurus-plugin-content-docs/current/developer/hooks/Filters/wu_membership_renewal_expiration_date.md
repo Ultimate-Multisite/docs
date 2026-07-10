@@ -4,11 +4,11 @@ title: Filtru - wu_membership_renewal_expiration_date
 sidebar_label: wu_membership_renewal_expiration_date
 _i18n_hash: 607ec1f0ab833a4fd312f7c6b9e0182f
 ---
-# Filtru: wu_membership_renewal_expiration_date
+# Filtru: wu_membership_renewal_expiration_date {#filter-wumembershiprenewalexpirationdate}
 
 Filtrează data de expirare calculată pentru a fi setată după data de reînnoire.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Filtrează data de expirare calculată pentru a fi setată după data de reînno
 | $membership_id | `int` | ID-ul membrului. |
 | $membership | `\Membership` | Obiectul membrului. |
 
-### De la
+### De la {#since}
 
 - 2.0.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2192) la linia 2192

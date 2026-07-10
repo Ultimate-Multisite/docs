@@ -3,7 +3,7 @@ title: Yadda ake Shigar da WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# منشات ووردپرس مالتی‌سایت را چگونه نصب کنم؟
+# منشات ووردپرس مالتی‌سایت را چگونه نصب کنم؟ {#how-do-i-install-wordpress-multisite}
 
 ووردپرس مالتی‌سایت به شما اجازه می‌دهد یک شبکه از سایت‌ها را روی یک نصب واحد داشته باشید. این یک قابلیت داخلی است، اما به صورت پیش‌فرض فعال نیست.
 
@@ -98,9 +98,9 @@ Don ƙirƙirar subsite:
 
 Bayan ka cika duk makamakin, danna babban babban "Add site" button. B bayan an ƙirƙira subsite ɗinka na sabo, ka tafiya zuwa shi don tabbatar da cewa subsite ɗin yana aiki.
 
-## Matakan da suka fi faruwa:
+## Matakan da suka fi faruwa: {#add-a-trailing-slash-to-wp-admin}
 
-### 1\. Ina iya ƙirƙirar sabon shafuka amma ba za a samu damar shiga su ba.
+### 1\. Ina iya ƙirƙirar sabon shafuka amma ba za a samu damar shiga su ba. {#common-problems}
 
 Idan ka zaɓi subdomain, dole ne ka shirya wildcard subdomains don yanayin multisite ɗinka.
 

@@ -5,7 +5,7 @@ title: |+
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Maswali Anayohulikizwa
+# Maswali Anayohulikizwa {#frequently-asked-questions}
 
 Ndi zvinhu izvi zvinoreva **Maswali Anayohulikizwa** anozuva anonyanya kuita support requests.
 

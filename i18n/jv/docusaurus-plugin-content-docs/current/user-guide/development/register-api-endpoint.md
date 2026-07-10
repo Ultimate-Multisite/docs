@@ -3,7 +3,7 @@ title: Daftar Endpoint API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint Register API Ultimate Multisite
+# Endpoint Register API Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Ing tutorial iki, sampeyan bakal sinau kepiye carane nggunakake endpoint register API Ultimate Multisite kanggo nggawe proses onboarding lengkap kanggo pelanggan anyar ing jaringan sampeyan lan kepiye nindakake kuwi nganggo Zapier.
 
@@ -29,11 +29,11 @@ Pilih **Enable API** lan duweni API credentials sampeyan.
 
 Saiki, ayo kita eksplorasi endpoint lan banjur nggawe aksi registrasi ing Zapier.
 
-## Parameter body endpoint
+## Parameter body endpoint {#endpoint-body-parameters}
 
 Ayo deleng gambaran umum informasi minimum sing kudu kita kirim menyang endpoint. Ing akhir artikel iki, sampeyan bakal nemokake panggilan lengkapé.
 
-### Customer
+### Customer {#customer}
 
 Iki informasi sing dibutuhake kanggo proses nggawe User lan Pelanggan Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Mungkinkah ngirim ID pelanggan sing wis digawe ing jaringan sampeyan. Yen ora di
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Siji-sijine informasi sing kita butuh ing objek iki yaiku Status Keanggotaan (Membership Status).
 
 "membership" { "status" : "string", // salah siji saka "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Produk bakal diparingi array kanthi 1 utawa luwih ID produk saka jaringan sampeyan. Waspada, endpoint iki ora nggawe produk. Cek dokumentasi Ultimate Multisite kanggo mangerteni luwih apik babagan endpoint pembuatan produk.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Kaya karo Membership, kita mung butuh statusé.
 
 **"payment" { "status" : "string", // salah siji saka "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Lan kanggo nutup isi iki, kita butuh URL lan Judul situs ing objek Site.
 
@@ -69,13 +69,13 @@ Lan kanggo nutup isi iki, kita butuh URL lan Judul situs ing objek Site.
 
 Wangsulan saka endpoint register bakal dadi array kanthi informasi keanggotaan sing wis digawe anyar.
 
-## Nggawe aksi ing Zapier
+## Nggawe aksi ing Zapier {#creating-an-action-in-zapier}
 
 Kanthi kedadeyan endpoint pembuatan akun anyar lan luwih kuwat iki, sampeyan uga bisa ngakses aksi anyar ing Zapier.
 
 Sampeyan ngerti cara nggunakake lan ngrasakake kabeh sing ditawari versi anyar Zapier? Pelajari luwih akeh ing kene. (link?)
 
-### Nggawe aksi
+### Nggawe aksi {#creating-an-action}
 
 Supaya lu bisa ngerti cara nggunakake registration endpoint karo Zapier, ayo kita bikin integrasi nganggo Google Forms. Setiap kali form iki diisi lan informasine disimpen ing lembar jawaban form, anggota anyar bakal digawe ing jaringan Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Sa kabeh informasi wis diatur, lanjut menyang tes pungkasan. Ing layar paling ak
 
 Tes Zap anyar sampeyan lan kudu rampung kanthi sukses. Yen ana error, cek kabeh field lan yen wis dikirim bener durung. Amarga akeh banget informasine, ana bab-bab sing bisa ilang ora ketok.
 
-### Parameter endpoint lengkap
+### Parameter endpoint lengkap {#complete-endpoint-parameters}
 
 Iki conto panggilan lengkap lan kabeh kemungkinan field sing bisa dikirim.
 

@@ -3,11 +3,11 @@ title: Feedback tal-klijenti u rapport tal-problemi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback tal-Użu u Problemi
+# Feedback tal-Użu u Problemi {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 jiddeja sistema integrat għall-feedback u riport tal-problemi li jippermettix l-utenti finali li segnu risposte mhux utli u riportaw problemi dirett minn l-interface tal-chat. Dan is-sistema inkludi xogħol tal-ġestjoni tal-konsens (consent management), komandu ta riport automatiku, u triage assistiti mill-AI fuq il-backend.
 
-## Botton Tal-Thumbs-Down
+## Botton Tal-Thumbs-Down {#thumbs-down-button}
 
 Kulle messaggio li jinvita minn l-assistenti AI jiddeqi botton **thumbs-down** (👎). Meta l'utenti jiklikom fih, jistgħu segnu risposta bħala mhux utli jew it-tista.
 
@@ -15,7 +15,7 @@ Kulle messaggio li jinvita minn l-assistenti AI jiddeqi botton **thumbs-down** (
 - Meta jiklikom fih, jiftarraq il-**Feedback Consent Modal**.
 - Il-feedback jikeljuta mal-thread ta konversazzjoni u il-messaġġ speċifiku.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Meta l'utenti jiklikom fuq botton il-thumbs-down, jiftarraq modal tal-konsens qabel ma jkunx data turgħuta. Il-modal:
 
@@ -26,7 +26,7 @@ Meta l'utenti jiklikom fuq botton il-thumbs-down, jiftarraq modal tal-konsens qa
 
 Mell ma jkunx hemm konferma esplicita mill-utenti, la jikeljuta feedback.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 F'ikkkunt tal-konversazzjoni, l-assistenti jista' jiddeqi **auto-prompt feedback banner** — messaggio li ma jkunx intruzzjoni, jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' jista' j
 
@@ -36,7 +36,7 @@ F'ikkkunt tal-konversazzjoni, l-assistenti jista' jiddeqi **auto-prompt feedback
 
 Il-command `/report-issue` huwa disponibbli f kull mod ta chat (inline, widget flottant, full-screen).
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#report-issue-slash-command}
 
 Il-feedback li jkun msemmit jmur għall filiera tal-triage tal-AI li:
 

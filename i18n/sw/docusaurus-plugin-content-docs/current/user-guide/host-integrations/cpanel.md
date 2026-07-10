@@ -3,17 +3,17 @@ title: Uunganishaji wa cPanel
 sidebar_position: 5
 _i18n_hash: ba79fa3cffb0f29c4eda9bdf59244a2f
 ---
-# Uunganishaji wa cPanel
+# Uunganishaji wa cPanel {#cpanel-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 cPanel ni mojawapo ya paneli maarufu zaidi za kudhibiti huduma za hosting zinazotumiwa na watoa huduma wengi wa shared na dedicated hosting. Uunganishaji huu unawezesha usawazishaji wa kiotomatiki wa domains kati ya Ultimate Multisite na cPanel, kukuruhusu kuongeza domain aliases na subdomains kwenye akaunti yako ya cPanel kiotomatiki.
 
-## Vipengele
+## Vipengele {#features}
 - Uundaji wa kiotomatiki wa addon domain kwenye cPanel
 - Uundaji wa kiotomatiki wa subdomain kwenye cPanel (kwa usakinishaji wa subdomain multisite)
 - Kuondoa domain wakati mappings zinafutwa
 
-## Mahitaji
+## Mahitaji {#requirements}
 Constants zifuatazo lazima zielezwe kwenye faili yako ya `wp-config.php`:
 
 ```php
@@ -29,14 +29,14 @@ define('WU_CPANEL_PORT', 2083); // Chaguo-msingi ni 2083
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Chaguo-msingi ni /public_html
 ```
 
-## Maelekezo ya Usanidi
+## Maelekezo ya Usanidi {#setup-instructions}
 
-### 1. Pata Taarifa za Kuingia za cPanel
+### 1. Pata Taarifa za Kuingia za cPanel {#1-get-your-cpanel-credentials}
 
 1. Pata jina lako la mtumiaji na nenosiri la cPanel kutoka kwa mtoa huduma wako wa hosting
 2. Tambua host yako ya cPanel (kawaida ni `cpanel.yourdomain.com` au `yourdomain.com:2083`)
 
-### 2. Ongeza Constants kwenye wp-config.php
+### 2. Ongeza Constants kwenye wp-config.php {#2-add-constants-to-wp-configphp}
 
 Ongeza constants zifuatazo kwenye faili yako ya `wp-config.php`:
 
@@ -53,7 +53,7 @@ define('WU_CPANEL_PORT', 2083); // Badilisha ikiwa cPanel yako inatumia port tof
 define('WU_CPANEL_ROOT_DIR', '/public_html'); // Badilisha ikiwa document root yako ni tofauti
 ```
 
-### 3. Washa Uunganishaji
+### 3. Washa Uunganishaji {#3-enable-the-integration}
 
 1. Kwenye admin ya WordPress yako, nenda Ultimate Multisite > Settings
 2. Nenda kwenye kichupo cha "Domain Mapping"
@@ -61,9 +61,9 @@ define('WU_CPANEL_ROOT_DIR', '/public_html'); // Badilisha ikiwa document root y
 4. Washa uunganishaji wa cPanel
 5. Bofya "Save Changes"
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Wakati domain inaunganishwa kwenye Ultimate Multisite:
 
@@ -71,7 +71,7 @@ Wakati domain inaunganishwa kwenye Ultimate Multisite:
 2. Domain inasanidiwa kuelekeza kwenye directory yako kuu
 3. Wakati domain mapping inaondolewa, uunganishaji utaondoa addon domain kutoka cPanel
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Kwa usakinishaji wa subdomain multisite, wakati tovuti mpya inaundwa:
 
@@ -79,27 +79,27 @@ Kwa usakinishaji wa subdomain multisite, wakati tovuti mpya inaundwa:
 2. Inatuma ombi kwa API ya cPanel kuongeza subdomain
 3. Subdomain inasanidiwa kuelekeza kwenye directory yako kuu
 
-## Mambo Muhimu ya Kuzingatia
+## Mambo Muhimu ya Kuzingatia {#important-notes}
 
 - Uunganishaji unatumia API2 ya cPanel kuwasiliana na akaunti yako ya cPanel
 - Akaunti yako ya cPanel lazima iwe na ruhusa za kuongeza addon domains na subdomains
 - Watoa huduma wengine wa hosting wanaweza kuweka kikomo kwa idadi ya addon domains au subdomains unazoweza kuunda
 - Uunganishaji haushughulikii usanidi wa DNS; bado unahitaji kuelekeza domains zako kwa anwani ya IP ya seva yako
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 - Hakikisha kuwa jina lako la mtumiaji na nenosiri la cPanel ni sahihi
 - Angalia kuwa host yako ya cPanel ni sahihi na inapatikana
 - Hakikisha kuwa akaunti yako ya cPanel ina ruhusa zinazohitajika
 - Jaribu kutumia URL kamili kwa host (k.m., `https://cpanel.yourdomain.com`)
 
-### Domain Haijaongezwa
+### Domain Haijaongezwa {#domain-not-added}
 - Angalia kumbukumbu za Ultimate Multisite kwa ujumbe wowote wa hitilafu
 - Hakikisha kuwa domain haijaongezwa tayari kwenye cPanel
 - Hakikisha kuwa akaunti yako ya cPanel haijafikia kikomo chake cha addon domains au subdomains
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 - Uunganishaji haushughulikii utoaji wa vyeti vya SSL
 - Utahitaji kutumia zana za SSL/TLS za cPanel au kipengele cha AutoSSL kutoa vyeti vya SSL kwa domains zako
 - Vinginevyo, unaweza kutumia huduma kama Let's Encrypt pamoja na AutoSSL ya cPanel

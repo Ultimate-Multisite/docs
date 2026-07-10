@@ -4,17 +4,17 @@ title: Filter - wu_stripe_existing_plan_id
 sidebar_label: wu_stripe_existing_plan_id
 _i18n_hash: 153242c21b0a894c554c77872a96d1cd
 ---
-# Filtr: wu_stripe_existing_plan_id
+# Filtr: wu_stripe_existing_plan_id {#filter-wustripeexistingplanid}
 
 Yoxlanılacaq planın ID-sini filtr edir. Əgər bu ID mövcuddursa, yeni abunəlik bu planı istifadə edəcək.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Name | Type | Təsvir |
 |------|------|-------------|
 | $plan_id | `string` | Yoxlanılacaq Stripe planının ID-si. |
 | $membership_level | `object` | Üzvlük səviyyəsi obyekti. |
 
-### Mənbə
+### Mənbə {#source}
 
 2653-cü sətirdə [inc/gateways/class-base-stripe-gateway.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/gateways/class-base-stripe-gateway.php#L2653) yerləşdirilib.

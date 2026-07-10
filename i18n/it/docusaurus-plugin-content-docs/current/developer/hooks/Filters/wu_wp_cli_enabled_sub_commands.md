@@ -4,11 +4,11 @@ title: Filtro - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filtro: wu_wp_cli_enabled_sub_commands
+# Filtro: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Filtra i sub_commands abilitati per questa entità.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtra i sub_commands abilitati per questa entità.
 | $command_base | `string` | La base usata nel comando subito dopo la radice. |
 | $this | `\Base_Manager` | L'istanza dell'oggetto. |
 
-### Da
+### Da {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) alla riga 198

@@ -1,132 +1,148 @@
 ---
-title: Girişli Agentler
+title: Içindäki agentler
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Dahili Agentler
+# Içinde bar bolan agentler {#built-in-agents}
 
-Gratis AI Agent v1.9.0 beş dahili agent ile gelyir, her biri o sahnedeki yaygın görevlere uyğun bir araç seti, özel bir sistem promptu ve başlangıç önerileriyle önceden konfigüre edilmiştir. Agentler arasında geçiş yapmak asistanın ne yapabileceğini ve nasıl yanıt vereceğini değiştirir — bu sizin tarafınızdan herhangi bir yapılandırma gerektirmez.
+Gratis AI Agent v1.9.0 bäş sany içinde bar bolan agent bilen gelýär; olaryň hersi belli bir gurallar toplumy, ýöriteleşdirilen system prompt we şol ugurdaky umumy wezipelere laýyk başlangyç teklipler bilen öňünden sazlanan. Agentleriň arasynda geçmek kömekçiniň näme edip bilýändigini we nähili jogap berýändigini üýtgedýär — siziň tarapyňyzdan hiç hili sazlama gerek bolmazdan. Superdav AI Agent v1.18.0 degişli integrasiýalar sazlananda bu iş akymlaryna meýilnama bilen baglanyşykly gurallary, ýatlatma ýazgylaryny, tassyklama derwezelerini we SMS habarnamalaryny goşup biler.
 
-## Agent Nedir?
+## Agent näme? {#what-is-an-agent}
 
-Her agent, şunları birlik halinde getiren adlandırılmış bir yapı profili (configuration profile)dir:
+Her agent şu zatlary birleşdirýän atlandyrylan sazlama profilidir:
 
-- **Araçlar (Tools)** — agent'in çağırmasına izin verilen yetenekler (örneğin, Bir İçerik Yazarı gönderi oluşturma yeteneğine erişebilir; bir Tasarım Stüdyosu CSS ve theme.json yeteneklerine erişebilir).
-- **Sistem promptu** — agent'in tonunu, önceliklerini ve kısıtlamalarını belirleyen talimatlar.
-- **Öneriler (Suggestions)** — hızlıca başlamanı sağlamak için sohbet arayüzünde gösterilen önceden yazılmış promptlar.
+- **Gurallar** — agentiň çagyrmaga rugsat berlen ukyplary (meselem, Content Writer ýazgy döretmek ukyplaryna elýeterlidir; Design Studio CSS we theme.json ukyplaryna elýeterlidir)
+- **System prompt** — agentiň äheňini, ileri tutulýanlaryny we çäklendirmelerini kesgitleýän görkezmeler
+- **Teklipler** — çalt başlamaga kömek etmek üçin söhbet interfeýsinde görkezilýän öňünden ýazylan promptlar
 
-## Agent Seçicisini Kullanma
+## Agent saýlaýja girmek {#accessing-the-agent-picker}
 
-1. WordPress yönetim panelinin yan çubuğundaki **Gratis AI Agent** panelini açın.
-2. Sohbet başlığının sol üstündeki **agent simgesine** tıklayın (simge, aktif agent'i yansıtacak şekilde değişir).
-3. **Agent Seçicisi (Agent Picker)** bir form-tablo üst katmanı olarak açılır. Her agent, simgesi, adı ve tek satırlık açıklamasıyla listelenir.
-4. Aktif etmek için bir agent satırına tıklayın. Sohbet başlığı anında güncellenir.
+1. WordPress admin gapdal panelinde **Gratis AI Agent** panelini açyň.
+2. Söhbet sözbaşysynyň ýokarky çepindäki **agent nyşanyna** basyň (nyşan işjeň agente görä üýtgeýär).
+3. **Agent saýlaýjy** forma-jedwel örtügi hökmünde açylýar. Her agent öz nyşany, ady we bir setirlik düşündirişi bilen sanalýar.
+4. Ony işjeňleşdirmek üçin agent setirine basyň. Söhbet sözbaşysy dessine täzelenýär.
 
-Ayrıca konuşma sırasında bile agent değiştirebilirsiniz — yeni agent'in sistem promptu bir sonraki mesajdan itibaren geçerli olur.
+Şeýle hem gepleşigiň ortasynda agentleri çalşyp bilersiňiz — täze agentiň system prompt-y indiki habardan başlap güýje girýär.
 
-## Beş Dahili Agent
+## Bäş sany içinde bar bolan agent {#the-five-built-in-agents}
 
-### İçerik Yazarı (Content Writer)
+### Content Writer {#content-writer}
 
-**Odak:** Gönderi, sayfa ve iletişim formları oluşturmak ve düzenlemek.
+**Üns merkezi:** Ýazgylary, sahypalary we aragatnaşyk formalaryny döretmek we redaktirlemek.
 
-**Mevcut araçlar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Elýeterli gurallar:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Superdav AI Agent v1.18.0 integrasiýalary işledilen bolsa, sazlanan senenama konteksti, tassyklama derwezeleri, ýatlatmalar we SMS habarnama gurallary hem tassyklanan iş akymlary üçin elýeterli bolup biler.
 
-**Nereňi gowy edýär:**
-- Kämilmeje ýa-da skizmadan blog postlary taýýarlap we ýazmak
-- Täze sahypa üçin landing page-leri toparlaýjy (batch) döretmek
-- Kontakt we sorag formalary gurmak
-- URL ýa-da gözleg arkaly postlar üçin görkeziji suratları goýmak
+**Gowy ýerine ýetirýänleri:**
+- Gysgaça maglumatdan ýa-da meýilnamadan blog ýazgylaryny taslama etmek we çap etmek
+- Täze saýt üçin landing sahypalarynyň toplumlaryny döretmek
+- Aragatnaşyk we ýüz tutma formalaryny gurmak
+- URL ýa-da gözleg arkaly ýazgylara esasy suratlary bellemek
+- Sazlanan Google Calendar kontekstinden çäre boýunça dowamyndaky habarlary taslama etmek, soňra habarnamalary ibermezden öň tassyklama üçin saklanmak
 
-**Başlangyç maslahatlary:**
-- *WordPress multisite-ynda üstünlikleri barada 500 sözlük blog posty ýazyp görüň.*
-- *Hakykat, Hyzmatlar we Kontakt sahypasy döredip işlenip görüň.*
-- *Kontakt sahypasyna kitaphanany sorag formasy goýuň.*
-
----
-
-### Site Builder (Saýlaýjy)
-
-**Odaklanma:** Bir sora bilen dolandyryp web sahypa döretmek.
-
-**Görnüşi belli ediji gurulary:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Nereňi gowy edýär:**
-- Barada düşündirilen iş gurşawy üçin birnäçe aşaky döredilip web sahypa döretmek maslahatyny bermek
-- Her bir aşamany awtomatiki ýerine ýetirmek — gurluş, mazmun, navigasiýa, dizayn
-- Plan dowamynda ýumşakda bolan hasaplamalary (error) oňat çözmek we manual täsir talap etmeden çykyş almak
-- Döretme işi hasapyny döredip sahypa gurluş bilen goşmak
-- Gurluş boýunça maslahat berilen pluginleri goşmak
-
-**Başlangyç maslahatlary:**
-- *Galeri post turjasy, kitaphanany we kontakt formasy bilen surat görkeziji (photography portfolio) sahypa döredip görüň.*
-- *Onlaçma menýu, açylmaga çykaryş sagatları we stol goşmak sorag formasy bilen restoran sahypasy döredip görüň.*
-- *Hyzmat sahypalary, görkeziji bölümi we blog barada serişdeleri bilen freelance konsultasiýa sahypasy gurluň.*
-- *Site builder arkaly Kontakt sahypasyna kontakt formasy goşuň.*
+**Başlangyç teklipler:**
+- *WordPress multisite peýdalary barada 500 sözli blog ýazgysyny ýaz.*
+- *About, Services we Contact sahypalaryny döret we olary çap et.*
+- *Contact sahypasyna bronlama ýüz tutma formasyny goş.*
+- *Ertirki sazlanan senenama çäresindäki gatnaşyjylar üçin ýatlatmany taslama et we ony ibermezden öň tassyklama garaş.*
 
 ---
 
-### Design Studio (Dizayn Studisi)
+### Site Builder {#site-builder}
 
-**Odaklanma:** Görsel özelleşdirmek — reňkler, tipografiýa, CSS we blok ulgamlary.
+**Üns merkezi:** Bir prompt-dan başlap doly websaýt döretmek.
 
-**Mövcär ulgamlar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Elýeterli gurallar:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Superdav AI Agent v1.18.0 bilen, administratorlar olary işleden ýerlerinde sazlanan dolandyrylýan-hyzmat, tassyklama, ýatlatma, senenama we SMS gurallary elýeterli bolup biler.
 
-**Neleri gowy ededir:**
-- Adyryma tema presetlerini (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) ulama.
-- theme.json arkalykda global tipografik we reňk paletelerini sozlamak üçin.
-- Brand-a özülik üçin custom CSS ulama.
-- Bir sahany skrinshot almagy we dizayn meselelerini barlamak üçin ulama.
+**Gowy ýerine ýetirýänleri:**
+- Beýan edilen iş görnüşi üçin köp tapgyrly saýt gurmak meýilnamasyny döretmek
+- Her tapgyry özbaşdak ýerine ýetirmek — gurluş, mazmun, nawigasiýa, dizaýn
+- El bilen goşulyşmagy talap etmezden meýilnamanyň ortasynda ýüze çykan ýalňyşlyklardan dikeldilmek
+- Gurluşyň bir bölegi hökmünde maslahat berlen pluginleri gurnamak
+- Aragatnaşyk formalaryny göni söhbet interfeýsinden döretmek (Superdav AI Agent v1.10.0+)
+- Tassyklama derwezeleri we ýatlatma ýazgylary işledilende, gaýtalanýan habarnamalar bolmazdan, işe goýberiş ýatlatmalaryny ýa-da gatnaşyjylara dowamyndaky habarlary utgaşdyrmak
 
-**Başlangyjy maslahatlary:**
-- *warm-editorial presetini ulap, soňra birincil reňki #2d6a4f bilen sozlayn.*
-- *Homepage skrinshot almagy we neleri gowuldyrmagy aýtdyň.*
-- *Toýa (hero) blokny, doly giňişli fon suratyny we merkezlenip duran başlygy bilen ulanylyp biljek modeldir.*
-
----
-
-### Plugin Manager
-
-**Odak:** WordPress pluginlerini tapmak, ulaplamak we dolandyrady.
-
-**Mövcär ulgamlar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Neleri gowy ededir:**
-- Artdyrylan ulgam üçin iň gowy pluginini maslahat bermek.
-- Registryden ability paketlerini ulaplamak.
-- Ulga bölünip tapylýan ability katalogyny kategoriýalara görä gözden geçirmek.
-
-**Başlangyjy maslahatlary:**
-- *Üje (membership) direktori üçin iň gowy plugin näme?*
-- *WooCommerce ability paketini ulapla.*
-- *Mövcär ähli e-kommersiya ability paketlerini görke.*
+**Başlangyç teklipler:**
+- *Galereýa ýazgy görnüşi, bronlama sahypasy we aragatnaşyk formasy bolan fotografiýa portfolio saýtyny gur.*
+- *Onlaýn menýu, açylyş sagatlary we stol bronlama ýüz tutma formasy bolan restoran websaýtyny döret.*
+- *Hyzmat sahypalary, portfolio bölümi we blog bilen freelance maslahatçylyk saýtyny sazla.*
+- *Site builder ulanyp Contact sahypasyna aragatnaşyk formasyny goş.*
+- *Saýt işe goýberiş barlag sanawy tassyklanylandan soň, sazlanan gyzyklanýan tarap aragatnaşygyna SMS ýatlatma iber.*
 
 ---
 
-### Support Assistant
+### Design Studio {#design-studio}
 
-**Odak:** Sahany we sozlamalar barada soraglary jogaplamak, we WordPress konfigurasiýasy bilen baglanyşykda kömek etmek.
+**Üns merkezi:** Wizual şahsylaşdyrma — reňkler, tipografiýa, CSS we blok nagyşlary.
 
-**Mövcär ulgamlar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Elýeterli gurallar:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Nereňi gowy işledik:**
-- Aktual sayt sozlamalaryny we opsiyalaryny barlamak.
-- Saytdaky post türleri, taksonomiyalar we menyleri nerek görkezilýändigini düşündirmek.
-- Käbir sozlama näme etýär diýen soraglary ýaşaýan aralyk (live values) okap jogaplamak.
-- Üýtgeşmeler bermezden öwrenmek üçin okywardy diagnostika katlygy bolmak.
+**Gowy ýerine ýetirýänleri:**
+- Atlandyrylan theme deslapky sazlamalaryny ulanmak (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- theme.json arkaly global tipografiýany we reňk palitralaryny inçe sazlamak
+- Brende mahsus üýtgetmeler üçin ýörite CSS goşmak
+- Sahypanyň skrinşotyny almak we dizaýn meseleleri boýunça ony gözden geçirmek
 
-**Başlangyç maslahatlary:**
-- *Bu saytda şu wagt aktiw olan pluginler we sozlamalar nämelerdir?*
-- *Bu saytdaky ähli custom post türlerini listläp görkeziň.*
-- *Nereji navigasiýa menyleri bar, olar nirede ýerleşdirilipdir?*
+**Başlangyç teklipler:**
+- *warm-editorial deslapky sazlamasyny ulan, soňra esasy reňki #2d6a4f edip belle.*
+- *Baş sahypanyň skrinşotyny al we nämeleri gowulandyrjakdygyňy aýt.*
+- *Doly giňlikdäki fon suraty we merkezleşdirilen sözbaşy bilen gaýtadan ulanyp bolýan hero blok nagyşyny döret.*
+
+### Plugin Manager {#plugin-manager}
+
+**Üns merkezi:** WordPress pluginlerini tapmak, gurnamak we dolandyrmak.
+
+**Elýeterli gurallar:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Gowy ýerine ýetirýänleri:**
+- Beýan edilen ulanyş ýagdaýy üçin iň gowy plugini maslahat bermek
+- Reýestrden ability pack-lary gurnamak
+- Elýeterli ability katalogyny kategoriýa boýunça gözden geçirmek
+
+**Başlangyç teklipler:**
+- *Membership katalogy üçin iň gowy plugin haýsy?*
+- *WooCommerce abilities pack-y gurna.*
+- *Ähli elýeterli ecommerce ability pack-laryny görkez.*
 
 ---
 
-## Agentleri özelleşdirmek (Customising Agents)
+### Support Assistant {#support-assistant}
 
-Her bir goşmaýjy agenti `gratis_ai_agent_agents` filteri arkaly giňeltilip bilýär we ýa-da üýtgedilip bilýär.
+**Üns merkezi:** Saýt mazmuny, sazlamalar we WordPress konfigurasiýasy baradaky soraglara jogap bermek.
 
-### Bar bolan agente custom system prompt goşmak
+**Elýeterli gurallar:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Onuň gowy ýerine ýetirýänleri:**
+- Häzirki saýt sazlamalaryny we opsiýalaryny gözlemek
+- Saýtda haýsy ýazgy görnüşleriniň, taksonomiýalaryň we menýularyň sazlanandygyny düşündirmek
+- Janly bahalary okamak arkaly "bu sazlama näme edýär?" soraglaryna jogap bermek
+- Üýtgeşmeler girizmezden öň diňe okalýan diagnostika gatlagy bolup hyzmat etmek
+
+**Başlangyç teklipler:**
+- *Bu saýtda häzirki wagtda haýsy pluginler we sazlamalar işjeň?*
+- *Bu saýtda hasaba alnan ähli ýörite ýazgy görnüşlerini sanap ber.*
+- *Haýsy nawigasiýa menýulary bar we olar nirede bellenen?*
+
+---
+
+## Superdav awtomatlaşdyryş integrasiýalary {#superdav-automation-integrations}
+
+Superdav AI Agent v1.18.0 integrasiýalary sazlananda, içindäki agentler has howpsuz, tertipnama habarly awtomatlaşdyryş iş akymlaryna gatnaşyp biler:
+
+- **Google Calendar okamak gurallary** agentlere dowamyndaky işi taýýarlamazdan öň sazlanan kalendarlary we wakalary barlamaga mümkinçilik berýär.
+- **Kontakt we gatnaşyjy kartalaşdyrmasy** waka gatnaşyjylaryny WordPress ulanyjylary ýa-da belli kontaktlar bilen gabat getirmäge kömek edýär.
+- **Adam tassyklama derwezeleri** ygtyýarly ulanyjy olary gözden geçirip tassyklaýança duýgur hereketleri saklaýar.
+- **Ýatlatma ýazgylary** meýilleşdirilen işler gaýtadan synanyşanda ýa-da gaýtalananda dublikat bildirişleriň öňüni alýar.
+- **TextBee SMS bildirişleri** SMS maglumatlary we iş akymy rugsatlary işledilende diňe sazlanan tekst habarlaryny iberýär.
+
+Maslahat berilýän iş akymy: agentden habary ýa-da hereketi taýýarlamagy soraň, tassyklama haýyşyny gözden geçiriň, soňra tassyklanan hereketiň dowam etmegine rugsat beriň. Gaýtalanýan ýatlatmalar üçin ýatlatma deduplikasiýasyny işjeň saklaň, şonda şol bir waka ýa-da kontakt gaýta-gaýta habarly edilmez.
+
+---
+
+## Agentleri özleşdirmek {#customising-agents}
+
+Her bir içindäki agent `gratis_ai_agent_agents` filter arkaly giňeldilip ýa-da çalşyrylyp bilner.
+
+### Bar bolan agente ýörite ulgam görkezmesini goşmak {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,28 +153,28 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Täze agenti goşmak
+### Täze agenti hasaba almak {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
     $agents['seo-specialist'] = [
         'name'          => 'SEO Specialist',
-        'description'   => 'Post we səhifalaryny gözlegji ulgamlara optimallaşdyrmak.',
+        'description'   => 'Optimises posts and pages for search engines.',
         'icon'          => 'dashicons-search',
         'tools'         => [ 'get_option', 'set_option', 'create_post', 'update_post', 'list_post_types' ],
-        'system_prompt' => 'Sen SEO specialisti. Aýratynlykda agzalary optimallaşdyrmaga, meta deskripsiyalar we gurluşlu maglumatlary (structured data) üstünlik bermägi gerek.',
+        'system_prompt' => 'You are an SEO specialist. Focus on keyword optimisation, meta descriptions, and structured data.',
         'suggestions'   => [
-            'Homepage sanyny we meta deskripsiyasyny gözden geçiriň.',
-            'Soňky beş post üçin tytul tagini gowusdyrmak barada maslahat berişi.'
+            'Review the homepage title and meta description.',
+            'Suggest title tag improvements for the five most recent posts.',
         ],
     ];
     return $agents;
 } );
 ```
 
-Yeni agent filter işlenir işlenmeden Agent Picker'da görünýär.
+Täze agent filter işledilenden soň derrew Agent saýlaýjyda peýda bolýar.
 
-### Dahili agenti almak
+### Içindäki agenti aýyrmak {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

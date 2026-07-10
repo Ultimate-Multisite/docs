@@ -3,7 +3,7 @@ title: Bætur af medlemmi
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Afskráning lánæfis (v2)
+# Afskráning lánæfis (v2) {#canceling-a-membership-v2}
 
 _**VIÐVÖGUN: Þessi grein er tengd Ultimate Multisite útgáfu 2.x.**_
 

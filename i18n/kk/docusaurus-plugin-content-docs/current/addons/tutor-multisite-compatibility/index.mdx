@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite үйлесімділігі
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Multisite орталарында Tutor LMS үшін үйлесімділік түзетулерін қосатын WordPress plugin.
+
+## Сипаттама {#description}
+
+Бұл plugin Tutor LMS-ті WordPress multisite желілерінде іске қосуға арналған маңызды үйлесімділік түзетулерін қамтамасыз етеді. Ол пайдаланушыларды тіркеуді, нұсқаушыларды басқаруды, курс шектеулерін және multisite-қа тән басқа функционалдықты өңдейді.
+
+## Мүмкіндіктер {#features}
+
+- **Дерекқор кестелерін басқару**: Multisite сыртқы кілт шектеулеріне байланысты жасалмай қалған Tutor LMS кестелерін автоматты түрде анықтайды және жасайды
+- **Multisite пайдаланушыларын тіркеу**: Желі сайттары бойынша пайдаланушыларды тіркеуді басқаруға арналған арнайы AJAX өңдегіштері
+- **Нұсқаушы рөлін басқару**: Multisite орталарында нұсқаушы рөлін автоматты түрде тағайындау және басқару
+- **Курс шектеулері**: Сайт жоспарларына негізделген курс және funnel жасау шектеулерін басқару үшін Ultimate Multisite-пен интеграция
+- **Арнайы әкімші көріністері**: Multisite-ты ескеретін нұсқаушылар тізімі және басқару интерфейсі
+- **Әкімші құралдары**: Желі және сайт әкімшілеріне арналған дерекқорды басқару интерфейсі
+
+## Талаптар {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (`Requires Plugins` тақырыбы арқылы автоматты түрде міндеттеледі)
+- WordPress Multisite орнатылымы
+- Ultimate Multisite plugin (курс шектеулері функционалдығы үшін)
+
+## Орнату {#installation}
+
+1. Plugin файлдарын `/wp-content/plugins/tutor-multisite-compatibility/` ішіне жүктеңіз
+2. Tutor LMS орнатылғанына және белсендірілгеніне көз жеткізіңіз
+3. Plugin-ді WordPress ішіндегі 'Plugins' мәзірі арқылы белсендіріңіз
+4. Plugin Tutor LMS-пен автоматты түрде интеграцияланады
+
+## Файл құрылымы {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU plugin-нен көшірілген функционалдық {#functionality-moved-from-mu-plugin}
+
+Бұл plugin бұрын `wp-content/mu-plugins/daves.php` ішінде болған функционалдықты қамтиды:
+
+- Курс күйін өзгерту шектеулері
+- Курс жасау шектеулері
+- CartFlows интеграциясы және шектеулері
+- Tutor нұсқаушы рөлін басқару
+- Multisite пайдаланушыларын тіркеуді өңдеу
+- Курс өнімінің ID-ін көрсету
+
+## Дерекқорды басқару {#database-management}
+
+### Мәселе {#the-problem}
+
+WordPress multisite орталарында Tutor LMS кестелерін жасау users кестесіне сыртқы кілт шектеулері бар кестелер үшін сәтсіз аяқталады. Бұл келесі себептерге байланысты болады:
+
+- Сайтқа тән кестелер `wp_2_tutor_carts` сияқты префикстерді пайдаланады
+- Сыртқы кілттер `wp_2_users` кестесіне сілтейді (ол жоқ)
+- Нақты users кестесі — `wp_users` (бүкіл желі бойынша ортақ)
+
+### Шешім {#the-solution}
+
+Бұл plugin автоматты түрде:
+
+1. **Жетіспейтін кестелерді анықтайды**: Сыртқы кілт шектеулеріне байланысты жасалмай қалған кестелерді тексереді
+2. **Кестелерді дұрыс сілтемелермен жасайды**: Тиісті user кесте атауын пайдаланады (multisite ішінде `wp_users`)
+3. **Бірнеше сценарийді өңдейді**:
+   - Plugin-ді белсендіру/қайта белсендіру
+   - Желіде жаңа сайт жасау
+   - Әкімші интерфейсі арқылы кестелерді қолмен тексеру
+
+### Әсер ететін кестелер {#affected-tables}
+
+- `tutor_coupon_usages` - Users кестесіне сыртқы кілтті қамтиды
+- `tutor_carts` - Users кестесіне сыртқы кілтті қамтиды
+- `tutor_notification_preferences` - Users кестесіне сыртқы кілті бар TutorPro кестесі
+
+### Әкімші интерфейсі {#admin-interface}
+
+Дерекқорды басқару құралдарына мына жерден қол жеткізіңіз:
+
+- **Желі әкімшісі**: Settings → Tutor Multisite DB
+- **Сайт әкімшісі**: Tools → Tutor Multisite DB
+
+Интерфейс сізге мыналарды жасауға мүмкіндік береді:
+- Барлық сайттар бойынша жетіспейтін кестелерді көру
+- Кесте жасауды қолмен іске қосу
+- Дерекқор конфигурациясын тексеру
+- Егжей-тегжейлі күй ақпаратын көру
+
+## Қолдау {#support}
+
+Бұл plugin KursoPro платформасы үшін арнайы әзірленген. Техникалық қолдау алу үшін әзірлеу командасына хабарласыңыз.

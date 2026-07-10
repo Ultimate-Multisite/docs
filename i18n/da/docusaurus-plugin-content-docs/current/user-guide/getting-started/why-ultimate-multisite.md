@@ -3,11 +3,11 @@ title: Hvorfor Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Hvorfor Ultimate Multisite
+# Hvorfor Ultimate Multisite {#why-ultimate-multisite}
 
 Hvis du er kommet til denne artikel, har du sandsynligvis hørt, at vores plugin kan være løsningen på at realisere din forretningsidé. Vi håber, at du får de svar, du har brug for, når du er færdig med at læse dette.
 
-## Hvad er Ultimate Multisite?
+## Hvad er Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite er en WordPress Multisite plugin, der giver dig mulighed for at tilbyde kunder WaaS (Website as a Service). Med vores plugin kan du have forskellige abonnementsniveauer og få kunder til at betale dig et tilbagevendende gebyr for at have en side hostet i dit Multisite netværk.
 
@@ -15,7 +15,7 @@ Ultimate Multisite lader dig modtage dine betalinger via forskellige gateways (s
 
 Og det er kun begyndelsen, da du kan udvide dets funktioner med add-ons og webhooks.
 
-## Andre funktioner
+## Andre funktioner {#other-features}
 
 Ultimate Multisite tilbyder også:
 
@@ -33,11 +33,11 @@ Og mere avanceret stuff:
 
 * Søg- og Erstatnings API (Search and Replace API): Du kan også annotere sidetyper med placeholders som {{site_name}} og bruge Search and Replace API til automatisk at udfylde disse placeholders med information leveret af din kunde lige efter signup.
 
-## Anvendelsesmuligheder
+## Anvendelsesmuligheder {#use-cases}
 
 Nu er det tid til at se nogle af de mulige anvendelsesmuligheder for Ultimate Multisite.
 
-### Tilfælde 1: Et Agentur
+### Tilfælde 1: Et Agentur {#case-1-an-agency}
 
 Typisk ligger et agenturs kernekompetencer i design af hjemmesider med aspekter som deres hosting eller markedsføring, der er listet som yderligere tjenester.
 
@@ -47,7 +47,7 @@ Tæt kontrol over plugins og themes opretholdes på et pr. produkt-basis gennem 
 
 Agencies vil få ro i sindet med Ultimate Multisite, der lader dem gøre det bedst – design exceptionelle hjemmesider.
 
-### Tilfælde 2: Nicheudbyder
+### Tilfælde 2: Nicheudbyder {#case-2-niche-provider}
 
 Der er et gammelt ordsprog, der siger: "Gør én ting og gør den godt". For mange specialister betyder det at skabe et produkt eller en service omkring en enkelt kerneidé.
 
@@ -57,7 +57,7 @@ En af Ultimate Multisites innovative funktioner er en template site. Det betyder
 
 For en udbyder af niche-sider og -tjenester giver dette en uovertruffen fordel i evnen til øjeblikkeligt at skabe en side klar til brug med egne plugins og design. Kunden behøver kun give minimal input for at færdiggøre servicen.
 
-### Tilfælde 3: WordPress Webhosting
+### Tilfælde 3: WordPress Webhosting {#case-3-wordpress-web-hosting}
 
 Der er et utal af måder at hoste WordPress-sider på, men sjældent er det så simpelt som blot at tilbyde webplads til en kunde med en forinstalleret version af WordPress. Dette skyldes, at der skal komme en række beslutninger og overvejelser sammen for at levere en meningsfuld service.
 

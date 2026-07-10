@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Ofte stillede spørgsmål
+# Ofte stillede spørgsmål {#frequently-asked-questions}
 
 Her er nogle **Ofte stillede spørgsmål**, som ofte dukker op i supportanmodninger.
 

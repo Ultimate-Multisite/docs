@@ -3,7 +3,7 @@ title: Ho fanaetsa le ho fanaetsa
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Ho Hloboha le Ho Fetola (Export & Import)
+# Ho Hloboha le Ho Fetola (Export & Import) {#export--import}
 
 Kea re bua ka hore o fetolela le ho hloba data. Kea se tsoalo kae e le eng, ke tla go reka ka lina le lina.
 
@@ -33,7 +33,7 @@ Ho fetola data ke lefa le lehlopha ho ba le lehle:
 
 ***
 
-### Ho Hloba Data (Export)
+### Ho Hloba Data (Export) {#required-permissions}
 
 Ho hloba data ho batla hore u bone data ea hau ka morao. Kea se tsoalo kae e le eng, ke tla go reka ka lina le lina.
 
@@ -45,7 +45,7 @@ Ho hloba data ka lina le lina, u tla bona e le eng ka morao. Kea se tsoalo kae e
 
 ***
 
-### Ho Fetola Data (Import)
+### Ho Fetola Data (Import) {#exporting-a-site-to-a-zip}
 
 Ho fetola data ho batla hore u tsamaisa data ea hau ka platform a hau e fapaneng. Kea se tsoalo kae e le eng:
 
@@ -57,7 +57,7 @@ Ho fetole la WordPress ka data e fetileng.
 
 Ultimate Multisite 2.9.0 e ntse le **Export & Import** (Hlaka le Hlobo) se se fapaneng ka morao wa **Tools > Export & Import**. U sebelisa lehle seo u hloka ho ba leba site ya WordPress ka ZIP file, ho phela (restore) ZIP eona, kapa ho hloba site ho a mathata ka lefatshe la Ultimate Multisite le single-site WordPress.
 
-## Tlhaloso ea tsela e hlophisang
+## Tlhaloso ea tsela e hlophisang {#what-the-export-includes}
 
 Kea lebo la ho ba le litšomo tse hlophisang (Required permissions). Kea leba lehlopha la ho ba le litšomo tse hlophisang.
 
@@ -86,7 +86,7 @@ Ho fana'a (Export) site ho ZIP
 
 Ke fana ka ZIP le lona ka leka le lefetso. Ke hloka ho e tsamisa ka leka le lefetso le lefetso, le lefetso la sebopeletso, litaba tsa media, le code a tšoa.
 
-## Le fa ZIP efe le fetileng
+## Le fa ZIP efe le fetileng {#importing-a-site-from-a-zip}
 
 ZIP efe le fetileng ho ba le:
 
@@ -98,7 +98,7 @@ Ho fana ka metadata e o fetang ho fetola le site ea hau ka molao o tla hlokomela
 
 Sebaka sa lero la ZIP se fetoga ka lebaka la media, plugins le themes seo u fetang, le lero la tables ea database ea site.
 
-## Ho lapa le ho faka (Importing a site from a ZIP)
+## Ho lapa le ho faka (Importing a site from a ZIP) {#limitations-and-compatibility-notes}
 
 Ho faka lapa le fetola ka ZIP, ke tla re bolela hore na lefa sehlopha sehleletse. Ke tloha le seo u batlang ho faka.
 

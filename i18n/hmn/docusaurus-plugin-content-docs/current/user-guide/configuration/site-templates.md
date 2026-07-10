@@ -3,13 +3,13 @@ title: Tsem tsiab tsoom
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: This article refers to Ultimate Multisite version 2.x. If you are using version 1.x,**_ **see this article** _**.**_
 
 Thaob hmo ua hauv khiab chuul nrog Ultimate Multisite, peb tsis txhob ua kev txiav tlay txhua yam, thiab muaj qhov uas yuav tsum tsis txhob txhob rau peb cov neeg uas xav tsim cov wuv (websites) hauv peb network. Qhov tseem ceeb heev yog tias peb muaj kev hloov tshiab thiab muaj qhov uas peb cov neeg yuav thov txhawm tsis txhob txhob rau tsim cov wuv. Ib qho kev loj zoo tshaj hauv kev ua li ntawd yog siv kuv feature Ultimate Multisite Site Templates.
 
-## Site Template yog dab neeg?
+## Site Template yog dab neeg? {#what-is-a-site-template}
 
 Thaog uas peb hloov leej twg, Site Template yog ib qho wuv (boilerplate) site uas yuav tiv thaiv los tsim cov wuv tshiab hauv peb network.
 
@@ -17,7 +17,7 @@ No ceeb tias koj yuav tsum tsim ib qho wuv tiv thaiv, thov plugin tshiab, teb th
 
 Qhov ntawd zoo heev heev, tab sis kuv yuav tsum ua li cas los tsim site template tshiab? Qhov ntawd tseem tsis muaj qhia txawm.
 
-## Tsim thiab Ua lawm Site Template tshiab
+## Tsim thiab Ua lawm Site Template tshiab {#creating-and-editing-a-new-site-template}
 
 Site Templates yog ib qho wuv (site) baib yim hauv peb network. Hauv pe, koj yuav tsum mus rau **Network Admin > Ultimate Multisite > Sites > Add Site** uas yog los tsim template tshiab.
 
@@ -35,7 +35,7 @@ Form-tsh uaj tsis txhob tsis txhob, tam yuav paub **Copy Site** toggle switch ha
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Tsim siab ha cov ntaub (Contents) ntawm Site Template
+### Tsim siab ha cov ntaub (Contents) ntawm Site Template {#customizing-the-contents-of-a-site-template}
 
 Ua tsim siab site template zoo li cas, yuav tsis txhob ua li cas, yuav tsuas tsim lub dashboard panel ntawm nws thiab ua raws li yam u xav. Yuav tsim posts tshiab, pages, activate plugins, thiab ua ib tshiab theme. Thaum ntawd, koj tseem tuaj yeem mus rau Customizer thiab thov cov khoom tsim siab zoo li txhua yam.
 
@@ -43,11 +43,11 @@ Ua tsim siab site template zoo li cas, yuav tsis txhob ua li cas, yuav tsuas tsi
 
 Cov ntaub no yuav tsis txhob tsis txhob, thaum tus neeg u tsim site tshiab los ntawm Site Template ntawd.
 
-### Cov kev tsim siab tshaj (Advanced Options)
+### Cov kev tsim siab tshaj (Advanced Options) {#advanced-options}
 
 Thaum koj paub txog kev tsim siab tsis txhob zoo ib yam, koj yuav tuaj yeem siv Search and Replace API ntawm peb los tsim cov ntaub tshiab hauv site tshiab thaum nws tsim los. Yuav muaj utlạp rau qhov chaw sib txawv li tsim lub ntsiab lus zoo li tsim lub ntsiab lus ntawm tus neeg u siv hauv About page, tsim lub email contact hauv Contact page, txhua yam.
 
-### Siv Site Templates
+### Siv Site Templates {#using-site-templates}
 
 Ok, koj tsim site template no ntau loj ntau ntau nrog cov desain, themes thiab settings tshiab. Kuv yuav ua li cas los yog siv nws hauv peb network tamah?
 
@@ -59,7 +59,7 @@ Tsis txhob tsis txhob, yuav muaj dua raws li qhov uas koj tuaj yeem siv (tshiab 
 
   * Tso cai rau tus neeg u thov site templates txog tias nws xav los ua haujlwm thaum nws yuav rooj.
 
-#### Mode 1: Assign Site Template
+#### Mode 1: Assign Site Template {#mode-1-assign-site-template}
 
 ໃນໂໝດນີ້, ລູກຄ້າຂອງເຈົ້າຈະບໍ່ສາມາດເລືອກ template ເມື່ອເຂົາເຈົ້າສ້າງບັນຊີໄດ້, ແຕ່ເປັນເຈົ້າທີ່ຈະຕ້ອງກຳນົດວ່າ template ໃດຄວນຖືກໃຊ້ກັບແຜນ (Plan) ໃດໜຶ່ງ.
 
@@ -71,7 +71,7 @@ Tsis txhob tsis txhob, yuav muaj dua raws li qhov uas koj tuaj yeem siv (tshiab 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: ເລືອກ Site Template ທີ່ມີຢູ່
+#### Mode 2: ເລືອກ Site Template ທີ່ມີຢູ່ {#mode-2-choose-available-site-template}
 
 ໃນໂໝດນີ້, ເຈົ້າຈະໃຫ້ທາງເລືອກກັບລູກຄ້າໃນຂະນະທີ່ເຂົາເຈົ້າກຳລັງลงทะเบียน (sign-up). ເຂົາເຈົ້າຈະສາມາດເລືອກໄດ້ຈາກ site templates ແຕກຕ່າງກັນທີ່ເຈົ້າໄດ້ກຳນົດໄວ້ພາຍໃຕ້ການตั้งค่าຜະລິດຕະພັນ. ເຈົ້າຈະມີທາງເລືອກທີ່ຈະຈຳກັດ template site template ທີ່ເຂົາເຈົ້າສາມາດເລືອກໄດ້ພາຍໃຕ້ product ທີ່ຖືກເລືອກ. ສິ່ງນີ້ຈະຊ່ວຍໃຫ້ເຈົ້າສາມາດມີ set ຂອງ site templates ແຕກຕ່າງກັນພາຍໃຕ້ຜະລິດຕະພັນແຕ່ລະອັນ, ເຊິ່ງເໝາະສົມກັບການເນັ້ນໜັກເຖິງຟັງຊັນ ແລະ ຄຸນສົມບັດທີ່ແຕກຕ່າງກັນສຳລັບ product ທີ່ມີລາຄາສູງກວ່າ.
 
@@ -81,7 +81,7 @@ Tha koj thiaj mus rau **Edit Product** (Edit Product) page. Under section **Prod
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form
+### Default Mode: Site template selection on the Checkout form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Yog koj xav txhua site templates muaj los ntawm registration, lossis koj tsis xav ua khoom ntxiv hauv txhua product uas koj tsim. Yog li ntawd, koj yuav tso qhov chaw site template selection ib yam los ntawm **Checkout Form** (Checkout Form) ntawm koj. Los yog siv qhov no: mus rau **Ultimate Multisite > Checkout Forms** thiab thov tau click **Edit** hauv form uas koj xav tias yuav ua li.
 
@@ -95,29 +95,29 @@ Thaum muaj rau frontend (frontend), tus neeg uas raug checkout yuav hloov site t
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### ຕາໜ່າງແບບເວັບໄຊ (Site Template Options)
+### ຕາໜ່າງແບບເວັບໄຊ (Site Template Options) {#site-template-options}
 
 ມີຟັງຊັນຕາໜ່າງເວັບໄຊ ອື່ນໆທີ່ເຈົ້າສາມາດເປີດ ຫຼື បិទបានក្រោមការកំណត់ຂອງ Ultimate Multisite។
 
 ![site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### ປ່ອຍឱ្យប្តូរ Template (Allow Template Switching)
+#### ປ່ອຍឱ្យប្តូរ Template (Allow Template Switching) {#allow-template-switching}
 
 បើកជម្រើសនេះនឹងអនុញ្ញាតឱ្យអតិថិជនរបស់អ្នកអាចប្តូរ Template ដែលពួកគេជ្រើសរើសក្នុងអំឡុងពេលចុះឈ្មោះ បន្ទាប់ពីគណនី និងເວັບໄຊត្រូវបានបង្កើតរួច។ វារឿងល្អសម្រាប់អតិថិជនព្រោះវាអនុញ្ញាតឱ្យពួកគេជ្រើសរើស Template ម្ដងទៀត ប្រសិនបើក្រោយមកពួកគេដឹងថាជម្រើសដើមមិនសមស្របនឹងតម្រូវការជាក់លាក់របស់ពួកគេទេ។
 
-#### អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ប្រើ Site របស់ពួកគេជា template (Allow Users to use their Site as templates)
+#### អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់ប្រើ Site របស់ពួកគេជា template (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 ដោយសារតែអ្នកប្រើប្រាស់ subsite បានចំណាយពេលបង្កើត និងរចនាគេហទំព័ររបស់ពួកគេផ្ទាល់ ពួកគេអាចចង់ប្លុក (clone) ហើយប្រើវាជា Template មួយក្នុងចំណោម Template ដែលមាននៅពេលបង្កើត subsite ថ្មីនៅលើបណ្តាញរបស់អ្នក។ ជម្រើសនេះនឹងអនុញ្ញាតឱ្យពួកគេសម្រេចបាននូវរឿងនោះ។
 
-#### ចម្លង Media នៅពេលធ្វើការបិទបាំង Template (Copy Media on Template Duplication)
+#### ចម្លង Media នៅពេលធ្វើការបិទបាំង Template (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 ការធីកជម្រើសនេះនឹងចម្លង media ដែលបានបង្ហោះនៅលើ site template ទៅកាន់ site ដែលបង្កើតថ្មី។ រឿងនេះអាចត្រូវបាន Override (ផ្លាស់ប្តូរ) នៅលើផែនការនីមួយៗ។
 
-#### **ការពារ Search Engines មិនឱ្យធ្វើ Index Site Templates** (Prevent Search Engines from indexing Site Templates)
+#### **ការពារ Search Engines មិនឱ្យធ្វើ Index Site Templates** (Prevent Search Engines from indexing Site Templates) {#prevent-search-engines-from-indexing-site-templates}
 
 Site templates ដែលបានពិភាក្សានៅក្នុងអត្ថបទនេះ គឺជា boilerplate ប៉ុន្តែវានៅតែជាផ្នែកមួយនៃបណ្តាញរបស់អ្នក ដែលមានន័យថាវាអាចរកឃើញដោយ search engines បាន។ ជម្រើសនេះនឹងអនុញ្ញាតឱ្យអ្នកលាក់ site templates ដើម្បីឱ្យ search engines អាចធ្វើ Index ពួកវាបាន។
 
-## ការបំពេញ Site Templates ដោយស្វ័យប្រវត្តិជាមួយនឹង auto search-and-replace
+## ការបំពេញ Site Templates ដោយស្វ័យប្រវត្តិជាមួយនឹង auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite-a cej tsis muaj qhuas uej tsoom loj nrog qhuas uej, kuvj, thiab cov ntaub ntawv uas yuav tsum hauv registration form. Kuv sau ntaub ntawv no mus ua li, peb tuaj yeem siv nws los pre-populate cov ntaub ntawv hauv yam tsv raws li template uas tau txiav txim siab. Thaum tab tom muaj site tshiab ua online, Ultimate Multisite yuav thej txhua placeholder (tsoom) mus rau cov ntaub ntawv uas tau teb los thaum registration.
 
@@ -137,7 +137,7 @@ Ultimate Multisite yuav thej txhua placeholder mus rau cov ntaub ntawv uas neeg 
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Tsim cov "template muaj placeholder noj" zoo li cas?
+### Tsim cov "template muaj placeholder noj" zoo li cas? {#solving-the-template-full-of-placeholders-problem}
 
 Txhua yam no zoo heev, tab sis peb mus tau txog ib qho teeb meem uas tsis zoo: template site cua peb - uas neeg cua koj yuav rov los mus tsoom - muaj cov placeholder noj uas tsis hlub thiab tsis muaj yam uas hlub.
 

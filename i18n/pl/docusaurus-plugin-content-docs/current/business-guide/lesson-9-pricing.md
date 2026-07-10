@@ -3,17 +3,17 @@ title: 'Lekcja 9: Ceny dla zysku'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Lekcja 9: Cennik dla Zysku
+# Lekcja 9: Cennik dla Zysku {#lesson-9-pricing-for-profit}
 
 W Lekcji 5 ustaliliśmy początkowe ceny dla planów FitSite. Teraz dopracujemy strategię cenową, używając technik, które zwiększają przychody, zachęcają do ulepszeń i zmniejszają rezygnacje (churn).
 
-## Skąd zaczęliśmy
+## Skąd zaczęliśmy {#where-we-left-off}
 
 FitSite ma już gotowe plany, szablony, proces płatności (checkout), branding i proces wdrożenia (onboarding). Początkowe ceny wynosiły 49/99/199 USD miesięcznie. Teraz sprawimy, że te ceny będą pracować ciężej.
 
-## Zasady ustalania cen dla platform niszowych
+## Zasady ustalania cen dla platform niszowych {#pricing-principles-for-niche-platforms}
 
-### Cena na podstawie wartości, a nie kosztu
+### Cena na podstawie wartości, a nie kosztu {#price-on-value-not-cost}
 
 Twoje koszty hostingu mogą wynosić 5–15 USD za klienta. Nie oznacza to, że Twoja cena powinna wynosić 20 USD. Nie sprzedajesz hostingu. Sprzedajesz:
 
@@ -24,7 +24,7 @@ Twoje koszty hostingu mogą wynosić 5–15 USD za klienta. Nie oznacza to, że 
 
 Ustalaj cenę na podstawie wartości, jaką dostarczasz, a nie kosztu jej dostarczenia.
 
-### Kotwiczenie względem alternatyw
+### Kotwiczenie względem alternatyw {#anchor-to-alternatives}
 
 Kiedy właściciel studia fitness ocenia FitSite, porównuje go do:
 
@@ -34,7 +34,7 @@ Kiedy właściciel studia fitness ocenia FitSite, porównuje go do:
 
 Przy cenie 49–199 USD/miesiąc, FitSite jest tańszy niż developer, bardziej funkcjonalny niż ogólne konstruktory i nieskończenie lepszy niż brak strony internetowej.
 
-## Wdrażanie wariantów cenowych
+## Wdrażanie wariantów cenowych {#implementing-price-variations}
 
 Cennik roczny zachęca do zaangażowania i zmniejsza rezygnacje. Przejdź do zakładki **Price Variations** (Warianty cenowe) każdego planu i dodaj opcje roczne:
 
@@ -46,12 +46,12 @@ Cennik roczny zachęca do zaangażowania i zmniejsza rezygnacje. Przejdź do zak
 
 Dodaj pole **Period Selection** (Wybór okresu) do formularza płatności, aby klienci mogli przełączać się między rozliczeniem miesięcznym a rocznym. Zobacz [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Dlaczego cennik roczny działa
+### Dlaczego cennik roczny działa {#why-annual-pricing-works}
 
 - **Dla Ciebie**: Gotówka z góry, niższe rezygnacje (klienci płacący rocznie są mniej skłonni do anulowania w trakcie trwania umowy)
 - **Dla nich**: Realne oszczędności, przewidywalność budżetu
 
-## Opłaty za konfigurację (Setup Fees)
+## Opłaty za konfigurację (Setup Fees) {#setup-fees}
 
 Rozważ jednorazową opłatę za konfigurację dla planów, które obejmują ręczne ustawienia:
 
@@ -61,7 +61,7 @@ Rozważ jednorazową opłatę za konfigurację dla planów, które obejmują rę
 
 Skonfiguruj opłaty za konfigurację w sekcji cenowej każdego planu. Aby uzyskać szczegóły, zobacz [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product).
 
-## Okresy próbne (Trial Periods)
+## Okresy próbne (Trial Periods) {#trial-periods}
 
 Oferowanie okresu próbnego zmniejsza opór przy rejestracji, ale wprowadza ryzyko braku konwersji. Dla FitSite:
 
@@ -70,11 +70,11 @@ Oferowanie okresu próbnego zmniejsza opór przy rejestracji, ale wprowadza ryzy
 
 Skonfiguruj okres próbny w sekcji cenowej planu Starter, włączając przełącznik **Offer Trial** (Oferuj okres próbny) i ustawiając czas trwania na 7 dni.
 
-### Jak sprawić, by okresy próbne się zamieniły w płatność
+### Jak sprawić, by okresy próbne się zamieniły w płatność {#making-trials-convert}
 
 Okres próbny działa tylko wtedy, gdy klient odczuje wartość w trakcie tego okresu. Twoja sekwencja wdrożenia (Lekcja 8) jest tu kluczowa – e-maile powitalne powinny być zaplanowane tak, aby napędzać zaangażowanie w ciągu 7 dni.
 
-## Kody rabatowe (Discount Codes)
+## Kody rabatowe (Discount Codes) {#discount-codes}
 
 Utwórz strategiczne kody rabatowe do konkretnych celów:
 
@@ -88,7 +88,7 @@ Przejdź do **Ultimate Multisite > Discount Codes**, aby je utworzyć. Aby zapoz
 Zniżki powinny być strategicznymi narzędziami, a nie stałym elementem. Jeśli każdy otrzymuje zniżkę, nie jest to zniżka – to Twoja prawdziwa cena. Używaj ich do konkretnych kampanii, poleceń i promocji ograniczonych czasowo.
 :::
 
-## Obsługa podatków (Tax Handling)
+## Obsługa podatków (Tax Handling) {#tax-handling}
 
 Jeśli działasz w jurysdykcji, która wymaga poboru podatków:
 
@@ -98,7 +98,7 @@ Jeśli działasz w jurysdykcji, która wymaga poboru podatków:
 
 Aby uzyskać szczegółową konfigurację, zobacz [Tax Handling](/user-guide/payment-gateways/tax-handling). Jeśli obsługujesz klientów międzynarodowych, rozważ dodatek [VAT addon](/addons/vat) w celu zgodności z przepisami UE.
 
-## Przeglądanie cen
+## Przeglądanie cen {#reviewing-your-pricing}
 
 Po uruchomieniu, przeglądaj ceny kwartalnie. Zwróć uwagę na:
 
@@ -107,7 +107,7 @@ Po uruchomieniu, przeglądaj ceny kwartalnie. Zwróć uwagę na:
 - **Rezygnacje według planu (Churn by plan)**: Jeśli klienci roczni rezygnują rzadziej, mocniej promuj cennik roczny
 - **Ceny konkurencji**: Ile żądają alternatywy? Czy jesteś odpowiednio pozycjonowany?
 
-## Sieć FitSite do tej pory
+## Sieć FitSite do tej pory {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Gotowe do uruchomienia (następna lekcja)
 ```
 
-## Co zbudowaliśmy w tej lekcji
+## Co zbudowaliśmy w tej lekcji {#what-we-built-this-lesson}
 
 - **Cennik roczny** ze zniżką 20%, aby zachęcić do zaangażowania
 - **Opłaty za konfigurację** na wyższych poziomach, aby pokryć wysiłek wdrożeniowy

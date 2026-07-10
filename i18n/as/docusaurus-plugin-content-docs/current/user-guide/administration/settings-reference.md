@@ -1,26 +1,46 @@
 ---
-title: সেটিংস ৰেফৰেন্স
+title: ছেটিংছৰ সন্দৰ্ভ
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# সেটিংছৰ তথ্যকোষ
+# ছেটিংছ ৰেফাৰেন্স {#settings-reference}
 
-এই পৃষ্ঠাখনত সেইবোৰ সেটিংছৰ কথা উল্লেখ কৰা হৈছে যিয়ে Ultimate Multisite-ত দৈনন্দিন প্ৰশাসন আৰু শেহতীয়া আচৰণৰ পৰিৱৰ্তনসমূহক প্ৰভাৱিত কৰে।
+এই পৃষ্ঠাই Ultimate Multisite-ত দৈনন্দিন প্ৰশাসন আৰু শেহতীয়া আচৰণ পৰিৱৰ্তনত প্ৰভাৱ পেলোৱা ছেটিংছ অনুসৰণ কৰে।
 
-## আন বিকল্পসমূহ
+## অন্যান্য বিকল্পসমূহ {#other-options}
 
-**Other Options** অংশটো **Ultimate Multisite > Settings > Login & Registration** ত পোৱা যায়।
+**অন্যান্য বিকল্পসমূহ** অঞ্চলটো **Ultimate Multisite > Settings > Login & Registration**-ৰ অধীনত দেখা যায়।
 
-| সেটিং | বৰ্ণনা |
+| ছেটিং | বিৱৰণ |
 |---|---|
-| **Enable Jumper** | ই প্ৰশাসন অঞ্চলত Jumper quick navigation tool देखाउँछ। Ultimate Multisite স্ক্ৰীণ, নেটৱৰ্ক বস্তু আৰু সমৰ্থন কৰা প্ৰশাসন গন্তব্যস্থানলৈ পোনপটীয়াকৈ যোৱাৰ বাবে ই ব্যৱহাৰ কৰক। যদি আপুনি এই ছৰ্টকাটটো দেখা দিব বিচাৰिन्न, তেন্তে ইয়াক অক্ষম কৰক। |
+| **Jumper সক্ৰিয় কৰক** | প্ৰশাসন অঞ্চলত Jumper দ্ৰুত নেভিগেচন সঁজুলি দেখুৱায়। ইয়াক Ultimate Multisite স্ক্ৰীন, নেটৱৰ্ক অবজেক্ট, আৰু সমৰ্থিত প্ৰশাসন গন্তব্যলৈ পোনপটীয়াকৈ যাবলৈ ব্যৱহাৰ কৰক। এই চৰ্টকাট দৃশ্যমান হোৱাটো নিবিচাৰিলে ইয়াক নিষ্ক্ৰিয় কৰক। |
 
-## ভুল প্ৰতিবেদন আৰু টেলিমেট্ৰি
+## ত্ৰুটি ৰিপৰ্টিং আৰু টেলিমেট্ৰি {#error-reporting-and-telemetry}
 
-পূৰ্বৰ ভুল প্ৰতিবেদনৰ বাবে দিয়া অপ্ট-ইন সেটিংছটো সেটিংছ পৃষ্ঠাৰ পৰা আঁতৰাই দিয়া হৈছে। গোপনীয় টেলিমেট্ৰি (Anonymous telemetry) অক্ষম কৰা হৈছে আৰু ইয়াক সক্ষম কৰিবলৈ কোনো UI টগল নাই।
+পূৰ্বৰ ত্ৰুটি-ৰিপৰ্টিং opt-in ছেটিংটো ছেটিংছ পৃষ্ঠাৰ পৰা আঁতৰোৱা হৈছে। বেনামী টেলিমেট্ৰি নিষ্ক্ৰিয় কৰা হৈছে আৰু ইয়াক সক্ৰিয় কৰিবলৈ কোনো UI toggle নাই।
 
-যদি আপুনি সেটিংছ পৃষ্ঠাৰ বাবে কোনো আভ্যন্তৰীণ ৰানবুক (runbooks) বা স্ক্ৰিনশ্বট ৰখা কৰে, তেন্তে পুৰণি ভুল প্ৰতিবেদন অপ্ট-ইন ফিল্ডৰ উল্লেখবোৰ আঁতৰাই দিয়ক, যাতে প্ৰশাসকসকলে এনে কোনো সেটিং বিচাৰি নপৰে যিটো এতিয়া উপলব্ধ নহয়।
+যদি আপুনি ছেটিংছ পৃষ্ঠাৰ বাবে অভ্যন্তৰীণ runbooks বা screenshots ৰক্ষণাবেক্ষণ কৰে, পুৰণি ত্ৰুটি-ৰিপৰ্টিং opt-in field-ৰ উল্লেখ আঁতৰাওক যাতে প্ৰশাসকসকলে এতিয়া আৰু নথকা কোনো ছেটিং বিচাৰি নাথাকে।
 
-## ইমপৰ্ট/এক্সপৰ্ট সেটিংছ
+## Import/Export ছেটিংছ {#importexport-settings}
 
-**Import/Export** সেটিংছ টোৱে কোন সেটিংছ নিয়ন্ত্ৰণ কৰে তাৰ বৰ্ণনা দিয়ে আৰু সাইট আৰু নেটৱৰ্ক আৰকাাইভৰ বাবে ই **Ultimate Multisite > Site Export** লৈ পোনপটীয়া লিংক কৰে। ইমপৰ্ট/এক্সপৰ্ট কনফিগাৰেচনৰ বাবে সেটিংছ টোৱে ব্যৱহাৰ কৰক, একক-সাইট এক্সপৰ্ট/ইমপৰ্ট কাৰ্যপ্ৰবাহৰ বাবে **Tools > Export & Import** ব্যৱহাৰ কৰক, আৰু যেতিয়া আপোনাক এটা সম্পূৰ্ণ নেটৱৰ্ক এক্সপৰ্ট আৰকাাইভৰ প্ৰয়োজন হয়, তেতিয়া Site Export tool ব্যৱহাৰ কৰক।
+**Import/Export** ছেটিংছ টেবে ই কোনবোৰ ছেটিংছ নিয়ন্ত্ৰণ কৰে সেইটো বৰ্ণনা কৰে আৰু ছাইট আৰু নেটৱৰ্ক archive-ৰ বাবে পোনপটীয়াকৈ **Ultimate Multisite > Site Export**-লৈ link কৰে। import/export configuration-ৰ বাবে ছেটিংছ টেব ব্যৱহাৰ কৰক, single-site export/import workflow-ৰ বাবে **Tools > Export & Import** ব্যৱহাৰ কৰক, আৰু পূৰ্ণ Network Export archive প্ৰয়োজন হ’লে Site Export সঁজুলি ব্যৱহাৰ কৰক।
+
+## Domain Seller HostAfrica বেলেঞ্চ সতর্কবাণী {#domain-seller-hostafrica-balance-warning}
+
+Domain Seller addon HostAfrica-ৰ সৈতে সংযুক্ত থাকিলে, network administrators-এ এতিয়া reseller account balance নিৰ্ভৰযোগ্য domain registration বা renewal processing-ৰ বাবে অতি কম হ’লে dismissible balance-low warning দেখে।
+
+এই জাননীক operational warning হিচাপে বিবেচনা কৰক: অধিক paid domain registrations গ্ৰহণ কৰাৰ আগতে HostAfrica reseller balance top up কৰক, তাৰ পিছত registrations আৰু renewals স্বাভাৱিকভাৱে চলি থাকিব পাৰে বুলি নিশ্চিত কৰিবলৈ Domain Seller settings বা domain-monitoring screen-লৈ উভতি যাওক।
+
+## AI provider connector ছেটিংছ {#ai-provider-connector-settings}
+
+AI provider connector ছেটিংছে এতিয়া কেৱল সমৰ্থিত OAuth account pools-হে দেখুৱায়:
+
+| Provider | Setup flow |
+|---|---|
+| **Anthropic Max** | OAuth button-ৰ সৈতে এটা বা ততোধিক Anthropic Max accounts সংযোগ কৰক। sandboxed browser-এ redirect স্বয়ংক্ৰিয়ভাৱে সম্পূৰ্ণ কৰিব নোৱাৰিলে manual OAuth fallback ব্যৱহাৰ কৰক। |
+| **OpenAI ChatGPT/Codex** | একে OAuth pool workflow-ৰ জৰিয়তে ChatGPT accounts সংযোগ কৰক। account সংযুক্ত হোৱাৰ পিছত connector-supported operations-এ ChatGPT Codex tool calls ব্যৱহাৰ কৰিব পাৰে। |
+| **Google AI Pro** | OAuth-ৰ জৰিয়তে Google AI Pro accounts সংযোগ কৰক, তাৰ পিছত account list তৎক্ষণাত update নহ’লে connector refresh কৰক। |
+
+Cursor Pro আৰু সমৰ্থিত provider নহয়। Cursor Pro setup fields বা connector paths উল্লেখ কৰা পুৰণি internal screenshots, runbooks, বা onboarding steps আঁতৰাওক।
+
+provider accounts যোগ বা আঁতৰোৱাৰ সময়ত, refresh বা delete কৰা account-ৰ বাবে এটা valid email address দিয়ক আৰু connector-backed operations পৰীক্ষা কৰাৰ আগতে provider settings save কৰক।

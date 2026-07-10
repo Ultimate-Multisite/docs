@@ -3,7 +3,7 @@ title: Жамаат
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Ultimate Multisite Курумунасында кантип катышуу керек
+# Ultimate Multisite Курумунасында кантип катышуу керек {#how-to-join-ultimate-multisite-community}
 
 Ultimate Multisite Community — бул сиз башка Ultimate Multisite колдонуучулары менен байланышып, кеңештерди, тажрыйбаларды жана баалуу маалыматтарды бөлүшө ала турган жер. Ultimate Multisite Community'ге кирүү үчүн https://community.ultimatemultisite.com/home дарегине барыңыз.
 

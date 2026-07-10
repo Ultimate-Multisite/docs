@@ -4,19 +4,19 @@ title: Filtrační hook - wp_should_rescue_orphaned_sites
 sidebar_label: wp_should_rescue_orphaned_sites
 _i18n_hash: 81974ce2b5c3b74096701e83fb0ffff2
 ---
-# Filter: wp_should_rescue_orphaned_sites
+# Filter: wp_should_rescue_orphaned_sites {#filter-wpshouldrescueorphanedsites}
 
 Určuje, zda by měly být záchraněny opuštěné lokace.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
 | $should | `bool` | Zda by měly být záchraněny opuštěné lokace. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L637) na řádku 637

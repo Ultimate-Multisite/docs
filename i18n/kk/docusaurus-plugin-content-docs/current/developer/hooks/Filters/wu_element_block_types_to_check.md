@@ -1,0 +1,19 @@
+---
+id: wu_element_block_types_to_check
+title: Сүзгі - wu_element_block_types_to_check
+sidebar_label: wu_element_block_types_to_check
+_i18n_hash: e2c4dcc1f01621eb3cfadfdaf1a56e95
+---
+# Сүзгі: wu_element_block_types_to_check {#filter-wuelementblocktypestocheck}
+
+Кейін қосымша блоктарды қосуымыз қажет болуы мүмкін.
+
+### Бастап {#since}
+
+- 2.0.0
+### Дереккөзі {#source}
+
+[`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L300) ішінде 300-жолда анықталған
+
+
+## Қайтарады {#returns}

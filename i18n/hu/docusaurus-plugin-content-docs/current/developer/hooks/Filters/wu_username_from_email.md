@@ -4,11 +4,11 @@ title: Szűrő - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# Szűrő: wu_username_from_email
+# Szűrő: wu_username_from_email {#filter-wuusernamefromemail}
 
 Szűrőként használható a vásárló felhasználónévének meghatározásához.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -17,9 +17,9 @@ Szűrőként használható a vásárló felhasználónévének meghatározásáh
 | $new_user_args | `array` | Új felhasználó paraméterek tömbje, tartalmazhatja az első és utolsó nevet is. |
 | $suffix | `string` | Megadott szöveg, amit a felhasználónévhez adhatunk, hogy egyedi legyen. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definíciója található [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) fájlban, 516-sorban.

@@ -3,17 +3,17 @@ title: Recherche Internet
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Recherche Internet
+# Recherche Internet {#internet-search}
 
 Gratis AI Agent v1.5.0 ajoute une capacité de **Recherche Internet** qui permet à l'assistant IA de récupérer des informations actualisées sur le web pendant une conversation. Cette fonctionnalité est alimentée par l'API [Brave Search](https://brave.com/search/api/) ou l'API [Tavily](https://tavily.com/).
 
-## Comment ça fonctionne
+## Comment ça fonctionne {#how-it-works}
 
 Lorsque la recherche Internet est activée, l'assistant peut interroger automatiquement votre fournisseur de recherche configuré lorsqu'il détermine qu'une question nécessite des informations actuelles ou externes — par exemple, des nouvelles récentes, des prix en temps réel ou une documentation qui aurait pu changer depuis la date de coupure de formation du modèle.
 
 Les résultats sont récupérés en temps réel et injectés dans le contexte de l'assistant avant qu'il ne génère une réponse. L'assistant indique qu'il a utilisé des résultats de recherche pour répondre à une question.
 
-## Activer la Recherche Internet
+## Activer la Recherche Internet {#enabling-internet-search}
 
 La recherche Internet nécessite une clé API de votre fournisseur de recherche choisi. Pour la configurer :
 
@@ -24,35 +24,35 @@ La recherche Internet nécessite une clé API de votre fournisseur de recherche 
 
 Une fois la clé enregistrée, la capacité de Recherche Internet est automatiquement disponible pour l'assistant.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Obtenir une clé API Brave Search
+### Obtenir une clé API Brave Search {#obtaining-a-brave-search-api-key}
 
 1. Visitez la [page Brave Search API](https://brave.com/search/api/).
 2. Inscrivez-vous à un forfait. Un niveau gratuit est disponible avec une limite de requêtes mensuelle.
 3. Copiez votre clé API depuis le tableau de bord développeur de Brave Search.
 4. Collez-la dans le champ **Brave Search API Key** des paramètres de Gratis AI Agent.
 
-### Limites d'utilisation
+### Limites d'utilisation {#usage-limits}
 
 L'utilisation est facturée par Brave Search en fonction du nombre de requêtes effectuées. Chaque réponse IA qui déclenche une recherche compte comme une requête. Surveillez votre utilisation sur le [tableau de bord développeur Brave Search](https://brave.com/search/api/) pour éviter des frais inattendus.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0 ajoute **Tavily** comme fournisseur de recherche Internet alternatif, offrant des résultats de recherche plus riches et des capacités de recherche avancées.
 
-### Obtenir une clé API Tavily
+### Obtenir une clé API Tavily {#obtaining-a-tavily-api-key}
 
 1. Visitez la [page Tavily API](https://tavily.com/).
 2. Créez un compte. Un niveau gratuit est disponible avec une limite de requêtes mensuelle.
 3. Copiez votre clé API depuis le tableau de bord Tavily.
 4. Collez-la dans le champ **Tavily API Key** des paramètres de Gratis AI Agent.
 
-### Limites d'utilisation
+### Limites d'utilisation {#usage-limits-1}
 
 L'utilisation est facturée par Tavily en fonction du nombre d'appels API effectués. Chaque réponse IA qui déclenche une recherche compte comme un appel. Surveillez votre utilisation sur le [tableau de bord Tavily](https://tavily.com/) pour éviter des frais inattendus.
 
-## Désactiver la Recherche Internet
+## Désactiver la Recherche Internet {#disabling-internet-search}
 
 Supprimez la clé API du champ du fournisseur de recherche actif et enregistrez. La capacité de Recherche Internet ne sera plus proposée à l'assistant.
 

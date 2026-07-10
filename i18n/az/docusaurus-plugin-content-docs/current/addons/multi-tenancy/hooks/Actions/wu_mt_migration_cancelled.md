@@ -4,19 +4,19 @@ title: Hərəkət - wu_mt_migration_cancelled
 sidebar_label: wu_mt_migration_cancelled
 _i18n_hash: 315390b7190dab27f6ca16a6eff5e407
 ---
-# Action: wu_mt_migration_cancelled
+# Action: wu_mt_migration_cancelled {#action-wumtmigrationcancelled}
 
 Bir miqrasiya ləğv edildikdə işə düşür.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $job | `\Migration_Job` | Ləğv edilmiş miqrasiya işi. |
 
-### Since
+### Since {#since}
 
 - 1.0.0
-### Source
+### Source {#source}
 
 [`inc/migration/class-migration-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-migration-manager.php#L765) faylında 765-ci sətirdə təyin edilmişdir.

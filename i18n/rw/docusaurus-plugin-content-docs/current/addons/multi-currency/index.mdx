@@ -1,0 +1,117 @@
+---
+title: Amafaranga y’ubwoko bwinshi
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multi-Currency {#multi-currency}
+
+Ultimate Multisite: Multi-Currency ituma urusobe rwawe rwemera ubwishyu mu mafaranga menshi atandukanye. Ihindura ibiciro mu yandi mafaranga mu buryo bwikora ikoresheje ibipimo by'ivunjisha bya live cyangwa ibyanditswe n'intoki, ikakwemerera gushyiraho ibiciro nyabyo kuri buri gicuruzwa mu ifaranga iryo ari ryo ryose, kandi ikamenya ifaranga buri mushyitsi akunda ikoresheje geolocation — byose bigacungirwa muri Dashboard imwe y'ubuyobozi.
+
+## Ibiranga by'ingenzi {#key-features}
+
+- **Guhindura ibiciro hifashishijwe igipimo cy'ivunjisha mu buryo bwikora** — ibiciro bihindurwa bivuye mu ifaranga ryawe shingiro hakoreshejwe ibipimo byakuwe ku mutanga serivisi wahisemo
+- **Gusimbuza ibiciro kuri buri gicuruzwa** — shyiraho ibiciro nyabyo byihariye ku ifaranga ku gicuruzwa icyo ari cyo cyose kugira ngo wirengagize ihindura ryikora
+- **Umwanya wo guhitamo ifaranga mu kwiyandikisha** — utuma abakiriya bahitamo ifaranga bakunda mu gihe cyo kwishyura/kwiyandikisha
+- **Abatanga ibipimo by'ivunjisha benshi** — ECB, Frankfurter, Stripe, cyangwa ibipimo byandikwa n'intoki byuzuye
+- **Kumenya ifaranga hashingiwe kuri geolocation** — bihita bihitamo mbere ifaranga rihuye n'igihugu cy'umushyitsi
+- **Dashboard y'ubuyobozi** — cunga amafaranga akoreshwa, ibipimo by'ivunjisha, n'igenamiterere ry'abatanga serivisi ahantu hamwe
+
+## Ibisabwa {#requirements}
+
+- Ultimate Multisite 2.0.0 cyangwa irenga
+- Ishyirwamo rya WordPress Multisite
+- PHP 7.4 cyangwa irenga
+
+## Gushyiramo {#installation}
+
+1. Ohereza dosiye z'icomekwamo kuri `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Koresha icomekwamo unyuze kuri ecran ya **Amacomekwamo** muri WordPress (Gukoresha ku Rusobe)
+3. Jya kuri **Ultimate Multisite → Multi-Currency** kugira ngo ufungure Dashboard y'ubuyobozi
+4. Ongeramo amafaranga ushaka kwemera kandi utunganye umutanga serivisi w'ibipimo by'ivunjisha
+
+## Igenamiterere {#configuration}
+
+### Dashboard y'ubuyobozi {#admin-dashboard}
+
+Dashboard y'ubuyobozi ya Multi-Currency (**Ultimate Multisite → Multi-Currency**) ni ahantu h'ibanze ho:
+
+- Kongeramo, gukoresha, cyangwa guhagarika amafaranga
+- Guhitamo umutanga serivisi w'ibipimo by'ivunjisha no kuvugurura ibipimo igihe ubisabye
+- Gusuzuma ibipimo biriho by'amafaranga yose akoreshwa
+- Gushyiraho ibipimo byandikwa n'intoki igihe abatanga serivisi bikora badakwiriye
+
+### Abatanga ibipimo by'ivunjisha {#exchange-rate-providers}
+
+| Utanga serivisi | Ibisobanuro |
+|---|---|
+| **ECB** | European Central Bank — ibipimo bya buri munsi by'ubuntu ku nsobe zishingiye kuri EUR |
+| **Frankfurter** | API y'indorerwamo ya ECB ifunguye isoko — ubuntu, nta API key isabwa |
+| **Stripe** | Ikoresha ibipimo bya FX bya live bya Stripe — bisaba ihuzanzira rya Stripe rikora |
+| **Manual** | Winjiza ibipimo mu buryo butaziguye; nta guhamagara API yo hanze |
+
+Hitamo umutanga serivisi wawe munsi ya **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Ibipimo bishobora kuvugururwa n'intoki igihe icyo ari cyo cyose cyangwa bigateganywa kuvugururwa mu buryo bwikora.
+
+### Gusimbuza ibiciro kuri buri gicuruzwa {#per-product-pricing-overrides}
+
+Iyo ihindura ryikora ridahagije mu busobanuke, ushobora gushyiraho igiciro nyacyo cy'ifaranga runaka ku gicuruzwa icyo ari cyo cyose:
+
+1. Fungura muhinduzi w'igicuruzwa (**Ultimate Multisite → Products → Edit**)
+2. Manuka ujye ku gice cya **Currency Pricing**
+3. Injiza igiciro nyacyo kuri buri faranga ushaka gusimbuza
+4. Bika igicuruzwa
+
+Ibicuruzwa bidafite igisimbuzo bikoresha igiciro cyahinduwe kivuye mu ifaranga ryawe shingiro.
+
+### Umwanya wo guhitamo ifaranga mu kwiyandikisha {#currency-selector-signup-field}
+
+Umwanya wo guhitamo ifaranga ushobora kongerwa mu nzira yawe yo kwiyandikisha/kwishyura kugira ngo abakiriya bahitemo ifaranga bakunda mu gihe cyo kwiyandikisha:
+
+1. Jya kuri **Ultimate Multisite → Multi-Currency → Settings**
+2. Koresha **Kwerekana uhitamo ifaranga mu kwiyandikisha**
+3. Ushobora no gushyiraho ifaranga risanzwe cyangwa ukareka geolocation ikagena agaciro gahita gatoranywa
+
+Ifaranga ryatoranyijwe ribikwa hamwe n'iyandikwa kandi rigakoreshwa ku bwishyu bwose bukurikiraho.
+
+### Kumenya ifaranga hashingiwe kuri geolocation {#geolocation-based-currency-detection}
+
+Iyo kumenya geolocation byakoreshejwe, iyi nyongera ihuza igihugu cy'umushyitsi n'ifaranga kandi ikarihita irihitamo mbere mu mwanya wo guhitamo ifaranga. Kugira ngo ubikoreshe:
+
+1. Jya kuri **Ultimate Multisite → Multi-Currency → Settings**
+2. Koresha **Kumenya ifaranga uhereye ku hantu umushyitsi aherereye**
+3. Huza ibihugu n'amafaranga mu mbonerahamwe ya **Geolocation Mapping**
+
+Niba nta ihuza rihari ku gihugu cy'umushyitsi, ifaranga shingiro ry'urusobe rikoreshwa nk'irisimbura.
+
+## Ibibazo bikunze kubazwa {#frequently-asked-questions}
+
+### Bigenda bite iyo umutanga serivisi w'ibipimo by'ivunjisha atabonetse? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Iyi nyongera isubira ku bipimo byaherukaga kuzanwa neza. Niba nta bipimo byigeze bizanwa, isubira ku bipimo byandikwa n'intoki watunganije. Birakwiye gutunganya ibipimo byandikwa n'intoki nk'urwego rw'umutekano.
+
+### Nshobora gukoresha abatanga serivisi batandukanye ku mafaranga atandukanye? {#can-i-use-different-providers-for-different-currencies}
+
+Oya — umutanga serivisi umwe ni we ukora icyarimwe ku mafaranga yose. Koresha **Manual** niba ukeneye kugenzura byuzuye ibipimo ku giti cyabyo.
+
+### Ese geolocation isaba icomekwamo gitandukanye? {#does-geolocation-require-a-separate-plugin}
+
+Nta come kwamo rya geolocation ryo hanze risabwa. Iyi nyongera ikoresha uburyo bwa WordPress bwubakiwemo bwo kumenya igihugu hifashishijwe IP. Kugira ngo haboneke ukuri kurushijeho, serivisi yihariye ya geolocation ishobora guhuzwa hifashishijwe filter hooks zatanzwe.
+
+### Ese ibisimbuzo kuri buri gicuruzwa bishyirwa mbere cyangwa nyuma y'umusoro? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Ibisimbuzo kuri buri gicuruzwa bishyiraho igiciro kitariho umusoro mu ifaranga rigenewe. Umusoro ubarirwa hejuru y'igiciro gisimbuye hakoreshejwe igenamiterere ry'umusoro risanzwe ryawe.
+
+## Changelog {#changelog}
+
+### Verisiyo 1.0.0 — Yasohotse ku wa 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Gishya: Gushyigikira amafaranga menshi hifashishijwe ihindura ry'ibipimo by'ivunjisha mu buryo bwikora
+- Gishya: Gusimbuza ibiciro kuri buri gicuruzwa ku biciro nyabyo byihariye ku ifaranga
+- Gishya: Umwanya wo guhitamo ifaranga mu kwiyandikisha ku nzira yo kwishyura
+- Gishya: Abatanga ibipimo by'ivunjisha: ECB, Frankfurter, Stripe, n'ibipimo byandikwa n'intoki
+- Gishya: Kumenya ifaranga hashingiwe kuri geolocation
+- Gishya: Dashboard y'ubuyobozi yo gucunga amafaranga n'ibipimo by'ivunjisha
+- Gukosora: Dashboard yahoraga yerekana ibiciro mu ifaranga shingiro hatitawe ku ifaranga ryatoranyijwe

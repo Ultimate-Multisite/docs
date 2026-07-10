@@ -1,15 +1,17 @@
 ---
 title: Guia de Integração
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Guia de Integração
+# Guia de Integração {#integration-guide}
 
-Este guia cobre padrões comuns de integração com Ultimate Multisite, incluindo conexão com serviços externos, criação de gateways de pagamento personalizados e tratamento de webhooks.
+Este guia aborda padrões comuns de integração com Ultimate Multisite, incluindo conexão com serviços externos, criação de gateways de pagamento personalizados e manipulação de webhooks.
 
-## Integração com CRM
+Para infraestrutura de tenants isolados, consulte [Integração Multi-Tenancy](./multi-tenancy) para orientações sobre bootstrap de tenants soberanos, verificação de migração, SSO e teardown.
 
-Sincronize os dados do cliente com seu CRM quando novos clientes se cadastrarem:
+## Integração com CRM {#crm-integration}
+
+Sincronize os dados de clientes com seu CRM quando novos clientes se cadastrarem:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Integração com Analytics
+## Integração com Analytics {#analytics-integration}
 
-Acompanhe eventos-chave de negócios ao longo do ciclo de vida do cliente:
+Acompanhe eventos de negócios importantes ao longo do ciclo de vida do cliente:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Próximos Passos
+## Próximos passos {#next-steps}
 
 - [Desenvolvimento de Gateway Personalizado](./custom-gateway) — Crie seu próprio gateway de pagamento
 - [Manipulação de Webhooks](./webhooks) — Crie endpoints de webhook personalizados
+- [Integração Multi-Tenancy](./multi-tenancy) — Integre com fluxos de ciclo de vida de tenants soberanos

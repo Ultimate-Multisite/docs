@@ -1,47 +1,71 @@
 ---
-title: وثائق المطور
+title: توثيق المطورين
 sidebar_position: 1
-_i18n_hash: 6443e353aea8cf7592387aa5d9658951
+_i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# وثائق المطور
+# وثائق المطوّرين {#developer-documentation}
 
-هذا الدليل يوفر للمطورين كل ما يلزم للتكامل مع، توسيع، أو تطوير إضافات لـ Ultimate Multisite. Ultimate Multisite يحول شبكة WordPress Multisite إلى منصة Website-as-a-Service (WaaS).
+يوفّر هذا الدليل للمطوّرين كل ما يلزم للتكامل مع Ultimate Multisite أو توسيعه أو تطوير إضافات له. يحوّل Ultimate Multisite شبكة WordPress Multisite إلى منصة موقع كخدمة (WaaS).
 
-## ما المتاح
+## ما المتاح {#whats-available}
 
-- **[واجهة برمجة التطبيقات REST](./rest-api/overview)** — عمليات CRUD كاملة لجميع الكيانات (العملاء، المواقع، العضويات، المدفوعات، المنتجات، النطاقات) مع مصادقة مفتاح API
-- **[مرجع الهوكات](./hooks/guide)** — أكثر من 200 هوك إجراء و280 هوك فلتر لأحداث دورة الحياة والتخصيص
-- **[دليل التكامل](./integration-guide/)** — أمثلة على تكامل CRM، التحليلات، البوابات المخصصة، والويب هوكس
-- **[أمثلة الكود](./code-examples/)** — أنماط متقدمة للتسعير الديناميكي، توفير المواقع، القيود المخصصة، ومعالجة متعدد البوابات
-- **[تطوير الإضافات](./addon-development/getting-started)** — إطار منظم لبناء إضافات
+- **[REST API](./rest-api/overview)** — عمليات CRUD كاملة لجميع الكيانات (العملاء، المواقع، العضويات، المدفوعات، المنتجات، النطاقات) مع مصادقة بمفتاح API
+- **[مرجع Hooks](./hooks/guide)** — أكثر من 200 خطاف إجراء وأكثر من 280 خطاف تصفية لأحداث دورة الحياة والتخصيص
+- **[دليل التكامل](./integration-guide/)** — أمثلة للتكامل مع CRM، والتحليلات، وبوابات الدفع المخصصة، وwebhooks
+- **[أمثلة التعليمات البرمجية](./code-examples/)** — أنماط متقدمة للتسعير الديناميكي، وتوفير المواقع، والقيود المخصصة، ومعالجة بوابات متعددة
+- **[تطوير الإضافات](./addon-development/getting-started)** — إطار عمل منظّم لبناء إضافات
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - تثبيت WordPress Multisite
 - PHP 7.4 أو أعلى
-- تم تفعيل إضافة Ultimate Multisite
+- تفعيل إضافة Ultimate Multisite
 
-## البدء السريع
+## تثبيت Composer / Bedrock {#composer--bedrock-installation}
 
-### استخدم واجهة برمجة التطبيقات REST
+يتوفر Ultimate Multisite على [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) باسم `ultimate-multisite/ultimate-multisite`. هذه هي طريقة التثبيت الموصى بها لإعدادات WordPress المبنية على [Bedrock](https://roots.io/bedrock/) والبيئات الأخرى المُدارة عبر Composer.
+
+```bash
+composer require ultimate-multisite/ultimate-multisite
+```
+
+:::note تمت إعادة تسمية الحزمة (v2.6.1+)
+تمت إعادة تسمية حزمة Composer من `devstone/ultimate-multisite` إلى `ultimate-multisite/ultimate-multisite` في v2.6.1. إذا كان ملف `composer.json` يشير إلى اسم المورّد القديم، فحدّث إدخال require وشغّل `composer update`.
+:::
+
+بعد التثبيت، فعّل الإضافة على مستوى الشبكة من Network Admin:
+
+```bash
+wp plugin activate ultimate-multisite --network
+```
+
+أو، إذا كنت تحمّل الإضافة كإضافة must-use عبر autoloader الخاص بـ Bedrock، فاستخدم مرشح `wp_ultimo_skip_network_active_check` لتجاوز حارس التفعيل:
+
+```php
+add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
+```
+
+## البدء السريع {#quick-start}
+
+### استخدام REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### التفاعل مع الأحداث
+### الربط بالأحداث {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
-    // رد على تسجيلات العملاء الجدد
+    // React to new customer signups
 });
 ```
 
-### بناء إضافة
+### بناء إضافة {#build-an-addon}
 
 ```bash
-# إنشاء هيكل إضافة من القالب
+# Generate addon scaffold from the template
 bash create-addon.sh
 ```
 
-راجع كل قسم للحصول على وثائق مفصلة وأمثلة.
+راجع كل قسم للاطلاع على وثائق وأمثلة مفصلة.

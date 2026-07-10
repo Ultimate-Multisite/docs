@@ -3,9 +3,9 @@ title: Admin Page Creator Dəyişikliklər Siyahısı
 sidebar_position: 99
 _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 ---
-# Admin Page Creator Dəyişikliklər Siyahısı
+# Admin Page Creator Dəyişikliklər Siyahısı {#admin-page-creator-changelog}
 
-### Versiya 1.9.0 - 2026-01-18-də buraxılıb
+### Versiya 1.9.0 - 2026-01-18-də buraxılıb {#version-190---released-on-2026-01-18}
 
 * Düzəldildi: Aktivasiya zamanı yaranan kritik səhvlər.
 * Yeniləndi: Content source sinifləri, düzgün valideyn konstruktor ilkinləşdirilməsi ilə Singleton trait-dən istifadə etməsi üçün yeniləndi.
@@ -21,89 +21,89 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 
 * Prefix "ultimate-multisite" olaraq dəyişdirildi; text domain yeniləndi; versiya artırıldı.
 
-### Versiya 1.8.7 - 04/10/2023
+### Versiya 1.8.7 - 04/10/2023 {#version-187---04102023}
 
 * Düzəldildi: Yeni admin səhifəsi əlavə etməyə çalışarkən yaranan kritik səhv.
 * Düzəldildi: Oxygen stylesheet prefix ilə qarşılıqlı təsir.
 
-### Versiya 1.8.6 - 09/08/2023
+### Versiya 1.8.6 - 09/08/2023 {#version-186---09082023}
 
 * Əlavə edildi: Əsas saytdan və ya cari alt-saytdan məlumat göstərmək seçimi əlavə edildi.
 * Əlavə edildi: WordPress Block Editor (Gutenberg) üçün dəstək əlavə edildi.
 * Düzəldildi: Brizy səhifə assetlərinin yüklənməməsi problemi düzəldildi.
 
-### Versiya 1.8.5 - 09/12/2020
+### Versiya 1.8.5 - 09/12/2020 {#version-185---09122020}
 
 * Düzəldildi: Menu gizlətmək üçün Screen Options-da yaranan problem aradan qaldırıldı.
 
-### Versiya 1.8.4 - 11/11/2020
+### Versiya 1.8.4 - 11/11/2020 {#version-184---11112020}
 
 * Düzəldildi: Multisite Ultimate v2 üçün dəstək.
 
-### Versiya 1.8.3 - 01/10/2020
+### Versiya 1.8.3 - 01/10/2020 {#version-183---01102020}
 
 * Düzəldildi: Əvvəlki quruluşdan gələn Beaver Builder ilə uyğunsuzluqlar.
 * Düzəldildi: WP 5.5 ilə margin (kənardan boşluq) tutarsızlığı.
 
-### Versiya 1.8.2 - 21/09/2020
+### Versiya 1.8.2 - 21/09/2020 {#version-182---21092020}
 
 * Düzəldildi: WP 5.5 ilə kiçik uyğunsuzluqlar.
 
-### Versiya 1.8.1 - 05/08/2020
+### Versiya 1.8.1 - 05/08/2020 {#version-181---05082020}
 
 * Düzəldildi: Brizy 2.0 ilə uyğunsuzluq.
 * Düzəldildi: Menu siyahısı qurularkən yaranan kiçik performans problemləri.
 
-### Versiya 1.8.0 - 27/04/2020
+### Versiya 1.8.0 - 27/04/2020 {#version-180---27042020}
 
 * Düzəldildi: Margin rejimi seçilmədikdə, yuxarı çubuğun altında görünən bildirişlər.
 * Əlavə edildi: Xüsusi səhifələr indi eyni anda bir neçə WordPress admin top-level və sub-səhifəsini əvəz edə bilər.
 * Əlavə edildi: Adminlər indi WP Admin Pages PRO istifadə edərək admin səhifələrini gizlədə bilərlər.
 
-### Versiya 1.7.9 - 01/04/2020
+### Versiya 1.7.9 - 01/04/2020 {#version-179---01042020}
 
 * Düzəldildi: Brizy 1.10.118 və yuxarı versiyaları admin səhifələrində SVG dəstəkləyən səhvi.
 
-### Versiya 1.7.8 - 26/03/2020
+### Versiya 1.7.8 - 26/03/2020 {#version-178---26032020}
 
 * Düzəldildi: Fransız dilindən istifadə edərkən Editor səhifəsini pozan escape səhvi.
 
-### Versiya 1.7.7 - 04/03/2020
+### Versiya 1.7.7 - 04/03/2020 {#version-177---04032020}
 
 * Düzəldildi: Brizy Builder ilə kiçik uyğunsuzluq.
 * Təkmilləşdirildi: Freemius SDK 2.3.2-yə yeniləndi.
 
-### Versiya 1.7.6 - 10/02/2020
+### Versiya 1.7.6 - 10/02/2020 {#version-176---10022020}
 
 * Düzəldildi: Dashboard Widgets-da admin səhifəsi redaktə düyməsi aşağı sağ küncdə işləmirdi.
 * Düzəldildi: Astra ilə kiçik uyğunsuzluq.
 * Düzəldildi: Brizy-nin yeni versiyası uyğunluğu pozurdu.
 
-### Versiya 1.7.5 - 14/12/2019
+### Versiya 1.7.5 - 14/12/2019 {#version-175---14122019}
 
 * Düzəldildi: Replace Page seçimi üzrə menu elementlərini doldurmaq üçün yeni bir edge-case handler əlavə edildi.
 * Düzəldildi: Elementor fontları işləmirdi.
 * Təkmilləşdirildi: Freemius SDK, Hesab səhifəsindən həssas məlumatları gizlətməyə dəstək vermək üçün yeniləndi.
 
-### Versiya 1.7.4 - 29/11/2019
+### Versiya 1.7.4 - 29/11/2019 {#version-174---29112019}
 
 * Düzəldildi: WooCommerce Memberships ilə uyğunsuzluq.
 * Düzəldildi: Oxygen Builder tab komponenti işləmirdi.
 * Düzəldildi: Beaver Themer işləmirdi.
 
-### Versiya 1.7.3 - 12/07/2019
+### Versiya 1.7.3 - 12/07/2019 {#version-173---12072019}
 
 * Düzəldildi: Ana səhifəsi başqa bir admin səhifəsi tipinə çevrildikdə səhifələrin yox olması.
 * Təkmilləşdirildi: Admin Page tipləri arasında daha yaxşı siyahı cədvəl bölücüleri.
 * Təkmilləşdirildi: Plugin-in bütün kod bazasının Təhlükəsizlik Nəzərdən Keçirilməsi.
 * Təkmilləşdirildi: Müəyyən menu/content source tipi üçün funksiya mövcud olmadıqda Separator tab-da görünən xəbərdarlıq haqqında qeyd.
 
-### Versiya 1.7.2 - 01/07/2019
+### Versiya 1.7.2 - 01/07/2019 {#version-172---01072019}
 
 * Düzəldildi: Freemius SDK versiyası 2.3.0-ə yeniləndi.
 * Düzəldildi: Flywheel ilə uyğunsuzluq problemi.
 
-### Versiya 1.7.1 - 27/06/2019
+### Versiya 1.7.1 - 27/06/2019 {#version-171---27062019}
 
 * Düzəldildi: Welcome Widget indi bütün rollar üçün göstərilir.
 * Düzəldildi: Menu https://docs.wpadminpagespro.com/knowledge-base/hiding-wp-admin-pages-pro-from-your-users/ saytında təsvir edilən filter vasitəsilə gizlədilirsə, Admin Pages menu-sunu gizlətmək üçün Screen Option əlavə edilmirdi.
@@ -112,12 +112,12 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Əlavə edildi: Səhifələri əsas saytda göstərmək seçimi.
 * Əlavə edildi: Replace rejimində top və sub səviyyəli menu etiketlərini yeniləmək seçimi.
 
-### Versiya 1.7.0 - 04/06/2019
+### Versiya 1.7.0 - 04/06/2019 {#version-170---04062019}
 
 * Düzəliş: Oxygen şablonlarının görünməməsi problemləri.
 * Əlavə edildi: Widget yaratma dəstəyi!
 
-### Versiya 1.6.1 - 22/05/2019
+### Versiya 1.6.1 - 22/05/2019 {#version-161---22052019}
 
 * Düzəliş: Yazı səhvləri (Typos).
 * Düzəliş: Eyni ardıcıllıq dəyəri ilə əvvəlki sub-menu elementlərini üstələyən sub-menu səhifələri.
@@ -125,40 +125,40 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Təkmilləşdirildi: pt_BR və es_ES po faylları yeniləndi.
 * Təkmilləşdirildi: Siyahı cədvəli indi xüsusi səhifələri valideyn səhifələr kimi göstərir.
 
-### Versiya 1.6.0 - 21/05/2019
+### Versiya 1.6.0 - 21/05/2019 {#version-160---21052019}
 
 * Əlavə edildi: External Links indi iframe yükləməyə də dəstək verir.
 
-### Versiya 1.5.5 - 17/05/2019
+### Versiya 1.5.5 - 17/05/2019 {#version-155---17052019}
 
 * Düzəldildi: Səhifə silinmiş və ya duplikatlaşdırılmış olduqda yaranan xəbərdarlıq mesajı.
 * Düzəldildi: İcazə parametrlərinin Adminlərə tətbiq edilməməsi.
 
-### Versiya 1.5.4 - 08/05/2019
+### Versiya 1.5.4 - 08/05/2019 {#version-154---08052019}
 
 * Düzəldildi: Sliced Invoices ilə uyğunsuzluqlar.
 * Düzəldildi: Oxygen ilə kiçik problem.
 * Düzəldildi: Yeni admin səhifəsi başlıq sahəsində placeholder key-up zamanı yox olmurdu.
 
-### Versiya 1.5.3 - 03/05/2019
+### Versiya 1.5.3 - 03/05/2019 {#version-153---03052019}
 
 * Düzəldildi: Advanced Custom Field option pages ilə uyğunsuzluq.
 * Əlavə edildi: Xüsusi admin səhifələrinin hədəfi kimi müəyyən istifadəçilər əlavə etmək seçimi.
 
-### Versiya 1.5.2 - 30/04/2019
+### Versiya 1.5.2 - 30/04/2019 {#version-152---30042019}
 
 * Düzəldildi: Brizy-nin daha yeni versiyaları ilə uyğunsuzluqlar.
 * Əlavə edildi: İspan dili tərcüməsi əlavə edildi - John Rozzo-ya görə. Təşəkkürlər, John!
 * Əlavə edildi: Oxygen Builder üçün Beta dəstəyi.
 
-### Versiya 1.5.1 - 15/04/2019
+### Versiya 1.5.1 - 15/04/2019 {#version-151---15042019}
 
 * Düzəldildi: Normal və HTML redaktorlarında placeholder problemləri.
 * Düzəldildi: Admin Pages Tools -> Export-da görünməməsi.
 * Düzəldildi: Script və style-ların yalnız öz səhifələrimizdə yüklənməsi.
 * Əlavə edildi: Super Adminlər indi Admin Pages-ı duplikatlaşdıra bilərlər.
 
-### Versiya 1.5.0 - 29/03/2019
+### Versiya 1.5.0 - 29/03/2019 {#version-150---29032019}
 
 * Düzəldildi: Sentry tərəfindən tutulmuş kiçik buglar.
 * Düzəldildi: Edit Admin səhifəsi ekranında Delete düyməsi işləmirdi.
@@ -166,7 +166,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Əlavə edildi: Adminlər sub-menu ardıcıllığını da təyin edə bilərlər.
 * Əlavə edildi: Replace page rejimi indi mövcud olan bütün menu elementlərinə dəstək verir.
 
-### Versiya 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on)
+### Versiya 1.4.0 - 14/02/2019 (stand-alone) & 27/02/2019 (add-on) {#version-140---14022019-stand-alone--27022019-add-on}
 
 * Əlavə edildi: https://wpadminpagespro.com saytında Stand-alone plugin kimi buraxıldı.
 * Əlavə edildi: Səhifə yaradılma prosesi bitdikdən sonra Admin Pages menu elementini silmək seçimi.
@@ -176,7 +176,7 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Əlavə edildi: Gələcəkdə yeni Page Builder/Content Source əlavə etməyi asanlaşdırmaq üçün konsolidasiya edilmiş content source valideyn sinifi.
 * Əlavə edildi: External URLs üçün dəstək.
 
-### Versiya 1.3.0 - 15/01/2019
+### Versiya 1.3.0 - 15/01/2019 {#version-130---15012019}
 
 * Düzəldildi: Multisite mühitlərində Admin Pages əsas saytda görünmürdü.
 * Təkmilləşdirildi: Multisite Ultimate custom post tipləri alt-saytların export ekranından çıxarıldı.
@@ -184,29 +184,29 @@ _i18n_hash: 60442b433a1fe73d3624b115e3d153a5
 * Əlavə edildi: BÜYÜK! Elementor Dəstəyi!
 * Əlavə edildi: BÜYÜK! Brizy Dəstəyi!
 
-### Versiya 1.2.1 - 17/11/2018
+### Versiya 1.2.1 - 17/11/2018 {#version-121---17112018}
 
 * Düzəldildi: Plugin-i Multisite Ultimate 1.9.0 ilə uyğunlaşdırıldı.
 
-### Versiya 1.2.0 - 10/09/2018
+### Versiya 1.2.0 - 10/09/2018 {#version-120---10092018}
 
 * Əlavə edildi: wp-config.php-də WU_APC_ALLOW_PHP_PROCESSING true olaraq təyin edilərsə PHP dəstəyi əlavə edildi. Bu, PHP-nin eval-ından istifadə etmir, lakin yenə də təhlükəsizlik boşluğuna səbəb ola bilər. Diqqətlə istifadə edin;
 * Təkmilləşdirildi: Add-on plugin updater.
 * Təkmilləşdirildi: Yeniləmələr serveri üçün yeni URL.
 
-### Versiya 1.1.2 - 16/08/2018
+### Versiya 1.1.2 - 16/08/2018 {#version-112---16082018}
 
 * Düzəldildi: WP Engine ilə kiçik problem.
 
-### Versiya 1.1.1 - 16/08/2018
+### Versiya 1.1.1 - 16/08/2018 {#version-111---16082018}
 
 * Düzəldildi: Replace səhifələrinə icazələr düzgün tətbiq edilmirdi.
 
-### Versiya 1.1.0 - 15/08/2018
+### Versiya 1.1.0 - 15/08/2018 {#version-110---15082018}
 
 * Əlavə edildi: Beaver Builder şablonları artıq dəstəklənir! Xüsusi admin səhifələri yaratmaq üçün sevimli səhifə qurucunuzdan istifadə edə bilərsiniz;
 * Əlavə edildi: İndi WordPress default admin səhifələrinin məzmununu əvəz etmək mümkündür;
 * Əlavə edildi: İndi yaradılan məzmunu default WordPress admin səhifələrinin yuxarısına və ya altına əlavə etmək mümkündür.
 
-### 0.0.1
+### 0.0.1 {#001}
 - İlkin Buraxılış

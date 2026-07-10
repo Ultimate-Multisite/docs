@@ -1,13 +1,13 @@
 ---
-title: ကိုယ်ပိုင် ဂိတ်ဝ တည်ဆောက်ခြင်း
+title: စိတ်ကြိုက် Gateway ဖွံ့ဖြိုးတိုးတက်ရေး
 sidebar_position: 2
-_i18n_hash: 4a17140bc09fa0345ff532d31ffeaffa
+_i18n_hash: c3d96ab56931d53cb14b071537a8d0e6
 ---
-# စိတ်ကြယ်မှုရှိသော ငွေပေးချေမှု ဂိတ်ဝါးများ ဖန်တီးခြင်း
+# စိတ်ကြိုက် Gateway ဖွံ့ဖြိုးတည်ဆောက်ခြင်း {#custom-gateway-development}
 
-`Base_Gateway` class ကို အသုံးပြုပြီး စိတ်ကြယ်မှုရှိသော ငွေပေးချေမှု ဂိတ်ဝါးများကို ဖန်တီးနိုင်ပါတယ်။
+`Base_Gateway` class ကို တိုးချဲ့၍ စိတ်ကြိုက် ငွေပေးချေမှု gateway များ ဖန်တီးနိုင်သည်။
 
-## Gateway Class
+## Gateway Class {#gateway-class}
 
 ```php
 class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
@@ -55,7 +55,7 @@ class My_Custom_Gateway extends \WP_Ultimo\Gateways\Base_Gateway {
 }
 ```
 
-## Register the Gateway
+## Gateway ကို မှတ်ပုံတင်ခြင်း {#register-the-gateway}
 
 ```php
 add_filter('wu_payment_gateways', function($gateways) {
@@ -64,17 +64,62 @@ add_filter('wu_payment_gateways', function($gateways) {
 });
 ```
 
-## Key Methods
+## အဓိက Methods {#key-methods}
 
-| Method | Purpose |
+| Method | ရည်ရွယ်ချက် |
 |--------|---------|
-| `process_single_payment()` | တစ်ကြိမ်တည်း ငွေပေးချေမှုများကို ကိုင်တွယ်ခြင်း |
-| `process_signup()` | ပုံမှန်ပြန်လည်စာရင်းသွင်းမှုများ (subscriptions) ကို စနစ်ထည့်ခြင်း |
-| `process_refund()` | ငွေပြန်အမ်းခိုင်းမှုများကို ကိုင်တွယ်ခြင်း |
-| `get_payment_methods()` | ဖောက်သည်အတွက် သိမ်းဆည်းထားသော ငွေပေးချေမှုနည်းလမ်းများကို ပြန်ပေးခြင်း |
+| `process_single_payment()` | တစ်ကြိမ်တည်း ငွေပေးချေမှုများကို ကိုင်တွယ်သည် |
+| `process_signup()` | ထပ်တလဲလဲ subscription များကို ပြင်ဆင်သတ်မှတ်သည် |
+| `process_refund()` | ငွေပြန်အမ်းရန် တောင်းဆိုမှုများကို ကိုင်တွယ်သည် |
+| `get_payment_methods()` | customer အတွက် သိမ်းဆည်းထားသော ငွေပေးချေမှုနည်းလမ်းများကို ပြန်ပေးသည် |
 
-## Tips
+## ထပ်တလဲလဲ membership များအတွက် renewal credentials {#renewal-credentials-for-recurring-memberships}
 
-- အမှားဖြစ်ခဲ့ရင် အမြဲတမ်း `WP_Error` ကို ပြန်ပေးသင့်ပါတယ်။ ဒါမှ Ultimate Multisite က အမှားပြသမှုကို ကိုင်တွယ်နိုင်မှာပါ။
-- သင့်ဂိတ်ဝါးက ဘယ်လိုငွေပေးချေမှုအမျိုးအစားတွေကို ကိုင်တွယ်လဲဆိုတာ ကြေညာဖို့ `$this->supports` ကို သတ်မှတ်ပေးရပါမယ် (`one-time`, `recurring`)။
-- ဂိတ်ဝါးနဲ့ သက်ဆိုင်တဲ့ မှတ်တမ်းမှတ်ရာ (logging) တွေအတွက် `wu_log_add()` ကို အသုံးပြုပါ။
+Ultimate Multisite v2.13.0 တွင် gateway integration များသည် `auto_renew` ကို သိမ်းဆည်းမထားမီ ထပ်တလဲလဲ membership တစ်ခုတွင် ပြန်သုံးနိုင်သော renewal credential ရှိမရှိကို သတင်းပို့နိုင်သည်။ `wu_membership_has_renewal_credential` ကို hook လုပ်ပြီး အောက်ပါတို့ကို ပြန်ပေးပါ-
+
+- membership တွင် gateway subscription၊ billing agreement၊ vault token သို့မဟုတ် ၎င်းနှင့်ညီမျှသော ပြန်သုံးနိုင်သည့် ငွေပေးချေမှုနည်းလမ်း ရှိပါက `true`။
+- ထပ်တလဲလဲ credential မရှိကြောင်း သို့မဟုတ် အသုံးမပြုနိုင်ကြောင်း gateway က သိရှိပါက `false`။
+- မပါဝင်လိုပြီး မူလအပြုအမူကို မပြောင်းဘဲ ထားလိုပါက `null`။
+
+```php
+add_filter('wu_membership_has_renewal_credential', function($verified, $membership) {
+    if ('my_gateway' !== $membership->get_gateway()) {
+        return $verified;
+    }
+
+    return '' !== (string) $membership->get_gateway_subscription_id();
+}, 10, 2);
+```
+
+gateway က `false` ပြန်ပေးသောအခါ Ultimate Multisite သည် membership ကို auto-renewal ပိတ်ထားပြီး သိမ်းဆည်းကာ missing-credential marker တစ်ခု သိမ်းထားသည်။ စီမံခန့်ခွဲသူများကို အသိပေးရန်၊ re-authorization flow တစ်ခု စတင်ရန် သို့မဟုတ် support notes ထည့်ရန် `wu_membership_renewal_credential_missing` ကို အသုံးပြုပါ-
+
+```php
+add_action('wu_membership_renewal_credential_missing', function($membership) {
+    wu_log_add(
+        'my-gateway',
+        sprintf('Membership #%d needs payment re-authorization.', $membership->get_id())
+    );
+});
+```
+
+ပြန်သုံးနိုင်သော credential အသစ်တစ်ခု သိမ်းဆည်းပြီးနောက် သင်၏ gateway ၏ အောင်မြင်သော re-authorization flow ၏ အစိတ်အပိုင်းအဖြစ် missing-credential marker ကို ရှင်းလင်းပါ။
+
+## အကြံပြုချက်များ {#tips}
+
+- မအောင်မြင်ပါက Ultimate Multisite က အမှားပြသမှုကို ကိုင်တွယ်နိုင်ရန် `WP_Error` ကို အမြဲ ပြန်ပေးပါ
+- Set `$this->supports` to declare which payment types your gateway handles (`one-time`, `recurring`)
+- gateway-specific logging အတွက် `wu_log_add()` ကို အသုံးပြုပါ
+
+## AI connector provider လုပ်ဆောင်နိုင်စွမ်းများ {#ai-connector-provider-capabilities}
+
+AI connector-backed လုပ်ဆောင်ချက်များကို ခေါ်သည့် စိတ်ကြိုက် integration များသည် AI Provider for Anthropic Max v1.3.0 နှင့် မိတ်ဆက်ထားသော ပံ့ပိုးထားသည့် OAuth provider စုစည်းမှုနှင့် ကိုက်ညီသင့်သည်-
+
+| Provider | လုပ်ဆောင်နိုင်စွမ်း မှတ်စုများ |
+|---|---|
+| **Anthropic Max** | ရှိပြီးသား OAuth Account pool workflow ကို ပံ့ပိုးသည်။ connector request များကို proxy လုပ်သည့်အခါ empty tool arrays နှင့် round-trip thinking signatures အပါအဝင် Anthropic tool-use payloads များကို မပြောင်းလဲဘဲ ထိန်းသိမ်းပါ။ |
+| **OpenAI ChatGPT/Codex** | OAuth pool workflow နှင့် connector-supported operations အတွက် tool-support အပြည့်အစုံကို ပံ့ပိုးသည်။ tool definitions နှင့် tool-call results များကို Codex-specific tool metadata မဖယ်ရှားဘဲ ဆက်လက်ပေးပို့ပါ။ |
+| **Google AI Pro** | OAuth pool workflow နှင့် SDK-backed provider integration ကို ပံ့ပိုးသည်။ request များကို route မလုပ်မီ OAuth ပြီးဆုံးပြီးနောက် provider Account များကို refresh လုပ်ပါ။ |
+
+Cursor Pro integration နှင့် setup pathways များကို ဖယ်ရှားပြီးဖြစ်သည်။ Cursor Pro ကို ရွေးချယ်နိုင်သော provider အဖြစ် မှတ်ပုံမတင်ပါနှင့်၊ သို့မဟုတ် စိတ်ကြိုက် connector UI များတွင် Cursor-specific OAuth လမ်းညွှန်ချက်များ မပြပါနှင့်။
+
+sandboxed သို့မဟုတ် headless ပတ်ဝန်းကျင်များအတွက် စီမံခန့်ခွဲသူများသည် ပြန်ရရှိသော authorization data ကို paste လုပ်ပြီး automatic browser redirect အပေါ် မမူတည်ဘဲ Account ချိတ်ဆက်မှု ပြီးစီးစေရန် manual OAuth fallback path ကို ဖော်ပြပေးပါ။

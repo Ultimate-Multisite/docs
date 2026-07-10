@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Atsaharo ny Bots. Arovy ny Vola Miditra. Tsy misy Hasarotan’ny Fanamboarana.**
+
+Mitantana tambajotra multisite misy sehatra namboarina manokana? Fantatrao ny fahasahiranana: Google reCAPTCHA sy hCaptcha dia mitaky anao hisoratra anarana *ny sehatra tsirairay avy* ao amin’ny console fitantanany. Manampy site mpanjifa vaovao? Havaozy ny config captcha. Mampifandray sehatra namboarina manokana? Havaozy indray. Tsy mety tapitra izany.
+
+**Ultimate Multisite: Captcha manova ny zava-drehetra.**
+
+## Cap Captcha: Fiarovana Self-Hosted izay Mandeha Fotsiny {#cap-captcha-self-hosted-protection-that-just-works}
+
+Ny provider **Cap Captcha** vaovao anay dia manova lalao ho an’ny tambajotra multisite:
+
+* **Tsy Misy Fanamboarana** — Ampandehano ny addon dia voaaro ianao. Tsy misy API keys, tsy misy kaonty Google, tsy misy dashboard hCaptcha, tsy misy domain whitelisting.
+* **Mandeha Ho Azy Amin’ny Sehatra Rehetra** — Subdomains, sehatra mapped, sehatra mpanjifa—voaaro avy hatrany izy rehetra.
+* **Self-Hosted & Private** — Tsy mandao ny server-nao mihitsy ny angonao. Mifanaraka tanteraka amin’ny GDPR ary tsy misy fanarahan-dia avy amin’ny antoko fahatelo.
+* **Proof-of-Work Tsy Hita Maso** — Mamaha piozila kajy ao ambadika ny mpampiasa. Tsy misy fanindriana fire hydrants, tsy misy grids sary mahasorena.
+* **Maivana** — 20KB fotsiny. Tsy hampiadana ny checkout-nao.
+
+## Fiarovana amin’ny WooCommerce Card Testing {#woocommerce-card-testing-protection}
+
+Mandany vola an’arivony tapitrisa isan-taona amin’ny mpivarotra ny fanafihana card testing. Mampiasa bots ny mpisoloky hanamarinana carte de crédit nangalarina amin’ny WooCommerce checkout-nao—ianao no mandoa ny saram-pikarakarana, izy ireo mahazo laharan-karatra manankery.
+
+**Miaro amin’ny toerana tena manan-danja izahay:**
+
+* **Fiarovana Store API** — Manakana fanafihana bot amin’ny `/wp-json/wc/store/v1/checkout` izay mandingana captcha nentim-paharazana amin’ny endrika
+* **Mifanaraka amin’ny PayPal Payments** — Mandeha milamina miaraka amin’ny WooCommerce PayPal Payments
+* **Antontan’isa Amin’ny Fotoana Tena Izy** — Jereo mazava hoe firy ny fanafihana sakananao
+
+## Mbola Mila Google reCAPTCHA na hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+Voarakotray ianao. Fanohanana feno ho an’ny:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Afaka mifamadika provider amin’ny fotoana rehetra avy amin’ny settings an’ny tambajotranao.
+
+## Namboarina ho an’ny Scale {#built-for-scale}
+
+* Settings manerana ny tambajotra miaraka amin’ny overrides isaky ny site
+* Dashboard antontan’isa hanaraha-maso ny fiarovana
+* Ambaratongam-piarovana azo amboarina (Haingana, Antonony, Ambony Indrindra)
+* Mora ho an’ny developer miaraka amin’ny rafitra provider azo itarina
+
+## Fametrahana {#installation}
+
+1. Alefaso ao amin’ny lahatahiry `/wp-content/plugins/` anao ny `ultimate-multisite-captcha`
+2. Network Activate ny plugin
+3. **Izay ihany. Voaaro ianao.**
+
+Mandeha ho azy ny Cap Captcha—tsy misy settings hamboarina, tsy misy API keys hampidirina. Voaaro ny endpoint tohanana rehetra manerana ny tambajotranao manontolo amin’ny fotoana ampandehanana azy.
+
+**Tsy voatery:** Raha hampiasa Google reCAPTCHA na hCaptcha kosa ianao, mandehana any amin’ny **Ultimate Multisite → Settings → Captcha** ary safidio ny provider tianao.
+
+## Fanontaniana Apetraka Matetika {#frequently-asked-questions}
+
+## Mila manamboatra zavatra ve aho? {#do-i-need-to-configure-anything}
+
+Tsia! Cap Captcha dia alefa ho azy rehefa ampandehaninao ny addon. Voaaro avy hatrany ny tambajotranao manontolo—tsy misy settings hamboarina, tsy misy API keys hampidirina.
+
+## Mila API keys ho an’ny Cap Captcha ve aho? {#do-i-need-api-keys-for-cap-captcha}
+
+Tsia. Cap Captcha dia self-hosted tanteraka. Tsy misy kaonty ivelany, tsy misy fisoratana anarana domain, tsy misy aretin’andoha amin’ny fanamboarana.
+
+## Hampiadana ny checkout-ko ve izany? {#will-this-slow-down-my-checkout}
+
+20KB fotsiny ny Cap Captcha ary mampandeha fanamby proof-of-work ao ambadika. Tsy hahatsikaritra fahatarana ny mpanjifanao.
+
+## Miaro amin’ny fanafihana card testing ve izany? {#does-this-protect-against-card-testing-attacks}
+
+Eny! Tsy toy ny captcha nentim-paharazana izay miaro endrika HTML fotsiny, ny fampidirana WooCommerce anay dia mifatotra mivantana amin’ny Store API mba hanakanana fanafihana bot amin’ny haavon’ny API—izay isehoan’ny ankamaroan’ny fanafihana card testing.
+
+## Afaka mampiasa captcha providers samihafa amin’ny sites samihafa ve aho? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Apetraka manerana ny tambajotra ny captcha provider, saingy afaka manitsy ny settings fahasarotana arakaraka ny filanao ianao.
+
+## Mifanaraka amin’ny GDPR ve izany? {#is-this-gdpr-compliant}
+
+Cap Captcha dia 100% self-hosted ary tsy misy angona alefa any amin’ny serivisy ivelany. Ho an’ny Google reCAPTCHA sy hCaptcha, azafady avereno jerena ny politika momba ny tsiambaratelon’izy ireo tsirairay.
+
+## Rate Limiting {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 dia mampiditra rate limiter hard-stop izay miaro ny tambajotranao amin’ny fanafihana brute-force sy card-testing.
+
+### Ahoana no Fiasany {#how-it-works}
+
+Ny rate limiter dia manisa ny fangatahana GET sy POST rehetra amin’ny sehatra arovan’ny captcha:
+
+* **WordPress login endpoints** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Rehefa mihoatra ny rate limit ny mpitsidika iray, ny plugin dia mamaly amin’ny:
+
+* **HTTP 429 (Too Many Requests)** status code
+* **Retry-After** header manondro hoe rahoviana no hanandrana indray
+* **Randomised tarpit sleep** (1–5 segondra amin’ny default, hard-capped amin’ny 15 segondra) mba hampiadana ny mpanafika
+
+### Fanamboarana {#configuration}
+
+#### Fotoanan’ny Tarpit {#tarpit-timing}
+
+Fehezo ny fahatarana randomised ampiharina amin’ny fangatahana voafetra amin’ny rate:
+
+* **`cap_rate_limit_tarpit_min`** — Faharetan’ny sleep farany ambany amin’ny segondra (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Faharetan’ny sleep farany ambony amin’ny segondra (default: 5, hard-capped amin’ny 15)
+
+Hita ao amin’ny **Ultimate Multisite → Settings → Captcha** ireo settings ireo.
+
+### Fahafahana Manitatra {#extensibility}
+
+#### Sivana IP Whitelist {#ip-whitelist-filter}
+
+Aza ampiharina rate limiting amin’ny elanelana IP atokisana:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Hetsika Alohan’ny Fanakanana {#pre-block-action}
+
+Alefaso avy hatrany ny lojika namboarina manokana alohan’ny handefasana sakana rate-limit:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Famaritana IP an’ny Client & Proxies Atokisana {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 dia mampiditra famaritana client-IP mahatohitra spoofing. Ny fomba `Captcha_Core::get_client_ip()` dia lasa loharano tokana marina ho an’ny fanondroana IP mpitsidika manerana ny:
+
+* Lakilen'ny bucket famerana tahan'ny fangatahana
+* Captcha provider `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Hash IP ho an'ny statistika
+
+### Modely Fitokisana {#trust-model}
+
+Ny plugin dia mampihatra ambaratongam-pitokisana IP hentitra:
+
+1. **REMOTE_ADDR** — Atokisana foana (IP an'ilay peer akaiky indrindra)
+2. **CF-Connecting-IP** — Hajaina ihany rehefa:
+   - Ao anatin'ny elanelana IP Cloudflare amin'izao fotoana izao ilay peer akaiky indrindra
+   - Alefa ny `cap_trust_cloudflare_headers` (default: OFF)
+3. **X-Forwarded-For** — Hajaina ihany rehefa:
+   - Ao amin'ny lisitry ny trusted-proxy napetraky ny admin-nao ilay peer akaiky indrindra
+   - Vakiana avy ankavanana miankavia ilay header, ka adinoina ireo trusted/Cloudflare hops
+
+### Fanamboarana {#configuration-1}
+
+#### Fitokisana Header Cloudflare {#cloudflare-header-trust}
+
+Alefaso ny fitokisana ny header `CF-Connecting-IP` an'i Cloudflare:
+
+* **`cap_trust_cloudflare_headers`** — Apetraho ho ON raha te hiditra amin'ny fitokisana `CF-Connecting-IP`
+  - Default: OFF (tsy mandeha)
+  - Ny plugin dia miaraka amin'ny snapshot Cloudflare CIDR tafiditra
+  - Havaozina isan-kerinandro amin'ny alalan'ny wp-cron ny elanelana CIDR
+  - Ampiasaina ny fallback tafiditra raha tsy mahomby ny fanavaozana
+
+#### Fanamboarana Trusted Proxy {#trusted-proxy-configuration}
+
+Farito ireo proxy sy load-balancer eo aloha:
+
+* **`cap_trusted_proxies`** — Textarea misy CIDR na IP tsotra (iray isaky ny andalana)
+  - Azo atao ny comments (andalana manomboka amin'ny `#`)
+  - Raha tsy misy ity setting ity, dia tsy raharahiana ny `X-Forwarded-For` na dia alefa aza ny rate limiter
+  - Ohatra:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Fikarohana Ho Azy Voalohany Rehefa Alefa {#first-enable-auto-detection}
+
+Rehefa alefanao voalohany ny rate limiter, ny plugin dia mamantatra ny toe-javatra Cloudflare sy proxy mety ho anao ary mampiseho fampandrenesana admin "Ampiharo ny settings hita" amin'ny tsindry iray.
+
+* Tsy **manolo mihitsy** ny sanda voatahiry anananao ny plugin
+* Raha manoro ny fifamoivoizana manaraka fa tsy mifanaraka amin'ny zava-misy intsony ny config-nao (oh., nanova elanelana CIDR i Cloudflare), dia hiseho ny fampandrenesana tsy azo esorina momba ny tsy fitoviana, mampiseho ny fanavaozana atolotra
+
+### Nahoana Izany no Zava-dehibe {#why-this-matters}
+
+Ny modely fitokisana IP hentitra dia manidy lalan'ny spoofing tena mampidi-doza: ny fangatahana mivantana amin'ny origin-server mitondra header `CF-Connecting-IP` hosoka dia nety ho voasokajy tao amin'ny bucket araka ilay IP hosoka fa tsy ilay peer tena izy. Zava-dehibe indrindra izany ho an'ny:
+
+* **Famerana tahan'ny fangatahana** — Tsy afaka mandingana fetra amin'ny fanaovana spoofing IP ny mpanafika
+* **Statistika** — Ny metrika fanafihana anao dia maneho IP tena an'ny mpitsidika, fa tsy ireo hosoka
+* **Fanamarinana Captcha** — Mahazo ny IP marina an'ny mpitsidika ny providers ho an'ny fanombanana risika

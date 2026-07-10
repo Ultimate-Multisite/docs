@@ -3,11 +3,11 @@ title: Datu izolācija multi-tenantu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Vadu-tenantu izolācija
+# Vadu-tenantu izolācija {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 atbalsta subsites datubāzes un failkristiju izolāciju soverētiem īpašiem klientiem. Tas saglabā klienta datus atšķirīgus, nodrošinot tieši tīkla līmeņa sniegšanu, fakturēšanu un administrāciju.
 
-## Izolācijas stratēģija
+## Izolācijas stratēģija {#isolation-strategy}
 
 Izmantojiet soverēto izolāciju klientiem, kuriem nepieciešams stiprāks datu atšķirība, dedīta failkristijas lietošana vai atsevišķa hosta robeža.
 
@@ -18,7 +18,7 @@ Katram soverētam klientam jābūt:
 - Klienta reģistrācijas ierakstam, kas mapē vietu ar datubāzi, galveno ceļu, hostname un izolācijas modeli.
 - Migrācijas apstiprinātās rezultāta, pirms klient ir uzskatīts par aktīvu (live).
 
-## Datubāzes hosta savienojums (Database host binding)
+## Datubāzes hosta savienojums (Database host binding) {#database-host-binding}
 
 Versija 1.2.0 maina defaultu vadības veidību hosta savienojumā pašas mašīnas instalācijām soverētiem klientiem. Pašmašīnas vērtības, piemēram `localhost`, tiek normalizētas, lai Bedrock, FrankenPHP un kontainerizētu WordPress instalācijas varētu sniegt iļaujas un apstiprināt atļaujas pret hosta stringu, ko MySQL pat redz.
 
@@ -31,11 +31,11 @@ Konfigurējot soverīgu klientu:
 
 Ja apstiprinātās rezultāti norāda uz iļauju nepieciešamību, salīdzinājiet klienta DB lietotāju iļaujas ar konfiguriētu hosta savienojumu. Lietotājam, kuram ir sniegta atļauja `user@localhost`, ir atšķirīga no `user@127.0.0.1` vai `user@%`.
 
-## Failkristijas galvenais virsraksts (Filesystem root)
+## Failkristijas galvenais virsraksts (Filesystem root) {#filesystem-root}
 
 Uzņēmēja galvenā rootis (tenant root) jābūt stabilam atjauninājumos un deployiem. Izvēlējieties neizmantot atkārtotas montēšanas ceļus (temporary mount paths). Bedrock stila instalācijās pārliecināt, ka uzņēmēja galvenais rootis norāda uz WordPress vebrootu, ko jāgaida uzņēmēja bootstrapa, bet ne tikai uz projekta rooti.
 
-## Izveide apakšdā (Provisioning order)
+## Izveide apakšdā (Provisioning order) {#provisioning-order}
 
 Ja izveidojat jaunas suverēnas (sovereign) mājas, izmantojiet šo secību:
 
@@ -49,7 +49,7 @@ Ja izveidojat jaunas suverēnas (sovereign) mājas, izmantojiet šo secību:
 
 Šī secība novērš to situāciju, ka daudz izolēti uzņēmēji saņem trafiku, kamēr datubāzes rakstnieks (writer), lietotāji un faila sistēma vēl nav sagatavoti.
 
-## Suverēno klientu pārvaldības plūsmas (Sovereign customer management flows)
+## Suverēno klientu pārvaldības plūsmas (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0, ja ir ieslēgts suverēnis režīms (sovereign mode), saglabā klientu pārvaldības darbības galvenajā vietnē. Uzņēmējais var turpināt darbojoties kā izolēta WordPress instalācija, bet klientu saites darbi, kas atkarīgi no tīkla fakturēšanas, pieejamības vai dalīto konta datus, jānosaucas uz galveno vietni, nevis mēģina pabeigt darbību iekš uzņēmēja runtime.
 

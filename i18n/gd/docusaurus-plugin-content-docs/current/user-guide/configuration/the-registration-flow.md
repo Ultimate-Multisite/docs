@@ -3,13 +3,13 @@ title: An t-saoghaladh a tha a' chluainteach
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# An tòr fhaisg an t-registeradh (v2)
+# An tòr fhaisg an t-registeradh (v2) {#the-registration-flow-v2}
 
 _**NOTE CRUCIAL: Tha an tòr seo a' tuairt do chuid Ultimate Multisite version 2.x.**_
 
 Caithedh na h-uilean faic a registeradh anns a gcnàidhean as fhaic. Gall sinn aigse a' sgairidh an t-fòram registeradh agad no liath a tha a' sharadh airson plan a tha a' tòiseachadh air. Tha sinn ag tòiseachadh gu sàmhach a tha a' tuairt do chuid a registeradh anns a gcnàidhean a ghabhair, agus gu sàmhach a tha a' tòiseachadh an uilean agad air a registeradh.
 
-## A' sgairidh an fòram registeradh:
+## A' sgairidh an fòram registeradh: {#using-the-registration-form}
 
 Tha seo an t-uisge registeradh a tha a' tòiseachadh. Tha thu a' sgairidh pàipear registeradh le **checkout form** agus tha seo an t-àite sin a ghaidheann a chuid a registeradh anns a gcnàidhean agad agus a' sgairidh plan. Gallach thu de dhèanamh mòr fhaisg pàipear registeradh, a chlàraich air a chùrsain registeradh foirfe a tha a' tòiseachadh air.
 
@@ -35,13 +35,13 @@ Tha iad a stad an sinne a' chluich gu am faighinn an plan a' chluich air an t-sg
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## A' chluich a' sgaidh le lìn a' sharailte:
+## A' chluich a' sgaidh le lìn a' sharailte: {#using-a-shareable-link}
 
 Tha an t-sgaidh a' chluich a' sgaidh a' chluich gu am faighinn an fòram a' chluich, tha an t-sgaidh a' chluich air a' chluich, tha an t-sgaidh a' chluich le lìn a' sharailte, tha thuir iad a bhith ag obair deàrchaid (product) no template a' chluich air an fòram a' chluich (teicireachd air theamaichean agus templates a' chluich - seabhac an seachdain). No thar a' chluich a' tòiseachadh air co-dheann (coupon code) a' chluich a' fhaighinn ann (teicireachd air URL parameters a' chluich).
 
 Tha an t-sgaidh a' chluich a' sgaidh gu am faighinn an sinne a' chluich: bid iad a bhith ag obair namh, username, e-mail address, ainm an sinne agus tilleadh (title), is dòla... ach tha an plan no template a' chluich air a bhith air a' chluich airson iad.
 
-### A' chluich a' sgaidh le fìor-fhaighinn:
+### A' chluich a' sgaidh le fìor-fhaighinn: {#registering-using-manual-payments}
 
 Tha thuir iad a bhith a' fàgail a' chluich PayPal, Stripe no bith eile de dhèanamh gu Ultimate Multisite no na h-àrdanasan a' chluich. Is dòla, bid a tha thuir iad a bhith ag obair namh airson fìor-fhaighinn air a' chluich a' faighinn air an t-sgaidh a' chluich. Tha an sinne a' chluich gu am faighinn an sgaidh a' chluich, ach bid iad a bhith ag obair namh air an fòram a' chluich, bid tha an sinne a' chluich a' tòiseachadh air meil a' chluich le fìor-fhaighinn eile airson a' chluich a' fàgail.
 

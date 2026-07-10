@@ -3,27 +3,27 @@ title: Ekspor Situs
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Ekspor Situs
+# Ekspor Situs {#site-export}
 
 Halaman admin **Site Export** memungkinkan administrator jaringan untuk mengemas satu situs, atau seluruh jaringan, ke dalam arsip yang dapat diunduh untuk keperluan migrasi, pencadangan (backup), atau penyerahan pekerjaan.
 
-## Mengekspor satu situs
+## Mengekspor satu situs {#exporting-one-site}
 
 Buka **Ultimate Multisite > Site Export** dan pilih **Generate new Site Export**. Pilih subsite yang ingin Anda ekspor, lalu tentukan apakah arsip tersebut harus menyertakan unggahan (uploads), plugin, dan tema.
 
 Setelah ekspor selesai, unduh ZIP dari daftar **Existing Exports**. ZIP Ekspor kini sudah menyertakan `index.php` yang dapat berjalan sendiri (self-booting) dan `readme.txt`, sehingga arsip tersebut dapat diunggah ke host baru dan dijalankan tanpa perlu menginstal plugin importer terpisah terlebih dahulu.
 
-## Mengekspor seluruh jaringan
+## Mengekspor seluruh jaringan {#exporting-the-whole-network}
 
 Gunakan **Network Export** di halaman Site Export jika Anda membutuhkan satu arsip yang berisi semua subsite dalam jaringan. Ini berguna sebelum migrasi host, latihan pemulihan bencana, atau pembangunan ulang staging di mana setiap subsite perlu dipindahkan bersama-sama.
 
 Karena ekspor jaringan bisa jauh lebih besar daripada ekspor satu situs, jalankan proses ini saat lalu lintas rendah dan pastikan penyimpanan target memiliki ruang kosong yang cukup untuk unggahan, plugin, tema, dan file ZIP yang dihasilkan.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Mulai dari Ultimate Multisite 2.12.0, Site Exporter dapat membuat **network import bundles** — arsip khusus yang dirancang untuk pemulihan situs skala jaringan yang lebih mudah. Network import bundle berisi semua file dan metadata yang diperlukan untuk memulihkan banyak situs ke instalasi jaringan baru.
 
-#### Membuat Network Import Bundle
+#### Membuat Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Buka **Ultimate Multisite > Site Export**
 2. Klik **Generate new Network Export**
@@ -32,7 +32,7 @@ Mulai dari Ultimate Multisite 2.12.0, Site Exporter dapat membuat **network impo
 5. Klik **Generate**
 6. Unduh bundle ZIP dari daftar **Existing Exports**
 
-#### Memulihkan dari Network Import Bundle
+#### Memulihkan dari Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Untuk memulihkan situs dari network import bundle:
 
@@ -52,7 +52,7 @@ Network import bundles akan menyimpan:
 - Unggahan media (jika disertakan dalam bundle)
 - Tabel dan data database kustom
 
-## Menginstal ZIP ekspor yang dapat berjalan sendiri
+## Menginstal ZIP ekspor yang dapat berjalan sendiri {#installing-a-self-booting-export-zip}
 
 Untuk memulihkan ZIP yang dapat berjalan sendiri di host baru:
 

@@ -1,126 +1,126 @@
 ---
-title: To To'lov Olish
+title: To‘lov olish
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# To'lov Olishish (v2)
+# To‘lovlarni qabul qilish (v2) {#getting-paid-v2}
 
-_**MUHIM MA'LUMOT: Bu maqola Ultimate Multisite 2.x versiyasiga tegishli.**_
+_**MUHIM ESLATMA: Ushbu maqola Ultimate Multisite 2.x versiyasiga taalluqli.**_
 
-Ultimate Multisite ichida a'zolik va to'lov tizimi mavjud. Bizning to'lov tizimimiz ishlay olishi uchun e-commerce'da eng ko'p ishlatiladigan to'lov eshig'larini integratsiya qilganmiz. Ultimate Multisite dagi standart to'lov eshig'lari _Stripe_, _PayPal_ va Qo'lda To'lovdir. Shuningdek, mos keluvchi add-onlarni o'rnatish orqali to'lovlarni qabul qilish uchun _WooCommerce_, _GoCardless_ va _Payfast_ dan ham foydalanishingiz mumkin.
+Ultimate Multisite ichki a’zolik va hisob-kitob tizimiga ega. Hisob-kitob tizimimiz ishlashi uchun biz e-tijoratda ishlatiladigan eng keng tarqalgan to‘lov shlyuzlarini integratsiya qilganmiz. Ultimate Multisite’dagi standart to‘lov shlyuzlari _Stripe_ , _PayPal_ va qo‘lda to‘lovdir. Shuningdek, tegishli add-on’larini o‘rnatish orqali to‘lovlarni qabul qilish uchun _WooCommerce_ , _GoCardless_ va _Payfast_ dan ham foydalanishingiz mumkin.
 
-## Asosiy Sozlamalar
+## Asosiy sozlamalar {#basic-settings}
 
-Siz barcha bu to'lov eshig'laridan birini Ultimate Multisite to'lov sozlamalari ostida sozlash imkoniga ega bo'lasiz. Bunga **Ultimate Multisite menyusi > Settings > Payments** orqali borishingiz mumkin.
+Ushbu to‘lov shlyuzlarining istalgan birini Ultimate Multisite to‘lov sozlamalari ostida sozlashingiz mumkin. Uni **Ultimate Multisite menyusi > Settings > Payments** orqali topishingiz mumkin.
 
-![Ultimate Multisite da To'lovlar sozlamalari sahifasi, To'lovlar paneli ko'rsatilgan](/img/config/payments-settings-page.png)
+![Ultimate Multisite’dagi Payments panelini ko‘rsatuvchi to‘lov sozlamalari sahifasi](/img/config/payments-settings-page.png)
 
-To'lov eshig'ingizni sozlashdan oldin, siz sozlab olishingiz mumkin bo'lgan asosiy to'lov sozlamalariga qarang:
+To‘lov shlyuzingizni sozlashdan oldin, sozlashingiz mumkin bo‘lgan asosiy to‘lov sozlamalarini ko‘rib chiqing:
 
-**Force auto-rene (Avtomatik yangilashni majburlash)** **w:** Bu foydalanuvchi tanlagan hisob-kitob chastotasiga qarab, har bir hisob-kitob sikli oxirida to'lov avtomatik ravishda takrorlanishini ta'minlaydi.
+**Avtomatik yangila** **shni majburlash:** Bu foydalanuvchi tanlagan hisob-kitob davriyligiga qarab har bir hisob-kitob sikli oxirida to‘lov avtomatik ravishda takrorlanishini ta’minlaydi.
 
-<!-- Screenshot unavailable: To'lovlar sozlamalari sahifasidagi Avtomatik yangilashni majburlash (Force Auto-Renew) tugmasi sozlamasi -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v2.13.0 faol eshig'ning takrorlanuvchi a'zolikni avtomatik yangilash bilan saqlashdan oldin qayta ishlatiladigan yangilash kredensialiga ega ekanligini tekshiradi. Yangilash kredensiali bu, eshig'ning obunasi bo'lishi, hisob-kitob shartnomasi, saqlangan vault tokeni yoki ekvivalent takrorlanuvchi to'lov usuli bo'lishi mumkin. Agar eshig' foydalanadigan kredensial mavjud emasligini xabar qilsa, Ultimate Multisite a'zolikni saqlab qoladi, lekin avtomatik yangilashni o'chiradi va administrator yoki texnik yordamchi foydalanuvchidan yangilash sanasidan oldin to'lovni qayta tasdiqlash so'rash uchun yetishmayotgan kredensial holatini qayd etadi.
+Ultimate Multisite v2.13.0 avtomatik yangilash yoqilgan takroriy a’zolikni saqlashdan oldin faol shlyuzda qayta foydalaniladigan yangilash credential’i bor-yo‘qligini tekshiradi. Yangilash credential’i shlyuz obunasi, hisob-kitob kelishuvi, saqlangan vault token yoki shunga teng qayta foydalaniladigan to‘lov usuli bo‘lishi mumkin. Agar shlyuz foydalanishga yaroqli credential mavjud emasligini bildirsa, Ultimate Multisite a’zolikni saqlaydi, lekin avtomatik yangilashni o‘chiradi va yetishmayotgan credential holatini qayd etadi, shunda administrator yoki support jarayoni mijozdan yangilash sanasidan oldin to‘lovni qayta avtorizatsiya qilishni so‘rashi mumkin.
 
-Bu, gateway faqat bir martalik to'lovlarni qabul qila oladigan holatlarda a'zo bo'lishning avtomatik yangilanishini ko'rsatmasligini ta'minlaydi. Gateway qo'shimchalari takroriy to'lovlarni saqlash uchun qayta ishlatiladigan autentifikatsiyani (credential) saqlashni tasdiqlashi kerak, ayniqsa gateway ham bir martalik qabul qilish va vault/subskripsiya to'lov rejimlarini qo'llab-quvvatlasa.
+Bu shlyuz faqat bir martalik to‘lovlarni undira olganida a’zolik avtomatik yangilanayotgandek ko‘rinishining oldini oladi. Shlyuz add-on’lari takroriy checkout’lar qayta foydalaniladigan credential’ni saqlashini tasdiqlashi kerak, ayniqsa shlyuz bir martalik undirish va vault/subscription to‘lov rejimlarining ikkalasini ham qo‘llab-quvvatlaganda.
 
-**To'lovsiz sinovlarni ruxsat etish** **metod:** Bu opsiyani yoqganingizda, mijozlar ro'yxatdan o'tish jarayonida hech qanday moliyaviy ma'lumot kiritmasliklari kerak bo'ladi. Bu faqat sinov muddati tugagandan so'ng talab qilinadi.
+**To‘lov usulisiz sinov muddatlariga ruxsat berish:** Ushbu parametr yoqilgan bo‘lsa, mijozingiz ro‘yxatdan o‘tish jarayonida hech qanday moliyaviy ma’lumot qo‘shishi shart bo‘lmaydi. Bu faqat sinov muddati tugagandan keyin talab qilinadi.
 
-<!-- Screenshot unavailable: To'lovsiz sinovlarni ruxsat etish (Allow Trials Without Payment Method) o'giruvchi sozlamalari sahifasida -->
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**To'lov tasdiqlangandan so'ng faktura yuborish:** Bu sizga to'lovdan keyin faktura yuborishni amalga oshirish yoki qilmaslik opsiyasini beradi. Eslatma: foydalanuvchilar o'z subsite dashboardlari orqali o'tkazgan to'lovlar tarixiga kirish imkoniyatiga ega bo'ladi. Bu opsiya Manual Gateway uchun qo'llanilmaydi.
+**To‘lov tasdiqlanganda invoys yuborish:** Bu sizga to‘lovdan keyin invoys yuborish yoki yubormaslik imkoniyatini beradi. E’tibor bering, foydalanuvchilar o‘z subsite dashboard’i ostida to‘lov tarixiga kirish huquqiga ega bo‘ladi. Bu parametr Manual Gateway’ga tatbiq etilmaydi.
 
-<!-- Screenshot unavailable: To'lov tasdiqlangandan so'ng faktura yuborish (Send Invoice on Payment Confirmation) o'giruvchisi sozlamalari sahifasida -->
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Faktura raqamlash sxemasi:** Bu yerda siz to'lov referans kodini yoki ketma-ket raqamlar sxemasini tanlashingiz mumkin. Agar fakturalaringiz uchun to'lov referans kodidan foydalanishni tanlasangiz, hech narsa sozlashga hojat qilmaysiz. Agar ketma-ket raqamlar sxemasidan foydalanishni tanlasangiz, siz **keyingi faktura raqamini** (Bu raqam tizimda keyingi yaratiladigan faktura uchun faktura raqami sifatida ishlatiladi. Har bir yangi faktura yaratilganda u bittadan oshiriladi. Siz uni o'zgartirib, faktura ketma-ket raqamini aniq qiymatga qaytarish uchun saqlashingiz mumkin) va **faktura raqami oldi** (prefix) ni sozlash kerak bo'ladi.
+**Invoys raqamlash sxemasi:** Bu yerda siz to‘lov ma’lumotnoma kodi yoki ketma-ket raqam sxemasidan birini tanlashingiz mumkin. Agar invoyslaringiz uchun to‘lov ma’lumotnoma kodidan foydalanishni tanlasangiz, hech narsani sozlashingiz shart emas. Agar ketma-ket raqam sxemasidan foydalanishni tanlasangiz, **keyingi invoys raqami** (Bu raqam tizimda yaratiladigan keyingi invoys uchun invoys raqami sifatida ishlatiladi. Har safar yangi invoys yaratilganda u bittaga oshiriladi. Invoys ketma-ket raqamini muayyan qiymatga qayta o‘rnatish uchun uni o‘zgartirib saqlashingiz mumkin) va **invoys raqami prefiksi**ni sozlashingiz kerak bo‘ladi.
 
-<!-- Screenshot unavailable: Faktura raqamlash sxemasi o'giruvchisi, To'lov Referans Kodu va Ketma-ket Raqamlar opsiyalari bilan -->
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Gateway'larni qayerdan topish mumkin:
+## Shlyuzlarni qayerdan topish mumkin: {#where-to-find-the-gateways}
 
-To'lov eslatmalarini (payment gateways) bir xil sahifada sozlash mumkin (**Ultimate Multisite > Settings > Payments**). **faol to'lov eslatmalari** (active payment gateways) ning pastida siz quyidagilarni ko'rishingiz mumkin: _Stripe_, _Stripe_ Checkout, _PayPal_ va _Manual_.
+To‘lov shlyuzlarini o‘sha sahifaning o‘zida sozlashingiz mumkin ( **Ultimate Multisite > Settings > Payments**). **Faol to‘lov shlyuzlari** ostida siz quyidagilarni ko‘rishingiz mumkin: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ va _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Stripe, Stripe Checkout, PayPal va Manual ro‘yxatini ko‘rsatuvchi Faol to‘lov shlyuzlari bo‘limi](/img/config/payments-active-gateways.png)
 
-Har bir to'lov eslatmasi uchun maxsus maqola bor, u sizga uni sozlash bosqichlarini ko'rsatadi va ularni quyidagi linklarda topishingiz mumkin.
+Har bir to‘lov shlyuzi uchun uni sozlash bosqichlari bo‘yicha sizni yo‘naltiradigan alohida maqolamiz bor; ularni quyidagi havolalardan topishingiz mumkin.
 
-To'lov tafsilotlarini ko'rish va tahrirlash:
+To‘lov tafsilotlarini ko‘rishingiz va tahrirlashingiz mumkin:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![To‘lovni tahrirlash interfeysi](/img/admin/payment-edit.png)
 
-To'lov tahrirlash sahifasining to'liq ko'rinishi mana:
+Mana to‘lovni tahrirlash sahifasining to‘liq ko‘rinishi:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![To‘lovni tahrirlashning to‘liq interfeysi](/img/admin/payment-edit-full.png)
 
-Shuningdek, to'lov eslatmalari sozlamalarining to'liq ko'rinishi ham mana:
+Shuningdek, to‘lov shlyuzlari sozlamalarining to‘liq ko‘rinishi ham shu yerda:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![To‘lov shlyuzlari sozlamalarining to‘liq sahifasi](/img/config/settings-payments-gateways-full.png)
 
-**Stripe eslatmasini sozlash**
+**Stripe shlyuzini sozlash**
 
-**PayPal eslatmasini sozlash**** **
+**PayPal shlyuzini sozlash**** **
 
-**Manual to'lovlarni sozlash**
+**Qo‘lda to‘lovlarni sozlash**
 
-Endi, agar siz _WooCommerce_, _GoCardless_ yoki _Payfast_ ni to'lov eslatmanız sifatida ishlatmoqchi bo'lsangiz, ularning qo'shimcha modullaridan (add-ons) foydalanishingiz kerak bo'ladi.
+Endi, agar siz to‘lov shlyuzi sifatida _WooCommerce_ , _GoCardless_ yoki _Payfast_ dan foydalanmoqchi bo‘lsangiz, ularning add-on’larini **o‘rnatishingiz va sozlashingiz** kerak bo‘ladi.
 
-### WooCommerce qo'shimchasini o'rnatish qanday?
+### WooCommerce add-on’ini qanday o‘rnatish mumkin: {#how-to-install-the-woocommerce-add-on}
 
-Biz tushunamizki, ba'zi mamullarda _Stripe_ va _PayPal_ mavjud emasligi Ultimate Multisite foydalanuvchilarining bizning pluginimizdan samarali foydalanishini cheklaydigan yoki to'siq bo'ladigan holatlarga olib kelishi mumkin. Shuning uchun biz juda mashhur elektron tijorat (e-commerce) pluginidir _WooCommerce_ bilan integratsiya qilish uchun qo'shimcha modullarni yaratdik. Dunyodagi ishlab chiquvchilar unga turli to'lov eslatmalarini integratsiya qilish uchun qo'shimcha modullar yaratishdi. Biz bu imkoniyatdan foydalanib, Ultimate Multisite hisoboti bilan ishlatiladigan to'lov eslatmalari sonlingizni kengaytirdik.
+Biz _Stripe_ va _PayPal_ ayrim mamlakatlarda mavjud emasligini, bu esa Ultimate Multisite foydalanuvchilarining plugin’imizdan samarali foydalanishini cheklashi yoki qiyinlashtirishini tushunamiz. Shuning uchun biz juda mashhur e-tijorat plugin’i bo‘lgan _WooCommerce,_ ni integratsiya qilish uchun add-on yaratdik. Dunyo bo‘ylab dasturchilar unga turli to‘lov shlyuzlarini integratsiya qilish uchun add-on’lar yaratgan. Biz bundan foydalanib, Ultimate Multisite hisob-kitob tizimi bilan ishlatishingiz mumkin bo‘lgan to‘lov shlyuzlarini kengaytirdik.
 
-**MUHIMMI MA'LUMOT:** Ultimate Multisite: WooCommerce integratsiyasi uchun WooCommerce ning asosiy saytingizda kamida faollashganligini talab qiladi.
+_**MUHIM:** Ultimate Multisite: WooCommerce Integration WooCommerce kamida asosiy site’ingizda faollashtirilgan bo‘lishini talab qiladi._
 
-Avvalo, iltimos qiling, qo'shimchalar (add-ons) sahifasiga o'ting. Buni **Ultimate Multisite > Settings** orqali topishingiz mumkin. Sizda **Add-ons** jadvali ko'rinishi kerak. **Check our Add-ons** (Qo'shimchalarimizni tekshiring) ustiga bosing.
+Avval add-on’lar sahifasiga o‘ting. Uni **Ultimate Multisite > Settings** orqali topishingiz mumkin. Siz **Add-ons** jadvalini ko‘rishingiz kerak. **Check our Add-ons** ustiga bosing.
 
-<!-- Screenshot unavailable: Ultimate Multisite Settings panelidagi Add-ons jadvali va Check our Add-ons linki -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-**Check our Add-ons** ustiga bosgandan so'ng, siz qo'shimchalar sahifasiga yo'naltirilasiz. Bu yerda barcha Ultimate Multisite qo'shimchalari topishingiz mumkin. **Ultimate Multisite: WooCommerce Integration** (WooCommerce Integratsiyasi) qo'shimchasini tanlang.
+**Check our Add-ons** ustiga bosgandan so‘ng, add-on’lar sahifasiga yo‘naltirilasiz. Bu yerda barcha Ultimate Multisite add-on’larini topishingiz mumkin. **Ultimate Multisite: WooCommerce Integration** add-on’i ustiga bosing.
 
-![WooCommerce Integratsiyasini o'z ichiga olgan Ultimate Multisite qo'shimchalari ro'yxati](/img/addons/addons-page.png)
+![WooCommerce Integration’ni ham o‘z ichiga olgan Ultimate Multisite add-on’lari ro‘yxati ko‘rsatilgan add-on’lar sahifasi](/img/addons/addons-page.png)
 
-Qo'shimcha ma'lumotlar bilan oynacha ochiladi. Faqat **Install Now** (Endi o'rnating) ustiga bosing.
+Qo‘shimcha tafsilotlari bilan oyna ochiladi. Shunchaki **Hozir o‘rnatish** tugmasini bosing.
 
-<!-- Screenshot unavailable: Ultimate Multisite WooCommerce Integration qo'shimchasining Install Now tugmasi bilan dialog oynasi -->
+<!-- Skrinshot mavjud emas: Hozir o‘rnatish tugmasi bilan Ultimate Multisite WooCommerce Integration qo‘shimchasi tafsilotlari oynasi -->
 
-O'rnatish tugagandan so'ng, siz pluginlar sahifasiga yo'naltirilasiz. Bu yerda faqat **Network Activate** (Tarmoqni faollashtiring) ustiga bosing va WooCommerce qo'shimchasi tarmoqingizda faollashtiriladi.
+O‘rnatish tugagach, siz pluginlar sahifasiga yo‘naltirilasiz. Bu yerda shunchaki **Tarmoqda faollashtirish** tugmasini bosing va WooCommerce qo‘shimchasi tarmog‘ingizda faollashtiriladi.
 
-<!-- Screenshot unavailable: WooCommerce Integratsiyasi uchun Network Activate linki bilan pluginlar sahifasi -->
+<!-- Skrinshot mavjud emas: WooCommerce Integration qo‘shimchasi uchun Tarmoqda faollashtirish havolasi bo‘lgan pluginlar sahifasi -->
 
-Uni faollashtirgandan so'ng, agar siz saytingizda hali ham WooCommerce pluginini o'rnatmagan va faollashtirmagan bo'lsangiz, sizga eslatma keladi.
+Uni faollashtirgandan so‘ng, agar veb-saytingizda WooCommerce plugin hali o‘rnatilmagan va faollashtirilmagan bo‘lsa, siz eslatma olasiz.
 
-<!-- Screenshot unavailable: Administratorga WooCommerce pluginini o'rnatish va faollashtirishni eslatuvchi admin xabari -->
+<!-- Skrinshot mavjud emas: Administratorga WooCommerce pluginni o‘rnatish va faollashtirishni eslatuvchi admin bildirishnomasi -->
 
-WooCommerce Integratsiyasi haqida ko'proq ma'lumot olish uchun, **bu yerga bosing**.
+WooCommerce Integration qo‘shimchasi haqida ko‘proq o‘qish uchun **shu yerni bosing**.
 
-### GoCardless qo'shimchasini o'rnatish qanday?
+### GoCardless qo‘shimchasini qanday o‘rnatish mumkin: {#how-to-install-the-gocardless-add-on}
 
-_GoCardless_ плагининини установлашнинг қадамлари _WooCommerce_ плагини учун ҳам жуда ўхшаш. Плагинилар (add-ons) саҳифасига киring va **Ultimate Multisite: GoCardless Gateway** плагинини танланг.
+_GoCardless_ qo‘shimchasini o‘rnatish bosqichlari _WooCommerce_ qo‘shimchasi bilan deyarli bir xil. Iltimos, qo‘shimchalar sahifasiga o‘ting va **Ultimate Multisite: GoCardless Gateway** qo‘shimchasini tanlang.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway плагинининг атрофидаги саҳна -->
+<!-- Skrinshot mavjud emas: Ultimate Multisite GoCardless Gateway qo‘shimchasi ajratib ko‘rsatilgan qo‘shimchalar sahifasi -->
 
-Плагинининг ойнаси очилади. **Install Now** (Энди ўрнатиш) нига клиring.
+Qo‘shimcha oynasi ochiladi. **Hozir o‘rnatish** tugmasini bosing.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway плагинининг тафсилот диалогови, Install Now тугмачаси билан -->
+<!-- Skrinshot mavjud emas: Hozir o‘rnatish tugmasi bilan Ultimate Multisite GoCardless Gateway qo‘shimchasi tafsilotlari oynasi -->
 
-Учун ўрнатиш якунланса, сиз плагинилар (plugins) саҳифасига қайтасиз. Бу ерда фақат **Network Activate** (Тармоқни фаоллаштириш) нига клиring va _GoCardless_ плагини сизнинг тармоқингизда фаоллашиб қолади.
+O‘rnatish tugagach, siz pluginlar sahifasiga yo‘naltirilasiz. Bu yerda shunchaki **Tarmoqda faollashtirish** tugmasini bosing va _GoCardless_ qo‘shimchasi tarmog‘ingizda faollashtiriladi.
 
-<!-- Screenshot unavailable: GoCardless Gateway плагини учун Network Activate хавфланиган плагинилар саҳифаси -->
+<!-- Skrinshot mavjud emas: GoCardless Gateway qo‘shimchasi uchun Tarmoqda faollashtirish havolasi bo‘lgan pluginlar sahifasi -->
 
-_GoCardless_ gateway билан қандай бошқариш ҳақида билиш учун, **бу мақолани ўқинг**.
+_GoCardless_ gateway bilan qanday boshlashni o‘rganish uchun **ushbu maqolani o‘qing**.
 
-### Payfast плагинини олганини кўрсатиш:
+### Payfast qo‘shimchasini qanday o‘rnatish mumkin: {#how-to-install-the-payfast-add-on}
 
-Плагинилар (add-ons) саҳифасига киринг va **Ultimate Multisite: Payfast Gateway** плагинини танланг.
+Qo‘shimchalar sahifasiga o‘ting va **Ultimate Multisite: Payfast Gateway** qo‘shimchasini tanlang.
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway плагинининг атрофидаги саҳна -->
+<!-- Skrinshot mavjud emas: Ultimate Multisite Payfast Gateway qo‘shimchasi ajratib ko‘rsatilgan qo‘shimchalar sahifasi -->
 
-Плагинининг ойнаси очилади. **Install Now** (Энди ўрнатиш) нига клиring.
+Qo‘shimcha oynasi ochiladi. **Hozir o‘rnatish.** tugmasini bosing.
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway плагинининг тафсилот диалогови, Install Now тугмачаси билан -->
+<!-- Skrinshot mavjud emas: Hozir o‘rnatish tugmasi bilan Ultimate Multisite Payfast Gateway qo‘shimchasi tafsilotlari oynasi -->
 
-Учун ўрнатиш якунланса, сиз плагинилар (plugins) саҳифасига қайтасиз. Бу ерда фақат **Network Activate** (Тармоқни фаоллаштириш) нига клиring va _Payfast_ плагини сизнинг тармоқингизда фаоллашиб қолади.
+O‘rnatish tugagach, siz pluginlar sahifasiga yo‘naltirilasiz. Bu yerda shunchaki **Tarmoqda faollashtirish** tugmasini bosing va _Payfast_ qo‘shimchasi tarmog‘ingizda faollashtiriladi.
 
-<!-- Screenshot unavailable: Payfast Gateway плагини учун Network Activate хавфланиган плагинилар саҳифаси -->
+<!-- Skrinshot mavjud emas: Payfast Gateway qo‘shimchasi uchun Tarmoqda faollashtirish havolasi bo‘lgan pluginlar sahifasi -->

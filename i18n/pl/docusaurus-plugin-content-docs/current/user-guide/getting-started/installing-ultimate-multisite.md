@@ -3,13 +3,13 @@ title: Instalacja wtyczki Ultimate Multisite
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Instalacja Ultimate Multisite
+# Instalacja Ultimate Multisite {#installing-ultimate-multisite}
 
 :::note
 Niniejszy samouczek zakłada, że masz już zainstalowany i skonfigurowany WordPress Multisite. Aby dowiedzieć się, jak to zrobić, zapoznaj się z tym poradnikiem [https://www.wpbeginner.com/glossary/multisite/](https://www.wpbeginner.com/glossary/multisite/) autorstwa WP Beginner.
 :::
 
-## Instalacja wtyczki
+## Instalacja wtyczki {#installing-the-plugin}
 
 Ultimate Multisite jest dostępny bezpłatnie na stronie [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/).
 
@@ -29,17 +29,17 @@ Po aktywacji zostaniesz automatycznie przekierowany do kreatora konfiguracji.
 
 ![Wtyczka aktywowana i przekierowanie do kreatora](/img/installation/plugin-activated.png)
 
-## Kreator konfiguracji
+## Kreator konfiguracji {#setup-wizard}
 
 Kreator konfiguracji poprowadzi Cię przez proces konfigurowania Ultimate Multisite w około 10 minut.
 
-### Witamy
+### Witamy {#welcome}
 
 Kliknij **Rozpocznij**, aby rozpocząć.
 
 ![Ekran powitalny kreatora konfiguracji](/img/installation/wizard-welcome.png)
 
-### Wstępne sprawdzenie
+### Wstępne sprawdzenie {#pre-install-checks}
 
 Ten krok sprawdza informacje o Twoim systemie i instalacji WordPress, aby upewnić się, że spełniają one wymagania Ultimate Multisite. Jeśli wszystko wygląda dobrze, kliknij **Przejdź do następnego kroku**.
 
@@ -51,31 +51,31 @@ Jeśli Ultimate Multisite został zainstalowany, ale **jeszcze nie aktywowany w 
 Kliknięcie **Aktywuj w sieci** aktywuje wtyczkę w całej Twojej sieci multisite. Po aktywacji kreator przejdzie normalnie do kroku instalacji. Nie musisz opuszczać kreatora, aby naprawić stan aktywacji.
 :::
 
-### Instalacja
+### Instalacja {#installation}
 
 Instalator utworzy niezbędne tabele bazy danych i zainstaluje plik `sunrise.php`, który jest potrzebny do działania Ultimate Multisite. Kliknij **Zainstaluj**, aby kontynuować.
 
 ![Krok instalacji pokazujący tabele bazy danych i plik sunrise.php](/img/installation/wizard-installation.png)
 
-### Twoja firma
+### Twoja firma {#your-company}
 
 Wprowadź informacje o swojej firmie i ustaw domyślną walutę. Te informacje będą używane w całej platformie WaaS. Kliknij **Kontynuuj**, gdy skończysz.
 
 ![Krok konfiguracji „Twoja firma”](/img/installation/wizard-your-company.png)
 
-### Domyślne treści
+### Domyślne treści {#default-content}
 
 Ten krok pozwala zainstalować wstępnie zdefiniowane szablony, produkty i inne przykładowe treści. To świetny sposób na zapoznanie się z funkcjami Ultimate Multisite. Kliknij **Zainstaluj**, aby dodać domyślne treści lub pomiń ten krok, jeśli wolisz zacząć od zera.
 
 ![Krok instalacji domyślnych treści](/img/installation/wizard-default-content.png)
 
-### Zalecane wtyczki
+### Zalecane wtyczki {#recommended-plugins}
 
 Opcjonalnie zainstaluj zalecane wtyczki uzupełniające. Kliknij **Zainstaluj**, aby je dodać, lub pomiń ten krok, aby kontynuować.
 
 ![Krok z zalecanymi wtyczkami](/img/installation/wizard-recommended-plugins.png)
 
-### Gotowe!
+### Gotowe! {#ready}
 
 To wszystko! Instalacja Ultimate Multisite została zakończona. Możesz teraz zacząć tworzyć platformę Website as a Service z **Panelu administratora sieci**.
 

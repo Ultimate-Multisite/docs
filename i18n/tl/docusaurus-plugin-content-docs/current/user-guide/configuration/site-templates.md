@@ -3,13 +3,13 @@ title: Mga Template ng Site
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Mga Site Templates (v2)
+# Mga Site Templates (v2) {#site-templates-v2}
 
 _**TANDAAN: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x. Kung gumagamit ka ng version 1.x,**_ **tingnan ang artikulong ito** _**.**_
 
 Ang layunin namin kapag gumagawa ng premium network gamit ang Ultimate Multisite ay gawing awtomatiko hangga't maaari ang maraming proseso habang binibigyan namin ang aming mga kliyente ng kaluwagan at iba't ibang opsyon na pipiliin kapag nagtatayo sila ng kanilang mga website. Isang madaling paraan upang makamit ang balanse na ito ay gamitin ang feature ng Ultimate Multisite Site Templates.
 
-## Ano ang Site Template?
+## Ano ang Site Template? {#what-is-a-site-template}
 
 Gaya ng pangalan nito, ang isang Site Template ay isang boilerplate site na pwedeng gamitin bilang batayan kapag gumagawa ng mga bagong site sa iyong network.
 
@@ -17,7 +17,7 @@ Ibig sabihin, maaari kang gumawa ng base site, mag-activate ng iba't ibang plugi
 
 Mukhang napakagaling nito, pero paano ako gagawa ng bagong site template? Napakasimple nito hangga't maaari.
 
-## Paggawa at Pag-e-edit ng Bagong Site Template
+## Paggawa at Pag-e-edit ng Bagong Site Template {#creating-and-editing-a-new-site-template}
 
 Ang Site Templates ay mga normal na site sa iyong network. Upang gumawa ng bagong template, pumunta ka lang sa **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Sa ibaba ng form, makikita mo ang **Copy Site** toggle switch. Ito ay magbibigay
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Pag-customize ng nilalaman ng isang Site Template
+### Pag-customize ng nilalaman ng isang Site Template {#customizing-the-contents-of-a-site-template}
 
 Para i-customize ang iyong site template, pumunta ka lang sa dashboard panel nito at gawin ang mga pagbabagong kailangan mo. Maaari kang gumawa ng mga bagong post, page, mag-activate ng plugins, at magpalit ng active theme. Maaari ka pa ring pumunta sa Customizer at baguhin ang lahat ng uri ng customization options.
 
@@ -43,11 +43,11 @@ Para i-customize ang iyong site template, pumunta ka lang sa dashboard panel nit
 
 Lahat ng data na iyon ay kokopyahin kapag ang isang customer ay gumawa ng bagong site batay sa Site Template na iyon.
 
-### Advanced Options
+### Advanced Options {#advanced-options}
 
 Kung alam mo ang ilang custom coding, maaari mong gamitin ang Search and Replace API namin para awtomatikong palitan ang impormasyon sa bagong site pagkatapos itong gawin. Nakakatulong ito para sa mga bagay tulad ng pagpapalit ng pangalan ng kumpanya sa About page, pagpapalit ng contact email sa Contact page, atbp.
 
-### Paggamit ng Site Templates
+### Paggamit ng Site Templates {#using-site-templates}
 
 Sige, gumawa ka na ng maraming iba't ibang Site Template na may iba't ibang disenyo, theme, at settings. Paano mo ito magagamit sa iyong network ngayon?
 
@@ -59,7 +59,7 @@ Sa madaling salita, may dalawang paraan kang magagamit ngayon (hindi sabay-sabay
 
   * Payagan ang iyong mga kliyente na pumili ng site template mismo habang nagre-register.
 
-#### Paraan 1: Pag-assign ng Site Template
+#### Paraan 1: Pag-assign ng Site Template {#mode-1-assign-site-template}
 
 Sa mode na ito, hindi magkakaroon ng pagpipilian ang mga kliyente sa template kapag nagtatala sila ng account, kundi ikaw naman ang magde-define kung aling template ang gagamitin sa bawat Plano mo.
 
@@ -71,7 +71,7 @@ Dadaan ka rito sa pahina ng **Edit Product**. Sa ilalim ng seksyong **Product Op
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Pumili ng Available Site Template
+#### Mode 2: Pumili ng Available Site Template {#mode-2-choose-available-site-template}
 
 Sa mode na ito, bibigyan mo ang iyong mga kliyente ng pagpipilian habang sila ay nagre-register. Maaari silang pumili mula sa iba't ibang site template na dine-define mo sa ilalim ng product settings. Mayroon kang opsyon na limitahan ang site template na kanilang mapipili sa ilalim ng napiling produkto. Ito ay magbibigay-daan sa iyo na magkaroon ng iba't ibang set ng site template sa ilalim ng bawat produkto, na perpekto para i-highlight ang iba't ibang function at feature para sa mas mataas na presyong produkto.
 
@@ -79,7 +79,7 @@ Sa pahinang **Edit Product**. Sa ilalim ng seksyong **Product Options**, hanapin
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Pagpili ng Site template sa Checkout form
+### Default Mode: Pagpili ng Site template sa Checkout form {#default-mode-site-template-selection-on-the-checkout-form}
 
 Kung gusto mo na lahat ng iyong site template ay available habang nagre-register, o baka hindi mo gustong gumawa ng dagdag na trabaho ng pag-assign o pagtukoy ng mga site template sa ilalim ng bawat produktong gagawin mo. Kung ganoon, maaari mong itakda ang pagpili ng site template sa ilalim ng iyong **Checkout Form**. Para gawin ito, pumunta sa **Ultimate Multisite > Checkout Forms** at i-click ang **Edit** sa ilalim ng form na gusto mong i-configure.
 
@@ -93,29 +93,29 @@ Sa frontend, makikita ng mga customer ang template chooser habang nag-check out 
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Mga Opsyon ng Site Template
+### Mga Opsyon ng Site Template {#site-template-options}
 
 May iba pang mga function para sa site templates na maaari mong i-on o i-off sa ilalim ng Ultimate Multisite settings.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Payagan ang Pagpapalit ng Template (Allow Template Switching)
+#### Payagan ang Pagpapalit ng Template (Allow Template Switching) {#allow-template-switching}
 
 Kapag naka-enable mo ito, papayagan nito ang iyong mga kliyente na palitan ang template na kanilang pinili habang nasa proseso ng pag-sign up matapos ma-create ang account at site. Nakakatulong ito sa pananaw ng kliyente dahil maaari nila itong muling piliin ang template kung malalaman nila mamaya na ang orihinal nilang pagpipilian ay hindi ang pinakaangkop para sa kanilang partikular na pangangailangan.
 
-#### Payagan ang mga User na gamitin ang kanilang Site bilang templates (Allow Users to use their Site as templates)
+#### Payagan ang mga User na gamitin ang kanilang Site bilang templates (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Dahil naglaan ng oras ang mga user ng subsite sa paggawa at pagdidisenyo ng sarili nilang site, maaaring gusto nila itong i-clone at gamitin bilang isa sa mga available na site template kapag gumagawa sila ng isa pang subsite sa iyong network. Payagan ka ng opsyong ito na makamit iyon.
 
-#### Kopyahin ang Media sa Pagdublik ng Template (Copy Media on Template Duplication)
+#### Kopyahin ang Media sa Pagdublik ng Template (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Kapag sinuri mo ang opsyong ito, kopyahin nito ang mga media na na-upload sa template site patungo sa bagong ginawang site. Maaari itong i-override sa bawat plano.
 
-#### **Pigilan ang mga Search Engine na mag-index ng Site Templates (Prevent Search Engines from indexing Site Templates)**
+#### **Pigilan ang mga Search Engine na mag-index ng Site Templates (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Ang mga site template, gaya ng tinalakay sa artikulong ito, ay boilerplate lang pero bahagi pa rin sila ng iyong network kaya available pa rin silang mahanap ng search engines. Payagan ka nitong itago ang mga site templates para hindi sila ma-index ng mga search engine.
 
-## Pagpuno ng Site Templates gamit ang auto search-and-replace
+## Pagpuno ng Site Templates gamit ang auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Isa sa pinakamakapangyarihan ng Ultimate Multisite ang kakayahang magdagdag ng kahit anong text, kulay, at mga field na pwedeng piliin sa registration form. Kapag nakuha na natin ang data na iyon, magagamit natin ito para punan (pre-populate) ang nilalaman sa ilang bahagi ng site template na pinili mo. Pagkatapos, kapag inilabas na ang bagong site, papalitan ng Ultimate Multisite nito ang mga placeholder ng aktwal na impormasyong ipinasok noong registration.
 
@@ -135,7 +135,7 @@ Pagkatapos, papalitan ng Ultimate Multisite ang mga placeholder ng data na ibini
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Solusyon sa problemang "template puno ng placeholders"
+### Solusyon sa problemang "template puno ng placeholders" {#solving-the-template-full-of-placeholders-problem}
 
 Maganda lahat 'yan, pero may nakakahiyang problema tayo: ang mga template ng ating site - na pwedeng puntahan ng ating mga customer - ay puno ng mga pangit at hindi gaanong nagbibigay-impormasyong placeholder.
 

@@ -1,74 +1,101 @@
 ---
-title: Site Exporter
+title: 站点导出器
 sidebar_position: 1
-_i18n_hash: f78b536a5d2e678ef4bf2ac9ecaa131c
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# 站点导出器
+# 站点导出器 {#site-exporter}
 
-## 内容
+## 内容 {#content}
 
-我们理解在网络中移动子站点到单站点安装以及相反的需求，以便客户决定迁移他们的网站。站点导出器和导入器插件使这项任务更容易。该工具使用 zip 文件导出和导入站点，也可用作备份。
+我们理解，当您的客户决定迁移其网站时，您需要能够在网络中的子站点与单站点安装之间相互迁移。站点导出器和导入器 add-on 让这项任务更轻松。此工具使用 zip 文件导出和导入站点，这些文件也可作为备份。
 
-## 功能
+## 功能 {#features}
 
 * 导出和导入站点
+
 * 易于使用的界面
+
 * 创建站点备份
 
-## 文档
-
+## 文档 {#documentation}
 **如何导出和导入站点**
 
-## 安装
+## 安装 {#installation}
 
 1. 将 **ultimate-multisite-site-exporter** 上传到 **/wp-content/plugins/** 目录
-2. 在 WordPress 的 **插件** 菜单中激活插件
-3. 按照逐步向导设置插件
+2. 通过 WordPress 中的 **插件** 菜单激活该 plugin
+3. 按照逐步向导设置该 plugin
 
-## 使用指南
+## 使用指南 {#usage-guide}
 
-使用 Ultimate Multisite，您可以从网络中导出站点，或将站点导入到您的多站点或单站点安装中。
+借助 Ultimate Multisite，您可以从网络中导出站点，或将站点导入到您的多站点或单站点安装中。
 
-要开始此过程，请转到我们的插件页面并安装 Ultimate Multisite：站点导出器 & 导入器插件。![插件页面](/img/admin/addons-page.png)
+要开始此流程，请前往我们的 add-ons 页面并安装 Ultimate Multisite: Site Exporter & Importer add-on。![Add-ons 页面](/img/admin/addons-page.png)
 
-![插件页面（安装选项）](/img/admin/addons-page.png)
+![带安装选项的 Add-ons 页面](/img/admin/addons-page.png)
 
-转到您的插件页面，点击 **网络激活** 您刚安装的插件。<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for Site Exporter addon -->
+前往您的插件页面，然后点击对刚刚安装的 add-on 进行 **网络激活**。<!-- 截图不可用：WP 插件页面，显示 Site Exporter addon 的网络激活按钮 -->
 
-**导出与导入** 选项位于 Ultimate Multisite 菜单的左侧。<!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
+**导出与导入** 选项可在左侧的 Ultimate Multisite 菜单中找到。
 
-## 如何导出站点
+<!-- 截图不可用：Ultimate Multisite 菜单，显示导出和导入选项 -->
 
-要从网络导出站点，请转到 Ultimate Multisite 菜单中的 **导出与导入**，在 **导出站点** 选项卡上，点击 **生成新站点导出**。<!-- Screenshot unavailable: Export Sites tab with Generate new Site Export button -->
+## 如何导出站点 {#how-to-export-a-site}
 
-搜索您想要导出的站点，并选择要包含在导出文件中的项目。您可以包含主题、插件和上传文件。如果站点太大，您可以选择在后台运行导出过程。<!-- Screenshot unavailable: Site export options with site search, include themes/plugins/uploads checkboxes -->
+要从您的网络中导出站点，请前往 Ultimate Multisite 菜单中的 **导出与导入**，并在 **导出站点** 标签页中点击 **生成新的站点导出**。
 
-点击 **导出站点** 按钮。导出的站点将显示在 **现有导出** 列表中。点击 **下载 ZIP** 按钮下载文件。<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
+<!-- 截图不可用：导出站点标签页，带有生成新的站点导出按钮 -->
 
-## 如何导入站点
+搜索您想要导出的站点，并选择要包含在导出文件中的项目。您可以包含 themes、plugins 和 uploads。如果您的站点太大，可以选择在后台运行导出流程。<!-- 截图不可用：站点导出选项，包含站点搜索、包含 themes/plugins/uploads 复选框 -->
 
-要导入站点，请转到 **导入站点** 选项卡并上传您想要导入的站点的 .zip 文件。您可以将 URL 更改为新地址，或通过留空保持旧 URL。您还可以勾选删除导入后 .zip 文件的复选框。然后点击 **开始导入**。<!-- Screenshot unavailable: Import a Site tab with zip upload field and Begin Import button -->
+点击 **导出站点** 按钮。您导出的站点将在 **现有导出** 列表中可用。点击 **下载 ZIP** 按钮下载文件。导出 ZIP 包含可自启动的 `index.php` 和 `readme.txt`，因此无需先安装单独的导入器 plugin，就可以在全新主机上安装。<!-- 截图不可用：现有导出列表，带有下载 ZIP 按钮 -->
 
-此过程可能需要一点时间。您将在导入器下方的列表中看到待处理的导入。<!-- Screenshot unavailable: Pending import in the list below the importer -->
+## 如何导出整个网络 {#how-to-export-the-whole-network}
 
-您可以点击 **取消导入** 停止该过程。<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+要一起导出所有子站点，请前往 Ultimate Multisite 菜单中的 **导出与导入**，并在导出屏幕上使用 **网络导出** 选项。生成的归档文件会将所有子站点包含在单个 ZIP 中，用于主机迁移、预发布重建或网络级备份。
 
-完成后，您的站点将已在网络中可用。
+网络导出可能会很大。请在流量较低时运行，并确认服务器有足够的存储空间来保存归档文件以及任何包含的 uploads、plugins 和 themes。
 
-## 如何在单站点安装中导入站点
+## 如何导入站点 {#how-to-import-a-site}
 
-要将站点导入到单站点安装，首先在您的站点上安装并激活导入器。您可以在导出器选项卡中找到下载链接。<!-- Screenshot unavailable: Exporter tab with link to download single-site importer -->
+要导入站点，请前往 **导入站点** 标签页，并上传您想要导入的站点的 .zip 文件。您可以将 URL 更改为新的 URL，或通过将空白处留空来保留旧 URL。此外，您可以勾选复选框，以便在导入后从安装中删除 .zip 文件。然后点击 **开始导入**。
 
-您可以在左侧的 **工具** 菜单中的子项 **导出与导入** 找到导入器。<!-- Screenshot unavailable: Single-site Tools menu showing Export and Import submenu -->
+<!-- 截图不可用：导入站点标签页，带有 zip 上传字段和开始导入按钮 -->
 
-上传您想要导入的站点的 .zip 文件。您可以将 URL 更改为新地址，或通过留空保持旧 URL。您还可以勾选导入后删除 .zip 文件的复选框。然后点击 **开始导入**。<!-- Screenshot unavailable: Single-site import form with zip upload and Begin Import button -->
+此流程可能需要一些时间。您将在导入器下方的列表中看到一个待处理的导入。
 
-此过程可能需要一点时间。您将在导入器下方的列表中看到待处理的导入。<!-- Screenshot unavailable: Single-site pending import in the list -->
+<!-- 截图不可用：导入器下方列表中的待处理导入 -->
 
-您可以点击 **取消导入** 停止该过程。<!-- Screenshot unavailable: Cancel Import button to stop the import process -->
+您可以通过点击 **取消导入** 来停止此流程。
 
-完成后，您的站点将被刚刚导入的站点替换。
+<!-- 截图不可用：用于停止导入流程的取消导入按钮 -->
+
+流程完成后，您的站点就已在您的网络中可用。
+
+## 如何在单站点安装中导入站点 {#how-to-import-a-site-on-a-single-install}
+
+要将站点导入到您的单站点安装中，请先在您的站点上安装并激活导入器。您可以在导出器标签页上找到下载链接。
+
+<!-- 截图不可用：导出器标签页，带有下载单站点导入器的链接 -->
+
+您可以在左侧的 **工具** 菜单中的 **导出与导入** 子项下找到导入器。
+
+<!-- 截图不可用：单站点工具菜单，显示导出和导入子菜单 -->
+
+上传您想要导入的站点的 .zip 文件。您可以将 URL 更改为新的 URL，或通过将空白处留空来保留旧 URL。此外，您可以勾选复选框，以便在导入后从安装中删除 .zip 文件。然后点击 **开始导入**。
+
+<!-- 截图不可用：单站点导入表单，带有 zip 上传和开始导入按钮 -->
+
+此流程可能需要一些时间。您将在导入器下方的列表中看到一个待处理的导入。
+
+<!-- 截图不可用：单站点列表中的待处理导入 -->
+
+您可以通过点击 **取消导入** 来停止此流程。
+
+<!-- 截图不可用：用于停止导入流程的取消导入按钮 -->
+
+流程完成后，您的站点将被您刚刚导入的站点替换。

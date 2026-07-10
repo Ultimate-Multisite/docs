@@ -3,11 +3,11 @@ title: Amakuru
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Amakuru ya Ultimate Multisite
+# Amakuru ya Ultimate Multisite {#ultimate-multisite-requirements}
 
 Icyo ugiye kugenda mbere y'uko wumva ko hari iki cyo gukoresha plugin yetwe Ultimate Multisite? Murakoze, hari ibyerekezo byiza by'ingenzi gukoresha Ultimate Multisite: **domain name**, umuyobozi mwiza (hosting provider) n'ikoreshwa ya WordPress y'Umuvugizi (Multisite). Icyo ni cyose ukwibona!
 
-## Domain Name
+## Domain Name {#domain-name}
 
 Gukora uburyo bwo gukoresha domain name, ugomba kwibona iki cyo wumva mu niche yawe kandi iki cyo uza gukora n'Ultimate Multisite: Ugiye gukora agency? Gutangira ibintu byo gutya (shop-like websites)? Cyangwa wumva ko uza gukoresha hosting y'WordPress? Icyose cyari cyihariye n'Ultimate Multisite.
 
@@ -15,7 +15,7 @@ Plugin yetwe itanga serivisi z'subscription, gukoresha amafaranga, checkout form
 
 Umuvugizi wumva uwo niche wumva, uza kubyaraho n'plugin yetwe kugira ngo uza gutya websites nk'umuryango (as a service)! Ugingize domain name yizera ku njira yawe yawe.
 
-## Umuyobozi mwiza (Hosting Provider)
+## Umuyobozi mwiza (Hosting Provider) {#hosting-provider}
 
 Uko wumva domain name yiza itanga niche yawe kandi ikoreshwa, ugomba kwibona umuyobozi mwiza wo gukoresha network yawe n'Ultimate Multisite. Hari uburyo bwo gukora ibyo mu mwaka. Uruko rwa hosting rishobora guhagarara neza n'Ultimate Multisite, kandi iki cyari cyo kumenya cyane cyane ku buryo uza gutya iki.
 
@@ -23,7 +23,7 @@ Ultimate Multisite igomba gukora mu gihe cyose y'ubwuga bw'ubwugwa bwo gutegura 
 
 Mu gihe cyo gutegura ibyemezo by'ubwoko bw'ubwugwa (server specifications), nta uburyo bwo gukoresha mu gihe cyose. Ibi byaba bitewe n'ibintu runaka ushaka gukora no ku muryango wawe. Uburyo bwo gutegura ibyemezo by'ubwoko bw'ubwugwa (shared hosting) ni uburyo bwiza bwo gufata umusaruro, ariko nk'uko u muryango wako uzatangira gukomeza, ushobora kugira VPS (Virtual Private Server) ikomeye.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Ubu gihe, twitangira kuvuga ku bijyanye n'installing WordPress Multisite.
 

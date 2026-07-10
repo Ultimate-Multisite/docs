@@ -1,0 +1,144 @@
+---
+title: 'Ultimate AI Connector WebLLM:lle'
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM tuo selainpohjaisen AI-päättelyn WordPress multisite -verkkoosi. Se ajaa suuria kielimalleja kokonaan selaimessa käyttäen WebLLM:ää ja MLC-moottoria — ei API-avaimia, ei ulkoisia kutsuja, ei käyttäjän laitteelta poistuvaa dataa.
+
+## Keskeiset ominaisuudet {#key-features}
+
+- **Selainpuolen päättely**: LLM toimii paikallisesti kävijän selaimessa WebLLM/MLC:n kautta — palvelimen GPU:ta ei tarvita
+- **Kelluva chat-widget**: Sisäänkirjautuneet käyttäjät voivat antaa kehotteita selainpuolen LLM:lle suoraan front endistä
+- **Admin-palkin tilailmaisin**: WebLLM-moottorin reaaliaikainen tila näkyy WordPressin admin-palkissa
+- **SharedWorker-ajoympäristö**: Useat selaimen välilehdet jakavat yhden GPU-istunnon sen sijaan, että ne kilpailisivat GPU-resursseista
+- **apiFetch-väliohjelmisto**: WordPress REST -pyynnöt, jotka vastaavat AI Client SDK -mallia, ohjataan läpinäkyvästi paikalliselle WebLLM-välittäjälle — ei loopback HTTP -edestakaista matkaa
+- **Widget-asetusten käyttöliittymä**: Connector-paneelin asetukset chat-widgetin kytkemiseen ja auto-prompt-käyttäytymisen määrittämiseen
+- **IndexedDB-välimuisti**: Mallipainojen lataukset säilyvät CDN-uudelleenohjauksista huolimatta, jotka rikkovat oletusarvoisen Cache API -polun
+- **wpai-suodatinintegraatio**: Kytkeytyy `wpai_preferred_text_models`-suodattimeen, jotta AI Experiments -ominaisuus ohjautuu selainmoottoriin, kun se on määritetty
+
+## Vaatimukset {#requirements}
+
+- WordPress 5.3 tai uudempi
+- PHP 7.4 tai uudempi
+- Ultimate Multisite -plugin (aktiivinen)
+- Selain, jossa on WebGPU-tuki (Chrome 113+, Edge 113+ tai Firefox Nightly, jossa WebGPU on käytössä)
+
+## Asennus {#installation}
+
+1. Lataa lisäosan tiedostot `/wp-content/plugins/`-hakemistoosi
+2. Aktivoi plugin WordPressin 'Plugins'-valikon kautta
+3. Siirry kohtaan **Ultimate Multisite → AI Connector** määrittääksesi lisäosan
+
+## Kelluva chat-widget {#floating-chat-widget}
+
+Kelluva chat-widget antaa minkä tahansa sisäänkirjautuneen käyttäjän olla vuorovaikutuksessa selainpuolen LLM:n kanssa suoraan front endistä poistumatta sivulta, jolla hän on.
+
+### Mitä se tekee {#what-it-does}
+
+Kun se on käytössä, chat-kuvake ilmestyy jokaisen front end -sivun kulmaan sisäänkirjautuneille käyttäjille. Kuvakkeen napsauttaminen avaa chat-paneelin, jossa käyttäjä voi kirjoittaa kehotteita ja vastaanottaa vastauksia paikallisesti toimivalta WebLLM-mallilta. Koska malli toimii kokonaan selaimessa, vastaukset ovat yksityisiä eivätkä sisällä mitään palvelinpuolen käsittelyä.
+
+### Admin-palkin tilailmaisin {#admin-bar-status-indicator}
+
+WordPressin admin-palkki sisältää tilailmaisimen, joka näyttää WebLLM-moottorin nykyisen tilan:
+
+| Tila | Merkitys |
+|--------|---------|
+| **Loading** | MLC-moottori alustuu tai lataa mallipainoja |
+| **Ready** | Malli on ladattu ja käytettävissä päättelyyn |
+| **Idle** | Moottori on ladattu, mutta SharedWorker-välilehti ei ole aktiivinen |
+| **Error** | Moottorin alustus epäonnistui — tarkista yksityiskohdat selaimen konsolista |
+
+Ilmaisin päivittyy reaaliajassa ilman sivun uudelleenlatausta.
+
+### Widgetin käyttöönotto tai poistaminen käytöstä {#how-to-enable-or-disable-the-widget}
+
+1. Siirry verkon adminissa kohtaan **Ultimate Multisite → AI Connector**
+2. Etsi **Connector**-paneeli
+3. Kytke **Enable floating chat widget** päälle tai pois
+4. Tallenna asetukset
+
+Widget voidaan ottaa käyttöön tai poistaa käytöstä myös sivustokohtaisesti sivuston omasta administa, jos verkon ylläpitäjä on myöntänyt kyseisen oikeuden.
+
+## Widget-asetukset {#widget-settings}
+
+**Ultimate Multisite → AI Connector** -kohdan Connector-paneeli sisältää seuraavat asetukset kelluvalle chat-widgetille:
+
+### Ota kelluva chat-widget käyttöön {#enable-floating-chat-widget}
+
+Kytkee chat-widgetin päälle tai pois koko verkossa. Kun se on poistettu käytöstä, widget ei näy millään front end -sivulla käyttäjäroolista riippumatta.
+
+**Oletus:** Pois päältä
+
+### Auto-Prompt-käyttäytyminen {#auto-prompt-behaviour}
+
+Määrittää, lähettääkö chat-widget automaattisesti kehotteen, kun käyttäjä avaa sen.
+
+| Vaihtoehto | Käyttäytyminen |
+|--------|-----------|
+| **Disabled** | Widget avautuu tyhjään chatiin — käyttäjä kirjoittaa oman kehotteensa |
+| **Page context** | Widget avautuu kehotteella, joka on esitäytetty nykyisen sivun otsikon ja sisällön perusteella |
+| **Custom prompt** | Widget avautuu mukautetulla kehotteella, jonka määrität alla olevassa kentässä |
+
+Kun asetuksena on **Custom prompt**, näkyviin tulee lisätekstikenttä, johon voit syöttää oletuskehotetekstin. Tukee perusmallimuuttujia:
+
+- `{site_name}` — nykyisen sivuston nimi
+- `{page_title}` — nykyisen sivun otsikko
+- `{user_display_name}` — sisäänkirjautuneen käyttäjän näyttönimi
+
+**Oletus:** Disabled
+
+## SharedWorker-ajoympäristö {#sharedworker-runtime}
+
+Versio 1.1.0 esittelee SharedWorker-ajoympäristön MLC-moottorille. Aiemmin jokainen WebLLM:ää käyttänyt selaimen välilehti latasi oman malliesiintymänsä, kilpaili GPU-muistista ja aiheutti suorituskykyongelmia laitteilla, joissa on rajallisesti VRAM-muistia.
+
+SharedWorker-ajoympäristössä yksi välilehti toimii moottorin isäntänä. Kaikki muut välilehdet kommunikoivat tämän yhden esiintymän kanssa workerin viestikanavan kautta. Tuloksena:
+
+- Yksi GPU-istunto jaettuna kaikkien avointen välilehtien kesken
+- Nopeammat vastaukset, kun malli on ladattu (ei toistuvaa alustusta)
+- Pienempi huippumuistin käyttö laitteella
+
+SharedWorker on käyttäjille läpinäkyvä. Admin-palkin tilailmaisin heijastaa aina jaetun moottorin tilaa, ei yksittäisen välilehden tilaa.
+
+## apiFetch-väliohjelmisto {#apifetch-middleware}
+
+Lisäosa asentaa `apiFetch`-väliohjelmiston, joka sieppaa WordPress REST API -pyynnöt, jotka vastaavat AI Client SDK -mallia. Sen sijaan, että palvelimelle tehtäisiin loopback HTTP -pyyntö, nämä pyynnöt ohjataan suoraan paikalliselle WebLLM-välittäjälle, joka toimii SharedWorkerissa.
+
+Tämä tarkoittaa, että pluginien ja teemojen, jotka käyttävät vakio-WordPressin `apiFetch` API:a AI-päätepisteiden kutsumiseen, hyödytävät automaattisesti selainpuolen mallia, kun se on saatavilla, ilman tarvittavia koodimuutoksia.
+
+## Koukut ja suodattimet {#hooks-and-filters}
+
+### Suodattimet {#filters}
+
+- `wpai_preferred_text_models` — Rekisteröi WebLLM-selainmoottori ensisijaiseksi tekstimalliksi. Lisäosa kytkeytyy tähän suodattimeen automaattisesti, kun moottori on määritetty ja käytettävissä.
+- `ultimate_webllm_widget_enabled` — Ohita widgetin käyttöönottotila tietylle käyttäjälle tai kontekstille. Palauta `true` tai `false`.
+- `ultimate_webllm_auto_prompt` — Muokkaa automaattisen kehotteen tekstiä ennen kuin se lähetetään widgetille. Vastaanottaa kehotemerkkijonon ja nykyisen `WP_Post`-objektin.
+
+## Vianmääritys {#troubleshooting}
+
+### Chat-widget ei näy {#the-chat-widget-does-not-appear}
+
+- Varmista, että käyttäjä on kirjautunut sisään — widget näytetään vain todennetuille käyttäjille
+- Tarkista, että **Enable floating chat widget** on kytketty päälle Connector-paneelissa
+- Varmista, että käyttäjän selain tukee WebGPU:ta (katso yllä olevat vaatimukset)
+
+### Admin-palkin ilmaisin näyttää "Error" {#the-admin-bar-indicator-shows-error}
+
+Avaa selaimen kehittäjäkonsoli (F12) ja etsi WebLLM:ään liittyviä virheitä. Yleisiä syitä:
+
+- Selain ei tue WebGPU:ta
+- Mallin painojen lataus epäonnistui — tarkista verkkoyhteys ja kokeile tyhjentää IndexedDB-välimuisti selaimen kehittäjätyökaluissa (Application → IndexedDB)
+- Selainlaajennus estää SharedWorkerin
+
+### Mallin painot ladataan joka kerta {#model-weights-download-every-time}
+
+Lisäosa käyttää IndexedDB:tä välimuistin taustajärjestelmänä varmistaakseen, että mallin painot säilyvät CDN-uudelleenohjausten yli. Jos painot ladataan uudelleen jokaisella käynnillä, tarkista, ettei IndexedDB:tä tyhjennetä selaimen tietosuoja-asetuksen tai laajennuksen toimesta.
+
+## Muutosloki {#changelog}
+
+Katso täydellinen versiohistoria kohdasta [Muutosloki](./changelog).

@@ -3,7 +3,7 @@ title: Eithaf Fael Error
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Erruon yn Cyflwyniad y Fael
+# Erruon yn Cyflwyniad y Fael {#error-installing-the-sunrise-file}
 
 Mae'r fyliau `sunrise.php` yn fyliau specialol sy mae WordPress yn ceisio chwilio gyda'i hun wrth ei ddefnyddio. I fod WordPress yn gallu gweld y fyliau `sunrise.php`, angen i fod wedi'i lleoli yn y **folder wp-content**.
 

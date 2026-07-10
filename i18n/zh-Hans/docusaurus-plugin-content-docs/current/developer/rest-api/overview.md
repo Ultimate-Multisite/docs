@@ -1,46 +1,46 @@
 ---
-title: REST API 概览
+title: REST API 概述
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API 参考
+# REST API 参考 {#rest-api-reference}
 
-## 基础配置
+## 基础配置 {#base-configuration}
 
-**基础 URL:** `{site_url}/wp-json/wu/v2/`  
-**身份验证:** API Key & Secret (HTTP Basic Auth or URL Parameters)
+**Base URL：** `{site_url}/wp-json/wu/v2/`
+**认证：** API Key 和 Secret（HTTP Basic Auth 或 URL 参数）
 
-## 身份验证
+## 认证 {#authentication}
 
-### 启用 API
+### 启用 API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### 获取 API 凭证
+### 获取 API 凭据 {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### 认证方法
+### 认证方法 {#authentication-methods}
 
-**HTTP Basic Auth (推荐):**
+**HTTP Basic Auth（推荐）：**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL 参数:**
+**URL 参数：**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## 核心端点
+## 核心端点 {#core-endpoints}
 
-### 1. 客户 API
+### 1. 客户 API {#1-customers-api}
 
-**基础路由:** `/customers`
+**基础路由：** `/customers`
 
 **获取所有客户**
 ```http
@@ -82,9 +82,9 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. 站点 API
+### 2. 站点 API {#2-sites-api}
 
-**基础路由:** `/sites`
+**基础路由：** `/sites`
 
 **创建站点**
 ```http
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. 会员 API
+### 3. 会员资格 API {#3-memberships-api}
 
-**基础路由:** `/memberships`
+**基础路由：** `/memberships`
 
-**创建会员**
+**创建会员资格**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. 产品 API
+### 4. 产品 API {#4-products-api}
 
-**基础路由:** `/products`
+**基础路由：** `/products`
 
 **获取所有产品**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. 支付 API
+### 5. 支付 API {#5-payments-api}
 
-**基础路由:** `/payments`
+**基础路由：** `/payments`
 
 **创建支付**
 ```http
@@ -150,9 +150,9 @@ Content-Type: application/json
 }
 ```
 
-### 6. 域名 API
+### 6. 域名 API {#6-domains-api}
 
-**基础路由:** `/domains`
+**基础路由：** `/domains`
 
 **映射域名**
 ```http
@@ -167,9 +167,10 @@ Content-Type: application/json
 }
 ```
 
-## 注册端点
+## 注册端点 {#registration-endpoint}
 
-The `/register` endpoint provides a complete checkout/registration flow:
+`/register` 端点提供完整的结账/注册流程：
+
 ```http
 POST /wu/v2/register
 Content-Type: application/json
@@ -198,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**响应:**
+**响应：**
 ```json
 {
     "customer": { ... },
@@ -208,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## 错误响应
+## 主权租户端点 {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 为用于配置、检查或验证隔离租户的集成添加了主权租户 REST 覆盖。
+
+确切的请求负载取决于已启用的主机能力，但集成应预期这些端点组：
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+使用 bootstrap 端点来准备租户注册表、数据库、文件系统和路由状态。在切换生产流量之前使用迁移状态和验证端点。使用删除端点进行主权拆除，以便通过插件清理流程移除数据库凭据。
+
+典型的迁移状态响应包括：
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+将 `ready: false` 视为上线前阻断项。检查验证详细信息，修复数据库主机绑定、队列、用户配置或路由问题，然后重试验证。
+
+## 错误响应 {#error-responses}
 
 ```json
 {
@@ -223,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## 分页与过滤
+## 分页和筛选 {#pagination-and-filtering}
 
-**查询参数:**
+**查询参数：**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-常用参数:
-- `per_page` - 每页项目数 (默认: 20, 最大: 100)
+常用参数：
+- `per_page` - 每页项目数（默认：20，最大：100）
 - `page` - 页码
 - `search` - 搜索词
 - `orderby` - 排序字段
-- `order` - 排序方向 (升序/降序)
-- `status` - 按状态过滤
-- `date_created` - 按创建日期范围过滤
+- `order` - 排序方向（asc/desc）
+- `status` - 按状态筛选
+- `date_created` - 按日期范围筛选

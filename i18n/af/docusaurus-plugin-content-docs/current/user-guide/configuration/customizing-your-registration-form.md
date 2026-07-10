@@ -1,154 +1,156 @@
 ---
-title: Aanpas van jou registrasieformulier
+title: Pas jou registrasievorm aan
 sidebar_position: 17
-_i18n_hash: b0e3b7cddd099b4260e5cf01fead8685
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Pas jou Registrasieformulier aan
+# Pas jou registrasievorm aan {#customizing-your-registration-form}
 
-Om jou netwerk uniek te laat lyk van al die ander SaaS wat op die WordPress-platform gebou is, laat Ultimate Multisite jou toe om jou registrasie- en aanmeldbladsye aan te pas met ons **Checkout Forms**-funksie.
+Om jou netwerk uniek te laat lyk teenoor al die ander SaaS wat op die WordPress-platform gebou is, laat Ultimate Multisite jou toe om jou registrasie- en aanmeldbladsye met ons **Afrekenvorms**-funksie aan te pas.
 
-Alhoewel dit 'n maklike en buigsame manier is om te eksperimenteer met verskillende benaderings wanneer jy probeer om nuwe kliënte te konverteer, word dit meestal gebruik om gepersonaliseerde registrasieformuliere te skep. Hierdie artikel het beoog om jou te wys hoe jy dit kan doen.
+Alhoewel dit ’n maklike en buigsame manier is om met verskillende benaderings te eksperimenteer wanneer jy nuwe kliënte probeer omskakel, word dit meestal gebruik om gepersonaliseerde registrasievorms te skep. Hierdie artikel is daarop gemik om jou te wys hoe jy dit kan doen.
 
-## Aanmeld- en registrasiebladsye:
+## Aanmeld- en registrasiebladsye: {#login-and-registration-pages}
 
-Nadat Ultimate Multisite geïnstalleer is, skep dit outomaties aangepaste aanmeld- en registrasiebladsye op jou hoofwebwerf. Jy kan hierdie standaardbladsye enige tyd verander deur na jou **Ultimate Multisite > Settings > Login & Registration** bladsy te gaan.
+Met Ultimate Multisite-installasie skep dit outomaties pasgemaakte aanmeld- en registrasiebladsye op jou hoofwebwerf. Jy kan hierdie verstekbladsye enige tyd verander deur na jou **Ultimate Multisite > Instellings > Aanmelding & Registrasie**-bladsy te gaan.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Aanmeld- en registrasie-instellingsbladsy](/img/config/settings-general.png)
 
-Hier is 'n volledige uitsig van die aanmeld- en registrasie-instellingsbladsy:
+Hier is ’n volledige aansig van die aanmeld- en registrasie-instellingsbladsy:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Volledige aanmeld- en registrasie-instellingsbladsy](/img/config/settings-login-registration-full.png)
 
-Kom ons kyk na elke opsie wat jy op die **Login & Registration** bladsy kan aanpas:
+Kom ons kyk na elkeen van die opsies wat jy op die **Aanmelding & Registrasie**-bladsy kan aanpas:
 
-*   **Enable registration:** Hierdie opsie sal die registrasie op jou netwerk moontlik maak of nie. As dit afgeskakel is, sal jou kliënte nie kan registreer en kan nie vir jou produkte inskryf nie.
+  * **Aktiveer registrasie:** Hierdie opsie sal die registrasie op jou netwerk aktiveer of deaktiveer. As dit afgeskakel is, sal jou kliënte nie kan registreer en op jou produkte inteken nie.
 
-*   **Enable email verification:** As hierdie opsie aangeskakel is, sal kliënte wat inskryf vir 'n gratis plan of 'n betaalde plan met 'n proefperiode, 'n verifikasie-e-pos ontvang en op die verifikasielink moet klik sodat hul webwerwe geskep kan word.
+  * **Aktiveer e-posverifikasie:** As hierdie opsie aangeskakel is, sal kliënte wat op ’n gratis plan of ’n betaalde plan met ’n proeftydperk inteken ’n verifikasie-e-pos ontvang en op die verifikasieskakel moet klik sodat hul webwerwe geskep kan word.
 
-*   **Default registration page:** Dit is die standaardbladsy vir registrasie. Hierdie bladsy moet op jou webwerf gepubliseer word en moet 'n registrasieformulier (ook bekend as 'n checkout form') hê – waar jou kliënte vir jou produkte sal inskryf. Jy kan soveel registrasiebladsye en checkout forms skep as wat jy wil, maar onthou net om die checkout form shortcode op die registrasiebladsy te plaas, anders sal dit nie verskyn nie.
+  * **Verstekregistrasiebladsy:** Dit is die verstekbladsy vir registrasie. Hierdie bladsy moet op jou webwerf gepubliseer wees en ’n registrasievorm hê (ook bekend as ’n afrekenvorm) - waar jou kliënte op jou produkte sal inteken. Jy kan soveel registrasiebladsye en afrekenvorms skep as wat jy wil, onthou net om die afrekenvorm-kortkode op die registrasiebladsy te plaas, anders sal dit nie verskyn nie.
 
-*   **Use custom login page:** Hierdie opsie laat jou toe om 'n aangepaste aanmeldbladsy te gebruik, anders as die standaard wp-login.php bladsy. As hierdie opsie aangeskakel is, kan jy kies watter bladsy vir aanmelding gebruik sal word op die **Default login page** opsie (reg onder).
+  * **Gebruik pasgemaakte aanmeldbladsy:** Hierdie opsie laat jou toe om ’n aangepaste aanmeldbladsy te gebruik, anders as die verstek wp-login.php-bladsy. As hierdie opsie aangeskakel is, kan jy kies watter bladsy vir aanmelding gebruik sal word in die **Verstekaanmeldbladsy**-opsie (direk hieronder).
 
-*   **Obfuscate the original login url (wp-login.php)** : As jy die oorspronklike aanmeld-URL wil verberg, kan jy hierdie opsie aan. Dit is nuttig om brute-force aanvalle te voorkom. As hierdie opsie ingeskakel is, sal Ultimate Multisite 'n 404 fout wys wanneer 'n gebruiker probeer om die oorspronklike wp-login.php skakel te bereik.
+  * **Verdoesel die oorspronklike aanmeld-URL (wp-login.php)** : As jy die oorspronklike aanmeld-URL wil versteek, kan jy hierdie opsie aanskakel. Dit is nuttig om brute-force-aanvalle te voorkom. As hierdie opsie geaktiveer is, sal Ultimate Multisite ’n 404-fout wys wanneer ’n gebruiker probeer om toegang tot die oorspronklike wp-login.php-skakel te kry
 
-*   **Force synchronous site publication:** Nadat 'n kliënt vir 'n produk op 'n netwerk inskryf, moet die nuwe uitstaande webwerf in 'n werklike netwerkwebwerf omskep word. Die publikasieproses gebeur via Job Queue, asynchrone. Skakel hierdie opsie in om die publikasie te dwing om in dieselfde versoek as die inskrywing te gebeur.
+  * **Dwing sinchroniese webwerf-publikasie af:** Nadat ’n kliënt op ’n produk op ’n netwerk ingeteken het, moet die nuwe hangende webwerf in ’n regte netwerkwebwerf omgeskakel word. Die publikasieproses gebeur via Job Queue, asinchroon. Aktiveer hierdie opsie om te dwing dat die publikasie in dieselfde versoek as die registrasie gebeur.
 
-Nou, kom ons kyk na ander opsies wat steeds relevant is vir die aanmeld- en registrasieproses. Hulle is reg onder **Other options** op dieselfde Login & registration bladsy:
+Kom ons kyk nou na ander opsies wat steeds relevant is vir die aanmeld- en registrasieproses. Hulle is direk onder **Ander opsies** op dieselfde Aanmelding & registrasie-bladsy:
 
-*   **Default role:** Dit is die rol wat jou kliënte op hul webwerf sal hê na die inskrywingsproses.
+  * **Verstekrol:** Dit is die rol wat jou kliënte ná die registrasieproses op hul webwerf sal hê.
 
-*   **Enable Jumper:** Maak die Jumper-skakels in die admin-gebied moontlik. Jumper laat administrateurs toe om vinnig na Ultimate Multisite-skerms, netwerkobjekte en ander ondersteunde bestemmings te spring sonder om deur elke meny te blaai. Skakel dit uit as jy verkies om daardie vinnige navigasiehulpmiddel van die admin-koppelvlak te verberg.
+  * **Aktiveer Jumper:** Aktiveer die Jumper-kortpad in die admin-area. Jumper laat administrateurs vinnig na Ultimate Multisite-skerms, netwerkvoorwerpe en ander ondersteunde bestemmings spring sonder om deur elke kieslys te blaai. Skakel dit af as jy verkies om daardie vinnige navigasiehulpmiddel van die admin-koppelvlak te versteek.
 
-*   **Add users to the main site as well:** Om hierdie opsie in te skakel, sal die gebruiker ook by die hoofwebwerf van jou netwerk gevoeg word na die inskrywingsproses. As jy hierdie opsie inskakel, sal ook 'n opsie om die **default role** van hierdie gebruikers op jou webwerf te stel, reg onder verskyn.
+  * **Voeg gebruikers ook by die hoofwebwerf:** Deur hierdie opsie te aktiveer sal die gebruiker ná die registrasieproses ook by die hoofwebwerf van jou netwerk gevoeg word. As jy hierdie opsie aktiveer, sal ’n opsie om die **verstekrol** van hierdie gebruikers op jou webwerf te stel ook direk hieronder verskyn.
 
-*   **Enable multiple accounts:** Laat gebruikers rekeninge hê in verskillende webwerwe van jou netwerk met dieselfde e-posadres. As hierdie opsie uit is, sal jou kliënte nie kan 'n rekening skep op ander webwerwe wat op jou netwerk loop met dieselfde e-posadres nie.
+  * **Aktiveer veelvuldige rekeninge:** Laat gebruikers toe om rekeninge op verskillende webwerwe van jou netwerk met dieselfde e-posadres te hê. As hierdie opsie af is, sal jou kliënte nie met dieselfde e-posadres ’n rekening op ander webwerwe kan skep wat op jou netwerk loop nie.
 
-En dit is al die opsies wat verband hou met aanmelding en registrasie wat jy kan aanpas! Moenie vergeet om jou instellings te stoor nadat jy klaar is met die redigering nie.
+En dit is al die opsies wat met aanmelding en registrasie verband hou wat jy kan aanpas! Moenie vergeet om jou instellings te stoor nadat jy klaar is met die redigering daarvan nie.
 
-## Gebruik van verskeie registrasieformuliere:
+## Gebruik veelvuldige registrasievorms: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 bied 'n checkout form-redigeerder wat jou toelaat om soveel forme as wat jy wil skep, met verskillende velde, produkte wat aangebied word, ens.
+Ultimate Multisite 2.0 bied ’n afrekenvorm-redigeerder wat jou toelaat om soveel vorms te skep as wat jy wil, met verskillende velde, produkte wat aangebied word, ens.
 
-Beide aanmeld- en registrasiebladsye is ingebed met shortcodes: **[wu_login_form]** op die aanmeldbladsy en **[wu_checkout]** vir die registrasiebladsy. Jy kan die registrasiebladsy verder aanpas deur checkout forms te bou of te skep.
+Beide die aanmeld- en registrasiebladsye word met kortkodes ingebed: **[wu_login_form]** op die aanmeldbladsy en**[wu_checkout]** vir die registrasiebladsy. Jy kan die registrasiebladsy verder aanpas deur afrekenvorms te bou of te skep.
 
-Om hierdie funksie te bereik, gaan na die **Checkout Forms**-menu, aan die linkerkantbalk.
+Om toegang tot hierdie funksie te kry, gaan na die **Afrekenvorms**-kieslys, aan die linkerkantbalk.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Afrekenvorms-kieslys in die sybalk](/img/config/checkout-forms-list.png)
 
-Op hierdie bladsy kan jy al die checkout forms sien wat jy het.
+Op hierdie bladsy kan jy al die afrekenvorms sien wat jy het.
 
-As jy een nuut wil skep, klik net op **Add Checkout Form** bo-op die bladsy.
+As jy ’n nuwe een wil skep, klik net op **Voeg afrekenvorm by** boaan die bladsy.
 
-Jy kan een van hierdie drie opsies as jou beginpunt kies: single step, multi-step of blank. Klik dan om na **Go to the Editor** te gaan.
+Jy kan een van hierdie drie opsies as jou beginpunt kies: enkelstap, multi-stap of leeg. Klik dan op **Gaan na die redigeerder**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Voeg afrekenvorm by met enkelstap-, multi-stap- of leë opsies](/img/config/checkout-forms-list.png)
 
-Alternatief kan jy die forme wat jy reeds het, redigeer of duplikaat deur op die opsies onder sy naam te klik. Daar sal jy ook die opsies vind om die form se shortcode te kopieer of die form te verwyder.
+Alternatiewelik kan jy die vorms wat jy reeds het redigeer of dupliseer deur op die opsies onder die naam daarvan te klik. Daar sal jy ook die opsies vind om die vorm se kortkode te kopieer of om die vorm te verwyder.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Afrekenvorm-sweefaksies met redigeer, dupliseer en verwyder](/img/config/checkout-form-hover-actions.png)
 
-As jy single step of multi-step kies, sal die checkout form reeds voorgelaai wees met die basiese stappe sodat dit werk. Dan, indien jy wil, kan jy ekstra stappe byvoeg.
+As jy enkelstap of multi-stap kies, sal die afrekenvorm reeds vooraf ingevul wees met die basiese stappe sodat dit kan werk. Dan, as jy wil, kan jy ekstra stappe daarby voeg.
 
-### Redigeer 'n Checkout Form:
+### Redigeer ’n afrekenvorm: {#editing-a-checkout-form}
 
-Soos ons vroeër genoem het, kan jy checkout forms vir verskillende doeleindes skep. In hierdie voorbeeld sal ons op 'n registrasieformulier werk.
+Soos ons vroeër genoem het, kan jy afrekenvorms vir verskillende doeleindes skep. In hierdie voorbeeld sal ons aan ’n registrasievorm werk.
 
-Nadat jy na die checkout form-redigeerder navigeer het, gee jou form 'n naam (wat slegs vir interne verwysing gebruik sal word) en 'n slug (gebruik om shortcodes te skep, byvoorbeeld).
+Nadat jy na die afrekenvorm-redigeerder gegaan het, gee jou vorm ’n naam (wat slegs vir interne verwysing gebruik sal word) en ’n slug (gebruik om byvoorbeeld shortcakes te skep).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Afrekenvorm-redigeerder met naam- en slug-velde](/img/config/checkout-form-name-slug.png)
 
-Formuliere bestaan uit stappe en velde. Jy kan 'n nuwe stap byvoeg deur op **Add New Checkout Step** te klik.
+Vorms bestaan uit stappe en velde. Jy kan ’n nuwe stap byvoeg deur op **Voeg nuwe afrekenstap by** te klik.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Voeg nuwe afrekenstap by-knoppie](/img/config/checkout-form-add-step.png)
 
-Op die eerste tab van die modale venster, vul die inhoud van jou form se stap in. Gee dit 'n ID, 'n naam en 'n beskrywing. Hierdie items word meestal intern gebruik.
+Op die eerste oortjie van die modale venster, vul die inhoud van jou vorm se stap in. Gee dit ’n ID, ’n naam en ’n beskrywing. Hierdie items word meestal intern gebruik.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step.png)
+![Afrekenstap-inhoudsoortjie met ID, naam en beskrywing](/img/config/checkout-form-step-content.png)
 
-Dankons, stel die sigbaarheid van die stap in. Jy kan kies tussen **Always show** , **Only show for logged in users** of **Only show for guests**.
+Stel daarna die sigbaarheid van die stap. Jy kan kies tussen **Wys altyd** , **Wys slegs vir aangemelde gebruikers** of **Wys slegs vir gaste**.
 
-![Checkout step visibility options](/img/config/checkout-form-step.png)
+![Afrekenstap-sigbaarheidsopsies](/img/config/checkout-form-step-visibility.png)
 
-Laastens, konfigureer die stapstyl. Dit is opsionele velde.
+Laastens, konfigureer die stapstyl. Hierdie is opsionele velde.
 
-![Checkout step style configuration](/img/config/checkout-form-step.png)
+![Afrekenstap-stylkonfigurasie](/img/config/checkout-form-step-style.png)
 
-Nou, dit is tyd om velde by ons eerste stap by te voeg. Klik net op **Add New Field** en kies die tipe afdeling wat jy wil hê.
+Nou is dit tyd om velde by ons eerste stap te voeg. Klik net op **Voeg nuwe veld by** en kies die tipe afdeling wat jy wil hê.
 
-![Add New Field button](/img/config/checkout-form-editor.png)![Field type selection dropdown](/img/config/checkout-form-step.png)
+![Voeg nuwe veld by-knoppie](/img/config/checkout-form-add-field-button.png)![Veldtipe-keuse-aftreklys](/img/config/checkout-form-field-type-dropdown.png)
 
-Elke veld het verskillende parameters wat ingevul moet word. Vir hierdie eerste invoer, sal ons die **Username** veld kies.
+Elke veld het verskillende parameters wat ingevul moet word. Vir hierdie eerste inskrywing sal ons die **Gebruikernaam**-veld kies.
 
-![Username field configuration](/img/config/checkout-form-step.png)![Username field parameters](/img/config/checkout-form-step.png)![Username field additional settings](/img/config/checkout-form-step.png)
+![Gebruikernaam-veldkonfigurasie](/img/config/checkout-form-username-content.png)![Gebruikernaam-veldparameters](/img/config/checkout-form-username-visibility.png)![Bykomende Gebruikernaam-veldinstellings](/img/config/checkout-form-username-style.png)
 
-Jy kan soveel stappe en velde byvoeg as wat jy nodig het. Om jou produkte te wys vir jou kliënte om een te kies, gebruik die Pricing Table veld. As jy wil hê dat jou kliënte 'n sjabloon kan kies, voeg dan die Template Selection veld by. En so verder.
+Jy kan soveel stappe en velde byvoeg as wat jy nodig het. Om jou produkte te vertoon sodat jou kliënte een kan kies, gebruik die Prysstabel-veld. As jy jou kliënte ’n sjabloon wil laat kies, voeg die Sjabloonkeuse-veld by. En so aan.
 
-_**Let wel:** As jy 'n produk skep nadat jy jou checkout form geskep het, sal jy die produk in die Pricing table-afdeling moet byvoeg. As jy dit nie byvoeg nie, sal die produk nie vir jou kliënte op die registrasiebladsy verskyn nie._
+![Afrekenvorm-redigeerder met sjabloonkeuse-veld](/img/config/checkout-form-with-template-field.png)
 
-_**Let wel 2:** username, email, password, site title, site URL, order summary, payment, en submit-knoppie is verpligte velde om 'n checkout form te skep._
+_**Nota:** As jy ’n produk skep nadat jy jou afrekenvorm geskep het, sal jy die produk in die Prysstabel-afdeling moet byvoeg. As jy dit nie byvoeg nie, sal die produk nie aan jou kliënte op die registrasiebladsy verskyn nie._
 
-Terwyl jy aan jou checkout form werk, kan jy altyd die Preview-knoppie gebruik om te sien hoe jou kliënte die form sal sien. Jy kan ook wissel tussen view as 'n bestaande gebruiker of 'n besoeker.
+_**Nota 2:** gebruikernaam, e-pos, wagwoord, webwerftitel, webwerf-URL, bestelopsomming, betaling en indien-knoppie is verpligte velde om ’n afrekenvorm te skep._
 
-![Preview button on the checkout form editor](/img/config/checkout-form-editor.png)![Checkout form preview as visitor or existing user](/img/config/checkout-form-editor.png)
+Terwyl jy aan jou afrekenvorm werk, kan jy altyd die Voorskou-knoppie gebruik om te sien hoe jou kliënte die vorm sal sien. Jy kan ook wissel tussen aansig as ’n bestaande gebruiker of ’n besoeker.
 
-Laastens, op **Advanced Options** kan jy die boodskap vir die **Thank You** bladsy konfigureer, snippets byvoeg om konversies te volg, aangepaste CSS aan jou checkout form byvoeg of dit beperk tot sekere lande.
+![Voorskou-knoppie op die afrekenvorm-redigeerder](/img/config/checkout-form-preview-button.png)![Afrekenvormvoorskou as besoeker of bestaande gebruiker](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+Laastens, onder **Gevorderde opsies** kan jy die boodskap vir die **Dankie**-bladsy konfigureer, brokkies byvoeg om omskakelings na te spoor, pasgemaakte CSS by jou afrekenvorm voeg of dit tot sekere lande beperk.
 
-Jy kan ook jou checkout form handmatig inskakel of uitskakel deur hierdie opsie aan die regterkolom te bewerkstellig, of die form permanent verwyder.
+![Gevorderde opsies met Dankie-bladsy, omskakelingnasporing en pasgemaakte CSS](/img/config/checkout-form-advanced.png)
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+Jy kan ook jou afrekenvorm handmatig aktiveer of deaktiveer deur hierdie opsie in die regterkolom aan of af te skakel, of die vorm permanent verwyder.
 
-Moenie vergeet om jou checkout form te stoor!
+![Aktief-skakelaar en verwyder-opsie vir afrekenvorm](/img/config/checkout-form-active.png)
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+Moenie vergeet om jou afrekenvorm te stoor nie!
 
-Om jou form se shortcode te kry, klik op **Generate Shortcode** en kopieer die resultaat wat op die modale venster getoon word.
+![Stoor afrekenvorm-knoppie](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+Om jou vorm se kortkode te kry, klik op **Genereer kortkode** en kopieer die resultaat wat in die modale venster gewys word.
 
-_**Let wel:** Jy sal hierdie shortcode by jou registrasiebladsy moet voeg om hierdie checkout form daarin te laat voeg._
+![Genereer kortkode-modale venster met kortkode om te kopieer](/img/config/checkout-form-editor.png)
 
-## Voor-keuse van produkte en sjablone via URL-parameters:
+_**Nota:** Jy sal hierdie kortkode by jou registrasiebladsy moet voeg sodat hierdie afrekenvorm daarby gevoeg word._
 
-As jy aangepaste prysitelle vir jou produkte wil skep en op die checkout form die produk of sjabloon wil voor-keus wat jou kliënt van jou prysitelle of sjablonbladsy kies, kan jy URL-parameters hiervoor gebruik.
+## Produkte en sjablone vooraf kies via URL-parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Vir planne:**
+As jy pasgemaakte prysstabelle vir jou produkte wil skep en op die afrekenvorm die produk of sjabloon wat jou kliënt van jou prysstabel of sjablonebladsy kies vooraf wil kies, kan jy URL-parameters hiervoor gebruik.
 
-Gaan na **Ultimate Multisite > Products > Select a plan**. Jy behoort die **Click to copy Shareable Link**-knoppie bo-op die bladsy te sien. Dit is die skakel wat jy kan gebruik om hierdie spesifieke plan op jou checkout form voor-te-keus te stel.
+### **Vir planne:** {#for-plans}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Gaan na **Ultimate Multisite > Produkte > Kies ’n plan**. Jy behoort die **Klik om deelbare skakel te kopieer**-knoppie boaan die bladsy te sien. Dit is die skakel wat jy kan gebruik om hierdie spesifieke plan op jou afrekenvorm vooraf te kies.
 
-Let op dat hierdie deelbare skakel slegs geldig is vir **Planne**. Jy kan deelbare skakels nie vir pakkette of dienste gebruik nie.
+![Produkbladsy met deelbare skakel-knoppie](/img/config/products-list.png)
 
-### Vir sjablone:
+Let daarop dat hierdie deelbare skakel slegs geldig is vir **Planne**. Jy kan nie deelbare skakels vir pakkette of dienste gebruik nie.
 
-As jy webwerf-sjablone op jou checkout form wil voor-keus stel, kan jy die parameter gebruik: **?template_id=X** op jou registrasiebladsy-URL. Die "X" moet vervang word deur die **site template ID nommer**. Om hierdie nommer te kry, gaan na **Ultimate Multisite > Sites**.
+### Vir sjablone: {#for-templates}
 
-Klik op **Manage** reg onder die webwerf-sjabloon wat jy wil gebruik. Jy sal die SITE ID nommer sien. Gebruik net hierdie nommer vir hierdie spesifieke webwerf-sjabloon om op jou checkout form voor-gesit te word. In ons geval hier, sal die URL-parameter **?template_id=2** wees.
+As jy webwerfsjablone op jou afrekenvorm vooraf wil kies, kan jy die parameter gebruik: **?template_id=X** op jou registrasiebladsy-URL. Die "X" moet vervang word deur die **webwerfsjabloon-ID-nommer**. Om hierdie nommer te kry, gaan na **Ultimate Multisite > Webwerwe**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Klik op **Bestuur** direk onder die webwerfsjabloon wat jy wil gebruik. Jy sal die SITE ID-nommer sien. Gebruik net hierdie nommer vir hierdie spesifieke webwerfsjabloon om vooraf op jou afrekenvorm gekies te word. In ons geval hier sou die URL-parameter **?template_id=2** wees.
 
-Kom ons sê ons netwerkwebwerf is [**www.mynetwork.com**](http://www.mynetwork.com) en ons registrasiebladsy met ons checkout form is geleë op die **/register** bladsy. Die hele URL met hierdie webwerf-sjabloon voor-gesit sal lyk soos [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Webwerwelys wat webwerfsjabloon-ID wys](/img/config/site-templates-list.png)
 
-En indien jy wil, kan jy beide produkte en sjablone op jou checkout form voor-keus stel. Alles wat jy hoef te doen, is om die deelbare skakel van die plan te kopieer en die sjabloonparameter aan die einde te plak. Dit sal lyk soos [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Kom ons sê ons netwerkwebwerf is [**www.mynetwork.com**](http://www.mynetwork.com) en ons registrasiebladsy met ons afrekenvorm is op die **/register**-bladsy geleë. Die hele URL met hierdie webwerfsjabloon vooraf gekies sal lyk soos [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+En as jy wil, kan jy beide produkte en sjablone vooraf vir jou afrekenvorm kies. Al wat jy hoef te doen is om die deelbare skakel van die plan te kopieer en die sjabloonparameter aan die einde te plak. Dit sal lyk soos [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

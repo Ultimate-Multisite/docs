@@ -4,21 +4,21 @@ title: Filtro - wu_magic_link_enforce_ip
 sidebar_label: wu_magic_link_enforce_ip
 _i18n_hash: b785314a6a2d9ea45d3beab38baa58fe
 ---
-# Filter: wu_magic_link_enforce_ip
+# Filtro: wu_magic_link_enforce_ip {#filter-wumagiclinkenforceip}
 
-Filtro per verificare se applicare la verifica dell'indirizzo IP.
+Filtra se applicare la verifica dell'indirizzo IP.
 
-Impostare su false per consentire ai token di funzionare da reti diverse. Ciò riduce la sicurezza ma aumenta l'usabilità (ad esempio, per gli utenti mobili che cambiano rete).
+Imposta su false per consentire ai token di funzionare da reti diverse. Questo riduce la sicurezza ma aumenta l'usabilità (ad es., per utenti mobili che cambiano rete).
 
-## Parameters
+## Parametri {#parameters}
 
-| Name | Type | Description |
+| Nome | Tipo | Descrizione |
 |------|------|-------------|
 | $enforce | `bool` | Whether to enforce IP address matching. |
 
-### Since
+### Da {#since}
 
 - 2.0.0
-### Source
+### Sorgente {#source}
 
-Defined in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L422) at line 422
+Definito in [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L422) alla riga 422

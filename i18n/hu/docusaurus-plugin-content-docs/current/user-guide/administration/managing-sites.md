@@ -3,7 +3,7 @@ title: Webhelyek kezelése
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Weboldalak kezelése
+# Weboldalak kezelése {#managing-sites}
 
 A weboldalak (vagy aloldalak) a WaaS vállalkozásod alapját képezik. Az Ultimate Multisite 3 típusú weboldalt különböztet meg:
 
@@ -11,13 +11,13 @@ A weboldalak (vagy aloldalak) a WaaS vállalkozásod alapját képezik. Az Ultim
 - **Weboldal sablonok** — Előre elkészített weboldalak, amelyeket az ügyfelek kiindulási pontként választhatnak
 - **Fő weboldal** — A hálózatod elsődleges weboldala
 
-## Weboldalak megtekintése
+## Weboldalak megtekintése {#viewing-sites}
 
 Navigálj az **Ultimate Multisite → Sites** menüpontra a hálózatodban lévő összes aloldal megtekintéséhez. Minden weboldal típus szerint van megjelölve, és szűrhetsz az Összes weboldal, Ügyfél tulajdonában lévő, Sablonok vagy Függőben lévő kategóriák szerint.
 
 ![Weboldalak listája](/img/admin/sites-list.png)
 
-## Új weboldal hozzáadása
+## Új weboldal hozzáadása {#adding-a-new-site}
 
 Kattints az **Add Site** gombra új weboldal létrehozásához. A következő adatokat kell megadnod:
 
@@ -27,15 +27,15 @@ Kattints az **Add Site** gombra új weboldal létrehozásához. A következő ad
 
 A **Copy Site** opció lehetővé teszi, hogy egy meglévő weboldal sablon alapján hozz létre új weboldalt. Ha engedélyezed, kiválaszthatod, melyik sablont szeretnéd kiindulási pontként használni. Győződj meg róla, hogy a **Copy Media on Duplication** opció be van kapcsolva, ha a médiafájlokat is szeretnéd átmásolni.
 
-## Meglévő weboldal kezelése
+## Meglévő weboldal kezelése {#managing-an-existing-site}
 
 Kattints bármelyik weboldal **Manage** gombjára az **Edit Site** oldal megnyitásához. Itt a következőket találod:
 
-### Alapvető információk
+### Alapvető információk {#basic-information}
 
 A weboldal neve, típusa, azonosítója és leírása. Itt láthatod a hozzárendelt domain-t, a kapcsolódó tagságot és a weboldalt birtokló ügyfélfiókot is.
 
-### Weboldal beállítások
+### Weboldal beállítások {#site-options}
 
 A weboldal képességeinek és korlátainak beállítása:
 
@@ -47,7 +47,7 @@ A weboldal képességeinek és korlátainak beállítása:
 
 Alapértelmezetten a weboldalak a tagság szintjén beállított korlátokat követik. A weboldal szintjén megadott korlátok felülírják a tagsági beállításokat.
 
-### Kapcsolatok
+### Kapcsolatok {#associations}
 
 A weboldal beállításai alatt információkat találsz a következőkről:
 
@@ -55,7 +55,7 @@ A weboldal beállításai alatt információkat találsz a következőkről:
 - A **tagság**, amelyhez a weboldal tartozik
 - A weboldalhoz kapcsolt **ügyfélfiók**
 
-### Jobb oldali sáv
+### Jobb oldali sáv {#right-sidebar}
 
 A jobb oldalon a következőket teheted:
 

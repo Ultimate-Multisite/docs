@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent ndi wothandizira wa AI wa WordPress wodziyimira payekha yemwe angakonze, kumanga, ndi kuyang'anira masite athunthu a WordPress kudzera m'malangizo a chilankhulo chachibadwa. Imapereka gulu lokonzedwa la **maluso** — zochita zosiyana, zoyeseka zomwe agent angayambitse — zokhudza chilichonse kuyambira kasamalidwe ka zomwe zili mpaka kusintha kwa dongosolo la kapangidwe. Mtundu 1.9.0 umawonjezera maluso opanga zomwe zili, kuunika masamba mwakuwona pogwiritsa ntchito zithunzi za pa client-side, mbiri zisanu za agent zomangidwa mkati, ndi zizindikiro za mawonekedwe za kuwongolera mwayi ndi chizindikiro cha mtundu.
+
+## Mawonekedwe Ofunika {#key-features}
+
+- **Dongosolo la maluso** — katundu wosinthika ndi wokulitsidwa wa zochita zomwe agent angayambitse pa kukhazikitsa kwanu kwa WordPress
+- **Kasamalidwe ka Zomwe Zili** — pangani zolemba ndi masamba (kuphatikizapo kupereka ma template a masamba), pangani zolemba zambiri nthawi imodzi mu kuyitana kumodzi, khazikitsani zithunzi zowonetsedwa, ndi kumanga mafomu olumikizirana
+- **Kuunika Mwakuwona** — jambulani zithunzi za masamba amoyo, yerekezerani kusiyana kwa mikhalidwe isanachitike/itachitika, ndipo pezani kuunika kwa kapangidwe kopangidwa ndi AI kokhudza makonzedwe, typography, mtundu, ndi kufikika
+- **Ma agent asanu omangidwa mkati** — Wolemba Zomwe Zili, Womanga Site, Sitidiyo ya Kapangidwe, Woyang'anira Plugin, ndi Wothandizira Thandizo; osinthika kudzera mu Wosankha Agent mu mutu wa macheza
+- **Zizindikiro za mawonekedwe** — zosinthira za kuwongolera mwayi ndi chizindikiro cha mtundu mu Settings → Feature Flags pa zoletsa za maudindo, kutchula dzina la white-label, ndi kusintha widget
+- **Kasamalidwe ka Custom Post Type** — lembetsani, lembani mndandanda, ndi kufufuta mitundu ya zolemba zosinthidwa mwamakonda yokhala ndi kusungika pakayambitsidwanso
+- **Kasamalidwe ka Custom Taxonomy** — lembetsani, lembani mndandanda, ndi kufufuta ma taxonomy osinthidwa mwamakonda okhala ndi kusungika
+- **Maluso a Dongosolo la Kapangidwe** — lowetsani CSS yosinthidwa mwamakonda, yang'anirani ma block patterns osankhidwa, khazikitsani logo ya site, ndi kugwiritsa ntchito ma preset a theme.json
+- **Kasamalidwe ka Global Styles** — werengani ndi kulemba ma value a theme.json a ma palette a mitundu, typography, spacing, ndi zina
+- **Kasamalidwe ka Navigation Menu** — pangani ndi kusintha ma menu oyendayenda ndi zinthu zake mwadongosolo
+- **Kasamalidwe ka Options** — werengani ndi kulemba WordPress options ndi blocklist ya chitetezo yomangidwa mkati kuti muteteze makonda ofunika kwambiri
+- **Registry ya Maluso Okhazikitsika** — pezani ndi kuyambitsa mapaketi owonjezera a maluso popanda kusintha mafayilo a plugin apakati
+- **Kukonza kwa Site Builder v2** — mapulani omanga site a masitepe angapo okhala ndi kupeza plugin, kutsatira kupita patsogolo, ndi kubwezeretsa zolakwika
+- **Lamulo la benchmark la WP-CLI** — yendetsani gulu la mayeso a kuthekera kwa agent kuchokera pa command line pa CI ndi kuunika kwa model
+
+## Zofunikira {#requirements}
+
+- WordPress 6.0 kapena yapamwamba
+- PHP 8.1 kapena yapamwamba
+- WordPress Multisite (yoyambitsidwa pa network) kapena kukhazikitsa kwa single-site
+- Plugin yolumikizira wopereka AI yogwira ntchito (Anthropic, OpenAI, kapena yogwirizana)
+
+## Kuyika {#installation}
+
+1. Kwezani mafayilo a plugin ku `/wp-content/plugins/gratis-ai-agent`
+2. Yambitsani plugin kudzera pa chophimba cha **Plugins** mu WordPress
+3. Pitani ku **Gratis AI Agent → Settings** ndi kulumikiza wopereka AI wanu
+4. (Mwakufuna) Sakatulani **Registry ya Maluso** kuti muyike mapaketi owonjezera a maluso
+
+## Kuyamba Mwachangu {#quick-start}
+
+Mukangoyambitsa ndi kulumikiza kwa wopereka AI, tsegulani panel ya **Gratis AI Agent** mu sidebar ya admin ya WordPress. Lembani malangizo a chilankhulo chachibadwa ndipo agent adzakonza ndi kuchita masitepe ofunikira pogwiritsa ntchito maluso omwe alipo.
+
+**Malangizo a zitsanzo:**
+
+```
+Pangani custom post type ya "Portfolio" yokhala ndi taxonomy ya "Project Category".
+```
+
+```
+Lowetsani palette ya mitundu ya dark-mode mu theme ndipo khazikitsani mtundu woyambirira kukhala #1a1a2e.
+```
+
+```
+Mangani webusayiti ya malo odyera yokhala ndi menu ya pa intaneti, fomu yosungitsa, ndi tsamba lolumikizirana.
+```
+
+## Chidule cha Maluso {#abilities-overview}
+
+Maluso ndi zochita zazing'ono kwambiri zomwe agent angachite. Luso lililonse ndi class ya PHP yolembetsedwa yomwe imapereka schema (ma parameter ndi mitundu yobwerera) yomwe agent amawerenga pa runtime. Maluso amagawidwa m'madera ogwira ntchito:
+
+| Dera | Maluso |
+|---|---|
+| **Kasamalidwe ka Zomwe Zili** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Kuunika Mwakuwona** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Dongosolo la Kapangidwe** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Navigation Menus** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Kasamalidwe ka Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Maluso Okhazikitsika** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Onani [Buku la Maluso](./abilities) kuti mupeze zolemba zonse za ma parameter ndi zitsanzo zogwiritsa ntchito.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent imabwera ndi banja la malamulo la `wp gratis-ai-agent` loyendetsera ma benchmark ndi kuyang'anira maluso kuchokera pa command line. Onani [Buku la WP-CLI](./wp-cli) kuti mupeze mndandanda wonse wa malamulo.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Kusintha Makonda {#configuration}
+
+Makonda onse ali pansi pa **Gratis AI Agent → Settings** mu admin ya WordPress:
+
+| Setting | Kufotokozera |
+|---|---|
+| **Wopereka AI** | Sankhani ndi kukonza cholumikizira cha wopereka AI chomwe chikugwira ntchito |
+| **Model** | Sankhani model ya chilankhulo yogwiritsidwa ntchito pa ma session a agent |
+| **Max Tokens** | Bajeti ya token pa request iliyonse (default 4096) |
+| **Ability Timeout** | Masekondi apamwamba omwe luso limodzi lingayende (default 30) |
+| **Debug Logging** | Lembani ma call a maluso ndi kulingalira kwa agent ku log ya debug ya WordPress |
+
+## Blocklist ya Chitetezo cha Kasamalidwe ka Options {#options-management-safety-blocklist}
+
+Luso la Options Management lili ndi blocklist yomangidwa mkati yomwe imalepheretsa agent kuwerenga kapena kulemba WordPress options achinsinsi. Blocklist yokhazikika imaphatikiza:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (options a URL — gwiritsani ntchito chida chapadera chosamutsira izi)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (makiyi achinsinsi)
+- `active_plugins`, `template` (kuyambitsa plugin/theme — gwiritsani ntchito maluso apadera)
+- Zidziwitso za njira zolipirira ndi API keys zolembetsedwa ndi plugins zomwe zaikidwa
+
+Zolemba zina zitha kuwonjezedwa kudzera mu filter ya `gratis_ai_agent_options_blocklist`.
+
+## Hooks ndi Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `gratis_ai_agent_ability_registered` — imayambitsidwa luso likalembetsedwa, imalandira dzina la class ya luso
+- `gratis_ai_agent_plan_started` — imayambitsidwa pamene plan yomanga tsamba iyamba kuchitika
+- `gratis_ai_agent_plan_completed` — imayambitsidwa pamene plan yatha bwino
+- `gratis_ai_agent_plan_failed` — imayambitsidwa pamene plan yakumana ndi cholakwika chosatheka kukonza
+
+### Filters {#filters}
+
+- `gratis_ai_agent_abilities` — sinthani mndandanda wa maluso olembetsedwa agent isanauike
+- `gratis_ai_agent_options_blocklist` — onjezani kapena chepetsani blocklist ya chitetezo cha options
+- `gratis_ai_agent_benchmark_questions` — onjezani mafunso a benchmark anu ku gulu loyesera
+- `gratis_ai_agent_plan_plugins` — sinthani mndandanda wopeza plugin panthawi yopanga plan ya tsamba
+
+## Thandizo {#support}
+
+Kuti mupeze thandizo, pitani ku [ultimatemultisite.com](https://ultimatemultisite.com) kapena tsegulani issue mu repository ya plugin.
+
+## Changelog {#changelog}
+
+Onani [Changelog](./changelog) kuti mupeze mbiri yonse ya ma version.

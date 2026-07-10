@@ -3,9 +3,9 @@ title: Bestuur van Betalings en Fakture
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Bestuur van Betalings en Fakture
+# Bestuur van Betalings en Fakture {#managing-payments-and-invoices}
 
-## Betalingsinstellings
+## Betalingsinstellings {#payment-settings}
 
 Voordat jy begin met die ontvang van betalings, moet jy die betaling-verwante instellings konfigureer. Navigeer na **Ultimate Multisite → Settings** en klik op die **Payment** tab.
 
@@ -15,7 +15,7 @@ Hier is 'n volledige uitsig van die betalingsinstellingsbladsy:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Algemene Betalingsopsies
+### Algemene Betalingsopsies {#general-payment-options}
 
 In die algemene instellings kan jy konfigureer:
 
@@ -24,7 +24,7 @@ In die algemene instellings kan jy konfigureer:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Betalingspoorte (Payment Gateways)
+### Betalingspoorte (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite ondersteun verskeie betalingspoorte. Jy kan elkeen van hierdie poorte inskakel en konfigureer vanaf die Payment settings tab.
 
@@ -40,11 +40,11 @@ Elke poort het sy eie konfigurasiegedeelte waar jy API-sleutels en ander instell
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox-modus
+### Sandbox-modus {#sandbox-mode}
 
 Jy kan **Sandbox Mode** inskakel om jou betalingsintegrasie te toets voordat jy dit live skakel. Wanneer sandbox-modus aktief is, sal geen werklike heffings gemaak word nie.
 
-## Betalings Bekyk
+## Betalings Bekyk {#viewing-payments}
 
 Navigeer na die **Payments** bladsy onder Ultimate Multisite om alle transaksies oor jou netwerk te sien.
 
@@ -54,7 +54,7 @@ Jy kan betalings filter volgens status (voltooi, uitstaande, misluk, terugbetaal
 
 Klik op 'n betaling om al sy besonderhede te sien, insluitend die itemlyste, verbonde lidmaatskap, kliëntinligting en betalingspoort-data.
 
-## Fakture
+## Fakture {#invoices}
 
 Ultimate Multisite kan outomaties fakture genereer vir betalings. Jy kan die faktuur-sjabloon en nommerreeks konfigureer vanaf die Betalingsinstellings.
 

@@ -3,11 +3,11 @@ title: Estetika Design Systems veščine
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Veščina oblikovnih sistem estetike
+# Veščina oblikovnih sistem estetike {#design-system-aesthetics-skill}
 
 **Veščina oblikovnih sistem estetike** je usmerjen pristop do izboljšanja vizualne identitete vaše spletne strani. Pomoč vam pri sprejemanju usklajenih odločitev o tipografiji, barvah, razspacevanju in motion tokenih, ki definirajo vaš sistem oblikovanja.
 
-## Kaj je Veščina oblikovnih sistem estetike?
+## Kaj je Veščina oblikovnih sistem estetike? {#what-is-design-system-aesthetics}
 
 Veščina oblikovnih sistem estetike je strukturirana veščina, ki vključuje:
 
@@ -20,9 +20,9 @@ Veščina oblikovnih sistem estetike je strukturirana veščina, ki vključuje:
 
 Ti odločitev se shranjuje v datoteki `theme.json` vaše teme, kar ustvarja usklajen vizualni sistem.
 
-## Zakaj uporabljati Veščino oblikovnih sistem estetike?
+## Zakaj uporabljati Veščino oblikovnih sistem estetike? {#why-use-design-system-aesthetics}
 
-### Usklađenost (Consistency)
+### Usklađenost (Consistency) {#consistency}
 
 Sistem oblikovanja zagotavlja:
 
@@ -31,7 +31,7 @@ Sistem oblikovanja zagotavlja:
 - Razspacevanje sledi predvidljivemu vzorcu
 - Animacije se počutijo eno in skojev.
 
-### Uporabnost (Efficiency)
+### Uporabnost (Efficiency) {#efficiency}
 
 Namesto da bi sprejemate oblikovske odločitev stran po strani, vi:
 
@@ -39,7 +39,7 @@ Namesto da bi sprejemate oblikovske odločitev stran po strani, vi:
 - jih uporabite na vseh mestih
 - globalno posodobite z spremembo enega vrednosti
 
-### Fleksibilnost (Flexibility)
+### Fleksibilnost (Flexibility) {#flexibility}
 
 Možete:
 
@@ -47,9 +47,9 @@ Možete:
 - Eksperimentirati z različnimi estetikami
 - Ohraniti blagovno usklajenost, hkrati se razvijate
 
-## Sprožanje Veščine oblikovnih sistem estetike
+## Sprožanje Veščine oblikovnih sistem estetike {#triggering-the-design-system-aesthetics-skill}
 
-### Ručno aktivacija (Manual Activation)
+### Ručno aktivacija (Manual Activation) {#manual-activation}
 
 Veščino lahko začnete v katerem koli trenutku:
 
@@ -69,7 +69,7 @@ ali
 "Usmerjaj me skozi odločitev sistema oblikovanja"
 ```
 
-### Avtomatske predloge (Automatic Suggestions)
+### Avtomatske predloge (Automatic Suggestions) {#automatic-suggestions}
 
 Agenti lahko predlagajo uporabo veščine, ko:
 
@@ -78,9 +78,9 @@ Agenti lahko predlagajo uporabo veščine, ko:
 - Želite izboljšati vizualno usklajenost
 - Ste pripravljeni na sproščanje vaše strani
 
-## Proces dizajna sistemskih estetike
+## Proces dizajna sistemskih estetike {#the-design-system-aesthetics-process}
 
-### Korak 1: Tipografija
+### Korak 1: Tipografija {#step-1-typography}
 
 Agent vam vpraša o vaših izbirih fontov:
 
@@ -110,7 +110,7 @@ Agent nato določi:
 - **Skala težine (Weight scale)**: Težine fontov (regular, medium, bold itd.)
 - **Višina vrstice (Line height)**: Razmak med vrsticami za preglednost
 
-### Korak 2: Paleta barv
+### Korak 2: Paleta barv {#step-2-color-palette}
 
 ```
 Določimo vašo paleto barv.
@@ -140,7 +140,7 @@ Agent ustvari popolno paleto, ki vključuje:
 - Semantične barve (uspeh, opozorilo, napaka)
 - Stati barve (hover in aktivni stavi)
 
-### Korak 3: Razmak
+### Korak 3: Razmak {#step-3-spacing}
 
 Kako želite prostor?
 
@@ -160,7 +160,7 @@ Agent določa tokene za razdalje (spacing tokens):
 - Skala: xs, sm, md, lg, xl, 2xl
 - Specifične vrednosti za padding, margin, gap
 
-### Korak 4: Obleke in Seneči (Borders and Shadows)
+### Korak 4: Obleke in Seneči (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Vizualna globina in definicija:
@@ -183,7 +183,7 @@ Agent ustvarja:
 - Tokene za seneči za različne ravni (elevation levels)
 - Tokene za širino oblike (border width tokens)
 
-### Korak 5: Gibanje in Animacija (Motion and Animation)
+### Korak 5: Gibanje in Animacija (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 Kako bi vaš spletno mesto moralo delovati, ko je interaktiv?
@@ -205,9 +205,9 @@ Agent določa:
 - Funkcije za lažnost (ease-in, ease-out, ease-in-out)
 - Keyframes animacij za pogoste interakcije
 
-## Uporaba Estetike Design Sistema
+## Uporaba Estetike Design Sistema {#applying-design-system-aesthetics}
 
-### Avtomatska uporaba
+### Avtomatska uporaba {#automatic-application}
 
 Po dokončanju veščine agent:
 
@@ -216,13 +216,13 @@ Po dokončanju veščine agent:
 3. Regenerira stile blokov, da bi se ustavili z novo sistemom
 4. Aktivira obnoveno temu
 
-### Ručna uporaba
+### Ručna uporaba {#manual-application}
 
 Morate lahko tudi sami uredite `theme.json`:
 
-## Ogledavanje vašega dizajns sistema
+## Ogledavanje vašega dizajns sistema {#viewing-your-design-system}
 
-### Vprašajte Agenta
+### Vprašajte Agenta {#ask-the-agent}
 
 ```
 "Pokaži mi moj dizajns sistem"
@@ -236,13 +236,13 @@ ali
 
 Agent vam bo prikazal vaše tipografije, barv, razpoložljivosti (spacing) in drugih tokenov.
 
-### Predvidite theme.json
+### Predvidite theme.json {#view-themejson}
 
 Otevrite `/wp-content/themes/[theme-name]/theme.json` v tekstualnem editorju, da vidite siročne definicije tokenov.
 
-## Obnavljanje vašega dizajns sistema
+## Obnavljanje vašega dizajns sistema {#updating-your-design-system}
 
-### Hitri obnavljanja
+### Hitri obnavljanja {#quick-updates}
 
 Vprašajte agenta za specifične spremembe:
 
@@ -262,7 +262,7 @@ ali
 "Spremeni font za naslove na serifni"
 ```
 
-### Popolnoma preoblikovanje
+### Popolnoma preoblikovanje {#full-redesign}
 
 Ponovno vključite veščino Dizajna sistema:
 
@@ -272,7 +272,7 @@ Ponovno vključite veščino Dizajna sistema:
 
 To vas bo vodilo skozi vse odločbe ponovno, başlayanje z vašimi trenutnimi vrednostmi.
 
-### Delna obnavljanja
+### Delna obnavljanja {#partial-updates}
 
 Obnovite specifične aspekte:
 
@@ -280,15 +280,15 @@ Obnovite specifične aspekte:
 "Spremeni samo paleto barv, ostalo bidi kot je"
 ```
 
-## Najboljše prakse za dizajns sistem
+## Najboljše prakse za dizajns sistem {#design-system-best-practices}
 
-### Konsistenca
+### Konsistenca {#consistency-1}
 
 - Uporabite iste tokenove vseh
 - Ne ustvarjajte jedrnih barv ali velikost
 - Omenjujte tokenove namesto da bi vrednosti vpisali v kod (hardcoding)
 
-### Imenovanje
+### Imenovanje {#naming}
 
 Uporabite jasna, semantična imena:
 
@@ -298,7 +298,7 @@ Uporabite jasna, semantična imena:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalabilnost
+### Skalabilnost {#scalability}
 
 Projekt, ki se lahko skalira:
 
@@ -306,7 +306,7 @@ Projekt, ki se lahko skalira:
 - Ustvarite skalirajoče sisteme (xs, sm, md, lg, xl) namesto proizvoljnih vrednosti
 - Planirajte za prihodnje dodajanja
 
-### Dokumentacija
+### Dokumentacija {#documentation}
 
 Dokumentirajte svoj design system:
 
@@ -314,9 +314,9 @@ Dokumentirajte svoj design system:
 - Kdaj uporabljati vsak token
 - Izjave in tepišni scenariji (edge cases)
 
-## Pogostega vzorcevna sheme dizajna (Common Design System Patterns)
+## Pogostega vzorcevna sheme dizajna (Common Design System Patterns) {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Sans-serif tipografija (Inter, Helvetica)
 - Omejena paleta barv (2-3 barve)
@@ -324,7 +324,7 @@ Dokumentirajte svoj design system:
 - Subtilne seneči (shadows)
 - Glatke, hitre animacije
 
-### Topli in prijateljski (Warm and Friendly)
+### Topli in prijateljski (Warm and Friendly) {#warm-and-friendly}
 
 - Mešanje serif in sans-serif tipografije
 - Topla paleta barv (narandžni, topli sivi toni)
@@ -332,7 +332,7 @@ Dokumentirajte svoj design system:
 - Miti seneči
 - Igrane animacije
 
-### Profesionalno korporativno (Professional Corporate)
+### Profesionalno korporativno (Professional Corporate) {#professional-corporate}
 
 - Čista sans-serif tipografija (Roboto, Open Sans)
 - Neutralna paleta z akcentno barvo
@@ -340,7 +340,7 @@ Dokumentirajte svoj design system:
 - Minimalne seneči
 - Subtilne prehodnosti (transitions)
 
-### Kreativno in odločeno (Creative and Bold)
+### Kreativno in odločeno (Creative and Bold) {#creative-and-bold}
 
 - Izrazita tipografija
 - Odločena paleta barv
@@ -348,7 +348,7 @@ Dokumentirajte svoj design system:
 - Močni seneči
 - Opazljive animacije
 
-## Reševanje težav (Troubleshooting)
+## Reševanje težav (Troubleshooting) {#troubleshooting}
 
 **Moje spremembe v design sistemu se ne pojavijo**
 - Očiščite cache svojega brskalnika (browser cache)
@@ -366,7 +366,7 @@ Dokumentirajte svoj design system:
 - Ručno uredite theme.json z predhodnimi vrednostmi
 - Ponovno vgradite skill z različnimi izbira
 
-## Naslednji koraki (Next Steps)
+## Naslednji koraki (Next Steps) {#next-steps}
 
 Po definiranju svojega design sistema:
 

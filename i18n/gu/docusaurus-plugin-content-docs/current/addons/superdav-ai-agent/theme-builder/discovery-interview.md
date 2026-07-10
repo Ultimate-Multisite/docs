@@ -3,35 +3,35 @@ title: શોધ ઇન્ટરવ્યૂ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# શોધ ઇન્ટરવ્યૂ (Discovery Interview)
+# શોધ ઇન્ટરવ્યૂ (Discovery Interview) {#discovery-interview}
 
 **શોધ ઇન્ટરવ્યૂ** એ Theme Builder ની ડિઝાઇન પ્રક્રિયામાં પહેલું પગલું છે. તે તમારા સાઇટ, વ્યવસાય અને ડિઝાઇન પસંદગીઓ વિશે માહિતી એકત્રિત કરે છે જેથી એક વ્યક્તિગત થીમ બનાવી શકાય.
 
-## ઝાંખી (Overview)
+## ઝાંખી (Overview) {#overview}
 
 શોધ ઇન્ટરવ્યૂ તમને તમારી બ્રાન્ડ, લક્ષ્ય પ્રેક્ષકો (target audience) અને ડિઝાઇન લક્ષ્યોને સમજવા માટે પ્રશ્નોની શ્રેણી દ્વારા માર્ગદર્શન આપે છે. વર્ઝન 1.16.0 માં, આ ઇન્ટરવ્યૂમાં હવે **ફોટો અપલોડ સ્ટેપ** શામેલ છે, જે તમને તમારી ડિઝાઇન માટે દ્રશ્ય પ્રેરણા (visual inspiration) પ્રદાન કરવાની મંજૂરી આપે છે.
 
-## ઇન્ટરવ્યૂના પગલાં (Interview Steps)
+## ઇન્ટરવ્યૂના પગલાં (Interview Steps) {#interview-steps}
 
-### 1. વ્યવસાયની માહિતી (Business Information)
+### 1. વ્યવસાયની માહિતી (Business Information) {#1-business-information}
 
 - સાઇટનું નામ અને ટેગલાઇન (tagline)
 - વ્યવસાયનો પ્રકાર અથવા ઉદ્યોગ (industry)
 - મુખ્ય વ્યવસાયિક લક્ષ્યો (Primary business goals)
 - લક્ષ્ય પ્રેક્ષકોનું વર્ણન (Target audience description)
 
-### 2. ડિઝાઇન પસંદગીઓ (Design Preferences)
+### 2. ડિઝાઇન પસંદગીઓ (Design Preferences) {#2-design-preferences}
 
 - પસંદ કરેલી રંગ યોજના (Preferred color scheme)
 - ડિઝાઇન શૈલી (Design style) (આધુનિક, ક્લાસિક, મિનિમાલિસ્ટ, રમતિયાળ, વગેરે.)
 - પ્રેરણાદાયી વેબસાઇટ્સ અથવા બ્રાન્ડ્સ
 - આવશ્યક ડિઝાઇન તત્વો (Must-have design elements)
 
-### 3. ફોટો અપલોડ (Photo Upload) (v1.16.0 માં નવું)
+### 3. ફોટો અપલોડ (Photo Upload) (v1.16.0 માં નવું) {#3-photo-upload-new-in-v1160}
 
 ડિઝાઇન દિશાને પ્રભાવિત કરવા માટે એક અથવા વધુ ફોટા અપલોડ કરો:
 
-#### સ્વીકૃત ફોર્મેટ્સ (Accepted Formats)
+#### સ્વીકૃત ફોર્મેટ્સ (Accepted Formats) {#accepted-formats}
 
 | ફોર્મેટ | એક્સ્ટેન્શન | વિગતો |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 | **WebP** | `.webp` | આધુનિક ફોર્મેટ, નાનો ફાઇલ સાઇઝ |
 | **GIF** | `.gif` | માત્ર સ્ટેટિક ઇમેજીસ (એનિમેશન નહીં) |
 
-#### ફાઇલની જરૂરિયાતો (File Requirements)
+#### ફાઇલની જરૂરિયાતો (File Requirements) {#file-requirements}
 
 - **મહત્તમ ફાઇલ સાઇઝ:** 10 MB
 - **ન્યૂનતમ પરિમાણો (Minimum dimensions):** 400 × 300 pixels
 - **ભલામણ કરેલ પરિમાણો (Recommended dimensions):** 1200 × 800 pixels અથવા તેનાથી મોટા
 - **Aspect ratio:** કોઈપણ ગુણોત્તર સ્વીકાર્ય છે
 
-#### ફોટા ડિઝાઇન દિશાને કેવી રીતે પ્રભાવિત કરે છે (How Photos Influence Design Direction)
+#### ફોટા ડિઝાઇન દિશાને કેવી રીતે પ્રભાવિત કરે છે (How Photos Influence Design Direction) {#how-photos-influence-design-direction}
 
 તમે જે ફોટા અપલોડ કરો છો તે Theme Builder ને સમજવામાં મદદ કરે છે:
 
@@ -57,21 +57,21 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **Design elements** — પેટર્ન, ટેક્સચર અને રચનાત્મક શૈલીઓ
 - **Typography inspiration** — ફોન્ટ શૈલીઓ જે દ્રશ્ય થીમ સાથે સુસંગત હોય
 
-### 4. કન્ટેન્ટ માળખું (Content Structure)
+### 4. કન્ટેન્ટ માળખું (Content Structure) {#4-content-structure}
 
 - જરૂરી મુખ્ય પેજીસ (Home, About, Services, Contact, વગેરે.)
 - બ્લોગ અથવા સમાચાર વિભાગની જરૂર છે કે નહીં
 - ઈ-કોમર્સ કાર્યક્ષમતા (E-commerce functionality) ની જરૂર છે કે નહીં
 - વિશેષ સુવિધાઓ અથવા એકીકરણો (integrations)
 
-### 5. સમીક્ષા અને પુષ્ટિ (Review and Confirmation)
+### 5. સમીક્ષા અને પુષ્ટિ (Review and Confirmation) {#5-review-and-confirmation}
 
 - પ્રદાન કરેલી તમામ માહિતીનો સારાંશ
 - ડિઝાઇન જનરેશન શરૂ થાય તે પહેલાં પુષ્ટિ
 
-## ફોટો અપલોડની શ્રેષ્ઠ પદ્ધતિઓ (Photo Upload Best Practices)
+## ફોટો અપલોડની શ્રેષ્ઠ પદ્ધતિઓ (Photo Upload Best Practices) {#photo-upload-best-practices}
 
-### શું અપલોડ કરવું (What to Upload)
+### શું અપલોડ કરવું (What to Upload) {#what-to-upload}
 
 - **બ્રાન્ડ પ્રેરણા (Brand inspiration)** — લોગો, કલર સ્વોચ (color swatches), અથવા બ્રાન્ડ ગાઇડલાઇન્સ
 - **સ્પર્ધક સાઇટ્સ (Competitor sites)** — તમે જે સાઇટ્સને માનો છો તેના સ્ક્રીનશોટ
@@ -80,7 +80,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **ટીમ અથવા ઓફિસના ફોટા** — વ્યક્તિગત અથવા વ્યાવસાયિક બ્રાન્ડિંગ માટે
 - **લાઇફસ્ટાઇલ ઇમેજીસ (Lifestyle images)** — તમારા લક્ષ્ય પ્રેક્ષકોનું પ્રતિનિધિત્વ કરતા
 
-### શું ટાળવું (What to Avoid)
+### શું ટાળવું (What to Avoid) {#what-to-avoid}
 
 - **ઓછી ગુણવત્તાવાળી છબીઓ (Low-quality images)** — બ્લરી અથવા પિક્સેલેટેડ ફોટા
 - **અસંબંધિત છબીઓ (Unrelated images)** — એવા ફોટા જે તમારી બ્રાન્ડનું પ્રતિનિધિત્વ ન કરે
@@ -88,7 +88,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **કોપીરાઇટ કરેલ સામગ્રી (Copyrighted material)** — ખાતરી કરો કે તમારી પાસે છબીઓનો ઉપયોગ કરવાનો અધિકાર છે
 - **એનિમેટેડ GIFs** — માત્ર સ્ટેટિક ઇમેજીસ પર પ્રક્રિયા કરવામાં આવે છે
 
-### શ્રેષ્ઠ પરિણામો માટેની ટિપ્સ (Tips for Best Results)
+### શ્રેષ્ઠ પરિણામો માટેની ટિપ્સ (Tips for Best Results) {#tips-for-best-results}
 
 1. **2-3 છબીઓ અપલોડ કરો** — બહુવિધ છબીઓ વધુ સારું સંદર્ભ આપે છે
 2. **ઉચ્ચ-ગુણવત્તાવાળા ફોટાનો ઉપયોગ કરો** — સ્પષ્ટ, સારી રીતે પ્રકાશિત છબીઓ શ્રેષ્ઠ કામ કરે છે
@@ -96,7 +96,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 4. **સંદર્ભ પ્રદાન કરો** — સંક્ષિપ્તમાં વર્ણન કરો કે તમે દરેક છબી શા માટે પસંદ કરી
 5. **નિર્ધારિત રહો (Be specific)** — જો તમને કોઈ ચોક્કસ તત્વ ગમતું હોય, તો તે બતાવો
 
-## ડિઝાઇન દિશા આઉટપુટ (Design Direction Output)
+## ડિઝાઇન દિશા આઉટપુટ (Design Direction Output) {#design-direction-output}
 
 શોધ ઇન્ટરવ્યૂ પછી, Theme Builder નીચેની વસ્તુઓ જનરેટ કરે છે:
 
@@ -106,7 +106,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **Visual elements** — આઇકોન, પેટર્ન અને સુશોભન તત્વો
 - **Mood board** — ડિઝાઇન દિશાનું દ્રશ્ય પ્રતિનિધિત્વ
 
-## આગળના પગલાં (Next Steps)
+## આગળના પગલાં (Next Steps) {#next-steps}
 
 શોધ ઇન્ટરવ્યૂ પૂર્ણ કર્યા પછી:
 
@@ -115,7 +115,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 3. [Design Direction](./design-direction.md) સ્ટેપ પર આગળ વધો
 4. Theme Builder તમારી કસ્ટમ થીમ બનાવે છે
 
-## સંબંધિત દસ્તાવેજીકરણ (Related Documentation)
+## સંબંધિત દસ્તાવેજીકરણ (Related Documentation) {#related-documentation}
 
 - [Design Direction](./design-direction.md) — તમારી ડિઝાઇનની સમીક્ષા કરો અને તેને સુધારો
 - [Hospitality Menus](./hospitality-menus.md) — માળખાગત મેનુ પેજીસ બનાવો

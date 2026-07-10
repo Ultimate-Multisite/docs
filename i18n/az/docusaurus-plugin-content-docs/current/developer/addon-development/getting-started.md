@@ -1,27 +1,27 @@
 ---
-title: Addon İnkişafına Giriş
+title: Addon hazırlanmasına başlama
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Addon İnkişafı
+# Əlavənin hazırlanması {#addon-development}
 
-## Addon Strukturu
+## Əlavə strukturu {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # Əsas plugin faylı
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Əsas addon sinifi
-│   ├── admin-pages/             # Admin interfeysi
-│   ├── models/                  # Xüsusi data modelləri
-│   └── integrations/            # Üçüncü tərəf integrasiyaları
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Şablon faylları
+└── templates/                   # Template files
 ```
 
-## Əsas Addon Faylı Şablonu
+## Əsas əlavə faylı şablonu {#main-addon-file-template}
 
 ```php
 <?php
@@ -36,114 +36,114 @@ my-addon/
 
 namespace My_Addon;
 
-// Birbaşa daxil olunduqda çıxar
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// Sabitlər təyin et
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite aktiv olub-olmadığını yoxla
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'My Addon, Ultimate Multisite-ın quraşdırılıb və aktivləşdirilməsini tələb edir.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // Addonu başlat
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * Əsas addon sinifi
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * Addonu başlat
+     * Initialize the addon
      */
     public function init() {
-        // Asılılıqları yüklə
+        // Load dependencies
         $this->load_dependencies();
 
-        // Hook-ları qur
+        // Setup hooks
         $this->setup_hooks();
 
-        // Komponentləri başlat
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * Tələb olunan faylları yüklə
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * WordPress hook-larını qur
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // Aktivasiya/deaktivasiya
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite hook-ları
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * Addon komponentlərini başlat
+     * Initialize addon components
      */
     private function init_components() {
-        // Admin səhifələri, modellər və s. başlat
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * Plugin aktivasiyası
+     * Plugin activation
      */
     public function activate() {
-        // Xüsusi cədvəllər yaradın, seçimlər təyin edin və s.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * Plugin deaktivasiyası
+     * Plugin deactivation
      */
     public function deactivate() {
-        // Lazım olsa təmizləmə
+        // Cleanup if needed
     }
 
     /**
-     * Checkout tamamlanmasını idarə et
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // Checkout tamamlananda xüsusi məntiq
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * Xüsusi checkout sahələri əlavə et
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'Şirkət Ölçüsü',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 işçi',
-                'medium' => '11-100 işçi',
-                'large' => '100+ işçi'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## Xüsusi Model Nümunəsi
+## Fərdi model nümunəsi {#custom-model-example}
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * Xüsusi Lead modeli
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * Model adı
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * Verilbaza cədvəlini təyin et
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * Şirkət adını al
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * Şirkət adını təyin et
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * Lead-i müştəriyə çevir
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // WordPress istifadəçisi yarat
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite müştərisini yarat
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Lead məlumatlarını müştəriyə köçür
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // Lead-i çevrildi kimi işarələ
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Admin Səhifəsinə İntegrasiya
+## Admin səhifəsi inteqrasiyası {#admin-page-integration}
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * Xüsusi admin səhifəsi
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * Səhifə ID-si
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * Menyuda mövqeyi
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * Səhifəni başlat
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite ilə qeydiyyatdan keç
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * Admin səhifəsini qeydiyyatdan keçir
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * Səhifəni göstər
+     * Render the page
      */
     public function render() {
-        // Leads məlumatlarını əldə et
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // Şablonu göstər
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Addonunuzu Test Etmək
+## Addon-unuzu Sınaqdan Keçirmək {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Test müştərisini yarat
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Test üzvlüyünü yarat
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Form göndərməsini simulyasiya et
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Məlumatların saxlanıldığını yoxla
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Növbəti Addımlar
+## v2.13.0 genişləndirmə nöqtələri {#v2130-extension-points}
 
-- Mövcud action və filter-lər üçün [Hooks Reference](/developer/hooks) səhifəsinə baxın
-- API inteqrasiyası üçün [REST API Overview](/developer/rest-api/overview) səhifəsini yoxlayın
-- Başlanğıc şablonu kimi [Addon Template](/addons/addon-template) istifadə edin
+Ultimate Multisite v2.13.0 suveren tenant-larla, checkout domenləri ilə və ya host-provider DNS avtomatlaşdırması ilə inteqrasiya olunan addon-lar üçün faydalı olan bir neçə genişləndirmə nöqtəsi əlavə edir.
+
+### SSO və əsas sayt idarəetmə URL-ləri {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form əsas domenləri {#checkout-form-base-domains}
+
+Addon-unuz checkout-form **Site URL** domenləri kimi davranmalı olan, hər sayt üzrə fərdi xəritələmələr əvəzinə əlavə paylaşılan əsas domenlər təqdim etdikdə `wu_checkout_form_base_domains` istifadə edin:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite bu host-ları normallaşdırır və onlar üçün avtomatik hər sayt üzrə mapped-domain qeydlərini ötürür.
+
+### Avtomatik domen-qeyd yaradılması {#automatic-domain-record-creation}
+
+Addon-unuz yeni yaradılmış sayt üçün avtomatik domen-qeyd yaradılmasını dayandırmalı və ya təxirə salmalı olduqda `wu_should_create_domain_record_for_site` istifadə edin:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` dinləyən host-provider inteqrasiyaları saytlar yaradıldıqda provider tərəfində DNS qeydləri yarada bilər. Əgər həmin action üçün heç bir inteqrasiya qeydiyyatdan keçirilməyibsə, Ultimate Multisite boş fon işini ötürür.
+
+## Növbəti Addımlar {#next-steps}
+
+- Mövcud action və filter-lər üçün [Hooks Referansı](/developer/hooks) bölməsini nəzərdən keçirin
+- API inteqrasiyası üçün [REST API İcmalı](/developer/rest-api/overview) bölməsinə baxın
+- Başlanğıc scaffold kimi [Addon Template](/addons/addon-template) istifadə edin

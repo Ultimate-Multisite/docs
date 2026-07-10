@@ -3,7 +3,7 @@ title: Клиентский аккаунт страницы
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Клиента Hesap Sayfası (v2)
+# Клиента Hesap Sayfası (v2) {#your-clients-account-page-v2}
 
 _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к Ultimate Multisite версии 2.x.**_
 
@@ -11,7 +11,7 @@ _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к 
 
 В этом туториале мы проведем вас по странице учетной записи клиента, и вы увидите, что ваши клиенты могут видеть и делать внутри нее.
 
-## Страница Учетной Записи
+## Страница Учетной Записи {#the-account-page}
 
 Страницу учетной записи можно открыть, нажав на **Account** (Учетная запись) в панели управления вашего клиента.
 
@@ -27,7 +27,7 @@ _**ВАЖНОЕ ПРИМЕЧАНИЕ: Эта статья относится к 
 
 Они также могут изменить план членства на другой или приобрести другой пакет или услугу, которую вы предлагаете. Давайте посмотрим на каждый раздел отдельно.
 
-### Sizin Üyeliğinizin Genel Bakışı:
+### Sizin Üyeliğinizin Genel Bakışı: {#your-membership-overview}
 
 Müşterilerinizin web sitesi adının hemen altındaki ilk blok, mevcut planınızı ve bu planla birlikte satın alınan hizmetleri/paketleri gösteren bir genel bakış sunar. Bu blok ayrıca üyelik numarasını, başlangıçta ödenen tutarı, planın ve herhangi bir hizmetin/paketin maliyetini ve bu üyelik için kaç kez fatura kesildiğini de gösterirler. Ayrıca üyeliğin **Aktif** mı, **Süresi Dolmuş** mu yoksa **İptal Edilmiş** mi olduğunu da görebilirler.
 
@@ -43,7 +43,7 @@ Bu bloğun hemen altında müşteriler **Bu Site Hakkında** ve **Site Limitleri
 
 Not: Kupon kodları bu üyelik değiştirme sayfasında eklenemez. Müşteri ilk üyelik alımında bir kupon kodu kullandıysa, bu kod bu yeni üyeliğe de uygulanacaktır.
 
-### Fatura Adresini Güncelleme:
+### Fatura Adresini Güncelleme: {#updating-the-billing-address}
 
 Учет (аккаунт) sayfada müşteriler fatura adreslerini de güncelleyebilirler. Sadece _Billing Address_ yanındaki **Update** butonuna tıklamaları yeterli.
 
@@ -53,7 +53,7 @@ Müşterinizin önünde yeni bir pencere açılacak. Yapması gereken tek şey, 
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Site Şablonunu Değiştirme:
+### Site Şablonunu Değiştirme: {#changing-the-site-template}
 
 Müşterilerinizin site şablonlarını değiştirmesine izin vermek için **Ultimate Multisite > Settings > Sites** bölümüne gitmeniz ve **Allow Template Switching** (Şablon Değiştirmeye İzin Ver) seçeneğini etkinleştirmeniz gerekiyor.
 
@@ -81,7 +81,7 @@ Onay özelliğini açıp **Switch Process**'e tıkladıktan sonra, yeni site şa
 
 Müşteriler ayrıca sitenin mevcut şablona geri sıfırlanması gerektiğinde bu panelden **Current template'i sıfırla** seçeneğini de kullanabilirler. Başka bir şablona geçmek gibi, bir şablonu sıfırlamak site içeriğini üzerine yazabileceği için müşteriler yalnızca sıfırlama işlemini anladıklarında onaylamalıdırlar.
 
-### Özel Alan Adları Ekleme:
+### Özel Alan Adları Ekleme: {#adding-custom-domains}
 
 Müşterileriniz de bu plan için hesap sayfalarında özel alan adı ekleme seçeneğine sahip olacaklar. Müşterilerinizin özel alan adlarını kullanmasına izin vermek için **Ultimate Multisite > Ayarlar >** **Domain Mapping** bölümüne gidin.
 
@@ -115,7 +115,7 @@ Ayrıca alan eşlemesinin ürün bazında etkin olup olmadığını kontrol etme
 
 После нажатия **Добавить домен** (Add Domain), домен будет добавлен в аккаунт вашего клиента. Всё, что им нужно сделать сейчас, это изменить DNS-записи этого собственного домена у своего регистратора доменов.
 
-### Смена пароля:
+### Смена пароля: {#changing-password}
 
 Внутри панели управления аккаунтом ваши клиенты также могут сменить свой пароль, нажав на **Сменить пароль** (Change Password).
 
@@ -125,7 +125,7 @@ Ayrıca alan eşlemesinin ürün bazında etkin olup olmadığını kontrol etme
 
 ![Форма смены пароля с полями для текущего и нового пароля](/img/account-page/change-password-form.png)
 
-### Опасная зона:
+### Опасная зона: {#danger-zone}
 
 У нас также есть два варианта, которые показаны в части **Опасной зоны**: **Удалить сайт** и **Удалить аккаунт**. Они оба находятся в Опасной зоне, потому что эти действия необратимы. Если ваши клиенты удалят свой веб-сайт или свой аккаунт, они не смогут их восстановить.
 

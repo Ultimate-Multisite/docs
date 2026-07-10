@@ -3,7 +3,7 @@ title: Sida loo Dariyo Qaybta
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Sideeysanayaa (Subscription) sidaadaba?
+# Sideeysanayaa (Subscription) sidaadaba? {#how-can-i-cancel-my-subscription}
 
 Haddii aad leedahay Ultimate Multisite license, waxaad dib u bilaabidda (renewal) si aad u rabto inta aad rabto. Si kastaba ha ahaatee, raac tallaabooyinkan:
 

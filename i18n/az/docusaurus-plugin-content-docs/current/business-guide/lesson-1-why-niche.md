@@ -3,11 +3,11 @@ title: 'Dərslik 1: Nişin Niyə Qalib Gəldiyi'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Dərs 1: Niş Niyə Üstün Görünür
+# Dərs 1: Niş Niyə Üstün Görünür {#lesson-1-why-niche-wins}
 
 Heç bir proqram təminatına toxunmadan əvvəl, müəyyən bir auditoriya üçün qurmağın sizin verə biləcəyiniz ən vacib qərar olduğunu anlamalısınız.
 
-## Ümumi Sayt Satmaq Problemi
+## Ümumi Sayt Satmaq Problemi {#the-problem-with-selling-generic-websites}
 
 Əgər "hər kəs üçün saytlar" təklif edirsinizsə, aşağıdakılarla rəqabət edirsiniz:
 
@@ -17,11 +17,11 @@ Heç bir proqram təminatına toxunmadan əvvəl, müəyyən bir auditoriya üç
 
 Qiymətdə qalib ola bilməzsiniz. Xüsusiyyətlərdə qalib ola bilməzsiniz. Ümumi sayt bazarı aşağı düşmə yarışıdır.
 
-## Niş Seçdiyinizdə Nələr Dəyişir
+## Niş Seçdiyinizdə Nələr Dəyişir {#what-changes-when-you-pick-a-niche}
 
 Platformanı xüsusi olaraq fitnes studiyaları (və ya istənilən niş) üçün quranda, hər şey sizin əlinizə gəlir:
 
-### Real Problemləri Həll Edirsiniz
+### Real Problemləri Həll Edirsiniz {#you-solve-real-problems}
 
 Bir fitnes studiyası sahibi "bir sayt" istəmir. Onlar istəyirlər:
 
@@ -33,45 +33,45 @@ Bir fitnes studiyası sahibi "bir sayt" istəmir. Onlar istəyirlər:
 
 Platformanız bu xüsusi problemləri "qutudan çıxararaq" həll etdikdə, artıq sayt satmırsınız. Bir həll (solution) satırsınız.
 
-### Daha Çox Qiymət Tələb Edə Bilərsiniz
+### Daha Çox Qiymət Tələb Edə Bilərsiniz {#you-can-charge-more}
 
 Ümumi bir WordPress saytı bir dəfəlik layihə kimi 500-2000 dollar arasında qiymətə satıla bilər. Sənaye xüsusi problemləri həll edən niş platforma isə, dəyər davamlı və xüsusi olduğu üçün, təkrarlanan abunəlik kimi ayda 49-199 dollar tələb edə bilər.
 
-### Ekspert Olursunuz
+### Ekspert Olursunuz {#you-become-the-expert}
 
 Bir sənayətə fokuslandığınız zaman, onun dilini, çətin nöqtələrini və alış vərdişlərini öyrənirsiniz. Fitnes studiyası sahibləri bir-birilə danışırlar. Bir nəfər işləyən bir platforma tapdıqda, digərlərinə danışır. Bir nişdə ağızdan ağıza yayılma çox güclüdür, çünki icma sıx və bağlıdır.
 
-### Marketinqiniz Daha Asanlaşır
+### Marketinqiniz Daha Asanlaşır {#your-marketing-gets-easier}
 
 "Biz bizneslər üçün saytlar qururuq" əvəzinə, "Biz fitnes studiyaları üçün saytlar qururuq" deyirsiniz. Enlandinq səhifəniz birbaşa gimnastika salonu sahiblərinə danışır. Şablonlarınız fitnes saytları kimi görünür. Şahidləriniz məşqçilərdən və studiya sahiblərindən gəlir. Hər marketinq parçası daha güclü təsir edir, çünki xüsusidir.
 
-## FitSite İmkanı
+## FitSite İmkanı {#the-fitsite-opportunity}
 
 Gəlin fitnes sənayətini bu məqsəddən (lensdən) baxaraq nəzərdən keçirək:
 
-### Bazar Ölçüsü
+### Bazar Ölçüsü {#market-size}
 
 - Yalnız Amerika Birləşmiş Ştatlarında 100,000-dən çox fitnes müəssisəsi var
 - Əksəriyyəti müstəqil sahibkarlıq kiçik bizneslərdir
 - Əksəriyyəti ya saytı yoxdur, ya pis saytı var, ya da özləri yeniləyə bilmədikləri qiymətli saytları var
 
-### Mövcud Həllər
+### Mövcud Həllər {#current-solutions}
 
 - **Ümumi qurucular** (Wix, Squarespace): Fitnesə xüsusi xüsusiyyətləri yoxdur, studiya sahibləri lazım olanı qurmaqda çətinlik çəkirlər
 - **Xüsusi inkişaf**: Bahadır, bir dəfəlik, saxlamaq çətindir
 - **Sənayəyə xüsusi platformalar**: Az sayı var, və əksəriyyəti tam veb mövcudluğu təklif etmək əvəzinə kitabçağı sistemlərinə bağlıdır
 
-### Boşluq
+### Boşluq {#the-gap}
 
 Fitnes biznesləri üçün "ümumi sayt qurucusu" və "bahalı xüsusi inkişaf" arasında aydın bir boşluq var. Studiya sahiblərinə lazım olan xüsusiyyətlərə malik, peşəkar, fitnesə xüsusi bir sayt təqdim edən və kiçik bir biznes üçün məntiqli qiymətə malik bir platforma bu boşluğu doldurur.
 
 FitSite-ın hədəfləyəcəyi imkan budur.
 
-## Əsas Nəticə
+## Əsas Nəticə {#key-takeaway}
 
 Niş seçmək özünüzü məhdudlaşdırmaq deyil. Bu, səyinizin ən böyük təsirə malik olduğu yerə fokuslanmaq deməkdir. Ayda 99 dollar ilə 500 müştəriyə xidmət edən bir niş platforma, il ərzində 600,000 dollar gəlir gətirən bir biznesdir. Milyonlarla müştəriyə ehtiyacınız yoxdur. Doğru müştərilərə ehtiyacınız var.
 
-## Bu Dərsdə Nələr Qururduq
+## Bu Dərsdə Nələr Qururduq {#what-we-built-this-lesson}
 
 Hələ texniki iş yoxdur -- amma artıq strateji əsasınız var:
 

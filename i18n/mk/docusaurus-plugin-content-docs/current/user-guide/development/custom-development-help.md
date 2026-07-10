@@ -3,13 +3,13 @@ title: Помош при кастом развој
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Како да добиете кајдење за развивање од Codeable?
+# Како да добиете кајдење за развивање од Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Понема пак ви е потребно некоја супер персонализација за да го направиме нашите работни процеси точно како што сакаме. Ако тоа е на што барате, препорачуваме [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), место каде можете да најдете искусени развивачи со експертиза во Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) е платформа која ги поврзува клиентите со квалифични фрилансерски развивачи на WordPress, способни да работат на проекти од било какав обем. Тие имаат детален процес на апликација за да се осигурате дека ќе бидете парот со експерти кои уште специфично квалификувани за задачата што ја имате предвид.
 
-### Како да креирате проект во Codeable?
+### Како да креирате проект во Codeable? {#how-to-create-a-project-in-codeable}
 
 Прво, отидете на [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) и кликнете на копчето **Start a Project** (Започни проект).
 

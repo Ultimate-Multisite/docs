@@ -1,124 +1,126 @@
 ---
 title: Fandraisana vola
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Fandray (v2)
+# Fahazoana karama (v2) {#getting-paid-v2}
 
-_**FANAM-PAHANA MANAN-KANA: Io lahatsoratra ity dia manondro ny Ultimate Multisite v2.x.**_
+_**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka momba ny Ultimate Multisite kinova 2.x.**_
 
-Ny Ultimate Multisite dia manana rafitry ny fandraisana mpikambana sy fandoavam-bola anaty azy. Mba hiara-miasa tsara ny rafitry ny fandoavam-bola, dia nampifangaro ireo *payment gateway* (lalan'ny fandoavam-bola) mahazatra indrindra ampiasaina amin'ny e-commerce isika. Ireo *payment gateway* ohatra fototra ao amin'ny Ultimate Multisite dia _Stripe_, _PayPal_, ary Fandoavam-bola Manokana (Manual Payment). Afaka mampiasa _WooCommerce_, _GoCardless_, ary _Payfast_ ianao mba handray ny fandoavam-bola amin'ny alalan'ny fametrahana ireo *add-on* (fanampiana) mifandraika aminy.
+Ultimate Multisite dia manana rafitra maha-mpikambana sy faktiora tafiditra ao anatiny. Mba hiasan'ny rafitra faktioranay, dia nampidirinay ireo vavahadin-karama mahazatra indrindra ampiasaina amin'ny e-commerce. Ny vavahadin-karama mahazatra ao amin'ny Ultimate Multisite dia _Stripe_ , _PayPal_ , ary Fandoavana amin'ny tanana. Afaka mampiasa _WooCommerce_ , _GoCardless_ ary _Payfast_ koa ianao handraisana fandoavana amin'ny alalan'ny fametrahana ireo add-ons mifanaraka aminy.
 
-## Fandaharam-potoana Fototra (Basic Settings)
+## Fikirana fototra {#basic-settings}
 
-Afaka manova izay rehetra ao amin'ireo *payment gateway* ireo ianao eo ambanin'ny fandaminana fandoavam-bola an'ny Ultimate Multisite. Afaka mahita izany ianao amin'ny alalan'ny mandeha any amin'ny **Ultimate Multisite menu > Settings > Payments.**
+Azonao amboarina ao anatin'ny fikirana fandoavana Ultimate Multisite ireo vavahadin-karama ireo. Afaka mahita izany ianao amin'ny fandehanana any amin'ny **Ultimate Multisite menu > Settings > Payments.**
 
-![Pejy fandaminana fandoavam-bola ao amin'ny Ultimate Multisite mampiseho ny panel Fandaharam-potoana (Payments)](/img/config/payments-settings-page.png)
+![Pejy fikirana Payments ao amin'ny Ultimate Multisite mampiseho ny tontonana Payments](/img/config/payments-settings-page.png)
 
-Alohan'ny fanamboarana ny *payment gateway* anao, dia jereo aloha ireo fandaminana fototra azo atao:
+Alohan'ny hanamboaranao ny vavahadin-karamanao, azafady jereo aloha ireo fikirana fototra momba ny fandoavana azonao amboarina:
 
-**Force auto-rene w:** Izany dia hiantohana fa ho avy miverina (recur) ho azy ny fandoavam-bola amin'ny faran'ny tsingerim-potoana fandoavam-bola (billing cycle) araka ny fepetra napafidy ny mpampiasa.
+**Terena ny fanavaozana mandeha ho azy** **:** Ity dia hiantoka fa hiverimberina ho azy ny fandoavana amin'ny faran'ny tsingerin'ny faktiora tsirairay arakaraka ny fahita matetika amin'ny faktiora nofidin'ny mpampiasa.
 
-<!-- Screenshot unavailable: Fandaharam-potoana Force Auto-Renew toggle ao amin'ny pejy fandaminana fandoavam-bola -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ny Ultimate Multisite v2.13.0 dia manamarina raha misy *credential* (taratasy fanamarinana) azo ampiasaina ho fanavaozana miverimberina (reusable renewal credential) ilay *gateway* iainana alohan'ny hitahirizana fandraisana mpikambana miverimberina miaraka amin'ny auto-renewal. Ny *credential* fanavaozana dia mety ho fandoavam-bola an'ny *gateway*, fifanarahana fandoavam-bola, token voatahiry (saved vault token), na fomba fandoavam-bola azo ampiasaina miverimberina mitovy amin'izany. Raha manambara ny *gateway* fa tsy misy *credential* azo ampiasaina, dia mitahiry ny fandraisana mpikambana an'ny Ultimate Multisite ianao nefa afaka atao ny auto-renewal ary soratana ny toe-javatra hoe tsy misy *credential* mba hahafahan'ny administrator na ny flow support mangataka amin'ilay mpanjifa mba hanamarina indray ny fandoavam-bola alohan'ny daty fanavaozana.
+Ultimate Multisite v2.13.0 dia manamarina raha manana mari-pamantarana fanavaozana azo ampiasaina indray ny gateway mavitrika alohan'ny hitahirizana membership miverimberina misy auto-renewal alefa. Ny mari-pamantarana fanavaozana dia mety ho gateway subscription, fifanarahana faktiora, saved vault token, na fomba fandoavana mitovy aminy azo ampiasaina indray. Raha milaza ny gateway fa tsy misy mari-pamantarana azo ampiasaina, dia mitahiry ny membership ny Ultimate Multisite nefa mamono ny auto-renewal ary manoratra ny toe-javatra tsy fisian'ny mari-pamantarana mba hahafahan'ny mpitantana na ny fizotran'ny fanohanana mangataka amin'ny mpanjifa hanome alalana indray ny fandoavana alohan'ny datin'ny fanavaozana.
 
-Izany dia manakana ny fampisehoana fanofindiana ho mbola hamerenana ho azy (auto-renew) rehefa afaka mandray fandoavam-bola tokana ihany no azo atao amin'ny gateway. Ny gateway add-ons dia tokony hanamarina fa ny checkout miverimberina (recurring checkouts) dia mitahiry antontan-taratasy azo ampiasaina (reusable credential), indrindra rehefa manome fomba fandoavam-bola roa samihafa ny gateway, toy ny fampidirana vola tokana sy ny fomba fandoavam-bola voatahiry/subscription.
+Izany dia misoroka ny membership tsy hiseho ho toy ny hoe havaozina ho azy rehefa tsy afaka mandray afa-tsy fandoavana indray mandeha ny gateway. Ny gateway add-ons dia tokony hanamarina fa ny checkouts miverimberina dia mitahiry mari-pamantarana azo ampiasaina indray, indrindra rehefa manohana fomba fandoavana one-time capture sy vaulted/subscription ny gateway.
 
-**Asorahina fanandramana tsy misy fomba fandoavam-bola (Allow trials without payment method)** **fomba:** Rehefa voafahana ity safidy ity, dia tsy ho mila manampy fampahalalana ara-bola ny mpanjifa anao mandritra ny dingan'ny fametrahana. Ho ilaina izany rehefa tapitra ny fotoana fanandramana ihany.
+**Avelao ny trials tsy misy** **fomba fandoavana:** Rehefa alefa ity safidy ity dia tsy voatery hampiditra fampahalalana ara-bola mandritra ny fizotry ny fisoratana anarana ny client-nao. Izany dia hotakiana ihany rehefa tapitra ny fe-potoana trial.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Andramo ny faktiora rehefa voamarina ny fandoavam-bola (Send invoice on payment confirmation)**: Manome anao safidy raha hanao fametrahana faktiora ianao na tsia aorian'ny fandoavam-bola. Tsy maintsy fantatra fa hiseho eo amin'ny dashboard an'ilay subsite ny tantaran'ny fandoavam-volan'ny mpanjifa. Tsy misy fiantraikany ity safidy ity amin'ny Manual Gateway.
+**Alefaso ny faktiora rehefa voamarina ny fandoavana:** Ity dia manome anao safidy handefa faktiora na tsia aorian'ny fandoavana. Mariho fa hanana fidirana amin'ny tantaran'ny fandoavany ny mpampiasa ao anatin'ny Dashboard an'ny tranonkala zanany. Tsy mihatra amin'ny Manual Gateway ity safidy ity.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Fomba fanomeza laharana faktiora (Invoice numbering scheme)**: Eto, dia afaka misafidy ny famantarana fandoavam-bola iray na rafitra laharana mifanandrify (sequential number scheme). Raha misafidy ny fampiasana code fandoavam-bola ho an'ny faktioranao ianao, tsy mila manao zavatra hafa ianao. Raha misafidy ny fampiasana rafitra laharana mifanandrify ianao, dia mila mametraka ny **laharana faktiora manaraka** (Ity laharana ity no hampiasaina ho laharana faktiora ho an'ny faktiora manaraka hatao amin'ity système ity. Ho ampiana iray isaky ny misy famoronana faktiora vaovao izany. Afaka ovainao ary ataovy azo antoka (save) mba hanorenana indray ny laharana faktiora mifanandrify ho sandana manokana ianao) sy ny **panazavana laharana faktiora** (invoice number prefix).
+**Tetika fanisana laharan'ny faktiora:** Eto, afaka misafidy ianao na kaody fanondroana fandoavana na tetika laharana misesy. Raha misafidy hampiasa kaody fanondroana fandoavana ho an'ny faktioranao ianao dia tsy mila manamboatra na inona na inona. Raha misafidy hampiasa tetika laharana misesy ianao dia mila manamboatra ny **laharan'ny faktiora manaraka** (Ity laharana ity no hampiasaina ho laharan'ny faktiora ho an'ny faktiora manaraka havoaka ao amin'ny rafitra. Ampitomboina iray izany isaky ny misy faktiora vaovao noforonina. Afaka manova sy mitahiry azy ianao mba hamerenana ny laharana misesin'ny faktiora amin'ny sanda manokana) ary ny **tovona laharan'ny faktiora.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
 <!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Aiza ny gateway (gateways) dia aiza no ahitana azy:
+## Aiza no hahitana ireo gateway: {#where-to-find-the-gateways}
 
-Afaka mametraka ireo payment gateways eo amin'ny pejy iray ianao (**Ultimate Multisite > Settings > Payments**). Eo ambanin'ny **active payment gateways**, dia afaka mahita ireto: _Stripe_, _Stripe_ _Checkout_, _PayPal_ ary _Manual_.
+Afaka manamboatra ireo vavahadin-karama ao amin'ilay pejy ihany ianao ( **Ultimate Multisite > Settings > Payments**). Eo ambanin'ny **vavahadin-karama mavitrika** indrindra, dia ho hitanao: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ ary _Manual_.
 
-![Active Payment Gateways section listing Stripe, Stripe Checkout, PayPal and Manual](/img/config/payments-active-gateways.png)
+![Fizarana Active Payment Gateways mitanisa Stripe, Stripe Checkout, PayPal ary Manual](/img/config/payments-active-gateways.png)
 
-Misy lahatsoratra manokana ho an'ny payment gateway tsirairay izay hitarika anao amin'ny dingana fametrahany ary azonao atao ny mahita azy ao amin'ireto rohy ireto.
+Manana lahatsoratra manokana ho an'ny vavahadin-karama tsirairay izahay izay hitarika anao amin'ireo dingana fametrahana azy, izay azonao jerena amin'ireo rohy etsy ambany.
 
-Afaka mijery sy manova ny antsipiriany momba ny famatsiana (payment details) ianao:
+Afaka mijery sy manova antsipirian'ny fandoavana ianao:
 
-![Payment edit interface](/img/admin/payment-edit.png)
+![Seha-pifandraisana fanovana fandoavana](/img/admin/payment-edit.png)
 
-Ity no fomba fijery feno an'ny pejy fanovana ny famatsiana:
+Ity ny fijery feno ny pejy fanovana fandoavana:
 
-![Payment edit full interface](/img/admin/payment-edit-full.png)
+![Seha-pifandraisana feno fanovana fandoavana](/img/admin/payment-edit-full.png)
 
-Ity koa dia fomba fijery feno an'ny fandrindrana (settings) ny payment gateways:
+Ity koa ny fijery feno ny fikirana vavahadin-karama:
 
-![Payment gateways settings full page](/img/config/settings-payments-gateways-full.png)
+![Pejy feno fikirana vavahadin-karama](/img/config/settings-payments-gateways-full.png)
 
-**Fametrahana ny gateway Stripe**
+**Fametrahana ny Stripe gateway**
 
-**Fametrahana ny gateway PayPal**** **
+**Fametrahana ny PayPal gateway**** **
 
-**Fametrahana fandoavam-bola manokana (manual payments)**
+**Fametrahana fandoavana amin'ny tanana**
 
-Raha te-handray anjara amin'ny _WooCommerce_, _GoCardless_ na _Payfast_ ho payment gateway ianao, dia mila **manadium-peo sy mametraka ireo add-on** azy ireo ianao.
+Ankehitriny, raha te hampiasa _WooCommerce_ , _GoCardless_ na _Payfast_ ho vavahadin-karamanao ianao, dia mila **mametraka sy manamboatra ny add-ons-ny**.
 
-### Ahoana no fametrahana ny add-on WooCommerce:
+### Ahoana ny fametrahana ny WooCommerce add-on: {#how-to-install-the-woocommerce-add-on}
 
-Fantatro fa tsy azo ampiasaina amin'ny firehana sasany ny _Stripe_ sy _PayPal_, izay manakana na manakana ny mpampiasa Ultimate Multisite mba hampiasana tsara ny plugin anay. Noho izany dia namoronana add-on ianao mba hampifandraisana ny _WooCommerce_, izay plugin e-commerce tena malaza. Ireo mpandrindra eo amin'izao tontolo izao no nanorina add-on mba hampifandraisana payment gateways samihafa amin'izany. Nampiasa izany aho mba hanitarana ireo payment gateway azo ampiasaina miaraka amin'ny rafitry ny fandoavam-bola (billing system) an'ny Ultimate Multisite.
+Fantatray fa tsy misy any amin'ny firenena sasany ny _Stripe_ sy _PayPal_ ka mametra na manakana ny mpampiasa Ultimate Multisite tsy hampiasa amin'ny fomba mahomby ny plugin-nay. Noho izany dia namorona add-on izahay hampidirana _WooCommerce,_ izay plugin e-commerce tena malaza. Namorona add-ons ireo mpamorona manerana izao tontolo izao mba hampidirana vavahadin-karama samihafa aminy. Nohararaotinay izany hanitarana ireo vavahadin-karama azonao ampiasaina amin'ny rafitra faktiora Ultimate Multisite.
 
-_**ZAVAN-TSY:** Ny fampifandra Ultimate Multisite sy WooCommerce dia mitaky fa ny WooCommerce dia voasokajy (activated) ao amin'ny tranokala lehibena anao._
+_**ZAVA-DEHIBE:** Ultimate Multisite: WooCommerce Integration dia mitaky ny WooCommerce ho alefa farafahakeliny ao amin'ny tranonkala fototrao._
 
-Voalohany, mandehin'ny pejy fanampiny (add-ons). Afaka mahita azy ianao amin'ny alalan'ny fidinana any amin'**Ultimate Multisite > Settings**. Ho hitanao ny tabilao **Add-ons**. Tsindrio eo amin'ny **Check our Add-ons**.
+Voalohany, azafady mandehana any amin'ny pejy add-ons. Afaka mahita izany ianao amin'ny fandehanana any amin'ny **Ultimate Multisite > Settings**. Tokony hahita ny tabilao **Add-ons** ianao. Tsindrio ny **Jereo ny Add-ons-nay**.
 
-<!-- Screenshot unavailable: Tabilao Add-ons ao amin'ny lafiny Settings an'ny Ultimate Multisite miaraka amin'ny rohy Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Aorian'ny tsindriana ny **Check our Add-ons**, dia hivoaka ianao any amin'ny pejy add-ons. Ity no toerana ahitanao ny add-ons rehetra an'ny Ultimate Multisite. Tsindrio ilay add-on hoe **Ultimate Multisite: WooCommerce Integration**.
+Rehefa avy manindry ny **Jereo ny Add-ons-nay** ianao, dia hafindra any amin'ny pejy add-ons. Eto dia afaka mahita ny add-ons Ultimate Multisite rehetra ianao. Tsindrio ny add-on **Ultimate Multisite: WooCommerce Integration**.
 
-![Pejy add-ons mampiseho ireo add-ons an'ny Ultimate Multisite anisan'izany ny WooCommerce Integration](/img/addons/addons-page.png)
+![Pejy Add-ons mitanisa add-ons Ultimate Multisite anisan'izany ny WooCommerce Integration](/img/addons/addons-page.png)
 
-Hivoaka varavara iray miaraka amin'ny antsipiriany momba ilay add-on. Tsindrio fotsiny ny **Install Now**.
+Hisy varavarankely hipoitra miaraka amin’ny antsipirian’ilay fanampiny. Tsindrio fotsiny ny **Apetraho izao**.
 
-<!-- Screenshot unavailable: Varavara antsoina momba ny antsipiriany an'ilay add-on Ultimate Multisite WooCommerce Integration misy ny bokotra Install Now -->
+<!-- Pikantsary tsy misy: varavarankelin’ny antsipirian’ny fanampiny Ultimate Multisite WooCommerce Integration miaraka amin’ny bokotra Apetraho izao -->
 
-Aorian'ny vita ny fametrahana, dia hivoaka ianao any amin'ny pejy plugins. Eto, tsindrio fotsiny ny **Network Activate** ary ho voasokajy (activated) ilay add-on WooCommerce ao anatin'ny tambajotra (network) anao.
+Rehefa vita ny fametrahana, dia hafindra ho any amin’ny pejin’ny fanitarana ianao. Eto, tsindrio fotsiny ny **Alefa amin’ny tambajotra** ary ho alefa amin’ny tambajotranao ny fanampiny WooCommerce.
 
-<!-- Screenshot unavailable: Pejy plugins miaraka amin'ny rohy Network Activate ho an'ilay add-on WooCommerce Integration -->
+<!-- Pikantsary tsy misy: pejin’ny fanitarana misy ny rohy Alefa amin’ny tambajotra ho an’ny fanampiny WooCommerce Integration -->
 
-Aorian'ny fanatanterahana azy, raha mbola tsy manana ny plugin WooCommerce voasokajy sy voasokajy ao amin'ny tranokala anao ianao, dia hisy fampahatsiahivana (reminder) ho tonga.
+Rehefa avy nampandeha azy ianao, raha mbola tsy napetraka sy nalefa ao amin’ny tranokalanao ny fanitarana WooCommerce, dia hahazo fampahatsiahivana ianao.
 
-<!-- Screenshot unavailable: Fanamarihana Admin mampahatsiahia ny administrator mba hametrahana sy hanatanteraka ny plugin WooCommerce -->
+<!-- Pikantsary tsy misy: fampandrenesana ho an’ny mpitantana mampahatsiahy hametraka sy hampandeha ny fanitarana WooCommerce -->
 
-Mba hahita antsipiriany bebe kokoa momba ilay add-on WooCommerce Integration, **tsindrio eto**.
+Raha hamaky bebe kokoa momba ny fanampiny WooCommerce Integration, **tsindrio eto**.
 
-### Ahoana no fametrahana ny add-on GoCardless:
+### Ahoana ny fametrahana ny fanampiny GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Ny dingana hanombohana ny add-on _GoCardless_ dia mitovy amin'ny fomba fampidirana ny add-on _WooCommerce_. Mandehin'ny pejy add-ons ary safidio ny **Ultimate Multisite: GoCardless Gateway** add-on.
+Ny dingana hametrahana ny fanampiny _GoCardless_ dia mitovy be amin’ny fanampiny _WooCommerce_. Mankanesa azafady ao amin’ny pejin’ny fanampiny ary safidio ny fanampiny **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Pejy add-ons misy ny Ultimate Multisite GoCardless Gateway add-on voasafidy -->
+<!-- Pikantsary tsy misy: pejin’ny fanampiny misy ny fanampiny Ultimate Multisite GoCardless Gateway nasongadina -->
 
-Ho avy ny varavarana (window) an'ny add-on. Tsindrio ny **Install Now**.
+Hipoitra ny varavarankelin’ny fanampiny. Tsindrio ny **Apetraho izao**.
 
-<!-- Screenshot unavailable: Fampisehoana ny antsipiriany an'ny Ultimate Multisite GoCardless Gateway add-on misy ny bokotra Install Now -->
+<!-- Pikantsary tsy misy: varavarankelin’ny antsipirian’ny fanampiny Ultimate Multisite GoCardless Gateway miaraka amin’ny bokotra Apetraho izao -->
 
-Rehefa vita ny fampidirana, dia ho tonga amin'ny pejy plugins ianao. Eto, tsindrio fotsiny ny **Network Activate** ary ho aktiva ny add-on _GoCardless_ eo amin'ny tambajakao (network).
+Rehefa vita ny fametrahana, dia hafindra ho any amin’ny pejin’ny fanitarana ianao. Eto, tsindrio fotsiny ny **Alefa amin’ny tambajotra** ary ho alefa amin’ny tambajotranao ny fanampiny _GoCardless_.
 
-<!-- Screenshot unavailable: Pejy plugins misy ny rohy Network Activate ho an'ny GoCardless Gateway add-on -->
+<!-- Pikantsary tsy misy: pejin’ny fanitarana misy ny rohy Alefa amin’ny tambajotra ho an’ny fanampiny GoCardless Gateway -->
 
-Mba hahatakarana ny fomba fanombohana ny gateway _GoCardless_, **dia vakio ity lahatsoratra ity**.
+Raha hianatra ny fomba hanombohana amin’ny vavahady _GoCardless_, **vakio ity lahatsoratra ity**.
 
-### Ahoana no fampidirana ny add-on Payfast:
+### Ahoana ny fametrahana ny fanampiny Payfast: {#how-to-install-the-payfast-add-on}
 
-Mandehin'ny pejy add-ons ary safidio ny **Ultimate Multisite: Payfast Gateway** add-on.
+Mankanesa ao amin’ny pejin’ny fanampiny ary safidio ny fanampiny **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Pejy add-ons misy ny Ultimate Multisite Payfast Gateway add-on voasafidy -->
+<!-- Pikantsary tsy misy: pejin’ny fanampiny misy ny fanampiny Ultimate Multisite Payfast Gateway nasongadina -->
 
-Ho avy ny varavarana (window) an'ny add-on. Tsindrio ny **Install Now**.
+Hipoitra ny varavarankelin’ny fanampiny. Tsindrio ny **Apetraho izao.**
 
-<!-- Screenshot unavailable: Fampisehoana ny antsipiriany an'ny Ultimate Multisite Payfast Gateway add-on misy ny bokotra Install Now -->
+<!-- Pikantsary tsy misy: varavarankelin’ny antsipirian’ny fanampiny Ultimate Multisite Payfast Gateway miaraka amin’ny bokotra Apetraho izao -->
 
-Rehefa vita ny fampidirana, dia ho tonga amin'ny pejy plugins ianao. Eto, tsindrio fotsiny ny **Network Activate** ary ho aktiva ny add-on _Payfast_ eo amin'ny tambajakao (network).
+Rehefa vita ny fametrahana, dia hafindra ho any amin’ny pejin’ny fanitarana ianao. Eto, tsindrio fotsiny ny **Alefa amin’ny tambajotra** ary ho alefa amin’ny tambajotranao ny fanampiny _Payfast_.
+
+<!-- Pikantsary tsy misy: pejin’ny fanitarana misy ny rohy Alefa amin’ny tambajotra ho an’ny fanampiny Payfast Gateway -->

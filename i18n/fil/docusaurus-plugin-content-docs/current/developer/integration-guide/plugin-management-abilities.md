@@ -3,11 +3,11 @@ title: Kakayahan sa Pamamahala ng Plugin
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Management Abilities
+# Plugin Management Abilities {#plugin-management-abilities}
 
 Ang Gratis AI Agent v1.5.0 ay may kasamang **7 plugin management abilities** na maaaring gamitin ng AI assistant habang nag-uusap. Ang mga abilities na ito ay nagbibigay ng programmatic control sa mga WordPress plugin na naka-install sa pamamagitan ng [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox).
 
-## Abilities Overview
+## Abilities Overview {#abilities-overview}
 
 | Ability | Slug | Description |
 |---|---|---|
@@ -19,7 +19,7 @@ Ang Gratis AI Agent v1.5.0 ay may kasamang **7 plugin management abilities** na 
 | Install Plugin | `install_plugin` | Ipinapalabas (deploys) ang isang sandboxed plugin sa live WordPress plugin directory. |
 | Activate Plugin | `activate_plugin` | Ina-activate ang isang sandboxed plugin sa wp-env sandbox environment. |
 
-## Plugin Installer API
+## Plugin Installer API {#plugin-installer-api}
 
 Ang plugin installer naman ang humahawak sa mga operasyon sa file system kapag nagde-deploy o nagtatanggal ng mga plugin. Mga pangunahing pag-uugali nito:
 
@@ -28,7 +28,7 @@ Ang plugin installer naman ang humahawak sa mga operasyon sa file system kapag n
 - **Update**: Pinapalitan ang umiiral na plugin files. Dine-deactivate muna ang plugin bago magsulat para maiwasan ang mga error dahil sa partial-state.
 - **Delete by slug**: Hinahanap ang plugin directory gamit ang slug, dine-deactivate ito sa lahat ng sites, at pagkatapos ay tinatanggal ang directory.
 
-### Registering a Custom Install Handler
+### Registering a Custom Install Handler {#registering-a-custom-install-handler}
 
 Maaari kang mag-hook sa install lifecycle gamit ang `gratis_ai_plugin_installer_before_install` at `gratis_ai_plugin_installer_after_install` actions:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ecosystem Registry
+## Ecosystem Registry {#ecosystem-registry}
 
 Ang mga abilities ay ire-register sa pamamagitan ng **plugin ecosystem registry**. Ini-ma-map ng registry ang ability slugs sa kanilang handler classes at ipinapakita ang mga ito sa tool dispatcher ng AI agent.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner Integration
+## HookScanner Integration {#hookscanner-integration}
 
 Ang mga abilities na `create_plugin` at `update_plugin` ay awtomatikong nagpapatakbo ng **HookScanner** laban sa mga bagong nabuong code. Ang HookScanner ay nagbabalik ng listahan ng WordPress action at filter hooks na na-register ng plugin.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 Awtomatikong nilalaktawan (skips) ng HookScanner ang mga directory na `vendor/` at `node_modules/`.
 
-## Async Job Architecture
+## Async Job Architecture {#async-job-architecture}
 
 Ang mga matagal na operasyon sa plugin (pag-generate, pag-install) ay ipinapadala bilang **async jobs** na may live progress tracking. Ang AI chat interface ay nagpa-poll para sa progress at nag-s-stream ng status updates sa user:
 

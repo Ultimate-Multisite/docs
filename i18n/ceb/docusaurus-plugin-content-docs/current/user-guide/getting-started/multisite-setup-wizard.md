@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ang Ultimate Multisite naglakip og built-in wizard nga awtomatikong nag-convert sa usa ka standard WordPress installation ngadto sa WordPress Multisite network. Kini nagkuha nimo sa kinahanglanon nga i-edit manual ang `wp-config.php` o magpadagan og database commands.
 
@@ -11,13 +11,13 @@ Ang Ultimate Multisite naglakip og built-in wizard nga awtomatikong nag-convert 
 Kung ang imong WordPress installation kay nag-run na isip Multisite network, pwede nimong laktaw ni step kining tanan. Ang wizard mosulod lang kung wala pa gi-enable ang Multisite.
 :::
 
-## Kanus-a Mo Makita ang Wizard?
+## Kanus-a Mo Makita ang Wizard? {#when-does-the-wizard-appear}
 
 Kung i-activate nimo ang Ultimate Multisite sa usa ka standard (non-Multisite) WordPress installation, madetect sa plugin nga wala pa gi-enable ang Multisite ug awtomatikong magdadala kanimo sa Multisite Setup Wizard imbes sa regular setup wizard.
 
 Pwede pud nimo kini i-access direkta pinaagi sa **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Mga Kinahanglanon (Prerequisites)
+## Mga Kinahanglanon (Prerequisites) {#prerequisites}
 
 Sa dili pa mo-run sa wizard, siguruha nga:
 
@@ -29,7 +29,7 @@ Sa dili pa mo-run sa wizard, siguruha nga:
 Ang wizard mag-modify sa imong `wp-config.php` file ug maghimo og bag-ong database tables. Kanunay maghimo og backup sa dili pa mopadayon.
 :::
 
-## Step 1: Welcome
+## Step 1: Welcome {#step-1-welcome}
 
 Ang unang screen nagpatin-aw unsa ang WordPress Multisite ug unsa ang buhaton sa wizard:
 
@@ -42,11 +42,11 @@ Ang unang screen nagpatin-aw unsa ang WordPress Multisite ug unsa ang buhaton sa
 
 I-click ang **Continue** aron magpadayon.
 
-## Step 2: Network Configuration
+## Step 2: Network Configuration {#step-2-network-configuration}
 
 Kini nga step mangutana kanimo kung unsa ang imong mga network settings.
 
-### Site Structure
+### Site Structure {#site-structure}
 
 Pili kung paano i-organisa ang imong mga network site:
 
@@ -57,11 +57,11 @@ Pili kung paano i-organisa ang imong mga network site:
 Kung pilion nimo ang sub-domains, kinahanglan nimo i-configure ang **wildcard DNS** ug usa ka **wildcard SSL certificate** para sa imong domain. Kadaghanan sa managed WordPress hosts kini awtomatiko nga giatubang. Tan-awa ang [Ultimate Multisite 101](./ultimate-multisite-101) alang sa detalyadong pagkompara.
 :::
 
-### Network Title
+### Network Title {#network-title}
 
 Isulod ang ngalan para sa imong network. Kini default kay ang kasamtangang titulo sa imong site nga adunay "Network" nga gidugang. Mahimo nimo kining usbon sa ulahi gikan sa network settings.
 
-### Network Admin Email
+### Network Admin Email {#network-admin-email}
 
 Ang email address nga gigamit alang sa mga notipikasyon sa administrasyon sa network. Kini default kay ang email address sa kasamtangang user.
 
@@ -69,7 +69,7 @@ Ang email address nga gigamit alang sa mga notipikasyon sa administrasyon sa net
 
 Human pun-on ang mga field, i-click ang **Continue** aron magpadayon.
 
-## Step 3: Installation
+## Step 3: Installation {#step-3-installation}
 
 I-click ang butang nga **Install** aron magsugod. Ang wizard naghimo og lima ka automated steps sa sunod-sunod nga paagi, diin matag nagpakita sa iyang progreso sa real-time:
 
@@ -96,7 +96,7 @@ Kung malampuson ang tanang lakang, makakita ka og berde nga "Success!" status pa
 
 Dayon, awtomatikong molihok ang wizard padulong sa screen sa pagkompleto.
 
-## Lakang 4: Kompleto
+## Lakang 4: Kompleto {#step-4-complete}
 
 Kung mahuman na ang installation, makakita ka og success message nga nagpamatuod nga na-enable na ang WordPress Multisite.
 
@@ -108,7 +108,7 @@ Karon, pwede na nimo ipadayon ang Ultimate Multisite setup wizard aron ma-config
 Pagkatapos makompleto ang pag-install sa multisite, ire-redirect ka sa bagong network admin. Kinahanglan nimo nga mag-login pag-usab kay na-update na ang authentication cookies para sa multisite environment.
 :::
 
-## Manual Setup Fallback
+## Manual Setup Fallback {#manual-setup-fallback}
 
 Kung dili maka-isulat ang wizard sa imong `wp-config.php` file (tungod sa file permissions o server restrictions), ipakita ni kini kanimo ang eksaktong code nga kinahanglan nimong i-add manually:
 
@@ -117,9 +117,9 @@ Kung dili maka-isulat ang wizard sa imong `wp-config.php` file (tungod sa file p
 
 Human maghimo ka og manual changes, i-refresh ang page ug madetect sa wizard nga aktibo na ang multisite.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Nag-ingon ang wizard nga dili writable ang wp-config.php
+### Nag-ingon ang wizard nga dili writable ang wp-config.php {#the-wizard-says-wp-configphp-is-not-writable}
 
 Kinahanglan ang web server process nga adunay write permission sa `wp-config.php` file. Mahimo nimo kini:
 
@@ -127,7 +127,7 @@ Kinahanglan ang web server process nga adunay write permission sa `wp-config.php
 - Gamit ang manual setup fallback instructions nga gihatag sa wizard
 - Pangayo og tabang sa imong hosting provider
 
-### Dili ma-access ang mga site human sa setup (subdomains)
+### Dili ma-access ang mga site human sa setup (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Kung gipili nimo ang subdomain structure, kinahanglan nimong i-configure ang **wildcard DNS** para sa imong domain. I-add ang usa ka DNS record:
 
@@ -139,7 +139,7 @@ Value: [imong server IP]
 
 Tingali pangutana sa imong hosting provider kung dili ka sigurado unsaon pag-configure ni.
 
-### Mga isyu sa authentication human sa setup
+### Mga isyu sa authentication human sa setup {#authentication-issues-after-setup}
 
 Kung gihawa ka o nasinati nimo ang cookie errors human sa multisite setup:
 
@@ -147,7 +147,7 @@ Kung gihawa ka o nasinati nimo ang cookie errors human sa multisite setup:
 2. Mag-login pag-usab sa `yourdomain.com/wp-login.php`
 3. Kung nagpadayon ang problema, siguroa nga wala kini set og `COOKIE_DOMAIN` ngadto sa `false` sa imong `wp-config.php` — kini usa ka giila nga isyu sa subdomain multisite installations
 
-### Usa ka lakang nasayop panahon sa installation
+### Usa ka lakang nasayop panahon sa installation {#a-step-failed-during-installation}
 
 Kung naa sa usa sa mga lakang sa pag-install na adunay sayop:
 

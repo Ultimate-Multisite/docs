@@ -4,11 +4,11 @@ title: Filter - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Vrací slugifikovanou síťovou hodnotu možnosti.
 
-## Parametry
+## Parametry {#parameters}
 
 | Název | Typ | Popis |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Vrací slugifikovanou síťovou hodnotu možnosti.
 | $option_name | `string` | Název možnosti. |
 | $default | `mixed` | Výchozí hodnota. |
 
-### Od
+### Od {#since}
 
 - 1.0.0
-### Zdroj
+### Zdroj {#source}
 
 Definováno v [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) na řádku 126
 
 
-## Vrací
+## Vrací {#returns}
 Slugifikovanou síťovou hodnotu možnosti.

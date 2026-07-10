@@ -3,7 +3,7 @@ title: Hooki in filtri
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks in filterji
+# Ultimate Multisite Hooks in filterji {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite je sestavljen iz številnih funkcij in vprašanj za bazo podatkov. Ima hooke in filterje, ki vam omogočajo spremeniti ali dodati novo kode do obstoječih funkcij.
 

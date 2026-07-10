@@ -3,11 +3,11 @@ title: Design System Esztétikai Képesség
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Estetika Képesség
+# Design System Estetika Képesség {#design-system-aesthetics-skill}
 
 A **Design System Estetika képesség** egy útmutatott megközelítés, amely segíti abban, hogy finomítsa az oldal vizuális identitását. Segít abban, hogy konzisztens döntéseket hozhasson a tipográfia, a szín, a távolság és a mozgás (motion) tokenekkel kapcsolatban, amelyek meghatározzák a design system-ét.
 
-## Mi az a Design System Estetika?
+## Mi az a Design System Estetika? {#what-is-design-system-aesthetics}
 
 A Design System Estetika egy strukturált képesség, amely a következőket fedve:
 
@@ -20,9 +20,9 @@ A Design System Estetika egy strukturált képesség, amely a következőket fed
 
 Ezek a döntések rögzülnek a témájának `theme.json` fájlában, létrehozva ezzel egy egységes vizuális rendszert.
 
-## Miért használjam a Design System Estetika-t?
+## Miért használjam a Design System Estetika-t? {#why-use-design-system-aesthetics}
 
-### Egységes megjelenés (Consistency)
+### Egységes megjelenés (Consistency) {#consistency}
 
 Egy design system biztosítja, hogy:
 
@@ -31,7 +31,7 @@ Egy design system biztosítja, hogy:
 - A távolságok előretekintélyes mintát követnek
 - Az animációk egységesnek érezhetőek
 
-### Hatékonyság (Efficiency)
+### Hatékonyság (Efficiency) {#efficiency}
 
 Az oldalakat másolgatva, oldalról oldalra tervezni helyett:
 
@@ -39,7 +39,7 @@ Az oldalakat másolgatva, oldalról oldalra tervezni helyett:
 - Mindenhol alkalmazza őket
 - Globálisan frissíti az egyik érték megváltoztatásával
 
-### Rugalmasság (Flexibility)
+### Rugalmasság (Flexibility) {#flexibility}
 
 Evel tudja:
 
@@ -47,9 +47,9 @@ Evel tudja:
 - Kísérletezhet különböző esztétikákkal
 - Fenntarthatja a márka egységességét, miközben fejlődik
 
-## Hogyan aktiváljam a Design System Estetika képességét?
+## Hogyan aktiváljam a Design System Estetika képességét? {#triggering-the-design-system-aesthetics-skill}
 
-### Manuális aktiválás
+### Manuális aktiválás {#manual-activation}
 
 Bármikor elindíthatja a képességet:
 
@@ -69,7 +69,7 @@ vagy
 "Guide me through design system decisions"
 ```
 
-### Automatikus javaslatok
+### Automatikus javaslatok {#automatic-suggestions}
 
 Az agent javaslatot tehet a képesség használatára, ha:
 
@@ -78,9 +78,9 @@ Az agent javaslatot tehet a képesség használatára, ha:
 - A vizuális egységes megjelenést szeretné javítani
 - Felkészül az oldal elindítására
 
-## A Design System Estetika folyamata
+## A Design System Estetika folyamata {#the-design-system-aesthetics-process}
 
-### 1. Lépés: Tipográfia
+### 1. Lépés: Tipográfia {#step-1-typography}
 
 Az agent megkérdezi a betűtípusválasztásáról:
 
@@ -110,7 +110,7 @@ Ezután definiálja:
 - **Weight scale**: Betűsúlyok (regular, medium, bold, stb.)
 - **Line height**: Sor 간 távolság az olvashatóság érdekében
 
-### 2. Lépés: Színpaletta (Color Palette)
+### 2. Lépés: Színpaletta (Color Palette) {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Az agent létrehoz egy teljes palettát, amely tartalmazza:
 - Semantikus színeket (success, warning, error)
 - Hover és aktív állapotokat
 
-### 3. Lépés: Távolság (Spacing)
+### 3. Lépés: Távolság (Spacing) {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Az agent definiál távolsági tokeneket:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specifikus értékek a padding, margin, gap számára
 
-### 4. Lépés: Keretek és Árnyékok (Borders and Shadows)
+### 4. Lépés: Keretek és Árnyékok (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Az agent létrehoz:
 - Árnyéktokeneket az emelkedési szintekhez
 - Border szélesség tokeneket
 
-### 5. Lépés: Mozgás és Animáció (Motion and Animation)
+### 5. Lépés: Mozgás és Animáció (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Az agent definiál:
 - Easing függvényeket (ease-in, ease-out, ease-in-out)
 - Animációs kulắtáblákat (keyframes) gyakori interakciókhoz
 
-## A Design System Estetika alkalmazása
+## A Design System Estetika alkalmazása {#applying-design-system-aesthetics}
 
-### Automatikus alkalmazás
+### Automatikus alkalmazás {#automatic-application}
 
 Miután befejezte a képességet, az agent:
 
@@ -218,7 +218,7 @@ Miután befejezte a képességet, az agent:
 3. Újragenerálja a block stílusokat, hogy illeszkedjenek a yeni rendszerhez
 4. Aktiválja az frissített témát
 
-### Manuális alkalmazás
+### Manuális alkalmazás {#manual-application}
 
 Kézzel is szerkeszelheti a `theme.json`-t:
 
@@ -257,9 +257,9 @@ Kézzel is szerkeszelheti a `theme.json`-t:
 }
 ```
 
-## A Design System megjelenítése
+## A Design System megjelenítése {#viewing-your-design-system}
 
-### Kérdezze meg az agentet
+### Kérdezze meg az agentet {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ vagy
 
 Az agent megjeleníti a tipógraphiáját, színeit, távolságait és más tokenjeit.
 
-### Megtekintés a theme.json-ban
+### Megtekintés a theme.json-ban {#view-themejson}
 
 Nyissa meg a `/wp-content/themes/[theme-name]/theme.json` fájlt egy szövegszerkesztőben, hogy lássa a raw token definíciókat.
 
-## A Design System frissítése
+## A Design System frissítése {#updating-your-design-system}
 
-### Gyors frissítések
+### Gyors frissítések {#quick-updates}
 
 Kérdezze meg az agentet konkrét változtatásokról:
 
@@ -299,7 +299,7 @@ vagy
 "Change the heading font to a serif"
 ```
 
-### Teljes átalakítás (Full Redesign)
+### Teljes átalakítás (Full Redesign) {#full-redesign}
 
 Változtathatja újra a Design System Estetika képességét:
 
@@ -309,7 +309,7 @@ Változtathatja újra a Design System Estetika képességét:
 
 Ez újra vezet keresztül az összes döntésen, az aktuális értékektől kezdve.
 
-### Részleges frissítések (Partial Updates)
+### Részleges frissítések (Partial Updates) {#partial-updates}
 
 Frissítheti bizonyos aspektusokat:
 
@@ -317,15 +317,15 @@ Frissítheti bizonyos aspektusokat:
 "Just update the color palette, keep everything else"
 ```
 
-## Design System legjobb gyakorlatok
+## Design System legjobb gyakorlatok {#design-system-best-practices}
 
-### Egységes megjelenés (Consistency)
+### Egységes megjelenés (Consistency) {#consistency-1}
 
 - Használja ugyanazokat a tokeneket mindenhol
 - Ne hozzon létre egyszeri színeket vagy méreteket
 - Hivatkozzon a tokenekre, ne hardcode-olja az értékeket
 
-### Nevezetek (Naming)
+### Nevezetek (Naming) {#naming}
 
 Használjon világos, semantikus neveteket:
 
@@ -335,7 +335,7 @@ Használjon világos, semantikus neveteket:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skálázhatóság (Scalability)
+### Skálázhatóság (Scalability) {#scalability}
 
 Tervezze a rendszerét úgy, hogy skálázható legyen:
 
@@ -343,7 +343,7 @@ Tervezze a rendszerét úgy, hogy skálázható legyen:
 - Létrehozjon méretarányokat (xs, sm, md, lg, xl) a véletkerekített értékek helyett
 - Tervezze előre a jövőbeni hozzáadásokra
 
-### Dokumentáció (Documentation)
+### Dokumentáció (Documentation) {#documentation}
 
 Dokumentálja a design system-ét:
 
@@ -351,9 +351,9 @@ Dokumentálja a design system-ét:
 - Mikor kell használni minden tokenet
 - Kivételek és szélsőségi esetek
 
-## Gyakori Design System minták
+## Gyakori Design System minták {#common-design-system-patterns}
 
-### Modern Minimalista
+### Modern Minimalista {#modern-minimalist}
 
 - Sans-serif tipográfia (Inter, Helvetica)
 - Korlátozott színtábla (2-3 szín)
@@ -361,7 +361,7 @@ Dokumentálja a design system-ét:
 - Finom árnyékok
 - Simább, gyors animációk
 
-### Meleg és Barátságos
+### Meleg és Barátságos {#warm-and-friendly}
 
 - Serif és sans-serif keveréke
 - Meleg színtábla (narancsok, meleg szürke)
@@ -369,7 +369,7 @@ Dokumentálja a design system-ét:
 - Lágy árnyékok
 - Játszmás animációk
 
-### Professzionális Korvet (Professional Corporate)
+### Professzionális Korvet (Professional Corporate) {#professional-corporate}
 
 - Tiszt sans-serif (Roboto, Open Sans)
 - Semleges paletta akcentusszínnel
@@ -377,7 +377,7 @@ Dokumentálja a design system-ét:
 - Minimal árnyékok
 - Finom átmenetek
 
-### Kreatív és Merész (Creative and Bold)
+### Kreatív és Merész (Creative and Bold) {#creative-and-bold}
 
 - Megkülönböztető tipográfia
 - Merész színtábla
@@ -385,7 +385,7 @@ Dokumentálja a design system-ét:
 - Erős árnyékok
 - Figyelemre méltó animációk
 
-## Hibaelhárítás (Troubleshooting)
+## Hibaelhárítás (Troubleshooting) {#troubleshooting}
 
 **Nem látszanak a design system változásaim**
 - Törölje az böngésző gyorsítókészletét (cache)
@@ -403,7 +403,7 @@ Dokumentálja a design system-ét:
 - Manuálisan szerkeszze át a `theme.json`-t az előző értékekre
 - Újrahalmaza a képességet más választásokkal
 
-## Következő lépések
+## Következő lépések {#next-steps}
 
 Miután definiálta a design system-ét:
 

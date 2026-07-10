@@ -1,114 +1,112 @@
 ---
-title: Hoe WordPress Multisite installeren
+title: WordPress Multisite installeren
 sidebar_position: 2
-_i18n_hash: ce5929a52ea69f8a4b769f6eab46445c
+_i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hoe installeer ik WordPress Multisite?
+# Hoe installeer ik WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
-WordPress Multisite stelt je in staat om een netwerk van sites op één installatie te hebben. Dit is een ingebouwde functie, maar het is standaard niet actief.
+WordPress Multisite stelt je in staat om een netwerk van sites op één installatie te hebben. Dit is een ingebouwde functie, maar deze is standaard niet actief.
 
-Aangezien Ultimate Multisite een netwerk‑alleen plugin is, leer je in deze tutorial hoe je WordPress Multisite installeert en configureert. Deze tekst is gebaseerd op [How to Install and Setup WordPress Multisite Network](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), van WPBeginner.
+:::tip
+Ultimate Multisite bevat een **[ingebouwde Multisite-installatiewizard](./multisite-setup-wizard)** die dit volledige proces automatiseert. Als je Ultimate Multisite hebt geïnstalleerd, raden we aan de wizard te gebruiken in plaats van de handmatige stappen hieronder te volgen.
+:::
 
-**Dingen om op te letten voordat je je multisite netwerk aanmaakt:**
+Omdat Ultimate Multisite een plugin is die alleen voor netwerken bedoeld is, leer je in deze tutorial hoe je WordPress Multisite handmatig installeert en instelt. Deze tekst is gebaseerd op [Hoe je een WordPress Multisite-netwerk installeert en instelt](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), van WPBeginner.
 
-* Gebruik goede WordPress hosting! Websites op een netwerk delen dezelfde serverresources.
-* Als je slechts een paar sites hebt met weinig verkeer, werkt shared hosting waarschijnlijk voor jou.
-* De meeste **Managed WordPress hosting providers** bieden Multisite out-of-the-box (ze installeren WordPress met Multisite al geactiveerd en geconfigureerd voor jou). Dit geldt voor WP Engine, Closte, Cloudways, enz. Als je niet zeker weet of dit het geval is bij je hostprovider, neem dan contact op met hun support voordat je verdergaat met deze tutorial.
-* Het is ook goed om vertrouwd te zijn met het installeren van WordPress en het bewerken van bestanden via FTP.
+**Dingen om op te letten voordat je je multisite-netwerk maakt:**
 
-_**BELANGRIJK**_ **:** Als je een multisite netwerk op een bestaande WordPress website opzet, vergeet dan niet om:
+  * Zorg voor goede WordPress-hosting! Websites op een netwerk delen dezelfde serverbronnen.
 
-* Maak een volledige back‑up van je WordPress site
-* Deactiveer alle plugins op je site door naar je plugins pagina te gaan, _Deactivate_ te selecteren in bulk acties en vervolgens op _Apply_ te klikken
+  * Als je slechts een paar sites met weinig verkeer hebt, zal shared hosting waarschijnlijk voor je werken.
+
+  * De meeste **Managed WordPress-hostingproviders** bieden Multisite standaard aan (ze installeren WordPress met Multisite al geactiveerd en voor je geconfigureerd). Dit geldt voor WP Engine, Closte, Cloudways, enz. Als je niet zeker weet of dit voor jouw hostingprovider geldt, neem dan contact op met hun support voordat je verdergaat met deze tutorial.
+
+  * Het is ook goed om bekend te zijn met het installeren van WordPress en het bewerken van bestanden met FTP .
+
+_**BELANGRIJK**_ **:** Als je een multisite-netwerk instelt op een bestaande WordPress-website, vergeet dan niet om:
+
+  * Een volledige back-up van je WordPress-site te maken
+
+  * Alle plugins op je site te deactiveren door naar je pluginpagina te gaan, _Deactiveren_ te selecteren bij bulkacties en vervolgens op _Toepassen_ te klikken
 
 <!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
 
-Om Multisite in te schakelen, maak je eerst verbinding met je site via een FTP‑client of cPanel bestandsbeheerder, en open je het wp-config.php bestand voor bewerking.
+Om Multisite in te schakelen, verbind je eerst met je site via een FTP-client of cPanel-bestandsbeheerder, en open je je wp-config.php-bestand om het te bewerken.
 
-Voordat de _*That’s all, stop editing! Happy blogging.*_ regel staat, voeg de volgende code snippet toe:
+Voeg vóór de regel _*That’s all, stop editing! Happy blogging.*_ het volgende codefragment toe:
 
-```php
 define('WP_ALLOW_MULTISITE', true);
-```
 
-Sla het bestand op en upload het wp-config.php bestand terug naar de server.
+Sla je wp-config.php-bestand op en upload het terug naar de server.
 
-Met de multisite functie ingeschakeld op je site, is het nu tijd om je netwerk in te richten.
+Nu de multisite-functie op je site is ingeschakeld, is het tijd om je netwerk in te stellen.
 
-Ga naar **Tools » Network Setup**
+Ga naar **Gereedschap » Netwerkinstallatie**
 
 <!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
 
-Nu moet je WordPress vertellen welke domeinstructuur je zult gebruiken voor sites in je netwerk: subdomeinen of subdirectories.
+Nu moet je WordPress vertellen welk soort domeinstructuur je gaat gebruiken voor sites in je netwerk: subdomeinen of submappen.
 
-Als je kiest voor subdomeinen, moet je je DNS‑instellingen voor domein mapping aanpassen en zorgen dat je _**wildcard subdomains**_ instelt voor je multisite netwerk.
+Als je subdomeinen kiest, moet je je DNS-instellingen wijzigen voor domeintoewijzing en ervoor zorgen dat je _**wildcard-subdomeinen**_ instelt voor je multisite-netwerk.
 
-Ga terug naar Network Setup, geef een titel voor je netwerk en zorg dat het e-mailadres in Network admin email correct is. Klik op _Install_ om door te gaan.
+Terug bij Netwerkinstallatie geef je een titel op voor je netwerk en zorg je ervoor dat het e-mailadres in de netwerkbeheerder-e-mail correct is. Klik op _Installeren_ om door te gaan.
 
 <!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
 
-Voeg deze code, geleverd door WordPress, toe aan je _**wp-config.php**_ :
+Voeg deze code, aangeleverd door WordPress, toe aan je _**wp-config.php**_ :
 
-```php
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-define('DOMAIN_CURRENT_SITE', 'multisite.local');
-define('PATH_CURRENT_SITE', '/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
-```
+define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CURRENT_SITE', 'multisite.local'); define('PATH_CURRENT_SITE', '/'); define('SITE_ID_CURRENT_SITE', 1); define('BLOG_ID_CURRENT_SITE', 1);
 
-En deze code, ook geleverd door WordPress, toe aan je _**.htaccess**_ bestand:
+En deze code, ook aangeleverd door WordPress, aan je _**.htaccess**_-bestand:
 
-```apache
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index.php$ - [L]
+RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
+
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-RewriteRule ^(wp-(content|admin|includes)._) $1 [L]
-RewriteRule ^(._.php)$ $1 [L]
-RewriteRule . index.php [L]
-```
+RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d RewriteRule ^ - [L] RewriteRule ^(wp-(content|admin|includes)._) $1 [L] RewriteRule ^(._.php)$ $1 [L] RewriteRule . index.php [L]
 
-Gebruik een FTP‑client of een bestandsbeheerder (als je iets als cPanel gebruikt, bijvoorbeeld) om de code in deze twee bestanden te kopiëren en plakken.
+Gebruik een FTP-client of een bestandsbeheerder (als je bijvoorbeeld iets als cPanel gebruikt) om de code in deze twee bestanden te kopiëren en plakken.
 
-Ten slotte log je opnieuw in op je WordPress site om toegang te krijgen tot je multisite netwerk.
+Log ten slotte opnieuw in op je WordPress-site om toegang te krijgen tot je multisite-netwerk.
 
-**Het is belangrijk om te testen en te zorgen dat je een subsite kunt aanmaken op je WordPress Multisite installatie voordat je Ultimate Multisite installeert.**
+**Het is belangrijk om te testen en ervoor te zorgen dat je een subsite kunt maken op je WordPress Multisite-installatie voordat je Ultimate Multisite installeert.**
 
-Om een subsite aan te maken:
+Een subsite maken:
 
-1. Open het wp-admin van je website
-2. Navigeer naar My Sites > Sites (/wp-admin/network/sites.php)
-3. Klik op Add New bovenaan
-4. Vul alle velden in:
+  1. Open de wp-admin van je website
 
-   * Site Address — Gebruik nooit “www”
-   * Subdomain: [siteaddress.yourdomain.com](http://siteaddress.yourdomain.com)
-   * Subdirectory: [yourdomain.com/siteaddress](http://yourdomain.com/siteaddress)
-   * Site Title — Titel van de site, kan later worden gewijzigd
-   * Admin Email — Stel in als de initiële admin gebruiker voor de subsite
+  2. Navigeer naar Mijn sites > Sites (/wp-admin/network/sites.php)
 
-![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
+  3. Klik bovenaan op Nieuwe toevoegen
 
-Na het invullen van de velden, klik op de knop "Add site". Zodra de nieuwe subsite is aangemaakt, ga je ernaar toe om te controleren of de subsite functioneert.
+  4. Vul alle velden in:
 
-## Veelvoorkomende problemen:
+  * Siteadres — Gebruik nooit “www”
 
-### 1\. Ik kan nieuwe sites aanmaken maar ze zijn niet toegankelijk.
+  * Subdomein: [siteaddress.yourdomain.com](http://siteaddress.yourdomain.com)
 
-Als je subdomeinen hebt gekozen, moet je ook wildcard subdomains instellen voor je multisite netwerk.
+  * Submap: [yourdomain.com/siteaddress](http://yourdomain.com/siteaddress)
 
-Ga daarvoor naar het dashboard van het controlepaneel van het hostingaccount van je website (bijv. cPanel/Plesk/Direct Admin, afhankelijk van je hostingprovider).
+  * Sitetitel — Titel van de site, kan later worden gewijzigd
 
-Zoek een optie voor "Domains" of "Subdomains". In sommige controlepanelen staat het als "Domain administration".
+  * Beheerder-e-mail — Stel in als de initiële beheerdergebruiker voor de subsite
 
-Voer in het subdomeinveld een ster (*) in. Vervolgens moet het je vragen om een domeinnaam te selecteren onder welke het subdomein moet worden toegevoegd.
+![Formulier voor nieuwe site toevoegen in WordPress Multisite](/img/admin/sites-list.png)
 
-De document root voor de geselecteerde domeinnaam wordt automatisch gedetecteerd. Klik op de _Create_ of _Save_ knop om je wildcard subdomein toe te voegen. De invoer moet er uitzien als "*.[mydomain.com](http://mydomain.com)"
+Klik na het invullen van de velden op de knop "Site toevoegen". Zodra de nieuwe subsite is aangemaakt, ga je door en open je deze om te controleren of de subsite functioneert.
+
+## Veelvoorkomende problemen: {#common-problems}
+
+### 1\. Ik kan nieuwe sites maken, maar ze zijn niet toegankelijk. {#1-i-can-create-new-sites-but-they-are-not-accessible}
+
+Als je subdomeinen hebt gekozen, moet je ook wildcard-subdomeinen instellen voor je multisite-netwerk.
+
+Om dat te doen, ga je naar het control panel-dashboard van het hostingaccount van je website (bijv. cPanel/Plesk/Direct Admin, afhankelijk van je hostingprovider).
+
+Zoek een optie voor “Domeinen” of “Subdomeinen”. In sommige control panels wordt dit aangeduid als “Domeinbeheer”.
+
+Voer in het subdomeinveld een sterretje (*) in. Daarna zou je gevraagd moeten worden om een domeinnaam te selecteren waaronder je het subdomein wilt toevoegen.
+
+De documentroot voor de geselecteerde domeinnaam wordt automatisch gedetecteerd. Klik op de knop _Aanmaken_ of _Opslaan_ om je wildcard-subdomein toe te voegen. De vermelding zou eruit moeten zien als “*.[mydomain.com](http://mydomain.com)”

@@ -1,22 +1,30 @@
 ---
-title: Verwaltung von Mitgliedschaften
+title: Mitgliedschaften verwalten
 sidebar_position: 9
-_i18n_hash: d941e74e4dd6d6dd462c0dfaaf81736a
+_i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Verwaltung von Mitgliedschaften
+# Memberships verwalten {#managing-memberships}
 
-In Ultimate Multisite können Sie Mitgliedschaften verwalten und auf alle Abonnements in Ihrem Netzwerk zugreifen. Überprüfen und bearbeiten Sie Abonnementdetails wie Pläne und Produkte, die Anzahl der Sites, Rechnungsbetrag und Frequenz, Zahlungsverlauf und Zeitstempel.
+In Ultimate Multisite kannst du Memberships verwalten und auf alle Subscriptions in deinem Netzwerk zugreifen. Prüfe und bearbeite Subscription-Details wie Pläne und Produkte, die Anzahl der Websites, Abrechnungsbetrag und -häufigkeit, Zahlungshistorie und Zeitstempel.
 
-Um auf diese Seite zuzugreifen, gehen Sie zum **Memberships**-Tab im Ultimate Multisite-Menü.
+Um diese Seite aufzurufen, gehe zum Tab **Memberships** im Ultimate Multisite-Menü.
 
-![Memberships list page](/img/admin/memberships-list.png)
+![Memberships-Listenseite](/img/admin/memberships-list.png)
 
-Auf der Seite **Memberships** sehen Sie eine Liste Ihrer Kunden und der mit ihren Konten verknüpften Produkte. Sie können Mitgliedschaften nach Status filtern: aktiv, ausstehend, pausiert, abgelaufen oder gekündigt.
+Auf der Memberships-Seite siehst du eine Liste deiner Kunden und der Produkte, die mit ihren Accounts verknüpft sind. Du kannst Memberships nach Status filtern: aktiv, ausstehend, pausiert, abgelaufen oder gekündigt.
 
-Klicken Sie auf eine Mitgliedschaft, um die Seite aufzurufen, auf der Sie die Mitgliedschaftsdaten bearbeiten können – Rechnungsinformationen, Site- oder Besuchslimits und mehr.
+Kostenlose Memberships werden als **lebenslange** Memberships behandelt. Sie erhalten kein Ablaufdatum und laufen nicht automatisch ab. Wenn ein kostenloser Plan nach einem Testzeitraum oder einem festen Zeitraum enden soll, verwende ein kostenpflichtiges Produkt mit Testzeitraum, kündige die Membership manuell oder verschiebe den Kunden in einen anderen Plan, wenn sich sein Zugriff ändern soll.
 
-Sie können auch neue Mitgliedschaften hinzufügen, die mit zuvor registrierten Benutzern in Ihrem Netzwerk verknüpft sind. Klicken Sie auf **Add Membership** und konfigurieren Sie die Details.
+Klicke auf eine Membership, um die Seite aufzurufen, auf der du die Membership-Details bearbeiten kannst — Abrechnungsinformationen, Website- oder Besuchslimits und mehr.
 
-![Add Membership modal](/img/admin/membership-add-modal.png)
+![Membership-Bearbeitungsoberfläche](/img/admin/membership-edit.png)
 
-Klicken Sie anschließend auf **Create Membership**. Die neue Mitgliedschaft erscheint in der Mitgliedschaftsliste.
+Hier ist eine vollständige Ansicht der Membership-Bearbeitungsseite:
+
+![Vollständige Membership-Bearbeitungsoberfläche](/img/admin/membership-edit-full.png)
+
+Du kannst auch neue Memberships hinzufügen, die mit zuvor in deinem Netzwerk registrierten Benutzern verknüpft sind. Klicke auf **Add Membership** und konfiguriere die Details.
+
+![Add Membership-Modal](/img/admin/membership-add-modal.png)
+
+Klicke dann auf **Create Membership**. Die neue Membership wird in der Memberships-Liste angezeigt.

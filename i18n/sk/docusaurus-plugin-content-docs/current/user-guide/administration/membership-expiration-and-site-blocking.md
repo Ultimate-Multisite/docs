@@ -3,11 +3,11 @@ title: Vypadnutie členstva a blokovanie webu
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Vypadok členstva a blokovanie stránky
+# Vypadok členstva a blokovanie stránky {#membership-expiration-and-site-blocking}
 
 Toto smernica vysvetľuje, ako Ultimate Multisite rieši vyprázdnenie členstva, ukončenie skúšobných okresov a blokovanie frontendovej stránky. Pokrýva životný cyklus členstva od aktívneho do vyprázdaného, nastavenia, ktoré kontrolujú, či sú stránky blokované, a čo skontrolovať, ak sa po uplynutí termínu členstva stránky stále dá prístup.
 
-## Životný cyklus stavu členstva
+## Životný cyklus stavu členstva {#membership-status-lifecycle}
 
 Každé členstvo v Ultimate Multisite má jeden z nasledujúcich stavov:
 
@@ -24,7 +24,7 @@ Bezplatné členstvá sa automaticky nevyprázdnajú. Ultimate Multisite ich pov
 | **Expired** (Vyprázdnený) | Prešlo dátum vyprázdnenia a okres milosti bez obnovenia |
 | **Cancelled** (Zrušený) | Výrazne zrušený zákazníkom alebo adminom |
 
-### Ako sa členstva prechádzajú do stavu Expired
+### Ako sa členstva prechádzajú do stavu Expired {#how-memberships-transition-to-expired}
 
 Ultimate Multisite vykonáva kontrolu v pozadí **každú hodinu**, ktorá hľadá členstva, ktoré by mali byť označené ako vyprázdané. Táto kontrola používa [Action Scheduler](https://actionscheduler.org/) (nie priamo WP-Cron) a beží ako zaplatená akcia `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Kontrola vyprázdnenia má **vbudovaný okres milosti 3 dni** v pôvodnom nastav
 Tretorček na vyprázdnenie (grace period) je oddelený od nastavenia tretierček pre blokovanie frontendového bloku, ktoré je popísané nižšie. Tretierček na vyprázdnenie ovplyvňuje moment, kedy sa **stav zmení** z aktívneho/on-hold na vyprázdnený (expired). Tretierček pre frontendový blok ovplyvňuje moment, kedy sa **sit je zablokované**, ak sa stav už zmenil.
 :::
 
-#### Automatické obnoviteľné vs. Neautomatické automatické obnoviteľné členstvá
+#### Automatické obnoviteľné vs. Neautomatické automatické obnoviteľné členstvá {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Toto rozdiely sú dôležité na pochopenie správania vyprázdnenia:
 
@@ -42,7 +42,7 @@ Toto rozdiely sú dôležité na pochopenie správania vyprázdnenia:
 
 - **Automatické automatické obnoviteľné členstvá** (`auto_renew = true`): Cronová kontrola expirácie **tento proces úplne preskúma**. Očakáva sa, že platobný brán (Stripe, PayPal atď.) upozorní Ultimate Multisite cez webhooks, ak sa predplatné neúspešne zmení alebo bol zrušený. Ak webhook nie je prijato – kvôli chybnemu nastaveniu endpointu, výpadku brány alebo zrušení predplatného mimo systému – členstvo môže zostať `active` (aktívne) bez definovania dátumu vyprázdnenia dlho, aj po jeho preteku.
 
-### Ako sa ukončia skúšobné obdobia (Trials End)
+### Ako sa ukončia skúšobné obdobia (Trials End) {#how-trials-end}
 
 Keď skončí skúšobné obdobie členstva s triálom, systém:
 
@@ -52,11 +52,11 @@ Keď skončí skúšobné obdobie členstva s triálom, systém:
 
 Tento proces sa vykonáva na tom istom hodinovom rozvrhu ako pravidelná kontrola expirácie, ale **len pre neautomatické automatické obnoviteľné členstvá**. Pre automatické triály si platobný brán postará presun z triálu na platené predplatné.
 
-## Blokovanie prístupu k frontendovi
+## Blokovanie prístupu k frontendovi {#block-frontend-access}
 
 Po výpadku členstva alebo jeho zastavenia sa v podobe, **je obmedzený iba dashboard wp-admin**. V externom (veľmi) predprave site je prístup pre návštevníkov stále plný. Ak chcete tiež blokovať prístup pre verejnosť, musíte zapnúť nastavenie **Block Frontend Access** (Blokovanie prístupu k predprave).
 
-### Konfigurácia nastavenia
+### Konfigurácia nastavenia {#configuring-the-setting}
 
 Prejdite do **Ultimate Multisite > Settings > Memberships** a zapnite **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tento chov prepočtu kontrolujú tri súvisiace nastavenia:
 | **Frontend Block Grace Period** | Počet dní, po ktorých sa počka po neaktívnom členstve, než sa začne blokovanie. Nastavenie na `0` blokuje okamžite. | 0 |
 | **Frontend Block Page** | Stránka na hlavnej site, na ktorú návštevníkov presmerujeme, keď je site zablokované. Ak nie je nastavená, návštevníci vidia všeobecnú správu "Toto site nie je momentálne prístupné" s odkazom na prihlasovacie stránku pre admin site. | Žiadne |
 
-### Čo vidia návštevníci, keď je site zablokované
+### Čo vidia návštevníci, keď je site zablokované {#what-visitors-see-when-a-site-is-blocked}
 
 Keď je prístup k predprave blokovaný, návštevníci site buď:
 
@@ -83,7 +83,7 @@ Keď je prístup k predprave blokovaný, návštevníci site buď:
 
 Admini site môžu stále prihlásiť -- prihlasovacia stránka nikdy nie je blokovaná.
 
-### Čo je blokované a kedy
+### Čo je blokované a kedy {#what-gets-blocked-and-when}
 
 Chovanie blokovania závisí od stavu členstva:
 
@@ -104,21 +104,21 @@ Hoci sa okres testovacích obdobia ukončil, členstvo so stavom `trialing` **ni
 Zrušené členstvá sú vždy blokované, ak je prebylo dátum skončenia, bez ohľadu na to, či je Blokovanie prístupu k frontendu zapnuté. Zľava na časový period Blokovania frontendu **sa nestrahuje** pre zrušené členstvá.
 :::
 
-## Riešenie problémov: Sitá zostávajúce prístupné po skončení okresu
+## Riešenie problémov: Sitá zostávajúce prístupné po skončení okresu {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ak sitá zostávajú prístupné verejnej obiete po skončení okresu, postupujte podľa týchto kontrol v tomto poradí:
 
-### 1. Overte, že nastavenie Blokovanie prístupu k frontendu je zapnuté
+### 1. Overte, že nastavenie Blokovanie prístupu k frontendu je zapnuté {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Prejdite do **Ultimate Multisite > Settings > Memberships** a potvrďte, že vypínač **Block Frontend Access** je zapnutý. Toto nastavenie je **v pôvodnom stave vypnuté**, čo znamená, že pri neaktívnom členstve sú obmedzené len wp-admin.
 
-### 2. Skontrolujte zľavu na časový period Blokovania frontendu
+### 2. Skontrolujte zľavu na časový period Blokovania frontendu {#2-check-the-frontend-block-grace-period}
 
 Na v rovnakom nastavení si prejdite na hodnotu **Frontend Block Grace Period**. Ak je to nastavené na 7 dní, napríklad, frontend nebude blokovaný až po uplynutí 7 dní od termínu expirácie členstva – aj keď je stav členstva už `expired`.
 
 Nastavte toto na `0`, ak chcete okamžité blokovanie po neaktívnom stanovení členstva.
 
-### 3. Potvrďte, že stav členstva sa skutočne zmenil
+### 3. Potvrďte, že stav členstva sa skutočne zmenil {#3-confirm-the-membership-status-has-actually-changed}
 
 Prejdite do **Ultimate Multisite > Memberships** a prekontrolujte stav ovplyvneného členstva. Ak zobrazuje `active` aj po uplynutí dátumu expirácie, prechod stavu sa nestracil. Bežné príčiny sú:
 
@@ -126,7 +126,7 @@ Prejdite do **Ultimate Multisite > Memberships** a prekontrolujte stav ovplyvnen
 
 - **Cron job sa nebehal**: Vidíte to v nasledujúcej kroku.
 
-### 4. Overte, že Action Scheduler beží
+### 4. Overte, že Action Scheduler beží {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite používa Action Scheduler na svoje cron joby. Prejdite do **Tools > Scheduled Actions** v admin sieti a hľadajte:
 
@@ -148,7 +148,7 @@ Aby ste zabezpečili spoľahlé vykonávanie cronu, nastavte si systémový cron
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Skontrolujte problémy s Gateway Webhookom (Automatické obnovovanie členstiev)
+### 5. Skontrolujte problémy s Gateway Webhookom (Automatické obnovovanie členstiev) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Ak sa členstvo automaticky obnovuje, ale podạpka gatewayu je zrušená alebo neúspešne prebehla, a Ultimate Multisite stále zobrazuje stav ako `active`:
 
@@ -157,7 +157,7 @@ Ak sa členstvo automaticky obnovuje, ale podạpka gatewayu je zrušená alebo 
 
 Ak gateway zobrazuje predplatné ako zrušené, ale Ultimate Multisite nie, je pravdepodobné, že si webhookovú notifikáciu utratili. Môžete manuálne zmeniť stav členstva v **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Skontrolujte okres milosti pre vyprázdnenie (Úroveň Cronu)
+### 6. Skontrolujte okres milosti pre vyprázdnenie (Úroveň Cronu) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron kontrola má vlastný okres milosti (štandardne: 3 dni) pred označenie členstva ako vyprázdneného. Toto je oddelené od okresu milosti blokovania v predprieči (frontend). Celkový čas pred blokovaním stránky môže byť:
 
@@ -165,7 +165,7 @@ Cron kontrola má vlastný okres milosti (štandardne: 3 dni) pred označenie č
 
 Na príklade, pri štandardných nastaveniach a 7-dňovnom dočasnom období na prednej časti (frontend grace period) môže trvať až 10 dní po `date_expiration`, než sa webová stránka skutočne zablokuje.
 
-### 7. Manuálne ukončiť členstvo
+### 7. Manuálne ukončiť členstvo {#7-manually-expire-a-membership}
 
 Ak potrebujete okamžite zablokovať webovú stránku bez toho, aby ste čakali na cyklus cronu, môžete manuálne zmeniť stav členstva:
 
@@ -176,7 +176,7 @@ Ak potrebujete okamžite zablokovať webovú stránku bez toho, aby ste čakali 
 
 Blok na prednej časti sa uplatní pri nasledujúcom načítaní stránky (podľa dočasného obdobia blokovania pre ukončené členstvá, alebo okamžite pri zrušených členstvách).
 
-## Zhrnutie
+## Zhrnutie {#summary}
 
 Celá časová osa od dátumu ukončenia pôsobnosti k zablokovaniu webovej stránky:
 
@@ -208,7 +208,7 @@ Pre zrušená členstvá je cesta kratšia:
   Frontend webovej stránky je okamžite zablokovaný
 ```
 
-## Referencia pre vývojárov
+## Referencia pre vývojárov {#developer-reference}
 
 Nasledujúce hooks a filters vám umožňujú prispôsobiť správanie ukončenia pôsobnosti a blokovania:
 

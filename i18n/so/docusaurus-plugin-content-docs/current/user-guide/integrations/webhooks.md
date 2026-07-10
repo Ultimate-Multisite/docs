@@ -3,7 +3,7 @@ title: Webhook-yada
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Aragti hore oo ku saabsan Webhooks (v2)
+# Aragti hore oo ku saabsan Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**Xusuusin: Fiiro gaar ah inuu fursadta ama maqaalka tani u yahay isticmaalayaasha horumarsan.**_
 
@@ -11,7 +11,7 @@ _**Xusuusin: Fiiro gaar ah inuu fursadta ama maqaalka tani u yahay isticmaalayaa
 
 Tani waxay kaa caawin kartaa haddii aad u baahan tahay inaad isku xirto (integrate) ama aad u dirto macluumaad gaar ah oo ka yimid Ultimate Multisite app-ka kale CRM ama nidaam kasta markasta oo dhacdo la abuuro. Tusaale ahaan, waxaad u baahan kartaa inaad u dirto magaca iyo email-ka isticmaalaha liiska warqad (mailing list) markasta oo hal qof cusub la abuuro akoon.
 
-## Sida loo sameeyo webhook
+## Sida loo sameeyo webhook {#how-to-create-a-webhook}
 
 Si aad u samayso webhook, tag dashboard-ka maamulka shabakadahaaga (network admin dashboard). Guji **Ultimate Multisite > Webhooks > Add New Webhook**.
 

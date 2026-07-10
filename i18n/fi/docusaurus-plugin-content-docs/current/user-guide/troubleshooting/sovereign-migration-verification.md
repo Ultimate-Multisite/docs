@@ -3,11 +3,11 @@ title: Suvereenisen siirron varmistus
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# Suvereenin siirron vahvistus
+# Suvereenin siirron vahvistus {#sovereign-migration-verification}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 sisältää WP-CLI -vahvistuskomennot suvereenien vuokralaissiirroille. Käytä niitä, jos vuokralaisen siirto, SSO-vierailu tai erillinen asennus ei käyttäyty lainkaan odotetusti.
 
-## Suoritettavat komennot
+## Suoritettavat komennot {#commands-to-run}
 
 Suorita vahvistus verkossa olevasta WordPress-asennuksesta:
 
@@ -18,28 +18,28 @@ wp tenant verify-sovereign-push --site=<site-id>
 
 Käytä vuokralaisen ID:tä siirrettävälle vuokralaiselle. Ensimmäinen komento tarkistaa, ettei vuokralainen enää riipu vanhentuneesta verkko-puolen tiedoista. Toinen komento varmistaa, että suvereeniset push-työt voidaan käsitellä ja tyhjentää (drain).
 
-## Yleisiä virheitä
+## Yleisiä virheitä {#common-failures}
 
-### Tietokantojen antávat eivät täsmää isäntään
+### Tietokantojen antávat eivät täsmää isäntään {#database-grants-do-not-match-the-host}
 
 Jos vahvistus raportoi antamisen tai kirjoittajan käyttäjän virheistä, tarkista konfiguroitu tietokantaisäntä. `localhost`, `127.0.0.1` ja konttialustan palvelimen nimi ovat eri MySQL-antávainisäntöjä. Päivitä vuokralaisen isännän sitoutumista tai tietokantojen antamisia ja suorita vahvistus uudelleen.
 
-### Bedrock- tai paikalliset asennukset eivät pysty yhdistämään
+### Bedrock- tai paikalliset asennukset eivät pysty yhdistämään {#bedrock-or-local-installs-cannot-connect}
 
 Bedrock- ja paikallisessa soketissa olevat asennukset saattavat raportoida tietokantaa `localhost`-näenä, vaikka ajon aikana yhteys muodostuu normalisoituneella osoitteella. Versio 1.2.0 normalisoi samalla koneella olevat isäntömerkit, mutta räätälöity isäntäylimääräykset voivat silti ristiriidassa tietokantojen antamisten kanssa.
 
-### Asynkroninen push-juova ei tyhjennä (drain)
+### Asynkroninen push-juova ei tyhjennä (drain) {#async-push-queue-does-not-drain}
 
 Jos `verify-sovereign-push` ei pääty loppuun, tarkista Action Scheduleria tai konfiguroitua asynkronista suorittajaa (async runner). Tyhjennä epäonnistuneet työt vain sen jälkeen, kun olet varmistanut niiden olevan turvallisesti uudelleenyrityksen tai hylkäämisen arvoinen.
 
-### Vuokralaisen käyttäjämäärä on väärä
+### Vuokralaisen käyttäjämäärä on väärä {#tenant-user-count-is-wrong}
 
 Siirron pitäisi varata käyttäjiä suvereeniselle vuokralaiselle. Jos odotettu asennuskäyttäjä puuttuu, suorita käyttäjäproviisioraportointivaihe uudelleen ennen SSO:n uudelleenyritystä.
 
-### SSO-vierailu hylätään
+### SSO-vierailu hylätään {#sso-visit-is-rejected}
 
 Tietämättömän istuntokäyttöisen lehdistäautentoinnin (stateless tenant autologin) vaaditaan, että lehen domeni, alkuperäinen PIN-koodi (origin pin), tokenin tarkoitus, nonce ja voimassaoloaika täsmää. Varmista, että lehen URL on oikein ja yritetään kirjautua heti SSO-vierailun luomisen jälkeen.
 
-## Milloin yrittää uudelleen
+## Milloin yrittää uudelleen {#when-to-retry}
 
 Yritä vahvistusta jokaisen infrastruktuurimuutoksen jälkeen. Älä vaihda tuotantoliikennettä, poista lähdedataa tai poista siirtymiskelpoiset tunnukset ennen kuin kaikki vahvistustarkistukset ovat läpäisty.

@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Integration Changelog
+title: WooCommerce بیرلشدیرمه دَییشیکلیک‌لر قایدی
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Entegrasyonu Değişiklik Günlüğü
+# WooCommerce بیرلشدیرمه‌سی ده‌ییشیکلیک گونده‌لیگی {#woocommerce-integration-changelog}
 
-Version 2.0.6 - Yayınlanma Tarihi: 2026-01-16
-* İyileştirme: Temel abonelikler artık addon'a dahil edildi. Artık WooCommerce Subscriptions eklentisine ihtiyaç yok.
+نسخه 2.2.0 - 2026-07-01 تاریخینده آزاد ائدیلدی
+* یئنی: Ultimate Multisite وئرگی میقدارلاری ایندی اؤده‌مه‌دن قاباق جمع وئرگی‌لری داها آیدین ائتمک اوچون، checkout-دا آیری WooCommerce خَرج سطیرلری کیمی گؤرونور.
+* یئنی: WooCommerce آبونمان‌لاری یئنی‌دن یوخلاما پنجره‌سی زامانی اوغورسوز یئنی‌لنمه‌لرده عضولوق دایاندیرماسی ایسته‌ین سایت‌لار اوچون اختیارلا آچیلان "Suspend Memberships Immediately on Failed Renewals" تنظیمی و `wu_woo_suspend_on_payment_failure` فیلترینی آرتیردی.
+* دوزلتدی: اوغورسوز یا برپا اولان یئنی‌لنمه‌لردن سونرا Ultimate Multisite عضولوق‌لاری ایله هم‌اهنگ قالما بیلن WooCommerce آبونمان وضعیت‌لری اویغونلاشدیریلدى.
+* دوزلتدی: ائکسیک اولاندا WooCommerce دؤکان پول واحدی Ultimate Multisite پول واحدی لیستینه آرتیریلدی.
+* دوزلتدی: آبونه‌لر WooCommerce checkout-ا یؤنلندیگی زامان مشتری فاکتور دیتایل‌لاری ساخلاماقدا قالدی.
+* یاخشیلاشدی: Jetpack Autoloader 5 ایله اویغونلوق آرتیریلدی.
+* یاخشیلاشدی: یاییم پاکتی یاراتماسی تمیزلندی، بئله‌جه GitHub و بازار زیپ‌لری ایچ‌ایچه staging دایرکتوری‌لری و توسعه فایل‌لاریندان اوزاق قالیر.
 
-Version 2.0.5 - Yayınlanma Tarihi: 2026-01-09
-* İyileştirme: Çeviriler glotpress API'sinden yüklenir.
-* Düzeltme: Bazı sayfa oluşturucularda kritik hata giderildi.
-* Düzeltme: Müşteri ana sitede üye olduğunda sonsuz yönlendirme sorunu giderildi.
+نسخه 2.0.6 - 2026-01-16 تاریخینده آزاد ائدیلدی
+* یاخشیلاشدیرما: اصلی آبونمان‌لاری addon-ا داخیل ائدیر. آرتیق Woocommerce Subscriptinos uzantısı لازیم دئییل.
 
-Version 2.0.4 - Yayınlanma Tarihi: 2025-11-14
-* Eklendi: Çok daha fazla dil için çeviriler.
-* Değiştirildi: Adı Ultimate Multisite: Woocommerce Integration olarak değiştirildi.
-* Eklendi: Woocommerce 10.2.1 ile uyumluluk.
-* Eklendi: Woocommerce Subscriptions 7.7.0 ile uyumluluk.
-* Düzeltme: PHP 8.4 ile uyumluluk.
-* Düzeltme: WC hesap sayfası mevcut değilse yönlendirme yapma sorunu giderildi.
+نسخه 2.0.5 - 2026-01-09 تاریخینده آزاد ائدیلدی
+* یاخشیلاشدیرما: ترجمه‌لری glotpress API-دن یوکله.
+* دوزلتدی: بؤلگه صفحه قوروجولاریندا اؤلومجول خطا.
+* دوزلتدی: مشتری اصلی سایتین عضوسو اولاندا سونسوز یؤنلندیرمه.
 
-Version 2.0.3 - Yayınlanma Tarihi: 2025-08-13
-* Değiştirildi: Yeni marketplace ile otomatik güncellemeler etkinleştirildi.
+نسخه 2.0.4 - 2025-11-14 تاریخینده آزاد ائدیلدی
+* آرتیریلدی: چوخ داه آرتیق دیل اوچون ترجمه‌لر.
+* ده‌ییشدی: آدی Ultimate Multisite: WooCommerce بیرلشدیرمه‌سی اولدو.
+* آرتیریلدی: WooCommerce 10.2.1 ایله اویغونلوق.
+* آرتیریلدی: WooCommerce آبونمان‌لاری 7.7.0 ایله اویغونلوق.
+* دوزلتدی: PHP 8.4 ایله اویغونلوق
+* دوزلتدی: WC Account صفحه‌سی اولمایاندا یؤنلندیرمه.
 
-Version 2.0.2 - Yayınlanma Tarihi: 2025-07-05
-* Değiştirildi: Adı Multisite Ultimate: Woocommerce Integration olarak değiştirildi.
-* Eklendi: Woocommerce 9.8.1 ile uyumluluk.
-* Eklendi: Woocommerce Subscriptions 7.3.0 ile uyumluluk.
-* Düzeltme: Müşteri tarafından abonelik iptal edilmesi.
-* Düzeltme: Checkout bloğu kullanılırken kritik hata.
-* İyileştirme: Artık Woocommerce'in yüksek performanslı özel sipariş tablolarıyla uyumlu.
-* Düzeltme: WooCommerce checkout'ta iptal yapılırken üyelik yükseltilebiliyor olması.
+نسخه 2.0.3 - 2025-08-13 تاریخینده آزاد ائدیلدی
+* ده‌ییشدی: یئنی بازارلا اؤز-اؤزونه گونجه‌للمه‌لر فعال ائدیلدی.
 
-Version 2.0.1 - Yayınlanma Tarihi: 2023-08-09
+نسخه 2.0.2 - 2025-07-05 تاریخینده آزاد ائدیلدی
+* ده‌ییشدی: آدی Multisite Ultimate: WooCommerce بیرلشدیرمه‌سی اولدو.
+* آرتیریلدی: WooCommerce 9.8.1 ایله اویغونلوق.
+* آرتیریلدی: WooCommerce آبونمان‌لاری 7.3.0 ایله اویغونلوق.
+* دوزلتدی: مشتری طرفیندن آبونمان لغو ائدیلمه‌سی.
+* دوزلتدی: checkout بلوکوندان ایستیفاده ائدنده اؤلومجول خطا.
+* یاخشیلاشدیرما: ایندی WooCommerce یوکسک پرفورمانسلی اؤزل سیفاریش جدول‌لاری ایله اویغوندور.
+* دوزلتدی: WooCommerce checkout-دا لغو ائتمک هله‌ده بیر عضولوقو یوکسلتدی‌ره بیلر.
 
-* Eklendi: Woocommerce 7.9.0 ile uyumluluk.
-* Eklendi: Woocommerce Subscriptions 5.3.0 ile uyumluluk.
-* Eklendi: Üyelik güncellemeleri desteği.
-* Eklendi: Woocommerce'da deneme ve kurulum ücretleri hakkında bildirimler.
-* Eklendi: Ultimate Multisite Woocommerce ürünlerinin meta değeri ile tanımlanması.
-* Eklendi: Tüm Ultimate Multisite ile ilgili Woocommerce ürünlerini işaretlemek için tek seferlik bir düzeltme eklendi.
-* Eklendi: Ultimate Multisite tarafından oluşturulan ürünler Woocommerce listesinden çıkarıldı.
-* İyileştirme: Sepete uygulanacak, tekrarlamayan bir Woocommerce indirimi oluşturuldu.
-* İyileştirme: Tekrarlayan indirim Woocommerce ürününe geri yüklendi.
-* İyileştirme: Woocommerce ürününe tekrarlayan indirim etiketi eklendi.
-* İyileştirme: Checkout'ta ürün tipinin sağlanması.
-* Düzeltme: Düşürme (downgrade) işlemi sırasında üyelik durumunun korunması.
-* Düzeltme: İptal işlemi sırasında hataları önlemek için bir abonelik olup olmadığı kontrol edildi.
-* Düzeltme: Woocommerce aboneliklerinde kullanılmak üzere başlangıç abonelik tarihi eklendi.
-* Dahili: Yeni bir PHP 8.1 derleme süreci uygulandı.
+نسخه 2.0.1 - 2023-08-09 تاریخینده آزاد ائدیلدی
 
-Version 2.0.0 - Tamamen yeniden yazıldı.
+* آرتیریلدی: WooCommerce 7.9.0 ایله اویغونلوق.
+* آرتیریلدی: WooCommerce آبونمان‌لاری 5.3.0 ایله اویغونلوق.
+* آرتیریلدی: عضولوق گونجه‌للمه‌لرینه دَستک.
+* آرتیریلدی: WooCommerce-دا سیناق مودتی و قورولوش خَرج‌لری حاققیندا بیلدیریشلر.
+* آرتیریلدی: Ultimate Multisite WooCommerce محصول‌لاری‌نین meta دَیَری ایله تانینماسی.
+* آرتیریلدی: بوتون Ultimate Multisite ایله باغلی WooCommerce محصول‌لاری‌نی ایشاره‌لَمک اوچون بیر دفعه‌لیک دوزلت‌مه یئرلشدیرildi.
+* آرتیریلدی: Ultimate Multisite طرفیندن یارادیلان محصول‌لار WooCommerce لیستیندن سیلیندی.
+* یاخشیلاشدیرما: سبدə اویغولاماق اوچون تکرارلانمایان WooCommerce ایندیریمی یارادیلدی.
+* یاخشیلاشدیرما: تکرارلانان ایندیریم WooCommerce محصولونا برپا ائدیلدی.
+* یاخشیلاشدیرما: WooCommerce محصولونا تکرارلانان ایندیریم برچسبی آرتیریلدی.
+* یاخشیلاشدیرما: checkout-دا محصول نوعی تضمین ائدیلدی.
+* دوزلتدی: آشاغی پلانا کئچیش پروسه‌سینده عضولوق وضعیتى ساخلاماقدا قالدی.
+* دوزلتدی: لغو پروسه‌سینده خطا‌لاردان قاچماق اوچون آبونمانین وار اولوب-اولمادیغی یوخلاندی.
+* دوزلتدی: WooCommerce آبونمان‌لاریندا ایستیفاده اوچون آبونمان باشلانغیج تاریخی آرتیریلدی.
+* داخیلی: یئنی PHP 8.1 ساخت پروسه‌سی اویغولاندی.
 
-* Eklendi: Ağ geçidi değiştirilirken veya üyelik iptal edilirken woo aboneliğini kaldırma yöntemi.
-* Eklendi: Üyelikleri düşürme ve yükseltme işleyicisi.
-* İyileştirme: Hesap güncellemesine izin vermek için subsites'taki müşteri güncelleme formunda woocommerce bağımlılıkları yüklenir.
-* İyileştirme: Woocommerce sepeti mevcut değilse doğru yüklenmesi sağlanır.
-* İyileştirme: Checkout işlemi yapılırken ana site tablolarında olduğumuzdan emin olunur.
-* İyileştirme: Ultimo yenileme siparişi, son ödemeden değil, Woocommerce abonelik sipariş değerine göre yapılır.
-* Düzeltme: WU Membership buton bağlantısına gitme.
-* Düzeltme: Woocommerce abonelik yenilemesi ödeme almışsa Ultimo siparişi ödenmiş olarak ayarlanır.
-* Yapılandırma: MPB'yi oluşturucu olarak ekle.
+نسخه 2.0.0 - تامام یئنی‌دن یازیلیب.
 
-Version 2.0.0-beta-5 - Yayınlanma Tarihi: 2022-01-21
+* آرتیریلدی: دروازه ده‌ییشنده یا عضولوقو لغو ائدنده woo آبونمانینی سیلمک اوچون لغو متودو پروسه‌سی؛
+* آرتیریلدی: عضولوق‌لاری آشاغی پلانا کئچیرمک و یوکسلت‌مک اوچون ایشله‌دیجی؛
+* یاخشیلاشدیرما: Account گونجه‌للمه‌سینه ایجازه وئرمک اوچون آلت‌سایت‌لاردا مشتری گونجه‌للمه فورموندا woocommerce باغلی‌لیق‌لاری یوکله؛
+* یاخشیلاشدیرما: یوخدورسا WooCommerce سبدینی دوزگون یوکله؛
+* یاخشیلاشدیرما: checkout پروسه‌سینده اصلی سایت جدول‌لاریندا اولدوغوموزو تضمین ائت؛
+* یاخشیلاشدیرما: Ultimo یئنی‌لنمه سیفاریشینی سون اؤده‌مه‌یه یوخ، WooCommerce آبونمان سیفاریشی دَیَرینه اساسلاندیر؛
+* دوزلتدی: WU عضولوق دؤیمه‌سی باغلانتیسی؛
+* دوزلتدی: WooCommerce آبونمان‌لاری یئنی‌لنمه‌سی اؤدنیلنده Ultimo سیفاریشینی اؤدنیلمیش کیمی قوی؛
+* ساخت: MPB-نی قوروجو کیمی آرتیر؛
 
-* Dahili: Hooks ve filtre oluşturucu eklendi.
-* Dahili: Geliştirici yaşam kalitesi için Ultimate Multisite stub'ları eklendi.
-* Düzeltildi: Gereksiz yere birden fazla ürün oluşturulması engellendi.
+نسخه 2.0.0-beta-5 - 2022-01-21 تاریخینده آزاد ائدیلدی
 
-Version 2.0.0-beta.4 - 2021-09-23
+* داخیلی: hook-لار و فیلتر‌لر یارادیجی‌سی آرتیریلدی؛
+* داخیلی: توسعه‌چی راحتلیغی اوچون Ultimate Multisite stubs آرتیریلدی؛
+* دوزلدی: لازیم اولمایاندا بیر نئچه محصول یارادیلماسی اؤنلندی؛
 
-* Düzeltme: WooCommerce'ın sadece ana sitede değil, ağ genelinde aktif olmasını gerektirme.
-* İyileştirme: Addon'un mu-plugin olarak kullanılmasına izin veren filtre eklendi.
+نسخه 2.0.0-beta.4 - 2021-09-23
 
-Version 2.0.0-beta.3 - 2021-05-28
+* دوزلتدی: WooCommerce-ون فقط اصلی سایت‌ده دئییل، شبکه‌ده فعال اولماسی لازیم ائدیلمه‌سی؛
+* یاخشیلاشدیرما: add-on-ون mu-plugin کیمی ایستیفاده اولونماسینا ایجازه وئرن فیلتر آرتیریلدی؛
 
-* Düzeltme: Dashboard erişim kontrolü çok agresifti.
-* İyileştirme: Ultimate Multisite üst menüsüne WooCommerce yardım bağlantıları eklendi.
+نسخه 2.0.0-beta.3 - 2021-05-28
 
-Version 2.0.0-beta.2 - 2021-05-04
+* دوزلتدی: Dashboard گيریش کنترلۆ چوخ سخت ایدی؛
+* یاخشیلاشدیرما: Ultimate Multisite اوست منوسونا WooCommerce یاردیم باغلانتی‌لاری آرتیریلدی؛
 
-* İyileştirme: WCS yenileme siparişi oluşturulurken Ultimo'da bekleyen ödemeler oluşturulur.
-* İyileştirme: Faturalandırma alanları Ultimate Multisite müşteri verileriyle önceden doldurulur.
-* İyileştirme: Ağ geçitleri için faturalandırma alanları geri eklendi.
+نسخه 2.0.0-beta.2 - 2021-05-04
 
-Version 2.0.0-beta.1 - 2021-05-04
+* یاخشیلاشدیرما: WCS یئنی‌لنمه سیفاریشی یارادیلاندا Ultimo-دا گؤزله‌ین اؤده‌مه‌لر یارادیر؛
+* یاخشیلاشدیرما: فاکتور فیلد‌لرینی Ultimate Multisite مشتری داده‌لری ایله اؤنجه‌دن دولدورور؛
+* یاخشیلاشدیرما: دروازه‌لر اوچون فاکتور فیلد‌لرینی گئری آرتیر؛
 
-* İlk beta sürümü
+نسخه 2.0.0-beta.1 - 2021-05-04
 
--- Eski Versiyonlar --
+* ایلک beta یاییمی
 
-Version 1.2.6 - 26/03/2020
+-- کؤهنه نسخه‌لر --
 
-* Düzeltildi: Daha yeni WooCommerce Subscriptions versiyonlarıyla küçük uyumsuzluk.
+نسخه 1.2.6 - 26/03/2020
 
-Version 1.2.5 - 26/08/2019
+* دوزلدی: WooCommerce آبونمان‌لاری‌نین یئنی‌تر نسخه‌لری ایله کیچیک اویغونسوزلوق؛
 
-* Düzeltildi: Önceki sürümdeki hata.
+نسخه 1.2.5 - 26/08/2019
 
-Version 1.2.4 - 22/08/2019
+* دوزلدی: اؤنجه‌کی یاییمدا خطا؛
 
-* İyileştirildi: Entegrasyon sonrası WooCommerce checkout ekranına yönlendirme seçeneği eklendi.
+نسخه 1.2.4 - 22/08/2019
 
-Version 1.2.3 - 26/05/2019
+* یاخشیلاشدی: بیرلشدیرمه‌دن درحال سونرا WooCommerce checkout اکرانینا یؤنلندیرمک اوچون سئچیم آرتیریلدی؛
 
-* Düzeltildi: WooCommerce için ödeme e-postası bazı uç durumlarda kayboluyordu.
+نسخه 1.2.3 - 26/05/2019
 
-Version 1.2.2 - 27/02/2019
+* دوزلدی: بَزی کنار دوروم‌لاردا WooCommerce اؤده‌مه ایمیلی یوخ اولوردو؛
 
-* Eklendi: WooCommerce Subscription entegrasyonunda kurulum ücretleri desteği.
+نسخه 1.2.2 - 27/02/2019
 
-Version 1.2.1 - 17/11/2018
+* آرتیریلدی: WooCommerce آبونمان بیرلشدیرمه‌سینده قورولوش خَرج‌لرینه دَستک؛
 
-* Düzeltildi: Ultimate Multisite sürüm 1.9.0 ile uyumluluk sorunları.
+نسخه 1.2.1 - 17/11/2018
 
-Version 1.2.0 - 10/09/2018
+* دوزلدی: Ultimate Multisite نسخه 1.9.0 ایله اویغونلوق مسئله‌لری؛
 
-* İyileştirildi: Add-onlar için yeni güncelleme URL'si.
-* Eklendi: WooCommerce Subscription için beta desteği.
+نسخه 1.2.0 - 10/09/2018
 
-Version 1.1.2 - 11/02/2018
+* یاخشیلاشدی: add-on-لار اوچون یئنی گونجه‌للمه URL-ی؛
+* آرتیریلدی: WooCommerce آبونمانینا beta دَستک؛
 
-* Düzeltildi: WooCommerce uç noktalarındaki değişikliklere yanıt vermek için "Öde" bağlantısı dinamik olarak oluşturuluyor.
-* İyileştirildi: Ödeme_tamamlandı çağrıldığında siparişlerimiz için tamamlandı durumunu zorluyoruz, böylece yenileme hook'larımızın çalışması sağlanır.
+نسخه 1.1.2 - 11/02/2018
 
-Version 1.1.1 - 24/01/2018
+* دوزلدی: Pay باغلانتیسی WooCommerce endpoint-لرینده‌کی ده‌ییشیکلیک‌لره جواب وئرمک اوچون دینامیک یارادیلیر؛
+* یاخشیلاشدی: ایندی `payment_completed` چاغیریلاندا سیفاریش‌لریمیز اوچون تاماملانمیش وضعیتینی مجبور ائدیریک کی، یئنی‌لنمه hook-لاریمیز لازیم اولان زامان ایشلسین؛
 
-* Düzeltildi: Artık WooCommerce'ın sadece ana sitede etkinleştirilip etkinleştirilmediğini de kontrol ediyor.
-* Düzeltildi: Sipariş oluşturmasına vergileri dahil etmeye izin vermek için aşırı yüklemeler eklendi.
+نسخه 1.1.1 - 24/01/2018
 
-Version 1.1.0 - 04/11/2017
+* دوزه‌لدی: ایندی WooCommerce-ین یالنیز باشلیجا سایْتدا فعال ائدیلیب-ائدیلمه‌دییینی ده یوخلاییر؛
+* دوزه‌لدی: سیفارئش یارادیلماسینا وئرگی‌لرین ده داخیل ائدیله بیلمه‌سی اوچون over-loadings ائلاوه ائدیلدی؛
 
-* Düzeltildi: Entegrasyon butonunun etiketi, ayarlara göre gerçekten değişiyor. Ultimate Multisite 1.5.0 gerektirir.
-* Düzeltildi: WooCommerce, ağ genelinde aktif olmasa ve sadece ana sitede etkinleştirilmiş olsa bile WooCommerce Entegrasyonu çalışıyor.
+نسخه 1.1.0 - 04/11/2017
 
-1.0.0 - İlk Yayın
+* دوزه‌لدی: ایندی اینتگراسیون دؤیمه‌سینین ائتیكتی، تنظیم‌لری گؤسترمه‌ک اوچون دوغرودان ده‌ییشیر. Ultimate Multisite 1.5.0 لازیمدیر؛
+* دوزه‌لدی: WooCommerce Integration ایندی WooCommerce شَبَکه اوزره فعال اولماسا و یالنیز باشلیجا سایْتدا فعال ائدیلسه ده ایشله‌ییر؛
+
+1.0.0 - ایلک یاییلما

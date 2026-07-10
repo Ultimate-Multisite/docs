@@ -1,58 +1,58 @@
 ---
-title: Обновление плана
+title: Повышение тарифа
 sidebar_position: 11
-_i18n_hash: b0c02a1c1b12946cb507e8486e0d74e3
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Upgrading a Plan (v2)
+# Повышение плана (v2) {#upgrading-a-plan-v2}
 
-_**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к версии Ultimate Multisite 2.x.**_
+_**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 
-Your customers are able to upgrade their plans at any time. They can either upgrade to another plan or purchase any additional services or packages that you offer on your network.
+Ваши клиенты могут повышать свои планы в любое время. Они могут либо перейти на другой план, либо приобрести любые дополнительные услуги или пакеты, которые вы предлагаете в своей сети.
 
-In this tutorial we will cover how they can upgrade their plan and what happens after the upgrade process.
+В этом руководстве мы рассмотрим, как они могут повысить свой план и что происходит после процесса повышения.
 
-To upgrade their plan, your customers should access their dashboard and go to the **Account** page.
+Чтобы повысить свой план, ваши клиенты должны открыть свой Dashboard и перейти на страницу **Account**.
 
-![Customer dashboard with Account page link](/img/admin/memberships-list.png)
+![Dashboard подсайта клиента с видимой ссылкой меню Account](/img/account-page/account-menu.png)
 
-On the Account page, they will be shown their current membership and the plan associated with it. To upgrade to another plan, they must click on **Change** on the top-right corner of **Your Membership** section.
+На странице Account им будет показано их текущее членство и связанный с ним план. Чтобы перейти на другой план, они должны нажать **Change** в правом верхнем углу раздела **Your Membership**.
 
-![Your Membership section with Change button](/img/admin/memberships-list.png)
+![Страница Account: карточка Your Membership с кнопкой Change](/img/account-page/membership-change-button.png)
 
-They will be redirected to a checkout form where all the available plans will be displayed.
+Они будут перенаправлены на форму оформления заказа, где будут отображены все доступные планы.
 
-They will also be able to see the **services and packages available for their current plan**, in case they just want to purchase a specific service or package (like unlimited visits or disk space in our example here), and not upgrade the plan.
+Они также смогут увидеть **услуги и пакеты, доступные для их текущего плана**, если они просто хотят приобрести конкретную услугу или пакет (например, неограниченное количество посещений или дисковое пространство в нашем примере здесь), а не повышать план.
 
-![Checkout form showing available plans and packages](/img/admin/memberships-list.png)
+![Выбор повышения с доступными планами и пакетами на стороне клиента](/img/account-page/upgrade-picker.png)
 
-After they choose the product they want to purchase, they will see how much they will need to pay right now - excluding any existing credit - and how much they will be charged on the next billing date.
+После того как они выберут продукт, который хотят приобрести, они увидят, сколько им нужно заплатить прямо сейчас — без учета существующего кредита — и какая сумма будет списана на следующую дату выставления счета.
 
-Usually, if the product is another plan and the payment is going to be made between a membership charge, they will receive a credit for the amount paid on the first plan.
+Обычно, если продукт является другим планом и платеж будет произведен между списаниями за членство, они получат кредит на сумму, уплаченную по первому плану.
 
-![Upgrade payment summary with credit and next billing amount](/img/admin/memberships-list.png)
+![Сводка платежа за повышение с примененным кредитом и суммой следующего списания](/img/account-page/upgrade-summary.png)
 
-If they select a plan or package that will not change anything from the current subscription, they will see a message explaining that.
+Если они выберут план или пакет, который ничего не изменит в текущей подписке, они увидят сообщение с объяснением этого.
 
-![Message when selected plan does not change the subscription](/img/admin/memberships-list.png)
+![Уведомление, когда выбранный план не изменяет подписку](/img/account-page/upgrade-no-change.png)
 
-After the checkout is completed, the new product(s) will be added to your customers' account and all the limits or features of the new product(s) will be instantly added to it: visits, disk space, posts, etc...
+После завершения оформления заказа новые продукты будут добавлены в аккаунт ваших клиентов, и все лимиты или функции новых продуктов будут мгновенно применены к нему: посещения, дисковое пространство, записи и т. д.
 
-## 
+##
 
-## 
+##
 
-## Upgrade and Downgrade Paths
+## Пути повышения и понижения {#upgrade-and-downgrade-paths}
 
-On each of your products, you'll have an **Up & Downgrades** tab. The first option on that tab is a field called **Plan Group**.
+У каждого из ваших продуктов будет вкладка **Up & Downgrades**. Первый параметр на этой вкладке — поле под названием **Plan Group**.
 
-**Plan groups** is what allows you to let Ultimate Multisite know that certain plans belong to the same "family", and therefore should be used to construct upgrade/downgrade path options.
+**Группы планов** позволяют сообщить Ultimate Multisite, что определенные планы принадлежат к одной «семье» и поэтому должны использоваться для построения вариантов путей повышения/понижения.
 
-![Up and Downgrades tab with Plan Group field](/img/config/product-upgrades.png)
+![Вкладка Up and Downgrades при редактировании продукта с полем Plan Group](/img/config/product-upgrades-plan-group.png)
 
-For example, you have a **Free plan** , a **Basic Plan** and a **Premium Plan** available. You want users subscribed under the **Free Plan** to be able to upgrade only to the **Premium Plan** and you do not want them to see the "Basic Plan" as an upgrade option. All you need to do is assign the same plan group name for both Free and Premium plans as shown in the screenshots below.
+Например, у вас доступны **Free plan**, **Basic Plan** и **Premium Plan**. Вы хотите, чтобы пользователи, подписанные на **Free Plan**, могли перейти только на **Premium Plan**, и не хотите, чтобы они видели «Basic Plan» как вариант повышения. Все, что нужно сделать, — назначить одно и то же имя группы планов для планов Free и Premium, как показано на скриншотах ниже.
 
-![Free Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Страница продукта Free Plan с назначенной группой планов High End](/img/config/product-upgrades-free.png)
 
-![Premium Plan with High End plan group assigned](/img/config/product-upgrades.png)
+![Страница продукта Premium Plan с назначенной группой планов High End](/img/config/product-upgrades-premium.png)
 
-What this should do is tell Ultimate Multisite that there is a "family" of plans in the network called **High End**. When offering upgrades or downgrades, only plans from the same family will be presented as an option for the user.
+Это должно сообщить Ultimate Multisite, что в сети есть «семья» планов под названием **High End**. При предложении повышений или понижений пользователю будут представлены как варианты только планы из той же семьи.

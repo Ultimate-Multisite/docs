@@ -1,0 +1,197 @@
+---
+title: E-name
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# E-name {#emails}
+
+Pêveka Ultimate Multisite: Emails dihêle xwediyên torê hesabên e-nameya xerîdaran li gel malper û endamtiyan dabîn bikin û birêve bibin. Guhertoya 1.1.0 birêvebirina hesabê e-nameyê ji aliyê xerîdar ve, têketina yek-carî ya webmail, piştgiriya şandêrên CyberPanel, û baştirinên dabînkirinê di dema checkout de zêde dike.
+
+## Taybetmendiyên Sereke {#key-features}
+
+* **Widget-a hesabê e-nameya xerîdar**: Xerîdar piştî ku endamtiya e-nameya çalak hebe dikarin ji rûpela Account-a xwe qutiyên e-nameyê biafirînin û birêve bibin.
+* **Webmail SSO û girêdanên magic**: Dema dabînker piştgirî dide, xerîdar dikarin bi pejirandina yek-klîkî rasterast ji rûpela Account-ê webmail vekin.
+* **Guhertinên şîfreyê**: Xerîdar û rêvebir dikarin ji widget-a birêvebirina e-nameyê şîfreyên qutiyên e-nameyê nû bikin.
+* **Dabînkirina mafê checkout**: Checkout endamtiya e-nameyê diafirîne, wê bi domaina malpera xerîdar ve girê dide, û amûrên qutiya e-nameyê yên rûpela Account-ê amade dike.
+* **Şandêrên CyberPanel**: Torên bi piştgiriya CyberPanel dikarin wek beşek ji herikîna xizmeta e-nameyê şandêrên e-nameyê biafirînin û birêve bibin.
+* **Mîhengên li gor dabînkerê**: Rûpela mîhengan dabînkeran ji bo yekbûnên çalak û mîhengkirî parzûn dike, da ku rêvebir tenê vebijarkên bikêrhatî bibînin.
+
+## Pêdivî {#requirements}
+
+* Ultimate Multisite 2.0.0 an jê bilindtir
+* Sazkirina WordPress Multisite
+* Bi kêmanî yek yekbûna dabînkera e-nameyê ya mîhengkirî
+* Nasnameyên Provider API bi destûra afirandina qutiyên e-nameyê, guhartina şîfreyan, û derxistina girêdanên gihîştina webmail li cihên ku piştgirî heye
+
+## Sazkirin {#installation}
+
+1. Pelên plugin bar bike bo `/wp-content/plugins/ultimate-multisite-emails`.
+2. Pêvekê ji **Pêvek** di rêveberiya tora WordPress de li ser torê çalak bike.
+3. Biçe **Ultimate Multisite** > **Mîheng** û mîhengên e-nameya pêvekê veke.
+4. Yekbûnên dabînkera e-nameyê yên ku tu dixwazî xerîdar bi kar bînin çalak bike.
+5. Mîhengan tomar bike, paşê afirandina hesabê bi xerîdarek ne-hilberînî an malperek staging ceribîne.
+
+## Herikîna Firotina E-nameyê Çawa Dixebite {#how-the-email-seller-flow-works}
+
+Firotina e-nameyê du tebeqeyên cuda hene:
+
+1. **Maf** — hilber/endamtiyeke e-nameya Ultimate Multisite ku dibêje xerîdar dikare e-nameyê ji bo domaina malperek diyarkirî, dabînker, kota, û sînora hesabê bi kar bîne.
+2. **Afirandina qutiya e-nameyê** — qutiya e-nameya rastîn a dabînkerê, wek `info@example.com`, ku dema xerîdar an rêvebirek torê beşa herêmî û şîfreyê hilbijêre tê afirandin.
+
+Di dema checkout de, pêvek **endamtiya e-nameyê** diafirîne an çalak dike û domaina malpera xerîdar û dabînkerê li ser wê endamtiyê tomar dike. Ew navek qutiya e-nameyê an şîfreyek texmîn nake. Piştî kirîn temam bû û çarçoveya malper/domainê çêbû, xerîdar dikare rûpela Account-ê veke û navên qutiyên e-nameyê yên ku dixwaze biafirîne.
+
+Ev tê wateya ku herikîna asayî ya xerîdar ev e:
+
+1. Xerîdar planeke malperê dikire û di dema checkout de hilberek e-nameyê zêde dike.
+2. Ultimate Multisite endamtiya malperê û endamtiya duyemîn a e-nameyê diafirîne.
+3. Pêveka Emails endamtiya e-nameyê bi domaina malpera xerîdar û dabînkerê ve girê dide.
+4. Xerîdar di Dashboard-a xwe de **Account** vedike.
+5. Panela **Hesabên E-nameyê** ji bo wê endamtiya e-nameya çalak xuya dibe.
+6. Xerîdar li **Hesab Biafirîne** diklîke, beşa herêmî wek `info` dikeve, şîfreyek saz dike, û pêvek li cem dabînkera mîhengkirî `info@their-domain.com` diafirîne.
+
+## Hilberek E-nameyê Mîheng Bike {#configure-an-email-product}
+
+Ji bo her pakêta e-nameyê ya ku dixwazî bifiroşî an belaş bidî, hilberek e-nameyê biafirîne. Heke tu di sazkirina hilberê de nû yî, bi [Afirandina Yekem Hilbera Abonetiya Xwe](../../user-guide/configuration/creating-your-first-subscription-product) dest pê bike û paşê ji bo mîhengên taybet ên e-nameyê vegere vir.
+
+1. Biçe **Rêveberiya Torê > Ultimate Multisite > Hilber > Hilber Zêde Bike**.
+2. **Cureya Hilberê** bike **E-name**.
+3. Nirxandinê mîheng bike. Ji bo planek firotinê nirxek dubare ya bi pere bi kar bîne, an heke divê planeke e-nameya temamker be, hilberê bike belaş/bi nirxa sifir.
+4. Beşa **Mîhengên E-nameyê** veke.
+5. **Dabînkera E-nameyê** ya mîhengkirî hilbijêre.
+6. **Hejmara Hesaban**, **Kotaya Hilanînê (MB)**, sînorên alias, şandêr, û bersivderên xweber li gor pêdiviyê saz bike.
+7. Hilberê tomar bike.
+
+Tenê dabînkerên ku li rûpela **Yekbûn** çalak in û bi tevahî hatine mîhengkirin di hilbijêrka dabînkerê de xuya dibin. Heke hilbijêrk vala be, pêşî dabînkerê mîheng û ceribîne.
+
+## E-nameyê li Checkout Zêde Bike {#add-email-to-checkout}
+
+Hilberên e-nameyê bi gelemperî wek zêdek ji planeke malperê re tên pêşkêşkirin. Ji bo herikîna giştî ya sererastkera checkout, li [Formên Checkout](../../user-guide/configuration/checkout-forms) binêre.
+
+1. Plana malperê ya ku xerîdar pêşî dikirin biafirîne an biguherîne.
+2. Hilbera e-nameyê wek zêdeyek/teşwîqeke fermanê ya berdest ji bo wê herikîna checkout zêde bike.
+3. Piştrast bike ku forma checkout hîn jî qadanên asayî yên malperê yên pêwîst dihewîne, bi taybetî qada URL/domaina malperê.
+4. Checkout-eke ceribandinê bi xerîdarek staging re bimeşîne.
+5. Piştî checkout, [rûpela Account](../../user-guide/client-management/account-page) ya xerîdar veke û piştrast bike ku panela **Hesabên E-nameyê** xuya dibe.
+
+Domaina e-nameyê ji domaina malpera xerîdar tê girtin. Xerîdar di qonaxa hilbera e-nameyê de domaina e-nameyê nakevin.
+
+## Birêvebirina E-nameya Account-a Xerîdar {#customer-account-email-management}
+
+Guhertoya 1.1.0 widget-eke birêvebirina e-nameyê li rûpela Account-a xerîdar zêde dike. Dema ku divê xerîdar bi xwe afirandin û parastina qutiyên e-nameyê ji bo malperên xwe bikin, wê bi kar bîne.
+
+Ji rûpela Account-ê, xerîdar dikarin:
+
+1. Hesabên e-nameyê yên bi endamtiya e-nameya niha/domaina malperê ve girêdayî bibînin.
+2. Dema hilbera e-nameyê destûra hesabên zêdetir dide, qutiyeke e-nameya nû biafirînin.
+3. Şîfreya qutiyeke e-nameya heyî biguherînin.
+4. Bi rêya SSO an têketina bi girêdana magic dabînkerên webmail ên piştgirîkirî vekin.
+
+Widget pergala currents ya rûpela Account-a Ultimate Multisite bi kar tîne, ji ber vê çalakî li gor çarçoveya Account-a ku xerîdar lê dinêre tên sînordarkirin. Ev asteng dike ku xerîdar hesabên e-nameyê yên girêdayî endamtiyek an malpereke din birêve bibin.
+
+Ger xerîdar panela emailê nabîne, kontrol bikin ku wan **endamtiyek çalak a berhema Email** heye, endamtî bi domaîna malperekê ve hatiye girêdan, û ji bo berhemê provider hatîye mîheng kirin.
+
+## Dana Planek Emailê ya Belaş ji Xerîdar re {#giving-a-customer-a-free-email-plan}
+
+Ji bo ku hûn bê heq ji xerîdar re email bidin, pêşî **destûra emailê** bidin, paşê mailbox biafirînin an bihêlin xerîdar mailboxê biafirîne.
+
+Vebijarkên pêşniyarkirî:
+
+* **Berhemeke emailê ya belaş biafirînin**: bihayê berhema emailê bikin belaş/sifir, paşê ji **Ultimate Multisite > Memberships > Add Membership** endamtiyeke çalak ji bo wî xerîdarî zêde bikin. Berhema emailê û xerîdar hilbijêrin. Endamtiyên belaş heta bêne guherandin an betal kirin ji bo her demê ne. Ger divê endamtiya emailê li gor malpereke heyî biçe, piştrast bikin ku ew bi konteksta wê malperê/domaînê ve girêdayî ye.
+* **Daxistineke 100% an lînka checkout a belaş bi kar bînin**: bihêlin xerîdar di checkout re derbas bibe da ku Ultimate Multisite endamtiya emailê û tomara dayînê bixweber biafirîne.
+* **Mailboxekê ji aliyê rêveber ve biafirînin**: biçin **Ultimate Multisite > Email Accounts > Add Email Account** da ku ji bo xerîdarekê li cem provider mailboxeke taybet biafirînin. Ev ji bo piştgiriyê bikêr e, lê ew şûna endamtiya berhema emailê nagire ku amûrên rûpela hesabê ya xwe-xizmetê ya xerîdar dixebitîne.
+
+Ger hûn dixwazin xerîdar ji rûpela hesabê ve mailboxê bi xwe birêve bibe, piştrast bikin ku ew ji bo domaînê endamtiyeke emailê ya çalak heye. Mailboxeke provider ku bi destan û bê wê endamtiyê hatiye afirandin dikare hebe, lê dibe ku xerîdar panela emailê ya xwe-xizmetê ji bo wê nebîne.
+
+## Hesabên Ji aliyê Rêveber ve Hatine Afirandin û "No Order Number" {#admin-created-accounts-and-no-order-number}
+
+Rûpela rêveberiyê ya **Email Accounts** mailboxeke provider diafirîne an diguherîne. Ew gava yekem ji bo firotin an dayîna planek emailê nîne.
+
+Dema hûn hesabek emailê diguherînin, qada **Membership** li endamtiyên heyî yên Ultimate Multisite bi hejmarê referansê/siparîşê digere. Ger hûn berî ku xerîdar endamtiyeke emailê hebe hewil bidin hesabekê tayîn bikin, dibe ku tu hejmarê siparîşê ji bo hilbijartinê tune be.
+
+Li şûna vê, vê rêza xebatê bi kar bînin:
+
+1. Endamtiya emailê ya xerîdar biafirînin an bibînin. Ji bo kirînan, checkout vê dike. Ji bo planeke diyariyê, endamtiyê bi destan ji [Memberships](../../user-guide/administration/managing-memberships) biafirînin an xerîdar bi checkouteke belaş re bişînin.
+2. Piştrast bikin ku endamtî çalak e û berhema Email bi kar tîne.
+3. Piştrast bikin ku endamtiya emailê bi domaîna malperê/provider ve girêdayî ye.
+4. Mailboxê ji rûpela hesabê ya xerîdar an ji **Ultimate Multisite > Email Accounts** biafirînin.
+5. Ger pêwîst be, tomara mailboxê biguherînin û xerîdar, endamtî, û malperê tayîn bikin.
+
+Ger tenê pêwîstiya we bi afirandina mailboxeke provider ji bo xerîdar heye û we pêwîstî bi rêvebirina xwe-xizmetê ya rûpela hesabê tune ye, hesabê ji aliyê rêveber ve hatî afirandin dikare têr be. Ger hûn dixwazin xerîdar wê di Ultimate Multisite de bibîne û birêve bibe, endamtiya emailê jî biafirînin.
+
+## Webmail SSO û Têketina Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO ji rûpela hesabê ve ji xerîdaran re çalakiyeke rasterast a **Webmailê veke** dide. Dema ji aliyê providerê çalak ve were piştgirîkirin, addon URLeke gihîştinê ya demkurt dixwaze û bêyî ku ji xerîdar bixwaze agahiyên têketina mailboxê kopî bike, wî ber bi webmailê ve beralî dike.
+
+Helwesta provideran dikare cuda be:
+
+* Providerên bi API-yên SSO yên xwemalî dikarin danişînek webmailê ya rasterast û piştrastkirî biafirînin.
+* Providerên bi piştgiriya magic-link dikarin lînkeke têketinê ya bi dem-sînorkirî çêbikin.
+* Providerên bê piştgiriya SSO an magic-link divê hîn jî hûrgiliyên mailboxê û çalakiyên rêvebirina şîfreyê nîşan bidin, lê bişkojka webmailê ya yek-klîk tune be.
+
+Gihîştina webmailê tenê ji bo providerên ku we agahiyên API yên pêwîst mîheng kirine çalak bikin. Ger çalakî ji bo providerekî kêm be, pêşî piştrast bikin ku provider çalak e, mîhengkirî ye, û piştgirîya lînkên têketina webmailê dike.
+
+## Provisioning a Checkoutê {#checkout-provisioning}
+
+Addon di dema checkoutê de **konteksta endamtiyê** ya emailê amade dike. Ew provider, sînorê hesabê, quota, û domaîna malperê tomar dike da ku xerîdar piştî kirînê ji rûpela hesabê ve navên mailboxên xwe biafirînin.
+
+Belavkirina pêşniyarkirî:
+
+1. Berî pêşkêşkirina berhema emailê, sînorên provider û berhemê mîheng bikin.
+2. Bi berhemeke staging kirînekê biceribînin û piştrast bikin ku endamtiya emailê hatiye afirandin.
+3. Rûpela hesabê ya xerîdar binirxînin da ku piştrast bikin widgeta **Email Accounts** ji bo domaînê xuya dibe.
+4. Ji widgetê mailboxeke ceribandinê biafirînin.
+5. Berî çalakkirina herikê ji bo berhemên production, çalakiyên guhertina şîfreyê û webmailê piştrast bikin.
+
+Ger provisioning têk biçe, dibe ku hesab û endamtiya xerîdar hîn hebin, lê endamtiya emailê an mailboxa provider pêwîstî bi şopandina rêveber hebe. Berî ku dîsa biceribînin, logên çalakiyê yên Ultimate Multisite û logên provider kontrol bikin.
+
+## Vegerînerên Emailê yên CyberPanel {#cyberpanel-email-forwarders}
+
+Ji bo torên bi piştgiriya CyberPanel, guhertoya 1.1.0 piştgiriya vegerînerên emailê zêde dike. Dema xerîdar pêwîstî bi navnîşanên wek `info@customer-domain.test` heye ku emailê bêyî afirandina mailboxeke tije ber bi inboxeke din ve beralî bikin, vegerîneran bi kar bînin.
+
+Berî pêşkêşkirina vegerîneran, piştrast bikin ku yekgirtina CyberPanel hatiye mîhengkirin û dikare were gihîştin. Ji bo host, username, password, û constantên package yên pêwîst, rêbernameya [Yekgirtina CyberPanel](../../user-guide/administration/cyberpanel-integration) bibînin.
+
+## Changelog {#changelog}
+
+### Guhertoya 1.1.0 - Di 2026-05-05 de hate weşandin {#version-110---released-on-2026-05-05}
+
+* Nû: Webmail SSO û magic-link login — mişterî dikarin bi pejirandina yek-klîk rasterast ji Account xwe bigihîjin webmailê.
+* Nû: Fonksiyona guhartina şîfreyê li widgeta rêvebirina Accounta emailê hate zêdekirin.
+* Nû: Piştgiriya şandera emailê ya CyberPanel.
+* Nû: Widgeta rêvebirina emailê li rûpela Account a mişterî ji bo çêkirin û rêvebirina accountê bi xizmeta xwe.
+* Nû: Dabînkirina mafê Accounta emailê ya mişterî di nav herikîna checkoutê de hate yekgirtin.
+* Çareserî: Hooka widgeta rûpela Account hate nûkirin da ku şêwaza tomarê ya rast a UMS bikar bîne.
+* Çareserî: Forma Çêkirina Accountê bi vanilla JS û derana belgeya HTML a tevahî ya rast hate guhertin.
+* Çareserî: Widgeta rêvebirina emailê niha pergala currents a UMS ji bo rûpelên Accounta admin bikar tîne.
+* Çareserî: Forma çêkirina Accounta emailê ya admin qada şîfreyê dihewîne û Email_Account_Manager bikar tîne.
+* Çareserî: Spamê logê yê her-daxwaz ji destpêkirina Email_Account_Manager hate rakirin.
+* Başkirî: Rûpela mîhengan niha fîltre dike da ku tenê pêşkêşkerên emailê yên çalak û mîhengkirî nîşan bide.
+
+## Pirsên Pir Tên Pirsîn {#frequently-asked-questions}
+
+### Ma mişterî dikarin Accountên emailê yên xwe çêkin? {#can-customers-create-their-own-email-accounts}
+
+Erê. Dema ku mişterî ji bo domainê xwedî membershipa emailê ya çalak be û product destûra Accountên zêde bide, mişterî dikarin ji rûpela Accountê mailboxên xwe çêkin û rêve bibin.
+
+### Ma her pêşkêşker piştgirî dide Webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Na. Piştgiriya SSO û magic-link bi pêşkêşkera emailê ya çalak ve girêdayî ye. Pêşkêşkerên bê APIya access-link hîn jî dikarin piştgirî bidin çêkirina mailboxê û guhertina şîfreyê.
+
+### Ma rêvebir dikarin ji bo mişteriyan Accountên emailê çêkin? {#can-administrators-create-email-accounts-for-customers}
+
+Erê. Rêvebir dikarin ji navrûya adminê Accountên emailê çêkin, di nav de dema çêkirina Accountê şîfreya destpêkê jî danîn. Ji bo rêvebirina xizmeta xwe ya mişterî, herwiha piştrast bikin ku mişterî ji bo domainê membershipa emailê ya çalak heye.
+
+### Ma ez dikarim Accountek emailê belaş bidim? {#can-i-give-an-email-account-away-for-free}
+
+Erê. Productek Email a belaş/bi bihayê sifir çêkin û wê wek membershipek çalak ji bo mişterî zêde bikin, an bihêlin mişterî checkoutê bi daxistina 100% temam bike. Piştî ku membershipa emailê hebe, mişterî an rêvebirek dikare mailboxa rastîn çêbike.
+
+### Çima veqetandina Accountek emailê hejmarê fermanê dixwaze? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Qada Membershipê li gor hejmarê referansê/fermanê membershipek Ultimate Multisite a heyî digere. Heke mişterî productek emailê nekiribû û we membershipek emailê bi destan neçêkiribû, membership/fermanek emailê tune ku were veqetandin. Pêşî membershipa emailê çêkin, paşê mailboxê çêkin an veqetînin.
+
+### Ma forwarder wek mailboxan in? {#are-forwarders-the-same-as-mailboxes}
+
+Na. Mailbox nameyan hil digire û xwedî agahiyên têketinê ye. Forwarder nameyan ber bi navnîşanek din ve vediguhezîne û inboxeke cuda nade.

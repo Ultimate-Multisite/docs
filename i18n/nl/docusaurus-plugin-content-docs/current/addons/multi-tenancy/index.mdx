@@ -1,31 +1,45 @@
 ---
-title: Multi-tenant
+title: Multi-tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
 Verdeel subsites over servers en databases voor prestaties en beveiliging
 
-## Requirements
+## Hoogtepunten van versie 1.2.0-release {#version-120-release-highlights}
 
-- WordPress 5.3 or higher
-- PHP 7.4 or higher
-- Multisite Ultimate plugin (active)
+Multi-Tenancy 1.2.0 voegt de sovereign tenant-basis toe voor productie-isolatieworkflows:
 
-## Installation
+- Stateless tenant autologin met kortlevende, tegen herhaling beveiligde SSO-bezoeken.
+- Database- en bestandssysteemisolatie per subsite voor sovereign tenants.
+- Hostinger multi-tenancy-mogelijkheid voor host-bewuste tenant-provisioning.
+- Verificatiepoorten voor sovereign migratie voor controles van legacygegevens en asynchrone push-verwerking.
+- Configureerbare database-hostbinding op dezelfde machine voor Bedrock-, FrankenPHP- en localhost-installaties.
+- Verbeteringen aan tenant bootstrap, database writer, schema bootstrap en gebruikersprovisioning.
+- Veiligere sovereign teardown die tenant-inloggegevens opschoont.
 
-1. Upload de addon-bestanden naar je `/wp-content/plugins/` directory
-2. Activeer de plugin via het 'Plugins' menu in WordPress
+Bekijk de gebruikershandleidingen voor [sovereign migratieworkflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolatie](/user-guide/configuration/multi-tenancy-isolation) en [sovereign tenant-bewerkingen](/user-guide/administration/sovereign-tenant-operations).
+
+## Vereisten {#requirements}
+
+- WordPress 5.3 of hoger
+- PHP 7.4 of hoger
+- Multisite Ultimate-plugin (actief)
+
+## Installatie {#installation}
+
+1. Upload de addon-bestanden naar je `/wp-content/plugins/`-directory
+2. Activeer de plugin via het menu 'Plugins' in WordPress
 3. Configureer de addon-instellingen in de netwerkbeheerder
 
-## Development
+## Ontwikkeling {#development}
 
-### Setup
+### Setup {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +60,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Projectstructuur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -70,54 +84,67 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Testing
+### Testen {#testing}
 
 De addon bevat een uitgebreid testframework:
 
-- **Unit Tests**: PHPUnit-gebaseerde tests met de WordPress test suite
+- **Unit Tests**: Op PHPUnit gebaseerde tests met WordPress-testsuite
 - **Base Test Class**: Biedt hulpmethoden voor veelvoorkomende testscenario's
-- **Test Coverage**: Geconfigureerd om code coverage bij te houden
-- **Multisite Testing**: Tests draaien in een multisite omgeving
+- **Test Coverage**: Geconfigureerd om codedekking bij te houden
+- **Multisite-testen**: Tests draaien in een multisite-omgeving
 
-### Code Standards
+### Codestandaarden {#code-standards}
 
 - **WordPress Coding Standards**: Afgedwongen via PHPCS
-- **PHP 7.4+ Compatibility**: Moderne PHP-functies ondersteund
-- **Static Analysis**: PHPStan-integratie voor type-checking
-- **Code Modernization**: Rector-regels voor PHP-upgrades
+- **PHP 7.4+-compatibiliteit**: Moderne PHP-functies worden ondersteund
+- **Statische analyse**: PHPStan-integratie voor typecontrole
+- **Codemodernisering**: Rector-regels voor PHP-upgrades
 
-### Build System
+### Buildsysteem {#build-system}
 
-- **Asset Processing**: Minificatie voor CSS/JS-bestanden
-- **Translation**: POT-bestand generatie
+- **Assetverwerking**: Minificatie voor CSS/JS-bestanden
+- **Vertaling**: Generatie van POT-bestanden
 - **Packaging**: Archiefcreatie voor distributie
-- **Development Mode**: Ongecomprimeerde assets voor debugging
+- **Ontwikkelmodus**: Niet-geminificeerde assets voor debugging
 
-## Configuration
+## Configuratie {#configuration}
 
 De addon ondersteunt verschillende configuratieopties die toegankelijk zijn via de netwerkbeheerinterface.
 
-## Hooks and Filters
+### Sovereign tenant-configuratie {#sovereign-tenant-configuration}
 
-### Actions
+Configureer voor sovereign tenants de tenant-database, de root van het bestandssysteem, database-hostbinding en host-mogelijkheid voordat je verkeer naar de tenant routeert. Voer migratieverificatie uit na elke wijziging die invloed heeft op database-inloggegevens, hostbinding, routing of gebruikersprovisioning.
 
-- `ultimate-multisite-addon-template_init` - Wordt geactiveerd na addon initialisatie
-- `ultimate-multisite-addon-template_loaded` - Wordt geactiveerd na het laden van alle addon-bestanden
+Gebruik `localhost` alleen wanneer de tenant-runtime en database-grants lokale socket- of toegang op dezelfde machine verwachten. Gebruik `127.0.0.1` of een service-hostnaam wanneer dat de grant-host is die door je provider is geconfigureerd.
 
-### Filters
+### Hostinger-mogelijkheid {#hostinger-capability}
+
+De Hostinger multi-tenancy-mogelijkheid werkt met de gedeelde Hostinger-integratietoken. Bevestig dat het domein aanwezig is in hPanel, DNS naar het Hostinger-account verwijst en de tenant-database-instellingen overeenkomen met hPanel vóór verificatie.
+
+## Hooks en filters {#hooks-and-filters}
+
+### Acties {#actions}
+
+- `ultimate-multisite-addon-template_init` - Geactiveerd na initialisatie van de addon
+- `ultimate-multisite-addon-template_loaded` - Geactiveerd nadat alle addon-bestanden zijn geladen
+
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Wijzig addon-instellingen
-- `ultimate-multisite-addon-template_enabled` - Overschrijf addon inschakelen/uitschakelen status
+- `ultimate-multisite-addon-template_enabled` - Overschrijf de inschakel-/uitschakelstatus van de addon
 
-## License
+## Licentie {#license}
 
 Deze addon is gelicentieerd onder de GPL v3 of later.
 
-## Support
+## Ondersteuning {#support}
 
-Voor ondersteuning en documentatie, bezoek [MultisiteUltimate.com](https://multisiteultimate.com)
+Ga voor ondersteuning en documentatie naar [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
 
-## Changelog
+- Versie 1.2.0 (2026-06-03): voeg stateless tenant autologin, Hostinger multi-tenancy-mogelijkheid, database- en bestandssysteemisolatie per subsite, verificatiepoorten voor sovereign migratie, verbeteringen aan tenant bootstrap/database writer, configureerbare MySQL-hostbinding en veiligere sovereign teardown toe.
 
-- Versie 1.0.1 (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
-- Versie (2025-09-28): prefix hernoemen naar ultimate-multisite; tekstdomein bijwerken; versie verhogen.
+- Versie 1.0.1 (2025-09-28): hernoem prefix naar ultimate-multisite; update text domain; versieverhoging.
+
+
+- Versie  (2025-09-28): hernoem prefix naar ultimate-multisite; update text domain; versieverhoging.

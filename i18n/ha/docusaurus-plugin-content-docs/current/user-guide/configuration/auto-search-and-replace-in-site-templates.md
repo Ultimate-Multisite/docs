@@ -3,7 +3,7 @@ title: Bincike da Sauya a Wurin Shagwar Wurin Gida
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search and Replace a cikin Site Templates (v2)
+# Auto Search and Replace a cikin Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Wannan tutorial yana buƙatar amfani da WP UItimo versiyon 2.x.**_
 
@@ -17,7 +17,7 @@ Wannan makamancin jama'ar ka za su iya tura wannan fildin a lokacin rubuta shiga
 
 Ultimate Multisite zai mayar da wahalar (placeholders) da bayanan da abokan ciniki suka ba su kai tsaye.
 
-## **Magance matsalar "template mai wahalar placeholders"**
+## **Magance matsalar "template mai wahalar placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Duk wancin abu yana da kyau, amma muna fuskantar wani matsala mai rikitarwa: yanzu site templates ɗinmu - waɗanda abokan cinikinmu za su ziyarci - suna cika wahalar (placeholders) masu rikitarwa ba su ba da wani bayani.
 

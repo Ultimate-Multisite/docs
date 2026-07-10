@@ -1,40 +1,46 @@
 ---
-title: Referencia nastavení
+title: Referenčná príručka nastavení
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencia nastavení
+# Referencia nastavení {#settings-reference}
 
-Tato stránka sleduje nastavení, které ovlivňují každodennou správu a nedávné změny chování v Ultimate Multisite.
+Táto stránka sleduje nastavenia, ktoré ovplyvňujú každodennú správu a nedávne zmeny správania v Ultimate Multisite.
 
-## Další možnosti
+## Ďalšie možnosti {#other-options}
 
-Sekce **Další možnosti** se nachází pod **Ultimate Multisite > Settings > Login & Registration**.
+Oblasť **Ďalšie možnosti** sa zobrazuje pod **Ultimate Multisite > Settings > Login & Registration**.
 
-| Nastavení | Popis |
+| Nastavenie | Popis |
 |---|---|
-| **Enable Jumper** | Zobrazuje rychlý nástroj navigace Jumper v administrativním zařízení. Použijte ho k přímému přesunu na obrazovky Ultimate Multisite, síťové objekty a podporované destinace pro administraci. Deaktivujte jej, pokud si tuto zkratku nechtíte vidět. |
+| **Enable Jumper** | Zobrazuje nástroj rýchlej navigácie Jumper v administrátorskej oblasti. Použite ho na priamy prechod na obrazovky Ultimate Multisite, sieťové objekty a podporované administrátorské ciele. Vypnite ho, ak nechcete, aby bola táto skratka viditeľná. |
 
-## Nahlášení chyb a telemetrie
+## Hlásenie chýb a telemetria {#error-reporting-and-telemetry}
 
-Poprzední nastavení pro souhlas s nahlášením chyb bylo odstraněno ze stránky nastavení. Anonymní telemetrie je vypnuto a na rozhraní není žádný přepínač k její aktivaci.
+Predchádzajúce nastavenie prihlásenia sa k hláseniu chýb bolo zo stránky nastavení odstránené. Anonymná telemetria je vypnutá a neexistuje žiadny prepínač v UI na jej zapnutie.
 
-Pokud udržujete interní runbooks nebo snímky obrazovky pro stránku nastavení, odeberte odkazy na staré pole pro souhlas s nahlášením chyb, abyste administrátoři neměli hledat nastavení, které již neexistuje.
+Ak udržiavate interné príručky alebo snímky obrazovky pre stránku nastavení, odstráňte odkazy na staré pole prihlásenia sa k hláseniu chýb, aby administrátori nehľadali nastavenie, ktoré už nie je prítomné.
 
-## Nastavení importu/exportu
+## Nastavenia importu/exportu {#importexport-settings}
 
-T absorbent záložka **Import/Export** popisuje, která nastavení ovládá a přímo odkazuje na **Ultimate Multisite > Site Export** pro archivy sítí a sítě. Používejte záložku nastavení pro konfiguraci importu/exportu, použijte **Tools > Export & Import** pro pracovní postup exportu/importu pro jednu síť a použijte nástroj Site Export, když potřebujete kompletní archiv exportu sítě.
+Karta nastavení **Import/Export** opisuje, ktoré nastavenia ovláda, a odkazuje priamo na **Ultimate Multisite > Site Export** pre archívy webov a siete. Kartu nastavení použite na konfiguráciu importu/exportu, **Tools > Export & Import** použite pre pracovný postup exportu/importu jedného webu a nástroj Site Export použite, keď potrebujete úplný archív Network Export.
 
-## Nastavení konektoru AI poskytovatele
+## Upozornenie na zostatok Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Nastavení konektoru AI poskytovatele nyní zobrazují pouze podporované skupiny účtů OAuth:
+Keď je doplnok Domain Seller pripojený k HostAfrica, administrátori siete teraz vidia zrušiteľné upozornenie na nízky zostatok, keď je zostatok účtu predajcu príliš nízky na spoľahlivé spracovanie registrácie alebo obnovenia domén.
 
-| Provider | Nastavenie toku |
+Berte toto oznámenie ako prevádzkové upozornenie: pred prijímaním ďalších platených registrácií domén doplňte zostatok predajcu HostAfrica, potom sa vráťte do nastavení Domain Seller alebo na obrazovku monitorovania domén a potvrďte, že registrácie a obnovenia môžu pokračovať normálne.
+
+## Nastavenia konektora poskytovateľa AI {#ai-provider-connector-settings}
+
+Nastavenia konektora poskytovateľa AI teraz zobrazujú iba podporované skupiny účtov OAuth:
+
+| Poskytovateľ | Postup nastavenia |
 |---|---|
-| **Anthropic Max** | Pripojte jeden alebo viac účtov Anthropic Max pomocou tlačidla OAuth. Použite manuálnu OAuth záverku, ak sa v sandboxed prehliadači automaticky neprejdie na cieľ. |
-| **OpenAI ChatGPT/Codex** | Pripojte účty ChatGPT cez ten istý pracovný postup OAuth. Operácie podporované kontejnerom môžu používať nástroje ChatGPT Codex po pripojení účtu. |
-| **Google AI Pro** | Pripojte účty Google AI Pro pomocou OAuth, potom si obnovte kontejner, ak sa zoznam účtov neaktualizuje okamžite. |
+| **Anthropic Max** | Pripojte jeden alebo viac účtov Anthropic Max pomocou tlačidla OAuth. Použite manuálnu záložnú možnosť OAuth, keď sandboxovaný prehliadač nedokáže automaticky dokončiť presmerovanie. |
+| **OpenAI ChatGPT/Codex** | Pripojte účty ChatGPT prostredníctvom rovnakého pracovného postupu skupiny OAuth. Operácie podporované konektorom môžu po pripojení účtu používať volania nástroja ChatGPT Codex. |
+| **Google AI Pro** | Pripojte účty Google AI Pro prostredníctvom OAuth a potom obnovte konektor, ak sa zoznam účtov neaktualizuje okamžite. |
 
-Cursor Pro už nie je podporovaný poskytovateľom. Odstránte staré interné snímky obrazovky, runbóky alebo kroky na začiatok, ktoré spomínajú nastavenia Cursor Pro alebo cesty kontejnerov.
+Cursor Pro už nie je podporovaný poskytovateľ. Odstráňte staré interné snímky obrazovky, príručky alebo kroky zaškolenia, ktoré spomínajú polia nastavenia Cursor Pro alebo cesty konektora.
 
-Pri pridávaní alebo odstránovaní účtov poskytovateľa zadajte platnú e-mailovú adresu pre účet, ktorý sa obnovuje alebo odstráni, a uložte nastavenia poskytovateľa pred testovaním operácií podporovaných kontejnerom.
+Pri pridávaní alebo odstraňovaní účtov poskytovateľa zadajte platnú e-mailovú adresu účtu, ktorý sa obnovuje alebo odstraňuje, a pred testovaním operácií podporovaných konektorom uložte nastavenia poskytovateľa.

@@ -3,11 +3,11 @@ title: Ndinani chifukwa cha Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Ndiye Ultimate Multisite
+# Ndiye Ultimate Multisite {#why-ultimate-multisite}
 
 Muli muli wamukira ilo ndalama, muli ndi chonde kuti muli ndi mavuto omwe plugin yathu yotsogolera kuti muli ndi chidziwitso lomaliza. Tili ndi chonde kuti muli ndi zokhudza zomwe mukuwona m'moyo wopereka.
 
-## Kodi Ultimate Multisite ndi chiyani?
+## Kodi Ultimate Multisite ndi chiyani? {#what-is-ultimate-multisite}
 
 Ultimate Multisite ndi plugin ya WordPress Multisite yomwe imapereka kuwona kwa wamukondedwa WaaS (Website as a Service). ndi plugin yathu, muli ndi njira yomwe mungupereke mbiri zoshipulira (subscription tiers) ndipo wamukondedwa angathe kulipira mlankhuso woperekera kuti muli ndi site yomwe imaperekedwa m'moyo woperekera wanu.
 
@@ -15,7 +15,7 @@ Ultimate Multisite imapereka njira yomwe mungupereke malipiro m'njira zoshipulir
 
 Ndipo izi ndi chifukwa cha m'moyo woperekera, komwe mungupereke funksheni zina monga add-ons ndi webhooks.
 
-## Zinthu zina
+## Zinthu zina {#other-features}
 
 Ultimate Multisite imapereka:
 
@@ -33,11 +33,11 @@ Ndi zambiri zokunena kwambiri:
 
 * Search and Replace API: Muli ndi ulemu womwe mumakula site templates ndi placeholders monga {{site_name}} ndipo mukuwunika Search and Replace API kuti mupereke zinthu zomwe wanu amapereka pansi pa mpaka wopanga (right after sign-up), monga m'malo.
 
-## Zomwe Mungathe Kuti Muli ndi Zomwe Zikuyenera (Use cases)
+## Zomwe Mungathe Kuti Muli ndi Zomwe Zikuyenera (Use cases) {#use-cases}
 
 Ndi nthawi yomwe tikuyenera kuona zomwe mungathandizire Ultimate Multisite.
 
-### Case 1: Agency
+### Case 1: Agency {#case-1-an-agency}
 
 Kukonzekera kwa agency kumayamba ndi kupanga websites ndi zinthu monga hosting kapena marketing kuti zimeneledwe monga zinthu zina.
 
@@ -47,7 +47,7 @@ Kuthandiza kukhulupirira plugins ndi themes kumakhala m'malo monga m'malo woyamb
 
 Agencies zikomo chifundo chokuti Ultimate Multisite chimapera kwa agensi kuti mupereke chisonkhwe chokuti zimenezi - kukhazikitsa website zosonyeza.
 
-### Case 2: Mupereka Wopereka (Niche Provider)
+### Case 2: Mupereka Wopereka (Niche Provider) {#case-2-niche-provider}
 
 Kuna chifundo chokuti, "Mefunsa chilichonse chimodzi ndi kulipirira bwino." Kwa anthu ambiri omwe ali ndi chitsanzo cha sikwambiri, izi zimenezi kukhala kupanga zochitika kapena zosiyanasiyana zomwe zili m'moyo woyenera.
 
@@ -57,7 +57,7 @@ Chimenezo cha Ultimate Multisite chokuti template site ndi chimenezo chomwe them
 
 Poyenera wopereka sites ndi zosiyanasiyana ndi zosonyeza, izi zimapereka chifundo chokuti muli ndi ulemu wosonyeza kuti mupanga site lili likuyenera kuyamba ndi plugins ndi design yomwe imenezi. M'moyo woyenera kumenezi kulipirira chinthu chofunika kwa kukhazikitsa ntchito.
 
-### Case 3: WordPress Web Hosting
+### Case 3: WordPress Web Hosting {#case-3-wordpress-web-hosting}
 
 Kuna mwayi ambiri wokupereka WordPress sites koma osati ndi luso kwambiri kupereka web space kwa wopereka ndi WordPress yomwe imaperekedwa m'moyo woyenera. Izi ndikuphunzira chifukwa kukhala kulemba zinthu zingali zikuyenera kuyenera kuti mupereke ntchito yomwe ndi yenera.
 

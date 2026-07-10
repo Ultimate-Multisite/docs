@@ -3,9 +3,9 @@ title: Ultimate AI Connector for Compatible Endpoints Değişiklik Günlüğü
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector for Compatible Endpoints Değişiklik Günlüğü
+# Ultimate AI Connector for Compatible Endpoints Değişiklik Günlüğü {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Version 2.0.0 — Yayınlanma Tarihi 2026-04-24
+## Version 2.0.0 — Yayınlanma Tarihi 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Yeni: Çoklu sağlayıcı desteği — Birden fazla Yapay Zeka (AI) uç noktasını yapılandırın ve isteklere, sağlayıcılar arasında otomatik yedekleme yaparak yönlendirme yapın.
 * Düzeltme: Çoklu sağlayıcı SDK entegrasyonu, sağlayıcı başına doğru sağlayıcı kimlikleri, kayıt URL'leri ve HTTP filtre kapsamı ile yapıldı.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Düzeltme: Her sayfa yüklemesinde tetiklenen engelleme yapan HTTP isteği kaldırıldı.
 * Geliştirildi: GitHub Actions iş akışları Node.js 24'e yükseltildi.
 
-## Version 1.0.0 — İlk Yayın
+## Version 1.0.0 — İlk Yayın {#version-100--initial-release}

@@ -3,7 +3,7 @@ title: Plan-akako link-ezpenak eskaintzea
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Planak Linkakatuaren Eskaintza Kontrolatzea
+# Planak Linkakatuaren Eskaintza Kontrolatzea {#managing-shareable-links-for-plans}
 
 Ultimate Multisite-ek planak linkak direktamente client-ekin iritsi dezake. Horrek egin dezakezu dituzteko, plan bat eduki editatzia eskuratu eta "_Shareable Link kopioatzeko klikatu_ ("Click to copy the Shareable Link") botoia klikatu behar duzu.
 

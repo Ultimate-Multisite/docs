@@ -4,11 +4,11 @@ title: Филтър - retrieve_password_title
 sidebar_label: retrieve_password_title
 _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 ---
-# Филтър: retrieve_password_title
+# Филтър: retrieve_password_title {#filter-retrievepasswordtitle}
 
 Филтрира заглавието на имейла за сброс на паролата.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 7fcf454c64361885b8f64cc6fbc9ba93
 | $user_login | `string` | Потребителското име на потребителя. |
 | $user_data | `\WP_User` | Обект WP_User. |
 
-### От
+### От {#since}
 
 - 2.8.0
 - 4.4.0: Добавени параметрите <code>$user_login</code> и <code>$user_data</code>.
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L135) на ред 135.
 
 
-## Връща
+## Връща {#returns}
 Първоначално заглавие на имейла.

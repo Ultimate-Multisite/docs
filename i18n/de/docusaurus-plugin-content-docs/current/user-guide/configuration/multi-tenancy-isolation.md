@@ -3,11 +3,11 @@ title: Multi-Tenant-Isolation
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Multi-Tenancy Isolation
+# Multi-Tenancy Isolation {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 unterstützt die Datenbank- und Dateisystemisolation pro Subsite für souveräne Mieter. Dies hält die Kundendaten getrennt, während die Netzwerkbereitstellung, Abrechnung und Verwaltung beibehalten werden.
 
-## Isolationsstrategie
+## Isolationsstrategie {#isolation-strategy}
 
 Verwenden Sie die souveräne Isolation für Kunden, die eine stärkere Datenabtrennung, dedizierten Dateisystemspeicher oder eine separate Host-Grenze benötigen.
 
@@ -18,7 +18,7 @@ Jeder souveräne Mieter sollte Folgendes haben:
 - Einen Eintrag im Mieterregister, der die Site mit ihrer Datenbank, dem Wurzelpfad, dem Hostnamen und dem Isolationsmodell verknüpft.
 - Ein Migrationsverifizierungsresultat, bevor der Mieter als live betrachtet wird.
 
-## Datenbankhostbindung
+## Datenbankhostbindung {#database-host-binding}
 
 Version 1.2.0 ändert das Standardverhalten der Hostbindung auf derselben Maschine für souveräne Installationen. Gleiche Maschinenwerte wie `localhost` werden normalisiert, sodass Bedrock, FrankenPHP und containerisierte WordPress-Installationen Berechtigungen gegenüber dem tatsächlichen MySQL-Hoststring gewähren und überprüfen können.
 
@@ -31,11 +31,11 @@ Wenn Sie einen souveränen Mieter konfigurieren:
 
 Wenn die Verifizierung Fehler bei den Berechtigungen meldet, vergleichen Sie die Benutzerberechtigungen der Mieterdatenbank mit der konfigurierten Hostbindung. Ein für `user@localhost` gewährter Benutzer unterscheidet sich von `user@127.0.0.1` oder `user@%`.
 
-## Dateisystemwurzel
+## Dateisystemwurzel {#filesystem-root}
 
 Die Root des Tenants sollte über Neustarts und Deployments stabil sein. Vermeiden Sie temporäre Mount-Pfade. Bei Bedrock-Installationen stellen Sie sicher, dass die Tenant-Root auf die WordPress-Web-Root verweist, die vom Tenant Bootstrap erwartet wird, und nicht nur auf das Projekt-Root.
 
-## Bereitstellungsreihenfolge
+## Bereitstellungsreihenfolge {#provisioning-order}
 
 Für neue souveräne Tenants verwenden Sie diese Reihenfolge:
 
@@ -49,7 +49,7 @@ Für neue souveräne Tenants verwenden Sie diese Reihenfolge:
 
 Diese Reihenfolge verhindert, dass teilweise isolierte Tenants Traffic erhalten, bevor die Datenbankwriter, Benutzer und das Dateisystem bereit sind.
 
-## Workflows für souveräne Kundenverwaltung
+## Workflows für souveräne Kundenverwaltung {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 führt Kundenverwaltungsaktionen auf der Hauptseite aus, wenn der souveräne Modus aktiviert ist. Ein Tenant kann immer noch als isolierte WordPress-Installation laufen, aber kundenorientierte Aktionen, die von Netzwerkabrechnung, Mitgliedschaft oder Daten gemeinsamer Konten abhängen, sollten den Kunden anstelle des Versuchs, die Aktion innerhalb der Tenant-Runtime abzuschließen, zur Hauptseite zurücksenden.
 

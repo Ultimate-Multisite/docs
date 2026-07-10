@@ -3,7 +3,7 @@ title: Fitaovana fanamboarana toerana maro
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Fita Fanamboana Multisite
+# Fita Fanamboana Multisite {#multisite-setup-wizard}
 
 Ultimate Multisite dia manome fita fanamboarana (wizard) mialoha izay mamadika ho azy ny fametrahana WordPress tsotra ho tambajotra WordPress Multisite. Izany dia manala ny filàna manova ny `wp-config.php` na manao baiko amin'ny database.
 
@@ -11,13 +11,13 @@ Ultimate Multisite dia manome fita fanamboarana (wizard) mialoha izay mamadika h
 Raha efa miasa ho tambajotra Multisite ny fametrahana WordPress anao, afaka mandalo ity dingana ity ianao. Azo jerena io fita fanamboarana io rehefa tsy voafidy (enabled) ny Multisite ihany.
 :::
 
-## Rahoviana no Mipoitra ilay Fita Fanamboarana?
+## Rahoviana no Mipoitra ilay Fita Fanamboarana? {#when-does-the-wizard-appear}
 
 Rehefa manao activation an'i Ultimate Multisite amin'ny fametrahana WordPress tsotra (tsy ho Multisite), dia mahatsapa ny plugin fa tsy voafidy ny Multisite ary mampitso anao mivantana any amin'ilay Fita Fanamboarana Setup Multisite fa tsy ilay fita fanamboarana ara-dalàna.
 
 Afaka miditra azy mivantana ianao ao amin'ny **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Fepetra Ilaina (Prerequisites)
+## Fepetra Ilaina (Prerequisites) {#prerequisites}
 
 Alohan'ny manokafana ny wizard, dia ataovy izay hahazoana:
 
@@ -29,7 +29,7 @@ Alohan'ny manokafana ny wizard, dia ataovy izay hahazoana:
 Ny wizard dia manova ny rakitra `wp-config.php` anao ary mamorona tabele database vaovao. Ataovy azo antoka fa manao backup aloha alohan'ny hanombohanao izany.
 :::
 
-## Dingana 1: Fandraisana Fanahy (Welcome)
+## Dingana 1: Fandraisana Fanahy (Welcome) {#step-1-welcome}
 
 Ny écran voalohany dia manazava hoe inona no atao amin'ny WordPress Multisite sy ny zavatra hataon'ilay wizard:
 
@@ -42,11 +42,11 @@ Ny écran voalohany dia manazava hoe inona no atao amin'ny WordPress Multisite s
 
 Tsindrio **Continue** mba handefasana.
 
-## Dingana 2: Fandrindrana Ny Tambajotra (Network Configuration)
+## Dingana 2: Fandrindrana Ny Tambajotra (Network Configuration) {#step-2-network-configuration}
 
 Ity dingana ity dia mangataka anao mba hifehezana ny fepetra ho an'ny tambajotranareo.
 
-### Firafitry ny Tranokala (Site Structure)
+### Firafitry ny Tranokala (Site Structure) {#site-structure}
 
 Safidio ny fomba hanomezana ny toerana ho an'ny tranokala anareo:
 
@@ -57,11 +57,11 @@ Safidio ny fomba hanomezana ny toerana ho an'ny tranokala anareo:
 Raha mifidy sub-domains ianao, mila mametraka **wildcard DNS** sy **wildcard SSL certificate** ho an'ny domain anareo ianao. Ireo host WordPress maro dia manao izany ho azy. Jereo ny [Ultimate Multisite 101](./ultimate-multisite-101) mba hahazoana fampitahana antsipiriany kokoa.
 :::
 
-### Anaran'ny Tambon-draharaha (Network Title)
+### Anaran'ny Tambon-draharaha (Network Title) {#network-title}
 
 Ampidiro anarana ho an'ny tambon-draharahanareo. Io dia manome ny anaran'ny tranokala ankehitriny miaraka amin'ny hoe "Network". Afaka ovaina izany aorian'izay avy amin'ny fandraisana an-tanan-draharaha (network settings).
 
-### Email Admin ho an'ny Tambon-draharaha (Network Admin Email)
+### Email Admin ho an'ny Tambon-draharaha (Network Admin Email) {#network-admin-email}
 
 Ny adiresy mail sy ampiasaina ho fanambarana fitantanana ny tambon-draharaha. Io dia manome ny adiresin'ny mpampiasa ianao amin'izay fotoana.
 
@@ -69,7 +69,7 @@ Ny adiresy mail sy ampiasaina ho fanambarana fitantanana ny tambon-draharaha. Io
 
 Aorian'ny famafazana ireo toerana, tsindrio **Continue** mba hanombohana ny dingana manaraka.
 
-## Dingana 3: Fametrahana (Installation)
+## Dingana 3: Fametrahana (Installation) {#step-3-installation}
 
 Tsindrio ny bokotra **Install** mba hanombohana. Ny wizard dia manao dingana automatika dimy mifandray tsara, ary mampiseho ny fandrosoany amin'ny fotoana tena izy isaky ny dingana:
 
@@ -96,7 +96,7 @@ Rehefa vita tsara avy ireo dingana rehetra, dia hahita toetranjaka maitso "Succe
 
 Avy eo, ny wizard dia handroso ho any amin'ny efijery famaranana ho azy.
 
-## Dingana 4: Famaranana
+## Dingana 4: Famaranana {#step-4-complete}
 
 Rehefa vita tanteraka ny fanatanterahana (installation), dia hahita hafatra fahombiazana ianao manamarina fa voafandrefana ny WordPress Multisite.
 
@@ -108,7 +108,7 @@ Afaka manohy amin'ny wizard Ultimate Multisite ianao mba hifehezana ny sehatra W
 Ny fanapahan-kevitra rehefa vita ny fametrahana multisite, dia hivoaka amin'ny navigateur anao ianao amin'ny alalan'ny network admin vaovao. Mety mila mitady indray ianao satria novana ny cookies momba ny authentication ho an'ny tontolo multisite.
 :::
 
-## Fandaharana fanampiny (Manual Setup Fallback)
+## Fandaharana fanampiny (Manual Setup Fallback) {#manual-setup-fallback}
 
 Raha tsy afaka manoratra ao amin'ny rakitra `wp-config.php` anao ny wizard (noho ny fepetra ara-panaraha-maso ny rakitra na fetran'ny server), dia hanehoina ho anao ny code marina tokony ho azo ampiana manokana:
 
@@ -117,9 +117,9 @@ Raha tsy afaka manoratra ao amin'ny rakitra `wp-config.php` anao ny wizard (noho
 
 Rehefa vita ireo fanovana manokana ireo dia avereno ny pejy ary hahita fa miasa ny multisite anao izy.
 
-## Fanamboarana olana (Troubleshooting)
+## Fanamboarana olana (Troubleshooting) {#troubleshooting}
 
-### Lazain'ny wizard fa tsy azo soratra ao amin'ny wp-config.php
+### Lazain'ny wizard fa tsy azo soratra ao amin'ny wp-config.php {#the-wizard-says-wp-configphp-is-not-writable}
 
 Ny process an'ny web server anao dia mila alalana hanoratra ao amin'ilay rakitra `wp-config.php`. Afaka manao izany ianao:
 
@@ -127,7 +127,7 @@ Ny process an'ny web server anao dia mila alalana hanoratra ao amin'ilay rakitra
 - Ampiasao ny toromarika fandaharana fanampiny (manual setup fallback instructions) omen'ny wizard
 - Mangataha fanampiana amin'ny hosting anao
 
-### Tsy azo jerena ireo tranokala aorian'ny fametrahana (subdomains)
+### Tsy azo jerena ireo tranokala aorian'ny fametrahana (subdomains) {#sites-are-not-accessible-after-setup-subdomains}
 
 Raha nifidy firafitry ny subdomain ianao, dia mila manova ny **wildcard DNS** ho an'ny domain anao. Ampio record DNS iray:
 
@@ -139,7 +139,7 @@ Value: [IP server anao]
 
 Mifanakalo hevitra amin'ny hosting anao raha tsy fantatrao ny fomba fanatanterahana izany.
 
-### Olana momba ny authentication aorian'ny fametrahana
+### Olana momba ny authentication aorian'ny fametrahana {#authentication-issues-after-setup}
 
 Raha tsy tafiditra ianao na mahazo fahadisoana momba ny cookies aorian'ny fametrahana multisite:
 
@@ -147,7 +147,7 @@ Raha tsy tafiditra ianao na mahazo fahadisoana momba ny cookies aorian'ny fametr
 2. Mitady indray ao amin'ny `yourdomain.com/wp-login.php`
 3. Raha mbola mitranga izany, jereo fa tsy voafetra ny `COOKIE_DOMAIN` ao amin'ny `wp-config.php` anao ho `false` — ity dia olana fantatra amin'ny fametrahana multisite amin'ny subdomain.
 
-### Nisy dingana iray tsy nahomby nandritra ny fametrahana
+### Nisy dingana iray tsy nahomby nandritra ny fametrahana {#a-step-failed-during-installation}
 
 Raha misy iray amin'ireo dingana fanatanterahana (installation steps) dia mampiseho fahadisoana:
 

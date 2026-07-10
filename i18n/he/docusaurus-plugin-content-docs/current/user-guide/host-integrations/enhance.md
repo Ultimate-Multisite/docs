@@ -3,33 +3,33 @@ title: שפר את אינטגרציית לוח הבקרה
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# אינטגרציה עם לוח הבקרה Enhance
+# אינטגרציה עם לוח הבקרה Enhance {#enhance-control-panel-integration}
 
-## סקירה כללית
+## סקירה כללית {#overview}
 Enhance הוא לוח בקרה מודרני המספק יכולות אוטומציה וניהול אירוח חזקות. האינטגרציה הזו מאפשרת סנכרון דומיינים אוטומטי וניהול תעודות SSL בין Ultimate Multisite ללוח הבקרה של Enhance.
 
 **דיון קשור:** ראו [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) לטיפים מהקהילה ומידע נוסף.
 
-## תכונות
+## תכונות {#features}
 - סנכרון דומיינים אוטומטי כאשר דומיינים ממופים ב-Ultimate Multisite
 - הנפקת תעודות SSL אוטומטית דרך LetsEncrypt כאשר ה-DNS מוגדר נכון
 - תמיכה בתת-דומיינים לרשתות שפועלות במצב subdomain
 - הסרת דומיינים כאשר מיפויים נמחקים
 - בדיקת חיבור לאימות פרטי ה-API
 
-## דרישות
+## דרישות {#requirements}
 
-### דרישות מערכת
+### דרישות מערכת {#system-requirements}
 - לוח הבקרה Enhance מותקן ונגיש
 - התקנת WordPress Multisite שמתארחת על שרת Enhance או מחוברת אליו
 - שרת Apache (Enhance תומך כרגע בתצורות Apache; LiteSpeed Enterprise זמין בעלות מופחתת)
 
-### גישת API
+### גישת API {#api-access}
 נדרשת גישת מנהל ללוח הבקרה של Enhance כדי ליצור API tokens.
 
-## קבלת פרטי ה-API שלך
+## קבלת פרטי ה-API שלך {#getting-your-api-credentials}
 
-### 1. יצירת API Token
+### 1. יצירת API Token {#1-create-an-api-token}
 
 1. התחברו ללוח הבקרה של Enhance כמנהלים
 2. לחצו על **Settings** בתפריט הניווט
@@ -44,7 +44,7 @@ Enhance הוא לוח בקרה מודרני המספק יכולות אוטומצ
 
 לאחר היצירה, ה-**Access Token** וה-**Organization ID** יוצגו. **שמרו אותם מיד** כי ה-token יוצג רק פעם אחת.
 
-### 2. קבלת ה-Organization ID
+### 2. קבלת ה-Organization ID {#2-get-your-organization-id}
 
 ה-Organization ID מוצג בדף Access Tokens בתיבת מידע כחולה עם התווית "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Enhance הוא לוח בקרה מודרני המספק יכולות אוטומצ
 2. לחצו על **Manage customer** עבור הלקוח הרלוונטי
 3. הסתכלו על ה-URL - ה-Organization ID הוא התווים האלפאנומריים אחרי `/customers/`
 
-### 3. קבלת ה-Server ID
+### 3. קבלת ה-Server ID {#3-get-your-server-id}
 
 כדי למצוא את ה-Server ID (נדרש לפעולות דומיין):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 ה-Server ID הוא בפורמט UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. קבלת כתובת ה-API
+### 4. קבלת כתובת ה-API {#4-get-your-api-url}
 
 כתובת ה-API שלכם היא כתובת לוח הבקרה של Enhance עם הוספת `/api/`:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - שימוש רק בדומיין ללא `/api/`
 - שימוש ב-HTTP במקום ב-HTTPS (HTTPS נדרש לאבטחה)
 
-## הגדרות
+## הגדרות {#configuration}
 
-### קבועים נדרשים
+### קבועים נדרשים {#required-constants}
 
 הוסיפו את הקבועים הבאים לקובץ `wp-config.php` שלכם:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### הגדרה דרך אשף האינטגרציה
+### הגדרה דרך אשף האינטגרציה {#setup-via-integration-wizard}
 
 1. באזור הניהול של WordPress, לכו אל **Ultimate Multisite** > **Settings**
 2. נווטו ללשונית **Integrations**
@@ -112,17 +112,17 @@ define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 - לתת לאשף להזריק את הקבועים לקובץ `wp-config.php` באופן אוטומטי
 - להעתיק את הגדרות הקבועים ולהוסיף אותם ידנית
 
-## הגדרות WordPress נוספות
+## הגדרות WordPress נוספות {#additional-wordpress-configuration}
 
 על בסיס משוב מהקהילה ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), ייתכן שתצטרכו להגדיר את ההגדרות הנוספות הבאות:
 
-### הגדרת .htaccess
+### הגדרת .htaccess {#htaccess-configuration}
 
 אם אתם חווים בעיות עם מיפוי דומיינים:
 1. מחקו את קובץ ה-.htaccess המקורי של Enhance
 2. החליפו אותו בקובץ ה-.htaccess הסטנדרטי של WordPress Multisite
 
-### קבועי Cookies
+### קבועי Cookies {#cookie-constants}
 
 הוסיפו את הקבועים הבאים ל-`wp-config.php` כדי להבטיח טיפול נכון ב-cookies בין דומיינים ממופים:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## איך זה עובד
+## איך זה עובד {#how-it-works}
 
-### כאשר דומיין ממופה
+### כאשר דומיין ממופה {#when-a-domain-is-mapped}
 
 1. משתמש ממפה דומיין מותאם אישית ב-Ultimate Multisite (או שאתר חדש נוצר במצב subdomain)
 2. האינטגרציה שולחת בקשת POST ל-API של Enhance: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. כאשר ה-DNS מצביע לשרת שלכם, Enhance מנפיק אוטומטית תעודת SSL דרך LetsEncrypt
 5. הדומיין הופך פעיל עם HTTPS
 
-### כאשר דומיין מוסר
+### כאשר דומיין מוסר {#when-a-domain-is-removed}
 
 1. מיפוי דומיין נמחק ב-Ultimate Multisite
 2. האינטגרציה שולחת שאילתה ל-Enhance כדי למצוא את ה-ID של הדומיין
 3. בקשת DELETE נשלחת אל: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance מסיר את הדומיין מהגדרות השרת שלכם
 
-### בדיקת DNS ו-SSL
+### בדיקת DNS ו-SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 - אפשר להגדיר את מרווח הבדיקה ב-**Domain Mapping Settings** (ברירת מחדל: 300 שניות/5 דקות)
@@ -157,9 +157,9 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 - תוקף תעודת SSL נבדק אוטומטית
 - Enhance מטפל בהנפקת SSL באופן אוטומטי, כך שאין צורך בהגדרת SSL ידנית
 
-## אימות ההגדרה
+## אימות ההגדרה {#verifying-setup}
 
-### בדיקת החיבור
+### בדיקת החיבור {#test-the-connection}
 
 1. באשף האינטגרציה, השתמשו בשלב **Test Connection**
 2. התוסף ינסה לקבל רשימת דומיינים בשרת שלכם
@@ -169,7 +169,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
    - ה-Server ID תקין
    - ההרשאות מוגדרות כראוי
 
-### לאחר מיפוי דומיין
+### לאחר מיפוי דומיין {#after-mapping-a-domain}
 
 1. מפו דומיין לבדיקה ב-Ultimate Multisite
 2. בדקו את הלוגים של Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
    - הדומיין החדש אמור להופיע ברשימה
 4. לאחר שה-DNS מתפשט, וודאו ש-SSL הונפק אוטומטית
 
-## פתרון בעיות
+## פתרון בעיות {#troubleshooting}
 
-### בעיות חיבור API
+### בעיות חיבור API {#api-connection-issues}
 
 **שגיאה: "Failed to connect to Enhance API"**
 - וודאו ש-`WU_ENHANCE_API_URL` כולל `/api/` בסוף
@@ -198,7 +198,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 - ודאו שה-Server ID הוא בפורמט UUID תקין
 - אשרו שהשרת קיים בלוח הבקרה של Enhance
 
-### דומיין לא נוסף
+### דומיין לא נוסף {#domain-not-added}
 
 **בדקו את הלוגים:**
 1. לכו אל **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 - הרשאות API לא מספיקות (ודאו שה-token בעל תפקיד System Administrator)
 - ה-Server ID לא תואם לשרת בפועל ב-Enhance
 
-### בעיות תעודת SSL
+### בעיות תעודת SSL {#ssl-certificate-issues}
 
 **SSL לא מונפק:**
 - וודאו שה-DNS מצביע לכתובת ה-IP של השרת שלכם
@@ -225,7 +225,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 2. מצאו את הדומיין שלכם ובדקו את סטטוס ה-SSL
 3. אפשר להפעיל הנפקת SSL ידנית אם צריך
 
-### מרווח בדיקת DNS
+### מרווח בדיקת DNS {#dns-check-interval}
 
 אם דומיינים או תעודות SSL לוקחים יותר מדי זמן להפעלה:
 1. לכו אל **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 3. שנו מברירת המחדל של 300 שניות לערך נמוך יותר (מינימום: 10 שניות)
 4. **הערה:** מרווחים נמוכים יותר משמעותם בדיקות תכופות יותר אבל עומס גבוה יותר על השרת
 
-### שגיאות אימות
+### שגיאות אימות {#authentication-errors}
 
 **שגיאות HTTP 401/403:**
 - צרו מחדש את ה-API token ב-Enhance
@@ -241,7 +241,7 @@ Ultimate Multisite כולל בדיקות DNS ו-SSL מובנות:
 - בדקו שה-token לא פג
 - ודאו שאתם משתמשים ב-Organization ID הנכון (למרות שבדרך כלל הוא לא נדרש ב-URL)
 
-### ניתוח לוגים
+### ניתוח לוגים {#log-analysis}
 
 הפעילו לוגים מפורטים:
 ```php
@@ -255,15 +255,15 @@ define('WP_DEBUG_LOG', true);
 - לוג debug של WordPress: `wp-content/debug.log`
 - לוגים של לוח Enhance: זמינים בממשק הניהול של Enhance
 
-## מידע על ה-API
+## מידע על ה-API {#api-reference}
 
-### אימות
+### אימות {#authentication}
 כל בקשות ה-API משתמשות באימות Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### נקודות קצה נפוצות
+### נקודות קצה נפוצות {#common-endpoints-used}
 
 **רשימת שרתים:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### תיעוד API מלא
+### תיעוד API מלא {#full-api-documentation}
 תיעוד API מלא: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## שיטות עבודה מומלצות
+## שיטות עבודה מומלצות {#best-practices}
 
-### אבטחה
+### אבטחה {#security}
 - **לעולם אל תשמרו API tokens ב-version control**
 - אחסנו tokens ב-`wp-config.php` שצריך להיות מוחרג מ-Git
 - השתמשו ב-tokens עם הרשאות מתאימות (System Administrator לאינטגרציה מלאה)
 - הגדירו תאריכי תפוגה ל-tokens בסביבות production
 - החליפו tokens מעת לעת
 
-### ביצועים
+### ביצועים {#performance}
 - השתמשו במרווח בדיקת DNS ברירת המחדל (300 שניות) כדי להימנע מקריאות API מיותרות
 - עקבו אחר משאבי שרת Enhance בעת הפעלת פעולות דומיין בקנה מידה גדול
 - שקלו לפזר הוספות דומיינים אם ממפים הרבה דומיינים בבת אחת
 
-### ניטור
+### ניטור {#monitoring}
 - בדקו באופן קבוע את לוגי Ultimate Multisite לשגיאות אינטגרציה
 - הגדירו ניטור להוספות דומיינים שנכשלו
 - וודאו שתעודות SSL מונפקות כראוי
 - עקבו אחר קיבולת שרת Enhance ומגבלות דומיינים
 
-## משאבים נוספים
+## משאבים נוספים {#additional-resources}
 
 - **תיעוד רשמי של Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **תיעוד API של Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 - **דיון ב-GitHub:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **מדריך מיפוי דומיינים של Ultimate Multisite:** ראו דף ויקי "How to Configure Domain Mapping v2"
 
-## תמיכה
+## תמיכה {#support}
 
 אם אתם נתקלים בבעיות:
 1. בדקו את סעיף פתרון הבעיות למעלה
@@ -326,7 +326,7 @@ DELETE /servers/{server_id}/domains/{domain_id}
 4. פנו לתמיכה של Enhance לבעיות ספציפיות ללוח הבקרה
 5. צרו דיון חדש עם לוגי שגיאות מפורטים לקבלת עזרה מהקהילה
 
-## הערות
+## הערות {#notes}
 
 - האינטגרציה הזו מטפלת רק ב-domain aliases; Enhance מנהל SSL באופן אוטומטי
 - האינטגרציה תומכת גם במיפויי דומיינים מותאמים אישית וגם באתרים מבוססי subdomain

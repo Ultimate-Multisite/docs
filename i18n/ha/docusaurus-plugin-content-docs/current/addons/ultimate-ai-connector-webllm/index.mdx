@@ -1,0 +1,144 @@
+---
+title: Mai Haɗa AI na Ultimate don WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM yana kawo aiwatar da AI na asali a browser zuwa cibiyar WordPress multisite ɗinka. Yana gudanar da manyan samfuran harshe gaba ɗaya a cikin browser ta amfani da WebLLM da injin MLC — babu API keys, babu kiran waje, babu bayanai da ke barin na'urar mai amfani.
+
+## Muhimman Fasali {#key-features}
+
+- **Aiwatarwa a gefen browser**: LLM yana gudana a cikin gida a browser na baƙo ta WebLLM/MLC — ba a buƙatar GPU na server
+- **Widget na hira mai shawagi**: Masu amfani da suka shiga za su iya ba LLM na gefen browser umarni kai tsaye daga front end
+- **Alamar matsayi a admin-bar**: Matsayin injin WebLLM na ainihin lokaci yana bayyane a WordPress admin bar
+- **Lokacin gudu na SharedWorker**: Shafukan browser da yawa suna raba zaman GPU guda ɗaya maimakon su yi faɗa kan albarkatun GPU
+- **Middleware na apiFetch**: Buƙatun WordPress REST da suka dace da tsarin AI Client SDK ana tura su a bayyane zuwa broker na WebLLM na gida — babu dawowar HTTP ta loopback
+- **UI na saitunan widget**: Saitunan panel na Connector don kunna ko kashe widget na hira da saita halayyar auto-prompt
+- **Cache na IndexedDB**: Zazzage nauyin samfur yana tsallake turawar CDN da ke karya hanyar Cache API ta asali
+- **Haɗin wpai filter**: Yana shiga cikin filter na `wpai_preferred_text_models` domin fasalin AI Experiments ya tura zuwa injin browser idan an saita
+
+## Buƙatu {#requirements}
+
+- WordPress 5.3 ko sama
+- PHP 7.4 ko sama
+- Ultimate Multisite plugin (a kunne)
+- Browser mai goyon bayan WebGPU (Chrome 113+, Edge 113+, ko Firefox Nightly tare da WebGPU a kunne)
+
+## Shigarwa {#installation}
+
+1. Loda fayilolin addon zuwa directory ɗinka na `/wp-content/plugins/`
+2. Kunna plugin ta menu na 'Plugins' a cikin WordPress
+3. Je zuwa **Ultimate Multisite → AI Connector** don saita addon
+
+## Widget na Hira Mai Shawagi {#floating-chat-widget}
+
+Widget na hira mai shawagi yana ba kowane mai amfani da ya shiga damar yin hulɗa da LLM na gefen browser kai tsaye daga front end ɗinka, ba tare da barin shafin da suke kai ba.
+
+### Abin da Yake Yi {#what-it-does}
+
+Idan an kunna, gumakan hira yana bayyana a kusurwar kowane shafin front-end ga masu amfani da suka shiga. Danna gumakan yana buɗe panel na hira inda mai amfani zai iya rubuta umarni kuma ya karɓi amsoshi daga samfurin WebLLM da ke gudana a cikin gida. Saboda samfurin yana gudana gaba ɗaya a cikin browser, amsoshi na sirri ne kuma ba sa haɗa da kowace sarrafawa a gefen server.
+
+### Alamar Matsayi a Admin-Bar {#admin-bar-status-indicator}
+
+WordPress admin bar yana haɗa da alamar matsayi da ke nuna halin yanzu na injin WebLLM:
+
+| Matsayi | Ma'ana |
+|--------|---------|
+| **Loading** | Injin MLC yana farawa ko yana zazzage nauyin samfur |
+| **Ready** | An loda samfurin kuma yana samuwa don aiwatarwa |
+| **Idle** | An loda injin amma tab na SharedWorker ba ya aiki |
+| **Error** | Injin ya kasa farawa — duba console na browser don cikakkun bayanai |
+
+Alamar tana sabuntawa a ainihin lokaci ba tare da buƙatar sake loda shafi ba.
+
+### Yadda Ake Kunna ko Kashe Widget {#how-to-enable-or-disable-the-widget}
+
+1. Je zuwa **Ultimate Multisite → AI Connector** a cikin admin na cibiyar sadarwa
+2. Nemo panel na **Connector**
+3. Kunna ko kashe **Enable floating chat widget**
+4. Ajiye saituna
+
+Haka kuma ana iya kunna ko kashe widget ga kowane site daga admin na site ɗin kansa idan mai gudanar da cibiyar sadarwa ya ba da wannan iko.
+
+## Saitunan Widget {#widget-settings}
+
+Panel na Connector a cikin **Ultimate Multisite → AI Connector** yana ƙunshe da saituna masu zuwa don widget na hira mai shawagi:
+
+### Kunna Widget na Hira Mai Shawagi {#enable-floating-chat-widget}
+
+Yana kunna ko kashe widget na hira ga duk cibiyar sadarwa. Idan an kashe, widget ba ya bayyana a kowane shafin front-end, ko da kuwa rawar mai amfani.
+
+**Na asali:** A kashe
+
+### Halayyar Auto-Prompt {#auto-prompt-behaviour}
+
+Yana sarrafa ko widget na hira yana aika umarni ta atomatik lokacin da mai amfani ya buɗe shi.
+
+| Zaɓi | Hali |
+|--------|-----------|
+| **Disabled** | Widget yana buɗewa zuwa hira mara komai — mai amfani yana rubuta umarninsa na kansa |
+| **Page context** | Widget yana buɗewa da umarni da aka riga aka cika bisa taken shafin yanzu da abun cikinsa |
+| **Custom prompt** | Widget yana buɗewa da umarni na musamman da ka ayyana a filin da ke ƙasa |
+
+Idan an saita zuwa **Custom prompt**, ƙarin filin rubutu yana bayyana inda za ka iya shigar da rubutun umarni na asali. Yana goyon bayan sauye-sauyen template na asali:
+
+- `{site_name}` — sunan site na yanzu
+- `{page_title}` — taken shafin yanzu
+- `{user_display_name}` — sunan nuni na mai amfani da ya shiga
+
+**Na asali:** Disabled
+
+## Lokacin Gudu na SharedWorker {#sharedworker-runtime}
+
+Sigar 1.1.0 tana gabatar da lokacin gudu na SharedWorker don injin MLC. A baya, kowane tab na browser da ya yi amfani da WebLLM yana loda nasa misalin samfurin, yana gasa kan ƙwaƙwalwar GPU kuma yana haifar da matsalolin aiki a na'urori masu ƙarancin VRAM.
+
+Tare da lokacin gudu na SharedWorker, tab guda ɗaya yana aiki a matsayin mai masaukin injin. Duk sauran tabs suna sadarwa da wannan misali guda ɗaya ta tashar saƙonni ta worker. Sakamakon:
+
+- Zaman GPU guda ɗaya da aka raba tsakanin duk tabs da aka buɗe
+- Amsoshi masu sauri da zarar an loda samfurin (babu maimaita farawa)
+- Ƙarancin amfani da ƙwaƙwalwa mafi girma a kan na'urar
+
+SharedWorker a bayyane yake ga masu amfani. Alamar matsayi a admin-bar koyaushe tana nuna halin injin da aka raba, ba na tab ɗaya ba.
+
+## Middleware na apiFetch {#apifetch-middleware}
+
+Addon yana shigar da middleware na `apiFetch` wanda ke katse buƙatun WordPress REST API da suka dace da tsarin AI Client SDK. Maimakon yin buƙatar HTTP ta loopback zuwa server, ana tura waɗannan buƙatun kai tsaye zuwa broker na WebLLM na gida da ke gudana a cikin SharedWorker.
+
+Wannan yana nufin plugins da themes da suke amfani da WordPress `apiFetch` API na yau da kullum don kiran endpoints na AI za su amfana ta atomatik daga samfurin gefen browser idan yana samuwa, ba tare da buƙatar canje-canjen code ba.
+
+## Hooks da Filters {#hooks-and-filters}
+
+### Filters {#filters}
+
+- `wpai_preferred_text_models` — Yi rijistar injin burauzar WebLLM a matsayin samfurin rubutu da aka fi so. Addon ɗin yana shiga cikin wannan filter ta atomatik idan an saita injin kuma yana samuwa.
+- `ultimate_webllm_widget_enabled` — Sauya yanayin kunna widget ga takamaiman mai amfani ko mahalli. Mayar da `true` ko `false`.
+- `ultimate_webllm_auto_prompt` — Gyara rubutun auto-prompt kafin a aika shi zuwa widget. Yana karɓar kirtanin prompt da abin `WP_Post` na yanzu.
+
+## Magance matsaloli {#troubleshooting}
+
+### Widget ɗin hira ba ya bayyana {#the-chat-widget-does-not-appear}
+
+- Tabbatar mai amfani ya shiga — ana nuna widget ɗin ne kawai ga masu amfani da aka tabbatar
+- Duba cewa **Enable floating chat widget** an kunna shi a panel na Connector
+- Tabbatar burauzar mai amfani tana goyon bayan WebGPU (duba Requirements a sama)
+
+### Alamar admin-bar tana nuna "Error" {#the-admin-bar-indicator-shows-error}
+
+Buɗe browser developer console (F12) kuma ka nemi kurakuran da suka shafi WebLLM. Dalilai gama-gari:
+
+- Burauzar ba ta goyon bayan WebGPU
+- Saukar da nauyin model ya gaza — duba haɗin hanyar sadarwa kuma ka gwada share cache na IndexedDB a cikin browser developer tools (Application → IndexedDB)
+- Wani browser extension yana toshe SharedWorker
+
+### Ana saukar da nauyin model kowane lokaci {#model-weights-download-every-time}
+
+Addon ɗin yana amfani da IndexedDB a matsayin cache backend don tabbatar da cewa nauyin model ya tsira daga CDN redirects. Idan ana sake saukar da nauyi a kowane ziyara, duba cewa IndexedDB ba a share shi ta wani saitin sirrin burauza ko extension ba.
+
+## Changelog {#changelog}
+
+Duba [Changelog](./changelog) don cikakken tarihin sigar.

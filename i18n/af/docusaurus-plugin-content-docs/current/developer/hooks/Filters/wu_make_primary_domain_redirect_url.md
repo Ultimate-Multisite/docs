@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filter die omleidings-URL nadat 'n domein primêr gemaak is.
 
 Dit laat ontwikkelaars toe om aan te pas waar gebruikers omgeleid word nadat 'n domein suksesvol as primêr gestel is. Standaard word dit omgeleid na die huidige URL op die hoofwebwerf, of na die admin-URL van die webwerf wat gewysig word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Naam | Tipe | Beskrywing |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Dit laat ontwikkelaars toe om aan te pas waar gebruikers omgeleid word nadat 'n 
 | $domain | `\Domain` | Die domein-objek wat primêr gemaak is. |
 | $old_primary_domains | `array` | 'n Array van ID's van domeine wat voorheen primêr was. |
 
-### Sedert
+### Sedert {#since}
 
 - 2.0.0
-### Bron
+### Bron {#source}
 
 Bepaald in [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) by lyn 639
 
 
-## Gee terug
+## Gee terug {#returns}
 Die gefilterde omleidings-URL.

@@ -4,11 +4,11 @@ title: Filtro - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Filtro: wu_country_get_cities
+# Filtro: wu_country_get_cities {#filter-wucountrygetcities}
 
 Restituisce l'elenco delle città di uno stato in un paese.
 
-## Parameters
+## Parameters {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -17,14 +17,14 @@ Restituisce l'elenco delle città di uno stato in un paese.
 | $state_code | `string` | Codice ISO a due lettere per lo stato. |
 | $current_country | `\WP_Ultimo\Country\Country` | Istanza della classe corrente. |
 
-### Da
+### Da {#since}
 
 - 2.0.11
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) alla riga 146
 
-## Restituisce
+## Restituisce {#returns}
 
 L'elenco filtrato degli stati.

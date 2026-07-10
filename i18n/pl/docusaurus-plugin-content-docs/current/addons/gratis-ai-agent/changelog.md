@@ -3,11 +3,11 @@ title: Dziennik zmian
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Wydano 2026-04-28
+## 1.9.0 — Wydano 2026-04-28 {#190--released-on-2026-04-28}
 
-### Nowości
+### Nowości {#new}
 
 - **Możliwość `create_contact_form`** — tworzy formularz kontaktowy przy użyciu aktywnego pluginu do formularzy (Contact Form 7, WPForms, Fluent Forms lub Gravity Forms) i zwraca shortcode gotowy do wklejenia w dowolny post lub stronę.
 - **Możliwość `set_featured_image`** — przypisuje obraz wyróżniający do posta lub strony na podstawie istniejącego ID załącznika z Biblioteki Mediów lub zdalnego URL; automatycznie importuje obraz, gdy podany jest URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Przywracanie ostatniej sesji** — panel czatu automatycznie przeładowuje najnowszą konwersację po załadowaniu strony i po otwarciu widgetu, dzięki czemu kontekst nigdy nie jest tracony podczas nawigacji po stronie.
 - **Linki akcji pluginów** — szybkie linki do Ustawień i Rejestru Możliwości pojawiają się teraz na ekranie **Plugins → Installed Plugins** w WordPress, poniżej opisu pluginu.
 
-### Ulepszenia
+### Ulepszenia {#improved}
 
 - **Ponawianie źródła obrazu** — agent teraz próbuje wszystkie skonfigurowane darmowe źródła obrazów, zanim przejdzie do generowania obrazu przez AI w przypadku niepowodzenia pobrania.
 - **Panel informacji o modelu** — zawsze widoczny w nagłówku czatu; nie jest już ukrywany po pierwszej wiadomości.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Przeprojektowany widget czatu** — ujednolicony ikoną AI zastąpił poprzedni niestandardowy awatar; jest spójny z systemem wbudowanych agentów.
 - **Linkowanie URL** — URL-e pojawiające się w systemowych wiadomościach i bańkach z komunikatami o błędach są teraz renderowane jako klikalne linki.
 
-### Poprawki
+### Poprawki {#fixed}
 
 - **Odkrywalność możliwości** — poprawiono opisy, odniesienia do systemowych promptów i wyrównanie przestrzeni nazw, dzięki czemu wszystkie możliwości pojawiają się w liście narzędzi agenta niezawodnie.
 - **Cache dostawców** — dostawcy są teraz cachowani na poziomie całej witryny za pomocą licznika wersji, zapobiegając problemom ze starymi danymi dostawców w sieciach multisite.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Wydano 2026-04-09
+## 1.4.0 — Wydano 2026-04-09 {#140--released-on-2026-04-09}
 
-### Nowości
+### Nowości {#new-1}
 
 - **Polecenie benchmarkowe WP-CLI** (`wp gratis-ai-agent benchmark`) — uruchamia zestaw testów Agent Capabilities v1 z linii poleceń, przeznaczony do potoków CI i przepływów oceny modelu. Obsługuje uruchamianie dla pojedynczych pytań, nadpisywanie dostawców/modeli oraz wyjście w formacie JSON/CSV.
 - **Zestaw benchmarków Agent Capabilities v1** — ustrukturyzowany zestaw złożonych, wieloetapowych promptów, które testują pełną powierzchnię możliwości, z punktacją oraz raportowaniem tokenów/czasu trwania.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Pytanie benchmarkowe dla witryny restauracji** (`q-restaurant-website`) — test end-to-end obejmujący rejestrację CPT, system projektowy, nawigację i odkrywanie pluginów.
 - **Plugiiny łączników dostawców AI** dodane do blueprintów WordPress Playground, aby przyspieszyć lokalne ustawienie środowiska deweloperskiego.
 
-### Ulepszenia
+### Ulepszenia {#improved-1}
 
 - README zaktualizowany o dokumentację i instrukcje ustawienia łączników dostawców AI.
 
-### Poprawki
+### Poprawki {#fixed-1}
 
 - Naprawiono 25 błędów testów PHPUnit na gałęzi `main`.
 - Poprawiony format URL wydania GitHub w `blueprint.json`.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Starsze uwagi wydania są utrzymywane w repozytorium pluginu._

@@ -1,0 +1,192 @@
+---
+title: Ìtọ́kasí Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Ìtọ́kasí Hooks {#hooks-reference}
+
+Ìwé àkọsílẹ̀ tí a dá sílẹ̀ laifọwọyi fún gbogbo **59 actions** àti **118 filters** nínú Ultimate Multisite.
+
+## Actions {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Máa ń ṣẹlẹ̀ ṣáájú ìtọ́nisọ́nà-ọ̀nà ìfàṣẹsí.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Máa ń ṣẹlẹ̀ lẹ́sẹ̀kẹsẹ̀ ṣáájú kí a tó ṣètò cookie ìfàṣẹsí.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Máa ń ṣẹlẹ̀ lẹ́sẹ̀kẹsẹ̀ ṣáájú kí a tó ṣètò cookie ìfàṣẹsí ẹni tí ó wọlé.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Gba àwọn olùgbéejáde láàyè láti ṣàfikún àwọn ìṣepọ̀ host provider tiwọn nípasẹ̀ àwọn plugin WordPress.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Máa ń fa ìṣẹlẹ̀ nígbà tí gbogbo àwọn ohun tí a gbẹ́kẹ̀ lé bá ti kojọpọ̀
+- [wu_activation](./Actions/wu_activation) — Jẹ́ kí àwọn apá míràn ti plugin so àwọn ìlànà wọn mọ́ fún ìmúṣiṣẹ́
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Gba àwọn olùgbéejáde plugin láàyè láti so àwọn iṣẹ́ mọ́ lẹ́yìn tí olùmúlò tàbí super admin bá yí template site padà
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Ní díẹ̀ lára àwọn ọ̀ràn, a ó nílò láti kojọpọ̀ agbára àfikún láti bójú tó àwọn actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Máa ń ṣẹlẹ̀ ṣáájú ìṣiṣẹ́ ìbéèrè ìwádìí.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Gba àwọn olùgbéejáde láàyè láti ṣe àwọn àyípadà àfikún sí object checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Gba àwọn olùgbéejáde láàyè láti ṣe àwọn àyípadà àfikún sí object checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Máa ń ṣẹlẹ̀ ṣáájú kí a tó ṣàfikún field sí fọ́ọ̀mù checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Gba àwọn olùgbéejáde láàyè láti fa àwọn hooks àfikún.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ṣáájú kí a tó ṣiṣẹ́ checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Máa ń ṣẹlẹ̀ lẹ́yìn tí order checkout bá ti dá pọ̀ pátápátá.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àwọn widget sí Panel Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àwọn widget sí Panel Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Jẹ́ kí àwọn apá míràn ti plugin so àwọn ìlànà wọn mọ́ fún ìmúṣiṣẹ́-kúrò
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún actions sí ìlànà píparẹ́
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Máa ń ṣẹlẹ̀ nígbà tí domain kan bá di domain àkọ́kọ́ fún site kan.
+- [wu_domain_created](./Actions/wu_domain_created) — Máa ń fa ìṣẹlẹ̀ nígbà tí domain mapping tuntun bá jẹ́ fífi kún un.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Máa ń ṣẹlẹ̀ lẹ́yìn tí core Domain Mapping wa bá ti kojọpọ̀
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Díẹ̀ lára àwọn plugin yóò fi URL pamọ́ ṣáájú kí mapping tó ṣiṣẹ́ tàbí yóò kọ́ àwọn URL ní ọ̀nà míràn tí kò wà nínú o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Gba àwọn olùgbéejáde láàyè láti so hook mọ́ lẹ́yìn tí ìdákọ site bá ṣẹlẹ̀.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún hooks àfikún
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook sí ìmímọ́ àfikún
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Máa ń ṣẹlẹ̀ ṣáájú bójú tó ìbéèrè modal ṣíṣe àfikún domain tuntun.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Gba àwọn olùgbéejáde plugin láàyè láti fi data meta pamọ́ ní àwọn ọ̀nà míràn bí wọ́n bá nílò.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Gba àwọn olùgbéejáde plugin láàyè láti fi data meta olùmúlò pamọ́ ní àwọn ọ̀nà míràn bí wọ́n bá nílò.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Máa ń ṣẹlẹ̀ nígbà tí token magic link tí kò tọ́ bá farahàn.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Máa ń ṣẹlẹ̀ lẹ́yìn tí olùmúlò bá wọlé nípasẹ̀ magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Gba àwọn olùgbéejáde plugin láàyè láti ṣe àwọn ohun àfikún nígbà tí a bá ṣàfikún oníbàárà.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Máa ń ṣẹlẹ̀ lẹ́yìn tí àwọn agbára MCP bá ti forúkọsílẹ̀ fún entity kan.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Máa ń ṣẹlẹ̀ lẹ́yìn tí adapter MCP bá ti bẹ̀rẹ̀.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Máa ń fa ìṣẹlẹ̀ lẹ́yìn tí membership bá ti fagilé.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Máa ń fa ìṣẹlẹ̀ lẹ́yìn ìtúnṣe membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Máa ń fa ìṣẹlẹ̀ ṣáájú kí membership tó fagilé.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Máa ń fa ìṣẹlẹ̀ ṣáájú ìtúnṣe membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Máa ń ṣẹlẹ̀ lẹ́yìn tí object bá jẹ́ fífi pamọ́ sínú database.
+- [wu_page_added](./Actions/wu_page_added) — Gba àwọn olùgbéejáde plugin láàyè láti ṣiṣẹ́ àwọn ohun àfikún nígbà tí àwọn ojú-ewé bá forúkọsílẹ̀.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àkóónú àfikún lẹ́yìn tí a bá tẹ ojú-ewé jáde
+- [wu_page_before_render](./Actions/wu_page_before_render) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àkóónú àfikún ṣáájú kí a tó tẹ ojú-ewé jáde.
+- [wu_page_load](./Actions/wu_page_load) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún hooks àfikún sí àwọn ojú-ewé wa.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àkóónú àfikún lẹ́yìn tí a bá tẹ ojú-ewé jáde
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún àkóónú àfikún ṣáájú kí a tó tẹ ojú-ewé jáde.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún hooks àfikún sí àwọn ojú-ewé wa.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Máa ń ṣẹlẹ̀ lẹ́yìn tí àwọn widget bá forúkọsílẹ̀ fún ojú-ewé yìí.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Máa ń ṣẹlẹ̀ láti gba àwọn addon láàyè láti so àwọn module capability mọ́ àwọn ìṣepọ̀.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Máa ń ṣẹlẹ̀ láti gba àwọn ìṣepọ̀ láàyè láti forúkọsílẹ̀ fúnra wọn.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Gba àwọn route àfikún láàyè láti forúkọsílẹ̀.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún actions sí ìlànà fífi pamọ́
+- [wu_site_created](./Actions/wu_site_created) — Máa ń ṣẹlẹ̀ lẹ́yìn tí a bá ṣẹ̀dá site fún ìgbà àkọ́kọ́.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún hooks àfikún, bí ó bá ṣeé ṣe.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Máa ń ṣiṣẹ́ nígbà tí ó wà nínú àyíká template previewer.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Máa ń fa hook enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Máa ń ṣẹlẹ̀ lẹ́yìn tí object bá jẹ́ fífi pamọ́ sínú database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Máa ń ṣẹlẹ̀ lẹ́yìn tí object bá jẹ́ fífi pamọ́ sínú database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Máa ń ṣẹlẹ̀ lẹ́yìn tí object bá jẹ́ fífi pamọ́ sínú database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Gba àwọn olùgbéejáde plugin láàyè láti ṣàfikún actions sí ìlànà ṣíṣí.
+
+## Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Ṣe àlẹmọ iye àkókò tí cookie ìfàṣẹsí yóò fi parí.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Ṣe àlẹmọ ètò redirect ìfàṣẹsí.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ṣe ẹ̀dà WP Filter atilẹba níbí, fún ìdánilójú tó dára.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ URL tí a lò nínú previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Ṣe àlẹmọ bóyá auth cookie gbọ́dọ̀ jẹ́ ríránṣẹ́ lórí HTTPS nìkan.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Ṣe àlẹmọ bóyá kí a lo redirect ìfàṣẹsí tó ní ààbò.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Ṣe àlẹmọ bóyá cookie tí a logged in gbọ́dọ̀ jẹ́ ríránṣẹ́ lórí HTTPS nìkan.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Gba ààyè láti dènà auth cookies kí wọ́n má bà a jẹ́ ríránṣẹ́ sí client ní ti gidi.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Ṣètò URL redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ṣàfikún àwọn ìgbésẹ̀ míì nípasẹ̀ filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Gba àwọn olùdàgbàsókè plugin láyè láti fi variable àfikún kún render context káàkiri.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Gba ààyè fún àwọn olùdàgbàsókè láti short-circuit àyẹ̀wò yìí.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Ṣe àlẹmọ àwọn fields fún modal fífi domain tuntun kún.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Gba àwọn olùdàgbàsókè láyè láti ṣe àwọn àyípadà sí line item owó setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Gba àwọn olùdàgbàsókè láyè láti ṣe àlẹmọ admin notices tí Ultimate Multisite ṣàfikún.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Àlẹmọ lẹ́yìn tí a ti yí i padà.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Ní báyìí, a ń bójú tó gbogbo àwọn types.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Gba àwọn olùdàgbàsókè plugin láyè láti short-circuit àwọn ìdíwọ̀n.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Ṣe àlẹmọ bóyá kí signup fee jẹ́ fífi sílò tàbí bẹ́ẹ̀ kọ́.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Ṣe àlẹmọ àwọn api arguments atilẹba.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ àwọn fields adirẹsi billing.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Gba àwọn olùdàgbàsókè láyè láti yí output ká kí wọ́n sì ṣètò tuntun
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Gba àwọn olùdàgbàsókè láyè láti bypass code unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Ṣe àlẹmọ àpapọ̀ "iye tó ń tún ṣẹlẹ̀".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Ṣe àlẹmọ àpapọ̀ "iye ìbẹ̀rẹ̀".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Ṣe àlẹmọ àpapọ̀ "iye ìbẹ̀rẹ̀".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Gba àwọn olùdàgbàsókè plugin láyè láti dá sí iye credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Ṣe àlẹmọ shared checkout-form base domains tí kò gbọ́dọ̀ di mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Àwọn APIs wa láti fi àwọn templates field tuntun kún ń hook síbí.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Àwọn APIs wa láti fi àwọn types field tuntun kún ń hook síbí.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Ṣe àlẹmọ àwọn ìfiránṣẹ́ aṣìṣe.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Gba àwọn olùdàgbàsókè láyè láti bypass àyẹ̀wò náà bí field kan bá jẹ́ auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Gba àwọn olùdàgbàsókè plugin láyè láti fi custom aliases kún form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ àwọn validation rules.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Yọ Params tí a kò fẹ́.
+- [wu_contains_element](./Filters/wu_contains_element) — Gba àwọn olùdàgbàsókè láyè láti yí àwọn abájáde ìwádìí ìbẹ̀rẹ̀ padà.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Gba àwọn olupèsè host láyè láti fi constant náà sílẹ̀ ní ọ̀nà míì.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Dá orúkọ tó dára ti àwọn ìpín ìṣàkóso orílẹ̀-èdè padà.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Dá àtòjọ àwọn ìlú fún state kan nínú orílẹ̀-èdè padà.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Dá àtòjọ àwọn states fún orílẹ̀-èdè yìí padà.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Gba àwọn olùdàgbàsókè láyè láti ṣàtúnṣe ìwà aiyipada kí wọ́n sì ṣètò customer lọwọlọwọ ní ọ̀nà míì.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Gba àwọn olùdàgbàsókè láyè láti ṣàtúnṣe ìwà aiyipada kí wọ́n sì ṣètò membership lọwọlọwọ ní ọ̀nà míì.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Gba àwọn olùdàgbàsókè láyè láti ṣàtúnṣe ìwà aiyipada kí wọ́n sì ṣètò site lọwọlọwọ ní ọ̀nà míì.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Gba àwọn olùdàgbàsókè láyè láti ṣàtúnṣe àwọn parameters URL ìṣàkóso site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ àwọn links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Gba àwọn olùdàgbàsókè plugin láyè láti fi àwọn àyẹ̀wò tuntun kún kí wọ́n lè ṣàlàyé àwọn abájáde.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — A lè ní láti fi àwọn blocks àfikún kún lẹ́yìn náà.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Ṣàfikún generic filter láti gba àwọn olùdàgbàsókè láyè láti fa parser yìí gbooro láti ṣiṣẹ́ pẹ̀lú àwọn builders tàbí plugins àfikún.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Ṣe àlẹmọ bóyá láti fi àwọn òfin password àfikún múlò.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Ṣe àlẹmọ username customer tí a dá.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ àwọn pre-sets ti ojúewé checkout kan.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Gba àwọn olùdàgbàsókè láyè láti fi form slugs tuntun kún láti bypass ìwà yìí.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Gba àwọn olùdàgbàsókè àti add-ons láyè láti fi àwọn ìgbésẹ̀ migration tuntun kún
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Wo síi nípa filter yìí ní ìsàlẹ̀, lórí method kan náà yìí.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Gba àwọn olùdàgbàsókè láyè láti yan irú post wo ni ó yẹ kí a fi hàn.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Dá Lines padà, ó ṣeé ṣe àlẹmọ
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Gba àwọn olùdàgbàsókè láyè láti ṣàtúnṣe àwọn tọkọtaya domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Ṣe àlẹmọ àwọn apá wizard fún setup ìṣepọ̀ hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Ṣe àlẹmọ àwọn fields lórí form kan. A mọ form náà nípasẹ̀ ID nínú orúkọ filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Ṣe àlẹmọ àwọn product types tí wọ́n ní billing cycles olómìnira.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Gba àwọn olùdàgbàsókè plugin láyè láti fi ipò kan múlò fún API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Gba àwọn olùdàgbàsókè plugin láyè láti fi àwọn àyẹ̀wò àfikún kún fún development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Gba àwọn olùdàgbàsókè plugin láyè láti fi ipò kan múlò fún MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Fún àwọn ìdí ààbò, a dín iye àwọn actions tí ó wà fún hooking into kù. Filter yìí gba àwọn olùdàgbàsókè láyè láti faagun
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ṣàyẹ̀wò bóyá irú post kan jẹ́ gbígbà láyè lórí plan yìí Gba àwọn olùdàgbàsókè plugin láyè láti ṣe àlẹmọ iye tí a dá padà
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Ṣe àlẹmọ bóyá láti fi ìmúdájú adirẹsi IP múlò.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Ṣe àlẹmọ bóyá láti fi ìmúdájú user agent múlò.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Ṣe àlẹmọ URL magic link tí a dá.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Ṣe àlẹmọ bóyá magic links ti ṣiṣẹ́.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Ṣe àlẹmọ URL redirect lẹ́yìn tí a bá ṣe domain kan ní primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Ṣẹ̀dá àtòjọ ìyọkúrò ti parameters tí ń dènà auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Àlẹmọ láti override ìpinnu inclusion ability MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Ṣe àlẹmọ ọjọ́ ìparí tí a ṣírò.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Ṣe àlẹmọ ọjọ́ ìparí tí a ṣírò tí a ó ṣètò lẹ́yìn renewal.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Gba àwọn olùdàgbàsókè láyè láti fi update form slugs tuntun kún.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Ṣe àlẹmọ gígùn password kéré jù.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Ṣe àlẹmọ agbára password kéré jù tí a nílò (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Gba àwọn olùdàgbàsókè plugin, àti àwa fúnra wa, láyè láti fi action links kún àwọn ojúewé edit wa
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Ṣe àlẹmọ bóyá láti béèrè àwọn lẹ́tà lowercase nínú passwords.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Ṣe àlẹmọ bóyá láti béèrè àwọn nọ́mbà nínú passwords.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Ṣe àlẹmọ bóyá láti béèrè àwọn àmì àkànṣe nínú passwords.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Ṣe àlẹmọ bóyá láti béèrè àwọn lẹ́tà uppercase nínú passwords.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Gba user láyè láti yí ìfiránṣẹ́ nípa àwọn payments tó ń dúró padà.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Ṣe àlẹmọ àwọn product types tí ó yẹ kí a ka sí plans.
+- [wu_post_count](./Filters/wu_post_count) — Gba àwọn olùdàgbàsókè plugin láyè láti yí àpapọ̀ ìṣirò padà
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Gba àwọn olùdàgbàsókè plugin láyè láti yí post status wo ni ó yẹ kí a ka padà Ní aiyipada, published àti private posts ni a ka
+- [wu_post_default_status](./Filters/wu_post_default_status) — Ṣe àlẹmọ data object kí a tó tọ́jú rẹ̀ sínú database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Gba àwọn olùdàgbàsókè láyè láti ṣe àlẹmọ settings kí a tó save nípasẹ̀ Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Ṣe àlẹmọ bóyá ó jẹ́ gbígbà láyè láti tẹ̀síwájú pẹ̀lú request náà tàbí bẹ́ẹ̀ kọ́.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Ṣe àlẹmọ bóyá ó jẹ́ gbígbà láyè láti tẹ̀síwájú pẹ̀lú request náà tàbí bẹ́ẹ̀ kọ́.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Ṣe àlẹmọ bóyá a gba ọ laaye láti tẹ̀síwájú pẹ̀lú ìbéèrè náà tàbí bẹ́ẹ̀ kọ́.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Ṣe àlẹmọ bóyá a gba ọ laaye láti tẹ̀síwájú pẹ̀lú ìbéèrè náà tàbí bẹ́ẹ̀ kọ́.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Ṣe àlẹmọ bóyá a gba ọ laaye láti tẹ̀síwájú pẹ̀lú ìbéèrè náà tàbí bẹ́ẹ̀ kọ́.
+- [wu_return_url](./Filters/wu_return_url) — Gba àwọn olùdàgbàsókè láàyè láti yí URL ìpadà gateway tí a lò lẹ́yìn àwọn ìlànà ìsanwó padà.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Gba àwọn olùdàgbàsókè àfikún láàyè láti ṣàfikún àwọn iṣẹ́ awoṣe ìṣàwárí míì.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Gba àwọn olùdàgbàsókè láàyè láti ṣàfikún àwọn ìgbésẹ̀ setup wizard míì.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ṣe àlẹmọ bóyá Ultimate Multisite yẹ kí ó ṣẹ̀dá àkọsílẹ̀ domain fún site tuntun tí a ṣẹ̀ṣẹ̀ dá.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Gba àwọn olùdàgbàsókè láàyè láti ge ìdarí-padà kúrú, kí ó dènà rẹ̀ láti ṣẹlẹ̀.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Gba àtúntò handler láàyè
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Ṣe àlẹmọ àwọn ìgbésẹ̀ ọ̀pọ̀ tí ó wà fún àwọn site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Àlẹmọ láti yí iye fún get pluginssites inú nẹ́tíwọ́ọ̀kì padà.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Mú ṣiṣẹ́/pa agbára single-sign-on kọjá-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Ṣe àlẹmọ àwọn URL SSO tí a ṣe jáde kí wọ́n tó padà fún àwọn ìgbésẹ̀ oníbàárà kọjá-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Ṣe àlẹmọ data Subscription Stripe. Ó lè borí success_url tàbí cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Ṣe àlẹmọ àwọn argument ìfẹ́ ìsanwó.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Ṣe àlẹmọ ID ti plan láti ṣàyẹ̀wò fún. Bí èyí bá wà, subscription tuntun yóò lo plan yìí.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Ṣe àlẹmọ ID ti product láti ṣàyẹ̀wò fún. Bí èyí bá wà, subscription tuntun yóò lo product yìí.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Ṣe àlẹmọ iye idempotency_key tí a fi ránṣẹ́ pẹ̀lú àwọn aṣayan owó Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Ṣe àlẹmọ àkọsílẹ̀ membership tí ó ní ìbáṣepọ̀ pẹ̀lú webhook yìí.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Ṣe àlẹmọ data meta kí a tó sọ ọ́ di serialized láti fi pamọ́ sínú ibi ipamọ́ data.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Ṣe àlẹmọ data object kí a tó fi pamọ́ sínú ibi ipamọ́ data.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Gba àwọn olùdàgbàsókè láàyè láti yí URL ìgbésókè láti ṣí sílẹ̀ padà
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Pinnu bóyá mapping yẹ kí a lò
+- [wu_username_from_email](./Filters/wu_username_from_email) — Ṣe àlẹmọ username oníbàárà tuntun.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Gba àwọn olùdàgbàsókè láàyè láti yí ìfiranṣẹ́ nípa ààlà àwọn aṣàmúlò membership padà
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Gba àwọn olùdàgbàsókè láàyè láti ṣàfikún àwọn folda míì sí àtòkọ tí a lè rọ́pò.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Ṣe àlẹmọ àwọn sub_commands wo ni a mú ṣiṣẹ́ fún entity yìí.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — A máa ń ṣàyẹ̀wò àwọn pattern mẹ́ta nígbà tí a bá ń gbìyànjú láti mọ ibi tí a ti lè fi àwọn constant wa sínú:

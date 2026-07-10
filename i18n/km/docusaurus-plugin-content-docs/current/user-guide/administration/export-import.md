@@ -3,17 +3,17 @@ title: នាំចេញ និងនាំចូល
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# ការនាំចេញ និងការនាំចូល (Export & Import)
+# ការនាំចេញ និងការនាំចូល (Export & Import) {#export--import}
 
 Ultimate Multisite 2.9.0 បានបន្ថែមឧបករណ៍ **Export & Import** សម្រាប់เว็บไซต์តែមួយនៅក្រោម **Tools > Export & Import**។ អ្នកត្រូវប្រើវា នៅពេលដែលអ្នកចង់វេចខ្ចប់ (package) គេហទំព័រ WordPress មួយជាឯកសារ ZIP, កំណត់ឡើងវិញនូវ ZIP នោះ, ឬផ្លាស់ប្តូរគេហទំព័រពីការដំឡើង Ultimate Multisite និង single-site WordPress ដែលអាចប្រើជាមួយគ្នា។
 
-## ការអនុញ្ញាតដែលត្រូវការ (Required permissions)
+## ការអនុញ្ញាតដែលត្រូវការ (Required permissions) {#required-permissions}
 
 អ្នកត្រូវចូលក្នុងនាមជាអ្នកគ្រប់គ្រង (administrator) ដែលមានសិទ្ធិចូលទៅកាន់ម៉ឺនុយ **Tools** របស់ WordPress នៅលើគេហទំព័រដែលកំពុងធ្វើការនាំចេញ ឬនាំចូល។ នៅលើបណ្តាញ multisite សូមប្រើគណនីអ្នកគ្រប់គ្រងបណ្តាញ (network administrator account) នៅពេលនាំចេញ ឬនាំចូល subsites ពីឧបករណ៍ Ultimate Multisite កម្រិតបណ្តាញ។
 
 ការទាញយកឯកសារ ZIP ដែលបាននាំចេញត្រូវបានបម្រើតាមរយៈ endpoint ការទាញយកដែលផ្ទៀងផ្ទាត់រួចហើយ (authenticated download endpoint)។ ដូច្នេះ សូមរក្សាការបើក session អ្នកគ្រប់គ្រងឱ្យដំណើរការរហូតដល់ការទាញយកបញ្ចប់ ហើយកុំចែករំលែក URL ការទាញយកដែលបានបង្កើតជាសាធារណៈ។
 
-## ការនាំចេញគេហទំព័រទៅជា ZIP (Exporting a site to a ZIP)
+## ការនាំចេញគេហទំព័រទៅជា ZIP (Exporting a site to a ZIP) {#exporting-a-site-to-a-zip}
 
 ១. នៅក្នុង WordPress admin សម្រាប់គេហទំព័រដែលអ្នកចង់ចម្លង សូមចូលទៅកាន់ **Tools > Export & Import**។
 ២. បើកតំបន់នាំចេញ (export area) ហើយជ្រើសរើសគេហទំព័រដែលអ្នកចង់វេចខ្ចប់។
@@ -23,7 +23,7 @@ Ultimate Multisite 2.9.0 បានបន្ថែមឧបករណ៍ **Export 
 
 សូមរក្សាទុក ZIP នៅក្នុងទីតាំងដែលមានសុវត្ថិភាព។ វាអាចមានមាតិកាគេហទំព័រ, ការកំណត់រចនាសម្ព័ន្ធ (settings), កំណត់ត្រាម៉េឌៀ (media files) និងឯកសារ code ដែលបានជ្រើសរើស។
 
-## អ្វីដែលការនាំចេញរួមបញ្ចូល (What the export includes)
+## អ្វីដែលការនាំចេញរួមបញ្ចូល (What the export includes) {#what-the-export-includes}
 
 ZIP នៃការនាំចេញអាចរួមបញ្ចូល៖
 
@@ -34,7 +34,7 @@ ZIP នៃការនាំចេញអាចរួមបញ្ចូល៖
 
 ទំហំ ZIP ជាក់លាក់អាស្រ័យលើបរិមាណមេឌៀ (media) ដែលបានបញ្ចូល ប្លុក (plugins) និងប្រធានបទ (themes) ដែលបានជ្រើសរើស ក៏ដូចជាទំហំនៃតារាងមូលដ្ឋានទិន្នន័យ (database tables) របស់គេហទំព័រផងដែរ។
 
-## ការនាំចូលគេហទំព័រពី ZIP
+## ការនាំចូលគេហទំព័រពី ZIP {#importing-a-site-from-a-zip}
 
 ១. ទៅកាន់ **Tools > Export & Import** នៅលើគេហទំព័រ WordPress ដែលអ្នកចង់នាំចូល។
 ២. បើកតំបន់សម្រាប់នាំចូល (import area) ហើយបង្ហោះឯកសារ ZIP ដែលបង្កើតដោយឧបករណ៍ Export & Import។
@@ -46,7 +46,7 @@ ZIP នៃការនាំចេញអាចរួមបញ្ចូល៖
 
 នៅក្នុងការដំឡើង WordPress ដែលជាគេហទំព័រតែមួយ (single-site installation) ការនាំចូល ZIP នឹងជំនួសគេហទំព័របច្ចុប្បន្នដោយគេហទំព័រដែលបាននាំចូល។ សូមបង្កើត backup ពេញលេញនៃគេហទំព័រគោលដៅរបស់អ្នក មុនពេលចាប់ផ្តើម ហើយជៀសវាងការចាប់ផ្តើមការនាំចូលច្រើនសម្រាប់គេហទំព័រតែមួយក្នុងពេលដំណាលគ្នា។
 
-## ការកំណត់ចងក្រង និងចំណាំអំពីភាពឆបគ្នានៃមុខងារ (Limitations and compatibility notes)
+## ការកំណត់ចងក្រង និងចំណាំអំពីភាពឆបគ្នានៃមុខងារ (Limitations and compatibility notes) {#limitations-and-compatibility-notes}
 
 - ថតឯកសារបង្ហោះ (uploads directories) ឬបណ្ណាល័យមេឌៀ (media libraries) ដែលមានទំហំធំខ្លាំងអាចបង្កើតជាឯកសារ ZIP ទំហំធំ។ សូមពិនិត្យមើលដែនកំណត់នៃការបង្ហោះ PHP (PHP upload limits), ដែនកំណត់ប្រតិបត្តិការ (execution limits), កន្លែងផ្ទុកលើዲስក (disk space), ការប្រើប្រាស់អង្គចងចាំ (memory) និងការកំណត់ពេលវេលាផុតកំណត់របស់ម៉ាស៊ីនមេ (server timeout settings) មុនពេលនាំចេញ ឬនាំចូលគេហទំព័រធំៗ។
 - បណ្ណាល័យមេឌៀដែលមានទំហំធំខ្លាំងអាចនឹងត្រូវផ្លាស់ទីក្នុងអំឡុងពេលថែទាំដែលគ្មានការប្រើប្រាស់ច្រើន។

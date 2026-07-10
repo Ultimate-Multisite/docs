@@ -1,124 +1,124 @@
 ---
-title: Sende e-mails og udsendelser
+title: Afsendelse af e-mails og udsendelser
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Afsendelse af e-mails og udsendelser (v2)
+# Afsendelse af e-mails og broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
-_**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
+_**VIGTIG BEMÆRKNING: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
-Ultimate Multisite har en funktion, der giver dig mulighed for at kommunikere med dine kunder ved at sende en e-mail til en målrettet bruger eller en gruppe af brugere samt sende meddelelser på deres admin dashboard til at udsende annonceringer.
+Ultimate Multisite leveres med en funktion, der giver dig mulighed for at kommunikere med dine kunder ved at sende en e-mail til en målrettet bruger eller en gruppe af brugere samt sende meddelelser på deres admin dashboard for at udsende meddelelser
 
-## Tilføj admin-meddelelser til dine kunders dashboards med Udsendelser (Broadcasts)
+## Tilføj admin-meddelelser til dine kunders dashboard med Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ved hjælp af funktionen Udsendelser i Ultimate Multisite kan du tilføje **admin-meddelelser** til din brugers subsite admin dashboard.
+Ved at bruge Ultimate Multisite-broadcastfunktionen kan du tilføje **admin-meddelelser** til din brugers subsite-admin dashboard.
 
-Dette er utrolig nyttigt, hvis du skal gøre en annoncering som systemvedligeholdelse eller tilbyde nye produkter eller tjenester til dine eksisterende brugere. Sådan vil admin-meddelelsen se ud på din brugers dashboard.
+Dette er yderst nyttigt, hvis du har brug for at lave en meddelelse som systemvedligeholdelse eller tilbyde nye produkter eller tjenester til dine eksisterende brugere. Sådan vil admin-meddelelsen se ud på din brugers dashboard.
 
-<!-- Screenshot unavailable: Admin meddelelse udsendt på en kundes subsite dashboard -->
+<!-- Skærmbillede ikke tilgængeligt: Admin-meddelelses-broadcast vist på en kundes subsite-dashboard -->
 
-For at starte en admin-meddelelse skal du gå til dit netværksadmin dashboard og under menuen **Ultimate Multisite** finder du muligheden **Broadcasts**.
+For at starte en admin-meddelelse skal du gå til dit netværks-admin dashboard, og under menuen **Ultimate Multisite** finder du indstillingen **Broadcasts**.
 
-![Udsendelsesliste side i Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Broadcasts-listevisningsside i Ultimate Multisite-admin](/img/admin/broadcasts-list.png)
 
-Du kan også redigere eksisterende udsendelser:
+Du kan også redigere eksisterende broadcasts:
 
-![Redigeringsgrænseflade for udsendelse](/img/admin/broadcast-edit.png)
+![Broadcast-redigeringsgrænseflade](/img/admin/broadcast-edit.png)
 
-Fra denne side klikker du på knappen **Add Broadcast** (Tilføj udsendelse) øverst.
+Fra denne side skal du klikke på knappen **Tilføj Broadcast** øverst.
 
-Dette åbner en modal vindue til at tilføje en udsendelse, hvor du kan vælge, hvilken type udsendelse du ønsker at sende.
+Dette åbner modalvinduet Tilføj broadcast, hvor du kan vælge, hvilken type broadcast du ønsker at sende.
 
-Vælg derefter **Message** (Meddelelse) og klik på knappen **Next Step** (Næste trin).
+Vælg **Meddelelse**, og klik derefter på knappen **Næste trin**.
 
-![Modal til tilføjelse af udsendelse med Message-muligheden valgt](/img/admin/broadcast-add-message.png)
+![Tilføj broadcast-modal med indstillingen Meddelelse valgt](/img/admin/broadcast-add-message.png)
 
-Det næste vindue vil bede dig om enten at vælge en **Target customer** (Målkunde) eller et **Target product** (Målprodukt). Bemærk, at du kan vælge flere brugere eller flere produkter.
+Det næste vindue vil bede dig om enten **Målkunde** eller **Målprodukt**. Bemærk, at du kan vælge mere end én bruger eller mere end ét produkt.
 
-For at søge efter en brugerkonto eller et produkt skal du starte med at skrive nøgleordet i feltet.
+For at søge efter enten en brugerkonto eller et produkt skal du begynde at skrive nøgleordet inde i feltet.
 
-Under feltet **Message type** kan du vælge farven på meddelelsen. Dette vil fremhæve vigtigheden af din besked.
+Under feltet **Meddelelsestype** kan du vælge farven på meddelelsen. Dette vil understrege, hvor hastende din besked er.
 
-Derefter kan du klikke på **Next Step**.
+Du kan derefter klikke på **Næste trin**.
 
-![Målgruppe, mårodukt og message type felter for en Message broadcast](/img/admin/broadcast-message-targets.png)
+![Målkunder, målprodukt og meddelelsestypefelter for en Meddelelse-broadcast](/img/admin/broadcast-message-targets.png)
 
-Det næste vindue er her, hvor du kan begynde at opstille din besked ved at indtaste emnefeltet og indholdet/beskeden, du ønsker at sende til brugerne.
+Det næste vindue er, hvor du kan begynde at skrive din besked ved at indtaste emnet og indholdet/beskeden, du ønsker at udsende til brugerne.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Broadcast-beskedens emne- og indholdseditor i skrive-trinnet](/img/admin/broadcast-edit.png)
+
+Når du har oprettet din besked, kan du derefter trykke på knappen **Send**.
+
+Og det var det. Admin-meddelelsen bør straks blive vist på din brugers dashboard.
+
+## Send e-mails til dine kunder {#send-emails-to-your-customers}
+
+Ved at bruge Ultimate Multisite-broadcastfunktionen kan du sende en e-mail til dine brugere. Du har mulighed for kun at sende e-mailen til specifikke brugere eller målrette en bestemt brugergruppe baseret på det produkt eller den plan, de er subscribed under.
+
+For at starte en e-mail-broadcast skal du gå til dit netværks-admin dashboard, og under Ultimate Multisite-menuen finder du Broadcast-indstillingen.
+
+![Broadcasts-listevisningsside brugt som udgangspunkt for en e-mail-broadcast](/img/admin/broadcasts-list.png)
+
+Fra denne side skal du klikke på knappen **Tilføj broadcast** øverst.
+
+Dette åbner modalvinduet Tilføj broadcast, hvor du kan vælge, hvilken type broadcast du ønsker at sende. Vælg **Email**, og klik derefter på knappen **Næste trin**.
+
+![Tilføj broadcast-modal med indstillingen Email valgt](/img/admin/broadcast-add-email.png)
+
+Det næste vindue vil bede dig om enten **Målkunde** eller **Målproduc** t. Bemærk, at du kan vælge mere end én bruger eller mere end ét produkt.
+
+For at søge efter enten en brugerkonto eller et produkt skal du begynde at skrive nøgleordet inde i feltet.
+
+Når din målgruppe er valgt, kan du klikke på **Næste trin**.
+
+![Valg af målkunder og målprodukt for en Email-broadcast](/img/admin/broadcast-email-targets.png)
+
+Det næste vindue er, hvor du kan begynde at skrive din e-mail ved at indtaste emnet og indholdet/beskeden, du ønsker at sende til brugerne.
+
+<!-- Skærmbillede ikke tilgængeligt: Email-broadcasts emne- og indholdseditor i skrive-trinnet -->
 
 Når du har oprettet din besked, kan du trykke på knappen **Send**.
 
-Og det er det. Administratornotatet vil øjeblikkeligt blive vist på brugerens dashboard.
+Og så nemt er det at sende en e-mail til dine slutbrugere ved hjælp af broadcastfunktionen.
 
-## Send e-mails til dine kunder
+## System-e-mails {#system-emails}
 
-Ved hjælp af funktionen Ultimate Multisite broadcast kan du sende en e-mail til dine brugere. Du har mulighed for at sende e-mailen kun til specifikke brugere eller målrette en bestemt brugergruppe baseret på det produkt eller den plan, de er abonnenter på.
+System-e-mails i Ultimate Multisite er de **automatiske notifikationer**, der sendes af systemet efter bestemte handlinger som registrering, betaling, domænetilknytning osv. Disse e-mails kan redigeres eller ændres fra Ultimate Multisite-indstillinger. Det leveres også med en funktion, der giver dig mulighed for at nulstille og importere eksisterende indstillinger fra en anden Ultimate Multisite-installation.
 
-For at starte en e-mail broadcast skal du gå til dit netværksadministrator dashboard og under menuen Ultimate Multisite finder du Broadcast-muligheden.
+### Nulstilling & import {#resetting--importing}
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+Nye Ultimate Multisite-versioner samt add-ons kan og vil registrere nye e-mails fra tid til anden.
 
-Fra denne side klikker du på knappen **Add broadcast** øverst.
+For at forhindre konflikter og andre problemer **tilføjer vi ikke de nye e-mail-skabeloner som system-e-mails på din installation automatisk** , medmindre de er afgørende for, at en given funktion fungerer korrekt.
 
-Dette åbner Add broadcast modal vinduet, hvor du kan vælge, hvilken type broadcast du ønsker at sende. Vælg derefter **Email** og klik på knappen **Next Step**.
+Dog kan superadmins og agenter importere disse nyregistrerede e-mails via importværktøjet. Denne proces vil oprette en ny system-e-mail med indholdet og konfigurationen fra den nye e-mail-skabelon, hvilket giver superadmin mulighed for at foretage de ændringer, de ønsker, eller beholde dem, som de er.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+#### Sådan importerer du system-e-mails {#how-to-import-system-emails}
 
-Det næste vindue vil bede dig om enten den **Target customer** eller det **Target product**. Bemærk, at du kan vælge flere brugere eller flere produkter.
+Gå til din Ultimate Multisite-indstillingsside og gå til fanen **E-mails**.
 
-For at søge efter en brugerkonto eller et produkt skal du starte med at skrive nøgleordet i feltet.
+![Fanen E-mails i Ultimate Multisite-indstillinger, der viser sektionen System-e-mails](/img/config/settings-emails-tab.png)
 
-Når du har valgt din målgruppe, kan du klikke på **Næste trin**.
+Klik derefter på knappen **Tilpas system-e-mails** i sidebaren.
 
-![Valg af målgrupper og målprodukt til en e-mailudsendelse](/img/admin/broadcast-email-targets.png)
+<!-- Skærmbillede ikke tilgængeligt: Knappen Tilpas system-e-mails i sidepanelet System-e-mails -->
 
-Det næste vindue er her, hvor du kan begynde at skrive din e-mail ved at indtaste emnefeltet og indholdet/beskeden, du ønsker at sende til brugerne.
+På siden System-e-mails vil du se handlingsknappen **Nulstil & importér** øverst. Når du klikker på den knap, bør modalvinduet til import og nulstilling åbnes.
 
-<!-- Screenshot unavailable: Editor af emnefelt og indhold til e-mailudsendelse på trinnet -->
+![Handlingsknappen Nulstil eller importér på admin-siden System-e-mails](/img/admin/system-emails-reset-import.png)
 
-Når du har oprettet din besked, kan du trykke på knappen **Send**.
+Derefter kan du slå indstillingerne Importér e-mails til/fra for at se, hvilke system-e-mails der er tilgængelige til import.
 
-Og så nemt er det at sende en e-mail til dine slutbrugere ved hjælp af udsendelsesfunktionen.
+<!-- Skærmbillede ikke tilgængeligt: Nulstil og importér-modal med Importér e-mails-indstillingerne udvidet -->
 
-## Systemmails
+#### Nulstilling af system-e-mails {#reseting-system-emails}
 
-Systemmails i Ultimate Multisite er de **automatiske notifikationer**, som systemet sender efter visse handlinger som registrering, betaling, domænemapping osv. Disse e-mails kan redigeres eller modificeres fra indstillingerne i Ultimate Multisite. Der findes også en funktion, der giver dig mulighed for at nulstille og importere eksisterende indstillinger fra en anden Ultimate Multisite-installation.
+Andre gange vil du opdage, at de ændringer, du har foretaget i en given e-mailskabelon, ikke længere fungerer for dig, og at du gerne vil nulstille den til dens **standardtilstand**.
 
-### Nulstilling & Importering
+I sådanne tilfælde har du to muligheder: Du kan ganske enkelt slette system-e-mailen og importere den igen (ved hjælp af instruktionerne ovenfor) - hvilket vil slette afsendelsesmetrikker og andre ting, hvilket gør denne metode mindst foretrukken.
 
-Nye versioner af Ultimate Multisite samt add-ons kan lejlighedsvis registrere nye e-mails.
+Eller du kan bruge **Nulstil og importér-værktøjet** til at nulstille den e-mailskabelon.
 
-For at undgå konflikter og andre problemer **tilføjer vi ikke de nye e-mail-skabeloner automatisk som Systemmails på din installation**, medmindre de er essentielle for den korrekte funktion af en given funktion.
+For at nulstille en e-mailskabelon kan du følge trinnene ovenfor, indtil du når Nulstil og importér-værktøjet, og derefter slå **Nulstil**-indstillingen til og vælge de e-mails, du vil nulstille tilbage til deres standardindhold.
 
-Dog kan superadministratorer og agenter importere disse nyregistrerede e-mails via importeringsværktøjet. Denne proces vil oprette en ny systemmail med indholdet og konfigurationen fra den nye e-mail-skabelon, så superadministratoren kan foretage alle de ændringer, de ønsker, eller beholde dem som de er.
-
-#### Sådan importerer du systemmails
-
-Gå til din Ultimate Multisite Indstillingsside og gå til fanen **Emails**.
-
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
-
-Dere klikker dere dere på siden, i sidepanelet, på knappen **Customize System Emails**.
-
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
-
-På System Emails-siden ser du en handlingstasten **Reset & Import** øverst. Ved å klikke på den skal det åpnes vinduet for import og nulstilling (modal window).
-
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
-
-Deretter kan du slå om indstillingerne for Import Emails for at se hvilke systeme-mails der er tilgjengelige for import.
-
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
-
-#### Nulstilling af System E-mails
-
-Andre gange vil du opdage, at de ændringer, du har foretaget i en given e-mail-template, ikke virker for dig længere, og du ønsker at nulstille den til dens **standardindstilling**.
-
-I sådanne tilfælde har du to muligheder: Du kan blot slette systeme-mailen og importere den igen (ved hjælp af instruktionerne ovenfor) – hvilket vil slette send-metrikker og andre ting, hvilket gør denne metode mindst foretrukken.
-
-Eller du kan bruge **Reset & Import tool** til at nulstille den pågældende e-mail-template.
-
-For at nulstille en e-mail-template kan du følge trinene ovenfor indtil du når Reset & Import tool, og derefter slå om muligheden **Reset** og vælg de e-mails, du vil nulstille tilbage til deres standardindhold.
-
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Skærmbillede ikke tilgængeligt: Nulstil og importér-modal med Nulstil e-mails-indstillingerne udvidet -->

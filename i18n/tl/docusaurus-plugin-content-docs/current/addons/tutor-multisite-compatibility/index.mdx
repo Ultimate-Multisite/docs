@@ -1,0 +1,116 @@
+---
+title: Pagiging Tugma sa Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Isang WordPress plugin na nagdaragdag ng mga pag-aayos sa compatibility para sa Tutor LMS sa mga multisite environment.
+
+## Paglalarawan {#description}
+
+Nagbibigay ang plugin na ito ng mahahalagang pag-aayos sa compatibility para sa pagpapatakbo ng Tutor LMS sa mga WordPress multisite network. Pinangangasiwaan nito ang user enrollment, pamamahala ng instructor, mga limitasyon sa kurso, at iba pang functionality na partikular sa multisite.
+
+## Mga Tampok {#features}
+
+- **Pamamahala ng Database Table**: Awtomatikong natutukoy at nagagawa ang mga nawawalang Tutor LMS table na nabibigo dahil sa mga multisite foreign key constraint
+- **Multisite User Enrollment**: Mga custom na AJAX handler para sa pamamahala ng user enrollment sa mga site ng network
+- **Pamamahala ng Instructor Role**: Awtomatikong pagtatalaga at pamamahala ng instructor role sa mga multisite environment
+- **Mga Limitasyon sa Kurso**: Integration sa Ultimate Multisite para sa pamamahala ng mga limitasyon sa paggawa ng kurso at funnel batay sa mga plan ng site
+- **Mga Custom na Admin View**: Listahan ng instructor at interface ng pamamahala na may kaalaman sa multisite
+- **Mga Admin Tool**: Interface ng pamamahala ng database para sa mga administrator ng network at site
+
+## Mga Kinakailangan {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (awtomatikong ipinapatupad sa pamamagitan ng `Requires Plugins` header)
+- WordPress Multisite installation
+- Ultimate Multisite plugin (para sa functionality ng mga limitasyon sa kurso)
+
+## Pag-install {#installation}
+
+1. I-upload ang mga file ng plugin sa `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Tiyaking naka-install at naka-activate ang Tutor LMS
+3. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
+4. Awtomatikong mag-i-integrate ang plugin sa Tutor LMS
+
+## Estruktura ng File {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Functionality na Inilipat mula sa MU Plugin {#functionality-moved-from-mu-plugin}
+
+Naglalaman ang plugin na ito ng functionality na dati ay nasa `wp-content/mu-plugins/daves.php`:
+
+- Mga limitasyon sa pagbabago ng status ng kurso
+- Mga limitasyon sa paggawa ng kurso
+- Integration at mga limitasyon ng CartFlows
+- Pamamahala ng Tutor instructor role
+- Pangangasiwa ng multisite user enrollment
+- Pagpapakita ng product ID ng kurso
+
+## Pamamahala ng Database {#database-management}
+
+### Ang Problema {#the-problem}
+
+Sa mga WordPress multisite environment, nabibigo ang paggawa ng Tutor LMS table para sa mga table na may foreign key constraint sa users table. Nangyayari ito dahil:
+
+- Gumagamit ang mga table na partikular sa site ng mga prefix tulad ng `wp_2_tutor_carts`
+- Tinutukoy ng mga foreign key ang `wp_2_users` (na hindi umiiral)
+- Ang aktuwal na users table ay `wp_users` (ibinabahagi sa buong network)
+
+### Ang Solusyon {#the-solution}
+
+Awtomatikong ginagawa ng plugin na ito ang mga sumusunod:
+
+1. **Tinutukoy ang Mga Nawawalang Table**: Sinusuri ang mga table na nabigong magawa dahil sa mga foreign key constraint
+2. **Gumagawa ng Mga Table na may Tamang Reference**: Ginagamit ang wastong pangalan ng user table (`wp_users` sa multisite)
+3. **Pinangangasiwaan ang Maramihang Scenario**:
+   - Pag-activate/reactivation ng plugin
+   - Paglikha ng bagong site sa network
+   - Manwal na pagsusuri ng table sa pamamagitan ng admin interface
+
+### Mga Apektadong Table {#affected-tables}
+
+- `tutor_coupon_usages` - Naglalaman ng foreign key sa users table
+- `tutor_carts` - Naglalaman ng foreign key sa users table
+- `tutor_notification_preferences` - TutorPro table na may foreign key sa users table
+
+### Admin Interface {#admin-interface}
+
+I-access ang mga tool sa pamamahala ng database sa:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Pinahihintulutan ka ng interface na:
+- Tingnan ang mga nawawalang table sa lahat ng site
+- Manwal na simulan ang paggawa ng table
+- Suriin ang configuration ng database
+- Tingnan ang detalyadong impormasyon ng status
+
+## Suporta {#support}
+
+Ang plugin na ito ay partikular na dinisenyo para sa KursoPro platform. Para sa teknikal na suporta, makipag-ugnayan sa development team.

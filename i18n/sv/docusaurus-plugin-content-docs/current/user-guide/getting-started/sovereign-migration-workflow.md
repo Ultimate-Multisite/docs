@@ -3,11 +3,11 @@ title: Suverän migrationsarbetsflöde
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migreringsflöde
+# Sovereign Migreringsflöde {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 lägger till migrationsverifieringsgrindar för att flytta en standard-subsite till suverän tenantinfrastruktur.
 
-## Innan du börjar
+## Innan du börjar {#before-you-start}
 
 Kontrollera att du har:
 
@@ -17,7 +17,7 @@ Kontrollera att du har:
 - En databasvärdsinbindning som matchar destinationen.
 - Tillgång till WP-CLI-kommandon för nätverket.
 
-## Rekommenderat flöde
+## Rekommenderat flöde {#recommended-workflow}
 
 1. Förbered destinationens tenantdatabas och filsystem.
 2. Registrera eller uppdatera inställningarna för tenantisolering.
@@ -28,7 +28,7 @@ Kontrollera att du har:
 7. Besök tenanten med SSO.
 8. Växla DNS eller routing först efter att verifieringen har godkänts.
 
-## Verifieringsgrindar
+## Verifieringsgrindar {#verification-gates}
 
 Verifieringsflödet kontrollerar migreringen från flera vinklar:
 
@@ -40,6 +40,6 @@ Verifieringsflödet kontrollerar migreringen från flera vinklar:
 
 Behandla verifieringsfel som blockeringar före lansering. Åtgärda det rapporterade problemet med databas, användare, kö eller routing, och kör sedan verifieringen igen innan du exponerar tenanten för kunder.
 
-## Första produktionsbesöket
+## Första produktionsbesöket {#first-production-visit}
 
 Efter att verifieringen har godkänts, använd **Besök (SSO)** från skärmen för sidhantering för det första administratörsbesöket. Detta bekräftar tenantrouting, hantering av SSO-tokens, ursprungsfästning (origin pinning) och provisionering av användare på tenant-sidan i ett kontrollerat steg.

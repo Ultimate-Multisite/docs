@@ -4,21 +4,21 @@ title: Action - wu_register_integrations
 sidebar_label: wu_register_integrations
 _i18n_hash: 99782a2ea1ae62c0a3315cfef6720644
 ---
-# Action: wu_register_integrations
+# Action: wu_register_integrations {#action-wuregisterintegrations}
 
 Bu, inteqrasiyaların özlərini qeydiyyatdan keçirməsinə imkan verir.
 
 Əsas sistem (Core) inteqrasiyalarını burada qeyd edir.
 
-## Parametrlər
+## Parametrlər {#parameters}
 
 | Ad | Növ | Təsvir |
 |------|------|-------------|
 | $registry | `\Integration_Registry` | Qeydiyyat (registry) nümunəsi. |
 
-### Nə vaxtdan
+### Nə vaxtdan {#since}
 
 - 2.5.0
-### Mənbə
+### Mənbə {#source}
 
 `inc/integrations/class-integration-registry.php` faylında 113-cü sətirdə təyin edilmişdir.

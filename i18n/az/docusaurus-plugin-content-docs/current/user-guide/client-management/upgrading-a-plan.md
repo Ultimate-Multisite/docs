@@ -3,7 +3,7 @@ title: Planı Yüksəltmək
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Yüksəltmək (v2)
+# Plan Yüksəltmək (v2) {#upgrading-a-plan-v2}
 
 _**ƏHƏMİYYƏTLİ QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
@@ -41,7 +41,7 @@ Adətən, əgər məhsul başqa bir plan və ödəniş bir üzvlük haqqı ilə 
 
 ##
 
-## Plan Yüksəltmə və Aşağı Endirmə Yolları
+## Plan Yüksəltmə və Aşağı Endirmə Yolları {#upgrade-and-downgrade-paths}
 
 Məhsullarınızın hər birində **Up & Downgrades** (Yüksəltmə və Aşağı Endirmə) adlı bir tab olacaq. Bu tabdakı ilk seçim **Plan Group** adlı bir sahədir.
 

@@ -3,7 +3,7 @@ title: خطة yükseltmek
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# پلن آپگرود qilish (v2)
+# پلن آپگرود qilish (v2) {#upgrading-a-plan-v2}
 
 _**مهم یادداشت: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
@@ -39,7 +39,7 @@ Checkout tamamlandıktan sonra, yeni məhsul(lar) müştərilərin hesabına əl
 
 ##
 
-## Upgrade and Downgrade Paths (Yüksəlmə və Aşağı İnme Yolları)
+## Upgrade and Downgrade Paths (Yüksəlmə və Aşağı İnme Yolları) {#upgrade-and-downgrade-paths}
 
 Hər bir məhsulunuzda **Up & Downgrades** tabı olacaq. Bu tabdakı ilk seçim **Plan Group** adlı bir sahədir.
 

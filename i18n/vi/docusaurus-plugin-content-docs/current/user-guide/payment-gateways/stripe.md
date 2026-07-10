@@ -3,19 +3,19 @@ title: Thiết Lập Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Thiết lập cổng thanh toán Stripe (v2)
+# Thiết lập cổng thanh toán Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**LƯU Ý QUAN TRỌNG: Bài viết này áp dụng cho Ultimate Multisite phiên bản 2.x.**_
 
 Bạn có thể kích hoạt tối đa bốn phương thức thanh toán trên trang cài đặt thanh toán: Stripe, Stripe Checkout, PayPal và Thủ công. Trong bài viết này, chúng ta sẽ tìm hiểu cách tích hợp với **Stripe**.
 
-## Bật Stripe
+## Bật Stripe {#enabling-stripe}
 
 Để bật Stripe làm cổng thanh toán khả dụng trên mạng lưới của bạn, hãy vào **Ultimate Multisite > Settings > Payments** và bật công tắc bên cạnh **Stripe** hoặc **Stripe Checkout** trong phần Active Payment Gateways.
 
 ![Bật Stripe trong danh sách cổng thanh toán](/img/config/settings-payment-gateways.png)
 
-### Stripe và Stripe Checkout:
+### Stripe và Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Phương thức này sẽ hiển thị ô nhập số thẻ tín dụng ngay trong quá trình thanh toán.
 
@@ -47,7 +47,7 @@ Sao chép giá trị từ **Publishable key** và **Secret key** trong cột **T
 
 ![Dán các key Stripe vào cài đặt Ultimate Multisite](/img/config/settings-payment-gateways.png)
 
-## Thiết lập Stripe Webhook
+## Thiết lập Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe gửi các sự kiện webhook để thông báo cho Ultimate Multisite mỗi khi có sự kiện xảy ra trên **tài khoản Stripe của bạn**.
 

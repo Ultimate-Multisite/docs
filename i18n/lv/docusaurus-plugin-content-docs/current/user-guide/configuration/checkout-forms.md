@@ -3,7 +3,7 @@ title: Pirkuma formātāri
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms ir viegls un labāma veids eksperimentēt ar dažādām pieejām metodēm, mēģinot konvertēt jaunas klientus.
 
@@ -36,13 +36,13 @@ Alternatīvi, jūs varat rediģēt vai duplikat savus jau ievērotos formularus,
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor ievades pārskats
+#### Checkout Form Editor ievades pārskats {#checkout-form-editor-overview}
 
 Checkout form editor nodrošina vispārīgu interfeisu, lai būtu varētu veikt jūsu reģistrācijas formularus. Šeit ir redzams editora plāns:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout form rediģēšana
+### Checkout form rediģēšana {#editing-a-checkout-form}
 
 Jūs varat izveidot checkout formus dažādiem mērķiem. Šajā piemēra mēs strādāsim ar reģistrācijas formu.
 
@@ -112,7 +112,7 @@ Lai saņemtu jūsu formai īsvada (shortcode), klikšķiniet uz "Generate Shortc
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Ceny tabulas lauks
+### Ceny tabulas lauks {#the-pricing-table-field}
 
 Laiks **Pricing Table** (Ceny tabula) attēlo jūsu produktus slēgšanas formā, lai klientiem varētu izvēlēties plānu. Kad rediģējat šo lauku, jūs varat konfigurēt vairākas opcijas:
 
@@ -130,17 +130,17 @@ Laiks **Pricing Table** (Ceny tabula) attēlo jūsu produktus slēgšanas formā
 
 Ja jūs pievienojat produktu Cenas tabulā pirms formai iekļauti nepieciešamos laukus, kas ir nepieciešami tās produktas slēgšanas plāna pabeigšanai, redaktors tagad parāda brīdinājumu. Izmantojiet šo brīdinājumu, lai pievienotu trūkstošo nepieciešamo lauku pirms publicēšanas vai saglabāšanas izmaiņām dzīvās reģistrācijas formai.
 
-### Pievienojot Periodu izvēles reguli
+### Pievienojot Periodu izvēles reguli {#adding-a-period-selection-toggle}
 
 Ja Jūs konfigurējāt [Cenu variācijas](creating-your-first-subscription-product#price-variations) savos produktos (piemēram, mēnesīgu un gadu cenas), Jūs varat pievienot **Periodu izvēles** lauku savam kasina formai. Šis lauks parāda toggle, kas ļauj klientiem mainīt starpos cenošanos, un cenas tabula dinamiski atjaunojas reālla laikā.
 
-#### 1. Konfiguriēt Cenu variācijas produktos
+#### 1. Konfiguriēt Cenu variācijas produktos {#step-1-set-up-price-variations-on-your-products}
 
 Pirms pievienojat Periodu izvēles lauku, pārliecinieties, ka jūsu produktos ir konfiguriotas ceno variācijas. Pāmeklējieties uz **Ultimate Multisite > Products**, rediģējiet produktu un navigējiet uz tabula **Price Variations**, lai pievienotu alternatīvas ceno periodes (piemēram, Gadu cena ar atlaides).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### 2. Pievienot Periodu izvēles lauku kasina formai
+#### 2. Pievienot Periodu izvēles lauku kasina formai {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Pāmeklējieties uz **Ultimate Multisite > Checkout Forms** un rediģējiet savu kasinas formu.
 
@@ -163,13 +163,13 @@ Pirms pievienojat Periodu izvēles lauku, pārliecinieties, ka jūsu produktos i
 
 7. Nospieciet **Save Field**.
 
-#### 3. Paziņojiet laiku formu virs cenrēšanas tabulas
+#### 3. Paziņojiet laiku formu virs cenrēšanas tabulas {#step-3-position-the-field-above-the-pricing-table}
 
 Lai nodrošinātu labāko lietotāja pieredzi, pārliecinieties, ka Laika izvēles lauka parādās **pirms** Cenrēšanas tabulas lauka jūsu kasina solījumā. Jūs varat izplūst laukus, lai mainītu viņu secību checkout form editorā. Šāda veids ļauj klientiem pirms izvēlēties fakturēšanas periodu redzēt cenām šim periodam.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Kā tas darbojas frontendā
+#### Kā tas darbojas frontendā {#how-it-works-on-the-frontend}
 
 Kad to konfiguriējat, klienti, kas apmeklē jūsu reģistrācijas lapu, redzēs periodizators virs cenrēšanas tabulas. Kad vi klikšķina uz citu fakturēšanas periodu:
 
@@ -177,7 +177,7 @@ Kad to konfiguriējat, klienti, kas apmeklē jūsu reģistrācijas lapu, redzēs
   * Ja **Force Different Durations** ir desactivēts Cenrēšanas tabulas laukā, produkti bez cenām variācijas izvēlētā perioda laikā būs slēgti.
   * Ja **Force Different Durations** ir aktivizēts, visi produkti paliek redzami, pat ja tiem nav variācijas šim periodam (tie parādīs savas defaultas cenas).
 
-#### Pre-selekcija fakturēšanas perioda ar URL adresi
+#### Pre-selekcija fakturēšanas perioda ar URL adresi {#pre-selecting-a-billing-period-via-url}
 
 Jūs varat arī pre-selektēt produktu un fakturēšanas periodu caur URL adresi. Ultimate Multisite atbalsta šādas URL shēmas:
 
@@ -185,11 +185,11 @@ Jūs varat arī pre-selektēt produktu un fakturēšanas periodu caur URL adresi
   * `/register/premium/12` — Pre-selekcē produktu un 12 mēnešu ilgus periodu
   * `/register/premium/1/year` — Pre-selekcē produktu ar 1 gada ilgu periodu
 
-### Šablessas izvēles lauks
+### Šablessas izvēles lauks {#the-template-selection-field}
 
 **Šablessas izvēles** lauks ļauj klientiem izvēlēties vietnes šabli checkout laikā. Tas tagad ir ietverts pēc defaulta **vienkāršajā solījumā** un **draudsolījumos** (multi-step) checkout form templates, kas pievienoti Ultimate Multisite v2.6.1.
 
-#### Manas manuāli pievienošanas
+#### Manas manuāli pievienošanas {#adding-the-field-manually}
 
 Ja, ja, vai jūs strādā ar formulē, kas tika izveidots pirms v2.6.1, vai sākot no tukšas šablona:
 
@@ -200,11 +200,11 @@ Ja, ja, vai jūs strādā ar formulē, kas tika izveidots pirms v2.6.1, vai sāk
    - **Label** — Tituls, ko klienti redz vispārē šablonu grīzā (piemēram, "Izvēlies vietnes šablonu").
    - **Required** — Vai klientiem ir jāizvēlas šablons pirms turpinās.
 
-#### Kā tas darbojas
+#### Kā tas darbojas {#how-it-works}
 
 Kad klienti izvēlas šablonu checkout laikā, Ultimate Multisite to izmanto savā vietnes izveidē. Šie redzamie šabloni atsaucas uz jūsu **Site Templates** sarakstu (**Ultimate Multisite > Site Templates**). Šeit parādās tikai tie šabloni, kas ir pieejami klientiem.
 
-### Checkout-form bazas domēni (Checkout-form base domains)
+### Checkout-form bazas domēni (Checkout-form base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 uzskata checkout formā konfiguriētos domānu laukus **Site URL** par tīkla bazas domāniem (network base domains). Izmantojiet lauka pieejamo domānu iestatījumus, ja vēlaties, lai klienti izveidotu vietnes vienā vai vairākajās dalīto reģistrācijas domānos, piemēram `example.com` un `sites.example.com`.
 
@@ -212,6 +212,6 @@ Dalītie checkout-form bazas domēni ne tiek uzskatiți kā vietnieciskus custom
 
 Saglabājiet custom domānu vietnieciskus mape klientiem, piemēram `customer-example.com`. Saglabājiet checkout formā bazas domānu dalīti reģistrācijas hostiem, ko vairākas vietnes var izmantot.
 
-#### Lauka atņemšana
+#### Lauka atņemšana {#removing-the-field}
 
 Ja jūs nepiešķiriet vietnes šabli, atņemiet Šablu izvēles lauku no savas formē. Tad klienti saņems to shabli, kas ir konfiguriēts kā defaultšablis **Ultimate Multisite > Settings > Site Templates**.

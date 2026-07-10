@@ -1,64 +1,68 @@
 ---
 title: Mengelola Pembayaran dan Faktur
 sidebar_position: 15
-_i18n_hash: fc6e16106af648bfca0812d24168b582
+_i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Mengelola Pembayaran dan Invoice
+# Mengelola Pembayaran dan Faktur {#managing-payments-and-invoices}
 
-## Pengaturan Pembayaran
+## Pengaturan Pembayaran {#payment-settings}
 
-Sebelum mulai menerima pembayaran, Anda perlu mengatur pengaturan terkait pembayaran. Buka **Ultimate Multisite → Settings** dan klik tab **Payment**.
+Sebelum Anda mulai menerima pembayaran, Anda perlu mengonfigurasi pengaturan terkait pembayaran. Buka **Ultimate Multisite → Settings** dan klik tab **Payment**.
 
 ![Tab pengaturan pembayaran](/img/admin/settings-payments-top.png)
 
-### Opsi Pembayaran Umum
+Berikut tampilan lengkap halaman pengaturan pembayaran:
 
-Di pengaturan umum, Anda dapat mengatur:
+![Halaman lengkap pengaturan pembayaran](/img/admin/settings-payments-full.png)
 
-- **Currency** — Mata uang default yang digunakan untuk transaksi
-- **Currency Position** — Posisi simbol mata uang (sebelum/sesudah nominal)
+### Opsi Pembayaran Umum {#general-payment-options}
+
+Dalam pengaturan umum Anda dapat mengonfigurasi:
+
+- **Mata Uang** — Mata uang default yang digunakan untuk transaksi
+- **Posisi Mata Uang** — Tempat simbol mata uang muncul (sebelum/sesudah jumlah)
 
 ![Pengaturan gateway pembayaran](/img/admin/settings-payments-options.png)
 
-### Gateway Pembayaran
+### Gateway Pembayaran {#payment-gateways}
 
-Ultimate Multisite mendukung berbagai gateway pembayaran. Anda dapat mengaktifkan dan mengatur masing-masing gateway dari tab pengaturan Payment.
+Ultimate Multisite mendukung beberapa gateway pembayaran. Anda dapat mengaktifkan dan mengonfigurasi masing-masing dari tab pengaturan Payment.
 
 ![Konfigurasi gateway pembayaran](/img/admin/settings-payments-gateways.png)
 
 Gateway yang tersedia meliputi:
 
 - **Stripe** — Pembayaran kartu kredit melalui Stripe
-- **PayPal** — Pembayaran via PayPal
-- **Manual** — Untuk pemrosesan pembayaran offline atau kustom
+- **PayPal** — Pembayaran PayPal
+- **Manual** — Untuk pemrosesan pembayaran offline atau khusus
 
-Setiap gateway memiliki bagian konfigurasi tersendiri untuk memasukkan API key dan pengaturan lainnya.
+Setiap gateway memiliki bagian konfigurasinya sendiri tempat Anda memasukkan API key dan pengaturan lainnya.
 
 ![Pengaturan gateway tambahan](/img/admin/settings-payments-gateways-2.png)
 
-### Mode Sandbox
+### Mode Sandbox {#sandbox-mode}
 
-Anda dapat mengaktifkan **Sandbox Mode** untuk menguji integrasi pembayaran sebelum digunakan secara live. Saat mode sandbox aktif, tidak ada tagihan sungguhan yang akan diproses.
+Anda dapat mengaktifkan **Mode Sandbox** untuk menguji integrasi pembayaran Anda sebelum ditayangkan. Saat mode sandbox aktif, tidak ada tagihan nyata yang akan dibuat.
 
-## Melihat Pembayaran
+## Melihat Pembayaran {#viewing-payments}
 
 Buka halaman **Payments** di bawah Ultimate Multisite untuk melihat semua transaksi di seluruh jaringan Anda.
 
 ![Daftar pembayaran](/img/admin/payments-list.png)
 
-Anda dapat memfilter pembayaran berdasarkan status (completed, pending, failed, refunded) dan mencari transaksi tertentu.
+Anda dapat memfilter pembayaran berdasarkan status (selesai, tertunda, gagal, dikembalikan dana) dan mencari transaksi tertentu.
 
-Klik pada pembayaran untuk melihat detail lengkapnya termasuk item-item yang dibeli, membership terkait, informasi pelanggan, dan data gateway pembayaran.
+Klik pembayaran untuk melihat detail lengkapnya termasuk item baris, membership terkait, informasi pelanggan, dan data gateway pembayaran.
 
-## Invoice
+## Faktur {#invoices}
 
-Ultimate Multisite dapat membuat invoice secara otomatis untuk setiap pembayaran. Anda dapat menyesuaikan template invoice dan format penomoran dari pengaturan Payment.
+Ultimate Multisite dapat secara otomatis membuat faktur untuk pembayaran. Anda dapat menyesuaikan template faktur dan format penomoran dari pengaturan Payment.
 
-Opsi kustomisasi invoice meliputi:
+Opsi penyesuaian faktur meliputi:
 
-- **Nama dan alamat perusahaan** yang ditampilkan di invoice
-- **Format dan urutan penomoran** invoice
-- **Logo** yang ditampilkan di header invoice
-- **Teks footer kustom** untuk syarat & ketentuan, catatan, atau informasi legal
+- **Nama dan alamat perusahaan** yang ditampilkan pada faktur
+- **Penomoran faktur** format dan urutan
+- **Logo** yang ditampilkan pada header faktur
+- **Teks footer khusus** untuk ketentuan, catatan, atau informasi hukum
 
-Untuk menyesuaikan template invoice, buka **Ultimate Multisite → Settings → Payment** dan cari pengaturan terkait invoice.
+Untuk menyesuaikan template faktur, buka **Ultimate Multisite → Settings → Payment** dan cari pengaturan terkait faktur.

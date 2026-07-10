@@ -3,13 +3,13 @@ title: Birinchi Obunali Mahsulotingizni Yaratish
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Birinchi Obunali Mahsulotingizni Yaratish (v2)
+# Birinchi Obunali Mahsulotingizni Yaratish (v2) {#creating-your-first-subscription-product-v2}
 
 _**MUHIM ESLATMA: Ushbu maqola faqat Ultimate Multisite 2.x versiyasi foydalanuvchilari uchun.**_ Agar siz 1.x versiyasidan foymanatgan bo'lsangiz, _**shu maqolani o'qing**_.
 
 Tarmoqni ishga tushirish va potensial foydalanuvchilarga xizmatlaringizni sotishni boshlash uchun sizda turli obunali variantlar bo'lishi kerak. Bu mahsulotlarni qanday yaratasiz? Qanday turdagi mahsulotlarni taklif qilish mumkin? Ushbu maqolada biz mahsulotlar haqida bilishingiz kerak bo'lgan barcha narsalarni ko'rib chiqamiz.
 
-## Mahsulot Turi
+## Mahsulot Turi {#product-type}
 
 Ultimate Multisite bilan siz mijozlaringizga ikkita turdagi mahsulotlarni taklif qilishingiz mumkin: **reja** va **qo'shimchalar (Order Bump)**. Qo'shimchalar ikki turga bo'linishi mumkin: **paketlar** va **xizmatlar**. Ularning farqini va xususiyatlarini keyinchalik ko'rib chiqamiz.
 
@@ -19,7 +19,7 @@ Ultimate Multisite bilan siz mijozlaringizga ikkita turdagi mahsulotlarni taklif
 
   * **Xizmatlar**: Ultimate Multisite ning funksionalligiga ta'sir qilmaydigan qo'shimchalar. Bular mijoz sotgan reja bilan birga siz uning uchun amalga oshiradigan vazifalardir. Masalan, mijoz bitta saytga ruxsat beruvchi rejanotini sotib olishi va shu sayt dizaynini yaratish uchun qo'shimcha xizmat uchun pul to'lashim mumkin.
 
-## Mahsulotlarni Boshqarish
+## Mahsulotlarni Boshqarish {#managing-products}
 
 Ko'p odam uchun Ultimate Multisite-da **Products** (Mahsulotlar) yorlig'i (**Ultimate Multisite > Products**) odatdagi hosting muhitidagi rejalarga teng bo'lishi mumkin.
 
@@ -29,7 +29,7 @@ Bu qism Ultimate Multisitening muhim asosiy qismidir haqida tushunishingizga yor
 
 ![Products list page](/img/config/products-list.png)
 
-## Mahsulotlarni qo'shish
+## Mahsulotlarni qo'shish {#adding-products}
 
 Reja, paket yoki xizmatni belgilash uchun kirish nuqtasi **Ultimate Multisite > Products > Add Product** orqali amalga oshirilishi mumkin.
 
@@ -39,13 +39,13 @@ Interfeysda ikkita asosiy bo'lim mavjud. Chap tomonda mahsulotni belgilashga yor
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Tavsif (Description)
+### Tavsif (Description) {#description}
 
 Asosiy mahsulot ma'lumotlari mahsulot nomi va tavsifi berish orqali belgilanishi mumkin. Bu identifikatorlar reja va narxni tanlash, fakturalar, yangilashlar va boshqa joylarda talab qilinadigan har qanday yerda ko'rsatiladi.
 
 ![Product description section](/img/config/product-description.png)
 
-### Narx turi (Pricing Type)
+### Narx turi (Pricing Type) {#pricing-type}
 
 Interfeysning o'ng tomonida asosiy narx belgilanishi mumkin.
 
@@ -53,7 +53,7 @@ Interfeysning o'ng tomonida asosiy narx belgilanishi mumkin.
 
 Ultimate Multisite uchta turli narx turini qo'llab-quvvatlaydi. **paid** (to'langan) variant tarmoq administratoridan mahsulotning narxi va hisoboti chastotasi haqida ma'lumot so'raydi.
 
-### Narx (Pricing)
+### Narx (Pricing) {#pricing}
 
 Narx komponenti asosiy mahsulot narxini va hisoblash oralig'ini belgilaydi.
 
@@ -61,7 +61,7 @@ Narx komponenti asosiy mahsulot narxini va hisoblash oralig'ini belgilaydi.
 
 shunday qilib, masalan, $29.99 narxi va 1 oylik sozlama bilan har oyda $29.99 to'lanadi. Shunga o'xshash tarzda, 3 oylik sozlama bilan $89.97 narxlisi har choraklik (quarter) ravishda shu miqdorda to'lanadi.
 
-### To'lov sikllari
+### To'lov sikllari {#billing-cycles}
 
 To'lov sikllari bo'limi yuqorida aytilgan to'lov oralig'ining chastotasini belgilaydi va bu odatda shartnomalar yoki aniq muddatlar ko'rsatiladi.
 
@@ -69,7 +69,7 @@ To'lov sikllari bo'limi yuqorida aytilgan to'lov oralig'ining chastotasini belgi
 
 Masalan, 1 oylik oralig'li va 12 ta to'lov sikllari bilan $29.99 narxidagi mahsulot uchun har oyda $29.99 to'lanadi va bu mahsulot uchun keyingi 12 oy davomida amal qiladi. Boshqacha qilib aytganda, bunday sozlama 12 oylik muddatga $29.99 narxli aniq narxlash shartnomasi yaratadi va undan keyin to'lov tugaydi.
 
-### Sinov muddati (Trial Period)
+### Sinov muddati (Trial Period) {#trial-period}
 
 Taklif sinovini yoqish orqali tarmoq administrator mahsulot uchun sinov muddatini belgilashi mumkin.
 
@@ -77,7 +77,7 @@ Taklif sinovini yoqish orqali tarmoq administrator mahsulot uchun sinov muddatin
 
 Sinov muddati davomida mijozlar mahsulotdan bepul foydalanishlari mumkin va sinov muddati tugaguncha ularga hech qanday to'lov qo'yilmaydi.
 
-### O'rnatish haqida to'lov (Setup Fee)
+### O'rnatish haqida to'lov (Setup Fee) {#setup-fee}
 
 Shuningdek, siz o'zingizning rejaingizga o'rnatish haqida to'lovni qo'llashingiz mumkin.
 
@@ -85,7 +85,7 @@ Shuningdek, siz o'zingizning rejaingizga o'rnatish haqida to'lovni qo'llashingiz
 
 Bu shuni anglatadiki, mijozlar birinchi to'lovda (reja narxidan tashqari) ushbu bo'limda belgilagan haqga mos keladigan qo'shimcha miqdorni to'laydi.
 
-### Faol (Active)
+### Faol (Active) {#active}
 
 Faol (active) tugmasi mahsulot yangi ro'yxatdan olinayotgan mijozlar uchun mavjudligini samarali belgilaydi.
 
@@ -93,13 +93,13 @@ Faol (active) tugmasi mahsulot yangi ro'yxatdan olinayotgan mijozlar uchun mavju
 
 Agar bu reja uchun mavjud mijozlar bo'lsa, tugmani o'chirilgan (disabled) holatga qo'yish ushbu rejani faol holatlardan olib tashlaydi. **Reja uchun mavjud mijozlar yangi rejaga o'tmaguncha yoki rejadagi danlanmaguncha davomida hisoboti amalga oshiriladi.**
 
-### Mahsulot rasmi
+### Mahsulot rasmi {#product-image}
 
 **Upload Image** tugmasi tarmoq administratoriga media kutubxonasidan mahsulot rasmini tanlash yoki yuklash imkonini beradi.
 
 ![Product image section](/img/config/product-image.png)
 
-### O'chirish
+### O'chirish {#delete}
 
 **Delete Product** tugmasi mahsulotni tizimdan o'chiradi. Mahsulot e'lon qilingandan so'ng paydo bo'ladi.
 
@@ -107,11 +107,11 @@ Agar bu reja uchun mavjud mijozlar bo'lsa, tugmani o'chirilgan (disabled) holatg
 
 Boshqa o'chirishlardan farqli olingan holda, mahsulot hech qanday "sarif" holatiga qo'yilmaydi. Shuning uchun uni o'chirganidan so'ng harakatni qaytarib bo'lmaydi.
 
-### Mahsulot opsiyalari
+### Mahsulot opsiyalari {#product-options}
 
 Asosiy darajadagi mahsulot ma'lumotlari belgilanganidan so'ng, mahsulot opsiyalari tarmoq administratoriga mahsulotning aniq xususiyatlarini yanada belgilashda yordam beradi.
 
-#### Umumiy
+#### Umumiy {#general}
 
 **General** (Umumiy) tab mahsulotning boshqa barcha mahsulot-spesifik tablariga tegmaydigan umumiy xususiyatlarini belgilaydi.
 
@@ -125,7 +125,7 @@ Ultimate Multisite Plan, Paket va Xizmat kabi bir nechta mahsulot turlarini qo'l
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Yangilash va Tushirish (Up & Downgrades)
+#### Yangilash va Tushirish (Up & Downgrades) {#up--downgrades}
 
 Bu tab foydalanuvchining o'ziga xos darajasi ichida mavjud bo'lgan yangilash va tushirish yo'llarini belgilaydi.
 
@@ -143,7 +143,7 @@ Plan guruhini belgilash uchun **plan guruhlari** ro'yxatidagi mos keladigan reja
 
 Ultimate Multisite ham **order bump** funksiyasini o'z ichiga oladi, bu yerda mos keladigan qo'shimcha mahsulotlar va xizmatlar rejalarga qo'shilishi mumkin. Bular mijozga qo'shimcha narsalar sifatida taklif qilinadi va ular to'lov paytida yoki yangilash jarayonida rejalarga qo'shilishi mumkin.
 
-#### Narx O'zgarishlari (Price Variations)
+#### Narx O'zgarishlari (Price Variations) {#price-variations}
 
 Narxohlar narxining o'zgarishlari orqali tarmoq administrator doirasi muddatga qarab boshqa narx darajalarini belgilashi mumkin. Bu sozlama aylanish, choraklik, yillik yoki boshqa har qanday hisoblanish davri uchun bir xil mahsulotni taklif qilish imkonini beradi. Masalan, siz mahsulotni oyiga 29.99 dollar narxida belgilashingiz va yil uchun chegirmali variant sifatida 249.99 dollar narxda taklif qilishingiz mumkin.
 
@@ -165,7 +165,7 @@ Masalan, agar asosiy mahsulot narxi oyiga 29.99 dollar bo'lsa, siz quyidagilarni
 Narx o'zgarishlari faqat frontend hisoboti (checkout)ga tugma yoki switch qo'shmaydi. Mijozlarga narx davrlari orasida o'tish imkonini berish uchun (masalan, Oylik / Yillik), siz hisoboti shaklingizga **Period Selection** (Davrni Tanlash) maydonini qo'shishingiz kerak. Bosqichma-bosqich ko'rsatmalar uchun [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) manbasiga qarang.
 :::
 
-#### Soliqlar (Taxes)
+#### Soliqlar (Taxes) {#taxes}
 
 **Taxes** (Soliqlar) tab **Ultimate Multisite > Settings > Taxes** da belgilangan soliq sozlamalariga va aniqroq aytganda belgilangan soliq stavkalariga mos keladi. Soliqni faollashtirish va tegishli soliq stavkalarini belgilash uchun iltimos, [Ultimate Multisite: Settings] hujjatlaridan foydalaning.
 
@@ -179,7 +179,7 @@ Soliq darajasi **Ultimate Multisite > Settings > Manage Tax Rates** da belgilang
 
 Mahsulot soliqloq narsasi ekanligini ko'rsatish uchun **Is Taxable** (Soliqloq Narsa Ekanligi) tugmasini faollashtiring va tegishli soliq darajasini Soliq Kategoriyasi (Tax Category) menyusidan tanlang.
 
-#### Sayt Shablonlari (Site Templates)
+#### Sayt Shablonlari (Site Templates) {#site-templates}
 
 Asosiy jihatdan, sayt shablonlari bu mijozning obuna boshida ularning saytiga nusxalangan to'liq WordPress veb-saytlari hisoblanadi.
 
@@ -201,7 +201,7 @@ Oxirida, **C** **Available Site Templates (Mavjud Sayt Shablonlarini tanlash)** 
 
 Asosan, agar tarmoq administrator shablonni checkout bosqichlarida tanlashni xohlasa, ' _default_ ' sozlamasi yetarli bo‘ladi. Alternativ sifatida shablon tanlashni olib tashlash va uni reja sozlamalariga topshirish uchun ' _assign new template_ ' yoki ' _choose available site templates_ ' opsiyalari foydali bo‘lishi mumkin.
 
-#### Saytlar (Sites)
+#### Saytlar (Sites) {#sites}
 
 **Sites** tab Ultimate Multisite'ning cheklovlar funksionalligining bir qismidir.
 
@@ -211,7 +211,7 @@ Bu sozlama mijoz o‘z aʼzoligi doirasida yaratishi mumkin bo‘lgan saytlarnin
 
 Cheklovni faollashtirish uchun **limit sites** toggle (o‘giruvchi) ni faol holatga qo‘ying va **site allowance** maydonida saytlar maksimal sonini ko‘rsating.
 
-#### Ziyaretlar (Visits)
+#### Ziyaretlar (Visits) {#visits}
 
 **Visits** tab Ultimate Multisite'ning cheklovlar tizimining yana bir qismidir. Bu sozlama mijoz saytiga kelgan noyob tashriflarni hisoblash va keyinchalik ularni cheklash imkonini beradi.
 
@@ -223,7 +223,7 @@ Bu funksiyadan foydalanish uchun **limit unique visits** (unikal tashriflar limi
 
 Bu limitga erishganidan so'ng, Ultimate Multisite mijozning saytiga xizmat qilishni to'xtatadi, lekin cheklovlar oshib ketgani haqida xabar beruvchi xabar ko'rsatmaydi.
 
-#### Foydalanuvchilar (Users)
+#### Foydalanuvchilar (Users) {#users}
 
 Ultimate Multisite'dagi 'Foydalanuvchilar' cheklovlari tarmoq administratoriga rolga yaratilishi va yuklanishi mumkin bo'lgan foydalanuvchilar sonini cheklash imkonini beradi.
 
@@ -233,7 +233,7 @@ Cheklovlar funksiyasidan foydalanish uchun **limit user** (foydalanuvchi limiti)
 
 Keyingi har bir cheklanadigan rol uchun uning yonidagi o'giruvchini faol holatga qo'ying va tegishli maydon ichida maksimal yuqori chegarani belgilang.
 
-#### Post Turlari (Post Types)
+#### Post Turlari (Post Types) {#post-types}
 
 **Post Types** (Post Turlari) yorlig'i tarmoq administratoriga WordPressdagi keng post turlari ro'yxatidagi batafsil cheklovlar qo'yish imkonini beradi.
 
@@ -245,7 +245,7 @@ Bu cheklovlar sub-tizimidan foydalanish uchun **limit post types** (post turlari
 
 Key type uchun cheklov qo'yish kerak bo'lsa, uni o'ngga surib yoqishingiz va tegishli maydon ichida maksimal chegarani belgilashingiz kerak.
 
-#### Disk Bo'shlig'i (Disk Space)
+#### Disk Bo'shlig'i (Disk Space) {#disk-space}
 
 **Disk Bo'shlig'i** tabida tarmoq administratorlari mijozlar tomonidan qabul qilinadigan bo'shliq miqdorini cheklashi mumkin.
 
@@ -257,13 +257,13 @@ Disk bo'shlig'i cheklovini faollashtirish uchun **limit disk size per site** (ha
 
 Keyin, megabaytlar birligida **disk space allowance** (disk bo'shlig'i ruxsat etilishi) maydonida maksimal yuqori chegarani belgilang.
 
-#### Maxsus Domen (Custom Domain)
+#### Maxsus Domen (Custom Domain) {#custom-domain}
 
 Bu opsiyani yoqib qo'yish orqali siz ushbu reja uchun maxsus domenlarni faqatgina qabul qilish imkonini berishingiz mumkin.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Temalar (Themes)
+#### Temalar (Themes) {#themes}
 
 Mahsulot sozlamalari ichidagi **Themes** (Temalar) tabida tarmoq administratorlari temalarni mijozlar uchun tanlash imkoniyati bilan mavjud qilishlari va shuningdek, temaning holatini majburiy ravishda belgilashni tanlash imkonini beradi.
 
@@ -281,7 +281,7 @@ _**Eslatma: Temalarni mijozlar uchun mavjud qilishdan oldin ularni tarmoq admini
 
 Mavjud holatda mavzu mijoz uchun o'z-o'zidan faollashtirish imkoniyati bilan taqdim etiladi. Aksincha, Mavjud bo'lmagan holat esa mijozdan mavzuni faollashtirish imkoniyatini olib tashlaydi. Oxirida, **Majburiy Faollashtirish** (Force Activate) opsiyasi mavzuni tanlash va faollashtirishni majburlaydi, shunda u sayt yaratilganda default sifatida belgilanishi mumkin.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Themes yorlig'idan farqli o'laroq, Ultimate Multisite tarmoq administratoriga pluginlarni mijozlarga ko'rinishi va yangi sayt yaratilganda ularning holatini belgilash imkonini beradi.
 
@@ -301,7 +301,7 @@ Tarmoq administrator pluginlarning xatti-harakatini **xatti-harakatlar** (behavi
 
 Tarmoq administratorlari Force Activate & Lock va Force Inactivate & Lock sozlamalarini sayt shablonlari bilan birgalikda ko'rib chiqishni xohlaydigan bo'lishi mumkin, chunki bu sozlamalar tanlanganida shablon ichidagi plugin holatlari ta'sirga solishi mumkin.
 
-#### Reset Cheklovlarini Nol Qilish (Reset Limitations)
+#### Reset Cheklovlarini Nol Qilish (Reset Limitations) {#reset-limitations}
 
 **Reset Limitations** yorlig'i mahsulotda belgilangan barcha maxsus cheklovlarni qayta tiklaydi. Cheklovlarni nolga keltirish uchun **reset limitations** tugmasiga bosing.
 
@@ -311,7 +311,7 @@ Harakatni tasdiqlash uchun o'ng tomondagi **confirm reset** togglini faol holatg
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Mahsulotni Tahrirlash, Ko'chirish yoki O'chirish
+## Mahsulotni Tahrirlash, Ko'chirish yoki O'chirish {#edit-duplicate-or-delete-product}
 
 Mavjud mahsulotlarni tahrirlash, ko'chirish yoki o'chirish uchun **Ultimate Multisite > Products** ga o'tib, mavjud mahsulot nomining ustiga kursorni olib yurishingiz mumkin.
 

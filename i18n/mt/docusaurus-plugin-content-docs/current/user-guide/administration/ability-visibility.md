@@ -3,11 +3,11 @@ title: Aħjar Il-vista
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Xevizzja Vista Attività (Ability Visibility)
+# Xevizzja Vista Attività (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 jiddu **Xevizzja Vista Attività** li controlli li governano quali superfici espongono ogni attivitá. Dan hu llumizzaw l-administrator li pu tajjimu ben għall-qiegħed li quali capacità tal-agent huma disponibbli permezz ta REST APIs, MCP servers, WooCommerce integrations, u fejn ikunu.
 
-## X'għandu Xevizzja Vista Attività?
+## X'għandu Xevizzja Vista Attività? {#what-is-ability-visibility}
 
 Xevizzja Vista Attività hija sistema permessament li jkontrolla:
 
@@ -18,9 +18,9 @@ Xevizzja Vista Attività hija sistema permessament li jkontrolla:
 
 Kulle attivitá jista' tagħha livell vista li jiddetermina disponibbiltatilha fuq superfici differenti.
 
-## Livelli ta Vista (Visibility Levels)
+## Livelli ta Vista (Visibility Levels) {#visibility-levels}
 
-### Pubbliku (Public)
+### Pubbliku (Public) {#public}
 
 **Attivitajiet pubbliċi** huma disponibbli f'kullewa:
 
@@ -32,7 +32,7 @@ Kulle attivitá jista' tagħha livell vista li jiddetermina disponibbiltatilha f
 
 Eżempju: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Interni (Internal)
+### Interni (Internal) {#internal}
 
 **Attivitajiet interni** huma disponibbli biss f'installazzjoni WordPress tiegħek:
 
@@ -43,7 +43,7 @@ Eżempju: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Eżempju: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partner)
+### Partner (Partner) {#partner}
 
 **Attivitajiet tal-partner** huma disponibbli biss għall-partner li huma msemmi f'lista blawista (whitelisted):
 
@@ -54,7 +54,7 @@ Eżempju: `manage-settings`, `view-analytics`, `export-data`
 
 Eżempju: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabilitati (Disabled)
+### Disabilitati (Disabled) {#disabled}
 
 **Attivitajiet disabilitati** huma mhux disponibbli f'fejn hija:
 
@@ -63,15 +63,15 @@ Eżempju: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Mhumiex disponibbli f'admin panels
 - Utili għall-attivitajiet li huma deprecated (mghinnati) jew sperimentali
 
-## Id-Diminizzaw Il-Aħħar (Managing Ability Visibility)
+## Id-Diminizzaw Il-Aħħar (Managing Ability Visibility) {#managing-ability-visibility}
 
-### Aċċess għall-Settings tal-Abilità (Accessing Ability Visibility Settings)
+### Aċċess għall-Settings tal-Abilità (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 1. Irrita għal **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klikka fuq l-tab **Abilities**
 3. Settba lista ta' tutte l-abilities li kienu installati u livelli tal-vidiabilità tagħhom
 
-### Aħsor tal-Dettalji tal-Abilità (Viewing Ability Details)
+### Aħsor tal-Dettalji tal-Abilità (Viewing Ability Details) {#viewing-ability-details}
 
 Klikka fuq qualsess ability biex tara:
 
@@ -82,7 +82,7 @@ Klikka fuq qualsess ability biex tara:
 - **Last updated**: Meta kienet l-vidiabilità tikkmienha l-oħra
 - **Status**: Magħrufu jew Mammass
 
-### Bidla Nivelli tal-Vidiabilità (Changing Visibility Levels)
+### Bidla Nivelli tal-Vidiabilità (Changing Visibility Levels) {#changing-visibility-levels}
 
 Biex tbażi l-vidiabilità ta' ability:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operazzjonijiet Bulk (Bulk Operations)
+### Operazzjonijiet Bulk (Bulk Operations) {#bulk-operations}
 
 Biex tbażi l-vidiabilità għal ħafna abilities:
 
@@ -108,11 +108,11 @@ Biex tbażi l-vidiabilità għal ħafna abilities:
 2. Sigli livell tal-vidiabilità ġdid mill-dropdown ta' bulk action
 3. Klikka fuq **Apply**
 
-## Allow-List tal-Partner (Partner Allow-List)
+## Allow-List tal-Partner (Partner Allow-List) {#partner-allow-list}
 
 L-**partner allow-list** tikkontrolla li quali partner esterni jistgħu jidħlu għall-abilities bidi livell Partner.
 
-### Aċċettarja Partner (Adding Partners)
+### Aċċettarja Partner (Adding Partners) {#adding-partners}
 
 1. Irrita għal **Superdav AI Agent** → **Settings** → **Partners**
 2. Klikka fuq **Add Partner**
@@ -120,7 +120,7 @@ L-**partner allow-list** tikkontrolla li quali partner esterni jistgħu jidħlu 
 4. Opcjonalment aċċetta ism u deskrizzjoni tal-partner
 5. Klikka fuq **Save**
 
-### Assegna Abilities għall-Partner (Assigning Abilities to Partners)
+### Assegna Abilities għall-Partner (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 Wara ma aċċettat partner:
 
@@ -130,7 +130,7 @@ Wara ma aċċettat partner:
 4. Nella sezione "Partner allow-list", spunta le caselle per i partner che dovrebbero avere accesso
 5. Clicca su **Save** (Salva)
 
-### Revocare l'accesso ai Partner
+### Revocare l'accesso ai Partner {#revoking-partner-access}
 
 Per rimuovere l'accesso di un partner:
 
@@ -140,11 +140,11 @@ Per rimuovere l'accesso di un partner:
 
 Il partner perderà immediatamente l'accesso a quell'abilità.
 
-## Abilities Non Classificate
+## Abilities Non Classificate {#unclassified-abilities}
 
 Quando installi un'abilità di terze parti che Superdav AI Agent non riconosce, viene contrassegnata come **Unclassified** (Non Classificata).
 
-### Avviso per Amministratori sulle Abilities Non Classificate
+### Avviso per Amministratori sulle Abilities Non Classificate {#admin-notice-for-unclassified-abilities}
 
 Vedrai un avviso dell'amministratore:
 
@@ -161,7 +161,7 @@ Si prega di rivederle e classificarle.
 [Review Abilities] [Dismiss] (Rivedi le Abilities) [Ignora]
 ```
 
-### Revisione delle Abilities Non Classificate
+### Revisione delle Abilities Non Classificate {#reviewing-unclassified-abilities}
 
 1. Clicca su **Review Abilities** (Rivedi le Abilities) nel messaggio
 2. Per ogni abilità non classificata, vedrai:
@@ -178,7 +178,7 @@ Si prega di rivederle e classificarle.
 
 4. Clicca su **Classify** (Classifica) per salvare la tua decisione
 
-### Perché Classificare le Abilities Non Classificate?
+### Perché Classificare le Abilities Non Classificate? {#why-classify-unclassified-abilities}
 
 Classificare le abilità:
 
@@ -187,9 +187,9 @@ Classificare le abilità:
 - **Abilita le funzionalità**: Una volta classificate, l'abilità diventa disponibile
 - **Documenta le decisioni**: Le tue scelte vengono registrate per fini di audit
 
-## Vidiabilità fuq Surface Diversi
+## Vidiabilità fuq Surface Diversi {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Abilità Pubbliċi** disponibbli biex jkun tramite REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Abilità Internali u Partner** ma jkun disponibbli via REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Abilità Pubbliċi** disponibbli via MCP:
 
@@ -217,7 +217,7 @@ Abilità disponibbli:
 
 **Abilità Partner** disponibbli biss mal-credential partner.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Abilità Pubbliċi** relatati għal WooCommerce disponibbli:
 
@@ -227,7 +227,7 @@ Abilità disponibbli:
 
 **Abilità Internali** ma jkun esposti le WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **B'all abilities** (Pubbliċi, Internali, Partner) disponibbli f'chat, b'dependenza mill-permess tal-user:
 
@@ -235,34 +235,34 @@ Abilità disponibbli:
 - L-user regolari jara biss abiliti Pubbliċi
 - Il-partner jara Abiliti Pubbliċi + Abiliti Partner (jifabbilja se hija whitelistata)
 
-## Best Practices ta Sicurezza
+## Best Practices ta Sicurezza {#security-best-practices}
 
-### Principi tal-Privlijju Minqust (Principle of Least Privilege)
+### Principi tal-Privlijju Minqust (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Istawli abiliti b'vidiabilità l-restriktiva possibbli li tistawx jgħandu.
 - Uża vidiabilità Partner għall-operazzjonijiet sensibili.
 - Disabli abiliti li ma tistaqso jgħandu.
 
-### Audit Regolari
+### Audit Regolari {#regular-audits}
 
 - Rividi vidiabilità tal-abilities b'misfida
 - Kontrolla għal abilities mhux klasifikati
 - Elimina l-access għall-partner li ma jgħandux ittuża
 
-### Logging u Monitora
+### Logging u Monitora {#logging-and-monitoring}
 
 - Monitorja quali abiliti qed tintużaw flis.
 - Segui pattern tal-access tal-partner
 - Alerti fuq użu anomali tal-abilities
 
-### Abiliti Tal-Terzji
+### Abiliti Tal-Terzji {#third-party-abilities}
 
 - Rividi abiliti tal-terzji qabel ma jgħandu
 - Klasifikali esplicitament
 - Incomċja b'vidiabilità Internali jew Partner
 - Promu għall-Pubbliċi biss wara vetting (verifika)
 
-## Problemi (Troubleshooting)
+## Problemi (Troubleshooting) {#troubleshooting}
 
 **Il-abilità ma la lista ma mhux tista**
 - Verifika li abilità installata u attiva
@@ -285,7 +285,7 @@ Abilità disponibbli:
 - Verifika li l-klassifikazzjoni tiegħek hija salta
 - Verifika li il-plugin li jipprovvidi l-abilità huwa aggiornat
 
-## Migrazzjoni mill-Mod Legacy (Legacy Mode)
+## Migrazzjoni mill-Mod Legacy (Legacy Mode) {#migration-from-legacy-mode}
 
 Jekk qed tixgħel min versjoni aħjar ta Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Jekk qed tixgħel min versjoni aħjar ta Superdav AI Agent:
 
 Vidi **Third-Party Mode Migration** għal magħru più dettagli fuq it-trasizzjoni għall-integrazzjoni nativa tal-Abilities API.
 
-## Prossimu Passi (Next Steps)
+## Prossimu Passi (Next Steps) {#next-steps}
 
 Wara li tsetConfiga l-visibilità tal-abilità:
 

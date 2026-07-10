@@ -1,0 +1,19 @@
+---
+id: wu_apply_plan_limits
+title: Fyuluta - wu_apply_plan_limits
+sidebar_label: wu_apply_plan_limits
+_i18n_hash: 494a7255a0f46d7f4b65acea6e3856bd
+---
+# Fyuluta: wu_apply_plan_limits {#filter-wuapplyplanlimits}
+
+Lolani opanga mapulagini kuti adutse malirewo.
+
+### Kuyambira {#since}
+
+- 1.0.0
+### Gwero {#source}
+
+Yafotokozedwa mu [`inc/limits/class-fluent-forms-limits.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limits/class-fluent-forms-limits.php#L39) pa mzere 39
+
+
+## Zobwerera {#returns}

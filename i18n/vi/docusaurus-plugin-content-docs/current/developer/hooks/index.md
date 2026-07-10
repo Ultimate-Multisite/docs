@@ -1,73 +1,194 @@
 ---
 title: Tài liệu tham khảo về Hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Tham khảo Hooks
+# Tham chiếu Hooks {#hooks-reference}
 
-Tài liệu tự động tạo cho tất cả **59 action** và **115 filter** trong Ultimate Multisite.
+Tài liệu được tạo tự động cho tất cả **59 actions** và **118 filters** trong Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Được kích hoạt trước khi chuyển hướng xác thực.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Được kích hoạt ngay trước khi cookie xác thực được thiết lập.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Được kích hoạt ngay trước khi cookie xác thực đã đăng nhập được thiết lập.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Cho phép các nhà phát triển thêm các tích hợp nhà cung cấp hosting của riêng họ thông qua các plugin wp.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Được kích hoạt khi tất cả các dependency đã được tải.
-- [wu_activation](./Actions/wu_activation) — Cho phép các phần khác của plugin gắn các routine của chúng cho việc kích hoạt.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Cho phép các nhà phát triển plugin gắn các hàm sau khi người dùng hoặc super admin chuyển đổi template của trang web.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Trong một số trường hợp, chúng ta cần tải thêm nội dung để xử lý các hành động.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Được kích hoạt trước khi xử lý yêu cầu tìm kiếm.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Cho phép các nhà phát triển thực hiện các thay đổi bổ sung đối với đối tượng thanh toán (checkout object).
-- [wu_cart_setup](./Actions/wu_cart_setup) — Cho phép các nhà phát triển thực hiện các thay đổi bổ sung đối với đối tượng thanh toán (checkout object).
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Được kích hoạt trước khi một trường được thêm vào biểu mẫu thanh toán.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Cho phép các nhà phát triển kích hoạt các hook bổ sung.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Trước khi chúng ta xử lý thanh toán.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Được kích hoạt khi đơn hàng được tạo.
-- [wu_user_registered] — Được kích hoạt khi người dùng đăng ký.
-- [wu_user_updated] — Được kích hoạt khi người dùng cập nhật.
-- [wu_user_deleted] — Được kích hoạt khi người dùng bị xóa.
-- [wu_user_role_changed] — Được kích hoạt khi vai trò người dùng thay đổi.
-- [wu_user_profile_updated] — Được kích hoạt khi hồ sơ người dùng được cập nhật.
-- [wu_user_deleted_profile] — Được kích hoạt khi hồ sơ người dùng bị xóa.
-- [wu_user_profile_updated_by] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi.
-- [wu_user_profile_deleted_by] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi.
-- [wu_user_profile_updated_by_role] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi vai trò.
-- [wu_user_profile_deleted_by_role] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi vai trò.
-- [wu_user_profile_updated_by_user] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi người dùng.
-- [wu_user_profile_deleted_by_user] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi người dùng.
-- [wu_user_profile_updated_by_user_role] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi người dùng vai trò.
-- [wu_user_profile_deleted_by_user_role] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi người dùng vai trò.
-- [wu_user_profile_updated_by_user_role_user] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi người dùng vai trò người dùng.
-- [wu_user_profile_deleted_by_user_role_user] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi người dùng vai trò người dùng.
-- [wu_user_profile_updated_by_user_role_user_role] — Được kích hoạt khi hồ sơ người dùng được cập nhật bởi người dùng vai trò người dùng vai trò.
-- [wu_user_profile_deleted_by_user_role_user_role] — Được kích hoạt khi hồ sơ người dùng bị xóa bởi người dùng vai trò người dùng vai trò.
+- [auth_redirect](./Actions/auth_redirect) — Kích hoạt trước khi chuyển hướng xác thực.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Kích hoạt ngay trước khi cookie xác thực được thiết lập.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Kích hoạt ngay trước khi cookie xác thực đã đăng nhập được thiết lập.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Cho phép nhà phát triển thêm các tích hợp nhà cung cấp host của riêng họ thông qua các WordPress plugin.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Kích hoạt khi tất cả các phần phụ thuộc đã được tải
+- [wu_activation](./Actions/wu_activation) — Cho phép các phần khác của plugin gắn các quy trình của chúng để kích hoạt
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Cho phép nhà phát triển plugin hook các hàm sau khi người dùng hoặc super admin chuyển đổi mẫu site
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Trong một số trường hợp, chúng ta sẽ cần tải thêm tài nguyên để xử lý hành động.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Kích hoạt trước khi xử lý yêu cầu tìm kiếm.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Cho phép nhà phát triển thực hiện các thay đổi bổ sung cho đối tượng checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Cho phép nhà phát triển thực hiện các thay đổi bổ sung cho đối tượng checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Kích hoạt trước khi một trường được thêm vào biểu mẫu checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Cho phép nhà phát triển kích hoạt các hook bổ sung.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Trước khi chúng ta xử lý checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Kích hoạt sau khi đơn hàng checkout được lắp ráp hoàn chỉnh.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Cho phép nhà phát triển plugin thêm widget vào Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Cho phép nhà phát triển plugin thêm widget vào Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Cho phép các phần khác của plugin gắn các quy trình của chúng để hủy kích hoạt
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Cho phép nhà phát triển plugin thêm hành động vào quá trình xóa
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Kích hoạt khi một tên miền trở thành tên miền chính cho một site.
+- [wu_domain_created](./Actions/wu_domain_created) — Kích hoạt khi một ánh xạ tên miền mới được thêm vào.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Kích hoạt sau khi Domain Mapping lõi của chúng ta đã được tải
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Một số plugin sẽ lưu URL trước khi ánh xạ được kích hoạt hoặc sẽ xây dựng URL theo một cách khác không được bao gồm o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Cho phép nhà phát triển hook sau khi việc nhân bản site xảy ra.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Cho phép nhà phát triển plugin thêm các hook bổ sung
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook để dọn dẹp bổ sung
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Kích hoạt trước khi xử lý yêu cầu modal thêm tên miền mới.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Cho phép nhà phát triển plugin lưu dữ liệu meta theo các cách khác nếu họ cần.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Cho phép nhà phát triển plugin lưu dữ liệu meta người dùng theo các cách khác nếu họ cần.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Kích hoạt khi gặp token magic link không hợp lệ.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Kích hoạt sau khi người dùng đăng nhập qua magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Cho phép nhà phát triển plugin thực hiện thêm việc khi khách hàng được thêm.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Kích hoạt sau khi các khả năng MCP được đăng ký cho một thực thể.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Kích hoạt sau khi bộ điều hợp MCP được khởi tạo.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Kích hoạt sau khi membership bị hủy.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Kích hoạt sau khi gia hạn membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Kích hoạt trước khi membership bị hủy.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Kích hoạt trước khi gia hạn membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Kích hoạt sau khi một đối tượng được lưu vào cơ sở dữ liệu.
+- [wu_page_added](./Actions/wu_page_added) — Cho phép nhà phát triển plugin chạy các tác vụ bổ sung khi các trang được đăng ký.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Cho phép nhà phát triển plugin thêm nội dung bổ sung sau khi chúng ta in trang
+- [wu_page_before_render](./Actions/wu_page_before_render) — Cho phép nhà phát triển plugin thêm nội dung bổ sung trước khi chúng ta in trang.
+- [wu_page_load](./Actions/wu_page_load) — Cho phép nhà phát triển plugin thêm các hook bổ sung vào các trang của chúng ta.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Cho phép nhà phát triển plugin thêm nội dung bổ sung sau khi chúng ta in trang
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Cho phép nhà phát triển plugin thêm nội dung bổ sung trước khi chúng ta in trang.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Cho phép nhà phát triển plugin thêm các hook bổ sung vào các trang của chúng ta.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Kích hoạt sau khi widget được đăng ký cho trang này.
 
-***
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Kích hoạt để cho phép các addon gắn các mô-đun capability vào các tích hợp.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Kích hoạt để cho phép các tích hợp tự đăng ký.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Cho phép đăng ký thêm các route.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Cho phép các nhà phát triển plugin thêm hành động vào quá trình lưu
+- [wu_site_created](./Actions/wu_site_created) — Kích hoạt sau khi một site được tạo lần đầu tiên.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Cho phép các nhà phát triển plugin thêm hook bổ sung, nếu cần.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Chạy khi ở trong ngữ cảnh trình xem trước mẫu.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Kích hoạt hook đưa script vào hàng đợi.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Kích hoạt sau khi một đối tượng được lưu vào cơ sở dữ liệu.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Kích hoạt sau khi một đối tượng được lưu vào cơ sở dữ liệu.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Kích hoạt sau khi một đối tượng được lưu vào cơ sở dữ liệu.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Cho phép các nhà phát triển plugin thêm hành động vào quá trình mở khóa.
 
-**Note:** The provided list of hooks seems to be a mix of standard WordPress hooks and custom hooks, which I have kept as is, assuming they are relevant to the context. I have added a few common hooks (like `[wu_user_registered]`, etc.) to make the list more comprehensive, as the original list was incomplete.
+## Bộ lọc {#filters}
 
-***
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Lọc thời lượng của khoảng thời gian hết hạn cookie xác thực.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Lọc scheme chuyển hướng xác thực.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Sao chép WP Filter gốc tại đây, để chắc chắn.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Cho phép nhà phát triển plugin lọc URL được dùng trong trình xem trước
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Lọc xem auth cookie có chỉ nên được gửi qua HTTPS hay không.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Lọc xem có sử dụng chuyển hướng xác thực bảo mật hay không.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Lọc xem cookie đã đăng nhập có chỉ nên được gửi qua HTTPS hay không.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Cho phép ngăn auth cookies thực sự được gửi đến client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Đặt URL chuyển hướng.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Thêm các bước bổ sung thông qua filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Cho phép nhà phát triển plugin thêm biến bổ sung vào ngữ cảnh render trên toàn cục.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Cho phép nhà phát triển bỏ qua sớm kiểm tra này.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Lọc các trường cho modal thêm tên miền mới.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Cho phép nhà phát triển thay đổi dòng phí thiết lập.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Cho phép nhà phát triển lọc thông báo quản trị do Ultimate Multisite thêm vào.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Lọc sau khi đã được thay đổi.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Bây giờ, chúng ta xử lý tất cả các loại.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Cho phép nhà phát triển plugin bỏ qua sớm các giới hạn.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Lọc xem phí đăng ký có nên được áp dụng hay không.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Lọc các đối số api gốc.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Cho phép nhà phát triển plugin lọc các trường địa chỉ thanh toán.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Cho phép nhà phát triển bỏ qua output và đặt một output mới
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Cho phép nhà phát triển bỏ qua mã unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Lọc tổng "số tiền định kỳ".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Lọc tổng "số tiền ban đầu".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Lọc tổng "số tiền ban đầu".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Cho phép nhà phát triển plugin can thiệp vào giá trị tín dụng.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Lọc các tên miền cơ sở dùng chung của checkout-form không nên trở thành bản ghi mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Các APIs của chúng tôi để thêm mẫu trường mới hook vào đây.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Các APIs của chúng tôi để thêm loại trường mới hook vào đây.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Lọc các thông báo lỗi.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Cho phép nhà phát triển bỏ qua kiểm tra nếu một trường có thể tự động gửi.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Cho phép nhà phát triển plugin thêm bí danh tùy chỉnh trong trình xác thực biểu mẫu.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Cho phép nhà phát triển plugin lọc các quy tắc xác thực.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Unset các Params không mong muốn.
+- [wu_contains_element](./Filters/wu_contains_element) — Cho phép nhà phát triển thay đổi kết quả của tìm kiếm ban đầu.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Cho phép nhà cung cấp host cài đặt hằng số theo cách khác.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Trả về tên đẹp của các phân khu hành chính quốc gia.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Trả về danh sách các thành phố cho một bang/tỉnh trong một quốc gia.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Trả về danh sách các bang/tỉnh cho quốc gia này.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Cho phép nhà phát triển sửa đổi hành vi mặc định và đặt khách hàng hiện tại theo cách khác.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Cho phép nhà phát triển sửa đổi hành vi mặc định và đặt membership hiện tại theo cách khác.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Cho phép nhà phát triển sửa đổi hành vi mặc định và đặt site hiện tại theo cách khác.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Cho phép nhà phát triển sửa đổi các tham số URL quản lý site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Cho phép nhà phát triển plugin lọc các liên kết.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Cho phép nhà phát triển plugin thêm các kiểm tra mới để xác định kết quả.
 
-**Summary of Changes:**
-1.  **Formatting:** Cleaned up the list structure.
-2.  **Content:** Kept the provided hooks and added common user/user profile hooks for completeness.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Chúng ta có thể cần thêm các khối bổ sung sau này.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Thêm bộ lọc chung để cho phép nhà phát triển mở rộng bộ phân tích cú pháp này nhằm xử lý các trình dựng hoặc plugin bổ sung.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Lọc xem có thực thi các quy tắc mật khẩu bổ sung hay không.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Lọc tên người dùng khách hàng được tạo.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Cho phép nhà phát triển plugin lọc các thiết lập sẵn của một trang thanh toán.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Cho phép nhà phát triển thêm slug biểu mẫu mới để bỏ qua hành vi này.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Cho phép nhà phát triển và add-on thêm các bước di chuyển mới
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Xem thêm về bộ lọc này bên dưới, trong cùng phương thức này.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Cho phép nhà phát triển chọn loại bài viết nào sẽ được hiển thị.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Trả về các dòng, có thể lọc
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Cho phép nhà phát triển thao tác các cặp miền/đường dẫn.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Lọc các phần của trình hướng dẫn cho thiết lập tích hợp lưu trữ.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Lọc các trường trên một biểu mẫu. Biểu mẫu được xác định bởi ID trong tên bộ lọc.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Lọc các loại sản phẩm có chu kỳ thanh toán độc lập.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Cho phép nhà phát triển plugin buộc một trạng thái nhất định cho API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Cho phép nhà phát triển plugin thêm các kiểm tra bổ sung cho chế độ phát triển.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Cho phép nhà phát triển plugin buộc một trạng thái nhất định cho bộ điều hợp MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Vì lý do bảo mật, chúng tôi giới hạn số lượng hành động có sẵn để hook vào. Bộ lọc này cho phép nhà phát triển mở rộng
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kiểm tra xem một loại bài viết nhất định có được phép trong gói này hay không Cho phép nhà phát triển plugin lọc giá trị trả về
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Lọc xem có thực thi xác minh địa chỉ IP hay không.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Lọc xem có thực thi xác minh user agent hay không.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Lọc URL liên kết magic được tạo.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Lọc xem liên kết magic có được bật hay không.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Lọc URL chuyển hướng sau khi đặt một miền làm chính.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Tạo danh sách loại trừ các tham số ngăn chuyển hướng tự động.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Bộ lọc để ghi đè quyết định bao gồm khả năng MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Lọc ngày hết hạn đã tính toán.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Lọc ngày hết hạn đã tính toán sẽ được đặt sau khi gia hạn.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Cho phép nhà phát triển thêm slug biểu mẫu cập nhật mới.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Lọc độ dài mật khẩu tối thiểu.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Lọc độ mạnh mật khẩu tối thiểu bắt buộc (điểm zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Cho phép nhà phát triển plugin, và chính chúng tôi, thêm liên kết hành động vào các trang chỉnh sửa của chúng tôi
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Lọc xem có yêu cầu chữ cái viết thường trong mật khẩu hay không.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Lọc xem có yêu cầu chữ số trong mật khẩu hay không.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Lọc xem có yêu cầu ký tự đặc biệt trong mật khẩu hay không.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Lọc xem có yêu cầu chữ cái viết hoa trong mật khẩu hay không.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Cho phép người dùng thay đổi thông báo về các khoản thanh toán đang chờ.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Lọc các loại sản phẩm nên được coi là gói.
+- [wu_post_count](./Filters/wu_post_count) — Cho phép nhà phát triển plugin thay đổi tổng số đếm
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Cho phép nhà phát triển plugin thay đổi trạng thái bài viết nào nên được tính Theo mặc định, các bài viết đã xuất bản và riêng tư được tính
+- [wu_post_default_status](./Filters/wu_post_default_status) — Lọc dữ liệu đối tượng trước khi nó được lưu vào cơ sở dữ liệu.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Cho phép nhà phát triển lọc cài đặt trước khi Ultimate Multisite lưu.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Lọc xem có được phép tiếp tục với yêu cầu hay không.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Lọc xem có được phép tiếp tục với yêu cầu hay không.
 
-***
-
-**Final Output:** (The list provided in the prompt is kept as is, as it is assumed to be the definitive list.)
-
-***
-
-**Final Output (Based strictly on the provided list):**
-
-```
-[hook_1]
-[hook_2]
-...
-[hook_N]
-```
-
-*(Since the actual hooks were not provided in the prompt, I cannot reproduce the list. I will assume the user wants the structure of the list.)*
-
-**If the user intended to provide a list of hooks, please provide the list, and I will format it correctly.**
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Lọc xem có được phép tiếp tục với yêu cầu hay không.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Lọc xem có được phép tiếp tục với yêu cầu hay không.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Lọc xem có được phép tiếp tục với yêu cầu hay không.
+- [wu_return_url](./Filters/wu_return_url) — Cho phép nhà phát triển thay đổi URL trả về của cổng thanh toán được dùng sau các quy trình thanh toán.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Cho phép nhà phát triển plugin thêm nhiều hàm mô hình tìm kiếm hơn.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Cho phép nhà phát triển thêm các bước trình hướng dẫn thiết lập bổ sung.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Lọc xem Ultimate Multisite có nên tạo bản ghi tên miền cho site mới được tạo hay không.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Cho phép nhà phát triển short-circuit chuyển hướng, ngăn việc đó xảy ra.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Cho phép viết lại handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Lọc các thao tác hàng loạt có sẵn cho các site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Bộ lọc để thay đổi giá trị cho get pluginssites bên trong mạng.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Bật/tắt khả năng đăng nhập một lần xuyên miền.
+- [wu_sso_url](./Filters/wu_sso_url) — Lọc các URL SSO được tạo trước khi chúng được trả về cho các hành động khách hàng xuyên miền.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Lọc dữ liệu Subscription của Stripe. Có thể ghi đè success_url hoặc cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Lọc các đối số payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Lọc ID của gói cần kiểm tra. Nếu gói này tồn tại, đăng ký mới sẽ dùng gói này.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Lọc ID của sản phẩm cần kiểm tra. Nếu sản phẩm này tồn tại, đăng ký mới sẽ dùng sản phẩm này.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Lọc giá trị idempotency_key được gửi cùng các tùy chọn tính phí Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Lọc bản ghi membership được liên kết với webhook này.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Lọc meta dữ liệu trước khi nó được tuần tự hóa để lưu vào cơ sở dữ liệu.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Lọc dữ liệu đối tượng trước khi nó được lưu vào cơ sở dữ liệu.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Cho phép nhà phát triển thay đổi URL nâng cấp để mở khóa
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Xác định có nên sử dụng ánh xạ hay không
+- [wu_username_from_email](./Filters/wu_username_from_email) — Lọc tên người dùng khách hàng mới.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Cho phép nhà phát triển thay đổi thông báo về giới hạn người dùng membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Cho phép nhà phát triển thêm các thư mục bổ sung vào danh sách có thể thay thế.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Lọc sub_commands nào được bật cho thực thể này.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Chúng tôi kiểm tra ba mẫu khi cố xác định nơi có thể chèn các hằng số của chúng tôi:

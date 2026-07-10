@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
 - Plugin Ultimate Multisite (aktif)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file addon ke direktori `/wp-content/plugins/` Anda
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
 3. Konfigurasi pengaturan addon di admin jaringan
 
-## Pengembangan
+## Pengembangan {#development}
 
-### Pengaturan Awal
+### Pengaturan Awal {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktur Proyek
+### Struktur Proyek {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Aturan modernisasi kode
 ```
 
-### Pengujian
+### Pengujian {#testing}
 
 Addon ini mencakup kerangka kerja pengujian yang komprehensif:
 
@@ -79,44 +79,44 @@ Addon ini mencakup kerangka kerja pengujian yang komprehensif:
 - **Test Coverage**: Dikonfigurasi untuk melacak cakupan kode (*code coverage*)
 - **Multisite Testing**: Pengujian dijalankan dalam lingkungan multisite
 
-### Standar Kode
+### Standar Kode {#code-standards}
 
 - **WordPress Coding Standards**: Diterapkan melalui PHPCS
 - **Kompatibilitas PHP 7.4+**: Mendukung fitur PHP modern
 - **Analisis Statis**: Integrasi PHPStan untuk pemeriksaan tipe data (*type checking*)
 - **Modernisasi Kode**: Aturan Rector untuk peningkatan PHP
 
-### Sistem Build
+### Sistem Build {#build-system}
 
 - **Pemrosesan Aset**: Minifikasi untuk file CSS/JS
 - **Terjemahan**: Pembuatan file POT
 - **Pengemasan**: Pembuatan arsip untuk distribusi
 - **Mode Pengembangan**: Aset yang belum diminifikasi untuk *debugging*
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ini mendukung berbagai opsi konfigurasi yang dapat diakses melalui antarmuka admin jaringan.
 
-## Hooks dan Filter
+## Hooks dan Filter {#hooks-and-filters}
 
-### Actions (Aksi)
+### Actions (Aksi) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Dipicu setelah inisialisasi addon
 - `ultimate-multisite-ai-site-builder_loaded` - Dipicu setelah semua file addon dimuat
 
-### Filters (Filter)
+### Filters (Filter) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Memodifikasi pengaturan addon
 - `ultimate-multisite-ai-site-builder_enabled` - Menimpa status aktif/nonaktif addon
 
-## Lisensi
+## Lisensi {#license}
 
 Addon ini dilisensikan di bawah GPL v3 atau yang lebih baru.
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk dukungan dan dokumentasi, kunjungi [MultisiteUltimate.com](https://multisiteultimate.com)
-## Catatan Perubahan
+## Catatan Perubahan {#changelog}
 
 - Versi 1.0.1 (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.
 

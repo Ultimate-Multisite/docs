@@ -1,0 +1,116 @@
+---
+title: Tutor බහු-අඩවි අනුකූලතාව
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+බහු-අඩවි පරිසරවල Tutor LMS සඳහා ගැළපුම් නිවැරදි කිරීම් එක් කරන WordPress ප්ලගිනයකි.
+
+## විස්තරය {#description}
+
+මෙම ප්ලගිනය WordPress බහු-අඩවි ජාලවල Tutor LMS ධාවනය කිරීම සඳහා අවශ්‍ය ගැළපුම් නිවැරදි කිරීම් සපයයි. එය පරිශීලක ලියාපදිංචි කිරීම, උපදේශක කළමනාකරණය, පාඨමාලා සීමාවන්, සහ අනෙකුත් බහු-අඩවි-විශේෂ ක්‍රියාකාරකම් හසුරුවයි.
+
+## විශේෂාංග {#features}
+
+- **දත්ත සමුදා වගු කළමනාකරණය**: බහු-අඩවි විදේශ යතුරු සීමා නිසා අසාර්ථක වන අස්ථානගත Tutor LMS වගු ස්වයංක්‍රීයව හඳුනාගෙන සාදයි
+- **බහු-අඩවි පරිශීලක ලියාපදිංචිය**: ජාල අඩවි හරහා පරිශීලක ලියාපදිංචිය කළමනාකරණය සඳහා අභිරුචි AJAX හැසිරවීම්
+- **උපදේශක භූමිකා කළමනාකරණය**: බහු-අඩවි පරිසරවල උපදේශක භූමිකා ස්වයංක්‍රීයව පැවරීම සහ කළමනාකරණය
+- **පාඨමාලා සීමාවන්**: අඩවි සැලසුම් මත පදනම්ව පාඨමාලා සහ ෆනල් නිර්මාණ සීමා කළමනාකරණය සඳහා Ultimate Multisite සමඟ ඒකාබද්ධ කිරීම
+- **අභිරුචි පරිපාලක දසුන්**: බහු-අඩවි ගැන දැනුවත් උපදේශක ලැයිස්තුව සහ කළමනාකරණ අතුරුමුහුණත
+- **පරිපාලක මෙවලම්**: ජාල සහ අඩවි පරිපාලකයන් සඳහා දත්ත සමුදා කළමනාකරණ අතුරුමුහුණත
+
+## අවශ්‍යතා {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS ප්ලගිනය (`Requires Plugins` header හරහා ස්වයංක්‍රීයව බලාත්මක කෙරේ)
+- WordPress බහු-අඩවි ස්ථාපනය
+- Ultimate Multisite ප්ලගිනය (පාඨමාලා සීමා ක්‍රියාකාරකම සඳහා)
+
+## ස්ථාපනය {#installation}
+
+1. ප්ලගිනයේ ගොනු `/wp-content/plugins/tutor-multisite-compatibility/` වෙත උඩුගත කරන්න
+2. Tutor LMS ස්ථාපනය කර සක්‍රිය කර ඇති බව තහවුරු කරන්න
+3. WordPress තුළ 'ප්ලගින' මෙනුව හරහා ප්ලගිනය සක්‍රිය කරන්න
+4. ප්ලගිනය Tutor LMS සමඟ ස්වයංක්‍රීයව ඒකාබද්ධ වනු ඇත
+
+## ගොනු ව්‍යුහය {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## MU plugin වෙතින් ගෙන ආ ක්‍රියාකාරකම් {#functionality-moved-from-mu-plugin}
+
+මෙම ප්ලගිනයේ කලින් `wp-content/mu-plugins/daves.php` තුළ තිබූ ක්‍රියාකාරකම් ඇතුළත් වේ:
+
+- පාඨමාලා තත්ත්වය වෙනස් කිරීමේ සීමාවන්
+- පාඨමාලා නිර්මාණ සීමාවන්
+- CartFlows ඒකාබද්ධ කිරීම සහ සීමා
+- Tutor උපදේශක භූමිකා කළමනාකරණය
+- බහු-අඩවි පරිශීලක ලියාපදිංචිය හැසිරවීම
+- පාඨමාලා නිෂ්පාදන ID දර්ශනය
+
+## දත්ත සමුදා කළමනාකරණය {#database-management}
+
+### ගැටලුව {#the-problem}
+
+WordPress බහු-අඩවි පරිසරවල, පරිශීලක වගුවට විදේශ යතුරු සීමා ඇති වගු සඳහා Tutor LMS වගු නිර්මාණය අසාර්ථක වේ. මෙය සිදුවන්නේ:
+
+- අඩවි-විශේෂ වගු `wp_2_tutor_carts` වැනි උපසර්ග භාවිතා කරයි
+- විදේශ යතුරු `wp_2_users` වෙත යොමු කරයි (එය නොපවතී)
+- සැබෑ පරිශීලක වගුව `wp_users` වේ (ජාලය පුරා බෙදාගත්)
+
+### විසඳුම {#the-solution}
+
+මෙම ප්ලගිනය ස්වයංක්‍රීයව:
+
+1. **අස්ථානගත වගු හඳුනාගනී**: විදේශ යතුරු සීමා නිසා නිර්මාණය අසාර්ථක වූ වගු පරීක්ෂා කරයි
+2. **නිවැරදි යොමු සහිත වගු සාදයි**: නිසි පරිශීලක වගු නාමය භාවිතා කරයි (බහු-අඩවි තුළ `wp_users`)
+3. **විවිධ අවස්ථා හසුරුවයි**:
+   - ප්ලගිනය සක්‍රිය කිරීම/නැවත සක්‍රිය කිරීම
+   - ජාලය තුළ නව අඩවියක් නිර්මාණය කිරීම
+   - පරිපාලක අතුරුමුහුණත හරහා වගු අතින් පරීක්ෂා කිරීම
+
+### බලපෑමට ලක්වන වගු {#affected-tables}
+
+- `tutor_coupon_usages` - පරිශීලක වගුවට විදේශ යතුරක් අඩංගු වේ
+- `tutor_carts` - පරිශීලක වගුවට විදේශ යතුරක් අඩංගු වේ
+- `tutor_notification_preferences` - පරිශීලක වගුවට විදේශ යතුරක් ඇති TutorPro වගුව
+
+### පරිපාලක අතුරුමුහුණත {#admin-interface}
+
+දත්ත සමුදා කළමනාකරණ මෙවලම් වෙත මෙතැනින් පිවිසෙන්න:
+
+- **ජාල පරිපාලක**: සැකසුම් → Tutor Multisite DB
+- **අඩවි පරිපාලක**: මෙවලම් → Tutor Multisite DB
+
+අතුරුමුහුණත ඔබට මෙවැනි දේ කිරීමට ඉඩ දෙයි:
+- සියලු අඩවි හරහා අස්ථානගත වගු බලන්න
+- වගු නිර්මාණය අතින් ආරම්භ කරන්න
+- දත්ත සමුදා වින්‍යාසය පරීක්ෂා කරන්න
+- සවිස්තර තත්ත්ව තොරතුරු බලන්න
+
+## සහාය {#support}
+
+මෙම ප්ලගිනය විශේෂයෙන් KursoPro වේදිකාව සඳහා නිර්මාණය කර ඇත. තාක්ෂණික සහාය සඳහා, සංවර්ධන කණ්ඩායම අමතන්න.

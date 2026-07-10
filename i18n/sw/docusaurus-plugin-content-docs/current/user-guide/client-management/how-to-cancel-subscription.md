@@ -3,7 +3,7 @@ title: Jinsi ya Kufuta Usajili
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# Nawezaje kufuta usajili wangu?
+# Nawezaje kufuta usajili wangu? {#how-can-i-cancel-my-subscription}
 
 Ukiwa na leseni ya Ultimate Multisite, unaweza kufuta upyaji wake wakati wowote unaotaka. Fuata tu hatua zilizo hapa chini:
 

@@ -1,0 +1,144 @@
+---
+title: Chinobatanidza cheAI chepamusoro-soro cheWebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM inounza AI inference yemubrowser chaiyo kunetiweki yako yeWordPress multisite. Inomhanyisa mamodheru makuru emitauro zvizere mubrowser ichishandisa WebLLM neMLC engine — hapana API keys, hapana kufona kwekunze, hapana data rinobuda pamudziyo wemushandisi.
+
+## Zvinhu Zvikuru {#key-features}
+
+- **Inference iri kudivi rebrowser**: LLM inomhanya munzvimbo yemubrowser yemushanyi kuburikidza neWebLLM/MLC — hapana server GPU inodiwa
+- **Chat widget inoyangarara**: Vashandisi vakapinda vanogona kupa prompt kuLLM iri kudivi rebrowser zvakananga kubva kufront end
+- **Chiratidzo chemamiriro muadmin-bar**: Mamiriro enguva chaiyo eWebLLM engine anooneka muWordPress admin bar
+- **SharedWorker runtime**: Matabhu akawanda ebrowser anogovana GPU session imwe chete panzvimbo pekukwikwidzana pazviwanikwa zveGPU
+- **apiFetch middleware**: Zvikumbiro zveWordPress REST zvinoenderana neAI Client SDK pattern zvinotungamirwa pachena kuenda kuWebLLM broker yemunzvimbo — hapana loopback HTTP round-trip
+- **UI yezvirongwa zvewidget**: Zvirongwa zvepaneru yeConnector zvekubatidza kana kudzima chat widget uye kugadzirisa maitiro eauto-prompt
+- **IndexedDB cache**: Kudhawunirodha kwemamodel weight kunopona maCDN redirect anoputsa nzira yeCache API yakajairika
+- **Kubatanidzwa kwewpai filter**: Inobatana nefilter ye`wpai_preferred_text_models` kuitira kuti ficha yeAI Experiments itungamirwe kuengine yemubrowser kana yagadziriswa
+
+## Zvinodiwa {#requirements}
+
+- WordPress 5.3 kana yepamusoro
+- PHP 7.4 kana yepamusoro
+- Ultimate Multisite plugin (inoshanda)
+- Browser ine WebGPU support (Chrome 113+, Edge 113+, kana Firefox Nightly ine WebGPU yakabatidzwa)
+
+## Kuiswa {#installation}
+
+1. Isa mafaera eaddon mudhairekitori rako re`/wp-content/plugins/`
+2. Batidza plugin kuburikidza nemenyu ye'Plugins' muWordPress
+3. Enda ku **Ultimate Multisite → AI Connector** kuti ugadzirise addon
+
+## Chat Widget Inoyangarara {#floating-chat-widget}
+
+Chat widget inoyangarara inobvumira chero mushandisi akapinda kuti adyidzane neLLM iri kudivi rebrowser zvakananga kubva kufront end yako, pasina kubva papeji yavari pairi.
+
+### Zvainoita {#what-it-does}
+
+Kana yabatidzwa, icon yechat inooneka mukona yepeji rega rega refont-end kune vashandisi vakapinda. Kudzvanya icon kunovhura paneru yechat umo mushandisi anogona kunyora maprompt uye kugamuchira mhinduro kubva kuWebLLM model iri kumhanya munzvimbo. Nekuti model inomhanya zvizere mubrowser, mhinduro dzakavanzika uye hadzibatanidzi chero kugadziriswa kudivi resever.
+
+### Chiratidzo Chemamiriro muAdmin-Bar {#admin-bar-status-indicator}
+
+WordPress admin bar inosanganisira chiratidzo chemamiriro chinoratidza mamiriro aripo eWebLLM engine:
+
+| Mamiriro | Zvinoreva |
+|--------|---------|
+| **Loading** | MLC engine iri kutanga kana kudhawunirodha mamodel weight |
+| **Ready** | Model yatakurwa uye iripo kushandiswa pa inference |
+| **Idle** | Engine yatakurwa asi tab yeSharedWorker haisi kushanda |
+| **Error** | Engine yatadza kutanga — tarisa browser console kuti uwane ruzivo |
+
+Chiratidzo chinovandudzwa munguva chaiyo pasina kuda reload yepeji.
+
+### Maitiro Ekubatidza kana Kudzima Widget {#how-to-enable-or-disable-the-widget}
+
+1. Enda ku **Ultimate Multisite → AI Connector** muadmin yenetiweki
+2. Tsvaga paneru ye **Connector**
+3. Batidza kana kudzima **Enable floating chat widget**
+4. Chengetedza zvirongwa
+
+Widget inogona zvakare kubatidzwa kana kudzimiwa pasaiti imwe neimwe kubva kuadmin yesaiti pachayo kana network administrator apa kugona ikoko.
+
+## Zvirongwa zveWidget {#widget-settings}
+
+Paneru yeConnector mu **Ultimate Multisite → AI Connector** ine zvirongwa zvinotevera zvechat widget inoyangarara:
+
+### Batidza Floating Chat Widget {#enable-floating-chat-widget}
+
+Inobatidza kana kudzima chat widget kunetiweki yose. Kana yadzimwa, widget haioneki pane chero peji refont-end, zvisinei nebasa remushandisi.
+
+**Default:** Yakadzima
+
+### Maitiro eAuto-Prompt {#auto-prompt-behaviour}
+
+Inodzora kana chat widget ichitumira prompt otomatiki kana mushandisi kuivhura.
+
+| Sarudzo | Maitiro |
+|--------|-----------|
+| **Disabled** | Widget inovhura chat isina chinhu — mushandisi anonyora prompt yake |
+| **Page context** | Widget inovhura iine prompt yakatozadzwa zvichienderana nemusoro uye zvemukati zvepeji razvino |
+| **Custom prompt** | Widget inovhura iine custom prompt yaunotsanangura mufield iri pazasi |
+
+Kana yaiswa ku **Custom prompt**, imwe field yemavara inooneka kwaunogona kuisa mavara eprompt yeDefault. Inotsigira mavariable etemplate ari nyore:
+
+- `{site_name}` — zita resaiti yazvino
+- `{page_title}` — musoro wepeji razvino
+- `{user_display_name}` — zita rinoratidzwa remushandisi akapinda
+
+**Default:** Disabled
+
+## SharedWorker Runtime {#sharedworker-runtime}
+
+Version 1.1.0 inounza SharedWorker runtime yeMLC engine. Pakutanga, tabhu imwe neimwe yebrowser yaishandisa WebLLM yaitakura instance yayo yemodel, ichikwikwidzana paGPU memory uye ichikonzera nyaya dzekushanda pamidziyo ine VRAM shoma.
+
+NeSharedWorker runtime, tabhu imwe inoshanda sehost yeengine. Mamwe matabhu ese anotaurirana neinstance imwe chete iyoyo kuburikidza nemessage channel yeworker. Mhedzisiro:
+
+- GPU session imwe chete inogovaniswa pamatabhu ese akavhurwa
+- Mhinduro dzinokurumidza kana model yatakurwa (hapana kutanga kunodzokororwa)
+- Kushandiswa kwememory yepamusoro kushoma pamudziyo
+
+SharedWorker yakajeka kuvashandisi. Chiratidzo chemamiriro muadmin-bar chinogara chichiratidza mamiriro eengine yakagovaniswa, kwete tabhu imwe neimwe.
+
+## apiFetch Middleware {#apifetch-middleware}
+
+Addon inoisa `apiFetch` middleware inobata zvikumbiro zveWordPress REST API zvinoenderana neAI Client SDK pattern. Panzvimbo pekuita chikumbiro cheloopback HTTP kusever, zvikumbiro izvi zvinotungamirwa zvakananga kuWebLLM broker yemunzvimbo iri kumhanya muSharedWorker.
+
+Izvi zvinoreva kuti maplugin nematheme anoshandisa WordPress `apiFetch` API yakajairika kufonera maendpoint eAI achabatsirwa otomatiki nemodel iri kudivi rebrowser kana iripo, pasina shanduko dzekodhi dzinodiwa.
+
+## Hooks nemaFilters {#hooks-and-filters}
+
+### Filters {#filters}
+
+- `wpai_preferred_text_models` — Nyoresa injini yeWebLLM yemubhurawuza semuenzaniso wemavara unofarirwa. Wedzero inobatana nefirita iyi otomatiki kana injini yagadziriswa uye iripo.
+- `ultimate_webllm_widget_enabled` — Pfuura mamiriro ekuti widget yakagoneswa kumushandisi kana mamiriro chaiwo. Dzosa `true` kana `false`.
+- `ultimate_webllm_auto_prompt` — Chinja mavara eauto-prompt asati atumirwa kuwidget. Inogamuchira tambo yeprompt uye chinhu chazvino che`WP_Post`.
+
+## Kugadzirisa matambudziko {#troubleshooting}
+
+### Widget yekutaura haioneki {#the-chat-widget-does-not-appear}
+
+- Simbisa kuti mushandisi apinda — widget inongoratidzwa kuvashandisi vakasimbiswa
+- Tarisa kuti **Gonesa floating chat widget** yakabatidzwa mupani yeConnector
+- Simbisa kuti bhurawuza remushandisi rinotsigira WebGPU (ona Zvinodiwa pamusoro)
+
+### Chiratidzo cheadmin-bar chinoratidza "Kanganiso" {#the-admin-bar-indicator-shows-error}
+
+Vhura browser developer console (F12) uye tsvaga zvikanganiso zvine chekuita neWebLLM. Zvikonzero zvinowanzoitika:
+
+- Bhurawuza haritsigiri WebGPU
+- Kudhawunirodha model weights kwakundikana — tarisa kubatana kwenetiweki uye edza kubvisa cache yeIndexedDB mumaturusi evagadziri ebhurawuza (Application → IndexedDB)
+- Kuwedzerwa kwebhurawuza kuri kuvhara SharedWorker
+
+### Model weights anodhawunirodha nguva dzose {#model-weights-download-every-time}
+
+Wedzero inoshandisa IndexedDB sebackend ye cache kuti ive nechokwadi chekuti model weights anoramba aripo kunyange paine CDN redirects. Kana weights achidhawunirodhwazve pakushanya kwese, tarisa kuti IndexedDB haisi kubviswa negadziriro yekuvanzika yebhurawuza kana kuwedzerwa.
+
+## Nhoroondo yeshanduko {#changelog}
+
+Ona [Nhoroondo yeshanduko](./changelog) kuti uwane nhoroondo izere yeshanduro.

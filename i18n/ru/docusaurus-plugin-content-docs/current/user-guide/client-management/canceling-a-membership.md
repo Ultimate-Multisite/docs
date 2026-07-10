@@ -1,31 +1,32 @@
 ---
 title: Отмена членства
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Отмена подписки (v2)
+# Отмена членства (v2) {#canceling-a-membership-v2}
 
-_**ВАЖНОЕ ЗАМЕЧАНИЕ: Эта статья относится к версии Ultimate Multisite 2.x.**_
+_**ВАЖНОЕ ПРИМЕЧАНИЕ: эта статья относится к Ultimate Multisite версии 2.x.**_
 
-Отмена подписки со стороны ваших клиентов довольно проста.
+Отмена членства на стороне ваших клиентов выполняется довольно просто.
 
-Если ваш пользователь хочет отменить свою подписку, он должен сначала перейти на страницу ****Аккаунт****.
+Если ваш пользователь хочет отменить свое членство, сначала ему следует открыть свою страницу ****Account****.
 
-Там они должны перейти в раздел **Danger Zone** и нажать **Delete Account**.
+Там ему нужно перейти в **Danger Zone** и нажать **Delete Account**.
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Danger Zone на странице Account с кнопкой Delete Account](/img/account-page/danger-zone.png)
 
-Модуль откроется с запросом подтверждения. Они должны включить опцию **Confirm Account Deletion** и нажать **Delete Account**.
+Откроется модуль с запросом подтверждения. Ему нужно включить опцию **Confirm Account Deletion** и нажать **Delete Account**.
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Диалог Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Это разлоггирует их с сайта и отменит их подписку в вашей сети, а также удалит их сайт из вашей сети.
+Это выведет его из сайта и отменит его членство в вашей сети, а также удалит его сайт из вашей сети.
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Выход из системы после удаления Account](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![Подтверждение отмены членства](/img/account-page/membership-canceled.png)
 
-**Важно:** Обратите внимание, что это действие не исключит клиента из вашей сети, поскольку клиент может иметь более одной подписки или ни одной подписки, привязанной к нему.
+**Важно:** обратите внимание, что это действие не исключит клиента из вашей сети, поскольку у клиента может быть более одного членства или не быть ни одного членства, связанного с ним.
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![Клиент все еще существует в сети после отмены](/img/admin/customer-after-cancel.png)
+
+![Клиент без активных членств](/img/admin/memberships-customer-empty.png)

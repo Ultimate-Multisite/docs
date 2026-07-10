@@ -3,11 +3,11 @@ title: Izila Ndu-Ndu
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Isolation Multi-Tenancy
+# Isolation Multi-Tenancy {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 ndụzi (version) support database na filesystem isolation ọ bụla maka tenants ndị nwere sovereign. A na-agbanwe data tenant dị n'ebe dị n'ọchị, onaghị agbanwe provisioning network, billing, na administration.
 
-## Isolation strategy
+## Isolation strategy {#isolation-strategy}
 
 Jiri sovereign isolation maka customers ndị na-enwe mma separation data, storage filesystem dị n'ọchị, ma ọ bụ host boundary dị n'ọchị.
 
@@ -18,7 +18,7 @@ Ma ogni tenant sovereign ga-anọcha:
 - A tenant registry entry nke na-map site ahụ so na database ahụ, root path, hostname, na isolation model.
 - A migration verification result mburu tenant ahụ ga-anọchị live.
 
-## Database host binding
+## Database host binding {#database-host-binding}
 
 Version 1.2.0 na-agbanwe ihe a na-enwe default same-machine host binding behavior maka sovereign installs. Ihe dị n'ebe dị n'ọchị dị ka `localhost` na-agbanwe nke ọma, onye Bedrock, FrankenPHP, na containerized WordPress ga-anọchị permissions ma na-verify so na host string MySQL na-enwe.
 
@@ -31,11 +31,11 @@ Mgbe ị na-configure tenant sovereign:
 
 Ọ bụrụ na verification reports grant failures, jiri tenant DB user grants na-agbanwe na host binding nke a na-configure. User na-agbaje maka `user@localhost` dị iche na `user@127.0.0.1` ma ọ bụ `user@%`.
 
-## Filesystem root
+## Filesystem root {#filesystem-root}
 
 Gốc tenant (tenant root) phải ổn định sau khi khởi động lại và triển deployment. Hãy tránh dùng các đường dẫn mount tạm thời. Pentru cài đặt kiểu Bedrock, hãy xác nhận rằng gốc tenant trỏ đến thư mục web WordPress mà bootstrap của tenant mong đợi, không chỉ là gốc dự án.
 
-## Thứ tự cấp phát (Provisioning order)
+## Thứ tự cấp phát (Provisioning order) {#provisioning-order}
 
 Đối với các tenant chủ quyền mới, hãy sử dụng thứ tự này:
 
@@ -49,7 +49,7 @@ Gốc tenant (tenant root) phải ổn định sau khi khởi động lại và 
 
 Thứ tự này giúp ngăn chặn việc các tenant bị cô lập một phần nhận lưu lượng truy cập trước khi trình ghi cơ sở dữ liệu, người dùng và hệ thống tệp đã sẵn sàng.
 
-## Luồng quản lý khách hàng cho khách hàng chủ quyền (Sovereign customer management flows)
+## Luồng quản lý khách hàng cho khách hàng chủ quyền (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 giữ các hành động quản lý khách hàng trên trang chính khi chế độ chủ quyền được bật. Một tenant vẫn có thể chạy như một cài đặt WordPress biệt lập, nhưng các hành động hướng đến khách hàng phụ thuộc vào thanh toán mạng, tư cách thành viên hoặc dữ liệu tài khoản dùng chung nên gửi khách hàng quay lại trang chính thay vì cố gắng hoàn tất hành động bên trong thời gian chạy của tenant.
 

@@ -4,11 +4,11 @@ title: Filtro - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filtro: auth_cookie_expiration
+# Filtro: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Filtra la duración del período de expiración de la cookie de autenticación.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtra la duración del período de expiración de la cookie de autenticación.
 | $user_id | `int` | ID de usuario. |
 | $remember | `bool` | Si se recuerda el inicio de sesión del usuario. Por defecto falso. |
 
-### Desde
+### Desde {#since}
 
 - 2.8.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) en la línea 52

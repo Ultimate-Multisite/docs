@@ -1,22 +1,22 @@
 ---
 title: Ho-tsoalo (hPanel) Ho-tshegofatso
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Integration ho Hostinger (hPanel)
+# Integration ho Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Tsela
+## Tsela {#overview}
 
 Hostinger ke mofuta o le web hosting a le fa'aaloa a le fesoasoane, a le na le panel a le fa'aaloa a le modern a le hPanel. Le Ultimate Multisite integration a le fesoasoane a le automatic domain syncing ho Ultimate Multisite a le fesoasoane a le hPanel, a le a le automatically manage domain mappings a subdomains a le a le WordPress admin mo le a.
 
-## Fa'aaloa
+## Fa'aaloa {#features}
 
 - Automatic addon domain creation i hPanel
 - Automatic subdomain creation i hPanel (mo le subdomain multisite installations)
 - Domain removal fa le mappings a le a deleted
 - Seamless integration ma le API a le fesoasoane a le domain management o le hPanel
 
-## Asofa
+## Asofa {#requirements}
 
 Mo le a le automatic integration ho Hostinger, o le a le mana'a:
 
@@ -35,9 +35,9 @@ Mo le a le fesoasoane, o le a le fa'aaloa:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API endpoint
 ```
 
-## Asofa a le Setup
+## Asofa a le Setup {#setup-instructions}
 
-### 1. Fa'aaloa Le Hostinger API Token
+### 1. Fa'aaloa Le Hostinger API Token {#1-generate-your-hostinger-api-token}
 
 1. Log in i a hostinger account a le access i hPanel
 2. La i **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // Default API e
    - Subdomain management
 6. Copy le token a le generated a le store a le fesoasoane
 
-### 2. Fa'aaloa Le Account ID
+### 2. Fa'aaloa Le Account ID {#2-find-your-account-id}
 
 1. I hPanel, la i **Account Settings** → **Account Information**
 2. Le Account ID o le displayed a le page a
 3. Copy a le ID a le save a le next step
 
-### 3. A le Constants a `wp-config.php`
+### 3. A le Constants a `wp-config.php` {#3-add-constants-to-wp-configphp}
 
 Add le constants a le file a le `wp-config.php`:
 
@@ -69,7 +69,7 @@ Ha se ho u tlobo le API endpoint e fapanoni, o ka fetola:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Fana Hua Ho I-tshwaro (Enable the Integration)
+### 4. Fana Hua Ho I-tshwaro (Enable the Integration) {#4-enable-the-integration}
 
 1. I WordPress admin ea, etsa **Ultimate Multisite > Settings** e fihla.
 2. La ka tabetso **Domain Mapping** e fihla.
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Fana ha integration ea **Hostinger (hPanel)**.
 5. Ka fetola **Save Changes**.
 
-## Ena Eona E tlobo (How It Works)
+## Ena Eona E tlobo (How It Works) {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Ha ntho o fetola domain ka Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Ha ntho o fetola domain ka Ultimate Multisite:
 2. Domain ea e fetola ho a fihla ka directory ea hau ea root
 3. Ha u fetola mapping ea domain, integration ea e fetola addon domain ea ho hPanel automatically
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Ha ntho o fetola subdomain multisite installations, ha site se tlobo:
 
@@ -95,7 +95,7 @@ Ha ntho o fetola subdomain multisite installations, ha site se tlobo:
 2. E fana request ea Hostinger API ea ho fana subdomain
 3. Subdomain ea e fetola ho a fihla ka directory ea hau ea root
 
-## Litsoeng E Hlalosang (Important Notes)
+## Litsoeng E Hlalosang (Important Notes) {#important-notes}
 
 - Integration ea e fetola REST API ea Hostinger ea ho buisana le hau
 - API token ea hau e hloka permissions e tlobo le management ea domain le subdomain
@@ -104,9 +104,9 @@ Ha ntho o fetola subdomain multisite installations, ha site se tlobo:
 - API requests e fana ka amanaga ka HTTPS
 - Ke fetola API token ea hau ho amanaga le ha fetola ka lina.
 
-## Ho Hlalosa Matlha (Troubleshooting)
+## Ho Hlalosa Matlha (Troubleshooting) {#troubleshooting}
 
-### Masimo a Buisana le API (API Connection Issues)
+### Masimo a Buisana le API (API Connection Issues) {#api-connection-issues}
 
 - Baile hore ke token ya API e ntshwago le e ne e ntshwago
 
@@ -116,7 +116,7 @@ Ha ntho o fetola subdomain multisite installations, ha site se tlobo:
 
 - Baile hore account ya Hostinger ya hau e ntshwago le e ntse le teng
 
-### Domain E Ntse Le A Ntswe
+### Domain E Ntse Le A Ntswe {#domain-not-added}
 
 - Baile hore o tle ba logs ea Ultimate Multisite ho bona sebopepeho sa tsela
 - Baile hore o tsamaea hore domain e ntse a fana ka account ya hau ya Hostinger
@@ -124,17 +124,17 @@ Ha ntho o fetola subdomain multisite installations, ha site se tlobo:
 
 - Baile hore o tsamaea hore domain e ntse a fana ka nameservers ea hau ya Hostinger
 
-### Moruo oa SSL Certificate
+### Moruo oa SSL Certificate {#ssl-certificate-issues}
 
 - Ho hlokompha ho ba le tsela ea ho fana ka SSL certificate, integration e ntse e na le sebopepeho
 - Hostinger haholo e fana ka SSL certificates e ntlha ka AutoSSL
 - O ka mane SSL certificates ka lina hPanel ka **SSL/TLS**
 - Ka mofuta o mong, u sebelisa Let's Encrypt le tsela ea AutoSSL ea Hostinger
 
-## Ho thusa
+## Ho thusa {#support}
 
 Ho ba le bonolo haholo le integration ya Hostinger, u ka tsamaea:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

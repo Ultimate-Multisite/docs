@@ -1,40 +1,46 @@
 ---
-title: Cyflwyniad ystyriedau
+title: Cyfeirnod Gosodiadau
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Cyflenau'r Cwilioedd
+# Cyfeirnod Gosodiadau {#settings-reference}
 
-Mae'r dudalen hwn yn gwylio'r setegau sy'n effeithio'r gweithredoedd dyddiol a newidiadau rhywfaint yn Ultimate Multisite.
+Mae’r dudalen hon yn olrhain gosodiadau sy’n effeithio ar weinyddu o ddydd i ddydd a newidiadau ymddygiad diweddar yn Ultimate Multisite.
 
-## Mae'r Opsiadau Eraill
+## Opsiynau Eraill {#other-options}
 
-Mae'r ardal **Other Options** yn dangos o dan **Ultimate Multisite > Settings > Login & Registration**.
+Mae’r ardal **Opsiynau Eraill** yn ymddangos o dan **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setedig | Disgrifiad |
+| Gosodiad | Disgrifiad |
 |---|---|
-| **Enable Jumper** | Cynalwch y tool cyflym navbiaeth Jumper yn y ardal admin. Defnyddiwch ei i gwmpasu'n dros ymlaen i gyfrifau Ultimate Multisite, oifau cyd-gynllunio (network objects), a destynau admin sydd wedi'u chymryd. Defnyddiwch ei os oes angen i'r cyffredinol hwn yn gweld. |
+| **Galluogi Jumper** | Yn dangos offeryn llywio cyflym Jumper yn yr ardal weinyddu. Defnyddiwch ef i neidio’n uniongyrchol i sgriniau Ultimate Multisite, gwrthrychau rhwydwaith, a chyrchfannau gweinyddu â chymorth. Analluogwch ef os nad ydych am i’r llwybr byr hwn fod yn weladwy. |
 
-## Cyflwyniad o Erru a Telemetrefau
+## Adrodd am wallau a thelemetreg {#error-reporting-and-telemetry}
 
-Mae setedig cyflwyniad o erru blaen wedi cael ei llywio o'r dudalen setegau. Mae telemetrefau anghyffredol (anonymous telemetry) wedi'i torri, ac nid oes ychwaneg UI i'w chynllunio.
+Mae’r gosodiad blaenorol i optio i mewn i adrodd am wallau wedi’i dynnu o’r dudalen gosodiadau. Mae telemetreg ddienw wedi’i hanalluogi ac nid oes togl UI i’w galluogi.
 
-Os ydych chi'n cadw runbooks neu llwybrachau ar gyfer y dudalen setegau, talybwch y cyfeiriadau i'r ffordd cyflwyniad o erru uchelol (error-reporting opt-in) yn ymlaen felly nid yw'r admin yn chwilio am setedig sydd wedi cael ei torri.
+Os ydych yn cynnal runbooks mewnol neu luniau sgrin ar gyfer y dudalen gosodiadau, tynnwch gyfeiriadau at yr hen faes optio i mewn i adrodd am wallau fel nad yw gweinyddwyr yn chwilio am osodiad nad yw’n bresennol mwyach.
 
-## Setedau Cyflwyniad/Cyffurfio (Import/Export settings)
+## Gosodiadau mewnforio/allforio {#importexport-settings}
 
-Mae'r tab **Import/Export** yn disgrifio beth mae'n reoli hi ac yn cysylltu'n cyflwyniad i **Ultimate Multisite > Site Export** ar gyfer archwaith gwaith a rheol. Defnyddiwch y tab setedig ar gyfer cyflwyniad/cyffurfio, defnyddiwch **Tools > Export & Import** ar gyfer y ffordd cyffurfio/cyflwyniad o'r un-site, ac defnyddiwch y tool Site Export pan oes angen i chi archwaith Export rheol yn llawn.
+Mae’r tab gosodiadau **Mewnforio/Allforio** yn disgrifio pa osodiadau y mae’n eu rheoli ac yn cysylltu’n uniongyrchol â **Ultimate Multisite > Site Export** ar gyfer archifau site a rhwydwaith. Defnyddiwch y tab gosodiadau ar gyfer ffurfweddiad mewnforio/allforio, defnyddiwch **Tools > Export & Import** ar gyfer llif gwaith allforio/mewnforio un-site, a defnyddiwch yr offeryn Site Export pan fydd angen archif Network Export lawn arnoch.
 
-## Setedau Cyflenwyr AI (AI provider connector settings)
+## Rhybudd balans Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Mae setedau cyflenwyr AI yn dangos yr adeiladau OAuth sydd wedi'u chymryd:
+Pan fydd yr addon Domain Seller wedi’i gysylltu â HostAfrica, mae gweinyddwyr rhwydwaith bellach yn gweld rhybudd balans isel y gellir ei ddiystyru pan fydd balans y cyfrif ailwerthwr yn rhy isel ar gyfer prosesu cofrestru neu adnewyddu parthau yn ddibynadwy.
 
-| Cyflennydd | Ffylfach y cyflwyniad |
+Triniwch yr hysbysiad hwn fel rhybudd gweithredol: ychwanegwch arian at falans ailwerthwr HostAfrica cyn derbyn mwy o gofrestriadau parth taledig, yna dychwelwch i osodiadau Domain Seller neu’r sgrin monitro parthau i gadarnhau y gall cofrestriadau ac adnewyddiadau barhau fel arfer.
+
+## Gosodiadau cysylltydd darparwr AI {#ai-provider-connector-settings}
+
+Mae gosodiadau cysylltydd darparwr AI bellach yn dangos dim ond y pyllau Account OAuth â chymorth:
+
+| Darparwr | Llif gosod |
 |---|---|
-| **Anthropic Max** | Cysylltu un neu fwy o cyfathregau Anthropic Max gyda'r botell OAuth. Defnyddiwch y ffordd OAuth manwl (manual) pan nad yw'r cyd-ddiffynol (sandboxed browser) yn gallu gwblhau'r redirect yn awtomatig. |
-| **OpenAI ChatGPT/Codex** | Cysylltu cyfathregau ChatGPT trwy ffordd y samein OAuth. Gall y gweithgareddau a chynllunwyd gan y connector defnyddio tool calls o'r ChatGPT Codex ar ôl cysylltu'r cyfathreg. |
-| **Google AI Pro** | Cysylltu cyfathregau Google AI Pro trwy OAuth, yna atal (refresh) y connector pan nad yw'r rheol cyfathreg yn cyflogi'n gyflym. |
+| **Anthropic Max** | Cysylltwch un neu fwy o gyfrifon Anthropic Max gyda’r botwm OAuth. Defnyddiwch y dewis wrth gefn OAuth â llaw pan na all porwr wedi’i flwch tywod gwblhau’r ailgyfeirio’n awtomatig. |
+| **OpenAI ChatGPT/Codex** | Cysylltwch gyfrifon ChatGPT trwy’r un llif gwaith pwll OAuth. Gall gweithrediadau â chymorth y cysylltydd ddefnyddio galwadau offer ChatGPT Codex ar ôl i’r cyfrif gael ei gysylltu. |
+| **Google AI Pro** | Cysylltwch gyfrifon Google AI Pro trwy OAuth, yna adnewyddwch y cysylltydd os nad yw’r rhestr gyfrifon yn diweddaru ar unwaith. |
 
-Mae Cursor Pro nid yn ffurfi cyflwyniad a ddefnyddir. Amlwch ysbrygiadau angen i'r system (screenshots), runbooks neu adegau cynllunio sydd yn dangos ffordd ysbrygiad Cursor Pro neu gyfeiriadau'r connector.
+Nid yw Cursor Pro bellach yn ddarparwr â chymorth. Tynnwch hen luniau sgrin mewnol, runbooks, neu gamau cyflwyno sy’n sôn am feysydd gosod Cursor Pro neu lwybrau cysylltydd.
 
-Pan ychwanegu neu amlwch cyfathregau ysbrygiad, rhoi enw e-bostref gywir ar gyfer y cyfathreg a fydd yn cael ei atal neu amlwch, a chysw'r setegau ysbrygiad cyn gwneud gwyliau'r gweithgareddau sydd wedi'u cynnwys gan y connector.
+Wrth ychwanegu neu dynnu cyfrifon darparwr, rhowch gyfeiriad e-bost dilys ar gyfer y cyfrif sy’n cael ei adnewyddu neu ei ddileu a chadwch osodiadau’r darparwr cyn profi gweithrediadau a gefnogir gan gysylltydd.

@@ -1,0 +1,84 @@
+---
+title: GoCardless
+sidebar_position: 1
+_i18n_hash: ec488b00ce698412aa79dd0ce4a09b05
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
+
+# GoCardless {#gocardless}
+
+Multisite Ultimate: Tefo ya GoCardless
+
+Dumella bareki ba hao ho lefella botho le dihlahiswa tsa Multisite Ultimate ka Direct Debit ba sebedisa GoCardless!
+
+## Ho kenya {#installation}
+
+1. Kenya 'ultimate-multisite-gocardless' foldareng ya '/wp-content/plugins/'
+2. Kenya katoloso tshebetsong ka menu ya 'Dikatoloso' ho WordPress
+3. Latela Wizard ya mohato ka mohato ho seta katoloso
+
+## Tataiso ya Tshebediso {#usage-guide}
+
+_GoCardless_ ke kgoro ya tefo e fumanehang **Yuropa le UK** e dumellang ditefo tsa **Direct Debit**.
+
+**Ultimate Multisite: GoCardless Gateway** e eketsa tshehetso ya _GoCardless_ ho Ultimate Multisite, e o dumellang ho lefisa bareki ba hao sebakeng seo ka Direct Debit.
+
+Thuto ena e tla akaretsa kamoo o ka setang _GoCardless_ kateng hore o qale ho amohela ditefo ka yona marangrang a hao a Ultimate Multisite.
+
+_**Tlhokomeliso: GoCardless e sebetsa feela ka ditjhelete tse latelang:**_ **EUR, GBP, AUD, SEK, le DKK.**
+
+## Ho kenya Tlatsetso {#installing-the-add-on}
+
+Pele ho tsohle, o tla hloka ho kenya tlatsetso ya GoCardless bakeng sa Ultimate Multisite. O ka etsa seo ka ho ya ho **Ultimate Multisite > Dipeakanyo > Ditlatsetso (ka bareng ya lehlakore)**. Ebe o kgetha tlatsetso ya GoCardless lenaneng leo.
+
+Kamora hore tlatsetso e kengwe le ho kenngwa tshebetsong, ya ho **Ultimate Multisite > Dipeakanyo > Ditefo**, bulela kgetho ya GoCardless, mme o boloke.
+
+![Dipeakanyo tsa kgoro ya tefo](/img/config/settings-payment-gateways.png)
+
+## Ho fumana Access Token {#getting-an-access-token}
+
+Theha akhaonto ho _GoCardless_ (kapa ho sandbox ya _GoCardless_, haeba o batla ho **e leka pele** , e leng se kgothaletswang). Jwale, kamora ho kena, ya nthong ya menu ya **Developers**.
+
+<!-- Setshwantsho ha se fumanehe: dashboard ya GoCardless e bontsha sebaka sa menu ya Developers -->
+
+Leqepheng la **Developers**, tobetsa konopo ya **Create** hukung e ka hodimo ka ho le letona ya skrine, ebe o tobetsa kgetho ya **Access Token**.
+
+<!-- Setshwantsho ha se fumanehe: leqephe la GoCardless Developers le nang le konopo ya Create le kgetho ya Access Token -->
+
+Sena se tla bula fensetere e ntjha ya modal, se o dumella ho theha token e ntjha. E fe lebitso le lemohuwang mme o netefatse hore o kgetha kgetho ya **Read-write access** ho menu ya **Scope**.
+
+<!-- Setshwantsho ha se fumanehe: modal ya GoCardless ya ho theha access token e ntjha ka scope ya Read-write -->
+
+Access token e tla hlaha skrineng. E kopitse mme o e manamise ho menu ya hao ya **Ultimate Multisite > Dipeakanyo > Ditefo > GoCardless**.
+
+Netefatsa hore o e beha lebaleng le nepahetseng. Haeba e le **live token** , tima **mokgwa wa sandbox** pele o manamisa token.
+
+![Dipeakanyo tsa kgoro ya tefo ka GoCardless](/img/config/settings-payment-gateways.png)
+
+<!-- Setshwantsho ha se fumanehe: mabala a token ya GoCardless dipeakanyong tsa tefo tsa Ultimate Multisite -->
+
+Ke phetho bakeng sa mohato wa pele. E latelang, o hloka ho seta momamedi wa webhook.
+
+## Ho seta Momamedi wa Webhook {#setting-up-the-webhook-listener}
+
+Ha ho sebetsanwa le dipeeletso, Ultimate Multisite e hloka ho utlwa ka diphetoho boemong ba peeletso, ditefo tse ntjha tse etswang, le dintho tse ding tse jwalo.
+
+Tsela eo dikgoro tsa tefo di tsebisang Ultimate Multisite ka diphetoho tseo ka yona ke ho sebedisa **mehala ya webhook**. Ka lebaka leo, hore kopanyo e sebetse 100%, re hloka ho bolella _GoCardless_ hore na e bitse URL efe ka tlhahisoleseding eo yohle.
+
+Kgutlela phaneleng ya hao ya **GoCardless > Developers** mme o tobetse konopo ya Create hape, empa lekgetlong lena, kgetha kgetho ya **Webhook endpoint**.
+
+<!-- Setshwantsho ha se fumanehe: leqephe la GoCardless Developers le nang le kgetho ya Webhook endpoint -->Fensetere e ntjha e tla bula ka dikgetho tsa webhook endpoint. E kopa webhook URL, kahoo kgutlela ho **dipeakanyo tsa Ultimate Multisite > Ditefo > GoCardless** mme o kopitse webhook URL e thathamisitsweng moo:
+
+<!-- Setshwantsho ha se fumanehe: dipeakanyo tsa Ultimate Multisite GoCardless tse bontshang webhook URL -->
+
+Ho feta moo, o ka kenya **webhook secret** e tla sebediswa ho saena mehala ya hao ya webhook. Eng kapa eng eo o e kenyang lebaleng leo, o tla hloka ho e kenya le ho **lebala la Ultimate Multisite Webhook Secret**.
+
+<!-- Setshwantsho ha se fumanehe: foromo ya tlhophiso ya GoCardless webhook endpoint e nang le mabala a URL le secret -->
+
+<!-- Setshwantsho ha se fumanehe: lebala la Ultimate Multisite GoCardless webhook secret -->
+
+Qetella ka ho boloka endpoint ka ho tobetsa konopo ya **Create webhook endpoint** ebe o **boloka le dipeakanyo tsa hao tsa Ultimate Multisite**.
+
+Jwale o lokela ho be o loketse ho amohela _GoCardless_!

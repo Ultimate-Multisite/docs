@@ -1,0 +1,116 @@
+---
+title: Konpatibilite Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+Yon plugin WordPress ki ajoute koreksyon konpatibilite pou Tutor LMS nan anviwònman multisite yo.
+
+## Deskripsyon {#description}
+
+Plugin sa a bay koreksyon konpatibilite esansyèl pou fè Tutor LMS mache sou rezo WordPress multisite. Li jere enskripsyon itilizatè, jesyon enstriktè, limit kou, ak lòt fonksyonalite espesifik pou multisite.
+
+## Fonksyonalite {#features}
+
+- **Jesyon Tab Bazdone**: Detekte otomatikman epi kreye tab Tutor LMS ki manke yo lè yo echwe akoz kontrent kle etranje multisite
+- **Enskripsyon Itilizatè Multisite**: Manadjè AJAX pèsonalize pou jere enskripsyon itilizatè atravè sit rezo yo
+- **Jesyon Wòl Enstriktè**: Atribisyon ak jesyon otomatik wòl enstriktè nan anviwònman multisite
+- **Limit Kou**: Entegrasyon ak Ultimate Multisite pou jere limit kreyasyon kou ak funnel selon plan sit yo
+- **Afichaj Admin Pèsonalize**: Lis enstriktè ak koòdone jesyon ki konprann multisite
+- **Zouti Admin**: Koòdone jesyon bazdone pou administratè rezo ak administratè sit
+
+## Kondisyon {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Plugin Tutor LMS (ap aplike otomatikman atravè header `Requires Plugins`)
+- Enstalasyon WordPress Multisite
+- Plugin Ultimate Multisite (pou fonksyonalite limit kou)
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye plugin yo nan `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Asire Tutor LMS enstale epi aktive
+3. Aktive plugin nan meni 'Plugins' nan WordPress
+4. Plugin nan ap entegre otomatikman ak Tutor LMS
+
+## Estrikti Fichye {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Fonksyonalite ki Deplase soti nan MU Plugin {#functionality-moved-from-mu-plugin}
+
+Plugin sa a gen fonksyonalite ki te deja nan `wp-content/mu-plugins/daves.php`:
+
+- Limit chanjman estati kou
+- Limit kreyasyon kou
+- Entegrasyon ak limit CartFlows
+- Jesyon wòl enstriktè Tutor
+- Jesyon enskripsyon itilizatè multisite
+- Afichaj ID pwodwi kou
+
+## Jesyon Bazdone {#database-management}
+
+### Pwoblèm nan {#the-problem}
+
+Nan anviwònman WordPress multisite, kreyasyon tab Tutor LMS echwe pou tab ki gen kontrent kle etranje pou tab itilizatè yo. Sa rive paske:
+
+- Tab espesifik pou sit yo itilize prefiks tankou `wp_2_tutor_carts`
+- Kle etranje yo fè referans ak `wp_2_users` (ki pa egziste)
+- Vrè tab itilizatè yo se `wp_users` (pataje atravè rezo a)
+
+### Solisyon an {#the-solution}
+
+Plugin sa a otomatikman:
+
+1. **Detekte Tab ki Manke yo**: Tcheke tab ki pa t kreye akoz kontrent kle etranje
+2. **Kreye Tab ak Referans Kòrèk yo**: Itilize non tab itilizatè ki apwopriye a (`wp_users` nan multisite)
+3. **Jere Plizyè Senaryo**:
+   - Aktivasyon/reyaktivasyon plugin
+   - Kreyasyon nouvo sit nan rezo a
+   - Verifikasyon tab manyèl atravè koòdone admin
+
+### Tab ki Afekte yo {#affected-tables}
+
+- `tutor_coupon_usages` - Gen kle etranje pou tab itilizatè yo
+- `tutor_carts` - Gen kle etranje pou tab itilizatè yo
+- `tutor_notification_preferences` - Tab TutorPro ak kle etranje pou tab itilizatè yo
+
+### Koòdone Admin {#admin-interface}
+
+Aksede zouti jesyon bazdone yo nan:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+Koòdone nan pèmèt ou:
+- Wè tab ki manke yo atravè tout sit yo
+- Deklanche kreyasyon tab manyèlman
+- Tcheke konfigirasyon bazdone
+- Wè enfòmasyon detaye sou estati
+
+## Sipò {#support}
+
+Plugin sa a fèt espesyalman pou platfòm KursoPro. Pou sipò teknik, kontakte ekip devlopman an.

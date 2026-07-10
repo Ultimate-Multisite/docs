@@ -3,17 +3,17 @@ title: Integrasiی RunCloud
 sidebar_position: 13
 _i18n_hash: 05a61d871e286ae6c87bc7653377dee4
 ---
-# یەکگرتوود (RunCloud) یەکپارێزی
+# یەکگرتوود (RunCloud) یەکپارێزی {#runcloud-integration}
 
-## گشتیارییەکە
+## گشتیارییەکە {#overview}
 RunCloud سیستەمێکی بەڕێوەبردنی خەرجکارە لە نێوان ئاڵۆز و پڕۆگرامەکانی وێب، کە ڕێنوێنی دەکات بۆ جێبەجێکردن و بەڕێوەبردنی ئەپڵیکەیشنی وێبی لەسەر خەرجی کارەکانت. ئەم یەکپارێزییە دەبێتە هۆی هەماهەنی ئۆتۆماتیکی ناوچەکانی (domain syncing) و بەڕێوەبردنی پڕۆتۆکۆڵی SSL نێوان Ultimate Multisite و RunCloud.
 
-## تایبەتمەندییەکان
+## تایبەتمەندییەکان {#features}
 - هەماهەنی ئۆتۆماتیکی ناوچەکان (Automatic domain syncing)
 - بەڕێوەبردنی گوازارەکانی SSL (SSL certificate management)
 - لە کاتی لێکردنەوەی پەیوەندییەکان (mappings) پاککردنەوەی ناوچەکە
 
-## پێداویستییەکان
+## پێداویستییەکان {#requirements}
 ئەم دیاریکراوەیە دەبێت لە فایلەکەت بە ناوی `wp-config.php` دابنێیت:
 
 ```php
@@ -23,9 +23,9 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-## ڕێنماییەکانی سیستەمکردن
+## ڕێنماییەکانی سیستەمکردن {#setup-instructions}
 
-### ١. بەدەستهێنانی مەرجەکانی APIی RunCloud
+### ١. بەدەستهێنانی مەرجەکانی APIی RunCloud {#1-get-your-runcloud-api-credentials}
 
 ١. بچۆ بۆ داشبۆردی (dashboard) ی RunCloud و خۆت بنووسە (Log in).
 ٢. بگواشبە "User Profile" (پشت دایکی پڕۆفایلەکەت کلیک بکە لە گۆشەی سەرەوە).
@@ -33,7 +33,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ٤. ئەگەر یەکێکیان نییە، کلیک بکە بەسەر "Generate API Key" بۆ دروستکردنی کلیدی APIی خۆت.
 ٥. کلیدی API و سێکرێتی APIی خۆت کۆ بکەرەوە.
 
-### ٢. بەدەستهێنانی IDی خەرجکار و ئەپڵیکات
+### ٢. بەدەستهێنانی IDی خەرجکار و ئەپڵیکات {#2-get-your-server-and-app-ids}
 
 ١. لە داشبۆردی RunCloud، بگواشبە "Servers".
 ٢. ئەو خەرجی کارەی کە WordPress multisite ی تۆ لەسەر کراوە هەڵبژێرە.
@@ -41,7 +41,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ٤. بگواشبە "Web Applications" و ئەپڵیکاتی WordPress ی خۆت هەڵبژێرە.
 ٥. App ID دەبینراوە لەناو URL: `https://manage.runcloud.io/servers/{SERVER_ID}/apps/{APP_ID}`
 
-### ٣. زیادکردنی دیاریکراوەکان بۆ wp-config.php
+### ٣. زیادکردنی دیاریکراوەکان بۆ wp-config.php {#3-add-constants-to-wp-configphp}
 
 ئەم دیاریکراوەیە بە فایلەکەت `wp-config.php` زیاد بکە:
 
@@ -52,7 +52,7 @@ define('WU_RUNCLOUD_SERVER_ID', 'your_server_id');
 define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ```
 
-### ٤. چالاککردنەوەی یەکپارێزیەکە
+### ٤. چالاککردنەوەی یەکپارێزیەکە {#4-enable-the-integration}
 
 ١. لە ئیدارەی WordPress، بگە بە Ultimate Multisite > Settings (سەرکردایەتی)
 ٢. بگاتە تابلۆی "Domain Mapping" (پێناساندنی دامێنی)
@@ -60,7 +60,7 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 ٤. RunCloud integration یەکگرتووەکە چالاک بکە (Enable)
 ٥. بۆ "Save Changes" (گۆڕینی گۆڕانکارییەکان) بگەڕێ
 
-## چۆنیەتی کارکردن
+## چۆنیەتی کارکردن {#how-it-works}
 
 کاتێک دامێنێکی لە Ultimate Multisite دابەش دەکرێت:
 
@@ -70,19 +70,19 @@ define('WU_RUNCLOUD_APP_ID', 'your_app_id');
 
 بۆ دامێنی زیرەکی (subdomain)، یەکگرتووەکە بە شێوەیەکی ئۆتۆماتیک پڕۆسەی دروستکردنی subdomain'ەکان لە RunCloud دابەش دەکات کاتێک سایتە نوێیەکانی تۆ بۆ تۆڕەکە زیاد دەکرێن.
 
-## چارەسەرکردنی کێشەکان (Troubleshooting)
+## چارەسەرکردنی کێشەکان (Troubleshooting) {#troubleshooting}
 
-### کێشەکانی پەیوەندی بە API
+### کێشەکانی پەیوەندی بە API {#api-connection-issues}
 - چاک بکە کە مۆڵەتی APIی تۆ دروستە
 - چاک بکە کە IDی server و appی تۆ دروستن
 - دڵنیا بە لەوە چی کە هەژمارەکەت لە RunCloud ئەو ڕێگەپێدانان (permissions) پێویستان هەیە
 
-### کێشەکانی SSL Certificate
+### کێشەکانی SSL Certificate {#ssl-certificate-issues}
 - RunCloud دەمێک دەبێت بۆ ئەوەی SSL certificates دابەش بکات
 - چاک بکە کە دامێنەکان بە شێوەیەکی دروست بۆ IPی serverەکەت ئاماژەن (pointing)
 - تنظیمات SSLی RunCloud بۆ بەرنامەکەت چاک بکە
 
-### دامێنەکە زیاد نەکراوە
+### دامێنەکە زیاد نەکراوە {#domain-not-added}
 - لە logs ی Ultimate Multisite بۆ هەر پەیامێکی هەڵەکان بگەڕێ
 - دڵنیا بە لەوە چی کە دامێنەکە پێشتر لە RunCloud زیاد نییە
 - دڵنیا بە لەوە چی کە پلانی RunCloud پشتگیریی دامێنی زیاتر دەدات

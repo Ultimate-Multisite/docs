@@ -1,0 +1,111 @@
+---
+title: Ultimate AI Connector ee Endpoints La Jaanqaadi Kara
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector ee Endpoint-yada Ku Habboon {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector ee Endpoint-yada Ku Habboon wuxuu isku xiraa API-yada bixiyeyaasha AI ee OpenAI-ku-habboon iyo shabakaddaada WordPress multisite. Habee bixiyeyaal AI badan — mid kasta oo leh endpoint URL u gaar ah, API key, iyo model caadi ah — kuna mari codsiyada u wareejin beddel oo otomaatig ah marka bixiye aan la heli karin.
+
+## Astaamaha Muhiimka ah {#key-features}
+
+- **Taageero bixiyeyaal badan**: Ku dar kaarar bixiyeyaal AI badan, mid kasta oo leh endpoint URL u gaar ah, API key, iyo model caadi ah
+- **Jiid-si-aad-u-habeyso**: Bixiyeyaasha u kala hormari adigoo isticmaalaya qabashada ku taal kaar kasta; codsiyadu waxay u adeegsadaan bixiyeyaasha sida ay u kala horreeyaan
+- **Marin u wareejin beddel oo otomaatig ah**: Haddii bixiyaha koowaad aan la heli karin, codsiyadu si otomaatig ah ayay ugu wareegaan bixiyaha xiga ee la habeeyey
+- **Habeyn bixiye kasta ah**: Bixiye kasta si madax-bannaan ayaa loogu habeeyaa aqoonsiyadiisa iyo xulashada model-kiisa
+- **UI dejin ku saleysan kaarar**: Waxaa lagu dhisay qaybaha Card ee deggan ee WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Is-ballaarin marka lagu daro**: Kaararka bixiyeyaasha cusub si otomaatig ah ayay u ballaartaan si aad isla markiiba u buuxiso faahfaahinta
+- **Jebinta cache-ka script-ka**: Script-yada bixiyeyaasha cache-kooda waa la jebiya marka plugin-ka la cusbooneysiiyo si loo hubiyo in noocii ugu dambeeyay la raro
+
+## Shuruudaha {#requirements}
+
+- WordPress 5.3 ama ka sarreeya
+- PHP 7.4 ama ka sarreeya
+- Ultimate Multisite plugin (firfircoon)
+- Endpoint API oo OpenAI-ku-habboon (adigu martigelisay ama dhinac saddexaad)
+
+## Rakibidda {#installation}
+
+1. U rar faylasha addon-ka galkaaga `/wp-content/plugins/`
+2. Ka hawlgeli plugin-ka adigoo adeegsanaya menu-ga 'Plugins' ee WordPress
+3. U gudub **Ultimate Multisite → AI Connector** si aad u habeyso addon-ka
+
+## Habeynta {#configuration}
+
+### Dejinta Bixiyeyaal Badan {#multi-provider-setup}
+
+Shaashadda habeyntu waxay isticmaashaa qaab-dhismeed ku saleysan kaarar halkaas oo kaar kasta uu matalo hal bixiye AI. Waxaad ku dari kartaa bixiyeyaal inta aad u baahan tahay.
+
+#### Ku Darista Bixiye {#adding-a-provider}
+
+1. Tag **Ultimate Multisite → AI Connector** ee maamulka shabakadda
+2. Guji **Ku Dar Bixiye**
+3. Kaar bixiye cusub ayaa soo muuqda oo si otomaatig ah u ballaarta
+4. Buuxi faahfaahinta bixiyaha:
+   - **Magaca Bixiyaha** — calaamad lagu aqoonsado bixiyahan (tusaale "OpenAI", "Mistral", "Local Ollama")
+   - **Endpoint URL** — URL-ka aasaasiga ah ee API-ga OpenAI-ku-habboon (tusaale `https://api.openai.com/v1`)
+   - **API Key** — API key-gaaga ee bixiyahan
+   - **Model-ka Caadiga ah** — aqoonsiga model-ka ee si caadi ah loogu isticmaalo bixiyahan (tusaale `gpt-4o`, `mistral-small`)
+5. Guji **Kaydi Dejinta**
+
+#### Ka Saarista Bixiye {#removing-a-provider}
+
+Guji badhanka **Ka Saar** ee ku yaal kaar kasta oo bixiye si aad u tirtirto. Kaydi dejinta si isbeddelka loo dhaqan geliyo.
+
+#### Dib-u-kala-habeynta Bixiyeyaasha {#reordering-providers}
+
+Jiid astaanta qabashada (⣿) ee ku taal dhinaca bidix ee kaar kasta oo bixiye si aad dib ugu kala habeyso. Kala horreysigu wuxuu go'aamiyaa mudnaanta u wareejinta beddelka: codsiyada waxaa loo diraa bixiyaha koowaad, waxayna ugu wareegaan bixiyeyaasha xiga haddii codsi fashilmo.
+
+### Marin U Wareejin Beddel {#fallback-routing}
+
+Marka codsi loo diro bixiyaha koowaad uu fashilmo — sababtoo ah waqtigu dhammaaday, xaddid heer, ama adeeg go'ay — connector-ku si otomaatig ah ayuu ugu celceliyaa bixiyaha xiga ee liiska ku jira. Tani waxay sii socotaa hoos liiska ilaa bixiye guuleysto ama dhammaan bixiyeyaasha la isku dayo.
+
+| Xaalad | Habdhaqan |
+|----------|-----------|
+| Bixiyaha koowaad wuu jawaabaa | Codsiga si caadi ah ayaa loo adeegaa |
+| Bixiyaha koowaad wuu fashilmaa | Codsiga waxaa mar kale lagu tijaabiyaa bixiyaha xiga |
+| Dhammaan bixiyeyaashu way fashilmaan | Khalad ayaa loo celiyaa wacaha |
+
+U wareejinta beddelku waa mid aan ka muuqan plugin-ka ama theme-ka wacaya — waxay helaan ama jawaab guuleysatay ama khalad kama dambeys ah, iyadoon loo eegin inta bixiye ee la isku dayay.
+
+### Tixraaca Habeynta Bixiyaha {#provider-configuration-reference}
+
+| Goob | Loo baahan yahay | Sharaxaad |
+|-------|----------|-------------|
+| Magaca Bixiyaha | Haa | Calaamad muuqaal ah oo loogu talagalay bixiyahan |
+| Endpoint URL | Haa | URL-ka aasaasiga ah ee API-ga OpenAI-ku-habboon |
+| API Key | Haa | Furaha xaqiijinta ee bixiyahan |
+| Model-ka Caadiga ah | Haa | Aqoonsiga model-ka ee la isticmaalo marka aan model lagu cayimin codsiga |
+
+## Xallinta Dhibaatooyinka {#troubleshooting}
+
+### Bixiyeyaal lama taxin {#no-providers-are-listed}
+
+Haddii liiska bixiyeyaashu madhan yahay ka dib markaad kaydiso, xaqiiji in:
+
+- Aad gujisay **Kaydi Dejinta** ka dib markaad ku dartay bixiyeyaal
+- Browser-kaagu uusan ka hor istaagin bogga dejinta inuu kaydiyo (ka hubi console-ka browser-ka khaladaadka JavaScript)
+- Plugin-ku firfircoon yahay oo aad ku jirto shaashadda maamulka shabakadda
+
+### Codsiyadu way ku fashilmayaan dhammaan bixiyeyaasha {#requests-are-failing-for-all-providers}
+
+- Xaqiiji in endpoint URL-ka bixiye kasta laga gaari karo server-kaaga (ma aha oo keliya browser-kaaga)
+- Hubi in API key kasta sax yahay oo uusan dhicin
+- Dib u eeg heer-xaddidka iyo xaaladda quota ee bixiyaha gudaha dashboard-kooda
+- Daar diiwaangelinta debug ee WordPress (`WP_DEBUG_LOG`) si aad u qabato farriimaha khaladka ee faahfaahsan ee ka yimaada connector-ka
+
+### Bixiye looma isticmaalayo u wareejinta beddelka {#a-provider-is-not-being-used-for-fallback}
+
+Jiid-si-aad-u-habeyso wuxuu beddelaa kala horreeynta u wareejinta beddelka. Xaqiiji in bixiyaha aad filayso inuu helo codsiyada u wareejinta beddelka si sax ah ugu jiro liiska, iyo in endpoint URL-kiisa iyo API key-giisu sax yihiin.
+
+### Kaar bixiye cusub si otomaatig ah uma ballaarto {#new-provider-card-does-not-expand-automatically}
+
+Is-ballaarintu waxay u baahan tahay in JavaScript laga hawlgeliyo browser-kaaga. Haddii kaarku uusan ballaaran marka la gujiyo, ka hubi console-ka browser-ka khaladaad. Waxa ku jira kaarka mar walba waa la heli karaa adigoo gujinaya madaxa kaarka, xitaa haddii is-ballaarintu aysan kicin.
+
+## Diiwaanka Isbeddellada {#changelog}
+
+Eeg [Diiwaanka Isbeddellada](./changelog) si aad u hesho taariikhda noocyada oo dhammaystiran.

@@ -3,7 +3,7 @@ title: Integrimi Zapier
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrimi i Ultimate Multisite me Zapier
+# Integrimi i Ultimate Multisite me Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Në një nga artikujt, ne diskutuan [Webhooks](webhooks.md) dhe se si mund t'i përdorni për të integruar me aplikacione të palëve të treta.
 
@@ -15,7 +15,7 @@ Ju mund të krijoni **Triggers** (Ndryshues) që do të shfaqen kur ndodhen ngja
 
 Kjo është e mundur sepse **trigger-t dhe action-t e Zapier për Ultimate Multisite** mbështeten nga [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Si të filloni
+## Si të filloni {#how-to-start}
 
 Përpara, kërkoni Ultimate Multisite në listën e aplikacioneve të Zapier. Alternativisht, mund të klikoni këtu [ky link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Në fushat URL, vendosni adresën tuaj të plotë të rrjetit, duke përfshirë 
 
 Klikoni butonin **Yes, Continue** (Po, Vazhdo) për të kaluar në hapin tjetër. Nëse gjithçka funksionon siç duhet, do të jeni mirëpritur nga llogaria juaj e re e lidhur! Klikoni për **Continue** (Vazhdo) për të krijuar një trigger të ri.
 
-## Si të krijoni një Trigger të ri
+## Si të krijoni një Trigger të ri {#how-to-create-a-new-trigger}
 
 Tani që llogaria juaj është lidhur, mund të shihni ngjarjet e disponueshme. Le të zgjedhim ngjarjen **payment_received** (pagimi i marrë) për këtë tutorial.
 
@@ -67,7 +67,7 @@ Në këtë fazë, Zapier do të provojë nëse Zap juaj mund të **gjejë payloa
 
 Në tutorialin tonë testu u **përfundua me sukses** dhe ktheu informacionin e shembullit të ngarkesës (payload). Ky informacion i shembullit do të jetë i dobishëm për ne ndërkohë që krijojmë aksione. Triggeri juaj është krijuar tani dhe gati për t'u lidhur me aplikacione të tjera.
 
-## Si të krijoni Actions
+## Si të krijoni Actions {#how-to-create-actions}
 
 Action-të përdorin informacion nga trigger-të e tjera për të krijuar hyrje të reja në rrjetin tuaj.
 
@@ -79,7 +79,7 @@ Në hapin e ardhshëm, ju do të krijoni autentifikimin tuaj, ashtu siç bëmi n
 
 ![Zgjidhja e autentifikimit për aksionin Zapier](/img/admin/webhooks-list.png)
 
-### Konfigurimi i Action-it
+### Konfigurimi i Action-it {#setting-up-the-action}
 
 Ky është **hapi kryesor i aksionit** dhe këtu gjërat janë pak të ndryshme. Informacioni i parë që do të zgjidhni është **Item**. Item është modeli i informacionit të rrjetit tuaj, si p.sh. **Customers (Klientët), Payments (Pagesat), Sites (Sitet), Emails** dhe të tjerë.
 

@@ -3,9 +3,9 @@ title: Historique des modifications de Mailster
 sidebar_position: 99
 _i18n_hash: 7a6952d60e12ae541332c26d58baabde
 ---
-# Changelog de Mailster
+# Changelog de Mailster {#mailster-changelog}
 
-### 1.0.0
+### 1.0.0 {#100}
 * Lancement initial
 * Synchronisation automatique des abonnés lors de l'inscription ou du paiement
 * Affectations de listes spécifiques aux produits

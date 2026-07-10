@@ -3,11 +3,11 @@ title: Membership Expiration and Site Blocking
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# A'zolik Muddati Tugashi va Saytni Bloklash
+# A'zolik Muddati Tugashi va Saytni Bloklash {#membership-expiration-and-site-blocking}
 
 Bu qo'llanma Ultimate Multisite qanday qilib a'zolik muddati tugashini, sinov muddati yakunlanishini va saytning old tomonini (frontend) bloklashini tushuntiradi. U a'zolikning faol holatdan tugagan holatgacha bo'lgan siklini, saytlarning bloklanishini boshqaradigan sozlamalarni va a'zolik tugagandan keyin saytlar hali ham kirish imkoniyatiga ega bo'lsa, nimalarni tekshirish kerakligini qamrab oladi.
 
-## A'zolik Holati Sikli
+## A'zolik Holati Sikli {#membership-status-lifecycle}
 
 Ultimate Multisite'dagi har bir a'zolik quyidagi holatlardan biriga ega:
 
@@ -24,7 +24,7 @@ Bepul a'zoliklar avtomatik tugamaydi. Ultimate Multisite ularni umr bo'yi foydal
 | **Expired** | Muddati tugagan va yangilanganligi bo'yicha lutfat muddati o'tgan |
 | **Cancelled** | Mijoz yoki administrator tomonidan aniq bekor qilingan |
 
-### A'zoliklar Qanday Qilib Tugagan Holatga O'tadi
+### A'zoliklar Qanday Qilib Tugagan Holatga O'tadi {#how-memberships-transition-to-expired}
 
 Ultimate Multisite har soatda a'zoliklar ro'yxatini tekshiradigan fon tekshiruvini amalga oshiradi va tugagan deb belgilanishi kerak bo'lgan a'zoliklarni qidiradi. Bu tekshiruv [Action Scheduler](https://actionscheduler.org/) (to'g'ridan-to'g'ri WP-Cron emas) dan foydalanadi va `wu_membership_check` nomli jadvalga kiritilgan harakat sifatida ishlaydi.
 
@@ -34,7 +34,7 @@ Tugash tekshiruvi standart sifatida **3 kunlik ichki lutfat muddatiga** ega. A'z
 3 kunlik tugash lutfat muddati quyida tasvirlangan Frontend Block Grace Period sozlamasidan ajralgan. Tugash lutfat muddati **statusning** faol/on-hold holatdan tugagan holatga o'zgarishini boshqaradi. Frontend bloklash lutfat muddati esa status allaqachon o'zgarganidan keyin **sayt bloklanishini** boshqaradi.
 :::
 
-#### Avtomatik Yangilanish vs. Avtomatik Yangilanish Bo'lmagan A'zoliklar
+#### Avtomatik Yangilanish vs. Avtomatik Yangilanish Bo'lmagan A'zoliklar {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Bu farq tugash xatti-harakatini tushunish uchun juda muhim:
 
@@ -42,7 +42,7 @@ Bu farq tugash xatti-harakatini tushunish uchun juda muhim:
 
 - **Avtomatik yangilanadigan a'zoliklar** (`auto_renew = true`): Cron tugash tekshiruvi **ularni butunlay e'tibordan chetda qoldiradi**. To'lov shlyuz (Stripe, PayPal va boshqalar) obunalar muvaffaqiyatsiz yoki bekor qilinganida Ultimate Multisite'ga vebhook orqali xabar yuborishi kutiladi. Agar vebhook kelmasa — bu noto'g'ri sozangan endpoint, shlyuz uzilishi yoki tizim tashqarisida bekor qilingan obunalar tufayli — a'zolik tugash sanasi o'tganidan keyin ham cheksiz vaqt davomida `active` bo'lib qolishi mumkin.
 
-### Sinov Muddati Qanday Yakunlanadi
+### Sinov Muddati Qanday Yakunlanadi {#how-trials-end}
 
 Sinov muddati tugagan a'zolikning muddati tugaganda, tizim:
 
@@ -52,11 +52,11 @@ Sinov muddati tugagan a'zolikning muddati tugaganda, tizim:
 
 Bu jarayon odatiy tugash tekshiruvi bilan bir xil soatlik jadvalda ishlaydi, lekin **faqat avtomatik yangilanmaydigan a'zoliklar uchun**. Avtomatik yangilanadigan sinovlar uchun to'lov shlyuzi sinovdan to'langan obunaga o'tishni boshqaradi.
 
-## Frontend Kirishini Bloklash
+## Frontend Kirishini Bloklash {#block-frontend-access}
 
 Standart sozlamalarga ko'ra, a'zolik tugaganda yoki on-hold holatga o'tganida, **faqat wp-admin dashboard cheklangan bo'ladi**. Saytning jamoat old tomoni (public frontend) tashrif buyuruvchilarga ochiq qoladi. Jamoat kirishini ham bloklash uchun **Block Frontend Access** sozlamasini yoqishingiz kerak.
 
-### Sozlamani Konfiguratsiya Qilish
+### Sozlamani Konfiguratsiya Qilish {#configuring-the-setting}
 
 **Ultimate Multisite > Settings > Memberships** bo'limiga o'ting va **Block Frontend Access** ni yoqing.
 
@@ -74,7 +74,7 @@ Bu xatti-harakatni boshqaradigan uchta bog'liq sozlama mavjud:
 | **Frontend Block Grace Period** | A'zolik faol bo'lmaganidan keyin bloklashgacha kutish kunlari soni. Darhol bloklash uchun `0` ga sozlang. | 0 |
 | **Frontend Block Page** | Sayt bloklanganida tashrif buyuruvchilarni yo'naltiriladigan asosiy sayt sahifasi. Agar sozlanmagan bo'lsa, tashrif buyuruvchilar umumiy "Sayt mavjud emas" xabarini ko'rishadi. | None |
 
-### Sayt Bloklanganida Tashrif Buyuruvchilar Nima Ko'rishadi
+### Sayt Bloklanganida Tashrif Buyuruvchilar Nima Ko'rishadi {#what-visitors-see-when-a-site-is-blocked}
 
 Frontend kirish cheklanganda, saytga tashrif buyuruvchilar quyidagilardan birini ko'rishadi:
 
@@ -83,7 +83,7 @@ Frontend kirish cheklanganda, saytga tashrif buyuruvchilar quyidagilardan birini
 
 Sayt administratorlari hali ham kirishi mumkin — login sahifasi hech qachon bloklanmaydi.
 
-### Nima va Qachon Bloklanadi
+### Nima va Qachon Bloklanadi {#what-gets-blocked-and-when}
 
 Bloklash xatti-harakati a'zolik holatiga bog'liq:
 
@@ -104,21 +104,21 @@ Sinov muddati tugagan bo'lsa ham, `trialing` holatidagi a'zolik ****frontendda b
 Bekor qilingan a'zoliklar, Block Frontend Access yoqilgan bo'lishidan qat'i nazar, tugash sanasi o'tganidan keyin har doim bloklanadi. Frontend Block Grace Period bekor qilingan a'zoliklarga ta'sir qilmaydi.
 :::
 
-## Muammolarni Hal Qilish: Tugagandan Keyin Saytlar Nima Uchun Kirishga Yo'l Qo'yadi
+## Muammolarni Hal Qilish: Tugagandan Keyin Saytlar Nima Uchun Kirishga Yo'l Qo'yadi {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Agar a'zolik tugaganidan keyin saytlar jamoat uchun kirishga ochiq qolsa, quyidagi tekshiruvlarni tartibda bajaring:
 
-### 1. Block Frontend Access Sozlamasi Yoqilganligini Tasdiqlang
+### 1. Block Frontend Access Sozlamasi Yoqilganligini Tasdiqlang {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 **Ultimate Multisite > Settings > Memberships** sahifasiga kiring va **Block Frontend Access** tugmasi yoqilganligini tasdiqlang. Bu sozlama **standart jihatdan o'chirilgan** bo'lib, bu degani a'zolik faol bo'lmaganda faqat wp-admin cheklanadi.
 
-### 2. Frontend Block Grace Period ni Tekshiring
+### 2. Frontend Block Grace Period ni Tekshiring {#2-check-the-frontend-block-grace-period}
 
 Xuddi shu sozlamalar sahifasida **Frontend Block Grace Period** qiymatini tekshiring. Agar bu 7 kun deb sozlanganda, frontend a'zolik muddati tugaganidan 7 kun o'tgunga qadar bloklanmaydi — hatto a'zolik holati allaqachon `expired` bo'lsa ham.
 
 Darhol bloklashni istasangiz, uni `0` ga sozlang.
 
-### 3. A'zolik Holati Haqiqatda O'zgarganligini Tasdiqlang
+### 3. A'zolik Holati Haqiqatda O'zgarganligini Tasdiqlang {#3-confirm-the-membership-status-has-actually-changed}
 
 **Ultimate Multisite > Memberships** sahifasiga kiring va tegishli a'zolik holatini tekshiring. Agar tugash sanasi o'tgan bo'lsa ham, u hali ham `active` ko'rsatayotgan bo'lsa, status o'tishi sodir bo'lmagan. Ko'pincha sabablar:
 
@@ -126,7 +126,7 @@ Darhol bloklashni istasangiz, uni `0` ga sozlang.
 
 - **Cron vazifasi ishlamagan**: Keyingi qadamga qarang.
 
-### 4. Action Scheduler Ishlayotganligini Tasdiqlang
+### 4. Action Scheduler Ishlayotganligini Tasdiqlang {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite o'z cron vazifalari uchun Action Scheduler dan foydalanadi. Tarmoq administratoridagi **Tools > Scheduled Actions** bo'limiga kiring va quyidagilarni qidiring:
 
@@ -148,7 +148,7 @@ Ishonchli cron bajarilishini ta'minlash uchun tizim cron vazifasini sozlang:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Shlyuz Webhook Muammolarini Tekshiring (Avtomatik Yangilanadigan A'zoliklar)
+### 5. Shlyuz Webhook Muammolarini Tekshiring (Avtomatik Yangilanadigan A'zoliklar) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Agar a'zolik avtomatik yangilanayotgan bo'lsa va shlyuz obunasi bekor qilingan yoki muvaffaqiyatsiz bo'lsa, lekin Ultimate Multisite hali ham uni `active` deb ko'rsatayotgan bo'lsa:
 
@@ -157,7 +157,7 @@ Agar a'zolik avtomatik yangilanayotgan bo'lsa va shlyuz obunasi bekor qilingan y
 
 Agar shlyuz obunani bekor qilgan bo'lsa, lekin Ultimate Multisite qilmagan bo'lsa, vebhook xabari yo'qotilgan bo'lishi mumkin. Siz **Ultimate Multisite > Memberships > [Edit Membership]** da a'zolik holatini qo'lda o'zgartirishingiz mumkin.
 
-### 6. Tugash Lutfat Muddatini Tekshiring (Cron Darajasi)
+### 6. Tugash Lutfat Muddatini Tekshiring (Cron Darajasi) {#6-check-the-expiration-grace-period-cron-level}
 
 Cron tekshiruvi o'z lutfat muddatiga (standart: 3 kun) ega, bu a'zolikni tugagan deb belgilashdan oldin. Bu frontend bloklash lutfat muddatidan ajralgan. Sayt bloklanishgacha bo'lgan umumiy vaqt quyidagicha bo'lishi mumkin:
 
@@ -165,7 +165,7 @@ Cron tekshiruvi o'z lutfat muddatiga (standart: 3 kun) ega, bu a'zolikni tugagan
 
 Masalan, standart sozlamalar va 7 kunlik frontend lutfat muddati bilan, sayt haqiqatda bloklanishidan oldin 10 kungacha vaqt o'tishi mumkin.
 
-### 7. A'zolikni Qo'lda Tugatish
+### 7. A'zolikni Qo'lda Tugatish {#7-manually-expire-a-membership}
 
 Agar cron siklini kutmasdan saytni darhol bloklash kerak bo'lsa, siz a'zolik holatini qo'lda o'zgartirishingiz mumkin:
 
@@ -176,7 +176,7 @@ Agar cron siklini kutmasdan saytni darhol bloklash kerak bo'lsa, siz a'zolik hol
 
 Frontend bloklash keyingi sahifa yuklanishida kuchga kiradi (tugagan a'zoliklar uchun Frontend Block Grace Periodga, yoki bekor qilingan a'zoliklar uchun darhol amalga oshiriladi).
 
-## Xulosa
+## Xulosa {#summary}
 
 Tugash sanasidan sayt bloklanishgacha bo'lgan to'liq vaqt chizmasi:
 
@@ -208,7 +208,7 @@ Bekor qilingan a'zoliklar uchun yo'l qisqaroq:
   Saytning frontendi darhol bloklanadi
 ```
 
-## Developer Referensi
+## Developer Referensi {#developer-reference}
 
 Quyidagi hook va filterlar tugash va bloklash xatti-harakatlarini sozlash imkonini beradi:
 

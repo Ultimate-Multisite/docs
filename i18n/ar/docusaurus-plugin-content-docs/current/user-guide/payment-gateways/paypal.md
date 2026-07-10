@@ -1,64 +1,72 @@
 ---
 title: إعداد PayPal
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# إعداد بوابة PayPal (v2)
+# إعداد بوابة PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
-_**ملاحظة هامة: تشير هذه المقالة إلى إصدار Ultimate Multisite 2.x.**_
+_**ملاحظة مهمة: تشير هذه المقالة إلى Ultimate Multisite الإصدار 2.x.**_
 
-يمكنك تفعيل ما يصل إلى أربع طرق دفع على صفحة إعدادات الدفع الخاصة بنا: Stripe، Stripe Checkout، PayPal، و Manual. في هذه المقالة، سنرى كيفية التكامل مع **PayPal**.
+يمكنك تفعيل ما يصل إلى أربع طرق دفع في صفحة إعدادات الدفع لدينا: Stripe وStripe Checkout وPayPal والدفع اليدوي. في هذه المقالة، سنرى كيفية التكامل مع **PayPal**.
 
-تمامًا مثل Stripe، يُستخدم PayPal على نطاق واسع للمدفوعات عبر الإنترنت، خاصة على مواقع WordPress. ستوجهك هذه المقالة حول كيفية استخدام PayPal كطريقة دفع متاحة على شبكتك.
+تمامًا مثل Stripe، يُستخدم PayPal على نطاق واسع للمدفوعات عبر الإنترنت، خصوصًا على مواقع WordPress. سترشدك هذه المقالة إلى كيفية استخدام PayPal كطريقة دفع متاحة على شبكتك.
 
-لاحظ أنه يلزمك حساب **PayPal Business** للحصول على بيانات اعتماد API المطلوبة لهذا التكامل.
+لاحظ أنك تحتاج إلى امتلاك **حساب PayPal Business** للحصول على بيانات اعتماد API المطلوبة لهذا التكامل.
 
-## تمكين PayPal على شبكتك
+## تفعيل PayPal على شبكتك {#enabling-paypal-on-your-network}
 
-لتمكين PayPal كطريقة دفع متاحة على شبكتك، انتقل إلى **Ultimate Multisite > Settings > Payments** ثم ضع علامة في المربع بجانب PayPal.
+لتفعيل PayPal كطريقة دفع متاحة على شبكتك، انتقل إلى تبويب **Ultimate Multisite > Settings > Payments** وحدد المربع بجوار PayPal.
 
-![تمكين PayPal في بوابات الدفع النشطة](/img/config/settings-payment-gateways.png)
+![تفعيل PayPal في بوابات الدفع النشطة](/img/config/settings-payment-gateways.png)
 
-## الحصول على بيانات اعتماد PayPal API
+## استخدام معالج الإعداد الموجّه {#using-the-guided-setup-wizard}
 
-بمجرد تمكين PayPal كبوابة دفع، ستحتاج إلى ملء حقول **اسم المستخدم** لواجهة PayPal API، **كلمة المرور** لواجهة PayPal API، و**التوقيع** لواجهة PayPal API.
+يضيف Ultimate Multisite 2.10.0 معالج إعداد PayPal موجّهًا إلى إعدادات بوابة الدفع. بعد تفعيل PayPal، استخدم المعالج في **Ultimate Multisite > Settings > Payments** لاختيار الطريقة التي تريد بها ربط البوابة وتأكيد بيانات الاعتماد التي ما زالت مطلوبة قبل الحفظ.
 
-يمكنك الحصول على ذلك عن طريق تسجيل الدخول إلى حساب PayPal الخاص بك على [حقيقي](https://www.paypal.com/home) أو [بيئة الاختبار](https://www.sandbox.paypal.com/home).
+يدعم المعالج مسارين للإعداد:
 
-(تذكر أنه يمكنك استخدام **وضع Sandbox** لاختبار المدفوعات ومعرفة ما إذا كانت البوابة مُعدة بشكل صحيح. فقط قم بتبديل القسم المقابل.)
+* **إدخال بيانات الاعتماد يدويًا**: استخدم هذا المسار عندما تكون لديك بالفعل بيانات اعتماد PayPal API، أو عندما لا يكون إعداد OAuth متاحًا لحسابك، أو عندما تفضّل نسخ بيانات الاعتماد من PayPal بنفسك. أدخل API Username وAPI Password وAPI Signature في حقول PayPal، ثم احفظ إعدادات الدفع.
+* **بوابة اتصال OAuth**: استخدم هذا المسار فقط عندما يكون خيار OAuth متاحًا ومفعّلًا لتثبيتك. يعرض المعالج تدفق OAuth خلف علامة ميزة، لذلك تستمر الشبكات التي لا تملك العلامة في استخدام حقول إدخال بيانات الاعتماد اليدوية.
 
-![حقول بيانات اعتماد PayPal API وتبديل وضع Sandbox](/img/config/settings-payment-gateways.png)
+إذا لم ترَ خيار OAuth في المعالج، فأكمل تدفق إدخال بيانات الاعتماد يدويًا أدناه. تعمل البوابة باستخدام بيانات اعتماد PayPal Business API نفسها كما في إصدارات Ultimate Multisite 2.x السابقة.
 
-لطلب بيانات اعتماد التوقيع أو الشهادة لواجهة API لحساب PayPal الخاص بك:
+## الحصول على بيانات اعتماد PayPal API {#getting-the-paypal-api-credentials}
 
-1. انتقل إلى [إعدادات الحساب](https://www.paypal.com/businessmanage/account/accountAccess).
+بمجرد تفعيل PayPal كبوابة دفع، ستحتاج إلى تعبئة الحقول الخاصة بـ PayPal API **Username** وPayPal API **Password** وPayPal API **Signature**.
 
-2. في قسم **الوصول إلى API**، انقر على **تحديث**.
+يمكنك الحصول على ذلك بتسجيل الدخول إلى حساب PayPal [Live](https://www.paypal.com/home) أو [Sandbox](https://www.sandbox.paypal.com/home).
 
-![إعدادات حساب PayPal مع قسم الوصول إلى API](/img/config/settings-payment-gateways.png)
+(تذكّر أنه يمكنك استخدام **وضع sandbox** لاختبار المدفوعات ومعرفة ما إذا كانت البوابة مضبوطة بشكل صحيح. ما عليك سوى تشغيل القسم المقابل.)
 
-3. تحت **NVP/SOAP API integration (Classic)**، انقر على **إدارة بيانات اعتماد API**.
+![حقول بيانات اعتماد PayPal API ومفتاح تبديل وضع sandbox](/img/config/settings-payment-gateways.png)
 
-![إدارة بيانات اعتماد API PayPal NVP/SOAP](/img/config/settings-payment-gateways.png)
+لطلب بيانات اعتماد API Signature أو Certificate لحساب PayPal الخاص بك:
 
-   * إذا كنت قد أنشأت بالفعل توقيع API أو شهادة، فستتم إعادة توجيهك إلى صفحة يمكنك من خلالها العثور على بيانات اعتمادك.
+  1. انتقل إلى [إعدادات Account](https://www.paypal.com/businessmanage/account/accountAccess).
 
-   * _**ملاحظة:** إذا طُلب منك التحقق من حساب PayPal الخاص بك، فتابع التعليمات المعروضة على الشاشة._
+  2. في قسم **API access**، انقر على **Update**.
+![إعدادات PayPal Account مع قسم API access](/img/config/settings-payment-gateways.png)
 
-4. اختر _واحدًا_ من الخيارات التالية، ثم انقر على **الموافقة وإرسال**.
+  3. ضمن **NVP/SOAP API integration (Classic)**، انقر على **Manage API credentials**.
+![تكامل PayPal NVP/SOAP API وإدارة بيانات اعتماد API](/img/config/settings-payment-gateways.png)
 
-   * **طلب توقيع API** – اختر للمصادقة باستخدام توقيع API.
+     * إذا كنت قد أنشأت بالفعل API Signature أو Certificate، فستتم إعادة توجيهك إلى صفحة يمكنك العثور فيها على بيانات اعتمادك.
 
-   * **طلب شهادة API** – اختر للمصادقة باستخدام شهادة API.
+     * _**ملاحظة:** إذا طُلب منك التحقق من حساب PayPal الخاص بك، فاتبع التعليمات التي تظهر على الشاشة._
 
-5. يقوم PayPal بإنشاء بيانات اعتماد API الخاصة بك كما يلي:
+  4. حدّد خيارًا _واحدًا_ من الخيارات التالية، ثم انقر على **Agree and Submit**.
 
-![بيانات اعتماد API التي تم إنشاؤها من PayPal](/img/config/settings-payment-gateways.png)
+     * **Request API Signature** – حدّد للمصادقة باستخدام API Signature.
 
-   * **بيانات اعتماد توقيع API** تتضمن اسم مستخدم API، كلمة مرور API، وتوقيع، ولا تنتهي صلاحيته. تُخفي هذه القيم افتراضيًا لأمان إضافي. انقر على **إظهار/إخفاء** لتبديلها. عند الانتهاء، انقر على **تم**.
+     * **Request API Certificate** – حدّد للمصادقة باستخدام API Certificate.
 
-   * **بيانات اعتماد شهادة API** تتضمن اسم مستخدم API، كلمة مرور API، وشهادة، وتنتهي صلاحيته تلقائيًا بعد ثلاث سنوات. انقر على **تنزيل الشهادة** لحفظ شهادة API على سطح المكتب.
+  5. ينشئ PayPal بيانات اعتماد API الخاصة بك كما يلي:
+![بيانات اعتماد API التي أنشأها PayPal](/img/config/settings-payment-gateways.png)
 
-هذا كل شيء، تكامل الدفع عبر PayPal مكتمل!
+     * تتضمن **بيانات اعتماد API Signature** كلًا من API Username وAPI Password وSignature، وهي لا تنتهي صلاحيتها. تكون هذه القيم مخفية افتراضيًا لمزيد من الأمان. انقر على **Show/Hide** للتبديل بين إظهارها وإخفائها. عند الانتهاء، انقر على **Done**.
 
-إذا كان لديك أي أسئلة بخصوص إعدادات PayPal، يمكنك الرجوع إلى [مركز المساعدة](https://www.paypal.com/br/smarthelp/home).
+     * تتضمن **بيانات اعتماد API Certificate** كلًا من API Username وAPI Password وCertificate، وتنتهي صلاحيتها تلقائيًا بعد ثلاث سنوات. انقر على **Download Certificate** لحفظ API Certificate على سطح مكتبك.
+
+هذا كل شيء، لقد اكتمل تكامل الدفع عبر PayPal!
+
+إذا كانت لديك أي أسئلة بخصوص إعدادات PayPal، يمكنك الرجوع إلى [مركز المساعدة](https://www.paypal.com/br/smarthelp/home) الخاص بـ PayPal.

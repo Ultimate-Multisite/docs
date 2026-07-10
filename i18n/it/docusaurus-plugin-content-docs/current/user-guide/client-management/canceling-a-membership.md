@@ -1,31 +1,32 @@
 ---
 title: Annullamento di un abbonamento
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Annullare un abbonamento (v2)
+# Annullamento di una membership (v2) {#canceling-a-membership-v2}
 
-_**NOTA IMPORTANTE: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Questo articolo si riferisce a Ultimate Multisite versione 2.x.**_
 
-Annullare un abbonamento dal lato dei tuoi clienti è abbastanza semplice.
+Annullare una membership lato clienti è piuttosto semplice.
 
-Se il tuo utente vuole annullare il proprio abbonamento, dovrebbe prima accedere alla pagina ****Account****.
+Se il tuo utente vuole annullare la propria membership, dovrebbe prima accedere alla propria pagina ****Account****.
 
-Lì, dovrebbe andare nella **Danger Zone** e fare clic su **Delete Account**.
+Lì, dovrebbe andare alla **Danger Zone** e cliccare su **Delete Account**.
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Danger Zone della pagina Account con pulsante Delete Account](/img/account-page/danger-zone.png)
 
-Verrà aperto un modulo che chiede la loro conferma. Dovrebbero attivare l'opzione **Confirm Account Deletion** e fare clic su **Delete Account**.
+Si aprirà un modulo che chiederà la loro conferma. Dovrebbero attivare l'opzione **Confirm Account Deletion** e cliccare su **Delete Account**.
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Finestra di dialogo Confirm Account Deletion](/img/account-page/delete-account-confirm.png)
 
-Questo li disconnetterà dal sito e annullerà il loro abbonamento sulla tua rete, oltre a eliminare il loro sito dalla tua rete.
+Questo li disconnetterà dal sito e annullerà la loro membership sulla tua rete, oltre a eliminare il loro sito dalla tua rete.
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Disconnesso dopo l'eliminazione dell'account](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![Conferma di membership annullata](/img/account-page/membership-canceled.png)
 
-**Importante:** Notare che questa azione non escluderà il cliente dalla tua rete, poiché un cliente può avere più di un abbonamento o nessun abbonamento collegato a lui.
+**Importante:** Nota che questa azione non escluderà il cliente dalla tua rete, poiché un cliente può avere più di una membership o nessuna membership collegata a lui.
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![Il cliente esiste ancora nella rete dopo l'annullamento](/img/admin/customer-after-cancel.png)
+
+![Cliente senza membership attive](/img/admin/memberships-customer-empty.png)

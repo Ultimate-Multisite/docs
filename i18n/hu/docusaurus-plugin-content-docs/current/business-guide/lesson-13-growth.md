@@ -3,19 +3,19 @@ title: 'Összeépítés 13.: Skálázás'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lesson 13: Skálázás
+# Lesson 13: Skálázás {#lesson-13-scaling-up}
 
 Egy működő platformot és fizetős ügyfeleket tartunk. Ez a rész a következőképpen mutatja be, hogyan lehet egy kis vállalkozást fenntartható üzletre növelni – az infrastruktúra skálázása, az üzemeltetés automatizálása és a befizetett bevétel növelése az ügyfél pereme.
 
-## Hol maradtunk?
+## Hol maradtunk? {#where-we-left-off}
 
 A FitSite már online, az ügyfelek regisztrálnak, és Ön napi üzemeltetést végez. Most a növekedésre koncentrálunk.
 
-## Ismerje a számait
+## Ismerje a számait {#know-your-numbers}
 
 Mielőtt skálázni kezdené, értelmezze meg, hogy milyen helyzetben van:
 
-### Kulcsfontosságú Metrikák
+### Kulcsfontosságú Metrikák {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Az összes havi előfizetési bevétel
 - **Customer count**: Az aktív előfizetők összes száma
@@ -24,7 +24,7 @@ Mielőtt skálázni kezdené, értelmezze meg, hogy milyen helyzetben van:
 - **LTV (Lifetime Value)**: Az átlagos bevétel egy ügyfélről az egész előfizetési időtartama alatt
 - **CAC (Customer Acquisition Cost)**: Az átlagos költség egy ügyfél megszerzésére
 
-### Példa: FitSite 50 Ügyféllel
+### Példa: FitSite 50 Ügyféllel {#example-fitsite-at-50-customers}
 
 | Metric | Value |
 |--------|-------|
@@ -36,9 +36,9 @@ Mielőtt skálázni kezdené, értelmezze meg, hogy milyen helyzetben van:
 
 Ezek a számok mutatják, mire kell összpontosítania. Magas churn rate? Javítsa a megtartást. Alacsony ARPU? Ösztönözze az emelkedéseket. Magas CAC? Optimalizálja a megszerzési csatornákat.
 
-## Infrastruktúra Skálázása
+## Infrastruktúra Skálázása {#scaling-infrastructure}
 
-### Mikor kell skálázni
+### Mikor kell skálázni {#when-to-scale}
 
 Skálázza a hostingot, ha:
 
@@ -47,7 +47,7 @@ Skálázza a hostingot, ha:
 - Közelítődik a 100+ aktív oldalhoz
 - Növekszik az ügyfelek panaszai a sebességre
 
-### Hogyan skálázni
+### Hogyan skálázni {#how-to-scale}
 
 - **Vertical scaling**: Frissítse egy nagyobb szerverre (több CPU, RAM)
 - **Caching layers**: Adjon hozzá Redis/Memcached-t az objektum cachezéshez, a statikus tartalomhoz lap cachezást
@@ -55,7 +55,7 @@ Skálázza a hostingot, ha:
 - **Database optimization**: Ahogy a hálózat növekszik, a adatbázis lekérdezései lassítódnak. Optimalizálja a táblákat, adjon hozzá indexeket, fontolja meg egy dedikált adatbázis szervert.
 - **Separate concerns**: A média tárolását objektum tárolásra (S3-kompatibilis) emeli, az e-mail küldését transakciós e-mail szolgáltatásra helyezi
 
-### Hosting Migráció
+### Hosting Migráció {#hosting-migration}
 
 Ha az aktuális hostja már nem skálázható tovább, tervezzen egy migrációt:
 
@@ -65,11 +65,11 @@ Ha az aktuális hostja már nem skálázható tovább, tervezzen egy migrációt
 4. Frissítse a DNS-t minimális TTL-lel előre
 5. Ellenőrizze, hogy minden működik-e a migráció után
 
-## Üzemeltetés Automatizálása
+## Üzemeltetés Automatizálása {#automating-operations}
 
 Ahogy növekszik, a kézi folyamatok akadályokká válnak. Automatizálja, amennyiben lehetséges:
 
-### Webhooks és Zapier
+### Webhooks és Zapier {#webhooks-and-zapier}
 
 Használja a [Webhooks](/user-guide/integrations/webhooks) vagy a [Zapier](/user-guide/integrations/zapier) segítségével automatizálva:
 
@@ -78,7 +78,7 @@ Használja a [Webhooks](/user-guide/integrations/webhooks) vagy a [Zapier](/user
 - **Fizetési sikertelenségek** → figyelmeztetést küld a monitorozó eszközébe
 - **Előfizetési emelkedések** → gratulációs e-mailt a új funkciók útmutatójával
 
-### E-mail Automatizálás
+### E-mail Automatizálás {#email-automation}
 
 A kézi e-mailek helyett automatizált sorozatokra építsen:
 
@@ -87,30 +87,30 @@ A kézi e-mailek helyett automatizált sorozatokra építsen:
 - Emelkedési üzenetek, amikor az ügyfelek közelegítenek a tervkorláthoz
 - Újraelelő emlékeztetések az éves előfizetők számára
 
-### Támogatási Automatizálás
+### Támogatási Automatizálás {#support-automation}
 
 - **Kész válaszok** az általános kérdésekre
 - **Automata válaszok** a támogatási jegy kézhezvételének megerősítésére
 - **Tudásbázis javaslatok**, amikor az ügyfelek olyan jegyeket küldenek, amelyek megegyeznek meglévő cikkekkel
 
-## Bevétel Növelése
+## Bevétel Növelése {#increasing-revenue}
 
 A növekedés nem csak az ügyfelek számával jár. Az ügyfél pereme történő bevétel növelése is kulcsfontosságú.
 
-### Megefejlesztés Meleg Ügyfelekkel
+### Megefejlesztés Meleg Ügyfelekkel {#upselling-existing-customers}
 
 - **Plan emelkedések**: Célzott kampányok, amelyek a Growth/Pro funkciókat mutatják be a Starter ügyfeleknek
 - **Order bumps**: Kiegészítő termékek promóciója az istniejąc ügyfeleknek e-mailen keresztül
 - **Éves konverzió**: Ajánlott kedvezményt a havi ügyfeleknek, ha átállnak éves számlázásra
 
-### Új Bevételi Források
+### Új Bevételi Források {#new-revenue-streams}
 
 - **Kész megoldás**: Fizetős szolgáltatás a vásárló oldalának beállítására és személyre szabására
 - **Egyedi design szolgáltatások**: A sablonokon túl személyre szabott design munkát kínálni
 - **Képzési tréningek**: Fizetős egyéni áttekintések azok számára, akik gyakorlati segítséget szeretnének
 - **Premium plugin-ek**: Niche-specifikus premium plugin-ek kínálása fizetős kiegészítőként (pl. fitness osztály foglaló widget)
 
-### Ár Növelése
+### Ár Növelése {#raising-prices}
 
 Ahogy a platform éretté válik és hozzáad értéket:
 
@@ -118,7 +118,7 @@ Ahogy a platform éretté válik és hozzáad értéket:
 - Az új regisztrációk árának emelése
 - Az emelkedések megalapozása új funkciókkal és javításokkal
 
-## Csapatépítés
+## Csapatépítés {#building-a-team}
 
 Egy ponton nem tudja mindent egyedül csinálni. Gyakori első kollégák:
 
@@ -128,7 +128,7 @@ Egy ponton nem tudja mindent egyedül csinálni. Gyakori első kollégák:
 
 Nem kell alkalmazottakat. A szerződéses és szabadúszó munkatársak jól működnek egy platform vállalkozásán.
 
-## Növekedési Mérföldkövek
+## Növekedési Mérföldkövek {#growth-milestones}
 
 | Milestone | Approximate MRR | Focus |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Nem kell alkalmazottakat. A szerződéses és szabadúszó munkatársak jól mű
 | 250-500 customers | $25,000-$50,000 | Team building, new revenue streams, premium features |
 | 500+ customers | $50,000+ | Platform maturity, adjacent niches, potential exit |
 
-## Amit kiépítettünk e részben
+## Amit kiépítettünk e részben {#what-we-built-this-lesson}
 
 - **Egy metrikák keretrendszere** az üzleti egészség megértéséhez
 - **Infrastruktúra skálázási terv** több tucatzaktól több száz oldalig növekedéshez

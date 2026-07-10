@@ -1,27 +1,27 @@
 ---
-title: Pagsugod sa Pag-develop og Addon
+title: Pagsugod sa Pagpalambo sa Addon
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# Pag-develop sa Addon
+# Pagpalambo sa Addon {#addon-development}
 
-## Estruktura sa Addon
+## Istruktura sa Addon {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # Panguna nga file sa plugin
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # Panguna nga addon class
+│   ├── class-my-addon.php       # Main addon class
 │   ├── admin-pages/             # Admin interface
 │   ├── models/                  # Custom data models
 │   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # Mga template files
+└── templates/                   # Template files
 ```
 
-## Template sa Panguna nga File sa Addon
+## Template sa Pangunang File sa Addon {#main-addon-file-template}
 
 ```php
 <?php
@@ -50,7 +50,7 @@ add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'Kinahanglan ang akong Addon para sa Ultimate Multisite nga gi-install ug gi-activate.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
@@ -153,33 +153,7 @@ class My_Addon {
 }
 ```
 
-## Pananglitan sa Custom Model
-
-Kini usa ka pananglitan kung unsaon paghimo og custom model sa imong WordPress site. Kini makatabang nimo nga mas maayo ang pag-customize sa imong data o functionality.
-
-**Unsa man ni?**
-
-Sa laktod, ang "custom model" kay usa ka paraan aron maghatag og espesyal nga istruktura kung unsaon pag-organisa ug pagproseso sa imong mga datos sulod sa WordPress system. Dili kini usa ka standard feature, kundi usa ka paagi aron makontrolar nimo ang pamaagi sa pagtrabaho sa data.
-
-**Unsay gamit ni?**
-
-Gamiton ni ang custom model kung kinahanglan nimo nga:
-1. **Mag-process og data sa laing paagi:** Kung dili gusto nimo ang standard way nga gi-handle sa WordPress para sa usa ka partikular nga klase sa impormasyon.
-2. **Maghimo og mas komplikado nga logic:** Kon kinahanglan nimo nga adunay daghang mga kondisyon (conditions) o proseso aron ma-update o ma-display ang imong data.
-3. **Mag-integrate sa laing system:** Kung gusto nimo nga ang impormasyon gikan sa WordPress mahimong magpadulong sa usa ka lain nga database o external service.
-
-**Unsa ang mga bahin ni?**
-
-Sa kasagaran, ang paghimo og custom model naglangkob sa:
-* **Data Structure Definition:** Unsaon pag-design sa imong data (unsaon pag-organisa sa mga columns o fields).
-* **Logic Implementation:** Ang code nga mag-iingon kung unsaon pagbasa, pagsulat, o pag-update sa maong data.
-* **Integration Points (Hooks):** Mga punto diin mahimong mag-trigger ang imong custom model aron makig-istorya sa WordPress core functions.
-
-**Pananglitan sa Paggamit:**
-
-Imagine nga naghimo ka og usa ka e-commerce store gamit ang WooCommerce, ug gusto nimo nga ang impormasyon bahin sa "special discount rules" dili lang basta text, kondili usa kini nga structured data nga dali ma-scan ug ma-apply. Ang custom model mao ang maghatag og porma ni kana nga mga discount rules aron mas dali kining i-manage.
-
-Sa laktod nga pagkasulti, ang custom model kay ang imong kaugalingong "blueprint" o plano kung unsaon pagtrabaho sa data sulod sa WordPress, imbes nga mosunod lang sa default setup.
+## Pananglitan sa Pinasibo nga Modelo {#custom-model-example}
 
 ```php
 <?php
@@ -222,7 +196,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
      * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // Maghimo og WordPress user
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -233,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Maghimo og Ultimate Multisite customer
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -244,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // Kopyahon ang datos sa lead ng customer
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // I-marka nga na-convert ang lead
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -258,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## Integrasyon sa Admin Page
+## Integrasyon sa Panid sa Admin {#admin-page-integration}
 
 ```php
 <?php
@@ -306,13 +280,13 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
      * Render the page
      */
     public function render() {
-        // Kuhaon ang datos sa leads
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // I-render ang template
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -321,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## Pag-test sa Imong Addon
+## Pagsulay sa Imong Addon {#testing-your-addon}
 
 ```php
 <?php
@@ -331,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // Mag-testing customer
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // Mag-testing membership
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -347,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // Simulation sa pag-submit sa form
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -356,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // Pag-verify kung na-save ang data
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -373,9 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## Sunod nga mga Lakang
+## v2.13.0 nga mga extension point {#v2130-extension-points}
 
----
-- Tan-awon ang [Hooks Reference](/developer/hooks) para makita kung unsa may mga available nga actions ug filters.
-- Siguraduhon nga tan-awa ang [REST API Overview](/developer/rest-api/overview) para sa pag-integrate sa API.
-- Gamita ang [Addon Template](/addons/addon-template) isip nagsugod nga balangkas (scaffold).
+Ang Ultimate Multisite v2.13.0 nagdugang og daghang extension point nga mapuslanon para sa mga addon nga nag-integrate sa sovereign tenants, checkout domains, o host-provider DNS automation.
+
+### SSO ug mga URL sa pagdumala sa main-site {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Base domains sa checkout-form {#checkout-form-base-domains}
+
+Gamita ang `wu_checkout_form_base_domains` kung ang imong addon naghatag og dugang nga shared base domains nga kinahanglan molihok sama sa checkout-form **Site URL** domains imbes nga per-site custom mappings:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Gi-normalize sa Ultimate Multisite kini nga mga host ug laktawan ang awtomatikong per-site mapped-domain records alang kanila.
+
+### Awtomatikong paghimo og domain-record {#automatic-domain-record-creation}
+
+Gamita ang `wu_should_create_domain_record_for_site` kung ang imong addon kinahanglan mopugong o mo-defer sa awtomatikong paghimo og domain-record para sa bag-ong nahimong site:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+Ang mga host-provider integration nga naminaw sa `wu_add_subdomain` makahimo og provider-side DNS records kung ang mga site gihimo. Kung walay integration nga narehistro para niana nga action, laktawan sa Ultimate Multisite ang walay sulod nga background job.
+
+## Sunod nga mga Lakang {#next-steps}
+
+- Ribyuha ang [Hooks Reference](/developer/hooks) para sa anaa nga mga action ug filter
+- Susiha ang [REST API Overview](/developer/rest-api/overview) para sa API integration
+- Gamita ang [Addon Template](/addons/addon-template) isip sinugdanan nga scaffold

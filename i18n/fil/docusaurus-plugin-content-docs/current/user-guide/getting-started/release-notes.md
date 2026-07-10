@@ -1,82 +1,96 @@
 ---
 title: Mga Tala sa Paglabas
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Talaan ng Paglabas
+# Mga Tala sa Release {#release-notes}
 
-## Version 2.12.0 — Inilabas noong 2026-05-15
+## Bersyon 2.13.0 — Inilabas noong 2026-06-05 {#version-2130--released-on-2026-06-05}
 
-- Bago: Idinagdag ang Hostinger (hPanel) bilang sinusuportahang host provider na may integrasyon ng domain mapping.
-- Bago: Ang Site Exporter ay ngayon ay humahawak na ng network import bundles para mas madaling maibalik ang site sa buong network.
-- Inayos: Ang mga broadcast email sa BCC ay gumagamit na ngayon ng `undisclosed-recipients` header para hindi maipakita ang mga address ng tumatanggap.
-- Inayos: Ang petsa ng pag-expire ng membership ay hindi na nasisira kapag nagse-save gamit ang halaga na hindi petsa.
-- Inayos: Ang pag-update ng membership sa Stripe ay tama nang nagtatanggal ng mga diskwento nang hindi tinatawag ang deprecated na `deleteDiscount` API.
-- Inayos: Ang SSO redirects sa mga site na may domain mapping ay ngayon ay may limitasyon para maiwasan ang walang katapusang pagli-redirect (infinite redirect loops).
-- Inayos: Ang pagpili ng image sa setup wizard ay tama nang nag-a-update sa underlying data model.
-- Inayos: Ang Site Exporter CLI ay ngayon ay nagpapanatili na ng tamang default network site selection.
-- Pinahusay: Tinanggal ang bundled wp-cli mula sa plugin package, kaya bumaba ang laki ng plugin.
+- Bago: Nagdagdag ng suporta sa sovereign-tenant para sa customer account, checkout, billing, site, invoice, pagpapalit ng template, at mga daloy ng domain mapping upang maidirekta ng mga network ng tenant ang mga customer pabalik sa pangunahing site para sa mga pinamamahalaang aksyon.
+- Bago: Nagdagdag ng mga pagsusuri sa renewal-credential para sa mga umuulit na membership upang ma-disable ng mga gateway ang auto-renewal kapag nawawala ang naka-save na billing agreement, subscription, o vault token.
+- Bago: Nagdagdag ng HMAC-verified loopback publishing para sa nakabinbing paggawa ng site upang gawing mas maaasahan ang provisioning mula checkout patungong site sa mga host kung saan naaantala ang mga background job.
+- Bago: Nagdagdag ng mga extension point para sa developer para sa mga SSO URL, mga base domain ng checkout-form, at awtomatikong paggawa ng domain-record.
+- Ayos: Mas maaasahan na ang SSO sa mga mapped domain, anonymous broker visit, logout, at mga salungatan sa dependency sa pagitan ng mga plugin.
+- Ayos: Nakakabawi na ngayon ang nakabinbing paggawa ng site mula sa mga stale publish flag at iniiwasang maiwan ang mga customer na naka-stuck sa screen ng paggawa ng site.
+- Ayos: Hindi na ginagawa ang mga domain record para sa mga shared checkout-form base domain, at nilalaktawan ang mga hindi nagagamit na background job ng host-provider kapag walang aktibong integrasyon.
+- Ayos: Hindi na hinaharangan ng mga edge case sa checkout, billing address, pag-reset ng password, beripikasyon ng email, pagpapalit ng template, mga tour, at customer dashboard ang normal na daloy ng customer.
+- Ayos: Pinananatili na ngayong pribado ng mga broadcast email ang mga recipient habang iniiwasan ang mga fatal error ng SMTP/plugin kapag nabigo ang mga listahan ng recipient o mga mail transport.
+- Ayos: Iniiwasan na ngayon ng mga edge case sa pag-renew ng membership, pagpapakita ng expiration, at pagkolekta ng bayad ang agarang expiration, crash, o hindi nakuhang kinakailangang bayad.
+- Pinahusay: Nasusubukan ang compatibility sa WordPress hanggang 7.0, muling binuo ang production Vue assets mula sa npm sources, at mas marami nang checkout, setup, SSO, at gateway flow ang sinasaklaw ng Cypress end-to-end coverage.
 
-## Version 2.11.0 — Inilabas noong 2026-05-11
+## Bersyon 2.12.0 — Inilabas noong 2026-05-15 {#version-2120--released-on-2026-05-15}
 
-- Bago: Ang mga site export ay ngayon ay nagba-bundle ng isang self-booting `index.php` para na-i-install ang ZIP sa isang bagong host nang hindi nangangailangan ng hiwalay na pag-install ng plugin.
-- Bago: Ang Network export ay nagpapahintulot sa mga administrator na i-export ang lahat ng subsites sa isang archive mula sa Site Export admin page.
-- Bago: Ang pagpapahintulot sa Site Templates plan toggle ay ngayon ay ipinapatupad sa pamamagitan ng fallback chain, na tama nang naglilimita sa availability ng template para sa mga limitasyon ng plan.
-- Bago: Nagpapaalala na ang checkout form editor kapag may produkto na idinagdag nang walang naka-configure na required field.
-- Bago: Ang tab ng Import/Export settings ay malinaw nang naglalarawan ng saklaw nito at direktang nagli-link sa Site Export tool.
+- Bago: Idinagdag ang Hostinger (hPanel) bilang suportadong host provider na may integrasyon sa domain mapping
+- Bago: Pinoproseso na ngayon ng Site Exporter ang mga network import bundle para sa mas pinadaling pagpapanumbalik ng site sa buong network
+- Ayos: Gumagamit na ngayon ang mga BCC broadcast email ng undisclosed-recipients header upang maiwasang mailantad ang mga address ng recipient
+- Ayos: Hindi na nasisira ang petsa ng expiration ng membership kapag nagse-save gamit ang value na hindi petsa
+- Ayos: Tama nang kini-clear ng mga update sa Stripe membership ang mga discount nang hindi tinatawag ang deprecated na deleteDiscount API
+- Ayos: Nililimitahan na ngayon ang mga SSO redirect sa mga domain-mapped site upang maiwasan ang walang katapusang redirect loop
+- Ayos: Tama nang ina-update ng pagpili sa image picker ng setup wizard ang pinagbabatayang data model
+- Ayos: Pinananatili na ngayon ng Site Exporter CLI ang tamang default na pagpili ng network site
+- Pinahusay: Inalis ang bundled wp-cli mula sa package ng plugin, kaya nabawasan ang laki ng plugin
 
-## Version 2.10.0 — Inilabas noong 2026-05-05
+## Bersyon 2.11.0 — Inilabas noong 2026-05-11 {#version-2110--released-on-2026-05-11}
 
-- Bago: PayPal guided setup wizard para sa manual credential entry na may OAuth flag gate para sa seamless gateway configuration.
-- Bago: Ang customer panel para sa template switch ay dinisenyo muli na may current-template card, persistent grid, at **Reset current template** button.
-- Inayos: Ang pagpapalit ng template ay hindi na nagha-hang sa UI kapag nag-fail ang AJAX.
-- Inayos: Ang mga permission state sa pagpapalit ng template ay siniguro laban sa hindi awtorisadong pag-access.
-- Inayos: Ang mga input ng site override ay nina-validate bago i-save.
-- Inayos: Ang prompt para sa billing address ay ipinapakita na kapag walang laman ang address.
-- Inayos: Naayos ang mga PHP 8.1 null-to-string deprecation notices.
-- Inayos: Ang Currents ay lazy-loaded bago ang init hook para maiwasan ang mga isyu sa timing.
-- Inayos: Ang Filtered SSO path ay iginagalang sa lahat ng login flow.
-- Inayos: Ang mga opsyon ng blank site identity ay napananatili sa save.
+- Bago: Nagsasama na ngayon ang mga export ng site ng self-booting na `index.php` upang ma-install ang ZIP sa bagong host nang walang hiwalay na pag-install ng plugin.
+- Bago: Pinapahintulutan ng network export ang mga administrator na i-export ang lahat ng subsite sa iisang archive mula sa admin page ng Site Export.
+- Bago: Ipinapatupad na ngayon ang Allow Site Templates plan toggle sa pamamagitan ng fallback chain, na wastong nililimitahan ang availability ng template para sa mga limitasyon ng plan.
+- Bago: Nagbababala ang editor ng checkout form kapag idinagdag ang isang produkto nang walang naka-configure na kinakailangang field.
+- Bago: Malinaw na inilalarawan na ngayon ng tab ng mga setting ng Import/Export ang saklaw nito at direktang nagli-link sa tool na Site Export.
 
-## Version 2.9.0 — Inilabas noong 2026-04-30
+## Bersyon 2.10.0 — Inilabas noong 2026-05-05 {#version-2100--released-on-2026-05-05}
 
-- Bago: Nagdagdag ng single-site export at import sa ilalim ng **Tools > Export & Import**.
-- Inayos: Ang mga Export ZIP files ay ngayon ay inihahatid sa pamamagitan ng isang authenticated download endpoint.
-- Inayos: Inayos ang panganib ng SQL injection at mga isyu sa query sa pending export/import queries.
-- Inayos: Ang pending site ay hindi na na-publish kapag mano-manong min-verify ng admin ang email ng customer.
-- Inayos: Ang mga orphaned pending_site records ay nililinis kapag walang membership.
-- Inayos: Ang padding ng settings navigation at search anchor navigation ay inayos.
-- Inayos: Ang pending sites ay ngayon ay ipinapakita muna sa All Sites view.
-- Inayos: Idinagdag ang Screenshot provider (mShots) User-Agent header para maiwasan ang 403 errors.
-- Inayos: Naayos ang circular dependency ng import cron schedule.
-- Inayos: Ang Tour IDs ay ni-normalize sa underscores sa user settings keys.
-- Pinahusay: Gumamit na ng ZipArchive sa halip na Alchemy/Zippy para sa mas magandang compatibility.
+- Bago: PayPal guided setup wizard para sa manu-manong pagpasok ng credential na may OAuth flag gate para sa seamless na configuration ng gateway.
+- Bago: Muling idinisenyo ang panel ng customer para sa pagpapalit ng template na may current-template card, persistent grid, at **I-reset ang kasalukuyang template** na button.
+- Ayos: Hindi na nabibitin ng pagpapalit ng template ang UI kapag nabigo ang AJAX.
+- Ayos: Siniguro ang mga permission state ng pagpapalit ng template laban sa hindi awtorisadong access.
+- Ayos: Bineripika ang mga input ng site override bago i-save.
+- Ayos: Ipinapakita na ngayon ang prompt ng billing address kapag walang laman ang address.
+- Ayos: Nalutas ang mga abiso sa deprecation ng PHP 8.1 null-to-string.
+- Ayos: Na-lazy-load ang Currents bago ang init hook upang maiwasan ang mga timing issue.
+- Ayos: Nirerespeto ang filtered SSO path sa lahat ng login flow.
+- Ayos: Pinananatili ang mga blangkong opsyon sa pagkakakilanlan ng site kapag nagse-save.
 
-## Version 2.8.0 — Inilabas noong 2026-04-29
+## Bersyon 2.9.0 — Inilabas noong 2026-04-30 {#version-290--released-on-2026-04-30}
 
-- Bago: Idinagdag ang Enable Jumper toggle sa Other Options settings UI.
-- Bago: Idinagdag ang Status column sa list table ng checkout forms.
-- Bago: Idinagdag ang Addon sunrise file loader para sa custom MU-plugin sunrise extensions.
-- Pinahusay: Tinanggal ang error-reporting opt-in setting mula sa settings page.
-- Inayos: Site card sa thank-you page — ang image ay ngayon ay nilimitahan at tama ang styling ng links.
-- Inayos: Ang Screenshot provider ay pinalitan mula thum.io patungong WordPress.com mShots.
-- Inayos: Ang Enable Registration at Default Role ay ngayon ay nagse-set ng tamang default sa fresh install.
-- Inayos: Ang `get_site_url()` ay hindi na nagre-return ng empty kapag ang domain ay may kasamang port.
-- Inayos: Ang mga clone media files ay tama nang kinokopya kapag ang `copy_media` setting ay empty.
-- Inayos: Ang object cache ay tama nang na-invalidate pagkatapos ng network-activate sitemeta write.
-- Inayos: Ang custom domain ay awtomatikong na-promote sa primary sa DNS verification para sa 3-part domains.
-- Inayos: Ang pending membership ay kinakansela kapag nililinis ang expired payment.
-- Inayos: Ang password strength checker ay na-rebind pagkatapos i-dismiss ang inline login prompt.
-- Inayos: Ang walang katapusang page reload ay pinatigil sa thank-you page kapag ang site ay nabuo na.
-- Inayos: Ang WP core registration option ay naka-sync sa plugin activation at settings save.
-- Inayos: Idinagdag ang Null expiration guard sa `calculate_expiration` para sa compatibility sa PHP 8.4.
-- Inayos: Ang duplicate signups ay hinaharangan kapag ang customer ay mayroon nang active membership.
-- Inayos: Idinagdag ang null check para sa `date_expiration` sa checkout.
-- Inayos: Pinatibay ang site provisioning — limitasyon, membership inference, domain promotion.
-- Inayos: Ang status label ng pre-install check ay naitama sa NOT Activated kapag nag-fail ang check.
-- Inayos: Ang checkout domain ay ginagamit para sa email verification URLs.
-- Inayos: Auto-login pagkatapos ng checkout kapag walang password field.
-- Inayos: Ang mga free memberships ay hindi na nag-e-expire — itinuturing na lifetime.
-- Inayos: Ang email verification gate ay nagpapatigil sa site publish hanggang ma-verify ng customer ang email.
-- Inayos: Ang SES v2 API endpoint base path at identity route ay naitama.
-- Inayos: Ang `wu_inline_login_error` hook ay ini-emit sa pre-submit catch block.
+- Bago: Idinagdag ang single-site export at import sa ilalim ng **Tools > Export & Import**.
+- Ayos: Inihahatid na ngayon ang mga Export ZIP file sa pamamagitan ng authenticated download endpoint.
+- Ayos: Itinama ang panganib ng SQL injection at mga query issue sa mga nakabinbing export/import query.
+- Ayos: Hindi na-publish ang nakabinbing site kapag manu-manong bineberipika ng admin ang email ng customer.
+- Ayos: Nilinis ang mga orphaned pending_site record kapag nawawala ang membership.
+- Ayos: Itinama ang padding ng settings nav at search anchor navigation.
+- Ayos: Ipinapakita na ngayon muna ang mga nakabinbing site sa view ng All Sites.
+- Ayos: Idinagdag ang User-Agent header ng screenshot provider (mShots) upang maiwasan ang mga 403 error.
+- Ayos: Nalutas ang circular dependency ng import cron schedule.
+- Ayos: Na-normalize ang mga Tour ID sa mga underscore sa mga key ng user settings.
+- Pinahusay: Ginagamit na ngayon ang ZipArchive sa halip na Alchemy/Zippy para sa mas mahusay na compatibility.
+
+## Bersyon 2.8.0 — Inilabas noong 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- Bago: Idinagdag ang toggle na Enable Jumper sa UI ng mga setting ng Other Options.
+- Bago: Idinagdag ang column na Status sa list table ng mga checkout form.
+- Bago: Addon sunrise file loader para sa mga custom na extension ng MU plugin sunrise.
+- Pinahusay: Inalis ang setting ng opt-in sa error-reporting mula sa pahina ng mga setting.
+- Ayos: Site card ng thank-you page — limitado na ngayon ang laki ng larawan at tama na ang estilo ng mga link.
+- Ayos: Pinalitan ang screenshot provider mula thum.io patungong WordPress.com mShots.
+- Ayos: Nagtatakda na ngayon ang Enable Registration at Default Role ng tamang mga default sa bagong install.
+- Ayos: Hindi na nagbabalik ng walang laman ang `get_site_url()` kapag may port ang domain.
+- Ayos: Nakokopya na ngayon nang tama ang mga media file ng clone kapag walang laman ang setting na `copy_media`.
+- Ayos: Tama nang nai-invalidate ang object cache pagkatapos ng network-activate na pagsusulat sa sitemeta.
+- Ayos: Awtomatikong naipo-promote sa primary ang custom domain sa DNS verification para sa mga 3-part domain.
+- Ayos: Kinakansela ang pending membership kapag nalinis na ang expired payment.
+- Ayos: Muling na-bind ang password strength checker pagkatapos i-dismiss ang inline login prompt.
+- Ayos: Natigil ang walang-katapusang pag-reload ng pahina sa thank-you page kapag nagawa na ang site.
+- Ayos: Naka-sync ang opsyon sa registration ng WP core sa pag-activate ng plugin at pag-save ng mga setting.
+- Ayos: Nagdagdag ng null expiration guard sa `calculate_expiration` para sa compatibility sa PHP 8.4.
+- Ayos: Hinaharang ang mga duplicate signup kapag mayroon nang active membership ang customer.
+- Ayos: Nagdagdag ng null check para sa `date_expiration` sa checkout.
+- Ayos: Pinatibay ang site provisioning — mga limitasyon, paghihinuha ng membership, pag-promote ng domain.
+- Ayos: Itinama ang label ng status ng pre-install check sa NOT Activated kapag nabigo ang check.
+- Ayos: Ginamit ang checkout domain para sa mga URL ng email verification.
+- Ayos: Auto-login pagkatapos ng checkout kapag walang password field.
+- Ayos: Hindi na nag-e-expire ang mga free membership — itinuturing bilang panghabambuhay.
+- Ayos: Pinipigilan ng email verification gate ang pag-publish ng site hanggang ma-verify ng customer ang email.
+- Ayos: Itinama ang base path ng SES v2 API endpoint at identity route.
+- Ayos: Na-emit ang hook na `wu_inline_login_error` sa pre-submit catch block.

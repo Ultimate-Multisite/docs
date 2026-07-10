@@ -3,11 +3,11 @@ title: Plaugu robežotā un sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 ieviest **Plugin Builder & Sandbox System**, kas ļauj AI asistentam izveidot, aktivizēt un pārvaldīt WordPress pluginus jūsu tīklā – visu ar drošu, izolētu sandbox vidi.
 
-## Īsskopojums
+## Īsskopojums {#overview}
 
 Plugin Builder ļauj AI asistentam rakstīt pasūtījumos atbilstošus custom WordPress pluginus. Izveidoti pluginus tiek validēti, glabāti un aktivizēti sandbox slāņā pirms, kad tie jebkad vēl ne ietekmē dzīvās vietnes funkcionālumu.
 
@@ -17,7 +17,7 @@ Izmantošanas varianti ietver:
 - Funkcionalitātes prototipēšanu, kas prasa WordPress hooks vai custom post types.
 - Nelielu laika automātiskās skriptu veidošanu partiju operācijām.
 
-## Pluginu izveide ar AI
+## Pluginu izveide ar AI {#generating-a-plugin-via-ai}
 
 Lai izveidotu pluginu, atveriet Gratis AI Agent čata interfeisu un aprakstiet, ko jums ir nepieciešams. Piemēram:
 
@@ -32,7 +32,7 @@ AI darīs šādus veidus:
 
 Jūs varat uzlabot rezultātu, turpinot sarunu tajā, pirms aktivizēšanas.
 
-## Sandbox Aktivizācija
+## Sandbox Aktivizācija {#sandbox-activation}
 
 Pluginu aktivizācija sandbox vidē ir atšķirīga no tās aktivizācijas tīklā. Sandbox:
 

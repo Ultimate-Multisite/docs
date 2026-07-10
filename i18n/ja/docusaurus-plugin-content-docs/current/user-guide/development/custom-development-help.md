@@ -1,52 +1,52 @@
 ---
-title: カスタム開発サポート
+title: カスタム開発のヘルプ
 sidebar_position: 10
-_i18n_hash: 993698d2931dd695962b481db2b9cc14
+_i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable からカスタム開発のサポートを受ける方法？
+# Codeable でカスタム開発の支援を受けるには？ {#how-to-get-custom-development-help-from-codeable}
 
-時には、ネットワークフローを完全に自分の望む形にするために、素晴らしいカスタマイズが本当に必要になることがあります。もしそれがあなたの求めているものであれば、Ultimate Multisite の専門知識を持つ経験豊富な開発者を見つけられる場所、[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) をおすすめします。
+ネットワークの流れを思いどおりにするために、優れたカスタマイズが本当に必要になることがあります。そうした支援をお探しなら、Ultimate Multisite の専門知識を持つ経験豊富な開発者を見つけられる [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) をおすすめします。
 
-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) は、顧客と資格を持った WordPress フリーランス開発者を結びつけるプラットフォームで、あらゆる規模のプロジェクトに対応できます。彼らは、あなたが考えているタスクに特に適した専門家とマッチングできるよう、入念な応募プロセスを持っています。
+[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) は、あらゆる規模のプロジェクトに対応できる、適格な WordPress フリーランス開発者と顧客をつなぐプラットフォームです。綿密な応募プロセスにより、依頼したい作業に特に適した専門家とマッチングされます。
 
-### Codeable でプロジェクトを作成する方法？
+### Codeable でプロジェクトを作成するには？ {#how-to-create-a-project-in-codeable}
 
-まず、[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) にアクセスし、**Start a Project** ボタンをクリックします。
+まず、[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) にアクセスし、**プロジェクトを開始**ボタンをクリックします。
 
-<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
+<!-- スクリーンショットは利用できません: プロジェクトを開始ボタンがある Codeable ホームページ -->
 
-次に、プロジェクトを提出するには、左側の **Start a Project** をクリックします。
+次に、プロジェクトを投稿するため、左側の**プロジェクトを開始**をクリックします。
 
-<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
+<!-- スクリーンショットは利用できません: プロジェクトを開始オプションがある Codeable プロジェクト投稿ページ -->
 
-「I need help with」では、**Customizing** を選択します：
+「サポートが必要な内容」で、**カスタマイズ**を選択します：
 
-<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
+<!-- スクリーンショットは利用できません: カスタマイズが選択された Codeable プロジェクトフォーム -->
 
-「My」では、**Plugin** を選択します：
+「私の」で、**プラグイン**を選択します：
 
-<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
+<!-- スクリーンショットは利用できません: プラグインが選択された Codeable プロジェクトフォーム -->
 
-その後、**Continue** ボタンをクリックします。
+次に、**続行**ボタンをクリックします。
 
-<!-- Screenshot unavailable: Codeable project form Continue button -->
+<!-- スクリーンショットは利用できません: Codeable プロジェクトフォームの続行ボタン -->
 
-今こそ、プロジェクトとニーズをできるだけ詳細に説明する時間です。できるだけ多くの情報を提供してください！
+ここで、プロジェクトと必要な内容をできるだけ詳しく説明します。可能な限り多くの情報を入力してください！
 
-<!-- Screenshot unavailable: Codeable project description form -->
+<!-- スクリーンショットは利用できません: Codeable プロジェクト説明フォーム -->
 
-価格設定を助けるために、以下の質問に回答してください。
+料金見積もりの参考になるよう、次の質問に回答します。
 
-<!-- Screenshot unavailable: Codeable project pricing questions -->
+<!-- スクリーンショットは利用できません: Codeable プロジェクト料金質問 -->
 
-その後、まだ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) アカウントをお持ちでない場合は、作成して **Publish My Project** ボタンをクリックします。
+その後、まだ [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) アカウントをお持ちでない場合は作成し、**自分のプロジェクトを公開**ボタンをクリックします。
 
-<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
+<!-- スクリーンショットは利用できません: Codeable アカウント作成と自分のプロジェクトを公開ボタン -->
 
-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) プロジェクトを公開すると、プラットフォームはプロジェクトに必要なスキルセットを持つ開発者とあなたをマッチングします。
+[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) のプロジェクトを公開すると、プラットフォームがプロジェクトに必要なスキルセットに合う開発者とつないでくれます。
 
-このプロセスは、WordPress と Ultimate Multisite の経験を持つ適切な人材を見つけるのに役立ちます！
+このプロセスにより、WordPress と Ultimate Multisite の経験を持つ、あなたの仕事に適した人材を見つけやすくなります！
 
-Codeable の最低料金は時給 $70–$120 USD です。見積もりは、作業範囲、複雑さ、プロジェクトの緊急度に応じて変わります。
+Codeable の最低料金は 1 時間あたり 70～120 米ドルです。見積もりは、作業範囲、複雑さ、プロジェクトの緊急度によって変わります。
 
-見積もりを受け取ったら、ニーズに最適な開発者を雇い、プロジェクトを一緒に開始できます！
+見積もりを受け取ったら、ニーズに最も合う開発者を雇い、一緒にプロジェクトを開始できます！

@@ -3,7 +3,7 @@ title: Kas yra WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kas yra WordPress Multisite?
+# Kas yra WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPress coreje pateikiama funkcija, vadinama „Multisite“, kuri atsakinga nuo 2010 m. atidarymo WordPress 3.0. Nuo to laiko ji gauta daug revizijų, kurios tikslas yra įvesti naujus įrenginius ir užtikrinti saugumą.
 
@@ -11,7 +11,7 @@ Pagrindinis požiūris į WordPress Multisite yra tas: Universitetas turi vieną
 
 ##
 
-## Kas tai yra WordPress Multisite?
+## Kas tai yra WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite yra WordPress funkcija, kuri leidžia daugeliui vietų naudoti vieną WordPress instalaciją. Kai multisite įjungiamas, originalus WordPress kitas konvertuojamas palaikyti tai, kas dažnai vadinamas **vietų tinklu**.
 
@@ -23,7 +23,7 @@ Tai reiškia, kad WordPress, tema ir pluginų atnaujinimai reikia atlikti vieną
 
 ##
 
-## Subdomėnis ar Subdirektorius?
+## Subdomėnis ar Subdirektorius? {#subdomain-or-subdirectory}
 
 WordPress multisite gali veikti dviem būdais – ir jums reikia pasirinkti vieną, kai konvertuojate savo įprastą WordPress instalaciją į multisite instalaciją:
 
@@ -49,7 +49,7 @@ Viena vienas iš pagrindiniais iššūkiai įdėta subdomain mode – SSL apimai
 
 Kontrastu su subdirectory mode, subdomainai subdomain-pagrindiniame tinklu yra laikomi ieškojimo engineiais kaip nepriklausomai svetainės, o tai reiškia, kad vienoje subdomain svetainėje esantis turinys ne vaikina kitų subdomainų SEO veiklos.
 
-## Super Adminas
+## Super Adminas {#the-super-admin}
 
 Vienos svetainės WordPress instalacijose leidžia pridėti neapsankiam skaičių vartotojų ir suteikti jiems skirtingus vartotojų vaidmenis su skirtingomis įsipareigojimais.
 
@@ -63,7 +63,7 @@ Pluginus ir temai galima įdėti arba pašalinti tik iš tinklo admininio paneli
 
 _Pastaba: kaip matote, įsitraukdami į savo tinklą ir suteikdami jais superadmin statusą, jūs turite visą kontrolį. Pavyzdžiui, kiti superadminai gali pašalinti jūsų superadmino statusą, efektyviai užblaudžiant jus nuo savo tinklo administratorio panelio. Kad Ultimate Multisite klientai galėtų turėti detalių kontrolę tam, ką papildami superadministratoriai gali daryti, turime add-oną vadinant Support Agents. Šis add-on leidžia jums sukurti kitokį vartotojo tipą – agentą – kuris turi tik tą nurodytą įgaliojimą atlikti savo užduotis tinklyje._
 
-## Kas yra bendras subsite ir kas nėra bendras
+## Kas yra bendras subsite ir kas nėra bendras {#what-is-shared-among-subsites-and-what-is-not}
 
 Kaip jau minėjome, vienas iš pagrindinių pranašumų WordPress multisite yra tas, kad visi subsite dalina vienodias konfigūras, pagrindines veiklas (core files), temų, pluginus, WordPress core failus ir kitus.
 
@@ -73,7 +73,7 @@ Tačiau yra elementai, kurie yra aiški nurodyti kiekvienam subsite bazai.
 - Kiekvienai subsite yra savo skirtas admin panelis ir gali aktyvuoti ar deaktyvuoti pluginus arba temas, jei jie nėra tinklo aktyvi (network active) superadminas.
 - Dažniai duomenų bazės lentelės sukurti kiekvienam subsite, o tai reiškia, kad postai, komentarai, puslapiai, nustatymai ir kitos dalykai yra aiški kiekvienam subsite.
 
-## Vartotojų valdymas WordPress Multisite
+## Vartotojų valdymas WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Vartotojų valdymas WordPress multisite yra jūsų tinklo labiausiai subtiliausias klausimas. WordPress vartotojų lentelė yra vienas iš jautrių, kurie dalinami visais subsite.
 
@@ -97,7 +97,7 @@ _Pastaba: Mes suprantame, kaip tai gali būti blogai, priklausomai nuo jūsų na
 
 Nors užiariajamos vartotojų lentelę, tačiau subsite administratoriai arba superadministratoriai gali pridėti ir pašalinti vartotojus subsite. Taip pat jie gali turėti skirtingus vartotojų vaidmenius skirtingose subsite.
 
-## Naudojimo saugos atsižvelginkai
+## Naudojimo saugos atsižvelginkai {#performance-considerations}
 
 WordPress multisite yra tikrai geras, kai reikalaujama didelio skaičiaus vietų palaikyti. Tai galima patikrinti per tą faktą, kad [WordPress.com](https://WordPress.com), Edublogs ir Campuspress yra multisite bazoti paslaugos, o kiekviena iš jų hostuoja tūkstis vietų.
 

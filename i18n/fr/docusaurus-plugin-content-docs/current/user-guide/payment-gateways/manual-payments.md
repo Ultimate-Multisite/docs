@@ -1,42 +1,46 @@
 ---
 title: Configuration des paiements manuels
 sidebar_position: 20
-_i18n_hash: a780a809c96da21ceb3ec6bb67a016d7
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Configuration des paiements manuels (v2)
+# Configuration des paiements manuels (v2) {#setting-up-manual-payments-v2}
 
-_**NOTE IMPORTANTE : Cet article se réfère à la version 2.x d'Ultimate Multisite.**_
+_**NOTE IMPORTANTE : Cet article concerne Ultimate Multisite version 2.x.**_
 
-Les paiements manuels sont un moyen pour vous d'offrir d'autres méthodes de paiement si **Stripe** ou **PayPal** ne sont pas disponibles pour vos utilisateurs. Il peut s'agir d'un virement bancaire ou d'un autre mode de paiement disponible localement pour vos utilisateurs.
+Les paiements manuels sont un moyen de proposer d’autres modes de paiement si **Stripe** ou **PayPal** ne sont pas disponibles pour vos utilisateurs. Il peut s’agir d’un virement bancaire ou de tout autre mode de paiement disponible localement pour vos utilisateurs.
 
-## Comment activer les paiements manuels
+## Comment activer les paiements manuels {#how-to-enable-manual-payments}
 
-Configurer un paiement manuel est très simple. Vous devez simplement l'activer dans les passerelles de paiement et fournir des instructions détaillées sur la façon dont l'utilisateur doit effectuer le paiement.
+Configurer un paiement manuel est très simple. Il vous suffit de l’activer dans les passerelles de paiement et d’ajouter des instructions détaillées sur la façon dont l’utilisateur doit envoyer le paiement.
 
-Tout d'abord, allez dans **Ultimate Multisite > Settings > Payments**. Sous **Payment Gateways**, activez **Manual**. Vous verrez apparaître une boîte **Payment Instructions**.
+Tout d’abord, allez dans **Ultimate Multisite > Paramètres > Paiements**. Sous **Passerelles de paiement** , activez **Manuel**. Vous verrez alors apparaître une zone **Instructions de paiement**.
 
-Ajoutez à cette boîte les informations dont votre client aura besoin pour effectuer le paiement. Il peut s'agir de vos coordonnées bancaires et de votre adresse e‑mail afin que le client puisse vous envoyer la confirmation de paiement, par exemple.
+Ajoutez dans cette zone les informations dont votre client aura besoin pour effectuer le paiement. Il peut s’agir, par exemple, des coordonnées de votre compte bancaire et de votre adresse e-mail afin que le client puisse vous envoyer la confirmation de paiement.
 
-![Manual payment gateway toggle and payment instructions box](/img/config/settings-payment-gateways.png)
+![Activation de la passerelle de paiement manuel avec une zone de texte Instructions de paiement](/img/config/manual-gateway-expanded.png)
 
-Une fois configuré, cliquez simplement sur **Save Settings** et c'est fait. Lorsqu'un utilisateur s'inscrit à votre réseau, il verra un message l'informant qu'il recevra vos instructions pour finaliser l'achat.
+Voici l’interface des paramètres de la passerelle manuelle :
 
-![Manual payment message shown during registration](/img/config/settings-payment-gateways.png)
+![Paramètres de la passerelle manuelle](/img/config/manual-gateway-settings.png)
 
-Et ils recevront également un message sur votre page **Thank You** contenant vos instructions de paiement.
+Après l’avoir configurée, cliquez simplement sur **Enregistrer les paramètres** et c’est fait. Lorsque les utilisateurs s’inscriront sur votre réseau, ils verront un message leur indiquant qu’ils recevront vos instructions pour finaliser l’achat.
 
-![Thank You page showing payment instructions](/img/config/settings-payment-gateways.png)
+![Message de confirmation d’inscription indiquant à l’utilisateur qu’il recevra les instructions de paiement](/img/frontend/registration-manual-notice.png)
 
-## Confirmation des paiements manuels
+Ils recevront également un message sur votre page **Merci** avec vos instructions de paiement.
 
-Pour confirmer un paiement manuel, accédez au menu **Payments** dans la barre latérale gauche. Vous y verrez tous les paiements de votre réseau ainsi que leurs détails, y compris leur **status**. Un paiement manuel aura toujours le statut **Pending** jusqu'à ce que vous le changiez manuellement.
+<!-- Capture d’écran indisponible : page Merci affichant les instructions de paiement après le paiement -->
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+## Confirmer les paiements manuels {#confirming-manual-payments}
 
-Accédez à la page de paiement en cliquant sur le **reference code**. Sur cette page, vous avez tous les détails du paiement en attente, tels que l'ID de référence, les produits, les horodatages et plus encore.
+Pour confirmer un paiement manuel, allez dans le menu **Paiements** dans la barre de gauche. Vous pouvez y voir tous les paiements de votre réseau et leurs détails, y compris leur **statut**. Un paiement manuel aura toujours le statut **En attente** jusqu’à ce que vous le modifiiez manuellement.
 
-![Payment details page with reference code and products](/img/admin/payments-list.png)
+![Liste des paiements affichant un paiement manuel en attente](/img/admin/payments-list.png)
 
-Dans la colonne de droite, vous pouvez modifier le statut du paiement. Le changer en **Completed** et activer l'option **Activate Membership** permettra d'activer le site de votre client et son abonnement sera actif.
+Accédez à la page du paiement en cliquant sur le **code de référence**. Sur cette page, vous disposez de tous les détails du paiement en attente, tels que l’ID de référence, les produits, les horodatages et plus encore.
 
-![Payment status change to Completed with Activate Membership toggle](/img/admin/payments-list.png)
+![Page de détails du paiement affichant le code de référence, les produits et les totaux](/img/admin/payment-edit.png)
+
+Dans la colonne de droite, vous pouvez modifier le statut du paiement. Le passer à **Terminé** et **activer l’option Activer l’adhésion** activera le site de votre client et son adhésion sera active.
+
+![Page de modification du paiement avec le statut défini sur Terminé et l’option Activer l’adhésion activée](/img/admin/payment-activate-membership.png)

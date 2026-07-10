@@ -3,35 +3,35 @@ title: مقابلة استكشافية
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# مقابلة الاكتشاف (Discovery Interview)
+# مقابلة الاكتشاف (Discovery Interview) {#discovery-interview}
 
 تُعد **مقابلة الاكتشاف** هي الخطوة الأولى في عملية تصميم Theme Builder. فهي تجمع معلومات حول موقعك، وعملك، وتفضيلاتك التصميمية لإنشاء قالب مخصص لك.
 
-## نظرة عامة (Overview)
+## نظرة عامة (Overview) {#overview}
 
 تُرشدك مقابلة الاكتشاف عبر سلسلة من الأسئلة لفهم علامتك التجارية، وجمهورك المستهدف، وأهدافك التصميمية. في الإصدار 1.16.0، أصبحت المقابلة تتضمن الآن **خطوة تحميل الصور**، مما يتيح لك تقديم إلهام بصري لتصميمك.
 
-## خطوات المقابلة (Interview Steps)
+## خطوات المقابلة (Interview Steps) {#interview-steps}
 
-### 1. معلومات العمل (Business Information)
+### 1. معلومات العمل (Business Information) {#1-business-information}
 
 - اسم الموقع والشعار (Tagline)
 - نوع العمل أو الصناعة
 - الأهداف التجارية الأساسية
 - وصف الجمهور المستهدف
 
-### 2. التفضيلات التصميمية (Design Preferences)
+### 2. التفضيلات التصميمية (Design Preferences) {#2-design-preferences}
 
 - نظام الألوان المفضل
 - النمط التصميمي (حديث، كلاسيكي، بسيط، مرح، إلخ)
 - مواقع أو علامات تجارية ملهمة
 - العناصر التصميمية الأساسية التي يجب توافرها
 
-### 3. تحميل الصور (Photo Upload) (جديد في v1.16.0)
+### 3. تحميل الصور (Photo Upload) (جديد في v1.16.0) {#3-photo-upload-new-in-v1160}
 
 قم بتحميل صورة أو أكثر للتأثير على اتجاه التصميم:
 
-#### التنسيقات المقبولة (Accepted Formats)
+#### التنسيقات المقبولة (Accepted Formats) {#accepted-formats}
 
 | التنسيق (Format) | الامتداد (Extension) | التفاصيل (Details) |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 | **WebP** | `.webp` | تنسيق حديث، بحجم ملف أصغر |
 | **GIF** | `.gif` | للصور الثابتة فقط (لا يدعم الرسوم المتحركة) |
 
-#### متطلبات الملف (File Requirements)
+#### متطلبات الملف (File Requirements) {#file-requirements}
 
 - **الحد الأقصى لحجم الملف:** 10 ميجابايت
 - **الحد الأدنى للأبعاد:** 400 × 300 بكسل
 - **الأبعاد الموصى بها:** 1200 × 800 بكسل أو أكبر
 - **نسبة العرض إلى الارتفاع:** أي نسبة مقبولة
 
-#### كيف تؤثر الصور على اتجاه التصميم (How Photos Influence Design Direction)
+#### كيف تؤثر الصور على اتجاه التصميم (How Photos Influence Design Direction) {#how-photos-influence-design-direction}
 
 تساعد الصور التي تقوم بتحميلها Theme Builder على فهم ما يلي:
 
@@ -57,21 +57,21 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **العناصر التصميمية (Design elements)** — الأنماط، والملمس، وأنماط التكوين.
 - **إلهام الخطوط (Typography inspiration)** — أنماط الخطوط التي تكمل المظهر البصري.
 
-### 4. هيكل المحتوى (Content Structure)
+### 4. هيكل المحتوى (Content Structure) {#4-content-structure}
 
 - الصفحات الرئيسية المطلوبة (الصفحة الرئيسية، من نحن، الخدمات، اتصل بنا، إلخ)
 - هل مطلوب قسم مدونة أو أخبار؟
 - هل هناك حاجة لوظائف التجارة الإلكترونية (E-commerce)؟
 - ميزات أو تكاملات خاصة
 
-### 5. المراجعة والتأكيد (Review and Confirmation)
+### 5. المراجعة والتأكيد (Review and Confirmation) {#5-review-and-confirmation}
 
 - ملخص لجميع المعلومات المقدمة
 - التأكيد قبل بدء عملية توليد التصميم
 
-## أفضل الممارسات لتحميل الصور (Photo Upload Best Practices)
+## أفضل الممارسات لتحميل الصور (Photo Upload Best Practices) {#photo-upload-best-practices}
 
-### ما الذي يجب تحميله (What to Upload)
+### ما الذي يجب تحميله (What to Upload) {#what-to-upload}
 
 - **إلهام العلامة التجارية (Brand inspiration)** — الشعارات، أو عينات الألوان، أو إرشادات العلامة التجارية.
 - **مواقع المنافسين (Competitor sites)** — لقطات شاشة لمواقع تعجبك.
@@ -80,7 +80,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **صور الفريق أو المكتب (Team or office photos)** — لأغراض العلامة التجارية الشخصية أو المهنية.
 - **صور نمط الحياة (Lifestyle images)** — التي تمثل جمهورك المستهدف.
 
-### ما يجب تجنبه (What to Avoid)
+### ما يجب تجنبه (What to Avoid) {#what-to-avoid}
 
 - **الصور منخفضة الجودة** — الصور الباهتة أو المكسّلة (Pixelated).
 - **الصور غير ذات الصلة** — الصور التي لا تمثل علامتك التجارية.
@@ -88,7 +88,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **المواد المحمية بحقوق الطبع والنشر** — تأكد من أن لديك الحق في استخدام الصور.
 - **ملفات GIF المتحركة** — تتم معالجة الصور الثابتة فقط.
 
-### نصائح للحصول على أفضل النتائج (Tips for Best Results)
+### نصائح للحصول على أفضل النتائج (Tips for Best Results) {#tips-for-best-results}
 
 1. **قم بتحميل 2-3 صور** — توفر الصور المتعددة سياقًا أفضل.
 2. **استخدم صورًا عالية الجودة** — الصور الواضحة والمضاءة جيدًا هي الأفضل.
@@ -96,7 +96,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 4. **توفير السياق** — صف باختصار سبب اختيارك لكل صورة.
 5. **كن محددًا** — إذا أعجبك عنصر معين، فقم بتوضيحه.
 
-## مخرجات اتجاه التصميم (Design Direction Output)
+## مخرجات اتجاه التصميم (Design Direction Output) {#design-direction-output}
 
 بعد مقابلة الاكتشاف، يقوم Theme Builder بتوليد ما يلي:
 
@@ -106,7 +106,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 - **العناصر البصرية (Visual elements)** — الأيقونات، والأنماط، والعناصر الزخرفية.
 - **لوحة المزاج (Mood board)** — تمثيل بصري لاتجاه التصميم.
 
-## الخطوات التالية (Next Steps)
+## الخطوات التالية (Next Steps) {#next-steps}
 
 بعد إكمال مقابلة الاكتشاف:
 
@@ -115,7 +115,7 @@ _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 3. المتابعة إلى خطوة [Design Direction](./design-direction.md).
 4. يقوم Theme Builder بإنشاء القالب المخصص لك.
 
-## وثائق ذات صلة (Related Documentation)
+## وثائق ذات صلة (Related Documentation) {#related-documentation}
 
 - [Design Direction](./design-direction.md) — مراجعة وتعديل تصميمك.
 - [Hospitality Menus](./hospitality-menus.md) — إنشاء صفحات قوائم منظمة.

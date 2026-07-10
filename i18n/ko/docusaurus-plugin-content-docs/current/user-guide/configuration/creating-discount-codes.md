@@ -1,99 +1,105 @@
 ---
-title: 할인 코드 만들기
+title: 할인 코드 생성
 sidebar_position: 19
-_i18n_hash: 3c7a42fff1710e14a95a32365f893dc3
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# 할인 코드 만들기 (v2)
+# 할인 코드 생성하기 (v2) {#creating-discount-codes-v2}
 
-_**중요 안내: 이 문서는 Ultimate Multisite 버전 2.x를 참조합니다.**_
+_**중요 참고: 이 문서는 Ultimate Multisite 버전 2.x를 다룹니다.**_
 
-Ultimate Multisite를 사용하면 고객의 구독에 할인 코드를 만들어 제공할 수 있습니다. 그리고 만들기도 쉽습니다!
+Ultimate Multisite를 사용하면 고객에게 구독 할인을 제공하기 위한 할인 코드를 만들 수 있습니다. 그리고 생성도 쉽습니다!
 
-## 할인 코드 만들기 및 편집
+## 할인 코드 생성 및 편집 {#creating-and-editing-discount-codes}
 
-할인 코드를 만들거나 편집하려면 **Ultimate Multisite > Discount Codes**로 이동합니다.
+할인 코드를 생성하거나 편집하려면 **Ultimate Multisite > 할인 코드**로 이동하세요.
 
-![](/img/config/discount-codes-list.png)
+![할인 코드 목록 — 코드가 아직 없을 때의 빈 상태](/img/config/discount-codes-empty.png)
 
-여기에는 이미 생성한 할인 코드 목록이 표시됩니다.
+여기에서 이미 생성한 할인 코드 목록을 볼 수 있습니다.
 
-**Add Discount** **Code**를 클릭하면 새 쿠폰을 만들 수 있고, 기존 쿠폰을 편집하려면 마우스를 올려 **Edit**를 클릭하면 됩니다.
+새 쿠폰을 만들려면 **할인** **코드 추가**를 클릭하거나, 기존 항목에 마우스를 올리고 **편집**을 클릭해 편집할 수 있습니다.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![편집 및 삭제 링크가 표시된 호버 동작이 있는 할인 코드 목록](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![페이지 헤더의 할인 코드 추가 버튼](/img/config/discount-codes-add-button.png)
 
-이 페이지로 리디렉션되어 쿠폰 코드를 만들거나 편집할 수 있습니다. 이 예시에서는 새 쿠폰을 만들 것입니다.
+쿠폰 코드를 생성하거나 편집할 페이지로 리디렉션됩니다. 이 예시에서는 새 코드를 생성하겠습니다.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![모든 섹션이 표시된 할인 코드 편집 페이지](/img/config/discount-code-edit.png)
 
-여기에서 사용할 수 있는 설정을 살펴보겠습니다:
+여기에서 사용할 수 있는 설정을 살펴보겠습니다.
 
-**Enter Discount Code:** 이 필드는 할인 코드의 이름입니다. 이는 고객이 결제 시 입력해야 할 코드가 아닙니다.
+**할인 코드 입력:** 할인 코드의 이름입니다. 고객이 결제 양식에서 사용해야 하는 코드는 아닙니다.
 
-**Description:** 여기에서 쿠폰의 용도를 간단히 설명할 수 있습니다.
+**설명:** 여기에서 이 쿠폰의 용도를 간단히 설명할 수 있습니다.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![편집 페이지 상단의 할인 코드 이름 및 설명 필드](/img/config/discount-code-description.png)
 
-**Coupon code:** 여기에서 고객이 결제 시 입력해야 할 코드를 정의합니다.
+할인 코드를 활성 또는 비활성 상태로 볼 수도 있습니다.
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![할인 코드 활성 상태](/img/config/discount-code-active.png)
 
-**Discount:** 여기에서 할인 코드에 대한 **퍼센트** 또는 **고정 금액**을 설정할 수 있습니다.
+**쿠폰 코드:** 고객이 결제 중 입력해야 하는 코드를 정의하는 곳입니다.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![고객이 결제 시 코드를 입력하는 쿠폰 코드 필드](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** 이 옵션이 꺼져 있으면, 이 할인 코드는 **첫 번째 결제**에만 적용됩니다. 나머지 결제에는 할인이 적용되지 않습니다. 이 옵션이 켜져 있으면, 할인 코드는 모든 향후 결제에 유효합니다.
+**할인:** 여기에서 할인 코드에 대해 **백분율** 또는 **고정 금액** 할인을 설정할 수 있습니다.
 
-**Setup fee discount:** 이 옵션이 꺼져 있으면, 쿠폰 코드는 주문의 **설정 수수료**에 대해 할인을 제공하지 않습니다. 이 옵션이 켜져 있으면, 쿠폰 코드가 귀하의 플랜 설정 수수료에 적용할 할인(퍼센트 또는 고정 금액)을 설정할 수 있습니다.
+![백분율 또는 고정 금액 드롭다운이 있는 할인 금액 설정](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**갱신에 적용:** 이 옵션이 꺼져 있으면 이 할인 코드는 **첫 결제**에만 적용됩니다. 다른 모든 결제에는 할인이 적용되지 않습니다. 이 옵션이 켜져 있으면 할인 코드는 향후 모든 결제에 유효합니다.
 
-**Active:** 쿠폰 코드를 수동으로 활성화하거나 비활성화합니다.
+**설정 수수료 할인:** 이 옵션이 꺼져 있으면 쿠폰 코드는 주문의 **설정 수수료에 어떤 할인도 제공하지 않습니다**. 이 옵션이 켜져 있으면 이 쿠폰 코드가 플랜의 설정 수수료에 적용할 할인(백분율 또는 고정 금액)을 설정할 수 있습니다.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![갱신에 적용 및 설정 수수료 할인 토글 옵션](/img/config/discount-code-renewals.png)
 
-**Advanced Options** 아래에는 다음 설정이 있습니다:
+**활성:** 이 쿠폰 코드를 수동으로 활성화하거나 비활성화합니다.
 
-**Limit uses:**
+![할인 코드를 수동으로 활성화 또는 비활성화하는 활성 토글](/img/config/discount-code-active.png)
 
-  * **Uses:** 여기에서 할인 코드가 사용된 횟수를 확인할 수 있습니다.
+**고급 옵션** 아래에는 다음 설정이 있습니다.
 
-  * **Max uses:** 이 값은 사용자가 할인 코드를 사용할 수 있는 최대 횟수를 제한합니다. 예를 들어, 10을 입력하면 쿠폰은 10회만 사용될 수 있습니다. 이 한도 이후에는 쿠폰 코드를 더 이상 사용할 수 없습니다.
+![할인 코드 고급 옵션](/img/config/discount-code-advanced.png)
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+**사용 횟수 제한:**
 
-**Start & expiration dates:** 여기에서 쿠폰에 시작 날짜 및/또는 만료 날짜를 추가할 수 있는 옵션이 있습니다.
+  * **사용 횟수:** 여기에서 할인 코드가 몇 번 사용되었는지 확인할 수 있습니다.
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+  * **최대 사용 횟수:** 사용자가 이 할인 코드를 사용할 수 있는 횟수를 제한합니다. 예를 들어 여기에 10을 입력하면 쿠폰은 10번만 사용할 수 있습니다. 이 제한 이후에는 쿠폰 코드를 더 이상 사용할 수 없습니다.
 
-**Limit products:** **Select products** 옵션을 켜면 모든 제품이 표시됩니다. 수동으로 (켜기/끄기) 쿠폰 코드를 사용할 수 있는 제품을 선택할 수 있습니다. 여기에서 끈 제품은 고객이 쿠폰 코드를 사용해도 변경 사항이 표시되지 않습니다.
+![현재 사용 횟수와 최대 사용 횟수 필드가 있는 사용 횟수 제한 설정](/img/config/discount-code-limit-uses.png)
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+**시작 및 만료 날짜:** 여기에서 쿠폰에 시작 날짜 및/또는 만료 날짜를 추가할 수 있습니다.
 
-이 모든 옵션을 설정한 후 **Save Discount Code**를 클릭하여 쿠폰을 저장하면 완료됩니다!
+![할인 코드 예약을 위한 시작 및 만료 날짜 필드](/img/config/discount-code-dates.png)
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+**상품 제한:** **상품 선택**을 켜면 모든 상품이 표시됩니다. 어떤 상품이 이 쿠폰 코드를 허용할 수 있는지 수동으로 선택(켜기 또는 끄기)할 수 있습니다. 여기에서 꺼진 상품은 고객이 해당 상품에 이 쿠폰 코드를 사용하려고 해도 아무 변화가 표시되지 않습니다.
 
-쿠폰이 이제 목록에 표시되며, 거기에서 **edit or delete**를 클릭할 수 있습니다.
+![상품별 토글 스위치가 있는 상품 제한 섹션](/img/config/discount-code-limit-products.png)
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+이 모든 옵션을 설정한 후 **할인 코드 저장**을 클릭하여 쿠폰을 저장하면 완료됩니다!
 
-### 
+![편집 페이지 하단의 할인 코드 저장 버튼](/img/config/discount-code-save.png)
 
-### URL 매개변수 사용하기:
+이제 쿠폰이 목록에 표시되며, 여기에서 클릭하여 **편집하거나 삭제**할 수 있습니다.
 
-가격표를 사용자 정의하거나 웹사이트에 멋진 쿠폰 코드 페이지를 만들고 결제 양식에 할인 코드를 자동으로 적용하려면 URL 매개변수를 통해 이 작업을 수행할 수 있습니다.
+![편집 및 삭제 호버 동작이 있는 목록의 할인 코드 행](/img/config/discount-codes-list-hover.png)
 
-먼저, 귀하의 플랜에 대한 공유 가능한 링크를 가져와야 합니다. 이를 위해 **Ultimate Multisite > Products**로 이동하여 플랜을 선택합니다.
+###
 
-**Click to Copy Shareable Link** 버튼을 클릭합니다. 그러면 해당 플랜에 대한 공유 가능한 링크가 제공됩니다. 예시에서는 공유 링크가 [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_였습니다.
+### URL 매개변수 사용: {#using-url-parameters}
 
-![Product page with shareable link button](/img/config/products-list.png)
+가격표를 사용자 지정하거나 웹사이트용 멋진 쿠폰 코드 페이지를 만들고 할인 코드를 결제 양식에 자동으로 적용하고 싶다면 URL 매개변수를 통해 이를 수행할 수 있습니다.
 
-이 특정 플랜에 할인 코드를 적용하려면 URL에 **?discount_code=XXX** 매개변수를 추가하면 됩니다. 여기서 **XXX**는 쿠폰 코드입니다.
+먼저 플랜의 공유 가능한 링크를 가져와야 합니다. 이렇게 하려면 **Ultimate Multisite > 상품**으로 이동하여 플랜을 선택하세요.
 
-이 예시에서는 쿠폰 코드 **50OFF**를 이 특정 제품에 적용할 것입니다.
+**클릭하여 공유 가능한 링크 복사** 버튼을 클릭하세요. 그러면 이 특정 플랜에 대한 공유 가능한 링크가 제공됩니다. 이 경우 제공된 공유 가능한 링크는 [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_였습니다._
+
+![공유 가능한 링크 버튼이 있는 상품 페이지](/img/config/products-list.png)
+
+이 특정 플랜에 할인 코드를 적용하려면 URL에 매개변수 **?discount_code=XXX**를 추가하면 됩니다. 여기서 **XXX**는 쿠폰 코드입니다.
+
+이 예시에서는 쿠폰 코드 **50OFF**를 이 특정 상품에 적용하겠습니다.
 
 이 특정 플랜에 50OFF 할인 코드가 적용된 URL은 다음과 같습니다: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 

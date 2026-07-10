@@ -4,11 +4,11 @@ title: Действие - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Действие: wu_handle_user_meta_fields
+# Действие: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Позволяет разработчикам плагинов сохранять пользовательские метаданные различными способами, если им это необходимо.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 | $customer | `\Customer` | Объект клиента Ultimate Multisite. |
 | $checkout | `\Checkout` | Класс оформления заказа. |
 
-### С версии
+### С версии {#since}
 
 - 2.0.4
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) на строке 1244

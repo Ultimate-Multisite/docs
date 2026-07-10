@@ -3,11 +3,11 @@ title: Krav
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Kræftir fyrir Ultimate Multisite
+# Kræftir fyrir Ultimate Multisite {#ultimate-multisite-requirements}
 
 Fyrst sem þú gætir fundið í sér áður en þú kaupir Ultimate Multisite er hvaða kröfur sem eru til að nota við þennan plugin. Vel, það er þó bara nokkrar grunnkröfur til að nota Ultimate Multisite: ein **vöndna náttúru** (domain name), góð **þjónustu fyrir vefsítanum** (hosting provider) og einn WordPress **Multisite** uppsetning. Það er allt sem þú þarft!
 
-## Vöndna Náttúra
+## Vöndna Náttúra {#domain-name}
 
 Byrjum á vöndnu náttúru.
 
@@ -17,7 +17,7 @@ Plugininn okkar býður upp á endurskrifunstjórn (subscription services), fjá
 
 Athugui að hvaða sviði eða nítandi náttúru þú velur, getur styðjað sér með pluginnum okkar á meðan þú sölur vefsítofnar sem þjónustu! Verðu að velja vöndna náttúru sem passar við planinn þinn fyrir viðskipti.
 
-## Þjónusta fyrir Vefshósting
+## Þjónusta fyrir Vefshósting {#hosting-provider}
 
 En nú þegar þú hefur fangarvöndna náttúru sem táknar sviði þitt og viðskiptið, þurftu að velja góða vefsítanþjónustufyrirtenskap til að nota netið með Ultimate Multisite. Það eru nokkar góðar valkostir á markaði. Nokkari vefsítanþjónustufyrirtæki tengjast godt við Ultimate Multisite, sem gæti verið lykilatriði eftir því hvað þú ert að byggja upp.
 
@@ -25,7 +25,7 @@ All hostingsþjónustar þurfa að virka í öllum vefsítum. Einangengur það 
 
 Þegar kemur að tölvupósti servera, er ekki sérstaka formúlur sem áttarferli; það er afhängist á því hvaða eiginleikar og þættir þú býður upp og háð stærð nýlan þín. Sjálfshöfðu hostingu getur verið góðan byrjunspunkt, en þegar nýlan þín byrjar að vaxa, þarftu á sérstaka VPS (Virtual Private Server).
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nú erum að tala um einn litla hluta um Multisite installation í WordPress.
 

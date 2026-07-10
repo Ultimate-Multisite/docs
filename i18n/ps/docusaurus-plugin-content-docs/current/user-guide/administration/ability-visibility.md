@@ -3,11 +3,11 @@ title: د ښودلو وړتیا
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# ښودلو ګါمنولیت (Ability Visibility)
+# ښودلو ګါمنولیت (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 له **Ability Visibility** kontrollونه راغلاستل چې تعیین کوي چې کوم سطحونه هر چا د وړتیاو څرګندوي. دا کار اجازه ورکوي مدیرانو ته چې تنظیم کړي چې کومي ایجن قابلیتونه د REST APIs، MCP سرورونو، WooCommerce هم 통합ات او نورو رابطو له لارې موجود وي.
 
-## Ability Visibility څه دی؟
+## Ability Visibility څه دی؟ {#what-is-ability-visibility}
 
 Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 
@@ -18,9 +18,9 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 
 هر وړتیا یو ښودلو لوري لري چې تعیین کوي چې د مختلف سطحو په ګډون یې چمتو دی.
 
-## ښودلو سطون (Visibility Levels)
+## ښودلو سطون (Visibility Levels) {#visibility-levels}
 
-### عمومي (Public)
+### عمومي (Public) {#public}
 
 **عمومي وړتیاو** هر ځای کې موجود دي:
 
@@ -32,7 +32,7 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 
 مثال: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### داخلي (Internal)
+### داخلي (Internal) {#internal}
 
 **داخلي وړتیاو** یوازې په خپل WordPress هم設置 کې موجود دي:
 
@@ -43,7 +43,7 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 
 مثال: `manage-settings`, `view-analytics`, `export-data`
 
-### شریک (Partner)
+### شریک (Partner) {#partner}
 
 **شریک وړتیاو** یوازې د لیست شوي شریکانو لپاره موجود دي:
 
@@ -54,7 +54,7 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 
 مثال: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### غیر فعال (Disabled)
+### غیر فعال (Disabled) {#disabled}
 
 **غیر فعال وړتیاو** هیڅ ځای کې موجود نه دي:
 
@@ -63,15 +63,15 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 - مدیري پینلو کې موجود نه دی
 - د منقضی شوي یا پریک experiments وړتیاو لپاره ګټور دی
 
-## مدیریت ښکارهوالی (Managing Ability Visibility)
+## مدیریت ښکارهوالی (Managing Ability Visibility) {#managing-ability-visibility}
 
-### د وړتیا ښکارهولو تنظیمات ته چمتو کېدل (Accessing Ability Visibility Settings)
+### د وړتیا ښکارهولو تنظیمات ته چمتو کېدل (Accessing Ability Visibility Settings) {#accessing-ability-visibility-settings}
 
 ۱. راده към **WordPress Admin** → **Superdav AI Agent** → **Settings**
 ۲. върху **Abilities** (حوله/قدرتونه) 탭 باندې کلیک وکړئ
 ۳. تاسو به لیست لرئ ټول نصب شوي وړتیاوو او د دوی ښکارهولو سطون سره
 
-### د وړتیا جزئیاتو لیدل (Viewing Ability Details)
+### د وړتیا جزئیاتو لیدل (Viewing Ability Details) {#viewing-ability-details}
 
 د هر وړتیا باندې کلیک وکړئ ترڅو وګورئ:
 
@@ -82,7 +82,7 @@ Ability Visibility یو اجازه سیستم دی چې کنټرول کوي:
 - **Last updated**: کله د ښکارهولو وروستۍ بدلون کیږي
 - **Status**: په پام کې نیول شوی (Recognized) یا غیر класиفای شوی (Unclassified)
 
-### د ښکارهولو سطونو بدلول (Changing Visibility Levels)
+### د ښکارهولو سطونو بدلول (Changing Visibility Levels) {#changing-visibility-levels}
 
 د یو وړتیاको ښکارهوالی بدلول لپاره:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### ګډ عملیات (Bulk Operations)
+### ګډ عملیات (Bulk Operations) {#bulk-operations}
 
 د ډیری وړتیاوو د ښکارهولو لپاره بدلول:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 ۲. له ګډ عمل (bulk action) دراپډاون څخه یو نوی ښکارهولو سطح غوره کړئ
 ۳. **Apply** (ګرځوي/اجرایئ) باندې کلیک وکړئ
 
-## شریکونو اجازه لیست (Partner Allow-List)
+## شریکونو اجازه لیست (Partner Allow-List) {#partner-allow-list}
 
 د **partner allow-list** هغه بیرونی شریکونه کنټرول کوي چې کولی شي Partner-level وړتیاوو ته ورسره شي.
 
-### شریکونو اضافه کول (Adding Partners)
+### شریکونو اضافه کول (Adding Partners) {#adding-partners}
 
 ۱. راده към **Superdav AI Agent** → **Settings** → **Partners**
 ۲. **Add Partner** (شریک اضافه کړئ) باندې کلیک وکړئ
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 ۴. اختیاري: یو شریکको نوم او توصیف اضافه کړئ
 ۵. **Save** (ذخیره کړئ) باندې کلیک وکړئ
 
-### وړتیاوو ته شریکونه وتړل (Assigning Abilities to Partners)
+### وړتیاوو ته شریکونه وتړل (Assigning Abilities to Partners) {#assigning-abilities-to-partners}
 
 شریک اضافه کولو وروسته:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 ۴. په "Partner allow-list" (همکار اجازه لیست) برخې کې، هغه همکاروको लागि बक्सहरू चेक गर्नुहोस् जसलाई पहुँच चाहिन्छ
 ५. **Save** मा क्लिक وکړئ
 
-### Partner Access हटाउने तरिका
+### Partner Access हटाउने तरिका {#revoking-partner-access}
 
 یه همکارको पहुँच हटाउनको लागि:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 पहुँच तुरुन्तै त्यो ability बाट हट्छ।
 
-## Unclassified Abilities (वर्गीकृत नभएका क्षमताहरू)
+## Unclassified Abilities (वर्गीकृत नभएका क्षमताहरू) {#unclassified-abilities}
 
 जब तपाईंले कुनै तेस्रो पक्षको ability (क्षमता) इन्स्टल गर्नुहुन्छ जुन Superdav AI Agent ले चिनदैन, त्यसलाई **Unclassified** (वर्गीकृत नभएको) मानिन्छ।
 
-### Unclassified Abilities को लागि एडमिन सूचना
+### Unclassified Abilities को लागि एडमिन सूचना {#admin-notice-for-unclassified-abilities}
 
 तपाईं एउटा एडमिन सूचना देख्नुहुनेछ:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Unclassified Abilities को समीक्षा गर्ने तरिका
+### Unclassified Abilities को समीक्षा गर्ने तरिका {#reviewing-unclassified-abilities}
 
 १. सूचनामा **Review Abilities** (क्षमताहरूको समीक्षा गर्नुहोस्) मा क्लिक गर्नुहोस्
 २. हरेक unclassified ability को लागि, तपाईंले निम्न कुराहरू देख्नुहुनेछ:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 ४. आफ्नो निर्णय सुरक्षित गर्न **Classify** मा क्लिक गर्नुहोस्
 
-### Unclassified Abilities लाई किन Classify गर्ने?
+### Unclassified Abilities लाई किन Classify गर्ने? {#why-classify-unclassified-abilities}
 
 ability हरूलाई वर्गीकरण गर्नुको कारण:
 
@@ -187,9 +187,9 @@ ability हरूलाई वर्गीकरण गर्नुको का
 - **सुविधा सक्षम गर्छ**: एक पटक वर्गीकृत भएपछि, त्यो ability उपलब्ध हुन्छ
 - **निर्णयहरूको दस्तावेज गर्छ**: तपाईंको छनोटहरू लेखापरीक्षण (audit) प्रयोजनका लागि रेकर्ड गरिन्छ
 
-## دِگر سطوح کې ښودل (Visibility in Different Surfaces)
+## دِگر سطوح کې ښودل (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **عام توانونه (Public abilities)** له لارې REST endpoints څخه رامنځته کیږي:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **داخلي او همکار توانونه (Internal and Partner abilities)** له لارې REST API کې موجود نه دي.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **عام توانونه (Public abilities)** له لارې MCP رامنځته کیږي:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **همکار توانونه (Partner abilities)** یوازې همکار معلومات (credentials) د لارې موجود دي.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 د WooCommerce سره تړلي **عام توانونه (Public abilities)** رامنځته کیږي:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **داخلي توانونه (Internal abilities)** د WooCommerce لپاره ښکاره نه دي.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 د چټ (chat) کې **تمام توانونه** (عام، داخلي، همکار) د کارونکي اجازهو پر اساس رامنځته کیږي:
 
@@ -235,34 +235,34 @@ Available abilities:
 - معمول کارونکي یوازې عام توانونه ویني
 - همکاران عام + همکار توانونه ویني (که دوی لیست کې شامل وي)
 
-## امنیتཀྱི་ غوره عملونه (Security Best Practices)
+## امنیتཀྱི་ غوره عملونه (Security Best Practices) {#security-best-practices}
 
-### کمترین امتیازको सिद्धान्त (Principle of Least Privilege)
+### کمترین امتیازको सिद्धान्त (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - توانونه د هغه محدودیت په ترتیب سره تنظیم کړئ چې دوی کارولای شي.
 - حساس کارونو لپاره همکار توانونه प्रयोग کړئ.
 - هغه توانونه غیر فعال کړئ چې تاسو یې کار نه کوئ.
 
-### منظم معاینې (Regular Audits)
+### منظم معاینې (Regular Audits) {#regular-audits}
 
 - هر ماه توانوको ښودل پر مهال بیاکتنه وکړئ.
 - غیر класиفای شوي توانونه وګورئ.
 - کار नगर्ने همکارانو ته ورته رسېدلو بند کړئ.
 
-### لاگ او نزاوي (Logging and Monitoring)
+### لاگ او نزاوي (Logging and Monitoring) {#logging-and-monitoring}
 
 - وګورئ چې کوم توانونه ډېر کارل کیږي.
 - همکاران د رسېدلو نمونې تعقیب کړئ.
 - غیر معمول توانوको کار کولو پر اطلاع ورکړئ.
 
-### درې درې ورته توانونه (Third-Party Abilities)
+### درې درې ورته توانونه (Third-Party Abilities) {#third-party-abilities}
 
 - فعالولو अ deg Third-party abilities بیاکتنه وکړئ.
 - دوی واضح ډول класиفای کړئ.
 - داخلي یا همکار ښودل څخه আৰম্ভ وکړئ.
 - تایید وروسته یې عام ته پورته کړئ.
 
-## مشکلات حل (Troubleshooting)
+## مشکلات حل (Troubleshooting) {#troubleshooting}
 
 **یه قابلیت توی لیست نمایش داده نمی‌شه**
 - مطمئن بشید که اون قابلیت نصب و فعال هست
@@ -285,7 +285,7 @@ Available abilities:
 - چک کنید که دسته‌بندی شما ذخیره شده باشه
 - مطمئن شوید افزونه‌ای که این قابلیت رو فراهم می‌کنه به‌روز هست
 
-## مهاجرت از حالت قدیمی (Migration from Legacy Mode)
+## مهاجرت از حالت قدیمی (Migration from Legacy Mode) {#migration-from-legacy-mode}
 
 اگر دارید از نسخه قدیمی Superdav AI Agent ارتقا می‌کنید:
 
@@ -295,7 +295,7 @@ Available abilities:
 
 برای جزئیات بیشتر در مورد انتقال به ادغام API قابلیت‌های بومی (native Abilities API integration)، به **مهاجرت حالت شخص ثالث (Third-Party Mode Migration)** مراجعه کنید.
 
-## مراحل بعدی (Next Steps)
+## مراحل بعدی (Next Steps) {#next-steps}
 
 بعد از تنظیم دید قابلیت‌ها:
 

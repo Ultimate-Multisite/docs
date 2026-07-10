@@ -3,7 +3,7 @@ title: 사이트 관리
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# 사이트 관리
+# 사이트 관리 {#managing-sites}
 
 사이트(또는 서브사이트)는 귀하의 WaaS 비즈니스의 핵심입니다. Ultimate Multisite에는 3가지 유형의 사이트가 있습니다:
 
@@ -11,13 +11,13 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 - **사이트 템플릿** — 고객이 시작점으로 선택할 수 있는 사전 정의된 사이트
 - **메인 사이트** — 귀하의 주요 네트워크 사이트
 
-## 사이트 보기
+## 사이트 보기 {#viewing-sites}
 
 **Ultimate Multisite → Sites**로 이동하여 네트워크의 모든 서브사이트를 확인하세요. 각 사이트는 유형별로 라벨이 붙어 있으며 All Sites, Customer-Owned, Templates, Pending 중에서 필터링할 수 있습니다.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## 새 사이트 추가
+## 새 사이트 추가 {#adding-a-new-site}
 
 **Add Site** 버튼을 클릭하여 새 사이트를 만드세요. 다음 정보를 제공해야 합니다:
 
@@ -27,15 +27,15 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 **Copy Site** 옵션을 사용하면 기존 사이트 템플릿을 기반으로 새 사이트를 만들 수 있습니다. 활성화 시 시작점으로 사용할 템플릿을 선택할 수 있습니다. **Copy Media on Duplication**이 활성화되어 있어야 미디어 파일이 포함됩니다.
 
-## 기존 사이트 관리
+## 기존 사이트 관리 {#managing-an-existing-site}
 
 사이트 중 **Manage**를 클릭하면 **Edit Site** 페이지가 열립니다. 여기에서 다음을 확인할 수 있습니다:
 
-### 기본 정보
+### 기본 정보 {#basic-information}
 
 사이트 이름, 유형, 사이트 ID 및 설명이 표시됩니다. 또한 매핑된 도메인, 연결된 멤버십, 사이트를 소유한 고객 계정도 확인할 수 있습니다.
 
-### 사이트 옵션
+### 사이트 옵션 {#site-options}
 
 사이트의 기능 및 한계를 구성합니다:
 
@@ -47,7 +47,7 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 기본적으로 사이트는 멤버십 수준에서 설정된 한계를 따릅니다. 사이트 수준에서 한계를 설정하면 멤버십 설정이 무시됩니다.
 
-### 연관
+### 연관 {#associations}
 
 사이트 옵션 아래에 다음과 같은 정보가 표시됩니다:
 
@@ -55,7 +55,7 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 - **Membership** — 사이트가 속한 멤버십
 - **Customer account** — 사이트와 연결된 고객 계정
 
-### 오른쪽 사이드바
+### 오른쪽 사이드바 {#right-sidebar}
 
 오른쪽 사이드바에서 다음을 수행할 수 있습니다:
 

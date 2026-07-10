@@ -1,86 +1,122 @@
 ---
 title: Kutembelea Paneli ya Msimamizi
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Kutembelea Paneli ya Msimamizi
+# Kutembelea Paneli ya Admin {#touring-the-admin-panel}
 
-Ultimate Multisite inalenga kuwa rahisi na inayojieleza yenyewe kadri inavyowezekana, lakini kwa zana yenye nguvu kama hii, inaweza kusaidia kuwa na mwongozo wa kutembeza. Hebu tupitie kurasa za msimamizi ili kukusaidia kuelewa vizuri.
+Ultimate Multisite inalenga kuwa rahisi na inayoeleweka yenyewe kadiri iwezekanavyo, lakini kwa zana yenye nguvu hivi inaweza kusaidia kuwa na ziara iliyoongozwa. Hebu tupitie kurasa za admin ili kukusaidia kuelewa mahali ulipo.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-**Dashboard** ya Ultimate Multisite inaonyesha ripoti za msingi na takwimu ikiwa ni pamoja na mapato, shughuli za tovuti, ukuaji wa uanachama, idadi ya wageni, na data za kijiografia.
+**Dashboard** ya Ultimate Multisite inaonyesha ripoti za msingi na takwimu ikijumuisha mapato, shughuli za tovuti, ukuaji wa uanachama, idadi ya wageni, na data ya kijiografia.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Huu hapa mwonekano kamili wa dashboard:
 
-**Checkout Forms** zinakupa uwezo wa kuunda kurasa za usajili zilizobinafsishwa. Unaweza kubadilisha sehemu, kuingiza classes na scripts za kipekee, na kuzuia ufikiaji kulingana na nchi au eneo la mgeni.
+![Ukurasa kamili wa Ultimate Multisite Dashboard](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+Na sehemu ya chini ya dashboard:
 
-## Products
+![Sehemu ya chini ya Ultimate Multisite Dashboard](/img/admin/um-dashboard-bottom.png)
 
-Sehemu ya **Products** ndiyo mahali unapounda mipango tofauti, pakiti, na huduma kwa mtandao wako. Weka bei, mzunguko wa malipo, na vikomo kwenye ngazi ya bidhaa.
+Huu pia ni mwonekano kamili wa dashboard ya mtandao:
 
-![Products list](/img/admin/products-list.png)
+![Ukurasa kamili wa Network Dashboard](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Fomu za Kukamilisha Ununuzi {#checkout-forms}
 
-Ukurasa wa **Memberships** unaonyesha usajili wote katika mtandao wako. Kagua na uhariri maelezo ya usajili ikiwa ni pamoja na mipango, bidhaa, kiasi na mzunguko wa malipo, historia ya malipo, na tarehe.
+**Fomu za Kukamilisha Ununuzi** hukupa unyumbufu wa kuunda kurasa maalum za usajili. Unaweza kubinafsisha sehemu, kuingiza madarasa na hati maalum, na kuzuia ufikiaji kulingana na nchi au eneo la mgeni.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Orodha ya Fomu za Kukamilisha Ununuzi](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Bidhaa {#products}
 
-Ukurasa wa **Payments** unatoa mtazamo wa haraka wa historia ya malipo katika mtandao wako wote, ukiwa na maelezo ya kina ya miamala ikiwa ni pamoja na bidhaa maalum na kiasi.
+Sehemu ya **Bidhaa** ndipo unapounda mipango, vifurushi, na huduma tofauti kwa ajili ya mtandao wako. Bainisha bei, marudio ya bili, na mipaka na mgao katika kiwango cha bidhaa.
 
-![Payments list](/img/admin/payments-list.png)
+![Orodha ya Bidhaa](/img/admin/products-list.png)
 
-## Customers
+## Uanachama {#memberships}
 
-Ukurasa wa **Customers** unaonyesha wanachama wote waliosajiliwa katika mtandao wako ukiwa na taarifa za msingi za mtumiaji ikiwa ni pamoja na jina, anwani ya barua pepe, kuingia mara ya mwisho, na kiungo cha "switch to" kwa kuingia kwenye tovuti yao ndogo.
+Ukurasa wa **Uanachama** unaonyesha usajili wote katika mtandao wako. Kagua na uhariri maelezo ya usajili ikijumuisha mipango, bidhaa, kiasi cha bili na marudio, historia ya malipo, na mihuri ya muda.
 
-![Customers list](/img/admin/customers-list.png)
+![Orodha ya Uanachama](/img/admin/memberships-list.png)
 
-## Sites
+## Malipo {#payments}
 
-Ukurasa wa **Sites** unaorodhesha tovuti zote ndogo katika mtandao wako ikiwa ni pamoja na templates za tovuti na tovuti zinazomilikiwa na wateja. Simamia kwa urahisi domains zilizounganishwa, vikomo, plugins na themes, na picha ndogo za tovuti.
+Ukurasa wa **Malipo** hutoa mwonekano wa haraka wa historia ya malipo katika mtandao wako wote, ukiwa na taarifa za kina za miamala ikijumuisha bidhaa na kiasi maalum.
 
-![Sites list](/img/admin/sites-list.png)
+![Orodha ya Malipo](/img/admin/payments-list.png)
 
-## Domains
+## Wateja {#customers}
 
-Ukurasa wa **Domains** umejitolea kwa domains za kipekee zilizounganishwa na tovuti ndogo. Kama super admin, unaweza kuongeza au kuunganisha majina ya domain kwa mkono na kuona rekodi za DNS na kumbukumbu.
+Ukurasa wa **Wateja** unaonyesha wanachama wote waliosajiliwa katika mtandao wako wenye taarifa za msingi za mtumiaji ikijumuisha jina, anwani ya barua pepe, kuingia mara ya mwisho, na kiungo cha "badili kwenda" kwa ajili ya kuingia kwenye tovuti yao ndogo.
 
-![Domains list](/img/admin/domains-list.png)
+![Orodha ya Wateja](/img/admin/customers-list.png)
 
-## Discount Codes
+## Tovuti {#sites}
 
-**Discount Codes** zinakuruhusu kuunda misimbo ya kuponi kutoa punguzo kwa watumiaji wako wa mwisho. Bainisha thamani ya punguzo na ulenga watumiaji au vikundi maalum.
+Ukurasa wa **Tovuti** huorodhesha tovuti zote ndogo katika mtandao wako ikijumuisha violezo vya tovuti na tovuti zinazomilikiwa na wateja. Dhibiti kwa urahisi vikoa vilivyowekwa ramani, mipaka na mgao, plugins na themes, na vijipicha vya tovuti.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Orodha ya Tovuti](/img/admin/sites-list.png)
 
-## Broadcasts
+## Vikoa {#domains}
 
-**Broadcasts** ni zana ya kutuma matangazo au ujumbe wa faragha kwa watumiaji wa tovuti zako ndogo. Lenga vikundi maalum vya watumiaji kulingana na mpango au bidhaa waliyojisajili.
+Ukurasa wa **Vikoa** umejitolea kwa vikoa maalum vilivyowekwa ramani kwenye tovuti ndogo. Kama admin mkuu, unaweza kuongeza au kuweka ramani majina maalum ya vikoa kwa mikono na kutazama rekodi za DNS na kumbukumbu.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Orodha ya Vikoa](/img/admin/domains-list.png)
 
-## Settings
+## Misimbo ya Punguzo {#discount-codes}
 
-Ukurasa wa **Settings** ndipo unapoweka mipangilio ya Ultimate Multisite — mipangilio ya usajili, malipo, API na webhooks, uunganishaji wa domain, na miunganisho mingine.
+**Misimbo ya Punguzo** hukuruhusu kuunda misimbo ya kuponi ili kutoa punguzo kwa watumiaji wako wa mwisho. Bainisha thamani ya punguzo na walenge watumiaji au vikundi maalum.
 
-![Settings page](/img/admin/settings-general.png)
+![Orodha ya Misimbo ya Punguzo](/img/admin/discount-codes-list.png)
 
-## Events
+## Matangazo ya Jumla {#broadcasts}
 
-Ukurasa wa **Events** unahifadhi rekodi ya matukio na kumbukumbu zote katika mtandao wako. Unafuatilia shughuli kama mabadiliko ya mipango, usajili, na harakati nyingine — muhimu kwa kufuatilia multisite yako.
+**Matangazo ya Jumla** ni zana ya kusambaza matangazo au kutuma ujumbe binafsi kwa watumiaji wa tovuti zako ndogo. Lenga vikundi maalum vya watumiaji kulingana na mpango au bidhaa ambayo wamejisajili nayo.
 
-![Events list](/img/admin/events-list.png)
+![Orodha ya Matangazo ya Jumla](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Mipangilio {#settings}
 
-**Webhooks** zinakuruhusu kutuma data kwa programu nyingine. Ni muhimu kwa kutuma data kutoka Ultimate Multisite kwenda majukwaa kama Zapier.
+Ukurasa wa **Mipangilio** ndipo unaposanidi Ultimate Multisite — mipangilio ya usajili, malipo, API na webhooks, uwekaji ramani wa vikoa, na miunganisho mingine.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+Mipangilio ya kiunganishi cha AI huorodhesha makundi ya watoa huduma wa OAuth yanayoungwa mkono kwa sasa: Anthropic Max, OpenAI ChatGPT/Codex, na Google AI Pro. Kila kadi ya mtoa huduma huruhusu admins wakuu kuunganisha akaunti, kuonyesha upya akaunti zilizohifadhiwa, kuondoa akaunti kwa barua pepe, na kutumia mbadala wa OAuth wa mikono wakati mazingira ya sandbox yanapozuia uelekezaji upya wa kivinjari. Chaguo za usanidi wa Cursor Pro zimeondolewa kwenye paneli ya admin.
+
+Akaunti za ChatGPT/Codex zinaunga mkono matumizi ya zana yanayotegemea kiunganishi pale ambapo operesheni inaruhusu zana, hivyo mitiririko ya kazi ya admin inayotegemea operesheni zinazoungwa mkono na kiunganishi inaweza kutumia tabia ya zana ya Codex baada ya akaunti ya OpenAI kuunganishwa.
+
+![Ukurasa wa Mipangilio](/img/admin/settings-general.png)
+
+Huu hapa mwonekano kamili wa ukurasa wa mipangilio ya jumla:
+
+![Ukurasa kamili wa mipangilio ya jumla](/img/admin/settings-general-full.png)
+
+Na ukurasa wa mipangilio ya barua pepe:
+
+![Ukurasa kamili wa mipangilio ya barua pepe](/img/admin/settings-emails-full.png)
+
+Na ukurasa wa mipangilio ya malipo:
+
+![Ukurasa kamili wa mipangilio ya malipo](/img/admin/settings-payments-full.png)
+
+Na sehemu ya chini ya mipangilio ya malipo:
+
+![Sehemu ya chini ya mipangilio ya malipo](/img/admin/settings-payments-bottom.png)
+
+Na ukurasa wa mipangilio ya tovuti:
+
+![Ukurasa kamili wa mipangilio ya tovuti](/img/admin/settings-sites-full.png)
+
+## Matukio {#events}
+
+Ukurasa wa **Matukio** huhifadhi rekodi ya matukio yote na kumbukumbu katika mtandao wako. Hufuatilia shughuli kama mabadiliko ya mpango, usajili mpya, na mienendo mingine — muhimu kwa kufuatilia multisite yako.
+
+![Orodha ya Matukio](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks** hukuruhusu kuwasilisha data kwa programu nyingine. Ni muhimu kwa kutuma data kutoka Ultimate Multisite kwenda kwenye mifumo kama Zapier.
+
+![Orodha ya Webhooks](/img/admin/webhooks-list.png)

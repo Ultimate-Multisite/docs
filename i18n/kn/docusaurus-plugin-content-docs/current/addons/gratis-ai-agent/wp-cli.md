@@ -3,11 +3,11 @@ title: WP-CLI Reference
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI ರೆಫರೆನ್ಸ್
+# WP-CLI ರೆಫರೆನ್ಸ್ {#wp-cli-reference}
 
 Gratis AI Agent, ಏಜೆಂಟ್ ಅನ್ನು benchmark ಮಾಡಲು, ಸಾಮರ್ಥ್ಯಗಳನ್ನು ನಿರ್ವಹಿಸಲು ಮತ್ತು command line ನಿಂದ ಏಜೆಂಟ್ ಸ್ಥಿತಿಯನ್ನು query ಮಾಡಲು `wp gratis-ai-agent` command family ಅನ್ನು ಒದಗಿಸುತ್ತದೆ. ಎಲ್ಲಾ commands ಗಳಿಗೆ WP-CLI 2.0 ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿನದರ ಅಗತ್ಯವಿದೆ.
 
-## Installation
+## Installation {#installation}
 
 ಪ್ಲಗ್ಇನ್ ಆಕ್ಟಿವ್ ಆದಾಗ WP-CLI commands ಸ್ವಯಂಚಾಲಿತವಾಗಿ register ಆಗುತ್ತವೆ. ಇದನ್ನು ಪರಿಶೀಲಿಸಲು:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 ಇದು ಏಜೆಂಟ್ ಸಾಮರ್ಥ್ಯಗಳ benchmark suite ಅನ್ನು ಚಲಾಯಿಸುತ್ತದೆ — ಇದು ಸಂಪೂರ್ಣ ಸಾಮರ್ಥ್ಯದ ವ್ಯಾಪ್ತಿಯನ್ನು ಪರೀಕ್ಷಿಸುವ ಸಂಕೀರ್ಣ, ಬಹು-ಹಂತದ prompts ಗಳ ಗುಂಪಾಗಿದೆ. model performance ಅನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು, AI providers ಗಳನ್ನು ಹೋಲಿಸಲು, ಅಥವಾ production ಗೆ ನಿಯೋಜಿಸುವ ಮೊದಲು ability packs ಗಳನ್ನು ಪರಿಶೀಲಿಸಲು ಇದನ್ನು ಬಳಸಿ.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | output format: `table` (default), `json`, `csv` |
 | `--save` | ಐತಿಹಾಸಿಕ ಹೋಲಿಕೆಗಾಗಿ benchmark ಫಲಿತಾಂಶಗಳನ್ನು database ನಲ್ಲಿ ಉಳಿಸಿ |
 
-### Examples
+### Examples {#examples}
 
 ಪ್ರಸ್ತುತ provider ಮತ್ತು model ಬಳಸಿ ಸಂಪೂರ್ಣ benchmark suite ಅನ್ನು ಚಲಾಯಿಸಿ:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 benchmark ಪ್ರತಿ question ಗಾಗಿ ಒಂದು row ಅನ್ನು ಈ ಕೆಳಗಿನ columns ಗಳೊಂದಿಗೆ output ಮಾಡುತ್ತದೆ:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 default suite တွင် ಇವುಗಳು ಸೇರಿವೆ:
 
@@ -95,11 +95,11 @@ default suite တွင် ಇವುಗಳು ಸೇರಿವೆ:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 install ಆಗಿರುವ ಸಾಮರ್ಥ್ಯಗಳು (abilities) ಮತ್ತು ability packs ಗಳನ್ನು ನಿರ್ವಹಿಸುತ್ತದೆ.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 register ಆಗಿರುವ ಎಲ್ಲಾ ಸಾಮರ್ಥ್ಯಗಳು, ಅವುಗಳ ಮೂಲ (core ಅಥವಾ pack), ಮತ್ತು ಅವುಗಳ ಪ್ರಸ್ತುತ ಸ್ಥಿತಿಯನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 registry ನಿಂದ ability pack ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ ಮತ್ತು ಆಕ್ಟಿವೇಟ್ ಮಾಡುತ್ತದೆ.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 pack ಅನ್ನು ತೆಗೆದುಹಾಕದೆ ನಿರ್ದಿಷ್ಟ ಸಾಮರ್ಥ್ಯವನ್ನು (ability) disable ಮಾಡುತ್ತದೆ. ಇದು ಒಂದು ನಿರ್ದಿಷ್ಟ site ನಲ್ಲಿ ಏಜೆಂಟ್‌ನ ವ್ಯಾಪ್ತಿಯನ್ನು 제한 ಮಾಡಲು ಉಪಯುಕ್ತವಾಗಿದೆ.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 ಈ ಹಿಂದೆ disable ಮಾಡಿದ ಸಾಮರ್ಥ್ಯವನ್ನು ಮರು-enable ಮಾಡುತ್ತದೆ.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 ಪ್ರಸ್ತುತ ಏಜೆಂಟ್ ಕಾನ್ಫಿಗರೇಶನ್ ಮತ್ತು connectivity ಸ್ಥಿತಿಯನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 debug log ನಿಂದ ಇತ್ತೀಚಿನ ಏಜೆಂಟ್ activity ಅನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 ಏಜೆಂಟ್ ಸ್ಥಿತಿಯನ್ನು ಮರುಹೊಂದಿಸುತ್ತದೆ: inject ಮಾಡಿದ CSS ಅನ್ನು clear ಮಾಡುತ್ತದೆ, ಏಜೆಂಟ್-register ಮಾಡಿದ CPTs ಮತ್ತು taxonomies ಗಳನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ, global styles ಗಳನ್ನು reset ಮಾಡುತ್ತದೆ ಮತ್ತು ಏಜೆಂಟ್‌ನ options cache ಅನ್ನು ಖಾಲಿ ಮಾಡುತ್ತದೆ. ಇದು plugin ಅಥವಾ ಅದರ settings ಗಳನ್ನು ತೆಗೆದುಹಾಕುವುದಿಲ್ಲ.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 ಎಲ್ಲಾ commands ಯಶಸ್ವಿಯಾದಾಗ `0` ಅನ್ನು exit ಮಾಡುತ್ತವೆ. non-zero exit codes:
 

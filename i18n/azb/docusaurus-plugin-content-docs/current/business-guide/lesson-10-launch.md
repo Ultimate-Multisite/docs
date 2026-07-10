@@ -3,19 +3,19 @@ title: 'Lekson 10: Uthkri Day'
 sidebar_position: 11
 _i18n_hash: 49ba467b8efba57e92cf072bcec53969
 ---
-# Ders 10: Lansman Günü
+# Ders 10: Lansman Günü {#lesson-10-launch-day}
 
 Her şey hazır. Kapıları açmadan önce, bu ders hiçbir şeyin bozuk, eksik veya utanç verici olmadığından emin olmak için ön lansman kontrol listesini inceliyor.
 
-## Nerede Kalmıştık
+## Nerede Kalmıştık {#where-we-left-off}
 
 FitSite'ta şablonlar, planlar, ödeme (checkout), marka kimliği, kullanıcıya alıştırma (onboarding) ve fiyatlandırma ayarları yapıldı. Şimdi her şeyin çalıştığını doğrulayıp yayına geçiyoruz.
 
-## Ön Lansman Kontrol Listesi
+## Ön Lansman Kontrol Listesi {#pre-launch-checklist}
 
 Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 
-### Platform Altyapısı
+### Platform Altyapısı {#platform-infrastructure}
 
 - [ ] Barındırma (Hosting) stabil ve yük altında iyi performans gösteriyor mu
 - [ ] Wildcard SSL aktif mi ve tüm alt alan adları HTTPS üzerinden hizmet veriyor mu
@@ -23,7 +23,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Yedeklemeler yapılandırıldı ve test edildi mi (doğrulamak için en az birini geri yükleyin)
 - [ ] İzleme (Monitoring) sistemi kuruldu mu -- platformun çöktüğünü bilecek misiniz?
 
-### Şablonlar
+### Şablonlar {#templates}
 
 - [ ] Üç şablon da yeni sitelerde doğru yüklenebiliyor mu
 - [ ] Yer tutucu içerik yardımcı ve yazım hatasız mı
@@ -32,7 +32,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Sayfa yükleme hızı kabul edilebilir mi (GTmetrix veya PageSpeed Insights gibi bir araçla test edin)
 - [ ] Her şablonda kırık bağlantı veya eksik varlık yok mu
 
-### Planlar ve Ürünler
+### Planlar ve Ürünler {#plans-and-products}
 
 - [ ] Üç plan da aktif ve görünür durumda mı
 - [ ] Plan açıklamaları doğru ve nişe özel mi
@@ -42,7 +42,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Sipariş artırıcılar (Order bumps) ödeme sırasında doğru görünüyor mu
 - [ ] Plugin ve tema kısıtlamaları her plana göre doğru uygulanıyor mu
 
-### Ödeme Akışı (Checkout Flow)
+### Ödeme Akışı (Checkout Flow) {#checkout-flow}
 
 - [ ] Her plan için tam bir test kayıt işlemi yapın (test ödeme modunu kullanın)
 - [ ] Şablon seçimi, plana göre doğru şablonları gösteriyor mu
@@ -52,7 +52,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Müşteri, yeni sitesine hemen giriş yapabiliyor mu
 - [ ] İndirim kodları doğru çalışıyor mu
 
-### Marka Kimliği (Branding)
+### Marka Kimliği (Branding) {#branding}
 
 - [ ] Giriş sayfası FitSite markasını gösteriyor mu
 - [ ] Yönetici paneli (Admin dashboard) FitSite markasını gösteriyor mu
@@ -60,7 +60,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Faturalar, işletme detaylarınızla birlikte doğru bir şekilde gösteriliyor mu
 - [ ] Pazarlama sitesi yayında ve ödeme formuna bağlantı veriyor mu
 
-### Kullanıcıya Alıştırma (Onboarding)
+### Kullanıcıya Alıştırma (Onboarding) {#onboarding}
 
 - [ ] Hızlı Başlangıç (Quick Start) widget'ı yeni müşteri panolarında görünüyor mu
 - [ ] Tüm Hızlı Başlangıç bağlantıları doğru sayfalara yönlendiriyor mu
@@ -68,7 +68,7 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Bilgi tabanı makaleleri yayınlandı ve erişilebilir durumda mı
 - [ ] Hesap sayfası doğru plan bilgilerini ve yükseltme seçeneklerini gösteriyor mu
 
-### Yasal ve İşletme
+### Yasal ve İşletme {#legal-and-business}
 
 - [ ] Hizmet Şartları yayınlandı ve ödeme sayfasından bağlantı verilmiş mi
 - [ ] Gizlilik politikası yayınlandı ve erişilebilir durumda mı
@@ -77,11 +77,11 @@ Her maddeyi tek tek kontrol edin. Hiçbirini atlamayın.
 - [ ] Ödeme ağ geçidi (Payment gateway) canlı modda mı (test modunda değil)
 - [ ] Vergi yapılandırması yetki alanınız için doğru mu
 
-## Yumuşak Lansman vs. Resmi Lansman
+## Yumuşak Lansman vs. Resmi Lansman {#soft-launch-vs-hard-launch}
 
 İki aşamalı bir lansmanı düşünün:
 
-### Aşama 1: Yumuşak Lansman (Soft Launch)
+### Aşama 1: Yumuşak Lansman (Soft Launch) {#phase-1-soft-launch}
 
 Halka açık lansmandan önce 5-10 fitness stüdyosu sahibini kaydolmaya davet edin. Bunlar beta müşterilerinizdir. Karşılığında onlara önemli bir indirim (ömür boyu %50 indirim veya 3 ay ücretsiz) teklif edin:
 
@@ -91,7 +91,7 @@ Halka açık lansmandan önce 5-10 fitness stüdyosu sahibini kaydolmaya davet e
 
 Bu size gerçek müşteri geri bildirimi ve halka açılmadan önce sergileyeceğiniz canlı siteler sağlar.
 
-### Aşama 2: Resmi Lansman (Public Launch)
+### Aşama 2: Resmi Lansman (Public Launch) {#phase-2-public-launch}
 
 Yumuşak lansman geri bildirimleri dahil edildikten sonra:
 
@@ -100,7 +100,7 @@ Yumuşak lansman geri bildirimleri dahil edildikten sonra:
 - Müşteri edinmeye başlayın (Ders 11)
 - İlgili fitness sektör kanallarında duyurun
 
-## Lansman Günü Yapılacaklar
+## Lansman Günü Yapılacaklar {#launch-day-actions}
 
 Halka açık olacağınız gün:
 
@@ -110,7 +110,7 @@ Halka açık olacağınız gün:
 4. **Hazır olun** -- ilk gerçek müşterileriniz yardıma ihtiyaç duyabilir ve hızlı yanıt güven inşa eder
 5. **Kısa bir kutlama yapın** -- sonra işinize geri dönün
 
-## Ne Yanlış Gidebilir
+## Ne Yanlış Gidebilir {#what-can-go-wrong}
 
 Şunlara hazırlıklı olun:
 
@@ -120,7 +120,7 @@ Halka açık olacağınız gün:
 - **Yük altında performans**: Trafik artışı yaşarsanız, barındırmanızı nasıl ölçeklendireceğinizi bilin
 - **Müşteri kafa karışıklığı**: Bilgi tabanınızı ve destek kanallarınızı hazır bulundurun
 
-## FitSite Ağı Şu Ana Kadar
+## FitSite Ağı Şu Ana Kadar {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -138,7 +138,7 @@ FitSite Network
 └── CANLI ✓
 ```
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - Altyapı, içerik, ödeme ve yasal konuları kapsayan kapsamlı bir ön lansman kontrol listesi
 - Halka açılmadan önce gerçek geri bildirim almak için bir yumuşak lansman stratejisi

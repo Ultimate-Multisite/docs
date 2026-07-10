@@ -3,7 +3,7 @@ title: Registriraj API endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Endpoint API Ultimate Multisite-a registracija
+# Endpoint API Ultimate Multisite-a registracija {#the-ultimate-multisite-register-api-endpoint}
 
 U ovom tutorijalu naučit ćete kako koristiti endpoint API Ultimate Multisite /register za kreiranje cijelog procesa prijavljivanja novog klijenta u vašoj mreži i kako to napraviti s Zapierom.
 
@@ -29,11 +29,11 @@ Odaberite **Enable API** i dobijte svoje API kredencijale.
 
 Sada, hajde da istražimo endpoint i zatim kreiramo akciju registracije u Zapieru.
 
-## Parametri tijela endpointa (Endpoint body parameters)
+## Parametri tijela endpointa (Endpoint body parameters) {#endpoint-body-parameters}
 
 Dajmo pregled minimalnih informacija koje moramo poslati endpointu. Na kraju ovog članka pronaći ćete pun poziv.
 
-### Klijent (Customer)
+### Klijent (Customer) {#customer}
 
 Ovo su informacije potrebne za proces kreiranja Korisnika i Ultimate Multisite Klijenta:
 
@@ -43,25 +43,25 @@ Možeš poslati korisničko ID koje si kreirao u svojoj mreži. Ako ga ne pošal
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Članstvo (Membership)**
+### **Članstvo (Membership)** {#membership}
 
 Jedina informacija koju nam treba unutar ovog objekta je status članstva.
 
 "membership" { "status" : "string", // jedan od "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Proizvodi**
+### **Proizvodi** {#products}
 
 Proizvodima se dodjeljuje niz s 1 ili više ID-ja proizvoda iz tvoje mreže. Pazite, ovaj endpoint ne kreira proizvode. Pročitaj dokumentaciju Ultimate Multisite kako bi bolje razumio endpoint za kreiranje proizvoda.
 
 **"products" : [1,2],**
 
-### **Plaćanje**
+### **Plaćanje** {#payment}
 
 Kao i kod Članstva, nam treba samo status.
 
 **"payment" { "status" : "string", // jedan od "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **Sajt**
+### **Sajt** {#site}
 
 I da bismo zatvorili tijelo, trebamo URL i naslov sajta unutar objekta Site.
 
@@ -69,13 +69,13 @@ I da bismo zatvorili tijelo, trebamo URL i naslov sajta unutar objekta Site.
 
 Povratna vrijednost endpointa za registraciju će biti niz s informacijama o novom kreiranom članstvu.
 
-## Kreiranje akcije u Zapieru
+## Kreiranje akcije u Zapieru {#creating-an-action-in-zapier}
 
 S uvođenjem ovog novog i robusnijeg endpointa za kreiranje računa, dobit ćete pristup novoj akciji u Zapieru.
 
 Znate li kako koristiti i uživati u svemu što nova verzija Zapiera nudi? Više možete naučiti ovdje. (link?)
 
-### Kreiranje akcije
+### Kreiranje akcije {#creating-an-action}
 
 Da bismo bolje pokazali kako koristiti endpoint za registraciju s Zapierom, napravit ćemo integraciju s Google Forms-om. Svaki put kada se ovaj formular popuni i informacije snivaju u listu odgovora formulara, kreira se novi članstvo u Ultimate Multisite mreži.
 
@@ -105,7 +105,7 @@ Kada je sve podešeno, nastavi s konačnim testom. Na posljednjem ekranu možeš
 
 Testiraj svoj novi Zap i trebao bi uspješno završiti. Ako se dogodi neka greška, provjeri sva polja i vidi je li sve ispravno poslano. Budući da ima puno informacija, neke stvari mogu promaći.
 
-### Kompletan parametar endpointa
+### Kompletan parametar endpointa {#complete-endpoint-parameters}
 
 Ovo je kompletan poziv i sve mogućnosti polja koja se mogu poslati.
 

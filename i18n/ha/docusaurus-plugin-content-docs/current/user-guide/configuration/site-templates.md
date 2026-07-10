@@ -3,13 +3,13 @@ title: Samfuri na Wurin Gida
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# قالب سایت‌ها (نسخه ۲)
+# قالب سایت‌ها (نسخه ۲) {#site-templates-v2}
 
 _**توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد. اگر از نسخه ۱.x استفاده می‌کنید،**_ **به این مقاله مراجعه کنید.**_
 
 هدف ما وقتی یک شبکه حرفه‌ای با Ultimate Multisite می‌سازیم، اتوماتیک کردن تا حد امکان فرآیندها است در حالی که انعطاف‌پذیری و گزینه‌های مختلف را به مشتریانمان هنگام ساخت وب‌سایت‌هایشان می‌دهیم. یکی از راه‌های آسان برای رسیدن به این تعادل استفاده کردن از قابلیت Site Templates در Ultimate Multisite است.
 
-## قالب سایت چیست؟
+## قالب سایت چیست؟ {#what-is-a-site-template}
 
 همانطور که از اسمش پیداست، یک Site Template یک سایت پایه (boilerplate site) است که می‌توان از آن هنگام ساخت سایت‌های جدید در شبکه خود استفاده کرد.
 
@@ -17,7 +17,7 @@ _**توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره 
 
 این عالی به نظر می‌رسد، اما من چطور یک قالب سایت جدید بسازم؟ این کار به سادگی ممکن است انجام شود.
 
-## ساخت و ویرایش یک Site Template جدید
+## ساخت و ویرایش یک Site Template جدید {#creating-and-editing-a-new-site-template}
 
 Site Templates فقط سایت‌های معمولی در شبکه شما هستند. برای ساختن یک قالب جدید، کافی است به **Network Admin > Ultimate Multisite > Sites > Add Site** بروید.
 
@@ -35,7 +35,7 @@ A ƙasan wajen bayanan (form), za ka ga wani toggle switch na **Copy Site**. Wan
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Gyara abubuwan da ke cikin Site Template
+### Gyara abubuwan da ke cikin Site Template {#customizing-the-contents-of-a-site-template}
 
 Don gyara site template ɗinka, kawai tafiya zuwa dashboard panel ɗin sa kuma yi canjin da kake bukata. Za ka iya ƙirƙirar sabbin posts, pages, ƙarfafa plugins, da canza theme mai aiki. Wataƙila za ka iya tafiya zuwa Customizer kuma canza dukkan nau'ikan zaɓuwar gyara.
 
@@ -43,11 +43,11 @@ Don gyara site template ɗinka, kawai tafiya zuwa dashboard panel ɗin sa kuma y
 
 Duk wannan bayanai zai shafi lokacin da wani customer ya ƙirƙira sabon site tare da amfani da Site Template ɗin hakan.
 
-### Zaɓuwar Girma (Advanced Options)
+### Zaɓuwar Girma (Advanced Options) {#advanced-options}
 
 Idan kana son yin wasu rubutu na musamman, za ka iya amfani da Search and Replace API ɗin mu don a mayar da bayanai na asali a sabon site bayan an ƙirƙirayarsa. Wannan yana taimakawa wajen abubuwa kamar mayar da sunan kamfanoni a About page, ko mayar da imel ɗin addini a Contact page, da sauransu.
 
-### Amfani da Site Templates
+### Amfani da Site Templates {#using-site-templates}
 
 To, ka kalli, ka ƙirƙira ƙirar daban-daban na Site Templates tare da zane (designs), themes, da ayyuka daban-daban. Yaya za ka sa su yi amfani a kan shafukan ku yanzu?
 
@@ -59,7 +59,7 @@ Babban abin da za ka iya yi shi ne akwai hanyoyi biyu da za ka iya amfani da su 
 
   * Ba da damar abokan hulɗarka su shiga zaɓin site templates kansu yayin shiga asusun.
 
-#### Moduwar 1: Bayar Site Template
+#### Moduwar 1: Bayar Site Template {#mode-1-assign-site-template}
 
 لە ئەم ڕێگەتانە، کڕیارەکان ناتوانن لە کاتی دروستکردنی ئەکاونت هەڵبژاردنی قالبێک بکەن، بەڵکو ئێوە دەتوانن دیاری بکەن کە چ قالبێک بۆ هەر یەکێک لە پلاندانەکانی خۆتان بەکاربهێنرێت.
 
@@ -71,7 +71,7 @@ Babban abin da za ka iya yi shi ne akwai hanyoyi biyu da za ka iya amfani da su 
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: هەڵبژاردنی قالب سایتە دروستکراوەکان
+#### Mode 2: هەڵبژاردنی قالب سایتە دروستکراوەکان {#mode-2-choose-available-site-template}
 
 لە ئەم ڕێگەتانە، دەتوانیت کڕیارەکان لە کاتی تۆمارکردن هەڵبژاردن بکەن. ئەوان دەتوانن لە نێوان قالبە سایتە جیاوازەکانی ئەو قۆناغەی کە لە تنظیمات بەرهەمەکەدا دیاری کردووە هەڵبژێرن. ئێوە دەتوانیت ڕێگە بدەن کە تەنها لە نێوان ئەو قالبانەی کە هەڵبژاردراون، هەڵبژاردن بکەن. ئەمە دەدات بەوەی کە بۆ هەر بەرهەمێک سیتی جیاواز لە قالبە سایتەکانت هەبێت، کە بۆ بەرهەمێکی گرانتر باشە بۆ ئەوەی تایبەتمەندی و کارامەی جیاواز دیار بکرێن.
 
@@ -79,7 +79,7 @@ A cikin shafin **Edit Product** (Gyara da Kayarwa), a ƙarƙashin sashi na **Pro
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form (Yanayin Asali: Zaɓar Makaidansa Wurin Gida a cikin shafin Checkout Form)
+### Default Mode: Site template selection on the Checkout form (Yanayin Asali: Zaɓar Makaidansa Wurin Gida a cikin shafin Checkout Form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Idan kana so duk makaidan gida na ka kasance da su a lokacin rikodawa, ko kuma ba ka son yin wani aiki na ƙarin da shi na samarwa ko bayyana makaidan gida a ƙarƙashin kowane kayarwa da kake samarwa. To za ka iya kawai saka zaɓar makaidan gida a ƙarƙashin **Checkout Form** (Shafin Samun Kasuwanci). Don yin hakan, tafiya zuwa **Ultimate Multisite > Checkout Forms** kuma danna **Edit** a ƙarƙashin shafin da kake so ka gyara.
 
@@ -93,29 +93,29 @@ A kan frontend (wurin gudanar da yanayin gida), abokan ciniki suna gan wa masu z
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Tabbabiyoyin Shagwado na'urar (Site Template Options)
+### Tabbabiyoyin Shagwado na'urar (Site Template Options) {#site-template-options}
 
 Akwai wasu ayyuka na sabbin shagwado na'urar (site templates functions) da za ka iya ɗaukar yin aiki ko kawarawa a ƙarƙashin binciken Ultimate Multisite.
 
 ![Tabbabiyoyin shagwado na'urar a cikin binciken Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Ba su ba da damar canza shagwada (Allow Template Switching)
+#### Ba su ba da damar canza shagwada (Allow Template Switching) {#allow-template-switching}
 
 Lokacin da ka samar da wannan zaɓin, za ka ba masu amfani da kai damar canza shagwadan da suka zaɓa a lokacin shigar wajen buɗe asusun da aka ƙirƙira bayan an ƙirƙira asusun da aka yi. Wannan yana da kyau ga abokin ciniki saboda yana ba su damar dawo da zaɓar shagwada idan su ji cewa zaɓin su na farko ba shi da kyau ga bukatun su na musamman.
 
-#### Ba su ba da damar amfani da asusunsu a matsayin shagaba (Allow Users to use their Site as templates)
+#### Ba su ba da damar amfani da asusunsu a matsayin shagaba (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Tun da masu amfani na subsite suna kashe lokaci wajen gina da zane shafin su, za su iya son yin kwarara (clone) shi kuma amfani da shi a matsayin ɗaya daga cikin shagabadan da ke nan yayin ƙirƙirar wata subsite a kan layi. Wannan zaɓi zai ba su damar yin hakan.
 
-#### Ajiye Wajen Kopi Media a Lokacin Dubawa Shagaba (Copy Media on Template Duplication)
+#### Ajiye Wajen Kopi Media a Lokacin Dubawa Shagaba (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Lokacin da ka bincika wannan zaɓin, za ka ɗauka dukkan media da aka ƙirƙira a shagaban na asali zuwa shafin da aka ƙirƙira saboda. Wannan zai iya canzawa a kowane tsari (plan).
 
-#### **Karin Ba Duk Wajen Harshen Bincike (Prevent Search Engines from indexing Site Templates)**
+#### **Karin Ba Duk Wajen Harshen Bincike (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Shagabadan na asali kamar yadda aka tattauna a wannan makale suna da matsayin "boilerplate" (shafi na gina), amma suna kanin wajen kasancewa a cikin yanarku, wanda hakan yana nufin cewa akwai damar masu bincike su samu. Wannan zaɓi zai ba ka damar ayyana shagabadan don masu bincike su iya ganinsu (index) ko ba.
 
-## Shigar Shagabadan na Asali da Bincike da Gyara Maida (Pre-populating Site Templates with auto search-and-replace)
+## Shigar Shagabadan na Asali da Bincike da Gyara Maida (Pre-populating Site Templates with auto search-and-replace) {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ɗaya daga cikin ƙarfin mafi girman Ultimate Multisite shi ne ikon ƙara kowane rubutu, launi, da ayyuka (fields) ga wajen rubuta shiga (registration form). Bayan muna samun wannan bayanan, za mu iya amfani da shi don shigar abubuwan da suka shafi a wasu sassa na template na gida (site template) da aka zaɓa. Sannan, lokacin da ake fitar da wajen gida na sabon wuri (new site), Ultimate Multisite zai mayar da wahalar (placeholders) da bayanan da aka shigar a lokacin rubuta shiga.
 
@@ -135,7 +135,7 @@ Sannan, Ultimate Multisite zai mayar da wahalarsu (placeholders) da bayanan da a
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Maganin matsalar "template mai wahalarsu"
+### Maganin matsalar "template mai wahalarsu" {#solving-the-template-full-of-placeholders-problem}
 
 Duk wannan yana da kyau, amma muna fuskantar wata matsala mai rashin kyau: yanzu template na gida na mu - wanda abokan cinikinmu za su iya ziyartar shi - suna cika wahalarsu (placeholders) masu rashin kyau waɗanda ba su ba da wani bayani sosai.
 

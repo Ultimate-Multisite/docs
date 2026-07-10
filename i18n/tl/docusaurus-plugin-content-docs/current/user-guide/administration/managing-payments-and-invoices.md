@@ -3,9 +3,9 @@ title: Pamamahala ng mga Bayad at Invoice
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Pamamahala ng mga Bayad at Invoice
+# Pamamahala ng mga Bayad at Invoice {#managing-payments-and-invoices}
 
-## Mga Setting ng Pagbabayad
+## Mga Setting ng Pagbabayad {#payment-settings}
 
 Bago ka magsimulang tumanggap ng bayad, kailangan mong i-configure ang mga setting na may kaugnayan sa pagbabayad. Pumunta sa **Ultimate Multisite → Settings** at i-click ang tab na **Payment**.
 
@@ -15,7 +15,7 @@ Narito ang buong tingin ng pahina ng payment settings:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Pangkalahatang Opsyong Pagbabayad
+### Pangkalahatang Opsyong Pagbabayad {#general-payment-options}
 
 Sa mga pangkalahatang setting, maaari mong i-configure ang mga sumusunod:
 
@@ -24,7 +24,7 @@ Sa mga pangkalahatang setting, maaari mong i-configure ang mga sumusunod:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Mga Payment Gateway
+### Mga Payment Gateway {#payment-gateways}
 
 Suporta ng Ultimate Multisite ang maraming payment gateway. Maaari mong i-enable at i-configure ang bawat isa mula sa tab na Payment settings.
 
@@ -40,11 +40,11 @@ Bawat gateway ay may sariling seksyon para sa configuration kung saan mo ilalaga
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox Mode
+### Sandbox Mode {#sandbox-mode}
 
 Maaari mong i-enable ang **Sandbox Mode** para subukan ang iyong payment integration bago ito ilabas sa live environment. Kapag aktibo ang sandbox mode, walang totoong bayad na gagawin.
 
-## Pagtingin ng mga Bayad
+## Pagtingin ng mga Bayad {#viewing-payments}
 
 Pumunta sa pahinang **Payments** sa ilalim ng Ultimate Multisite para makita ang lahat ng transaksyon sa buong network mo.
 
@@ -54,7 +54,7 @@ Maaari mong i-filter ang mga bayad base sa status (completed, pending, failed, r
 
 I-click ang isang bayad para makita ang lahat ng detalye nito kabilang ang mga item, kaugnay na membership, impormasyon ng customer, at data ng payment gateway.
 
-## Invoices
+## Invoices {#invoices}
 
 Awtomatikong gagawa ng Ultimate Multisite ng mga invoice para sa mga bayad. Maaari mong i-customize ang template ng invoice at ang format ng pagbibilang mula sa Payment settings.
 

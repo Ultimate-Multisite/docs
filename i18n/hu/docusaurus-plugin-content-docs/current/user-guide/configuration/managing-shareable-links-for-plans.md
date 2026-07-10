@@ -3,7 +3,7 @@ title: Tervekhez tartozó megosztható linkek kezelése
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Megosztható linkek kezelése a csomagokhoz
+# Megosztható linkek kezelése a csomagokhoz {#managing-shareable-links-for-plans}
 
 Az Ultimate Multisite lehetőséget kínál arra, hogy közvetlenül megoszd a csomag linkjeit az ügyfelekkel. Ehhez navigálj bármelyik csomag szerkesztési oldalára, és kattints a _Kattints a megosztható link másolásához_ gombra.
 

@@ -3,11 +3,11 @@ title: Přehled nástěnky
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Přehled nástěnky
+# Přehled nástěnky {#dashboard-overview}
 
 Ultimate Multisite má vlastní **Nástěnku** v menu Ultimate Multisite a také přidává widgety do Nástěnky sítě. V tomto článku se podíváme na to, co najdete na obou místech.
 
-## Nástěnka sítě
+## Nástěnka sítě {#the-network-dashboard}
 
 Ultimate Multisite přidává užitečné widgety do nástěnky na úrovni sítě, kterou najdete v **Moje stránky → Správa sítě → Nástěnka**.
 
@@ -35,7 +35,7 @@ Tady je přehled jednotlivých widgetů:
 
 ![Widget Novinky](/img/admin/network-dashboard-news.png)
 
-## Nástěnka Ultimate Multisite
+## Nástěnka Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Zatímco nástěnka sítě zobrazuje souhrnné informace o celé síti, nástěnka Ultimate Multisite (na nejvyšší úrovni menu Ultimate Multisite) zobrazuje informace o službě samotné.
 

@@ -3,13 +3,13 @@ title: Checkout Feld und Kundendns
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Feld und Kunden DNS-Verwaltung
+# Checkout Feld und Kunden DNS-Verwaltung {#checkout-field-and-customer-dns-management}
 
-## Das Domain-Auswahlfeld im Checkout
+## Das Domain-Auswahlfeld im Checkout {#the-domain-selection-checkout-field}
 
 Das **Domain Selection** Feld isch es Element im Checkout, wo de Kunde wählt chan, wie er sini Site-Domain bekommt. Füegs zu jedem Checkout Form hinzu, um das Verkaufen vo Domains z'ermögliche.
 
-### Hinzufügen des Feldes zu einem Checkout Form
+### Hinzufügen des Feldes zu einem Checkout Form {#adding-the-field-to-a-checkout-form}
 
 1. Gang zu **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Öffne oder erstelle en Checkout Form
@@ -18,7 +18,7 @@ Das **Domain Selection** Feld isch es Element im Checkout, wo de Kunde wählt ch
 5. Konfiguriere d'Feldoptionen (siehe unten)
 6. Speichere de Form
 
-### Feldoptionen
+### Feldoptionen {#field-options}
 
 **Domain Modi** — Wähl, welche Tabs de Kunde gseht. Jeder Mod chan einzeln aktiviert oder deaktiviert werde:
 
@@ -32,7 +32,7 @@ Das **Domain Selection** Feld isch es Element im Checkout, wo de Kunde wählt ch
 
 **Domain Produkt** — Pinne das Feld optional an es spezifisches Domain-Produkt. Wenn nöd gsetzt, wählt de Addon automatisch s'passendi Produkt basierend uf de TLD, wo de Kunde sucht.
 
-### Registrant-Kontaktfelder
+### Registrant-Kontaktfelder {#registrant-contact-fields}
 
 Wenn en Kunde de Tab **Register New Domain** wählt, füegt de Checkout Form inline d'Registrant-Kontaktfelder hinzu:
 
@@ -43,11 +43,11 @@ Wenn en Kunde de Tab **Register New Domain** wählt, füegt de Checkout Form inl
 
 Die folgende Information isch für alli Registrierer nötig und wird vor em API-Call zur Registrierig validiert. Telefonnummer werdet automatisch im internationale Format `+CC.NNN` formatiert, wo d'Registrierer erwarte.
 
-### Automatisch generierti Site URL
+### Automatisch generierti Site URL {#auto-generated-site-url}
 
 Wenn en Kunde sich registriert oder e Domain zuordnet, wird s'Site URL Feld automatisch mit de gwählte Domain gfüllet. Kunden müend kei separates URL-Feld usfüllä.
 
-### Suchverhalte
+### Suchverhalte {#search-behaviour}
 
 - D'Verfügbarkeit vo Domains wird in Echtzit mit AJAX überprüft, während de Kunde tippt.
 - Alternativi TLD-Vorschläg werdet angezeigt, wenn d'bevorzugti Domain nöd verfügbar isch.
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## DNS-Verwaltig vom Kunde
+## DNS-Verwaltig vom Kunde {#customer-dns-management}
 
 Kunde chönd DNS-Einträge für ihri registrierte Domains vo de Seite **Mein Konto** verwalte, unter em Eintrags vo de Domain.
 
-### Unterstützti Eintrags-Typä
+### Unterstützti Eintrags-Typä {#supported-record-types}
 
 | Typ | Verwändig |
 |---|---|
@@ -91,11 +91,11 @@ Kunde chönd DNS-Einträge für ihri registrierte Domains vo de Seite **Mein Kon
 | **MX** | Mail-Wechselserver festlege |
 | **TXT** | SPF, DMARC, Verifizierig oder anderi Text-Einträge hinzufüge |
 
-### Welche Anbieter unterstütze d'DNS-Verwaltig?
+### Welche Anbieter unterstütze d'DNS-Verwaltig? {#which-providers-support-dns-management}
 
 DNS-Verwaltig (Record hinzufüge, bearbeite, lösche) isch mit **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** und **Openprovider** verfügbar. Bei **Hostinger** Domain chönd Sie d'Nameservers über de Domain Seller aktualisiere; DNS-Records für gehosteti Domains wärde vom Core Hostinger domain-mapping Integration verwaltet. Namecheap, GoDaddy und NameSilo Domains zeige Status und Ablaufinformationen a, aber d'DNS müend direkt im Control Panel vom Registrar verwaltet werde.
 
-### Standard-DNS-Records
+### Standard-DNS-Records {#default-dns-records}
 
 Sie chönd Standard-DNS-Records iistelle, wo automatisch angewendet wärde, wenn e Domain registriert wird. Gang zu **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS aaluege und bearbeite
+### Admin: DNS aaluege und bearbeite {#admin-viewing-and-editing-dns}
 
 Netzwerk-Admins chönd DNS-Records für jede Kundedomain vo de Edit-Seite vom Domain in **Network Admin › Ultimate Multisite › Domains** aaluege und bearbeite.

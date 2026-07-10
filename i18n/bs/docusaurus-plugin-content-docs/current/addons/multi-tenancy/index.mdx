@@ -1,31 +1,45 @@
 ---
-title: Višestanačnost
+title: Višekorisničko okruženje
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Višezakupništvo {#multi-tenancy}
 
-Raspoređivanje pod-sajtova na više servera i baza podataka radi boljeg performansa i sigurnosti.
+Distribuirajte podstranice preko servera i baza podataka radi performansi i sigurnosti
 
-## Zahtjevi
+## Najvažnije iz izdanja verzije 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 dodaje osnovu suverenog zakupca za tokove rada izolacije u produkciji:
+
+- Bezstanje autologin zakupca s kratkotrajnim SSO posjetama zaštićenim od ponovnog izvođenja.
+- Izolacija baze podataka i datotečnog sistema po podstranici za suverene zakupce.
+- Hostinger mogućnost višezakupništva za dodjelu zakupaca svjesnu hosta.
+- Verifikacijske kapije suverene migracije za provjere naslijeđenih podataka i asinhronu push obradu.
+- Konfigurabilno povezivanje hosta baze podataka na istoj mašini za Bedrock, FrankenPHP i localhost instalacije.
+- Poboljšanja pokretanja zakupca, pisača baze podataka, pokretanja sheme i dodjele korisnika.
+- Sigurnije suvereno uklanjanje koje čisti vjerodajnice zakupca.
+
+Pogledajte korisničke vodiče za [tok rada suverene migracije](/user-guide/getting-started/sovereign-migration-workflow), [izolaciju višezakupništva](/user-guide/configuration/multi-tenancy-isolation) i [operacije suverenog zakupca](/user-guide/administration/sovereign-tenant-operations).
+
+## Zahtjevi {#requirements}
 
 - WordPress 5.3 ili noviji
 - PHP 7.4 ili noviji
-- Plugin Multisite Ultimate (aktiviran)
+- Multisite Ultimate dodatak (aktivan)
 
-## Instalacija
+## Instalacija {#installation}
 
-1. Otpremite fajlove dodatka u direktorij `/wp-content/plugins/`
-2. Aktivizirajte plugin preko menija 'Plugins' u WordPressu
-3. Podesite postavke dodatka u administraciji mreže (network admin)
+1. Otpremite datoteke dodatka u svoj `/wp-content/plugins/` direktorij
+2. Aktivirajte dodatak kroz meni 'Dodaci' u WordPress
+3. Konfigurišite postavke dodatka u mrežnoj administraciji
 
-## Razvoj
+## Razvoj {#development}
 
-### Postavljanje
+### Podešavanje {#setup}
 
 ```bash
 # Install dependencies
@@ -46,23 +60,23 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Struktura projekta
+### Struktura projekta {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
 ├── inc/                          # PHP klase i uključivanja
-│   ├── class-multisite-ultimate-updater.php  # Handler za ažuriranje
+│   ├── class-multisite-ultimate-updater.php  # Rukovalac ažuriranja
 │   └── class-multi_tenancy-main.php             # Glavna funkcionalnost
-├── tests/                        # Unit testovi
-│   ├── bootstrap.php            # Bootstrap za testiranje
-│   ├── class-*-base.php         # Osnovna klasa za testiranje
+├── tests/                        # Jedinični testovi
+│   ├── bootstrap.php            # Pokretanje testova
+│   ├── class-*-base.php         # Osnovna testna klasa
 │   └── class-*-test.php         # Testni slučajevi
-├── views/                       # Fajlovi šablona
+├── views/                       # Datoteke šablona
 ├── assets/                      # Statički resursi
-│   ├── css/                     # Stilovi
-│   ├── js/                      # JavaScript fajlovi
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript datoteke
 │   └── images/                  # Slike
-├── lang/                        # Fajlovi jezika
+├── lang/                        # Jezičke datoteke
 ├── composer.json                # PHP zavisnosti
 ├── package.json                 # Node.js zavisnosti
 ├── phpunit.xml.dist             # PHPUnit konfiguracija
@@ -70,55 +84,67 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Pravila modernizacije koda
 ```
 
-### Testiranje
+### Testiranje {#testing}
 
-Dodatak uključuje sveobuhvatnu okvir za testiranje:
+Dodatak uključuje sveobuhvatan okvir za testiranje:
 
-- **Unit Testovi**: Testovi zasnovani na PHPUnit-u sa WordPress test paketom
-- **Osnovna klasa za testiranje**: Pruža pomoćne metode za uobičajene scenarije testiranja
+- **Jedinični testovi**: Testovi zasnovani na PHPUnit sa WordPress testnim paketom
+- **Osnovna testna klasa**: Pruža pomoćne metode za uobičajene testne scenarije
 - **Pokrivenost testovima**: Konfigurisano za praćenje pokrivenosti koda
-- **Testiranje na više sajtova**: Testovi se pokreću u okruženju više sajtova
+- **Multisite testiranje**: Testovi se izvršavaju u multisite okruženju
 
-### Standardi koda
+### Standardi koda {#code-standards}
 
-- **WordPress Standardi kodiranja**: Enforsirano putem PHPCS-a
-- **Kompatibilnost sa PHP 7.4+**: Podržane su moderne PHP značajke
-- **Statička analiza**: Integracija PHPStan-a za provjeru tipova
-- **Modernizacija koda**: Pravila Rector-a za nadogradnju PHP-a
+- **WordPress standardi kodiranja**: Nametnuti putem PHPCS
+- **PHP 7.4+ kompatibilnost**: Podržane moderne PHP funkcije
+- **Statička analiza**: PHPStan integracija za provjeru tipova
+- **Modernizacija koda**: Rector pravila za PHP nadogradnje
 
-### Sistem izgradnje (Build System)
+### Sistem izgradnje {#build-system}
 
-- **Obrada resursa (Asset Processing)**: Minifikacija za CSS/JS fajlove
-- **Prevođenje (Translation)**: Generisanje POT fajlova
-- **Pakovanje (Packaging)**: Kreiranje arhive za distribuciju
-- **Režim razvoja (Development Mode)**: Neminifikovani resursi za debagiranje
+- **Obrada resursa**: Minifikacija za CSS/JS datoteke
+- **Prevođenje**: Generisanje POT datoteke
+- **Pakovanje**: Kreiranje arhive za distribuciju
+- **Razvojni način**: Neminifikovani resursi za otklanjanje grešaka
 
-## Konfiguracija
+## Konfiguracija {#configuration}
 
-Dodatak podržava različite opcije konfiguracije dostupne putem interfejsa administracije mreže.
+Dodatak podržava različite opcije konfiguracije dostupne kroz interfejs mrežne administracije.
 
-## Hookovi i Filteri
+### Konfiguracija suverenog zakupca {#sovereign-tenant-configuration}
 
-### Akcije (Actions)
+Za suverene zakupce konfigurišite bazu podataka zakupca, korijen datotečnog sistema, povezivanje hosta baze podataka i mogućnost hosta prije usmjeravanja saobraćaja prema zakupcu. Pokrenite verifikaciju migracije nakon svake promjene koja utiče na vjerodajnice baze podataka, povezivanje hosta, usmjeravanje ili dodjelu korisnika.
+
+Koristite `localhost` samo kada izvršno okruženje zakupca i dozvole baze podataka očekuju lokalni socket ili pristup na istoj mašini. Koristite `127.0.0.1` ili naziv hosta servisa kada je to host dozvole koji je konfigurisao vaš pružalac usluge.
+
+### Hostinger mogućnost {#hostinger-capability}
+
+Hostinger mogućnost višezakupništva radi sa zajedničkim Hostinger integracijskim tokenom. Potvrdite da je domen prisutan u hPanel, da DNS pokazuje na Hostinger račun i da postavke baze podataka zakupca odgovaraju hPanel prije verifikacije.
+
+## Kuke i filteri {#hooks-and-filters}
+
+### Akcije {#actions}
 
 - `ultimate-multisite-addon-template_init` - Pokreće se nakon inicijalizacije dodatka
-- `ultimate-multisite-addon-template_loaded` - Pokreće se nakon učitavanja svih fajlova dodatka
+- `ultimate-multisite-addon-template_loaded` - Pokreće se nakon što su sve datoteke dodatka učitane
 
-### Filteri (Filters)
+### Filteri {#filters}
 
-- `ultimate-multisite-addon-template_settings` - Modifikuje postavke dodatka
-- `ultimate-multisite-addon-template_enabled` - Prekida/prepisuje status omogućavanja/onemogućavanja dodatka
+- `ultimate-multisite-addon-template_settings` - Izmijenite postavke dodatka
+- `ultimate-multisite-addon-template_enabled` - Nadjačajte status omogućavanja/onemogućavanja dodatka
 
-## Licenca
+## Licenca {#license}
 
-Ovaj dodatak licenciran je pod GPL v3 ili noviji.
+Ovaj dodatak je licenciran pod GPL v3 ili novijom verzijom.
 
-## Podrška
+## Podrška {#support}
 
-Za podršku i dokumentaciju, posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
-## Izmjene (Changelog)
+Za podršku i dokumentaciju posjetite [MultisiteUltimate.com](https://multisiteultimate.com)
+## Dnevnik promjena {#changelog}
 
-- Verzija 1.0.1 (2025-09-28): Promijenjen prefiks u ultimate-multisite; ažuriran domen teksta; povećanje verzije.
+- Verzija 1.2.0 (2026-06-03): dodaje bezstanje autologin zakupca, Hostinger mogućnost višezakupništva, izolaciju baze podataka i datotečnog sistema po podstranici, verifikacijske kapije suverene migracije, poboljšanja pokretanja zakupca/pisača baze podataka, konfigurabilno povezivanje MySQL hosta i sigurnije suvereno uklanjanje.
+
+- Verzija 1.0.1 (2025-09-28): preimenuje prefiks u ultimate-multisite; ažurira tekstualni domen; povećanje verzije.
 
 
-- Verzija (2025-09-28): Promijenjen prefiks u ultimate-multisite; ažuriran domen teksta; povećanje verzije.
+- Verzija  (2025-09-28): preimenuje prefiks u ultimate-multisite; ažurira tekstualni domen; povećanje verzije.

@@ -3,7 +3,7 @@ title: Hloka le liti la API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API Endpoint ya Ultimate Multisite
+# API Endpoint ya Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Ha le tšhobo ea tutorial ena, o tla tseba hore na lefe o ka sebelisa Ultimate Multisite /register API endpoint ho fetola bohlelo ba tsotlhe ba ntlha e ntlha ea lona le ho etsa le ho etsa le Zapier.
 
@@ -29,11 +29,11 @@ Hloka **Enable API** le feta credentials ea hau ea API.
 
 Lumela, re tla etsa le endpoint le ho fetola action ea registration ka Zapier.
 
-## Parameters ea body ea endpoint
+## Parameters ea body ea endpoint {#endpoint-body-parameters}
 
 Letse re leka lehlelo la lipuo tse fapaneng tse re hloka ho tšoa eona endpoint. Ka lefifi la lona la tutorial ena, o tla bona call e fetang.
 
-### Customer
+### Customer {#customer}
 
 Kea lipuo tse hlophiso tse hlokang ho etsa tsotlhe tsa User le Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Ho ntlha ho tloboho le bohlokoa haholo: Ho nthelonga ho feta ID ea sefofotsoeng 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Ho na le lipuo tse neng re hloka ka moho ea tsena ke Membership Status.
 
 "membership" { "status" : "string", // e le ya "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Products** {#products}
 
 Products ba fihla array le ID ea produk tse 1 kapa zo zo mo netefisa ea hau. Le tloha, sefofotso se se fetahileng se ne se fana ka ho bona lipuo tsa ho fetola products. Ho bona ho bone le ho na le bohlokoa haholo ho bona litaba tsa ho fetola products.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Ka lebaka la Membership, re hloka status fela.
 
 **"payment" { "status" : "string", // e le ya "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Site {#site}
 
 Le ho sa ho fetola sefofotso, re hloka URL ea site le Title ea hau, ho fihla mo object ea Site.
 
@@ -69,13 +69,13 @@ Le ho sa ho fetola sefofotso, re hloka URL ea site le Title ea hau, ho fihla mo 
 
 Ho feta haufi (register endpoint) tla fihla array le lipuo tsa membership tse neng di fetola ka ntlha.
 
-## Ho fetola action ea Zapier
+## Ho fetola action ea Zapier {#creating-an-action-in-zapier}
 
 Le ho fanaetsoa sefofotso se se fetahileng se se hlophisoang le se se tsamaea, o tla ba le action e ntlha ea Zapier.
 
 O na le tsela ea ho tseba hore na le ho ba le leboho le bohlokoa ba version e ntlha ea Zapier e fanaang? Ho bona lefa ho bone ka lona. (link?)
 
-### Ho fetola action
+### Ho fetola action {#creating-an-action}
 
 Ho ba le fa'aopoaga o le registration endpoint ma Zapier, e fa'atatau ona tatou fa'amalosia se integration ma Google Forms. O le fesili o le form o le fa'aopoaga ma fa'aalia i le a tatou fa'aopoaga membership tasi mai i le network Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Le le fa setse, a la tsela ya tshediso. Ka screen efe, u ka bona bohlelo bo tla 
 
 Le fa u fetisa Zap e tlo, le tla fana ka tshediso. Ha ho na le sebope seka, o tla bona bohlelo ba litlhahlo le lina le tla fana ka ntlha. Le fa ho na le thuto, o tla bona litlhahlo hloekileng le hore li fana ka ntlha. Ka go na le lipuo tse ngata, go na le dikgwetlho tse dintsi ha a ka tsamaisa.
 
-### Litlhahlo tsa sebope seka (Complete endpoint parameters)
+### Litlhahlo tsa sebope seka (Complete endpoint parameters) {#complete-endpoint-parameters}
 
 Kea le tsela efe le bohlelo bohlelo ba litlhahlo tse ka fana ka fana ka ntlha.
 

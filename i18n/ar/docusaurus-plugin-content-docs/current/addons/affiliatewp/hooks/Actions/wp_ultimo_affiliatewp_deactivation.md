@@ -4,15 +4,15 @@ title: الإجراء - wp_ultimo_affiliatewp_deactivation
 sidebar_label: wp_ultimo_affiliatewp_deactivation
 _i18n_hash: ba7dc99de8b0d2af2f10eb24509420d7
 ---
-# wp_ultimo_affiliatewp_deactivation
+# wp_ultimo_affiliatewp_deactivation {#action-wpultimoaffiliatewpdeactivation}
 
 Let other plugins attach their own deactivation hooks to this plugin.
 
-## Since
+## Since {#since}
 
 - The plugin is deactivated.
 
-## How to
+## How to {#source}
 
 - Add your own deactivation hook to this plugin.
 

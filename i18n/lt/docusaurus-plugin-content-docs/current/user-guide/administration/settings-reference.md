@@ -1,40 +1,46 @@
 ---
-title: Nustatyimų referencija
+title: Nustatymų žinynas
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencė nustatymams
+# Nustatymų nuoroda {#settings-reference}
 
-Ši puslapis surinkia nustatymus, kurie veikia kasdienį administravimą ir naujus veikimo pakeitimus Ultimate Multisite.
+Šiame puslapyje sekami nustatymai, kurie veikia kasdienį administravimą ir naujausius elgsenos pakeitimus Ultimate Multisite.
 
-## Kiti pasirinkimai
+## Kitos parinktys {#other-options}
 
-**Kiti pasirinkimai** lauktas yra po **Ultimate Multisite > Settings > Login & Registration**.
+Sritis **Kitos parinktys** rodoma po **Ultimate Multisite > Nustatymai > Prisijungimas ir registracija**.
 
 | Nustatymas | Aprašymas |
 |---|---|
-| **Įjungti Jumper** | Rodo Jumper greitai naršymo įrankį administravimo srityje. Naudokite jį, kad tiesiogiai perėjote prie Ultimate Multisite ekranų, tinklo objektų ir palaikytos admininių vietų. Išjunkite jį, jei ne norite šio trumpinio angalo matyti. |
+| **Įjungti Jumper** | Rodo Jumper greitosios navigacijos įrankį administravimo srityje. Naudokite jį norėdami pereiti tiesiai į Ultimate Multisite ekranus, tinklo objektus ir palaikomas administravimo paskirties vietas. Išjunkite jį, jei nenorite, kad šis spartusis kelias būtų matomas. |
 
-## Klaidų pranešimai ir telemetrijos
+## Klaidų ataskaitos ir telemetrija {#error-reporting-and-telemetry}
 
-Ankštas nustatymas įjungti pranešimus apie klaidų sąlyginimą buvo pašalintas iš nustatyimų puslapio. Anoniminis telemetrijos įjungimas yra išjungtas, ir nėra UI mygtuko jį įjungimui.
+Ankstesnis sutikimo teikti klaidų ataskaitas nustatymas pašalintas iš nustatymų puslapio. Anoniminė telemetrija išjungta ir nėra UI perjungiklio jai įjungti.
 
-Jei laikote internus veiklos instrukcijas (runbooks) ar vaizdo įrašus nustatymų puslapiui, pašalykite nuorodas į seną sąlyginimo laukelį pranešimų apie klaidų sąlyginimą, kad administratoriai ne ieškot naujo nustatymo, kuris jau nėra.
+Jei prižiūrite vidinius darbo aprašus arba nustatymų puslapio ekrano kopijas, pašalinkite nuorodas į seną sutikimo teikti klaidų ataskaitas lauką, kad administratoriai neieškotų nustatymo, kurio nebėra.
 
-## Import/eksporto nustatymai
+## Importo / eksporto nustatymai {#importexport-settings}
 
-**Import/eksporto** nustatymai apibūdina, kokie nustatymus jie kontrolia ir tiesiogiai nuorodina į **Ultimate Multisite > Site Export**, kad gautumėte archyvas svetainės ir tinklo. Naudokite nustatyimų puslapį importo/eksporto konfigūracijai, naudokite **Tools > Export & Import** vienos svetainės eksporto/importo veiklos (workflow) ir naudokite Site Export įrankį, kai jums reikia visos tinklo eksporto archyvas.
+Nustatymų skirtuke **Importas / eksportas** aprašoma, kuriuos nustatymus jis valdo, ir pateikiama tiesioginė nuoroda į **Ultimate Multisite > Svetainės eksportas** svetainių ir tinklo archyvams. Naudokite nustatymų skirtuką importo / eksporto konfigūracijai, naudokite **Įrankiai > Eksportas ir importas** vienos svetainės eksporto / importo eigai, o Svetainės eksporto įrankį naudokite, kai reikia viso tinklo eksporto archyvo.
 
-## AI tiekėjo jungimo nustatymai
+## Domain Seller HostAfrica balanso įspėjimas {#domain-seller-hostafrica-balance-warning}
 
-Nustatymai AI tiekėjo jungimo dabar atskleidžia tik palaikytus OAuth paskyrimų grupė:
+Kai Domain Seller priedas prijungtas prie HostAfrica, tinklo administratoriai dabar mato atmetamą įspėjimą apie mažą balansą, kai perpardavėjo paskyros balansas yra per mažas patikimam domenų registravimo ar atnaujinimo apdorojimui.
 
-| Privalėjas | Naudojimo procesas |
+Laikykite šį pranešimą operaciniu įspėjimu: papildykite HostAfrica perpardavėjo balansą prieš priimdami daugiau mokamų domenų registracijų, tada grįžkite į Domain Seller nustatymus arba domenų stebėjimo ekraną, kad patvirtintumėte, jog registracijos ir atnaujinimai gali tęstis įprastai.
+
+## AI tiekėjo jungties nustatymai {#ai-provider-connector-settings}
+
+AI tiekėjo jungties nustatymai dabar rodo tik palaikomus OAuth paskyrų telkinius:
+
+| Tiekėjas | Sąrankos eiga |
 |---|---|
-| **Anthropic Max** | Sujungkite vieną ar daugiau Anthropic Max paskyrų per mygtuką OAuth. Naudokite manualią OAuth alternatyvą, jei sandboxed naršė neperleidžia redirekcijos be problemų. |
-| **OpenAI ChatGPT/Codex** | Sujungtakite ChatGPT paskyras naudojant tą samą procesą zonos (OAuth pool). Po sujungimo, konektoriai palaikomi operacijas, kurios gali naudoti įrankius ChatGPT Codex. |
-| **Google AI Pro** | Sujungtakite Google AI Pro paskyras per OAuth, o tada atnaujinkite konektorį, jei sąrašas paskyrų neatsiranki iš karto. |
+| **Anthropic Max** | Prijunkite vieną ar daugiau Anthropic Max paskyrų naudodami OAuth mygtuką. Naudokite rankinę OAuth atsarginę parinktį, kai izoliuota naršyklė negali automatiškai užbaigti peradresavimo. |
+| **OpenAI ChatGPT/Codex** | Prijunkite ChatGPT paskyras per tą pačią OAuth telkinio eigą. Jungties palaikomos operacijos gali naudoti ChatGPT Codex įrankių iškvietimus po to, kai paskyra prijungta. |
+| **Google AI Pro** | Prijunkite Google AI Pro paskyras per OAuth, tada atnaujinkite jungtį, jei paskyrų sąrašas neatnaujinamas iš karto. |
 
-Cursor Pro nėra palaikomas privalėjas. Išjunkite senus vidinius skaitmeninius įvaizdus, veiksmų instrukcijas ar įkurimo žingsnius, kuriuose paminami Cursor Pro nustatymų laukai arba konektorinių kelių.
+Cursor Pro nebėra palaikomas tiekėjas. Pašalinkite senas vidines ekrano kopijas, darbo aprašus arba įvedimo veiksmus, kuriuose minimi Cursor Pro sąrankos laukai ar jungties keliai.
 
-Įdarydami arba pašalintį privalėjo paskyras, įveskite galiojantą el. pašto adresą to paskyros, kurį atnaujinama ar ištrunčiate, ir išsaugokite privalėjo nustatymus prieš testuojant konektoriniu pagrįstas veiksmus.
+Pridėdami arba šalindami tiekėjo paskyras, įveskite galiojantį el. pašto adresą paskyrai, kuri atnaujinama arba ištrinama, ir išsaugokite tiekėjo nustatymus prieš bandydami jungtimi pagrįstas operacijas.

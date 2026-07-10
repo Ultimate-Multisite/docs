@@ -3,11 +3,11 @@ title: Преглед на контролната панел
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Обзор на Dashboard-а
+# Обзор на Dashboard-а {#dashboard-overview}
 
 Ultimate Multisite има специален **Dashboard** в менюто Ultimate Multisite и добавя виджпети (widgets) и към Network Dashboard-а. В тази статия ще разгледаме какво можете да видите и на двете места.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite добавя полезни виджпети към network-level dashboard-а, който се намира на **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Ultimate Multisite добавя полезни виджпети към network-l
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Докато network dashboard-ът предоставя цялостна информация за мрежата, Ultimate Multisite dashboard-ът (в най-високо ниво на менюто Ultimate Multisite) предоставя информация за самия услуга.
 

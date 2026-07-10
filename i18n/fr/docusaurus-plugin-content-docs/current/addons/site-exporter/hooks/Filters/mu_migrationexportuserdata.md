@@ -1,14 +1,26 @@
 ---
 id: mu_migrationexportuserdata
-title: Filter - mu_migration/export/user/data
+title: Filtre - mu_migration/export/user/data
 sidebar_label: mu_migration/export/user/data
-_i18n_hash: 3d7b31369cacc60465378e8b9ff6c47c
+_i18n_hash: bf562e5125d4978c6267a96274f581ef
 ---
-# Filtre: mu_migration/export/user/data
+# Filtre : mu_migration/export/user/data {#filter-mumigrationexportuserdata}
 
-Ignorez, car il est déjà documenté dans inc/mu-migration/includes/commands/class-mu-migration-export.php:335.
+Filtre l’ensemble par défaut des données utilisateur à exporter/importer.
 
-### Source
+## Paramètres {#parameters}
 
-- Défini dans [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) à la ligne 147
+| Nom | Type | Description |
+|------|------|-------------|
+| $custom_user_data | `array` | Le tableau de données utilisateur personnalisées. |
+| $user | `\WP_User` | L’objet utilisateur. |
+
+### Depuis {#since}
+
+- 0.1.0
+### Source {#source}
+
 - Défini dans [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L335) à la ligne 335
+- Défini dans [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L147) à la ligne 147
+## Retour {#returns}
+Données utilisateur sous forme de tableau.

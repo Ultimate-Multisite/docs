@@ -3,11 +3,11 @@ title: שמירת מטמון פרומפט מודעת ספק
 sidebar_position: 10
 _i18n_hash: 79ff1fbb0ca81ccc5124c816dc6df48b
 ---
-# מטמון פרומפטים מודע לספק (Provider-Aware Prompt Caching)
+# מטמון פרומפטים מודע לספק (Provider-Aware Prompt Caching) {#provider-aware-prompt-caching}
 
 Superdav AI Agent v1.12.0 מציג **מטמון פרומפטים מודע לספק** (provider-aware prompt caching), המבצע אופטימיזציה של עלויות ה-API וזמני ההשהיה (latency) על ידי שמירת פרומפטים במטמון בין ספקי LLM שונים. לכל ספק יש מנגנוני תצורה ומטמון שונים.
 
-## סקירה כללית
+## סקירה כללית {#overview}
 
 מטמון פרומפטים מאפשר לך:
 
@@ -23,11 +23,11 @@ Superdav AI Agent v1.12.0 מציג **מטמון פרומפטים מודע לספ
 - **OpenRouter**: מטמון ספציפי לספק
 - **Vertex Anthropic**: מטמון פרומפטים עם בקרת מטמון (cache control)
 
-## Google Gemini: ממשק ה-API cachedContents
+## Google Gemini: ממשק ה-API cachedContents {#google-gemini-cachedcontents-api}
 
 Google Gemini מספק ניהול מטמון מפורש באמצעות ה-API `cachedContents`.
 
-### תצורה
+### תצורה {#configuration}
 
 ```php
 $config = [
@@ -41,7 +41,7 @@ $config = [
 ];
 ```
 
-### יצירת פרומפט במטמון
+### יצירת פרומפט במטמון {#creating-a-cached-prompt}
 
 ```php
 use Superdav\AI\Providers\GoogleGemini;
@@ -59,7 +59,7 @@ $cached_content = $gemini->create_cached_content(
 // מחזיר: ['cache_id' => 'abc123', 'expires_at' => timestamp]
 ```
 
-### שימוש בפרומפט במטמון
+### שימוש בפרומפט במטמון {#using-a-cached-prompt}
 
 ```php
 $response = $gemini->generate(
@@ -70,7 +70,7 @@ $response = $gemini->generate(
 );
 ```
 
-### מחזור חיי המטמון
+### מחזור חיי המטמון {#cache-lifecycle}
 
 ```php
 // רשימת תכני מטמון
@@ -89,18 +89,18 @@ $gemini->update_cached_content(
 $gemini->delete_cached_content( 'abc123' );
 ```
 
-### שיטות עבודה מומלצות עבור Gemini
+### שיטות עבודה מומלצות עבור Gemini {#best-practices-for-gemini}
 
 - **הגדרת TTL מתאים**: איזון בין חיסכון בעלויות לבין התיישנות המטמון
 - **שמירת פרומפטי מערכת**: שימוש חוזר באותו פרומפט מערכת עבור בקשות שונות
 - **ניטור שימוש במטמון**: מעקב אחר המטמון שבו נעשה שימוש הכי הרבה
 - **ניקוי מטמון פג תוקף**: מחיקה תקופתית של מטמון שלא נעשה בו שימוש
 
-## Azure OpenAI: מטמון פרומפטים
+## Azure OpenAI: מטמון פרומפטים {#azure-openai-prompt-caching}
 
 Azure OpenAI תומך במטמון פרומפטים עם ניהול TTL אוטומטי.
 
-### תצורה
+### תצורה {#configuration-1}
 
 ```php
 $config = [
@@ -114,7 +114,7 @@ $config = [
 ];
 ```
 
-### הפעלת מטמון
+### הפעלת מטמון {#enabling-caching}
 
 ```php
 use Superdav\AI\Providers\AzureOpenAI;
@@ -138,7 +138,7 @@ $response = $azure->generate(
 // ]
 ```
 
-### כותרות מטמון (Cache Headers)
+### כותרות מטמון (Cache Headers) {#cache-headers}
 
 Azure OpenAI משתמש בכותרות HTTP לבקרת מטמון:
 
@@ -152,7 +152,7 @@ Cache-Control: max_age=3600
 - `no_cache`: לא לשמור את הבקשה הזו במטמון
 - `no_store`: לא לשמור ולא להשתמש מחדש
 
-### ניטור שימוש במטמון
+### ניטור שימוש במטמון {#monitoring-cache-usage}
 
 ```php
 $response = $azure->generate( [...] );
@@ -164,18 +164,18 @@ echo "יצירת מטמון: $cache_tokens טוקנים\n";
 echo "פגיעות מטמון: $cache_hits טוקנים\n";
 ```
 
-### שיטות עבודה מומלצות עבור Azure OpenAI
+### שיטות עבודה מומלצות עבור Azure OpenAI {#best-practices-for-azure-openai}
 
 - **שימוש בפרומפטים עקביים**: פרומפטים זהים מפיקים תועלת מהמטמון
 - **הגדרת TTL סביר**: איזון בין עלות לבין עדכניות
 - **ניטור מדדי מטמון**: מעקב אחר יצירת מטמון לעומת פגיעות מטמון
 - **עיבוד בקשות דומות בבת אחת (Batch)**: קיבוץ בקשות למקסום פגיעות המטמון
 
-## OpenRouter: מטמון ספציפי לספק
+## OpenRouter: מטמון ספציפי לספק {#openrouter-provider-specific-caching}
 
 OpenRouter תומך במטמון דרך ספקיות תשתית (OpenAI, Anthropic וכו').
 
-### תצורה
+### תצורה {#configuration-2}
 
 ```php
 $config = [
@@ -188,7 +188,7 @@ $config = [
 ];
 ```
 
-### שימוש במטמון OpenRouter
+### שימוש במטמון OpenRouter {#using-openrouter-caching}
 
 ```php
 use Superdav\AI\Providers\OpenRouter;
@@ -205,7 +205,7 @@ $response = $router->generate(
 );
 ```
 
-### אפשרויות ספציפיות לספק
+### אפשרויות ספציפיות לספק {#provider-specific-options}
 
 לספקים שונים יש מנגנוני מטמון שונים:
 
@@ -230,18 +230,18 @@ $response = $router->generate(
 );
 ```
 
-### שיטות עבודה מומלצות עבור OpenRouter
+### שיטות עבודה מומלצות עבור OpenRouter {#best-practices-for-openrouter}
 
 - **הכרת מטמון הספק**: לכל ספק יש מנגנונים שונים
 - **בדיקת התנהגות המטמון**: ודא שהמטמון עובד עם הספק שבחרת
 - **ניטור עלויות**: מעקב אחר חיסכון מהמטמון
 - **שימוש במודלים עקביים**: מעבר בין מודלים שובר את פגיעות המטמון
 
-## Vertex Anthropic: מטמון פרומפטים עם בקרת מטמון
+## Vertex Anthropic: מטמון פרומפטים עם בקרת מטמון {#vertex-anthropic-prompt-caching-with-cache-control}
 
 Vertex Anthropic (Google Cloud) תומך במטמון פרומפטים עם בקרת מטמון מפורשת.
 
-### תצורה
+### תצורה {#configuration-3}
 
 ```php
 $config = [
@@ -259,7 +259,7 @@ $config = [
 ];
 ```
 
-### שימוש במטמון Vertex Anthropic
+### שימוש במטמון Vertex Anthropic {#using-vertex-anthropic-caching}
 
 ```php
 use Superdav\AI\Providers\VertexAnthropic;
@@ -289,12 +289,12 @@ $response = $vertex->generate(
 // ]
 ```
 
-### סוגי בקרת מטמון
+### סוגי בקרת מטמון {#cache-control-types}
 
 - **ephemeral**: מטמון למשך משך הבקשה (ברירת מחדל)
 - **persistent**: מטמון על פני מספר בקשות (אם נתמך)
 
-### ניטור שימוש במטמון
+### ניטור שימוש במטמון {#monitoring-cache-usage-1}
 
 ```php
 $response = $vertex->generate( [...] );
@@ -307,16 +307,16 @@ echo "נוצר מטמון: $cache_created טוקנים\n";
 echo "קריאת מטמון: $cache_read טוקנים\n";
 ```
 
-### שיטות עבודה מומלצות עבור Vertex Anthropic
+### שיטות עבודה מומלצות עבור Vertex Anthropic {#best-practices-for-vertex-anthropic}
 
 - **שימוש במטמון ephemeral**: טוב למטמון של סשן יחיד
 - **הגדרת max_tokens בהתאם**: איזון בין גודל המטמון לעלות
 - **ניטור מדדי מטמון**: מעקב אחר יעילות המטמון
 - **בדיקה עם עומס העבודה שלך**: ודא שהמטמון מועיל למקרה השימוש שלך
 
-## אסטרטגיית מטמון חוצת ספקים
+## אסטרטגיית מטמון חוצת ספקים {#cross-provider-caching-strategy}
 
-### תצורה מאוחדת
+### תצורה מאוחדת {#unified-configuration}
 
 ```php
 $config = [
@@ -342,7 +342,7 @@ $config = [
 ];
 ```
 
-### זיהוי ספק
+### זיהוי ספק {#provider-detection}
 
 ```php
 $provider = $config['provider'];
@@ -353,7 +353,7 @@ $cache_config = $config['caching']['providers'][ $provider ]
 // שימוש בתצורת המטמון הספציפית לספק
 ```
 
-### אסטרטגיית נחיתה (Fallback)
+### אסטרטגיית נחיתה (Fallback) {#fallback-strategy}
 
 ```php
 try {
@@ -367,9 +367,9 @@ try {
 }
 ```
 
-## אופטימיזציית עלויות
+## אופטימיזציית עלויות {#cost-optimization}
 
-### חישוב חיסכון
+### חישוב חיסכון {#calculate-savings}
 
 ```php
 $cache_created_tokens = $response['cache_creation_input_tokens'] ?? 0;
@@ -387,7 +387,7 @@ $savings = ($regular_tokens * 0.00001) - $total_cost;
 echo "חיסכון משוער: \$$savings\n";
 ```
 
-### טיפים לאופטימיזציה
+### טיפים לאופטימיזציה {#optimization-tips}
 
 - **שמירת פרומפטי מערכת גדולים**: החיסכון הגדול ביותר בעלויות
 - **שימוש חוזר בהקשר**: שמירת מסמכי הקשר שמשתמשים בהם לעיתים קרובות
@@ -395,23 +395,23 @@ echo "חיסכון משוער: \$$savings\n";
 - **ניטור יעילות המטמון**: מעקב אחר חיסכון בפועל
 - **התאמת TTL**: איזון בין עלות לבין עדכניות
 
-## פתרון תקלות (Troubleshooting)
+## פתרון תקלות (Troubleshooting) {#troubleshooting}
 
-### המטמון אינו בשימוש
+### המטמון אינו בשימוש {#cache-not-being-used}
 
 - ודא שמטמון מופעל בהגדרות
 - בדוק שהפרומפטים זהים (המטמון דורש התאמה מדויקת)
 - ודא שהמטמון לא פג תוקף
 - בדוק מגבלות מטמון ספציפיות לספק
 
-### כשל ביצירת מטמון
+### כשל ביצירת מטמון {#cache-creation-failing}
 
 - ודא שגודל המטמון נמצא במסגרת המגבלות של הספק
 - בדוק שהתחביר של בקרת המטמון נכון
 - ודא שהספק תומך במטמון עבור המודל שלך
 - עיין במסמכי הספק לגבי מגבלות
 
-### עלויות בלתי צפויות
+### עלויות בלתי צפויות {#unexpected-costs}
 
 - נטרל את יצירת המטמון לעומת קריאת המטמון
 - ודא שהמטמון אכן נמצא בשימוש

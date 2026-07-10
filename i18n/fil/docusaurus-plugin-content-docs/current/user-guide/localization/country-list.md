@@ -3,7 +3,7 @@ title: Listahan ng Bansa
 sidebar_position: 5
 _i18n_hash: 9c3cc54ddec563f05e01e1282a9e9f87
 ---
-# Muling pag-aayos ng listahan ng bansa sa Ultimate Multisite
+# Muling pag-aayos ng listahan ng bansa sa Ultimate Multisite {#re-ordering-the-ultimate-multisite-country-list}
 
 Ang dropdown para pumili ng bansa ay nakaayos ayon sa alpabeto batay sa mga pangalang Ingles ng mga bansa. Ibig sabihin nito, minsan ang bansa ng iyong kompanya at/o karamihan ng iyong mga customer ay nakabaon sa gitna ng napakahabang listahan ng mga pangalan ng bansa.
 

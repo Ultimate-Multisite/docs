@@ -3,17 +3,17 @@ title: Internetsoektog
 sidebar_position: 26
 _i18n_hash: e0c88931760a1b490767e39aad86c70f
 ---
-# Internetsoektog
+# Internetsoektog {#internet-search}
 
 Gratis AI Agent v1.5.0 voeg 'n **Internetsoektog**-funksie by wat die AI-assistent toelaat om op-datum inligting van die web te haal tydens 'n gesprek. Dit word aangedryf deur die [Brave Search API](https://brave.com/search/api/) of die [Tavily API](https://tavily.com/).
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
 Wanneer internetsoektog ingskakel is, kan die assistent outomaties jou gekonfigureerde soekverskaffer navraag doen wanneer dit bepaal dat 'n vraag huidige of eksterne inligting benodig — byvoorbeeld, onlangse nuus, lewendige pryse, of dokumentasie wat sedert die model se opleidingsafkaping verander het.
 
 Resultate word in real-time ingesamel en in die assistent se konteks ingesluit voordat dit 'n antwoord genereer. Die assistent dui aan wanneer dit soekresultate gebruik het om 'n vraag te beantwoord.
 
-## Internetsoektog Inskakel
+## Internetsoektog Inskakel {#enabling-internet-search}
 
 Internetsoektog vereis 'n API-sleutel van jou gekose soekverskaffer. Om dit te konfigureer:
 
@@ -24,35 +24,35 @@ Internetsoektog vereis 'n API-sleutel van jou gekose soekverskaffer. Om dit te k
 
 Sodra die sleutel gestoor is, is die Internetsoektog-funksie outomaties beskikbaar vir die assistent.
 
-## Brave Search
+## Brave Search {#brave-search}
 
-### Verkry 'n Brave Search API Sleutel
+### Verkry 'n Brave Search API Sleutel {#obtaining-a-brave-search-api-key}
 
 1. Besoek die [Brave Search API bladsy](https://brave.com/search/api/).
 2. Meld aan vir 'n plan. 'n Gratis vlak is beskikbaar met 'n maandelikse aanvraaglimiet.
 3. Kopieer jou API-sleutel van die Brave Search developer dashboard.
 4. Plak dit in die **Brave Search API Key**-veld in die Gratis AI Agent-instellings.
 
-### Gebruiksbeperkings
+### Gebruiksbeperkings {#usage-limits}
 
 Gebruik word deur Brave Search gefaktureer op grond van die aantal navrae wat gemaak word. Elke AI-antwoord wat 'n soektog uitlokke, tel as een navraag. Monitor jou gebruik in die [Brave Search developer dashboard](https://brave.com/search/api/) om onverwagte heffings te vermy.
 
-## Tavily
+## Tavily {#tavily}
 
 Superdav AI Agent v1.10.0 voeg **Tavily** by as 'n alternatiewe internetsoekverskaffer, wat rykere soekresultate en gevorderde navorsingsvermoë beskik.
 
-### Verkry 'n Tavily API Sleutel
+### Verkry 'n Tavily API Sleutel {#obtaining-a-tavily-api-key}
 
 1. Besoek die [Tavily API bladsy](https://tavily.com/).
 2. Meld aan vir 'n rekening. 'n Gratis vlak is beskikbaar met 'n maandelikse aanvraaglimiet.
 3. Kopieer jou API-sleutel van die Tavily dashboard.
 4. Plak dit in die **Tavily API Key**-veld in die Gratis AI Agent-instellings.
 
-### Gebruiksbeperkings
+### Gebruiksbeperkings {#usage-limits-1}
 
 Gebruik word deur Tavily gefaktureer op grond van die aantal API-aanroepe wat gemaak word. Elke AI-antwoord wat 'n soektog uitlokke, tel as een aanroep. Monitor jou gebruik in die [Tavily dashboard](https://tavily.com/) om onverwagte heffings te vermy.
 
-## Internetsoektog Uskakel
+## Internetsoektog Uskakel {#disabling-internet-search}
 
 Verwyder die API-sleutel van die aktiewe soekverskafferveld en stoor. Die Internetsoektog-funksie sal nie meer aan die assistent aangebied word nie.
 

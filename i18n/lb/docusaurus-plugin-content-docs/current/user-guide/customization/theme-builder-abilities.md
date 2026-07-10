@@ -3,18 +3,18 @@ title: Abilte vom Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Fähigkeite: Block Themes Scaffolde und Aktivierä
+# Theme Builder Fähigkeite: Block Themes Scaffolde und Aktivierä {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 bringt zwei mächtigi Fähigkeite mit, wo dir ermögliche, benutzerdefinierti block themes direkt us de Chat-Interface z'generiere und z'deploye.
 
-## Überblick
+## Überblick {#overview}
 
 D'Fähigkeite **scaffold-block-theme** und **activate-theme** erlauben es Agenten:
 - Kompletti, produktionsbereiti block themes uf Basis vo dine Spezifikationen z'generiere
 - Themes automatisch uf dinere Site z'aktivierä ohni manuelli Iigriff
 - Kohäsi visuelli Identitäte dur gfüehrti Designentschede z'schaffe
 
-## Block Theme Scaffolde
+## Block Theme Scaffolde {#scaffold-block-theme}
 
 D'Fähigkeit **scaffold-block-theme** generiert e neui WordPress block theme mit ere komplette Theme-Struktur, inklusiv:
 
@@ -23,7 +23,7 @@ D'Fähigkeit **scaffold-block-theme** generiert e neui WordPress block theme mit
 - Benutzerdefinierti Block-Styles und Variatione
 - Theme-Metadate und Support-Deklaratione
 
-### Wie bruche ich das?
+### Wie bruche ich das? {#how-to-invoke}
 
 In dim Chat mit em Superdav AI Agent chasch du d'Theme-Generierig aafroge:
 
@@ -38,7 +38,7 @@ De Agent wird:
 3. Alli nötige Theme-Dateie erstelle
 4. D'Theme für d'Aktivierig vorbereite
 
-### Erwarteti Usgab
+### Erwarteti Usgab {#expected-output}
 
 Wenn d'Fähigkeit erfolgreich usgfüehrt wird, gsehsch du:
 
@@ -56,11 +56,11 @@ Beispilsusgab:
   Status: Ready to activate
 ```
 
-## Theme Aktivierä
+## Theme Aktivierä {#activate-theme}
 
 D'**activate-theme** Fähigkeit wechselt dini Site zu eme neu ufgebautem oder bestehendem Block Theme.
 
-### Wie mer's ufwendet
+### Wie mer's ufwendet {#how-to-invoke-1}
 
 Nachdem du es Theme ufgebaut hesch, chasch es sofort aktiviere:
 
@@ -74,7 +74,7 @@ Oder jedes bestehendi Theme aktiviere:
 "Wechsle zum Twentytwentyfour theme"
 ```
 
-### Erwarteti Usgab
+### Erwarteti Usgab {#expected-output-1}
 
 Wenn d'Aktivierig erfolgreich isch:
 
@@ -92,7 +92,7 @@ Beispilsusgab:
   Note: Prüef dini Homepage, um s Layout z'bestätige
 ```
 
-## Workflow: Ufbau und Aktivierig
+## Workflow: Ufbau und Aktivierig {#workflow-scaffold-and-activate}
 
 E typische Workflow kombiniert beidi Fähigkeite:
 
@@ -102,7 +102,7 @@ E typische Workflow kombiniert beidi Fähigkeite:
 4. **Aktivierä**: "Aktiviere das Theme jetzt"
 5. **Verifiziere**: Bsuech dini Site, um z'bestätige, dass s neui Design live isch
 
-## Design Tokens und Anpassig
+## Design Tokens und Anpassig {#design-tokens-and-customization}
 
 Ufbaui Theme bruche WordPress design tokens (via `theme.json`) für:
 
@@ -114,9 +114,9 @@ Ufbaui Theme bruche WordPress design tokens (via `theme.json`) für:
 
 Die Tokens sind zentral in `theme.json` gsammlt, was es eifach macht, dini ganz Designsystem us eme File z'passe.
 
-## Begränzige und Notize
+## Begränzige und Notize {#limitations-and-notes}
 
-## Problembehebig
+## Problembehebig {#troubleshooting}
 
 **Theme erscheint nöd nach dem Scaffolding**
 - Prüef, ob de Theme-Ordner existiert und d'richtige Berechtigunge het.
@@ -133,7 +133,7 @@ Die Tokens sind zentral in `theme.json` gsammlt, was es eifach macht, dini ganz 
 - Lösch alli Caching Plugins.
 - Prüef, ob dini WordPress-Version die Tokens unterstützt, wo du bruchsch.
 
-## Nächsti Schritt
+## Nächsti Schritt {#next-steps}
 
 Nachdem du din Theme aktiviert hesch, chasch du:
 - D **Design System Aesthetics Fähigkeit** bruche, um d'Typografie, Farbe und de Abstand z'verfeinere.

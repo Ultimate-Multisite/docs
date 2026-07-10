@@ -3,11 +3,11 @@ title: Mga Kinahanglanon sa Site nga Kahanas
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Kahan ang Skill sa Site Specification
+# Kahan ang Skill sa Site Specification {#site-specification-skill}
 
 Ang **Site Specification skill** usa ka estruktura nga pamaagi para ma-capture ang mga tumong, audience, ug brand identity sa imong site. Kini nga impormasyon gi-store sa imong **site_brief memory**, diin ang mga agent nagrefer aron maghatag og pareho ug konteksto-aware nga tabang bisan unsa pa ka taas nga session.
 
-## Unsa ang Site Specification?
+## Unsa ang Site Specification? {#what-is-site-specification}
 
 Ang Site Specification kay ang proseso sa pagdokumento ni:
 
@@ -19,9 +19,9 @@ Ang Site Specification kay ang proseso sa pagdokumento ni:
 
 Kini nga specification mahimong imong **site_brief**, usa ka permanente nga memorya nga gigamit sa mga agent aron masabtan nila ang konteksto sa imong site.
 
-## Ngano Gamiton ang Site Specification?
+## Ngano Gamiton ang Site Specification? {#why-use-site-specification}
 
-### Consistency sa Matag Session
+### Consistency sa Matag Session {#consistency-across-sessions}
 
 Kung walay site_brief, kinahanglan nimo i-re-explain ang tumong sa imong site matag higayon nga magsugod ka og bag-ong session. Sa paggamit niini, dayon masabtan sa mga agent:
 
@@ -30,7 +30,7 @@ Kung walay site_brief, kinahanglan nimo i-re-explain ang tumong sa imong site ma
 - Ang istruktura sa imong content
 - Ang imong mga tumong sa negosyo
 
-### Mas Maayong Rekomendasyon
+### Mas Maayong Rekomendasyon {#better-recommendations}
 
 Gigamit sa mga agent ang imong site_brief aron:
 
@@ -39,17 +39,17 @@ Gigamit sa mga agent ang imong site_brief aron:
 - Mag-propose og mga disenyo nga pareho sa imong brand
 - Malikayan ang pagsuha og mga feature nga dili mag-match
 
-### Mas Dali nga Pagsugod (Faster Onboarding)
+### Mas Dali nga Pagsugod (Faster Onboarding) {#faster-onboarding}
 
 Ang mga bag-ong agent (o mga agent sa bag-ong sessions) dali ra makasabay pinaagi sa pagbasa sa imong site_brief imbes nga mangutana og mga klaripikasyon.
 
-## Pag-initiate sa Site Specification
+## Pag-initiate sa Site Specification {#initiating-site-specification}
 
-### Atol sa Theme Builder Onboarding
+### Atol sa Theme Builder Onboarding {#during-theme-builder-onboarding}
 
 Ang Skill sa Site Specification awtomatikong magsugod atol sa **Theme Builder onboarding flow**. Ang Setup Assistant agent magpangutana ug maghimo sa imong site_brief.
 
-### Manual Initiation
+### Manual Initiation {#manual-initiation}
 
 Pwede ka magsimula sa Site Specification bisan kanun-o:
 
@@ -63,9 +63,9 @@ o
 "Tabangi ko paghimo og site brief"
 ```
 
-## Ang Proseso sa Site Specification
+## Ang Proseso sa Site Specification {#the-site-specification-process}
 
-### Lakang 1: Tumong sa Site (Site Purpose)
+### Lakang 1: Tumong sa Site (Site Purpose) {#step-1-site-purpose}
 
 Ang agent mangutana:
 
@@ -81,7 +81,7 @@ Unsa ang pangunang tumong sa imong site?
 
 Pwede ka magpili og category o isaysay ang imong kaugaling nga tumong.
 
-### Lakang 2: Target Audience
+### Lakang 2: Target Audience {#step-2-target-audience}
 
 ```
 Kinsa ang imong pangunang audience?
@@ -94,7 +94,7 @@ Kinsa ang imong pangunang audience?
 Unsa ang ilang mga panginahanglan?
 ```
 
-### Lakang 3: Brand Identity
+### Lakang 3: Brand Identity {#step-3-brand-identity}
 
 ```
 Unsa ang mga kolor sa imong brand?
@@ -110,7 +110,7 @@ Unsaon nimo i-describe ang tono sa imong brand?
 - Warm / friendly
 ```
 
-### Lakang 4: Business Goals
+### Lakang 4: Business Goals {#step-4-business-goals}
 
 ```
 Unsa ang hitsura sa kalampusan para sa imong site?
@@ -129,7 +129,7 @@ Unsa ang imong pangunang metric (sukatan)?
 - Uban
 ```
 
-### Lakang 5: Estruktura sa Content (Content Structure)
+### Lakang 5: Estruktura sa Content (Content Structure) {#step-5-content-structure}
 
 ```
 Unsaon pag-organisa sa imong content?
@@ -148,13 +148,13 @@ Unsa nga mga klase sa content ang imong gigamit?
 - Uban
 ```
 
-## Ang Memorya sa imong site_brief
+## Ang Memorya sa imong site_brief {#your-sitebrief-memory}
 
 Human makahuman sa Site Specification, ang imong impormasyon i-store isip **site_brief** sa imong agent memory. Kini usa ka structured nga rekord nga naglangkob sa:
 
-## Pagtan-aw ug Pagsulod sa Imong site_brief
+## Pagtan-aw ug Pagsulod sa Imong site_brief {#viewing-and-updating-your-sitebrief}
 
-### Tan-awa ang Imong site_brief
+### Tan-awa ang Imong site_brief {#view-your-sitebrief}
 
 Pagpangutana sa agent:
 
@@ -170,7 +170,7 @@ o
 
 Ipakita sa agent ang imong gitabi nga detalye.
 
-### I-update ang Imong site_brief
+### I-update ang Imong site_brief {#update-your-sitebrief}
 
 Kung magbag-o na ang imong site, pwede nimo kini i-update:
 
@@ -186,9 +186,9 @@ o
 
 Kini mag-re-run sa Site Specification skill gamit ang imong kasamtangang impormasyon isip nagsugod nga punto.
 
-## Unsaon Gigamit sa mga Agents ang site_brief
+## Unsaon Gigamit sa mga Agents ang site_brief {#how-agents-use-sitebrief}
 
-### Mga Rekomendasyon sa Disenyo
+### Mga Rekomendasyon sa Disenyo {#design-recommendations}
 
 Kung mangayo ka og mga pagbag-o sa disenyo, magrefer ang mga agent sa imong site_brief:
 
@@ -199,7 +199,7 @@ nga adunay init ug artisanal nga tono. Maghimo ko og disenyo nga maghatag og gib
 sa imong handmade jewelry ug sustainable values."
 ```
 
-### Mga Suhestiyon sa Feature
+### Mga Suhestiyon sa Feature {#feature-suggestions}
 
 Magsuha ang mga agent og mga feature nga naka-align sa imong mga tumong:
 
@@ -210,23 +210,23 @@ magrekomenda ko ni: loyalty program, customer reviews, email newsletter,
 ug product recommendations."
 ```
 
-### Estruktura sa Content
+### Estruktura sa Content {#content-structure}
 
 Magusoha ang mga agent og pag-organisa sa content base sa imong estruktura:
 
 Para sa mga nagapangayo: "Paano ko dapat ayusin ang aking blog?"
 Awtomatiko nga tubag: "Tungod kay naggamit ka og product catalog uban ang blog, akong sugyot nga i-organisa ang mga post base sa kategorya sa produkto ug maghimo og 'styling guides' nga nagpakita og daghang mga produkto nga magkauban."
 
-## Mga Pinakamaayo nga Pamaagi (Best Practices)
+## Mga Pinakamaayo nga Pamaagi (Best Practices) {#best-practices}
 
-### Magpabiling Espesipiko (Be Specific)
+### Magpabiling Espesipiko (Be Specific) {#be-specific}
 
 Imbes nga "general audience" lang, isulti kung kinsa gyud imong target:
 
 - ✓ "Mga babaye nga 25-45 anyos, interesado sa sustainable fashion"
 - ✗ "Tanan"
 
-### Regular nga Update
+### Regular nga Update {#update-regularly}
 
 Samtang nagbag-o ang imong site, i-update ang imong `site_brief`:
 
@@ -235,14 +235,14 @@ Samtang nagbag-o ang imong site, i-update ang imong `site_brief`:
 - Kung mausab ang imong brand identity
 - Kung nagbag-o ang imong mga tumong sa negosyo
 
-### Gamit og Parehas nga Terminolohiya (Use Consistent Terminology)
+### Gamit og Parehas nga Terminolohiya (Use Consistent Terminology) {#use-consistent-terminology}
 
 Gamita ang parehas nga mga pulong sa tanang higayon:
 
 - ✓ Kanunay gamita ang "sustainable jewelry" (dili "eco-friendly jewelry" ug "green products")
 - ✓ Kanunay nga tawgon ang imong audience sa parehas nga paagi
 
-### Isulod og Konteksto (Include Context)
+### Isulod og Konteksto (Include Context) {#include-context}
 
 Hatag og background nga makatabang sa mga agent nga masabtan ang imong mga desisyon:
 
@@ -250,7 +250,7 @@ Hatag og background nga makatabang sa mga agent nga masabtan ang imong mga desis
 - "Ang among audience kay tech-savvy ug naghulat og modernong disenyo"
 - "Tungod kay kami usa ka startup nga giputang lang ang puhunan, kinahanglan nato ang mga solusyon nga makatipid sa gasto"
 
-## Relasyon sa Theme Builder Onboarding
+## Relasyon sa Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Ang Site Specification skill gi-integrate sa **Theme Builder onboarding flow**. Kung makahuman ka na sa onboarding, awtomatikong maghimo og `site_brief` ang imong site uban sa impormasyong imong gihatag.
 
@@ -260,7 +260,7 @@ Mahimo usab nimo pagpatakbo og Site Specification nga independente kung gusto ni
 - I-update ang imong site brief samtang nagbag-o ang imong site
 - Maghimo og detalyado nga specification sa dili pa magsugod sa Theme Builder
 
-## Pag-troubleshoot (Troubleshooting)
+## Pag-troubleshoot (Troubleshooting) {#troubleshooting}
 
 **Dili gigamit ang akong `site_brief`**
 - Siguraduhon nga naa ang agent og access sa memory
@@ -276,7 +276,7 @@ Mahimo usab nimo pagpatakbo og Site Specification nga independente kung gusto ni
 - I-update ang imong site_brief kung kini naayo na
 - Hatagi og dugang konteksto sa imong mga request
 
-## Sunod nga mga Lakang
+## Sunod nga mga Lakang {#next-steps}
 
 Human nimong gi-define ang imong site specification:
 

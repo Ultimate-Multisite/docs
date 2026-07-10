@@ -3,17 +3,17 @@ title: Export & Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export & Import
+# Export & Import {#export--import}
 
 Ang Ultimate Multisite 2.9.0 naghatag og usa ka single-site nga **Export & Import** tool ubos sa **Tools > Export & Import**. Gamita kini kung kinahanglan nimo i-package ang usa ka WordPress site isip ZIP file, i-restore ang ZIP, o ilipat ang usa ka site tali sa compatible Ultimate Multisite ug single-site WordPress installations.
 
-## Kinahanglanon nga mga permiso
+## Kinahanglanon nga mga permiso {#required-permissions}
 
 Kinahanglan kang mag-sign in isip administrator nga adunay access sa **Tools** menu sa WordPress sa site nga imong gi-export o gi-import. Sa multisite network, gamita ang account sa network administrator kung nag-export o nag-import og subsites gikan sa network-level Ultimate Multisite tools.
 
 Ang mga ZIP download kay gihatag pinaagi sa usa ka authenticated download endpoint, busa panatili ang admin session nga aktibo hangtod matapos ang download ug ayaw i-share ang generated download URLs publiko.
 
-## Pag-export og site ngadto sa ZIP
+## Pag-export og site ngadto sa ZIP {#exporting-a-site-to-a-zip}
 
 1. Sa WordPress admin para sa site nga gusto nimong kopyahon, adto sa **Tools > Export & Import**.
 2. Buksan ang export area ug piliha ang site nga gusto nimong i-package.
@@ -23,7 +23,7 @@ Ang mga ZIP download kay gihatag pinaagi sa usa ka authenticated download endpoi
 
 Pangita og luwas nga lugar para sa ZIP file. Mahimo kini maglangkob sa content sa site, settings, media files, ug mga gipili nga code assets.
 
-## Unsa ang apil sa export
+## Unsa ang apil sa export {#what-the-export-includes}
 
 Ang export ZIP mahimong maglakip ni:
 
@@ -34,7 +34,7 @@ Ang export ZIP mahimong maglakip ni:
 
 Ang eksaktong size sa ZIP depende sa dami sa media files, mga napili nga plugins ug themes, ug sa gidak-on sa database tables sa sitio.
 
-## Pag-import og sitio gikan sa ZIP
+## Pag-import og sitio gikan sa ZIP {#importing-a-site-from-a-zip}
 
 1. Adto sa **Tools > Export & Import** sa destinasyon WordPress site.
 2. Buksan ang area para sa import ug i-upload ang ZIP nga gihimo sa Export & Import tool.
@@ -46,7 +46,7 @@ Ang eksaktong size sa ZIP depende sa dami sa media files, mga napili nga plugins
 
 Sa usa ka single-site WordPress installation, ang pag-import og ZIP magpuli sa kasamtang nga sitio sa gi-import nga sitio. Paghimo og full backup sa target site sa dili ka magsugod, ug likayi ang pagsugod og daghang import para sa samang sitio sa samang higayon.
 
-## Mga Limitasyon ug mga nota sa compatibility
+## Mga Limitasyon ug mga nota sa compatibility {#limitations-and-compatibility-notes}
 
 Ang mga directory sa upload nga taas kaayo o media libraries mahimong maghimo og dako nga ZIP files. Siguraduhon ang PHP upload limits, execution limits, disk space, memory, ug server timeout settings sa dili pa mag-export o mag-import og dagkong sites.
 

@@ -3,18 +3,18 @@ title: Closte সংহতিকৰণ
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# Closte Integration
+# Closte Integration {#closte-integration}
 
-## Overview
+## Overview {#overview}
 Closte হৈছে Google Cloud infrastructure मा आधारित এটা व्यवस्थापित WordPress হোস্টিং প্লেটফৰ্ম। এই integration ले Ultimate Multisite আৰু Closte ৰ মাজত স্বয়ংক্রিয় domain syncing আৰু SSL certificate management সক্ষম কৰে।
 
-## Features
+## Features {#features}
 - স্বয়ংক্রিয় domain syncing
 - SSL certificate management
 - Wildcard domain support
 - Closte मा চলি থকাৰ বাবে কোনো configuration কৰাৰ প্ৰয়োজন নাই
 
-## Requirements
+## Requirements {#requirements}
 যদি আপুনি Closte ব্যৱহাৰ কৰি আছে, তেন্তে আপোনাৰ `wp-config.php` ফাইলত তলৰ constant টি define কৰিব লাগিব:
 
 ```php
@@ -23,13 +23,13 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 সাধাৰণতে, যদি আপুনি Closte मा হোস্টিং কৰি আছে, তেন্তে এই constant টি ইতিমধ্যে define কৰা থাকে।
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. Verify Your Closte API Key
+### 1. Verify Your Closte API Key {#1-verify-your-closte-api-key}
 
 যদি আপুনি Closte मा হোস্টিং কৰি আছে, তেন্তে `CLOSTE_CLIENT_API_KEY` constant টি আপোনাৰ `wp-config.php` ফাইলত ইতিমধ্যে define কৰা থাকিব। আপুনি এইটো আপোনাৰ `wp-config.php` ফাইলটো পৰীক্ষা কৰি নিশ্চিত কৰিব পাৰে।
 
-### 2. Enable the Integration
+### 2. Enable the Integration {#2-enable-the-integration}
 
 1. আপোনাৰ WordPress admin ত, Ultimate Multisite > Settings লৈ যাওক
 2. "Domain Mapping" tab मा যাওক
@@ -37,7 +37,7 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 4. Closte integration টি enable কৰক
 5. "Save Changes" ক্লিক কৰক
 
-## How It Works
+## How It Works {#how-it-works}
 
 যেতিয়া Ultimate Multisite ত এটা domain map কৰা হয়:
 
@@ -47,26 +47,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 এই integration ले Ultimate Multisite ত থকা DNS check interval setting লগতও কাম কৰে, যাৰ ফলত আপুনি ব্যৱস্থা কৰিব পাৰে যে ব্যৱস্থাই কিমান সময়ৰ মূৰেৰে DNS propagation আৰু SSL certificate issuance পৰীক্ষা কৰিব।
 
-## Domain Record Creation
+## Domain Record Creation {#domain-record-creation}
 
 এই integration ले নিশ্চিত কৰে যে কোনো site create বা duplicate কৰাৰ সময়ত, এটা domain record স্বয়ংক্রিয়ভাৱে create হয়। Closte integration ৰ বাবে ই বিশেষভাৱে গুৰুত্বপূৰ্ণ, কাৰণ domain record create কৰাটোৱে Closte API लाई domain আৰু SSL certificate create কৰিবলৈ ট্ৰigger কৰে।
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 - নিশ্চিত কৰক যে আপোনাৰ Closte API key সঠিক।
 - নিশ্চিত কৰক যে আপোনাৰ Closte account ত প্ৰয়োজনীয় permission আছে।
 
-### SSL Certificate Issues
+### SSL Certificate Issues {#ssl-certificate-issues}
 - Closte लाई SSL certificate issue কৰিবলৈ কিছু সময় লাগিব পাৰে (সাধাৰণতে ৫-১০ মিনিট)।
 - নিশ্চিত কৰক যে আপোনাৰ domain সমূহ Closte server ৰ IP address লৈ সঠিকভাৱে point কৰি আছে।
 - আপোনাৰ domain ৰ DNS records পৰীক্ষা কৰক যাতে সেয়া সঠিকভাৱে configure কৰা আছে।
 
-### Domain Not Added
+### Domain Not Added {#domain-not-added}
 - কোনো error message আছে নেকি সেইটো চাবলৈ Ultimate Multisite logs পৰীক্ষা কৰক।
 - নিশ্চিত কৰক যে domain টি Closte ত ইতিমধ্যে যোগ কৰা নাই।
 - নিশ্চিত কৰক যে আপোনাৰ domain ৰ DNS records সঠিকভাৱে configure কৰা আছে।
 
-### DNS Check Interval
+### DNS Check Interval {#dns-check-interval}
 - যদি SSL certificate issue কৰিবলৈ বেছি সময় লাগে, তেন্তে আপুনি Domain Mapping settings ত DNS check interval adjust কৰিব পাৰে।
 - default interval টি ৩০০ ছেকেণ্ড (৫ মিনিট) হয়, কিন্তু testing সময়ত বেছি ক্ষীৰত পৰীক্ষা কৰিবলৈ আপুনি ইয়াক ১০ ছেকেণ্ড লৈও set কৰিব পাৰে।

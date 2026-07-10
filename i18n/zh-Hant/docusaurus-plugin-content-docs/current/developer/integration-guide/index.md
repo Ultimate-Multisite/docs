@@ -1,15 +1,17 @@
 ---
 title: 整合指南
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# 整合指南
+# 整合指南 {#integration-guide}
 
-本指南涵蓋了 Ultimate Multisite 的常見整合模式，包括連接外部服務、建構自訂支付閘道，以及處理 Webhooks。
+本指南涵蓋 Ultimate Multisite 的常見整合模式，包括連接外部服務、建立自訂付款閘道，以及處理 webhooks。
 
-## CRM 整合
+如需隔離的租戶基礎架構，請參閱 [Multi-Tenancy 整合](./multi-tenancy)，以取得主權租戶啟動、遷移驗證、SSO 與拆除指南。
 
-當有新客戶註冊時，將客戶資料同步到您的 CRM：
+## CRM 整合 {#crm-integration}
+
+當新客戶註冊時，將客戶資料同步到你的 CRM：
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## 分析整合
+## 分析整合 {#analytics-integration}
 
-追蹤客戶生命週期中的關鍵業務事件：
+追蹤整個客戶生命週期中的關鍵業務事件：
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## 下一步驟
+## 下一步 {#next-steps}
 
-- [自訂閘道開發](./custom-gateway) — 建構您自己的支付閘道
-- [Webhook 處理](./webhooks) — 建立自訂 Webhook 端點
+- [自訂閘道開發](./custom-gateway) — 建立你自己的付款閘道
+- [Webhook 處理](./webhooks) — 建立自訂 webhook endpoints
+- [Multi-Tenancy 整合](./multi-tenancy) — 與主權租戶生命週期流程整合

@@ -3,7 +3,7 @@ title: Klienta konta lapas
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Jūsu Klienta Konta Lapa (v2)
+# Jūsu Klienta Konta Lapa (v2) {#your-clients-account-page-v2}
 
 _**SVIRTIE ATMIŅAS: Šis raksts attiecas uz Ultimate Multisite versiju 2.x.**_
 
@@ -11,7 +11,7 @@ Kad klienti abietojas plānā savā tīklā, viem ir piekļuve vietnei un tās d
 
 Šajā tutorialā mēs jums pamērojam klienta konta lapai un redzietat, ko jūsu klienti var redzēt un darīt tur.
 
-## Konta Lapa
+## Konta Lapa {#the-account-page}
 
 Kontas lapa ir pieejama, noklikšķinot uz **Account** (Kontas) vai līdzīgas darbības jūsu klienta dashboardā.
 
@@ -27,7 +27,7 @@ Pēc tam, kad klient noklikšķina uz to, viņš redz vispārīgu pārskatu par 
 
 Viņš var arī mainīt abietojumu uz citu plānu vai pirkt citu paku vai pakalpojumu, ko jūs piedāvājat. Atspējiet katru sadaļu atsevišķi.
 
-### Jūsu Medības pārskats:
+### Jūsu Medības pārskats: {#your-membership-overview}
 
 Pirms jūsu klientu vietnes nosaukuma atrodas pirmajā blokā apkopojums par jūsu pašreizējām plānēm un pakalpojumiem/pakežām, kas ar to tika ieguvotas. Blokā ir redzams arī medības numurs, sākotnējo maksājumu summa, kādā maksā plāna un jebkura pakalpojuma/pakalpes, un cik reizes šī medība ir maksāta. Jūs varat redzēt, vai medība ir **Aktīva**, **Paziņota** vai **Atbalsta**.
 
@@ -43,7 +43,7 @@ Tagad, ja jūsu klienti izvēlas ieguvit pakalpes vai pakalpes šejai pašreizē
 
 Piezīmi: šajā medības izmaiņu lapā nevar pievienot kuponus kodus. Ja kliente izmantoja kupona kodu pirmajā medības ieguvšanā, tas arī piemērots šai jauna medībai.
 
-### Maksājuma adrese atjaunināšana:
+### Maksājuma adrese atjaunināšana: {#updating-the-billing-address}
 
 Uz konta attējam jūsu klienti var atjaunināt savu faktūras adresi. Viņiem pietiks klikšķināt uz **Update** blakus _Billing Address_ (Faktūras adrese).
 
@@ -53,7 +53,7 @@ Jums parādīsies jauns loga, kurā jums pietiks ievadīt jaunu adresi un klikš
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Vietas mainīšana:
+### Vietas mainīšana: {#changing-the-site-template}
 
 Lai ļautu klientiem mainīt savus vietnes šablus, jums jāiet uz **Ultimate Multisite > Settings > Sites** un jāpaliek ieslēgta opcija **Allow Template Switching** (Ļaut šablu mainīšanu).
 
@@ -81,7 +81,7 @@ Pēc tam, kad ieslēdzat apstiprinājumu un noklikšķināt uz **Process Switch*
 
 Klienti var arī izmantot **Reset current template** no šī panelas, ja viņiem ir nepieciešams atjaunināt vietni uz pašreiz piešķirtajām šabloniem. Līdz kā mainīt citam šablonam, šablona atjaunināšana var pārrakstīt vietnes saturu, tāpēc klienti jāapstiprina tikai tad, kad saprotu atjaunināšanas darbību.
 
-### Uzlabojot personalizētas domānu (Custom Domains):
+### Uzlabojot personalizētas domānu (Custom Domains): {#adding-custom-domains}
 
 Jums arī būs iespēja klientiem pievienot personalizētu domānu šim planam savā kontes lapā. Lai ļaut klientiem izmantot personalizētās domānu, dodieties uz **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Pēc **Nākamais solis** (Next Step) noklikšķināšanas, jūsu klienti var pie
 
 Pēc **Pievienot domānu** (Add Domain) noklikšķināšanas domāns tiks pievienots jūsu klienta kontam. Visu, kas viņiem jādarī tagad, ir izveidot šīs domānas DNS ierakstus savā domānas reģistrātorā.
 
-### Parvadu mainīšana:
+### Parvadu mainīšana: {#changing-password}
 
 Klientu konta dashboardā klienti var arī mainīt savu parvadu noklikšķināšanas uz **Mainīt parvu** (Change Password).
 
@@ -125,7 +125,7 @@ Klientu konta dashboardā klienti var arī mainīt savu parvadu noklikšķināš
 
 ![Mainīt katru slēgu formā ar pašreizējām un jaunas katras slēgas laukus](/img/account-page/change-password-form.png)
 
-### Bīstama zona:
+### Bīstama zona: {#danger-zone}
 
 Mums ir arī divas iespējas, kas redzamas **Bīstamajā zonā**: **Izslēgt vietni** un **Izslēgt kontu**. Tās ir abas bīstamajās zonas daļā, jo šie divi darbības nav atgriežami. Ja jūsu klientiem izslēgst savu vietni vai kontu, viņiem nevar to atgūt.
 

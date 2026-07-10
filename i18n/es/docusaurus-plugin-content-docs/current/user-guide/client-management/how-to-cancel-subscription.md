@@ -3,7 +3,7 @@ title: Cómo cancelar una suscripción
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# ¿Cómo puedo cancelar mi suscripción?
+# ¿Cómo puedo cancelar mi suscripción? {#how-can-i-cancel-my-subscription}
 
 Si tienes una licencia de Ultimate Multisite, puedes cancelar su renovación en cualquier momento que desees. Solo sigue los pasos a continuación:
 

@@ -1,132 +1,138 @@
 ---
-title: የዶሜን ካርታ አወጣጥ እንዴት ይቻላል
+title: የዶሜይን ማፒንግን እንዴት ማዋቀር እንደሚቻል
 sidebar_position: 6
-_i18n_hash: 70b0ea1fd4e24e701978329f52843452
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# የዶሜን ማዛመድ (Domain Mapping) እንዴት ማዋቀር እንደሚቻል (v2)
+# የዶሜይን ማዛመድን እንዴት ማዋቀር እንደሚቻል (v2) {#how-to-configure-domain-mapping-v2}
 
-_**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+_**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ የUltimate Multisite ስሪት 2.xን ይመለከታል።**_
 
-የፕሪሚየም ኔትወርክ በጣም ኃይለኛ ባህሪያት አንዱ ለደንበኞቻችን የከፍተኛ ደረጃ ዶሜን (top-level domain) እንዲያያይዙ እድል መስጠት ነው። በመጨረሻም፣ የትኛው ይበልጥ ሙያዊ ይመስላል፦ [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ወይስ [_**joesbikeshop.com**_](http://joesbikeshop.com)? ለዚህም ነው Ultimate Multisite ያለ የሶስተኛ ወገን plugin ተጠቅሞ ይህንን ባህሪ የያዘው።
+የፕሪሚየም ኔትወርክ በጣም ኃይለኛ ባህሪያት አንዱ፣ ለደንበኞቻችን ከፍተኛ-ደረጃ ዶሜይንን ከጣቢያዎቻቸው ጋር የማያያዝ እድል መስጠት ነው። በመጨረሻም፣ የትኛው የበለጠ ሙያዊ ይመስላል፦ [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ወይስ [_**joesbikeshop.com**_](http://joesbikeshop.com)? ለዚህም ነው Ultimate Multisite ያንን ባህሪ የሶስተኛ-ወገን ፕለጊኖችን መጠቀም ሳያስፈልግ፣ በውስጡ ተካትቶ የሚያቀርበው።
 
-## የዶሜን ማዛመድ ምንድነው?
+## የዶሜይን ማዛመድ ምንድነው? {#whats-domain-mapping}
 
-በስሙ እንደሚያመለክተው፣ የዶሜን ማዛመድ (domain mapping) ማለት Ultimate Multisite ለተጠቃሚዎች የራሳቸውን ዶሜን ስም እንዲያስገቡ የሚያስችል እና ያንን ጥያቄ ወደ ተዛማጅ ኔትወርክ ውስጥ ባለው ድረ-ገጽ እንዲያዛምድ የሚያስችል ችሎታ ነው።
+ስሙ እንደሚጠቁመው፣ የዶሜይን ማዛመድ ማለት Ultimate Multisite ለብጁ ዶሜይን ጥያቄ ተቀብሎ፣ ያንን ጥያቄ በኔትወርኩ ውስጥ ያ ተያያዥ ዶሜይን ከተያያዘበት ተዛማጅ ጣቢያ ጋር የማዛመድ ችሎታ ነው።
 
-### በUltimate Multisite Networkዎ ላይ የዶሜን ማዛመድን እንዴት ማዘጋጀት ይቻላል
+### በUltimate Multisite ኔትወርክዎ ላይ የዶሜይን ማዛመድን እንዴት ማዘጋጀት እንደሚቻል {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-የዶሜን ማዛመድ እንዲሰራ ጥቂት ዝግጅት ያስፈልጋል። መልካም ነገር ቢኖር Ultimate Multisite ከባድ ስራውን በራስ-ሰር ስለሚያከናውን፣ እርስዎ በቀላሉ መስፈርቶቹን ማሟላት ይችላሉ።
+የዶሜይን ማዛመድ እንዲሰራ ከእርስዎ በኩል አንዳንድ ማዋቀር ይፈልጋል። እንደ እድል ሆኖ፣ Ultimate Multisite ከባዱን ስራ ለእርስዎ በራስ-ሰር ያከናውናል፣ ስለዚህ መስፈርቶቹን በቀላሉ ማሟላት ይችላሉ።
 
-በUltimate Multisite ሲጫን፣ הwizard (የማስጫው) በራስ-ሰር **sunrise.php** ወደ ተመደበው አቃፊ ውስጥ ይገለብጣል። **ይህ እርምጃ እስኪጠናቀቅ ድረስ הwizard እንዲቀጥል አይፈቅድልዎትም።**
+በUltimate Multisite ጭነት ወቅት፣ ዊዛርዱ **sunrise.php**ን ወደተመደበው አቃፊ በራስ-ሰር ይቀዳና ይጭናል። **ዊዛርዱ ይህ ደረጃ እስኪጠናቀቅ ድረስ እንዲቀጥሉ አይፈቅድልዎትም**።
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-ይህ ማለት Ultimate Multisite installation wizard ኔትወርክዎን ማዘጋጀቱን እንደጨረሰ፣ ወዲያውኑ የራሳቸውን ዶሜን ማዛመድ መጀመር ይችላሉ።
+ይህ ማለት የUltimate Multisite ጭነት ዊዛርድ ኔትወርክዎን ማዘጋጀቱን ከጨረሰ በኋላ፣ ወዲያውኑ ብጁ ዶሜይኑን ማዛመድ መጀመር ይችላሉ።
 
-በUltimate Multisite ውስጥ የዶሜን ማዛመድ የግድ አስፈላጊ አይደለም። የWordPress Multisite ተወላጅ የዶሜን ማዛመድ ተግባርን ወይም ሌላ ማንኛውንም የዶሜን ማዛመድ መፍትሄ የመጠቀም አማራጽ አለዎት።
+በUltimate Multisite ውስጥ የዶሜይን ማዛመድ ግዴታዊ እንዳልሆነ ያስተውሉ። የWordPress Multisite ተወላጅ የዶሜይን ማዛመድ ተግባርን ወይም ሌላ ማንኛውንም የዶሜይን ማዛመድ መፍትሄ የመጠቀም አማራጭ አለዎት።
 
-የሌላ የዶሜን ማዛመድ መፍትሄ እንዲተካ የUltimate Multisite የዶሜን ማዛመድን ለማጥፋት ከፈለጉ፣ ይህንን ባህሪ በ**Ultimate Multisite > Settings > Domain Mapping** ስር ማጥፋት ይችላሉ።
+ለሌሎች የዶሜይን ማዛመድ መፍትሄዎች መንገድ ለመስጠት የUltimate Multisite የዶሜይን ማዛመድን ማሰናከል ካስፈለገዎት፣ ይህን ባህሪ በ**Ultimate Multisite > Settings > Domain Mapping** ስር ማሰናከል ይችላሉ።
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![የadmin ማዘዋወር፣ የማዛመድ መልዕክት እና የDNS አማራጮችን የሚያሳይ የዶሜይን ማዛመድ ቅንብሮች ገጽ](/img/config/domain-mapping-settings.png)
 
-ከዚህ አማራጭ በታች፣ **Force Admin Redirect** የሚል አማራጭም ማየት ይችላሉ። ይህ አማራጭ ደንበኞችዎ በየራሳቸው የዶሜን ስም እና በsubdomain ላይ ባለው የአስተዳዳሪ (admin) ዳሽቦርድ መዳረሻ ላይ መሆን ይችሉ እንደሆነ ወይም በአንዱ ላይ ብቻ መሆን እንደሚችሉ መቆጣጠር ያስችልዎታል።
+ከዚህ አማራጭ በታች በቀጥታ፣ **Force Admin Redirect** የሚለውን አማራጭ ደግሞ ማየት ይችላሉ። ይህ አማራጭ ደንበኞችዎ የadmin Dashboard ን በብጁ ዶሜይናቸው እና በንዑስ ዶሜይናቸው ሁለቱም ላይ መድረስ ይችሉ ወይም በአንዱ ብቻ እንዲሆን መቆጣጠር ያስችልዎታል።
 
-**Force redirect to mapped domain** የሚለውን ከመረጡ፣ ደንበኞችዎ በየራሳቸው የዶሜን ስም ላይ ብቻ የአስተዳዳሪ ዳሽቦርድ መዳረሻ ሊኖራቸው ይችላል።
+**Force redirect to mapped domain** ከመረጡ፣ ደንበኞችዎ የadmin Dashboard ን በብጁ ዶሜይኖቻቸው ላይ ብቻ መድረስ ይችላሉ።
 
-**Force redirect to network domain** የሚለው አማራጭ ግን ተቃራኒውን ያደርጋል - ደንበኞችዎ በየራሳቸው የዶሜን ስም ላይ ቢሞክሩም፣ በsubdomain ላይ ብቻ ዳሽቦርድ መዳረሻ እንዲኖራቸው ያደርጋል።
+**Force redirect to** **network domain** የሚለው አማራጭ በትክክል ተቃራኒውን ያደርጋል - ደንበኞችዎ በብጁ ዶሜይኖቻቸው ላይ ለመግባት ቢሞክሩም እንኳ፣ Dashboardዎቻቸውን በንዑስ ዶሜይናቸው ላይ ብቻ እንዲደርሱ ይፈቀድላቸዋል።
 
-እና **Allow access to the admin by both mapped domain domain and network domain** የሚለው አማራጭ ደግሞ በsubdomain እና በየራሳቸው የዶሜን ስም ላይ ሁለቱም የአስተዳዳሪ ዳሽቦርድ መዳረሻ እንዲኖራቸው ያደርጋቸዋል።
+እና **Allow access to the admin by both mapped domain domain and network domain** የሚለው አማራጭ፣ የadmin Dashboardዎቻቸውን በንዑስ ዶሜይኑ እና በብጁ ዶሜይኑ ሁለቱም ላይ መድረስ ያስችላቸዋል።
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![ሦስቱን የማዘዋወር አማራጮች የሚያሳይ የተዘረጋ የAdmin Redirect ተቆልቋይ](/img/config/domain-mapping-redirect-options.png)
 
-የራሳቸውን ዶሜን ስም ለማዛመድ ሁለት መንገዶች አሉ። የመጀመሪያው ደግሞ የኔትወርክ አስተዳዳሪ ዳሽቦርድ ላይ እንደ super admin የዶሜን ስም በማዛመድ ሲሆን፣ ሁለተኛው ደግሞ በsubsite አስተዳዳሪ ዳሽቦርድ ስር ባለው የखाት (account) ገጽ ነው።
+ብጁ ዶሜይንን ለማዛመድ ሁለት መንገዶች አሉ። የመጀመሪያው እንደ super admin ከኔትወርክ admin Dashboardዎ የዶሜይን ስሙን በማዛመድ ሲሆን፣ ሁለተኛው በንዑስ ጣቢያ admin Dashboard ውስጥ በAccount ገጽ ስር ነው።
 
-ነገር ግን በኔትወርክዎ ውስጥ ባለው የsubsite ውስጥ የራሳቸውን ዶሜን ስም ከመዛመድዎ በፊት፣ የዶሜን ስሙ **DNS settings** በትክክል መዋቀሩን ማረጋገጥ ያስፈልግዎታል።
+ነገር ግን ብጁ ዶሜይኑን በኔትወርክዎ ውስጥ ካሉ ንዑስ ጣቢያዎች አንዱ ጋር ማዛመድ ከመጀመርዎ በፊት፣ የዶሜይን ስሙ **DNS settings** በትክክል መዋቀራቸውን ማረጋገጥ ያስፈልግዎታል።
 
 ###
 
-### የዶሜን DNS ስሪት በትክክል መዋቀሩን ማረጋገጥ
+### የዶሜይኑ DNS settings በትክክል መዋቀራቸውን ማረጋገጥ {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-ማዛመድ እንዲሰራ፣ ለማዛመድ እቅድ ባቀዱት ዶሜን ስም ወደ የኔትወርክዎ IP አድራሻ መ 指ራቱን ማረጋገጥ አለብዎት። ልብ ሊሉት የሚገባው ነገር ቢኖር፣ ሊያዛምዱት የሚፈልጉት የራሱ የዶሜን ስም IP አድራሻ ሳይሆን፣ Ultimate Multisite የተጫነበት የኔትወርክ IP አድራሻ መሆኑን ነው። የአንድ የተወሰነ ዶሜን IP አድራሻ ለመፈለግ፣ ለምሳሌ [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) መሄድ እንመክራለን።
+ማዛመዱ እንዲሰራ፣ ለማዛመድ ያቀዱት ዶሜይን ወደ ኔትወርክዎ IP አድራሻ እየጠቆመ መሆኑን ማረጋገጥ ያስፈልግዎታል። የኔትወርክ IP አድራሻ እንደሚያስፈልግዎት ያስተውሉ - Ultimate Multisite የተጫነበት ዶሜይን IP አድራሻ - ለማዛመድ የሚፈልጉት ብጁ ዶሜይን IP አድራሻ አይደለም። የተወሰነ ዶሜይን IP አድራሻ ለመፈለግ፣ ለምሳሌ ወደ [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) መሄድን እንመክራለን።
 
-ዶሜኑን በትክክል ለማዛመድ፣ ወደዚያ **IP address** የሚያመለክት **A RECORD** በ**DNS** ውቅረትዎ ላይ መጨመር ያስፈልግዎታል። የDNS አስተዳደር በተለያዩ የዶሜን ሪጅስትራዎች መካከል በጣም ይለያያል፣ ነገር ግን " _Creating A Record on XXXX_ " ብለው ከፈለጉ፣ XXXX የዶሜን ሪጅስትራዎ ከሆነ፣ በበይነመረቡ ላይ ብዙ ትምህርቶች አሉ።
+ዶሜይኑን በትክክል ለማዛመድ፣ በ**DNS** ውቅርዎ ላይ ወደዚያ **IP አድራሻ** የሚጠቁም **A RECORD** መጨመር ያስፈልግዎታል። የDNS አስተዳደር በተለያዩ የዶሜይን ሬጅስትራሮች መካከል በጣም ይለያያል፣ ነገር ግን XXXX የዶሜይን ሬጅስትራርዎ በሆነበት " _Creating A Record on XXXX_ " ብለው ከፈለጉ፣ ይህን የሚሸፍኑ ብዙ መማሪያዎች በመስመር ላይ አሉ (ምሳ.: " _Creating A Record on_ _GoDaddy_ ")።
 
-ይህ ነገር እንዲሰራ ችግር ካጋጠመዎት፣ **የዶሜን ሪጅስትራዎን ድጋፍ ያነጋግሩ** እና በዚህ ክፍል ሊረዳዎት ይችላሉ።
+ይህን እንዲሰራ ማድረግ ላይ ችግር ካጋጠመዎት፣ **የዶሜይን ሬጅስትራር ድጋፍዎን ያነጋግሩ** እና በዚህ ክፍል ሊረዱዎት ይችላሉ።
 
-ደንበኞችዎ የራሳቸውን ዶሜን ስም እንዲያዛምዱ ዕቅድ ካደረጉ፣ እነሱ በራሳቸው ይህንን ስራ መሥራት አለባቸው። A Record መፍጠር ባይችሉ ወደ የሪጅስትራቸው ድጋፍ ስርዓት ያመሯቸው።
+ደንበኞችዎ የራሳቸውን ዶሜይኖች እንዲያዛምዱ ለመፍቀድ ካቀዱ፣ በዚህ ክፍል ላይ ስራውን ራሳቸው ማከናወን ይኖርባቸዋል። A Record መፍጠር ካልቻሉ፣ ወደ ሬጅስትራር ድጋፍ ስርዓታቸው ያመልክቷቸው።
 
-### የዶሜን ስም እንደ Super Admin ማዛመድ
+### ብጁ ዶሜይን ስምን እንደ Super Admin ማዛመድ {#mapping-custom-domain-name-as-super-admin}
 
-በኔትወርክዎ ላይ እንደ super admin ሲመዘገቡ፣ ወደ **Ultimate Multisite > Domains** በመሄድ የራሳቸውን ዶሜን ስም በቀላሉ ማከል እና ማስተዳደር ይችላሉ።
+በኔትወርክዎ ላይ እንደ super admin ገብተው ሲሆን፣ በ**Ultimate Multisite > Domains** ስር በመሄድ ብጁ የዶሜይን ስሞችን በቀላሉ መጨመር እና ማስተዳደር ይችላሉ።
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![በUltimate Multisite ውስጥ የDomains ዝርዝር ገጽ](/img/admin/domains-list.png)
 
-በዚህ ገጽ ስር፣ በላይ ባለው **Add Domain** ቁልፍ ላይ ጠቅ በማድረግ፣ የ**custom domain name**፣ የcustom domain name ሊተገበሩበት የሚፈልጉት **subsite** እና እንደ **primary domain** ስም ማዘጋጀት ይፈልጋሉ ወይስ አለማድረግ የሚለውን መወሰን የሚችል የሞዳል መስኮት ይከፈታል። (ማስታወሱ፡ **በአንድ subsite ላይ ብዙ የዶሜን ስም ማዛመድ ይችላሉ**።)
+በዚህ ገጽ ስር፣ ከላይ ያለውን **Add Domain** ቁልፍ መጫን ይችላሉ፣ እና ይህ **ብጁ የዶሜይን ስም**፣ ብጁ የዶሜይን ስሙን ሊተገብሩበት የሚፈልጉትን **ንዑስ ጣቢያ**፣ እና እንደ **ዋና ዶሜይን** ስም ማቀናበር ይፈልጉ እንደሆነ ወይም እንዳልፈለጉ መወሰን የሚችሉበት ሞዳል መስኮት ያመጣል (ወደ **አንድ ንዑስ ጣቢያ በርካታ የዶሜይን ስሞችን ማዛመድ** እንደሚችሉ ያስተውሉ)።
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![የዶሜይን ስም፣ የጣቢያ መምረጫ እና ዋና ዶሜይን መቀያየሪያ ያለው Add Domain ሞዳል](/img/admin/domain-add-modal.png)
 
-ሁሉም መረጃ ከገቡ በኋላ፣ በታች ባለው **Add Existing Domain** ቁልፍ ላይ መጫን ይችላሉ።
+ሁሉንም መረጃ ካስገቡ በኋላ፣ በታች ያለውን **Add Existing Domain** ቁልፍ መጫን ይችላሉ።
 
-ይህ የcustom domain ስም የDNS መረጃ የማረጋገጥ እና የመቅሰም ሂደትን ይጀምራል። በተጨማሪም፣ ሂደቱ ምን እያደረገ እንደሆነ እንዲከታተሉ በገጹ ግርጌ ላይ መዝገብ (log) ያያሉ። ይህ ሂደት ለማጠናቀቅ ጥቂት ደቂቃዎችን ሊወስድ ይችላል።
+ይህ የብጁ ዶሜይኑን DNS መረጃ የማረጋገጥ እና የማምጣት ሂደት ይጀምራል። እንዲሁም እያለፈበት ያለውን ሂደት እንዲከታተሉ በገጹ ታች ላይ ሎግ ያያሉ። ይህ ሂደት ለመጠናቀቅ ጥቂት ደቂቃዎች ሊወስድ ይችላል።
 
-ሁሉም ነገር በትክክል ከተዘጋጀ፣ **Stage** ወይም ሁኔታ ከ**Checking DNS** ወደ **Ready** መቀየር አለበት።
+Ultimate Multisite v2.13.0 እንዲሁም አዲስ ጣቢያ እንደ በጣቢያ-የተለየ ዶሜይን መታየት በሚገባው አስተናጋጅ ላይ ሲፈጠር የውስጥ ዶሜይን መዝገቡን በራስ-ሰር ይፈጥራል። አስተናጋጁ የኔትወርኩ ዋና ዶሜይን ከሆነ፣ ወይም በ**Site URL** መስክ ላይ ከተዋቀሩት የጋራ የcheckout-form መሠረት ዶሜይኖች አንዱ ከሆነ፣ ያ የጋራ መሠረት ዶሜይን ለሚጠቀምበት ማንኛውም ጣቢያ እንዲገኝ የራስ-ሰር የተመደበ-ዶሜይን መዝገብ ይዘለላል።
+
+ደንበኛ በDomain Seller v1.3.0 ወይም ከዚያ በኋላ አዲስ ዶሜይን ሲመዘግብ፣ Ultimate Multisite በነባሪነት የተመዘገበውን ዶሜይን ከደንበኛው የኔትወርክ ጣቢያ ጋር በራስ-ሰር ያመሳስለዋል። አስተዳዳሪዎች እንደ ዋና-ዶሜይን ምልክት፣ የማንቃት ሁኔታ፣ ወይም የSSL አያያዝ ያሉ አማራጮችን ማስተካከል ካልፈለጉ በስተቀር፣ ከተሳካ ምዝገባ በኋላ የተለየ የተመደበ-ዶሜይን መዝገብ ማከል አያስፈልጋቸውም።
+
+ሁሉም ነገር በትክክል ከተዋቀረ **Stage** ወይም ሁኔታው ከ**Checking DNS** ወደ **Ready** መቀየር አለበት።
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-በየዶሜን ስም ላይ ጠቅ ካደረጉ፣ በውስጡ ያሉ አንዳንድ አማራጮችን ማየት ይችላሉ። በፍጥነት እንመልከታቸው፦
+በዶሜይን ስም ላይ ከጠቀሱ፣ በውስጡ አንዳንድ አማራጮችን ማየት ይችላሉ። እነሱን በፍጥነት እንመልከት፦
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![የዶሜይን ዝርዝር ገጽ ከደረጃ፣ ጣቢያ፣ ንቁ፣ ዋና እና SSL መቀያየሪያዎች ጋር](/img/admin/domain-edit.png)
 
-**Stage:** ይህ የዶሜኑ ያለበት ደረጃ ነው። ዶሜኑን ለመጀመሪያ ጊዜ ሲጨምሩ፣ ምናልባት በ**Checking DNS** ደረጃ ላይ ይሆናል። ሂደቱ የDNS መረጃዎችን ይፈትሻል እና ትክክል መሆናቸውን ያረጋግጣል። ከዚያም፣ ዶሜኑ በ**Checking SSL** ደረጃ ላይ ይገባል። Ultimate Multisite ዶሜኑ SSL ካለው ወይስ ባይኖረው ይፈትሻል እና የዶሜኑን ስም እንደ **Ready** ወይም **Ready (without SSL)** ይመድባል።
+**Stage:** ይህ ዶሜይኑ ያለበት ደረጃ ነው። ዶሜይኑን መጀመሪያ ሲያክሉ፣ ምናልባት በ**Checking DNS** ደረጃ ላይ ይሆናል። ሂደቱ የDNS ግቤቶችን ይፈትሻል እና ትክክል መሆናቸውን ያረጋግጣል። ከዚያ ዶሜይኑ በ**Checking SSL** ደረጃ ላይ ይቀመጣል። Ultimate Multisite ዶሜይኑ SSL እንዳለው ወይም እንደሌለው ይፈትሻል እና ዶሜይንዎን እንደ **Ready** ወይም **Ready (without SSL)** ይመድባል።
 
-**Site:** ከዚህ ዶሜን ጋር የተያያዘው subdomain ነው። የተዛመደው ዶሜን የዚህ የተወሰነ ድረ-ገጽ ይዘትን ያሳያል።
+**Site:** ከዚህ ዶሜይን ጋር የተያያዘው ንዑስ ዶሜይን። የተመደበው ዶሜይን የዚህን ተወሰነ ጣቢያ ይዘት ያሳያል።
 
-**Active:** ዶሜኑን ለማንቃት ወይም ለማጥፋት ይህንን አማራጭ መጫን ወይም ማጥፋት ይችላሉ።
+**Active:** ዶሜይኑን ለማንቃት ወይም ለማሰናከል ይህን አማራጭ ማብራት ወይም ማጥፋት ይችላሉ።
 
-**Is Primary Domain?:** ደንበኞችዎ ለእያንዳንዱ ድረ-ገጽ ከአንድ በላይ የዶሜን ስም ሊኖራቸው ይችላል። ይህንን አማራጭ በመጠቀም ይህ ለተወሰነ ድረ-ገጽ ዋናው ዶሜን መሆኑን መምረጥ ይችላሉ።
+**Is Primary Domain?:** ደንበኞችዎ ለእያንዳንዱ ጣቢያ ከአንድ በላይ የተመደበ ዶሜይን ሊኖራቸው ይችላል። ይህ ለተወሰነው ጣቢያ ዋና ዶሜይን መሆኑን ለመምረጥ ይህን አማራጭ ይጠቀሙ።
 
-**Is Secure?:** Ultimate Multisite ዶሜኑ SSL ሰርተፍኬት ካለው ወይስ ባይኖረው ከመፍቀዱ በፊት ቢፈትሽም፣ ዶሜኑን በSSL ሰርተፍኬት ወይም ያለበት ሁኔታ በእጅ መጫን ይችላሉ። ማስታወሱ፡ ድረ-ገጹ SSL ሰርተፍኬት ባይኖረው እና በSSL ለመጫን ቢሞክሩ፣ ስህተቶችን ሊሰጥዎ ይችላል።
+**Is Secure?:** Ultimate Multisite ዶሜይኑን ከማንቃቱ በፊት የSSL ሰርቲፊኬት እንዳለው ወይም እንደሌለው ቢፈትሽም፣ ዶሜይኑን ከSSL ሰርቲፊኬት ጋር ወይም ያለ SSL ሰርቲፊኬት በእጅ መጫን መምረጥ ይችላሉ። ድር ጣቢያው የSSL ሰርቲፊኬት ከሌለው እና በSSL እንዲጫን በግድ ለማድረግ ከሞከሩ፣ ስህተቶች ሊሰጥዎ እንደሚችል ያስተውሉ።
 
-### የዶሜን ስም እንደ Subsite ተጠቃሚ ማዛመድ
+### እንደ Subsite ተጠቃሚ ብጁ ዶሜይን ስም መመደብ {#mapping-custom-domain-name-as-subsite-user}
 
-የsubsite አስተዳዳሪዎች የራሳቸውን ዶሜን ስም ከsubsite አስተዳዳሪ ዳሽቦርድ ሊያዛምዱ ይችላሉ።
+የSubsite አስተዳዳሪዎችም ከsubsite admin dashboard ብጁ ዶሜይን ስሞችን መመደብ ይችላሉ።
 
-በመጀመሪያ፣ ይህንን አማራጭ በ**Domain mapping** ቅንብሮች ውስጥ ማብራት ያስፈልግዎታል። ከታች ያለውን ስክሪንሾት ይመልከቱ።
+መጀመሪያ፣ ይህን አማራጭ በ**Domain mapping** ቅንብሮች ስር እንደሚያነቁ ማረጋገጥ አለብዎት። ከታች ያለውን ስክሪንሾት ይመልከቱ።
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-ይህንን አማራጭ በ**Ultimate Multisite > Products** ላይ ባለው **Plan** ደረጃ ወይም የምርት አማራጮች ስር ማዘጋጀት ወይም ማዋቀር ይችላሉ።
+ይህን አማራጭ በ**Plan** ደረጃ ወይም በ**Ultimate Multisite > Products** ላይ ባሉ የምርት አማራጮች ስርም ማቀናበር ወይም መዋቀር ይችላሉ።
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![በምርት አርትዖት ገጽ ላይ ያለው የብጁ ዶሜይኖች ክፍል](/img/config/product-custom-domains.png)
 
-ከእነዚህ አማራጮች ውስጥ አንዱ ቢበራ እና የsubsite ተጠቃሚ የራሳቸውን ዶሜን ስም እንዲያዛምድ ከተፈቀደላቸው፣ የsubsite ተጠቃሚ በ**Account** ገጽ ስር **Domains** የሚል ሜታቦክ (metabox) ያያል።
+ከእነዚያ አማራጮች ማንኛውም ሲነቃ እና የsubsite ተጠቃሚ ብጁ ዶሜይን ስሞችን መመደብ ሲፈቀድለት፣ የsubsite ተጠቃሚው በ**Account** ገጽ ስር **Domains** የተባለ ሜታቦክስ ማየት አለበት።
 
 <!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-ተጠቃሚው በ**Add Domain** ቁልፍ ላይ ጠቅ ማድረግ ይችላል እና አንዳንድ መመሪያዎች ባሉበት የሞዳል መስኮት ይከፈታል።
+ተጠቃሚው የ**Add Domain** አዝራርን መጫን ይችላል እና አንዳንድ መመሪያዎች ያሉት ሞዳል መስኮት ይከፍታል።
 
 <!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-ተጠቃሚው ከዚያ **Next Step** ላይ ጠቅ በማድረግ የcustom domain ስም ለመጨመር ይቀጥላል። ዋናው ዶሜን መሆኑን ወይስ አለመሆኑን መምረጥም ይችላል።
+ከዚያ ተጠቃሚው **Next Step** መጫን እና ብጁ ዶሜይን ስሙን ለማከል መቀጠል ይችላል። ይህ ዋና ዶሜይን መሆኑን ወይም አለመሆኑንም መምረጥ ይችላሉ።
 
 <!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
 <!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-በ**Add Domain** ላይ ጠቅ ማድረግ የcustom domain ስም የDNS መረጃ የማረጋገጥ እና የመቅሰም ሂደትን ይጀምራል።
+**Add Domain** ለመጫን መጠቆም የብጁ ዶሜይኑን የDNS መረጃ የማረጋገጥ እና የማምጣት ሂደትን ይጀምራል።
 
-### ስለ Domain Syncing
+### ስለ ዶሜይን ማመሳሰል {#about-domain-syncing}
 
-የዶሜን ሲንክ (Domain Syncing) ማለት የዶሜን ማዛመድ እንዲሰራ፣ Ultimate Multisite የcustom domain ስም ወደ የሆስቲንግ አካውንትዎ እንደ ተጨማሪ ዶሜን (add-on domain) የሚያambahkanበት ሂደት ነው።
+ዶሜይን ማመሳሰል Ultimate Multisite ብጁ ዶሜይን ስሙን ወደ የhosting accountዎ እንደ add-on domain **የዶሜይን መመደብ እንዲሰራ** የሚያክልበት ሂደት ነው።
 
-የሆስቲንግ ሰሪዎ ከUltimate Multisite የዶሜን ማዛመድ ባህሪ ጋር ውህደት (integration) ካለው፣ የዶሜን ሲንክ በራስ-ሰር ይከሰታል። በአሁኑ ጊዜ እነዚህ የሆስቲንግ ሰሪዎች _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ እና _Cpanel_ ናቸው።
+የhosting providerዎ ከUltimate Multisite የዶሜይን መመደብ ባህሪ ጋር ውህደት ካለው፣ ዶሜይን ማመሳሰል በራስ-ሰር ይከሰታል። በአሁኑ ጊዜ፣ እነዚህ የhosting providerዎች _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ እና _Cpanel_ ናቸው።
 
-ይህንን ውህደት በUltimate Multisite settings ስር ባለው **Integration** ታብ ውስጥ ማብራት ያስፈልግዎታል።
+የhost-provider ውህደት ንቁ ሲሆን፣ Ultimate Multisite አዲስ ለተፈጠሩ ጣቢያዎች የprovider-side DNS ወይም የንዑስ ዶሜይን ፍጠራ ተግባርንም ወረፋ ላይ ሊያስገባ ይችላል። ለዚያ ተግባር የሚያዳምጥ ውህደት ከሌለ፣ የጀርባ ስራው ምንም-ተግባር የሌላቸው የወረፋ ግቤቶችን ለማስወገድ ይዘለላል። ለተመደቡ ዶሜይኖች የDNS እና SSL ፍተሻዎች በመደበኛው የዶሜይን-ደረጃ ሂደት መሄዳቸውን ይቀጥላሉ።
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+ይህን ውህደት በUltimate Multisite ቅንብሮች ላይ በ**Integration** ትር ስር ማንቃት ያስፈልግዎታል።
+
+![በUltimate Multisite ቅንብሮች ውስጥ hosting providerዎችን የሚያሳየው የውህደቶች ትር](/img/config/integrations-tab.png)
 
 <!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_ማስታወሱ፡ የሆስቲንግ ሰሪዎ ከላይ ከተጠቀሱት ሰሪዎች አንዱ ካልሆነ፣**የዶሜን ስሙን በእጅ መመሳሰል (manually sync) ወይም ወደ የሆስቲንግ አካውንትዎ መጨመር ያስፈልግዎታል**።_
+_የhosting providerዎ ከላይ ከተጠቀሱት አቅራቢዎች አንዱ ካልሆነ፣ **የዶሜይን ስሙን በእጅ ማመሳሰል ወይም ማከል ያስፈልግዎታል** ወደ hosting accountዎ።_

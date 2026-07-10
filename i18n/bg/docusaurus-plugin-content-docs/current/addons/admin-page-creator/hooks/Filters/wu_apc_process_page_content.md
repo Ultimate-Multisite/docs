@@ -4,11 +4,11 @@ title: Филтър - wu_apc_process_page_content
 sidebar_label: wu_apc_process_page_content
 _i18n_hash: 85631895afd7298462a111b4db356566
 ---
-# Filter: wu_apc_process_page_content
+# Filter: wu_apc_process_page_content {#filter-wuapcprocesspagecontent}
 
 Позволява на разработчиците да модифицират крайния съдържание
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 85631895afd7298462a111b4db356566
 | $to_replace | `array` | Масив, съдържащ запълващите елементи (placeholders). |
 | $placeholder_count | `int` | Брой намерени запълващи елементи. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Дефиниран в [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L46) на линия 46
 
 
-## Returns
+## Returns {#returns}
 Съдържанието след модифициране.

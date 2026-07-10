@@ -3,7 +3,7 @@ title: Plani uppdamine
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plaan ülemine tõstamine (v2)
+# Plaan ülemine tõstamine (v2) {#upgrading-a-plan-v2}
 
 _**TÄHTIS NOTE: See artikli viitab Ultimate Multisite versioonile 2.x.**_
 
@@ -41,7 +41,7 @@ Otsestamise lõpetamise pärast lisatakse uued tooted teie klientide kontodele j
 
 ##
 
-## Upgrade ja Downgrade väljad
+## Upgrade ja Downgrade väljad {#upgrade-and-downgrade-paths}
 
 Iga oma toote juures on **Up & Downgrades** tab. Selle tabil esimese valikuna on välja nimetatud **Plan Group** (Plani gruppe).
 

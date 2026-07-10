@@ -1,154 +1,156 @@
 ---
-title: Kutanga/Kubatidza Fomu Yako
+title: Kugadzirisa Fomu Rako reKunyoresa
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kutiwe kuvaingira (Registration Form)
+# Kugadzirisa Registration Form yako {#customizing-your-registration-form}
 
-Kuti chinekuura chinhu chako chinotevera nechinotevera nechimwe chekare zvose zvinotevera munzira yakachengetedza (SaaS) dziri munzira ye WordPress, Ultimate Multisite inakuita kuti uone kuvaunira uye kupfungwa kwakare (login pages) nekuti tinoita iwe **Checkout Forms** feature.
+Kuti network yako itaridzike yakasiyana nemamwe maSaaS ese akavakirwa paWordPress platform, Ultimate Multisite inokubvumira kugadzirisa mapeji ako ekunyoresa nekupinda uchishandisa chimiro chedu che **Checkout Forms**.
 
-Kuti zvinhu izvi zvinotevera nechinotevera chinogona kutamba nezve nzira dzakasiyana-siyana dzinotevera kuti uone kuvaunira vatsasa vakachengetedza, zvichine zvinhu zviri kudzidziswa nekuti kunge kuita zvinhu zvakasiyana-siyana mumwe munzira wekuti unenge ukwanisa kuita. Asi, zvinotevera zvakawanda zvinoshandiswa kuti uone kuita forms dzinotevera (personalized registration forms). Iri chine chokwadi kuti iri dziri kudzidziswa sei kunoita iye.
+Kunyangwe ari nzira iri nyore uye inoshanduka yekuedza nzira dzakasiyana kana uchiedza kushandura vatengi vatsva, anonyanya kushandiswa kugadzira mafomu ekunyoresa akagadzirirwa munhu. Chinyorwa ichi chine chinangwa chekukuratidza kuti ungazviita sei.
 
-## Kupfungwa kwakare nekuvaunira:
+## Mapeji ekupinda nekunyoresa: {#login-and-registration-pages}
 
-Panguva inoperekedzwa Ultimate Multisite, inogona kuita zvinhu hizi zvinotevera kupfungwa kwakare (login pages) nekuti tinokupa nzvimbo yakachengetedza (custom login and registration pages) munzira yako yakanaka. Unogona kungeura iye dziri dzinotevera mazuva ose nekuenda pano: **Ultimate Multisite > Settings > Login & Registration**.
+Paunoisa Ultimate Multisite, inogadzira otomatiki mapeji ekupinda nekunyoresa akagadzirirwa pawebsite yako huru. Unogona kuchinja mapeji aya ekutanga chero nguva nekuenda pasi pepeji rako re **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Peji rezvirongwa zveKupinda neKunyoresa](/img/config/settings-general.png)
 
-Iri chine zvinhu zvinotevera pane kupfungwa kwakare nekuti unogona kuita munzira yakanaka:
+Heino maonero akazara epeji rezvirongwa zvekupinda nekunyoresa:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Peji rakazara rezvirongwa zveKupinda neKunyoresa](/img/config/settings-login-registration-full.png)
 
-Tiri kuona iye dzose dzinotevera dzinogone kutamba panei mu **Login & Registration** page:
+Ngatitarisei imwe neimwe yesarudzo dzaunogona kugadzirisa papeji re **Login & Registration**:
 
-  * **Enable registration:** Iyi nzira inogona kuita kana inogona kungekuita kuvaunira munzira yako yakachengetedza. Kana inokwanisa, vatsasa vakako havanzi kuvaunira uye kupfungwa zvinhu dzakasiyana-siyana dzinotevera (subscribe) zvinotevera.
+  * **Gonesa kunyoresa:** Sarudzo iyi ichagonesa kana kudzima kunyoresa panetwork yako. Kana yakadzimwa, vatengi vako havazokwanisi kunyoresa uye kunyoresa kuzvigadzirwa zvako.
 
-  * **Enable email verification:** Kana iri nzira inogona kungekuita, vatsasa vanoenda kupfungwa kana vanorega plan yakare (free plan) kana plan yakare inosanganisira nguva dzinotevera (trial period) vanoita email ya kupfungwa uye vanofanira kuita click pa link ya kupfungwa kuti websites dzavo dzine kuonekwe.
+  * **Gonesa kuongororwa kweemail:** Kana sarudzo iyi yakabatidzwa, vatengi vanonyoresa kuhurongwa hwemahara kana hurongwa hunobhadharwa hune nguva yekuyedza vachagamuchira email yekuongorora uye vachafanira kudzvanya link yekuongorora kuti mawebsite avo agadzirwe.
 
-* **Urapanywe wekufamba (Default registration page):** Ichi ndiyo chete chine chinotanga kune upanobva wekufamba (registration). Ichi page chinofanira kuita munzvimbo wako we website uye kuno shandisa fomu ya kukubvuma (checkout form) - inotanga kuti vanhu vako vashandise zvinhu zvauno. Unogona kuita upanobva wekufamba nefomu dzakawanda dzinogona kuita, asi ndichida kunzwisisa kuti unofanira kuita shortcode ya checkout form munzvimbo yeupanyana (registration page), saka hauna uchange iwe, haizovaka.
+  * **Peji rekutanga rekunyoresa:** Iri ndiro peji rekutanga rekunyoresa. Peji iri rinofanira kunge rakaburitswa pawebsite yako uye riine fomu rekunyoresa (rinozivikanwawo secheckout form) - uko vatengi vako vachanyoresa kuzvigadzirwa zvako. Unogona kugadzira mapeji ekunyoresa uye checkout forms akawanda sezvaunoda, ingoyeuka kuisa checkout form shortcode papeji rekunyoresa, zvikasadaro harizooneki.
 
-* **Gadzirisa upanobva wekufamba (Use custom login page):** Ichi chine kukupa urembo kuti utange upanobva wekufamba unogona kushandisa upanobva wekufamba wako wakanaka, kuno dziri kupfuura upanobva wp-login.php. Kana uchigadzirisa ichi, unogona kutanga upanobva wekufamba uri munzvimbo yeupanyana (Default login page) (panguva yakare).
+  * **Shandisa peji rekupinda rakagadzirirwa:** Sarudzo iyi inokubvumira kushandisa peji rekupinda rakagadzirirwa, risiri peji rekutanga rewp-login.php. Kana sarudzo iyi yakabatidzwa, unogona kusarudza kuti nderipi peji richashandiswa pakupinda pasarudzo ye **Default login page** (iri pazasi chaipo).
 
-* **Kutanga URL ya upanobva wekufamba (Obfuscate the original login url (wp-login.php))**: Kana uchida kuenda upanobva wekufamba wako wakanaka, unogona kutanga ichi. Iyi inenge inenge yakagadzirwa kuti ufanane neoriginal wp-login.php. Izvi zvinenge zviri kudzidzisa kuti usawane nenzaniso dzakawanda dzinotanga (brute-force attacks). Kana uchigadzirisa ichi, Ultimate Multisite chinogona kuita 404 error kana munhu anoda kuenda kwenye ya original wp-login.php.
+  * **Vanza login url yepakutanga (wp-login.php)** : Kana uchida kuviga URL yekupinda yepakutanga, unogona kubatidza sarudzo iyi. Izvi zvinobatsira kudzivirira brute-force attacks. Kana sarudzo iyi yagoneswa, Ultimate Multisite icharatidza kukanganisa kwe404 kana mushandisi akaedza kupinda pa link yepakutanga ye wp-login.php
 
-* **Kutanga upanobva wekufamba (Force synchronous site publication)**: Panguva munhu anokubvuma zvinhu mumapuro (network), upanobva wekufamba wakaipa unofanira kuva upanobva wekufamba wemakore. Kuratidza upanobva wekufamba kunotanga kubva mu Job Queue, kune nguva yakare. Chigadzirisa ichi kuti utange upanobva wekufamba kuita mumwe request anokubvuma.
+  * **Manikidza kuburitswa kwesite panguva imwe chete:** Mushure mekunge mutengi anyoresa kuchigadzirwa panetwork, site itsva yakamirira inofanira kushandurwa kuita network site chaiyo. Maitiro ekuburitsa anoitika kuburikidza neJob Queue, zvisingaenderani nenguva imwe chete. Gonesa sarudzo iyi kumanikidza kuburitswa kuitika muchikumbiro chimwe chete sekusaina.
 
-Nekuti tiri kuona zvinhu zvakawanda zvinenge zvichiri kugona kutanga uye kukubvuma (login and registration process), dziri pano panguva **Other options** munzvimbo yeLogin & registration:
+Zvino, ngationei dzimwe sarudzo dzichiri kukosha kumaitiro ekupinda nekunyoresa. Dziri pazasi chaipo pe **Other options** papeji rimwe chete reLogin & registration:
 
-* **Roli ya chokwadi (Default role):** Iyi ndiyo role inotanga inozuva rine munhu wako kwenye yakanaka kana akubvuma.
+  * **Basa rekutanga:** Iri ndiro basa richava nevatengi vako pawebsite yavo mushure memaitiro ekusaina.
 
-* **Chirira Jumper (Enable Jumper):** Ino chinangwa chiri kuno kunge kuita shortcut weJumper mu admin area. Jumper inokubatsira administrators kuti vave nekuramba kune Ultimate Multisite screens, network objects, uye zvinhu zvakasiendwa nekuti vanogona kuenda nekuramba kune menu yese. Iri chii kana munenge uchida kunge kuita iro iyi ya navigation yakapfupi kubva mu admin interface.
+  * **Gonesa Jumper:** Inogonesa nzira pfupi yeJumper munzvimbo yeadmin. Jumper inobvumira vatungamiri kusvetukira nekukurumidza kumasikirini eUltimate Multisite, zvinhu zvenetwork, uye dzimwe nzvimbo dzinotsigirwa pasina kupuruzira mumenu imwe neimwe. Idzime kana uchida kuviga chishandiso icho chekufamba nekukurumidza kubva muadmin interface.
 
-  * **Kutanga nguva dze users pamwe nemain site:** Kunenge uita iro iyi, unogona kuita kuti user ine account pamwe nemain site yenyika yako panguva dzo signup. Kana uchigadzira iro iyi, kunge kune option yekuti utange **default role** yeusers aya pamwe newebsite yako inenge inoratidzorera kupi ndiri.
+  * **Wedzera vashandisi kusite huruwo:** Kugonesa sarudzo iyi kuchawedzerawo mushandisi kusite huru yenetwork yako mushure memaitiro ekusaina. Kana ukagonesa sarudzo iyi, sarudzo yekuseta **default role** yevashandisi ava pawebsite yako ichaonekawo pazasi chaipo.
 
-  * **Kutanga accounts dzakawanda:** Inokubatsira users kuti vane accounts mumaitiro (sites) ekunyangwe kwenyika yako nekuda kune email yese yakaita. Kana iro iyi ine off, vagari vako havanogone kuita account pamwe newebsites anobva mumaitiro yako nekuda kune email yese yakaita.
+  * **Gonesa maakaundi akawanda:** Bvumira vashandisi kuva nemaakaundi mumasite akasiyana enetwork yako vachishandisa email address imwe chete. Kana sarudzo iyi yakadzimwa, vatengi vako havazokwanisi kugadzira account pane mamwe mawebsite ari kushanda panetwork yako vachishandisa email address imwe chete.
 
-Iyi ndiyo nzira dzose dzinogona kuendesa zvinosanganisira login uye registration kuti uine zvakakosha! Usiingai kunge kuita settings dzako panguva unenge uchitsvaga kurapudzira.
+Uye ndizvo zvese sarudzo dzine chekuita nekupinda nekunyoresa dzaunogona kugadzirisa! Usakanganwa kuchengetedza zvirongwa zvako mushure mekupedza kuzvigadzirisa.
 
-## Kutanga forms dzakawanda dze registration:
+## Kushandisa mafomu akawanda ekunyoresa: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 inoratidza checkout form editor inokubatsira kuti utange forms dzakawanda zvakasiendwa, nefields dzakasiendwa, uye products dzakasiendwa, kana zvinhu zvakasiendwa.
+Ultimate Multisite 2.0 inopa mupepeti wecheckout form unokubvumira kugadzira mafomu akawanda sezvaunoda, ane fields dzakasiyana, zvigadzirwa zviri kupihwa, nezvimwe.
 
-Login page uye registration page dzinowanikwa ne shortcodes: **[wu_login_form]** pa login page uye **[wu_checkout]** pa registration page. Unogona kuendesa registration page nekubatanidza forms dzakawanda kana kugadzira forms dzakasiendwa.
+Mapeji ese ekupinda nekunyoresa akaiswa nema shortcodes: **[wu_login_form]** papeji rekupinda uye**[wu_checkout]** yepeji rekunyoresa. Unogona kuwedzera kugadzirisa peji rekunyoresa nekuvaka kana kugadzira checkout forms.
 
-Kuti utange iro iyi, enda ku menu ya **Checkout Forms**, pamwe ne-side-bar.
+Kuti uwane chimiro ichi, enda kumenu ye **Checkout Forms**, kudivi rekuruboshwe.
 
-![Checkout Forms menu in sidebar](/img/config/checkout-forms-list.png)
+![Menyu yeCheckout Forms musidebar](/img/config/checkout-forms-list.png)
 
-Pa page iyi, unogona kuona forms dzese dzinowanikwa.
+Papeji iri, unogona kuona checkout forms dzese dzauinadzo.
 
-Kana uchida kugadzira one pfungwa, ndingara i **Add Checkout Form** pa top ya page.
+Kana uchida kugadzira itsva, ingodzvanya pa **Add Checkout Form** pamusoro pepeji.
 
-Unogona unogona uno iye tiri zvinogona kuita chekucheku chiriwo chako: single step, multi-step kana blank. Ndiyo, ndokuti utange, ndichikumbira kuti upiire kuti **Go to the Editor**.
+Unogona kusarudza imwe yesarudzo nhatu idzi senzvimbo yako yekutangira: nhanho imwe, nhanho dzakawanda kana isina chinhu. Wobva wadzvanya kuti **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Wedzera Checkout Form ine sarudzo dzenhanho imwe, nhanho dzakawanda, kana isina chinhu](/img/config/checkout-forms-list.png)
 
-Kana uri kuita zvinhu zvakasiyana, unogona kungeure kana kutaura forms dzako dzinowanikwa nekuita izvi nezvinhu zvako. Munei, unogona kuita kuti uone nzira dzinogona kutamba shortcode ya form kana kuenda kuenda (delete) form.
+Neimwe nzira, unogona kugadzirisa kana kudzokorora mafomu aunotova nawo nekudzvanya pasarudzo dziri pasi pezita rayo. Ipapo, uchawanawo sarudzo dzekukopa shortcode yefomu kana kudzima fomu.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Zviito zveCheckout form paunofambisa pamusoro zvine kugadzirisa, kudzokorora, uye kudzima](/img/config/checkout-form-hover-actions.png)
 
-Kana uri kuita single step kana multi-step, form yechikuru ichiri nekuita zvinhu zvinodzidzwa kuti itange. Ndiyo, kana uchida, unogona kuita kuti uone nzira dzakawanda dzinogona kutamba kune iye.
+Kana ukasarudza nhanho imwe kana nhanho dzakawanda, checkout form inenge yatotangwa iine nhanho dzakakosha kuti ishande. Zvadaro, kana uchida, unogona kuwedzera dzimwe nhanho kwairi.
 
-### Kuenda Kutaura Checkout Form:
+### Kugadzirisa Checkout Form: {#editing-a-checkout-form}
 
-Kufamba kwemafungiro, unogona kuita forms dzakasiyana-siyane. Mune iye, tichatanga neform ya registration (kuingira).
+Sezvatambotaura, unogona kugadzira checkout forms dzezvinangwa zvakasiyana. Mumuenzaniso uyu tichashanda pafomu rekunyoresa.
 
-Panguva unenge uri kuenda kune editor yechikuru chekuita checkout form, ndinenge utaura kana chibviri zvinhu: zivimbiso (name) uye slug (unogona kushandiswa kuti uingire shortcodes, sei).
+Mushure mekuenda kumucheckout form editor, ipa fomu rako zita (richashandiswa pakureferensi yemukati chete) uye slug (inoshandiswa kugadzira shortcodes, semuenzaniso).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Mupepeti wefomu rekubhadhara rine minda yezita ne slug](/img/config/checkout-form-name-slug.png)
 
-Forms dzine steps nefields. Unogona kuita step chinobva nekuti unenge uri kuita **Add New Checkout Step**.
+Mafomu anogadzirwa nematanho neminda. Unogona kuwedzera nhanho itsva nekudzvanya pa **Wedzera Nhanho Itsva yeCheckout**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Bhatani reWedzera Nhanho Itsva yeCheckout](/img/config/checkout-form-add-step.png)
 
-Panguva uri mumapuro (tab) yakare, shandisa content ya step yako yechikuru. Shandisa ID, name uye description kune iye. Izvi zvinhu zvakawanda zvinogona kushandiswa mune nzira dzako dzinomweya.
+Patebhu yekutanga yehwindo re modal, zadza zvirimo munhanho yefomu rako. Ipe ID, zita uye tsananguro. Zvinhu izvi zvinonyanya kushandiswa mukati mehurongwa.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tebhu yezviri munhanho yecheckout ine ID, zita, uye tsananguro](/img/config/checkout-form-step-content.png)
 
-Zvedziso, shandisa visibility ya step. Unogona kuita kuti iye itange **Always show** (kuti itange zvose), **Only show for logged in users** (kuti itange kunogona vanhu vachitamba), kana **Only show for guests** (kuti itange kunogona vanhu vakavandudza).
+Zvadaro, seta kuoneka kwenhanho. Unogona kusarudza pakati pe **Ratidza nguva dzose** , **Ratidza chete kune vashandisi vakapinda** kana **Ratidza chete kune vaenzi**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Sarudzo dzekuoneka kwenhanho yecheckout](/img/config/checkout-form-step-visibility.png)
 
-Mugwira, ndichikumbira kuti uregare style we step. Izvi ndizvinhu zvose zviri kuitika (optional).
+Pakupedzisira, gadzirisa chimiro chenhanho. Iyi minda ndeyekusarudza.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Kugadzirisa chimiro chenhanho yecheckout](/img/config/checkout-form-step-style.png)
 
-Nekuti, ndiri nguva yekutanga kuita fields dzinotanga. Zvinhu zvakaita kuti uingire, ndichikumbira kuti utange kuteerera **Add New Field** uye utange chine type ya section unoda.
+Iye zvino, yave nguva yekuwedzera minda kunhanho yedu yekutanga. Ingodzvanya pa **Wedzera Munda Mutsva** uye sarudza rudzi rwechikamu chaunoda.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Bhatani reWedzera Munda Mutsva](/img/config/checkout-form-add-field-button.png)![Dropdown yekusarudza rudzi rwemunda](/img/config/checkout-form-field-type-dropdown.png)
 
-Mwari dzinotsanangura zvinhu dzakasiyana kuti zvinogadzirwa. Kuti munenge uchitanga, tichotanga kuita field ye **Username**.
+Munda wega wega une maparameter akasiyana anofanira kuzadzwa. Pakupinda kwekutanga uku, tichasarudza munda we **Username**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Kugadziriswa kwemunda weUsername](/img/config/checkout-form-username-content.png)![Maparameter emunda weUsername](/img/config/checkout-form-username-visibility.png)![Zvimwe zvigadziriso zvemunda weUsername](/img/config/checkout-form-username-style.png)
 
-Unogona kuita steps uye fields zvakawanda zvakodzera kwako. Kuti utangane products dako kunenge akaita kuti vose vashandi vachine chiri, unogona kutamba field ye Pricing Table. Nekuti unoda kuti vashandi vashandane vashandane template, unogona kuita Template Selection field. uye zvinhu zvakasiyana.
+Unogona kuwedzera matanho neminda yakawanda sezvaunoda. Kuti uratidze zvigadzirwa zvako kuti vatengi vako vasarudze chimwe, shandisa munda wePricing Table. Kana uchida kurega vatengi vako vasarudze template, wedzera munda weTemplate Selection. Uye zvichingodaro.
 
-_**Note:** Kana uchitanga product panguva uita checkout form, unofanira kuita product iwo mu Pricing table section. Kana usina kuitika, product hauzovaka kuona kuvashandi vachiregistra._
+![Mupepeti wefomu rekubhadhara rine munda wekusarudza template](/img/config/checkout-form-with-template-field.png)
 
-_**Note 2:** username, email, password, site title, site URL, order summary, payment, uye submit button ndine fields dzinotanga kuti utange checkout form._
+_**Cherechedzo:** Kana ukagadzira chigadzirwa mushure mekugadzira fomu rako rekubhadhara, uchafanira kuwedzera chigadzirwa muchikamu chePricing table. Kana ukasachiwedzera, chigadzirwa hachizooneki kune vatengi vako papeji rekunyoresa._
 
-Ndiri musoro wako nekuti unenge uchitanga checkout form, unogona kutamba Preview button kuti uve nekuona vashandi vanenge vachiona form. Unogonawo kuteerera pakati kubona se user anobva kana visitor.
+_**Cherechedzo 2:** username, email, password, zita resaiti, URL yesaiti, pfupiso yeodha, kubhadhara, uye bhatani rekutumira minda inosungirwa kugadzira fomu rekubhadhara._
 
-![Button ya kuona checkout form editor](/img/config/checkout-form-preview-button.png)![Kuviona checkout form chete seunine visitor kana user wese kuona](/img/config/checkout-form-preview-modal.png)
+Paunenge uchishanda pafomu rako rekubhadhara, unogona kugara uchishandisa bhatani rePreview kuti uone kuti vatengi vako vachaona sei fomu. Unogonawo kuchinjana pakati pekuona semushandisi aripo kana mushanyi.
 
-Hekuti, mu **Advanced Options** unogona kuita zvinhu zve message ya page ya **Thank You**, kuita snippets kuti utore conversion tracking, kuita custom CSS kune checkout form yako kana kukura kwake kunoita kune dzimwe ndima.
+![Bhatani rePreview pamupepeti wefomu rekubhadhara](/img/config/checkout-form-preview-button.png)![Preview yefomu rekubhadhara semushanyi kana mushandisi aripo](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options ne Thank You page, conversion tracking, uye custom CSS](/img/config/checkout-form-advanced.png)
+Pakupedzisira, pa **Sarudzo Dzepamusoro** unogona kugadzirisa meseji yepeji re **Ndatenda**, kuwedzera snippets dzekutevera conversions, kuwedzera CSS yakasarudzika kufomu rako rekubhadhara kana kurirambidza kune dzimwe nyika.
 
-Unogonawo kuita kana kuva (enable or disable) checkout form yako nekuti unigone kuita ioption iye munyero we column ya dzamba dzinotevera (right column), kana kukura kwake kune chokwadi (delete permanently).
+![Sarudzo Dzepamusoro dzine peji reNdatenda, kutevera conversions, uye CSS yakasarudzika](/img/config/checkout-form-advanced.png)
 
-![Active toggle uye option yekukura checkout form](/img/config/checkout-form-active.png)
+Unogonawo kugonesa kana kudzima nemaoko fomu rako rekubhadhara nekuchinja sarudzo iyi pakoramu yekurudyi, kana kudzima fomu zvachose.
 
-Usishande kuita save kwa checkout form yako!
+![Toggle yekushanda uye sarudzo yekudzima yefomu rekubhadhara](/img/config/checkout-form-active.png)
 
-![Button ya Save Checkout Form](/img/config/checkout-form-save.png)
+Usakanganwa kuchengetedza fomu rako rekubhadhara!
 
-Kuti utore shortcode ya form yako, ndichida kuti upi **Generate Shortcode** uye uone zvinhu zvinotevera munyero we modal window.
+![Bhatani reChengetedza Fomu reCheckout](/img/config/checkout-form-save.png)
 
-![Generate Shortcode modal ne shortcode yekukopanya](/img/config/checkout-form-editor.png)
+Kuti uwane shortcode yefomu rako dzvanya pa **Gadzira Shortcode** uye kopa mhedzisiro inoratidzwa pahwindo re modal.
 
-_**Note:** Unofanira kuita this shortcode pa registration page yako kuti iwe utore checkout form iyi kune iye._
+![Modal yeGadzira Shortcode ine shortcode yekukopa](/img/config/checkout-form-editor.png)
 
-## Kuti unyira zvinhu uye templates kubva munyero we URL parameters:
+_**Cherechedzo:** Uchafanira kuwedzera shortcode iyi kupeji rako rekunyoresa kuitira kuti fomu rekubhadhara iri riwedzerwe kwariri._
 
-Kana uchida kuita pricing tables dzakare (customized) kune products yako uye kuita pre-select munyero we checkout form product kana template inotorewa kuve muna pricing table kana templates page yako, unogone kushandisa URL parameters kuti iwe utore iye.
+## Kusarudza kare zvigadzirwa nematemplate kuburikidza nema parameter eURL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Kune plans:**
+Kana uchida kugadzira matafura emitengo akagadziridzwa ezvigadzirwa zvako uye kusarudza kare pafomu rekubhadhara chigadzirwa kana template inosarudzwa nemutengi wako kubva patafura yako yemitengo kana peji rematemplate, unogona kushandisa ma parameter eURL pane izvi.
 
-Panda kuenda mu **Ultimate Multisite > Products > Select a plan**. Unogona kuona button inoti **Click to copy Shareable Link** munyero we page. Iyi ndiyo link unogone kushandisa kuti uita pre-select this specific plan munyero we checkout form yako.
+### **Kune maplans:** {#for-plans}
 
-![Product page ne shareable link button](/img/config/products-list.png)
+Enda ku **Ultimate Multisite > Products > Sarudza plan**. Unofanira kuona bhatani re **Dzvanya kuti ukopere Link Inogoverwa** pamusoro pepeji. Iyi ndiyo link yaunogona kushandisa kusarudza kare plan iyi chaiyo pafomu rako rekubhadhara.
 
-Note kuti link inoshareva iweyi inenge inofanele **Plans** chete. Haunogona kuita link inoshareva kune packages kana services.
+![Peji rechigadzirwa rine bhatani re link inogoverwa](/img/config/products-list.png)
 
-### Kune templates:
+Cherechedza kuti link iyi inogoverwa inoshanda chete ku **Plans**. Haugoni kushandisa ma link anogoverwa kumapakeji kana masevhisi.
 
-Kana uchida kuita pre-select site templates pamusoro pe checkout form yako, unogona kuita parameter: **?template_id=X** pa URL ye page ya registration yako. "X" inofanira kubadilwa ne **site template ID number**. Ukuita iye, ndaura ku **Ultimate Multisite > Sites**.
+### Kune matemplate: {#for-templates}
 
-Chikumbiro **Manage** pamusoro pe site template unoda kuita. Uchaona SITE ID number. Unogona kuita iye nendero iye kune site template iye itai pre-select pa checkout form yako. Kune zvinotevera, mu nzira yedu, parameter ye URL inozviita **?template_id=2**.
+Kana uchida kusarudza kare matemplate esaiti pafomu rako rekubhadhara, unogona kushandisa parameter: **?template_id=X** paURL yepeji rako rekunyoresa. "X" inofanira kutsiviwa ne **nhamba yeID yetemplate yesaiti**. Kuti uwane nhamba iyi, enda ku **Ultimate Multisite > Sites**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Dzvanya pa **Manage** pazasi chaipo petemplate yesaiti yaunoda kushandisa. Uchaona nhamba yeSITE ID. Ingoshandisa nhamba iyi yetemplate yesaiti iyi chaiyo kuti isarudzwe kare pafomu rako rekubhadhara. Panyaya yedu pano, parameter yeURL ichava **?template_id=2**.
 
-Seunenge website ya network yathu inodiwa [**www.mynetwork.com**](http://www.mynetwork.com) uye page yako ye registration ne checkout form yacho inosikwa pa /register. URL yese inozviita iye site template itai pre-selected inogona kuita [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Rondedzero yesaiti inoratidza ID yetemplate yesaiti](/img/config/site-templates-list.png)
 
-Kana uchida, unogona kuita pre-select products uye templates pamusoro pe checkout form yako. Zvinotevera zvinoita: kuta shareable link ye plan uye shandisa parameter ye template pamusoro pe chinangwa chako. Izvirozoita kuita iye [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Ngatitii webhusaiti yenetwork yedu ndi [**www.mynetwork.com**](http://www.mynetwork.com) uye peji redu rekunyoresa rine fomu redu rekubhadhara riri papeji re **/register**. URL yose ine template yesaiti iyi yakasarudzwa kare ichaita se [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Uye kana uchida, unogona kusarudza kare zvese zvigadzirwa nematemplate kufomu rako rekubhadhara. Chaunofanira kuita chete kukopa link inogoverwa yeplan wobva wanamira parameter yetemplate kumagumo. Ichaita se [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

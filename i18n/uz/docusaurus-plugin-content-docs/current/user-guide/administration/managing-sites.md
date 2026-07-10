@@ -3,7 +3,7 @@ title: Saytlarni boshqarish
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Saytlarni Boshqarish
+# Saytlarni Boshqarish {#managing-sites}
 
 Saytlar (yoki subsaytlari) sizning WaaS biznesingizning asosidir. Ultimate Multisite da 3 turdagi sayt mavjud:
 
@@ -11,13 +11,13 @@ Saytlar (yoki subsaytlari) sizning WaaS biznesingizning asosidir. Ultimate Multi
 - **Sayt shablonlari (Site Templates)** — Mijozlar boshlash nuqtasi sifatida tanlaydigan oldindan belgilangan saytlar
 - **Asosiy Sayt (Main Site)** — Sizning asosiy tarmoq saytingiz
 
-## Saytlarni Ko'rish
+## Saytlarni Ko'rish {#viewing-sites}
 
 Tarmoqingizdagi barcha subsaytlarni ko'rish uchun **Ultimate Multisite → Sites** ga o'ting. Har bir sayt turiga ko'ra belgilangan bo'ladi va siz uni Barcha Saytlar, Mijozga tegishli, Shablonlar yoki Kutishda (Pending) deb filtrlab ko'rishingiz mumkin.
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## Yangi Sayt Qo'shish
+## Yangi Sayt Qo'shish {#adding-a-new-site}
 
 Yangi sayt yaratish uchun **Add Site** tugmasini bosing. Siz quyidagilarni taqdim etishingiz kerak bo'ladi:
 
@@ -27,15 +27,15 @@ Yangi sayt yaratish uchun **Add Site** tugmasini bosing. Siz quyidagilarni taqdi
 
 **Copy Site** (Saytni nusxalash) opsiyasi mavjud bo'lgan mavjud sayt shabloniga asoslanib yangi sayt yaratish imkonini beradi. Bu funksiyani yoqganingizda, qaysi shablonni boshlang'ich nuqtasi sifatida ishlatish kerakligini tanlashingiz mumkin. Media fayllarni ham kiritish uchun **Copy Media on Duplication** (Duplikat qilishda media nusxasini nusxalash) yoqilganligiga ishonch hosil qiling.
 
-## Mavjud Saytni Boshqarish
+## Mavjud Saytni Boshqarish {#managing-an-existing-site}
 
 Har qanday saytdagi **Manage** (Boshqarish) tugmasiga bosib, **Edit Site** (Saytni tahrirlash) sahifasini oching. Bu yerda quyidagilarni topishingiz mumkin:
 
-### Asosiy Ma'lumotlar
+### Asosiy Ma'lumotlar {#basic-information}
 
 Sayt nomi, turi, sayt IDsi va tavsifi. Shuningdek, xaritalangan domen, bog'langan a'zolik va saytni egalik qiluvchi mijoz hisobini ham ko'rasiz.
 
-### Sayt Parametrlari (Site Options)
+### Sayt Parametrlari (Site Options) {#site-options}
 
 Saytning imkoniyatlarini va cheklovlarini sozlang:
 
@@ -47,7 +47,7 @@ Saytning imkoniyatlarini va cheklovlarini sozlang:
 
 Dastlabki holatda saytlar a'zo statusidagi cheklovlar bilan belgilanadi. Sayt darajasida chegaralarni belgilash bu a'zo sozlamalaridan yuqori (override) bo'ladi.
 
-### Bog'liqliklar (Associations)
+### Bog'liqliklar (Associations) {#associations}
 
 Sayt opsiyalari ostida quyidagilarga oid ma'lumotlarni topasiz:
 
@@ -55,7 +55,7 @@ Sayt opsiyalari ostida quyidagilarga oid ma'lumotlarni topasiz:
 * Saytning qaysi **A'zo statusiga (Membership)** kirganligi
 * Saytga bog'langan **Mijoz hisobi (Customer account)**
 
-### O'ng menyu (Right Sidebar)
+### O'ng menyu (Right Sidebar) {#right-sidebar}
 
 O'ng tomonda siz quyidagilarni qilishingiz mumkin:
 

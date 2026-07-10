@@ -3,13 +3,13 @@ title: Kassefelt og kundens DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Felt og Kundens DNS-styring
+# Checkout Felt og Kundens DNS-styring {#checkout-field-and-customer-dns-management}
 
-## Domænevalg feltet i checkout
+## Domænevalg feltet i checkout {#the-domain-selection-checkout-field}
 
 **Domænevalg** feltet er et element i checkout'en, der giver kunder mulighed for at vælge, hvordan de vil få deres sites domæne. Tilføj det til ethvert checkout-formular for at aktivere salg af domæner.
 
-### Tilføjelse af feltet til en checkout-formular
+### Tilføjelse af feltet til en checkout-formular {#adding-the-field-to-a-checkout-form}
 
 1. Gå til **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Åbn eller opret en checkout-formular
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Konfigurer feltindstillingerne (se nedenfor)
 6. Gem formularen
 
-### Feltindstillinger
+### Feltindstillinger {#field-options}
 
 **Domænetyper** — Vælg, hvilke faner kunden ser. Hver tilstand kan aktiveres eller deaktiveres uafhængigt:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domæneprodukt** — Pin dette felt eventuelt til et specifikt domænenavn-produkt. Hvis det ikke er sat, vælger add-on automatisk det matchende produkt baseret på TLD'en (top-level domain), kunden søger efter.
 
-### Registrantkontaktfelter
+### Registrantkontaktfelter {#registrant-contact-fields}
 
 Når en kunde vælger fanen **Registrer nyt domæne**, tilføjer checkout-formularen registrantkontaktfelter direkte i formularen:
 
@@ -43,11 +43,11 @@ Når en kunde vælger fanen **Registrer nyt domæne**, tilføjer checkout-formul
 
 Disse er nødvendige for alle registreringer og valideres før registrerings-API-kaldet foretages. Telefonnumre formateres automatisk til det internationale format `+CC.NNN`, som registreringerne forventer.
 
-### Automatisk websitadresse (site URL)
+### Automatisk websitadresse (site URL) {#auto-generated-site-url}
 
 Når en kunde registrerer sig eller mapper en domæne, udfyldes feltet site URL automatisk fra det valgte domæne. Kunder behøver ikke udfylde et separat URL-felt.
 
-### Søgeadfærd
+### Søgeadfærd {#search-behaviour}
 
 - Domænen tilgængelighed tjekkes i realtid med AJAX, mens kunden skriver
 - Alternative TLD-forslag vises, når det foretrukne domæne ikke er tilgængeligt
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kunde-DNS-administration
+## Kunde-DNS-administration {#customer-dns-management}
 
 Kunder kan administrere DNS-oplysninger for deres registrerede domæner fra siden **Min konto**, under opførelsen af det pågældende domæne.
 
-### Understøttede rekordtyper
+### Understøttede rekordtyper {#supported-record-types}
 
 | Type | Brug |
 |---|---|
@@ -91,11 +91,11 @@ Kunder kan administrere DNS-oplysninger for deres registrerede domæner fra side
 | **MX** | Indstil mailveksleren (mail exchange server) |
 | **TXT** | Tilføj SPF, DMARC, verifikation eller andre tekstoplysninger |
 
-### Hvilke udbydere understøtter DNS-administration?
+### Hvilke udbydere understøtter DNS-administration? {#which-providers-support-dns-management}
 
 DNS-administration (tilføj, rediger, slet oplysninger) er tilgængelig med **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** og **Openprovider**. Hostinger domæner kan opdatere nameservere via Domain Seller; DNS-oplysninger for hostede domæner administreres af kernens Hostinger domain-mapping integration. Namecheap, GoDaddy og NameSilo domæner viser status og udløbsinformation, men DNS skal administreres direkte i registreringens kontrolpanel.
 
-### Standard DNS-oplysninger
+### Standard DNS-oplysninger {#default-dns-records}
 
 Du kan opsætte standard DNS-oplysninger, som automatisk anvendes, når et domæne registreres. Gå til **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: se og rediger DNS
+### Admin: se og rediger DNS {#admin-viewing-and-editing-dns}
 
 Netværksadministratorer kan se og redigere DNS-oplysninger for ethvert kundedomen fra domænets redigeringsside i **Network Admin › Ultimate Multisite › Domains**.

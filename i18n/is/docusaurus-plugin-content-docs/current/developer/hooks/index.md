@@ -1,0 +1,194 @@
+---
+title: Tilvísun fyrir hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Tilvísun fyrir hooks {#hooks-reference}
+
+Sjálfvirkt búin til skjölun fyrir allar **59 aðgerðir** og **118 síur** í Ultimate Multisite.
+
+## Aðgerðir {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Keyrir áður en auðkenningarendurbeiningin á sér stað.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Keyrir rétt áður en auðkenningarkakan er stillt.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Keyrir rétt áður en innskráð auðkenningarkaka er stillt.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Leyfir forriturum að bæta við eigin samþættingum fyrir hýsingaraðila í gegnum wp-viðbætur.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Keyrir þegar öll háð kerfi hafa verið hlaðin
+- [wu_activation](./Actions/wu_activation) — Leyfir öðrum hlutum viðbótarinnar að tengja sínar rútínur fyrir virkjun
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Leyfir viðbótarforriturum að tengja föll eftir að notandi eða super admin skiptir um sniðmát síðu
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Í sumum tilvikum þurfum við að hlaða aukakrafti til að meðhöndla aðgerðir.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Keyrir áður en leitarbeiðnin er unnin.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Leyfir forriturum að gera viðbótarbreytingar á checkout-hlutnum.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Leyfir forriturum að gera viðbótarbreytingar á checkout-hlutnum.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Keyrir áður en field er bætt við checkout-eyðublaðið.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Leyfir forriturum að kalla fram viðbótar-hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Áður en við vinnum úr checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Keyrir eftir að checkout-pöntunin er fullkomlega sett saman.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Leyfir viðbótarforriturum að bæta widgets við Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Leyfir viðbótarforriturum að bæta widgets við Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Leyfir öðrum hlutum viðbótarinnar að tengja sínar rútínur fyrir óvirkjun
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Leyfir viðbótarforriturum að bæta aðgerðum við eyðingarferlið
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Keyrir þegar lén verður að aðalléni fyrir síðu.
+- [wu_domain_created](./Actions/wu_domain_created) — Keyrir þegar nýrri lénavörpun er bætt við.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Keyrt eftir að kjarna Domain Mapping okkar hefur verið hlaðið
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Sumar viðbætur vista URL áður en vörpunin var virk eða byggja URL á annan hátt sem er ekki innifalinn o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Leyfir forriturum að tengja sig inn eftir að afritun síðu á sér stað.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Leyfir viðbótarforriturum að bæta við viðbótar-hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook fyrir viðbótarhreinsun
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Keyrir áður en beiðni um glugga til að bæta við nýju léni er meðhöndluð.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Leyfir viðbótarforriturum að vista meta-gögn á mismunandi hátt ef þeir þurfa.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Leyfir viðbótarforriturum að vista meta-gögn notanda á mismunandi hátt ef þeir þurfa.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Keyrir þegar ógildur magic link-token finnst.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Keyrir eftir að notandi er skráður inn í gegnum magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Leyfir viðbótarforriturum að gera viðbótarhluti þegar viðskiptavininum er bætt við.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Keyrir eftir að MCP-getur eru skráðar fyrir einingu.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Keyrir eftir að MCP-millistykkið er frumstillt.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Keyrir eftir að áskriftaraðildinni er sagt upp.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Keyrir eftir endurnýjun áskriftaraðildarinnar.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Keyrir áður en áskriftaraðildinni er sagt upp.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Keyrir fyrir endurnýjun áskriftaraðildarinnar.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Keyrir eftir að hlutur er vistaður í gagnagrunninum.
+- [wu_page_added](./Actions/wu_page_added) — Leyfir viðbótarforriturum að keyra viðbótarhluti þegar síður eru skráðar.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Leyfir viðbótarforriturum að bæta við viðbótarefni eftir að við birtum síðuna
+- [wu_page_before_render](./Actions/wu_page_before_render) — Leyfir viðbótarforriturum að bæta við viðbótarefni áður en við birtum síðuna.
+- [wu_page_load](./Actions/wu_page_load) — Leyfir viðbótarforriturum að bæta við viðbótar-hooks á síðurnar okkar.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Leyfir viðbótarforriturum að bæta við viðbótarefni eftir að við birtum síðuna
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Leyfir viðbótarforriturum að bæta við viðbótarefni áður en við birtum síðuna.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Leyfir viðbótarforriturum að bæta við viðbótar-hooks á síðurnar okkar.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Keyrir eftir að widgets eru skráð fyrir þessa síðu.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Keyrir til að leyfa viðbótum að tengja capability modules við samþættingar.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Keyrir til að leyfa samþættingum að skrá sig.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Leyfa að viðbótarleiðir séu skráðar.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Leyfa plugin-forriturum að bæta aðgerðum við vistunarferlið
+- [wu_site_created](./Actions/wu_site_created) — Keyrir eftir að vefsvæði er búið til í fyrsta sinn.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Leyfa plugin-forriturum að bæta við viðbótar hooks, ef þörf krefur.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Keyrir þegar verið er innan samhengis sniðmátsforskoðara.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Kveikir á enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Keyrir eftir að hlutur er vistaður í gagnagrunninum.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Keyrir eftir að hlutur er vistaður í gagnagrunninum.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Keyrir eftir að hlutur er vistaður í gagnagrunninum.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leyfa plugin-forriturum að bæta aðgerðum við aflæsingarferlið.
+
+## Síur {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Síar lengd gildistíma auðkenningarkökunnar.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Síar kerfi auðkenningarendurbeiningar.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Endurgerir upprunalega WP-síuna hér, til öryggis.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Leyfir plugin-hönnuðum að sía URL-ið sem notað er í forskoðaranum
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Síar hvort auth-kakan eigi aðeins að vera send yfir HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Síar hvort nota eigi örugga auðkenningarendurbeiningu.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Síar hvort innskráningarkakan eigi aðeins að vera send yfir HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Leyfir að koma í veg fyrir að auth-kökur séu raunverulega sendar til client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Stilltu endurbeiningar-URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Bættu við viðbótarskrefum með síum
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Leyfir plugin-hönnuðum að bæta við auka breytu í render-samhengið á heimsvísu.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Leyfir hönnuðum að stytta framhjá þessari athugun.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Síar reitina fyrir modal-gluggann til að bæta við nýju léni.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Leyfir hönnuðum að gera breytingar á línulið uppsetningargjalds.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Leyfir hönnuðum að sía stjórnandatilkynningar sem Ultimate Multisite bætir við.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Sía eftir að hafa verið breytt.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nú meðhöndlum við allar gerðirnar.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Leyfir plugin-hönnuðum að stytta framhjá takmörkununum.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Síar hvort skráningargjaldið eigi að vera notað eða ekki.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Síar upprunalegu api-rökin.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Leyfir plugin-hönnuðum að sía reiti reikningsfangs.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Leyfir hönnuðum að komast framhjá úttakinu og setja nýtt
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Leyfir hönnuðum að komast framhjá kóðanum sem afstillir núverandi notanda.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Síar heildarupphæð „endurtekinnar upphæðar“.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Síar heildarupphæð „upphafsupphæðar“.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Síar heildarupphæð „upphafsupphæðar“.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Leyfir plugin-hönnuðum að fikta í kreditgildinu.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Síar sameiginleg grunnlén checkout-eyðublaða sem ættu ekki að verða færslur fyrir varpað lén.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — API-in okkar til að bæta við nýjum reitasniðmátum tengjast hér.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — API-in okkar til að bæta við nýjum reitategundum tengjast hér.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Síar villuskilaboðin.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Leyfir hönnuðum að komast framhjá athuguninni ef reitur er sjálf-sendanlegur.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Leyfir plugin-hönnuðum að bæta við sérsniðnum samheitum í eyðublaðaprófara.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Leyfir plugin-hönnuðum að sía prófunarreglurnar.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Afstillir óæskileg færibreytur.
+- [wu_contains_element](./Filters/wu_contains_element) — Leyfir hönnuðum að breyta niðurstöðum upphafsleitarinnar.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Leyfir hýsingaraðilum að setja fastann upp á annan hátt.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Skilar fallegu heiti stjórnsýslueininga landsins.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Skilar lista yfir borgir fyrir fylki í landi.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Skilar lista yfir fylki fyrir þetta land.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Leyfir hönnuðum að breyta sjálfgefinni hegðun og stilla núverandi customer á annan hátt.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Leyfir hönnuðum að breyta sjálfgefinni hegðun og stilla núverandi membership á annan hátt.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Leyfir hönnuðum að breyta sjálfgefinni hegðun og stilla núverandi site á annan hátt.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Leyfir hönnuðum að breyta URL-færibreytum fyrir stjórnun site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Leyfir plugin-hönnuðum að sía hlekkina.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Leyfir plugin-hönnuðum að bæta við nýjum athugunum til að skilgreina niðurstöðurnar.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Við gætum þurft að bæta við fleiri blokkum síðar.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Bætir við almennum filter til að leyfa þróurum að útvíkka þennan þáttara til að takast á við fleiri smiða eða plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter hvort framfylgja eigi viðbótarreglum um lykilorð.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter myndað notandanafn viðskiptavinar.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Leyfa plugin-þróurum að sía forstillingar checkout-síðu.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Leyfa þróurum að bæta við nýjum form-slugs til að fara fram hjá þessari hegðun.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Leyfa þróurum og viðbótum að bæta við nýjum flutningsskrefum
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Sjá meira um þennan filter hér fyrir neðan, í þessari sömu aðferð.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Leyfa þróurum að velja hvaða færslugerðir eigi að birtast.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Skila línum, síanlegt
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Leyfa þróurum að meðhöndla lén/slóðar-pörin.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Sía wizard-hluta fyrir uppsetningu hýsingarsamþættingar.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Síar reitina á formi. Formið er auðkennt með ID í filter-heitinu.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Sía product-gerðirnar sem hafa sjálfstæð billing cycles.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Leyfa plugin-þróurum að þvinga tiltekið ástand fyrir API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Leyfa plugin-þróurum að bæta við fleiri prófunum fyrir development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Leyfa plugin-þróurum að þvinga tiltekið ástand fyrir MCP-adapterinn.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Af öryggisástæðum takmörkum við fjölda aðgerða sem eru tiltækar til að tengjast inn í. Þessi filter leyfir þróurum að útvíkka
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Athugar hvort tiltekin færslugerð sé leyfð í þessari áskriftarleið Leyfa plugin-þróurum að sía skilagildið
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter hvort framfylgja eigi staðfestingu IP-tölu.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter hvort framfylgja eigi staðfestingu user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Sía myndaða magic link-URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter hvort magic links séu virkjuð.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Síar redirect-URL eftir að lén er gert að primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Búa til útilokunarlista yfir færibreytur sem koma í veg fyrir sjálfvirka redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter til að hnekkja ákvörðun um innifalningu MCP-getu.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Síar reiknaða lokadagsetningu.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Síar reiknaða lokadagsetningu sem á að stilla eftir endurnýjunina.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Leyfa þróurum að bæta við nýjum update-form-slugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Sía lágmarkslengd lykilorðs.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Sía lágmarksstyrk lykilorðs sem krafist er (zxcvbn-einkunn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Leyfa plugin-þróurum, og okkur sjálfum, að bæta aðgerðatenglum við breytingarsíður okkar
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter hvort krefjast eigi lágstafa í lykilorðum.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter hvort krefjast eigi talna í lykilorðum.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter hvort krefjast eigi sértákna í lykilorðum.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter hvort krefjast eigi hástafa í lykilorðum.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Leyfa notanda að breyta skilaboðunum um óafgreiddar greiðslur.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Sía product-gerðirnar sem ætti að meðhöndla sem áskriftarleiðir.
+- [wu_post_count](./Filters/wu_post_count) — Leyfa plugin-þróurum að breyta heildartalningu
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Leyfa plugin-þróurum að breyta hvaða færslustöðu eigi að telja Sjálfgefið eru birtar og einkafærslur talda
+- [wu_post_default_status](./Filters/wu_post_default_status) — Síar gögn hlutarins áður en þau eru vistuð í gagnagrunninn.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Leyfa þróurum að sía stillingar fyrir vistun af Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Síar hvort leyfilegt sé að halda áfram með beiðnina eða ekki.
+- [wu_return_url](./Filters/wu_return_url) — Leyfir þróunaraðilum að breyta endurkomu-URL greiðslugáttarinnar sem notað er eftir checkout-ferli.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Leyfir plugin-þróunaraðilum að bæta við fleiri leitarlíkanaföllum.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Leyfir þróunaraðilum að bæta við viðbótarskrefum í uppsetningarleiðarvísi.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Síar hvort Ultimate Multisite eigi að búa til lénsfærslu fyrir nýstofnaðan vef.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Leyfir þróunaraðilum að skammhlaupa endurbeininguna og koma í veg fyrir að hún eigi sér stað.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Leyfir endurskrifun meðhöndlara
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Síar magn-aðgerðir sem eru tiltækar fyrir vefi.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sía til að breyta gildinu fyrir að sækja plugin-vefi innan netsins.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Virkja/slökkva á single-sign-on getu milli léna.
+- [wu_sso_url](./Filters/wu_sso_url) — Síar mynduð SSO-URL áður en þeim er skilað fyrir aðgerðir viðskiptavina milli léna.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Síar Stripe Subscription gögn. Getur yfirskrifað success_url eða cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Síar rök greiðsluásetningsins.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Síar auðkenni áætlunarinnar sem á að athuga. Ef þetta er til mun nýja áskriftin nota þessa áætlun.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Síar auðkenni vörunnar sem á að athuga. Ef þetta er til mun nýja áskriftin nota þessa vöru.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Síar idempotency_key-gildið sem sent er með Stripe charge valkostunum.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Síar membership-færsluna sem tengist þessum webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Síar lýsigögnin áður en þau eru raðgerð til geymslu í gagnagrunninum.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Síar hlutgögnin áður en þau eru geymd í gagnagrunninum.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Leyfir þróunaraðilum að breyta upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Ákvarðar hvort vörpun eigi að vera notuð
+- [wu_username_from_email](./Filters/wu_username_from_email) — Síar notandanafn nýs viðskiptavinar.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Leyfir þróunaraðilum að breyta skilaboðunum um notendatakmörk membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Leyfir þróunaraðilum að bæta við viðbótarmöppum á útskiptanlega listann.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Síar hvaða sub_commands eru virkjuð fyrir þessa einingu.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Við athugum þrjú mynstur þegar við reynum að finna út hvar við getum sprautað inn föstunum okkar:

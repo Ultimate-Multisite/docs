@@ -3,7 +3,7 @@ title: PRO Thema
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Iriischting vo Ihrem Admin Panel mit PRO Theme
+# Iriischting vo Ihrem Admin Panel mit PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Wann mir bi Klientearbeit bruchemer oft e individuell Erfahrig im WordPress-Admin-Dashboard vo üsne Kliente z'biete. Wenn Sie nach eme professionelleri Ussicht und Gfühl sueche, chönnt Ihnen s'PRO Theme helfe.
 

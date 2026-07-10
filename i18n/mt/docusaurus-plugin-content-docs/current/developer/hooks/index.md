@@ -1,0 +1,194 @@
+---
+title: Referenza tal-Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referenza tal-Hooks {#hooks-reference}
+
+Dokumentazzjoni ġġenerata awtomatikament għall-**59 actions** u **118 filters** kollha f'Ultimate Multisite.
+
+## Actions {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Jitħaddem qabel ir-ridirezzjoni tal-awtentikazzjoni.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Jitħaddem immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Jitħaddem immedjatament qabel ma tiġi ssettjata l-cookie tal-awtentikazzjoni tal-utent illoggjat.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Jippermetti lill-iżviluppaturi jżidu l-integrazzjonijiet tagħhom stess ta’ fornituri tal-host permezz ta’ plugins wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Jitħaddem meta d-dipendenzi kollha jkunu ttellgħu
+- [wu_activation](./Actions/wu_activation) — Iħalli partijiet oħra tal-plugin jorbtu r-rutini tagħhom għall-attivazzjoni
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Jippermetti lill-iżviluppaturi tal-plugin jorbtu funzjonijiet wara li utent jew super admin ibiddel it-template tas-sit
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — F’xi każijiet, ikollna bżonn intellgħu riżorsi żejda biex nittrattaw azzjonijiet.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Jitħaddem qabel l-ipproċessar tat-talba tat-tiftix.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Jippermetti lill-iżviluppaturi jagħmlu bidliet addizzjonali fl-oġġett tal-checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Jippermetti lill-iżviluppaturi jagħmlu bidliet addizzjonali fl-oġġett tal-checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Jitħaddem qabel ma qasam jiżdied mal-formola tal-checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Jippermetti lill-iżviluppaturi jħaddmu hooks addizzjonali.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Qabel ma nipproċessaw il-checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Jitħaddem wara li l-ordni tal-checkout tkun inġabret kompletament.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Jippermetti lill-iżviluppaturi tal-plugin iżidu widgets mal-Panel tan-Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Jippermetti lill-iżviluppaturi tal-plugin iżidu widgets mal-Panel tan-Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Iħalli partijiet oħra tal-plugin jorbtu r-rutini tagħhom għad-diżattivazzjoni
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Jippermetti lill-iżviluppaturi tal-plugin iżidu azzjonijiet mal-proċess tat-tħassir
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Jitħaddem meta domain isir id-domain primarju għal sit.
+- [wu_domain_created](./Actions/wu_domain_created) — Jitħaddem meta jiżdied mapping ġdid tad-domain.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Jitħaddem wara li l-core Domain Mapping tagħna jkun ittella’
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Xi plugins isalvaw URL qabel ma l-mapping kien attiv jew jibnu URLs b’mod differenti li mhux inkluż o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Jippermetti lill-iżviluppaturi jorbtu wara li sseħħ duplikazzjoni ta’ sit.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Jippermetti lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook għal tindif addizzjonali
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Jitħaddem qabel jiġi mmaniġġjat it-talba tal-modal biex jiżdied domain ġdid.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Jippermetti lill-iżviluppaturi tal-plugin isalvaw meta data b’modi differenti jekk ikollhom bżonn.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Jippermetti lill-iżviluppaturi tal-plugin isalvaw meta data tal-utent b’modi differenti jekk ikollhom bżonn.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Jitħaddem meta jiltaqa’ ma’ token invalidu ta’ magic link.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Jitħaddem wara li utent jidħol permezz ta’ magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Jippermetti lill-iżviluppaturi tal-plugin jagħmlu affarijiet addizzjonali meta jiżdied il-klijent.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Jitħaddem wara li l-abbiltajiet MCP jiġu rreġistrati għal entità.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Jitħaddem wara li l-adapter MCP jiġi inizjalizzat.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Jitħaddem wara li l-membership tiġi kkanċellata.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Jitħaddem wara t-tiġdid tal-membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Jitħaddem qabel ma l-membership tiġi kkanċellata.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Jitħaddem qabel it-tiġdid tal-membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Jitħaddem wara li oġġett jinħażen fid-database.
+- [wu_page_added](./Actions/wu_page_added) — Jippermetti lill-iżviluppaturi tal-plugin iħaddmu affarijiet addizzjonali meta l-paġni jiġu rreġistrati.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Jippermetti lill-iżviluppaturi tal-plugin iżidu kontenut addizzjonali wara li nistampaw il-paġna
+- [wu_page_before_render](./Actions/wu_page_before_render) — Jippermetti lill-iżviluppaturi tal-plugin iżidu kontenut addizzjonali qabel ma nistampaw il-paġna.
+- [wu_page_load](./Actions/wu_page_load) — Jippermetti lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali mal-paġni tagħna.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Jippermetti lill-iżviluppaturi tal-plugin iżidu kontenut addizzjonali wara li nistampaw il-paġna
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Jippermetti lill-iżviluppaturi tal-plugin iżidu kontenut addizzjonali qabel ma nistampaw il-paġna.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Jippermetti lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali mal-paġni tagħna.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Jitħaddem wara li widgets jiġu rreġistrati għal din il-paġna.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Jinbeda biex jippermetti lill-addons jehmżu moduli ta' kapaċitajiet mal-integrazzjonijiet.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Jinbeda biex jippermetti lill-integrazzjonijiet jirreġistraw lilhom infushom.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Jippermetti li jiġu rreġistrati rotot addizzjonali.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Jippermetti lill-iżviluppaturi tal-plugin iżidu azzjonijiet mal-proċess tal-iffrankar
+- [wu_site_created](./Actions/wu_site_created) — Jinbeda wara li jinħoloq sit għall-ewwel darba.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Jippermetti lill-iżviluppaturi tal-plugin iżidu hooks addizzjonali, jekk meħtieġ.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Jitħaddem meta jkun ġewwa l-kuntest tal-preview tat-template.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Jiskatta l-hook tal-enqueue scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Jinbeda wara li oġġett jinħażen fid-database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Jinbeda wara li oġġett jinħażen fid-database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Jinbeda wara li oġġett jinħażen fid-database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Jippermetti lill-iżviluppaturi tal-plugin iżidu azzjonijiet mal-proċess tal-ftuħ.
+
+## Filtri {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Jiffiltra t-tul tal-perjodu tal-iskadenza tal-cookie tal-awtentikazzjoni.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Jiffiltra l-iskema tar-redirect tal-awtentikazzjoni.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Jirreplika l-WP Filter oriġinali hawn, għal raġuni tajba.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Jippermetti lill-iżviluppaturi tal-plugin jiffiltraw il-URL użat fil-previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Jiffiltra jekk il-cookie tal-auth għandhiex tintbagħat biss fuq HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Jiffiltra jekk għandux jintuża redirect tal-awtentikazzjoni sigur.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Jiffiltra jekk il-cookie tal-logged in għandhiex tintbagħat biss fuq HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Jippermetti li jiġi evitat li l-cookies tal-auth jintbagħtu fil-fatt lill-klijent.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Issettja l-URL tar-redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Żid passi addizzjonali permezz ta' filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Jippermetti lill-iżviluppaturi tal-plugin iżidu varjabbli żejda fil-kuntest tar-render globalment.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Jippermetti lill-iżviluppaturi jqassru din il-verifika.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Jiffiltra l-fields għall-modal taż-żieda ta' domain ġdid.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Jippermetti lill-iżviluppaturi jagħmlu bidliet fil-line item tat-tariffa tas-setup.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Jippermetti lill-iżviluppaturi jiffiltraw avviżi tal-admin miżjuda minn Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Iffiltra wara li jkun inbidel.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Issa, nittrattaw it-tipi kollha.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Jippermetti lill-iżviluppaturi tal-plugin jaqbżu l-limitazzjonijiet.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Jiffiltra jekk it-tariffa tas-signup għandhiex tiġi applikata jew le.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Iffiltra l-argumenti oriġinali tal-api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Jippermetti lill-iżviluppaturi tal-plugin jiffiltraw il-fields tal-indirizz tal-billing.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Jippermetti lill-iżviluppaturi jevitaw l-output u jistabbilixxu wieħed ġdid
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Jippermetti lill-iżviluppaturi jevitaw il-kodiċi ta' unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Jiffiltra t-total tal-"ammont rikorrenti".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Iffiltra t-total tal-"ammont inizjali".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Iffiltra t-total tal-"ammont inizjali".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Jippermetti lill-iżviluppaturi tal-plugin jindaħlu fil-valur tal-kreditu.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Jiffiltra domains bażi kondiviżi tal-formola taċ-checkout li m'għandhomx isiru rekords ta' domain mapped.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — L-APIs tagħna biex inżidu templates ġodda ta' fields jaqbdu hawn.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — L-APIs tagħna biex inżidu tipi ġodda ta' fields jaqbdu hawn.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Iffiltra l-messaġġi ta' żball.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Jippermetti lill-iżviluppaturi jevitaw il-verifika jekk field ikunx jista' jintbagħat awtomatikament.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Jippermetti lill-iżviluppaturi tal-plugin iżidu aliases personalizzati fil-validatur tal-formola.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Jippermetti lill-iżviluppaturi tal-plugin jiffiltraw ir-regoli tal-validazzjoni.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Neħħi Params mhux mixtieqa.
+- [wu_contains_element](./Filters/wu_contains_element) — Jippermetti lill-iżviluppaturi jibdlu r-riżultati tat-tfittxija inizjali.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Jippermetti lill-fornituri tal-host jinstallaw il-kostanti b'mod differenti.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Jirritorna isem sabiħ tas-sottodiviżjonijiet amministrattivi tal-pajjiż.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Jirritorna l-lista ta' bliet għal stat f'pajjiż.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Jirritorna l-lista ta' stati għal dan il-pajjiż.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Jippermetti lill-iżviluppaturi jimmodifikaw l-imġiba predefinita u jistabbilixxu l-klijent attwali b'mod differenti.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Jippermetti lill-iżviluppaturi jimmodifikaw l-imġiba predefinita u jistabbilixxu l-membership attwali b'mod differenti.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Jippermetti lill-iżviluppaturi jimmodifikaw l-imġiba predefinita u jistabbilixxu s-sit attwali b'mod differenti.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Jippermetti lill-iżviluppaturi jimmodifikaw il-parametri tal-URL tal-ġestjoni tas-sit.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Jippermetti lill-iżviluppaturi tal-plugin jiffiltraw il-links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Jippermetti lill-iżviluppaturi tal-plugin iżidu verifiki ġodda sabiex jiddefinixxu r-riżultati.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Jista' jkollna bżonn inżidu blocks addizzjonali aktar tard.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Iżid filter ġeneriku biex jippermetti lill-iżviluppaturi jestendu dan il-parser biex jittratta builders jew plugins addizzjonali.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Iffiltra jekk għandhomx jiġu infurzati regoli addizzjonali tal-password.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Iffiltra l-isem tal-utent tal-klijent iġġenerat.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Ippermetti lill-iżviluppaturi tal-plugin jiffiltraw il-pre-sets ta' paġna tal-checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Ippermetti lill-iżviluppaturi jżidu slugs ġodda tal-formoli biex jevitaw din l-imġiba.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Ippermetti lill-iżviluppaturi u add-ons iżidu passi ġodda ta' migrazzjoni
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Ara aktar dwar dan il-filter hawn taħt, fuq dan l-istess metodu.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Ippermetti lill-iżviluppaturi jagħżlu liema tipi ta' post għandhom jintwerew.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Irritorna Lines, li jistgħu jiġu ffiltrati
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Ippermetti lill-iżviluppaturi jimmanipulaw il-pari domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Jiffiltra s-sezzjonijiet tal-wizard għas-setup tal-integrazzjoni tal-hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Jiffiltra l-oqsma fuq formola. Il-formola hija identifikata mill-ID fl-isem tal-filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Iffiltra t-tipi ta' prodotti li għandhom ċikli ta' billing indipendenti.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Ippermetti lill-iżviluppaturi tal-plugin jisfurzaw stat partikolari għall-API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Ippermetti lill-iżviluppaturi tal-plugin iżidu testijiet addizzjonali għall-modalità ta' żvilupp.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Ippermetti lill-iżviluppaturi tal-plugin jisfurzaw stat partikolari għall-adapter MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Għal raġunijiet ta' sigurtà, nillimitaw in-numru ta' azzjonijiet disponibbli għall-hooking into. Dan il-filter jippermetti lill-iżviluppaturi jespandu
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Jiċċekkja jekk tip ta' post partikolari huwiex permess fuq dan il-plan Ippermetti lill-iżviluppaturi tal-plugin jiffiltraw il-valur irritornat
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Iffiltra jekk għandhiex tiġi infurzata l-verifika tal-indirizz IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Iffiltra jekk għandhiex tiġi infurzata l-verifika tal-user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Iffiltra l-URL tal-magic link iġġenerat.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Iffiltra jekk il-magic links humiex attivati.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Jiffiltra l-URL tar-redirect wara li domain isir primarju.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Oħloq lista ta' esklużjoni ta' parametri li jipprevjenu l-auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter biex tegħleb id-deċiżjoni tal-inklużjoni tal-abbiltà MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Jiffiltra d-data ta' skadenza kkalkulata.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Jiffiltra d-data ta' skadenza kkalkulata li għandha tiġi ssettjata wara t-tiġdid.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Ippermetti lill-iżviluppaturi jżidu slugs ġodda tal-formoli ta' aġġornament.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Iffiltra t-tul minimu tal-password.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Iffiltra s-saħħa minima tal-password meħtieġa (punteġġ zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Ippermetti lill-iżviluppaturi tal-plugin, u lilna nfusna, inżidu links ta' azzjoni mal-paġni ta' editjar tagħna
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Iffiltra jekk għandhomx ikunu meħtieġa ittri żgħar fil-passwords.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Iffiltra jekk għandhomx ikunu meħtieġa numri fil-passwords.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Iffiltra jekk għandhomx ikunu meħtieġa karattri speċjali fil-passwords.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Iffiltra jekk għandhomx ikunu meħtieġa ittri kbar fil-passwords.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Ippermetti lill-utent jibdel il-messaġġ dwar il-pagamenti pendenti.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Iffiltra t-tipi ta' prodotti li għandhom jitqiesu bħala plans.
+- [wu_post_count](./Filters/wu_post_count) — Ippermetti lill-iżviluppaturi tal-plugin jibdlu t-total tal-għadd
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Ippermetti lill-iżviluppaturi tal-plugin jibdlu liema status ta' post għandu jingħadd B'mod predefinit, posts ippubblikati u privati jingħaddu
+- [wu_post_default_status](./Filters/wu_post_default_status) — Jiffiltra d-data tal-oġġett qabel ma tinħażen fid-database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Ippermetti lill-iżviluppaturi jiffiltraw settings qabel is-save minn Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Jiffiltra jekk huwiex permess li tkompli bit-talba jew le.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Jiffiltra jekk huwiex permess li tkompli bit-talba jew le.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Jiffiltra jekk huwiex permess li jipproċedi bit-talba jew le.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Jiffiltra jekk huwiex permess li jipproċedi bit-talba jew le.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Jiffiltra jekk huwiex permess li jipproċedi bit-talba jew le.
+- [wu_return_url](./Filters/wu_return_url) — Jippermetti lill-iżviluppaturi jibdlu l-gateway return URL użat wara l-proċessi ta' checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Jippermetti lill-iżviluppaturi tal-plugin iżidu aktar funzjonijiet tal-mudelli tat-tiftix.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Jippermetti lill-iżviluppaturi jżidu passi addizzjonali tas-setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Jiffiltra jekk Ultimate Multisite għandux joħloq rekord tad-domain għal sit maħluq ġdid.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Jippermetti lill-iżviluppaturi jagħmlu short-circuit lir-ridirezzjoni, u jipprevjenuha milli sseħħ.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Jippermetti kitba mill-ġdid tal-handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Iffiltra l-azzjonijiet tal-massa disponibbli għas-siti.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtru biex jinbidel il-valur għal get pluginssites ġewwa n-network.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Jattiva/jiddiżattiva l-kapaċità ta' single-sign-on bejn domains.
+- [wu_sso_url](./Filters/wu_sso_url) — Jiffiltra l-SSO URLs iġġenerati qabel ma jiġu rritornati għal azzjonijiet tal-klijenti bejn domains.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Iffiltra d-data ta' Stripe Subscription. Jista' jissostitwixxi success_url jew cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Jiffiltra l-argumenti tal-intenzjoni tal-ħlas.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Jiffiltra l-ID tal-pjan li għandu jiġi ċċekkjat. Jekk dan jeżisti, is-subscription il-ġdida se tuża dan il-pjan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Jiffiltra l-ID tal-prodott li għandu jiġi ċċekkjat. Jekk dan jeżisti, is-subscription il-ġdida se tuża dan il-prodott.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Jiffiltra l-valur idempotency_key mibgħut mal-għażliet ta' charge ta' Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Jiffiltra r-rekord tas-sħubija assoċjat ma' dan il-webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Jiffiltra d-data meta qabel ma tiġi serializzata biex tinħażen fid-database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Jiffiltra d-data tal-oġġett qabel ma tinħażen fid-database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Jippermetti lill-iżviluppaturi jibdlu l-upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Jiddetermina jekk mapping għandux jintuża
+- [wu_username_from_email](./Filters/wu_username_from_email) — Iffiltra username tal-klijent ġdid.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Jippermetti lill-iżviluppaturi jibdlu l-messaġġ dwar il-limitu tal-utenti tas-sħubija
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Jippermetti lill-iżviluppaturi jżidu folders addizzjonali mal-lista sostitwibbli.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Jiffiltra liema sub_commands huma attivati għal din l-entità.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Niċċekkjaw għal tliet patterns meta nippruvaw nifhmu fejn nistgħu ninjettaw il-kostanti tagħna:

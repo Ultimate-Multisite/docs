@@ -4,11 +4,11 @@ title: Filtro - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filtro: wu_setup_wizard
+# Filtro: wu_setup_wizard {#filter-wusetupwizard}
 
 Consente agli sviluppatori di aggiungere ulteriori passaggi alla procedura guidata di configurazione.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nome | Tipo | Descrizione |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Consente agli sviluppatori di aggiungere ulteriori passaggi alla procedura guida
 | $is_migration | `bool` | Se si tratta di una migrazione o meno. |
 | $wizard | `object` | L'istanza corrente. |
 
-### Dal
+### Dal {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definito in [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) alla riga 525
 
-## Restituisce
+## Restituisce {#returns}

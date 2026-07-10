@@ -1,139 +1,138 @@
 ---
-title: |-
-  دومين مَپپيڭ قلدۇرۇش كېلىنىش
-
-  Domain mapping سۆزده قلدۇرۇش
+title: دومېن خەرىتىلەشنى قانداق سەپلەش
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# ডোমেইন ম্যাপিং কিভাবে কনফিগার করবেন (v2)
+# دائىرە خەرىتىلەشنى قانداق سەپلەش (v2) {#how-to-configure-domain-mapping-v2}
 
-_**গুরুত্বপূর্ণ নোট: এই নিবন্ধটি Ultimate Multisite সংস্করণের ২.x এর জন্য প্রযোজ্য।**_
+_**مۇھىم ئەسكەرتىش: بۇ ماقالە Ultimate Multisite نىڭ 2.x نەشرىگە مۇناسىۋەتلىك.**_
 
-একটি প্রিমিয়াম নেটওয়ার্কের সবচেয়ে শক্তিশালী বৈশিষ্ট্যগুলোর মধ্যে একটি হলো আমাদের ক্লায়েন্টদের তাদের সাইটগুলিতে একটি টপ-লেভেল ডোমেইন যুক্ত করার সুযোগ দেওয়া। কারণ, কোনটি বেশি পেশাদার দেখায়: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) নাকি [_**joesbikeshop.com**_](http://joesbikeshop.com)? এই কারণেই Ultimate Multisite এই বৈশিষ্ট্যটি তৃতীয় পক্ষের প্লাগইন ব্যবহার করার প্রয়োজন ছাড়াই সরাসরি অন্তর্ভুক্ত করেছে।
+premium تورنىڭ ئەڭ كۈچلۈك ئىقتىدارلىرىنىڭ بىرى — خېرىدارلىرىمىزغا ئۆز تور بېكەتلىرىگە يۇقىرى دەرىجىلىك دائىرە باغلاش پۇرسىتىنى تەمىنلەش ئىمكانىيىتىدۇر. ئاخىرىدا، قايسىسى تېخىمۇ كەسپىي كۆرۈنىدۇ: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ياكى [_**joesbikeshop.com**_](http://joesbikeshop.com)؟ شۇڭلاشقا Ultimate Multisite بۇ ئىقتىدارنى ئۈچىنچى تەرەپ pluginلىرىنى ئىشلىتىشنىڭ ھاجىتى يوق ھالدا ئىچىگە قوشۇپ تەمىنلەيدۇ.
 
-## ডোমেইন ম্যাপিং কী?
+## دائىرە خەرىتىلەش دېگەن نېمە؟ {#whats-domain-mapping}
 
-নাম থেকেই বোঝা যায়, ডোমেইন ম্যাপিং হলো Ultimate Multisite-এর সেই ক্ষমতা যা একটি কাস্টম ডোমেইনের অনুরোধ গ্রহণ করে এবং সেই অনুরোধটিকে নেটওয়ার্কের সংশ্লিষ্ট সাইটের সাথে সংযুক্ত করে নির্দিষ্ট ডোমেইনটি যুক্ত করে।
+نامىدىن مەلۇم بولغىنىدەك، دائىرە خەرىتىلەش — Ultimate Multisite تەمىنلەيدىغان، خاس دائىرە ئۈچۈن كەلگەن تەلەپنى قوبۇل قىلىپ، شۇ ئالاھىدە دائىرە باغلانغان توردىكى ماس تور بېكەتكە خەرىتىلەش ئىقتىدارىدۇر.
 
-### আপনার Ultimate Multisite নেটওয়ার্কে ডোমেইন ম্যাপিং কিভাবে সেটআপ করবেন
+### Ultimate Multisite تورىڭىزدا دائىرە خەرىتىلەشنى قانداق تەڭشەش {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-ডোমেইন ম্যাপিং কাজ করার জন্য আপনার দিক থেকে কিছু সেটিংস করা প্রয়োজন। সৌভাগ্যবশত, Ultimate Multisite আপনার কঠিন কাজটি স্বয়ংক্রিয়ভাবে করে দেয় যাতে আপনি সহজেই প্রয়োজনীয় শর্তগুলো পূরণ করতে পারেন।
+دائىرە خەرىتىلەش ئىشلەش ئۈچۈن سىز تەرەپتىن بىر قىسىم تەڭشەشنى تەلەپ قىلىدۇ. بەختكە يارىشا، Ultimate Multisite قىيىن خىزمەتلەرنى سىز ئۈچۈن ئاپتوماتلاشتۇرىدۇ، شۇنداق بولغاندا تەلەپلەرنى ئاسانلا ئورۇندىيالايسىز.
 
-Ultimate Multisite ইনস্টল করার সময়, উইজার্ডটি স্বয়ংক্রিয়ভাবে **sunrise.php** ফাইলটিকে নির্দিষ্ট ফোল্ডারে কপি এবং ইনস্টল করবে। এই ধাপটি সম্পন্ন না করা পর্যন্ত উইজার্ড আপনাকে এগিয়ে যেতে দেবে না।
+Ultimate Multisite ئورنىتىش جەريانىدا، يېتەكچى **sunrise.php** نى بەلگىلەنگەن قىسقۇچقا ئاپتوماتىك كۆچۈرۈپ ئورنىتىدۇ. **بۇ قەدەم تاماملانمىغۇچە يېتەكچى سىزنىڭ داۋاملىشىشىڭىزغا يول قويمايدۇ**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-এর মানে হলো, একবার Ultimate Multisite ইনস্টলেশন উইজার্ড আপনার নেটওয়ার্ক সেটআপ শেষ করলে, আপনি সাথে সাথেই কাস্টম ডোমেইন ম্যাপিং শুরু করতে পারবেন।
+بۇ دېگەنلىك، Ultimate Multisite ئورنىتىش يېتەكچىسى تورىڭىزنى تەڭشەشنى تاماملىغاندىن كېيىن، خاس دائىرىنى دەرھال خەرىتىلەشنى باشلىيالايسىز.
 
-মনে রাখবেন, Ultimate Multisite-এ ডোমেইন ম্যাপিং বাধ্যতামূলক নয়। আপনার কাছে ওয়ার্ডপ্রেস মাল্টিসাইট নেটিভ ডোমেইন ম্যাপিং ফাংশন বা অন্য যেকোনো ডোমেইন ম্যাপিং সমাধান ব্যবহার করার বিকল্প রয়েছে।
+دىققەت قىلىڭكى، Ultimate Multisite دىكى دائىرە خەرىتىلەش مەجبۇرىي ئەمەس. سىزدە WordPress Multisite نىڭ ئۆزىدىكى دائىرە خەرىتىلەش ئىقتىدارىنى ياكى باشقا ھەرقانداق دائىرە خەرىتىلەش چارىسىنى ئىشلىتىش تاللىشى بار.
 
-Ultimate Multisite domenini başqa domen yönlendirme çözümlerine yer açmak için devre dışı bırakmanız gerekirse, bunu **Ultimate Multisite > Settings > Domain Mapping** altında yapabilirsiniz.
+ئەگەر باشقا دائىرە خەرىتىلەش چارىلىرىغا يول بېرىش ئۈچۈن Ultimate Multisite دائىرە خەرىتىلەشنى چەكلەشكە توغرا كەلسە، بۇ ئىقتىدارنى **Ultimate Multisite > تەڭشەكلەر > دائىرە خەرىتىلەش** ئاستىدا چەكلىيەلەيسىز.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![باشقۇرغۇچى قايتا يۆنەلدۈرۈش، خەرىتىلەش ئۇچۇرى ۋە DNS تاللاشلىرى كۆرسىتىلگەن دائىرە خەرىتىلەش تەڭشەك بېتى](/img/config/domain-mapping-settings.png)
 
-Bu seçeneğin hemen altında ayrıca **Force Admin Redirect** (Yönetici Yönlendirmesini Zorla) seçeneğini görebilirsiniz. Bu seçenek, müşterilerinizin yönetici paneline kendi özel alan adları ve alt alan adları üzerinden erişip erişemeyeceğini kontrol etmenize olanak tanır.
+بۇ تاللاشنىڭ دەل ئاستىدا، **باشقۇرغۇچىنى مەجبۇرىي قايتا يۆنەلدۈرۈش** تاللىشىنىمۇ كۆرەلەيسىز. بۇ تاللاش ئارقىلىق خېرىدارلىرىڭىزنىڭ ئۆزلىرىنىڭ خاس دائىرىسى ۋە تارماق دائىرىسىنىڭ ھەر ئىككىسىدە admin Dashboard غا كىرەلەيدىغان-كىرەلمەيدىغانلىقىنى ياكى پەقەت بىرىدەلا كىرەلەيدىغانلىقىنى كونترول قىلالايسىز.
 
-Eğer **Force redirect to mapped domain** (Haritalanmış domaine zorla yönlendir) seçeneğini seçerseniz, müşterileriniz yalnızca özel alan adları üzerinden yönetici paneline erişebilirler.
+ئەگەر **خەرىتىلەنگەن دائىرىگە مەجبۇرىي قايتا يۆنەلدۈرۈش** نى تاللىسىڭىز، خېرىدارلىرىڭىز پەقەت ئۆزلىرىنىڭ خاس دائىرىلىرىدە admin Dashboard غا كىرەلەيدۇ.
 
-**Force redirect to network domain** (Ağ alan adına zorla yönlendir) seçeneği ise tam tersini yapar; müşterilerin kendi özel alan adlarından giriş yapmaya çalışsalar bile yalnızca alt alan adları üzerinden panellerine erişmelerine izin verilir.
+**تور دائىرىسىگە مەجبۇرىي قايتا يۆنەلدۈرۈش** تاللىشى بولسا دەل بۇنىڭ ئەكسىچە ئىشلەيدۇ - خېرىدارلىرىڭىز خاس دائىرىلىرىدە كىرىشكە ئۇرۇنغان تەقدىردىمۇ، پەقەت ئۆزلىرىنىڭ تارماق دائىرىسىدە Dashboard لىرىغا كىرىشكە رۇخسەت قىلىنىدۇ.
 
-Ve **Allow access to the admin by both mapped domain domain and network domain** (Hem haritalanmış alan adı hem de ağ alanı tarafından yöneticiye erişime izin ver) seçeneği, müşterilerin hem alt alan adından hem de özel alan adından yönetici panellerine erişmelerine olanak tanır.
+**باشقۇرغۇچىغا خەرىتىلەنگەن دائىرە ۋە تور دائىرىسىنىڭ ھەر ئىككىسى ئارقىلىق كىرىشكە رۇخسەت قىلىش** تاللىشى بولسا ئۇلارنىڭ تارماق دائىرە ۋە خاس دائىرىنىڭ ھەر ئىككىسىدە admin Dashboard لىرىغا كىرىشىگە رۇخسەت قىلىدۇ.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![ئۈچ قايتا يۆنەلدۈرۈش تاللىشى كۆرسىتىلگەن ئېچىلغان باشقۇرغۇچى قايتا يۆنەلدۈرۈش تىزىملىكى](/img/config/domain-mapping-redirect-options.png)
 
-Özel bir alanı haritalamanın iki yolu vardır. Birincisi, ağ yöneticinizdeki ana yönetici (super admin) olarak alan adını haritalamaktır ve ikincisi ise hesap sayfasındaki alt site yöneticisi paneli üzerinden yapılır.
+خاس دائىرىنى خەرىتىلەشنىڭ ئىككى خىل ئۇسۇلى بار. بىرىنچىسى، super admin سۈپىتىدە تور admin Dashboard دىن دائىرە نامىنى خەرىتىلەش؛ ئىككىنچىسى بولسا Account بېتى ئاستىدىكى تارماق تور بېكەت admin Dashboard ئارقىلىق.
 
-Ancak özel alanı ağınızdaki bir alt siteye haritalamaya başlamadan önce, alan adının **DNS ayarlarının** doğru yapılandırıldığından emin olmanız gerekir.
+ئەمما تورىڭىزدىكى تارماق تور بېكەتلەرنىڭ بىرىگە خاس دائىرىنى خەرىتىلەشنى باشلاشتىن بۇرۇن، دائىرە نامىنىڭ **DNS تەڭشەكلىرى** توغرا سەپلەنگەنلىكىگە كاپالەتلىك قىلىشىڭىز كېرەك.
 
 ###
 
-### Alan adı DNS ayarlarının doğru yapılandırıldığından emin olmak
+### دائىرە DNS تەڭشەكلىرىنىڭ توغرا سەپلەنگەنلىكىگە كاپالەتلىك قىلىش {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Mapping işləməsi üçün planlaşdırdığınız domeninizin sizin şəbəkənizin IP ünvanına yönləndirildiyindən əmin olmalısınız. Qeyd etmək lazımdır ki, sizə Network IP ünvanı - Ultimate Multisite-ın quraşdırıldığı domenindir - istədiyiniz xüsusi domen (custom domain) üçün IP ünvanı deyil. Müəyyən bir domen üçün IP ünvanını axtarmaq üçün [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) kimi yerlərə getməyinizi tövsiyə edirik, məsələn.
+خەرىتىلەش ئىشلەش ئۈچۈن، خەرىتىلەشنى پىلانلاۋاتقان دائىرىنىڭ تورىڭىزنىڭ IP ئادرېسىغا كۆرسىتىلگەنلىكىگە كاپالەتلىك قىلىشىڭىز كېرەك. دىققەت قىلىڭكى، سىزگە تور IP ئادرېسى كېرەك - يەنى Ultimate Multisite ئورنىتىلغان دائىرىنىڭ IP ئادرېسى - خەرىتىلىمەكچى بولغان خاس دائىرىنىڭ IP ئادرېسى ئەمەس. مەلۇم بىر دائىرىنىڭ IP ئادرېسىنى ئىزدەش ئۈچۈن، مەسىلەن [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) غا بېرىشنى تەۋسىيە قىلىمىز.
 
-Domeni düzgün mappar etmək üçün **DNS** konfiqurasiyanızda həmin **IP ünvanına** yönəlmiş bir **A RECORD** əlavə etməlisiniz. DNS idarəçiliyi fərqli domen qeydiyyatçıları arasında çox dəyişdirilir, lakin " _Creating A Record on XXXX_ " (XXX-iniz domen qeydiyyatçınızdır, məsələn: " _Creating A Record on_ _GoDaddy_ ") axtarsanız bu barədə internetdə çox təlimat tapacaqsınız.
+دائىرىنى توغرا خەرىتىلەش ئۈچۈن، **DNS** سەپلىمىسىڭىزگە شۇ **IP ئادرېس** قا كۆرسىتىدىغان **A RECORD** قوشۇشىڭىز كېرەك. DNS باشقۇرۇش ئوخشىمىغان دائىرە تىزىملىگۈچىلەر ئارىسىدا زور دەرىجىدە پەرقلىنىدۇ، ئەمما توردا بۇنى چۈشەندۈرىدىغان نۇرغۇن دەرسلىكلەر بار؛ ئەگەر XXXX سىزنىڭ دائىرە تىزىملىگۈچىڭىز بولسا، " _XXXX دا A Record قۇرۇش_ " دەپ ئىزدىسىڭىز بولىدۇ (مەسىلەن: " _GoDaddy دا A Record قۇرۇش_ ").
 
-Əgər bunu düzgün işlətməkdə çətinlik çəkirsinizsə, **domen qeydiyyatçınızın dəstək xidməti ilə əlaqə saxlayın** və onlar bu hissədə sizə kömək edə bilərlər.
+ئەگەر بۇنى ئىشلەشتە قىيىنچىلىققا يولۇقسىڭىز، **دائىرە تىزىملىگۈچىڭىزنىڭ قوللاش مۇلازىمىتى بىلەن ئالاقىلىشىڭ**، ئۇلار بۇ بۆلەكتە سىزگە ياردەم بېرەلەيدۇ.
 
-Əgər müştərilərin öz domenlərini mappar etməsinə icazə verməyi planlaşdırırsınızsa, onlar bu hissənin işini özləri görməlidirlər. Əgər A Record yaratmaqda çətinlik çəkdiklərini görsəniz, onları qeydiyyatçılarının dəstək sisteminə yönləndirin.
+ئەگەر خېرىدارلىرىڭىزنىڭ ئۆز دائىرىلىرىنى خەرىتىلىشىگە رۇخسەت قىلىشنى پىلانلىسىڭىز، ئۇلار بۇ بۆلەكتىكى خىزمەتنى ئۆزلىرى قىلىشى كېرەك. ئەگەر ئۇلار A Record قۇرالماي قالسا، ئۇلارنى ئۆزلىرىنىڭ تىزىملىگۈچى قوللاش سىستېمىسىغا يۆنەلدۈرۈڭ.
 
-### Super Admin kimi xüsusi domen adını mappar etmək
+### Super Admin سۈپىتىدە خاس دائىرە نامىنى خەرىتىلەش {#mapping-custom-domain-name-as-super-admin}
 
-Şəbəkənizdə super admin olaraq daxil olduqda, **Ultimate Multisite > Domains** bölməsinə keçərək xüsusi domen adlarını asanlıqla əlavə edib idarə edə bilərsiniz.
+تورىڭىزدا super admin سۈپىتىدە كىرگەن بولسىڭىز، **Ultimate Multisite > دائىرىلەر** ئاستىغا بېرىپ خاس دائىرە ناملىرىنى ئاسانلا قوشۇپ ۋە باشقۇرالايسىز.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite دىكى دائىرىلەر تىزىملىك بېتى](/img/admin/domains-list.png)
 
-این صفحه زیر، می‌تونید روی دکمه **Add Domain** در بالا کلیک کنید و یک پنجره مودال باز می‌شود که در آن می‌توانید **custom domain name** (نام دامنه سفارشی)، **the subsite** (زیرسایت) مورد نظر خود را برای اعمال نام دامنه سفارشی تنظیم و پر کنید، و تصمیم بگیرید که آیا می‌خواهید آن را به عنوان **primary domain** (دامنه اصلی) تنظیم کنید یا نه (توجه داشته باشید که می‌توانید **multiple domain names to one subsite** (چند نام دامنه را به یک زیرسایت نگاشت کنید)).
+بۇ بەتتە، ئۈستىدىكى **دائىرە قوشۇش** كۇنۇپكىسىنى چېكىسىز، بۇ خاس دائىرە نامىنى قوللانماقچى بولغان **خاس دائىرە نامى**، **تارماق تور بېكەت** نى بەلگىلەپ تولدۇرالايدىغان ۋە ئۇنى **ئاساسىي دائىرە** نامى قىلىپ بەلگىلەش-بەلگىلىمەسلىكنى قارار قىلالايدىغان modal كۆزنەكنى ئاچىدۇ (دىققەت قىلىڭكى، **بىر تارماق تور بېكەتكە بىر نەچچە دائىرە نامىنى خەرىتىلىيەلەيسىز**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![دائىرە نامى، تور بېكەت تاللىغۇچ ۋە ئاساسىي دائىرە ئالماشتۇرغۇچىسى بار دائىرە قوشۇش modal كۆزنىكى](/img/admin/domain-add-modal.png)
 
-بعد از وارد کردن تمام اطلاعات، می‌توانید روی دکمه **Add Existing Domain** در پایین کلیک کنید.
+بارلىق ئۇچۇرلارنى كىرگۈزگەندىن كېيىن، ئاستىدىكى **مەۋجۇت دائىرىنى قوشۇش** كۇنۇپكىسىنى چەكسىڭىز بولىدۇ.
 
-این کار فرآیند تأیید و دریافت اطلاعات DNS دامنه سفارشی را شروع می‌کند. همچنین یک لاگ در پایین صفحه خواهید دید تا بتوانید مراحل انجام شده را دنبال کنید. این فرآیند ممکن است چند دقیقه طول بکشد تا تمام شود.
+بۇ خاس دائىرىنىڭ DNS ئۇچۇرلىرىنى دەلىللەش ۋە ئېلىش جەريانىنى باشلايدۇ. سىز يەنە بەتنىڭ ئاستىدا، جەرياننىڭ قانداق ئۆتۈۋاتقانلىقىنى ئەگىشىپ كۆرۈش ئۈچۈن بىر خاتىرە كۆرىسىز. بۇ جەريان تاماملىنىش ئۈچۈن بىر نەچچە مىنۇت ۋاقىت كېتىشى مۇمكىن.
 
-Ultimate Multisite v2.13.0 به طور خودکار وقتی یک سایت جدید روی هاستی که باید به عنوان دامنه مخصوص هر سایت (per-site domain) در نظر گرفته شود ایجاد می‌شود، رکورد دامنه داخلی را هم می‌سازد. اگر هاست دامنه اصلی شبکه باشد، یا یکی از دامنه‌های پایه فرم پرداخت مشترک تنظیم شده در فیلد **Site URL** باشد، رکورد نگاشت‌شده خودکار دامنه نهایی (mapped-domain record) رد می‌شود تا دامنه پایه مشترک برای هر سایتی که از آن استفاده می‌کند، در دسترس بماند.
+Ultimate Multisite v2.13.0 يېڭى تور بېكەت ھەر تور بېكەتكە خاس دومېن دەپ قارىلىشى كېرەك بولغان host دا قۇرۇلغاندا، ئىچكى دومېن خاتىرىسىنىمۇ ئاپتوماتىك قۇرىدۇ. ئەگەر host تورنىڭ ئاساسىي دومېنى بولسا، ياكى **تور بېكەت URL** بۆلىكىدە تەڭشەلگەن ئورتاق checkout-form ئاساسىي دومېنلىرىنىڭ بىرى بولسا، ئاپتوماتىك mapped-domain خاتىرىسى ئاتلاپ ئۆتۈلىدۇ، شۇنداق قىلىپ ئورتاق ئاساسىي دومېن ئۇنى ئىشلىتىدىغان ھەر بىر تور بېكەتكە ئىشلىتىشكە بولىدىغان ھالەتتە قالىدۇ.
 
-وضعیت **Stage** یا مرحله از **Checking DNS** به **Ready** تغییر خواهد کرد اگر همه چیز به درستی تنظیم شده باشد.
+خېرىدار Domain Seller v1.3.0 ياكى ئۇنىڭدىن يېڭى نەشرى ئارقىلىق يېڭى دومېن تىزىملاتقاندا، Ultimate Multisite كۆڭۈلدىكى ھالەتتە تىزىملاتقان دومېننى خېرىدارنىڭ تور تور بېكىتىگە ئاپتوماتىك خەرىتىلەيدۇ. مۇۋەپپەقىيەتلىك تىزىملاشتىن كېيىن، باشقۇرغۇچىلار ئاساسىي دومېن بەلگىسى، ئاكتىپلاش ھالىتى ياكى SSL بىر تەرەپ قىلىش قاتارلىق تاللانمىلارنى تەڭشىمەكچى بولمىسىلا، ئايرىم mapped-domain خاتىرىسى قوشۇشى ئەمدى لازىم ئەمەس.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+**باسقۇچ** ياكى ھالەت، ھەممە نەرسە توغرا تەڭشەلگەن بولسا، **DNS تەكشۈرۈلۈۋاتىدۇ** دىن **تەييار** غا ئۆزگىرىشى كېرەك.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- ئېكران كۆرۈنۈشى يوق: دومېن تىزىملىكىدە DNS تەكشۈرۈلۈۋاتىدۇ باسقۇچىنى كۆرسىتىدىغان دومېن قۇرى -->
 
-اگر روی نام دامنه کلیک کنید، می‌توانید گزینه‌هایی را در داخل آن ببینید. بیایید نگاه سریعی به آن‌ها بیندازیم:
+<!-- ئېكران كۆرۈنۈشى يوق: يېشىل ھالەت كۆرسەتكۈچى بىلەن تەييار باسقۇچىنى كۆرسىتىدىغان دومېن قۇرى -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+ئەگەر دومېن نامىنى چەكسىڭىز، ئۇنىڭ ئىچىدىكى بەزى تاللانمىلارنى كۆرەلەيسىز. ئۇلارغا تېزلا قاراپ چىقايلى:
 
-**مرحله (Stage):** این مرحله‌ای است که دامنه در آن قرار دارد. وقتی برای اولین بار دامنه را اضافه می‌کنید، احتمالاً روی مرحله **بررسی DNS (Checking DNS)** خواهد بود. این فرآیند بررسی می‌کند که ورودی‌های DNS درست هستند و تأیید می‌کند. سپس، دامنه به مرحله **بررسی SSL (Checking SSL)** منتقل می‌شود. Ultimate Multisite بررسی می‌کند که آیا دامنه دارای SSL است یا خیر و دامنه شما را به عنوان **آماده (Ready)** یا **آماده بدون SSL (Ready (without SSL))** دسته‌بندی می‌کند.
+![باسقۇچ، تور بېكەت، ئاكتىپ، ئاساسىي ۋە SSL ئالماشتۇرغۇچلىرى بار دومېن تەپسىلات بېتى](/img/admin/domain-edit.png)
 
-**سایت (Site):** زیردامنه مرتبط با این دامنه است. دامنه‌ای که نگاشت می‌شود، محتوای این سایت خاص را نشان می‌دهد.
+**باسقۇچ:** بۇ دومېن تۇرۇۋاتقان باسقۇچ. دومېننى تۇنجى قېتىم قوشقاندا، ئۇ بەلكىم **DNS تەكشۈرۈلۈۋاتىدۇ** باسقۇچىدا بولىدۇ. جەريان DNS كىرگۈزۈلمىلىرىنى تەكشۈرۈپ، ئۇلارنىڭ توغرا ئىكەنلىكىنى جەزملەشتۈرىدۇ. ئاندىن دومېن **SSL تەكشۈرۈلۈۋاتىدۇ** باسقۇچىغا قويۇلىدۇ. Ultimate Multisite دومېندا SSL بار-يوقلۇقىنى تەكشۈرۈپ، دومېنىڭىزنى **تەييار** ياكى **تەييار (SSL يوق)** دەپ تۈرگە ئايرىيدۇ.
 
-**فعال (Active):** می‌توانید این گزینه را روشن یا خاموش کنید تا دامنه فعال یا غیرفعال شود.
+**تور بېكەت:** بۇ دومېن بىلەن باغلانغان تارماق دومېن. خەرىتىلەنگەن دومېن مۇشۇ كونكرېت تور بېكەتنىڭ مەزمۇنىنى كۆرسىتىدۇ.
 
-**آیا دامنه اصلی است؟ (Is Primary Domain?):** مشتریان می‌توانند برای هر سایت از چندین دامنه نگاشت داشته باشند. از این گزینه استفاده کنید تا انتخاب کنید که آیا این دامنه برای آن سایت خاص، دامنه اصلی است یا خیر.
+**ئاكتىپ:** بۇ تاللانمىنى ئېچىپ ياكى تاقاپ، دومېننى ئاكتىپلىيالايسىز ياكى ئاكتىپسىزلاندۇرالايسىز.
 
-**امن است؟ (Is Secure?):** اگرچه Ultimate Multisite قبل از فعال کردن آن بررسی می‌کند که آیا دامنه دارای گواهی SSL است یا نه، شما می‌توانید به صورت دستی انتخاب کنید که دامنه را با یا بدون گواهی SSL بارگذاری کنید. توجه داشته باشید که اگر وب‌سایت فاقد گواهی SSL باشد و سعی کنید آن را مجبور به بارگذاری با SSL کنید، ممکن است خطاهایی دریافت کنید.
+**ئاساسىي دومېنمۇ؟:** خېرىدارلىرىڭىز ھەر بىر تور بېكەت ئۈچۈن بىردىن كۆپ خەرىتىلەنگەن دومېنغا ئىگە بولالايدۇ. بۇنىڭ شۇ كونكرېت تور بېكەتنىڭ ئاساسىي دومېنى ياكى ئەمەسلىكىنى تاللاش ئۈچۈن بۇ تاللانمىنى ئىشلىتىڭ.
 
-### نگاشت نام دامنه سفارشی به عنوان کاربر زیرساخت سایت (Mapping custom domain name as Subsite user)
+**بىخەتەرمۇ؟:** Ultimate Multisite دومېننى قوزغىتىشتىن بۇرۇن ئۇنىڭدا SSL گۇۋاھنامىسى بار-يوقلۇقىنى تەكشۈرسىمۇ، دومېننى SSL گۇۋاھنامىسى بىلەن ياكى ئۇنىڭسىز يۈكلەشنى قولدا تاللىيالايسىز. دىققەت قىلىڭكى، ئەگەر تور بېكەتتە SSL گۇۋاھنامىسى بولمىسا ۋە ئۇنى SSL بىلەن مەجبۇرىي يۈكلىمەكچى بولسىڭىز، خاتالىقلارنى بېرىشى مۇمكىن.
 
-مدیران زیرساخت سایت همچنین می‌توانند نام‌های دامنه سفارشی خود را از داشبورد مدیریت زیرساخت سایتشان نگاشت کنند.
+### تارماق تور بېكەت ئىشلەتكۈچىسى سۈپىتىدە خاس دومېن نامىنى خەرىتىلەش {#mapping-custom-domain-name-as-subsite-user}
 
-ابتدا، باید مطمئن شوید که این گزینه را در تنظیمات **Domain mapping** فعال کرده‌اید. تصویر زیر را ببینید.
+تارماق تور بېكەت باشقۇرغۇچىلىرىمۇ ئۆز تارماق تور بېكەت باشقۇرۇش Dashboardىدىن خاس دومېن ناملىرىنى خەرىتىلىيەلەيدۇ.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+ئالدى بىلەن، **دومېن خەرىتىلەش** تەڭشەكلىرى ئاستىدا بۇ تاللانمىنى قوزغىتىشىڭىزغا كاپالەتلىك قىلىشىڭىز كېرەك. تۆۋەندىكى ئېكران كۆرۈنۈشىنى كۆرۈڭ.
 
-شما همچنین می‌توانید این گزینه را در سطح **Plan** یا گزینه‌های محصول در بخش **Ultimate Multisite > Products** تنظیم یا پیکربندی کنید.
+<!-- ئېكران كۆرۈنۈشى يوق: Customer DNS Management ئالماشتۇرغۇچى ئارقىلىق تارماق تور بېكەت ئىشلەتكۈچىلىرىنىڭ دومېن خەرىتىلىشىگە يول قويىدىغان دومېن خەرىتىلەش تەڭشەكلىرى -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+بۇ تاللانمىنى **پىلان** دەرىجىسى ياكى **Ultimate Multisite > Products** دىكى مەھسۇلات تاللانمىلىرى ئاستىدامۇ بەلگىلىيەلەيسىز ياكى تەڭشىيەلەيسىز.
 
-هذه seçeneklerden herhangi biri etkinleştirildiğinde ve سابسايت کاربر özel دامنه (custom domain names) eşleştirmesine izin veriliyorsa، سابسايت کاربر **Account** sayfası altında **Domains** adlı یک metabox (متابوکس) را خواهد دید.
+![مەھسۇلات تەھرىرلەش بېتىدىكى خاس دومېنلار بۆلىكى](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+بۇ تاللانمىلارنىڭ خالىغان بىرى قوزغىتىلغاندا ۋە تارماق تور بېكەت ئىشلەتكۈچىسىگە خاس دومېن ناملىرىنى خەرىتىلەشكە رۇخسەت قىلىنغاندا، تارماق تور بېكەت ئىشلەتكۈچىسى **Account** بېتى ئاستىدا **دومېنلار** دەپ ئاتىلىدىغان metabox نى كۆرۈشى كېرەك.
 
-کاربر می‌تواند روی دکمه **Add Domain** کلیک کند و این کار یک پنجره مودال (modal window) با دستورالعمل‌هایی را باز خواهد کرد.
+<!-- ئېكران كۆرۈنۈشى يوق: دومېن قوشۇش كۇنۇپكىسى بار تارماق تور بېكەت Account بېتىدىكى دومېنلار metaboxى -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+ئىشلەتكۈچى **دومېن قوشۇش** كۇنۇپكىسىنى چەكسە، بەزى كۆرسەتمىلەر بار modal كۆزنەك ئېچىلىدۇ.
 
-سپس کاربر می‌تواند روی **Next Step** کلیک کند و برای اضافه کردن نام دامنه سفارشی ادامه دهد. آن‌ها همچنین می‌توانند انتخاب کنند که آیا این دامنه اصلی (primary domain) خواهد بود یا خیر.
+<!-- ئېكران كۆرۈنۈشى يوق: تارماق تور بېكەت ئىشلەتكۈچىلىرى ئۈچۈن DNS A-record كۆرسەتمىلىرىنى كۆرسىتىدىغان دومېن قوشۇش modalى -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+ئاندىن ئىشلەتكۈچى **كېيىنكى قەدەم** نى چېكىپ، خاس دومېن نامىنى قوشۇشنى داۋاملاشتۇرالايدۇ. ئۇلار بۇنىڭ ئاساسىي دومېن بولۇش-بولماسلىقىنىمۇ تاللىيالايدۇ.
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+<!-- ئېكران كۆرۈنۈشى يوق: خاس دومېن نامى بۆلىكى ۋە ئاساسىي دومېن ئالماشتۇرغۇچىسى بار دومېن قوشۇش جەدۋىلى -->
 
-روی **Add Domain** کلیک کردن، فرآیند تأیید و دریافت اطلاعات DNS دامنه سفارشی را آغاز می‌کند.
+<!-- ئېكران كۆرۈنۈشى يوق: DNS دەلىللەشنى قوزغىتىدىغان دومېن قوشۇش جەزملەشتۈرۈش قەدىمى -->
 
-### درباره Domain Syncing (همگام‌سازی دامنه)
+**دومېن قوشۇش** نى چېكىش خاس دومېننىڭ DNS ئۇچۇرلىرىنى دەلىللەش ۋە ئېلىش جەريانىنى باشلايدۇ.
 
-Domain Syncing یک فرآیند است که در آن Ultimate Multisite نام دامنه سفارشی شما را به عنوان یک دامنه افزونه (add-on domain) در حساب هاستینگ خود اضافه می‌کند **تا نگاشت دامنه کار کند**.
+### دومېن ماسقەدەملەش ھەققىدە {#about-domain-syncing}
 
-اگر ارائه‌دهنده هاستینگ شما با قابلیت Domain Mapping در Ultimate Multisite ادغام شده باشد، همگام‌سازی دامنه به صورت خودکار اتفاق می‌افتد. در حال حاضر، این ارائه‌دهندگان هاستینگ عبارتند از _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ و _Cpanel._
+دومېن ماسقەدەملەش — Ultimate Multisite نىڭ خاس دومېن نامىنى hosting ھېساباتىڭىزغا **دومېن خەرىتىلەش ئىشلىشى ئۈچۈن** قوشۇمچە دومېن قىلىپ قوشىدىغان جەريان.
 
-هنگامی که یک ادغام با ارائه‌دهنده هاست فعال باشد، Ultimate Multisite همچنین می‌تواند وظیفه ایجاد DNS یا زیردامنه سمت ارائه‌دهنده را برای سایت‌های جدید ایجاد شده در صف (enqueue) کند. اگر هیچ ادغام به دنبال آن وظیفه گوش ندهد، این کار پس‌زمینه (background job) برای جلوگیری از ورودی‌های بی‌اثر در صف نادیده گرفته می‌شود. بررسی‌های DNS و SSL برای دامنه‌های نگاشت شده همچنان از طریق فرآیند مرحله دامنه عادی اجرا می‌شوند.
+ئەگەر hosting تەمىنلىگۈچىڭىزنىڭ Ultimate Multisite دومېن خەرىتىلەش ئىقتىدارى بىلەن بىرلەشتۈرۈلۈشى بولسا، دومېن ماسقەدەملەش ئاپتوماتىك يۈز بېرىدۇ. نۆۋەتتە، بۇ hosting تەمىنلىگۈچىلەر _Runcloud، Closte، WP Engine، Gridpane، WPMU Dev، Cloudways،_ ۋە _Cpanel._
 
-Ultimate Multisite ayarlarına girip **Integration** (Entegrasyonlar) sekmesinde bu entegrasyonu etkinleştirmeniz gerekecek.
+host-provider بىرلەشتۈرۈلۈشى ئاكتىپ بولغاندا، Ultimate Multisite يېڭى قۇرۇلغان تور بېكەتلەر ئۈچۈن تەمىنلىگۈچى تەرەپتىكى DNS ياكى تارماق دومېن قۇرۇش ۋەزىپىسىنىمۇ قاتارغا قوشالايدۇ. ئەگەر ھېچقانداق بىرلەشتۈرۈلۈش ئۇ ۋەزىپىنى ئاڭلاۋاتمىسا، ئارقا كۆرۈنۈش خىزمىتى ھېچ ئىش قىلمايدىغان قاتار كىرگۈزۈلمىلىرىدىن ساقلىنىش ئۈچۈن ئاتلاپ ئۆتۈلىدۇ. خەرىتىلەنگەن دومېنلارنىڭ DNS ۋە SSL تەكشۈرۈشلىرى نورمال دومېن-باسقۇچ جەريانى ئارقىلىق داۋاملىق ئىجرا قىلىنىدۇ.
 
-![Ultimate Multisite ayarlarındaki Entegrasyonlar sekmesini gösteren resim](/img/config/integrations-tab.png)
+بۇ بىرلەشتۈرۈلۈشنى Ultimate Multisite تەڭشەكلىرىدە **بىرلەشتۈرۈش** بەتكۈچى ئاستىدا ئاكتىپلىشىڭىز كېرەك.
 
-<!-- Screenshot unavailable: Entegrasyonlar ayarları sekmesindeki hosting sağlayıcı yapılandırma bağlantıları resmi -->
+![hosting تەمىنلىگۈچىلەرنى كۆرسىتىدىغان Ultimate Multisite تەڭشەكلىرىدىكى بىرلەشتۈرۈشلەر بەتكۈچى](/img/config/integrations-tab.png)
 
-_Not: Eğer hosting sağlayıcınız yukarıda adı geçen sağlayıcılardan biri değilse, **alan adını manuel olarak senkronize etmeniz veya hosting hesabınıza eklemeniz gerekecek**._
+<!-- ئېكران كۆرۈنۈشى يوق: بىرلەشتۈرۈشلەر تەڭشەك بەتكۈچىدىكى hosting تەمىنلىگۈچى تەڭشەش ئۇلانمىلىرى -->
+
+_دىققەت قىلىڭكى، ئەگەر hosting تەمىنلىگۈچىڭىز يۇقىرىدا تىلغا ئېلىنغان تەمىنلىگۈچىلەرنىڭ بىرى بولمىسا، **دومېن نامىنى قولدا ماسقەدەملەش ياكى قوشۇش** كېرەك بولىدۇ._

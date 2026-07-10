@@ -3,7 +3,7 @@ title: အစီအစဉ်များအတွက် မျှဝေနို
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Plan များအတွက် မျှဝေနိုင်သော Link များကို စီမံခန့်ခွဲခြင်း
+# Plan များအတွက် မျှဝေနိုင်သော Link များကို စီမံခန့်ခွဲခြင်း {#managing-shareable-links-for-plans}
 
 Ultimate Multisite က သင့် client များထံ plan link များကို တိုက်ရိုက်မျှဝေနိုင်တဲ့ ရွေးချယ်မှုကို ပေးထားပါတယ်။ ဒီလိုလုပ်ဖို့အတွက် သင့် plan တစ်ခုခုရဲ့ edit page ကိုသွားပြီး _Click to copy the Shareable Link_ ခလုတ်ကို နှိပ်ပါ။
 

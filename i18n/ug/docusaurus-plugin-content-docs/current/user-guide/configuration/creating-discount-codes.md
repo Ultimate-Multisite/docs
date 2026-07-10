@@ -3,13 +3,13 @@ title: Қаррамақ кодлар ясау
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Discount Code Oluşturma (v2)
+# Discount Code Oluşturma (v2) {#creating-discount-codes-v2}
 
 _**ÖNEMLİ QAYDALI: Bu maqale Ultimate Multisite versiyası 2.x haqida ma'lumot beriladi.**_
 
 Ultimate Multisite yordamida siz mijozlaringizga obunalar ularni chegirmali olishlari uchun chegirma kodlari yaratishingiz mumkin. Va ularni yaratish juda oson!
 
-## Chegirma Kodlarini Yaratish va Tahrirlash
+## Chegirma Kodlarini Yaratish va Tahrirlash {#creating-and-editing-discount-codes}
 
 Chegirma kodini yaratish yoki tahrirlash uchun **Ultimate Multisite > Discount Codes** ga kiring.
 
@@ -87,7 +87,7 @@ Kupon kodu artık listenizde olacak ve oradan onu **düzenlemek veya silmek** i�
 
 ###
 
-### URL Parametrelerini Kullanma:
+### URL Parametrelerini Kullanma: {#using-url-parameters}
 
 Fiyat tablolarınızı özelleştirmek veya web siteniz için güzel bir kupon kodu sayfası oluşturmak ve indirim kodunu ödeme formunuza otomatik olarak uygulamak isterseniz, bunu URL parametreleri aracılığıyla yapabilirsiniz.
 

@@ -1,98 +1,98 @@
 ---
-title: Zapier Integration
+title: Zapier ውህደት
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisiteን ከZapier ጋር ማዋሃድ
+# Ultimate Multisiteን ከZapier ጋር ማዋሃድ {#integrating-ultimate-multisite-with-zapier}
 
-በአንድ ጽሑፋችን ውስጥ ስለ [Webhooks](webhooks.md) ተወያይተናል እና እነዚህ እንዴት ከሶስተኛ ወገን መተግበሪያዎች ጋር ለመዋሃድ ጥቅም ላይ ሊውሉ እንደሚችሉ ተናግረናል።
+በአንዱ ጽሑፎች ውስጥ [Webhooks](webhooks.md) እና ከ3ኛ ወገን መተግበሪያዎች ጋር ለመዋሃድ እንዴት መጠቀም እንደሚቻል ተወያይተናል።
 
-Webhooks መጠቀም ትንሽ ውስብስብ ነው ምክንያቱም ለኮዲንግ የላቀ እውቀት እና የሚላኩትን መረጃ (payloads) መያዝ ይጠይቃል። **Zapier**ን መጠቀም ግን ይህንን ችግር ለመፍታት የሚያስችል መንገድ ነው።
+webhooks መጠቀም ትንሽ ውስብስብ ነው፣ ምክንያቱም በኮድ መጻፍ እና payloads መቀበል ላይ የላቀ እውቀት ይፈልጋል። **Zapier** መጠቀም ይህን ለመሻገር የሚያስችልዎ መንገድ ነው።
 
-Zapier ከ5000 በላይ መተግበሪያዎች ጋር መዋሃድ ስላለው፣ በተለያዩ መተግበሪያዎች መካከል ያለውን ግንኙነት ቀላል ያደርገዋል።
+Zapier ከ5000+ በላይ መተግበሪያዎች ጋር ውህደት አለው፣ ይህም በተለያዩ መተግበሪያዎች መካከል ግንኙነትን ቀላል ያደርጋል።
 
-በኔትዎ ላይ ክስተቶች ሲከሰቱ የሚነሳባቸውን **Triggers** መፍጠር ይችላሉ (ለምሳሌ አካውንት መፈጠር እና account_create ክስተትን ማስነሳት) ወይም ከውጪ ክስተቶች ጋር በመገናኘት በኔትዎ ላይ **Actions** መፍጠር ይችላሉ (ለምሳሌ በአልቲሜት መልቲሳይት ኔትዎ ውስጥ አዲስ የአባልነት አካውንት መፍጠር)።
+በአውታረ መረብዎ ላይ ክስተቶች ሲከሰቱ የሚነሱ **Triggers** መፍጠር ይችላሉ (ለምሳሌ አካውንት ሲፈጠር እና account_create ክስተትን ሲነሳ) ወይም በውጫዊ ክስተቶች ምላሽ በአውታረ መረብዎ ላይ **Actions** ማመንጨት ይችላሉ (ለምሳሌ በUltimate Multisite አውታረ መረብዎ ውስጥ አዲስ የአካውንት አባልነት መፍጠር)።
 
-ይህም የሚቻለው **Ultimate Multisite Zapier** ትሪገሮች እና አክሽኖች በ [REST API](https://developer.ultimatemultisite.com/api/docs/) ስለሚንቀሳቀሱ ነው።
+ይህ የሚቻለው **Ultimate Multisite Zapier's triggers** እና actions በ[REST API](https://developer.ultimatemultisite.com/api/docs/) ስለሚሰሩ ነው።
 
-## እንዴት መጀመር እንደሚቻል
+## እንዴት መጀመር {#how-to-start}
 
-በመጀመሪያ፣ በZapier መተግበሪያ ዝርዝር ውስጥ Ultimate Multisiteን ይፈልጉ። አማራጭ ደግሞ [ይህንን ሊንክ](https://zapier.com/apps/wp-ultimo/integrations) መጫን ይችላሉ።
+መጀመሪያ፣ በZapier መተግበሪያ ዝርዝር ውስጥ Ultimate Multisiteን ይፈልጉ። በአማራጭ፣ [ይህን አገናኝ](https://zapier.com/apps/wp-ultimo/integrations) መጫን ይችላሉ።
 
-ወደ ዳሽቦርዱ በመሄድ በግራ በኩል ባለው ሳባ ላይ ያለውን **+** **Create Zap** ቁልፍ በመጫን አዲስ Zap ለመስራት ይዘጋጁ።
+ወደ dashboardዎ ይሂዱ እና አዲስ Zap ለማዋቀር በግራ የጎን አሞሌ ላይ ያለውን **+** **Create Zap** አዝራር ይጫኑ።
 
-![Zapier dashboard with Create Zap button](/img/admin/webhooks-list.png)
+![Zapier dashboard ከCreate Zap አዝራር ጋር](/img/admin/webhooks-list.png)
 
-ወደ Zap creation ገጽ ይተላለፋሉ።
+ወደ Zap መፍጠሪያ ገጽ ይመራሉ።
 
-በፍለጋ ሳጥኑ "wp ultimo" ብለው ይተይቡ። **Beta** ስሪት አማራጭን መምረጥ ይችላሉ።
+በፍለጋ ሳጥኑ ውስጥ "wp ultimo" ይተይቡ። የ**Beta** ስሪት አማራጭን ለመምረጥ ይጫኑ።
 
-![Searching for WP Ultimo in Zapier app list](/img/admin/webhooks-list.png)
+![በZapier መተግበሪያ ዝርዝር ውስጥ WP Ultimoን መፈለግ](/img/admin/webhooks-list.png)
 
-መተግበሪያችንን ከመረጡ በኋላ፣ የሚገኘውን ክስተት ይምረጡ፦ **New Ultimate Multisite Event**።
+መተግበሪያችንን ከመረጡ በኋላ፣ ያለውን ክስተት ይምረጡ፦ **New Ultimate Multisite Event**።
 
-![Selecting New Ultimate Multisite Event trigger](/img/admin/webhooks-list.png)
+![New Ultimate Multisite Event trigger መምረጥ](/img/admin/webhooks-list.png)
 
-አሁን **የእርስዎን ኔትዎ** ለZapier መዳረሻ መስጠት አለብን። በ **Sign in** ላይ መጫን የሚያስፈልገው **API credentials** ያለበት አዲስ መስኮት ይከፍታል።
+አሁን Zapier ወደ **አውታረ መረብዎ** መዳረሻ መስጠት አለብን። **Sign in** መጫን የ**API credentials** የሚጠይቅ አዲስ መስኮት ይከፍታል።
 
-![Zapier Sign in prompt for API credentials](/img/admin/webhooks-list.png)
+![Zapier Sign in ለAPI credentials ጥያቄ](/img/admin/webhooks-list.png)
 
-ወደ የኔትዎ የአስተዳዳሪ ፓነል በመሄድ ወደ **Ultimate Multisite > Settings** > **API & Webhooks** ይሂዱ እና በ API Settings ክፍል ውስጥ ይፈልጉ።
+ወደ አውታረ መረብዎ አስተዳዳሪ ፓነል ይሂዱ እና ወደ **Ultimate Multisite > Settings** > **API & Webhooks** ይሂዱ፣ ከዚያም የAPI Settings ክፍልን ይፈልጉ።
 
-ይህ ግንኙነት እንዲሰራ **Enable API** አማራጩን ይምረጡ።
+ይህ ግንኙነት እንዲሰራ ስለሚያስፈልግ የ**Enable API** አማራጭን ይምረጡ።
 
-![API Settings with Enable API option in Ultimate Multisite](/img/admin/webhooks-list.png)
+![API እና Webhooks settings ከAPI Settings እና Enable API አማራጮች ጋር](/img/admin/settings-api-webhooks.png)
 
-በ API Key እና API Secret መስኮቶች ላይ ያለውን **Copy to Clipboard** አዶ ይጠቀሙ እና እነዚህን እሴቶች በintegration ስክሪን ላይ ይለጥፉ።
+በAPI Key እና API Secret መስኮች ላይ ያለውን **Copy to Clipboard** አዶ ይጠቀሙ እና እነዚያን እሴቶች በውህደት ማያ ገጽ ላይ ይለጥፉ።
 
-በ URL መስክ ላይ የኔትዎ ሙሉ URL፣ ፕሮቶኮሉን (HTTP ወይም HTTPS) ጨምሮ ያስቀምጡ።
+በURL መስክ ውስጥ ፕሮቶኮሉን (HTTP ወይም HTTPS) ጨምሮ የአውታረ መረብዎን ሙሉ URL ያስገቡ።
 
-![Zapier integration screen with API Key, Secret, and URL fields](/img/admin/webhooks-list.png)
+![Zapier ውህደት ማያ ገጽ ከAPI Key፣ Secret፣ እና URL መስኮች ጋር](/img/admin/webhooks-list.png)
 
-ወደ ቀጣዩ ደረጃ ለመሄድ **Yes, Continue** ቁልፍ ይጫኑ። ሁሉም ነገር ከተሳካ፣ በአዲስ የተገናኘ አካውንት ይቀበላሉ! አዲስ ትሪገር ለመፍጠር **Continue** ላይ ይጫኑ።
+ወደ ቀጣዩ ደረጃ ለመቀጠል **Yes, Continue** አዝራርን ይጫኑ። ሁሉም ነገር ከሰራ፣ በአዲሱ የተገናኘ አካውንትዎ ይቀበላሉ! አዲስ trigger ለመፍጠር **Continue** ይጫኑ።
 
-## አዲስ Trigger እንዴት መፍጠር እንደሚቻል
+## አዲስ Trigger እንዴት መፍጠር {#how-to-create-a-new-trigger}
 
-አሁን አካውንትዎ ተገናኝቷል፣ የሚገኙ ክስተቶችን ማየት ይችላሉ። ለዚህ ትምህርት **payment_received** ክስተትን እንመርጥ።
+አሁን አካውንትዎ ተገናኝቶ ስለሆነ ያሉትን ክስተቶች ማየት ይችላሉ። ለዚህ መማሪያ የ**payment_received** ክስተትን እንምረጥ።
 
-![Selecting payment_received event in Zapier trigger](/img/admin/webhooks-list.png)
+![በZapier trigger ውስጥ payment_received ክስተትን መምረጥ](/img/admin/webhooks-list.png)
 
-ክስተቱ ከተመረጠ እና **continue** ላይ ከጫኑ፣ **test step** ይታያል።
+ክስተቱ ከተመረጠ እና **continue** ለመቀጠል ከጫኑ በኋላ፣ **test step** ይታያል።
 
-![Zapier test step for the trigger](/img/admin/webhooks-list.png)
+![Zapier test step ለtrigger](/img/admin/webhooks-list.png)
 
-በዚህ ደረጃ፣ Zapier የእርስዎ Zap ወደ **ለዚያ ክስተት የተወሰነ መረጃ (payload) ማውረድ** ይችላል ወይ ብሎ ይፈትሻል። በቀጣይ ተመሳሳይ ዓይነት ክስተቶች ሲከሰቱ፣ መረጃው በዚህ ተመሳሳይ አወቃቀር ይላካል።
+በዚህ ደረጃ፣ Zapier የእርስዎ Zap **ለዚያ ክስተት የተወሰነውን payload ማምጣት** እንደሚችል ይፈትሻል። በፊት የዚሁ አይነት ክስተቶች ውስጥ፣ በዚህ ተመሳሳይ መዋቅር ያለ መረጃ ይላካል።
 
-![Zapier trigger test completed successfully with payload](/img/admin/webhooks-list.png)
+![Zapier trigger test በተሳካ ሁኔታ ተጠናቀቀ ከpayload ጋር](/img/admin/webhooks-list.png)
 
-በትምህርታችን ውስጥ ፈተናው **በስኬት ተጠናቅቋል** እና የpayload ምሳሌ መረጃን ተልኳል። ይህ ምሳሌ መረጃ አክሽኖችን ስንፈጥር መመሪያ ለመስጠት ጠቃሚ ይሆናል። ትሪገርዎ አሁን ተፈጥሯል እና ከሌሎች መተግበሪያዎች ጋር ለመገናኘት ዝግጁ ነው።
+በመማሪያችን ውስጥ ፈተናው **በተሳካ ሁኔታ ተጠናቀቀ** እና የpayload ምሳሌ መረጃን መለሰ። ይህ የምሳሌ መረጃ እርምጃዎችን ስንፈጥር ለመመራት ጠቃሚ ይሆናል። የእርስዎ trigger አሁን ተፈጥሯል እና ከሌሎች መተግበሪያዎች ጋር ለመገናኘት ዝግጁ ነው።
 
-## Actions እንዴት መፍጠር እንደሚቻል
+## Actions እንዴት መፍጠር {#how-to-create-actions}
 
-Actions አዳዲስ መረጃዎችን በኔትዎ ውስጥ ለመፍጠር ከሌሎች ትሪገሮች የሚመጣውን መረጃ ይጠቀማሉ።
+Actions በአውታረ መረብዎ ውስጥ አዲስ መዝገቦችን ለመፍጠር ከሌሎች triggers የሚመጣ መረጃ ይጠቀማሉ።
 
-**አንድ የአክሽን ደረጃ እየፈጠሩበት**፣ Ultimate Multisite **Beta** እና **Create Items on Ultimate Multisite** አማራጭን ይመርጣሉ።
+በ**እርምጃ መፍጠሪያ ደረጃ** ውስጥ Ultimate Multisite **Beta** እና የ**Create Items on Ultimate Multisite** አማራጭን ይመርጣሉ።
 
-![Creating an action with Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Create Items on Ultimate Multisite በመጠቀም እርምጃ መፍጠር](/img/admin/webhooks-list.png)
 
-በቀጣዩ ደረጃ፣ እንደ **እንዴት መጀመር እንደሚቻል** ስሰራነው ሁሉ፣ የማረጋገጫ (authentication) መፍጠር ወይም ቀድሞ የተፈጠረ ማረጋገጫ መምረጥ ይችላሉ። በዚህ ትምህርት ውስጥ ቀደም ብዬ የተፈጠረውን ማረጋገጫ እንመርጣለን።
+በቀጣዩ ደረጃ፣ በ**እንዴት መጀመር** ውስጥ እንዳደረግነው ማረጋገጫዎን ይፈጥራሉ፣ ወይም የተፈጠረ ማረጋገጫን ይምረጣሉ። በዚህ መማሪያ ቀድሞ የተፈጠረውን ተመሳሳይ ማረጋገጫ እንመርጣለን።
 
-![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
+![ለZapier action ማረጋገጫ መምረጥ](/img/admin/webhooks-list.png)
 
-### የአክሽን ዝግጅት
+### Actionን ማዋቀር {#setting-up-the-action}
 
-ይህ **የአክሽኑ ዋና ደረጃ** ሲሆን እዚህ ነገሮች ትንሽ የተለያየ ናቸው። ለመጀመሪያ መረጃ የሚመርጡት **Item** ነው። Item ማለት **የመረጃ ሞዴል** ሲሆን እንደ **Customers, Payments, Sites, Emails** እና ሌሎችም የኔትዎ መረጃ አወቃቀር ነው።
+ይህ የ**action ዋና ደረጃ** ነው እና እዚህ ነገሮች ትንሽ ይለያያሉ። መጀመሪያ የሚመርጡት መረጃ **Item** ነው። Item የአውታረ መረብዎ **የመረጃ ሞዴል** ነው፣ እንደ **Customers, Payments, Sites, Emails** እና ሌሎች።
 
-![Choosing Item type for the Zapier action](/img/admin/webhooks-list.png)
+![ለZapier action የItem አይነት መምረጥ](/img/admin/webhooks-list.png)
 
-አንድ Item ሲመርጡ፣ ቅጹ ለተመረጠው Item የሚያስፈልጉ እና አማራጭ የሆኑ መስኮቶችን ለማምጣት **ይደራጃል**።
+item ሲመርጡ፣ ቅጹ ለተመረጠው item **የሚያስፈልጉ እና አማራጭ መስኮችን ለማምጣት እንደገና ይደራጃል**።
 
-ለምሳሌ፣ **Customer** የሚለውን Item ሲመርጡ፣ ቅጹ በኔትዎ ውስጥ አዲስ ደንበኛ ለመፍጠር የሚያስፈልጉ ሁሉንም ነገሮች ያመጣል።
+ለምሳሌ፣ **Customer** የሚባለውን item ሲመርጡ፣ ቅጽ መስኮቹ በአውታረ መረቡ ውስጥ አዲስ Customer ለመፍጠር ለመሙላት የሚያስፈልገውን ሁሉ ያመጣሉ።
 
-![Customer item fields in Zapier action setup](/img/admin/webhooks-list.png)
+![በZapier action ማዋቀር ውስጥ የCustomer item መስኮች](/img/admin/webhooks-list.png)
 
-በሁሉም እንደ **required** ምልክት የተደረጉ መስኮቶችን ከሞሉ በኋላ እና continue ላይ ከጫኑ፣ የመጨረሻ ስክሪን የተሞሉትን መስኮቶች እና ባዶ የሆኑ መስኮቶችን ያሳያል።
+**required** ተብለው የተለዩ መስኮችን ሁሉ ከሞሉ እና continue ከጫኑ በኋላ፣ የመጨረሻ ማያ ገጽ የተሞሉትን መስኮች እና ያልተሞሉ የተተዉትን መስኮች ያሳያል።
 
-![Zapier action test showing filled and unfilled fields](/img/admin/webhooks-list.png)
+![Zapier action test የተሞሉ እና ያልተሞሉ መስኮችን ማሳየት](/img/admin/webhooks-list.png)
 
-ፈተናዎ እንደተጠናቀቀ እና ስኬታማ ከሆነ የአክሽኑ ዝግጅት ተጠናቅቋል። በተጨማሪም፣ የአክሽኑን ፈተና በኔትዎ ላይ በማስፈን Item መፈጠሩን መፈተሽ አስፈላጊ ነው።
+ፈተናዎ እንደተጠናቀቀ እና እንደተሳካ፣ actionዎ ተዋቅሯል። በactionዎ ፈተና አማካኝነት item ተፈጥሯል ወይም አልተፈጠረም በአውታረ መረብዎ ላይ መፈተሽም አስፈላጊ ነው።

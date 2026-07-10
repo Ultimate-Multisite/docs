@@ -1,0 +1,150 @@
+---
+title: گهڻ-ڪرائيداري
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# گهڻ-ڪرائيداري {#multi-tenancy}
+
+ڪارڪردگي ۽ سلامتي لاءِ ذيلي سائيٽن کي سرورن ۽ ڊيٽابيسن ۾ ورهايو
+
+## Version 1.2.0 جاري ٿيڻ جون اهم ڳالهيون {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 پيداوار جي الڳاوَ وارن ورڪ فلو لاءِ خودمختيار ڪرائيدار جو بنياد شامل ڪري ٿو:
+
+- مختصر-مدتي، ٻيهر هلائڻ کان محفوظ SSO دورن سان بي-حالت ڪرائيدار خودڪار لاگ اِن.
+- خودمختيار ڪرائيدارن لاءِ هر ذيلي سائيٽ جي ڊيٽابيس ۽ فائل سسٽم جي الڳاوَ.
+- ميزبان-آگاهه ڪرائيدار فراهمي لاءِ Hostinger گهڻ-ڪرائيداري صلاحيت.
+- پراڻي ڊيٽا چيڪن ۽ async push پروسيسنگ لاءِ خودمختيار لڏپلاڻ تصديق جا دروازا.
+- Bedrock، FrankenPHP، ۽ localhost انسٽالن لاءِ ترتيب ڏئي سگهجندڙ ساڳي مشين ڊيٽابيس ميزبان بائنڊنگ.
+- ڪرائيدار bootstrap، ڊيٽابيس writer، schema bootstrap، ۽ يوزر فراهمي ۾ بهتريون.
+- وڌيڪ محفوظ خودمختيار ختم ڪرڻ جيڪو ڪرائيدار اسناد صاف ڪري ٿو.
+
+[خودمختيار لڏپلاڻ ورڪ فلو](/user-guide/getting-started/sovereign-migration-workflow)، [گهڻ-ڪرائيداري الڳاوَ](/user-guide/configuration/multi-tenancy-isolation)، ۽ [خودمختيار ڪرائيدار آپريشنز](/user-guide/administration/sovereign-tenant-operations) لاءِ يوزر گائيڊ ڏسو.
+
+## گهرجون {#requirements}
+
+- WordPress 5.3 يا وڌيڪ
+- PHP 7.4 يا وڌيڪ
+- Multisite Ultimate پلگ ان (فعال)
+
+## انسٽاليشن {#installation}
+
+1. addon فائلون پنهنجي `/wp-content/plugins/` ڊائريڪٽري ۾ اپلوڊ ڪريو
+2. WordPress ۾ 'Plugins' مينيو ذريعي پلگ ان فعال ڪريو
+3. نيٽ ورڪ ايڊمن ۾ addon سيٽنگون ترتيب ڏيو
+
+## ڊولپمينٽ {#development}
+
+### سيٽ اپ {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### پروجيڪٽ جو ڍانچو {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP ڪلاس ۽ شاملات
+│   ├── class-multisite-ultimate-updater.php  # اپڊيٽ هينڊلر
+│   └── class-multi_tenancy-main.php             # مکيه ڪارڪردگي
+├── tests/                        # يونٽ ٽيسٽون
+│   ├── bootstrap.php            # ٽيسٽ bootstrap
+│   ├── class-*-base.php         # بنيادي ٽيسٽ ڪلاس
+│   └── class-*-test.php         # ٽيسٽ ڪيس
+├── views/                       # ٽيمپليٽ فائلون
+├── assets/                      # جامد اثاثا
+│   ├── css/                     # اسٽائل شيٽون
+│   ├── js/                      # JavaScript فائلون
+│   └── images/                  # تصويرون
+├── lang/                        # ٻولي جون فائلون
+├── composer.json                # PHP انحصار
+├── package.json                 # Node.js انحصار
+├── phpunit.xml.dist             # PHPUnit ترتيب
+├── .phpcs.xml.dist              # ڪوڊ معيارن جي ترتيب
+└── rector.php                   # ڪوڊ جديد ڪرڻ جا قاعدا
+```
+
+### ٽيسٽنگ {#testing}
+
+addon ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
+
+- **يونٽ ٽيسٽون**: WordPress ٽيسٽ سوٽ سان PHPUnit-بنياد ٽيسٽون
+- **بنيادي ٽيسٽ ڪلاس**: عام ٽيسٽ منظرنامن لاءِ مددگار طريقا مهيا ڪري ٿو
+- **ٽيسٽ ڪوريج**: ڪوڊ ڪوريج ٽريڪ ڪرڻ لاءِ ترتيب ڏنل
+- **Multisite ٽيسٽنگ**: ٽيسٽون multisite ماحول ۾ هلن ٿيون
+
+### ڪوڊ معيار {#code-standards}
+
+- **WordPress ڪوڊنگ معيار**: PHPCS ذريعي لاڳو ڪيل
+- **PHP 7.4+ مطابقت**: جديد PHP خاصيتون سپورٽ ٿيل
+- **جامد تجزيو**: قسم چيڪنگ لاءِ PHPStan انضمام
+- **ڪوڊ جديد ڪرڻ**: PHP اپگريڊن لاءِ Rector قاعدا
+
+### بلڊ سسٽم {#build-system}
+
+- **اثاثن جي پروسيسنگ**: CSS/JS فائلن لاءِ منيفڪيشن
+- **ترجمو**: POT فائل جنريشن
+- **پيڪيجنگ**: ورڇ لاءِ آرڪائيو ٺاهڻ
+- **ڊولپمينٽ موڊ**: ڊيبگنگ لاءِ غير منيفائيڊ اثاثا
+
+## ترتيب {#configuration}
+
+addon مختلف ترتيب اختيارن کي سپورٽ ڪري ٿو، جيڪي نيٽ ورڪ ايڊمن انٽرفيس ذريعي رسائي لائق آهن.
+
+### خودمختيار ڪرائيدار ترتيب {#sovereign-tenant-configuration}
+
+خودمختيار ڪرائيدارن لاءِ، ٽرئفڪ کي ڪرائيدار ڏانهن روٽ ڪرڻ کان اڳ ڪرائيدار ڊيٽابيس، فائل سسٽم روٽ، ڊيٽابيس ميزبان بائنڊنگ، ۽ ميزبان صلاحيت ترتيب ڏيو. هر اهڙي تبديلي کان پوءِ لڏپلاڻ تصديق هلايو جيڪا ڊيٽابيس اسناد، ميزبان بائنڊنگ، روٽنگ، يا يوزر فراهمي تي اثر ڪري ٿي.
+
+`localhost` صرف تڏهن استعمال ڪريو جڏهن ڪرائيدار runtime ۽ ڊيٽابيس گرانٽون مقامي socket يا ساڳي مشين رسائي جي توقع ڪن. `127.0.0.1` يا هڪ خدمت hostname استعمال ڪريو جڏهن اهو توهان جي فراهم ڪندڙ طرفان ترتيب ڏنل گرانٽ ميزبان هجي.
+
+### Hostinger صلاحيت {#hostinger-capability}
+
+Hostinger گهڻ-ڪرائيداري صلاحيت shared Hostinger انضمام token سان ڪم ڪري ٿي. تصديق کان اڳ پڪ ڪريو ته domain hPanel ۾ موجود آهي، DNS Hostinger account ڏانهن اشارو ڪري ٿو، ۽ ڪرائيدار ڊيٽابيس سيٽنگون hPanel سان ملن ٿيون.
+
+## Hooks ۽ Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - addon شروعات کان پوءِ فائر ٿئي ٿو
+- `ultimate-multisite-addon-template_loaded` - سڀ addon فائلون لوڊ ٿيڻ کان پوءِ فائر ٿئي ٿو
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - addon سيٽنگون تبديل ڪريو
+- `ultimate-multisite-addon-template_enabled` - addon فعال/غير فعال حالت کي override ڪريو
+
+## License {#license}
+
+هي addon GPL v3 يا ان کان پوءِ واري لائسنس تحت لائسنس يافته آهي.
+
+## Support {#support}
+
+سپورٽ ۽ دستاويزن لاءِ، [MultisiteUltimate.com](https://multisiteultimate.com) تي وڃو
+## Changelog {#changelog}
+
+- Version 1.2.0 (2026-06-03): بي-حالت ڪرائيدار خودڪار لاگ اِن، Hostinger گهڻ-ڪرائيداري صلاحيت، هر ذيلي سائيٽ ڊيٽابيس ۽ فائل سسٽم الڳاوَ، خودمختيار لڏپلاڻ تصديق جا دروازا، ڪرائيدار bootstrap/ڊيٽابيس writer بهتريون، ترتيب ڏئي سگهجندڙ MySQL ميزبان بائنڊنگ، ۽ وڌيڪ محفوظ خودمختيار ختم ڪرڻ شامل ڪريو.
+
+- Version 1.0.1 (2025-09-28): prefix کي ultimate-multisite ۾ rename ڪريو؛ text domain اپڊيٽ ڪريو؛ version bump.
+
+
+- Version  (2025-09-28): prefix کي ultimate-multisite ۾ rename ڪريو؛ text domain اپڊيٽ ڪريو؛ version bump.

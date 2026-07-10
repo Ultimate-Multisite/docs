@@ -3,13 +3,13 @@ title: নাম লেখাত লোৱাৰ প্ৰক্ৰিয়া
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# The Registration Flow (v2)
+# The Registration Flow (v2) {#the-registration-flow-v2}
 
 _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ultimate Multisiteৰ version 2.x লৈ কথা পাতে।**_
 
 আপোনাৰ নেটৱৰ্কত ব্যৱমূহ বিভিন্ন ধৰণেৰে নাম লেখাব পাৰে। তেওঁলোকে আপোনাৰ registration form ব্যৱহাৰ কৰিব পাৰে বা এটা আগতে বাছনি কৰা plan-লৈ এটা shareable link ব্যৱহাৰ কৰিব পাৰে। ইয়াত আমি দেখুৱাম যে আপোনাৰ ग्राहकসকলে উপলব্ধ পথসমূহ ব্যৱহাৰ কৰি আপোনাৰ নেটৱৰ্কত কেনেকৈ নাম লেখাব পাৰে আৰু তেওঁলোকে নাম লেখোৱাৰ পিছত কি কি হ'ব।
 
-## Using the Registration Form:
+## Using the Registration Form: {#using-the-registration-form}
 
 এইটো হৈছে সাধাৰণ নাম লেখাওঁ প্ৰক্ৰিয়া। আপুনি এটা **checkout form** লৈ এটা registration page সৃষ্টি কৰে আৰু এই ঠাইখন হৈছে য'ত আপোনাৰ ग्राहकসকলে আপোনাৰ নেটৱৰ্কত নাম লেখাবলৈ আৰু এটা plan-ত সাবস্ক্রাইব কৰিবলৈ যাব। যদি আপুনি বিচাৰে তেন্তে আপুনি একাধিক registration page থাকিব পাৰে, প্ৰত্যেকটোতে এটা বেলেগ registration form থাকিব পাৰে।
 
@@ -35,13 +35,13 @@ _**গুৰুত্বপূৰ্ণ টোকা: এই article টো Ulti
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Using a Shareable Link:
+## Using a Shareable Link: {#using-a-shareable-link}
 
 এটা shareable link ব্যৱহাৰ কৰি নাম লেখাওঁ প্ৰক্ৰিয়াটো বেছিভাগেই registration form-ৰ দৰেই, এটামাত্ৰ পাৰ্থক্য হ'ল যে shareable link ব্যৱহাৰ কৰি, আপোনাৰ ग्राहकসকলে checkout form-ত এটা product বা website template আগতে বাছনি কৰা (refer to the section Pre-selecting products and templates via URL parameters) বা হয়তো এটা coupon code যোগ কৰা (refer to the section Using URL Parameters) হ'ব পাৰে।
 
 নাম লেখাওঁ প্ৰক্ৰিয়াটো একেই থাকিব: তেওঁলোকে নিজৰ নাম, username, ইমেইল ঠিকনা, website নাম আৰু title আদি পূৰণ কৰিব লাগিব... কিন্তু plan বা site template-টো তেওঁলোকৰ বাবে আগতে বাছনি কৰা থাকিব।
 
-### Registering Using Manual Payments:
+### Registering Using Manual Payments: {#registering-using-manual-payments}
 
 যদি আপুনি Ultimate Multisite বা ইয়াৰ add-on integrations দ্বাৰা দিয়া PayPal, Stripe বা আন কোনো payment gateway ব্যৱহাৰ কৰিব বিচাৰिन्न, তেন্তে আপুনি আপোনাৰ ग्राहकসকলৰ বাবে manual payments ব্যৱহাৰ কৰিব পাৰে। এইদৰে, আপুনি তেওঁলোকে আপোনাৰ নেটৱৰ্কত নাম লেখোৱাৰ পিছত তেওঁলোকক পৰিশোধ কৰিবলৈ এটা invoice সৃষ্টি কৰিব পাৰে।
 

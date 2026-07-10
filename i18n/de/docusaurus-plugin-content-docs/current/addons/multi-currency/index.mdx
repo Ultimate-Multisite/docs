@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency ermöglicht es Ihrem Netzwerk, Zahlungen in mehreren Währungen zu akzeptieren. Es wandelt Preise automatisch mithilfe von Live- oder manuellen Wechselkursen um, lässt Ihnen die Festlegung exakter Produktpreise für jede Währung zu und erkennt die bevorzugte Währung jedes Besuchers über die Geolokalisierung – alles verwaltet von einem einzigen Admin-Dashboard aus.
 
-## Key Features
+## Key Features {#key-features}
 
 - **Automatische Wechselkursumrechnung** — Preise werden mithilfe von Kursen, die von Ihrem gewählten Anbieter bezogen werden, von Ihrer Basiswährung umgerechnet.
 - **Produktpreisfestlegung (Overrides)** — Legen Sie exakte, währungsspezifische Preise für jedes Produkt fest, um die automatische Umrechnung zu umgehen.
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency ermöglicht es Ihrem Netzwerk, Zahlungen in m
 - **Währungsdetektion basierend auf Geolokalisierung** — Wählt automatisch die Währung aus, die zum Land des Besuchers passt.
 - **Admin-Dashboard** — Verwalten Sie aktive Währungen, Wechselkurse und Anbieter-Einstellungen an einem Ort.
 
-## Requirements
+## Requirements {#requirements}
 
 - Ultimate Multisite 2.0.0 oder höher
 - WordPress Multisite Installation
 - PHP 7.4 oder höher
 
-## Installation
+## Installation {#installation}
 
 1. Laden Sie die Plugin-Dateien in `/wp-content/plugins/ultimate-multisite-multi-currency` hoch.
 2. Aktivieren Sie das Plugin über den Bildschirm **Plugins** in WordPress (Netzwerk-Aktivierung).
 3. Navigieren Sie zu **Ultimate Multisite → Multi-Currency**, um das Admin-Dashboard zu öffnen.
 4. Fügen Sie die Währungen hinzu, die Sie akzeptieren möchten, und konfigurieren Sie Ihren Wechselkursanbieter.
 
-## Configuration
+## Configuration {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Das Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) ist der zentrale Ort, um:
 
@@ -44,7 +44,7 @@ Das Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) i
 - Die aktuellen Kurse für alle aktiven Währungen einzusehen.
 - Manuelle Kurse festzulegen, wenn automatische Anbieter nicht geeignet sind.
 
-### Exchange Rate Providers
+### Exchange Rate Providers {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Das Multi-Currency Admin-Dashboard (**Ultimate Multisite → Multi-Currency**) i
 
 Wählen Sie Ihren Anbieter unter **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurse können jederzeit manuell aktualisiert oder für eine automatische Aktualisierung geplant werden.
 
-### Per-Product Pricing Overrides
+### Per-Product Pricing Overrides {#per-product-pricing-overrides}
 
 Wenn die automatische Umrechnung nicht präzise genug ist, können Sie einen exakten Preis für eine bestimmte Währung auf jedem Produkt festlegen:
 
@@ -66,7 +66,7 @@ Wenn die automatische Umrechnung nicht präzise genug ist, können Sie einen exa
 
 Produkte ohne Override verwenden den umgerechneten Preis aus Ihrer Basiswährung.
 
-### Currency Selector Signup Field
+### Currency Selector Signup Field {#currency-selector-signup-field}
 
 Das Währungsauswahl-Feld kann zu Ihrem Registrierungs-/Checkout-Prozess hinzugefügt werden, sodass Kunden ihre bevorzugte Währung bei der Registrierung auswählen:
 
@@ -76,7 +76,7 @@ Das Währungsauswahl-Feld kann zu Ihrem Registrierungs-/Checkout-Prozess hinzuge
 
 Die ausgewählte Währung wird mit dem Abonnement gespeichert und für alle nachfolgenden Abrechnungen verwendet.
 
-### Geolocation-Based Currency Detection
+### Geolocation-Based Currency Detection {#geolocation-based-currency-detection}
 
 Wenn die Geolokalisierungsdetektion aktiviert ist, ordnet das Addon das Land des Besuchers einer Währung zu und wählt diese im Währungsauswahl-Feld voraus. Um dies zu aktivieren:
 
@@ -86,27 +86,27 @@ Wenn die Geolokalisierungsdetektion aktiviert ist, ordnet das Addon das Land des
 
 Existiert keine Zuordnung für das Land des Besuchers, wird die Basiswährung des Netzwerks als Fallback verwendet.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-### What happens if an exchange rate provider is unavailable?
+### What happens if an exchange rate provider is unavailable? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Das Addon fällt auf die zuletzt erfolgreich bezogenen Kurse zurück. Wurden noch nie Kurse bezogen, fällt es auf die manuellen Kurse zurück, die Sie konfiguriert haben. Es wird empfohlen, manuelle Kurse als Sicherheitsnetz einzurichten.
 
-### Can I use different providers for different currencies?
+### Can I use different providers for different currencies? {#can-i-use-different-providers-for-different-currencies}
 
 Nein – für alle Währungen ist immer ein Anbieter aktiv. Verwenden Sie **Manual**, wenn Sie die volle Kontrolle über einzelne Kurse benötigen.
 
-### Does geolocation require a separate plugin?
+### Does geolocation require a separate plugin? {#does-geolocation-require-a-separate-plugin}
 
 Es ist kein externes Geolocation-Plugin erforderlich. Das Addon nutzt die integrierte IP-zu-Land-Erkennung von WordPress. Für eine höhere Genauigkeit kann ein dedizierter Geolocation-Service über die bereitgestellten Filter-Hooks integriert werden.
 
-### Are per-product overrides applied before or after tax?
+### Are per-product overrides applied before or after tax? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Produkt-Overrides legen den Preis vor der Steuer in der Zielwährung fest. Die Steuer wird auf den Override-Preis aufgeschlagen, basierend auf Ihrer bestehenden Steuerkonfiguration.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Released on 2026-04-02
+### Version 1.0.0 — Released on 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - New: Multi-currency support with automatic exchange rate conversion
 - New: Per-product pricing overrides for exact currency-specific prices

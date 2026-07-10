@@ -7,19 +7,19 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-gocardless" name="GoCardless" />
 
-# GoCardless
+# GoCardless {#gocardless}
 
 Multisite Ultimate: GoCardless Payment
 
 GoCardless ব্যবহার করে আপনার গ্রাহকদের কাছ থেকে Multisite Ultimate মেম্বারশিপ এবং পণ্যগুলির জন্য সরাসরি ডেবিট (Direct Debit) মাধ্যমে পেমেন্ট করানো সম্ভব করুন!
 
-## Installation
+## Installation {#installation}
 
 ১. 'ultimate-multisite-gocardless' ফাইলটি '/wp-content/plugins/' ডিরেক্টরিতে আপলোড করুন।
 ২. ওয়ার্ডপ্রেসের 'Plugins' মেনু থেকে প্লাগইনটি অ্যাক্টিভেট করুন।
 ৩. প্লাগইনটি সেটআপ করার জন্য ধাপে ধাপে উইজার্ড (Wizard) অনুসরণ করুন।
 
-## Usage Guide
+## Usage Guide {#usage-guide}
 
 _GoCardless_ হলো একটি পেমেন্ট গেটওয়ে যা **ইউরোপ এবং যুক্তরাজ্যে** উপলব্ধ এবং এটি **সরাসরি ডেবিট (Direct Debit)** পেমেন্টের সুবিধা দেয়।
 
@@ -29,7 +29,7 @@ _GoCardless_ হলো একটি পেমেন্ট গেটওয়ে 
 
 _**দ্রষ্টব্য: GoCardless শুধুমাত্র নিম্নলিখিত মুদ্রাগুলির সাথে কাজ করে:**_ **EUR, GBP, AUD, SEK, এবং DKK।**
 
-## অ্যাড-অন ইনস্টল করা
+## অ্যাড-অন ইনস্টল করা {#installing-the-add-on}
 
 প্রথমে, আপনাকে Ultimate Multisite-এর জন্য GoCardless অ্যাড-অনটি ইনস্টল করতে হবে। আপনি এটি করতে পারেন **Ultimate Multisite > Settings > Add-ons** (সাইডবারে) গিয়ে এবং তালিকা থেকে GoCardless অ্যাড-অনটি বেছে নিয়ে।
 
@@ -37,7 +37,7 @@ _**দ্রষ্টব্য: GoCardless শুধুমাত্র নিম
 
 ![Payment gateway settings](/img/config/settings-payment-gateways.png)
 
-## অ্যাক্সেস টোকেন পাওয়া
+## অ্যাক্সেস টোকেন পাওয়া {#getting-an-access-token}
 
 _GoCardless_-এ একটি অ্যাকাউন্ট তৈরি করুন (অথবা আপনি যদি **প্রথমে পরীক্ষা করতে** চান, তবে _GoCardless_ স্যান্ডবক্সে অ্যাকাউন্ট তৈরি করুন, যা সুপারিশ করা হয়)। এরপর, লগইন করার পরে, **Developers** মেনু আইটেমে নেভিগেট করুন।
 
@@ -61,7 +61,7 @@ _GoCardless_-এ একটি অ্যাকাউন্ট তৈরি কর
 
 প্রথম ধাপের জন্য এটুকুই। এরপর, আপনাকে একটি ওয়েবহুক লিসেনার (webhook listener) সেটআপ করতে হবে।
 
-## ওয়েবহুক লিসেনার সেটআপ করা
+## ওয়েবহুক লিসেনার সেটআপ করা {#setting-up-the-webhook-listener}
 
 সাবস্ক্রিপশন নিয়ে কাজ করার সময়, Ultimate Multisite-কে সাবস্ক্রিপশনের স্ট্যাটাস পরিবর্তন, নতুন পেমেন্ট হওয়া এবং এই ধরনের অন্যান্য বিষয় সম্পর্কে জানতে হয়।
 

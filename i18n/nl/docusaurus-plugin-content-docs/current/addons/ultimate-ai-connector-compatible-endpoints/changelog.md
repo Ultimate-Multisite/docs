@@ -3,9 +3,9 @@ title: Ultimate AI Connector voor Compatibele Endpoints Changelog
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Ultimate AI Connector voor Compatibele Endpoints Wijzigingslogboek
+# Ultimate AI Connector voor Compatibele Endpoints Wijzigingslogboek {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versie 2.0.0 — Uitgebracht op 2026-04-24
+## Versie 2.0.0 — Uitgebracht op 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nieuw: Ondersteuning voor meerdere providers — configureer meerdere AI-endpoints en routeer verzoeken met automatische fallback over verschillende providers.
 * Fix: Multi-provider SDK-integratie met correcte provider-ID's, registratielinks en HTTP-filter scope per provider.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Fix: Elimineert een blokkerend HTTP-verzoek dat bij elke paginalading werd uitgevoerd.
 * Verbeterd: GitHub Actions workflows geüpgraded naar Node.js 24.
 
-## Versie 1.0.0 — Initiële Uitgave
+## Versie 1.0.0 — Initiële Uitgave {#version-100--initial-release}

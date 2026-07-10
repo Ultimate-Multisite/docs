@@ -3,13 +3,13 @@ title: ຊ່ອງໃສ່ຂໍ້ມູນການຈ່າຍເງິນ 
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Field ແລະ ການຈັດການ DNS ຂອງລູກຄ້າ
+# Checkout Field ແລະ ການຈັດການ DNS ຂອງລູກຄ້າ {#checkout-field-and-customer-dns-management}
 
-## ແຖບເລືອກໂດເມນໃນໜ້າຊຳລະເງິນ (Checkout field)
+## ແຖບເລືອກໂດເມນໃນໜ້າຊຳລະເງິນ (Checkout field) {#the-domain-selection-checkout-field}
 
 ແຖບ **Domain Selection** ແມ່ນສ່ວນໜຶ່ງຂອງໜ້າຊຳລະເງິນທີ່ໃຫ້ທາງລູກຄ້າເລືອກວິທີທີ່ຈະໄດ້ຮັບໂດເມນຂອງເວັບໄຊທ໌ຂອງເຂົາເຈົ້າ. ເພີ່ມມັນໃສ່ແບບຟອມຊຳລະເງິນໃດໆເພື່ອເປີດໃຊ້ການຂາຍໂດເມນ.
 
-### ການເພີ່ມແຖບເຂົ້າໃນແບບຟອມຊຳລະເງິນ
+### ການເພີ່ມແຖບເຂົ້າໃນແບບຟອມຊຳລະເງິນ {#adding-the-field-to-a-checkout-form}
 
 1. ໄປທີ່ **Network Admin › Ultimate Multisite › Checkout Forms**
 2. ເປີດ ຫຼື ສ້າງແບບຟອມຊຳລະເງິນໃໝ່
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. ຕັ້ງຄ່າຕົວເລືອກຂອງແຖບ (ເບິ່ງខាងລຸ່ມນີ້)
 6. ເກັບຮັກສາແບບຟອມ
 
-### ຕົວເລືອກຂອງແຖບ
+### ຕົວເລືອກຂອງແຖບ {#field-options}
 
 **Domain modes** — ເລືອກວ່າລູກຄ້າຈະເຫັນແທບໃດ. ແຕ່ລະໂໝດສາມາດເປີດໃຊ້ ຫຼື ປິດໄດ້ຢ່າງເປັນເອກະລາດ:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain product** — ສາມາດຕິດແຖບນີ້ເຂົ້າກັບຜະລິດຕະພັນໂດເມນສະເພາະໄດ້. ຖ້າບໍ່ໄດ້ຕັ້ງຄ່າ, Addon ຈະເລືອກຜະລິດຕະພັນທີ່ກົງກັນໂດຍອັດຕະໂນມັດຕາມ TLD (Top-Level Domain) ທີ່ລູກຄ້າຄົ້ນຫາ.
 
-### ແຖບຕິດຕໍ່ຜູ້ລົງທະບຽນ (Registrant contact fields)
+### ແຖບຕິດຕໍ່ຜູ້ລົງທະບຽນ (Registrant contact fields) {#registrant-contact-fields}
 
 ເມື່ອລູກຄ້າເລືອກແທບ **Register New Domain**, ແບບຟອມຊຳລະເງິນຈະເພີ່ມແຖບຕິດຕໍ່ຜູ້ລົງທະບຽນເຂົ້າໄປໃນແບບຟອມໂດຍກົງ:
 
@@ -43,11 +43,11 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 ສິ່ງເຫຼົ່ານີ້ແມ່ນຂໍ້ກຳນົດທີ່ຜູ້ລົງທະບຽນທຸກຄົນຕ້ອງເຮັດ ແລະ ໄດ້ຮັບການຢັ້ງຢືນກ່ອນທີ່ຈະສົ່ງ API call ເພື່ອລົງທະບຽນ. ເບີໂທລະສັບຈະຖືກຈັດຮູບແບບເປັນຮູບແບບສາກົນ `+CC.NNN` ອັດຕະໂນມັດຕາມທີ່ຜູ້ລົງທະບຽນຄາດຫວັງ.
 
-### ໂປຣແກຣມ URL ຂອງໄຊທ໌ທີ່ສ້າງຂຶ້ນອັດຕະໂນມັດ (Auto-generated site URL)
+### ໂປຣແກຣມ URL ຂອງໄຊທ໌ທີ່ສ້າງຂຶ້ນອັດຕະໂນມັດ (Auto-generated site URL) {#auto-generated-site-url}
 
 ເມື່ອລູກຄ້າລົງທະບຽນ ຫຼື ເພີ່ມໂດເມນ, ແຖບ site URL ຈະຖືກຕື່ມຂໍ້ມູນໂດຍອັດຕະໂນມັດຈາກໂດເມນທີ່ເລືອກ. ລູກຄ້າບໍ່ຈຳເປັນຕ້ອງຕື່ມໃສ່ແຖບ URL ແຍກຕ່າງຫາກ.
 
-### ພຶດຕິກຳການຄົ້ນຫາ (Search behaviour)
+### ພຶດຕິກຳການຄົ້ນຫາ (Search behaviour) {#search-behaviour}
 
 - ການກວດສອບຄວາມຫວ່າງຂອງໂດເມນຈະເຮັດແບບ Real-time ໂດຍໃຊ້ AJAX ເມື່ອລູກຄ້າກຳລັງພິມ
 - ຈະສະແດງຂໍ້ສະເໜີ TLD ທາງເລືອກອື່ນໆ ເມື່ອໂດເມນທີ່ຕ້ອງການບໍ່ມີໃຫ້ໃຊ້
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## ການຈັດການ DNS ຂອງລູກຄ້າ (Customer DNS management)
+## ການຈັດການ DNS ຂອງລູກຄ້າ (Customer DNS management) {#customer-dns-management}
 
 ລູກຄ້າສາມາດຈັດການບັນທຶກ DNS ສຳລັບໂດເມນທີ່ໄດ້ລົງທະບຽນແລ້ວ ໄດ້ຈາກໜ້າ **My Account**, ພາຍໃຕ້ຂໍ້ມູນຂອງໂດເມນນັ້ນ.
 
-### ປະເພດບັນທຶກທີ່ຮອງຮັບ (Supported record types)
+### ປະເພດບັນທຶກທີ່ຮອງຮັບ (Supported record types) {#supported-record-types}
 
 | Loại | ການນຳໃຊ້ |
 |---|---|
@@ -91,11 +91,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 | **MX** | ກໍານົດ mail exchange server |
 | **TXT** | ເພີ່ມ SPF, DMARC, ການຢັ້ງຢືນ (verification), ຫຼື ບັນທຶກຂໍ້ຄວາມອື່ນໆ |
 
-### ຜູ້ໃຫ້ບໍລິການໃດທີ່ຮອງຮັບການຈັດການ DNS?
+### ຜູ້ໃຫ້ບໍລິການໃດທີ່ຮອງຮັບການຈັດການ DNS? {#which-providers-support-dns-management}
 
 การจัดการ DNS (เพิ่ม, แก้ไข, ลบเรคคอร์ด) มีให้ใช้กับ **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** และ **Openprovider** ครับ สำหรับโดเมนของ **Hostinger** สามารถอัปเดตเซิร์ฟเวอร์เนมเซิร์ฟเวอร์ผ่าน Domain Seller ได้ครับ ส่วน DNS records ของโดเมนที่โฮสต์อยู่จะถูกจัดการโดยการผสานรวม (integration) การแมปโดเมนหลักของ Hostinger โดยตรงนะครับ สำหรับโดเมนจาก Namecheap, GoDaddy และ NameSilo จะแสดงสถานะและข้อมูลวันหมดอายุ แต่เราต้องจัดการ DNS โดยตรงในแผงควบคุมของผู้จดทะเบียนเองครับ
 
-### DNS records เริ่มต้น (Default DNS records)
+### DNS records เริ่มต้น (Default DNS records) {#default-dns-records}
 
 คุณสามารถตั้งค่า DNS records เริ่มต้นที่ระบบจะนำไปใช้โดยอัตโนมัติเมื่อมีการลงทะเบียนโดเมนได้ ไปที่ **Settings › Domain Seller › Default DNS Records** ครับ
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### ผู้ดูแลระบบ: การดูและแก้ไข DNS
+### ผู้ดูแลระบบ: การดูและแก้ไข DNS {#admin-viewing-and-editing-dns}
 
 ผู้ดูแลระบบเครือข่ายสามารถดูและแก้ไข DNS records สำหรับโดเมนของลูกค้าได้จากหน้าแก้ไขโดเมนใน **Network Admin › Ultimate Multisite › Domains** ครับ

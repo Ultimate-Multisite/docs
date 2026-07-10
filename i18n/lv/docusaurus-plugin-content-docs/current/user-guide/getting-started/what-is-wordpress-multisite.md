@@ -3,7 +3,7 @@ title: Kas ir WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kāpēc ir WordPress Multisite?
+# Kāpēc ir WordPress Multisite? {#what-is-wordpress-multisite}
 
 WordPress pamata funkcijās ir funkcija, ko vadās nosaukums ‘Multisite’, kas atsaucas uz 2010. gadu WordPress 3.0 lansēšanu. Kopējā laikā tas ir ieguvies vairākas revizijas, kurām mērķis ir ieviekt jaunas funkcijas un uzstādīt drošību.
 
@@ -11,7 +11,7 @@ Esam savukārt, WordPress multisite var domāt kā šādi: Universitāte uztur v
 
 ##
 
-## Kā tieši ir WordPress Multisite?
+## Kā tieši ir WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite ir WordPress funkcija, kas ļauj vairākiem vietnēm dalīties ar vienu WordPress instalāciju. Kad multisite tiek aktivizēts, oriģinālā WordPress vieta tiek pārvērsta, lai atbalstītu to, ko parasti nosauca kā **vietņu tīkls**.
 
@@ -23,7 +23,7 @@ Tādējādi WordPress, temas un plugins atjauninājumi jāveic tikai reizi visie
 
 ##
 
-## Subdomēns vai subdirektoris?
+## Subdomēns vai subdirektoris? {#subdomain-or-subdirectory}
 
 Ir divas veidības veiksmīt WordPress multisite – un jums ir jāizvēlas viens, kad pārvērjat savu regulāru WordPress instalāciju multisite instalācijā:
 
@@ -49,7 +49,7 @@ Viena galvenais izvēles problēmas konfigurēt subdomēnu režīmā ir SSL atsp
 
 Kontrast subdirektoriem režīmai, subsajūti subdomēnu balstītajā tīklā tiek uzskatīti meklējamie rindas kā atsevišķi vietnes, kas nozīmē, ka viens subsite uz vietu esošais saturs ne ietekmē SEO veiktspēju citos subsaitiem.
 
-## Super admin
+## Super admin {#the-super-admin}
 
 Vienrādīga WordPress instalācija ļauj jums pievienot neklimata lietotāju un sniegt tiem dažādus lietotāja roļus ar atšķirīgām ierobežojumiem.
 
@@ -63,7 +63,7 @@ Pluginus un temas var instalēt vai neinstalēt tikai no tīkla admin panelis ar
 
 _Piezīts: kā redzams, ka uzņēmumam iestatīt kādu lietotāju savā tīklā un sniegt viņam superadministrators statusu dod šim lietotā pilnu kontroli pār jūsu tīkli. Piemēram, citi superadministrators var izņemt jūsu superadministrators statusu, efektīvi aizverot jūs no savas tīkla administrācijas paneļa. Lai ļaut Ultimate Multisite klientiem iegūt detaļu kontroli tam, ko papildu superadministrators var darīt, mums ir uzlabojums, kas nosaucas Support Agents. Šis uzlabojums ļauj jums izveidot vēl vienu lietotāju veidu – agentu – ar tikai tiem atļautajām ierobežojumiem, kas viņam var būt nepieciešami, lai veiktu savas darbus tīklā._
 
-## Kādas lietas ir dalītas starp subsaitiem un kādas nav dalītas
+## Kādas lietas ir dalītas starp subsaitiem un kādas nav dalītas {#what-is-shared-among-subsites-and-what-is-not}
 
 Kā mēs iepriekš minējām, viens no galvenajiem priekšrocību WordPress multisite ir tas, ka visi subsaitie dalās vienām konfigurācijām, pamata failiem, temām, pluginiem, WordPress pamata failiem, etc.
 
@@ -75,7 +75,7 @@ Tomēr ir elementi, kas labi definēti pa subsaitiem.
 
 - Lielākā daļa databasetu tabulu tiek izveidotas katram subsaitam, kas nozīmē, ka postas, komentāri, lapas, iestatījumi un vēl vairāk ir definēti katram subsaitam.
 
-## Lietotāju pārvaldība WordPress Multisite
+## Lietotāju pārvaldība WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Viena smaga jautājums WordPress multisite ir lietotāju pārvaldība. WordPress lietotāju tabula ir viens no dažiem, kas dalītas starp visiem subsaitiem.
 
@@ -99,7 +99,7 @@ _Piezīme: Mēs saprotam, cik tas var būt slikts jūsu lietojum kontekstā, tā
 
 Paties, lai gan lietotājs tabli ir dalīta, bet lietotājus var pievienot un izņemties no subvietām ar subvietu admini vai superadmini, un viņiem var būt dažādi lietotāju lomas dažādās subvietās.
 
-## Performances ievērojamie jautājumi
+## Performances ievērojamie jautājumi {#performance-considerations}
 
 WordPress multisite ir ļoti spēcīgs, kad runā par tiem vietnēm, ko tas var atbalstīt. To var pārbaudīt tā, ka [WordPress.com](https://WordPress.com), Edublogs un Campuspress ir multisite-dzinēti pakalpojumi, un katrs hosta tūkstošus vietnī.
 

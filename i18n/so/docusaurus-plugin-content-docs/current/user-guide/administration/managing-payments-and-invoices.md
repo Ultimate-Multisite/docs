@@ -3,9 +3,9 @@ title: Maareynta Lacagta iyo Faahfaahinta
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Maareyntaalka Lacagta iyo Faqrinta
+# Maareyntaalka Lacagta iyo Faqrinta {#managing-payments-and-invoices}
 
-## Dejinta Dejinta Lacagta (Payment Settings)
+## Dejinta Dejinta Lacagta (Payment Settings) {#payment-settings}
 
 Lacagta qaadista bilaabidda ka hor intaadan bilowdo in aad lacago hesho, waxaad u baahan tahay inaad dejiso dejimaha la xiriira lacagta. Tag **Ultimate Multisite → Settings** oo guji tab-ka **Payment**.
 
@@ -15,7 +15,7 @@ Halkan waa aragti dhammaystiran oo ah bogga dejinta lacagta:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Doorashooyinka Guud ee Lacagta (General Payment Options)
+### Doorashooyinka Guud ee Lacagta (General Payment Options) {#general-payment-options}
 
 Dejinta guudka, waxaad dejin kartaa:
 
@@ -24,7 +24,7 @@ Dejinta guudka, waxaad dejin kartaa:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Weedhaha Lacagta (Payment Gateways)
+### Weedhaha Lacagta (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite wuxuu taageera weydiimo lacag ah oo badan. Waxaad furtaa oo dejisaa kasta oo ka mid ah tabka Dejinta Lacagta.
 
@@ -40,11 +40,11 @@ Kasta oo weydiimo (gateway) ay leeyihiin qayb dejin la xiriira oo aad ku dhex ga
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Mode Sandbox (Sandbox Mode)
+### Mode Sandbox (Sandbox Mode) {#sandbox-mode}
 
 Waxaad furtaa **Sandbox Mode** si aad u baaritaan karto isdhexgalka lacagtaada ka hor intaadan bilaabin shaqada dhabta ah. Marka sandbox mode uu socdo, ma lahaan doono lacago dhab ah oo la qaado.
 
-## Aragtida Lacagta (Viewing Payments)
+## Aragtida Lacagta (Viewing Payments) {#viewing-payments}
 
 Tag bogga **Payments** ee hoos ka ah Ultimate Multisite si aad u aragto dhammaan macaamilada ee shabakadahaaga.
 
@@ -54,7 +54,7 @@ Waxaad kala qaadi kartaa lacagta iyadoo la isticmaalayo xaaladda (completed, pen
 
 Marka aad koobka lacagta ka riixdo si aad u aragto dhammaan faahfaahinta oo ay ku jiraan qaybaha alaabta (line items), xiriirka socda (membership), macluumaadka macaamiisha, iyo macluumaadka habka lacagta la qaadayo (payment gateway data).
 
-## Invoices (Fakiro Lacagta)
+## Invoices (Fakiro Lacagta) {#invoices}
 
 Ultimate Multisite waxay si toos ah u samayn kartaa faahfaahinta lacagta (invoices) ee lacagta la bixiyo. Waxaad ku hagaajin kartaa qaabka faahfaahinta iyo habka tartanka (numbering format) laga isticmaalo iyadoo la adeegsanayo settings-ka Lacagta (Payment settings).
 

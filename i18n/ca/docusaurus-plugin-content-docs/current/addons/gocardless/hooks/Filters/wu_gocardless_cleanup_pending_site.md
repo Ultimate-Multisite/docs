@@ -4,13 +4,13 @@ title: Filtre - wu_gocardless_cleanup_pending_site
 sidebar_label: wu_gocardless_cleanup_pending_site
 _i18n_hash: 12dc7cf40d5e91b9d4da3ea887286608
 ---
-# Filter: wu_gococardless_cleanup_pending_site
+# Filter: wu_gococardless_cleanup_pending_site {#filter-wugocardlesscleanuppendingsite}
 
 S'executa abans de eliminar un lloc temporal desatjat per una membresria GoCardless cancelada.
 
 Tornar `false` des d'aquest filtre per prevenir l'eliminació.
 
-## Paràmetres
+## Paràmetres {#parameters}
 
 | Nom | Tipus | Descripció |
 |------|------|-------------|
@@ -18,9 +18,9 @@ Tornar `false` des d'aquest filtre per prevenir l'eliminació.
 | $membership | `\WP_Ultimo\Models\Membership` | La membresria cancelada. |
 | $old_status | `string` | L'estat abans de la cancelació. |
 
-### Des
+### Des {#since}
 
 - 2.0.0
-### Font
+### Font {#source}
 
 Definid a [`inc/gateways/class-gocardless-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/gateways/class-gocardless-gateway.php#L1086) a la línia 1086

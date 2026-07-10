@@ -4,11 +4,11 @@ title: Action - wu_domain_registration_failed
 sidebar_label: wu_domain_registration_failed
 _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 ---
-# Action: wu_domain_registration_failed
+# Action: wu_domain_registration_failed {#action-wudomainregistrationfailed}
 
 డొమైన్ రిజిస్ట్రేషన్ ప్రయత్నం విఫలమైన తర్వాత ఇది ట్రిగ్గర్ అవుతుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
 | $registration_data | `array&lt;string,mixed&gt;` | స్టేటస్=failed మరియు error_message తో సహా రిజిస్ట్రేషన్ మెటాడేటా. |
 | $error_message | `string` | రిజిస్ట్రార్ నుండి వచ్చిన మనిషికి అర్థమయ్యే ఎర్రర్ మెసేజ్. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) లోని 1250వ లైన్‌లో నిర్వచించబడింది.

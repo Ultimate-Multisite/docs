@@ -3,13 +3,13 @@ title: Migration en mode tiers
 sidebar_position: 17
 _i18n_hash: 21e66c5c40d03011402c58addf6d96f3
 ---
-# Migration en mode tiers
+# Migration en mode tiers {#third-party-mode-migration}
 
 Superdav AI Agent v1.12.0 modifie la manière dont les capacités tierces sont gérées. **Le mode tiers est désormais réglé par défaut sur « auto »**, ce qui permet une intégration native de l'API Abilities de WordPress sur WordPress 7.0+ sans configuration manuelle.
 
-## Ce qui a changé ?
+## Ce qui a changé ? {#what-changed}
 
-### Avant v1.12.0
+### Avant v1.12.0 {#before-v1120}
 
 Les capacités tierces nécessitaient une configuration manuelle :
 
@@ -18,7 +18,7 @@ Les capacités tierces nécessitaient une configuration manuelle :
 - L'intégration avec l'API Abilities de WordPress était optionnelle
 - Le mode hérité était le mode par défaut
 
-### Après v1.12.0
+### Après v1.12.0 {#after-v1120}
 
 Les capacités tierces fonctionnent automatiquement :
 
@@ -27,13 +27,13 @@ Les capacités tierces fonctionnent automatiquement :
 - Aucune configuration manuelle n'est nécessaire sur WordPress 7.0+
 - Le mode hérité reste disponible pour les anciennes versions de WordPress
 
-## Qui est concerné ?
+## Qui est concerné ? {#who-is-affected}
 
-### Nouvelles installations (WordPress 7.0+)
+### Nouvelles installations (WordPress 7.0+) {#new-installations-wordpress-70}
 
 **Aucune action requise.** Le mode tiers est automatiquement réglé sur « auto », et les capacités fonctionnent dès l'installation.
 
-### Installations existantes
+### Installations existantes {#existing-installations}
 
 **Vos paramètres sont conservés.** Si vous utilisiez :
 
@@ -41,7 +41,7 @@ Les capacités tierces fonctionnent automatiquement :
 - **Mode tiers manuel** : Vous restez en mode manuel (aucun changement)
 - **Mode auto** : Vous continuez avec le mode auto (aucun changement)
 
-### Versions de WordPress antérieures à 7.0
+### Versions de WordPress antérieures à 7.0 {#wordpress-versions-before-70}
 
 **Le mode hérité est toujours disponible.** Si vous êtes sur WordPress 6.x ou une version antérieure :
 
@@ -49,9 +49,9 @@ Les capacités tierces fonctionnent automatiquement :
 - Vous pouvez activer manuellement le mode tiers si vous le souhaitez
 - Mettez à niveau vers WordPress 7.0+ pour utiliser l'API Abilities native
 
-## Comprendre les modes
+## Comprendre les modes {#understanding-the-modes}
 
-### Mode auto (Nouveau défaut)
+### Mode auto (Nouveau défaut) {#auto-mode-new-default}
 
 **Le mode auto** utilise l'intégration native de l'API Abilities de WordPress :
 
@@ -62,7 +62,7 @@ Les capacités tierces fonctionnent automatiquement :
 
 **Quand l'utiliser** : WordPress 7.0+ avec des capacités tierces
 
-### Mode manuel
+### Mode manuel {#manual-mode}
 
 **Le mode manuel** nécessite une configuration explicite :
 
@@ -73,7 +73,7 @@ Les capacités tierces fonctionnent automatiquement :
 
 **Quand l'utiliser** : Tests, chargement sélectif de capacités ou configurations personnalisées
 
-### Mode hérité
+### Mode hérité {#legacy-mode}
 
 **Le mode hérité** utilise l'ancien système de capacités tierces :
 
@@ -84,24 +84,24 @@ Les capacités tierces fonctionnent automatiquement :
 
 **Quand l'utiliser** : WordPress 6.x ou antérieur, ou lorsque vous avez besoin de compatibilité héritée
 
-## Vérifier votre mode actuel
+## Vérifier votre mode actuel {#checking-your-current-mode}
 
-### Via le panneau d'administration
+### Via le panneau d'administration {#via-admin-panel}
 
 1. Allez dans **Administration WordPress** → **Superdav AI Agent** → **Paramètres**
 2. Recherchez le paramètre **Mode tiers**
 3. Vous verrez votre mode actuel et les options pour le modifier
 
-### Via le code
+### Via le code {#via-code}
 
 ```php
 $mode = get_option( 'superdav_third_party_mode' );
 echo $mode; // 'auto', 'manual', ou 'legacy'
 ```
 
-## Changer votre mode
+## Changer votre mode {#changing-your-mode}
 
-### Passer au mode auto
+### Passer au mode auto {#switch-to-auto-mode}
 
 Si vous êtes sur WordPress 7.0+ et que vous souhaitez utiliser le mode auto :
 
@@ -112,7 +112,7 @@ Si vous êtes sur WordPress 7.0+ et que vous souhaitez utiliser le mode auto :
 
 Superdav AI Agent découvrira et enregistrera automatiquement les capacités tierces.
 
-### Passer au mode manuel
+### Passer au mode manuel {#switch-to-manual-mode}
 
 Si vous souhaitez contrôler manuellement quelles capacités se chargent :
 
@@ -122,7 +122,7 @@ Si vous souhaitez contrôler manuellement quelles capacités se chargent :
 4. Cliquez sur **Enregistrer**
 5. Modifiez votre fichier de configuration pour spécifier les capacités à charger
 
-### Passer au mode hérité
+### Passer au mode hérité {#switch-to-legacy-mode}
 
 Si vous avez besoin de compatibilité héritée :
 
@@ -131,9 +131,9 @@ Si vous avez besoin de compatibilité héritée :
 3. Sélectionnez **Hérité**
 4. Cliquez sur **Enregistrer**
 
-## Avantages du mode auto
+## Avantages du mode auto {#benefits-of-auto-mode}
 
-### Découverte automatique
+### Découverte automatique {#automatic-discovery}
 
 Les capacités sont automatiquement découvertes à partir de :
 
@@ -144,7 +144,7 @@ Les capacités sont automatiquement découvertes à partir de :
 
 Aucun enregistrement manuel n'est nécessaire.
 
-### Intégration native
+### Intégration native {#native-integration}
 
 Les capacités s'intègrent à l'API Abilities de WordPress :
 
@@ -153,67 +153,67 @@ Les capacités s'intègrent à l'API Abilities de WordPress :
 - Compatible avec d'autres plugins utilisant l'API Abilities
 - Pérenne à mesure que WordPress évolue
 
-### Gestion simplifiée
+### Gestion simplifiée {#simplified-management}
 
 - Aucun fichier de configuration à modifier
 - Aucun enregistrement de capacité manuel
 - Les contrôles de visibilité des capacités fonctionnent automatiquement
 - Les notifications d'administration vous alertent sur les capacités non classifiées
 
-### Meilleures performances
+### Meilleures performances {#better-performance}
 
 - Les capacités sont mises en cache
 - Chargées paresseusement (lazy-loaded) selon les besoins
 - Optimisé pour WordPress 7.0+
 
-## Parcours de migration
+## Parcours de migration {#migration-path}
 
-### Si vous êtes sur WordPress 6.x
+### Si vous êtes sur WordPress 6.x {#if-youre-on-wordpress-6x}
 
 1. **Mettez à niveau vers WordPress 7.0+** (lorsque vous êtes prêt)
 2. **Mettez à jour Superdav AI Agent** à v1.12.0+
 3. **Changez le mode tiers en Auto** (facultatif ; le mode hérité fonctionne toujours)
 4. **Vérifiez la visibilité des capacités** pour garantir des contrôles d'accès appropriés
 
-### Si vous êtes sur WordPress 7.0+
+### Si vous êtes sur WordPress 7.0+ {#if-youre-on-wordpress-70}
 
 1. **Mettez à jour Superdav AI Agent** à v1.12.0+
 2. **Vérifiez que le mode tiers est réglé sur Auto** (il devrait l'être par défaut)
 3. **Vérifiez la visibilité des capacités** pour garantir des contrôles d'accès appropriés
 4. **Testez les capacités tierces** pour confirmer qu'elles fonctionnent
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Les capacités ne se chargent pas en mode auto
+### Les capacités ne se chargent pas en mode auto {#abilities-arent-loading-in-auto-mode}
 
 - Vérifiez que vous êtes sur WordPress 7.0+
 - Assurez-vous que le mode tiers est réglé sur « Auto »
 - Vérifiez que le plugin fournissant la capacité est actif
 - Consultez les journaux d'erreurs de WordPress pour les erreurs d'enregistrement
 
-### Je veux conserver le mode hérité
+### Je veux conserver le mode hérité {#i-want-to-keep-legacy-mode}
 
 - Allez dans **Paramètres** → **Mode tiers**
 - Sélectionnez **Hérité**
 - Cliquez sur **Enregistrer**
 - Le mode hérité continuera de fonctionner
 
-### Mes capacités personnalisées n'apparaissent pas
+### Mes capacités personnalisées n'apparaissent pas {#my-custom-abilities-arent-showing}
 
 - Vérifiez qu'elles sont enregistrées via les hooks de WordPress
 - Assurez-vous qu'elles implémentent correctement l'API Abilities
 - Consultez les journaux d'erreurs de WordPress
 - Utilisez la page d'administration **Visibilité des capacités** pour voir toutes les capacités enregistrées
 
-### Je reçois des notifications de « capacité non classifiée »
+### Je reçois des notifications de « capacité non classifiée » {#im-getting-unclassified-ability-notices}
 
 - C'est normal pour les nouvelles capacités tierces
 - Revoyez-les et classez-les dans la notification d'administration
 - Consultez **Visibilité des capacités** pour plus de détails sur la classification
 
-## Compatibilité ascendante
+## Compatibilité ascendante {#backward-compatibility}
 
-### Configurations existantes
+### Configurations existantes {#existing-configurations}
 
 Si vous avez des configurations de capacités tierces existantes :
 
@@ -223,33 +223,33 @@ Si vous avez des configurations de capacités tierces existantes :
 
 Pour conserver votre configuration personnalisée, restez en mode Manuel ou Hérité.
 
-### Calendrier de dépréciation
+### Calendrier de dépréciation {#deprecation-timeline}
 
 - **v1.12.0** : Les modes Hérité et Manuel sont toujours entièrement pris en charge
 - **v1.13.0+** : Le mode Hérité pourrait afficher des notifications de dépréciation
 - **v2.0.0** : Le mode Hérité pourrait être supprimé (à déterminer)
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
-### Pour les nouvelles installations
+### Pour les nouvelles installations {#for-new-installations}
 
 - Utilisez le mode auto (c'est le défaut)
 - Laissez Superdav AI Agent découvrir les capacités automatiquement
 - Utilisez Visibilité des capacités pour contrôler l'accès
 
-### Pour les installations existantes
+### Pour les installations existantes {#for-existing-installations}
 
 - Mettez à niveau vers WordPress 7.0+ dès que possible
 - Passez au mode auto pour une gestion simplifiée
 - Revoyez et classez les capacités à l'aide de Visibilité des capacités
 
-### Pour les capacités personnalisées
+### Pour les capacités personnalisées {#for-custom-abilities}
 
 - Enregistrez les capacités via les hooks de WordPress (API Abilities)
 - Évitez les registres de capacités personnalisés
 - Testez sur WordPress 7.0+ avec le mode auto
 
-## Prochaines étapes
+## Prochaines étapes {#next-steps}
 
 1. **Vérifiez votre version de WordPress** : Assurez-vous d'être sur 7.0+ pour le mode auto
 2. **Vérifiez votre mode tiers** : Allez dans Paramètres et vérifiez votre mode actuel
@@ -257,7 +257,7 @@ Pour conserver votre configuration personnalisée, restez en mode Manuel ou Hér
 4. **Classez les capacités** : Revoyez et classez toutes les capacités non classifiées
 5. **Testez** : Vérifiez que vos capacités tierces fonctionnent correctement
 
-## Sujets connexes
+## Sujets connexes {#related-topics}
 
 - **Visibilité des capacités** : Contrôler quelles capacités sont exposées où
 - **API Abilities de WordPress** : Apprendre l'enregistrement natif des capacités WordPress

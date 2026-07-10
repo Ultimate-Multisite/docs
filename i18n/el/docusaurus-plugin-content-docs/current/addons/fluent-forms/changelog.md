@@ -3,7 +3,7 @@ title: Fluent Forms Κατάλογος Αλλαγών
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Ημερολόγιο Αλλαγών Fluent Forms
+# Ημερολόγιο Αλλαγών Fluent Forms {#fluent-forms-changelog}
 
 Έκδοση: 2.0.1 - Έκβησε στις 2025-09-28
 

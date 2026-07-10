@@ -1,31 +1,45 @@
 ---
 title: 멀티 테넌시
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# 멀티 테넌시 {#multi-tenancy}
 
-서브사이트를 서버와 데이터베이스에 분산시켜 성능과 보안을 향상시킵니다
+성능과 보안을 위해 하위 사이트를 서버와 데이터베이스에 분산합니다
 
-## Requirements
+## Version 1.2.0 릴리스 주요 내용 {#version-120-release-highlights}
 
-- WordPress 5.3 or higher
-- PHP 7.4 or higher
-- Multisite Ultimate plugin (active)
+Multi-Tenancy 1.2.0은 프로덕션 격리 워크플로를 위한 독립 테넌트 기반을 추가합니다:
 
-## Installation
+- 짧은 수명과 재생 공격 방지 기능을 갖춘 SSO 방문을 사용하는 상태 비저장 테넌트 자동 로그인.
+- 독립 테넌트를 위한 하위 사이트별 데이터베이스 및 파일시스템 격리.
+- 호스트 인식 테넌트 프로비저닝을 위한 Hostinger 멀티 테넌시 기능.
+- 레거시 데이터 검사 및 비동기 푸시 처리를 위한 독립 마이그레이션 검증 게이트.
+- Bedrock, FrankenPHP 및 localhost 설치를 위한 구성 가능한 동일 머신 데이터베이스 호스트 바인딩.
+- 테넌트 부트스트랩, 데이터베이스 작성기, 스키마 부트스트랩 및 사용자 프로비저닝 개선.
+- 테넌트 자격 증명을 정리하는 더 안전한 독립 테넌트 해체.
 
-1. Upload the addon files to your `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure the addon settings in the network admin
+사용자 가이드는 [독립 마이그레이션 워크플로](/user-guide/getting-started/sovereign-migration-workflow), [멀티 테넌시 격리](/user-guide/configuration/multi-tenancy-isolation), [독립 테넌트 운영](/user-guide/administration/sovereign-tenant-operations)을 참조하세요.
 
-## Development
+## 요구 사항 {#requirements}
 
-### Setup
+- WordPress 5.3 이상
+- PHP 7.4 이상
+- Multisite Ultimate plugin(활성화됨)
+
+## 설치 {#installation}
+
+1. 애드온 파일을 `/wp-content/plugins/` 디렉터리에 업로드합니다
+2. WordPress의 'Plugins' 메뉴를 통해 plugin을 활성화합니다
+3. 네트워크 관리자에서 애드온 설정을 구성합니다
+
+## 개발 {#development}
+
+### 설정 {#setup}
 
 ```bash
 # Install dependencies
@@ -46,78 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### 프로젝트 구조 {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
-│   ├── bootstrap.php            # Test bootstrap
-│   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+├── inc/                          # PHP 클래스 및 포함 파일
+│   ├── class-multisite-ultimate-updater.php  # 업데이트 처리기
+│   └── class-multi_tenancy-main.php             # 주요 기능
+├── tests/                        # 단위 테스트
+│   ├── bootstrap.php            # 테스트 부트스트랩
+│   ├── class-*-base.php         # 기본 테스트 클래스
+│   └── class-*-test.php         # 테스트 사례
+├── views/                       # 템플릿 파일
+├── assets/                      # 정적 자산
+│   ├── css/                     # 스타일시트
+│   ├── js/                      # JavaScript 파일
+│   └── images/                  # 이미지
+├── lang/                        # 언어 파일
+├── composer.json                # PHP 의존성
+├── package.json                 # Node.js 의존성
+├── phpunit.xml.dist             # PHPUnit 구성
+├── .phpcs.xml.dist              # 코드 표준 구성
+└── rector.php                   # 코드 현대화 규칙
 ```
 
-### Testing
+### 테스트 {#testing}
 
-이 애드온은 포괄적인 테스트 프레임워크를 포함합니다:
+이 애드온에는 포괄적인 테스트 프레임워크가 포함되어 있습니다:
 
-- **단위 테스트**: PHPUnit 기반 테스트와 WordPress 테스트 스위트
-- **Base Test Class**: 일반 테스트 시나리오에 대한 헬퍼 메서드를 제공합니다
-- **Test Coverage**: 코드 커버리지를 추적하도록 구성되었습니다
-- **Multisite Testing**: 테스트가 멀티사이트 환경에서 실행됩니다
+- **단위 테스트**: WordPress 테스트 스위트를 사용하는 PHPUnit 기반 테스트
+- **기본 테스트 클래스**: 일반적인 테스트 시나리오를 위한 도우미 메서드 제공
+- **테스트 범위**: 코드 범위를 추적하도록 구성됨
+- **멀티사이트 테스트**: 테스트는 멀티사이트 환경에서 실행됨
 
-### Code Standards
+### 코드 표준 {#code-standards}
 
-- **WordPress Coding Standards**: PHPCS를 통해 적용됩니다
-- **PHP 7.4+ Compatibility**: 최신 PHP 기능이 지원됩니다
-- **Static Analysis**: 타입 검사를 위한 PHPStan 통합
-- **Code Modernization**: PHP 업그레이드를 위한 Rector 규칙
+- **WordPress 코딩 표준**: PHPCS를 통해 적용됨
+- **PHP 7.4+ 호환성**: 최신 PHP 기능 지원
+- **정적 분석**: 유형 검사를 위한 PHPStan 통합
+- **코드 현대화**: PHP 업그레이드를 위한 Rector 규칙
 
-### Build System
+### 빌드 시스템 {#build-system}
 
-- **Asset Processing**: CSS/JS 파일 최소화
-- **Translation**: POT 파일 생성
-- **Packaging**: 배포용 아카이브 생성
-- **Development Mode**: 디버깅용 미최적화 자산
+- **자산 처리**: CSS/JS 파일 축소
+- **번역**: POT 파일 생성
+- **패키징**: 배포용 아카이브 생성
+- **개발 모드**: 디버깅용 축소되지 않은 자산
 
-## Configuration
+## 구성 {#configuration}
 
-이 애드온은 네트워크 관리자 인터페이스를 통해 액세스할 수 있는 다양한 구성 옵션을 지원합니다.
+이 애드온은 네트워크 관리자 인터페이스를 통해 접근할 수 있는 다양한 구성 옵션을 지원합니다.
 
-## Hooks and Filters
+### 독립 테넌트 구성 {#sovereign-tenant-configuration}
 
-### Actions
+독립 테넌트의 경우, 테넌트로 트래픽을 라우팅하기 전에 테넌트 데이터베이스, 파일시스템 루트, 데이터베이스 호스트 바인딩 및 호스트 기능을 구성하세요. 데이터베이스 자격 증명, 호스트 바인딩, 라우팅 또는 사용자 프로비저닝에 영향을 주는 모든 변경 후에는 마이그레이션 검증을 실행하세요.
 
-- `ultimate-multisite-addon-template_init` - 애드온 초기화 후 실행됩니다
-- `ultimate-multisite-addon-template_loaded` - 모든 애드온 파일이 로드된 후 실행됩니다
+테넌트 런타임과 데이터베이스 권한이 로컬 소켓 또는 동일 머신 접근을 예상하는 경우에만 `localhost`를 사용하세요. 제공업체가 구성한 권한 부여 호스트가 그것인 경우 `127.0.0.1` 또는 서비스 호스트 이름을 사용하세요.
 
-### Filters
+### Hostinger 기능 {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - 애드온 설정을 수정합니다
-- `ultimate-multisite-addon-template_enabled` - 애드온 활성화/비활성화 상태를 재정의합니다
+Hostinger 멀티 테넌시 기능은 공유 Hostinger 통합 토큰과 함께 작동합니다. 검증 전에 도메인이 hPanel에 있는지, DNS가 Hostinger 계정을 가리키는지, 테넌트 데이터베이스 설정이 hPanel과 일치하는지 확인하세요.
 
-## License
+## 훅 및 필터 {#hooks-and-filters}
 
-이 애드온은 GPL v3 또는 이후 버전으로 라이선스가 부여됩니다.
+### 액션 {#actions}
 
-## Support
+- `ultimate-multisite-addon-template_init` - 애드온 초기화 후 실행됨
+- `ultimate-multisite-addon-template_loaded` - 모든 애드온 파일이 로드된 후 실행됨
 
-지원 및 문서는 [MultisiteUltimate.com](https://multisiteultimate.com)을 방문하십시오.
+### 필터 {#filters}
 
-## Changelog
+- `ultimate-multisite-addon-template_settings` - 애드온 설정 수정
+- `ultimate-multisite-addon-template_enabled` - 애드온 활성화/비활성화 상태 재정의
 
-- Version 1.0.1 (2025-09-28): 접두사를 ultimate-multisite로 변경; 텍스트 도메인 업데이트; 버전 업그레이드.
-- Version  (2025-09-28): 접두사를 ultimate-multisite로 변경; 텍스트 도메인 업데이트; 버전 업그레이드.
+## 라이선스 {#license}
+
+이 애드온은 GPL v3 이상에 따라 라이선스가 부여됩니다.
+
+## 지원 {#support}
+
+지원 및 문서는 [MultisiteUltimate.com](https://multisiteultimate.com)을 방문하세요
+## 변경 로그 {#changelog}
+
+- Version 1.2.0 (2026-06-03): 상태 비저장 테넌트 자동 로그인, Hostinger 멀티 테넌시 기능, 하위 사이트별 데이터베이스 및 파일시스템 격리, 독립 마이그레이션 검증 게이트, 테넌트 부트스트랩/데이터베이스 작성기 개선, 구성 가능한 MySQL 호스트 바인딩 및 더 안전한 독립 테넌트 해체를 추가합니다.
+
+- Version 1.0.1 (2025-09-28): 접두사를 ultimate-multisite로 변경하고, 텍스트 도메인을 업데이트하며, 버전을 올립니다.
+
+
+- Version  (2025-09-28): 접두사를 ultimate-multisite로 변경하고, 텍스트 도메인을 업데이트하며, 버전을 올립니다.

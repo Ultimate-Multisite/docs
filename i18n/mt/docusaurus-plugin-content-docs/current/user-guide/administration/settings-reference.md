@@ -1,40 +1,46 @@
 ---
-title: Referenza tal-għażliet
+title: Referenza tas-settings
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenza Setting
+# Referenza tas-Settings {#settings-reference}
 
-Questa pagina traccia i setting (impostazioni) che influenzano l'amministrazione quotidiana e le recenti modifiche di comportamento in Ultimate Multisite.
+Din il-paġna ssegwi settings li jaffettwaw l-amministrazzjoni ta’ kuljum u bidliet reċenti fl-imġiba f’Ultimate Multisite.
 
-## Altre Opzioni
+## Għażliet Oħra {#other-options}
 
-L'area **Other Options** (Altre Opzioni) appare sotto **Ultimate Multisite > Settings > Login & Registration**.
+Iż-żona **Għażliet Oħra** tidher taħt **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setting | Descrizione |
+| Setting | Deskrizzjoni |
 |---|---|
-| **Enable Jumper** (Abilita Jumper) | Mostra lo strumento di navigazione rapida Jumper nell'area admin. Usalo per saltare direttamente alle schermate di Ultimate Multisite, agli oggetti della rete e alle destinazioni admin supportate. Disabilitalo se non vuoi che questo collegamento sia visibile. |
+| **Enable Jumper** | Turi l-għodda ta’ navigazzjoni rapida Jumper fiż-żona tal-amministratur. Użaha biex taqbeż direttament għall-iskrins ta’ Ultimate Multisite, oġġetti tan-network, u destinazzjonijiet tal-amministratur appoġġjati. Iddiżattivaha jekk ma tridx li dan is-shortcut ikun viżibbli. |
 
-## Reporting d'errore e telemetria
+## Rappurtar ta’ żbalji u telemetrija {#error-reporting-and-telemetry}
 
-L'impostazione precedente per l'iscrizione al reporting degli errori è stata rimossa dalla pagina delle impostazioni. La telemetria anonima è disabilitata e non c'è un interruttore nell'interfaccia utente per attivarla.
+Is-setting preċedenti ta’ opt-in għar-rappurtar ta’ żbalji tneħħa mill-paġna tas-settings. It-telemetrija anonima hija ddiżattivata u m’hemm l-ebda toggle tal-UI biex tattivaha.
 
-Se mantieni runbook interni o screenshot per la pagina delle impostazioni, rimuovi i riferimenti al vecchio campo di iscrizione al reporting degli errori in modo che gli amministratori non cerchino una impostazione che non è più presente.
+Jekk iżżomm runbooks interni jew screenshots għall-paġna tas-settings, neħħi referenzi għall-field il-qadim ta’ opt-in għar-rappurtar ta’ żbalji sabiex l-amministraturi ma jfittxux setting li m’għadux preżenti.
 
-## Impostazioni Import/Export
+## Settings ta’ Import/Export {#importexport-settings}
 
-La scheda **Import/Export** descrive quali setting controlla e collega direttamente a **Ultimate Multisite > Site Export** per gli archivi del sito e della rete. Usa la scheda delle impostazioni per la configurazione import/export, usa **Tools > Export & Import** per il flusso di lavoro di export/import del singolo sito, e usa lo strumento Site Export quando hai bisogno di un archivio completo di Network Export.
+It-tab tas-settings **Import/Export** tiddeskrivi liema settings tikkontrolla u torbot direttament ma’ **Ultimate Multisite > Site Export** għall-arkivji tas-sit u tan-network. Uża t-tab tas-settings għall-konfigurazzjoni ta’ import/export, uża **Tools > Export & Import** għall-workflow ta’ esportazzjoni/importazzjoni għal sit wieħed, u uża l-għodda Site Export meta jkollok bżonn arkivju sħiħ ta’ Network Export.
 
-## Impostazioni con connettori AI provider
+## Twissija dwar il-bilanċ ta’ Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Le impostazioni dei connettori AI provider espongono ora solo le pool di account OAuth supportate:
+Meta l-addon Domain Seller ikun imqabbad ma’ HostAfrica, l-amministraturi tan-network issa jaraw twissija li tista’ titwarrab dwar bilanċ baxx meta l-bilanċ tal-account tar-reseller ikun baxx wisq għal proċessar affidabbli ta’ reġistrazzjoni jew tiġdid ta’ domains.
 
-| Provider | Setup flow |
+Ittratta dan l-avviż bħala twissija operattiva: żid il-bilanċ tar-reseller HostAfrica qabel ma taċċetta aktar reġistrazzjonijiet ta’ domains imħallsa, imbagħad erġa’ lura għas-settings ta’ Domain Seller jew għall-iskrin tal-monitoraġġ tad-domains biex tikkonferma li r-reġistrazzjonijiet u t-tiġdid jistgħu jkomplu b’mod normali.
+
+## Settings tal-connectors tal-fornituri tal-AI {#ai-provider-connector-settings}
+
+Is-settings tal-connectors tal-fornituri tal-AI issa jesponu biss il-pools ta’ accounts OAuth appoġġjati:
+
+| Fornitur | Fluss tas-setup |
 |---|---|
-| **Anthropic Max** | Iconnect una o aktar konti Anthropic Max b'attrapassa l-puls għall-OAuth. Uża l-fallback manual OAuth meta browser sandboxed ma jkun qabel jkompletta l-redirect awtomatikament. |
-| **OpenAI ChatGPT/Codex** | Iconnecti konti ChatGPT permezz tal-workflow pool OAuth isiem. Operazzjonijiet supportati minn il-connector jistgħu użaw tool calls ta ChatGPT Codex dopo li jkunu konetti l-konti. |
-| **Google AI Pro** | Iconnecti konti Google AI Pro permezz OAuth, u poi refresh il-connector meta l-lista tal-konti ma tħallix jgħatti minnna immediatament. |
+| **Anthropic Max** | Qabbad account wieħed jew aktar ta’ Anthropic Max bil-buttuna OAuth. Uża l-fallback manwali ta’ OAuth meta browser sandboxed ma jkunx jista’ jtemm ir-redirect awtomatikament. |
+| **OpenAI ChatGPT/Codex** | Qabbad accounts ta’ ChatGPT permezz tal-istess workflow tal-pool OAuth. Operazzjonijiet appoġġjati mill-connector jistgħu jużaw sejħiet tal-għodda ChatGPT Codex wara li l-account ikun imqabbad. |
+| **Google AI Pro** | Qabbad accounts ta’ Google AI Pro permezz ta’ OAuth, imbagħad aġġorna l-connector jekk il-lista tal-accounts ma tiġġeddidx minnufih. |
 
-Cursor Pro m'għodda x-provider supportati. Elimina screenshot interni qad huma vecchi, runbooks, jew passaggi ta onboarding li jgħandu fuq feidijiet ta setup Cursor Pro jew l-connector paths.
+Cursor Pro m’għadux fornituri appoġġjat. Neħħi screenshots interni qodma, runbooks, jew passi ta’ onboarding li jsemmu fields tas-setup ta’ Cursor Pro jew paths tal-connector.
 
-Meta tgħaddi jew tixleb konti provider, iġibrat indirizz email valido għall-konti li qed jiġu refreshati jew tixleb u savwa s-setting tal-provider qabel ma tiġi testati l-operazzjonijiet li jiddejjih il-connector.
+Meta żżid jew tneħħi accounts tal-fornituri, daħħal indirizz tal-email validu għall-account li qed jiġi aġġornat jew imħassar u ssejvja s-settings tal-fornitur qabel ma tittestja operazzjonijiet appoġġjati mill-connector.

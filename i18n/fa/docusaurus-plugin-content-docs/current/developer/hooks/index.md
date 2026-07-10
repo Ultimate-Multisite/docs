@@ -1,74 +1,194 @@
 ---
 title: مرجع هوک‌ها
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع هوک‌ها
+# مرجع Hooks {#hooks-reference}
 
-مستندات تولید شده خودکار برای تمام **۵۹ اکشن** و **۱۱۵ فیلتر** در Ultimate Multisite.
+مستندات تولیدشدهٔ خودکار برای همهٔ **59 action** و **118 filter** در Ultimate Multisite.
 
-## Actions
+## Actions {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — قبل از ریدایرکت احراز هویت اجرا می‌شود.
-- [set_auth_cookie](./Actions/set_auth_cookie) — بلافاصله قبل از تنظیم کوکی احراز هویت اجرا می‌شود.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — بلافاصله قبل از تنظیم کوکی احراز هویت لاگین شده اجرا می‌شود.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — به توسعه‌دهندگان اجازه می‌دهد تا با استفاده از پلاگین‌های wp، ادغام‌کننده‌های میزبان (host provider) خود را اضافه کنند.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — زمانی که تمام وابستگی‌ها بارگذاری شدند، فعال می‌شود.
-- [wu_activation](./Actions/wu_activation) — به سایر بخش‌های پلاگین اجازه می‌دهد تا روتین‌های فعال‌سازی خود را متصل کنند.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — به توسعه‌دهندگان پلاگین اجازه می‌دهد تا توابع خود را پس از اینکه یک کاربر یا سوپر ادمین قالب سایت را تغییر داد، هوک کنند.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — در برخی موارد، ما نیاز داریم که محتوای اضافی بارگذاری کنیم تا عملیات‌ها را مدیریت کنیم.
-- [wu_before_search_models](./Actions/wu_before_search_models) — قبل از پردازش درخواست جستجو اجرا می‌شود.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — به توسعه‌دهندگان اجازه می‌دهد تا تغییرات اضافی روی آبجکت تسویه حساب (checkout object) ایجاد کنند.
-- [wu_cart_setup](./Actions/wu_cart_setup) — به توسعه‌دهندگان اجازه می‌دهد تا تغییرات اضافی روی آبجکت تسویه حساب ایجاد کنند.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — قبل از اضافه شدن یک فیلد به فرم تسویه حساب اجرا می‌شود.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — به توسعه‌دهندگان اجازه می‌دهد تا هوک‌های اضافی را فعال کنند.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — قبل از اینکه ما فرآیند تسویه حساب را انجام دهیم.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — پس از اینکه سفارش تسویه حساب به طور کامل جمع‌آوری شد، اجرا می‌شود.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — به توسعه‌دهندگان پلاگین اجازه می‌دهد تا ویجت‌هایی را به پنل داشبورد شبکه (Network Dashboard Panel) اضافه کنند.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — به توسعه‌دهندگان پلاگین اجازه می‌دهد تا ویجت‌هایی را به پنل داشبورد شبکه اضافه کنند.
-- [wu_deactivation](./Actions/wu_deactivation) — به سایر بخش‌های پلاگین اجازه می‌دهد تا روتین‌های غیرفعال‌سازی خود را متصل کنند.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — به توسعه‌دهندگان پلاگین اجازه می‌دهد تا اکشن‌هایی به فرآیند حذف اضافه کنند.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — زمانی که یک دامنه به دامنه اصلی یک سایت تبدیل می‌شود، اجرا می‌شود.
-- [wu_domain_created](./Actions/wu_domain_created) — زمانی که یک نگاشت دامنه (domain mapping) جدید اضافه می‌شود، فعال می‌شود.
-- [wu_get_domain_name_by_id](./Actions/wu_get_domain_name_by_id) — به نام دامنه با شناسه می‌رسد.
-- [wu_get_domain_name_by_slug](./Actions/wu_get_domain_name_by_slug) — به نام دامنه با اسلاگ می‌رسد.
-- [wu_get_domain_name_by_url](./Actions/wu_get_domain_name_by_url) — به نام دامنه با آدرس URL می‌رسد.
-- [wu_get_domain_name_by_user_id](./Actions/wu_get_domain_name_by_user_id) — به نام دامنه با شناسه کاربر می‌رسد.
-- [wu_get_domain_name_by_site_id](./Actions/wu_get_domain_name_by_site_id) — به نام دامنه با شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_group_id](./Actions/wu_get_domain_name_by_group_id) — به نام دامنه با شناسه گروه می‌رسد.
-- [wu_get_domain_name_by_parent_id](./Actions/wu_get_domain_name_by_parent_id) — به نام دامنه با شناسه والد می‌رسد.
-- [wu_get_domain_name_by_alias](./Actions/wu_get_domain_name_by_alias) — به نام دامنه با نام مستعار می‌رسد.
-- [wu_get_domain_name_by_custom_field](./Actions/wu_get_domain_name_by_custom_field) — به نام دامنه با فیلد سفارشی می‌رسد.
-- [wu_get_domain_name_by_meta_key](./Actions/wu_get_domain_name_by_meta_key) — به نام دامنه با کلید متادیتا می‌رسد.
-- [wu_get_domain_name_by_meta_value](./Actions/wu_get_domain_name_by_meta_value) — به نام دامنه با مقدار متادیتا می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id](./Actions/wu_get_domain_name_by_user_id_and_site_id) — به نام دامنه با شناسه کاربر و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id](./Actions/wu_get_domain_name_by_group_id_and_site_id) — به نام دامنه با شناسه گروه و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_parent_id_and_site_id](./Actions/wu_get_domain_name_by_parent_id_and_site_id) — به نام دامنه با شناسه والد و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_alias_and_site_id](./Actions/wu_get_domain_name_by_alias_and_site_id) — به نام دامنه با نام مستعار و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_custom_field_and_site_id](./Actions/wu_get_domain_name_by_custom_field_and_site_id) — به نام دامنه با فیلد سفارشی و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_meta_key_and_site_id](./Actions/wu_get_domain_name_by_meta_key_and_site_id) — به نام دامنه با کلید متادیتا و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_meta_value_and_site_id](./Actions/wu_get_domain_name_by_meta_value_and_site_id) — به نام دامنه با مقدار متادیتا و شناسه سایت می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_group_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_group_id) — به نام دامنه با شناسه کاربر، شناسه سایت و شناسه گروه می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_parent_id) — به نام دامنه با شناسه گروه، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_alias_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_alias_and_site_id_and_parent_id) — به نام دامنه با نام مستعار، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_custom_field_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_custom_field_and_site_id_and_parent_id) — به نام دامنه با فیلد سفارشی، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_meta_key_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_meta_key_and_site_id_and_parent_id) — به نام دامنه با کلید متادیتا، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_meta_value_and_site_id_and_parent_id](./Actions/wu_get_domain_name_by_meta_value_and_site_id_and_parent_id) — به نام دامنه با مقدار متادیتا، شناسه سایت و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت، شناسه گروه، شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_alias](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_alias) — به نام دامنه با شناسه کاربر، شناسه سایت، شناسه گروه و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_custom_field_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_custom_field_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت، فیلد سفارشی و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_meta_key_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_meta_key_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت، کلید متادیتا و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_meta_value_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_meta_value_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت، مقدار متادیتا و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_custom_field_and_parent_id](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_custom_field_and_parent_id) — به نام دامنه با شناسه گروه، شناسه سایت، فیلد سفارشی و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_meta_key_and_parent_id](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_meta_key_and_parent_id) — به نام دامنه با شناسه گروه، شناسه سایت، کلید متادیتا و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_meta_value_and_parent_id](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_meta_value_and_parent_id) — به نام دامنه با شناسه گروه، شناسه سایت، مقدار متادیتا و شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_alias_and_parent_id](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_group_id_and_alias_and_parent_id) — به نام دامنه با شناسه کاربر، شناسه سایت، شناسه گروه، نام مستعار، شناسه والد می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_custom_field_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_custom_field_and_parent_id_and_alias) — به نام دامنه با شناسه کاربر، شناسه سایت، فیلد سفارشی، شناسه والد و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_meta_key_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_meta_key_and_parent_id_and_alias) — به نام دامنه با شناسه کاربر، شناسه سایت، کلید متادیتا، شناسه والد و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_custom_field_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_custom_field_and_parent_id_and_alias) — به نام دامنه با شناسه گروه، شناسه سایت، فیلد سفارشی، شناسه والد و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_meta_key_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_meta_key_and_parent_id_and_alias) — به نام دامنه با شناسه گروه، شناسه سایت، کلید متادیتا، شناسه والد و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_user_id_and_site_id_and_meta_value_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_user_id_and_site_id_and_meta_value_and_parent_id_and_alias) — به نام دامنه با شناسه کاربر، شناسه سایت، مقدار متادیتا، شناسه والد و نام مستعار می‌رسد.
-- [wu_get_domain_name_by_group_id_and_site_id_and_meta_value_and_parent_id_and_alias](./Actions/wu_get_domain_name_by_group_id_and_site_id_and_meta_value_and_parent_id_and_alias) — به نام دامنه با شناسه گروه، شناسه سایت، مقدار متادیتا، شناسه والد و نام مستعار می‌رسد.
+- [auth_redirect](./Actions/auth_redirect) — پیش از هدایت احراز هویت اجرا می‌شود.
+- [set_auth_cookie](./Actions/set_auth_cookie) — بلافاصله پیش از تنظیم کوکی احراز هویت اجرا می‌شود.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — بلافاصله پیش از تنظیم کوکی احراز هویتِ واردشده اجرا می‌شود.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — به توسعه‌دهندگان اجازه می‌دهد ادغام‌های ارائه‌دهنده میزبان خود را از طریق pluginهای wp اضافه کنند.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — زمانی فعال می‌شود که همه وابستگی‌ها بارگذاری شده باشند
+- [wu_activation](./Actions/wu_activation) — به بخش‌های دیگر plugin اجازه می‌دهد روال‌های خود را برای فعال‌سازی متصل کنند
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — به توسعه‌دهندگان plugin اجازه می‌دهد پس از تغییر قالب سایت توسط کاربر یا super admin، توابع را hook کنند
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — در برخی موارد، لازم است منابع اضافی را برای مدیریت کنش‌ها بارگذاری کنیم.
+- [wu_before_search_models](./Actions/wu_before_search_models) — پیش از پردازش درخواست جست‌وجو اجرا می‌شود.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — به توسعه‌دهندگان اجازه می‌دهد تغییرات اضافی در شیء تسویه‌حساب ایجاد کنند.
+- [wu_cart_setup](./Actions/wu_cart_setup) — به توسعه‌دهندگان اجازه می‌دهد تغییرات اضافی در شیء تسویه‌حساب ایجاد کنند.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — پیش از افزودن یک فیلد به فرم تسویه‌حساب اجرا می‌شود.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — به توسعه‌دهندگان اجازه می‌دهد hookهای اضافی را فعال کنند.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — پیش از آنکه تسویه‌حساب را پردازش کنیم.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — پس از آنکه سفارش تسویه‌حساب به‌طور کامل سرهم‌بندی شد اجرا می‌شود.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — به توسعه‌دهندگان plugin اجازه می‌دهد widgetها را به پنل Network Dashboard اضافه کنند.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — به توسعه‌دهندگان plugin اجازه می‌دهد widgetها را به پنل Network Dashboard اضافه کنند.
+- [wu_deactivation](./Actions/wu_deactivation) — به بخش‌های دیگر plugin اجازه می‌دهد روال‌های خود را برای غیرفعال‌سازی متصل کنند
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — به توسعه‌دهندگان plugin اجازه می‌دهد کنش‌هایی را به فرایند حذف اضافه کنند
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — زمانی اجرا می‌شود که یک دامنه به دامنه اصلی یک سایت تبدیل شود.
+- [wu_domain_created](./Actions/wu_domain_created) — زمانی فعال می‌شود که یک نگاشت دامنه جدید اضافه شود.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — پس از بارگذاری Domain Mapping اصلی ما اجرا شد
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — برخی pluginها پیش از فعال شدن نگاشت، URL را ذخیره می‌کنند یا URLها را به شیوه‌ای متفاوت می‌سازند که شامل نمی‌شود
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — به توسعه‌دهندگان اجازه می‌دهد پس از وقوع تکثیر سایت hook کنند.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — به توسعه‌دهندگان plugin اجازه می‌دهد hookهای اضافی اضافه کنند
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — hook برای پاک‌سازی اضافی
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — پیش از مدیریت درخواست modal افزودن دامنه جدید اجرا می‌شود.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — به توسعه‌دهندگان plugin اجازه می‌دهد در صورت نیاز داده‌های meta را به روش‌های متفاوت ذخیره کنند.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — به توسعه‌دهندگان plugin اجازه می‌دهد در صورت نیاز داده‌های meta کاربر را به روش‌های متفاوت ذخیره کنند.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — زمانی اجرا می‌شود که یک توکن magic link نامعتبر مواجه شود.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — پس از ورود کاربر از طریق magic link اجرا می‌شود.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — به توسعه‌دهندگان plugin اجازه می‌دهد هنگام اضافه شدن مشتری، کارهای اضافی انجام دهند.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — پس از ثبت توانایی‌های MCP برای یک موجودیت اجرا می‌شود.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — پس از مقداردهی اولیه adapter MCP اجرا می‌شود.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — پس از لغو عضویت فعال می‌شود.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — پس از تمدید عضویت فعال می‌شود.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — پیش از لغو عضویت فعال می‌شود.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — پیش از تمدید عضویت فعال می‌شود.
+- [wu_model_post_save](./Actions/wu_model_post_save) — پس از ذخیره شدن یک شیء در پایگاه داده اجرا می‌شود.
+- [wu_page_added](./Actions/wu_page_added) — به توسعه‌دهندگان plugin اجازه می‌دهد هنگام ثبت صفحه‌ها، کارهای اضافی اجرا کنند.
+- [wu_page_after_render](./Actions/wu_page_after_render) — به توسعه‌دهندگان plugin اجازه می‌دهد پس از چاپ صفحه، محتوای اضافی اضافه کنند
+- [wu_page_before_render](./Actions/wu_page_before_render) — به توسعه‌دهندگان plugin اجازه می‌دهد پیش از چاپ صفحه، محتوای اضافی اضافه کنند.
+- [wu_page_load](./Actions/wu_page_load) — به توسعه‌دهندگان plugin اجازه می‌دهد hookهای اضافی به صفحه‌های ما اضافه کنند.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — به توسعه‌دهندگان plugin اجازه می‌دهد پس از چاپ صفحه، محتوای اضافی اضافه کنند
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — به توسعه‌دهندگان plugin اجازه می‌دهد پیش از چاپ صفحه، محتوای اضافی اضافه کنند.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — به توسعه‌دهندگان plugin اجازه می‌دهد hookهای اضافی به صفحه‌های ما اضافه کنند.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — پس از ثبت widgetها برای این صفحه اجرا می‌شود.
 
-(Note: The provided list of functions seems to be related to retrieving domain names based on various criteria, which is a specialized function set, likely for a WordPress/CMS environment.)
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — اجرا می‌شود تا به افزونه‌ها اجازه دهد ماژول‌های قابلیت را به یکپارچه‌سازی‌ها متصل کنند.
+- [wu_register_integrations](./Actions/wu_register_integrations) — اجرا می‌شود تا به یکپارچه‌سازی‌ها اجازه دهد خودشان را ثبت کنند.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — اجازه می‌دهد مسیرهای اضافی ثبت شوند.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — به توسعه‌دهندگان plugin اجازه می‌دهد اقداماتی را به فرایند ذخیره‌سازی اضافه کنند
+- [wu_site_created](./Actions/wu_site_created) — پس از ایجاد یک سایت برای نخستین بار اجرا می‌شود.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — به توسعه‌دهندگان plugin اجازه می‌دهد در صورت نیاز hookهای اضافی اضافه کنند.
+- [wu_template_previewer](./Actions/wu_template_previewer) — وقتی در زمینهٔ پیش‌نمایشگر قالب هست اجرا می‌شود.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — hook اسکریپت‌های enqueue را فعال می‌کند.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — پس از ذخیره شدن یک شیء در پایگاه داده اجرا می‌شود.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — پس از ذخیره شدن یک شیء در پایگاه داده اجرا می‌شود.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — پس از ذخیره شدن یک شیء در پایگاه داده اجرا می‌شود.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — به توسعه‌دهندگان plugin اجازه می‌دهد اقداماتی را به فرایند باز کردن قفل اضافه کنند.
+
+## فیلترها {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — مدت دوره انقضای کوکی احراز هویت را فیلتر می‌کند.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — طرح تغییر مسیر احراز هویت را فیلتر می‌کند.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — برای اطمینان بیشتر، WP Filter اصلی را اینجا بازتولید می‌کند.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — به توسعه‌دهندگان plugin اجازه می‌دهد URL استفاده‌شده در پیش‌نمایش‌گر را فیلتر کنند
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — فیلتر می‌کند که آیا کوکی احراز هویت فقط باید از طریق HTTPS ارسال شود یا نه.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — فیلتر می‌کند که آیا از تغییر مسیر امن احراز هویت استفاده شود یا نه.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — فیلتر می‌کند که آیا کوکی ورود فقط باید از طریق HTTPS ارسال شود یا نه.
+- [send_auth_cookies](./Filters/send_auth_cookies) — امکان جلوگیری از ارسال واقعی کوکی‌های احراز هویت به client را فراهم می‌کند.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — URL تغییر مسیر را تنظیم کنید.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — مراحل اضافی را از طریق فیلترها اضافه کنید
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — به توسعه‌دهندگان plugin اجازه می‌دهد متغیرهای اضافی را به‌صورت سراسری به زمینه رندر اضافه کنند.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — به توسعه‌دهندگان اجازه می‌دهد این بررسی را میان‌بُر بزنند.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — فیلدهای پنجره مودال افزودن دامنه جدید را فیلتر می‌کند.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — به توسعه‌دهندگان اجازه می‌دهد در آیتم ردیفی هزینه راه‌اندازی تغییراتی ایجاد کنند.
+- [wu_admin_notices](./Filters/wu_admin_notices) — به توسعه‌دهندگان اجازه می‌دهد اعلان‌های مدیریت اضافه‌شده توسط Ultimate Multisite را فیلتر کنند.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — پس از تغییر یافتن فیلتر کنید.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — اکنون، با همه نوع‌ها سروکار داریم.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — به توسعه‌دهندگان plugin اجازه می‌دهد محدودیت‌ها را میان‌بُر بزنند.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — فیلتر می‌کند که آیا هزینه ثبت‌نام اعمال شود یا نه.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — آرگومان‌های api اصلی را فیلتر کنید.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — به توسعه‌دهندگان plugin اجازه می‌دهد فیلدهای نشانی صورت‌حساب را فیلتر کنند.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — به توسعه‌دهندگان اجازه می‌دهد خروجی را دور بزنند و خروجی جدیدی تنظیم کنند
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — به توسعه‌دهندگان اجازه می‌دهد کد unset کردن کاربر فعلی را دور بزنند.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — مجموع «مبلغ تکرارشونده» را فیلتر می‌کند.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — مجموع «مبلغ اولیه» را فیلتر می‌کند.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — مجموع «مبلغ اولیه» را فیلتر می‌کند.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — به توسعه‌دهندگان plugin اجازه می‌دهد مقدار اعتبار را دست‌کاری کنند.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — دامنه‌های پایه مشترک فرم پرداخت را که نباید به رکوردهای دامنه نگاشت‌شده تبدیل شوند فیلتر می‌کند.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIهای ما برای افزودن قالب‌های فیلد جدید به اینجا hook می‌شوند.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIهای ما برای افزودن نوع‌های فیلد جدید به اینجا hook می‌شوند.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — پیام‌های خطا را فیلتر کنید.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — به توسعه‌دهندگان اجازه می‌دهد بررسی خودکار قابل‌ارسال بودن یک فیلد را دور بزنند.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — به توسعه‌دهندگان plugin اجازه می‌دهد نام‌های مستعار سفارشی را در اعتبارسنج فرم اضافه کنند.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — به توسعه‌دهندگان plugin اجازه می‌دهد قواعد اعتبارسنجی را فیلتر کنند.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Params ناخواسته را unset کنید.
+- [wu_contains_element](./Filters/wu_contains_element) — به توسعه‌دهندگان اجازه می‌دهد نتایج جست‌وجوی اولیه را تغییر دهند.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — به ارائه‌دهندگان میزبانی اجازه می‌دهد ثابت را به‌گونه‌ای متفاوت نصب کنند.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — نام خوش‌خوان زیربخش‌های اداری کشور را برمی‌گرداند.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — فهرست شهرهای یک ایالت در یک کشور را برمی‌گرداند.
+- [wu_country_get_states](./Filters/wu_country_get_states) — فهرست ایالت‌های این کشور را برمی‌گرداند.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — به توسعه‌دهندگان اجازه می‌دهد رفتار پیش‌فرض را تغییر دهند و مشتری فعلی را به‌گونه‌ای متفاوت تنظیم کنند.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — به توسعه‌دهندگان اجازه می‌دهد رفتار پیش‌فرض را تغییر دهند و عضویت فعلی را به‌گونه‌ای متفاوت تنظیم کنند.
+- [wu_current_set_site](./Filters/wu_current_set_site) — به توسعه‌دهندگان اجازه می‌دهد رفتار پیش‌فرض را تغییر دهند و site فعلی را به‌گونه‌ای متفاوت تنظیم کنند.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — به توسعه‌دهندگان اجازه می‌دهد پارامترهای URL مدیریت site را تغییر دهند.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — به توسعه‌دهندگان plugin اجازه می‌دهد لینک‌ها را فیلتر کنند.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — به توسعه‌دهندگان plugin اجازه می‌دهد بررسی‌های جدیدی اضافه کنند تا نتایج را تعریف کنند.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — ممکن است بعداً نیاز داشته باشیم بلوک‌های بیشتری اضافه کنیم.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — فیلتر عمومی اضافه می‌کند تا به توسعه‌دهندگان اجازه دهد این تجزیه‌گر را برای کار با سازنده‌ها یا pluginهای اضافی گسترش دهند.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — فیلتر می‌کند که آیا قوانین اضافی گذرواژه اعمال شوند یا نه.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — نام کاربری تولیدشده مشتری را فیلتر می‌کند.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — به توسعه‌دهندگان plugin اجازه می‌دهد پیش‌تنظیم‌های یک صفحه پرداخت را فیلتر کنند.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — به توسعه‌دهندگان اجازه می‌دهد slugهای فرم جدید اضافه کنند تا این رفتار دور زده شود.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — به توسعه‌دهندگان و افزونه‌ها اجازه می‌دهد مراحل مهاجرت جدید اضافه کنند
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — درباره این فیلتر در ادامه، در همین متد، بیشتر ببینید.
+- [wu_get_post_types](./Filters/wu_get_post_types) — به توسعه‌دهندگان اجازه می‌دهد انتخاب کنند کدام نوع‌های نوشته باید نمایش داده شوند.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — ردیف‌ها را برمی‌گرداند، قابل فیلتر
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — به توسعه‌دهندگان اجازه می‌دهد جفت‌های دامنه/مسیر را دستکاری کنند.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — بخش‌های جادوگر را برای راه‌اندازی یکپارچه‌سازی میزبانی فیلتر می‌کند.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — فیلدهای یک فرم را فیلتر می‌کند. فرم با ID موجود در نام فیلتر شناسایی می‌شود.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — نوع‌های محصولی را فیلتر می‌کند که چرخه‌های صورتحساب مستقل دارند.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — به توسعه‌دهندگان plugin اجازه می‌دهد یک وضعیت مشخص را برای API اجبار کنند.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — به توسعه‌دهندگان plugin اجازه می‌دهد آزمون‌های اضافی برای حالت توسعه اضافه کنند.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — به توسعه‌دهندگان plugin اجازه می‌دهد یک وضعیت مشخص را برای آداپتور MCP اجبار کنند.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — به دلایل امنیتی، تعداد کنش‌های در دسترس برای hook شدن به آن‌ها را محدود می‌کنیم. این فیلتر به توسعه‌دهندگان اجازه می‌دهد گسترش دهند
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — بررسی می‌کند که آیا یک نوع نوشته مشخص در این طرح مجاز است یا نه؛ به توسعه‌دهندگان plugin اجازه می‌دهد مقدار بازگشتی را فیلتر کنند
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — فیلتر می‌کند که آیا راستی‌آزمایی آدرس IP اعمال شود یا نه.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — فیلتر می‌کند که آیا راستی‌آزمایی عامل کاربر اعمال شود یا نه.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — URL پیوند جادویی تولیدشده را فیلتر می‌کند.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — فیلتر می‌کند که آیا پیوندهای جادویی فعال هستند یا نه.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — URL تغییرمسیر را پس از اصلی‌کردن یک دامنه فیلتر می‌کند.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — یک فهرست استثنا از پارامترهایی ایجاد می‌کند که از تغییرمسیر خودکار جلوگیری می‌کنند.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — فیلتری برای بازنویسی تصمیم گنجاندن قابلیت MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — تاریخ انقضای محاسبه‌شده را فیلتر می‌کند.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — تاریخ انقضای محاسبه‌شده را که باید پس از تمدید تنظیم شود فیلتر می‌کند.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — به توسعه‌دهندگان اجازه می‌دهد slugهای فرم به‌روزرسانی جدید اضافه کنند.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — حداقل طول گذرواژه را فیلتر می‌کند.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — حداقل قدرت گذرواژه موردنیاز را فیلتر می‌کند (امتیاز zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — به توسعه‌دهندگان plugin، و خودمان، اجازه می‌دهد پیوندهای کنش را به صفحه‌های ویرایش ما اضافه کنند
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — فیلتر می‌کند که آیا حروف کوچک در گذرواژه‌ها الزامی باشند یا نه.
+- [wu_password_require_number](./Filters/wu_password_require_number) — فیلتر می‌کند که آیا اعداد در گذرواژه‌ها الزامی باشند یا نه.
+- [wu_password_require_special](./Filters/wu_password_require_special) — فیلتر می‌کند که آیا نویسه‌های ویژه در گذرواژه‌ها الزامی باشند یا نه.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — فیلتر می‌کند که آیا حروف بزرگ در گذرواژه‌ها الزامی باشند یا نه.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — به کاربر اجازه می‌دهد پیام مربوط به پرداخت‌های در انتظار را تغییر دهد.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — نوع‌های محصولی را فیلتر می‌کند که باید به‌عنوان طرح‌ها در نظر گرفته شوند.
+- [wu_post_count](./Filters/wu_post_count) — به توسعه‌دهندگان plugin اجازه می‌دهد مجموع شمارش را تغییر دهند
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — به توسعه‌دهندگان plugin اجازه می‌دهد تغییر دهند کدام وضعیت نوشته باید شمرده شود؛ به‌طور پیش‌فرض، نوشته‌های منتشرشده و خصوصی شمرده می‌شوند
+- [wu_post_default_status](./Filters/wu_post_default_status) — داده‌های شیء را پیش از ذخیره در پایگاه داده فیلتر می‌کند.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — به توسعه‌دهندگان اجازه می‌دهد تنظیمات را پیش از ذخیره توسط Ultimate Multisite فیلتر کنند.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — فیلتر می‌کند که آیا ادامه دادن درخواست مجاز است یا نه.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — فیلتر می‌کند که آیا ادامه دادن درخواست مجاز است یا نه.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — فیلتر می‌کند که آیا ادامه دادن با درخواست مجاز است یا نه.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — فیلتر می‌کند که آیا ادامه دادن با درخواست مجاز است یا نه.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — فیلتر می‌کند که آیا ادامه دادن با درخواست مجاز است یا نه.
+- [wu_return_url](./Filters/wu_return_url) — به توسعه‌دهندگان اجازه می‌دهد URL بازگشت درگاه را که پس از فرایندهای checkout استفاده می‌شود تغییر دهند.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — به توسعه‌دهندگان plugin اجازه می‌دهد توابع مدل‌های جستجوی بیشتری اضافه کنند.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — به توسعه‌دهندگان اجازه می‌دهد مراحل اضافی راه‌انداز setup را اضافه کنند.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — فیلتر می‌کند که آیا Ultimate Multisite باید برای site تازه ایجادشده یک رکورد دامنه ایجاد کند یا نه.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — به توسعه‌دهندگان اجازه می‌دهد بازهدایت را کوتاه‌مدار کنند و از وقوع آن جلوگیری کنند.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — امکان بازنویسی handler را فراهم می‌کند
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — اقدام‌های گروهی موجود برای siteها را فیلتر می‌کند.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — فیلتری برای تغییر مقدار get pluginssites داخل شبکه.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — قابلیت ورود یکپارچه بین‌دامنه‌ای را فعال/غیرفعال می‌کند.
+- [wu_sso_url](./Filters/wu_sso_url) — URLهای SSO تولیدشده را پیش از بازگردانده شدن برای اقدام‌های مشتری بین‌دامنه‌ای فیلتر می‌کند.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — داده‌های Subscription در Stripe را فیلتر می‌کند. می‌تواند success_url یا cancel_url را بازنویسی کند.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — آرگومان‌های payment intent را فیلتر می‌کند.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — ID طرحی را که باید بررسی شود فیلتر می‌کند. اگر این مورد وجود داشته باشد، subscription جدید از این طرح استفاده خواهد کرد.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — ID محصولی را که باید بررسی شود فیلتر می‌کند. اگر این مورد وجود داشته باشد، subscription جدید از این محصول استفاده خواهد کرد.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — مقدار idempotency_key ارسال‌شده همراه با گزینه‌های شارژ Stripe را فیلتر می‌کند.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — رکورد عضویت مرتبط با این webhook را فیلتر می‌کند.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — داده‌های meta را پیش از سریال‌سازی برای ذخیره شدن در پایگاه داده فیلتر می‌کند.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — داده‌های شیء را پیش از ذخیره شدن در پایگاه داده فیلتر می‌کند.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — به توسعه‌دهندگان اجازه می‌دهد URL ارتقا برای باز کردن قفل را تغییر دهند
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — تعیین می‌کند که آیا باید از نگاشت استفاده شود یا نه
+- [wu_username_from_email](./Filters/wu_username_from_email) — نام کاربری مشتری جدید را فیلتر می‌کند.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — به توسعه‌دهندگان اجازه می‌دهد پیام مربوط به محدودیت کاربران عضویت را تغییر دهند
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — به توسعه‌دهندگان اجازه می‌دهد پوشه‌های اضافی را به فهرست قابل جایگزینی اضافه کنند.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — فیلتر می‌کند که کدام sub_commands برای این موجودیت فعال باشند.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — هنگام تلاش برای تشخیص اینکه کجا می‌توانیم ثابت‌های خود را تزریق کنیم، سه الگو را بررسی می‌کنیم:

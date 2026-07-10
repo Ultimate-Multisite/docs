@@ -3,32 +3,32 @@ title: 'الدرس الثالث: إعداد شبكتك'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# الدرس 3: إعداد شبكتك
+# الدرس 3: إعداد شبكتك {#lesson-3-setting-up-your-network}
 
 حان الوقت للبناء. في هذا الدرس، ستقوم بتثبيت Ultimate Multisite وتكوين أساس شبكة FitSite. كل قرار تتخذه هنا يأخذ في الاعتبار تخصص اللياقة البدنية.
 
-## أين توقفنا
+## أين توقفنا {#where-we-left-off}
 
 لقد اخترنا استوديوهات اللياقة البدنية كتخصص لنا وأثبتنا جدوى الفرصة. الآن، سنحول هذه الفكرة إلى منصة عمل حقيقية.
 
-## اختيار الاستضافة (Hosting)
+## اختيار الاستضافة (Hosting) {#choosing-your-hosting}
 
 يعد اختيارك للاستضافة أكثر أهمية لمنصة متخصصة (Niche platform) من كونه لموقع إلكتروني واحد. أنت لا تستضيف موقعًا واحدًا فحسب، بل أنت تستضيف شبكة ستنمو لتشمل عشرات أو مئات المواقع.
 
-### ما الذي يجب البحث عنه
+### ما الذي يجب البحث عنه {#what-to-look-for}
 
 - **دعم WordPress Multisite**: لا تتعامل جميع شركات الاستضافة مع شبكات Multisite بشكل جيد.
 - **SSL بالاسم العام (Wildcard SSL)**: ضروري للشبكات المعتمدة على النطاقات الفرعية (subdomains).
 - **موارد قابلة للتوسع (Scalable resources)**: تحتاج إلى مساحة للنمو دون الحاجة إلى ترحيل (migrating) الموقع بالكامل.
 - **تكامل Ultimate Multisite**: يوفّر تعيين النطاقات (domain mapping) وشهادات SSL تلقائيًا، مما يوفر جهدًا تشغيليًا كبيرًا.
 
-### النهج الموصى به
+### النهج الموصى به {#recommended-approach}
 
 اختر شركة استضافة من قائمة [المزودين المتوافقين](/user-guide/host-integrations/closte). لقد تم اختبار هذه الشركات مع Ultimate Multisite وتوفر التكاملات التي تحتاجها لتعيين النطاقات وأتمتة SSL.
 
 بالنسبة لـ FitSite، سنستخدم إعداد النطاقات الفرعية (subdomain configuration). هذا يعني أن مواقع العملاء ستظهر في البداية على شكل `studioname.fitsite.com` قبل أن يقوموا، إذا رغبوا، بربط نطاقهم الخاص.
 
-## تثبيت WordPress Multisite
+## تثبيت WordPress Multisite {#installing-wordpress-multisite}
 
 إذا لم يكن لديك بالفعل تثبيت لـ WordPress Multisite:
 
@@ -40,7 +40,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 تمنح النطاقات الفرعية (Subdomains) كل موقع عميل عنوانه المميز الخاص (`studio.fitsite.com`) بدلاً من المسار (path) (`fitsite.com/studio`). هذا أكثر احترافية لعملائك ويتجنب تعارضات الروابط الدائمة (permalink conflicts). راجع [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101) لمقارنة مفصلة.
 :::
 
-## تثبيت Ultimate Multisite
+## تثبيت Ultimate Multisite {#installing-ultimate-multisite}
 
 اتبع دليل [تثبيت Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) للقيام بما يلي:
 
@@ -53,11 +53,11 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **اسم الشركة (Company name)**: "FitSite" (أو اسم علامتك التجارية الذي اخترته).
 - **شعار الشركة (Company logo)**: قم بتحميل شعار علامتك التجارية - سيظهر هذا على الفواتير ورسائل البريد الإلكتروني.
 
-## التكوين لتخصص اللياقة البدنية
+## التكوين لتخصص اللياقة البدنية {#configuring-for-the-fitness-niche}
 
 بعد تثبيت Ultimate Multisite، قم باتخاذ خيارات التكوين الخاصة بهذا التخصص:
 
-### الإعدادات العامة (General Settings)
+### الإعدادات العامة (General Settings) {#general-settings}
 
 انتقل إلى **Ultimate Multisite > Settings** وقم بتكوين ما يلي:
 
@@ -65,7 +65,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 - **الدور الافتراضي (Default role)**: Administrator (يجب أن يمتلك مالكو استوديوهات اللياقة البدنية تحكمًا كاملاً في محتوى موقعهم).
 - **التسجيل (Registration)**: قم بتمكين تسجيل المستخدمين حتى يتمكن مالكو الاستوديوهات من التسجيل بأنفسهم.
 
-### إعدادات البريد الإلكتروني (Email Configuration)
+### إعدادات البريد الإلكتروني (Email Configuration) {#email-configuration}
 
 يجب أن تتحدث رسائل البريد الإلكتروني الخاصة بنظامك بلغة تخصصك. انتقل إلى **Ultimate Multisite > Settings > Emails** وقم بتخصيص ما يلي:
 
@@ -75,7 +75,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 سنقوم بتحسين هذه الأمور أكثر في الدرس 8 (إعداد العميل)، ولكن تحديد النغمة الآن يضمن أن حتى عمليات التسجيل التجريبية المبكرة تبدو متخصصة في المجال.
 
-### تكوين النطاق (Domain Configuration)
+### تكوين النطاق (Domain Configuration) {#domain-configuration}
 
 إذا كنت تستخدم مزود استضافة متوافق، قم بتكوين تعيين النطاقات الآن:
 
@@ -85,7 +85,7 @@ _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 
 هذا يضمن أنه عندما نبدأ في إنشاء القوالب والمواقع التجريبية في الدرس التالي، سيعمل كل شيء من البداية إلى النهاية.
 
-## شبكة FitSite حتى الآن
+## شبكة FitSite حتى الآن {#the-fitsite-network-so-far}
 
 في نهاية هذا الدرس، إليك ما أنجزته:
 
@@ -99,7 +99,7 @@ FitSite Network
 └── Ready for site templates (next lesson)
 ```
 
-## ما بنيناه في هذا الدرس
+## ما بنيناه في هذا الدرس {#what-we-built-this-lesson}
 
 - **تثبيت WordPress Multisite** عامل في وضع النطاق الفرعي.
 - **تثبيت Ultimate Multisite** وتكوينه بعلامة FitSite التجارية.

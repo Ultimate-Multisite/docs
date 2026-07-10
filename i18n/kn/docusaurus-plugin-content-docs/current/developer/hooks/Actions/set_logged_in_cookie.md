@@ -4,11 +4,11 @@ title: Action - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Action: set_logged_in_cookie
+# Action: set_logged_in_cookie {#action-setloggedincookie}
 
 ಲಾಗ್ ಇನ್ ಆಥೆಂಟಿಕೇಶನ್ ಕುકીವನ್ನು ಸೆಟ್ ಮಾಡುವ ತಕ್ಷಣವೇ ಇದು ಕಾರ್ಯಗತವಾಗುತ್ತದೆ.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | ಆಥೆಂಟಿಕೇಶನ್ ಸ್ಕೀಮ್. ಡೀಫಾಲ್ಟ್ 'logged_in'. |
 | $token | `string` | ಈ ಕುಕಿಗೆ ಬಳಸಬೇಕಾದ ಬಳಕೆದಾರರ ಸೆಷನ್ ಟೋಕನ್ (User's session token). |
 
-### Since
+### Since {#since}
 
 - 2.6.0
 - 4.9.0: <code>$token</code> ಪ್ಯಾರಾಮೀಟರ್ ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) ನಲ್ಲಿ 141ನೇ ಸಾಲಿನಲ್ಲಿ ವ್ಯಾಖ್ಯಾನಿಸಲಾಗಿದೆ.

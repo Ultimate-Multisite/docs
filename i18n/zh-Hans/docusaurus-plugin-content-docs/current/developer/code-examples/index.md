@@ -1,15 +1,15 @@
 ---
 title: 高级代码示例
 sidebar_position: 1
-_i18n_hash: 2da26e5bbafe028cadbe53cde1335209
+_i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 高级代码示例
+# 高级代码示例 {#advanced-code-examples}
 
 这些示例演示了与 Ultimate Multisite 的高级集成模式。
 
-## 动态定价引擎
+## 动态定价引擎 {#dynamic-pricing-engine}
 
-一个基于规则的定价引擎，应用批量、忠诚度和季节性折扣：
+基于规则的定价引擎，可应用批量、忠诚度和季节性折扣：
 
 ```php
 class Dynamic_Pricing_Engine {
@@ -86,9 +86,9 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## 高级站点配置
+## 高级站点配置 {#advanced-site-provisioning}
 
-根据计划功能，自动为新站点配置插件、SSL、CDN、备份和监控：
+根据套餐功能，自动为新站点配置插件、SSL、CDN、备份和监控：
 
 ```php
 class Advanced_Site_Provisioner {
@@ -191,9 +191,9 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## 自定义限制系统
+## 自定义限制系统 {#custom-limitations-system}
 
-跟踪并执行资源限制，并提供使用警告：
+跟踪并强制执行资源限制，并提供用量警告：
 
 ```php
 class Advanced_Limitations {
@@ -272,3 +272,99 @@ class Advanced_Limitations {
 
 new Advanced_Limitations();
 ```
+
+## BerlinDB 原子计数器与 `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
+
+Ultimate Multisite v2.6.1 向 BerlinDB `Query` class 添加了 `increment_item()` 方法。使用它可以对数值列执行安全的原子递增，避免读取-修改-写入竞争——适用于计数器、使用配额，以及在并发请求下运行的速率限制检查。
+
+### 方法签名 {#method-signature}
+
+```php
+/**
+ * Atomically increment a numeric column for a specific item.
+ *
+ * @param int    $item_id   Primary key of the row to update.
+ * @param string $column    Column name to increment (must be numeric).
+ * @param int    $amount    Amount to add. Use a negative value to decrement.
+ *                          Defaults to 1.
+ * @return bool True on success, false on failure or if the column is invalid.
+ */
+public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
+```
+
+### 基本用法 {#basic-usage}
+
+```php
+// Add 1 to the `api_calls` column for membership ID 42.
+$memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+$memberships->increment_item( 42, 'api_calls' );
+
+// Add 5 to a usage counter.
+$memberships->increment_item( 42, 'api_calls', 5 );
+
+// Decrement (subtract 1).
+$memberships->increment_item( 42, 'api_calls', -1 );
+```
+
+### 按会员资格跟踪 API 使用量 {#tracking-api-usage-per-membership}
+
+用于强制执行每个会员资格 API 速率限制的实用模式：
+
+```php
+class Membership_API_Limiter {
+
+    /** Maximum API calls allowed per billing cycle. */
+    const LIMIT = 500;
+
+    public function __construct() {
+        add_filter( 'wu_is_api_enabled', [ $this, 'check_and_count' ], 10, 2 );
+    }
+
+    /**
+     * Reject the request if the membership is over the limit;
+     * otherwise count the call atomically.
+     *
+     * @param bool   $enabled
+     * @param object $context  Object with a get_membership_id() method.
+     * @return bool
+     */
+    public function check_and_count( bool $enabled, $context ): bool {
+        if ( ! $enabled ) {
+            return false;
+        }
+
+        $membership_id = $context->get_membership_id();
+
+        $memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+        $membership  = $memberships->get_item( $membership_id );
+
+        if ( ! $membership ) {
+            return false;
+        }
+
+        if ( (int) $membership->api_calls >= self::LIMIT ) {
+            return false;  // Over quota — reject.
+        }
+
+        // Atomic increment: safe under concurrent requests.
+        $memberships->increment_item( $membership_id, 'api_calls' );
+
+        return true;
+    }
+}
+
+new Membership_API_Limiter();
+```
+
+### 为什么使用 `increment_item()` 而不是 `update_item()` {#why-incrementitem-instead-of-updateitem}
+
+朴素的读取-修改-写入方法在并发请求下并不安全：
+
+```php
+// UNSAFE — race condition between read and write.
+$membership = $memberships->get_item( $membership_id );
+$new_count  = (int) $membership->api_calls + 1;
+$memberships->update_item( $membership_id, [ 'api_calls' => $new_count ] );
+```
+
+两个同时发生的请求可能读取相同的值，并都写回相同的递增结果，从而丢失一次计数。`increment_item()` 通过单条 `UPDATE ... SET column = column + ?` 语句将算术运算委托给数据库引擎，使该操作天然具备原子性。

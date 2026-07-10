@@ -3,11 +3,11 @@ title: Povratne informacije strank in poročanje o težavah
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Povratne informacije strankov in poročanje o težavah
+# Povratne informacije strankov in poročanje o težavah {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 vključuje zgrajen sistem za povratne informacije in poročanje o težavah, ki omogoča uporabnikom končnega termina, da označijo nepomembna odgovora in direktno poročajo o problemih iz čata. Ta sistem vključuje upravljanje soglasja (consent management), avtomatizirano ukaz za poročanje in AI-pomočeno trižiranje na backendu.
 
-## Gumb z "Ne" (Thumbs-Down Button)
+## Gumb z "Ne" (Thumbs-Down Button) {#thumbs-down-button}
 
 Vsak sporočilo, ki ga pošlje asistenta AI, prikazuje gumb **z "ne"** (👎). Ko uporabnik klikne na njega, lahko označuje odgovor kot nepomemben ali napačen.
 
@@ -15,7 +15,7 @@ Vsak sporočilo, ki ga pošlje asistenta AI, prikazuje gumb **z "ne"** (👎). K
 - Klik na njega odpre **Modal za soglasje za povratne informacije (Feedback Consent Modal)**.
 - Povratna informacija je povezana z zagonom pogovora in specifičnim sporočilom.
 
-## Modal za soglasje za povratne informacije (Feedback Consent Modal)
+## Modal za soglasje za povratne informacije (Feedback Consent Modal) {#feedback-consent-modal}
 
 Ko uporabnik klikne na gumb z "ne", se pred oddajanjem podatkov pojavi modal za soglasje. Modal:
 
@@ -26,13 +26,13 @@ Ko uporabnik klikne na gumb z "ne", se pred oddajanjem podatkov pojavi modal za 
 
 Povratne informacije ne so zapisane, dokler uporabnik to jasno potrdi.
 
-## Banner za povratne informacije z avtomatskim prikazu (Auto-Prompt Feedback Banner)
+## Banner za povratne informacije z avtomatskim prikazu (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Na koncu pogovora lahko asistenta prikazuje **banner za avtomatiziran prikaz povratnih informacij** — neinvazivno sporočilo, ki vpraša, ali je se seans bilo koristilo.
 
 Ta banner se pojavlja samodejno na podlagi dolžine pogovora in heuristik o rezultatu. Povezuje se z enim obtočnim potekom povratnih informacij kot gumb z "ne". Uporabniki lahko odpre banner brez prinašanja povratnih informacij.
 
-## Komanda /report-issue Slash Command
+## Komanda /report-issue Slash Command {#report-issue-slash-command}
 
 Uporabniki lahko direktno sprostiti potek povratnih informacij, vpisanjem `/report-issue` v polje za vnos čata. Ta komanda:
 
@@ -42,7 +42,7 @@ Omogoča uporabnikom dodajanje dodatnih podrobnosti pred oddajo.
 
 Komanda `/report-issue` je na voljo v vseh načini spletnega mesta (inline, plovni widget, zaslon).
 
-## AI-Assisted Triage (Triage z uporabo umetne inteligence)
+## AI-Assisted Triage (Triage z uporabo umetne inteligence) {#ai-assisted-triage}
 
 Predbrana povratna informacija se usmerja do sloja za triage z uporabo AI, ki:
 
@@ -52,7 +52,7 @@ Predbrana povratna informacija se usmerja do sloja za triage z uporabo AI, ki:
 
 To zmanjšuje čas ručne preglede, saj najprej prikaže najpomembnejše težave.
 
-## Settings > Advanced {#settings-advanced} (Nastavitve > Napredno)
+## Settings > Advanced {#settings-advanced} (Nastavitve > Napredno) {#settings--advanced}
 
 Za vključitev backenda za povratne informacije konfigurirajte naslednje polja pod **Gratis AI Agent → Settings → Advanced**:
 

@@ -3,7 +3,7 @@ title: Mga Website sa Kliyente
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Ang mga Website sa Imong Kliyente (v2)
+# Ang mga Website sa Imong Kliyente (v2) {#your-clients-websites-v2}
 
 Pagkahuman nimo mag-register sa imong network, ang imong mga customer makasulod na sa ilang dashboard.
 

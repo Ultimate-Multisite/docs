@@ -3,24 +3,24 @@ title: Si të instalohet WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Si instaloj WordPress Multisite?
+# Si instaloj WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ju lejon të keni një rrjet që përbën disa faqe në një instalim të vetëm. Kjo është një veçori e integruar, por nuk është aktive për shkak të paracaktuar.
 
 :::tip
 Ultimate Multisite përfshin një **[Multisite Setup Wizard](https://your-documentation-link/multisite-setup-wizard)** të ndërtuar që automatizon gjithë këtë proces. Nëse keni instaluar Ultimate Multisite, ju rekomandojmë të përdorni wizardin në vend që të ndiqni hapat manuale më poshtë.
 
-# Përdorimi i Hook-eve në WordPress
+# Përdorimi i Hook-eve në WordPress {#add-a-trailing-slash-to-wp-admin}
 
 WordPress ju ofron një sistem shumë fleksibël që lejon ndërveprimin e kodit tuaj me funksionalitetet e brendshme të platformës. Kjo bëhet përmes "hook"-eve, të cilat janë pika ku mund të vendosni kodin tuaj për të reaguar në ngjarje specifike që ndodhen gjatë procesit të punës së WordPress-it (si kur një post po shkruhet, kur një formular po dërgohet, etj.).
 
-## Çfarë janë Hook-e?
+## Çfarë janë Hook-e? {#common-problems}
 
 Në thelb, një hook është një "pajisje" ose një pikë e ndalimit në kodin e WordPress. Kur ju vendosni një funksion (një callback function) në një hook të caktuar, kodi juaj do ekzekutohet automatikisht kur ajo ngjarje specifike ndodh.
 
 Për shembull, mund të dëshironi që kodin tuaj të ekzekutohet gjatë procesit të shfaqjes së një post (post_pre_save) ose para se një komenti të ruhet në bazën e të dhënave. Kjo ju jep kontroll të detajuar mbi çfarë ndodh kur diçka specifike ndodh brenda WordPress-it.
 
-## Si përdorim Hook-e?
+## Si përdorim Hook-e? {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Për të përdorur hook-e, duhet të keni një ide se cilën ngjarje dëshironi të vëni në dorë. Kjo zakonisht do të jetë dokumentuar nga zhvilluesit e plugin-eve ose theme-ve që po përdorni.
 

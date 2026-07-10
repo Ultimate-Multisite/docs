@@ -1,149 +1,149 @@
 ---
-title: Addon ಅಭಿವೃದ್ಧಿಗೆ ಪರಿಚಯ
+title: ಆಡ್‌ಆನ್ ಅಭಿವೃದ್ಧಿಯನ್ನು ಪ್ರಾರಂಭಿಸುವುದು
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# ಅಡ್-ಆನ್ ಅಭಿವೃದ್ಧಿ
+# ಆಡ್‌ಆನ್ ಅಭಿವೃದ್ಧಿ {#addon-development}
 
-## ಅಡ್-ಆನ್ ರಚನೆ (Addon Structure)
+## ಆಡ್‌ಆನ್ ರಚನೆ {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # ಮುಖ್ಯ ಪ್ಲಗ್ಇನ್ ಫೈಲ್
+├── my-addon.php                 # Main plugin file
 ├── inc/
-│   ├── class-my-addon.php       # ಮುಖ್ಯ ಅಡ್-ಆನ್ ಕ್ಲಾಸ್
-│   ├── admin-pages/             # ಆಡಳಿತಾತ್ಮಕ ಇಂಟರ್‌ಫೇಸ್
-│   ├── models/                  # ಕಸ್ಟಮ್ ಡೇಟಾ ಮಾದರಿಗಳು
-│   └── integrations/            # ಮೂರನೇ ವ್ಯಕ್ತಿಗಳ ಏಕೀಕರಣಗಳು
+│   ├── class-my-addon.php       # Main addon class
+│   ├── admin-pages/             # Admin interface
+│   ├── models/                  # Custom data models
+│   └── integrations/            # Third-party integrations
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # ಟೆಂಪ್ಲೇಟ್ ಫೈಲ್‌ಗಳು
+└── templates/                   # Template files
 ```
 
-## ಮುಖ್ಯ ಅಡ್-ಆನ್ ಫೈಲ್ ಟೆಂಪ್ಲೇಟ್ (Main Addon File Template)
+## ಮುಖ್ಯ ಆಡ್‌ಆನ್ ಫೈಲ್ ಟೆಂಪ್ಲೇಟ್ {#main-addon-file-template}
 
 ```php
 <?php
 /**
  * Plugin Name: My Ultimate Multisite Addon
- * Description: Ultimate Multisite ಗಾಗಿ ಕಸ್ಟಮ್ ಅಡ್-ಆನ್
+ * Description: Custom addon for Ultimate Multisite
  * Version: 1.0.0
- * Author: ನಿಮ್ಮ ಹೆಸರು
+ * Author: Your Name
  * Requires PHP: 7.4
  * Ultimate Multisite: 2.0.0
  */
 
 namespace My_Addon;
 
-// ಇದನ್ನು ನೇರವಾಗಿ ಪ್ರವೇಶಿಸಿದರೆ ಕಾರ್ಯನಿರ್ವಹಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ
+// Exit if accessed directly
 defined('ABSPATH') || exit;
 
-// ಸ್ಥಿರಾಂಕಗಳನ್ನು (constants) ವ್ಯಾಖ್ಯಾನಿಸಿ
+// Define constants
 define('MY_ADDON_VERSION', '1.0.0');
 define('MY_ADDON_PLUGIN_FILE', __FILE__);
 define('MY_ADDON_PATH', plugin_dir_path(__FILE__));
 define('MY_ADDON_URL', plugin_dir_url(__FILE__));
 
-// Ultimate Multisite ಸಕ್ರಿಯವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
+// Check if Ultimate Multisite is active
 add_action('plugins_loaded', function() {
     if (!class_exists('WP_Ultimo\WP_Ultimo')) {
         add_action('admin_notices', function() {
             echo '<div class="notice notice-error"><p>';
-            echo 'ನನ್ನ ಅಡ್-ಆನ್‌ಗೆ Ultimate Multisite ಅನ್ನು ಸ್ಥಾಪಿಸಿ ಮತ್ತು ಸಕ್ರಿಯಗೊಳಿಸುವುದು ಅಗತ್ಯ.';
+            echo 'My Addon requires Ultimate Multisite to be installed and activated.';
             echo '</p></div>';
         });
         return;
     }
 
-    // ಅಡ್-ಆನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ (Initialize)
+    // Initialize addon
     My_Addon::get_instance();
 });
 
 /**
- * ಮುಖ್ಯ ಅಡ್-ಆನ್ ಕ್ಲಾಸ್
+ * Main addon class
  */
 class My_Addon {
 
     use \WP_Ultimo\Traits\Singleton;
 
     /**
-     * ಅಡ್-ಆನ್ ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ
+     * Initialize the addon
      */
     public function init() {
-        // ಅವಲಂಬನೆಗಳನ್ನು (dependencies) ಲೋಡ್ ಮಾಡಿ
+        // Load dependencies
         $this->load_dependencies();
 
-        // ಹುಕ್‌ಗಳನ್ನು (hooks) ಸೆಟಪ್ ಮಾಡಿ
+        // Setup hooks
         $this->setup_hooks();
 
-        // ಘಟಕಗಳನ್ನು (components) ಪ್ರಾರಂಭಿಸಿ
+        // Initialize components
         $this->init_components();
     }
 
     /**
-     * ಅಗತ್ಯ ಫೈಲ್‌ಗಳನ್ನು ಲೋಡ್ ಮಾಡಿ
+     * Load required files
      */
     private function load_dependencies() {
         require_once MY_ADDON_PATH . 'inc/class-my-addon.php';
     }
 
     /**
-     * ವರ್ಡ್ಪ್ರೆಸ್ ಹುಕ್‌ಗಳನ್ನು ಸೆಟಪ್ ಮಾಡಿ
+     * Setup WordPress hooks
      */
     private function setup_hooks() {
-        // ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ/ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆ (Activation/deactivation)
+        // Activation/deactivation
         register_activation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'activate']);
         register_deactivation_hook(MY_ADDON_PLUGIN_FILE, [$this, 'deactivate']);
 
-        // Ultimate Multisite ಹುಕ್‌ಗಳು
+        // Ultimate Multisite hooks
         add_action('wu_checkout_completed', [$this, 'on_checkout_completed'], 10, 3);
         add_filter('wu_checkout_form_fields', [$this, 'add_custom_fields'], 10, 2);
     }
 
     /**
-     * ಅಡ್-ಆನ್ ಘಟಕಗಳನ್ನು ಪ್ರಾರಂಭಿಸಿ
+     * Initialize addon components
      */
     private function init_components() {
-        // ಆಡಳಿತಾತ್ಮಕ ಪುಟಗಳು, ಮಾದರಿಗಳು ಇತ್ಯಾದಿಗಳನ್ನು ಪ್ರಾರಂಭಿಸಿ.
+        // Initialize admin pages, models, etc.
     }
 
     /**
-     * ಪ್ಲಗ್ಇನ್ ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ (Plugin activation)
+     * Plugin activation
      */
     public function activate() {
-        // ಕಸ್ಟಮ್ ಟೇಬಲ್‌ಗಳನ್ನು ರಚಿಸಿ, ಆಪ್ಷನ್‌ಗಳನ್ನು ಅಪ್ಡೇಟ್ ಮಾಡಿ, ಇತ್ಯಾದಿ.
+        // Create custom tables, set options, etc.
         $this->create_custom_table();
         update_option('my_addon_version', MY_ADDON_VERSION);
     }
 
     /**
-     * ಪ್ಲಗ್ಇನ್ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆ (Plugin deactivation)
+     * Plugin deactivation
      */
     public function deactivate() {
-        // ಅಗತ್ಯವಿದ್ದರೆ ಸ್ವಚ್ಛಗೊಳಿಸಿ (Cleanup)
+        // Cleanup if needed
     }
 
     /**
-     * ಚೆಕ್‌ಔಟ್ ಪೂರ್ಣಗೊಂಡಾಗ ನಿರ್ವಹಣೆ (Handle checkout completion)
+     * Handle checkout completion
      */
     public function on_checkout_completed($payment, $customer, $membership) {
-        // ಚೆಕ್‌ಔಟ್ ಪೂರ್ಣಗೊಂಡಾಗ ಕಸ್ಟಮ್ ಲಾಜಿಕ್
+        // Custom logic when checkout completes
         $this->send_welcome_email($customer);
         $this->setup_customer_account($customer, $membership);
     }
 
     /**
-     * ಕಸ್ಟಮ್ ಚೆಕ್‌ಔಟ್ ಫೀಲ್ಡ್‌ಗಳನ್ನು ಸೇರಿಸಿ
+     * Add custom checkout fields
      */
     public function add_custom_fields($fields, $form) {
         $fields['company_size'] = [
             'type' => 'select',
-            'title' => 'ಕಂಪನಿ ಗಾತ್ರ',
+            'title' => 'Company Size',
             'options' => [
-                'small' => '1-10 ಉದ್ಯೋಗಿಗಳು',
-                'medium' => '11-100 ಉದ್ಯೋಗಿಗಳು',
-                'large' => '100+ ಉದ್ಯೋಗಿಗಳು'
+                'small' => '1-10 employees',
+                'medium' => '11-100 employees',
+                'large' => '100+ employees'
             ],
             'required' => false
         ];
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## ಕಸ್ಟಮ್ ಮಾದರಿ ಉದಾಹರಣೆ (Custom Model Example)
+## ಕಸ್ಟಮ್ ಮಾದರಿ ಉದಾಹರಣೆ {#custom-model-example}
 
 ```php
 <?php
@@ -161,17 +161,17 @@ class My_Addon {
 namespace My_Addon\Models;
 
 /**
- * ಕಸ್ಟಮ್ ಲೀಡ್ ಮಾದರಿ (Custom Lead model)
+ * Custom Lead model
  */
 class Lead extends \WP_Ultimo\Models\Base_Model {
 
     /**
-     * ಮಾದರಿ ಹೆಸರು (Model name)
+     * Model name
      */
     protected $model = 'lead';
 
     /**
-     * ಡೇಟಾಬೇಸ್ ಟೇಬಲ್ ಅನ್ನು ಸೆಟ್ ಮಾಡಿ
+     * Set the database table
      */
     protected function set_table() {
         global $wpdb;
@@ -179,24 +179,24 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
     }
 
     /**
-     * ಕಂಪನಿ ಹೆಸರನ್ನು ಪಡೆಯಿರಿ
+     * Get the company name
      */
     public function get_company() {
         return $this->get_meta('company');
     }
 
     /**
-     * ಕಂಪನಿ ಹೆಸರನ್ನು ಸೆಟ್ ಮಾಡಿ
+     * Set the company name
      */
     public function set_company($company) {
         return $this->add_meta('company', $company);
     }
 
     /**
-     * ಲೀಡ್ ಅನ್ನು ಗ್ರಾಹಕರಾಗಿ ಪರಿವರ್ತಿಸಿ (Convert lead to customer)
+     * Convert lead to customer
      */
     public function convert_to_customer($user_data = []) {
-        // ವರ್ಡ್ಪ್ರೆಸ್ ಬಳಕೆದಾರರನ್ನು ರಚಿಸಿ
+        // Create WordPress user
         $user_id = wp_create_user(
             $user_data['username'] ?? $this->get_email(),
             $user_data['password'] ?? wp_generate_password(),
@@ -207,7 +207,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $user_id;
         }
 
-        // Ultimate Multisite ಗ್ರಾಹಕರನ್ನು ರಚಿಸಿ
+        // Create Ultimate Multisite customer
         $customer = wu_create_customer([
             'user_id' => $user_id,
             'email_verification' => 'verified',
@@ -218,11 +218,11 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
             return $customer;
         }
 
-        // ಲೀಡ್ ಡೇಟಾವನ್ನು ಗ್ರಾಹಕರಿಗೆ ನಕಲಿಸಿ
+        // Copy lead data to customer
         $customer->add_meta('company', $this->get_company());
         $customer->add_meta('lead_source', $this->get_source());
 
-        // ಲೀಡ್ ಅನ್ನು ಪರಿವರ್ತಿಸಲಾಗಿದೆ ಎಂದು ಗುರುತಿಸಿ
+        // Mark lead as converted
         $this->set_status('converted');
         $this->add_meta('converted_customer_id', $customer->get_id());
         $this->save();
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## ಆಡಳಿತಾತ್ಮಕ ಪುಟ ಏಕೀಕರಣ (Admin Page Integration)
+## ನಿರ್ವಾಹಕ ಪುಟ ಏಕೀಕರಣ {#admin-page-integration}
 
 ```php
 <?php
@@ -240,30 +240,30 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 namespace My_Addon\Admin_Pages;
 
 /**
- * ಕಸ್ಟಮ್ ಆಡಳಿತಾತ್ಮಕ ಪುಟ (Custom admin page)
+ * Custom admin page
  */
 class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 
     /**
-     * ಪುಟದ ID
+     * Page ID
      */
     protected $id = 'my-addon-leads';
 
     /**
-     * ಮೆನುವಿನ ಸ್ಥಾನ (Menu position)
+     * Menu position
      */
     protected $position = 30;
 
     /**
-     * ಪುಟವನ್ನು ಪ್ರಾರಂಭಿಸಿ (Initialize page)
+     * Initialize page
      */
     public function init() {
-        // Ultimate Multisite ನೊಂದಿಗೆ ನೋಂದಾಯಿಸಿ
+        // Register with Ultimate Multisite
         add_action('wu_register_admin_pages', [$this, 'register']);
     }
 
     /**
-     * ಆಡಳಿತಾತ್ಮಕ ಪುಟವನ್ನು ನೋಂದಾಯಿಸಿ
+     * Register the admin page
      */
     public function register() {
         wu_register_admin_page($this->id, [
@@ -277,16 +277,16 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
     }
 
     /**
-     * ಪುಟವನ್ನು ಪ್ರದರ್ಶಿಸಿ (Render the page)
+     * Render the page
      */
     public function render() {
-        // ಲೀಡ್‌ಗಳ ಡೇಟಾವನ್ನು ಪಡೆಯಿರಿ
+        // Get leads data
         $leads = My_Addon\Models\Lead::query([
             'number' => 20,
             'paged' => absint($_GET['paged'] ?? 1)
         ]);
 
-        // ಟೆಂಪ್ಲೇಟ್ ಅನ್ನು ಪ್ರದರ್ಶಿಸಿ
+        // Render template
         wu_get_template('admin/leads-list', [
             'leads' => $leads,
             'page_title' => __('Manage Leads', 'my-addon')
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## ನಿಮ್ಮ ಅಡ್-ಆನ್ ಅನ್ನು ಪರೀಕ್ಷಿಸುವುದು (Testing Your Addon)
+## ನಿಮ್ಮ Addon ಅನ್ನು ಪರೀಕ್ಷಿಸುವುದು {#testing-your-addon}
 
 ```php
 <?php
@@ -305,13 +305,13 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function setUp() {
         parent::setUp();
 
-        // ಪರೀಕ್ಷಾ ಗ್ರಾಹಕರನ್ನು ರಚಿಸಿ
+        // Create test customer
         $this->customer = wu_create_customer([
             'user_id' => $this->factory->user->create(),
             'type' => 'customer'
         ]);
 
-        // ಪರೀಕ್ಷಾ ಸದಸ್ಯತ್ವವನ್ನು ರಚಿಸಿ
+        // Create test membership
         $this->membership = wu_create_membership([
             'customer_id' => $this->customer->get_id(),
             'plan_id' => $this->create_test_plan()
@@ -321,7 +321,7 @@ class Test_My_Integration extends WP_UnitTestCase {
     public function test_custom_field_saves_correctly() {
         $checkout = new WP_Ultimo\Checkout\Checkout();
 
-        // ಫಾರ್ಮ್ ಸಲ್ಲಿಸುವಿಕೆಯನ್ನು ಅನುಕರಿಸಿರಿ (Simulate form submission)
+        // Simulate form submission
         $_POST['company_size'] = 'medium';
 
         $result = $checkout->process_step_data([
@@ -330,7 +330,7 @@ class Test_My_Integration extends WP_UnitTestCase {
 
         $this->assertTrue($result);
 
-        // ಡೇಟಾವನ್ನು ಉಳಿಸಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ
+        // Verify data was saved
         $saved_value = $this->customer->get_meta('company_size');
         $this->assertEquals('medium', $saved_value);
     }
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## ಮುಂದಿನ ಹಂತಗಳು (Next Steps)
+## v2.13.0 ವಿಸ್ತರಣೆ ಬಿಂದುಗಳು {#v2130-extension-points}
 
-- ಲಭ್ಯವಿರುವ ಆಕ್ಷನ್‌ಗಳು ಮತ್ತು ಫಿಲ್ಟರ್‌ಗಳಿಗಾಗಿ [Hooks Reference](/developer/hooks) ಅನ್ನು ಪರಿಶೀಲಿಸಿ
-- API ಏಕೀಕರಣಕ್ಕಾಗಿ [REST API Overview](/developer/rest-api/overview) ಅನ್ನು ಪರಿಶೀಲಿಸಿ
-- ಆರಂಭಿಕ ಸ್ಕ್ಯಾಫೋಲ್ಡ್ ಆಗಿ [Addon Template](/addons/addon-template) ಅನ್ನು ಬಳಸಿ
+Ultimate Multisite v2.13.0, sovereign tenants, checkout domains, ಅಥವಾ host-provider DNS automation ಜೊತೆಗೆ ಸಂಯೋಜಿಸುವ addons‌ಗೆ ಉಪಯುಕ್ತವಾದ ಹಲವು ವಿಸ್ತರಣೆ ಬಿಂದುಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ.
+
+### SSO ಮತ್ತು ಮುಖ್ಯ-ಸೈಟ್ ನಿರ್ವಹಣಾ URLಗಳು {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### Checkout-form ಮೂಲ domains {#checkout-form-base-domains}
+
+ನಿಮ್ಮ addon ಹೆಚ್ಚುವರಿ ಹಂಚಿಕೆಯ ಮೂಲ domains ಒದಗಿಸಿದಾಗ `wu_checkout_form_base_domains` ಬಳಸಿ. ಅವು ಪ್ರತಿ-ಸೈಟ್ custom mappings ಬದಲು checkout-form **Site URL** domains ಹಾಗೆ ವರ್ತಿಸಬೇಕು:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite ಈ hosts ಅನ್ನು ಸಾಮಾನ್ಯೀಕರಿಸಿ, ಅವುಗಳಿಗೆ ಸ್ವಯಂಚಾಲಿತ ಪ್ರತಿ-ಸೈಟ್ mapped-domain records ಅನ್ನು ಬಿಟ್ಟುಬಿಡುತ್ತದೆ.
+
+### ಸ್ವಯಂಚಾಲಿತ domain-record ರಚನೆ {#automatic-domain-record-creation}
+
+ಹೊಸಾಗಿ ರಚಿಸಲಾದ ಸೈಟ್‌ಗಾಗಿ ಸ್ವಯಂಚಾಲಿತ domain-record ರಚನೆಯನ್ನು ನಿಮ್ಮ addon ತಡೆಹಿಡಿಯಬೇಕಾಗಿದ್ದಾಗ ಅಥವಾ ಮುಂದೂಡಬೇಕಾಗಿದ್ದಾಗ `wu_should_create_domain_record_for_site` ಬಳಸಿ:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+`wu_add_subdomain` ಅನ್ನು ಕೇಳುವ Host-provider integrations, ಸೈಟ್‌ಗಳು ರಚನೆಯಾದಾಗ provider-ಭಾಗದ DNS records ರಚಿಸಬಹುದು. ಆ action‌ಗೆ ಯಾವುದೇ integration ನೋಂದಾಯಿಸದಿದ್ದರೆ, Ultimate Multisite ಖಾಲಿ background job ಅನ್ನು ಬಿಟ್ಟುಬಿಡುತ್ತದೆ.
+
+## ಮುಂದಿನ ಹಂತಗಳು {#next-steps}
+
+- ಲಭ್ಯವಿರುವ actions ಮತ್ತು filters‌ಗಾಗಿ [Hooks Reference](/developer/hooks) ಪರಿಶೀಲಿಸಿ
+- API integration‌ಗಾಗಿ [REST API Overview](/developer/rest-api/overview) ಪರಿಶೀಲಿಸಿ
+- ಪ್ರಾರಂಭಿಕ scaffold ಆಗಿ [Addon Template](/addons/addon-template) ಬಳಸಿ

@@ -3,15 +3,15 @@ title: 'Lekce 14: Co následuje'
 sidebar_position: 15
 _i18n_hash: 34de1e11a397a7653aae269a7c35441d
 ---
-# Lekce 14: Co dál
+# Lekce 14: Co dál {#lesson-14-what-comes-next}
 
 Postavili jste platformu pro úzkou specializaci (niche) od nuly. FitSite je aktivní, obsluhuje fitness studia a generuje opakující se příjmy. Tato závěrečná lekce se zabývá tím, kam se vydat dál.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 FitSite je spuštěná firma s klienty, provozem a trajektorií růstu. Teď si uvědomujeme, co je další krok.
 
-## Kompletní síť FitSite
+## Kompletní síť FitSite {#the-complete-fitsite-network}
 
 Zde je vše, co jsme během 14 lekcí postavili:
 
@@ -46,11 +46,11 @@ FitSite Network (Complete)
     └── Team building roadmap
 ```
 
-## Možnost 1: Zhlubnit se ve své úzké specializaci
+## Možnost 1: Zhlubnit se ve své úzké specializaci {#option-1-go-deeper-in-your-niche}
 
 Než se rozšíříte do nových specializací, zvažte, zda nebylo lepší prohloubit se v oblasti fitness:
 
-### Pod-specializace (Sub-Niches)
+### Pod-specializace (Sub-Niches) {#sub-niches}
 
 - **Yoga studia** – specializované šablony s funkcemi pro meditaci, retraky a workshopy
 - **CrossFit boxy** – sledování WOD, výsledky soutěží, komunitní funkce
@@ -59,7 +59,7 @@ Než se rozšíříte do nových specializací, zvažte, zda nebylo lepší proh
 
 Každá pod-specializace může mít vlastní šablony a potenciálně i vlastní značku, vše běžící na stejné síti Ultimate Multisite.
 
-### Premium funkce
+### Premium funkce {#premium-features}
 
 Vytvořte funkce, za které fitness studia budou chtít zaplatit navíc:
 
@@ -68,14 +68,14 @@ Vytvořte funkce, za které fitness studia budou chtít zaplatit navíc:
 - **Šablony fitness blogů** – předem připravené struktury obsahu pro marketing pomocí fitness obsahu
 - **Integrace s sociálními sítěmi** – automatické publikování rozvrhů tříd a aktualizací
 
-### Geografická expanze
+### Geografická expanze {#geographic-expansion}
 
 Pokud jste začali lokálně, rozšířte se na:
 
 - Jiná města ve vaší zemi
 - Jiné země (použijte [funkce lokalizace](/user-guide/localization/translating) Ultimate Multisite pro podporu více jazyků)
 
-## Možnost 2: Rozšířit se na sousední specializace
+## Možnost 2: Rozšířit se na sousední specializace {#option-2-expand-to-adjacent-niches}
 
 Postup, který jste pro fitness studia provedli, funguje pro jakoukoli specializaci. Vaše druhá specializace je jednodušší, protože již máte:
 
@@ -83,7 +83,7 @@ Postup, který jste pro fitness studia provedli, funguje pro jakoukoli specializ
 - Provozní zkušenosti
 - Ověřený návod (playbook)
 
-### Sousední specializace k fitnessu
+### Sousední specializace k fitnessu {#adjacent-niches-to-fitness}
 
 - **Wellness a spa** – maséři, denní spa, wellness centra
 - **Sportovní kluby** – amatérské sportovní týmy, ligy, rekreační kluby
@@ -91,7 +91,7 @@ Postup, který jste pro fitness studia provedli, funguje pro jakoukoli specializ
 
 Tyto oblasti sdílejí překryv publik, takže vaše marketingové strategie a partnerství mohou přenášet.
 
-### Kompletně nové specializace
+### Kompletně nové specializace {#completely-new-niches}
 
 Použijte rámec z Lekce 2 k hodnocení jakékoli specializace:
 
@@ -108,7 +108,7 @@ Každá nová specializace potřebuje:
 
 Infrastruktura platformy, fakturace a provozní procesy zůstávají stejné.
 
-## Možnost 3: Postavit platformu platform
+## Možnost 3: Postavit platformu platform {#option-3-build-a-platform-of-platforms}
 
 Na vyšší úrovni můžete na jedné síti Ultimate Multisite provozovat více značek v různých specializacích:
 
@@ -118,11 +118,11 @@ Na vyšší úrovni můžete na jedné síti Ultimate Multisite provozovat více
 
 Každá značka má vlastní šablony, plány a marketing, ale sdílejí infrastrukturu, fakturaci a provozní procesy. Zde se stává ekonomika Ultimate Multisite silnou – jedna platforma, mnoho vertikál.
 
-### Multi-Network
+### Multi-Network {#multi-network}
 
 Pro úplné oddělení mezi specializacemi zvažte [addon Multi-Network](/addons/multinetwork), který vám umožní provozovat více WordPress sítí z jediné instalace.
 
-## Možnost 4: Prodat firmu
+## Možnost 4: Prodat firmu {#option-4-sell-the-business}
 
 Platforma pro úzkou specializaci s opakujícími se příjmy, nízkou fluktuací a jasnou pozicí na trhu je cenný majetek. SaaS firmy se obvykle prodávají za 3–5x roční příjmy.
 
@@ -134,7 +134,7 @@ FitSite s 200 klienty a ARPU 89 USD:
 
 Toto není garantovaný výsledek, ale je realistický pro dobře spravovanou platformu pro úzkou specializaci.
 
-## Co jste se naučili
+## Co jste se naučili {#what-you-have-learned}
 
 Tento kurz vám naučil opakovatelný proces:
 
@@ -150,7 +150,7 @@ Tento kurz vám naučil opakovatelný proces:
 
 Specializace je strategie. Platforma je nástroj. Ultimate Multisite činí nástroj možným. Vaše znalost specializace ho činí cenným.
 
-## Začněte budovat
+## Začněte budovat {#start-building}
 
 Pokud jste následovali FitSite, máte funkční platformu. Pokud jste přečetli až do nalezení vlastní specializace, vraťte se do [Lekce 2: Výběr vaší specializace](lesson-2-picking-your-niche) a začněte proces pro svůj zvolený vertikál.
 

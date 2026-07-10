@@ -3,7 +3,7 @@ title: Üylyklaryni dolandyrmak
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Üylyk (Memberships) Başdaresini Dolandyradyk
+# Üylyk (Memberships) Başdaresini Dolandyradyk {#managing-memberships}
 
 Ultimate Multisite-de siz şebekäňizdäki ähli abonementleri we üyelikleri dolandyradyk bilersiňiz. Abonamentleri, planlary we önüleri, sazlaryny, tozlary we üpjünçilik maslahatlaryny, ötek töläýiňizi we wagt işaretlerini gözden geçiripli we redaktir edip bilersiňiz.
 

@@ -3,11 +3,11 @@ title: Tema-ani hisobga olgan ko'nikmalar
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Boshli Ko'nikmalar
+# Tema-Boshli Ko'nikmalar {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 ning navbatdagi to'rtta yangi tema-boshli ko'nikmal (theme-aware skills) chiqarildi, ular sizning faol WordPress temangizga avtomatik moslashadi. Bu ko'nikmalar temangiz arxitekturasiga va xususiyatlariga moslashtirilgan maxsus yo'riqlar va imkoniyatlarni taqdim etadi.
 
-## Tema-Boshli Ko'nikmalar Nima?
+## Tema-Boshli Ko'nikmalar Nima? {#what-are-theme-aware-skills}
 
 Tema-boshli ko'nikmalar — bu AI yordamchisi sizning saytingizda hozir faol bo'lgan WordPress temasi asosida avtomatik tanlaydigan oldindan sozlanmagan bilim bazalari va vositalar to'plamlaridir. Temalar o'zgarganda, yordamchisining mavjud ko'nikmalari avtomatik yangilanadi — qo'lda sozlash talab qilinmaydi.
 
@@ -18,9 +18,9 @@ Har bir ko'nikmada quyidagilar bo'ladi:
 - **Moslashtirish misollari** — keng tarqalgan vazifalar uchun kod qismlari va konfiguratsiya shablonlari
 - **Eng yaxshi amaliyotlar (Best practices)** — temaning arxitekturasiga va ish jarayoniga oid tavsiyalar
 
-## Mavjud Tema-Boshli Ko'nikmalar
+## Mavjud Tema-Boshli Ko'nikmalar {#available-theme-aware-skills}
 
-### Blok Temalar
+### Blok Temalar {#block-themes}
 
 **Qaysi temalarga tegishli:** WordPress blok asosidagi (Full Site Editing) arxitekturadan foydalanadigan temalar.
 
@@ -34,7 +34,7 @@ Blok Temalar ko'nikmas quyidagilarda yo'riq beradi:
 
 **Qachon avtomatik faollashadi:** Faol temangiz blok temasi bo'lsa ( `block-templates` xususiyatini qo'llab-quvvatlaydi).
 
-### Klassik Temalar
+### Klassik Temalar {#classic-themes}
 
 **Qaysi temalarga tegishli:** PHP shablonlari va klassik muharrirdan foydalanadigan an'anaviy WordPress temalari.
 
@@ -48,7 +48,7 @@ Tema iyerarohini va template tag'larini tushunish
 
 **Qachon avtomatik faollashadi:** Faol temangiz klassik (blocksiz) tema bo'lganda.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Kimlar uchun mos keladi:** Katta blokli dizayn uchun Kadence Blocks pluginidan foydalanadigan saytlar.
 
@@ -62,7 +62,7 @@ Kadence Blocks ko'nikmasi quyidagilarda yo'l beradi:
 
 **Qachon avtomatik faollashadi:** Kadence Blocks pluginingiz saytingizda faol bo'lganda.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Kimlar uchun mos keladi:** Blokli dizayn va sozlash uchun Kadence temadan foydalanadigan saytlar.
 
@@ -76,15 +76,15 @@ Kadence Theme ko'nikmasi quyidagilarda yo'l beradi:
 
 **Qachon avtomatik faollashadi:** Kadence temangiz faol bo'lganda.
 
-## Ko'nikmalar qanday tanlanadi
+## Ko'nikmalar qanday tanlanadi {#how-skills-are-selected}
 
 Assistent har bir xabarda sizning faol temangiz va o'rnatilgan pluginlaringizni avtomatik aniqlaydi. Mos keladigan tema-aniq ko'nikma mavjud bo'lsa, u avtomatik ravishda assistent kontekstiga yuklanadi. Ko'nikmalarni qo'lda faollashtirish yoki o'zgartirish shart emas.
 
-### Bir nechta ko'nikmalar
+### Bir nechta ko'nikmalar {#multiple-skills}
 
 Agar saytingizga bir nechta ko'nikmalar tegishli bo'lsa (masalan, Kadence Blocks va Kadence Theme ham faol bo'lsa), yordamchi barcha tegishli ko'nikmalarga kirishi mumkin va har biridan yo'riqnomalardan foydalanishi mumkin.
 
-### Temani o'zgartirish
+### Temani o'zgartirish {#switching-themes}
 
 Faol temangizni o'zgartirganingizda, yordamchining mavjud ko'nikmalari keyingi xabarda avtomatik ravishda yangilanadi. Masalan:
 
@@ -92,11 +92,11 @@ Faol temangizni o'zgartirganingizda, yordamchining mavjud ko'nikmalari keyingi x
 2. Siz klassik temaga o'ting.
 3. Keyingi xabaringizda, **Classic Themes** ko'nikmasi avtomatik yuklanadi va **Block Themes** ko'nikmasi endi mavjud emas.
 
-## Temaga bog'liq ko'nikmalardan foydalanish
+## Temaga bog'liq ko'nikmalardan foydalanish {#using-theme-aware-skills}
 
 Temaga bog'liq ko'nikmadan foydalanish uchun chat interfeysida nima qilishni xohlayotganingizni oddiygina tasvirlang. Yordamchi avtomatik ravishda tegishli ko'nikmaning yo'riqnomalaridan foydalanadi.
 
-### Misollar
+### Misollar {#example-prompts}
 
 **Block Themes uchun:**
 > "Blok shablonlari yordamida fon rasmi va markazlashtirilgan matn bilan hero bo'limini yarating."

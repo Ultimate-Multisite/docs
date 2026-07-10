@@ -1,52 +1,52 @@
 ---
-title: Aangepaste Ontwikkelingshulp
+title: Hulp bij maatwerkontwikkeling
 sidebar_position: 10
-_i18n_hash: 993698d2931dd695962b481db2b9cc14
+_i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable?
+# Hoe krijg je hulp bij maatwerkontwikkeling van Codeable? {#how-to-get-custom-development-help-from-codeable}
 
-Soms hebben we echt een geweldige maatwerkoplossing nodig om onze netwerkstromen precies zo te maken als we willen. Als dat is wat je zoekt, raden we [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) aan, een plek waar je ervaren ontwikkelaars met Ultimate Multisite-expertise kunt vinden.
+Soms hebben we echt geweldige aanpassingen nodig om ons netwerk precies te laten verlopen zoals we dat willen. Als dat is waar je naar op zoek bent, raden we [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) aan, een plek waar je ervaren ontwikkelaars met Ultimate Multisite-expertise kunt vinden.
 
-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) is een platform dat klanten verbindt met gekwalificeerde WordPress freelance ontwikkelaars, die aan projecten van elke omvang kunnen werken. Ze hebben een nauwgezet aanvraagproces om ervoor te zorgen dat je wordt gekoppeld aan experts die specifiek gekwalificeerd zijn voor de taak die je voor ogen hebt.
+[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) is een platform dat klanten in contact brengt met gekwalificeerde WordPress freelance-ontwikkelaars, die aan projecten van elke omvang kunnen werken. Ze hebben een zorgvuldig aanmeldingsproces om ervoor te zorgen dat je wordt gekoppeld aan experts die specifiek gekwalificeerd zijn voor de taak die je in gedachten hebt.
 
-### Hoe maak je een project aan op Codeable?
+### Hoe maak je een project aan in Codeable? {#how-to-create-a-project-in-codeable}
 
 Ga eerst naar [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) en klik op de knop **Start a Project**.
 
-<!-- Screenshot unavailable: Codeable homepage with Start a Project button -->
+<!-- Screenshot niet beschikbaar: Codeable homepage met knop Start a Project -->
 
-Nu, om een project in te dienen, klik je links op **Start a Project**.
+Om nu een project in te dienen, klik je links op **Start a Project**.
 
-<!-- Screenshot unavailable: Codeable project submission page with Start a Project option -->
+<!-- Screenshot niet beschikbaar: Codeable projectindieningspagina met optie Start a Project -->
 
-In 'I need help with', kies **Customizing** :
+Kies bij "I need help with" **Customizing** :
 
-<!-- Screenshot unavailable: Codeable project form with Customizing selected -->
+<!-- Screenshot niet beschikbaar: Codeable projectformulier met Customizing geselecteerd -->
 
-In 'My', kies **Plugin** :
+Kies bij "My" **Plugin** :
 
-<!-- Screenshot unavailable: Codeable project form with Plugin selected -->
+<!-- Screenshot niet beschikbaar: Codeable projectformulier met Plugin geselecteerd -->
 
-Klik vervolgens op de knop **Continue**.
+Klik daarna op de knop **Continue**.
 
-<!-- Screenshot unavailable: Codeable project form Continue button -->
+<!-- Screenshot niet beschikbaar: Codeable projectformulier knop Continue -->
 
-Nu is het tijd om je project en behoeften zo goed mogelijk te beschrijven. Probeer zo veel mogelijk informatie te geven!
+Nu is het tijd om je project en behoeften zo goed mogelijk te beschrijven. Probeer zoveel mogelijk informatie te geven!
 
-<!-- Screenshot unavailable: Codeable project description form -->
+<!-- Screenshot niet beschikbaar: Codeable projectbeschrijvingsformulier -->
 
-Beantwoord de volgende vragen om te helpen bij het bepalen van de prijs.
+Beantwoord de volgende vragen om te helpen met de prijsbepaling.
 
-<!-- Screenshot unavailable: Codeable project pricing questions -->
+<!-- Screenshot niet beschikbaar: Codeable projectvragen over prijsbepaling -->
 
-Daarna, als je nog geen [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) account hebt, maak er dan een aan en klik op de knop **Publish My Project**.
+Maak daarna, als je nog geen [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) account hebt, een account aan en klik op de knop **Publish My Project**.
 
-<!-- Screenshot unavailable: Codeable account creation and Publish My Project button -->
+<!-- Screenshot niet beschikbaar: Codeable accountaanmaak en knop Publish My Project -->
 
-Zodra je je [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) project hebt gepubliceerd, zal het platform je verbinden met ontwikkelaars die voldoen aan de vereiste vaardigheden voor je project.
+Zodra je je [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) project hebt gepubliceerd, brengt het platform je in contact met ontwikkelaars die passen bij de vaardigheden die voor je project vereist zijn.
 
-Dit proces helpt je de juiste persoon voor je werk te vinden, die ervaring heeft met WordPress en Ultimate Multisite!
+Dit proces helpt om de juiste persoon voor je klus te vinden, iemand die ervaring heeft met WordPress en Ultimate Multisite!
 
-De minimumtarief van Codeable is $70–$120 USD per uur. Schattingen zullen variëren afhankelijk van de omvang van het werk, de complexiteit en de urgentie van een project.
+Het minimumtarief van Codeable is $70–$120 USD per uur. Schattingen veranderen afhankelijk van de omvang van het werk, de complexiteit en de urgentie van een project.
 
-Zodra je je schatting hebt, kun je de ontwikkelaar inhuren die het beste bij je behoeften past en samen je project starten!
+Zodra je je schatting hebt ontvangen, kun je de ontwikkelaar inhuren die het beste bij je behoeften past en samen je project starten!

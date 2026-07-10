@@ -3,9 +3,9 @@ title: Tala sa mga Kausaban sa Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Paglista sa mga Pagbag-o sa Content Sync
+# Paglista sa mga Pagbag-o sa Content Sync {#content-sync-changelog}
 
-### Bersyon 1.1.0 - Gipagawas niadtong 2025-12-31
+### Bersyon 1.1.0 - Gipagawas niadtong 2025-12-31 {#version-110---released-on-2025-12-31}
 * Bag-o: Suporta sa pag-sync sa tanang post type (posts, pages, custom post types)
 * Bag-o: Pagpili/Pag-filter sa post type sa yugto sa pagpili og content
 * Bag-o: Yugto sa pagpili sa source site - makasink gikan sa bisan unsang site, dili lang sa main site
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Ang yugto nga "Select Templates" nabag-o ngadto sa "Select Data"
 * Gipaayo: Ang Elementor-specific code karon magdagan lang para sa post type nga elementor_library
 
-### Bersyon 1.0.0 - Gipagawas niadtong 2025-12-19
+### Bersyon 1.0.0 - Gipagawas niadtong 2025-12-19 {#version-100---released-on-2025-12-19}
 * Unang pagpagawas
 * Multi-step wizard alang sa pagpili og template ug site
 * Batch processing uban ang real-time progress feedback

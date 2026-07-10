@@ -4,11 +4,11 @@ title: Filter - wu_wp_cli_enabled_sub_commands
 sidebar_label: wu_wp_cli_enabled_sub_commands
 _i18n_hash: 2943f23ce68dd1fdabd034c45131295c
 ---
-# Filter: wu_wp_cli_enabled_sub_commands
+# Filter: wu_wp_cli_enabled_sub_commands {#filter-wuwpclienabledsubcommands}
 
 Hii ni filter inayotathmini ni amri ndogo zipi (sub\_commands) zimefunguliwa kwa kiwango hiki.
 
-## Viparametrika
+## Viparametrika {#parameters}
 
 | Jina | Aina | Maelezo |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Hii ni filter inayotathmini ni amri ndogo zipi (sub\_commands) zimefunguliwa kwa
 | $command_base | `string` | Msingi unaotumika katika amri mara baada ya mzizi (root). |
 | $this | `\Base_Manager` | Kileki cha kitu (object instance). |
 
-### Tangu
+### Tangu {#since}
 
 - 2.0.0
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/apis/trait-wp-cli.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-wp-cli.php#L198) kwenye mstari wa 198

@@ -4,11 +4,11 @@ title: Filter - wu_woocommerce_line_item_params
 sidebar_label: wu_woocommerce_line_item_params
 _i18n_hash: e73b9172e21ffc9367dbea9f74dadb63
 ---
-# Filter: wu_woocommerce_line_item_params
+# Filter: wu_woocommerce_line_item_params {#filter-wuwoocommercelineitemparams}
 
 Filter die parameters wat gebruik word om die items op die WooCommerce Winkelmand te skep, voordat die kliënt na die WooCommerce afrekening herlei word.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Filter die parameters wat gebruik word om die items op die WooCommerce Winkelman
 | $wu_line_item | `\WP_Ultimo\Checkout\Line_Item` | Die Ultimate Multisite item-instansie. |
 | $wc_product | `\WC_Product` | Die WooCommerce produk. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Defined in [`inc/gateways/class-woocommerce-gateway.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-woocommerce/blob/main/inc/gateways/class-woocommerce-gateway.php#L662) at line 662
 
 
-## Returns
+## Returns {#returns}
 Die gewysigde item-parameters.

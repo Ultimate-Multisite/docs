@@ -3,15 +3,15 @@ title: 'Lektion 4: Bygga nischmallar'
 sidebar_position: 5
 _i18n_hash: 3ade990de5fd404a7f09a9d42d7535ee
 ---
-# Lektion 4: Bygga nisch-mallar
+# Lektion 4: Bygga nisch-mallar {#lesson-4-building-niche-templates}
 
 Mallar är kärnan i ditt nischvärdeerbjudande. En ägare av ett träningsstudio som registrerar sig och ser en webbplats som redan ser ut som en träningswebbplats – med klasschema, tränarprofiler och rätt bildmaterial – är mycket mer benägen att stanna kvar än någon som ser en tom duk.
 
-## Var vi slutade
+## Var vi slutade {#where-we-left-off}
 
 Vi har ett fungerande FitSite-nätverk med Ultimate Multisite installerat och konfigurerat. Nu bygger vi mallarna som får FitSite att kännas byggt specifikt för träningsföretag.
 
-## Varför nisch-mallar spelar roll
+## Varför nisch-mallar spelar roll {#why-niche-templates-matter}
 
 Generiska mallar lägger ansvaret för det svåra arbetet på dina kunder: att ta reda på vilka sidor de behöver, vilken innehållsstruktur som fungerar och hur de ska få det att se rätt ut för deras bransch. Nisch-mallar eliminerar det motståndet.
 
@@ -24,11 +24,11 @@ En ägare av ett träningsstudio som registrerar sig för FitSite bör se:
 
 De fyller i sina detaljer. De börjar inte från grunden.
 
-## Planering av dina mallar
+## Planering av dina mallar {#planning-your-templates}
 
 Innan du bygger, bestäm vilka mallar du ska erbjuda. För FitSite kommer vi att skapa tre:
 
-### Mall 1: Studio Essential
+### Mall 1: Studio Essential {#template-1-studio-essential}
 
 För små studior och personliga tränare.
 
@@ -39,7 +39,7 @@ För små studior och personliga tränare.
 - **Kontakt**-sida med platskarta och formulär
 - **Rent, modernt design** med en färgpalett som passar fitness
 
-### Mall 2: Gym Pro
+### Mall 2: Gym Pro {#template-2-gym-pro}
 
 För etablerade gym med fler tjänster.
 
@@ -50,7 +50,7 @@ För etablerade gym med fler tjänster.
 - **Testimonials**-sektion på startsidan
 - **Mer framträdliga varumärkes**alternativ
 
-### Mall 3: Fitness Chain
+### Mall 3: Fitness Chain {#template-3-fitness-chain}
 
 För verksamheter med flera platser.
 
@@ -60,17 +60,17 @@ För verksamheter med flera platser.
 - **Centraliserat varumärke** med plats-specifika detaljer
 - **Personalregister** över flera platser
 
-## Bygga en mall-webbplats
+## Bygga en mall-webbplats {#building-a-template-site}
 
 I Ultimate Multisite är en mall helt enkelt en WordPress-webbplats som är konfigurerad på det sätt du vill att nya kundwebbplatser ska se ut. Här är hur du skapar en:
 
-### Steg 1: Skapa mall-webbplatsen
+### Steg 1: Skapa mall-webbplatsen {#step-1-create-the-template-site}
 
 1. Gå till **Sites > Add New** i ditt network admin
 2. Skapa en webbplats med namnet `template-studio-essential`
 3. Denna webbplats blir din arbetsyta
 
-### Steg 2: Installera och konfigurera temat
+### Steg 2: Installera och konfigurera temat {#step-2-install-and-configure-the-theme}
 
 Byt till mall-webbplatsens dashboard och:
 
@@ -82,7 +82,7 @@ Byt till mall-webbplatsens dashboard och:
 Välj ett tema som är tillräckligt flexibelt för att se bra ut för fitness, men inte så komplext att dina kunder inte kan hantera det. Teman som Astra, GeneratePress eller Kadence fungerar bra eftersom de är lätta, anpassningsbara och välunderstödda.
 :::
 
-### Steg 3: Skapa sidorna
+### Steg 3: Skapa sidorna {#step-3-create-the-pages}
 
 Bygg ut varje sida med:
 
@@ -92,7 +92,7 @@ Bygg ut varje sida med:
 
 Gör platshållar-innehållet instruktivt där det är möjligt. Istället för generisk fylltext, skriv innehåll som: "Ersätt detta med en kort beskrivning av ditt studio och vad som gör det speciellt. Nämn din träningsfilosofi, års erfarenhet eller vad klienterna kan förvänta sig."
 
-### Steg 4: Konfigurera plugins
+### Steg 4: Konfigurera plugins {#step-4-configure-plugins}
 
 Installera och aktivera plugins som träningsstudior behöver:
 
@@ -100,7 +100,7 @@ Installera och aktivera plugins som träningsstudior behöver:
 - Ett kontaktformulär-plugin
 - Ett SEO-plugin (förkonfigurerat med fitnessrelevanta standardinställningar)
 
-### Steg 5: Markera som mall
+### Steg 5: Markera som mall {#step-5-mark-as-template}
 
 1. Gå till **Ultimate Multisite > Sites**
 2. Redigera mall-webbplatsen
@@ -108,7 +108,7 @@ Installera och aktivera plugins som träningsstudior behöver:
 
 Upprepa denna process för varje mall du vill erbjuda.
 
-## Mallkvalitetskontroll
+## Mallkvalitetskontroll {#template-quality-checklist}
 
 Innan du gör en mall tillgänglig, verifiera följande:
 
@@ -121,7 +121,7 @@ Innan du gör en mall tillgänglig, verifiera följande:
 - [ ] Inga trasiga länkar eller saknade tillgångar
 - [ ] Sidladdningshastigheten är acceptabel
 
-## FitSite-nätverket hittills
+## FitSite-nätverket hittills {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -136,7 +136,7 @@ FitSite Network
 └── Ready for plan configuration (next lesson)
 ```
 
-## Vad vi byggde i denna lektion
+## Vad vi byggde i denna lektion {#what-we-built-this-lesson}
 
 - **Tre nischspecifika mallar** designade för olika storlekar på träningsföretag
 - **Fitnessanpassat innehåll och bildmaterial** som får plattformen att kännas byggd specifikt

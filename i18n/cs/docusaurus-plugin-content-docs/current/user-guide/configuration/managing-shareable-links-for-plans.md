@@ -3,7 +3,7 @@ title: Správa sdílitelných odkazů pro plány
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Správa sdílitelných odkazů na tarify
+# Správa sdílitelných odkazů na tarify {#managing-shareable-links-for-plans}
 
 Ultimate Multisite vám umožňuje sdílet odkazy na tarify přímo s vašimi klienty. Chcete-li to provést, přejděte na stránku úprav libovolného tarifu a klikněte na tlačítko _Klikněte pro zkopírování sdílitelného odkazu_.
 

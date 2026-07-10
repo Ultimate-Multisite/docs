@@ -3,11 +3,11 @@ title: Zakaj Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Zakaj Ultimate Multisite
+# Zakaj Ultimate Multisite {#why-ultimate-multisite}
 
 Če ste do tega članka prišli, verjetno ste česal, da je naš plugin rešitev za urealizacijo vaše poslovne ideje. Nadamo se, da boste na koncu tega besedila imeli vse potrebna odzivna informacije.
 
-## Kaj je Ultimate Multisite?
+## Kaj je Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite je WordPress Multisite plugin, ki vam omogoča ponudbo strankam WaaS (Website as a Service). Z našim pluginom lahko imate različne stopnje naročnine in stranke plačajo redno strošek za hostovanje spletnega mesta v vaših Multisite mreži.
 
@@ -15,7 +15,7 @@ Ultimate Multisite vam omogoča prejemati plačila z različnimi gatewayji (kot 
 
 In to je le začetek, saj lahko njegove funkcije razširite z add-oni in webhooks.
 
-## Drugi podatki
+## Drugi podatki {#other-features}
 
 Ultimate Multisite ponuja tudi:
 
@@ -33,11 +33,11 @@ In še bolj napredne stvari:
 
 * API za iskanje in zamenu (Search and Replace API): Lahko templatne strani saj označite z placeholderji kot so `{{site_name}}` in uporabite Search and Replace API za avtomatizirano zapolnjevanje teh placeholderjev z informacijami, ki jih prinaša stranka takoj po registraciji.
 
-## Primeri uporabe (Use cases)
+## Primeri uporabe (Use cases) {#use-cases}
 
 Zdaj je čas, da vidimo nekaj možnih primerov uporabe Ultimate Multisite.
 
-### Primer 1: Agencija
+### Primer 1: Agencija {#case-1-an-agency}
 
 Tipično so osnovne veščine agencije v dizajnu spletnih strani z elementami kot sta njihovo hostovanje ali trženje, ki so navedena kot dodatni storitve.
 
@@ -47,7 +47,7 @@ Kontrola nad plugin-i in temi se ohranja na podlagi vsakega izdelka prek nastavi
 
 Agencije bodo z Ultimate Multisite imajo mir um, ki jim omogoča, da delajo to, česar so najbolj dobro: oblikovanje izjemnih spletnih strani.
 
-### Primer 2: Ponudovalec niše
+### Primer 2: Ponudovalec niše {#case-2-niche-provider}
 
 Obstaja stara poslovica, ki pravi: „Prav eno stvar naredi dobro”. Za mnogih specialiste pomeni ustvarjanje izdelka ali storitve okoli ene osnovne ideje.
 
@@ -57,7 +57,7 @@ En od inovativnih funkcij Ultimate Multisite je šablon za stran: to je stran, k
 
 Za ponudovalca nišnih strani in storitev mu to prinaša nepremišljivo prednost pri trenutni krepitvi strani, pripravljeni za uporabo z prilagojenimi pluginovi in oblikovanjem. Kupcu je potrebno samo minimalno vlogo, da se storitev dokonča.
 
-### Primer 3: WordPress hosting
+### Primer 3: WordPress hosting {#case-3-wordpress-web-hosting}
 
 Obstaja številnih načinov za hostovanje WordPress strani, vendar je redko tako preprosto kot ponudba spletnega prostora kupcu z predinstalirano različico WordPress-a. To je zato, ker mora skupaj obstajati več odločitev in razmatranj, da bi se priložila pomembna storitev.
 

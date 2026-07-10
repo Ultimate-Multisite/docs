@@ -1,0 +1,30 @@
+---
+id: wu_checkout_form_base_domains
+title: Фільтр - wu_checkout_form_base_domains
+sidebar_label: wu_checkout_form_base_domains
+_i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
+---
+# Фільтр: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+
+Фільтруе агульныя базавыя дамены формы checkout, якія не павінны станавіцца запісамі супастаўленых даменаў.
+
+Выкарыстоўвайце гэты фільтр, калі інтэграцыя прадастаўляе дадатковыя базавыя дамены для палёў **Site URL** формы checkout. Дамены, вернутыя гэтым фільтрам, разглядаюцца як агульныя хосты рэгістрацыі замест карыстальніцкіх даменаў для асобнага сайта.
+
+## Параметры {#parameters}
+
+| Name | Type | Description |
+|------|------|-------------|
+| $domains | `array` | Агульныя базавыя дамены, сабраныя з канфігурацыі формы checkout. |
+
+### З версіі {#since}
+
+- 2.13.0
+
+### Крыніца {#source}
+
+Вызначана ў `inc/functions/domain.php`.
+
+
+## Вяртае {#returns}
+
+Масіў нармалізаваных базавых даменаў формы checkout.

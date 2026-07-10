@@ -3,11 +3,11 @@ title: Domänprodukter och prissättning
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domänprodukter och prissättning
+# Domänprodukter och prissättning {#domain-products-and-pricing}
 
 Domänprodukter är hur du styr prissättning, TLD:er, WHOIS-integritet och val av leverantör. Varje domänprodukt är en standardprodukt i Multisite Ultimate med en extra **Domain Settings**-flik.
 
-## Skapa en domänprodukt
+## Skapa en domänprodukt {#creating-a-domain-product}
 
 1. Gå till **Network Admin › Ultimate Multisite › Products**
 2. Klicka på **Add New**
@@ -17,13 +17,13 @@ Domänprodukter är hur du styr prissättning, TLD:er, WHOIS-integritet och val 
 
 Domänprodukter visas med ett lila **Domain**-märke i produktlistan och kan filtreras med hjälp av fliken **Domain Products**.
 
-## Domain settings tab
+## Domain settings tab {#domain-settings-tab}
 
-### Provider
+### Provider {#provider}
 
 Välj vilken registrar som hanterar registreringen för denna produkt. Standardinställningen är den globala **Default provider** som är satt i Domain Seller-inställningarna.
 
-### Supported TLDs
+### Supported TLDs {#supported-tlds}
 
 Lämna tomt för att skapa en **catch-all-produkt** som gäller för alla TLD:er som inte matchas av någon annan produkt.
 
@@ -31,7 +31,7 @@ Ange en komma-separerad lista med TLD:er (t.ex. `.com, .net, .org`) för att ska
 
 **Hur produktmatchning fungerar:** När en kund söker efter en domän väljer tillägget den mest specifika matchande produkten. En produkt med `.com` i sin TLD-lista har företräde framför en catch-all-produkt. Om ingen TLD-specifik produkt matchar, används catch-allen. Om inga produkter finns, visas inte domänökningen.
 
-### Markup type
+### Markup type {#markup-type}
 
 Tre lägen styr hur din detaljpris beräknas från engroskostnaden:
 
@@ -41,11 +41,11 @@ Tre lägen styr hur din detaljpris beräknas från engroskostnaden:
 | **Fixed markup** | Lägger till ett fast dollarbelopp. Ett påslag på 5 dollar på en domän på 10 dollar ger 15 dollar. |
 | **Fixed price** | Ignorerar engroskostnaden helt. Tar alltid ut det belopp du anger. |
 
-### Introductory pricing
+### Introductory pricing {#introductory-pricing}
 
 Aktivera för att erbjuda ett rabatterat pris för det första året. Ställ in ett separat **Introductory price** (priset för år 1) bredvid det vanliga **Renewal price** (pris från år 2 och framåt). Kunden ser båda priserna under kassan så att de vet vad de kan förvänta sig vid förnyelsen.
 
-### WHOIS privacy
+### WHOIS privacy {#whois-privacy}
 
 Styr om WHOIS-integritet erbjuds för domäner som registreras via denna produkt.
 
@@ -59,7 +59,7 @@ För Namecheap använder WHOIS-integritet WhoisGuard (alltid gratis). För OpenS
 
 ---
 
-## TLD-import och synkronisering
+## TLD-import och synkronisering {#tld-import-and-sync}
 
 Domänprodukter visar realtidsengrospriser hämtade från den anslutna leverantören. För att detta ska fungera måste TLD:er importeras.
 
@@ -70,7 +70,7 @@ Efter en synkronisering, gå till fliken Domain Settings för vilken domänprodu
 
 ---
 
-## Auto-renewal
+## Auto-renewal {#auto-renewal}
 
 Domänförnyelser är kopplade till kundens medlemsstatus:
 
@@ -90,7 +90,7 @@ E-postmall-ID:n för domänlivscykelhändelser:
 
 ---
 
-## Admin: Manuell domänregistrering
+## Admin: Manuell domänregistrering {#admin-manual-domain-registration}
 
 För att registrera en domän å en kund utan att de behöver gå genom kassan:
 

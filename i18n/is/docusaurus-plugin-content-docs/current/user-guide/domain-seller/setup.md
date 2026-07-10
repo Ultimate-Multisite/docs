@@ -3,21 +3,21 @@ title: Uppsetning og vinnara-samþættingar
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domén Séljar: Uppsetning og Leiðandi Stjórnunarinnar
+# Domén Séljar: Uppsetning og Leiðandi Stjórnunarinnar {#domain-seller-setup-and-provider-configuration}
 
 Domén Séljar (Domain Seller) add-oninn fer með sér leiðandi uppsetningarpylsan sem leysir þig í gegnum alla nauðsynleg skref. Þessi síða dektar ferli pylsansins og hvernig þú getur sett upp eða breytt leiðandi stjórnunarannferðara (providers) eftir.
 
-## Nauðskapur
+## Nauðskapur {#requirements}
 
 - **Multisite Ultimate** v2.4.12 eða hærri, nýtingarvinnuþjónustu
 - **PHP** 7.4+
 - API-auði fyrir að minnsta einn stöðugt viðkomandi registrar
 
-## Uppsetningarpylsa fyrsta nota
+## Uppsetningarpylsa fyrsta nota {#first-run-setup-wizard}
 
 Uppsetningarpylsanirstarfar sjálft þegar þú nýtingarvinnuþjónustuna (network-activate) add-oninn fyrsta sinni. Hún er aðgengileg í einu og sem **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Skref 1 — Veldu leiðandi stjórnunarannferðara
+### Skref 1 — Veldu leiðandi stjórnunarannferðara {#step-1--choose-a-provider}
 
 Veldu registrarann sem þú vilt tengja þig við. Stöðugt val:
 
@@ -33,7 +33,7 @@ Veldu registrarann sem þú vilt tengja þig við. Stöðugt val:
 | NameSilo | Nei | Nei |
 | Enom | Já | Nei |
 
-### Skref 2 — Skrá inn auði
+### Skref 2 — Skrá inn auði {#step-2--enter-credentials}
 
 Hvert leiðandi stjórnunarannferðari hefur annarra auði:
 
@@ -57,17 +57,17 @@ Hvert leiðandi stjórnunarannferðari hefur annarra auði:
 
 Skennu **Sandbox mode** þar sem það er til að prófa gegn testum umtökvaðan umhverfi við veitmanna fyrir því að fara í live-samning.
 
-### Stig 3 — Prófa tengingu
+### Stig 3 — Prófa tengingu {#step-3--test-the-connection}
 
 Klikka á **Test Connection**. Vísabrautin sendir ljómskeið API hringni til að staðfesta skilvirkni og tengingu. Fílldu alla skilvirkniáætlunana fyrir því að halda áfram.
 
-### Stig 4 — Innafa TLDs
+### Stig 4 — Innafa TLDs {#step-4--import-tlds}
 
 Klikka á **Import TLDs** til að draga allar tilfyllandi TLDs og hverskildar verðning frá tengdum veitmanni. Þetta byggir lista TLDs sem er notaður í domænumönnum. Innafaðuðin getur taka 30–60 sekúndur fyrir veitmenn með stórum lista TLDs.
 
 TLDs eru einnig sjálfskipta upphafaðir aftur einnu sinni á dag vegna skjaldaferðar (cron job).
 
-### Stig 5 — Skapa domænumönnum
+### Stig 5 — Skapa domænumönnum {#step-5--create-a-domain-product}
 
 Vísabrautin skapar almenn domænumönnum með 10% viðbót. Þú getur breytt þennan mönnum strax eða skoða og skapa mönnum mannvænt í **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Sjá [Domain Products and Pricing](./domain-products) fyrir nánari leiðbeining
 
 ---
 
-## Samkvæði á veitmanni
+## Samkvæði á veitmanni {#reconfiguring-a-provider}
 
 Gera ferð til **Network Admin › Ultimate Multisite › Settings › Domain Seller** (eða klikka á **Settings** í lista mönnum).
 
@@ -89,17 +89,17 @@ Skráningasíðin inniheldur:
 - **Manage domain products** — hraðli linkur til lista vörum
 - **Configure providers** — opnar Integration Wizard til að bæta við eða breyta veitiefurðum
 
-### Að bæta við tveggja veitiefurður
+### Að bæta við tveggja veitiefurður {#adding-a-second-provider}
 
 Klikka á **Configure providers** og körfðu wizardinn aftur fyrir nýja registrarann. Þú getur haft fleiri veitiefurðum sett upp samkvæmt sama tíma. Skyni hvert doménvörð til sérstekt veitiefurði, eða láttu það á vinnandi veitiefurði.
 
-### Að synka TLDs mannvætis
+### Að synka TLDs mannvætis {#syncing-tlds-manually}
 
 Á settningasíðunni klikka á **Sync TLDs** í nýrri veitiefurði til að hapa upp nýjustu verðsetningu. Þetta er mjög gagnlegt eftir það sem einn veitiefurður skilar upp nýjum vörðum eða breyttar hversu margar TLDs eru til staðar.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Hvert veitiefurður skilar upp í sín eigin logkaflutning. Logg eru að sjá á **Network Admin › Ultimate Multisite › Logs**:
 
@@ -119,7 +119,7 @@ Hvert veitiefurður skilar upp í sín eigin logkaflutning. Logg eru að sjá á
 
 ---
 
-## Athitiingar um framkvæmdarferli við veitendur (Provider capability notes)
+## Athitiingar um framkvæmdarferli við veitendur (Provider capability notes) {#provider-capability-notes}
 
 Ekki allir registrar API-s sýna sama aðgerðir. Addoninn sýnir óstöðugt stöðuferli sem ekki er støðugt, með kláramlegum feilum fyrir administratora í stað þess að falla hingað og af því.
 

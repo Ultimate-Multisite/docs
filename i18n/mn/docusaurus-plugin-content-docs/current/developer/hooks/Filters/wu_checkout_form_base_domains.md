@@ -1,0 +1,30 @@
+---
+id: wu_checkout_form_base_domains
+title: Шүүлтүүр - wu_checkout_form_base_domains
+sidebar_label: wu_checkout_form_base_domains
+_i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
+---
+# Шүүлтүүр: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+
+Хуваалцсан checkout-формын суурь домэйнүүдийг mapped-domain бичлэг болохоос сэргийлэн шүүнэ.
+
+Интеграц checkout формын **Сайтын URL** талбаруудад нэмэлт суурь домэйнүүдийг өгөх үед энэ шүүлтүүрийг ашиглана уу. Энэ шүүлтүүрээр буцаагдсан домэйнүүдийг сайт тус бүрийн тусгай домэйн биш, харин хуваалцсан бүртгэлийн хостууд гэж үзнэ.
+
+## Параметрүүд {#parameters}
+
+| Нэр | Төрөл | Тайлбар |
+|------|------|-------------|
+| $domains | `array` | Checkout формын тохиргооноос цуглуулсан хуваалцсан суурь домэйнүүд. |
+
+### Хувилбараас {#since}
+
+- 2.13.0
+
+### Эх сурвалж {#source}
+
+`inc/functions/domain.php` дотор тодорхойлогдсон.
+
+
+## Буцаах утга {#returns}
+
+Хэвийн болгосон checkout-формын суурь домэйнүүдийн массив.

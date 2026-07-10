@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Am ystyriedd ar Webhooks (v2)
+# Am ystyriedd ar Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**Gofalwg: Rhowdd ystafell honno neu'r ail-gwrnion yw ar gyferau cyflwynoedd uchel.**_
 
@@ -11,7 +11,7 @@ Mae **webhook** yn ffordd i'r app neu software fel Ultimate Multisite i ddarparu
 
 Mae hyn yn ddefnyddiol os oes angen Rhinod neu drososi data penodol o Ultimate Multisite i'r CRM neu system arall eto bob amser sydd â'i gael. Ar enw, rydych chi angen anfon enw ybysgol a adran e-bost o'r benwr i'r llyfr cyflwyniad bob amser sydd â'i cael cyfathrebu newydd.
 
-## Sut i creu webhook
+## Sut i creu webhook {#how-to-create-a-webhook}
 
 I creu webhook, mynd i'r dashboard admin eich rheol cyd-gynlluniau. Clic ar **Ultimate Multisite > Webhooks > Add New Webhook.**
 

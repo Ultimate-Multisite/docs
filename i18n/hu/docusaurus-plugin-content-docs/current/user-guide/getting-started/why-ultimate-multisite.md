@@ -3,11 +3,11 @@ title: Miért Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Miért az Ultimate Multisite?
+# Miért az Ultimate Multisite? {#why-ultimate-multisite}
 
 Ha eljutottál ehhez a cikkhez, valószínűleg hallottad már, hogy a bővítményünk segíthet megvalósítani az üzleti ötletedet. Reméljük, hogy a cikk végére minden kérdésedre választ kapsz.
 
-## Mi az Ultimate Multisite?
+## Mi az Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Az Ultimate Multisite egy WordPress Multisite bővítmény, amellyel WaaS (Website as a Service, vagyis weboldal mint szolgáltatás) platformot kínálhatsz az ügyfeleidnek. A bővítményünkkel különböző előfizetési csomagokat hozhatsz létre, és rendszeres díjat számíthatsz fel az ügyfeleknek azért, hogy weboldaluk a te Multisite hálózatodon fut.
 
@@ -15,7 +15,7 @@ Az Ultimate Multisite segítségével különböző fizetési szolgáltatókon k
 
 És ez még csak a kezdet, hiszen a funkciókat kiegészítőkkel és webhookkal tovább bővítheted.
 
-## További funkciók
+## További funkciók {#other-features}
 
 Az Ultimate Multisite ezeket is kínálja:
 
@@ -33,11 +33,11 @@ Az Ultimate Multisite ezeket is kínálja:
 
   * Search and Replace API: A weboldal-sablonjaidat helyőrzőkkel is elláthatod, például {{site_name}}, majd a Search and Replace API segítségével ezek automatikusan kitöltődnek az ügyfél által a regisztráció során megadott információkkal.
 
-## Felhasználási példák
+## Felhasználási példák {#use-cases}
 
 Most lássunk néhány lehetséges felhasználási esetet az Ultimate Multisite-hoz.
 
-### 1. eset: Ügynökség
+### 1. eset: Ügynökség {#case-1-an-agency}
 
 Egy ügynökség alapvetően a weboldalak tervezésében erős, míg a tárhely vagy a marketing jellemzően kiegészítő szolgáltatásként szerepel a kínálatban.
 
@@ -47,7 +47,7 @@ A bővítmények és témák szigorú felügyelete termékenként biztosított a
 
 Az Ultimate Multisite nyugalmat ad az ügynökségeknek, hogy arra összpontosíthassanak, amiben a legjobbak – kivételes weboldalak tervezésére.
 
-### 2. eset: Szakterület-specifikus szolgáltató
+### 2. eset: Szakterület-specifikus szolgáltató {#case-2-niche-provider}
 
 Van egy régi mondás: „Csinálj egy dolgot, és csináld jól." Sok szakember számára ez azt jelenti, hogy egyetlen alapötlet köré építenek terméket vagy szolgáltatást.
 
@@ -57,7 +57,7 @@ Az Ultimate Multisite egyik innovatív funkciója a sablon weboldal: ez egy olya
 
 A szakterület-specifikus weboldalakat és szolgáltatásokat kínáló szolgáltatók számára ez páratlan előnyt jelent: azonnal létrehozható egy használatra kész weboldal egyedi bővítményekkel és dizájnnal. Az ügyfélnek csak minimális adatokat kell megadnia a szolgáltatás befejezéséhez.
 
-### 3. eset: WordPress webtárhely
+### 3. eset: WordPress webtárhely {#case-3-wordpress-web-hosting}
 
 Számtalan módja van a WordPress weboldalak tárolásának, de ritkán olyan egyszerű, mint tárhelyet biztosítani az ügyfélnek egy előre telepített WordPress-szel. Ennek oka, hogy számos döntés és szempont szükséges egy értelmes szolgáltatás kialakításához.
 

@@ -3,11 +3,11 @@ title: Vietas būvētāja kontaktformuli
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformulāri vietnes izveidojēji
+# Kontaktformulāri vietnes izveidojēji {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 dod iespēju veidot kontaktformulārus tieši no čata interfeisa, izmantojot Site Builder agenti. Tas ļauj jums pievienot pilnīgi funkcionalus kontaktformulārus jebkuraj lapai bez atdalīšanās no čata.
 
-## Īssvaras apkopojums
+## Īssvaras apkopojums {#overview}
 
 Site Builder kontaktformulāra iespēja (`create_contact_form`) automātiski atrod savu instalēto formulārā pluginu un veido kontaktformulāru izmantojot šī pluginu vietējās iespējas. Atbalstītie formulāra pluginu ir:
 
@@ -18,7 +18,7 @@ Site Builder kontaktformulāra iespēja (`create_contact_form`) automātiski atr
 
 Asistents automātiski izvēlas labāko pieejamo formulāra pluginu savā vietnē un generē kontaktformulāru, kas piemērots šim pluginam.
 
-## Kontaktformulāra veidošana
+## Kontaktformulāra veidošana {#creating-a-contact-form}
 
 Lai veidotu kontaktformulāru ar Site Builder:
 
@@ -34,7 +34,7 @@ Lai veidotu kontaktformulāru ar Site Builder:
 
 4. Site Builder veidēs kontaktformulāru un atgriež īsu kodu (shortcode), kas ir gatavs ievietināšanai.
 
-## Generētās īsas kodas izmantošana
+## Generētās īsas kodas izmantošana {#using-the-generated-shortcode}
 
 Pēc tam, kad Site Builder veido kontaktformulāru, tas atgriež īsu kodu (piemēram, `[contact-form-7 id="123"]`). Jūs varat:
 
@@ -45,25 +45,25 @@ Pēc tam, kad Site Builder veido kontaktformulāru, tas atgriež īsu kodu (piem
 
 3. **Izmantojiet to šablona** — Ja jūtaties ar PHP, varat uzdevot īss kodu (shortcode) tēmas šablona failā.
 
-## Kontaktformu pielāgošana
+## Kontaktformu pielāgošana {#customizing-the-contact-form}
 
 Pēc tam, kad Site Builder izveido kontaktformu, jūs varat to turpināt pielāgot:
 
-### Ar čata interfeisu
+### Ar čata interfeisu {#via-the-chat-interface}
 Lūdzu, lūdziet Site Builderu izmaiņas veikt formai:
 
 > "Atjaunināt kontaktformu, lai pievienotu tēmu lauku un kļotu ziņojuma laukums obligāts."
 
 Site Builder atjauninās formu un atgriežs atjaunināto īss kodu (shortcode).
 
-### Ar formas plāksmes admin interfeisa
+### Ar formas plāksmes admin interfeisa {#via-the-form-plugins-admin-interface}
 Jūs varat arī tieši pielāgot formu savā formas plāksmes iestatījumos:
 
 1. Ieiet uz **Contact Form 7** (vai jūsu instalēto formas plāksmes) WordPress admina.
 2. Atrodiet ar Site Builder izveidoto formu.
 3. Redi formas laukus, validācijas noteikumus un e-pasta paziņojumus, ja tas ir nepieciešams.
 
-## Formas plāksmes un saderība
+## Formas plāksmes un saderība {#form-plugins-and-compatibility}
 
 Site Builder automātiski atrod, kāda formas plāksme ir instalēta jūsu vietnē, un izmanto to kontaktformu veidot. Ja uz vietnē ir vairākas formas plāksmes, Site Builder prioritizē tos šajā vecumā:
 
@@ -74,7 +74,7 @@ Site Builder automātiski atrod, kāda formas plāksme ir instalēta jūsu vietn
 
 Ja neinstalēts nav jebkāda no šiem plāksēm, Site Builder ieteicīs instalēt vienu pirms kontaktformu veidošanas.
 
-## E-pasta paziņojumi
+## E-pasta paziņojumi {#email-notifications}
 
 Ar Site Builder izveidotas kontaktformas pēc defaulta ir konfigurētas sūtīt e-pasta paziņojumus vietnes administratoram. Jūs varat pielāgot saņemto e-pasta adresi un paziņojuma ziņojumu:
 
@@ -89,21 +89,21 @@ Detalizētām instrukcijām apskatiet jūsu formas plāksmes dokumentāciju:
 - [E-pasta ziņojumi Fluent Forms](https://fluentforms.com/docs/)
 - [E-pasta ziņojumi Gravity Forms](https://docs.gravityforms.com/)
 
-## Piemēri lietošanai
+## Piemēri lietošanai {#example-use-cases}
 
-### Vienkarts kontaktformārs
+### Vienkarts kontaktformārs {#simple-contact-form}
 
 > "Izveido vienkurtu kontaktformāru ar laukiem vārds, e-pasta adresi un ziņojumu."
 
-### Daugstargs formārs
+### Daugstargs formārs {#multi-step-form}
 
 > "Izveido kontaktformāru, kuram ir pirmais solis kontaktinformācijai un otrs solis ziņojumam un iepriekš izvēlētajām kontaktmetodēm."
 
-### Formārs ar nosacījumiem (Conditional Logic)
+### Formārs ar nosacījumiem (Conditional Logic) {#form-with-conditional-logic}
 
 > "Izveido kontaktformāru, kas redz dažādus laukus atkarībā no lietotāja izvēles dropdown menu."
 
-### Formārs ar faila uzlādi
+### Formārs ar faila uzlādi {#form-with-file-upload}
 
 > "Izveido kontaktformāru, kuram lietotāji var uzlādēt failu vai pielikumu."
 

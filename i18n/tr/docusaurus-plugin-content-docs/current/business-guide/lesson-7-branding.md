@@ -3,15 +3,15 @@ title: 'Ders 7: Kendin Yapmak'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Ders 7: Kendi Markanız Yapmak
+# Ders 7: Kendi Markanız Yapmak {#lesson-7-making-it-yours}
 
 Müşterilerinizin asla "bir WordPress eklentisi" kullandıklarını hissetmemeleri gerekir. Onlar, kendi sektörleri için yapılmış bir platform olan FitSite'ı kullandıklarını hissetmeliler. Bu derste, markalaştırma, beyaz etiketleme (white-labeling) ve platformu bir ürün gibi hissettirme konularını ele alıyoruz.
 
-## Nereden Başlamıştık
+## Nereden Başlamıştık {#where-we-left-off}
 
 FitSite, fitness stüdyosu sahiplerini plan seçimi aşamasından canlı bir siteye taşıyan çalışan bir ödeme akışına sahiptir. Şimdi, tüm deneyimi tutarlı, markalı bir ürün gibi hissettireceğiz.
 
-## Platform Alan Adınız
+## Platform Alan Adınız {#your-platform-domain}
 
 Markanızın temeli alan adınızdır. FitSite için:
 
@@ -19,7 +19,7 @@ Markanızın temeli alan adınızdır. FitSite için:
 - **Müşteri siteleri**: `studioname.fitsite.com` (alt alan adları)
 - **Özel alan adları**: Growth ve Pro planlarındaki müşteriler kendi alan adlarını eşleştirebilirler.
 
-### Alan Adınızı Kurmak
+### Alan Adınızı Kurmak {#setting-up-your-domain}
 
 1. Platform alan adınızı kaydedin
 2. Bunu barındırma sağlayıcınıza yönlendirin
@@ -28,11 +28,11 @@ Markanızın temeli alan adınızdır. FitSite için:
 
 Detaylı talimatlar için [Alan Adı Eşleştirme Nasıl Yapılır](/user-guide/domain-mapping/how-to-configure-domain-mapping) sayfasına bakın.
 
-## Yönetici Deneyimini Beyaz Etiketleme (White-Labeling)
+## Yönetici Deneyimini Beyaz Etiketleme (White-Labeling) {#white-labeling-the-admin-experience}
 
 Bir fitness stüdyosu sahibi site paneline (dashboard) giriş yaptığında, WordPress veya Ultimate Multisite markasını değil, sizin markanızı görmelidir.
 
-### Özel Giriş Sayfası
+### Özel Giriş Sayfası {#custom-login-page}
 
 WordPress giriş sayfasını şunları gösterecek şekilde özelleştirin:
 
@@ -40,7 +40,7 @@ WordPress giriş sayfasını şunları gösterecek şekilde özelleştirin:
 - Fitness'e uygun arka plan görselleri
 - Marka renkleriniz
 
-### Dashboard Markalaması
+### Dashboard Markalaması {#dashboard-branding}
 
 [Admin Page Creator](/addons/admin-page-creator) eklentisini veya özel CSS kullanarak şunları yapın:
 
@@ -48,7 +48,7 @@ WordPress giriş sayfasını şunları gösterecek şekilde özelleştirin:
 - Yönetici renk şemasını markanıza uyacak şekilde özelleştirin
 - Fitness'e özel hızlı bağlantılar ve yardım kaynakları içeren özel bir dashboard widget'ı ekleyin
 
-### Özel Yönetici Sayfaları
+### Özel Yönetici Sayfaları {#custom-admin-pages}
 
 Fitness stüdyosu sahipleri için en alakalı eylemleri öne çıkaran özel yönetici sayfaları oluşturmayı düşünün:
 
@@ -58,11 +58,11 @@ Fitness stüdyosu sahipleri için en alakalı eylemleri öne çıkaran özel yö
 
 Bu, nişle ilgili eylemleri standart WordPress menüsünün derinliklerine gömmek yerine, onları ön plana çıkararak öğrenme eğrisini azaltır.
 
-## İletişimlerinizi Markalaştırmak
+## İletişimlerinizi Markalaştırmak {#branding-your-communications}
 
 Her e-posta, fatura ve bildirim markanızı pekiştirmelidir.
 
-### Sistem E-postaları
+### Sistem E-postaları {#system-emails}
 
 **Ultimate Multisite > Ayarlar > E-postalar** bölümüne gidin ve tüm sistem e-postalarını özelleştirin:
 
@@ -79,7 +79,7 @@ Her e-posta, fatura ve bildirim markanızı pekiştirmelidir.
 | Ödeme makbuzu | "Ödeme alındı" | "FitSite abonelik ödemesi onaylandı" |
 | Deneme sona erme | "Denemeniz yakında sona eriyor" | "FitSite denemeniz 3 gün sonra bitiyor — stüdyo web sitenizi yayında tutun" |
 
-### Faturalar
+### Faturalar {#invoices}
 
 Fatura şablonlarını şunlarla özelleştirin:
 
@@ -87,7 +87,7 @@ Fatura şablonlarını şunlarla özelleştirin:
 - İşletme detaylarınız
 - Fitness'e özel ürün adları (genel plan kimlikleri değil)
 
-## Müşteriye Yönelik Site
+## Müşteriye Yönelik Site {#the-customer-facing-site}
 
 Ana alan adınız (`fitsite.com`), platformu satan bir pazarlama sitesine ihtiyaç duyar. Bu, Ultimate Multisite ağ yöneticisinden ayrıdır; bu, işletmenizin halka açık yüzüdür.
 
@@ -103,7 +103,7 @@ Temel sayfalar:
 Pazarlama sitenizi kendi ağınızdaki bir site olarak oluşturun. Bu, onu aynı dashboard'dan yönetmenizi sağlar ve kendi platformunuzun yeteneklerini sergiler.
 :::
 
-## Müşteriler İçin Özel Alan Adı
+## Müşteriler İçin Özel Alan Adı {#custom-domain-for-customers}
 
 Özel alan adlarını içeren planlardaki müşteriler için süreci net bir şekilde belgeleyin:
 
@@ -113,7 +113,7 @@ Pazarlama sitenizi kendi ağınızdaki bir site olarak oluşturun. Bu, onu aynı
 
 Bu süreç için, teknik olmayan fitness stüdyosu sahiplerine yönelik hazırlanmış bir yardım makalesi veya bilgi tabanı girişi oluşturun.
 
-## Şu Ana Kadar Oluşturduğumuz FitSite Ağı
+## Şu Ana Kadar Oluşturduğumuz FitSite Ağı {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Onboarding akışına hazır (bir sonraki ders)
 ```
 
-## Bu Derste Neler İnşa Ettik
+## Bu Derste Neler İnşa Ettik {#what-we-built-this-lesson}
 
 - Markalı bir deneyim için yapılandırılmış **Platform alan adı ve DNS**
 - FitSite markasıyla baştan sona **beyaz etiketlenmiş admin**

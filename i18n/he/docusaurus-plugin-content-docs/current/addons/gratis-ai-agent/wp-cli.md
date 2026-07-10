@@ -3,11 +3,11 @@ title: מדריך WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference
+# WP-CLI Reference {#wp-cli-reference}
 
 Gratis AI Agent מספק משפחת פקודות `wp gratis-ai-agent` לצורך ביצוע בדיקות ביצועים (benchmarking) של המערכת, ניהול יכולות (abilities), ושליפת סטטוס המערכת מקוונטרליין. כל הפקודות דורשות WP-CLI 2.0 ומעלה.
 
-## Installation
+## Installation {#installation}
 
 פקודות ה-WP-CLI נרשמות אוטומטית כאשר ה-plugin פעיל. ניתן לוודא זאת באמצעות:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 מריץ את חבילת בדיקות הביצועים של יכולות המערכת (Agent Capabilities benchmark suite) — אוסף של פרומפטים מורכבים ורב-שלביים המפעילים את כל מגוון היכולות. השתמש בכלי זה כדי להעריך את ביצועי המודל, להשוות ספקי AI שונים, או לאמת חבילות יכולות לפני פריסה בסביבת הייצור.
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | פורמט פלט: `table` (ברירת מחדל), `json`, `csv` |
 | `--save` | שמירת תוצאות הבדיקה במסד הנתונים לצורך השוואה היסטורית |
 
-### Examples
+### Examples {#examples}
 
 הפעלת חבילת הבדיקות המלאה עם ספק ומודל הנוכחיים:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 הבדיקה מפיקה שורה אחת לכל שאלה עם העמודות הבאות:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 החבילה ברירת המחדל כוללת:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 מנהל יכולות וחבילות יכולות מותקנות.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 מציג את כל היכולות הרשומות, המקור שלהן (ליבה או חבילה), והסטטוס הנוכחי שלהן.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 מוריד ומפעיל חבילת יכולות מהרישום.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 מכבה יכולת ספציפית מבלי להסיר את החבילה. שימושי להגבלת היקף פעולות המערכת באתר נתון.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 מאפשר מחדש יכולת שהוכיבה בעבר.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 מציג את תצורת המערכת הנוכחית ואת סטטוס החיבור.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 מציג פעילות עדכנית של המערכת מיומן ה-debug.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 מאפס את מצב המערכת: מנקה CSS שהוזרק, מסיר CPTs וטקסונומיות שנרשמו על ידי המערכת, מאפס סגנונות גלובליים ומרוקן את מטמון האפשרויות של המערכת. אינו מסיר את ה-plugin או את ההגדרות שלו.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 כל הפקודות יוצאות עם הקוד `0` בהצלחה. קודי יציאה שאינם אפס:
 

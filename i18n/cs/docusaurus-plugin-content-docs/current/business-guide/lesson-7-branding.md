@@ -3,15 +3,15 @@ title: 'Lekce 7: Jak to udělat svým'
 sidebar_position: 8
 _i18n_hash: 90013fc79a9cbb15283ce89b688002b1
 ---
-# Lekce 7: Jak to udělat svým
+# Lekce 7: Jak to udělat svým {#lesson-7-making-it-yours}
 
 Vaši zákazníci by nikdy neměli pocit, že používají „jakýkoli WordPress plugin“. Měli by pocit, že používají FitSite – platformu navrženou pro jejich obor. Tato lekce pokrývá značkování, white-labeling a to, jak udělat z platformy pocit skutečného produktu.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 FitSite má funkční proces objednávky, který přivádí majitele fitness studií od výběru plánu až k živému webu. Nyní musíme celý zážitek tak, aby působil jako spojený, značkovaný produkt.
 
-## Doména vaší platformy
+## Doména vaší platformy {#your-platform-domain}
 
 Základem vaší značky je vaše doménové jméno. Pro FitSite:
 
@@ -19,7 +19,7 @@ Základem vaší značky je vaše doménové jméno. Pro FitSite:
 - **Zákaznické stránky**: `studioname.fitsite.com` (poddomény)
 - **Vlastní domény**: Zákazníci na plánech Growth a Pro si mohou přiřadit vlastní doménu
 
-### Nastavení domény
+### Nastavení domény {#setting-up-your-domain}
 
 1. Registrujte doménu vaší platformy
 2. Ukryjte ji na vaše herboovací prostředí (hosting provider)
@@ -28,11 +28,11 @@ Základem vaší značky je vaše doménové jméno. Pro FitSite:
 
 Podrobnější pokyny naleznete v [Jak nakonfigurovat mapování domény](/user-guide/domain-mapping/how-to-configure-domain-mapping).
 
-## White-labeling administrace
+## White-labeling administrace {#white-labeling-the-admin-experience}
 
 Když se majitel fitness studia přihlásí do svého dashboardu, by měl vidět vaši značku, ne WordPress nebo Ultimate Multisite branding.
 
-### Vlastní stránka přihlášení
+### Vlastní stránka přihlášení {#custom-login-page}
 
 Upravte stránku přihlášení WordPress, aby zobrazovala:
 
@@ -40,7 +40,7 @@ Upravte stránku přihlášení WordPress, aby zobrazovala:
 - Fotografie pro fitness prostředí
 - Barvy vaší značky
 
-### Značkování dashboardu
+### Značkování dashboardu {#dashboard-branding}
 
 Použijte addon [Admin Page Creator](/addons/admin-page-creator) nebo vlastní CSS, abyste:
 
@@ -48,7 +48,7 @@ Použijte addon [Admin Page Creator](/addons/admin-page-creator) nebo vlastní C
 - Upravili barevnou škálu administrace tak, aby odpovídala vaší značce
 - Přidali vlastní widget do dashboardu s odkazy a zdroji pro fitness a rychlé odkazy
 
-### Vlastní stránky administrace
+### Vlastní stránky administrace {#custom-admin-pages}
 
 Zvažte vytvoření vlastních stránek administrace, které zvýrazní nejdůležitější akce pro majitele fitness studií:
 
@@ -58,11 +58,11 @@ Zvažte vytvoření vlastních stránek administrace, které zvýrazní nejdůle
 
 Tím se sníží křivka učení, protože se relevantní akce pro daný obor dostanou do popředí, místo aby byly pohřbeny v běžném menu WordPress.
 
-## Značkování komunikace
+## Značkování komunikace {#branding-your-communications}
 
 Každý e-mail, faktura a upozornění by měly posilovat vaši značku.
 
-### Systémové e-maily
+### Systémové e-maily {#system-emails}
 
 Přejděte do **Ultimate Multisite > Settings > Emails** a upravte všechny systémové e-maily:
 
@@ -79,7 +79,7 @@ Klíčové e-maily k úpravě:
 | Úhrada | „Úhrada přijata“ | „Potvrzena platba předplatného FitSite“ |
 | Končí zkušební období | „Vaše zkušební období končí brzy“ | „Vaše zkušební období FitSite končí za 3 dny – udržte web vašeho studia aktivní“ |
 
-### Faktury
+### Faktury {#invoices}
 
 Upravte šablony faktur s:
 
@@ -87,7 +87,7 @@ Upravte šablony faktur s:
 - Vaše obchodní údaje
 - Název produktů specifický pro fitness (ne obecní ID plánů)
 
-## Web pro zákazníky
+## Web pro zákazníky {#the-customer-facing-site}
 
 Vaše hlavní doména (`fitsite.com`) potřebuje marketingové stránky, které prodávají platformu. To je odděleno od administrace sítě Ultimate Multisite – je to veřejná tvář vašeho podnikání.
 
@@ -103,7 +103,7 @@ Klíčové stránky:
 Vytvořte své marketingové stránky jako stránku v rámci vaší vlastní sítě. To vám umožní spravovat je z toho samého dashboardu a ukázat schopnosti vaší vlastní platformy.
 :::
 
-## Vlastní doména pro zákazníky
+## Vlastní doména pro zákazníky {#custom-domain-for-customers}
 
 Pro zákazníky, kteří mají plány zahrnující vlastní domény, dokumentujte proces jasně:
 
@@ -113,7 +113,7 @@ Pro zákazníky, kteří mají plány zahrnující vlastní domény, dokumentujt
 
 Vytvořte článek s návodem nebo záznam do znalostní báze specificky pro tento proces, napsaný pro ne-technické majitele fitness studií.
 
-## Síť FitSite na tuto chvíli
+## Síť FitSite na tuto chvíli {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for onboarding flow (next lesson)
 ```
 
-## Co jsme v této lekci vytvořili
+## Co jsme v této lekci vytvořili {#what-we-built-this-lesson}
 
 - **Platforma doména a DNS** nakonfigurovány pro značkovaný zážitek
 - **White-labeled admin** s brandingem FitSite napříč celou administrací

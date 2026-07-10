@@ -3,7 +3,7 @@ title: Kupitira kwa Kufotokozera kwa Akaunti
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Mwayi ndili mwayi wanuwazi kwa mpaka woyamba?
+# Mwayi ndili mwayi wanuwazi kwa mpaka woyamba? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Mwayi wanuwazi kwa Ultimate Multisite!
 

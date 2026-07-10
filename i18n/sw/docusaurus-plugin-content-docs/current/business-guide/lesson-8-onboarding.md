@@ -3,15 +3,15 @@ title: 'Somo la 8: Uhamisho wa Mteja'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Somo la 8: Kuandaa Mtumiaji Mpya (Customer Onboarding)
+# Somo la 8: Kuandaa Mtumiaji Mpya (Customer Onboarding) {#lesson-8-customer-onboarding}
 
 Kumfanya mteja ajisajili ni nusu tu ya kazi. Ikiwa atapumzika (log in), ajihisi kuzidiwa, na kisha hatarudi tena, umempoteza. Somo hili linounda uzoefu ambao hubadilisha usajili mpya kuwa mteja anayefanya kazi na anayehusika.
 
-## Popote Tulipoacha
+## Popote Tulipoacha {#where-we-left-off}
 
 FitSite imepambwa kabisa kwa branding na ina mtiririko wa kufanya mauzo (checkout flow) unaofanya kazi. Sasa tunazingatia nini kinatokea baada ya mmiliki wa studio ya mazoezi kumalisha usajili na kufika kwenye tovuti yake mpya kwa mara ya kwanza.
 
-## Kwa Nini Onboarding Ni Muhimu
+## Kwa Nini Onboarding Ni Muhimu {#why-onboarding-matters}
 
 Dakika 30 za kwanza baada ya usajili ndizo zinazoamua kama mteja atabaki au atatoka. Mmiliki wa studio ya mazoezi ambaye:
 
@@ -21,9 +21,9 @@ Dakika 30 za kwanza baada ya usajili ndizo zinazoamua kama mteja atabaki au atat
 
 Niche templates zako (Somo la 4) zinashughulikia jambo la kwanza. Somo hili linashughulikia jambo la pili.
 
-## Uzoefu wa Kwanza wa Ku-log In
+## Uzoefu wa Kwanza wa Ku-log In {#the-first-login-experience}
 
-### Widget ya Dashboard ya Karibu
+### Widget ya Dashboard ya Karibu {#welcome-dashboard-widget}
 
 Tengeneza widget maalum ya dashboard ambayo inamkaribisha mteja mpya na kumwongoza kupitia uanzishaji. Hii inapaswa kuonekana wazi wakati anapoingia kwa mara ya kwanza.
 
@@ -37,7 +37,7 @@ Tengeneza widget maalum ya dashboard ambayo inamkaribisha mteja mpya na kumwongo
 
 Kila hatua inahusisha kiungo moja kwa moja kwenye ukurasa au mipangilio inayohitajika. Hakuna kutafuta kupitia menyu.
 
-### Kurahisisha Dashboard
+### Kurahisisha Dashboard {#simplify-the-dashboard}
 
 Wateja wapya hawahitaji kuona kila kipengele cha menyu cha WordPress. Zingatia:
 
@@ -47,29 +47,29 @@ Wateja wapya hawahitaji kuona kila kipengele cha menyu cha WordPress. Zingatia:
 
 Addon ya [Plugin & Theme Manager](/addons/plugin-and-theme-manager) inaweza kusaidia kudhibiti kile wanachoona wateja.
 
-## Mfululizo wa Barua Pepe za Karibu
+## Mfululizo wa Barua Pepe za Karibu {#welcome-email-sequence}
 
 Barua pepe moja ya karibu haitoshi. Weka mfululizo unaowapongeza wateja kupitia wiki yao ya kwanza:
 
-### Barua Pepe 1: Karibu (Mara moja baada ya usajili)
+### Barua Pepe 1: Karibu (Mara moja baada ya usajili) {#email-1-welcome-immediately-after-signup}
 
 - Mada: "Karibu FitSite -- tovuti yako ya studio imetoka"
 - Maudhui: Kiungo cha kuingia, hatua za kuanza haraka, kiungo cha rasilimali za msaada
 - Ton: Msisimko, kuhamasisha, maalum kwa mazoezi
 
-### Barua Pepe 2: Ushindi wa Haraka (Siku ya 1)
+### Barua Pepe 2: Ushindi wa Haraka (Siku ya 1) {#email-2-quick-wins-day-1}
 
 - Mada: "Vitu 3 vya kufanya kwanza kwenye FitSite yako"
 - Maudhui: Ongeza logo yako, sasisha picha kuu ya ukurasa wa nyumbani, ongeza ratiba yako ya madarasa
 - Jumuisha picha za skrini zinazoonyesha hasa wapi pa kubofya
 
-### Barua Pepe 3: Ifanye Iwe Yako (Siku ya 3)
+### Barua Pepe 3: Ifanye Iwe Yako (Siku ya 3) {#email-3-make-it-yours-day-3}
 
 - Mada: "Fanya tovuti yako ya mazoezi itofike"
 - Maudhui: Rekebisha rangi, ongeza picha za mafunzo, andika hadithi yako ya studio
 - Kiungo kwa mifano ya tovuti nzuri za mazoezi kwenye jukwaa
 
-### Barua Pepe 4: Tandaa Kufika (Siku ya 7)
+### Barua Pepe 4: Tandaa Kufika (Siku ya 7) {#email-4-go-live-day-7}
 
 - Mada: "Tayari kushiriki FitSite yako na dunia?"
 - Maudhui: Orodha ya vitu vya kuthibitisha kabla ya kushiriki, jinsi ya kuunganisha domain maalum (ikiwa kwenye Growth/Pro), vidokezo vya kushiriki kwenye mitandao ya kijamii
@@ -78,11 +78,11 @@ Barua pepe moja ya karibu haitoshi. Weka mfululizo unaowapongeza wateja kupitia 
 Tumia [Webhooks](/user-guide/integrations/webhooks) au [Zapier](/user-guide/integrations/zapier) kuendesha barua pepe hizi kupitia jukwaa lako la masoko ya barua pepe. Hii inakupa udhibiti zaidi juu ya wakati na inakuwezesha kufuatilia ushiriki.
 :::
 
-## Rasilimali za Msaada
+## Rasilimali za Msaada {#help-resources}
 
 Tengeneza maudhui ya msaada yanayohusiana na niche ambayo yanajibu maswali ambayo wamiliki wa studio za mazoezi wanayouliza kweli:
 
-### Makala ya Knowledge Base
+### Makala ya Knowledge Base {#knowledge-base-articles}
 
 - "Jinsi ya kusasisha ratiba yako ya madarasa"
 - "Kuongeza na kuhariri wasifu wa mafunzo"
@@ -92,7 +92,7 @@ Tengeneza maudhui ya msaada yanayohusiana na niche ambayo yanajibu maswali ambay
 
 Andika hizi kwa watumiaji wasio na ujuzi wa kiufundi. Tumia picha za skrini. Epuka jargon ya WordPress.
 
-### Video Walkthroughs
+### Video Walkthroughs {#video-walkthroughs}
 
 Rekodi fupi za skrini (dakika 2-3) zinazoonyesha:
 
@@ -103,7 +103,7 @@ Rekodi fupi za skrini (dakika 2-3) zinazoonyesha:
 
 Hizi hazihitaji kuwa uzalishaji wenye kupambwa. Kile kinachohitajika ni kuwa wazi, kusaidia, na kuhusiana na niche.
 
-## Ukurasa wa Akaunti
+## Ukurasa wa Akaunti {#the-account-page}
 
 Ultimate Multisite inajumuisha [Account Page](/user-guide/client-management/account-page) inayowakabili wateja ambapo wateja hualika usajili wao. Rekebisha hili ili:
 
@@ -112,7 +112,7 @@ Ultimate Multisite inajumuisha [Account Page](/user-guide/client-management/acco
 - Kutoa historia ya malipo na kupakua ankara
 - Kuunganisha na rasilimali za msaada
 
-## Kupima Mafanikio ya Onboarding
+## Kupima Mafanikio ya Onboarding {#measuring-onboarding-success}
 
 Fuatilia viashiria hivi ili kujua ikiwa onboarding yako inafanya kazi:
 
@@ -121,7 +121,7 @@ Fuatilia viashiria hivi ili kujua ikiwa onboarding yako inafanya kazi:
 - **Tiketi za msaada kutoka kwa wateja wapya**: Kiwango kikubwa kina maana kwamba onboarding yako ina mapengo
 - **Conversion kutoka jaribio hadi kulipia**: Ikiwa unatoa majaribio, ni asilimia gani inabadilika?
 
-## FitSite Network Hadi Sasa
+## FitSite Network Hadi Sasa {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -142,7 +142,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Niliyojenga Somo Hili
+## Niliyojenga Somo Hili {#what-we-built-this-lesson}
 
 - **Uzoefu wa kwanza wa ku-log in uliowongozwa** kwa widget ya Quick Start
 - **Dashboard rahisi** iliyolenga kazi za usimamizi wa tovuti ya mazoezi

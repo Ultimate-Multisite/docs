@@ -1,100 +1,106 @@
 ---
 title: Rabattcodes erstellen
 sidebar_position: 19
-_i18n_hash: 3c7a42fff1710e14a95a32365f893dc3
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Erstellen von Rabattcodes (v2)
+# Rabattcodes erstellen (v2) {#creating-discount-codes-v2}
 
 _**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Mit Ultimate Multisite können Sie Rabattcodes erstellen, um Ihren Kunden Rabatte auf ihre Abonnements zu gewähren. Und die Erstellung ist einfach!
+Mit Ultimate Multisite kannst du Rabattcodes erstellen, um deinen Kunden Rabatte auf ihre Abonnements zu geben. Und sie zu erstellen ist einfach!
 
-## Erstellen und Bearbeiten von Rabattcodes
+## Rabattcodes erstellen und bearbeiten {#creating-and-editing-discount-codes}
 
-Um einen Rabattcode zu erstellen oder zu bearbeiten, gehen Sie zu **Ultimate Multisite > Discount Codes**.
+Um einen Rabattcode zu erstellen oder zu bearbeiten, gehe zu **Ultimate Multisite > Rabattcodes**.
 
-![](/img/config/discount-codes-list.png)
+![Rabattcode-Liste — leerer Zustand, bevor Codes existieren](/img/config/discount-codes-empty.png)
 
-Dort haben Sie eine Liste der bereits erstellten Rabattcodes.
+Dort hast du eine Liste der Rabattcodes, die du bereits erstellt hast.
 
-Sie können auf **Add Discount** **Code** klicken, um einen neuen Gutschein zu erstellen, oder die vorhandenen bearbeiten, indem Sie mit der Maus darüber fahren und auf **Edit** klicken.
+Du kannst auf **Rabatt** **Code hinzufügen** klicken, um einen neuen Gutschein zu erstellen, oder du kannst die vorhandenen bearbeiten, indem du mit der Maus darüberfährst und auf **Bearbeiten** klickst.
 
-![Discount codes list with hover actions](/img/config/discount-codes-list.png)
+![Rabattcode-Liste mit Hover-Aktionen, die Links zum Bearbeiten und Löschen zeigen](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code button](/img/config/discount-codes-list.png)
+![Button „Rabattcode hinzufügen“ im Seitenkopf](/img/config/discount-codes-add-button.png)
 
-Sie werden zur Seite weitergeleitet, auf der Sie Ihren Gutscheincode erstellen oder bearbeiten. In diesem Beispiel erstellen wir einen neuen.
+Du wirst auf die Seite weitergeleitet, auf der du deinen Gutscheincode erstellen oder bearbeiten kannst. In diesem Beispiel erstellen wir einen neuen.
 
-![Discount code edit page](/img/config/discount-codes-list.png)
+![Bearbeitungsseite für Rabattcodes mit allen sichtbaren Abschnitten](/img/config/discount-code-edit.png)
 
 Schauen wir uns die hier verfügbaren Einstellungen an:
 
-**Enter Discount Code:** Dies ist nur der Name Ihres Rabattcodes. Dies ist nicht der Code, den Ihre Kunden beim Checkout verwenden müssen.
+**Rabattcode eingeben:** Dies ist nur der Name deines Rabattcodes. Dies ist nicht der Code, den deine Kunden im Checkout-Formular verwenden müssen.
 
-**Description:** Hier können Sie kurz beschreiben, wofür dieser Gutschein gedacht ist.
+**Beschreibung:** Hier kannst du kurz beschreiben, wofür dieser Gutschein gedacht ist.
 
-![Discount code name and description fields](/img/config/discount-codes-list.png)
+![Felder für Rabattcode-Name und Beschreibung oben auf der Bearbeitungsseite](/img/config/discount-code-description.png)
 
-**Coupon code:** Hier definieren Sie den Code, den Ihre Kunden während des Checkouts eingeben müssen.
+Du kannst den Rabattcode auch als aktiv oder inaktiv anzeigen:
 
-![Coupon code field](/img/config/discount-codes-list.png)
+![Aktiver Status des Rabattcodes](/img/config/discount-code-active.png)
 
-**Discount:** Hier können Sie entweder einen **Prozentsatz** oder einen **festen Betrag** für Ihren Rabattcode festlegen.
+**Gutscheincode:** Hier definierst du den Code, den deine Kunden während des Checkouts eingeben müssen.
 
-![Discount percentage or fixed amount setting](/img/config/discount-codes-list.png)
+![Gutscheincode-Feld, in das Kunden den Code beim Checkout eingeben](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Wenn diese Option deaktiviert ist, wird dieser Rabattcode nur auf die **erste Zahlung** angewendet. Alle weiteren Zahlungen erhalten keinen Rabatt. Ist die Option aktiviert, ist der Rabattcode für alle zukünftigen Zahlungen gültig.
+**Rabatt:** Hier kannst du entweder einen **Prozentsatz** oder einen **festen Betrag** für deinen Rabattcode festlegen.
 
-**Setup fee discount:** Wenn diese Option deaktiviert ist, gewährt der Gutscheincode **keinen Rabatt auf die Einrichtungsgebühr** der Bestellung. Ist die Option aktiviert, können Sie den Rabatt (Prozentsatz oder fester Betrag) festlegen, den dieser Gutscheincode auf die Einrichtungsgebühr Ihrer Pläne anwendet.
+![Rabattbetrag-Einstellung mit Dropdown für Prozentsatz oder festen Betrag](/img/config/discount-code-amount.png)
 
-![Apply to renewals and setup fee discount options](/img/config/discount-codes-list.png)
+**Auf Verlängerungen anwenden:** Wenn diese Option deaktiviert ist, wird dieser Rabattcode nur auf die **erste Zahlung** angewendet. Alle anderen Zahlungen erhalten keinen Rabatt. Wenn diese Option aktiviert ist, gilt der Rabattcode für alle zukünftigen Zahlungen.
 
-**Active:** Aktivieren oder deaktivieren Sie diesen Gutscheincode manuell.
+**Rabatt auf Einrichtungsgebühr:** Wenn diese Option deaktiviert ist, gewährt der Gutscheincode **keinen Rabatt auf die Einrichtungsgebühr** der Bestellung. Wenn diese Option aktiviert ist, kannst du den Rabatt (Prozentsatz oder fester Betrag) festlegen, den dieser Gutscheincode auf die Einrichtungsgebühr deiner Tarife anwendet.
 
-![Active toggle for discount code](/img/config/discount-codes-list.png)
+![Umschaltoptionen für Anwendung auf Verlängerungen und Rabatt auf Einrichtungsgebühr](/img/config/discount-code-renewals.png)
 
-Unter **Advanced Options** haben wir die folgenden Einstellungen:
+**Aktiv:** Aktiviere oder deaktiviere diesen Gutscheincode manuell.
 
-**Limit uses:**
+![Aktiv-Umschalter zum manuellen Aktivieren oder Deaktivieren des Rabattcodes](/img/config/discount-code-active.png)
 
-  * **Uses:** Hier sehen Sie, wie oft der Rabattcode verwendet wurde.
+Unter **Erweiterte Optionen** haben wir die folgenden Einstellungen:
 
-  * **Max uses:** Dies begrenzt die Anzahl der Male, die Benutzer diesen Rabattcode verwenden können. Wenn Sie hier beispielsweise 10 eingeben, kann der Gutschein nur 10 Mal verwendet werden. Nach diesem Limit kann der Rabattcode nicht mehr verwendet werden.
+![Erweiterte Optionen für Rabattcodes](/img/config/discount-code-advanced.png)
 
-![Limit uses setting with uses and max uses fields](/img/config/discount-codes-list.png)**Start & expiration dates:** Here you will have the option to add a start date and/or an expiration date to your coupon.
+**Nutzungen begrenzen:**
 
-**Start & expiration dates:** Hier haben Sie die Möglichkeit, ein Startdatum und/oder ein Ablaufdatum für Ihren Gutschein hinzuzufügen.
+  * **Nutzungen:** Hier kannst du sehen, wie oft der Rabattcode verwendet wurde.
 
-![Start and expiration date fields](/img/config/discount-codes-list.png)
+  * **Max. Nutzungen:** Dies begrenzt, wie oft Benutzer diesen Rabattcode verwenden können. Wenn du hier zum Beispiel 10 einträgst, kann der Gutschein nur 10-mal verwendet werden. Nach dieser Grenze kann der Gutscheincode nicht mehr verwendet werden.
 
-**Limit products:** Wenn Sie **Select products** aktivieren, werden Ihnen alle Ihre Produkte angezeigt. Sie haben die Möglichkeit, manuell (durch Aktivieren oder Deaktivieren) auszuwählen, welche Produkte diesen Gutscheincode akzeptieren können. Produkte, die hier deaktiviert sind, zeigen keine Änderung, wenn Ihre Kunden versuchen, diesen Gutscheincode zu verwenden.
+![Einstellung zur Begrenzung der Nutzungen mit aktueller Nutzungsanzahl und Feld für maximale Nutzungen](/img/config/discount-code-limit-uses.png)
 
-![Limit products selection toggles](/img/config/discount-codes-list.png)
+**Start- und Ablaufdaten:** Hier hast du die Möglichkeit, deinem Gutschein ein Startdatum und/oder ein Ablaufdatum hinzuzufügen.
 
-Nachdem Sie all diese Optionen eingerichtet haben, klicken Sie auf **Save Discount Code**, um Ihren Gutschein zu speichern, und fertig!
+![Felder für Start- und Ablaufdatum zur Planung des Rabattcodes](/img/config/discount-code-dates.png)
 
-![Save Discount Code button](/img/config/discount-codes-list.png)
+**Produkte begrenzen:** Wenn du **Produkte auswählen** aktivierst, werden dir alle deine Produkte angezeigt. Du hast die Möglichkeit, manuell auszuwählen (durch Ein- oder Ausschalten), welches Produkt diesen Gutscheincode akzeptieren kann. Produkte, die hier deaktiviert sind, zeigen keine Änderung, wenn deine Kunden versuchen, diesen Gutscheincode für sie zu verwenden.
 
-Der Gutschein steht jetzt in Ihrer Liste, und von dort aus können Sie auf **edit or delete** klicken.
+![Abschnitt „Produkte begrenzen“ mit Umschaltern pro Produkt](/img/config/discount-code-limit-products.png)
 
-![Discount code in the list with edit and delete options](/img/config/discount-codes-list.png)
+Nachdem du all diese Optionen eingerichtet hast, klicke auf **Rabattcode speichern**, um deinen Gutschein zu speichern, und fertig!
 
-### 
+![Button „Rabattcode speichern“ unten auf der Bearbeitungsseite](/img/config/discount-code-save.png)
 
-### Verwendung von URL-Parametern:
+Der Gutschein ist jetzt in deiner Liste, und von dort aus kannst du auf **bearbeiten oder löschen** klicken.
 
-Wenn Sie Ihre Preistabellen anpassen oder eine schöne Gutscheincode-Seite für Ihre Website erstellen und einen Rabattcode automatisch auf Ihr Checkout-Formular anwenden möchten, können Sie dies über URL-Parameter tun.
+![Rabattcode-Zeile in der Liste mit Hover-Aktionen zum Bearbeiten und Löschen](/img/config/discount-codes-list-hover.png)
 
-Zuerst müssen Sie den freigegebenen Link für Ihren Plan erhalten. Gehen Sie dazu zu **Ultimate Multisite > Products** und wählen Sie einen Plan aus.
+###
 
-Klicken Sie auf die Schaltfläche **Click to Copy Shareable Link**. Dadurch erhalten Sie den freigegebenen Link zu diesem spezifischen Plan. In unserem Fall war der freigegebene Link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_.
+### URL-Parameter verwenden: {#using-url-parameters}
 
-![Product page with shareable link button](/img/config/products-list.png)
+Wenn du deine Preistabellen anpassen oder eine schöne Gutscheincode-Seite für deine Website erstellen möchtest und automatisch einen Rabattcode auf dein Checkout-Formular anwenden willst, kannst du dies über URL-Parameter tun.
 
-Um Ihren Rabattcode auf diesen spezifischen Plan anzuwenden, fügen Sie einfach den Parameter **?discount_code=XXX** zur URL hinzu. Dabei ist **XXX** der Gutscheincode.
+Zuerst musst du den teilbaren Link für deinen Tarif abrufen. Gehe dazu zu **Ultimate Multisite > Produkte** und wähle einen Tarif aus.
+
+Klicke auf den Button **Klicken, um den teilbaren Link zu kopieren**. Dadurch erhältst du den teilbaren Link zu diesem spezifischen Tarif. In unserem Fall war der angegebene teilbare Link [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+
+![Produktseite mit Button für teilbaren Link](/img/config/products-list.png)
+
+Um deinen Rabattcode auf diesen spezifischen Tarif anzuwenden, füge einfach den Parameter **?discount_code=XXX** zur URL hinzu. Dabei ist **XXX** der Gutscheincode.
 
 In unserem Beispiel wenden wir den Gutscheincode **50OFF** auf dieses spezifische Produkt an.
 
-Die URL für diesen spezifischen Plan mit dem angewendeten 50OFF-Rabattcode sieht so aus: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+Die URL für diesen spezifischen Tarif mit angewendetem Rabattcode 50OFF sieht so aus: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
 ###

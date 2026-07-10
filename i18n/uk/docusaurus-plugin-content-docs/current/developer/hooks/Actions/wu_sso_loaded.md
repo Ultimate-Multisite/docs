@@ -4,21 +4,21 @@ title: Дія - wu_sso_loaded
 sidebar_label: wu_sso_loaded
 _i18n_hash: b51fa54f84ebce1962a42dac87fcd923
 ---
-# Action: wu_sso_loaded
+# Action: wu_sso_loaded {#action-wussoloaded}
 
 Дозволяє розробникам плагінів додавати додаткові гачки, якщо це необхідно.
 
 Це потрібно відкласти до `init`, оскільки SSO — це те, що запускається на `sunrise`.
 
-## Параметри
+## Параметри {#parameters}
 
 | Name | Type | Опис |
 |------|------|-------------|
 | $sso | `self` | Клас SSO. |
 
-### Починаючи з
+### Починаючи з {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/sso/class-sso.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-sso.php#L285) на рядку 285

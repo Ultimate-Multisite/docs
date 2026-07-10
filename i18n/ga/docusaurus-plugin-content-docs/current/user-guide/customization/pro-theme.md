@@ -3,7 +3,7 @@ title: Theme PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Aistileadh ar an Panel Adríúchán agat le PRO Theme
+# Aistileadh ar an Panel Adríúchán agat le PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Is é seo go bhfuil tú ag déanamh oibríochtaí le clienta, is féidir leis an t-amachas admin de WordPress a bheith ar fáil do chlianta. Má tá tú ag iarraidh athrú an t-amachas a bheith níos professional agus níos láidir, is féidir le PRO Theme cabhrú duit.
 

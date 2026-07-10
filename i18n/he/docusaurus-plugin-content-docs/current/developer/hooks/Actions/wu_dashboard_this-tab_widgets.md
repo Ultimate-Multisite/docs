@@ -4,11 +4,11 @@ title: 'Action - wu_dashboard_{$this->tab}_widgets'
 sidebar_label: 'wu_dashboard_{$this->tab}_widgets'
 _i18n_hash: 375d02727169a29da6237374f0ad979a
 ---
-# Action: wu_dashboard_\{$this->tab\}_widgets
+# Action: wu_dashboard_\{$this->tab\}_widgets {#action-wudashboardthis-tabwidgets}
 
 מאפשר למפתחי תוספים להוסיף ווידג'טים (widgets) לפאנל ה-Dashboard של הרשת (Network Dashboard Panel).
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 375d02727169a29da6237374f0ad979a
 | $screen | `\WP_Screen` | אובייקט המסך. |
 | $page | `\WP_Ultimo\Admin_Pages\Dashboard_Admin_Page` | מופע (instance) של דף המנהל של Ultimate Multisite. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב[`inc/admin-pages/class-dashboard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-dashboard-admin-page.php#L214) בשורה 214

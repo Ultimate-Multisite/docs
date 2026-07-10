@@ -1,71 +1,71 @@
 ---
 title: Ferramentas e Configuração
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Ferramentas e Configuração
+# Ferramentas e Configuração {#tools-and-configuration}
 
-O Theme Builder utiliza um conjunto de ferramentas para analisar, desenhar e construir o seu site WordPress. Na versão 1.16.0, **sd-ai-agent/site-scrape é agora uma ferramenta Tier 1**, tornando-a disponível por padrão no Theme Builder.
+Theme Builder usa um conjunto de ferramentas para analisar, projetar e construir seu site WordPress. Na versão 1.16.0, **sd-ai-agent/site-scrape agora é uma ferramenta Tier 1**, tornando-a disponível por padrão no Theme Builder. Superdav AI Agent v1.18.0 também apresenta um pacote complementar Advanced distribuído separadamente para fluxos de trabalho de desenvolvedores confiáveis; essas ferramentas não fazem parte do pacote principal do WordPress.org e devem ser instaladas e autorizadas separadamente.
 
-## Ferramentas Disponíveis
+## Ferramentas Disponíveis {#available-tools}
 
-### Ferramentas Tier 1 (Sempre Disponíveis)
+### Ferramentas Tier 1 (Sempre Disponíveis) {#tier-1-tools-always-available}
 
-As ferramentas Tier 1 estão disponíveis por padrão no Theme Builder, sem necessidade de configuração adicional.
+As ferramentas Tier 1 estão disponíveis por padrão no Theme Builder sem nenhuma configuração adicional.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Propósito:** Analisar sites existentes para extrair inspiração de design, estrutura de conteúdo e funcionalidade.
+**Finalidade:** Analisar sites existentes para extrair inspiração de design, estrutura de conteúdo e funcionalidade.
 
-**Capacidades:**
+**Recursos:**
 
-- **Análise de sites** — rastrear e analisar sites concorrentes ou de inspiração
+- **Análise de site** — fazer scrape e analisar sites concorrentes ou de inspiração
 - **Extração de design** — identificar cores, fontes e padrões de layout
 - **Estrutura de conteúdo** — entender a organização e a hierarquia das páginas
 - **Detecção de recursos** — identificar plugins e funcionalidades
-- **Análise de desempenho** — verificar a velocidade e a otimização da página
+- **Análise de desempenho** — verificar a velocidade da página e a otimização
 - **Análise de SEO** — revisar meta tags e dados estruturados
 
 **Uso:**
 
 ```
-Analyze the design of example.com and use it as inspiration for my site.
+Analise o design de example.com e use-o como inspiração para meu site.
 ```
 
 **O Que Ele Extrai:**
 
 - Paleta de cores e uso de cores
 - Tipografia (fontes e tamanhos)
-- Estrutura e espaçamento do layout
+- Estrutura de layout e espaçamento
 - Padrões de navegação
-- Organização do conteúdo
-- Uso de imagens e mídias
+- Organização de conteúdo
+- Uso de imagens e mídia
 - Elementos interativos
 - Responsividade em dispositivos móveis
 
 **Limitações:**
 
-- Não consegue rastrear sites protegidos por senha
-- Respeita o robots.txt e as políticas do site
+- Não consegue fazer scrape de sites protegidos por senha
+- Respeita robots.txt e políticas do site
 - Pode não capturar conteúdo dinâmico
 - Sites com muito JavaScript podem ter análise limitada
-- Sites grandes podem levar mais tempo para analisar
+- Sites grandes podem demorar mais para analisar
 
-### Ferramentas Tier 2 (Opcional)
+### Ferramentas Tier 2 (Opcionais) {#tier-2-tools-optional}
 
-As ferramentas Tier 2 estão disponíveis quando ativadas explicitamente nas configurações do Theme Builder.
+As ferramentas Tier 2 ficam disponíveis quando ativadas explicitamente nas configurações do Theme Builder.
 
-#### Advanced Analytics
+#### Análises Avançadas {#advanced-analytics}
 
-Fornece métricas detalhadas de desempenho:
+Fornece métricas de desempenho detalhadas:
 
 - Tempos de carregamento da página
 - Core Web Vitals
 - Pontuação de SEO
-- Pontuação de Acessibilidade
-- Pontuação de Melhores Práticas
+- Pontuação de acessibilidade
+- Pontuação de melhores práticas
 
-#### Content Optimizer
+#### Otimizador de Conteúdo {#content-optimizer}
 
 Analisa e sugere melhorias para:
 
@@ -73,13 +73,13 @@ Analisa e sugere melhorias para:
 - Otimização de SEO
 - Uso de palavras-chave
 - Estrutura de conteúdo
-- Posicionamento de chamadas para ação (Call-to-action)
+- Posicionamento de chamada para ação
 
-### Ferramentas Tier 3 (Premium)
+### Ferramentas Tier 3 (Premium) {#tier-3-tools-premium}
 
 As ferramentas Tier 3 exigem configuração adicional ou recursos premium.
 
-#### AI Content Generator
+#### Gerador de Conteúdo com IA {#ai-content-generator}
 
 Gera conteúdo para:
 
@@ -87,11 +87,11 @@ Gera conteúdo para:
 - Páginas de serviços
 - Posts de blog
 - Meta descrições
-- Textos de chamadas para ação
+- Texto de chamada para ação
 
-#### Advanced Design Tools
+#### Ferramentas de Design Avançadas {#advanced-design-tools}
 
-Fornece capacidades avançadas de design:
+Fornece recursos avançados de design:
 
 - Geração de CSS personalizado
 - Criação de animações
@@ -99,157 +99,179 @@ Fornece capacidades avançadas de design:
 - Teoria avançada de cores
 - Otimização de tipografia
 
-## Configuração de Ferramentas
+### Ferramentas Complementares Advanced (Pacote Separado) {#advanced-companion-tools-separate-package}
 
-### Ativando Ferramentas
+O pacote complementar Advanced é distribuído separadamente da versão principal do Superdav AI Agent. Ele é destinado a ambientes confiáveis de desenvolvedores e proprietários de sites nos quais administradores permitem explicitamente que o agente use ferramentas de alto impacto.
+
+Os recursos complementares Advanced podem incluir:
+
+- **Ferramentas de sistema de arquivos** — inspecionar e modificar arquivos aprovados em ambientes confiáveis
+- **Ferramentas de banco de dados** — consultar ou atualizar dados do site quando explicitamente autorizado
+- **Ferramentas WP-CLI** — executar comandos de manutenção e inspeção do WordPress
+- **Ferramentas de despachante REST** — chamar endpoints REST registrados por meio de fluxos de trabalho de despacho controlados
+- **Ferramentas de criação de plugins** — estruturar e iterar no código de plugins
+- **Ferramentas de snapshot do Git** — criar snapshots antes de operações arriscadas de desenvolvedor
+- **Ferramentas de gerenciamento de usuários** — ajudar a revisar ou ajustar registros de usuários quando permitido
+- **Ferramentas de benchmark** — executar benchmarks de desempenho ou capacidade para revisão de desenvolvimento
+
+Não documente essas ferramentas como ferramentas do Theme Builder geralmente disponíveis para todas as instalações. Elas estão disponíveis somente quando o pacote complementar Advanced está instalado, ativado e restrito a administradores confiáveis.
+
+## Configuração de Ferramentas {#tool-configuration}
+
+### Ativando Ferramentas {#enabling-tools}
 
 Para ativar ferramentas adicionais no Theme Builder:
 
 1. Navegue até **Gratis AI Agent → Settings**
 2. Vá para **Theme Builder → Tools**
-3. Ative/desative as ferramentas conforme necessário
+3. Ative/desative ferramentas conforme necessário
 4. Salve as configurações
 
-### Permissões das Ferramentas
+### Permissões das Ferramentas {#tool-permissions}
 
 Algumas ferramentas exigem permissões:
 
-- **Site scraping** — requer acesso à internet
+- **Scraping de site** — requer acesso à internet
 - **Analytics** — requer integração com Google Analytics
-- **Content generation** — requer chaves de API
-- **Advanced features** — pode exigir assinatura premium
+- **Geração de conteúdo** — requer chaves de API
+- **Recursos avançados** — podem exigir assinatura premium
+- **Ferramentas complementares Advanced** — exigem o pacote Advanced distribuído separadamente e confiança explícita do administrador
 
-### Chaves de API e Credenciais
+### Chaves de API e Credenciais {#api-keys-and-credentials}
 
-Configure as chaves de API para as ferramentas que as exigem:
+Configure chaves de API para ferramentas que as exigem:
 
 1. Vá para **Gratis AI Agent → Settings → API Keys**
-2. Insira as credenciais para cada ferramenta
+2. Insira credenciais para cada ferramenta
 3. Teste a conexão
 4. Salve com segurança
 
-## Usando sd-ai-agent/site-scrape
+### Instalando o Pacote Complementar Advanced {#installing-the-advanced-companion-package}
 
-### Uso Básico
+O pacote complementar Advanced é lançado separadamente do ZIP principal do WordPress.org. Instale-o somente a partir do canal oficial de distribuição do projeto para a versão e, em seguida, restrinja o acesso a administradores confiáveis. Revise os mecanismos de aprovação humana e o comportamento de snapshots do git antes de ativar ferramentas de sistema de arquivos, banco de dados, WP-CLI, despachante REST, criação de plugins, gerenciamento de usuários ou benchmark em um site de produção.
+
+## Usando sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
+
+### Uso Básico {#basic-usage}
 
 Peça ao Theme Builder para analisar um site:
 
 ```
-Analyze the design of my competitor's site at competitor.com
-and suggest design improvements for my site.
+Analise o design do site do meu concorrente em competitor.com
+e sugira melhorias de design para meu site.
 ```
 
-### Análise Específica
+### Análise Específica {#specific-analysis}
 
 Solicite tipos específicos de análise:
 
 ```
-Extract the color palette from example.com and use it as inspiration.
+Extraia a paleta de cores de example.com e use-a como inspiração.
 ```
 
 ```
-Analyze the navigation structure of example.com and apply similar
-organization to my site.
+Analise a estrutura de navegação de example.com e aplique uma
+organização semelhante ao meu site.
 ```
 
 ```
-Check the mobile responsiveness of example.com and ensure my site
-is equally responsive.
+Verifique a responsividade em dispositivos móveis de example.com e garanta que meu site
+seja igualmente responsivo.
 ```
 
-### Análise Comparativa
+### Análise Comparativa {#comparison-analysis}
 
 Compare vários sites:
 
 ```
-Compare the designs of site1.com and site2.com and create a design
-that combines the best elements of both.
+Compare os designs de site1.com e site2.com e crie um design
+que combine os melhores elementos de ambos.
 ```
 
-## Limitações e Considerações das Ferramentas
+## Limitações e Considerações das Ferramentas {#tool-limitations-and-considerations}
 
-### Limitação de Taxa (Rate Limiting)
+### Limitação de Taxa {#rate-limiting}
 
-- O rastreamento é limitado para evitar sobrecarga do servidor
-- Múltiplas solicitações ao mesmo site podem ser limitadas (throttled)
+- O scraping tem limitação de taxa para evitar sobrecarga do servidor
+- Várias solicitações para o mesmo site podem ser limitadas
 - Sites grandes podem levar mais tempo para analisar
 
-### Precisão do Conteúdo
+### Precisão do conteúdo {#content-accuracy}
 
 - Conteúdo dinâmico pode não ser totalmente capturado
 - Conteúdo renderizado por JavaScript pode estar incompleto
 - Dados em tempo real podem não ser refletidos
-- Algum conteúdo pode estar atrás de paywalls
+- Alguns conteúdos podem estar atrás de paywalls
 
-### Considerações Legais e Éticas
+### Considerações legais e éticas {#legal-and-ethical-considerations}
 
-- Respeitar o robots.txt e as políticas do site
-- Não rastrear conteúdo protegido por direitos autorais para reprodução
-- Usar a análise para inspiração, não para cópia
-- Verificar se você tem direitos de uso do conteúdo extraído
-- Seguir os termos de serviço dos sites analisados
+- Respeite robots.txt e as políticas do site
+- Não faça scraping de conteúdo protegido por direitos autorais para reprodução
+- Use a análise como inspiração, não para copiar
+- Verifique se você tem direitos para usar o conteúdo extraído
+- Siga os termos de serviço dos sites analisados
 
-### Impacto de Desempenho
+### Impacto no desempenho {#performance-impact}
 
-- Rastrear sites grandes pode levar tempo
-- Múltiplos rastreamentos simultâneos podem ser mais lentos
+- Fazer scraping de sites grandes pode levar tempo
+- Vários scrapings simultâneos podem ser mais lentos
 - A conectividade de rede afeta a velocidade
 - Grandes conjuntos de dados podem exigir mais processamento
 
-## Melhores Práticas
+## Melhores práticas {#best-practices}
 
-### Usando Análise de Sites
+### Usando a análise de site {#using-site-analysis}
 
 1. **Analise vários sites** — reúna inspiração de várias fontes
-2. **Foque na estrutura** — aprenda padrões de layout e organização
+2. **Concentre-se na estrutura** — aprenda padrões de layout e organização
 3. **Extraia cores** — use paletas de cores como pontos de partida
-4. **Estude tipografia** — identifique combinações de fontes que você gosta
-5. **Revise a navegação** — entenda a organização do menu
+4. **Estude tipografia** — identifique combinações de fontes de que você gosta
+5. **Revise a navegação** — entenda a organização dos menus
 
-### Rastreamento Ético
+### Scraping ético {#ethical-scraping}
 
-1. **Respeite o robots.txt** — siga as diretrizes do site
-2. **Não copie conteúdo** — use a análise apenas para inspiração
-3. **Verifique direitos** — garanta que você pode usar o conteúdo extraído
-4. **Atribua fontes** — dê crédito às fontes de inspiração
+1. **Respeite robots.txt** — siga as diretrizes do site
+2. **Não copie conteúdo** — use a análise apenas como inspiração
+3. **Verifique os direitos** — garanta que você possa usar o conteúdo extraído
+4. **Atribua as fontes** — dê crédito às fontes de inspiração
 5. **Siga os termos** — cumpra os termos de serviço do site
 
-### Maximizando a Eficácia das Ferramentas
+### Maximizando a eficácia da ferramenta {#maximizing-tool-effectiveness}
 
 1. **Seja específico** — solicite tipos específicos de análise
 2. **Forneça contexto** — explique o propósito do seu site
-3. **Estabeleça expectativas** — descreva seus objetivos de design
+3. **Defina expectativas** — descreva seus objetivos de design
 4. **Itere** — refine com base nos resultados
-5. **Combine ferramentas** — use múltiplas ferramentas para uma análise completa
+5. **Combine ferramentas** — use várias ferramentas para uma análise abrangente
 
-## Solução de Problemas
+## Solução de problemas {#troubleshooting}
 
-### Site Não Rastreia
+### Site não faz scraping {#site-wont-scrape}
 
-- Verifique se o site está publicamente acessível
-- Verifique se o robots.txt permite o rastreamento
+- Verifique se o site está acessível publicamente
+- Verifique se robots.txt permite scraping
 - Tente um site diferente
 - Verifique a conexão com a internet
-- Contate o suporte se o problema persistir
+- Entre em contato com o suporte se o problema persistir
 
-### Análise Incompleta
+### Análise incompleta {#incomplete-analysis}
 
 - O site pode ter conteúdo dinâmico
-- O JavaScript pode não ter sido totalmente renderizado
-- Sites grandes podem exceder o tempo limite (timeout)
+- JavaScript pode não ser totalmente renderizado
+- Sites grandes podem atingir o tempo limite
 - Tente analisar páginas específicas em vez disso
-- Solicite tipos de análise específicos
+- Solicite tipos específicos de análise
 
-### Desempenho Lento
+### Desempenho lento {#slow-performance}
 
 - Sites grandes levam mais tempo para analisar
-- Múltiplos rastreamentos simultâneos são mais lentos
+- Vários scrapings simultâneos são mais lentos
 - A conectividade de rede afeta a velocidade
-- Tente em horários de menor movimento
+- Tente durante horários fora de pico
 - Analise seções menores primeiro
 
-## Documentação Relacionada
+## Documentação relacionada {#related-documentation}
 
-- [Discovery Interview](./discovery-interview.md) — reunir informações de design
-- [Design Direction](./design-direction.md) — refinar seu design
-- [Hospitality Menus](./hospitality-menus.md) — criar páginas de menu
+- [Entrevista de descoberta](./discovery-interview.md) — reúna informações de design
+- [Direção de design](./design-direction.md) — refine seu design
+- [Menus de hospitalidade](./hospitality-menus.md) — crie páginas de menu

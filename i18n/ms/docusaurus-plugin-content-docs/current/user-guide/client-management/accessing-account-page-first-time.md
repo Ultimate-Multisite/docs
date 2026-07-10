@@ -3,7 +3,7 @@ title: Mengakses Halaman Akaun
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Bagaimana saya boleh mengakses halaman akaun untuk kali pertama?
+# Bagaimana saya boleh mengakses halaman akaun untuk kali pertama? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Selamat datang ke Ultimate Multisite!
 

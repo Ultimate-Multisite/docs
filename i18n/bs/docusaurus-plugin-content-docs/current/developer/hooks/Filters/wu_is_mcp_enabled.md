@@ -4,22 +4,22 @@ title: Filter - wu_is_mcp_enabled
 sidebar_label: wu_is_mcp_enabled
 _i18n_hash: 86f52255b90c1ae017a3eea61e9a9c5e
 ---
-# Filter: wu_is_mcp_enabled
+# Filter: wu_is_mcp_enabled {#filter-wuismcpenabled}
 
 Omogućava programerima pluginova da prisile određeno stanje za MCP adapter.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
 | $enabled | `bool` | Da li je MCP adapter omogućen. |
 
-### Od
+### Od {#since}
 
 - 2.5.0
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L250) na liniji 250
 
 
-## Vraća
+## Vraća {#returns}

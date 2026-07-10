@@ -3,19 +3,19 @@ title: 'Ukázka 13: Rozšíření škálování'
 sidebar_position: 14
 _i18n_hash: 44dd9e49f54ba924696a428224c5aae0
 ---
-# Lekce 13: Jak růst
+# Lekce 13: Jak růst {#lesson-13-scaling-up}
 
 Máte funkční platformu s placenými zákazníky. Tato lekce se zabývá tím, jak růstnout z malého podnikání do udržitelného byznysu – škálování infrastruktury, automatizace provozu a zvyšování příjmů na zákazníka.
 
-## Kde jsme skončili
+## Kde jsme skončili {#where-we-left-off}
 
 FitSite je aktivní, zákazníci se registrují a vy spravujete každodenní provoz. Nyní se zaměříme na růst.
 
-## Zkuste se poznat čísly
+## Zkuste se poznat čísly {#know-your-numbers}
 
 Než začnete škálovat, musíte vědět, kde stojíte:
 
-### Klíčové metriky
+### Klíčové metriky {#key-metrics}
 
 - **MRR (Monthly Recurring Revenue)**: Celkové měsíční předplatné příjmy
 - **Počet zákazníků**: Celkový počet aktivních předplatitelů
@@ -24,7 +24,7 @@ Než začnete škálovat, musíte vědět, kde stojíte:
 - **LTV (Lifetime Value)**: Průměrný příjem od zákazníka po celou dobu jeho předplatného
 - **CAC (Customer Acquisition Cost)**: Průměrná cena za získání jednoho zákazníka
 
-### Příklad: FitSite u 50 zákazníků
+### Příklad: FitSite u 50 zákazníků {#example-fitsite-at-50-customers}
 
 | Metrika | Hodnota |
 |--------|-------|
@@ -36,9 +36,9 @@ Než začnete škálovat, musíte vědět, kde stojíte:
 
 Tato čísla vám řeknou, na čem se zaměřit. Vysoký churn? Opravte retenci. Nízké ARPU? Propůjčte upgrade. Vysoký CAC? Optimalizujte kanály získávání zákazníků.
 
-## Škálování infrastruktury
+## Škálování infrastruktury {#scaling-infrastructure}
 
-### Kdy škálovat
+### Kdy škálovat {#when-to-scale}
 
 Škálujte hosting, když:
 
@@ -47,7 +47,7 @@ Tato čísla vám řeknou, na čem se zaměřit. Vysoký churn? Opravte retenci.
 - Přibližujete se k 100+ aktivním webům
 - Zvyšují se stížnosti zákazníků na pomalost
 
-### Jak škálovat
+### Jak škálovat {#how-to-scale}
 
 - **Vertikální škálování**: Upgrade na větší server (více CPU, RAM)
 - **Caching vrstvy**: Přidejte Redis/Memcached pro object caching, page caching pro statický obsah
@@ -55,7 +55,7 @@ Tato čísla vám řeknou, na čem se zaměřit. Vysoký churn? Opravte retenci.
 - **Optimalizace databáze**: Jak roste síť, zpomalují se dotazy databáze. Optimalizujte tabulky, přidejte indexy, zvažte dedikovaný server databáze.
 - **Oddělení funkcí**: Úložiště médií přesunte do object storage (kompatibilní se S3), e-mail odesílání přesložte na transakční e-mail službu
 
-### Migrace hostingu
+### Migrace hostingu {#hosting-migration}
 
 Pokud váš aktuální host již nemůže dále škálovat, naplánujte migraci:
 
@@ -65,11 +65,11 @@ Pokud váš aktuální host již nemůže dále škálovat, naplánujte migraci:
 4. Předem aktualizujte DNS s minimální TTL
 5. Ověřte, že vše funguje po migraci
 
-## Automatizace provozu
+## Automatizace provozu {#automating-operations}
 
 Jak rostete, manuální procesy se stávají překážkami. Automatizujte to, co můžete:
 
-### Webhooks a Zapier
+### Webhooks a Zapier {#webhooks-and-zapier}
 
 Použijte [Webhooks](/user-guide/integrations/webhooks) nebo [Zapier](/user-guide/integrations/zapier) k automatizaci:
 
@@ -78,7 +78,7 @@ Použijte [Webhooks](/user-guide/integrations/webhooks) nebo [Zapier](/user-guid
 - **Selhání platby** → upozornění ve vašem monitorovacím nástroji
 - **Upgrade plánu** → gratulační e-mail s průvodcem novými funkcemi
 
-### Automatizace e-mailů
+### Automatizace e-mailů {#email-automation}
 
 Přesunte se od manuálních e-mailů k automatizovaným sekvencím:
 
@@ -87,30 +87,30 @@ Přesunte se od manuálních e-mailů k automatizovaným sekvencím:
 - Výzvy k upgradu, když zákazníci přiblíží se k limitům plánu
 - Přípomenutí o obnově pro zákazníky s ročním předplatným
 
-### Automatizace podpory
+### Automatizace podpory {#support-automation}
 
 - **Hotové odpovědi** na běžné dotazy
 - **Automatické potvrzení** o přijetí tiketů podpory
 - **Návrhy znalostní báze**, když zákazníci odesílí tikety odpovídající existujícím článkům
 
-## Zvyšování příjmů
+## Zvyšování příjmů {#increasing-revenue}
 
 Růst nezní jen o více zákaznících. Jde také o vyšší příjem na zákazníka.
 
-### Up-selling stávajících zákazníků
+### Up-selling stávajících zákazníků {#upselling-existing-customers}
 
 - **Upgrade plánů**: Cílené kampaně ukazující funkce Growth/Pro zákazníkům Starter
 - **Navýšení objednávek**: Propagujte doplňkové produkty stávajícím zákazníkům e-mailem
 - **Přechod na roční období**: Nabídněte zákazníkům s měsíčním předplatným slevu na přechod na roční fakturaci
 
-### Nové zdroje příjmů
+### Nové zdroje příjmů {#new-revenue-streams}
 
 - **Nastavení „hotovo pro vás“**: Za vyšší cenu nastavte a upravte web zákazníka
 - **Designové služby na míru**: Nabídněte vlastní designový vývoj nad rámec šablon
 - **Tréninkové sezení**: Zaplacené individuální průvodní prohlídky pro zákazníky, kteří chtějí praktickou pomoc
 - **Premium pluginy**: Nabídněte specifické premium pluginy jako placené doplňky (např. widget pro rezervaci fitness třídy)
 
-### Zvyšování cen
+### Zvyšování cen {#raising-prices}
 
 Jak vaše platforma zralá a přidává hodnotu:
 
@@ -118,7 +118,7 @@ Jak vaše platforma zralá a přidává hodnotu:
 - Zvyšte ceny pro nové registrace
 - Zdůvodněte zvýšení novými funkcemi a vylepšeními
 
-## Tvoření týmu
+## Tvoření týmu {#building-a-team}
 
 Někdy už nemůžete vše dělat sami. Nejběžnější první nábor:
 
@@ -128,7 +128,7 @@ Někdy už nemůžete vše dělat sami. Nejběžnější první nábor:
 
 Nezaplatíte zaměstnance. Kontraktori a freelanceri jsou pro platformovní byznys skvělí.
 
-## Milníky růstu
+## Milníky růstu {#growth-milestones}
 
 | Milník | Přibližný MRR | Zaměření |
 |-----------|-----------------|-------|
@@ -138,7 +138,7 @@ Nezaplatíte zaměstnance. Kontraktori a freelanceri jsou pro platformovní byzn
 | 250–500 zákazníků | $25,000–$50,000 | Tvorba týmu, nové zdroje příjmů, premium funkce |
 | 500+ zákazníků | $50,000+ | Zralost platformy, sousední niche, potenciální exit |
 
-## Co jsme v této lekci vytvořili
+## Co jsme v této lekci vytvořili {#what-we-built-this-lesson}
 
 - **Rámcový systém metrik** k pochopení zdraví byznysu
 - **Plán škálování infrastruktury** pro růst od desítek na stovky webů

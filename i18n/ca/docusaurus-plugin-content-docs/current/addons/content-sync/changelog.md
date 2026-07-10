@@ -3,9 +3,9 @@ title: Diari de canvis de Content Sync
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# Diari de canvis de Content Sync
+# Diari de canvis de Content Sync {#content-sync-changelog}
 
-### Versió 1.1.0 - Llibertat el 2025-12-31
+### Versió 1.1.0 - Llibertat el 2025-12-31 {#version-110---released-on-2025-12-31}
 * Nou: Suport per a la sincronització de tots els tipus de publicació (posts, pàgines, tipus de publicació personalitzats)
 * Nou: Filtratge de tipus de publicació a l'etapa de selecció de contingut
 * Nou: Etapa de selecció del lloc d'origen - sincronització des de qualsevol lloc, no només del lloc principal
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Canviat: L'etapa "Select Templates" (Seleccionar Plantilles) s'ha renombrat a "Select Data" (Seleccionar Dades)
 * Millorat: El codi específic d'Elementor ara només s'executa per el tipus de publicació elementor_library
 
-### Versió 1.0.0 - Llibertat el 2025-12-19
+### Versió 1.0.0 - Llibertat el 2025-12-19 {#version-100---released-on-2025-12-19}
 * Llibertat inicial
 * Assistent de múltiples passades per a la selecció de plantilles i llocs
 * Processament per remitats amb feedback de progrés en temps real

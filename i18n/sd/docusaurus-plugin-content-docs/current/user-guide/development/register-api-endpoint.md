@@ -3,7 +3,7 @@ title: API اينڊ پيئسٽ پوائنٽ رجسٹر ڪريو
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API endpoint
+# The Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 اِس ٹیوٹوریل میں، آپ سیکھیں گے کہ اپنے نیٹ ورک کے لیے ایک نئے کسٹمر کا پورا آن بورڈنگ عمل کیسے شروع کرنا ہے اور اسے Zapier کے ذریعے کیسے کرنا ہے۔
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 اب، آئیے اینڈ پوائنٹ کو دیکھتے ہیں اور پھر Zapier میں ایک رجسٹریشن ایکشن (registration action) بناتے ہیں۔
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 آئیے ان کم از کم معلومات کا جائزہ لیتے ہیں جو ہمیں اینڈ پوائنٹ پر بھیجنے کی ضرورت ہے۔ اس مضمون کے آخر میں، آپ کو مکمل کال مل جائے گی۔
 
-### Customer
+### Customer {#customer}
 
 یہ وہ معلومات ہیں جو یوزر اور Ultimate Multisite کسٹمر بنانے کے عمل کے لیے ضروری ہیں:
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 اس انڪسٽ ۾ اسان کي صرف ممبره جي حالت (Membership Status) جي ضرورت آهي.
 
 "membership" { "status" : "string", // "pending", "active", "trialing", "expired", "on-hold", "canceled" مان ڪا به }
 
-### **Products**
+### **Products** {#products}
 
 پروڊڪٽس کي توهان جي نڪرن کان 1 يا وڌيڪ پروڊڪٽ ائڊي جو هڪ array ڏني ويندي آهي. يقين رکجو، هي endpoint پروڊڪٽس نٿو کڻي (create) ٿئي. پروڊڪٽس کڻڻ بابت Ultimate Multisite جي documentation کي بهتر سمجهڻ لاءِ چكهو ڪريو.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 جيس ممبره جي حالت جي طرح، اسان کي صرف حالت جي ضرورت آهي.
 
 **"payment" { "status" : "string", // "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" مان ڪا به }**
 
-### Site
+### Site {#site}
 
 ۽ جسم کي بند ڪرڻ لاءِ اسان کي سائيٽ جو URL ۽ Titile (Title) جي ضرورت آهي، ٻئي Site object اندر.
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 register endpoint جو جواب نئين ممبره جي معلومات سان هڪ array طور واپس اچي ٿو.
 
-## Zapier ۾ عمل (action) کڻڻ
+## Zapier ۾ عمل (action) کڻڻ {#creating-an-action-in-zapier}
 
 هي نئين ۽ مضبوط اڪاؤنٽ کڻڻ وارن endpoint جي داخل ٿيڻ سان، توهان کي Zapier ۾ هڪ نون action به ملي ويندي آهي.
 
 توهان ڄاڻو ٿا ته Zapier جو نئين نسخه جي ڪنهن به فائدن کي ڪيئن استعمال ڪرڻ ۽ پيش ڪرڻ آهي؟ وڌيڪ سکڻ لاءِ هتي لکو (link?)
 
-### عمل کڻڻ
+### عمل کڻڻ {#creating-an-action}
 
 Google Forms جو استعمال ڪرڻ لاءِ registration endpoint کي Zapier سان ڪيئن استعمال ڪجي ان کي بهتر ڏيکاري لاءِ، اسان Google Forms سان هڪ integration banaوندون. هر وقت هيءَ form پورو ٿئي ۽ معلومات form جي answer sheet ۾ محفوظ ٿي ويندي آهي، Ultimate Multisite network ۾ هڪ نئين membership جو creation ٿيندو.
 
@@ -105,7 +105,7 @@ Google Forms ۾، هڪ form banaو ته جنه ان network ۾ نئين membersh
 
 اپنے نئے Zap کا ٹیسٹ کریں اور یہ کامیابی سے مکمل ہونا چاہیے۔ اگر کوئی غلطی آتی ہے تو تمام فیلڈز چیک کریں اور دیکھیں کہ کیا وہ صحیح طریقے سے بھیجی جا رہی ہیں۔ معلومات بہت زیادہ ہوتی ہے، اس لیے کچھ چیزیں نظر نہیں آ سکتیں۔
 
-### مکمل اینڈ پوائنٹ پیرامیٹرز
+### مکمل اینڈ پوائنٹ پیرامیٹرز {#complete-endpoint-parameters}
 
 یہ مکمل کال اور ان فیلڈز کے تمام امکانات ہیں جو بھیجے جا سکتے ہیں۔
 

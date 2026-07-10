@@ -4,7 +4,7 @@ title: フィルタ - wu_wp_config_reference_hook_line_patterns
 sidebar_label: wu_wp_config_reference_hook_line_patterns
 _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 ---
-# フィルタ: wu_wp_config_reference_hook_line_patterns
+# フィルタ: wu_wp_config_reference_hook_line_patterns {#filter-wuwpconfigreferencehooklinepatterns}
 
 定数を挿入できる場所を特定する際に、3つのパターンを確認します:
 
@@ -15,6 +15,6 @@ _i18n_hash: 5fd70ec9bc5a2b3357660797baf5519b
 
 キーはパターンを表し、値は追加する行数を表します。負の行数を指定すると、見つかった行の前に書き込むことができます（後ろに書き込む代わりに）。
 
-### Source
+### Source {#source}
 
 定義は [`inc/helpers/class-wp-config.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/helpers/class-wp-config.php#L143) の 143 行目にあります。

@@ -3,7 +3,7 @@ title: Mga Webhook
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Unsa nga Panan-aw sa Webhooks (v2)
+# Unsa nga Panan-aw sa Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**PAHINUMANG: Atensyon, kining feature o artikulo kay para sa mga advanced user lang.**_
 
@@ -11,7 +11,7 @@ Ang **webhook** usa ka paagi kung asa ang usa ka app o software sama sa Ultimate
 
 Kini makatabang nimo kung kinahanglan nimo i-integrate o ipadala ang pipila ka data gikan sa Ultimate Multisite padulong sa laing CRM o system matag higayon nga adunay event. Pananglitan, kinahanglan nimo ipadala ang ngalan ug email address sa user sa mailing list kada adunay bag-ong account sa user nga gi-create.
 
-## Unsaon paghimo og webhook
+## Unsaon paghimo og webhook {#how-to-create-a-webhook}
 
 Aron makahimo og webhook, padulong sa imong network admin dashboard. I-click ang **Ultimate Multisite > Webhooks > Add New Webhook.**
 

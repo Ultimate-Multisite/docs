@@ -1,0 +1,116 @@
+---
+title: Tutor Multisite مطابقت
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+هڪ WordPress plugin جيڪو multisite ماحولن ۾ Tutor LMS لاءِ مطابقت واريون درستگيون شامل ڪري ٿو.
+
+## وضاحت {#description}
+
+هي plugin WordPress multisite نيٽ ورڪن تي Tutor LMS هلائڻ لاءِ ضروري مطابقت واريون درستگيون مهيا ڪري ٿو. اهو صارف جي داخلا، instructor انتظام، ڪورس جون حدون، ۽ ٻيون multisite-مخصوص ڪارڪردگيون سنڀالي ٿو.
+
+## خاصيتون {#features}
+
+- **ڊيٽابيس ٽيبل جو انتظام**: خودڪار طور غائب Tutor LMS ٽيبلون سڃاڻي ۽ ٺاهي ٿو، جيڪي multisite foreign key پابندين سبب ناڪام ٿين ٿيون
+- **Multisite صارف داخلا**: نيٽ ورڪ سائيٽن ۾ صارف داخلا سنڀالڻ لاءِ ڪسٽم AJAX handlers
+- **Instructor ڪردار جو انتظام**: multisite ماحولن ۾ خودڪار instructor ڪردار جي مقرري ۽ انتظام
+- **ڪورس جون حدون**: سائيٽ plans جي بنياد تي ڪورس ۽ funnel ٺاهڻ جون حدون سنڀالڻ لاءِ Ultimate Multisite سان انضمام
+- **ڪسٽم Admin ڏيک**: multisite-واقف instructor فهرست ۽ انتظام interface
+- **Admin اوزار**: نيٽ ورڪ ۽ سائيٽ administrators لاءِ ڊيٽابيس انتظام interface
+
+## گهرجون {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS plugin (خودڪار طور `Requires Plugins` header ذريعي لاڳو ٿيل)
+- WordPress Multisite انسٽاليشن
+- Ultimate Multisite plugin (ڪورس حدن واري ڪارڪردگي لاءِ)
+
+## انسٽاليشن {#installation}
+
+1. plugin فائلون `/wp-content/plugins/tutor-multisite-compatibility/` تي اپلوڊ ڪريو
+2. پڪ ڪريو ته Tutor LMS انسٽال ۽ فعال آهي
+3. WordPress ۾ 'Plugins' مينيو ذريعي plugin کي فعال ڪريو
+4. plugin خودڪار طور Tutor LMS سان ضم ٿي ويندو
+
+## فائل جو ڍانچو {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (مکيه plugin فائل)
+├── includes/
+│   ├── class-database-manager.php (ڊيٽابيس ٽيبل ٺاهڻ ۽ انتظام)
+│   ├── class-admin-interface.php (ڊيٽابيس انتظام لاءِ Admin interface)
+│   ├── class-course-limits.php (ڪورس ۽ funnel حدن جا handlers)
+│   ├── class-instructor-manager.php (Instructor ڪردار جو انتظام)
+│   ├── class-ajax-handlers.php (ڪسٽم AJAX handlers)
+│   ├── class-query-helper.php (ڊيٽابيس query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite صارف model)
+│   └── admin/
+│       ├── class-instructors-list.php (ڪسٽم instructor فهرست)
+│       └── views/
+│           └── instructors.php (Instructor admin ڏيک)
+└── README.md
+```
+
+## MU Plugin مان منتقل ڪيل ڪارڪردگي {#functionality-moved-from-mu-plugin}
+
+هي plugin اها ڪارڪردگي رکي ٿو جيڪا اڳ ۾ `wp-content/mu-plugins/daves.php` ۾ هئي:
+
+- ڪورس status تبديلي جون حدون
+- ڪورس ٺاهڻ جون حدون
+- CartFlows انضمام ۽ حدون
+- Tutor instructor ڪردار جو انتظام
+- Multisite صارف داخلا سنڀالڻ
+- ڪورس product ID ڏيکارڻ
+
+## ڊيٽابيس جو انتظام {#database-management}
+
+### مسئلو {#the-problem}
+
+WordPress multisite ماحولن ۾، Tutor LMS ٽيبل ٺاهڻ انهن ٽيبلن لاءِ ناڪام ٿئي ٿو جن ۾ users ٽيبل ڏانهن foreign key پابنديون آهن. اهو هن ڪري ٿئي ٿو:
+
+- سائيٽ-مخصوص ٽيبلون `wp_2_tutor_carts` جهڙا prefixes استعمال ڪن ٿيون
+- Foreign keys `wp_2_users` ڏانهن حوالو ڏين ٿيون (جيڪو موجود ناهي)
+- اصل users ٽيبل `wp_users` آهي (نيٽ ورڪ ۾ گڏيل)
+
+### حل {#the-solution}
+
+هي plugin خودڪار طور:
+
+1. **غائب ٽيبلون سڃاڻي ٿو**: انهن ٽيبلن لاءِ چيڪ ڪري ٿو جيڪي foreign key پابندين سبب ٺهڻ ۾ ناڪام ٿيون
+2. **صحيح حوالن سان ٽيبلون ٺاهي ٿو**: مناسب user ٽيبل نالو استعمال ڪري ٿو (multisite ۾ `wp_users`)
+3. **گهڻن حالتن کي سنڀالي ٿو**:
+   - Plugin activation/reactivation
+   - نيٽ ورڪ ۾ نئين سائيٽ ٺاهڻ
+   - admin interface ذريعي دستي ٽيبل چيڪنگ
+
+### متاثر ٿيل ٽيبلون {#affected-tables}
+
+- `tutor_coupon_usages` - users ٽيبل ڏانهن foreign key رکي ٿو
+- `tutor_carts` - users ٽيبل ڏانهن foreign key رکي ٿو
+- `tutor_notification_preferences` - TutorPro ٽيبل، users ٽيبل ڏانهن foreign key سان
+
+### Admin Interface {#admin-interface}
+
+ڊيٽابيس انتظام اوزارن تائين هتي رسائي ڪريو:
+
+- **Network Admin**: Settings → Tutor Multisite DB
+- **Site Admin**: Tools → Tutor Multisite DB
+
+interface توهان کي اجازت ڏئي ٿو ته:
+- سڀني سائيٽن ۾ غائب ٽيبلون ڏسو
+- دستي طور ٽيبل ٺاهڻ شروع ڪريو
+- ڊيٽابيس configuration چيڪ ڪريو
+- تفصيلي status معلومات ڏسو
+
+## مدد {#support}
+
+هي plugin خاص طور KursoPro پليٽفارم لاءِ ڊزائين ڪيو ويو آهي. فني مدد لاءِ، development ٽيم سان رابطو ڪريو.

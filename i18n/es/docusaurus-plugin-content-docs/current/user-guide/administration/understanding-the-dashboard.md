@@ -3,31 +3,31 @@ title: Entendiendo el Panel de Control
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Comprendiendo el Panel de Ultimate Multisite
+# Comprendiendo el Panel de Ultimate Multisite {#understanding-the-ultimate-multisite-dashboard}
 
 Antes de sumergirnos en opciones de configuración más avanzadas y los aspectos operativos de Ultimate Multisite, echemos un vistazo al panel.
 
 Al igual que muchos plugins de WordPress, Ultimate Multisite crea una entrada de menú a nivel de red titulada **Ultimate Multisite** con varias entradas de submenú debajo.
 
-## Widgets del Panel de Red
+## Widgets del Panel de Red {#network-dashboard-widgets}
 
 Ultimate Multisite inyecta algunos widgets útiles en el panel a nivel de red. Este panel se encuentra navegando a **Mis Sitios → Administrador de Red → Panel**. Los widgets están diseñados para proporcionar acceso fácil a información y operaciones comunes para el administrador de la red.
 
 ![Panel de Red con widgets de Ultimate Multisite](/img/admin/network-dashboard-full.png)
 
-### Primeros Pasos
+### Primeros Pasos {#first-steps}
 
 ![Widget Primeros Pasos](/img/admin/network-dashboard-first-steps.png)
 
 Este widget aparece en una instalación nueva de Ultimate Multisite y recuerda al administrador de la red completar tareas adicionales como configurar un método de pago y crear una cuenta de prueba.
 
-### Resumen
+### Resumen {#summary}
 
 ![Widget Resumen](/img/admin/network-dashboard-summary.png)
 
 El widget Resumen informa sobre el número de registros y sus ingresos del día. El MRR (Ingresos Mensuales Recurrentes) indica un total proyectado entre clientes con membresías generadoras de ingresos.
 
-### Flujo de Actividad
+### Flujo de Actividad {#activity-stream}
 
 ![Widget Flujo de Actividad](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Este widget informa sobre eventos en toda Ultimate Multisite. Los eventos incluy
 
 Consulte la sección de Eventos de la documentación para una descripción más detallada.
 
-### Ahora
+### Ahora {#right-now}
 
 ![Widget Ahora](/img/admin/network-dashboard-right-now.png)
 
 Este widget de utilidad muestra un breve resumen de usuarios y sitios en la red. Accesos directos útiles en la parte superior permiten acceder con un clic para crear nuevos sitios o usuarios.
 
-### Noticias y Discusiones
+### Noticias y Discusiones {#news-and-discussions}
 
 ![Widget Noticias y Discusiones](/img/admin/network-dashboard-news.png)
 
 Este widget recupera y muestra las últimas noticias de Ultimate Multisite. Mantenga un ojo en este widget para obtener información sobre actualizaciones, errores críticos y correcciones de seguridad.
 
-## Panel de Ultimate Multisite
+## Panel de Ultimate Multisite {#ultimate-multisite-dashboard}
 
 Mientras que el panel a nivel de red presenta información holística sobre la red, el panel de Ultimate Multisite (ubicado en el nivel superior del menú Ultimate Multisite) presenta información sobre el servicio.
 
 ![Panel de Ultimate Multisite](/img/admin/um-dashboard-top.png)
 
-### Crecimiento de Ingresos Mensuales Recurrentes
+### Crecimiento de Ingresos Mensuales Recurrentes {#monthly-recurring-revenue-growth}
 
 El gráfico de MRR (Ingresos Mensuales Recurrentes) muestra un desglose mensual de ingresos durante un período de calendario de 12 meses.
 
@@ -61,7 +61,7 @@ El gráfico de MRR (Ingresos Mensuales Recurrentes) muestra un desglose mensual 
 
 Los ingresos nuevos se registran en azul mientras que las cancelaciones se reflejan en rojo.
 
-### Soporte de Rango de Fechas
+### Soporte de Rango de Fechas {#date-range-support}
 
 Dependiendo del número de clientes y la actividad, las estadísticas pueden resultar abrumadoras. El soporte de rango de fechas incorporado en el panel permite al administrador de la red centrarse únicamente en la información y el período de tiempo requeridos.
 

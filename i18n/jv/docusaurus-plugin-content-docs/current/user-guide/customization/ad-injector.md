@@ -3,7 +3,7 @@ title: Injector Iklan
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Nempat Iklan ing jaringanmu nganggo Ultimate Multisite: Ad Injector
+# Nempat Iklan ing jaringanmu nganggo Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector iku **add-on gratis** sing nganti sampeyan duwe piranti kanggo nempat iklan ing rencana (plan) langsung saka halaman edité.
 
@@ -35,7 +35,7 @@ Sampeyan uga bisa nggawe iklan kalebu ing header Halaman Admin kanggo pengguna s
 
 _Tindakake pilihan Kode Iklan Panel Admin yen sampeyan arep nampilake iklan ing back-end pengguna._
 
-### Luwih saka Iklan
+### Luwih saka Iklan {#beyond-advertising}
 
 Sampeyan uga bisa nggunakake Ultimate Multisite: Ad Injector kanggo menehi dukungan marang rencana tingkat dhuwur (high-tier plans).
 

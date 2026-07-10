@@ -1,0 +1,30 @@
+---
+id: wu_checkout_form_base_domains
+title: فلٽر - wu_checkout_form_base_domains
+sidebar_label: wu_checkout_form_base_domains
+_i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
+---
+# فلٽر: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+
+شيئر ٿيل چيڪ آئوٽ فارم جا بنيادي ڊومين فلٽر ڪري ٿو، جيڪي mapped-domain records نه بڻجڻ گهرجن.
+
+هي فلٽر تڏهن استعمال ڪريو جڏهن ڪو انٽيگريشن چيڪ آئوٽ فارم جي **سائيٽ URL** فيلڊز لاءِ اضافي بنيادي ڊومين فراهم ڪري. هن فلٽر طرفان موٽايل ڊومين هر-سائيٽ ڪسٽم ڊومينز بدران شيئر ٿيل رجسٽريشن هوسٽس طور ورتا وڃن ٿا.
+
+## پيرا ميٽر {#parameters}
+
+| نالو | قسم | وضاحت |
+|------|------|-------------|
+| $domains | `array` | چيڪ آئوٽ فارم جي ترتيب مان گڏ ڪيل شيئر ٿيل بنيادي ڊومين. |
+
+### کان وٺي {#since}
+
+- 2.13.0
+
+### ذريعو {#source}
+
+`inc/functions/domain.php` ۾ بيان ٿيل.
+
+
+## موٽائي ٿو {#returns}
+
+نارملائيز ڪيل چيڪ آئوٽ فارم جي بنيادي ڊومينز جو Array.

@@ -3,13 +3,13 @@ title: Definiĝo de la Konstanto Sunrise sur Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# La definado de la constante Sunrise a vero suraj Closte
+# La definado de la constante Sunrise a vero suraj Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Servantoj estas providendistoj blokas la wp-config.php pro sekureco kial. Tio signifas ke Ultimate Multisite ne povas aŭtomate modifi la filon por inkluzi la necesajn konstantojn por akiri mapadon de domeno kaj aliajn funkcioj por arbei. Closte estas unu el tia providendoj.
 
 Tamen, Closte oferas manjon por aĉi konstantojn al wp-config.php en sekura maniero. Vi nur devas sekvi la paŝojn animaj:
 
-## Sur la dashboard de Closte
+## Sur la dashboard de Closte {#on-the-closte-dashboard}
 
 Unue, [logu sin al via konto de Closte](https://app.closte.com/), kliku sur la menun item "Sites", tiam kliku sur la linko "Dashboard" sur la sitio kiu estas la loko kie vi laboras:
 

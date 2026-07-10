@@ -3,7 +3,7 @@ title: Plano modernigo
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Plan Aktualizari (v2)
+# Plan Aktualizari (v2) {#upgrading-a-plan-v2}
 
 _**IMPORTANTE NOTA: Ĉi tiu artikolo referas al Ultimate Multisite versio 2.x.**_
 
@@ -39,7 +39,7 @@ Pas përfundimit të pagesës, produktet e reja do të shtojnë në llogaritjen 
 
 ##
 
-## Rrugët për Ngritje dhe Ulje (Upgrade and Downgrade Paths)
+## Rrugët për Ngritje dhe Ulje (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Në çdo produkti, do të keni një tab **Up & Downgrades**. Opsioni i parë në atë tab është një fushë e quajtur **Plan Group**.
 

@@ -3,27 +3,27 @@ title: 站点导出
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# 站点导出
+# 站点导出 {#site-export}
 
 **Site Export**（站点导出）管理页面允许网络管理员将单个站点或整个网络打包成可下载的归档文件，用于迁移、备份或交接工作。
 
-## 导出单个站点
+## 导出单个站点 {#exporting-one-site}
 
 前往 **Ultimate Multisite > Site Export**，然后选择 **Generate new Site Export**（生成新的站点导出）。选择您要导出的子站点，然后选择归档文件是否包含上传文件、插件和主题。
 
 导出完成后，从 **Existing Exports**（现有导出）列表中下载 ZIP 文件。现在的导出 ZIP 文件包含自启动的 `index.php` 和 `readme.txt`，因此即使不先安装单独的导入插件，也可以将该归档文件上传到新的主机并启动。
 
-## 导出整个网络
+## 导出整个网络 {#exporting-the-whole-network}
 
 当您需要包含网络中所有子站点的单个归档文件时，请使用 Site Export 页面上的 **Network Export**（网络导出）。这在主机迁移、灾难恢复演练或分阶段重建时非常有用，因为这些场景要求每个子站点必须作为一个整体移动。
 
 由于网络导出的文件大小可能远大于单个站点导出，请在流量较低的时段运行此功能，并确认目标存储空间有足够的可用空间来容纳上传文件、插件、主题和生成的 ZIP 文件。
 
-### 网络导入包 (Network Import Bundles)
+### 网络导入包 (Network Import Bundles) {#network-import-bundles}
 
 从 Ultimate Multisite 2.12.0 版本开始，Site Exporter 可以生成 **network import bundles**（网络导入包）—— 这是一种专门为简化网络范围的站点恢复而设计的特殊归档文件。网络导入包包含恢复多个站点到新网络安装所需的所有文件和元数据。
 
-#### 生成网络导入包
+#### 生成网络导入包 {#generating-a-network-import-bundle}
 
 1. 前往 **Ultimate Multisite > Site Export**
 2. 点击 **Generate new Network Export**（生成新的网络导出）
@@ -32,7 +32,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 5. 点击 **Generate**（生成）
 6. 从 **Existing Exports**（现有导出）列表中下载包 ZIP 文件
 
-#### 从网络导入包恢复
+#### 从网络导入包恢复 {#restoring-from-a-network-import-bundle}
 
 要从网络导入包恢复站点：
 
@@ -52,7 +52,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 - 媒体上传文件（如果包含在包内）
 - 自定义数据库表和数据
 
-## 安装自启动的导出 ZIP
+## 安装自启动的导出 ZIP {#installing-a-self-booting-export-zip}
 
 要在新的主机上恢复自启动的 ZIP 文件：
 

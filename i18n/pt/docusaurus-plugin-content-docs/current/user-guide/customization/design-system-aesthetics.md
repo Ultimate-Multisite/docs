@@ -3,11 +3,11 @@ title: Habilidade de Estética de Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Habilidade de Estética do Design System
+# Habilidade de Estética do Design System {#design-system-aesthetics-skill}
 
 A **habilidade de Estética do Design System** é uma abordagem guiada para refinar a identidade visual do seu site. Ela ajuda você a tomar decisões consistentes sobre tipografia, cores, espaçamento e tokens de movimento que definem o seu design system.
 
-## O que é Estética do Design System?
+## O que é Estética do Design System? {#what-is-design-system-aesthetics}
 
 Estética do Design System é uma habilidade estruturada que abrange:
 
@@ -20,9 +20,9 @@ Estética do Design System é uma habilidade estruturada que abrange:
 
 Essas decisões são capturadas no arquivo `theme.json` do seu tema, criando um sistema visual coeso.
 
-## Por que usar Estética do Design System?
+## Por que usar Estética do Design System? {#why-use-design-system-aesthetics}
 
-### Consistência
+### Consistência {#consistency}
 
 Um design system garante:
 
@@ -31,7 +31,7 @@ Um design system garante:
 - Que o espaçamento siga um padrão previsível
 - Que as animações parem unificadas
 
-### Eficiência
+### Eficiência {#efficiency}
 
 Em vez de tomar decisões de design página por página, você:
 
@@ -39,7 +39,7 @@ Em vez de tomar decisões de design página por página, você:
 - Aplica-os em todos os lugares
 - Atualiza globalmente mudando apenas um valor
 
-### Flexibilidade
+### Flexibilidade {#flexibility}
 
 Você pode:
 
@@ -47,9 +47,9 @@ Você pode:
 - Experimentar diferentes estéticas
 - Manter a consistência da marca enquanto evolui
 
-## O Processo de Estética do Design System
+## O Processo de Estética do Design System {#triggering-the-design-system-aesthetics-skill}
 
-### Passo 1: Tipografia
+### Passo 1: Tipografia {#manual-activation}
 
 O agente pergunta sobre suas escolhas de fonte:
 
@@ -79,7 +79,7 @@ O agente então define:
 - **Escala de pesos**: Pesos da fonte (regular, medium, bold, etc.)
 - **Altura da linha (Line height)**: Espaçamento entre as linhas para facilitar a leitura
 
-### Passo 2: Paleta de Cores
+### Passo 2: Paleta de Cores {#automatic-suggestions}
 
 ```
 Vamos definir sua paleta de cores.
@@ -127,7 +127,7 @@ O agente define os tokens de espaçamento:
 - Escala: xs, sm, md, lg, xl, 2xl
 - Valores específicos para padding, margin e gap
 
-### Passo 4: Bordas e Sombras
+### Passo 4: Bordas e Sombras {#the-design-system-aesthetics-process}
 
 ```
 Profundidade visual e definição:
@@ -150,7 +150,7 @@ O agente cria:
 - Tokens de sombra para níveis de elevação
 - Tokens de largura da borda
 
-### Passo 5: Movimento e Animação
+### Passo 5: Movimento e Animação {#step-1-typography}
 
 ```
 Como seu site deve parecer quando interativo?
@@ -172,9 +172,9 @@ O agente define:
 - Funções de easing (ease-in, ease-out, ease-in-out)
 - Keyframes de animação para interações comuns
 
-## Aplicando Estética do Design System
+## Aplicando Estética do Design System {#step-2-color-palette}
 
-### Aplicação Automática
+### Aplicação Automática {#step-3-spacing}
 
 Após completar a habilidade, o agente:
 
@@ -183,13 +183,13 @@ Após completar a habilidade, o agente:
 3. Regenera os estilos de bloco para corresponder ao novo sistema
 4. Ativa o tema atualizado
 
-### Aplicação Manual
+### Aplicação Manual {#step-4-borders-and-shadows}
 
 Você também pode editar o `theme.json` diretamente:
 
-## Visualizando Seu Design System
+## Visualizando Seu Design System {#step-5-motion-and-animation}
 
-### Pergunte ao Agente
+### Pergunte ao Agente {#applying-design-system-aesthetics}
 
 ```
 "Mostre meu design system"
@@ -203,13 +203,13 @@ ou
 
 O agente exibirá suas tipografias, cores, espaçamentos e outros tokens.
 
-### Visualizar theme.json
+### Visualizar theme.json {#automatic-application}
 
 Abra `/wp-content/themes/[nome-do-tema]/theme.json` em um editor de texto para ver as definições brutas dos tokens.
 
-## Atualizando Seu Design System
+## Atualizando Seu Design System {#manual-application}
 
-### Atualizações Rápidas
+### Atualizações Rápidas {#viewing-your-design-system}
 
 Peça ao agente por alterações específicas:
 
@@ -229,7 +229,7 @@ ou
 "Mude a fonte dos títulos para uma serifada"
 ```
 
-### Redesign Completo
+### Redesign Completo {#ask-the-agent}
 
 Execute novamente a habilidade Design System Aesthetics:
 
@@ -239,7 +239,7 @@ Execute novamente a habilidade Design System Aesthetics:
 
 Isso irá guiá-lo por todas as decisões novamente, começando pelos seus valores atuais.
 
-### Atualizações Parciais
+### Atualizações Parciais {#view-themejson}
 
 Atualize aspectos específicos:
 
@@ -247,15 +247,15 @@ Atualize aspectos específicos:
 "Apenas atualize a paleta de cores, mantenha o resto igual"
 ```
 
-## Melhores Práticas do Design System
+## Melhores Práticas do Design System {#updating-your-design-system}
 
-### Consistência
+### Consistência {#quick-updates}
 
 - Use os mesmos tokens em todos os lugares
 - Não crie cores ou tamanhos únicos
 - Referencie tokens em vez de codificar valores diretamente no código
 
-### Nomenclatura
+### Nomenclatura {#full-redesign}
 
 Use nomes claros e semânticos:
 
@@ -265,7 +265,7 @@ Use nomes claros e semânticos:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Escalabilidade
+### Escalabilidade {#partial-updates}
 
 Projete seu sistema para escalar:
 
@@ -273,7 +273,7 @@ Projete seu sistema para escalar:
 - Crie escalas (xs, sm, md, lg, xl) em vez de valores arbitrários
 - Planeje adições futuras
 
-### Documentação
+### Documentação {#design-system-best-practices}
 
 Documente seu design system:
 
@@ -281,9 +281,9 @@ Documente seu design system:
 - Quando usar cada token
 - Exceções e casos extremos
 
-## Padrões Comuns do Design System
+## Padrões Comuns do Design System {#consistency-1}
 
-### Minimalista Moderno
+### Minimalista Moderno {#naming}
 
 - Tipografia sem serifa (Inter, Helvetica)
 - Paleta de cores limitada (2-3 cores)
@@ -291,7 +291,7 @@ Documente seu design system:
 - Sombras sutis
 - Animações suaves e rápidas
 
-### Quente e Amigável
+### Quente e Amigável {#scalability}
 
 - Mistura de serifada e sem serifa
 - Paleta de cores quentes (laranjas, cinzas quentes)
@@ -299,7 +299,7 @@ Documente seu design system:
 - Sombras suaves
 - Animações lúdicas
 
-### Corporativo Profissional
+### Corporativo Profissional {#documentation}
 
 - Sem serifa limpa (Roboto, Open Sans)
 - Paleta neutra com cor de destaque
@@ -307,7 +307,7 @@ Documente seu design system:
 - Sombras mínimas
 - Transições sutis
 
-### Criativo e Ousado
+### Criativo e Ousado {#common-design-system-patterns}
 
 - Tipografia distinta
 - Paleta de cores ousada
@@ -315,7 +315,7 @@ Documente seu design system:
 - Sombras fortes
 - Animações notáveis
 
-## Solução de Problemas (Troubleshooting)
+## Solução de Problemas (Troubleshooting) {#modern-minimalist}
 
 **Minhas mudanças no design system não estão aparecendo**
 - Limpe o cache do seu navegador
@@ -333,7 +333,7 @@ Documente seu design system:
 - Edite manualmente o theme.json com os valores anteriores
 - Execute a habilidade novamente com escolhas diferentes
 
-## Próximos Passos
+## Próximos Passos {#warm-and-friendly}
 
 Após definir seu design system:
 

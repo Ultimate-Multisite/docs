@@ -4,24 +4,24 @@ title: Филтър - get_site_url_for_previewer
 sidebar_label: get_site_url_for_previewer
 _i18n_hash: ab1a6ae3abce3498fa9cf4f5ee98d91d
 ---
-# Филтър: get_site_url_for_previewer
+# Филтър: get_site_url_for_previewer {#filter-getsiteurlforpreviewer}
 
 Позволява на разработчиците на плагини да филтрират URL-адресата, използвана от превюера
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
 | $domain | `string` | Използваният в момента домейн, полезен за манипулации |
 | $domain_options | `array` | Списък от всички домейни, въведени в Ultimate Multisite Settings -> Network Settings -> Domain Options |
 
-### От
+### От {#since}
 
 - 1.7.2
-### Източник
+### Източник {#source}
 
 Дефиниран в [`inc/checkout/class-legacy-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-legacy-checkout.php#L812) на ред 812
 
 
-## Връща
+## Връща {#returns}
 Новият домейн, който трябва да бъде използван

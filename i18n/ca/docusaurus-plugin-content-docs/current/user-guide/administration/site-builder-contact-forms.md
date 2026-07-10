@@ -3,11 +3,11 @@ title: Forms de Contacte per a Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularis de Contacte amb Site Builder
+# Formularis de Contacte amb Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 afegeix la possibilitat de crear formularis de contacte directament des de l'interfície de xat utilitzant l'agent Site Builder. Això et permet afegir formularis de contacte completament funcionals a qualsevol pàgina sense haver de sortir del xat.
 
-## Panlló general
+## Panlló general {#overview}
 
 La possibilitat de formularis de contacte de Site Builder (`create_contact_form`) detecta automàticament el plugin de formularis que tens instal·lat i crea un formulari de contacte utilitzant les capacitats naturals d'aquest plugin. Els plugins de formularis suportats inclouen:
 
@@ -18,7 +18,7 @@ La possibilitat de formularis de contacte de Site Builder (`create_contact_form`
 
 L'assistència selecciona automàticament el millor plugin de formularis disponible al teu lloc i genera un formulari de contacte adaptat a aquest plugin.
 
-## Crear un formulari de contacte
+## Crear un formulari de contacte {#creating-a-contact-form}
 
 Per crear un formulari de contacte utilitzant Site Builder:
 
@@ -34,7 +34,7 @@ Per crear un formulari de contacte utilitzant Site Builder:
 
 4. Site Builder generarà el formulari de contacte i et retornarà un shortcode preparat per incorporar.
 
-## Utilitzar el shortcode generat
+## Utilitzar el shortcode generat {#using-the-generated-shortcode}
 
 Després que Site Builder crei el formulari de contacte, et retorna un shortcode (per exemple, `[contact-form-7 id="123"]`). Pots:
 
@@ -45,11 +45,11 @@ Després que Site Builder crei el formulari de contacte, et retorna un shortcode
 
 3. **Utilitzar-lo en una plantilla** — Si ets còmode amb PHP, pots afegir el shortcode a un fitxer de plantilla del tema.
 
-## Personalitzar el formulari de contacte
+## Personalitzar el formulari de contacte {#customizing-the-contact-form}
 
 Després que Site Builder crei el formulari de contacte, pots personalitzar-lo encara més:
 
-### Mitjançant l'interfície de xat
+### Mitjançant l'interfície de xat {#via-the-chat-interface}
 
 Pedeu a Site Builder que modifiqui el formulari:
 
@@ -57,7 +57,7 @@ Pedeu a Site Builder que modifiqui el formulari:
 
 Site Builder actualitzarà el formulari i et retornarà el shortcode actualitzat.
 
-### Mitjançant l'interfície d'administració del plugin de formularis
+### Mitjançant l'interfície d'administració del plugin de formularis {#via-the-form-plugins-admin-interface}
 
 També pots personalitzar el formulari directament a les configuracions del teu plugin de formularis:
 
@@ -65,7 +65,7 @@ També pots personalitzar el formulari directament a les configuracions del teu 
 2. Troba el formulari creat per Site Builder.
 3. Edita els camps del formulari, les regles de validació i les notificacions per correu electrònic segons necessitat.
 
-## Plugins de formularis i compatibilitat
+## Plugins de formularis i compatibilitat {#form-plugins-and-compatibility}
 
 Site Builder detecta automàticament quin plugin de formularis tens instal·lat al teu lloc i l'utilitza per crear el formulari de contacte. Si hi ha múltiples plugins de formularis instal·lats, Site Builder els prioritza en aquest ordre:
 
@@ -76,7 +76,7 @@ Site Builder detecta automàticament quin plugin de formularis tens instal·lat 
 
 Si cap d'aquests plugins estan instal·lats, Site Builder recomanarà instal·lar-ne un abans de crear el formulari de contacte.
 
-## Notificacions per correu electrònic
+## Notificacions per correu electrònic {#email-notifications}
 
 Els formularis de contacte creats per Site Builder es configuren per enviar notificacions per correu electrònic a l'administrador del lloc per defecte. Pots personalitzar l'adreça de correu electrònic del destinatari i el missatge de notificació:
 
@@ -91,21 +91,21 @@ Per a instruccions detallades, consulta la documentació del teu plugin de formu
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Casos d'ús d'exemple
+## Casos d'ús d'exemple {#example-use-cases}
 
-### Formulario de contacte senzill
+### Formulario de contacte senzill {#simple-contact-form}
 
 > "Crea un formulari de contacte senzill amb camps per a nom, correu electrònic i missatge."
 
-### Formulario de múltiples passos
+### Formulario de múltiples passos {#multi-step-form}
 
 > "Crea un formulari de contacte amb un primer pas per a la informació de contacte i un segon pas per al missatge i el mètode de contacte preferit."
 
-### Formulario amb lògica condicional
+### Formulario amb lògica condicional {#form-with-conditional-logic}
 
 > "Crea un formulari de contacte que mostri camps diferents basat en la selecció de l'usuari en un desplegable."
 
-### Formulario amb caricatura de fitxer
+### Formulario amb caricatura de fitxer {#form-with-file-upload}
 
 > "Crea un formulari de contacte que permeti als usuaris carregar un fitxer o un adjunt."
 

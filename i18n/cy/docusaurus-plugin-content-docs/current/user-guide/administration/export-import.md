@@ -3,11 +3,11 @@ title: Export a Chymrydd a Cyflwyno
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportio a Chymryd
+# Exportio a Chymryd {#export--import}
 
 Mae Ultimate Multisite 2.9.0 yn ychwanegu ffurf **Exportio a Ymddangos** unigol i'r safon **Tools > Export & Import**. Defnyddiw ei fod yn ddiweddar i chi angen i gystyrnu un safon WordPress fel fyliau ZIP, i drosglwyddo y ZIP hwnnw, neu i symud safon rhwng cyflenwi Ultimate Multisite a WordPress unigol.
 
-## Pethau sydd angen
+## Pethau sydd angen {#required-permissions}
 
 Rhaid i chi fynd yn cyflwyno eich bod fel administrator sydd gallu cyrraedd y menydd **Tools** ar y safon sydd yn cael ei exportio neu ymddangos. Ar rheol multisite, defnyddiwwch un cyflwynwr rheol (network administrator) pan fyddwch yn exportio neu ymddangos subsafon o ffurf Ultimate Multisite.
 
@@ -15,7 +15,7 @@ Mae drafodau download ZIP wedi'u serbu trwy un pethau download a chyflwyniad, fe
 
 Mae'r grwyth o'r cyfyrdd (ZIP size) yn cyflwyno gan ystod ystod media, y pluginau a'r themau a ddychwelyd, a'r grwyth o'r tablau databws y safle.
 
-## Cyflwyno safle o'r ZIP
+## Cyflwyno safle o'r ZIP {#exporting-a-site-to-a-zip}
 
 1. Ymddangos i **Tools > Export & Import** ar y safle WordPress yn ddefnyddiol.
 2. Agorwch y ardal cyflwyno a chwilio (upload) y ZIP a ddychwelyd a gyfrannwyd gan y tool Export & Import.
@@ -27,7 +27,7 @@ Mae'r grwyth o'r cyfyrdd (ZIP size) yn cyflwyno gan ystod ystod media, y plugina
 
 Ar ddefnyddio WordPress mewn safle unig, mae cyflwyno ZIP yn gwblhau'r safle gyfredol gyda'r safle a ddychwelyd. Creu bakaif llawn o'r safle target cyn i chi entynnu, a osgoi i entynnu aml-lein ar gyfer safle unig ar yr un pryd.
 
-## Gyfyngau a nodau cyfathrebu
+## Gyfyngau a nodau cyfathrebu {#what-the-export-includes}
 
 Mae cyfathrebu'r ddefnyddio gyfrannau mawr neu llyfrion mediaall (media libraries) yn gallai gwneud fyliau ZIP mawr. Cydweiniwch amserau cyflwyniad PHP, amserau cyflym, cymryd disc, memori a setau amser server قبل ychwanegu neu ddefnyddio sites mawr.
 Gall angen ei newid llyfrion mediaall mawr yn cael eu newid yn gyfeiriol gyda chwarae (low-traffic maintenance window).

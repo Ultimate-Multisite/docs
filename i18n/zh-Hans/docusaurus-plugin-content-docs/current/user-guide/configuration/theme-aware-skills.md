@@ -3,11 +3,11 @@ title: 主题感知技能
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# 主题感知技能
+# 主题感知技能 {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 版本发布了四项新的主题感知内置技能，这些技能可以自动适应您当前激活的 WordPress 主题。这些技能提供了根据您主题架构和功能量身定制的专业指导和能力。
 
-## 什么是主题感知技能？
+## 什么是主题感知技能？ {#what-are-theme-aware-skills}
 
 主题感知技能是预先配置的知识库和工具集，AI 助手会根据您网站当前激活的 WordPress 主题自动选择使用。当您切换主题时，助手可用的技能会自动更新——无需手动配置。
 
@@ -18,9 +18,9 @@ Superdav AI Agent v1.10.0 版本发布了四项新的主题感知内置技能，
 - **自定义示例** — 针对常见任务的代码片段和配置模式
 - **最佳实践** — 关于主题架构和工作流程的建议
 
-## 可用的主题感知技能
+## 可用的主题感知技能 {#available-theme-aware-skills}
 
-### 区块主题 (Block Themes)
+### 区块主题 (Block Themes) {#block-themes}
 
 **适用范围：** 使用 WordPress 区块式（全站编辑）架构的主题。
 
@@ -34,7 +34,7 @@ Superdav AI Agent v1.10.0 版本发布了四项新的主题感知内置技能，
 
 **自动激活条件：** 您的活动主题是区块主题（支持 `block-templates` 功能）。
 
-### 经典主题 (Classic Themes)
+### 经典主题 (Classic Themes) {#classic-themes}
 
 **适用范围：** 使用 PHP 模板和经典编辑器的传统 WordPress 主题。
 
@@ -48,7 +48,7 @@ Superdav AI Agent v1.10.0 版本发布了四项新的主题感知内置技能，
 
 **自动激活条件：** 您的活动主题是经典（非区块）主题。
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **适用范围：** 使用 Kadence Blocks 插件进行高级区块式设计的网站。
 
@@ -62,7 +62,7 @@ Kadence Blocks 技能提供以下指导：
 
 **自动激活条件：** 您的网站已激活 Kadence Blocks 插件。
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **适用范围：** 使用 Kadence 主题进行区块式设计和定制的网站。
 
@@ -76,15 +76,15 @@ Kadence Theme 技能提供以下指导：
 
 **自动激活条件：** 您的活动主题是 Kadence 主题。
 
-## 技能如何选择
+## 技能如何选择 {#how-skills-are-selected}
 
 助手会在每条消息中自动检测您当前激活的主题和已安装的插件。如果存在匹配的主题感知技能，它会自动加载到助手的上下文环境中。您无需手动启用或切换技能。
 
-### 多个技能
+### 多个技能 {#multiple-skills}
 
 如果多个技能适用于您的网站（例如，您同时激活了 Kadence Blocks 和 Kadence Theme），助手可以访问所有适用的技能，并可以参考每个技能的指导。
 
-### 切换主题
+### 切换主题 {#switching-themes}
 
 当您更改活动主题时，助手可用的技能将在下一条消息中自动更新。例如：
 
@@ -92,11 +92,11 @@ Kadence Theme 技能提供以下指导：
 2. 您切换到一个经典主题。
 3. 在您的下一条消息中，**经典主题** 技能会自动加载，而 **区块主题** 技能将不再可用。
 
-## 使用主题感知技能
+## 使用主题感知技能 {#using-theme-aware-skills}
 
 要利用主题感知技能，只需在聊天界面描述您想要做什么即可。助手将自动参考适当技能的指导。
 
-### 示例提示
+### 示例提示 {#example-prompts}
 
 **针对区块主题：**
 > "使用区块模式创建一个带有背景图片和居中文本的英雄区域。"

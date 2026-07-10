@@ -1,138 +1,147 @@
 ---
-title: WooCommerce ውህደት የለውጥ መዝገብ
+title: WooCommerce ውህደት የለውጦች መዝገብ
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integration የለውጥ መዝገብ
+# WooCommerce ውህደት የለውጦች መዝገብ {#woocommerce-integration-changelog}
 
-Version 2.0.6 - የተለቀቀበት ቀን 2026-01-16
-* መሻሻል: ዋና የደንበኝነት ምዝገባዎችን (core subscriptions) በአድ-ኦኑ ውስጥ አካተን። አሁን የWoocommerce Subscriptions extension አያስፈልግም።
+ስሪት 2.2.0 - በ2026-07-01 ተለቋል
+* አዲስ: Ultimate Multisite የግብር መጠኖች አሁን በcheckout ላይ እንደ ተለያዩ WooCommerce የክፍያ መስመሮች ይታያሉ፣ ከክፍያ በፊት የግብር ድምሮችን የበለጠ ግልጽ ያደርጋሉ።
+* አዲስ: በWooCommerce Subscriptions የድጋሚ ሙከራ መስኮት ወቅት የወደቀ-እድሳት እገዳን ለሚፈልጉ ጣቢያዎች የመርጦ-መግባት "የአባልነቶችን በወደቁ እድሳቶች ላይ ወዲያውኑ አግድ" ቅንብር እና `wu_woo_suspend_on_payment_failure` ማጣሪያ ታክሏል።
+* ማስተካከያ: ከወደቁ ወይም ከተመለሱ እድሳቶች በኋላ ከUltimate Multisite አባልነቶች ጋር ከማመሳሰል ውጭ ሊቆዩ የሚችሉ WooCommerce Subscription ሁኔታዎች ተስማምተዋል።
+* ማስተካከያ: የWooCommerce መደብር ምንዛሬ በጎደለ ጊዜ ወደ Ultimate Multisite የምንዛሬ ዝርዝር ታክሏል።
+* ማስተካከያ: ተመዝጋቢዎችን ወደ WooCommerce checkout ሲያዞሩ የደንበኛ የክፍያ ዝርዝሮች ተጠብቀዋል።
+* ተሻሽሏል: ከJetpack Autoloader 5 ጋር ተኳኋኝነት ታክሏል።
+* ተሻሽሏል: የGitHub እና የገበያ ቦታ zips የተደራረቡ የዝግጅት ማውጫዎችን እና የልማት ፋይሎችን እንዲያስወግዱ የልቀት ጥቅል መፍጠር ተጸድቷል።
 
-Version 2.0.5 - የተለቀቀበት ቀን 2026-01-09
-* መሻሻል: ትርጉሞችን (translations) ከglotpress API ተጫን።
-* ስህተት ማስተካከያ: በአንዳንድ የገጽ ገንቢዎች (page builders) ወሳኝ ስህተት ተስተካክሏል።
-* ስህተት ማስተካከያ: ደንበኛው በዋናው ድረ-ገጽ አባል ከሆነ ያልተቋረጠ መላክ (infinite redirect) ተስተካክሏል።
+ስሪት 2.0.6 - በ2026-01-16 ተለቋል
+* ማሻሻያ: ዋና ምዝገባዎችን በተጨማሪው ውስጥ አካትቷል። ከእንግዲህ Woocommerce Subscriptinos ቅጥያ አያስፈልግም።
 
-Version 2.0.4 - የተለቀቀበት ቀን 2025-11-14
-* ተጨመረ: ለብዙ ተጨማሪ ቋንቋዎች ትርጉሞች።
-* ተቀየረ: ስሙ ወደ Ultimate Multisite: Woocommerce Integration ተቀየረ።
-* ተጨመረ: ከWoocommerce 10.2.1 ጋር ተኳሃኝ።
-* ተጨመረ: ከWoocommerce Subscriptions 7.7.0 ጋር ተኳሃኝ።
-* ስህተት ማስተካከያ: ከPHP 8.4 ጋር ተኳሃኝ።
-* ስህተት ማስተካከያ: የWC አካውንት ገጽ ባይኖርም ወደ ሌላ ገጽ መላክ (redirect) ተስተካክሏል።
+ስሪት 2.0.5 - በ2026-01-09 ተለቋል
+* ማሻሻያ: ትርጉሞችን ከglotpress API ጫን።
+* ማስተካከያ: በአንዳንድ ገጽ ገንቢዎች ውስጥ ከባድ ስህተት።
+* ማስተካከያ: ደንበኛው የዋናው ጣቢያ አባል ሲሆን የማያቋርጥ ማዞር።
 
-Version 2.0.3 - የተለቀቀበት ቀን 2025-08-13
-* ተቀየረ: በአዲሱ ገበያ ቦታ (marketplace) አውቶማቲክ ዝመናዎችን አበቃ።
+ስሪት 2.0.4 - በ2025-11-14 ተለቋል
+* ታክሏል: ለብዙ ተጨማሪ ቋንቋዎች ትርጉሞች።
+* ተቀይሯል: ወደ Ultimate Multisite: Woocommerce Integration ተሰይሟል።
+* ታክሏል: ከWoocommerce 10.2.1 ጋር ተኳኋኝነት።
+* ታክሏል: ከWoocommerce Subscriptions 7.7.0 ጋር ተኳኋኝነት።
+* ማስተካከያ: ከPHP 8.4 ጋር ተኳኋኝነት
+* ማስተካከያ: ያዞራል ነገር ግን የWC መለያ ገጽ በሌለ ጊዜ።
 
-Version 2.0.2 - የተለቀቀበት ቀን 2025-07-05
-* ተቀየረ: ስሙ ወደ Multisite Ultimate: Woocommerce Integration ተቀየረ።
-* ተጨመረ: ከWoocommerce 9.8.1 ጋር ተኳሃኝ።
-* ተጨመረ: ከWoocommerce Subscriptions 7.3.0 ጋር ተኳሃኝ።
-* ስህተት ማስተካከያ: ደንበኛው የደንበኝነት ምዝገባን መሰረዝ ይችላል።
-* ስህተት ማስተካከያ: የቼክአውት ብሎክ (checkout block) ሲጠቀሙ ወሳኝ ስህተት ተስተካክሏል።
-* መሻሻል: አሁን ከWoocommerce high performance custom order tables ጋር ተኳሃኝ።
-* ስህተት ማስተካከያ: በWooCommerce ቼክአውት ላይ መሰረዝ ቢደረግም የአባልነት ደረጃን ማሻሻል (upgrade) ይችላል።
+ስሪት 2.0.3 - በ2025-08-13 ተለቋል
+* ተቀይሯል: ከአዲሱ የገበያ ቦታ ጋር ራስ-ሰር ዝማኔዎች ነቅተዋል።
 
-Version 2.0.1 - የተለቀቀበት ቀን 2023-08-09
+ስሪት 2.0.2 - በ2025-07-05 ተለቋል
+* ተቀይሯል: ወደ Multisite Ultimate: Woocommerce Integration ተሰይሟል።
+* ታክሏል: ከWoocommerce 9.8.1 ጋር ተኳኋኝነት።
+* ታክሏል: ከWoocommerce Subscriptions 7.3.0 ጋር ተኳኋኝነት።
+* ማስተካከያ: በደንበኛው ምዝገባን መሰረዝ።
+* ማስተካከያ: checkout ብሎክ ሲጠቀሙ ከባድ ስህተት።
+* ማሻሻያ: አሁን ከWoocommerce ከፍተኛ አፈጻጸም ብጁ የትዕዛዝ ሰንጠረዦች ጋር ተኳኋኝ ነው።
+* ማስተካከያ: በWooCommerce checkout ላይ መሰረዝ አሁንም አባልነትን ሊያሳድግ ይችላል።
 
-* ተጨመረ: ከWoocommerce 7.9.0 ጋር ተኳሃኝ።
-* ተጨመረ: ከWoocommerce Subscriptions 5.3.0 ጋር ተኳሃኝ።
-* ተጨመረ: የአባልነት ዝመናዎችን ድጋፍ።
-* ተጨመረ: በWoocommerce ውስጥ ስለ ሙከራዎች (trials) እና የመሰረታ ክፍያዎች (setup fees) ማሳሰቢያዎች።
-* ተጨመረ: Ultimate Multisite Woocommerce ምርቶችን በmeta value መለየት።
-* ተጨመረ: ሁሉንም Ultimate Multisite ተዛማጅ የWoocommerce ምርቶችን ምልክት ለማድረግ ጊዜያዊ ማስተካከያ ተካቷል።
-* ተጨመረ: ከWoocommerce ዝርዝር የተሰረዙትን Ultimate Multisite ምርቶች።
-* መሻሻል: ወደ ጋሪ (cart) ለመተግበር የማይደገም የWoocommerce ቅናሽ ተፈጥሯል።
-* መሻሻል: ደጋሚውን ቅናሽ ወደ የWoocommerce ምርት መልሶ አቋቋመ።
-* መሻሻል: በWoocommerce ምርት ላይ የደጋሚ ቅናሽ መለያ ተጨመረ።
-* መሻሻል: በቼክአውት ላይ የምርት አይነት መሆኑን አረጋገጠ።
-* ስህተት ማስተካከያ: በደረጃ ዝቅ የማውረድ ሂደት (downgrade process) ወቅት የአባልነት ሁኔታን ጠብቋል።
-* ስህተት ማስተካከያ: የመሰረዝ ሂደት ወቅት ስህተቶችን ለማስቀረት የደንበኝነት ምዝገባ መኖሩን አረጋግጧል።
-* ስህተት ማስተካከያ: በWoocommerce subscriptions ውስጥ ለመጠቀም የጅማሬ የደንበኝነት ምዝገባ ቀን ተጨመረ።
-* ውስጣዊ: አዲስ የPHP 8.1 የብልጽግና ሂደት ተተግብሯል።
+ስሪት 2.0.1 - በ2023-08-09 ተለቋል
 
-Version 2.0.0 - ሙሉ በሙሉ እንደገና ተጽፏል።
+* ታክሏል: ከWoocommerce 7.9.0 ጋር ተኳኋኝነት።
+* ታክሏል: ከWoocommerce Subscriptions 5.3.0 ጋር ተኳኋኝነት።
+* ታክሏል: ለአባልነት ዝማኔዎች ድጋፍ።
+* ታክሏል: በWoocommerce ውስጥ ስለ ሙከራዎች እና የማዋቀሪያ ክፍያዎች ማስታወቂያዎች።
+* ታክሏል: የUltimate Multisite Woocommerce ምርቶችን በmeta እሴት መለየት።
+* ታክሏል: ሁሉንም ከUltimate Multisite ጋር የተዛመዱ Woocommerce ምርቶችን ለምልክት የአንድ-ጊዜ ማስተካከያ ገብቷል።
+* ታክሏል: በUltimate Multisite የተፈጠሩ ምርቶች ከWoocommerce ዝርዝር ተወግደዋል።
+* ማሻሻያ: በጋሪው ላይ ለመተግበር የማይደጋገም Woocommerce ቅናሽ ተፈጥሯል።
+* ማሻሻያ: የሚደጋገም ቅናሽ ወደ Woocommerce ምርት ተመልሷል።
+* ማሻሻያ: የሚደጋገም ቅናሽ መለያ ወደ Woocommerce ምርት ታክሏል።
+* ማሻሻያ: በcheckout ላይ የምርት አይነት ተረጋግጧል።
+* ማስተካከያ: በዝቅ ማድረግ ሂደት ወቅት የአባልነት ሁኔታ ተጠብቋል።
+* ማስተካከያ: በመሰረዝ ሂደት ወቅት ስህተቶችን ለማስወገድ ምዝገባ መኖሩ ተፈትሿል።
+* ማስተካከያ: በWoocommerce subscriptions ውስጥ ለመጠቀም የምዝገባ መጀመሪያ ቀን ታክሏል።
+* ውስጣዊ: አዲስ PHP 8.1 የግንባታ ሂደት ተተግብሯል።
 
-* ተጨመረ: የገበያውን ወይም የአባልነት ምዝገባውን ሲቀይሩ ወይም ሲሰርዙ የwoo subscriptionን ለማስወገድ ሂደት ዘዴ፤
-* ተጨመረ: የአባልነት ደረጃን ለማውረድ እና ለማሻሻል መቆጣጠሪያ (Handler)፤
-* መሻሻል: በአካባቢው ድረ-ገጾች (subsites) ላይ የደንበኛ ዝመና ቅጽ ላይ woocommerce ጥገኝነቶችን (dependencies) በመጫን አካውንት ዝመናን ይፈቅዳል።
-* መሻሻል: የWoocommerce ጋሪ ባይኖርም በትክክል ይጫናል።
-* መሻሻል: ቼክአውት ሂደት ሲፈጸም በዋናው ድረ-ገጽ ሰንጠረዦች (main site tables) ላይ መሆናችንን አረጋግጧል።
-* መሻሻል: የUltimo እድሳት ትዕዛዝ (renewal order) የመጨረሻ ክፍያ ላይ ሳይሆን በWoocommerce የደንበኝነት ምዝገባ ትዕዛዝ ዋጋ ላይ የተመሰረተ እንዲሆን አደረገ።
-* ስህተት ማስተካከያ: ወደ WU Membership አዝራር ሊንክ (button link) ላይ መሄድ።
-* ስህተት ማስተካከያ: የWoocommerce የደንበኝነት ምዝገባ እድሳት ክፍያ ከተከፈለ የUltimo ትዕዛዝ እንደተከፈሉ አድርጎ ያዘጋጃል።
-* ግንባታ: MPBን እንደ ገንቢ (builder) ጨምሯል።
+ስሪት 2.0.0 - ሙሉ በሙሉ እንደገና ተጻፈ።
 
-Version 2.0.0-beta-5 - የተለቀቀበት ቀን 2022-01-21
+* ታክሏል: መግቢያውን ሲቀይሩ ወይም አባልነትን ሲሰርዙ woo subscriptionን ለማስወገድ የመሰረዝ ዘዴን ሂደት;
+* ታክሏል: አባልነቶችን ለማውረድ እና ለማሳደግ ተቆጣጣሪ;
+* ማሻሻያ: የመለያ ዝማኔን ለመፍቀድ በንዑስ ጣቢያዎች ውስጥ በደንበኛ ዝማኔ ቅጽ ላይ woocommerce ጥገኝነቶችን ጫን;
+* ማሻሻያ: Woocommerce ጋሪ ከሌለ በትክክል ጫን;
+* ማሻሻያ: checkout ሲሰራ በዋና ጣቢያ ሰንጠረዦች ላይ መሆናችንን አረጋግጥ;
+* ማሻሻያ: የUltimo እድሳት ትዕዛዝን በWoocommerce subscription ትዕዛዝ እሴት ላይ እንዲመሠረት አድርግ፣ ከመጨረሻ ክፍያ ሳይሆን;
+* ማስተካከያ: ወደ WU Membership አዝራር አገናኝ ሂድ;
+* ማስተካከያ: የWoocommerce subscriptions እድሳት ከፍሎ ከሆነ Ultimo ትዕዛዝን እንደተከፈለ አዘጋጅ;
+* ግንባታ: MPBን እንደ ገንቢ አክል;
 
-* ውስጣዊ: hooks እና filters generator ተጨመረ፤
-* ውስጣዊ: ለdeveloper quality of life Ultimate Multisite stubs ተጨመረ፤
-* ተስተካከለ: አስፈላጊ ባልሆነ ጊዜ ብዙ ምርቶች መፈጠራቸውን መከላከል፤
+ስሪት 2.0.0-beta-5 - በ2022-01-21 ተለቋል
 
-Version 2.0.0-beta.4 - 2021-09-23
+* ውስጣዊ: የhooks እና filters ጀነሬተር ታክሏል;
+* ውስጣዊ: ለገንቢ የሕይወት ጥራት Ultimate Multisite stubs ታክለዋል;
+* ተስተካክሏል: አስፈላጊ ካልሆነ ብዙ ምርቶች እንዳይፈጠሩ መከላከል;
 
-* ስህተት ማስተካከያ: WooCommerce በዋናው ድረ-ገጽ ብቻ ሳይሆን በኔትወርክ (network) ላይ መሆን አለበት።
-* መሻሻል: አድ-ኦኑ እንደ mu-plugin ጥቅም ላይ እንዲውል የሚያስችል filter ተጨመረ።
+ስሪት 2.0.0-beta.4 - 2021-09-23
 
-Version 2.0.0-beta.3 - 2021-05-28
+* ማስተካከያ: WooCommerce ከዋና ጣቢያ ብቻ ይልቅ በnetwork ደረጃ ንቁ መሆን እንዲፈልግ;
+* ማሻሻያ: ተጨማሪው እንደ mu-plugin እንዲጠቀም ለመፍቀድ ማጣሪያ ታክሏል;
 
-* ስህተት ማስተካከያ: የዳሽቦርድ መዳረሻ ቁጥጥር በጣም ጥብቅ ነበር፤
-* መሻሻል: የWooCommerce መረጃ ሰሌዳ (help links) ወደ Ultimate Multisite የላይኛው ምናሌ ተጨመረ።
+ስሪት 2.0.0-beta.3 - 2021-05-28
 
-Version 2.0.0-beta.2 - 2021-05-04
+* ማስተካከያ: የdashboard መዳረሻ ቁጥጥር በጣም ጠንካራ ነበር;
+* ማሻሻያ: የWooCommerce የእገዛ አገናኞች ወደ Ultimate Multisite የላይኛው ምናሌ ታክለዋል;
 
-* መሻሻል: በWCS የደንበኝነት ምዝገባ ትዕዛዝ ሲፈጠር በUltimo ላይ የሚጠብቁ ክፍያዎችን (pending payments) ይፈጥራል።
-* መሻሻል: የबिल መስጫ (billing fields) ክፍሎችን በUltimate Multisite የደንበኛ መረጃ ይሞላል።
-* መሻሻል: ለገበያ ቦታዎች (gateways) የबिल መስጫ ክፍሎችን ይመልሳል።
+ስሪት 2.0.0-beta.2 - 2021-05-04
 
-Version 2.0.0-beta.1 - 2021-05-04
+* ማሻሻያ: በWCS እድሳት ትዕዛዝ መፍጠር ላይ በUltimo ላይ በመጠበቅ ላይ ያሉ ክፍያዎችን ይፈጥራል;
+* ማሻሻያ: የክፍያ መስኮችን በUltimate Multisite ደንበኛ ውሂብ ቀድሞ ይሞላል;
+* ማሻሻያ: ለመግቢያዎች የክፍያ መስኮችን መልሶ ያክላል;
 
-* የመጀመሪያ የቤታ ስሪት
+ስሪት 2.0.0-beta.1 - 2021-05-04
 
--- የድሮ ስሪቶች --
+* የመጀመሪያ beta ልቀት
 
-Version 1.2.6 - 26/03/2020
+-- የቀድሞ ስሪቶች --
 
-* ተስተካከለ: ከየupdated የWooCommerce Subscriptions ስሪቶች ጋር ትንሽ አለመጣጣም።
+ስሪት 1.2.6 - 26/03/2020
 
-Version 1.2.5 - 26/08/2019
+* ተስተካክሏል: ከአዳዲስ የWooCommerce Subscriptions ስሪቶች ጋር ትንሽ አለመተኳኳም;
 
-* ተስተካከለ: በቅድመ ስሪት ላይ የተፈጠረ ስህተት፤
+ስሪት 1.2.5 - 26/08/2019
 
-Version 1.2.4 - 22/08/2019
+* ተስተካክሏል: በቀዳሚው ልቀት ላይ ስህተት;
 
-* ተሻሽሏል: ከኢንትግሬሽን በኋላ ወዲያውኑ ወደ WooCommerce ቼክአውት ስክሪን የሚላክ አማራጭ ተጨመረ፤
+ስሪት 1.2.4 - 22/08/2019
 
-Version 1.2.3 - 26/05/2019
+* ተሻሽሏል: ከውህደቱ በኋላ ወዲያውኑ ወደ WooCommerce checkout ማያ ለማዞር አማራጭ ታክሏል;
 
-* ስህተት ማስተካከያ: ለWooCommerce ክፍያ ኢሜይል በአንዳንድ ሁኔታዎች ጠፍቷል፤
+ስሪት 1.2.3 - 26/05/2019
 
-Version 1.2.2 - 27/02/2019
+* ተስተካክሏል: ለWooCommerce የክፍያ ኢሜይል በአንዳንድ የጫፍ ሁኔታዎች ጠፍቷል;
 
-* ተጨመረ: በWooCommerce Subscription integration ላይ የመሰረታ ክፍያዎችን (setup fees) ድጋፍ።
+ስሪት 1.2.2 - 27/02/2019
 
-Version 1.2.1 - 17/11/2018
+* ታክሏል: በWooCommerce Subscription ውህደት ላይ ለማዋቀሪያ ክፍያዎች ድጋፍ;
 
-* ስህተት ማስተካከያ: ከUltimate Multisite version 1.9.0 ጋር የተፈጠረ አለመጣጣም፤
+ስሪት 1.2.1 - 17/11/2018
 
-Version 1.2.0 - 10/09/2018
+* ተስተካክሏል: ከUltimate Multisite ስሪት 1.9.0 ጋር የተኳኋኝነት ችግሮች;
 
-* ተሻሽሏል: ለአድ-ኦኖች አዲስ የዝመና URL፤
-* ተጨመረ: ለWooCommerce Subscription የቤታ ድጋፍ፤
+ስሪት 1.2.0 - 10/09/2018
 
-Version 1.1.2 - 11/02/2018
+* ተሻሽሏል: ለadd-ons አዲስ የዝማኔዎች URL;
+* ታክሏል: ለWooCommerce Subscription የbeta ድጋፍ;
 
-* ስህተት ማስተካከያ: ወደ Pay የሚደረገው ሊንክ (Link) የWooCommerce endpoints ለውጥን ምላሽ ለመስጠት በሰነድ (dynamically) ይፈጠራል፤
-* ተሻሽሏል: ክፍያ_ተጠናቀቀ (payment_completed) ሲጠራ ትዕዛዝዎቻችን (orders) የተጠናቀቀ ሁኔታ እንዲይዙ አጥብቀን አደረግን።
+ስሪት 1.1.2 - 11/02/2018
+
+* ተስተካክሏል: ለWooCommerce endpoints ለውጦች ምላሽ ለመስጠት ወደ ክፍያ አገናኝ በተለዋዋጭ መፍጠር;
+* ተሻሽሏል: አሁን `payment_completed` ሲጠራ የእድሳት hooksቻችን መሮጥ በሚገባቸው ጊዜ እንዲሮጡ ለትዕዛዞቻችን የተጠናቀቀ ሁኔታን እናስገድዳለን;
 
 Version 1.1.1 - 24/01/2018
 
-* ስህተት ማስተካከያ: አሁን በዋናው ድረ-ገጽ ላይ WooCommerce ብቻ ከተነቃቃ መፈተሽም አቅሟል፤
-* ስህተት ማስተካከያ: ታክስን (taxes) ለማካተት የትዕዛዝ መፍጠርን የሚፈቅዱ ተጨማሪ ጭነቶች (over-loadings) ተካተዋል።
+* ተስተካክሏል: አሁን WooCommerce በዋናው ጣቢያ ብቻ እንደተነቃ ለማየትም ይፈትሻል፤
+* ተስተካክሏል: የትዕዛዝ መፍጠር ግብሮችን እንዲያካትት የሚፈቅዱ ተጨማሪ መጫኖች ተካተዋል፤
 
 Version 1.1.0 - 04/11/2017
 
-* ስህተት ማስተካከያ: የኢንትግሬሽን አዝራር መለያ (label) አሁን ቅንብረቶችን ለማንጸባረቅ በእርግጥ ይለወጣል። Ultimate Multisite 1.5.0 ያስፈልጋል።
-* ስህተት ማስተካከያ: WooCommerce በኔትወርክ ላይ ባይሆንም እና በዋናው ድረ-ገጽ ላይ ብቻ ከተነቃቃ እንኳን የWooCommerce Integration አሁን ይሰራል፤
+* ተስተካክሏል: አሁን የውህደት አዝራሩ መለያ ቅንብሮቹን ለማንጸባረቅ በእውነት ይቀየራል። Ultimate Multisite 1.5.0 ያስፈልጋል፤
+* ተስተካክሏል: WooCommerce Integration አሁን WooCommerce በኔትወርክ ደረጃ ካልነቃ እና በዋናው ጣቢያ ብቻ ከነቃም ይሰራል፤
 
-1.0.0 - የመጀመሪያ ስሪት
+1.0.0 - የመጀመሪያ ልቀት

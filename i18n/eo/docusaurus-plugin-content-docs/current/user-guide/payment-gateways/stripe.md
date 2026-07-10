@@ -3,19 +3,19 @@ title: Konfigurado de Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# La Konfiguracio de la Pasarela Stripe (v2)
+# La Konfiguracio de la Pasarela Stripe (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**NOTO IMPORTANTE: Esta artikolo se refere a Ultimate Multisite versio 2.x.**_
 
 Pudi aktivigi hasta kvin metodo de pago en la página de configuración de pagos: Stripe, Stripe Checkout, PayPal kaj Manua. En ĉi tiu artikolo, ni viduion kiel integriĝi kun **Stripe**.
 
-## Aktivado de Stripe
+## Aktivado de Stripe {#enabling-stripe}
 
 Por aktivi Stripe kiel disponabla metodo de pago sur via retejo, dirigi al **Ultimate Multisite > Settings > Payments** kaj marku la interŝaltilon apud **Stripe** aŭ **Stripe Checkout** en la seksa "Active Payment Gateways".
 
 ![Aktivado de Stripe en aktifaj metodoj de pago](/img/config/settings-payment-gateways.png)
 
-### Stripe kontra Stripe Checkout:
+### Stripe kontra Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Ĉi tiu metodo montros riĉan spacon por inkluzi la numeron de kredito karto dum la checkout.
 
@@ -45,7 +45,7 @@ Kopi la valoron el la kolono **Publishable key** kaj **Secret key**, el la kolon
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Konfigurado de Stripe Webhook
+## Konfigurado de Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe sendas webhook eventojn, kiuj informas Ultimate Multisite ĉiam, kiam okazas evento sur **via stripe konto**.
 

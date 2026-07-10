@@ -1,0 +1,21 @@
+---
+id: wp_ultimo_skip_network_active_check
+title: Filter - wp_ultimo_skip_network_active_check
+sidebar_label: wp_ultimo_skip_network_active_check
+_i18n_hash: 9061f073ee77c38afc3cecfabe5edb50
+---
+# Filter: wp_ultimo_skip_network_active_check {#filter-wpultimoskipnetworkactivecheck}
+
+Erlaabt Entwéckler, dës Iwwerpréiwung ze short-circuitéieren.
+
+Dat ass nëtzlech, wann een composer-baséiert an aner personaliséiert Setups benotzt, wéi zum Beispill Bedrock, wou d'Benotze vu plugins als mu-plugins d'Norm ass.
+
+### Zanter {#since}
+
+- 2.0.0
+### Quell {#source}
+
+Definéiert an [`inc/class-requirements.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-gocardless/blob/main/inc/class-requirements.php#L229) op Linn 229
+
+
+## Gëtt zeréck {#returns}

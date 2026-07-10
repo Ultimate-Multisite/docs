@@ -16,7 +16,7 @@ technique.
 
 --------------------------------------------------------------------
 
-#### 1.  Sliding window
+#### 1.  Sliding window {#admin-page-creator-changelog}
 
 ```
 left  – start of the current window
@@ -33,7 +33,7 @@ During the whole process we keep the maximum length that we have seen.
 
 --------------------------------------------------------------------
 
-#### 2.  Data structures
+#### 2.  Data structures {#version-190---released-on-2026-01-18}
 
 * `counts : [Character : Int]` – how many times each character occurs
   inside the current window.
@@ -45,7 +45,7 @@ so the dictionary stays tiny – `O(1)` memory.
 
 --------------------------------------------------------------------
 
-#### 3.  Algorithm
+#### 3.  Algorithm {#version-187---04102023}
 
 ```
 if k == 0                     // not needed for the given constraints
@@ -74,14 +74,14 @@ otherwise we just decrement the counter.
 
 --------------------------------------------------------------------
 
-#### 4.  Correctness Proof  
+#### 4.  Correctness Proof {#version-186---09082023}
 
 We prove that the algorithm outputs the length of the longest substring
 containing at most `k` distinct characters.
 
 ---
 
-##### Lemma 1  
+##### Lemma 1 {#version-185---09122020}
 At any time the window `[left, right]` contains at most `k` distinct
 characters.
 
@@ -96,7 +96,7 @@ No other operation can increase the number of distinct characters.
 
 
 
-##### Lemma 2  
+##### Lemma 2 {#version-184---11112020}
 For every position `right` the algorithm considers the longest
 substring ending at `right` that satisfies the condition.
 
@@ -112,7 +112,7 @@ and still satisfy the condition, contradicting the loop termination.
 
 
 
-##### Lemma 3  
+##### Lemma 3 {#version-183---01102020}
 `maxLen` is the length of the longest valid substring of the whole
 string.
 
@@ -125,7 +125,7 @@ valid substrings of the string. ∎
 
 
 
-##### Theorem  
+##### Theorem {#version-182---21092020}
 The algorithm outputs the correct answer.
 
 **Proof.**
@@ -138,7 +138,7 @@ which is exactly the required answer. ∎
 
 --------------------------------------------------------------------
 
-#### 5.  Complexity Analysis
+#### 5.  Complexity Analysis {#version-181---05082020}
 
 *Time* – Each character is inserted into the window once and removed
 at most once.  
@@ -150,7 +150,7 @@ characters in the current window, bounded by the alphabet size.
 
 --------------------------------------------------------------------
 
-#### 6.  Reference Implementation (Swift 5.5)
+#### 6.  Reference Implementation (Swift 5.5) {#version-180---27042020}
 
 ```swift
 import Foundation

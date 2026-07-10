@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 Ultimate Multisite: Multi-Currency umožňuje vaší síti přijímat platby v různých měnách. Automaticky konvertuje ceny pomocí živých nebo ručně zadaných výměnných kurzů, umožňuje vám stanovit přesné ceny pro každý produkt v jakékoli měně a detekuje preferovanou měnu každého návštěvníka pomocí geolokace — vše spravujete z jednoho admin dashboardu.
 
-## Klíčové funkce
+## Klíčové funkce {#key-features}
 
 - **Automatická konverze výměnných kurzů** — ceny jsou konvertovány z vaší základní měny pomocí kurzů získaných od vybraného poskytovatele
 - **Přepisy cen na úrovni produktu** — nastavte přesné ceny specifické pro měnu na jakémkoli produktu, aby se obejdě automatická konverze
@@ -20,22 +20,22 @@ Ultimate Multisite: Multi-Currency umožňuje vaší síti přijímat platby v r
 - **Detekce měny na základě geolokace** — automaticky předvýbere měnu, která odpovídá zemi návštěvníka
 - **Admin dashboard** — spravujte aktivní měny, výměnné kurzy a nastavení poskytovatelů na jednom místě
 
-## Požadavky
+## Požadavky {#requirements}
 
 - Ultimate Multisite 2.0.0 nebo vyšší
 - Instalace WordPress Multisite
 - PHP 7.4 nebo vyšší
 
-## Instalace
+## Instalace {#installation}
 
 1. Nahrajte soubory pluginu do adresáře `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Aktivujte plugin na obrazovce **Plugins** v WordPressu (Network Activate)
 3. Přejděte na **Ultimate Multisite → Multi-Currency**, abyste otevřeli admin dashboard
 4. Přidejte měny, které chcete přijímat, a nakonfigurujte svého poskytovatele výměnných kurzů
 
-## Konfigurace
+## Konfigurace {#configuration}
 
-### Admin Dashboard
+### Admin Dashboard {#admin-dashboard}
 
 Admin dashboard Multi-Currency (**Ultimate Multisite → Multi-Currency**) je centrální místo pro:
 
@@ -44,7 +44,7 @@ Admin dashboard Multi-Currency (**Ultimate Multisite → Multi-Currency**) je ce
 - Prohlížení aktuálních kurzů pro všechny aktivní měny
 - Nastavení ručních kurzů, když automatické poskytovatele nejsou vhodné
 
-### Poskytovatelé výměnných kurzů
+### Poskytovatelé výměnných kurzů {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ Admin dashboard Multi-Currency (**Ultimate Multisite → Multi-Currency**) je ce
 
 Vyberte svého poskytovatele pod **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. Kurzy lze ručně obnovit kdykoli nebo naplánovat automatické aktualizace.
 
-### Přepisy cen na úrovni produktu
+### Přepisy cen na úrovni produktu {#per-product-pricing-overrides}
 
 Pokud automatická konverze není dostatečně přesná, můžete stanovit přesnou cenu pro konkrétní měnu na jakémkoli produktu:
 
@@ -66,7 +66,7 @@ Pokud automatická konverze není dostatečně přesná, můžete stanovit přes
 
 Produkty bez přepisu používají konvertovanou cenu z vaší základní měny.
 
-### Pole výběru měny při registraci
+### Pole výběru měny při registraci {#currency-selector-signup-field}
 
 Pole výběru měny lze přidat do vašeho procesu registrace/pokladny, aby zákazníci vybrali svou preferovanou měnu při registraci:
 
@@ -76,7 +76,7 @@ Pole výběru měny lze přidat do vašeho procesu registrace/pokladny, aby zák
 
 Vybraná měna je uložena s předplatným a použita pro veškeré následující fakturace.
 
-### Detekce měny na základě geolokace
+### Detekce měny na základě geolokace {#geolocation-based-currency-detection}
 
 Když je aktivována detekce geolokace, addon mapuje zemi návštěvníka na měnu a předvýbere ji v poli výběru měny. Pro aktivaci:
 
@@ -86,27 +86,27 @@ Když je aktivována detekce geolokace, addon mapuje zemi návštěvníka na mě
 
 Pokud pro zemi návštěvníka neexistuje žádná mapa, jako fallback se použije základní měna sítě.
 
-## Často kptalé otázky
+## Často kptalé otázky {#frequently-asked-questions}
 
-### Co se stane, když není dostupný poskytovatel výměnných kurzů?
+### Co se stane, když není dostupný poskytovatel výměnných kurzů? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 Addon se vrátí k posledně úspěšně získaným kurzům. Pokud kurzy nikdy nebyly získány, vrátí se k ručním kurzům, které jste nakonfigurovali. Doporučuje se nakonfigurovat ruční kurzy jako bezpečnostní síť.
 
-### Mohu použít různé poskytovatele pro různé měny?
+### Mohu použít různé poskytovatele pro různé měny? {#can-i-use-different-providers-for-different-currencies}
 
 Ne — pro všechny měny je aktivní pouze jeden poskytovatel. Použijte **Manual**, pokud potřebujete plnou kontrolu nad jednotlivými kurzy.
 
-### Vyžaduje geolokace samostatný plugin?
+### Vyžaduje geolokace samostatný plugin? {#does-geolocation-require-a-separate-plugin}
 
 Žádný externí geolokační plugin není vyžadován. Addon používá vestavěnou detekci IP-adresy na zemi WordPressu. Pro vyšší přesnost lze věnovanou geolokační službu integrovat pomocí poskytnutých hooků.
 
-### Jsou přepisy na úrovni produktu aplikovány před nebo po dani?
+### Jsou přepisy na úrovni produktu aplikovány před nebo po dani? {#are-per-product-overrides-applied-before-or-after-tax}
 
 Přepisy na úrovni produktu nastavují cenu před daní v cílové měně. Daň je vypočítána na základě přepisu ceny pomocí vaší stávající konfigurace daní.
 
-## Changelog
+## Changelog {#changelog}
 
-### Version 1.0.0 — Released on 2026-04-02
+### Version 1.0.0 — Released on 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - New: Multi-currency support with automatic exchange rate conversion
 - New: Per-product pricing overrides for exact currency-specific prices

@@ -3,28 +3,28 @@ title: Integracija Hestia Control Panel
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Integracija s Hestia Control Panelom
+# Integracija s Hestia Control Panelom {#hestia-control-panel-integration}
 
 Ta vodič pojasnjuje, kako konfigurirati integracijo Ultimate Multisite Hestia tako, da se domena, ki so na vaših omrežjih mapirane, samodejno dodajo (in odstranjujajo) kot Web Domain Aliase v Hestio.
 
 - Referenca za Hestia CLI: / v-add-web-domain-alias / v-delete-web-domain-alias
 - Official REST API dokumentacija: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Kaj to naredi
+## Kaj to naredi {#what-it-does}
 - Ko je domena mapirana v Ultimate Multisite, integracija poziva Hestia API in izvršča:
   - `v-add-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Ko se odstrani mapiranje domene, izvršča:
   - `v-delete-web-domain-alias <USER> <DOMAIN> <ALIAS> [RESTART]`
 - Opcionalno dodaja/odstranja alias `www.` v skladu z vašim nastavitvami "Auto-create www subdomain" v nastavitvah Mapiranja domen.
 
-## Predhodni podatki
+## Predhodni podatki {#prerequisites}
 - Obstajajoča Hestia Web Domain, ki že usmerja na vaš WordPress inštaliran domene. Integracija bo aliase pripisala tej osnovni domeni.
 - Omogočen dostop do Hestia API. Lahko se autentifikirate z iskanjem (password) ali s API hash/tokenom.
 
 Za omogočanje dostopa do API in podrobnosti za autentifikacijo, glede na dokumentacijo Hestie:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Konfiguracija (Wizard → Integrations → Hestia)
+## Konfiguracija (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Pridate naslednje vrednosti:
 
 - `WU_HESTIA_API_URL` (obvezno)
@@ -42,16 +42,16 @@ Pridate naslednje vrednosti:
 
 Iščete lahko, da te wizard vstavil te konstante v `wp-config.php`, ali jih definirate ručno.
 
-## Preverjanje postavitve
+## Preverjanje postavitve {#verifying-setup}
 - Na koraku wizardja "Testiranje" plugin povzroči klic `v-list-web-domains <WU_HESTIA_ACCOUNT> json` preko API-ja. Uspešen odgovor potrjuje povezavo in avtorizacijo.
 - Po mapiranju domena preverite v Hestii: Web > osnovni domen > Aliasi. Treba videti novo dodan aliase.
 
-## Opombe in nasvete
+## Opombe in nasvete {#notes--tips}
 - Preverite, da obstaja `WU_HESTIA_WEB_DOMAIN` in ga lastnik je `WU_HESTIA_ACCOUNT`.
 - Če je SSL nujno, upravljajte sertifikate v Hestii. Ta integracija trenutno obravnava le aliase.
 - Plugin lahko na podlagi nastavitve Mapiranja Domen (Domain Mapping) "www subdomain" tudi dodaja/odstranja `www.<domain>`.
 
-## Primer API klica (cURL)
+## Primer API klica (cURL) {#example-api-call-curl}
 Spodaj je konceptualni primer (prilagodite ga vašemu okolju). Za natančne parametre se pozivajte na uradno dokumentacijo.
 
 POST https://your-hestia-host:8083/api/
@@ -68,11 +68,11 @@ cmd=v-add-web-domain-alias
 
 Za brisanje uporabite `cmd=v-delete-web-domain-alias` in iste parametre.
 
-## Reševanje težav
+## Reševanje težav {#troubleshooting}
 - HTTP napaka iz API: preverite, da je `WU_HESTIA_API_URL` dostopna in vključuje `/api`.
 - Napake z avtorizacijo (Auth errors): potrdite, da so pravilno postavljeni `WU_HESTIA_API_USER` in bodisi `WU_HESTIA_API_PASSWORD` ali `WU_HESTIA_API_HASH`.
 - "Missing account/base domain" v logih: preverite, da sta `WU_HESTIA_ACCOUNT` in `WU_HESTIA_WEB_DOMAIN` postavljena in validna v Hestii.
 
-## Reference
+## Reference {#references}
 - Hestia REST API: https://hestiacp.com/docs/server-administration/rest-api.html
 - Referenca za Hestia CLI (Aliase): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

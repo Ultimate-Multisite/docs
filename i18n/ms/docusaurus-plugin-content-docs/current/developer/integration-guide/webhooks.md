@@ -3,11 +3,11 @@ title: Pengendalian Webhook
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Penanganan Webhook
+# Penanganan Webhook {#webhook-handling}
 
 Cipta endpoint webhook tersuai untuk menerima acara (events) daripada perkhidmatan luaran dan menyegerakkan data dengan Ultimate Multisite.
 
-## Endpoint Webhook Tersuai
+## Endpoint Webhook Tersuai {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Pertimbangan Keselamatan
+## Pertimbangan Keselamatan {#security-considerations}
 
 - Sentiasa sahkan tandatangan webhook menggunakan HMAC atau rahsia kongsi (shared secret)
 - Gunakan `permission_callback` pada laluan REST anda — jangan pernah tetapkan ia kepada `__return_true` dalam persekitaran pengeluaran (production)

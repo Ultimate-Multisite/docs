@@ -1,65 +1,79 @@
 ---
-title: Multi-tenancy
+title: Multi-Tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
-Sprider ut sub-sites över olika servrar och databaser för bättre prestanda och säkerhet.
+Distribuera underwebbplatser över servrar och databaser för prestanda och säkerhet
 
-## Krav
+## Höjdpunkter i Version 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 lägger till den suveräna klientgrunden för isoleringsarbetsflöden i produktion:
+
+- Tillståndslös automatisk inloggning för klienter med kortlivade, uppspelningsskyddade SSO-besök.
+- Databas- och filsystemsisolering per underwebbplats för suveräna klienter.
+- Hostinger multi-tenancy-kapacitet för värdmedveten klientprovisionering.
+- Verifieringsgrindar för suverän migrering för kontroller av äldre data och asynkron push-bearbetning.
+- Konfigurerbar databasvärdsbindning på samma maskin för Bedrock, FrankenPHP och localhost-installationer.
+- Förbättringar av klientbootstrap, databasskrivare, schemabootstrap och användarprovisionering.
+- Säkrare suverän nedmontering som rensar klientuppgifter.
+
+Se användarguiderna för [arbetsflöde för suverän migrering](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-isolering](/user-guide/configuration/multi-tenancy-isolation) och [åtgärder för suveräna klienter](/user-guide/administration/sovereign-tenant-operations).
+
+## Krav {#requirements}
 
 - WordPress 5.3 eller högre
 - PHP 7.4 eller högre
-- Multisite Ultimate plugin (aktiverat)
+- Multisite Ultimate-tillägg (aktivt)
 
-## Installation
+## Installation {#installation}
 
-1. Ladda upp addon-filerna till din `/wp-content/plugins/` katalog.
-2. Aktivera pluginet via menyn 'Plugins' i WordPress.
-3. Konfigurera addon-inställningarna i nätverksadministratören.
+1. Ladda upp tilläggsfilerna till din `/wp-content/plugins/`-katalog
+2. Aktivera tillägget via menyn 'Tillägg' i WordPress
+3. Konfigurera tilläggsinställningarna i nätverksadministrationen
 
-## Utveckling
+## Utveckling {#development}
 
-### Uppställning
+### Konfiguration {#setup}
 
 ```bash
-# Installera beroenden
+# Install dependencies
 composer install
 npm install
 
-# Kör tester
+# Run tests
 npm run test
 
-# Kör kontroller av kodstandarder
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Fixa problem med kodstil
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Bygg för produktion
+# Build for production
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP-klasser och inkluderade filer
-│   ├── class-multisite-ultimate-updater.php  # Hanterare för uppdateringar
+├── inc/                          # PHP-klasser och inkluderingsfiler
+│   ├── class-multisite-ultimate-updater.php  # Uppdateringshanterare
 │   └── class-multi_tenancy-main.php             # Huvudfunktionalitet
-├── tests/                        # Unit-tester
-│   ├── bootstrap.php            # Test-bootstrap
-│   ├── class-*-base.php         # Basklass för tester
+├── tests/                        # Enhetstester
+│   ├── bootstrap.php            # Testbootstrap
+│   ├── class-*-base.php         # Bastestklass
 │   └── class-*-test.php         # Testfall
 ├── views/                       # Mallfiler
-├── assets/                      # Statiska resurser
-│   ├── css/                     # Stilblad
+├── assets/                      # Statiska tillgångar
+│   ├── css/                     # Stilmallar
 │   ├── js/                      # JavaScript-filer
 │   └── images/                  # Bilder
 ├── lang/                        # Språkfiler
@@ -67,58 +81,70 @@ ultimate-multisite-addon-template/
 ├── package.json                 # Node.js-beroenden
 ├── phpunit.xml.dist             # PHPUnit-konfiguration
 ├── .phpcs.xml.dist              # Konfiguration för kodstandarder
-└── rector.php                   # Regler för modernisering av kod
+└── rector.php                   # Regler för kodmodernisering
 ```
 
-### Testning
+### Testning {#testing}
 
-Addonet inkluderar ett omfattande testramverk:
+Tillägget inkluderar ett omfattande testramverk:
 
-- **Unit Tests**: Tester baserade på PHPUnit med WordPress test suite.
-- **Base Test Class**: Tillhandahåller hjälpfunktioner för vanliga testscenarier.
-- **Test Coverage**: Konfigurerat för att spåra kodtäckning.
-- **Multisite Testing**: Tester körs i en multisite-miljö.
+- **Enhetstester**: PHPUnit-baserade tester med WordPress-testsvit
+- **Bastestklass**: Tillhandahåller hjälpmetoder för vanliga testscenarier
+- **Testtäckning**: Konfigurerad för att spåra kodtäckning
+- **Multisite-testning**: Tester körs i multisite-miljö
 
-### Kodstandarder
+### Kodstandarder {#code-standards}
 
-- **WordPress Coding Standards**: Upprätthålls via PHPCS.
-- **PHP 7.4+ Compatibility**: Stöder moderna PHP-funktioner.
-- **Static Analysis**: PHPStan-integration för typkontroll.
-- **Code Modernization**: Rector-regler för PHP-uppgraderingar.
+- **WordPress Coding Standards**: Upprätthålls via PHPCS
+- **PHP 7.4+-kompatibilitet**: Moderna PHP-funktioner stöds
+- **Statisk analys**: PHPStan-integration för typkontroll
+- **Kodmodernisering**: Rector-regler för PHP-uppgraderingar
 
-### Byggsystem
+### Byggsystem {#build-system}
 
-- **Asset Processing**: Minifiering av CSS/JS-filer.
-- **Translation**: Generering av POT-filer.
-- **Packaging**: Skapande av arkiv för distribution.
-- **Development Mode**: Ominifierade resurser för felsökning.
+- **Bearbetning av tillgångar**: Minifiering för CSS/JS-filer
+- **Översättning**: Generering av POT-fil
+- **Paketering**: Skapande av arkiv för distribution
+- **Utvecklingsläge**: Ominifierade tillgångar för felsökning
 
-## Konfiguration
+## Konfiguration {#configuration}
 
-Addonet stöder olika konfigurationsalternativ som kan nås via nätverksadministratörsgränssnittet.
+Tillägget stöder olika konfigurationsalternativ som är åtkomliga via nätverksadministrationsgränssnittet.
 
-## Hooks och Filters
+### Konfiguration av suverän klient {#sovereign-tenant-configuration}
 
-### Actions
+För suveräna klienter, konfigurera klientdatabasen, filsystemets rot, databasvärdsbindning och värdkapacitet innan trafik dirigeras till klienten. Kör migreringsverifiering efter varje ändring som påverkar databasuppgifter, värdbindning, dirigering eller användarprovisionering.
 
-- `ultimate-multisite-addon-template_init` - Körs efter addon-initialisering.
-- `ultimate-multisite-addon-template_loaded` - Körs efter att alla addon-filer har laddats.
+Använd `localhost` endast när klientens körningsmiljö och databasbehörigheter förväntar sig lokal socket eller åtkomst på samma maskin. Använd `127.0.0.1` eller ett tjänstvärdnamn när det är behörighetsvärden som konfigurerats av din leverantör.
 
-### Filters
+### Hostinger-kapacitet {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Modifiera addon-inställningar.
-- `ultimate-multisite-addon-template_enabled` - Överskriva addonets aktiverings-/avaktiveringsstatus.
+Hostinger multi-tenancy-kapaciteten fungerar med den delade Hostinger-integrationstokenen. Bekräfta att domänen finns i hPanel, att DNS pekar till Hostinger-kontot och att klientens databasinställningar matchar hPanel före verifiering.
 
-## Licens
+## Hooks och filter {#hooks-and-filters}
 
-Detta addon är licensierat under GPL v3 eller senare.
+### Actions {#actions}
 
-## Support
+- `ultimate-multisite-addon-template_init` - Utlöses efter initiering av tillägget
+- `ultimate-multisite-addon-template_loaded` - Utlöses efter att alla tilläggsfiler har laddats
+
+### Filter {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Ändra tilläggsinställningar
+- `ultimate-multisite-addon-template_enabled` - Åsidosätt aktivera/inaktivera-status för tillägget
+
+## Licens {#license}
+
+Detta tillägg är licensierat under GPL v3 eller senare.
+
+## Support {#support}
 
 För support och dokumentation, besök [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Ändringslogg {#changelog}
 
-- Version 1.0.1 (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionsökning.
+- Version 1.2.0 (2026-06-03): lägg till tillståndslös automatisk inloggning för klienter, Hostinger multi-tenancy-kapacitet, databas- och filsystemsisolering per underwebbplats, verifieringsgrindar för suverän migrering, förbättringar av klientbootstrap/databasskrivare, konfigurerbar MySQL-värdsbindning och säkrare suverän nedmontering.
+
+- Version 1.0.1 (2025-09-28): byt namn på prefixet till ultimate-multisite; uppdatera textdomän; versionshöjning.
 
 
-- Version (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionsökning.
+- Version  (2025-09-28): byt namn på prefixet till ultimate-multisite; uppdatera textdomän; versionshöjning.

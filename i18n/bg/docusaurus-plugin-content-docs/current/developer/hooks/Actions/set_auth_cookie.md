@@ -4,11 +4,11 @@ title: Действие - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Изпълнява се непосредствено преди да бъде зададен cookie за автентикация.
 
-## Параметри
+## Параметри {#parameters}
 
 | Име | Тип | Описание |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | Схема за автентикация. Стойностите включват 'auth' или 'secure_auth'. |
 | $token | `string` | Сесионен токен на потребителя, който трябва да се използва за този cookie. |
 
-### От
+### От {#since}
 
 - 2.5.0
 - 4.9.0: Параметърът <code>$token</code> беше добавен.
-### Източник
+### Източник {#source}
 
 Дефиниран в [inc/sso/auth-functions.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) на линия 124.

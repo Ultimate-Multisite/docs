@@ -4,11 +4,11 @@ title: 操作 - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# 动作: set_logged_in_cookie
+# 动作: set_logged_in_cookie {#action-setloggedincookie}
 
 在设置已登录身份验证 cookie 之前立即触发。
 
-## 参数
+## 参数 {#parameters}
 
 | 名称 | 类型 | 描述 |
 |------|------|------|
@@ -19,11 +19,11 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | 身份验证方案。默认值为 'logged_in'。 |
 | $token | `string` | 用于此 cookie 的用户会话令牌。 |
 
-### 版本
+### 版本 {#since}
 
 - 2.6.0
 - 4.9.0: 添加了 <code>$token</code> 参数。
 
-### 源码
+### 源码 {#source}
 
 在 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) 第 141 行定义。

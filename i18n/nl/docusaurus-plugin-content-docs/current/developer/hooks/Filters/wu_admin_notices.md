@@ -4,27 +4,26 @@ title: Filter - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
-Sta ontwikkelaars toe om beheerdersmeldingen te filteren die door Ultimate Multisite zijn toegevoegd.
+Sta ontwikkelaars toe admin notices te filteren die door Ultimate Multisite zijn toegevoegd.
 
-## Parameters
+## Parameters {#parameters}
 
-| Name | Type | Description |
+| Naam | Type | Beschrijving |
 |------|------|-------------|
-| $notices | `array` | Lijst met meldingen voor dat specifieke paneel. |
-| $all_notices | `array` | Lijst met toegevoegde meldingen, gesegregeerd per paneel. |
-| $panel | `string` | Paneel om de meldingen op te halen. |
-| $filter | `string` | Of de afwijzbare meldingen zijn gefilterd. |
-| $dismissed_messages | `array` | Lijst met afgewisselde meldingssleutels. |
+| $notices | `array` | List of notices for that particular panel. |
+| $all_notices | `array` | List of notices added, segregated by panel. |
+| $panel | `string` | Panel to retrieve the notices. |
+| $filter | `string` | If the dismissable notices have been filtered out. |
+| $dismissed_messages | `array` | List of dismissed notice keys. |
 
-### Since
+### Sinds {#since}
 
 - 2.0.0
-
-### Source
+### Bron {#source}
 
 Gedefinieerd in [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) op regel 121
 
 
-## Returns
+## Retourneert {#returns}

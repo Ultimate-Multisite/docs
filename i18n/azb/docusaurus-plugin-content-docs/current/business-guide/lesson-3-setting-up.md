@@ -3,32 +3,32 @@ title: 'Lesson 3: Your Network Setup'
 sidebar_position: 4
 _i18n_hash: 4bffe2f3ba68d1a58bfc32d6b0a3c5c7
 ---
-# Ders 3: Ağınızı Kurmak
+# Ders 3: Ağınızı Kurmak {#lesson-3-setting-up-your-network}
 
 İnşa etme zamanı. Bu derste Ultimate Multisite'ı kuracak ve FitSite ağının temelini oluşturacağız. Buradaki her karar, fitness nişine uygun düşünülerek veriliyor.
 
-## Nereden Kaldık
+## Nereden Kaldık {#where-we-left-off}
 
 Nişimizi fitness stüdyoları olarak belirledik ve bu fırsatı doğruladık. Şimdi bu fikri çalışan bir platforma dönüştürüyoruz.
 
-## Hosting Seçimi
+## Hosting Seçimi {#choosing-your-hosting}
 
 Hosting seçimin, tek bir web sitesi için olmasından çok, niş bir platform için önemlidir. Tek bir site barındırmıyorsunuz; onlarca veya yüzlerce siteye büyüyecek bir ağ barındırıyorsunuz.
 
-### Nelere Bakmalısınız
+### Nelere Bakmalısınız {#what-to-look-for}
 
 - **WordPress Multisite desteği**: Tüm hosting sağlayıcıları multisite'ı iyi yönetemez.
 - **Wildcard SSL**: Alt alan adına dayalı ağlar için çok önemlidir.
 - **Ölçeklenebilir kaynaklar**: Taşınmadan büyüyecek alanınız olmalı.
 - **Ultimate Multisite entegrasyonu**: Otomatik alan eşleştirme ve SSL, operasyonel çabayı önemli ölçüde azaltır.
 
-### Önerilen Yaklaşım
+### Önerilen Yaklaşım {#recommended-approach}
 
 [Compatible Providers](/user-guide/host-integrations/closte) listesindeki bir sağlayıcı seçin. Bunlar Ultimate Multisite ile test edilmiş ve alan eşleştirme ile SSL otomasyonu için ihtiyacınız olan entegrasyonları sağlar.
 
 FitSite için, bir alt alan adı (subdomain) yapılandırması kullanacağız. Bu, müşteri sitelerinin başlangıçta isteğe bağlı olarak kendi alan adlarını eşleştirmeden önce `stüdyoadı.fitsite.com` olarak görünmesi anlamına gelir.
 
-## WordPress Multisite Kurulumu
+## WordPress Multisite Kurulumu {#installing-wordpress-multisite}
 
 Eğer zaten bir WordPress Multisite kurulumunuz yoksa:
 
@@ -40,7 +40,7 @@ Eğer zaten bir WordPress Multisite kurulumunuz yoksa:
 Subdomain'ler, her müşteri sitesine bir yol (`fitsite.com/stüdyo`) yerine kendine özgü bir adres (`stüdyo.fitsite.com`) verir. Bu, müşterileriniz için daha profesyoneldir ve permalink çakışmalarını önler. Detaylı bir karşılaştırma için [Ultimate Multisite 101](/user-guide/getting-started/ultimate-multisite-101)'e bakın.
 :::
 
-## Ultimate Multisite Kurulumu
+## Ultimate Multisite Kurulumu {#installing-ultimate-multisite}
 
 Aşağıdaki adımları izleyerek [Installing Ultimate Multisite](/user-guide/getting-started/installing-ultimate-multisite) kılavuzunu takip edin:
 
@@ -53,11 +53,11 @@ Kurulum sihirbazı sırasında, FitSite nişini aklınızda tutun:
 - **Company name (Şirket adı)**: "FitSite" (veya seçtiğiniz marka adı).
 - **Company logo (Şirket logosu)**: Marka logonuzu yükleyin -- bu, faturalarda ve e-postalarda görünür.
 
-## Fitness Nişine Göre Yapılandırma
+## Fitness Nişine Göre Yapılandırma {#configuring-for-the-fitness-niche}
 
 Ultimate Multisite kurulduktan sonra, bu nişe özel yapılandırma seçimlerini yapın:
 
-### Genel Ayarlar
+### Genel Ayarlar {#general-settings}
 
 **Ultimate Multisite > Settings** bölümüne gidin ve şunları yapılandırın:
 
@@ -65,7 +65,7 @@ Ultimate Multisite kurulduktan sonra, bu nişe özel yapılandırma seçimlerini
 - **Default role (Varsayılan rol)**: Administrator -- fitness stüdyosu sahiplerinin site içerikleri üzerinde tam kontrole ihtiyacı var.
 - **Registration (Kayıt)**: Stüdyo sahiplerinin kendilerinin kaydolabilmesi için kullanıcı kaydını etkinleştirin.
 
-### E-posta Yapılandırması
+### E-posta Yapılandırması {#email-configuration}
 
 Sistem e-postalarınız nişinizin dilini konuşmalı. **Ultimate Multisite > Settings > Emails** bölümüne gidin ve şunları özelleştirin:
 
@@ -75,7 +75,7 @@ Sistem e-postalarınız nişinizin dilini konuşmalı. **Ultimate Multisite > Se
 
 Bunları 8. Derste (Müşteri Kaydı) daha da geliştireceğiz, ancak tonu şimdi ayarlamak, erken test kayıtları bile nişe özel hissettirir.
 
-### Alan Adı Yapılandırması
+### Alan Adı Yapılandırması {#domain-configuration}
 
 Uyumlu bir hosting sağlayıcısı kullanıyorsanız, alan eşleştirmeyi (domain mapping) şimdi yapılandırın:
 
@@ -85,7 +85,7 @@ Uyumlu bir hosting sağlayıcısı kullanıyorsanız, alan eşleştirmeyi (domai
 
 Bu, bir sonraki derste şablonlar ve test siteleri oluşturmaya başladığımızda, her şeyin uçtan uca çalıştığından emin olur.
 
-## FitSite Ağı Şu Ana Kadar
+## FitSite Ağı Şu Ana Kadar {#the-fitsite-network-so-far}
 
 Bu dersin sonunda sahip olduklarınız şunlardır:
 
@@ -99,7 +99,7 @@ FitSite Ağı
 └── Site şablonlarına hazır (bir sonraki ders)
 ```
 
-## Bu Derste Neler Yaptık
+## Bu Derste Neler Yaptık {#what-we-built-this-lesson}
 
 - Subdomain modunda çalışan bir WordPress Multisite kurulumu
 - FitSite markasıyla kurulmuş ve yapılandırılmış Ultimate Multisite

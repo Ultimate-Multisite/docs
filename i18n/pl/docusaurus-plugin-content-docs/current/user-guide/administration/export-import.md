@@ -3,17 +3,17 @@ title: Eksport i Import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Eksport i Import
+# Eksport i Import {#export--import}
 
 Ultimate Multisite 2.9.0 dodaje narzędzie **Eksportu i Importu** dla pojedynczej witryny w sekcji **Narzędzia > Eksport i Import**. Użyj go, gdy chcesz spakować jedną witrynę WordPress w plik ZIP, przywrócić ten plik ZIP lub przenieść witrynę między kompatybilnymi instalacjami Ultimate Multisite i pojedynczej witryny WordPress.
 
-## Wymagane uprawnienia
+## Wymagane uprawnienia {#required-permissions}
 
 Musisz zalogować się jako administrator, który ma dostęp do menu **Narzędzia** w panelu administracyjnym witryny, którą eksportujesz lub importujesz. W przypadku sieci multisite, używaj konta administratora sieci, gdy eksportujesz lub importujesz podstrony za pomocą narzędzi Ultimate Multisite na poziomie sieci.
 
 Pobrane pliki ZIP eksportu są udostępniane przez uwierzytelniony punkt końcowy pobierania, dlatego utrzymuj aktywną sesję administratora do momentu zakończenia pobierania i nie udostępniaj publicznie wygenerowanych adresów URL do pobrania.
 
-## Eksportowanie witryny do pliku ZIP
+## Eksportowanie witryny do pliku ZIP {#exporting-a-site-to-a-zip}
 
 1. W panelu administracyjnym WordPress dla witryny, którą chcesz skopiować, przejdź do **Narzędzia > Eksport i Import**.
 2. Otwórz obszar eksportu i wybierz witrynę, którą chcesz spakować.
@@ -23,7 +23,7 @@ Pobrane pliki ZIP eksportu są udostępniane przez uwierzytelniony punkt końcow
 
 Przechowuj plik ZIP w bezpiecznym miejscu. Może on zawierać zawartość witryny, ustawienia, pliki multimedialne oraz wybrane zasoby kodu.
 
-## Co zawiera eksport
+## Co zawiera eksport {#what-the-export-includes}
 
 Plik ZIP eksportu może zawierać:
 
@@ -34,7 +34,7 @@ Plik ZIP eksportu może zawierać:
 
 Dokładny rozmiar pliku ZIP zależy od ilości multimediów, wybranych pluginów i motywów oraz rozmiaru tabel bazy danych witryny.
 
-## Importowanie witryny z pliku ZIP
+## Importowanie witryny z pliku ZIP {#importing-a-site-from-a-zip}
 
 1. Przejdź do **Narzędzia > Eksport i Import** na docelowej witrynie WordPress.
 2. Otwórz obszar importu i załaduj plik ZIP utworzony przez narzędzie Eksport i Import.
@@ -46,7 +46,7 @@ Dokładny rozmiar pliku ZIP zależy od ilości multimediów, wybranych pluginów
 
 W przypadku instalacji WordPress dla pojedynczej witryny, importowanie pliku ZIP zastępuje obecną witrynę zaimportowaną witryną. Nie jest to narzędzie do łączenia. Przed rozpoczęciem wykonaj pełną kopię zapasową docelowej witryny i unikaj uruchamiania wielu importów dla tej samej witryny jednocześnie.
 
-## Ograniczenia i uwagi dotyczące kompatybilności
+## Ograniczenia i uwagi dotyczące kompatybilności {#limitations-and-compatibility-notes}
 
 - Bardzo duże katalogi załączników lub biblioteki multimediów mogą generować duże pliki ZIP. Przed eksportowaniem lub importowaniem dużych witryn upewnij się co do limitów przesyłania plików PHP, limitów wykonania, miejsca na dysku, pamięci i ustawień przekroczenia czasu serwera.
 - Bardzo duże biblioteki multimediów mogą wymagać przeniesienia w okresie niskiego ruchu, podczas konserwacji.

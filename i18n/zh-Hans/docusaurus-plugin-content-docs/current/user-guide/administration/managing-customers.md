@@ -3,7 +3,7 @@ title: 管理客户
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# 管理客户
+# 管理客户 {#managing-customers}
 
 **Customers** 页面显示您网络中已注册成员的列表。此页面显示基本用户信息，包括姓名、电子邮件地址、最后登录时间，以及一个 **switch to** 链接，允许您以站点管理员身份登录用户的子站点。
 

@@ -3,14 +3,14 @@ title: 'Læoni 8: Klýfing við viðskipti'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Læoni 8: Innleganir við Klient
+# Læoni 8: Innleganir við Klient {#lesson-8-customer-onboarding}
 
 Að að fanga upp klantinn er bara hálfninni þjónustu. Ef hann skýrast inn, finnst óvæntur og komast aldrei aftur í heiminni, hefurð þú lósinn hann. Þessi læonið byggir upp upplifun sem breytur nýtt upplýsingarferli yfir í virkan og áhugalegt klant.
 
-## Hvar Við Stod
+## Hvar Við Stod {#where-we-left-off}
 FitSite er fullt bráðamarka með virkum kaupafærslum. Í þessu skrefi fokussum við á hvað gerist eftir að eigandi fyrirtækisins fyrir fitnessstúdionsins hefur fullfærð upplýsingarferli og landar á nýjum síti sinn fyrsta gongd.
 
-## Hvað er Innleganir Mikilvægt
+## Hvað er Innleganir Mikilvægt {#why-onboarding-matters}
 Fyrri 30 mínúta eftir að upplýsingarnnir eru færð á viðmið sjálfa ákveður hvort klantur haldi eða hrynji. Eigandi fitnessstúdionsins sem:
 
 - Skýrast inn og sér síti sem líkar alveg eins og fitnessvitið → heldur
@@ -19,8 +19,8 @@ Fyrri 30 mínúta eftir að upplýsingarnnir eru færð á viðmið sjálfa ákv
 
 Þínar niche temblar (Læoni 4) hliða að fyrstu punktingu. Þessi læonið hliða að öfundum.
 
-## Upplifun Fyrir Fyrri Skýrslu
-### Welcome Dashboard Widget
+## Upplifun Fyrir Fyrri Skýrslu {#the-first-login-experience}
+### Welcome Dashboard Widget {#welcome-dashboard-widget}
 
 Skapa sérstaka dashboard widget sem hefur góðvelgingu fyrir nýjum klant og leiðar hann í uppsetningu. Þessi þarf að sýnast á framtíðinni þegar hann skýrast inn fyrsta gongd.
 
@@ -34,7 +34,7 @@ Skapa sérstaka dashboard widget sem hefur góðvelgingu fyrir nýjum klant og l
 
 Hvert skref tengist beint til viðkomandi síðu eða innstillingum. Þetta þýðir að þú þarft ekki að leita í menurinn.
 
-### Förenklinga Dashboard-ins
+### Förenklinga Dashboard-ins {#simplify-the-dashboard}
 
 Nýtarferðingjar þurfa ekki að sjá alla menurefni WordPress. Hugsa um:
 
@@ -44,29 +44,29 @@ Nýtarferðingjar þurfa ekki að sjá alla menurefni WordPress. Hugsa um:
 
 Addoninn [Plugin & Theme Manager](/addons/plugin-and-theme-manager) getur hjálpa þér með að stjórna hvað viðkomandi sjá.
 
-## Velkomslsmiðju fyrir tölvupóst (Welcome Email Sequence)
+## Velkomslsmiðju fyrir tölvupóst (Welcome Email Sequence) {#welcome-email-sequence}
 
 Eitt velkomslsmiðju er ekki nóg. Set upp einn miðju sem leiðar tölvupósti í gegnum fyrra veiku:
 
-### Tölvupóstur 1: Velkomið (Hamingja eftir að skrá sig)
+### Tölvupóstur 1: Velkomið (Hamingja eftir að skrá sig) {#email-1-welcome-immediately-after-signup}
 
 - Emne: "Velkomin í FitSite – þú ert live á studio sínu"
 - Innhald: Link til inniheldun, stefnur fyrir fyrsta nálgun, linkur til hjálpumfærslum
 - Tónn: Áhugað, uppmunandi, tengt fítness
 
-### Tölvupóstur 2: Förokin (Dagur 1)
+### Tölvupóstur 2: Förokin (Dagur 1) {#email-2-quick-wins-day-1}
 
 - Emne: "3 góðar vöru að gera fyrst á FitSite"
 - Innhald: Bæta í logo þína, uppfærðar mynd á hópmyndinni, bæta við skjal af hámarka
 - Skilja myndir sem sýna nákvæmlega hvar skal klikka
 
-### Tölvupóstur 3: Geri það þitt (Dagur 3)
+### Tölvupóstur 3: Geri það þitt (Dagur 3) {#email-3-make-it-yours-day-3}
 
 - Emne: "Geri fítnesssítið þitt sérstakt"
 - Innhald: Sérsniða lög, bæta við myndir trænara, skrifa söguna um studio þitt
 - Linkur til dæmdupplusta gott fítnesssiti á plattforma
 
-### Tölvupóstur 4: Geri það live (Dagur 7)
+### Tölvupóstur 4: Geri það live (Dagur 7) {#email-4-go-live-day-7}
 
 - Emnef: "Er du klar til að deila FitSite þínu með veröldinni?"
 - Innhaldi: Liste við hvað þú þarf að eftirvirkja fyrir deildann, hvernig að tengja sérstaka domén (ef þú ert á Growth/Pro), og hugmyndir um sosiala deilistaf.
@@ -75,11 +75,11 @@ Eitt velkomslsmiðju er ekki nóg. Set upp einn miðju sem leiðar tölvupósti 
 Brugðu [Webhooks](/user-guide/integrations/webhooks) eða [Zapier](/user-guide/integrations/zapier) til að hringja þessar tölvupósti með því að nota eigin tölvupósturmarkaðar plattforma. Þetta gefur þér meiri kontroll yfir tíma og leyfir þér að fylgjast með viðskiptavarkiljun.
 :::
 
-## Hjálparauði
+## Hjálparauði {#help-resources}
 
 Skapa sérspessi hjálpmiðlun í því sem svarið er á spurningum sem eigendur fitnessstúdíða annarir verke rogi:
 
-### Viðskiptaheimildartöknir (Knowledge Base Articles)
+### Viðskiptaheimildartöknir (Knowledge Base Articles) {#knowledge-base-articles}
 
 - "Hvernig uppfæra skiljanirnar þínu"
 - "Að bæta við og breyta tölvustjórnara profill"
@@ -89,7 +89,7 @@ Skapa sérspessi hjálpmiðlun í því sem svarið er á spurningum sem eigendu
 
 Skrifa þessar fyrir ekki tæknilögðum notendur. Nota skýrslu myndir. Fáðu undan tæknilega hugtök WordPress.
 
-### Viðskiptaherðingarskýringar (Video Walkthroughs)
+### Viðskiptaherðingarskýringar (Video Walkthroughs) {#video-walkthroughs}
 
 Stuttar (2-3 minnuttar) skráningar á skjámyndum sem sýna:
 
@@ -100,7 +100,7 @@ Stuttar (2-3 minnuttar) skráningar á skjámyndum sem sýna:
 
 Þetta þarf ekki að vera yfirburðar framkvæmd. Skýr, hjálpandi og sérspessi er hvað mál matters.
 
-## Stjórnarskjalann (The Account Page)
+## Stjórnarskjalann (The Account Page) {#the-account-page}
 
 Ultimate Multisite felur í sér [Account Page](/user-guide/client-management/account-page) sem er fyrir viðskiptavini þar sem þeir stjórna skýrslu sína um endurskoðun. Skrá þetta að:
 
@@ -111,7 +111,7 @@ Visniðu þennan leikn:
 - Veita skráningarsaga og nýsköpunarferli fyrir faktu
 - Tengsla að hjálpumátum
 
-## Mæling á árangri við innleiðingu (Onboarding Success)
+## Mæling á árangri við innleiðingu (Onboarding Success) {#measuring-onboarding-success}
 
 Fylgja þessum mælum til að vita hvort innleiðingurinn þinn virkar:
 
@@ -120,7 +120,7 @@ Fylgja þessum mælum til að vita hvort innleiðingurinn þinn virkar:
 - **Stykkjastöðvar frá nýjum viðskiptavinum**: Mikil fjöldi þetta sýnir að innleiðingurinn þinn hefur brotnum staði.
 - **Sýn til betalingsvirkni (Trial-to-paid conversion)**: Ef þú býður fyrir prófanir, hversu mikið er hluti sem skilar sig í betaling?
 
-## FitSite Netverkinn hittil
+## FitSite Netverkinn hittil {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -141,7 +141,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Hva við byggðum upp í þessu leikni
+## Hva við byggðum upp í þessu leikni {#what-we-built-this-lesson}
 
 - **Styrt á fyrsta innriðningu með viðmót Quick Start widget**
 - **Einvelopd dashboard** sem er sniðinn að upplýsingum um fjölskyldu eða fitness staði

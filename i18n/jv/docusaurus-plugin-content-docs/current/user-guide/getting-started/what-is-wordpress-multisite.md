@@ -3,7 +3,7 @@ title: Apa iku WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Apa itu WordPress Multisite?
+# Apa itu WordPress Multisite? {#what-is-wordpress-multisite}
 
 Di dalam inti WordPress, ada fitur yang namanya ‘Multisite’ sing menelusuri asal-usulnya kembali ke tahun 2010 saat peluncuran WordPress 3.0. Sejak saat itu, fitur ini sudah banyak diperbarui dengan tujuan memperkenalkan fitur baru dan memperketat keamanan.
 
@@ -11,7 +11,7 @@ Intinya, WordPress multisite bisa dibayangkan begini: Sebuah Universitas punya s
 
 ##
 
-## Apa Sih Tepatnya WordPress Multisite Itu?
+## Apa Sih Tepatnya WordPress Multisite Itu? {#what-exactly-is-wordpress-multisite}
 
 Multisite itu adalah fitur di WordPress yang memungkinkan banyak situs berbagi satu instalasi WordPress. Ketika multisite diaktifkan, situs WordPress aslinya akan diubah untuk mendukung apa yang biasanya disebut sebagai **jaringan situs (network of sites)**.
 
@@ -23,7 +23,7 @@ Fakta ini adalah salah satu keuntungan utama dari multisite, karena memungkinkan
 
 ##
 
-## Subdomain atau Subdirektori?
+## Subdomain atau Subdirektori? {#subdomain-or-subdirectory}
 
 Ada dua cara menjalankan WordPress multisite – dan kamu harus memilih salah satunya saat mengubah instalasi WordPress biasa menjadi instalasi multisite:
 
@@ -49,7 +49,7 @@ Salah siji tantangan utama pas ngatur mode subdomain ya soal cakupan SSL (HTTPS)
 
 Nang nglawan karo mode subdirectory, subsites ing jaringan berbasis subdomain dianggap dening mesin pencari minangka website sing terpisah, sing tegese konten sing ana ing satu subsite ora bakal ngganggu kinerja SEO subsites liyane.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Instalasi WordPress single-site ngidini sampeyan nambah pirang-pirang user tanpa wates lan menehi peran user sing beda karo izin sing beda kanggo saben user kasebut.
 
@@ -63,7 +63,7 @@ Plugin lan tema mung bisa dipasang utawa dilepas saka network admin panel dening
 
 _Catatan: seperti yang bisa Anda lihat, mengundang seseorang ke jaringan Anda dan memberikan status super admin memberi pengguna tersebut kendali penuh atas seluruh jaringan Anda. Sebagai contoh, super admin lain bahkan bisa menghapus status super admin Anda, yang secara efektif akan mengunci Anda dari panel admin jaringan Anda sendiri. Untuk memungkinkan pelanggan Ultimate Multisite memiliki kontrol yang lebih rinci tentang apa saja yang dapat dilakukan oleh super admin tambahan, kami punya add-on bernama Support Agents. Add-on ini memungkinkan Anda membuat jenis pengguna lain – yaitu agen – dengan hanya izin yang mereka butuhkan untuk melakukan tugas mereka di jaringan._
 
-## Apa yang sama antar subsites dan apa yang tidak
+## Apa yang sama antar subsites dan apa yang tidak {#what-is-shared-among-subsites-and-what-is-not}
 
 Seperti yang sudah kita sebutkan sebelumnya, salah satu keuntungan utama dari WordPress multisite adalah semua subsites berbagi konfigurasi, file inti (core files), tema, plugin, file core WordPress, dll.
 
@@ -73,7 +73,7 @@ Namun, ada beberapa elemen yang lingkupnya terpisah untuk setiap subsite.
 - Setiap subsite punya panel admin khusus dan bisa mengaktifkan atau menonaktifkan plugin atau tema kecuali jika itu aktif di seluruh jaringan oleh super admin.
 - Sebagian besar tabel database dibuat untuk setiap subsite, artinya postingan (posts), komentar (comments), halaman (pages), pengaturan (settings), dan lainnya lingkupnya terpisah untuk setiap subsite.
 
-## Manajemen Pengguna di WordPress Multisite
+## Manajemen Pengguna di WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Salah satu hal yang cukup sensitif di WordPress multisite adalah manajemen pengguna. Tabel pengguna WordPress adalah salah satu dari sedikit tabel yang dibagikan di antara semua subsites.
 
@@ -97,7 +97,7 @@ _Cathetan: Kita ngerti betapa parah kahanan kuwi gumantung marang kasus pakonmu,
 
 Sanajan tabel user iku di-share, admin subsite utawa super admin isih bisa nambah utawa ngilangake user saka subsite, lan dhewe uga bisa duwe peran user sing beda ing subsite sing beda.
 
-## Pertimbangan kinerja (Performance considerations)
+## Pertimbangan kinerja (Performance considerations) {#performance-considerations}
 
 WordPress multisite pancen kuat banget yen urusan akeh situs sing bisa didukung. Iki bisa diuji kanthi fakta yen [WordPress.com](https://WordPress.com), Edublogs, lan Campuspress iku kabeh layanan berbasis multisite lan saben host nampa ribuan situs.
 

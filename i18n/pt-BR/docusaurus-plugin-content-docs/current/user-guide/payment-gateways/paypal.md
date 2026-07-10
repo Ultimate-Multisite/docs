@@ -1,61 +1,72 @@
 ---
 title: Configurando o PayPal
 sidebar_position: 10
-_i18n_hash: 1744fb066b8291440fd7fb554aa8e2d9
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Configurando o Gateway PayPal (v2)
+# Configurando o gateway PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
-_**NOTA IMPORTANTE: Este artigo refere-se à versão 2.x do Ultimate Multisite.**_
+_**OBSERVAÇÃO IMPORTANTE: Este artigo se refere à versão 2.x do Ultimate Multisite.**_
 
-Você pode ativar até quatro métodos de pagamento na página de configurações de pagamento: Stripe, Stripe Checkout, PayPal e Manual. Neste artigo, veremos como integrar com **PayPal**.
+Você pode ativar até quatro métodos de pagamento na nossa página de configurações de pagamento: Stripe, Stripe Checkout, PayPal e Manual. Neste artigo, veremos como integrar com o **PayPal**.
 
-Assim como o Stripe, o PayPal é amplamente usado para pagamentos online, especialmente em sites WordPress. Este artigo irá guiá-lo sobre como usar o PayPal como método de pagamento disponível em sua rede.
+Assim como Stripe, PayPal é amplamente usado para pagamentos online, especialmente em sites WordPress. Este artigo vai orientar você sobre como usar PayPal como um método de pagamento disponível na sua rede.
 
-Observe que você precisa ter uma **conta PayPal Business** para obter as credenciais da API necessárias para esta integração.
+Observe que você precisa ter uma **conta PayPal Business** para obter a credencial de API necessária para esta integração.
 
-## Habilitando o PayPal na sua rede
+## Habilitando PayPal na sua rede {#enabling-paypal-on-your-network}
 
-Para habilitar o PayPal como um método de pagamento disponível em sua rede, vá para a aba **Ultimate Multisite > Settings > Payments** e marque a caixa ao lado do PayPal.
+Para habilitar PayPal como um método de pagamento disponível na sua rede, acesse a aba **Ultimate Multisite > Settings > Payments** e marque a caixa ao lado de PayPal.
 
-![Enabling PayPal in active payment gateways](/img/config/settings-payment-gateways.png)
+![Habilitando PayPal nos gateways de pagamento ativos](/img/config/settings-payment-gateways.png)
 
-## Obtendo as credenciais da API PayPal
+## Usando o assistente de configuração guiada {#using-the-guided-setup-wizard}
 
-Uma vez que o PayPal esteja habilitado como gateway de pagamento, você precisará preencher os campos para o **Nome de usuário** da API PayPal, **Senha** da API PayPal e **Assinatura** da API PayPal.
+Ultimate Multisite 2.10.0 adiciona um assistente de configuração guiada do PayPal às configurações de gateway de pagamento. Depois de habilitar PayPal, use o assistente em **Ultimate Multisite > Settings > Payments** para escolher como você quer conectar o gateway e confirmar quais credenciais ainda são necessárias antes de salvar.
 
-Você pode obter isso fazendo login na sua conta PayPal [Live](https://www.paypal.com/home) ou [Sandbox](https://www.sandbox.paypal.com/home).
+O assistente oferece suporte a dois caminhos de configuração:
 
-(Lembre-se de que você pode usar o **modo sandbox** para testar pagamentos e verificar se o gateway está configurado corretamente. Basta ativar a seção correspondente.)
+* **Inserção manual de credenciais**: Use este caminho quando você já tiver credenciais de API do PayPal, quando a configuração de OAuth não estiver disponível para sua Account ou quando você preferir copiar as credenciais do PayPal por conta própria. Insira o API Username, API Password e API Signature nos campos do PayPal e, em seguida, salve as configurações de pagamento.
+* **Gate de conexão OAuth**: Use este caminho somente quando a opção OAuth estiver disponível e habilitada para sua instalação. O assistente mostra o fluxo OAuth por trás de um feature flag, portanto redes sem o flag continuam usando os campos de inserção manual de credenciais.
 
-![PayPal API credentials fields and sandbox mode toggle](/img/config/settings-payment-gateways.png)
+Se você não vir a opção OAuth no assistente, conclua o fluxo de inserção manual de credenciais abaixo. O gateway funciona com as mesmas credenciais de API PayPal Business das versões anteriores do Ultimate Multisite 2.x.
 
-Para solicitar credenciais de Assinatura ou Certificado da API para sua conta PayPal:
+## Obtendo as credenciais de API do PayPal {#getting-the-paypal-api-credentials}
 
-1. Vá para as [Configurações da Conta](https://www.paypal.com/businessmanage/account/accountAccess).
+Depois que PayPal estiver habilitado como gateway de pagamento, você precisará preencher os campos para PayPal API **Username**, PayPal API **Password** e PayPal API **Signature**.
 
-2. Na seção **API access**, clique em **Update**.  
-![PayPal Account Settings with API access section](/img/config/settings-payment-gateways.png)
+Você pode obter isso fazendo login na sua Account PayPal [Live](https://www.paypal.com/home) ou [Sandbox](https://www.sandbox.paypal.com/home).
 
-3. Em **NVP/SOAP API integration (Classic)**, clique em **Manage API credentials**.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+(Lembre-se de que você pode usar o **modo sandbox** para testar pagamentos e ver se o gateway está configurado corretamente. Basta ativar a seção correspondente.)
 
-   * Se você já gerou uma Assinatura ou Certificado da API, será redirecionado para uma página onde poderá encontrar suas credenciais.
+![Campos de credenciais de API do PayPal e alternância do modo sandbox](/img/config/settings-payment-gateways.png)
 
-   * _**Nota:** Se você for solicitado a verificar sua conta PayPal, siga as instruções na tela._
+Para solicitar credenciais de API Signature ou Certificate para sua Account PayPal:
 
-4. Selecione _uma_ das opções a seguir, então clique em **Agree and Submit**.
+  1. Acesse suas [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess).
 
-   * **Request API Signature** – Selecione para autenticação de Assinatura da API.
+  2. Na seção **Acesso à API**, clique em **Atualizar**.
+![PayPal Account Settings com seção de acesso à API](/img/config/settings-payment-gateways.png)
 
-   * **Request API Certificate** – Selecione para autenticação de Certificado da API.
+  3. Em **Integração de API NVP/SOAP (Clássica)**, clique em **Gerenciar credenciais de API**.
+![Integração de API NVP/SOAP do PayPal Gerenciar credenciais de API](/img/config/settings-payment-gateways.png)
 
-5. O PayPal gera suas credenciais da API da seguinte forma:  
-![PayPal generated API credentials](/img/config/settings-payment-gateways.png)
+     * Se você já gerou uma API Signature ou Certificate, será redirecionado para uma página onde poderá encontrar suas credenciais.
 
-   * **Credenciais de Assinatura da API** incluem um Nome de usuário da API, Senha da API e Assinatura, que não expira. Esses valores são ocultados por padrão para maior segurança. Clique em **Show/Hide** para alternar entre exibir e ocultar. Quando terminar, clique em **Done**.
+     * _**Observação:** Se for solicitado que você verifique sua Account PayPal, siga as instruções na tela._
 
-   * **Credenciais de Certificado da API** incluem um Nome de usuário da API, Senha da API e Certificado, que expira automaticamente após três anos. Clique em **Download Certificate** para salvar o Certificado da API em seu desktop.
+  4. Selecione _uma_ das seguintes opções e clique em **Concordar e enviar**.
+
+     * **Solicitar API Signature** – Selecione para autenticação por API Signature.
+
+     * **Solicitar API Certificate** – Selecione para autenticação por API Certificate.
+
+  5. PayPal gera suas credenciais de API da seguinte forma:
+![Credenciais de API geradas pelo PayPal](/img/config/settings-payment-gateways.png)
+
+     * As **credenciais de API Signature** incluem um API Username, API Password e Signature, que não expiram. Esses valores ficam ocultos por padrão para maior segurança. Clique em **Mostrar/Ocultar** para ativá-los e desativá-los. Quando terminar, clique em **Concluído**.
+
+     * As **credenciais de API Certificate** incluem um API Username, API Password e Certificate, que expira automaticamente após três anos. Clique em **Download Certificate** para salvar o API Certificate na sua área de trabalho.
 
 Pronto, sua integração de pagamento PayPal está concluída!
 
-Se você tiver alguma dúvida sobre as configurações do PayPal, pode consultar o [Help Center](https://www.paypal.com/br/smarthelp/home) do PayPal.
+Se você tiver alguma dúvida sobre as configurações do PayPal, consulte a [Central de Ajuda](https://www.paypal.com/br/smarthelp/home) do PayPal.

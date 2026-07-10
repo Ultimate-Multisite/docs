@@ -3,7 +3,7 @@ title: Captcha Changelog
 sidebar_position: 99
 _i18n_hash: 711bb4f00a108ccb60114b60822e5162
 ---
-# Captcha Changelog
+# Captcha Changelog {#captcha-changelog}
 
 Verzió: 1.5.0 - Kiadása: 2026-05-22
 * Új: Kemény leállású ütemkorlátozó — minden GET és POST kérést számol, amely a captcha-védett felületeken (wp-login / register / lost-password / comments, WooCommerce my-account / checkout / pay-for-order, Ultimate Multisite checkout / inline-login) érkezik. Ezt követően HTTP 429 státuszrával, egy `Retry-After` fejjel és egy véletlenszerű tarpit pihenőidővel (1–5 másodperc, maximális korlátozó 15 másodpercre) válaszol.

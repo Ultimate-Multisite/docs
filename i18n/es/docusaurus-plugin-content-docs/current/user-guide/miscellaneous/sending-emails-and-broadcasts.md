@@ -1,118 +1,124 @@
 ---
-title: Envío de correos electrónicos y transmisiones
+title: Enviar correos electrónicos y difusiones
 sidebar_position: 11
-_i18n_hash: 2c58b558fa68e4dd6e81bec971d52536
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Envío de correos electrónicos y transmisiones (v2)
+# Enviar emails y Broadcasts (v2) {#sending-emails-and-broadcasts-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
-Ultimate Multisite viene con una función que te permitirá comunicarte con tus clientes enviando un correo electrónico a un usuario objetivo o a un grupo de usuarios, así como enviando avisos en su panel de administración para difundir anuncios
+Ultimate Multisite incluye una función que te permitirá comunicarte con tus clientes enviando un email a un usuario específico o a un grupo de usuarios, así como enviando avisos en su Dashboard de administración para difundir anuncios
 
-## Añadir avisos de administrador al panel de tus clientes con Transmisiones
+## Añade avisos de administración al Dashboard de tus clientes con Broadcasts {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Usando la función de transmisión de Ultimate Multisite, puedes añadir **avisos de administrador** al panel de administración del subsitio de tu usuario.
+Usando la función de broadcast de Ultimate Multisite, puedes añadir **avisos de administración** al Dashboard de administración del subsitio de tu usuario.
 
-Esto es extremadamente útil si necesitas hacer un anuncio como mantenimiento del sistema o ofrecer nuevos productos o servicios a tus usuarios existentes. Así es como se verá el aviso de administrador en el panel de tu usuario.
+Esto es extremadamente útil si necesitas hacer un anuncio, como mantenimiento del sistema u ofrecer nuevos productos o servicios a tus usuarios existentes. Así se verá el aviso de administración en el Dashboard de tu usuario.
 
-![Admin notice broadcast shown on customer dashboard](/img/admin/broadcasts-list.png)
+<!-- Captura de pantalla no disponible: aviso de administración de broadcast mostrado en el Dashboard del subsitio de un cliente -->
 
-Para iniciar un aviso de administrador, ve al panel de administración de tu red y, bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts**.
+Para iniciar un aviso de administración, ve al Dashboard de administración de tu red y, bajo el menú **Ultimate Multisite**, encontrarás la opción **Broadcasts**.
 
-![Broadcasts menu in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Página de lista de Broadcasts en la administración de Ultimate Multisite](/img/admin/broadcasts-list.png)
+
+También puedes editar broadcasts existentes:
+
+![Interfaz de edición de broadcast](/img/admin/broadcast-edit.png)
 
 Desde esta página, haz clic en el botón **Add Broadcast** en la parte superior.
 
-Esto abrirá la ventana modal Añadir transmisión donde puedes elegir qué tipo de transmisión deseas enviar. Selecciona **Message** y luego haz clic en el botón **Next Step**.
+Esto abrirá la ventana modal Añadir broadcast, donde puedes elegir qué tipo de broadcast deseas enviar.
 
-![Add broadcast modal with Message type selected](/img/admin/broadcasts-list.png)
+Continúa y selecciona **Message** y luego haz clic en el botón **Next Step**.
+
+![Modal para añadir broadcast con la opción Message seleccionada](/img/admin/broadcast-add-message.png)
 
 La siguiente ventana te pedirá el **Target customer** o el **Target product**. Ten en cuenta que puedes seleccionar más de un usuario o más de un producto.
 
-Para buscar una cuenta de usuario o un producto, debes comenzar a escribir la palabra clave dentro del campo.
+Para buscar una cuenta de usuario o un producto, debes empezar a escribir la palabra clave dentro del campo.
 
-En el campo **Message type**, puedes seleccionar el color del aviso. Esto enfatizará la urgencia de tu mensaje.
+Bajo el campo **Message type**, puedes seleccionar el color del aviso. Esto enfatizará la urgencia de tu mensaje.
 
 Luego puedes hacer clic en **Next Step**.
 
-![Target customer and product selection for broadcast](/img/admin/broadcasts-list.png)
+![Campos de Target customers, Target product y Message type para un broadcast de Message](/img/admin/broadcast-message-targets.png)
 
-La siguiente ventana es donde puedes comenzar a redactar tu mensaje ingresando el asunto y el contenido/mensaje que deseas difundir a los usuarios.
+La siguiente ventana es donde puedes empezar a redactar tu mensaje introduciendo el asunto y el contenido/mensaje que deseas difundir a los usuarios.
 
-![Broadcast message subject and content editor](/img/admin/broadcasts-list.png)
+![Editor de asunto y contenido del mensaje de broadcast en el paso de redacción](/img/admin/broadcast-edit.png)
 
 Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
-Y eso es todo. El aviso de administrador debería mostrarse inmediatamente en el panel de tu usuario.
+Y eso es todo. El aviso de administración debería mostrarse inmediatamente en el Dashboard de tu usuario.
 
-## Enviar correos electrónicos a tus clientes
+## Enviar emails a tus clientes {#send-emails-to-your-customers}
 
-Usando la función de transmisión de Ultimate Multisite, puedes enviar un correo electrónico a tus usuarios. Tienes la opción de enviar el correo solo a usuarios específicos o dirigirlo a un grupo de usuarios basado en el producto o plan al que están suscritos.
+Usando la función de broadcast de Ultimate Multisite, puedes enviar un email a tus usuarios. Tienes la opción de enviar el email solo a usuarios específicos o dirigirte a un grupo de usuarios específico según el producto o plan al que estén suscritos.
 
-Para iniciar una transmisión de correo electrónico, ve al panel de administración de tu red y, bajo el menú Ultimate Multisite, encontrarás la opción Broadcast.
+Para iniciar un broadcast por email, ve al Dashboard de administración de tu red y, bajo el menú Ultimate Multisite, encontrarás la opción Broadcast.
 
-![Broadcasts page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Página de lista de Broadcasts usada como punto de partida para un broadcast por email](/img/admin/broadcasts-list.png)
 
 Desde esta página, haz clic en el botón **Add broadcast** en la parte superior.
 
-Esto abrirá la ventana modal Añadir transmisión donde puedes elegir qué tipo de transmisión deseas enviar. Selecciona **Email** y luego haz clic en el botón **Next Step**.
+Esto abrirá la ventana modal Añadir broadcast, donde puedes elegir qué tipo de broadcast deseas enviar. Continúa y selecciona **Email** y luego haz clic en el botón **Next Step**.
 
-![Add broadcast modal with Email type selected](/img/admin/broadcasts-list.png)
+![Modal para añadir broadcast con la opción Email seleccionada](/img/admin/broadcast-add-email.png)
 
 La siguiente ventana te pedirá el **Target customer** o el **Target produc** t. Ten en cuenta que puedes seleccionar más de un usuario o más de un producto.
 
-Para buscar una cuenta de usuario o un producto, debes comenzar a escribir la palabra clave dentro del campo.
+Para buscar una cuenta de usuario o un producto, debes empezar a escribir la palabra clave dentro del campo.
 
-Una vez que hayas seleccionado tu audiencia objetivo, puedes hacer clic en **Next Step**.
+Una vez seleccionado tu público objetivo, puedes hacer clic en **Next Step**.
 
-![Target customer and product selection for email broadcast](/img/admin/broadcasts-list.png)
+![Selección de Target customers y Target product para un broadcast por Email](/img/admin/broadcast-email-targets.png)
 
-La siguiente ventana es donde puedes comenzar a redactar tu correo electrónico ingresando el asunto y el contenido/mensaje que deseas enviar a los usuarios.
+La siguiente ventana es donde puedes empezar a redactar tu email introduciendo el asunto y el contenido/mensaje que deseas enviar a los usuarios.
 
-![Email broadcast subject and content editor](/img/admin/broadcasts-list.png)
+<!-- Captura de pantalla no disponible: editor de asunto y contenido del broadcast por email en el paso de redacción -->
 
 Después de crear tu mensaje, puedes pulsar el botón **Send**.
 
-Y eso es lo fácil que es enviar un correo electrónico a tus usuarios finales usando la función de transmisión.
+Y así de fácil es enviar un email a tus usuarios finales usando la función de broadcast.
 
-## Correos electrónicos del sistema
+## Emails del sistema {#system-emails}
 
-Los correos electrónicos del sistema en Ultimate Multisite son esas **notificaciones automáticas** enviadas por el sistema después de ciertas acciones como registro, pago, mapeo de dominio, etc. Estos correos pueden ser editados o modificados desde la configuración de Ultimate Multisite. También incluye una función que te permitirá restablecer e importar configuraciones existentes de otra instalación de Ultimate Multisite.
+Los emails del sistema en Ultimate Multisite son aquellas **notificaciones automáticas** enviadas por el sistema después de ciertas acciones, como registro, pago, asignación de dominio, etc. Estos emails se pueden editar o modificar desde la configuración de Ultimate Multisite. También incluye una función que te permitirá restablecer e importar configuraciones existentes desde otra instalación de Ultimate Multisite.
 
-### Restablecer e Importar
+### Restablecimiento e importación {#resetting--importing}
 
-Las nuevas versiones de Ultimate Multisite, así como los complementos, pueden y registrarán nuevos correos de vez en cuando.
+Las nuevas versiones de Ultimate Multisite, así como los add-ons, pueden registrar y registrarán nuevos emails de vez en cuando.
 
-Para evitar conflictos y otros problemas, **no añadiremos automáticamente las nuevas plantillas de correo como Correos del Sistema en tu instalación**, a menos que sean cruciales para el correcto funcionamiento de una determinada función.
+Para evitar conflictos y otros problemas, **no añadiremos automáticamente las nuevas plantillas de email como emails del sistema en tu instalación** , a menos que sean cruciales para el correcto funcionamiento de una función determinada.
 
-Sin embargo, los superadministradores y agentes pueden importar estos correos recién registrados a través de la herramienta de importación. Ese proceso creará un nuevo correo del sistema con el contenido y la configuración de la nueva plantilla de correo, permitiendo al superadministrador hacer cualquier modificación que desee o mantenerlos tal cual.
+Sin embargo, los superadministradores y agentes pueden importar estos emails recién registrados mediante la herramienta de importación. Ese proceso creará un nuevo email del sistema con el contenido y la configuración de la nueva plantilla de email, permitiendo al superadministrador realizar cualquier modificación que desee o mantenerlos tal cual.
 
-#### Cómo importar correos electrónicos del sistema
+#### Cómo importar emails del sistema {#how-to-import-system-emails}
 
-Ve a la página de Configuración de Ultimate Multisite y dirígete a la pestaña **Emails**.
+Ve a tu página de configuración de Ultimate Multisite y dirígete a la pestaña **Emails**.
 
-![Emails tab in Ultimate Multisite settings](/img/config/settings-emails.png)
+![Pestaña Emails en la configuración de Ultimate Multisite que muestra la sección System Emails](/img/config/settings-emails-tab.png)
 
 Luego, en la barra lateral, haz clic en el botón **Customize System Emails**.
 
-![Customize System Emails button on sidebar](/img/config/settings-emails.png)
+<!-- Captura de pantalla no disponible: botón Customize System Emails en el panel lateral de System Emails -->
 
-En la página de Correos del Sistema, verás el botón de acción **Reset & Import** en la parte superior. Al hacer clic en ese botón debería abrirse la ventana modal de importación y restablecimiento.
+En la página System Emails, verás el botón de acción **Reset & Import** en la parte superior. Al hacer clic en ese botón, debería abrirse la ventana modal de importación y restablecimiento.
 
-![Reset and Import action button on System Emails page](/img/config/settings-emails.png)
+![Botón de acción Reset or Import en la página de administración de System Emails](/img/admin/system-emails-reset-import.png)
 
-Luego, puedes alternar las opciones Import Emails para ver qué correos del sistema están disponibles para ser importados.
+Luego, puedes alternar las opciones de Import Emails para ver qué emails del sistema están disponibles para importarse.
 
-![Import Emails options showing available system emails](/img/config/settings-emails.png)
+<!-- Captura de pantalla no disponible: modal Reset and Import con las opciones de Import Emails expandidas -->
 
-#### Restablecer Correos del Sistema
+#### Restablecimiento de correos electrónicos del sistema {#reseting-system-emails}
 
-Otras veces, te darás cuenta de que los cambios que hiciste en una plantilla de correo ya no funcionan para ti y te gustaría restablecerla a su **estado predeterminado**.
+En otras ocasiones, te darás cuenta de que los cambios que hiciste en una plantilla de correo electrónico determinada ya no te funcionan y querrás restablecerla a su **estado predeterminado**.
 
-En tales casos, tienes dos opciones: puedes simplemente eliminar el correo del sistema e importarlo de nuevo (usando las instrucciones anteriores) - lo que borrará las métricas de envío y otras cosas, lo que hace que este método sea el menos preferido.
+En esos casos, tienes dos opciones: puedes simplemente eliminar el correo electrónico del sistema e importarlo de nuevo (usando las instrucciones anteriores), lo que borrará las métricas de envío y otras cosas, por lo que este método es el menos recomendado.
 
-O puedes usar la herramienta **Reset & Import** para restablecer esa plantilla de correo.
+O puedes usar la **herramienta Reset & Import** para restablecer esa plantilla de correo electrónico.
 
-Para restablecer una plantilla de correo, puedes seguir los pasos anteriores hasta llegar a la herramienta Reset & Import, y luego, alternar la opción **Reset** y seleccionar los correos que deseas restablecer a su contenido predeterminado.
+Para restablecer una plantilla de correo electrónico, puedes seguir los pasos anteriores hasta llegar a la herramienta Reset & Import y luego activar la opción **Reset** y seleccionar los correos electrónicos que quieres restablecer a su contenido predeterminado.
 
-![Reset option to restore email templates to defaults](/img/config/settings-emails.png)
+<!-- Captura de pantalla no disponible: modal Reset and Import con las opciones de Reset Emails expandidas -->

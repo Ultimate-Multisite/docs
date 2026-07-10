@@ -3,15 +3,15 @@ title: 'Lezioa 11: Klientzak aurkitzea'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Lehen 11: Klientakut aurkitzea
+# Lehen 11: Klientakut aurkitzea {#lesson-11-finding-customers}
 
 Kunde ez dagoen platfortea zerbait hobekoa da. Hau lehenaren testu hau irudi duon klienteak aurkitzeko moduan (niche) aukerak gisa jakinarazten ditu -- estrategiak eta horiek funtzionatzen dute zehatziki hori bat industriari fokua duen bitartean.
 
-## Nondorretan Oinarrituta Zuzendarteko Lehean dagoena
+## Nondorretan Oinarrituta Zuzendarteko Lehean dagoena {#where-we-left-off}
 
 FitSite-ak irudi duela da. Arriba, fitness studio pertsonalak aurkitu eta emateko behar dute.
 
-## Nola Berdina Aurkitzea Gainaria Da
+## Nola Berdina Aurkitzea Gainaria Da {#why-niche-acquisition-is-different}
 
 Gure kliente guztiek berri egiten duen prozesuan, zaharren merkatuaren ondoan atzultzen dituzte. Hau berehala ezberdin da:
 
@@ -19,17 +19,17 @@ Gure kliente guztiek berri egiten duen prozesuan, zaharren merkatuaren ondoan at
 - **Mezuak hemen egiten dute** -- "fitness studio-etan webstei" irudiak gimnazioa pertsonalari horrek eskrollatzen ari den testuaren atzean aipatzen du
 - **Referialak aukerlan ditu** -- fitness studio pertsonalak beste fitness studio pertsonalak ez jakusten dute
 
-## Kanala 1: Direkta Aurkitzea (Direct Outreach)
+## Kanala 1: Direkta Aurkitzea (Direct Outreach) {#channel-1-direct-outreach}
 
 Lehen klienteak aurkitzeko hartzak direkta eta pertsonala da.
 
-### Potentialak Aurkitzea
+### Potentialak Aurkitzea {#find-prospects}
 
 - Google Maps-ean irudiak erandatu fitness studioak, gimnazioak eta pertsonal trainersak
 - Irudiak zehaztu (edo nota egin dezake hori ez du websteia)
 - Horiek Google Business profile edo sozial media-ren kontaktuen informazioa hartu
 
-### Horren Situazioa Ebaluatzea
+### Horren Situazioa Ebaluatzea {#evaluate-their-current-situation}
 
 Potentzial baten artean, nota egin:
 
@@ -37,11 +37,11 @@ Potentzial baten artean, nota egin:
 - **Websteia labur** : Potentzial osoa -- lehenik ez du hori problemaa ereditu
 - **Websteia on** : Potentzial txikia -- hori problemaa lehenik eredituta dago
 
-### Hautak Aurkitzea (Make Contact)
+### Hautak Aurkitzea (Make Contact) {#make-contact}
 
 Email edo mensajua pertsonalizatua bidali:
 
-## Kanala 2: Komunitate Nicheak
+## Kanala 2: Komunitate Nicheak {#channel-2-niche-communities}
 
 Fitness studio nagusi horiek leku luera jakin leku daurpena dagoen lugar hauek dira:
 
@@ -50,7 +50,7 @@ Fitness studio nagusi horiek leku luera jakin leku daurpena dagoen lugar hauek d
 - **Industria forumenak** eta diskurtso edukiak
 - **LinkedIn groups** fitness profesionalak
 
-### Zerren jakinon
+### Zerren jakinon {#how-to-participate}
 
 Joizki joatu eta hemen produktu guztia iragaztekin emate ez duzu. Orain:
 
@@ -59,7 +59,7 @@ Joizki joatu eta hemen produktu guztia iragaztekin emate ez duzu. Orain:
 3. **Indikazioa iragaztekin emate** -- batzuk webstei gertu-duden eskatzen duenean, plataforma zuera naturalmenti iragaztekan
 4. **Kontribuitea dauden kontuentuak jartu** -- "fitness studio websteia on bat izaten" bezala postrak ezarri eta naturalmenti platforma zuera
 
-## Kanala 3: Kontuentu Marketinga
+## Kanala 3: Kontuentu Marketinga {#channel-3-content-marketing}
 
 Fitness studio nagusi bilatzen dituen kontuentua jartu:
 
@@ -99,7 +99,7 @@ Marketing-aren beste espezialoa da kliuntzakaren web-lekuak. Barkapenarekin:
 - Satisfak kustomer batzuk testimonialak gautzea
 - Kustomerak FitSite-a ezagutzean eskatzea
 
-## Referentzia Programa Kontsehitzea (Setting Up a Referral Program)
+## Referentzia Programa Kontsehitzea (Setting Up a Referral Program) {#channel-4-partnerships}
 
 Nola irudiak (word of mouth) da sizkietako lekuan lehen kanala da. Irudiak formalizatu:
 
@@ -107,7 +107,7 @@ Nola irudiak (word of mouth) da sizkietako lekuan lehen kanala da. Irudiak forma
 2. Irudiak dagoen kustomer-ek referentziak gautela ondoan (bat luna libre, kontu creditua, etc.)
 3. Lehen daitezkea egin -- irudiak link bat eta esaintza bat simple dena zeikien
 
-## Zerren Ona da Kontsehitzea (Tracking What Works)
+## Zerren Ona da Kontsehitzea (Tracking What Works) {#channel-5-industry-events}
 
 Kontsehitzearen artean, lehen kanala guztiak trackingatu:
 
@@ -117,7 +117,7 @@ Kontsehitzearen artean, lehen kanala guztiak trackingatu:
 
 Eskatu kanalak gehiago ondoan jakin dituzik. Kanalak ez dutenak ezartu.
 
-## Esperantzak Realistikoak (Realistic Expectations)
+## Esperantzak Realistikoak (Realistic Expectations) {#channel-6-showcase-sites}
 
 - **Muna 1-3**: 5-20 kustomer, gurekin irudiak eta komunitateak dira
 - **Muna 4-6**: 20-50 kustomer, kontent marketinga kontribuzea hasten da
@@ -125,7 +125,7 @@ Eskatu kanalak gehiago ondoan jakin dituzik. Kanalak ez dutenak ezartu.
 
 Egunak hauek ondoan jarraitzen dira, baina modeloa irudiak dira: lehen kustomerak direza kontratu eskatzeko espezialitateak, geroago kustomerak kontentua, referentziak eta reputazioaren efekta bat da.
 
-## Zerren Ona da Sortu Datu Hau
+## Zerren Ona da Sortu Datu Hau {#setting-up-a-referral-program}
 
 * **Seis kanalen erosi (acquisition channels)** diseinat fitness sektorebi
 * **Prozesu direkta irudiak** lehen kliuntzak aurkitzeko

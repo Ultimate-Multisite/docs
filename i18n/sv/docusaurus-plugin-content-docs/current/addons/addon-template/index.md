@@ -3,25 +3,25 @@ title: Tilläggmall
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon-mall
+# Addon-mall {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller högre
 - PHP 7.4 eller högre
 - Ultimate Multisite-plugin (aktivt)
 
-## Installation
+## Installation {#installation}
 
 1. Ladda upp addon-filerna till din `/wp-content/plugins/` katalog
 2. Aktivera pluginet via menyn 'Plugins' i WordPress
 3. Konfigurera addon-inställningarna i nätverksadministratören
 
-## Utveckling
+## Utveckling {#development}
 
-### Uppställning
+### Uppställning {#setup}
 
 ```bash
 # Installera beroenden
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Projektstruktur
+### Projektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regler för modernisering av kod
 ```
 
-### Testning
+### Testning {#testing}
 
 Addonet inkluderar ett omfattande testramverk:
 
@@ -75,44 +75,44 @@ Addonet inkluderar ett omfattande testramverk:
 - **Testtäckning (Test Coverage)**: Konfigurerad för att spåra kodtäckning
 - **Multisite-testning**: Tester körs i en multisite-miljö
 
-### Kodstandarder
+### Kodstandarder {#code-standards}
 
 - **WordPress Coding Standards**: Upprätthålls via PHPCS
 - **PHP 7.4+ Kompatibilitet**: Stöder moderna PHP-funktioner
 - **Statisk Analys (Static Analysis)**: PHPStan-integration för typkontroll
 - **Kodmodernisering (Code Modernization)**: Rector-regler för PHP-uppgraderingar
 
-### Byggsystem (Build System)
+### Byggsystem (Build System) {#build-system}
 
 - **Resursbearbetning (Asset Processing)**: Minifiering av CSS/JS-filer
 - **Översättning (Translation)**: Generering av POT-filer
 - **Paketering (Packaging)**: Skapande av arkiv för distribution
 - **Utvecklingsläge (Development Mode)**: Ominifierade resurser för felsökning
 
-## Konfiguration
+## Konfiguration {#configuration}
 
 Addonet stöder olika konfigurationsalternativ som är tillgängliga via nätverksadministratörsgränssnittet.
 
-## Hooks och Filters
+## Hooks och Filters {#hooks-and-filters}
 
-### Actions (Åtgärder)
+### Actions (Åtgärder) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Körs efter att addonet har initialiserats
 - `ultimate-multisite-addon-template_loaded` - Körs efter att alla addon-filer har laddats
 
-### Filters (Filter)
+### Filters (Filter) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifiera addon-inställningarna
 - `ultimate-multisite-addon-template_enabled` - Överskriva addonets aktiverings-/inaktiveringsstatus
 
-## Licens
+## Licens {#license}
 
 Detta addon är licensierat under GPL v3 eller senare.
 
-## Support
+## Support {#support}
 
 För support och dokumentation, besök [MultisiteUltimate.com](https://multisiteultimate.com)
-## Ändringslogg (Changelog)
+## Ändringslogg (Changelog) {#changelog}
 
 - Version 1.0.1 (2025-09-28): bytte prefix till ultimate-multisite; uppdaterade textdomän; versionhöjning.
 

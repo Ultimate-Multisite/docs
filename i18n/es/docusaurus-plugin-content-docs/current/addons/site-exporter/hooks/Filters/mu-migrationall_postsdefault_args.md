@@ -7,24 +7,24 @@ title: >-
 sidebar_label: mu-migration/all_posts/default_args
 _i18n_hash: 1f2b84b278afa4069806497ea0036b4c
 ---
-## Filtro: mu-migration/all_posts/default_args
+## Filtro: mu-migration/all_posts/default_args {#filter-mu-migrationallpostsdefaultargs}
 
 Filtra los argumentos por defecto para consultar publicaciones en el método all_posts.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $default_args | `array` | El array de argumentos por defecto. |
 
-### Desde
+### Desde {#since}
 
 - 0.2.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/mu-migration/includes/commands/class-mu-migration-base.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-base.php#L70) en la línea 70
 
-## Devuelve
+## Devuelve {#returns}
 
 Array de argumentos por defecto.

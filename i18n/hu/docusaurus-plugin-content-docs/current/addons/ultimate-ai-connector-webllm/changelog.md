@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector WebLLM Módosítási Naplója
+# Ultimate AI Connector WebLLM Módosítási Naplója {#ultimate-ai-connector-for-webllm-changelog}
 
-## Verzió 1.1.0 — Kiadása 2026-04-09
+## Verzió 1.1.0 — Kiadása 2026-04-09 {#version-110--released-on-2026-04-09}
 
 * Új: Úszó chat widget, admin-sáv státusz indikátorral — bármely bejelentkezett felhasználó közvetlenül a böngésző oldali LLM-hez tud kérdezést küldeni a front endről.
 * Új: SharedWorker futtatási környezet — az MLC motor most SharedWorker-ben fut, így több tab egy SharedWorker-t használ, és nem versenyez róla.
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * Javítás: WebLLM beépítése a wpai_preferred_text_models szűrőbe, így az AI Experiments funkció a böngésző motorra irányítja a modellt, ha az felhasználó beállította.
 * Javított: Cache-busting, tartalom normalizáció és hardver-referenciák javítása, amelyeket az end-to-end tesztelés során tapasztaltunk.
 
-## Verzió 1.0.0 — Első kiadás
+## Verzió 1.0.0 — Első kiadás {#version-100--initial-release}

@@ -3,7 +3,7 @@ title: Registers a Cèntrèlîna bi Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# رویداد: ثبت نام کردن از طریق Zapier
+# رویداد: ثبت نام کردن از طریق Zapier {#event-register-an-account-via-zapier}
 
 لە بابەتەکەدا کە [Integrating Ultimate Multisite with Zapier](zapier.md) دا، باس لەوە گێڕاوە چۆن دەتوانیت بەکاری بهێنیت Zapier بۆ ئەنجامدانی کارە جیاوازەکانی ناو Ultimate Multisite پێکەوە بەپێی چالاکییەکان (triggers) و ڕووداوەکان (events). لەم بابەتدا، دەبینین چۆن دەتوانیت ئەپڵیکەیشنی سێیەم (3rd party applications) یەکدەگرین. ئێمە Google Sheets وەک سەرچاوەی داتایەکەمان بەکاری دەهێنین بۆ ئەوەی ئەو زانیاریانە بۆ Ultimate Multisite بفرستێت بۆ تۆمارکردنی یەکجار.
 

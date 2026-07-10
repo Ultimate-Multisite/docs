@@ -1,152 +1,156 @@
 ---
-title: Kòmanse Fòm Enrejistrasyon Ou
+title: Pèsonalize Fòm Enskripsyon Ou an
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Kòman personalize Fòm Enskripsyon ou
+# Pèsonalize Fòm Enskripsyon ou {#customizing-your-registration-form}
 
-Pou fè rezo ou sanble diferan de tout lòt SaaS ki bati sou platfòm WordPress, Ultimate Multisite pèmèt ou personalize paj enskripsyon ak login ou avèk fonksyon **Checkout Forms** nou an.
+Pou fè rezo ou parèt inik parapò ak tout lòt SaaS ki bati sou platfòm WordPress, Ultimate Multisite pèmèt ou pèsonalize paj enskripsyon ak koneksyon ou yo ak fonksyon **Checkout Forms** nou an.
 
-Malgre ke yo se yon fason fasil e fleksib pou eksperimante diferan apwòch lè w ap eseye konvèti nouvo kliyan, yo sitou itilize pou kreye fòm enskripsyon pèsonèl. Artikel sa a vle montre w kijan ou ka fè sa.
+Malgre yo se yon fason fasil ak fleksib pou fè eksperyans ak diferan apwòch lè w ap eseye konvèti nouvo kliyan, yo sitou itilize pou kreye fòm enskripsyon pèsonalize. Atik sa a gen pou objektif montre ou kijan ou ka fè sa.
 
-## Paj Login ak Enskripsyon:
+## Paj koneksyon ak enskripsyon: {#login-and-registration-pages}
 
-Lè ou instale Ultimate Multisite, li otomatikman kreye paj login ak enskripsyon koutim sou sit prensipal ou an. Ou ka chanje paj default sa yo nenpòt lè ou ale nan paj **Ultimate Multisite > Settings > Login & Registration** ou a.
+Lè w enstale Ultimate Multisite, li kreye otomatikman paj koneksyon ak enskripsyon pèsonalize sou sit prensipal ou. Ou ka chanje paj defo sa yo nenpòt ki lè lè w ale anba paj **Ultimate Multisite > Settings > Login & Registration** ou.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Paj paramèt Koneksyon ak Enskripsyon](/img/config/settings-general.png)
 
-Men yon gade total sou paj konfigirasyon login ak enskripsyon an:
+Men yon vi konplè paj paramèt koneksyon ak enskripsyon an:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Paj konplè paramèt Koneksyon ak Enskripsyon](/img/config/settings-login-registration-full.png)
 
-Ann gade chak opsyon ou ka personalize sou paj **Login & Registration** la:
+Ann gade chak opsyon ou ka pèsonalize sou paj **Login & Registration** la:
 
-  * **Enable registration (Aktive enskripsyon):** Opsyon sa a ap pèmèt ou aktive oswa desaktive enskripsyon sou rezo ou an. Si ou mete li sou "off", kliyan ou pa pral kapab enkripte epi abone nan pwodwi ou yo.
+  * **Aktive enskripsyon:** Opsyon sa a ap aktive oswa dezaktive enskripsyon sou rezo ou. Si li dezaktive, kliyan ou yo p ap kapab enskri epi abòne ak pwodwi ou yo.
 
-  * **Enable email verification (Aktive verifikasyon imèl):** Si opsyon sa a sou "on", kliyan ki abone pou yon plan gratis oswa yon plan peye ak peryòd esè ap resevwa yon imèl verifikasyon epi yo pral bezwen klike sou lyen verifikasyon an pou sit entèn ou ka kreye.
+  * **Aktive verifikasyon imel:** Si opsyon sa a aktive, kliyan ki abòne ak yon plan gratis oswa yon plan peye ki gen yon peryòd esè ap resevwa yon imel verifikasyon epi y ap bezwen klike sou lyen verifikasyon an pou sit entènèt yo ka kreye.
 
-* **Page d'inscription par défaut (Default registration page):** Sa se paje se paje sa je la page de base pou registre. Sa page la bezwen publie sou sit ou epi li bezwen yon fòm registrasyon (ou ka konnen li kòm checkout form) - kote kliyan ou yo ap abone nan pwodwi ou yo. Ou ka kreye genyen anpil page registrasyon ak checkout form ou vle, men sonje mete shortcode checkout form la sou page registrasyon an, sinon li p ap parèt.
+  * **Paj enskripsyon defo:** Sa a se paj defo pou enskripsyon. Paj sa a bezwen pibliye sou sit entènèt ou epi gen yon fòm enskripsyon (yo konnen tou kòm checkout form) - kote kliyan ou yo ap abòne ak pwodwi ou yo. Ou ka kreye otan paj enskripsyon ak checkout forms ou vle, jis sonje mete shortcode checkout form nan sou paj enskripsyon an, sinon li p ap parèt.
 
-* **Sèvi ak yon page login koutim (Use custom login page):** Opsyon sa a pèmèt ou itilize yon page login ki gen yon fòm koutim, lòt pase page wp-login.php la deparè. Si opsyon sa a aktif, ou ka chwazi ki page ap itilize pou login sou opsyon **Default login page** (an anwo li).
+  * **Itilize paj koneksyon pèsonalize:** Opsyon sa a pèmèt ou itilize yon paj koneksyon pèsonalize, olye de paj defo wp-login.php la. Si opsyon sa a aktive, ou ka chwazi ki paj k ap itilize pou koneksyon nan opsyon **Default login page** la (jis anba a).
 
-* **Fou anpil URL login orijinal la (Obfuscate the original login url (wp-login.php))**: Si ou vle ka fè URL login orijinal la la pèdi, ou ka aktif opsyon sa a. Sa itilite pou anpeche atak brute-force. Si opsyon sa a aktive, Ultimate Multisite ap montre yon erè 404 lè yon itilizat ap eseye jwenn link wp-login.php original la.
+  * **Kache url koneksyon orijinal la (wp-login.php)** : Si ou vle kache URL koneksyon orijinal la, ou ka aktive opsyon sa a. Sa itil pou anpeche atak brute-force. Si opsyon sa a aktive, Ultimate Multisite ap montre yon erè 404 lè yon itilizatè eseye jwenn aksè ak lyen orijinal wp-login.php la
 
-* **Fòse publikasyon sit senkron (Force synchronous site publication)**: Apre yon kliyan abone nan yon pwodwi sou yon rezo, sit ki ap tann an nou bezwen konvèti li vin yon sit rezo reyèl. Pwosesis publikasyon an fèt atravè Job Queue, epi sa se asynchrone (asynchronously). Aktive opsyon sa a pou fè publikasyon an rive nan menm demann an tankou abònman an.
+  * **Fòse piblikasyon sit senkronize:** Apre yon kliyan abòne ak yon pwodwi sou yon rezo, nouvo sit ki annatant lan bezwen konvèti an yon sit rezo reyèl. Pwosesis piblikasyon an fèt atravè Job Queue, yon fason asenkron. Aktive opsyon sa a pou fòse piblikasyon an fèt nan menm demann ak enskripsyon an.
 
-Kounye a, ann wè lòt opsyon ki toujou enpòtan pou pwosesis login ak registrasyon yo. Yo se anwo **Other options** sou menm page Login & registration la:
+Kounye a, ann wè lòt opsyon ki toujou enpòtan pou pwosesis koneksyon ak enskripsyon an. Yo jis anba **Other options** sou menm paj Login & registration la:
 
-* **Ròl par defo (Default role):** Sa se rôl ki pral genyen kliyan ou yo sou sit yo apre pwosesis abònman an fini.
+  * **Wòl defo:** Sa a se wòl kliyan ou yo ap genyen sou sit entènèt yo apre pwosesis enskripsyon an.
 
-* **Active Jumper:** Sa fè Jumper la active. Jumper pèmèt admin yo monte rapidman nan ekran Ultimate Multisite, objè rezo (network objects), ak lòt destinasyon ki sipòte san ou pa bezwen mache atravè tout mennu a. Desactive li si ou prefere ka fè sa zouti navigasyon rapid la ka disparèt nan entèfas admin an.
+  * **Aktive Jumper:** Aktive rakousi Jumper nan zòn admin nan. Jumper pèmèt administratè yo sote rapidman nan ekran Ultimate Multisite, objè rezo, ak lòt destinasyon ki sipòte san yo pa navige nan chak meni. Dezaktive li si ou pito kache zouti navigasyon rapid sa a nan koòdone admin nan.
 
-* **Ajoute itilizat yo sou sit prensipal la tou:** Lè ou active opsyon sa a, li ap ajoute itilizat la sou sit prensipal rezo ou apre pwosesis enskripsyon an. Si ou active opsyon sa a, yon opsyon pou mete **default role** (wòl dekouvè) itilizat yo sou sit wèb ou ap parèt tou imedyatman anba li.
+  * **Ajoute itilizatè yo sou sit prensipal la tou:** Lè w aktive opsyon sa a, sa ap ajoute itilizatè a tou sou sit prensipal rezo ou apre pwosesis enskripsyon an. Si ou aktive opsyon sa a, yon opsyon pou mete **wòl defo** itilizatè sa yo sou sit entènèt ou ap parèt tou jis anba a.
 
-* **Active plizyè kont:** Pèmèt itilizat gen kont nan diferan sit rezo ou ak menm adrès imèl la. Si opsyon sa a pa active, kliyan ou p ap ka kreye yon kont sou lòt sit wèb ki mache sou rezo ou ak menm adrès imèl la.
+  * **Aktive plizyè kont:** Pèmèt itilizatè yo gen kont nan diferan sit rezo ou ak menm adrès imel la. Si opsyon sa a dezaktive, kliyan ou yo p ap kapab kreye yon kont sou lòt sit entènèt k ap mache sou rezo ou ak menm adrès imel la.
 
-E se tout opsyon ki gen rapò ak login ak enskripsyon ou ka personalize! Pa bliye pou w mete konsèy ou apre ou fin fini edite yo.
+E se tout opsyon ki gen rapò ak koneksyon ak enskripsyon ou ka pèsonalize yo! Pa bliye sove paramèt ou yo apre ou fini modifye yo.
 
-## Itilize plizyè fòm enskripsyon:
+## Itilize plizyè fòm enskripsyon: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 of yon editè fòm checkout (checkout form editor) ki pèmèt ou kreye genyen fòm ou vle, ak diferan chèf (fields), pwodwi ki ofri, elatriye.
+Ultimate Multisite 2.0 ofri yon editè checkout form ki pèmèt ou kreye otan fòm ou vle, ak diferan chan, pwodwi ki an òf, elatriye.
 
-Paje login ak paje enskripsyon yo entegre ak shortcodes: **[wu_login_form]** sou paje login la epi **[wu_checkout]** pou paje enskripsyon an. Ou ka pi plis personalize paje enskripsyon ou a lè w ap bati oswa kreye fòm checkout (checkout forms).
+Tou de paj koneksyon ak enskripsyon yo entegre ak shortcodes: **[wu_login_form]** sou paj koneksyon an ak**[wu_checkout]** pou paj enskripsyon an. Ou ka pèsonalize paj enskripsyon an plis lè w konstwi oswa kreye checkout forms.
 
-Pou jwenn aksè nan fonksyon sa a, ale nan mennu **Checkout Forms**, sou bar an valè a (left side-bar).
+Pou jwenn aksè ak fonksyon sa a, ale nan meni **Checkout Forms** la, sou ba bò gòch la.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Meni Checkout Forms nan ba bò a](/img/config/checkout-forms-list.png)
 
-Sou paj sa a, ou ka wè tout fòm checkout ou genyen yo.
+Sou paj sa a, ou ka wè tout checkout forms ou genyen yo.
 
-Si ou vle kreye yon nou an, jis klike sou **Add Checkout Form** (Ajoute Fòm Checkout) sou lopitalaj paj la.
+Si ou vle kreye yon nouvo, jis klike sou **Add Checkout Form** anlè paj la.
 
-Ou ka chwazi yon nan twa opsyon sa yo kòm kòmansman ou: single step (et etap), multi-step (plizyè etap) oswa blank (san kontni). Apre sa, klike pou **Ale nan Editor la** (Go to the Editor).
+Ou ka chwazi youn nan twa opsyon sa yo kòm pwen depa ou: yon sèl etap, plizyè etap oswa vid. Apre sa, klike pou **Ale nan Editè a**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Ajoute Checkout Form ak opsyon yon sèl etap, plizyè etap, oswa vid](/img/config/checkout-forms-list.png)
 
-Oswa ou ka edite oswa duplike fòm ou deja genyen lè w klike sou opsyon ki anba non li. La, ou pral jwenn tou opsyon pou kopye shortcode fòm la oswa pou elimine fòm la.
+Altènativman, ou ka modifye oswa diplike fòm ou deja genyen yo lè w klike sou opsyon ki anba non li. La, w ap jwenn tou opsyon pou kopye shortcode fòm nan oswa pou efase fòm nan.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Aksyon checkout form lè sourit pase sou li ak modifye, diplike, ak efase](/img/config/checkout-form-hover-actions.png)
 
-Si ou chwazi single step oswa multi-step, fòm checkout la pral deja ranpli ak etap batatik pou li ka fonksyone. Apre sa, si ou vle, ou ka ajoute etap ekstra a li.
+Si ou chwazi yon sèl etap oswa plizyè etap, checkout form nan ap deja ranpli davans ak etap debaz yo pou li fonksyone. Apre sa, si ou vle, ou ka ajoute etap anplis ladan l.
 
-### Edite yon Checkout Form:
+### Modifye yon Checkout Form: {#editing-a-checkout-form}
 
-Kòm nou te mansyone anvan, ou ka kreye checkout forms pou diferan bagay. Nan egzanp sa a, nou pral travay sou yon fòm registrasyon (registration form).
+Jan nou te mansyone anvan, ou ka kreye checkout forms pou diferan objektif. Nan egzanp sa a nou pral travay sou yon fòm enskripsyon.
 
-Apre w fin ale nan editor checkout form la, bay fòm ou yon non (ki ap itilize sèlman pou referans anndan) epi yon slug (ki itilize pou kreye shortcode, pa egzanp).
+Apre ou fin navige nan editè checkout form nan, bay fòm ou an yon non (ki pral itilize sèlman pou referans entèn) ak yon slug (yo itilize pou kreye shortcakes, pa egzanp).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Editè fòm finalizasyon acha ak chan non ak slug](/img/config/checkout-form-name-slug.png)
 
-Fòm yo fèt ak etap ak champs (fields). Ou ka ajoute yon nou etap lè w klike sou **Add New Checkout Step** (Ajoute Nou Etap Checkout la).
+Fòm yo fèt ak etap ak chan. Ou ka ajoute yon nouvo etap lè ou klike sou **Ajoute Nouvo Etap Finalizasyon Acha**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Bouton Ajoute Nouvo Etap Finalizasyon Acha](/img/config/checkout-form-add-step.png)
 
-Sou premye tab nan fenèt modal la, ranpli kontni etap fòm ou an. Bay li yon ID, yon non epi yon deskripsyon. Yo yo itilize sa pou referans anndan la anpil.
+Sou premye onglet fenèt modal la, ranpli kontni etap fòm ou an. Ba li yon ID, yon non ak yon deskripsyon. Atik sa yo sitou itilize anndan sistèm nan.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Onglet kontni etap finalizasyon acha ak ID, non, ak deskripsyon](/img/config/checkout-form-step-content.png)
 
-Answit, mete vizibilite etap la. Ou ka chwazi ant **Always show** (Toujou montre), **Only show for logged in users** (Sèlman montre pou itilizat ki log in), oswa **Only show for guests** (Sèlman montre pou yon vizitè).
+Apre sa, mete vizibilite etap la. Ou ka chwazi ant **Toujou montre** , **Montre sèlman pou itilizatè ki konekte** oswa **Montre sèlman pou envite**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Opsyon vizibilite etap finalizasyon acha](/img/config/checkout-form-step-visibility.png)
 
-Finalman, configure le style de chaque étape. Sa yo se pa obligatwa (optional).
+Finalman, konfigire estil etap la. Sa yo se chan opsyonèl.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Konfigirasyon estil etap finalizasyon acha](/img/config/checkout-form-step-style.png)
 
-Kounye, se lè pou nou ajoute champs nan premye etap nou an. Sen jis klike sou **Add New Field** epi chwazi kalite seksyon ou vle a.
+Kounye a, li lè pou ajoute chan nan premye etap nou an. Jis klike sou **Ajoute Nouvo Chan** epi chwazi kalite seksyon ou vle a.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Bouton Ajoute Nouvo Chan](/img/config/checkout-form-add-field-button.png)![Meni deroulan seleksyon kalite chan](/img/config/checkout-form-field-type-dropdown.png)
 
-Chak champ gen diferan paramèt pou ou ranpli. Pou kòmansman sa a, nou pral chwazi champ **Username**.
+Chak chan gen diferan paramèt pou ranpli. Pou premye antre sa a, nou pral chwazi chan **Non itilizatè** a.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Konfigirasyon chan Non itilizatè](/img/config/checkout-form-username-content.png)![Paramèt chan Non itilizatè](/img/config/checkout-form-username-visibility.png)![Paramèt adisyonèl chan Non itilizatè](/img/config/checkout-form-username-style.png)
 
-Ou ka ajoute yon sans etap ak champ ou bezwen. Pou montre pwodwi ou pou kliyan yo chwazi youn, itilize champ **Pricing Table**. Si ou vle pèmèt kliyan w chwazi yon template, ajoute champ **Template Selection**. E konsa.
+Ou ka ajoute otan etap ak chan ou bezwen. Pou montre pwodwi ou yo pou kliyan ou yo chwazi youn, sèvi ak chan Tablo Pri a. Si ou vle kite kliyan ou yo chwazi yon modèl, ajoute chan Seleksyon Modèl la. Epi konsa.
 
-_**Nòt:** Si ou kreye yon pwodwi apre ou fin kreye fòm checkout ou a, ou pral bezwen ajoute pwodwi a nan seksyon Pricing Table la. Si ou pa ajoute l, pwodwi a p ap parèt pou kliyan ou yo sou paj registrasyon an._
+![Editè fòm finalizasyon acha ak chan seleksyon modèl](/img/config/checkout-form-with-template-field.png)
 
-_**Nòt 2:** username, email, password, site title, site URL, order summary, payment, ak bouton submit se champs obligatwa pou kreye yon fòm checkout._
+_**Nòt:** Si ou kreye yon pwodwi apre ou fin kreye fòm finalizasyon acha ou a, w ap bezwen ajoute pwodwi a nan seksyon Tablo Pri a. Si ou pa ajoute li, pwodwi a p ap parèt pou kliyan ou yo sou paj enskripsyon an._
 
-Pandans ou ap travay sou fòm checkout ou a, ou ka toujou itilize bouton Preview pou wè kijan kliyan ou yo pral wè fòm la. Ou ka tou chanje ant vizyon kòm yon itilizat ki egziste deja oswa yon vizitè.
+_**Nòt 2:** non itilizatè, imèl, modpas, tit sit, URL sit, rezime kòmann, peman, ak bouton soumèt se chan obligatwa pou kreye yon fòm finalizasyon acha._
 
-Finalman, nan **Advanced Options**, ou ka configure mesaj pou paj **Thank You** la, ajoute des snippets pou swiv konversions, ajoute CSS koutim pou fòm checkout ou a, oswa limite li pou kèk peyi espesifik.
+Pandan w ap travay sou fòm finalizasyon acha ou a, ou ka toujou sèvi ak bouton Aperçu a pou wè kijan kliyan ou yo pral wè fòm nan. Ou ka tou altène ant afichaj kòm yon itilizatè ki deja egziste oswa yon vizitè.
 
-![Advanced Options with Thank You page, conversion tracking, and custom CSS](/img/config/checkout-form-advanced.png)
+![Bouton Aperçu sou editè fòm finalizasyon acha a](/img/config/checkout-form-preview-button.png)![Aperçu fòm finalizasyon acha kòm vizitè oswa itilizatè ki deja egziste](/img/config/checkout-form-preview-modal.png)
 
-Ou ka tou active oswa disable fòm checkout ou manman an toggler opisyon sa a nan kolòn ki sou la, oubyen delete li pèmanan.
+Finalman, nan **Opsyon Avanse** ou ka konfigire mesaj pou paj **Mèsi** a, ajoute snippets pou swiv konvèsyon, ajoute CSS pèsonalize nan fòm finalizasyon acha ou a oswa limite li pou sèten peyi.
 
-![Active toggle and delete option for checkout form](/img/config/checkout-form-active.png)
+![Opsyon Avanse ak paj Mèsi, swivi konvèsyon, ak CSS pèsonalize](/img/config/checkout-form-advanced.png)
 
-Pa bliye pou w save fòm checkout ou!
+Ou ka tou aktive oswa dezaktive fòm finalizasyon acha ou a manyèlman lè ou chanje opsyon sa a nan kolòn adwat la, oswa efase fòm nan nèt ale.
 
-![Save Checkout Form button](/img/config/checkout-form-save.png)
+![Bouton aktive/dezaktive ak opsyon efase pou fòm finalizasyon acha](/img/config/checkout-form-active.png)
 
-Pou jwenn shortcode fòm ou a, klike sou **Generate Shortcode** epi copie rezilta ki montre nan fenèt modal la.
+Pa bliye sove fòm finalizasyon acha ou a!
 
-![Generate Shortcode modal with shortcode to copy](/img/config/checkout-form-editor.png)
+![Bouton Sove Fòm Finalizasyon Acha](/img/config/checkout-form-save.png)
 
-_**Note:** Ou pral bezwen ajoute shortcode sa a nan paj registration ou pou w ka ajoute fòm checkout sa a ladan li._
+Pou jwenn shortcode fòm ou an klike sou **Jenere Shortcode** epi kopye rezilta ki parèt sou fenèt modal la.
 
-## Pre-seleman pwodwi ak template yo atravè URL parameters:
+![Modal Jenere Shortcode ak shortcode pou kopye](/img/config/checkout-form-editor.png)
 
-Si ou vle kreye tab pri yo koutimaye pou pwodwi ou epi pre-seleman sou fòm checkout la pwodwi oswa template ki chwazi pa kliyan nan tab pri ou a oubyen paj template ou a, ou ka itilize URL parameters pou sa.
+_**Nòt:** W ap bezwen ajoute shortcode sa a sou paj enskripsyon ou an pou fòm finalizasyon acha sa a ajoute ladan l._
 
-### **Pou plan yo:**
+## Pre-seleksyone pwodwi ak modèl atravè paramèt URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Ale nan **Ultimate Multisite > Products > Select a plan**. Ou dwe wè bouton **Click to copy Shareable Link** an lopital la. Sa se link ou ka itilize pou pre-seleman plan espesifik sa a sou fòm checkout ou a.
+Si ou vle kreye tablo pri pèsonalize pou pwodwi ou yo epi pre-seleksyone sou fòm finalizasyon acha a pwodwi oswa modèl kliyan ou a chwazi nan tablo pri ou oswa paj modèl yo, ou ka itilize paramèt URL pou sa.
 
-![Product page with shareable link button](/img/config/products-list.png)
+### **Pou plan yo:** {#for-plans}
 
-Note ke sa link shareable sa bon sèlman valide pou **Plans**. Ou pa ka itilize link shareable pou packages oswa services.
+Ale nan **Ultimate Multisite > Pwodwi > Chwazi yon plan**. Ou ta dwe wè bouton **Klike pou kopye Lyen Pataj** la anlè paj la. Sa a se lyen ou ka itilize pou pre-seleksyone plan espesifik sa a sou fòm finalizasyon acha ou a.
 
-### Pou templates:
+![Paj pwodwi ak bouton lyen pataj](/img/config/products-list.png)
 
-Si ou vle pre-sélectionner site templates sou fòm checkout ou, ou ka itilize paramèt la: **?template_id=X** sou URL paj registrasyon ou. "X" la dwe ranplase pa **numè ID template site**. Pou jwenn numè sa a, ale nan **Ultimate Multisite > Sites**.
+Remake ke lyen pataj sa a valab sèlman pou **Plan**. Ou pa ka itilize lyen pataj pou pakè oswa sèvis.
 
-Klike sou **Manage** anba site template ou vle itilize a. Ou pral wè numè SITE ID la. Sèlman itilize numè sa a pou site template espesifik sa a pou li pre-sélectionne sou fòm checkout ou. Nan ka nou la, paramèt URL la ta ye **?template_id=2**.
+### Pou modèl yo: {#for-templates}
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Si ou vle pre-seleksyone modèl sit sou fòm finalizasyon acha ou a, ou ka itilize paramèt la: **?template_id=X** sou URL paj enskripsyon ou an. "X" la bezwen ranplase pa **nimewo ID modèl sit la**. Pou jwenn nimewo sa a, ale nan **Ultimate Multisite > Sit**.
 
-Imajine ke sit entènat nou an se [**www.mynetwork.com**](http://www.mynetwork.com) epi paj registrasyon nou ak fòm checkout la ki nan /register page a. Tout URL la ak site template pre-sélectionne sa a ap sanble tankou [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+Klike sou **Jere** jis anba modèl sit ou vle itilize a. Ou pral wè nimewo SITE ID la. Jis itilize nimewo sa a pou modèl sit espesifik sa a pou li pre-seleksyone sou fòm finalizasyon acha ou a. Nan ka pa nou isit la, paramèt URL la ta dwe **?template_id=2**.
 
-E si ou vle, ou ka pre-sélectionne tou de pwodwi ak templates ou sou fòm checkout ou. Tout sa ou bezwen fè se kopye link shareable plan an epi kole paramèt template la nan fen li. Li ap sanble tankou [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+![Lis sit ki montre ID modèl sit](/img/config/site-templates-list.png)
+
+Ann di sit entènèt rezo nou an se [**www.mynetwork.com**](http://www.mynetwork.com) epi paj enskripsyon nou an ak fòm finalizasyon acha nou an sitiye sou paj **/register** la. URL konplè a ak modèl sit sa a ki pre-seleksyone ap sanble ak [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Epi si ou vle, ou ka pre-seleksyone ni pwodwi ni modèl pou fòm finalizasyon acha ou a. Tout sa ou bezwen fè se kopye lyen pataj plan an epi kole paramèt modèl la nan fen an. Li pral sanble ak [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

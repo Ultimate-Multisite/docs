@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Customizatio panelis Tuum Cum PRO Theme
+# Customizatio panelis Tuum Cum PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 Frequentemente cum operibus pro clientibus necessitas habemus ut clientibus nostris experientiam in dashboard WordPress personalem daremus. Si quaeritis aspectum et sensum melius professionale, PRO Theme tibi adiuvat.
 

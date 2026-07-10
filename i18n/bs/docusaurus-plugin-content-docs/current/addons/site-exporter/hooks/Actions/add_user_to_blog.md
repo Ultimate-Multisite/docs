@@ -4,11 +4,11 @@ title: Akcija - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Action: add_user_to_blog
+# Action: add_user_to_blog {#action-addusertoblog}
 
 Pokreće se odmah nakon što se korisnik doda na sajt.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Pokreće se odmah nakon što se korisnik doda na sajt.
 | $role | `string` | Uloga korisnika. |
 | $blog_id | `int` | ID bloga. |
 
-### Od
+### Od {#since}
 
 - MU: MU
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) na liniji 174

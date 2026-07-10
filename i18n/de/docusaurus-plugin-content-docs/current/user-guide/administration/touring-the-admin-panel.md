@@ -1,86 +1,122 @@
 ---
-title: Tour durch das Admin-Panel
+title: Rundgang durch das Admin-Panel
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Durch das Admin-Panel führen
+# Rundgang durch das Admin-Panel {#touring-the-admin-panel}
 
-Ultimate Multisite soll so einfach und selbsterklärend wie möglich sein, aber mit einem so leistungsstarken Tool kann es hilfreich sein, eine geführte Tour zu haben. Lass uns die Admin-Seiten durchgehen, um dir den Einstieg zu erleichtern.
+Ultimate Multisite soll so einfach und selbsterklärend wie möglich sein, aber bei einem so leistungsstarken Tool kann eine geführte Tour hilfreich sein. Gehen wir die Admin-Seiten durch, damit du dich zurechtfindest.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Das Ultimate Multisite **Dashboard** zeigt grundlegende Berichte und Analysen, einschließlich Einnahmen, Site-Aktivitäten, Mitgliederwachstum, Besucherzahlen und geografische Daten.
+Das Ultimate Multisite **Dashboard** zeigt grundlegende Berichte und Analysen, einschließlich Umsätzen, Aktivitäten von Websites, Wachstum von Mitgliedschaften, Besucherzahlen und geografischen Daten.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Hier ist eine vollständige Ansicht des Dashboards:
 
-**Checkout Forms** geben dir die Flexibilität, benutzerdefinierte Registrierungsseiten zu erstellen. Du kannst Felder anpassen, benutzerdefinierte Klassen und Skripte einfügen und den Zugriff basierend auf dem Land oder Standort des Besuchers einschränken.
+![Ultimate Multisite Dashboard vollständige Seite](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms Liste](/img/admin/checkout-forms-list.png)
+Und der untere Abschnitt des Dashboards:
 
-## Products
+![Ultimate Multisite Dashboard unterer Abschnitt](/img/admin/um-dashboard-bottom.png)
 
-Der **Products**-Bereich ist der Ort, an dem du verschiedene Pläne, Pakete und Dienstleistungen für dein Netzwerk erstellst. Definiere Preise, Abrechnungsfrequenzen sowie Limits & Quoten auf Produktebene.
+Hier ist außerdem eine vollständige Ansicht des Netzwerk-Dashboards:
 
-![Produkte Liste](/img/admin/products-list.png)
+![Network Dashboard vollständige Seite](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Checkout-Formulare {#checkout-forms}
 
-Die **Memberships**-Seite zeigt alle Abonnements in deinem Netzwerk. Überprüfe und bearbeite Abonnementdetails, einschließlich Pläne, Produkte, Abrechnungsbeträge und -frequenzen, Zahlungsverlauf und Zeitstempel.
+**Checkout-Formulare** geben dir die Flexibilität, benutzerdefinierte Registrierungsseiten zu erstellen. Du kannst Felder anpassen, benutzerdefinierte Klassen und Skripte einfügen und den Zugriff basierend auf dem Land oder Standort des Besuchers einschränken.
 
-![Mitgliedschaften Liste](/img/admin/memberships-list.png)
+![Liste der Checkout-Formulare](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Produkte {#products}
 
-Die **Payments**-Seite bietet einen schnellen Überblick über die Zahlungshistorie in deinem gesamten Netzwerk, mit detaillierten Transaktionsinformationen, einschließlich spezifischer Produkte und Beträge.
+Der Abschnitt **Produkte** ist der Ort, an dem du verschiedene Tarife, Pakete und Dienste für dein Netzwerk erstellst. Lege Preise, Abrechnungsintervalle sowie Limits & Kontingente auf Produktebene fest.
 
-![Zahlungen Liste](/img/admin/payments-list.png)
+![Produktliste](/img/admin/products-list.png)
 
-## Customers
+## Mitgliedschaften {#memberships}
 
-Die **Customers**-Seite zeigt alle Mitglieder, die in deinem Netzwerk registriert sind, mit grundlegenden Benutzerdaten, einschließlich Name, E-Mail-Adresse, letztem Login und einem „switch to“-Link zum Einloggen in ihre Subsite.
+Die Seite **Mitgliedschaften** zeigt alle Abonnements in deinem Netzwerk. Überprüfe und bearbeite Abonnementdetails, einschließlich Tarifen, Produkten, Abrechnungsbeträgen und -intervallen, Zahlungshistorie und Zeitstempeln.
 
-![Kunden Liste](/img/admin/customers-list.png)
+![Liste der Mitgliedschaften](/img/admin/memberships-list.png)
 
-## Sites
+## Zahlungen {#payments}
 
-Die **Sites**-Seite listet alle Subsites in deinem Netzwerk auf, einschließlich Site-Vorlagen und kundenbesitzte Sites. Verwalte einfach zugeordnete Domains, Limits & Quoten, Plugins und Themes sowie Site-Vorschaubilder.
+Die Seite **Zahlungen** bietet einen schnellen Überblick über die Zahlungshistorie in deinem gesamten Netzwerk, mit detaillierten Transaktionsinformationen einschließlich bestimmter Produkte und Beträge.
 
-![Seiten Liste](/img/admin/sites-list.png)
+![Zahlungsliste](/img/admin/payments-list.png)
 
-## Domains
+## Kunden {#customers}
 
-Die **Domains**-Seite ist den benutzerdefinierten Domains gewidmet, die Subsites zugeordnet sind. Als Super-Admin kannst du benutzerdefinierte Domainnamen manuell hinzufügen oder zuordnen und DNS-Einträge sowie Protokolle anzeigen.
+Die Seite **Kunden** zeigt alle in deinem Netzwerk registrierten Mitglieder mit grundlegenden Benutzerinformationen, einschließlich Name, E-Mail-Adresse, letzter Anmeldung und einem „Wechseln zu“-Link zum Einloggen in ihre Subsite.
 
-![Domänen Liste](/img/admin/domains-list.png)
+![Kundenliste](/img/admin/customers-list.png)
 
-## Discount Codes
+## Websites {#sites}
 
-**Discount Codes** ermöglichen es dir, Gutscheincodes zu erstellen, um deinen Endbenutzern Rabatte anzubieten. Gib den Rabattwert an und wähle gezielte Benutzer oder Gruppen aus.
+Die Seite **Websites** listet alle Subsites in deinem Netzwerk auf, einschließlich Website-Vorlagen und kundeneigener Websites. Verwalte einfach zugeordnete Domains, Limits & Kontingente, Plugins und Themes sowie Website-Thumbnails.
 
-![Rabattcodes Liste](/img/admin/discount-codes-list.png)
+![Website-Liste](/img/admin/sites-list.png)
 
-## Broadcasts
+## Domains {#domains}
 
-**Broadcasts** ist ein Tool zum Ausrollen von Ankündigungen oder zum Senden privater Nachrichten an deine Subsite-Benutzer. Zielgerichtet kannst du bestimmte Benutzergruppen basierend auf dem Plan oder Produkt, dem sie abonniert sind, ansprechen.
+Die Seite **Domains** ist benutzerdefinierten Domains gewidmet, die Subsites zugeordnet sind. Als Super-Admin kannst du benutzerdefinierte Domainnamen manuell hinzufügen oder zuordnen sowie DNS-Einträge und Protokolle ansehen.
 
-![Broadcasts Liste](/img/admin/broadcasts-list.png)
+![Domain-Liste](/img/admin/domains-list.png)
 
-## Settings
+## Rabattcodes {#discount-codes}
 
-Die **Settings**-Seite ist der Ort, an dem du Ultimate Multisite konfigurierst — Registrierungs-Einstellungen, Zahlungen, API und Webhooks, Domain-Mapping und weitere Integrationen.
+**Rabattcodes** ermöglichen dir, Gutscheincodes zu erstellen, um deinen Endbenutzern Rabatte anzubieten. Lege den Rabattwert fest und richte ihn auf bestimmte Benutzer oder Gruppen aus.
 
-![Einstellungen Seite](/img/admin/settings-general.png)
+![Liste der Rabattcodes](/img/admin/discount-codes-list.png)
 
-## Events
+## Broadcasts {#broadcasts}
 
-Die **Events**-Seite führt ein Protokoll aller Ereignisse und Logs in deinem Netzwerk. Sie verfolgt Aktivitäten wie Planänderungen, Anmeldungen und andere Bewegungen — nützlich zur Überwachung deines Multisite.
+**Broadcasts** ist ein Tool zum Ausrollen von Ankündigungen oder zum Senden privater Nachrichten an deine Subsite-Benutzer. Richte dich an bestimmte Benutzergruppen basierend auf dem Tarif oder Produkt, das sie abonniert haben.
 
-![Ereignisse Liste](/img/admin/events-list.png)
+![Broadcasts-Liste](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Einstellungen {#settings}
 
-**Webhooks** ermöglichen es dir, Daten an eine andere Anwendung zu übermitteln. Nützlich zum Senden von Daten von Ultimate Multisite zu Plattformen wie Zapier.
+Die Seite **Einstellungen** ist der Ort, an dem du Ultimate Multisite konfigurierst — Registrierungseinstellungen, Zahlungen, API und Webhooks, Domain-Zuordnung und andere Integrationen.
 
-![Webhooks Liste](/img/admin/webhooks-list.png)
+Die Einstellungen des AI-Connectors listen die derzeit unterstützten OAuth-Anbieter-Pools auf: Anthropic Max, OpenAI ChatGPT/Codex und Google AI Pro. Jede Anbieterkarte ermöglicht Super-Admins, Accounts zu verbinden, gespeicherte Accounts zu aktualisieren, Accounts per E-Mail zu entfernen und den manuellen OAuth-Fallback zu verwenden, wenn eine sandboxed Umgebung die Browser-Weiterleitung blockiert. Cursor Pro-Einrichtungsoptionen wurden aus dem Admin-Panel entfernt.
+
+ChatGPT/Codex-Accounts unterstützen connector-gestützte Tool-Nutzung, sofern die Operation Tools zulässt, sodass Admin-Workflows, die von connector-unterstützten Operationen abhängen, das Codex-Tool-Verhalten nutzen können, nachdem der OpenAI-Account verbunden wurde.
+
+![Einstellungsseite](/img/admin/settings-general.png)
+
+Hier ist eine vollständige Ansicht der allgemeinen Einstellungsseite:
+
+![Allgemeine Einstellungen vollständige Seite](/img/admin/settings-general-full.png)
+
+Und die Seite mit den E-Mail-Einstellungen:
+
+![E-Mail-Einstellungen vollständige Seite](/img/admin/settings-emails-full.png)
+
+Und die Seite mit den Zahlungseinstellungen:
+
+![Zahlungseinstellungen vollständige Seite](/img/admin/settings-payments-full.png)
+
+Und der untere Abschnitt der Zahlungseinstellungen:
+
+![Zahlungseinstellungen unterer Abschnitt](/img/admin/settings-payments-bottom.png)
+
+Und die Seite mit den Website-Einstellungen:
+
+![Website-Einstellungen vollständige Seite](/img/admin/settings-sites-full.png)
+
+## Ereignisse {#events}
+
+Die Seite **Ereignisse** führt ein Protokoll aller Ereignisse und Logs in deinem Netzwerk. Sie verfolgt Aktivitäten wie Tarifänderungen, Registrierungen und andere Vorgänge — nützlich für die Überwachung deiner Multisite.
+
+![Ereignisliste](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks** ermöglichen dir, Daten an eine andere Anwendung zu übermitteln. Nützlich zum Senden von Daten aus Ultimate Multisite an Plattformen wie Zapier.
+
+![Webhooks-Liste](/img/admin/webhooks-list.png)

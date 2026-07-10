@@ -3,13 +3,13 @@ title: Upozornenie na odstránenie režimu budovania webovej stránky
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Upozornenie o odstránení režimu Site Builder
+# Upozornenie o odstránení režimu Site Builder {#site-builder-mode-removal-notice}
 
 **Režim Site Builder bol odstránený v Superdav AI Agent v1.12.0.** Ak ste používali režim Site Builder, mali ste sa presunúť na **agent Setup Assistant** pre vytváranie tém a konfiguráciu webových stránok.
 
-## Čo sa stalo?
+## Čo sa stalo? {#what-happened}
 
-### Režim Site Builder (Starý)
+### Režim Site Builder (Starý) {#site-builder-mode-legacy}
 
 Režim Site Builder bol vizuálna asistenta založený na postupoch (wizard), ktorý servoval na:
 
@@ -18,7 +18,7 @@ Režim Site Builder bol vizuálna asistenta založený na postupoch (wizard), kt
 - Výber tém
 - Nastavenie počiatku obsahu
 
-### Čo to nahradia?
+### Čo to nahradia? {#what-replaced-it}
 
 **Agent Setup Assistant** teraz spravuje všetko, čo robil Site Builder, s:
 
@@ -27,15 +27,15 @@ Režim Site Builder bol vizuálna asistenta založený na postupoch (wizard), kt
 - Integráciou s onboardingom Theme Builder
 - Trvalou pamäťou `site_brief` pre budúce oturá
 
-## Ak ste používali režim Site Builder
+## Ak ste používali režim Site Builder {#if-you-were-using-site-builder-mode}
 
-### Vaše stránky sú v bezpečí
+### Vaše stránky sú v bezpečí {#your-sites-are-safe}
 
 - Stránky vytvorené s použitím režimu Site Builder stále fungujú
 - Žádny straty dát ani zrušenie stránok
 - Môžete svoje stránky pokračovať v normálnom správaní
 
-### Presuňte sa na agent Setup Assistant
+### Presuňte sa na agent Setup Assistant {#migrate-to-setup-assistant-agent}
 
 Pre nové nastavenie stránok alebo zmeny tém použite agent Setup Assistant:
 
@@ -51,7 +51,7 @@ alebo
 
 Agent Setup Assistant poskytuje tú istú funkčnosť s väčšou flexibilitou.
 
-## Porovnanie: Site Builder vs. Setup Assistant
+## Porovnanie: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Funkcia | Site Builder (Odstránený) | Setup Assistant (Nový) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Agent Setup Assistant poskytuje tú istú funkčnosť s väčšou flexibilitou.
 | Budúce oturá | Opakovanie nastavenia | Použitie uloženého site_brief |
 | Flexibilita | Fixe pracovný postup | Adaptívny rozhovor |
 
-## Presun tie na agent Setup Assistant
+## Presun tie na agent Setup Assistant {#migrating-to-setup-assistant-agent}
 
-### Pre nové stránky
+### Pre nové stránky {#for-new-sites}
 
 Namísto používania režimu Site Builder:
 
@@ -76,7 +76,7 @@ Namísto používania režimu Site Builder:
    - Generovanie témy
    - Počiatokové nastavenia
 
-### Pre existujúce webové stránky
+### Pre existujúce webové stránky {#for-existing-sites}
 
 Ak máte existujúcu webovú stránku z režimu Site Builder:
 
@@ -85,7 +85,7 @@ Ak máte existujúcu webovú stránku z režimu Site Builder:
 3. Agent pomocníka na nastavenie vám pomôže vytvoriť novú tému
 4. Vaše dátum webovej stránky zostávajú nezmenené
 
-### Pre zmeny v téme
+### Pre zmeny v téme {#for-theme-changes}
 
 Namísto výberu témy v režime Site Builder:
 
@@ -95,9 +95,9 @@ Namísto výberu témy v režime Site Builder:
    - Generuje prispôsobenú tému
    - Aktivuje ju na vašej stránke
 
-## Kľúčové rozdielu
+## Kľúčové rozdielu {#key-differences}
 
-### Režim Site Builder
+### Režim Site Builder {#site-builder-mode}
 
 ```
 1. Vyberte šablon
@@ -106,7 +106,7 @@ Namísto výberu témy v režime Site Builder:
 4. Hotovo
 ```
 
-### Agent pomocníka na nastavenie (Setup Assistant Agent)
+### Agent pomocníka na nastavenie (Setup Assistant Agent) {#setup-assistant-agent}
 
 ```
 1. Popíšte účel vašej webovej stránky
@@ -117,42 +117,42 @@ Namísto výberu témy v režime Site Builder:
 6. Zhrnutie webovej stránky je uložené na budúce oturáčky
 ```
 
-## Výhody agent pomocníka na nastavenie (Setup Assistant Agent)
+## Výhody agent pomocníka na nastavenie (Setup Assistant Agent) {#benefits-of-setup-assistant-agent}
 
-### Viac flexibilita
+### Viac flexibilita {#more-flexible}
 
 - Popíšte svoju webovú stránku prirodzeným jazykom
 - Dostávajte prispôsobené odporúčania
 - Prispôsobte sa vašim špecifickým potrebám
 
-### Lepšie prispôsobenie
+### Lepšie prispôsobenie {#better-customization}
 
 - Generovanie prispôsobeného témy
 - Presnenia rozhodnutí o systéme dizajnu (Design System)
 - Trvalé dizajné tokeny (design tokens)
 
-### Trvalá pamäť
+### Trvalá pamäť {#persistent-memory}
 
 - Vaše `site_brief` je uložené
 - Budúci agenti pochopujú vašu webovú stránku
 - Nejde opäť opakovať informácie o nastavení
 
-### Integrovaný pracovný postup (Integrated Workflow)
+### Integrovaný pracovný postup (Integrated Workflow) {#integrated-workflow}
 
 - Onboarding témy Builder
 - Skilність estetiky Design System
 - Šablóna pre kontrolné viditeľnosti (Visibility controls)
 - Všetko spolu funguje hladko
 
-## Úprava problémov (Troubleshooting)
+## Úprava problémov (Troubleshooting) {#troubleshooting}
 
-### Nemôžem nájsť režim Site Builder
+### Nemôžem nájsť režim Site Builder {#i-cant-find-site-builder-mode}
 
 Režim Site Builder bol odstránený. Použite agent pomocníka na nastavenie namiesto:
 
 "Pomôžte mi nastaviť novú webovú stránku"
 
-### Chcem si vytvoriť ponovný web z Site Builderu
+### Chcem si vytvoriť ponovný web z Site Builderu {#i-want-to-recreate-a-site-from-site-builder}
 
 Môžete ho vytvoriť pomocou asistenta Setup:
 
@@ -161,7 +161,7 @@ Môžete ho vytvoriť pomocou asistenta Setup:
 3. Agent vygeneruje podobný tému (theme)
 4. Váš `site_brief` sa uloží na budúce odlíšenie
 
-### Môj existujúci web z Site Builderu nefunguje
+### Môj existujúci web z Site Builderu nefunguje {#my-existing-site-builder-site-isnt-working}
 
 Existujúce webové stránky vytvorené v režime Site Builder stále fungujú. Ak máte problémy:
 
@@ -170,7 +170,7 @@ Existujúce webové stránky vytvorené v režime Site Builder stále fungujú. 
 3. Skontrolujte si logy chýb WordPressu
 4. Kontaktujte podporu, ak problémy zostávajú
 
-### Môžem stále používať moje staré šablóny z Site Builderu?
+### Môžem stále používať moje staré šablóny z Site Builderu? {#can-i-still-use-my-old-site-builder-templates}
 
 Šablóny z Site Builderu už nie sú dostupné. Avšak:
 
@@ -178,14 +178,14 @@ Existujúce webové stránky vytvorené v režime Site Builder stále fungujú. 
 - Môžete si vytvoriť podobné webové stránky pomocou asistenta Setup
 - Agent asistent Setup ponúka viac možností personalizácie
 
-## Nasledujúce kroky
+## Nasledujúce kroky {#next-steps}
 
 1. **Pre nové webové stránky**: Použite agentas Setup
 2. **Pre existujúce webové stránky**: Pokračujte v ich používaní tak, ako sú
 3. **Pre zmeny témy**: Požiadajte o pomoc asistenta Setup
 4. **Pre úpravu dizajnu**: Použite schopnosť Design System Aesthetics
 
-## Spojené témata
+## Spojené témata {#related-topics}
 
 - **Onboarding témy Builder**: Prívodné nastavenie pre prispôsobené témy
 - **Agent asistent Setup**: Nastavenie webovej stránky vedené agentom

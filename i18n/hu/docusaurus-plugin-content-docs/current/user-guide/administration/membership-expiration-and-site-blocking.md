@@ -3,11 +3,11 @@ title: Tagság Lejárta és Oldal Blokkolása
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Tagság Lejárta és Oldal Blokkolása
+# Tagság Lejárta és Oldal Blokkolása {#membership-expiration-and-site-blocking}
 
 Ez az útmutató elmagyarázza, hogyan kezeli az Ultimate Multisite a tagság lejárását, a próbaidő végének és az oldali (frontend) blokkolást. Leírja a tagság teljes életciklusát az aktív állapottól a lejárttá, azokat a beállításokat, amelyek szabályozzák, hogy blokkolja-e az oldalt, és mit ellenőrizni kell, ha a tagság lejárása után is elérhető marad az oldal.
 
-## Tagsági Státusz Életciklusát
+## Tagsági Státusz Életciklusát {#membership-status-lifecycle}
 
 Az Ultimate Multisite-ban lévő minden tagságnak az alábbi státuszok valamelyikét kell rendelkeznie:
 
@@ -24,7 +24,7 @@ Az ingyenes tagságok nem lejáranak automatikusan. Az Ultimate Multisite úgy k
 | **Expired** | Lejárta a lejárati dátum és a kedvezmény időszak anélküli megújulás nélkül |
 | **Cancelled** | Explicit módon lemondta az ügyfél vagy az adminisztrátor |
 
-### Hogyan Válnak Lejárttá a Tagságok
+### Hogyan Válnak Lejárttá a Tagságok {#how-memberships-transition-to-expired}
 
 Az Ultimate Multisite minden órában futtat egy háttérellenőrzést, amely keresi azokat a tagságokat, amelyeket lejárttá kell jelölni. Ez az ellenőrzés az [Action Scheduler](https://actionscheduler.org/) segítségével (nem közvetlenül a WP-Cronnal) történik, és a `wu_membership_check` terjedelemben beállított műveletként fut.
 
@@ -34,7 +34,7 @@ A lejáratellenőrzés alapértelmezés szerint **3 napos beépített kedvezmén
 A 3 napos lejárat kedvezmény időszaka különálló az alább leírt Frontend Block Grace Period (Oldali Blokkolási Kedvezmény Időszak) beállításától. A lejárat kedvezmény időszaka szabályozza, hogy mikor **változik a státusz** aktív/on-hold-ról expired-re. A frontend block grace period szabályozza, hogy mikor **blokkolja az oldalt**, miután a státusz már megváltozott.
 :::
 
-#### Automatikusan Megújuló vs. Nem Automatikusan Megújuló Tagságok
+#### Automatikusan Megújuló vs. Nem Automatikusan Megújuló Tagságok {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Ez a különbség kritikus a lejárat viselkedés megértéséhez:
 
@@ -42,7 +42,7 @@ Ez a különbség kritikus a lejárat viselkedés megértéséhez:
 
 - **Automatikusan megújuló tagságok** (`auto_renew = true`): A cron lejáratellenőrzés **teljesen kihagyja ezeket**. A fizetési gateway (Stripe, PayPal stb.) várhatóan értesíti az Ultimate Multisite-ot webhook segítségével, amikor egy előfizetés sikertelen vagy lemondott. Ha a webhookot nem kapják meg – például rosszul beállított endpoint miatt, gateway meghibásodása miatt, vagy a rendszeren kívül lemondott előfizetés miatt – a tagság végtelenül `active` állapotban maradhat, még a lejárat dátumát követően is.
 
-### Hogyan Végeznek a Próbaidők
+### Hogyan Végeznek a Próbaidők {#how-trials-end}
 
 Amikor egy próbaidőszakban lévő tagság próbaidője lejár, a rendszer:
 
@@ -52,11 +52,11 @@ Amikor egy próbaidőszakban lévő tagság próbaidője lejár, a rendszer:
 
 Ez a folyamat ugyanazon az óránkénti menetrendben fut, mint a rendszeres lejáratellenőrzés, de **csak a nem automatikusan megújuló tagságok esetén**. Az automatikusan megújuló próbaidők esetén a fizetési gateway kezeli a próbaidőből fizetős előfizetésre való átállást.
 
-## Oldali (Frontend)Hozzáférés Blokkolása
+## Oldali (Frontend)Hozzáférés Blokkolása {#block-frontend-access}
 
 Alapértelmezés szerint, amikor egy tagság lejár vagy on hold állapotba kerül, **csak a wp-admin dashboard korlátozva van**. Az oldal nyilvános oldala (frontend) elérhető marad az látogatók számára. Ha az oldali hozzáférés blokkolása is szükséges, ki kell kapcsolni a **Block Frontend Access** (Oldali Hozzáférés Blokkolása) beállítást.
 
-### A Beállítás Konfigurálása
+### A Beállítás Konfigurálása {#configuring-the-setting}
 
 Navigáljon az **Ultimate Multisite > Settings > Memberships** menüpontra, és kapcsolja be a **Block Frontend Access** beállítást.
 
@@ -74,7 +74,7 @@ Három kapcsolódó beállítás szabályozza ezt a viselkedést:
 | **Frontend Block Grace Period** | Napok száma, amellyel várni kell a tagság inaktívvá válását, mielőtt blokkolja. Állítsa `0`-ra, ha azonnali blokkolást szeretne. | 0 |
 | **Frontend Block Page** | Egy oldal az fő oldalon, hová irányítja a látogatókat, ha egy oldal blokkolva van. Ha nincs beállítva, a látogatók egy általános "Oldal nem elérhető" üzenetet látnak. | Nincs |
 
-### Mit Látnak a Látogatók, Ha Egy Oldal Blokkolva Van
+### Mit Látnak a Látogatók, Ha Egy Oldal Blokkolva Van {#what-visitors-see-when-a-site-is-blocked}
 
 Ha a frontend hozzáférés blokkolva van, a látogatók az oldalon vagy:
 
@@ -83,7 +83,7 @@ Ha a frontend hozzáférés blokkolva van, a látogatók az oldalon vagy:
 
 Az oldal adminok még mindig beléphetnek – a belépő oldal soha nem blokkolható.
 
-### Mit Blokkol és Mikor
+### Mit Blokkol és Mikor {#what-gets-blocked-and-when}
 
 A blokkolási viselkedés a tagság státuszától függ:
 
@@ -104,26 +104,26 @@ Még ha egy próbaidőszak lett, egy `trialing` státuszú tagságot **nem** blo
 A lemondott tagságok mindig blokkolva vannak, ha elüti a lejárat dátumát, függetlenül attól, hogy be van kapcsolva-e a Block Frontend Access. A Frontend Block Grace Period nem érvényesül a lemondott tagságokra.
 :::
 
-## Hibaelhárítás: Oldalak, Amelyek Lejárás Után is Elérhetőek
+## Hibaelhárítás: Oldalak, Amelyek Lejárás Után is Elérhetőek {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Ha az oldalak nyilvánosan elérhetőek maradnak a tagság lejárása után, haladjon végig az alábbi ellenőrzések sorrendjében:
 
-### 1. Ellenőrizze, hogy Be van Kapcsolva a Block Frontend Access Beállítása
+### 1. Ellenőrizze, hogy Be van Kapcsolva a Block Frontend Access Beállítása {#1-verify-the-block-frontend-access-setting-is-enabled}
 Menjen az **Ultimate Multisite > Settings > Memberships** menüpontra, és erősítse meg, hogy a **Block Frontend Access** kapcsoló be van kapcsolva. Ez a beállítás **alapértelmezés szerint ki van kapcsolva**, ami azt jelenti, hogy csak a wp-admin korlátozva van, amikor egy tagság inaktívvá válik.
 
-### 2. Ellenőrizze a Frontend Block Grace Period-t
+### 2. Ellenőrizze a Frontend Block Grace Period-t {#2-check-the-frontend-block-grace-period}
 Ugyanazon a beállítási oldalon ellenőrizze a **Frontend Block Grace Period** értékét. Ha ezt 7 napra állította be, például, a frontend nem blokkolja az oldalt, amíg 7 nap nem ment el a tagság lejárat dátumától – még akkor sem, ha a tagság státusza már `expired`.
 
 Állítsa ezt `0`-ra, ha azonnali blokkolást szeretne a tagság inaktívvá válását követően.
 
-### 3. Erősítse Meg, Hogy Megváltozott a Tagság Státusza
+### 3. Erősítse Meg, Hogy Megváltozott a Tagság Státusza {#3-confirm-the-membership-status-has-actually-changed}
 Menjen az **Ultimate Multisite > Memberships** menüpontra, és ellenőrizze a kikerülési tagság státuszát. Ha még mindig `active` státuszt mutat, annak ellenére, hogy elüti a lejárat dátuma, a státusz átmenete nem történt meg. Gyakori okok:
 
 - **A tagság automatikusan megújuló**: Ellenőrizze az `auto_renew` mezőt a tagság szerkesztő oldalán. Ha be van kapcsolva az automatikus megújulás, a lejárat cron folyamata kihagyja ezt a tagságot – a fizetési gatewayre támaszkodik a sikertelenség jelentésére. Ellenőrizze a gateway dashboardját (Stripe, PayPal), hogy megegyezik-e az előfizetés státusza az Ultimate Multisite által mutatottakkal.
 
 - **Nem futott a cron folyamat**: Látja a következő lépést.
 
-### 4. Ellenőrizze, Hogy Fut a Action Scheduler
+### 4. Ellenőrizze, Hogy Fut a Action Scheduler {#4-verify-action-scheduler-is-running}
 Az Ultimate Multisite az Action Scheduler-t használja a cron folyamataihoz. Menjen a **Tools > Scheduled Actions** menüpontra a hálózat admin felületén, és keresse meg:
 
 - **`wu_membership_check`** – Ez egy rendszeresen futó műveletnek kell, hogy legyen, minden órában. Ha hiányzik, a tagságellenőrzések nem programozódnak.
@@ -144,7 +144,7 @@ Hogyan biztosítsuk a megbízható cron futást? Állítsanak be egy rendszer cr
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Ellenőrizze a Gateway Webhook Problémákat (Automatikusan Megújuló Tagságok)
+### 5. Ellenőrizze a Gateway Webhook Problémákat (Automatikusan Megújuló Tagságok) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 Ha a tagság automatikusan megújuló, és a gateway előfizetése lemondásra került vagy sikertelen volt, de az Ultimate Multisite még mindig `active` státuszt mutat:
 
 - **Stripe**: Menjen a Stripe Dashboard > Customers menüpontra, és ellenőrizze az előfizetési státuszt. Ezután ellenőrizze, hogy az endpoint aktív-e a Developers > Webhooks alatt. Az endpointnek az oldalának kell mutatnia, és sikeres kézbesítéseknek kell látszani.
@@ -152,14 +152,14 @@ Ha a tagság automatikusan megújuló, és a gateway előfizetése lemondásra k
 
 Ha a gateway sikertelen előfizetést mutat, de az Ultimate Multisite nem, valószínűleg elveszett a webhook értesítés. Manuálisan módosíthatja a tagság státuszát az **Ultimate Multisite > Memberships > [Edit Membership]** menüpontban.
 
-### 6. Ellenőrizze a Lejárati Kedvezmény Időszakot (Cron Szinten)
+### 6. Ellenőrizze a Lejárati Kedvezmény Időszakot (Cron Szinten) {#6-check-the-expiration-grace-period-cron-level}
 A cron ellenőrzésnek saját kedvezmény időszaka van (alapértelmezés: 3 nap) a tagság lejárttá jelölése előtt. Ez különálló az oldali blokkolási kedvezmény időszakától. Az oldal blokkolásáig geçen teljes idő lehet:
 
 **Lejárati kedvezmény időszaka (3 nap)** + **Oldali blokkolási kedvezmény időszaka (az Ön beállítása)** = Összes késlekedés
 
 Például, alapértelmezett beállításokkal és 7 napos oldali blokkolási kedvezmény időszakkal, akár 10 napig is eltelhet az `date_expiration` dátumától, mielőtt az oldal ténylegesen blokkolná.
 
-### 7. Manuális Lejártatás egy Tagságnak
+### 7. Manuális Lejártatás egy Tagságnak {#7-manually-expire-a-membership}
 Ha azonnal szeretné blokkolni egy oldalt anélkül, hogy várna a cron ciklusra, manuálisan módosíthatja a tagság státuszát:
 
 1. Menjen az **Ultimate Multisite > Memberships** menüpontra
@@ -169,7 +169,7 @@ Ha azonnal szeretné blokkolni egy oldalt anélkül, hogy várna a cron ciklusra
 
 A frontend blokkolás a következő oldal betöltésekor lép életbe (a lejárttá jelölt tagságok esetén a Frontend Block Grace Period-hoz, vagy azonnal a lemondott tagságok esetén).
 
-## Összefoglaló
+## Összefoglaló {#summary}
 
 Az lejárat dátumától az oldal blokkolásáig geçen teljes idővonal:
 
@@ -201,7 +201,7 @@ A lemondott tagságok esetén a folyamat rövidebb:
   Az oldal frontende azonnal blokkolva van
 ```
 
-## Fejlesztői Referencia
+## Fejlesztői Referencia {#developer-reference}
 
 Az alábbi hook-ok és filterek lehetővé teszik a lejárat és blokkolási viselkedés testreszabását:
 

@@ -1,44 +1,44 @@
 ---
 title: Bir Planı Düşürme
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Planı düşürme (v2)
+# Bir planı düşürme (v2) {#downgrading-a-plan-v2}
 
 _**ÖNEMLİ NOT: Bu makale Ultimate Multisite sürüm 2.x için geçerlidir.**_
 
-Plan veya abonelik düşürme, müşterilerinizin sınırlı bir bütçeye sahip olduğunda ya da alt sitelerini çalıştırmak için fazla kaynağa ihtiyaç duymayacaklarına karar verdiklerinde sıkça gerçekleştirdiği bir işlemdir.
+Bir planı veya aboneliği düşürmek, müşterilerinizin sınırlı bir bütçeleri varsa ya da alt sitelerini çalıştırmak için çok fazla kaynağa ihtiyaç duymayacaklarına karar verdilerse yapabilecekleri yaygın bir işlemdir.
 
-## Plan nasıl düşürülür
+## Bir plan nasıl düşürülür {#how-to-downgrade-a-plan}
 
-Müşterileriniz istedikleri zaman alt site yönetici paneline giriş yaparak ve hesap sayfasındaki **Değiştir** düğmesine tıklayarak planlarını düşürebilirler.
+Müşterileriniz, alt site yönetici Dashboard’larına giriş yapıp Account sayfalarının altındaki **Değiştir** seçeneğine tıklayarak planlarını istedikleri zaman düşürebilirler.
 
-![Üyelik altında Değiştir düğmesi bulunan hesap sayfası](/img/admin/memberships-list.png)
+![Üyeliğiniz kartı ve Değiştir düğmesi bulunan müşteri Account sayfası](/img/account-page/membership-change-button.png)
 
 **Değiştir** düğmesine tıklandığında, kullanıcı/müşteri aboneliğini değiştirmek istediği planı seçebileceği ödeme sayfasına yönlendirilir.
 
-![Plan düşürme seçeneklerini gösteren ödeme sayfası](/img/admin/memberships-list.png)
+![Müşteri tarafında plan düşürme seçenekleri sayfası](/img/account-page/downgrade-picker.png)
 
-Bu örnekte, planı **Premium**'dan **Ücretsiz**'e düşürüyoruz.
+Bu örnekte planı **Premium**’dan **Free**’ye düşürüyoruz.
 
-Devam etmek için kullanıcının **Ödemeyi Tamamla** düğmesine tıklaması yeterlidir. Bu işlem, kullanıcıyı üyelik değişikliğinin beklemede olduğunu bildiren bir mesajla birlikte hesap sayfasına geri götürür. Değişiklikler müşterinin **bir sonraki fatura döneminde** geçerli olacaktır.
+Devam etmek için kullanıcının sadece **Ödemeyi Tamamla** düğmesine tıklaması gerekir. Ardından, üyelik için bekleyen değişiklik hakkında bir mesaj gösteren Account sayfasına geri götürülür. Değişiklikler müşterinin **bir sonraki faturalandırma döngüsünde** yürürlüğe girer.
 
-![Bekleyen üyelik değişikliği mesajını gösteren hesap sayfası](/img/admin/memberships-list.png)
+![Bekleyen üyelik değişikliği banner’ını gösteren Account sayfası](/img/account-page/pending-change.png)
 
-### Kullanıcı planını düşürdüğünde ne olur
+### Bir kullanıcı planını düşürdüğünde ne olur {#what-happens-when-a-user-downgrades-their-plan}
 
-Plan düşürmenin, kullanıcının alt sitesindeki mevcut yapılandırmayı değiştirmediğini bilmek önemlidir.
+Planı düşürmenin kullanıcının alt sitesindeki mevcut yapılandırmayı değiştirmediğini belirtmek önemlidir.
 
-Site şablonunu otomatik olarak değiştirmez çünkü şablon değişikliği alt siteyi tamamen silip sıfırlar. Bu, gereksiz veri kaybını önlemek içindir. Yani disk alanı, temalar, eklentiler vb. yazılar hariç olduğu gibi kalır.
+Site şablonunu otomatik olarak değiştirmez; çünkü site şablonunu değiştirmek alt siteyi tamamen siler ve sıfırlar. Bu, gereksiz veri kaybını önlemek içindir. Bu nedenle disk alanı, temalar, plugin’ler vb. yazılar hariç olduğu gibi kalır.
 
-Her plan için belirlediğiniz limitler ve kotaların sizin için asıl endişe kaynağı olacağının farkındayız, ancak kullanıcının alt sitesindeki yapılandırmaları silmemiz veya değiştirmemiz durumunda oluşacak zararı da göz önünde bulundurmamız gerekiyor.
+Asıl endişenizin her plan altında belirlediğiniz sınırlar ve kotalar olacağını anlıyoruz; ancak herhangi bir yapılandırmasını silmemiz veya değiştirmemiz durumunda bunun kullanıcının alt sitesine vereceği zararı dikkate almalıyız.
 
-Planda belirlenen limiti aşan yazılar için 3 farklı seçeneğiniz var: **Yazıları olduğu gibi bırak***,* **Yazıları çöp kutusuna taşı***,* veya **Yazıları taslağa taşı***.* Bunu Ultimate Multisite ayarlarından yapılandırabilirsiniz.
+Planda belirlenen sınırı aşan yazılar için 3 farklı seçeneğiniz vardır: **Yazıları olduğu gibi tut** *,* **Yazıları çöpe taşı** *,* veya **Yazıları taslağa taşı** *.* Bunu Ultimate Multisite ayarları altında yapılandırabilirsiniz.
 
-![Ultimate Multisite ayarlarında yazı limiti aşıldığında seçenekler](/img/config/settings-sites.png)
+![Yazı sınırı aşıldığında davranış seçeneklerini gösteren Network Admin Ayarlar Siteler sayfası](/img/account-page/settings-sites-post-limit.png)
 
-### Ödemeye ne olur
+### Ödemeye ne olur {#what-happens-to-the-payment}
 
-Sürüm 2.0'da, ödeme için orantılı hesaplama açısından herhangi bir ayarlama yapılması artık gerekmiyor.
+Sürüm 2.0’da, ödeme açısından artık herhangi bir oransal ayarlama gerektirmez.
 
-Bunun nedeni, sistemin yeni plan/üyelik geçerli olmadan önce mevcut üyeliğin **fatura döngüsünü tamamlamasını beklemesidir**. Yeni üyelik için yeni fatura tutarı otomatik olarak uygulanacak ve bir sonraki fatura döngüsünde tahsil edilecektir.
+Bunun nedeni, sistemin yeni plan/üyelik yürürlüğe girmeden önce mevcut üyeliğin **faturalandırma döngüsünü tamamlamasını** beklemesidir. Yeni üyelik için yeni faturalandırma tutarı otomatik olarak uygulanır ve bir sonraki faturalandırma döngüsünde tahsil edilir.

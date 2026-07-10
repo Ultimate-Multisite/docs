@@ -1,133 +1,154 @@
 ---
-title: Domain Seller Changelog
+title: Domain Seller ändringslogg
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Ändringslogg
+# Domain Seller ändringslogg {#domain-seller-changelog}
 
-Version 1.1.0 - Släppt den 2026-05-08
-- Nytt: Implementering av DNS-postskapande (add_dns_record) för registrarna ResellerClub, Enom och OpenSRS
-- Fix: Standard DNS Records-parser hanterar nu tokenen {DOMAIN} och {SITE_URL}
-- Fix: Slugs-namnen för fältet för domänval är nu namnspecifierade för att förhindra krockar med site_url
+Version 1.3.0 - Släppt 2026-06-02
+- Nytt: Lade till en varning i nätverksadmin när HostAfrica-återförsäljarens saldo blir för lågt
+- Nytt: Lade till automatisk mappning av nyregistrerade domäner till nätverkssajten
+- Fix: Tillämpade krav på registrantfält endast vid registrering av en ny domän
+- Fix: Gjorde meddelanden om saldoövervakning avfärdbara
+- Fix: Säkerställde att WooCommerce-faktureringsuppgifter för registrant bevaras
+- Fix: Tvingade fram krav på registrantkontakt vid registrering
+- Fix: Förhindrade att domänregistreringsprodukter skapas med 0 % påslag
+- Fix: Bevarade domänval och prissättning genom flödet för checkout-sessionen
+- Fix: Förbättrade valutavisning för HostAfrica-domänprissättning
+- Fix: Förbättrade beteendet för checkout-formulärets åtgärd för att förhindra avvikelser i WP-kärnans query-var
+- Förbättrat: Länkade dokumentation för HostAfrica-återförsäljarkonfiguration i setup-vägledningen
 
-Version 1.0.8 - Släppt den 2026-05-07
-- Fix: ResellerClub domänprissättning hämtar nu live kostpriser från rätt API-slutpunkt
+Version 1.2.0 - Släppt 2026-05-25
+- Nytt: Lade till HostAfrica som en domänförsäljningsintegration med stöd för checkout, setup-guide, uppslagning, TLD/prissättning, registrering, förnyelse, överföring, namnserver, DNS, EPP-kod, registrar lock och ID-skydd
+- Nytt: Lade till Openprovider som en domänförsäljningsintegration med stöd för återförsäljarprissättning, registrering, förnyelse, överföring, namnserver, DNS, EPP-kod, registrar lock, WHOIS-sekretess och TLD-synkronisering
+- Nytt: Lade till Hostinger som en domänförsäljningsintegration som använder den delade Hostinger API-token från kärnintegrationen för tillgänglighetskontroller, registrering, namnserveruppdateringar, registrar lock och WHOIS-sekretess
+- Förbättrat: Lade till docblocks för domänlivscykelåtgärder och filter för vägledning vid utvecklarintegration
+- Förbättrat: Uppdaterade metadata för plugin-kompatibilitet till WordPress 7.0 i tilläggets readme
+- Förbättrat: Uppdaterade planeringsmallar som används för samordning av kommande releaser
 
-Version 1.0.7 - Släppt den 2026-05-06
-* Fix: ResellerClub test_connection skickar nu det nödvändiga tlds-parametret (#224)
+Version 1.1.0 - Släppt 2026-05-08
+- Nytt: Skapande av DNS-post (add_dns_record) implementerat för registratorerna ResellerClub, Enom och OpenSRS
+- Fix: Standardparsern för DNS Records tolererar nu {DOMAIN}- och {SITE_URL}-token
+- Fix: Slugs för checkout-fältet för domänval har namnrymd för att förhindra kollision med site_url
 
-Version 1.0.6 - Släppt den 2026-05-05
-* Fix: ResellerClub domänregistrering fungerar nu korrekt med förbättrat hanterande av API-svar och leverantörsrutning baserat på registret
-* Fix: Förbättrad användarupplevelse (UX) på sidan för "Register Domain"
-* Borttaget: CyberPanel registrar-integration
+Version 1.0.8 - Släppt 2026-05-07
+- Fix: ResellerClub-domänprissättning hämtar nu aktuella kostnadspriser från rätt API-slutpunkt
 
-Version 1.0.5 - Släppt den 2026-04-02
-* Nytt: GoDaddy registrar-integration för domänregistrering och hantering
-* Nytt: NameSilo registrar-integration
-* Nytt: ResellerClub registrar-integration
-* Nytt: Automatisk verifiering av SES-sändningsdomän vid domänköp och mappning
-* Fix: Skyddar Guard-pluginets konstanter mot omdefinition i testmiljö
-* Fix: MySQL hanterar word-split korrekt i install-wp-tests.sh
+Version 1.0.7 - Släppt 2026-05-06
+* Fix: ResellerClub test_connection skickar obligatorisk tlds-parameter (#224)
 
-Version 1.0.4 - Släppt den 2026-03-14
-* **Fix:** Vissa saknade CSS-resurser
+Version 1.0.6 - Släppt 2026-05-05
+* Fix: ResellerClub-domänregistrering fungerar nu korrekt med förbättrad hantering av API-svar och registerstyrd leverantörsrouting
+* Fix: UX-förbättringar på adminsidan Register Domain
+* Borttaget: CyberPanel-registratorintegration
+
+Version 1.0.5 - Släppt 2026-04-02
+* Nytt: GoDaddy-registratorintegration för domänregistrering och hantering
+* Nytt: NameSilo-registratorintegration
+* Nytt: ResellerClub-registratorintegration
+* Nytt: Autoverifiera SES-avsändardomän vid domänköp och mappning
+* Fix: Skyddade plugin-konstanter mot omdefiniering i testmiljö
+* Fix: MySQL-flaggor delas korrekt upp i install-wp-tests.sh
+
+Version 1.0.4 - Släppt 2026-03-14
+* **Fix:** Vissa saknade css-tillgångar
 * **Fix:** Fel relaterat till otillgängliga tlds
 
-Version 1.0.3 - Släppt den 2026-03-09
-* **Fix:** Vue reactive property-fel (domain_option, selected_domain, domain_provider) när man använder det äldre registreringsformuläret med checkout-shortcoden
-* **Fix:** Feljustering av inmatningsfältet för subdomän och för stort textutrymme i domänvalfältet vid checkout
-* **Fix:** Döljer förhandsvisningsblocket "Your URL will be" när domänvalfältet är synligt
+Version 1.0.3 - Släppt 2026-03-09
+* **Fix:** Vue-fel för reaktiva egenskaper (domain_option, selected_domain, domain_provider) när den äldre registreringsmallen används med checkout-shortcode
+* **Fix:** Feljustering av inmatningsfältet för subdomän och överdimensionerad text i checkout-fältet för domänval
+* **Fix:** Dölj förhandsvisningsblocket "Din URL kommer att vara" när fältet för domänval finns
 
-Version 1.0.2 - Släppt den 2026-03-01
-* **Förbättrat:** Globala markeringar (markup) har tagits bort från inställningssidan – prissättning sker nu enbart per produkt
-* **Förbättrat:** Lägger till länken "Manage Domain Products" på inställningssidan för snabb navigering
-* **Förbättrat:** Tydligare fältbeskrivningar och verktygstips för domänproduktinställningar (catch-all vs TLD-specifikt, markeringstyper, introduktionsprissättning)
-* **Förbättrat:** Bättre beskrivningar över hela inställningssidan (sök TLD:er, förnyelser, DNS, aviseringar)
+Version 1.0.2 - Släppt 2026-03-01
+* **Förbättrat:** Tog bort globala påslagsinställningar från inställningssidan — prissättningen är nu uteslutande per produkt
+* **Förbättrat:** Lade till länken "Hantera domänprodukter" på inställningssidan för snabb navigering
+* **Förbättrat:** Tydligare fältbeskrivningar och verktygstips för inställningar för domänprodukter (catch-all kontra TLD-specifika, påslagstyper, introduktionsprissättning)
+* **Förbättrat:** Bättre beskrivningar genom hela inställningssidan (sök TLD:er, förnyelser, DNS, aviseringar)
 
-Version 1.0.1 - Släppt den 2026-02-27
+Version 1.0.1 - Släppt 2026-02-27
 
-* **Nytt:** TLD-importverktyg för bulkprissättningshantering
+* **Nytt:** TLD-importverktyg för hantering av massprissättning
 * **Nytt:** Stöd för introduktionsprissättning för domänprodukter
-* **Nytt:** E2E testsvit med Cypress
-* **Nytt:** E-postmallar för domänlivscykelaviseringar
-* **Nytt:** Registrantadressfält på admin-modalen för domänregistrering, förifyllda från inställningar
-* **Nytt:** Kundhantering av DNS-gränssnitt med stöd för att lägga till, redigera och ta bort poster
-* **Nytt:** Checkout-alternativet "Bring your own domain" med automatisk domänmappning
-* **Nytt:** Automatisk generering av site URL från domännamn under checkout
-* **Nytt:** Standard nameserver och DNS-postkonfiguration i inställningar
-* **Nytt:** Domänregistreringsdetaljer och DNS-hantering på kärn-redigeringssidan för domän
+* **Nytt:** E2E-testsvit med Cypress
+* **Nytt:** E-postmallar för aviseringar om domänlivscykel
+* **Nytt:** Registrantadressfält i admin-modal för domänregistrering, förifyllda från inställningar
+* **Nytt:** Kundgränssnitt för DNS-hantering med stöd för att lägga till, redigera och ta bort poster
+* **Nytt:** Checkout-alternativet "Ta med din egen domän" med automatisk domänmappning
+* **Nytt:** Generera automatiskt webbplats-URL från domännamn under checkout
+* **Nytt:** Standardkonfiguration för nameserver och DNS-poster i inställningar
+* **Nytt:** Domänregistreringsdetaljer och DNS-hantering på kärnans sida för domänredigering
 * **Nytt:** Setup-wizard skapar automatiskt en standarddomänprodukt med rimliga standardvärden
-* **Nytt:** Daglig automatisk TLD-synkronisering via cron över alla konfigurerade leverantörer
-* **Nytt:** WHOIS-integritet med konfiguration per produkt (alltid på, kundval eller avstängt)
-* **Nytt:** WHOIS-integritetskryssruta vid checkout med prisläggning och stöd för mörkt läge
-* **Nytt:** Admin-sida för "Register Domain" för manuell domänregistrering
-* **Nytt:** Automatisk plugin-uppdatering via Ultimate Multisite update server
-* **Nytt:** Filterflik för domänprodukt-typ i produktlisttabellen med lila badge-styling
-* **Nytt:** Registrantkontaktfält (namn, adress, stad, delstat, postnummer, land, telefon) på domäncheckout-formuläret
-* **Nytt:** Validering av registrantfält innan anrop till registrar API med tydliga felmeddelanden
-* **Nytt:** Leverantörspecifika loggkanaler för domänregistreringshändelser (t.ex. domain-seller-namecheap.log)
-* **Nytt:** Registrantkontaktfält på huvudregistrerings-/anmälningscheckout-formuläret (visas vid registrering av en domän)
-* **Förbättrat:** Domain Search checkout-fältet ersätts med ett enhetligt Domain Selection-fält som stöder flikar för subdomän, registrering och befintlig domän
-* **Förbättrat:** Domänproduktinställningar renderas inline på produktraderingssidan via kärnwidget-systemet
-* **Förbättrat:** Kunddomäninformation kopplas till kärn-domänmappningswidget istället för ett fristående metabox
-* **Förbättrat:** TLD-import-wizard förenklas till en-klick-synk från alla leverantörer
-* **Förbättrat:** Namecheap domänåtkomlighet använder batch API-anrop för snabbare sökning
-* **Förbättrat:** Namecheap prissättnings-API använder korrekta parametrar och svarsparsering
-* **Förbättrat:** Centraliserat TLD-lagring i ett enda nätverksalternativ
-* **Förbättrat:** Domänaktivitetsloggning för DNS-ändringar, överföringar och konfigurationsapplikation
-* **Förbättrat:** Full TLD-synk för OpenSRS med IANA master list och batchvalidering
-* **Förbättrat:** Full TLD-synk för Namecheap med paginerade API-anrop
-* **Förbättrat:** Ersatte äldre leverantörsklasser med Integration Registry-mönstret
+* **Nytt:** Daglig automatisk TLD-synk via cron över alla konfigurerade leverantörer
+* **Nytt:** WHOIS-integritetsskydd med konfiguration per produkt (alltid på, kundens val eller inaktiverat)
+* **Nytt:** WHOIS-integritetskryssruta i checkout med prisvisning och stöd för mörkt läge
+* **Nytt:** Adminsida för Register Domain för manuell domänregistrering
+* **Nytt:** Automatiska pluginuppdateringar via Ultimate Multisite-uppdateringsserver
+* **Nytt:** Filterflik för domänprodukttyp i produktlisttabellen med lila badge-stil
+* **Nytt:** Registrantkontaktfält (namn, adress, stad, delstat, postnummer, land, telefon) i checkout-formulär för domäner
+* **Nytt:** Validering av registrantfält innan anrop till registrar-API med tydliga felmeddelanden
+* **Nytt:** Leverantörsspecifika loggkanaler för domänregistreringshändelser (t.ex. domain-seller-namecheap.log)
+* **Nytt:** Registrantkontaktfält i huvudformuläret för registrering/signup-checkout (visas när en domän registreras)
+* **Förbättrat:** Ersatte checkout-fältet Domain Search med enhetligt fält för domänval med flikar för subdomän, registrering och befintlig domän
+* **Förbättrat:** Domänproduktinställningar renderas inline på sidan för produktredigering via kärnans widgetsystem
+* **Förbättrat:** Kundens domäninfo kopplas in i kärnans widget för domänmappning i stället för fristående metabox
+* **Förbättrat:** TLD-importwizard förenklad till synk med ett klick från alla leverantörer
+* **Förbättrat:** Namecheap-domäntillgänglighet använder batch-API-anrop för snabbare sökning
+* **Förbättrat:** Namecheap-prissättnings-API använder korrekta parametrar och svarstolkning
+* **Förbättrat:** Centraliserad TLD-lagring i ett enda nätverksalternativ
+* **Förbättrat:** Domänaktivitetsloggning för DNS-ändringar, överföringar och konfigurationstillämpning
+* **Förbättrat:** Full TLD-synk för OpenSRS med IANA-huvudlista och batchvalidering
+* **Förbättrat:** Full TLD-synk för Namecheap med paginerade API-förfrågningar
+* **Förbättrat:** Ersatte äldre leverantörsklasser med Integration Registry-mönster
 * **Förbättrat:** Inställningspanel med DNS- och överföringskonfiguration
-* **Förbättrat:** Telefonnummer formateras automatiskt till +CC.NNN registrar-format
-* **Förbättrat:** Validering av telefonfält tar bort formateringskaraktärer före inskick
-* **Förbättrat:** Versionskrav höjdes till Ultimate Multisite 2.4.12 med tydligare meddelande
-* **Förbättrat:** CI-arbetsflödet använder korrekt checkout för både tilläggs- och kärnplugin
-* **Förbättrat:** prepare_registrant_info() läser från checkout-sparad användarmeta med fallback till faktureringsadress
-* **Fixat:** Domain search AJAX misslyckas för icke-inloggade användare under checkout
-* **Fixat:** Domain pricing AJAX misslyckas för icke-inloggade användare under checkout
-* **Fixat:** Spyc-klassåterdeklaration fatal error vid körning av WP-CLI-kommandon
-* **Fixat:** Namecheap sandbox API timeout för kort
-* **Fixat:** Domain search Select-knappens text synliggörs inte på grön bakgrund
-* **Fixat:** Domänregistrering misslyckas med felet "RegistrantFirstName is Missing" på grund av saknad kontaktinformation
-* **Fixat:** Domänpost skapas med blog_id=0 när webbplatsen ännu inte existerade vid checkout-tillfället
-* **Fixat:** Standard TLD-inställning returneras som sträng istället för en parsnad array
-* **Borttaget:** Fristående admin-sida för domänhantering – hanteras nu via kärndomän-sidor
+* **Förbättrat:** Telefonnummer formateras automatiskt till registrar-formatet +CC.NNN
+* **Förbättrat:** Validering av telefonfält tar bort formateringstecken före inlämning
+* **Förbättrat:** Versionskravet höjt till Ultimate Multisite 2.4.12 med tydligare meddelande
+* **Förbättrat:** CI-arbetsflöde använder korrekt checkout för både addon och kärnplugin
+* **Förbättrat:** prepare_registrant_info() läser från användarmeta sparad vid checkout med faktureringsadress som fallback
+* **Åtgärdat:** AJAX för domänsökning misslyckades för användare som inte var inloggade under checkout
+* **Åtgärdat:** AJAX för domänprissättning misslyckades för användare som inte var inloggade under checkout
+* **Åtgärdat:** Fatalt fel med omdeklaration av Spyc-klass vid körning av WP-CLI-kommandon
+* **Åtgärdat:** Namecheap sandbox-API hade för kort timeout
+* **Åtgärdat:** Texten på knappen Select i domänsökning syntes inte på grön bakgrund
+* **Åtgärdat:** Domänregistrering misslyckades med felet "RegistrantFirstName is Missing" på grund av saknad kontaktinfo
+* **Åtgärdat:** Domänpost skapades med blog_id=0 när webbplatsen ännu inte fanns vid checkout-tillfället
+* **Åtgärdat:** Inställningen för standard-TLD:er returnerades som sträng i stället för tolkad array
+* **Borttaget:** Fristående adminsida för Domain Management — hanteras nu via kärnans domänsidor
 
-Version 1.0.0 - Släppt den 2025-09-28
+Version 1.0.0 - Släppt 2025-09-28
 
-**Större omskrivning för Ultimate Multisite v2**
+**Stor omskrivning för Ultimate Multisite v2**
 
-* **Nytt:** Komplett omskrivning med modern PHP 7.4+-arkitektur
-* **Nytt:** Smärtfri integration med Ultimate Multisite v2 checkout-system
-* **Nytt:** Domänproduktförvaltning med flexibla prissättningsalternativ
-* **Nytt:** Arkitektur för stöd av flera domänleverantörer
-* **Nytt:** Automatisk förnyelse och prenumerationsintegration
-* **Nytt:** Kundhantering av domäner
-* **Nytt:** Admin-övervakning och loggar för domäner
+* **Nytt:** Fullständig omskrivning med modern PHP 7.4+-arkitektur
+* **Nytt:** Sömlös integration med checkout-systemet i Ultimate Multisite v2
+* **Nytt:** Domänprodukthantering med flexibla prissättningsalternativ
+* **Nytt:** Arkitektur för stöd för flera domänleverantörer
+* **Nytt:** Integration med automatisk förnyelse och prenumerationer
+* **Nytt:** Kundgränssnitt för domänhantering
+* **Nytt:** Domänövervakning och loggar för admin
 * **Nytt:** Kupongstöd för domänprodukter
 * **Nytt:** Omfattande inställningshantering
 * **Nytt:** Utvecklarvänlig utbyggbar kodbas
-* **Förbättrat:** Uppdaterad OpenSRS-leverantör med full funktionsstöd
-* **Förbättrat:** Modern UI konsekvent med Ultimate Multisite v2
-* **Fixat:** Allt föråldrat v1-kod uppdaterat till v2-standarder
+* **Förbättrat:** Uppdaterad OpenSRS-leverantör med fullt funktionsstöd
+* **Förbättrat:** Modernt UI i linje med Ultimate Multisite v2
+* **Åtgärdat:** All föråldrad v1-kod uppdaterad till v2-standarder
 * **Borttaget:** Äldre v1-kompatibilitet (brytande ändring)
 
-### Tidigare versioner (v1 Legacy)
+### Tidigare versioner (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.3 - 20/08/2019
+### Version 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Fixat: Inkompatibilitet med Groundhogg CRM
-* Notera: Detta var den sista v1-kompatibla releasen
+* Åtgärdat: Inkompatibilitet med Groundhogg CRM
+* Obs: Detta var den sista v1-kompatibla versionen
 
-### Version 0.0.2 - 07/12/2018
+### Version 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Fixat: Tar bort fältet för licensnyckel
-* Fixat: Planflikar saknas när funktionspluginet är aktivt
-* Förbättrat: Lägger till en "hoppa över"-knapp på registreringsfältet
+* Åtgärdat: Tog bort fältet License Key
+* Åtgärdat: Planflikar saknades när funktionspluginet är aktivt
+* Förbättrat: Lade till en hoppa över-knapp i registreringsfältet
 
-### Version 0.0.1 - Initial release
+### Version 0.0.1 - Första utgåvan {#version-001---initial-release}
 
 * Grundläggande OpenSRS-integration för WP Ultimo v1
-* Enkel domänökning och registrering
-* Planbaserade domänrättigheter
+* Enkel domänsökning och registrering
+* Planbaserade domänbehörigheter

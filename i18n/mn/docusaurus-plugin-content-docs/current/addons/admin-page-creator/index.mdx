@@ -1,0 +1,144 @@
+---
+title: Админ хуудас үүсгэгч
+sidebar_position: 1
+_i18n_hash: 041c990816ff668564b4ba8418db8a96
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-admin-page-creator" name="Admin Page Creator" />
+
+# Admin Page Creator {#admin-page-creator}
+
+## Агуулга {#content}
+Admin page creator нь WordPress админ Dashboard дотор шинэ админ хуудас болон дэд хуудсуудыг хялбархан нэмэх боломжийг олгоно. Үүнийг шинэ хэрэглэгчдэд зориулсан эхлэх хуудас болж үйлчлэх тавтай морилно уу хуудас эсвэл зааварчилгааны хуудас үүсгэхэд ашиглаж болно. Та Beaver Builder, Elementor, Brizy, Oxygen зэрэг page builder ашиглан хуудсуудыг төвөггүй загварчилж болно.
+
+Мөн custom HTML, CSS болон JavaScript дэмжлэг, түүнчлэн plan болон хэрэглэгчийн role-д суурилсан хандалтын хяналтыг санал болгодог!
+
+## Боломжууд {#features}
+* Custom HTML болон CSS дэмжлэг
+* JavaScript дэмжлэг
+* PHP агуулгын горим
+* Хэрэглэгчийн role-д суурилсан зөвшөөрөл
+* Page builder-үүдийн дэмжлэг
+
+## Баримтжуулалт {#documentation}
+[Multisite Ultimate: Admin Page Creator ашиглан custom админ хуудас болон дэд хуудсууд үүсгэх](https://help.multisiteultimate.com/article/305-creating-custom-admin-pages-and-sub-pages-using-ultimate-multisite-admin-page-creator)
+
+## Суулгалт {#installation}
+
+1. **ultimate-multisite-admin-page-creator**-ийг **/wp-content/plugins/** директорт байршуулна уу
+2. WordPress сүлжээний админыхаа **Plugins** цэсээр дамжуулан plugin-ийг идэвхжүүлнэ үү
+
+## Ашиглах заавар {#usage-guide}
+
+WordPress нь сайтуудын урд талд агуулга нэмэхийг үнэхээр хялбар болгодог ч админ талд хуудас болон дэд хуудас үүсгэхэд зарим үндсэн код бичих ур чадвар шаардлагатай. Ultimate Multisite: Admin Page Creator нь таны сүлжээний сайтуудын арын талд урд талынхтай ижил хэрэглээний хялбар байдлыг авчрах зорилготой.
+
+## Яагаад Admin Page Creator ашиглах вэ? {#why-use-admin-page-creator}
+
+Магадгүй та харилцагчдынхаа админ самбарт зааварчилгаатай custom хуудас санал болгохыг хүсэж байж болно, эсвэл түгээмэл асуултууд болон холбоо барих виджеттэй custom хуудас нэмэхийг хүсэж байж болно. Admin Page Creator-ийн боломжууд хязгааргүй бөгөөд өнөөдрийн зааварт бид үүнийг судлах болно.
+
+![Админ хуудсуудын жагсаалт](/img/admin/admin-pages-list.png)
+
+_Суулгасан YouTube playlist-тэй Зааварчилгааны хуудас үүсгэх одоо боломжтой боллоо!_
+
+<!-- Screenshot unavailable: Final result of custom admin page on user dashboard panel -->
+
+_Хэрэглэгчийн Dashboard самбар дээрх эцсийн үр дүн энд байна_
+
+## Анхны Custom админ хуудсаа үүсгэх {#creating-your-first-custom-admin-page}
+
+Ultimate Multisite: Admin Page Creator-ийг суулгаж идэвхжүүлсний дараа сүлжээний админ цэс рүүгээ орж, Admin Pages руу очно уу.
+
+![Сүлжээний админ дээрх Custom админ хуудсуудын жагсаалт](/img/admin/admin-pages-list.png)
+
+_Сүлжээний админ дээрх Custom админ хуудсуудын жагсаалт_
+
+Та одоогоор үүсгэсэн бүх админ хуудсуудынхаа жагсаалтыг харах болно (энэ таны анхны зочлол тул жагсаалт хоосон байна). Үргэлжлүүлээд **Шинэ админ хуудас нэмэх** дээр дарна уу. Та Админ хуудасны засварлагч руу шилжүүлэгдэнэ.
+
+## Custom админ хуудасны элементүүд {#the-elements-of-a-custom-admin-page}
+
+Админ хуудасны засварлагч дээр та хуудсаа өөрчлөх олон төрлийн сонголттой байна.
+
+### Хуудасны гарчиг {#page-title}
+
+Энэ нь админ цэсний шошго биш, харин хуудасны дээд хэсэгт харагдах гарчиг юм.
+
+<!-- Screenshot unavailable: Admin Page editor showing Page Title field -->
+
+_Хуудасны гарчиг оруулна уу_
+
+### Агуулгын төрлийн сонгогч {#content-type-selector}
+
+Ultimate Multisite: Admin Page Creator нь хуудасны агуулгын хувьд танд хоёр сонголт өгдөг: та анхдагч WordPress WYSIWYG засварлагчийг ашиглах эсвэл HTML засварлагч руу шилжих боломжтой.
+
+Хэрэв та HTML сайн мэдэхгүй бол анхдагч WordPress засварлагчийг ашиглаарай. Та ердийн нийтлэл эсвэл хуудас засдагтайгаа адил хуудасны агуулгыг засах боломжтой.
+
+<!-- Screenshot unavailable: Admin Page Creator using the default WordPress WYSIWYG editor -->
+
+_Анхдагч WordPress WYSIWYG засварлагчийг ашиглаж байна_
+
+<!-- Screenshot unavailable: Admin Page Creator using the HTML editor with syntax highlighting -->
+
+_HTML засварлагчийн сонголтыг syntax тодруулга болон алдааны анхааруулгатай ашиглаж байна_
+
+## Цэсний сонголтууд {#menu-options}
+
+Хажуу талд, General Options meta-box дээр та цэсний төрөл, шошго болон бусад олон зүйлийг тохируулах боломжтой.
+
+### Цэсний төрлүүд {#menu-types}
+
+Таны шинэ custom админ хуудас хоёр өөр цэсний төрөлтэй байж болно: дээд түвшний цэс болон дэд цэс.
+
+Дээд түвшний цэсний хуудас нь нэрнээсээ харахад таны шинээр үүсгэсэн хуудсыг анхдагч WordPress хуудсуудын хамт админ цэсэнд нэмнэ.
+
+Хэрэв та дээд түвшний сонголтыг сонговол цэсний дараалал болон цэсний icon-ыг мөн сонгох боломжтой.
+
+Хэрэв та энэ хуудсыг дэд цэсний хуудас болгохыг хүсвэл энэ хуудсыг холбох parent хуудсыг сонгох боломжтой. Та custom хуудсаа анхдагч WordPress хуудсууд эсвэл өөрийн дээд түвшний custom админ хуудсууд дээр нэмж болно.
+
+<!-- Screenshot unavailable: Admin Page Creator menu type options with label, order, and icon settings -->
+
+_Энэ Custom хуудасны цэсний зүйлийг бүрэн өөрчилнө үү_
+
+<!-- Screenshot unavailable: Admin Page Creator sub-menu parent page selection -->
+
+_Та мөн энэ хуудсыг бусад цэсний хуудсуудын, үүнд өөрийн custom дээд түвшний хуудсуудын дэд цэс болгон нэмж болно._
+
+## Дэвшилтэт сонголтууд {#advanced-options}
+
+Та custom админ хуудсууддаа бүх төрлийн агуулга нэмэх боломжтой байх ёстой. Үүнд CSS дүрэм болон файлууд, JavaScript, мөн гадаад сангууд орно. Та үүнийг Advanced Options табыг ашиглан хийж болно.
+
+### Custom CSS {#custom-css}
+
+CSS таб дээр та өөрийн custom CSS кодыг нэмэхээс гадна алсын сайтуудаас CSS файлууд импортлох боломжтой (CDN, Google Fonts гэх мэт).
+
+<!-- Screenshot unavailable: Admin Page Creator custom CSS editor with external stylesheet import -->
+
+_Custom CSS мөн дэмжигддэг. Та гадаад style файлуудыг ч мөн оруулах боломжтой!_
+
+### Custom JavaScript {#custom-javascript}
+
+JavaScript-ийн хувьд ч мөн адил. Та custom JavaScript коддоо ашиглах гадаад сангуудыг нэмж болно.
+
+<!-- Screenshot unavailable: Admin Page Creator custom JavaScript editor with external library import -->
+
+_Өөрийн JavaScript кодыг нэмээрэй!_
+
+## Зөвшөөрлүүд {#permissions}
+
+Мөн Advanced Options дотор та аль дэд сайтууд энэ хуудсанд хандах эрхтэй байхыг сонгох боломжтой. Жишээлбэл, та өөр өөр plan шатлалуудад өөр өөр онцгой агуулга хүргэхээр төлөвлөж байгаа бол энэ нь хэрэгтэй.
+
+<!-- Screenshot unavailable: Admin Page Creator permissions settings for plan and role-based access control -->
+
+_Энэ хуудас хаана харагдахыг та бүрэн хянах боломжтой_
+
+**Чухал** : Хуудсыг харуулахын тулд хоёр нөхцөл хоёулаа хангагдсан байх ёстой. Энэ нь хэрэв хэрэглэгч тухайн plan-ы үйлчлүүлэгч боловч сонгосон үүргүүдийн аль нэгийг эзэмшдэггүй (эсвэл эсрэгээрээ) бол хуудас тэдний самбар дээр харагдахгүй гэсэн үг.
+
+## Идэвхтэй {#active}
+
+Хэрэв та тусгай админ хуудсыг устгалгүйгээр эсвэл зөвшөөрлүүдийг өөрчлөлгүйгээр идэвхгүй болгохыг хүсвэл Active сонголтын тэмдэглэгээг зүгээр л авна уу.
+
+Дээд түвшний хуудсыг идэвхгүй болговол тухайн эх хуудсанд холбогдсон бүх дэд хуудсыг автоматаар идэвхгүй болгоно.
+
+<!-- Screenshot unavailable: Хэрэглэгчийн самбар дээр харуулсан тусгай админ хуудасны эцсийн үр дүн -->
+
+_Хэрэглэгчийн самбар дээрх эцсийн үр дүн!_

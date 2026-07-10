@@ -3,7 +3,7 @@ title: Lihok sa Akaw sa Kliyente
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ang Account Page sa Imong Kliyente (v2)
+# Ang Account Page sa Imong Kliyente (v2) {#your-clients-account-page-v2}
 
 _**MAHINUNGAN: Kini nga article nagrefer sa Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Kung ang mga customer mag-subscribe og plano sa imong network, makakuha sila og 
 
 Sa tutorial ni, atong giya kamo pinaagi sa account page sa customer ug makita ninyo kung unsa ang mahimo sa inyong mga customer diha niini.
 
-## Ang Account Page
+## Ang Account Page {#the-account-page}
 
 Ang account page ma-access pinaagi sa pag-click sa **Account** sulod sa dashboard sa imong customer.
 
@@ -27,7 +27,7 @@ Human i-click nila kini, makakita sila og overview sa ilang membership, billing 
 
 Mahimo usod nila ang membership ngadto sa lain nga plano, o paliton ang laing package o serbisyo nga inyong gi-offer. Atong tan-awon ang matag seksyon nga nag-inusara.
 
-### Ang Iyong Pagtan-aw sa Membership:
+### Ang Iyong Pagtan-aw sa Membership: {#your-membership-overview}
 
 Ang unang bloke na nasa ibaba mismo sa ngalan sa website sa inyong mga customer nagpapakita og overview sa ilang kasamtang nga plano ug mga serbisyo/packages nga gipalit gamit niini. Gipakita usab sa bloke ang membership number, ang sinugdanan nga kantidad nga gibayad para niini, unsa ka mahal ang plano ug bisan unsang serbisyo/package, ug pila ka beses sila nabayaran para niining membership. Mahimo usab nila makita kung ang membership kay **Active**, **Expired** o **Canceled**.
 
@@ -43,7 +43,7 @@ Karon, kung ang inyong mga customer mopili og pagpalit og packages o serbisyo pa
 
 Ablihi nga ang coupon codes dili mahimong i-add sa membership change page. Kung ang customer naggamit og coupon code sa unang pagpalit sa membership, ang code gihimo usab nga magamit niining bag-ong membership.
 
-### Pag-update sa Billing Address:
+### Pag-update sa Billing Address: {#updating-the-billing-address}
 
 Sa account page, pwede pud i-update sa inyong mga customer ang ilang billing address. Kinahanglan lang nila i-click ang **Update** tupad sa _Billing Address_.
 
@@ -53,7 +53,7 @@ Magsinggit usa ka bag-ong window para sa inyong customer. Ang tanan nga kinahang
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Pagbag-o sa Site Template:
+### Pagbag-o sa Site Template: {#changing-the-site-template}
 
 Para tugotan ang inyong mga customer nga magbag-o sa ilang site templates, kinahanglan ninyong moadto sa **Ultimate Multisite > Settings > Sites** ug i-toggle on ang option nga **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Pag-on ni ang confirmation ug i-click ang **Process Switch**, ang bag-ong site t
 
 Mahimo usab nga gamiton sa mga customer ang **Reset current template** gikan niining panel kung kinahanglan nila og reset sa site pabalik sa kasamtang gihatag nga template. Sama sa pag-switch ngadto sa lain nga template, ang pag-reset sa template makapawala sa sulod sa site, busa ang mga customer kinahanglan lang kumpirmaha kini kung masabtan nila ang aksyon sa reset.
 
-### Pagdugang og Custom Domains:
+### Pagdugang og Custom Domains: {#adding-custom-domains}
 
 Aduna usab ang opsyon alang sa imong mga customer nga magdugang og custom domain para niining plano sa ilang account page. Aron tugotan ang imong mga customer nga mogamit og custom domains, adto sa **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Human mag-click sa **Next Step**, ang imong mga customer pwede mag-add sa ilang 
 
 Human mag-click sa **Add Domain**, ang domain iapil na sa account sa imong customer. Ang tanan nga kinahanglan nila karon mao ang pag-change sa DNS records niining custom domain sa ilang domain registrar.
 
-### Pag-usab sa Password:
+### Pag-usab sa Password: {#changing-password}
 
 Sa sulod sa account dashboard, pwede usab sa imong mga customer mag-change sa ilang password pinaagi sa pag-click sa **Change Password**.
 
@@ -125,7 +125,7 @@ Magpapakita niini ang bag-ong window diin kinahanglan i-fill sa imong mga custom
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Danger Zone:
+### Danger Zone: {#danger-zone}
 
 Aduna pud kitay duha ka option nga gipakita sa bahin sa **Danger Zone**: **Delete Site** ug **Delete Account**. Pareho sila anaa sa Danger Zone kay kining duha ka lihok dili na maibalik. Kung ang imong mga customer mag-delete sa ilang website o account, dili na nila kini maibalik.
 

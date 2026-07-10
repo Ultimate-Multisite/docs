@@ -3,11 +3,11 @@ title: Zpětná vazba zákazníků a hlášení problémů
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Zpětná vazba a hlášení problémů zákazníků
+# Zpětná vazba a hlášení problémů zákazníků {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 zavádí vestavěný systém pro sběr zpětné vazby a hlášení problémů, který uživatelům umožní označit neuspokojivé odpovědi a hlášit problémy přímo z chatového rozhraní. Tento systém zahrnuje správu souhlasu, automatizovaný příkaz pro hlášení a asistovanou třídění (triage) na backendu.
 
-## Tlačítko „Ne“ (Thumbs-Down Button)
+## Tlačítko „Ne“ (Thumbs-Down Button) {#thumbs-down-button}
 
 Každá zpráva odeslaná asistenta zobrazuje tlačítko **„Ne“** (👎). Když uživatel na něj klikne, může odpověď označit jako neuspokojivou nebo chybnou.
 
@@ -15,7 +15,7 @@ Každá zpráva odeslaná asistenta zobrazuje tlačítko **„Ne“** (👎). Kd
 - Kliknutí na něj otevře **Modální okno pro souhlas se sběrem zpětné vazby** (Feedback Consent Modal).
 - Zpětná vazba je spojena s konverzačním vláknem a konkrétní zprávou.
 
-## Modální okno pro souhlas se sběrem zpětné vazby (Feedback Consent Modal)
+## Modální okno pro souhlas se sběrem zpětné vazby (Feedback Consent Modal) {#feedback-consent-modal}
 
 Když uživatel klikne na tlačítko „Ne“, před odesláním jakýchkoli dat se zobrazí modální okno pro souhlas. Toto okno:
 
@@ -26,13 +26,13 @@ Když uživatel klikne na tlačítko „Ne“, před odesláním jakýchkoli dat
 
 Žádná zpětná vazba není zaznamenána, dokud uživatel výslovně nezíská souhlas.
 
-## Banner pro zpětnou vazbu z automatického dotazu (Auto-Prompt Feedback Banner)
+## Banner pro zpětnou vazbu z automatického dotazu (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Na konci konverzace může asistent zobrazit **banner pro zpětnou vazbu z automatického dotazu** – neinvazivní zprávu, která se ptá, zda byla sezení užitečné.
 
 Tento banner se zobrazí automaticky na základě délky a výsledku konverzace (heuristiky). Odkazuje na stejný tok zpětné vazby jako tlačítko „Ne“. Uživatelé mohou banner zavřít bez poskytnutí zpětné vazby.
 
-## Příkaz `/report-issue`
+## Příkaz `/report-issue` {#report-issue-slash-command}
 
 Uživatelé mohou spustit tok zpětné vazby přímo zadáním `/report-issue` do vstupního pole chatu. Tento příkaz:
 
@@ -42,7 +42,7 @@ Uživatelé mohou spustit tok zpětné vazby přímo zadáním `/report-issue` d
 
 Příkaz `/report-issue` je k dispozici ve všech režimech chatu (inline, plovoucí widget, plná obrazovka).
 
-## Asistované třídění (AI-Assisted Triage)
+## Asistované třídění (AI-Assisted Triage) {#ai-assisted-triage}
 
 Odeslaná zpětná vazba je směrována do vrstvy AI třídění, která:
 

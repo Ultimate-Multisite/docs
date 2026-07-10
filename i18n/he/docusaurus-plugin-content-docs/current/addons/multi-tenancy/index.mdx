@@ -1,123 +1,150 @@
 ---
 title: ריבוי דיירים
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# ריבונות מרובת משתמשים (Multi-Tenancy)
+# ריבוי דיירים {#multi-tenancy}
 
-פיזור אתרים משנה (subsites) על פני שרתים ומסדי נתונים שונים לשיפור הביצועים והאבטחה.
+הפץ תתי-אתרים בין שרתים ומסדי נתונים לשיפור ביצועים ואבטחה
 
-## דרישות
+## נקודות עיקריות במהדורת גרסה 1.2.0 {#version-120-release-highlights}
 
-- WordPress 5.3 או גבוה יותר
-- PHP 7.4 או גבוה יותר
+ריבוי דיירים 1.2.0 מוסיף את תשתית הדייר הריבוני עבור תהליכי עבודה של בידוד בסביבת ייצור:
+
+- התחברות אוטומטית ללא מצב לדייר עם ביקורי SSO קצרי-חיים ומוגנים מפני שידור חוזר.
+- בידוד מסד נתונים ומערכת קבצים לכל תת-אתר עבור דיירים ריבוניים.
+- יכולת ריבוי דיירים של Hostinger להקצאת דיירים מודעת-מארח.
+- שערי אימות הגירה ריבונית לבדיקות נתונים ישנים ולעיבוד דחיפה אסינכרוני.
+- קישור מארח מסד נתונים הניתן להגדרה באותה מכונה עבור התקנות Bedrock, FrankenPHP ו-localhost.
+- שיפורים באתחול דייר, כותב מסד נתונים, אתחול סכימה והקצאת משתמשים.
+- פירוק ריבוני בטוח יותר שמנקה פרטי גישה של דיירים.
+
+ראה את מדריכי המשתמש עבור [תהליך העבודה של הגירה ריבונית](/user-guide/getting-started/sovereign-migration-workflow), [בידוד ריבוי דיירים](/user-guide/configuration/multi-tenancy-isolation), ו[תפעול דיירים ריבוניים](/user-guide/administration/sovereign-tenant-operations).
+
+## דרישות {#requirements}
+
+- WordPress 5.3 ומעלה
+- PHP 7.4 ומעלה
 - תוסף Multisite Ultimate (פעיל)
 
-## התקנה
+## התקנה {#installation}
 
-1. העלה את קבצי ה-addon לתיקייה `/wp-content/plugins/` שלך
-2. הפעל את ה-plugin דרך תפריט 'Plugins' ב-WordPress
-3. הגדר את הגדרות ה-addon במנהל הרשת (network admin)
+1. העלה את קובצי תוסף ההרחבה לתיקיית `/wp-content/plugins/` שלך
+2. הפעל את התוסף דרך תפריט 'תוספים' ב-WordPress
+3. הגדר את הגדרות תוסף ההרחבה בממשק ניהול הרשת
 
-## פיתוח
+## פיתוח {#development}
 
-### הגדרה
+### הגדרה {#setup}
 
 ```bash
-# התקנת תלויות
+# Install dependencies
 composer install
 npm install
 
-# הרצת בדיקות
+# Run tests
 npm run test
 
-# הרצת בדיקות תקני קוד
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# תיקון בעיות סגנון קוד
+# Fix code style issues
 vendor/bin/phpcbf
 
-# בנייה לסביבת הפקה
+# Build for production
 npm run build
 ```
 
-### מבנה הפרויקט
+### מבנה הפרויקט {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # מחלקות וקבצי PHP נכללים
+├── inc/                          # מחלקות PHP והכללות
 │   ├── class-multisite-ultimate-updater.php  # מטפל עדכונים
 │   └── class-multi_tenancy-main.php             # פונקציונליות ראשית
 ├── tests/                        # בדיקות יחידה
 │   ├── bootstrap.php            # אתחול בדיקות
 │   ├── class-*-base.php         # מחלקת בדיקה בסיסית
 │   └── class-*-test.php         # מקרי בדיקה
-├── views/                       # קבצי תבנית
+├── views/                       # קובצי תבנית
 ├── assets/                      # נכסים סטטיים
 │   ├── css/                     # גיליונות סגנון
-│   ├── js/                      # קבצי JavaScript
+│   ├── js/                      # קובצי JavaScript
 │   └── images/                  # תמונות
-├── lang/                        # קבצי שפה
+├── lang/                        # קובצי שפה
 ├── composer.json                # תלויות PHP
 ├── package.json                 # תלויות Node.js
 ├── phpunit.xml.dist             # תצורת PHPUnit
 ├── .phpcs.xml.dist              # תצורת תקני קוד
-└── rector.php                   # כללי מודרניזציה של קוד
+└── rector.php                   # כללי מודרניזציית קוד
 ```
 
-### בדיקות
+### בדיקות {#testing}
 
-ה-addon כולל מסגרת בדיקות מקיפה:
+תוסף ההרחבה כולל מסגרת בדיקות מקיפה:
 
-- **Unit Tests**: בדיקות מבוססות PHPUnit עם חבילת בדיקות של WordPress
-- **Base Test Class**: מספק שיטות עזר למצבי בדיקה נפוצים
-- **Test Coverage**: מוגדר למעקב אחר כיסוי קוד
-- **Multisite Testing**: הבדיקות רצות בסביבת MultiSite
+- **בדיקות יחידה**: בדיקות מבוססות PHPUnit עם חבילת הבדיקות של WordPress
+- **מחלקת בדיקה בסיסית**: מספקת מתודות עזר לתרחישי בדיקה נפוצים
+- **כיסוי בדיקות**: מוגדר למעקב אחר כיסוי קוד
+- **בדיקות Multisite**: הבדיקות רצות בסביבת multisite
 
-### תקני קוד
+### תקני קוד {#code-standards}
 
-- **WordPress Coding Standards**: נאכפים באמצעות PHPCS
-- **PHP 7.4+ Compatibility**: תמיכה בתכונות PHP מודרניות
-- **Static Analysis**: שילוב PHPStan לבדיקת סוגי נתונים
-- **Code Modernization**: כללי Rector לשדרוגי PHP
+- **תקני הקידוד של WordPress**: נאכפים באמצעות PHPCS
+- **תאימות PHP 7.4+**: נתמכות יכולות PHP מודרניות
+- **ניתוח סטטי**: שילוב PHPStan לבדיקת טיפוסים
+- **מודרניזציית קוד**: כללי Rector לשדרוגי PHP
 
-### מערכת בנייה
+### מערכת בנייה {#build-system}
 
-- **Asset Processing**: מיניפיקציה לקבצי CSS/JS
-- **Translation**: יצירת קובצי POT
-- **Packaging**: יצירת ארכיון להפצה
-- **Development Mode**: נכסים לא ממוזערים לצורך דיבוג
+- **עיבוד נכסים**: הקטנה עבור קובצי CSS/JS
+- **תרגום**: יצירת קובץ POT
+- **אריזה**: יצירת ארכיון להפצה
+- **מצב פיתוח**: נכסים לא מוקטנים לצורך ניפוי שגיאות
 
-## תצורה
+## תצורה {#configuration}
 
-ה-addon תומך באפשרויות תצורה שונות הנגישות דרך ממשק מנהל הרשת.
+תוסף ההרחבה תומך במגוון אפשרויות תצורה הנגישות דרך ממשק ניהול הרשת.
 
-## Hooks ופילטרים
+### תצורת דייר ריבוני {#sovereign-tenant-configuration}
 
-### פעולות (Actions)
+עבור דיירים ריבוניים, הגדר את מסד הנתונים של הדייר, שורש מערכת הקבצים, קישור מארח מסד הנתונים ויכולת המארח לפני ניתוב תעבורה לדייר. הרץ אימות הגירה לאחר כל שינוי שמשפיע על פרטי הגישה למסד הנתונים, קישור המארח, הניתוב או הקצאת המשתמשים.
 
-- `ultimate-multisite-addon-template_init` - מופעל לאחר אתחול ה-addon.
-- `ultimate-multisite-addon-template_loaded` - מופעל לאחר טעינת כל קבצי ה-addon.
+השתמש ב-`localhost` רק כאשר סביבת הריצה של הדייר והרשאות מסד הנתונים מצפות לגישה דרך socket מקומי או מאותה מכונה. השתמש ב-`127.0.0.1` או בשם מארח של שירות כאשר זהו מארח ההרשאה שהוגדר על ידי הספק שלך.
 
-### פילטרים (Filters)
+### יכולת Hostinger {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - שינוי הגדרות ה-addon.
-- `ultimate-multisite-addon-template_enabled` - דריסה של סטטוס הפעלה/כיבוי ה-addon.
+יכולת ריבוי הדיירים של Hostinger עובדת עם אסימון השילוב המשותף של Hostinger. ודא שהדומיין מופיע ב-hPanel, ש-DNS מצביע אל חשבון Hostinger, ושהגדרות מסד הנתונים של הדייר תואמות ל-hPanel לפני האימות.
 
-## רישיון
+## Hooks ומסננים {#hooks-and-filters}
 
-ה-addon הזה מורשה תחת GPL v3 או גרסה מאוחרת יותר.
+### פעולות {#actions}
 
-## תמיכה
+- `ultimate-multisite-addon-template_init` - מופעל לאחר אתחול תוסף ההרחבה
+- `ultimate-multisite-addon-template_loaded` - מופעל לאחר שכל קובצי תוסף ההרחבה נטענו
 
-לתמיכה ולתיעוד, בקרו ב-[MultisiteUltimate.com](https://multisiteultimate.com)
-## יומן שינויים
+### מסננים {#filters}
 
-- גרסה 1.0.1 (2025-09-28): שינוי הקידומת ל-ultimate-multisite; עדכון תחום הטקסט; העלאת גרסה.
+- `ultimate-multisite-addon-template_settings` - שנה את הגדרות תוסף ההרחבה
+- `ultimate-multisite-addon-template_enabled` - עקוף את מצב ההפעלה/השבתה של תוסף ההרחבה
 
-- גרסה (2025-09-28): שינוי הקידומת ל-ultimate-multisite; עדכון תחום הטקסט; העלאת גרסה.
+## רישיון {#license}
+
+תוסף הרחבה זה מורשה תחת GPL v3 או מאוחר יותר.
+
+## תמיכה {#support}
+
+לתמיכה ותיעוד, בקר ב-[MultisiteUltimate.com](https://multisiteultimate.com)
+## יומן שינויים {#changelog}
+
+- גרסה 1.2.0 (2026-06-03): הוסף התחברות אוטומטית ללא מצב לדייר, יכולת ריבוי דיירים של Hostinger, בידוד מסד נתונים ומערכת קבצים לכל תת-אתר, שערי אימות הגירה ריבונית, שיפורים באתחול דייר/כותב מסד נתונים, קישור מארח MySQL הניתן להגדרה, ופירוק ריבוני בטוח יותר.
+
+- גרסה 1.0.1 (2025-09-28): שנה את שם הקידומת ל-ultimate-multisite; עדכן text domain; העלאת גרסה.
+
+
+- גרסה  (2025-09-28): שנה את שם הקידומת ל-ultimate-multisite; עדכן text domain; העלאת גרסה.

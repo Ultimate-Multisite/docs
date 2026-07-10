@@ -3,18 +3,18 @@ title: Tema buvimo galimybės
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Możliwości Theme Builder: Szkieletowanie i Aktywacja Tematów Blokowych
+# Możliwości Theme Builder: Szkieletowanie i Aktywacja Tematów Blokowych {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 wprowadza dwie potężne możliwości, które pozwalają generować i wdrażać niestandardowe tematy blokowe bezpośrednio z interfejsu czatu.
 
-## Przegląd
+## Przegląd {#overview}
 
 Możliwości **scaffold-block-theme** (szkieletowanie tematu blokowego) i **activate-theme** (aktywacja tematu) pozwalają agentom na:
 - Generowanie kompletnych, gotowych do produkcji tematów blokowych na podstawie Twoich wymagań
 - Automatyczną aktywację tematów na Twojej stronie bez ręcznej ingerencji
 - Tworzenie spójnej tożsamości wizualnej dzięki wspólnym decyzjom projektowym
 
-## Szkieletowanie Tematu Blokowego (Scaffold Block Theme)
+## Szkieletowanie Tematu Blokowego (Scaffold Block Theme) {#scaffold-block-theme}
 
 Możliwość **scaffold-block-theme** generuje nowy temat blokowy WordPress z pełną strukturą tematu, w tym:
 
@@ -23,7 +23,7 @@ Możliwość **scaffold-block-theme** generuje nowy temat blokowy WordPress z pe
 - niestandardowe style i warianty bloków
 - metadane tematu i deklaracje wsparcia
 
-### Jak użyć
+### Jak użyć {#how-to-invoke}
 
 W czacie z Superdav AI Agent możesz poprosić o generowanie tematu:
 
@@ -38,7 +38,7 @@ Agent zrobi to:
 3. Utworzy wszystkie niezbędne pliki tematu
 4. Przygotuje temat do aktywacji
 
-### Oczekiwany wynik
+### Oczekiwany wynik {#expected-output}
 
 Gdy możliwość wykonana zostanie pomyślnie, zobaczysz:
 
@@ -56,11 +56,11 @@ Przykład wyniku:
   Status: Gotowy do aktywacji
 ```
 
-## Aktywacja Tematu (Activate Theme)
+## Aktywacja Tematu (Activate Theme) {#activate-theme}
 
 Funkcija **activate-theme** leina jūsų svetainę naujai sukurto arba esamą blokową temą.
 
-### Kaip ją įjungti
+### Kaip ją įjungti {#how-to-invoke-1}
 
 Po to, kai sukurtę temą pateikote (scaffolding), galite ją aktyvuoti iš karto:
 
@@ -74,7 +74,7 @@ Arba aktyvuoti bet kuriuo esamą temą:
 "Pakeisti į Twentytwentyfour temą"
 ```
 
-### Tikėtinas rezultatas
+### Tikėtinas rezultatas {#expected-output-1}
 
 Kai aktyvavimas sėkmingai vyks:
 

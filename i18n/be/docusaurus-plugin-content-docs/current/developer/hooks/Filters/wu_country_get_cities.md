@@ -4,11 +4,11 @@ title: Фільтр - wu_country_get_cities
 sidebar_label: wu_country_get_cities
 _i18n_hash: 735d225527548ab4de66cd0308439c09
 ---
-# Фільтр: wu_country_get_cities
+# Фільтр: wu_country_get_cities {#filter-wucountrygetcities}
 
 Паказвае спіс гарадоў для краі ўнутры краіны.
 
-## Паметры
+## Паметры {#parameters}
 
 | Назва | Тып | Апісан |
 |------|------|-------------|
@@ -17,13 +17,13 @@ _i18n_hash: 735d225527548ab4de66cd0308439c09
 | $state_code | `string` | Двулітарковы ISO-код краіны. |
 | $current_country | `\WP_Ultimo\Country\Country` | Экземплярык бягункай класа. |
 
-### З
+### З {#since}
 
 - 2.0.11
-### Выклік
+### Выклік {#source}
 
 Вызначаны ў [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L146) на 146-й пасылцы.
 
 
-## Паказвае
+## Паказвае {#returns}
 Фільтраваны спіс краін.

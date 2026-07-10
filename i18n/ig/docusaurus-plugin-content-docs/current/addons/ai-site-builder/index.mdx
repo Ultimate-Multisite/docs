@@ -1,0 +1,124 @@
+---
+title: Onye nrụpụta saịtị AI
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# Onye Mwube Saịtị AI {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Ihe achọrọ {#requirements}
+
+- WordPress 5.3 ma ọ bụ karịa
+- PHP 7.4 ma ọ bụ karịa
+- Multisite Ultimate plugin (na-arụ ọrụ)
+
+## Ntinye {#installation}
+
+1. Bulite faịlụ addon ndị ahụ n’akwụkwọ ndekọ `/wp-content/plugins/` gị
+2. Mee ka plugin rụọ ọrụ site na menu 'Plugins' na WordPress
+3. Hazie ntọala addon n’akaụntụ nchịkwa netwọkụ
+
+## Mmepe {#development}
+
+### Ntọlite {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Nhazi oru ngo {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # Klas PHP na ihe etinyere
+│   ├── class-multisite-ultimate-updater.php  # Onye na-ahụ maka mmelite
+│   └── class-ai_site_builder-main.php             # Ọrụ bụ isi
+├── tests/                        # Nnwale unit
+│   ├── bootstrap.php            # Mmalite nnwale
+│   ├── class-*-base.php         # Klas nnwale bụ isi
+│   └── class-*-test.php         # Okwu nnwale
+├── views/                       # Faịlụ template
+├── assets/                      # Akụrụngwa static
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # Faịlụ JavaScript
+│   └── images/                  # Onyonyo
+├── lang/                        # Faịlụ asụsụ
+├── composer.json                # Ndabere PHP
+├── package.json                 # Ndabere Node.js
+├── phpunit.xml.dist             # Nhazi PHPUnit
+├── .phpcs.xml.dist              # Nhazi ụkpụrụ code
+└── rector.php                   # Iwu ime ka code bụrụ nke ọgbara ọhụrụ
+```
+
+### Nnwale {#testing}
+
+Addon a gụnyere usoro nnwale zuru oke:
+
+- **Nnwale Unit**: Nnwale dabere na PHPUnit nwere WordPress test suite
+- **Klas Nnwale Bụ Isi**: Na-enye usoro enyemaka maka ọnọdụ nnwale a na-ahụkarị
+- **Mkpuchi Nnwale**: Ahaziri ya iji soro mkpuchi code
+- **Nnwale Multisite**: Nnwale na-agba n’ime gburugburu multisite
+
+### Ụkpụrụ Code {#code-standards}
+
+- **Ụkpụrụ Ide Code WordPress**: A na-amanye ya site na PHPCS
+- **Ndakọrịta PHP 7.4+**: A na-akwado atụmatụ PHP ọgbara ọhụrụ
+- **Nyocha Static**: Njikọ PHPStan maka ịlele ụdị
+- **Ime ka Code bụrụ nke Ọgbara Ọhụrụ**: Iwu Rector maka mmelite PHP
+
+### Usoro Mwube {#build-system}
+
+- **Nhazi Akụrụngwa**: Ibelata nha faịlụ CSS/JS
+- **Ntụgharị Asụsụ**: Mmepụta faịlụ POT
+- **Mbukota**: Ịmepụta archive maka nkesa
+- **Ụdị Mmepe**: Akụrụngwa a na-ebelataghị maka debugging
+
+## Nhazi {#configuration}
+
+Addon a na-akwado nhọrọ nhazi dị iche iche a na-enweta site na interface nchịkwa netwọkụ.
+
+## Hooks na Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - A na-akpọ ya mgbe mmalite addon gachara
+- `ultimate-multisite-ai-site-builder_loaded` - A na-akpọ ya mgbe ebuchara faịlụ addon niile
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Gbanwee ntọala addon
+- `ultimate-multisite-ai-site-builder_enabled` - Dochie ọnọdụ ime ka addon rụọ ọrụ/kwụsị ọrụ
+
+## Ikikere {#license}
+
+Addon a nwere ikikere n’okpuru GPL v3 ma ọ bụ nke ọzọ gasịrị.
+
+## Nkwado {#support}
+
+Maka nkwado na akwụkwọ nduzi, gaa na [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Version 1.0.1 (2025-09-28): gbanwee prefix ka ọ bụrụ ultimate-multisite; melite text domain; bulie version.
+
+
+- Version  (2025-09-28): gbanwee prefix ka ọ bụrụ ultimate-multisite; melite text domain; bulie version.

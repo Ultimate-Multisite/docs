@@ -3,7 +3,7 @@ title: Webhooks
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Eifach e Blick uf Webhooks (v2)
+# Eifach e Blick uf Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**ACHTUNG: Mer söttet wüsse, dass di Funktione oder de Artikel für fortgschritteni Benutzer sind.**_
 
@@ -11,7 +11,7 @@ E **webhook** isch en Weg, wie e App oder Software wie Ultimate Multisite anderi
 
 Das isch nützlich, wenn du integriere oder bestimti Date vo Ultimate Multisite zu eme andere CRM oder System wiitergäbe muesch, jedes Mal, wenn es en Ereignis usglöst wird. Zum Bischpil bruchsch du de Name und d'E-Mail-Adrässe vom Benutzer an e Mailingliste, jedes Mal, wenn es es neus Benutzerkonto git.
 
-## Wie mer en webhook erstellt
+## Wie mer en webhook erstellt {#how-to-create-a-webhook}
 
 Um en webhook z'erstelle, gaht du zu dim Netzwerkadministrator-Dashboard. Klick uf **Ultimate Multisite > Webhooks > Add New Webhook.**
 

@@ -3,7 +3,7 @@ title: Enrejistre yon Kont kòmanse ak Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Even: Regiz yon kont avè Google Sheets ak Zapier
+# Even: Regiz yon kont avè Google Sheets ak Zapier {#event-register-an-account-via-zapier}
 
 Nan artikel la [Integrating Ultimate Multisite with Zapier](zapier.md), nou te pale kijan pou itilize Zapier pou fè diferan aksyon nan Ultimate Multisite baze sou triggers ak events. Nan tèks sa a, nou pral montre w kijan ou ka mete aplikasyon twazyèm pati yo anba yon sistèm. Nou pral itilize Google Sheets kòm sous done epi voye enfòmasyon an nan Ultimate Multisite pou rezoud kont.
 

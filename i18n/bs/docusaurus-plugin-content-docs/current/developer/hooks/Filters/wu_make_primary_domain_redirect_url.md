@@ -4,13 +4,13 @@ title: Filter - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 Filtrira URL za preusmjeravanje nakon postavljanja domena kao primarnog.
 
 Omogućava programerima da prilagode gdje će korisnici biti preusmjereni nakon uspješnog postavljanja domena kao primarnog. Podrazumevano, preusmjerava na trenutni URL na glavnom sajtu, ili na admin URL sajt koji se mijenja.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ Omogućava programerima da prilagode gdje će korisnici biti preusmjereni nakon 
 | $domain | `\Domain` | Objekt domena koji je postavljen kao primarni. |
 | $old_primary_domains | `array` | Niz ID-jeva domena koji su ranije bili primarni. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Izvor
+### Izvor {#source}
 
 Definisano u [`inc/ui/class-domain-mapping-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) na liniji 639
 
 
-## Vraća
+## Vraća {#returns}
 Filtrirani URL za preusmjeravanje.

@@ -1,9 +1,9 @@
 ---
 title: רשום נקודת קצה API
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# נקודת הקצה של Register API ב-Ultimate Multisite
+# נקודת הקצה של Register API ב-Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 במדריך זה תלמדו כיצד להשתמש בנקודת הקצה /register של Ultimate Multisite כדי ליצור את כל תהליך ההצטרפות ללקוח חדש ברשת שלכם, וכיצד לעשות זאת באמצעות Zapier.
 
@@ -19,16 +19,21 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 לתהליך זה תזדקקו לפרטי ההתחברות ל-API. כדי לקבל אותם, היכנסו ללוח הניהול של הרשת, נווטו אל **Ultimate Multisite > Settings** > **API & Webhooks,** וחפשו את הקטע API Settings.
 
-![קטע הגדרות API ב-Ultimate Multisite](/img/config/settings-api.png)  
+![קטע הגדרות API ב-Ultimate Multisite](/img/config/settings-api.png)
+
+הנה תצוגה מלאה של עמוד הגדרות ה-API:
+
+![עמוד הגדרות API מלא](/img/config/settings-api-full.png)
+
 סמנו את **Enable API** וקבלו את פרטי ההתחברות ל-API.
 
 כעת, בואו נחקור את נקודת הקצה ולאחר מכן ניצור פעולת רישום ב-Zapier.
 
-## פרמטרים בגוף הבקשה
+## פרמטרים בגוף הבקשה {#endpoint-body-parameters}
 
 בואו נסקור את המידע המינימלי שעלינו לשלוח לנקודת הקצה. בסוף מאמר זה תמצאו את הקריאה המלאה.
 
-### לקוח
+### לקוח {#customer}
 
 זהו המידע הנדרש לתהליך יצירת המשתמש והלקוח ב-Ultimate Multisite:
 
@@ -38,25 +43,25 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **מנוי**
+### **מנוי** {#membership}
 
 המידע היחיד שאנו צריכים בתוך אובייקט זה הוא סטטוס המנוי.
 
 "membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **מוצרים**
+### **מוצרים** {#products}
 
 מוצרים מועברים כמערך עם מזהה מוצר אחד או יותר מהרשת שלכם. שימו לב, נקודת קצה זו אינה יוצרת מוצרים. עיינו בתיעוד של Ultimate Multisite כדי להבין טוב יותר את נקודת הקצה ליצירת מוצרים.
 
 **"products" : [1,2],**
 
-### תשלום
+### תשלום {#payment}
 
 כמו במנוי, אנו צריכים רק את הסטטוס.
 
 **"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### אתר
+### אתר {#site}
 
 ולסיום גוף הבקשה, אנו צריכים את כתובת האתר והכותרת שלו, שניהם בתוך אובייקט Site.
 
@@ -64,13 +69,13 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 התשובה מנקודת הקצה register תהיה מערך עם פרטי המנוי שנוצר.
 
-## יצירת פעולה ב-Zapier
+## יצירת פעולה ב-Zapier {#creating-an-action-in-zapier}
 
 עם ההשקה של נקודת הקצה החדשה והמקיפה יותר ליצירת חשבונות, תוכלו לגשת גם לפעולה חדשה ב-Zapier.
 
 האם אתם יודעים כיצד להשתמש וליהנות מכל מה שהגרסה החדשה של Zapier מציעה? למדו עוד כאן. (link?)
 
-### יצירת פעולה
+### יצירת פעולה {#creating-an-action}
 
 כדי להמחיש טוב יותר כיצד להשתמש בנקודת הקצה לרישום עם Zapier, בואו ניצור אינטגרציה עם Google Forms. בכל פעם שטופס זה ימולא והמידע יישמר בגיליון התשובות של הטופס, ייווצר מנוי חדש ברשת Ultimate Multisite.
 
@@ -100,7 +105,7 @@ _i18n_hash: 33318472a834d15f5533362cddfeca20
 
 בדקו את ה-Zap החדש שלכם והוא אמור להושלם בהצלחה. אם מתרחשת שגיאה כלשהי, בדקו את כל השדות ואם הם נשלחים כראוי. מכיוון שיש הרבה מידע, דברים מסוימים עלולים להתפספס.
 
-### פרמטרים מלאים של נקודת הקצה
+### פרמטרים מלאים של נקודת הקצה {#complete-endpoint-parameters}
 
 הנה הקריאה המלאה וכל האפשרויות של שדות שניתן לשלוח.
 

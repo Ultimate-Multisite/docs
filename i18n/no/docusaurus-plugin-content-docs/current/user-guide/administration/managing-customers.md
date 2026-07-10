@@ -3,7 +3,7 @@ title: Administrere kunder
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Administrere kunder
+# Administrere kunder {#managing-customers}
 
 **Kunder**-siden viser en liste over medlemmer som er registrert i nettverket ditt. Denne siden viser grunnleggende brukerinformasjon, inkludert navn, e-postadresse, siste innlogging og en **bytt til**-lenke som lar deg logge inn på brukerens underside som administrator.
 

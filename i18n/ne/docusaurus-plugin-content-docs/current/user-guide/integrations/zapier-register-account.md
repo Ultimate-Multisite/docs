@@ -3,7 +3,7 @@ title: Zapier मार्फत खाता दर्ता गर्नुह
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# कार्यक्रम: Zapier मार्फत खाता दर्ता गर्ने
+# कार्यक्रम: Zapier मार्फत खाता दर्ता गर्ने {#event-register-an-account-via-zapier}
 
 लेख [Integrating Ultimate Multisite with Zapier](zapier.md) मा, हामीले ट्रिगर र इभेन्टहरूको आधारमा Ultimate Multisite भित्र विभिन्न कार्यहरू गर्नका लागि Zapier कसरी प्रयोग गर्ने भन्ने बारे छलफल गरेका थियौं। यस लेखमा, हामी तपाईंलाई तेस्रो पक्षका एपहरू (3rd party applications) कसरी एकीकृत (integrate) गर्न सकिन्छ भनेर देखाउनेछौं। हामी डेटाको स्रोतको रूपमा Google Sheets प्रयोग गर्नेछौं र खाता दर्ता गर्न Ultimate Multisite मा जानकारी पठाउनेछौं।
 

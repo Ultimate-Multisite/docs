@@ -3,15 +3,15 @@ title: চাক নৰিস ফেক্টছ চেঞ্জলগ
 sidebar_position: 99
 _i18n_hash: cc3553ae44841b5a8286cb9895231745
 ---
-# Chuck Norris Facts Changelog
+# Chuck Norris Facts Changelog {#chuck-norris-facts-changelog}
 
-### 1.0.1 - 2025-11-03
+### 1.0.1 - 2025-11-03 {#101---2025-11-03}
 * যোগ কৰা হৈছে: Ultimate Multisite update serverৰ জৰিয়তে স্বয়ংক্রিয় আপডেট কাৰ্য্যক্ষমতা।
 * আপডেট কৰা হৈছে: WordPress 6.6 লৈকে পৰীক্ষা কৰা হৈছে।
 * আপডেট কৰা হৈছে: composer autoloaderৰে plugin গঠন উন্নত কৰা হৈছে।
 * আপডেট কৰা হৈছে: আধুনিক WordPress স্থাপনৰ সৈতে উন্নত সামঞ্জস্য।
 
-### 1.0.0 - 2024-10-21
+### 1.0.0 - 2024-10-21 {#100---2024-10-21}
 * প্ৰথম মুকলি
 * ১১০+ Chuck Norris facts
 * সম্পূৰ্ণ অনুবাদ সমৰ্থন

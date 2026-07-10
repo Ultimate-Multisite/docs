@@ -4,20 +4,20 @@ title: Action - mu_migration/import/user/custom_data_after
 sidebar_label: mu_migration/import/user/custom_data_after
 _i18n_hash: 4775c44fa3c63582f55cfb9f99312646
 ---
-# Action: mu_migration/import/user/custom_data_after
+# Action: mu_migration/import/user/custom_data_after {#action-mumigrationimportusercustomdataafter}
 
 Xüsusi istifadəçi məlumatları ixrac edildikdən sonra işə düşür.
 
-## Parametr
+## Parametr {#parameters}
 
 | Ad | Tip | Təsvir |
 |------|------|-------------|
 | $user_data | `array` | İstifadəçi məlumatları massivi. |
 | $user | `\WP_User` | İstifadəçi obyekti. |
 
-### Nə vaxtdən bəri
+### Nə vaxtdən bəri {#since}
 
 - 0.1.0
-### Mənbə
+### Mənbə {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-import.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-import.php#L165) faylının 165-ci sətirində təyin edilmişdir.

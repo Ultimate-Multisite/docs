@@ -1,0 +1,23 @@
+---
+id: update_network
+title: Гамәл - update_network
+sidebar_label: update_network
+_i18n_hash: 30d641aa926dccf203a03423adfef217
+---
+# Гамәл: update_network {#action-updatenetwork}
+
+Булган челтәр яңартылганнан соң эшли.
+
+## Параметрлар {#parameters}
+
+| Исем | Төр | Тасвирлама |
+|------|------|-------------|
+| $network_id | `int` | Өстәлгән челтәр ID-сы. |
+| $args | `array` | Челтәр аргументларының ассоциатив массивы. |
+
+### Чыгарылыштан бирле {#since}
+
+- 1.3.0
+### Чыганак {#source}
+
+[`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1422) эчендә 1422 нче юлда билгеләнгән

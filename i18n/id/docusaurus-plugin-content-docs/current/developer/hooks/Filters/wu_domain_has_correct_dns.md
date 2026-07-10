@@ -4,11 +4,11 @@ title: Filter - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 Memungkinkan pengembang plugin untuk menambahkan pemeriksaan baru guna menentukan hasilnya.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Memungkinkan pengembang plugin untuk menambahkan pemeriksaan baru guna menentuka
 | $domain | `self` | Instance domain saat ini. |
 | $domains_and_ips | `array` | Daftar domain dan IP yang ditemukan pada pencarian DNS. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.0.4
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) pada baris 455
 
 
-## Mengembalikan
+## Mengembalikan {#returns}
 Status apakah DNS sudah diatur dengan benar atau belum.

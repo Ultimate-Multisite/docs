@@ -1,94 +1,109 @@
 ---
-title: WooCommerce Integration
+title: WooCommerce एकत्रीकरण
 sidebar_position: 1
-_i18n_hash: 05b0100d43f058aee6bee693629ccc53
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
 
-# WooCommerce Integration
+# WooCommerce एकत्रीकरण {#woocommerce-integration}
 
-WooCommerce Integration हे आमच्या Manual Gateway प्रमाणेच काम करते. हे तुमच्या वापरकर्त्यांना खूप लवचिकता देते, ज्यामुळे त्यांना तुमच्या WooCommerce इन्स्टॉलेशनवर उपलब्ध असलेल्या कोणत्याही पेमेंट फॉर्मची निवड करता येते. आणि ते सोपे आहे: एकदा वापरकर्त्याचा बिलिंग कालावधी संपला की, वापरकर्त्याचे सबस्क्रिप्शन 'on hold' केले जाते. त्याच वेळी, नेटवर्कच्या मुख्य साइटवरील WooCommerce इन्स्टॉलेशनवर एक ऑर्डर तयार होते. त्यानंतर वापरकर्त्याला पेमेंट करण्यासाठी लिंकसह त्यांच्या ईमेलवर एक इनव्हॉइस (invoice) प्राप्त होते. पेमेंट मिळाल्यावर, सबस्क्रिप्शन नूतनीकरण (renew) होते.
+WooCommerce एकत्रीकरण आमच्या Manual Gateway ज्या प्रकारे काम करते त्याच्याशी खूपच समान प्रकारे काम करते. हे तुमच्या वापरकर्त्यांना मोठ्या प्रमाणात लवचिकता देते, ज्यामुळे ते तुमच्या WooCommerce स्थापनेवर उपलब्ध असलेल्या कोणत्याही पेमेंट फॉर्मची निवड करू शकतात. आणि ते सोपे आहे: वापरकर्त्याचा बिलिंग कालावधी संपल्यानंतर, वापरकर्त्याची सदस्यता होल्डवर ठेवली जाते. त्याच वेळी, नेटवर्कच्या मुख्य साइटवरील WooCommerce स्थापनेवर एक ऑर्डर तयार केली जाईल. त्यानंतर वापरकर्त्याला त्यांच्या ईमेलमध्ये एक इनव्हॉइस मिळतो, ज्यात पेमेंट करण्यासाठी एक लिंक असते. पेमेंट मिळाल्यानंतर, सदस्यता नूतनीकरण केली जाते.
 
-## Features
+## वैशिष्ट्ये {#features}
 
-- Ultimate Multisite आणि WooCommerce मध्ये सोपे एकत्रीकरण (Easy integration)
+- Ultimate Multisite आणि WooCommerce यांच्यात सोपे एकत्रीकरण
 - अनेक पेमेंट पद्धती उपलब्ध
-- WooCommerce Subscriptions सह पूर्णपणे स्वयंचलित प्रक्रिया
+- बंडल केलेल्या सदस्यता कोअरचा वापर करून स्वयंचलित आवर्ती बिलिंग, ऐच्छिक WooCommerce Subscriptions plugin सुधारणांसह
+- Checkout एकूणांमध्ये Ultimate Multisite कर स्वतंत्र, करपात्र नसलेल्या WooCommerce फी ओळी म्हणून समाविष्ट असतात, जेणेकरून ग्राहक पेमेंटपूर्वी कर रकमेचे पुनरावलोकन करू शकतील
 
-## Documentation
+## दस्तऐवजीकरण {#documentation}
 
-**WooCommerce Integration सेट करणे**
+**WooCommerce एकत्रीकरण सेट करणे**
 
-**Ultimate Multisite मध्ये तुमच्या पेमेंट पर्याय वाढवणे: WooCommerce Integration**
+**Ultimate Multisite सह तुमचे पेमेंट पर्याय विस्तारित करणे: WooCommerce एकत्रीकरण**
 
-## Installation
+## स्थापना {#installation}
 
-1. 'ultimate-multisite-woocommerce' हे 'plugins' डिरेक्टरीमध्ये अपलोड करा.
-2. WordPress मधील 'Plugins' मेनूद्वारे प्लगइन सक्रिय (Activate) करा.
-3. प्लगइन सेट करण्यासाठी व्हिजार्डचे (Wizard) पायरी-पायरीने अनुसरण करा.
+1. 'ultimate-multisite-woocommerce' हे '/wp-content/plugins/' निर्देशिकेत अपलोड करा
+2. WordPress मधील 'Plugins' मेनूद्वारे plugin सक्रिय करा
+3. plugin सेट करण्यासाठी चरण-दर-चरण Wizard चे अनुसरण करा
 
-## Usage Guide
+## वापर मार्गदर्शक {#usage-guide}
 
-_**महत्त्वाची सूचना: हा लेख Ultimate Multisite आवृत्ती 2.x शी संबंधित आहे.**_
+_**महत्त्वाची नोंद: हा लेख Ultimate Multisite आवृत्ती 2.x संदर्भित करतो.**_
 
-_**लक्ष द्या:** Ultimate Multisite: WooCommerce Integration साठी तुमच्या मुख्य साइटवर किमान WooCommerce सक्रिय असणे आवश्यक आहे._
+_**लक्ष द्या:** Ultimate Multisite: WooCommerce एकत्रीकरणासाठी WooCommerce किमान तुमच्या मुख्य साइटवर सक्रिय असणे आवश्यक आहे._
 
-आम्हाला माहिती आहे की काही देशांमध्ये _Stripe_ आणि _PayPal_ उपलब्ध नाहीत, ज्यामुळे Ultimate Multisite वापरकर्त्यांना आमचे प्लगइन प्रभावीपणे वापरण्यास मर्यादा येतात किंवा अडथळे येतात. म्हणून आम्ही _WooCommerce_ सोबत एकत्रीकरण करण्यासाठी एक **add-on** तयार केला आहे.
+आम्हाला समजते की _Stripe_ आणि _PayPal_ काही देशांमध्ये उपलब्ध नाहीत, ज्यामुळे Ultimate Multisite वापरकर्त्यांना आमचा plugin प्रभावीपणे वापरणे मर्यादित किंवा अडथळादायक होते. म्हणून आम्ही **_WooCommerce_ एकत्रित करण्यासाठी add-on** तयार केला.
 
-_WooCommerce_ हे एक अतिशय लोकप्रिय ई-कॉमर्स प्लगइन आहे. जगभरातील डेव्हलपर्सनी याला विविध पेमेंट गेटवे जोडण्यासाठी add-ons तयार केले आहेत. आम्ही याचा फायदा घेऊन Ultimate Multisite बिलिंग सिस्टीममध्ये तुम्ही वापरू शकता अशा पेमेंट गेटवेचा विस्तार केला आहे.
+_WooCommerce_ हा एक अतिशय लोकप्रिय ईकॉमर्स plugin आहे. जगभरातील विकासकांनी त्यात वेगवेगळे पेमेंट गेटवे एकत्रित करण्यासाठी add-ons तयार केले. Ultimate Multisite बिलिंग प्रणालीमध्ये तुम्ही वापरू शकणारे पेमेंट गेटवे विस्तारित करण्यासाठी आम्ही याचा फायदा घेतला.
 
-## Setting It Up
+## ते सेट करणे {#setting-it-up}
 
-सर्वात आधी, तुम्हाला WooCommerce Integration add-on इन्स्टॉल करण्याची गरज आहे, जे **परवानाधारक वापरकर्त्यांसाठी विनामूल्य** आहे. ते इन्स्टॉल करण्यासाठी, तुमच्या सुपर ॲडमिन डॅशबोर्डवर Ultimate Multisite वर क्लिक करा आणि **Add-ons** निवडा.
+प्रथम, तुम्हाला WooCommerce Integration add-on स्थापित करणे आवश्यक आहे, जो **परवानाधारक वापरकर्त्यांसाठी मोफत** आहे. तो स्थापित करण्यासाठी, तुमच्या super admin dashboard वर Ultimate Multisite वर क्लिक करा आणि **Add-ons** निवडा.
 
-![Add-ons page](/img/admin/addons-page.png)
+![Add-ons पृष्ठ](/img/admin/addons-page.png)
 
-येथे तुम्हाला सर्व Ultimate Multisite add-ons मिळतील. **Ultimate Multisite: WooCommerce Integration** add-on वर क्लिक करा.
+येथे तुम्हाला सर्व Ultimate Multisite add-ons सापडतील. **Ultimate Multisite: WooCommerce Integration** add-on वर क्लिक करा.
 
-![Add-ons page showing WooCommerce Integration](/img/admin/addons-page.png)
+![WooCommerce Integration दाखवणारे Add-ons पृष्ठ](/img/admin/addons-page.png)
 
-add-on तपशीलांसह एक विंडो उघडेल. फक्त **Install Now** वर क्लिक करा.
+add-on तपशीलांसह एक विंडो उघडेल. फक्त **Install Now** वर क्लिक करा *.*
 
-<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+<!-- स्क्रीनशॉट उपलब्ध नाही: Install Now बटणासह WooCommerce Integration addon स्थापना पॉपअप -->
 
-इन्स्टॉलेशन पूर्ण झाल्यावर, तुम्हाला प्लगइन्स पेजवर रीडायरेक्ट केले जाईल. येथे, फक्त **Network Activate** वर क्लिक करा आणि _WooCommerce_ add-on तुमच्या नेटवर्कवर सक्रिय होईल.
+स्थापना पूर्ण झाल्यानंतर, तुम्हाला plugins पृष्ठावर पुनर्निर्देशित केले जाईल. येथे, फक्त **Network Activate** वर क्लिक करा आणि _WooCommerce_ add-on तुमच्या नेटवर्कवर सक्रिय केला जाईल.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+<!-- स्क्रीनशॉट उपलब्ध नाही: WooCommerce Integration साठी Network Activate बटण दाखवणारे WP Plugins पृष्ठ -->
 
-सक्रिय केल्यानंतर, जर तुमच्या वेबसाइटवर अजूनही WooCommerce प्लगइन इन्स्टॉल आणि सक्रिय नसेल, **तर तुम्हाला एक आठवण (reminder) मिळेल**.
+ते सक्रिय केल्यानंतर, जर तुमच्या वेबसाइटवर WooCommerce plugin अद्याप स्थापित आणि सक्रिय नसेल, तर **तुम्हाला एक स्मरणपत्र मिळेल**.
 
-<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+<!-- स्क्रीनशॉट उपलब्ध नाही: WooCommerce plugin स्थापित आणि सक्रिय करण्याची आठवण करून देणारी Admin सूचना -->
 
-इन्स्टॉल केल्यावर, तुम्हाला Ultimate Multisite पेमेंट सेटिंग्जमध्ये एक अतिरिक्त पर्याय दिसेल. त्यानंतर तुम्ही तिथून _WooCommerce_ पर्याय **enable** करू शकता.
+स्थापित झाल्यानंतर, तुम्हाला Ultimate Multisite पेमेंट सेटिंग्जखाली एक अतिरिक्त पर्याय दिसेल. त्यानंतर तुम्ही तेथून _WooCommerce_ पर्याय **सक्षम** करू शकता.
 
-![Payment gateway settings](/img/config/settings-payment-gateways.png)
+![WooCommerce सक्षम असलेली Ultimate Multisite पेमेंट गेटवे सेटिंग्ज](/img/addons/woocommerce-payment-gateway.png)
 
-तुम्ही काही मूलभूत सेटिंग्ज कॉन्फिगर करू शकता, जसे की फ्रंट एंडवर दिसणारे डिस्प्ले नाव आणि तुमच्या वापरकर्त्यांना त्यांच्या चेकआउट प्रवाहामध्ये मार्गदर्शन करण्यासाठी सूचना. त्यानंतर तुम्ही तुमच्या **मुख्य साइटच्या _WooCommerce_ सेटिंग्ज** मध्ये जाऊन तुम्हाला वापरायचे असलेले पेमेंट गेटवे सक्षम (enable) आणि कॉन्फिगर करू शकता.
+तुम्ही फ्रंट एंडमध्ये दिसणारे प्रदर्शन नाव आणि तुमच्या वापरकर्त्यांना त्यांच्या checkout प्रवाहात मार्गदर्शन करण्यासाठी सूचना यांसारख्या काही मूलभूत सेटिंग्ज कॉन्फिगर करू शकता. त्यानंतर तुम्ही वापरायला प्राधान्य देत असलेला पेमेंट गेटवे सक्षम आणि कॉन्फिगर करण्यासाठी तुमच्या **मुख्य साइटच्या _WooCommerce_ सेटिंग्ज** मध्ये जाऊ शकता.
 
-## How to manage the payment
+### Checkout कर फी ओळी {#checkout-tax-fee-lines}
 
-WooCommerce Integration हे आमच्या **Manual Gateway** प्रमाणेच काम करते. तोटा म्हणजे प्रत्येक पेमेंट बिलिंग कालावधीच्या शेवटी मॅन्युअली करावे लागते. कार्यप्रवाह (flow) खालीलप्रमाणे काम करतो:
+जेव्हा Ultimate Multisite checkout मध्ये कर समाविष्ट असतात, तेव्हा एकत्रीकरण प्रत्येक Ultimate Multisite कर रक्कम WooCommerce checkout मध्ये स्वतंत्र, करपात्र नसलेली फी ओळ म्हणून जोडते. यामुळे पेमेंटपूर्वी कर एकूण दृश्यमान राहतो, तसेच WooCommerce ने त्या कर फीवर पुन्हा कर लावणे टाळले जाते.
 
-  * एकदा वापरकर्त्याचा बिलिंग सायकल संपला की, सदस्यत्व **'on hold'** केले जाते. त्याच वेळी, तुमच्या नेटवर्कच्या मुख्य साइटवरील _WooCommerce_ इन्स्टॉलेशनवर एक ऑर्डर तयार होते.
+## पेमेंट कसे व्यवस्थापित करावे {#how-to-manage-the-payment}
 
-  * त्यानंतर वापरकर्त्याला पेमेंट करण्यासाठी लिंकसह त्यांच्या ईमेलवर एक इनव्हॉइस प्राप्त होते (ही लिंक त्यांच्या सबसाइट डॅशबोर्डवरील बिलिंग हिस्ट्रीमध्ये देखील दिसते). ही लिंक वापरकर्त्याला _**WooCommerce**_ **चेकआउट** वर रीडायरेक्ट करते, जिथे वापरकर्ते त्यांचे पेमेंट करण्यासाठी **उपलब्ध _WooCommerce_ गेटवे** पैकी एक निवडू शकतील.
+WooCommerce एकत्रीकरण आमच्या **Manual Gateway** ज्या प्रकारे काम करते त्याच्याशी खूपच समान प्रकारे काम करते. तोटा असा आहे की प्रत्येक पेमेंट बिलिंग कालावधीच्या शेवटी मॅन्युअली भरावे लागते. प्रवाह कसा काम करतो ते येथे आहे:
 
-  * पेमेंट मिळाल्यावर, सदस्यत्व **नूतनीकरण (renew)** होते, पेमेंट Ultimate Multisite वर लॉग केले जाते आणि ऑर्डर पूर्ण (complete) सेट केली जाते.
+  * वापरकर्त्याचे बिलिंग चक्र संपल्यानंतर, सदस्यत्व **होल्डवर** ठेवले जाते. त्याच वेळी, तुमच्या नेटवर्कच्या मुख्य साइटवरील _WooCommerce_ स्थापनेवर एक ऑर्डर तयार केली जाईल.
 
-### Some Important Notes:
+  * त्यानंतर वापरकर्त्यांना त्यांच्या ईमेलमध्ये एक इनव्हॉइस मिळतो, ज्यात पेमेंट करण्यासाठी एक लिंक असते (ती लिंक त्यांच्या सबसाइट dashboard मधील त्यांच्या बिलिंग इतिहासातही दिसते). ती लिंक वापरकर्त्याला _**WooCommerce**_ **checkout** कडे पुनर्निर्देशित करते, जिथे वापरकर्ते त्यांचे पेमेंट प्रक्रिया करण्यासाठी **उपलब्ध _WooCommerce_ गेटवे** पैकी एक निवडू शकतील.
 
-  * Ultimate Multisite ची डिफॉल्ट कार्यक्षमता या एकत्रीकरण फॉर्मसह अजूनही काम करते. उदाहरणार्थ, **Subscription Management** स्क्रीनवरून **रिफंड जारी करणे** (issuing refunds) हे निवडलेल्या पेमेंट फॉर्मचा वापर करून रिफंड जारी करण्यासाठी WooCommerce शी संवाद साधेल.
+  * पेमेंट मिळाल्यानंतर, सदस्यत्व **नूतनीकरण** केले जाते, पेमेंट Ultimate Multisite वर लॉग केले जाते आणि ऑर्डर पूर्ण म्हणून सेट केली जाते.
 
-  * Ultimate Multisite: WooCommerce Integration ला काम करण्यासाठी WP-Cron वर अवलंबून राहावे लागते. बहुतेक वेळा हे खूप चांगले काम करते, परंतु जर साइटवर ट्रॅफिक कमी असेल, तर क्रॉनला (cron) शेड्यूल केलेल्या घटना तपासायला सांगण्यात चूक होते आणि ती घटना चुकते, ज्यामुळे अंमलबजावणीमध्ये विलंब होऊ शकतो.
+### काही महत्त्वाच्या नोंदी: {#some-important-notes}
 
-## Woocommerce Subscriptions Plugin
+  * Ultimate Multisite ची डीफॉल्ट कार्यक्षमता या एकत्रीकरण फॉर्मसह अजूनही काम करते. उदाहरणार्थ, **Subscription Management** स्क्रीनवरून **परतावे जारी करणे** निवडलेल्या पेमेंट फॉर्मचा वापर करून परतावा जारी करण्यासाठी WooCommerce शी संवाद साधेल.
 
-प्रत्येक महिन्यात मॅन्युअली पेमेंट सुरू करणे अंतिम वापरकर्त्यांसाठी आदर्श नाही, कारण सबस्क्रिप्शन प्रत्येक बिलिंग सायकलमध्ये आपोआप पुनरावृत्त (automatically recur) होण्याची अपेक्षा असते. म्हणून आम्ही WooCommerce Integration add-on डिझाइन केला आहे जे **WooCommerce Subscriptions plugin ला समर्थन (support) करते**. यामुळे व्यवहार करणे तुमच्या अंतिम वापरकर्त्यांसाठी सोपे होईल.
+  * Ultimate Multisite: WooCommerce एकत्रीकरण काम करण्यासाठी WP-Cron वर अवलंबून असते. हे बहुतेक वेळा खूप चांगले काम करते, परंतु साइटवर कमी ट्रॅफिक असल्यास cron ला नियोजित इव्हेंट तपासण्यास प्रवृत्त केले जात नाही आणि इव्हेंट चुकतो, ज्यामुळे अंमलबजावणीत विलंब होऊ शकतो.
 
-तुम्हाला फक्त [Woocommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) **इन्स्टॉल** करण्याची आणि ते तुमच्या **मुख्य साइटवर सक्रिय** करण्याची गरज आहे. त्यानंतर Ultimate Multisite पेमेंट सेटिंग्जवर परत जा आणि **integration enable** करा.
+## WooCommerce Subscriptions Plugin {#woocommerce-subscriptions-plugin}
 
-आणि एवढेच. तुमच्या अंतिम वापरकर्त्यांना त्यांच्या बिलिंग सायकलच्या शेवटी मॅन्युअली पेमेंट करण्याची गरज राहणार नाही.
+दर महिन्याला हाताने पेमेंट सुरू करणे अंतिम वापरकर्त्यांसाठी आदर्श नाही, कारण subscriptions प्रत्येक billing cycle मध्ये आपोआप पुन्हा होण्याची अपेक्षा असते. WooCommerce Integration add-on आता मुख्य subscriptions code सोबत बंडल केलेले आहे, त्यामुळे recurring products नेहमी recurring billing साठी subscriptions वापरतात.
 
-तुमच्या मुख्य साइटवर _WooCommerce_ अंतर्गत ऑर्डर तयार होण्याव्यतिरिक्त, ते प्रत्येक खात्यासाठी एक सबस्क्रिप्शन देखील तयार करेल.
+या integration द्वारे recurring products विकण्यासाठी तुम्हाला स्वतंत्र [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/) खरेदी किंवा install करण्याची **गरज नाही**. जर तो plugin खरेदी केलेला, install केलेला आणि तुमच्या मुख्य साइटवर उपलब्ध असेल, तर Ultimate Multisite तो वापरेल आणि WooCommerce अतिरिक्त subscription व्यवस्थापन वैशिष्ट्ये उपलब्ध करून देईल. तो उपलब्ध नसल्यास, बंडल केलेला subscriptions core तरीही recurring products हाताळतो.
+
+![WooCommerce subscription integration सेटिंग्ज](/img/addons/woocommerce-subscription-integration.png)
+
+आणि एवढेच. तुमच्या अंतिम वापरकर्त्यांना recurring products साठी त्यांच्या billing cycle च्या शेवटी हाताने पेमेंट करण्याची गरज राहणार नाही.
+
+तुमच्या मुख्य साइटवर _WooCommerce_ अंतर्गत ऑर्डर तयार होण्याव्यतिरिक्त, प्रत्येक Account साठी subscription देखील तयार होईल.
+
+### अयशस्वी renewal suspension वर्तन {#failed-renewal-suspension-behavior}
+
+पूर्वनिर्धारितपणे, WooCommerce Subscriptions त्याचे failed-payment retry schedule प्रक्रिया करत असताना memberships सक्रिय राहतात. यामुळे सामान्य WooCommerce Subscriptions grace window जतन होते, जेणेकरून पुनर्प्राप्त झालेला renewal subscription आणि membership पुन्हा समक्रमित करू शकतो, प्रवेश अकाली खंडित न करता.
+
+अधिक कठोर प्रवेश नियंत्रण हवे असलेले प्रशासक WooCommerce Integration सेटिंग्जमध्ये **Failed Renewals वर Memberships तत्काळ Suspend करा** सक्षम करू शकतात. हे opt-in सेटिंग सक्षम केले असताना, WooCommerce Subscriptions retry handling पूर्ण होण्याची वाट पाहण्याऐवजी Ultimate Multisite renewal payment अयशस्वी होताच संबंधित membership suspend करते.
+
+Developers हाच निर्णय `wu_woo_suspend_on_payment_failure` filter ने override करू शकतात. Hook reference pages add-on source मधून generated केले जातात, त्यामुळे हा overview custom suspension policies साठी फक्त filter name नमूद करतो.

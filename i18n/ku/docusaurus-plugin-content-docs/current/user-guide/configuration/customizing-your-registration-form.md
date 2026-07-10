@@ -1,154 +1,156 @@
 ---
-title: پێناساندنی فۆرم تۆمارکردنەکەت
+title: Taybetkirina forma xwe ya qeydkirinê
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# گۆڕینی فۆرم تۆمارکردن (Registration Form)
+# Formê Qeydkirinê yê xwe taybet bike {#customizing-your-registration-form}
 
-بۆ ئەوەی تۆڕەکەت لە هەموو ئەو SaaS یێن دی تر کە لەسەر پلاتفۆرمی WordPress دروست کراون، جیاواز بێت، Ultimate Multisite دەداتت بە تایبەتمەندی **Checkout Forms** فۆرمەکانی تۆمارکردن و ئامادەکردنی (login) دابین بکەیت.
+Ji bo ku tora te ji hemû SaaSên din ên li ser platforma WordPress hatine çêkirin cuda xuya bike, Ultimate Multisite bi taybetmendiya me ya **Formên Checkout** dihêle tu rûpelên qeydkirin û têketinê taybet bikî.
 
-بۆیە، سەرەڕای ئەوەی ئەمە ڕێگەیەکی ئاسان و گونجاو بۆ ئەوەی eksperiment بکەیت لەگەڵ ڕێگاکانی جیاواز کاتێک هەوڵ دەدەیت بەکارهێنەرانی نوێ دابنێیت، بەڵام زۆربەی کات بۆ دروستکردنی فۆرمەکانی تۆمارکردنی تایبەت (personalized) بەکاردێت. ئەم بابەتە مەبەستەکەی ئەوەیە کە نیشان بدات چۆن دەتوانیت ئەوە بکەیت.
+Her çend ew rêyek hêsan û nerm in ji bo ceribandina nêzîkatiyên cuda dema hewl didî xerîdarên nû veguherînî, ew bi piranî ji bo çêkirina formên qeydkirinê yên kesane tên bikaranîn. Armanca vê gotarê ew e ku nîşanî te bide tu çawa dikarî vê bikî.
 
-## لاگین و دابنێژوونەوەی صفحات:
+## Rûpelên têketin û qeydkirinê: {#login-and-registration-pages}
 
-کاتێک Ultimate Multisite دامەزراو، بە شێوەیەکی ئۆتۆماتیک لەسەر سایت سەرەکییەکەت، صفحات تایبەت بۆ لاگین و تۆمارکردن دروست دەکات. دەتوانیت ئەم صفحاتە هەر کاتێک بگۆڕیت بە ڕۆیشتن بۆ لای **Ultimate Multisite > Settings > Login & Registration**.
+Dema Ultimate Multisite tê sazkirin, ew bixweber rûpelên têketin û qeydkirinê yên taybet li ser malpera sereke ya te çêdike. Tu dikarî van rûpelên standard her dem biguherînî bi çûna rûpela **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Rûpela mîhengên Têketin û Qeydkirinê](/img/config/settings-general.png)
 
-لێرەدا بینینی تەواوی لای گۆڕینی تنظیمەکانی لاگین و تۆمارکردن هەیە:
+Ev dîmena tevahî ya rûpela mîhengên têketin û qeydkirinê ye:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Rûpela tevahî ya mîhengên Têketin û Qeydkirinê](/img/config/settings-login-registration-full.png)
 
-بۆ هەر یەکێک لە ئەو هەڵبژاردنەی کە دەتوانیت لە لای **Login & Registration** بگۆڕیت، بیبینینەوەی زیاتر بکەین:
+Ka em li her yek ji vebijarkên ku tu dikarî li ser rûpela **Login & Registration** taybet bikî binêrin:
 
-  * **Enable registration (توانای تۆمارکردن بەکارھێنانی):** ئەم هەڵبژاردەیە ڕێگە دەدات یان نادەت دابنێت لەسەر تۆمارکردن لە تۆڕەکەتدا. ئەگەر بە ئۆفۆنەکە نادەت، کڕیارەکانت ناتوانن تۆمار بکەن و سەرچاوەکانت بەکاربهێنن.
+  * **Qeydkirinê çalak bike:** Ev vebijark dê qeydkirinê li ser tora te çalak an neçalak bike. Ger ew were girtin, xerîdarên te nikarin qeyd bibin û aboneyî berhemên te bibin.
 
-  * **Enable email verification (توانای پشکنینی ئیمێل):** ئەگەر ئەم هەڵبژاردەیە یەکگرتوو بێت، کڕیارانی کە بۆ پلانی بێ بەرامبەر یان پلانی فەرمی لەگەڵ ماوەیەکی تاقیکردنەوە تۆمار دەکەن، ئیمەی پشکنینی وەردەگرن و دەبێت لای لینکەکە clique بکەن بۆ ئەوەی سایتەکانیان دروست بکرێن.
+  * **Piştrastkirina emailê çalak bike:** Ger ev vebijark were vekirin, xerîdarên ku ji bo planek belaş an planek bi pere û bi heyama ceribandinê abone dibin dê emaila piştrastkirinê bistînin û divê li ser girêdana piştrastkirinê bitikînin da ku malperên wan bên çêkirin.
 
-* **صفحه ثبت‌نام پیش‌فرض (Default registration page):** این صفحه برای ثبت‌نام پیش‌فرض است. شما باید این صفحه را در وب‌سایت خود منتشر کنید و یک فرم ثبت‌نام (که به آن فرم تسویه حساب هم می‌گویند) داشته باشید - جایی که مشتریان شما محصولاتتان را مشترک خواهند شد. می‌توانید هر تعداد صفحه ثبت‌نام و فرم تسویه حساب بسازید که دوست دارید، فقط یادتان باشد که شورت‌کد فرم تسویه حساب را در صفحه ثبت‌نام قرار دهید، وگرنه نمایش داده نخواهد شد.
+  * **Rûpela qeydkirinê ya standard:** Ev rûpela standard ji bo qeydkirinê ye. Divê ev rûpel li ser malpera te were weşandin û formek qeydkirinê hebe (her weha wek formê checkout tê naskirin) - cihê ku clientên te aboneyî berhemên te dibin. Tu dikarî çend rûpelên qeydkirinê û formên checkoutê ku dixwazî çêkî, tenê bîr neke shortcode ya formê checkoutê li ser rûpela qeydkirinê danî, wekî din ew xuya nabe.
 
-* **استفاده از صفحه ورود سفارشی (Use custom login page):** این گزینه به شما اجازه می‌دهد از یک صفحه ورود سفارشی استفاده کنید، غیر از صفحه پیش‌فرض wp-login.php. اگر این گزینه را فعال کنید، می‌توانید انتخاب کنید که کدام صفحه برای ورود در گزینه **صفحه ورود پیش‌فرض (Default login page)** (که درست زیر آن قرار دارد) استفاده شود.
+  * **Rûpela têketinê ya taybet bi kar bîne:** Ev vebijark dihêle tu rûpelek têketinê ya taybet bi kar bînî, ne rûpela standard a wp-login.php. Ger ev vebijark were vekirin, tu dikarî di vebijarka **Rûpela têketinê ya standard** de (rast li jêrê) hilbijêrî kîjan rûpel ji bo têketinê were bikaranîn.
 
-* **مخفی کردن آدرس اصلی ورود (wp-login.php):** اگر می‌خواهید آدرس اصلی ورود مخفی شود، می‌توانید این گزینه را فعال کنید. این کار برای جلوگیری از حملات brute-force مفید است. اگر این گزینه فعال باشد، Ultimate Multisite زمانی که کاربر سعی کند به لینک اصلی wp-login.php دسترسی پیدا کند، خطای 404 نمایش می‌دهد.
+  * **URL-a têketinê ya orîjînal veşêre (wp-login.php)** : Ger tu dixwazî URL-a têketinê ya orîjînal veşêrî, tu dikarî vê vebijarkê vekî. Ev ji bo pêşîlêgirtina êrîşên brute-force bi kêr tê. Ger ev vebijark çalak be, Ultimate Multisite dema bikarhênerek hewl dide bigihîje girêdana orîjînal a wp-login.php xeletiya 404 nîşan dide
 
-* **اجبار به انتشار همزمان سایت (Force synchronous site publication):** بعد از اینکه یک مشتری در یک شبکه محصول مشترک شد، سایت جدید و منتظر نیاز دارد تبدیل به یک سایت واقعی شبکه شود. این فرآیند انتشار از طریق Job Queue به صورت ناهمزمان انجام می‌شود. فعال کردن این گزینه باعث می‌شود که انتشار دقیقاً در همان درخواست ثبت‌نام اتفاق بیفتد.
+  * **Weşandina hevdem a malperê bi zor bike:** Piştî ku xerîdarek li ser torekê aboneyî berhemek dibe, divê malpera nû ya bendewar veguherîne malperek rastîn a torê. Pêvajoya weşandinê bi rêya Job Queue, nehevdem, pêk tê. Vê vebijarkê çalak bike da ku weşandin di heman daxwazê de wek qeydkirinê pêk were.
 
-حالا بیایید ببینیم سایر گزینه‌هایی که هنوز برای فرآیند ورود و ثبت‌نام مرتبط هستند چه چیزهایی هستند. آن‌ها درست زیر **گزینه‌های دیگر (Other options)** در همان صفحه ورود و ثبت‌نام قرار دارند:
+Niha, ka em vebijarkên din bibînin ku hîn jî bi pêvajoya têketin û qeydkirinê re têkildar in. Ew rast li jêr **Vebijarkên din** li ser heman rûpela Login & registration in:
 
-* **نقش پیش‌فرض (Default role):** این نقشی است که مشتریان شما پس از فرآیند ثبت‌نام در وب‌سایت خود خواهند داشت.
+  * **Rola standard:** Ev rola ku xerîdarên te piştî pêvajoya qeydkirinê li ser malpera xwe dê hebin.
 
-* **فعالکردنی Jumper:** ئەمە پدۆلەکە بۆ קיورتکاتی Jumper لە ناوچەی ئیدارە (admin area) دەگرێتەوە. Jumper ڕێگە بە ئەفسەران دەدات بە خێرایی بگەنە سەر شاشەکان و ئۆبجێکتاوەکانی Ultimate Multisite، تۆڕەکان، و شوێنەکانی دیکەی پشتگیریکراون، بەبێ ئەوەی هەموو مینیویەک بگەڕێیت. ئەگەر دەتەوێت ئەو ئامرازە خێرای ڕێنماییەکە لە پێشکەوتنی ئیدارەدا پۆشیتەوە، دەتوانیت بیکاتە نادەستایی.
+  * **Jumper çalak bike:** Kurterê Jumper di qada rêveberiyê de çalak dike. Jumper dihêle rêveber zû biçin ekranên Ultimate Multisite, tiştên torê, û armancên din ên piştgirîkirî bêyî ku di hemû pêşekan de bigerin. Ger tu dixwazî wê amûra rêberiya zû ji navrûya rêveberiyê veşêrî, wê bigire.
 
-* **کارڵەکان بۆ سایت سەرەکی زیاد بکە:** چالاککردنی ئەم هەڵبژاردەیە دوای پڕۆسەی تۆمارکردن، بەکارهێنەرەکە لە سایت سەرەکیی تۆڕەکەتەوە دەدات. ئەگەر ئەم هەڵبژاردەیە فعال بکەیت، خێرا لە خوارەوە ئامرازێک بۆ دیاریکردنی **ڕۆڵی پیش‌تەواوە (default role)** ئەم کارڵانانە لەسەر وێبساتەکەت دەردەکەوێت.
+  * **Bikarhêneran li malpera sereke jî zêde bike:** Çalakkirina vê vebijarkê piştî pêvajoya qeydkirinê bikarhênerê jî li malpera sereke ya tora te zêde dike. Ger tu vê vebijarkê çalak bikî, vebijarkek ji bo danîna **rola standard** ya van bikarhêneran li ser malpera te jî rast li jêrê xuya dibe.
 
-* **فعالکردنی هەژمارەکانی زیاتر:** ڕێگە بدات بەکارڵەکان هەژمارهایی لە سایتە جیاوازەکانی تۆڕەکەت هەبێت بە هەمان ئیمەیڵ. ئەگەر ئەم هەڵبژاردەیە نادەستای بێت، کڕیارەکانت ناتوانن هەژمار دروست بکەن لەسەر وێبساتەکانی دیکەی کە لە تۆڕەکەت کار دەکەن بە هەمان ئیمەیڵ.
+  * **Çend Account çalak bike:** Destûr bide bikarhêneran ku bi heman navnîşana emailê li malperên cuda yên tora te Account hebin. Ger ev vebijark girtî be, xerîdarên te nikarin bi heman navnîşana emailê li malperên din ên ku li ser tora te dixebitin Accountek çêkin.
 
-و ئەوەیە هەموو ئەو هەڵبژاردانەی پەیوەست بە پۆلێنکردن (login) و تۆمارکردن هەیە کە دەتوانیت بگۆڕیت! لە کۆتاییدا، یادار بکە تنظیمەکانتەکە بچێتەوە دوای تەواوکردنی دەستکارییان.
+Û ev hemû vebijarkên têkildar bi têketin û qeydkirinê ne ku tu dikarî taybet bikî! Piştî ku guherandinên xwe qedandî, jibîr neke mîhengên xwe tomar bikî.
 
-## بەکارهێنانی چەندین فۆرم تۆمارکردن:
+## Bikaranîna çend formên qeydkirinê: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 یەکێکە لە ئەڵقەکانی संچوون (checkout form editor) کە ڕێگە بدات زیاتر لە فۆرمەکان دروست بکەیت، بە وردەکاری جیاواز، وەرگرتن، و هتد.
+Ultimate Multisite 2.0 edîtorek formê checkoutê pêşkêş dike ku dihêle tu çend formên dixwazî, bi qadên cuda, berhemên pêşkêşkirî, hwd. çêkî.
 
-هەردوو لاپەڕەی پۆلێنکردن (login) و تۆمارکردن (registration) بە شورتکۆدەکانی نیشان دەبن: **[wu_login_form]** لە لاپەڕەی پۆلێنکردن و **[wu_checkout]** بۆ لاپەڕەی تۆمارکردن. دەتوانیت لاپەڕەی تۆمارکردن زیاتر بە شێوەیەکی تایبەت بگۆڕیت بە دروستکردنی فۆرمەکانی وەرگرتن (checkout forms).
+Hem rûpelên têketinê hem jî qeydkirinê bi shortcodean hatine bicihkirin: **[wu_login_form]** li ser rûpela têketinê û**[wu_checkout]** ji bo rûpela qeydkirinê. Tu dikarî rûpela qeydkirinê hê bêtir taybet bikî bi avakirin an çêkirina formên checkoutê.
 
-بۆ دەستگەیشتن بەم تایبەتمەندییە، بچۆ بۆ مینیوی **Checkout Forms** لە لایەنی لێوارەوە (left side-bar).
+Ji bo gihîştina vê taybetmendiyê, here pêşeka **Formên Checkout**, li ser sidebarê aliyê çepê.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Pêşeka Formên Checkout di sidebarê de](/img/config/checkout-forms-list.png)
 
-لە ئەم لاپەڕەیە دەتوانیت هەموو فۆرمەکانی وەرگرتن کە دروست کردووە ببینیت.
+Li ser vê rûpelê, tu dikarî hemû formên checkoutê yên ku te hene bibînî.
 
-ئەگەر دەتەوێت یەکێکیان دروست بکەیت، تەنها لە سەرەوەی لاپەڕەکە، لەسەر **Add Checkout Form** کلیک بکە.
+Ger tu dixwazî yekê nû çêkî, tenê li ser **Formek Checkout Zêde Bike** li serê rûpelê bitikîne.
 
-تۆ دەتوانی یەکێک لەم سێ ڕەوتنی وەک خاڵی سەرەتایی هەڵبژێریت: single step (چەند هەنگاوێکی تاک)، multi-step (چەند هەنگاوێکی چەند)، یان blank (خالی). پاشان، بۆ **راودانی Editor** کلیک بکە.
+Tu dikarî yek ji van sê vebijarkan wek destpêka xwe hilbijêrî: gavek tenê, çend-gav, an vala. Paşê, li **Here Edîtorê** bitikîne.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Formek Checkout Zêde Bike bi vebijarkên gavek tenê, çend-gav, an vala](/img/config/checkout-forms-list.png)
 
-یان بە شێوەیەکی دیکە دەتوانی ئەو فۆرمەکانەی کە ئێستا هەیە بگۆڕیت یان دووبارە بکەیتەوە بە کلیک لەسەر هەڵبژاردنەکانی خوارەوە لە ناوی ئەواندا. لێرەدا، دەتوانیت هەمان کات هەڵبژاردنی بۆ کۆپیی shortcode ی فۆرمەکە یان دیاریکردنی فۆرمەکە دابنێیت.
+Wek alternatîf, tu dikarî formên ku jixwe te hene biguherînî an ducarî bikî bi tikandina vebijarkên li jêr navê wan. Li wir, tu her weha vebijarkên kopîkirina shortcode ya formê an jêbirina formê dibînî.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Çalakiyên hoverê yên formê checkoutê bi guherandin, ducarîkirin, û jêbirin](/img/config/checkout-form-hover-actions.png)
 
-ئەگەر single step یان multi-step هەڵبژێریت، فۆرمەکە پێشوەخت بە هەنگاوە بنەڕەتییە بۆ ئەوەی کار بکات. پاشان، ئەگەر دەتەوێت، دەتوانیت هەنگاوە زیاتر بۆ زیاد بکەیت.
+Ger tu gavek tenê an çend-gav hilbijêrî, formê checkoutê dê jixwe bi gavên bingehîn ên ji bo xebitîna wê were dagirtin. Paşê, ger tu bixwazî, dikarî gavên zêde lê zêde bikî.
 
-### گۆڕینی فۆرمی Checkout:
+### Guherandina Formek Checkout: {#editing-a-checkout-form}
 
-وەک پێشتر داوتەوە، دەتوانیت فۆرمەکانی checkout بۆ ئامرازە جیاوازان دروست بکەیت. لەم نموونەدا، کار دەکەین لەسەر فۆرمێکی تۆمار (registration form).
+Wek me berê got, tu dikarî formên checkoutê ji bo armancên cuda çêkî. Di vê mînakê de em ê li ser formek qeydkirinê bixebitin.
 
-پاش ئەوەی بگاتە Editorی فۆرمی checkout، ناوی دەدەیت بە فۆرمەکەت (کە تەنها بۆ ئاماژەی ناوخۆیی بەکاردێت) و slug (کە بۆ دروستکردنی shortcakes بەکاردێت، بۆ نموونە).
+Piştî ku tu diçî edîtora formê checkoutê, navek bide forma xwe (ku tenê ji bo referansa navxweyî were bikaranîn) û slugek (mînak, ji bo çêkirina shortcakes tê bikaranîn).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Edîtora forma qedandina kirînê bi qadên nav û slug](/img/config/checkout-form-name-slug.png)
 
-فۆرمەکان لە چەند هەنگاو و فیلدە پێکهاتوون. دەتوانیت هەنگاوی نوێ زیاد بکەیت بە کلیک لەسەر **Add New Checkout Step**.
+Form ji gavan û qadan pêk tên. Tu dikarî bi klîkkirina li **Gava Nû ya Qedandina Kirînê Zêde Bike** gaveke nû zêde bikî.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Bişkoka Gava Nû ya Qedandina Kirînê Zêde Bike](/img/config/checkout-form-add-step.png)
 
-لە تابلۆی یەکەم (first tab)ی پەنجرەی modalەکەدا، ناوەڕۆکی هەنگاوەکەت پڕ بکە. پێدانی ID، ناوی و وەسفی بدات. ئەم بابەتانە زۆرتر بە شێوەیەکی ناوخۆیی بەکاردێن.
+Di taba yekem a paceya modal de, naveroka gava forma xwe dagire. Ji wê re ID, nav û danasînek bide. Ev tişt bi piranî di hundir de tên bikaranîn.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Taba naveroka gava checkout bi ID, nav û danasînê](/img/config/checkout-form-step-content.png)
 
-پاشان، بینینی (visibility)ی هەنگاوەکە دیاری بکە. دەتوانیت لە نێوان **Always show** (هەمیشە نیشان بدە)، **Only show for logged in users** (فقط بۆ بەکارهێنەرانی لاگین نیشان بدە) یان **Only show for guests** (فقط بۆ کارمەندەکان نیشان بدە) هەڵبژێریت.
+Paşê, xuyabûna gavê saz bike. Tu dikarî di navbera **Her dem nîşan bide** , **Tenê ji bikarhênerên têketî re nîşan bide** an **Tenê ji mêvanan re nîşan bide** de hilbijêrî.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Vebijarkên xuyabûna gava checkout](/img/config/checkout-form-step-visibility.png)
 
-لە کۆتاییدا، ستایلی بۆ هەنگاوەکان دیاری بکە. ئەمە فیلدەکانی ئاسایین (optional).
+Di dawiyê de, şêwaza gavê saz bike. Ev qad ne mecbûrî ne.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Sazkirina şêwaza gava checkout](/img/config/checkout-form-step-style.png)
 
-ئێستا کاتێکە دەبێت فیلدێک بۆ هەنگاوی یەکەم زیاد بکەین. تەنها clique بکە بۆ **Add New Field** و ئەو جۆری بەشی (section type) هەڵبژێرە کە دەتەوێت.
+Niha, dem e ku em qadên xwe li gava yekem zêde bikin. Tenê klîk bike li **Qada Nû Zêde Bike** û cureya beşê ya ku dixwazî hilbijêre.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Bişkoka Qada Nû Zêde Bike](/img/config/checkout-form-add-field-button.png)![Dropdowna hilbijartina cureya qadê](/img/config/checkout-form-field-type-dropdown.png)
 
-هەر فیلدێک پاشکۆڕەکانی خۆی هەیە کە دەبێت پڕ بکرێنەوە. بۆ ئەم دەستپێکی یەکەمە، ئێمە **Username** (ناوی بەکارهێنەر) فیلدەکە هەڵدەبینین.
+Her qad xwedî parameterên cuda ye ku divê bên dagirtin. Ji bo vê ketina yekem, em ê qada **Navê bikarhêner** hilbijêrin.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Sazkirina qada navê bikarhêner](/img/config/checkout-form-username-content.png)![Parameterên qada navê bikarhêner](/img/config/checkout-form-username-visibility.png)![Mîhengên zêde yên qada navê bikarhêner](/img/config/checkout-form-username-style.png)
 
-تۆ دەتوانیت هەر هەنگاو و فیلدێک کە پێویستیت زیاد بکەیت. بۆ ئەوەی بەکارهێنەرەکانت بتوانن یەکێکیان هەڵبژێرن، لە کاتی نیشاندانی بەرهەمەکانت، فیلد **Pricing Table** (خشتەیราق) بەکاربهێنە. ئەگەر دەتەوێت کڕیارەکانت شێوازێک هەڵبژێرن، فیلد **Template Selection** (هەڵبژاردنی شێواز) زیاد بکە. و هتد.
+Tu dikarî bi qasî pêdiviya xwe gav û qad zêde bikî. Ji bo ku berhemên xwe nîşanî mişteriyên xwe bidî da ku yekê hilbijêrin, qada Tabloya Nirxan bi kar bîne. Heke dixwazî bihêlî ku clientên te şablonek hilbijêrin, qada Hilbijartina Şablonê zêde bike. Û hwd.
 
-_**تێبینی:** ئەگەر دوای دروستکردنی فۆرمەکە، بەرهەمێک دروست بکەیت، دەبێت ئەو بەرهەمە لە خشتەی Pricing table دا زیاد بکەیت. ئەگەر زیاد نەکرێت، بەکارهێنەرەکانت لە لایەن پەڕینەوەی تۆدا نیشان ناکرێت._
+![Edîtora forma checkout bi qada hilbijartina şablonê](/img/config/checkout-form-with-template-field.png)
 
-_**تێبینی ٢:** username، email، password، site title (ناونیشانی سایت)، site URL (لینکەکەی سایت)، order summary (خۆڵەی داواکاری)، payment (فەرموهراندن) و submit button (دۆکیومێنتکردنی داواکاری) فیلدەکانی پێویستن بۆ دروستکردنی فۆرمێکی کۆتاییدا._
+_**Têbînî:** Heke tu piştî çêkirina forma checkout a xwe berhemek çêkî, divê tu berhemê li beşa tabloya Nirxan zêde bikî. Heke tu wê zêde nekî, berhem li rûpela qeydkirinê ji mişteriyên te re xuya nabe._
 
-لە کاتی کارکردندا لەسەر فۆرمەکە، دەتوانیت هەمیشە بەچوونی **Preview** (پیشبین) بەکاربهێنیت بۆ ئەوەی ببینیت کە کڕیارەکان فۆرمەکە چۆن دەبینن. هەروەها دەتوانیت نێوان بینینی وەک بەکارهێنەرێکی هێشتا یان بینینی وەک سەردەری بکەیت گۆڕانکاری لە نێوانیاندا.
+_**Têbînî 2:** navê bikarhêner, email, şîfre, sernavê malperê, URL ya malperê, kurteya fermanê, dayîn, û bişkoka şandinê qadên mecbûrî ne ji bo çêkirina forma checkout._
 
-![دکمه پیش‌نمایش فرم پرداخت در ویرایشگر فرم](/img/config/checkout-form-preview-button.png)![پیش‌نمایش فرم پرداخت به عنوان بازدیدکننده یا کاربر موجود](/img/config/checkout-form-preview-modal.png)
+Dema ku tu li ser forma checkout a xwe dixebitî, tu her dem dikarî bişkoka Pêşdîtinê bi kar bînî da ku bibînî clientên te dê formê çawa bibînin. Tu dikarî her weha di navbera dîtina wekî bikarhênerek heyî an mêvanek de biguherî.
 
-بالاخره، در **Advanced Options** (گزینه‌های پیشرفته)، می‌تونی پیام صفحه **Thank You** (ممنونیم) رو تنظیم کنی، قطعاتی برای ردیابی تبدیل‌ها اضافه کنی، CSS سفارشی به فرم پرداخت خود اضافه کنی یا آن را محدود به کشورهای خاص کنی.
+![Bişkoka pêşdîtinê li ser edîtora forma checkout](/img/config/checkout-form-preview-button.png)![Pêşdîtina forma checkout wekî mêvan an bikarhênerê heyî](/img/config/checkout-form-preview-modal.png)
 
-![گزینه‌های پیشرفته با صفحه Thank You، ردیابی تبدیل و CSS سفارشی](/img/config/checkout-form-advanced.png)
+Di dawiyê de, li ser **Vebijarkên Pêşketî** tu dikarî peyama rûpela **Spas** saz bikî, snippetan zêde bikî ji bo şopandina veguherînan, CSS a xweser li forma checkout a xwe zêde bikî an wê bi hin welatan sînordar bikî.
 
-همچنین می‌تونی فرم پرداخت خود را با روشن یا خاموش کردن این گزینه در ستون سمت راست فعال یا غیرفعال کنی، یا آن را به طور دائم حذف کنی.
+![Vebijarkên Pêşketî bi rûpela Spas, şopandina veguherînê, û CSS a xweser](/img/config/checkout-form-advanced.png)
 
-![کلید فعال و گزینه حذف برای فرم پرداخت](/img/config/checkout-form-active.png)
+Tu dikarî her weha forma checkout a xwe bi destî çalak an neçalak bikî bi guherandina vê vebijarkê li stûna rastê, an formê bi temamî jê bibî.
 
-فراموش نکن که فرم پرداختت رو ذخیره کنی!
+![Toggle ya çalak û vebijarka jêbirinê ji bo forma checkout](/img/config/checkout-form-active.png)
 
-![دکمه ذخیره فرم پرداخت](/img/config/checkout-form-save.png)
+Ji bîr neke forma checkout a xwe tomar bikî!
 
-برای گرفتن شورت‌کد فرمت خود، روی **Generate Shortcode** (تولید شورت‌کد) کلیک کن و نتیجه‌ای که در پنجره مودال نمایش داده می‌شود را کپی کن.
+![Bişkoka Tomarkirina Forma Checkout](/img/config/checkout-form-save.png)
 
-![مودال تولید شورت‌کد با شورت‌کدی برای کپی کردن](/img/config/checkout-form-editor.png)
+Ji bo wergirtina shortcode a forma xwe, klîk bike li **Shortcode Çêbike** û encama ku li paceya modal tê nîşandan kopî bike.
 
-_**نکته:** باید این شورت‌کد رو به صفحه ثبت‌نام خود اضافه کنی تا این فرم پرداخت در آن قرار بگیره._
+![Modala Shortcode Çêbike bi shortcode ji bo kopîkirinê](/img/config/checkout-form-editor.png)
 
-## پیش‌انتخاب محصولات و قالب‌ها از طریق پارامترهای URL:
+_**Têbînî:** Divê tu vê shortcode li rûpela qeydkirina xwe zêde bikî da ku ev forma checkout lê zêde bibe._
 
-اگر می‌خواهی جداول قیمت سفارشی برای محصولاتت بسازی و در فرم پرداخت، محصول یا قالبی که مشتری از جدول قیمت یا صفحه قالب‌های تو انتخاب می‌کند را از قبل انتخاب کنی، می‌توانی از پارامترهای URL برای این کار استفاده کنی.
+## Pêş-hilbijartina berhem û şablonan bi parameterên URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **برای طرح‌ها (Plans):**
+Heke tu dixwazî tabloyên nirxan ên xweser ji bo berhemên xwe çêkî û li forma checkout berhem an şablona ku mişteriyê te ji rûpela tabloya nirxan an şablonan hilbijartiye pêş-hilbijêrî, tu dikarî ji bo vê parameterên URL bi kar bînî.
 
-به مسیر **Ultimate Multisite > Products > Select a plan** برو. باید دکمه **Click to copy Shareable Link** (کلیک برای کپی لینک قابل اشتراک‌گذاری) را در بالای صفحه ببینی. این لینکی است که می‌توانی از آن، این طرح خاص را روی فرم پرداخت خود از قبل انتخاب کنی.
+### **Ji bo planan:** {#for-plans}
 
-![صفحه محصول با دکمه لینک قابل اشتراک‌گذاری](/img/config/products-list.png)
+Here **Ultimate Multisite > Berhem > Planek hilbijêre**. Divê tu bişkoka **Klîk bike ji bo kopîkirina Girêdana Parvebar** li serê rûpelê bibînî. Ev ew girêdan e ku tu dikarî bi kar bînî da ku ev plana taybetî li forma checkout a te pêş-hilbijartî be.
 
-تێبینی بکە، ئەم لینکە تەنها بۆ **Planes (پلانەکان)** ڕاستەوخۆ بەکار دێت. ناتوانین لەسەر پەکێجەکان یان خزمەتگوزبووان Linkی بەشدارکردن بەکار بهێنیت.
+![Rûpela berhemê bi bişkoka girêdana parvebar](/img/config/products-list.png)
 
-### بۆ Template'ەکان:
+Bizane ku ev girêdana parvebar tenê ji bo **Plan** derbasdar e. Tu nikarî girêdanên parvebar ji bo paket an xizmetan bi kar bînî.
 
-ئەگەر دەتەوێت پێشوەختەی template (دیزاینی سایت) لە فۆرمەکەدا لە کاتی کۆتایی کردنەوەکەت هەڵبژێریت، دەتوانیت ئەم پارامێترە بەکاربهێنیت: **?template_id=X** لەسەر URLی داهاتووی تۆمارکردن. پێویستە "X" بە **بۆچوونی ID template (ID سایت)** بگۆڕیت. بۆ گرتنی ئەم ژمارەیە، دەربکەو لە **Ultimate Multisite > Sites** ببیت.
+### Ji bo şablonan: {#for-templates}
 
-لە خوارەوەی template یەک کە دەتەوێت بەکاربهێنیت، سەرەتا clique بکە لەسەر **Manage**. نۆماری SITE ID دەبینیت. تەنها ئەم ژمارەیە بۆ ئەم template تایبەتە بەکار بهێنە بۆ ئەوەی پێشوەخت بێت لە فۆرمەکەدا. لە حاڵەتی ئێمە، پارامێتر URLەکە دەبێت ببێتە **?template_id=2**.
+Heke tu dixwazî şablonên malperê li forma checkout a xwe pêş-hilbijêrî, tu dikarî parameterê bi kar bînî: **?template_id=X** li URL ya rûpela qeydkirinê. Divê "X" bi **hejmara ID ya şablona malperê** were guhertin. Ji bo wergirtina vê hejmarê, here **Ultimate Multisite > Malper**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Klîk bike li **Rêve bibe** rast li bin şablona malperê ya ku dixwazî bi kar bînî. Tu dê hejmara SITE ID bibînî. Tenê vê hejmarê ji bo vê şablona malperê ya taybetî bi kar bîne da ku li forma checkout a te pêş-hilbijartî be. Di vê mînaka me de, parameterê URL dê bibe **?template_id=2**.
 
-بیستە سایتەکەی تۆڕی ئێمە [**www.mynetwork.com**](http://www.mynetwork.com) و پەڕەی تۆمارکردنەکە کە فۆرم کۆتایی کردنەوەکەت لەسەر بەپێی **/register** هەیە. هەموو URLەکە لەگەڵ template ی پێشوەخت دەبێت وەک [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Lîsteya malperan ku ID ya şablona malperê nîşan dide](/img/config/site-templates-list.png)
 
-و ئەگەر دەتەوێت، دەتوانیت هەردوو product (پێکهاتەکان) و template هاوڕێی خۆت پێشوەخت بکەیت لە فۆرم کۆتایی کردنەوەکەت. هەموو کارێک کە پێویستە ئەوەیە کە لینکەکەی بەشدارکردنی planەکە بکەیت و پارامێتر template لە کۆتاییەکەی یەکاتەکان paste بکەیت. دەبێت وەک ئەمە بێت: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Bila bibêjin malpera tora me [**www.mynetwork.com**](http://www.mynetwork.com) e û rûpela qeydkirina me bi forma checkout a me li rûpela **/register** ye. Hemû URL bi vê şablona malperê ya pêş-hilbijartî dê wisa xuya bike [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Û heke bixwazî, tu dikarî hem berhem hem jî şablonan li forma checkout a xwe pêş-hilbijêrî. Tişta ku divê bikî tenê ev e: girêdana parvebar a planê kopî bike û parameterê şablonê li dawiyê pê ve bike. Ew dê wisa xuya bike [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

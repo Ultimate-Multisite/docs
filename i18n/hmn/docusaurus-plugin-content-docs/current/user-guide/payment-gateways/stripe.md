@@ -3,19 +3,19 @@ title: Tsim sijhawm Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# ຕັ້ງຄ່າ Stripe Gateway (v2)
+# ຕັ້ງຄ່າ Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**ໝາຍເຫດສຳຄັນ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite version 2.x.**_
 
 ເຈົ້າສາມາດເປີດໃຊ້ວິທີການຈ່າຍເງິນໄດ້ເຖິງສີ່ວິທີໃນໜ້າຕັ້ງຄ່າການຈ່າຍເງິນຂອງພວກເຮົາ: Stripe, Stripe Checkout, PayPal ແລະ ແບບຂຽນດ້ວຍມື (Manual). ໃນບົດຄວາມນີ້, ພວກເຮົາຈະມາເຫັນວິທີການເຊື່ອມຕໍ່ກັບ **Stripe**.
 
-## ການເປີດໃຊ້ Stripe
+## ການເປີດໃຊ້ Stripe {#enabling-stripe}
 
 ເພື່ອເປີດໃຊ້ Stripe ເປັນ gateway ຮັບຊຳນຸດທີ່ພ້ອມໃຫ້ໃຊ້ໃນເຄືອຂ່າຍຂອງເຈົ້າ, ໄປທີ່ **Ultimate Multisite > Settings > Payments** ແລ້ວໝາຍຖືກ (tick) ກ່ອນປຸ່ມສະຫຼັບ (toggle) ຢູ່ຂ້າງ **Stripe** ຫຼື **Stripe Checkout** ໃນສ່ວນ Active Payment Gateways.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe ທຽບກັບ Stripe Checkout:
+### Stripe ທຽບກັບ Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** ວິທີນີ້ຈະສະແດງຊ່ອງໃຫ້ເຈົ້າໃສ່ເລກບັດເຄຣດິດໃນເວລາຈ່າຍເງິນ (checkout).
 
@@ -47,7 +47,7 @@ _**ໝາຍເຫດ:** ເຈົ້າສາມາດເປີດໃຊ້ **S
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Setting up Stripe Webhook
+## Setting up Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe webhook events - ንUltimate Multisite anytime an event happens on **your stripe account** - ክሳብ ይልቁን።
 

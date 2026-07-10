@@ -3,7 +3,7 @@ title: Haki i Filtry
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Hooki i filtry Ultimate Multisite
+# Hooki i filtry Ultimate Multisite {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite składa się z wielu funkcji i zapytań do bazy danych. Zawiera hooki i filtry, które pozwalają modyfikować istniejące funkcje lub dodawać do nich nowy kod.
 

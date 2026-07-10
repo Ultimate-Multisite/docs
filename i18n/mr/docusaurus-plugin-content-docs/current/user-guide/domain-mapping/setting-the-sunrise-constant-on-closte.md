@@ -3,13 +3,13 @@ title: Closte वर Sunrise Constant सेट करणे
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Closte वर Sunrise कॉन्स्टंट true वर सेट करणे
+# Closte वर Sunrise कॉन्स्टंट true वर सेट करणे {#setting-the-sunrise-constant-to-true-on-closte}
 
 काही होस्ट प्रोव्हायडर सुरक्षिततेच्या कारणास्तव wp-config.php फाइल लॉक करतात. याचा अर्थ असा की Ultimate Multisite डोमेन मॅपिंग आणि इतर फीचर्स काम करण्यासाठी आवश्यक असलेले कॉन्स्टंट्स जोडण्यासाठी ही फाइल आपोआप एडिट करू शकत नाही. Closte हा असाच एक होस्ट आहे.
 
 तरीही, Closte wp-config.php मध्ये सुरक्षित पद्धतीने कॉन्स्टंट्स जोडण्याचा एक मार्ग देतो. तुम्हाला फक्त खालील स्टेप्स फॉलो करायच्या आहेत:
 
-## Closte डॅशबोर्डवर
+## Closte डॅशबोर्डवर {#on-the-closte-dashboard}
 
 प्रथम, [तुमच्या Closte अकाउंटमध्ये लॉग इन करा](https://app.closte.com/), Sites मेनू आयटमवर क्लिक करा, आणि नंतर तुम्ही सध्या काम करत असलेल्या साइटवरील Dashboard लिंकवर क्लिक करा:
 

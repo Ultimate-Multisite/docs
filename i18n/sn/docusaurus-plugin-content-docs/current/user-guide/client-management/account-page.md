@@ -3,7 +3,7 @@ title: Urhwaro Rwakasikati RweMwana
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Ukurumbwe wekudya kweMudzidzi wako (v2)
+# Ukurumbwe wekudya kweMudzidzi wako (v2) {#your-clients-account-page-v2}
 
 _**CHINTO CHINDIRA: Iye ndiyo inoratidzo kune Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ Nekuti mudzidzi anenge akubwera plan yakazara ku rwebuku rwawo, anaramba anogona
 
 Mune tutorial iyi, tinokubatsira kuti uone ukurumbwe wekudya kweMudzidzi uye zvinhu zviri kuona uye kuita mune iye.
 
-## Ukurumbwe wekudya (The Account Page)
+## Ukurumbwe wekudya (The Account Page) {#the-account-page}
 
 Ukurumbwe wekudya kunogona kuonekwa nekutanga **Account** mu dashboard ya mudzidzi wako.
 
@@ -27,7 +27,7 @@ Apana mudzidzi anenge akatanga kuita iye, anogona kuona overview yemembership ya
 
 Anogonawo kunge kuunda membership yakare mu plan yakaipa, kana kuenda kupfungwa (purchase) package kana service inosanganisira. Tiri kuona zvinhu zvakawanda mumwe munzvimbo.
 
-### Zvinoro Rako Rako Wako (Your Membership Overview):
+### Zvinoro Rako Rako Wako (Your Membership Overview): {#your-membership-overview}
 
 Chikamu chiri chiri chini pezve zvinorenyo dzavo dzevanhu vachikuru chinonyanya kuti zvinhu zvavo zvakasarudzwa uye zvinhu zvine mhando (plan) kana zvinhu zvine mhando (services/packages) zvakasarudzwa nekuita iye. Chiri chiri chinonyanya kunyorererawo kunyanya, chinhu chinonyanya kunyorererawo kunyanya, kunyanya kunonyanya kunyanya, uye kunyanya kunyanya kunyanya, uye kunyanya kunyanya kunyanya, uye kunyanya kunyanya kunyanya. Chiri chiri chinonyanya kunyorererawo kunyanya, chinhu chinonyanya kunyorererawo kunyanya, kunyanya kunyanya, uye kunyanya kunyanya kunyanya. Chiri chiri chinonyanya kunyorererawo kunyanya, chinhu chinonyanya kunyorererawo kunyanya, kunyanya kunyanya, uye kunyanya kunyanya kunyanya.
 
@@ -43,7 +43,7 @@ Nekuti vanhu vachikuru vakumbire kuita purchase packages kana services dze membe
 
 Chii chii chinonyanya kunyanya kuti coupon codes hazvazozivikanwa pamwe nepage ya change membership. Kana vanhu vakashandisa coupon code pamwe nekuita purchase ya first membership, code iye ichaitawo pamwe nemembership iyi inotevera.
 
-### Kuti Unge Kuratidza Zvinonyanya Dze Billing Address:
+### Kuti Unge Kuratidza Zvinonyanya Dze Billing Address: {#updating-the-billing-address}
 
 Pa shabhuku, pa account page, vana vana vanhuva kuti vagariro vavo vanogona kuupedza address yevakubatsiri vavo. Vana vavo anofanira kunge kupfeka **Update** panguva _Billing Address_.
 
@@ -53,7 +53,7 @@ Chinechakanenge chineonekwa kuvanhu vavo. Zvinodi zviri kune kuti vanoreva addre
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Kusimbisa Site Template:
+### Kusimbisa Site Template: {#changing-the-site-template}
 
 Kuti vanhu vavo vanogone kusimbisa site templates, unofanira kuenda ku **Ultimate Multisite > Settings > Sites** uye kupfeka option ya **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Apana vachifamba kuita onaka (toggle on) uye vachikira **Process Switch**, templ
 
 Vana vachongona kuti vanogone kushandisa **Reset current template** kubva panovhu iyi kana vanoda kurudzirwa iropamba yakare yawo. Sei kuenda kune template inotra, kurudzirwa template kunogona kusarudza zvinhu zvepapo, zvichizovalwa kuti vana vachikire chokwadi chekurudzirwa kana vanoziva zvakanaka nezvakaipa zvinodiwa pane iropamba yakare.
 
-### Kuva neCustom Domains:
+### Kuva neCustom Domains: {#adding-custom-domains}
 
 Vana vana vachongona kuti vana vachigone kuita onaka (option) yekuti vashandise custom domain panguva yavo wepapo. Kuti vana vachishandise custom domains, enda kune **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Panguva ya kukira **Next Step**, vanhu vavo vanogona kuita custom domain name ya
 
 Panguva ya kukira **Add Domain**, domain iyi inozviitwa ku account yevakapfungwa vavo. Zvose zvinoita kunenge vanenge vachigona kutaura DNS records dzenyu dzemcustom domain iyi pa domain registrar yavo.
 
-### Kuti Uendese Password:
+### Kuti Uendese Password: {#changing-password}
 
 Mune dashboard ya account, vanhu vavo vanogona kuendesa password yavo nekuti vanenge vachikira **Change Password**.
 
@@ -125,7 +125,7 @@ Izviro rakozo inotshona chinoratidza finestra pane kuita kuti vafana vamwe vachi
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Chishoma chine kudzera (Danger Zone):
+### Chishoma chine kudzera (Danger Zone): {#danger-zone}
 
 Tiri nezvinhu maviri zviri kuonekwa munzira ya **Danger Zone**: **Delete Site** (Kusarudza Website) uye **Delete Account** (Kusarudza Akaunti). Zvinodiwa munzira ya Danger Zone nekuti nzira dzaiita dziri dzinotevera. Kana vafana vamwe vachaisarudza kusarudza website yavo kana akaunti yavo, vanovaka kuti vaive zvinhu zvaunoda kuenda (toggle on) kuti vave kuenda nekuenda akaunti uye vanovaka kuti vave kuita kuti vone kuti iyi nzira haizvinogona kuenderwa mberi. Nezvina zvakatsanana kuti iyi chivimbo chinotevera.
 

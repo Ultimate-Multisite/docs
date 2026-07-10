@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons, Ultimate Multisite-i əlavə xüsusiyyətlər və inteqrasiyalarla genişləndirir. Əksər addonslar ödənişlidir və [ultimatemultisite.com](https://ultimatemultisite.com) saytından alınabilir.
 
-## Installation
+## Installation {#installation}
 
 Addons iki yolla quraşdırıla bilər:
 
 1. **Addon Səhifəsi vasitəsilə** -- WordPress admin panelində saytınızın addon idarəetmə səhifəsinə keçin.
 2. **Əl ilə Yükləmə** -- [your account](https://ultimatemultisite.com/my-account/downloads/) saytından yükləyin və Plugins > Add New vasitəsilə yükləyin.
 
-## Available Addons
+## Available Addons {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

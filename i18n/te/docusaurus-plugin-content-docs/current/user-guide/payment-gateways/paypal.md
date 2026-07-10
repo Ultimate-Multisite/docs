@@ -1,61 +1,72 @@
 ---
-title: PayPal సెటప్ చేయడం
+title: PayPal ఏర్పాటు ಮಾಡడం
 sidebar_position: 10
-_i18n_hash: cb5153acc4c60b39af9d73311a5b3b44
+_i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# PayPal Gateway సెటప్ చేయడం (v2)
+# PayPal గేట్‌వేను సెటప్ చేయడం (v2) {#setting-up-the-paypal-gateway-v2}
 
-_**ముఖ్యమైన గమనిక: ఈ ఆర్టికల్ Ultimate Multisite వెర్షన్ 2.x గురించి వివరిస్తుంది.**_
+_**ముఖ్య గమనిక: ఈ వ్యాసం Ultimate Multisite వెర్షన్ 2.x గురించి.**_
 
-మా payment settings పేజీలో మీరు నాలుగు చెల్లింపు పద్ధతులను యాక్టివేట్ చేయవచ్చు: Stripe, Stripe Checkout, PayPal మరియు Manual. ఈ ఆర్టికల్‌లో, **PayPal** తో ఎలా ఇంటిగ్రేట్ చేయాలో చూద్దాం.
+మా చెల్లింపు సెట్టింగ్‌ల పేజీలో మీరు నాలుగు వరకు చెల్లింపు పద్ధతులను సక్రియం చేయవచ్చు: Stripe, Stripe Checkout, PayPal మరియు Manual. ఈ వ్యాసంలో **PayPal** తో ఎలా సమన్వయం చేయాలో చూద్దాం.
 
-Stripe లాగానే, PayPal కూడా ఆన్‌లైన్ చెల్లింపులకు విస్తృతంగా ఉపయోగించబడుతుంది, ముఖ్యంగా WordPress వెబ్‌సైట్లలో. మీ నెట్‌వర్క్‌లో PayPal ని చెల్లింపు పద్ధతిగా ఎలా ఉపయోగించాలో ఈ ఆర్టికల్ మీకు గైడ్ చేస్తుంది.
+Stripe లాగే, PayPal కూడా ఆన్‌లైన్ చెల్లింపుల కోసం, ముఖ్యంగా WordPress వెబ్‌సైట్‌లలో, విస్తృతంగా ఉపయోగిస్తారు. మీ నెట్‌వర్క్‌లో అందుబాటులో ఉన్న చెల్లింపు పద్ధతిగా PayPal ను ఎలా ఉపయోగించాలో ఈ వ్యాసం మీకు మార్గనిర్దేశం చేస్తుంది.
 
-ఈ ఇంటిగ్రేషన్ కోసం అవసరమైన API credential పొందడానికి మీకు **PayPal Business account** ఉండాలని గమనించండి.
+ఈ సమన్వయానికి అవసరమైన API ఆధారాలను పొందడానికి మీకు **PayPal Business Account** అవసరం అని గమనించండి.
 
-## మీ నెట్‌వర్క్‌లో PayPal ని ఎనేబుల్ చేయడం
+## మీ నెట్‌వర్క్‌లో PayPal ను ప్రారంభించడం {#enabling-paypal-on-your-network}
 
-మీ నెట్‌వర్క్‌లో PayPal ని అందుబాటులో ఉన్న చెల్లింపు పద్ధతిగా ఎనేబుల్ చేయడానికి, **Ultimate Multisite > Settings > Payments** ట్యాబ్‌కు వెళ్లి PayPal పక్కన ఉన్న బాక్స్‌ను టిక్ చేయండి.
+మీ నెట్‌వర్క్‌లో అందుబాటులో ఉన్న చెల్లింపు పద్ధతిగా PayPal ను ప్రారంభించడానికి, **Ultimate Multisite > Settings > Payments** ట్యాబ్‌కు వెళ్లి PayPal పక్కన ఉన్న పెట్టెను టిక్ చేయండి.
 
-![Active payment gateways లో PayPal ని ఎనేబుల్ చేయడం](/img/config/settings-payment-gateways.png)
+![సక్రియ చెల్లింపు గేట్‌వేలలో PayPal ప్రారంభించడం](/img/config/settings-payment-gateways.png)
 
-## PayPal API credentials పొందడం
+## మార్గనిర్దేశిత సెటప్ విజార్డ్‌ను ఉపయోగించడం {#using-the-guided-setup-wizard}
 
-PayPal ని payment gateway గా ఎనేబుల్ చేసిన తర్వాత, PayPal API **Username**, PayPal API **Password** మరియు PayPal API **Signature** ఫీల్డ్‌లను నింపాలి.
+Ultimate Multisite 2.10.0 చెల్లింపు గేట్‌వే సెట్టింగ్‌లకు మార్గనిర్దేశిత PayPal సెటప్ విజార్డ్‌ను జోడిస్తుంది. మీరు PayPal ను ప్రారంభించిన తర్వాత, గేట్‌వేను ఎలా కనెక్ట్ చేయాలనుకుంటున్నారో ఎంచుకోవడానికి మరియు సేవ్ చేయడానికి ముందు ఇంకా ఏ ఆధారాలు అవసరమో నిర్ధారించడానికి **Ultimate Multisite > Settings > Payments** లోని విజార్డ్‌ను ఉపయోగించండి.
 
-మీ PayPal [Live](https://www.paypal.com/home) లేదా [Sandbox](https://www.sandbox.paypal.com/home) అకౌంట్‌లోకి లాగిన్ అవడం ద్వారా మీరు వీటిని పొందవచ్చు.
+విజార్డ్ రెండు సెటప్ మార్గాలకు మద్దతు ఇస్తుంది:
 
-(చెల్లింపులను టెస్ట్ చేయడానికి మరియు gateway సరిగ్గా సెటప్ అయిందో చూడటానికి మీరు **sandbox mode** ని ఉపయోగించవచ్చని గుర్తుంచుకోండి. సంబంధిత సెక్షన్‌ను టోగుల్ ఆన్ చేయండి.)
+* **మాన్యువల్ ఆధారాల నమోదు**: మీ వద్ద ఇప్పటికే PayPal API ఆధారాలు ఉన్నప్పుడు, మీ Account కోసం OAuth సెటప్ అందుబాటులో లేనప్పుడు, లేదా PayPal నుండి ఆధారాలను మీరే కాపీ చేయాలనుకున్నప్పుడు ఈ మార్గాన్ని ఉపయోగించండి. PayPal ఫీల్డ్‌లలో API Username, API Password, మరియు API Signature నమోదు చేసి, తర్వాత చెల్లింపు సెట్టింగ్‌లను సేవ్ చేయండి.
+* **OAuth కనెక్షన్ గేట్**: మీ ఇన్‌స్టాల్ కోసం OAuth ఎంపిక అందుబాటులో ఉండి ప్రారంభించబడినప్పుడు మాత్రమే ఈ మార్గాన్ని ఉపయోగించండి. విజార్డ్ OAuth ప్రవాహాన్ని ఫీచర్ ఫ్లాగ్ వెనుక చూపిస్తుంది, కాబట్టి ఆ ఫ్లాగ్ లేని నెట్‌వర్క్‌లు మాన్యువల్ ఆధారాల నమోదు ఫీల్డ్‌లనే ఉపయోగిస్తూనే ఉంటాయి.
 
-![PayPal API credentials ఫీల్డ్‌లు మరియు sandbox mode టోగుల్](/img/config/settings-payment-gateways.png)
+విజార్డ్‌లో OAuth ఎంపిక కనిపించకపోతే, క్రింద ఉన్న మాన్యువల్ ఆధారాల నమోదు ప్రవాహాన్ని పూర్తి చేయండి. గేట్‌వే మునుపటి Ultimate Multisite 2.x విడుదలలతో ఉన్న అదే PayPal Business API ఆధారాలతో పనిచేస్తుంది.
 
-మీ PayPal అకౌంట్ కోసం API Signature లేదా Certificate credentials రిక్వెస్ట్ చేయడానికి:
+## PayPal API ఆధారాలను పొందడం {#getting-the-paypal-api-credentials}
 
-  1. మీ [Account Settings](https://www.paypal.com/businessmanage/account/accountAccess) కు వెళ్లండి.
+PayPal చెల్లింపు గేట్‌వేగా ప్రారంభించిన తర్వాత, మీరు PayPal API **Username** , PayPal API **Password** మరియు PayPal API **Signature** ఫీల్డ్‌లను పూరించాలి.
 
-  2. **API access** సెక్షన్‌లో, **Update** క్లిక్ చేయండి.  
-![API access సెక్షన్ తో PayPal Account Settings](/img/config/settings-payment-gateways.png)
+మీ PayPal [Live](https://www.paypal.com/home) లేదా [Sandbox](https://www.sandbox.paypal.com/home) Account లో లాగిన్ అయి వీటిని పొందవచ్చు.
 
-  3. **NVP/SOAP API integration (Classic)** కింద, **Manage API credentials** క్లిక్ చేయండి.  
-![PayPal NVP/SOAP API integration Manage API credentials](/img/config/settings-payment-gateways.png)
+(చెల్లింపులను పరీక్షించడానికి మరియు గేట్‌వే సరిగా సెటప్ అయ్యిందో లేదో చూడడానికి మీరు **sandbox mode** ఉపయోగించవచ్చని గుర్తుంచుకోండి. సంబంధిత విభాగాన్ని ఆన్ చేయండి.)
 
-     * మీరు ఇప్పటికే API Signature లేదా Certificate జనరేట్ చేసి ఉంటే, మీ credentials కనుగొనగల పేజీకి మీరు redirect అవుతారు.
+![PayPal API ఆధారాల ఫీల్డ్‌లు మరియు sandbox mode టాగుల్](/img/config/settings-payment-gateways.png)
 
-     * _**గమనిక:** మీ PayPal అకౌంట్‌ను వెరిఫై చేయమని ప్రాంప్ట్ వస్తే, స్క్రీన్‌పై ఉన్న సూచనలను అనుసరించండి._
+మీ PayPal Account కోసం API Signature లేదా Certificate ఆధారాలను అభ్యర్థించడానికి:
 
-  4. కింది ఆప్షన్లలో _ఒకటి_ ఎంచుకుని, **Agree and Submit** క్లిక్ చేయండి.
+  1. మీ [Account సెట్టింగ్‌లు](https://www.paypal.com/businessmanage/account/accountAccess) కు వెళ్లండి.
 
-     * **Request API Signature** – API Signature authentication కోసం ఎంచుకోండి.
+  2. **API యాక్సెస్** విభాగంలో, **అప్‌డేట్** క్లిక్ చేయండి.
+![API యాక్సెస్ విభాగంతో PayPal Account సెట్టింగ్‌లు](/img/config/settings-payment-gateways.png)
 
-     * **Request API Certificate** – API Certificate authentication కోసం ఎంచుకోండి.
+  3. **NVP/SOAP API సమన్వయం (Classic)** కింద, **API ఆధారాలను నిర్వహించండి** క్లిక్ చేయండి.
+![PayPal NVP/SOAP API సమన్వయం API ఆధారాలను నిర్వహించండి](/img/config/settings-payment-gateways.png)
 
-  5. PayPal మీ API credentials ను ఈ విధంగా జనరేట్ చేస్తుంది:  
-![PayPal జనరేట్ చేసిన API credentials](/img/config/settings-payment-gateways.png)
+     * మీరు ఇప్పటికే API Signature లేదా Certificate సృష్టించి ఉంటే, మీ ఆధారాలను చూడగలిగే పేజీకి మీరు మళ్లించబడతారు.
 
-     * **API Signature credentials** లో API Username, API Password మరియు Signature ఉంటాయి, ఇవి ఎక్స్‌పైర్ అవ్వవు. అదనపు భద్రత కోసం ఈ విలువలు డిఫాల్ట్‌గా దాచబడి ఉంటాయి. వాటిని ఆన్ మరియు ఆఫ్ చేయడానికి **Show/Hide** క్లిక్ చేయండి. పూర్తయినప్పుడు, **Done** క్లిక్ చేయండి.
+     * _**గమనిక:** మీ PayPal Account ను ధృవీకరించమని అడిగితే, స్క్రీన్‌పై కనిపించే సూచనలను అనుసరించండి._
 
-     * **API Certificate credentials** లో API Username, API Password మరియు Certificate ఉంటాయి, ఇవి మూడు సంవత్సరాల తర్వాత ఆటోమేటిక్‌గా ఎక్స్‌పైర్ అవుతాయి. API Certificate ను మీ డెస్క్‌టాప్‌కు సేవ్ చేయడానికి **Download Certificate** క్లిక్ చేయండి.
+  4. క్రింది ఎంపికల్లో _ఒకదాన్ని_ ఎంచుకుని, తర్వాత **అంగీకరించి సమర్పించండి** క్లిక్ చేయండి.
 
-అంతే, మీ PayPal payment integration పూర్తయింది!
+     * **API Signature అభ్యర్థించండి** – API Signature ప్రామాణీకరణ కోసం ఎంచుకోండి.
 
-PayPal settings గురించి మీకు ఏవైనా ప్రశ్నలు ఉంటే, PayPal యొక్క [Help Center](https://www.paypal.com/br/smarthelp/home) ను చూడవచ్చు.
+     * **API Certificate అభ్యర్థించండి** – API Certificate ప్రామాణీకరణ కోసం ఎంచుకోండి.
+
+  5. PayPal మీ API ఆధారాలను ఈ విధంగా సృష్టిస్తుంది:
+![PayPal సృష్టించిన API ఆధారాలు](/img/config/settings-payment-gateways.png)
+
+     * **API Signature ఆధారాలు** లో API Username, API Password, మరియు Signature ఉంటాయి. ఇవి గడువు ముగియవు. అదనపు భద్రత కోసం ఈ విలువలు డిఫాల్ట్‌గా దాచబడి ఉంటాయి. వాటిని ఆన్ మరియు ఆఫ్ చేయడానికి **చూపించు/దాచు** క్లిక్ చేయండి. పూర్తయిన తర్వాత, **పూర్తయింది** క్లిక్ చేయండి.
+
+     * **API Certificate ఆధారాలు** లో API Username, API Password, మరియు Certificate ఉంటాయి. ఇది మూడు సంవత్సరాల తర్వాత స్వయంచాలకంగా గడువు ముగుస్తుంది. API Certificate ను మీ డెస్క్‌టాప్‌కు సేవ్ చేయడానికి **Certificate డౌన్‌లోడ్ చేయండి** క్లిక్ చేయండి.
+
+అంతే, మీ PayPal చెల్లింపు సమన్వయం పూర్తయింది!
+
+PayPal సెట్టింగ్‌ల గురించి మీకు ఏవైనా ప్రశ్నలు ఉంటే, PayPal యొక్క [సహాయ కేంద్రం](https://www.paypal.com/br/smarthelp/home) చూడవచ్చు.

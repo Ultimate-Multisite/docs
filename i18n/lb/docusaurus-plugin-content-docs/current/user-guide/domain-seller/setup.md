@@ -3,21 +3,21 @@ title: Usetzungs- und Anbieterkonfiguratioun
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Irichtigsetze und Providerkonfigurierig
+# Domain Seller: Irichtigsetze und Providerkonfigurierig {#domain-seller-setup-and-provider-configuration}
 
 De Domain Seller Addon schickt mit eme geführte Setup-Wizard, wo Sie Schritt für Schritt dur all die nötige Schritte führt. Dësi Seite deckt de Wizard-Fluss ab und wie Sie d'Provider anschriit oder neu konfigurierä chönne.
 
-## Aaforderige
+## Aaforderige {#requirements}
 
 - **Multisite Ultimate** v2.4.12 oder höcher, netzwerkaktiviert
 - **PHP** 7.4+
 - API-Credentials für mindestens e Registrierungsanbieter
 
-## Ersti Lauf Setup Wizard
+## Ersti Lauf Setup Wizard {#first-run-setup-wizard}
 
 De Setup Wizard startet automatisch de erscht Mal, wenn Sie d'Plugin netzwerkaktivierä. Er isch au jederzeit über **Network Admin › Ultimate Multisite › Domain Seller Setup** verfügbar.
 
-### Schritt 1 — Wähle en Provider
+### Schritt 1 — Wähle en Provider {#step-1--choose-a-provider}
 
 Wähle de Registrar us, wo Sie verbinde wend. Unterstützte Optionne:
 
@@ -33,7 +33,7 @@ Wähle de Registrar us, wo Sie verbinde wend. Unterstützte Optionne:
 | NameSilo | Nein | Nein |
 | Enom | Ja | Nein |
 
-### Schritt 2 — Credentials iigäh
+### Schritt 2 — Credentials iigäh {#step-2--enter-credentials}
 
 Jeder Provider het verschiedeni Feld für d'Credentials:
 
@@ -57,17 +57,17 @@ Jeder Provider het verschiedeni Feld für d'Credentials:
 
 Überprüche de **Sandbox mode**, wo verfügbar, um d'Verbindig gege de Testumfeld vom Provider z'teste, bevor du live gaasch.
 
-### Schritt 3 — D'Verbindig teste
+### Schritt 3 — D'Verbindig teste {#step-3--test-the-connection}
 
 Klick uf **Test Connection**. De Wizard schickt en leichte API-Call, um d'Credentials und d'Verbindig z'überprüefe. Korrigier alli Problem mit de Credentials, bevor du wiitergaasch.
 
-### Schritt 4 — TLDs importiere
+### Schritt 4 — TLDs importiere {#step-4--import-tlds}
 
 Klick uf **Import TLDs**, um alli verfügbare TLDs und de Großhandelspreise vum verbunde Provider z'zieh. Das füllt d'TLD-Liste us, wo fir Domain-Produkte brucht wird. D'Import chan 30–60 Sekunde dure, wenn de Provider en grosse TLD-Katalog het.
 
 TLDs wëssen au automatisch allan eimal am Tag wider synched dur en geplante cron job.
 
-### Schritt 5 — En Domain-Produkt erstellen
+### Schritt 5 — En Domain-Produkt erstellen {#step-5--create-a-domain-product}
 
 De Wizard erstellt en Standard-Catch-all Domain-Produkt mit en 10% Markup. Du chann das Produkt sofort bearbeite oder überspringe und manuell Produkte unter **Ultimate Multisite › Products** erstellen.
 
@@ -75,7 +75,7 @@ Lies [Domain Products and Pricing](./domain-products) fir de vollständigi Konfi
 
 ---
 
-## En Provider neu konfiguréieren
+## En Provider neu konfiguréieren {#reconfiguring-a-provider}
 
 Gang zu **Network Admin › Ultimate Multisite › Settings › Domain Seller** (oder klick uf **Settings** i de Plugin-Liste).
 
@@ -88,17 +88,17 @@ D'Einstellungen-Seite enthält:
 - **Domainprodukte verwalten** — schneller Link zur Produkte-Liste
 - **Anbieter konfigurieren** — öffnet den Integration Wizard, um Anbieter hinzuzufügen oder neu einzurichten
 
-### Einen zweiten Anbieter hinzufügen
+### Einen zweiten Anbieter hinzufügen {#adding-a-second-provider}
 
 Klick auf **Anbieter konfigurieren** und führe den Wizard erneut für den neuen Registrar aus. Du kannst mehrere Anbieter gleichzeitig konfigurieren. Weise jedes Domainprodukt einem bestimmten Anbieter zu oder lass es auf dem Standardanbieter bleiben.
 
-### TLDs manuell synchronisieren
+### TLDs manuell synchronisieren {#syncing-tlds-manually}
 
 In der Einstellungen klickst du neben jedem konfigurierten Anbieter auf **TLDs synchronisieren**, um die neuesten Preise abzurufen. Das ist nützlich, nachdem ein Anbieter die Großhandelspreise aktualisiert oder neue TLDs hinzugefügt hat.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Jeder Anbieter schreibt seine Daten in seinen eigenen Log-Kanal. Die Logs kannst du unter **Network Admin › Ultimate Multisite › Logs** anzeigen lassen:
 
@@ -118,7 +118,7 @@ Jeder Anbieter schreibt seine Daten in seinen eigenen Log-Kanal. Die Logs kannst
 
 ---
 
-## Provider vermogensnotizen
+## Provider vermogensnotizen {#provider-capability-notes}
 
 Niet elke registrar API biedt dezelfde operaties aan. De addon toont niet-ondersteunde operaties met duidelijke foutmeldingen voor de admin, in plaats van dat het stil faalt.
 

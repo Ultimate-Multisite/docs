@@ -1,27 +1,27 @@
 ---
-title: การเริ่มต้นพัฒนา Addon
+title: เริ่มต้นพัฒนาส่วนเสริม
 sidebar_position: 1
-_i18n_hash: 6f95a97374e61e57de3f8924d307b1bc
+_i18n_hash: 9e377a4aa16c5d3b119fbd631cb6126e
 ---
-# การพัฒนา Addon
+# การพัฒนาส่วนเสริม {#addon-development}
 
-## โครงสร้างของ Addon
+## โครงสร้างส่วนเสริม {#addon-structure}
 
 ```
 my-addon/
-├── my-addon.php                 # ไฟล์ปลั๊กอินหลัก
+├── my-addon.php                 # ไฟล์ plugin หลัก
 ├── inc/
-│   ├── class-my-addon.php       # คลาสหลักของ Addon
-│   ├── admin-pages/             # ส่วนติดต่อผู้ใช้ใน Admin
+│   ├── class-my-addon.php       # คลาสส่วนเสริมหลัก
+│   ├── admin-pages/             # อินเทอร์เฟซผู้ดูแลระบบ
 │   ├── models/                  # โมเดลข้อมูลแบบกำหนดเอง
-│   └── integrations/            # การเชื่อมต่อกับระบบภายนอก
+│   └── integrations/            # การผสานรวมกับบุคคลที่สาม
 ├── assets/
 │   ├── js/
 │   └── css/
-└── templates/                   # ไฟล์ Template
+└── templates/                   # ไฟล์เทมเพลต
 ```
 
-## ตัวอย่างไฟล์ Addon หลัก
+## เทมเพลตไฟล์ส่วนเสริมหลัก {#main-addon-file-template}
 
 ```php
 <?php
@@ -153,7 +153,7 @@ class My_Addon {
 }
 ```
 
-## ตัวอย่าง Model แบบกำหนดเอง
+## ตัวอย่างโมเดลแบบกำหนดเอง {#custom-model-example}
 
 ```php
 <?php
@@ -232,7 +232,7 @@ class Lead extends \WP_Ultimo\Models\Base_Model {
 }
 ```
 
-## การรวมหน้า Admin
+## การผสานรวมหน้าผู้ดูแลระบบ {#admin-page-integration}
 
 ```php
 <?php
@@ -295,7 +295,7 @@ class Leads_Admin_Page extends \WP_Ultimo\Admin_Pages\Base_Admin_Page {
 }
 ```
 
-## การทดสอบ Addon ของคุณ
+## การทดสอบ Addon ของคุณ {#testing-your-addon}
 
 ```php
 <?php
@@ -347,8 +347,54 @@ class Test_My_Integration extends WP_UnitTestCase {
 }
 ```
 
-## ขั้นตอนต่อไป
+## จุดขยายของ v2.13.0 {#v2130-extension-points}
 
-- ตรวจสอบ [Hooks Reference](/developer/hooks) สำหรับ Action และ Filter ที่มีให้ใช้
-- ตรวจสอบ [REST API Overview](/developer/rest-api/overview) สำหรับการรวม API
-- ใช้ [Addon Template](/addons/addon-template) เป็นโครงร่างเริ่มต้น
+Ultimate Multisite v2.13.0 เพิ่มจุดขยายหลายรายการที่เป็นประโยชน์สำหรับ addons ที่ผสานรวมกับผู้เช่าแบบอธิปไตย โดเมนชำระเงิน หรือระบบอัตโนมัติ DNS ของผู้ให้บริการโฮสต์
+
+### URL สำหรับ SSO และการจัดการเว็บไซต์หลัก {#sso-and-main-site-management-urls}
+
+Use `wu_with_sso($url)` when linking customers across domains, especially when a sovereign tenant launches a main-site account, checkout, billing, invoice, template-switching, site-management, or domain-mapping action. The generated URL can be adjusted with `wu_sso_url`:
+
+```php
+add_filter('wu_sso_url', function($sso_url, $user, $site_id, $redirect_to) {
+    return add_query_arg('source', 'my-addon', $sso_url);
+}, 10, 4);
+```
+
+### โดเมนฐานของฟอร์มชำระเงิน {#checkout-form-base-domains}
+
+ใช้ `wu_checkout_form_base_domains` เมื่อ addon ของคุณให้โดเมนฐานแบบใช้ร่วมกันเพิ่มเติมที่ควรทำงานเหมือนโดเมน **URL เว็บไซต์** ของฟอร์มชำระเงิน แทนการแมปแบบกำหนดเองรายเว็บไซต์:
+
+```php
+add_filter('wu_checkout_form_base_domains', function($domains) {
+    $domains[] = 'sites.example.com';
+
+    return $domains;
+});
+```
+
+Ultimate Multisite จะทำให้โฮสต์เหล่านี้เป็นมาตรฐานและข้ามเรคคอร์ดโดเมนที่แมปรายเว็บไซต์โดยอัตโนมัติสำหรับโฮสต์เหล่านี้
+
+### การสร้างเรคคอร์ดโดเมนอัตโนมัติ {#automatic-domain-record-creation}
+
+ใช้ `wu_should_create_domain_record_for_site` เมื่อ addon ของคุณต้องการระงับหรือเลื่อนการสร้างเรคคอร์ดโดเมนอัตโนมัติสำหรับเว็บไซต์ที่สร้างขึ้นใหม่:
+
+```php
+add_filter('wu_should_create_domain_record_for_site', function($create, $site) {
+    $domain = (string) $site->domain;
+
+    if ('.internal.example' === substr($domain, -strlen('.internal.example'))) {
+        return false;
+    }
+
+    return $create;
+}, 10, 2);
+```
+
+การผสานรวมกับผู้ให้บริการโฮสต์ที่ฟัง `wu_add_subdomain` สามารถสร้างเรคคอร์ด DNS ฝั่งผู้ให้บริการเมื่อมีการสร้างเว็บไซต์ หากไม่มีการผสานรวมใดลงทะเบียนสำหรับแอ็กชันนั้น Ultimate Multisite จะข้ามงานเบื้องหลังที่ว่างเปล่า
+
+## ขั้นตอนถัดไป {#next-steps}
+
+- ตรวจทาน [เอกสารอ้างอิง Hooks](/developer/hooks) สำหรับ actions และ filters ที่มีให้ใช้
+- ดู [ภาพรวม REST API](/developer/rest-api/overview) สำหรับการผสานรวม API
+- ใช้ [เทมเพลต Addon](/addons/addon-template) เป็นโครงเริ่มต้น

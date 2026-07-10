@@ -1,130 +1,138 @@
 ---
 title: Paano I-configure ang Domain Mapping
 sidebar_position: 6
-_i18n_hash: 1bb022a0d812fd87791d9ea476f7be84
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Paano I-configure ang Domain Mapping (v2)
+# Paano I-configure ang Pagmamapa ng Domain (v2) {#how-to-configure-domain-mapping-v2}
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite bersyon 2.x.**_
+_**MAHALAGANG TALA: Tinutukoy ng artikulong ito ang Ultimate Multisite bersyon 2.x.**_
 
-Isa sa mga pinakamahusay na feature ng isang premium network ay ang kakayahang mag-alok sa ating mga kliyente ng pagkakataong mag-attach ng top-level domain sa kanilang mga site. Sa huli, alin ba ang mas mukhang propesyonal: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Kaya naman ang Ultimate Multisite ay nag-aalok ng feature na ito na built-in na, nang hindi na kailangan gumamit ng third-party plugins.
+Isa sa pinakamakapangyarihang tampok ng isang premium na network ay ang kakayahang mag-alok sa ating mga kliyente ng pagkakataong mag-attach ng top-level domain sa kanilang mga sityo. Pagkatapos ng lahat, alin ang mas mukhang propesyonal: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) o [_**joesbikeshop.com**_](http://joesbikeshop.com)? Kaya iniaalok ng Ultimate Multisite ang tampok na iyon na built-in, nang hindi kailangang gumamit ng mga pandagdag mula sa third party.
 
-## Ano ang domain mapping?
+## Ano ang pagmamapa ng domain? {#whats-domain-mapping}
 
-Gaya ng ipinahihiwatig ng pangalan, ang domain mapping ay ang kakayahang inaalok ng Ultimate Multisite na tumanggap ng request para sa isang custom domain at i-map ang request na iyon sa katumbas na site sa network na may partikular na domain na naka-attach.
+Gaya ng ipinahihiwatig ng pangalan, ang pagmamapa ng domain ay ang kakayahang iniaalok ng Ultimate Multisite na tumanggap ng kahilingan para sa isang custom na domain at imapa ang kahilingang iyon sa kaukulang sityo sa network na may naka-attach na partikular na domain na iyon.
 
-### Paano i-setup ang domain mapping sa iyong Ultimate Multisite Network
+### Paano i-setup ang pagmamapa ng domain sa iyong Ultimate Multisite Network {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Ang domain mapping ay nangangailangan ng kaunting pag-setup sa iyong bahagi para gumana. Sa kabutihang palad, ina-automate ng Ultimate Multisite ang mahirap na trabaho para sa iyo upang madali mong matugunan ang mga kinakailangan.
+Nangangailangan ng ilang pagse-setup mula sa iyo ang pagmamapa ng domain para gumana. Mabuti na lang, ino-automate ng Ultimate Multisite ang mahirap na gawain para madali mong matugunan ang mga kinakailangan.
 
-Sa panahon ng pag-install ng Ultimate Multisite, awtomatikong kokopyahin at i-install ng wizard ang **sunrise.php** sa itinalagang folder. **Hindi ka papayagan ng wizard na magpatuloy hanggang hindi nakukumpleto ang hakbang na ito**.
+Sa panahon ng pag-install ng Ultimate Multisite, awtomatikong kokopyahin at ii-install ng wizard ang **sunrise.php** sa itinakdang folder. **Hindi ka papayagan ng wizard na magpatuloy hanggang makumpleto ang hakbang na ito**.
 
-![Ultimate Multisite installation wizard na may sunrise.php step](/img/config/settings-domain-mapping.png)
+<!-- Hindi available ang screenshot: Ultimate Multisite installation wizard na may hakbang na sunrise.php -->
 
-Ibig sabihin nito, kapag natapos na ng Ultimate Multisite installation wizard ang pag-setup ng iyong network, maaari ka nang magsimulang mag-map ng custom domain kaagad.
+Ibig sabihin nito, kapag natapos na ng installation wizard ng Ultimate Multisite ang pagse-setup ng iyong network, maaari mo nang simulan agad ang pagmamapa ng custom na domain.
 
-Tandaan na ang domain mapping sa Ultimate Multisite ay hindi sapilitan. May opsyon kang gamitin ang native na domain mapping function ng WordPress Multisite o anumang ibang domain mapping solution.
+Tandaan na hindi mandatoryo ang pagmamapa ng domain sa Ultimate Multisite. May opsyon kang gamitin ang native na function ng pagmamapa ng domain ng WordPress Multisite o anumang iba pang solusyon sa pagmamapa ng domain.
 
-Kung kailangan mong i-disable ang Ultimate Multisite domain mapping para bigyan-daan ang ibang domain mapping solutions, maaari mong i-disable ang feature na ito sa ilalim ng **Ultimate Multisite > Settings > Domain Mapping**.
+Kung kailangan mong i-disable ang pagmamapa ng domain ng Ultimate Multisite upang bigyang-daan ang ibang mga solusyon sa pagmamapa ng domain, maaari mong i-disable ang tampok na ito sa ilalim ng **Ultimate Multisite > Mga Setting > Pagmamapa ng Domain**.
 
-![Domain Mapping settings na may enable toggle](/img/config/settings-domain-mapping.png)
+![Pahina ng mga setting ng Pagmamapa ng Domain na nagpapakita ng admin redirect, mensahe ng pagmamapa at mga opsyon sa DNS](/img/config/domain-mapping-settings.png)
 
-Sa ibaba mismo ng opsyong ito, makikita mo rin ang opsyong **Force Admin Redirect**. Pinapahintulutan ka ng opsyong ito na kontrolin kung ang iyong mga customer ay maa-access ang kanilang admin dashboard sa parehong custom domain at subdomain o sa isa lamang sa kanila.
+Sa mismong ibaba ng opsyong ito, makikita mo rin ang opsyong **Puwersahang Admin Redirect**. Pinapayagan ka ng opsyong ito na kontrolin kung maa-access ng iyong mga customer ang kanilang admin dashboard kapwa sa kanilang custom na domain at subdomain o sa isa lamang sa mga ito.
 
-Kung pipiliin mo ang **Force redirect to mapped domain**, ang iyong mga customer ay maa-access lamang ang kanilang admin dashboard sa kanilang mga custom domain.
+Kung pipiliin mo ang **Puwersahang i-redirect sa mapped domain** , maa-access lamang ng iyong mga customer ang kanilang admin dashboard sa kanilang mga custom na domain.
 
-Ang opsyong **Force redirect to network domain** ay gagawa ng eksaktong kabaligtaran - ang iyong mga customer ay papayagan lamang na ma-access ang kanilang mga dashboard sa kanilang subdomain, kahit na sinusubukan nilang mag-sign in sa kanilang mga custom domain.
+Gagawin ng opsyong **Puwersahang i-redirect sa** **network domain** ang eksaktong kabaligtaran - papayagan lamang ang iyong mga customer na ma-access ang kanilang mga dashboard sa kanilang subdomain, kahit na sinusubukan nilang mag-sign in sa kanilang mga custom na domain.
 
-At ang opsyong **Allow access to the admin by both mapped domain domain and network domain** ay nagpapahintulot sa kanila na ma-access ang kanilang mga admin dashboard sa parehong subdomain at custom domain.
+At pinapayagan sila ng opsyong **Payagan ang access sa admin gamit ang parehong mapped domain domain at network domain** na ma-access ang kanilang mga admin dashboard kapwa sa subdomain at custom na domain.
 
-![Force Admin Redirect options para sa domain mapping](/img/config/settings-domain-mapping.png)
+![Naka-expand na dropdown ng Admin Redirect na nagpapakita ng tatlong opsyon sa redirect](/img/config/domain-mapping-redirect-options.png)
 
-May dalawang paraan para mag-map ng custom domain. Ang una ay sa pamamagitan ng pag-map ng domain name mula sa iyong network admin dashboard bilang super admin at ang pangalawa ay sa pamamagitan ng subsite admin dashboard sa ilalim ng account page.
+May dalawang paraan para imapa ang isang custom na domain. Ang una ay sa pamamagitan ng pagmamapa ng domain name mula sa iyong network admin dashboard bilang super admin at ang pangalawa ay sa pamamagitan ng admin dashboard ng subsityo sa ilalim ng pahina ng Account.
 
-Ngunit bago ka magsimulang mag-map ng custom domain sa isa sa mga subsite sa iyong network, kailangan mong tiyakin na ang **DNS settings** ng domain name ay maayos na naka-configure.
+Ngunit bago mo simulang imapa ang custom na domain sa isa sa mga subsityo sa iyong network, kakailanganin mong tiyaking maayos na naka-configure ang **mga setting ng DNS** ng domain name.
 
-### 
+###
 
-### Pagtiyak na maayos na naka-configure ang DNS settings ng domain
+### Pagtiyak na maayos na naka-configure ang mga setting ng DNS ng domain {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Para gumana ang mapping, kailangan mong tiyakin na ang domain na plano mong i-map ay nakaturo sa IP address ng iyong Network. Tandaan na kailangan mo ang Network IP address - ang IP address ng domain kung saan naka-install ang Ultimate Multisite - hindi ang IP address ng custom domain na gusto mong i-map. Para hanapin ang IP address ng isang partikular na domain, iminumungkahi naming pumunta sa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), halimbawa.
+Para gumana ang pagmamapa, kailangan mong tiyaking nakaturo ang domain na plano mong imapa sa IP address ng iyong Network. Tandaan na kailangan mo ang IP address ng Network - ang IP address ng domain kung saan naka-install ang Ultimate Multisite - hindi ang IP address ng custom na domain na gusto mong imapa. Para hanapin ang IP address ng isang partikular na domain, iminumungkahi naming pumunta sa [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), halimbawa.
 
-Para maayos na ma-map ang domain, kailangan mong magdagdag ng **A RECORD** sa iyong **DNS** configuration na nakaturo sa **IP address** na iyon. Ang DNS management ay malaki ang pagkakaiba sa iba't ibang domain registrar, ngunit maraming mga tutorial online na sumasaklaw dito kung hahanapin mo ang "_Creating A Record on XXXX_" kung saan ang XXXX ay ang iyong domain registrar (hal.: "_Creating A Record on GoDaddy_").
+Para maimapa nang tama ang domain, kailangan mong magdagdag ng **A RECORD** sa iyong configuration ng **DNS** na nakaturo sa **IP address** na iyon. Malaki ang pagkakaiba-iba ng pamamahala ng DNS sa pagitan ng iba't ibang domain registrar, ngunit maraming tutorial online na tumatalakay dito kung hahanapin mo ang " _Creating A Record on XXXX_ " kung saan ang XXXX ay ang iyong domain registrar (hal.: " _Creating A Record on_ _GoDaddy_ ").
 
-Kung nahihirapan kang gawin itong gumana, **makipag-ugnayan sa support ng iyong domain registrar** at matutulungan ka nila sa bahaging ito.
+Kung nahihirapan kang paandarin ito, **makipag-ugnayan sa support ng iyong domain registrar** at matutulungan ka nila sa bahaging ito.
 
-Kung plano mong payagan ang iyong mga kliyente na mag-map ng sarili nilang mga domain, kailangan nilang gawin ang trabaho sa bahaging ito sa kanilang sarili. Ituro sila sa support system ng kanilang registrar kung nahihirapan silang gumawa ng A Record.
+Kung plano mong payagan ang iyong mga kliyente na imapa ang sarili nilang mga domain, sila mismo ang kailangang gumawa ng trabaho sa bahaging ito. Ituro sila sa support system ng kanilang registrar kung hindi nila magawang lumikha ng A Record.
 
-### Pag-map ng custom domain name bilang Super Admin
+### Pagmamapa ng custom na domain name bilang Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Kapag naka-log in ka bilang super admin sa iyong network, madali kang makakapag-add at makapag-manage ng mga custom domain name sa pamamagitan ng pagpunta sa ilalim ng **Ultimate Multisite > Domains**.
+Kapag naka-log in ka bilang super admin sa iyong network, madali kang makakapagdagdag at makakapamahala ng mga custom na domain name sa pamamagitan ng pagpunta sa ilalim ng **Ultimate Multisite > Mga Domain**.
 
-![Domains list page sa Ultimate Multisite](/img/admin/domains-list.png)
+![Pahina ng listahan ng mga Domain sa Ultimate Multisite](/img/admin/domains-list.png)
 
-Sa ilalim ng page na ito, maaari kang mag-click sa **Add Domain** button sa itaas at magdadala ito ng modal window kung saan maaari mong i-set at punan ang **custom domain name**, **ang subsite** na gusto mong lagyan ng custom domain name, at magpasya kung gusto mo itong i-set bilang **primary domain** name o hindi (tandaan na maaari kang mag-map ng **maraming domain name sa isang subsite**).
+Sa ilalim ng pahinang ito, maaari mong i-click ang button na **Magdagdag ng Domain** sa itaas at magbubukas ito ng modal window kung saan maaari mong itakda at punan ang **custom na domain name** , **ang subsityo** kung saan mo gustong ilapat ang custom na domain name, at magpasya kung gusto mo itong itakda bilang **primary domain** name o hindi (tandaan na maaari mong imapa ang **maramihang domain name sa isang subsityo**).
 
-![Add Domain modal na may domain name at site fields](/img/admin/domains-list.png)
+![Modal ng Magdagdag ng Domain na may domain name, tagapili ng sityo at toggle ng primary domain](/img/admin/domain-add-modal.png)
 
-Pagkatapos ilagay ang lahat ng impormasyon, maaari mo nang i-click ang **Add Existing Domain** button sa ibaba.
+Matapos ilagay ang lahat ng impormasyon, maaari mo nang i-click ang button na **Magdagdag ng Umiiral na Domain** sa ibaba.
 
-Magsisimula ito sa proseso ng pag-verify at pag-fetch ng DNS information ng custom domain. Makakakita ka rin ng log sa ibaba ng page para masundan mo ang prosesong pinagdadaanan nito. Ang prosesong ito ay maaaring tumagal ng ilang minuto para makumpleto.
+Sisimulan nito ang proseso ng pag-verify at pagkuha ng impormasyon ng DNS ng custom na domain. Makakakita ka rin ng log sa ibaba ng pahina para masundan mo ang prosesong dinaraanan nito. Maaaring tumagal ng ilang minuto bago makumpleto ang prosesong ito.
 
-Ang **Stage** o ang status ay dapat magbago mula **Checking DNS** patungo sa **Ready** kung lahat ay maayos na naka-setup.
+Gumagawa rin ang Ultimate Multisite v2.13.0 ng panloob na rekord ng domain nang awtomatiko kapag nilikha ang bagong site sa isang host na dapat ituring bilang domain bawat site. Kung ang host ay pangunahing domain ng network, o isa sa mga shared na base domain ng checkout form na naka-configure sa isang **URL ng site** na field, nilalaktawan ang awtomatikong rekord ng naka-map na domain upang manatiling available ang shared na base domain sa bawat site na gumagamit nito.
 
-![Domain stage na nagbabago mula Checking DNS patungo sa Ready](/img/admin/domains-list.png)
+Kapag nagrehistro ang isang customer ng bagong domain sa pamamagitan ng Domain Seller v1.3.0 o mas bago, awtomatikong ima-map ng Ultimate Multisite ang nakarehistrong domain sa network site ng customer bilang default. Hindi na kailangang magdagdag ng mga administrator ng hiwalay na rekord ng naka-map na domain pagkatapos ng matagumpay na pagpaparehistro maliban kung gusto nilang isaayos ang mga opsyon gaya ng flag ng pangunahing domain, estado ng pag-activate, o paghawak ng SSL.
 
-![Domain na may Ready status sa domains list](/img/admin/domains-list.png)
+Dapat magbago ang **Yugto** o ang status mula **Sinusuri ang DNS** patungong **Handa** kung maayos na naka-set up ang lahat.
 
-Kung i-click mo ang domain name, makikita mo ang ilang mga opsyon sa loob nito. Tingnan natin ang mga ito nang mabilis:
+<!-- Hindi available ang screenshot: Row ng domain na ipinapakita ang yugtong Sinusuri ang DNS sa listahan ng mga domain -->
 
-![Domain detail page na may stage, site, active, at SSL options](/img/admin/domains-list.png)
+<!-- Hindi available ang screenshot: Row ng domain na ipinapakita ang yugtong Handa kasama ang berdeng tagapagpahiwatig ng status -->
 
-**Stage:** Ito ang stage kung nasaan ang domain. Kapag una mong idinagdag ang domain, malamang na nasa **Checking DNS** stage ito. Titingnan ng proseso ang mga DNS entry at kukumpirmahin na tama ang mga ito. Pagkatapos, ang domain ay ilalagay sa **Checking SSL** stage. Titingnan ng Ultimate Multisite kung ang domain ay may SSL o wala at ikakategorya ang iyong domain bilang **Ready** o **Ready (without SSL)**.
+Kung iki-click mo ang pangalan ng domain, makikita mo ang ilang opsyon sa loob nito. Tingnan natin ang mga ito nang mabilis:
 
-**Site:** Ang subdomain na nauugnay sa domain na ito. Ang mapped domain ay magpapakita ng content ng partikular na site na ito.
+![Pahina ng detalye ng domain na may mga toggle para sa yugto, site, aktibo, pangunahing domain, at SSL](/img/admin/domain-edit.png)
 
-**Active:** Maaari mong i-toggle ang opsyong ito on o off para i-activate o i-deactivate ang domain.
+**Yugto:** Ito ang yugto kung nasaan ang domain. Kapag una mong idinagdag ang domain, malamang na nasa yugtong **Sinusuri ang DNS** ito. Susuriin ng proseso ang mga entry ng DNS at kukumpirmahing tama ang mga ito. Pagkatapos, ilalagay ang domain sa yugtong **Sinusuri ang SSL**. Susuriin ng Ultimate Multisite kung may SSL ang domain o wala at ikakategorya ang iyong domain bilang **Handa** o **Handa (walang SSL)**.
 
-**Is Primary Domain?:** Ang iyong mga customer ay maaaring magkaroon ng higit sa isang mapped domain para sa bawat site. Gamitin ang opsyong ito para piliin kung ito ang primary domain para sa partikular na site.
+**Site:** Ang subdomain na nauugnay sa domain na ito. Ipapakita ng naka-map na domain ang nilalaman ng partikular na site na ito.
 
-**Is Secure?:** Kahit na sinusuri ng Ultimate Multisite kung ang domain ay may SSL certificate o wala bago ito i-enable, maaari mong manu-manong piliin na i-load ang domain na may o walang SSL certificate. Tandaan na kung ang website ay walang SSL certificate at sinusubukan mong pilitin itong i-load na may SSL, maaari itong magbigay sa iyo ng mga error.
+**Aktibo:** Maaari mong i-toggle ang opsyong ito nang naka-on o naka-off upang i-activate o i-deactivate ang domain.
 
-### Pag-map ng custom domain name bilang Subsite user
+**Pangunahing Domain ba?:** Maaaring magkaroon ang iyong mga customer ng higit sa isang naka-map na domain para sa bawat site. Gamitin ang opsyong ito upang piliin kung ito ang pangunahing domain para sa partikular na site.
 
-Ang mga subsite administrator ay maaari ring mag-map ng mga custom domain name mula sa kanilang subsite admin dashboard.
+**Secure ba?:** Kahit sinusuri ng Ultimate Multisite kung may SSL certificate ang domain o wala bago ito i-enable, maaari mong manu-manong piliing i-load ang domain nang may SSL certificate o wala. Tandaan na kung walang SSL certificate ang website at susubukan mong piliting i-load ito gamit ang SSL, maaari itong magbigay sa iyo ng mga error.
 
-Una, kailangan mong tiyakin na i-enable mo ang opsyong ito sa ilalim ng **Domain mapping** settings. Tingnan ang screenshot sa ibaba.
+### Pagmamapa ng custom na pangalan ng domain bilang user ng subsite {#mapping-custom-domain-name-as-subsite-user}
 
-![Domain mapping settings na nagpapahintulot sa mga subsite user na mag-map ng mga domain](/img/config/settings-domain-mapping.png)
+Maaari ring mag-map ang mga administrator ng subsite ng mga custom na pangalan ng domain mula sa kanilang subsite admin dashboard.
 
-Maaari mo ring i-set o i-configure ang opsyong ito sa ilalim ng **Plan** level o mga product option sa **Ultimate Multisite > Products**.
+Una, kailangan mong tiyaking i-enable ang opsyong ito sa ilalim ng mga setting ng **pagmamapa ng domain**. Tingnan ang screenshot sa ibaba.
 
-![Product custom domains option sa product settings](/img/config/settings-domain-mapping.png)
+<!-- Hindi available ang screenshot: Mga setting ng pagmamapa ng domain na nagpapahintulot sa mga user ng subsite na mag-map ng mga domain sa pamamagitan ng toggle ng Customer DNS Management -->
 
-Kapag alinman sa mga opsyong iyon ay naka-enable at pinapahintulutan ang isang subsite user na mag-map ng mga custom domain name, dapat makita ng subsite user ang isang metabox sa ilalim ng **Account** page na tinatawag na **Domains**.
+Maaari mo ring itakda o i-configure ang opsyong ito sa antas ng **Plano** o sa mga opsyon ng produkto sa **Ultimate Multisite > Mga Produkto**.
 
-![Domains metabox sa subsite account page](/img/admin/domains-list.png)
+![Seksyon ng Mga Custom na Domain sa pahina ng pag-edit ng produkto](/img/config/product-custom-domains.png)
 
-Maaaring i-click ng user ang **Add Domain** button at magdadala ito ng modal window na may ilang mga tagubilin.
+Kapag na-enable ang alinman sa mga opsyong iyon at pinapayagan ang isang user ng subsite na mag-map ng mga custom na pangalan ng domain, dapat makita ng user ng subsite ang isang metabox sa ilalim ng pahina ng **Account** na tinatawag na **Mga Domain**.
 
-![Add Domain modal na may DNS instructions para sa mga subsite user](/img/admin/domains-list.png)
+<!-- Hindi available ang screenshot: Metabox ng Mga Domain sa pahina ng Account ng subsite na may button na Magdagdag ng Domain -->
 
-Maaaring i-click ng user ang **Next Step** at magpatuloy sa pagdaragdag ng custom domain name. Maaari rin nilang piliin kung ito ay magiging primary domain o hindi.
+Maaaring i-click ng user ang button na **Magdagdag ng Domain** at magbubukas ito ng modal window na may ilang tagubilin.
 
-![Add custom domain name field na may primary domain option](/img/admin/domains-list.png)
+<!-- Hindi available ang screenshot: Modal ng Magdagdag ng Domain na nagpapakita ng mga tagubilin sa DNS A-record para sa mga user ng subsite -->
 
-![I-click ang Add Domain para simulan ang DNS verification](/img/admin/domains-list.png)Ang pag-click sa **Add Domain** ay magsisimula sa proseso ng pag-verify at pag-fetch ng DNS information ng custom domain.
+Pagkatapos ay maaaring i-click ng user ang **Susunod na Hakbang** at magpatuloy sa pagdaragdag ng custom na pangalan ng domain. Maaari rin nilang piliin kung ito ang magiging pangunahing domain o hindi.
 
-### Tungkol sa Domain Syncing
+<!-- Hindi available ang screenshot: Form ng Magdagdag ng Domain na may field ng custom na pangalan ng domain at toggle ng pangunahing domain -->
 
-Ang Domain Syncing ay isang proseso kung saan idinadagdag ng Ultimate Multisite ang custom domain name sa iyong hosting account bilang add-on domain **para gumana ang domain mapping**.
+<!-- Hindi available ang screenshot: Hakbang ng kumpirmasyon ng Magdagdag ng Domain na nagti-trigger ng pag-verify ng DNS -->
 
-Awtomatikong nangyayari ang domain syncing kung ang iyong hosting provider ay may integration sa Ultimate Multisite domain mapping feature. Sa kasalukuyan, ang mga hosting provider na ito ay _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ at _Cpanel._
+Ang pag-click sa **Magdagdag ng Domain** ay magsisimula sa proseso ng pag-verify at pagkuha ng impormasyon ng DNS ng custom na domain.
 
-Kailangan mong i-activate ang integration na ito sa Ultimate Multisite settings sa ilalim ng **Integration** tab.
+### Tungkol sa Pag-sync ng Domain {#about-domain-syncing}
 
-![Integration tab sa Ultimate Multisite settings](/img/config/settings-domain-mapping.png)
+Ang Pag-sync ng Domain ay isang proseso kung saan idinaragdag ng Ultimate Multisite ang custom na pangalan ng domain sa iyong hosting account bilang add-on domain **upang gumana ang pagmamapa ng domain**.
 
-![Hosting provider integration settings para sa domain syncing](/img/config/settings-domain-mapping.png)
+Awtomatikong nangyayari ang pag-sync ng domain kung may integrasyon ang iyong hosting provider sa feature na pagmamapa ng domain ng Ultimate Multisite. Sa kasalukuyan, ang mga hosting provider na ito ay _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ at _Cpanel._
 
-_Tandaan na kung ang iyong hosting provider ay hindi isa sa mga provider na nabanggit sa itaas, **kailangan mong manu-manong i-sync o idagdag ang domain name** sa iyong hosting account._
+Kapag aktibo ang integrasyon ng host provider, maaari ring i-enqueue ng Ultimate Multisite ang gawain sa panig ng provider para sa paggawa ng DNS o subdomain para sa mga bagong likhang site. Kung walang integrasyong nakikinig para sa gawaing iyon, nilalaktawan ang background job upang maiwasan ang mga entry sa queue na walang ginagawa. Patuloy na tumatakbo ang mga pagsusuri sa DNS at SSL para sa mga naka-map na domain sa pamamagitan ng normal na proseso ng yugto ng domain.
+
+Kailangan mong i-activate ang integrasyong ito sa mga setting ng Ultimate Multisite sa ilalim ng tab na **Integrasyon**.
+
+![Tab ng mga Integrasyon sa mga setting ng Ultimate Multisite na nagpapakita ng mga hosting provider](/img/config/integrations-tab.png)
+
+<!-- Hindi available ang screenshot: Mga link ng Configuration ng hosting provider sa tab ng mga setting ng Integrations -->
+
+_Tandaan na kung ang iyong hosting provider ay hindi isa sa mga provider na nabanggit sa itaas, **kailangan mong manu-manong i-sync o idagdag ang pangalan ng domain** sa iyong hosting account._

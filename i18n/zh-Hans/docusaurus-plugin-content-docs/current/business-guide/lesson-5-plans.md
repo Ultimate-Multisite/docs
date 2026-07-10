@@ -3,15 +3,15 @@ title: 第五课：制定计划
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# 第 5 课：设计您的套餐
+# 第 5 课：设计您的套餐 {#lesson-5-designing-your-plans}
 
 您的套餐层级不仅仅是定价级别——它们反映了您的特定领域客户群体实际的运营方式。在本课中，您将设计出与不同阶段健身企业真实需求相匹配的产品层级。
 
-## 回顾进度
+## 回顾进度 {#where-we-left-off}
 
 FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain）。现在，我们需要创建决定客户可以访问哪些内容以及他们需要支付多少费用的套餐。
 
-## 从客户群体角度思考
+## 从客户群体角度思考 {#thinking-in-customer-segments}
 
 大多数人犯的错误是围绕技术功能（存储空间、带宽、页面数量）来设计套餐。您的特定领域客户群体不会从这些角度思考。健身房老板思考的是他们经营业务需要什么。
 
@@ -25,11 +25,11 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 
 您的套餐应该与这些群体挂钩，而不是与任意的功能组合挂钩。
 
-## 创建 FitSite 套餐
+## 创建 FitSite 套餐 {#creating-the-fitsite-plans}
 
 请导航到 **Ultimate Multisite > Products > Add Product** 为每个套餐设置。
 
-### 套餐 1：FitSite Starter -- $49/月
+### 套餐 1：FitSite Starter -- $49/月 {#plan-1-fitsite-starter----49month}
 
 **目标群体**：独立教练和小型工作室
 
@@ -59,7 +59,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 - 您选择的主题：强制激活 (Force Activate)
 - 所有其他主题：隐藏 (Hidden)
 
-### 套餐 2：FitSite Growth -- $99/月
+### 套餐 2：FitSite Growth -- $99/月 {#plan-2-fitsite-growth----99month}
 
 **目标群体**：成熟的单地点健身房
 
@@ -85,7 +85,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 - 套餐组 (Plan group)：FitSite Plans
 - 产品顺序 (Product order)：2
 
-### 套餐 3：FitSite Pro -- $199/月
+### 套餐 3：FitSite Pro -- $199/月 {#plan-3-fitsite-pro----199month}
 
 **目标群体**：多地点连锁健身房
 
@@ -109,7 +109,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 - 套餐组 (Plan group)：FitSite Plans
 - 产品顺序 (Product order)：3
 
-## 设置套餐组 (Plan Group)
+## 设置套餐组 (Plan Group) {#setting-up-the-plan-group}
 
 套餐组确保客户只能在 FitSite 套餐系列内部进行升级或降级。在每个套餐的 **Up & Downgrades** tab 上：
 
@@ -118,7 +118,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 
 这样就创建了一条清晰的升级路径：Starter → Growth → Pro。
 
-## 添加附加产品 (Order Bumps)
+## 添加附加产品 (Order Bumps) {#adding-order-bumps}
 
 附加产品是在结账时提供的增值产品。对于 FitSite，可以考虑：
 
@@ -128,7 +128,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 
 请在 Ultimate Multisite 中将这些产品创建为 **Package** 类型，并将其关联到相应的套餐。
 
-## 为什么这种结构有效
+## 为什么这种结构有效 {#why-this-structure-works}
 
 - **Starter** 降低了入门门槛——价格低廉，功能简单，能让教练快速上线
 - **Growth** 增加了健身房真正需要的功能——预约、图库、自定义域名
@@ -136,7 +136,7 @@ FitSite 已经准备了三个模板（Studio Essential、Gym Pro、Fitness Chain
 - **附加产品** 让客户可以在不复杂化核心套餐的情况下进行定制
 - **清晰的升级路径** 意味着客户会随着您的发展而成长，而不是流失
 
-## FitSite 网络现状
+## FitSite 网络现状 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## 本课构建的内容
+## 本课构建的内容 {#what-we-built-this-lesson}
 
 - **三个套餐层级**，对应真实的健身业务群体
 - 使用 Ultimate Multisite 的插件和模板控制实现的**功能门控 (Feature gating)**

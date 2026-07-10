@@ -3,17 +3,17 @@ title: Designriktning
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Designriktning
+# Designriktning {#design-direction}
 
 Steget **Designriktning** låter dig granska, förfina och slutföra din temas visuella design innan Theme Builder genererar det kompletta temat.
 
-## Översikt
+## Översikt {#overview}
 
 Efter att du har slutfört Discovery Interview presenterar Theme Builder din designriktning med **förhandsvisning för skrivbord och mobil**. Detta låter dig se exakt hur din design kommer att se ut på olika enheter innan du bestämmer dig för temat.
 
-## Komponenter i Designriktningen
+## Komponenter i Designriktningen {#design-direction-components}
 
-### 1. Färgpraktik (Color Palette)
+### 1. Färgpraktik (Color Palette) {#1-color-palette}
 
 Ditt temas färgschema, inklusive:
 
@@ -23,7 +23,7 @@ Ditt temas färgschema, inklusive:
 - **Neutrala färger (Neutral colors)** — grått och vitt för bakgrunder och text
 - **Textfärg (Text color)** — primär textfärg för läsbarhet
 
-### 2. Typografi
+### 2. Typografi {#2-typography}
 
 Typsnittsförslag för:
 
@@ -33,14 +33,14 @@ Typsnittsförslag för:
 - **Radavstånd (Line height)** — avståndet mellan raderna för bättre läsbarhet
 - **Tyngd (Font weights)** — fet, normal och ljus variation
 
-### 3. Layout och avstånd (Layout and Spacing)
+### 3. Layout och avstånd (Layout and Spacing) {#3-layout-and-spacing}
 
 - **Innehållsbredd (Container width)** — maximal bredd för innehållet
 - **Padding och marginaler (Padding and margins)** — avståndet runt element
 - **Rutnätssystem (Grid system)** — kolumnlayout för responsiv design
 - **Komponentavstånd (Component spacing)** — avståndet mellan UI-element
 
-### 4. Visuella element (Visual Elements)
+### 4. Visuella element (Visual Elements) {#4-visual-elements}
 
 - **Knappstilar (Button styles)** — design för primära, sekundära och tertiära knappar
 - **Kortdesign (Card designs)** — layouter för innehållsblock
@@ -48,9 +48,9 @@ Typsnittsförslag för:
 - **Gränser och skuggor (Borders and shadows)** — subtil visuell djupkänsla
 - **Hover-effekter (Hover effects)** — styling för interaktiva tillstånd
 
-## Förhandsvisning (Preview Rendering)
+## Förhandsvisning (Preview Rendering) {#preview-rendering}
 
-### Skrivbordsförhandsvisning (Desktop Preview)
+### Skrivbordsförhandsvisning (Desktop Preview) {#desktop-preview}
 
 Skrivbordsförhandsvisningen visar din design i full bredd (vanligtvis 1200 pixlar eller bredare):
 
@@ -59,7 +59,7 @@ Skrivbordsförhandsvisningen visar din design i full bredd (vanligtvis 1200 pixl
 - Stor typografi och avstånd
 - Alla visuella element i full storlek
 
-### Mobilförhandsvisning (Mobile Preview)
+### Mobilförhandsvisning (Mobile Preview) {#mobile-preview}
 
 Mobilförhandsvisningen visar din design i mobilbredd (vanligtvis 375 pixlar):
 
@@ -68,7 +68,7 @@ Mobilförhandsvisningen visar din design i mobilbredd (vanligtvis 375 pixlar):
 - Justerad typografi och avstånd
 - Beröringsvänliga knappstorlekar
 
-### Responsiva brytpunkter (Responsive Breakpoints)
+### Responsiva brytpunkter (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder renderar förhandsvisningar vid dessa brytpunkter:
 
@@ -79,9 +79,9 @@ Theme Builder renderar förhandsvisningar vid dessa brytpunkter:
 | **Skrivbord** | 1200px | Fullbreddsskärm |
 | **Stor skärm** | 1920px | Ultrawide-skärm |
 
-## Förfining av din design
+## Förfining av din design {#refining-your-design}
 
-### Gör justeringar
+### Gör justeringar {#making-adjustments}
 
 Du kan förfina din designriktning genom att:
 
@@ -91,7 +91,7 @@ Du kan förfina din designriktning genom att:
 4. **Uppdatera layout** — ändra innehållsbredd och rutnätkolumner
 5. **Anpassa element** — modifiera knappstilar, kortdesign etc.
 
-### Uppdateringar i förhandsvisningen
+### Uppdateringar i förhandsvisningen {#preview-updates}
 
 Ändringar speglas i realtid:
 
@@ -100,7 +100,7 @@ Du kan förfina din designriktning genom att:
 - Alla responsiva brytpunkter uppdateras
 - Du kan växla mellan förhandsvisningarna för att verifiera ändringarna
 
-### Jämförelsevyn (Comparison View)
+### Jämförelsevyn (Comparison View) {#comparison-view}
 
 Jämför din designriktning med:
 
@@ -108,7 +108,7 @@ Jämför din designriktning med:
 - **Konkurrenters design** — jämför med inspirationssajter
 - **Tidigare versioner** — återgå till tidigare designriktningar
 
-## Godkännande av designriktningen
+## Godkännande av designriktningen {#design-direction-approval}
 
 När du är nöjd med din design:
 
@@ -118,7 +118,7 @@ När du är nöjd med din design:
 4. **Bekräfta layouten** — kontrollera avstånd och justering
 5. **Godkänn designen** — gå vidare till tematgenerering
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Efter att du har godkänt din designriktning:
 
@@ -127,7 +127,7 @@ Efter att du har godkänt din designriktning:
 3. Du kan fortsätta anpassa med WordPress customizer
 4. Gå vidare till [Hospitality Menus](./hospitality-menus.md) eller andra funktioner
 
-## Bästa praxis
+## Bästa praxis {#best-practices}
 
 - **Testa på riktiga enheter** — använd faktiska telefoner och surfplattor om möjligt
 - **Kontrollera läsbarheten** — se till att texten är läsbar i alla storlekar
@@ -135,30 +135,30 @@ Efter att du har godkänt din designriktning:
 - **Tänk på prestanda** — optimera bilder och typsnitt för hastighet
 - **Planera för innehåll** — se till att layouten fungerar med ditt faktiska innehåll
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
-### Förhandsvisningen uppdateras inte
+### Förhandsvisningen uppdateras inte {#preview-not-updating}
 
 - Uppdatera sidan
 - Rensa webbläsarens cache
 - Testa en annan webbläsare
 - Kontrollera internetanslutningen
 
-### Färgerna ser annorlunda ut
+### Färgerna ser annorlunda ut {#colors-look-different}
 
 - Kontrollera skärmens färginställningar
 - Testa på olika enheter
 - Verifiera färgkontrasten med tillgänglighetsverktyg
 - Överväg färgbländningssimulatorer
 
-### Typografiska problem
+### Typografiska problem {#typography-issues}
 
 - Verifiera att typsnittsfimfilerna laddas
 - Kontrollera typsnittsstorleken vid olika brytpunkter
 - Testa med faktiskt innehåll
 - Överväg radlängden för läsbarhet
 
-## Relaterad dokumentation
+## Relaterad dokumentation {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — samla in designinformation
 - [Hospitality Menus](./hospitality-menus.md) — skapa strukturerade meny-sidor

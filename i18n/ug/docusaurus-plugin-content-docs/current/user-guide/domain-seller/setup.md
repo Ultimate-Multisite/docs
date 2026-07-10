@@ -3,21 +3,21 @@ title: Установка ва провайдер конфигурация
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Satıcı: Kurulum ve Sağlayıcı Yapılandırması
+# Domain Satıcı: Kurulum ve Sağlayıcı Yapılandırması {#domain-seller-setup-and-provider-configuration}
 
 Domain Seller eklentisi, sizi her bir gerekli adımda yönlendiren rehberli bir kurulum sihirbazıyla birlikte gelir. Bu sayfa sihirbaz akışını ve sonrasında sağlayıcıları nasıl yapılandıracağınızı veya yeniden yapılandıracağınızı anlatıyor.
 
-## Шартlar (Requirements)
+## Шартlar (Requirements) {#requirements}
 
 - **Multisite Ultimate** versiyasi 2.4.12 və ya daha yüksək, şəbəkə aktiv edilmiş olmalı
 - **PHP** 7.4+
 - Ən azı bir dəstəklənən qeydiyyatçının API kredensialarına ehtiyac var
 
-## İlk qurulum wizard'ı (First-run setup wizard)
+## İlk qurulum wizard'ı (First-run setup wizard) {#first-run-setup-wizard}
 
 الاول مرة плагиныни танып-тактик (network-activate) етсе, kurulum wizard awtomatiki ishga tushadi. Shuningdek, siz har qanday vaqt **Network Admin › Ultimate Multisite › Domain Seller Setup** oridan foydalanishingiz mumkin.
 
-### 1-qadam — Provayderni tanlang
+### 1-qadam — Provayderni tanlang {#step-1--choose-a-provider}
 
 Сиз кабул etmek isteyen kayıtчини танлаңыз. Қолдаサポート этилган вариантлар:
 
@@ -34,7 +34,7 @@ Domain Seller eklentisi, sizi her bir gerekli adımda yönlendiren rehberli bir 
 | NameSilo | Йўқ | Йўқ |
 | Enom | Ҳа | Йўқ |
 
-### 2-Қадам — Махсулот (credentials) киритинг
+### 2-Қадам — Махсулот (credentials) киритинг {#step-2--enter-credentials}
 
 Ҳар бир провайдернинг маълумот киритиш майдонлари турли хил бўлади:
 
@@ -58,17 +58,17 @@ Domain Seller eklentisi, sizi her bir gerekli adımda yönlendiren rehberli bir 
 
 موجود болarsa، canlıga geçmadan önce sağlayıcının тест muhiti ilə sinovdan geçmek üçün **Sandbox modu**nu tek tasekkür edin.
 
-### 3-чу қадам — Байланышни синавдан өткізу
+### 3-чу қадам — Байланышни синавдан өткізу {#step-3--test-the-connection}
 
 **Test Connection** (Bağlantıyı Test Et) düğmesine tıklayın. Sihirbaz, kimlik bilgilerini ve bağlantıyı kontrol etmek için hafif bir API çağrısı gönderir. Devam etmeden önce herhangi bir kimlik bilgisi sorununu düzeltin.
 
-### 4-Шаг — TLD'leri İçe Aktarma (Importing TLDs)
+### 4-Шаг — TLD'leri İçe Aktarma (Importing TLDs) {#step-4--import-tlds}
 
 Tüm mevcut TLD'leri ve toptan fiyatlandırmayı bağlı sağlayıcıdan çekmek için **Import TLDs** butonuna tıklayın. Bu, alan adı ürünlerinde kullanılan TLD listesini doldurur. Büyük TLD kataloglarına sahip sağlayıcılar için bu içe aktarma 30-60 saniye sürebilir.
 
 Domain TLD'leri de her gün bir kez zamanlanmış bir cron işi aracılığıyla otomatik olarak yeniden senkronize edilir.
 
-### 5-nji Qadam — Domen mahsulunu yaratmak
+### 5-nji Qadam — Domen mahsulunu yaratmak {#step-5--create-a-domain-product}
 
 Wizard (سوا) ئۆزگەندە، 10% qeyratla (markup) bilen standart bir umumiy domen mahsulotu yaratadi. Siz bu mahsulotni derhal tahrir qila bilersiňiz ýa-da **Ultimate Multisite › Products** bo'lymidan o'tkazib, mahsulotlarni qo'lda yarata bilersiňiz.
 
@@ -76,7 +76,7 @@ Wizard (سوا) ئۆزگەندە، 10% qeyratla (markup) bilen standart bir umum
 
 ---
 
-## провайдери кайра конфигурациялоо
+## провайдери кайра конфигурациялоо {#reconfiguring-a-provider}
 
 Провайдерди кантип кайра настройлаш керектигине көнгөчүмүн төмөнкү маалыматтарда таба аласыз.
 
@@ -94,17 +94,17 @@ So'zlashlar sahifasida quyidagilar mavjud:
 
 * **Providers'ı yapılandırma** — Bu, sağlayıcıları eklemek veya yeniden yapılandırmak için Entegrasyon Sihirbazını açar.
 
-### İkinci bir sağlayıcı ekleme
+### İkinci bir sağlayıcı ekleme {#adding-a-second-provider}
 
 **Providers'ı yapılandırın** butonuna tıklayın ve yeni kayıt kuruluşu (registrar) için sihirbazı tekrar çalıştırın. Aynı anda birden fazla sağlayıcıyı yapılandırabilirsiniz. Her alan adı ürününü belirli bir sağlayıcıya atayabilir veya varsayılan olarak bırakabilirsiniz.
 
-### TLD'leri manuel senkronize etme
+### TLD'leri manuel senkronize etme {#syncing-tlds-manually}
 
 تنظیمات səhifesinde, son narxalar (pricing) almak üçün konfiqurasiya edilmiş hər hansı bir sağlayıcı yanında **Sync TLDs** düyməsini barmog'lashing. Bu, bir sağlayıcı tolmoshalar narxalarni yangilasa yoki yangi TLDlar qo'shganda juda foydali bo'ladi.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Ҳар бир провайдер ўз лог каналига ёзади. Логларни **Network Admin › Ultimate Multisite › Logs** бўйича кўриш мумкин:
 
@@ -124,7 +124,7 @@ So'zlashlar sahifasida quyidagilar mavjud:
 | `domain-seller-namesilo` | NameSilo API'dan ham raw faaliyotlar |
 | `domain-seller-enom` | Enom API'dan ham raw faaliyotlar |
 
-## Sağlayıcı yetenekleri hakkındaki notlar
+## Sağlayıcı yetenekleri hakkındaki notlar {#provider-capability-notes}
 
 Ҳар бир регистратор API'си бир хил операцияларни нишон дода олмайди. Аддон (addon) дастлабки қабул қилинмаган операцияларни тинч тинч ва нодеда чекиб юбориш ўрнига, администратор учун равшан хатолар билан кўрсатади.
 

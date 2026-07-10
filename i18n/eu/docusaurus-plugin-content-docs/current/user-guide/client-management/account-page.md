@@ -3,7 +3,7 @@ title: Kontribuari kontua
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Itzako Klientaren Kontua Pagelua (v2)
+# Itzako Klientaren Kontua Pagelua (v2) {#your-clients-account-page-v2}
 
 _**GARRAPEN ESENTZIALA: Hau artikulu Ultimate Multisite bertsio 2.x-era referentzia egiten du.**_
 
@@ -11,7 +11,7 @@ Eskaintarileak irralditzen dutenean plan bat networkan ematen dituztenak, kabiz 
 
 Hau tutorial-an, bizitzeko kontuaren pagelua bidez gurekin eginduko da eta zerler irikusten duzu eta egin dezakezu horrek handiagoa.
 
-## Kontua Pagelua
+## Kontua Pagelua {#the-account-page}
 
 Kontua pagelua, customer-en dashboard-ean **Account** (Kontua) funtziala klikizenean erabil da.
 
@@ -27,7 +27,7 @@ Hau klik egin ondoren, bere membership-aren, billing address-aren, invoice-ak, d
 
 Erakunde bat edo beste plan batean membership aldatu dezakezu, edo sizkaintzen duten beste package edo serbizio bat eritzu dezakezu. Harri lehen lehen parte guztietan erabilizten dugu.
 
-### Zerbitzuaren Membentasun Kontrolua:
+### Zerbitzuaren Membentasun Kontrolua: {#your-membership-overview}
 
 Zerbitzariak website-arenak ondoren dagoen lehen blokoan, horiek erabiliko plan eta zerbitzu/paketak zehazten duenean eritzeko da. Blokoan membentasunaren numeroa, beregunean iragitzitako gordoia, plan eta zerbitzua/paketak zer kostatzen duen eta membruntasunari buruzko iragitzak zerbait egin daiko datu-erregistroa ere erakusten da. Membentasunaren **Aktibo** (Active), **Ezdatuta** (Expired) edo **Cancelatu** (Canceled) dagoela ere ikusi joateke.
 
@@ -43,7 +43,7 @@ Aurrera, zerbitzariak orainko membruntasunarekin paketak edo zerbitzu hauek erab
 
 Ez dut ezartu behar: coupon kodeak membruntasunaren aldaketa lapurialdean ez dira gehitu dezake. Zerbitzariak lehen membruntasun bokoan coupon koda erabiltu zuela, koda honekin ere aplikatzen da.
 
-### Iragitzaren Adresaren Aldatzea:
+### Iragitzaren Adresaren Aldatzea: {#updating-the-billing-address}
 
 Kontu lapean, irkiastulari ere eskaintzen dituzte dira billing addressa aldatzeko. Berria, _Billing Address_ (Irkiastularen Adresa) erabilizik **Update** (Aldatu) duen klik egin behar dute.
 
@@ -53,7 +53,7 @@ Berria finestra bat eratu da irkiastularia. Horrek egin behar duena da aderazkia
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Site Templatea Aldatzea:
+### Site Templatea Aldatzea: {#changing-the-site-template}
 
 Irkiastulari site templateak aldatzeko aukera emateko, **Ultimate Multisite > Settings > Sites** (Konfigurazioa > Siteak) funtziokoan aurkitu behar duzu eta **Allow Template Switching** (Template-ak Aldatzea Eskaintzea) opsioa onartu behar duzu.
 
@@ -81,7 +81,7 @@ Konformatu onartu eta **Process Switch** (Aldatzea procesatu) klik egin ondoren,
 
 Kliuntzak ere panel hauetik **Reset current template** (Ordaurean dagoen sailkioa ordaindokoa) erabili ditzak duzun bitartean ordaurean dagoen sailkioa itxura dezaten dute. Beste sailkioa aldatzeko bidez, sailkioa ordaindokoa daiteke web-kontuentu onartzea, baina kliuntzak ordaurean dagoen Sailkioa ordaindokoa jakin duzun bitartean ere konformatu behar dute.
 
-### Custom Domainak jodezpena:
+### Custom Domainak jodezpena: {#adding-custom-domains}
 
 Zure kliuntzak ere hori planaren bitartean web-kontuaren lapenbearekin custom domain bat jodezpen aukera izango da. Zure kliuntzak custom domainak erabil dezaten bitartean, **Ultimate Multisite > Settings >** **Domain Mapping** (Jodezpena domainak) funtziokoan jarraitu.
 
@@ -115,7 +115,7 @@ Hau da domain mappingaren allakidetza lapuen guztia:
 
 **Add Domain** (Domainu gehitu) klikizten ondoren, domain hau kosturietaren account-ean gehituko da. Horrek egin behar duena hori da, beraien domain registrarren DNS recordak udatu behar dute custom domain hauarekin.
 
-### Paslora Aldatzea:
+### Paslora Aldatzea: {#changing-password}
 
 Account dashboardan, kosturiet ez dute **Change Password** (Paslora aldatu) klikizten funtuz paslora aldatzea ereiteke.
 
@@ -125,7 +125,7 @@ Hau da irkurri eta berria finestra bat erakusten da, non customer-ek password-a 
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Peligrosko zona:
+### Peligrosko zona: {#danger-zone}
 
 Menduak iki bi opszio hauek ere erakusten duena **Peligrosko zohain** (Danger Zone) partean: **Sitea borratzea** (Delete Site) eta **Kontua borratzea** (Delete Account). Horrek gehiago Peligrosko zohain partean dago, koska hori bi akzio ez dira itxarri nahi duten. Hau iki bi akzioak ez dira itxarri nahi duten. Hau customer-ek bere websteina edo kontua borratzen duenean, ez dute itxarri nahi duten.
 

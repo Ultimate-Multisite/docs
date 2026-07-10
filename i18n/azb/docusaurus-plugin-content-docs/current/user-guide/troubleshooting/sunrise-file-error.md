@@ -3,7 +3,7 @@ title: Sol-Aura Fayl Khafa
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise Dosyasının Kurulum Hatası
+# Sunrise Dosyasının Kurulum Hatası {#error-installing-the-sunrise-file}
 
 `sunrise.php` dosyası, WordPress'in kendisini başlatırken (bootstrapping) baktığı özel bir dosyadır. WordPress'in bu dosyayı algılayabilmesi için, **wp-content klasörü** içinde bulunması gerekir.
 

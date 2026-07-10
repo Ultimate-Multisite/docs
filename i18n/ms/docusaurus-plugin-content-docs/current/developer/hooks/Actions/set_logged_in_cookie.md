@@ -4,11 +4,11 @@ title: Tindakan - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# Tindakan: set_logged_in_cookie
+# Tindakan: set_logged_in_cookie {#action-setloggedincookie}
 
 Berjalan serta-merta sebelum *cookie* pengesahan log masuk ditetapkan.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Jenis | Penerangan |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Berjalan serta-merta sebelum *cookie* pengesahan log masuk ditetapkan.
 | $scheme | `string` | Skema pengesahan. Lalat 'logged_in'. |
 | $token | `string` | Token sesi pengguna untuk digunakan bagi *cookie* ini. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.6.0
 - 4.9.0: Parameter <code>$token</code> telah ditambah.
-### Sumber
+### Sumber {#source}
 
 Didefinisikan dalam [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) pada baris 141

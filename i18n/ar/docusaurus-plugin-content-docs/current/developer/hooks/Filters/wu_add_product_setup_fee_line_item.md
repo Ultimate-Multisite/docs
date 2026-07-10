@@ -8,7 +8,7 @@ _i18n_hash: 7175266054e611752e49e762b103e858
 
 السماح للمطورين بإجراء تغييرات على عنصر رسوم التثبيت.
 
-## المعلمات
+## المعلمات {#filter-wuaddproductsetupfeelineitem}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 7175266054e611752e49e762b103e858
 | $product | `\WP_Ultimo\Models\Product` | المنتج المتعلق برسوم التثبيت. |
 | $cart | `\WP_Ultimo\Checkout\Cart` | كائن السلة. |
 
-### منذ
+### منذ {#parameters}
 
 - 2.1
 
-### المصدر
+### المصدر {#since}
 
 تم تعريفه في [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1790) في السطر 1790
 
 
-## العائدات
+## العائدات {#source}

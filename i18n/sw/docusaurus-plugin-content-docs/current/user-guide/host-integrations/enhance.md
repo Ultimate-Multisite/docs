@@ -3,33 +3,33 @@ title: Boresha Muunganisho wa Paneli ya Kudhibiti
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kuunganisha na Enhance Control Panel
+# Kuunganisha na Enhance Control Panel {#enhance-control-panel-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 Enhance ni paneli ya kisasa ya kudhibiti ambayo inatoa uwezo wa kiotomatiki wa kusimamia na kudhibiti seva ya wavuti. Muunganiko huu unawezesha ulandanishaji wa kiotomatiki wa kikoa na usimamizi wa cheti cha SSL kati ya Ultimate Multisite na Enhance Control Panel.
 
 **Majadiliano Yanayohusiana:** Tazama [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) kwa vidokezo vya jamii na maelezo zaidi.
 
-## Vipengele
+## Vipengele {#features}
 - Ulandanishaji wa kiotomatiki wa kikoa wakati kikoa kinapounganishwa kwenye Ultimate Multisite
 - Utoaji wa kiotomatiki wa cheti cha SSL kupitia LetsEncrypt wakati DNS inaposuluhishwa
 - Msaada wa subdomain kwa mitandao inayofanya kazi katika hali ya subdomain
 - Kuondoa kikoa wakati ramani zinapofutwa
 - Upimaji wa muunganisho ili kuthibitisha vithibitisho vya API
 
-## Mahitaji
+## Mahitaji {#requirements}
 
-### Mahitaji ya Mfumo
+### Mahitaji ya Mfumo {#system-requirements}
 - Enhance Control Panel imewekwa na inaweza kufikiwa
 - Usakinishaji wa WordPress Multisite unaohifadhiwa au kuunganishwa na seva ya Enhance
 - Seva ya wavuti ya Apache (Enhance kwa sasa inasaidia mipangilio ya Apache; LiteSpeed Enterprise inapatikana kwa bei nafuu)
 
-### Ufikiaji wa API
+### Ufikiaji wa API {#api-access}
 Lazima uwe na ufikiaji wa msimamizi kwenye Enhance Control Panel ili kuunda tokeni za API.
 
-## Kupata Vithibitisho Vyako vya API
+## Kupata Vithibitisho Vyako vya API {#getting-your-api-credentials}
 
-### 1. Unda Tokeni ya API
+### 1. Unda Tokeni ya API {#1-create-an-api-token}
 
 1. Ingia kwenye Enhance Control Panel yako kama msimamizi
 2. Bofya **Settings** kwenye menyu ya urambazaji
@@ -44,7 +44,7 @@ Lazima uwe na ufikiaji wa msimamizi kwenye Enhance Control Panel ili kuunda toke
 
 Baada ya kuunda, **Access Token** yako na **Organization ID** yako zitaonyeshwa. **Zihifadhi mara moja** kwani tokeni itaonyeshwa mara moja tu.
 
-### 2. Pata Organization ID Yako
+### 2. Pata Organization ID Yako {#2-get-your-organization-id}
 
 Organization ID inaonyeshwa kwenye ukurasa wa Access Tokens katika sanduku la habari la bluu lililoandikwa "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Unaweza pia kupata Organization ID ya mteja kwa:
 2. Bofya **Manage customer** kwa mteja husika
 3. Angalia URL - Organization ID ni herufi na nambari baada ya `/customers/`
 
-### 3. Pata Server ID Yako
+### 3. Pata Server ID Yako {#3-get-your-server-id}
 
 Ili kupata Server ID yako (inahitajika kwa shughuli za kikoa):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID inafuata muundo wa UUID: `00000000-0000-0000-0000-000000000000`
 
-### 4. Pata URL Yako ya API
+### 4. Pata URL Yako ya API {#4-get-your-api-url}
 
 URL yako ya API ni URL ya Enhance Control Panel yako ikiwa na `/api/` imeongezwa:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Kutumia kikoa pekee bila `/api/`
 - Kutumia HTTP badala ya HTTPS (HTTPS inahitajika kwa usalama)
 
-## Usanidi
+## Usanidi {#configuration}
 
-### Viunga Vinavyohitajika
+### Viunga Vinavyohitajika {#required-constants}
 
 Ongeza viunga vifuatavyo kwenye faili yako ya `wp-config.php`:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Usanidi kupitia Mchawi wa Muunganiko
+### Usanidi kupitia Mchawi wa Muunganiko {#setup-via-integration-wizard}
 
 1. Katika paneli ya msimamizi ya WordPress, nenda **Ultimate Multisite** > **Settings**
 2. Nenda kwenye kichupo cha **Integrations**
@@ -112,17 +112,17 @@ Unaweza kuchagua:
 - Kuruhusu mchawi kuingiza viunga kwenye faili yako ya `wp-config.php` kiotomatiki
 - Nakili fasili za viunga na uziongeze mwenyewe
 
-## Usanidi wa Ziada wa WordPress
+## Usanidi wa Ziada wa WordPress {#additional-wordpress-configuration}
 
 Kulingana na maoni ya jamii ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), huenda ukahitaji kusanidi mipangilio hii ya ziada:
 
-### Usanidi wa .htaccess
+### Usanidi wa .htaccess {#htaccess-configuration}
 
 Ikiwa unapata matatizo na ramani ya kikoa:
 1. Futa faili ya awali ya `.htaccess` ya Enhance
 2. Ibadilishe na faili ya kawaida ya `.htaccess` ya WordPress Multisite
 
-### Viunga vya Cookie
+### Viunga vya Cookie {#cookie-constants}
 
 Ongeza viunga hivi kwenye `wp-config.php` kuhakikisha usimamizi sahihi wa cookie katika vikoa vilivyounganishwa:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Wakati Kikoa Kinapounganishwa
+### Wakati Kikoa Kinapounganishwa {#when-a-domain-is-mapped}
 
 1. Mtumiaji anaunganisha kikoa maalum katika Ultimate Multisite (au tovuti mpya inaundwa katika hali ya subdomain)
 2. Muunganiko unatuma ombi la POST kwa API ya Enhance: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Wakati DNS inaposuluhishwa kwa seva yako, Enhance inatoa kiotomatiki cheti cha SSL kupitia LetsEncrypt
 5. Kikoa kinakuwa hai na HTTPS
 
-### Wakati Kikoa Kinapoondolewa
+### Wakati Kikoa Kinapoondolewa {#when-a-domain-is-removed}
 
 1. Ramani ya kikoa inafutwa katika Ultimate Multisite
 2. Muunganiko unahoji Enhance kupata ID ya kikoa
 3. Ombi la DELETE linatumwa kwa: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance inaondoa kikoa kutoka kwenye usanidi wa seva yako
 
-### Ukaguzi wa DNS na SSL
+### Ukaguzi wa DNS na SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
 - Unaweza kusanidi muda wa ukaguzi katika **Domain Mapping Settings** (chaguo-msingi: sekunde 300/dakika 5)
@@ -157,9 +157,9 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
 - Uhalali wa cheti cha SSL unakaguliwa kiotomatiki
 - Enhance inashughulikia utoaji wa SSL kiotomatiki, kwa hivyo usanidi wa mikono wa SSL hauhitajiki
 
-## Kuthibitisha Usanidi
+## Kuthibitisha Usanidi {#verifying-setup}
 
-### Jaribu Muunganisho
+### Jaribu Muunganisho {#test-the-connection}
 
 1. Katika Mchawi wa Muunganiko, tumia hatua ya **Test Connection**
 2. Plugin itajaribu kuorodhesha vikoa kwenye seva yako
@@ -169,7 +169,7 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
    - Server ID ni halali
    - Ruhusa zimewekwa vizuri
 
-### Baada ya Kuunganisha Kikoa
+### Baada ya Kuunganisha Kikoa {#after-mapping-a-domain}
 
 1. Unganisha kikoa la majaribio katika Ultimate Multisite
 2. Angalia kumbukumbu za Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
    - Kikoa kipya kinapaswa kuonekana kwenye orodha
 4. Mara DNS inaposambazwa, thibitisha SSL imetolewa kiotomatiki
 
-## Utatuzi wa Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 
 **Hitilafu: "Failed to connect to Enhance API"**
 - Thibitisha `WU_ENHANCE_API_URL` inajumuisha `/api/` mwishoni
@@ -198,7 +198,7 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
 - Hakikisha Server ID iko katika muundo halali wa UUID
 - Thibitisha seva ipo katika paneli yako ya Enhance
 
-### Kikoa Hakijaongezwa
+### Kikoa Hakijaongezwa {#domain-not-added}
 
 **Angalia kumbukumbu:**
 1. Nenda **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
 - Ruhusa za API hazitoshi (hakikisha tokeni ina jukumu la System Administrator)
 - Server ID hailingani na seva halisi katika Enhance
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 
 **SSL haijatolewa:**
 - Thibitisha DNS inaelekeza kwa anwani ya IP ya seva yako
@@ -225,7 +225,7 @@ Ultimate Multisite inajumuisha ukaguzi wa ndani wa DNS na SSL:
 2. Tafuta kikoa chako na angalia hali yake ya SSL
 3. Unaweza kuchochea utoaji wa SSL kwa mikono ikiwa inahitajika
 
-### Muda wa Ukaguzi wa DNS
+### Muda wa Ukaguzi wa DNS {#dns-check-interval}
 
 Ikiwa vikoa au vyeti vya SSL vinachukua muda mrefu kuamilishwa:
 1. Nenda **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Ikiwa vikoa au vyeti vya SSL vinachukua muda mrefu kuamilishwa:
 3. Rekebisha kutoka chaguo-msingi la sekunde 300 hadi thamani ndogo (kiwango cha chini: sekunde 10)
 4. **Kumbuka:** Vipindi vifupi vinamaanisha ukaguzi wa mara kwa mara lakini mzigo mkubwa wa seva
 
-### Hitilafu za Uthibitishaji
+### Hitilafu za Uthibitishaji {#authentication-errors}
 
 **Hitilafu za HTTP 401/403:**
 - Tengeneza upya tokeni yako ya API katika Enhance
@@ -241,7 +241,7 @@ Ikiwa vikoa au vyeti vya SSL vinachukua muda mrefu kuamilishwa:
 - Angalia kwamba tokeni haijaisha muda
 - Hakikisha unatumia Organization ID sahihi (ingawa kawaida haihitajiki kwenye URL)
 
-### Uchambuzi wa Kumbukumbu
+### Uchambuzi wa Kumbukumbu {#log-analysis}
 
 Wezesha kumbukumbu za kina:
 ```php
@@ -255,15 +255,15 @@ Kisha angalia kumbukumbu kwenye:
 - Kumbukumbu ya utatuzi wa WordPress: `wp-content/debug.log`
 - Kumbukumbu za paneli ya Enhance: Zinapatikana katika kiolesura cha msimamizi cha Enhance
 
-## Rejea ya API
+## Rejea ya API {#api-reference}
 
-### Uthibitishaji
+### Uthibitishaji {#authentication}
 Maombi yote ya API yanatumia uthibitishaji wa tokeni ya Bearer:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Sehemu za Mwisho Zinazotumika Mara kwa Mara
+### Sehemu za Mwisho Zinazotumika Mara kwa Mara {#common-endpoints-used}
 
 **Orodhesha Seva:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Nyaraka Kamili za API
+### Nyaraka Kamili za API {#full-api-documentation}
 Nyaraka kamili za API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Mazoea Bora
+## Mazoea Bora {#best-practices}
 
-### Usalama
+### Usalama {#security}
 - **Kamwe usitume tokeni za API kwenye udhibiti wa toleo**
 - Hifadhi tokeni katika `wp-config.php` ambayo inapaswa kutengwa na Git
 - Tumia tokeni zenye ruhusa zinazofaa (System Administrator kwa muunganiko kamili)
 - Weka tarehe za kuisha kwa tokeni kwa mazingira ya uzalishaji
 - Badilisha tokeni mara kwa mara
 
-### Utendaji
+### Utendaji {#performance}
 - Tumia muda wa chaguo-msingi wa ukaguzi wa DNS (sekunde 300) ili kuepuka wito kupita kiasi wa API
 - Fuatilia rasilimali za seva ya Enhance unapoendesha shughuli kubwa za kikoa
 - Fikiria kupanga kuongeza kikoa ikiwa unaunganisha vikoa vingi kwa wakati mmoja
 
-### Ufuatiliaji
+### Ufuatiliaji {#monitoring}
 - Angalia mara kwa mara kumbukumbu za Ultimate Multisite kwa hitilafu za muunganiko
 - Weka ufuatiliaji kwa kuongeza vikoa vilivyoshindwa
 - Thibitisha vyeti vya SSL vinatoa kwa usahihi
 - Fuatilia uwezo wa seva ya Enhance na vikomo vya kikoa
 
-## Rasilimali za Ziada
+## Rasilimali za Ziada {#additional-resources}
 
 - **Nyaraka Rasmi za Enhance:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Nyaraka za API za Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Nyaraka kamili za API: [https://apidocs.enhance.com](https://apidocs.enhance.com
 - **Majadiliano ya GitHub:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Mwongozo wa Ramani ya Kikoa wa Ultimate Multisite:** Tazama ukurasa wa wiki "How to Configure Domain Mapping v2"
 
-## Msaada
+## Msaada {#support}
 
 Ikiwa unakutana na matatizo:
 1. Angalia sehemu ya Utatuzi wa Matatizo hapo juu
@@ -326,7 +326,7 @@ Ikiwa unakutana na matatizo:
 4. Wasiliana na msaada wa Enhance kwa matatizo maalum ya paneli
 5. Unda majadiliano mapya na kumbukumbu za kina za hitilafu kwa msaada wa jamii
 
-## Vidokezo
+## Vidokezo {#notes}
 
 - Muunganiko huu unashughulikia majina mbadala ya kikoa pekee; Enhance inasimamia SSL kiotomatiki
 - Muunganiko unasaidia ramani za kikoa maalum na tovuti zinazotegemea subdomain

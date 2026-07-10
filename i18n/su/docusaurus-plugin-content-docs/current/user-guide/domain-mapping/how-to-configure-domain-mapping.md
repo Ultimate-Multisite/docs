@@ -1,136 +1,138 @@
 ---
-title: Kumaha Ngatur Pemetaan Domain
+title: Kumaha Ngonpigurasikeun Pemetaan Domain
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Kumaha Konfigurasi Pemetaan Domain (v2)
+# Kumaha Ngonpigurasikeun Pemetaan Domain (v2) {#how-to-configure-domain-mapping-v2}
 
-_**CATATAN PENTING: Artikel ieu merujuk kana Ultimate Multisite versi 2.x.**_
+_**CATETAN PENTING: Artikel ieu ngarujuk kana Ultimate Multisite vérsi 2.x.**_
 
-Salah sahiji fitur paling ampuh tina jaringan premium téh nyaéta kamampuhan pikeun nawarkeun ka pelanggan urang kasempetan ngaitkeun domain tingkat atas (top-level domain) ka situs maranéhna. Sabab naon deui, mana anu leuwih profesional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) atawa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Éta sababna Ultimate Multisite nawarkeun fitur éta langsung aya dina sistem, teu perlu ngagunake plugin pihak katilu.
+Salah sahiji fitur pangkuatna tina jaringan premium nyaéta kamampuhan pikeun nawarkeun ka klién urang kasempetan pikeun ngaitkeun domain tingkat luhur kana situs maranéhna. Barina ogé, mana nu katingalina leuwih profésional: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) atawa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Ku sabab éta Ultimate Multisite nawarkeun fitur éta sacara bawaan, tanpa kudu ngagunakeun plugin pihak katilu.
 
-## Naon éta pemetaan domain?
+## Naon ari pemetaan domain? {#whats-domain-mapping}
 
-Saperti ngaranana, pemetaan domain téh nyaéta kamampuhan anu ditawarkeun ku Ultimate Multisite pikeun nampi paménta domain kustom jeung mapan paménta éta ka situs anu bersesuaian dina jaringan kalayan domain nu dipasang.
+Sakumaha ngaranna, pemetaan domain nyaéta kamampuhan anu ditawarkeun ku Ultimate Multisite pikeun narima pamundut pikeun domain custom sarta ngapetakeun pamundut éta ka situs anu saluyu dina jaringan anu geus dikaitkeun jeung domain husus éta.
 
-### Kumaha cara ngatur pemetaan domain dina Jaringan Ultimate Multisite anjeun
+### Kumaha nyetél pemetaan domain dina Jaringan Ultimate Multisite anjeun {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Pemetaan domain butuh sababaraha pengaturan ti pihak anjeun sangkan bisa lumangsung. Untungna, Ultimate Multisite ngotomatiskeun gawé anu hésé pikeun anjeun sangkan gampang nyukake syarat-syaratna.
+Pemetaan domain merlukeun sababaraha setélan ti pihak anjeun sangkan jalan. Untungna, Ultimate Multisite ngaotomatiskeun pagawéan beurat pikeun anjeun jadi anjeun bisa gampang nyumponan saratna.
 
-Dina waktu instalasi Ultimate Multisite, wizard bakal otomatis nyalin jeur nginstal **sunrise.php** ka folder anu ditunjuk. **Wizard téh moal ngidinan anjeun maju sakali langkah ieu réngsé.**
+Salila pamasangan Ultimate Multisite, wizard bakal otomatis nyalin jeung masang **sunrise.php** kana polder anu ditangtukeun. **Wizard moal ngidinan anjeun neruskeun nepi ka léngkah ieu réngsé**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Ieu hartina, saatos wizard instalasi Ultimate Multisite réngsé ngatur jaringan anjeun, anjeun bisa langsung mulai mapan domain kustom.
+Ieu hartina sanggeus wizard pamasangan Ultimate Multisite réngsé nyetél jaringan anjeun, anjeun bisa langsung ngamimitian ngapetakeun domain custom.
 
-Catatan yén pemetaan domain dina Ultimate Multisite téh teu wajib. Anjeun boga pilihan pikeun ngagunake fungsi pemetaan domain asli WordPress Multisite atawa solusi pemetaan domain séjénna.
+Catet yén pemetaan domain dina Ultimate Multisite henteu wajib. Anjeun boga pilihan pikeun ngagunakeun fungsi pemetaan domain asli WordPress Multisite atawa solusi pemetaan domain séjénna.
 
-Lamun anjeun peryogi ngalaksanake (disable) pemetaan domain Ultimate Multisite pikeun ngajadike tempat pikeun solusi pemetaan domain séjén, anjeun bisa matike fitur ieu di bawah **Ultimate Multisite > Settings > Domain Mapping**.
+Lamun anjeun perlu mareuman pemetaan domain Ultimate Multisite pikeun méré jalan ka solusi pemetaan domain séjén, anjeun bisa mareuman fitur ieu dina **Ultimate Multisite > Setélan > Pemetaan Domain**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Kaca setélan Pemetaan Domain anu némbongkeun alihan admin, pesen pemetaan, jeung pilihan DNS](/img/config/domain-mapping-settings.png)
 
-Di handap pilihan ieu, anjeun ogé bisa ningali pilihan **Force Admin Redirect**. Pilihan ieu ngajadikeun anjeun bisa ngontrol upami pelanggan bakal bisa ngakses dashboard admin maranéhna di domain kustom jeung subdomain atawa ngan ukur di salah sahiji.
+Pas di handapeun pilihan ieu, anjeun ogé bisa ningali pilihan **Paksakeun Alihan Admin**. Pilihan ieu ngamungkinkeun anjeun ngadalikeun naha palanggan anjeun bakal bisa ngaksés Dashboard admin maranéhna boh dina domain custom jeung subdomain maranéhna, atawa ngan dina salah sahijina.
 
-Lamun anjeun milih **Force redirect to mapped domain**, pelanggan anjeun ngan bakal bisa ngakses dashboard admin maranéhna di domain kustomna.
+Lamun anjeun milih **Paksakeun alihkeun ka domain anu dipetakeun** , palanggan anjeun ngan bakal bisa ngaksés Dashboard admin maranéhna dina domain custom maranéhna.
 
-Pilihan **Force redirect to** **network domain** bakal ngalakukeun hal kebalikan - pelanggan anjeun ngan diidinakeun ngakses dashboard maranéhna di subdomain, sanajan keur nyobian *sign in* di domain kustomna.
+Pilihan **Paksakeun alihkeun ka** **domain jaringan** bakal ngalakukeun sabalikna - palanggan anjeun ngan bakal diidinan ngaksés Dashboard maranéhna dina subdomain maranéhna, sanajan nyobian asup dina domain custom maranéhna.
 
-Jeung pilihan **Allow access to the admin by both mapped domain domain and network domain** ngajadikeun maranéhna bisa ngakses dashboard admin maranéhna di subdomain jeung domain kustomna.
+Jeung pilihan **Idinan aksés ka admin ku domain anu dipetakeun jeung domain jaringan** ngamungkinkeun maranéhna ngaksés Dashboard admin maranéhna boh dina subdomain boh dina domain custom.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Dropdown Alihan Admin dimekarkeun anu némbongkeun tilu pilihan alihan](/img/config/domain-mapping-redirect-options.png)
 
-Ada dua cara pikeun memetakan domain kustom. Kahiji nya ku cara memetakan nama domain ti dashboard admin jaringan anjeun salaku super admin jeung kahiji deui ngaliwatan dashboard admin subsite di bawah halaman *account*.
+Aya dua cara pikeun ngapetakeun domain custom. Anu kahiji nyaéta ku ngapetakeun ngaran domain tina Dashboard admin jaringan anjeun salaku super admin jeung anu kadua nyaéta ngaliwatan Dashboard admin subsitus dina kaca Account.
 
-Tapi saméméan anjeun mulai memetakan domain kustom ka salah sahiji subsite dina jaringan anjeun, anjeun kudu mastikeun yén **DNS settings** tina nama domain téh geus dikonfigurasi kalayan bener.
+Tapi saméméh anjeun ngamimitian ngapetakeun domain custom ka salah sahiji subsitus dina jaringan anjeun, anjeun kudu mastikeun yén **setélan DNS** tina ngaran domain geus dikonpigurasikeun kalayan bener.
 
 ###
 
-### Mastikeun DNS settings domain geus dikonfigurasi kalayan bener
+### Mastikeun setélan DNS domain geus dikonpigurasikeun kalayan bener {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Supaya pemetaan bisa jalan, kudu dipastikan domain anu rék dipetkeun téh nunjuk ka IP address Jaringan anjeun. Perhatosanna, anjeun butuh IP address Jaringan - nyaéta IP address domain di mana Ultimate Multisite dipasang - lain IP address domain kustom anu rék dipetkeun. Pikeun nyari IP address domain tartamtu, urang saraha ka [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), conto saperti kitu.
+Supaya pemetaan bisa jalan, anjeun kudu mastikeun domain anu rék dipetakeun nujul ka alamat IP Jaringan anjeun. Catet yén anjeun peryogi alamat IP Jaringan - alamat IP tina domain tempat Ultimate Multisite dipasang - lain alamat IP tina domain custom anu rék anjeun petakeun. Pikeun néangan alamat IP tina domain husus, kami nyarankeun muka [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), contona.
 
-Supaya pemetaan domain téh bener, anjeun kudu nambahan **A RECORD** dina konfigurasi **DNS** anjeun anu nunjuk ka **IP address** éta. Manajemen DNS béda pisan antara registrar domain nu beda, tapi aya loba tutorial online anu ngajelaskeun éta lamun anjeun nyari " _Creating A Record on XXXX_ " di mana XXXX nyaéta registrar domain anjeun (conto: " _Creating A Record on_ _GoDaddy_ ").
+Pikeun ngapetakeun domain kalayan bener, anjeun kudu nambahkeun **A RECORD** dina konfigurasi **DNS** anjeun anu nujul ka **alamat IP** éta. Pangaturan DNS béda pisan antara registrar domain anu béda, tapi aya loba tutorial online anu ngabahas éta lamun anjeun néangan " _Nyieun A Record dina XXXX_ " dimana XXXX nyaéta registrar domain anjeun (conto: " _Nyieun A Record dina_ _GoDaddy_ ").
 
-Lamun anjeun nempo hésé pikeun ngajantenkeun ieu jadi jalan, **hubungi dukungan registrar domain anjeun** sarta maranéhna bakal bisa nulungan anjeun dina bagian éta.
+Lamun anjeun manggihan kasulitan sangkan ieu jalan, **taroskeun ka dukungan registrar domain anjeun** sarta maranéhna bakal bisa ngabantu anjeun dina bagian ieu.
 
-Upami anjeun rék ngidinan klien anjeun pikeun mapetkeun domain sorangan, maranéhna kudu nyieun gawé dina bagian ieu sorangan. Arahkeun maranéhna ka sistem dukungan registrarna lamun maranéhna nempo hésé pikeun nyiptake A Record.
+Lamun anjeun ngarencanakeun ngidinan klién anjeun ngapetakeun domain sorangan, maranéhna kudu ngalakukeun pagawéan dina bagian ieu sorangan. Arahkeun maranéhna ka sistem dukungan registrar maranéhna lamun maranéhna teu bisa nyieun A Record.
 
-### Mapetkeun nama domain kustom salaku Super Admin
+### Ngapetakeun ngaran domain custom salaku Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Lamun anjeun *login* salaku super admin di jaringan anjeun, anjeun bisa gampang nambahan jeung ngatur nama domain kustom ku cara indit ka **Ultimate Multisite > Domains**.
+Nalika anjeun asup salaku super admin dina jaringan anjeun, anjeun bisa gampang nambahkeun jeung ngatur ngaran domain custom ku muka **Ultimate Multisite > Domain**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Kaca daptar Domain dina Ultimate Multisite](/img/admin/domains-list.png)
 
-Di bawah halaman ini, Anda bisa klik tombol **Add Domain** di bagian atas dan ini akan membuka jendela modal tempat Anda bisa mengatur dan mengisi **custom domain name**, **subsite** yang ingin Anda terapkan nama domain kustom tersebut, dan memutuskan apakah Anda ingin mengaturnya sebagai **primary domain** atau tidak (perhatikan bahwa Anda bisa memetakan **beberapa nama domain ke satu subsite**).
+Dina kaca ieu, anjeun bisa ngaklik tombol **Tambah Domain** di luhur sarta ieu bakal muka jandéla modal tempat anjeun bisa nyetél jeung ngeusian **ngaran domain custom** , **subsitus** anu rék anjeun terapkeun ngaran domain custom éta, sarta mutuskeun naha rék nyetél éta salaku ngaran **domain utama** atawa henteu (catet yén anjeun bisa ngapetakeun **sababaraha ngaran domain ka hiji subsitus**).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal Tambah Domain jeung ngaran domain, pamilih situs, jeung toggle domain utama](/img/admin/domain-add-modal.png)
 
-Setelah semua informasi diisi, Anda bisa klik tombol **Add Existing Domain** di bagian bawah.
+Sanggeus ngalebetkeun sadaya inpormasi, anjeun teras bisa ngaklik tombol **Tambah Domain Anu Geus Aya** di handap.
 
-Ini akan memulai proses verifikasi dan pengambilan informasi DNS dari nama domain kustom tersebut. Anda juga akan melihat log di bagian bawah halaman untuk mengikuti proses yang sedang berjalan. Proses ini mungkin memakan waktu beberapa menit untuk selesai.
+Ieu bakal ngamimitian prosés verifikasi jeung nyokot inpormasi DNS tina domain custom. Anjeun ogé bakal ningali log di handapeun kaca pikeun nuturkeun prosés anu keur dijalankeun. Prosés ieu bisa merlukeun sababaraha menit pikeun réngsé.
 
-Ultimate Multisite v2.13.0 juga secara otomatis membuat catatan domain internal ketika situs baru dibuat di host yang seharusnya diperlakukan sebagai domain per-situs (per-site domain). Jika host tersebut adalah domain utama jaringan, atau salah satu domain dasar formulir checkout bersama yang dikonfigurasi pada kolom **Site URL**, maka catatan domain yang dipetakan secara otomatis dilewati agar domain dasar bersama tetap tersedia untuk setiap situs yang menggunakannya.
+Ultimate Multisite v2.13.0 ogé nyieun rékaman domain internal sacara otomatis nalika situs anyar dijieun dina host anu kudu dianggap minangka domain per-situs. Lamun host nyaéta domain utama jaringan, atawa salah sahiji domain dasar formulir checkout babarengan anu dikonfigurasi dina widang **URL Situs**, rékaman mapped-domain otomatis bakal diliwatan supaya domain dasar babarengan éta tetep sadia pikeun unggal situs anu makéna.
 
-**Stage** atau status akan berubah dari **Checking DNS** menjadi **Ready** jika semuanya sudah diatur dengan benar.
+Nalika palanggan ngadaptarkeun domain anyar ngaliwatan Domain Seller v1.3.0 atawa nu leuwih anyar, Ultimate Multisite sacara standar otomatis ngamapkeun domain anu kadaptar ka situs jaringan palanggan. Administrator henteu deui kudu nambahkeun rékaman mapped-domain misah sanggeus pendaptaran hasil, iwal lamun maranéhna hayang nyaluyukeun pilihan saperti tanda domain utama, kaayaan aktivasina, atawa pangaturan SSL.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+**Tahap** atawa statusna kudu robah tina **Mariksa DNS** jadi **Siap** lamun sagalana geus disetél kalayan bener.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+<!-- Screenshot teu sadia: Baris domain némbongkeun tahap Mariksa DNS dina daptar domain -->
 
-Jika Anda mengklik nama domain, Anda akan bisa melihat beberapa opsi di dalamnya. Mari kita lihat sekilas:
+<!-- Screenshot teu sadia: Baris domain némbongkeun tahap Siap kalayan indikator status héjo -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Lamun anjeun ngaklik ngaran domain, anjeun bakal bisa ningali sababaraha pilihan di jerona. Hayu urang tingali sakedapan:
 
-**Tahap:** Ieu mangrupakeun tahapan di mana domain éta keadaanna ayeuna. Lamun anjeun mindahkeun domain, biasana bakal aya dina tahapan **Checking DNS**. Prosesna bakal nguji entri DNS jeung ngabenerkeun yén éta bener. Terus, domain éta bakal dipindah ka tahapan **Checking SSL**. Ultimate Multisite bakal nguji upami domain éta geus aya SSL atawa henteu, sarta bakal ngabagi kategori domain anjeun jadi **Ready** atawa **Ready (tanpa SSL)**.
+![Kaca rinci domain kalayan toggle tahap, situs, aktip, utama jeung SSL](/img/admin/domain-edit.png)
 
-**Site:** Subdomain anu patali jeung domain ieu. Domain anu dipetakan bakal nunjukkeun konten tina situs spesifik éta.
+**Tahap:** Ieu nyaéta tahap tempat domain ayeuna aya. Nalika anjeun mimiti nambahkeun domain, kamungkinan éta bakal aya dina tahap **Mariksa DNS**. Prosésna bakal mariksa éntri DNS sarta mastikeun yén éta bener. Teras, domain bakal ditempatkeun dina tahap **Mariksa SSL**. Ultimate Multisite bakal mariksa naha domain miboga SSL atawa henteu sarta bakal ngagolongkeun domain anjeun salaku **Siap** atawa **Siap (tanpa SSL)**.
 
-**Active:** Anjeun bisa nyaluyukeun pilihan ieu on atawa off pikeun ngaktifkeun atawa ngaluarkeun domain.
+**Situs:** Subdomain anu pakait jeung domain ieu. Domain anu dimapkeun bakal némbongkeun eusi tina situs husus ieu.
 
-**Is Primary Domain?:** Pelanggan anjeun bisa gaduh leuwih ti hiji domain anu dipetakan pikeun unggal situs. Gunakeun pilihan ieu pikeun milih upami ieu mangrupakeun domain utama pikeun situs éta.
+**Aktip:** Anjeun bisa ngahurungkeun atawa mareuman pilihan ieu pikeun ngaktipkeun atawa nganonaktipkeun domain.
 
-**Is Secure?:** Sanajan Ultimate Multisite nguji upami domain geus aya sertifikat SSL atawa henteu saméméh ngaktifkeunana, anjeun masih bisa milih manual pikeun ngaload domain kalawan atawa tanpa sertifikat SSL. Perhatikeun yén lamun situs teu gaduh sertifikat SSL jeung anjeun nyoba ngagancangkeun (force load) ku SSL, éta bisa ngahasilkeun error.
+**Naha Domain Utama?:** Palanggan anjeun bisa miboga leuwih ti hiji domain anu dimapkeun pikeun tiap situs. Paké pilihan ieu pikeun milih naha ieu domain utama pikeun situs husus éta.
 
-### Ngaparkeun nama domain kustom salaku Subsite user
+**Naha Aman?:** Sanajan Ultimate Multisite mariksa naha domain miboga sertipikat SSL atawa henteu saméméh ngaktipkeunana, anjeun bisa sacara manual milih pikeun ngamuat domain kalayan atawa tanpa sertipikat SSL. Catet yén lamun ramatloka henteu miboga sertipikat SSL sarta anjeun nyobian maksa ngamuatna kalayan SSL, éta bisa méré kasalahan.
 
-Administrator subsite ogé bisa maparkeun nama domain kustom tina dashboard admin subsite maranéhna.
+### Ngamapkeun ngaran domain custom salaku pamaké Subsite {#mapping-custom-domain-name-as-subsite-user}
 
-Kahiji, anjeun kudu mastikeun yén anjeun geus ngaktifkeun pilihan ieu di bawah pengaturan **Domain mapping**. Tingali gambar di handap.
+Administrator sub-situs ogé bisa ngamapkeun ngaran domain custom tina dashboard admin sub-situs maranéhna.
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Mimiti, anjeun kudu mastikeun yén anjeun ngaktipkeun pilihan ieu dina setélan **Pangamapan domain**. Tingali screenshot di handap.
 
-Anjeun ogé bisa ngatur atawa ngarancang pilihan ieu di bawah level **Plan** atawa opsi produk dina **Ultimate Multisite > Products**.
+<!-- Screenshot teu sadia: Setélan pangamapan domain anu ngamungkinkeun pamaké sub-situs ngamapkeun domain ngaliwatan toggle Customer DNS Management -->
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+Anjeun ogé bisa nyetél atawa ngonfigurasi pilihan ieu dina tingkat **Pakét** atawa pilihan produk dina **Ultimate Multisite > Produk**.
 
-Lamun salah sahiji pilihan éta diaktifkeun sareng user subsite diidinan pikeun map domain kustom, user subsite bakal ningali metabox di handap halaman **Account** kalayan ngaran **Domains**.
+![Bagian Domain Custom dina kaca édit produk](/img/config/product-custom-domains.png)
 
-<!-- Screenshot unavailable: Metabox Domains dina halaman Account subsite jeun tombol Add Domain -->
+Nalika salah sahiji pilihan éta diaktipkeun sarta pamaké sub-situs diidinan pikeun ngamapkeun ngaran domain custom, pamaké sub-situs kudu ningali metabox dina kaca **Account** anu disebut **Domain**.
 
-User bisa klik tombol **Add Domain** sareng éta bakal ngajak modal window anu aya sababaraha instruksi.
+<!-- Screenshot teu sadia: Metabox Domain dina kaca Account sub-situs kalayan tombol Tambah Domain -->
 
-<!-- Screenshot unavailable: Modal Add Domain nunjukkeun instruksi DNS A-record pikeun user subsite -->
+Pamaké bisa ngaklik tombol **Tambah Domain** sarta éta bakal nembongkeun jandéla modal kalayan sababaraha parentah.
 
-Terus, user bisa klik **Next Step** sareng lanjutna kanggo nambah domain kustom éta. Maranéhna ogé bisa milih upami ieu bakal jadi domain utama atawa henteu.
+<!-- Screenshot teu sadia: Modal Tambah Domain némbongkeun parentah DNS A-record pikeun pamaké sub-situs -->
 
-<!-- Screenshot unavailable: Form Add Domain kalayan field nama domain kustom jeung toggle domain utama -->
+Pamaké teras bisa ngaklik **Léngkah Salajengna** sarta neruskeun pikeun nambahkeun ngaran domain custom. Maranéhna ogé bisa milih naha ieu bakal jadi domain utama atawa henteu.
 
-<!-- Screenshot unavailable: Langkah konfirmasi Add Domain anu ngajak verifikasi DNS -->
+<!-- Screenshot teu sadia: Formulir Tambah Domain kalayan widang ngaran domain custom jeung toggle domain utama -->
 
-Klik **Add Domain** bakal ngamimitian prosés verifikasi sareng ngahapkeun informasi DNS domain kustom éta.
+<!-- Screenshot teu sadia: Léngkah konfirmasi Tambah Domain anu micu verifikasi DNS -->
 
-### Tentang Domain Syncing
+Klik **Tambah Domain** bakal ngamimitian prosés pikeun marios jeung nyokot inpormasi DNS tina domain custom.
 
-Domain Syncing téh mangrupa prosés di mana Ultimate Multisite nambahan nama domain kustom ka akun hosting anjeun salaku domain tambahan **supaya pemetaan domain bisa lumangsung**.
+### Ngeunaan Sinkronisasi Domain {#about-domain-syncing}
 
-Domain syncing otomatis kajadian upami penyedia hosting anjeun aya integrasi sareng fitur pemetaan domain Ultimate Multisite. Ayeuna, penyedia hosting saperti _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ sareng _Cpanel._
+Sinkronisasi Domain nyaéta prosés dimana Ultimate Multisite nambahkeun ngaran domain custom ka akun hosting anjeun salaku domain add-on **supaya pangamapan domain jalan**.
 
-Lamun integrasi penyedia hosting aktif, Ultimate Multisite ogé bisa ngajak (enqueue) tugas pembuatan DNS atawa subdomain sisi penyedia kanggo situs anu anyar. Upami teu aya integrasi anu nunggu tugas éta, *background job* bakal dilewati pikeun nyingkahan entri antrian nu teu dipaké (*no-op queue entries*). Pengecekan DNS sareng SSL pikeun domain anu dipetkeun terus lumangsung ngaliwatan prosés tahap domain biasa.
+Sinkronisasi domain lumangsung sacara otomatis lamun panyadia hosting anjeun miboga integrasi jeung fitur pangamapan domain Ultimate Multisite. Ayeuna, panyadia hosting ieu nyaéta _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ jeung _Cpanel._
 
-Anjeun kudu ngaktifkeun integrasi ieu dina pengaturan Ultimate Multisite di bawah tab **Integration**.
+Nalika integrasi panyadia-host aktip, Ultimate Multisite ogé bisa ngantrekeun tugas nyieun DNS atawa subdomain di sisi panyadia pikeun situs anu anyar dijieun. Lamun euweuh integrasi anu ngadéngékeun tugas éta, padamelan latar bakal diliwatan pikeun ngahindarkeun éntri antrean anu teu ngalakukeun nanaon. Pamariksaan DNS jeung SSL pikeun domain anu dimapkeun tetep dijalankeun ngaliwatan prosés tahap-domain normal.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Anjeun kudu ngaktipkeun integrasi ieu dina setélan Ultimate Multisite dina tab **Integrasi**.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+![Tab Integrasi dina setélan Ultimate Multisite anu némbongkeun panyadia hosting](/img/config/integrations-tab.png)
 
-_Catetan: Upami penyedia hosting anjeun lain salah sahiji anu disebut di luhur, **anjeun kudu ngabagéake (sync) atawa nambahan domain** dina akun hosting anjeun._
+<!-- Screenshot teu sadia: Tumbu Konfigurasi panyadia hosting dina tab setélan Integrasi -->
+
+_Catet yén lamun panyadia hosting anjeun lain salah sahiji panyadia anu disebutkeun di luhur,**anjeun kudu sacara manual nyinkronkeun atawa nambahkeun ngaran domain** ka akun hosting anjeun._

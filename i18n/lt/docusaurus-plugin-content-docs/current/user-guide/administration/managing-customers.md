@@ -3,7 +3,7 @@ title: Klientų valdymas
 sidebar_position: 20
 _i18n_hash: c0bc4b0ca27b0712c226667cba59835c
 ---
-# Visių klientų valdymas
+# Visių klientų valdymas {#managing-customers}
 
 Sunaudojant **Klientai** puslapį pamatys jūsų tinklo registruotų nariai sąrašą. Šis puslapis rodo pagrindinius vartotojų informacijas, įskaitant vardą, el. pašto adresą, paskutinię praleidimą ir **pasirinkimo** linką, kuris leidžia jums prieiti prie subsite nariaus administratoriais.
 

@@ -3,7 +3,7 @@ title: Nkwado Code
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets for v2
+# Code Snippets for v2 {#code-snippets-for-v2}
 
 Bara na, code snippets na WordPress-e nwere ihe ndị ọrụ ịbụghị ọrụ ndị ọzọ dị ka plugin ọkụ dị. Ọ bụrụ na a gbanwe code snippets ndị a n'ime file core WordPress na theme-nụ (nidi ọ bụla, functions.php file nke theme-nụ tusi), ma ọ bụ nwere ike ịnwurọ dịka MU plugin.
 
@@ -15,7 +15,7 @@ Nye ihe nrirobi a, anyị ga-eme ka ị chọrọ code snippets abụọ ndị n
 
   * [**Nche ihe CORS na Font-Icons na domain ndị ọzọ anọ**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Gbanwe oge nke Account menu item
+## Gbanwe oge nke Account menu item {#changing-the-position-of-the-account-menu-item}
 
 Ọ bụrụ na ị chọrọ gbanwe oge nke Account menu item n'ime Dashboard nke client-nụ gị, jikwa code snippet a dị n'ime functions.php file theme mụ site-nụ gị. Ị chụrụ code snippet a n'ime otu na MU plugin na custom plugins ọ bụla.
 
@@ -37,20 +37,20 @@ Biko ka maara na ndị mmadụ nwere ike ịbụ subscription n'ụ **Plan** kar
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Ọ dị mma maka CORS issues na Font-Icons na mapped domains
-## Ọ dị mma maka CORS issues na Font-Icons na mapped domains
+## Ọ dị mma maka CORS issues na Font-Icons na mapped domains {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Ọ dị mma maka CORS issues na Font-Icons na mapped domains {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Ọ bụrụ na ị maara domain ahụ n'ụ sub-site, ị ga-anọchi na site ahụ gị proble na ịloading custom fonts. Oge a bụ onye anọchịrị cross-origin block na server settings-ie.
 
 Biko ka ọkụkọ font files dị n'ụzọ ọ bụla loading direct from CSS, plugin domain mapping anyị ga-anọchi ịgbagba URLs ahụ ka ọ ga-arịrụ use the mapped domain instead of original one. Karịrị maka ịgba ọsọ ihe a, ị ga-asịka ịchange your server configuration files.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Na .htaccess file-nne, add:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Na server config file-nne (location na-akara na-akara n'server), add:
 

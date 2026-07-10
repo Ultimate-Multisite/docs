@@ -3,7 +3,7 @@ title: WordPress Multisite Nedir?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Çoklu Site Nedir?
+# WordPress Çoklu Site Nedir? {#what-is-wordpress-multisite}
 
 WordPress, çekirdek yapısında 2010'da WordPress 3.0 ile birlikte kullanıma sunulan 'Çoklu Site' (Multisite) adında bir özellik barındırır. O günden bu yana yeni özellikler eklemek ve güvenliği artırmak amacıyla pek çok güncelleme aldı.
 
@@ -11,7 +11,7 @@ WordPress, çekirdek yapısında 2010'da WordPress 3.0 ile birlikte kullanıma s
 
 ## 
 
-## WordPress Çoklu Site Tam Olarak Nedir?
+## WordPress Çoklu Site Tam Olarak Nedir? {#what-exactly-is-wordpress-multisite}
 
 Çoklu site, birden fazla sitenin tek bir WordPress kurulumunu paylaşmasına olanak tanıyan bir WordPress özelliğidir. Çoklu site etkinleştirildiğinde, orijinal WordPress sitesi genellikle **site ağı** olarak adlandırılan yapıyı destekleyecek şekilde dönüştürülür.
 
@@ -23,7 +23,7 @@ Bu durum çoklu sitenin en önemli avantajlarından biridir. Yönettiğiniz site
 
 ## 
 
-## Alt Alan Adı mı Yoksa Alt Dizin mi?
+## Alt Alan Adı mı Yoksa Alt Dizin mi? {#subdomain-or-subdirectory}
 
 WordPress çoklu siteyi çalıştırmanın iki modu vardır ve normal WordPress kurulumunuzu çoklu site kurulumuna dönüştürürken bunlardan birini seçmeniz gerekir:
 
@@ -49,7 +49,7 @@ Alt alan adı modunu kurmadaki temel zorluklardan biri, tüm ağ için SSL kapsa
 
 Alt dizin modunun aksine, alt alan adı tabanlı bir ağdaki alt siteler arama motorları tarafından ayrı web siteleri olarak değerlendirilir. Bu da bir alt sitedeki içeriğin diğer alt sitelerin SEO performansını hiçbir şekilde etkilemediği anlamına gelir.
 
-## Süper Yönetici
+## Süper Yönetici {#the-super-admin}
 
 Tekli site WordPress kurulumları sınırsız sayıda kullanıcı eklemenize ve bu kullanıcılara farklı izinlere sahip farklı kullanıcı rolleri vermenize olanak tanır.
 
@@ -63,7 +63,7 @@ Plugin'ler ve temalar yalnızca süper yöneticiler tarafından ağ yönetici pa
 
 _Not: Gördüğünüz gibi, birini ağınıza davet edip süper yönetici yetkisi vermek, bu kullanıcıya ağınız üzerinde tam kontrol verir. Örneğin, diğer süper yöneticiler sizin süper yönetici statünüzü bile kaldırabilir ve sizi kendi ağ yönetici panelinizden etkili bir şekilde kilitleyebilir. Ultimate Multisite müşterilerinin ek süper yöneticilerin neler yapabileceği üzerinde ayrıntılı kontrol sahibi olmalarını sağlamak için Support Agents adında bir eklentimiz var. Bu eklenti, yalnızca ağda görevlerini yerine getirmek için ihtiyaç duyabilecekleri izinlere sahip başka bir kullanıcı türü – temsilci – oluşturmanıza olanak tanır._
 
-## Alt Siteler Arasında Neler Paylaşılır, Neler Paylaşılmaz
+## Alt Siteler Arasında Neler Paylaşılır, Neler Paylaşılmaz {#what-is-shared-among-subsites-and-what-is-not}
 
 Daha önce belirttiğimiz gibi, WordPress çoklu sitenin temel avantajlarından biri tüm alt sitelerin aynı yapılandırmaları, çekirdek dosyaları, temaları, plugin'leri, WordPress çekirdek dosyalarını vb. paylaşmasıdır.
 
@@ -75,7 +75,7 @@ Ancak her alt site için güzelce ayrılmış olan öğeler de vardır.
 
 \- Çoğu veritabanı tablosu her alt site için oluşturulur, yani yazılar, yorumlar, sayfalar, ayarlar ve daha fazlası her alt site için ayrı tutulur.
 
-## WordPress Çoklu Site'de Kullanıcı Yönetimi
+## WordPress Çoklu Site'de Kullanıcı Yönetimi {#user-management-on-wordpress-multisite}
 
 WordPress çoklu site'de hassas konulardan biri kullanıcı yönetimidir. WordPress kullanıcı tablosu, tüm alt siteler arasında paylaşılan birkaç tablodan biridir.
 
@@ -99,7 +99,7 @@ _Not: Kullanım senaryonuza bağlı olarak bunun ne kadar kötü olabileceğinin
 
 Kullanıcı tablosu paylaşılsa da, kullanıcılar alt site yöneticileri veya süper yönetici tarafından alt sitelere eklenebilir ve alt sitelerden kaldırılabilir, hatta farklı alt sitelerde farklı kullanıcı rollerine sahip olabilirler.
 
-## Performans Değerlendirmeleri
+## Performans Değerlendirmeleri {#performance-considerations}
 
 WordPress çoklu site, destekleyebileceği site sayısı açısından gerçekten güçlüdür. [WordPress.com](https://WordPress.com), Edublogs ve Campuspress'in hepsinin çoklu site tabanlı hizmetler olması ve her birinin binlerce site barındırması bunu kanıtlar.
 

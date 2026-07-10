@@ -1,0 +1,144 @@
+---
+title: Konektè AI Ultim pou WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM pote enferans AI natif pou navigatè nan rezo WordPress multisite ou a. Li kouri gwo modèl lang antyèman nan navigatè a lè l sèvi ak WebLLM ak motè MLC la — pa gen API keys, pa gen apèl ekstèn, pa gen done ki kite aparèy itilizatè a.
+
+## Fonksyonalite Kle {#key-features}
+
+- **Enferans bò navigatè**: LLM kouri lokalman nan navigatè vizitè a atravè WebLLM/MLC — pa bezwen GPU sèvè
+- **Widget chat k ap flote**: Itilizatè ki konekte yo ka voye prompt bay LLM bò navigatè a dirèkteman depi front end lan
+- **Endikatè estati nan ba admin**: Estati an tan reyèl motè WebLLM lan vizib nan ba admin WordPress la
+- **Runtime SharedWorker**: Plizyè tab navigatè pataje yon sèl sesyon GPU olye yo goumen pou resous GPU
+- **Middleware apiFetch**: Demann WordPress REST ki koresponn ak modèl AI Client SDK la dirije an transparans bay broker WebLLM lokal la — pa gen ale-retou HTTP loopback
+- **UI paramèt widget**: Paramèt panèl Connector pou aktive oswa dezaktive widget chat la epi konfigire konpòtman auto-prompt
+- **Kach IndexedDB**: Telechajman pwa modèl yo siviv redireksyon CDN ki kraze chemen Cache API defo a
+- **Entegrasyon filtè wpai**: Konekte ak filtè `wpai_preferred_text_models` la pou fonksyonalite AI Experiments lan dirije bay motè navigatè a lè li konfigire
+
+## Egzijans {#requirements}
+
+- WordPress 5.3 oswa pi wo
+- PHP 7.4 oswa pi wo
+- Ultimate Multisite plugin (aktif)
+- Yon navigatè ki sipòte WebGPU (Chrome 113+, Edge 113+, oswa Firefox Nightly ak WebGPU aktive)
+
+## Enstalasyon {#installation}
+
+1. Telechaje fichye addon yo nan repètwa `/wp-content/plugins/` ou a
+2. Aktive plugin lan atravè meni 'Plugins' nan WordPress
+3. Ale nan **Ultimate Multisite → AI Connector** pou konfigire addon lan
+
+## Widget Chat k ap Flote {#floating-chat-widget}
+
+Widget chat k ap flote a pèmèt nenpòt itilizatè ki konekte kominike ak LLM bò navigatè a dirèkteman depi front end ou a, san yo pa kite paj kote yo ye a.
+
+### Sa Li Fè {#what-it-does}
+
+Lè li aktive, yon ikòn chat parèt nan kwen chak paj front-end pou itilizatè ki konekte yo. Lè yo klike sou ikòn nan, sa ouvri yon panèl chat kote itilizatè a ka tape prompt epi resevwa repons nan modèl WebLLM k ap kouri lokalman an. Paske modèl la kouri antyèman nan navigatè a, repons yo prive epi yo pa enplike okenn tretman bò sèvè.
+
+### Endikatè Estati nan Ba Admin {#admin-bar-status-indicator}
+
+Ba admin WordPress la gen ladan yon endikatè estati ki montre eta aktyèl motè WebLLM lan:
+
+| Estati | Siyifikasyon |
+|--------|---------|
+| **Loading** | Motè MLC la ap inisyalize oswa ap telechaje pwa modèl yo |
+| **Ready** | Modèl la chaje epi disponib pou enferans |
+| **Idle** | Motè a chaje men tab SharedWorker a pa aktif |
+| **Error** | Motè a pa t rive inisyalize — tcheke konsòl navigatè a pou detay |
+
+Endikatè a mete ajou an tan reyèl san li pa mande rechajman paj.
+
+### Kijan pou Aktive oswa Dezaktive Widget la {#how-to-enable-or-disable-the-widget}
+
+1. Ale nan **Ultimate Multisite → AI Connector** nan admin rezo a
+2. Jwenn panèl **Connector** la
+3. Aktive oswa dezaktive **Aktive widget chat k ap flote**
+4. Sove paramèt yo
+
+Widget la kapab aktive oswa dezaktive tou pou chak site depi pwòp admin site la si administratè rezo a te bay kapasite sa a.
+
+## Paramèt Widget {#widget-settings}
+
+Panèl Connector nan **Ultimate Multisite → AI Connector** gen paramèt sa yo pou widget chat k ap flote a:
+
+### Aktive Widget Chat k ap Flote {#enable-floating-chat-widget}
+
+Aktive oswa dezaktive widget chat la pou tout rezo a. Lè li dezaktive, widget la pa parèt sou okenn paj front-end, kèlkeswa wòl itilizatè a.
+
+**Defò:** Dezaktive
+
+### Konpòtman Auto-Prompt {#auto-prompt-behaviour}
+
+Kontwole si widget chat la voye yon prompt otomatikman lè yon itilizatè ouvri li.
+
+| Opsyon | Konpòtman |
+|--------|-----------|
+| **Dezaktive** | Widget la ouvri sou yon chat vid — itilizatè a tape pwòp prompt li |
+| **Kontèks paj** | Widget la ouvri ak yon prompt ki ranpli davans baze sou tit ak kontni paj aktyèl la |
+| **Prompt pèsonalize** | Widget la ouvri ak yon prompt pèsonalize ou defini nan chan ki anba a |
+
+Lè li mete sou **Prompt pèsonalize**, yon chan tèks anplis parèt kote ou ka antre tèks prompt defo a. Li sipòte varyab modèl debaz:
+
+- `{site_name}` — non site aktyèl la
+- `{page_title}` — tit paj aktyèl la
+- `{user_display_name}` — non afichaj itilizatè ki konekte a
+
+**Defò:** Dezaktive
+
+## Runtime SharedWorker {#sharedworker-runtime}
+
+Vèsyon 1.1.0 entwodui yon runtime SharedWorker pou motè MLC la. Anvan sa, chak tab navigatè ki te itilize WebLLM te chaje pwòp enstans modèl li, sa ki te fè yo konpetisyon pou memwa GPU epi te lakòz pwoblèm pèfòmans sou aparèy ki gen VRAM limite.
+
+Avèk runtime SharedWorker a, yon tab aji kòm lame motè a. Tout lòt tab yo kominike ak sèl enstans sa a atravè chanèl mesaj worker la. Rezilta a:
+
+- Yon sèl sesyon GPU pataje atravè tout tab ki ouvè yo
+- Repons pi rapid yon fwa modèl la chaje (pa gen inisyalizasyon repete)
+- Pi ba itilizasyon memwa pik sou aparèy la
+
+SharedWorker a transparan pou itilizatè yo. Endikatè estati nan ba admin lan toujou reflete eta motè pataje a, pa eta tab endividyèl la.
+
+## Middleware apiFetch {#apifetch-middleware}
+
+Addon lan enstale yon middleware `apiFetch` ki entèsepte demann WordPress REST API ki koresponn ak modèl AI Client SDK la. Olye pou li fè yon demann HTTP loopback bay sèvè a, demann sa yo dirije dirèkteman bay broker WebLLM lokal k ap kouri nan SharedWorker a.
+
+Sa vle di plugins ak themes ki itilize API WordPress `apiFetch` estanda a pou rele endpoints AI yo ap benefisye otomatikman de modèl bò navigatè a lè li disponib, san okenn chanjman kòd nesesè.
+
+## Hooks ak Filtè {#hooks-and-filters}
+
+### Filtè {#filters}
+
+- `wpai_preferred_text_models` — Anrejistre motè navigatè WebLLM la kòm yon modèl tèks prefere. addon nan konekte ak filter sa a otomatikman lè motè a konfigire epi disponib.
+- `ultimate_webllm_widget_enabled` — Ranplase eta aktive widget la pou yon itilizatè oswa yon kontèks espesifik. Retounen `true` oswa `false`.
+- `ultimate_webllm_auto_prompt` — Modifye tèks auto-prompt la anvan yo voye li bay widget la. Li resevwa chèn prompt la ak objè `WP_Post` aktyèl la.
+
+## Depanaj {#troubleshooting}
+
+### Widget chat la pa parèt {#the-chat-widget-does-not-appear}
+
+- Konfime itilizatè a konekte — widget la parèt sèlman pou itilizatè ki otantifye
+- Tcheke ke **Aktive widget chat flote** aktive nan panèl Connector a
+- Verifye navigatè itilizatè a sipòte WebGPU (gade Kondisyon yo pi wo a)
+
+### Endikatè admin-bar la montre "Erè" {#the-admin-bar-indicator-shows-error}
+
+Louvri konsole developer navigatè a (F12) epi chèche erè ki gen rapò ak WebLLM. Kòz komen yo:
+
+- Navigatè a pa sipòte WebGPU
+- Telechajman pwa modèl la echwe — tcheke koneksyon rezo a epi eseye efase kachèt IndexedDB la nan zouti developer navigatè a (Application → IndexedDB)
+- Yon ekstansyon navigatè ap bloke SharedWorker la
+
+### Pwa modèl yo telechaje chak fwa {#model-weights-download-every-time}
+
+addon nan itilize IndexedDB kòm backend kachèt la pou asire pwa modèl yo siviv redireksyon CDN yo. Si pwa yo ap re-telechaje nan chak vizit, tcheke si IndexedDB pa ap efase pa yon paramèt vi prive navigatè oswa yon ekstansyon.
+
+## Changelog {#changelog}
+
+Gade [Changelog](./changelog) pou istwa vèsyon konplè a.

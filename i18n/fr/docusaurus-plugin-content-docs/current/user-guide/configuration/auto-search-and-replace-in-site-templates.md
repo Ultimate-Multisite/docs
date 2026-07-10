@@ -1,32 +1,32 @@
 ---
-title: Recherche et Remplacement Automatique dans les Modèles de Site
+title: Recherche et remplacement automatiques dans les modèles de site
 sidebar_position: 8
-_i18n_hash: 81adce2fb2df1a5296590bffea6f2d14
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Recherche et remplacement automatiques dans les modèles de site (v2)
+# Recherche et remplacement automatiques dans les modèles de site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ce tutoriel nécessite WP UItimo version 2.x.**_
 
-L'une des fonctionnalités les plus puissantes d'Ultimate Multisite est la possibilité d'ajouter du texte arbitraire, des couleurs et des champs de sélection au formulaire d'inscription. Une fois ces données capturées, nous pouvons les utiliser pour pré-remplir le contenu dans certaines parties du modèle de site sélectionné. Ensuite, lorsque le nouveau site est publié, Ultimate Multisite remplacera les espaces réservés par les informations réelles saisies lors de l'inscription.
+L’une des fonctionnalités les plus puissantes d’Ultimate Multisite est la possibilité d’ajouter des champs de texte, de couleur et de sélection arbitraires au formulaire d’inscription. Une fois ces données collectées, nous pouvons les utiliser pour préremplir le contenu dans certaines parties du modèle de site sélectionné. Ensuite, lorsque le nouveau site est publié, Ultimate Multisite remplacera les espaces réservés par les informations réelles saisies lors de l’inscription.
 
-Par exemple, vous pouvez créer vos sites modèles avec des espaces réservés. Les espaces réservés doivent être entourés de doubles accolades - {{placeholder_name}}.
+Par exemple, vous pouvez créer vos sites modèles avec des espaces réservés. Les espaces réservés doivent être ajoutés entourés de doubles accolades - {{placeholder_name}}.
 
-Ensuite, vous pouvez simplement ajouter un champ d'inscription correspondant pour capturer ces données
+Ensuite, vous pouvez simplement ajouter un champ d’inscription correspondant pour collecter ces données.
 
-Votre client pourra alors remplir ce champ lors de l'inscription.
+Votre client pourra ensuite remplir ce champ lors de l’inscription.
 
-Ultimate Multisite remplacera alors les espaces réservés par les données fournies par le client automatiquement.
+Ultimate Multisite remplacera ensuite automatiquement les espaces réservés par les données fournies par le client.
 
-## **Résoudre le problème du « modèle plein d'espaces réservés »**
+## **Résoudre le problème du « modèle rempli d’espaces réservés »** {#solving-the-template-full-of-placeholders-problem}
 
-Tout cela est génial, mais nous rencontrons un problème désagréable : nos modèles de site – qui peuvent être visités par nos clients – sont remplis d'espaces réservés peu informatifs.
+Tout cela est excellent, mais nous rencontrons un problème peu esthétique : nos modèles de site — qui peuvent être visités par nos clients — sont maintenant remplis d’espaces réservés peu élégants qui ne disent pas grand-chose.
 
-Pour résoudre ce problème, nous proposons l'option de définir de fausses valeurs pour les espaces réservés, et nous utilisons ces valeurs pour rechercher et remplacer leur contenu sur les sites modèles pendant que vos clients les visitent.
+Pour résoudre cela, nous proposons l’option de définir de fausses valeurs pour les espaces réservés, et nous utilisons ces valeurs pour rechercher et remplacer leur contenu sur les sites modèles pendant que vos clients les visitent.
 
-Vous pouvez accéder à l'éditeur d'espaces réservés du modèle en allant dans **Ultimate Multisite > Settings > Sites**, puis, dans la barre latérale, en cliquant sur le lien Edit Placeholders.
+Vous pouvez accéder à l’éditeur d’espaces réservés de modèle en allant dans **Ultimate Multisite > Settings > Sites**, en faisant défiler jusqu’à la zone Options de modèle de site, puis en cliquant sur le lien **Modifier les espaces réservés**.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Zone Options de modèle de site dans la page des paramètres Sites](/img/config/settings-sites-templates-section.png)
 
-Cela vous amènera à l'éditeur de contenu des espaces réservés, où vous pouvez ajouter des espaces réservés et leur contenu respectif.
+Cela vous mènera à l’éditeur de contenu des espaces réservés, où vous pouvez ajouter des espaces réservés et leur contenu respectif.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![Point d’entrée de l’éditeur d’espaces réservés de modèle](/img/config/settings-sites-templates-section.png)

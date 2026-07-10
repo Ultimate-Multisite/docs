@@ -1,105 +1,152 @@
 ---
-title: Bestsiz AI Agent Täsiri
+title: Gratis AI Agent Sazlamalary
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Ayarları
+# Gratis AI Agent Sazlamalary {#gratis-ai-agent-settings}
 
-Gratis AI Agent'taki **Ayarlar → Gelişmiş** ekranı, v1.5.0 sürümünde tanıtılan arka uç entegrasyonları için yönetici düzeyinde yapılandırma sağlar. Bu sayfa **Geri Bildirim Uç Noktası (Feedback Endpoint)** alanlarını ve beklenen formatını belgeler.
+Gratis AI Agent-de **Settings → Advanced** ekrany backend integrasiýalary üçin administrator derejesindäki konfigurasiýany üpjün edýär. Bu sahypa feedback ugratmagy, gözleg üpjün ediji açarlaryny, dolandyrylýan Superdav hyzmat sazlamasyny, Google Calendar dolandyryşlaryny, TextBee SMS sazlamalaryny we tor boýunça aýratynlyk baýdaklaryny resminamalaşdyrýar.
 
-## Ayarlara Erişim
+## Sazlamalara girmek {#accessing-settings}
 
-1. WordPress yönetim panelinde, **Gratis AI Agent → Ayarlar** bölümüne gidin.
-2. **Gelişmiş (Advanced)** sekmesine tıklayın.
+1. WordPress admin-de **Gratis AI Agent → Settings** bölümine gidiň.
+2. **Advanced** goýmasyna basyň.
 
-## Geri Bildirim Uç Noktası Yapılandırması
+## Feedback endpoint konfigurasiýasy {#feedback-endpoint-configuration}
 
-Geri bildirim uç noktası, bir kullanıcı başparmak aşağı düğmesi aracılığıyla geri bildirim gönderdiğinde, otomatik istem panosu (auto-prompt banner) veya `/report-issue` komutu ile AI agent'tan POST istekleri alır.
+Feedback endpoint AI agent ulanyjy thumbs-down düwmesi, awtomatik-prompt banner ýa-da `/report-issue` buýrugy arkaly feedback iberende POST haýyşlaryny kabul edýär.
 
-| Alan | Açıklama |
+| Meýdan | Düşündiriş |
 |---|---|
-| **Feedback Endpoint URL** | Geri bildirim gönderimlerini JSON gövdesiyle HTTP POST istekleri olarak alan URL'dir. |
-| **Feedback API Key** | Her geri bildirim isteğinin `Authorization` başlığında gönderilen bir bearer token'dur. Uç noktanız kimlik doğrulaması gerektirmiyorsa boş bırakın. |
+| **Feedback Endpoint URL** | JSON body bilen HTTP POST haýyşlary hökmünde feedback tabşyryklaryny kabul edýän URL. |
+| **Feedback API Key** | Her feedback haýyşynyň `Authorization` header-inde iberilýän bearer token. Endpoint-iňiz autentifikasiýa talap etmeýän bolsa, boş goýuň. |
 
-### Beklenen JSON Yükü (Payload)
+### Garaşylýan JSON payload {#expected-json-payload}
 
-Geri bildirim uç noktanız, en az aşağıdaki alanlara sahip bir JSON gövdesini kabul etmelidir:
+Feedback endpoint-iňiz azyndan aşakdaky meýdanlary bolan JSON body kabul etmeli:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Cevap fiyatlandırma hakkında yanlış.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Konuşma bağlamına bağlı olarak yükte ek alanlar bulunabilir.
+Söhbet kontekstine baglylykda payload içinde goşmaça meýdanlar bolup biler.
 
-### `triage_category` Değerleri
+### `triage_category` bahalary {#triagecategory-values}
 
-AI sınıflandırma katmanı, yükü iletmeden önce `triage_category` için aşağıdaki değerlerden birini atar:
+AI triage gatlagy payload-y ugratmazdan öň `triage_category` üçin aşakdaky bahalardan birini belleýär:
 
-| Değer | Anlamı |
+| Baha | Manysy |
 |---|---|
-| `factual_error` | Asistan yanlış olgusal bilgi sağlamıştır. |
-| `unhelpful_answer` | Yanıt teknik olarak doğruydu ancak faydalı değildi. |
-| `inappropriate_content` | Yanıt, kullanıcıların görmemesi gereken içerik içermiştir. |
-| `other` | Geri bildirim bilinen bir kategoriyle eşleşmemiştir. |
+| `factual_error` | Kömekçi nädogry fakt maglumatyny berdi. |
+| `unhelpful_answer` | Jogap tehniki taýdan dogrydy, ýöne peýdaly däldi. |
+| `inappropriate_content` | Jogap ulanyjylara görkezilmeli däl mazmuny öz içine aldy. |
+| `other` | Feedback belli bir kategoriýa gabat gelmedi. |
 
-### Kimlik Doğrulama
+### Autentifikasiýa {#authentication}
 
-Eger siziň endpointi kimlikten geçip bilmese, **Feedback API Key** ulanylyp bilýän ulanyjy tokeni bilen sozlaň. Agent şu görnüşde göndereýär:
+Endpoint-iňiz autentifikasiýa talap edýän bolsa, **Feedback API Key** meýdanyny bearer token-iňiz bilen dolduryň. Agent şuny iberýär:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Eger **Feedback API Key** ulanylyp bilýän ulanyjylar boýunça boş bolsa, `Authorization` header ýüklenmez.
+**Feedback API Key** meýdany boş bolsa, `Authorization` header iberilmeýär.
 
-### Feedback Toplamagyňyzy Özüňiz Ýigermegi
+### Feedback ýygnamagy öçürmek {#disabling-feedback-collection}
 
-Hem **Feedback Endpoint URL** hem-de **Feedback API Key** ulanylyp bilýän ulanyjylar boýunça boş qalaň. Bu wagt, "thumbs-down" düwmesi we feedback UI ulanyjylar üçin görünýär, ýöne göndermeler hiç hili daşky hyzmatda geçirilmez.
+**Feedback Endpoint URL** we **Feedback API Key** meýdanlarynyň ikisini hem boş goýuň. Thumbs-down düwmesi we feedback UI ulanyjylar üçin görünýän bolup galýar, ýöne tabşyryklar hiç bir daşarky hyzmata ugradylmaýar.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Hem **Advanced** tabda, **Brave Search API Key** ulanylyp bilýän ulanyjylar boýunça internet gözlegini (Internet Search) işleýär.
+Şeýle hem **Advanced** goýmasynda **Brave Search API Key** meýdany [Internet gözleg](../configuration/internet-search) ukybyny işjeňleşdirýär.
 
-| Field | Description |
+| Meýdan | Düşündiriş |
 |---|---|
-| **Brave Search API Key** | Brave Search dizaýn edijisi dashboardyndan alnan API açaryňyz. AI asistanida internet gözlegini işje etmek üçin zerurdyr. |
+| **Brave Search API Key** | Brave Search developer dashboard-dan API açaryňyz. AI kömekçide internet gözlegini işjeňleşdirmek üçin zerur. |
 
-Bu ulanyjyji belgi (field label) Brave Search API ýa-daşygy sahhasyna geçmek üçin kliklenip biljek linki öz içine alýar. Internet gözlegini deaktiv etmek üçin boş qalaň.
+Meýdan belligi Brave Search API hasaba alyş sahypasyna basyp bolýan linki öz içine alýar. Internet gözlegini öçürmek üçin boş goýuň.
 
-Bu funksiýa barada ulanyjylar üçin dokumentasiýa üçin [Internet Search](https://your-site.com/configuration/internet-search) bilen tanyşyň.
+Bu aýratynlyk boýunça ahyrky ulanyjy resminamasy üçin [Internet gözleg](../configuration/internet-search) serediň.
 
-## Feature Flags (Funksiýa Bayraklary)
+## Dolandyrylýan Superdav hyzmaty {#managed-superdav-service}
 
-v1.9.0-da hem ýazylyp geçirilip, **Settings → Feature Flags** taby optional funksionallik üçin düwärli düwärleri (toggle switches) berýär. Her bir bayrak ulanyjylar boýunça işje etmekde we deaktiv etmekde ulanylýar; bu wagt her bir site üçin özüni üýtgetmek mümkin däl.
+Superdav AI Agent v1.18.0 goldanýan saýtlar üçin dolandyrylýan Superdav hyzmat endpoint-lerini we awtomatik birikme üpjün edilişini goşýar. Saýtyňyz el bilen konfigurirlenen hyzmat endpoint-iň ýerine hosted üpjün edijä birikmeli bolanda şu dolandyryşlary ulanyň.
 
-### Feature Flagsa Girmek
+| Meýdan | Düşündiriş |
+|---|---|
+| **Managed Superdav Service** | Goldanýan saýtlar üçin hosted Superdav hyzmat birikmesini işjeňleşdirýär. |
+| **Provision Connection** | Awtomatik endpoint we şahsyýet maglumatlary üpjün edilişini başlaýar. Saýtyň dolandyrylýan üpjün edijini ulanmalydygyny tassyklanyňyzdan soň muny ulanyň. |
+| **Service Endpoint / Connection Status** | Üpjin edilişden soň häzirki endpoint-i ýa-da birikme ýagdaýyny görkezýär. |
 
-1. WordPress administrasiýasyna girip **Gratis AI Agent → Settings**-e gitdiň.
-2. **Feature Flags** tabyny klikdeň.
+Üpjin edilişden soň sazlamalary ýatda saklaň we dolandyrylýan-hyzmat iş akymlaryna bil baglamazdan öň birikme ýagdaýyny barlaň. Üpjin ediliş başa barmasa, görkezilen gaýtadan synanyşmak görkezmelerini gözden geçiriň we saýtyň hosted üpjün edijini ulanmaga rugsadynyň bardygyny tassyklaň.
 
-### Access Control Flags (Girawçylyk Bayraklary)
+## Google Calendar konfigurasiýasy {#google-calendar-configuration}
 
-| Flag | Default | Description |
+Superdav AI Agent v1.18.0 calendar aýratynlyklary işjeňleşdirilende, agent konfigurirlenen calendar-lary we waka jikme-jikliklerini okap bilýär. Calendar gurallary okamak ugrukdyrylandyr we tertipden habarly ýatlatmalar, gatnaşyjylary yzarlamak we kontakt laýyklygyny tapmak üçin peýdalydyr.
+
+| Meýdan | Düşündiriş |
+|---|---|
+| **Google Calendar Credentials** | Calendar maglumatlaryny okamak üçin zerur bolan şahsyýet maglumatlaryny ýa-da token birikmesini saklaýar. |
+| **Calendar Selection** | Agent-iň barlap biljek konfigurirlenen calendar-laryny çäklendirýär. |
+| **Calendar Connection Status** | Häzirki şahsyýet maglumatlarynyň calendar-lary we wakalary okap bilýändigini tassyklaýar. |
+
+Calendar şahsyýet maglumatlaryny agent-e gerek bolan calendar-lar bilen çäklendiriň. Ýagdaý möhleti geçen token-i görkezýän bolsa, şahsyýet maglumatlaryny täzeden birikdiriň ýa-da çalşyň.
+
+## TextBee SMS habarnamalary {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 konfigurirlenen habarnama iş akymlary üçin SMS üpjün ediji hökmünde TextBee goşýar. SMS habarnamalary duýgur ýa-da ulanyja gönükdirilen habarlar üçin adam tassyklama geçelgeleri bilen bile ulanylmalydyr.
+
+| Meýdan | Düşündiriş |
+|---|---|
+| **TextBee API Key** | TextBee SMS üpjün edijisine iberilýän haýyşlary autentifikasiýa edýär. |
+| **TextBee Device / Sender** | Üpjin ediji talap edende, çykýan habarlar üçin ulanylýan TextBee iberijisini ýa-da enjamyny saýlaýar. |
+| **SMS Notifications Enabled** | Tassyklanan iş akymlaryna tekst-habar habarnamalaryny ibermäge rugsat berýär. SMS iberilmeginiň öňüni almak üçin öçürilen goýuň. |
+
+Synag habaryny diňe administratoryň eýeçiligindäki belgä iberiň, soň meýilleşdirilen ýa-da gatnaşyjylara gönükdirilen ýatlatmalary işjeňleşdirmezden öň tassyklama-geçelge häsiýetini tassyklaň.
+
+## Aýratynlyk baýdaklary {#feature-flags}
+
+Şeýle hem v1.9.0-da girizilen **Settings → Feature Flags** goýmasy goşmaça funksiýalar üçin toggle wyklýuçatellerini üpjün edýär. Her baýdak tor boýunça ýa işjeň, ýa-da öçürilen bolýar; häzirki wagtda her-saýt boýunça aýratyn üýtgetme ýok.
+
+### Aýratynlyk baýdaklaryna girmek {#accessing-feature-flags}
+
+1. WordPress admin-de **Gratis AI Agent → Settings** bölümine gidiň.
+2. **Feature Flags** goýmasyna basyň.
+
+### Elýeterlilik dolandyryş baýdaklary {#access-control-flags}
+
+| Baýdak | Deslapky | Düşündiriş |
 |---|---|---|
-| **Administratorlara Cheklendirme** | Off | Bu seçeneni açanda, diňe `administrator` rolyny bolan ulgular AI Agent chat panelini açyp bilýärler. Beka kalyk ulgular "Administrator bilen habarlaşyň" meselesini görýärler. |
-| **Ulut Adamlaryna Cheklendirme** | Off | Multisite ulutynda bu seçeneni açanda, diňe Super Administratorlar agentden peýdalanyp bilýärler. Individual site administratorlary bloklanýar. Her iki opsional hem açylsa, "Administratorlara cheklendirme" hasynyň üstünde bellenir. |
-| **Abonnuklara Girilmegi Izin Ber** | Off | Bu seçeneni açanda, `subscriber` rolyny bolan ulgular chat arayüzinden peýdalanyp bilýärler, ýöne olary diňe okamak üçin (post döretmek ýa-da dürli zatlary üýtgetmek mümkin däl). |
-| **Üzümde Bolmadyklar Üçin Özeltmek** | Off | Bu, Ultimate Multisite üje bolmagy statusy bilen baglanyşyklydyr. Bu seçeneni açanda, faýatlykda (membership) aktiv bolup durmadyk site üçin chat ýapylmaz. |
+| **Administratorlar bilen çäklendir** | Öçük | Işledilende, diňe `administrator` roly bolan ulanyjylar AI Agent söhbet panelini açyp biler. Beýleki ähli rollar ýerine "Administratoryňyz bilen habarlaşyň" habaryny görer. |
+| **Network Admins bilen çäklendir** | Öçük | Multisite ulgamynda işledilende, agentden diňe Super Admins peýdalanyp biler. Aýry-aýry sahypa adminleri bloklanýar. Ikisi-de işledilen bolsa, "Administratorlar bilen çäklendir" sazlamasyndan ileri tutulýar. |
+| **Subscriber elýeterliligine rugsat ber** | Öçük | Işledilende, `subscriber` roly bolan ulanyjylar söhbet interfeýsini ulanyp biler, emma diňe okamak mümkinçilikleri bilen çäklendirilýär (ýazgy döretmek ýa-da sazlamalary üýtgetmek ýok). |
+| **Agza däl ulanyjylar üçin öçür** | Öçük | Ultimate Multisite agzalyk ýagdaýy bilen utgaşýar. Işledilende, işjeň agzalygy bolmadyk sahypalar üçin söhbet gizlenýär. |
 
-### Branding Flaglar
+### Brending baýdaklary {#branding-flags}
 
-| Flag | Default | Description |
+| Baýdak | Deslapky | Düşündiriş |
 |---|---|---|
-| **"Gratis AI Agent" Footerini Ýatlamak** | Off | Chat widgeti aşakdaky böleginde görkezilýän branding (marka) agzalyny aýyrmak üçin. White-label (başga bir markany ulanmak) ulgamlary üçin maslahat berilýär. |
-| **Custom Agent Ady** | *(boş)* | Chat başlygynda we administrator menüsinde standart "Gratis AI Agent" agzalyny öz maglumatlaryňyz bilen üýtgetmek üçin. Boş qalaýan, standartdy ulanmak üçin. |
-| **Agent Seçijisini Ýatlamak** | Off | Bu seçeneni açanda, ulgular beýleki beş agent arasynda geçip bilmezler. Hawa, häzirki agent Settings → General-de awtomatiki goýulan zat hökmünde saklanýar. |
-| **Site Onu Ýatlatma Saryny Ulanmak** | Off | Chat widgeti başlygyndaky standart AI ikonyny WordPress site saryny bilen üýtgetmek üçin (Appearance → Customize → Site Identity-de goýulýar). |
+| **"Powered by Gratis AI Agent" aşaky ýazgysyny gizle** | Öçük | Söhbet widgetiniň aşagynda görkezilýän brending salgylanma setirini aýyrýar. White-label ýerleşdirmeler üçin maslahat berilýär. |
+| **Ýörite agent ady** | *(boş)* | Söhbet sözbaşysyndaky we admin menýusyndaky deslapky "Gratis AI Agent" belligini öz önüm adyňyz bilen çalyşýar. Deslapkyny ulanmak üçin boş goýuň. |
+| **Agent saýlaýjyny gizle** | Öçük | Işledilende, ulanyjylar içindäki bäş agentiň arasynda geçip bilmez. Häzirki agent Settings → General bölüminde deslapky hökmünde düzülenine berkidilýär. |
+| **Söhbet awatary hökmünde sahypa nyşanyny ulan** | Öçük | Söhbet widgetiniň sözbaşysyndaky deslapky AI nyşanyny WordPress sahypa nyşany bilen çalyşýar (Appearance → Customize → Site Identity astynda bellenýär). |
 
-### Üýtgeşmeleri Goşmak
+### Awtomatlaşdyrma howpsuzlyk baýdaklary {#automation-safety-flags}
 
-Häzirki flagyň anyglaýan ýa-da ýatlatma boýunça **Save Settings** düwmenine basyň. Üýtgeşmeler hemen täsir edýär — cache temizlemek ýa-da pluginleri işlendirmek gerek däl.
+Superdav AI Agent v1.18.0 has howpsuz awtomatlaşdyrma işleýişleri üçin adam tassyklama geçelgelerini we ýatlatma ýazgylaryny girizýär. Bu dolandyryşlar gurnalan bukja baglylykda aýratynlyk baýdaklarynda ýa-da giňişleýin awtomatlaşdyrma sazlamalarynda peýda bolup biler.
+
+| Baýdak | Deslapky | Düşündiriş |
+|---|---|---|
+| **Adam tassyklamasy talap edilýär** | Maslahat berilýär: açyk | Duýgur awtomatlaşdyrmalary ygtyýarly ulanyjy teklip edilýän hereketi gözden geçirip tassyklaýança saklaýar. |
+| **Ýatlatmalaryň gaýtalanmagyny öňüni almak** | Açyk | Gaýtadan synanyşyklar ýa-da meýilleşdirilen işleýişler gaýtalanýan bildirişleri ibermez ýaly iberilen ýatlatmalary ýazga alýar. |
+| **Calendar gurallaryny işjeňleşdir** | Düzülýänçä öçük | Agente düzülen Google kalendarlaryny we wakalaryny okamaga rugsat berýär. |
+| **SMS bildirişlerini işjeňleşdir** | Düzülýänçä öçük | Maglumatlar saklanandan soň tassyklanan iş akymlaryna TextBee SMS bildirişlerini ibermäge rugsat berýär. |
+
+### Üýtgeşmeleri ulanmak {#applying-changes}
+
+Islendik baýdagy üýtgedeniňizden soň **Sazlamalary sakla** düwmesine basyň. Üýtgeşmeler derrew güýje girýär — cache arassalamak ýa-da plugin-i täzeden işjeňleşdirmek talap edilmeýär.

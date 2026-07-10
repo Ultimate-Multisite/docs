@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addonsek Ultimate Multisite-ari beste funtzioak eta integrazioak ez duzun bitartean aukera ematen ditu. Beste addonak laburraldi dira eta [ultimatemultisite.com](https://ultimatemultisite.com) itzultik eritzu dituzte.
 
-## Instalazioa
+## Instalazioa {#installation}
 
 Addonsek instalatzen da bi moduan:
 
 1. **Addon Paguerarekin** -- WordPress administrazioaren site-aren addon management (addoneak eskaintzen) paguerarekin jarraitu
 2. **Manual Eskaintzeko** -- [sortuaren kontuari](https://ultimatemultisite.com/my-account/downloads/) download egin eta Plugins > Add New (Addonak > Lehen Addonak) paarbilduen bidez uzaile duzu
 
-## Addons Disponibideak
+## Addons Disponibideak {#available-addons}
 
 | Addon | Deskribaponia |
 |-------|-------------|

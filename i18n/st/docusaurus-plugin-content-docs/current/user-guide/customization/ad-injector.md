@@ -3,7 +3,7 @@ title: Mofuta oa ho fana ka lits'ho tsa ho injeka
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Go Pelele Ads ka Netong ea hau le Ultimate Multisite: Ad Injector
+# Go Pelele Ads ka Netong ea hau le Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector ke **add-on e tshepa** e ntse u le litaba ho ba le litaba tsa hau ka sebope sa ho edit.
 
@@ -35,7 +35,7 @@ U ka ba le ho fana ka ads tse fapaneng ka header ea Admin Pages ho batho ba le s
 
 _Ha u batla ho bona ads ka back-end ea hau ea bophelo, a go tla ka _Admin Panel Ads_ option._
 
-### Ho feta ho ba le litaba tsa ad
+### Ho feta ho ba le litaba tsa ad {#beyond-advertising}
 
 U ka u sebelisa Ultimate Multisite: Ad Injector ho fana ka tšepo ho sebope sa ho fetang.
 

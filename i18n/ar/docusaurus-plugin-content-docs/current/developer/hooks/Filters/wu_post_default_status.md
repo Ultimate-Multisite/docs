@@ -8,7 +8,7 @@ _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 
 Filters the object data before it is stored into the database.
 
-## Parameters
+## Parameters {#filter-wupostdefaultstatus}
 
 | الاسم | النوع | الوصف |
 |------|------|-------|
@@ -16,10 +16,10 @@ Filters the object data before it is stored into the database.
 | `$post_type` | `string` | نوع المنشور. |
 | `$this` | `\Base_Model` | كائن النموذج. |
 
-### Since
+### Since {#parameters}
 
 - 2.0.0
 
-### المصدر
+### المصدر {#since}
 
 مُعرَّف في [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) في السطر 320.

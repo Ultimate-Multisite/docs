@@ -3,7 +3,7 @@ title: Automaatiline otsing ja asendamine veebilehtemudelides
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automaat otsing ja asendamine veebilehtemudel (v2)
+# Automaat otsing ja asendamine veebilehtemudel (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**See tutori nõuab WP UItimo versiooni 2.x.**_
 
@@ -17,7 +17,7 @@ Keskus saab siis kliendi selle välja täita registreerimise ajal.
 
 Ultimate Multisite asendab seejärel paigutajad automaatselt kliendid antud andmetega.
 
-## **"Paigutaja täidetud veebilehtem" probleem lahendamine**
+## **"Paigutaja täidetud veebilehtem" probleem lahendamine** {#solving-the-template-full-of-placeholders-problem}
 
 See kõik on suurepärase, kuid me vastame kahjuvaldkonnas: meie veebilehtemud - mida kliendid külastavad - on täisid kaunevälja paigutajad, mis ei räägi palju.
 

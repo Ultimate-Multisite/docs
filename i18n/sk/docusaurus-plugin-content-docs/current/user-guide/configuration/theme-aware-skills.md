@@ -3,11 +3,11 @@ title: Zručnosti ovplyvnené témou
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skilly podľa témy
+# Skilly podľa témy {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 obsahuje štyri nové vbuilt-in skill, ktoré sa automaticky prispôsobia k vašej aktívnej WordPress téme. Tieto skille poskytujú špecializované návody a schopnosti navrhnuté na základe architektúry a funkcií vašej témy.
 
-## Čo sú Skilly podľa témy?
+## Čo sú Skilly podľa témy? {#what-are-theme-aware-skills}
 
 Skilly podľa témy sú predkonfigurované znalostné bázy a množiny nástrojov, ktoré AI asistent automaticky vyberá na základe témy WordPress, ktorá je v súčasnosti aktív na vašom svete. Keď prepnete tému, dostupnosť skillov asistenta sa automaticky aktualizuje – žiadna manuálna konfigurácia nie je potrebná.
 
@@ -18,9 +18,9 @@ Každý skill obsahuje:
 - **Príklady personalizácie** — kódové fragmenty a vzory konfigurácie pre bežné úlohy
 - **Najlepšie praxe (Best practices)** — odporúčania pre architektúru témy a pracovný postup
 
-## Dostupné Skilly podľa témy
+## Dostupné Skilly podľa témy {#available-theme-aware-skills}
 
-### Blokové témy (Block Themes)
+### Blokové témy (Block Themes) {#block-themes}
 
 **Prispôsobené na:** Témy, ktoré používajú blokovú architektoniku WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ Skill Block Themes poskytuje návody na:
 
 **Automaticky aktivované, keď:** Vaša aktívna téma je bloková téma (podporuje funkciu `block-templates`).
 
-### Klasické témy (Classic Themes)
+### Klasické témy (Classic Themes) {#classic-themes}
 
 **Prispôsobené na:** Tradičné WordPress témy, ktoré používajú PHP šablóny a klasický editor.
 
@@ -48,7 +48,7 @@ Zrozumenie hierarchie tém a šablónnych značiek
 
 **Automaticky aktivované, keď:** Vaša aktívna téma je klasická (nie bloková).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Prímenia:** Sitov načíňajúci používajú plugin Kadence Blocks pre pokročilý dizajn na základe blokov.
 
@@ -62,7 +62,7 @@ Skil Kadence Blocks poskytuje návody na:
 
 **Automaticky aktivované, keď:** Plugin Kadence Blocks je aktív na vašom sieti.
 
-### Kadence Téma
+### Kadence Téma {#kadence-theme}
 
 **Prímenia:** Sitov načíňajúci používajú tému Kadence pre blokový dizajn a personalizáciu.
 
@@ -76,25 +76,25 @@ Skil Kadence Téma poskytuje návody na:
 
 **Automaticky aktivované, keď:** Je téma Kadence vašou aktívnou témou.
 
-## Ako sa skily vyberajú
+## Ako sa skily vyberajú {#how-skills-are-selected}
 
 Asistent automaticky detekuje vašu aktívnu tému a nainštalované pluginy pri každom príspevku. Ak je k dispozícii odpovedajúce skill, je automaticky načítaný do kontextu asistenta. Musíte skill manuálne aktivovať alebo prepínať nebudete.
 
-### Viac skily
+### Viac skily {#multiple-skills}
 
 Ak, ak máte viacero schopností pre váš web (napríklad, ak máte aktivý aj Kadence Blocks a Kadence Theme), asistent má prístup k všetkým príslušným schopnostiam a môže odkazovať na pokyny z každého z nich.
 
-### Premienenie tém
+### Premienenie tém {#switching-themes}
 Keď zmeníte aktívnu tému, dostupnosť schopností asistenta sa automaticky aktualizuje pri nasledujúcej správe. Napríklad:
 
 1. Používate tému s blokovými šablónkami s aktivnou schopnosťou **Block Themes**.
 2. Premienite sa na klasickú tému.
 3. Pri vašej ďalšej správe je schopnosť **Classic Themes** automaticky načítaná, a schopnosť **Block Themes** už nie je dostupná.
 
-## Používanie schopností ovplyvnených témou
+## Používanie schopností ovplyvnených témou {#using-theme-aware-skills}
 Aby ste mohli využiť schopnosť ovplyvnenú témou, jednoducho popíšte v chate, čo chcete urobiť. Asistent automaticky odkazuje na pokyny príslušnej schopnosti.
 
-### Príklady promptov
+### Príklady promptov {#example-prompts}
 
 **Pre Block Themes:**
 > "Vytvorte sekciu s hlavným obrázkom a centrálným textom pomocou blokových vzorov."

@@ -3,7 +3,7 @@ title: Jere Li Yon Link Ki Ka Pase Pou Plan
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Jeremanje Liyen Liens Ki Shareable pou Plan yo
+# Jeremanje Liyen Liens Ki Shareable pou Plan yo {#managing-shareable-links-for-plans}
 
 Ultimate Multisite bay ou opsyon pou ou pataje liens plan dirèkt ak kliyan ou la. Pou fè sa, ale nan nenpòt paj edisyon plan ou epi klike sou bouton _Click to copy the Shareable Link_.
 

@@ -1,120 +1,124 @@
 ---
-title: An t-uisgeailte agus an t-broadcastan a sgaidh
+title: A' cur phuist-d agus chraolaidhean
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# E-mail agus Broadcas (v2)
+# A’ cur phuist-d agus chraolaidhean (v2) {#sending-emails-and-broadcasts-v2}
 
-_**NOTE CRUCIAL: An seo a tha a' sealltainn an article seo do Ultimate Multisite version 2.x.**_
+_**NOTA CUDROMACH: Tha an t-artaigil seo a’ buntainn ri Ultimate Multisite tionndadh 2.x.**_
 
-Tha Ultimate Multisite ag cumail seòl a bheil thu a' faic a' tuilleadh le earaidir a' chùiseachadh le e-mail a sgaidh do chùisfeir a tha a' tairgheitheachdaich no gruaich de chùisfeir, agus a sgaidh coimhrechanan ar iadair admin dashboard airson broadcas.
+Tha Ultimate Multisite a’ tighinn le feart a leigeas leat conaltradh a dhèanamh ris na custamairean agad le bhith a’ cur post-d gu cleachdaiche targaidichte no gu buidheann de chleachdaichean, a bharrachd air brathan a chur air an Dashboard rianachd aca gus fiosan a chraoladh
 
-## Añadh annotadmin do dashboard na chùisfeirchan
+## Cuir brathan rianachd ri Dashboard do luchd-ceannach le Craolaidhean {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Le càil air a' sgaidh seòl broadcast de Ultimate Multisite, leat eadar a' sgaidh **annotadmin** do dashboard admin de chùisfeir a tha thu.
+Le bhith a’ cleachdadh feart craolaidh Ultimate Multisite, faodaidh tu **brathan rianachd** a chur ri Dashboard rianachd fo-làraich a’ chleachdaiche agad.
 
-Tha seo mòr dtìreach a rugumhaidh thu thu a bhith a' faic annamach mar a tha thu ag iarraidh a' sgaidh annamach mar leithid seachainn systemach no a' tairgseachadh earrachdaichean no seòlaichean ùra do chùisfeirchan a tha thu. Mar a tha annotadmin a' fàil a' faic air dashboard na chùisfeir.
+Tha seo air leth cuideachail ma dh’fheumas tu fios a dhèanamh, mar chumail suas siostaim, no toraidhean no seirbheisean ùra a thabhann do na cleachdaichean làithreach agad. Seo mar a bhios am brath rianachd a’ coimhead air Dashboard a’ chleachdaiche agad.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
- airson a' sgaidh annotadmin, atharrach do dashboard admin de thu ngrath agus an tairgse a tha thu, agus air a' chùis a thabhairt **Ultimate Multisite**, tha thu ag iarraidh a' faic an amasan **Broadcasts**.
+Gus brath rianachd a thòiseachadh, rach gu Dashboard rianachd an lìonra agad agus fon chlàr-taice **Ultimate Multisite**, gheibh thu an roghainn **Craolaidhean**.
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Duilleag liosta nan Craolaidhean ann an rianachd Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Is eadar a' sgaidh broadcas a tha thu a' fhaic air:
+Faodaidh tu craolaidhean a tha ann mu thràth a dheasachadh cuideachd:
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Eadar-aghaidh deasachaidh craolaidh](/img/admin/broadcast-edit.png)
 
-Frum an seòl seo, thànaich air **Add Broadcast** ar fhaic a' chùis.
+Bhon duilleag seo, briog air a’ phutan **Cuir Craoladh Ris** aig a’ mhullach.
 
-Bidh seo a' tairgseachadh an amasan Add broadcast a tha thu a' faic annamach leat a thabhairt an t-aithris a tha thu a' faic.
+Fosglaidh seo uinneag mhodail Cuir craoladh ris far an urrainn dhut taghadh dè an seòrsa craolaidh a tha thu airson a chur.
 
-Atharrach do amasan eile sal a tha thu a' faic: **Message** agus tha thu ag iarraidh a' sgaidh **Next Step**.
+Tagh **Teachdaireachd** agus an uair sin briog air a’ phutan **An Ath Cheum**.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![Modal Cuir craoladh ris leis an roghainn Teachdaireachd air a taghadh](/img/admin/broadcast-add-message.png)
 
-Tha an amasan eile a' toirt a' chùis do chùis a thabhairt do chùisfeir a tha thu a' tairgheitheachdaich no do sgàil. Noteach, leat a thabhairt daoine mòra no sgàil mòra.
+Iarraidh an ath uinneag ort an dara cuid an **Neach-ceannach targaid** no an **Toradh targaid**. Thoir an aire gun urrainn dhut barrachd air aon chleachdaiche no barrachd air aon toradh a thaghadh.
 
-Tha a' chluas a' chluas airson a' chluas air a bhith agad (user account) no eòil (product), rinn a' chluas an fhadair (keyword) san fhadair.
+Gus cunntas cleachdaiche no toradh a lorg, feumaidh tu tòiseachadh air am prìomh-fhacal a thaipeadh am broinn an raoin.
 
-An tairm **Message type** (tiù na meil), leide sin thu eadar a thig an t-uisge (color) a tha an t-uisge. Tha seo a' chluas an tòrraidh (urgency) de dhòigh agad.
+Fon raon **Seòrsa teachdaireachd**, faodaidh tu dath a’ bhratha a thaghadh. Cuiridh seo cuideam air èiginneachd na teachdaireachd agad.
 
-An uair a tha thu air a bhith ag sealltainn, leide is ghràdh **Next Step** (Tais a tha a' chluas).
+Faodaidh tu an uair sin briogadh air **An Ath Cheum**.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Raointean luchd-ceannach targaid, toradh targaid agus seòrsa teachdaireachd airson craoladh Teachdaireachd](/img/admin/broadcast-message-targets.png)
 
-Tha an t-uisge eile là ma tha thu ag comharrachadh an tòrraidh agad gu sùilinn a' chluas (subject) agus an amras/meil (content/message) a tha thu a' ginn a thig air a bheach.
+’S ann san ath uinneig a dh’fhaodas tu tòiseachadh air do theachdaireachd a sgrìobhadh le bhith a’ cur a-steach a’ chuspair agus an t-susbaint/teachdaireachd a tha thu airson a chraoladh do na cleachdaichean.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Cuspair teachdaireachd craolaidh agus deasaiche susbaint air ceum an sgrìobhaidh](/img/admin/broadcast-edit.png)
 
-An uair a tha thu a' ginn an t-uisge, leide is ghràdh **Send** (Sgàil).
+Às dèidh dhut do theachdaireachd a chruthachadh, faodaidh tu am putan **Cuir** a bhualadh.
 
-Chan eil seo a' chluas. Tha an t-uisge admin agad ag tigh agad air a dhèanamh agad agad agad.
+Agus sin agad e. Bu chòir don bhrath rianachd nochdadh sa bhad air Dashboard a’ chleachdaiche agad.
 
-## Sgàil meil do eadar-dhealaichean (customers)
+## Cuir puist-d gu do luchd-ceannach {#send-emails-to-your-customers}
 
-Leig a' chluas a' chluas Ultimate Multisite, leig thu meil a sgàil do eadar-dhealaichean. Tha thu ag deaghailte an tairm a sgàil air do chluas a tha a' ginn (specific users) no a thig air gruaich (target user group) a' chluas air a bheach gun eòil (product) no plan a tha thu a' ginn.
+Le bhith a’ cleachdadh feart craolaidh Ultimate Multisite, faodaidh tu post-d a chur gu na cleachdaichean agad. Tha roghainn agad am post-d a chur a-mhàin gu cleachdaichean sònraichte no buidheann chleachdaichean sònraichte a thargaideachadh stèidhichte air an toradh no am plana fon a bheil iad fo-sgrìobhte.
 
-Tha an t-uisge a sgàil a' chluas a' chluas, rinn a' chluas admin de dhòigh agad agus san meall Ultimate Multisite, tha thu ag fhadair an t-uisge a sgàil (Broadcast option).
+Gus craoladh puist-d a thòiseachadh, rach gu Dashboard rianachd an lìonra agad agus fon chlàr-taice Ultimate Multisite, gheibh thu an roghainn Craoladh.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Duilleag liosta nan Craolaidhean a thathar a’ cleachdadh mar thoiseach tòiseachaidh airson craoladh puist-d](/img/admin/broadcasts-list.png)
 
-Air a' chluas seo, leide is ghràdh **Add broadcast** (Aig add broadcast) air a chluas.
+Bhon duilleag seo, briog air a’ phutan **Cuir craoladh ris** aig a’ mhullach.
 
-Tha seo a' chluas a' chluas Add broadcast a tha ag tigh agad air a thig an t-uisge a tha thu a' ginn a sgàil (broadcast type) a tha thu a' ginn a bheach. Ghàdh a' chluas **Email** (Meil) agus leide is ghràdh **Next Step** (Tais a tha a' chluas).
+Fosglaidh seo uinneag mhodail Cuir craoladh ris far an urrainn dhut taghadh dè an seòrsa craolaidh a tha thu airson a chur. Tagh **Post-d** agus an uair sin briog air a’ phutan **An Ath Cheum**.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal Cuir craoladh ris leis an roghainn Post-d air a taghadh](/img/admin/broadcast-add-email.png)
 
-Tha an t-uisge eile ag toirt do chluas a' chluas air a ginn (Target customer) no eòil a thig air a bheach (Target product). Note sin, leig thu a thig daoine mòran no eòil mòran.
+Iarraidh an ath uinneag ort an dara cuid an **Neach-ceannach targaid** no an **Toradh targaid**. Thoir an aire gun urrainn dhut barrachd air aon chleachdaiche no barrachd air aon toradh a thaghadh.
 
-Chan eil airson seachdainn airson curtha air a bhith agad (user account) no curtha (product), rinn an t-eòlas (keyword) sin air a bhith agad anns an fhadhlan.
+Gus cunntas cleachdaiche no toradh a lorg, feumaidh tu tòiseachadh air am prìomh-fhacal a thaipeadh am broinn an raoin.
 
-Rinn an t-eòlas (target audience) a tha agad, is eadar-dheargadh **Next Step** a tha thu ag iarraidh.
+Nuair a bhios an luchd-èisteachd targaid agad air a thaghadh, faodaidh tu briogadh air **An Ath Cheum**.
 
-![Seachdainn curtha agus seachdainn curtha airson email broadcast](/img/admin/broadcast-email-targets.png)
+![Taghadh luchd-ceannach targaid agus toradh targaid airson craoladh Post-d](/img/admin/broadcast-email-targets.png)
 
-Tha an t-uisge sin làimhdeachdchan a tha a' chlàradh air a bhith agad, agus is eadar-dheargadh a tha thu ag iarraidh a bheach a' chlàradh (subject) agus an amasan/meil (content/message) a tha thu a' fhaighinn air a chur air an curtha.
+’S ann san ath uinneig a dh’fhaodas tu tòiseachadh air do phost-d a sgrìobhadh le bhith a’ cur a-steach a’ chuspair agus an t-susbaint/teachdaireachd a tha thu airson a chur gu na cleachdaichean.
 
-<!-- Screenshot unavailable: Seachdainn curtha email broadcast agus seachdainn amasan air a chur air -->
+<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-Tha eadar-dheargadh **Send** a tha agad air a thabhail an email do eòlas-eòlas (end-users) a' chlàradh a' leughadh.
+Às dèidh dhut do theachdaireachd a chruthachadh, faodaidh tu am putan **Cuir** a bhualadh.
 
-Chan eil seo a bhith fìor, agus tha eadar-dheargadh broadcast a' leughadh email do eòlas-eòlas agad.
+Agus sin cho furasta ’s a tha e post-d a chur gu na cleachdaichean deireannach agad le bhith a’ cleachdadh feart a’ chraolaidh.
 
-## Email-eòlas (System emails)
+## Puist-d siostaim {#system-emails}
 
-Tha email-eòlas (system emails) anns an Ultimate Multisite as fhaighinn gu h-aithreach **fàiltean àrd-dheargadh** a tha a' chlàradh air a bhith agad, mar a tha amachdan a tha thu ag curtha air a' chlàradh (registration), tairgseachais (payment), leughadh fhaighinn (domain mapping), agus eile. Is eadar-dheargadh an email-eòlas sin a tha a' chlàradh air a bhith agad, agus is eadar-dheargadh a tha a' chlàradh air a thabhail air a leughadh air a chur air (edited or modified) frumachais Ultimate Multisite. Tha eair a' chlàradh a tha ag curtha air a bheach a' fhaighinn air a shàthachadh agus a chur air (reset and import) seachdainn a tha agad air a bhith aig curtha eile de Ultimate Multisite.
+’S iad puist-d siostaim ann an Ultimate Multisite na **fiosan fèin-obrachail** a chuireas an siostam às dèidh gnìomhan sònraichte leithid clàradh, pàigheadh, mapadh àrainn, msaa. Faodar na puist-d seo a dheasachadh no atharrachadh bho roghainnean Ultimate Multisite. Tha e cuideachd a’ tighinn le feart a leigeas leat roghainnean a th’ ann mu thràth ath-shuidheachadh agus ion-phortadh bho stàladh Ultimate Multisite eile.
 
-### A' chlàradh agus a chur air (Resetting & Importing)
+### Ath-shuidheachadh & Ion-phortadh {#resetting--importing}
 
-Tha curtha Ultimate Multisite ùr-dheargadh, agus add-ons, ag curtha email-eòlas ùra air tairgseachais air a tha agad, agus is eadar-dheargadh.
+Faodaidh agus clàraichidh tionndaidhean ùra de Ultimate Multisite, a bharrachd air tuilleadain, puist-d ùra bho àm gu àm.
 
-Chan eil sinn a' chlàradh an amachdair (new email templates) a chur air a bhith mar Email-eòlas anns an fhadhlan agad gu h-aithreach, seachdaidh faic a tha thu a' leughadh air a bheach a' chlàradh a tha ag curtha air a thabhail. Ach, tha super admins agus agents a' leughadh an email-eòlas ùr sin a chur air a shàthachadh gu fhaic a tha eadar-dheargadh a tha agad. Bidh an t-uisge sin a' chlàradh ùr a' cur air seachdainn email-eòlas ùr le amasan agus curtha air (configuration) an t-email-eòlas ùr, a' le a tha eadar-dheargadh super admin a' leughadh amrachan a tha thu a' leughadh air a thabhail mar a tha eadar-dheargadh a tha agad.
+Gus còmhstri agus cùisean eile a sheachnadh, **cha chuir sinn na teamplaidean puist-d ùra ris mar Phuist-d Siostaim air an stàladh agad gu fèin-obrachail** , mura h-eil iad riatanach airson obrachadh ceart feart shònraichte.
 
-#### Fuadail a chur air email-eòlas (How to import system emails)
+Ach, faodaidh sàr-rianadairean agus riochdairean na puist-d ùra-chlàraichte seo ion-phortadh tron inneal ion-phortaidh. Cruthaichidh am pròiseas sin post-d siostaim ùr le susbaint agus rèiteachadh teamplaid a’ phuist-d ùir, a’ leigeil leis an t-sàr-rianadair atharrachaidhean sam bith a tha iad ag iarraidh a dhèanamh no an cumail mar a tha iad.
 
-Rì dhuth do seòladh (Ultimate Multisite Settings) agad, agus tha thu a' tighinn ann an tab **Emails**.
+#### Mar a nì thu ion-phortadh air puist-d siostaim {#how-to-import-system-emails}
 
-![Tab Emails anns a' chàrachadh seòladh (Ultimate Multisite settings) a' tighinn ann an seicne System Emails](/img/config/settings-emails-tab.png)
+Rach gu duilleag Roghainnean Ultimate Multisite agad agus gluais gu taba **Puist-d**.
 
-An uair sin, ar an seicne a' ghrian (sidebar), tha thu a' tighinn ann an t-aithris **Customize System Emails**.
+![Taba Puist-d ann an roghainnean Ultimate Multisite a’ sealltainn roinn nam Puist-d Siostaim](/img/config/settings-emails-tab.png)
 
-<!-- Screenshot unavailable: Aithris Customize System Emails ar an seicne System Emails -->
+An uair sin, air a’ bhàr-taoibh, briog air a’ phutan **Gnàthaich Puist-d Siostaim**.
 
-Ar an seicne System Emails, tha thu ag faic an àiteach a' chùlna **Reset & Import** air a' chùl. Tha e a' tighinn ann a' chluin (modal window) a' chùlna import agus a' rianann (reset).
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-![Àiteach Reset or Import ar an seicne System Emails admin page](/img/admin/system-emails-reset-import.png)
+Air duilleag nam Puist-d Siostaim, chì thu am putan gnìomh **Ath-shuidhich & Ion-phortaich** aig a’ mhullach. Bu chòir do bhriogadh air a’ phutan sin uinneag mhodail an ion-phortaidh agus an ath-shuidheachaidh fhosgladh.
 
-An uair sin, is e a' tighinn ann a' chluin Import Emails air a' chùlna a' faic a tha a' chùlna system emails a' fhaighinn an rianann.
+![Putan gnìomh Ath-shuidhich no Ion-phortaich air duilleag rianachd nam Puist-d Siostaim](/img/admin/system-emails-reset-import.png)
 
-<!-- Screenshot unavailable: Chluin Reset and Import le a' chluin Import Emails a' chùlna a' tòiseachadh -->
+An uair sin, faodaidh tu roghainnean Ion-phortaich Puist-d a thoglaigeadh gus faicinn dè na puist-d siostaim a tha rim faighinn airson an ion-phortadh.
 
-#### Riompaid System Emails
+<!-- Glacadh-sgrìn ri fhaighinn: modal Ath-shuidhich is Ion-phortaich leis na roghainnean Ion-phortaich Puist-d air an leudachadh -->
 
-Air tairgseichean eile, tha thu a' faic gu bheil an dìreachaichean a th’annachdaich air an t-amplaich email sin as fhaighinn, agus tha thu a' tòiseachadh gu bheil thu a' fhaighinn an riompaid (reset) air an **stàta de dhìreach** (default state).
+#### Ath-shuidheachadh Puist-d an t-Siostaim {#reseting-system-emails}
 
-Air tairgseichean sin, tha thu ag deab urrainn a' tòiseachadh gu bheil thu de dhach a' chluainteachd an email system agus a' riompaid. Is e an fòcas seo a' tòiseachadh air a bheachd a' tòiseachadh.
+Aig amannan eile, tuigidh tu nach eil na h-atharrachaidhean a rinn thu air teamplaid puist-d sònraichte ag obair dhut tuilleadh agus gum bu mhath leat a h-ath-shuidheachadh dhan **staid bhunaiteach** aice.
 
-Mar a tha e, leat cur am fhaighinn an seòladh (steps) a' chùlna a thiginn ann an àiteach Reset & Import tool, agus an uair sin, tha thu a' tòiseachadh air an option **Reset** agus a' t-sealltainn an email sin a riompaid air a stàta de dhìreach.
+Ann an leithid de chùisean, tha dà roghainn agad: faodaidh tu dìreach post-d an t-siostaim a sguabadh às agus a thoirt a-steach a-rithist (a’ cleachdadh an stiùiridh gu h-àrd) - rud a sguabas às meatraigean cur agus rudan eile, agus mar sin ’s e seo an dòigh as lugha a thathar a’ moladh.
 
-<!-- Screenshot unavailable: Chluin Reset and Import le a' chluin Reset Emails a' chùlna a' tòiseachadh -->
+No faodaidh tu an **inneal Ath-shuidhich is Ion-phortaich** a chleachdadh gus an teamplaid puist-d sin ath-shuidheachadh.
+
+Gus teamplaid puist-d ath-shuidheachadh, faodaidh tu na ceumannan gu h-àrd a leantainn gus an ruig thu an inneal Ath-shuidhich is Ion-phortaich, agus an uair sin, tionndaidh air an roghainn **Ath-shuidhich** agus tagh na puist-d a tha thu airson ath-shuidheachadh air ais dhan t-susbaint bhunaiteach aca.
+
+<!-- Glacadh-sgrìn ri fhaighinn: modal Ath-shuidhich is Ion-phortaich leis na roghainnean Ath-shuidhich Puist-d air an leudachadh -->

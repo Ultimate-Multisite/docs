@@ -1,105 +1,152 @@
 ---
-title: Kostenlose AI Agent Einstellungen
+title: Gratis AI Agent Einstellungen
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Einstellungen
+# Gratis AI Agent-Einstellungen {#gratis-ai-agent-settings}
 
-Der Bildschirm **Einstellungen → Erweitert** in Gratis AI Agent bietet Konfigurationsmöglichkeiten auf Administrator-Ebene für Backend-Integrationen, die in v1.5.0 eingeführt wurden. Diese Seite dokumentiert die Felder des **Feedback Endpunkts** und deren erwartetes Format.
+Der Bildschirm **Settings → Advanced** in Gratis AI Agent bietet Konfiguration auf Administratorebene für Backend-Integrationen. Diese Seite dokumentiert Feedback-Weiterleitung, Schlüssel für Suchanbieter, Einrichtung des verwalteten Superdav-Dienstes, Google Calendar-Steuerungen, TextBee-SMS-Einstellungen und netzwerkweite Feature-Flags.
 
-## Einstellungen aufrufen
+## Auf Einstellungen zugreifen {#accessing-settings}
 
-1. Gehen Sie im WordPress-Admin zu **Gratis AI Agent → Einstellungen**.
-2. Klicken Sie auf den Tab **Erweitert**.
+1. Gehe im WordPress-Admin zu **Gratis AI Agent → Settings**.
+2. Klicke auf den Tab **Advanced**.
 
-## Konfiguration des Feedback Endpunkts
+## Konfiguration des Feedback-Endpoints {#feedback-endpoint-configuration}
 
-Der Feedback Endpunkt empfängt POST-Anfragen vom AI Agent, immer dann, wenn ein Benutzer Feedback über die Daumen-runter-Schaltfläche, das Auto-Prompt-Banner oder den Befehl `/report-issue` sendet.
+Der Feedback-Endpoint empfängt POST-Anfragen vom AI Agent, wann immer ein Benutzer Feedback über die Daumen-runter-Schaltfläche, das Auto-Prompt-Banner oder den Befehl `/report-issue` einreicht.
 
 | Feld | Beschreibung |
 |---|---|
-| **Feedback Endpoint URL** | Die URL, die Feedback-Einreichungen als HTTP POST-Anfragen mit einem JSON-Body empfängt. |
-| **Feedback API Key** | Ein Bearer-Token, das in den `Authorization`-Header jeder Feedback-Anfrage gesendet wird. Lassen Sie das Feld leer, wenn Ihr Endpunkt keine Authentifizierung erfordert. |
+| **Feedback Endpoint URL** | Die URL, die Feedback-Einreichungen als HTTP-POST-Anfragen mit einem JSON-Body empfängt. |
+| **Feedback API Key** | Ein bearer token, das im `Authorization` header jeder Feedback-Anfrage gesendet wird. Leer lassen, wenn dein Endpoint keine Authentifizierung erfordert. |
 
-### Erwarteter JSON-Payload
+### Erwartete JSON-Nutzlast {#expected-json-payload}
 
-Ihr Feedback Endpunkt muss einen JSON-Body akzeptieren, der mindestens die folgenden Felder enthält:
+Dein Feedback-Endpoint muss einen JSON-Body mit mindestens den folgenden Feldern akzeptieren:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Die Antwort war falsch bezüglich der Preise.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Je nach Gesprächskontext können weitere Felder im Payload vorhanden sein.
+Je nach Gesprächskontext können zusätzliche Felder in der Nutzlast vorhanden sein.
 
-### `triage_category` Werte
+### `triage_category`-Werte {#triagecategory-values}
 
-Die AI Triage-Schicht weist vor dem Weiterleiten des Payloads einen der folgenden Werte für `triage_category` zu:
+Die AI-Triage-Ebene weist `triage_category` einen der folgenden Werte zu, bevor sie die Nutzlast weiterleitet:
 
 | Wert | Bedeutung |
 |---|---|
-| `factual_error` | Der Assistent hat falsche Fakteninformationen bereitgestellt. |
+| `factual_error` | Der Assistent hat sachlich falsche Informationen geliefert. |
 | `unhelpful_answer` | Die Antwort war technisch korrekt, aber nicht hilfreich. |
-| `inappropriate_content` | Die Antwort enthielt Inhalte, die nicht den Benutzern gezeigt werden sollten. |
-| `other` | Das Feedback passte nicht zu einer bekannten Kategorie. |
+| `inappropriate_content` | Die Antwort enthielt Inhalte, die Benutzern nicht angezeigt werden sollten. |
+| `other` | Das Feedback entsprach keiner bekannten Kategorie. |
 
-### Authentifizierung
+### Authentifizierung {#authentication}
 
-Wenn Ihr Endpunkt eine Authentifizierung erfordert, setzen Sie das Feld **Feedback API Key** auf Ihr Bearer-Token. Der Agent sendet:
+Wenn dein Endpoint Authentifizierung erfordert, setze das Feld **Feedback API Key** auf dein bearer token. Der Agent sendet:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Ist das Feld **Feedback API Key** leer, wird kein `Authorization`-Header gesendet.
+Wenn das Feld **Feedback API Key** leer ist, wird kein `Authorization` header gesendet.
 
-### Sammlung von Feedback deaktivieren
+### Feedback-Erfassung deaktivieren {#disabling-feedback-collection}
 
-Lassen Sie sowohl das Feld **Feedback Endpoint URL** als auch **Feedback API Key** leer. Die Daumen-runter-Schaltfläche und die Feedback-UI bleiben für Benutzer sichtbar, aber die Einreichungen werden nicht an einen externen Dienst weitergeleitet.
+Lasse sowohl die Felder **Feedback Endpoint URL** als auch **Feedback API Key** leer. Die Daumen-runter-Schaltfläche und die Feedback-UI bleiben für Benutzer sichtbar, aber Einreichungen werden nicht an einen externen Dienst weitergeleitet.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Auch auf dem Tab **Erweitert** ermöglicht das Feld **Brave Search API Key** die [Internet-Suche](../configuration/internet-search).
+Ebenfalls im Tab **Advanced** aktiviert das Feld **Brave Search API Key** die Fähigkeit [Internetsuche](../configuration/internet-search).
 
 | Feld | Beschreibung |
 |---|---|
-| **Brave Search API Key** | Ihr API-Schlüssel aus dem Brave Search Developer Dashboard. Erforderlich, um die Internet-Suche im AI Assistenten zu aktivieren. |
+| **Brave Search API Key** | Dein API-Schlüssel aus dem Brave Search-Entwickler-Dashboard. Erforderlich, um die Internetsuche im AI-Assistenten zu aktivieren. |
 
-Die Feldbezeichnung enthält einen anklickbaren Link zur Brave Search API Anmeldeseite. Lassen Sie das Feld leer, um die Internet-Suche zu deaktivieren.
+Die Feldbezeichnung enthält einen anklickbaren Link zur Brave Search API-Registrierungsseite. Leer lassen, um die Internetsuche zu deaktivieren.
 
-Weitere Informationen für Endbenutzer finden Sie unter [Internet-Suche](../configuration/internet-search).
+Siehe [Internetsuche](../configuration/internet-search) für Endbenutzer-Dokumentation zu dieser Funktion.
 
-## Feature Flags
+## Verwalteter Superdav-Dienst {#managed-superdav-service}
 
-Auch in v1.9.0 eingeführt, bietet der Tab **Einstellungen → Feature Flags** Umschalter für optionale Funktionalität. Jedes Flag ist entweder für alle Benutzer aktiviert oder deaktiviert; es gibt derzeit keine Übersteuerung pro Website.
+Superdav AI Agent v1.18.0 fügt verwaltete Superdav-Dienst-Endpoints und automatische Verbindungsbereitstellung für unterstützte Sites hinzu. Verwende diese Steuerelemente, wenn deine Site mit dem gehosteten Anbieter statt mit einem manuell konfigurierten Dienst-Endpoint verbunden werden soll.
 
-### Feature Flags aufrufen
+| Feld | Beschreibung |
+|---|---|
+| **Managed Superdav Service** | Aktiviert die Verbindung zum gehosteten Superdav-Dienst für unterstützte Sites. |
+| **Provision Connection** | Startet die automatische Bereitstellung von Endpoint und Anmeldedaten. Verwende dies, nachdem du bestätigt hast, dass die Site den verwalteten Anbieter verwenden soll. |
+| **Service Endpoint / Connection Status** | Zeigt den aktuellen Endpoint oder Verbindungszustand nach der Bereitstellung an. |
 
-1. Gehen Sie im WordPress-Admin zu **Gratis AI Agent → Einstellungen**.
-2. Klicken Sie auf den Tab **Feature Flags**.
+Speichere nach der Bereitstellung die Einstellungen und überprüfe den Verbindungsstatus, bevor du dich auf Workflows des verwalteten Dienstes verlässt. Wenn die Bereitstellung fehlschlägt, prüfe die angezeigten Hinweise zum erneuten Versuch und bestätige, dass die Site die Berechtigung hat, den gehosteten Anbieter zu verwenden.
 
-### Zugriffskontroll-Flags
+## Google Calendar-Konfiguration {#google-calendar-configuration}
+
+Wenn Kalenderfunktionen von Superdav AI Agent v1.18.0 aktiviert sind, kann der Agent konfigurierte Kalender und Ereignisdetails lesen. Kalender-Tools sind leseorientiert und nützlich für terminbewusste Erinnerungen, Teilnehmer-Follow-up und Kontaktabgleich.
+
+| Feld | Beschreibung |
+|---|---|
+| **Google Calendar Credentials** | Speichert die Anmeldedaten oder Token-Verbindung, die zum Lesen von Kalenderdaten erforderlich sind. |
+| **Calendar Selection** | Beschränkt, welche konfigurierten Kalender der Agent prüfen darf. |
+| **Calendar Connection Status** | Bestätigt, ob die aktuellen Anmeldedaten Kalender und Ereignisse lesen können. |
+
+Beschränke Kalender-Anmeldedaten auf die Kalender, die der Agent benötigt. Verbinde die Anmeldedaten neu oder rotiere sie, wenn der Status ein abgelaufenes Token anzeigt.
+
+## TextBee-SMS-Benachrichtigungen {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 fügt TextBee als SMS-Anbieter für konfigurierte Benachrichtigungs-Workflows hinzu. SMS-Benachrichtigungen sollten bei sensiblen oder an Benutzer gerichteten Nachrichten mit menschlichen Freigabe-Gates kombiniert werden.
+
+| Feld | Beschreibung |
+|---|---|
+| **TextBee API Key** | Authentifiziert Anfragen an den TextBee-SMS-Anbieter. |
+| **TextBee Device / Sender** | Wählt den TextBee-Absender oder das Gerät aus, das für ausgehende Nachrichten verwendet wird, wenn vom Anbieter erforderlich. |
+| **SMS Notifications Enabled** | Ermöglicht genehmigten Workflows, Textnachrichten-Benachrichtigungen zu senden. Deaktiviert lassen, um SMS-Versand zu verhindern. |
+
+Sende eine Testnachricht nur an eine Nummer, die einem Administrator gehört, und bestätige dann das Verhalten der Freigabe-Gates, bevor geplante oder an Teilnehmer gerichtete Erinnerungen aktiviert werden.
+
+## Feature-Flags {#feature-flags}
+
+Ebenfalls in v1.9.0 eingeführt, bietet der Tab **Settings → Feature Flags** Umschalter für optionale Funktionen. Jedes Flag ist netzwerkweit entweder aktiviert oder deaktiviert; derzeit gibt es keine Überschreibung pro Site.
+
+### Auf Feature-Flags zugreifen {#accessing-feature-flags}
+
+1. Gehe im WordPress-Admin zu **Gratis AI Agent → Settings**.
+2. Klicke auf den Tab **Feature Flags**.
+
+### Zugriffskontroll-Flags {#access-control-flags}
 
 | Flag | Standard | Beschreibung |
 |---|---|---|
-| **Restrict to Administrators** | Aus | Wenn aktiviert, können nur Benutzer mit der Rolle `administrator` das AI Agent Chat Panel öffnen. Alle anderen Rollen sehen stattdessen die Meldung „Kontaktieren Sie Ihren Administrator“. |
-| **Restrict to Network Admins** | Aus | Wenn in einem Multisite-Netzwerk aktiviert, können nur Super Admins den Agenten nutzen. Einzelne Site-Administratoren sind blockiert. Hat Vorrang vor „Restrict to Administrators“, wenn beide aktiviert sind. |
-| **Allow Subscriber Access** | Aus | Wenn aktiviert, können Benutzer mit der Rolle `subscriber` die Chat-Oberfläche nutzen, sind aber auf Lesezugriffe beschränkt (keine Beitragserstellung oder Einstellungen-Änderungen). |
-| **Disable for Non-Members** | Aus | Integriert sich mit dem Ultimate Multisite Mitgliedsstatus. Wenn aktiviert, ist der Chat für Websites ausgeblendet, die kein aktives Mitgliedschaftsverhältnis haben. |
+| **Auf Administratoren beschränken** | Aus | Wenn aktiviert, können nur Benutzer mit der Rolle `administrator` das Chat-Panel des AI Agent öffnen. Alle anderen Rollen sehen stattdessen eine Meldung „Wenden Sie sich an Ihren Administrator“. |
+| **Auf Network Admins beschränken** | Aus | Wenn in einem Multisite-Netzwerk aktiviert, können nur Super Admins den Agent verwenden. Einzelne Website-Administratoren werden blockiert. Hat Vorrang vor „Auf Administratoren beschränken“, wenn beide aktiviert sind. |
+| **Subscriber-Zugriff erlauben** | Aus | Wenn aktiviert, können Benutzer mit der Rolle `subscriber` die Chat-Oberfläche verwenden, sind jedoch auf Nur-Lese-Funktionen beschränkt (keine Beitragserstellung oder Einstellungsänderungen). |
+| **Für Nichtmitglieder deaktivieren** | Aus | Integriert sich mit dem Mitgliedschaftsstatus von Ultimate Multisite. Wenn aktiviert, ist der Chat für Websites ausgeblendet, die keine aktive Mitgliedschaft haben. |
 
-### Branding Flags
+### Branding-Flags {#branding-flags}
 
 | Flag | Standard | Beschreibung |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Aus | Entfernt die Branding-Zuschreibungszeile, die am unteren Rand des Chat-Widgets angezeigt wird. Empfohlen für White-Label-Implementierungen. |
-| **Custom Agent Name** | *(leer)* | Ersetzt das Standard-Label „Gratis AI Agent“ in der Chat-Überschrift und im Admin-Menü durch Ihren eigenen Produktnamen. Lassen Sie das Feld leer, um den Standard zu verwenden. |
-| **Hide Agent Picker** | Aus | Wenn aktiviert, können Benutzer nicht zwischen den fünf integrierten Agenten wechseln. Der aktuelle Agent ist auf das festgelegt, was in Einstellungen → Allgemein als Standard konfiguriert ist. |
-| **Use Site Icon as Chat Avatar** | Aus | Ersetzt das Standard-AI-Icon in der Chat-Widget-Überschrift durch das WordPress-Site-Icon (eingerichtet unter Erscheinungsbild → Anpassen → Site Identity). |
+| **„Powered by Gratis AI Agent“-Footer ausblenden** | Aus | Entfernt die Branding-Zuordnungszeile, die unten im Chat-Widget angezeigt wird. Empfohlen für White-Label-Bereitstellungen. |
+| **Benutzerdefinierter Agent-Name** | *(leer)* | Ersetzt das standardmäßige Label „Gratis AI Agent“ im Chat-Header und Admin-Menü durch Ihren eigenen Produktnamen. Leer lassen, um den Standard zu verwenden. |
+| **Agent-Auswahl ausblenden** | Aus | Wenn aktiviert, können Benutzer nicht zwischen den fünf integrierten Agents wechseln. Der aktuelle Agent ist fest auf das eingestellt, was unter Einstellungen → Allgemein als Standard konfiguriert ist. |
+| **Site Icon als Chat-Avatar verwenden** | Aus | Ersetzt das standardmäßige AI-Symbol im Header des Chat-Widgets durch das WordPress Site Icon (festgelegt unter Design → Anpassen → Website-Identität). |
 
-### Änderungen übernehmen
+### Sicherheits-Flags für Automatisierung {#automation-safety-flags}
 
-Klicken Sie nach dem Umschalten eines Flags auf **Einstellungen speichern**. Die Änderungen treten sofort in Kraft – es ist kein Cache-Flush oder Plugin-Reaktivierung erforderlich.
+Superdav AI Agent v1.18.0 führt Genehmigungs-Gates durch Menschen und Erinnerungsdatensätze für sicherere Automatisierungsläufe ein. Diese Steuerelemente können je nach installiertem Paket in den Feature-Flags oder den erweiterten Automatisierungseinstellungen erscheinen.
+
+| Flag | Standard | Beschreibung |
+|---|---|---|
+| **Menschliche Genehmigung erforderlich** | Empfohlen an | Pausiert sensible Automatisierungen, bis ein autorisierter Benutzer die vorgeschlagene Aktion überprüft und bestätigt. |
+| **Erinnerungs-Deduplizierung** | An | Zeichnet gesendete Erinnerungen auf, damit Wiederholungen oder geplante Läufe keine doppelten Benachrichtigungen senden. |
+| **Kalender-Tools aktivieren** | Aus, bis konfiguriert | Ermöglicht dem Agent, konfigurierte Google-Kalender und Ereignisse zu lesen. |
+| **SMS-Benachrichtigungen aktivieren** | Aus, bis konfiguriert | Ermöglicht genehmigten Workflows, TextBee-SMS-Benachrichtigungen zu senden, nachdem Zugangsdaten gespeichert wurden. |
+
+### Änderungen anwenden {#applying-changes}
+
+Klicken Sie auf **Einstellungen speichern**, nachdem Sie ein Flag umgeschaltet haben. Änderungen werden sofort wirksam — kein Leeren des Caches und keine Reaktivierung des Plugin ist erforderlich.

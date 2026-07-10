@@ -1,136 +1,138 @@
 ---
-title: Ahoana ny fomba hanamboarana ny fametrahana domain mapping
+title: Ahoana ny fanefena ny Fampifandraisana sehatra
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Ahoana ny Fandrefesana Domain Mapping (v2)
+# Ahoana ny fanamboarana ny fampifandraisana anaran-tsehatra (v2) {#how-to-configure-domain-mapping-v2}
 
-_**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia manondro ny dikan'ny Ultimate Multisite v2.x.**_
+_**FANAMARIHANA MANAN-DANJA: Ity lahatsoratra ity dia miresaka ny Ultimate Multisite kinova 2.x.**_
 
-Iray amin'irefa matanjaka indrindra an'ny tambajotra premium dia ny fahafahana manome ny mpanjifa antsika fotoana mba hampifandray domain ambony (top-level domain) amin'ny tranonkalazany. Aoka ho fantatrao fa izay no toa matihanina kokoa: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) ve sa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Izany no antony nampanome ny Ultimate Multisite io fahaizana io, tsy mila mampiasa plugin hafa ianao.
+Iray amin'ireo endri-javatra mahery indrindra amin'ny tambajotra premium ny fahafahana manolotra amin'ny mpanjifantsika safidy hampifandray anaran-tsehatra ambaratonga ambony amin'ny tranonkalany. Raha ny marina, iza no miseho ho matihanina kokoa: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) sa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Izany no antony anoloran'ny Ultimate Multisite io endri-javatra io efa tafiditra ao anatiny, tsy mila mampiasa plugin avy amin'ny antoko fahatelo.
 
-## Inona no domain mapping?
+## Inona ny fampifandraisana anaran-tsehatra? {#whats-domain-mapping}
 
-Araka ny anarany, ny domain mapping dia ny fahaizana omen'ny Ultimate Multisite mba handray fangatahana domain manokana ary hampifandray ilay fangatahana amin'ilay tranonkala ao amin'ny tambajotra misy io domain manokana.
+Araka ny asehon'ny anarany, ny fampifandraisana anaran-tsehatra dia ny fahafahana atolotry ny Ultimate Multisite handray fangatahana ho an'ny anaran-tsehatra namboarina manokana ary hampifandray izany fangatahana izany amin'ilay tranonkala mifanaraka aminy ao amin'ny tambajotra izay manana io anaran-tsehatra manokana io.
 
-### Ahoana no fanamboarana domain mapping amin'ny Ultimate Multisite Network anao
+### Ahoana ny fametrahana ny fampifandraisana anaran-tsehatra amin'ny tambajotra Ultimate Multisite-nao {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Mila fametrahana zavatra avy aminao mba hiara-miasa ny domain mapping. Betsaka dia manao azy ho anao ny Ultimate Multisite, ka afaka manome anao ny asa sarotra dia mora atao ny fenoana ireo fepetra ilaina.
+Mila fanamboarana kely avy aminao ny fampifandraisana anaran-tsehatra mba hiasa. Soa ihany fa ataon'ny Ultimate Multisite ho mandeha ho azy ny asa sarotra ho anao, ka afaka mahafeno mora foana ireo fepetra takiana ianao.
 
-Mandritra ny fametrahana ny Ultimate Multisite, ny wizard (fitaovana fanampiana) dia hamerina sy hifindra ho toerana voatendry ny **sunrise.php**. Tsy afaka mandroso ianao raha tsy vita io dingana io.
+Mandritra ny fametrahana Ultimate Multisite, ny wizard dia handika sy hametraka ho azy ny **sunrise.php** ao amin'ny lahatahiry voatondro. **Tsy hamela anao hanohy ny wizard raha tsy vita ity dingana ity**.
 
 <!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Midika izany fa rehefa vita ny fametrahana ny Ultimate Multisite, dia afaka manomboka amin'ny domain mapping an-tsokosoko ianao avy eo.
+Midika izany fa rehefa vitan'ny wizard fametrahana Ultimate Multisite ny manangana ny tambajotrao, dia afaka manomboka mampifandray avy hatrany ny anaran-tsehatra namboarina manokana ianao.
 
-Tandremo fa tsy voatery ny domain mapping ao amin'ny Ultimate Multisite. Manana safidy ianao mba hampiasana ny fiasa domain mapping an'ny WordPress Multisite na fomba hafa rehetra azo atao.
+Mariho fa tsy voatery ny fampifandraisana anaran-tsehatra ao amin'ny Ultimate Multisite. Manana safidy ianao hampiasa ny fiasa fampifandraisana anaran-tsehatra natoraly an'ny WordPress Multisite na vahaolana hafa amin'ny fampifandraisana anaran-tsehatra.
 
-Ultimate Multisite-n'ny isika fomba ahafahanao manakana ny fametrahana mapping anarana domena (domain mapping) ho an'ny domain hafa, raha mila izany ianao. Afaka manakana ity fahaizana ity ianao ao amin'ny **Ultimate Multisite > Settings > Domain Mapping**.
+Raha mila manafoana ny fampifandraisana anaran-tsehatra an'ny Ultimate Multisite ianao mba hanomezana toerana ho an'ny vahaolana hafa amin'ny fampifandraisana anaran-tsehatra, dia azonao vonoina ity endri-javatra ity eo ambanin'ny **Ultimate Multisite > Fikirana > Fampifandraisana anaran-tsehatra**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Pejin'ny fikirana Fampifandraisana anaran-tsehatra mampiseho famerenana mitodika admin, hafatra fampifandraisana ary safidy DNS](/img/config/domain-mapping-settings.png)
 
-Eo ambanin'ity safidy ity dia afaka mahita koa ny safidy hoe **Force Admin Redirect** (Manery ny famindrana an'ny admin). Ity safidy ity dia ahafahanao mitantana raha ho afaka miditra amin'ny dashboard an'ny mpanjifa ao amin'ny domain manokana sy subdomain izy na amin'ny iray ihany.
+Eo ambanin'io safidy io avy hatrany, azonao jerena ihany koa ny safidy **Terena ny Famerenana mitodika ny Admin**. Ity safidy ity dia ahafahanao mifehy raha afaka miditra amin'ny Dashboard fitantanan'izy ireo amin'ny anaran-tsehatra namboarina manokana sy amin'ny zana-tsehatra izy ireo, na amin'ny iray amin'ireo ihany.
 
-Raha misafidy ny **Force redirect to mapped domain** (Manery ny famindrana any amin'ny domain voamarina), dia afaka miditra amin'ny dashboard an'ny mpanjifa ao amin'ny domain manokana ihany izy ireo.
+Raha misafidy **Terena hiverina mitodika amin'ny anaran-tsehatra nampifandraisina** ianao, dia amin'ny anaran-tsehatra namboarina manokana ihany no hahafahan'ny mpanjifanao miditra amin'ny Dashboard fitantanan'izy ireo.
 
-Ny safidy hoe **Force redirect to network domain** (Manery ny famindrana any amin'ny domain tambajotra) kosa dia manao ny antony mifaninana—afaka miditra amin'ny dashboard an'izy ireo ao amin'ny subdomain ihany izy ireo, na dia miezaka miditra amin'ny domain manokana aza.
+Ny safidy **Terena hiverina mitodika amin'ny** **anaran-tsehatra tambajotra** dia hanao ny mifanohitra tanteraka - amin'ny zana-tsehatra ihany no avela hidiran'ny mpanjifanao amin'ny Dashboard-ny, na dia manandrana miditra amin'ny anaran-tsehatra namboarina manokana aza izy ireo.
 
-Ary ny safidy hoe **Allow access to the admin by both mapped domain domain and network domain** (Amona fidirana amin'ny admin avy amin'ny domain voamarina sy ny domain tambajotra) dia ahafahany miditra amin'ny dashboard an'ny admin ao amin'ny subdomain sy ny domain manokana.
+Ary ny safidy **Avelao ny fidirana amin'ny admin amin'ny alalan'ny anaran-tsehatra nampifandraisina sy ny anaran-tsehatra tambajotra** dia mamela azy ireo hiditra amin'ny Dashboard fitantanan'izy ireo amin'ny zana-tsehatra sy amin'ny anaran-tsehatra namboarina manokana.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Lisitra midina Admin Redirect nosokafana mampiseho ireo safidy famerenana mitodika telo](/img/config/domain-mapping-redirect-options.png)
 
-Misy fomba roa ianao mba hametrahana domain manokana (custom domain). Ny voalohany dia amin'ny alalan'ny fametrahana ny anaran'ny domain avy ao amin'ny dashboard admin an'ny tambajotra ho super admin, ary ny faharoa kosa dia amin'ny alalan'ny dashboard admin an'ny subsite eo ambanin'ny pejy kaonty.
+Misy fomba roa hampifandraisana anaran-tsehatra namboarina manokana. Ny voalohany dia amin'ny fampifandraisana ny anaran-tsehatra avy amin'ny Dashboard fitantanana ny tambajotrao amin'ny maha-mpitantana ambony anao, ary ny faharoa dia amin'ny alalan'ny Dashboard fitantanan'ny tranonkala madinika eo ambanin'ny pejin'ny Account.
 
-Saingy alohan'ny hanombohanao ny fametrahana domain manokana amin'ny subsite iray ao amin'ny tambajotram-piara-miasa (network), dia mila antoka ianao fa voarafitra tsara ny **DNS settings** an'ilay anaran'ny domain.
+Saingy alohan'ny hanombohanao mampifandray ny anaran-tsehatra namboarina manokana amin'ny iray amin'ireo tranonkala madinika ao amin'ny tambajotrao, dia mila mahazo antoka ianao fa voarindra tsara ny **fikirana DNS** an'ilay anaran-tsehatra.
 
 ###
 
-### Fanamarihana ny fepetra DNS an'ny domain ho voarafitra tsara
+### Fiantohana fa voarindra tsara ny fikirana DNS an'ilay anaran-tsehatra {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Mba hiatrehana ny mapping ho mandeha tsara, mila manamarina fa ny domaine tianao atao mapping dia mitondra (pointing) amin'ny adiresy IP an'ny tambajotra (Network) anao izany. Tsy maintsy fantatrao ny adiresy IP an'ilay tambajotra - ilay adiresy IP an'ilay domaine izay nampiana WordPress Ultimate Multisite - fa tsy ny adiresy IP an'ilay domain manokana tianao atao mapping. Raha mitady ny adiresy IP ho an'ny domain manokana ianao, dia manoro anareo hiakatra any amin'i [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ohatra.
+Mba hiasan'ny fampifandraisana, mila mahazo antoka ianao fa manondro ny adiresy IP an'ny tambajotrao ilay anaran-tsehatra kasainao hampifandraisina. Mariho fa ny adiresy IP an'ny tambajotra no ilainao - ny adiresy IP an'ilay anaran-tsehatra nametrahana ny Ultimate Multisite - fa tsy ny adiresy IP an'ilay anaran-tsehatra namboarina manokana tianao hampifandraisina. Mba hitadiavana ny adiresy IP an'ny anaran-tsehatra manokana iray, dia manoro hevitra izahay ny handeha amin'ny [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), ohatra.
 
-Mba hanaovana mapping marina ny domaine, mila manampy **A RECORD** eo amin'ny fametrahana anareo ny **DNS** izay mitondra ilay **adiresy IP** io ianao. Ny fitantanana DNS dia miova be samihafa eo amin'ireo mpamatsy domain (domain registrars) samihafa, fa misy toromarika maro an-tserasera momba izany raha mitady " _Creating A Record on XXXX_ " izay ny XXXX no mpamatsy domain anareo (ohatra: " _Creating A Record on_ _GoDaddy_ ").
+Mba hampifandraisana tsara ilay anaran-tsehatra, dia mila manampy **A RECORD** amin'ny fanamboarana **DNS**-nao ianao izay manondro io **adiresy IP** io. Miovaova be ny fitantanana DNS eo amin'ireo mpisoratra anaran-tsehatra samihafa, saingy betsaka ny torolalana an-tserasera mandrakotra izany raha mitady ny " _Creating A Record on XXXX_ " ianao, izay XXXX no mpisoratra anaran-tsehatra ampiasainao (oh.: " _Creating A Record on_ _GoDaddy_ ").
 
-Raha toa ka mahatonga anao ho sarotra ity, dia **miantso ny fanohanana an'ny mpamatsy domain anareo** ary afaka manampy anareo amin'ity ampahany ity izy ireo.
+Raha sendra manana olana amin'ny fampandehanana izany ianao, **mifandraisa amin'ny fanohanan'ny mpisoratra anaran-tsehatra anao** ary afaka hanampy anao amin'ity ampahany ity izy ireo.
 
-Raha nanana drafitra ianao mba hahafahan'ny mpanjifa anareo atao mapping ny domaine ananany, dia tsy maintsy ataon'izy ireo io asa io. Arahaho azy ireo any amin'ny rafitry ny fanohanana an'ny mpamatsy domain raha toa ka tsy afaka mamorona ny A Record izy ireo.
+Raha mikasa ny hamela ny mpanjifanao hampifandray ny anaran-tsehatra azy manokana ianao, dia izy ireo ihany no tsy maintsy manao ny asa amin'ity ampahany ity. Tondroy any amin'ny rafitra fanohanan'ny mpisoratra anaran-tsehatra azy izy ireo raha toa ka tsy mahavita mamorona ny A Record.
 
-### Fampiasana anarana domaine manokana ho Super Admin
+### Fampifandraisana anaran-tsehatra namboarina manokana amin'ny maha Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Rehefa miditra ianao ho super admin ao amin'ny tambajotra anareo, dia mora atao ny manampy sy mitantana anarana domaine manokana amin'ny alalan'ny fidinana any amin'i **Ultimate Multisite > Domains**.
+Rehefa tafiditra amin'ny maha super admin anao ao amin'ny tambajotrao ianao, dia afaka manampy sy mitantana mora foana anaran-tsehatra namboarina manokana amin'ny alalan'ny fandehanana eo ambanin'ny **Ultimate Multisite > Anaran-tsehatra**.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Pejin'ny lisitry ny anaran-tsehatra ao amin'ny Ultimate Multisite](/img/admin/domains-list.png)
 
-Ity anaty pejy ity, afaka tsindriana ny bokotra **Add Domain** eo ambony ary hivoaka fomba modal iray izay ahafahanao mametraka sy mameno ny **custom domain name**, ny **subsite** tianao hampiasaina amin'io custom domain io, ary manapa raha hatao ho **primary domain** ve sa tsy izany (tahaka ny fampitahana ireo domain maromaro ho an'ny subsite iray).
+Eo ambanin'ity pejy ity, azonao tsindriana ny bokotra **Ampio anaran-tsehatra** eo ambony, ary hampiseho varavarankely modal izany izay ahafahanao mametraka sy mameno ny **anaran-tsehatra namboarina manokana**, **ilay tranonkala madinika** tianao hampiharana ilay anaran-tsehatra namboarina manokana, ary manapa-kevitra raha tianao hapetraka ho **anaran-tsehatra voalohany** izany na tsia (mariho fa afaka mampifandray **anaran-tsehatra maro amin'ny tranonkala madinika iray** ianao).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Modal Ampio anaran-tsehatra misy anaran-tsehatra, mpifidy tranonkala ary bokotra fifandimbiasana anaran-tsehatra voalohany](/img/admin/domain-add-modal.png)
 
-Rehefa vita ny fametrahana ny vaovao rehetra, dia afaka tsindriana ny bokotra **Add Existing Domain** eo ambany ianao.
+Rehefa avy nampiditra ny fampahalalana rehetra ianao, dia azonao tsindriana ny bokotra **Ampio anaran-tsehatra efa misy** eo ambany.
 
-Izany no hanombohana ny dingana fanamarinana sy fitadiavana ny fampahalalana DNS an'ilay custom domain. Ho hitanao koa ny logy eo amin'ny farany an'ny pejy mba hanaranao ny dingana ataony izany. Mety mandritra minitra vitsivitsy io dingana io hatramin'ny fisaorana.
+Hanomboka ny fizotry ny fanamarinana sy fakana ny fampahalalana DNS an'ilay anaran-tsehatra namboarina manokana izany. Hahita firaketana eo ambanin'ny pejy ihany koa ianao mba hanarahana ny fizotra lalovany. Mety haharitra minitra vitsivitsy vao vita ity fizotra ity.
 
-Ny Ultimate Multisite v2.13.0 dia mamorona ny bokizana domain anatiny ho azy rehefa misy toerana vaovao no namboarina tamin'ny host izay tokony ho toy ny domain isaky ny toerana (per-site domain). Raha toa ka io host io no domain lehibe an'ny tambajotra, na iray amin'ireo base domains ho an'ny checkout form izay voafidy ao amin'ny champ **Site URL**, dia tsy hatao ny fampidirana bokizana mapped-domain ho azy mba hahazoana ny base domain iohany ho azo ampiasaina amin'ny toerana rehetra mampiasa azy.
+Ultimate Multisite v2.13.0 dia mamorona ho azy ihany koa ny firaketana domain anatiny rehefa misy site vaovao noforonina amin’ny host izay tokony horaisina ho domain isaky ny site. Raha ny host dia domain fototry ny tambajotra, na iray amin’ireo domain fototra iombonana ho an’ny checkout-form voarindra amin’ny saha **Site URL**, dia tsipahina ny firaketana mapped-domain mandeha ho azy mba hitoeran’ilay domain fototra iombonana ho azo ampiasain’ny site rehetra mampiasa azy.
 
-Ny **Stage** na ny sata dia tokony ovaina avy amin'ny **Checking DNS** ho **Ready** raha voarafitra tsara ny zavatra rehetra.
+Rehefa misoratra domain vaovao amin’ny alalan’ny Domain Seller v1.3.0 na vaovao kokoa ny mpanjifa, Ultimate Multisite dia mametraka ho azy amin’ny alàlan’ny mapping ilay domain voasoratra amin’ny site tambajotran’ilay mpanjifa amin’ny alàlan’ny default. Tsy mila manampy firaketana mapped-domain misaraka intsony ny administratera aorian’ny fisoratana nahomby, raha tsy hoe te hanitsy safidy toy ny primary-domain flag, activation state, na SSL handling izy ireo.
+
+Ny **Stage** na ny sata dia tokony hiova avy amin’ny **Checking DNS** ho **Ready** raha voarindra tsara avokoa ny zava-drehetra.
 
 <!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
 
 <!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
 
-Raha tsindriana ny anaran'ilay domain, dia afaka mahita safidy vitsivitsy ao anatiny ianao. Andao hijerena azy ireo fohy:
+Raha tsindrinao ny anaran’ny domain, dia ho afaka hahita safidy sasantsasany ao anatiny ianao. Andeha hojerentsika haingana izy ireo:
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+![Pejy antsipirian’ny domain misy stage, site, active, primary ary SSL toggles](/img/admin/domain-edit.png)
 
-**Stage:** Io no dingana izay e tokoa ny toerana misy an'ilay domain. Rehefa voafindra aloha ianao, dia mety ho eo amin'ny dingana **Checking DNS** (Fanamarihana DNS). Ny fizotran'ity dia manamarina raha marina ireo fampidirana DNS ary manome antoka fa marina izy ireo. Avy eo, ny domain dia apetaka ao amin'ny dingana **Checking SSL** (Fanamarihana SSL). Ny Ultimate Multisite dia hanontany raha misy SSL ve ilay domain na tsia ary hanome fametrahana anao ho **Ready** (Vonona) na **Ready (without SSL)** (Vonona nefa tsy misy SSL).
+**Stage:** Ity no dingana misy ilay domain. Rehefa vao manampy ilay domain ianao dia mety ho ao amin’ny dingana **Checking DNS** izy. Ny dingana dia hanamarina ny fidirana DNS ary hanamarina fa marina izy ireo. Avy eo, hapetraka amin’ny dingana **Checking SSL** ilay domain. Ultimate Multisite dia hanamarina raha manana SSL ilay domain na tsia ary hanasokajy ny domain-nao ho **Ready** na **Ready (without SSL)**.
 
-**Site:** Io subdomain io mifandray amin'ity domain ity. Ny domain voafindra dia haneho ny votoatin'ity site manokana ity.
+**Site:** Ny subdomain mifandray amin’ity domain ity. Ny domain voa-mapping dia hampiseho ny votoatin’io site manokana io.
 
-**Active:** Afaka manao toggling an-tsokosoko io safidy io ianao mba hampandehanana na hanakana ny domain.
+**Active:** Azonao avadika on na off ity safidy ity mba hampandeha na hampiato ilay domain.
 
-**Is Primary Domain?:** Afaka manana domain voafindra maro kokoa ny mpanjifa ho an'ny site tsirairay. Ampiasao ity safidy ity mba hisafidianana raha ity no domain lehibe (primary domain) ho an'ity site manokana ity.
+**Is Primary Domain?:** Afaka manana domain voa-mapping mihoatra ny iray ho an’ny site tsirairay ny mpanjifanao. Ampiasao ity safidy ity hisafidianana raha ity no domain fototra ho an’ilay site manokana.
 
-**Is Secure?:** Na dia manamarina aza ny Ultimate Multisite raha misy mari-pahaizana SSL ve ilay domain mialoha ny fanondroana azy, dia afaka mifidy manokana ianao mba hampandehanana ny domain amin'ny fampidirana na tsy fampidirana mari-pahaizana SSL. Tsy maintsy fantatrao fa raha tsy misy mari-pahaizana SSL ilay website ary miezaka hampandeha azy amin'ny alalan'ny SSL ianao, dia mety hisy fahadisoana (errors) ho anao izany.
+**Is Secure?:** Na dia manamarina aza ny Ultimate Multisite raha manana taratasy fanamarinana SSL ilay domain na tsia alohan’ny hampandehanana azy, dia azonao fidina amin’ny tanana ny hampiditra ilay domain miaraka na tsy miaraka amin’ny taratasy fanamarinana SSL. Mariho fa raha tsy manana taratasy fanamarinana SSL ilay tranonkala ary manandrana manery ny hampidirana azy amin’ny SSL ianao, dia mety hiteraka hadisoana izany.
 
-### Fampidirana anarana domain manokana ho Subsite user
+### Mapping anarana domain manokana amin’ny maha mpampiasa Subsite {#mapping-custom-domain-name-as-subsite-user}
 
-Afaka manao fampidirana anarana domain manokana avy amin'ny dashboard an'ny subsite administrator koa ianao.
+Afaka manao mapping anarana domain manokana avy amin’ny admin dashboard an’ny subsite ihany koa ny administratera Subsite.
 
-Voalohany, mila antoka fa ampiasana ity safidy ity eo ambanin'ny **Domain mapping** (Fampidirana domain) settings ianao. Jereo ny sary etsy ambany.
+Voalohany, mila ataonao azo antoka fa alefanao ity safidy ity eo ambanin’ny firafitry ny **Domain mapping**. Jereo ny pikantsary etsy ambany.
 
 <!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
 
-Afaka mametraka na manao fanamboarana ity safidy ity ianao eo ambanin'ny **Plan** level na ny safidy vokatra (product options) ao amin'ny **Ultimate Multisite > Products**.
+Azonao atao ihany koa ny mametraka na mandrindra ity safidy ity eo amin’ny ambaratonga **Plan** na safidin’ny vokatra ao amin’ny **Ultimate Multisite > Products**.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+![Fizarana Custom Domains ao amin’ny pejy fanitsiana vokatra](/img/config/product-custom-domains.png)
 
-Raha toa ka voaondro an'ilay ireo safidy ireo ary avela ho afaka manamboatra domain manokana ny mpampiasa subsite, dia hahita metabox iray eo ambanin'ny pejy **Account** antsoina hoe **Domains** ilay mpampiasa.
+Rehefa alefa ny iray amin’ireo safidy ireo ary avela hanao mapping anarana domain manokana ny mpampiasa subsite, dia tokony hahita metabox eo ambanin’ny pejy **Account** antsoina hoe **Domains** ilay mpampiasa subsite.
 
-<!-- Screenshot unavailable: Metabox Domains amin'ny pejy Account an'ny subsite miaraka amin'ny bokotra Add Domain -->
+<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
 
-Afaka tsindrio ny bokotra **Add Domain** ary hiseho fomba iray (modal window) misy toromarika vitsivitsy.
+Afaka manindry ny bokotra **Add Domain** ilay mpampiasa ary hampiseho varavarankely modal misy toromarika sasantsasany izany.
 
-<!-- Screenshot unavailable: Modal Add Domain mampiseho toromarika DNS A-record ho an'ny mpampiasa subsite -->
+<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
 
-Avy eo dia afaka tsindrio ny **Next Step** ary mandroso amin'ny fanampiana anarana domain manokana. Afaka misafidy koa raha ho domain lehibe (primary domain) izany na tsy izany.
+Avy eo afaka manindry **Next Step** ilay mpampiasa ary manohy manampy ilay anarana domain manokana. Afaka misafidy ihany koa izy ireo raha ho domain fototra izany na tsia.
 
-<!-- Screenshot unavailable: Form Add Domain miaraka amin'ny champ anarana domain manokana sy ny toggle primary domain -->
+<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
 
-<!-- Screenshot unavailable: Dingana fanamafisana Add Domain izay mamporisika ny fanamarinana DNS -->
+<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
 
-Tsindrio ny **Add Domain** dia hanomboka ny dingana fanamarinana sy famoahana ny fampahalalana DNS an'ilay domain manokana.
+Ny fanindriana **Add Domain** dia hanomboka ny dingana fanamarinana sy fakana ny fampahalalana DNS an’ilay domain manokana.
 
-### Momba ny Fampifangaroan'ny Domain (About Domain Syncing)
+### Momba ny Domain Syncing {#about-domain-syncing}
 
-Ny Domain Syncing dia dingana izay atao amin'ny alalan'ny Ultimate Multisite mba hanampiana anarana domain manokana ao amin'ny kaontry ny hosting ho domain fanampiny **mba hiatoana ny fametrahana ny mapping**.
+Domain Syncing dia dingana iray izay anampian’ny Ultimate Multisite ny anarana domain manokana ao amin’ny kaonty fampiantranoanao ho add-on domain **mba hiasa ny domain mapping**.
 
-Misy fampifangaroana automatique raha toa ka misy fifandraisana (integration) eo amin'ny mpamatsy hosting sy ny fomba mapping domain an'ny Ultimate Multisite. Amin'izao fotoana izao, ireo mpamatsy hosting ireo dia _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ ary _Cpanel._
+Mitranga ho azy ny domain syncing raha manana fampifandraisana amin’ny endri-javatra domain mapping an’ny Ultimate Multisite ny mpanome hosting-nao. Amin’izao fotoana izao, ireo mpanome hosting ireo dia _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ ary _Cpanel._
 
-Rehefa misy fifandraisana amin'ny mpamatsy hosting, afaka manome asa (enqueue) ny Ultimate Multisite koa ny asa famoronana DNS na subdomain ho an'ny tranonkala vaovao. Raha tsy misy fampifangaroana mihaino ilay asa, dia atao an-tsokosoko ny asa mialoha (background job) mba hisorohana ireo entry ao amin'ny queue izay tsy misy asan'ny zavatra iray (no-op). Ny fanamarinana DNS sy SSL ho an'ireo domain voafidy dia mitohy mandalo amin'ny dingana fandrindrana ny domain ara-dalàna.
+Rehefa mavitrika ny fampifandraisana host-provider, Ultimate Multisite dia afaka mampiditra anaty filaharana ihany koa ny asa famoronana DNS na subdomain amin’ny lafin’ny provider ho an’ireo site vao noforonina. Raha tsy misy fampifandraisana mihaino izany asa izany, dia tsipahina ny asa ao ambadika mba hialana amin’ny fidirana filaharana tsy manao na inona na inona. Ny fanamarinana DNS sy SSL ho an’ireo domain voa-mapping dia mbola mandeha amin’ny alalan’ny dingana domain-stage mahazatra.
 
-Aza adidio fa mila mampiasa ity integration ity ianao ao amin'ny fandraisana an-tanana (settings) an'ny Ultimate Multisite eo ambanin'ny tabilao **Integration**.
+Mila mampandeha ity fampifandraisana ity ianao ao amin’ny firafitry ny Ultimate Multisite eo ambanin’ny kiheba **Integration**.
 
-![Tabilao Integrations ao amin'ny fandraisana an-tanana an'ny Ultimate Multisite mampiseho ireo mpamatsy hosting](/img/config/integrations-tab.png)
+![Kiheba Integrations ao amin’ny firafitry ny Ultimate Multisite mampiseho mpanome hosting](/img/config/integrations-tab.png)
 
-<!-- Screenshot unavailable: Link Configuration ho an'ny mpamatsy hosting eo amin'ny tabilao Integrations mampiseho ny mpamatsy hosting -->
+<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
 
-_Tandremo fa raha tsy ao amin'ireo mpamatsy hosting voalaza etsy ambony no hosting anao, **mila manao sync na manampy ny anaran'ny domain** mivantana amin'ny kaontina hosting anao ianao._
+_Mariho fa raha tsy iray amin’ireo mpanome voalaza etsy ambony ny mpanome hosting-nao, **dia mila manao sync amin’ny tanana na manampy ny anarana domain** ao amin’ny kaonty fampiantranoanao ianao._

@@ -1,82 +1,96 @@
 ---
 title: 릴리스 노트
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# 릴리스 노트
+# 릴리스 노트 {#release-notes}
 
-## Version 2.12.0 — 2026-05-15 출시
+## 버전 2.13.0 — 2026-06-05에 릴리스됨 {#version-2130--released-on-2026-06-05}
 
-- **새 기능:** 도메인 매핑 통합 기능을 갖춘 호스팅 제공업체로 Hostinger (hPanel)를 추가했습니다.
-- **새 기능:** Site Exporter가 네트워크 전체 사이트 복원 과정을 간소화하기 위해 네트워크 가져오기 번들(network import bundles)을 처리합니다.
-- **수정:** BCC 브로드캐스트 이메일이 수신자 주소 노출을 방지하기 위해 이제 비공개 수신자(undisclosed-recipients) 헤더를 사용합니다.
-- **수정:** 비(非) 날짜 값으로 저장할 때 멤버십 만료 날짜가 더 이상 손상되지 않습니다.
-- **수정:** Stripe 멤버십 업데이트 시, 더 이상 사용되지 않는 deleteDiscount API를 호출하지 않고도 할인 항목을 올바르게 제거합니다.
-- **수정:** 도메인 매핑 사이트의 SSO 리디렉션이 무한 리디렉션 루프를 방지하기 위해 이제 제한됩니다.
-- **수정:** 설정 마법사 이미지 선택기가 이제 기본 데이터 모델을 올바르게 업데이트합니다.
-- **수정:** Site Exporter CLI가 이제 올바한 기본 네트워크 사이트 선택을 유지합니다.
-- **개선:** 플러그인 크기를 줄이기 위해 번들로 포함되었던 wp-cli를 플러그인 패키지에서 제거했습니다.
+- 신규: 고객 Account, checkout, billing, site, invoice, template 전환, domain mapping 흐름에 sovereign-tenant 지원을 추가하여 tenant 네트워크가 관리 작업을 위해 고객을 메인 site로 되돌려 보낼 수 있습니다.
+- 신규: recurring membership에 renewal-credential 확인을 추가하여 저장된 billing agreement, subscription 또는 vault token이 없을 때 gateway가 auto-renewal을 비활성화할 수 있습니다.
+- 신규: pending site 생성에 HMAC 검증 loopback publishing을 추가하여 background job이 지연되는 host에서 checkout-to-site 프로비저닝의 안정성을 높였습니다.
+- 신규: SSO URL, checkout-form 기본 domain, 자동 domain-record 생성에 대한 개발자 확장 지점을 추가했습니다.
+- 수정: SSO가 mapped domain, 익명 broker 방문, logout, cross-plugin dependency 충돌 전반에서 더 안정적으로 동작합니다.
+- 수정: Pending site 생성이 이제 오래된 publish flag에서 복구되며 고객이 site-creation 화면에 갇히지 않도록 합니다.
+- 수정: 공유 checkout-form 기본 domain에 대해 domain record가 더 이상 생성되지 않으며, 활성 integration이 없을 때 사용되지 않는 host-provider background job을 건너뜁니다.
+- 수정: Checkout, billing address, password reset, email verification, template 전환, tour, 고객 Dashboard의 edge case가 더 이상 일반 고객 흐름을 차단하지 않습니다.
+- 수정: Broadcast email이 이제 recipient list 또는 mail transport 실패 시 SMTP/plugin 치명적 오류를 피하면서 수신자를 비공개로 유지합니다.
+- 수정: Membership renewal, expiration 표시, payment collection edge case가 이제 즉시 만료, 충돌 또는 필요한 결제 누락을 방지합니다.
+- 개선: WordPress 호환성이 7.0까지 테스트되었고, production Vue asset이 npm source에서 다시 빌드되었으며, Cypress end-to-end coverage가 이제 더 많은 checkout, setup, SSO, gateway 흐름을 실행합니다.
 
-## Version 2.11.0 — 2026-05-11 출시
+## 버전 2.12.0 — 2026-05-15에 릴리스됨 {#version-2120--released-on-2026-05-15}
 
-- **새 기능:** 사이트 내보내기 시, ZIP 파일이 별도의 플러그인 설치 없이 새 호스팅 환경에 설치될 수 있도록 자체 부팅 가능한 `index.php`를 번들로 포함합니다.
-- **새 기능:** 네트워크 내보내기를 통해 관리자가 Site Export 관리 페이지에서 모든 서브사이트를 단일 아카이브로 내보낼 수 있습니다.
-- **새 기능:** Site Templates 플랜 토글 허용 기능이 이제 폴백 체인(fallback chain)을 통해 강제 적용되어, 플랜 제한에 따라 템플릿 사용 가능 여부를 올바르게 제한합니다.
-- **새 기능:** 결제 양식 편집기가 필수 필드가 구성되지 않은 제품이 추가될 경우 경고 메시지를 표시합니다.
-- **새 기능:** Import/Export 설정 탭이 이제 범위에 대해 명확하게 설명하고 Site Export 도구로 직접 연결됩니다.
+- 신규: Hostinger (hPanel)를 domain mapping integration이 포함된 지원 host provider로 추가했습니다
+- 신규: Site Exporter가 이제 네트워크 전체 site 복원을 간소화하기 위해 network import bundle을 처리합니다
+- 수정: BCC broadcast email이 이제 undisclosed-recipients header를 사용하여 수신자 주소 노출을 방지합니다
+- 수정: Membership expiration date가 날짜가 아닌 값으로 저장할 때 더 이상 손상되지 않습니다
+- 수정: Stripe membership update가 이제 deprecated deleteDiscount API를 호출하지 않고 discount를 올바르게 제거합니다
+- 수정: domain-mapped site의 SSO redirect가 이제 무한 redirect loop를 방지하도록 제한됩니다
+- 수정: Setup wizard image picker 선택이 이제 underlying data model을 올바르게 업데이트합니다
+- 수정: Site Exporter CLI가 이제 올바른 기본 network site 선택을 보존합니다
+- 개선: plugin package에서 bundled wp-cli를 제거하여 plugin 크기를 줄였습니다
 
-## Version 2.10.0 — 2026-05-05 출시
+## 버전 2.11.0 — 2026-05-11에 릴리스됨 {#version-2110--released-on-2026-05-11}
 
-- **새 기능:** PayPal 가이드 설정 마법사가 수동 자격 증명 입력을 지원하며, OAuth 플래그 게이트를 통해 원활한 게이트웨이 구성을 제공합니다.
-- **새 기능:** 템플릿 전환 고객 패널이 현재 템플릿 카드, 영구 그리드, 그리고 **현재 템플릿 초기화** 버튼으로 재설계되었습니다.
-- **수정:** 템플릿 전환 기능이 AJAX 실패 시 UI가 멈추는 현상이 해결되었습니다.
-- **수정:** 템플릿 전환 권한 상태가 무단 액세스로부터 보호됩니다.
-- **수정:** 사이트 오버라이드 입력값이 저장 전에 검증됩니다.
-- **수정:** 주소가 비어 있을 때 결제 주소 프롬프트가 표시됩니다.
-- **수정:** PHP 8.1 null-to-string 사용에 대한 경고 메시지가 해결되었습니다.
-- **수정:** Currents가 초기화(init) 훅 전에 지연 로드되도록 수정하여 타이밍 문제를 방지합니다.
-- **수정:** 필터링된 SSO 경로가 모든 로그인 흐름에서 존중됩니다.
-- **수정:** 빈 사이트 식별 옵션이 저장 시 유지됩니다.
+- 신규: Site export가 이제 자체 부팅되는 `index.php`를 bundle하여 별도 plugin 설치 없이 새 host에 ZIP을 설치할 수 있습니다.
+- 신규: Network export를 통해 관리자가 Site Export admin page에서 모든 subsite를 단일 archive로 export할 수 있습니다.
+- 신규: Allow Site Templates plan toggle이 이제 fallback chain을 통해 적용되어 plan 제한에 맞게 template 사용 가능 여부를 올바르게 제한합니다.
+- 신규: Checkout form editor가 필수 field가 구성되지 않은 product가 추가되면 경고합니다.
+- 신규: Import/Export settings tab이 이제 scope를 명확히 설명하고 Site Export tool로 직접 연결됩니다.
 
-## Version 2.9.0 — 2026-04-30 출시
+## 버전 2.10.0 — 2026-05-05에 릴리스됨 {#version-2100--released-on-2026-05-05}
 
-- **새 기능:** **도구 > 내보내기 및 가져오기** 아래에 단일 사이트 내보내기 및 가져오기 기능이 추가되었습니다.
-- **수정:** 내보내기 ZIP 파일이 이제 인증된 다운로드 엔드포인트를 통해 제공됩니다.
-- **수정:** 보류 중인 내보내기/가져오기 쿼리에서 발생하던 SQL 삽입 위험 및 쿼리 문제가 수정되었습니다.
-- **수정:** 관리자가 고객 이메일을 수동으로 확인해도 보류 중인 사이트가 게시되지 않던 문제가 해결되었습니다.
-- **수정:** 멤버십이 누락될 경우 고아(Orphaned) 상태의 pending_site 레코드가 정리됩니다.
-- **수정:** 설정 탐색 패딩 및 검색 앵커 탐색이 수정되었습니다.
-- **수정:** 보류 중인 사이트가 이제 모든 사이트 보기에서 가장 먼저 표시됩니다.
-- **수정:** 스크린샷 제공업체(mShots) User-Agent 헤더가 추가되어 403 오류를 방지합니다.
-- **수정:** 가져오기 크론 스케줄 순환 종속성 문제가 해결되었습니다.
-- **수정:** 사용자 설정 키의 Tour ID가 언더스코어(_)로 정규화됩니다.
-- **개선:** 호환성을 높이기 위해 Alchemy/Zippy 대신 ZipArchive를 사용하도록 변경되었습니다.
+- 신규: 원활한 gateway 구성을 위한 OAuth flag gate가 포함된 수동 credential 입력용 PayPal guided setup wizard.
+- 신규: Template switch customer panel이 current-template card, persistent grid 및 **현재 template 재설정** button으로 재설계되었습니다.
+- 수정: Template switching이 AJAX 실패 시 더 이상 UI를 멈추게 하지 않습니다.
+- 수정: Template switching permission state가 unauthorized access에 대해 보호되었습니다.
+- 수정: Site override input이 저장 전에 검증됩니다.
+- 수정: Billing address prompt가 이제 address가 비어 있을 때 표시됩니다.
+- 수정: PHP 8.1 null-to-string deprecation notice가 해결되었습니다.
+- 수정: timing issue를 방지하기 위해 init hook 전에 Current가 lazy-loaded됩니다.
+- 수정: Filtered SSO path가 모든 login flow에서 준수됩니다.
+- 수정: 빈 site identity option이 저장 시 보존됩니다.
 
-## Version 2.8.0 — 2026-04-29 출시
+## 버전 2.9.0 — 2026-04-30에 릴리스됨 {#version-290--released-on-2026-04-30}
 
-- **새 기능:** 기타 옵션 설정 UI에 Jumper 활성화 토글이 추가되었습니다.
-- **새 기능:** 결제 양식 목록 테이블에 상태(Status) 열이 추가되었습니다.
-- **새 기능:** 사용자 지정 MU-plugin sunrise 확장을 위한 애드온 sunrise 파일 로더가 추가되었습니다.
-- **개선:** 설정 페이지에서 오류 보고 옵트인 설정이 제거되었습니다.
-- **수정:** 감사 페이지 사이트 카드의 이미지가 이제 제한되고 링크 스타일이 올바르게 적용됩니다.
-- **수정:** 스크린샷 제공업체가 thum.io에서 WordPress.com mShots로 변경되었습니다.
-- **수정:** 활성화 등록 및 기본 역할이 이제 새 설치 시 올바른 기본값을 설정합니다.
-- **수정:** `get_site_url()`이 도메인에 포트가 포함된 경우 더 이상 빈 값을 반환하지 않습니다.
-- **수정:** `copy_media` 설정이 비어 있을 때 미디어 파일 복사가 올바르게 이루어집니다.
-- **수정:** 네트워크 활성화(network-activate) sitemeta 쓰기 후 객체 캐시가 올바르게 무효화됩니다.
-- **수정:** 3부분 도메인의 DNS 확인 시 사용자 지정 도메인이 기본 도메인으로 자동 승격됩니다.
-- **수정:** 만료된 결제가 정리될 때 보류 중인 멤버십이 취소됩니다.
-- **수정:** 인라인 로그인 프롬프트가 닫힌 후 비밀번호 강도 검사기가 다시 연결됩니다.
-- **수정:** 사이트가 이미 생성된 감사 페이지에서 무한 페이지 새로고침이 중지됩니다.
-- **수정:** WP core 등록 옵션이 플러그인 활성화 및 설정 저장 시 동기화됩니다.
-- **수정:** PHP 8.4 호환성을 위해 `calculate_expiration`에 null 만료 방지 기능이 추가되었습니다.
-- **수정:** 고객이 이미 활성 멤버십을 가지고 있을 때 중복 가입이 차단됩니다.
-- **수정:** 결제에서 `date_expiration`에 대한 null 검사가 추가되었습니다.
-- **수정:** 사이트 프로비저닝이 강화되었습니다 — 제한 사항, 멤버십 추론, 도메인 승격.
-- **수정:** 사전 설치 확인 상태 레이블이 확인 실패 시 NOT Activated로 수정되었습니다.
-- **수정:** 결제 도메인이 이메일 인증 URL에 사용됩니다.
-- **수정:** 비밀번호 필드가 없을 때 결제 후 자동 로그인이 방지됩니다.
-- **수정:** 무료 멤버십이 더 이상 만료되지 않으며, 평생으로 간주됩니다.
-- **수정:** 이메일 인증 게이트가 고객이 이메일을 인증할 때까지 사이트 게시를 보류합니다.
-- **수정:** SES v2 API 엔드포인트 기본 경로 및 식별 경로가 수정되었습니다.
-- **수정:** `wu_inline_login_error` 훅이 pre-submit catch 블록에서 방출됩니다.
+- 신규: Single-site export 및 import가 **Tools > Export & Import** 아래에 추가되었습니다.
+- 수정: Export ZIP file이 이제 인증된 download endpoint를 통해 제공됩니다.
+- 수정: Pending export/import query의 SQL injection risk 및 query issue가 수정되었습니다.
+- 수정: admin이 customer email을 수동으로 verifies할 때 pending site가 published되지 않는 문제가 수정되었습니다.
+- 수정: membership이 없을 때 orphaned pending_site record가 정리됩니다.
+- 수정: Settings nav padding 및 search anchor navigation이 수정되었습니다.
+- 수정: Pending site가 이제 All Sites view에서 먼저 표시됩니다.
+- 수정: 403 error를 방지하기 위해 screenshot provider (mShots) User-Agent header가 추가되었습니다.
+- 수정: Import cron schedule circular dependency가 해결되었습니다.
+- 수정: Tour ID가 user settings key에서 underscore로 normalised됩니다.
+- 개선: 더 나은 호환성을 위해 이제 Alchemy/Zippy 대신 ZipArchive가 사용됩니다.
+
+## 버전 2.8.0 — 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- 신규: 다른 옵션 설정 UI에 Jumper 토글 활성화가 추가되었습니다.
+- 신규: 결제 양식 목록 테이블에 상태 열이 추가되었습니다.
+- 신규: 사용자 지정 MU-plugin sunrise 확장을 위한 Addon sunrise 파일 로더가 추가되었습니다.
+- 개선: 설정 페이지에서 오류 보고 옵트인 설정이 제거되었습니다.
+- 수정: 감사 페이지 사이트 카드 — 이제 이미지가 제한되고 링크 스타일이 올바르게 적용됩니다.
+- 수정: 스크린샷 제공자가 thum.io에서 WordPress.com mShots로 전환되었습니다.
+- 수정: 이제 새로 설치할 때 등록 활성화 및 기본 역할이 올바른 기본값으로 설정됩니다.
+- 수정: 도메인에 포트가 포함된 경우 `get_site_url()`이 더 이상 빈 값을 반환하지 않습니다.
+- 수정: `copy_media` 설정이 비어 있을 때도 복제 미디어 파일이 이제 올바르게 복사됩니다.
+- 수정: 네트워크 활성화 sitemeta 쓰기 후 객체 캐시가 올바르게 무효화됩니다.
+- 수정: 세 부분 도메인의 DNS 검증 시 사용자 지정 도메인이 기본 도메인으로 자동 승격됩니다.
+- 수정: 만료된 결제가 정리될 때 대기 중인 멤버십이 취소됩니다.
+- 수정: 인라인 로그인 프롬프트를 닫은 후 비밀번호 강도 검사기가 다시 바인딩됩니다.
+- 수정: 사이트가 이미 생성된 경우 감사 페이지에서 무한 페이지 새로고침이 중지되었습니다.
+- 수정: plugin 활성화 및 설정 저장 시 WP 코어 등록 옵션이 동기화됩니다.
+- 수정: PHP 8.4 호환성을 위해 `calculate_expiration`에 null 만료 가드가 추가되었습니다.
+- 수정: 고객에게 이미 활성 멤버십이 있는 경우 중복 가입이 차단됩니다.
+- 수정: 결제에서 `date_expiration`에 대한 null 검사가 추가되었습니다.
+- 수정: 사이트 프로비저닝이 강화되었습니다 — 제한, 멤버십 추론, 도메인 승격.
+- 수정: 사전 설치 확인 상태 라벨이 확인 실패 시 활성화되지 않음으로 수정되었습니다.
+- 수정: 이메일 확인 URL에 결제 도메인이 사용됩니다.
+- 수정: 비밀번호 필드가 없는 경우 결제 후 자동 로그인이 수행됩니다.
+- 수정: 무료 멤버십은 더 이상 만료되지 않으며 — 평생으로 처리됩니다.
+- 수정: 고객이 이메일을 확인할 때까지 이메일 확인 게이트가 사이트 게시를 보류합니다.
+- 수정: SES v2 API endpoint 기본 경로 및 ID 라우트가 수정되었습니다.
+- 수정: `wu_inline_login_error` hook이 제출 전 catch 블록에서 발생합니다.

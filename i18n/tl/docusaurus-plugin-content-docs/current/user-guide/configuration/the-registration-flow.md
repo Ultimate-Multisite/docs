@@ -3,13 +3,13 @@ title: Ang Daloy ng Pagpaparehistro
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Ang Daloy ng Pagpaparehistro (v2)
+# Ang Daloy ng Pagpaparehistro (v2) {#the-registration-flow-v2}
 
 _**MAHALAGANG PAUNA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
 
 Maaaring magparehistro ang mga user sa iba't ibang paraan sa iyong network. Maaari nilang gamitin ang iyong registration form o isang shareable link patungo sa isang pre-selected na plano. Ipakikita namin dito kung paano magre-register ang iyong mga customer sa iyong network gamit ang mga available na daanan at ano ang mangyayari pagkatapos silang magparehistro sa iyong network.
 
-## Paggamit ng Registration Form:
+## Paggamit ng Registration Form: {#using-the-registration-form}
 
 Ito ang standard na proseso ng pagpaparehistro. Gumagawa ka ng registration page na may **checkout form** at dito pupunta ang iyong mga customer para magre-register sa iyong network at mag-subscribe sa isang plano. Maaari kang magkaroon ng maraming registration pages, bawat isa ay may iba't ibang registration form kung gusto mo.
 
@@ -35,13 +35,13 @@ Kung nag-register sila sa isang paid plan o kung hindi mandatory ang email verif
 
 ![Site activated with link to sign in to dashboard](/img/frontend/site-activated.png)
 
-## Paggamit ng Shareable Link:
+## Paggamit ng Shareable Link: {#using-a-shareable-link}
 
 Ang proseso ng pag-register gamit ang shareable link ay halos pareho lang sa registration form, ang tanging pagkakaiba ay kapag gumagamit ng shareable link, maaari nang piliin ng mga customer mo ang isang product o website template bago sila mag-checkout (tingnan ang seksyon Pre-selecting products and templates via URL parameters) o baka may coupon code na idadagdag (tingnan ang seksyon Using URL Parameters).
 
 Ang proseso ng registration ay pareho lang: kailangan nilang punan ang kanilang pangalan, username, email address, pangalan ng website at title, atbp... pero ang plan o site template ay naka-pre-select na para sa kanila.
 
-### Pagrehistro Gamit ang Manual Payments:
+### Pagrehistro Gamit ang Manual Payments: {#registering-using-manual-payments}
 
 Kung ayaw mo gumamit ng PayPal, Stripe o anumang ibang payment gateway na inaalok ng Ultimate Multisite o ng mga add-on integrations nito, maaari kang gumamit ng manual payments para sa iyong mga customer. Sa ganitong paraan, makakagawa ka ng invoice para sila ang magbayad sa iyong preferred payment processor pagkatapos nilang mag-register sa inyong network.
 

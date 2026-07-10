@@ -3,11 +3,11 @@ title: Çoklu-tenant izolýasiýa
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Çoklu Kiracılar Arasından Ayırma (Multi-Tenancy Isolation)
+# Çoklu Kiracılar Arasından Ayırma (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0, öz bağımsız kiracılar (sovereign tenants) için her alt siteye özel veritabanı ve dosya sistemi izolasyonunu destekler. Bu, kiracı verilerini birbirinden ayırırken ağ düzeyindeki sağlama (provisioning), faturalandırma ve yönetim özelliklerini korur.
 
-## İzolasyon Stratejisi
+## İzolasyon Stratejisi {#isolation-strategy}
 
 Daha güçlü veri ayrımı, özel dosya sistemi depolama veya ayrı bir sunucu sınırı gerektiren müşteriler için öz bağımsız izolasyonu kullanın.
 
@@ -18,7 +18,7 @@ Her öz bağımsız kiracının şunları olmalıdır:
 - Siteyi veritabanına, ana yola (root path), ana bilgisayar adına (hostname) ve izolasyon modeline eşleyen bir kiracı kayıt girişi (registry entry).
 - Kiracının canlı kabul edilmesinden önce bir geçiş doğrulama sonucu.
 
-## Veritabanı Sunucu Bağlantısı (Database Host Binding)
+## Veritabanı Sunucu Bağlantısı (Database Host Binding) {#database-host-binding}
 
 Sürüm 1.2.0, öz bağımsız kurulumlar için varsayılan aynı makine bağlantı davranışını değiştirir. `localhost` gibi aynı makine değerleri normalize edilir, böylece Bedrock, FrankenPHP ve konteynerleştirilmiş WordPress kurulumları, MySQL'in aslında gördüğü ana bilgisayar dizesine karşı izin verebilir ve doğrulama yapabilirler.
 
@@ -31,11 +31,11 @@ Bir öz bağımsız kiracıyı yapılandırırken:
 
 Doğrulama raporları izin hataları gösterirse, kiracı veritabanı kullanıcı ayrıcalıklarını yapılandırılmış sunucu bağlantısıyla karşılaştırın. `user@localhost` için verilen bir kullanıcı, `user@127.0.0.1` veya `user@%` ile farklıdır.
 
-## Dosya Sistemi Kök Dizini (Filesystem Root)
+## Dosya Sistemi Kök Dizini (Filesystem Root) {#filesystem-root}
 
 Tenant root restartlar we dağıtmalarda stabil bolmaly. Geçici mount yollarından sakaryň. Bedrock-stilde kurmak üçin, tenant root'uny diňe proje kökünden däl, eýsem tenant bootstrap-y bedel berjek WordPress web kökü bilen baglanyşdyryp görüň.
 
-## Kurmak tertibi (Provisioning order)
+## Kurmak tertibi (Provisioning order) {#provisioning-order}
 
 Iň soňky sovrin tenantlar üçin bu tertibi ulanyn:
 
@@ -49,7 +49,7 @@ Iň soňky sovrin tenantlar üçin bu tertibi ulanyn:
 
 Bu tertip bazanyň ýazgysy, ulgamlary we dosya sistemini taýynlamazdan, böleki izole edilen tenantlara trafik bermegiň öňü çeker.
 
-## Sovrin müşderileri dolandyrmagy (Sovereign customer management flows)
+## Sovrin müşderileri dolandyrmagy (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 sovrin rejim (sovereign mode) işje berilende müşderileri dolandyrmak hereketlerini esasy site (main site) üstünde saklaýar. Tenant hala izole edilen WordPress kurşylyk ýaly işleýet bilse, ýöne ulgamyň ağ bilen hasyllandyrmagy, üye bolmagy ýa-da paylaşılan hasap maglumatlaryna bagly müşderi bilen baglanyşykly hereketler tenant işje berilipdirde tamamlanmaga synanyp bilmez; bu ýagdaýda müşderini tenant işje berilipdirde tamamlamak üçin esasy sitege geri göndermeli.
 

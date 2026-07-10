@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
 
-# Metered Plans
+# Metered Plans {#metered-plans}
 
 Ang Ultimate Multisite: Metered Plans addon makabag-o sa paagi sa pagbayad kaninyo og kwarta ngadto sa inyong mga kustomer pinaagi sa pagtanyag og flexible nga metered billing capabilities. Imbes nga magpakaaron-ingnon og lig-on nga limitasyon nga makapugong sa users kung maabot na ang limit, mahimo nimo i-enable ang overage charges nga awtomatikong magbayad sa kustomer alang sa dugang paggamit.
 
-## Key Features
+## Key Features {#key-features}
 
 * **Metered Billing**: Pagbayad sa mga kustomer base sa aktuwal nilang paggamit imbes nga fixed tiers
 * **Overage Management**: Awto-matikong pagbayad alang sa paggamit nga milapas sa limitasyon sa plano
@@ -21,14 +21,14 @@ Ang Ultimate Multisite: Metered Plans addon makabag-o sa paagi sa pagbayad kanin
 * **Automatic Invoicing**: Awto-matikong paghimo og mga invoice kung malapas ang usage thresholds
 * **Usage Reports**: Detalyado nga usage analytics ug reporting para sa mga kustomer ug administrator
 
-## Perfect For
+## Perfect For {#perfect-for}
 
 * **Hosting Providers**: Pagtanyag og scalable plans nga mo-uban sa panginahanglan sa kustomer
 * **SaaS Platforms**: Pagbayad base sa aktuwal nga pagkonsumo sa resource
 * **Agency Networks**: Flexible pricing models alang sa mga proyekto sa kliyente
 * **Reseller Hosting**: Pagtugot sa mga partner nga magtanyag og usage-based pricing
 
-## How It Works
+## How It Works {#how-it-works}
 
 1. I-configure ang metered resources (disk space, bandwidth, number of sites, etc.)
 2. I-set ang base plan limits ug overage rates
@@ -37,13 +37,13 @@ Ang Ultimate Multisite: Metered Plans addon makabag-o sa paagi sa pagbayad kanin
 5. Ang mga invoice mahimo nga maghimo awtomatiko base sa billing cycle
 6. Makatan-aw ang mga kustomer sa ilang paggamit ug umaabot nga bayad sa real-time
 
-## AI Token Billing
+## AI Token Billing {#ai-token-billing}
 
 Ang Version 1.1.0 nagdugang og AI token billing alang sa mga network nga nagtanyag og AI features pinaagi sa WordPress AI Client SDK. Ang Metered Plans makapamati (listens) sa nakompleto nang AI generation requests, magrekord og input ug output token counts para sa kasamtangang subsite, ug i-convert kining tokens ngadto sa billable AI spend alang sa kasamtangang billing period sa kustomer.
 
 Gamita ang AI token billing kung gusto nimo magtanyag og mga AI tools sa sites sa kustomer nga dili ka makadawat sa unpredictable model costs. Ang matag request giatribute sa subsite, kustomer, membership, provider, ug model aron ang administrator makasusi (audit) sa paggamit samtang makakita ang mga kustomer kung unsa ka epekto sa ilang AI consumption sa ilang account.
 
-### Configure Per-Token Rates
+### Configure Per-Token Rates {#configure-per-token-rates}
 
 Ang AI rates gi-configure kada modelo isip separate nga input ug output rates. Ang rates gikalkula kada 1 million tokens, nga nagkaparehas sa kasagarang pricing pages sa mga AI provider.
 
@@ -55,7 +55,7 @@ Ang AI rates gi-configure kada modelo isip separate nga input ug output rates. A
 
 Kung walay gitakda nga exact model ID, ang Metered Plans makakatambay (match) base sa model prefix. Pananglitan, ang rate nga gi-configure alang sa `claude-sonnet-4` mahimong magamit sa timestamped model IDs nga nagsugod niining prefix. Ang mga developer mahimo usab nga i-adjust ang final rate table gamit ang [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filter.
 
-### Supported AI Connectors
+### Supported AI Connectors {#supported-ai-connectors}
 
 Ang AI token billing naglihok uban sa mga connectors nga nagpagawas og WordPress AI Client SDK generation events ug naglakip og token usage sa response metadata. Naglakip kini sa Ultimate Multisite AI connector family nga gidokumento dinhi:
 
@@ -65,13 +65,13 @@ Ang AI token billing naglihok uban sa mga connectors nga nagpagawas og WordPress
 
 Ang custom connectors mahimong moapil pinaagi sa pagpagawas sa standard `wp_ai_client_before_generate_result` ug `wp_ai_client_after_generate_result` events uban ang model, provider, ug token usage metadata. Ang connector settings gipatuman gikan sa main site ngadto sa subsites aron gigamit sa mga kustomer nga sites ang network-approved providers ug limits.
 
-### Customer Account Usage
+### Customer Account Usage {#customer-account-usage}
 
 Makakita ang mga kustomer sa AI usage kauban sa ilang ubang metered resources sa ilang account area. Ang AI spend row nagpakita sa current billing-period total nga nakuha gikan sa narekord nga prompt ug completion tokens, ang gi-configure nga model rates, ug bisan unsay included allowance sa plano.
 
 Kung ang kustomer adunay payment method nga nakarehistro, ang paggamit nga milapas sa included allowance gitrato isip billable overage. Kung ang plano gi-configure para sa hard cutoff ug walay available nga payment method ang kustomer, mahimong mapugngan ang AI requests kung maabot na ang allowance ug ipahibalo sa kustomer nga magdugang og payment details una pa mo-padayon.
 
-## Supported Resources
+## Supported Resources {#supported-resources}
 
 * Disk storage
 * Bandwidth/Data transfer
@@ -80,13 +80,13 @@ Kung ang kustomer adunay payment method nga nakarehistro, ang paggamit nga milap
 * AI token usage ug AI spend
 * Custom resource types
 
-## Requirements
+## Requirements {#requirements}
 
 * Multisite Ultimate 2.0.0 or higher
 * WordPress Multisite installation
 * PHP 7.4 or higher
 
-## Installation
+## Installation {#installation}
 
 1. I-upload ang plugin files ngadto sa `/wp-content/plugins/ultimate-multisite-metered-plans`
 2. I-activate ang plugin pinaagi sa 'Plugins' screen sa WordPress
@@ -94,24 +94,24 @@ Kung ang kustomer adunay payment method nga nakarehistro, ang paggamit nga milap
 4. I-configure ang inyong metered resources ug pricing
 5. I-enable ang metered billing para sa mga produkto sa product editor
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#frequently-asked-questions}
 
-## What happens when a customer exceeds their limit?
+## What happens when a customer exceeds their limit? {#what-happens-when-a-customer-exceeds-their-limit}
 
 Imbes nga mapugngan ang access, susubayhon sa sistema ang overage ug idugang kini sa ilang sunod nga invoice base sa rates nga inyong gi-configure.
 
-## Can I set different overage rates for different products?
+## Can I set different overage rates for different products? {#can-i-set-different-overage-rates-for-different-products}
 
 Oo, ang matag produkto mahimong adunay unique metered resources ug overage pricing.
 
-## How are customers notified about usage?
+## How are customers notified about usage? {#how-are-customers-notified-about-usage}
 
 Makatan-aw ang mga kustomer sa ilang kasamtangang paggamit sa ilang dashboard ug makadawat og optional notifications kung duol na o milapas na sa limitasyon.
 
-## How is AI token usage priced?
+## How is AI token usage priced? {#how-is-ai-token-usage-priced}
 
 Ang AI token usage gipresyo base sa gi-configure nga input ug output rates sa modelo kada 1 million tokens. Ang Metered Plans moubod (multiplies) ang prompt ug completion token counts sa matag request pinaagi niining mga rate, idugang ang resulta ngadto sa kasamtangang AI spend billing period sa kustomer, ug mag-apply sa allowance o overage rules sa plano.
 
-## Can I still use hard limits?
+## Can I still use hard limits? {#can-i-still-use-hard-limits}
 
 Oo, optional ra ang metered billing kada produkto. Mahimo ninyo i-mix ang traditional hard-limit products uban sa metered products.

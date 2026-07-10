@@ -3,13 +3,13 @@ title: Sito šablonavimai
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Szabdomod modeliai (v2)
+# Szabdomod modeliai (v2) {#site-templates-v2}
 
 _**SUTRA: Šis straipsnis susijęs su Ultimate Multisite versija 2.x. Jei naudojate versiją 1.x,**_ **prieš skone šį straipsnis** _**.**_
 
 Mūsų tikslas, kurdami premium tinklą su Ultimate Multisite, yra automatiškai atlikti kuo daugiau procesų, suteikiant klientams judesmumo ir skirtingų pasirinkimų, iš kurių jie gali pasirinkti savo svetainų kūrimui. Vienas lengvas būdas pasiekti šį balansą – naudoti Ultimate Multisite Site Templates funkciją.
 
-## Kas tai yra Site Template?
+## Kas tai yra Site Template? {#what-is-a-site-template}
 
 Kaip pavadinimas rodo, Site Template yra bazinis (boilerplate) svetainis, kurį galima naudoti kaip pagrindą naujų vietų kūrimui jūsų tinkluose.
 
@@ -17,7 +17,7 @@ Tai reiškia, kad galite sukurti pagrindinį svetainį, aktyvuoti skirtingus plu
 
 Tai atrodo puikiai, bet kaip sukurti naują svetainę modelį? Tai yra lengvai.
 
-## Naujos Site Template kūrimas ir redagavimas
+## Naujos Site Template kūrimas ir redagavimas {#creating-and-editing-a-new-site-template}
 
 Site Templates yra normalūs svetainiai jūsų tinkluose. Naujo modelio kūrimui galite tiesiog eiti į **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Forminės pakuotės apačioje pamatysite **Copy Site** (Kopijuoti svetainę) myg
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Svetainės šabloono treści keitimas
+### Svetainės šabloono treści keitimas {#customizing-the-contents-of-a-site-template}
 
 Svetainės šabloną keisti labai paprastai: eikite į jo dashboard panelį ir atlikite reikiamus pakeitimus. Jūs galite kurti naujus straipsnius, puslapis, aktyvuoti pluginus ir pakeisti aktyvivą temą. Galite net ieinti Customizeriu ir pakeisti visoki kitus pritaikymo nustatymus.
 
@@ -43,11 +43,11 @@ Svetainės šabloną keisti labai paprastai: eikite į jo dashboard panelį ir a
 
 Visi šie duomenys bus kopijuoti, kai klientas sukuria naują svetainę, bazduojant į tą Svetainės šabloną.
 
-### Piniginė opsijos (Advanced Options)
+### Piniginė opsijos (Advanced Options) {#advanced-options}
 
 Jei turite kokį gamybines kodo patirtį, galite naudoti mūsų Search and Replace API, kad automatiškai pakeistumėte informaciją naujo svetainėje po jos sukūrimo. Tai naudinga tokioms dalykais, kaip įvertinti įmonės vardus puslapyje "Apie mus", keisti kontaktų el. paštą puslapyje „Kontaktai“ ir kitas.
 
-### Svetainės šablonų naudojimas
+### Svetainės šablonų naudojimas {#using-site-templates}
 
 Gerai, jūs sukūrėte daug skirtingų Svetainės šablonų su skirtingais dizainais, temomis ir nustatymais. Kai kur jie bus naudingi jūsų tinklu?
 
@@ -59,7 +59,7 @@ Pagrindinis puslapis yra tas, kad dabar turite dvi būdus, kuriuos galite naudot
 
   * Leisti savo klientams pasiekti svetainę šablonus pats during registracijos.
 
-#### Režimas 1: Pateikti Svetainės šabloną
+#### Režimas 1: Pateikti Svetainės šabloną {#mode-1-assign-site-template}
 
 Šiame režime jūsų klientai nebus galini rasti šabloną, kai sukuriant paskyrą, o tai būtų jūs nurodytumėte, kurį šabloną turėtų naudoti kiekvienam Jūsų planui.
 
@@ -71,7 +71,7 @@ Tai padaryti reikės eiti į **Ultimate Multisite > Products > Edit**.
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Režimas 2: Pasirinkite skirtus siuntimo šablonus
+#### Režimas 2: Pasirinkite skirtus siuntimo šablonus {#mode-2-choose-available-site-template}
 
 Šiame režime jūs pateiksite jūsų klientams pasirinkimą registracijos metu. Jie galės pasirinkti iš skirtingų siuntimo šablonų, kuriuos nurodytumėte produkto nustatymuose. Jums yra pasirinkimas apriboti skirtus siuntimo šablonus, iš kurių jie gali pasirinkti. Tai leidžia jums turėti skirtingus siuntimo šablonų rinkinius kiekvienam produktui, o tai yra puikiai tinka pabrėžti skirtingas funkcijas ir įrangos didesniems kainoms turintiems produktams.
 
@@ -79,7 +79,7 @@ Redaguose **Produktų redaguojimo** puslapyje. **Produktų variantų** sekcijoje
 
 ![Pasirinkite turimos sito modeliai su veikimo būdais](/img/config/product-site-templates.png)
 
-### Pagrindinis režimas: Sito modelio pasirinkimas atlikta Užsakymo formoje (Checkout form)
+### Pagrindinis režimas: Sito modelio pasirinkimas atlikta Užsakymo formoje (Checkout form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Jei norite, kad visi jūsų sito modeliai būtų turimi registracijos metu, arba galbūt nesukreipiate papildomų darbų nurodyti ar nurodyti sito modelius kiekvienam kuriamam produktui. Taip galite nustatyti sito modelio pasirinkimą savo **Užsakymo formoje (Checkout Form)**. Reikia ieškoti **Ultimate Multisite > Užsakymo formos** ir paspausti **Redaguoti** ant formos, kurią norite konfigūruoti.
 
@@ -93,29 +93,29 @@ Frontendui klientai mato modelio pasirinkimo naršalę užsakymo metu ir gali pa
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Stulpų šablonų pasirinkimo opsijos
+### Stulpų šablonų pasirinkimo opsijos {#site-template-options}
 
 Ypatingi kitas stulpų šablonų funkcijas, kurias galite įjungti arba išjungti Ultimate Multisite nustatymuose.
 
 ![Stulpų šablonų opsijos Ultimate Multisite nustatymuose](/img/config/settings-sites-templates-section.png)
 
-#### Leisti stulpų šablonų keitimo
+#### Leisti stulpų šablonų keitimo {#allow-template-switching}
 
 Įjungiant šią opsiją, jūsų klientai turės galimybę pakeisti tą šabloną, kurį pasirinksite registracijos metu po paskyros ir svetainės kūrimo. Tai naudinga klientui, nes tai leidžia ji vėl pasirinkti šabloną, jei vėliau sužino, kad jūsų pradinis pasirinkimas nėra geriausias jų specifinėms poreikiams.
 
-#### Leisti vartotojams naudoti savo svetainę kaip šabloną
+#### Leisti vartotojams naudoti savo svetainę kaip šabloną {#allow-users-to-use-their-site-as-templates}
 
 Kadangi subsite vartotojai skiria laiką savo svetainės kūrimui ir dizainui, jie gali norėti ją klonuoti ir naudoti kaip vieną iš stulpų šablonų, skirtų pasiekti kitą subsite kūrimą jūsų tinkluose. Ši opsija suteiks ji tą galimybę.
 
-#### Kopijuoti medius priklausomai nuo šablonų duplikavimo
+#### Kopijuoti medius priklausomai nuo šablonų duplikavimo {#copy-media-on-template-duplication}
 
 Jei pasirinksite šią opsiją, ji kopios medius, įkelti į stulpų svetainę, į naujai kuriamą svetainę. Tai gali būti perjunkas kiekviename planą.
 
-#### **Priešimti paieškos enginečių indeksuoti stulpus šablonus**
+#### **Priešimti paieškos enginečių indeksuoti stulpus šablonus** {#prevent-search-engines-from-indexing-site-templates}
 
 Stulpai šablonai, kaip apibacowano šiame straipsnyje, yra standartiniai (boilerplate), bet vis dar yra jūsų tinklo dalis, todėl jie vis dar gali būti rasti paieškos enginečių. Ši opsija leidžia jums paslėpti stulpus šablonus, kad paieška enginečiai galėtų juos indeksuoti.
 
-## Stulpų šablonų užpildymas automatiniais paieška-ir keitimo funkcijomis
+## Stulpų šablonų užpildymas automatiniais paieška-ir keitimo funkcijomis {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Ultimate Multisite'o vienas geriausi funkcijų yra jūsų registracijos formai pridėti laisva tekstą, spalvas ir pasirinkimą laukus. Kai turime tą duomenį sugrįstame, galime naudoti jį, kad išprekšte turinį į pasirinkto svetainės šablono (template) dalys. Tada, kai nauja svetainė bus publikuojama, Ultimate Multisite pakeis šiuos laukus tikro informacija, kuri buvo įvesta registracijos metu.
 
@@ -135,7 +135,7 @@ Ultimate Multisite tada automatiškai pakeis laukus su klientu pateikta informac
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Problemos sprendimas „šablonas užpildytas laukais“
+### Problemos sprendimas „šablonas užpildytas laukais“ {#solving-the-template-full-of-placeholders-problem}
 
 Viskas yra puikiai, bet susirinkame nepatogų problema: dabar mūsų svetainės šablonav – kuriuos gali vizinti klientai – užpildyti nepatogiais laukais, kurie ne du daug informacijos.
 

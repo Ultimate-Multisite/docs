@@ -3,25 +3,25 @@ title: Plantilla de complemento
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Plantilla de Complemento
+# Plantilla de Complemento {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.3 o superior
 - PHP 7.4 o superior
 - Multisite Ultimate plugin (activo)
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube los archivos del complemento a tu directorio `/wp-content/plugins/`
 2. Activa el complemento a través del menú 'Plugins' en WordPress
 3. Configura la configuración del complemento en el administrador de la red
 
-## Desarrollo
+## Desarrollo {#development}
 
-### Configuración
+### Configuración {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Estructura del Proyecto
+### Estructura del Proyecto {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Pruebas
+### Pruebas {#testing}
 
 El complemento incluye un marco de pruebas integral:
 
@@ -75,45 +75,45 @@ El complemento incluye un marco de pruebas integral:
 - **Cobertura de Pruebas**: configurado para rastrear la cobertura de código
 - **Pruebas Multisitio**: pruebas ejecutadas en un entorno multisite
 
-### Estándares de Código
+### Estándares de Código {#code-standards}
 
 - **Estándares de Codificación de WordPress**: aplicados mediante PHPCS
 - **Compatibilidad con PHP 7.4+**: se soportan características modernas de PHP
 - **Análisis Estático**: integración de PHPStan para verificación de tipos
 - **Modernización de Código**: reglas de Rector para actualizaciones de PHP
 
-### Sistema de Construcción
+### Sistema de Construcción {#build-system}
 
 - **Procesamiento de Activos**: minificación de archivos CSS/JS
 - **Traducción**: generación de archivos POT
 - **Empaquetado**: creación de archivos de distribución
 - **Modo de Desarrollo**: activos sin minificar para depuración
 
-## Configuración
+## Configuración {#configuration}
 
 El complemento admite varias opciones de configuración accesibles a través de la interfaz de administrador de la red.
 
-## Ganchos y Filtros
+## Ganchos y Filtros {#hooks-and-filters}
 
-### Acciones
+### Acciones {#actions}
 
 - `ultimate-multisite-addon-template_init` - Se dispara después de la inicialización del complemento
 - `ultimate-multisite-addon-template_loaded` - Se dispara después de que se cargan todos los archivos del complemento
 
-### Filtros
+### Filtros {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Modifica la configuración del complemento
 - `ultimate-multisite-addon-template_enabled` - Sobrescribe el estado de habilitación/deshabilitación del complemento
 
-## Licencia
+## Licencia {#license}
 
 Este complemento está licenciado bajo la GPL v3 o posterior.
 
-## Soporte
+## Soporte {#support}
 
 Para soporte y documentación, visita [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## Registro de Cambios
+## Registro de Cambios {#changelog}
 
 - Versión 1.0.1 (2025-09-28): renombrar prefijo a ultimate-multisite; actualizar dominio de texto; aumento de versión.
 - Versión (2025-09-28): renombrar prefijo a ultimate-multisite; actualizar dominio de texto; aumento de versión.

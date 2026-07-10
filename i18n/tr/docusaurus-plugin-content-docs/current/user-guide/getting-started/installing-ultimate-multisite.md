@@ -3,13 +3,13 @@ title: Ultimate Multisite'ın Kurulumu
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite'in Kurulumu
+# Ultimate Multisite'in Kurulumu {#installing-ultimate-multisite}
 
 :::note
 Bu eğitim, WordPress Multisite'ın zaten kurulu ve yapılandırılmış olduğunu varsayar. Nasıl yapılacağını öğrenmek için WP Beginner tarafından hazırlanan [bu eğitime](https://www.wpbeginner.com/glossary/multisite/) göz atın.
 :::
 
-## Eklentinin Kurulumu
+## Eklentinin Kurulumu {#installing-the-plugin}
 
 Ultimate Multisite, [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) adresinde ücretsiz olarak mevcuttur.
 
@@ -29,17 +29,17 @@ Etkinleştirdikten sonra otomatik olarak Kurulum Sihirbazı'na yönlendirileceks
 
 ![Eklenti etkinleştirildi ve sihirbaza yönlendirildi](/img/installation/plugin-activated.png)
 
-## Kurulum Sihirbazı
+## Kurulum Sihirbazı {#setup-wizard}
 
 Kurulum Sihirbazı, Ultimate Multisite'ı yaklaşık 10 dakika içinde yapılandırmanız için size yol gösterecektir.
 
-### Hoş Geldiniz
+### Hoş Geldiniz {#welcome}
 
 Başlamak için **Başla**'ya tıklayın.
 
 ![Kurulum Sihirbazı hoş geldiniz ekranı](/img/installation/wizard-welcome.png)
 
-### Ön Kurulum Kontrolleri
+### Ön Kurulum Kontrolleri {#pre-install-checks}
 
 Bu adım, sistem bilgilerinizin ve WordPress kurulumunuzun Ultimate Multisite'ın gereksinimlerini karşılayıp karşılamadığını kontrol eder. Her şey yolundaysa **Sonraki Adıma Git**'e tıklayın.
 
@@ -51,31 +51,31 @@ Ultimate Multisite kuruldu ancak **henüz ağ üzerinde etkinleştirilmediyse** 
 **Ağ Üzerinde Etkinleştir**'e tıklamak, eklentiyi tüm çoklu sitenizin ağında otomatik olarak etkinleştirir. Etkinleştirdikten sonra sihirbaz normal şekilde kurulum adımına devam eder. Etkinleştirme durumunu düzeltmek için sihirbazdan ayrılmanız gerekmez.
 :::
 
-### Kurulum
+### Kurulum {#installation}
 
 Kurulum aracı, gerekli veritabanı tablolarını oluşturacak ve Ultimate Multisite'ın çalışması için ihtiyaç duyduğu `sunrise.php` dosyasını yükleyecektir. Devam etmek için **Yükle**'ye tıklayın.
 
 ![Kurulum adımı, veritabanı tablolarını ve sunrise.php dosyasını gösteriyor](/img/installation/wizard-installation.png)
 
-### Şirketiniz
+### Şirketiniz {#your-company}
 
 Şirket bilgilerini girin ve varsayılan para biriminizi ayarlayın. Bu bilgiler WaaS platformunuzun her yerinde kullanılacaktır. İşlemi tamamladığınızda **Devam Et**'e tıklayın.
 
 ![Şirket Bilgileri yapılandırma adımı](/img/installation/wizard-your-company.png)
 
-### Varsayılan İçerik
+### Varsayılan İçerik {#default-content}
 
 Bu adım, önceden tanımlanmış şablonları, ürünleri ve diğer başlangıç içeriğini yüklemenize olanak tanır. Bu, Ultimate Multisite'ın özelliklerine aşina olmanın harika bir yoludur. Varsayılan içeriği eklemek için **Yükle**'ye tıklayın veya tercih ederseniz bu adımı atlayın.
 
 ![Varsayılan içerik kurulum adımı](/img/installation/wizard-default-content.png)
 
-### Önerilen Eklentiler
+### Önerilen Eklentiler {#recommended-plugins}
 
 İsteğe bağlı olarak önerilen tamamlayıcı eklentileri yükleyin. Bunları eklemek için **Yükle**'ye tıklayın veya devam etmek için atlayın.
 
 ![Önerilen eklentiler adımı](/img/installation/wizard-recommended-plugins.png)
 
-### Hazır!
+### Hazır! {#ready}
 
 İşte bu kadar! Ultimate Multisite kurulumunuz tamamlandı. Artık **Ağ Yöneticisi Paneli**'nden Web Sitesi olarak Hizmet platformunuzu oluşturmaya başlayabilirsiniz.
 

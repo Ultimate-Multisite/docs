@@ -1,32 +1,32 @@
 ---
-title: مروری بر REST API
+title: نمای کلی REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# مرجع REST API
+# مرجع REST API {#rest-api-reference}
 
-## پیکربندی پایه
+## پیکربندی پایه {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**احراز هویت:** کلید و راز API (HTTP Basic Auth یا پارامترهای URL)
+**URL پایه:** `{site_url}/wp-json/wu/v2/`
+**احراز هویت:** API Key و Secret (HTTP Basic Auth یا پارامترهای URL)
 
-## احراز هویت
+## احراز هویت {#authentication}
 
-### فعال‌سازی API
+### فعال‌سازی API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### دریافت اعتبارنامه API
+### دریافت اعتبارنامه‌های API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### روش‌های احراز هویت
+### روش‌های احراز هویت {#authentication-methods}
 
-**HTTP Basic Auth (توصیه شده):**
+**HTTP Basic Auth (توصیه‌شده):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints اصلی
+## نقاط پایانی اصلی {#core-endpoints}
 
-### ۱. API مشتریان (Customers API)
+### 1. API مشتریان {#1-customers-api}
 
 **مسیر پایه:** `/customers`
 
@@ -47,7 +47,7 @@ curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=y
 GET /wu/v2/customers
 ```
 
-**دریافت یک مشتری خاص**
+**دریافت یک مشتری**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -82,7 +82,7 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### ۲. API سایت‌ها (Sites API)
+### 2. API سایت‌ها {#2-sites-api}
 
 **مسیر پایه:** `/sites`
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### ۳. API عضویت‌ها (Memberships API)
+### 3. API عضویت‌ها {#3-memberships-api}
 
 **مسیر پایه:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### ۴. API محصولات (Products API)
+### 4. API محصولات {#4-products-api}
 
 **مسیر پایه:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### ۵. API پرداخت‌ها (Payments API)
+### 5. API پرداخت‌ها {#5-payments-api}
 
 **مسیر پایه:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### ۶. API دامنه‌ها (Domains API)
+### 6. API دامنه‌ها {#6-domains-api}
 
 **مسیر پایه:** `/domains`
 
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint ثبت‌نام
+## نقطه پایانی ثبت‌نام {#registration-endpoint}
 
-Endpoint `/register` یک جریان کامل از فرآیند پرداخت/ثبت‌نام را فراهم می‌کند:
+نقطه پایانی `/register` یک جریان کامل پرداخت/ثبت‌نام ارائه می‌دهد:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**پاسخ (Response):**
+**پاسخ:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## پاسخ‌های خطا (Error Responses)
+## نقاط پایانی مستأجر مستقل {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 پوشش REST مستأجر مستقل را برای یکپارچه‌سازی‌هایی اضافه می‌کند که مستأجران ایزوله را فراهم‌سازی، بررسی یا تأیید می‌کنند.
+
+محتوای دقیق درخواست به قابلیت میزبان فعال‌شده بستگی دارد، اما یکپارچه‌سازی‌ها باید انتظار این گروه‌های نقطه پایانی را داشته باشند:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+از نقطه پایانی bootstrap برای آماده‌سازی رجیستری مستأجر، پایگاه داده، سیستم فایل و وضعیت مسیریابی استفاده کنید. پیش از تغییر ترافیک تولید، از نقاط پایانی وضعیت مهاجرت و تأیید استفاده کنید. از نقطه پایانی حذف برای برچیدن مستقل استفاده کنید تا اعتبارنامه‌های پایگاه داده از طریق جریان پاک‌سازی افزونه حذف شوند.
+
+پاسخ‌های معمول وضعیت مهاجرت شامل موارد زیر هستند:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` را به‌عنوان یک مانع پیش از راه‌اندازی در نظر بگیرید. جزئیات تأیید را بررسی کنید، مشکل اتصال میزبان پایگاه داده، صف، فراهم‌سازی کاربر یا مسیریابی را برطرف کنید، سپس تأیید را دوباره امتحان کنید.
+
+## پاسخ‌های خطا {#error-responses}
 
 ```json
 {
@@ -224,17 +257,17 @@ Content-Type: application/json
 }
 ```
 
-## صفحه‌بندی و فیلتر کردن
+## صفحه‌بندی و فیلتر کردن {#pagination-and-filtering}
 
-**پارامترهای Query:**
+**پارامترهای پرس‌وجو:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 پارامترهای رایج:
-- `per_page` - تعداد آیتم‌ها در هر صفحه (پیش‌فرض: ۲۰، حداکثر: ۱۰۰)
+- `per_page` - آیتم‌ها در هر صفحه (پیش‌فرض: 20، حداکثر: 100)
 - `page` - شماره صفحه
-- `search` - عبارت جستجو
+- `search` - عبارت جست‌وجو
 - `orderby` - فیلد مرتب‌سازی
 - `order` - جهت مرتب‌سازی (asc/desc)
 - `status` - فیلتر بر اساس وضعیت

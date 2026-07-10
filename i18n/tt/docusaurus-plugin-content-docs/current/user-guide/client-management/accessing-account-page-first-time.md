@@ -3,7 +3,7 @@ title: Кайтылы бетге гәмет итү
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# İlk dəfə hesabım səhifəsinə necə daxil ola bilərəm?
+# İlk dəfə hesabım səhifəsinə necə daxil ola bilərəm? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Ultimate Multisite-a xoş gəlmisiniz!
 

@@ -1,129 +1,148 @@
 ---
-title: Aighentan a' chlàr
+title: Àidseantan togte a-steach
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Aigenti Built-in
+# Àidseantan togte a-steach {#built-in-agents}
 
-Gratis AI Agent v1.9.0 ma cì a chàine cìa chùl, a chàine cìa chùl a' chàine cìa chùl, a chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl. Aigenti ma chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl. Aigenti ma chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl.
+Thig Gratis AI Agent v1.9.0 le còig àidseantan togte a-steach, gach fear ro-rèitichte le seata innealan le fòcas, system prompt sònraichte, agus molaidhean tòiseachaidh a tha freagarrach do ghnìomhan cumanta san raon sin. Nuair a dh'atharraicheas tu eadar àidseantan, atharraichidh sin na as urrainn don neach-cuideachaidh a dhèanamh agus mar a fhreagras e — gun rèiteachadh sam bith air do thaobh. Faodaidh Superdav AI Agent v1.18.0 innealan mothachail air clàr-ama, clàran cuimhneachaidh, geataichean aonta, agus brathan SMS a chur ris na sruthan-obrach seo nuair a tha na h-amalachaidh co-cheangailte air an rèiteachadh.
 
-Aigenti ma chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl. Aigenti ma chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl a' chàine cìa chùl.
+## Dè th' ann an àidseant? {#what-is-an-agent}
 
-## Cò a tha e Aigenti?
+'S e pròifil rèiteachaidh ainmichte a th' anns gach àidseant a chuireas còmhla:
 
-Chac Aigenti è un profil configurat a' chùl, a' chùl a' chùl, a' chùl a' chùl a' chùl. A' chàine ma:
+- **Innealan** — na comasan a tha ceadaichte don àidseant a ghairm (m.e. tha cothrom aig Sgrìobhadair Susbaint air comasan cruthachaidh phuist; tha cothrom aig Stiùidio Dealbhaidh air comasan CSS agus theme.json)
+- **System prompt** — stiùiridhean a shuidhicheas tòna, prìomhachasan, agus cuingeachaidhean an àidseint
+- **Molaidhean** — prompts ro-sgrìobhte a tha air an sealltainn san eadar-aghaidh cabadaich gus do chuideachadh tòiseachadh gu luath
 
-- **Tools** — a' fòcas a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl. A' chàine ma:
-- **System prompt** — instruczioni a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl. A' chàine ma:
-- **Suggestions** — prompts pre-scritte a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl a' chùl.
+## A' faighinn cothrom air Taghadair nan Àidseantan {#accessing-the-agent-picker}
 
-## A chàine a' Aigenti a' chùl?
+1. Fosgail pannal **Gratis AI Agent** ann am bàr-taoibh rianachd WordPress.
+2. Briog air **ìomhaigheag an àidseint** aig barr-clì bann-cinn na cabadaich (atharraichidh an ìomhaigheag gus an t-àidseant gnìomhach a nochdadh).
+3. Fosglaidh **Taghadair nan Àidseantan** mar thar-chòmhdach clàr-foirm. Tha gach àidseant air a liostadh leis an ìomhaigheag, ainm, agus tuairisgeul aon-loidhne aige.
+4. Briog air sreath àidseint gus a ghnìomhachadh. Ùraichidh bann-cinn na cabadaich sa bhad.
 
-1. Aosg a' panel **Gratis AI Agent** a' WordPress admin sidebar.
-2. Chlue a' **agent icon** a' top-left a' chat header (a' icon ma a' chùl a' reflect a' agent a' chùl).
-3. A **Agent Picker** a' opens as a form-table overlay. Chac agent è listat a' chùl a' chùl, a' name, a' one-line description.
-4. Chlue a' row a' agent a' activate e. A chat header ma updates immediately.
+Faodaidh tu cuideachd àidseantan atharrachadh ann am meadhan còmhraidh — bidh system prompt an àidseint ùir èifeachdach bhon ath theachdaireachd.
 
-Chun thu a stad a' switch agents mid-conversation — a new agent's system prompt takes effect from the next message.
+## Na Còig Àidseantan Togte a-steach {#the-five-built-in-agents}
 
-## A chàine cìa chùl a' Aigenti a' chùl
+### Sgrìobhadair Susbaint {#content-writer}
 
-### Content Writer
+**Fòcas:** Cruthachadh agus deasachadh phuist, duilleagan, agus foirmean-conaltraidh.
 
-**Focus:** Creando e edita posts, pages, a contact forms.
+**Innealan ri fhaighinn:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Le amalachaidh Superdav AI Agent v1.18.0 an comas, dh'fhaodadh co-theacsa mìosachain rèitichte, geataichean aonta, cuimhneachain, agus innealan brath SMS a bhith ri fhaighinn cuideachd do shruthan-obrach aontaichte.
 
-**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Na nì e gu math:**
+- A' dreachdadh agus a' foillseachadh phuist-bhloga bho brief no cnàimhneach
+- A' cruthachadh baidsean de dhuilleagan tighinn-air-tìr airson làrach ùr
+- A' togail foirmean conaltraidh is ceiste
+- A' suidheachadh ìomhaighean sònraichte air puist bho URL no lorg
+- A' dreachdadh theachdaireachdan leantainn-tachartais bho cho-theacsa Google Calendar rèitichte, agus an uair sin a' stad airson aonta mus tèid brathan a chur
 
-**Cò a tha e:**
-- Scripteachadh agus publisadh blog an t-sgrìobhaid frumhachdach (brief) no sgrùinneach (outline).
-- Creachadh batain de pàipean leatach (landing pages) airson site ùr.
-- Creachadh fòrman coimhearsnachd agus seabhailtean (enquiry forms).
-- Set a' chàilichid (featured images) ar post-an de URL no seachdainn.
-
-**Cùinean atamach:**
-- *Sgrìbh le 500 word blog an t-sgrìobhaid faic beannachd WordPress multisite.*
-- *Creu pàipean 'About', 'Services' agus 'Contact' agus publisidh sinn iad.*
-- *Add fòram seabhailtean (booking enquiry form) ar pàipe Contact.*
-
----
-
-### Site Builder
-
-**Fè mhath:** Creachadh site gu leatamach a' chùlchnaich (end-to-end website creation) de chùlchnaich beag.
-
-**Cùilichean a' sgaidh:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**Cò a tha e:**
-- Creachadh plan site le beulach (multi-phase site build plan) airson fhaighinn a' chùlchnaich a tha sgrùinneach.
-- Aig an t-seachdainn a' chùlchnaich gu miongais — struchtar, amasan, àiteach, deascthaidh (design).
-- A' chùlchnaich seachdaidhean (errors) air a' chùlchnaich leat air a' chùlchnaich beag gu sònraichte.
-- A' chùlchnaich plugin a tha a' sgaidh mar bheachd de site.
-- Creu fòrman coimhearsnachd gu dìreach de chat interface (Superdav AI Agent v1.10.0+).
-
-**Cùinean atamach:**
-- *Creu site phòtorghrafiaid le post type gallery, pàipe bheachail agus fòram seabhailtean.*
-- *Creu site riùn faighinn le menu online, amasan a' chluich agus fòram seabhailtean airson tàile a' chluich.*
-- *Set up site consulting freelance le pàipear serbise, seachdainn phòtorghrafiaid, agus blog.*
-- *Add fòram contact ar pàipe Contact a' chùlchnaich a' sgaidh.*
+**Molaidhean tòiseachaidh:**
+- *Sgrìobh post-blog 500 facal mu bhuannachdan WordPress multisite.*
+- *Cruthaich duilleag Mu Ar Deidhinn, Seirbheisean, agus Conaltradh agus foillsich iad.*
+- *Cuir foirm ceiste glèidhidh ris an duilleag Conaltradh.*
+- *Dreachd cuimhneachan do luchd-frithealaidh air tachartas mìosachain rèitichte a-màireach agus feith ri aonta mus cuir thu e.*
 
 ---
 
-### Design Studio
+### Togail Làraich {#site-builder}
 
-**Fè mhath:** Creachadh deascthaidh (visual customisation) — columadh, tàimeoir, CSS, agus pātâna bloc.
+**Fòcas:** Cruthachadh làrach-lìn bho cheann gu ceann bho aon prompt.
 
-**Stràta tool a gnih a' chùis:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Innealan ri fhaighinn:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Le Superdav AI Agent v1.18.0, dh'fhaodadh innealan seirbheis-stiùirichte, aonta, cuimhneachaidh, mìosachain, agus SMS rèitichte a bhith ri fhaighinn far am bi rianairean gan cur an comas.
 
-**Rinn a' chùis:**
-- Ailpadh preset theam (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
-- Finnean tòradh global typography agus palàdair columadh gu fìr a tha e a las a tha theme.json
-- Ailpadh CSS ùr airson an t-uisge (brand-specific overrides)
-- Ailpadh screenshot air seòl agus a tha thu a' chluarach airson earrachda deasainn
+**Na nì e gu math:**
+- A' gineadh plana togail làraich ioma-ìre airson seòrsa gnìomhachais a chaidh a mhìneachadh
+- A' cur gach ìre an gnìomh gu fèin-obrachail — structar, susbaint, seòladh, dealbhadh
+- A' faighinn seachad air mearachdan ann am meadhan a' phlana gun fheum air eadar-theachd làimhe
+- A' stàladh plugins a thathar a' moladh mar phàirt den togail
+- A' cruthachadh foirmean-conaltraidh gu dìreach bhon eadar-aghaidh cabadaich (Superdav AI Agent v1.10.0+)
+- A' co-òrdanachadh chuimhneachain cur-air-bhog no leantainn luchd-frithealaidh gun bhrathan dùblaichte nuair a tha geataichean aonta agus clàran cuimhneachaidh an comas
 
-**Cùinean a' chùis:**
-- *Ailpadh preset warm-editorial agus thaann sethandleachd prime (primary colour) gu #2d6a4f.*
-- *Tòisich screenshot air an seòl (homepage) agus diabh mi a' sgrìobh gur eadar thu a' chluarach.*
-- *Creu un pattern block hero a tha fìor-luath (full-width background image) agus ceann-a-steach (centred heading).*
-
----
-
-### Plugin Manager
-
-**Fòcas:** Ailinn, ailpadh, agus a' chlàradh plugin air WordPress.
-
-**Stràta tool a gnih a' chùis:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**Rinn a' chùis:**
-- Ailinn an plugin is beag astair a tha e a las.
-- Ailpadh pack abilities air an registry.
-- Glèidh an catagóir abilities a tha a las.
+**Molaidhean tòiseachaidh:**
+- *Tog làrach pasgan dhealbhan le seòrsa post gailearaidh, duilleag glèidhidh, agus foirm-conaltraidh.*
+- *Cruthaich làrach-lìn taigh-bìdh le clàr-bìdh air-loidhne, uairean fosglaidh, agus foirm ceiste glèidhidh bùird.*
+- *Suidhich làrach co-chomhairleachaidh neo-cheangailte le duilleagan seirbheis, earrann pasgain, agus blog.*
+- *Cuir foirm-conaltraidh ris an duilleag Conaltradh a' cleachdadh togail na làraich.*
+- *Às dèidh do liosta-sgrùdaidh cur-air-bhog na làraich a bhith air aontachadh, cuir cuimhneachan SMS chun an neach-conaltraidh luchd-ùidh rèitichte.*
 
 ---
 
-### Support Assistant
+### Stiùidio Dealbhaidh {#design-studio}
 
-**Fòcas:** Aimsinn ciosan faic air an seòl, sethandleachd, agus fhaighinn WordPress.
+**Fòcas:** Gnàthachadh lèirsinneach — dathan, clò-ghnàth, CSS, agus pàtrain bhlocaichean.
 
-**Stràta tool a gnih a' chùis:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Innealan ri fhaighinn:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Cò a tha e:**
-- A bhith a chluainteachd (look up) sethachanna agus optionaichean an site a tha a' ghairm.
-- A bhith a' chluainteachd gu sònraich gu faicinn a tha post types, taxonomies, agus menus a' gcurtraidh ar an site.
-- A' sgaidh "cò a tha an setdhach seo a' dol" a' chluainteachd dhuinn a' chluainteachd sinnean (live values).
-- A bhith na h-àrd-chluainteachd latha (read-only diagnostic layer) a' chluainteachd gu sònraich gu bheil amach an t-sgaidh.
+**Na nì e gu math:**
+- A' cur presets theme ainmichte an sàs (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
+- A' gleusadh clò-ghnàth cruinneil agus paileatan dhathan tro theme.json
+- A' stealladh CSS gnàthaichte airson tar-sgrìobhaidhean sònraichte do bhrand
+- A' togail glacadh-sgrìn de dhuilleag agus ga lèirmheas airson cùisean dealbhaidh
 
-**Cò a tha e cheannach:**
-- *Cò post types agus setdhachanna a tha ag obair ar an site seo?*
-- *List an tatean post custom (custom post types) a tha curtas ar an site seo.*
-- *Cò menus neachdaich a tha ag obair agus còmhaidh sinn?*
+**Molaidhean tòiseachaidh:**
+- *Cuir an preset warm-editorial an sàs agus an uair sin suidhich am prìomh dhath gu #2d6a4f.*
+- *Tog glacadh-sgrìn den duilleag-dhachaigh agus innis dhomh dè a leasaicheadh tu.*
+- *Cruthaich pàtran bloca hero ath-chleachdte le ìomhaigh cùlaibh làn-leud agus ceann-teacsa sa mheadhan.*
+
+### Manaidsear Plugin {#plugin-manager}
+
+**Fòcas:** Lorg, stàladh, agus stiùireadh plugins WordPress.
+
+**Innealan ri fhaighinn:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**Na nì e gu math:**
+- A' moladh am plugin as fheàrr airson cùis-chleachdaidh a chaidh a mhìneachadh
+- A' stàladh pacaidean chomasan bhon chlàr
+- A' brobhsadh a' chatalog chomasan a tha ri fhaighinn a rèir roinn
+
+**Molaidhean tòiseachaidh:**
+- *Dè am plugin as fheàrr airson eòlaire ballrachd?*
+- *Stàlaich pacaid chomasan WooCommerce.*
+- *Seall dhomh gach pacaid chomasan e-mhalairt a tha ri fhaighinn.*
 
 ---
 
-## A' chluainteachadh Agents
+### Neach-cuideachaidh Taic {#support-assistant}
 
-Is e cheannach a tharann an agent built-in a' chluainteachd (built-in agent) a' chluainteachd air a laighinn mar a' chluainteachd `gratis_ai_agent_agents`.
+**Fòcas:** A' freagairt cheistean mu shusbaint làraich, roghainnean, agus rèiteachadh WordPress.
 
-### A' chluainteachadh prompt system custom do agent a tha curtas
+**Innealan ri fhaighinn:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**Na nì e gu math:**
+- A’ lorg roghainnean is roghainnean làithreach na làraich
+- A’ mìneachadh dè na seòrsaichean puist, tacsonamaidhean, agus clàran-taice a tha rèitichte air an làrach
+- A’ freagairt cheistean “dè nì an roghainn seo?” le bhith a’ leughadh luachan beò
+- Ag obair mar chòmhdach breithneachaidh ri leughadh a-mhàin mus dèanar atharraichean
+
+**Molaidhean tòiseachaidh:**
+- *Dè na plugins agus roghainnean a tha gnìomhach an-dràsta air an làrach seo?*
+- *Dèan liosta de na seòrsaichean puist gnàthaichte uile a tha clàraichte air an làrach seo.*
+- *Dè na clàran-taice seòlaidh a th’ ann agus càite a bheil iad air an sònrachadh?*
+
+---
+
+## Amalachadh Fèin-obrachais Superdav {#superdav-automation-integrations}
+
+Nuair a tha amalachadh Superdav AI Agent v1.18.0 air a rèiteachadh, faodaidh riochdairean togte-a-steach pàirt a ghabhail ann an sruthan-obrach fèin-obrachais nas sàbhailte a tha mothachail air clàr-ama:
+
+- **Innealan leughaidh Google Calendar** leigeas le riochdairean mìosachain is tachartasan rèitichte a sgrùdadh mus dèanar dreachd de dh’obair leantainneach.
+- **Mapadh luchd-aithne is luchd-frithealaidh** a’ cuideachadh le com-pàirtichean tachartais a mhaidseadh ri luchd-cleachdaidh WordPress no luchd-aithne aithnichte.
+- **Geataichean ceadachaidh daonna** a’ cur stad air gnìomhan cugallach gus am bi cleachdaiche ùghdarraichte gan ath-sgrùdadh agus gan dearbhadh.
+- **Clàran chuimhneachain** a’ cur casg air fiosan dùblaichte nuair a dh’fheuchas obraichean clàraichte a-rithist no nuair a thèid iad a-rithist.
+- **Brathan TextBee SMS** a’ cur teachdaireachdan teacsa rèitichte a-mhàin nuair a tha teisteanasan SMS agus ceadan sruth-obrach an comas.
+
+Sruth-obrach a thathar a’ moladh: iarr air an riochdaire an teachdaireachd no an gnìomh ullachadh, ath-sgrùdaich an t-iarrtas ceadachaidh, agus an uair sin leig leis a’ ghnìomh cheadaichte ath-thòiseachadh. Airson cuimhneachain ath-chuairteachaidh, cùm dì-dhùblachadh chuimhneachain an comas gus nach tèid fios a chur chun an aon tachartais no neach-aithne a-rithist is a-rithist.
+
+---
+
+## Gnàthachadh Riochdairean {#customising-agents}
+
+Faodar gach riochdaire togte-a-steach a leudachadh no a chur na àite tron chriathrag `gratis_ai_agent_agents`.
+
+### A’ cur brosnachadh siostaim gnàthaichte ri riochdaire a tha ann mu thràth {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -134,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### A' curtas agent ùr a chur ar bheachd
+### A’ clàradh riochdaire ùr {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -153,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Bheala, an uairginn a'chileach a'leabhraich.
+Nochdaidh an riochdaire ùr anns an Taghadair Riochdairean sa bhad às dèidh don chriathrag ruith.
 
-### A' chleachd a'bhealaidh (Removing a built-in agent)
+### A’ toirt air falbh riochdaire togte-a-steach {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -1,32 +1,32 @@
 ---
-title: Visión general de la API REST
+title: Descripción general de la REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Referencia de la API REST
+# Referencia de REST API {#rest-api-reference}
 
-## Configuración Base
+## Configuración base {#base-configuration}
 
-**URL Base:** `{site_url}/wp-json/wu/v2/`
-**Autenticación:** API Key & Secret (HTTP Basic Auth o Parámetros de URL)
+**URL base:** `{site_url}/wp-json/wu/v2/`
+**Autenticación:** clave de API y secreto (HTTP Basic Auth o parámetros de URL)
 
-## Autenticación
+## Autenticación {#authentication}
 
-### Habilitar API
+### Habilitar API {#enable-api}
 ```php
 // Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Obtener Credenciales de API
+### Obtener credenciales de API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Métodos de Autenticación
+### Métodos de autenticación {#authentication-methods}
 
-**Autenticación Básica HTTP (Recomendado):**
+**HTTP Basic Auth (recomendado):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,23 +36,23 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Puntos finales principales
+## Puntos de conexión principales {#core-endpoints}
 
-### 1. API de Clientes
+### 1. API de clientes {#1-customers-api}
 
-**Ruta Base:** `/customers`
+**Ruta base:** `/customers`
 
-**Obtener Todos los Clientes**
+**Obtener todos los clientes**
 ```http
 GET /wu/v2/customers
 ```
 
-**Obtener Cliente Único**
+**Obtener un solo cliente**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**Crear Cliente**
+**Crear cliente**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**Actualizar Cliente**
+**Actualizar cliente**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
@@ -77,16 +77,16 @@ Content-Type: application/json
 }
 ```
 
-**Eliminar Cliente**
+**Eliminar cliente**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API de Sitios
+### 2. API de sitios {#2-sites-api}
 
-**Ruta Base:** `/sites`
+**Ruta base:** `/sites`
 
-**Crear Sitio**
+**Crear sitio**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. API de Membresías
+### 3. API de membresías {#3-memberships-api}
 
-**Ruta Base:** `/memberships`
+**Ruta base:** `/memberships`
 
-**Crear Membresía**
+**Crear membresía**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API de Productos
+### 4. API de productos {#4-products-api}
 
-**Ruta Base:** `/products`
+**Ruta base:** `/products`
 
-**Obtener Todos los Productos**
+**Obtener todos los productos**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API de Pagos
+### 5. API de pagos {#5-payments-api}
 
-**Ruta Base:** `/payments`
+**Ruta base:** `/payments`
 
-**Crear Pago**
+**Crear pago**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API de Dominios
+### 6. API de dominios {#6-domains-api}
 
-**Ruta Base:** `/domains`
+**Ruta base:** `/domains`
 
-**Mapear Dominio**
+**Mapear dominio**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Punto final de Registro
+## Punto de conexión de registro {#registration-endpoint}
 
-El punto final `/register` proporciona un flujo completo de pago/registro:
+El punto de conexión `/register` proporciona un flujo completo de checkout/registro:
 
 ```http
 POST /wu/v2/register
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Respuestas de Error
+## Puntos de conexión de inquilino soberano {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 añade cobertura REST de inquilinos soberanos para integraciones que aprovisionan, inspeccionan o verifican inquilinos aislados.
+
+La carga útil exacta de la solicitud depende de la capacidad del host habilitada, pero las integraciones deben esperar estos grupos de puntos de conexión:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Usa el punto de conexión de bootstrap para preparar el registro del inquilino, la base de datos, el sistema de archivos y el estado de enrutamiento. Usa los puntos de conexión de estado de migración y verificación antes de cambiar el tráfico de producción. Usa el punto de conexión de eliminación para el desmontaje soberano, de modo que las credenciales de la base de datos se eliminen mediante el flujo de limpieza del addon.
+
+Las respuestas típicas de estado de migración incluyen:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Trata `ready: false` como un bloqueo previo al lanzamiento. Revisa los detalles de verificación, corrige el enlace del host de la base de datos, la cola, el aprovisionamiento de usuarios o el problema de enrutamiento y, a continuación, vuelve a intentar la verificación.
+
+## Respuestas de error {#error-responses}
 
 ```json
 {
@@ -224,15 +257,15 @@ Content-Type: application/json
 }
 ```
 
-## Paginación y Filtrado
+## Paginación y filtrado {#pagination-and-filtering}
 
-**Parámetros de Consulta:**
+**Parámetros de consulta:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
 Parámetros comunes:
-- `per_page` - Elementos por página (predeterminado: 20, máximo: 100)
+- `per_page` - Elementos por página (predeterminado: 20, máx.: 100)
 - `page` - Número de página
 - `search` - Término de búsqueda
 - `orderby` - Campo de ordenación

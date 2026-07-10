@@ -4,11 +4,11 @@ title: Filter - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 ప్లగిన్ డెవలపర్‌లు ఫలితాలను నిర్వచించడానికి కొత్త చెక్‌లను జోడించడానికి అనుమతిస్తుంది.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | ప్రస్తుత డొమైన్ ఇన్‌స్టాన్స్. |
 | $domains_and_ips | `array` | DNS లుకప్‌లో కనుగొనబడిన డొమైన్‌లు మరియు IP ల జాబితా. |
 
-### Since
+### Since {#since}
 
 - 2.0.4
-### Source
+### Source {#source}
 
 [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) లోని 455వ లైన్‌లో నిర్వచించబడింది.
 
 
-## Returns
+## Returns {#returns}
 DNS సరిగ్గా సెటప్ చేయబడిందా లేదా అని తెలియజేస్తుంది.

@@ -3,11 +3,11 @@ title: Konstriktè Plugini ak Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Plugin Builder & Sandbox
+# Plugin Builder & Sandbox {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0 prezante **Plugin Builder & Sandbox System**, ki pèmèt asistan AI a kreye, aktive, ak jere WordPress plugins sou rezo ou la — tout sa atravè yon anviwònman sandbox ki an sekirite epi ki isolate (sepile).
 
-## Aperçu
+## Aperçu {#overview}
 
 Plugin Builder la pèmèt asistan AI a ekri plugin WordPress espesyal pou repons demann natirèl. Plugin ki te jene yo valide, estoke, e aktive nan yon kouvèti sandbox anvan yo afekte fonksyonalite sit live ou.
 
@@ -17,7 +17,7 @@ Kaj itilizasyon yo gen ladan:
 - Prototip fonksyon ki mande WordPress hooks oswa custom post types.
 - Kreye script otomatik kout-tout pou operasyon batri (batch operations).
 
-## Jene yon Plugin atravè AI
+## Jene yon Plugin atravè AI {#generating-a-plugin-via-ai}
 
 Pou jene yon plugin, louvri entèfas chat Gratis AI Agent la epi dekri sa ou bezwen. Pa egzanp:
 
@@ -32,7 +32,7 @@ AI a pral:
 
 Ou ka amelyore rezilta a lè ou swiv li nan menm fil konvèsasyon anvan ou aktive l.
 
-## Aktiveman Sandbox
+## Aktiveman Sandbox {#sandbox-activation}
 
 Aktive yon plugin ki te jene nan sandbox la se bagay diferan ak aktive l sou rezo live ou. Sandbox la:
 
@@ -48,7 +48,7 @@ Pou aktive yon plugin nan sandbox la, klike sou bouton **Activate in Sandbox** n
 
 Yon mesaj estati confirme si aktivasyon anpil ou te reussi oubyen pa. Si li pa reussi, log erè a ap montre nan chat thread la.
 
-## Jere Plugin ki Te Kreye (Generated Plugins)
+## Jere Plugin ki Te Kreye (Generated Plugins) {#managing-generated-plugins}
 
 Plugin ki te kreye yo parie nan **Gratis AI Agent → Plugin Builder → Manage Plugins**. Depi ekran sa a ou ka:
 
@@ -64,7 +64,7 @@ Plugin ki te kreye yo parie nan **Gratis AI Agent → Plugin Builder → Manage 
 **Install on network** deplwaye plugin ki te kreye a rezo WordPress multisite live ou a. Revize kòd plugin anvan ou kontinye. Gratis AI Agent ap mande pou konfimasyon anvan li fini yon enstalasyon live.
 :::
 
-## Enstale Yon Plugin Ki Te Kreye sou Rezo a (On the Network)
+## Enstale Yon Plugin Ki Te Kreye sou Rezo a (On the Network) {#installing-a-generated-plugin-on-the-network}
 
 Lè ou satisfè ak yon plugin ki te nan sandbox, ou ka enstale l sou rezo live la:
 
@@ -78,7 +78,7 @@ Alternatifman, itilize komand slash la nan entèfas chat la:
 /install-plugin <plugin-slug>
 ```
 
-## Mete Update Sou Plugin (Plugin Updates)
+## Mete Update Sou Plugin (Plugin Updates) {#plugin-updates}
 
 Pou mete update sou yon plugin ki te kreye, dekri chanjman an bay asistan AI a nan yon nouvo konvèsasyon:
 
@@ -86,7 +86,7 @@ Pou mete update sou yon plugin ki te kreye, dekri chanjman an bay asistan AI a n
 
 AI a pral jenere yon nouvo vèsyon, ki parie nan sandbox la bò kote vèsyon ki genyen an. Ou ap revize diff la epi konfime anvan update a aplike.
 
-## Intégration HookScanner
+## Intégration HookScanner {#hookscanner-integration}
 
 Le Plugin Builder utilise un **HookScanner** intégré pour analyser les hooks et filtres enregistrés par chaque plugin généré. Le résultat de HookScanner est montré dans la réponse du chat et inclut :
 
@@ -96,7 +96,7 @@ Le Plugin Builder utilise un **HookScanner** intégré pour analyser les hooks e
 
 Cela vous aide à comprendre le comportement d'un plugin avant de l'activer.
 
-## Considérations de Sécurité
+## Considérations de Sécurité {#security-considerations}
 
 - Les plugins générés sont stockés séparément des plugins installés manuellement et ne sont pas accessibles via l'écran standard de gestion des plugins WordPress tant que vous ne les installez pas explicitement sur le réseau.
 - Le sandbox utilise la validation de chemin pour empêcher la traversée de répertoire lorsque l'on écrit les fichiers du plugin.

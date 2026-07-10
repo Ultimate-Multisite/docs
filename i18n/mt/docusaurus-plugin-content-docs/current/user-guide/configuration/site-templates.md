@@ -3,13 +3,13 @@ title: Template siti
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Modelli Siti (v2)
+# Modelli Siti (v2) {#site-templates-v2}
 
 _**NOTA: Danestatshu huwa riferitu à Ultimate Multisite versjoni 2.x. Jekk qed tiffa bi versjoni 1.x,**_ **qri leqsa** _**.**_
 
 L-għan tagħna meta nistgħu bidiċent network b'Ultimate Multisite huwa li nautomizzaw il-maġribi possibbli fl-mejdan, waqt li niddiyyem lil kliemiet fleksibilità u opzioni differenti biex jiġu għażlu meta jikunu qed jagħmlu is-siti tagħhom. Un waħda l-modi sħiħa biex nisħu dan il-balans hija li nistgħu nistgħu l-funzjoni ta Site Templates ta Ultimate Multisite.
 
-## X'la huwa Site Template?
+## X'la huwa Site Template? {#what-is-a-site-template}
 
 Bħal meta jgħid il-isem tiegħu, Site Template huwa siti boilerplate (template) li jista' jintigħdu bħala base meta qed tgħmli siti ġodda f'network tiegħek.
 
@@ -17,7 +17,7 @@ Dan jkun significa li tista' tgħmli sito base, attiva plugin differenti, tsetti
 
 Dan jiddeq awsolenti, iżda kif nistgħu nistgħu template ta sito ġdida? Huwa sempliċi kif ma jistax jkoll.
 
-## Għmli u Edita Site Template ġdid
+## Għmli u Edita Site Template ġdid {#creating-and-editing-a-new-site-template}
 
 Site Templates huma siti normali fuq network tiegħek. Biex tgħmli template ġdid, tista' tmur biss għand **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ F'forma ta l-bottom tal-form, tiegħek tista' tara il-toggle switch **Copy Site*
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Personalizzazzjoni tal-kontenut tal-Site Template
+### Personalizzazzjoni tal-kontenut tal-Site Template {#customizing-the-contents-of-a-site-template}
 
 Biex tista' personalizza il-site template tiegħek, għandu tmur dashboard panel tiegħu u tagħmel il-modifikazzjonijiet li għandek biex tgħmel. Tista' tgħmli postijiet (posts) nuovi, pages, attiva plugin, u tgħmli l-theme aktivi. Tista' persuni tnejt flim Customizer u tgħmli tutti konfiguraturi ta personalizzazzjoni.
 
@@ -43,11 +43,11 @@ Biex tista' personalizza il-site template tiegħek, għandu tmur dashboard panel
 
 Kull dan il-data seppur titkopat meta l-customer jagħmel site ġdid bbażat fuq dak Site Template.
 
-### Opzjonijiet Avanzati
+### Opzjonijiet Avanzati {#advanced-options}
 
 Jekk għandek konnaċċiment f xi coding kustom, tista' ufaq l-API ta Search and Replace tiegħene biex tiġi sostitwita informazzjoni fuq is-site ġdid wara li jkun creat. Dan huwa utlu għal ħjatit bħal sostituzzjoni tal-nomi tal-kompagnija fuq una About page, o s-sostitu tal-email ta kontatt fuq una Contact page, ecc.
 
-### Użu tal-Site Templates
+### Użu tal-Site Templates {#using-site-templates}
 
 Ok, qed tgħmlt għalcom template diġament differenti b'dissigni, themes u impostazzjonijiet differenti. Come tista' tgħmelhom utli fil-network tiegħek?
 
@@ -59,7 +59,7 @@ Bbażitament, jidher żmien li tista' użu taċċajji (approaches) iż-oħra (ma
 
   * Permetta lil kliemiet tiegħek li jgħażlu anqas templates diġament بنفسhom klentar tal-sign-up.
 
-#### Mod 1: Assegna Site Template
+#### Mod 1: Assegna Site Template {#mode-1-assign-site-template}
 
 בי מצב זה, הלקוחות שלך לא יוכלו לבחור תבנית (template) כשיוצרים חשבון, אלא אתה תחליט איזו תבנית צריכה להיות בשימוש בכל אחד מהתשקיפים (Plans) שלך.
 
@@ -71,7 +71,7 @@ Bbażitament, jidher żmien li tista' użu taċċajji (approaches) iż-oħra (ma
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### מצב 2: בחירת תבנית אתר זמינה
+#### מצב 2: בחירת תבנית אתר זמינה {#mode-2-choose-available-site-template}
 
 במצב הזה, תעניק ללקוחות שלך בחירה במהלך תהליך ההרשמה. הם יוכלו לבחור מבין תבניות אתר שאתה מגדיר בהגדרות המוצר. יש לך אפשרות להגביל את תבניות האתר שהם יכולים לבחור מהמוצר שנבחר. זה יאפשר לך להחזיק סטים שונים של תבניות אתר תחת כל מוצר, וזה אידיאלי כדי להדגיש פונקציות ותכונות שונות עבור מוצר בעל מחיר גבוה יותר.
 
@@ -79,7 +79,7 @@ Faqed la **Edit Product** (Edita Prodott). Taħt secشن **Product Options** (Op
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Default Mode: Site template selection on the Checkout form (Selezzjoni tal-Site Template fuq il-Checkout form)
+### Default Mode: Site template selection on the Checkout form (Selezzjoni tal-Site Template fuq il-Checkout form) {#default-mode-site-template-selection-on-the-checkout-form}
 
 Jekk tista' li kull l-site templates tiegħek jkunu disponibbli klentari w digħla, jew ma tista' tkun xi ħaġa ta l-għamel ekstra biex tgħallim o tspecifika site templates taħt kulle prodott li tgħmli. Allora, tista' setti l-selezzjoni tal-site template taħt il-**Checkout Form** tiegħek. Biex tgħmel dan, għandi la **Ultimate Multisite > Checkout Forms** u għalqu fuq **Edit** taħt il-form li tista' tgħallim.
 
@@ -93,29 +93,29 @@ Fuq il-frontend, il-klientijiet jorru l-chooser tal-template klentar klentar kle
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opzioni Template Sites
+### Opzioni Template Sites {#site-template-options}
 
 Il jidda għandhom funqjuni ta template siti oħra li tista' attiva jew inattiva sotto l-settings tal-Ultimate Multisite.
 
 ![Site template options in Ultimate Multisite settings](/img/config/settings-sites-templates-section.png)
 
-#### Permetta il Switch ta Template
+#### Permetta il Switch ta Template {#allow-template-switching}
 
 Attivazzjoni din l-opzione tista' tispjega lil klijenzi li jgħażlu template li għalihom żżewġa fl-proċess tal-sign-up, wara li jkollhom l-account u s-sito kienet creat. Dan huwa util mill-perspettiva tal-klijent peress li jista' jsogħtu b'template ieħor meta jifhmu li l-għażla ormoda mhix l-effettifika għall-ħtieġat speċifi tahom.
 
-#### Permetta Li għall-Utenti użaw is-Sito tagħhom bħala template
+#### Permetta Li għall-Utenti użaw is-Sito tagħhom bħala template {#allow-users-to-use-their-site-as-templates}
 
 Jekk l-utenti tal-subsite jgħandu ħin bidd jibnu u disigna is-sito tagħhom, jista' jgħandu li jkopjaw u jgħandu għalihom bħala waħda mill-template sites li magħrufu meta jikunu qed jgħandu subsite ieħor fuq laħduk. Dan l-opzione tista' tispjega li jistgħu jachfu dan.
 
-#### Kopja tal-Media fil-Duplikazzjoni tal-Template
+#### Kopja tal-Media fil-Duplikazzjoni tal-Template {#copy-media-on-template-duplication}
 
 Attivazzjoni din l-opzione tista' tkopja l-media li tikel fuq is-sito template għas-sito ġdid li kienet creat. Dan jista' jiġi superat (override) fuq kull minn il-plans.
 
-#### **Previenta Metodi Iċċekkja (Search Engines) mn indixxi Template Sites**
+#### **Previenta Metodi Iċċekkja (Search Engines) mn indixxi Template Sites** {#prevent-search-engines-from-indexing-site-templates}
 
 Is-template sites biex tsoġġibu l-artikolu huwa boilerplate, iżda hija għall-network tiegħek u jista' jkunu disponibbli għall-metodi iċċekkja biex jiġu mndixxi. Dan l-opzione tista' tispjega li tgħajji is-template sites biex il-metodi iċċekkja jistgħu indixxu.
 
-## Pre-populating Site Templates b auto search-and-replace
+## Pre-populating Site Templates b auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Il-funzjoni li għall-Ultimate Multisite hija waḥad mill-piżi tagħha huwa l-possibbiltà ta li tiddispożi test, kollur u campi seleżjonati arbitrari fuq il-form ta reġistrazzjoni. Wakka nġarrbu dak l-data, nista użawha biex npre-popolaw il-kontenut f parti tal-template ta siti li sojnat. Imbagħad, meta is-sita ġdid jkun qed jiġi pubblika, l-Ultimate Multisite se tistitu l-placeholder b'informazzjoni effettiva li tmur fl-reġistrazzjoni.
 
@@ -135,7 +135,7 @@ L-Ultimate Multisite se tistitu l-placeholder b'dati li forniti mill-klient b'mo
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Soluzzjoni għall-problema ta "template kollu full ta placeholder"
+### Soluzzjoni għall-problema ta "template kollu full ta placeholder" {#solving-the-template-full-of-placeholders-problem}
 
 Kull dan huwa għażż, iżda nistgħu ntiq f problemi b'mod xebb: l-template tagħna – li klentar il-klient tiegħu jista' jmur bih – huma kollha full ta placeholder rreġistrazzjonali li ma jgħandu xi ħaġa.
 

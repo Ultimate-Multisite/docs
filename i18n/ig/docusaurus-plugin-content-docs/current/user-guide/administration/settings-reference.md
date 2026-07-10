@@ -1,40 +1,46 @@
 ---
-title: Nchịkọta Settings
+title: Ntụaka Ntọala
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referencere Settings
+# Ntụaka Ntọala {#settings-reference}
 
-Pege này theo dõi các cài đặt ảnh hưởng đến việc quản trị hàng ngày và những thay đổi hành vi gần đây trong Ultimate Multisite.
+Peeji a na-edekọ ntọala ndị na-emetụta nchịkwa kwa ụbọchị na mgbanwe omume ọhụrụ n’ime Ultimate Multisite.
 
-## Các Tùy chọn khác
+## Nhọrọ Ndị Ọzọ {#other-options}
 
-Khu vực **Other Options** sẽ xuất hiện dưới mục **Ultimate Multisite > Settings > Login & Registration**.
+Mpaghara **Nhọrọ Ndị Ọzọ** na-apụta n’okpuru **Ultimate Multisite > Settings > Login & Registration**.
 
-| Setting | Mô tả |
+| Ntọala | Nkọwa |
 |---|---|
-| **Enable Jumper** | Hiển thị công cụ điều hướng nhanh Jumper trong khu vực admin. Hãy dùng nó để nhảy thẳng đến các màn hình Ultimate Multisite, đối tượng mạng và các đích quản trị được hỗ trợ. Tắt nó nếu bạn không muốn thấy lối tắt này. |
+| **Enable Jumper** | Na-egosi ngwa ngagharị ngwa ngwa Jumper n’ime mpaghara nchịkwa. Jiri ya wụpụ ozugbo gaa na ihuenyo Ultimate Multisite, ihe netwọkụ, na ebe nchịkwa akwadoro. Gbanyụọ ya ma ọ bụrụ na ịchọghị ka ụzọ mkpirisi a pụta ìhè. |
 
-## Báo cáo lỗi và telemetry (thu thập dữ liệu)
+## Nkọ akụkọ njehie na telemetry {#error-reporting-and-telemetry}
 
-Cài đặt đăng ký báo cáo lỗi trước đây đã bị xóa khỏi trang cài đặt. Telemetry ẩn danh hiện đang bị vô hiệu hóa và không có nút chuyển đổi giao diện nào để bật nó.
+Ewepụla ntọala opt-in mbụ maka ịkọ akụkọ njehie na peeji ntọala. A gbanyụrụ telemetry amaghi onye zitere ya, ọ dịghịkwa UI toggle iji mee ka ọ rụọ ọrụ.
 
-Nếu bạn duy trì các sổ tay vận hành nội bộ hoặc ảnh chụp màn hình cho trang cài đặt, hãy xóa các tham chiếu đến trường đăng ký báo cáo lỗi cũ để quản trị viên không tìm kiếm một cài đặt không còn tồn tại nữa.
+Ọ bụrụ na ị na-elekọta runbooks ma ọ bụ screenshots ime ụlọ maka peeji ntọala, wepụ ntụaka niile gbasara field opt-in ochie maka ịkọ akụkọ njehie ka ndị nchịkwa ghara ịchọ ntọala na-adịkwaghị.
 
-## Cài đặt Import/Export (Nhập/Xuất)
+## Ntọala Import/Export {#importexport-settings}
 
-Tab **Import/Export** mô tả những cài đặt nào nó kiểm soát và liên kết trực tiếp đến **Ultimate Multisite > Site Export** cho các bản lưu trữ trang web và mạng. Hãy dùng tab cài đặt để cấu hình nhập/xuất, hãy dùng **Tools > Export & Import** cho quy trình xuất/nhập của một trang đơn lẻ, và hãy dùng công cụ Site Export khi bạn cần một bản lưu trữ Network Export đầy đủ.
+Taabụ ntọala **Import/Export** na-akọwa ntọala ndị ọ na-achịkwa ma na-ejikọta ozugbo na **Ultimate Multisite > Site Export** maka archives nke saịtị na netwọkụ. Jiri taabụ ntọala maka nhazi import/export, jiri **Tools > Export & Import** maka usoro ọrụ export/import nke otu saịtị, ma jiri ngwa Site Export mgbe ịchọrọ archive Network Export zuru ezu.
 
-## Cài đặt kết nối nhà cung cấp AI
+## Ịdọ aka ná ntị maka nguzozi Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Cài đặt kết nối nhà cung cấp AI hiện chỉ hiển thị các nhóm tài khoản OAuth được hỗ trợ:
+Mgbe addon Domain Seller jikọrọ na HostAfrica, ndị nchịkwa netwọkụ ugbu a na-ahụ ịdọ aka ná ntị balance-low enwere ike iwepụ mgbe nguzozi account reseller dị oke ala maka ndebanye domain ma ọ bụ nhazi mmegharị ọhụrụ a pụrụ ịdabere na ya.
 
-| Nhà cung cấp | Quy trình thiết lập |
+Were ọkwa a dị ka ịdọ aka ná ntị ọrụ: tinye ego ọzọ na nguzozi reseller HostAfrica tupu ịnabata ndebanye domain akwụ ụgwọ ọzọ, mgbe ahụ laghachi na ntọala Domain Seller ma ọ bụ ihuenyo nlekota domain iji kwado na ndebanye na mmegharị ọhụrụ nwere ike ịga n’ihu dịka ọ dị.
+
+## Ntọala njikọ AI provider {#ai-provider-connector-settings}
+
+Ntọala njikọ AI provider ugbu a na-egosi naanị ọdọ account OAuth akwadoro:
+
+| Provider | Usoro nhazi |
 |---|---|
-| **Anthropic Max** | Kết nối một hoặc nhiều tài khoản Anthropic Max bằng nút OAuth. Sử dụng phương án OAuth thủ công khi trình duyệt sandbox không thể hoàn tất chuyển hướng tự động. |
-| **OpenAI ChatGPT/Codex** | Kết nối các tài khoản ChatGPT thông qua quy trình pool OAuth tương tự. Các thao tác được hỗ trợ bởi Connector có thể sử dụng các lệnh công cụ (tool calls) của ChatGPT Codex sau khi tài khoản đã được kết nối. |
-| **Google AI Pro** | Kết nối các tài khoản Google AI Pro thông qua OAuth, sau đó làm mới connector nếu danh sách tài khoản không cập nhật ngay lập tức. |
+| **Anthropic Max** | Jikọọ otu ma ọ bụ karịa account Anthropic Max site na bọtịnụ OAuth. Jiri fallback OAuth aka mgbe browser sandboxed enweghị ike imezu redirect na-akpaghị aka. |
+| **OpenAI ChatGPT/Codex** | Jikọọ account ChatGPT site n’otu usoro ọrụ ọdọ OAuth ahụ. Ọrụ ndị connector kwadoro nwere ike iji oku ngwa ChatGPT Codex mgbe ejikọrọ account ahụ. |
+| **Google AI Pro** | Jikọọ account Google AI Pro site na OAuth, mgbe ahụ mee ka connector dị ọhụrụ ma ọ bụrụ na ndepụta account anaghị emelite ozugbo. |
 
-Cursor Pro không còn là nhà cung cấp được hỗ trợ nữa. Hãy xóa các ảnh chụp màn hình nội bộ cũ, runbook hoặc các bước hướng dẫn sử dụng đề cập đến các trường thiết lập Cursor Pro hoặc đường dẫn connector.
+Cursor Pro abụghịzi provider akwadoro. Wepụ screenshots ime ụlọ ochie, runbooks, ma ọ bụ nzọụkwụ onboarding ndị na-ekwu maka field nhazi Cursor Pro ma ọ bụ ụzọ connector.
 
-Khi thêm hoặc xóa các tài khoản nhà cung cấp, hãy nhập địa chỉ email hợp lệ cho tài khoản đang được làm mới hoặc xóa và lưu cài đặt nhà cung cấp trước khi kiểm tra các thao tác dựa trên connector.
+Mgbe ị na-agbakwunye ma ọ bụ na-ewepụ account provider, tinye adreesị email ziri ezi maka account a na-eme ka ọ dị ọhụrụ ma ọ bụ a na-ehichapụ, wee chekwaa ntọala provider tupu ịnwale ọrụ ndị connector na-akwado.

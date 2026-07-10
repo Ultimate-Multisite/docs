@@ -3,11 +3,11 @@ title: Soevereine Migratieflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migratie Workflow
+# Sovereign Migratie Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voegt migratieverificatiepoorten toe voor het verplaatsen van een standaard subsite naar sovereign tenant infrastructuur.
 
-## Voordat je begint
+## Voordat je begint {#before-you-start}
 
 Bevestig dat je het volgende hebt:
 
@@ -17,7 +17,7 @@ Bevestig dat je het volgende hebt:
 - Een database hostbinding die overeenkomt met de doelomgeving.
 - Toegang tot WP-CLI commando's voor het netwerk.
 
-## Aanbevolen workflow
+## Aanbevolen workflow {#recommended-workflow}
 
 1. Bereid de doeltenant database en het bestandssysteem voor.
 2. Registreer of update de tenantisolatiestellingen.
@@ -28,7 +28,7 @@ Bevestig dat je het volgende hebt:
 7. Bezoek de tenant met SSO.
 8. Schakel DNS of routing pas in na succesvolle verificatie.
 
-## Verificatiepoorten
+## Verificatiepoorten {#verification-gates}
 
 De verificatieworkflow controleert de migratie vanuit verschillende hoeken:
 
@@ -40,6 +40,6 @@ De verificatieworkflow controleert de migratie vanuit verschillende hoeken:
 
 Behandel verificatiefouten als blokkerende factoren vóór de lancering. Herstel het gerapporteerde probleem met betrekking tot de database, gebruiker, queue of routing, en voer de verificatie opnieuw uit voordat je de tenant blootstelt aan klanten.
 
-## Eerste productiebezoek
+## Eerste productiebezoek {#first-production-visit}
 
 Nadat de verificatie is geslaagd, gebruik je **Bezoek (SSO)** vanaf het scherm voor sitebeheer voor het eerste adminbezoek. Dit bevestigt de tenantrouting, SSO token-afhandeling, origin pinning en tenant-side gebruikersprovisioning in één gecontroleerde stap.

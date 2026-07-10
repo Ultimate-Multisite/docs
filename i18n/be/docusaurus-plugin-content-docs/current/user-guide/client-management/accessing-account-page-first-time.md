@@ -3,7 +3,7 @@ title: Доступ да страні канта**ў**
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Як мне ўпершыню атрымаць доступ да адкаднай?
+# Як мне ўпершыню атрымаць доступ да адкаднай? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Вітаем у Ultimate Multisite!
 

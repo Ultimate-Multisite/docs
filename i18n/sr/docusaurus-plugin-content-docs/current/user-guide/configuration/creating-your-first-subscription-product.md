@@ -3,13 +3,13 @@ title: Kreiranje Prve Abonentske Proizvodne Linije
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreiranje Prvog Pretplate Proizvoda (v2)
+# Kreiranje Prvog Pretplate Proizvoda (v2) {#creating-your-first-subscription-product-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak je namenjen korisnicima Ultimate Multisite verzije 2.x. Ako koristite verziju 1.x,**_ **_pročitajte ovaj članak**_**.
 
 Da biste počeli da pokrenete svoju mrežu i počnete da prodajete svoje usluge potencijalnim korisnicima, potrebno je imati različite opcije pretplate. Kako kreirate ove proizvode? Kakve vrste proizvoda možete ponuditi? U ovom članku ćemo pokriti sve što vam treba o proizvodima.
 
-## Vrste Proizvoda
+## Vrste Proizvoda {#product-type}
 
 Sa Ultimate Multisite možete ponuditi dve kategorije proizvoda svojim klijentima: **plane** i **dodatne opcije (Order Bump)**. Dodatne opcije se mogu podeliti u dve vrste: **pakete** i **usluge**. Razlika između njih i specifičnosti ćemo videti sledeće.
 
@@ -19,7 +19,7 @@ Sa Ultimate Multisite možete ponuditi dve kategorije proizvoda svojim klijentim
 
   * **Usluge**: dodatne opcije koje ne menjaju funkcionalnosti Ultimate Multisite-a. To su zadaci koje ćete obaviti za vašeg klijenta pored plana koji je kupio. Na primer, vaš kupac može kupiti plan koji dozvoljava jedan sajt i istovremeno platiti dodatnu uslugu koja će dizajnirati taj sajt.
 
-## Upravljanje Proizvodima
+## Upravljanje Proizvodima {#managing-products}
 
 Za mnoge korisnike, kartica **Products** u Ultimate Multisite-u (**Ultimate Multisite > Products**) može se porediti sa planovima u tradicionalnom okruženju za hosting.
 
@@ -29,7 +29,7 @@ Ovaj deo će vam pomoći da razumete ovaj ključni element Ultimate Multisite-a.
 
 ![Products list page](/img/config/products-list.png)
 
-## Dodavanje proizvoda
+## Dodavanje proizvoda {#adding-products}
 
 Bilo da je plan, paket ili usluga početna tačka za definisanje novog stavke putem **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interfejs sadrži dve glavne sekcije. Na levoj strani su nekoliko tabova koji po
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Opis
+### Opis {#description}
 
 Osnovne informacije o proizvodu mogu se definisati navodom imena proizvoda i opisa. Ovi identifikatori se prikazuju tamo gde su potrebne informacije o proizvodu, kao što su izbor plana i cene, fakture, nadogradnje i slično.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tip cena
+### Tip cena {#pricing-type}
 
 Na desnoj strani interfejsa može se definisati osnovna cena.
 
@@ -53,7 +53,7 @@ Na desnoj strani interfejsa može se definisati osnovna cena.
 
 Ultimate Multisite podržava tri različita tipove cena. Opcija **paid** (plaćeno) traži administrator mreže za informacije o ceni proizvoda i frekvenciji fakturisanja.
 
-### Cena
+### Cena {#pricing}
 
 Komponenta cene definiše osnovnu cenu proizvoda i interval fakturisanja.
 
@@ -61,7 +61,7 @@ Komponenta cene definiše osnovnu cenu proizvoda i interval fakturisanja.
 
 na taj način, primer cena od 29,99 dolara sa podešavanjem od 1 mesec će se naplatiti po 29,99 dolara svakog meseca. Na sličan način, cena od 89,97 dolara sa podešavanjem od 3 meseca će se naplatiti u kvartu po toj sumi.
 
-### Ciklus fakturisanja (Billing Cycles)
+### Ciklus fakturisanja (Billing Cycles) {#billing-cycles}
 
 Sekcija za ciklus fakturisanja definiše učestalost navedenog vremenskog intervala i generalno se razume u svetlu ugovora ili fiksiranih rokova.
 
@@ -69,7 +69,7 @@ Sekcija za ciklus fakturisanja definiše učestalost navedenog vremenskog interv
 
 Na primer, cena proizvoda od 29,99 dolara sa intervalom od 1 mesec i 12 faktura će se naplatiti po 29,99 dolara mesečno za proizvod tokom sledećih 12 meseci. Drugim rečima, takvo podešavanje uspostavlja fiksiran rok cena od 29,99 dolara mesečno na 12 meseci i zatim prestaje fakturisanje.
 
-### Probni period (Trial Period)
+### Probni period (Trial Period) {#trial-period}
 
 Omogućavanje prekida za probni period omogućava administratori mreže da definišu probni period za proizvod.
 
@@ -77,7 +77,7 @@ Omogućavanje prekida za probni period omogućava administratori mreže da defin
 
 Tokom probnog perioda, kupci slobodno mogu koristiti proizvod i neće biti naplaćeni dok se probni period ne iscrpi.
 
-### Naknada za podešavanje (Setup Fee)
+### Naknada za podešavanje (Setup Fee) {#setup-fee}
 
 Možete primeniti naknadu za podešavanje na vaš plan.
 
@@ -85,7 +85,7 @@ Možete primeniti naknadu za podešavanje na vaš plan.
 
 To znači da će vaš klijent platiti dodatnu sumu pri prvoj naplati (pored plana cena) koja odgovara naknadi koju ste definisali u ovoj sekciji.
 
-### Aktivo (Active)
+### Aktivo (Active) {#active}
 
 Prekidač za aktivno efektivno definiše da li je proizvod dostupan kupcima za nove prijave.
 
@@ -93,13 +93,13 @@ Prekidač za aktivno efektivno definiše da li je proizvod dostupan kupcima za n
 
 Ако постоје већ постоје купци на овом плану, прекидање (toggle) у неактивни (disabled) стават ефикасно чини да се план "убава" (grandfathering), уклањајући га из будућих регистрација. **Већ постоје купци на плану ће наставити да им се начинали фактуре** док се не пребацују на нови план или не буду уклаћени са плана.
 
-### Слика проProduce (Product Image)
+### Слика проProduce (Product Image) {#product-image}
 
 Дугме **Upload Image** омогућава мрежно администратору да користи медијску библиотеку за избор или унапређење слике продукта.
 
 ![Секција слика продукта](/img/config/product-image.png)
 
-### Делешене (Delete)
+### Делешене (Delete) {#delete}
 
 Дугме **Delete Product** брише проProduce из система. Појављује се када је проProduce објављена.
 
@@ -107,11 +107,11 @@ Prekidač za aktivno efektivno definiše da li je proizvod dostupan kupcima za n
 
 За разлику од других делеши, проProduce није постављена у дубоко (trash) стање. Стога, једном удаљена акција је нереверсибилна.
 
-### Опције ПроProduce (Product Options)
+### Опције ПроProduce (Product Options) {#product-options}
 
 Након што се дефинише бајзов ниво информација о продукту, опције продукта помажу мрежно администратору да детаљније дефинише специфичне атрибуте проProduce.
 
-#### Општи (General)
+#### Општи (General) {#general}
 
 Таб **General** дефинише општи атрибуте проProduce који се не односе ни на било који од других табо везаних за конкретни производ.
 
@@ -125,7 +125,7 @@ Ultimate Multisite подржава неколико типова проProduce,
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Апгрејде и понижавање (Up & Downgrades)
+#### Апгрејде и понижавање (Up & Downgrades) {#up--downgrades}
 
 Ова таб описује путеве апгрејда и понижавања које су доступни корисницима у својој специфичној ниводи.
 
@@ -143,7 +143,7 @@ Ultimate Multisite подржава неколико типова проProduce,
 
 Ultimate Multisite такође укључује функцију **order bump** (апгрејд по поруџбину), где могу бити додани додатни производи и услуге на планине. Ово се нуди клијенту као додатни чланови који се могу додати планима приликом плаћања или током апгрејда.
 
-#### Промене цене (Price Variations)
+#### Промене цене (Price Variations) {#price-variations}
 
 Varijacije cena omogućavaju administratoru mreže da definiše alternativne nivoe cena zavisno od trajanja. Ova postavka omogućava ponudu mesečnih, kvartalnih, godišnjih ili bilo kog drugog perioda fakturisanja za isti proizvod. Na primer, možete postaviti proizvod na 29,99$ mesečno sa popustom za godišnju opciju od 249,99$ godišnje.
 
@@ -165,9 +165,9 @@ Na primer, ako je vaša osnovna cena proizvoda 29,99$ mesečno, možete dodati:
 Samo varijacije cena ne dodaju prekidač ili prebacivač na frontend čekaoca. Da biste omogućili kupcima da biraju između perioda fakturisanja (npr. Mesečno / Godišnje), potrebno je dodati polje **Period Selection** (Odabir perioda) u vašu formular za prodatu. Pogledajte [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) za korak-po-korak uputstva.
 :::
 
-#### Porezi
+#### Porezi {#taxes}
 
-Tab **Taxes** (Porez) odgovara podešavanjima poreza definisanim u **Ultimate Multisite > Settings > Taxes** i specifičnije, definisanim stopama poreza. Da biste omogućili poreze i definisali primenljive stope poreza, pogledajte dokumentaciju na [Ultimate Multisite: Settings](ultimate-multisite-settings).
+Tab **Taxes** (Porez) odgovara podešavanjima poreza definisanim u **Ultimate Multisite > Settings > Taxes** i specifičnije, definisanim stopama poreza. Da biste omogućili poreze i definisali primenljive stope poreza, pogledajte dokumentaciju na **Ultimate Multisite: Settings**.
 
 ![Tab Porezi](/img/config/product-taxes.png)
 
@@ -179,7 +179,7 @@ Kada je stopa poreza definisana u **Ultimate Multisite > Settings > Manage Tax R
 
 Da biste ukazali da je proizvod predmet oporezivanja, postavite prekidač **Is Taxable** (Je oporeziv) na aktivno i izaberite primenjivu stopu poreza iz padajućeg menija Tax Category (Kategorije poreza).
 
-#### Site Templates (Šabloni sajtova)
+#### Site Templates (Šabloni sajtova) {#site-templates}
 
 U suštini, site šabloni su kompletan WordPress sajtovi koji se kopiraju na sajt kupca kada počne pretplatu.
 
@@ -201,7 +201,7 @@ Na kraju, **Izaberite dostupne šablone sajtova (Choose Available Site Templates
 
 U konačnici, ako administrator mreže želi da izbor šablona bude deo koraka plaćanja, postepka ' _default_ ' je dovoljan. Alternativno, da biste uklonili i zaključali izbor šablona te delegirali izbor podešavanjima plana, mogu biti korisne opcije ' _assign new template_ ' ili ' _choose available site templates_ '.
 
-#### Sajtovi (Sites)
+#### Sajtovi (Sites) {#sites}
 
 Tab **Sajtovi** je deo funkcionalnosti ograničenja Ultimate Multisite-a.
 
@@ -211,7 +211,7 @@ Ova postavka određuje maksimalan broj sajtova koje korisnik može kreirati u ok
 
 Da biste omogućili ovo ograničenje, postavite prekidač **limit sites** na aktivno stanje i navedite maksimalan broj sajtova u polju **site allowance**.
 
-#### Poseti (Visits)
+#### Poseti (Visits) {#visits}
 
 Tab **Poseti** je još jedan deo sistema ograničenja Ultimate Multisite-a. Ova postavka omogućava praćenje i naknadno ograničavanje jedinstvenih posetilaca na sajtu korisnika.
 
@@ -223,7 +223,7 @@ Da biste koristili ovu funkciju, postavite prekidač **limit unique visits** u a
 
 Čim se dosegne taj limit, Ultimate Multisite više neće služenje sajta korisnika, već će prikazati poruku koja ukazuje da su granice pređene.
 
-#### Korisnici
+#### Korisnici {#users}
 
 Ograničenja 'Users' (Korisnici) u Ultimate Multisite omogućavaju administratoru mreže da postavi granice na broj korisnika koji se mogu kreirati i dodeliti rolama.
 
@@ -233,7 +233,7 @@ Da biste omogućili funkciju ograničenja, postavite prekidač **limit user** u 
 
 Za svaki rol koji želite da ograničite, postavite prekidač pored njega u aktivno stanje i definišite maksimalnu gornju granicu u odgovarajućem polju.
 
-#### Tipovi postova (Post Types)
+#### Tipovi postova (Post Types) {#post-types}
 
 Tab **Post Types** (Tipovi postova) omogućava administratoru mreže da postavi detaljne granice na širok niz tipova postova unutar WordPress-a.
 
@@ -245,7 +245,7 @@ Da biste omogućili ovaj pod-sistem ograničenja, postavite prekidač **limit po
 
 Sledeći, za svaki tip posta koji želite ograničiti, uključite ga tako što ćete ga pomeriti u desnu stranu i navedite maksimalan gornji limit u odgovarajućem polju.
 
-#### Disk prostor
+#### Disk prostor {#disk-space}
 
 Tab **Disk Space** omogućava administratorima mreže da ograniče prostor koji zauzimaju klijenti.
 
@@ -257,13 +257,13 @@ Da biste omogućili ograničenje korišćenja diska, postavite prekidač **limit
 
 Zatim, navedite maksimalan gornji limit u megabajtima u polju **disk space allowance**.
 
-#### Privatni domen (Custom Domain)
+#### Privatni domen (Custom Domain) {#custom-domain}
 
 Prekidač ovom opcijom vam omogućava da dozvolite privatne domene isključivo na ovom planu.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Teme
+#### Teme {#themes}
 
 Tab **Themes** unutar opcija proizvoda omogućava administratorima mreže da teme učine dostupnim klijentima za izbor i opciono da prisile stanje teme.
 
@@ -281,7 +281,7 @@ Izbor **behavior** omogućava administratorima mreže da definišu stanje teme p
 
 U **Dostupnom** stanju tema je dostupan kupcu za samostalnu aktivaciju. Suprotno tome, u stanju **Nije dostupno** uklanja od kupca mogućnost aktivacije teme. Na kraju, opcija **Prisilituj aktivaciju** prisiljava izbor i aktivaciju teme, postavljajući je kao podrazumevanu prilikom kreiranja sajta.
 
-#### Pluginovi
+#### Pluginovi {#plugins}
 
 Slično kartici za teme, Ultimate Multisite omogućava administratoru mreže da definiše vidljivost pluginova kupcima, kao i njihov status pri kreiranju novog sajta.
 
@@ -301,7 +301,7 @@ Izbor **Podrazumevano** poštuje stanje plugin-a definisano u šablonu sajta koj
 
 Мрежни администратор може размислити о опцијама Force Activate & Lock и Force Inactivate & Lock у комбинацији са шаблонима сајта као плагиними, јер стање плагина у шаблонима може бити утицајно на эти опције ако су одзелити.
 
-#### Ограничења приликом ресета (Reset Limitations)
+#### Ограничења приликом ресета (Reset Limitations) {#reset-limitations}
 
 Таб **Reset Limitations** (Ресет ограничавања) реситира све подељене лимиту које сте дефинисали за производ. Да бисте ресилили ограничавања, кликните на дугме **reset limitations**.
 
@@ -311,7 +311,7 @@ Izbor **Podrazumevano** poštuje stanje plugin-a definisano u šablonu sajta koj
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Уређивање, Дуплирање или Делење Продукта (Edit, Duplicate, or Delete Product)
+## Уређивање, Дуплирање или Делење Продукта (Edit, Duplicate, or Delete Product) {#edit-duplicate-or-delete-product}
 
 Сущећих провиједе можете уредовати, дуплирати или делети прелазећи на **Ultimate Multisite > Products** и премажући надликом имена постојећег производа.
 

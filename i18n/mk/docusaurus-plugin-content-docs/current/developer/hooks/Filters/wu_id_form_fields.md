@@ -1,0 +1,22 @@
+---
+id: wu_id_form_fields
+title: 'Филтер - wu_{$id}_form_fields'
+sidebar_label: 'wu_{$id}_form_fields'
+_i18n_hash: 4ce34f82555356308c280b58fd6b4b26
+---
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+
+Ги филтрира полињата на формулар. Формуларот се идентификува според ID во името на филтерот.
+
+## Параметри {#parameters}
+
+| Име | Тип | Опис |
+|------|------|-------------|
+| $fields | `array` | Список на полиња на формуларот. |
+
+### Од верзија {#since}
+
+- 2.0.0
+### Извор {#source}
+
+Дефинирано во [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) на линија 148

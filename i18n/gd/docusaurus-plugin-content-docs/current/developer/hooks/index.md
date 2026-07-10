@@ -1,0 +1,194 @@
+---
+title: Iomradh air Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Iomradh Hooks {#hooks-reference}
+
+Sgrìobhainnean fèin-ghinte airson nan **59 gnìomhan** agus **118 sìoltachain** uile ann an Ultimate Multisite.
+
+## Gnìomhan {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Ruithidh e ron ath-stiùireadh dearbhaidh.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Ruithidh e sa bhad mus tèid a’ bhriosgaid dearbhaidh a shuidheachadh.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Ruithidh e sa bhad mus tèid a’ bhriosgaid dearbhaidh airson neach air logadh a-steach a shuidheachadh.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Leig le luchd-leasachaidh na h-amalachaidhean solaraiche òstair aca fhèin a chur ris tro plugins wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Brosnaichidh e nuair a bhios na h-uile eisimeileachdan air an luchdadh
+- [wu_activation](./Actions/wu_activation) — Leig le pàirtean eile den plugin na gnàthasan aca a cheangal airson gnìomhachadh
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Leig le luchd-leasachaidh plugin gnìomhan a cheangal às dèidh do chleachdaiche no super admin teamplaid na làraich atharrachadh
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Ann an cuid de chùisean, feumaidh sinn sùgh a bharrachd a luchdadh gus gnìomhan a làimhseachadh.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Ruithidh e mus tèid an t-iarrtas luirg a phròiseasadh.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Leig le luchd-leasachaidh atharraichean a bharrachd a dhèanamh air an nì checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Leig le luchd-leasachaidh atharraichean a bharrachd a dhèanamh air an nì checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Ruithidh e mus tèid raon a chur ris an fhoirm checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Leig le luchd-leasachaidh dubhain a bharrachd a bhrosnachadh.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Mus pròiseasaich sinn an checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Ruithidh e às dèidh òrdugh checkout a bhith air a chur ri chèile gu tur.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Leig le luchd-leasachaidh plugin widgets a chur ri Pannal Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Leig le luchd-leasachaidh plugin widgets a chur ri Pannal Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Leig le pàirtean eile den plugin na gnàthasan aca a cheangal airson dì-ghnìomhachadh
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Leig le luchd-leasachaidh plugin gnìomhan a chur ris a’ phròiseas sguabaidh às
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Ruithidh e nuair a thig àrainn gu bhith na prìomh àrainn airson làrach.
+- [wu_domain_created](./Actions/wu_domain_created) — Brosnaichidh e nuair a thèid mapadh àrainn ùr a chur ris.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Air a ruith às dèidh don Domain Mapping bunasach againn a bhith air a luchdadh
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Sàbhalaidh cuid de plugins URL mus robh am mapadh gnìomhach no togaidh iad URLan ann an dòigh eadar-dhealaichte nach eil air a ghabhail a-steach o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Leig le luchd-leasachaidh dubhan a chur às dèidh dùblachadh làraich tachairt.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Leig le luchd-leasachaidh plugin dubhain a bharrachd a chur ris
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Dubhan airson glanadh a bharrachd
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Ruithidh e mus làimhsich e iarrtas modal airson àrainn ùr a chur ris.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Leig le luchd-leasachaidh plugin dàta meta a shàbhaladh ann an dòighean eadar-dhealaichte ma dh’fheumas iad.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Leig le luchd-leasachaidh plugin dàta meta cleachdaiche a shàbhaladh ann an dòighean eadar-dhealaichte ma dh’fheumas iad.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Ruithidh e nuair a thachras token ceangail draoidheil mì-dhligheach.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Ruithidh e às dèidh do chleachdaiche logadh a-steach tro cheangal draoidheil.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Leig le luchd-leasachaidh plugin rudan a bharrachd a dhèanamh nuair a thèid an neach-ceannach a chur ris.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Ruithidh e às dèidh comasan MCP a bhith air an clàradh airson eintiteas.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Ruithidh e às dèidh don adapter MCP a bhith air a thòiseachadh.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Brosnaichidh e às dèidh don bhallrachd a bhith air a cur dheth.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Brosnaichidh e às dèidh ùrachadh na ballrachd.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Brosnaichidh e mus tèid a’ bhallrachd a cur dheth.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Brosnaichidh e ro ùrachadh na ballrachd.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Ruithidh e às dèidh nì a bhith air a stòradh san stòr-dàta.
+- [wu_page_added](./Actions/wu_page_added) — Leig le luchd-leasachaidh plugin rudan a bharrachd a ruith nuair a thèid duilleagan a chlàradh.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Leig le luchd-leasachaidh plugin susbaint a bharrachd a chur ris às dèidh dhuinn an duilleag a chlò-bhualadh
+- [wu_page_before_render](./Actions/wu_page_before_render) — Leig le luchd-leasachaidh plugin susbaint a bharrachd a chur ris mus clò-bhuail sinn an duilleag.
+- [wu_page_load](./Actions/wu_page_load) — Leig le luchd-leasachaidh plugin dubhain a bharrachd a chur ris na duilleagan againn.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Leig le luchd-leasachaidh plugin susbaint a bharrachd a chur ris às dèidh dhuinn an duilleag a chlò-bhualadh
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Leig le luchd-leasachaidh plugin susbaint a bharrachd a chur ris mus clò-bhuail sinn an duilleag.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Leig le luchd-leasachaidh plugin dubhain a bharrachd a chur ris na duilleagan againn.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Ruithidh e às dèidh widgets a bhith air an clàradh airson na duilleige seo.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Thèid a chur an gnìomh gus leigeil le tuilleadain modalan comais a cheangal ri amalachaidhean.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Thèid a chur an gnìomh gus leigeil le amalachaidhean iad fhèin a chlàradh.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Leig le slighean a bharrachd a bhith air an clàradh.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Leig le luchd-leasachaidh phlugan gnìomhan a chur ris a’ phròiseas sàbhalaidh
+- [wu_site_created](./Actions/wu_site_created) — Thèid a chur an gnìomh às dèidh làrach a bhith air a cruthachadh airson a’ chiad uair.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Leig le luchd-leasachaidh phlugan dubhain a bharrachd a chur ris, ma tha feum air.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Ruithidh e nuair a tha e taobh a-staigh co-theacsa ro-shealladair na teamplaide.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Brosnaichidh e dubhan cur nan sgriobtaichean sa chiudha.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Thèid a chur an gnìomh às dèidh nì a bhith air a stòradh san stòr-dàta.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Thèid a chur an gnìomh às dèidh nì a bhith air a stòradh san stòr-dàta.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Thèid a chur an gnìomh às dèidh nì a bhith air a stòradh san stòr-dàta.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Leig le luchd-leasachaidh phlugan gnìomhan a chur ris a’ phròiseas dì-ghlasaidh.
+
+## Criathragan {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Criathraich fad ùine crìochnachaidh a’ bhriosgaid dearbhaidh.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Criathraich sgeama ath-stiùiridh an dearbhaidh.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Ath-riochdaich an WP Filter tùsail an seo, mar dheagh chleachdadh.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Leig le luchd-leasachaidh plugin an URL a chleachdar san ro-shealladair a chriathradh
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Criathraich am bu chòir dhan bhriosgaid auth a bhith air a cur a-mhàin thairis air HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Criathraich am bu chòir ath-stiùireadh dearbhaidh tèarainte a chleachdadh.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Criathraich am bu chòir dhan bhriosgaid logged in a bhith air a cur a-mhàin thairis air HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Leig le briosgaidean auth a chasg bho bhith dha-rìribh air an cur chun a’ chleachdaiche.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Suidhich an URL ath-stiùiridh.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Cuir ceumannan a bharrachd ris tro chriathragan
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Leig le luchd-leasachaidh plugin caochladair a bharrachd a chur ri co-theacsa an render gu cruinneil.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Leig le luchd-leasachaidh an sgrùdadh seo a ghearradh goirid.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Criathraich na raointean airson modal cuir àrainn ùr ris.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Leig le luchd-leasachaidh atharraichean a dhèanamh air nì-loidhne cosgais rèiteachaidh.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Leig le luchd-leasachaidh fiosan rianachd a chuir Ultimate Multisite ris a chriathradh.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Criathrag às dèidh atharrachadh.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — A-nis, dèiligidh sinn ris na seòrsaichean uile.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Leig le luchd-leasachaidh plugin na cuingeachaidhean a ghearradh goirid.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Criathraich am bu chòir cosgais clàraidh a chur an sàs no nach bu chòir.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Criathraich na h-argamaidean api tùsail.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Leig le luchd-leasachaidh plugin raointean an t-seòlaidh bhileachaidh a chriathradh.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Leig le luchd-leasachaidh an t-às-chur a sheachnadh agus fear ùr a shuidheachadh
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Leig le luchd-leasachaidh còd dì-shuidheachadh a’ chleachdaiche làithrich a sheachnadh.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Criathraich iomlan an “t-suim ath-chuairteach”.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Criathraich iomlan an “t-suim tòiseachaidh”.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Criathraich iomlan an “t-suim tòiseachaidh”.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Leig le luchd-leasachaidh plugin cur a-steach air luach a’ chreideis.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Criathraich àrainnean bunaiteach co-roinnte checkout-form nach bu chòir a bhith nan clàran mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Tha na API-an againn airson teamplaidean raoin ùra a chur ris a’ ceangal a-steach an seo.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Tha na API-an againn airson seòrsaichean raoin ùra a chur ris a’ ceangal a-steach an seo.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Criathraich na teachdaireachdan mearachd.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Leig le luchd-leasachaidh an sgrùdadh a sheachnadh ma tha raon fèin-churachail.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Leig le luchd-leasachaidh plugin ailiasan gnàthaichte a chur ris ann an dearbhadair foirm.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Leig le luchd-leasachaidh plugin na riaghailtean dearbhaidh a chriathradh.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Dì-shuidhich Params nach eil miannaichte.
+- [wu_contains_element](./Filters/wu_contains_element) — Leig le luchd-leasachaidh toraidhean a’ chiad rannsachaidh atharrachadh.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Leig le solaraichean aoigheachd an seasmhach a stàladh ann an dòigh eadar-dhealaichte.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Till ainm snog fo-roinnean rianachd na dùthcha.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Till liosta nam bailtean-mòra airson stàit ann an dùthaich.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Till liosta nan stàitean airson na dùthcha seo.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Leig le luchd-leasachaidh an giùlan bunaiteach atharrachadh agus an neach-ceannach làithreach a shuidheachadh ann an dòigh eadar-dhealaichte.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Leig le luchd-leasachaidh an giùlan bunaiteach atharrachadh agus am ballrachd làithreach a shuidheachadh ann an dòigh eadar-dhealaichte.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Leig le luchd-leasachaidh an giùlan bunaiteach atharrachadh agus an làrach làithreach a shuidheachadh ann an dòigh eadar-dhealaichte.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Leig le luchd-leasachaidh paramadairean URL riaghlaidh na làraich atharrachadh.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Leig le luchd-leasachaidh plugin na ceanglaichean a chriathradh.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Leig le luchd-leasachaidh plugin sgrùdaidhean ùra a chur ris gus na toraidhean a mhìneachadh.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Dh’fhaodadh gum feum sinn blocaichean a bharrachd a chur ris nas fhaide air adhart.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Cuiridh e filter coitcheann ris gus leigeil le luchd-leasachaidh am parser seo a leudachadh gus dèiligeadh ri builders no plugins a bharrachd.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter a bheil riaghailtean facail-fhaire a bharrachd ri an cur an gnìomh.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter ainm-cleachdaiche teachdaiche a chaidh a ghineadh.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Leig le luchd-leasachaidh plugin pre-sets duilleig checkout a filteradh.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Leig le luchd-leasachaidh form slugs ùra a chur ris gus an giùlan seo a sheachnadh.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Leig le luchd-leasachaidh agus add-ons ceumannan migration ùra a chur ris
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Faic barrachd mun filter seo gu h-ìosal, air an aon method seo.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Leig le luchd-leasachaidh taghadh dè na seòrsaichean post a bu chòir a thaisbeanadh.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Till Lines, gabhaidh filteradh
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Leig le luchd-leasachaidh na paidhrichean domain/path a làimhseachadh.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filteraidh e na h-earrannan wizard airson rèiteachadh amalachaidh hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filteraidh e na fields air form. Tha am form air a chomharrachadh leis an ID ann an ainm an filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filter na seòrsaichean bathair aig a bheil cearcallan bileachaidh neo-eisimeileach.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Leig le luchd-leasachaidh plugin staid shònraichte a sparradh airson an API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Leig le luchd-leasachaidh plugin deuchainnean a bharrachd a chur ris airson modh leasachaidh.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Leig le luchd-leasachaidh plugin staid shònraichte a sparradh airson an adapter MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Air adhbharan tèarainteachd, cuingealaichidh sinn àireamh nan gnìomhan a tha rim faighinn airson hooking into. Leigidh am filter seo le luchd-leasachaidh leudachadh
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Nì e sgrùdadh a bheil seòrsa post sònraichte ceadaichte air a’ phlana seo Leig le luchd-leasachaidh plugin an luach tillidh a filteradh
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter a bheil dearbhadh seòladh IP ri chur an gnìomh.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter a bheil dearbhadh user agent ri chur an gnìomh.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter URL a’ cheangail magic a chaidh a ghineadh.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter a bheil ceanglaichean magic comasach.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filteraidh e an URL ath-stiùiridh às dèidh domain a dhèanamh primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Cruthaich liosta-eisimeileachd de pharamadairean a chuireas bacadh air an auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter gus co-dhùnadh in-ghabhail comais MCP a chur thairis.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filteraidh e an ceann-latha crìochnachaidh a chaidh àireamhachadh.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filteraidh e an ceann-latha crìochnachaidh a chaidh àireamhachadh gus a shuidheachadh às dèidh an ath-nuadhachaidh.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Leig le luchd-leasachaidh update form slugs ùra a chur ris.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter an fhaid facail-fhaire as lugha.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter neart facail-fhaire as lugha a tha riatanach (sgòr zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Leig le luchd-leasachaidh plugin, agus leinn fhìn, ceanglaichean gnìomh a chur ris na duilleagan deasachaidh againn
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter a bheil litrichean beaga riatanach ann am faclan-faire.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter a bheil àireamhan riatanach ann am faclan-faire.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter a bheil caractaran sònraichte riatanach ann am faclan-faire.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter a bheil litrichean mòra riatanach ann am faclan-faire.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Leig leis an neach-cleachdaidh an teachdaireachd mu na pàighidhean ri thighinn atharrachadh.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filter na seòrsaichean bathair a bu chòir a làimhseachadh mar phlanaichean.
+- [wu_post_count](./Filters/wu_post_count) — Leig le luchd-leasachaidh plugin an t-iomlan cunntais atharrachadh
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Leig le luchd-leasachaidh plugin atharrachadh dè an inbhe post a bu chòir a chunntadh Gu bunaiteach, tha puist foillsichte agus prìobhaideach air an cunnta
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filteraidh e dàta an nì mus tèid a stòradh san stòr-dàta.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Leig le luchd-leasachaidh roghainnean a filteradh mus tèid an sàbhaladh le Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filteraidh e a bheil cead ann leantainn air adhart leis an iarrtas no nach eil.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filteraidh e a bheil cead ann leantainn air adhart leis an iarrtas no nach eil.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Sìolaidh e an gabh leantainn air adhart leis an iarrtas no nach gabh.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Sìolaidh e an gabh leantainn air adhart leis an iarrtas no nach gabh.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Sìolaidh e an gabh leantainn air adhart leis an iarrtas no nach gabh.
+- [wu_return_url](./Filters/wu_return_url) — Leig le luchd-leasachaidh an URL tilleadh gateway a chleachdar às dèidh phròiseasan checkout atharrachadh.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Leig le luchd-leasachaidh plugin barrachd ghnìomhan modalan-luirg a chur ris.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Leig le luchd-leasachaidh ceumannan draoidh-suidheachaidh a bharrachd a chur ris.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Sìolaidh e am bu chòir do Ultimate Multisite clàr domain a chruthachadh airson làrach ùr-chruthaichte.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Leig le luchd-leasachaidh an ath-stiùireadh a ghearradh goirid, ga chasg bho thachairt.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Leigidh e le handler ath-sgrìobhadh
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Sìol na mòr-ghnìomhan a tha rim faighinn airson làraichean.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sìoltachan gus an luach airson get pluginssites taobh a-staigh an lìonraidh atharrachadh.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Cuir an comas/cuir à comas comas single-sign-on thar-domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Sìolaidh e URLan SSO a chaidh a ghineadh mus tèid an tilleadh airson gnìomhan luchd-ceannach thar-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Sìol dàta Stripe Subscription. Faodaidh e success_url no cancel_url a chur thairis.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Sìolaidh e argamaidean rùn-pàighidh.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Sìolaidh e ID a’ phlana ri sgrùdadh. Ma tha seo ann, cleachdaidh an subscription ùr am plana seo.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Sìolaidh e ID a’ bhathair ri sgrùdadh. Ma tha seo ann, cleachdaidh an subscription ùr am bathar seo.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Sìolaidh e luach idempotency_key a thèid a chur leis na roghainnean cosgais Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Sìolaidh e clàr na membership a tha co-cheangailte ris an webhook seo.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Sìolaidh e an dàta meta mus tèid a shreathachadh gus a stòradh san stòr-dàta.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Sìolaidh e dàta an oibseict mus tèid a stòradh san stòr-dàta.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Leig le luchd-leasachaidh an URL àrdachaidh gus fhosgladh atharrachadh
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Dearbhaich am bu chòir mapping a chleachdadh
+- [wu_username_from_email](./Filters/wu_username_from_email) — Sìol ainm-cleachdaiche ùr an neach-ceannach.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Leig le luchd-leasachaidh an teachdaireachd mu chrìoch luchd-cleachdaidh membership atharrachadh
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Leigidh e le luchd-leasachaidh pasganan a bharrachd a chur ris an liosta ath-shuidhichte.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Sìolaidh e dè na sub_commands a tha comasach airson an eintiteas seo.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Nì sinn sgrùdadh airson trì pàtrain nuair a tha sinn a’ feuchainn ri obrachadh a-mach càite an urrainn dhuinn na cunbhalan againn a stealladh:

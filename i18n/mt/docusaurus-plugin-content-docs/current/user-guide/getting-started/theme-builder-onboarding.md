@@ -3,11 +3,11 @@ title: Fluss tal l-onboarding għall-Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Flūdu Onboarding tal-Theme Builder
+# Flūdu Onboarding tal-Theme Builder {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 jiddu **flūdu onboarding tal-Theme Builder** li jgħadhom biex tgħmli theme kustom bl-block klawdini meta tistawli l-setup inizjali tiegħek. Dan jagħmel il-mode legacy Site Builder aktar flessibbli u assistiti min l-agent.
 
-## X'għandu huwa il-Flūdu Onboarding tal-Theme Builder?
+## X'għandu huwa il-Flūdu Onboarding tal-Theme Builder? {#what-is-the-theme-builder-onboarding-flow}
 
 Il-flūdu onboarding tal-Theme Builder huwa wizard ta setup interattivi li:
 
@@ -18,9 +18,9 @@ Il-flūdu onboarding tal-Theme Builder huwa wizard ta setup interattivi li:
 
 Il-flūdu huwa mħondobb mill-**Setup Assistant agent**, li jistaqsi mistennijiet u jbni l-theme tiegħek grad by grad.
 
-## Inċipju tal-Theme Builder Onboarding
+## Inċipju tal-Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Setup Primarju (First-Run Setup)
+### Setup Primarju (First-Run Setup) {#first-run-setup}
 
 Meta tistawli l-Superdav AI Agent fl-prima volta fuq installazzjoni WordPress nuova, tista' tgħleb:
 
@@ -35,7 +35,7 @@ X'għandek li tagħmel?
 
 Iċekkja fuq **"Build a custom theme"** biex tidħol fl-flūdu onboarding tal-Theme Builder.
 
-### Aċċettazzjoni Manuali (Manual Activation)
+### Aċċettazzjoni Manuali (Manual Activation) {#manual-activation}
 
 Tista' tistartilli l-Theme Builder onboarding fil-ħin li għandek biex tiġi riċievi:
 
@@ -49,9 +49,9 @@ jew
 "Help me create a custom theme"
 ```
 
-## Il-Istadi Onboarding
+## Il-Istadi Onboarding {#the-onboarding-steps}
 
-### Istadju 1: Selezzjoni tal-Mod
+### Istadju 1: Selezzjoni tal-Mod {#step-1-mode-selection}
 
 L-Setup Assistant agent jistaqsi dwar il-preferenza tiegħek:
 
@@ -63,7 +63,7 @@ Come tista' tgħmli l-theme tiegħek?
 
 **Mod Guida (Guided mode)** huwa mġieħed għal ħafna utenti; l-agent jagħmel rekomendazzjonijiet ta disjen bbażat fuq l-industrija tiegħek u l-objettivi tiegħek.
 
-### Istadju 2: Spesifikazzjoni tal-Sajtu
+### Istadju 2: Spesifikazzjoni tal-Sajtu {#step-2-site-specification}
 
 Tista' tiġi tistaqsi dwar is-sajtu tiegħek:
 
@@ -74,7 +74,7 @@ Tista' tiġi tistaqsi dwar is-sajtu tiegħek:
 
 Dan informazzjoni hija magħalna f il memoria ta **site_brief**, li l-agentijiet jreferuha fil-sessioni futuri.
 
-### Idrass 3: Decisioni tal-Design System
+### Idrass 3: Decisioni tal-Design System {#step-3-design-system-decisions}
 
 L-agent giandu b'lek għipprovdija għall-selezzjoni tal-design tokens (elementi tal-design):
 
@@ -83,7 +83,7 @@ L-agent giandu b'lek għipprovdija għall-selezzjoni tal-design tokens (elementi
 - **Spazji (Spacing)**: Layouts kompakti, normali jew spazjuabbli
 - **Moviment (Motion)**: Animazzjonijiet u transizzjonijiet (jefit għal xi ħaġa)
 
-### Idrass 4: Generazzjoni tal-Theme
+### Idrass 4: Generazzjoni tal-Theme {#step-4-theme-generation}
 
 L-agent Setup Assistant jgħinek li t-scaffoldi l-custom block theme tiegħek b'attrezzamenti kif segueh:
 
@@ -92,7 +92,7 @@ L-agent Setup Assistant jgħinek li t-scaffoldi l-custom block theme tiegħek b'
 - Stili tal-block kustom li jidduja mat-tnaqqis mal-design system tiegħek
 - Metadata tal-theme u deklarazzjonijiet b'suport WordPress
 
-### Idrass 5: Attivazzjoni u Verifikazzjoni
+### Idrass 5: Attivazzjoni u Verifikazzjoni {#step-5-activation-and-verification}
 
 Il-theme jattivaw dwar l-auto, u tista' tara:
 
@@ -107,7 +107,7 @@ Il-theme jattivaw dwar l-auto, u tista' tara:
 
 Immen l-meħdem, tista' tvisita is-sajtu tiegħek biex tverifika li l-theme jiddispleggi b'mod korrett.
 
-## Spesifikazzjoni tal-Sajtu u Memoria site_brief
+## Spesifikazzjoni tal-Sajtu u Memoria site_brief {#site-specification-and-sitebrief-memory}
 
 Dimandwar il-agent klini specifikazzjoni tal-sajtu tiegħek f kategoria memoria **site_brief**. Dan inkludi:
 
@@ -117,17 +117,17 @@ Dimandwar il-agent klini specifikazzjoni tal-sajtu tiegħek f kategoria memoria 
 - Preferenzi tal-design
 - Struttura tal-kontenut
 
-### Perché il-site_brief importanti
+### Perché il-site_brief importanti {#why-sitebrief-matters}
 
 F sessioni futuri, l-agentijiet jreferu l-site_brief tiegħek biex:
 
-### Mantenere l-design koonsistenti durante i cambiamenti
+### Mantenere l-design koonsistenti durante i cambiamenti {#viewing-your-sitebrief}
 
 * Suggerix caratteristiche allineati malajtembix siti.
 * Fornisci raccomandazioni b'aħħar konnessjoni (context-aware).
 * Evita li tikkunsidxi it-istgħaqlijiet ta setup.
 
-### Viste il-site_brief tiegħek
+### Viste il-site_brief tiegħek {#customizing-after-onboarding}
 
 Tista' tistaqsi lill-agent:
 
@@ -143,11 +143,11 @@ jew
 
 L-agent juri skopixxi siti tiegħek li għandu stoccjat.
 
-## Customizzazzjoni Wara l-Onboarding
+## Customizzazzjoni Wara l-Onboarding {#use-the-design-system-aesthetics-skill}
 
 Wara li jkomplettu l-onboarding tal-Theme Builder, tista' tiġi:
 
-### Uża l-Skill ta Aesthetics tal-Design System
+### Uża l-Skill ta Aesthetics tal-Design System {#edit-themejson-directly}
 
 Ixtieq raccomandazzjonijiet ta design:
 
@@ -163,7 +163,7 @@ jew
 
 L-**Design System Aesthetics skill** tivveħquk fil-aħħar bizzjoni ta aġġuntamenti ta design.
 
-### Edita theme.json Direttament
+### Edita theme.json Direttament {#create-custom-block-templates}
 
 For advanced users, edita `/wp-content/themes/[theme-name]/theme.json` biex tista' tistaqsi:
 
@@ -172,7 +172,7 @@ For advanced users, edita `/wp-content/themes/[theme-name]/theme.json` biex tist
 * Spacing values
 * Border and shadow definitions
 
-### Crea Custom Block Templates
+### Crea Custom Block Templates {#comparison-old-vs-new-onboarding}
 
 Uża l-WordPress block editor biex tista' tistaqsi template kustom għal:
 
@@ -181,7 +181,7 @@ Uża l-WordPress block editor biex tista' tistaqsi template kustom għal:
 * Product pages
 * Contact forms
 
-## Konparazzjoni: Qwieter vs. Nuw
+## Konparazzjoni: Qwieter vs. Nuw {#troubleshooting}
 
 | Caratteristika | Site Builder (Legacy) | Theme Builder (Nuw) |
 |---------|----------------------|-------------------|
@@ -191,7 +191,7 @@ Uża l-WordPress block editor biex tista' tistaqsi template kustom għal:
 | Flessibilità | Oprezzjonijiet fiks | Kustomizzabbli |
 | Aġġuntamenti futuri | Ma jkun referenziati | Stoccjati f'site_brief |
 
-## Problemi (Troubleshooting)
+## Problemi (Troubleshooting) {#next-steps}
 
 **L-onboarding flow ma jkomplettu**
 * Ril-start il-flow: "Start the Theme Builder onboarding"

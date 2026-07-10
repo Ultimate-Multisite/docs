@@ -3,7 +3,7 @@ title: GitHub հատվածներ
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Մեծ կողմերով ցանցի (Ultimate Multisite) սնուպետների օգտագործումը մեր GitHub-ում
+# Մեծ կողմերով ցանցի (Ultimate Multisite) սնուպետների օգտագործումը մեր GitHub-ում {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub-ում հասանելի է կոդային հատվածներ, որոնք հաճախ խնդրվում են Ultimate Multisite օգտվողների կողմից՝ փոքր ֆունկցիոնալություններ ավելացնելու համար, ինչպիսիք են Google Analytics սկրիպտի ավելացում գրանցման էջերում կամ մետաբոքսը հեռացնելու ადմինի պաստառից։
 
@@ -19,7 +19,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
   2. Must-Use Plugins (mu-plugins)
 
-# Ինչպես ավելացնել սնուպետը ձեր թեմայի functions.php ֆայլում։
+# Ինչպես ավելացնել սնուպետը ձեր թեմայի functions.php ֆայլում։ {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Մուտք գործեք ձեր WordPress Network admin dashboard և գնացեք Themes > Theme Editor (տես ստորև բերված պատկերը)։
 
@@ -29,7 +29,7 @@ https://github.com/next-press/wp-ultimo-snippets/
 
 <!-- Պատկերը հասանելի չէ. WordPress Theme Editor՝ functions.php ֆայլի խմբագրման պատկերով -->
 
-# Ինչպես ստեղծել Must-Use Plugins (mu-plugins)
+# Ինչպես ստեղծել Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress-ում կա մի հատկություն, որը թույլ է տալիս բեռնել հատուկ ֆունկցիոնալություն՝ "Must-Use Plugins" կամ կարճ անվանումով "mu-plugins"։
 

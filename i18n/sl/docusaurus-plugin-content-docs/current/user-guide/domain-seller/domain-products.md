@@ -3,11 +3,11 @@ title: Domena izdelki in cenik
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Domenični izdelki in cenik
+# Domenični izdelki in cenik {#domain-products-and-pricing}
 
 Domenični izdelki so način, kako kontrolirate cene, TLD-e (top-level domena), zasebnost WHOIS in izbiro ponudnika. Vsak domen izdelek je standardni Multisite Ultimate izdelek z dodatno tabo **Domain Settings**.
 
-## Ustvarjanje domennega izdelka
+## Ustvarjanje domennega izdelka {#creating-a-domain-product}
 
 1. Pojdite na **Network Admin › Ultimate Multisite › Products**
 2. Kliknite na **Add New** (Dodaj novo)
@@ -17,13 +17,13 @@ Domenični izdelki so način, kako kontrolirate cene, TLD-e (top-level domena), 
 
 Domenični izdelki se pojavljajo z ljubkavim vijoličnim oznako **Domain** v seznamu izdelkov in jih lahko filtrirate z uporabo tabe **Domain Products**.
 
-## Tab Domain settings
+## Tab Domain settings {#domain-settings-tab}
 
-### Ponudnik (Provider)
+### Ponudnik (Provider) {#provider}
 
 Izberite, kateri registrator bo obravnaval registracijo za ta izdelek. Počitno je globalni **Default provider** (Predvoljni ponudnik), ki je nastavljen v nastavitvah Domen Seller.
 
-### Podporana TLD-e (Supported TLDs)
+### Podporana TLD-e (Supported TLDs) {#supported-tlds}
 
 Prazno pustite, če želite ustvariti **catch-all product** (izdelek za vse) na katere se nanaša na vse TLD-e, ki jih ne prekrije drugi izdelek.
 
@@ -31,7 +31,7 @@ Vnesite seznam TLD-jev z razdelitvijo z zagoni (npr. `.com, .net, .org`), da ust
 
 **Kako deluje podbočanje izdelkov (How product matching works):** Ko kupec iskal domen, dodatek izbere najbolj specifični ustrezen izdelek. Izdelek z `.com` v seznamu TLD-jev ima prednost pred izdelkom za vse. Če se ne ustreza noben spesifičen izdelek za TLD, se uporabi catch-all. Če ne obstaja noben izdelek, iskanje domena ni prikazano.
 
-### Tip podbočanja (Markup type)
+### Tip podbočanja (Markup type) {#markup-type}
 
 Tri načina upravljajo, kako se vaš retail cena računa od velevene cene:
 
@@ -41,11 +41,11 @@ Tri načina upravljajo, kako se vaš retail cena računa od velevene cene:
 | **Fixed markup** (Fiksna podbočanja) | Dodaja fiksno dolžino denarja. Podbočanje od 5 dolarjev na domeno v 10 dolarjev daje 15 dolarjev. |
 | **Fixed price** (Fiksna cena) | Vse velevene cene zanima. vedno določi znesek, ki ga vnesete. |
 
-### Uvodna cena (Introductory pricing)
+### Uvodna cena (Introductory pricing) {#introductory-pricing}
 
 Om ponudbo zniženo ceno za prvi leto. Ustavite ločeno **Uvodno ceno** (ceno za prvo leto) obravnavano v redno **Ceno za obnovitev** (za leto 2+). Na strani za nakup vidijo oba cena, tako da vedete, kaj se bo zgodilo pri obnovitvi.
 
-### zasebnost WHOIS
+### zasebnost WHOIS {#whois-privacy}
 
 Odpravlja, ali je ponudba zasebnosti WHOIS za domene, ki so registrirani z uporabo tega izdelka.
 
@@ -59,7 +59,7 @@ Za Namecheap uporablja WHOIS zasebnost WhoisGuard ( vedno brezplačno). Za OpenS
 
 ---
 
-## Import in sinhronizacija TLD-jev
+## Import in sinhronizacija TLD-jev {#tld-import-and-sync}
 
 Domene prikazujejo ceno po grosih v realnem času, ki jo preneseta povezava z omrežjem. Za to je potrebno, da se TLD-ji uvedeta.
 
@@ -70,7 +70,7 @@ Po sinhronizaciji se obiščite tab za Postavke domena in uporabite izberovalec 
 
 ---
 
-## Avtomatska obnovitev
+## Avtomatska obnovitev {#auto-renewal}
 
 Obnovitve domen so povezane s statusom članstva stranke:
 
@@ -90,7 +90,7 @@ IDe e-poštnih obrazcev za dogodke v življenjskem ciklu domena:
 
 ---
 
-## Admin: Ručna registracija domena
+## Admin: Ručna registracija domena {#admin-manual-domain-registration}
 
 Da bi domen registrirali za strankoprimel, neprehodno preko procesa plačanja (checkout):
 

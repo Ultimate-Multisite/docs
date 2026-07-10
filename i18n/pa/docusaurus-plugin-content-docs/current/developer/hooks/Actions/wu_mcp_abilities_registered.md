@@ -4,11 +4,11 @@ title: ਐਕਸ਼ਨ - wu_mcp_abilities_registered
 sidebar_label: wu_mcp_abilities_registered
 _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 ---
-# Action: wu_mcp_abilities_registered
+# Action: wu_mcp_abilities_registered {#action-wumcpabilitiesregistered}
 
 ਇਹ ਕੰਮ ਉਦੋਂ ਚੱਲਦਾ ਹੈ ਜਦੋਂ ਕਿਸੇ entity ਲਈ MCP abilities register ਹੋ ਜਾਂਦੀਆਂ ਹਨ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 141dcbc5c2b46a40bed407541a97e1f5
 | $model_name | `string` | ਮਾਡਲ ਦਾ ਨਾਮ (model name)। |
 | $this | `object` | ਮੈਨੇਜਰ ਦਾ ਇੰਸਟੈਂਸ (manager instance)। |
 
-### Since
+### Since {#since}
 
 - 2.5.0
-### Source
+### Source {#source}
 
 [`inc/apis/trait-mcp-abilities.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/apis/trait-mcp-abilities.php#L171) ਵਿੱਚ ਲਾਈਨ 171 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।

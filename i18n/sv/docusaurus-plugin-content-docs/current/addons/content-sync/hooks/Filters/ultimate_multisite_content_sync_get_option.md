@@ -4,11 +4,11 @@ title: Filter - ultimate_multisite_content_sync_get_option
 sidebar_label: ultimate_multisite_content_sync_get_option
 _i18n_hash: 4d0d1a0be1b1f6f70936f7dd4ebc7e6f
 ---
-# Filter: ultimate_multisite_content_sync_get_option
+# Filter: ultimate_multisite_content_sync_get_option {#filter-ultimatemultisitecontentsyncgetoption}
 
 Returnerar det slugifierade nätverksalternativvärdet.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Namn | Typ | Beskrivning |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Returnerar det slugifierade nätverksalternativvärdet.
 | $option_name | `string` | Namnet på alternativet. |
 | $default | `mixed` | Standardvärdet. |
 
-### Sedan
+### Sedan {#since}
 
 - 1.0.0
-### Källa
+### Källa {#source}
 
 Definieras i [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L126) på rad 126
 
 
-## Returnerar
+## Returnerar {#returns}
 Det slugifierade nätverksalternativvärdet.

@@ -3,7 +3,7 @@ title: Tema PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Customizing Admin Panel-nwaa-m-PRO Theme
+# Customizing Admin Panel-nwaa-m-PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
 O n'ụrụ ịrụ aka na atụike akụkọ ọrụ ndị ahụ, anyị ga-anọrọ ịnweta ihe dị mma na dashboard WordPress nke client. Ka ọ bụrụ na ị na-iji ihe dị mkpa na ịhụ ihe dị profọfessional na nkwupụta, PRO Theme ga-anọrọ ịkpọta gị.
 

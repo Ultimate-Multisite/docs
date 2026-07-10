@@ -1,86 +1,122 @@
 ---
-title: Paglilibot sa Admin Panel
+title: Paglilibot sa Panel ng Admin
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Pag-ikot sa Admin Panel
+# Paglilibot sa Admin Panel {#touring-the-admin-panel}
 
-Layunin ng Ultimate Multisite na maging simple at madaling maintindihan hangga't maaari, pero sa isang tool na ganito ka-powerful, makatutulong ang isang guided tour. Sabay-sabay nating tingnan ang mga admin page para mas maging pamilyar ka.
+Nilalayon ng Ultimate Multisite na maging kasing-simple at kasing-linaw hangga't maaari, ngunit sa ganito kalakas na kasangkapan, makatutulong ang may gabay na paglilibot. Talakayin natin ang mga admin page para matulungan kang maging pamilyar.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ipinapakita ng Ultimate Multisite **Dashboard** ang mga basic na ulat at analytics kabilang ang mga kita, aktibidad ng site, paglago ng membership, bilang ng mga bisita, at geographic data.
+Ipinapakita ng Ultimate Multisite **Dashboard** ang mga pangunahing ulat at analytics kabilang ang mga kita, mga aktibidad ng site, paglago ng membership, bilang ng mga bisita, at datos na heograpiko.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Narito ang buong view ng dashboard:
 
-Binibigyan ka ng **Checkout Forms** ng kakayahang gumawa ng custom na registration page. Maaari mong i-customize ang mga field, maglagay ng custom na classes at scripts, at limitahan ang access batay sa bansa o lokasyon ng bisita.
+![Buong page ng Ultimate Multisite Dashboard](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+At ang ibabang seksyon ng dashboard:
 
-## Products
+![Ibabang seksyon ng Ultimate Multisite Dashboard](/img/admin/um-dashboard-bottom.png)
 
-Ang seksyon ng **Products** ang lugar kung saan ka gagawa ng iba't ibang plan, package, at serbisyo para sa iyong network. Itakda ang mga presyo, billing frequency, at mga limit at quota sa product level.
+Narito rin ang buong view ng network dashboard:
 
-![Products list](/img/admin/products-list.png)
+![Buong page ng Network Dashboard](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## Mga Checkout Form {#checkout-forms}
 
-Ipinapakita ng **Memberships** page ang lahat ng subscription sa iyong network. Suriin at i-edit ang mga detalye ng subscription kabilang ang mga plan, product, halaga at frequency ng billing, kasaysayan ng pagbabayad, at mga timestamp.
+Nagbibigay sa iyo ang **Mga Checkout Form** ng kakayahang gumawa ng mga custom na page ng pagpaparehistro. Maaari mong i-customize ang mga field, maglagay ng mga custom na class at script, at limitahan ang access batay sa bansa o lokasyon ng bisita.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Listahan ng Mga Checkout Form](/img/admin/checkout-forms-list.png)
 
-## Payments
+## Mga Produkto {#products}
 
-Nagbibigay ang **Payments** page ng mabilis na pagtingin sa kasaysayan ng pagbabayad sa buong network mo, kasama ang detalyadong impormasyon ng transaksyon tulad ng mga partikular na product at halaga.
+Ang seksyong **Mga Produkto** ang lugar kung saan ka gumagawa ng iba't ibang plan, package, at serbisyo para sa iyong network. Tukuyin ang mga presyo, dalas ng billing, at mga limitasyon at quota sa antas ng produkto.
 
-![Payments list](/img/admin/payments-list.png)
+![Listahan ng Mga Produkto](/img/admin/products-list.png)
 
-## Customers
+## Mga Membership {#memberships}
 
-Ipinapakita ng **Customers** page ang lahat ng miyembrong nakarehistrong sa iyong network kasama ang basic na impormasyon ng user tulad ng pangalan, email address, huling pag-login, at isang "switch to" link para mag-login sa kanilang subsite.
+Ipinapakita ng page na **Mga Membership** ang lahat ng subscription sa iyong network. Suriin at i-edit ang mga detalye ng subscription kabilang ang mga plan, produkto, halaga at dalas ng billing, kasaysayan ng pagbabayad, at mga timestamp.
 
-![Customers list](/img/admin/customers-list.png)
+![Listahan ng Mga Membership](/img/admin/memberships-list.png)
 
-## Sites
+## Mga Pagbabayad {#payments}
 
-Inililista ng **Sites** page ang lahat ng subsite sa iyong network kabilang ang mga site template at site na pag-aari ng customer. Madaling pamahalaan ang mga naka-map na domain, limit at quota, plugin at theme, at site thumbnail.
+Nagbibigay ang page na **Mga Pagbabayad** ng mabilis na view ng kasaysayan ng pagbabayad sa kabuuan ng iyong network, na may detalyadong impormasyon ng transaksyon kabilang ang mga partikular na produkto at halaga.
 
-![Sites list](/img/admin/sites-list.png)
+![Listahan ng Mga Pagbabayad](/img/admin/payments-list.png)
 
-## Domains
+## Mga Customer {#customers}
 
-Nakalaan ang **Domains** page para sa mga custom domain na naka-map sa mga subsite. Bilang super admin, maaari kang manu-manong magdagdag o mag-map ng custom na domain name at tingnan ang mga DNS record at log.
+Ipinapakita ng page na **Mga Customer** ang lahat ng miyembrong nakarehistro sa iyong network kasama ang pangunahing impormasyon ng user kabilang ang pangalan, email address, huling pag-login, at isang link na "switch to" para sa pag-log in sa kanilang subsite.
 
-![Domains list](/img/admin/domains-list.png)
+![Listahan ng Mga Customer](/img/admin/customers-list.png)
 
-## Discount Codes
+## Mga Site {#sites}
 
-Nagbibigay-daan sa iyo ang **Discount Codes** na gumawa ng coupon code para mag-alok ng diskwento sa iyong mga end-user. Tukuyin ang halaga ng diskwento at i-target ang mga partikular na user o grupo.
+Inililista ng page na **Mga Site** ang lahat ng subsite sa iyong network kabilang ang mga template ng site at mga site na pag-aari ng customer. Madaling pamahalaan ang mga mapped domain, limitasyon at quota, mga plugin at theme, at mga thumbnail ng site.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Listahan ng Mga Site](/img/admin/sites-list.png)
 
-## Broadcasts
+## Mga Domain {#domains}
 
-Ang **Broadcasts** ay isang tool para mag-anunsyo o magpadala ng pribadong mensahe sa iyong mga user ng subsite. I-target ang mga partikular na grupo ng user batay sa plan o product kung saan sila naka-subscribe.
+Ang page na **Mga Domain** ay nakalaan para sa mga custom na domain na naka-map sa mga subsite. Bilang super admin, maaari kang manu-manong magdagdag o mag-map ng mga custom na pangalan ng domain at tingnan ang mga DNS record at log.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Listahan ng Mga Domain](/img/admin/domains-list.png)
 
-## Settings
+## Mga Discount Code {#discount-codes}
 
-Ang **Settings** page ang lugar kung saan mo iko-configure ang Ultimate Multisite — mga setting ng registration, payment, API at webhook, domain mapping, at iba pang integration.
+Hinahayaan ka ng **Mga Discount Code** na gumawa ng mga coupon code upang mag-alok ng mga discount sa iyong mga end-user. Tukuyin ang halaga ng discount at i-target ang mga partikular na user o grupo.
 
-![Settings page](/img/admin/settings-general.png)
+![Listahan ng Mga Discount Code](/img/admin/discount-codes-list.png)
 
-## Events
+## Mga Broadcast {#broadcasts}
 
-Nagtatago ang **Events** page ng rekord ng lahat ng event at log sa iyong network. Sinusubaybayan nito ang mga aktibidad tulad ng pagbabago ng plan, signup, at iba pang galaw — kapaki-pakinabang para sa pag-monitor ng iyong multisite.
+Ang **Mga Broadcast** ay isang kasangkapan para maglunsad ng mga anunsyo o magpadala ng mga pribadong mensahe sa iyong mga user ng subsite. I-target ang mga partikular na grupo ng user batay sa plan o produktong naka-subscribe sila.
 
-![Events list](/img/admin/events-list.png)
+![Listahan ng Mga Broadcast](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## Mga Setting {#settings}
 
-Nagbibigay-daan sa iyo ang **Webhooks** na maghatid ng data sa ibang application. Kapaki-pakinabang para sa pagpapadala ng data mula sa Ultimate Multisite patungo sa mga platform tulad ng Zapier.
+Ang page na **Mga Setting** ang lugar kung saan mo kino-configure ang Ultimate Multisite — mga setting ng pagpaparehistro, pagbabayad, API at webhooks, pag-map ng domain, at iba pang integration.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+Inililista ng mga setting ng AI connector ang kasalukuyang sinusuportahang mga OAuth provider pool: Anthropic Max, OpenAI ChatGPT/Codex, at Google AI Pro. Hinahayaan ng bawat provider card ang mga super admin na magkonekta ng mga account, i-refresh ang mga naka-save na account, mag-alis ng mga account sa pamamagitan ng email, at gamitin ang manu-manong OAuth fallback kapag hinaharang ng sandboxed environment ang browser redirect. Inalis na sa admin panel ang mga opsyon sa pag-setup ng Cursor Pro.
+
+Sinusuportahan ng mga account ng ChatGPT/Codex ang paggamit ng tool na backed ng connector kung saan pinapayagan ng operasyon ang mga tool, kaya magagamit ng mga admin workflow na umaasa sa mga operasyong suportado ng connector ang gawi ng Codex tool pagkatapos maikonekta ang OpenAI account.
+
+![Page ng Mga Setting](/img/admin/settings-general.png)
+
+Narito ang buong view ng page ng mga pangkalahatang setting:
+
+![Buong page ng Mga Pangkalahatang Setting](/img/admin/settings-general-full.png)
+
+At ang page ng mga setting ng email:
+
+![Buong page ng Mga Setting ng Email](/img/admin/settings-emails-full.png)
+
+At ang page ng mga setting ng pagbabayad:
+
+![Buong page ng Mga Setting ng Pagbabayad](/img/admin/settings-payments-full.png)
+
+At ang ibabang seksyon ng mga setting ng pagbabayad:
+
+![Ibabang seksyon ng Mga Setting ng Pagbabayad](/img/admin/settings-payments-bottom.png)
+
+At ang page ng mga setting ng site:
+
+![Buong page ng Mga Setting ng Site](/img/admin/settings-sites-full.png)
+
+## Mga Event {#events}
+
+Pinapanatili ng page na **Mga Event** ang talaan ng lahat ng event at log sa iyong network. Sinusubaybayan nito ang mga aktibidad tulad ng mga pagbabago sa plan, signup, at iba pang galaw — kapaki-pakinabang para sa pag-monitor ng iyong multisite.
+
+![Listahan ng Mga Event](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+Hinahayaan ka ng **Webhooks** na maghatid ng data sa ibang application. Kapaki-pakinabang para sa pagpapadala ng data mula sa Ultimate Multisite patungo sa mga platform tulad ng Zapier.
+
+![Listahan ng Webhooks](/img/admin/webhooks-list.png)

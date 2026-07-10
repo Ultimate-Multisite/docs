@@ -3,9 +3,9 @@ title: Správa platieb a faktúr
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Správa platieb a faktúrování
+# Správa platieb a faktúrování {#managing-payments-and-invoices}
 
-## Nastavení plateb
+## Nastavení plateb {#payment-settings}
 
 Než začnete přijímat platby budete muset nakonfigurovat nastavení související s platbami. Přejděte do **Ultimate Multisite → Settings** a klikněte na záložku **Payment**.
 
@@ -15,7 +15,7 @@ Zde je kompletní přehled stránky se nastavením plateb:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Obecné možnosti platby
+### Obecné možnosti platby {#general-payment-options}
 
 V obecných nastavení můžete nakonfigurovat:
 
@@ -24,7 +24,7 @@ V obecných nastavení můžete nakonfigurovat:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Platební brány (Payment Gateways)
+### Platební brány (Payment Gateways) {#payment-gateways}
 
 Ultimate Multisite podporuje více platebních brány. Každou můžete zapnout a nakonfigurovat z záložky Payment.
 
@@ -40,11 +40,11 @@ Každá brána má svou vlastní sekci pro konfiguraci, kde zadáte API klíče 
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandbox režim (Sandbox Mode)
+### Sandbox režim (Sandbox Mode) {#sandbox-mode}
 
 Můžete zapnout **Sandbox Mode**, abyste mohli testovat svou integraci plateb před aktivací v reálném provozu. Když je sandboxový režim aktivní, se žádné skutečné poplatky nebudou účtovány.
 
-## Zobrazení platbych
+## Zobrazení platbych {#viewing-payments}
 
 Přejděte na stránku **Payments** pod Ultimate Multisite, abyste viděli všechny transakce z celé vaší sítě.
 
@@ -54,7 +54,7 @@ Můžete filtry platby podle stavu (dokončeno, čeká, neúspěšné, vrácené
 
 Kliknite na platbu, aby ste videli jej všetky detaily vrátane položiek, pridaného členstva, informácií o zákazníkovi a údajov o platobnom brániteľstve (payment gateway).
 
-## Faktúry (Invoices)
+## Faktúry (Invoices) {#invoices}
 
 Ultimate Multisite môže faktúry automaticky generovať pre platby. Môžete si prispôsobiť šablon faktúry a formát číselovania z nastavení platob (Payment settings).
 

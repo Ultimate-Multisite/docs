@@ -1,118 +1,124 @@
 ---
-title: Ho fana ka emails le broadcast
+title: Ho romela li-imeile le liphatlalatso
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Ho Feloa le Email a Le Broadcasts (v2)
+# Ho Romela Di-imeile le Dikgaso (v2) {#sending-emails-and-broadcasts-v2}
 
-_**Fesoaso e le Aso: O lapa o ia fa fesoaso ea Ultimate Multisite v2.x.**_
+_**TLHOKOMELISO YA BOHLOKWA: Sengolwa sena se bua ka Ultimate Multisite mofuta wa 2.x.**_
 
-Ultimate Multisite e le ntlha le fa e na le tsela ea hau ho fana ua ba hau ka ho fana email ho mofuta oa motho a le fetoga kapa sekolong sa motho, le ho fana litlhahiselo ka dashboard ea admin ea hau ho fana le litsela.
+Ultimate Multisite e tla le sebopeho se tla o dumella ho buisana le bareki ba hao ka ho romela imeile ho mosebedisi ya lebisitsweng kapa sehlopha sa basebedisi, hammoho le ho romela ditsebiso ho admin dashboard ya bona ho phatlalatsa ditsebiso
 
-## Ho fana litlhahiselo tsa admin ka dashboard ea ba hau ba fetoga ka Broadcasts
+## Kenya ditsebiso tsa admin ho dashboard ya bareki ba hao ka Dikgaso {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Ka setso se fetoga sa broadcast ea Ultimate Multisite, o ka fana **litlhahiselo tsa admin** ka dashboard ea admin ea motho oa hau a lefetoga.
+Ka ho sebedisa sebopeho sa kgaso sa Ultimate Multisite, o ka kenya **ditsebiso tsa admin** ho subsite admin dashboard ya mosebedisi wa hao.
 
-O le tsela e fetang leholo ho feta ha u na le litsela, joalo ka ho fana litlhahiselo joalo ka ho fana le litsela tsa system maintenance kapa ho fana ka litsela tse ntlha tsa mokhoa kapa litšepetso tsa hau tsa motho ba fetoga. Kena ke le tsela ea kungoa litlhahiselo tsa admin ka dashboard ea hau a lefetoga.
+Sena se thusa haholo haeba o hloka ho etsa tsebiso e kang tlhokomelo ya system kapa ho fana ka dihlahiswa kapa ditshebeletso tse ntjha ho basebedisi ba hao ba teng. Ena ke tsela eo tsebiso ya admin e tla shebahala ka yona ho dashboard ya mosebedisi wa hao.
 
 <!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-Ho haosa litlhahiselo tsa admin, go feta ho laola dashboard ea admin ea hau e le fetoga:
+Ho qala tsebiso ya admin, eya ho network admin dashboard ya hao mme tlasa menu ya **Ultimate Multisite**, o tla fumana kgetho ya **Broadcasts**.
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![Leqephe la lenane la Dikgaso ho admin ya Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Ho lapa ena, u faka boikotso (button) ea **Add Broadcast** ka matla a lehle.
+O ka boela wa hlophisa dikgaso tse seng di le teng:
 
-O tla fana le modal window ea ho faka broadcast e leng le hau o ka utloahanya eng o batlang ho fana.
+![Sebopeho sa ho hlophisa kgaso](/img/admin/broadcast-edit.png)
 
-Haosa tsela, u utloha **Message** lapa ha u faka boikotso (button) ea **Next Step**.
+Ho tswa leqepheng lena, tobetsa konopo ya **Add Broadcast** hodimo.
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+Sena se tla hlahisa fensetere ya modal ya Add broadcast moo o ka kgethang mofuta wa kgaso oo o batlang ho o romela.
 
-Modal e leng le fetoga o tla u be ka ho tloha motho oa hau a lefetoga kapa mokhoa oa hau o batlang. A re, u ka utloha motho le fetoga le fetoga tse fapaneng.
+Tswela pele mme o kgethe **Message** ebe o tobetsa konopo ya **Next Step**.
 
-Ho fana ho hlalosa sebope ka morao, o tla ba lehle ho laola litaba tsa hau (user account) kapa sebope (product) ka ho laola litaba tse di fetang mo lebope.
+![Modal ya ho kenya kgaso e nang le kgetho ya Message e kgethilweng](/img/admin/broadcast-add-message.png)
 
-Mo morao wa **Message type**, o ka utloa lona lona lona laaka la tsela e leng le tsela ya ntlha ya mosebetsi oa hau. Sena se tla fana ka bohlokoa jalo le bohlokoa ba meseberetso oa hau.
+Fensetere e latelang e tla o botsa **Moreki ya lebisitsweng** kapa **Sehlahiswa se lebisitsweng**. Hlokomela hore o ka kgetha mosebedisi ya fetang a le mong kapa sehlahiswa se fetang se le seng.
 
-Ka feta, o ka leka **Next Step**.
+Ho batla akhaonto ya mosebedisi kapa sehlahiswa, o lokela ho qala ho thaepa lentswe la sehlooho kahare ho field.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+Tlasa field ya **Message type**, o ka kgetha mmala wa tsebiso. Sena se tla totobatsa potlako ya molaetsa wa hao.
 
-Mofuta o o tla fana ho sa sebope ke leka ho sa sebope oa hau ka ho laola leka (subject) le bohlokoa/meseberetso (content/message) o batlang ho hlalosa ho ba lehle leba.
+Jwale o ka tobetsa **Next Step**.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Di-field tsa bareki ba lebisitsweng, sehlahiswa se lebisitsweng le mofuta wa molaetsa bakeng sa kgaso ya Message](/img/admin/broadcast-message-targets.png)
 
-Ha o fetolela meseberetso oa hau, o ka leka **Send** button.
+Fensetere e latelang ke moo o ka qalang ho ngola molaetsa wa hao ka ho kenya sehlooho le dikahare/molaetsa oo o batlang ho o phatlalatsa ho basebedisi.
 
-Koa se tla ba lehle. Lihlaloso la admin le tla bona ka tsela e leng leba haholo la hau (user’s dashboard).
+![Sehlooho sa molaetsa wa kgaso le mohlophisi wa dikahare mohato wa ho qapa](/img/admin/broadcast-edit.png)
 
-## Ho hlalosa emails ho boikotso ba hau
+Kamora ho bopa molaetsa wa hao, o ka tobetsa konopo ya **Send**.
 
-Ka go sebelisa litaba tsa Ultimate Multisite, o ka hlalosa email ho ba lehle leba. O na le tsela ya ho hlalosa email fa o batla ho hlalosa ho ba lehle leba le leka leka (target customer) kapa ho laola sebope se se fetang ka lona leba.
+Mme ke phetho. Tsebiso ya admin e lokela ho hlaha hanghang ho dashboard ya mosebedisi wa hao.
 
-Ho haholo ho hlalosa email, fana ka go laola dashboard ea admin oa hau oa network le morao wa Ultimate Multisite, o tla bona opshoni ea Broadcast.
+## Romela di-imeile ho bareki ba hao {#send-emails-to-your-customers}
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+Ka ho sebedisa sebopeho sa kgaso sa Ultimate Multisite, o ka romela imeile ho basebedisi ba hao. O na le kgetho ya ho romela imeile feela ho basebedisi ba itseng kapa ho lebisa sehlopha se itseng sa basebedisi ho latela sehlahiswa kapa plan eo ba ingodisitseng tlasa yona.
 
-Ho lona leba, leka **Add broadcast** button eo ka tsela e leng ho hlalosa email. Sena se tla fana le modal window ea Add broadcast sehlopha sa hau se tla u ka utloa hore o batla ho hlalosa mofuta o o batlang. Ho laola **Email** leka feta leka **Next Step**.
+Ho qala kgaso ya imeile, eya ho network admin dashboard ya hao mme tlasa menu ya Ultimate Multisite, o tla fumana kgetho ya Broadcast.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Leqephe la lenane la Dikgaso le sebediswang e le ntlha ya ho qala kgaso ya imeile](/img/admin/broadcasts-list.png)
 
-Mofuta o o tla fetang o tla u be le ka laola lona lona leka (Target customer) kapa sebope se se fetang (Target product). Le taba e leng, o ka ho laola leba le leka tse fapaneng le ba lehle.
+Ho tswa leqepheng lena, tobetsa konopo ya **Add broadcast** hodimo.
 
-Ho ba le fa'aopoaga e te fa'aalo (user account) pe fa'aalo (product), o ka fa'aalo le fa'aalo (keyword) i le fesoasoani.
+Sena se tla hlahisa fensetere ya modal ya Add broadcast moo o ka kgethang mofuta wa kgaso oo o batlang ho o romela. Tswela pele mme o kgethe **Email** ebe o tobetsa konopo ya **Next Step**.
 
-O le fa'aalo o le fa'aalo (target audience) o le a fa'aalo, o le mafai ona fa'amautinoa **Next Step**.
+![Modal ya ho kenya kgaso e nang le kgetho ya Email e kgethilweng](/img/admin/broadcast-add-email.png)
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+Fensetere e latelang e tla o botsa **Moreki ya lebisitsweng** kapa **Sehlahiswa se lebisitsweng** t. Hlokomela hore o ka kgetha mosebedisi ya fetang a le mong kapa sehlahiswa se fetang se le seng.
 
-O le fesoasoani o le fa'aalo (window) o le a fa'aalo, o le mafai ona fa'aopoopo i le fa'amautinoa (subject) ma le isi fa'amautinoa/fa'amatalaga (content/message) o le a fa'aalo e te fa'aalo i le atunu'u.
+Ho batla akhaonto ya mosebedisi kapa sehlahiswa, o lokela ho qala ho thaepa lentswe la sehlooho kahare ho field.
+
+Hang ha bamamedi ba hao ba lebisitsweng ba kgethilwe, o ka tobetsa **Next Step**.
+
+![Kgetho ya bareki ba lebisitsweng le sehlahiswa se lebisitsweng bakeng sa kgaso ya Email](/img/admin/broadcast-email-targets.png)
+
+Fensetere e latelang ke moo o ka qalang ho ngola imeile ya hao ka ho kenya sehlooho le dikahare/molaetsa oo o batlang ho o romela ho basebedisi.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-O le fa'aopoopo o le isi fa'amautinoa (Send button).
+Kamora ho bopa molaetsa wa hao, o ka tobetsa konopo ya **Send**.
 
-O lea la'i le fa'aopoopo e te fa'aalo email i a latou atunu'u fa'aaogā (end-users) fa'aaoga le fa'aopoopo (broadcast feature).
+Mme ke kamoo ho leng bonolo kateng ho romela imeile ho basebedisi ba hao ba ho qetela ka ho sebedisa sebopeho sa kgaso.
 
-## System emails
+## Di-imeile tsa system {#system-emails}
 
-System emails i Ultimate Multisite o lo'o fa'amautinoa **fa'amautinoa fa'apitoa** (automatic notifications) e te fa'aalo o le sistema a fa'aalo fa'atatau i a fa'amautinoa fa'apitoa e tatau ona fa'aalo, o le fa'aopoopo, o le fa'aalo o le domain, atafita, mase. O lenei emailo e mafai ona fa'amatalaga pe fa'amautinoa i le a fa'aalo Ultimate Multisite settings. E tatau ona o lo'o fa'aalo le fa'amautinoa e te fa'aalo i se fa'aalo Ultimate Multisite e fa'amautinoa (reset) ma fa'aalo i se fa'aalo e fa'aalo i se fa'aalo e fa'aalo.
+Di-imeile tsa system ho Ultimate Multisite ke **ditsebiso tsa othomathiki** tse romelwang ke system kamora diketso tse itseng tse kang ngodiso, tefo, domain mapping, jj. Di-imeile tsena di ka hlophiswa kapa tsa fetolwa ho tswa ho disetting tsa Ultimate Multisite. E boetse e tla le sebopeho se tla o dumella ho seta botjha le ho kenya disetting tse teng ho tswa ho keno e nngwe ya Ultimate Multisite.
 
-### Resetting & Importing
+### Ho seta botjha & Ho kenya {#resetting--importing}
 
-O le a fa'aalo o le Ultimate Multisite e fa'aalo, o le add-ons, o lo'o mafai ma o lo'o fa'aalo fa'amautinoa email fa'apitoa i se taimi.
+Mefuta e metjha ya Ultimate Multisite, hammoho le add-ons, e ka ngodisa di-imeile tse ntjha nako le nako mme e tla etsa jwalo.
 
-E tatau ona tatou fa'aalo le template email fa'apitoa e fa'aalo i a fa'aalo o le sistema o lo'o fa'aalo, nisi o le fa'aalo e tatau ona fa'aalo i le fa'amautinoa fa'apitoa o se fa'aalo.
+Ho thibela dikgohlano le mathata a mang, **re ke ke ra kenya dithempleite tse ntjha tsa imeile jwalo ka System Emails ho install ya hao ka bo eona** , ntle le haeba di le bohlokwa bakeng sa tshebetso e nepahetseng ya sebopeho se itseng.
 
-O le a fa'aalo o super admins ma agents o lo'o mafai ona fa'aalo lenei emailo e te fa'aalo i le importer tool. O le fa'aopoopo o le isi fa'amautinoa (process) o lo'o fa'aalo o se system email fa'apitoa, o lo'o fa'aalo le fa'amautinoa ma le fa'amatalaga o le template email fa'apitoa e tatau ona fa'aalo, o lo'o mafai ona fa'aalo i se fa'aalo e te super admin e fa'aalo lava se mea e te fa'aalo pe fa'aalo.
+Leha ho le jwalo, super admins le agents ba ka kenya di-imeile tsena tse sa tswa ngodiswa ka sesebediswa sa ho kenya. Tshebetso eo e tla bopa imeile e ntjha ya system e nang le dikahare le tlhophiso ya thempleite e ntjha ya imeile, e dumellang super admin ho etsa diphetoho dife kapa dife tseo a di batlang kapa ho di boloka jwalo ka ha di le teng.
 
-#### How to import system emails
+#### Mokgwa wa ho kenya di-imeile tsa system {#how-to-import-system-emails}
 
-Go ho fela sepepa ya Ultimate Multisite Settings page, le ka **Emails** tab.
+Eya leqepheng la hao la Ultimate Multisite Settings mme o ye ho tab ya **Emails**.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![Tab ya Emails ho disetting tsa Ultimate Multisite e bontshang karolo ya System Emails](/img/config/settings-emails-tab.png)
 
-Lekala, le sidebar, tsamafela le button ya **Customize System Emails**.
+Jwale, ho sidebar, tobetsa konopo ya **Customize System Emails**.
 
 <!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-Le page ya System Emails, o tla bona button ya **Reset & Import** e teng teng sa mofuta. Le u tsamafela le kae, go tla bua modal window ya import le reset.
+Leqepheng la System Emails, o tla bona konopo ya ketso ya **Reset & Import** hodimo. Ho tobetsa konopo eo ho lokela ho bula fensetere ya modal ya ho kenya le ho seta botjha.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Konopo ya ketso ya Reset kapa Import leqepheng la admin la System Emails](/img/admin/system-emails-reset-import.png)
 
-Lekala, u ka fana ka tsamaya le opshoni ya Import Emails ho bona eng a fetileng a ka import.
+Jwale, o ka toggle dikgetho tsa Import Emails ho bona hore na ke di-imeile dife tsa system tse fumanehang ho kenngwa.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Setshwantsho ha se fumanehe: modal ya Seta Botjha le ho Kenya e nang le dikgetho tsa Kenya Di-imeile tse atolositsoeng -->
 
-#### Go reset System Emails
+#### Ho Seta Botjha Di-imeile tsa Sistimi {#reseting-system-emails}
 
-Mme nako e leng, u tla bona hore liphetso tsa email le liphetso tsa template e ne e fetileng e e ka fana ho ba le u, le u batla ho e resetang e e fetileng e eka e le **default state** ya hae.
+Ka dinako tse ding, o tla hlokomela hore diphetoho tseo o di entseng sebopehong se itseng sa imeile ha di sa o sebeletsa mme o ka rata ho se kgutlisetsa **boemong ba sona ba kamehla**.
 
-Le mme nako e leng, o na le opshoni dua: u ka fana ho faka email system le ho import fa (u feta le diketso tse di tla fana) - seo se tla faka diketso tsa ho fana ho tsamaya le diketso tse ding, le se le fetileng se le tsela e ntse e le e ntle.
+Maemong a jwalo, o na le dikgetho tse pedi: o ka hlakola feela imeile ya sistimi mme wa e kenya hape (o sebedisa ditaelo tse ka hodimo) - e leng se tla hlakola ditekanyo tsa thomello le dintho tse ding, se etsang hore mokgwa ona o se ratehe haholo.
 
-Kapa u ka u sebelisa **Reset & Import tool** ho reset email template e fetileng.
+Kapa o ka sebedisa **sesebediswa sa Seta Botjha le ho Kenya** ho seta botjha sebopeho seo sa imeile.
 
-Ho reset email template, u ka fana ho fana le tsamaea le diketso tse di tla fana ho fihla Reset & Import tool, le seng kae, u ka fana le toggling opshoni ya **Reset** le ho utloa emails o batlang ho e resetang e eka e le content e fetileng.
+Ho seta botjha sebopeho sa imeile, o ka latela mehato e ka hodimo ho fihlela o fihla sesebedisweng sa Seta Botjha le ho Kenya, mme ebe o fetola khetho ya **Seta Botjha** mme o kgethe di-imeile tseo o batlang ho di seta botjha hore di kgutlele dikahare tsa tsona tsa kamehla.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Setshwantsho ha se fumanehe: modal ya Seta Botjha le ho Kenya e nang le dikgetho tsa Seta Botjha Di-imeile tse atolositsoeng -->

@@ -3,7 +3,7 @@ title: Referenční dokumentace schopností
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# Reference schopností
+# Reference schopností {#abilities-reference}
 
 Schopnosti jsou atomární akce, které Gratis AI Agent může provést na vaší instalaci WordPressu. Každá schopnost je zaregistrovaná PHP třída, která vystavuje JSON schématický popis (schema) — agent tento schéma čte během běhu programu, abych pochopil, jaké parametry jsou vyžadovány a co schopnost vrátí.
 
@@ -11,11 +11,11 @@ Tato stránka dokumentuje všechny schopnosti, které se dodávají s Gratis AI 
 
 ---
 
-## Custom Post Types (Vlastní typy příspěvků)
+## Custom Post Types (Vlastní typy příspěvků) {#custom-post-types}
 
 Tyto schopnosti spravují vlastní typy příspěvků (CPT), které jsou zaregistrovány pomocí agenta. Registrace se ukládá do tabulky nastavení WordPressu, takže přežijí deaktivaci a opětovné aktivování pluginu.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 Registruje nový vlastní typ příspěvku.
 
@@ -50,7 +50,7 @@ Registruje nový vlastní typ příspěvku.
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 Vrací všechny vlastní typy příspěvků zaregistrované agentem.
 
@@ -73,7 +73,7 @@ Vrací všechny vlastní typy příspěvků zaregistrované agentem.
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 Odregistruje vlastní typ příspěvku, který byl previously zaregistrován agentem. Existující příspěvky tohoto typu zůstávají v databázi, ale již nejsou přístupné přes tento typ příspěvků.
 
@@ -87,11 +87,11 @@ Odregistruje vlastní typ příspěvku, který byl previously zaregistrován age
 
 ---
 
-## Custom Taxonomies (Vlastní taxonomie)
+## Custom Taxonomies (Vlastní taxonomie) {#custom-taxonomies}
 
 Tyto schopnosti spravují vlastní taxonomie. Jako CPT jsou i registrace taxonomie trvalé.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 Registruje novou vlastní taxonomie.
 
@@ -99,7 +99,7 @@ Registruje novou vlastní taxonomie.
 
 Design system abilities modify the vizuální prezentaci webu WordPress — od vlastního CSS po vzory bloků a logo stránky.
 
-### `inject_custom_css`
+### `inject_custom_css` {#listtaxonomies}
 
 Přidává CSS do `<head>` stránky pomocí funkce `wp_add_inline_style`. CSS je uložen v optionu `gratis_ai_agent_custom_css` a při resetování schopnosti se čistě vymaže.
 
@@ -125,7 +125,7 @@ Přidává CSS do `<head>` stránky pomocí funkce `wp_add_inline_style`. CSS je
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#deletetaxonomy}
 
 Registruje znovu použitý vzor bloku do knihovny vzorů WordPress.
 
@@ -144,7 +144,7 @@ Registruje znovu použitý vzor bloku do knihovny vzorů WordPress.
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#design-system}
 
 Uvádí všechny vzory bloků zaregistrované agentem.
 
@@ -166,7 +166,7 @@ Uvádí všechny vzory bloků zaregistrované agentem.
 
 ---
 
-### `set_site_logo`
+### `set_site_logo` {#injectcustomcss}
 
 Nastavuje logo webu WordPress na daný ID přílohy nebo vzdálenou URL adresu obrázku. Pokud je poskytnuta URL, obrázek je stoupen a importován do knihovny médií (Media Library).
 
@@ -183,7 +183,7 @@ Musíte poskytnout buď `attachment_id`, nebo `url`.
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#addblockpattern}
 
 Aplikuje pojmenovaný předdefinovaný vzhled (barva/typografie) do souboru `theme.json` (nebo `global-styles`) aktuální temy. Předdefinované styly jsou balíčky vytvořené týmem Gratis AI Agentu.
 
@@ -208,11 +208,11 @@ Aplikuje pojmenovaný předdefinovaný vzhled (barva/typografie) do souboru `the
 
 ---
 
-## Globální styly (Global Styles)
+## Globální styly (Global Styles) {#listblockpatterns}
 
 Funkce Globální styly čtou a zapisují hodnoty v souboru `theme.json` pomocí API WordPress Global Styles, což ovlivňuje všechny bloky a šablony celého webu.
 
-### `get_global_styles`
+### `get_global_styles` {#setsitelogo}
 
 Vrací aktuální konfiguraci globálních stylů.
 
@@ -226,9 +226,9 @@ Vrací aktuální konfiguraci globálních stylů.
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#applythemejsonpreset}
 
-### `reset_global_styles`
+### `reset_global_styles` {#global-styles}
 
 Resetuje všechny změny globálních stylů aplikovaných agentem, obnovuje výchozí styly tématu.
 
@@ -238,11 +238,11 @@ Resetuje všechny změny globálních stylů aplikovaných agentem, obnovuje vý
 
 ---
 
-## Navigační menu
+## Navigační menu {#getglobalstyles}
 
 Funkce pro navigace menu vytvářejí a spravují navigační menu WordPress a jejich položky.
 
-### `create_menu`
+### `create_menu` {#setglobalstyles}
 
 Vytvoří nové navigační menu WordPress.
 
@@ -257,7 +257,7 @@ Vytvoří nové navigační menu WordPress.
 
 ---
 
-### `update_menu`
+### `update_menu` {#resetglobalstyles}
 
 Změní název menu nebo ho přenavrhne na jinou lokaci tématu.
 
@@ -273,7 +273,7 @@ Změní název menu nebo ho přenavrhne na jinou lokaci tématu.
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#navigation-menus}
 
 Přidá položku do existující navigační nabídky.
 
@@ -293,7 +293,7 @@ Přidá položku do existující navigační nabídky.
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#createmenu}
 
 Odstraní položku z navigačního menu.
 
@@ -307,7 +307,7 @@ Odstraní položku z navigačního menu.
 
 ---
 
-### `list_menus`
+### `list_menus` {#updatemenu}
 
 Seznam všech navigačních menu WordPress včetně jejich přiřazených lokalit v tématu.
 
@@ -330,11 +330,11 @@ Seznam všech navigačních menu WordPress včetně jejich přiřazených lokali
 
 ---
 
-## Správa možností (Options Management)
+## Správa možností (Options Management) {#addmenuitem}
 
 Funkce pro možnosti čtou a zapisují nastavení WordPress pomocí `get_option` / `update_option`. Vytvořena je vnitřní bezpečnostní blokem, který zabraňuje náhodné úpravě kritických nastavení.
 
-### `get_option`
+### `get_option` {#removemenuitem}
 
 Čte se WordPress option (volbu).
 
@@ -350,7 +350,7 @@ Vrací chybu, pokud je `option_name` v seznamu bezpečnostních bloků.
 
 ---
 
-### `set_option`
+### `set_option` {#listmenus}
 
 Zapisuje WordPress option (volbu).
 
@@ -368,7 +368,7 @@ Vrací chybu, pokud je `option_name` v seznamu bezpečnostních bloků.
 
 ---
 
-### `delete_option`
+### `delete_option` {#options-management}
 
 Smazá WordPress option (volbu).
 
@@ -384,7 +384,7 @@ Vrací chybu, pokud je `option_name` v seznamu bezpečnostních bloků.
 
 ---
 
-### `list_options`
+### `list_options` {#getoption}
 
 Seznamuje WordPress option (volby) odpovídající určitému vzoru.
 
@@ -408,11 +408,11 @@ Seznamuje WordPress option (volby) odpovídající určitému vzoru.
 
 ---
 
-## Content Management (Správa obsahu)
+## Content Management (Správa obsahu) {#setoption}
 
 Možnosti správy obsahu vytvářejí a upravují WordPress příspěvky a stránky. Vrací se ID příspěvků, abyste v následných kroku plánu s více možnostmi mohli odkazovat na vytvořený obsah.
 
-### `create_post`
+### `create_post` {#deleteoption}
 
 Vytvoří nový WordPress příspěvek, stránku nebo záznam typu vlastního obsahu (custom post type).
 
@@ -433,7 +433,7 @@ Vytvoří nový WordPress příspěvek, stránku nebo záznam typu vlastního ob
 
 **Příklad**
 
-### `update_post`
+### `update_post` {#listoptions}
 
 Aktualizuje existující WordPress příspěvek nebo stránku.
 
@@ -463,7 +463,7 @@ Aktualizuje existující WordPress příspěvek nebo stránku.
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#content-management}
 
 Vytvoří více příspěvků v rámci jednoho volání funkce, což zrychluje proces při stavbě webu nebo při náročném importu velkého množství obsahu. Příspěvky se vytvářejí postupně; pokud selže jeden, zpracování pokračuje a chyba bude uvedena v výsledném seznamu.
 
@@ -515,7 +515,7 @@ Vytvoří více příspěvků v rámci jednoho volání funkce, což zrychluje p
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#createpost}
 
 Připojuje hlavní obrázek (náhled příspěvku) k existujícímu příspěvku nebo stránce. Přijímá ID existující položky v Media Library nebo URL vzdáleného obrázku; pokud je poskytnuta URL, obrázek bude automaticky stoupen a importován.
 
@@ -534,7 +534,7 @@ Musíte poskytnout buď `attachment_id`, nebo `url`.
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#updatepost}
 
 Tento prvek vytvoří kontaktní formulář pomocí aktivního pluginu pro formuláře (Contact Form 7, WPForms, Fluent Forms nebo Gravity Forms, v závislosti na tom, který je nainstalován). Vrací krátký kód, který můžete vložit do jakéhokoli příspěvku nebo stránky.
 
@@ -587,13 +587,13 @@ Tento prvek vytvoří kontaktní formulář pomocí aktivního pluginu pro formu
 
 ---
 
-## Vizualní přehled (Visual Review)
+## Vizualní přehled (Visual Review) {#batchcreateposts}
 
 Funkce Vizualního přehledu umožňuje agentovi zachytit snímky obrazovky živých stránek a analyzovat je. To umožňuje autonomní revizi návrhů, srovnání před/po a kontrolu vizuální regrese bez nutnosti externí rozšíření pro prohlížeče.
 
-### `capture_screenshot`
+### `capture_screenshot` {#setfeaturedimage}
 
-### `compare_screenshots`
+### `compare_screenshots` {#createcontactform}
 
 Tato funkce vezme dvě snímky obrazovky a vrátí skóre vizuálního rozdílu plus obrázek, který zvýrazňuje změněné oblasti. Je užitečná pro potvrzení, že změna návrhu vedla k očekávanému výsledku nebo pro detekci nechtěných regresí.
 
@@ -623,7 +623,7 @@ Tato funkce vezme dvě snímky obrazovky a vrátí skóre vizuálního rozdílu 
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#visual-review}
 
 Tato funkce zachytí snímek obrazovky stránky a odesme ho jazykovému modelu pro vizuální analýzu. Vrací strukturovanou hodnocení zahrnující rozvržení, typografii, používání barev a aspekty přístupnosti (accessibility).
 
@@ -637,11 +637,11 @@ Tato funkce zachytí snímek obrazovky stránky a odesme ho jazykovému modelu p
 
 **Vrací hodnoty**
 
-## Instalovatelné schopnosti
+## Instalovatelné schopnosti {#capturescreenshot}
 
 Registrování instalovatelných schopností vám umožňuje rozšířit agent o další balíčky schopností, které jsou distribuovány jako WordPress pluginy. Każdy balíček se registruje jednu nebo více schopností pomocí standardního ability API.
 
-### `list_available_abilities`
+### `list_available_abilities` {#comparescreenshots}
 
 Vrací katalog dostupných balíčků schopností k instalaci z registru.
 
@@ -670,7 +670,7 @@ Vrací katalog dostupných balíčků schopností k instalaci z registru.
 
 ---
 
-### `install_ability`
+### `install_ability` {#reviewpagedesign}
 
 Stahuje a aktivuje balíček schopností z registru.
 
@@ -684,7 +684,7 @@ Stahuje a aktivuje balíček schopností z registru.
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#installable-abilities}
 
 Dotazuje na registru schopností a najde nejlepší plugin pro popsaný případ použití a volitelně ho nainstaluje.
 

@@ -3,13 +3,13 @@ title: Tfawroch gweithredol busnes wefan niche
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Cynlltu Website Niche Bus gyda Ultimate Multisite
+# Cynlltu Website Niche Bus gyda Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Pob llawer o bobl sy'n ceisio bawb y gwefan ar gyfer cyfathogh yn cyd-deall ar gael y pris yn erbyn Wix, Squarespace, a ffurfau o fyndol. Mae nhw yn colli. Y gallu sydd yn gwneud ei chwarae mae'n gweld ddefnyddwr penodol, llwybriad wedi'i adeiladu ar gyfer y ddefnyddwyr hyn, ac yn cyfathogh am y gwerth sy'n rhoi.
 
 Mae’r cyflwyniad hwn yn teuluwch eich sut i wneud hyn yn llwyr gan ddefnyddio Ultimate Multisite.
 
-## Beth Refynnu Eich
+## Beth Refynnu Eich {#what-you-will-build}
 
 Trwy gydol y cyflwyniad hwn, byddwch yn adeiladu rheol gweithredol wir, mae'n cael ei enw **FitSite** -- ffurf wefan a ddarlunwyd yn benodol ar gyfer styddiadau fith, trainwyr personol, a benodau gym.
 
@@ -23,7 +23,7 @@ Yn ddiwedd y cyflwyniad, bydd FitSite yn ffurf plattform niche llawn gyda:
 
 Byddwch yn mynd â'r cyfnod ymlaen, a wrth y diwedd byddwch yn cael both plattform gweithredol a gwybodaeth i darlunio'r proses ar gyfer unrhyw niche sy'n eich dewis.
 
-## Pam Styddiadau Fith?
+## Pam Styddiadau Fith? {#why-fitness-studios}
 
 Rydyn ni'n angen enwllun gwirioneddol y gallai bobl ddefnyddio. Mae styddiadau fith yn gweithredu oherwydd:
 
@@ -34,7 +34,7 @@ Rydyn ni'n angen enwllun gwirioneddol y gallai bobl ddefnyddio. Mae styddiadau f
 
 Mae pob hyn y gallwch dysgu yn adeiladu FitSite yn cyflwyno'r busnes niche sy'n eich dewis: siopau, aelodau gwaith, firmau cyfreithas, eglwysi, gweithwyr cyfathrebu, neu unrhyw feth arall.
 
-## Estrwyll Cyflwyniad
+## Estrwyll Cyflwyniad {#course-structure}
 
 Mae pob cyflwyniad yn cyflwyno un cyd-deall, yn esbonio pam mae'n bwysig, ac yn mynd â'r ddarlunio i ddefnyddio'r hyn yn y rheol FitSite. Mae pob cyflwyniad yn adeiladu ar gyfer y cyflwyniad blaenorol.
 
@@ -55,7 +55,7 @@ Mae pob cyflwyniad yn cyflwyno un cyd-deall, yn esbonio pam mae'n bwysig, ac yn 
 | [13. Gwella At] (lesson-13-growth) | Gwella o'r cyntaf cyd-fyndwyr i busnes gwirioneddol | Strategi gwella a automatigau FitSite |
 | [14. Beth Mae Ar Gwaith?] (lesson-14-whats-next) | Gyflwyno at pamodol yn agored ac cyfleau newydd | Dyfeithiau eich busnes y tu mewn i FitSite |
 
-## Prifysgolion
+## Prifysgolion {#prerequisites}
 
 - Rheoli WordPress Multisite (neu dymunio ei rheoli)
 - Licens Ultimate Multisite sy'n gweithio
@@ -63,6 +63,6 @@ Mae pob cyflwyniad yn cyflwyno un cyd-deall, yn esbonio pam mae'n bwysig, ac yn 
 
 Nid oes angen codi. Os ydych chi nid wedi defnyddio Ultimate Multisite cyn hynny, mae hyn yn dda -- Mae Lesiwn 3 yn dechrau o llwybr newydd.
 
-## Barod?
+## Barod? {#ready}
 
 Dechrau gyda [Lesiwn 1: Pamodol pamodol] (lesson-1-why-niche).

@@ -3,13 +3,13 @@ title: Maxsus rivojlanish yordami
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Codeable'dan O‘zimiz uchun Maxsus Ishlash Yordamini Qanday Olish Mumkin?
+# Codeable'dan O‘zimiz uchun Maxsus Ishlash Yordamini Qanday Olish Mumkin? {#how-to-get-custom-development-help-from-codeable}
 
 Ba'zan, tarmoq oqimlarni aynan istagan holda qilish uchun bizga juda yaxshi moslashtirish kerak bo'ladi. Agar siz shunday narsani qidirsangiz, Ultimate Multisite bo‘yicha tajribali dasturchilarni topishingiz mumkin bo‘lgan [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) platformasini tavsiya qilamiz.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) — mijozlarni malakali WordPress freelance dasturchilari bilan bog‘lovchi platforma bo‘lib, ular har qanday o‘lchamdagi loyihalarda ishlash imkoniyatiga ega. Ular sizni o‘ylagan vazifa uchun maxsus malaka egallangan ekspertlar bilan moslashtirishni ta’minlash uchun diqqatli ariza jarayoniga ega.
 
-### Codeable'da loyiha qanday yaratiladi?
+### Codeable'da loyiha qanday yaratiladi? {#how-to-create-a-project-in-codeable}
 
 Avvalo [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) saytiga o'ting va **Start a Project** tugmasini bosing.
 

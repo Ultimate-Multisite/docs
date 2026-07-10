@@ -1,120 +1,120 @@
 ---
-title: Skattagerð
+title: Meðhöndlun skatta
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Skattahandling
+# Meðhöndlun skatta {#tax-handling}
 
-Ultimate Multisite hefur skattahandlingsmodul í kjarnstjórnunarþróunni okkar, svo þegar þér þarf að safna sjálfskatt á planum, pakka og þjónustum þínum, geturðu það auðveldlega án þess að þurfa að installa nokkrar add-ons.
+Ultimate Multisite er með einingu fyrir innheimtu skatta innbyggða í kjarnaplugin okkar, þannig að ef þú þarft að innheimta söluskatta af áætlunum þínum, pökkum og þjónustu geturðu auðveldlega gert það án þess að þurfa að setja upp nein viðbót.
 
-Fyrir fyrirtæki sem eru staðsett í Evrópu býðum við **add-on** sem bætir verkfæri og eiginleikum til betri **stjórnun VAT** (mervaskatt).
+Fyrir fyrirtæki staðsett í Evrópu bjóðum við upp á **viðbót** sem bætir við verkfærum og eiginleikum til að **styðja betur við VAT** samræmi.
 
-Ultimate Multisite skilar ekki skattum fyrir þig til regjeringar; við hjálpum bara þér að safna viðeigandi skattir á sama tíma sem kaupinu. **Þú þurfa enn að skila skattir sjálfur.**
+Ultimate Multisite skilar ekki inn eða greiðir skatta fyrir þína hönd til stjórnvalda; við hjálpum þér einfaldlega að innheimta viðeigandi skatta á þeim tíma sem færslan fer fram. **Þú þarft samt að greiða skattana sjálf/ur.**
 
-## Skilning skattasafnans
+## Virkja skattheimtu {#enabling-tax-collection}
 
-Skattasafn er ekki aktivert af raunverulegum settum. Til að aktíva hana þarf þig að ferðast yfir í **Ultimate Multisite > Settings > Taxes** og slá á innstillinguna Enable Taxes (Aktíva skattir).
+Skattheimta er ekki virkjuð sjálfgefið. Til að virkja hana þarftu að fara í **Ultimate Multisite > Settings > Taxes** og kveikja á stillingunni Enable Taxes.
 
-![Enable Taxes toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![Kveikjurofi fyrir Enable Taxes efst á stillingasíðu skatta](/img/config/settings-taxes-enable.png)
 
-Hér er fullvitsmiðli yfir skattinnstillingar:
+Hér er heildaryfirlit yfir stillingasíðu skatta:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![Heil stillingasíða skatta](/img/config/settings-taxes-full.png)
 
-Þú getur aðeins skoðað skattinnstillingar fyrir einstaka vörur:
+Þú getur einnig skoðað skattastillingar fyrir einstakar vörur:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![Skattastillingar fyrir vörur](/img/config/settings-taxes.png)
 
-### Skattarútvallast vs. Skattarútvallast
+### Skattur utan verðs vs. skattur innifalinn {#tax-excluded-vs-tax-included}
 
-Eftir raunverulegt settum eru allir verðir þín á vörum skattarútvallast, sem þýðir að skattir **eina ekki í** vörðarverði. Ef við áttum fyrir því að viðskiptavinur ætti að halda skattum á því kaupinu, munum við bæta skattum **á yfir** samantektarverði.
+Sjálfgefið eru öll vöruverð þín án skatts, sem þýðir að skattar **eru ekki innifaldir** í verði vörunnar. Ef við ákveðum að viðskiptavinur eigi að greiða skatta af tilteknum kaupum bætum við sköttunum **ofan á** millisamtöluna.
 
-Ef þú vilt hafa skattir í vörðarverði þínum, geturðu það með því að aktíva innstillinguna Inclusive Tax (Inklusið skatt).
+Ef þú vilt frekar hafa skatta innifalda í verði vörunnar geturðu gert það með því að virkja stillinguna **Inclusive Tax**.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![Röð með kveikjurofa fyrir Inclusive Tax fyrir neðan Enable Taxes stillinguna](/img/config/settings-taxes-inclusive.png)
 
-Gleymðu ekki að **hugsa** endringunum sem þú hefur gerð.
+Ekki gleyma að **vista** breytingarnar sem þú hefur gert.
 
 ###
 
-## Skráning skattarútvallast
+## Búa til skatthlutföll {#creating-tax-rates}
 
-Eftir að þú aktívaðir Tax Collection, þurfaðu að skapa skattarútvallast fyrir sérstaka staði með notkun skattarútvallastjórnunar okkar.
+Eftir að þú virkjar skattheimtu þarftu að búa til skatthlutföll fyrir tilteknar staðsetningar með ritlinum okkar fyrir skatthlutföll.
 
-Þú getur að hleðja editorinn með því að klikka á knappa **Manage Tax Rates** (Styring skattarratna) í sidfari Tax settings (Skattarinnstillingar) á hleðbergum.
+Þú getur opnað ritilinn með því að smella á hnappinn **Manage Tax Rates** í hliðarstikunni á stillingasíðu skatta.
 
-![Manage Tax Rates link in the Tax Rates panel on the settings page](/img/config/settings-taxes-manage-rates.png)
+![Manage Tax Rates hlekkur í Tax Rates spjaldinu á stillingasíðunni](/img/config/settings-taxes-manage-rates.png)
 
-Á editorum fyrir skattarratan geturðu bætt nýjum skattarratunum í viðbót með því að klikka á knappa **Add new Row** (Bæta nýja rutu).
+Á síðu ritilsins fyrir skatthlutföll geturðu bætt við nýjum skatthlutföllum með því að smella á hnappinn **Add new Row**.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![Tafla í ritli skatthlutfalla með Add new Row hnappi efst](/img/config/tax-rates-editor.png)
 
-Þú þarft að gefa hverjum skattarratann **title** (tittel) (sem notar á faktuðum). Þá geturðu velja **country** (landið) (kravandi), **state** (staðinn) og **city** (borg) (búið eða ekki) þar sem skatturinn mun verið reiknaður. Í lokum bæta við **tax rate in percents** (skattarratan í persentum).
+Þú þarft að gefa hverju skatthlutfalli **titil** (notað á reikningum). Síðan geturðu valið **land** (skyldubundið), **ríki/fylki,** og **borg** (bæði valfrjálst) þar sem þessi skattur verður innheimtur. Að lokum skaltu bæta við **skatthlutfallinu í prósentum**.
 
-### Tax Categories (Skattarhlutfall)
+### Skattflokkar {#tax-categories}
 
-Þú getur einnig skapað fleiri Tax Categories (Skattarhlutfall), til að bæta ólíka skattarratunum fyrir ólíka möguleika vörum.
+Þú getur einnig búið til marga skattflokka til að bæta við mismunandi skatthlutföllum fyrir mismunandi tegundir vara.
 
-Klikka á **Add new Tax Category** (Bæta nýja skattarhlutfall) , þá skrifa nafn fyrir hlutaðann og trykkir **Create** (Skapa).
+Smelltu til að **Add new Tax Category** , skrifaðu síðan nafn flokksins og ýttu á **Create**.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![Add new Tax Category hnappur efst í ritli skatthlutfalla](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![Tax Category Name innsláttarreitur í glugganum til að búa til flokk](/img/config/tax-categories-create-modal.png)
 
-Til að skoða hlutaðann, klikka á **Switch** (Skipta) og velja hlutaðann sem þú vilt bæta nýjum skattum við.
+Til að fletta í gegnum flokka skaltu smella á **Switch** og velja flokkinn sem þú vilt bæta nýjum sköttum við.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![Switch fellilistahnappur til að skipta á milli skattflokka](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![Fellilisti fyrir val á skattflokki sem sýnir tiltæka flokka](/img/config/tax-categories-select.png)
 
-Þú getur sett skattarhlutfall fyrir sérstakla vöru með því að ferðast yfir í **Product edit page** (Löggingarsíða vörunnar) og síðan til Taxes tab (Skattarflutningur).
+Þú getur stillt skattflokk fyrir tiltekna vöru með því að fara á **breytingasíðu vöru** og síðan í Taxes flipann.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![Taxes flipi vöru með skattflokki og taxable kveikjurofa](/img/config/product-taxes.png)
 
-Á sama skráningu geturðu sláð úr **Is Taxable?** (Er það skattlegt?) togglen til að láta Ultimate Multisite vita að það ætti ekki að krefjast skatta á þeirri vörunni.
+Á sama skjá geturðu slökkt á rofanum **Is Taxable?** til að láta Ultimate Multisite vita að það eigi ekki að innheimta skatta af þessari tilteknu vöru.
 
-## European VAT Support (Styring EU-skattar)
+## Stuðningur við evrópskt VAT {#european-vat-support}
 
-Eins og var sagt, er viðkominnur sem eru í EU og hafa ekstra kröfur vegna europeiskmraustöðu (VAT) aðgangur til viðbótum.
+Eins og áður var nefnt erum við með viðbót tiltæka fyrir viðskiptavini í ESB sem hafa viðbótarkröfur vegna evrópskra VAT reglna.
 
-Þær VAT-hlutverki hjá okkur hjálpa með nokkrum mikilvægum þingum:
+VAT verkfærin okkar hjálpa við nokkra mikilvæga hluti:
 
-  * Einföld laðning af EU VAT -hlutfalli;
+  * Auðveld hleðsla á VAT hlutföllum ESB;
 
-  * Samningur um VAT-númer og staðfesting - og bakgrunnar skipting fyrir einstaklinga sem eru ekki skipti (tíðar fyrir fyrirtæki með réttum VAT-númerum);
+  * Söfnun og staðfesting VAT númers - og öfug gjaldfærsla fyrir aðila sem eru undanþegnir VAT (svo sem fyrirtæki með gild VAT númer);
 
-Til að installera þennan add-on, ferðu yfir **Ultimate Multisite > Settings** og klikka á linkinn í hítandi bandara **Check our Add-ons**.
+Til að setja upp þá viðbót skaltu fara í **Ultimate Multisite > Settings** og smella síðan á hlekkinn **Check our Add-ons** í hliðarstikunni.
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+![Hliðarstika stillingasíðu með Check our Add-ons hlekk](/img/config/settings-taxes-addons-link.png)
 
-Þú verður leiðréttur til yfirskrifar sínum add-onum. Þar geturð þú leita eftir **Ultimate Multisite VAT add-on** og installera hann.
+Þér verður vísað á viðbótasíðuna okkar. Þar geturðu leitað að **Ultimate Multisite VAT add-on** og sett hana upp.
 
 <!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
 
 <!-- Screenshot unavailable: VAT add-on Install Now dialog -->
 
-Þá ferðu yfir í **Network Admin > Plugins** og aktiva þennan add-on nálægt hefðinu (network-wide).
+Farðu síðan í **Network Admin > Plugins** og virkjaðu þá viðbót á öllu netinu.
 
 <!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
 
-Ef þú ferðu aftur í **Tax Settings tab**, sjáðu þú nýjar möguleika sem eru til við. Skiptu **Enable VAT Support** (Aktiva VAT-stöd) mótlið til að aktiva nýja VAT hlutverki. Geymið ekki gleymt settir þín!
+Ef þú ferð aftur í **Tax Settings tab** sérðu nýja valkosti í boði. Kveiktu á valkostinum **Enable VAT Support** til að virkja nýju VAT verkfærin. Ekki gleyma að **vista** stillingarnar þínar!
 
 <!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
 
-### Draugning á VAT -hlutfalli
+### Sækja VAT skatthlutföll {#pulling-on-vat-tax-rates}
 
-Eitt af hlutverkunum sem okkar samstarf er að geta laða í þáttarhlutfall fyrir EU-land. Þetta gerist með því að vitja yfir **tax rates editor** síðu eftir að aktiva VAT -stöd.
+Eitt af verkfærunum sem samþættingin okkar bætir við er möguleikinn á að hlaða inn skatthlutföllum fyrir aðildarríki ESB. Það er hægt að gera með því að heimsækja síðu ritilsins fyrir skatthlutföll eftir að stuðningur við EU VAT hefur verið virkjaður.
 
-Í botninni undir yfirmsögnunum sjáttu þú veitir möguleika til að hlaða í uppfærðar VAT-tíðningarnar. Val á einum gildi fyrir tíðningartíðning og klikk á knappa **Update EU VAT Rates** mun sýna og sjálft fylla út tábluna með skattarútgjöfum fyrir hvert land í EU. Þegar það er gerð, þarf þú að hefja bara að hefja uppfærslu.
+Neðst á síðunni sérðu valkosti fyrir að sækja VAT. Með því að velja tegund hlutfalls og smella á hnappinn **Update EU VAT Rates** verður taflan sótt og sjálfkrafa fyllt út með skatthlutföllum fyrir hvert aðildarríki ESB. Síðan þarftu aðeins að vista hana.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+![Update EU VAT Rates hnappur neðst í ritli skatthlutfalla](/img/config/tax-rates-vat-pull.png)
 
-Þú getur einnig breytt gildi eftir að það er hlað út. Til þess, breyt bara linuna í tábluna sem þarf er og klikk á til að hefja uppfærslu nýrra gildi.
+Þú getur einnig breytt gildunum eftir að þú sækir þau. Til að gera það skaltu einfaldlega breyta töflulínunni sem þú þarft og smella til að vista nýju gildin.
 
-### VAT Validations
+### VAT staðfesting {#vat-validation}
 
-Þegar VAT stutði er á lausnu, mun Ultimate Multisite bæta við einn auðveldanlega fylgja felt í skattarformni, undir feltinu fyrir reikningarsíða. Feltið sýnist bara fyrir viðskiptavili sem eru í EU.
+Þegar VAT stuðningur er virkjaður mun Ultimate Multisite bæta við viðbótarreit á greiðsluformið, fyrir neðan reitinn fyrir reikningsheimilisfang. Reiturinn birtist aðeins viðskiptavinum sem staðsettir eru í ESB.
 
 <!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
 
-Ultimate Multisite mun þá staðfesta VAT-númerinn og ef hann er rétt, verður aðgerðarstefna fyrir tilbæra skattar (reverse charge mechanism) nýtt, og skattartíðningurinn blir settur á 0% á þessum bestelli.
+Ultimate Multisite staðfestir þá VSK-númerið og ef það reynist gilt er öfugri skattskyldu beitt og skatthlutfallið stillt á 0% fyrir þá pöntun.

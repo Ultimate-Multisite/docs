@@ -3,11 +3,11 @@ title: Fomba Fifandraisana ho an'ny Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Fomba Fanaovana Form Contact ao an-tserasera (Site Builder)
+# Fomba Fanaovana Form Contact ao an-tserasera (Site Builder) {#site-builder-contact-forms}
 
 Ny Superdav AI Agent v1.10.0 dia manampy ny fahaizana mamorona form contact mivantana avy amin'ny chat interface iantsoana ny Site Builder agent. Izany dia ahafahanao manampy form contact tena miasa amin'ny pejy rehetra tsy mila miala amin'ny chat.
 
-## Famarahabana (Overview)
+## Famarahabana (Overview) {#overview}
 
 Ny fahaizana mamorona form contact an'ny Site Builder (`create_contact_form`) dia mahita ho azy ny plugin form izay apetrakao ary mamorona form contact mampiasa ny fahaiza-manao voajanahary an'io plugin io. Ireto misy ireo plugin form azo antoky:
 
@@ -18,7 +18,7 @@ Ny fahaizana mamorona form contact an'ny Site Builder (`create_contact_form`) di
 
 Ny ason'ny assistant dia safidy ho plugin form tsara indrindra eo amin'ny tranonkalanao ary mamorona form contact mifanaraka amin'io plugin io.
 
-## Famoronana Form Contact
+## Famoronana Form Contact {#creating-a-contact-form}
 
 Mba hamoronana form contact amin'ny alalan'ny Site Builder:
 
@@ -34,7 +34,7 @@ Mba hamoronana form contact amin'ny alalan'ny Site Builder:
 
 4. Ny Site Builder dia hamorona ny form contact ary hamerina shortcode (ohatra, `[contact-form-7 id="123"]`) vonona hampidirina.
 
-## Fampiasana ny Shortcode Namboarina
+## Fampiasana ny Shortcode Namboarina {#using-the-generated-shortcode}
 
 Rehefa namorona ny form contact ny Site Builder, dia hamerina shortcode iray izy (ohatra, `[contact-form-7 id="123"]`). Afaka:
 
@@ -45,11 +45,11 @@ Rehefa namorona ny form contact ny Site Builder, dia hamerina shortcode iray izy
 
 3. **Ampiasao azy ao template** — Raha mahay amin'ny PHP ianao, afaka manampy ny shortcode eo amin'ny rakitra template an'ny theme ianao.
 
-## Fanovana ny Contact Form (Fomba Fandefasana Hafatra)
+## Fanovana ny Contact Form (Fomba Fandefasana Hafatra) {#customizing-the-contact-form}
 
 Aorian'ny famoronana ny contact form avy amin'ny Site Builder dia afaka manova azy bebe kokoa ianao:
 
-### Amin'ny alalan'ny Chat Interface
+### Amin'ny alalan'ny Chat Interface {#via-the-chat-interface}
 
 Manao fangatahana ny Site Builder mba hanovana ny form:
 
@@ -57,7 +57,7 @@ Manao fangatahana ny Site Builder mba hanovana ny form:
 
 Ny Site Builder dia hanova ny form ary hamerina ny shortcode vaovao.
 
-### Amin'ny alalan'ny Admin Interface an'ny Form Plugin
+### Amin'ny alalan'ny Admin Interface an'ny Form Plugin {#via-the-form-plugins-admin-interface}
 
 Afaka manova mivantana ny form ao amin'ny fandaharana (settings) an'ny form plugin anao ianao:
 
@@ -65,7 +65,7 @@ Afaka manova mivantana ny form ao amin'ny fandaharana (settings) an'ny form plug
 2. Mitadiava ny form noforonina tamin'ny alalan'ny Site Builder.
 3. Manova ireo lafiny an'ny form, ny fitsipika fanamarinana (validation rules), ary ny fampahafantarana an-mail.
 
-## Form Plugins sy Fahaizana Mampiasa azy (Compatibility)
+## Form Plugins sy Fahaizana Mampiasa azy (Compatibility) {#form-plugins-and-compatibility}
 
 Ny Site Builder dia mahafantatra ho azy hoe inona no form plugin napetraka eo amin'ny tranonkala anao ary mampiasa izany mba hamoronana ny contact form. Raha misy form plugin maromaro napetraka, dia alefa avy amin'ity lamaso ity ny Site Builder:
 
@@ -76,7 +76,7 @@ Ny Site Builder dia mahafantatra ho azy hoe inona no form plugin napetraka eo am
 
 Raha tsy misy ao amin'ireo plugin ireo dia hanoro hevitra ny Site Builder mba hampidirana iray alohan'ny famoronana ny contact form.
 
-## Fampahafantarana An-mail (Email Notifications)
+## Fampahafantarana An-mail (Email Notifications) {#email-notifications}
 
 Ny contact forms noforonina tamin'ny alalan'ny Site Builder dia voalamina mialoha mba handefasana fampahafantarana an-mail ho an'ny administrator an'ny tranonkala. Afaka manova ny adiresy an-mail sy ny hafatra fampahafantarana ianao:
 
@@ -91,21 +91,21 @@ Ho fanazavana lalindalina, jereo ny dokumentation an'ny form plugin anao:
 - [Fampitana Email Notifications an Fluent Forms](https://fluentforms.com/docs/)
 - [Fampitana Email Notifications an Gravity Forms](https://docs.gravityforms.com/)
 
-## Ohatra Fandram-pahalalanao (Example Use Cases)
+## Ohatra Fandram-pahalalanao (Example Use Cases) {#example-use-cases}
 
-### Fampitana Contact Form Tsotra (Simple Contact Form)
+### Fampitana Contact Form Tsotra (Simple Contact Form) {#simple-contact-form}
 
 > "Atao fampitana contact form tsotra misy champs ho anarana, email ary hafatra."
 
-### Fampitana Form Amin'ny Dingana Maromaro (Multi-Step Form)
+### Fampitana Form Amin'ny Dingana Maromaro (Multi-Step Form) {#multi-step-form}
 
 > "Atao contact form izay manana dingana voalohany ho an'ny fampahalalana momba ny fifandraisana ary dingana faharoa ho an'ny hafatra sy ny fomba fifandraisana tianao."
 
-### Fampitana Form Amin'ny Fandikana Miankina (Form with Conditional Logic)
+### Fampitana Form Amin'ny Fandikana Miankina (Form with Conditional Logic) {#form-with-conditional-logic}
 
 > "Atao contact form izay mampiseho champs hafa arakaraka safidin'ny mpampiasa ao amin'ny dropdown."
 
-### Fampitana Form Amin'ny Fametrahana Raikitra (Form with File Upload)
+### Fampitana Form Amin'ny Fametrahana Raikitra (Form with File Upload) {#form-with-file-upload}
 
 > "Atao contact form ahafahan'ny mpampiasa mametraka raikitra na attachment."
 

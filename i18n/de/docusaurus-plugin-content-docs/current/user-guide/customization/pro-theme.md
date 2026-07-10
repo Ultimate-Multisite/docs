@@ -1,29 +1,29 @@
 ---
-title: PRO Theme
+title: PRO-Theme
 sidebar_position: 12
-_i18n_hash: 507d2050365bae06955e8492c3e645f7
+_i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Anpassen Ihres Admin-Panels mit PRO Theme
+# Dein Admin Panel mit PRO Theme anpassen {#customizing-your-admin-panel-with-pro-theme}
 
-Bei der Arbeit mit Kunden entsteht häufig der Bedarf, unseren Kunden ein individuelles Erlebnis im Admin-Dashboard von WordPress zu bieten. Wenn Sie nach einem professionelleren Look und Gefühl suchen, könnte PRO Theme Ihnen helfen.
+Oft entsteht bei der Arbeit für Kunden der Bedarf, unseren Kunden ein individuelles Erlebnis im Admin Dashboard von WordPress zu bieten. Wenn du nach einem professionelleren Look and Feel suchst, kann PRO Theme dir helfen.
 
-PRO Theme ist ein Admin-Theme, das entwickelt wurde, um Ihnen bei der Anpassung des Dashboards Ihrer Kunden zu helfen. Und es ist auch Teil des Premium-Plugins-Kerns von Ultimate Multisite.
+PRO Theme ist ein Admin-Theme, das entwickelt wurde, um dich beim Anpassen des Dashboard deiner Kunden zu unterstützen. Und es ist auch Teil des Premium-Plugins-Core von Ultimate Multisite.
 
-Nach der Installation gehen Sie zu Ihrer _Plugins_-Seite und klicken, um es im Netzwerk zu aktivieren.
+Gehe nach der Installation zu deiner _Plugins_-Seite und klicke, um es in deinem Network zu aktivieren.
 
 <!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
 
-_Aktivieren Sie es netzwerkweit auf Ihrer Plugins-Seite_
+_Aktiviere es netzwerkweit auf deiner Plugins-Seite_
 
-_**NOTE:**_ _Wenn Sie es nur installieren, wird es bei Ihrem Kunden als Option angezeigt, die markiert werden kann, um das Theme nur für diesen Benutzer hinzuzufügen._
+_**HINWEIS:**_ _Wenn du es nur installierst, wird es bei deinem Kunden als Option angezeigt, die markiert werden kann, um das Theme nur diesem Benutzer hinzuzufügen._
 
-Jetzt haben Sie Ihre Admin-Oberfläche komplett neu gestaltet! Außerdem haben Sie ein neues Menü in der linken Spalte namens PRO Theme.
+Jetzt ist deine Admin-Oberfläche vollständig neu gestaltet! Außerdem hast du ein neues Menü in der linken Spalte namens PRO Theme.
 
 <!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
 
-_Ein brandneues Aussehen für Ihr Admin-Panel_
+_Ein brandneuer Look für dein Admin Panel_
 
-In diesem Menü haben Sie Zugriff auf fünf Registerkarten:
+In diesem Menü hast du Zugriff auf fünf Tabs:
 
 <!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
 
@@ -35,7 +35,7 @@ _Funktionalität_
 
 <!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
 
-_Benutzerdefinierte CSS_
+_Custom CSS_
 
 <!-- Screenshot unavailable: PRO Theme Import/Export tab -->
 
@@ -43,16 +43,16 @@ _Import/Export_
 
 <!-- Screenshot unavailable: PRO Theme Activate tab -->
 
-_Aktivieren Sie PRO Theme_
+_PRO Theme aktivieren_
 
-In jedem von ihnen können Sie Styling-Elemente aktivieren und deaktivieren, Funktionen zulassen oder blockieren und Ihren Kunden die Anpassungen bieten, die sie auf Ihrem Netzwerk von Websites suchen könnten.
+In jedem davon kannst du Styling-Elemente aktivieren und deaktivieren, Funktionalitäten erlauben oder blockieren und deinen Kunden die Anpassung bieten, nach der sie in deinem Netzwerk von Websites möglicherweise suchen.
 
-Hier ein Beispiel dafür, was Sie nach einigen Anpassungen erhalten können:
+Hier ist ein Beispiel dafür, was du nach einigen Anpassungen erhalten kannst:
 
 <!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
 
-_Das Dashboard Ihres Kunden_
+_Das Dashboard deines Kunden_
 
 <!-- Screenshot unavailable: Customized login page with PRO Theme -->
 
-_Eine angepasste Login-Seite_
+_Eine angepasste Anmeldeseite_

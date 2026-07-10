@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector for Compatible Endpoints
+# Ultimate AI Connector for Compatible Endpoints {#ultimate-ai-connector-for-compatible-endpoints}
 
 Ultimate AI Connector for Compatible Endpoints integruje API dostawców AI kompatybilnych z OpenAI z Twoją siecią multisite WordPress. Możesz skonfigurować wielu dostawców AI — każdy z własnym adresem URL endpointu, kluczem API i modelem domyślnym — i kierować żądania z automatycznym przełączaniem na kolejnego dostawcę, jeśli pierwotny okaże się niedostępny.
 
-## Kluczowe funkcje
+## Kluczowe funkcje {#key-features}
 
 - **Wsparcie dla wielu dostawców**: Dodaj wiele kart dostawców AI, z których każda ma własny adres URL endpointu, klucz API i model domyślny.
 - **Uporządkowanie za pomocą przeciągania**: Ustaw priorytet dostawców, przeciągając uchwyt na każdej karcie; żądania są wysyłane do dostawców w kolejności.
@@ -21,26 +21,26 @@ Ultimate AI Connector for Compatible Endpoints integruje API dostawców AI kompa
 - **Automatyczne rozwijanie po dodaniu**: Nowe karty dostawców automatycznie się rozwijają, dzięki czemu możesz natychmiast uzupełnić szczegóły.
 - **Zapobieganie cache'owaniu skryptów**: Skrypty dostawców są odświeżane (cache-busted) podczas aktualizacji wtyczki, aby zapewnić załadowanie najnowszej wersji.
 
-## Wymagania
+## Wymagania {#requirements}
 
 - WordPress 5.3 lub nowszy
 - PHP 7.4 lub nowszy
 - Wtyczka Ultimate Multisite (aktywna)
 - Endpoint API kompatybilny z OpenAI (samohostowany lub zewnętrzny)
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki dodatku do katalogu `/wp-content/plugins/`
 2. Aktywuj wtyczkę w menu „Plugins” w WordPressie
 3. Przejdź do **Ultimate Multisite → AI Connector**, aby skonfigurować dodatek
 
-## Konfiguracja
+## Konfiguracja {#configuration}
 
-### Ustawienie wielu dostawców
+### Ustawienie wielu dostawców {#multi-provider-setup}
 
 Ekran konfiguracji wykorzystuje układ oparty na kartach, gdzie każda karta reprezentuje jednego dostawcę AI. Możesz dodać tyle dostawców, ile potrzebujesz.
 
-#### Dodawanie dostawcy
+#### Dodawanie dostawcy {#adding-a-provider}
 
 1. Przejdź do **Ultimate Multisite → AI Connector** w panelu administracyjnym sieci.
 2. Kliknij **Add Provider** (Dodaj dostawcę).
@@ -52,15 +52,15 @@ Ekran konfiguracji wykorzystuje układ oparty na kartach, gdzie każda karta rep
    - **Default Model** (Model domyślny) — identyfikator modelu, który ma być używany domyślnie dla tego dostawcy (np. `gpt-4o`, `mistral-small`).
 5. Kliknij **Save Settings** (Zapisz ustawienia).
 
-#### Usuwanie dostawcy
+#### Usuwanie dostawcy {#removing-a-provider}
 
 Kliknij przycisk **Remove** (Usuń) na dowolnej karcie dostawcy, aby ją usunąć. Zapisz ustawienia, aby zastosować zmianę.
 
-#### Uporządkowanie dostawców
+#### Uporządkowanie dostawców {#reordering-providers}
 
 Przeciągnij ikonę uchwytu (⣿) po lewej stronie dowolnej karty dostawcy, aby zmienić jej kolejność. Kolejność określa priorytet przełączania: żądania są wysyłane do pierwszego dostawcy, a w przypadku niepowodzenia przełączają się na kolejne dostawcy.
 
-### Kierowanie z przełączaniem (Fallback Routing)
+### Kierowanie z przełączaniem (Fallback Routing) {#fallback-routing}
 
 Jeśli żądanie do głównego dostawcy zawiedzie — z powodu przekroczenia czasu, limitu żądań lub awarii usługi — konektor automatycznie próbuje ponownie z kolejnym dostawcą na liście. Proces ten trwa aż do momentu, gdy dostawca się powiedzie lub gdy zostaną wypróbowani wszyscy dostawcy.
 
@@ -72,7 +72,7 @@ Jeśli żądanie do głównego dostawcy zawiedzie — z powodu przekroczenia cza
 
 Przełączanie jest niewidoczne dla wywołującej wtyczki lub motywu — otrzymują one albo pomyślną odpowiedź, albo ostateczny błąd, niezależnie od tego, ile dostawców zostało wypróbowanych.
 
-### Odniesienie do konfiguracji dostawcy
+### Odniesienie do konfiguracji dostawcy {#provider-configuration-reference}
 
 | Pole | Wymagane | Opis |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ Przełączanie jest niewidoczne dla wywołującej wtyczki lub motywu — otrzymu
 | API Key | Tak | Klucz uwierzytelniający dla tego dostawcy |
 | Default Model | Tak | Identyfikator modelu używany, gdy w żądaniu nie podano modelu |
 
-## Rozwiązywanie problemów
+## Rozwiązywanie problemów {#troubleshooting}
 
-### Nie ma wyświetlonych dostawców
+### Nie ma wyświetlonych dostawców {#no-providers-are-listed}
 
 Jeśli lista dostawców jest pusta po zapisaniu, upewnij się, że:
 
@@ -91,21 +91,21 @@ Jeśli lista dostawców jest pusta po zapisaniu, upewnij się, że:
 - Twój przeglądarka nie zablokowała zapisu strony ustawień (sprawdź konsolę przeglądarki pod kątem błędów JavaScript).
 - Wtyczka jest aktywna i znajdujesz się na ekranie panelu administracyjnego sieci.
 
-### Żądania zawiodły dla wszystkich dostawców
+### Żądania zawiodły dla wszystkich dostawców {#requests-are-failing-for-all-providers}
 
 - Sprawdź, czy adres URL endpointu każdego dostawcy jest osiągalny z Twojego serwera (nie tylko z przeglądarki).
 - Upewnij się, że każdy klucz API jest ważny i nie wygasł.
 - Przejrzyj status limitu żądań i kwoty dostawcy w jego panelu administracyjnym.
 - Włącz logowanie debugowania WordPress (`WP_DEBUG_LOG`), aby przechwycić szczegółowe komunikaty o błędach z konektora.
 
-### Dostawca nie jest używany do przełączania (fallback)
+### Dostawca nie jest używany do przełączania (fallback) {#a-provider-is-not-being-used-for-fallback}
 
 Uporządkowanie za pomocą przeciągania zmienia kolejność przełączania. Upewnij się, że dostawca, który ma otrzymać żądania przełączające, jest poprawnie umiejscowiony na liście i że jego adres URL endpointu oraz klucz API są poprawne.
 
-### Nowa karta dostawcy nie rozwija się automatycznie
+### Nowa karta dostawcy nie rozwija się automatycznie {#new-provider-card-does-not-expand-automatically}
 
 Automatyczne rozwijanie wymaga, aby w przeglądarce było włączone JavaScript. Jeśli karta nie rozwija się po kliknięciu, sprawdź konsolę przeglądarki pod kątem błędów. Zawartość karty jest zawsze dostępna poprzez kliknięcie nagłówka karty, nawet jeśli automatyczne rozwijanie nie zadziała.
 
-## Historia zmian (Changelog)
+## Historia zmian (Changelog) {#changelog}
 
 Zobacz [Changelog](./changelog), aby zapoznać się z pełną historią wersji.

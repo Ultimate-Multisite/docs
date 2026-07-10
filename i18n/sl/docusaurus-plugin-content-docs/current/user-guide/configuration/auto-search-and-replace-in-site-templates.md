@@ -3,7 +3,7 @@ title: Avtomatizirano iskanje in zamenjava v predloških spletnih strani
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Avtomatizirano iskanje in zamenjava v šabloni spletnih strani (v2)
+# Avtomatizirano iskanje in zamenjava v šabloni spletnih strani (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ta tutorial zahteva WP Uitimo verzijo 2.x.**_
 
@@ -17,7 +17,7 @@ Vaš kupce bodo nato imeli možnost to polje vpisati med registracijo.
 
 Ultimate Multisite pa se potem sam avtomatsko zamenja mesta-zadržanje z pododobitvami, ki jih je prinesel kupce.
 
-## **Reševanje problema "šablon poln mestih-zadržanj"**
+## **Reševanje problema "šablon poln mestih-zadržanj"** {#solving-the-template-full-of-placeholders-problem}
 
 Vse to je super, vendar imamo neugodo: našim šablonim spletnim stranem - ki jih lahko obiščejo naši kupci - so popolnoma polni z neugodnimi mesta-zadržanj, ki ne povejo veliko.
 

@@ -3,11 +3,11 @@ title: WP-CLI Referință
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Referință WP-CLI
+# Referință WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent oferă o familie de comenzi `wp gratis-ai-agent` pentru a realiza benchmark-uri pentru agent, pentru a gestiona abilities-urile și pentru a interoga statusul agentului direct din linia de comandă. Toate comenzile necesită WP-CLI 2.0 sau o versiune mai nouă.
 
-## Instalare
+## Instalare {#installation}
 
 Comenzile WP-CLI sunt înregistrate automat când plugin-ul este activ. Verificați cu:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Rulează setul de benchmark-uri pentru Abilities-urile Agentului — un set de prompturi complexe, cu mai multe pași, care testează întreaga gamă de abilities. Folosiți acest lucru pentru a evalua performanța modelului, pentru a compara furnizorii de AI sau pentru a valida pachetele de abilities înainte de a implementa în producție.
 
-### Sinopsis
+### Sinopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Opțiuni
+### Opțiuni {#options}
 
 | Opțiune | Descriere |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Formatul de ieșire: `table` (implicit), `json`, `csv` |
 | `--save` | Salvează rezultatele benchmark-ului în baza de date pentru comparații istorice |
 
-### Exemple
+### Exemple {#examples}
 
 Rulează întregul set de benchmark-uri cu furnizorul și modelul curent:
 
@@ -57,7 +57,7 @@ Rulează împotriva unui model specific și salvează rezultatele:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Ieșiri
+### Ieșiri {#output}
 
 Benchmark-ul afișează un rând per întrebare cu următoarele coloane:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Întrebări de Benchmark
+### Întrebări de Benchmark {#benchmark-questions}
 
 Setul implicit include:
 
@@ -95,11 +95,11 @@ Setul implicit include:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Gestionează abilities-urile instalate și pachetele de abilities.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Listează toate abilities-urile înregistrate, sursa lor (core sau pachet) și statusul lor curent.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Descarcă și activează un pachet de abilities din registru.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Dezactivează o ability specifică fără a elimina pachetul. Este util pentru a-i limita scope-ul agentului pe un site anume.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Reactivează o ability care fusese dezactivată anterior.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Afișează configurația curentă a agentului și statusul conectivității.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Afișează activitatea recentă a agentului din log-ul de debug.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Resetează starea agentului: golește CSS-ul injectat, elimină CPT-urile și taxonomiele înregistrate de agent, resetează override-urile stilurilor globale și golește cache-ul opțiunilor agentului. Nu elimină plugin-ul sau setările acestuia.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Coduri de Ieșire
+## Coduri de Ieșire {#exit-codes}
 
 Toate comenzile iernează `0` în cazul succesului. Codurile de ieșire non-zero:
 

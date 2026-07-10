@@ -1,106 +1,152 @@
 ---
-title: Bepul AI Agent Sozlamalari
+title: Gratis AI Agent Sozlamalari
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Sozlamalari
+# Gratis AI Agent sozlamalari {#gratis-ai-agent-settings}
 
-Gratis AI Agent'dagi **Settings → Advanced** ekranida v1.5.0 versiyasidan boshlab kiritilgan backend integratsiyalari uchun administrator darajasidagi sozlamalar mavjud. Bu sahifa **Feedback Endpoint** maydonlarini va ularning kutubxona formatini hujjatlashtiradi.
+Gratis AI Agent ichidagi **Settings → Advanced** ekrani backend integratsiyalari uchun administrator darajasidagi konfiguratsiyani taqdim etadi. Bu sahifa feedback yo‘naltirish, qidiruv provayderi kalitlari, boshqariladigan Superdav xizmati sozlamasi, Google Calendar boshqaruvlari, TextBee SMS sozlamalari va butun tarmoq bo‘yicha feature flaglarni hujjatlashtiradi.
 
-## Sozlamalarga Kirish
+## Sozlamalarga kirish {#accessing-settings}
 
-1. WordPress admin panelida, **Gratis AI Agent → Settings** ga o'ting.
-2. **Advanced** (Kengaytirilgan) yorlig'iga bosing.
+1. WordPress administratori bo‘limida **Gratis AI Agent → Settings** ga o‘ting.
+2. **Advanced** yorlig‘ini bosing.
 
-## Feedback Endpoint Sozlamasi
+## Feedback endpoint konfiguratsiyasi {#feedback-endpoint-configuration}
 
-Feedback endpointi foydalanuvchi "pastki ko'zi" tugmasi orqali, avtomatik prompt banneri orqali yoki `/report-issue` buyrug'i bilan fikr bildirganda AI agentidan POST so'rovlarini qabul qiladi.
+Feedback endpoint AI agent foydalanuvchi thumbs-down tugmasi, auto-prompt banner yoki `/report-issue` buyrug‘i orqali feedback yuborganida POST so‘rovlarini qabul qiladi.
 
 | Maydon | Tavsif |
 |---|---|
-| **Feedback Endpoint URL** | Bu, HTTP POST so'rovlari orqali JSON tanasi bilan feedback yuborishni qabul qiladigan URL manzilidir. |
-| **Feedback API Key** | Har bir feedback so'rovining `Authorization` sarlavchasida yuboriladigan bearer token. Agar sizning endpointingiz autentifikatsiyani talab qilmasa, uni bo'sh qoldiring. |
+| **Feedback Endpoint URL** | Feedback yuborishlarini JSON tanasi bilan HTTP POST so‘rovlari sifatida qabul qiladigan URL. |
+| **Feedback API Key** | Har bir feedback so‘rovining `Authorization` headerida yuboriladigan bearer token. Agar endpoint autentifikatsiya talab qilmasa, bo‘sh qoldiring. |
 
-### Kutilayotgan JSON yuklamasi (Payload)
+### Kutiladigan JSON payload {#expected-json-payload}
 
-Sizning feedback endpointingiz quyidagi maydonlar bilan kamida bitta JSON tanasini qabul qilishi kerak:
+Feedback endpoint kamida quyidagi maydonlarga ega JSON tanasini qabul qilishi kerak:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Narx haqidagi javob noto'g'ri edi.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Sohbat kontekstiga qarab, yuklamada qo'shimcha maydonlar mavjud bo'lishi mumkin.
+Payload ichida suhbat kontekstiga qarab qo‘shimcha maydonlar bo‘lishi mumkin.
 
-### `triage_category` Qiymatlari
+### `triage_category` qiymatlari {#triagecategory-values}
 
-AI triyaj qatlami yuklamani oldindan yuborishdan oldin `triage_category` ga quyidagi qiymatlardan birini beradi:
+AI triage qatlami payloadni yo‘naltirishdan oldin `triage_category` uchun quyidagi qiymatlardan birini belgilaydi:
 
-| Qiymat | Ma'nosi |
+| Qiymat | Ma’nosi |
 |---|---|
-| `factual_error` | Assistent noto'g'ri fakt ma'lumotini taqdim etdi. |
-| `unhelpful_answer` | Javob texnik jihatdan to'g'ri bo'ldi, ammo foydali emas edi. |
-| `inappropriate_content` | Javobda foydalanuvchilarga ko'rsatilmasligi kerak bo'lgan kontent mavjud edi. |
-| `other` | Fikrlar ma'lum bir kategoriya bilan mos kelmadi. |
+| `factual_error` | Assistant noto‘g‘ri faktik ma’lumot berdi. |
+| `unhelpful_answer` | Javob texnik jihatdan to‘g‘ri edi, lekin foydali emas edi. |
+| `inappropriate_content` | Javobda foydalanuvchilarga ko‘rsatilmasligi kerak bo‘lgan kontent bor edi. |
+| `other` | Feedback ma’lum toifaga mos kelmadi. |
 
-### Tasdiqlash (Authentication)
+### Autentifikatsiya {#authentication}
 
-Agar sizning endpointingiz tasdiqlanishni talab qilsa, **Feedback API Key** maydonini o'z bearer tokeningiz bilan sozlang. Agent quyidagicha yuboradi:
+Agar endpoint autentifikatsiya talab qilsa, **Feedback API Key** maydonini bearer tokeningizga sozlang. Agent quyidagilarni yuboradi:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Agar **Feedback API Key** maydoni bo'sh bo'lsa, hech qanday `Authorization` sarlavhasi (header) yuborilmaydi.
+Agar **Feedback API Key** maydoni bo‘sh bo‘lsa, `Authorization` header yuborilmaydi.
 
-### Feedback Yig'ishni O'chirish
+### Feedback yig‘ishni o‘chirish {#disabling-feedback-collection}
 
-**Feedback Endpoint URL** va **Feedback API Key** maydonlarini bo'sh qoldiring. O'ngcha (thumbs-down) tugmasi va fikr yozish interfeysi foydalanuvchilar uchun ko'rinib turadi, ammo submissionlar hech qanday tashqi xizmatga yo'naltirilmaydi.
+**Feedback Endpoint URL** va **Feedback API Key** maydonlarining ikkalasini ham bo‘sh qoldiring. Thumbs-down tugmasi va feedback UI foydalanuvchilarga ko‘rinishda qoladi, lekin yuborishlar hech qanday tashqi xizmatga yo‘naltirilmaydi.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Shuningdek, **Advanced** (Kengaytirilgan) tabda, **Brave Search API Key** maydoni [Internet Search](https://your-docs/configuration/internet-search) imkoniyatini faollashtiradi.
+Shuningdek **Advanced** yorlig‘ida **Brave Search API Key** maydoni [Internet Search](../configuration/internet-search) imkoniyatini yoqadi.
 
 | Maydon | Tavsif |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard'idan olingan API kalitingiz. AI asistentda internet qidirishni faollashtirish uchun talab qilinadi. |
+| **Brave Search API Key** | Brave Search developer dashboarddan olingan API kalitingiz. AI assistantda internet qidiruvini yoqish uchun talab qilinadi. |
 
-Maydon nomi Brave Search API ro'yxatdan olinish sahifasiga bevosita havolani o'z ichiga oladi. Internet qidirishni o'chirish uchun bo'sh qoldiring.
+Maydon yorlig‘i Brave Search API ro‘yxatdan o‘tish sahifasiga bosiladigan havolani o‘z ichiga oladi. Internet qidiruvini o‘chirish uchun bo‘sh qoldiring.
 
-Bu funksiya haqida foydalanuvchi hujjatlari uchun [Internet Search](https://your-docs/configuration/internet-search) ni ko'ring.
+Bu xususiyat bo‘yicha oxirgi foydalanuvchi hujjatlari uchun [Internet Search](../configuration/internet-search) ga qarang.
 
-## Feature Flags
+## Boshqariladigan Superdav xizmati {#managed-superdav-service}
 
-v1.9.0 da kiritilgan **Settings → Feature Flags** (Sozlamalar → Funksional Belgilar) yorlig'i optional funksionalliklar uchun o'tish tugmalarini beradi. Har bir belgi tarmoq bo'ylab faollashtirilgan yoki o'chirilgan bo'ladi; hozircha bu yerda har bir sayt uchun qo'shimcha sozlash imkoniyati yo'q.
+Superdav AI Agent v1.18.0 qo‘llab-quvvatlanadigan saytlar uchun boshqariladigan Superdav xizmati endpointlarini va avtomatik ulanish tayyorlashni qo‘shadi. Saytingiz qo‘lda sozlangan xizmat endpointi o‘rniga hosting qilingan provayderga ulanishi kerak bo‘lsa, ushbu boshqaruvlardan foydalaning.
 
-### Feature Flagsga Kirish
+| Maydon | Tavsif |
+|---|---|
+| **Managed Superdav Service** | Qo‘llab-quvvatlanadigan saytlar uchun hosting qilingan Superdav xizmati ulanishini yoqadi. |
+| **Provision Connection** | Avtomatik endpoint va hisob ma’lumotlarini tayyorlashni boshlaydi. Sayt boshqariladigan provayderdan foydalanishi kerakligini tasdiqlagandan keyin bundan foydalaning. |
+| **Service Endpoint / Connection Status** | Tayyorlashdan keyin joriy endpoint yoki ulanish holatini ko‘rsatadi. |
 
-1. WordPress admin panelida **Gratis AI Agent → Settings** (Bebol AI Agent → Sozlamalar) ga o'ting.
-2. **Feature Flags** (Funksional Belgilar) yorlig'iga bosing.
+Tayyorlashdan keyin sozlamalarni saqlang va boshqariladigan xizmat workflowlariga tayanishdan oldin ulanish holatini tekshiring. Agar tayyorlash muvaffaqiyatsiz bo‘lsa, ko‘rsatilgan qayta urinish bo‘yicha yo‘riqnomani ko‘rib chiqing va sayt hosting qilingan provayderdan foydalanish ruxsatiga ega ekanini tasdiqlang.
 
-### Access Control Flags
+## Google Calendar konfiguratsiyasi {#google-calendar-configuration}
 
-| Flag | Default | Tavsif |
+Superdav AI Agent v1.18.0 kalendar xususiyatlari yoqilganda, agent sozlangan kalendarlar va tadbir tafsilotlarini o‘qiy oladi. Kalendar vositalari o‘qishga yo‘naltirilgan va jadvaldan xabardor eslatmalar, ishtirokchilar bilan keyingi aloqa va kontakt moslashtirish uchun foydalidir.
+
+| Maydon | Tavsif |
+|---|---|
+| **Google Calendar Credentials** | Kalendar ma’lumotlarini o‘qish uchun talab qilinadigan hisob ma’lumotlari yoki token ulanishini saqlaydi. |
+| **Calendar Selection** | Agent qaysi sozlangan kalendarlarni tekshirishi mumkinligini cheklaydi. |
+| **Calendar Connection Status** | Joriy hisob ma’lumotlari kalendarlar va tadbirlarni o‘qiy olishini tasdiqlaydi. |
+
+Kalendar hisob ma’lumotlarini agentga kerak bo‘lgan kalendarlar bilan cheklang. Agar holat muddati tugagan tokenni ko‘rsatsa, qayta ulang yoki hisob ma’lumotlarini almashtiring.
+
+## TextBee SMS bildirishnomalari {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 sozlangan bildirishnoma workflowlari uchun SMS provayder sifatida TextBee ni qo‘shadi. SMS bildirishnomalari nozik yoki foydalanuvchiga ko‘rinadigan xabarlar uchun inson tasdiqlash darvozalari bilan birga ishlatilishi kerak.
+
+| Maydon | Tavsif |
+|---|---|
+| **TextBee API Key** | TextBee SMS provayderiga so‘rovlarni autentifikatsiya qiladi. |
+| **TextBee Device / Sender** | Provayder talab qilganda, chiquvchi xabarlar uchun ishlatiladigan TextBee jo‘natuvchisi yoki qurilmasini tanlaydi. |
+| **SMS Notifications Enabled** | Tasdiqlangan workflowlarga matnli xabar bildirishnomalarini yuborishga ruxsat beradi. SMS yuborishlarning oldini olish uchun o‘chirilgan holda qoldiring. |
+
+Sinov xabarini faqat administratorga tegishli raqamga yuboring, keyin rejalashtirilgan yoki ishtirokchilarga ko‘rinadigan eslatmalarni yoqishdan oldin approval-gate xatti-harakatini tasdiqlang.
+
+## Feature Flags {#feature-flags}
+
+v1.9.0 da ham joriy qilingan **Settings → Feature Flags** yorlig‘i ixtiyoriy funksionallik uchun toggle switchlarni taqdim etadi. Har bir flag butun tarmoq bo‘yicha yoqilgan yoki o‘chirilgan bo‘ladi; hozircha har bir sayt uchun alohida override yo‘q.
+
+### Feature Flags ga kirish {#accessing-feature-flags}
+
+1. WordPress administratori bo‘limida **Gratis AI Agent → Settings** ga o‘ting.
+2. **Feature Flags** yorlig‘ini bosing.
+
+### Kirishni boshqarish flaglari {#access-control-flags}
+
+| Bayroq | Standart | Tavsif |
 |---|---|---|
-| **Administratorlarga Cheklash** | Off | Bu yoqilganida, faqat `administrator` roli mavjud bo'lgan foydalanuvchilar AI Agent chat panelini ochishi mumkin. Boshqa barcha rollar esa "Administrator bilan bog'lanish" xabari ko'radi. |
-| **Tarmoq Administratorlariga Cheklash** | Off | Multisite tarmoqda yoqilganida, faqat Super Adminlar agentdan foydalanishi mumkin. Individual sayt administratorlari bloklanadi. Agar ikkalasi ham yoqilgan bo'lsa, bu sozlama "Administratorlarga cheklash" dan ustunlik qiladi. |
-| **Abonentlarga Kirishga Ijoa Qilish** | Off | Bu yoqilganida, `subscriber` roli mavjud bo'lgan foydalanuvchilar chat interfeysidan foydalanishi mumkin, ammo ular faqat o'qish huquqlariga cheklangan (post yaratish yoki sozlamalarni o'zgartirish imkoniyati yo'q). |
+| **Administratorlar bilan cheklash** | O‘chiq | Yoqilganda, faqat `administrator` roli bo‘lgan foydalanuvchilar AI Agent chat panelini ochishi mumkin. Boshqa barcha rollar o‘rniga "Administratoringiz bilan bog‘laning" xabarini ko‘radi. |
+| **Network Admins bilan cheklash** | O‘chiq | Multisite tarmog‘ida yoqilganda, agentdan faqat Super Admins foydalanishi mumkin. Alohida site administratorlari bloklanadi. Ikkalasi ham yoqilgan bo‘lsa, "Administratorlar bilan cheklash"dan ustun turadi. |
+| **Subscriber kirishiga ruxsat berish** | O‘chiq | Yoqilganda, `subscriber` roli bo‘lgan foydalanuvchilar chat interfeysidan foydalanishi mumkin, lekin faqat o‘qish imkoniyatlari bilan cheklanadi (post yaratish yoki sozlamalarni o‘zgartirish yo‘q). |
+| **A’zo bo‘lmaganlar uchun o‘chirish** | O‘chiq | Ultimate Multisite a’zolik holati bilan integratsiyalashadi. Yoqilganda, faol a’zolikka ega bo‘lmagan saytlar uchun chat yashiriladi. |
 
-| **A'zoblar Uchun O'chirishni Boshlash** | Off | Ultimate Multisite a'zo bo'lish holati bilan integratsiya qilinadi. Faqat faol a'zolikga ega bo'lmagan saytlar uchun chat yashiriladi. |
+### Brending bayroqlari {#branding-flags}
 
-### Brendlash Bayroqlari
-
-| Flag | Default | Tavsif |
+| Bayroq | Standart | Tavsif |
 |---|---|---|
-| **"Powered by Gratis AI Agent" Footerni yashirish** | Off | Chat widget'ning pastki qismida ko'rsatiladigan brend belgisini olib tashlaydi. Oq-oq (white-label) loyihalar uchun tavsiya etiladi. |
-| **Maxsus Agent nomi** | *(bo'sh)* | Chat sarlavhasi va admin menyusidagi standart "Gratis AI Agent" yozuvini o'zingizning mahsulot nomingiz bilan almashtiradi. Standartni ishlatmoqchi bo'lsang, bo'sh qoldiring. |
-| **Agent tanlovchisini yashirish** | Off | Faollashtirilganida foydalanuvchilar beshta ichki agent orasida o'tishim mumkin bo'lmaydi. Joriy agent sozlamalar → Umumiy (Settings → General) da default sifatida belgilangan narsaga qotiriladi. |
-| **Sayt ikonkasini chat avatar sifatida ishlatish** | Off | Chat widget sarlavhasidagi standart AI ikonkasini WordPress sayt ikonkasiga almashtiradi (Appearance → Customize → Site Identity da sozlanadi).
+| **"Powered by Gratis AI Agent" futerini yashirish** | O‘chiq | Chat vidjetining pastki qismida ko‘rsatiladigan brending atributsiya qatorini olib tashlaydi. White-label joriy etishlar uchun tavsiya etiladi. |
+| **Maxsus Agent nomi** | *(bo‘sh)* | Chat sarlavhasi va admin menyusidagi standart "Gratis AI Agent" yorlig‘ini o‘zingizning mahsulot nomingiz bilan almashtiradi. Standartdan foydalanish uchun bo‘sh qoldiring. |
+| **Agent tanlagichini yashirish** | O‘chiq | Yoqilganda, foydalanuvchilar beshta ichki agent o‘rtasida almasha olmaydi. Joriy agent Settings → General bo‘limida standart sifatida sozlangan qiymatga mahkamlanadi. |
+| **Chat avatari sifatida Site Icon’dan foydalanish** | O‘chiq | Chat vidjeti sarlavhasidagi standart AI ikonkasini WordPress sayt ikonkasiga almashtiradi (Appearance → Customize → Site Identity ostida sozlanadi). |
 
-### O'zgarishlarni qo'llash
+### Avtomatlashtirish xavfsizligi bayroqlari {#automation-safety-flags}
 
-Har qanday bayroqni o'zgartirgandan so'ng **Settings-ni saqlash** tugmasini bosing. O'zgarishlar darhol kuchga kiradi — cache ni tozalash yoki pluginni qayta faollashtirish shart emas.
+Superdav AI Agent v1.18.0 xavfsizroq avtomatlashtirish ishga tushirishlari uchun inson tasdig‘i eshiklari va eslatma yozuvlarini taqdim etadi. Bu boshqaruvlar o‘rnatilgan paketga qarab feature flags yoki kengaytirilgan avtomatlashtirish sozlamalarida paydo bo‘lishi mumkin.
+
+| Bayroq | Standart | Tavsif |
+|---|---|---|
+| **Inson tasdig‘ini talab qilish** | Tavsiya etiladi: yoqilgan | Vakolatli foydalanuvchi taklif qilingan amalni ko‘rib chiqib tasdiqlamaguncha, sezgir avtomatlashtirishlarni pauzaga qo‘yadi. |
+| **Eslatmalarni deduplikatsiya qilish** | Yoqilgan | Qayta urinishlar yoki rejalashtirilgan ishga tushirishlar takroriy bildirishnomalarni yubormasligi uchun yuborilgan eslatmalarni qayd qiladi. |
+| **Taqvim vositalarini yoqish** | Sozlanmaguncha o‘chiq | Agentga sozlangan Google taqvimlari va tadbirlarini o‘qishga ruxsat beradi. |
+| **SMS bildirishnomalarini yoqish** | Sozlanmaguncha o‘chiq | Hisob ma’lumotlari saqlangandan keyin tasdiqlangan ish jarayonlariga TextBee SMS bildirishnomalarini yuborishga ruxsat beradi. |
+
+### O‘zgarishlarni qo‘llash {#applying-changes}
+
+Istalgan bayroqni almashtirgandan keyin **Save Settings** tugmasini bosing. O‘zgarishlar darhol kuchga kiradi — cache tozalash yoki pluginni qayta faollashtirish talab qilinmaydi.

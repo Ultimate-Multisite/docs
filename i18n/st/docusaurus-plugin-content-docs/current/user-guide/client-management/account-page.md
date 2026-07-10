@@ -3,7 +3,7 @@ title: Lapa la tsoalo la mohlokong oa morao
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Page ya Mofuta oa Morero oa Li-ntaba ea Li-ntaba ea Li-ntaba (v2)
+# Page ya Mofuta oa Morero oa Li-ntaba ea Li-ntaba ea Li-ntaba (v2) {#your-clients-account-page-v2}
 
 _**SEBOETSO: Le lipotso li fana ka ho Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ Ha ba bang ba le tšepo ea plan ea hau ka netefana ea hau, ba utloahanya ho ba l
 
 Haena mo lipotso lehle, re tla u rata ho hlalosa page ea morero oa li-ntaba le u tla bona eng ba bang ba ba ka bona le ba etsoang mo bathokin.
 
-## Page ea Morero
+## Page ea Morero {#the-account-page}
 
 Page ea morero e fihla ka ho tsamaisa **Account** mo dashboard ea hau ea li-ntaba.
 
@@ -25,7 +25,7 @@ Ha morero o fihla ho tloha mo tenant ea sovereign, panel ea li-ntaba ea motheo e
 
 Ha morero a tsamaea, o tla bona overview ea membership ea hau, address ea billing, invoices, domains, litaba tsa site, le ha u ka fetola **Site Template** (ha e le seo se fana ka netefana ea hau), mme o ka fetola membership ho plan e fapaneng, kapa ho sa tloha package kapa service e fapaneng ea hau. Re tla bona setlo se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se fapane se se f
 
-### Le Tlhaloso la Membership ea hau:
+### Le Tlhaloso la Membership ea hau: {#your-membership-overview}
 
 Block e lehle ho hlaha mmele oa website ea ba bang ba ba khale ho ntlha ho bona tsela ea plan ea bona le litšomo/packages tse di fetileng tse di fetileng. Block ena e bontša e le ntlha ea membership, sebope sa ho tšoa haholo, eng e fanaang ka plan le setšhaba/package le eng e fanaang, le hore e fanaang eng ka madi a bona ho baile le membership ena. Ho tla tseba ho e le **Active** (e fetileng), **Expired** (e fetileng) kapa **Canceled** (e fetileng).
 
@@ -41,7 +41,7 @@ Ha u tsamaea ho tšoa packages kapa services tse di fetileng ho membership ena, 
 
 A re tseba hore coupon codes haholo haholo haholo ho tšoa mmele ena ea change. Ha u sebelisang coupon code ka tsela ea ho tsamaea membership e fetileng, code e tla fanaang haholo haholo haholo ho membership ena e fetileng.
 
-### Ho Fetola Leletso la Madi a Baile:
+### Ho Fetola Leletso la Madi a Baile: {#updating-the-billing-address}
 
 Morale ea lekhotso la tšepo (account page), ba bo ba ka fetola leletso la ho tsamaea haholo (billing address). Ba ke ba hloka fa ba thobela **Update** e leng ho _Billing Address_.
 
@@ -51,7 +51,7 @@ Mohlodi o tla ba leba le mohlodi oa lisetso la bona. Re ea fa ba hloka fa ba tsa
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Ho fetola Template ea Lisetso:
+### Ho fetola Template ea Lisetso: {#changing-the-site-template}
 
 Ho ba ba ka fetola template ea lisetso la bona, u hloka fa u ea kwa **Ultimate Multisite > Settings > Sites** le ho fana ka (toggle on) bonako ea **Allow Template Switching**.
 
@@ -79,7 +79,7 @@ Ha u fana ka ho tsamaetsa (toggle on) confirmation le ho tsamaetsa **Process Swi
 
 Ba ba ka ba u sebelisa **Reset current template** ho fetola se le sefetang sa site ho se le teng ha ba batla ho fana ka ho fetola tsela, ha ho tsamaetsa tsela e fetileng, ho reset tsela e ka fetola bohlokoa ba site. Ka lebaka la hau, ba ba ba ka ba tsamaiswa haholo ha ba ba tseba hore o tla etsa se se fetang sa reset.
 
-### Ho fana ka Domain tsa ho custom:
+### Ho fana ka Domain tsa ho custom: {#adding-custom-domains}
 
 Ba ba le ka ba leka ho fana ka domain e fetileng (custom domain) ho tsela ea plan ea hau ka page ea account ea ba ba bang. Ho ba ba le ka ho sebelisa domain e fetileng, u laela **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ O tla nna le wina tse ntlha e ntlha e e tsamaisang sefaputso se se fetang se se 
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Tlhaloso e ntlha (Danger Zone):
+### Tlhaloso e ntlha (Danger Zone): {#changing-password}
 
 Re na le litlhoko tse pedi tse di tsamaisang ka sefaputso sa **Tlhaloso e ntlha** (Danger Zone): **Fana ka Ntlha** (Delete Site) le **Fana ka Aka** (Delete Account). Lezi le li tsamaisang ka Tlhaloso e ntlha ka ntlha le aka ka ntlha ka ntlha ka ntlha ka ntlha. Ho feta tse pedi, haholo ho tsamaisang ka Tlhaloso e ntlha ka ntlha le aka ka ntlha ka ntlha ka ntlha. Ho feta tse pedi, haholo ho tsamaisang ka Tlhaloso e ntlha ka ntlha le aka ka ntlha ka ntlha ka ntlha.
 

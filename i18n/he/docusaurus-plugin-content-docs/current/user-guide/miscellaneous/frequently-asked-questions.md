@@ -3,7 +3,7 @@ title: שאלות נפוצות
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# שאלות נפוצות
+# שאלות נפוצות {#frequently-asked-questions}
 
 הנה כמה **שאלות נפוצות** שעולות לעיתים קרובות בפניות לתמיכה.
 

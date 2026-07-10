@@ -3,11 +3,11 @@ title: Latviski tulkot Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite tulkojums
+# Ultimate Multisite tulkojums {#translating-ultimate-multisite}
 
 Ultimate Multisite ir izstrādāts angļu valodā, bet šis plugin ir pilnīgi tulkojams un mēs aktīvi labprasa tulkojumus.
 
-## Ņemēto pluginu tulkojumi
+## Ņemēto pluginu tulkojumi {#core-plugin-translations}
 
 Galvenais Ultimate Multisite plugin tiek tulkots caur oficiālo **WordPress.org tulkojumu platformu**:
 
@@ -24,7 +24,7 @@ Tas ir standarta WordPress savstarp komunītietes tulkojumus sistēma. Kad tulko
 
 Ja vēlaties kļūt par tulkojumus redaktoru savai valodai (spēj atņemt apstiprināt tulkojumus), sazinājieties caur [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Papildu pluginu tulkojumi
+## Papildu pluginu tulkojumi {#addon-translations}
 
 Papildu pluginu tulkojumi tiek tulkoti atsevišķi šajā vietnē:
 
@@ -32,11 +32,11 @@ Papildu pluginu tulkojumi tiek tulkoti atsevišķi šajā vietnē:
 
 Papildu pluginu tulkojumi pašlaik ir AI generēti kā sākuma punkts. Tie apgrāž visus atbalstītos valodas, bet var būt neaprakstītas frāzes vai neprecizitāties. Mēs labprasa cilvēku tulkojumus pārskatīt un ieteikt uzlabojumus, lai tie kļūtu vairāk dabiski un precīzi.
 
-## Vietējie tulkojumi
+## Vietējie tulkojumi {#local-translations}
 
 Ja vēlaties veikt translāciju vietē, nevis iesaistoties uzlabošanās (upstream), jums ir divas iespējas:
 
-### Izmantojot Poedit
+### Izmantojot Poedit {#using-poedit}
 
 Jūs varat izmantot desktop aplikāciju **[Poedit](https://poedit.net)**, lai tulkot `.pot` failu:
 
@@ -46,6 +46,6 @@ Jūs varat izmantot desktop aplikāciju **[Poedit](https://poedit.net)**, lai tu
 4. Saglabājiet -- Poedit automātiski izveido `.po` un `.mo` failus
 5. Ieksiet izveidoto failus `lang` failos
 
-### Izmantojot Loco Translate
+### Izmantojot Loco Translate {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin ļauj tulkot tieši no admin panel bez nepieciešamām desktop aprīkojumiem. Tas automātiski veido un kompilē translācijas failus jums par lietas.

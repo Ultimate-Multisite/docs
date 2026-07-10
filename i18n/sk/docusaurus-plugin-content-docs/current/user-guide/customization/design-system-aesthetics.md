@@ -3,11 +3,11 @@ title: Estetika Design systému
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Zručnosť v estetike Design Systemu
+# Zručnosť v estetike Design Systemu {#design-system-aesthetics-skill}
 
 **Zručnosť v estetike Design Systemu** je vedený prístup k jemnému upraveniu vizuálnej identicity vášho webu. Pomáha vám robiť konzistentné rozhodnutia o typografii, farbe, zameraní a tokenoch pohybu (motion tokens), ktoré definujú váš design systém.
 
-## Čo je estetika Design Systemu?
+## Čo je estetika Design Systemu? {#what-is-design-system-aesthetics}
 
 Estetika Design Systemu je štruktúrovaná zručnosť, ktorá zahŕňa:
 
@@ -20,9 +20,9 @@ Estetika Design Systemu je štruktúrovaná zručnosť, ktorá zahŕňa:
 
 Tieto rozhodnutia sú zachytávané v súbore `theme.json` vášho témy, čo vytvára jednotný vizuálny systém.
 
-## Prečo použiť estetiku Design Systemu?
+## Prečo použiť estetiku Design Systemu? {#why-use-design-system-aesthetics}
 
-### Konzistentnosť
+### Konzistentnosť {#consistency}
 
 Design systém zaručuje:
 
@@ -31,7 +31,7 @@ Design systém zaručuje:
 - Zameranie je vedomé a predvídateľné
 - Animácie sú jednotné
 
-### Efektívnosť
+### Efektívnosť {#efficiency}
 
 Namísto robienia návrhov na stránku za stránkou, vy:
 
@@ -39,7 +39,7 @@ Namísto robienia návrhov na stránku za stránkou, vy:
 - Používate ich všade
 - Aktualizujete globálne len cez zmenu jednej hodnoty
 
-### Flexibilita
+### Flexibilita {#flexibility}
 
 Môžete:
 
@@ -47,9 +47,9 @@ Môžete:
 - Experimentovať s rôznymi estetickými prvky
 - Udržiať konzistentnú značku, zatiaľ čo sa vyvíjate
 
-## Spúšťanie zručnosti v estetike Design Systemu
+## Spúšťanie zručnosti v estetike Design Systemu {#triggering-the-design-system-aesthetics-skill}
 
-### Manuálne aktivovanie
+### Manuálne aktivovanie {#manual-activation}
 
 Môžete si zručnosť začať kedykoľvek:
 
@@ -69,7 +69,7 @@ alebo
 "Prívesďte ma pri rozhodovaní o design systéme"
 ```
 
-### Automatické návrhy
+### Automatické návrhy {#automatic-suggestions}
 
 Agenti môžu odporúčať použitie zručnosti, keď:
 
@@ -78,9 +78,9 @@ Agenti môžu odporúčať použitie zručnosti, keď:
 - Chce sa zlepšiť vizuálnu konzistentnosť
 - Sú v príprave na spustenie vášho webu
 
-## Proces estetiky Designu
+## Proces estetiky Designu {#the-design-system-aesthetics-process}
 
-### Krok 1: Typografie
+### Krok 1: Typografie {#step-1-typography}
 
 Agent sa pýta po vašich výberoch fontov:
 
@@ -110,7 +110,7 @@ Agent potom definuje:
 - **Hmotnosť stupnice (Weight scale)**: Hmotnosti fontov (základná, stredná, tučná atď.)
 - **Výška riadku (Line height)**: Vzduch medzi riadkami pre čitavosť
 
-### Krok 2: Väčba palety
+### Krok 2: Väčba palety {#step-2-color-palette}
 
 ```
 Definujme vašu väcbu.
@@ -158,7 +158,7 @@ Agent definuje tokeny rozmerí (spacing):
 - Škála: xs, sm, md, lg, xl, 2xl
 - Špecifické hodnoty pre padding, margin, gap
 
-### Krok 4: Randý a stíny (Borders and Shadows)
+### Krok 4: Randý a stíny (Borders and Shadows) {#step-3-spacing}
 
 ```
 Vizualná hĺbka a definícia:
@@ -181,7 +181,7 @@ Agent vytvára:
 - Tokeny stínu pre úrovne zvýraznenia (elevation levels)
 - Tokeny šírky randí (border width tokens)
 
-### Krok 5: Pohob a animácie (Motion and Animation)
+### Krok 5: Pohob a animácie (Motion and Animation) {#step-4-borders-and-shadows}
 
 ```
 Ako by sa mal váš web cítiť pri interakcii?
@@ -203,9 +203,9 @@ Agent definuje:
 - Funkcie zaoblenia (ease-in, ease-out, ease-in-out)
 - Klíčové snímky animácií pre bežné interakcie
 
-## Aplikovanie estetiky designu systému
+## Aplikovanie estetiky designu systému {#step-5-motion-and-animation}
 
-### Automatické aplikovanie
+### Automatické aplikovanie {#applying-design-system-aesthetics}
 
 Po dokončení tejto úloh agent:
 
@@ -214,13 +214,13 @@ Po dokončení tejto úloh agent:
 3. Regeneruje štýle blokov, aby sa zhodovali s novým systémom
 4. Aktivuje aktualizované téma
 
-### Manuálne aplikovanie
+### Manuálne aplikovanie {#automatic-application}
 
 Môžete tiež upraviť `theme.json` priamo:
 
-## Zobrazenie Vašho Designu Systému
+## Zobrazenie Vašho Designu Systému {#manual-application}
 
-### Pýtajte sa na Agenta
+### Pýtajte sa na Agenta {#viewing-your-design-system}
 
 ```
 "Show me my design system"
@@ -234,13 +234,13 @@ alebo
 
 Agent vám zobrazí vaše typografie, farby, vzdialenosť a ostatné tokeny.
 
-### Zobraziť theme.json
+### Zobraziť theme.json {#ask-the-agent}
 
 Otevrite si priečinok `/wp-content/themes/[theme-name]/theme.json` v textovom editori, aby ste videli surové definície tokenov.
 
-## Aktualizácia Vašho Designu Systému
+## Aktualizácia Vašho Designu Systému {#view-themejson}
 
-### Rýchle aktualizácie
+### Rýchle aktualizácie {#updating-your-design-system}
 
 Pýtajte sa na agenta na konkrétne zmeny:
 
@@ -260,7 +260,7 @@ alebo
 "Change the heading font to a serif"
 ```
 
-### Plná redesign
+### Plná redesign {#quick-updates}
 
 Vyprogramujte znova schopnosť Design System Aesthetics:
 
@@ -270,7 +270,7 @@ Vyprogramujte znova schopnosť Design System Aesthetics:
 
 Toto vás presmeruje cez všetky rozhodnutia znova, začínajúcte s vašimi aktuálnymi hodnotami.
 
-### Časti aktualizácie
+### Časti aktualizácie {#full-redesign}
 
 Aktualizujte konkrétne aspekty:
 
@@ -278,15 +278,15 @@ Aktualizujte konkrétne aspekty:
 "Just update the color palette, keep everything else"
 ```
 
-## Najlepšie praxe pre Design Systém
+## Najlepšie praxe pre Design Systém {#partial-updates}
 
-### Konzistencia
+### Konzistencia {#design-system-best-practices}
 
 - Používajte rovnaké tokeny všade
 - Ne vytvárajte jednorazové farby alebo veľkosti
 - Odpovedajte na tokeny namiesto toho, aby ste hodnoty hardkodovali (vložíli priamo do kódu)
 
-### Názvy
+### Názvy {#consistency-1}
 
 Používajte jasné a významné názvy:
 
@@ -296,7 +296,7 @@ Používajte jasné a významné názvy:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Škálovateľnosť
+### Škálovateľnosť {#naming}
 
 Dokumentujte svoj dizajn systém:
 
@@ -304,9 +304,9 @@ Dokumentujte svoj dizajn systém:
 - Kedy použiť každý token
 - Výnimky a okrajové przypadky
 
-## Bežné vzory dizajnu systému
+## Bežné vzory dizajnu systému {#scalability}
 
-### Modern Minimalist
+### Modern Minimalist {#documentation}
 
 - Štipifikovaná typografia (Inter, Helvetica)
 - Omezená paleta farieb (2–3 farby)
@@ -314,7 +314,7 @@ Dokumentujte svoj dizajn systém:
 - Subtielne stíny
 - Plynulé, rýchle animácie
 
-### Ciepký a priateľský
+### Ciepký a priateľský {#common-design-system-patterns}
 
 - Mix štipifikovaných a bezštipifikovaných fontov
 - Ciepká paleta farieb (oranže, teplé šedé)
@@ -322,7 +322,7 @@ Dokumentujte svoj dizajn systém:
 - Jemné stíny
 - Hravé animácie
 
-### Profesionálny korporátny
+### Profesionálny korporátny {#modern-minimalist}
 
 - Čistý bezštipifikovaný font (Roboto, Open Sans)
 - Neutrálna paleta s akcentnú farbou
@@ -330,7 +330,7 @@ Dokumentujte svoj dizajn systém:
 - Minimálne stíny
 - Jemné prechody
 
-### Kreatívny a odvážny
+### Kreatívny a odvážny {#warm-and-friendly}
 
 - Charakteristická typografia
 - Odvážná paleta farieb
@@ -338,7 +338,7 @@ Dokumentujte svoj dizajn systém:
 - Silné stíny
 - Zameriať animácie
 
-## Úprava problémov (Troubleshooting)
+## Úprava problémov (Troubleshooting) {#professional-corporate}
 
 **Moje zmeny v dizajne systému sa neobjavujú**
 - Vyčistite cache prehliadača
@@ -356,7 +356,7 @@ Dokumentujte svoj dizajn systém:
 - Manuálne upravte `theme.json` na pôvodné hodnoty
 - Ponovte skicu s inými možnosťami
 
-## Nasledujúce kroky
+## Nasledujúce kroky {#creative-and-bold}
 
 Po definovaní vášho dizajnu systému:
 

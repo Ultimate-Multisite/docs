@@ -4,11 +4,11 @@ title: الإجراء - wu_page_load
 sidebar_label: wu_page_load
 _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 ---
-# Action: wu_page_load
+# Action: wu_page_load {#action-wupageload}
 
 السماح لمطوري الإضافات بإضافة خطافات إضافية إلى صفحاتنا.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,11 +16,11 @@ _i18n_hash: ad34b2f5095d3cd6f3c54172f800e3fd
 | $page_hook | `string` | خطاف الصفحة لهذه الصفحة. |
 | $admin_page | `self` | مثيل الصفحة. |
 
-### منذ
+### منذ {#since}
 
 - 1.8.2
 - 2.0.4: أضيف المعامل الثالث: مثيل الصفحة.
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L318) في السطر 318

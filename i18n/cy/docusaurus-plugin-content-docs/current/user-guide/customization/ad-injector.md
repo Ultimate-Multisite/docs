@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Adau'r ar eich rheol gyda Ultimate Multisite: Ad Injector
+# Adau'r ar eich rheol gyda Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Mae **Ultimate Multisite: Ad Injector** yn **add-on cyffredinol** sy'n rhoi'ch gweithredoedd i ddefnyddio adau ar eich planau o hyd y canlyniad eu redig.
 
@@ -35,7 +35,7 @@ Gallwch hefyd gael adau wedi'u cynnwys ar yr header o Pages Admin ar gyfer defny
 
 _Mynd i'r opsiwn Ad Code ar y Admin Panel os ydych chi eisiau dangos adau ar y back-end o'ch defnyddwyr._
 
-### Yn ymlaen o ddefnyddio adau
+### Yn ymlaen o ddefnyddio adau {#beyond-advertising}
 
 Gallwch hefyd ddefnyddio Ultimate Multisite: Ad Injector i offeru cefnogaeth i planau uchel.
 

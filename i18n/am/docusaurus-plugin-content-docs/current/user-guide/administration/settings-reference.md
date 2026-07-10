@@ -1,26 +1,46 @@
 ---
-title: ቅንብሮች ማጣቀሻ
+title: የቅንብሮች ማጣቀሻ
 sidebar_position: 11
-_i18n_hash: a68d4915aa631b125f2b3ad8a00750a4
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# የቅንብሮች ማጣቀሻ
+# የቅንብሮች ማጣቀሻ {#settings-reference}
 
-ይህ ገጽ በUltimate Multisite ውስጥ ዕለት ዕለት የአስተዳደር ስራዎችን እና በቅርቡ የተደረጉ የባህሪ ለውጦችን የሚያሳዩ ቅንብሮችን ይከታተላል።
+ይህ ገጽ የዕለት-ተዕለት አስተዳደርን እና በUltimate Multisite ውስጥ ያሉ የቅርብ ጊዜ የባህሪ ለውጦችን የሚነኩ ቅንብሮችን ይከታተላል።
 
-## ሌሎች አማራጮች
+## ሌሎች አማራጮች {#other-options}
 
-የ**Other Options** ክፍል በ**Ultimate Multisite > Settings > Login & Registration** ስር ይታያል።
+የ**ሌሎች አማራጮች** ክፍል በ**Ultimate Multisite > Settings > Login & Registration** ስር ይታያል።
 
 | ቅንብር | መግለጫ |
 |---|---|
-| **Enable Jumper** | በአስተዳደር አካባቢ የJumper ፈጣን የአሰሳ መሣሪያን ያሳያል። ወደ Ultimate Multisite ስክሪኖች፣ የኔትወርክ ነገሮች እና የሚደገፉ የአስተዳደር መድረሻዎች በቀጥታ ለመዝለል ይጠቀሙበት። ይህ አቋራጭ የማይታይ እንዲሆን ከፈለጉ ያጥፉት። |
+| **Jumperን አንቃ** | በadmin አካባቢ የJumper ፈጣን አሰሳ መሣሪያን ያሳያል። በቀጥታ ወደ Ultimate Multisite ማያ ገጾች፣ የአውታረ መረብ ነገሮች፣ እና የሚደገፉ የadmin መድረሻዎች ለመዝለል ይጠቀሙበት። ይህ አቋራጭ እንዲታይ ካልፈለጉ ያሰናክሉት። |
 
-## የስህተት ሪፖርት ማድረግ እና ቴሌሜትሪ
+## የስህተት ሪፖርት እና ቴሌሜትሪ {#error-reporting-and-telemetry}
 
-ቀደም ሲል የነበረው የስህተት ሪፖርት የማድረግ አማራጭ ቅንብር ከቅንብሮች ገጽ ተወግዷል። ማንነት የሌለው ቴሌሜትሪ (Anonymous telemetry) ተበጅቷል እና የሚያንቀሳቅስ (UI toggle) ለማብራት ምንም አማራጭ የለም።
+የቀድሞው የስህተት-ሪፖርት መርጦ-መግባት ቅንብር ከቅንብሮች ገጽ ተወግዷል። ስም-አልባ ቴሌሜትሪ ተሰናክሏል እና እሱን ለማንቃት የUI መቀያየሪያ የለም።
 
-የቅንብሮች ገጽ የውስጥ መመሪያዎችን (runbooks) ወይም ስክሪንሾቶችን የሚይዙ ከሆነ፣ አስተዳዳሪዎች መፈለግ የማይፈልጉት የድሮውን የስህተት ሪፖርት የማድረግ አማራጭ መስክ ማጣቀሻዎችን ያስወግዱ።
+ለቅንብሮች ገጽ የውስጥ ሩንቡክሶችን ወይም የማያ ገጽ ምስሎችን ካስተዳደሩ፣ አስተዳዳሪዎች ከእንግዲህ የሌለ ቅንብር እንዳይፈልጉ የድሮውን የስህተት-ሪፖርት መርጦ-መግባት መስክ ማጣቀሻዎች ያስወግዱ።
 
-## የማስመጥ/የማስወጣት ቅንብሮች
+## የማስመጣት/ማስወጣት ቅንብሮች {#importexport-settings}
 
-የ**Import/Export** ቅንብሮች ትብሌት ምን ቅንብሮችን እንደሚቆጣጠር ይገልጻል እና ለጣቢያ እና ለኔትወርክ መዝገቦች (archives) በቀጥታ ወደ **Ultimate Multisite > Site Export** ይገናኛል። ለimport/export ውቅረጫ (configuration) የቅንብሮች ትብሌትን ይጠቀሙ፣ ለብቸኛ-ጣቢያ (single-site) የexport/import የስራ ሂደት (workflow) **Tools > Export & Import** ይጠቀሙ፣ እና ሙሉ የኔትወርክ ኤክስፖርት መዝገብ (full Network Export archive) ሲያስፈልግ የSite Export መሣሪያን ይጠቀሙ።
+የ**ማስመጣት/ማስወጣት** ቅንብሮች ትር የትኞቹን ቅንብሮች እንደሚቆጣጠር ይገልጻል እና ለጣቢያ እና ለአውታረ መረብ አርካይቮች በቀጥታ ወደ **Ultimate Multisite > Site Export** ያገናኛል። ለማስመጣት/ማስወጣት ውቅር የቅንብሮች ትሩን ይጠቀሙ፣ ለነጠላ-ጣቢያ የማስወጣት/ማስመጣት የሥራ ፍሰት **Tools > Export & Import** ይጠቀሙ፣ እና ሙሉ የNetwork Export አርካይቭ ሲያስፈልግዎ የSite Export መሣሪያን ይጠቀሙ።
+
+## የDomain Seller HostAfrica ቀሪ ሂሳብ ማስጠንቀቂያ {#domain-seller-hostafrica-balance-warning}
+
+የDomain Seller ተጨማሪ ሞጁል ከHostAfrica ጋር ሲገናኝ፣ የእንደገና ሻጭ Account ቀሪ ሂሳብ ለአስተማማኝ የዶሜይን ምዝገባ ወይም እድሳት ሂደት በጣም ዝቅተኛ ሲሆን የአውታረ መረብ አስተዳዳሪዎች ሊዘጉት የሚችሉ የቀሪ-ሂሳብ-ዝቅተኛ ማስጠንቀቂያ አሁን ያያሉ።
+
+ይህን ማሳሰቢያ እንደ የክዋኔ ማስጠንቀቂያ ይውሰዱት፦ ተጨማሪ የተከፈሉ የዶሜይን ምዝገባዎችን ከመቀበልዎ በፊት የHostAfrica እንደገና ሻጭ ቀሪ ሂሳብን ይሙሉ፣ ከዚያም ምዝገባዎችና እድሳቶች በመደበኛ ሁኔታ መቀጠል እንደሚችሉ ለማረጋገጥ ወደ Domain Seller ቅንብሮች ወይም የዶሜይን-ክትትል ማያ ገጽ ይመለሱ።
+
+## የAI አቅራቢ አገናኝ ቅንብሮች {#ai-provider-connector-settings}
+
+የAI አቅራቢ አገናኝ ቅንብሮች አሁን የሚደገፉትን የOAuth Account ገንዳዎች ብቻ ያሳያሉ፦
+
+| አቅራቢ | የማዋቀር ፍሰት |
+|---|---|
+| **Anthropic Max** | በOAuth አዝራር አንድ ወይም ተጨማሪ Anthropic Max Accounts ያገናኙ። በsandbox ውስጥ ያለ አሳሽ መዛወሩን በራስ-ሰር ማጠናቀቅ ካልቻለ የእጅ OAuth አማራጭን ይጠቀሙ። |
+| **OpenAI ChatGPT/Codex** | የChatGPT Accounts በተመሳሳይ የOAuth ገንዳ የሥራ ፍሰት ያገናኙ። በአገናኝ የሚደገፉ ክዋኔዎች Account ከተገናኘ በኋላ የChatGPT Codex መሣሪያ ጥሪዎችን መጠቀም ይችላሉ። |
+| **Google AI Pro** | የGoogle AI Pro Accounts በOAuth ያገናኙ፣ ከዚያ Account ዝርዝሩ ወዲያውኑ ካልተዘመነ አገናኙን ያድሱ። |
+
+Cursor Pro ከእንግዲህ የሚደገፍ አቅራቢ አይደለም። የCursor Pro የማዋቀር መስኮችን ወይም የአገናኝ መንገዶችን የሚጠቅሱ የድሮ የውስጥ ማያ ገጽ ምስሎችን፣ ሩንቡክሶችን፣ ወይም የመጀመሪያ መግቢያ ደረጃዎችን ያስወግዱ።
+
+የአቅራቢ Accounts ሲያክሉ ወይም ሲያስወግዱ፣ ለሚታደሰው ወይም ለሚሰረዘው Account ትክክለኛ የኢሜይል አድራሻ ያስገቡ እና በአገናኝ-የተደገፉ ክዋኔዎችን ከመፈተሽዎ በፊት የአቅራቢውን ቅንብሮች ያስቀምጡ።

@@ -4,13 +4,13 @@ title: Action - wp_ultimo_host_providers_load
 sidebar_label: wp_ultimo_host_providers_load
 _i18n_hash: ed2a9f4b4673279a3fcd422e53788118
 ---
-# Action: wp_ultimo_host_providers_load
+# Action: wp_ultimo_host_providers_load {#action-wpultimohostprovidersload}
 
 Developerਾਂ ਨੂੰ wp plugins ਰਾਹੀਂ ਆਪਣੇ ਖੁਦ ਦੇ host provider integrations ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/managers/class-domain-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-domain-manager.php#L1107) ਵਿੱਚ ਲਾਈਨ 1107 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।

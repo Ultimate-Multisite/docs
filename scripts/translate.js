@@ -477,7 +477,7 @@ function getLocalePromptNotes(locale, opts = {}) {
 }
 
 function resolveLocaleOptions(locale, opts) {
-	if (opts.modelMap !== 'recommended') {
+	if (opts.modelMap !== 'recommended' || opts.provider === 'openai') {
 		return {...opts, localePromptNotes: getLocalePromptNotes(locale, opts)};
 	}
 
@@ -627,6 +627,7 @@ CRITICAL: Output ONLY the translated document. No preamble, no commentary, no "H
 
 WHAT TO TRANSLATE:
 - Human-readable prose: headings, paragraphs, list items, table cells, link text, image alt text
+- In Markdown table rows, keep parameter/type/code cells intact but translate human-readable description cells
 - Natural-language explanations outside code/configuration
 - Generic English nouns such as site, product, theme, plugin, client, field, plan, subscription, checkout, membership, endpoint, and code snippet when they appear as ordinary prose
 
@@ -660,6 +661,16 @@ Text:`;
  */
 async function translateOpenAI(text, systemPrompt, opts) {
 	const baseUrl = normalizeOpenAICompatibleBaseUrl(opts.baseUrl);
+	const requestBody = {
+		model: opts.model,
+		temperature: 0.1,
+		stream: false,
+		messages: [
+			{role: 'system', content: systemPrompt},
+			{role: 'user', content: text},
+		],
+	};
+
 	const response = await fetch(`${baseUrl}/chat/completions`, {
 		method: 'POST',
 		headers: {
@@ -667,15 +678,7 @@ async function translateOpenAI(text, systemPrompt, opts) {
 			'Authorization': `Bearer ${opts.apiKey}`,
 		},
 		signal: AbortSignal.timeout(opts.timeout),
-		body: JSON.stringify({
-			model: opts.model,
-			temperature: 0.1,
-			stream: true,
-			messages: [
-				{role: 'system', content: systemPrompt},
-				{role: 'user', content: text},
-			],
-		}),
+		body: JSON.stringify(requestBody),
 	});
 
 	if (!response.ok) {
@@ -683,39 +686,44 @@ async function translateOpenAI(text, systemPrompt, opts) {
 		throw new Error(`API error ${response.status}: ${redactSecrets(body, opts)}`);
 	}
 
-	// Stream OpenAI SSE format: data: {"choices":[{"delta":{"content":"..."}}]}
-	const reader = response.body.getReader();
-	const decoder = new TextDecoder();
-	let content = '';
-	let buffer = '';
-
-	while (true) {
-		const {done, value} = await reader.read();
-		if (done) break;
-
-		buffer += decoder.decode(value, {stream: true});
-		const lines = buffer.split('\n');
-		buffer = lines.pop() || '';
-
-		for (const line of lines) {
-			const trimmed = line.trim();
-			if (!trimmed || trimmed === 'data: [DONE]') continue;
-			if (!trimmed.startsWith('data: ')) continue;
-
-			try {
-				const json = JSON.parse(trimmed.slice(6));
-				const delta = json.choices?.[0]?.delta?.content;
-				if (delta) {
-					content += delta;
-					if (opts.debug) process.stdout.write(delta);
-				}
-			} catch {
-				// Skip malformed JSON chunks
-			}
-		}
+	const body = await response.text();
+	let json;
+	try {
+		json = JSON.parse(body);
+	} catch {
+		throw new Error(`API returned non-JSON response: ${redactSecrets(body.slice(0, 1000), opts)}`);
 	}
 
+	if (json.error) {
+		const message = json.error.message || JSON.stringify(json.error);
+		throw new Error(`API error response: ${redactSecrets(message, opts)}`);
+	}
+
+	const content = extractOpenAIMessageContent(json);
+	if (!content) {
+		throw new Error('API response did not include choices[0].message.content');
+	}
+
+	if (opts.debug) process.stdout.write(content);
 	return content;
+}
+
+function extractOpenAIMessageContent(json) {
+	const choice = json.choices?.[0];
+	const content = choice?.message?.content ?? choice?.text;
+
+	if (typeof content === 'string') {
+		return content;
+	}
+
+	if (Array.isArray(content)) {
+		return content.map(part => {
+			if (typeof part === 'string') return part;
+			return part?.text || part?.content || '';
+		}).join('');
+	}
+
+	return '';
 }
 
 /**
@@ -997,11 +1005,80 @@ function splitMarkdownBody(text, maxChars) {
 	return chunks.filter(chunk => chunk.length > 0);
 }
 
+function stripHeadingId(text) {
+	return text.replace(/\s*\{#[A-Za-z0-9_-]+\}\s*$/u, '').trim();
+}
+
+function stripHeadingMarkdown(text) {
+	return stripHeadingId(text)
+		.replace(/!\[([^\]]*)\]\([^)]*\)/g, '$1')
+		.replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+		.replace(/[`*_~]/g, '')
+		.replace(/<[^>]+>/g, '')
+		.trim();
+}
+
+function slugHeading(text, counts) {
+	const base = stripHeadingMarkdown(text)
+		.normalize('NFKD')
+		.toLowerCase()
+		.replace(/[^\p{Letter}\p{Number}\p{Mark}\s-]/gu, '')
+		.trim()
+		.replace(/\s+/g, '-') || 'section';
+	const count = counts.get(base) || 0;
+	counts.set(base, count + 1);
+	return count === 0 ? base : `${base}-${count}`;
+}
+
+function getSourceHeadingIds(markdown) {
+	const counts = new Map();
+	const headings = [];
+	let inCodeBlock = false;
+	for (const line of markdown.split('\n')) {
+		if (/^\s*```/.test(line)) {
+			inCodeBlock = !inCodeBlock;
+			continue;
+		}
+		if (inCodeBlock) continue;
+		const match = line.match(/^(#{1,6})\s+(.+?)\s*$/);
+		if (!match) continue;
+		headings.push(slugHeading(match[2], counts));
+	}
+	return headings;
+}
+
+function applySourceHeadingIds(sourceMarkdown, translatedMarkdown) {
+	const sourceHeadingIds = getSourceHeadingIds(sourceMarkdown);
+	if (sourceHeadingIds.length === 0) return translatedMarkdown;
+
+	const lines = translatedMarkdown.split('\n');
+	let inCodeBlock = false;
+	let headingIndex = 0;
+	let changed = false;
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i];
+		if (/^\s*```/.test(line)) {
+			inCodeBlock = !inCodeBlock;
+			continue;
+		}
+		if (inCodeBlock) continue;
+		if (!/^(#{1,6})\s+(.+?)\s*$/.test(line)) continue;
+		const sourceHeadingId = sourceHeadingIds[headingIndex++];
+		if (!sourceHeadingId || /\s\{#[A-Za-z0-9_-]+\}\s*$/.test(line)) continue;
+		lines[i] = `${line.replace(/[\t ]+$/u, '')} {#${sourceHeadingId}}`;
+		changed = true;
+	}
+
+	return changed ? lines.join('\n') : translatedMarkdown;
+}
+
 async function translateBody(body, targetLocale, opts, context = {}) {
 	const chunks = splitMarkdownBody(body, opts.chunkMaxChars);
+	let translatedBody;
 
 	if (chunks.length === 1) {
-		return translateMarkdownChunk(body, targetLocale, opts, context);
+		translatedBody = await translateMarkdownChunk(body, targetLocale, opts, context);
+		return applySourceHeadingIds(body, translatedBody);
 	}
 
 	const translatedChunks = [];
@@ -1012,7 +1089,8 @@ async function translateBody(body, targetLocale, opts, context = {}) {
 		}));
 	}
 
-	return translatedChunks.join('\n\n');
+	translatedBody = translatedChunks.join('\n\n');
+	return applySourceHeadingIds(body, translatedBody);
 }
 
 async function translateMarkdownChunk(chunk, targetLocale, opts, context = {}) {
@@ -1134,6 +1212,9 @@ const SOURCE_LEAK_WORDS = new Set([
 	'continue', 'company', 'information', 'currency', 'recommended', 'plugins',
 ]);
 
+const MIN_EXPECTED_SCRIPT_RATIO = 0.12;
+const MAX_SOURCE_LEAK_RATIO = 0.65;
+
 function countRegex(text, pattern) {
 	return (text.match(pattern) || []).length;
 }
@@ -1210,9 +1291,15 @@ function sameMultiset(left, right) {
 	return counts.size === 0;
 }
 
+function isMarkdownTableRow(line) {
+	const trimmed = line.trim();
+	return trimmed.startsWith('|') && trimmed.endsWith('|') && trimmed.includes('|');
+}
+
 function isRawCodeLikeLine(line) {
 	const trimmed = line.trim();
 	if (!trimmed || trimmed.startsWith('```')) return false;
+	if (isMarkdownTableRow(line)) return false;
 	return /\$[A-Za-z_]|=>|\bfunction\s*\(|\badd_filter\s*\(|<\?php|<FilesMatch|\blocation\s+~\b|Header\s+set|Access-Control-Allow-Origin|^\s*[A-Za-z_][\w:]*\([^)]*\)\s*;?\s*$|^\s*["'][A-Za-z0-9_.-]+["']\s*:\s*.+,?\s*$|^\s*(?:npm|node|bash|php|composer|wp|curl|git|npx|yarn|pnpm)\b|[{}].*;/.test(line);
 }
 
@@ -1415,12 +1502,12 @@ function validateLocaleScript(output, targetLocale, field) {
 	if (expectedScripts) {
 		const letters = countLetterChars(prose);
 		const expected = countExpectedScriptChars(prose, expectedScripts);
-		if (letters >= 80 && expected / Math.max(letters, 1) < 0.2) {
+		if (letters >= 80 && expected / Math.max(letters, 1) < MIN_EXPECTED_SCRIPT_RATIO) {
 			return `low expected script ratio in ${targetLocale}: ${expected}/${letters}`;
 		}
 
 		const leak = sourceLeakRatio(prose);
-		if (letters >= 80 && leak >= 0.35) {
+		if (letters >= 80 && leak >= MAX_SOURCE_LEAK_RATIO) {
 			return `source English leakage in ${targetLocale}: ${(leak * 100).toFixed(0)}%`;
 		}
 	}

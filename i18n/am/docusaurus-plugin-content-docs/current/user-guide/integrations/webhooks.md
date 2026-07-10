@@ -1,60 +1,54 @@
 ---
-title: ዌብሁክስ
+title: Webhooks
 sidebar_position: 15
-_i18n_hash: 2246e3cc1ed172d701d898e04088bf29
+_i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# ስለ Webhooks የመጀመሪያ እይታ (v2)
+# ስለ Webhooks (v2) የመጀመሪያ እይታ {#a-first-look-on-webhooks-v2}
 
-_**ትኩረት፡ ይህ ባህሪ ወይም ጽሑፍ ለላቁ ተጠቃሚዎች ብቻ መሆኑን ልብ ይበሉ።**_
+_**ትኩረት፦ ይህ ባህሪ ወይም ጽሑፍ ለላቀ ተጠቃሚዎች መሆኑን ያስታውሱ።**_
 
-**Webhook** ማለት Ultimate Multisiteን የመሰለ መተግበሪያ ወይም ሶፍትዌር ለሌሎች መተግበሪያዎች በቅጽበት (real-time) መረጃ የመስጠት መንገድ ነው። Webhook መረጃን ወይም የውሂብ ጥቅሎችን (payloads) ክስተቱ በሚከሰትበት ጊዜ ወደ ሌሎች መተግበሪያዎች ይልካል። ይህ ማለት **መረጃውን ወዲያውኑ ያገኛሉ** ማለት ነው።
+**webhook** ማለት እንደ Ultimate Multisite ያለ app ወይም software ለሌሎች መተግበሪያዎች በእውነተኛ ጊዜ መረጃ የሚያቀርብበት መንገድ ነው። webhook መረጃ ወይም payloads እንደተከሰተ ለሌሎች መተግበሪያዎች ያደርሳል፣ ይህም **መረጃ ወዲያውኑ ያገኛሉ** ማለት ነው።
 
-ይህንን፣ Ultimate Multisiteን የተላከውን ወይም የተወሰነ መረጃ ወደ ሌላ CRM ወይም ስርዓት ለማስተሳሰር ወይም ለማስተላለፍ በሚፈልጉበት ጊዜ በጣም ጠቃሚ ነው። ለምሳሌ፣ አዲስ የተጠቃሚ አካውንት በሚፈጠርበት ጊዜ የተጠቃሚውን ስም እና የኢሜል አድራሻ ወደ መረብ ዝርዝር (mailing list) መላክ ሊኖርብዎ ይችላል።
+Ultimate Multisite ውስጥ ክስተት በተነሳ ቁጥር የተወሰነ መረጃ ወደ ሌላ CRM ወይም ስርዓት ማዋሃድ ወይም ማስተላለፍ ካስፈለገዎት ይህ ይጠቅማል። ለምሳሌ፣ አዲስ የተጠቃሚ Account በተፈጠረ ቁጥር የተጠቃሚውን ስም እና የኢሜይል አድራሻ ወደ የመልዕክት ዝርዝር መላክ ያስፈልግዎታል።
 
-## Webhook እንዴት መፍጠር ይቻላል
+## webhook እንዴት መፍጠር እንደሚቻል {#how-to-create-a-webhook}
 
-Webhook ለመፍጠር፣ ወደ network admin dashboardዎ ይሂዱ። በ**Ultimate Multisite > Webhooks > Add New Webhook** ላይ ይጫኑ።
+webhook ለመፍጠር፣ ወደ የኔትወርክ አስተዳዳሪ Dashboard ይሂዱ። **Ultimate Multisite > Webhooks > Add New Webhook** ላይ ጠቅ ያድርጉ።
 
-![Webhooks list page with Add New Webhook button](/img/admin/webhooks-list.png)
+![Add New Webhook ቁልፍ ያለው ባዶ Webhooks ዝርዝር ገጽ](/img/admin/webhooks-list-empty.png)
 
-ከዚያም የwebhook ቅንብርን ማርትዕ ይችላሉ፦
+ከዚያ የwebhook ውቅሩን ማርትዕ ይችላሉ፦
 
-![Webhook edit interface](/img/admin/webhook-edit.png)
+![Name፣ Event እና URL መስኮች ያሉት Add New Webhook ቅጽ](/img/admin/webhook-add-modal.png)
 
-አዲስ webhook ሲፈጥሩ **ስም (Name), URL,** እና **ክስተት (Event)** ባሉ መረጃዎች ይጠየቃሉ። ለwebhookዎ የፈለጉትን ስም መጠቀም ይችላሉ። በጣም አስፈላጊዎቹ መስኮች ደግሞ URL እና Event ናቸው።
+አዲስ webhook ሲፈጥሩ **Name, URL,** እና **Event** ያሉ መረጃዎች ይጠየቃሉ። ለwebhookዎ የፈለጉትን ማንኛውንም ስም መጠቀም ይችላሉ። በጣም አስፈላጊዎቹ መስኮች URL እና Event ናቸው።
 
-![New webhook form with Name, URL, and Event fields](/img/admin/webhooks-list.png)
+![URL መስክን እና payload ቅድመ እይታን የሚያሳይ Webhook ማርትያ በይነገጽ](/img/admin/webhook-url-field.png)
 
-URL ማለት Ultimate Multisite የ**ውሂብ ጥቅልን (payload) ወይም መረጃን** ሊልከው የሚፈልገው **መድረሻ (endpoint) ወይም አድራሻ** ነው። ይህ መረጃን የሚቀበለው መተግበሪያ ነው።
+URL Ultimate Multisite **payload ወይም መረጃ** የሚልክበት **endpoint ወይም መድረሻ** ነው። ይህ መረጃውን የሚቀበለው መተግበሪያ ነው።
 
-Zapier ተጠቃሚዎች ከሶስተኛ ወገን መተግበሪያ ጋር ለመተሳሰር ቀላል የሚያደርግ በጣም የተለመደ መፍትሄ ነው። እንደ Zapier ባሉ መድረክ ባይኖርዎት፣ መረጃን ሊይዝ እና ሊያሰራበት የሚችል የራሳቸውን ብጁ ተግባር (custom function) በበይበቃሉ። ስለ **Ultimate Multisite webhook በZapier እንዴት መጠቀም እንደሚቻል** በዚህ ጽሑፍ ይመልከቱ።
+Zapier ተጠቃሚው ከ3ኛ ወገን መተግበሪያ ጋር ውህደትን ቀላል ለማድረግ የሚጠቀምበት በጣም የተለመደ መፍትሄ ነው። እንደ Zapier ያለ መድረክ ከሌለ፣ መረጃውን የሚይዝ እና የሚያስኬድ ብጁ function በእጅ መፍጠር ያስፈልግዎታል። **Ultimate Multisite webhook ከZapier ጋር እንዴት መጠቀም እንደሚቻል** ላይ ያለውን ይህን ጽሑፍ ይመልከቱ።
 
-በዚህ ጽሑፍ፣ webhook እንዴት እንደሚሰራ መሰረታዊ ጽንሰ-ሀሳብ እና በUltimate Multisite ውስጥ ያሉ ክስተቶችን እንመለከታለን። ምንም ኮድ ሳይጽፉ የendpoint ለመፍጠር እና የpayload ለመያዝ የሚያስችል [requestbin.com](https://requestbin.com/) የተባለ የሶስተኛ ወገን ድረ-ገጽ እንጠቀማለን። _**ማስጠንቀቂያ፡ የሚያደርገው ነገር ቢኖር መረጃው እንደተቀበለ ብቻ ማሳየት ነው።**_ ለpayload ምንም አይነት ሂደት ወይም እርምጃ አይደረግም።
+በዚህ ጽሑፍ፣ webhook እንዴት እንደሚሰራ እና በUltimate Multisite ውስጥ ያሉትን ክስተቶች መሰረታዊ ጽንሰ-ሀሳብ እንመለከታለን። [requestbin.com](https://requestbin.com/) የተባለ የ3ኛ ወገን ጣቢያ እንጠቀማለን። ይህ ጣቢያ ምንም ኮድ ሳንጽፍ endpoint እንድንፈጥር እና payload እንድንይዝ ያስችለናል። _**ማስተባበያ፦ የሚያደርገው ሁሉ መረጃው መቀበሉን ማሳየት ብቻ ነው።**_ በpayload ላይ ምንም ሂደት ወይም ምንም ዓይነት እርምጃ አይደረግም።
 
-ወደ [requestbin.com](https://requestbin.com/) ይሂዱ እና Create Request Bin የሚለውን ይጫኑ።
+ወደ [requestbin.com](https://requestbin.com/) ይሂዱ እና Create Request Bin ላይ ጠቅ ያድርጉ።
 
-![RequestBin website Create Request Bin button](/img/admin/webhooks-list.png)
+ያንን ቁልፍ ከጠቁ በኋላ፣ Account ካለዎት እንዲገቡ ወይም እንዲመዘገቡ ይጠይቃል። Account ካለዎት በቀጥታ ወደ የእነሱ Dashboard ይመራዎታል። በDashboardአቸው ላይ፣ Ultimate Multisite webhookዎን በመፍጠር ላይ ሊጠቀሙበት የሚችሉትን endpoint ወይም URL ወዲያውኑ ያያሉ።
 
-ከዚህ ቁልፍ በኋላ፣ ቀድሞ አካውንት ካሎት መግባት (log in) ወይም መመዝገብ (sign up) ይጠይቃል። ቀድሞ አካውንት ካሎት ወደ dashboardዎ ይወስደዎታል። በdashboardዎ ላይ፣ Ultimate Multisite webhookዎን ለመፍጠር ሊጠቀሙበት የሚችሉትን endpoint ወይም URL ወዲያውኑ ያያሉ።
+ይቀጥሉና URL ይቅዱ እና ወደ Ultimate Multisite ይመለሱ። endpointን በURL መስክ ላይ ያስገቡ እና ከdropdown ክስተት ይምረጡ። በዚህ ምሳሌ፣ **Payment Received** እንመርጣለን።
 
-![RequestBin dashboard showing the endpoint URL](/img/admin/webhooks-list.png)
+ይህ ክስተት ተጠቃሚ ክፍያ በሚፈጽም ጊዜ ሁሉ ይነሳል። የሚገኙት ሁሉም ክስተቶች፣ መግለጫቸው፣ እና payloads በገጹ ታች ተዘርዝረዋል። webhookን ለማስቀመጥ **Add New Webhook** ቁልፍን ጠቅ ያድርጉ።
 
-URLን ይቅዱ እና ወደ Ultimate Multisite ይመለሱ። endpointን በURL መስክ ላይ ያስቀምጡ እና ከድራፕዳውን ውስጥ አንድ ክስተት ይምረጡ። በዚህ ምሳሌ፣ **Payment Received** እንመርጣለን።
+![Payment Received ተመርጦ ያለው Webhook ክስተት dropdown](/img/admin/webhook-event-picker.png)
 
-ይህ ክስተት ተጠቃሚ ክፍያ በሚፈጽምበት ጊዜ ሁሉ ይከሰታል። ያሉባቸው ሁሉም ክስተቶች፣ መግለጫዎቻቸው እና የpayloads ስብስቦች በገጹ ግርጌ ተዘርዝረዋል። webhookን ለማስቀመጥ **Add New Webhook** የሚለውን ቁልፍ ይጫኑ።
+አሁን የፈጠርነው webhook እየሰራ መሆኑን ለማየት ወደ endpoint የሙከራ ክስተት መላክ እንችላለን። ይህን የፈጠርነው webhook ስር **Send Test Event** ላይ በመጠቅ ማድረግ እንችላለን።
 
-![Webhook configured with Payment Received event](/img/admin/webhooks-list.png)
+![አንድ የተዋቀረ webhook እና Send Test እርምጃ የሚያሳይ Webhooks ዝርዝር](/img/admin/webhooks-list-populated.png)
 
-አሁን የፈጠርነውን webhook እየሰራ መሆኑን ለማየት ወደ endpoint የሙከራ ክስተት (test event) መላክ እንችላለን። ይህንን የምናደርገው በፈጠርነው webhook ስር ባለው **Send Test Event** ላይ በመጫን ነው።
+ይህ ሙከራው እንደተሳካ የሚናገር የማረጋገጫ መስኮት ያሳያል።
 
-![Send Test Event option under the webhook](/img/admin/webhooks-list.png)
+![የሙከራ payload ከተላከ በኋላ የWebhook የሙከራ ክስተት ውጤት](/img/admin/webhook-test-result.png)
 
-ይህ ሙከራው ስኬታማ መሆኑን የሚያሳይ ማረጋገጫ መስኮት ያሳያል።
+አሁን ወደ _Requestbin_ ጣቢያ ብንመለስ፣ payload አንዳንድ የሙከራ መረጃ ይዞ መቀበሉን እናያለን።
 
-![Webhook test event successful confirmation](/img/admin/webhooks-list.png)
-
-አሁን ወደ _Requestbin_ ድረ-ገጽ ከተመለስን፣ የሙከራ መረጃ የያዘ payload መቀበልን እናያለን።
-
-![RequestBin showing received webhook payload data](/img/admin/webhooks-list.png)
-
-ይህ webhook እና endpoints እንዴት እንደሚሰሩ መሰረታዊ መርህ ነው። የራሳችሁን ብጁ endpoint መፍጠር ካለባችሁ፣ ከUltimate Multisite የምታገኙትን መረጃ ለማስኬድ የራሳችሁን ብጁ ተግባር (custom function) መፍጠር ይኖርባችኋል።
+ይህ webhook እና endpoints እንዴት እንደሚሰሩ መሰረታዊ መርህ ነው። ብጁ endpoint ለመፍጠር ከፈለጉ፣ ከUltimate Multisite የሚቀበሉትን መረጃ ለማስኬድ ብጁ function መፍጠር ያስፈልግዎታል።

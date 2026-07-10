@@ -1,0 +1,150 @@
+---
+title: Fananana mpanofa maro
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy {#multi-tenancy}
+
+Zarao amin'ny mpizara sy tahiry angona samihafa ny zana-tranonkala mba hahazoana fahombiazana sy fiarovana
+
+## Hevi-dehibe amin'ny famoahana kinova 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 manampy ny fototra ho an'ny mpanofa mahaleotena ho an'ny workflow fitokanana famokarana:
+
+- Autologin mpanofa tsy mitahiry toe-javatra miaraka amin'ny fitsidihana SSO fohy andro iainana sy voaaro amin'ny replay.
+- Fitokanana tahiry angona sy rafitra rakitra isaky ny zana-tranonkala ho an'ny mpanofa mahaleotena.
+- Fahaiza-manao multi-tenancy Hostinger ho an'ny fanomezana mpanofa mahafantatra host.
+- Vavahady fanamarinana fifindra-monina mahaleotena ho an'ny fanamarinana angona tranainy sy fanodinana push async.
+- Famatorana host tahiry angona amin'ny milina iray ihany azo amboarina ho an'ny fametrahana Bedrock, FrankenPHP, ary localhost.
+- Fanatsarana ny bootstrap mpanofa, mpanoratra tahiry angona, bootstrap skema, ary fanomezana mpampiasa.
+- Teardown mahaleotena azo antoka kokoa izay manadio ny credential an'ny mpanofa.
+
+Jereo ny torolalan'ny mpampiasa ho an'ny [workflow fifindra-monina mahaleotena](/user-guide/getting-started/sovereign-migration-workflow), [fitokanana multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), ary [asa momba ny mpanofa mahaleotena](/user-guide/administration/sovereign-tenant-operations).
+
+## Fepetra takiana {#requirements}
+
+- WordPress 5.3 na ambony
+- PHP 7.4 na ambony
+- Multisite Ultimate plugin (mavitrika)
+
+## Fametrahana {#installation}
+
+1. Ampakaro ao amin'ny lahatahiry `/wp-content/plugins/` anao ny rakitra addon
+2. Alefaso ny plugin amin'ny alalan'ny menio 'Plugins' ao amin'ny WordPress
+3. Amboary ao amin'ny admin tambajotra ny fikirakirana addon
+
+## Fampivoarana {#development}
+
+### Fanomanana {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Firafitry ny tetikasa {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Kilasy PHP sy include
+│   ├── class-multisite-ultimate-updater.php  # Mpitantana fanavaozana
+│   └── class-multi_tenancy-main.php             # Fiasa fototra
+├── tests/                        # Fitsapana unit
+│   ├── bootstrap.php            # Bootstrap fitsapana
+│   ├── class-*-base.php         # Kilasy fitsapana fototra
+│   └── class-*-test.php         # Tranga fitsapana
+├── views/                       # Rakitra template
+├── assets/                      # Asset static
+│   ├── css/                     # Stylesheet
+│   ├── js/                      # Rakitra JavaScript
+│   └── images/                  # Sary
+├── lang/                        # Rakitra fiteny
+├── composer.json                # Fiankinan-doha PHP
+├── package.json                 # Fiankinan-doha Node.js
+├── phpunit.xml.dist             # Fikirakirana PHPUnit
+├── .phpcs.xml.dist              # Fikirakirana fenitra kaody
+└── rector.php                   # Fitsipika fanavaozana kaody
+```
+
+### Fitsapana {#testing}
+
+Ny addon dia ahitana rafitra fitsapana feno:
+
+- **Fitsapana Unit**: Fitsapana mifototra amin'ny PHPUnit miaraka amin'ny suite fitsapana WordPress
+- **Kilasy Fitsapana Fototra**: Manome fomba mpanampy ho an'ny tranga fitsapana mahazatra
+- **Saron'ny Fitsapana**: Voafantina hanara-maso ny saron'ny kaody
+- **Fitsapana Multisite**: Mihazakazaka ao amin'ny tontolo multisite ny fitsapana
+
+### Fenitra kaody {#code-standards}
+
+- **Fenitra Fanoratana Kaody WordPress**: Ampiharina amin'ny alalan'ny PHPCS
+- **Fifanarahana PHP 7.4+**: Tohanana ny endri-javatra PHP maoderina
+- **Fanadihadiana Static**: Fampidirana PHPStan ho an'ny fanamarinana karazana
+- **Fanavaozana Kaody**: Fitsipika Rector ho an'ny fanavaozana PHP
+
+### Rafitra fananganana {#build-system}
+
+- **Fanodinana Asset**: Fampihenana habe ho an'ny rakitra CSS/JS
+- **Fandikan-teny**: Famoronana rakitra POT
+- **Famonosana**: Famoronana arisiva ho an'ny fizarana
+- **Fomba Fampivoarana**: Asset tsy nohafohezina ho an'ny debugging
+
+## Fikirakirana {#configuration}
+
+Ny addon dia manohana safidy fikirakirana isan-karazany azo idirana amin'ny alalan'ny interface admin tambajotra.
+
+### Fikirakirana mpanofa mahaleotena {#sovereign-tenant-configuration}
+
+Ho an'ny mpanofa mahaleotena, amboary ny tahiry angon'ny mpanofa, ny faka rafitra rakitra, ny famatorana host tahiry angona, ary ny fahaiza-manao host alohan'ny handefasana fifamoivoizana mankany amin'ny mpanofa. Alefaso ny fanamarinana fifindra-monina aorian'ny fiovana rehetra misy fiantraikany amin'ny credential tahiry angona, famatorana host, routing, na fanomezana mpampiasa.
+
+Ampiasao ny `localhost` raha tsy hoe ny runtime an'ny mpanofa sy ny fahazoan-dalana tahiry angona dia manantena socket eo an-toerana na fidirana amin'ny milina iray ihany. Ampiasao ny `127.0.0.1` na anaran'ny host serivisy raha izany no host fanomezana fahazoan-dalana voafantina amin'ny provider anao.
+
+### Fahaiza-manao Hostinger {#hostinger-capability}
+
+Ny fahaiza-manao multi-tenancy Hostinger dia miasa miaraka amin'ny token fampidirana Hostinger iombonana. Hamarino fa hita ao amin'ny hPanel ny domain, manondro ny Account Hostinger ny DNS, ary mifanaraka amin'ny hPanel ny fikirakirana tahiry angon'ny mpanofa alohan'ny fanamarinana.
+
+## Hook sy Filters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - Alefa aorian'ny fanombohana addon
+- `ultimate-multisite-addon-template_loaded` - Alefa rehefa voapetraka avokoa ny rakitra addon rehetra
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Ovao ny fikirakirana addon
+- `ultimate-multisite-addon-template_enabled` - Soloy ny sata fampandehanana/famonoana addon
+
+## Lisansa {#license}
+
+Ity addon ity dia manana lisansa GPL v3 na aoriana.
+
+## Fanohanana {#support}
+
+Ho an'ny fanohanana sy antontan-taratasy, tsidiho ny [MultisiteUltimate.com](https://multisiteultimate.com)
+## Changelog {#changelog}
+
+- Kinova 1.2.0 (2026-06-03): ampio autologin mpanofa tsy mitahiry toe-javatra, fahaiza-manao multi-tenancy Hostinger, fitokanana tahiry angona sy rafitra rakitra isaky ny zana-tranonkala, vavahady fanamarinana fifindra-monina mahaleotena, fanatsarana bootstrap mpanofa/mpanoratra tahiry angona, famatorana host MySQL azo amboarina, ary teardown mahaleotena azo antoka kokoa.
+
+- Kinova 1.0.1 (2025-09-28): ovay anarana ho ultimate-multisite ny prefix; havaozy ny text domain; fampiakarana kinova.
+
+
+- Kinova  (2025-09-28): ovay anarana ho ultimate-multisite ny prefix; havaozy ny text domain; fampiakarana kinova.

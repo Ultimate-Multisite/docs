@@ -1,29 +1,29 @@
 ---
-title: મફત AI એજન્ટ સેટિંગ્સ
+title: Gratis AI Agent સેટિંગ્સ
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Settings
+# Gratis AI Agent સેટિંગ્સ {#gratis-ai-agent-settings}
 
-Gratis AI Agent માં **Settings → Advanced** સ્ક્રીન v1.5.0 માં રજૂ કરાયેલા બેકએન્ડ ઇન્ટિગ્રેશન્સ માટે એડમિનિસ્ટ્રેટર-લેવલની કન્ફિગરેશન પ્રદાન કરે છે. આ પેજ **Feedback Endpoint** ફીલ્ડ્સ અને તેના અપેક્ષિત ફોર્મેટનું દસ્તાવેજીકરણ કરે છે.
+Gratis AI Agent માં **સેટિંગ્સ → એડવાન્સ્ડ** સ્ક્રીન બેકએન્ડ ઇન્ટિગ્રેશન્સ માટે એડમિનિસ્ટ્રેટર-સ્તરની કૉન્ફિગરેશન આપે છે. આ પેજ feedback forwarding, search provider keys, managed Superdav service setup, Google Calendar controls, TextBee SMS settings, અને નેટવર્ક-વ્યાપી feature flags દસ્તાવેજિત કરે છે.
 
-## Accessing Settings
+## સેટિંગ્સ ઍક્સેસ કરવી {#accessing-settings}
 
-1. WordPress admin માં, **Gratis AI Agent → Settings** પર જાઓ.
-2. **Advanced** ટેબ પર ક્લિક કરો.
+1. WordPress એડમિનમાં, **Gratis AI Agent → સેટિંગ્સ** પર જાઓ.
+2. **એડવાન્સ્ડ** ટૅબ પર ક્લિક કરો.
 
-## Feedback Endpoint Configuration
+## Feedback Endpoint કૉન્ફિગરેશન {#feedback-endpoint-configuration}
 
-ફીડબેક એન્ડપોઇન્ટ ત્યારે POST requests મેળવે છે જ્યારે કોઈ યુઝર થમ્બ્સ-ડાઉન બટન, ઓટો-પ્રોમ્પ્ટ બેનર, અથવા `/report-issue` કમાન્ડ દ્વારા ફીડબેક સબમિટ કરે છે.
+feedback endpoint AI agent પાસેથી POST વિનંતીઓ પ્રાપ્ત કરે છે જ્યારે પણ વપરાશકર્તા thumbs-down બટન, auto-prompt banner, અથવા `/report-issue` command દ્વારા feedback સબમિટ કરે છે.
 
-| Field | Description |
+| ક્ષેત્ર | વર્ણન |
 |---|---|
-| **Feedback Endpoint URL** | જે URL ફીડબેક સબમિશનને JSON બોડી સાથે HTTP POST requests તરીકે મેળવે છે. |
-| **Feedback API Key** | દરેક ફીડબેક request ના `Authorization` header માં મોકલાતો bearer token. જો તમારા એન્ડપોઇન્ટને ઓથેન્ટિકેશનની જરૂર ન હોય તો ખાલી રાખો. |
+| **Feedback Endpoint URL** | તે URL જે JSON body સાથે HTTP POST વિનંતીઓ તરીકે feedback સબમિશન્સ પ્રાપ્ત કરે છે. |
+| **Feedback API Key** | દરેક feedback વિનંતીના `Authorization` header માં મોકલાતો bearer token. જો તમારા endpoint ને authentication ની જરૂર ન હોય તો ખાલી રાખો. |
 
-### Expected JSON Payload
+### અપેક્ષિત JSON Payload {#expected-json-payload}
 
-તમારા ફીડબેક એન્ડપોઇન્ટમાં ઓછામાં ઓછા નીચેના ફીલ્ડ્સ સાથે JSON બોડી સ્વીકારવી આવશ્યક છે:
+તમારા feedback endpoint ને ઓછામાં ઓછા નીચેના ક્ષેત્રો ધરાવતી JSON body સ્વીકારવી આવશ્યક છે:
 
 ```json
 {
@@ -34,72 +34,119 @@ Gratis AI Agent માં **Settings → Advanced** સ્ક્રીન v1.5.0
 }
 ```
 
-વાતચીતના સંદર્ભ પર આધાર રાખીને પેલોડમાં વધારાના ફીલ્ડ્સ હાજર હોઈ શકે છે.
+વાતચીતના સંદર્ભના આધારે payload માં વધારાના ક્ષેત્રો હાજર હોઈ શકે છે.
 
-### `triage_category` Values
+### `triage_category` મૂલ્યો {#triagecategory-values}
 
-AI triage layer પેલોડને ફોરવર્ડ કરતા પહેલા `triage_category` માટે નીચેનામાંથી એક મૂલ્ય સોંપે છે:
+AI triage સ્તર payload ફૉરવર્ડ કરતા પહેલાં `triage_category` ને નીચેના મૂલ્યોમાંથી એક અસાઇન કરે છે:
 
-| Value | Meaning |
+| મૂલ્ય | અર્થ |
 |---|---|
-| `factual_error` | સહાયક દ્વારા ખોટી તથ્ય માહિતી આપવામાં આવી છે. |
-| `unhelpful_answer` | પ્રતિસાદ તકનીકી રીતે સાચો હતો પરંતુ ઉપયોગી નહોતો. |
-| `inappropriate_content` | પ્રતિસાદમાં એવી સામગ્રી હતી જે યુઝર્સને બતાવવી ન જોઈએ. |
-| `other` | ફીડબેક કોઈ જાણીતા કેટેગરી સાથે મેળ ખાતો ન હતો. |
+| `factual_error` | assistant એ ખોટી તથ્યાત્મક માહિતી આપી. |
+| `unhelpful_answer` | પ્રતિભાવ તકનીકી રીતે સાચો હતો પરંતુ ઉપયોગી નહોતો. |
+| `inappropriate_content` | પ્રતિભાવમાં એવી સામગ્રી હતી જે વપરાશકર્તાઓને બતાવવી ન જોઈએ. |
+| `other` | feedback જાણીતી શ્રેણી સાથે મેળ ખાતો નહોતો. |
 
-### Authentication
+### Authentication {#authentication}
 
-જો તમારા એન્ડપોઇન્ટને ઓથેન્ટિકેશનની જરૂર હોય, તો **Feedback API Key** ફીલ્ડમાં તમારો bearer token સેટ કરો. એજન્ટ મોકલે છે:
+જો તમારા endpoint ને authentication ની જરૂર હોય, તો **Feedback API Key** ક્ષેત્રને તમારા bearer token પર સેટ કરો. agent મોકલે છે:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-જો **Feedback API Key** ફીલ્ડ ખાલી હોય, તો કોઈ `Authorization` header મોકલવામાં આવતો નથી.
+જો **Feedback API Key** ક્ષેત્ર ખાલી હોય, તો કોઈ `Authorization` header મોકલાતું નથી.
 
-### Disabling Feedback Collection
+### Feedback Collection અક્ષમ કરવી {#disabling-feedback-collection}
 
-**Feedback Endpoint URL** અને **Feedback API Key** બંને ફીલ્ડ ખાલી રાખો. થમ્બ્સ-ડાઉન બટન અને ફીડબેક UI યુઝર્સ માટે દેખાતા રહે છે, પરંતુ સબમિશન કોઈ બાહ્ય સર્વિસને ફોરવર્ડ થતા નથી.
+**Feedback Endpoint URL** અને **Feedback API Key** બંને ક્ષેત્રો ખાલી રાખો. thumbs-down બટન અને feedback UI વપરાશકર્તાઓને દેખાતા રહે છે, પરંતુ સબમિશન્સ કોઈ બાહ્ય સેવા પર ફૉરવર્ડ થતા નથી.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-**Advanced** ટેબ પર, **Brave Search API Key** ફીલ્ડ [Internet Search](../configuration/internet-search) ક્ષમતાને સક્ષમ કરે છે.
+**એડવાન્સ્ડ** ટૅબ પર પણ, **Brave Search API Key** ક્ષેત્ર [ઇન્ટરનેટ શોધ](../configuration/internet-search) ક્ષમતા સક્ષમ કરે છે.
 
-| Field | Description |
+| ક્ષેત્ર | વર્ણન |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard માંથી તમારી API key. AI assistant માં ઇન્ટરનેટ સર્ચને સક્ષમ કરવા માટે જરૂરી. |
+| **Brave Search API Key** | Brave Search developer dashboard માંથી તમારી API key. AI assistant માં ઇન્ટરનેટ શોધ સક્ષમ કરવા માટે આવશ્યક. |
 
-ફીલ્ડ લેબલ Brave Search API સાઇન-અપ પેજ માટે એક ક્લિક કરી શકાય તેવા લિંક સાથે આવે છે. ઇન્ટરનેટ સર્ચને ડિસેબલ કરવા માટે ખાલી રાખો.
+ક્ષેત્રના લેબલમાં Brave Search API sign-up page માટે ક્લિક કરી શકાય તેવી લિંક શામેલ છે. ઇન્ટરનેટ શોધ અક્ષમ કરવા માટે ખાલી રાખો.
 
-આ ફીચર પર એન્ડ-યુઝર દસ્તાવેજીકરણ માટે [Internet Search](../configuration/internet-search) જુઓ.
+આ સુવિધા વિશે અંતિમ-વપરાશકર્તા દસ્તાવેજીકરણ માટે [ઇન્ટરનેટ શોધ](../configuration/internet-search) જુઓ.
 
-## Feature Flags
+## સંચાલિત Superdav સેવા {#managed-superdav-service}
 
-v1.9.0 માં પણ રજૂ કરાયેલ, **Settings → Feature Flags** ટેબ વૈકલ્પિક કાર્યક્ષમતા માટે ટોગલ સ્વિચ પ્રદાન કરે છે. દરેક ફ્લેગ નેટવર્ક-વ્યાપી રીતે કાં તો સક્ષમ (enabled) હોય છે અથવા નિષ્ક્રિય (disabled); હાલમાં આ સમયે કોઈ પ્રતિ-સાઇટ ઓવરરાઇડ નથી.
+Superdav AI Agent v1.18.0 સમર્થિત સાઇટ્સ માટે સંચાલિત Superdav સેવા endpoints અને આપમેળે connection provisioning ઉમેરે છે. જ્યારે તમારી સાઇટને મેન્યુઅલી કૉન્ફિગર કરેલા સેવા endpoint ની બદલે hosted provider સાથે કનેક્ટ થવું જોઈએ ત્યારે આ controls નો ઉપયોગ કરો.
 
-### Accessing Feature Flags
+| ક્ષેત્ર | વર્ણન |
+|---|---|
+| **સંચાલિત Superdav સેવા** | સમર્થિત સાઇટ્સ માટે hosted Superdav સેવા connection સક્ષમ કરે છે. |
+| **Connection Provision કરો** | આપમેળે endpoint અને credential provisioning શરૂ કરે છે. સાઇટે managed provider નો ઉપયોગ કરવો જોઈએ તેની પુષ્ટિ કર્યા પછી આનો ઉપયોગ કરો. |
+| **સેવા Endpoint / Connection Status** | provisioning પછી વર્તમાન endpoint અથવા connection સ્થિતિ બતાવે છે. |
 
-1. WordPress admin માં, **Gratis AI Agent → Settings** પર જાઓ.
-2. **Feature Flags** ટેબ પર ક્લિક કરો.
+provisioning પછી, managed-service workflows પર નિર્ભર રહેતા પહેલાં સેટિંગ્સ સાચવો અને connection status ચકાસો. જો provisioning નિષ્ફળ જાય, તો બતાવેલી retry guidance સમીક્ષા કરો અને પુષ્ટિ કરો કે સાઇટને hosted provider નો ઉપયોગ કરવાની પરવાનગી છે.
 
-### Access Control Flags
+## Google Calendar કૉન્ફિગરેશન {#google-calendar-configuration}
 
-| Flag | Default | Description |
+જ્યારે Superdav AI Agent v1.18.0 calendar સુવિધાઓ સક્ષમ હોય, ત્યારે agent કૉન્ફિગર કરેલા calendars અને event વિગતો વાંચી શકે છે. Calendar tools read-oriented છે અને schedule-aware reminders, attendee follow-up, અને contact matching માટે ઉપયોગી છે.
+
+| ક્ષેત્ર | વર્ણન |
+|---|---|
+| **Google Calendar Credentials** | calendar data વાંચવા માટે જરૂરી credentials અથવા token connection સંગ્રહે છે. |
+| **Calendar Selection** | agent કયા કૉન્ફિગર કરેલા calendars તપાસી શકે તે મર્યાદિત કરે છે. |
+| **Calendar Connection Status** | વર્તમાન credentials calendars અને events વાંચી શકે છે કે કેમ તેની પુષ્ટિ કરે છે. |
+
+calendar credentials ને agent ને જરૂરી calendars સુધી મર્યાદિત રાખો. જો status expired token સૂચવે તો credentials ફરી કનેક્ટ કરો અથવા rotate કરો.
+
+## TextBee SMS સૂચનાઓ {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 કૉન્ફિગર કરેલા notification workflows માટે SMS provider તરીકે TextBee ઉમેરે છે. SMS સૂચનાઓને સંવેદનશીલ અથવા user-facing messages માટે human approval gates સાથે જોડવી જોઈએ.
+
+| ક્ષેત્ર | વર્ણન |
+|---|---|
+| **TextBee API Key** | TextBee SMS provider ને વિનંતીઓ authenticate કરે છે. |
+| **TextBee Device / Sender** | provider દ્વારા જરૂરી હોય ત્યારે outgoing messages માટે ઉપયોગમાં લેવાતા TextBee sender અથવા device પસંદ કરે છે. |
+| **SMS Notifications Enabled** | મંજૂર workflows ને text-message notifications મોકલવાની મંજૂરી આપે છે. SMS મોકલવાનું અટકાવવા માટે disabled રાખો. |
+
+માત્ર administrator-owned number પર test message મોકલો, પછી scheduled અથવા attendee-facing reminders સક્ષમ કરતા પહેલાં approval-gate વર્તન પુષ્ટિ કરો.
+
+## Feature Flags {#feature-flags}
+
+v1.9.0 માં પણ રજૂ કરાયેલ, **સેટિંગ્સ → Feature Flags** ટૅબ વૈકલ્પિક functionality માટે toggle switches આપે છે. દરેક flag નેટવર્ક-વ્યાપી enabled અથવા disabled હોય છે; આ સમયે per-site override નથી.
+
+### Feature Flags ઍક્સેસ કરવી {#accessing-feature-flags}
+
+1. WordPress એડમિનમાં, **Gratis AI Agent → સેટિંગ્સ** પર જાઓ.
+2. **Feature Flags** ટૅબ પર ક્લિક કરો.
+
+### Access Control Flags {#access-control-flags}
+
+| ફ્લેગ | ડિફોલ્ટ | વર્ણન |
 |---|---|---|
-| **Restrict to Administrators** | Off | જ્યારે સક્ષમ કરવામાં આવે છે, ત્યારે ફક્ત `administrator` રોલ ધરાવતા યુઝર્સ જ AI Agent chat panel ખોલી શકે છે. અન્ય તમામ રોલને તેના બદલે "Contact your administrator" મેસેજ દેખાય છે. |
-| **Restrict to Network Admins** | Off | જ્યારે મલ્ટિસાઇટ નેટવર્ક પર સક્ષમ કરવામાં આવે છે, ત્યારે ફક્ત સુપર એડમિન જ એજન્ટનો ઉપયોગ કરી શકે છે. વ્યક્તિગત સાઇટ એડમિન બ્લોક થાય છે. જો બંને સક્ષમ હોય તો તે "Restrict to Administrators" પર પ્રાયોરિટી લે છે. |
-| **Allow Subscriber Access** | Off | જ્યારે સક્ષમ કરવામાં આવે છે, ત્યારે `subscriber` રોલ ધરાવતા યુઝર્સ ચેટ ઇન્ટરફેસનો ઉપયોગ કરી શકે છે પરંતુ તે ફક્ત વાંચન-માત્ર (read-only) ક્ષમતાઓ સુધી મર્યાદિત છે (કોઈ પોસ્ટ બનાવવી કે સેટિંગ્સ બદલવી નહીં). |
-| **Disable for Non-Members** | Off | Ultimate Multisite membership status સાથે ઇન્ટિગ્રેટ થાય છે. જ્યારે સક્ષમ કરવામાં આવે છે, ત્યારે જે સાઇટ્સમાં સક્રિય સભ્યપદ (active membership) નથી તે માટે ચેટ છુપાયેલ છે. |
+| **Administrators સુધી મર્યાદિત કરો** | બંધ | સક્રિય હોય ત્યારે, માત્ર `administrator` ભૂમિકાવાળા વપરાશકર્તાઓ AI Agent ચેટ પેનલ ખોલી શકે છે. બાકીની બધી ભૂમિકાઓને બદલે "તમારા administrator નો સંપર્ક કરો" સંદેશ દેખાય છે. |
+| **Network Admins સુધી મર્યાદિત કરો** | બંધ | multisite નેટવર્ક પર સક્રિય હોય ત્યારે, માત્ર Super Admins agent નો ઉપયોગ કરી શકે છે. વ્યક્તિગત site admins ને અવરોધિત કરવામાં આવે છે. જો બંને સક્રિય હોય તો "Administrators સુધી મર્યાદિત કરો" કરતાં તેને પ્રાથમિકતા મળે છે. |
+| **Subscriber Access મંજૂર કરો** | બંધ | સક્રિય હોય ત્યારે, `subscriber` ભૂમિકાવાળા વપરાશકર્તાઓ ચેટ ઇન્ટરફેસનો ઉપયોગ કરી શકે છે પરંતુ માત્ર વાંચન-માત્ર ક્ષમતાઓ સુધી મર્યાદિત રહે છે (કોઈ પોસ્ટ બનાવવી કે સેટિંગ્સ ફેરફારો નહીં). |
+| **Non-Members માટે અક્ષમ કરો** | બંધ | Ultimate Multisite સભ્યપદ સ્થિતિ સાથે એકીકૃત થાય છે. સક્રિય હોય ત્યારે, સક્રિય સભ્યપદ ન ધરાવતા સાઇટ્સ માટે ચેટ છુપાય છે. |
 
-### Branding Flags
+### બ્રાન્ડિંગ ફ્લેગ્સ {#branding-flags}
 
-| Flag | Default | Description |
+| ફ્લેગ | ડિફોલ્ટ | વર્ણન |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | ચેટ વિજેટના તળિયે દેખાતી બ્રાન્ડિંગ એટ્રિબ્યુશન લાઇન દૂર કરે છે. વ્હાઇટ-લેબલ ડિપ્લોયમેન્ટ માટે ભલામણ કરેલ છે. |
-| **Custom Agent Name** | *(blank)* | ચેટ હેડર અને એડમિન મેનૂમાં ડિફોલ્ટ "Gratis AI Agent" લેબલને તમારા પોતાના પ્રોડક્ટના નામથી બદલે છે. ડિફોલ્ટનો ઉપયોગ કરવા માટે ખાલી રાખો. |
-| **Hide Agent Picker** | Off | જ્યારે સક્ષમ કરવામાં આવે છે, ત્યારે યુઝર્સ પાંચ બિલ્ટ-ઇન એજન્ટ્સ વચ્ચે સ્વિચ કરી શકતા નથી. વર્તમાન એજન્ટ Settings → General માં ડિફોલ્ટ તરીકે જે કન્ફિગર કરેલો છે તેના પર ફિક્સ રહે છે. |
-| **Use Site Icon as Chat Avatar** | Off | ચેટ વિજેટ હેડરમાં ડિફોલ્ટ AI આઇકનને WordPress સાઇટ આઇકન (Appearance → Customize → Site Identity હેઠળ સેટ કરેલ) સાથે બદલે છે. |
+| **"Powered by Gratis AI Agent" Footer છુપાવો** | બંધ | ચેટ વિજેટના તળિયે બતાવવામાં આવતી બ્રાન્ડિંગ એટ્રિબ્યુશન લાઇન દૂર કરે છે. વ્હાઇટ-લેબલ ડિપ્લોયમેન્ટ્સ માટે ભલામણ કરાયેલ. |
+| **કસ્ટમ Agent નામ** | *(ખાલી)* | ચેટ હેડર અને એડમિન મેનુમાં ડિફોલ્ટ "Gratis AI Agent" લેબલને તમારા પોતાના પ્રોડક્ટ નામથી બદલે છે. ડિફોલ્ટ વાપરવા માટે ખાલી છોડો. |
+| **Agent Picker છુપાવો** | બંધ | સક્રિય હોય ત્યારે, વપરાશકર્તાઓ પાંચ બિલ્ટ-ઇન agents વચ્ચે સ્વિચ કરી શકતા નથી. વર્તમાન agent Settings → General માં ડિફોલ્ટ તરીકે જે ગોઠવાયેલ હોય તે પર સ્થિર રહે છે. |
+| **ચેટ Avatar તરીકે Site Icon વાપરો** | બંધ | ચેટ વિજેટ હેડરમાં ડિફોલ્ટ AI ચિહ્નને WordPress site icon થી બદલે છે (Appearance → Customize → Site Identity હેઠળ સેટ કરાયેલ). |
 
-### Applying Changes
+### ઓટોમેશન સલામતી ફ્લેગ્સ {#automation-safety-flags}
 
-કોઈપણ ફ્લેગને ટોગલ કર્યા પછી **Save Settings** પર ક્લિક કરો. ફેરફારો તરત જ અસર કરે છે — કેશ ફ્લશ અથવા પ્લગઇન રીએક્ટિવેશનની જરૂર નથી.
+Superdav AI Agent v1.18.0 વધુ સુરક્ષિત ઓટોમેશન રન્સ માટે માનવીય મંજૂરી ગેટ્સ અને રિમાઇન્ડર રેકોર્ડ્સ રજૂ કરે છે. આ નિયંત્રણો ઇન્સ્ટોલ કરેલા પેકેજ પર આધાર રાખીને ફીચર ફ્લેગ્સ અથવા અદ્યતન ઓટોમેશન સેટિંગ્સમાં દેખાઈ શકે છે.
+
+| ફ્લેગ | ડિફોલ્ટ | વર્ણન |
+|---|---|---|
+| **માનવીય મંજૂરી આવશ્યક** | ચાલુ રાખવાની ભલામણ | કોઈ અધિકૃત વપરાશકર્તા પ્રસ્તાવિત ક્રિયાની સમીક્ષા કરીને પુષ્ટિ કરે ત્યાં સુધી સંવેદનશીલ ઓટોમેશન્સને વિરામ આપે છે. |
+| **રિમાઇન્ડર ડિડ્યુપ્લિકેશન** | ચાલુ | મોકલાયેલા રિમાઇન્ડર્સ રેકોર્ડ કરે છે જેથી ફરી પ્રયાસો અથવા નિર્ધારિત રન્સ ડુપ્લિકેટ સૂચનાઓ મોકલે નહીં. |
+| **Calendar Tools સક્રિય કરો** | ગોઠવાય ત્યાં સુધી બંધ | agent ને ગોઠવાયેલા Google કેલેન્ડર્સ અને ઇવેન્ટ્સ વાંચવાની મંજૂરી આપે છે. |
+| **SMS Notifications સક્રિય કરો** | ગોઠવાય ત્યાં સુધી બંધ | ઓળખપત્રો સાચવાયા પછી મંજૂર વર્કફ્લોઝને TextBee SMS સૂચનાઓ મોકલવાની મંજૂરી આપે છે. |
+
+### ફેરફારો લાગુ કરવું {#applying-changes}
+
+કોઈપણ ફ્લેગ ટૉગલ કર્યા પછી **Settings સાચવો** ક્લિક કરો. ફેરફારો તરત અમલમાં આવે છે — કોઈ કૅશ ફ્લશ અથવા plugin પુનઃસક્રિયકરણ જરૂરી નથી.

@@ -3,13 +3,13 @@ title: Registreringsflowet
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registreringsflow (v2)
+# Registreringsflow (v2) {#the-registration-flow-v2}
 
 _**VIGTIG BEMÆRK: Denne artikel henviser til Ultimate Multisite version 2.x.**_
 
 Brugere kan registrere sig på din netværk på forskellige måder. De kan bruge dit registreringsformular eller et delbart link til en forudvalgt plan. Her viser vi, hvordan dine kunder kan registrere sig på dit netværk ved hjælp af de tilgængelige veje og hvad der sker efter, at de har registreret sig på dit netværk.
 
-## Brug af registreringsformular:
+## Brug af registreringsformular: {#using-the-registration-form}
 
 Dette er den standardregistreringsproces. Du opretter en registreringsside med et **checkout form**, og det er her dine kunder vil gå hen for at registrere sig på dit netværk og abonnere på en plan. Du kan have flere registreringssider, hver med et forskelligt registreringsformular, hvis du ønsker det.
 
@@ -35,13 +35,13 @@ Hvis de har registreret sig på en betalt plan eller e-mailverificering ikke er 
 
 ![Hjemmeside aktiveret med link til login til dashboard](/img/frontend/site-activated.png)
 
-## Brug af en delbar link:
+## Brug af en delbar link: {#using-a-shareable-link}
 
 Processen med at registrere sig ved hjælp af en delbar link er grundlæggende den samme som registreringsformularen. Den eneste forskel er, at ved brug af et delbart link kan dine kunder have et produkt eller en websitetemplet forudvalgt på kassen (se afsnittet Forudvalg af produkter og templer via URL-parametre) eller måske et kuponkode tilføjet (se afsnittet Brug af URL-parametre).
 
 Registreringsprocessen vil være den samme: de skal udfylde deres navn, brugernavn, e-mailadresse, websitets navn og titel osv., men planen eller templet vil allerede være forudvalgt for dem.
 
-### Registrering med manuel betaling:
+### Registrering med manuel betaling: {#registering-using-manual-payments}
 
 Hvis du ikke ønsker at bruge PayPal, Stripe eller nogen anden betalingsgateway tilbudt af Ultimate Multisite eller dets add-on integrationer, kan du bruge manuelle betalinger til dine kunder. På denne måde kan du generere en faktura for dem at betale hos din foretrukne betalingsbehandler efter de har registreret sig på dit netværk.
 

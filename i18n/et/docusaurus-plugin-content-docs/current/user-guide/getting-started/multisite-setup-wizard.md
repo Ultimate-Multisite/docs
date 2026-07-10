@@ -3,7 +3,7 @@ title: Multisite seadistusjuhend
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Seadistusju
+# Multisite Seadistusju {#multisite-setup-wizard}
 
 Ultimate Multisite sisaldab sissejuhatavast tööriista, mis automaatselt muudab tavalise WordPress-installatsiooni WordPress Multisite võrku. See elimina vajaduse manuaalselt muuta `wp-config.php` faili või käivitada database käske.
 
@@ -11,13 +11,13 @@ Ultimate Multisite sisaldab sissejuhatavast tööriista, mis automaatselt muudab
 Kui teie WordPress installatsioon on juba töötab Multisite võrkuna, saate seda samm ületada täiesti. Sisaldaja ilmub ainult siis, kui Multisite ei ole veel aktiveeritud.
 :::
 
-## Kui sisaldaja ilmub?
+## Kui sisaldaja ilmub? {#when-does-the-wizard-appear}
 
 Kui aktiveerite Ultimate Multisite tavalise (ei-Multisite) WordPress installatsioonil, tuvastab plugi, et Multisite ei ole aktiivne, ja suunab teid automaatselt Multisite seadistusjuhendile instead of tavalise seadistusjuhendiga.
 
 Saate seda ka päästa otseselt **WP Admin > Ultimate Multisite > Multisite Setup** meeldivale.
 
-## Esimendid
+## Esimendid {#prerequisites}
 
 Sisaldaja käivitamise enne, et alustada, veenduge, et:
 
@@ -29,7 +29,7 @@ Sisaldaja käivitamise enne, et alustada, veenduge, et:
 Sisaldaja muudab teie `wp-config.php` faili ja luuakse uusi database tabelid. Luue alati kopija enne jätkamist.
 :::
 
-## Samm 1: tervitus
+## Samm 1: tervitus {#step-1-welcome}
 
 Esimene ekraan selgitab, mida WordPress Multisite on ja mida sisaldaja teeb:
 
@@ -42,11 +42,11 @@ Esimene ekraan selgitab, mida WordPress Multisite on ja mida sisaldaja teeb:
 
 Klõpsake **Jätka** edasi minema.
 
-## Samm 2: võrku konfiguratsioon
+## Samm 2: võrku konfiguratsioon {#step-2-network-configuration}
 
 See samm küsib teilt teie võrkuse seadistuste konfiguratsiooni.
 
-### Situsüsteemi struktuur
+### Situsüsteemi struktuur {#site-structure}
 
 Valiige, kuidas teie võrku veebileid organiseerida:
 
@@ -57,18 +57,18 @@ Valiige, kuidas teie võrku veebileid organiseerida:
 Kui valite subdomäine, peate konfigurates **wildcard DNS** ja **wildcard SSL sertifikaadi** oma domeenile. Enamik haldistatud WordPress hoastajad teevad seda automaatselt. Vaadake [Ultimate Multisite 101](./ultimate-multisite-101) üksikasjalikku võrdlust.
 :::
 
-### Võrku nimi
+### Võrku nimi {#network-title}
 
 Sisestage nimi oma võrkule. See poolt on teie praeguse veebilei pealkiri ja sellele lisatud "Network". Seda saab hiljem muuta võrkuse seadistustest.
 
-### Võrkuse administraatori e-post
+### Võrkuse administraatori e-post {#network-admin-email}
 E-posti aadress, mida kasutatakse võrkuse administreerimise teavetamiseks. See poolt on praeguse kasutaja e-posti aadress.
 
 ![Multisite Setup Wizard - Network Configuration](/img/installation/multisite-wizard/wizard-network-configuration.png)
 
 Täitlikud pärast väljeldamist klõpsake **Jätka** protsesside edasi võtamiseks.
 
-## Samuti 3: Installeerimine
+## Samuti 3: Installeerimine {#step-3-installation}
 
 Klõpsake **Installeeri** nupul algamiseks. Wizard teeb viis automaatselt sammuga, näides igaühtlust reaaliajal:
 
@@ -95,7 +95,7 @@ Kõik sammud lõpetatakse edukalt, näete iga kohta rohelik "Valmine!" staatust:
 
 Seejärel läheb wizard automaatselt lõpulejuhtmise ekraani poole.
 
-## Samm 4: Lõpetamine
+## Samm 4: Lõpetamine {#step-4-complete}
 
 Lõpetamise pärast instalatsioon on lõpetatud, näete edu sõnumi, mis kinnitab WordPress Multisite aktiveerimist.
 
@@ -107,7 +107,7 @@ Saate nüüd jätkata Ultimate Multisite seadistamise wizardiga ja konfigurida o
 Multisite installatsioon pärast lõppu juhendab teie brauseri uuest aktiveeritud võrku administraatorile. Võib olla vajalik uuesti logiimina, kuna autentimikügid on ümberpaati multisite keskkonna jaoks.
 :::
 
-## Manuaalne seadistus alternatiivne lahendus (Fallback)
+## Manuaalne seadistus alternatiivne lahendus (Fallback) {#manual-setup-fallback}
 
 Kui juhend ei saa kirjutada oma `wp-config.php` failisse (failide luba või serveri piirangute tõttu), näitab see täpselt kood, mida peab anda manuaalselt:
 
@@ -116,9 +116,9 @@ Kui juhend ei saa kirjutada oma `wp-config.php` failisse (failide luba või serv
 
 Manuaalsete muudatuside tegemise pärast paigutage lehekülje ja juhend tuvastab, et multisite on nüüd aktiveeritud.
 
-## Probleemide lahendamine
+## Probleemide lahendamine {#troubleshooting}
 
-### Juhend ütleb, et wp-config.php ei ole kirjutav (writable)
+### Juhend ütleb, et wp-config.php ei ole kirjutav (writable) {#the-wizard-says-wp-configphp-is-not-writable}
 
 Teie veebiserver protsess peab kirjutamise lubandega `wp-config.php` failile. Saate teha üks neist asja:
 
@@ -126,7 +126,7 @@ Teie veebiserver protsess peab kirjutamise lubandega `wp-config.php` failile. Sa
 - Kasutada juhendi alternatiivset lahendust, mida juhend pakub
 - Küsimus hoondja poolt abi kohta
 
-### Veebilehed on pärast seadistamist liiga (subdomaanid)
+### Veebilehed on pärast seadistamist liiga (subdomaanid) {#sites-are-not-accessible-after-setup-subdomains}
 
 Kui te valisite subdomaan struktuuri, peate konfigurates **wildcard DNS** oma domeenile. Lisage DNS-registri:
 
@@ -138,7 +138,7 @@ Väärtus: [teie serveri IP]
 
 Kontrollige hoondja poolt, kui olete kahtluse, kuidas seda konfigurida.
 
-### Autentikatsiooniprobleemid pärast seadistamist
+### Autentikatsiooniprobleemid pärast seadistamist {#authentication-issues-after-setup}
 
 Kui te olete lahti logitud või kogete kügidroosid multisite seadistamise pärast:
 
@@ -146,7 +146,7 @@ Kui te olete lahti logitud või kogete kügidroosid multisite seadistamise pära
 2. Logiimina uuesti `yourdomain.com/wp-login.php`
 3. Kui probleem jätkub, kontrollige, et teie `wp-config.php`-l ei ole `COOKIE_DOMAIN` seadistatud `false`-le — see on teadaolevin probleem subdomaan multisite installatsioonides
 
-### Etap eba õnnestus installimise ajal
+### Etap eba õnnestus installimise ajal {#a-step-failed-during-installation}
 
 Kui üks installimise samm näitab viga:
 

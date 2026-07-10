@@ -3,7 +3,7 @@ title: Formau y cheffr
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Fomau Checkout
+# Fomau Checkout {#checkout-forms}
 
 Mae Fomau Checkout yn ffordd einfaldig a chyniferus i gymryd am ymarferiad gyda'r ddefnyddiau cyffredinol pan fyddwch yn ceisio gwari newyddol o ddeimladau.
 
@@ -36,13 +36,13 @@ Ar gyferbyn, gallwch redig neu dduplikat y ffurfau sy'n cael eu cyflwyno oethau 
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Oglwydd y Editor Ffurf Checkout
+#### Oglwydd y Editor Ffurf Checkout {#checkout-form-editor-overview}
 
 Mae'r editor ffurf checkout yn rhoi cyfathrebu amgylcheddol i guberddu eich ffurf cyfrifolion. Dyma wahanol o'r llwybr y editor:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Redig Ffurf Checkout
+### Redig Ffurf Checkout {#editing-a-checkout-form}
 
 Gallwch creu ffurfau checkout ar gyfer gymharu pethau gwahanol. Yn y مثال hwn byddwn yn gweithio ar ffurf cyfrifolion.
 
@@ -112,7 +112,7 @@ I gennych eich shortcode o'r form, gwchyddu ar "Generate Shortcode" a cop y resg
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Y Faeld Tablau Prifynol (The Pricing Table Field)
+### Y Faeld Tablau Prifynol (The Pricing Table Field) {#the-pricing-table-field}
 
 Mae'r faeld **Pricing Table** yn dangos eich cynnyrchon ar form checkout felly gall y golygu'r cyd-llwybrau'r cleientau. Pan fyddwch yn redig y faeld hwn, gallwch ddefnyddio'r amrywiol o opsiynau:
 
@@ -130,17 +130,17 @@ Dyma sut mae'r tabl prifynol yn dangos ar form cyfrifol y cyflwyniad (frontend):
 
 Os ydych chi'n cytri cynnyrchon i'r Tabl Prifynol قبل y form mae'r faelau sydd yn hanfodol i ddod o'r cyflwyniad y cynnyrchon hwnnw, mae'r redig yn dangos rhybais. Defnyddiw y rhybais i dros y faeld hanfodol a ddifynwyd قبل y cyflwyniad neu sicrhau newidiadau ar gyfer form cyfrifol bydd yn cael ei chwarae.
 
-### Ymlo Addi'r Taliadau Cyflwyniad
+### Ymlo Addi'r Taliadau Cyflwyniad {#adding-a-period-selection-toggle}
 
 Os oes gennych chi'n cyfathoghio [Price Variations](creating-your-first-subscription-product#price-variations) ar eich cynnyrion (fel, prisau manwl a annal), gallwch chi ychwanegu field **Period Selection** i eich ffurflen cheictw. Mae'r field hwn yn dangos taliad (toggle) sy'n sylwtu i'r cyd-deithio rhwng cyfyngau cyfathrebu, ac mae'r tablaw prisau yn cyfresgu'n dynamig mewn amser byr.
 
-#### Cynllun 1: Cyflwyno Price Variations ar eich cynnyrion
+#### Cynllun 1: Cyflwyno Price Variations ar eich cynnyrion {#step-1-set-up-price-variations-on-your-products}
 
 Trước ychwanegu field Period Selection, sicrhewch bod eich cynnyrion wedi'u cyfathoghio gyda price variations. Ymddangos i **Ultimate Multisite > Products**, redig cynnyrion, a mynd i'r tab **Price Variations** i chwilio am cyfyngau cyfathrebu allweddol (fel, Annol ar pris yn ddefnyddiol).
 
 ![Tab Price Variations ar cynnyrion](/img/config/product-price-variations-tab.png)
 
-#### Cynllun 2: Ychwanegu field Period Selection i eich ffurflen cheictw
+#### Cynllun 2: Ychwanegu field Period Selection i eich ffurflen cheictw {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Myddwch i **Ultimate Multisite > Checkout Forms** a redig eich ffurflen cheictw.
 
@@ -163,13 +163,13 @@ Trước ychwanegu field Period Selection, sicrhewch bod eich cynnyrion wedi'u c
 
 7. Clicwch ar **Save Field**.
 
-#### Cynllun 3: Lleolwch y Faeld Isod y Tabl Prifynau
+#### Cynllun 3: Lleolwch y Faeld Isod y Tabl Prifynau {#step-3-position-the-field-above-the-pricing-table}
 
 Ar gyfer profiad gweithredol sy'n ddaest, sicrhewch bod y faeld Seiliedig y Cyfnod yn dangos **oherwydd** y Tabl Prifynau mewn cynllun eich checkout. Gallwch llwybr y faelau i newid eu cyflwyniad yn y redactor ffurf checkout. Mae hyn yn rhoi'r cyd-destunwyr i ddewis y cyfnod gyfrifol argyntaf a ddlygu'r prifynau am y cyfnod hwnnw.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Sut mae hyn yn gweithio ar y Frontend
+#### Sut mae hyn yn gweithio ar y Frontend {#how-it-works-on-the-frontend}
 
 Ar ôl cael ei cynllunio, bydd y cyd-destunwyr sy'n mynychu eich dudalen cyfrifol bydd yn gweld y seiliedig y cyfnod isod y tabl prifynau. Pan fyddant yn clisi'r cyfnod gyfrifol arall:
 
@@ -177,7 +177,7 @@ Ar ôl cael ei cynllunio, bydd y cyd-destunwyr sy'n mynychu eich dudalen cyfrifo
   * Os yw **Force Different Durations** wedi'i torri ar y Tabl Prifynau, bydd y proddeictau heb fersyllty prifynol am y cyfnod a ddewiswyd yn cael eu gwahanu.
   * Os yw **Force Different Durations** wedi'i chynllunio, bydd pob proddeict yn parhau i fod yn wellaidd er gwaith er i fod heb fersyllty ar gyfer y cyfnod a ddewiswyd (bydd yn dangos ei prifynau ddefnyddiol).
 
-#### Cyn-destunio'r Cyfnod Gyfrifol trwy URL
+#### Cyn-destunio'r Cyfnod Gyfrifol trwy URL {#pre-selecting-a-billing-period-via-url}
 
 Gallwch hefyd cyn-destunio proddeict a cyfnod gyfrifol drwy y URL. Mae Ultimate Multisite yn cefnogi y modelau URL hyn:
 
@@ -185,11 +185,11 @@ Gallwch hefyd cyn-destunio proddeict a cyfnod gyfrifol drwy y URL. Mae Ultimate 
   * `/register/premium/12` — Cyn-destunio'r proddeict a cyfnod 12-mlynedd
   * `/register/premium/1/year` — Cyn-destunio'r proddeict gyda cyfnod 1-mlynedd
 
-### Y Faeld Deilio'r Model
+### Y Faeld Deilio'r Model {#the-template-selection-field}
 
 Mae'r faeld **Template Selection** yn sylw i cyd-destunwyr ddewis y model safle ar gyfer y chefforddiad yn y checkout. Mae'n cael ei gynnwys fel defnyddiol yn ddefnyddiol mewn ffurf checkout un stad a ffurf checkout am y stadau amol yn Ultimate Multisite v2.6.1.
 
-#### Ymyddu'r faeld yn manwl
+#### Ymyddu'r faeld yn manwl {#adding-the-field-manually}
 
 Os byddwch yn gweithio gyda ffurf a roedd wedi'i creu قبل v2.6.1, neu wedi'i entynnu o template llawn:
 
@@ -200,11 +200,11 @@ Os byddwch yn gweithio gyda ffurf a roedd wedi'i creu قبل v2.6.1, neu wedi'i 
    - **Label** — Y genedig sydd i'r cyddeeau yn gweld is-od y grid template (e.e., "Dechrau ar template safle").
    - **Required** — A oes angen i'r cyddeeau dechrau'r template cyn siaradodd.
 
-#### Sut mae hyn yn gweithio
+#### Sut mae hyn yn gweithio {#how-it-works}
 
 Pan mae cyddee unig yn crybio template yn y cheictw, mae Ultimate Multisite'n defnyddio'r template hwnnw wrth y cyfathriad eu safle newydd. Mae’r templateau a ddefnyddir yn dod o'r llyfr **Site Templates** eich (**Ultimate Multisite > Site Templates**). Mae templateau a nodwyd fel ar gael i'r cyddeeau yn dangos yma.
 
-### Ddrefniadau safle cheictw-form (Checkout-form base domains)
+### Ddrefniadau safle cheictw-form (Checkout-form base domains) {#checkout-form-base-domains}
 
 Mae Ultimate Multisite v2.13.0 yn gwastraff drefniadau safle a chynllunwyd ar ffurf cheictw **Site URL** fel drefniadau safle cyd-gynllunol (network base domains). Defnyddiwch y setau drefniadau gael o'r ffurf i gyd yr ydych chi eisiau bod y cyddeeau yn creu safleoedd o dan un neu fwy o drefniadau cyfrifol cyffredinol, fel `example.com` a `sites.example.com`.
 
@@ -212,7 +212,7 @@ Mae drefniadau safle cheictw-form cyd-gynllunol nid yn cael eu gweithredu fel ma
 
 Rwy'n gwarchio drefniadau safle cyd-gynllunol ar gyfer safleoedd mappid per-cyddee, fel `customer-example.com`. Rwy'n gwarchio drefniadau safle cheictw-form cyd-gynllunol ar gyfer safleoedd cyfrifol sydd yn gallu gweithredu am ychwaneg o safleoedd.
 
-#### Aros y ffurf
+#### Aros y ffurf {#removing-the-field}
 
 
 

@@ -3,11 +3,11 @@ title: Dnevnik promjena
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Dnevnik promjena
+# Dnevnik promjena {#changelog}
 
-## 1.9.0 — Objavljeno 2026-04-28
+## 1.9.0 — Objavljeno 2026-04-28 {#190--released-on-2026-04-28}
 
-### Novo
+### Novo {#new}
 
 - **Sposobnost `create_contact_form`** — kreira kontakt formular koristeći aktivni plugin za formulare (Contact Form 7, WPForms, Fluent Forms ili Gravity Forms) i vraća shortcode spreman za ugradnju u bilo koji post ili stranicu.
 - **Sposobnost `set_featured_image`** — dodjeljuje glavnu sliku postu ili stranici koristeći ID privitka iz postojeće Media Library ili udaljeni URL; automatski uvozi sliku kada se pruži URL.
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Oporavak zadnje sesije** — panel za chat sada automatski učitava najnoviji razgovor pri učitavanju stranice i pri otvaranju widgeta, tako da kontekst nikada nije izgubljen tokom navigacije po stranicama.
 - **Linkovi za akcije pluginova** — brzi linkovi do Settings i Abilities Registry sada se pojavljuju na WordPress stranici **Plugins → Installed Plugins** ispod opisa plugin-a.
 
-### Poboljšano
+### Poboljšano {#improved}
 
 - **Ponovno pokušavanje izvora slika** — agent sada ponovno pokušava sve konfigurirane besplatne izvore slika prije nego što se vrati na AI-generisanu sliku u slučaju neuspjeha preuzimanja.
 - **Panel informacija o modelu** — uvijek je vidljiv u zaglavlju chata; više nije skriven nakon prve poruke.
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Revizija widgeta za chat** — ujednačena AI ikona zamjenjuje prethodni prilagođeni avatar; dosljedna je sa ugrađenim sistemom agenata.
 - **Linkifikacija URL-a** — URL-ovi koji se pojavljuju u sistem porukama i mjehurićima s porukama o greškama sada se prikazuju kao klikabilni linkovi.
 
-### Popravljeno
+### Popravljeno {#fixed}
 
 - **Otkrivanje sposobnosti** — ispravljeni su opisi, reference sistem prompta i poravnanje namespace-a kako bi sve sposobnosti pouzdano pojavile u listi alata agenta.
 - **Keš provajdera** — provajderi su sada keširani na nivou cijele stranice putem broja verzije, sprječavajući probleme sa zastarjelim provajderima na multisite mrežama.
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Objavljeno 2026-04-09
+## 1.4.0 — Objavljeno 2026-04-09 {#140--released-on-2026-04-09}
 
-### Novo
+### Novo {#new-1}
 
 - **WP-CLI benchmark naredba** (`wp gratis-ai-agent benchmark`) — pokreće Agent Capabilities v1 benchmark suite sa komandne linije za CI pipeline-e i radove evaluacije modela. Podržava pokretanje po pitanju, nadjačavanje provajdera/modela i izlaz u JSON/CSV formatu.
 - **Agent Capabilities v1 benchmark suite** — strukturirani set kompleksnih, višestepeničnih promptova koji testiraju cijelu površinu sposobnosti, sa bodovanjem i izvještavanjem o tokenima/trajanju.
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Benchmark pitanje za restoran web stranicu** (`q-restaurant-website`) — end-to-end test koji pokriva registraciju CPT, design system, navigaciju i otkrivanje pluginova.
 - **AI provider connector pluginovi** dodani su u WordPress Playground blueprint-ove za brže lokalno postavljanje.
 
-### Poboljšano
+### Poboljšano {#improved-1}
 
 - README ažuriran dokumentacijom i uputama za postavljanje AI provider connector-a.
 
-### Popravljeno
+### Popravljeno {#fixed-1}
 
 - 25 PHPUnit test neuspjeha na `main` grani popravljeno.
 - Format URL-a za GitHub release-ove u `blueprint.json` ispravljen.
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _Napomene o prethodnim izdanjima održavaju se u plugin repozitoriju._

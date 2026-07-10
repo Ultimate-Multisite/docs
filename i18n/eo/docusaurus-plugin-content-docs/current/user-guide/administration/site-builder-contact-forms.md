@@ -3,11 +3,11 @@ title: Formuloj de kontakto por Site Builder
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Kontaktformular für die Website-Erstellung
+# Kontaktformular für die Website-Erstellung {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 fügt die Möglichkeit hinzu, Kontaktformulare direkt aus der Chat-Oberfläche mithilfe des Site Builder agents zu erstellen. Dadurch können Sie voll funktionsfähige Kontaktformulare auf jede Seite hinzufügen, ohne den Chat verlassen zu müssen.
 
-## Überblick
+## Überblick {#overview}
 
 Die Fähigkeit zum Erstellen von Kontaktformularen mit dem Site Builder (`create_contact_form`) erkennt automatisch Ihr installiertes Formular-Plugin und erstellt ein Kontaktformular unter Verwendung der nativen Funktionen dieses Plugins. Unterstützte Formular-Plugins sind:
 
@@ -18,7 +18,7 @@ Die Fähigkeit zum Erstellen von Kontaktformularen mit dem Site Builder (`create
 
 Der Assistent wählt automatisch das am besten verfügbare Formular-Plugin auf Ihrer Seite aus und generiert ein Kontaktformular, das speziell auf dieses Plugin zugeschnitten ist.
 
-## Erstellen eines Kontaktformulars
+## Erstellen eines Kontaktformulars {#creating-a-contact-form}
 
 Um mit dem Site Builder ein Kontaktformular zu erstellen:
 
@@ -34,7 +34,7 @@ Um mit dem Site Builder ein Kontaktformular zu erstellen:
 
 4. Der Site Builder generiert das Kontaktformular und gibt einen Shortcode zurück, der bereit ist zum Einbetten.
 
-## Verwendung des generierten Shortcodes
+## Verwendung des generierten Shortcodes {#using-the-generated-shortcode}
 
 Nachdem der Site Builder das Kontaktformular erstellt hat, gibt er einen Shortcode (zum Beispiel `[contact-form-7 id="123"]`) zurück. Sie können:
 
@@ -45,11 +45,11 @@ Nachdem der Site Builder das Kontaktformular erstellt hat, gibt er einen Shortco
 
 3. **Uzuvu it en šablone** — Je komfortabils PHP-je, povas pridėti shortcode'on temo šablono failui.
 
-## Kontaktų formos personalizavimas
+## Kontaktų formos personalizavimas {#customizing-the-contact-form}
 
 Po to, kai Site Builder sukuria kontaktinę formą, jūs ją galite daliau personalizuoti:
 
-### Per čatą interfeicą
+### Per čatą interfeicą {#via-the-chat-interface}
 
 Pagalbos Site Builderi pakeisti formą:
 
@@ -57,7 +57,7 @@ Pagalbos Site Builderi pakeisti formą:
 
 Site Builder atnaujina formą ir grąžina naują atnaujintą shortcode.
 
-### Per formos plugino administravimo interfeicą
+### Per formos plugino administravimo interfeicą {#via-the-form-plugins-admin-interface}
 
 Jūs galite taip pat tiesiogiai personalizuoti formą savo formos plugino nustatymuose:
 
@@ -65,7 +65,7 @@ Jūs galite taip pat tiesiogiai personalizuoti formą savo formos plugino nustat
 2. Raskykite tą formą, kurą sukurė Site Builderis.
 3. Redaguokite laukus, patikrinimo taisykles ir el. pranešimų nustatymus, jei reikia.
 
-## Formos pluginai ir supraveikojimas
+## Formos pluginai ir supraveikojimas {#form-plugins-and-compatibility}
 
 Site Builder automatizuotai atpažįsta, kuris formos pluginas įdėtas jūsų svetainėje, ir naudoja jį kontaktinės formos sukurti. Jei įdėta daugiau nei vienas formos pluginas, Site Builder priorizuojasi šiuose nurodytais tvarkyje:
 
@@ -76,7 +76,7 @@ Site Builder automatizuotai atpažįsta, kuris formos pluginas įdėtas jūsų s
 
 Jei nė vienas iš šių pluginų nėra įdėtas, Site Builder siūlys įdėti vieną prieš sukurti kontaktinę formą.
 
-## El. pranešimai
+## El. pranešimai {#email-notifications}
 
 Site Builderis sukurtos kontaktinės formos nustatytos automatiškai siuntoti el. pranešimus svetainės administratorui. Jūs galite personalizuoti gauti el. pašto adresą ir pranešimo mesges.
 
@@ -90,21 +90,21 @@ Daugiau informacijos bagi, perskaitykite savo formos plugino dokumentaciją:
 - [Fluent Forms Email Notifications](https://fluentforms.com/docs/)
 - [Gravity Forms Email Notifications](https://docs.gravityforms.com/)
 
-## Ekzemploj uzvilo
+## Ekzemploj uzvilo {#example-use-cases}
 
-### Simple Kontaktform
+### Simple Kontaktform {#simple-contact-form}
 
 > "Kriju senpuran kontaktformon kun imi, emailo kaj mesaĝa kampojn."
 
-### Multstep Formo
+### Multstep Formo {#multi-step-form}
 
 > "Kriju kontaktformon kun unua paŝo por informoj pri kontakte, kaj dua paŝo por mesaĝo kaj preferita kontakto metodo."
 
-### Formo kun Kondiciaj Logiko
+### Formo kun Kondiciaj Logiko {#form-with-conditional-logic}
 
 > "Kriju kontaktformon, kiu montras malsamajn kampojn bazitajn sur la elektado de la uzanto en drop-down."
 
-### Formo kun Arkivo Uzfako
+### Formo kun Arkivo Uzfako {#form-with-file-upload}
 
 > "Kriju kontaktformon, kiu permesas uzantoj uploadi filon aŭ atachadon."
 

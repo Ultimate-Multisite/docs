@@ -3,11 +3,11 @@ title: Система Электрон Хабарномаларни Бошқар
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Система Электронная Почталарни Барои Идора Қилиш (Managing System Emails)
+# Система Электронная Почталарни Барои Идора Қилиш (Managing System Emails) {#managing-system-emails}
 
 Ultimate Multisite сизга SignUp тасдиқлари, тўлов кабул қилинган ва аъзолик ўзгартирилгандаги каби воқеалар учун турли система электрон почтлари юборади. Бу эҳтимолда, уларни ўз брендінгга мослаштириш учун ўзгартиришингиз мумкин.
 
-## Система Электрон Почталарини Қа랍니다 (Viewing System Emails)
+## Система Электрон Почталарини Қа랍니다 (Viewing System Emails) {#viewing-system-emails}
 
 **Ultimate Multisite → Settings** бўлимига кириб, **Emails** табибанаси клирланг, бу ерда электрон почта билан боғлиқ sozlamalar кўрилади.
 
@@ -21,7 +21,7 @@ Ultimate Multisite сизга SignUp тасдиқлари, тўлов кабул
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Янги Электрон Почта Шаблоналарини Импорт Қилиш (Importing New Email Templates)
+## Янги Электрон Почта Шаблоналарини Импорт Қилиш (Importing New Email Templates) {#importing-new-email-templates}
 
 Ultimate Multisite-nin yangi versiyalar va qo'shimchalar yangi elektron shablonlarni ro'yxatdan o'tishi mumkin. Konfliktlar oldini olish uchun yangi shablonlar avtomatik qo'shilmaydi — ularni siz qo'lda import qilishingiz kerak bo'ladi.
 
@@ -32,7 +32,7 @@ Yangi elektron shablonlarni import qilish uchun:
 3. Mavjud shablonlarni ko'rish uchun **Import Emails** opsiyasini yoqing (toggle qiling)
 4. Import qilmoqchi bo'lgan shablonlarni tanlang va tasdiqlang
 
-## Elektron Shablonlarini Qayta Sozlash (Resetting Email Templates)
+## Elektron Shablonlarini Qayta Sozlash (Resetting Email Templates) {#resetting-email-templates}
 
 Agar siz elektron shablonni o'zgartirgan bo'lsangiz va default kontentga qaytmoqchi bo'lsangiz, sizda ikkita variant bor:
 

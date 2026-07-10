@@ -3,7 +3,7 @@ title: Ilista ang API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ang Ultimate Multisite Register API endpoint
+# Ang Ultimate Multisite Register API endpoint {#the-ultimate-multisite-register-api-endpoint}
 
 Sa tutorial nga niini, makat-onan nimo unsaon paggamit sa Ultimate Multisite /register API endpoint para himuon ang tibuok proseso sa onboarding para sa bag-ong customer sa imong network ug unsaon kini pagbuhat gamit ang Zapier.
 
@@ -29,11 +29,11 @@ Piliha ang **Enable API** ug kuhaon ang imong API credentials.
 
 Karon, atong suwayon ang endpoint ug dayon maghimo og registration action sa Zapier.
 
-## Endpoint body parameters
+## Endpoint body parameters {#endpoint-body-parameters}
 
 Maghatag kita og overview sa minimum nga impormasyon nga kinahanglan natong ipadala sa endpoint. Sa katapusan niining article, makita nimo ang tibuok tawag (call).
 
-### Customer
+### Customer {#customer}
 
 Kini mao ang impormasyon nga gikinahanglan para sa proseso sa paghimo sa User ug Ultimate Multisite Customer:
 
@@ -43,25 +43,25 @@ Mahimo ba nga ipadala ang customer ID nga gihimo sa imong network sa customer? K
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Membership** {#membership}
 
 Ang tanging impormasyon nga kinahanglan nato sulod niini kay Membership Status.
 
 "membership" { "status" : "string", // usa sa "pending", "active", "trialing", "expired", "on-hold", "canceled" }
 
-### **Products**
+### **Products** {#products}
 
 Ang mga produkto gihatagan og array nga adunay 1 o labaw pa nga product ID gikan sa imong network. Bantayi, kini nga endpoint dili maghimo og mga produkto. Siguraduhon nga mas masabtan nimo ang product creation endpoint pinaagi sa paglingkawa sa dokumentasyon sa Ultimate Multisite.
 
 **"products" : [1,2],**
 
-### Payment
+### Payment {#payment}
 
 Ingon sa Membership, kinahanglan lang nato ang status.
 
 **"payment" { "status" : "string", // usa sa "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" }**
 
-### Site
+### Site {#site}
 
 Ug aron tapuson nato, kinahanglan usab nato ang URL ug Title sa site sulod sa Site object.
 
@@ -69,13 +69,13 @@ Ug aron tapuson nato, kinahanglan usab nato ang URL ug Title sa site sulod sa Si
 
 Ang pagbalik sa register endpoint magin usa ka array nga adunay bag-ong impormasyon sa membership.
 
-## Paghimo og action sa Zapier
+## Paghimo og action sa Zapier {#creating-an-action-in-zapier}
 
 Uban sa pagpaila niining bag-o ug mas lig-on nga account creation endpoint, makakita usab ka og bag-ong action sa Zapier.
 
 Nahibalo ka ba unsaon paggamit ug pag-enjoy sa tanan nga ginaalok sa bag-ong bersyon sa Zapier? Magbasa pa diri. (link?)
 
-### Paghimo og action
+### Paghimo og action {#creating-an-action}
 
 Para mas maipaliwanag kung paano gamiton ang registration endpoint sa Zapier, maghimo kita og integration uban sa Google Forms. Kada higayon nga mapuno kining form ug ang impormasyon i-save sa answer sheet sa form, usa ka bag-ong membership ang himuon sa Ultimate Multisite network.
 
@@ -105,7 +105,7 @@ Kung na-set na ninyo ang impormasyon, padayon sa katapusang pagsulay. Sa katapus
 
 Sulayi ang inyong bag-ong Zap ug kinahanglan kini molihok og malampuson. Kung adunay bisan unsang sayop, tan-awa ang tanang field ug kung tama ba kini nga ipadala. Tungod kay daghan kaayo og impormasyon, mahimong dili matipig ang pipila butang.
 
-### Kinatibuk-ang mga parameter sa endpoint
+### Kinatibuk-ang mga parameter sa endpoint {#complete-endpoint-parameters}
 
 Ania ang kompleto nga tawag ug tanan nga posibilidad sa mga field nga mahimong ipadala.
 

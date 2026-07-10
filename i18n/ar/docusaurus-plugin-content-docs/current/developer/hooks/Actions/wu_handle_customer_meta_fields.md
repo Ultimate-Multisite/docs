@@ -4,11 +4,11 @@ title: الإجراء - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# إجراء: wu_handle_customer_meta_fields
+# إجراء: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 السماح لمطوري الإضافات بحفظ بيانات الميتا بطرق مختلفة إذا احتاجوا ذلك.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | كائن العميل في Ultimate Multisite. |
 | $checkout | `\Checkout` | فئة Checkout. |
 
-### منذ
+### منذ {#since}
 
 - 2.0.0
 
-### المصدر
+### المصدر {#source}
 
 معرّف في [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) في السطر 1211

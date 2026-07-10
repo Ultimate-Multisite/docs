@@ -3,33 +3,33 @@ title: Verbeter Kontrolepaneel-integrasie
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Verbeter Beheerdashboard-Integrasie
+# Verbeter Beheerdashboard-Integrasie {#enhance-control-panel-integration}
 
-## Oorsig
+## Oorsig {#overview}
 Enhance is 'n moderne beheerdashboard wat kragtige hosting-automatisering en bestuursvermoë beskik. Hierdie integrasie maak outomatiese domein-sinkronisering en SSL-sertifikaatbestuur moontlik tussen Ultimate Multisite en Enhance Control Panel.
 
 **Verwante Bespreking:** Kyk na [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) vir gemeenskapswenke en addisionele inligting.
 
-## Eienskappe
+## Eienskappe {#features}
 - Outomatiese domein-sinkronisering wanneer domeine in Ultimate Multisite gekoppel word
 - Outomatiese SSL-sertifikaatvoorsiening via LetsEncrypt wanneer DNS opgelos word
 - Subdomeinondersteuning vir netwerke wat in subdomeinmodus loop
 - Domeinverwydering wanneer koppeling(s) verwyder word
 - Verbindingsbeoordeling om API-wagwoorde te verifieer
 
-## Vereistes
+## Vereistes {#requirements}
 
-### Sisteemvereistes
+### Sisteemvereistes {#system-requirements}
 - Enhance Control Panel geïnstalleer en toeganklik
 - WordPress Multisite-installasie gehost op of gekoppel aan 'n Enhance-bediener
 - Apache webbediener (Enhance ondersteun tans Apache-konfigurasies; LiteSpeed Enterprise is teen 'n verminderde koste beskikbaar)
 
-### API-Toegang
+### API-Toegang {#api-access}
 Jy moet administrateurtoegang tot die Enhance Control Panel hê om API-tokens te skep.
 
-## Jou API-wagwoorde Verkry
+## Jou API-wagwoorde Verkry {#getting-your-api-credentials}
 
-### 1. Skep 'n API-token
+### 1. Skep 'n API-token {#1-create-an-api-token}
 
 1. Log in op jou Enhance Control Panel as administrateur
 2. Klik op **Settings** in die navigasieblaaikonde
@@ -44,7 +44,7 @@ Jy moet administrateurtoegang tot die Enhance Control Panel hê om API-tokens te
 
 Nadat die skep gebeur het, sal jou **Access Token** en **Organization ID** vertoon word. **Stoor hierdie onmiddellik op** aangesien die token slegs een keer vertoon word.
 
-### 2. Kry Jou Organization ID
+### 2. Kry Jou Organization ID {#2-get-your-organization-id}
 
 Die Organization ID word op die Access Tokens-blaaikonde in 'n blou inligtingboks gemerk as "Org ID: {your_id}".
 
@@ -55,7 +55,7 @@ Jy kan ook 'n kliënt se Organization ID vind deur:
 2. Klik op **Manage customer** vir die relevante kliënt
 3. Kyk na die URL - die Organization ID is die alfanumeriese karakters na `/customers/`
 
-### 3. Kry Jou Server ID
+### 3. Kry Jou Server ID {#3-get-your-server-id}
 
 Om jou Server ID te vind (verpligtend vir domeinoppdragte):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Die bediener-ID volg die UUID-formaat: `00000000-0000-0000-0000-000000000000`
 
-### 4. Kry Jou API URL
+### 4. Kry Jou API URL {#4-get-your-api-url}
 
 Jou API URL is jou Enhance Control Panel URL met `/api/` bygevoeg:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - Net die domein gebruik sonder `/api/`
 - HTTP gebruik in plaas van HTTPS (HTTPS is verpligtend vir sekuriteit)
 
-## Konfigurasie
+## Konfigurasie {#configuration}
 
-### Vereiste Konstantes
+### Vereiste Konstantes {#required-constants}
 
 Voeg die volgende konstantes by jou `wp-config.php` lêer by:
 
@@ -97,7 +97,7 @@ define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 ```
 
-### Opstelling via Integrasie Wondskappe
+### Opstelling via Integrasie Wondskappe {#setup-via-integration-wizard}
 
 1. In jou WordPress-administrasie, gaan na **Ultimate Multisite** > **Settings**
 2. Navigeer na die **Integrations** blaaikonde
@@ -112,17 +112,17 @@ Jy kan kies om:
 - Laat die wondskappe die konstantes outomaties in jou `wp-config.php` lêer insit
 - Die konstante-definisiëne te kopieer en dit handmatig by te voeg
 
-## Addisionele WordPress Konfigurasie
+## Addisionele WordPress Konfigurasie {#additional-wordpress-configuration}
 
 Gebaseer op gemeenskapsingrygging ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), mag jy hierdie addisionele instellings moet konfigureer:
 
-### .htaccess Konfigurasie
+### .htaccess Konfigurasie {#htaccess-configuration}
 
 Indien jy probleme met domein-koppeling ervaar:
 1. Verwyder die oorspronklike Enhance `.htaccess` lêer
 2. Vervang dit met die standaard WordPress Multisite `.htaccess` lêer
 
-### Koekie-Konstantes
+### Koekie-Konstantes {#cookie-constants}
 
 Voeg hierdie konstantes by `wp-config.php` by om korrekte koekiehantering oor gekoppelde domeine te verseker:
 
@@ -132,9 +132,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Hoe Dit Werk
+## Hoe Dit Werk {#how-it-works}
 
-### Wanneer 'n Domein Gekoppel Word
+### Wanneer 'n Domein Gekoppel Word {#when-a-domain-is-mapped}
 
 1. 'n Gebruiker koppel 'n aangepaste domein in Ultimate Multisite (of 'n nuwe webwerf word in subdomeinmodus geskep)
 2. Die integrasie stuur 'n POST-versoek na Enhance se API: `/servers/{server_id}/domains`
@@ -142,14 +142,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Wanneer DNS na jou bediener opgelos word, voorsien Enhance outomaties 'n SSL-sertifikaat via LetsEncrypt
 5. Die domein word aktief met HTTPS
 
-### Wanneer 'n Domein Verwyder Word
+### Wanneer 'n Domein Verwyder Word {#when-a-domain-is-removed}
 
 1. 'n Domein-koppeling word in Ultimate Multisite verwyder
 2. Die integrasie vra Enhance om die domein se ID te vind
 3. 'n DELETE-versoek word gestuur na: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance verwyder die domein van jou bedienerkonfigurasie
 
-### DNS en SSL Beoordeling
+### DNS en SSL Beoordeling {#dns-and-ssl-checking}
 
 Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
 - Jy kan die beoordelingsinterval in **Domain Mapping Settings** konfigureer (standaard: 300 sekondes/5 minute)
@@ -157,9 +157,9 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
 - SSL-sertifikaatgeldigheid word outomaties beoordeel
 - Enhance hanteer SSL-voorsiening outomaties, dus is handmatige SSL-konfigurasie nie nodig nie
 
-## Opstelling Verifieer
+## Opstelling Verifieer {#verifying-setup}
 
-### Beoordeel die Verbinding
+### Beoordeel die Verbinding {#test-the-connection}
 
 1. Gebruik die **Test Connection** stap in die Integrasie Wondskappe
 2. Die plugin sal probeer om domeine op jou bediener te lys
@@ -169,7 +169,7 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
    - Server ID is geldig
    - Verhasilrighte is korrek ingestel
 
-### Na Koppeling van 'n Domein
+### Na Koppeling van 'n Domein {#after-mapping-a-domain}
 
 1. Koppel 'n toetsdomein in Ultimate Multisite
 2. Kontroleer die Ultimate Multisite-logboeke (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -178,9 +178,9 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
    - Die nuwe domein behoort in die lys te verskyn
 4. Sodra DNS versprei, verifieer dat SSL outomaties voorsien is
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### API Verbindingsprobleme
+### API Verbindingsprobleme {#api-connection-issues}
 
 **Fout: "Failed to connect to Enhance API"**
 - Verifieer dat `WU_ENHANCE_API_URL` `/api/` aan die einde insluit
@@ -198,7 +198,7 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
 - Verseker dat die Server ID 'n geldige UUID-formaat is
 - Bevestig dat die bediener in jou Enhance paneel bestaan
 
-### Domein Nie Bygevoeg Nie
+### Domein Nie Bygevoeg Nie {#domain-not-added}
 
 **Kontroleer die logboeke:**
 1. Gaan na **Ultimate Multisite** > **Logs**
@@ -211,7 +211,7 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
 - Onvoldoende API-verhasilregte (verseker dat die token die System Administrator rol het)
 - Server ID pas nie by die werklike bediener in Enhance nie
 
-### SSL Sertifikaatprobleme
+### SSL Sertifikaatprobleme {#ssl-certificate-issues}
 
 **SSL word nie voorsien nie:**
 - Verifieer dat DNS na jou bediener se IP-adres wys
@@ -225,7 +225,7 @@ Ultimate Multisite sluit ingeboude DNS- en SSL-beoordeling in:
 2. Vind jou domein en kyk na sy SSL-status
 3. Jy kan handmatig SSL-voorsiening aanvuur indien nodig
 
-### DNS Beoordelingsinterval
+### DNS Beoordelingsinterval {#dns-check-interval}
 
 Indien domeine of SSL-sertifikaat te lank neem om te aktiveer:
 1. Gaan na **Ultimate Multisite** > **Settings** > **Domain Mapping**
@@ -233,7 +233,7 @@ Indien domeine of SSL-sertifikaat te lank neem om te aktiveer:
 3. Pas aan van die standaard 300 sekondes na 'n laer waarde (minimum: 10 sekondes)
 4. **Let Wel:** Laer intervalle beteken meer gereelde kontrole, maar 'n hoër bedienerlas
 
-### Wagwoordfoute
+### Wagwoordfoute {#authentication-errors}
 
 **HTTP 401/403 foute:**
 - Genereer jou API-token in Enhance
@@ -241,7 +241,7 @@ Indien domeine of SSL-sertifikaat te lank neem om te aktiveer:
 - Kontroleer of die token nie verloop het nie
 - Verseker dat jy die korrekte Organization ID gebruik (hoewel dit tipies nie in die URL vereis word nie)
 
-### Log-Analise
+### Log-Analise {#log-analysis}
 
 Skakel gedetailleerde logboeking in:
 ```php
@@ -255,15 +255,15 @@ Kontroleer dan logboeke by:
 - WordPress probleemoplossingslog: `wp-content/debug.log`
 - Enhance paneel logboeke: Beskikbaar in Enhance se administrasie-koppelvlak
 
-## API Verwysing
+## API Verwysing {#api-reference}
 
-### Wagwoord
+### Wagwoord {#authentication}
 Alle API-versoeke gebruik Bearer-token-wagwoord:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Algemene Gebruikte Endpoints
+### Algemene Gebruikte Endpoints {#common-endpoints-used}
 
 **Lys Bedieners:**
 ```
@@ -286,30 +286,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Volledige API Dokumentasie
+### Volledige API Dokumentasie {#full-api-documentation}
 Volledige API-dokumentasie: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Beste Praktyke
+## Beste Praktyke {#best-practices}
 
-### Sekuriteit
+### Sekuriteit {#security}
 - **Kom nooit API-wagwoorde na die beheerde lêer nie**
 - Stoor wagwoorde in `wp-config.php` wat uit Git uitgesluit moet word
 - Gebruik wagwoorde met toepaslike verhasilregte (System Administrator vir volle integrasie)
 - Stel token-vervaldatums vir produksieomgewings
 - Roeteer wagwoorde periodiek
 
-### Prestasie
+### Prestasie {#performance}
 - Gebruik die standaard DNS-beoordelingsinterval (300 sekondes) om oormatige API-aanroepe te vermy
 - Monitor Enhance bedienerhulpbronne wanneer jy groot skaal domeinoppdragte uitvoer
 - Oorweeg om domeinbyvoegings te versprei as jy baie domeine te en een keer koppel
 
-### Monitoring
+### Monitoring {#monitoring}
 - Kontroleer gereeld Ultimate Multisite logboeke vir integrasie-foute
 - Stel monitoring op vir mislukte domeinbyvoegings
 - Verifieer dat SSL-sertifikaat korrek voorsien word
 - Hou oë op Enhance bedienerkapasiteit en domeingrense
 
-## Addisionele Hulpbronne
+## Addisionele Hulpbronne {#additional-resources}
 
 - **Enhance Amptelike Dokumentasie:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Dokumentasie:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -317,7 +317,7 @@ Volledige API-dokumentasie: [https://apidocs.enhance.com](https://apidocs.enhanc
 - **GitHub Bespreking:** [Issue #265 - Enhance Integrasie Wenke](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domein-Koppelgids:** Kyk na die wiki-blaaikonde "How to Configure Domain Mapping v2"
 
-## Ondersteuning
+## Ondersteuning {#support}
 
 Indien jy probleme ondervind:
 1. Kontroleer die Probleemoplossing-afdeling hierbo
@@ -326,7 +326,7 @@ Indien jy probleme ondervind:
 4. Kontak Enhance ondersteuning vir paneel-spesifieke kwessies
 5. Skep 'n nuwe bespreking met gedetailleerde foutlogboeke vir gemeenskapsassistentie
 
-## Notas
+## Notas {#notes}
 
 - Hierdie integrasie hanteer slegs domein-alias; Enhance bestuur SSL outomaties
 - Die integrasie ondersteun beide aangepaste domein-koppeling en subdomein-gebaseerde webwerwe

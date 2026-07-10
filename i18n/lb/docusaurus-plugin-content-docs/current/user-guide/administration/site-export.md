@@ -3,27 +3,27 @@ title: Site-Export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export
+# Site Export {#site-export}
 
 D'Admin-Siite Export-siite laatet Ihnen, e Netzwerkinadministrator chann eis Siite oder s'ganze Netz in en nachladbare Archiv für Migration, Backup oder Übernahmearbeit z'packe.
 
-## Eise Siite exportiere
+## Eise Siite exportiere {#exporting-one-site}
 
 Geit zu **Ultimate Multisite > Site Export** und wähle **Generate new Site Export**. Wähle d'Subsite us, wo Sie exportiere wend, und wähle denn, ob s'Archiv Uploads, Plugins und Themes iibinde söll.
 
 Wann de Export fertig isch, lad de ZIP us de Liste **Existing Exports** runter. Export-ZIP's enthalt jetz en selber startende `index.php` und en `readme.txt`, so dass de Archiv uf en frische Host hochglade und ohni vorher e separate Importer Plugin z'installiere starte cha wärde.
 
-## S'ganze Netz exportiere
+## S'ganze Netz exportiere {#exporting-the-whole-network}
 
 Benutze Sie **Network Export** uf de Site Export-Siite, wenn Sie en einzelnes Archiv bruche, wo alli Subsiete im Netz enthält. Das isch nützlich vor Host-Migratione, bei Katastrophenwiederherstelligsübige oder Staging-Ufbau, wo jede Subsite zäme müesse reise.
 
 Will en Network Export viel grösser chönnt si als en Einzel-Siite Export, laufe Sie ihn während ere Ziit mit wenig Verkehr und bestätige Sie, dass de Zielspeicher gnueg freie Platz für Uploads, Plugins, Themes und generierti ZIP-Dateie het.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Mit Ultimate Multisite 2.12.0 chann de Site Exporter **network import bundles** generiere – spezialisierti Archiv, wo für e vereifelti Netzwerkwitwiiti Siiterestaurierig gmacht sind. En network import bundle enthält alli nötige Date und Metadate, um mehri Siite uf en neui Netzwerkinstallation z'wiederherstelle.
 
-#### Generiere vo eme Network Import Bundle
+#### Generiere vo eme Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Gaat u **Ultimate Multisite > Site Export**
 2. Klicke u **Generate new Network Export**
@@ -32,7 +32,7 @@ Mit Ultimate Multisite 2.12.0 chann de Site Exporter **network import bundles** 
 5. Klicke u **Generate**
 6. Lad de bundle ZIP us de Liste **Existing Exports** runter
 
-#### Wiederherstelle us eme Network Import Bundle
+#### Wiederherstelle us eme Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Um Sites us eme network import bundle wiederherzstelle:
 
@@ -52,7 +52,7 @@ Network import bundles bewahre:
 - Media uploads (falls sie im bundle iibunde sind)
 - Custom database tables und data
 
-## Installiere en selbststartende export ZIP
+## Installiere en selbststartende export ZIP {#installing-a-self-booting-export-zip}
 
 Um en selbststartende ZIP uf eme frische host wiederherzstelle:
 

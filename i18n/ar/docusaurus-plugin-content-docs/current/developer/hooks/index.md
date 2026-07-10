@@ -1,189 +1,194 @@
 ---
-title: مرجع الHooks
+title: مرجع الخطافات
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# مرجع الHooks
+# مرجع الخطافات {#hooks-reference}
 
-توثيق مُنشأ تلقائياً لجميع **59 إجراءات** و **115 مرشحات** في Ultimate Multisite.
+توثيق مُنشأ تلقائيًا لجميع **59 إجراءً** و**118 مرشحًا** في Ultimate Multisite.
 
-## Actions
+## الإجراءات {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — يُطلق قبل إعادة توجيه المصادقة.
-- [set_auth_cookie](./Actions/set_auth_cookie) — يُطلق مباشرة قبل تعيين ملف تعريف الارتباط للمصادقة.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — يُطلق مباشرة قبل تعيين ملف تعريف الارتباط للمصادقة عند تسجيل الدخول.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — يتيح للمطورين إضافة تكاملات مزود الاستضافة الخاصة بهم عبر ملحقات WP.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — يُطلق عندما يتم تحميل جميع الاعتمادات.
-- [wu_activation](./Actions/wu_activation) — يتيح لأجزاء أخرى من المكوّن إلحاق إجراءاتها للتفعيل.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — يتيح لمطوري المكوّن ربط وظائف بعد تبديل قالب الموقع من قبل المستخدم أو المشرف الأعلى.
+- [auth_redirect](./Actions/auth_redirect) — ينطلق قبل إعادة توجيه المصادقة.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ينطلق مباشرةً قبل تعيين ملف تعريف ارتباط المصادقة.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ينطلق مباشرةً قبل تعيين ملف تعريف ارتباط مصادقة تسجيل الدخول.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — يسمح للمطورين بإضافة تكاملاتهم الخاصة لمزود الاستضافة عبر إضافات wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — يتم تشغيله عند تحميل جميع التبعيات
+- [wu_activation](./Actions/wu_activation) — يسمح لأجزاء أخرى من الإضافة بإرفاق إجراءاتها للتفعيل
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — يسمح لمطوري الإضافات بربط الدوال بعد أن يبدّل مستخدم أو مدير فائق قالب الموقع
 - [wu_before_light_ajax](./Actions/wu_before_light_ajax) — في بعض الحالات، سنحتاج إلى تحميل موارد إضافية للتعامل مع الإجراءات.
-- [wu_before_search_models](./Actions/wu_before_search_models) — يُطلق قبل معالجة طلب البحث.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — يتيح للمطورين إجراء تغييرات إضافية على كائن السلة.
-- [wu_cart_setup](./Actions/wu_cart_setup) — يتيح للمطورين إجراء تغييرات إضافية على كائن السلة.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — يُطلق قبل إضافة حقل إلى نموذج الدفع.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — يتيح للمطورين إطلاق نقاط ربط إضافية.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — قبل معالجة الدفع.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — يُطلق بعد تجميع طلب الدفع بالكامل.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — يتيح لمطوري المكوّن إضافة عناصر واجهة إلى لوحة معلومات الشبكة.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — يتيح لمطوري المكوّن إضافة عناصر واجهة إلى لوحة معلومات الشبكة.
-- [wu_deactivation](./Actions/wu_deactivation) — يتيح لأجزاء أخرى من المكوّن إلحاق إجراءاتها للتعطيل.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — يتيح لمطوري المكوّن إضافة إجراءات إلى عملية الحذف.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — يُطلق عندما يصبح نطاقًا أساسيًا لموقع.
-- [wu_domain_created](./Actions/wu_domain_created) — يُطلق عند إضافة خريطة نطاق جديدة.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — يُطلق بعد تحميل خريطة النطاق الأساسية.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — بعض الملحقات ستحفظ عنوان URL قبل أن تكون الخريطة نشطة أو ستبني عناوين URL بطريقة مختلفة غير مضمّنة في...
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — يتيح للمطورين ربط بعد حدوث تكرار الموقع.
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — يتيح لمطوري المكوّن إضافة نقاط ربط إضافية.
-- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — نقطة ربط للتنظيف الإضافي.
-- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — يُطلق قبل معالجة طلب إضافة نطاق جديد في النافذة المنبثقة.
-- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — يتيح لمطوري المكوّن حفظ بيانات التعريف بطرق مختلفة إذا احتاجوا ذلك.
-- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — يتيح لمطوري المكوّن حفظ بيانات التعريف للمستخدم بطرق مختلفة إذا احتاجوا ذلك.
-- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — يُطلق عند مواجهة رمز رابط سحري غير صالح.
-- [wu_magic_link_login](./Actions/wu_magic_link_login) — يُطلق بعد تسجيل دخول المستخدم عبر رابط سحري.
-- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — يتيح لمطوري المكوّن القيام بأمور إضافية عند إضافة العميل.
-- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — يُطلق بعد تسجيل قدرات MCP لكيان.
-- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — يُطلق بعد تهيئة محول MCP.
-- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — يُطلق بعد إلغاء العضوية.
-- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — يُطلق بعد تجديد العضوية.
-- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — يُطلق قبل إلغاء العضوية.
-- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — يُطلق قبل تجديد العضوية.
-- [wu_model_post_save](./Actions/wu_model_post_save) — يُطلق بعد تخزين كائن في قاعدة البيانات.
-- [wu_page_added](./Actions/wu_page_added) — يتيح لمطوري المكوّن تشغيل أشياء إضافية عند تسجيل الصفحات.
-- [wu_page_after_render](./Actions/wu_page_after_render) — يتيح لمطوري المكوّن إضافة محتوى إضافي بعد طباعة الصفحة
-- [wu_page_before_render](./Actions/wu_page_before_render) — يتيح لمطوري المكوّن إضافة محتوى إضافي قبل طباعة الصفحة.
-- [wu_page_load](./Actions/wu_page_load) — يتيح لمطوري المكوّن إضافة نقاط ربط إضافية إلى صفحاتنا.
-- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — يتيح لمطوري المكوّن إضافة محتوى إضافي بعد طباعة الصفحة
-- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — يتيح لمطوري المكوّن إضافة محتوى إضافي قبل طباعة الصفحة.
-- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — يتيح لمطوري المكوّن إضافة نقاط ربط إضافية إلى صفحاتنا.
-- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — يُطلق بعد تسجيل عناصر واجهة لهذه الصفحة.
-- [wu_register_capabilities](./Actions/wu_register_capabilities) — يُطلق للسماح للإضافات بإلحاق وحدات قدرات إلى التكاملات.
-- [wu_register_integrations](./Actions/wu_register_integrations) — يُطلق للسماح للتكاملات بتسجيل نفسها.
-- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — يتيح تسجيل مسارات إضافية.
-- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — يتيح لمطوري المكوّن إضافة إجراءات إلى عملية الحفظ.
-- [wu_site_created](./Actions/wu_site_created) — يُطلق بعد إنشاء موقع للمرة الأولى.
-- [wu_sso_loaded](./Actions/wu_sso_loaded) — يتيح لمطوري المكوّن إضافة نقاط ربط إضافية، إذا لزم الأمر.
-- [wu_template_previewer](./Actions/wu_template_previewer) — يُشغَّل عند وجود داخل سياق معاين القالب.
-- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — يُطلق نقطة ربط تحميل السكربتات.
-- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — يُطلق بعد تخزين كائن في قاعدة البيانات.
-- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — يُطلق بعد تخزين كائن في قاعدة البيانات.
-- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — يُطلق بعد تخزين كائن في قاعدة البيانات.
-- [wu_this-model_pre_save](./Actions/wu_this-model_pre_save) — يُطلق بعد تخزين كائن في قاعدة البيانات.
-- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — يتيح لمطوري المكوّن إضافة إجراءات إلى عملية الفتح.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ينطلق قبل معالجة طلب البحث.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — يسمح للمطورين بإجراء تغييرات إضافية على كائن الدفع.
+- [wu_cart_setup](./Actions/wu_cart_setup) — يسمح للمطورين بإجراء تغييرات إضافية على كائن الدفع.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ينطلق قبل إضافة حقل إلى نموذج الدفع.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — يسمح للمطورين بتشغيل خطافات إضافية.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — قبل أن نعالج الدفع.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ينطلق بعد تجميع طلب الدفع بالكامل.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — يسمح لمطوري الإضافات بإضافة ودجات إلى لوحة Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — يسمح لمطوري الإضافات بإضافة ودجات إلى لوحة Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — يسمح لأجزاء أخرى من الإضافة بإرفاق إجراءاتها لإلغاء التفعيل
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — يسمح لمطوري الإضافات بإضافة إجراءات إلى عملية الحذف
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ينطلق عندما يصبح نطاق ما النطاق الأساسي لموقع.
+- [wu_domain_created](./Actions/wu_domain_created) — يتم تشغيله عند إضافة تعيين نطاق جديد.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ينطلق بعد تحميل Domain Mapping الأساسي لدينا
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — ستحفظ بعض الإضافات URL قبل أن يكون التعيين نشطًا أو ستنشئ URLs بطريقة مختلفة غير مضمنة
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — يسمح للمطورين بالربط بعد حدوث تكرار لموقع.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — يسمح لمطوري الإضافات بإضافة خطافات إضافية
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — خطاف لتنظيف إضافي
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ينطلق قبل معالجة طلب النافذة المنبثقة لإضافة نطاق جديد.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — يسمح لمطوري الإضافات بحفظ البيانات الوصفية بطرق مختلفة إذا احتاجوا إلى ذلك.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — يسمح لمطوري الإضافات بحفظ بيانات المستخدم الوصفية بطرق مختلفة إذا احتاجوا إلى ذلك.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ينطلق عند مصادفة رمز رابط سحري غير صالح.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ينطلق بعد تسجيل دخول مستخدم عبر رابط سحري.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — يسمح لمطوري الإضافات بتنفيذ أمور إضافية عند إضافة العميل.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ينطلق بعد تسجيل قدرات MCP لكيان.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — ينطلق بعد تهيئة محوّل MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — يتم تشغيله بعد إلغاء العضوية.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — يتم تشغيله بعد تجديد العضوية.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — يتم تشغيله قبل إلغاء العضوية.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — يتم تشغيله قبل تجديد العضوية.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ينطلق بعد تخزين كائن في قاعدة البيانات.
+- [wu_page_added](./Actions/wu_page_added) — يسمح لمطوري الإضافات بتشغيل أشياء إضافية عند تسجيل الصفحات.
+- [wu_page_after_render](./Actions/wu_page_after_render) — يسمح لمطوري الإضافات بإضافة محتوى إضافي بعد أن نطبع الصفحة
+- [wu_page_before_render](./Actions/wu_page_before_render) — يسمح لمطوري الإضافات بإضافة محتوى إضافي قبل أن نطبع الصفحة.
+- [wu_page_load](./Actions/wu_page_load) — يسمح لمطوري الإضافات بإضافة خطافات إضافية إلى صفحاتنا.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — يسمح لمطوري الإضافات بإضافة محتوى إضافي بعد أن نطبع الصفحة
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — يسمح لمطوري الإضافات بإضافة محتوى إضافي قبل أن نطبع الصفحة.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — يسمح لمطوري الإضافات بإضافة خطافات إضافية إلى صفحاتنا.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ينطلق بعد تسجيل الودجات لهذه الصفحة.
 
-## Filters
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — يتم تشغيله للسماح للإضافات بإرفاق وحدات الصلاحيات بالتكاملات.
+- [wu_register_integrations](./Actions/wu_register_integrations) — يتم تشغيله للسماح للتكاملات بتسجيل نفسها.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — يسمح بتسجيل مسارات إضافية.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — يسمح لمطوري الإضافة بإضافة إجراءات إلى عملية الحفظ
+- [wu_site_created](./Actions/wu_site_created) — يتم تشغيله بعد إنشاء موقع لأول مرة.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — يسمح لمطوري الإضافة بإضافة hooks إضافية، إذا لزم الأمر.
+- [wu_template_previewer](./Actions/wu_template_previewer) — يعمل عندما يكون داخل سياق معاين القالب.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — يشغّل hook إدراج السكربتات.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — يتم تشغيله بعد تخزين كائن في قاعدة البيانات.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — يتم تشغيله بعد تخزين كائن في قاعدة البيانات.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — يتم تشغيله بعد تخزين كائن في قاعدة البيانات.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — يسمح لمطوري الإضافة بإضافة إجراءات إلى عملية إلغاء القفل.
 
-- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — يمرّز مدة انتهاء صلاحية ملف تعريف الارتباط للمصادقة.
-- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — يمرّز مخطط إعادة توجيه المصادقة.
-- [get_blogs_of_user](./Filters/get_blogs_of_user) — يكرر مرشح WP الأصلي هنا، للضمان.
-- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — يتيح لمطوري المكوّن تصفية عنوان URL المستخدم في المعاين.
-- [secure_auth_cookie](./Filters/secure_auth_cookie) — يمرّز ما إذا كان يجب إرسال ملف تعريف الارتباط للمصادقة فقط عبر HTTPS.
-- [secure_auth_redirect](./Filters/secure_auth_redirect) — يمرّز ما إذا كان يجب استخدام إعادة توجيه مصادقة آمنة.
-- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — يمرّز ما إذا كان يجب إرسال ملف تعريف الارتباط عند تسجيل الدخول فقط عبر HTTPS.
-- [send_auth_cookies](./Filters/send_auth_cookies) — يتيح منع إرسال ملفات تعريف الارتباط للمصادقة فعليًا إلى العميل.
-- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — تعيين عنوان URL لإعادة التوجيه.
-- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — إضافة خطوات إضافية عبر المرشحات.
-- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — يتيح لمطوري المكوّن إضافة متغير إضافي إلى سياق العرض على مستوى العالم.
-- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — يتيح للمطورين تخطي هذا الفحص.
-- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — يمرّز الحقول لنافذة إضافة نطاق جديد.
-- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — يتيح للمطورين إجراء تغييرات على بند رسوم الإعداد.
-- [wu_admin_notices](./Filters/wu_admin_notices) — يتيح للمطورين تصفية إشعارات المسؤول المضافة بواسطة Ultimate Multisite.
-- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — تصفية بعد التغيير.
+## الفلاتر {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — يرشّح مدة فترة انتهاء صلاحية ملف تعريف ارتباط المصادقة.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — يرشّح مخطط إعادة توجيه المصادقة.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — ينسخ WP Filter الأصلي هنا، للاحتياط.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — يسمح لمطوّري plugin بترشيح URL المستخدم في أداة المعاينة
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — يرشّح ما إذا كان ينبغي إرسال ملف تعريف ارتباط المصادقة عبر HTTPS فقط.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — يرشّح ما إذا كان يجب استخدام إعادة توجيه مصادقة آمنة.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — يرشّح ما إذا كان ينبغي إرسال ملف تعريف ارتباط تسجيل الدخول عبر HTTPS فقط.
+- [send_auth_cookies](./Filters/send_auth_cookies) — يسمح بمنع إرسال ملفات تعريف ارتباط المصادقة فعليًا إلى العميل.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — عيّن URL إعادة التوجيه.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — أضف خطوات إضافية عبر المرشّحات
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — يسمح لمطوّري plugin بإضافة متغير إضافي إلى سياق العرض عالميًا.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — يسمح للمطوّرين بتجاوز هذا الفحص مبكرًا.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — يرشّح الحقول لنافذة إضافة نطاق جديد المنبثقة.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — يسمح للمطوّرين بإجراء تغييرات على عنصر سطر رسوم الإعداد.
+- [wu_admin_notices](./Filters/wu_admin_notices) — يسمح للمطوّرين بترشيح إشعارات الإدارة التي يضيفها Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — الترشيح بعد التغيير.
 - [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — الآن، نتعامل مع جميع الأنواع.
-- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — يتيح لمطوري المكوّن تخطي القيود.
-- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — يمرّز ما إذا كان يجب تطبيق رسوم التسجيل أم لا.
-- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — تصفية معلمات API الأصلية.
-- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — يتيح لمطوري المكوّن تصفية حقول عنوان الفوترة.
-- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — يتيح للمطورين تجاوز الإخراج وتعيين واحد جديد
-- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — يتيح للمطورين تجاوز كود إلغاء تعيين المستخدم الحالي.
-- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — يمرّز إجمالي \"المبلغ المتكرر\".
-- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — تصفية إجمالي \"المبلغ الابتدائي\".
-- [wu_cart_get_total](./Filters/wu_cart_get_total) — تصفية إجمالي \"المبلغ الابتدائي\".
-- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — يتيح لمطوري المكوّن التدخل في قيمة الائتمان.
-- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — تُربط واجهات برمجة تطبيقاتنا لإضافة قوالب حقول جديدة هنا.
-- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — تُربط واجهات برمجة تطبيقاتنا لإضافة أنواع حقول جديدة هنا.
-- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — تصفية رسائل الخطأ.
-- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — يتيح للمطورين تجاوز الفحص إذا كان الحقل قابلًا للتقديم تلقائيًا.
-- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — يتيح لمطوري المكوّن إضافة ألقاب مخصصة في مُصَحِّح النموذج.
-- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — يتيح لمطوري المكوّن تصفية قواعد التحقق.
-- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — إلغاء تعيين المعلمات غير المرغوب فيها.
-- [wu_contains_element](./Filters/wu_contains_element) — يتيح للمطورين تغيير نتائج البحث الأولي.
-- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — يتيح لمزودي الاستضافة تثبيت الثابت بشكل مختلف.
-- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — يعيد اسمًا جميلًا للفرعية الإدارية للبلد.
-- [wu_country_get_cities](./Filters/wu_country_get_cities) — يعيد قائمة المدن لحالة في بلد.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — يسمح لمطوّري plugin بتجاوز القيود مبكرًا.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — يرشّح ما إذا كان ينبغي تطبيق رسوم التسجيل أم لا.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — يرشّح وسائط api الأصلية.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — يسمح لمطوّري plugin بترشيح حقول عنوان الفوترة.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — يسمح للمطوّرين بتجاوز المخرجات وتعيين مخرجات جديدة
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — يسمح للمطوّرين بتجاوز كود إلغاء تعيين المستخدم الحالي.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — يرشّح إجمالي "المبلغ المتكرر".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — يرشّح إجمالي "المبلغ الأولي".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — يرشّح إجمالي "المبلغ الأولي".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — يسمح لمطوّري plugin بالتدخل في قيمة الرصيد.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — يرشّح النطاقات الأساسية المشتركة لنموذج checkout التي لا ينبغي أن تصبح سجلات نطاق معيّن.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — ترتبط APIs الخاصة بنا لإضافة قوالب حقول جديدة هنا.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — ترتبط APIs الخاصة بنا لإضافة أنواع حقول جديدة هنا.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — يرشّح رسائل الخطأ.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — يسمح للمطوّرين بتجاوز الفحص إذا كان الحقل قابلاً للإرسال تلقائيًا.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — يسمح لمطوّري plugin بإضافة أسماء مستعارة مخصصة في مدقّق النماذج.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — يسمح لمطوّري plugin بترشيح قواعد التحقق.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — يلغي تعيين المعاملات غير المرغوب فيها.
+- [wu_contains_element](./Filters/wu_contains_element) — يسمح للمطوّرين بتغيير نتائج البحث الأولي.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — يسمح لمزوّدي الاستضافة بتثبيت الثابت بطريقة مختلفة.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — يعيد الاسم اللطيف للتقسيمات الإدارية الفرعية للبلد.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — يعيد قائمة المدن لولاية في بلد.
 - [wu_country_get_states](./Filters/wu_country_get_states) — يعيد قائمة الولايات لهذا البلد.
-- [wu_current_set_customer](./Filters/wu_current_set_customer) — يتيح للمطورين تعديل السلوك الافتراضي وتعيين العميل الحالي بشكل مختلف.
-- [wu_current_set_membership](./Filters/wu_current_set_membership) — يتيح للمطورين تعديل السلوك الافتراضي وتعيين العضوية الحالية بشكل مختلف.
-- [wu_current_set_site](./Filters/wu_current_set_site) — يتيح للمطورين تعديل السلوك الافتراضي وتعيين الموقع الحالي بشكل مختلف.
-- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — يتيح للمطورين تعديل معلمات URL لإدارة الموقع.
-- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — يتيح لمطوري المكوّن تصفية الروابط.
-- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — يتيح لمطوري المكوّن إضافة فحوصات جديدة لتحديد النتائج.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — يسمح للمطوّرين بتعديل السلوك الافتراضي وتعيين العميل الحالي بطريقة مختلفة.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — يسمح للمطوّرين بتعديل السلوك الافتراضي وتعيين العضوية الحالية بطريقة مختلفة.
+- [wu_current_set_site](./Filters/wu_current_set_site) — يسمح للمطوّرين بتعديل السلوك الافتراضي وتعيين الموقع الحالي بطريقة مختلفة.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — يسمح للمطوّرين بتعديل معاملات URL إدارة الموقع.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — يسمح لمطوّري plugin بترشيح الروابط.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — يسمح لمطوّري plugin بإضافة فحوصات جديدة من أجل تحديد النتائج.
+
 - [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — قد نحتاج إلى إضافة كتل إضافية لاحقًا.
-- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — يضيف مرشحًا عامًا للسماح للمطورين بتوسيع هذا المحلل للتعامل مع منشئي أو ملحقات إضافية.
-- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — تصفية ما إذا كان يجب فرض قواعد كلمة مرور إضافية.
-- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — تصفية اسم المستخدم المولد للعميل.
-- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — يتيح لمطوري المكوّن تصفية الإعدادات المسبقة لصفحة الدفع.
-- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — يتيح للمطورين إضافة رموز نماذج جديدة لتجاوز هذا السلوك.
-- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — يتيح للمطورين والإضافات إضافة خطوات ترحيل جديدة
-- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — راجع المزيد عن هذا المرشح أدناه، في نفس الطريقة.
-- [wu_get_post_types](./Filters/wu_get_post_types) — يتيح للمطورين اختيار أنواع المنشورات التي يجب عرضها.
-- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — يعيد الأسطر، قابل للتصفية
-- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — يتيح للمطورين التلاعب بأزواج النطاق/المسار.
-- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — يمرّز أقسام المعالج لإعداد تكامل الاستضافة.
-- [wu_id_form_fields](./Filters/wu_id_form_fields) — يمرّز الحقول على نموذج. يُحدد النموذج بالمعرف في اسم المرشح.
-- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — تصفية أنواع المنتجات التي لها دورات فواتير مستقلة.
-- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — يتيح لمطوري المكوّن إجبار حالة معينة للواجهة البرمجية.
-- [wu_is_development_mode](./Filters/wu_is_development_mode) — يتيح لمطوري المكوّن إضافة اختبارات إضافية لوضع التطوير.
-- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — يتيح لمطوري المكوّن إجبار حالة معينة لمحول MCP.
-- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — لأسباب أمنية، نقيّد عدد الإجراءات المتاحة للربط. يتيح هذا المرشح للمطورين التوسع
-- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — يتحقق مما إذا كان نوع منشور معين مسموحًا به في هذه الخطة. يتيح لمطوري المكوّن تصفية قيمة الإرجاع
-- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — تصفية ما إذا كان يجب فرض التحقق من عنوان IP.
-- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — تصفية ما إذا كان يجب فرض التحقق من وكيل المستخدم.
-- [wu_magic_link_url](./Filters/wu_magic_link_url) — تصفية عنوان URL للرابط السحري المولد.
-- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — تصفية ما إذا كانت الروابط السحرية مفعلة.
-- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — يمرّز عنوان URL لإعادة التوجيه بعد جعل نطاق أساسي.
-- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — إنشاء قائمة استبعاد للمعلمات التي تمنع إعادة التوجيه التلقائي.
-- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — تصفية لتجاوز قرار تضمين قدرة MCP.
-- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — يمرّز تاريخ انتهاء الصلاحية المحسوب.
-- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — يمرّز تاريخ انتهاء الصلاحية المحسوب لتعيينه بعد التجديد.
-- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — يتيح للمطورين إضافة رموز نماذج تحديث جديدة.
-- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — تصفية الحد الأدنى لطول كلمة المرور.
-- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — تصفية الحد الأدنى لقوة كلمة المرور المطلوبة (درجة zxcvbn).
-- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — يتيح لمطوري المكوّن، ولينا، إضافة روابط إجراءات لصفحات التحرير الخاصة بنا
-- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — تصفية ما إذا كان يجب طلب أحرف صغيرة في كلمات المرور.
-- [wu_password_require_number](./Filters/wu_password_require_number) — تصفية ما إذا كان يجب طلب أرقام في كلمات المرور.
-- [wu_password_require_special](./Filters/wu_password_require_special) — تصفية ما إذا كان يجب طلب أحرف خاصة في كلمات المرور.
-- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — تصفية ما إذا كان يجب طلب أحرف كبيرة في كلمات المرور.
-- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — يتيح للمستخدم تغيير رسالة حول المدفوعات المعلقة.
-- [wu_plan_product_types](./Filters/wu_plan_product_types) — تصفية أنواع المنتجات التي يجب معالجتها كخطط.
-- [wu_post_count](./Filters/wu_post_count) — يتيح لمطوري المكوّن تغيير إجمالي العدد.
-- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — يتيح لمطوري المكوّن تغيير الحالة التي يجب عدّها. بشكل افتراضي، تُعد المنشورات المنشورة والخاصة.
-- [wu_post_default_status](./Filters/wu_post_default_status) — يمرّز بيانات الكائن قبل تخزينها في قاعدة البيانات.
-- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — يتيح للمطورين تصفية الإعدادات قبل حفظها بواسطة Ultimate Multisite.
-- [wu_rest_create_item](./Filters/wu_rest_create_item) — يمرّز ما إذا كان مسموحًا بالمتابعة مع الطلب أم لا.
-- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — يمرّز ما إذا كان مسموحًا بالمتابعة مع الطلب أم لا.
-- [wu_rest_get_item](./Filters/wu_rest_get_item) — يمرّز ما إذا كان مسموحًا بالمتابعة مع الطلب أم لا.
-- [wu_rest_get_items](./Filters/wu_rest_get_items) — يمرّز ما إذا كان مسموحًا بالمتابعة مع الطلب أم لا.
-- [wu_rest_update_item](./Filters/wu_rest_update_item) — يمرّز ما إذا كان مسموحًا بالمتابعة مع الطلب أم لا.
-- [wu_return_url](./Filters/wu_return_url) — يتيح للمطورين تغيير عنوان URL للعودة إلى البوابة المستخدمة بعد عمليات الدفع.
-- [wu_search_models_functions](./Filters/wu_search_models_functions) — يتيح لمطوري المكوّن إضافة المزيد من وظائف نماذج البحث.
-- [wu_setup_wizard](./Filters/wu_setup_wizard) — يتيح للمطورين إضافة خطوات معالج الإعداد الإضافية.
-- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — يتيح للمطورين تخطي إعادة التوجيه، ومنع حدوثه.
-- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — يتيح إعادة كتابة المعالج.
-- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — تصفية الإجراءات المجمعة المتاحة للمواقع.
-- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — تصفية لتغيير قيمة get pluginssites داخل الشبكة.
-- [wu_sso_enabled](./Filters/wu_sso_enabled) — تمكين/تعطيل ميزة تسجيل الدخول الأحادي عبر النطاق.
-- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — تصفية بيانات اشتراك Stripe. يمكن تجاوز success_url أو cancel_url.
-- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — يمرّز معلمات نية الدفع.
-- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — يمرّز معرف الخطة للتحقق منها. إذا كان موجودًا، ستستخدم الاشتراك الجديد هذه الخطة.
-- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — يمرّز معرف المنتج للتحقق منه. إذا كان موجودًا، ستستخدم الاشتراك الجديد هذا المنتج.
-- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — يمرّز قيمة idempotency_key المرسلة مع خيارات رسوم Stripe.
-- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — يمرّز سجل العضوية المرتبط بهذا الويب هوك.
-- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — يمرّز بيانات التعريف قبل تسلسلها لتخزينها في قاعدة البيانات.
-- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — يمرّز بيانات الكائن قبل تخزينها في قاعدة البيانات.
-- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — يتيح للمطورين تغيير عنوان URL للترقية لفتح القفل
-- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — يحدد ما إذا كان يجب استخدام خريطة.
-- [wu_username_from_email](./Filters/wu_username_from_email) — تصفية اسم المستخدم الجديد للعميل.
-- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — يتيح للمطورين تغيير رسالة حول حد مستخدمي العضوية
-- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — يتيح للمطورين إضافة مجلدات إضافية إلى قائمة القابلة للاستبدال.
-- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — يمرّز أي sub_commands مفعلة لهذا الكيان.
-- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — نتحقق من ثلاث أنماط عند محاولة معرفة أين يمكننا حقن ثوابتنا:
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — يضيف مرشحًا عامًا للسماح للمطورين بتوسيع هذا المحلل للتعامل مع منشئات أو إضافات إضافية.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — يرشح ما إذا كان يجب فرض قواعد إضافية لكلمة المرور.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — يرشح اسم مستخدم العميل المُولَّد.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — يسمح لمطوري الإضافات بترشيح الإعدادات المسبقة لصفحة الدفع.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — يسمح للمطورين بإضافة معرفات نماذج جديدة لتجاوز هذا السلوك.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — يسمح للمطورين والإضافات الملحقة بإضافة خطوات ترحيل جديدة
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — اطّلع على المزيد حول هذا المرشح أدناه، في هذه الطريقة نفسها.
+- [wu_get_post_types](./Filters/wu_get_post_types) — يسمح للمطورين بتحديد أنواع المنشورات التي ينبغي عرضها.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — إرجاع الأسطر، قابل للترشيح
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — يسمح للمطورين بمعالجة أزواج النطاق/المسار.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — يرشح أقسام المعالج لإعداد تكامل الاستضافة.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — يرشح الحقول في نموذج. يتم تحديد النموذج بواسطة المعرّف في اسم المرشح.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — يرشح أنواع المنتجات التي لها دورات فوترة مستقلة.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — يسمح لمطوري الإضافات بفرض حالة معينة للـ API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — يسمح لمطوري الإضافات بإضافة اختبارات إضافية لوضع التطوير.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — يسمح لمطوري الإضافات بفرض حالة معينة لمحول MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — لأسباب أمنية، نحد من عدد الإجراءات المتاحة للربط بها. يسمح هذا المرشح للمطورين بالتوسيع
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — يتحقق مما إذا كان نوع منشور معين مسموحًا به في هذه الخطة. يسمح لمطوري الإضافات بترشيح قيمة الإرجاع
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — يرشح ما إذا كان يجب فرض التحقق من عنوان IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — يرشح ما إذا كان يجب فرض التحقق من وكيل المستخدم.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — يرشح عنوان URL للرابط السحري المُولَّد.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — يرشح ما إذا كانت الروابط السحرية مفعّلة.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — يرشح عنوان URL لإعادة التوجيه بعد جعل النطاق أساسيًا.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — ينشئ قائمة استبعاد للمعاملات التي تمنع إعادة التوجيه التلقائية.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — مرشح لتجاوز قرار تضمين قدرة MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — يرشح تاريخ الانتهاء المحسوب.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — يرشح تاريخ الانتهاء المحسوب ليتم تعيينه بعد التجديد.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — يسمح للمطورين بإضافة معرفات نماذج تحديث جديدة.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — يرشح الحد الأدنى لطول كلمة المرور.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — يرشح الحد الأدنى المطلوب لقوة كلمة المرور (درجة zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — يسمح لمطوري الإضافات، ولنا أيضًا، بإضافة روابط إجراءات إلى صفحات التحرير لدينا
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — يرشح ما إذا كان يجب طلب أحرف صغيرة في كلمات المرور.
+- [wu_password_require_number](./Filters/wu_password_require_number) — يرشح ما إذا كان يجب طلب أرقام في كلمات المرور.
+- [wu_password_require_special](./Filters/wu_password_require_special) — يرشح ما إذا كان يجب طلب رموز خاصة في كلمات المرور.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — يرشح ما إذا كان يجب طلب أحرف كبيرة في كلمات المرور.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — يسمح للمستخدم بتغيير الرسالة المتعلقة بالمدفوعات المعلقة.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — يرشح أنواع المنتجات التي ينبغي التعامل معها كخطط.
+- [wu_post_count](./Filters/wu_post_count) — يسمح لمطوري الإضافات بتغيير إجمالي العدد
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — يسمح لمطوري الإضافات بتغيير حالة المنشور التي ينبغي احتسابها. افتراضيًا، تُحتسب المنشورات المنشورة والخاصة
+- [wu_post_default_status](./Filters/wu_post_default_status) — يرشح بيانات الكائن قبل تخزينها في قاعدة البيانات.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — يسمح للمطورين بترشيح الإعدادات قبل الحفظ بواسطة Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — يرشح ما إذا كان مسموحًا بمتابعة الطلب أم لا.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — يرشح ما إذا كان مسموحًا بمتابعة الطلب أم لا.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — يفلتر ما إذا كان مسموحًا بمتابعة الطلب أم لا.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — يفلتر ما إذا كان مسموحًا بمتابعة الطلب أم لا.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — يفلتر ما إذا كان مسموحًا بمتابعة الطلب أم لا.
+- [wu_return_url](./Filters/wu_return_url) — يسمح للمطورين بتغيير عنوان URL للعودة الخاص بالبوابة والمستخدم بعد عمليات الدفع.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — يسمح لمطوري plugin بإضافة المزيد من دوال نماذج البحث.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — يسمح للمطورين بإضافة خطوات إضافية لمعالج الإعداد.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — يفلتر ما إذا كان ينبغي لـ Ultimate Multisite إنشاء سجل نطاق لموقع تم إنشاؤه حديثًا.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — يسمح للمطورين باختصار عملية إعادة التوجيه، ومنع حدوثها.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — يسمح بإعادة كتابة المعالج
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — يفلتر الإجراءات المجمّعة المتاحة للمواقع.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — فلتر لتغيير قيمة get pluginssites داخل الشبكة.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — تمكين/تعطيل إمكانية تسجيل الدخول الأحادي عبر النطاقات.
+- [wu_sso_url](./Filters/wu_sso_url) — يفلتر عناوين URL المولَّدة لـ SSO قبل إرجاعها لإجراءات العملاء عبر النطاقات.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — يفلتر بيانات اشتراك Stripe. يمكنه تجاوز success_url أو cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — يفلتر وسيطات نية الدفع.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — يفلتر معرّف الخطة للتحقق منه. إذا كان هذا موجودًا، فسيستخدم الاشتراك الجديد هذه الخطة.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — يفلتر معرّف المنتج للتحقق منه. إذا كان هذا موجودًا، فسيستخدم الاشتراك الجديد هذا المنتج.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — يفلتر قيمة idempotency_key المرسلة مع خيارات تحصيل Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — يفلتر سجل العضوية المرتبط بهذا webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — يفلتر بيانات meta قبل تسلسلها لتُخزَّن في قاعدة البيانات.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — يفلتر بيانات الكائن قبل تخزينها في قاعدة البيانات.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — يسمح للمطورين بتغيير عنوان URL للترقية من أجل إلغاء القفل
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — يحدد ما إذا كان ينبغي استخدام تعيين
+- [wu_username_from_email](./Filters/wu_username_from_email) — يفلتر اسم مستخدم العميل الجديد.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — يسمح للمطورين بتغيير الرسالة المتعلقة بحد مستخدمي العضوية
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — يسمح للمطورين بإضافة مجلدات إضافية إلى القائمة القابلة للاستبدال.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — يفلتر أي sub_commands ممكّنة لهذا الكيان.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — نتحقق من ثلاثة أنماط عند محاولة معرفة أين يمكننا حقن ثوابتنا:

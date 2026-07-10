@@ -3,18 +3,18 @@ title: Cloudways-integraatio
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways -Integraatio
+# Cloudways -Integraatio {#cloudways-integration}
 
-## Yleiskatsaus
+## Yleiskatsaus {#overview}
 Cloudways on pilvipohjainen hallittu palvelin alusta, joka mahdollistaa WordPress-sivustojen käyttämisen monenlaisten pilvipalveluntarjoajien, kuten DigitalOcean, AWS ja Google Cloud, kautta. Tämä integraatio mahdollistaa automaattisen verkkotunnusten synkronoinnin sekä SSL-sertifikaattien hallinnan Ultimate Multisite:n ja Cloudwaysin välillä.
 
-## Ominaisuudet
+## Ominaisuudet {#features}
 - Automaattinen verkkotunnusten synkronointi
 - SSL-sertifikaattien hallinta
 - Lisäverkkotunnusten tuki
 - DNS-varmistus SSL-sertifikaatteille
 
-## Vaatimukset
+## Vaatimukset {#requirements}
 Seuraavat vakioiden on määritettävä tiedostoosi `wp-config.php`:
 
 ```php
@@ -30,22 +30,22 @@ Valinnaisina voit myös määritellä:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'kommalta, eroteltuna listana, verkkotunnukset');
 ```
 
-## Asetusohjeet
+## Asetusohjeet {#setup-instructions}
 
-### 1. Hae Cloudwaysin API-tunnisteet
+### 1. Hae Cloudwaysin API-tunnisteet {#1-get-your-cloudways-api-credentials}
 1. Kirjaudu sisään Cloudways-hallintapaneeliin
 2. Mene kohtaan "Account" > "API Keys" (Tili > API-avaimet)
 3. Luo API-avain, jos sinulla ei ole vielä yhtä
 4. Kopioi sähköpostisi ja API-avaimesi
 
-### 2. Hae palvelimen ja sovelluksen ID:t
+### 2. Hae palvelimen ja sovelluksen ID:t {#2-get-your-server-and-application-ids}
 1. Cloudwaysin hallintapaneelissa mene kohtaan "Servers" (Palvelimet)
 2. Valitse se palvelin, johon WordPress multisite on sijoitettu
 3. Palvelimen ID näkyy URL-osoitteessa: `https://platform.cloudways.com/server/{SERVER_ID}`
 4. Mene kohtaan "Applications" (Sovellukset) ja valitse WordPress-sovellus
 5. Sovelluksen ID näkyy URL-osoitteessa: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Lisää vakioita wp-config.php:ään
+### 3. Lisää vakioita wp-config.php:ään {#3-add-constants-to-wp-configphp}
 Lisää seuraavat vakioiden tiedot tiedostoonsi `wp-config.php`:
 
 ```php
@@ -69,7 +69,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 Älä lisää `*.your-network.com` (tai minkään oman verkosi aladomeenikuvion) `WU_CLOUDWAYS_EXTRA_DOMAINS`-asetukseen. Katso [Tärkeää — wildcard SSL -ongelma](#important--wildcard-ssl-pitfall) alla, miksi tämä estää yksittäisten tenantien SSL-sertifikaattien myöntämisen.
 :::
 
-### 4. Aktivoi integraatio
+### 4. Aktivoi integraatio {#4-enable-the-integration}
 
 1. WordPressin hallintapaneelissa siirry Ultimate Multisite > Settings (Asetukset).
 2. Siirry "Domain Mapping" (Domeenimapping) -välilehdelle.
@@ -77,9 +77,9 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 4. Aktivoi Cloudways-integraatio.
 5. Napsauta "Save Changes" (Tallenna muutokset).
 
-## Miten se toimii
+## Miten se toimii {#how-it-works}
 
-### Domeenien synkronointi
+### Domeenien synkronointi {#domain-syncing}
 
 Kun domeeni mappataan Ultimate Multisite -järjestelmässä:
 
@@ -90,7 +90,7 @@ Kun domeeni mappataan Ultimate Multisite -järjestelmässä:
 
 Huomio: Cloudwaysin API vaatii koko domeenilistan lähettämisen joka kerta, ei vain yksittäisten domeenien lisäämistä tai poistamista.
 
-### SSL-sertifikaattien hallinta
+### SSL-sertifikaattien hallinta {#ssl-certificate-management}
 
 Domeenit synkronoiduttua:
 
@@ -100,7 +100,7 @@ Domeenit synkronoiduttua:
 
 Integraatio pyytää aina **standardia** (ei villakarttaa) Let's Encrypt -sertifikaatteja Cloudwaysilta. Jos `WU_CLOUDWAYS_EXTRA_DOMAINS`-muuttujaan annetaan villakartta-malli (`*.`), etuliite `*.` poistetaan ennen SSL-pyyntöä – itse villakarttaa ei asenneta tällä integraatiolla. Villakarttasertifikaatin käyttö Cloudwaysissa vaatisi sen asennattamista manuaalisesti, mutta tämän tekeminen estää per-domeen Let's Encrypt -sertifikaattien myöntämisen kartoituihin omaanille hallittaville dominoille (katso alla olevaa ongelmaa).
 
-## Lisadomaineet
+## Lisadomaineet {#extra-domains}
 
 `WU_CLOUDWAYS_EXTRA_DOMAINS`-vakio mahdollistaa lisädomaen määrittelyn, jotka pitäisi aina pysyä Cloudways-sovelluksen alias-listalla. Käytä sitä seuraaviin tarkoituksiin:
 
@@ -109,13 +109,13 @@ Integraatio pyytää aina **standardia** (ei villakarttaa) Let's Encrypt -sertif
 
 **Älä** käytä tätä vakioita omalle verkostollasi alalohkolle villakarttaa (esim. `*.your-network.com`). Katso villakarttasertifikaatin ongelmaa alla.
 
-## Tärkeää — Villakarttasertifikaatin ongelma
+## Tärkeää — Villakarttasertifikaatin ongelma {#important--wildcard-ssl-pitfall}
 
 Yhteinen virhe Cloudwaysin oletusasetusten seuraamisessa on lisätä villakartta, kuten `*.your-network.com`, `WU_CLOUDWAYS_EXTRA_DOMAINS`-muuttujaan tai asentaa manuaalisesti Cloudwaysille villakarttasertifikaatin kyseiselle villakartalle.
 
 **Jos teet näin, Cloudways hylkää Let's Encrypt -sertifikaattien myöntämisen niille per-tenant -domaineille, joita Ultimate Multisite kartoittaa.** Cloudways korvaa aktiivisen SSL-sertifikaatin sovelluksessa joka kerta, ja olemassa oleva villakarttasertifikaatti sovelluksessa estää per-domeen Let's Encrypt -myöntämisen, johon integraatio luottaa.
 
-### Suositeltu Cloudways SSL-asetus Ultimate Multisite -verkostolle
+### Suositeltu Cloudways SSL-asetus Ultimate Multisite -verkostolle {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. **SSL-sertifikaatti** - asenna standardin Let's Encrypt - sertifikaatti, joka kattaa vain `your-network.com` ja `www.your-network.com` -nimen – ei yleistä (wildcard).
 
@@ -125,21 +125,21 @@ Yhteinen virhe Cloudwaysin oletusasetusten seuraamisessa on lisätä villakartta
 
 Jos vuokralaisesi oma-alat ovat jumissa ilman SSL:ää, tarkista Cloudways SSL -välilehti. Jos siellä on aktiivinen yleinen sertifikaatti, poista se, myönnä uusi standardi Let's Encrypt -sertifikaatti vain pääverkko-domeenille ja poista kaikki yleiset merkinnät `WU_CLOUDWAYS_EXTRA_DOMAINS`-muuttujasta. Sen jälkeen käynnistä uudelleen domeenin mappauksen (tai odota seuraavaa) ja integraatio alkaa myöntää sertifikaatteja kerrallaan domainille.
 
-## Ongelmanratkaisu
+## Ongelmanratkaisu {#troubleshooting}
 
-### API-yhteyden ongelmat
+### API-yhteyden ongelmat {#api-connection-issues}
 - Varmista, että sähköpostisi ja API-avaimesi ovat oikein.
 - Tarkista, että palvelimen ja sovelluksen ID:t ovat oikein.
 - Varmista, että Cloudways-tilillä on tarvittavat oikeudet.
 
-### SSL-sertifika ongelmat
+### SSL-sertifika ongelmat {#ssl-certificate-issues}
 
 - Cloudways vaatii, että hallitsemillasi domaine on kelvollisia DNS-rekistereitä, jotka osoittavat palvelimellesi ennen kuin SSL-sertifikaatteja myydään.
 - Integrointi tarkistaa DNS-rekisterit ennen SSL-sertifikaattien pyytämistä.
 - Jos SSL-sertifikaatteja ei myydä, varmista, että domainisi osoittavat oikein palvelimesi IP-osoitteeseen.
 - **Per-tenant custom domain pysyy ilman SSL:llä?** Tarkista Cloudways -sovelluksen SSL Certificate -välilehti. Jos aktiivinen on villin sertifikaatti (manuaalisesti asennettu tai kattava `*.your-network.com`), Cloudways ei myy Let's Encrypt -sertifikaatteja yksittäisille kartoitetuille custom domaineille. Vaihda se standardilla Let's Encrypt -sertifikaatilla, joka kattaa vain pääverkoston domainin (`your-network.com`, `www.your-network.com`) ja poista villit merkinnät `WU_CLOUDWAYS_EXTRA_DOMAINS`-muuttujasta. Sen jälkeen käynnistä uudelleen domain-kartoituksen (tai odota seuraavaa) ja integrointi pyytää per-domain sertifikaatteja.
 
-### Domainia ei lisätty
+### Domainia ei lisätty {#domain-not-added}
 - Tarkista Ultimate Multisite -logit mahdollisten virheilmoitusten löytämiseksi.
 - Varmista, että domain ei ole jo lisätty Cloudwaysiin.
 - Varmista, että Cloudways-tilaasi tukee lisäämiäsi domainien määrää.

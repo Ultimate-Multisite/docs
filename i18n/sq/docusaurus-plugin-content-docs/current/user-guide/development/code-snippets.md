@@ -3,7 +3,7 @@ title: Fragmentet e kodit
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Koda Snippet për v2
+# Koda Snippet për v2 {#code-snippets-for-v2}
 
 Në thelb, kodet e snippet-eve për **WordPress** përdoren për të bërë disa veprime që mund të kërkojnë një plugin më të vogël dhe dedikuar. Të këto kode snippet-e vendosen në një nga skedat bazë ose tema (zakonisht skedat `functions.php` e temës suaj) ose mund të përdoren si MU plugin.
 
@@ -15,7 +15,7 @@ Në këtë artikull do t'ju tregojmë tre code snippet-e që mund të përdoren 
 
   * [**Rregullimi i problemeve CORS me Font-Icons në domenat e mapi**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Ndërrimi i pozicionit të menysë së Kontos (Account menu item)
+## Ndërrimi i pozicionit të menysë së Kontos (Account menu item) {#changing-the-position-of-the-account-menu-item}
 
 Për të ndryshuar pozicionin e menysë së Kontos në Dashboard-in e klientit tuaj, thjesht shtoni këtë code snippet në skedën `functions.php` të temës aktive të faqes kryesore të suaj. Ju mund ta vendosni edhe snippet-in brenda një prej MU plugin-eve ose plugin-eve të specializuara (custom plugins) tuaja.
 
@@ -23,7 +23,7 @@ Për të ndryshuar pozicionin e menysë së Kontos në Dashboard-in e klientit t
 add_filter('wu_my_account_menu_position', function() { return 10; // Përshtatni këtë vlerë për të vendosur menynë në pozicionin e dëshiruar.
 ```
 
-## Si të kontrolloni nëse përdoruesi është nën një plan të caktuar dhe/ose ka një abonim aktiv
+## Si të kontrolloni nëse përdoruesi është nën një plan të caktuar dhe/ose ka një abonim aktiv {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Si administrator rrjeti, mund të keni nevojë të krijoni funksione të specialuara që do të kryejnë veprime bazike ose të bëjnë një shërbim/karakter të disponueshëm për një grup të zgjedhur abonentë ose përdorues finalë, bazuar në statusin e abonimit dhe planit ku janë të abonuar.
 
@@ -51,8 +51,8 @@ Vëreni se përdoruesit mund të abonojnë vetëm te një **Plan**, jo te një P
 
 ![Lista e Produkteve që shfaq ID-të e planeve](/img/admin/products-list.png)
 
-## Rregullimi i problemeve CORS me Font-Icons në domenat të mapuar
-## Rregullimi i problemeve CORS me Font-Icons në domenat të mapuar
+## Rregullimi i problemeve CORS me Font-Icons në domenat të mapuar {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Rregullimi i problemeve CORS me Font-Icons në domenat të mapuar {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Pas kur mapi një domen te një sub-site, mund të zbuloni se faqja ka vështirësi për të ngarkuar fontet e personalizuara. Kjo shkaktohet nga një bllokim i burimit (cross-origin block) në cilësimet e serverit tuaj.
 

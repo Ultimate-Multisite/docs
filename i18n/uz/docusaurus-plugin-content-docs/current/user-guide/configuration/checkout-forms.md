@@ -3,7 +3,7 @@ title: To'lov shakllari
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms — bu yangi mijozlarni jalb qilish uchun turli yondashuvlar bilan tajriba o'tkazishda oson va moslashuvchan usuldir.
 
@@ -34,13 +34,13 @@ Agar siz boshlanish nuqtasi sifatida **single step** yoki **multi-step** ni tanl
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Checkout Form Editor Обзорi
+#### Checkout Form Editor Обзорi {#checkout-form-editor-overview}
 
 Checkout form editor сизнинг роғликларингни қуриш учун комил интерфейтни таъминлайди. Бу редактор тасовити ҳақида қисқача маълумот беради:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### Checkout Формани Тўбетиш
+### Checkout Формани Тўбетиш {#editing-a-checkout-form}
 
 Сиз турли мақсадлар учун checkout формаларини яратишингиз мумкин. Бу мисолда биз роғликлар формати билан ишлаймиз.
 
@@ -110,7 +110,7 @@ Shuningdek, o'ng ustun (column)dagi ushbu opsiyani yoqib yoki o'chirish orqali c
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### Баҳолаш жадвали (Pricing Table Field)
+### Баҳолаш жадвали (Pricing Table Field) {#the-pricing-table-field}
 
 **Баҳолаш жадвали (Pricing Table)** майдон чекаут формангизда сизнинг маҳсулотларингизни кўрсатади, бу эса мижозлар учун режа танлаш имконини беради. Бу майдонни ўзгартирганингизда бир нечта опцияни тадбиркорлик қилишингиз мумкин:
 
@@ -128,17 +128,17 @@ Shuningdek, o'ng ustun (column)dagi ushbu opsiyani yoqib yoki o'chirish orqali c
 
 Агар сиз форманга маҳсулотнинг чекаут оқимини бутунлай якунлаш учун зарур бўлган майдонларни ўз ичига олмайдиган ҳолда Баҳолаш жадвалига маҳсулот қўшсанг, редактор эслатма (warning) кўрсатади. Яшавўли рўйхат формани учун оғнатишдан ёки сақлашдан олдин бу эслатмани ишлатиб номланган зарур майдонни қўшишингиз мумкин.
 
-### Muddatni Mudda Tanlash Uchun Tugmani Qo'shish
+### Muddatni Mudda Tanlash Uchun Tugmani Qo'shish {#adding-a-period-selection-toggle}
 
 Agar siz mahsulotlaringizda [Narx Variatsiyalarini](creating-your-first-subscription-product#price-variations) sozlagan bo'lsangiz (masalan, oylik va yillik narxlari), siz xarid qilish shaklingizga **Muddatni Tanlash** maydonini qo'shishingiz mumkin. Bu maydon mijozlarga hisoblanish muddatlari orasida o'tish imkonini beradigan tugmani ko'rsatadi va narx jadvali real vaqtda dinamik ravishda yangilanadi.
 
-#### 1-Qadam: Mahsulotlaringizda Narx Variatsiyalarini Sozlash
+#### 1-Qadam: Mahsulotlaringizda Narx Variatsiyalarini Sozlash {#step-1-set-up-price-variations-on-your-products}
 
 Muddatni Tanlash maydonini qo'shishdan oldin, mahsulotingizda narx variatsiyalari sozlangandan vaqashganligiga ishonch hosil qiling. **Ultimate Multisite > Products** ga o'ting, bir mahsulotni tahrirlang va **Price Variations** yorlig'i (tab) bo'limiga o'tib, boshqa hisoblanish muddatlarini qo'shing (masalan, chegirmali narxda Yillik).
 
 ![Product-price variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### 2-Qadam: Muddatni Tanlash Maydonini Xarid Qilish Shaklingizga Qo'shish
+#### 2-Qadam: Muddatni Tanlash Maydonini Xarid Qilish Shaklingizga Qo'shish {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. **Ultimate Multisite > Checkout Forms** ga o'ting va xarid qilish shaklingizni tahrirlang.
 
@@ -161,13 +161,13 @@ Muddatni Tanlash maydonini qo'shishdan oldin, mahsulotingizda narx variatsiyalar
 
 7. **Save Field** (Maydonniy) tugmasini bosing.
 
-#### 3-qadam: Maydonchani Narxlash Jadvalidan Yuqoriga Joylash
+#### 3-qadam: Maydonchani Narxlash Jadvalidan Yuqoriga Joylash {#step-3-position-the-field-above-the-pricing-table}
 
 Eng yaxshi foydalanuvchi tajribasi uchun, siz Period Selection maydonchasi har doim narx jadvalidan **oldin** ko'rinishini ta'minlang. Siz maydonchalarni checkout form editorida qayta tartiblash uchun tortib olishingiz mumkin. Bu yechim orqali mijozlar avvalo hisoblanadigan davrni tanlaydi va keyin o'sha davr uchun narxlarni ko'rishadi.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Frontendda Qanday Ishlaydi
+#### Frontendda Qanday Ishlaydi {#how-it-works-on-the-frontend}
 
 Sozlamalanganidan so'ng, ro'yxatdan o'tish sahifasiga keladigan mijozlar narx jadvalidan yuqorida davrni tanlovchi (period selector) maydonchasini ko'rishadi. U boshqa hisoblanadigan davrni bosganida:
 
@@ -175,7 +175,7 @@ Sozlamalanganidan so'ng, ro'yxatdan o'tish sahifasiga keladigan mijozlar narx ja
   * Agar Narx Jadvali maydonchasi ustidagi **Force Different Durations** (Turli Muddatlarni Majburiy O'zgartirish) o'chirilgan bo'lsa, tanlangan davr uchun narx o'zgarishi bo'lmagan mahsulotlar yashiriladi.
   * Agar **Force Different Durations** yoqilgan bo'lsa, tanlangan davr uchun o'zgartirish bo'lmasa ham barcha mahsulotlar ko'rinib turadi (ularning standart narxi ko'rsatiladi).
 
-#### URL orqali Hisoblanadigan Davrni Oldindan Tanlash
+#### URL orqali Hisoblanadigan Davrni Oldindan Tanlash {#pre-selecting-a-billing-period-via-url}
 
 Siz shuningdek, URL orqali mahsulot va hisoblanadigan davrni oldindan tanlashingiz mumkin. Ultimate Multisite quyidagi URL shablonlarini qo'llab-quvvatlaydi:
 
@@ -183,11 +183,11 @@ Siz shuningdek, URL orqali mahsulot va hisoblanadigan davrni oldindan tanlashing
   * `/register/premium/12` — Mahsulot va 12 oylik muddatni oldindan tanlaydi
   * `/register/premium/1/year` — 1 yillik muddatli mahsulotni oldindan tanlaydi
 
-### Shabloni Tanlash Maydonchasi (The Template Selection Field)
+### Shabloni Tanlash Maydonchasi (The Template Selection Field) {#the-template-selection-field}
 
 **Template Selection** maydonchasi mijozlarga checkout paytida sayt shablonini tanlash imkonini beradi. Bu endi Ultimate Multisite v2.6.1 da qo'shilgan **single step** va **multi-step** checkout form shablonlarida avtomatik ravishda mavjud bo'ladi.
 
-#### Maydonchani qo'lda qo'shish
+#### Maydonchani qo'lda qo'shish {#adding-the-field-manually}
 
 Agar siz v2.6.1 dan oldin yaratilgan form bilan ishlayotgan bo'lsangiz yoki bo'sh shablonlardan boshlagan bo'lsangiz:
 
@@ -198,11 +198,11 @@ Agar siz v2.6.1 dan oldin yaratilgan form bilan ishlayotgan bo'lsangiz yoki bo's
    - **Label** — Mijozlarning shablonlar griddasi ustida ko'raydigan sarlavhasi (masalan, "Sayt shablonini tanlang").
    - **Required** (Majburiy) — Mijozlar keyingi qadamga o'tishdan oldin shablonni tanlashlari kerakmi.
 
-#### Qanday ishlaydi
+#### Qanday ishlaydi {#how-it-works}
 
 Mijoz checkout paytida shablonni tanlaganda, Ultimate Multisite uni yangi saytini sozlashda ishlatadi. Ko'rsatilgan shablonlar sizning **Site Templates** ro'yxatingizdan (**Ultimate Multisite > Site Templates**) olinadi. Faqat mijozlarga mavjud deb belgilangan shablonlar shu yerda paydo bo'ladi.
 
-### Checkout-form asosiy domenlari (base domains)
+### Checkout-form asosiy domenlari (base domains) {#checkout-form-base-domains}
 
 Ultimate Multisite v2.13.0 checkout formidagi **Site URL** maydonida sozlanglangan domenlarni tarmoq asosiy domenlari (network base domains) sifatida ko'rib chiqadi. Agar siz mijozlarning bir yoki bir nechta umumiy ro'yxat domenlari, masalan `example.com` va `sites.example.com` ostida saytlar yaratishini xohlasangiz, maydonning mavjud domen sozlamalaridan foydalaning.
 
@@ -210,6 +210,6 @@ Umumiy checkout-form asosiy domenlari bu saytlarga tegishli bo'lgan maxsus domen
 
 `customer-example.com` kabi har bir mijoz uchun maxsus hostlar uchun maxsus domenlarni saqlab qo'ying. Ko'p saytlar foydalanishi mumkin bo'lgan umumiy ro'yxat hostlari uchun checkout-form asosiy domenlarini saqlab qo'ying.
 
-#### Maydonni olib tashlash
+#### Maydonni olib tashlash {#removing-the-field}
 
 Agar siz sayt shablonlarini taklif qilmasangiz, rasmlar (form) ichidagi "Template Selection" maydonini olib tashlang. Kundaldagi foydalanuvchilar bu holda **Ultimate Multisite > Settings > Site Templates** ostida sozlanadigan har qanday standart shablonni olishadi.

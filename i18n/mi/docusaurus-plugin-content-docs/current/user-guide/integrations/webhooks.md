@@ -3,7 +3,7 @@ title: Whakawāhi waka
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# He Whakarongo Wānanga ki Webhooks (v2)
+# He Whakarongo Wānanga ki Webhooks (v2) {#a-first-look-on-webhooks-v2}
 
 _**TŪPA: He tino whakamārama: tēnei āhuatanga he mō ngā mea whai whakamārama nui.**_
 
@@ -11,7 +11,7 @@ He **webhook** he heata he pēnei i te app he pēnei i Ultimate Multisite, he ah
 
 He tino māhinaki ana ko te tino nui o ia he tino whakamahi ana koe i te whaiwhakarite (integrate) he data he tino tika ana i te Ultimate Multisite ki te CRM kē he tētahi system, me tētahi wakamārama ana i roto i te mea e whakatika i te atua. Hei mākete, he tino nui ko te whero ingoa o te kaurau (user) me te email i rite ana i te wakamārama he pō whenua hou e whakatika.
 
-## He aha te whakamahi ki te whakauru webhook?
+## He aha te whakamahi ki te whakauru webhook? {#how-to-create-a-webhook}
 
 Kia whakawhanainga webhook, pono ki te dashboard o tō admin network. Whakawāke **Ultimate Multisite > Webhooks > Add New Webhook**.
 

@@ -3,15 +3,15 @@ title: Menús de Hospitalidad
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menús de Hostelería
+# Menús de Hostelería {#hospitality-menus}
 
 La función **Menús de Hostelería** permite a Theme Builder generar e incrustar páginas de menús de comida y bebida estructurados directamente en su sitio de WordPress.
 
-## Resumen
+## Resumen {#overview}
 
 Ahora, Theme Builder puede crear páginas de menú profesionales y estructuradas para negocios de hostelería, incluidos restaurantes, cafeterías, bares y servicios de catering. Estos menús están totalmente integrados en el diseño de su sitio y son fáciles de actualizar y gestionar.
 
-## Tipos de Hostelería Compatibles
+## Tipos de Hostelería Compatibles {#supported-hospitality-types}
 
 - **Restaurantes** — menús de comedor completos
 - **Cafeterías** — menús de café y comidas ligeras
@@ -21,9 +21,9 @@ Ahora, Theme Builder puede crear páginas de menú profesionales y estructuradas
 - **Food Trucks** — menús de servicio de comida móvil
 - **Bodegas y Viñedos** — menús de bebidas con descripciones
 
-## Estructura del Menú
+## Estructura del Menú {#menu-structure}
 
-### Categorías de Menú
+### Categorías de Menú {#menu-categories}
 
 Los menús se organizan en categorías:
 
@@ -34,7 +34,7 @@ Los menús se organizan en categorías:
 - **Bebidas** — refrescos (alcohólicas y no alcohólicas)
 - **Especiales** — platos especiales diarios o de temporada
 
-### Formato del Artículo del Menú
+### Formato del Artículo del Menú {#menu-item-format}
 
 Cada artículo del menú incluye:
 
@@ -49,7 +49,7 @@ Cada artículo del menú incluye:
 }
 ```
 
-#### Campos del Artículo
+#### Campos del Artículo {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Cada artículo del menú incluye:
 | `allergens` | array | Alérgenos comunes (Nueces, Mariscos, etc.) |
 | `availability` | string | Cuándo está disponible (Diario, Estacional, etc.) |
 
-## Creación de Menús de Hostelería
+## Creación de Menús de Hostelería {#creating-hospitality-menus}
 
-### Paso 1: Proporcionar la Información del Menú
+### Paso 1: Proporcionar la Información del Menú {#step-1-provide-menu-information}
 
 Cuente a Theme Builder sobre su menú:
 
@@ -71,7 +71,7 @@ Crea un menú de restaurante para mi restaurante italiano con aperitivos,
 platos de pasta, platos principales y postres. Incluye precios y descripciones.
 ```
 
-### Paso 2: Theme Builder Genera el Menú
+### Paso 2: Theme Builder Genera el Menú {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formatea precios y descripciones
 5. Añade información dietética y de alérgenos
 
-### Paso 3: Revisar y Personalizar
+### Paso 3: Revisar y Personalizar {#step-3-review-and-customize}
 
 Puede:
 
@@ -91,9 +91,9 @@ Puede:
 4. Actualizar descripciones e información dietética
 5. Ajustar el estilo y la disposición
 
-## Opciones de Visualización del Menú
+## Opciones de Visualización del Menú {#menu-display-options}
 
-### Página de Menú Completa
+### Página de Menú Completa {#full-menu-page}
 
 Una página dedicada que muestra su menú completo:
 
@@ -102,7 +102,7 @@ Una página dedicada que muestra su menú completo:
 - Diseño apto para impresión
 - Diseño adaptable a dispositivos móviles
 
-### Widget de Menú
+### Widget de Menú {#menu-widget}
 
 Incruste secciones de menú en otras páginas:
 
@@ -111,7 +111,7 @@ Incruste secciones de menú en otras páginas:
 - Menú de bebidas en la página de bar
 - Vitrina de postres en el pie de página
 
-### PDF de Menú
+### PDF de Menú {#menu-pdf}
 
 Genere un menú PDF descargable:
 
@@ -120,9 +120,9 @@ Genere un menú PDF descargable:
 - Incluye imágenes y descripciones
 - Fácil de compartir y enviar por correo electrónico
 
-## Información Dietética y de Alérgenos
+## Información Dietética y de Alérgenos {#dietary-and-allergen-information}
 
-### Atributos Dietéticos
+### Atributos Dietéticos {#dietary-attributes}
 
 Marque los artículos con información dietética:
 
@@ -134,7 +134,7 @@ Marque los artículos con información dietética:
 - **Bajo en Carbohidratos** — carbohidratos reducidos
 - **Alto en Proteínas** — rico en proteínas
 
-### Advertencias de Alérgenos
+### Advertencias de Alérgenos {#allergen-warnings}
 
 Incluya alérgenos comunes:
 
@@ -147,9 +147,9 @@ Incluya alérgenos comunes:
 - **Gluten** — trigo y granos que contienen gluten
 - **Sésamo** — semillas y aceite de sésamo
 
-## Gestión del Menú
+## Gestión del Menú {#menu-management}
 
-### Actualizar Precios
+### Actualizar Precios {#updating-prices}
 
 Actualice fácilmente los precios del menú:
 
@@ -159,7 +159,7 @@ Actualice fácilmente los precios del menú:
 4. Guarde los cambios
 5. Los cambios aparecerán inmediatamente en su sitio
 
-### Añadir Artículos de Temporada
+### Añadir Artículos de Temporada {#adding-seasonal-items}
 
 Cree variaciones de menú estacionales:
 
@@ -169,7 +169,7 @@ Cree variaciones de menú estacionales:
 4. Programar las fechas de disponibilidad
 5. Mostrar automáticamente durante la temporada
 
-### Gestionar Especiales
+### Gestionar Especiales {#managing-specials}
 
 Muestre especiales diarios o semanales:
 
@@ -179,7 +179,7 @@ Muestre especiales diarios o semanales:
 4. Actualice diariamente o semanalmente
 5. Archivar especiales antiguos
 
-## Integración con Theme Builder
+## Integración con Theme Builder {#integration-with-theme-builder}
 
 Al usar Theme Builder para sitios de hostelería:
 
@@ -189,9 +189,9 @@ Al usar Theme Builder para sitios de hostelería:
 4. **Optimización móvil** — los menús se muestran hermosos en teléfonos
 5. **Optimización SEO** — los menús son amigables para los motores de búsqueda
 
-## Mejores Prácticas
+## Mejores Prácticas {#best-practices}
 
-### Diseño del Menú
+### Diseño del Menú {#menu-design}
 
 - **Organización clara** — estructura de categorías lógica
 - **Descripciones legibles** — apetitosas e informativas
@@ -199,7 +199,7 @@ Al usar Theme Builder para sitios de hostelería:
 - **Fotos profesionales** — imágenes de comida de alta calidad
 - **Espacio en blanco** — no sature la página
 
-### Contenido
+### Contenido {#content}
 
 - **Descripciones precisas** — describa los artículos con exactitud
 - **Resaltar especiales** — haga que los especiales destaquen
@@ -207,7 +207,7 @@ Al usar Theme Builder para sitios de hostelería:
 - **Actualizar regularmente** — mantenga los precios y artículos actualizados
 - **Usar lenguaje apetitoso** — haga que los artículos suenen deliciosos
 
-### Accesibilidad
+### Accesibilidad {#accessibility}
 
 - **Fuentes legibles** — use tipografías claras y legibles
 - **Contraste suficiente** — asegúrese de que el texto sea legible
@@ -215,9 +215,9 @@ Al usar Theme Builder para sitios de hostelería:
 - **Advertencias de alérgenos** — muestre los alérgenos de forma prominente
 - **Amigable para móviles** — pruébelo en todos los dispositivos
 
-## Ejemplos
+## Ejemplos {#examples}
 
-### Estructura del Menú de Restaurante
+### Estructura del Menú de Restaurante {#restaurant-menu-structure}
 
 ```
 Aperitivos
@@ -241,7 +241,7 @@ Postres
 └── Selección de Gelato
 ```
 
-### Estructura del Menú de Cafetería
+### Estructura del Menú de Cafetería {#cafe-menu-structure}
 
 ```
 Café
@@ -260,7 +260,7 @@ Sándwiches
 └── Wrap Vegetariano
 ```
 
-## Funcionalidades Relacionadas
+## Funcionalidades Relacionadas {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — crear menús de navegación
 - [Design Direction](./design-direction.md) — personalizar el diseño de su sitio

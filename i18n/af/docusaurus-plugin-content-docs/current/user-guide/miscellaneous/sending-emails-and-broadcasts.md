@@ -1,124 +1,124 @@
 ---
-title: Stuur E-posse en Uitsendings
+title: E-posse en uitsendings stuur
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Stuur E-posse en Uitroepberigte (v2)
+# Stuur e-posse en uitsendings (v2) {#sending-emails-and-broadcasts-v2}
 
-_**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
+_**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
-Ultimate Multisite kom met 'n kenmerk wat jou toelaat om jou kliënte te kontak deur 'n e-pos na 'n teikengebruiker of 'n groep gebruikers te stuur, asook om kennisgewings op hul admin-dashboard te plaas om aankondigings uit te stuur.
+Ultimate Multisite kom met ’n funksie wat jou sal toelaat om met jou kliënte te kommunikeer deur ’n e-pos aan ’n geteikende gebruiker of ’n groep gebruikers te stuur, asook om kennisgewings op hul admin-Dashboard te stuur om aankondigings uit te saai
 
-## Voeg admin-kennisgewings by aan jou kliënte se dashboard met Uitroepberigte
+## Voeg admin-kennisgewings by jou kliënte se Dashboard met Uitsendings {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Met die Ultimate Multisite uitroepberig-kenmerk kan jy **admin-kennisgewings** by jou gebruiker se subsite admin-dashboard voeg.
+Deur die Ultimate Multisite-uitsendingsfunksie te gebruik, kan jy **admin-kennisgewings** by jou gebruiker se subsite-admin-Dashboard voeg.
 
-Dit is uiters nuttig indien jy 'n aankondiging moet maak, soos stelselonderhoud of die aanbieding van nuwe produkte of dienste aan jou bestaande gebruikers. So lyk die admin-kennisgewing op jou gebruiker se dashboard.
+Dit is uiters nuttig indien jy ’n aankondiging moet maak, soos stelselinstandhouding of die aanbied van nuwe produkte of dienste aan jou bestaande gebruikers. Só sal die admin-kennisgewing op jou gebruiker se Dashboard lyk.
 
-<!-- Screenshot unavailable: Admin-kennisgewing uitgestuur op 'n kliënt se subsite dashboard -->
+<!-- Skermskoot nie beskikbaar nie: Admin-kennisgewingsuitsending wat op 'n kliënt se subsite-Dashboard gewys word -->
 
-Om 'n admin-kennisgewing te begin, gaan na jou netwerk-admin-dashboard en onder die **Ultimate Multisite**-menu sal jy die **Broadcasts**-opsie vind.
+Om ’n admin-kennisgewing te begin, gaan na jou netwerk-admin-Dashboard en onder die **Ultimate Multisite**-kieslys sal jy die **Uitsendings**-opsie vind.
 
-![Broadcasts lysblad in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![Uitsendingslysbladsy in Ultimate Multisite-admin](/img/admin/broadcasts-list.png)
 
-Jy kan ook bestaande uitroepberigte wysig:
+Jy kan ook bestaande uitsendings wysig:
 
-![Broadcast wysig-koppelvlak](/img/admin/broadcast-edit.png)
+![Uitsending-wysigkoppelvlak](/img/admin/broadcast-edit.png)
 
-Van hierdie bladsy, klik op die **Add Broadcast**-knoppie bo-op.
+Klik vanaf hierdie bladsy die **Voeg uitsending by**-knoppie boaan.
 
-Dit sal die Add broadcast modale venster oopmaak waar jy kan kies watter tipe uitroepberig jy wil stuur.
+Dit sal die Voeg uitsending by-modale venster oopmaak waar jy kan kies watter tipe uitsending jy wil stuur.
 
-Kies dan **Message** en klik op die **Next Step**-knoppie.
+Gaan voort en kies **Boodskap**, klik dan die **Volgende stap**-knoppie.
 
-![Add broadcast modale venster met die Message-opsie geselekteer](/img/admin/broadcast-add-message.png)
+![Voeg uitsending by-modale venster met die Boodskap-opsie gekies](/img/admin/broadcast-add-message.png)
 
-Die volgende venster sal jou vra vir die **Target customer** of **Target product**. Let op dat jy meer as een gebruiker of meer as een produk kan kies.
+Die volgende venster sal jou vra vir óf die **Teikenkliënt** óf **Teikenproduk**. Let daarop dat jy meer as een gebruiker of meer as een produk kan kies.
 
-Om óf 'n gebruikersrekening óf produk te soek, moet jy die sleutelwoord in die veld begin tik.
+Om óf vir ’n gebruikersrekening óf produk te soek, moet jy die sleutelwoord binne die veld begin tik.
 
-Onder die **Message type**-veld kan jy die kleur van die kennisgewing kies. Dit sal die dringendheid van jou boodskap beklemtoon.
+Onder die **Boodskaptipe**-veld kan jy die kleur van die kennisgewing kies. Dit sal die dringendheid van jou boodskap beklemtoon.
 
-Jy kan dan op **Next Step** klik.
+Jy kan dan **Volgende stap** klik.
 
-![Teikenklante, teikenproduk en kennisgewing-tipe velde vir 'n Message uitroepberig](/img/admin/broadcast-message-targets.png)
+![Teikenkliënte, teikenproduk en boodskaptipe-velde vir 'n Boodskap-uitsending](/img/admin/broadcast-message-targets.png)
 
-Die volgende venster is waar jy kan begin met die opstel van jou boodskap deur die onderwerp en die inhoud/boodskap wat jy wil uitroepberig aan die gebruikers te stuur, in te voer.
+Die volgende venster is waar jy jou boodskap kan begin saamstel deur die onderwerp en die inhoud/boodskap in te voer wat jy aan die gebruikers wil uitsaai.
 
-![Broadcast boodskap onderwerp en inhoud redigeerder op die opstel-stap](/img/admin/broadcast-edit.png)
+![Uitsendingsboodskap-onderwerp en inhoudredigeerder op die saamstelstap](/img/admin/broadcast-edit.png)
 
-Nadat jy jou boodskap geskep het, kan jy op die **Send**-knoppie klik.
+Nadat jy jou boodskap geskep het, kan jy dan die **Stuur**-knoppie druk.
 
-En dit is dit. Die admin-kennisgewing sal onmiddellik op jou gebruiker se dashboard verskyn.
+En dit is dit. Die admin-kennisgewing behoort onmiddellik op jou gebruiker se Dashboard te verskyn.
 
-## Stuur e-posse aan jou kliënte
+## Stuur e-posse aan jou kliënte {#send-emails-to-your-customers}
 
-Met die Ultimate Multisite uitroepberig-kenmerk kan jy 'n e-pos aan jou gebruikers stuur. Jy het die opsie om die e-pos slegs aan spesifieke gebruikers te stuur of 'n spesifieke gebruikersgroep te teiken op grond van die produk of plan waarop hulle geregistreer is.
+Deur die Ultimate Multisite-uitsendingsfunksie te gebruik, kan jy ’n e-pos aan jou gebruikers stuur. Jy het ’n opsie om die e-pos slegs aan spesifieke gebruikers te stuur of ’n spesifieke gebruikersgroep te teiken op grond van die produk of plan waarop hulle ingeteken is.
 
-Om 'n e-pos uitroepberig te begin, gaan na jou netwerk-admin-dashboard en onder die Ultimate Multisite-menu sal jy die Broadcast-opsie vind.
+Om ’n e-posuitsending te begin, gaan na jou netwerk-admin-Dashboard en onder die Ultimate Multisite-kieslys sal jy die Uitsending-opsie vind.
 
-![Broadcasts lysblad gebruik as die beginpunt vir 'n e-pos uitroepberig](/img/admin/broadcasts-list.png)
+![Uitsendingslysbladsy wat as die beginpunt vir 'n e-posuitsending gebruik word](/img/admin/broadcasts-list.png)
 
-Van hierdie bladsy, klik op die **Add broadcast**-knoppie bo-op.
+Klik vanaf hierdie bladsy die **Voeg uitsending by**-knoppie boaan.
 
-Dit sal die Add broadcast modale venster oopmaak waar jy kan kies watter tipe uitroepberig jy wil stuur. Kies dan **Email** en klik op die **Next Step**-knoppie.
+Dit sal die Voeg uitsending by-modale venster oopmaak waar jy kan kies watter tipe uitsending jy wil stuur. Gaan voort en kies **E-pos**, klik dan die **Volgende stap**-knoppie.
 
-![Add broadcast modale venster met die Email-opsie geselekteer](/img/admin/broadcast-add-email.png)
+![Voeg uitsending by-modale venster met die E-pos-opsie gekies](/img/admin/broadcast-add-email.png)
 
-Die volgende venster sal jou vra vir die **Target customer** of **Target product**. Let op dat jy meer as een gebruiker of meer as een produk kan kies.
+Die volgende venster sal jou vra vir óf die **Teikenkliënt** óf **Teikenproduk**. Let daarop dat jy meer as een gebruiker of meer as een produk kan kies.
 
-Om óf 'n gebruikersrekening óf produk te soek, moet jy die sleutelwoord in die veld begin tik.
+Om óf vir ’n gebruikersrekening óf produk te soek, moet jy die sleutelwoord binne die veld begin tik.
 
-Sodra jou teikengehoor geselekteer is, kan jy op **Next Step** klik.
+Sodra jou teikengehoor gekies is, kan jy **Volgende stap** klik.
 
-![Teikenklante en teikenproduk keuse vir 'n E-pos uitroepberig](/img/admin/broadcast-email-targets.png)
+![Teikenkliënte en teikenproduk-keuse vir 'n E-pos-uitsending](/img/admin/broadcast-email-targets.png)
 
-Die volgende venster is waar jy kan begin met die opstel van jou e-pos deur die onderwerp en die inhoud/boodskap wat jy wil aan die gebruikers stuur, in te voer.
+Die volgende venster is waar jy jou e-pos kan begin saamstel deur die onderwerp en die inhoud/boodskap in te voer wat jy aan die gebruikers wil stuur.
 
-<!-- Screenshot unavailable: E-pos uitroepberig onderwerp en inhoud redigeerder op die opstel-stap -->
+<!-- Skermskoot nie beskikbaar nie: E-posuitsending-onderwerp en inhoudredigeerder op die saamstelstap -->
 
-Nadat jy jou boodskap geskep het, kan jy op die **Send**-knoppie klik.
+Nadat jy jou boodskap geskep het, kan jy die **Stuur**-knoppie druk.
 
-En so maklik is dit om 'n e-pos aan jou eindgebruikers te stuur met die uitroepberig-kenmerk.
+En dit is hoe maklik dit is om ’n e-pos aan jou eindgebruikers te stuur deur die uitsendingsfunksie te gebruik.
 
-## Sisteem-e-posse
+## Stelsel-e-posse {#system-emails}
 
-Sisteem-e-posse in Ultimate Multisite is die **outomatiese kennisgewings** wat deur die stelsel gestuur word na sekere aksies soos registrasie, betaling, domein-mapping, ens. Hierdie e-posse kan in die Ultimate Multisite-instellings gewysig of aangepas word. Dit kom ook met 'n kenmerk wat jou toelaat om bestaande instellings te herstel en te importeer van 'n ander Ultimate Multisite-installasie.
+Stelsel-e-posse in Ultimate Multisite is daardie **outomatiese kennisgewings** wat deur die stelsel gestuur word ná sekere aksies soos registrasie, betaling, domeinkartering, ens. Hierdie e-posse kan vanaf Ultimate Multisite-instellings geredigeer of gewysig word. Dit kom ook met ’n funksie wat jou sal toelaat om bestaande instellings vanaf ’n ander Ultimate Multisite-installasie terug te stel en in te voer.
 
-### Herstel & Importeer
+### Herstel & Invoer {#resetting--importing}
 
-Nuwe Ultimate Multisite-weergawes, asook bykomende modules, kan en sal van tyd tot tyd nuwe e-posse registreer.
+Nuwe Ultimate Multisite-weergawes, sowel as byvoegings, kan en sal van tyd tot tyd nuwe e-posse registreer.
 
-Om konflik en ander probleme te voorkom, **sal ons die nuwe e-pos-templates nie outomaties as Sisteem-e-posse op jou installasie byvoeg nie**, tensy dit noodsaaklik is vir die korrekte funksionering van 'n gegewe kenmerk.
+Om konflikte en ander probleme te voorkom, **sal ons nie die nuwe e-possjablone outomaties as Stelsel-e-posse op jou installasie byvoeg nie** , tensy hulle noodsaaklik is vir die korrekte werking van ’n gegewe funksie.
 
-Super-admins en agente kan egter hierdie nuut geregistreerde e-posse via die importer-instrument importeer. Daardie proses sal 'n nuwe stelsel-e-pos skep met die inhoud en konfigurasie van die nuwe e-pos-template, wat die super-admin in staat stel om enige aanpassings te maak wat hy wil of om dit so te laat.
+Superadmins en agente kan egter hierdie nuut geregistreerde e-posse via die invoernutsding invoer. Daardie proses sal ’n nuwe stelsel-e-pos skep met die inhoud en konfigurasie van die nuwe e-possjabloon, wat die superadmin toelaat om enige wysigings te maak wat hulle wil, of dit net so te hou.
 
-#### Hoe om stelsel-e-posse te importeer
+#### Hoe om stelsel-e-posse in te voer {#how-to-import-system-emails}
 
-Gaan na jou Ultimate Multisite Instellingsbladsy en navigeer na die **Emails**-tab.
+Gaan na jou Ultimate Multisite-instellingsbladsy en gaan na die **E-posse**-oortjie.
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![E-posse-oortjie in Ultimate Multisite-instellings wat die Stelsel-e-posse-afdeling wys](/img/config/settings-emails-tab.png)
 
-Klik dan, aan die sybalk, op die **Customize System Emails**-knoppie.
+Klik dan, op die sybalk, op die **Pasmaak Stelsel-e-posse**-knoppie.
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- Skermskoot nie beskikbaar nie: Pasmaak Stelsel-e-posse-knoppie op die Stelsel-e-posse-sybalkpaneel -->
 
-Op die Sisteem-e-posse bladsy, sal jy die **Reset & Import**-aksie-knoppie bo-op sien. Om op daardie knoppie te klik, sal die import- en herstelmodale venster oopmaak.
+Op die Stelsel-e-posse-bladsy sal jy die **Herstel & Voer in**-aksieknoppie boaan sien. Deur daardie knoppie te klik, behoort die invoer- en herstel-modale venster oop te maak.
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![Herstel- of Invoer-aksieknoppie op die Stelsel-e-posse-adminbladsy](/img/admin/system-emails-reset-import.png)
 
-Dan kan jy die Import Emails-opsies omskakel om te sien watter stelsel-e-posse beskikbaar is vir import.
+Dan kan jy die Invoer e-posse-opsies wissel om te sien watter stelsel-e-posse beskikbaar is om ingevoer te word.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
+<!-- Skermskoot nie beskikbaar nie: Herstel-en-invoer-modale venster met die Voer e-posse in-opsies uitgebrei -->
 
-#### Herstel van Sisteem-e-posse
+#### Herstel van stelsel-e-posse {#reseting-system-emails}
 
-Ander tye sal jy besef dat die veranderinge wat jy aan 'n gegewe e-pos-template gemaak het, nie meer vir jou werk nie en jy wil dit na sy **standaardtoestand** herstel.
+Ander kere sal jy besef dat die veranderinge wat jy aan ’n bepaalde e-possjabloon gemaak het nie meer vir jou werk nie en dat jy dit na sy **verstektoestand** wil herstel.
 
-In sulke gevalle het jy twee opsies: jy kan eenvoudig die stelsel-e-pos verwyder en dit terug importeer (met behulp van die instruksies hierbo) – wat sendmetrieke en ander dinge sal uitwis, wat hierdie metode die minste verkieslik maak.
+In sulke gevalle het jy twee opsies: jy kan eenvoudig die stelsel-e-pos uitvee en dit weer invoer (deur die instruksies hierbo te gebruik) - wat stuurmetrieke en ander dinge sal uitvee, wat hierdie metode die mins verkose maak.
 
-Of jy kan die **Reset & Import tool** gebruik om daardie e-pos-template te herstel.
+Of jy kan die **Herstel & Invoer-nutsding** gebruik om daardie e-possjabloon te herstel.
 
-Om 'n e-pos-template te herstel, kan jy die stappe hierbo volg totdat jy by die Reset & Import tool kom, en dan, die **Reset**-opsie omskakel en die e-posse kies wat jy wil herstel na hul standaardinhoud.
+Om ’n e-possjabloon te herstel, kan jy die stappe hierbo volg totdat jy die Herstel & Invoer-nutsding bereik, en dan die **Herstel**-opsie aanskakel en die e-posse kies wat jy na hul verstekinhoud wil herstel.
 
-<!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->
+<!-- Skermskoot nie beskikbaar nie: Herstel-en-invoer-modale venster met die Herstel e-posse-opsies uitgebrei -->

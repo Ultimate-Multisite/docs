@@ -3,11 +3,11 @@ title: Daloy ng Onboarding para sa Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Daloy ng Onboarding para sa Theme Builder
+# Daloy ng Onboarding para sa Theme Builder {#theme-builder-onboarding-flow}
 
 Ang Superdav AI Agent v1.12.0 ay nagpapakilala ng gabay na **Theme Builder onboarding flow** na tumutulong sa iyo na gumawa ng custom block theme habang nasa iyong unang setup pa lang. Binabago nito ang lumang Site Builder mode para maging mas flexible at may tulong ng agent.
 
-## Ano ang Theme Builder Onboarding Flow?
+## Ano ang Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Ang Theme Builder onboarding flow ay isang interactive setup wizard na:
 
@@ -18,9 +18,9 @@ Ang Theme Builder onboarding flow ay isang interactive setup wizard na:
 
 Ang flow na ito ay pinapagana ng **Setup Assistant agent**, na nagtatanong ng mga malinaw na tanong at unti-unting bumubuo ng iyong theme.
 
-## Pagsisimula sa Theme Builder Onboarding
+## Pagsisimula sa Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Unang Pag-setup (First-Run Setup)
+### Unang Pag-setup (First-Run Setup) {#first-run-setup}
 
 Kapag unang nag-launch ka ng Superdav AI Agent sa bagong WordPress installation, makikita mo ito:
 
@@ -35,7 +35,7 @@ Ano ang gusto mong gawin?
 
 Piliin ang **"Build a custom theme"** para pumasok sa Theme Builder onboarding flow.
 
-### Manual na Pag-activate
+### Manual na Pag-activate {#manual-activation}
 
 Maaari mo ring simulan ang Theme Builder onboarding anumang oras sa pamamagitan ng paghingi:
 
@@ -49,9 +49,9 @@ o
 "Help me create a custom theme"
 ```
 
-## Mga Hakbang sa Onboarding
+## Mga Hakbang sa Onboarding {#the-onboarding-steps}
 
-### Hakbang 1: Pagpili ng Mode (Mode Selection)
+### Hakbang 1: Pagpili ng Mode (Mode Selection) {#step-1-mode-selection}
 
 Tatanungin ka ng Setup Assistant agent tungkol sa iyong preference:
 
@@ -63,13 +63,13 @@ Paano mo gustong buuin ang iyong theme?
 
 Ang **Guided mode** ay inirerekomenda para sa karamihan ng users; nagbibigay ang agent ng mga rekomendasyon sa disenyo batay sa iyong industriya at mga layunin.
 
-### Hakbang 2: Detalye ng Site (Site Specification)
+### Hakbang 2: Detalye ng Site (Site Specification) {#step-2-site-specification}
 
 Tatanungin ka tungkol sa iyong site:
 
 Ang impormasyong ito ay naka-save sa iyong **site_brief** memory, na ginagamit ng mga agent sa mga susunod na sesyon.
 
-### Step 3: Mga Desisyon para sa Design System
+### Step 3: Mga Desisyon para sa Design System {#step-3-design-system-decisions}
 
 Gabayan ka ng agent sa pagpili ng design token:
 
@@ -78,7 +78,7 @@ Gabayan ka ng agent sa pagpili ng design token:
 - **Spacing**: Compact, normal, o spacious na layout
 - **Motion**: Mga animation at transition (kung gusto mo)
 
-### Step 4: Pagbuo ng Theme
+### Step 4: Pagbuo ng Theme {#step-4-theme-generation}
 
 Ang Setup Assistant agent ang magbibigay ng balangkas para sa iyong custom block theme gamit ang:
 
@@ -87,7 +87,7 @@ Ang Setup Assistant agent ang magbibigay ng balangkas para sa iyong custom block
 - Custom block styles na tumutugma sa iyong design system
 - Theme metadata at mga deklarasyon ng suporta sa WordPress
 
-### Step 5: Pag-activate at Pagveripika
+### Step 5: Pag-activate at Pagveripika {#step-5-activation-and-verification}
 
 Awtomatikong aaktibo ang theme, at makikita mo ito:
 
@@ -102,7 +102,7 @@ Awtomatikong aaktibo ang theme, at makikita mo ito:
 
 Maaari mo na itong bisitahin ang iyong site para i-verify kung tama ang pagpapakita ng theme.
 
-## Site Specification at site_brief Memory
+## Site Specification at site_brief Memory {#site-specification-and-sitebrief-memory}
 
 Sa panahon ng onboarding, kinukuha ng agent ang detalye ng iyong site sa kategoryang **site_brief** memory. Kasama rito:
 
@@ -112,7 +112,7 @@ Sa panahon ng onboarding, kinukuha ng agent ang detalye ng iyong site sa kategor
 - Mga kagustuhan sa disenyo
 - Istruktura ng nilalaman
 
-### Bakit Mahalaga ang site_brief
+### Bakit Mahalaga ang site_brief {#why-sitebrief-matters}
 
 Sa mga susunod na sesyon, ginagamit ng mga agent ang iyong site_brief para:
 
@@ -121,7 +121,7 @@ Magmungkahi ng mga feature na naaayon sa layunin ng iyong site
 Magbigay ng mga rekomendasyon na may konteksto
 Iwasan ang paulit-ulit na mga tanong tungkol sa setup
 
-### Pagtingin sa Iyong site_brief
+### Pagtingin sa Iyong site_brief {#viewing-your-sitebrief}
 
 Maaari mong itanong sa agent:
 
@@ -137,11 +137,11 @@ o
 
 Ipakikita ng agent ang iyong na-save na spesipikasyon ng site.
 
-## Pag-customize Pagkatapos Mag-onboard
+## Pag-customize Pagkatapos Mag-onboard {#customizing-after-onboarding}
 
 Pagkatapos matapos ang onboarding ng Theme Builder, maaari kang:
 
-### Gamitin ang Design System Aesthetics Skill
+### Gamitin ang Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Humiling ng mga pagpapahusay sa disenyo:
 
@@ -157,7 +157,7 @@ o
 
 Ang **Design System Aesthetics skill** ay gagabay sa iyo sa mga targeted na update sa disenyo.
 
-### I-edit ang theme.json nang direkta
+### I-edit ang theme.json nang direkta {#edit-themejson-directly}
 
 Para sa mga advanced user, i-edit ang `/wp-content/themes/[theme-name]/theme.json` para baguhin ang:
 
@@ -166,7 +166,7 @@ Para sa mga advanced user, i-edit ang `/wp-content/themes/[theme-name]/theme.jso
 - Spacing values
 - Border at shadow definitions
 
-### Gumawa ng Custom Block Templates
+### Gumawa ng Custom Block Templates {#create-custom-block-templates}
 
 Gamitin ang WordPress block editor para gumawa ng mga custom template para sa:
 
@@ -175,7 +175,7 @@ Gamitin ang WordPress block editor para gumawa ng mga custom template para sa:
 - Product pages
 - Contact forms
 
-## Paghahambing: Lumang vs. Bagong Onboarding
+## Paghahambing: Lumang vs. Bagong Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Luma) | Theme Builder (Bago) |
 |---------|----------------------|-------------------|
@@ -185,7 +185,7 @@ Gamitin ang WordPress block editor para gumawa ng mga custom template para sa:
 | Flexibility | Nakapirming opsyon | Maaaring i-customize |
 | Mga update sa hinaharap | Hindi tinutukoy | Na-store sa site_brief |
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 **Hindi natapos ang onboarding flow**
 - I-restart ang flow: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Gamitin ang WordPress block editor para gumawa ng mga custom template para sa:
 - Ipaalala sa agent na "regenerate the theme with [specific changes]" (mag-regenerate ng theme gamit ang [partikular na pagbabago])
 - I-edit nang direkta ang theme.json para sa mas tumpak na kontrol
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
 Pagkatapos makumpleto ang Theme Builder onboarding:
 

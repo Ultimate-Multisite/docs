@@ -3,11 +3,11 @@ title: Miksi Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Miksi Ultimate Multisite
+# Miksi Ultimate Multisite {#why-ultimate-multisite}
 
 Jos olet tullut tähän artikkeliin, olet todennäköisesti kuullut, että pluginimme voi olla ratkaisu yritystietosi toteuttamiseen. Toivomme, että löydät tarvitsemasi vastaukset tämän artikkelin lopussa.
 
-## Mitä Ultimate Multisite on?
+## Mitä Ultimate Multisite on? {#what-is-ultimate-multisite}
 
 Ultimate Multisite on WordPress Multisite -plugin, joka mahdollistaa asiakkaillesi WaaS:n (Website as a Service) tarjoamisen. Pluginimme avulla voit luoda erilaisia tilausvaihtoehtoja ja saada asiakkaiden maksamaan sinulle toistuvaa maksua saadakseen sivuston hostattua Multisite-verkostossasi.
 
@@ -15,7 +15,7 @@ Ultimate Multisite antaa sinun vastaanottaa maksut eri gateway-portaalit kautta 
 
 Ja tämä on vain alku – voit laajentaa sen toimintoja add-onien ja webhooks avulla.
 
-## Muut ominaisuudet
+## Muut ominaisuudet {#other-features}
 
 Ultimate Multisite tarjoaa myös:
 
@@ -33,11 +33,11 @@ Ja monimutkaisempia asioita:
 
 * Haku- ja korvaa-API (Search and Replace API): Voit myös merkitä sivustomalleja paikkamerkeillä kuten `{{site_name}}` ja käyttää Search and Replace API:ta automaattisesti täyttämään näitä paikkamerkkejä asiakkaan antamilla tiedoilla heti rekisteröitymisen jälkeen.
 
-## Käyttötapaukset (Use cases)
+## Käyttötapaukset (Use cases) {#use-cases}
 
 Nyt on aika nähdä joitakin mahdollisia käyttötapauksia Ultimate Multisitella.
 
-### Tapaus 1: Toimisto/Agentti (An Agency)
+### Tapaus 1: Toimisto/Agentti (An Agency) {#case-1-an-agency}
 
 Tyypillisesti toimiston ydinosa liittyy verkkosivujen suunnitteluun, jossa on esimerkiksi palveluiden listautuminen, kuten isännöinti tai markkinointi lisäpalveluina.
 
@@ -47,7 +47,7 @@ Pluginien ja teemojen tiukka hallinta ylläpidetään tuotteittain Ultimate Mult
 
 Agencies löytävät rauhan sydämessään Ultimate Multisiten avulla, jolloin voivat tehdä parhaat asiansa – luoda poikkeuksellisia verkkosivuja.
 
-### Tapaus 2: Erikoistunut tarjoaja
+### Tapaus 2: Erikoistunut tarjoaja {#case-2-niche-provider}
 
 On vanha sanonta, jossa kuuluu: ”Tee yksi asia ja tee se hyvin”. Monille erikoisasiantuneille tämä tarkoittaa tuotteen tai palvelun luomista yhden ydinidean ympärille.
 
@@ -57,7 +57,7 @@ Ultimate Multisiten innovatiivinen ominaisuus on mallisivu: se on sivu, jossa te
 
 Erikoistuneen sivustojen ja palveluiden tarjoajalle tämä tarjoaa vertaamattoman etulyönnin: kyky luoda heti valmiiksi toimiva sivu räätälöityjen pluginien ja suunnittelun avulla. Asiakkaan ei tarvitse antaa vain vähäistä syötettä palvelun täyttämiseksi.
 
-### Tapaus 3: WordPress-verkkoholvestus
+### Tapaus 3: WordPress-verkkoholvestus {#case-3-wordpress-web-hosting}
 
 WordPress-sivustojen hostaamiseen on lukemattomia tapoja, mutta harvoin se on yhtä yksinkertaista kuin tarjota asiakkaalle verkkotilaa valmiiksi asennetulla WordPress-versiolla. Tämä johtuu siitä, että merkityksellisen palvelun tarjoamiseksi on yhdistettävä useita päätöksiä ja huomioita.
 

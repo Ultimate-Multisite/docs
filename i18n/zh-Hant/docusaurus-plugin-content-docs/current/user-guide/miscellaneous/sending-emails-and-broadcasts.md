@@ -1,120 +1,124 @@
 ---
-title: 發送電子郵件與廣播
+title: 傳送電子郵件和廣播
 sidebar_position: 11
-_i18n_hash: 2c1041bf76187ffc82978d1fa966fb23
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# 發送電子郵件與廣播通知 (v2)
+# 傳送電子郵件與廣播（v2） {#sending-emails-and-broadcasts-v2}
 
-_**重要提醒：本文適用於 Ultimate Multisite 2.x 版本。**_
+_**重要注意事項：本文指的是 Ultimate Multisite 2.x 版本。**_
 
-Ultimate Multisite 內建的功能可讓您與客戶溝通，無論是發送電子郵件給特定使用者或一群使用者，或是在他們的管理控制台發布公告通知，都能輕鬆完成。
+Ultimate Multisite 內建一項功能，可讓你透過向指定使用者或使用者群組傳送電子郵件，以及在他們的管理員 Dashboard 上傳送通知以廣播公告，來與你的客戶溝通
 
-## 使用廣播功能在客戶的控制台新增管理通知
+## 使用廣播將管理員通知新增到客戶的 Dashboard {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-透過 Ultimate Multisite 的廣播功能，您可以在使用者的子網站管理控制台新增**管理通知**。
+使用 Ultimate Multisite 廣播功能，你可以將**管理員通知**新增到使用者子網站的管理員 Dashboard。
 
-當您需要發布系統維護公告，或是向現有使用者推廣新產品或服務時，這個功能非常實用。以下是管理通知在使用者控制台上的顯示樣式。
+如果你需要發布系統維護等公告，或向現有使用者提供新產品或服務，這會非常有幫助。以下是管理員通知在使用者 Dashboard 上的顯示樣貌。
 
-![客戶控制台上顯示的管理通知廣播](/img/admin/broadcasts-list.png)
+<!-- 螢幕截圖無法使用：顯示在客戶子網站 Dashboard 上的管理員通知廣播 -->
 
-要建立管理通知，請前往您的網路管理控制台，在 **Ultimate Multisite** 選單下找到 **Broadcasts** 選項。
+若要開始建立管理員通知，請前往你的網路管理員 Dashboard，並在 **Ultimate Multisite** 選單下找到**廣播**選項。
 
-![Ultimate Multisite 管理介面中的 Broadcasts 選單](/img/admin/broadcasts-list.png)
+![Ultimate Multisite 管理員中的廣播清單頁面](/img/admin/broadcasts-list.png)
 
-在這個頁面上，點擊頂部的 **Add Broadcast** 按鈕。
+你也可以編輯現有的廣播：
 
-系統會彈出「新增廣播」的視窗，讓您選擇要發送的廣播類型。
+![廣播編輯介面](/img/admin/broadcast-edit.png)
 
-請選擇 **Message**，然後點擊 **Next Step** 按鈕。
+在此頁面上，按一下頂部的**新增廣播**按鈕。
 
-![新增廣播視窗，已選擇 Message 類型](/img/admin/broadcasts-list.png)
+這會開啟新增廣播的彈出視窗，你可以在其中選擇想要傳送的廣播類型。
 
-下一個視窗會請您指定 **Target customer**（目標客戶）或 **Target product**（目標產品）。請注意，您可以選擇多位使用者或多個產品。
+請選取**訊息**，然後按一下**下一步**按鈕。
 
-若要搜尋使用者帳號或產品，請在欄位中開始輸入關鍵字。
+![已選取訊息選項的新增廣播彈出視窗](/img/admin/broadcast-add-message.png)
 
-在 **Message type** 欄位中，您可以選擇通知的顏色。這有助於強調訊息的緊急程度。
+下一個視窗會要求你選擇**目標客戶**或**目標產品**。請注意，你可以選取多位使用者或多個產品。
 
-完成後點擊 **Next Step**。
+若要搜尋使用者帳號或產品，你需要在欄位內開始輸入關鍵字。
 
-![廣播的目標客戶與產品選擇畫面](/img/admin/broadcasts-list.png)
+在**訊息類型**欄位下，你可以選擇通知的顏色。這會強調你訊息的緊急程度。
 
-在下一個視窗中，您可以開始撰寫訊息，輸入主旨和要廣播給使用者的內容。
+接著你可以按一下**下一步**。
 
-![廣播訊息的主旨與內容編輯器](/img/admin/broadcasts-list.png)
+![訊息廣播的目標客戶、目標產品與訊息類型欄位](/img/admin/broadcast-message-targets.png)
 
-訊息撰寫完成後，點擊 **Send** 按鈕即可。
+下一個視窗可讓你開始撰寫訊息，輸入你想要廣播給使用者的主旨與內容／訊息。
 
-就這麼簡單。管理通知會立即顯示在您使用者的控制台上。
+![撰寫步驟中的廣播訊息主旨與內容編輯器](/img/admin/broadcast-edit.png)
 
-## 發送電子郵件給客戶
+建立訊息後，你可以按下**傳送**按鈕。
 
-透過 Ultimate Multisite 的廣播功能，您可以發送電子郵件給使用者。您可以選擇只發送給特定使用者，或是根據使用者訂閱的產品或方案來鎖定特定群組。
+就是這樣。管理員通知應該會立即顯示在使用者的 Dashboard 上。
 
-要開始電子郵件廣播，請前往您的網路管理控制台，在 Ultimate Multisite 選單下找到 Broadcast 選項。
+## 傳送電子郵件給你的客戶 {#send-emails-to-your-customers}
 
-![Ultimate Multisite 管理介面中的 Broadcasts 頁面](/img/admin/broadcasts-list.png)
+使用 Ultimate Multisite 廣播功能，你可以傳送電子郵件給使用者。你可以選擇只將電子郵件傳送給特定使用者，或根據他們訂閱的產品或方案，鎖定特定使用者群組。
 
-在這個頁面上，點擊頂部的 **Add broadcast** 按鈕。
+若要開始電子郵件廣播，請前往你的網路管理員 Dashboard，並在 Ultimate Multisite 選單下找到廣播選項。
 
-系統會彈出「新增廣播」的視窗，讓您選擇要發送的廣播類型。請選擇 **Email**，然後點擊 **Next Step** 按鈕。
+![作為電子郵件廣播起點的廣播清單頁面](/img/admin/broadcasts-list.png)
 
-![新增廣播視窗，已選擇 Email 類型](/img/admin/broadcasts-list.png)
+在此頁面上，按一下頂部的**新增廣播**按鈕。
 
-下一個視窗會請您指定 **Target customer**（目標客戶）或 **Target product**（目標產品）。請注意，您可以選擇多位使用者或多個產品。
+這會開啟新增廣播的彈出視窗，你可以在其中選擇想要傳送的廣播類型。請選取**電子郵件**，然後按一下**下一步**按鈕。
 
-若要搜尋使用者帳號或產品，請在欄位中開始輸入關鍵字。
+![已選取電子郵件選項的新增廣播彈出視窗](/img/admin/broadcast-add-email.png)
 
-選好目標對象後，點擊 **Next Step**。
+下一個視窗會要求你選擇**目標客戶**或**目標產品**。請注意，你可以選取多位使用者或多個產品。
 
-![電子郵件廣播的目標客戶與產品選擇畫面](/img/admin/broadcasts-list.png)
+若要搜尋使用者帳號或產品，你需要在欄位內開始輸入關鍵字。
 
-在下一個視窗中，您可以開始撰寫電子郵件，輸入主旨和要發送給使用者的內容。
+選取目標受眾後，你可以按一下**下一步**。
 
-![電子郵件廣播的主旨與內容編輯器](/img/admin/broadcasts-list.png)
+![電子郵件廣播的目標客戶與目標產品選擇](/img/admin/broadcast-email-targets.png)
 
-訊息撰寫完成後，點擊 **Send** 按鈕即可。
+下一個視窗可讓你開始撰寫電子郵件，輸入你想要傳送給使用者的主旨與內容／訊息。
 
-使用廣播功能發送電子郵件給終端使用者，就是這麼簡單。
+<!-- 螢幕截圖無法使用：撰寫步驟中的電子郵件廣播主旨與內容編輯器 -->
 
-## 系統郵件
+建立訊息後，你可以按下**傳送**按鈕。
 
-Ultimate Multisite 中的系統郵件是指系統在特定動作（例如註冊、付款、網域對應等）完成後**自動發送的通知**。這些郵件可以在 Ultimate Multisite 設定中編輯或修改。系統也提供功能讓您重設郵件，或從其他 Ultimate Multisite 安裝匯入現有設定。
+這就是使用廣播功能向終端使用者傳送電子郵件的簡單方式。
 
-### 重設與匯入
+## 系統電子郵件 {#system-emails}
 
-新版本的 Ultimate Multisite 以及附加元件，會不定期新增新的郵件範本。
+Ultimate Multisite 中的系統電子郵件，是系統在註冊、付款、網域對應等特定動作之後傳送的**自動通知**。這些電子郵件可以從 Ultimate Multisite 設定中編輯或修改。它也內建一項功能，可讓你重設並從另一個 Ultimate Multisite 安裝匯入現有設定。
 
-為了避免衝突和其他問題，**我們不會自動將新的郵件範本加入您安裝的系統郵件中**，除非這些郵件對特定功能的正常運作至關重要。
+### 重設與匯入 {#resetting--importing}
 
-不過，超級管理員和代理人可以透過匯入工具來匯入這些新註冊的郵件。這個流程會使用新郵件範本的內容和設定建立一封新的系統郵件，讓超級管理員可以自行修改或保持原樣。
+新的 Ultimate Multisite 版本以及附加元件，可能且將會不時註冊新的電子郵件。
 
-#### 如何匯入系統郵件
+為了避免衝突與其他問題，**我們不會自動將新的電子郵件範本新增為你安裝中的系統電子郵件**，除非它們對某項功能的正確運作至關重要。
 
-前往 Ultimate Multisite 設定頁面，切換到 **Emails** 分頁。
+不過，super admin 與代理可以透過匯入工具匯入這些新註冊的電子郵件。此流程會使用新電子郵件範本的內容與設定建立新的系統電子郵件，讓 super admin 可以進行任何想要的修改，或保持原樣。
 
-![Ultimate Multisite 設定中的 Emails 分頁](/img/config/settings-emails.png)
+#### 如何匯入系統電子郵件 {#how-to-import-system-emails}
 
-然後在側邊欄點擊 **Customize System Emails** 按鈕。
+前往你的 Ultimate Multisite 設定頁面，並移至**電子郵件**分頁。
 
-![側邊欄的 Customize System Emails 按鈕](/img/config/settings-emails.png)
+![Ultimate Multisite 設定中的電子郵件分頁，顯示系統電子郵件區段](/img/config/settings-emails-tab.png)
 
-在系統郵件頁面，您會看到頂部的 **Reset & Import** 操作按鈕。點擊該按鈕會開啟匯入與重設的視窗。
+接著，在側邊欄上按一下**自訂系統電子郵件**按鈕。
 
-![系統郵件頁面上的 Reset and Import 操作按鈕](/img/config/settings-emails.png)
+<!-- 螢幕截圖無法使用：系統電子郵件側邊欄面板上的自訂系統電子郵件按鈕 -->
 
-接著，您可以展開 Import Emails 選項，查看有哪些系統郵件可供匯入。
+在系統電子郵件頁面上，你會在頂部看到**重設與匯入**動作按鈕。按一下該按鈕應會開啟匯入與重設的彈出視窗。
 
-![Import Emails 選項顯示可匯入的系統郵件](/img/config/settings-emails.png)
+![系統電子郵件管理員頁面上的重設或匯入動作按鈕](/img/admin/system-emails-reset-import.png)
 
-#### 重設系統郵件
+接著，你可以切換匯入電子郵件選項，以查看哪些系統電子郵件可供匯入。
 
-有時候，您可能會發現之前對某個郵件範本所做的修改已不再適用，想要將它還原成**預設狀態**。
+<!-- 螢幕截圖無法使用：重設與匯入互動視窗，已展開匯入電子郵件選項 -->
 
-在這種情況下，您有兩個選擇：您可以直接刪除該系統郵件，然後重新匯入（按照上述步驟）——但這會清除發送統計和其他資料，因此這個方法較不建議使用。
+#### 重設系統電子郵件 {#reseting-system-emails}
 
-或者，您可以使用 **Reset & Import 工具**來重設該郵件範本。
+有時候，你會發現對某個電子郵件範本所做的變更已不再適合你，而你想要將它重設回其**預設狀態**。
 
-要重設郵件範本，請按照上述步驟操作，直到進入 Reset & Import 工具，然後切換到 **Reset** 選項，選擇您想要還原成預設內容的郵件。
+在這種情況下，你有兩個選項：你可以直接刪除系統電子郵件，然後再將它匯入回來（使用上方的說明）——這會清除寄送指標和其他資料，因此這是較不建議的方法。
 
-![重設選項可將郵件範本還原成預設值](/img/config/settings-emails.png)
+或者，你可以使用**重設與匯入工具**來重設該電子郵件範本。
+
+若要重設電子郵件範本，你可以依照上方步驟操作，直到進入重設與匯入工具，然後切換**重設**選項，並選取你想要重設回預設內容的電子郵件。
+
+<!-- 螢幕截圖無法使用：重設與匯入互動視窗，已展開重設電子郵件選項 -->

@@ -1,27 +1,15 @@
 ---
 title: Journal des modifications du sélecteur de langue
 sidebar_position: 99
-_i18n_hash: 63075b8bf58719ee9250f9384e996b2f
+_i18n_hash: 8700398c317460179a01af47596adeb2
 ---
-# Journal des modifications du sélecteur de langue
+# Journal des modifications du sélecteur de langue {#language-selector-changelog}
 
-Version : 1.1.1 - Publié le 2025-12-10
-* Corrigé : erreur fatale lors d'une nouvelle installation.
+Version : 1.1.3 - Publiée le 2026-05-05
+* Correction : les variables d’entrée sont désormais assainies et les noms de hook personnalisés préfixés afin d’éviter les conflits avec les extensions tierces
 
-Version : 1.1.0 - Publié le 2025-12-09
-* Ajouté : champ de formulaire Sélecteur de langue au constructeur de formulaire de paiement.
+Version : 1.1.2 - Publiée le 2026-01-01
+* Amélioration : mises à jour de compatibilité et améliorations de la qualité du code
 
-Version : 1.0.0 - Publié le 2025-12-09
-* Corrigé : notifications de dépréciation.
-* Corrigé : Erreur fatale lorsqu'il est installé avec d'autres modules complémentaires.
-
-Version : 0.0.4 - Publié le 2025-09-28
-* Renommer le préfixe en ultimate-multisite ; mettre à jour le domaine de texte ; mise à jour de la version.
-
-Version 0.0.3 - 20/08/2019
-* Corrigé : le Sélecteur de langue apparaît vide lors du premier lancement dans les versions WordPress non anglaises ;
-
-Version 0.0.2 - 17/07/2019
-* Corrigé : petites corrections de bugs.
-
-0.0.1 - Version initiale (25/02/2019)
+Version : 1.1.0 - Publiée le 2025-09-28
+* Renommer le préfixe en ultimate-multisite ; mettre à jour le text domain ; incrémenter la version.

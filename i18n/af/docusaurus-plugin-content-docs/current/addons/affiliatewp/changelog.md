@@ -3,7 +3,7 @@ title: AffiliateWP Veranderingslog
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# AffiliateWP Veranderingslog
+# AffiliateWP Veranderingslog {#affiliatewp-changelog}
 
 Weergawe: 2.0.1 - Uitgereik op 2025-09-28
 

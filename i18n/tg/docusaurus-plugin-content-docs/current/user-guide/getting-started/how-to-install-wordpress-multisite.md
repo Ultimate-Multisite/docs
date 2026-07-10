@@ -3,7 +3,7 @@ title: Чӣ тавр WordPress Multisite насб кардан?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Чӣ тавр WordPress Multisite-ро намоиш додаред?
+# Чӣ тавр WordPress Multisite-ро намоиш додаред? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite иҷозат медиҳад ки шумо дар як намунаи инсталлят, шабакаи сайтҳо дошта бошед. Ин хусусияти воқеӣ аст, аммо ба таври дифолт (default) фаъол намешавад.
 
@@ -61,7 +61,7 @@ define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CUR
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# добавить завершающий слэш к /wp-admin
+# добавить завершающий слэш к /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -97,9 +97,9 @@ RewriteCond %{REQUEST_FILENAME} -f [OR] RewriteCond %{REQUEST_FILENAME} -d Rewri
 
 Баъди пур кардани майдонҳо, ба тугмаи "Add site" (Дохил кардан) клик кунед. Вақте ки подсайтии нав сохта шуд, ба он дастрасӣ пайдо кунед, то таъмин кунед, ки подсайт кор мекунад.
 
-## Мушкилоти маъмул:
+## Мушкилоти маъмул: {#common-problems}
 
-### 1. Ман метавонам саҳифаҳои нав созам ва онҳо дастрас нест.
+### 1. Ман метавонам саҳифаҳои нав созам ва онҳо дастрас нест. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Агар шумо subdomain-ҳоро интихоб карда باشید, шумо бояд барои шабака Multisite-и худ subdomain-ҳои wildcard (мавжуда) низ танзим кунед.
 

@@ -3,7 +3,7 @@ title: Fragmentos de código
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmentos de código para v2
+# Fragmentos de código para v2 {#code-snippets-for-v2}
 
 Basicamente, os fragmentos de código para **WordPress** son usados para realizar ciertas accións que sen poder requiriros dun plugin menor dedicado. Estes fragmentos de código se colocan nun dos dos arquivos centrais de WordPress ou do tema (normalmente o arquivo functions.php do teu tema) ou poden ser usados como un MU plugin.
 
@@ -15,7 +15,7 @@ Nesta entrada te mostra tres fragmentos de código que podes usar con **Ultimate
 
   * [**Corregir problemas CORS con Font-Icons en dominios mapeados**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Cambiar a posición do elemento do menú Conta
+## Cambiar a posición do elemento do menú Conta {#changing-the-position-of-the-account-menu-item}
 
 Para cambiar a posición do elemento do menú Conta no Dashboard do teu cliente, basta añade o seguinte fragmento de código ao functions.php do tema activo do teu sitio principal. TAMEN podes poner o fragmento dentro dun dos teus mu-plugins ou plugins personalizados.
 
@@ -37,20 +37,20 @@ Ten en conta que os usuarios só poden suscribirse a un **Plan**, non a un Paque
 
 ![Lista de produtos mostrando IDs de plan](/img/admin/products-list.png)
 
-## Corregir problemas CORS con Font-Icons en dominios mapeados
-## Corregir problemas CORS con Font-Icons en dominios mapeados
+## Corregir problemas CORS con Font-Icons en dominios mapeados {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Corregir problemas CORS con Font-Icons en dominios mapeados {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Despois de mapear un dominio a un sub-sitio, podes descubrir que o sitio está tivo problemas para carregar fontes personalizadas. Isto é causado por un bloqueo cross-origin nas configuración do teu servidor.
 
 Como os ficheiros de fonte se cargan casi sempre directamente desde CSS, o nosa función de mapeo de dominios non consegue reescribir as URLs para usar o dominio mapeado en lugar o original, así que para arreglar o problema, terás de modificar os teus ficheiros de configuración do servidor.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 No teu ficheiro .htaccess, adiciona isto:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 No teu ficheiro de configuração do servidor (o lugar varía de servidor para servidor), adiciona isto:
 

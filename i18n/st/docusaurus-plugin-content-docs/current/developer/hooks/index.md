@@ -1,0 +1,194 @@
+---
+title: Tshupiso ea Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Tshupiso ya di-Hooks {#hooks-reference}
+
+Ditokomane tse iketseditsweng bakeng sa **liketso tse 59** tsohle le **difeilthara tse 118** ho Ultimate Multisite.
+
+## Liketso {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — E qala pele ho phetisetso ya netefatso.
+- [set_auth_cookie](./Actions/set_auth_cookie) — E qala hanghang pele cookie ya netefatso e behwa.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — E qala hanghang pele cookie ya netefatso ya mosebedisi ya keneng e behwa.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — E dumella bahlahisi ho eketsa dikopanyo tsa bona tsa mofani wa host ka wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — E qala ha ditshetleho tsohle di se di laetswe
+- [wu_activation](./Actions/wu_activation) — E dumella dikarolo tse ding tsa plugin ho hokela mekgwa ya tsona bakeng sa tshebetsong
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — E dumella bahlahisi ba plugin ho hokela mesebetsi kamora hore mosebedisi kapa super admin a fetole thempleite ya site
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Maemong a mang, re tla hloka ho laela matla a eketsehileng ho sebetsana le diketso.
+- [wu_before_search_models](./Actions/wu_before_search_models) — E qala pele ho ho sebetswa ha kopo ya ho batla.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — E dumella bahlahisi ho etsa diphetoho tse ding ho ntho ya checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — E dumella bahlahisi ho etsa diphetoho tse ding ho ntho ya checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — E qala pele field e eketswa foromong ya checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — E dumella bahlahisi ho qala di-hook tse ding.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Pele re sebetsana le checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — E qala kamora hore odara ya checkout e kopanngwe ka botlalo.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — E dumella bahlahisi ba plugin ho eketsa widgets ho Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — E dumella bahlahisi ba plugin ho eketsa widgets ho Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — E dumella dikarolo tse ding tsa plugin ho hokela mekgwa ya tsona bakeng sa ho tima
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — E dumella bahlahisi ba plugin ho eketsa diketso tshebetsong ya ho hlakola
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — E qala ha domain e fetoha domain ya sehlooho bakeng sa site.
+- [wu_domain_created](./Actions/wu_domain_created) — E qala ha ho eketswa kgokahanyo e ntjha ya domain.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — E qalile kamora hore Domain Mapping ya rona ya mantlha e laetswe
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Di-plugin tse ding di tla boloka URL pele mapping e sebetsa kapa di tla aha di-URL ka tsela e fapaneng e sa kenyeletswang o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — E dumella bahlahisi ho hokela kamora hore ho kopitswa ha site ho etsahale.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — E dumella bahlahisi ba plugin ho eketsa di-hook tse ding
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook bakeng sa ho hlwekisa ho eketsehileng
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — E qala pele ho sebetsana le kopo ya modal ya ho eketsa domain e ntjha.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — E dumella bahlahisi ba plugin ho boloka data ya meta ka ditsela tse fapaneng haeba ba e hloka.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — E dumella bahlahisi ba plugin ho boloka data ya meta ya mosebedisi ka ditsela tse fapaneng haeba ba e hloka.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — E qala ha token ya magic link e sa sebetseng e kopana le yona.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — E qala kamora hore mosebedisi a kene ka magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — E dumella bahlahisi ba plugin ho etsa dintho tse ding ha moreki a eketswa.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — E qala kamora hore bokgoni ba MCP bo ngodisetswe entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — E qala kamora hore adapter ya MCP e qalwe.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — E qala kamora hore membership e hlakolwe.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — E qala kamora ntjhafatso ya membership.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — E qala pele membership e hlakolwa.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — E qala pele ho ntjhafatso ya membership.
+- [wu_model_post_save](./Actions/wu_model_post_save) — E qala kamora hore ntho e bolokwe database.
+- [wu_page_added](./Actions/wu_page_added) — E dumella bahlahisi ba plugin ho tsamaisa dintho tse eketsehileng ha maqephe a ngodiswa.
+- [wu_page_after_render](./Actions/wu_page_after_render) — E dumella bahlahisi ba plugin ho eketsa dikahare tse ding kamora hore re hatise leqephe
+- [wu_page_before_render](./Actions/wu_page_before_render) — E dumella bahlahisi ba plugin ho eketsa dikahare tse ding pele re hatisa leqephe.
+- [wu_page_load](./Actions/wu_page_load) — E dumella bahlahisi ba plugin ho eketsa di-hook tse ding maqepheng a rona.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — E dumella bahlahisi ba plugin ho eketsa dikahare tse ding kamora hore re hatise leqephe
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — E dumella bahlahisi ba plugin ho eketsa dikahare tse ding pele re hatisa leqephe.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — E dumella bahlahisi ba plugin ho eketsa di-hook tse ding maqepheng a rona.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — E qala kamora hore widgets di ngodisetswe leqephe lena.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — E qala ho dumella dikeketso ho hokela dimojule tsa bokgoni dikopanyong.
+- [wu_register_integrations](./Actions/wu_register_integrations) — E qala ho dumella dikopanyo ho ingodisa.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Dumella ditsela tse eketsehileng ho ngodiswa.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Dumella baetsi ba dikeketso ho kenya diketso tshebetsong ya ho boloka
+- [wu_site_created](./Actions/wu_site_created) — E qala ka mora hore saete e bopuwe ka lekgetlo la pele.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Dumella baetsi ba dikeketso ho kenya dihook tse eketsehileng, haeba ho hlokahala.
+- [wu_template_previewer](./Actions/wu_template_previewer) — E sebetsa ha e le ka hara tikoloho ya sehlahlobi sa pele sa thempleite.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — E tsosa hook ya ho kenya scripts moleng.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — E qala ka mora hore ntho e bolokwe ka hara database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — E qala ka mora hore ntho e bolokwe ka hara database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — E qala ka mora hore ntho e bolokwe ka hara database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Dumella baetsi ba dikeketso ho kenya diketso tshebetsong ya ho notlolla.
+
+## Disefe {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — E sefa bolelele ba nako ea ho felloa ke nako ha cookie ea netefatso.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — E sefa sekema sa ho lebisa hape sa netefatso.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — E etsisa WP Filter ea pele mona, bakeng sa bonnete.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Lumella baetsi ba plugin ho sefa URL e sebelisoang ho previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — E sefa hore na auth cookie e lokela ho romeloa feela ka HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — E sefa hore na ho sebelisoe ho lebisa hape ha netefatso ho sireletsehileng.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — E sefa hore na cookie ea ba kene ka akhaonteng e lokela ho romeloa feela ka HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — E lumella ho thibela auth cookies hore li se ke tsa romeloa kannete ho client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Beha URL ea ho lebisa hape.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Kenya mehato e eketsehileng ka filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Lumella baetsi ba plugin ho eketsa phetoho e eketsehileng moelelong oa render lefatšeng ka bophara.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Lumella baetsi ho khutsufatsa tlhahlobo ena.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — E sefa masimo bakeng sa modal ea ho eketsa domain e ncha.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Lumella baetsi ho etsa liphetoho ho line item ea tefo ea ho seta.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Lumella baetsi ho sefa litsebiso tsa admin tse kentsoeng ke Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Sefa ka mor'a hore e fetoloe.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Joale, re sebetsana le mefuta eohle.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Lumella baetsi ba plugin ho khutsufatsa meeli.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — E sefa hore na tefo ea ho ingolisa e lokela ho sebelisoa kapa che.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Sefa mabaka a api a pele.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Lumella baetsi ba plugin ho sefa masimo a aterese ea tefiso.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Lumella baetsi ho feta sephetho ebe ba beha se secha
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Lumella baetsi ho feta khoutu ea unset current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — E sefa kakaretso ea "chelete e iphetang".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Sefa kakaretso ea "chelete ea pele".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Sefa kakaretso ea "chelete ea pele".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Lumella baetsi ba plugin ho kena-kenana le boleng ba mokitlane.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — E sefa base domains tse arolelanoang tsa checkout-form tse sa lokelang ho fetoha lirekoto tsa mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — APIs ea rona ea ho eketsa dithempleite tse ncha tsa masimo e hokela mona.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — APIs ea rona ea ho eketsa mefuta e mecha ea masimo e hokela mona.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Sefa melaetsa ea phoso.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Lumella baetsi ho feta tlhahlobo haeba tšimo e ka romelloa ka bo eona.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Lumella baetsi ba plugin ho eketsa aliases tse ikhethileng ho validator ea foromo.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Lumella baetsi ba plugin ho sefa melao ea netefatso.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Tlosa Params tse sa batleheng.
+- [wu_contains_element](./Filters/wu_contains_element) — Lumella baetsi ho fetola liphetho tsa patlo ea pele.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Lumella bafani ba host ho kenya constant ka tsela e fapaneng.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — E khutlisa lebitso le letle la likarolo tsa tsamaiso tsa naha.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — E khutlisa lenane la metse bakeng sa profense naheng.
+- [wu_country_get_states](./Filters/wu_country_get_states) — E khutlisa lenane la diprofense bakeng sa naha ena.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Lumella baetsi ho fetola boitšoaro ba kamehla le ho beha moreki oa hajoale ka tsela e fapaneng.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Lumella baetsi ho fetola boitšoaro ba kamehla le ho beha membership ea hajoale ka tsela e fapaneng.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Lumella baetsi ho fetola boitšoaro ba kamehla le ho beha sebaka sa hajoale ka tsela e fapaneng.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Lumella baetsi ho fetola lipharamitha tsa URL ea ho laola sebaka.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Lumella baetsi ba plugin ho sefa lihokelo.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Lumella baetsi ba plugin ho eketsa litlhahlobo tse ncha e le hore ba hlalose liphetho.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Re ka hloka ho eketsa diboloko tse ding hamorao.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — E eketsa sefe se akaretsang ho dumella baetsi ho atolosa parser ena hore e sebetsane le bahahi kapa dikeketso tse ding.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Sefa hore na ho qobellwe melao e meng ya password.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Sefa lebitso la mosebedisi la moreki le hlahisitsweng.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Dumella baetsi ba dikeketso ho sefa disete tsa pele tsa leqephe la tefo.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Dumella baetsi ho eketsa di-slug tse ntjha tsa foromo ho qoba boitshwaro bona.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Dumella baetsi le dikeketso ho eketsa mehato e metjha ya phalliso
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Bona tse ding ka sefe sena ka tlase, mokgweng ona ona.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Dumella baetsi ho kgetha hore na ke mefuta efe ya diposo e lokelang ho bontshwa.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Kgutlisa Mela, e ka sefwang
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Dumella baetsi ho fetola dipara tsa domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — E sefa dikarolo tsa motataisi bakeng sa ho seta kopanyo ya hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — E sefa masimo foromong. Foromo e tsejwa ka ID lebitsong la sefe.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Sefa mefuta ya dihlahiswa e nang le dikereiti tsa ditefiso tse ikemetseng.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Dumella baetsi ba dikeketso ho qobella boemo bo itseng bakeng sa API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Dumella baetsi ba dikeketso ho eketsa diteko tse ding bakeng sa mokgwa wa ntshetsopele.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Dumella baetsi ba dikeketso ho qobella boemo bo itseng bakeng sa adaptara ya MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Ka mabaka a tshireletso, re fokotsa palo ya diketso tse fumanehang bakeng sa ho hokellwa ho tsona. Sefe sena se dumella baetsi ho atolosa
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — E hlahloba hore na mofuta o itseng wa poso o dumelletswe morerong ona Dumella baetsi ba dikeketso ho sefa boleng bo kgutliswang
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Sefa hore na ho qobellwe netefatso ya aterese ya IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Sefa hore na ho qobellwe netefatso ya moemedi wa mosebedisi.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Sefa URL ya sehokelo sa boselamose se hlahisitsweng.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Sefa hore na dihokelo tsa boselamose di nolofaditswe.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — E sefa URL ya ho lebisa hape ka mora ho etsa domain hore e be ya mantlha.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Theha lenane la ho qhelela ka thoko la dipharamitha tse thibelang ho lebisa hape ka boiketsetso.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Sefe sa ho feta qeto ya ho kenyeletsa bokgoni ba MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — E sefa letsatsi la ho felloa ke nako le baletsweng.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — E sefa letsatsi la ho felloa ke nako le baletsweng hore le setwe ka mora ntjhafatso.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Dumella baetsi ho eketsa di-slug tse ntjha tsa foromo ya ntjhafatso.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Sefa bolelele bo tlase ba password.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Sefa matla a tlase a password a hlokahalang (ntlha ya zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Dumella baetsi ba dikeketso, le rona, ho eketsa dihokelo tsa diketso maqepheng a rona a ho hlophisa
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Sefa hore na ho hlokehe ditlhaku tse nyane ho di-password.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Sefa hore na ho hlokehe dinomoro ho di-password.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Sefa hore na ho hlokehe matshwao a kgethehileng ho di-password.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Sefa hore na ho hlokehe ditlhaku tse kgolo ho di-password.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Dumella mosebedisi ho fetola molaetsa mabapi le ditefo tse emetseng.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Sefa mefuta ya dihlahiswa e lokelang ho nkwa e le merero.
+- [wu_post_count](./Filters/wu_post_count) — Dumella baetsi ba dikeketso ho fetola kakaretso ya palo
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Dumella baetsi ba dikeketso ho fetola hore na ke boemo bofe ba poso bo lokelang ho balwa Ka kamehla, diposo tse phatlaladitsweng le tsa poraefete di a balwa
+- [wu_post_default_status](./Filters/wu_post_default_status) — E sefa data ya ntho pele e bolokwa polokelongtshedimosetsong.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Dumella baetsi ho sefa disetting pele di bolokwa ke Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — E sefa hore na ho dumelletswe ho tswela pele ka kopo kapa tjhe.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — E sefa hore na ho dumelletswe ho tswela pele ka kopo kapa tjhe.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — E sefa hore na ho lumelletsoe ho tsoela pele ka kopo kapa che.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — E sefa hore na ho lumelletsoe ho tsoela pele ka kopo kapa che.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — E sefa hore na ho lumelletsoe ho tsoela pele ka kopo kapa che.
+- [wu_return_url](./Filters/wu_return_url) — Lumella bahlahisi ho fetola gateway return URL e sebelisoang ka mor'a ditshebetso tsa checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Lumella bahlahisi ba plugin ho eketsa mesebetsi e meng ya dikai tsa patlo.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Lumella bahlahisi ho eketsa mehato e meng ya setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — E sefa hore na Ultimate Multisite e lokela ho etsa rekoto ya domain bakeng sa site e sa tswa thehwa.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Lumella bahlahisi ho kgaola redirection, ba thibele hore e se ke ya etsahala.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — E dumella ho ngolwa botjha ha handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Sefa diketso tsa bongata tse fumanehang bakeng sa di-site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sefa ho fetola boleng bakeng sa get pluginssites ka hare ho network.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Bulela/tima bokgoni ba cross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — E sefa di-URL tsa SSO tse hlahisitsweng pele di kgutlisetswa bakeng sa diketso tsa bareki tsa cross-domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Sefa data ya Stripe Subscription. E ka fetola success_url kapa cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — E sefa di-argument tsa payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — E sefa ID ya plan e lokelang ho hlahlojwa. Haeba ena e le teng, subscription e ntjha e tla sebedisa plan ena.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — E sefa ID ya product e lokelang ho hlahlojwa. Haeba ena e le teng, subscription e ntjha e tla sebedisa product ena.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — E sefa boleng ba idempotency_key bo romelletsweng le dikgetho tsa tefiso tsa Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — E sefa rekoto ya membership e amanang le webhook ena.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — E sefa meta ya data pele e serialized hore e bolokwe ka hara database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — E sefa data ya object pele e bolokwa ka hara database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Lumella bahlahisi ho fetola URL ya upgrade to unlock
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Etsa qeto hore na mapping e lokela ho sebediswa
+- [wu_username_from_email](./Filters/wu_username_from_email) — Sefa lebitso la mosebedisi la moreki e motjha.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Lumella bahlahisi ho fetola molaetsa mabapi le moedi wa basebedisi ba membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — E dumella bahlahisi ho eketsa difoldara tse ding lenaneng le ka nkelwang sebaka.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — E sefa hore na ke di-sub_commands dife tse buletsweng entity ena.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Re hlahloba dipaterone tse tharo ha re leka ho fumana hore na re ka kenya constants tsa rona kae:

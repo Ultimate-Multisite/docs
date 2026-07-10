@@ -3,19 +3,19 @@ title: Ho setse Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Setuping Le Stripe Gateway (v2)
+# Setuping Le Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**LIPOTSE: Le tsela le liti se thuto li fana ka Ultimate Multisite v2.x.**_
 
 U ka fetola up to four methods of payment mo page ya setiputso ya payment ea rona: Stripe, Stripe Checkout, PayPal le Manual. Mo this article, re tla re bona kee e ka fetola le **Stripe**.
 
-## Fetola Stripe
+## Fetola Stripe {#enabling-stripe}
 
 Ho fetola Stripe ho ba le gateway ea payment e ka fetola mo network ea hau, a goela **Ultimate Multisite > Settings > Payments** le u tsamisa toggle e tsoang le **Stripe** kapa **Stripe Checkout** mo sebahala sa Active Payment Gateways.
 
 ![Fetola Stripe mo active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Le lona, ho tla ba le tsela ho fana ka ntlha ya credit card mo checkout.
 
@@ -45,7 +45,7 @@ Tshepa (Copy) value jo bo **Publishable key** le **Secret key**, jo ho mo kolom 
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Go setela Stripe Webhook
+## Go setela Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe a fana webhook events jo ba Ultimate Multisite se le se a go ba ntlha ka se se a go ba **stripe account** ya hau.
 

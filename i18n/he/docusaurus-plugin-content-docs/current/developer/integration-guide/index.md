@@ -1,15 +1,17 @@
 ---
 title: מדריך אינטגרציה
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# מדריך אינטגרציה
+# מדריך אינטגרציה {#integration-guide}
 
-מדריך זה מכסה דפוסי אינטגרציה נפוצים עם Ultimate Multisite, כולל חיבור לשירותים חיצוניים, בניית שער תשלום מותאמים אישית וטיפול ב-webhooks.
+מדריך זה מכסה דפוסי אינטגרציה נפוצים עם Ultimate Multisite, כולל חיבור לשירותים חיצוניים, בניית שערי תשלום מותאמים אישית וטיפול ב-webhooks.
 
-## אינטגרציה עם CRM
+לתשתית דיירים מבודדת, ראו [אינטגרציית Multi-Tenancy](./multi-tenancy) להנחיות על אתחול דייר ריבוני, אימות הגירה, SSO ופירוק.
 
-סנכרון נתוני לקוחות ל-CRM שלך כאשר לקוחות חדשים נרשמים:
+## אינטגרציית CRM {#crm-integration}
+
+סנכרנו נתוני לקוחות אל ה-CRM שלכם כאשר לקוחות חדשים נרשמים:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## אינטגרציה עם אנליטיקה
+## אינטגרציית אנליטיקה {#analytics-integration}
 
-מעקב אחר אירועי עסקיים מרכזיים לאורך מחזור חיי הלקוח:
+עקבו אחר אירועים עסקיים מרכזיים לאורך מחזור חיי הלקוח:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## צעדים הבאים
+## השלבים הבאים {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — בנה את שער התשלום שלך
-- [Webhook Handling](./webhooks) — צור נקודות קצה (endpoints) של webhooks מותאמים אישית
+- [פיתוח שער מותאם אישית](./custom-gateway) — בנו שער תשלום משלכם
+- [טיפול ב-Webhook](./webhooks) — צרו נקודות קצה webhook מותאמות אישית
+- [אינטגרציית Multi-Tenancy](./multi-tenancy) — השתלבו עם תהליכי מחזור החיים של דייר ריבוני

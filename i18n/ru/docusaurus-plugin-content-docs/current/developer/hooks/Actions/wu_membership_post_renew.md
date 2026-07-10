@@ -1,24 +1,24 @@
 ---
 id: wu_membership_post_renew
-title: Действие - wu_membership_post_renew
+title: Действие — wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew
+# Action: wu_membership_post_renew {#action-wumembershippostrenew}
 
-Triggers after the membership renewal.
+Срабатывает после продления membership.
 
-## Parameters
+## Параметры {#parameters}
 
-| Name | Type | Description |
+| Название | Тип | Описание |
 |------|------|-------------|
-| $expiration | `string` | Новая дата истечения срока, которую нужно установить. |
-| $membership_id | `int` | ID членства. |
-| $membership | `\Membership` | Объект членства. |
+| $expiration | `string` | New expiration date to be set. |
+| $membership_id | `int` | The ID of the membership. |
+| $membership | `\Membership` | Membership object. |
 
-### Since
+### Начиная с {#since}
 
 - 2.0
-### Source
+### Источник {#source}
 
-Defined in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) at line 2235
+Определено в [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) на строке 2235

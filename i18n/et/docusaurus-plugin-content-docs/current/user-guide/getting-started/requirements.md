@@ -3,11 +3,11 @@ title: ' nõuded'
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Ultimate Multisite nõuded
+# Ultimate Multisite nõuded {#ultimate-multisite-requirements}
 
 Enne kui Ultimate Multisite ostmine otsustad, saata ennustada endale: mida on vaja meie plugini käivitamiseks? õnneks, Ultimate Multisite käivitamiseks on vaid mõned aluseks olevad nõuded: **domeenname**, hea **hostingu teenuse** ja WordPress **Multisite** installatsioon. See on kõik, mida vajad!
 
-## Domeenname
+## Domeenname {#domain-name}
 
 Alustame domeennamega.
 
@@ -17,7 +17,7 @@ Meie plugin pakub abonnemise teenuseid, maksude kogumist, ostukorvi formeid, all
 
 Mida niši valides, saab seda juhtida meie pluginiga, kui müüd oma veebisaid teenustena! Pärast domeennimi valimist paku kindlust, et see vastas teie liiketoimetusplaanile.
 
-## Hostingu teenuse
+## Hostingu teenuse {#hosting-provider}
 
 Nüüd, kui teil on huvi võlus domeenname, mis esindab teie niši ja liiketoimetust, peate Ultimate Multisitega oma võrku hostida headi veebihostingu ettevõtte valimiseks. Märkimisväärseid võimalusi on turul. Mõned hosting teenused integreeruvad hästi Ultimate Multisitega, mis võib olla otsustav faktor selle sõltuvalt sellest, mida te plaanite lahendada.
 
@@ -25,7 +25,7 @@ Ultimate Multisite toimib igal hoastingu tarbijate jaoks. Ainult erinevus on, et
 
 Serverite spetsifikatsioonidega seoses on konkreetset vorme pole, kuna see sõltub sellest, millise funktsioonide ja teenuste pakkumist planeerite ning teie võrku suurust. Jaama hoosting võib olla hea algus, kuid kui teie võrk starti kasvab, vajate tõenäoliselt eraldatud VPS-i.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nüüd räägime natuke WordPress Multisite installatsioonist.
 

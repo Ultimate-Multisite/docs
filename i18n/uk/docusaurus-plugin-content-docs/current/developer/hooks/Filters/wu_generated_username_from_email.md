@@ -4,11 +4,11 @@ title: Фільтр - wu_generated_username_from_email
 sidebar_label: wu_generated_username_from_email
 _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 ---
-# Фільтр: wu_generated_username_from_email
+# Фільтр: wu_generated_username_from_email {#filter-wugeneratedusernamefromemail}
 
 Фільтрує згенероване ім'я користувача клієнта.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: ad708562b0c2c9c80d1d5845ef1e67b7
 | $new_user_args | `array` | Масив аргументів для нового користувача, який може включати ім'я та прізвище. |
 | $suffix | `string` | Рядок, який додається до імені користувача, щоб зробити його унікальним. |
 
-### З
+### З {#since}
 
 - 3.7.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L488) на рядку 488

@@ -3,32 +3,32 @@ title: Lipa leboha la morao le ho bua ka matlae a sebopeang
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Le Letsatsi la Boitsoalo le Ho Ikhotso
+# Le Letsatsi la Boitsoalo le Ho Ikhotso {#customer-feedback--issue-reporting}
 
 Ho fana ka boitsoalo ba mantsi a ba ntlha le ho ithuta litlhoko tsa hau, ke tla re bolela ka tsela efe o tla go thusa.
 
-## Ho Fana Ka Boitsoalo Ba Mantsi (Customer Feedback)
+## Ho Fana Ka Boitsoalo Ba Mantsi (Customer Feedback) {#thumbs-down-button}
 
 Re tla u fana ka dikotlolo tse di fetang tse puo le mantsi a ba ntlha ho bone. Ke sona se se fetang se se tlhokang ho ithuta hore na eng e ntse etse ho ba le boikotsoalo.
 
 *   **Ho Ikhotso:** Ho fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, ho bone hore na eng e ntse etse ho ba le boikotsoalo.
 *   **Ho Bonelelo:** Ho bone hore na eng e ntse etse ho ba le boikotsoalo ka tsela efe.
 
-## Ho Ikhotso le Ho Ikhotso (Issue Reporting)
+## Ho Ikhotso le Ho Ikhotso (Issue Reporting) {#feedback-consent-modal}
 
 Ha u bone le se se fetang se se ntlha, o tla ithuta hore na eng e ntse etse ho ba le boikotsoalo. Ke sona se se fetang se se tlhokang ho ithuta hore na eng e ntse etse ho ba le boikotsoalo.
 
 *   **Ho Ikhotso:** Ho fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, ho bone hore na eng e ntse etse ho ba le boikotsoalo.
 *   **Ho Bonelelo:** Ho bone hore na eng e ntse etse ho ba le boikotsoalo ka tsela efe.
 
-## Boitsoalo Ba Le Letso (Feedback on Issues)
+## Boitsoalo Ba Le Letso (Feedback on Issues) {#auto-prompt-feedback-banner}
 
 Ha u fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, o tla ithuta hore na eng e ntse etse ho ba le boikotsoalo. Ke sona se se fetang se se tlhokang ho ithuta hore na eng e ntse etse ho ba le boikotsoalo.
 
 *   **Ho Ikhotso:** Ho fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, ho bone hore na eng e ntse etse ho ba le boikotsoalo.
 *   **Ho Bonelelo:** Ho bone hore na eng e ntse etse ho ba le boikotsoalo ka tsela efe.
 
-## Boitsoalo Ba Le Letso (Issue Feedback)
+## Boitsoalo Ba Le Letso (Issue Feedback) {#report-issue-slash-command}
 
 Ha u fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, o tla ithuta hore na eng e ntse etse ho ba le boikotsoalo. Ke sona se se fetang se se tlhokang ho ithuta hore na eng e ntse etse ho ba le boikotsoalo.
 
@@ -37,7 +37,7 @@ Ha u fana ka dikotlolo tse di fetang tsa mantsi a ba ntlha, o tla ithuta hore na
 
 AI Agent v1.5.0 e ntlha le tsela ya ho ruta le ho ruta matla a bots (feedback) le ho ruta matlha a problems. Le tla u fana ka sehlopha sa ho bone (consent management), sehlopha sa ho ruta sehlopha sa ho ruta, le ho tsamaisa ho ruta matla a bot (AI-assisted triage) ka mekgwa.
 
-## Le Botseba le Letso (Thumbs-Down Button)
+## Le Botseba le Letso (Thumbs-Down Button) {#ai-assisted-triage}
 
 Mme le meanyong le e fetang le ho fana ka botseba le letso (👎). Ha morao o tsamaya, o ka dira gore go se tlhokwa kapa go se bonago.
 
@@ -45,7 +45,7 @@ Le boikotse ho bona lehlakane lehle (hover) lehlakane lehlakane la mosebetsi oa 
 Ho tsamaya ho seba ho fana ka **Feedback Consent Modal**.
 Ho fana ka feedback e fetang le tlhahiselo ea bonako le mosebetsi o site.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#settings--advanced}
 
 Haeba morao o le moiti o tšepo (thumbs-down) o fihla, modal ya tšepo e tla fihla fa go na le ntlha ho feta ka ho fana ka data. Modal ya tšepo:
 

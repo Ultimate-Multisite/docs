@@ -1,127 +1,140 @@
 ---
-title: Strona Konta Klienta
+title: Strona Account klienta
 sidebar_position: 14
-_i18n_hash: 60261800e2a155b4b190a325bdb50bb2
+_i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Strona konta Twojego klienta (wersja 2)
+# Strona Account Twojego klienta (v2) {#your-clients-account-page-v2}
 
-_**WAŻNA UWAGA: Ten artykuł dotyczy Ultimate Multisite w wersji 2.x.**_
+_**WAŻNA UWAGA: Ten artykuł odnosi się do Ultimate Multisite w wersji 2.x.**_
 
-Kiedy klienci wykupują subskrypcję planu w Twojej sieci, otrzymują dostęp do strony internetowej oraz panelu z ważnymi informacjami dotyczącymi płatności, członkostw, domen, limitów planu itd.
+Gdy klienci subskrybują plan w Twojej sieci, otrzymują dostęp do witryny i jej Dashboard z ważnymi informacjami dotyczącymi ich płatności, członkostw, domen, ograniczeń planu itd...
 
-W tym poradniku przeprowadzimy Cię przez stronę konta klienta i pokażemy, co Twoi klienci mogą na niej zobaczyć i zrobić.
+W tym poradniku przeprowadzimy Cię przez stronę Account klienta i zobaczysz, co Twoi klienci mogą w niej widzieć oraz robić.
 
-## Strona konta
+## Strona Account {#the-account-page}
 
-Strona konta jest dostępna po kliknięciu **Account** w panelu klienta.
+Strona Account jest dostępna po kliknięciu **Account** w Dashboard Twojego klienta.
 
-![Menu Account w panelu klienta](/img/admin/dashboard.png)
+![Menu Account w Dashboard klienta](/img/account-page/account-menu.png)
 
-![Przegląd strony konta klienta](/img/admin/dashboard.png)
+W suwerennych sieciach dzierżawców Ultimate Multisite v2.13.0 utrzymuje to doświadczenie zarządzania klientem w witrynie głównej. Jeśli klient otworzy działania dotyczące Account, checkout, rozliczeń, faktury, zarządzania witryną, przełączania szablonów lub mapowania domen z suwerennego dzierżawcy, działanie wskazuje z powrotem na panel klienta w witrynie głównej, aby rekordy rozliczeń i członkostw sieci pozostały nadrzędne.
 
-Po kliknięciu klient zobaczy przegląd swojego członkostwa, adres rozliczeniowy, faktury, domeny, limity strony, a także będzie mógł zmienić **Szablon strony** (jeśli jest to dozwolone w Twojej sieci).
+Gdy klient przychodzi z suwerennego dzierżawcy, panel klienta w witrynie głównej może zawierać link powrotny do witryny dzierżawcy. Link powrotny jest wyświetlany tylko wtedy, gdy Ultimate Multisite może zweryfikować cel powrotu jako jedną z witryn klienta, co zapobiega dowolnym przekierowaniom, jednocześnie zachowując przepływ pracy dzierżawcy.
 
-Klienci mogą również zmienić członkostwo na inny plan lub kupić dodatkowy pakiet lub usługę, którą oferujesz. Przyjrzyjmy się każdej sekcji osobno.
+![Przegląd strony konta klienta](/img/account-page/overview.png)
 
-### Przegląd Twojego członkostwa:
+Po kliknięciu klient zobaczy przegląd swojego członkostwa, adresu rozliczeniowego, faktur, domen, ograniczeń witryny, a także będzie mógł zmienić ****szablon witryny** (jeśli jest to dozwolone w Twojej sieci)**.
 
-Pierwszy blok tuż pod nazwą strony klienta pokazuje przegląd aktualnego planu oraz usług/pakietów zakupionych wraz z nim. Blok zawiera również numer członkostwa, początkową kwotę zapłaconą za nie, koszt planu i ewentualnych usług/pakietów oraz ile razy klient został obciążony za to członkostwo. Klient może także sprawdzić, czy członkostwo jest **Aktywne**, **Wygasłe** czy **Anulowane**.
+Może również zmienić członkostwo na inny plan albo kupić inny pakiet lub usługę, którą oferujesz. Przyjrzyjmy się każdej sekcji osobno.
 
-![Przegląd członkostwa pokazujący plan, kwotę i szczegóły rozliczeń](/img/admin/memberships-list.png)
+### Przegląd Twojego członkostwa: {#your-membership-overview}
 
-Tuż pod tym blokiem klienci widzą bloki **About This Site** oraz **Site Limits**. Pokazują one wszystkie ograniczenia związane z ich planem: przestrzeń dyskową, wpisy, strony, odwiedziny itd. Te limity można skonfigurować na stronie każdego planu w **Ultimate Multisite > Products**.
+Pierwszy blok tuż pod nazwą witryny Twoich klientów pokazuje przegląd ich obecnego planu oraz usług/pakietów, które zostały z nim zakupione. Blok pokazuje również numer członkostwa, początkową kwotę za nie zapłaconą, ile kosztuje plan oraz każda usługa/pakiet, a także ile razy rozliczono ich za to członkostwo. Mogą też zobaczyć, czy członkostwo jest **Aktywne**, **Wygasłe** lub **Anulowane**.
 
-![Bloki About This Site i Site Limits pokazujące ograniczenia planu](/img/admin/dashboard.png)
+![Przegląd członkostwa pokazujący plan, kwotę i szczegóły rozliczeń](/img/account-page/membership-card.png)
 
-Po prawej stronie sekcji **Your Membership** klienci mogą kliknąć **Change**. Wyświetli to wszystkie dostępne plany i pakiety/usługi. Jeśli wybiorą inny plan, zaczną obowiązywać limity nowego planu zamiast obecnych limitów członkostwa — niezależnie od tego, czy to obniżenie czy podwyższenie planu.
+Tuż pod tym blokiem Twoi klienci mogą zobaczyć bloki **O tej witrynie** i **Limity witryny**. Te bloki pokazują im wszystkie ograniczenia wynikające z ich planu: miejsce na dysku, wpisy, strony, wizyty itd... Te limity można skonfigurować na stronie każdego planu w **Ultimate Multisite > Produkty**.
 
-Jeśli natomiast klienci zdecydują się kupić pakiety lub usługi do obecnego członkostwa — np. więcej przestrzeni dyskowej lub odwiedzin — obecne członkostwo nie zostanie zmienione, a jedynie nowe pakiety zostaną do niego dodane.
+![Bloki O tej witrynie i Limity witryny pokazujące ograniczenia planu](/img/account-page/site-limits.png)
 
-Pamiętaj, że kodów rabatowych nie można dodawać na stronie zmiany członkostwa. Jeśli klient użył kodu rabatowego przy pierwszym zakupie członkostwa, kod ten zostanie również zastosowany do nowego członkostwa.
+Po prawej stronie **Twojego członkostwa** klienci mogą kliknąć **Zmień**. Spowoduje to wyświetlenie wszystkich dostępnych planów oraz pakietów/usług. Jeśli wybiorą inny plan, ograniczenia tego planu zastąpią obecne ograniczenia członkostwa — niezależnie od tego, czy przechodzą na niższy, czy wyższy plan.
 
-### Aktualizacja adresu rozliczeniowego:
+Jeśli natomiast Twoi klienci zdecydują się kupić pakiety lub usługi dla tego obecnego członkostwa — takie jak większa przestrzeń dyskowa lub liczba wizyt — obecne członkostwo nie zostanie zmienione, a jedynie nowe pakiety zostaną do niego dodane.
 
-Na stronie konta klienci mogą również zaktualizować swój adres rozliczeniowy. Wystarczy kliknąć **Update** obok _Billing Address_.
+Pamiętaj, że kodów kuponów nie można dodawać na tej stronie zmiany członkostwa. Jeśli klient użył kodu kuponu przy pierwszym zakupie członkostwa, kod zostanie również zastosowany do tego nowego członkostwa.
 
-![Sekcja Billing Address z przyciskiem Update](/img/admin/customers-list.png)
+### Aktualizacja adresu rozliczeniowego: {#updating-the-billing-address}
 
-Klientowi wyświetli się nowe okno. Wystarczy, że wpisze nowy adres i kliknie _Save Changes_.
+Na stronie Account Twoi klienci mogą również zaktualizować swój adres rozliczeniowy. Wystarczy, że klikną **Aktualizuj** obok _Adres rozliczeniowy_.
 
-![Formularz aktualizacji adresu rozliczeniowego](/img/admin/customers-list.png)
+![Sekcja adresu rozliczeniowego z przyciskiem Aktualizuj](/img/account-page/billing-address.png)
 
-### Zmiana szablonu strony:
+Klientowi pojawi się nowe okno. Wystarczy, że wypełni nowy adres i kliknie _Zapisz zmiany_.
 
-Aby umożliwić klientom zmianę szablonów stron, przejdź do **Ultimate Multisite > Settings > Sites** i włącz opcję **Allow Template Switching**.
+![Formularz aktualizacji adresu rozliczeniowego](/img/account-page/billing-address-form.png)
 
-Dodatkowo w **Ultimate Multisite > Products** wybierz swoje plany i przejdź do zakładki **Site Templates**. Upewnij się, że opcja **Allow Site Templates** jest włączona, a w **Site Template Selection Mode** wybrana jest opcja **Choose Available Site Templates**.
+### Zmiana szablonu witryny: {#changing-the-site-template}
 
-![Zakładka Site Templates produktu z trybem wyboru szablonu](/img/config/product-site-templates.png)
+Aby umożliwić klientom zmianę szablonów ich witryn, musisz przejść do **Ultimate Multisite > Ustawienia > Witryny** i włączyć opcję **Zezwalaj na przełączanie szablonów**.
 
-Zobaczysz wszystkie dostępne szablony stron w Twojej witrynie. Wybierz, które chcesz udostępnić, a które mają być niedostępne dla klientów subskrybujących ten plan. Pamiętaj, że te opcje wpływają również na formularz zamówienia, więc każdy szablon oznaczony jako **Not Available** nie pojawi się na stronie rejestracji dla tego planu.
+Ponadto w **Ultimate Multisite > Produkty** wybierz swoje plany i przejdź do karty **Szablony witryn**. Upewnij się, że opcja **Zezwalaj na szablony witryn** jest włączona, a w **Trybie wyboru szablonu witryny** wybrana jest opcja **Wybierz dostępne szablony witryn**.
 
-Teraz Twoi klienci mogą kliknąć **Change Site Template** na swojej stronie konta.
+![Karta szablonów witryn produktu z trybem wyboru szablonu](/img/config/product-site-templates.png)
 
-![Przycisk Change Site Template na stronie konta](/img/admin/dashboard.png)  
-Klientowi wyświetli się lista wszystkich dostępnych szablonów stron dla tego planu.
+Będziesz widzieć wszystkie dostępne szablony witryn w swojej witrynie. Wybierz, które z nich chcesz udostępnić, a które mają nie być dostępne dla klientów subskrybujących ten plan. Pamiętaj, że te opcje wpływają również na formularz checkout, więc każdy szablon oznaczony jako **Niedostępny** nie pojawi się na stronie rejestracji dla tego planu.
 
-![Lista dostępnych szablonów stron dla planu](/img/config/site-templates-list.png)
+Teraz Twoi klienci mogą kliknąć **Zmień szablon witryny** na swojej stronie Account.
 
-Po wybraniu szablonu, na który chcą zmienić, zostaną poproszeni o potwierdzenie zmiany.
+![Przycisk Zmień szablon witryny na stronie Account](/img/account-page/change-template-button.png)
 
-![Okno potwierdzenia zmiany szablonu strony](/img/admin/dashboard.png)
+Ultimate Multisite 2.10.0 pokazuje przeprojektowany panel przełączania szablonów. Panel zaczyna się od **karty bieżącego szablonu**, dzięki czemu klienci mogą zobaczyć, który szablon jest aktywny, zanim wybiorą zamiennik.
 
-Po zaznaczeniu potwierdzenia i kliknięciu **Process Switch** nowy szablon strony zostanie zastosowany na stronie klienta.
+Stała siatka dostępnych szablonów witryn pozostaje widoczna, gdy klienci przeglądają swoje opcje. Pomaga im to porównać szablony dozwolone dla ich planu bez tracenia z oczu obecnego wyboru.
 
-### Dodawanie własnych domen:
+![Lista dostępnych szablonów witryn dla planu](/img/config/site-templates-list.png)
 
-Klienci będą mieli również możliwość dodania własnej domeny dla tego planu na swojej stronie konta. Aby umożliwić klientom korzystanie z własnych domen, przejdź do **Ultimate Multisite > Settings > Domain Mapping**.
+Po wybraniu szablonu, na który chcą przejść, zostaną poproszeni o potwierdzenie zmiany.
 
-Włącz opcję **Enable Domain Mapping**. Pozwoli to klientom używać własnych domen na poziomie całej sieci.
+![Okno dialogowe potwierdzenia przełączenia szablonu witryny](/img/account-page/template-switch-confirm.png)
 
-Nie zapomnij również sprawdzić, czy mapowanie domen jest włączone dla poszczególnych produktów — ponieważ możesz ograniczyć produkt tak, aby nie pozwalał klientom na używanie własnych domen.
+Po włączeniu potwierdzenia i kliknięciu **Przetwórz przełączenie** nowy szablon witryny zostanie użyty w witrynie Twojego klienta.
 
-Przejdź do **Ultimate Multisite > Products**. Wybierz wybrany plan i przejdź do zakładki **Custom Domains**. Włącz opcję **Allow Custom Domains**.
+Klienci mogą również użyć opcji **Reset current template** z tego panelu, gdy muszą zresetować witrynę z powrotem do aktualnie przypisanego szablonu. Podobnie jak przełączenie na inny szablon, zresetowanie szablonu może nadpisać zawartość witryny, więc klienci powinni potwierdzać tę akcję tylko wtedy, gdy rozumieją działanie resetowania.
 
-![Zakładka Custom Domains z przełącznikiem Allow Custom Domains](/img/config/product-custom-domains.png)
+### Dodawanie własnych domen: {#adding-custom-domains}
 
-Pozwoli to wszystkim klientom subskrybującym ten konkretny plan na używanie własnych domen. Teraz na stronie konta klienci mogą dodać własną domenę, klikając **Add Domain**.
+Twoi klienci będą również mieli możliwość dodania własnej domeny dla tego planu na stronie swojego Account. Aby umożliwić klientom korzystanie z własnych domen, przejdź do **Ultimate Multisite > Settings >** **Domain Mapping**.
 
-![Przycisk Add Domain na stronie konta](/img/admin/domains-list.png)
+Włącz opcję **Enable Domain Mapping**. Pozwoli to Twoim klientom korzystać z własnych domen na poziomie sieci.
 
-Pierwsze okno, które się otworzy, pokaże klientom komunikat z instrukcjami, jak zaktualizować rekordy DNS, aby ta własna domena działała w Twojej sieci.
+Nie zapomnij również sprawdzić, czy mapowanie domen jest włączone dla danego produktu — ponieważ możesz ograniczyć produkt tak, aby nie pozwalał klientom korzystać z własnych domen.
 
-![Instrukcje DNS wyświetlane przy dodawaniu własnej domeny](/img/admin/domains-list.png)
+Przejdź do **Ultimate Multisite > Products**. Wybierz plan według własnego uznania i przejdź do karty **Custom Domains**. Włącz opcję **Allow Custom Domains**.
 
-Ten komunikat możesz edytować w **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
+![Karta Custom Domains z przełącznikiem Allow Custom Domains](/img/config/product-custom-domains.png)
+
+Pozwoli to wszystkim klientom subskrybującym ten konkretny plan korzystać z własnych domen. Teraz na stronie Account Twoi klienci mogą dodać własną domenę, klikając **Add Domain**.
+
+![Przycisk Add Domain na stronie Account](/img/account-page/add-domain-button.png)
+
+Pierwsze okno, które się otworzy, pokaże klientom komunikat z instrukcją, jak zaktualizować rekordy DNS, aby ta własna domena działała w Twojej sieci.
+
+![Instrukcje DNS wyświetlane podczas dodawania własnej domeny](/img/account-page/add-domain-dns.png)
+
+Ten komunikat można edytować (przez Ciebie) w **Ultimate Multisite > Settings > Domain Mapping > Add New Domain Instructions**.
 
 ![Ustawienie Add New Domain Instructions w Domain Mapping](/img/config/settings-domain-mapping.png)
 
-Po kliknięciu **Next Step** klienci mogą dodać nazwę swojej własnej domeny i wybrać, czy ta domena ma być domeną główną. Pamiętaj, że klienci mogą używać więcej niż jednej własnej domeny dla swoich stron, więc mogą wybrać, która z nich będzie główna.
+Oto pełny widok strony ustawień mapowania domen:
 
-![Pole nazwy własnej domeny z opcją domeny głównej](/img/admin/domains-list.png)
+![Pełna strona ustawień mapowania domen](/img/config/settings-domain-mapping-full.png)
 
-Po kliknięciu **Add Domain** domena zostanie dodana do konta klienta. Teraz wystarczy, że klient zmieni rekordy DNS tej własnej domeny u swojego rejestratora domen.
+Po kliknięciu **Next Step** Twoi klienci mogą dodać nazwę swojej własnej domeny i wybrać, czy ta własna domena będzie główną. Pamiętaj, że Twoi klienci mogą używać więcej niż jednej własnej domeny dla swoich witryn, więc mogą wybrać, która z nich będzie główna.
 
-### Zmiana hasła:
+![Wpisywanie nazwy własnej domeny z opcją domeny głównej](/img/account-page/add-domain-primary.png)
 
-W panelu konta klienci mogą również zmienić hasło, klikając **Change Password**.
+Po kliknięciu **Add Domain** domena zostanie dodana do konta Twojego klienta. Teraz muszą jedynie zmienić rekordy DNS tej własnej domeny u swojego rejestratora domen.
 
-![Przycisk Change Password na stronie konta](/img/admin/dashboard.png)
+### Zmiana hasła: {#changing-password}
 
-Wyświetli się nowe okno, w którym klienci będą musieli wpisać obecne hasło, a następnie nowe hasło, którego chcą używać.
+W Dashboard konta Twoi klienci mogą również zmienić swoje hasło, klikając **Change Password**.
 
-![Formularz zmiany hasła z polami na obecne i nowe hasło](/img/admin/dashboard.png)
+![Przycisk Change Password na stronie konta](/img/account-page/change-password-button.png)
 
-### Strefa zagrożenia:
+Spowoduje to wyświetlenie nowego okna, w którym Twoi klienci będą musieli wpisać swoje obecne hasło, a następnie nowe hasło, którego chcą używać.
 
-Mamy również dwie opcje wyświetlane w sekcji **Danger Zone**: **Delete Site** i **Delete Account**. Obie znajdują się w strefie zagrożenia, ponieważ te działania są nieodwracalne. Jeśli klienci usuną swoją stronę lub konto, nie będą mogli ich odzyskać.
+![Formularz zmiany hasła z polami obecnego i nowego hasła](/img/account-page/change-password-form.png)
 
-![Strefa Danger Zone z opcjami Delete Site i Delete Account](/img/admin/dashboard.png)
+### Strefa niebezpieczna: {#danger-zone}
 
-Jeśli klienci klikną którąkolwiek z tych opcji, wyświetli im się okno, w którym będą musieli zaznaczyć opcję usunięcia strony lub konta i zostaną ostrzeżeni, że tego działania nie można cofnąć.
+Mamy również dwie opcje, które są wyświetlane w części **Danger Zone**: **Delete Site** i **Delete Account**. Obie znajdują się w części Danger Zone, ponieważ te dwie akcje są nieodwracalne. Jeśli Twoi klienci usuną swoją witrynę lub swoje konto, nie będą mogli ich odzyskać.
 
-![Okno potwierdzenia usunięcia strony](/img/admin/dashboard.png)
+![Danger Zone z opcjami Delete Site i Delete Account](/img/account-page/danger-zone.png)
 
-![Okno potwierdzenia usunięcia konta](/img/admin/dashboard.png)
+Jeśli Twoi klienci klikną którąkolwiek z tych dwóch opcji, zostanie im wyświetlone okno, w którym będą musieli włączyć opcję usunięcia witryny lub konta i zostaną ostrzeżeni, że tej akcji nie można cofnąć.
 
-Jeśli usuną swoją stronę, ich konto i członkostwo pozostaną nienaruszone. Stracą jedynie całą zawartość swojej strony. Jeśli usuną swoje konto, wszystkie strony, członkostwa i informacje związane z tym kontem zostaną utracone.
+![Okno dialogowe potwierdzenia Delete Site](/img/account-page/delete-site-confirm.png)
+
+![Okno dialogowe potwierdzenia Delete Account](/img/account-page/delete-account-confirm.png)
+
+Jeśli usuną swoją witrynę, ich konto i membership pozostaną nienaruszone. Stracą jedynie całą zawartość swojej witryny. Jeśli usuną swoje konto, wszystkie witryny, memberships i informacje dotyczące tego konta zostaną utracone.

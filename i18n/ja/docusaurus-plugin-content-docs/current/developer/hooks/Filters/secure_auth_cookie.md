@@ -4,21 +4,21 @@ title: フィルタ - secure_auth_cookie
 sidebar_label: secure_auth_cookie
 _i18n_hash: a03742593fbe53382d76a30069111f82
 ---
-# フィルタ: secure_auth_cookie
+# フィルタ: secure_auth_cookie {#filter-secureauthcookie}
 
 認証クッキーがHTTPS経由でのみ送信されるかどうかをフィルタします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|------|
 | $secure | `bool` | 認証クッキーがHTTPS経由でのみ送信されるかどうか |
 | $user_id | `int` | ユーザーID |
 
-### バージョン
+### バージョン {#since}
 
 - 3.1.0
 
-### ソース
+### ソース {#source}
 
 `inc/sso/auth-functions.php` の80行目で定義されています

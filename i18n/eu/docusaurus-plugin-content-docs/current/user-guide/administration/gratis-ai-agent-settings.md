@@ -1,29 +1,29 @@
 ---
-title: Gratis AI Agent Sailoakizunak
+title: Gratis AI Agent Ezarpenak
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Gratis AI Agent Heuruenaketa Kontrolak
+# Gratis AI Agent ezarpenak {#gratis-ai-agent-settings}
 
-Gratis AI Agent-en **Settings → Advanced** ekranak, v1.5.0-ean partegitutako backend integrazioak dira administrazio-nivelaren konfigurazioa. Hau da **Feedback Endpoint** lekuak eta horiek espero dartzeko formatu bidez dokumentatuta.
+Gratis AI Agent-eko **Ezarpenak → Aurreratua** pantailak administratzaile-mailako konfigurazioa eskaintzen du backend integrazioetarako. Orrialde honek feedback birbidalketa, bilaketa-hornitzaileen gakoak, kudeatutako Superdav zerbitzuaren konfigurazioa, Google Calendar kontrolak, TextBee SMS ezarpenak eta sare osoko eginbide-banderak dokumentatzen ditu.
 
-## Heuruenaketa Kontrolatzeko
+## Ezarpenetara sartzea {#accessing-settings}
 
-1. WordPress adminan, **Gratis AI Agent → Settings**-era jarraitu.
-2. **Advanced** tabira klikatu.
+1. WordPress administrazioan, joan **Gratis AI Agent → Ezarpenak** atalera.
+2. Egin klik **Aurreratua** fitxan.
 
-## Feedback Endpoint Konfigurazioa
+## Feedback endpoint konfigurazioa {#feedback-endpoint-configuration}
 
-Feedback endpoint-ek AI agent-etik POST espritzak hartzen duenean, erabiltzaile bat thumbs-down botoia, auto-prompt banner-a edo `/report-issue` komandua bidez heurtu ematen duenean.
+Feedback endpoint-ak AI agent-etik POST eskaerak jasotzen ditu erabiltzaile batek feedback bidaltzen duen bakoitzean hatz-behera botoiaren, auto-prompt banderraren edo `/report-issue` komandoaren bidez.
 
-| Lege | Deskribapena |
+| Eremua | Deskribapena |
 |---|---|
-| **Feedback Endpoint URL** | JSON korpua (body) bidez HTTP POST espritzak hartzen duen URL-a. |
-| **Feedback API Key** | Feedback espritzaren lehen erabilera (`Authorization` header-ean) bidaltzen bearer token bat da. Hau ez du behar dela autentifikazioa, lekuan izateko itxura izan. |
+| **Feedback Endpoint URL** | Feedback bidalketak JSON gorputza duten HTTP POST eskaera gisa jasotzen dituen URLa. |
+| **Feedback API Key** | Feedback eskaera bakoitzaren `Authorization` header-ean bidaltzen den bearer token bat. Utzi hutsik zure endpoint-ak autentifikaziorik behar ez badu. |
 
-### Esperatuta JSON Payload
+### Espero den JSON karga {#expected-json-payload}
 
-Feedback endpoint-ek JSON korpua hartu beharko du, horrek lehen erabilera hauek:
+Zure feedback endpoint-ak JSON gorputz bat onartu behar du, gutxienez eremu hauekin:
 
 ```json
 {
@@ -34,72 +34,119 @@ Feedback endpoint-ek JSON korpua hartu beharko du, horrek lehen erabilera hauek:
 }
 ```
 
-Aldueko lekuak, adierazpen kontekstua beharko du ondorioz.
+Kargan eremu gehigarriak egon daitezke elkarrizketaren testuinguruaren arabera.
 
-### `triage_category` Arredaketa
+### `triage_category` balioak {#triagecategory-values}
 
-AI triage layer-ek payloada aurretik bidaltzeko, `triage_category`-ri hauek bat ematen dio:
+AI triage geruzak balio hauetako bat esleitzen dio `triage_category` eremuari karga birbidali aurretik:
 
-| Arre | Meantzen duena |
+| Balioa | Esanahia |
 |---|---|
-| `factual_error` | Asistenta informazio faktiko ezdu eta. |
-| `unhelpful_answer` | Errekontza teknikoa da, baina ez da laguntzak. |
-| `inappropriate_content` | Errekontzaren kontuan erabiltzaileei ez ematen dituen kontua barri. |
-| `other` | Feedback-ek kategorian jakin bat ez du. |
+| `factual_error` | Laguntzaileak informazio faktual okerra eman zuen. |
+| `unhelpful_answer` | Erantzuna teknikoki zuzena zen, baina ez zen erabilgarria. |
+| `inappropriate_content` | Erantzunak erabiltzaileei erakutsi behar ez zaien edukia zuen. |
+| `other` | Feedbacka ez zetorren bat kategoria ezagun batekin. |
 
-### Autentifikazioa
+### Autentifikazioa {#authentication}
 
-Honek iragatik, irag endpoint-ek autentifikazioa behar bada, **Feedback API Key** lehenen testu-lekuan hau daireatu zure bearer token-a. Agent-ek göndaten du:
+Zure endpoint-ak autentifikazioa behar badu, ezarri **Feedback API Key** eremua zure bearer token-arekin. Agent-ek hau bidaltzen du:
 
 ```
-Authorization: Bearer <zure-api-key>
+Authorization: Bearer <your-api-key>
 ```
 
-Honek **Feedback API Key** lehen testu-lekuak eragila bada, `Authorization` header ez da göndaten.
+**Feedback API Key** eremua hutsik badago, ez da `Authorization` header-ik bidaltzen.
 
-### Feedback Kolektibaren Deshabilitazioa
+### Feedback bilketa desgaitzea {#disabling-feedback-collection}
 
-**Feedback Endpoint URL** eta **Feedback API Key** lehen testu-lekuak ez daireatu. Lehenen testu-lekuak erabiltzaileei "thumbs-down" botoia eta feedback UI-a erabilera jarraitzen du, baina emateak arduradun serbizio bat edo beste batzuk aurrera eramaintzen ez du.
+Utzi **Feedback Endpoint URL** eta **Feedback API Key** eremuak hutsik. Hatz-behera botoia eta feedback UI-a erabiltzaileentzat ikusgai geratzen dira, baina bidalketak ez dira kanpoko zerbitzurik batera birbidaltzen.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-**Advanced** taban ere, **Brave Search API Key** lehen testu-lekuak [Internet Search](../configuration/internet-search) erabilera eskatzen du.
+**Aurreratua** fitxan ere, **Brave Search API Key** eremuak [Interneteko bilaketa](../configuration/internet-search) gaitasuna aktibatzen du.
 
-| Lehen Testu-leku | Deskribapena |
+| Eremua | Deskribapena |
 |---|---|
-| **Brave Search API Key** | Brave Search developer dashboard-ek jartzen duten API key-a. AI asistentian internet search erabilera eskatzeko beharrezkoa da. |
+| **Brave Search API Key** | Brave Search garatzaileen dashboard-eko zure API gakoa. Beharrezkoa da AI assistant-ean interneteko bilaketa gaitzeko. |
 
-Lehen testu-lekuaren etiketa Brave Search API jartzeko lapuriko lekuan klik egin dezake. Internet search deshabilitatzeko ez daireatu.
+Eremuaren etiketak Brave Search API erregistratzeko orrira doan esteka klikagarri bat dauka. Utzi hutsik interneteko bilaketa desgaitzeko.
 
-Honek funtazioa erabilera erabiltzaileei buruzko dokumentazioa [Internet Search](../configuration/internet-search) lehen testu-lekuan aurkitu.
+Ikusi [Interneteko bilaketa](../configuration/internet-search) eginbide honi buruzko azken erabiltzaileentzako dokumentaziorako.
 
-## Feature Flags (Funktazionalitatearen Balioak)
+## Kudeatutako Superdav zerbitzua {#managed-superdav-service}
 
-v1.9.0-ean iragitzitako, **Settings → Feature Flags** tab-ek opsional funtazionalitateak jarraitzen duen toggle switches ez daireatu. Lehen testu-lekuak network-ek erabiltzaile batzuk erabilera edo ez erabiltzea emate du; aipatzen ez dago site-era aukerarekin superatzeko (override) testu-leku bat.
+Superdav AI Agent v1.18.0-k kudeatutako Superdav zerbitzu-endpoint-ak eta konexio-hornikuntza automatikoa gehitzen ditu onartutako guneetarako. Erabili kontrol hauek zure guneak eskuz konfiguratutako zerbitzu-endpoint baten ordez ostatatutako hornitzailearekin konektatu behar duenean.
 
-### Feature Flags Erabilera
+| Eremua | Deskribapena |
+|---|---|
+| **Kudeatutako Superdav zerbitzua** | Ostatatutako Superdav zerbitzu-konexioa gaitzen du onartutako guneetarako. |
+| **Hornitu konexioa** | Endpoint eta kredentzialen hornikuntza automatikoa abiarazten du. Erabili hau guneak kudeatutako hornitzailea erabili behar duela berretsi ondoren. |
+| **Zerbitzu-endpointa / Konexioaren egoera** | Hornikuntzaren ondoren uneko endpointa edo konexioaren egoera erakusten du. |
 
-1. WordPress adminan, **Gratis AI Agent → Settings**-ra jarraitu.
-2. **Feature Flags** tab-ek klik egin.
+Hornikuntzaren ondoren, gorde ezarpenak eta egiaztatu konexioaren egoera kudeatutako zerbitzuaren lan-fluxuetan oinarritu aurretik. Hornikuntzak huts egiten badu, berrikusi bistaratutako berriro saiatzeko jarraibideak eta berretsi guneak ostatatutako hornitzailea erabiltzeko baimena duela.
 
-### Access Control Flags
+## Google Calendar konfigurazioa {#google-calendar-configuration}
 
-| Euskal Emate | Default | Deskribapena |
+Superdav AI Agent v1.18.0 egutegi-eginbideak gaituta daudenean, agent-ek konfiguratutako egutegiak eta gertaeren xehetasunak irakur ditzake. Egutegi-tresnak irakurtzera bideratuta daude, eta erabilgarriak dira ordutegia kontuan hartzen duten oroigarrietarako, parte-hartzaileen jarraipenerako eta kontaktuen parekatzerako.
+
+| Eremua | Deskribapena |
+|---|---|
+| **Google Calendar kredentzialak** | Egutegi-datuak irakurtzeko beharrezkoak diren kredentzialak edo token konexioa gordetzen ditu. |
+| **Egutegi-hautapena** | Agent-ek ikuska ditzakeen konfiguratutako egutegiak mugatzen ditu. |
+| **Egutegi-konexioaren egoera** | Uneko kredentzialek egutegiak eta gertaerak irakur ditzaketen baieztatzen du. |
+
+Mantendu egutegi-kredentzialak agent-ek behar dituen egutegietara mugatuta. Birkonektatu edo biratu kredentzialak egoerak iraungitako token bat adierazten badu.
+
+## TextBee SMS jakinarazpenak {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0-k TextBee gehitzen du SMS hornitzaile gisa konfiguratutako jakinarazpen-lan-fluxuetarako. SMS jakinarazpenak giza onarpen-ateekin parekatu behar dira mezu sentikorretarako edo erabiltzaileei zuzendutakoetarako.
+
+| Eremua | Deskribapena |
+|---|---|
+| **TextBee API Key** | TextBee SMS hornitzaileari egindako eskaerak autentifikatzen ditu. |
+| **TextBee gailua / bidaltzailea** | Irteerako mezuetarako erabiltzen den TextBee bidaltzailea edo gailua hautatzen du, hornitzaileak eskatzen duenean. |
+| **SMS jakinarazpenak gaituta** | Onartutako lan-fluxuei testu-mezuen jakinarazpenak bidaltzeko aukera ematen die. Utzi desgaituta SMS bidalketak eragozteko. |
+
+Bidali proba-mezu bat administratzaile baten jabetzako zenbaki batera soilik, eta ondoren berretsi onarpen-atearen portaera programatutako edo parte-hartzaileei zuzendutako oroigarriak gaitu aurretik.
+
+## Eginbide-banderak {#feature-flags}
+
+v1.9.0-n ere aurkeztuta, **Ezarpenak → Eginbide-banderak** fitxak aukerako funtzionalitaterako etengailuak eskaintzen ditu. Bandera bakoitza sare osoan gaituta edo desgaituta dago; une honetan ez dago gune bakoitzerako gainidazterik.
+
+### Eginbide-banderetara sartzea {#accessing-feature-flags}
+
+1. WordPress administrazioan, joan **Gratis AI Agent → Ezarpenak** atalera.
+2. Egin klik **Eginbide-banderak** fitxan.
+
+### Sarbide-kontrolaren banderak {#access-control-flags}
+
+| Marka | Lehenetsia | Deskribapena |
 |---|---|---|
-| **Administratorei irekitzea** | Off | Horra onartu denean, `administrator` rola duten erabiltzaileei lehen AI Agent chat panel-a iritsi daiteke. Beste rolek "Administratorrekin hartatu" mezu bat ikusten dute. |
-| **Aparatua Administuratorei irekitzea** | Off | Multisite networkan onartu denean, Super Admin-ek diartzen dituz agenta erabili. Site administratek ez daiteke erabiltzea. Horrek "Administratorei irekitzea" baino aurrera egiten du, batez ere horiek artean onartu denean. |
-| **Subscriber Erabiltzaileak irekitzea** | Off | Onartu denean, `subscriber` rola duten erabiltzaileei chat interfacea erabili daiteke baina lekua leikidun (post bat ez daiteke jartzea edo konfiguerazio-larriak aldatzea). |
-| **Ez-miembro berehala deshabilitatzea** | Off | Ultimate Multisite membership statusarekin integratzen da. Onartu denean, aktibo membership ez duten siteetako chatak horretan gizituta dago. |
+| **Administratzaileetara mugatu** | Desaktibatuta | Gaituta dagoenean, `administrator` rola duten erabiltzaileek bakarrik ireki dezakete AI Agent txat-panela. Beste rol guztiek "Jarri harremanetan zure administratzailearekin" mezua ikusiko dute horren ordez. |
+| **Network Admins-etara mugatu** | Desaktibatuta | Multisite sare batean gaituta dagoenean, Super Admins-ek bakarrik erabil dezakete agent. Gune indibidualetako administratzaileak blokeatuta daude. Lehentasuna du "Administratzaileetara mugatu" aukeraren gainetik, biak gaituta badaude. |
+| **Subscriber sarbidea baimendu** | Desaktibatuta | Gaituta dagoenean, `subscriber` rola duten erabiltzaileek txat-interfazea erabil dezakete, baina irakurtzeko soilik diren gaitasunetara mugatuta daude (ez argitalpenik sortu, ezta ezarpenik aldatu ere). |
+| **Kide ez direnentzat desgaitu** | Desaktibatuta | Ultimate Multisite kidetza-egoerarekin integratzen da. Gaituta dagoenean, txata ezkutatuta dago kidetza aktiborik ez duten guneentzat. |
 
-### Branding Emateak (Branding Flags)
+### Branding markak {#branding-flags}
 
-| Emate | Default | Deskribapena |
+| Marka | Lehenetsia | Deskribapena |
 |---|---|---|
-| **"Gratis AI Agent"-aren footer-a gizatzea** | Off | Chat widget-en amaieran ikusten duen branding artearen lantiak aukeratzen da. White-label despliegamentuetan hautatuta dago. |
-| **Agentaren namia osoa (Custom Agent Name)** | *(ez ezarritua)* | Chat header eta admin menu-an dagoen "Gratis AI Agent" lehenaren ordez, sizunakren namia hartzen da. Ez ezarritua jakinarazteko defaulta erabiltzeko. |
-| **Agent Picker gizatzea** | Off | Onartu denean, erabiltzaileei hiru agent bat artean aldatzea ez daiteke. Aktibo agenta horrek Settings → General-ean konfigueratu duen defaultaren edozein baten kopurua izango da. |
-| **Site ikonaren chat avatar gaurtzea** | Off | Chat widget header-en default AI ikona horretan WordPress site ikonak erakiago da (Appearance → Customize → Site Identity-an ezarrituta). |
+| **Ezkutatu "Powered by Gratis AI Agent" oina** | Desaktibatuta | Txat widgetaren behealdean agertzen den branding atribuzio-lerroa kentzen du. White-label hedapenetarako gomendatua. |
+| **Agent izen pertsonalizatua** | *(hutsik)* | Txat goiburuko eta administrazio-menuko "Gratis AI Agent" etiketa lehenetsia zure produktu-izenarekin ordezkatzen du. Utzi hutsik lehenetsia erabiltzeko. |
+| **Agent hautatzailea ezkutatu** | Desaktibatuta | Gaituta dagoenean, erabiltzaileek ezin dute bost agent integratuen artean aldatu. Uneko agent finkatuta dago Ezarpenak → Orokorra atalean lehenetsi gisa konfiguratuta dagoen horretara. |
+| **Erabili gunearen ikonoa txat-avatar gisa** | Desaktibatuta | Txat widgetaren goiburuko AI ikono lehenetsia WordPress gunearen ikonoarekin ordezkatzen du (Itxura → Pertsonalizatu → Gunearen identitatea atalean ezarria). |
 
-### Alderpenak aplikatzea
+### Automatizazio-segurtasuneko markak {#automation-safety-flags}
 
-Beste emate bat onartu ondoren **Save Settings** (Konfigurazioak saldatu) klik egin behar duzu. Alderpenak hemen egiten dira — cache edo pluginarekin aktibatu dezakeko ez daitezke.
+Superdav AI Agent v1.18.0-k giza onarpen-ateak eta oroigarri-erregistroak sartzen ditu automatizazio-exekuzio seguruagoetarako. Kontrol hauek feature flags-en edo automatizazio aurreratuko ezarpenetan ager daitezke, instalatutako paketearen arabera.
+
+| Marka | Lehenetsia | Deskribapena |
+|---|---|---|
+| **Giza onarpena eskatu** | Gomendatuta aktibatuta | Automatizazio sentikorrak pausatzen ditu baimendutako erabiltzaile batek proposatutako ekintza berrikusi eta baieztatu arte. |
+| **Oroigarrien deduplikazioa** | Aktibatuta | Bidalitako oroigarriak erregistratzen ditu berriro saiakerek edo programatutako exekuzioek jakinarazpen bikoizturik bidal ez dezaten. |
+| **Egutegi-tresnak gaitu** | Desaktibatuta konfiguratu arte | Agent-ek konfiguratutako Google egutegiak eta gertaerak irakurtzea baimentzen du. |
+| **SMS jakinarazpenak gaitu** | Desaktibatuta konfiguratu arte | Onartutako lan-fluxuek TextBee SMS jakinarazpenak bidaltzea baimentzen du kredentzialak gorde ondoren. |
+
+### Aldaketak aplikatzea {#applying-changes}
+
+Egin klik **Gorde ezarpenak** aukeran edozein marka aldatu ondoren. Aldaketak berehala aplikatzen dira — ez da beharrezkoa cachea hustea edo plugina berraktibatzea.

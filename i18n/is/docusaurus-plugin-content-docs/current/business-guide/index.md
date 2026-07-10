@@ -3,13 +3,13 @@ title: Byggu nisch-vitiðvarðarferli
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Byggðu Niche-Vefurinn fyrir Fyrirtæki með Ultimate Multisite
+# Byggðu Niche-Vefurinn fyrir Fyrirtæki með Ultimate Multisite {#build-a-niche-website-business-with-ultimate-multisite}
 
 Þær flestir sem reyna selja vefsíður, kveðja sig við prísins gegn Wix, Squarespace og þúsundir fréðlinda. Þeir lygi. Þær sem gagnast eru þeir sem velja sérstaka miðað viðskiptavini, byggja lausn sem er sniðin fyrir þennan miðað viðskiptivið, og setja fínlaun á verð fyrir það sem þeir bjóða.
 
 Þessi kerfisinn lærar þig nákvæmlega hvernig að gera þetta með Ultimate Multisite.
 
-## Hvað Þú Bylgjarðar
+## Hvað Þú Bylgjarðar {#what-you-will-build}
 
 Gjennom þennan kurs byggerðu verkelegt, virkandi netverk sem heitir **FitSite** – vefsíða plattforma byggð fyrir fítnesstofa, persónulega trænir og gymmiðil.
 
@@ -23,7 +23,7 @@ Gjennom þennan kurs byggerðu verkelegt, virkandi netverk sem heitir **FitSite*
 
 Þú mun fylgja með skref eftir skref, og á síðunni eftir að þú hefur leyft þessum kursinu, munu þú hafa bæði virkandi plattforma og þekkingu til að upplýsa ferlið fyrir hvaða niche sem þú valdið.
 
-## Hvað með Fítnesstofa?
+## Hvað með Fítnesstofa? {#why-fitness-studios}
 
 Við þurftum konkreta dæmi sem einn geti fylgt. Fítnesstofa virka því:
 
@@ -34,7 +34,7 @@ Við þurftum konkreta dæmi sem einn geti fylgt. Fítnesstofa virka því:
 
 Allt sem þú lærir að byggja FitSite á, er beint við hvaða nítandi þú valdar: matvælafélög, eigendur, lögmenn, kyrrðar, viðskiptaþjónustufólk, eða einhver annar vertikal.
 
-## Kurkurinn fyrir kerfið
+## Kurkurinn fyrir kerfið {#course-structure}
 
 Hvert læonið býður upp á eina hugmynd, útskýrir hvernig það er mikilvægt og leiðar þig í framkvæmd þess í FitSite netinu. Hvert læoni byggir á því sem kom fyrir í forgaðum.
 
@@ -56,7 +56,7 @@ Hvert læonið býður upp á eina hugmynd, útskýrir hvernig það er mikilvæ
 | [13. Aukningur](lesson-13-growth) | Vaxa frá fyrstu viðskiptavinum til verkelegri fyrirtækju | FitSite vöxt- og sjálfstæðunstíla |
 | [14. Hvað er næst?](lesson-14-whats-next) | Nýting á nýjar sérforritunarsviði og nýjar möguleikar | Þín leiðvegur fyrir FitSite |
 
-## Skilyrði
+## Skilyrði {#prerequisites}
 
 - WordPress Multisite uppsetning (eða vilja að settu hana upp)
 - Aktiv Ultimate Multisite lísun
@@ -64,6 +64,6 @@ Hvert læonið býður upp á eina hugmynd, útskýrir hvernig það er mikilvæ
 
 Engin kódun er nauðsynleg. Ef þú hefur aldrei notað Ultimate Multisite áður, það er ógrein – Læoni 3 byrjar frá nýr uppsetningu.
 
-## Klár?
+## Klár? {#ready}
 
 Byrja með [Læoni 1: Hvað gerir sérforritunarsviði vinna](lesson-1-why-niche).

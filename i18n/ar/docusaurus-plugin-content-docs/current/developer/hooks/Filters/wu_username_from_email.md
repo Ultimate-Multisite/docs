@@ -4,11 +4,11 @@ title: فلتر - wu_username_from_email
 sidebar_label: wu_username_from_email
 _i18n_hash: ab432839e318d008d082383ff5a18467
 ---
-# مرشح: wu_username_from_email
+# مرشح: wu_username_from_email {#filter-wuusernamefromemail}
 
 تصفية اسم المستخدم للعميل الجديد.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -17,10 +17,10 @@ _i18n_hash: ab432839e318d008d082383ff5a18467
 | $new_user_args | `array` | مصفوفة معلمات المستخدم الجديد، قد تتضمن الاسم الأول والاسم الأخير. |
 | $suffix | `string` | إلحاق سلسلة إلى اسم المستخدم لجعله فريدًا. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 تم تعريفه في [`inc/functions/customer.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/functions/customer.php#L516) في السطر 516

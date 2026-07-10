@@ -1,0 +1,197 @@
+---
+title: Sähköpostit
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Sähköpostit {#emails}
+
+Ultimate Multisite: Sähköpostit -lisäosa antaa verkoston omistajille mahdollisuuden ottaa käyttöön ja hallita asiakkaiden sähköpostitilejä sivustojen ja jäsenyyksien rinnalla. Versio 1.1.0 lisää asiakkaille suunnatun sähköpostitilien hallinnan, webmail-kertakirjautumisen, CyberPanel-välittäjätuen ja parannuksia käyttöönottoon kassalla.
+
+## Keskeiset ominaisuudet {#key-features}
+
+* **Asiakkaan sähköpostitilin vimpain**: Asiakkaat voivat luoda ja hallita postilaatikoita omalta Account-sivultaan sen jälkeen, kun heillä on aktiivinen sähköpostijäsenyys.
+* **Webmail SSO ja taikalinkit**: Asiakkaat voivat avata webmailin suoraan Account-sivulta yhden napsautuksen todennuksella, kun palveluntarjoaja tukee sitä.
+* **Salasanamuutokset**: Asiakkaat ja ylläpitäjät voivat päivittää postilaatikoiden salasanoja sähköpostinhallintavimpaimesta.
+* **Kassan oikeuksien käyttöönotto**: Kassa luo sähköpostijäsenyyden, linkittää sen asiakkaan sivuston verkkotunnukseen ja tuo Account-sivun postilaatikkotyökalut saataville.
+* **CyberPanel-välittäjät**: CyberPanel-pohjaiset verkostot voivat luoda ja hallita sähköpostivälittäjiä osana sähköpostipalvelun työnkulkua.
+* **Palveluntarjoajat huomioivat asetukset**: Asetussivu suodattaa palveluntarjoajat aktiivisiin, määritettyihin integraatioihin, jotta ylläpitäjät näkevät vain käyttökelpoiset vaihtoehdot.
+
+## Vaatimukset {#requirements}
+
+* Ultimate Multisite 2.0.0 tai uudempi
+* WordPress Multisite -asennus
+* Vähintään yksi määritetty sähköpostipalveluntarjoajan integraatio
+* Palveluntarjoajan API-tunnukset, joilla on oikeus luoda postilaatikoita, vaihtaa salasanoja ja myöntää webmail-käyttölinkkejä siellä, missä niitä tuetaan
+
+## Asennus {#installation}
+
+1. Lataa plugin-tiedostot kohteeseen `/wp-content/plugins/ultimate-multisite-emails`.
+2. Aktivoi lisäosa verkostossa WordPress-verkkoylläpidon kohdasta **Pluginit**.
+3. Siirry kohtaan **Ultimate Multisite** > **Asetukset** ja avaa lisäosan sähköpostiasetukset.
+4. Ota käyttöön sähköpostipalveluntarjoajien integraatiot, joita haluat asiakkaiden käyttävän.
+5. Tallenna asetukset ja testaa sitten tilin luonti ei-tuotantokäytön asiakkaalla tai staging-sivustolla.
+
+## Miten sähköpostin myyntipolku toimii {#how-the-email-seller-flow-works}
+
+Sähköpostin myynnissä on kaksi erillistä tasoa:
+
+1. **Oikeus** — Ultimate Multisite -sähköpostituote/-jäsenyys, joka määrittää, että asiakkaalla on oikeus käyttää sähköpostia tietylle sivuston verkkotunnukselle, palveluntarjoajalle, kiintiölle ja tilirajalle.
+2. **Postilaatikon luonti** — varsinainen palveluntarjoajan postilaatikko, kuten `info@example.com`, joka luodaan, kun asiakas tai verkoston ylläpitäjä valitsee paikallisen osan ja salasanan.
+
+Kassan aikana lisäosa luo tai aktivoi **sähköpostijäsenyyden** ja tallentaa asiakkaan sivuston verkkotunnuksen ja palveluntarjoajan kyseiseen jäsenyyteen. Se ei arvaa postilaatikon nimeä tai salasanaa. Kun ostos on valmis ja sivusto-/verkkotunnuskonteksti on olemassa, asiakas voi avata Account-sivun ja luoda haluamansa postilaatikkonimet.
+
+Tämä tarkoittaa, että tavallinen asiakaspolku on:
+
+1. Asiakas ostaa sivustopaketin ja lisää sähköpostituotteen kassalla.
+2. Ultimate Multisite luo sivustojäsenyyden ja toissijaisen sähköpostijäsenyyden.
+3. Emails-lisäosa linkittää sähköpostijäsenyyden asiakkaan sivuston verkkotunnukseen ja palveluntarjoajaan.
+4. Asiakas avaa **Account** Dashboardissaan.
+5. **Sähköpostitilit**-paneeli tulee näkyviin kyseiselle aktiiviselle sähköpostijäsenyydelle.
+6. Asiakas napsauttaa **Luo Account**, syöttää paikallisen osan, kuten `info`, asettaa salasanan, ja lisäosa luo osoitteen `info@their-domain.com` määritetyllä palveluntarjoajalla.
+
+## Määritä sähköpostituote {#configure-an-email-product}
+
+Luo yksi sähköpostituote jokaista sähköpostipakettia varten, jonka haluat myydä tai antaa ilmaiseksi. Jos tuotemääritys on sinulle uutta, aloita kohdasta [Ensimmäisen tilauspohjaisen tuotteen luominen](../../user-guide/configuration/creating-your-first-subscription-product) ja palaa sitten tänne sähköpostikohtaisiin asetuksiin.
+
+1. Siirry kohtaan **Verkon hallinta > Ultimate Multisite > Tuotteet > Lisää tuote**.
+2. Aseta **Tuotetyypiksi** **Sähköposti**.
+3. Määritä hinnoittelu. Käytä myytävälle paketille maksullista toistuvaa hintaa tai aseta tuote ilmaiseksi / nollahintaiseksi, jos sen tulisi olla veloitukseton sähköpostipaketti.
+4. Avaa **Sähköpostiasetukset**-osio.
+5. Valitse määritetty **Sähköpostipalveluntarjoaja**.
+6. Aseta **Tilien määrä**, **Tallennuskiintiö (Mt)**, aliasrajat, välittäjät ja automaattivastaajat tarpeen mukaan.
+7. Tallenna tuote.
+
+Vain palveluntarjoajat, jotka on otettu käyttöön ja määritetty kokonaan **Integraatiot**-sivulla, näkyvät palveluntarjoajan valitsimessa. Jos valitsin on tyhjä, määritä ja testaa palveluntarjoaja ensin.
+
+## Lisää sähköposti kassalle {#add-email-to-checkout}
+
+Sähköpostituotteita tarjotaan yleensä lisäosina sivustopakettiin. Katso yleinen kassaeditorin työnkulku kohdasta [Kassalomakkeet](../../user-guide/configuration/checkout-forms).
+
+1. Luo tai muokkaa sivustopakettia, jonka asiakkaat ostavat ensin.
+2. Lisää sähköpostituote saatavilla olevaksi lisäosaksi/tilausnostoksi kyseiseen kassapolkuun.
+3. Varmista, että kassalomake sisältää edelleen normaalit pakolliset sivustokentät, erityisesti sivuston URL-/verkkotunnuskentän.
+4. Suorita testikassa staging-asiakkaalla.
+5. Avaa kassan jälkeen asiakkaan [Account-sivu](../../user-guide/client-management/account-page) ja varmista, että **Sähköpostitilit**-paneeli näkyy.
+
+Sähköpostin verkkotunnus otetaan asiakkaan sivuston verkkotunnuksesta. Asiakkaat eivät syötä sähköpostin verkkotunnusta sähköpostituotteen vaiheessa.
+
+## Asiakkaan Account-sähköpostinhallinta {#customer-account-email-management}
+
+Versio 1.1.0 lisää sähköpostinhallintavimpaimen asiakkaan Account-sivulle. Käytä sitä, kun asiakkaiden tulisi itsepalveluna luoda ja ylläpitää postilaatikoita omille sivustoilleen.
+
+Account-sivulta asiakkaat voivat:
+
+1. Tarkastella sähköpostitilejä, jotka on liitetty heidän nykyiseen sähköpostijäsenyyteensä / sivuston verkkotunnukseen.
+2. Luoda uuden postilaatikon, kun heidän sähköpostituotteensa sallii lisätilit.
+3. Vaihtaa olemassa olevan postilaatikon salasanan.
+4. Avata tuetut webmail-palveluntarjoajat SSO:n tai taikalinkkikirjautumisen kautta.
+
+Vimpain käyttää Ultimate Multisite -Account-sivun nykykontekstijärjestelmää, joten toiminnot rajataan siihen Account-kontekstiin, jota asiakas tarkastelee. Tämä estää asiakkaita hallitsemasta sähköpostitilejä, jotka kuuluvat toiseen jäsenyyteen tai sivustoon.
+
+Jos asiakas ei näe sähköpostipaneelia, tarkista, että hänellä on **aktiivinen Email-tuotejäsenyys**, että jäsenyys on linkitetty sivuston verkkotunnukseen ja että tuotteelle on määritetty palveluntarjoaja.
+
+## Ilmaisen sähköpostipaketin antaminen asiakkaalle {#giving-a-customer-a-free-email-plan}
+
+Jos haluat antaa asiakkaalle sähköpostin veloituksetta, myönnä ensin **sähköpostioikeus** ja luo sitten postilaatikko tai anna asiakkaan luoda se itse.
+
+Suositellut vaihtoehdot:
+
+* **Luo ilmainen sähköpostituote**: aseta sähköpostituotteen hinnaksi ilmainen/nolla ja lisää sitten aktiivinen jäsenyys kyseiselle asiakkaalle kohdasta **Ultimate Multisite > Memberships > Add Membership**. Valitse sähköpostituote ja asiakas. Ilmaiset jäsenyydet ovat elinikäisiä, kunnes niitä muutetaan tai ne peruutetaan. Jos sähköpostijäsenyyden on tarkoitus seurata olemassa olevaa sivustoa, varmista, että se on linkitetty kyseisen sivuston/verkkotunnuksen kontekstiin.
+* **Käytä 100 %:n alennusta tai ilmaista kassalinkkiä**: anna asiakkaan käydä kassan läpi, jotta Ultimate Multisite luo sähköpostijäsenyyden ja maksutietueen automaattisesti.
+* **Luo postilaatikko ylläpitäjänä**: siirry kohtaan **Ultimate Multisite > Email Accounts > Add Email Account** luodaksesi asiakkaalle tietyn postilaatikon palveluntarjoajalle. Tämä on hyödyllistä tuessa, mutta se ei korvaa sähköpostituotejäsenyyttä, joka mahdollistaa asiakkaan itsepalvelutyökalut tilisivulla.
+
+Jos haluat asiakkaan hallitsevan postilaatikkoa itse tilisivulta, varmista, että hänellä on aktiivinen sähköpostijäsenyys verkkotunnukselle. Manuaalisesti luotu palveluntarjoajan postilaatikko voi olla olemassa ilman kyseistä jäsenyyttä, mutta asiakas ei välttämättä näe sen itsepalvelusähköpostipaneelia.
+
+## Ylläpitäjän luomat tilit ja "Ei tilausnumeroa" {#admin-created-accounts-and-no-order-number}
+
+Ylläpidon **Email Accounts** -sivu luo tai muokkaa palveluntarjoajan postilaatikkoa. Se ei ole ensimmäinen vaihe sähköpostipaketin myymisessä tai myöntämisessä.
+
+Kun muokkaat sähköpostitiliä, **Membership**-kenttä hakee olemassa olevia Ultimate Multisite -jäsenyyksiä niiden viite-/tilausnumeron perusteella. Jos yrität määrittää tilin ennen kuin asiakkaalla on sähköpostijäsenyys, valittavissa ei välttämättä ole tilausnumeroa.
+
+Käytä sen sijaan tätä toimintajärjestystä:
+
+1. Luo tai etsi asiakkaan sähköpostijäsenyys. Ostojen kohdalla kassa tekee tämän. Maksuttoman paketin kohdalla luo jäsenyys manuaalisesti kohdasta [Memberships](../../user-guide/administration/managing-memberships) tai ohjaa asiakas ilmaisen kassan kautta.
+2. Vahvista, että jäsenyys on aktiivinen ja käyttää Email-tuotetta.
+3. Vahvista, että sähköpostijäsenyys on linkitetty sivuston verkkotunnukseen/palveluntarjoajaan.
+4. Luo postilaatikko asiakkaan tilisivulta tai kohdasta **Ultimate Multisite > Email Accounts**.
+5. Tarvittaessa muokkaa postilaatikkotietuetta ja määritä asiakas, jäsenyys ja sivusto.
+
+Jos sinun tarvitsee vain luoda palveluntarjoajan postilaatikko asiakkaalle etkä tarvitse tilisivun itsepalveluhallintaa, ylläpitäjän luoma tili voi riittää. Jos haluat asiakkaan näkevän ja hallitsevan sitä Ultimate Multisite -palvelussa, luo myös sähköpostijäsenyys.
+
+## Webmail SSO ja Magic-Link-kirjautuminen {#webmail-sso-and-magic-link-login}
+
+Webmail SSO antaa asiakkaille suoran **Avaa webmail** -toiminnon tilisivulta. Kun aktiivinen palveluntarjoaja tukee sitä, lisäosa pyytää lyhytikäisen käyttö-URL:n ja ohjaa asiakkaan webmailiin pyytämättä häntä kopioimaan postilaatikon tunnuksia.
+
+Palveluntarjoajien toiminta voi vaihdella:
+
+* Palveluntarjoajat, joilla on natiivit SSO-rajapinnat, voivat luoda suoran todennetun webmail-istunnon.
+* Palveluntarjoajat, joilla on magic-link-tuki, voivat luoda aikarajoitetun kirjautumislinkin.
+* Palveluntarjoajien, joilla ei ole SSO- tai magic-link-tukea, tulisi silti näyttää postilaatikon tiedot ja salasananhallintatoiminnot, mutta ei yhden napsautuksen webmail-painiketta.
+
+Ota webmail-käyttö käyttöön vain palveluntarjoajille, joille olet määrittänyt vaaditut API-tunnukset. Jos toiminto puuttuu palveluntarjoajalta, varmista ensin, että palveluntarjoaja on aktiivinen, määritetty ja tukee webmail-kirjautumislinkkejä.
+
+## Kassan provisiointi {#checkout-provisioning}
+
+Lisäosa provisioi sähköpostin **jäsenyyskontekstin** kassan aikana. Se tallentaa palveluntarjoajan, tilirajan, kiintiön ja sivuston verkkotunnuksen, jotta asiakkaat voivat luoda omat postilaatikkonimensä tilisivulta oston jälkeen.
+
+Suositeltu käyttöönotto:
+
+1. Määritä palveluntarjoaja ja tuoterajat ennen sähköpostituotteen tarjoamista.
+2. Testaa ostos staging-tuotteella ja varmista, että sähköpostijäsenyys luodaan.
+3. Tarkista asiakkaan tilisivu varmistaaksesi, että **Email Accounts** -widget näkyy verkkotunnukselle.
+4. Luo testipostilaatikko widgetistä.
+5. Vahvista salasananvaihto- ja webmail-toiminnot ennen kuin otat työnkulun käyttöön tuotantotuotteille.
+
+Jos provisiointi epäonnistuu, asiakkaan tili ja jäsenyys voivat silti olla olemassa, mutta sähköpostijäsenyys tai palveluntarjoajan postilaatikko vaatii ylläpitäjän jatkotoimia. Tarkista Ultimate Multisite -toimintalokit ja palveluntarjoajan lokit ennen uudelleenyritystä.
+
+## CyberPanel-sähköpostin edelleenlähettäjät {#cyberpanel-email-forwarders}
+
+CyberPanel-taustaisissa verkoissa versio 1.1.0 lisää tuen sähköpostin edelleenlähettäjille. Käytä edelleenlähettäjiä, kun asiakkaat tarvitsevat osoitteita, kuten `info@customer-domain.test`, ohjaamaan postin toiseen postilaatikkoon ilman täyden postilaatikon luomista.
+
+Ennen kuin tarjoat edelleenlähettäjiä, varmista, että CyberPanel-integraatio on määritetty ja tavoitettavissa. Katso [CyberPanel-integraatio](../../user-guide/administration/cyberpanel-integration) -oppaasta vaaditut palvelin-, käyttäjänimi-, salasana- ja pakettivakiot.
+
+## Muutosloki {#changelog}
+
+### Versio 1.1.0 - Julkaistu 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Uusi: Webmail SSO ja magic-link-kirjautuminen — asiakkaat voivat käyttää webmailia suoraan Accountistaan yhden klikkauksen todennuksella.
+* Uusi: Salasanan vaihtotoiminto lisätty sähköpostitilien hallintawidgetiin.
+* Uusi: CyberPanel-sähköpostin edelleenlähettäjien tuki.
+* Uusi: Sähköpostien hallintawidget asiakkaan Account-sivulla itsepalveluna tehtävää tilien luontia ja hallintaa varten.
+* Uusi: Asiakkaan sähköpostitilioikeuden provisiointi integroitu kassaprosessiin.
+* Korjaus: Account-sivun widgetin hook päivitetty käyttämään oikeaa UMS-rekisteröintimallia.
+* Korjaus: Create Account -lomake korvattu vanilla JS:llä ja oikealla täydellisen HTML-dokumentin tulosteella.
+* Korjaus: Sähköpostien hallintawidget käyttää nyt UMS currents -järjestelmää ylläpitäjän Account-sivuilla.
+* Korjaus: Ylläpitäjän sähköpostitilin luontilomake sisältää salasanakentän ja käyttää Email_Account_Manageria.
+* Korjaus: Pyyntökohtainen lokiroska poistettu Email_Account_Managerin alustuksesta.
+* Parannettu: Asetussivu suodattaa nyt näkyviin vain aktiiviset ja määritetyt sähköpostipalveluntarjoajat.
+
+## Usein kysytyt kysymykset {#frequently-asked-questions}
+
+### Voivatko asiakkaat luoda omia sähköpostitilejään? {#can-customers-create-their-own-email-accounts}
+
+Kyllä. Kun asiakkaalla on aktiivinen sähköpostijäsenyys verkkotunnukselle ja tuote sallii lisätilit, asiakkaat voivat luoda ja hallita omia postilaatikoitaan Account-sivulta.
+
+### Tukeeko jokainen palveluntarjoaja webmail SSO:ta? {#does-every-provider-support-webmail-sso}
+
+Ei. SSO- ja magic-link-tuki riippuu aktiivisesta sähköpostipalveluntarjoajasta. Palveluntarjoajat, joilla ei ole pääsylinkin APIa, voivat silti tukea postilaatikoiden luontia ja salasanan vaihtoja.
+
+### Voivatko ylläpitäjät luoda sähköpostitilejä asiakkaille? {#can-administrators-create-email-accounts-for-customers}
+
+Kyllä. Ylläpitäjät voivat luoda sähköpostitilejä ylläpitokäyttöliittymästä, mukaan lukien alkuperäisen salasanan asettaminen tiliä luotaessa. Asiakkaan itsepalveluhallintaa varten varmista myös, että asiakkaalla on aktiivinen sähköpostijäsenyys verkkotunnukselle.
+
+### Voinko antaa sähköpostitilin ilmaiseksi? {#can-i-give-an-email-account-away-for-free}
+
+Kyllä. Luo ilmainen / nollahintainen sähköpostituote ja lisää se asiakkaalle aktiiviseksi jäsenyydeksi, tai anna asiakkaan suorittaa kassaprosessi 100 %:n alennuksella. Kun sähköpostijäsenyys on olemassa, asiakas tai ylläpitäjä voi luoda varsinaisen postilaatikon.
+
+### Miksi sähköpostitilin määrittäminen kysyy tilausnumeroa? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Jäsenyys-kenttä hakee olemassa olevaa Ultimate Multisite -jäsenyyttä sen viite-/tilausnumeron perusteella. Jos asiakas ei ostanut sähköpostituotetta etkä ole luonut sähköpostijäsenyyttä manuaalisesti, määritettävää sähköpostijäsenyyttä/tilausta ei ole. Luo ensin sähköpostijäsenyys ja luo tai määritä sitten postilaatikko.
+
+### Ovatko edelleenlähettäjät sama asia kuin postilaatikot? {#are-forwarders-the-same-as-mailboxes}
+
+Eivät. Postilaatikko tallentaa sähköpostit ja sillä on kirjautumistunnukset. Edelleenlähettäjä ohjaa sähköpostit toiseen osoitteeseen eikä tarjoa erillistä saapuneet-kansiota.

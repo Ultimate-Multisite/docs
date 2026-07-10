@@ -3,7 +3,7 @@ title: PRO Theme
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# PRO Theme ilə Admin Panelinizi Özelleştirmək
+# PRO Theme ilə Admin Panelinizi Özelleştirmək {#customizing-your-admin-panel-with-pro-theme}
 
 Müştəri işləri zamanı tez-tez WordPress admin panelində müştərilərə özəl bir təcrübə vermək lazım olur. Əgər daha peşəkar görünüş və hisslər axtarırsınızsa, PRO Theme sizə kömək edə bilər.
 

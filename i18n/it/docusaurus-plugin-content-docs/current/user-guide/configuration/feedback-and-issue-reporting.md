@@ -3,11 +3,11 @@ title: Feedback dei clienti e segnalazione problemi
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback dell'Utente e Segnalazione Problemi
+# Feedback dell'Utente e Segnalazione Problemi {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introduce un sistema integrato per il feedback e la segnalazione problemi che consente agli utenti finali di segnalare risposte poco utili e di riportare problemi direttamente dall'interfaccia chat. Questo sistema include la gestione del consenso, un comando di segnalazione automatizzato e un triage assistito dall'IA sul backend.
 
-## Pulsante "Pollice Giù"
+## Pulsante "Pollice Giù" {#thumbs-down-button}
 
 Ogni messaggio inviato dall'assistente AI mostra un pulsante **pollice giù** (👎). Quando un utente fa clic su di esso, può contrassegnare una risposta come poco utile o errata.
 
@@ -15,7 +15,7 @@ Ogni messaggio inviato dall'assistente AI mostra un pulsante **pollice giù** (�
 - Cliccarlo apre il **Modale di Consenso per il Feedback**.
 - Il feedback è associato al thread di conversazione e al messaggio specifico.
 
-## Modale di Consenso per il Feedback
+## Modale di Consenso per il Feedback {#feedback-consent-modal}
 
 Quando un utente fa clic sul pulsante pollice giù, appare un modale di consenso prima che vengano inviati dati. Il modale:
 
@@ -26,13 +26,13 @@ Quando un utente fa clic sul pulsante pollice giù, appare un modale di consenso
 
 Nessun feedback viene registrato finché l'utente non conferma esplicitamente.
 
-## Banner Feedback Auto-Prompt
+## Banner Feedback Auto-Prompt {#auto-prompt-feedback-banner}
 
 Alla fine di una conversazione, l'assistente può visualizzare un **banner feedback auto-prompt** — un messaggio non invadente che chiede se la sessione è stata utile.
 
 Questo banner appare automaticamente in base alla lunghezza e all'esito della conversazione. Collega lo stesso flusso di feedback del pulsante pollice giù. Gli utenti possono chiudere il banner senza fornire feedback.
 
-## Comando Slash /report-issue
+## Comando Slash /report-issue {#report-issue-slash-command}
 
 Gli utenti possono attivare il flusso di feedback digitando direttamente `/report-issue` nell'input chat. Questo comando:
 
@@ -42,7 +42,7 @@ Gli utenti possono attivare il flusso di feedback digitando direttamente `/repor
 
 Il comando `/report-issue` è disponibile in tutte le modalità chat (inline, widget flottante, a schermo intero).
 
-## Triage Assistito dall'IA
+## Triage Assistito dall'IA {#ai-assisted-triage}
 
 Il feedback inviato viene instradato a un livello di triage AI che:
 

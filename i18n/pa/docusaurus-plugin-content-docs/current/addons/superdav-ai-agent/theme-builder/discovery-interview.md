@@ -3,35 +3,35 @@ title: ਖੋਜ ਇੰਟਰਵਿਊ
 sidebar_position: 1
 _i18n_hash: dc3139faa5a25ae6b3004b0e2f5e6b8f
 ---
-# Discovery Interview (ਖੋਜ ਇੰਟਰਵਿਊ)
+# Discovery Interview (ਖੋਜ ਇੰਟਰਵਿਊ) {#discovery-interview}
 
 **Discovery Interview** (ਖੋਜ ਇੰਟਰਵਿਊ) Theme Builder ਦੀ ਡਿਜ਼ਾਈਨ ਪ੍ਰਕਿਰਿਆ ਦਾ ਪਹਿਲਾ ਕਦਮ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਸਾਈਟ, ਕਾਰੋਬਾਰ ਅਤੇ ਡਿਜ਼ਾਈਨ ਪਸੰਦ ਬਾਰੇ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਇੱਕ ਨਿੱਜੀ (personalized) Theme ਬਣਾਇਆ ਜਾ ਸਕੇ।
 
-## Overview (ਜਾਣਕਾਰੀ)
+## Overview (ਜਾਣਕਾਰੀ) {#overview}
 
 Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ, ਟਾਰਗੇਟ ਆਡੀਐਂਸ ਅਤੇ ਡਿਜ਼ਾਈਨ ਦੇ ਟੀਚਿਆਂ ਨੂੰ ਸਮਝਣ ਲਈ ਸਵਾਲਾਂ ਦੀ ਇੱਕ ਲੜੀ ਵਿੱਚ ਗਾਈਡ ਕਰਦਾ ਹੈ। ਵਰਜ਼ਨ 1.16.0 ਵਿੱਚ, ਇਸ ਇੰਟਰਵਿਊ ਵਿੱਚ ਹੁਣ ਇੱਕ **ਫੋਟੋ ਅਪਲੋਡ ਸਟੈਪ** ਸ਼ਾਮਲ ਹੈ, ਜੋ ਤੁਹਾਨੂੰ ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਲਈ ਵਿਜ਼ੂਅਲ ਇਨਸਪੀਰੇਸ਼ਨ (visual inspiration) ਪ੍ਰਦਾਨ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ।
 
-## Interview Steps (ਇੰਟਰਵਿਊ ਦੇ ਕਦਮ)
+## Interview Steps (ਇੰਟਰਵਿਊ ਦੇ ਕਦਮ) {#interview-steps}
 
-### 1. Business Information (ਕਾਰੋਬਾਰੀ ਜਾਣਕਾਰੀ)
+### 1. Business Information (ਕਾਰੋਬਾਰੀ ਜਾਣਕਾਰੀ) {#1-business-information}
 
 - ਸਾਈਟ ਦਾ ਨਾਮ ਅਤੇ ਟੈਗਲਾਈਨ
 - ਕਾਰੋਬਾਰ ਦਾ ਕਿਸਮ ਜਾਂ ਖੇਤਰ (Industry)
 - ਮੁੱਖ ਕਾਰੋਬਾਰਕ ਟੀਚੇ
 - ਟਾਰਗੇਟ ਆਡੀਐਂਸ ਦਾ ਵਰਣਨ
 
-### 2. Design Preferences (ਡਿਜ਼ਾਈਨ ਪਸੰਦ)
+### 2. Design Preferences (ਡਿਜ਼ਾਈਨ ਪਸੰਦ) {#2-design-preferences}
 
 - ਪਸੰਦੀਦਾ ਰੰਗ ਪੈਲੇਟ (Color scheme)
 - ਡਿਜ਼ਾਈਨ ਸਟਾਈਲ (ਮਾਡਰਨ, ਕਲਾਸਿਕ, ਮਿਨੀਮਲਿਸਟ, ਖੇਡਣ ਵਾਲਾ, ਆਦਿ)
 - ਇਨਸਪੀਰੇਸ਼ਨ ਵਾਲੀਆਂ ਵੈੱਬਸਾਈਟਾਂ ਜਾਂ ਬ੍ਰਾਂਡ
 - ਜ਼ਰੂਰੀ ਡਿਜ਼ਾਈਨ ਤੱਤ (Must-have design elements)
 
-### 3. Photo Upload (ਫੋਟੋ ਅਪਲੋਡ) (v1.16.0 ਵਿੱਚ ਨਵਾਂ)
+### 3. Photo Upload (ਫੋਟੋ ਅਪਲੋਡ) (v1.16.0 ਵਿੱਚ ਨਵਾਂ) {#3-photo-upload-new-in-v1160}
 
 ਡਿਜ਼ਾਈਨ ਦੀ ਦਿਸ਼ਾ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਨ ਲਈ ਇੱਕ ਜਾਂ ਇੱਕ ਤੋਂ ਵੱਧ ਫੋਟੋਆਂ ਅਪਲੋਡ ਕਰੋ:
 
-#### Accepted Formats (स्वीकार्य ਫਾਰਮੈਟ)
+#### Accepted Formats (स्वीकार्य ਫਾਰਮੈਟ) {#accepted-formats}
 
 | Format (ਫਾਰਮੈਟ) | Extension (ਐਕਸਟੈਂਸ਼ਨ) | Details (ਵਿਵਰਣ) |
 |--------|-----------|---------|
@@ -40,14 +40,14 @@ Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ,
 | **WebP** | `.webp` | ਆਧੁਨਿਕ ਫਾਰਮੈਟ, ਛੋਟਾ ਫਾਈਲ ਸਾਈਜ਼ |
 | **GIF** | `.gif` | ਸਿਰਫ਼ ਸਟੈਟਿਕ ਤਸਵੀਰਾਂ (ਕੋਈ ਐਨੀਮੇਸ਼ਨ ਨਹੀਂ) |
 
-#### File Requirements (ਫਾਈਲ ਦੀਆਂ ਲੋੜਾਂ)
+#### File Requirements (ਫਾਈਲ ਦੀਆਂ ਲੋੜਾਂ) {#file-requirements}
 
 - **Maximum file size (ਅਧਿਕਤਮ ਫਾਈਲ ਸਾਈਜ਼):** 10 MB
 - **Minimum dimensions (ਘੱਟੋ-ਘੱਟ ਮਾਪ):** 400 × 300 pixels
 - **Recommended dimensions (ਸਿਫਾਰਸ਼ੀ ਮਾਪ):** 1200 × 800 pixels ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ
 - **Aspect ratio (ਅਸਪੈਕਟ ਰੇਸ਼io):** ਕੋਈ ਵੀ ਰੇਸ਼io ਸਵੀਕਾਰਯੋਗ ਹੈ
 
-#### How Photos Influence Design Direction (ਫੋਟੋਆਂ ਡਿਜ਼ਾਈਨ ਦੀ ਦਿਸ਼ਾ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀਆਂ ਹਨ)
+#### How Photos Influence Design Direction (ਫੋਟੋਆਂ ਡਿਜ਼ਾਈਨ ਦੀ ਦਿਸ਼ਾ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀਆਂ ਹਨ) {#how-photos-influence-design-direction}
 
 ਤੁਹਾਡੇ ਵੱਲੋਂ ਅਪਲੋਡ ਕੀਤੀਆਂ ਫੋਟੋਆਂ Theme Builder ਨੂੰ ਇਹ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀਆਂ ਹਨ:
 
@@ -57,21 +57,21 @@ Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ,
 - **Design elements (ਡਿਜ਼ਾਈਨ ਤੱਤ)** — ਪੈਟਰਨ, ਟੈਕਸਚਰ, ਅਤੇ ਸੰਗਠਨਾਤਮਕ ਸਟਾਈਲ
 - **Typography inspiration (ਟਾਈਪੋਗ੍ਰਾਫੀ ਇਨਸਪੀਰੇਸ਼ਨ)** — ਫੌਂਟ ਸਟਾਈਲ ਜੋ ਵਿਜ਼ੂਅਲ Theme ਨੂੰ ਪੂਰਕ ਕਰਦੇ ਹਨ
 
-### 4. Content Structure (ਸਮੱਗਰੀ ਦੀ ਬਣਤਰ)
+### 4. Content Structure (ਸਮੱਗਰੀ ਦੀ ਬਣਤਰ) {#4-content-structure}
 
 - ਲੋੜੀਂਦੇ ਮੁੱਖ ਪੰਨੇ (Home, About, Services, Contact, ਆਦਿ)
 - ਬਲੌਗ ਜਾਂ ਨਿਊਜ਼ ਸੈਕਸ਼ਨ ਦੀ ਲੋੜ
 - E-commerce functionality ਦੀ ਲੋੜ
 - ਵਿਸ਼ੇਸ਼ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਜਾਂ ਇੰਟੀਗ੍ਰੇਸ਼ਨ (integrations)
 
-### 5. Review and Confirmation (ਸਮੀਖਿਆ ਅਤੇ ਪੁਸ਼ਟੀਕਰਨ)
+### 5. Review and Confirmation (ਸਮੀਖਿਆ ਅਤੇ ਪੁਸ਼ਟੀਕਰਨ) {#5-review-and-confirmation}
 
 - ਦਿੱਤੀ ਗਈ ਸਾਰੀ ਜਾਣਕਾਰੀ ਦਾ ਸਾਰ (Summary)
 - ਡਿਜ਼ਾਈਨ ਜਨਰੇਟ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਪੁਸ਼ਟੀਕਰਨ
 
-## Photo Upload Best Practices (ਫੋਟੋ ਅਪਲੋਡ ਕਰਨ ਦੇ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕੇ)
+## Photo Upload Best Practices (ਫੋਟੋ ਅਪਲੋਡ ਕਰਨ ਦੇ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕੇ) {#photo-upload-best-practices}
 
-### What to Upload (ਕੀ ਅਪਲੋਡ ਕਰਨਾ ਹੈ)
+### What to Upload (ਕੀ ਅਪਲੋਡ ਕਰਨਾ ਹੈ) {#what-to-upload}
 
 - **Brand inspiration (ਬ੍ਰਾਂਡ ਇਨਸਪੀਰੇਸ਼ਨ)** — ਲੋਗੋ, ਰੰਗ ਦੇ ਨਮੂਨੇ (color swatches), ਜਾਂ ਬ੍ਰਾਂਡ ਗਾਈਡਲਾਈਨਜ਼
 - **Competitor sites (ਮੁਕਾਬਲੇਬਾਜ਼ ਸਾਈਟਾਂ)** — ਸਾਈਟਾਂ ਦੇ ਸਕ੍ਰੀਨਸ਼ਾਟ ਜੋ ਤੁਹਾਨੂੰ ਪਸੰਦ ਆਏ ਹਨ
@@ -80,7 +80,7 @@ Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ,
 - **Team or office photos (ਟੀਮ ਜਾਂ ਦਫ਼ਤਰ ਦੀਆਂ ਫੋਟੋਆਂ)** — ਨਿੱਜੀ ਜਾਂ ਪੇਸ਼ੇਵਰ ਬ੍ਰਾਂਡਿੰਗ ਲਈ
 - **Lifestyle images (ਜੀਵਨ ਸ਼ੈਲੀ ਦੀਆਂ ਤਸਵੀਰਾਂ)** — ਤੁਹਾਡੀ ਟਾਰਗੇਟ ਆਡੀਐਂਸ ਨੂੰ ਦਰਸਾਉਂਦੀਆਂ
 
-### What to Avoid (ਕੀ ਤੋਂ ਬਚਣਾ ਹੈ)
+### What to Avoid (ਕੀ ਤੋਂ ਬਚਣਾ ਹੈ) {#what-to-avoid}
 
 - **Low-quality images (ਘੱਟ ਗੁਣਵੱਤਾ ਵਾਲੀਆਂ ਤਸਵੀਰਾਂ)** — ਧੁੰਦਲੀਆਂ ਜਾਂ ਪਿਕਸਲੇਟਡ ਫੋਟੋਆਂ
 - **Unrelated images (ਅਸੰਬੰਧਿਤ ਤਸਵੀਰਾਂ)** — ਫੋਟੋਆਂ ਜੋ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ ਨੂੰ ਨਹੀਂ ਦਰਸਾਉਂਦੀਆਂ
@@ -88,7 +88,7 @@ Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ,
 - **Copyrighted material (ਕਾਪੀਰਾਈਟ ਵਾਲੀ ਸਮੱਗਰੀ)** — ਯਕੀਨੀ ਬਣਾਓ ਕਿ ਤੁਹਾਡੇ ਕੋਲ ਤਸਵੀਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨ ਦਾ ਅਧਿਕਾਰ ਹੈ
 - **Animated GIFs (ਐਨੀਮੇਟਿਡ GIFs)** — ਸਿਰਫ਼ ਸਟੈਟਿਕ ਤਸਵੀਰਾਂ ਹੀ ਪ੍ਰੋਸੈਸ ਹੁੰਦੀਆਂ ਹਨ
 
-### Tips for Best Results (ਸਭ ਤੋਂ ਵਧੀਆ ਨਤੀਜਿਆਂ ਲਈ ਸੁਝਾਅ)
+### Tips for Best Results (ਸਭ ਤੋਂ ਵਧੀਆ ਨਤੀਜਿਆਂ ਲਈ ਸੁਝਾਅ) {#tips-for-best-results}
 
 1. **Upload 2-3 images (2-3 ਤਸਵੀਰਾਂ ਅਪਲੋਡ ਕਰੋ)** — ਕਈ ਤਸਵੀਰਾਂ ਬਿਹਤਰ ਸੰਦਰਭ (context) ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ
 2. **Use high-quality photos (ਉੱਚ-ਗੁਣਵੱਤਾ ਵਾਲੀਆਂ ਫੋਟੋਆਂ ਵਰਤੋ)** — ਸਪੱਸ਼ਟ, ਚੰਗੀ ਤਰ੍ਹਾਂ ਰੋਸ਼ਮਾਂ ਵਾਲੀਆਂ ਤਸਵੀਰਾਂ ਸਭ ਤੋਂ ਵਧੀਆ ਕੰਮ ਕਰਦੀਆਂ ਹਨ
@@ -96,7 +96,7 @@ Discovery Interview ਤੁਹਾਨੂੰ ਤੁਹਾਡੇ ਬ੍ਰਾਂਡ,
 4. **Provide context (ਸੰਦਰਭ ਪ੍ਰਦਾਨ ਕਰੋ)** — ਸੰਖੇਪ ਵਿੱਚ ਦੱਸੋ ਕਿ ਤੁਸੀਂ ਹਰੇਕ ਤਸਵੀਰ ਕਿਉਂ ਚੁਣੀ
 5. **Be specific (ਵਿਸ਼ੇਸ਼ ਹੋ ਜਾਓ)** — ਜੇ ਤੁਹਾਨੂੰ ਕੋਈ ਖਾਸ ਤੱਤ ਪਸੰਦ ਹੈ, ਤਾਂ ਉਸ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰੋ
 
-## Design Direction Output (ਡਿਜ਼ਾਈਨ ਦਿਸ਼ਾ ਦਾ ਨਤੀਜਾ)
+## Design Direction Output (ਡਿਜ਼ਾਈਨ ਦਿਸ਼ਾ ਦਾ ਨਤੀਜਾ) {#design-direction-output}
 
 Discovery Interview ਤੋਂ ਬਾਅਦ, Theme Builder ਇਹ ਜਨਰੇਟ ਕਰਦਾ ਹੈ:
 
@@ -106,7 +106,7 @@ Discovery Interview ਤੋਂ ਬਾਅਦ, Theme Builder ਇਹ ਜਨਰੇਟ
 - **Visual elements (ਵਿਜ਼ੂਅਲ ਤੱਤ)** — ਆਈਕਨ, ਪੈਟਰਨ, ਅਤੇ ਸਜਾਵਟੀ ਤੱਤ
 - **Mood board (ਮੂਡ ਬੋਰਡ)** — ਡਿਜ਼ਾਈਨ ਦੀ ਦਿਸ਼ਾ ਦਾ ਵਿਜ਼ੂਅਲ ਪ੍ਰਤੀਨਿਧਤਾ
 
-## Next Steps (ਅਗਲੇ ਕਦਮ)
+## Next Steps (ਅਗਲੇ ਕਦਮ) {#next-steps}
 
 Discovery Interview ਪੂਰਾ ਕਰਨ ਤੋਂ ਬਾਅਦ:
 
@@ -115,7 +115,7 @@ Discovery Interview ਪੂਰਾ ਕਰਨ ਤੋਂ ਬਾਅਦ:
 3. [Design Direction](./design-direction.md) ਸਟੈਪ 'ਤੇ ਵਧੋ
 4. Theme Builder ਤੁਹਾਡਾ ਕਸਟਮ Theme ਬਣਾ ਦੇਵੇਗਾ
 
-## Related Documentation (ਸੰਬੰਧਿਤ ਦਸਤਾਵੇਜ਼ੀਕਰਨ)
+## Related Documentation (ਸੰਬੰਧਿਤ ਦਸਤਾਵੇਜ਼ੀਕਰਨ) {#related-documentation}
 
 - [Design Direction](./design-direction.md) — ਆਪਣੇ ਡਿਜ਼ਾਈਨ ਦੀ ਸਮੀਖਿਆ ਕਰੋ ਅਤੇ ਸੁਧਾਰ ਕਰੋ
 - [Hospitality Menus](./hospitality-menus.md) — ਸਟ੍ਰਕਚਰਡ ਮੀਨੂ ਪੇਜ ਬਣਾਓ

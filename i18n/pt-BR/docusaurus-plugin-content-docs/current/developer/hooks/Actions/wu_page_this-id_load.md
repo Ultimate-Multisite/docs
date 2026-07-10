@@ -4,11 +4,11 @@ title: 'Ação - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# Action: wu_page_${this->id}_load
+# Action: wu_page_${this->id}_load {#action-wupagethis-idload}
 
 Permitir que desenvolvedores de plugins adicionem hooks adicionais às nossas páginas.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Permitir que desenvolvedores de plugins adicionem hooks adicionais às nossas p�
 | $page_hook | `string` | O hook da página desta página. |
 | $admin_page | `self` | A instância da página. |
 
-### Since
+### Since {#since}
 
 - 1.8.2
 - 2.0.4: Adicionado terceiro parâmetro: a instância da página.
-### Source
+### Source {#source}
 
 Definido em [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) na linha 332

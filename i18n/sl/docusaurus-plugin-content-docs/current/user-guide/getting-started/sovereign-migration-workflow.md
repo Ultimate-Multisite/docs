@@ -3,11 +3,11 @@ title: Potok migracije Sovereigna
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migracijski Postopek
+# Sovereign Migracijski Postopek {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 dodaje vratar za verifikacijo migracije pri premisu standardnega subsite v infrastrukturo sovrenskega najemnika (sovereign tenant).
 
-## Pred začetku
+## Pred začetku {#before-you-start}
 
 Preverite da imate:
 
@@ -17,7 +17,7 @@ Preverite da imate:
 - Povezavo baze podatkovnega hosta, ki se zgaja z ciljno okoljem.
 - Dostop do WP-CLI komand za omrežje.
 
-## Priporočljiv postopek
+## Priporočljiv postopek {#recommended-workflow}
 
 1. Przypremi ciljno bazo podatkov in sistemni root datoteke najemnika.
 2. Registrirajte ali posodobite nastavitve izolacije najemnikov (tenant isolation settings).
@@ -28,7 +28,7 @@ Preverite da imate:
 7. Obiščite najemnika z SSO-jem.
 8. Preprečite spremembo DNS ali rute le po uspešni preveritvi.
 
-## Vratari za verifikacijo
+## Vratari za verifikacijo {#verification-gates}
 
 Postopek verifikacije preverja migacijo iz več uglov:
 
@@ -40,6 +40,6 @@ Postopek verifikacije preverja migacijo iz več uglov:
 
 Preverjajte neuspešne verifikacije kot blokirajo prehod v produkcijo. Popravite omenjeno težavo z bazno datoteko, uporabnikom, vrsto ali rutiranjem, nato pa ponovno predvedite verifikacijo, preden najemnika razložite strankam.
 
-## Prvi prodajni obisk
+## Prvi prodajni obisk {#first-production-visit}
 
 Po uspešni preveritvi uporabite **Visit (SSO)** z zaslona za upravljanje spletne strani za prvi admin obisk. To potrjuje rutiranje najemnika, obravnavo SSO tokenov, origin pinning in omrežitev uporabnikov na strani najemnika v eni kontrolirani koraku.

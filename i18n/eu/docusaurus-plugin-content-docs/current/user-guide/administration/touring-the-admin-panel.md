@@ -3,11 +3,11 @@ title: Administrazio panelaren ikusiak
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Administrazioa eta Ekinak
+# Administrazioa eta Ekinak {#touring-the-admin-panel}
 
 Ultimate Multisite-ak gurean lehen eta erantzutzeko modua izango da, baina baita oso potentziala duen herramienta bat dela, irudi egindako bidez guia edo "tour" bat emateko laguntzen du. Administrazio zehalduetan jartzeko aukera hartu dezagun.
 
-## Dashboard (Ekinak)
+## Dashboard (Ekinak) {#dashboard}
 
 Ultimate Multisite-aren **Dashboard**-ek erreportazio eta analitika batzuk ikusten du, zehatz dira merkatuen datuak, webguneen jarduerak, taldearen handia, bisitatzaileko koerteak eta geografiko datuak.
 
@@ -25,61 +25,61 @@ Honek da network dashboard-aren guztiz ikuspen bat ere:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms (Formulariak)
+## Checkout Forms (Formulariak) {#checkout-forms}
 
 **Checkout Forms**-ek lehen erregistro zehalduetan oso modu adierazpen bat ematen du, hau da, sizkiet egindako formulariak dezake ezartzeko. Lehen daude, irudi edo scriptak gehien dituzteko aukera hartu, eta bisitatzailearen landetzerri edo jarduera duen lekuaren arabera zehalduak murrizteko (restriktuar) konditionak emateko dugu.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Products (Produktek)
+## Products (Produktek) {#products}
 
 **Products** zehalduan da, network-eko planak, pakietak eta serbisuak leitu dituzte. Produkzioaren mailak, fakturazioa egindako jarduerak eta limitazioak edo quota-ekoa produkzioaren nivelan definatu duzu.
 
 ![Products list](/img/admin/products-list.png)
 
-## Memberships (Taldeak)
+## Memberships (Taldeak) {#memberships}
 
 **Memberships** zehalduan da, network-eko guztia abonamenduak ikusten duzu. Abonamenduaren detaliak, planak, produktek, fakturazioa egindako mailak eta jarduerak, mugimenduaren historia eta ordea (timestamps) iruditu eta editatu dituzte.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Payments (Pagmentak)
+## Payments (Pagmentak) {#payments}
 
 Ez dago **Payments** lapua, zehatza txerturak eta produktu eta sumen arteko informazioa barne duten transaksio historiak ikusteko irudi bat da oso-multisite network guztia arloetan.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Customers
+## Customers {#customers}
 
 **Customers** lapua zehatza txerturak eta produktu eta sumen arteko informazioa barne duten transaksio historiak ikusteko irudi bat da oso-multisite network guztia arloetan.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sites
+## Sites {#sites}
 
 **Sites** lapua zehatza txerturak eta produktu eta sumen arteko informazioa barne duten transaksio historiak ikusteko irudi bat da oso-multisite network guztia arloetan. Site templates, customer-owned sites, domainak erabilizik, limitazioak eta quota hauek, pluginak eta themes hauek, eta site thumbnails hauek ere ezberdinetan ematen dira.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domains
+## Domains {#domains}
 
 **Domains** lapua subsites-ek erabilizik erabiliko custom domains-ek eskaintzen da. Super admin gisa, custom domainak manuel gehiago beste batzuk ezartzeko edo mapatzea eta DNS records eta logs ikusteko irudi hauek ere ematen dira.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Discount Codes
+## Discount Codes {#discount-codes}
 
 **Discount Codes** da kupon kodeak sortzeko herramienta, zehatza txerturak eta produktu eta sumen arteko informazioa barne duten transaksio historiak ikusteko irudi bat da oso-multisite network guztia arloetan. Zehatza txertura handia ematen ditzakezu eta erabiltzaile edo grupazio zehatzak erabilizik.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Broadcasts {#broadcasts}
 
 **Broadcasts** da subsite erabiltzaile berekin jaurdunak edo mailaesan testuak aurkezteko eta bidali dezakezu tool bat. Plan edo produktu zehatzak erabilizik, erabiltzaile grupazio zehatzak targetatzea posible da.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Settings
+## Settings {#settings}
 
 **Settings** lapua da Ultimate Multisite-a konfiguratzeko lekuak — registroak, pagos, API eta webhooks, domain mapatzea eta beste integrazioak ere.
 
@@ -109,13 +109,13 @@ Eta siti-ekoa kontuak hartzeko pagina:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Events (Gertuenak)
+## Events (Gertuenak) {#events}
 
 **Events** pagua network-ekoa nola dagoen guztia sortzen duen gertu eta logiak ikusten du. Plan-ekoa haserpenak, kontuak lehiak eta beste edozein mugiketa ikusten du — multisite-n iruditzen dena da.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhooks (Webhooks)
+## Webhooks (Webhooks) {#webhooks}
 
 **Webhooks** funtsoa datu bat aplikazio batean aurkezteko ematen du. Ultimate Multisite-n data Zapier gabeak sortzeko, platformak garrantzitsuak dira.
 

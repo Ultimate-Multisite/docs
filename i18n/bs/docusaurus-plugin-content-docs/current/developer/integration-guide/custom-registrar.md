@@ -3,13 +3,13 @@ title: Izgradnja prilagođene integracije registra
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Izgradnja prilagoovane integracije registra
+# Izgradnja prilagoovane integracije registra {#building-a-custom-registrar-integration}
 
 Addon za prodaju domena koristi obrazac **Integrations Registry** (Registrar integracija). Svaki registrar je PHP klasa koja implementira `Domain_Selling_Capability` i registruje se putem akcionog hooka `wu_domain_seller_register_capabilities`.
 
 Ovaj vodič pokazuje kako da uključite prilagođenog registra.
 
-## Interfejs
+## Interfejs {#the-interface}
 
 Vaša klasa mora implementirati `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` i proširiti (extend) `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Opcionalne metode
+### Opcionalne metode {#optional-methods}
 
 Implementirajte ih kako biste otključali dodatne funkcije. Addon detektuje podršku putem `method_exists()`:
 
@@ -81,7 +81,7 @@ Implementirajte ih kako biste otključali dodatne funkcije. Addon detektuje podr
 | `get_epp_code(string $domain_name): array` | Transfer domena (izlazni) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Transfer domena (ulazni) |
 
-### Konvencija povratne vrijednosti
+### Konvencija povratne vrijednosti {#return-value-convention}
 
 Sve metode vraćaju niz koji ima barem ključ `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Lako čitljiv greška'];
 
 ---
 
-## Registracija vaše sposobnosti (Capability)
+## Registracija vaše sposobnosti (Capability) {#registering-your-capability}
 
 Registrujte svoju klasu koristeći akciju `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Prvi argument za `add_capability()` je **provider ID** — mala slova (slug) koj
 
 ---
 
-## Dodavanje polja vjerodajnica u wizard
+## Dodavanje polja vjerodajnica u wizard {#adding-credential-fields-to-the-wizard}
 
 Da biste omogućili administratorima unos vjerodajnica putem setup wizard-a, registrujte svoju integraciju:
 
@@ -137,7 +137,7 @@ Vjerodajnice se pohranjuju kao network opcije koristeći ID polja kao ključeve.
 
 ---
 
-## Hookovi za akcije nakon registracije
+## Hookovi za akcije nakon registracije {#hooks-for-post-registration-actions}
 
 Koristite ove akcije za pokretanje webhookova, provizora (provisioning), obavještenja ili ažuriranja CRM-a:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logovanje
+## Logovanje {#logging}
 
 Pišite u svoj provider-specifični kanal logova koristeći `wu_log_add()`:
 

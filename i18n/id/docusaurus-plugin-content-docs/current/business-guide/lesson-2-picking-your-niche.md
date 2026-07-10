@@ -3,19 +3,19 @@ title: 'Pelajaran 2: Memilih Ceruk Pasar Anda'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Pelajaran 2: Memilih Niche Anda
+# Pelajaran 2: Memilih Niche Anda {#lesson-2-picking-your-niche}
 
 Di Pelajaran 1, kita sudah membahas mengapa niche lebih unggul daripada yang umum. Sekarang, giliran Anda memilih niche Anda. Pelajaran ini akan memberikan kerangka kerja untuk menemukan dan memvalidasi niche sebelum Anda menghabiskan waktu untuk membangunnya.
 
-## Di Mana Kita Berhenti
+## Di Mana Kita Berhenti {#where-we-left-off}
 
 Kita telah mendefinisikan konsep FitSite: platform situs web untuk studio kebugaran. Tapi, bagaimana kita sampai pada studio kebugaran secara spesifik? Pelajaran ini akan memandu Anda melalui proses tersebut sehingga Anda dapat menerapkannya untuk menemukan niche Anda sendiri.
 
-## Tiga Kriteria
+## Tiga Kriteria {#the-three-criteria}
 
 Niche yang baik untuk platform situs web harus memenuhi tiga kondisi:
 
-### 1. Mereka Membutuhkan Situs Web tetapi Kesulitan Mendapatkan yang Bagus
+### 1. Mereka Membutuhkan Situs Web tetapi Kesulitan Mendapatkan yang Bagus {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Cari industri di mana:
 
@@ -26,7 +26,7 @@ Cari industri di mana:
 
 **Studio kebugaran cocok**: anggota mengharapkan untuk menemukan jadwal kelas, harga, dan pemesanan secara online. Sebagian besar situs web studio sudah ketinggalan zaman atau dibangun menggunakan template generik yang tidak sesuai dengan tujuan.
 
-### 2. Bisnis Tersebut Mampu Membayar Langganan Bulanan
+### 2. Bisnis Tersebut Mampu Membayar Langganan Bulanan {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Pelanggan target Anda harus:
 
@@ -36,7 +36,7 @@ Pelanggan target Anda harus:
 
 **Studio kebugaran cocok**: mereka sudah membayar untuk perangkat lunak pemesanan, pemrosesan pembayaran, dan alat pemasaran. Langganan situs web adalah tambahan yang alami.
 
-### 3. Mereka Berinteraksi Satu Sama Lain
+### 3. Mereka Berinteraksi Satu Sama Lain {#3-they-talk-to-each-other}
 
 Niche terbaik memiliki:
 
@@ -46,9 +46,9 @@ Niche terbaik memiliki:
 
 **Studio kebugaran cocok**: pemilik studio menghadiri acara industri kebugaran, berpartisipasi dalam komunitas online, dan sering berbagi alat serta layanan dengan rekan sejawat.
 
-## Cara Menemukan Kandidat Niche
+## Cara Menemukan Kandidat Niche {#how-to-find-niche-candidates}
 
-### Mulai dari Apa yang Anda Ketahui
+### Mulai dari Apa yang Anda Ketahui {#start-with-what-you-know}
 
 Pengalaman Anda yang sudah ada adalah keuntungan. Pertimbangkan:
 
@@ -56,7 +56,7 @@ Pengalaman Anda yang sudah ada adalah keuntungan. Pertimbangkan:
 - Hobi atau minat di mana Anda memahami komunitasnya
 - Jaringan profesional yang sudah Anda ikuti
 
-### Cari Sinyal Masalah (Pain Signals)
+### Cari Sinyal Masalah (Pain Signals) {#look-for-pain-signals}
 
 Cari bukti bahwa bisnis di niche tersebut kesulitan dengan situs web:
 
@@ -65,7 +65,7 @@ Cari bukti bahwa bisnis di niche tersebut kesulitan dengan situs web:
 - Lihat situs web aktual di niche tersebut -- apakah sebagian besar dari mereka buruk?
 - Periksa apakah pesaing ada dan seberapa baik mereka melayani pasar
 
-### Evaluasi Ekonomi
+### Evaluasi Ekonomi {#evaluate-the-economics}
 
 Untuk setiap niche kandidat, perkirakan:
 
@@ -73,11 +73,11 @@ Untuk setiap niche kandidat, perkirakan:
 - **Kemauan membayar**: Berapa yang mereka habiskan saat ini untuk alat serupa?
 - **Potensi nilai seumur hidup (Lifetime value)**: Apakah bisnis ini stabil, atau mereka cepat berganti layanan?
 
-## Memvalidasi Niche Anda
+## Memvalidasi Niche Anda {#validating-your-niche}
 
 Sebelum membangun apa pun, validasi permintaannya:
 
-### Berbicara dengan Calon Pelanggan
+### Berbicara dengan Calon Pelanggan {#talk-to-potential-customers}
 
 Hubungi 10-15 pemilik bisnis di niche target Anda. Tanyakan:
 
@@ -88,17 +88,17 @@ Hubungi 10-15 pemilik bisnis di niche target Anda. Tanyakan:
 
 Anda belum menjual. Anda sedang mendengarkan.
 
-### Memeriksa Lanskap Pesaing
+### Memeriksa Lanskap Pesaing {#check-competitor-landscape}
 
 - **Tidak ada pesaing**: Bisa berarti tidak ada permintaan, atau bisa berarti peluang yang belum dimanfaatkan. Percakapan dengan pelanggan akan memberi tahu Anda mana.
 - **Beberapa pesaing**: Tanda bagus. Memvalidasi permintaan. Pelajari apa yang mereka lakukan dengan baik dan di mana mereka kurang.
 - **Banyak pesaing**: Lebih sulit untuk masuk, tetapi masih mungkin jika Anda dapat membedakan diri dengan jelas.
 
-### Membuat Halaman Arahan (Landing Page)
+### Membuat Halaman Arahan (Landing Page) {#build-a-landing-page}
 
 Sebelum membangun platform, buat halaman arahan sederhana yang menjelaskan solusi niche Anda dan kumpulkan pendaftaran email. Jalankan sedikit iklan bertarget untuk menguji minat. Jika orang mendaftar, Anda memiliki validasi.
 
-## Menerapkan Ini pada FitSite
+## Menerapkan Ini pada FitSite {#applying-this-to-fitsite}
 
 Begini skor FitSite berdasarkan kriteria:
 
@@ -112,7 +112,7 @@ Begini skor FitSite berdasarkan kriteria:
 
 Validasi mengonfirmasi peluangnya. Sekarang kita membangun.
 
-## Ide Niche untuk Dipertimbangkan
+## Ide Niche untuk Dipertimbangkan {#niche-ideas-to-consider}
 
 Jika kebugaran bukan pasar Anda, berikut adalah niche lain yang memenuhi kriteria:
 
@@ -127,7 +127,7 @@ Jika kebugaran bukan pasar Anda, berikut adalah niche lain yang memenuhi kriteri
 
 Masing-masing dari ini memiliki karakteristik yang sama: kebutuhan situs web yang jelas, kemampuan untuk membayar, dan dari mulut ke mulut komunitas.
 
-## Apa yang Kita Bangun di Pelajaran Ini
+## Apa yang Kita Bangun di Pelajaran Ini {#what-we-built-this-lesson}
 
 - **Kerangka kerja pemilihan niche**: tiga kriteria untuk mengevaluasi niche apa pun
 - **Metode validasi**: percakapan pelanggan, analisis pesaing, pengujian halaman arahan

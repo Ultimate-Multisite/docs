@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite 外掛
+# Ultimate Multisite 外掛 {#ultimate-multisite-addons}
 
 外掛可以為 Ultimate Multisite 增加額外的功能和整合。大多數外掛都是付費的，您可以在 [ultimatemultisite.com](https://ultimatemultisite.com) 購買。
 
-## 安裝
+## 安裝 {#installation}
 
 外掛可以透過兩種方式安裝：
 
 1. **透過外掛頁面** -- 在 WordPress 管理介面中，導航到您網站的外掛管理頁面。
 2. **手動下載** -- 從 [您的帳戶](https://ultimatemultisite.com/my-account/downloads/) 下載，然後透過 Plugins > Add New 上傳。
 
-## 可用外掛
+## 可用外掛 {#available-addons}
 
 | Addon | Description |
 |-------|-------------|

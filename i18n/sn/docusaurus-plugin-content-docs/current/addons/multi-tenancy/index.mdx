@@ -1,0 +1,150 @@
+---
+title: Multi-Tenancy
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy {#multi-tenancy}
+
+Govera masaiti madiki kumaseva nemadhatabhesi kuitira mashandiro akanaka nekuchengeteka
+
+## Zvakakosha mukuburitswa kweVersion 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 inowedzera hwaro hwemuroja akazvimirira hwemafambisirwo ekupatsanura munzvimbo yekugadzira:
+
+- Kupinda otomatiki kwemuroja kusina state nekushanya kweSSO kupfupi-nguva uye kwakadzivirirwa kubva pakudzokororwa.
+- Kupatsanurwa kwedhatabhesi nehurongwa hwemafaira pasaiti diki yega yega yevanoja vakazvimirira.
+- Kugona kweHostinger multi-tenancy kwekugovera vanochengeta nzvimbo kunoziva host.
+- Mageti ekusimbisa kutamiswa kwakazvimirira ekuongorora data rekare uye kugadzirisa async push.
+- Kusungwa kwehost yedhatabhesi pamuchina mumwe kunogadzirisika kweBedrock, FrankenPHP, uye kuiswa kwelocalhost.
+- Kuvandudzwa kwekutanga kwemuroja, munyori wedhatabhesi, kutanga schema, uye kugovera mushandisi.
+- Kubvisa kwakachengeteka kwemuroja akazvimirira kunochenesa zvitupa zvemuroja.
+
+Ona magwaro emushandisi e[maitiro ekutamisa kwakazvimirira](/user-guide/getting-started/sovereign-migration-workflow), [kupatsanurwa kwe multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), uye [mashandiro emuroja akazvimirira](/user-guide/administration/sovereign-tenant-operations).
+
+## Zvinodiwa {#requirements}
+
+- WordPress 5.3 kana yepamusoro
+- PHP 7.4 kana yepamusoro
+- Multisite Ultimate plugin (yakabatidzwa)
+
+## Kuiswa {#installation}
+
+1. Isa mafaira eaddon mudhairekitori rako re`/wp-content/plugins/`
+2. Batidza plugin kuburikidza nemenyu ye'Plugins' muWordPress
+3. Gadzirisa marongero eaddon munetwork admin
+
+## Kuvandudza {#development}
+
+### Kugadzirira {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Chimiro chePurojekiti {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Makirasi ePHP uye zvinosanganisirwa
+│   ├── class-multisite-ultimate-updater.php  # Mubati wekuvandudza
+│   └── class-multi_tenancy-main.php             # Basa guru
+├── tests/                        # Miedzo yeunit
+│   ├── bootstrap.php            # Kutanga bvunzo
+│   ├── class-*-base.php         # Kirasi yehwaro hwebvunzo
+│   └── class-*-test.php         # Nyaya dzebvunzo
+├── views/                       # Mafaira etemplate
+├── assets/                      # Zvinhu zvisingachinji
+│   ├── css/                     # Masitayera
+│   ├── js/                      # Mafaira eJavaScript
+│   └── images/                  # Mifananidzo
+├── lang/                        # Mafaira emitauro
+├── composer.json                # Zvinotsamira paPHP
+├── package.json                 # Zvinotsamira paNode.js
+├── phpunit.xml.dist             # Kugadziriswa kwePHPUnit
+├── .phpcs.xml.dist              # Kugadziriswa kwemitemo yekodhi
+└── rector.php                   # Mitemo yekuvandudza kodhi kuti ive yemazuva ano
+```
+
+### Kuedza {#testing}
+
+Addon inosanganisira hurongwa hwakazara hwekuedza:
+
+- **Miedzo yeUnit**: Miedzo yakavakirwa paPHPUnit ine WordPress test suite
+- **Kirasi yeHwaro hweBvunzo**: Inopa nzira dzinobatsira dzemamiriro ebvunzo akajairika
+- **Kufukidzwa kweBvunzo**: Yakagadzirirwa kutevera kufukidzwa kwekodhi
+- **Kuedza kweMultisite**: Miedzo inomhanya munzvimbo ye multisite
+
+### Mitemo yeKodhi {#code-standards}
+
+- **WordPress Coding Standards**: Inosimbiswa kuburikidza nePHPCS
+- **Kuenderana nePHP 7.4+**: Zvimiro zvemazuva ano zvePHP zvinotsigirwa
+- **Ongororo Yakatsiga**: Kubatanidzwa kwePHPStan kwekuongorora mhando
+- **Kuvandudzwa kweKodhi kuMazuva Ano**: Mitemo yeRector yekuvandudza PHP
+
+### Hurongwa hweKuvaka {#build-system}
+
+- **Kugadzirisa Zvinhu**: Kuderedzwa kwemafaira eCSS/JS
+- **Kushandura**: Kugadzirwa kwefaira rePOT
+- **Kurongedza**: Kugadzirwa kwearchive yekugovera
+- **Mamiriro eKuvandudza**: Zvinhu zvisina kuderedzwa zvekutsvaga zvikanganiso
+
+## Kugadziriswa {#configuration}
+
+Addon inotsigira sarudzo dzakasiyana dzekugadzirisa dzinowanikwa kuburikidza neinterface yenetwork admin.
+
+### Kugadziriswa kwemuroja akazvimirira {#sovereign-tenant-configuration}
+
+Kune vanochengeta nzvimbo vakazvimirira, gadzirisa dhatabhesi remuroja, mudzi wehurongwa hwemafaira, kusungwa kwehost yedhatabhesi, uye kugona kwehost usati waendesa traffic kumuroja. Mhanyisa kusimbisa kutamiswa mushure mechinja chese chinobata zvitupa zvedhatabhesi, kusungwa kwehost, routing, kana kugoverwa kwemushandisi.
+
+Shandisa `localhost` chete kana runtime yemuroja nezvibvumirano zvedhatabhesi zvichitarisira local socket kana kuwana pamuchina mumwe. Shandisa `127.0.0.1` kana zita rehost rebasa kana iri iyo grant host yakagadziriswa nemupi wako.
+
+### Kugona kweHostinger {#hostinger-capability}
+
+Kugona kweHostinger multi-tenancy kunoshanda ne shared Hostinger integration token. Simbisa kuti domain iripo mu hPanel, DNS inonongedzera kuHostinger account, uye marongero edhatabhesi remuroja anoenderana ne hPanel usati wasimbisa.
+
+## Hooks neFilters {#hooks-and-filters}
+
+### Actions {#actions}
+
+- `ultimate-multisite-addon-template_init` - Inotangwa mushure mekutanga kweaddon
+- `ultimate-multisite-addon-template_loaded` - Inotangwa mushure mekunge mafaira ese eaddon atakurwa
+
+### Filters {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Chinja marongero eaddon
+- `ultimate-multisite-addon-template_enabled` - Darika mamiriro ekubatidza/kudzima addon
+
+## Rezinesi {#license}
+
+Addon iyi ine rezinesi pasi peGPL v3 kana yapfuura.
+
+## Rutsigiro {#support}
+
+Kuti uwane rutsigiro nemagwaro, shanyira [MultisiteUltimate.com](https://multisiteultimate.com)
+## Chinyorwa cheShanduko {#changelog}
+
+- Version 1.2.0 (2026-06-03): wedzera kupinda otomatiki kwemuroja kusina state, kugona kweHostinger multi-tenancy, kupatsanurwa kwedhatabhesi nehurongwa hwemafaira pasaiti diki yega yega, mageti ekusimbisa kutamiswa kwakazvimirira, kuvandudzwa kwekutanga kwemuroja/munyori wedhatabhesi, kusungwa kwehost yeMySQL kunogadzirisika, uye kubvisa kwakachengeteka kwemuroja akazvimirira.
+
+- Version 1.0.1 (2025-09-28): tumidzazve prefix kuti ive ultimate-multisite; gadziridza text domain; kusimudza version.
+
+
+- Version  (2025-09-28): tumidzazve prefix kuti ive ultimate-multisite; gadziridza text domain; kusimudza version.

@@ -3,7 +3,7 @@ title: איך לבטל מנוי
 sidebar_position: 17
 _i18n_hash: e2a7eaf3c713ea3ce38f797e3c876948
 ---
-# כיצד ניתן לבטל את המנוי שלי?
+# כיצד ניתן לבטל את המנוי שלי? {#how-can-i-cancel-my-subscription}
 
 אם יש לכם רישיון Ultimate Multisite, תוכלו לבטל את החידוש שלו בכל עת. פשוט עקבו אחר השלבים הבאים:
 

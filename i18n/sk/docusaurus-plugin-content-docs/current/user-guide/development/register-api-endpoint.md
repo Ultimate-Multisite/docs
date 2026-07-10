@@ -3,7 +3,7 @@ title: Registrovať API bod
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API koniec registračného bodov Ultimate Multisite
+# API koniec registračného bodov Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 V tomto tutoriáli si naučíte, ako použiť API koniec `/register` z Ultimate Multisite na vytvorenie celého procesu onboarding pre nového zákazníka v vašej sieti a ako to urobiť s Zapierom.
 
@@ -29,11 +29,11 @@ Vyberte **Enable API** a získajte svoje API poverenia.
 
 Teraz si pozrieme tento koniec a potom vytvoríme akciu registrácii v Zapierom.
 
-## Parametre těla konca (Endpoint body parameters)
+## Parametre těla konca (Endpoint body parameters) {#endpoint-body-parameters}
 
 Zohľadnite si minimálnu informáciu, ktorú musíte poslať do konca. Na konci tohto článku nájdete kompletný volanie.
 
-### Zákazník (Customer)
+### Zákazník (Customer) {#customer}
 
 Toto je informácia, ktorá je potrebná pre proces vytvorenia Používateľa a Zákazníka v Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Je je môžeme poslať ID zákazníka vytvorený v vašej sieti. Ak sa neposiela
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Členské práva (Membership)**
+### **Členské práva (Membership)** {#membership}
 
 Jediná informácia, ktorú potrebujeme v tomto objekte, je stav členských práv.
 
 "membership" { "status" : "string", // jeden z možností: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Produkty**
+### **Produkty** {#products}
 
 Produkty sa dostávajú v formáte súboru s jedným alebo viac ID produktov z vašej siete. Upozornenie, tento endpoint neVytvára produkty. Pre lepšie pochopenie endpointu na vytváranie produktov si pozrite do dokumentácie Ultimate Multisite.
 
 **"products" : [1,2],**
 
-### Platba
+### Platba {#payment}
 
 Ako je to s členskými právami, potrebujeme len stav.
 
 **"payment" { "status" : "string", // jeden z možností: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Sítka (Site)
+### Sítka (Site) {#site}
 
 A aby sme dokončili telo, potrebujeme URL a názov siete v objekte Site.
 
@@ -69,13 +69,13 @@ A aby sme dokončili telo, potrebujeme URL a názov siete v objekte Site.
 
 Vrátená späť akcia registráciu bude súbor s informáciami o novozrodených členských právach.
 
-## Vytvorenie akcie v Zapier
+## Vytvorenie akcie v Zapier {#creating-an-action-in-zapier}
 
 S zavedením tohto nového a robustnejšieho endpointu na vytváranie účtov, budete mať tiež nový akčný prvok (action) v Zapier.
 
 Poznáte, ako používať a užívať všetko, čo nová verzia Zapier ponúka? Viac informácií tu. (link?)
 
-### Vytvorenie akcie
+### Vytvorenie akcie {#creating-an-action}
 
 Aby lepšie ukázali, ako použiť registration endpoint s Zapierom, vytvoríme integráciu s Google Forms. Každýkrát sa tento formulár vyplní a informácie uložia do answer sheet (tabuľky odpovedí) formulára, bude vytvorená nová členstvo v sieti Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Keď je informácie nastavené, prejdite k finálnemu testu. Na poslednej obrazo
 
 Testujte svoj nový Zap a mal by sa úspešne dokončiť. Ak dôjde k nejakému chybnému stavu, prejdite cez všetky pole a zistite, či sú odoslané správne. Keďže je veľa informácií, niektoré veci môžu zostať nepozhatiané.
 
-### Kompletné parametre endpointu
+### Kompletné parametre endpointu {#complete-endpoint-parameters}
 
 Tu je kompletný výzva a všetky možnosti polí, ktoré sa môžu odo slávať.
 

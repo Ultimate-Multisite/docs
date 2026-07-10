@@ -3,11 +3,11 @@ title: 多租户隔离
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# 多租户隔离
+# 多租户隔离 {#multi-tenancy-isolation}
 
 Ultimate Multisite 1.2.0 支持为主站点（subsite）提供数据库和文件系统的独立隔离，以实现主权租户的隔离。这可以在保持网络级别配置、计费和管理的便利性的同时，确保租户数据相互独立。
 
-## 隔离策略
+## 隔离策略 {#isolation-strategy}
 
 对于需要更强数据分离、专用文件系统存储或独立主机边界的客户，请使用主权隔离（sovereign isolation）。
 
@@ -18,7 +18,7 @@ Ultimate Multisite 1.2.0 支持为主站点（subsite）提供数据库和文件
 - 一条租户注册表条目，用于将站点映射到其数据库、根路径、主机名和隔离模型。
 - 在该租户被视为上线之前完成迁移验证的结果。
 
-## 数据库主机绑定
+## 数据库主机绑定 {#database-host-binding}
 
 版本 1.2.0 对主机的默认同机绑定行为进行了更改，以支持主权安装。例如 `localhost` 等同机值会被规范化，这样 Bedrock、FrankenPHP 和容器化的 WordPress 安装就可以与 MySQL 实际看到的宿主机字符串进行权限授予和验证。
 
@@ -31,11 +31,11 @@ Ultimate Multisite 1.2.0 支持为主站点（subsite）提供数据库和文件
 
 如果验证报告显示失败，请将租户数据库的用户权限与配置的宿主绑定进行比较。对于被授予 `user@localhost` 的用户，这与 `user@127.0.0.1` 或 `user@%` 是不同的。
 
-## 文件系统根目录 (Filesystem root)
+## 文件系统根目录 (Filesystem root) {#filesystem-root}
 
 租户的根目录在重启和部署后应该保持稳定。请避免使用临时的挂载路径。对于 Bedrock 风格的安装，请确认租户根目录指向租户引导程序（bootstrap）期望的 WordPress 网站根目录，而不仅仅是项目根目录。
 
-## 供应顺序 (Provisioning order)
+## 供应顺序 (Provisioning order) {#provisioning-order}
 
 对于新的主权租户，请按照以下顺序执行：
 
@@ -49,7 +49,7 @@ Ultimate Multisite 1.2.0 支持为主站点（subsite）提供数据库和文件
 
 此订单可以防止在数据库写入器、用户和文件系统准备就绪之前，部分隔离的租户接收到流量。
 
-## 主权客户管理流程
+## 主权客户管理流程 {#sovereign-customer-management-flows}
 
 当启用主权模式时，Ultimate Multisite v2.13.0 会将客户管理操作保留在主站点上。租户仍然可以作为一个隔离的 WordPress 安装运行，但那些依赖网络计费、会员资格或共享账户数据的面向客户的操作，应该将客户重定向到主站点，而不是尝试在租户运行时完成该操作。
 

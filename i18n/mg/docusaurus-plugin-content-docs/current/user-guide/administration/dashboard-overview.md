@@ -3,11 +3,11 @@ title: Fahafanteny ny fizarana ankapobeny
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Fampitran'ny Dashboard
+# Fampitran'ny Dashboard {#dashboard-overview}
 
 Ny **Ultimate Multisite** dia manana **Dashboard** manokana eo ambanin'ny menio Ultimate Multisite ary manampy widgets koa amin'ny Network Dashboard. Io lahatsoratra io dia mitantara izay ho hitanao ao amin'ireo toerana roa ireo.
 
-## Ny Network Dashboard
+## Ny Network Dashboard {#the-network-dashboard}
 
 Ny Ultimate Multisite dia mampiditra widgets ilain-tsoa ao anatin'ny dashboard eo amin'ny sehatry ny tambajotra (network) izay azo jerena amin'ny alalan'ny **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Ity misy inona no omen'ity widget tsirairay ity:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ny Dashboard Ultimate Multisite
+## Ny Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Na dia manome fampahalalana feno momba ny tambajotra aza ny network dashboard, ny dashboard Ultimate Multisite (eo amin'ny sehatry ny haavo ambony indrindra amin'ny menio Ultimate Multisite) kosa dia manome vaovao momba ny serivisy.
 

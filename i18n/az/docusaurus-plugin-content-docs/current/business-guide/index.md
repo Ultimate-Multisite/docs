@@ -3,13 +3,13 @@ title: Niş Saytı Biznesini Qurmaq
 sidebar_position: 1
 _i18n_hash: 0564071681c0c35d6d2e6e4c71798f8e
 ---
-# Ultimate Multisite ilə Niş Veb Saytı Biznesini Qurmaq
+# Ultimate Multisite ilə Niş Veb Saytı Biznesini Qurmaq {#build-a-niche-website-business-with-ultimate-multisite}
 
 Veb sayt satmaq istəyən əksər insanlar Wix, Squarespace və minlərlə freelance mütəxəssislərlə qiymətə görə rəqabət aparırlar. Onlar uduzmurlar. Uğur qazananlar isə müəyyən bir auditoriya seçir, bu auditoriyaya uyğun bir həll yaradır və verdikləri dəyər üçün ödəniş tələb edirlər.
 
 Bu kurs sizə məhz bunu Ultimate Multisite istifadə edərək necə edəcəyinizi öyrədir.
 
-## Nə Quracaqsınız
+## Nə Quracaqsınız {#what-you-will-build}
 
 Bu kurs boyunca siz **FitSite** adlı real, işləyən bir şəbəkə quracaqsınız — bu platforma xüsusi olaraq fitnes studiyaları, şəxsi trainerlər və gimnaziya sahibləri üçün hazırlanmış bir veb sayt platformasıdır.
 
@@ -23,7 +23,7 @@ Son dərsləyə qədər FitSite aşağıdakılarla tam bir niş platforması ola
 
 Addım-addım irəliləyəcəksiniz və sonda həm işləyən bir platforma, həm də seçdiyiniz istənilən niş üçün bu prosesi təkrarlamaq bilikləri əldə edəcəksiniz.
 
-## Niyə Fitnes Studiyaları?
+## Niyə Fitnes Studiyaları? {#why-fitness-studios}
 
 Hər kəsin izləyə biləcəyi konkret bir nümunəyə ehtiyacımız var. Fitnes studiyaları aşağıdakı səbəblərdən işləyir:
 
@@ -34,7 +34,7 @@ Hər kəsin izləyə biləcəyi konkret bir nümunəyə ehtiyacımız var. Fitne
 
 FitSite qurarkən öyrəndiyiniz hər şey, seçdiyiniz istənilən nişə birbaşa tətbiq olunur: restoranlar, əmlak agentləri, hüquq firmaları, kilsələr, ticarət podratçıları və ya istənilən digər sektor.
 
-## Kursun Strukturlaşdırılması
+## Kursun Strukturlaşdırılması {#course-structure}
 
 Hər dərs bir konsepsiyanı təqdim edir, onun niyə vacib olduğunu izah edir və FitSite şəbəkəsində necə tətbiq ediləcəyini göstərir. Hər dərs əvvəlki dərslə əlaqəlidir.
 
@@ -55,7 +55,7 @@ Hər dərs bir konsepsiyanı təqdim edir, onun niyə vacib olduğunu izah edir 
 | [13. Scaling Up](lesson-13-growth) | Growing from first customers to a real business | FitSite growth and automation strategy |
 | [14. What Comes Next](lesson-14-whats-next) | Expanding to adjacent niches and new opportunities | Your roadmap beyond FitSite |
 
-## Tələblər
+## Tələblər {#prerequisites}
 
 - Bir WordPress Multisite quraşdırılması (və ya qurmağa hazır olmaq)
 - Aktiv bir Ultimate Multisite lisenziyası
@@ -63,6 +63,6 @@ Hər dərs bir konsepsiyanı təqdim edir, onun niyə vacib olduğunu izah edir 
 
 Kod yazmaq tələb olunmur. Əgər daha əvvəl Ultimate Multisite istifadə etməmisinizsə, bu normaldır — 3-cü Dərs təmiz bir quraşdırmadan başlayır.
 
-## Hazırsınız?
+## Hazırsınız? {#ready}
 
 [Lesson 1: Why Niche Wins](lesson-1-why-niche) ilə başlayın.

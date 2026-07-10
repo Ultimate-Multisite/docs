@@ -4,11 +4,11 @@ title: Actie - wu_handle_user_meta_fields
 sidebar_label: wu_handle_user_meta_fields
 _i18n_hash: 6baac0d78046fb58a79bc35865d91372
 ---
-# Action: wu_handle_user_meta_fields
+# Action: wu_handle_user_meta_fields {#action-wuhandleusermetafields}
 
 Laat pluginontwikkelaars gebruikersmeta-gegevens op verschillende manieren opslaan als ze dat nodig hebben.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Laat pluginontwikkelaars gebruikersmeta-gegevens op verschillende manieren opsla
 | $customer | `\Customer` | Het Ultimate Multisite-klantobject. |
 | $checkout | `\Checkout` | De checkout-klasse. |
 
-### Since
+### Since {#since}
 
 - 2.0.4
 
-### Source
+### Source {#source}
 
 Gedefinieerd in [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1244) op regel 1244

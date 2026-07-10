@@ -3,11 +3,11 @@ title: Dokumentacja dla deweloperów
 sidebar_position: 1
 _i18n_hash: 93892019464929842d9a6f4fdfdecbe7
 ---
-# Dokumentacja dla deweloperów
+# Dokumentacja dla deweloperów {#developer-documentation}
 
 Ten przewodnik dostarcza deweloperom wszystkiego, czego potrzebują, aby integrować się, rozszerzać lub tworzyć dodatki dla Ultimate Multisite. Ultimate Multisite przekształca sieć WordPress Multisite w platformę Website-as-a-Service (WaaS).
 
-## Co jest dostępne
+## Co jest dostępne {#whats-available}
 
 - **[REST API](./rest-api/overview)** — Pełne operacje CRUD dla wszystkich encji (klienci, witryny, członkostwa, płatności, produkty, domeny) z uwierczeniem kluczem API
 - **[Hooks Reference](./hooks/guide)** — Ponad 200 action hooków i ponad 280 filter hooków dla zdarzeń cyklu życia i niestandardizacji
@@ -15,13 +15,13 @@ Ten przewodnik dostarcza deweloperom wszystkiego, czego potrzebują, aby integro
 - **[Code Examples](./code-examples/)** — Zaawansowane wzorce dla dynamicznego ustalania cen, provisioningu witryn, niestandardowych ograniczeń i przetwarzania wielu bramek płatności
 - **[Addon Development](./addon-development/getting-started)** — Strukturalny framework do budowania pluginów dodatków
 
-## Wymagania
+## Wymagania {#requirements}
 
 - Instalacja WordPress Multisite
 - PHP 7.4 lub nowszy
 - Aktywowany plugin Ultimate Multisite
 
-## Instalacja za pomocą Composer / Bedrock
+## Instalacja za pomocą Composer / Bedrock {#composer--bedrock-installation}
 
 Ultimate Multisite jest dostępne na [Packagist](https://packagist.org/packages/ultimate-multisite/ultimate-multisite) pod nazwą `ultimate-multisite/ultimate-multisite`. Jest to zalecana metoda instalacji dla środowisk WordPress opartych na [Bedrock](https://roots.io/bedrock/) oraz innych środowisk zarządzanych przez Composer.
 
@@ -45,15 +45,15 @@ Lub, jeśli ładowanie pluginu jako must-use plugin za pomocą autoloadera Bedro
 add_filter( 'wp_ultimo_skip_network_active_check', '__return_true' );
 ```
 
-## Szybki start
+## Szybki start {#quick-start}
 
-### Użycie REST API
+### Użycie REST API {#use-the-rest-api}
 
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-### Podłączenie się do zdarzeń (Hooks)
+### Podłączenie się do zdarzeń (Hooks) {#hook-into-events}
 
 ```php
 add_action('wu_customer_post_create', function($customer) {
@@ -61,7 +61,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-### Budowanie dodatku (Addon)
+### Budowanie dodatku (Addon) {#build-an-addon}
 
 ```bash
 # Generowanie scaffolda dodatku z szablonu

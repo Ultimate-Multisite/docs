@@ -3,13 +3,13 @@ title: Kodo kūrimas
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Nuodų kodų kūrimas (v2)
+# Nuodų kodų kūrimas (v2) {#creating-discount-codes-v2}
 
 _**SVARBUOTAS PRANEŠIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
 
 Ultimate Multisite leidžia jums sukurti nuodų kodus, kad pateiktumėte klientams nuolaidas jų prenumeratoms. Ir juos sukriti yra lengvai!
 
-## Nuodų kodų kūrimas ir redagavimas
+## Nuodų kodų kūrimas ir redagavimas {#creating-and-editing-discount-codes}
 
 Kad sukurtum ar redaguotumėtum nuodą kodą, eikite į **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Kuponas dabar yra jūsų sąraše ir nuo to galite spustelėti, kad **redaguoti 
 
 ###
 
-### Naudojant URL parametrus:
+### Naudojant URL parametrus: {#using-url-parameters}
 
 Jei norite pritaikyti savo kainos lentelges arba sukurti graų kupono kodų puslapio savo svetainėje ir norite automatiškai taikyti kuponą kodą prie jūsų kasos formos, galite tai padaryti per URL parametrus.
 

@@ -1,0 +1,120 @@
+---
+title: Шаблон за додаток
+sidebar_position: 1
+_i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
+---
+# Шаблон за додаток {#addon-template}
+
+{{ADDON_DESCRIPTION}}
+
+## Барања {#requirements}
+
+- WordPress 5.3 или понова верзија
+- PHP 7.4 или понова верзија
+- Multisite Ultimate приклучок (активен)
+
+## Инсталација {#installation}
+
+1. Прикачете ги датотеките на додатокот во вашиот `/wp-content/plugins/` директориум
+2. Активирајте го приклучокот преку менито „Plugins“ во WordPress
+3. Конфигурирајте ги поставките на додатокот во администраторскиот интерфејс на мрежата
+
+## Развој {#development}
+
+### Поставување {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Структура на проектот {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP класи и вклучувања
+│   ├── class-multisite-ultimate-updater.php  # Ракувач за ажурирање
+│   └── class-{{ADDON_SLUG_UNDERSCORE}}-main.php             # Главна функционалност
+├── tests/                        # Единечни тестови
+│   ├── bootstrap.php            # Почетно вчитување на тестови
+│   ├── class-*-base.php         # Основна тест-класа
+│   └── class-*-test.php         # Тест-случаи
+├── views/                       # Датотеки со шаблони
+├── assets/                      # Статички ресурси
+│   ├── css/                     # Стилски листови
+│   ├── js/                      # JavaScript датотеки
+│   └── images/                  # Слики
+├── lang/                        # Јазични датотеки
+├── composer.json                # PHP зависности
+├── package.json                 # Node.js зависности
+├── phpunit.xml.dist             # PHPUnit конфигурација
+├── .phpcs.xml.dist              # Конфигурација на стандарди за код
+└── rector.php                   # Правила за модернизација на код
+```
+
+### Тестирање {#testing}
+
+Додатокот вклучува сеопфатна рамка за тестирање:
+
+- **Единечни тестови**: Тестови базирани на PHPUnit со WordPress тест-пакет
+- **Основна тест-класа**: Обезбедува помошни методи за вообичаени тест-сценарија
+- **Покриеност со тестови**: Конфигурирано за следење на покриеноста на кодот
+- **Multisite тестирање**: Тестовите се извршуваат во multisite околина
+
+### Стандарди за код {#code-standards}
+
+- **WordPress стандарди за кодирање**: Се спроведуваат преку PHPCS
+- **PHP 7.4+ компатибилност**: Поддржани се модерни PHP функции
+- **Статичка анализа**: PHPStan интеграција за проверка на типови
+- **Модернизација на код**: Rector правила за PHP надградби
+
+### Систем за градење {#build-system}
+
+- **Обработка на ресурси**: Минификација за CSS/JS датотеки
+- **Превод**: Генерирање POT датотека
+- **Пакување**: Создавање архива за дистрибуција
+- **Режим за развој**: Неминифицирани ресурси за дебагирање
+
+## Конфигурација {#configuration}
+
+Додатокот поддржува различни опции за конфигурација достапни преку администраторскиот интерфејс на мрежата.
+
+## Hooks и филтри {#hooks-and-filters}
+
+### Дејства {#actions}
+
+- `ultimate-multisite-addon-template_init` - Се активира по иницијализацијата на додатокот
+- `ultimate-multisite-addon-template_loaded` - Се активира откако ќе се вчитаат сите датотеки на додатокот
+
+### Филтри {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Изменете ги поставките на додатокот
+- `ultimate-multisite-addon-template_enabled` - Заменете го статусот за овозможување/оневозможување на додатокот
+
+## Лиценца {#license}
+
+Овој додаток е лиценциран под GPL v3 или понова верзија.
+
+## Поддршка {#support}
+
+За поддршка и документација, посетете [MultisiteUltimate.com](https://multisiteultimate.com)
+## Дневник на промени {#changelog}
+
+- Верзија 1.0.1 (2025-09-28): преименување на префиксот во ultimate-multisite; ажурирање на text domain; зголемување на верзијата.
+
+
+- Верзија  (2025-09-28): преименување на префиксот во ultimate-multisite; ажурирање на text domain; зголемување на верзијата.

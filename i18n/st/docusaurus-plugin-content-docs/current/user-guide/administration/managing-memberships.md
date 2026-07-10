@@ -3,7 +3,7 @@ title: Ho na le litseng tsa bohlokoa
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Ho Pele Mofumo (Managing Memberships)
+# Ho Pele Mofumo (Managing Memberships) {#managing-memberships}
 
 Ke Ultimate Multisite, u ka itse le mofumo (memberships) le ho baithoa ka tsela efe ea setso sa hau sehle. U ka hlalosa le ho lula tafatsa tsa mofumo (subscriptions) joalo ka plans le products, sefapeng sa sites, sefapeng sa tšepo (billing amount) le tšepo (frequency), litšomo tsa tšepo (payment history), le timestamps.
 

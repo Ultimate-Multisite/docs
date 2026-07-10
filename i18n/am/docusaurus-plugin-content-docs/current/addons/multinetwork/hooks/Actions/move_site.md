@@ -4,11 +4,11 @@ title: Action - move_site
 sidebar_label: move_site
 _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 ---
-# ድርጊት: move_site
+# ድርጊት: move_site {#action-movesite}
 
 አንድ ድረ-ገጽ ወደ አዲስ ኔትወርክ ከተዛወረ በኋላ ይሰራል።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 253e7e4db7ca08022f52fb12a14907b6
 | $old_network_id | `int` | የድረ-ገጹን የመጀመሪያ ኔትወርክ መለያ ቁጥር። |
 | $new_network_id | `int` | ድረ-ገጹ ወደ ተዛወረበት አዲሱ ኔትወርክ መለያ ቁጥር። |
 
-### ከቀረበበት ጊዜ
+### ከቀረበበት ጊዜ {#since}
 
 - 1.3.0
-### ምንጭ
+### ምንጭ {#source}
 
 በ[`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1587) በ1587ኛው መስመር ተገልጿል።

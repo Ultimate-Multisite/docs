@@ -1,98 +1,98 @@
 ---
 title: Integrace Zapier
 sidebar_position: 12
-_i18n_hash: 4e43dfd722f07de3048b552c8f7b962f
+_i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Integrace Ultimate Multisite se Zapierem
+# Integrace Ultimate Multisite se Zapier {#integrating-ultimate-multisite-with-zapier}
 
-V jednom z článků jsme probírali [Webhooky](webhooks.md) a jak je lze využít pro integraci s aplikacemi třetích stran.
+V jednom z článků jsme probírali [Webhooks](webhooks.md) a jak je lze použít k integraci s aplikacemi třetích stran.
 
-Používání webhooků je trochu složitější, protože vyžaduje pokročilé znalosti programování a zpracování payloadů. **Zapier** vám umožní se tomu vyhnout.
+Používání webhooks je trochu složité, protože vyžaduje pokročilé znalosti programování a zachytávání payloads. Použití **Zapier** je způsob, jak to obejít.
 
-Zapier nabízí integraci s více než 5000 aplikacemi, což značně usnadňuje komunikaci mezi různými aplikacemi.
+Zapier má integraci s více než 5000+ aplikacemi, což usnadňuje komunikaci mezi různými aplikacemi.
 
-Můžete vytvářet **Triggery**, které se spustí při událostech na vaší síti (např. při vytvoření účtu se spustí událost account_create), nebo generovat **Akce** na vaší síti jako reakci na externí události (např. vytvořit nové členství účtu ve vaší síti Ultimate Multisite).
+Můžete vytvářet **Triggers**, které se spustí, když ve vaší síti nastanou události (např. je vytvořen účet a spustí událost account_create), nebo generovat **Actions** ve vaší síti jako reakci na externí události (např. vytvořit nové členství účtu ve vaší síti Ultimate Multisite).
 
-To je možné díky tomu, že **triggery a akce Ultimate Multisite v Zapieru** jsou poháněny [REST API](https://developer.ultimatemultisite.com/api/docs/).
+To je možné, protože **triggers Ultimate Multisite Zapier** a actions jsou poháněny [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Jak začít
+## Jak začít {#how-to-start}
 
-Nejprve vyhledejte Ultimate Multisite v seznamu aplikací Zapieru. Případně můžete kliknout na [tento odkaz](https://zapier.com/apps/wp-ultimo/integrations).
+Nejprve vyhledejte Ultimate Multisite v seznamu aplikací Zapier. Případně můžete kliknout na [tento odkaz](https://zapier.com/apps/wp-ultimo/integrations).
 
-Přejděte na váš dashboard a stiskněte tlačítko **+** **Create Zap** v levém postranním panelu pro nastavení nového Zapu.
+Přejděte na svůj dashboard a stiskněte tlačítko **+** **Create Zap** v levém postranním panelu, abyste nastavili nový Zap.
 
-![Dashboard Zapieru s tlačítkem Create Zap](/img/admin/webhooks-list.png)
+![Dashboard Zapier s tlačítkem Create Zap](/img/admin/webhooks-list.png)
 
-Budete přesměrováni na stránku vytváření Zapu.
+Budete přesměrováni na stránku pro vytvoření Zap.
 
-Do vyhledávacího pole zadejte "wp ultimo". Klikněte a vyberte možnost **Beta** verze.
+Do vyhledávacího pole zadejte „wp ultimo“. Kliknutím vyberte možnost verze **Beta**.
 
-![Vyhledávání WP Ultimo v seznamu aplikací Zapieru](/img/admin/webhooks-list.png)
+![Vyhledávání WP Ultimo v seznamu aplikací Zapier](/img/admin/webhooks-list.png)
 
-Po výběru naší aplikace zvolte dostupnou událost: **New Ultimate Multisite Event**.
+Po výběru naší aplikace vyberte dostupnou událost: **New Ultimate Multisite Event**.
 
 ![Výběr triggeru New Ultimate Multisite Event](/img/admin/webhooks-list.png)
 
-Nyní potřebujeme dát Zapieru přístup k **vaší síti**. Kliknutím na **Sign in** se otevře nové okno vyžadující **API přihlašovací údaje**.
+Nyní musíme dát Zapier přístup k **vaší síti**. Kliknutí na **Sign in** otevře nové okno vyžadující **API credentials**.
 
-![Výzva k přihlášení do Zapieru pro API přihlašovací údaje](/img/admin/webhooks-list.png)
+![Výzva Zapier k Sign in pro API credentials](/img/admin/webhooks-list.png)
 
-Přejděte do administračního panelu vaší sítě a navigujte na **Ultimate Multisite > Settings** > **API & Webhooks** a vyhledejte sekci API Settings.
+Přejděte do administračního panelu své sítě a přejděte na **Ultimate Multisite > Settings** > **API & Webhooks** a vyhledejte sekci API Settings.
 
-Vyberte možnost **Enable API**, protože je potřebná pro fungování tohoto připojení.
+Vyberte možnost **Enable API**, protože je pro fungování tohoto připojení vyžadována.
 
-![Nastavení API s možností Enable API v Ultimate Multisite](/img/admin/webhooks-list.png)
+![Nastavení API a Webhooks s možnostmi API Settings a Enable API](/img/admin/settings-api-webhooks.png)
 
 Použijte ikonu **Copy to Clipboard** u polí API Key a API Secret a vložte tyto hodnoty na obrazovce integrace.
 
-Do pole URL zadejte úplnou URL adresu vaší sítě včetně protokolu (HTTP nebo HTTPS).
+Do pole URL vložte úplnou URL své sítě včetně protokolu (HTTP nebo HTTPS).
 
-![Obrazovka integrace Zapieru s poli API Key, Secret a URL](/img/admin/webhooks-list.png)
+![Obrazovka integrace Zapier s poli API Key, Secret a URL](/img/admin/webhooks-list.png)
 
-Klikněte na tlačítko **Yes, Continue** pro přechod k dalšímu kroku. Pokud vše proběhne v pořádku, měl by vás přivítat váš nově připojený účet! Klikněte na **Continue** pro vytvoření nového triggeru.
+Klikněte na tlačítko **Yes, Continue** a přejděte k dalšímu kroku. Pokud vše proběhne správně, měl by vás přivítat váš nový připojený account! Klikněte na **Continue** pro vytvoření nového triggeru.
 
-## Jak vytvořit nový Trigger
+## Jak vytvořit nový Trigger {#how-to-create-a-new-trigger}
 
-Nyní, když je váš účet připojen, můžete vidět dostupné události. Pro tento tutoriál zvolme událost **payment_received**.
+Nyní, když je váš account připojen, můžete vidět dostupné události. Pro tento tutoriál zvolme událost **payment_received**.
 
-![Výběr události payment_received v triggeru Zapieru](/img/admin/webhooks-list.png)
+![Výběr události payment_received v triggeru Zapier](/img/admin/webhooks-list.png)
 
-Jakmile je událost vybrána a kliknete na **continue**, objeví se **testovací krok**.
+Jakmile byla událost vybrána a kliknete na **continue**, zobrazí se **test step**.
 
-![Testovací krok Zapieru pro trigger](/img/admin/webhooks-list.png)
+![Testovací krok Zapier pro trigger](/img/admin/webhooks-list.png)
 
-V této fázi Zapier otestuje, zda váš Zap dokáže **načíst specifický payload pro danou událost**. Při budoucích událostech stejného typu budou odesílány informace se stejnou strukturou.
+V této fázi Zapier otestuje, zda váš Zap dokáže **načíst konkrétní payload pro tuto událost**. U budoucích událostí stejného typu budou odesílány informace se stejnou strukturou.
 
-![Test triggeru Zapieru úspěšně dokončen s payloadem](/img/admin/webhooks-list.png)
+![Test triggeru Zapier úspěšně dokončen s payloadem](/img/admin/webhooks-list.png)
 
-V našem tutoriálu byl test **úspěšně dokončen** a vrátil ukázkové informace payloadu. Tyto ukázkové informace nám pomohou při vytváření akcí. Váš trigger je nyní vytvořen a připraven k propojení s dalšími aplikacemi.
+V našem tutoriálu byl test **úspěšně dokončen** a vrátil ukázkové informace payloadu. Tyto ukázkové informace budou užitečné jako vodítko při vytváření actions. Váš trigger je nyní vytvořen a připraven k propojení s dalšími aplikacemi.
 
-## Jak vytvořit Akce
+## Jak vytvořit Actions {#how-to-create-actions}
 
-Akce využívají informace z jiných triggerů k vytváření nových záznamů ve vaší síti.
+Actions používají informace z jiných triggers k vytváření nových záznamů ve vaší síti.
 
-V **kroku vytváření akce** vyberete Ultimate Multisite **Beta** a možnost **Create Items on Ultimate Multisite**.
+V kroku **vytváření action** vyberete Ultimate Multisite **Beta** a možnost **Create Items on Ultimate Multisite**.
 
-![Vytváření akce s možností Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
+![Vytváření action pomocí Create Items on Ultimate Multisite](/img/admin/webhooks-list.png)
 
-V dalším kroku buď vytvoříte své ověření, stejně jako jsme to udělali v části **Jak začít**, nebo vyberete již vytvořené ověření. V tomto tutoriálu zvolíme stejné ověření, které jsme vytvořili dříve.
+V dalším kroku buď vytvoříte své ověření, stejně jako jsme to udělali v části **Jak začít**, nebo vyberete vytvořené ověření. V tomto tutoriálu zvolíme stejné ověření vytvořené dříve.
 
-![Výběr ověření pro akci Zapieru](/img/admin/webhooks-list.png)
+![Výběr ověření pro action Zapier](/img/admin/webhooks-list.png)
 
-### Nastavení Akce
+### Nastavení Action {#setting-up-the-action}
 
-Toto je **hlavní krok akce** a zde jsou věci trochu jiné. První informací, kterou zvolíte, je **Item**. Item je **informační model** vaší sítě, jako jsou **Customers, Payments, Sites, Emails** a další.
+Toto je **hlavní krok action** a zde jsou věci trochu jiné. První informace, kterou vyberete, je **Item**. Item je **informační model** vaší sítě, například **Customers, Payments, Sites, Emails** a další.
 
-![Výběr typu Item pro akci Zapieru](/img/admin/webhooks-list.png)
+![Výběr typu Item pro action Zapier](/img/admin/webhooks-list.png)
 
-Při výběru položky se formulář **přeuspořádá a zobrazí povinná a volitelná pole** pro vybranou položku.
+Při výběru itemu se formulář **přeskupí tak, aby zobrazil povinná a volitelná pole** pro vybraný item.
 
-Například při výběru položky **Customer** se ve formuláři zobrazí vše potřebné k vyplnění pro vytvoření nového zákazníka v síti.
+Například při výběru itemu **Customer** formulářová pole zobrazí vše, co je nutné vyplnit pro vytvoření nového Customer v síti.
 
-![Pole položky Customer v nastavení akce Zapieru](/img/admin/webhooks-list.png)
+![Pole itemu Customer v nastavení action Zapier](/img/admin/webhooks-list.png)
 
-Po vyplnění všech polí označených jako **required** a kliknutí na continue se zobrazí poslední obrazovka s vyplněnými poli a poli, která zůstala nevyplněná.
+Po vyplnění všech polí označených jako **required** a kliknutí na pokračovat vám poslední obrazovka zobrazí vyplněná pole a pole, která zůstala nevyplněná.
 
-![Test akce Zapieru zobrazující vyplněná a nevyplněná pole](/img/admin/webhooks-list.png)
+![Test action Zapier zobrazující vyplněná a nevyplněná pole](/img/admin/webhooks-list.png)
 
-Jakmile je váš test dokončen a úspěšný, vaše akce je nakonfigurována. Je také důležité zkontrolovat ve vaší síti, zda byla položka vytvořena testem vaší akce.
+Jakmile se váš test dokončí a je úspěšný, vaše action je nakonfigurována. Je také důležité zkontrolovat ve vaší síti, zda byl item vytvořen testem vaší action.

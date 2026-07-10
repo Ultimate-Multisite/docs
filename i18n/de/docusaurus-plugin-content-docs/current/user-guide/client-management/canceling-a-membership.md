@@ -1,31 +1,32 @@
 ---
-title: Mitgliedschaft kündigen
+title: Eine Mitgliedschaft kündigen
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Kündigung einer Mitgliedschaft (v2)
+# Kündigung einer Mitgliedschaft (v2) {#canceling-a-membership-v2}
 
-_**WICHTIGE HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
+_**WICHTIGER HINWEIS: Dieser Artikel bezieht sich auf Ultimate Multisite Version 2.x.**_
 
-Das Kündigen einer Mitgliedschaft auf der Seite Ihres Kunden ist ziemlich einfach.
+Die Kündigung einer Mitgliedschaft auf der Seite Ihrer Kunden ist ziemlich einfach.
 
-Wenn Ihr Benutzer seine Mitgliedschaft kündigen möchte, sollte er zunächst seine ****Account**** Seite aufrufen.
+Wenn Ihr Benutzer seine Mitgliedschaft kündigen möchte, sollte er zuerst auf seine ****Account****-Seite zugreifen.
 
-Dort sollte er zum **Danger Zone** gehen und auf **Delete Account** klicken.
+Dort sollte er zur **Gefahrenzone** gehen und auf **Account löschen** klicken.
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Gefahrenzone der Account-Seite mit Button zum Löschen des Accounts](/img/account-page/danger-zone.png)
 
-Ein Modul öffnet sich und fragt nach ihrer Bestätigung. Sie sollten die Option **Confirm Account Deletion** aktivieren und auf **Delete Account** klicken.
+Ein Modul wird geöffnet und um Bestätigung bitten. Er sollte die Option **Account-Löschung bestätigen** aktivieren und auf **Account löschen** klicken.
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Dialog zur Bestätigung der Account-Löschung](/img/account-page/delete-account-confirm.png)
 
-Dies wird sie aus der Seite ausloggen und ihre Mitgliedschaft in Ihrem Netzwerk kündigen, sowie ihre Seite aus Ihrem Netzwerk löschen.
+Dadurch wird er von der Website abgemeldet, seine Mitgliedschaft in Ihrem Netzwerk gekündigt und seine Website aus Ihrem Netzwerk gelöscht.
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Nach Account-Löschung abgemeldet](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![Bestätigung der gekündigten Mitgliedschaft](/img/account-page/membership-canceled.png)
 
-**Wichtig:** Beachten Sie, dass diese Aktion den Kunden nicht aus Ihrem Netzwerk ausschließt, da ein Kunde mehr als eine Mitgliedschaft haben kann oder keine Mitgliedschaft mit ihm verknüpft ist.
+**Wichtig:** Beachten Sie, dass diese Aktion den Kunden nicht aus Ihrem Netzwerk ausschließt, da ein Kunde mehr als eine Mitgliedschaft oder keine mit ihm verknüpfte Mitgliedschaft haben kann.
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![Kunde existiert nach der Kündigung weiterhin im Netzwerk](/img/admin/customer-after-cancel.png)
+
+![Kunde ohne aktive Mitgliedschaften](/img/admin/memberships-customer-empty.png)

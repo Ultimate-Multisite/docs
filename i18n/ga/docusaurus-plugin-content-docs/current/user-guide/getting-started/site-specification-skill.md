@@ -3,11 +3,11 @@ title: Spesifíocht site Skill
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Fíneadh Spraoi Site
+# Fíneadh Spraoi Site {#site-specification-skill}
 
 Is an **Site Specification skill** (Fíneadh Spraoi Site) curteas a chuid ar fáil chun teachtaireacht, úsáidóra agus teachtaireacht chuid site a laigh a gcurt. Tá an t-aithris seo ag cur isteach i **site_brief** (fíneadh spraoi site), a bhíonn ag na agents ag iarraidh ar aghaidh tréimhseanna chun cúramocht a bheith cinnte agus ag teachtaireacht a bheith ag fáil ar chuid context.
 
-## Cad é Site Specification?
+## Cad é Site Specification? {#what-is-site-specification}
 
 Is Site Specification an chur chun feidhm a dhéanamh ar:
 
@@ -19,9 +19,9 @@ Is Site Specification an chur chun feidhm a dhéanamh ar:
 
 Bíonn an spraoi seo ag teachtaireacht agat mar **site_brief**, un curtha cinnte a bhíonn na agents ag úsáid chun an context chuid site a bheith ag fáil.
 
-## Cad a bheith ag úsáid Site Specification?
+## Cad a bheith ag úsáid Site Specification? {#why-use-site-specification}
 
-### Cúramocht ar tréimhseanna (Consistency Across Sessions)
+### Cúramocht ar tréimhseanna (Consistency Across Sessions) {#consistency-across-sessions}
 
 Gan site_brief, beidh tú ag réiteach an spraoi site agat mar chomh cheana féin ag cur isteach ar chuid context ar chuid site ar mhothú. Leat é sin, beidh na agents ag fáil agad go léir:
 
@@ -30,7 +30,7 @@ Gan site_brief, beidh tú ag réiteach an spraoi site agat mar chomh cheana féi
 - Struitú curtha chuid
 - Spraoi uile agat
 
-### Riec a bheith níos fearr (Better Recommendations)
+### Riec a bheith níos fearr (Better Recommendations) {#better-recommendations}
 
 Bíonn na agents ag úsáid site_brief agat chun:
 
@@ -39,17 +39,17 @@ Bíonn na agents ag úsáid site_brief agat chun:
 - Déanacha a chur ar fáil a bheith cinnte le do teachtaireacht chuid
 - An t-aithris feidhm atá ag teachtaireacht agat
 
-### Chúramocht a dhéanamh níos tapa (Faster Onboarding)
+### Chúramocht a dhéanamh níos tapa (Faster Onboarding) {#faster-onboarding}
 
 Beidh na agents nua (mar áit na agents ar mhothú nua) ag fáil an t-aithris go tapa ag cur isteach mar chleachta site_brief agat chun spriocais a chur ar fáil mar aistéar ag gcuir léi chruinneacha.
 
-## Déanadh Site Specification
+## Déanadh Site Specification {#initiating-site-specification}
 
-### Ag dlú Onboarding Theme Builder (During Theme Builder Onboarding)
+### Ag dlú Onboarding Theme Builder (During Theme Builder Onboarding) {#during-theme-builder-onboarding}
 
 Bíonn an Site Specification skill ag cur isteach go tapa ag **onboarding flow** na **Theme Builder**. Beidh an agent Setup Assistant ag iarraidh iarrachtaí agus ag cur site_brief agat.
 
-### Déanadh le chéile (Manual Initiation)
+### Déanadh le chéile (Manual Initiation) {#manual-initiation}
 
 Leat anseo an Site Specification ag dul:
 
@@ -63,9 +63,9 @@ nó
 "Céad mí a chur ar fáil leat an brief site"
 ```
 
-## An Proces Site Specification
+## An Proces Site Specification {#the-site-specification-process}
 
-### Step 1: An Taisceán an Site (Site Purpose)
+### Step 1: An Taisceán an Site (Site Purpose) {#step-1-site-purpose}
 
 Níl an agent ag iarraidh:
 
@@ -81,7 +81,7 @@ Cad é an t-aistriú príomhaigh an site?
 
 Is féidir leat a chomhacht a chur ar fáil nó aistriú an t-aistriú duit.
 
-### Step 2: An Meánachas (Target Audience)
+### Step 2: An Meánachas (Target Audience) {#step-2-target-audience}
 
 ```
 Cad é an meánachas príomhaigh agat?
@@ -94,7 +94,7 @@ Cad é an meánachas príomhaigh agat?
 Cé an t-aistriúcháin chomhartha a bhaineann leis?
 ```
 
-### Step 3: An Chuid Brand (Brand Identity)
+### Step 3: An Chuid Brand (Brand Identity) {#step-3-brand-identity}
 
 ```
 Cad é na coluracht a bhaineann le do brand?
@@ -110,7 +110,7 @@ Conas a chur ar fáil do tone an brand?
 - Warm / friendly
 ```
 
-### Step 4: Teastáil Business (Business Goals)
+### Step 4: Teastáil Business (Business Goals) {#step-4-business-goals}
 
 ```
 Cad é an saolais an t-aistriúcháin duit?
@@ -129,7 +129,7 @@ Cé an t-aistriúchán príomhaigh agat?
 - Áirítear eile
 ```
 
-### Step 5: Struchtúr An Chontaint (Content Structure)
+### Step 5: Struchtúr An Chontaint (Content Structure) {#step-5-content-structure}
 
 ```
 Conas a bhaineann do chontaint?
@@ -148,13 +148,13 @@ Cé na tairgseacha chontaint a bhaineann leat?
 - Áirítear eile
 ```
 
-## An Meamhras site_brief (Your site_brief Memory)
+## An Meamhras site_brief (Your site_brief Memory) {#your-sitebrief-memory}
 
 Tar éis an Site Specification, tá do chuid fadaí ag cur isteach mar **site_brief** i mheamhras an agent. Is é seo curteacha stráta ceanglaíonn:
 
-## Fhéadadh agus Athchunadh an Site_brief
+## Fhéadadh agus Athchunadh an Site_brief {#viewing-and-updating-your-sitebrief}
 
-### Léigh an Site_brief
+### Léigh an Site_brief {#view-your-sitebrief}
 
 Ceannais ar an agent:
 
@@ -170,7 +170,7 @@ nó
 
 Béidh an agent ag dangreáil an spesification atá agat.
 
-### Athchunadh an Site_brief
+### Athchunadh an Site_brief {#update-your-sitebrief}
 
 Má tá an t-site agat a bhfáthach, leat é a athrú:
 
@@ -186,9 +186,9 @@ nó
 
 Is é seo ag réiteáil ar an Site Specification skill ag úsáid do chuid fada agus sprioc as gcomhthabhairt.
 
-## Conas a Uileann na Agents a Uileann an Site_brief
+## Conas a Uileann na Agents a Uileann an Site_brief {#how-agents-use-sitebrief}
 
-### Rialacha Déanach
+### Rialacha Déanach {#design-recommendations}
 
 Nuair a gcurann tú thar aistriúcháin déanach, beidh na agents ag cur isteach ar an site_brief:
 
@@ -199,7 +199,7 @@ with a warm, artisanal tone. I'll create a design that emphasizes
 your handmade jewelry and sustainable values."
 ```
 
-### Sugstail Físhiau
+### Sugstail Físhiau {#feature-suggestions}
 
 Taispeáin na agents físhiau ag cur isteach le haghaidh do spriocanna:
 
@@ -210,23 +210,23 @@ I'd recommend: loyalty program, customer reviews, email newsletter,
 and product recommendations."
 ```
 
-### Struchtúr Contant
+### Struchtúr Contant {#content-structure}
 
 Taispeáin na agents struchtúr contant ag cur isteach ar an sprioc agat:
 
 In: "Conas anor é a bhlog mo?"
 Agent: "Nuair aistriú le catolog rialta le bhlog, tá mé ag curte a chur i bhfint an postanna ar chathair príobháideach agus a chur in áit 'guidteacha stála' a thaispeáin pearsanaí go leim-spar."
 
-## Beasach Árasta
+## Beasach Árasta {#best-practices}
 
-### Bánach Déanach (Be Specific)
+### Bánach Déanach (Be Specific) {#be-specific}
 
 An taitin "faoiúla ginearálta" níl go bhfuil an-dúil agat, ach díonraigh ar chuid fháil:
 
 - ✓ "Féileanna 25-45, ag iarraidh modaí sùilte"
 - ✗ "Céad sin"
 
-### Athchunnamh Go Léimeann (Update Regularly)
+### Athchunnamh Go Léimeann (Update Regularly) {#update-regularly}
 
 Mar a bhíonn an site agat ag athrú, athrúchais an `site_brief` duit:
 
@@ -235,14 +235,14 @@ Mar a bhíonn an site agat ag athrú, athrúchais an `site_brief` duit:
 - Nuair a tharrfhaíonn do chuid chuid fháil
 - Nuair a tharrfhaíonn do gníomhartha uile
 
-### Use Terminology Cothromach (Use Consistent Terminology)
+### Use Terminology Cothromach (Use Consistent Terminology) {#use-consistent-terminology}
 
 Use an amair sin ar shéasanna:
 
 - ✓ Déan "sùilte sùilte" go léir (ni "sùilte eco-friendly" agus "píobail gréine")
 - ✓ Cuir do chuid fháil i bhfint an amair sin go leim-spar
 
-### Includ an Context (Include Context)
+### Includ an Context (Include Context) {#include-context}
 
 Cuir curtha chuid féin a thaispeáin ar chuid fháil a dhéanann do chuid fháil:
 
@@ -250,7 +250,7 @@ Cuir curtha chuid féin a thaispeáin ar chuid fháil a dhéanann do chuid fhái
 - "Tá an t-aistriú mochtúla agus tá sé ag iarraidh díonrachas nua"
 - "Tá mé ag dul ar aghaidh mar startup a bhíodh ag curtha, mar seo ag curte soluinaí leatach"
 
-## Rincán le Chléireacht Theme Builder Onboarding
+## Rincán le Chléireacht Theme Builder Onboarding {#relationship-to-theme-builder-onboarding}
 
 Tá an foirmiar Site Specification curtha i **Theme Builder onboarding flow**. Nuair a tharrfhaíonn tú an onboarding, tá an `site_brief` agat ag curtha go mbeartas le curte chuid fháil a chur in áit.
 
@@ -260,7 +260,7 @@ Is féidir leat hefyd a dhriail Site Specification go hiomlán má tá tú ag ia
 - Athchunnamh do site_brief mar a tharrfhaíonn an site agat
 - Creidhtigh specification leatach ar aghaidh ar an t-aistriú Theme Builder
 
-## Treo Chúrtacha (Troubleshooting)
+## Treo Chúrtacha (Troubleshooting) {#troubleshooting}
 
 **Níl mo `site_brief` ag úsáid**
 - Cuir do chuid féin a fháil ar fáil i bhfint an meagair
@@ -276,7 +276,7 @@ Is féidir leat hefyd a dhriail Site Specification go hiomlán má tá tú ag ia
 - Athraigh do site\_brief má tá sé ag cur isteach
 - Déan curtha níos mó de chuid context i do rithiechtaí
 
-## An t-amachas seo
+## An t-amachas seo {#next-steps}
 
 Tar éis tríúchán an Site Specification:
 

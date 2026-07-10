@@ -3,11 +3,11 @@ title: Nga mea i whakamahi te Ultimate Multisite?
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Aroha ki Ultimate Multisite
+# Aroha ki Ultimate Multisite {#why-ultimate-multisite}
 
 Ko i roto i tēnei article ko e taea ai ahau te whai i a koe, he tino pai ahau te whakaaro ana akomanga mārie ahau hei whakatutuki i ngā whakaaro o te mahi katoa. Ko te whakamārama e noho ana i te whakatutuki i ngā mea e tino kitea i te whakamārama ko e hoki atu ki a koe i ngā whakataunga e tino pai.
 
-## He aha te Ultimate Multisite?
+## He aha te Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ko Ultimate Multisite he plugin o WordPress Multisite, he e tino ātaahua ana ahau ki te whakamahi ai i te WaaS (Website as a Service) mō ngā mea katoa. Me te plugin tēnei, e taea ai i a koe te koreke i ngā pūtahe (subscription tiers) marama, me te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i heke o te pūtahe ki te kore koutou te koreke i he
 
@@ -21,11 +21,11 @@ Me tino mahi mō te mea whakamua:
 
 * Search and Replace API: I te taea hoki i a koe te whakamahi i ngā placeholder (nhau) i ngā template o te site me te Search and Replace API ki te whakatū ana ngā wāhi those placeholders akorua atu i te mōhio o tō koutou mea i runga i te information e puta ake i te sign-up, automatically.
 
-## Ngā whakamahi (Use cases)
+## Ngā whakamahi (Use cases) {#other-features}
 
 I tēnei wā he kite ngā whakamahinga mō Ultimate Multisite.
 
-### Case 1: He Agency
+### Case 1: He Agency {#use-cases}
 
 E tino whai ake ana i ngā mahi o te agency i te whare whakaaro design o ngā website me ngā mea e hoki mai i te hosting takea (hosting) me te marketing e hoakaa atu hei wāhi whai tikanga.
 
@@ -35,7 +35,7 @@ He tino whakatū i te ao (tight control) i runga i ngā plugins me ngā themes i
 
 Ka whaiako i te Ultimate Multisite he pito whakamua ki e taea ai ngā agency whakaatu i te tino pai o te mahi—te whaiaro i te mea tino mō ana: te whaiora o te website.
 
-### Case 2: Pūtaiao Whānui (Niche Provider)
+### Case 2: Pūtaiao Whānui (Niche Provider) {#case-1-an-agency}
 
 He kupu purini ahau i te whaiaro, "Whakawhanaungatanga i tētahi mea me te whakamahi i te pai." Mo ngā mātanga katoa, he tino āhua ana ko te whero i te mea e whakatō atu i te mea tino pēke.
 
@@ -45,7 +45,7 @@ He pito whakamua o Ultimate Multisite, he template site he heke ana ko te theme 
 
 Mo te pūtaiao whānui o ngā site me ngā mahi, he tino manawa ana tēnei i te mea e taea ai koe te whakawhanaunga i te site kua hono atu ki te pai anō me ngā plugins me te design mo te koutou. Ko te koutou he hiahia ki te whaiaro i ngā mea tino pēke kia whakatā i te mahi.
 
-### Case 3: WordPress Web Hosting
+### Case 3: WordPress Web Hosting {#case-2-niche-provider}
 
 He tino mōhaka ahau i te wāhanga o te hosting site WordPress, engari haere mai, he tino takawa tika ana ko e whakarato ai wāhi web ki te koutou me te version o WordPress kua oti koe. He tino pēke ahau i te mea he tino whakahoki ake ngā pātai me ngā whakaaro katoa kia whaiaro i te mahi tino pai.
 

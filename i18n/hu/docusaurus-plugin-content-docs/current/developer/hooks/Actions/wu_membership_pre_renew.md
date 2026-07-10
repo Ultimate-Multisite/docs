@@ -4,11 +4,11 @@ title: Akció - wu_membership_pre_renew
 sidebar_label: wu_membership_pre_renew
 _i18n_hash: 404f491e8f2f80099b721e1f475b4668
 ---
-# Akció: wu_membership_pre_renew
+# Akció: wu_membership_pre_renew {#action-wumembershipprerenew}
 
 Elfoglalódik a tagság megújítását megelőzően.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Neve | Típus | Leírás |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Elfoglalódik a tagság megújítását megelőzően.
 | $membership_id | `int` | A tagság azonosítója. |
 | $membership | `\Membership` | Tagság objektum. |
 
-### Elkövetkezés
+### Elkövetkezés {#since}
 
 - 2.0
-### Forrás
+### Forrás {#source}
 
 Definíciója található [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2204) fájlban, 2204-sorban.

@@ -1,0 +1,124 @@
+---
+title: AI საიტის შემქმნელი
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI საიტის შემქმნელი {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## მოთხოვნები {#requirements}
+
+- WordPress 5.3 ან უფრო ახალი
+- PHP 7.4 ან უფრო ახალი
+- Multisite Ultimate პლაგინი (აქტიური)
+
+## ინსტალაცია {#installation}
+
+1. ატვირთეთ დანამატის ფაილები თქვენს `/wp-content/plugins/` დირექტორიაში
+2. გაააქტიურეთ პლაგინი WordPress-ში „პლაგინები“ მენიუს მეშვეობით
+3. დააკონფიგურირეთ დანამატის პარამეტრები ქსელის ადმინისტრირების ნაწილში
+
+## განვითარება {#development}
+
+### დაყენება {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### პროექტის სტრუქტურა {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP classes and includes
+│   ├── class-multisite-ultimate-updater.php  # Update handler
+│   └── class-ai_site_builder-main.php             # Main functionality
+├── tests/                        # Unit tests
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # Base test class
+│   └── class-*-test.php         # Test cases
+├── views/                       # Template files
+├── assets/                      # Static assets
+│   ├── css/                     # Stylesheets
+│   ├── js/                      # JavaScript files
+│   └── images/                  # Images
+├── lang/                        # Language files
+├── composer.json                # PHP dependencies
+├── package.json                 # Node.js dependencies
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standards configuration
+└── rector.php                   # Code modernization rules
+```
+
+### ტესტირება {#testing}
+
+დანამატი მოიცავს ყოვლისმომცველ ტესტირების ფრეიმვორკს:
+
+- **ერთეულური ტესტები**: PHPUnit-ზე დაფუძნებული ტესტები WordPress-ის სატესტო ნაკრებით
+- **საბაზისო ტესტის კლასი**: უზრუნველყოფს დამხმარე მეთოდებს საერთო სატესტო სცენარებისთვის
+- **ტესტების დაფარვა**: კონფიგურირებულია კოდის დაფარვის თვალყურის სადევნებლად
+- **მრავალსაიტიანი ტესტირება**: ტესტები ეშვება მრავალსაიტიან გარემოში
+
+### კოდის სტანდარტები {#code-standards}
+
+- **WordPress-ის კოდირების სტანდარტები**: სავალდებულოდ მოწმდება PHPCS-ის მეშვეობით
+- **PHP 7.4+ თავსებადობა**: მხარდაჭერილია თანამედროვე PHP ფუნქციები
+- **სტატიკური ანალიზი**: PHPStan ინტეგრაცია ტიპების შესამოწმებლად
+- **კოდის მოდერნიზაცია**: Rector წესები PHP განახლებებისთვის
+
+### აგების სისტემა {#build-system}
+
+- **აქტივების დამუშავება**: CSS/JS ფაილების მინიფიკაცია
+- **თარგმნა**: POT ფაილის გენერაცია
+- **შეფუთვა**: არქივის შექმნა გავრცელებისთვის
+- **განვითარების რეჟიმი**: არამინიფიცირებული აქტივები გამართვისთვის
+
+## კონფიგურაცია {#configuration}
+
+დანამატი მხარს უჭერს სხვადასხვა კონფიგურაციის ვარიანტს, რომლებიც ხელმისაწვდომია ქსელის ადმინისტრირების ინტერფეისიდან.
+
+## ჰუკები და ფილტრები {#hooks-and-filters}
+
+### მოქმედებები {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - ეშვება დანამატის ინიციალიზაციის შემდეგ
+- `ultimate-multisite-ai-site-builder_loaded` - ეშვება ყველა დანამატის ფაილის ჩატვირთვის შემდეგ
+
+### ფილტრები {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - დანამატის პარამეტრების შეცვლა
+- `ultimate-multisite-ai-site-builder_enabled` - დანამატის ჩართვის/გამორთვის სტატუსის გადაფარვა
+
+## ლიცენზია {#license}
+
+ეს დანამატი ლიცენზირებულია GPL v3-ის ან უფრო ახალი ვერსიის პირობებით.
+
+## მხარდაჭერა {#support}
+
+მხარდაჭერისა და დოკუმენტაციისთვის ეწვიეთ [MultisiteUltimate.com](https://multisiteultimate.com)
+## ცვლილებების ჟურნალი {#changelog}
+
+- ვერსია 1.0.1 (2025-09-28): პრეფიქსის გადარქმევა ultimate-multisite-ად; ტექსტური დომენის განახლება; ვერსიის აწევა.
+
+
+- ვერსია  (2025-09-28): პრეფიქსის გადარქმევა ultimate-multisite-ად; ტექსტური დომენის განახლება; ვერსიის აწევა.

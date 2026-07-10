@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Ihuza rya Mailchimp
+
+Huza urusobe rwawe rwa Multisite Ultimate na Mailchimp yawe. Ushobora guhuza plan zimwe na Mailchimp Lists maze ukongeramo abafatabuguzi muri izo list mu buryo bwikora igihe biyandikisha.
+
+## Kwishyiramo {#installation}
+
+1. Shyira 'ultimate-multisite-mailchimp' muri directory ya '/wp-content/plugins/'
+2. Koresha plugin unyuze muri menu ya 'Plugins' muri WordPress Network Admin yawe
+
+## Umuyoboro w'ikoreshwa {#usage-guide}
+
+Guhuza emails z'abafatabuguzi na lists zawe za MailChimp biroroshye cyane ukoresheje Ultimate Multisite: MailChimp Integration Add-on yacu. Iyi nyigisho igamije kugufasha gutunganya byose!
+
+## Kubona API key {#getting-an-api-key}
+
+Mbere y'uko dutangira kureba settings zitandukanye zihari, dukeneye MailChimp API key. Ibi bizemerera Ultimate Multisite kuvugana na MailChimp API kugira ngo ibone lists, groups, kandi yongere email addresses muri izo lists na groups igihe abakoresha biyandikisha.
+
+Kurikiza iyi nyigisho kugira ngo ubone MailChimp API key yawe bwite: [Ibyerekeye API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Ongeraho MailChimp API key yawe kuri_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Uburyo bw'ihuza {#integration-mode}
+
+MailChimp Integration add-on itanga “integration modes” ebyiri, bivuze ko hari uburyo bubiri butandukanye ushobora gukoresha add-on mu guhuza email addresses.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Uburyo bubiri bw'ihuza kugira ngo haboneke ubworoherane bwinshi!_
+
+### Uburyo 1: Lists nyinshi {#mode-1-multiple-lists}
+
+Uburyo busanzwe bukoresha **Lists nyinshi**. Ubu buryo buzagufasha guhitamo MailChimp lists nyinshi kuri buri plan. Iyi ni yo nzira nziza niba ugabanya abakoresha bawe mu lists zitandukanye.
+
+Urugero, reka tuvuge ko ufite lists 3 zitandukanye kuri Account yawe ya MailChimp: **Newsletter** , **Plan A** , na **Plan B**. Ushaka ko abakoresha bose, hatitawe kuri plan yabo, na bo bashyirwa kuri list ya Newsletter, kugira ngo batazacikwa n'amakuru yawe mashya.
+
+Kugira ngo ubigereho, ushobora gukoresha uburyo bwa Lists nyinshi ukongeraho lists zombi **Newsletter** na **Plan A** muri Plan A MailChimp Settings, na **Newsletter** na **Plan B** muri Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Hitamo lists zisanzwe kuri accounts nshya no kuri accounts zahagaritswe_
+
+### Uburyo 2: List imwe + Groups nyinshi {#mode-2-single-list--multiple-groups}
+
+MailChimp igufasha kugabanya list yawe mo groups nto z'abakoresha zitwa **Groups**. Ibi biguha kugenzura kurushaho kuko ushobora kohereza campaign ku gice cyihariye cy'abafatabuguzi bawe utiriwe ukora copies nyinshi za campaign imwe kuri MailChimp (ibyo bituma bigorana gusesengura metrics z'iyo campaign nyuma).
+
+Urugero, ushobora kugira list imwe yitwa **My Network Subscribers,** maze imbere yayo ukagira groups za **Plan A** na **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Hitamo lists na groups zisanzwe, niba ukoresha uburyo bw'ihuza bwa “list imwe + groups nyinshi”_
+
+## Lists na Groups zisanzwe {#default-lists-and-groups}
+
+Nyuma yo guhitamo uburyo bw'ihuza burushaho kumvikana ku mikoreshereze yawe yihariye, igihe kiba kigeze cyo guhitamo lists zisanzwe (na groups, bitewe n'uburyo). List isanzwe izakoreshwa igihe plan runaka idafite List yihariye yatoranyijwe.
+
+Ushobora kandi guhitamo list isanzwe kuri accounts zahagaritswe. Igihe cyose umukoresha arangije subscription ye maze agakura account ye ku rusobe rwawe, email address ye izimurirwa kuri list yashyiriweho accounts zahagaritswe.
+
+## Gukoresha Double Subscription {#enabling-double-subscription}
+
+Kuri page imwe ya settings, uzashobora gukoresha **Double Subscription**. Iri hitamo rizongerera umukoresha kuri list isanzwe yatoranyijwe NDETSE no kuri list yatoranyijwe kuri plan y'uwo mukoresha. Niba iri hitamo ridakoreshejwe, umukoresha azongerwa gusa kuri list yatoranyijwe kuri plan y'umukoresha. Niba nta yatoranyijwe kuri iyo plan yihariye, noneho umukoresha azongerwa kuri list isanzwe yatoranyijwe.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Ushobora gutuma abakoresha bawe bafatabuguzi kuri list isanzwe no kuri list ya plan igihe biyandikisha_
+
+## Guhitamo Lists na Groups kuri buri Plan {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Jya kuri **Plans** zawe maze uhitemo plan ushaka guhindura. Menya ko kuri meta-box ya **Advanced Options**, tab nshya yitwa MailChimp izaboneka.
+
+Kuri iyo tab, uzashobora guhitamo lists nyinshi cyangwa list imwe na groups nyinshi (bitewe n'uburyo bw'ihuza) kuri iyo plan.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Hitamo Lists na Groups ushaka gukoresha kuri buri plan yawe_
+
+Igihe umukoresha mushya yiyandikishije kuri iyo plan, email address ye izongerwa kuri lists na groups byatoranyijwe!

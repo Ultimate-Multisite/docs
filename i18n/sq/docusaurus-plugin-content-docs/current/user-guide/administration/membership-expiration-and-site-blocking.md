@@ -3,33 +3,33 @@ title: Përfundimi i Veprimit dhe Bllokimi i Sitet
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Përfundimi i Veprimit dhe Bllokimi i Sitet
+# Përfundimi i Veprimit dhe Bllokimi i Sitet {#membership-expiration-and-site-blocking}
 
 Ky seksion tregon se si të menaxhoni kur një anëtar (membership) i WordPress-it përfundon vjetri dhe si mund ta bllokoni faqet e internetit nëse keni nevojë.
 
-## Përfundimi i Veprimit (Membership Expiration)
+## Përfundimi i Veprimit (Membership Expiration) {#membership-status-lifecycle}
 
 Kur një anëtar i Ultimate Multisite (ose sistemi të ndryshëm që përdorni për menaxhimin e anëtarëve) i vjetri, ai nuk mund të aksesojë më faqet e internetit nëse keni aktivuar opsionin "Block access" (Bllokim i aksesit).
 
-### Si funksionon?
+### Si funksionon? {#how-memberships-transition-to-expired}
 
 Në thelb, kur një përdoruesi humbet statusin e anëtarisë, sistemi do të kontrollojë datën e fundit të vjetrit. Nëse keni vendosur që pas datës së skadimit, akseset duhet të bllokohen automatikisht.
 
 **Shembull i thjeshtë:**
 Nëse një anëtar ka vjetër për 12 muaj dhe në datën e fundit të vjetrit ai nuk është më aktiv, sistemi do ta ndalojë atë nga faqet që kërkojnë autorizim.
 
-### Konfigurimi i Bllokimit Automatik
+### Konfigurimi i Bllokimit Automatik {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Për të siguruar se bllokimi funksionon siç dëshironi:
 
 1.  **Kontrolloni cilësimet e anëtarisë:** Shkoni në seksionin e menaxhimit të anëtarëve dhe kontrolloni opsionet që lidhen me skadimin e vjetrit dhe bllokimin e aksesit.
 2.  **Aktivizoni Bllokimin:** Sigurohuni që funksioni i "Block access" është aktiv për anëtarët që kanë kaluar datën e fundit të vjetrit.
 
-## Bllokimi i Sitet (Site Blocking)
+## Bllokimi i Sitet (Site Blocking) {#how-trials-end}
 
 Ndonjëherë, mund të keni nevojë të bllokoni një faqe specifike ose një pjesë të faqes pa ndalur anëtarin në të gjithë sistemin. Kjo do të thotë që ju duhet të menaxhoni rregjet e aksesit (permissions) për atë faqe konkretë.
 
-### Menaxhimi i Rregullave të Aksesit
+### Menaxhimi i Rregullave të Aksesit {#block-frontend-access}
 
 Për të bllokuar një faqe, zakonisht përdorni funksionet standarde të WordPress-it ose plugin-eve që menaxhojnë permisionet (si Access Control Plugins).
 
@@ -38,64 +38,64 @@ Për të bllokuar një faqe, zakonisht përdorni funksionet standarde të WordPr
 1.  **Identifiko Faqen:** Vendosni se cilën faqe dëshironi të bllokoni.
 2.  **Ndërto Rregullat:** Përdorni menaxherin e permisioneve për atë faqe dhe vendosni që vetëm anëtarët me status X (p.sh., "Active Member") mund ta shohin, ose ndryshe, të bllokoni aksesin plotësisht.
 
-### Këshilla Importante
+### Këshilla Importante {#configuring-the-setting}
 
 *   **Testoni:** Pasi keni ndryshuar rregullat e bllokimit, gjithmonë testoni nga një llogari që ka kaluar datën e vjetrit për të siguruar se nuk po ndaloni pa gabim anëtarët aktivë.
 *   **Dokumentacioni i Plugin-ut:** Nëse përdorni një plugin specifik për menaxhimin e anëtarëve, kontrolloni dokumentacionin e tij (plugin settings) sepse mënyra se si bllokohet mund të ndryshojë nga një sistem tjetër.
 
 Ky udhëzues shpjegon se si Ultimate Multisite menaxhon skadimin e privatësisë (membership expiration), mbarimin e provave dhe bllokimin e faqeve frontend. Ai mbulon ciklin e një privatës nga aktive në skaduar, cilat janë cilësimet që kontrollojnë nëse faqet janë blokuar dhe çfarë duhet të kontrolloni kur faqet mbeten të aksesueshme edhe pas skadimit të privatësisë.
 
-## Cicli i Statusit i Anëtarisë
+## Cicli i Statusit i Anëtarisë {#what-visitors-see-when-a-site-is-blocked}
 
 Çdo anëtarësi në Ultimate Multisite ka një nga statuset më poshtë:
 
 :::note A privatësi falas është për gjatë jetës. Privatësitë falas nuk zvieh automatikisht. Ultimate Multisite i trajton ato si akses për gjatë jetës, kështu që nuk përfshihen në kontrollin e skadimit përveçse administratorja ndryshon statusin ose lëviz klientin te një produkt tjetër.
 
-# Përdorimi i WooCommerce me WordPress
+# Përdorimi i WooCommerce me WordPress {#what-gets-blocked-and-when}
 
 Ky dokument ju ndihmon të kuptoni se si të përdorni pluginin WooCommerce në një instalim WordPress. Kjo është një platformë fantastike për të krijuar dyqane online dhe tregime elektronike (e-commerce).
 
-## Përgatitja e Parë: Instalimi i WooCommerce
+## Përgatitja e Parë: Instalimi i WooCommerce {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Për të filluar, duhet të keni një instalim aktiv të WordPress. Hapi më i parë është të shkarkoni pluginin WooCommerce nga [WordPress Plugin Directory](https://wordpress.org/plugins/woocommerce/).
 
 1. **Shkarkoni dhe Instalo:** Shkarkoni file-in e WooCommerce dhe pastaj, në dashboard-in tuaj të WordPress-it, shko te "Plugins" (Pluginet) > "Add New" (Shto i ri) dhe zgjidhni pluginin për ta instaluar.
 2. **Konfigurimi:** Pasi të instaloni, do të keni një ekran me opsione për të konfiguruar dyqanin tuaj – siç është lloji i monedhas, adresat e shpërndarjes dhe më shumë detaje teknike. Sigurohuni që të plotësoni të gjitha informacionet e nevojshme para se të vazhdoni.
 
-## Konfigurimi i Bazës së Të Dhënave (Database)
+## Konfigurimi i Bazës së Të Dhënave (Database) {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 WooCommerce kërkon disa informacione shtesë për të funksionuar si një dyqan online, veçanërisht në lidhje me menaxhimin e produkteve dhe pagesave. Kjo bazohet te MySQL database-i i WordPress-it.
 
 Nëse keni nevojë për ndryshime më të thella në strukturën e bazës së të dhënave, mund të përdorni një plugin si **[All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)** ose mjetet e menaxhimit të bazës së të dhënave që ofrohen nga hosting-u juaj.
 
-## Menaxhimi i Produkteve (Products)
+## Menaxhimi i Produkteve (Products) {#2-check-the-frontend-block-grace-period}
 
 Kryesimi i produkteve është thelbësor për çdo dyqan online. Kjo lejon klientët të shohin dhe të blin gjithçka që keni në magazinë tuaj.
 
 1. **Shtoni Produkte:** Shko te "Products" (Produkte) > "Add New" (Shto i ri). Këtu mund të vendosni titullin, përshkrimin e produktit, çmimin dhe imazhet.
 2. **Variante:** Nëse keni produkte me variabël (p.sh., një t-shirt në blu, ku mund të zgjedhësh ngjyrën), përdorni opsionet e "Product Variations" për të menaxhuar këto ndryshime lehtësisht.
 
-## Pagesa dhe Menusit
+## Pagesa dhe Menusit {#3-confirm-the-membership-status-has-actually-changed}
 
 Për të krijuar një dyqan profesional, keni nevojë për faqet kryesore si: Home (Kryesore), About Us (Rreth Nesh), Contact Us (Kontakti) dhe Cart (Karë).
 
 * **Pagesat:** Krijoni këto faqe përmes editorit i WordPress-it ose duke përdorur një page builder.
 * **Menusi:** Pasi të keni faqet, shko te "Appearance" (Pamja) > "Menus" (Menujt). Këtu mund të vendosni menunit tuaj në navigimin e faqes që klientët do të shohin.
 
-## Pagesa të Pagimit (Checkout) dhe Stripe
+## Pagesa të Pagimit (Checkout) dhe Stripe {#4-verify-action-scheduler-is-running}
 
 Pjesa më kritike është procesi i pagesës. WooCommerce ofron një sistem të integruar për të marrë paraqitjet nga klientët.
 
-### Konfigurimi i Pagarit
+### Konfigurimi i Pagarit {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 1. **Payment Gateways:** Shko te "WooCommerce" > "Settings" (Opsione) > "Payments". Këtu mund të shtoni metoda si procesi me banka, PayPal ose Stripe.
 2. **Stripe Integration:** Nëse dëshironi të pranoni pagesat me kartë krediti/debito, integrimi me **Stripe** është opsioni më i zakonshëm dhe i sigurtuar. Ju do të keni nevojë për një llogari Stripe dhe të ndiqni udhëzimet e tyre për të marrë "API keys" ose token-e të tjera që do t'i vendosni në WordPress.
 
-### Procesi i Checkout-ut
+### Procesi i Checkout-ut {#6-check-the-expiration-grace-period-cron-level}
 
 Kur një klient shtyn produkte në karë (Cart) dhe shkon te checkout, ai do të ndjekë hapat e përcaktuara nga WooCommerce për të plotësuar informacionin e dorës dhe më pas të bëjë pagesën duke përdorur metodën që keni konfiguruar.
 
-## Përmbledhje
+## Përmbledhje {#7-manually-expire-a-membership}
 
 Përdorimi i WooCommerce është një proces i ndarë:
 1. **Instalimi:** Kthehu te plugin-i në WordPress.
@@ -115,7 +115,7 @@ Nëse keni ndonjë pyetje specifike rreth një hapi, ju lutem më tregoni!
 | **Përcaktuar si të Ekspiruar** | Kaloni datën e skadimit dhe periudhën e lehtësisë pa rikuperuar |
 | **Anuluar** | Anuluar qartë nga klient ose administrator |
 
-### Si Kthehen Aplikimet (Memberships) në Status të Ekspiruar
+### Si Kthehen Aplikimet (Memberships) në Status të Ekspiruar {#summary}
 
 Ultimate Multisite ekzekuton një kontroll sfond **çdo orë** që kërkon anëtaritë që duhet të marren si të skaduluara. Ky kontroll përdor [Action Scheduler](https://actionscheduler.org/) (jo WP-Cron direkt) dhe ekzekutohet si veprim i orari `wu_membership_check`.
 
@@ -124,7 +124,7 @@ Kontrolli i skadimit ka një periudhë leje të **integruar prej 3 ditësh** si 
 :::info
 Periudha e lejeve për skadole 3-ditore është e veçuar nga cilësimi i Periudhës së Lejes për Bloku Frontend, i përshkruar më poshtë. Periudha e lejeve për skadole kontrollohet kur **statusi ndryshon** nga aktiv/në pritje në skaduar. Periudha e lejeve për bloku frontend kontrollohet kur **faqja është bllokuar** pasi statusi tashmë ka ndryshuar.
 
-#### Abonimet me Rritje Automjake (Auto-Renewing) vs. Pa Rritje Automjake (Non-Auto-Renewing)
+#### Abonimet me Rritje Automjake (Auto-Renewing) vs. Pa Rritje Automjake (Non-Auto-Renewing) {#developer-reference}
 
 Ky ndarje është shumë i rëndësishëm për të kuptuar se si funksionon zgjatja e periudhës së abonimit:
 

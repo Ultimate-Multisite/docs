@@ -1,98 +1,106 @@
 ---
 title: Kedvezménykódok létrehozása
 sidebar_position: 19
-_i18n_hash: 66179a52645793d48bb6cb9a9e47c016
+_i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Kedvezménykódok létrehozása (v2)
+# Kedvezménykódok létrehozása (v2) {#creating-discount-codes-v2}
 
 _**FONTOS MEGJEGYZÉS: Ez a cikk az Ultimate Multisite 2.x verziójára vonatkozik.**_
 
-Az Ultimate Multisite segítségével kedvezménykódokat hozhatsz létre, amelyekkel ügyfeleid kedvezményt kaphatnak előfizetéseikre. A létrehozásuk pedig egyszerű!
+Az Ultimate Multisite segítségével kedvezménykódokat hozhatsz létre, hogy kedvezményeket adj ügyfeleidnek az előfizetéseikre. A létrehozásuk pedig egyszerű!
 
-## Kedvezménykódok létrehozása és szerkesztése
+## Kedvezménykódok létrehozása és szerkesztése {#creating-and-editing-discount-codes}
 
-Kedvezménykód létrehozásához vagy szerkesztéséhez navigálj az **Ultimate Multisite > Discount Codes** menüpontra.
+Kedvezménykód létrehozásához vagy szerkesztéséhez menj ide: **Ultimate Multisite > Kedvezménykódok**.
 
-![](/img/config/discount-codes-list.png)
+![Kedvezménykódok listája — üres állapot, mielőtt bármilyen kód létezne](/img/config/discount-codes-empty.png)
 
 Itt láthatod a már létrehozott kedvezménykódok listáját.
 
-Kattints az **Add Discount** **Code** gombra új kupon létrehozásához, vagy szerkeszd a meglévőket úgy, hogy föléjük viszed az egeret és a **Edit** lehetőségre kattintasz.
+Kattinthatsz a **Kedvezmény** **kód hozzáadása** elemre egy új kupon létrehozásához, vagy szerkesztheted a meglévőket úgy, hogy föléjük viszed az egeret, majd a **Szerkesztés** elemre kattintasz.
 
-![Kedvezménykódok listája hover műveletekkel](/img/config/discount-codes-list.png)
+![Kedvezménykódok listája, ahol az egér fölévitele után megjelennek a Szerkesztés és Törlés hivatkozások](/img/config/discount-codes-list-hover.png)
 
-![Add Discount Code gomb](/img/config/discount-codes-list.png)
+![Kedvezménykód hozzáadása gomb az oldal fejlécében](/img/config/discount-codes-add-button.png)
 
-Átirányítunk arra az oldalra, ahol létrehozhatod vagy szerkesztheted a kuponkódot. Ebben a példában egy újat fogunk létrehozni.
+Átirányítunk arra az oldalra, ahol létrehozhatod vagy szerkesztheted a kuponkódodat. Ebben a példában egy újat fogunk létrehozni.
 
-![Kedvezménykód szerkesztési oldala](/img/config/discount-codes-list.png)
+![Kedvezménykód szerkesztőoldala, minden szekcióval láthatóan](/img/config/discount-code-edit.png)
 
 Nézzük meg az itt elérhető beállításokat:
 
-**Enter Discount Code:** Ez csak a kedvezménykód neve. Ez nem az a kód, amelyet ügyfeleidnek a pénztárűrlapon kell majd használniuk.
+**Kedvezménykód megadása:** Ez egyszerűen a kedvezménykódod neve. Ez nem az a kód, amelyet az ügyfeleidnek a fizetési űrlapon kell használniuk.
 
-**Description:** Itt röviden leírhatod, mire szolgál ez a kupon.
+**Leírás:** Itt röviden leírhatod, mire szolgál ez a kupon.
 
-![Kedvezménykód neve és leírása mezők](/img/config/discount-codes-list.png)
+![Kedvezménykód neve és leírás mezői a szerkesztőoldal tetején](/img/config/discount-code-description.png)
 
-**Coupon code:** Itt határozod meg azt a kódot, amelyet ügyfeleidnek a fizetéskor meg kell adniuk.
+A kedvezménykódot aktívként vagy inaktívként is megtekintheted:
 
-![Kuponkód mező](/img/config/discount-codes-list.png)
+![Kedvezménykód aktív állapota](/img/config/discount-code-active.png)
 
-**Discount:** Itt beállíthatsz **százalékos** vagy **fix összegű** kedvezményt a kódhoz.
+**Kuponkód:** Itt adhatod meg azt a kódot, amelyet az ügyfeleidnek a fizetés során be kell írniuk.
 
-![Százalékos vagy fix összegű kedvezmény beállítása](/img/config/discount-codes-list.png)
+![Kuponkód mező, ahová az ügyfelek a fizetéskor beírják a kódot](/img/config/discount-code-coupon-field.png)
 
-**Apply to renewals:** Ha ez az opció ki van kapcsolva, a kedvezménykód csak az **első fizetésre** vonatkozik. Az összes további fizetésnél nem lesz kedvezmény. Ha ez az opció be van kapcsolva, a kedvezménykód az összes jövőbeli fizetésre érvényes lesz.
+**Kedvezmény:** Itt beállíthatsz **százalékos** vagy **fix összegű** pénzbeli kedvezményt a kedvezménykódodhoz.
 
-**Setup fee discount:** Ha ez az opció ki van kapcsolva, a kuponkód **nem ad kedvezményt a rendelés beállítási díjára**. Ha ez az opció be van kapcsolva, beállíthatod azt a kedvezményt (százalékos vagy fix összegű), amelyet ez a kuponkód a csomagok beállítási díjára alkalmazni fog.
+![Kedvezmény összegének beállítása százalékos vagy fix összegű legördülővel](/img/config/discount-code-amount.png)
 
-![Apply to renewals és setup fee discount opciók](/img/config/discount-codes-list.png)
+**Megújításokra alkalmazás:** Ha ez az opció ki van kapcsolva, ez a kedvezménykód csak az **első fizetésre** lesz alkalmazva. Az összes többi fizetésre nem jár kedvezmény. Ha ez az opció be van kapcsolva, a kedvezménykód minden jövőbeli fizetésre érvényes lesz.
 
-**Active:** Manuálisan aktiválhatod vagy deaktiválhatod ezt a kuponkódot.
+**Telepítési díj kedvezménye:** Ha ez az opció ki van kapcsolva, a kuponkód **nem ad kedvezményt a rendelés telepítési díjára**. Ha ez az opció be van kapcsolva, beállíthatod azt a kedvezményt (százalékos vagy fix összegű), amelyet ez a kuponkód a csomagjaid telepítési díjára alkalmaz.
 
-![Kedvezménykód aktív kapcsolója](/img/config/discount-codes-list.png)
+![Megújításokra alkalmazás és telepítési díj kedvezménye kapcsolóopciók](/img/config/discount-code-renewals.png)
 
-Az **Advanced Optio** **ns** alatt a következő beállításokat találod:
+**Aktív:** Manuálisan aktiváld vagy deaktiváld ezt a kuponkódot.
 
-**Limit uses:**
+![Aktív kapcsoló a kedvezménykód manuális engedélyezéséhez vagy letiltásához](/img/config/discount-code-active.png)
 
-  * **Uses:** Itt láthatod, hányszor használták fel a kedvezménykódot.
+A **Speciális beállítások** alatt a következő beállítások találhatók:
 
-  * **Max uses:** Ez korlátozza, hányszor használhatják a felhasználók ezt a kedvezménykódot. Például, ha 10-et írsz ide, a kupon csak 10 alkalommal használható fel. E limit elérése után a kuponkód már nem használható.
+![Kedvezménykód speciális beállításai](/img/config/discount-code-advanced.png)
 
-![Felhasználási limit beállítása uses és max uses mezőkkel](/img/config/discount-codes-list.png)**Start & expiration dates:** Itt lehetőséged van kezdő dátumot és/vagy lejárati dátumot beállítani a kuponodhoz.
+**Használatok korlátozása:**
 
-![Kezdő és lejárati dátum mezők](/img/config/discount-codes-list.png)
+  * **Használatok:** Itt láthatod, hányszor használták a kedvezménykódot.
 
-**Limit products:** Ha bekapcsolod a **Select products** opciót, megjelenik az összes terméked. Manuálisan kiválaszthatod (be- vagy kikapcsolással), mely termékekre alkalmazható ez a kuponkód. Az itt kikapcsolt termékek nem változnak, ha ügyfeleid megpróbálják rájuk használni ezt a kuponkódot.
+  * **Maximális használatok:** Ez korlátozza, hogy a felhasználók hányszor használhatják ezt a kedvezménykódot. Például, ha ide 10-et írsz, a kupon csak 10 alkalommal használható. E korlát után a kuponkód már nem használható.
 
-![Termékkorlátozás kiválasztó kapcsolók](/img/config/discount-codes-list.png)
+![Használatok korlátozása beállítás az aktuális használati számmal és a maximális használatok mezővel](/img/config/discount-code-limit-uses.png)
 
-Miután beállítottad ezeket az opciókat, kattints a **Save Discount Code** gombra a kupon mentéséhez, és kész is!
+**Kezdő és lejárati dátumok:** Itt lehetőséged van kezdő dátumot és/vagy lejárati dátumot hozzáadni a kuponodhoz.
 
-![Save Discount Code gomb](/img/config/discount-codes-list.png)
+![Kezdő és lejárati dátum mezők a kedvezménykód ütemezéséhez](/img/config/discount-code-dates.png)
 
-A kupon most már a listádon van, és onnan **szerkesztheted vagy törölheted**.
+**Termékek korlátozása:** Ha bekapcsolod a **Termékek kiválasztása** opciót, az összes terméked megjelenik. Lehetőséged lesz manuálisan kiválasztani (be- vagy kikapcsolással), hogy melyik termék fogadhatja el ezt a kuponkódot. Azok a termékek, amelyek itt ki vannak kapcsolva, nem mutatnak semmilyen változást, ha az ügyfeleid megpróbálják hozzájuk használni ezt a kuponkódot.
 
-![Kedvezménykód a listában szerkesztési és törlési opciókkal](/img/config/discount-codes-list.png)
+![Termékek korlátozása szekció termékenkénti kapcsolókkal](/img/config/discount-code-limit-products.png)
 
-### 
+Miután beállítottad az összes ilyen opciót, kattints a **Kedvezménykód mentése** gombra a kupon mentéséhez, és kész is!
 
-### URL paraméterek használata:
+![Kedvezménykód mentése gomb a szerkesztőoldal alján](/img/config/discount-code-save.png)
 
-Ha testre szeretnéd szabni az árazási táblázataidat, vagy egy szép kuponkód oldalt szeretnél készíteni a weboldaladhoz, és automatikusan alkalmazni szeretnéd a kedvezménykódot a pénztárűrlapon, ezt URL paraméterekkel teheted meg.
+A kupon most már szerepel a listádban, és onnan rákattinthatsz a **szerkesztésre vagy törlésre**.
 
-Először meg kell szerezned a csomag megosztható linkjét. Ehhez navigálj az **Ultimate Multisite > Products** menüpontra és válassz ki egy csomagot.
+![Kedvezménykód sora a listában Szerkesztés és Törlés műveletekkel egér fölévitelekor](/img/config/discount-codes-list-hover.png)
 
-Kattints a **Click to Copy Shareable Link** gombra. Ez megadja a megosztható linket ehhez a konkrét csomaghoz. Esetünkben a kapott megosztható link: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+###
 
-![Termékoldal megosztható link gombbal](/img/config/products-list.png)
+### URL-paraméterek használata: {#using-url-parameters}
 
-A kedvezménykód alkalmazásához erre a konkrét csomagra egyszerűen add hozzá a **?discount_code=XXX** paramétert az URL-hez. Ahol az **XXX** a kuponkód.
+Ha testre szeretnéd szabni az ártáblázataidat, vagy egy szép kuponkódoldalt szeretnél készíteni a webhelyedhez, és automatikusan szeretnél kedvezménykódot alkalmazni a fizetési űrlapodra, ezt URL-paraméterekkel teheted meg.
+
+Először meg kell szerezned a csomagod megosztható hivatkozását. Ehhez menj ide: **Ultimate Multisite > Termékek**, és válassz ki egy csomagot.
+
+Kattints a **Kattints a megosztható hivatkozás másolásához** gombra. Ez megadja az adott csomag megosztható hivatkozását. A mi esetünkben a megadott megosztható hivatkozás ez volt: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/)_._
+
+![Termékoldal megosztható hivatkozás gombbal](/img/config/products-list.png)
+
+Ahhoz, hogy a kedvezménykódodat erre a konkrét csomagra alkalmazd, egyszerűen add hozzá a **?discount_code=XXX** paramétert az URL-hez. Ahol az **XXX** a kuponkód.
 
 Ebben a példában az **50OFF** kuponkódot fogjuk alkalmazni erre a konkrét termékre.
 
-Az URL ehhez a csomaghoz az 50OFF kedvezménykóddal alkalmazva így fog kinézni: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
+Ennek a konkrét csomagnak az URL-je az alkalmazott 50OFF kedvezménykóddal így fog kinézni: [_**mynetworkdomain.com/register/premium/**_](http://mynetworkdomain.com/register/premium/) _**?discount_code=50OFF**_.
 
-### 
+###

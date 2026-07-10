@@ -1,0 +1,117 @@
+---
+title: Multae Monetae
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multae Monetae {#multi-currency}
+
+Ultimate Multisite: Multae Monetae reti tuo permittit solutiones pluribus monetis accipere. Pretia automatice convertit rationibus permutationis vivis vel manualibus utens, sinit te pretia exacta pro singulis productis cuiuslibet monetae statuere, atque monetam praelatam cuiusque visitatoris per geolocationem detegit — omnia ex uno Dashboard administrativo administrata.
+
+## Praecipuae Proprietates {#key-features}
+
+- **Automatica conversio rationis permutationis** — pretia ex moneta tua basali convertuntur rationibus a provisore electo acceptis
+- **Substitutiones pretiorum per-productum** — pretia exacta certae monetae in quolibet producto statue ut conversionem automaticam praetereas
+- **Campus inscriptionis selectoris monetae** — clientibus permittit monetam praelatam in solutione/inscriptione eligere
+- **Plures provisores rationum permutationis** — ECB, Frankfurter, Stripe, aut rationes omnino manuales
+- **Detectio monetae geolocatione nixa** — monetam quae patriae visitatoris congruit automatice praeeligit
+- **Dashboard administratorium** — monetas activas, rationes permutationis, et provisoriis optiones ex uno loco administra
+
+## Requisita {#requirements}
+
+- Ultimate Multisite 2.0.0 aut superior
+- Installatio WordPress Multisite
+- PHP 7.4 aut superior
+
+## Installatio {#installation}
+
+1. Fasciculos additamenti ad `/wp-content/plugins/ultimate-multisite-multi-currency` impone
+2. Additamentum per velum **Additamenta** in WordPress activa (Network Activate)
+3. Naviga ad **Ultimate Multisite → Multae Monetae** ut Dashboard administratorium aperias
+4. Monetas quas accipere vis adde et provisoris rationum permutationis configurationem constitue
+
+## Configuratio {#configuration}
+
+### Dashboard Administratorium {#admin-dashboard}
+
+Dashboard administratorium Multarum Monetarum (**Ultimate Multisite → Multae Monetae**) locus centralis est ad:
+
+- Monetas addendas, efficiendas, vel debilitandas
+- Provisorem rationum permutationis eligendum et rationes postulante renovandas
+- Rationes actuales omnium monetarum activarum recognoscendas
+- Rationes manuales statuendas cum provisores automatici idonei non sunt
+
+### Provisores Rationum Permutationis {#exchange-rate-providers}
+
+| Provisor | Descriptio |
+|---|---|
+| **ECB** | Banca Centralis Europaea — rationes cotidianae liberae pro retibus in EUR fundatis |
+| **Frankfurter** | API speculum ECB fonte aperto — liberum, nulla clavis API requisita |
+| **Stripe** | Rationibus FX vivis Stripe utitur — integrationem Stripe activam requirit |
+| **Manual** | Rationes directe inseris; nullae vocationes API externae |
+
+Provisorem tuum sub **Ultimate Multisite → Multae Monetae → Optiones → Provisor Rationis Permutationis** elige. Rationes quovis tempore manualiter renovari possunt aut ut automatice renoventur ordinari.
+
+### Substitutiones Pretiorum Per-Productum {#per-product-pricing-overrides}
+
+Cum conversio automatica satis precisa non est, pretium exactum pro certa moneta in quolibet producto statuere potes:
+
+1. Editorem producti aperi (**Ultimate Multisite → Producta → Edita**)
+2. Ad sectionem **Pretia Monetae** descende
+3. Pretium exactum pro qualibet moneta quam substituere vis insere
+4. Productum serva
+
+Producta sine substitutione pretio converso ex moneta tua basali utuntur.
+
+### Campus Inscriptionis Selectoris Monetae {#currency-selector-signup-field}
+
+Campus selectoris monetae fluxui inscriptionis/solutionis tuae addi potest, ut clientes monetam praelatam in registratione eligant:
+
+1. Vade ad **Ultimate Multisite → Multae Monetae → Optiones**
+2. Effice **Monstra selectorem monetae in inscriptione**
+3. Ad arbitrium monetam praedefinitam statue aut geolocationem sinas valorem praelectum determinare
+
+Moneta selecta cum subscriptione servatur et ad omnem subsequentem exactionem adhibetur.
+
+### Detectio Monetae Geolocatione Nixa {#geolocation-based-currency-detection}
+
+Cum detectio geolocationis efficitur, additamentum patriam visitatoris ad monetam refert eamque in campo selectoris monetae praeeligit. Ut efficias:
+
+1. Vade ad **Ultimate Multisite → Multae Monetae → Optiones**
+2. Effice **Detege monetam ex loco visitatoris**
+3. Patrias ad monetas in tabula **Mappatio Geolocationis** refer
+
+Si nulla mappatio pro patria visitatoris exstat, moneta basalis retis tamquam subsidium adhibetur.
+
+## Quaestiones Saepe Rogatae {#frequently-asked-questions}
+
+### Quid fit si provisor rationum permutationis praesto non est? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+Additamentum ad ultimas rationes feliciter acceptas recidit. Si nullae rationes umquam acceptae sunt, ad rationes manuales quas configuravisti recidit. Commendatur ut rationes manuales tamquam rete securitatis configures.
+
+### Possumne diversos provisores pro diversis monetis uti? {#can-i-use-different-providers-for-different-currencies}
+
+Non — unus provisor uno tempore pro omnibus monetis activus est. Utere **Manual** si plenam potestatem super rationibus singulis desideras.
+
+### Num geolocatio additamentum separatum requirit? {#does-geolocation-require-a-separate-plugin}
+
+Nullum additamentum externum geolocationis requiritur. Additamentum detectione IP-ad-patriam in WordPress inclusa utitur. Ad maiorem accuratiam, ministerium geolocationis dedicatum per uncinos filtrorum praebitos integrari potest.
+
+### Num substitutiones per-productum ante tributum an post tributum applicantur? {#are-per-product-overrides-applied-before-or-after-tax}
+
+Substitutiones per-productum pretium ante tributum in moneta destinata statuunt. Tributum supra pretium substitutionis calculatur configuratione tributi iam exsistente utens.
+
+## Index Mutationum {#changelog}
+
+### Versio 1.0.0 — Emissa die 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Novum: Sustentatio multarum monetarum cum conversione automatica rationum permutationis
+- Novum: Substitutiones pretiorum per-productum pro pretiis exactis certae monetae
+- Novum: Campus inscriptionis selectoris monetae pro fluxu solutionis
+- Novum: Provisores rationum permutationis: ECB, Frankfurter, Stripe, et manuales
+- Novum: Detectio monetae geolocatione nixa
+- Novum: Dashboard administratorium ad monetas et rationes permutationis administrandas
+- Emendatio: Dashboard pretia semper in moneta basali ostendebat, neglecta moneta selecta

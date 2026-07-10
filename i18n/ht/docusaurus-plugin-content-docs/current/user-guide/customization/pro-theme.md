@@ -3,7 +3,7 @@ title: Tèm PRO
 sidebar_position: 12
 _i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Kòman Customize Panèl Admin ou ak PRO Theme la
+# Kòman Customize Panèl Admin ou ak PRO Theme la {#customizing-your-admin-panel-with-pro-theme}
 
 Souvan lè nou ap fè travay pou kliyan yo, nou gen bezwen bay yo yon eksperyans espesyal nan dashboard WordPress la. Si ou ap chèche yon aparans ki pi pwofesyonèl, PRO Theme ka ede w.
 

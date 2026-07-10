@@ -1,0 +1,194 @@
+---
+title: Kalozera wa Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Cholozera cha Hooks {#hooks-reference}
+
+Zolemba zopangidwa zokha za **59 zochita** ndi **118 zosefera** mu Ultimate Multisite.
+
+## Zochita {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Imayaka moto musanatumize ku redirect yotsimikizira.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Imayaka moto nthawi yomweyo cookie yotsimikizira isanakhazikitsidwe.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Imayaka moto nthawi yomweyo cookie yotsimikizira wolowa isanakhazikitsidwe.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Lolani opanga mapulogalamu kuwonjezera zolumikizana zawo za host provider kudzera mu wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Imayambitsa pamene ma dependencies onse atakwezedwa
+- [wu_activation](./Actions/wu_activation) — Lolani magawo ena a plugin kulumikiza machitidwe awo a activation
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Lolani opanga plugin kulumikiza functions pambuyo poti wogwiritsa ntchito kapena super admin wasintha template ya tsamba
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Nthawi zina, tidzafunika kukweza mphamvu zowonjezera kuti tigwire actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Imayaka moto processing ya pempho lofufuza isanayambe.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Lolani opanga mapulogalamu kusintha zina zowonjezera pa checkout object.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Lolani opanga mapulogalamu kusintha zina zowonjezera pa checkout object.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Imayaka moto field isanawonjezedwe ku fomu ya checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Lolani opanga mapulogalamu kuyambitsa hooks zowonjezera.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Tisanayambe kupanga checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Imayaka moto pambuyo poti checkout order yasonkhanitsidwa kwathunthu.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Lolani opanga plugin kuwonjezera widgets ku Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Lolani opanga plugin kuwonjezera widgets ku Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Lolani magawo ena a plugin kulumikiza machitidwe awo a deactivation
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Lolani opanga plugin kuwonjezera actions ku njira yochotsa
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Imayaka moto pamene domain yakhala domain yoyamba ya tsamba.
+- [wu_domain_created](./Actions/wu_domain_created) — Imayambitsa pamene domain mapping yatsopano yawonjezedwa.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Yayatsidwa pambuyo poti core Domain Mapping yathu yakwezedwa
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ma plugins ena adzasunga URL mapping isanakhale yogwira ntchito kapena adzamanga ma URL m'njira yosiyana yomwe siyikuphatikizidwa o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Lolani opanga mapulogalamu kulumikiza pambuyo poti kubwereza tsamba kwachitika.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Lolani opanga plugin kuwonjezera hooks zowonjezera
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook yoyeretsa kowonjezera
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Imayaka moto musanagwire pempho la modal yowonjezera domain yatsopano.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Lolani opanga plugin kusunga meta data m'njira zosiyanasiyana ngati akufunikira.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Lolani opanga plugin kusunga meta data ya wogwiritsa ntchito m'njira zosiyanasiyana ngati akufunikira.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Imayaka moto pamene token ya magic link yosavomerezeka yakumanidwa nayo.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Imayaka moto pambuyo poti wogwiritsa ntchito walowa kudzera mu magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Lolani opanga plugin kuchita zinthu zowonjezera pamene kasitomala wawonjezedwa.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Imayaka moto pambuyo poti MCP abilities zalembetsedwa pa entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Imayaka moto pambuyo poti MCP adapter yayambitsidwa.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Imayambitsa pambuyo poti umembala wathetsedwa.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Imayambitsa pambuyo pa kukonzanso umembala.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Imayambitsa umembala usanathe.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Imayambitsa kukonzanso umembala kusanachitike.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Imayaka moto pambuyo poti object yasungidwa mu database.
+- [wu_page_added](./Actions/wu_page_added) — Lolani opanga plugin kuyendetsa zinthu zowonjezera pamene masamba alembetsedwa.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Lolani opanga plugin kuwonjezera content yowonjezera pambuyo poti tasindikiza tsamba
+- [wu_page_before_render](./Actions/wu_page_before_render) — Lolani opanga plugin kuwonjezera content yowonjezera tisanayisindikize tsamba.
+- [wu_page_load](./Actions/wu_page_load) — Lolani opanga plugin kuwonjezera hooks zowonjezera ku masamba athu.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Lolani opanga plugin kuwonjezera content yowonjezera pambuyo poti tasindikiza tsamba
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Lolani opanga plugin kuwonjezera content yowonjezera tisanayisindikize tsamba.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Lolani opanga plugin kuwonjezera hooks zowonjezera ku masamba athu.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Imayaka moto pambuyo poti widgets zalembetsedwa pa tsambali.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Imayambitsidwa kuti ilole ma addons kulumikiza ma module a kuthekera ku ma integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Imayambitsidwa kuti ilole ma integrations kulembetsa okha.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Lolani njira zina kulembetsedwa.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Lolani opanga plugin kuwonjezera zochita ku ndondomeko yosunga
+- [wu_site_created](./Actions/wu_site_created) — Imayambitsidwa pambuyo poti site yapangidwa kwa nthawi yoyamba.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Lolani opanga plugin kuwonjezera ma hook owonjezera, ngati pakufunika.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Imathamanga mukakhala mkati mwa template previewer context.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Imayambitsa enqueue scripts hook.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Imayambitsidwa pambuyo poti chinthu chasungidwa mu database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Imayambitsidwa pambuyo poti chinthu chasungidwa mu database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Imayambitsidwa pambuyo poti chinthu chasungidwa mu database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Lolani opanga plugin kuwonjezera zochita ku ndondomeko yotsegula.
+
+## Zosefera {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Imasefa nthawi ya kutha kwa cookie yotsimikizira.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Imasefa ndondomeko ya redirect yotsimikizira.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Imabwereza WP Filter yoyambirira pano, kuti zikhale bwino.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Lolani opanga plugin kusefa URL yogwiritsidwa ntchito mu previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Imasefa ngati auth cookie iyenera kutumizidwa kudzera pa HTTPS yokha.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Imasefa ngati kugwiritsa ntchito redirect yotsimikizira yotetezeka.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Imasefa ngati cookie yolowetsedwa iyenera kutumizidwa kudzera pa HTTPS yokha.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Imalola kuletsa auth cookies kuti zisatumizidwe kwenikweni kwa client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Khazikitsani URL ya redirect.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Onjezani masitepe owonjezera kudzera mu filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Lolani opanga plugin kuwonjezera variable yowonjezera ku render context padziko lonse.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Lolani opanga kudula mwachidule cheke ichi.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Imasefa minda ya modal yowonjezera domain yatsopano.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Lolani opanga kusintha line item ya setup fee.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Lolani opanga kusefa admin notices zowonjezedwa ndi Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Sefa pambuyo posinthidwa.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Tsopano, timachita ndi mitundu yonse.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Lolani opanga plugin kudula mwachidule malire.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Imasefa ngati signup fee iyenera kugwiritsidwa ntchito kapena ayi.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Sefa api arguments oyambirira.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Lolani opanga plugin kusefa minda ya billing address.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Lolani opanga kudutsa zotuluka ndi kukhazikitsa zatsopano
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Lolani opanga kudutsa code yochotsa current user.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Imasefa chiwerengero chonse cha "ndalama zobwerezabwereza".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Sefa chiwerengero chonse cha "ndalama zoyambirira".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Sefa chiwerengero chonse cha "ndalama zoyambirira".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Lolani opanga plugin kusokoneza mtengo wa credit.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Imasefa ma base domains ogawana a checkout-form omwe sayenera kukhala mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Ma API athu owonjezera field templates atsopano amalumikizana pano.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Ma API athu owonjezera field types atsopano amalumikizana pano.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Sefa mauthenga a zolakwika.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Lolani opanga kudutsa cheke ngati field imatha kutumizidwa yokha.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Lolani opanga plugin kuwonjezera aliases achikhalidwe mu form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Lolani opanga plugin kusefa malamulo a validation.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Chotsani Params osafunika.
+- [wu_contains_element](./Filters/wu_contains_element) — Lolani opanga kusintha zotsatira za kusaka koyambirira.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Lolani host providers kukhazikitsa constant mosiyana.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Imabwezera dzina labwino la magawo oyang'anira a dziko.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Imabwezera mndandanda wa mizinda ya state mu dziko.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Imabwezera mndandanda wa ma state a dziko ili.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Lolani opanga kusintha khalidwe lokhazikika ndi kukhazikitsa customer wapano mosiyana.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Lolani opanga kusintha khalidwe lokhazikika ndi kukhazikitsa membership yapano mosiyana.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Lolani opanga kusintha khalidwe lokhazikika ndi kukhazikitsa site yapano mosiyana.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Lolani opanga kusintha ma parameter a URL yoyang'anira site.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Lolani opanga plugin kusefa ma link.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Lolani opanga plugin kuwonjezera macheke atsopano kuti afotokoze zotsatira.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Tingafunike kuwonjezera ma block ena mtsogolo.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Imawonjezera filter wamba kuti ilole developers kukulitsa parser iyi kuti igwirizane ndi ma builders kapena ma plugin ena.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter ngati muyenera kukakamiza malamulo ena a password.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter username ya customer yopangidwa.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Lolani developers a plugin kusefa ma pre-set a tsamba la checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Lolani developers kuwonjezera ma slug atsopano a form kuti adumphe khalidwe ili.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Lolani developers ndi add-ons kuwonjezera masitepe atsopano a migration
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Onani zambiri za filter iyi pansipa, pa method yomweyi.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Lolani developers kusankha mitundu ya post yomwe iyenera kuwonetsedwa.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Bwezerani mizere, yosafeka
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Lolani developers kusintha ma pair a domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Imasefa zigawo za wizard za kukhazikitsa hosting integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Imasefa minda pa form. Form imadziwika ndi ID mu dzina la filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filter mitundu ya product yomwe ili ndi billing cycles odziyimira pawokha.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Lolani developers a plugin kukakamiza mkhalidwe woperekedwa wa API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Lolani developers a plugin kuwonjezera mayeso ena a development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Lolani developers a plugin kukakamiza mkhalidwe woperekedwa wa MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Pazifukwa zachitetezo, timachepetsa kuchuluka kwa zochita zomwe zilipo kuti hook ilowemo. Filter iyi imalola developers kukulitsa
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Imafufuza ngati mtundu wa post woperekedwa uloledwa pa plan iyi Lolani developers a plugin kusefa return value
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter ngati muyenera kukakamiza kutsimikizira IP address.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter ngati muyenera kukakamiza kutsimikizira user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter URL ya magic link yopangidwa.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter ngati magic links zayatsidwa.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Imasefa redirect URL mutapanga domain kukhala primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Pangani mndandanda wa exclusion wa parameters zomwe zimalepheretsa auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter kuti isinthe chisankho cha kuphatikiza MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Imasefa tsiku lotha ntchito lowerengedwa.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Imasefa tsiku lotha ntchito lowerengedwa kuti likhazikitsidwe pambuyo pa renewal.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Lolani developers kuwonjezera ma slug atsopano a update form.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter kutalika kochepa kwa password.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter mphamvu yochepa ya password yofunikira (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Lolani developers a plugin, ndi ife tokha, kuwonjezera ma link a action ku masamba athu osintha
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter ngati muyenera kufuna zilembo zazing'ono mu ma password.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter ngati muyenera kufuna manambala mu ma password.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter ngati muyenera kufuna zilembo zapadera mu ma password.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter ngati muyenera kufuna zilembo zazikulu mu ma password.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Lolani user kusintha uthenga wokhudza ma payment omwe akudikirira.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filter mitundu ya product yomwe iyenera kutengedwa ngati plans.
+- [wu_post_count](./Filters/wu_post_count) — Lolani developers a plugin kusintha chiwerengero chonse
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Lolani developers a plugin kusintha status ya post yomwe iyenera kuwerengedwa Mwachisawawa, ma post osindikizidwa ndi achinsinsi amawerengedwa
+- [wu_post_default_status](./Filters/wu_post_default_status) — Imasefa data ya object isanayikidwe mu database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Lolani developers kusefa settings musanasunge ndi Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Imasefa ngati kuloledwa kupitiriza ndi pempho kapena ayi.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Imasefa ngati kuloledwa kupitiriza ndi pempho kapena ayi.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Imasefa ngati zaloledwa kupitiriza ndi pempholo kapena ayi.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Imasefa ngati zaloledwa kupitiriza ndi pempholo kapena ayi.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Imasefa ngati zaloledwa kupitiriza ndi pempholo kapena ayi.
+- [wu_return_url](./Filters/wu_return_url) — Lolani opanga mapulogalamu kusintha gateway return URL yomwe imagwiritsidwa ntchito pambuyo pa ndondomeko za checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Lolani opanga plugin kuwonjezera ma function ambiri a zitsanzo zosakira.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Lolani opanga mapulogalamu kuwonjezera masitepe owonjezera a setup wizard.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Imasefa ngati Ultimate Multisite iyenera kupanga mbiri ya domain ya site yomwe yangopangidwa kumene.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Lolani opanga mapulogalamu kudula mwachidule kutumiziranso, kuletsa kuti zisachitike.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Imalola kulembanso kwa handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Sefa zochita zambiri zomwe zilipo pa ma site.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Sefa kuti musinthe mtengo wa get pluginssites mkati mwa netiweki.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Yambitsani/letsani luso la single-sign-on yodutsa ma domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Imasefa ma SSO URL opangidwa asanabwezedwe pa zochita za makasitomala odutsa ma domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Sefa deta ya Stripe Subscription. Itha kusintha success_url kapena cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Imasefa ma argument a payment intent.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Imasefa ID ya plan yoti ifufuzidwe. Ngati ilipo, subscription yatsopano idzagwiritsa ntchito plan iyi.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Imasefa ID ya product yoti ifufuzidwe. Ngati ilipo, subscription yatsopano idzagwiritsa ntchito product iyi.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Imasefa mtengo wa idempotency_key wotumizidwa ndi zosankha za charge za Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Imasefa mbiri ya membership yolumikizidwa ndi webhook iyi.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Imasefa meta ya deta isanapangidwe serialized kuti isungidwe mu database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Imasefa deta ya chinthu isanayikidwe mu database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Lolani opanga mapulogalamu kusintha upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Dziwani ngati mapping iyenera kugwiritsidwa ntchito
+- [wu_username_from_email](./Filters/wu_username_from_email) — Sefa dzina lolowera la kasitomala watsopano.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Lolani opanga mapulogalamu kusintha uthenga wokhudza malire a ogwiritsa ntchito a membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Imalola opanga mapulogalamu kuwonjezera mafoda owonjezera ku mndandanda wosinthika.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Imasefa ma sub_commands omwe ayatsidwa pa entity iyi.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Timayang'ana mapatani atatu poyesa kudziwa kumene tingalowetse ma constant athu:

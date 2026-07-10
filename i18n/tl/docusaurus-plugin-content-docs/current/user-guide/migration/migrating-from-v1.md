@@ -3,9 +3,9 @@ title: Paglipat mula sa V1
 sidebar_position: 17
 _i18n_hash: 1deefaf09206b741c89be6666fe2143c
 ---
-# Paglipat mula sa V1
+# Paglipat mula sa V1 {#migrating-from-v1}
 
-## Lumipat ang Ultimate Multisite mula sa orihinal nitong 1.x family ng mga release patungo sa 2.x family ng mga release.
+## Lumipat ang Ultimate Multisite mula sa orihinal nitong 1.x family ng mga release patungo sa 2.x family ng mga release. {#ultimate-multisite-has-switched-from-its-original-1x-family-of-releases-to-the-2x-family-of-releases}
 
 Ang Ultimate Multisite version 2.0 at pataas ay isang kumpletong muling pagsulat (complete rewrite) ng codebase, ibig sabihin, halos wala nang magkakapareho ang lumang bersyon at ang bago. Dahil dito, kapag nag-upgrade ka mula sa 1.x patungong 2.x, kailangan mong ilipat ang iyong data sa format na maiintindihan ng mga bagong bersyon.
 
@@ -15,7 +15,7 @@ Ang araling ito ay tatalakayin kung paano gumagana ang migrator, kung ano ang ga
 
 _**MAHALAGA: Bago ka magsimulang mag-upgrade mula version 1.x patungong version 2.0, siguraduhin mong gumawa ng backup ng database ng iyong site**_
 
-## Mga Unang Hakbang
+## Mga Unang Hakbang {#first-steps}
 
 Ang unang hakbang ay i-download ang plugin .zip file at i-install ang version 2.0 sa dashboard ng network admin mo.
 
@@ -49,19 +49,19 @@ Pagkatapos mong ilagay ang iyong key, i-click ang **Agree & Activate**.
 
 Matapos ma-activate ang lisensya, maaari ka nang magsimula sa aktwal na installation sa pamamagitan ng pag-click sa **Install** sa susunod na pahina. Awtomatikong gagawin nito ang mga kinakailangang files at database para gumana ang bersyon 2.0.
 
-## Ngayon, ang migration
+## Ngayon, ang migration {#now-the-migration}
 
 May built-in na safety feature ang migrator na magche-check sa buong multisite mo para masiguradong lahat ng data ng Ultimate Multisite mo ay maililipat nang walang problema. I-click ang **Run Check** button para simulan ang proseso.
 
 Pagkatapos mong patakbuhin ang check, may dalawang posibilidad ka: ang resulta ay maaaring **may error** o **walang error**.
 
-### May Error
+### May Error {#with-error}
 
 Kung makakuha ka ng mensahe ng error, kailangan mong makipag-ugnayan sa aming support team para matulungan ka nilang ayusin ang error. Siguraduhin na **magbigay ka ng error log** kapag gumagawa ka ng ticket. Maaari mong i-download ang log o i-click ang link na nagsasabing contact our support team. Magbubukas ito ng help widget sa kanang bahagi ng iyong page na may mga fields na naka-populate na para sa iyo, kabilang ang error logs sa ilalim ng description.
 
 _**Dahil nakakita ang sistema ng error, hindi ka makakapag-proceed sa migration patungong version 2.0. Maaari kang mag-roll back sa version 1.x para maipagpapatuloy mo ang pagpapatakbo ng iyong network hanggang maayos ang error.**_
 
-### Walang Error
+### Walang Error {#without-error}
 
 Kung hindi nakakita ng system na may error, makikita mo ang success message at isang **Migrate** button sa ibaba na magpapahintulot sa iyo na ituloy ang migration. Sa pahinang ito, maaalaala ka na gumawa ng backup ng iyong database bago magpatuloy, na lubos naming inirerekomenda. Pindutin ang **Migrate** kung mayroon ka nang backup.
 

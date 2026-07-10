@@ -3,15 +3,15 @@ title: લોગો SVG બનાવો
 sidebar_position: 1
 _i18n_hash: 82c51571104aa5627712094c7cbd7193
 ---
-# લોગો SVG બનાવો
+# લોગો SVG બનાવો {#generate-logo-svg}
 
 **Generate Logo SVG** ક્ષમતા Theme Builder ને તમારી WordPress સાઇટમાં કસ્ટમ લોગો SVG બનાવીને અને તેને એમ્બેડ કરવામાં મદદ કરે છે, જેમાં આપોઆપ નેમસ્પેસ-સેફ સેનિറ്റાઇઝેશન (namespace-safe sanitisation) પણ થાય છે.
 
-## ઝાંખી (Overview)
+## ઝાંખી (Overview) {#overview}
 
 આ ક્ષમતા તમારી સાઇટના બ્રાન્ડિંગની દિશા અને ડિઝાઇન પસંદગીઓના આધારે સ્કેલેબલ વેક્ટર ગ્રાફિક્સ (SVG) લોગો બનાવે છે. બનાવેલા SVG ને આપમેળે સેનિറ്റાઇઝ કરવામાં આવે છે જેથી ખાતરી થાય કે તે WordPress માં ઉપયોગ કરવા માટે સુરક્ષિત છે અને સાથે સાથે તેની વિઝ્યુઅલ અખંડિતતા (visual integrity) પણ જાળવી રાખે છે.
 
-## પેરામીટર્સ (Parameters)
+## પેરામીટર્સ (Parameters) {#parameters}
 
 | પેરામીટર | પ્રકાર (Type) | જરૂરી (Required) | વર્ણન (Description) |
 |-----------|--------------|-------------------|----------------------|
@@ -22,7 +22,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 | `height` | number | ના (No) | પિક્સેલમાં SVG ની ઊંચાઈ (ડિફોલ્ટ: 200) |
 | `include_text` | boolean | ના (No) | શું લોગોમાં સાઇટનું નામ ટેક્સ્ટ તરીકે શામેલ કરવું છે (ડિફોલ્ટ: true) |
 
-## આઉટપુટ ફોર્મેટ (Output Format)
+## આઉટપુટ ફોર્મેટ (Output Format) {#output-format}
 
 આ ક્ષમતા નીચેની માળખા સાથેનું SVG સ્ટ્રિંગ પરત કરે છે:
 
@@ -36,7 +36,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 }
 ```
 
-## SVG સેનિറ്റાઇઝેશન વર્તન (SVG Sanitisation Behaviour)
+## SVG સેનિറ്റાઇઝેશન વર્તન (SVG Sanitisation Behaviour) {#svg-sanitisation-behaviour}
 
 બનાવવામાં આવેલા SVG ને આપમેળે નેમસ્પેસ-સેફ સેનિറ്റાઇઝેશનમાંથી પસાર કરવામાં આવે છે જેથી:
 
@@ -48,7 +48,7 @@ _i18n_hash: 82c51571104aa5627712094c7cbd7193
 
 આ ખાતરી કરે છે કે SVG માં વધારાના સેનિറ്റાઇઝેશનની જરૂરિયાત વિના તેને સીધું WordPress માં એમ્બેડ કરવા માટે સુરક્ષિત છે.
 
-## ઉપયોગનું ઉદાહરણ (Usage Example)
+## ઉપયોગનું ઉદાહરણ (Usage Example) {#usage-example}
 
 **પ્રોમ્પ્ટ (Prompt):**
 ```
@@ -62,7 +62,7 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 - આધુનિક ડિઝાઇન સિદ્ધાંતોનું પાલન કરે છે
 - આપમેળે સેનિറ്റાઇઝ થયેલું અને ઉપયોગ માટે તૈયાર છે
 
-## Theme Builder સાથે એકીકરણ (Integration with Theme Builder)
+## Theme Builder સાથે એકીકરણ (Integration with Theme Builder) {#integration-with-theme-builder}
 
 જ્યારે Theme Builder ની ડિઝાઇન-દિશા પસંદગીનો ઉપયોગ કરવામાં આવે છે, ત્યારે Generate Logo SVG ક્ષમતા:
 
@@ -71,21 +71,21 @@ Generate a modern logo for my tech startup called "CloudSync" using blue and whi
 3. આપમેળે લોગોને તમારી સાઇટના હેડર/બ્રાન્ડિંગ વિસ્તારમાં એમ્બેડ કરે છે
 4. SVG ને WordPress મીડિયામાં કસ્ટમ લોગો તરીકે સ્ટોર કરે છે
 
-## શ્રેષ્ઠ પદ્ધતિઓ (Best Practices)
+## શ્રેષ્ઠ પદ્ધતિઓ (Best Practices) {#best-practices}
 
 - **સ્પષ્ટ શૈલી પસંદગી આપો** — તમે જે ડિઝાઇન શૈલી ઈચ્છો છે તેનું વર્ણન કરો (આધુનિક, ક્લાસિક, પ્લેફુલ, વગેરે).
 - **રંગો સ્પષ્ટ કરો** — સુસંગતતા માટે તમારા બ્રાન્ડ કલર્સનો સમાવેશ કરો.
 - **રેન્ડરિંગનું પરીક્ષણ કરો** — વિવિધ સ્ક્રીન સાઇઝ પર લોગો યોગ્ય રીતે દેખાય છે તેની ખાતરી કરો.
 - **વધુ કસ્ટમાઇઝ કરો** — સાઇઝ અને પ્લેસમેન્ટને એડજસ્ટ કરવા માટે WordPress ના લોગો કસ્ટમાઇઝેશન ટૂલ્સનો ઉપયોગ કરો.
 
-## મર્યાદાઓ (Limitations)
+## મર્યાદાઓ (Limitations) {#limitations}
 
 - SVG લોગો સ્થિર ગ્રાફિક્સ તરીકે જનરેટ થાય છે (એનિમેટેડ નહીં).
 - ઘણા તત્વોવાળા જટિલ લોગોમાં મેન્યુઅલ રિફાઇનમેન્ટની જરૂર પડી શકે છે.
 - કસ્ટમ ફોન્ટ્સને સપોર્ટ કરવામાં આવતા નથી; ટેક્સ્ટ સિસ્ટમ ફોન્ટ્સનો ઉપયોગ કરે છે.
 - ખૂબ મોટી અથવા ખૂબ નાની dimensions ગુણવત્તાને અસર કરી શકે છે.
 
-## સંબંધિત ક્ષમતાઓ (Related Abilities)
+## સંબંધિત ક્ષમતાઓ (Related Abilities) {#related-abilities}
 
 - [Validate Palette Contrast](./validate-palette-contrast.md) — એક્સેસિબિલિટી માટે કલર કોન્ટ્રાસ્ટ તપાસો
 - [Create Menu](./create-menu.md) — તમારી સાઇટ માટે નેવિગેશન મેનુ બનાવો

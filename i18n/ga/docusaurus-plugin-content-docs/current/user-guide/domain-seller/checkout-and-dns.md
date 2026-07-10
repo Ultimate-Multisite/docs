@@ -3,13 +3,13 @@ title: Fíneán Fhíneamh agus DNS Chláir
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Déanamh ar Fholas agus Ar Chuidí DNS
+# Déanamh ar Fholas agus Ar Chuidí DNS {#checkout-field-and-customer-dns-management}
 
-## An fáil chun an domáin a chur i bhfolas
+## An fáil chun an domáin a chur i bhfolas {#the-domain-selection-checkout-field}
 
 Is é an fáil **Domain Selection** (Seachtain Domáin) eolais ar chuid deiridh a leagan do chuidisteoirí an domáin. Addaigh é ar aon form fholais (checkout form) chun a bheith ag fholadh domáin a oiriúnach.
 
-### Add an fáil i form fholais
+### Add an fáil i form fholais {#adding-the-field-to-a-checkout-form}
 
 1. Déan cur isteach **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Lán an form fholais nó creoliath nua
@@ -18,7 +18,7 @@ Is é an fáil **Domain Selection** (Seachtain Domáin) eolais ar chuid deiridh 
 5. Cuidigh an oifige (see leathanach seo)
 6. Síocháin an form
 
-### Oifige fáil
+### Oifige fáil {#field-options}
 
 **Domain modes** — Déan chun conas na tabhairt a fheiceann chuidisteoirí a bheith ag fholadh. Is féidir linn a bheith ag fholadh nó ag teacht ar an t-amach go hiomlán:
 
@@ -32,7 +32,7 @@ Is é an fáil **Domain Selection** (Seachtain Domáin) eolais ar chuid deiridh 
 
 **Domain product** — Is féidir an fáil seo a chiallaigh ar cur chuig domáin a bhfuil sé ag fholadh ag cur chuig domán a shonraithe. Má níl é ag cur chuig, beann an addon ag iarraidh an cur chuig atá ag fholadh ar an TLD (Top-Level Domain) a bhféadfadh sé a chur ar cheangail.
 
-### Fáil contact na chuidisteoirí
+### Fáil contact na chuidisteoirí {#registrant-contact-fields}
 
 Nuair a bhíonn an chuidisteoir ag fholadh an tab **Register New Domain**, cur fholais contact na chuidisteoirí i form fholais in áit:
 
@@ -43,15 +43,15 @@ Nuair a bhíonn an chuidisteoir ag fholadh an tab **Register New Domain**, cur f
 
 Gabháil ar an t-aithreachas de bhWordPress. Is é seo a gáirnéadaithe ag gcothromchais agus a chosaint go háirithe tríd an API de roinnt registrars. Tá na númacnaí telefáinn ag foirmeáil go hiomlán i format oiriathúil Eorpa (e.g., `+CC.NNN`) a bhfaigheann siad go mbeidh sé ag cur isteach ar an API de roinnt registrars.
 
-### URL site atá ag cur isteach go háirithe
+### URL site atá ag cur isteach go háirithe {#auto-generated-site-url}
 
 Nuair a bhíonn cluichí ag cur isteach nó ag cur mapadh domáin, tá an fáil URL site ag cur isteach go háirithe ón domáin a bhfaigheann siad. Níl aon cheannas ag cur isteach ar fáil URL seachtain.
 
-### Cuid ar chuid ar chuid DNS
+### Cuid ar chuid ar chuid DNS {#search-behaviour}
 
 Leineann na cluichí eolais (customers) an t-aithreachas de chuid domáin ón cur isteach tríd an curteoir **My Account**, ag cur iad ar an curteoir a bhfaigheann siad.
 
-### Tíreanna ar chuid ar chuid ar chuid ar chuid
+### Tíreanna ar chuid ar chuid ar chuid ar chuid {#customer-dns-management}
 
 | Tíre | Uirlis |
 |---|---|
@@ -61,11 +61,11 @@ Leineann na cluichí eolais (customers) an t-aithreachas de chuid domáin ón cu
 | **MX** | Set an seirbhís mail exchange |
 | **TXT** | Cur isteach SPF, DMARC, curteoir, nó teachtaire eile |
 
-### Cén chuid deatúlaí (providers) a chur ar fáil curteoir DNS?
+### Cén chuid deatúlaí (providers) a chur ar fáil curteoir DNS? {#supported-record-types}
 
 Is curann féin (DNS management) (róidh, léamh, dtalaí) ar fáil le **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, agus **Openprovider**. Caithfidh domáin Hostinger a bheith ag athrú na nàimeasair (nameservers) trí Domán Seller; curann an t-aonach (integration) deamascáil domáin a bhí ar chuid deamascála (hosted domains) an t-aonach ciorcalta (core). Déanann Namecheap, GoDaddy, agus NameSilo na stát agus na n-aonacht (expiry information) domáin, ach caithfidh DNS a bheith ag curraí go díreach i bhfeidmheas an chontail (registrar's control panel).
 
-### Ciorcalta DNS deamascála (Default DNS records)
+### Ciorcalta DNS deamascála (Default DNS records) {#which-providers-support-dns-management}
 
 Is féidir leat cur síos ciorcalta DNS deamascála atá ag athrú go dtí an t-aonach nuair a bhíonn domán ag roinnt. Déanann tú cur isteach i **Settings › Domain Seller › Default DNS Records**.
 
@@ -88,6 +88,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: léamh agus léamh DNS
+### Admin: léamh agus léamh DNS {#default-dns-records}
 
 Can na chuidí aistriú (network admins) léamh agus léamh ciorcalta DNS ar aon domán chuid ischtir trí cur an t-aonach deamascála (domain's edit page) i **Network Admin › Ultimate Multisite › Domains**.

@@ -1,134 +1,138 @@
 ---
-title: Hvernig að innreiða domænumarkmið
+title: Hvernig á að stilla Domain Mapping
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Hvernig að innreiða domén-myndun (v2)
+# Hvernig á að stilla lénavörpun (v2) {#how-to-configure-domain-mapping-v2}
 
-_**VIÐSKJAL: Þessi grein er tengd Ultimate Multisite v2.x.**_
+_**MIKILVÆG ATHUGASEMD: Þessi grein vísar til Ultimate Multisite útgáfu 2.x.**_
 
-Eitt af sterkastum eiginleikum premium netwerks er möguleiki að bjóða við viðskiptavinum þínum til að setja toppdomén á sínum vöruheimildum. Eftir allt, hvað er meira faglegt: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eða [_**joesbikeshop.com**_](http://joesbikeshop.com)? Það er því að Ultimate Multisite býður upp á þennan eiginleika í innbyggð form, án þess að þarf að nota þriðja marka flugvinnu.
+Einn öflugasti eiginleiki úrvalsnets er möguleikinn á að bjóða viðskiptavinum okkar tækifæri til að tengja top-level domain við vefsvæðin sín. Þegar öllu er á botninn hvolft, hvort lítur fagmannlegra út: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) eða [_**joesbikeshop.com**_](http://joesbikeshop.com)? Þess vegna býður Ultimate Multisite upp á þennan eiginleika innbyggðan, án þess að þurfa að nota viðbætur frá þriðja aðila.
 
-## Hvað er domén-myndun?
+## Hvað er lénavörpun? {#whats-domain-mapping}
 
-Eins og nafnið sýnir, er domén-myndun möguleiki sem Ultimate Multisite býður upp til að taka eftirfarandi skynjun um sérsniðna domén og myndast það við samsvarandi vöruheimild í netinu með því að setja það sérstaka domén.
+Eins og nafnið gefur til kynna er lénavörpun sá möguleiki sem Ultimate Multisite býður til að taka við beiðni um sérsniðið lén og varpa þeirri beiðni á samsvarandi vefsvæði í netinu sem hefur þetta tiltekna lén tengt.
 
-### Hvernig settur upp domén-myndun á Ultimate Multisite Netverk þínu
+### Hvernig á að setja upp lénavörpun á Ultimate Multisite-netinu þínu {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domén-myndun krefst nokkrar innreiðinga á þínum hlutinn til að virka. Á góðan hátt hefur Ultimate Multisite sjálft automatíska vinnu fyrir þig svo þú getur auðveldlega uppfyllt kröfur.
+Lénavörpun krefst nokkurrar uppsetningar af þinni hálfu til að virka. Sem betur fer sjálfvirknivæðir Ultimate Multisite erfiðu vinnuna fyrir þig svo þú getir auðveldlega uppfyllt kröfurnar.
 
-Á síðunni við innreiðingu Ultimate Multisite mun leiðræðin sjálft kopya og installa **sunrise.php** í mælit folder. **Leiðræðin leyfir ekki að halda áfram þar sem þessi skref er ekki fullfærður**.
+Við uppsetningu Ultimate Multisite mun leiðsagnarforritið sjálfkrafa afrita og setja upp **sunrise.php** í tiltekna möppu. **Leiðsagnarforritið leyfir þér ekki að halda áfram fyrr en þessu skrefi er lokið**.
 
-<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
+<!-- Skjáskot ekki tiltækt: Ultimate Multisite uppsetningarleiðsagnarforrit með sunrise.php skrefi -->
 
-Þetta þýðir að eftir að leiðræði innreiðingar Ultimate Multisite hefur fullfærð sett upp netverk þitt, geturðu byrja með domén-myndun strax.
+Þetta þýðir að þegar Ultimate Multisite uppsetningarleiðsagnarforritið hefur lokið við að setja upp netið þitt geturðu byrjað að varpa sérsniðna léninu strax.
 
-Litið á að domén-myndun í Ultimate Multisite er ekki nauðsynleg. Þú hefur valkost hingað til að nota innbyggðar domén-myndun myndvöruheimild WordPress eða einhver annað lausn fyrir domén-myndun.
+Athugaðu að lénavörpun í Ultimate Multisite er ekki skyldubundin. Þú hefur val um að nota innbyggða lénavörpunaraðgerð WordPress Multisite eða einhverja aðra lénavörpunarlausn.
 
-Ef þarfir þér að skila úr (disable) domain mapping fyrir Ultimate Multisite til að gefa vinnu yfir í övrutt domain mapping lausn, geturðu skila úr þessum eiginleika undir **Ultimate Multisite > Settings > Domain Mapping**.
+Ef þú þarft að slökkva á lénavörpun Ultimate Multisite til að rýma fyrir öðrum lénavörpunarlausnum geturðu slökkt á þessum eiginleika undir **Ultimate Multisite > Settings > Domain Mapping**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Stillingasíða lénavörpunar sem sýnir admin-tilvísun, vörpunarskilaboð og DNS-valkosti](/img/config/domain-mapping-settings.png)
 
-Á strax undir þessari valkostnað geturðu sjá valkostninginn **Force Admin Redirect** (Skila úr stjórnarskráningu). Þetta valkostning gerir þér að kontrollera hvort viðskiptavinir geti aðgang að stjórnarskráningu sínum á sérstaklegan domain og subdomain eða bara á einum þeirra.
+Rétt fyrir neðan þennan valkost geturðu einnig séð valkostinn **Force Admin Redirect**. Þessi valkostur gerir þér kleift að stjórna því hvort viðskiptavinir þínir geti opnað admin Dashboard bæði á sérsniðna léninu sínu og undirléninu eða aðeins á öðru þeirra.
 
-Ef þú velur **Force redirect to mapped domain** (Skila úr til mappaðan domain), geta viðskiptavinir þín aðgang að stjórnarskráningu sínum bara á sérstaklegum domainum.
+Ef þú velur **Force redirect to mapped domain** geta viðskiptavinir þínir aðeins opnað admin Dashboard sitt á sérsniðnu lénunum sínum.
 
-Valkostningurinn **Force redirect to network domain** (Skila úr til netverkseign) gæti gerja svo sem það er upphætti - viðskiptavinir þín verða að geta aðgang að stjórnarskráningu sínum bara á subdomain, sjá varð þú reynir að logga inn á sérstaklegum domainum.
+Valkosturinn **Force redirect to** **network domain** gerir nákvæmlega hið gagnstæða - viðskiptavinum þínum verður aðeins leyft að opna Dashboard sín á undirléninu sínu, jafnvel þótt þeir reyni að skrá sig inn á sérsniðnu lénunum sínum.
 
-Og valkostningurinn **Allow access to the admin by both mapped domain domain and network domain** (Látar aðgang til stjórnarskráningu með mappaðan domain og netverkseign) gerir þeim að geta aðgang að stjórnarskráningum sínum á både subdomain og sérstaklegum domain.
+Og valkosturinn **Allow access to the admin by both mapped domain domain and network domain** gerir þeim kleift að opna admin Dashboard sín bæði á undirléninu og sérsniðna léninu.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Admin Redirect fellilisti opinn sem sýnir þrjá tilvísunarvalkosti](/img/config/domain-mapping-redirect-options.png)
 
-Það eru tveir hátt að mappa sérstakla domain. Fyrirnar er mappaður domainnafninn frá netverkstjórnarskráningu þinni sem super admin og aftur er mappaður meðan í subsite admin dashboard undir account page.
+Það eru tvær leiðir til að varpa sérsniðnu léni. Sú fyrri er með því að varpa léninu úr admin Dashboard netsins sem super admin og sú seinni er í gegnum admin Dashboard undirvefsvæðisins undir Account-síðunni.
 
-En fyrir þá en þú byrjar að mappa sérstakla domain yfir á eitt af subsítum í netverkinn þitt, þarftu að tryggja það að **DNS settings** (DNS-þjónusturinn) domainnafninu sé rétt sett upp.
+En áður en þú byrjar að varpa sérsniðna léninu á eitt af undirvefsvæðunum í netinu þínu þarftu að ganga úr skugga um að **DNS-stillingar** lénsins séu rétt stilltar.
 
-### Tryggja að DNS-þjónusturinn domainnafninu sé rétt sett upp
+###
 
-Til mappingur virðið, þarf að hafa í huga að domænin sem þú ert að planast að mappa á, verður að reikna til þess að hún sé sett á IP-heiti netinu þínu. Hugtakið að þú þarft Netverk-IP heitið - IP-heiti domænsins þar sem Ultimate Multisite er installað - ekki IP-heiti sérstaka domænsins sem þú vilt mappa á. Til leitarinnu eftir IP-heiti sérstaka domænsins mælum við að tryggja yfir [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), til dæmis.
+### Að ganga úr skugga um að DNS-stillingar lénsins séu rétt stilltar {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Til að mappa domænin rétt, þarf að bæta **A RECORD** í **DNS** uppsetningu sem stigur á það **IP-heiti**. Stjórnun DNS er mjög ólík við mynd eftir myndum milli þessarar registrardomæna, en er fjöldi menntunarherferða netanna til að hmarks skila því ef þú leitar eftir " _Creating A Record on XXXX_ ", þar XXXX er þín domænsregistrar (t.d. " _Creating A Record on_ _GoDaddy_ ").
+Til að vörpun virki þarftu að ganga úr skugga um að lénið sem þú ætlar að varpa vísi á IP-tölu netsins þíns. Athugaðu að þú þarft IP-tölu netsins - IP-tölu lénsins þar sem Ultimate Multisite er sett upp - ekki IP-tölu sérsniðna lénsins sem þú vilt varpa. Til að leita að IP-tölu tiltekins léns mælum við til dæmis með því að fara á [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html).
 
-Ef þú finnur það óvænt á að koma þessu í gang, **tekur í kontakt með stuðninga registrardomænsins þíns** og þeir munu geta hjálpað þér við þennan hluta.
+Til að varpa léninu rétt þarftu að bæta við **A RECORD** í **DNS**-uppsetningunni þinni sem vísar á þessa **IP-tölu**. DNS-umsýsla er mjög mismunandi milli mismunandi lénaskrásetjara, en það er nóg af leiðbeiningum á netinu um þetta ef þú leitar að " _Creating A Record on XXXX_ " þar sem XXXX er lénaskrásetjarinn þinn (t.d.: " _Creating A Record on_ _GoDaddy_ ").
 
-Ef þú planir að leika heimildum þínum að mappa sjálfa domænir sína, verður þeim að gera þetta sjálfsar á þessum hluta. Stjórnu þeim til stuðninga registrardomænsins ef þeir finna sér óvænt í að skapa A Record.
+Ef þú lendir í vandræðum með að fá þetta til að virka skaltu **hafa samband við þjónustuver lénaskrásetjarans þíns** og þau geta hjálpað þér með þennan hluta.
 
-### Mappa sérstaka domænn sem Super Admin
+Ef þú ætlar að leyfa viðskiptavinum þínum að varpa eigin lénum þurfa þeir sjálfir að vinna þennan hluta. Vísaðu þeim á þjónustukerfi skrásetjarans síns ef þeir geta ekki búið til A Record.
 
-Þegar þú ert logged in sem super admin á netinu þínu, geturðu auðveldlega bæta og stjórna sérstökum domænum með því að fara undir **Ultimate Multisite > Domains**.
+### Vörpun sérsniðins léns sem Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+Þegar þú ert skráð(ur) inn sem super admin á netinu þínu geturðu auðveldlega bætt við og stjórnað sérsniðnum lénum með því að fara undir **Ultimate Multisite > Domains**.
 
-Undir þessna yfirskrifarinnar geturðu klikkað á knappa **Add Domain** (Búa til domén) uppstofa yfir og það mun sýna þér einn modalvinnuþráð sem getur setja og fylla í **custom domain name** (eina sérsniða doméngna námsn), **the subsite** (undirsta sítið) sem þú vilt nota eina sérsniða doménna námsn á, og bestemma hvort þú vilja setja það sem **primary domain name** (primær doménna námsn) eða ekki (merki: þú getur mappa **multiple domain names to one subsite** (fleiri doménna námsn við einan undirsta sítið)).
+![Lénalistasíða í Ultimate Multisite](/img/admin/domains-list.png)
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+Á þessari síðu geturðu smellt á **Add Domain** hnappinn efst og þá opnast sprettigluggi þar sem þú getur stillt og fyllt inn **sérsniðna lénið** , **undirvefsvæðið** sem þú vilt beita sérsniðna léninu á, og ákveðið hvort þú viljir stilla það sem **aðallén** eða ekki (athugaðu að þú getur varpað **mörgum lénum á eitt undirvefsvæði**).
 
-Eftir að hafa sett allri upplýsinguna þína geturðu klikkað á knappa **Add Existing Domain** (Búa til núverandi doménna námsn) í undir.
+![Add Domain sprettigluggi með léni, vefsvæðisvali og aðallénsrofa](/img/admin/domain-add-modal.png)
 
-Þetta mun byrja ferli við að staðfesta og hapa DNS upplýsingar fyrir sérsniða doménna námsn. Þú sjáttur einnig logg á undir síðuna sem getur fylgjaferli þess sem er í gangi. Þessi ferli getur taka nokkrar mínuti að fullbera.
+Eftir að hafa sett inn allar upplýsingarnar geturðu síðan smellt á **Add Existing Domain** hnappinn neðst.
 
-Ultimate Multisite v2.13.0 skapar einnig innri doménna námsn sett með sjálf um þegar ný sítið er skráð á host sem skal séast sem domén á hverjum síti. Ef hosturinn er primær domén á netverkinu, eða einhver af sama grunndoménna fyrir færslaform (checkout-form base domains) settar í felt **Site URL** (síti námsn), blir sjálf umtoddandi mappað doménna námsn ekki skoðað svo að sama grunndomén sé framkvæmt fyrir alla síti sem notar hann.
+Þetta mun hefja ferlið við að sannreyna og sækja DNS-upplýsingar sérsniðna lénsins. Þú munt einnig sjá annál neðst á síðunni svo þú getir fylgst með ferlinu sem það fer í gegnum. Þetta ferli getur tekið nokkrar mínútur að ljúka.
 
-**Stage** eða staða þarf að bregðast frá **Checking DNS** (Staðfesting DNS) til **Ready** (Burtu/Báta) ef allt er sett upp rétt.
+Ultimate Multisite v2.13.0 býr einnig sjálfkrafa til innri lénaskráninguna þegar ný síða er stofnuð á hýsil sem á að meðhöndla sem lén fyrir hverja síðu. Ef hýsillinn er aðallén netsins, eða eitt af sameiginlegu grunnlénum greiðsluformsins sem eru stillt á **Vefslóð síðu**-reit, er sjálfvirku vörpuðu lénaskráningunni sleppt svo að sameiginlega grunnlénið haldist tiltækt fyrir allar síður sem nota það.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Þegar viðskiptavinur skráir nýtt lén í gegnum Domain Seller v1.3.0 eða nýrra, varpar Ultimate Multisite skráða léninu sjálfkrafa á netsíðu viðskiptavinarins sjálfgefið. Stjórnendur þurfa ekki lengur að bæta við sérstakri vörpuðu lénaskráningu eftir árangursríka skráningu nema þeir vilji breyta valkostum á borð við aðallénsflagg, virkjunarstöðu eða SSL-meðhöndlun.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+**Stigið** eða staðan ætti að breytast úr **Athugar DNS** í **Tilbúið** ef allt er rétt sett upp.
 
-Ef þú klikkur á doménna námsn, geturðu sjá nokkrar valkostlunar innan þessum. Látum okkur skoða þær fyrir hraða:
+<!-- Skjámynd ekki tiltæk: Lénalína sem sýnir stigið Athugar DNS í lénalistanum -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+<!-- Skjámynd ekki tiltæk: Lénalína sem sýnir stigið Tilbúið með græna stöðuvísinum -->
 
-**Stigi:** Þetta er stigi það sem domæni er á. Þegar þú hefur fyrst lagt í domænið, er það líklega á stigi **Checking DNS**. Prosessi mun skoða DNS-skilbingunum og staðfesta að þær séu réttar. Þá haldagengur domænið á stigi **Checking SSL**. Ultimate Multisite munu skoða hvort domænið hafi SSL eða ekki og skipta domænin í **Ready** (Burtu) eða **Ready (without SSL)** (Burtu án SSL).
+Ef þú smellir á lénaheitið geturðu séð nokkra valkosti inni í því. Skoðum þá í fljótu bragði:
 
-**Site:** Subdomæni sem er tengt þessum domæni. Mappað domæni mun sýna innihald þess sérstaka staðar.
+![Upplýsingasíða léns með rofum fyrir stig, síðu, virkt, aðal og SSL](/img/admin/domain-edit.png)
 
-**Active:** Þú getur skipt í þessari möguleika á á/off til að aktíva eða inaktíva domænið.
+**Stig:** Þetta er stigið sem lénið er á. Þegar þú bætir léninu fyrst við verður það líklega á stiginu **Athugar DNS**. Ferlið athugar DNS-færslurnar og staðfestir að þær séu réttar. Síðan verður lénið sett á stigið **Athugar SSL**. Ultimate Multisite athugar hvort lénið sé með SSL eða ekki og flokkar lénið þitt sem **Tilbúið** eða **Tilbúið (án SSL)**.
 
-**Is Primary Domain?:** Verkjafarþjónustu þín geta hafa fleiri mappað domæni fyrir hvert stað. Notaðu þessi möguleika til að velja hvort þetta sé primærdomæni fyrir sérstakt stað.
+**Síða:** Undirlénið sem er tengt þessu léni. Varpaða lénið mun sýna efni þessarar tilteknu síðu.
 
-**Is Secure?:** Þótt Ultimate Multisite skoði hvort domænið hafi SSL-sertifikat eða ekki áður en það aktívirðist, geturðu mannvægað að ladda domænið með eða án SSL-sertifikats. Litið þess að ef vefsítanum hefur ekki SSL-sertifikat og þú reynir að tvinga launi það með SSL, gæti það gefið þér villur.
+**Virkt:** Þú getur kveikt eða slökkt á þessum valkosti til að virkja eða óvirkja lénið.
 
-### Mappa custom domain name sem Subsite user
+**Er aðallén?:** Viðskiptavinir þínir geta haft fleiri en eitt varpað lén fyrir hverja síðu. Notaðu þennan valkost til að velja hvort þetta sé aðallénið fyrir tiltekna síðu.
 
-Administrators fyrir subsite geta mappað einnig sérstaka domæni frá dashboard admin-siti sínum fyrir subsite.
+**Er öruggt?:** Þó Ultimate Multisite athugi hvort lénið sé með SSL-vottorð eða ekki áður en það er virkjað, geturðu handvirkt valið að hlaða léninu með eða án SSL-vottorðs. Athugaðu að ef vefsíðan er ekki með SSL-vottorð og þú reynir að þvinga hana til að hlaðast með SSL, getur það valdið villum.
 
-Fyrst þarf að tryggja að þú aktívirðir þessi möguleika undir **Domain mapping** (Mappa domæni) settum. Sjá myndina hér að neðan.
+### Vörpun sérsniðins lénaheitis sem notandi undirsíðu {#mapping-custom-domain-name-as-subsite-user}
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Stjórnendur undirsíðna geta einnig varpað sérsniðnum lénaheitum úr stjórnborði undirsíðu sinnar.
 
-Þú getur mappað eða hleðja þessi möguleika undir **Plan** (Plan) level eða vörur möguleika á **Ultimate Multisite > Products**.
+Fyrst þarftu að ganga úr skugga um að þú virkir þennan valkost undir stillingunum **Lénavörpun**. Sjá skjámyndina hér að neðan.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+<!-- Skjámynd ekki tiltæk: Stillingar lénavörpunar sem leyfa notendum undirsíðna að varpa lénum með rofanum DNS-stjórnun viðskiptavina -->
 
-Þegar einir þessar valkostir eru aktíva og notandur subsiteins er leyfður að mappa sérsniðna domænsna, sjálfur notandinn á subsiteins ættu að sjá metabox undir **Account** (Notkun) -sidan sem heitir **Domains** (Domænar).
+Þú getur einnig sett eða stillt þennan valkost á **Áætlunar**-stigi eða í valkostum vöru á **Ultimate Multisite > Vörur**.
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+![Hluti fyrir sérsniðin lén á breytingarsíðu vöru](/img/config/product-custom-domains.png)
 
-Notandinn getur klikkað á hnappinn **Add Domain** (Búa til domén), og það mun sýna modal glugn með nokkrum leiðbeiningum.
+Þegar einhver þessara valkosta er virkjaður og notanda undirsíðu er heimilt að varpa sérsniðnum lénaheitum ætti notandi undirsíðunnar að sjá metabox undir **Account**-síðunni sem kallast **Lén**.
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+<!-- Skjámynd ekki tiltæk: Lénametabox á Account-síðu undirsíðu með hnappinum Bæta við léni -->
 
-Notandinn getur þá klikkað á **Next Step** (Næstu skref) og halda fram með að bæta sérsniðnum doménanum í listuna. Þar getur hann einnig valdið ef þetta er primært domén eða ekki.
+Notandinn getur smellt á hnappinn **Bæta við léni** og þá birtist sprettigluggi með nokkrum leiðbeiningum.
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- Skjámynd ekki tiltæk: Sprettigluggi fyrir Bæta við léni sem sýnir leiðbeiningar um DNS A-færslu fyrir notendur undirsíðna -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+Notandinn getur síðan smellt á **Næsta skref** og haldið áfram að bæta við sérsniðna lénaheitinu. Hann getur einnig valið hvort þetta verði aðallénið eða ekki.
 
-Klikka á **Add Domain** (Búa til domén) mun byrja ferli staðfestingar og að hentar upp DNS upplýsingum sérsniðna domænsins.
+<!-- Skjámynd ekki tiltæk: Eyðublað fyrir Bæta við léni með reit fyrir sérsniðið lénaheiti og rofa fyrir aðallén -->
 
-### Um Domæn Samræmi (Domain Syncing)
+<!-- Skjámynd ekki tiltæk: Staðfestingarskref fyrir Bæta við léni sem ræsir DNS-staðfestingu -->
 
-Domæn samræmi er ferli þar sem Ultimate Multisite bætir sérsniðnum doménanum í reikningi staðfestingar þinnar héldunar (hosting account) sem viðbót **til að mappa domænsna sé möguleg**.
+Að smella á **Bæta við léni** mun hefja ferlið við að staðfesta og sækja DNS-upplýsingar sérsniðna lénsins.
 
-Domæn samræmi skiptir sjálft fyrir sér ef héldunshætturinn hefur tengingu við eiginleika domænamappingar Ultimate Multisite. Notkun þessar héldunarþjónustana er nú Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways og Cpanel.
+### Um samstillingu léna {#about-domain-syncing}
 
-Þegar tenging með héldunshætturinn er aktíva, getur Ultimate Multisite einnig skráð upp (enqueue) áskorunina fyrir DNS eða uppburði subdomainar hjá héldunshætturinn fyrir nýsköpunar staðir. Ef ingengd tenging er að hita þennan áskorunann, blir bakgrunnstíðan (background job) skoðað í vegi til að undanbúa óþarfarnar skráningar í queue. DNS og SSL skynstök fyrir mappa domænsna halda fram með normulegri ferli domænans.
+Samstilling léna er ferli þar sem Ultimate Multisite bætir sérsniðna lénaheitinu við hýsingarreikninginn þinn sem viðbótarléni **til að lénavörpunin virki**.
 
-Þú þarft að aktiva þennan tengingu í innstillingum Ultimate Multisite undir lausnina **Integration**.
+Samstilling léna gerist sjálfkrafa ef hýsingaraðilinn þinn er með samþættingu við lénavörpunareiginleika Ultimate Multisite. Sem stendur eru þessir hýsingaraðilar _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ og _Cpanel._
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Þegar samþætting hýsingaraðila er virk getur Ultimate Multisite einnig sett DNS- eða undirlénsstofnunarverkefni hýsingaraðilans í biðröð fyrir nýstofnaðar síður. Ef engin samþætting hlustar eftir því verkefni er bakgrunnsverkinu sleppt til að forðast biðraðarfærslur sem gera ekkert. DNS- og SSL-athuganir fyrir vörpuð lén halda áfram að keyra í gegnum venjulega ferlið fyrir lénastig.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+Þú þarft að virkja þessa samþættingu í stillingum Ultimate Multisite undir flipanum **Samþætting**.
 
-_Athugið að ef þjónustuþjónustan þinn er ekki ein af þeim sem eru nefndir yfir, **þarf þér að sýna eða bæta með handi í skráningu domænsins** í því sjálfum þjónustuþjónustu._
+![Samþættingarflipi í stillingum Ultimate Multisite sem sýnir hýsingaraðila](/img/config/integrations-tab.png)
+
+<!-- Skjámynd ekki tiltæk: Stillingartenglar hýsingaraðila á flipanum Samþættingarstillingar -->
+
+_Athugaðu að ef hýsingaraðilinn þinn er ekki einn af þeim aðilum sem nefndir eru hér að ofan, **þarftu að samstilla eða bæta lénaheitinu handvirkt við** hýsingarreikninginn þinn._

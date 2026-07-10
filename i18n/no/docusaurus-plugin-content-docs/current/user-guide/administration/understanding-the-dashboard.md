@@ -3,31 +3,31 @@ title: Forstå dashbordet
 sidebar_position: 7
 _i18n_hash: 4869a2f03eb529c49c821a22eb6b9647
 ---
-# Forstå Ultimate Multisite-dashboardet
+# Forstå Ultimate Multisite-dashboardet {#understanding-the-ultimate-multisite-dashboard}
 
 Før vi dykker ned i mer avanserte konfigurasjonsalternativer og de operative aspektene ved Ultimate Multisite, la oss ta en titt på dashboardet.
 
 Som mange WordPress-plugins oppretter Ultimate Multisite en menyoppføring på nettverksnivå med tittelen **Ultimate Multisite**, med en rekke undermenypunkter under.
 
-## Dashboard-widgeter på nettverksnivå
+## Dashboard-widgeter på nettverksnivå {#network-dashboard-widgets}
 
 Ultimate Multisite legger til noen nyttige widgeter i dashboardet på nettverksnivå. Dette dashboardet finner du ved å navigere til **Mine nettsteder → Nettverksadmin → Dashboard**. Widgetene er utformet for å gi enkel tilgang til informasjon og vanlige operasjoner for nettverksadministratoren.
 
 ![Nettverksdashboard med Ultimate Multisite-widgeter](/img/admin/network-dashboard-full.png)
 
-### Kom i gang
+### Kom i gang {#first-steps}
 
 ![Kom i gang-widget](/img/admin/network-dashboard-first-steps.png)
 
 Denne widgeten vises ved en ny installasjon av Ultimate Multisite og minner nettverksadministratoren på å fullføre tilleggsoppgaver som å konfigurere en betalingsmetode og opprette en testkonto.
 
-### Sammendrag
+### Sammendrag {#summary}
 
 ![Sammendrag-widget](/img/admin/network-dashboard-summary.png)
 
 Sammendrag-widgeten rapporterer antall registreringer og inntektene deres for dagen. MRR (Monthly Recurring Revenue) viser en projisert total på tvers av kunder med inntektsgenererende medlemskap.
 
-### Aktivitetsstrøm
+### Aktivitetsstrøm {#activity-stream}
 
 ![Aktivitetsstrøm-widget](/img/admin/network-dashboard-activity-stream.png)
 
@@ -35,25 +35,25 @@ Denne widgeten rapporterer om hendelser på tvers av Ultimate Multisite. Hendels
 
 Se Hendelser-seksjonen i dokumentasjonen for en mer detaljert beskrivelse.
 
-### Akkurat nå
+### Akkurat nå {#right-now}
 
 ![Akkurat nå-widget](/img/admin/network-dashboard-right-now.png)
 
 Denne verktøy-widgeten viser et kort sammendrag av brukere og nettsteder i nettverket. Praktiske snarveier øverst gir ett-klikks tilgang til å opprette nye nettsteder eller brukere.
 
-### Nyheter og diskusjoner
+### Nyheter og diskusjoner {#news-and-discussions}
 
 ![Nyheter og diskusjoner-widget](/img/admin/network-dashboard-news.png)
 
 Denne widgeten henter og viser de siste nyhetene om Ultimate Multisite. Hold øye med denne widgeten for informasjon om oppdateringer, kritiske feil og sikkerhetsfikser.
 
-## Ultimate Multisite-dashboardet
+## Ultimate Multisite-dashboardet {#ultimate-multisite-dashboard}
 
 Mens dashboardet på nettverksnivå presenterer helhetlig informasjon om nettverket, presenterer Ultimate Multisite-dashboardet (som ligger på toppnivået i Ultimate Multisite-menyen) informasjon om tjenesten.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-### Vekst i månedlige gjentakende inntekter
+### Vekst i månedlige gjentakende inntekter {#monthly-recurring-revenue-growth}
 
 MRR-diagrammet (Monthly Recurring Revenue) viser en månedlig oversikt over inntekter over en 12-måneders kalenderperiode.
 
@@ -61,7 +61,7 @@ MRR-diagrammet (Monthly Recurring Revenue) viser en månedlig oversikt over innt
 
 Nye inntekter spores i blått, mens kanselleringer vises i rødt.
 
-### Støtte for datoperiode
+### Støtte for datoperiode {#date-range-support}
 
 Avhengig av antall kunder og aktivitet kan statistikken bli overveldende. Støtten for datoperiode som er innebygd i dashboardet, lar nettverksadministratoren fokusere kun på den informasjonen og tidsperioden som trengs.
 

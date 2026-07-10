@@ -1,152 +1,150 @@
 ---
 title: Sayt Şablonları
 sidebar_position: 4
-_i18n_hash: da303a4b11e2b54bb7892c08b88a4d24
+_i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Sayt Şablonları (v2) {#site-templates-v2}
 
-_**QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir. Əgər 1.x versiyasını istifadə edirsinizsə,**_ **bu məqaləyə baxın** _**.**_
+_**QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir. Əgər 1.x versiyasından istifadə edirsinizsə,**_ **bu məqaləyə baxın** _**.**_
 
-Ultimate Multisite ilə premium bir şəbəkə yaratarkən məqsədimiz, müştərilərimizə öz veb saytlarını yaratarkən çeviklik və seçimlər verməklə, mümkün qədər çox prosesi avtomatlaşdırmaqdır. Bu balansı əldə etmək üçün asan yollardan biri də Ultimate Multisite Site Templates funksionallarından istifadə etməkdir.
+Ultimate Multisite ilə premium şəbəkə yaradarkən məqsədimiz müştərilərimizə vebsaytlarını yaradarkən çeviklik və seçmək üçün müxtəlif seçimlər verməklə yanaşı, mümkün qədər çox prosesi avtomatlaşdırmaqdır. Bu balansı əldə etməyin asan yollarından biri Ultimate Multisite Sayt Şablonları funksiyasından istifadə etməkdir.
 
-## Site Template nədir?
+## Sayt Şablonu nədir? {#what-is-a-site-template}
 
-Adından göründüyü kimi, Site Template, şəbəkənizdə yeni saytlar yaradarkən istifadə edilə bilən bir başlanğıc şablon saytıdır.
+Adından da göründüyü kimi, Sayt Şablonu şəbəkənizdə yeni saytlar yaradılarkən əsas kimi istifadə oluna bilən başlanğıc saytdır.
 
-Bu o deməkdir ki, siz bir baz sayt yarada, müxtəlif pluginlər aktivləşdirə, aktiv mövzu təyin edə və istədiyiniz kimi fərdiləşdirə bilərsiniz. Sonra, müştəriniz yeni bir hesab yaratdıqda, mənasız məzmunu olmayan standart bir WordPress saytı əldə etmək əvəzinə, bütün fərdiləşdirmə və məzmunlar artıq yerində olan baz saytınızın bir nüsxəsini alacaq.
+Bu o deməkdir ki, əsas sayt yarada, müxtəlif plugin-ləri aktivləşdirə, aktiv theme təyin edə və onu istədiyiniz şəkildə fərdiləşdirə bilərsiniz. Sonra müştəriniz yeni account yaratdıqda, daxilində mənalı məzmun olmayan standart WordPress saytı almaq əvəzinə, bütün fərdiləşdirmələr və məzmunlar əvvəlcədən hazır olan əsas saytınızın surətini alacaq.
 
-Bu əla səslənir, amma yeni bir site template necə yaradıram? Bu, mümkün olduğu qədər sadədir.
+Bu çox yaxşı səslənir, bəs yeni sayt şablonunu necə yarada bilərəm? Bu, mümkün qədər sadədir.
 
-## Yeni Site Template Yaratmaq və Redaktə Etmək
+## Yeni Sayt Şablonunun yaradılması və redaktə edilməsi {#creating-and-editing-a-new-site-template}
 
-Site Templates, şəbəkənizdə sadəcə normal saytlardır. Yeni bir şablon yaratmaq üçün sadəcə **Network Admin > Ultimate Multisite > Sites > Add Site** yolunu izləyə bilərsiniz.
+Sayt Şablonları şəbəkənizdəki adi saytlardır. Yeni şablon yaratmaq üçün sadəcə **Şəbəkə Admini > Ultimate Multisite > Saytlar > Sayt Əlavə Et** bölməsinə gedə bilərsiniz.
 
-**![Add site button in the Sites list page](/img/config/site-templates-list.png)**
+**![Saytlar siyahısı səhifəsində sayt əlavə et düyməsi](/img/config/site-templates-list.png)**
 
-Bu, bir modal pəncərə açacaq və sizdən **Site title (Sayt adı), Site Domain/path (Sayt Domeni/yolu)** və **Site type (Sayt tipi)** soruşacaq. **Site Type** açılır menyusunda **Site Template** seçdiyinizdən əmin olun.
+Bu, **Sayt başlığı, Sayt Domeni/yolu** və **Sayt növü**nü soruşan modal pəncərə açacaq. **Sayt Növü** açılan sahəsində **Sayt Şablonu** seçdiyinizə əmin olun *.*
 
-_![Add site template modal with site type dropdown](/img/config/site-templates-list.png)_
+_![Sayt növü açılan menyusu olan sayt şablonu əlavə et modalı](/img/config/site-templates-list.png)_
 
-Həmçinin site template təsvirini də görə bilərsiniz:
+Şablonun nələri əhatə etdiyini izah etmək üçün müştəriyə görünən təsvir də əlavə edə bilərsiniz:
 
-![Site template description](/img/config/site-template-description.png)
+![Sayt şablonunu redaktə ekranında sayt şablonu təsviri sahəsi](/img/config/site-template-edit-description.png)
 
-Formanın altında **Copy Site** (Saytı kopyala) açma/bağlama düyməsi (toggle switch) görünəcək. Bu, sizə sıfırdan bir site template yaratmaq əvəzinə, mövcud bir site template-dən istifadə edərək yeni bir site template yaratmağa imkan verəcək və bu da vaxt qənaət etməyinizə kömək edəcək.
+Formanın aşağı hissəsində **Saytı Kopyala** keçid düyməsini görəcəksiniz. Bu, sıfırdan sayt şablonu yaratmaq əvəzinə vaxta qənaət etməyinizə kömək etmək üçün başlanğıc nöqtəsi kimi mövcud sayt şablonu əsasında yeni sayt şablonu yaratmağa imkan verəcək.
 
-![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
+![Saytı kopyala keçidi olan sayt şablonu əlavə et modalı](/img/config/site-templates-list.png)
 
-### Site Template-in Məzmununu Fərdiləşdirmək
+### Sayt Şablonunun məzmunlarının fərdiləşdirilməsi {#customizing-the-contents-of-a-site-template}
 
-Site template-inizi fərdiləşdirmək üçün sadəcə onun dashboard panelinə daxil olun və lazım olan dəyişiklikləri edin. Yeni məqalələr, səhifələr yarada, pluginlər aktivləşdirə və aktiv mövzunu dəyişə bilərsiniz. Hətta Customizer-ə daxil olub bütün növ fərdiləşdirmə seçimlərini də dəyişə bilərsiniz.
+Sayt şablonunuzu fərdiləşdirmək üçün sadəcə onun dashboard panelinə keçin və lazım olan dəyişiklikləri edin. Yeni yazılar, səhifələr yarada, plugin-ləri aktivləşdirə və aktiv theme-ni dəyişə bilərsiniz. Hətta Customizer-ə gedib hər cür fərdiləşdirmə seçimlərini dəyişə bilərsiniz.
 
-![Site template edit interface](/img/config/site-template-edit.png)
+![Sayt şablonunu redaktə interfeysi](/img/config/site-template-edit.png)
 
-Müştəri bu Site Template-ə əsaslanaraq yeni bir sayt yaratdıqda, bütün bu məlumatlar kopyalanacaq.
+Müştəri həmin Sayt Şablonu əsasında yeni sayt yaratdıqda bütün bu məlumatlar kopyalanacaq.
 
-### İrəli Seçimlər
+### Qabaqcıl Seçimlər {#advanced-options}
 
-Əgər özünüzü bir az kodlaşdırma ilə tanıyırsınızsa, yeni sayt yaradıldıqdan sonra məlumatları avtomatik dəyişdirmək üçün Search and Replace API-dən istifadə edə bilərsiniz. Bu, Mənim Saytımda (About page) şirkət adlarını dəyişdirmək, Əlaqə səhifəsində (Contact page) e-poçt ünvanını dəyişdirmək kimi şeylər üçün faydalıdır.
+Əgər xüsusi kodlaşdırma ilə işləməyi bilirsinizsə, yeni sayt yaradıldıqdan sonra oradakı məlumatları avtomatik əvəz etmək üçün Search and Replace API-mizdən istifadə edə bilərsiniz. Bu, Haqqımızda səhifəsində şirkət adlarını əvəz etmək, Əlaqə səhifəsində əlaqə emailini dəyişmək və s. kimi hallar üçün faydalıdır.
 
-### Site Templates-dən İstifadə Etmək
+### Sayt Şablonlarından istifadə {#using-site-templates}
 
-Yaxşı, demək ki, müxtəlif dizaynlar, mövzular və parametrlərlə bir çox Site Template yaratdınız. İndi bunları şəbəkənizdə necə faydalı edə bilərsiniz?
+Yaxşı, müxtəlif dizaynlar, theme-lər və ayarlarla bir çox fərqli Sayt Şablonu yaratdınız. İndi onları şəbəkənizdə necə faydalı edirsiniz?
 
-Əsasən, indi istifadə edə biləcəyiniz iki yanaşma var (eyni anda yox):
+Əsasən, indi istifadə edə biləcəyiniz iki yanaşma var (eyni vaxtda deyil):
 
-  * Hər bir Planınıza bir Site Template təyin etmək
+  * Planlarınızın hər birinə bir Sayt Şablonu əlavə etmək
 
 **VƏ YA**
 
-  * Müştərilərin qeydiyyat zamanı özləri site template seçməsinə icazə vermək.
+  * Qeydiyyat zamanı müştərilərinizə sayt şablonlarını özlərinin seçməsinə imkan vermək.
 
-#### Rejim 1: Site Template Təyin Etmək (Assign Site Template)
+#### Rejim 1: Sayt Şablonu Təyin Et {#mode-1-assign-site-template}
 
-Bu rejimdə, müştərilərin hesab yaratdıqda şablon seçməsi mümkün olmayacaq, əksinə, hansı Planınızda hansı şablonun istifadə edilməli olduğunu siz müəyyən edəcəksiniz.
+Bu rejimdə müştəriləriniz account yaratdıqları zaman şablon seçə bilməyəcəklər; bunun əvəzinə hər Planınızda hansı şablondan istifadə olunacağını siz müəyyən edəcəksiniz.
 
-Bunu etmək üçün **Ultimate Multisite > Products > Edit** yoluna getməlisiniz.
+Bunu etmək üçün **Ultimate Multisite > Məhsullar > Redaktə et** bölməsinə getməlisiniz.
 
-![Edit product to assign site template](/img/config/product-site-templates.png)
+![Sayt şablonu təyin etmək üçün məhsulu redaktə et](/img/config/product-site-templates.png)
 
-Bu sizi **Edit Product** səhifəsinə aparacaq. **Product Options** (Məhsul Seçimləri) bölməsi altında **Site template** (Site şablonu) tabını tapın və açılır menyudan **Assign Site** **Template** (Site Şablonu Təyin Et) seçənəyini seçin. Bu, mövcud site template siyahısını göstərəcək və məhsula xüsusi olan yalnız bir site template seçməyinizə imkan verəcək.
+Bu sizi **Məhsulu Redaktə Et** səhifəsinə aparacaq. **Məhsul Seçimləri** bölməsində **Sayt şablonu** tabını tapın və açılan sahədən **Sayt Şablonu Təyin Et** seçimini seçin. Bu, mövcud sayt şablonlarının siyahısını göstərəcək və məhsula həsr olunmuş yalnız bir sayt şablonu seçməyə imkan verəcək.
 
-![Product site template tab with assign site template option](/img/config/product-site-templates.png)
+![Sayt şablonu təyin et seçimi olan məhsul sayt şablonu tabı](/img/config/product-site-templates.png)
 
-#### Rejim 2: Seçiləbilən Site Template (Choose Available Site Template)
+#### Rejim 2: Mövcud Sayt Şablonunu Seç {#mode-2-choose-available-site-template}
 
-Bu rejimdə, müştərilərin qeydiyyat zamanı bir seçim hüququ olacaq. Onlar məhsul parametrləri altında müəyyən etdiyiniz müxtəlif site template-lərdən seçim edə biləcəklər. Seçilmiş məhsul altında hansı site template-lərindən seçim edə biləcəklərini məhdudlaşdırmaq imkanınız var. Bu, daha yüksək qiymətli bir məhsul üçün müxtəlif funksionallıq və xüsusiyyətləri vurğulamaq üçün ideal olan, hər məhsul altında fərqli site template dəstləri sahibi olmanızı təmin edir.
+Bu rejimdə qeydiyyat prosesi zamanı müştərilərinizə seçim imkanı verəcəksiniz. Onlar məhsul ayarları altında müəyyən etdiyiniz müxtəlif sayt şablonları arasından seçə biləcəklər. Seçilmiş məhsul altında onların seçə biləcəyi sayt şablonunu məhdudlaşdırmaq seçiminiz var. Bu, daha yüksək qiymətli məhsul üçün müxtəlif funksiyaları və xüsusiyyətləri vurğulamaq baxımından ideal olan, hər məhsul altında fərqli sayt şablonu dəstlərinə sahib olmağa imkan verəcək.
 
-**Edit Product** səhifəsində. **Product Options** bölməsi altında **Site template** tabını tapın və açılır menyudan **Choose Available Site Template** (Seçiləbilən Site Template) seçənəyini seçin. Bu, mövcud site template siyahısını göstərəcək və istədiyiniz site template-i seçməyinizə imkan verəcək. Bunu onun Davranışını (Behavior) seçərək edə bilərsiniz: site template-in siyahıda görünməsini istəyirsinizsə: **Available** (Seçiləbilən); site template-in seçim olaraq görünməməsini istəyirsinizsə: _**Not Available**_ (Seçiləbilən Deyil); və siyahıda göstərilən site template-lərindən birinin default seçilmiş olmasını istəyirsinizsə: **Pre-selected** (Əvvəlcədən Seçilmiş).
+**Məhsulu Redaktə Et** səhifəsində. **Məhsul Seçimləri** bölməsində **Sayt şablonu** tabını tapın və açılan sahədən **Mövcud Sayt Şablonunu Seç** seçimini seçin. Bu, mövcud sayt şablonlarının siyahısını göstərəcək və əlçatan olmasını istədiyiniz sayt şablonunu seçməyə imkan verəcək. Bunu onun Davranışını seçməklə edə bilərsiniz: sayt şablonunun siyahıya daxil edilməsini istəyirsinizsə **Mövcud**. Sayt şablonunun seçim kimi görünməməsini istəyirsinizsə _**Mövcud Deyil**_. Siyahıda olan sayt şablonlarından birinin standart seçilmiş olmasını istəyirsinizsə **Əvvəlcədən seçilmiş**.
 
-![Choose available site templates with behavior options](/img/config/product-site-templates.png)
+![Davranış seçimləri ilə mövcud sayt şablonlarını seç](/img/config/product-site-templates.png)
 
-### Default Rejim: Checkout form-unda site template seçimi
+### Standart Rejim: Checkout formasında sayt şablonu seçimi {#default-mode-site-template-selection-on-the-checkout-form}
 
-Əgər bütün site template-lərinizin qeydiyyat zamanı mövcud olmasını istəyirsinizsə, və ya hər yaratdığınız məhsul altında site template təyin etmək və ya göstərmək əlavə işləməyi üstün tutmursunuzsa. Onda sadəcə site template seçimini **Checkout Form** (Ödəniş Formu) altında təyin edə bilərsiniz. Bunu etmək üçün sadəcə **Ultimate Multisite > Checkout Forms** yoluna getməlisiniz. Sonra konfiqurasiya etmək istədiyiniz formanın altında **Edit** (Redaktə et) düyməsinə klikləyin.
+Əgər bütün sayt şablonlarınızın qeydiyyat zamanı əlçatan olmasını istəyirsinizsə və ya yaratdığınız hər məhsul altında sayt şablonlarını təyin etmək və ya dəqiqləşdirmək kimi əlavə iş görməyə üstünlük vermirsinizsə. O zaman sayt şablonu seçimini sadəcə **Checkout Formanız** altında təyin edə bilərsiniz. Bunu etmək üçün **Ultimate Multisite > Checkout Formaları** bölməsinə gedin və konfiqurasiya etmək istədiyiniz formanın altında **Redaktə et** düyməsinə klikləyin.
 
-![Checkout forms list page](/img/config/checkout-forms-list.png)
+Bu, **Checkout Formasını Redaktə Et** səhifəsini açacaq. **Şablon Seçimi** sahəsini tapın və onun altında **Redaktə et** düyməsinə klikləyin.
 
-Bu, **Edit Checkout Form** səhifəsinə aparacaq. **Template Selection** (Şablon Seçimi) sahəsini tapın və onun altında **Edit** (Redaktə et) düyməsinə klikləyin.
+Modal pəncərə görünəcək. **Şablon Saytlar** sahəsində qeydiyyat zamanı əlçatan olmasını istədiyiniz bütün sayt şablonlarını seçə və siyahıya əlavə edə bilərsiniz. Buradan göstərdiyiniz sayt şablonları istifadəçinin seçdiyi məhsuldan asılı olmayaraq əlçatan olacaq.
 
-![Checkout form editor with template selection field](/img/config/checkout-form-editor.png)
+![Ödəniş forması redaktorunda şablon seçimi sahəsi](/img/config/checkout-form-template-step.png)
 
-Bir modal pəncərə görünəcək. **Template Sites** (Şablon Saytları) sahəsi altında qeydiyyat zamanı mövcud olmasını istədiyiniz bütün site template-ləri seçib siyahı halına gətirə bilərsiniz. Buradan göstərdiyiniz site template-lər, istifadəçi hansı məhsulu seçsə də, mövcud olacaq.
+Ön tərəfdə müştərilər ödəniş zamanı şablon seçicisini görür və yeni saytları üçün başlanğıc dizaynı seçə bilirlər.
 
-![Template sites field in checkout form editor](/img/config/checkout-form-step.png)
+![Qeydiyyat zamanı ön tərəfdə şablon seçicisi](/img/config/frontend-template-chooser.png)
 
-### Site Template Seçimləri
+### Sayt Şablonu Seçimləri {#site-template-options}
 
-Ultimate Multisite parametrləri altında yandırılıb söndürülə bilən digər site template funksiyaları mövcuddur.
+Ultimate Multisite ayarlarında aktivləşdirib-deaktivləşdirə biləcəyiniz başqa sayt şablonu funksiyaları da mövcuddur.
 
-![Site template options in Ultimate Multisite settings](/img/config/settings-sites.png)
+![Ultimate Multisite ayarlarında sayt şablonu seçimləri](/img/config/settings-sites-templates-section.png)
 
-#### Template Dəyişməsinə İcazə Ver (Allow Template Switching)
+#### Şablon Dəyişdirməyə İcazə Ver {#allow-template-switching}
 
-Bu seçimi aktivləşdirmək, müştərilərin hesab və sayt yaradıldıqdan sonra qeydiyyat prosesi zamanı seçdikləri şablonu dəyişməsinə imkan verəcək. Bu, müştərinin nöqteyi-nəzərindən faydalıdır, çünki daha sonra orijinal seçimlərinin öz xüsusi ehtiyacları üçün ən yaxşı olmadığını öyrənə bilərlər və şablonu yenidən seçmələrinə imkan verir.
+Bu seçimi aktivləşdirmək müştərilərinizə qeydiyyat prosesi zamanı seçdikləri şablonu Account və sayt yaradıldıqdan sonra dəyişdirməyə imkan verəcək. Bu, müştəri baxımından faydalıdır, çünki sonradan ilkin seçimlərinin konkret ehtiyacları üçün ən yaxşı seçim olmadığını aşkar etsələr, şablonu yenidən seçmələrinə imkan yaradır.
 
-#### İstifadəçilərə Öz Saytlarını Template kimi İstifadə Etməyə İcazə Ver (Allow Users to use their Site as templates)
+#### İstifadəçilərə öz Saytlarını şablon kimi istifadə etməyə icazə ver {#allow-users-to-use-their-site-as-templates}
 
-Subsite istifadəçiləri öz saytlarını qurmaq və dizayn etmək üçün vaxt sərf etdikləri üçün, onlar bu saytı şəbəkənizdə başqa bir subsite yaratdıqda mövcud olan site template-ləri siyahısından birini klonlamaq və istifadə etmək istəyə bilərlər. Bu seçim onlara bunu etməyə imkan verəcək.
+Alt sayt istifadəçiləri öz saytlarını qurmağa və dizayn etməyə vaxt sərf etdikləri üçün, şəbəkənizdə başqa bir alt sayt yaradarkən onu klonlayıb mövcud sayt şablonlarından biri kimi istifadə etmək istəyə bilərlər. Bu seçim onlara bunu etməyə imkan verəcək.
 
-#### Template Duplikasiyasında Media Kopyalama (Copy Media on Template Duplication)
+#### Şablon Dublikasiyası zamanı Medianı Kopyala {#copy-media-on-template-duplication}
 
-Bu seçimi işarələmək, template saytında yüklənmiş media fayllarını yeni yaradılan sayta kopyalayacaq. Bu, hər bir planda ləğv edilə bilər.
+Bu seçimi işarələmək şablon saytına yüklənmiş medianı yeni yaradılmış sayta kopyalayacaq. Bu, hər bir plan üzrə ayrıca dəyişdirilə bilər.
 
-#### **Axtarış Motorlarının Site Template-lərini İndeksləməsini Qarşısını Almaq (Prevent Search Engines from indexing Site Templates)**
+#### **Axtarış Motorlarının Sayt Şablonlarını indeksləməsinin qarşısını al** {#prevent-search-engines-from-indexing-site-templates}
 
-Bu məqalədə müzakirə olunan site template-lər başlanğıc şablonları olsa da, hələ də şəbəkənizin bir hissəsidir, bu o deməkdir ki, hələ də axtarış motorları üçün mövcuddur. Bu seçim, site template-lərini gizlətməyə imkan verəcək, beləliklə axtarış motorları onları indeksləyə bilməyəcək.
+Bu məqalədə müzakirə edildiyi kimi sayt şablonları hazır baza olsa da, yenə də şəbəkənizin bir hissəsidir; bu isə onların axtarış motorları tərəfindən tapıla biləcəyi deməkdir. Bu seçim sayt şablonlarını gizlətməyə imkan verəcək ki, axtarış motorları onları indeksləyə bilməsin.
 
-## Site Template-ləri avtomatik axtarış-dəyişmə ilə doldurmaq (Pre-populating Site Templates with auto search-and-replace)
+## Avtomatik axtarış və əvəzetmə ilə Sayt Şablonlarının əvvəlcədən doldurulması {#pre-populating-site-templates-with-auto-search-and-replace}
 
-Ultimate Multisite-in ən güclü funksionallıqlarından biri qeydiyyat formasına istənilən mətni, rəngi və seçilmiş sahələri əlavə etmək imkanıdır. Bu məlumatları əldə etdikdən sonra, bunu seçilmiş site template-in müəyyən hissələrindəki məzmunu əvvəlcədən doldurmaq üçün istifadə edə bilərik. Sonra, yeni sayt nəşr edilərkən, Ultimate Multisite yer tutucuları (placeholders) qeydiyyat zamanı daxil edilmiş faktiki məlumatlarla əvəz edəcək.
+Ultimate Multisite-in ən güclü xüsusiyyətlərindən biri qeydiyyat formasına ixtiyari mətn, rəng və seçim sahələri əlavə etmək imkanıdır. Həmin məlumatları topladıqdan sonra onlardan seçilmiş sayt şablonunun müəyyən hissələrində məzmunu əvvəlcədən doldurmaq üçün istifadə edə bilərik. Sonra yeni sayt yayımlanarkən Ultimate Multisite yer tutucuları qeydiyyat zamanı daxil edilmiş real məlumatlarla əvəz edəcək.
 
-Məsələn, qeydiyyat zamanı end-user-in şirkət adını almaq və şirkət adını avtomatik olaraq ana səhifədə göstərmək istəyirsinizsə. Şablon saytınızın ana səhifəsinə aşağıdakı şəkil kimi yer tutucuları əlavə etməlisiniz (yer tutucular iki qurtlu mötərizə ilə əhatə edilməlidir - {{placeholder_name}}).
+Məsələn, qeydiyyat zamanı son istifadəçinizin şirkət adını almaq və şirkət adını avtomatik olaraq ana səhifəyə yerləşdirmək istəyirsinizsə. Şablon saytınızın ana səhifəsində aşağıdakı şəkildə olduğu kimi yer tutucuları əlavə etməlisiniz (yer tutucular ikiqat fiqurlu mötərizələrin içində əlavə edilməlidir - {{placeholder_name}}).
 
-![Homepage with placeholder text in curly braces](/img/config/site-templates-list.png)
+![Fiqurlu mötərizələrdə yer tutucu mətni olan ana səhifə](/img/config/site-templates-list.png)
 
-Sonra, bu məlumatları almaq üçün checkout formunuzda uyğun bir qeydiyyat sahəsi əlavə edə bilərsiniz:
+Sonra həmin məlumatı toplamaq üçün ödəniş formanıza uyğun bir qeydiyyat sahəsi əlavə edə bilərsiniz. Şablon seçimi üçün istifadə olunan eyni ödəniş forması redaktoru sizə şablon seçicisinin yanında xüsusi sahələr yerləşdirməyə imkan verir:
 
-![Checkout form with matching registration field](/img/config/checkout-form-editor.png)
+![Ödəniş forması redaktorunda şablon seçimi və qeydiyyat sahələri](/img/config/checkout-form-template-step.png)
 
-Müştəriniz o zaman bu sahəni doldura biləcək.
+Müştəriniz daha sonra qeydiyyat zamanı həmin sahəni doldura biləcək.
 
-![Registration field filled by customer](/img/config/checkout-form-step.png)
+![Şablon seçicisi olan ön tərəf ödəniş forması](/img/config/frontend-template-chooser.png)
 
-![Preview of the registration form](/img/config/checkout-form-editor.png)
+Ultimate Multisite daha sonra yer tutucuları müştərinin təqdim etdiyi məlumatlarla avtomatik əvəz edəcək.
 
-Ultimate Multisite daha sonra yer tutucuları müştəri tərəfindən verilən məlumatlarla avtomatik olaraq əvəz edəcək.
+![Saytda müştəri məlumatları ilə əvəz edilmiş yer tutucular](/img/config/site-templates-list.png)
 
-![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
+### "yer tutucularla dolu şablon" probleminin həlli {#solving-the-template-full-of-placeholders-problem}
 
-### "Yer tutucu dolu şablon" problemini həll etmək
+Bütün bunlar əladır, amma xoşagəlməz bir problemlə qarşılaşırıq: indi müştərilərimizin ziyarət edə biləcəyi sayt şablonlarımız çox məlumat verməyən xoşagəlməz yer tutucularla doludur.
 
-Bütün bunlar əladır, amma pis bir problemə rastlaşırıq: indi site template-lərimiz – ki, müştərilərimiz gələ bilərlər – çoxlu, məlumat verməyən pis yer tutucularla doludur.
+Bunu həll etmək üçün yer tutucular üçün saxta dəyərlər təyin etmək seçimini təklif edirik və müştəriləriniz şablon saytlarını ziyarət edərkən həmin dəyərlərdən onların məzmununu axtarıb əvəz etmək üçün istifadə edirik.
 
-Bunu həll etmək üçün, yer tutucular üçün saxta dəyərlər təyin etmək seçimlərimiz var və müştərilərin ziyarət etdiyi zaman bu dəyərlərdən istifadə edərək template saytlarındakı məzmunlarını axtarış və dəyişmə üçün istifadə edirik.
+Şablon yer tutucuları redaktoruna **Ultimate Multisite > Ayarlar > Saytlar** bölməsinə keçərək və sonra yan paneldə **Yer Tutucuları Redaktə Et** linkinə klikləyərək daxil ola bilərsiniz.
 
-Template yer tutucu redaktoru (editor) **Ultimate Multisite > Settings > Sites** yoluna getməklə və sonra yan çubuğunda **Edit Placeholders** (Yer Tutucuları Redaktə Et) linkinə klikləməklə əldə edə bilərsiniz.
+![Saytlar ayarları səhifəsində sayt şablonu ayarları](/img/config/settings-sites-templates-section.png)
 
-![Placeholder settings under Sites settings page](/img/config/settings-sites.png)
+Bu sizi yer tutucuların məzmun redaktoruna aparacaq; burada yer tutucular və onların müvafiq məzmununu əlavə edə bilərsiniz.
 
-Bu sizi yer tutucuların məzmun redaktoruna aparacaq, burada yer tutucuları və onların müvafiq məzmunlarını əlavə edə bilərsiniz.
-
-![Template placeholders content editor](/img/config/settings-sites.png)
+![Şablon yer tutucuları məzmun redaktoruna giriş nöqtəsi](/img/config/settings-sites-templates-section.png)

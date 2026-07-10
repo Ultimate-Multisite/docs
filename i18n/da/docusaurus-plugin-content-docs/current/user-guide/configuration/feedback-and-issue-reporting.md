@@ -3,11 +3,11 @@ title: Kunde Feedback og Fejlrapportering
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kundefeedback og fejlrapportering
+# Kundefeedback og fejlrapportering {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 introducerer et indbygget system til feedback og fejlrapportering, som lader slutbrugere markere unhelpful respons og rapportere problemer direkte fra chatgrænsefladen. Dette system inkluderer samtykkehåndtering, en automatiseret rapporteringskommando og AI-assisteret triage i baggrunden.
 
-## Tommelfinger ned-knap (Thumbs-Down Button)
+## Tommelfinger ned-knap (Thumbs-Down Button) {#thumbs-down-button}
 
 Hver besked sendt af AI-assistenten viser en **tommelfinger ned** (👎) knap. Når brugeren klikker på den, kan de markere et svar som unhelpful eller forkert.
 
@@ -15,7 +15,7 @@ Hver besked sendt af AI-assistenten viser en **tommelfinger ned** (👎) knap. N
 - Ved at klikke åbnes **Feedback Consent Modal**.
 - Feedbacken knyttes til samtaletråden og den specifikke besked.
 
-## Feedback Samtykke Modal (Feedback Consent Modal)
+## Feedback Samtykke Modal (Feedback Consent Modal) {#feedback-consent-modal}
 
 Når en bruger klikker på tommelfinger ned-knappen, vises en samtykke-modal før nogen data sendes. Modalen:
 
@@ -26,13 +26,13 @@ Når en bruger klikker på tommelfinger ned-knappen, vises en samtykke-modal fø
 
 Ingen feedback registreres, før brugeren eksplicit bekræfter det.
 
-## Automatisk Feedback Banner (Auto-Prompt Feedback Banner)
+## Automatisk Feedback Banner (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 I slutningen af en samtale kan assistenten vise et **automatisk feedback banner** — en ikke-påtrængende besked, der spørger, om sessionen var nyttig.
 
 Dette banner vises automatisk baseret på samtalens længde og udfaldsheuristikker. Det linker til den samme feedbackproces som tommelfinger ned-knappen. Brugere kan lukke banneret uden at give feedback.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Brugere kan starte feedbackprocessen direkte ved at skrive `/report-issue` i chatinputtet. Denne kommando:
 
@@ -42,7 +42,7 @@ Giver brugerne mulighed for at tilføje yderligere detaljer, før de sender.
 
 Kommandolinjen `/report-issue` er tilgængelig i alle chatmodi (inline, flydende widget, fuldskærm).
 
-## AI-Assisteret Triage
+## AI-Assisteret Triage {#ai-assisted-triage}
 
 Indsendt feedback bliver sendt videre til et AI triage lag, som:
 

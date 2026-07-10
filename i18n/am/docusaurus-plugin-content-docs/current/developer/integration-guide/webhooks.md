@@ -3,11 +3,11 @@ title: Webhook አያያዝ
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Webhookን መቆጣጠር (Webhook Handling)
+# Webhookን መቆጣጠር (Webhook Handling) {#webhook-handling}
 
 ከውጪ አገልግሎቶች የሚመጡ ክስተቶችን (events) ለመቀበል እና መረጃን ከUltimate Multisite ጋር ለማመሳሰል የራሳቸውን custom webhook endpoints መፍጠር ይችላሉ።
 
-## የራሱ Webhook Endpoint (Custom Webhook Endpoint)
+## የራሱ Webhook Endpoint (Custom Webhook Endpoint) {#custom-webhook-endpoint}
 
 ```php
 // Webhook endpointን መመዝገብ (Register webhook endpoint)
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## የደህንነት ጥንቃቄዎች (Security Considerations)
+## የደህንነት ጥንቃቄዎች (Security Considerations) {#security-considerations}
 
 - ሁልጊዜ የwebhook signatureን በHMAC ወይም በጋራ ሚስጥር (shared secret) መፈተሽ አለብዎት።
 - በREST routeዎ ላይ `permission_callback` ይጠቀሙ — በproduction ጊዜ ፈጽሞ `__return_true` አያደርጉ።

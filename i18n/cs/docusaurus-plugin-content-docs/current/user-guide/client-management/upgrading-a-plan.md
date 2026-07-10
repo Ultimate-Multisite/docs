@@ -1,58 +1,58 @@
 ---
-title: Upgradování tarifu
+title: Přechod na vyšší tarif
 sidebar_position: 11
-_i18n_hash: 83ee30a9547c0ea02bd1338ab7ec3f69
+_i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Přechod na vyšší tarif (v2)
+# Upgrade plánu (v2) {#upgrading-a-plan-v2}
 
-_**DŮLEŽITÁ POZNÁMKA: Tento článek se týká Ultimate Multisite verze 2.x.**_
+_**DŮLEŽITÁ POZNÁMKA: Tento článek se vztahuje k Ultimate Multisite verze 2.x.**_
 
-Vaši zákazníci mohou kdykoli přejít na vyšší tarif. Mohou buď upgradovat na jiný tarif, nebo si zakoupit jakékoli doplňkové služby či balíčky, které na své síti nabízíte.
+Vaši zákazníci mohou své plány kdykoli upgradovat. Mohou buď upgradovat na jiný plán, nebo si zakoupit jakékoli další služby či balíčky, které ve své síti nabízíte.
 
-V tomto návodu si ukážeme, jak mohou zákazníci přejít na vyšší tarif a co se stane po dokončení upgradu.
+V tomto návodu si ukážeme, jak mohou svůj plán upgradovat a co se stane po procesu upgradu.
 
-Pro přechod na vyšší tarif by měli zákazníci vstoupit do svého dashboardu a přejít na stránku **Účet**.
+Pro upgrade svého plánu by vaši zákazníci měli přejít do svého dashboardu a otevřít stránku **Account**.
 
-![Dashboard zákazníka s odkazem na stránku Účet](/img/admin/memberships-list.png)
+![Dashboard zákaznického podwebu s viditelným odkazem na menu Account](/img/account-page/account-menu.png)
 
-Na stránce Účet uvidí své aktuální členství a tarif, který k němu patří. Pro přechod na jiný tarif musí kliknout na **Změnit** v pravém horním rohu sekce **Vaše členství**.
+Na stránce Account se jim zobrazí jejich aktuální členství a plán, který je s ním spojený. Pro upgrade na jiný plán musí kliknout na **Změnit** v pravém horním rohu sekce **Vaše členství**.
 
-![Sekce Vaše členství s tlačítkem Změnit](/img/admin/memberships-list.png)
+![Stránka Account, karta Vaše členství s tlačítkem Změnit](/img/account-page/membership-change-button.png)
 
-Budou přesměrováni na pokladní formulář, kde se zobrazí všechny dostupné tarify.
+Budou přesměrováni na formulář pokladny, kde se zobrazí všechny dostupné plány.
 
-Uvidí také **služby a balíčky dostupné pro jejich aktuální tarif**, pokud by chtěli zakoupit pouze konkrétní službu nebo balíček (například neomezené návštěvy nebo diskový prostor v našem příkladu), a ne upgradovat celý tarif.
+Uvidí také **služby a balíčky dostupné pro jejich aktuální plán** , pokud si chtějí zakoupit jen konkrétní službu nebo balíček (například neomezené návštěvy nebo diskový prostor v našem příkladu zde), a neupgradovat plán.
 
-![Pokladní formulář zobrazující dostupné tarify a balíčky](/img/admin/memberships-list.png)
+![Výběr upgradu zobrazující dostupné plány a balíčky na straně zákazníka](/img/account-page/upgrade-picker.png)
 
-Po výběru produktu, který chtějí zakoupit, uvidí, kolik zaplatí nyní – bez započtení existujícího kreditu – a kolik jim bude účtováno k dalšímu fakturačnímu datu.
+Poté, co si vyberou produkt, který chtějí zakoupit, uvidí, kolik budou muset zaplatit právě teď – bez započtení jakéhokoli stávajícího kreditu – a kolik jim bude účtováno v dalším fakturačním termínu.
 
-Obvykle platí, že pokud je produktem jiný tarif a platba probíhá mezi účtovacími obdobími členství, zákazník obdrží kredit za částku zaplacenou za první tarif.
+Obvykle, pokud je produktem jiný plán a platba má být provedena mezi dvěma platbami za členství, obdrží kredit ve výši částky zaplacené za první plán.
 
-![Shrnutí platby za upgrade s kreditem a částkou k dalšímu účtování](/img/admin/memberships-list.png)
+![Souhrn platby za upgrade zobrazující použitý kredit a částku další fakturace](/img/account-page/upgrade-summary.png)
 
-Pokud zákazník vybere tarif nebo balíček, který nic nezmění na aktuálním předplatném, zobrazí se mu zpráva, která to vysvětluje.
+Pokud vyberou plán nebo balíček, který oproti aktuálnímu předplatnému nic nezmění, zobrazí se jim zpráva, která to vysvětluje.
 
-![Zpráva, když vybraný tarif nemění předplatné](/img/admin/memberships-list.png)
+![Upozornění, když vybraný plán nemění předplatné](/img/account-page/upgrade-no-change.png)
 
-Po dokončení objednávky budou nové produkty přidány na účet zákazníka a všechny limity nebo funkce nových produktů se okamžitě aktivují: návštěvy, diskový prostor, příspěvky atd.
+Po dokončení pokladny budou nové produkty přidány do účtu vašich zákazníků a všechny limity nebo funkce nových produktů k němu budou okamžitě přidány: návštěvy, diskový prostor, příspěvky atd...
 
-## 
+##
 
-## 
+##
 
-## Cesty pro upgrade a downgrade
+## Cesty upgradu a downgradu {#upgrade-and-downgrade-paths}
 
-U každého produktu najdete záložku **Upgrady a downgrady**. První možností na této záložce je pole nazvané **Skupina tarifů**.
+U každého ze svých produktů budete mít kartu **Up & Downgrades**. První možností na této kartě je pole s názvem **Plan Group**.
 
-**Skupiny tarifů** jsou to, co umožňuje Ultimate Multisite rozpoznat, že určité tarify patří do stejné „rodiny", a proto by měly být použity pro sestavení možností upgradu a downgradu.
+**Skupiny plánů** umožňují dát Ultimate Multisite vědět, že určité plány patří do stejné „rodiny“, a proto by se měly použít k vytvoření možností cest upgradu/downgradu.
 
-![Záložka Upgrady a downgrady s polem Skupina tarifů](/img/config/product-upgrades.png)
+![Úprava produktu, karta Up and Downgrades s polem Plan Group](/img/config/product-upgrades-plan-group.png)
 
-Například máte k dispozici **Tarif zdarma**, **Základní tarif** a **Premium tarif**. Chcete, aby uživatelé s **Tarifem zdarma** mohli upgradovat pouze na **Premium tarif** a neviděli „Základní tarif" jako možnost upgradu. Stačí přiřadit stejný název skupiny tarifů pro Tarif zdarma i Premium tarif, jak je vidět na snímcích obrazovky níže.
+Například máte k dispozici **bezplatný plán** , **Basic Plan** a **Premium Plan**. Chcete, aby uživatelé přihlášení k **Free Plan** mohli upgradovat pouze na **Premium Plan**, a nechcete, aby viděli „Basic Plan“ jako možnost upgradu. Stačí přiřadit stejný název skupiny plánů pro plány Free i Premium, jak je zobrazeno na snímcích obrazovky níže.
 
-![Tarif zdarma s přiřazenou skupinou High End](/img/config/product-upgrades.png)
+![Stránka produktu Free Plan s přiřazenou skupinou plánů High End](/img/config/product-upgrades-free.png)
 
-![Premium tarif s přiřazenou skupinou High End](/img/config/product-upgrades.png)
+![Stránka produktu Premium Plan s přiřazenou skupinou plánů High End](/img/config/product-upgrades-premium.png)
 
-Tím říkáte Ultimate Multisite, že v síti existuje „rodina" tarifů nazvaná **High End**. Při nabízení upgradů nebo downgradů se uživateli zobrazí pouze tarify ze stejné rodiny.
+To by mělo Ultimate Multisite sdělit, že v síti existuje „rodina“ plánů s názvem **High End**. Při nabídce upgradů nebo downgradů se uživateli jako možnost zobrazí pouze plány ze stejné rodiny.

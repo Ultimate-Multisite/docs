@@ -3,7 +3,7 @@ title: גישה לדף החשבון
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# איך אוכל לגשת לעמוד החשבון שלי בפעם הראשונה?
+# איך אוכל לגשת לעמוד החשבון שלי בפעם הראשונה? {#how-can-i-access-my-account-page-for-the-first-time}
 
 ברוכים הבאים ל-Ultimate Multisite!
 

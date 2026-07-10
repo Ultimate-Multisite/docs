@@ -3,7 +3,7 @@ title: Whakawhanainga PayPal
 sidebar_position: 10
 _i18n_hash: 894ca1f2ca4ca589f3ef49c131e330d5
 ---
-# Whakawhanaungaho i te Gateway o PayPal (v2)
+# Whakawhanaungaho i te Gateway o PayPal (v2) {#setting-up-the-paypal-gateway-v2}
 
 _**Tohutohu WAIPA: Ko tēnei tikanga he tino whakamārama ki Ultimate Multisite v2.x.**_
 
@@ -13,13 +13,13 @@ Kia kaha, ko te PayPal he tino whakamahinga mō ngā pēteranga online, he tino 
 
 Kia tino mārama, kua roa koe e hiahia ana i **PayPal Business account** kia pahi i te credential API e pēnei i te whakamahi.
 
-## Whakawhanaungaho i te PayPal i tō waka
+## Whakawhanaungaho i te PayPal i tō waka {#enabling-paypal-on-your-network}
 
 Mō te whakawhanaungaho i te PayPal mō pēteranga he tino whai tika ana i runga i tō waka, pono ki te **Ultimate Multisite > Settings > Payments** tab, ā, whakaa koe i te bokoru (tick the box) i runga i te PayPal.
 
 ![Whakawhanaungaho i te PayPal i ngā gateway o pēteranga e active](/img/config/settings-payment-gateways.png)
 
-## Whakawhanaungaho i te whakatau (setup wizard)
+## Whakawhanaungaho i te whakatau (setup wizard) {#using-the-guided-setup-wizard}
 
 Ko Ultimate Multisite 2.10.0 e puta mai i te whakamahi i he whakatau (guided setup wizard) mō PayPal i ngā pēteranga o te gateway. I taiao koe i te PayPal, whakamahi tēnei whakatau i **Ultimate Multisite > Settings > Payments** kia whiri i te mea kua tino pai koe ki te whakatō i te gateway me te whakaae i ko atu credential he hiahia ana mō i te whakatō.
 
@@ -30,7 +30,7 @@ Ko te whakatau e pēnei i āhuatanga whakawhanaungaho (setup paths) rua:
 
 Ko te mea kei a koe ka tino pai ahau ki te whakopaimahi (complete) i te flow o manual credential entry i runga i te whenua i kei te tino pai ahau ki te whai whakaaro OAuth i te wizard, he tino pai ana ahau ki te whakamahi ngā credentials o PayPal Business API eke atu i ngā wāhi Ultimate Multisite 2.x pēnitanga (releases) i te parātere.
 
-## Whakarongo i ngā credentials o PayPal API
+## Whakarongo i ngā credentials o PayPal API {#getting-the-paypal-api-credentials}
 
 I tētahi wā, i heke i PayPal mōna pēnitanga (payment gateway), ka tino pai ahau ki te whakatipu i ngā fīka mo **Username** o API o PayPal, **Password** o API o PayPal, me **Signature** o API o PayPal.
 

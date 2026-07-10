@@ -3,11 +3,11 @@ title: Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisite tõlitud
+# Ultimate Multisite tõlitud {#translating-ultimate-multisite}
 
 Ultimate Multisite on ontwikkeld inglise keeles, kuid plugi on täielikult tõlgitav ja me tervitame aktiivselt tõlgitamise katkendusi.
 
-## Põhise plugi tõlgitused
+## Põhise plugi tõlgitused {#core-plugin-translations}
 
 Põhise Ultimate Multisite plugi tõlgitused teostatakse ametlik **WordPress.org tõlgitusplatvormi** kaudu:
 
@@ -24,7 +24,7 @@ See on standard WordPress kogukonna tõlgitussüsteem. Kui tõlgitused jõuavad 
 
 Kui soovite saada tõlgituse redaktoriks oma keele (kõrge kinnituse võime), võtke ühendust [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) kaudu.
 
-## Lisaplugude tõlgitused
+## Lisaplugude tõlgitused {#addon-translations}
 
 Lisaplugude tõlgitused teostatakse eraldatult:
 
@@ -32,11 +32,11 @@ Lisaplugude tõlgitused teostatakse eraldatult:
 
 Lisaplugude tõlgitused on praegu AI-poolest genereeritud algsepunktina. Need katavad kõik toetatud keeled, kuid võivad sisaldada ebaõnnestava lauseid või väärsusi. Me tervitame inimlikke tõlkijaid ülevaatama ja ettepanema parandusi, et neid oleksid looduslikumad ja täpsemad.
 
-## Loka tõlgitused
+## Loka tõlgitused {#local-translations}
 
 Kui soovite oma projekti jaoks kohalikke tõlke luua ja mitte katkistada (upstream) lahendust, on kaks võimalust:
 
-### Poedit kasutamine
+### Poedit kasutamine {#using-poedit}
 
 Võite kasutada seadme rakendust **[Poedit](https://poedit.net)** `.pot` faili tõlkimiseks:
 
@@ -46,6 +46,6 @@ Võite kasutada seadme rakendust **[Poedit](https://poedit.net)** `.pot` faili t
 4. Salvestage -- Poedit genereerib `.po` ja `.mo` failid
 5. Puhas tulemuse failid `lang` folderisse
 
-### Loco Translate kasutamine
+### Loco Translate kasutamine {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin võimaldab teil tõlkida otse adminpaneelilt ilma seadme tööriistaga. See käsitleb tõlke failide loomist ja kompilimist teie eest.

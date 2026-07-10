@@ -3,7 +3,7 @@ title: Sagedamini esitatud küsimused
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# Sagedud küsimused
+# Sagedud küsimused {#frequently-asked-questions}
 
 Siin on mõned **sagedasti esinevad küsimused**, mis tavaliselt tuleb toetuse soojade ajal.
 

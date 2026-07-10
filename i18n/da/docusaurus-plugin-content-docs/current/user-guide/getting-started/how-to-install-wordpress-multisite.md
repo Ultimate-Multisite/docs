@@ -3,7 +3,7 @@ title: Hvordan installerer man WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hvordan installerer jeg WordPress Multisite?
+# Hvordan installerer jeg WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite giver dig mulighed for at have et netværk af sider på én enkelt installation. Dette er en indbygget funktion, men den er ikke aktiv som standard.
 
@@ -98,9 +98,9 @@ For at oprette en undersite:
 
 Når du har udfyldt felterne, klik på knappen "Tilføj site". Når den nye undersite er oprettet, gå derefter til at få adgang til den for at sikre dig, at undersiten fungerer som forventet.
 
-## Almindelige problemer:
+## Almindelige problemer: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Jeg kan oprette nye sider, men de er ikke tilgængelige.
+### 1. Jeg kan oprette nye sider, men de er ikke tilgængelige. {#common-problems}
 
 Hvis du har valgt subdomæner, skal du også opsætte wildcard subdomæner for dit multisite-netværk.
 

@@ -1,255 +1,277 @@
 ---
-title: Zana na Utekelezaji
+title: Zana na Usanidi
 sidebar_position: 4
-_i18n_hash: f27cdab7be320668b6c1d53db1190775
+_i18n_hash: 78a3b6062e985598d020eaee28754120
 ---
-# Zana na Utekelezaji
+# Zana na Usanidi {#tools-and-configuration}
 
-Theme Builder inatumia seti ya zana ili kuchanganua, kubuni, na kujenga tovuti yako ya WordPress. Katika toleo la 1.16.0, **sd-ai-agent/site-scrape sasa ni zana ya Kiwango cha 1 (Tier 1)**, na hivyo inapatikana kwa kiwango cha msingi katika Theme Builder.
+Theme Builder hutumia seti ya zana kuchanganua, kubuni, na kujenga tovuti yako ya WordPress. Katika toleo 1.16.0, **sd-ai-agent/site-scrape sasa ni zana ya Tier 1**, hivyo inapatikana kwa chaguo-msingi katika Theme Builder. Superdav AI Agent v1.18.0 pia inaleta kifurushi cha Advanced companion kinachosambazwa kando kwa mtiririko wa kazi wa wasanidi wanaoaminika; zana hizo si sehemu ya kifurushi cha msingi cha WordPress.org na lazima zisakinishwe na kuidhinishwa kando.
 
-## Zana Zinazopatikana
+## Zana Zinazopatikana {#available-tools}
 
-### Zana za Kiwango cha 1 (Zinapatikana Daima)
+### Zana za Tier 1 (Zinapatikana Kila Wakati) {#tier-1-tools-always-available}
 
-Zana za Kiwango cha 1 zinapatikana kwa kiwango cha msingi katika Theme Builder bila kuhitaji mipangilio yoyote ya ziada.
+Zana za Tier 1 zinapatikana kwa chaguo-msingi katika Theme Builder bila usanidi wowote wa ziada.
 
-#### sd-ai-agent/site-scrape
+#### sd-ai-agent/site-scrape {#sd-ai-agentsite-scrape}
 
-**Lengo:** Kuchanganua tovuti zilizopo ili kutoa msukumo wa ubunifu, muundo wa maudhui, na utendaji kazi.
+**Madhumuni:** Kuchanganua tovuti zilizopo ili kutoa msukumo wa muundo, muundo wa maudhui, na utendaji.
 
 **Uwezo:**
 
-- **Kuchanganua tovuti** — kukusanya na kuchanganua tovuti za washindani au za msukumo.
-- **Kutenganisha ubunifu** — kutambua rangi, fonti, na mifumo ya mpangilio.
-- **Muundo wa maudhui** — kuelewa jinsi kuratibu kurasa na ngazi zake.
-- **Kutambua vipengele** — kutambua plugins na utendaji kazi.
-- **Kuchanganua utendaji** — kuangalia kasi ya kurasa na uboreshaji.
-- **Kuchanganua SEO** — kupitia meta tags na data iliyopangwa.
+- **Uchambuzi wa tovuti** — kukusanya na kuchanganua tovuti za washindani au za msukumo
+- **Utoaji wa muundo** — kutambua rangi, fonti, na mifumo ya mpangilio
+- **Muundo wa maudhui** — kuelewa mpangilio wa kurasa na ngazi zake
+- **Utambuzi wa vipengele** — kutambua plugin na utendaji
+- **Uchambuzi wa utendaji** — kukagua kasi ya ukurasa na uboreshaji
+- **Uchambuzi wa SEO** — kukagua meta tags na data iliyopangwa
 
-**Jinsi ya kutumia:**
+**Matumizi:**
 
 ```
-Changanua muundo wa example.com na utitumie kama msukumo kwa tovuti yangu.
+Changanua muundo wa example.com na uutumie kama msukumo kwa tovuti yangu.
 ```
 
-**Inachokusanya:**
+**Inachotoa:**
 
 - Paleti ya rangi na matumizi ya rangi
-- Typography (fonts na ukubwa)
+- Tipografia (fonti na ukubwa)
 - Muundo wa mpangilio na nafasi
-- Mifumo ya usururu (navigation)
-- Uratibu wa maudhui
+- Mifumo ya urambazaji
+- Mpangilio wa maudhui
 - Matumizi ya picha na media
-- Vipengele vya mwingiliano
-- Uwezo wa kuonyesha kwenye simu (Mobile responsiveness)
+- Vipengele shirikishi
+- Uwitikio wa simu za mkononi
 
 **Vikwazo:**
 
-- Haiwezi kuchanganua tovuti zenye ulinzi wa nenosiri.
-- Inheshimu `robots.txt` na sera za tovuti.
-- Inaweza isikusanya maudhui yanayobadilika (dynamic content).
-- Tovuti zenye matumizi mengi ya JavaScript zinaweza kuwa na uchanganuzi mdogo.
-- Tovuti kubwa zinaweza kuchukua muda mrefu kuchanganuliwa.
+- Haiwezi kukusanya tovuti zinazolindwa kwa nenosiri
+- Inaheshimu robots.txt na sera za tovuti
+- Huenda isikamate maudhui yanayobadilika
+- Tovuti zinazotegemea sana JavaScript zinaweza kuwa na uchambuzi mdogo
+- Tovuti kubwa zinaweza kuchukua muda mrefu zaidi kuchanganuliwa
 
-### Zana za Kiwango cha 2 (Hiari)
+### Zana za Tier 2 (Hiari) {#tier-2-tools-optional}
 
-Zana za Kiwango cha 2 zinapatikana wakati unapowasha wazi katika mipangilio ya Theme Builder.
+Zana za Tier 2 zinapatikana zinapowezeshwa wazi katika mipangilio ya Theme Builder.
 
-#### Advanced Analytics
+#### Advanced Analytics {#advanced-analytics}
 
-Inatoa vipimo vya kina vya utendaji:
+Hutoa vipimo vya kina vya utendaji:
 
-- Muda wa kupakia kurasa
+- Nyakati za upakiaji wa ukurasa
 - Core Web Vitals
 - Alama ya SEO
-- Alama ya Upatikanaji (Accessibility score)
-- Alama ya Mazoea bora
+- Alama ya ufikivu
+- Alama ya mbinu bora
 
-#### Content Optimizer
+#### Content Optimizer {#content-optimizer}
 
-Inachanganua na kupendekeza maboresho kwa:
+Huchanganua na kupendekeza maboresho kwa:
 
-- Usomaji (Readability)
+- Usomekaji
 - Uboreshaji wa SEO
-- Matumizi ya maneno muhimu (Keyword usage)
+- Matumizi ya maneno muhimu
 - Muundo wa maudhui
-- Mahali pa Wito wa kuchukua hatua (Call-to-action placement)
+- Uwekaji wa wito wa kuchukua hatua
 
-### Zana za Kiwango cha 3 (Premium)
+### Zana za Tier 3 (Premium) {#tier-3-tools-premium}
 
-Zana za Kiwango cha 3 zinahitaji mipangilio ya ziada au vipengele vya premium.
+Zana za Tier 3 zinahitaji usanidi wa ziada au vipengele vya premium.
 
-#### AI Content Generator
+#### AI Content Generator {#ai-content-generator}
 
-Inazalisha maudhui kwa ajili ya:
+Huzalisha maudhui kwa:
 
 - Maelezo ya bidhaa
 - Kurasa za huduma
-- Makala za blogu
+- Machapisho ya blogu
 - Meta descriptions
-- Maandishi ya Wito wa kuchukua hatua
+- Nakala ya wito wa kuchukua hatua
 
-#### Advanced Design Tools
+#### Advanced Design Tools {#advanced-design-tools}
 
-Inatoa uwezo wa kubuni wa hali ya juu:
+Hutoa uwezo wa juu wa muundo:
 
 - Uzalishaji wa CSS maalum
-- Kuunda animations
-- Ubunifu wa vipengele vya mwingiliano
-- Nadharia ya rangi ya hali ya juu
-- Uboreshaji wa typography
+- Uundaji wa uhuishaji
+- Muundo wa kipengele shirikishi
+- Nadharia ya juu ya rangi
+- Uboreshaji wa tipografia
 
-## Utekelezaji wa Zana
+### Zana za Advanced Companion (Kifurushi Tofauti) {#advanced-companion-tools-separate-package}
 
-### Kuwezesha Zana
+Kifurushi cha Advanced companion husambazwa kando na toleo la msingi la Superdav AI Agent. Kimekusudiwa kwa mazingira ya wasanidi na wamiliki wa tovuti wanaoaminika ambapo wasimamizi huruhusu wazi agent kutumia zana zenye athari kubwa.
+
+Uwezo wa Advanced companion unaweza kujumuisha:
+
+- **Zana za mfumo wa faili** — kukagua na kurekebisha faili zilizoidhinishwa katika mazingira yanayoaminika
+- **Zana za database** — kuuliza au kusasisha data ya tovuti inapoidinishwa wazi
+- **Zana za WP-CLI** — kuendesha amri za matengenezo na ukaguzi wa WordPress
+- **Zana za REST dispatcher** — kuita endpoints za REST zilizosajiliwa kupitia mitiririko ya dispatch inayodhibitiwa
+- **Zana za kujenga plugin** — kuanzisha muundo na kuboresha code ya plugin kwa kurudia
+- **Zana za Git snapshot** — kuunda snapshots kabla ya operesheni hatari za wasanidi
+- **Zana za usimamizi wa watumiaji** — kusaidia kukagua au kurekebisha rekodi za watumiaji panaporuhusiwa
+- **Zana za benchmark** — kuendesha benchmarks za utendaji au uwezo kwa ukaguzi wa maendeleo
+
+Usiziandike kama zana za Theme Builder zinazopatikana kwa ujumla kwa kila usakinishaji. Zinapatikana tu wakati kifurushi cha Advanced companion kimesakinishwa, kuwezeshwa, na kuzuiliwa kwa wasimamizi wanaoaminika.
+
+## Usanidi wa Zana {#tool-configuration}
+
+### Kuwezesha Zana {#enabling-tools}
 
 Ili kuwezesha zana za ziada katika Theme Builder:
 
-1. Nenda **Gratis AI Agent → Settings**
-2. Nenda **Theme Builder → Tools**
-3. Washa/zima zana kama inavyohitajika
+1. Nenda kwenye **Gratis AI Agent → Settings**
+2. Nenda kwenye **Theme Builder → Tools**
+3. Washa/zima zana kadiri inavyohitajika
 4. Hifadhi mipangilio
 
-### Ruhusa za Zana
+### Ruhusa za Zana {#tool-permissions}
 
-Zana zingine zinahitaji ruhusa:
+Baadhi ya zana zinahitaji ruhusa:
 
-- **Kuchanganua tovuti** — inahitaji ufikiaji wa mtandao.
-- **Analytics** — inahitaji kuunganishwa na Google Analytics.
-- **Uzalishaji wa maudhui** — inahitaji API keys.
-- **Vipengele vya hali ya juu** — inaweza kuhitaji usajili wa premium.
+- **Ukusanyaji wa tovuti** — unahitaji ufikiaji wa intaneti
+- **Analytics** — inahitaji muunganisho wa Google Analytics
+- **Uzalishaji wa maudhui** — unahitaji API keys
+- **Vipengele vya juu** — vinaweza kuhitaji premium subscription
+- **Zana za Advanced companion** — zinahitaji kifurushi cha Advanced kinachosambazwa kando na uaminifu wa wazi wa msimamizi
 
-### API Keys na Credentials
+### API Keys na Vitambulisho {#api-keys-and-credentials}
 
-Panga API keys kwa zana zinazohitaji:
+Sanidi API keys kwa zana zinazozihitaji:
 
-1. Nenda **Gratis AI Agent → Settings → API Keys**
-2. Ingiza credentials kwa kila zana.
-3. Jaribu muunganisho.
-4. Hifadhi kwa usalama.
+1. Nenda kwenye **Gratis AI Agent → Settings → API Keys**
+2. Weka vitambulisho kwa kila zana
+3. Jaribu muunganisho
+4. Hifadhi kwa usalama
 
-## Kutumia sd-ai-agent/site-scrape
+### Kusakinisha Kifurushi cha Advanced Companion {#installing-the-advanced-companion-package}
 
-### Matumizi ya Msingi
+Kifurushi cha Advanced companion hutolewa kando na ZIP ya msingi ya WordPress.org. Kisakinishe tu kutoka kwenye njia rasmi ya usambazaji ya mradi kwa toleo husika, kisha zuia ufikiaji kwa wasimamizi wanaoaminika. Kagua milango ya idhini ya binadamu na tabia ya git snapshot kabla ya kuwezesha zana za mfumo wa faili, database, WP-CLI, REST dispatcher, kujenga plugin, usimamizi wa watumiaji, au benchmark kwenye tovuti ya uzalishaji.
 
-Muombe Theme Builder kuchanganua tovuti:
+## Kutumia sd-ai-agent/site-scrape {#using-sd-ai-agentsite-scrape}
 
-```
-Changanua muundo wa tovuti ya washindani wangu hapa competitor.com
-na pendekeza maboresho ya ubunifu kwa tovuti yangu.
-```
+### Matumizi ya Msingi {#basic-usage}
 
-### Uchanganuzi Maalum
-
-Omba aina maalum za uchanganuzi:
+Mwombe Theme Builder ichanganue tovuti:
 
 ```
-Tenganisha paleti ya rangi kutoka kwa example.com na nititumie kama msukumo.
+Changanua muundo wa tovuti ya mshindani wangu katika competitor.com
+na pendekeza maboresho ya muundo kwa tovuti yangu.
+```
+
+### Uchambuzi Maalum {#specific-analysis}
+
+Omba aina maalum za uchambuzi:
+
+```
+Toa paleti ya rangi kutoka example.com na uitumie kama msukumo.
 ```
 
 ```
-Changanua muundo wa usururu (navigation) wa example.com na nitumie
-muundo kama huo kwa tovuti yangu.
+Changanua muundo wa urambazaji wa example.com na tumia mpangilio
+unaofanana kwenye tovuti yangu.
 ```
 
 ```
-Angalia uwezo wa kuonyesha kwenye simu (mobile responsiveness) wa example.com na kuhakikisha tovuti yangu
-ina uwezo huo.
+Kagua uwitikio wa simu za mkononi wa example.com na hakikisha tovuti yangu
+inaitikia kwa kiwango sawa.
 ```
 
-### Uchanganuzi wa Kulinganisha
+### Uchambuzi wa Ulinganisho {#comparison-analysis}
 
-Linganisha tovuti kadhaa:
+Linganisha tovuti nyingi:
 
 ```
-Linganisha miundo ya site1.com na site2.com na unda muundo ambao unachanganya
-vipengele bora vya zote mbili.
+Linganisha miundo ya site1.com na site2.com na unda muundo
+unaounganisha vipengele bora vya zote mbili.
 ```
 
-## Vikwazo na Mambo ya Kuzingatia kwa Zana
+## Vikwazo na Mambo ya Kuzingatia ya Zana {#tool-limitations-and-considerations}
 
-### Kikomo cha Kasi (Rate Limiting)
+### Upunguzaji wa Kiwango {#rate-limiting}
 
-- Kukusanya data kunapunguzwa kasi ili kuzuia kupita kiasi kwa seva.
-- Ombi nyingi kwa tovuti moja zinaweza kupunguzwa kasi.
-- Tovuti kubwa zinaweza kuchukua muda mrefu kuchanganuliwa.
+- Scraping imewekewa kikomo cha kasi ili kuzuia mzigo kupita kiasi kwenye seva
+- Maombi mengi kwa site ileile yanaweza kupunguzwa kasi
+- Site kubwa zinaweza kuchukua muda mrefu zaidi kuchanganuliwa
 
-### Usahihi wa Maudhui
+### Usahihi wa Maudhui {#content-accuracy}
 
-- Maudhui yanayobadilika (dynamic content) yanaweza kutokusanywa kikamilifu.
-- Maudhui yanayotokana na JavaScript yanaweza kuwa yasiyokamilika.
-- Data halisi (real-time data) inaweza isionekane.
-- Maudhui mengine yanaweza kuwa nyuma ya kuta za malipo (paywalls).
+- Maudhui yanayobadilika yanaweza yasinaswe kikamilifu
+- Maudhui yanayoonyeshwa na JavaScript yanaweza kuwa hayajakamilika
+- Data ya wakati halisi inaweza isionekane
+- Baadhi ya maudhui yanaweza kuwa nyuma ya malipo
 
-### Kuzingatia Sheria na Maadili
+### Mambo ya Kisheria na Kimaadili {#legal-and-ethical-considerations}
 
-- Heshimu `robots.txt` na sera za tovuti.
-- Usikusanye maudhui yaliyohakikishwa (copyrighted content) kwa ajili ya kunakili.
-- Tumia uchanganuzi kwa msukumo, sio kwa kunakili.
-- Thibitisha kuwa una haki ya kutumia maudhui yaliyotolewa.
-- Fuata masharti ya huduma ya tovuti zilizochanganuliwa.
+- Heshimu robots.txt na sera za site
+- Usifanye scraping ya maudhui yenye hakimiliki kwa ajili ya kuyarudufu
+- Tumia uchanganuzi kwa msukumo, si kunakili
+- Hakikisha una haki za kutumia maudhui yaliyotolewa
+- Fuata masharti ya huduma ya site zilizochanganuliwa
 
-### Athari kwa Utendaji
+### Athari kwa Utendaji {#performance-impact}
 
-- Kuchanganua tovuti kubwa kunaweza kuchukua muda.
-- Kukusanya data nyingi kwa wakati mmoja kunaweza kuwa polepole.
-- Muunganisho wa mtandao unathiri kasi.
-- Data kubwa inaweza kuhitaji usindikaji zaidi.
+- Scraping ya site kubwa inaweza kuchukua muda
+- Scraping nyingi za wakati mmoja zinaweza kuwa polepole zaidi
+- Muunganisho wa mtandao huathiri kasi
+- Seti kubwa za data zinaweza kuhitaji uchakataji zaidi
 
-## Mazoea Bora
+## Mbinu Bora {#best-practices}
 
-### Kutumia Uchanganuzi wa Tovuti
+### Kutumia Uchanganuzi wa Site {#using-site-analysis}
 
-1. **Changanua tovuti nyingi** — kukusanya msukumo kutoka vyanzo kadhaa.
-2. **Zingatia muundo** — kujifunza mifumo ya mpangilio na utaratibu.
-3. **Tenganisha rangi** — kutumia paleti za rangi kama sehemu za kuanzia.
-4. **Soma typography** — kutambua mchanganyiko wa fonti unayopenda.
-5. **Kagua usururu** — kuelewa jinsi menu inavyopangwa.
+1. **Changanua site nyingi** — kusanya msukumo kutoka vyanzo kadhaa
+2. **Lenga muundo** — jifunze mifumo ya mpangilio na upangaji
+3. **Toa rangi** — tumia paleti za rangi kama sehemu za kuanzia
+4. **Jifunze typography** — tambua michanganyiko ya font unayoipenda
+5. **Pitia urambazaji** — elewa upangaji wa menyu
 
-### Kukusanya Data kwa Maadili
+### Scraping ya Kimaadili {#ethical-scraping}
 
-1. **Heshimu `robots.txt`** — fuata miongozo ya tovuti.
-2. **Usinakili maudhui** — tumia uchanganuzi kwa msukumo tu.
-3. **Thibitisha haki** — hakikisha unaweza kutumia maudhui yaliyotolewa.
-4. **Taja vyanzo** — toa sifa kwa vyanzo vya msukumo.
-5. **Fuata masharti** — zingatia masharti ya huduma ya tovuti.
+1. **Heshimu robots.txt** — fuata miongozo ya site
+2. **Usinakili maudhui** — tumia uchanganuzi kwa msukumo pekee
+3. **Hakiki haki** — hakikisha unaweza kutumia maudhui yaliyotolewa
+4. **Taja vyanzo** — toa sifa kwa vyanzo vya msukumo
+5. **Fuata masharti** — zingatia masharti ya huduma ya site
 
-### Kuongeza Ufanisi wa Zana
+### Kuongeza Ufanisi wa Zana {#maximizing-tool-effectiveness}
 
-1. **Kuwa maalum** — omba aina maalum za uchanganuzi.
-2. **Toa muktadha** — eleza lengo la tovuti yako.
-3. **Weka matarajio** — eleza malengo yako ya ubunifu.
-4. **Rudia** — booresho kulingana na matokeo.
-5. **Unganisha zana** — tumia zana nyingi kwa uchanganuzi kamili.
+1. **Kuwa mahususi** — omba aina mahususi za uchanganuzi
+2. **Toa muktadha** — eleza madhumuni ya site yako
+3. **Weka matarajio** — eleza malengo yako ya muundo
+4. **Rudia na boresha** — boresha kulingana na matokeo
+5. **Changanya zana** — tumia zana nyingi kwa uchanganuzi wa kina
 
-## Kutatua Matatizo
+## Utatuzi wa Matatizo {#troubleshooting}
 
-### Tovuti Hai-scrape
+### Site Haitafanyiwa Scraping {#site-wont-scrape}
 
-- Angalia kama tovuti inapatikana kwa umma.
-- Thibitisha kuwa `robots.txt` inaruhusu kuchanganua.
-- Jaribu tovuti tofauti.
-- Angalia muunganisho wa intaneti.
-- Wasiliana na usaidizi ikiwa tatizo linaendelea.
+- Angalia kama site inapatikana hadharani
+- Hakikisha robots.txt inaruhusu scraping
+- Jaribu site nyingine
+- Angalia muunganisho wa intaneti
+- Wasiliana na usaidizi ikiwa tatizo litaendelea
 
-### Uchanganuzi Usikamilika
+### Uchanganuzi Usio Kamili {#incomplete-analysis}
 
-- Tovuti inaweza kuwa na maudhui yanayobadilika.
-- JavaScript inaweza isionekane kikamilifu.
-- Tovuti kubwa zinaweza kupita muda (timeout).
-- Jaribu kuchanganua kurasa maalum badala yake.
-- Omba aina maalum za uchanganuzi.
+- Site inaweza kuwa na maudhui yanayobadilika
+- JavaScript inaweza isiwasilishwe kikamilifu
+- Site kubwa zinaweza kuisha muda
+- Jaribu kuchanganua kurasa mahususi badala yake
+- Omba aina mahususi za uchanganuzi
 
-### Utendaji Polepole
+### Utendaji wa Polepole {#slow-performance}
 
-- Tovuti kubwa zinachukua muda mrefu kuchanganuliwa.
-- Kukusanya data nyingi kwa wakati mmoja kuna polepole.
-- Muunganisho wa mtandao unathiri kasi.
-- Jaribu wakati wa saa za chini za matumizi.
-- Changanua sehemu ndogo kwanza.
+- Site kubwa huchukua muda mrefu zaidi kuchanganuliwa
+- Scraping nyingi za wakati mmoja huwa polepole zaidi
+- Muunganisho wa mtandao huathiri kasi
+- Jaribu wakati wa saa zisizo na matumizi mengi
+- Changanua sehemu ndogo kwanza
 
-## Nyaraka Zinazohusiana
+## Nyaraka Zinazohusiana {#related-documentation}
 
-- [Discovery Interview](./discovery-interview.md) — kukusanya taarifa za ubunifu.
-- [Design Direction](./design-direction.md) — kuboresha ubunifu wako.
-- [Hospitality Menus](./hospitality-menus.md) — kuunda kurasa za menyu.
+- [Mahojiano ya Ugunduzi](./discovery-interview.md) — kusanya taarifa za muundo
+- [Mwelekeo wa Muundo](./design-direction.md) — boresha muundo wako
+- [Menyu za Ukarimu](./hospitality-menus.md) — unda kurasa za menyu

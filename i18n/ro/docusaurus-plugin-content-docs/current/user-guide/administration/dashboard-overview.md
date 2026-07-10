@@ -3,11 +3,11 @@ title: Prezentare generală tablou de bord
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Prezentare generală a Dashboard-ului
+# Prezentare generală a Dashboard-ului {#dashboard-overview}
 
 Ultimate Multisite are un **Dashboard** dedicat în meniul Ultimate Multisite și adaugă, de asemenea, widget-uri în Dashboard-ul de Rețea. Acest articol acoperă ce vei vedea în ambele locuri.
 
-## Dashboard-ul de Rețea
+## Dashboard-ul de Rețea {#the-network-dashboard}
 
 Ultimate Multisite injectează widget-uri utile în dashboard-ul la nivel de rețea, pe care îl găsești la **Site-urile mele → Administrator Rețea → Dashboard**.
 
@@ -35,7 +35,7 @@ Iată ce oferă fiecare widget:
 
 ![Widget-ul Știri](/img/admin/network-dashboard-news.png)
 
-## Dashboard-ul Ultimate Multisite
+## Dashboard-ul Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 În timp ce dashboard-ul de rețea prezintă informații generale despre rețea, dashboard-ul Ultimate Multisite (în partea de sus a meniului Ultimate Multisite) prezintă informații despre serviciu.
 

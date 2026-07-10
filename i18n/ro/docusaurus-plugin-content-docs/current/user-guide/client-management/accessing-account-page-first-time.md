@@ -3,7 +3,7 @@ title: Accesarea Paginii Contului
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Cum pot accesa pagina contului meu pentru prima dată?
+# Cum pot accesa pagina contului meu pentru prima dată? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Bine ai venit la Ultimate Multisite!
 

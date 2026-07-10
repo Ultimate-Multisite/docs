@@ -1,40 +1,46 @@
 ---
-title: Referenco de ŝanĝoj
+title: Referenco pri agordoj
 sidebar_position: 11
-_i18n_hash: 0259b88b319090b358483322ad97fc2d
+_i18n_hash: d9ab375be74a5dff1aaf4f4eaf80c3be
 ---
-# Referenze de Konfiguracio
+# Agordoj-Referenco {#settings-reference}
 
-Ta paŭrega paŭlaj ki afectas la ĉiutagaj administrajn kaj recentajn ŝanĝojn en Ultimate Multisite.
+Ĉi tiu paĝo spuras agordojn kiuj influas ĉiutagan administradon kaj lastatempajn kondutŝanĝojn en Ultimate Multisite.
 
-## Aliaj Opcioj
+## Aliaj Opcioj {#other-options}
 
-La areo **Aliaj Opcioj** aparas sub **Ultimate Multisite > Settings > Login & Registration**.
+La areo **Aliaj Opcioj** aperas sub **Ultimate Multisite > Agordoj > Ensaluto & Registriĝo**.
 
-| Konfiguracio | Deskribeco |
+| Agordo | Priskribo |
 |---|---|
-| **Enable Jumper** | Montras la rapida navigitaŭlon Jumper en la administrajn areo. Uzu ĝin por salti direkte al skrenoj de Ultimate Multisite, retoj objektoj kaj suportitaj admin destinaĵoj. Dezaktive baldu ĝin, se vi ne volas ĉi tiun kurtocuŝan vidan. |
+| **Ebligi Jumper** | Montras la rapidnavigan ilon Jumper en la administra areo. Uzu ĝin por salti rekte al ekranoj de Ultimate Multisite, retaj objektoj, kaj subtenataj administraj cellokoj. Malebligu ĝin se vi ne volas ke ĉi tiu ŝparvojo estu videbla. |
 
-## Errareportado kaj telemetio
+## Erarraportado kaj telemetrio {#error-reporting-and-telemetry}
 
-La antaŭa konfiguracio por registri eraraportojn estis forigita de la paĝo de konfiguracio. Anonima telemetio estas dezaktivita, kaj ne existe UI-kurtocuŝo por ĝin aktivi.
+La antaŭa elektebla agordo por erarraportado estis forigita de la agordoj-paĝo. Anonima telemetrio estas malebligita kaj ne ekzistas UI-ŝaltilo por ebligi ĝin.
 
-Se vi konservas internaj operacia manualoj aŭ skrotadojn por la paĝo de konfiguracio, forigu referencojn al la malnova opcio por registri eraraportojn, por ke administratoroj ne serĉus konfiguracion kiu ne estas pli nun eksista.
+Se vi prizorgas internajn procedurlibrojn aŭ ekrankopiojn por la agordoj-paĝo, forigu referencojn al la malnova elektebla kampo por erarraportado por ke administrantoj ne serĉu agordon kiu ne plu ĉeestas.
 
-## Import/Export konfiguracioj
+## Import/Export-agordoj {#importexport-settings}
 
-La tabulo **Import/Export** deskribas, kiom konfiguraciojn ĝi kontrolas kaj linkas direkte al **Ultimate Multisite > Site Export** por arkivaj skrenoj de la sitio kaj la retoj. Uzvu la tabulon de konfiguracio por importado/ekspodo, uzu **Tools > Export & Import** por la floco de exportado/importado de unua sitio, kaj uzu la instrumenton Site Export, kiam vi bezonas plena arkivo de Reto-Exportado.
+La agorda langeto **Import/Export** priskribas kiujn agordojn ĝi regas kaj ligas rekte al **Ultimate Multisite > Site Export** por retejo- kaj retaj arkivoj. Uzu la agordan langeton por import-/eksport-konfigurado, uzu **Iloj > Eksporto & Importo** por la unu-reteja eksporta/importa laborfluo, kaj uzu la ilon Site Export kiam vi bezonas plenan arkivon Network Export.
 
-## Konfiguracioj de konektoroj AI-providantoj
+## Averto pri saldo de Domain Seller HostAfrica {#domain-seller-hostafrica-balance-warning}
 
-Konfiguracioj de konektoroj AI-providantoj nun eksponas nur la suportitaj OAuth konto-pooloj:
+Kiam la aldonaĵo Domain Seller estas konektita al HostAfrica, retaj administrantoj nun vidas forfermeblan averton pri malalta saldo kiam la saldo de la revendista Account estas tro malalta por fidinda domajna registrado aŭ prilaborado de renovigoj.
 
-| Provider | Setup flow |
+Traktu ĉi tiun avizon kiel operacian averton: replenigu la revendistan saldon de HostAfrica antaŭ ol akcepti pliajn pagitajn domajnajn registradojn, poste revenu al la agordoj de Domain Seller aŭ al la ekrano por domajna monitorado por konfirmi ke registradoj kaj renovigoj povas daŭri normale.
+
+## Agordoj de konektiloj por AI-provizantoj {#ai-provider-connector-settings}
+
+Agordoj de konektiloj por AI-provizantoj nun montras nur la subtenatajn OAuth-kontajn grupojn:
+
+| Provizanto | Agorda fluo |
 |---|---|
-| **Anthropic Max** | Konnekti unu elun aŭ plurajn kontojn de Anthropic Max per la OAuth-butono. Uzdu la manĝen OAuth alternan, se la sandboxed brauzilo ne povas kompleti la redirekton otomatik. |
-| **OpenAI ChatGPT/Codex** | Konnekti kontojn de ChatGPT per la sama flujo de floco OAuth. Operacioj suportitaj de konektoro povas uzi instrumenton ChatGPT Codex post kiam la konto estas konektita. |
-| **Google AI Pro** | Konnekti kontojn de Google AI Pro per OAuth, tiam rafraĉi la konektoron, se la listo de kontoj ne aktualiziĝas tuteble. |
+| **Anthropic Max** | Konektu unu aŭ pli da Anthropic Max-kontoj per la OAuth-butono. Uzu la manan OAuth-rezervon kiam sablokesta retumilo ne povas kompletigi la alidirekton aŭtomate. |
+| **OpenAI ChatGPT/Codex** | Konektu ChatGPT-kontojn per la sama laborfluo de OAuth-grupo. Konektile subtenataj operacioj povas uzi ChatGPT Codex-ilajn vokojn post kiam la Account estas konektita. |
+| **Google AI Pro** | Konektu Google AI Pro-kontojn per OAuth, poste refreŝigu la konektilon se la kontolisto ne ĝisdatigas tuj. |
 
-Cursor Pro ne estas suportita konektoro pli mal. Uzdu la senutilajn imagojn, runbook-ojn aŭ startaj paŝojn, kiuj menciis la konfigurigon de Cursor Pro aŭ la vojojn de konektoroj.
+Cursor Pro ne plu estas subtenata provizanto. Forigu malnovajn internajn ekrankopiojn, procedurlibrojn, aŭ enkondukajn paŝojn kiuj mencias agordokampojn aŭ konektilajn vojojn de Cursor Pro.
 
-Kiam vi aĉas aŭ forigas konektorajn kontojn, ingresu validan elektronan adreson por la konto ki ŝanĝiĝas aŭ forigas, kaj konservu la parametroj de la konektoro antaŭ testado de operacioj bazitaj sur konektoro.
+Kiam vi aldonas aŭ forigas provizantajn kontojn, enigu validan retpoŝtadreson por la konto refreŝigata aŭ forigata kaj konservu la provizantajn agordojn antaŭ ol testi operaciojn subtenatajn de konektilo.

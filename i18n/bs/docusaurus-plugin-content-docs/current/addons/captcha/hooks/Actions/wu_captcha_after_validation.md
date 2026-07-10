@@ -4,20 +4,20 @@ title: Akcija - wu_captcha_after_validation
 sidebar_label: wu_captcha_after_validation
 _i18n_hash: d257de780581abe25b44e1ec519f48d8
 ---
-# Akcija: wu_captcha_after_validation
+# Akcija: wu_captcha_after_validation {#action-wucaptchaaftervalidation}
 
 Izvršava se nakon validacije captcha-e.
 
-## Parametri
+## Parametri {#parameters}
 
 | Ime | Tip | Opis |
 |------|------|-------------|
 | $result | `array` | Rezultat validacije. |
 | $token | `string` | Token koji je validiran. |
 
-### Od verzije
+### Od verzije {#since}
 
 - 1.2.0
-### Izvor
+### Izvor {#source}
 
 Definisano je u [`inc/class-captcha-core.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-captcha/blob/main/inc/class-captcha-core.php#L224) na liniji 224

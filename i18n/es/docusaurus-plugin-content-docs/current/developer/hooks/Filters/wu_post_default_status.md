@@ -4,11 +4,11 @@ title: Filtro - wu_post_default_status
 sidebar_label: wu_post_default_status
 _i18n_hash: 8bd5e132fa5150851595e0d475a52fea
 ---
-# Filtro: wu_post_default_status
+# Filtro: wu_post_default_status {#filter-wupostdefaultstatus}
 
 Filtra los datos del objeto antes de que se almacenen en la base de datos.
 
-## Parámetros
+## Parámetros {#parameters}
 
 | Nombre | Tipo | Descripción |
 |--------|------|-------------|
@@ -16,10 +16,10 @@ Filtra los datos del objeto antes de que se almacenen en la base de datos.
 | $post_type | `string` | El tipo de publicación. |
 | $this | `\Base_Model` | La instancia del objeto. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
 
-### Fuente
+### Fuente {#source}
 
 Definido en [`inc/models/class-post-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-post-base-model.php#L320) en la línea 320

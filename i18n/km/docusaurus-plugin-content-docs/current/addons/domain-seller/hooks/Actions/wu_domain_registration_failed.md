@@ -1,0 +1,24 @@
+---
+id: wu_domain_registration_failed
+title: សកម្មភាព - wu_domain_registration_failed
+sidebar_label: wu_domain_registration_failed
+_i18n_hash: 4255f34307a46a9129dc40e713fb9b5b
+---
+# សកម្មភាព: wu_domain_registration_failed {#action-wudomainregistrationfailed}
+
+ដំណើរការបន្ទាប់ពីការប៉ុនប៉ងចុះឈ្មោះដែនបរាជ័យ។
+
+## ប៉ារ៉ាម៉ែត្រ {#parameters}
+
+| ឈ្មោះ | ប្រភេទ | ការពិពណ៌នា |
+|------|------|-------------|
+| $payment | `\WP_Ultimo\Models\Payment` | ការទូទាត់ដែលបានបង្កឱ្យមានការចុះឈ្មោះ។ |
+| $registration_data | `array&lt;string,mixed&gt;` | ទិន្នន័យមេតានៃការចុះឈ្មោះ រួមទាំង status=failed និង error_message។ |
+| $error_message | `string` | សារកំហុសដែលមនុស្សអាចអានបានពីអ្នកចុះបញ្ជីដែន។ |
+
+### ចាប់ពី {#since}
+
+- 2.0.0
+### ប្រភព {#source}
+
+បានកំណត់ក្នុង [`inc/class-checkout-integration.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-checkout-integration.php#L1250) នៅបន្ទាត់ 1250

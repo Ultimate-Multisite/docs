@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Asas Ultimate Multisite 101
+# Asas Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Ultimate Multisite ialah plugin WordPress Multisite yang membolehkan anda menawarkan WaaS atau Laman Web sebagai Perkhidmatan kepada pelanggan. Sebelum kita mendalami dan mempelajari bagaimana Ultimate Multisite boleh membantu perniagaan dan pelanggan anda, terdapat beberapa pengetahuan asas yang perlu kita fahami terlebih dahulu.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Kebanyakan daripada kita sudah biasa dengan pemasangan WordPress standard. Anda boleh menciptanya melalui panel kawalan penyedia hosting anda atau, bagi yang lebih berani, menyediakan pelayan web dan pangkalan data baharu, memuat turun fail teras dan memulakan proses pemasangan.
 
@@ -21,13 +21,13 @@ Secara ringkas, WordPress multisite boleh difikirkan seperti ini: Sebuah Univers
 
 Untuk memahami kenyataan ini dengan lebih jelas, mari kita lihat beberapa istilah asas yang terdapat bukan sahaja dalam dokumentasi Ultimate Multisite tetapi juga di seluruh komuniti WordPress.
 
-### Rangkaian
+### Rangkaian {#the-network}
 
 Dari segi WordPress, rangkaian multisite ialah di mana beberapa sublaman boleh diurus dari satu dashboard. Walaupun cara mencipta rangkaian multisite berbeza antara penyedia hosting, hasil akhirnya biasanya beberapa arahan tambahan dalam fail wp-config.php untuk memberitahu WordPress bahawa ia beroperasi dalam mod khusus ini.
 
 Terdapat beberapa perbezaan yang ketara antara rangkaian multisite dan pemasangan WordPress bersendirian yang akan kita bincangkan secara ringkas.
 
-#### Subdomain vs. Subdirektori
+#### Subdomain vs. Subdirektori {#subdomain-vs-subdirectory}
 
 Salah satu keputusan paling segera yang perlu anda buat ialah sama ada pemasangan multisite akan beroperasi dengan _subdirektori_ atau _subdomain_. Ultimate Multisite berfungsi sama baik dengan kedua-dua pilihan tetapi terdapat beberapa perbezaan seni bina antara kedua-dua konfigurasi.
 
@@ -43,7 +43,7 @@ Dalam konfigurasi _subdomain_, penggunaan sijil SSL wildcard adalah salah satu p
 
 Walaupun pilihan lain wujud, ia sering terhad dalam skop dan aplikasi serta memerlukan konfigurasi dan pertimbangan tambahan berkenaan kesesuaian.
 
-#### Plugin dan Tema
+#### Plugin dan Tema {#plugins-and-themes}
 
 Apa yang WordPress berikan, ia juga mengambil balik, sekurang-kurangnya dari perspektif pelanggan. Dalam pemasangan WordPress bersendirian, jika pentadbir laman memasang plugin yang buruk atau gagal mengekalkan pemasangan mereka dikemas kini, satu-satunya mangsa adalah diri mereka sendiri. Walau bagaimanapun, pentadbir laman yang memasang plugin buruk pada pemasangan multisite menjadikan setiap laman dalam rangkaian sebagai mangsa.
 
@@ -51,7 +51,7 @@ Atas sebab ini apabila dikonfigurasikan sebagai multisite, WordPress membuang ke
 
 Setakat ini pentadbir rangkaian bertanggungjawab memasang plugin dan tema ke dalam rangkaian dan mewakilkan kebenaran untuk menggunakan plugin dan tema ini kepada laman rangkaian. Pentadbir laman tidak boleh memasang plugin dan tema atau mengakses plugin dan tema yang tidak ditugaskan kepada laman mereka.
 
-#### Pengguna dan Pentadbir
+#### Pengguna dan Pentadbir {#users-and-administrators}
 
 Dalam WordPress Multisite, semua laman rangkaian berkongsi pangkalan data yang sama dan oleh itu berkongsi pengguna, peranan dan keupayaan yang sama. Cara paling tepat untuk memikirkannya ialah semua pengguna adalah ahli rangkaian dan bukan laman tertentu.
 
@@ -63,13 +63,13 @@ Mengulangi kenyataan di atas, walaupun akaun pengguna kelihatan berkaitan dengan
 
 Walaupun bukan konsep asing dalam sistem perusahaan, sumber tunggal pendaftaran dan pengesahan pengguna ini sering menjadi konsep yang sukar difahami bagi mereka yang biasa dengan pemasangan WordPress bersendirian di mana pentadbiran pengguna agak lebih mudah.
 
-#### Media
+#### Media {#media}
 
 Di mana laman rangkaian berkongsi pangkalan data tunggal dalam WordPress Multisite, mereka mengekalkan laluan berasingan pada sistem fail untuk fail media.
 
 Lokasi WordPress standard (wp-content/uploads) kekal; walau bagaimanapun, laluannya diubah untuk mencerminkan ID unik laman rangkaian. Oleh itu fail media untuk laman rangkaian muncul sebagai wp-contents/uploads/site/[id].
 
-#### Permalink
+#### Permalink {#permalinks}
 
 Kami menyebut sebelum ini bahawa terdapat kelebihan ketara _subdomain_ berbanding konfigurasi _subdirektori_ dan ini dia: laluan.
 
@@ -83,7 +83,7 @@ Dalam konfigurasi _subdomain_, tindakan ini tidak diperlukan kerana setiap laman
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Halaman Statik
+#### Halaman Statik {#static-pages}
 
 Dalam konfigurasi _subdirektori_, potensi konflik penamaan meluas kepada halaman statik kerana laman utama dan laman rangkaian berkongsi laluan yang sama.
 
@@ -93,7 +93,7 @@ Untuk mengelakkan ini, WordPress menyediakan cara untuk menyenaraihitamkan nama 
 
 Dalam konfigurasi _subdomain_, kemungkinan konflik penamaan dikurangkan oleh _subdomain_ kerana ia unik kepada laman rangkaian dan tidak berkaitan dalam apa jua cara dengan laman utama.
 
-### Pendaftaran
+### Pendaftaran {#registration}
 
 Dalam tetapan rangkaian WordPress Multisite, beberapa pilihan pendaftaran pengguna baharu tersedia, membolehkan pengguna baharu dan sedia ada mencipta laman.
 
@@ -111,7 +111,7 @@ Setakat ini apabila pengguna log masuk, mereka log masuk ke rangkaian dan akhirn
 
 Walau bagaimanapun, jika sifat dan tujuan multisite yang dimaksudkan adalah untuk menawarkan laman rangkaian yang berbeza-beza yang tidak mempunyai hubungan antara satu sama lain, hampir selalu plugin luaran atau tambahan diperlukan untuk memanipulasi peranan pengguna.
 
-### Domain dan SSL
+### Domain dan SSL {#domain-and-ssl}
 
 Mari bercakap tentang pemasangan WordPress Multisite yang hampir terlepas pandang kita - Wordpress.com. Ini adalah contoh paling meluas WordPress multisite dan menunjukkan keupayaannya yang luas untuk disesuaikan dan dibentuk untuk memenuhi tujuan.
 
@@ -125,11 +125,11 @@ Bagi pentadbir rangkaian, ini memberikan lapisan kerumitan tambahan dalam konfig
 
 Setakat ini walaupun WordPress Multisite menyediakan cara untuk membolehkan [www.anotherdomain.com](http://www.anotherdomain.com) dipetakan kepada 'site1', pentadbir rangkaian dibiarkan dengan cabaran mengurus entri DNS secara luaran dan pelaksanaan sijil SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Dengan pemahaman perbezaan antara pemasangan WordPress bersendirian dan pemasangan Multisite, mari kita lihat bagaimana Ultimate Multisite adalah senjata utama untuk menyediakan Laman Web sebagai Perkhidmatan.
 
-### Pengenalan
+### Pengenalan {#introduction}
 
 Ultimate Multisite adalah pisau Swiss Army anda apabila melibatkan penciptaan Laman Web sebagai Perkhidmatan (WaaS). Fikirkan Wix.com, Squarespace, WordPress.com dan kemudian fikirkan memiliki perkhidmatan anda sendiri.
 
@@ -137,9 +137,9 @@ Di sebalik tabir, Ultimate Multisite menggunakan WordPress Multisite tetapi ia b
 
 Dalam bahagian berikut kita akan melihat beberapa kes penggunaan biasa dan pertimbangan yang diperlukan untuk menyokong kes-kes tersebut.
 
-### Kes Penggunaan
+### Kes Penggunaan {#use-cases}
 
-#### Kes 1: Sebuah Agensi
+#### Kes 1: Sebuah Agensi {#case-1-an-agency}
 
 Biasanya kemahiran teras sebuah agensi terletak pada reka bentuk laman web dengan aspek seperti hosting atau pemasaran disenaraikan sebagai perkhidmatan tambahan.
 
@@ -165,7 +165,7 @@ Tema menyediakan fungsi yang serupa, membolehkan tema tertentu diaktifkan atau d
 
 Agensi akan mendapat ketenangan fikiran dengan Ultimate Multisite yang membolehkan mereka melakukan apa yang mereka lakukan dengan terbaik - mereka bentuk laman web yang luar biasa.
 
-#### Kes 2: Penyedia Niche
+#### Kes 2: Penyedia Niche {#case-2-niche-provider}
 
 Ada pepatah lama yang mengatakan, "lakukan satu perkara dan lakukan dengan baik". Bagi ramai pakar ini bermakna mencipta produk atau perkhidmatan berdasarkan satu idea teras tunggal.
 
@@ -179,7 +179,7 @@ Untuk penyedia laman dan perkhidmatan niche, ini memberikan kelebihan tiada tand
 
 Bergantung pada keperluan, kedua-dua konfigurasi _subdirektori_ atau _subdomain_ mungkin sesuai, dalam kes ini pilihan seni bina adalah antara sijil SSL mudah untuk _subdirektori_ atau sijil SSL wildcard untuk _subdomain_.
 
-#### Kes 3: Hosting Web WordPress
+#### Kes 3: Hosting Web WordPress {#case-3-wordpress-web-hosting}
 
 Terdapat pelbagai cara untuk mengehoskan laman WordPress tetapi jarang ia semudah menyediakan ruang web kepada pelanggan dengan versi WordPress yang diprapasang. Ini kerana beberapa keputusan dan pertimbangan perlu digabungkan untuk menyediakan perkhidmatan yang bermakna.
 
@@ -191,11 +191,11 @@ Untuk pembangun yang ingin mengintegrasikan dengan Ultimate Multisite, penyelesa
 
 Tanpa bergantung pada pelbagai plugin dan lesen luaran, Ultimate Multisite menyediakan penyelesaian yang kaya dengan ciri dan setanding dengan Wix, Squarespace, WordPress.com dan lain-lain.
 
-### Pertimbangan Seni Bina
+### Pertimbangan Seni Bina {#architecture-considerations}
 
 Walaupun bukan panduan yang komprehensif, item berikut harus berfungsi sebagai panduan untuk pemilihan teknologi yang betul bagi menyokong pemasangan Ultimate Multisite.
 
-#### Hosting Dikongsi vs. Hosting Khusus
+#### Hosting Dikongsi vs. Hosting Khusus {#shared-vs-dedicated-hosting}
 
 Malangnya tidak semua penyedia hosting adalah sama dan sesetengahnya mengamalkan kepadatan pelayan yang melampau. Penyedia kos rendah biasanya menjana pendapatan dengan memaksimumkan kepadatan pelayan. Oleh itu pemasangan Ultimate Multisite anda mungkin hanya satu daripada beberapa ratus laman pada pelayan yang sama.
 
@@ -209,7 +209,7 @@ Ultimate Multisite diketahui berfungsi dengan beberapa penyedia hosting yang bai
 
 Untuk senarai penyedia yang serasi dan arahan persediaan lengkap untuk setiap satu, sila semak dokumentasi Penyedia Serasi.
 
-#### Pertimbangan Prestasi
+#### Pertimbangan Prestasi {#performance-considerations}
 
 Ultimate Multisite bukan aplikasi yang lambat, malah, ia sangat pantas. Walau bagaimanapun, ia hanya berprestasi sebaik aplikasi dan infrastruktur asas dan hanya boleh memanfaatkan apa yang ia mempunyai akses.
 
@@ -227,7 +227,7 @@ Atas sebab ini kebanyakan pentadbir rangkaian menggunakan penyelesaian caching b
 
 Ultimate Multisite termasuk add-on Cloudflare yang canggih yang membolehkan pentadbir rangkaian meletakkan pemasangan mereka di belakang Cloudflare dan menggunakan bukan sahaja keupayaan cachingnya tetapi juga hosting DNS, sijil SSL dan mekanisme keselamatan.
 
-#### Sandaran
+#### Sandaran {#backups}
 
 Seseorang boleh bertanya kepada 50 orang untuk nasihat tentang sandaran dan menerima 50 pendapat berbeza mengenai strategi sandaran. Jawapannya ialah, ia bergantung.
 
@@ -237,7 +237,7 @@ Untuk tujuan bahagian ini mari kita bersetuju bahawa sandaran adalah salinan tit
 
 Dengan pemahaman ini, jawapan tentang bagaimana untuk mencapai sandaran dan apa yang terbaik untuk persekitaran anda sebahagian besarnya bergantung pada keperluan anda dan keupayaan penyedia hosting untuk memenuhi keperluan tersebut. Walau bagaimanapun, dalam susunan dari paling berpendapat hingga paling kurang berpendapat, pilihan di bawah harus memberikan beberapa panduan.
 
-#### Snapshot
+#### Snapshot {#snapshots}
 
 Snapshot adalah peluru perak untuk sandaran kerana ia mudah, tidak rumit (sehingga anda mahu memulihkan) dan 'berfungsi sahaja'. Ia memerlukan sedikit bantuan daripada penyedia anda dan kebanyakannya hanya terpakai jika anda mempunyai VPS (Pelayan Peribadi Maya) atau yang serupa. Beberapa penyedia yang disenaraikan dalam dokumentasi 'Penyedia Serasi' kami menawarkan sandaran yang tidak memerlukan campur tangan atau pertimbangan lanjut oleh pentadbir rangkaian.
 
@@ -245,7 +245,7 @@ Di mana sandaran tradisional menyasarkan fail dan pangkalan data, snapshot menya
 
 Snapshot mungkin menarik kos tambahan dengan penyedia hosting tetapi ia adalah polisi insurans terhadap kemalangan.
 
-#### Skrip Luaran
+#### Skrip Luaran {#external-scripts}
 
 Nampaknya tiada kekurangan skrip dan penyelesaian luaran untuk membuat sandaran sumber WordPress dan MySQL dan ini akan berfungsi dengan baik untuk Ultimate Multisite kerana ia adalah plugin WordPress yang menggunakan sistem fail dan pangkalan data WordPress. Oleh itu penyelesaian yang membuat sandaran laman WordPress akan memenuhi keperluan Ultimate Multisite dengan secukupnya.
 
@@ -253,7 +253,7 @@ Kami tidak boleh mengesyorkan mana-mana satu skrip berbanding yang lain tetapi n
 
 Perlu diingat skrip ini, semasa berjalan, akan meningkatkan beban sistem yang harus diambil kira.
 
-#### Plugin
+#### Plugin {#plugins}
 
 Hampir tiada masalah dalam WordPress yang tidak boleh diselesaikan dengan plugin dan jika mengurus skrip luaran bukan secawan kopi anda maka mungkin plugin adalah pilihan terbaik seterusnya.
 
@@ -261,7 +261,7 @@ Walaupun plugin berbeza dalam pilihan dan ciri, mereka kebanyakannya melakukan f
 
 Dalam memilih plugin anda, pastikan untuk mengesahkan bahawa ia sedar multisite. Disebabkan sifat operasinya semasa sandaran berjalan, anda boleh menjangkakan beban sementara pada pelayan sehingga proses selesai.
 
-#### Domain dan SSL
+#### Domain dan SSL {#domain-and-ssl-1}
 
 Banyak yang telah dibincangkan mengenai nama domain dalam mod _subdomain_ multisite. Penyelesaian yang hampir universal untuk pentadbir rangkaian adalah menggunakan entri DNS wildcard.
 
@@ -285,7 +285,7 @@ Bagi ramai orang, penggunaan Cloudflare adalah pilihan mudah. Pelanggan hanya pe
 
 Di luar ini, penyelesaian alternatif perlu dicari itulah sebabnya Ultimate Multisite mengesyorkan senarai Penyedia Serasi. Ini kerana proses menyediakan DNS dan SSL boleh menjadi proses yang tidak remeh. Walau bagaimanapun, dengan integrasi Ultimate Multisite dengan penyedia-penyedia ini, kerumitan banyak dibuang dan prosedur diautomasikan.
 
-#### Plugin
+#### Plugin {#plugins-1}
 
 Kemungkinan besar anda memerlukan plugin tambahan untuk menyediakan fungsi kepada pelanggan atau laman rangkaian anda. Adakah semua plugin berfungsi dengan WordPress Multisite dan Ultimate Multisite? Nah, ia bergantung.
 

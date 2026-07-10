@@ -3,11 +3,11 @@ title: Gestió de Webhooks
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Gestion de Webhooks
+# Gestion de Webhooks {#webhook-handling}
 
 Crea punts d'acció (endpoints) de webhook personalitzats per rebre esdeveniments de serveis externs i sincronitzar dades amb Ultimate Multisite.
 
-## Punt d'acció (Endpoint) de Webhook Personalitzat
+## Punt d'acció (Endpoint) de Webhook Personalitzat {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Consideracions de Seguretat
+## Consideracions de Seguretat {#security-considerations}
 
 *   Verifica sempre les signatures del webhook utilitzant HMAC o un secret compartit.
 *   Utilitza un `permission_callback` a la teva ruta REST; mai el·l·ot a `__return_true` en producció.

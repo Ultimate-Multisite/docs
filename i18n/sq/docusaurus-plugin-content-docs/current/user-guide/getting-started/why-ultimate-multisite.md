@@ -3,11 +3,11 @@ title: Pse Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Pse pse Ultimate Multisite
+# Pse pse Ultimate Multisite {#why-ultimate-multisite}
 
 Nëse jeni shkuar në këtë artikull, mund të keni dëgjuar se ky plugin i mund të jetë zgjidhja për të realizuar ide biznesit tuaj. Ne shpresojmë që të keni përgjigjet që ju nevojiten në fund të kësaj shprehje.
 
-## Çfarë është Ultimate Multisite?
+## Çfarë është Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite është një plugin WordPress Multisite që ju lejon t'i ofroni klientëve WaaS (Një Faqe si Shërbim). Me pluginin ton, mund të keni nivele ndryshme abonimi dhe të keni klientët të paguajnë një ücretar të përsëritur për të pasur një faqe hostuar në rrjetin tuaj Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite ju lejon të merrni pagesat me dyporta (gateways) të ndryshm
 
 Dhe ky është vetëm fillimi, pasi mund ta zgjatni funksionet e tij me add-ons dhe webhooks.
 
-## Të tjera veçori
+## Të tjera veçori {#other-features}
 
 Ultimate Multisite ofron gjithashtu:
 
@@ -33,11 +33,11 @@ Dhe më shumë gjëra më avancuara:
 
 * API i Kërkimit dhe Zëvendësimit (Search and Replace): Ju mund të komentoni template-t faqes me vendndrajues si {{site_name}} dhe të përdorni API-n Search and Replace për të mbushur automatikisht këto vendndrajues me informacionin që ju jepni klientët menjëherë pas regjistrimit.
 
-## Ruse të përdorimit (Use cases)
+## Ruse të përdorimit (Use cases) {#use-cases}
 
 Tani është koha të shihnim disa nga ruset e mundshme për Ultimate Multisite.
 
-### Rusi 1: Një Agjencia
+### Rusi 1: Një Agjencia {#case-1-an-agency}
 
 Zakonisht aftësitë thelbësore të një agjencie qëndrojnë në dizajnin e faqeve me aspekte si hostimi ose marketingun e tyre të listuar si shërbime shtesë.
 
@@ -47,7 +47,7 @@ Kontrolli i ngushtë mbi plugin-et dhe temat mbahet bazuar në produkt përmes c
 
 Agjencitë do gje qetësi me Ultimate Multisite që i lejon të bëjnë atë për të cilën janë më të mirë – dizajnin e faqeve web të jashtëzakonshme.
 
-### Rasti 2: Ofrues Niche
+### Rasti 2: Ofrues Niche {#case-2-niche-provider}
 
 Ka një thirrje vjetore që thotë, "Bëj një gjë dhe bëja atë mirë". Për shumë specialistë, kjo do të thotë krijimin e një produkti ose shërbimi rreth një ideje thelbësore.
 
@@ -57,7 +57,7 @@ Një nga veçoritë inovative të Ultimate Multisite, një faqe me shabllon (tem
 
 Për një ofrues të faqeve dhe shërbimeve niche, kjo ofron një avantazh të paqëndrueshëm në aftësinë për të krijuar menjëherë një faqe gati për përdorim me pluginet dhe dizajnin e saj të personalizuar. Klienti vetëm duhet të ofrojë input minimal për të përfunduar shërbimin.
 
-### Rasti 3: Hosting Web WordPress
+### Rasti 3: Hosting Web WordPress {#case-3-wordpress-web-hosting}
 
 Ka një numër të madh mënyra për të hostuar faqe WordPress, por rrallë është aq e thjeshtë sa t'i ofrosh hapësirë web klientit me një version të parainstaluar të WordPress-it. Kjo është sepse nevojiten disa vendime dhe konsiderime që duhet të bashkohen për të ofruar një shërbim kuptueshëm.
 

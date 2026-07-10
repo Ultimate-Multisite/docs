@@ -4,19 +4,19 @@ title: Filter - wu_magic_links_enabled
 sidebar_label: wu_magic_links_enabled
 _i18n_hash: 98f65dc18013396be2f197fbbd49e773
 ---
-# Filter: wu_magic_links_enabled
+# Filter: wu_magic_links_enabled {#filter-wumagiclinksenabled}
 
 Sihirli bağlantıların etkin olup olmadığını filtreler.
 
-## Parametreler
+## Parametreler {#parameters}
 
 | Adı | Tür | Açıklama |
 |------|------|-------------|
 | $enabled | `bool` | Sihirli bağlantıların etkin olup olmadığını belirtir. |
 
-### Versiyon
+### Versiyon {#since}
 
 - 2.0.0
-### Kaynak
+### Kaynak {#source}
 
 [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L377) dosyasında 377. satırda tanımlanmıştır.

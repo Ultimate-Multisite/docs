@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 በMultisite አካባቢዎች ውስጥ ለTutor LMS ተኳሃኝነት ማስተካከያዎችን የሚጨምር የWordPress plugin።
 
-## መግለጫ
+## መግለጫ {#description}
 
 ይህ plugin Tutor LMS በWordPress Multisite ኔትወርክ ላይ እንዲሰራ የሚያስፈልጉ ወሳኝ ተኳሃኝነት ማስተካከያዎችን ይሰጣል። የተጠቃሚዎችን መመዝገብ (user enrollment)፣ የአስተማሪዎችን አስተዳደር፣ የኮርስ ገደቦችን እና ሌሎች በMultisite የተለዩ ተግባራትን ይቆጣጠራል።
 
-## ባህሪያት
+## ባህሪያት {#features}
 
 - **የዳታቤዝ ሰንጠረዥ አስተዳደር (Database Table Management)**: በMultisite የውጭ ቁልፍ ገደቦች (foreign key constraints) ምክንያት ሲሳሳቱ የሚጠፉ የTutor LMS ሰንጠረዦችን በራስ-ሰር ይለያል እና ይፈጥራል።
 - **የMultisite የተጠቃሚ መመዝገብ (Multisite User Enrollment)**: በኔትወርክ ሳይቶች ውስጥ የተጠቃሚዎችን መመዝገብ ለማስተዳደር የተበጀ AJAX handler።
@@ -24,7 +24,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **የተበጀ የአስተዳሚ እይታዎች (Custom Admin Views)**: በMultisite ንቃተ-ልቦና የተሰራ የአስተማሪ ዝርዝር እና የአስተዳደር መገናኛ።
 - **የአስተዳሚ መሳሪያዎች (Admin Tools)**: ለኔትወርክ እና ለsite አስተዳሚዎች የዳታቤዝ አስተዳደር መገናኛ።
 
-## መስፈርቶች
+## መስፈርቶች {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - WordPress Multisite መጫን
 - Ultimate Multisite plugin (ለኮርስ ገደቦች ተግባር)
 
-## መጫን
+## መጫን {#installation}
 
 1. የplugin ፋይሎችን ወደ `/wp-content/plugins/tutor-multisite-compatibility/` ይጫኑ።
 2. Tutor LMS መጫን እና መጀመር (activate) መሆኑን ያረጋግጡ።
 3. በWordPress ውስጥ ባለው 'Plugins' ሜኑ አማካይነት plugin ን ያስጀምሩ።
 4. plugin ን በTutor LMS ውስጥ በራስ-ሰር ይዋሃዳል።
 
-## የፋይል አወቃቀር
+## የፋይል አወቃቀር {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## ከMU Plugin የተዛወረ ተግባር
+## ከMU Plugin የተዛወረ ተግባር {#functionality-moved-from-mu-plugin}
 
 ይህ plugin ቀደም ሲል በ`wp-content/mu-plugins/daves.php` የነበረን ተግባር ይዟል፦
 
@@ -71,9 +71,9 @@ tutor-multisite-compatibility/
 - Multisite የተጠቃሚ መመዝገብ አያያዝ
 - የኮርስ ምርት ID ማሳያ
 
-## የዳታቤዝ አስተዳደር
+## የዳታቤዝ አስተዳደር {#database-management}
 
-### ችግሩ
+### ችግሩ {#the-problem}
 
 በWordPress Multisite አካባቢዎች ውስጥ፣ የTutor LMS ሰንጠረዥ ሲፈጠር፣ ከተጠቃሚዎች ሰንጠረዥ ጋር የውጭ ቁልፍ ገደብ (foreign key constraint) ባላቸው ሰንጠረዦች ላይ ይሳሳታል። ይህ የሚሆነው ምክንያቱም፦
 
@@ -81,7 +81,7 @@ tutor-multisite-compatibility/
 - የውጭ ቁልፎች `wp_2_users` (የማይኖር)ን ስለሚያመለክቱ
 - ትክክለኛው የተጠቃሚዎች ሰንጠረዥ ደግሞ `wp_users` (በኔትወርክ ላይ የተጋራ) ስለሆነ።
 
-### መፍትሄው
+### መፍትሄው {#the-solution}
 
 ይህ plugin በራስ-ሰር፦
 
@@ -92,13 +92,13 @@ tutor-multisite-compatibility/
    - በኔትወርክ ውስጥ አዲስ site መፍጠር
    - በአስተዳሚ መገናኛ በኩል በእጅ ሰንጠረዥ መፈተሽ
 
-### የተጎዱ ሰንጠረዦች
+### የተጎዱ ሰንጠረዦች {#affected-tables}
 
 - `tutor_coupon_usages` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ይዟል።
 - `tutor_carts` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ይዟል።
 - `tutor_notification_preferences` - ወደ ተጠቃሚዎች ሰንጠረዥ የውጭ ቁልፍ ያለው የTutorPro ሰንጠረዥ።
 
-### የአስተዳሚ መገናኛ
+### የአስተዳሚ መገናኛ {#admin-interface}
 
 የዳታቤዝ አስተዳደር መሳሪያዎችን የሚገኙበት ቦታ፦
 
@@ -111,6 +111,6 @@ tutor-multisite-compatibility/
 - የዳታቤዝ ውቅረትን መፈተሽ
 - ዝርዝር የሁኔታ መረጃን ማየት
 
-## ድጋፍ (Support)
+## ድጋፍ (Support) {#support}
 
 ይህ plugin በተለይ ለKursoPro መድረክ የተነደፈ ነው። ለቴክኒካዊ ድጋፍ፣ የልማት ቡድኑን ያነጋግሩ።

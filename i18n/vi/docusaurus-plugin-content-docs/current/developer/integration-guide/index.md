@@ -1,15 +1,17 @@
 ---
 title: Hướng dẫn tích hợp
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Hướng dẫn Tích hợp
+# Hướng dẫn tích hợp {#integration-guide}
 
 Hướng dẫn này bao gồm các mẫu tích hợp phổ biến với Ultimate Multisite, bao gồm kết nối với các dịch vụ bên ngoài, xây dựng cổng thanh toán tùy chỉnh và xử lý webhooks.
 
-## Tích hợp CRM
+Đối với hạ tầng tenant biệt lập, xem [Tích hợp Multi-Tenancy](./multi-tenancy) để biết hướng dẫn bootstrap tenant có chủ quyền, xác minh migration, SSO và teardown.
 
-Đồng bộ hóa dữ liệu khách hàng với CRM của bạn khi có khách hàng mới đăng ký:
+## Tích hợp CRM {#crm-integration}
+
+Đồng bộ dữ liệu khách hàng vào CRM của bạn khi khách hàng mới đăng ký:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Tích hợp Phân tích
+## Tích hợp Analytics {#analytics-integration}
 
-Theo dõi các sự kiện kinh doanh quan trọng trong suốt vòng đời của khách hàng:
+Theo dõi các sự kiện kinh doanh quan trọng trong suốt vòng đời khách hàng:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Các Bước Tiếp Theo
+## Các bước tiếp theo {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — Tự xây dựng cổng thanh toán của riêng bạn
-- [Webhook Handling](./webhooks) — Tạo các điểm cuối webhook tùy chỉnh
+- [Phát triển Custom Gateway](./custom-gateway) — Xây dựng cổng thanh toán của riêng bạn
+- [Xử lý Webhook](./webhooks) — Tạo các endpoint webhook tùy chỉnh
+- [Tích hợp Multi-Tenancy](./multi-tenancy) — Tích hợp với các luồng vòng đời tenant có chủ quyền

@@ -1,132 +1,148 @@
 ---
 title: Agents intégrés
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# Agents intégrés
+# Agents intégrés {#built-in-agents}
 
-Gratis AI Agent v1.9.0 est livré avec cinq agents intégrés, chacun préconfiguré avec un ensemble d'outils ciblés, un prompt système adapté et des suggestions de démarrage correspondant aux tâches courantes de ce domaine. Changer d'agent modifie ce que l'assistant peut faire et la manière dont il répond — sans aucune configuration de votre part.
+Gratis AI Agent v1.9.0 fournit cinq agents intégrés, chacun préconfiguré avec un ensemble ciblé d’outils, un prompt système adapté et des suggestions de démarrage correspondant aux tâches courantes dans ce domaine. Passer d’un agent à l’autre modifie ce que l’assistant peut faire et la façon dont il répond — sans aucune configuration de votre part. Superdav AI Agent v1.18.0 peut ajouter à ces workflows des outils tenant compte du planning, des enregistrements de rappels, des étapes d’approbation et des notifications SMS lorsque les intégrations associées sont configurées.
 
-## Qu'est-ce qu'un agent ?
+## Qu’est-ce qu’un agent ? {#what-is-an-agent}
 
 Chaque agent est un profil de configuration nommé qui combine :
 
-- **Outils** — les capacités que l'agent est autorisé à invoquer (par exemple, un rédacteur de contenu a accès aux capacités de création de publication ; un Studio de design a accès aux capacités CSS et theme.json)
-- **Prompt système** — des instructions qui définissent le ton, les priorités et les contraintes de l'agent
-- **Suggestions** — des prompts pré-rédigés affichés dans l'interface de chat pour vous aider à démarrer rapidement
+- **Outils** — les capacités que l’agent est autorisé à invoquer (par ex. un Content Writer a accès aux capacités de création de publications ; un Design Studio a accès aux capacités CSS et theme.json)
+- **Prompt système** — des instructions qui définissent le ton, les priorités et les contraintes de l’agent
+- **Suggestions** — des prompts préécrits affichés dans l’interface de chat pour vous aider à démarrer rapidement
 
-## Accéder au sélecteur d'agents (Agent Picker)
+## Accéder au sélecteur d’agents {#accessing-the-agent-picker}
 
-1. Ouvrez le panneau **Gratis AI Agent** dans la barre latérale d'administration de WordPress.
-2. Cliquez sur l'**icône d'agent** dans le coin supérieur gauche de l'en-tête de chat (l'icône change pour refléter l'agent actif).
-3. Le **Agent Picker** s'ouvre comme une superposition de type tableau de formulaire. Chaque agent est listé avec son icône, son nom et une brève description.
-4. Cliquez sur une ligne d'agent pour l'activer. L'en-tête de chat est mis à jour immédiatement.
+1. Ouvrez le panneau **Gratis AI Agent** dans la barre latérale d’administration WordPress.
+2. Cliquez sur l’**icône d’agent** en haut à gauche de l’en-tête du chat (l’icône change pour refléter l’agent actif).
+3. Le **Sélecteur d’agents** s’ouvre sous forme de superposition en tableau de formulaire. Chaque agent est répertorié avec son icône, son nom et une description en une ligne.
+4. Cliquez sur la ligne d’un agent pour l’activer. L’en-tête du chat se met à jour immédiatement.
 
-Vous pouvez également changer d'agent en cours de conversation — le prompt système du nouvel agent prend effet à partir du prochain message.
+Vous pouvez également changer d’agent au milieu d’une conversation — le prompt système du nouvel agent prend effet à partir du message suivant.
 
-## Les cinq agents intégrés
+## Les cinq agents intégrés {#the-five-built-in-agents}
 
-### Rédacteur de contenu (Content Writer)
+### Content Writer {#content-writer}
 
-**Objectif :** Créer et modifier des articles, des pages et des formulaires de contact.
+**Priorité :** Création et modification de publications, de pages et de formulaires de contact.
 
-**Outils disponibles :** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Outils disponibles :** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`. Avec les intégrations Superdav AI Agent v1.18.0 activées, le contexte de calendrier configuré, les étapes d’approbation, les rappels et les outils de notification SMS peuvent également être disponibles pour les workflows approuvés.
 
-**Ce qu'il fait bien :**
-- Rédiger et publier des articles de blog à partir d'un bref ou d'un plan
-- Créer des lots de pages de destination pour un nouveau site
-- Construire des formulaires de contact et de demande d'information
-- Définir des images à la une sur des articles à partir d'une URL ou d'une recherche
+**Ce qu’il fait bien :**
+- Rédiger et publier des articles de blog à partir d’un brief ou d’un plan
+- Créer des lots de pages d’atterrissage pour un nouveau site
+- Construire des formulaires de contact et de demande de renseignements
+- Définir les images mises en avant des publications à partir d’une URL ou d’une recherche
+- Rédiger des messages de suivi d’événement à partir du contexte Google Calendar configuré, puis mettre en pause pour approbation avant l’envoi des notifications
 
 **Suggestions de démarrage :**
-- *Rédige un article de blog de 500 mots sur les avantages de WordPress multisite.*
-- *Crée une page À propos, Services et Contact et publie-les.*
-- *Ajoute un formulaire de demande de réservation à la page Contact.*
+- *Rédigez un article de blog de 500 mots sur les avantages de WordPress multisite.*
+- *Créez une page À propos, Services et Contact, puis publiez-les.*
+- *Ajoutez un formulaire de demande de réservation à la page Contact.*
+- *Rédigez un rappel pour les participants à l’événement de calendrier configuré de demain et attendez l’approbation avant de l’envoyer.*
 
 ---
 
-### Constructeur de site (Site Builder)
+### Site Builder {#site-builder}
 
-**Objectif :** Création de site web de bout en bout à partir d'un seul prompt.
+**Priorité :** Création de site web de bout en bout à partir d’un seul prompt.
 
-**Outils disponibles :** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
+**Outils disponibles :** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`. Avec Superdav AI Agent v1.18.0, des outils configurés de service géré, d’approbation, de rappel, de calendrier et de SMS peuvent être disponibles là où les administrateurs les activent.
 
-**Ce qu'il fait bien :**
-- Générer un plan de construction de site multi-phases pour un type d'entreprise décrit
-- Exécuter chaque phase de manière autonome — structure, contenu, navigation, design
-- Se remettre des erreurs en cours de plan sans nécessiter d'intervention manuelle
+**Ce qu’il fait bien :**
+- Générer un plan de construction de site en plusieurs phases pour un type d’entreprise décrit
+- Exécuter chaque phase de façon autonome — structure, contenu, navigation, design
+- Récupérer après des erreurs au milieu d’un plan sans nécessiter d’intervention manuelle
 - Installer des plugins recommandés dans le cadre de la construction
-- Créer des formulaires de contact directement depuis l'interface de chat (Superdav AI Agent v1.10.0+)
+- Créer des formulaires de contact directement depuis l’interface de chat (Superdav AI Agent v1.10.0+)
+- Coordonner les rappels de lancement ou le suivi des participants sans notifications en double lorsque les étapes d’approbation et les enregistrements de rappels sont activés
 
 **Suggestions de démarrage :**
-- *Construis un site portfolio de photographie avec un type de publication galerie, une page de réservation et un formulaire de contact.*
-- *Crée un site de restaurant avec un menu en ligne, les heures d'ouverture et un formulaire de demande de réservation de table.*
-- *Configure un site de consultant indépendant avec des pages de services, une section portfolio et un blog.*
-- *Ajoute un formulaire de contact à la page Contact en utilisant le constructeur de site.*
+- *Construisez un site portfolio de photographie avec un type de publication galerie, une page de réservation et un formulaire de contact.*
+- *Créez un site web de restaurant avec un menu en ligne, des horaires d’ouverture et un formulaire de demande de réservation de table.*
+- *Configurez un site de conseil freelance avec des pages de services, une section portfolio et un blog.*
+- *Ajoutez un formulaire de contact à la page Contact à l’aide du site builder.*
+- *Une fois la checklist de lancement du site approuvée, envoyez un rappel SMS au contact de partie prenante configuré.*
 
 ---
 
-### Studio de design (Design Studio)
+### Design Studio {#design-studio}
 
-**Objectif :** Personnalisation visuelle — couleurs, typographie, CSS et modèles de blocs.
+**Priorité :** Personnalisation visuelle — couleurs, typographie, CSS et motifs de blocs.
 
 **Outils disponibles :** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**Ce qu'il fait bien :**
+**Ce qu’il fait bien :**
 - Appliquer des préréglages de thème nommés (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog)
 - Affiner la typographie globale et les palettes de couleurs via theme.json
-- Injecter du CSS personnalisé pour des remplacements spécifiques à la marque
-- Prendre une capture d'écran d'une page et la réviser pour détecter des problèmes de design
+- Injecter du CSS personnalisé pour les dérogations propres à la marque
+- Prendre une capture d’écran d’une page et l’examiner pour détecter des problèmes de design
 
 **Suggestions de démarrage :**
-- *Applique le préréglage warm-editorial, puis définis la couleur primaire sur #2d6a4f.*
-- *Prends une capture d'écran de la page d'accueil et dis-moi ce que tu améliorerais.*
-- *Crée un modèle de bloc héros réutilisable avec une image de fond pleine largeur et un titre centré.*
+- *Appliquez le préréglage warm-editorial, puis définissez la couleur principale sur #2d6a4f.*
+- *Prenez une capture d’écran de la page d’accueil et dites-moi ce que vous amélioreriez.*
+- *Créez un motif de bloc hero réutilisable avec une image d’arrière-plan pleine largeur et un titre centré.*
 
----
+### Plugin Manager {#plugin-manager}
 
-### Gestionnaire de plugins (Plugin Manager)
-
-**Objectif :** Découvrir, installer et gérer les plugins WordPress.
+**Priorité :** Découverte, installation et gestion des plugins WordPress.
 
 **Outils disponibles :** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
 
-**Ce qu'il fait bien :**
-- Recommander le meilleur plugin pour un cas d'utilisation décrit
-- Installer des packs de capacités à partir du registre
+**Ce qu’il fait bien :**
+- Recommander le meilleur plugin pour un cas d’utilisation décrit
+- Installer des packs de capacités depuis le registre
 - Parcourir le catalogue de capacités disponibles par catégorie
 
 **Suggestions de démarrage :**
-- *Quel est le meilleur plugin pour un annuaire d'adhésion ?*
-- *Installe le pack de capacités WooCommerce.*
-- *Montre-moi tous les packs de capacités e-commerce disponibles.*
+- *Quel est le meilleur plugin pour un annuaire de membres ?*
+- *Installez le pack de capacités WooCommerce.*
+- *Montrez-moi tous les packs de capacités ecommerce disponibles.*
 
 ---
 
-### Assistant de support (Support Assistant)
+### Support Assistant {#support-assistant}
 
-**Objectif :** Répondre aux questions sur le contenu du site, les paramètres et la configuration de WordPress.
+**Priorité :** Répondre aux questions sur le contenu du site, les réglages et la configuration WordPress.
 
 **Outils disponibles :** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
 
-**Ce qu'il fait bien :**
-- Consulter les paramètres et options actuels du site
-- Expliquer ce que sont les types de publication, les taxonomies et les menus configurés sur le site
-- Répondre aux questions du type « qu'est-ce que ce paramètre fait ? » en lisant les valeurs en direct
-- Servir de couche de diagnostic en lecture seule avant d'effectuer des modifications
+**Ce qu’il fait bien :**
+- Rechercher les réglages et options actuels du site
+- Expliquer quels types de publication, taxonomies et menus sont configurés sur le site
+- Répondre aux questions « à quoi sert ce réglage ? » en lisant les valeurs en direct
+- Servir de couche de diagnostic en lecture seule avant d’apporter des modifications
 
-**Suggestions de démarrage :**
-- *Quels plugins et paramètres sont actuellement actifs sur ce site ?*
+**Suggestions pour commencer :**
+- *Quels plugins et réglages sont actuellement actifs sur ce site ?*
 - *Liste tous les types de publication personnalisés enregistrés sur ce site.*
 - *Quels menus de navigation existent et où sont-ils assignés ?*
 
 ---
 
-## Personnaliser les agents
+## Intégrations d’automatisation Superdav {#superdav-automation-integrations}
+
+Lorsque les intégrations Superdav AI Agent v1.18.0 sont configurées, les agents intégrés peuvent participer à des workflows d’automatisation plus sûrs tenant compte de la planification :
+
+- **Les outils de lecture Google Calendar** permettent aux agents d’inspecter les calendriers et événements configurés avant de rédiger le travail de suivi.
+- **Le mappage des contacts et des participants** aide à faire correspondre les participants à un événement avec des utilisateurs WordPress ou des contacts connus.
+- **Les points de validation humaine** mettent en pause les actions sensibles jusqu’à ce qu’un utilisateur autorisé les examine et les confirme.
+- **Les enregistrements de rappel** évitent les notifications en double lorsque les tâches planifiées réessaient ou se répètent.
+- **Les notifications SMS TextBee** envoient les messages texte configurés uniquement lorsque les identifiants SMS et les autorisations de workflow sont activés.
+
+Workflow recommandé : demandez à l’agent de préparer le message ou l’action, examinez l’invite d’approbation, puis autorisez la reprise de l’action approuvée. Pour les rappels récurrents, gardez la déduplication des rappels activée afin que le même événement ou contact ne soit pas notifié à plusieurs reprises.
+
+---
+
+## Personnalisation des agents {#customising-agents}
 
 Chaque agent intégré peut être étendu ou remplacé via le filtre `gratis_ai_agent_agents`.
 
-### Ajouter un prompt système personnalisé à un agent existant
+### Ajouter une invite système personnalisée à un agent existant {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### Enregistrer un nouvel agent
+### Enregistrer un nouvel agent {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-Le nouvel agent apparaît dans le Agent Picker immédiatement après l'exécution du filtre.
+Le nouvel agent apparaît dans le sélecteur d’agents immédiatement après l’exécution du filtre.
 
-### Supprimer un agent intégré
+### Supprimer un agent intégré {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

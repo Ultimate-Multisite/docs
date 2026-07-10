@@ -3,11 +3,11 @@ title: Uwezo wa Kuonekana
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Uonekano wa Uwezo (Ability Visibility)
+# Uonekano wa Uwezo (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 inatanguliza udhibiti wa **Uonekano wa Uwezo** ambao unadhibiti ni sehemu zipi zitafichua uwezo kila uwezo. Hii inaruhusu wasimamizi kurekebisha kwa undani ni uwezo gani wa agent zitapatikana kupitia REST APIs, seva za MCP, viunganishi vya WooCommerce, na sehemu zingine.
 
-## Uonekano wa Uwezo ni Nini?
+## Uonekano wa Uwezo ni Nini? {#what-is-ability-visibility}
 
 Uonekano wa Uwezo ni mfumo wa ruhusa ambao unadhibiti:
 
@@ -18,9 +18,9 @@ Uonekano wa Uwezo ni mfumo wa ruhusa ambao unadhibiti:
 
 Kila uwezo unabeba kiwango cha uonekano kinachoamua upatikanaji wake katika maeneo tofauti.
 
-## Viwango vya Uonekano
+## Viwango vya Uonekano {#visibility-levels}
 
-### Umma (Public)
+### Umma (Public) {#public}
 
 **Uwezo wa Umma** unapatikana kila mahali:
 
@@ -32,7 +32,7 @@ Kila uwezo unabeba kiwango cha uonekano kinachoamua upatikanaji wake katika maen
 
 Mfano: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Ndani (Internal)
+### Ndani (Internal) {#internal}
 
 **Uwezo wa Ndani** unapatikana ndani tu ya usakinishaji wako wa WordPress:
 
@@ -43,7 +43,7 @@ Mfano: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Mfano: `manage-settings`, `view-analytics`, `export-data`
 
-### Mshirika (Partner)
+### Mshirika (Partner) {#partner}
 
 **Uwezo wa Mshirika** unapatikana kwa washirika walioorodheshwa tu:
 
@@ -54,7 +54,7 @@ Mfano: `manage-settings`, `view-analytics`, `export-data`
 
 Mfano: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Zimezimwa (Disabled)
+### Zimezimwa (Disabled) {#disabled}
 
 **Uwezo zilizozimwa** hazipatikani popote:
 
@@ -63,15 +63,15 @@ Mfano: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Haipatikani kwenye paneli za kiadmin
 - Inatumika kwa uwezo zilizotangazwa kuwa zimeisha au za majaribio
 
-## Kudhibiti Uonekano wa Uwezo
+## Kudhibiti Uonekano wa Uwezo {#managing-ability-visibility}
 
-### Kufikia Mipangilio ya Uonekano wa Uwezo
+### Kufikia Mipangilio ya Uonekano wa Uwezo {#accessing-ability-visibility-settings}
 
 1. Nenda kwenye **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Bonyeza kichupo cha **Abilities**
 3. Utaona orodha ya uwezo zote zilizosakinishwa pamoja na viwango vya uonekano zao
 
-### Kuangalia Maelezo ya Uwezo
+### Kuangalia Maelezo ya Uwezo {#viewing-ability-details}
 
 Bonyeza kwenye uwezo wowote ili kuona:
 
@@ -82,7 +82,7 @@ Bonyeza kwenye uwezo wowote ili kuona:
 - **Ilibadilishwa mara ya mwisho**: Lini uonekano lilibadilishwa mara ya mwisho
 - **Hali**: Unatambuliwa au Haitambuliwi
 
-### Kubadilisha Viwango vya Uonekano
+### Kubadilisha Viwango vya Uonekano {#changing-visibility-levels}
 
 Kubadilisha uonekano wa uwezo:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operesheni za Jumla (Bulk Operations)
+### Operesheni za Jumla (Bulk Operations) {#bulk-operations}
 
 Kubadilisha uonekano kwa uwezo nyingi:
 
@@ -108,11 +108,11 @@ Kubadilisha uonekano kwa uwezo nyingi:
 2. Chagua kiwango kipya cha uonekano kutoka kwenye orodha ndururu ya hatua za jumla
 3. Bonyeza **Apply**
 
-## Orodha ya Kuruhusu ya Washirika (Partner Allow-List)
+## Orodha ya Kuruhusu ya Washirika (Partner Allow-List) {#partner-allow-list}
 
 **Orodha ya kuruhusu ya washirika** inadhibiti ni washirika wa nje gani wanaweza kufikia uwezo wa kiwango cha Mshirika.
 
-### Kuongeza Washirika
+### Kuongeza Washirika {#adding-partners}
 
 1. Nenda kwenye **Superdav AI Agent** → **Settings** → **Partners**
 2. Bonyeza **Add Partner**
@@ -120,7 +120,7 @@ Kubadilisha uonekano kwa uwezo nyingi:
 4. Chaguo la kuongeza jina na maelezo ya mshirika
 5. Bonyeza **Save**
 
-### Kuwapa Uwezo kwa Washirika
+### Kuwapa Uwezo kwa Washirika {#assigning-abilities-to-partners}
 
 Baada ya kuongeza mshirika:
 
@@ -130,7 +130,7 @@ Baada ya kuongeza mshirika:
 4. Katika sehemu ya "Partner allow-list", weka tiki kwa washirika ambao wanapaswa kuwa na uwezo
 5. Bonyeza **Save**
 
-### Kizuia Ufikiaji wa Mshirika
+### Kizuia Ufikiaji wa Mshirika {#revoking-partner-access}
 
 Ili kuondoa ufikiaji wa mshirika:
 
@@ -140,11 +140,11 @@ Ili kuondoa ufikiaji wa mshirika:
 
 Mshirika atapoteza ufikiaji wa uwezo huo mara moja.
 
-## Uwezo Haitambuliwi (Unclassified Abilities)
+## Uwezo Haitambuliwi (Unclassified Abilities) {#unclassified-abilities}
 
 Unaposanisha uwezo wa upande wa tatu ambao Superdav AI Agent hautambui, unatangazwa kuwa **Haitambuliwi**.
 
-### Taarifa ya Admin kwa Uwezo Haitambuliwi
+### Taarifa ya Admin kwa Uwezo Haitambuliwi {#admin-notice-for-unclassified-abilities}
 
 Utaona taarifa ya admin:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Kupitia Uwezo Haitambuliwi
+### Kupitia Uwezo Haitambuliwi {#reviewing-unclassified-abilities}
 
 1. Bonyeza **Review Abilities** kwenye taarifa
 2. Kwa kila uwezo haitambuliwi, utaona:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Bonyeza **Classify** kuhifadhi uamuzi wako
 
-### Kwa nini Kutambua Uwezo Haitambuliwi?
+### Kwa nini Kutambua Uwezo Haitambuliwi? {#why-classify-unclassified-abilities}
 
 Kutambua uwezo:
 
@@ -187,9 +187,9 @@ Kutambua uwezo:
 - **Kuwezesha vipengele**: Baada ya kutambuliwa, uwezo unakuwa upatikanaji
 - **Kudokumenta maamuzi**: Chaguo zako huzikusanywa kwa ajili ya ukaguzi
 
-## Uonekano katika Maeneo Tofauti
+## Uonekano katika Maeneo Tofauti {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Uwezo wa Umma** unapatikana kupitia REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Uwezo wa Ndani na Mshirika** haupatikani kupitia REST API.
 
-### Seva za MCP
+### Seva za MCP {#mcp-servers}
 
 **Uwezo wa Umma** unapatikana kupitia MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Uwezo wa Mshirika** unapatikana kwa kutumia siri za washirika tu.
 
-### Viunganishi vya WooCommerce
+### Viunganishi vya WooCommerce {#woocommerce-integration}
 
 **Uwezo wa Umma** vinavyohusiana na WooCommerce vinapatikana:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Uwezo wa Ndani** haifichuliwi kwa WooCommerce.
 
-### Mifuatano ya Mazungumzo (Chat Interface)
+### Mifuatano ya Mazungumzo (Chat Interface) {#chat-interface}
 
 **Uwezo zote** (Umma, Ndani, Mshirika) zinapatikana kwenye mazungumzo, kulingana na ruhusa za mtumiaji:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Watumiaji wa kawaida wanaona tu uwezo wa Umma
 - Washirika wanaona Uwezo wa Umma + Uwezo wa Mshirika (ikiwa wameorodheshwa)
 
-## Mazoea Bora ya Usalama
+## Mazoea Bora ya Usalama {#security-best-practices}
 
-### Kanuni ya Haki Ndogo Zaidi (Principle of Least Privilege)
+### Kanuni ya Haki Ndogo Zaidi (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Weka uwezo kwenye uonekano wa kuzuia zaidi ambao bado unaruhusu matumizi yake
 - Tumia uonekano wa Mshirika kwa operesheni nyeti
 - Zima uwezo ambazo hazizitumiki
 
-### Ukaguzi wa Mara kwa Mara
+### Ukaguzi wa Mara kwa Mara {#regular-audits}
 
 - Pitia uonekano wa uwezo kila mwezi
 - Angalia kwa uwezo haitambuliwi
 - Ondoa ufikiaji kwa washirika ambao hawatumii
 
-### Usajili na Ufuatiliaji (Logging and Monitoring)
+### Usajili na Ufuatiliaji (Logging and Monitoring) {#logging-and-monitoring}
 
 - Fuatilia ni uwezo gani zinatumika zaidi
 - Tathmini mifumo ya ufikiaji wa washirika
 - Toa tahadhari kwa matumizi ya uwezo yasiyo ya kawaida
 
-### Uwezo wa Upande wa Tatu
+### Uwezo wa Upande wa Tatu {#third-party-abilities}
 
 - Pitia uwezo za upande wa tatu kabla ya kuzianzisha
 - Zitambue wazi
 - Anza na uonekano wa Ndani au Mshirika
 - Zifanye kuwa Umma tu baada ya kufanyiwa ukaguzi
 
-## Kutatua Matatizo (Troubleshooting)
+## Kutatua Matatizo (Troubleshooting) {#troubleshooting}
 
 **Uwezo halionekani kwenye orodha**
 - Thibitisha kuwa uwezo limefunguliwa na bado linafanya kazi
@@ -285,7 +285,7 @@ Available abilities:
 - Angalia kuwa utambuzi wako umefungwa
 - Thibitisha kuwa plugin inayoleta uwezo imesasishwa
 
-## Kuhama kutoka Hali ya Zamani (Legacy Mode)
+## Kuhama kutoka Hali ya Zamani (Legacy Mode) {#migration-from-legacy-mode}
 
 Ikiwa unaposasisha kutoka toleo la zamani la Superdav AI Agent:
 
@@ -295,7 +295,7 @@ Ikiwa unaposasisha kutoka toleo la zamani la Superdav AI Agent:
 
 Tazama **Third-Party Mode Migration** kwa maelezo zaidi kuhusu mpito wa kuunganisha na API ya Uwezo ya asili.
 
-## Hatua Zijazo
+## Hatua Zijazo {#next-steps}
 
 Baada ya kupanga uonekano wa uwezo:
 

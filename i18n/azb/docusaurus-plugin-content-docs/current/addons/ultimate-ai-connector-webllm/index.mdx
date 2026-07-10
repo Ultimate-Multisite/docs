@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
 
-# Ultimate AI Connector for WebLLM
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
 
 Ultimate AI Connector for WebLLM, WordPress çok sitenizde tarayıcı tabanlı yapay zeka çıkarımını (inference) kullanmanızı sağlar. Büyük dil modellerini (LLM) tamamen tarayıcı içinde WebLLM ve MLC motorunu kullanarak çalıştırır — API anahtarı, harici çağrı, kullanıcı cihazından veri çıkışı yok.
 
-## Temel Özellikler
+## Temel Özellikler {#key-features}
 
 - **Tarayıcı Üzerinde Çıkarım (Browser-side inference)**: LLM, WebLLM/MLC aracılığıyla ziyaretçinin kendi tarayıcısında çalışır — sunucu GPU'suna gerek yok.
 - **Yüzen Sohbet Widget'ı (Floating chat widget)**: Giriş yapmış kullanıcılar, tarayıcı üzerindeki LLM'e doğrudan ön uçtan komut verebilir.
@@ -22,28 +22,28 @@ Ultimate AI Connector for WebLLM, WordPress çok sitenizde tarayıcı tabanlı y
 - **IndexedDB Önbelleği**: Model ağırlıklarının indirilmesi, varsayılan Cache API yolunu bozan CDN yönlendirmelerinden etkilenmez.
 - **wpai filtre entegrasyonu**: Yapay Zeka Deneyleri özelliğinin, yapılandırıldığında tarayıcı motoruna yönlendirilmesi için `wpai_preferred_text_models` filtresine bağlanır.
 
-## Gereksinimler
+## Gereksinimler {#requirements}
 
 - WordPress 5.3 veya üzeri
 - PHP 7.4 veya üzeri
 - Ultimate Multisite eklentisi (aktif)
 - WebGPU desteği olan bir tarayıcı (Chrome 113+, Edge 113+ veya WebGPU etkinleştirilmiş Firefox Nightly)
 
-## Kurulum
+## Kurulum {#installation}
 
 1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin.
 2. WordPress'te 'Plugins' menüsünden eklentiyi etkinleştirin.
 3. Eklentiyi yapılandırmak için **Ultimate Multisite → AI Connector** yolunu izleyin.
 
-## Yüzen Sohbet Widget'ı
+## Yüzen Sohbet Widget'ı {#floating-chat-widget}
 
 Yüzen sohbet widget'ı, giriş yapmış herhangi bir kullanıcının sayfadan ayrılmadan, doğrudan ön uçtan tarayıcı üzerindeki LLM ile etkileşim kurmasını sağlar.
 
-### Ne İşe Yarar?
+### Ne İşe Yarar? {#what-it-does}
 
 Etkinleştirildiğinde, giriş yapmış kullanıcılar için her ön uç sayfasının köşesinde bir sohbet simgesi belirir. Bu simgeye tıklamak, kullanıcının komutlar yazabileceği ve yerel olarak çalışan WebLLM modelinden yanıtlar alabileceği bir sohbet paneli açar. Model tamamen tarayıcıda çalıştığı için yanıtlar özeldir ve herhangi bir sunucu tarafı işlem gerektirmez.
 
-### Admin-Bar Durum Göstergesi
+### Admin-Bar Durum Göstergesi {#admin-bar-status-indicator}
 
 WordPress admin barı, WebLLM motorunun mevcut durumunu gösteren bir durum göstergesi içerir:
 
@@ -56,7 +56,7 @@ WordPress admin barı, WebLLM motorunun mevcut durumunu gösteren bir durum gös
 
 Gösterge, sayfa yenilenmesine gerek kalmadan gerçek zamanlı olarak güncellenir.
 
-### Widget'ı Etkinleştirme veya Devre Dışı Bırakma
+### Widget'ı Etkinleştirme veya Devre Dışı Bırakma {#how-to-enable-or-disable-the-widget}
 
 1. Ağ yöneticisinde **Ultimate Multisite → AI Connector** sayfasına gidin.
 2. **Connector** paneline ulaşın.
@@ -65,17 +65,17 @@ Gösterge, sayfa yenilenmesine gerek kalmadan gerçek zamanlı olarak güncellen
 
 Widget, ağ yöneticisi bu yeteneği vermişse, sitenin kendi admin panelinden de site bazında etkinleştirilebilir veya devre dışı bırakılabilir.
 
-## Widget Ayarları
+## Widget Ayarları {#widget-settings}
 
 **Ultimate Multisite → AI Connector** içindeki Connector paneli, yüzen sohbet widget'ı için aşağıdaki ayarları içerir:
 
-### Yüzen Sohbet Widget'ını Etkinleştir
+### Yüzen Sohbet Widget'ını Etkinleştir {#enable-floating-chat-widget}
 
 Widget'ı tüm ağ için açar veya kapatır. Devre dışı bırakıldığında, widget kullanıcı rolünden bağımsız olarak hiçbir ön uç sayfasında görünmez.
 
 **Varsayılan:** Kapalı
 
-### Otomatik Komut Davranışı (Auto-Prompt Behaviour)
+### Otomatik Komut Davranışı (Auto-Prompt Behaviour) {#auto-prompt-behaviour}
 
 Sohbet widget'ının kullanıcı tarafından açıldığında otomatik olarak bir komut gönderip göndermeyeceğini kontrol eder.
 
@@ -93,7 +93,7 @@ Sohbet widget'ının kullanıcı tarafından açıldığında otomatik olarak bi
 
 **Varsayılan:** Kapalı
 
-## SharedWorker Çalışma Zamanı
+## SharedWorker Çalışma Zamanı {#sharedworker-runtime}
 
 Sürüm 1.1.0, MLC motoru için bir SharedWorker çalışma zamanı getiriyor. Daha önce, WebLLM kullanan her tarayıcı sekmesi modelinin kendi örneğini yükler, bu da sınırlı VRAM'a sahip cihazlarda GPU belleği için rekabete neden olur ve performans sorunlarına yol açardı.
 
@@ -105,29 +105,29 @@ SharedWorker çalışma zamanı ile, tek bir sekme motoru barındırıcı (host)
 
 SharedWorker kullanıcılar için şeffaftır. Admin-bar durum göstergesi her zaman paylaşılan motorun durumunu yansıtır, bireysel sekmeyi değil.
 
-## apiFetch Middleware
+## apiFetch Middleware {#apifetch-middleware}
 
 Bu eklenti, Yapay Zeka Client SDK desenine uyan WordPress REST API isteklerini yakalayan bir `apiFetch` middleware'i kurar. Bu istekler, sunucuya döngüsel bir HTTP isteği yapmak yerine, SharedWorker içinde çalışan yerel WebLLM broker'ına doğrudan yönlendirilir.
 
 Bu, standart WordPress `apiFetch` API'sini kullanarak yapay zeka uç noktalarını çağıran eklentilerin ve temaların, herhangi bir kod değişikliği yapılmasına gerek kalmadan, model mevcut olduğunda otomatik olarak tarayıcı tabanlı modelden faydalanacağı anlamına gelir.
 
-## Hooks ve Filtreler
+## Hooks ve Filtreler {#hooks-and-filters}
 
-### Filtreler
+### Filtreler {#filters}
 
 - `wpai_preferred_text_models` — WebLLM tarayıcı motorunu tercih edilen bir metin modeli olarak kaydeder. Eklenti, motor yapılandırılıp kullanıma hazır olduğunda bu filtreye otomatik olarak bağlanır.
 - `ultimate_webllm_widget_enabled` — Belirli bir kullanıcı veya bağlam için widget etkin durumunu geçersiz kılar. `true` veya `false` döndürün.
 - `ultimate_webllm_auto_prompt` — Widget'a gönderilmeden önce otomatik komut metnini değiştirir. Komut dizesini ve mevcut `WP_Post` nesnesini alır.
 
-## Sorun Giderme
+## Sorun Giderme {#troubleshooting}
 
-### Sohbet widget'ı görünmüyor
+### Sohbet widget'ı görünmüyor {#the-chat-widget-does-not-appear}
 
 - Kullanıcının giriş yapmış olduğundan emin olun — widget yalnızca kimliği doğrulanmış kullanıcılara gösterilir.
 - Connector panelinde **Enable floating chat widget** seçeneğinin açık olduğundan emin olun.
 - Kullanıcının tarayıcısının WebGPU desteklediğini doğrulayın (Yukarıdaki Gereksinimlere bakın).
 
-### Admin-bar göstergesi "Error" gösteriyor
+### Admin-bar göstergesi "Error" gösteriyor {#the-admin-bar-indicator-shows-error}
 
 Tarayıcı geliştirici konsolunu (F12) açın ve WebLLM ile ilgili hataları arayın. Yaygın nedenler:
 
@@ -135,10 +135,10 @@ Tarayıcı geliştirici konsolunu (F12) açın ve WebLLM ile ilgili hataları ar
 - Model ağırlığı indirilmesi başarısız oldu — ağ bağlantısını kontrol edin ve tarayıcı geliştirici araçlarında IndexedDB önbelleğini temizlemeyi deneyin (Application → IndexedDB).
 - Bir tarayıcı uzantısı SharedWorker'ı engelliyor.
 
-### Model ağırlıkları her seferinde indiriliyor
+### Model ağırlıkları her seferinde indiriliyor {#model-weights-download-every-time}
 
 Eklenti, model ağırlıklarının CDN yönlendirmelerinden etkilenmemesi için IndexedDB'yi önbellek arka ucu olarak kullanır. Ağırlıklar her ziyarette yeniden indiriliyorsa, IndexedDB'nin bir tarayıcı gizlilik ayarı veya uzantısı tarafından temizlenmediğini kontrol edin.
 
-## Değişiklik Geçmişi
+## Değişiklik Geçmişi {#changelog}
 
 Tüm sürüm geçmişi için [Changelog](./changelog)'a bakın.

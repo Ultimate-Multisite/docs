@@ -1,0 +1,194 @@
+---
+title: Hooks-ийн лавлагаа
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hook-уудын лавлах {#hooks-reference}
+
+Ultimate Multisite дахь бүх **59 үйлдэл** болон **118 шүүлтүүр**-ийн автоматаар үүсгэсэн баримтжуулалт.
+
+## Үйлдлүүд {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Баталгаажуулалтын дахин чиглүүлэлтээс өмнө ажиллана.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Баталгаажуулалтын cookie тохируулагдахаас шууд өмнө ажиллана.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Нэвтэрсэн баталгаажуулалтын cookie тохируулагдахаас шууд өмнө ажиллана.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Хөгжүүлэгчдэд wp plugin-уудаар дамжуулан өөрсдийн host provider интеграц нэмэх боломж олгоно.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Бүх хамаарлууд ачаалагдсан үед өдөөгдөнө
+- [wu_activation](./Actions/wu_activation) — plugin-ийн бусад хэсгүүдэд идэвхжүүлэх өөрсдийн ажиллагааг холбох боломж олгоно
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Хэрэглэгч эсвэл super admin site template-г сольсны дараа plugin хөгжүүлэгчдэд функцүүд холбох боломж олгоно
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Зарим тохиолдолд үйлдлүүдийг зохицуулахын тулд нэмэлт нөөц ачаалах шаардлагатай болно.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Хайлтын хүсэлтийг боловсруулахын өмнө ажиллана.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Хөгжүүлэгчдэд checkout объектод нэмэлт өөрчлөлт хийх боломж олгоно.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Хөгжүүлэгчдэд checkout объектод нэмэлт өөрчлөлт хийх боломж олгоно.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — checkout маягтад талбар нэмэгдэхээс өмнө ажиллана.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Хөгжүүлэгчдэд нэмэлт hook-ууд өдөөх боломж олгоно.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Бид checkout-г боловсруулахын өмнө.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — checkout захиалга бүрэн бүрдсэний дараа ажиллана.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — plugin хөгжүүлэгчдэд Network Dashboard Panel-д widget-үүд нэмэх боломж олгоно.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — plugin хөгжүүлэгчдэд Network Dashboard Panel-д widget-үүд нэмэх боломж олгоно.
+- [wu_deactivation](./Actions/wu_deactivation) — plugin-ийн бусад хэсгүүдэд идэвхгүй болгох өөрсдийн ажиллагааг холбох боломж олгоно
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — plugin хөгжүүлэгчдэд устгах үйл явцад үйлдлүүд нэмэх боломж олгоно
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Домэйн site-ийн үндсэн домэйн болох үед ажиллана.
+- [wu_domain_created](./Actions/wu_domain_created) — Шинэ домэйн зураглал нэмэгдэх үед өдөөгдөнө.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Манай үндсэн Domain Mapping ачаалагдсаны дараа ажилласан
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Зарим plugin-ууд mapping идэвхтэй болохоос өмнө URL хадгалах эсвэл энд ороогүй өөр аргаар URL-ууд үүсгэнэ
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — site хуулбарлагдсаны дараа хөгжүүлэгчдэд холбогдох боломж олгоно.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — plugin хөгжүүлэгчдэд нэмэлт hook-ууд нэмэх боломж олгоно
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Нэмэлт цэвэрлэгээнд зориулсан hook
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Шинэ домэйн нэмэх modal хүсэлтийг зохицуулахаас өмнө ажиллана.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — plugin хөгжүүлэгчдэд шаардлагатай бол meta өгөгдлийг өөр аргаар хадгалах боломж олгоно.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — plugin хөгжүүлэгчдэд шаардлагатай бол хэрэглэгчийн meta өгөгдлийг өөр аргаар хадгалах боломж олгоно.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Хүчингүй magic link token таарах үед ажиллана.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Хэрэглэгч magic link-ээр нэвтэрсний дараа ажиллана.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Үйлчлүүлэгч нэмэгдэх үед plugin хөгжүүлэгчдэд нэмэлт зүйл хийх боломж олгоно.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — MCP чадварууд entity-д бүртгэгдсэний дараа ажиллана.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — MCP adapter эхлүүлэгдсэний дараа ажиллана.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — membership цуцлагдсаны дараа өдөөгдөнө.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — membership сунгалтын дараа өдөөгдөнө.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — membership цуцлагдахаас өмнө өдөөгдөнө.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — membership сунгалтаас өмнө өдөөгдөнө.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Объект мэдээллийн санд хадгалагдсаны дараа ажиллана.
+- [wu_page_added](./Actions/wu_page_added) — Хуудсууд бүртгэгдэх үед plugin хөгжүүлэгчдэд нэмэлт зүйлс ажиллуулах боломж олгоно.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Бид хуудсыг хэвлэсний дараа plugin хөгжүүлэгчдэд нэмэлт агуулга нэмэх боломж олгоно
+- [wu_page_before_render](./Actions/wu_page_before_render) — Бид хуудсыг хэвлэхээс өмнө plugin хөгжүүлэгчдэд нэмэлт агуулга нэмэх боломж олгоно.
+- [wu_page_load](./Actions/wu_page_load) — plugin хөгжүүлэгчдэд манай хуудсуудад нэмэлт hook-ууд нэмэх боломж олгоно.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Бид хуудсыг хэвлэсний дараа plugin хөгжүүлэгчдэд нэмэлт агуулга нэмэх боломж олгоно
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Бид хуудсыг хэвлэхээс өмнө plugin хөгжүүлэгчдэд нэмэлт агуулга нэмэх боломж олгоно.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — plugin хөгжүүлэгчдэд манай хуудсуудад нэмэлт hook-ууд нэмэх боломж олгоно.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Энэ хуудсанд widget-үүд бүртгэгдсэний дараа ажиллана.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — addons-д чадавхын модулиудыг integrations-д холбох боломж олгохын тулд ажиллана.
+- [wu_register_integrations](./Actions/wu_register_integrations) — integrations өөрсдийгөө бүртгэх боломж олгохын тулд ажиллана.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Нэмэлт чиглүүлгүүдийг бүртгэхийг зөвшөөрнө.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — plugin хөгжүүлэгчдэд хадгалах үйл явцад actions нэмэх боломж олгоно
+- [wu_site_created](./Actions/wu_site_created) — site анх удаа үүссэний дараа ажиллана.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Хэрэв шаардлагатай бол plugin хөгжүүлэгчдэд нэмэлт hooks нэмэх боломж олгоно.
+- [wu_template_previewer](./Actions/wu_template_previewer) — template previewer контекст дотор байх үед ажиллана.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — enqueue scripts hook-ийг өдөөдөг.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Объект database-д хадгалагдсаны дараа ажиллана.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Объект database-д хадгалагдсаны дараа ажиллана.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Объект database-д хадгалагдсаны дараа ажиллана.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — plugin хөгжүүлэгчдэд түгжээг тайлах үйл явцад actions нэмэх боломж олгоно.
+
+## Шүүлтүүрүүд {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Баталгаажуулалтын cookie дуусах хугацааны үргэлжлэх хугацааг шүүнэ.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Баталгаажуулалтын чиглүүлэлтийн схемийг шүүнэ.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Анхны WP Filter-ийг энд давтаж хэрэгжүүлнэ, найдвартай байдлын үүднээс.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — plugin хөгжүүлэгчдэд previewer-д ашиглагдах URL-ийг шүүх боломж олгоно
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — auth cookie зөвхөн HTTPS-ээр илгээгдэх ёстой эсэхийг шүүнэ.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Аюулгүй баталгаажуулалтын чиглүүлэлт ашиглах эсэхийг шүүнэ.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Нэвтэрсэн cookie зөвхөн HTTPS-ээр илгээгдэх ёстой эсэхийг шүүнэ.
+- [send_auth_cookies](./Filters/send_auth_cookies) — auth cookie-г client рүү бодитоор илгээхээс сэргийлэх боломж олгоно.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Чиглүүлэлтийн URL-ийг тохируулна.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — filter-үүдээр нэмэлт алхмууд нэмнэ
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — plugin хөгжүүлэгчдэд render context-д глобал байдлаар нэмэлт хувьсагч нэмэх боломж олгоно.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Хөгжүүлэгчдэд энэ шалгалтыг богино холбох боломж олгоно.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Шинэ domain нэмэх modal-ийн талбаруудыг шүүнэ.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Хөгжүүлэгчдэд setup fee мөрийн зүйлд өөрчлөлт хийх боломж олгоно.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Хөгжүүлэгчдэд Ultimate Multisite-аас нэмэгдсэн admin мэдэгдлүүдийг шүүх боломж олгоно.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Өөрчлөгдсөний дараа шүүнэ.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Одоо бид бүх төрлүүдтэй ажиллана.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — plugin хөгжүүлэгчдэд хязгаарлалтуудыг богино холбох боломж олгоно.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Бүртгүүлэх хураамж хэрэгжих эсэхийг шүүнэ.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Эх api аргументуудыг шүүнэ.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — plugin хөгжүүлэгчдэд төлбөрийн хаягийн талбаруудыг шүүх боломж олгоно.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Хөгжүүлэгчдэд гаралтыг алгасаж, шинээр тохируулах боломж олгоно
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Хөгжүүлэгчдэд одоогийн хэрэглэгчийг цуцлах кодыг алгасах боломж олгоно.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — "Давтагдах дүн"-гийн нийт дүнг шүүнэ.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — "Анхны дүн"-гийн нийт дүнг шүүнэ.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — "Анхны дүн"-гийн нийт дүнг шүүнэ.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — plugin хөгжүүлэгчдэд credit утгад оролцох боломж олгоно.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — mapped-domain бичлэг болох ёсгүй shared checkout-form суурь domain-уудыг шүүнэ.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Шинэ талбарын загварууд нэмэх манай API-ууд энд холбогдоно.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Шинэ талбарын төрлүүд нэмэх манай API-ууд энд холбогдоно.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Алдааны мессежүүдийг шүүнэ.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Талбар auto-submittable эсэхийг шалгах шалгалтыг хөгжүүлэгчдэд алгасах боломж олгоно.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — plugin хөгжүүлэгчдэд form validator-д custom alias нэмэх боломж олгоно.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — plugin хөгжүүлэгчдэд баталгаажуулалтын дүрмүүдийг шүүх боломж олгоно.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Хүсээгүй Params-ийг цуцална.
+- [wu_contains_element](./Filters/wu_contains_element) — Хөгжүүлэгчдэд анхны хайлтын үр дүнг өөрчлөх боломж олгоно.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — host үйлчилгээ үзүүлэгчдэд тогтмол утгыг өөрөөр суулгах боломж олгоно.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Улсын засаг захиргааны дэд нэгжүүдийн цэгцтэй нэрийг буцаана.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Улсын нэг муж дахь хотуудын жагсаалтыг буцаана.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Энэ улсын мужуудын жагсаалтыг буцаана.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Хөгжүүлэгчдэд өгөгдмөл зан төлөвийг өөрчилж, одоогийн customer-ийг өөрөөр тохируулах боломж олгоно.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Хөгжүүлэгчдэд өгөгдмөл зан төлөвийг өөрчилж, одоогийн membership-ийг өөрөөр тохируулах боломж олгоно.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Хөгжүүлэгчдэд өгөгдмөл зан төлөвийг өөрчилж, одоогийн site-ийг өөрөөр тохируулах боломж олгоно.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Хөгжүүлэгчдэд site удирдах URL параметрүүдийг өөрчлөх боломж олгоно.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — plugin хөгжүүлэгчдэд холбоосуудыг шүүх боломж олгоно.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — plugin хөгжүүлэгчдэд үр дүнг тодорхойлохын тулд шинэ шалгалтууд нэмэх боломж олгоно.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Бидэнд дараа нь нэмэлт блокууд нэмэх шаардлагатай байж магадгүй.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Хөгжүүлэгчид энэ задлагчийг нэмэлт бүтээгчид эсвэл plugin-уудтай ажиллахаар өргөтгөх боломж олгох ерөнхий filter нэмнэ.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Нэмэлт нууц үгийн дүрмүүдийг албадуулах эсэхийг filter хийнэ.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Үүсгэсэн хэрэглэгчийн хэрэглэгчийн нэрийг filter хийнэ.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Plugin хөгжүүлэгчдэд checkout хуудасны урьдчилсан тохиргоонуудыг filter хийх боломж олгоно.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Хөгжүүлэгчдэд энэ үйлдлийг тойрох шинэ маягтын slug-ууд нэмэх боломж олгоно.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Хөгжүүлэгчид болон add-on-уудад шинэ шилжилтийн алхмууд нэмэх боломж олгоно
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Энэ filter-ийн талаар доор, яг энэ method дээрээс дэлгэрэнгүй үзнэ үү.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Хөгжүүлэгчдэд ямар нийтлэлийн төрлүүдийг харуулахыг сонгох боломж олгоно.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Мөрүүдийг буцаана, filter хийх боломжтой
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Хөгжүүлэгчдэд домэйн/замын хосуудыг өөрчлөх боломж олгоно.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Хостингийн интеграцийн тохиргооны wizard хэсгүүдийг filter хийнэ.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Маягт дээрх талбаруудыг filter хийнэ. Маягтыг filter-ийн нэр дэх ID-гаар танина.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Бие даасан төлбөрийн мөчлөгтэй бүтээгдэхүүний төрлүүдийг filter хийнэ.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Plugin хөгжүүлэгчдэд API-д өгөгдсөн төлөвийг албадан тогтоох боломж олгоно.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Plugin хөгжүүлэгчдэд хөгжүүлэлтийн горимд зориулсан нэмэлт тестүүд нэмэх боломж олгоно.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Plugin хөгжүүлэгчдэд MCP adapter-д өгөгдсөн төлөвийг албадан тогтоох боломж олгоно.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Аюулгүй байдлын шалтгаанаар бид hook хийх боломжтой үйлдлүүдийн тоог хязгаарладаг. Энэ filter нь хөгжүүлэгчдэд өргөтгөх боломж олгоно
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Өгөгдсөн нийтлэлийн төрөл энэ plan дээр зөвшөөрөгдсөн эсэхийг шалгана. Plugin хөгжүүлэгчдэд буцах утгыг filter хийх боломж олгоно
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — IP хаягийн баталгаажуулалтыг албадуулах эсэхийг filter хийнэ.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Хэрэглэгчийн агентын баталгаажуулалтыг албадуулах эсэхийг filter хийнэ.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Үүсгэсэн magic link URL-г filter хийнэ.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Magic link-үүд идэвхтэй эсэхийг filter хийнэ.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Домэйныг үндсэн болгосны дараах чиглүүлэх URL-г filter хийнэ.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Автомат чиглүүлэлтийг сэргийлэх параметрүүдийн хасалтын жагсаалт үүсгэнэ.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — MCP чадварыг оруулах шийдвэрийг дарж өөрчлөх filter.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Тооцоолсон дуусах огноог filter хийнэ.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Шинэчлэлтийн дараа тохируулах тооцоолсон дуусах огноог filter хийнэ.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Хөгжүүлэгчдэд шинэ шинэчлэх маягтын slug-ууд нэмэх боломж олгоно.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Нууц үгийн хамгийн бага уртыг filter хийнэ.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Шаардлагатай нууц үгийн хамгийн бага бат бөх байдлыг filter хийнэ (zxcvbn оноо).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Plugin хөгжүүлэгчид болон бид өөрсдөө засварлах хуудсууддаа үйлдлийн холбоосууд нэмэх боломж олгоно
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Нууц үгэнд жижиг үсэг шаардах эсэхийг filter хийнэ.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Нууц үгэнд тоо шаардах эсэхийг filter хийнэ.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Нууц үгэнд тусгай тэмдэгт шаардах эсэхийг filter хийнэ.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Нууц үгэнд том үсэг шаардах эсэхийг filter хийнэ.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Хэрэглэгчид хүлээгдэж буй төлбөрүүдийн тухай мессежийг өөрчлөх боломж олгоно.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Plan гэж үзэх ёстой бүтээгдэхүүний төрлүүдийг filter хийнэ.
+- [wu_post_count](./Filters/wu_post_count) — Plugin хөгжүүлэгчдэд нийт тоог өөрчлөх боломж олгоно
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Plugin хөгжүүлэгчдэд ямар нийтлэлийн төлөвийг тоолохыг өөрчлөх боломж олгоно. Анхдагчаар нийтэлсэн болон хувийн нийтлэлүүд тоологдоно
+- [wu_post_default_status](./Filters/wu_post_default_status) — Объектын өгөгдлийг өгөгдлийн санд хадгалахаас өмнө filter хийнэ.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Хөгжүүлэгчдэд Ultimate Multisite хадгалахаас өмнө тохиргоонуудыг filter хийх боломж олгоно.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Хүсэлтийг үргэлжлүүлэхийг зөвшөөрөх эсэхийг filter хийнэ.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Хүсэлтийг үргэлжлүүлэхийг зөвшөөрөх эсэхийг filter хийнэ.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Хүсэлтийг үргэлжлүүлэхийг зөвшөөрөх эсэхийг шүүнэ.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Хүсэлтийг үргэлжлүүлэхийг зөвшөөрөх эсэхийг шүүнэ.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Хүсэлтийг үргэлжлүүлэхийг зөвшөөрөх эсэхийг шүүнэ.
+- [wu_return_url](./Filters/wu_return_url) — Хөгжүүлэгчдэд checkout процессын дараа ашиглагдах gateway буцах URL-г өөрчлөхийг зөвшөөрнө.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Plugin хөгжүүлэгчдэд илүү олон хайлтын моделийн функц нэмэхийг зөвшөөрнө.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Хөгжүүлэгчдэд нэмэлт тохиргооны шидтэний алхмууд нэмэхийг зөвшөөрнө.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Ultimate Multisite шинээр үүсгэсэн сайтын домэйны бичлэг үүсгэх ёстой эсэхийг шүүнэ.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Хөгжүүлэгчдэд дахин чиглүүлэлтийг богино холбож, үүсэхээс нь сэргийлэхийг зөвшөөрнө.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Handler-г дахин бичих боломж олгоно
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Сайтуудад боломжтой бөөн үйлдлүүдийг шүүнэ.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Сүлжээ доторх get pluginssites-ийн утгыг өөрчлөх шүүлтүүр.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Домэйн хоорондын нэг удаагийн нэвтрэлтийн чадварыг идэвхжүүлэх/идэвхгүй болгох.
+- [wu_sso_url](./Filters/wu_sso_url) — Домэйн хоорондын хэрэглэгчийн үйлдлүүдэд буцаахаас өмнө үүсгэсэн SSO URL-уудыг шүүнэ.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Stripe Subscription өгөгдлийг шүүнэ. success_url эсвэл cancel_url-г дарж өөрчилж болно.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Төлбөрийн зорилгын аргументуудыг шүүнэ.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Шалгах plan-ы ID-г шүүнэ. Хэрэв энэ байвал шинэ subscription энэ plan-г ашиглана.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Шалгах product-ын ID-г шүүнэ. Хэрэв энэ байвал шинэ subscription энэ product-г ашиглана.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Stripe charge сонголтуудтай илгээгдсэн idempotency_key утгыг шүүнэ.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Энэ webhook-той холбоотой membership бичлэгийг шүүнэ.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Өгөгдлийн санд хадгалахаар сериалчлахаас өмнө өгөгдлийн meta-г шүүнэ.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Өгөгдлийн санд хадгалахаас өмнө объектын өгөгдлийг шүүнэ.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Хөгжүүлэгчдэд түгжээг тайлах шинэчлэлтийн URL-г өөрчлөхийг зөвшөөрнө
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Mapping ашиглах эсэхийг тодорхойлно
+- [wu_username_from_email](./Filters/wu_username_from_email) — Шинэ хэрэглэгчийн хэрэглэгчийн нэрийг шүүнэ.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Хөгжүүлэгчдэд membership хэрэглэгчдийн хязгаарын тухай мессежийг өөрчлөхийг зөвшөөрнө
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Хөгжүүлэгчдэд орлуулах боломжтой жагсаалтад нэмэлт хавтаснууд нэмэхийг зөвшөөрнө.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Энэ entity-д аль sub_commands идэвхтэй байхыг шүүнэ.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Бид тогтмолуудыг хаана оруулж болохыг олох гэж оролдохдоо гурван загварыг шалгадаг:

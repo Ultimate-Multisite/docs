@@ -1,86 +1,122 @@
 ---
-title: 瀏覽管理面板
+title: 導覽管理面板
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# 管理後台導覽
+# 導覽管理員面板 {#touring-the-admin-panel}
 
-Ultimate Multisite 的設計理念是盡可能簡單明瞭，但這樣功能強大的工具，有人帶著導覽一下還是會很有幫助。讓我們一起走過各個管理頁面，幫助您快速上手。
+Ultimate Multisite 旨在盡可能簡單且易於理解，但對於功能如此強大的工具，有導覽會很有幫助。讓我們逐步瀏覽管理員頁面，幫助你熟悉環境。
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite 的 **Dashboard** 會顯示基本的報表與分析資料，包括營收、網站活動、會員成長、訪客人數，以及地理資訊等。
+Ultimate Multisite **Dashboard** 會顯示基本報告與分析，包括收入、網站活動、會員成長、訪客數量與地理資料。
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+以下是 dashboard 的完整檢視：
 
-**Checkout Forms** 讓您可以彈性建立自訂的註冊頁面。您可以自訂欄位、加入自訂的 class 和 script，還能根據訪客的國家或地區限制存取權限。
+![Ultimate Multisite Dashboard 完整頁面](/img/admin/um-dashboard-full.png)
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+以及 dashboard 的底部區段：
 
-## Products
+![Ultimate Multisite Dashboard 底部區段](/img/admin/um-dashboard-bottom.png)
 
-**Products** 區塊是您為網路建立各種方案、套裝和服務的地方。您可以在產品層級設定價格、帳單週期，以及各項限制與配額。
+這裡也有 network dashboard 的完整檢視：
 
-![Products list](/img/admin/products-list.png)
+![Network Dashboard 完整頁面](/img/admin/network-dashboard-full-page.png)
 
-## Memberships
+## 結帳表單 {#checkout-forms}
 
-**Memberships** 頁面會顯示您網路中的所有訂閱。您可以在這裡檢視和編輯訂閱詳情，包括方案、產品、帳單金額與週期、付款紀錄，以及時間戳記。
+**結帳表單**讓你能彈性建立自訂註冊頁面。你可以自訂欄位、插入自訂類別與指令碼，並根據訪客國家或位置限制存取。
 
-![Memberships list](/img/admin/memberships-list.png)
+![結帳表單清單](/img/admin/checkout-forms-list.png)
 
-## Payments
+## 產品 {#products}
 
-**Payments** 頁面讓您快速瀏覽整個網路的付款紀錄，並提供詳細的交易資訊，包括具體的產品和金額。
+**產品**區段是你為網路建立不同方案、套裝與服務的地方。在產品層級定義價格、計費頻率，以及限制與配額。
 
-![Payments list](/img/admin/payments-list.png)
+![產品清單](/img/admin/products-list.png)
 
-## Customers
+## 會員資格 {#memberships}
 
-**Customers** 頁面會顯示網路中所有已註冊的會員，以及基本的使用者資訊，包括姓名、電子郵件地址、最後登入時間，還有一個「切換至」連結可以讓您直接登入他們的子網站。
+**會員資格**頁面會顯示你網路中的所有訂閱。檢視並編輯訂閱詳細資料，包括方案、產品、計費金額與頻率、付款紀錄和時間戳記。
 
-![Customers list](/img/admin/customers-list.png)
+![會員資格清單](/img/admin/memberships-list.png)
 
-## Sites
+## 付款 {#payments}
 
-**Sites** 頁面會列出網路中的所有子網站，包括網站範本和客戶擁有的網站。您可以輕鬆管理網域對應、限制與配額、外掛和佈景主題，以及網站縮圖。
+**付款**頁面提供整個網路付款紀錄的快速檢視，並包含特定產品與金額等詳細交易資訊。
 
-![Sites list](/img/admin/sites-list.png)
+![付款清單](/img/admin/payments-list.png)
 
-## Domains
+## 客戶 {#customers}
 
-**Domains** 頁面專門用來管理對應到子網站的自訂網域。身為超級管理員，您可以手動新增或對應自訂網域名稱，並檢視 DNS 記錄和日誌。
+**客戶**頁面會顯示你網路中註冊的所有會員，包含基本使用者資訊，例如姓名、電子郵件地址、上次登入，以及用於登入其子網站的「切換至」連結。
 
-![Domains list](/img/admin/domains-list.png)
+![客戶清單](/img/admin/customers-list.png)
 
-## Discount Codes
+## 網站 {#sites}
 
-**Discount Codes** 讓您建立優惠碼，提供折扣給您的終端使用者。您可以指定折扣金額，並針對特定使用者或群組進行設定。
+**網站**頁面列出你網路中的所有子網站，包括網站範本與客戶擁有的網站。輕鬆管理對應網域、限制與配額、plugin 與 theme，以及網站縮圖。
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![網站清單](/img/admin/sites-list.png)
 
-## Broadcasts
+## 網域 {#domains}
 
-**Broadcasts** 是一個用來發布公告或傳送私人訊息給子網站使用者的工具。您可以根據使用者訂閱的方案或產品，針對特定群組進行推播。
+**網域**頁面專用於對應至子網站的自訂網域。身為 super admin，你可以手動新增或對應自訂網域名稱，並檢視 DNS 記錄與日誌。
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![網域清單](/img/admin/domains-list.png)
 
-## Settings
+## 折扣代碼 {#discount-codes}
 
-**Settings** 頁面是您設定 Ultimate Multisite 的地方 — 包括註冊設定、付款、API 和 webhooks、網域對應，以及其他整合功能。
+**折扣代碼**讓你建立優惠券代碼，為終端使用者提供折扣。指定折扣值，並鎖定特定使用者或群組。
 
-![Settings page](/img/admin/settings-general.png)
+![折扣代碼清單](/img/admin/discount-codes-list.png)
 
-## Events
+## 廣播 {#broadcasts}
 
-**Events** 頁面會記錄網路中所有的事件和日誌。它會追蹤各種活動，像是方案變更、註冊，以及其他異動 — 對於監控您的多站網路非常實用。
+**廣播**是一項用於推出公告或傳送私人訊息給子網站使用者的工具。根據他們訂閱的方案或產品鎖定特定使用者群組。
 
-![Events list](/img/admin/events-list.png)
+![廣播清單](/img/admin/broadcasts-list.png)
 
-## Webhooks
+## 設定 {#settings}
 
-**Webhooks** 讓您可以將資料傳送到其他應用程式。適合用來將 Ultimate Multisite 的資料傳送到 Zapier 等平台。
+**設定**頁面是你設定 Ultimate Multisite 的地方，包括註冊設定、付款、API 與 webhooks、網域對應，以及其他整合。
 
-![Webhooks list](/img/admin/webhooks-list.png)
+AI 連接器設定會列出目前支援的 OAuth 提供者池：Anthropic Max、OpenAI ChatGPT/Codex，以及 Google AI Pro。每張提供者卡片都讓 super admin 連接帳號、重新整理已儲存的帳號、依電子郵件移除帳號，並在沙盒環境封鎖瀏覽器重新導向時使用手動 OAuth 備用流程。Cursor Pro 設定選項已從管理員面板移除。
+
+ChatGPT/Codex 帳號支援由連接器支援的工具使用；在操作允許工具時，依賴連接器支援操作的管理員工作流程可在 OpenAI 帳號連接後使用 Codex 工具行為。
+
+![設定頁面](/img/admin/settings-general.png)
+
+以下是一般設定頁面的完整檢視：
+
+![一般設定完整頁面](/img/admin/settings-general-full.png)
+
+以及電子郵件設定頁面：
+
+![電子郵件設定完整頁面](/img/admin/settings-emails-full.png)
+
+以及付款設定頁面：
+
+![付款設定完整頁面](/img/admin/settings-payments-full.png)
+
+以及付款設定的底部區段：
+
+![付款設定底部區段](/img/admin/settings-payments-bottom.png)
+
+以及網站設定頁面：
+
+![網站設定完整頁面](/img/admin/settings-sites-full.png)
+
+## 事件 {#events}
+
+**事件**頁面會保留你網路中所有事件與日誌的紀錄。它會追蹤方案變更、註冊及其他動態等活動，有助於監控你的 multisite。
+
+![事件清單](/img/admin/events-list.png)
+
+## Webhooks {#webhooks}
+
+**Webhooks**允許你將資料傳送到另一個應用程式。適合用來將資料從 Ultimate Multisite 傳送到 Zapier 等平台。
+
+![Webhooks 清單](/img/admin/webhooks-list.png)

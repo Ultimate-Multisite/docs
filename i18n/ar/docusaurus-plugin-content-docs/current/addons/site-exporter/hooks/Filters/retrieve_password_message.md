@@ -8,7 +8,7 @@ We need to translate headings. "## Returns" -> "## Returns" in Arabic: "## Retur
 
 يُرشِّح نص رسالة إعادة تعيين كلمة المرور.
 
-## Parameters
+## Parameters {#filter-retrievepasswordmessage}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,15 +17,15 @@ We need to translate headings. "## Returns" -> "## Returns" in Arabic: "## Retur
 | $user_login | `string` | اسم المستخدم للمستخدم. |
 | $user_data | `\WP_User` | كائن WP_User. |
 
-### Since
+### Since {#parameters}
 
 - 2.8.0
 - 4.1.0: أضيفت معلمات <code>$user_login</code> و <code>$user_data</code>.
 
-### Source
+### Source {#since}
 
 مُعرَّف في [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) في السطر 149
 
-## Returns
+## Returns {#source}
 
 رسالة البريد الافتراضية.

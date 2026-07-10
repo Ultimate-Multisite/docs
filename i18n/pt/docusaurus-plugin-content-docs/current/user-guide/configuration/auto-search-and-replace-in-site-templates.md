@@ -3,7 +3,7 @@ title: Pesquisa e Substituição Automática em Modelos de Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Busca e Substituição Automática em Modelos de Site (v2)
+# Busca e Substituição Automática em Modelos de Site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Este tutorial requer a versão 2.x do WP UItimo.**_
 
@@ -17,7 +17,7 @@ Seu cliente poderá então preencher esse campo durante o registro.
 
 O Ultimate Multisite substituirá os placeholders pelas informações fornecidas pelo cliente automaticamente.
 
-## **Resolvendo o problema do "modelo cheio de placeholders"**
+## **Resolvendo o problema do "modelo cheio de placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Tudo isso é ótimo, mas encontramos um problema feio: agora nossos modelos de site - que podem ser visitados pelos nossos clientes - estão cheios de placeholders feios que não dizem muito.
 

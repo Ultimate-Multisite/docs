@@ -3,15 +3,15 @@ title: Ellenőrizze a paletta kontrasztját
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Paletta Kontrasztának Ellenőrzése
+# Paletta Kontrasztának Ellenőrzése {#validate-palette-contrast}
 
 A **Paletta Kontraszt Ellenőrző** funkció ellenőrzi a tervezési palettájukban lévő színek párokat WCAG (Web Content Accessibility Guidelines) megfelelőség szempontjából, mielőtt azok a témájára kerülnek.
 
-## Áttekintés
+## Áttekintés {#overview}
 
 Ez a funkció biztosítja, hogy az oldal színschema megfeleljen az hozzáférhetőségi (accessibility) előírásoknak, a szöveg és a háttér színei közötti kontrasztarányok ellenőrzésével. Ez segít elkerülni olyan színek kombinációit, amelyeket látási nehézségeket tapasztaló felhasználóknak nehéz olvasni.
 
-## Input Formátum
+## Input Formátum {#input-format}
 
 A funkció egy színpalettát fogadott inputként:
 
@@ -35,7 +35,7 @@ A funkció egy színpalettát fogadott inputként:
 }
 ```
 
-### Paraméterek
+### Paraméterek {#parameters}
 
 | Paraméter | Típus | Kötelező | Leírás |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ A funkció egy színpalettát fogadott inputként:
 | `wcag_level` | string | No | WCAG megfelelőségi szint: "A", "AA" (alapértelmezett), vagy "AAA". |
 | `pairs_to_check` | array | No | Specifikus színek párokat a validációhoz (pl. `["primary-text", "background-text"]`). |
 
-## Ellenőrzött WCAG Szintek
+## Ellenőrzött WCAG Szintek {#wcag-levels-checked}
 
 A funkció a WCAG előírások szerint ellenőrzi a kontrasztarányokat:
 
@@ -56,7 +56,7 @@ A funkció a WCAG előírások szerint ellenőrzi a kontrasztarányokat:
 - **Normál szöveg** — szöveg, amely kisebb, mint 18pt (vagy 14pt bold).
 - **Nagy szöveg** — szöveg, amely 18pt vagy nagyobb (vagy 14pt bold vagy nagyobb).
 
-## Output Schema
+## Output Schema {#output-schema}
 
 A funkció részletes validációs jelentést ad vissza:
 
@@ -95,7 +95,7 @@ A funkció részletes validációs jelentést ad vissza:
 }
 ```
 
-### Kimeneti Mezerek
+### Kimeneti Mezerek {#output-fields}
 
 | Mezerek | Típus | Leírás |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ A funkció részletes validációs jelentést ad vissza:
 | `status` | string | "pass" vagy "fail" minden pár számára. |
 | `recommendations` | array | Javaslatok a hibás párokre javítására. |
 
-## Használati Példa
+## Használati Példa {#usage-example}
 
 **Prompt:**
 ```
@@ -119,7 +119,7 @@ A funkció ellenőrzi az összes színek kombinációját, és a következőket 
 - ✅ Background + Text: 12.1:1 arány (megfelel WCAG AAA-nak)
 - Overall: WCAG AA-hoz megfelel
 
-## Integráció a Témaépítővel
+## Integráció a Témaépítővel {#integration-with-theme-builder}
 
 Amikor a Témaépítő (Theme Builder) design-irányítási kiválasztását használja, a Paletta Kontraszt Ellenőrző funkció:
 
@@ -129,7 +129,7 @@ Amikor a Témaépítő (Theme Builder) design-irányítási kiválasztását has
 4. Javaslatokat ad a nem megfelelők párokre.
 5. Megakadályozza a hozzáférhetetlen színschemáinak alkalmazását.
 
-## Legjobb Gyakorlatok
+## Legjobb Gyakorlatok {#best-practices}
 
 - **Kezdje az AA szinttel** — WCAG AA az legtöbb weboldalra vonatkozó standard.
 - **Tesztelje az alkalmazás előtt** — validálja a palettáját, mielőtt elkötelezővé válik egy design mellett.
@@ -137,7 +137,7 @@ Amikor a Témaépítő (Theme Builder) design-irányítási kiválasztását has
 - **Font vegye figyelembe a felhasználói preferenciákat** — egyes felhasználóknak lehet színsérzébségük.
 - **Használjon kontraszt ellenőzőt** — kombinálja ezt a funkciót böngésző eszközökkel a megerősítéshez.
 
-## Hibás Párok és Javaslatok
+## Hibás Párok és Javaslatok {#failing-pairs-and-recommendations}
 
 Ha egy színek pára nem felel meg a validációnek, a funkció javaslatokat ad:
 
@@ -155,7 +155,7 @@ Ha egy színek pára nem felel meg a validációnek, a funkció javaslatokat ad:
 }
 ```
 
-## Kapcsolódó Funkciók
+## Kapcsolódó Funkciók {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — képeket hozz létre a validált színpaletájával
 - [Create Menu](./create-menu.md) — építsen navigációt hozzáférhető színekkel

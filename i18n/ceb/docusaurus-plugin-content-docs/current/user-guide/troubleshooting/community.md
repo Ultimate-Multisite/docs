@@ -3,7 +3,7 @@ title: Komunidad
 sidebar_position: 9
 _i18n_hash: 72a15449c81986dc3dd89cd023b51c07
 ---
-# Unsaon pag-apil sa Ultimate Multisite Community
+# Unsaon pag-apil sa Ultimate Multisite Community {#how-to-join-ultimate-multisite-community}
 
 Ang Ultimate Multisite Community kay usa ka lugar diin pwede kang makig-istorya sa ubang mga Ultimate Multisite users ug magpaambit og mga tips, kasinatian, ug uban pa. Aron maka-access sa Ultimate Multisite Community, pumunta sa https://community.ultimatemultisite.com/home.
 

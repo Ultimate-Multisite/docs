@@ -3,11 +3,11 @@ title: Ultimate Multisite-ni tarjima qilish
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Ultimate Multisiteni Tarjimasi
+# Ultimate Multisiteni Tarjimasi {#translating-ultimate-multisite}
 
 Ultimate Multisite ingliz tilida ishlab chiqilgan, ammo bu plugin to'liq tarjima qilinishi mumkin va biz faol tarjima hissalari uchun takliflarni qabul qilamiz.
 
-## Asosiy Pluginlar Tarjimalari
+## Asosiy Pluginlar Tarjimalari {#core-plugin-translations}
 
 Asosiy Ultimate Multisite pluginini rasmiy **WordPress.org tarjima platformasi** orqali tarjima qilish mumkin:
 
@@ -24,7 +24,7 @@ Bu standart WordPress jamoatchilik tarjima tizimidir. Tarjimalar yetarli tasdiql
 
 Agar siz o'z til uchun tarjima tahririga aylanishni istasangiz (tarjimalarni tasdiqlash imkoniyatiga ega bo'lgan), [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions) orqali murojaat qiling.
 
-## Addonlar Tarjimalari
+## Addonlar Tarjimalari {#addon-translations}
 
 Addon pluginlari quyidagi joyda alohida tarjima qilinadi:
 
@@ -32,11 +32,11 @@ Addon pluginlari quyidagi joyda alohida tarjima qilinadi:
 
 Hozircha addon tarjimalari boshlang'ich nuqta sifatida AI orqali yaratilgan. Ular qo'llab-quvvatlanadigan barcha tillarni qamrab oladi, ammo ular noqulay iboralar yoki noto'g'riliklar o'zida bo'lishi mumkin. Ularni tabiiyroq va aniqroq qilish uchun inson tarjimonlari tomonidan ko'rib chiqish va takliflar berishni xohlaymiz.
 
-## Mahalliy Tarjimalar
+## Mahalliy Tarjimalar {#local-translations}
 
 Agar siz o'zingizning loyihangiz uchun mahalliy tarjimalarni yaratishni afzal ko'rsangiz, yuqoriga hissa qo'shish (upstream) orqali ishtirok etmasdan ham ikki xil variant mavjud:
 
-### Poedit dan foydalanish
+### Poedit dan foydalanish {#using-poedit}
 
 Siz `.pot` faylini tarjima qilish uchun **[Poedit](https://poedit.net)** desktop ilovasidan foydalanishingiz mumkin:
 
@@ -46,6 +46,6 @@ Siz `.pot` faylini tarjima qilish uchun **[Poedit](https://poedit.net)** desktop
 4. Saqlang -- Poedit `.po` va `.mo` fayllarini yaratadi
 5. Chiqarilgan fayllarni `lang` papkasiga joylashtiring
 
-### Loco Translate dan foydalanish
+### Loco Translate dan foydalanish {#using-loco-translate}
 
 **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** WordPress plugin orqali siz desktop vositalaridan foydalanmasdan ham to'g'ridan-to'g'ri admin panelidan tarjima qila olasiz. U uchun tarjima fayllarini yaratish va kompilyatsiya qilishni avtomatik amalga oshiradi.

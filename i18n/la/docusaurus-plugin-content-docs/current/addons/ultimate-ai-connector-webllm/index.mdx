@@ -1,0 +1,144 @@
+---
+title: Coniunctor AI Supremus pro WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM illationem AI nativam navigatoris ad rete multisite WordPress tuum adfert. Magna exemplaria linguarum omnino in navigatro currit utens WebLLM et machina MLC — nullae claves API, nullae vocationes externae, nulla data machinam usoris relinquunt.
+
+## Praecipuae Proprietates {#key-features}
+
+- **Illatio in latere navigatoris**: LLM localiter in navigatro visitatoris per WebLLM/MLC currit — nulla GPU ministri requiritur
+- **Instrumentum colloquii fluctuans**: Usores initium sessionis habentes LLM in latere navigatoris directe e fronte interrogare possunt
+- **Index status in barra administrationis**: Status temporis realis machinae WebLLM in barra administrationis WordPress visibilis
+- **SharedWorker tempus exsecutionis**: Plures tabulae navigatoris unam sessionem GPU communicant pro certamine de opibus GPU
+- **apiFetch middleware**: Petitiones WordPress REST quae formae AI Client SDK respondent perspicue ad localem WebLLM internuntium diriguntur — nulla circuitus HTTP loopback
+- **UI optionum instrumenti**: Optiones tabulae Connector ad instrumentum colloquii commutandum et mores auto-prompt configurandos
+- **IndexedDB cella**: Descensiones ponderum exemplaris supersunt redirectionibus CDN quae viam ordinariam Cache API frangunt
+- **Integratio filtri wpai**: Se inserit in filtrum `wpai_preferred_text_models` ut functio AI Experiments ad machinam navigatoris dirigatur cum configurata est
+
+## Requisita {#requirements}
+
+- WordPress 5.3 aut superius
+- PHP 7.4 aut superius
+- Ultimate Multisite plugin (activum)
+- Navigator cum auxilio WebGPU (Chrome 113+, Edge 113+, aut Firefox Nightly cum WebGPU habilitato)
+
+## Installatio {#installation}
+
+1. Fasciculos addon in directorium tuum `/wp-content/plugins/` impone
+2. plugin per menu 'Plugins' in WordPress activa
+3. Naviga ad **Ultimate Multisite → AI Connector** ut addon configures
+
+## Instrumentum Colloquii Fluctuans {#floating-chat-widget}
+
+Instrumentum colloquii fluctuans cuilibet usori initium sessionis habenti permittit ut cum LLM in latere navigatoris directe e fronte tua interagat, sine pagina quam spectat relicta.
+
+### Quid Faciat {#what-it-does}
+
+Cum habilitatum est, icon colloquii in angulo cuiusque paginae frontis apparet pro usoribus initium sessionis habentibus. Icone pressa tabula colloquii aperitur ubi usor prompta scribere et responsa ab exemplo WebLLM localiter currente accipere potest. Quia exemplar omnino in navigatro currit, responsa privata sunt nec ullam tractationem in latere ministri implicant.
+
+### Index Status in Barra Administrationis {#admin-bar-status-indicator}
+
+Barra administrationis WordPress indicem status includit qui statum praesentem machinae WebLLM ostendit:
+
+| Status | Sensus |
+|--------|---------|
+| **Loading** | Machina MLC initium capit aut pondera exemplaris demittit |
+| **Ready** | Exemplar oneratum est et ad illationem praesto est |
+| **Idle** | Machina onerata est sed tabula SharedWorker activa non est |
+| **Error** | Machina initium capere non potuit — inspice consolam navigatoris pro singulis |
+
+Index tempore reali renovatur sine necessitate paginae iterum onerandae.
+
+### Quomodo Instrumentum Habilitare aut Inhabilitare {#how-to-enable-or-disable-the-widget}
+
+1. Vade ad **Ultimate Multisite → AI Connector** in administratione retis
+2. Inveni tabulam **Connector**
+3. Commuta **Habilita instrumentum colloquii fluctuans** ad activum aut inactivum
+4. Serva optiones
+
+Instrumentum etiam per situm habilitari aut inhabilitari potest ex propria administratione situs, si administrator retis illam facultatem concessit.
+
+## Optiones Instrumenti {#widget-settings}
+
+Tabula Connector in **Ultimate Multisite → AI Connector** continet sequentes optiones pro instrumento colloquii fluctuante:
+
+### Habilita Instrumentum Colloquii Fluctuans {#enable-floating-chat-widget}
+
+Instrumentum colloquii pro toto reti activo aut inactivo commutat. Cum inhabilitatum est, instrumentum in nulla pagina frontis apparet, quocumque munere usoris.
+
+**Praedefinitum:** Inactivum
+
+### Mores Auto-Prompt {#auto-prompt-behaviour}
+
+Regit utrum instrumentum colloquii promptum automatice mittat cum usor id aperit.
+
+| Optio | Mores |
+|--------|-----------|
+| **Inhabilitatum** | Instrumentum ad colloquium vacuum aperitur — usor proprium promptum scribit |
+| **Contextus paginae** | Instrumentum aperitur cum prompto praeimpleto ex titulo et contento paginae praesentis |
+| **Promptum proprium** | Instrumentum aperitur cum prompto proprio quod in campo infra definis |
+
+Cum ad **Promptum proprium** positum est, campus textus additus apparet ubi textum prompti praedefiniti inserere potes. Variabiles formularum basicas sustinet:
+
+- `{site_name}` — nomen situs praesentis
+- `{page_title}` — titulus paginae praesentis
+- `{user_display_name}` — nomen ostentum usoris initium sessionis habentis
+
+**Praedefinitum:** Inhabilitatum
+
+## SharedWorker Tempus Exsecutionis {#sharedworker-runtime}
+
+Versio 1.1.0 tempus exsecutionis SharedWorker pro machina MLC introducit. Antea, quaeque tabula navigatoris quae WebLLM utebatur propriam instantiam exemplaris onerabat, pro memoria GPU certans et difficultates efficientiae in machinis cum VRAM limitata causans.
+
+Cum tempore exsecutionis SharedWorker, una tabula ut hospes machinae agit. Omnes aliae tabulae cum illa unica instantia per canalem nuntiorum worker communicant. Effectus:
+
+- Una sessio GPU per omnes tabulas apertas communicata
+- Responsa celeriora postquam exemplar oneratum est (nulla initii repetita actio)
+- Minor usus memoriae culminis in machina
+
+SharedWorker usoribus perspicuus est. Index status in barra administrationis semper statum machinae communicatae refert, non tabulae singulae.
+
+## apiFetch Middleware {#apifetch-middleware}
+
+addon `apiFetch` middleware installat quod petitiones WordPress REST API formae AI Client SDK respondentes intercipit. Pro petitione HTTP loopback ad ministrum facienda, hae petitiones directe ad localem WebLLM internuntium in SharedWorker currentem diriguntur.
+
+Hoc significat plugins et themata quae API ordinariam WordPress `apiFetch` utuntur ad vocanda endpointa AI automatice utilitatem ex exemplo in latere navigatoris habitura esse cum praesto est, nullis mutationibus codicis requisitis.
+
+## Hooks et Filtra {#hooks-and-filters}
+
+### Filtra {#filters}
+
+- `wpai_preferred_text_models` — WebLLM machinam navigatoriam registra ut exemplar textus praelatum. Addon huic filtro automatice se adiungit cum machina configurata et praesto est.
+- `ultimate_webllm_widget_enabled` — Statum widget activatum pro certo usore vel contextu supercede. Redde `true` aut `false`.
+- `ultimate_webllm_auto_prompt` — Textum auto-prompt muta antequam ad widget mittitur. Accipit filum prompt et obiectum `WP_Post` praesens.
+
+## Solutio problematum {#troubleshooting}
+
+### Widget colloquii non apparet {#the-chat-widget-does-not-appear}
+
+- Confirma usorem initium sessionis fecisse — widget solum usoribus authenticatis ostenditur
+- Reprehende ut **Enable floating chat widget** in tabula Connector activa sit
+- Verifica navigatrum usoris WebGPU sustinere (vide Requisita supra)
+
+### Indicator in admin-bar ostendit "Error" {#the-admin-bar-indicator-shows-error}
+
+Aperi consolam navigatoris ad excogitatores (F12) et errores ad WebLLM pertinentes quaere. Causae communes:
+
+- Navigator WebGPU non sustinet
+- Descriptio ponderum exemplaris defecit — conexionem retis inspice et tenta cache IndexedDB delere in instrumentis excogitatorum navigatoris (Application → IndexedDB)
+- Extensio navigatoris SharedWorker impedit
+
+### Pondera exemplaris omni tempore deponuntur {#model-weights-download-every-time}
+
+Addon utitur IndexedDB ut fundamento cache, ut pondera exemplaris post CDN redirectiones maneant. Si pondera in omni visitatione iterum deponuntur, inspice ne IndexedDB a secreto navigatoris occasu vel extensione deleatur.
+
+## Index mutationum {#changelog}
+
+Vide [Index mutationum](./changelog) pro plena historia versionum.

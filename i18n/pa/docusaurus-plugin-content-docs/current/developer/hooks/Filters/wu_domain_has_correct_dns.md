@@ -4,11 +4,11 @@ title: ਫਿਲਟਰ - wu_domain_has_correct_dns
 sidebar_label: wu_domain_has_correct_dns
 _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 ---
-# Filter: wu_domain_has_correct_dns
+# Filter: wu_domain_has_correct_dns {#filter-wudomainhascorrectdns}
 
 ਪਲੱਗਇਨ ਡਿਵੈਲਪਰਜ਼ ਨੂੰ ਨਵੇਂ ਚੈੱਕ (checks) ਜੋੜਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦਾ ਹੈ ਤਾਂ ਜੋ ਨਤੀਜੇ (results) ਨੂੰ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਜਾ ਸਕੇ।
 
-## ਪੈਰਾਮੀਟਰਜ਼ (Parameters)
+## ਪੈਰਾਮੀਟਰਜ਼ (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: dd6037bea5bd9b5b613888113a04536d
 | $domain | `self` | ਮੌਜੂਦਾ ਡੋਮੇਨ ਦਾ ਇੰਸਟੈਂਸ। |
 | $domains_and_ips | `array` | DNS ਲੁੱਕਅਪ 'ਤੇ ਮਿਲੇ ਡੋਮੇਨਾਂ ਅਤੇ IPs ਦੀ ਸੂਚੀ। |
 
-### ਕਦੋਂ ਤੋਂ (Since)
+### ਕਦੋਂ ਤੋਂ (Since) {#since}
 
 - 2.0.4
-### ਸਰੋਤ (Source)
+### ਸਰੋਤ (Source) {#source}
 
 Defined in [`inc/models/class-domain.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-domain.php#L455) at line 455
 
 
-## ਵਾਪਸ ਕੀ ਕਰਦਾ ਹੈ (Returns)
+## ਵਾਪਸ ਕੀ ਕਰਦਾ ਹੈ (Returns) {#returns}
 ਕਿ DNS ਸਹੀ ਤਰ੍ਹਾਂ ਸੈੱਟਅੱਪ ਹੈ ਜਾਂ ਨਹੀਂ।

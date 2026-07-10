@@ -1,0 +1,144 @@
+---
+title: Isixhumi se-AI Esiphezulu se-WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector ye-WebLLM {#ultimate-ai-connector-for-webllm}
+
+I-Ultimate AI Connector ye-WebLLM iletha ukuqagela kwe-AI okusekelwe esipheqululini kunethiwekhi yakho ye-WordPress multisite. Isebenzisa amamodeli olimi amakhulu ngokuphelele esipheqululini isebenzisa i-WebLLM nenjini ye-MLC — akukho API keys, akukho zingcingo zangaphandle, akukho datha ephuma kudivayisi yomsebenzisi.
+
+## Izici Ezibalulekile {#key-features}
+
+- **Ukuqagela ohlangothini lwesiphequluli**: I-LLM isebenza endaweni yasendaweni esipheqululini sesivakashi nge-WebLLM/MLC — ayidingeki i-GPU yeseva
+- **Iwijethi yengxoxo entantayo**: Abasebenzisi abangene ngemvume bangathumela imiyalo ku-LLM eseceleni kwesiphequluli ngqo kusukela engxenyeni engaphambili
+- **Inkomba yesimo kubha yomlawuli**: Isimo sesikhathi sangempela senjini ye-WebLLM siyabonakala kubha yomlawuli ye-WordPress
+- **Isikhathi sokusebenza se-SharedWorker**: Amathebhu amaningi esiphequluli abelana ngeseshini eyodwa ye-GPU esikhundleni sokuncintisana ngezinsiza ze-GPU
+- **I-middleware ye-apiFetch**: Izicelo ze-WordPress REST ezihambisana nephethini ye-AI Client SDK ziqondiswa ngokusobala kumdayisi wendawo we-WebLLM — akukho uhambo olubuyela emuva lwe-loopback HTTP
+- **I-UI yezilungiselelo zewijethi**: Izilungiselelo zephaneli yesixhumi ukuze kuvulwe noma kucishwe iwijethi yengxoxo futhi kulungiswe ukuziphatha komyalo ozenzakalelayo
+- **Inqolobane ye-IndexedDB**: Ukulandwa kwezinsindo zemodeli kuyasinda ekuqondisweni kabusha kwe-CDN okuphula indlela ezenzakalelayo ye-Cache API
+- **Ukuhlanganiswa kwesihlungi se-wpai**: Ixhuma kusihlungi se-`wpai_preferred_text_models` ukuze isici se-AI Experiments siqondise enjinini yesiphequluli lapho silungisiwe
+
+## Izimfuneko {#requirements}
+
+- WordPress 5.3 noma ngaphezulu
+- PHP 7.4 noma ngaphezulu
+- I-plugin ye-Ultimate Multisite (isebenza)
+- Isiphequluli esisekela i-WebGPU (Chrome 113+, Edge 113+, noma Firefox Nightly ene-WebGPU enikwe amandla)
+
+## Ukufaka {#installation}
+
+1. Layisha amafayela esengezo ohlwini lwakho lwe-`/wp-content/plugins/`
+2. Yenza i-plugin isebenze ngemenyu ethi 'Ama-plugin' ku-WordPress
+3. Iya ku-**Ultimate Multisite → Isixhumi se-AI** ukuze ulungise isengezo
+
+## Iwijethi Yengxoxo Entantayo {#floating-chat-widget}
+
+Iwijethi yengxoxo entantayo ivumela noma yimuphi umsebenzisi ongene ngemvume ukuthi axhumane ne-LLM eseceleni kwesiphequluli ngqo kusukela engxenyeni yakho engaphambili, ngaphandle kokushiya ikhasi abakulo.
+
+### Lokho Ekwenzayo {#what-it-does}
+
+Lapho inikwe amandla, isithonjana sengxoxo sivela ekhoneni lawo wonke amakhasi engxenye engaphambili kubasebenzisi abangene ngemvume. Ukuchofoza isithonjana kuvula iphaneli yengxoxo lapho umsebenzisi angabhala khona imiyalo futhi athole izimpendulo kumodeli ye-WebLLM esebenza endaweni yasendaweni. Njengoba imodeli isebenza ngokuphelele esipheqululini, izimpendulo ziyimfihlo futhi azibandakanyi noma yikuphi ukucubungula ohlangothini lweseva.
+
+### Inkomba Yesimo Kubha Yomlawuli {#admin-bar-status-indicator}
+
+Ibha yomlawuli ye-WordPress ifaka inkomba yesimo ebonisa isimo samanje senjini ye-WebLLM:
+
+| Isimo | Incazelo |
+|--------|---------|
+| **Iyalayisha** | Injini ye-MLC iyaqaliswa noma ilanda izinsindo zemodeli |
+| **Ilungile** | Imodeli ilayishiwe futhi iyatholakala ukuze kwenziwe ukuqagela |
+| **Ayisebenzi** | Injini ilayishiwe kodwa ithebhu ye-SharedWorker ayisebenzi |
+| **Iphutha** | Injini yehlulekile ukuqaliswa — hlola ikhonsoli yesiphequluli ukuze uthole imininingwane |
+
+Inkomba ibuyekezwa ngesikhathi sangempela ngaphandle kokudinga ukulayishwa kabusha kwekhasi.
+
+### Indlela Yokunika Amandla noma Ukukhubaza Iwijethi {#how-to-enable-or-disable-the-widget}
+
+1. Iya ku-**Ultimate Multisite → Isixhumi se-AI** kumlawuli wenethiwekhi
+2. Thola iphaneli ethi **Isixhumi**
+3. Vula noma uvale okuthi **Nika amandla iwijethi yengxoxo entantayo**
+4. Londoloza izilungiselelo
+
+Iwijethi inganikwa amandla noma ikhutshazwe ngesayithi ngalinye kusukela kumlawuli wesayithi uqobo uma umlawuli wenethiwekhi enikeze lelo khono.
+
+## Izilungiselelo Zewijethi {#widget-settings}
+
+Iphaneli Yesixhumi ku-**Ultimate Multisite → Isixhumi se-AI** iqukethe lezi zilungiselelo ezilandelayo zewijethi yengxoxo entantayo:
+
+### Nika Amandla Iwijethi Yengxoxo Entantayo {#enable-floating-chat-widget}
+
+Ivula noma ivale iwijethi yengxoxo kuyo yonke inethiwekhi. Lapho ikhutshaziwe, iwijethi ayiveli kunoma yiliphi ikhasi lengxenye engaphambili, kungakhathaliseki indima yomsebenzisi.
+
+**Okuzenzakalelayo:** Kuvaliwe
+
+### Ukuziphatha Komyalo Ozenzakalelayo {#auto-prompt-behaviour}
+
+Ilawula ukuthi iwijethi yengxoxo ithumela yini umyalo ngokuzenzakalelayo lapho umsebenzisi eyivula.
+
+| Inketho | Ukuziphatha |
+|--------|-----------|
+| **Kukhutshaziwe** | Iwijethi ivuleka engxoxweni engenalutho — umsebenzisi ubhala umyalo wakhe |
+| **Umongo wekhasi** | Iwijethi ivuleka inomyalelo ogcwaliswe kusengaphambili ngokusekelwe esihlokweni nokuqukethwe kwekhasi lamanje |
+| **Umyalo owenziwe ngokwezifiso** | Iwijethi ivuleka inomyalelo owenziwe ngokwezifiso owuchaza enkambini engezansi |
+
+Lapho kusethwe ku-**Umyalo owenziwe ngokwezifiso**, kuvela inkambu yombhalo eyengeziwe lapho ungafaka khona umbhalo womyalelo ozenzakalelayo. Isekela okuguquguqukayo kwethempulethi okuyisisekelo:
+
+- `{site_name}` — igama lesayithi lamanje
+- `{page_title}` — isihloko sekhasi lamanje
+- `{user_display_name}` — igama lokubonisa lomsebenzisi ongene ngemvume
+
+**Okuzenzakalelayo:** Kukhutshaziwe
+
+## Isikhathi Sokusebenza se-SharedWorker {#sharedworker-runtime}
+
+Inguqulo 1.1.0 yethula isikhathi sokusebenza se-SharedWorker senjini ye-MLC. Ngaphambilini, ithebhu ngayinye yesiphequluli eyayisebenzisa i-WebLLM yayilayisha ikhophi yayo yemodeli, incintisane ngenkumbulo ye-GPU futhi idale izinkinga zokusebenza kumadivayisi ane-VRAM elinganiselwe.
+
+Ngesikhathi sokusebenza se-SharedWorker, ithebhu eyodwa isebenza njengomsingathi wenjini. Wonke amanye amathebhu axhumana naleyo khophi eyodwa ngesiteshi semiyalezo somsebenzi. Umphumela:
+
+- Iseshini eyodwa ye-GPU eyabiwe kuwo wonke amathebhu avuliwe
+- Izimpendulo ezisheshayo uma imodeli isilayishiwe (akukho ukuqaliswa okuphindaphindiwe)
+- Ukusetshenziswa kwenkumbulo ephakeme kakhulu okuphansi kudivayisi
+
+I-SharedWorker isobala kubasebenzisi. Inkomba yesimo kubha yomlawuli ihlale ibonisa isimo senjini eyabiwe, hhayi ithebhu ngayinye.
+
+## I-middleware ye-apiFetch {#apifetch-middleware}
+
+Isengezo sifaka i-middleware ye-`apiFetch` ebamba izicelo ze-WordPress REST API ezihambisana nephethini ye-AI Client SDK. Esikhundleni sokwenza isicelo se-loopback HTTP kuseva, lezi zicelo ziqondiswa ngqo kumdayisi wendawo we-WebLLM osebenza ku-SharedWorker.
+
+Lokhu kusho ukuthi ama-plugin namatimu asebenzisa i-API ejwayelekile ye-WordPress `apiFetch` ukubiza ama-endpoint e-AI azothola ngokuzenzakalelayo inzuzo yemodeli eseceleni kwesiphequluli lapho itholakala, ngaphandle kwezinguquko zekhodi ezidingekayo.
+
+## Ama-hook Nezihlungi {#hooks-and-filters}
+
+### Izihlungi {#filters}
+
+- `wpai_preferred_text_models` — Bhalisa injini yesiphequluli ye-WebLLM njengemodeli yombhalo ethandwayo. Isengezo sixhuma kulesi sihlungi ngokuzenzakalelayo lapho injini ilungisiwe futhi itholakala.
+- `ultimate_webllm_widget_enabled` — Dlula isimo sokunikwa amandla kwewijethi kumsebenzisi othile noma kumongo othile. Buyisa `true` noma `false`.
+- `ultimate_webllm_auto_prompt` — Shintsha umbhalo womyalelo ozenzakalelayo ngaphambi kokuba uthunyelwe kuwijethi. Yamukela uchungechunge lomyalelo nento yamanje ye-`WP_Post`.
+
+## Ukuxazulula Izinkinga {#troubleshooting}
+
+### Iwijethi yengxoxo ayiveli {#the-chat-widget-does-not-appear}
+
+- Qinisekisa ukuthi umsebenzisi ungene ngemvume — iwijethi iboniswa kuphela kubasebenzisi abagunyaziwe
+- Hlola ukuthi okuthi **Nika amandla iwijethi yengxoxo entantayo** kuvuliwe kuphaneli Yesixhumi
+- Qinisekisa ukuthi isiphequluli somsebenzisi sisekela i-WebGPU (bheka Izimfuneko ngenhla)
+
+### Inkomba kubha yomlawuli ibonisa "Iphutha" {#the-admin-bar-indicator-shows-error}
+
+Vula ikhonsoli yonjiniyela yesiphequluli (F12) bese ubheka amaphutha ahlobene ne-WebLLM. Izimbangela ezivamile:
+
+- Isiphequluli asisekeli i-WebGPU
+- Ukulandwa kwezinsindo zemodeli kwehlulekile — hlola ukuxhumeka kwenethiwekhi bese uzama ukusula inqolobane ye-IndexedDB kumathuluzi onjiniyela wesiphequluli (Application → IndexedDB)
+- Isandiso sesiphequluli sivimba i-SharedWorker
+
+### Izinsindo zemodeli zilanda njalo {#model-weights-download-every-time}
+
+Isengezo sisebenzisa i-IndexedDB njengengemuva lenqolobane ukuze kuqinisekiswe ukuthi izinsindo zemodeli ziyasinda ekuqondisweni kabusha kwe-CDN. Uma izinsindo zilanda kabusha kukho konke ukuvakasha, hlola ukuthi i-IndexedDB ayisulwa yisilungiselelo sobumfihlo sesiphequluli noma isandiso.
+
+## Umlando Wezinguquko {#changelog}
+
+Bheka [Umlando Wezinguquko](./changelog) ukuze uthole umlando ogcwele wezinguqulo.

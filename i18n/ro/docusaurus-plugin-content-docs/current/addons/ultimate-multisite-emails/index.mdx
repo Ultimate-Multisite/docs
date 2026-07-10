@@ -1,114 +1,197 @@
 ---
-title: Emailuri
+title: E-mailuri
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# Email-uri
+# E-mailuri {#emails}
 
-Addon-ul Ultimate Multisite: Emails permite administratorilor de rețea să sărăcu și să gestioneze conturile de e-mail ale clienților, alături de site-uri și membrii. Versiunea 1.1.0 adaugă gestionarea conturilor de e-mail pentru clienți, autentificarea unică (SSO) pentru webmail, suport pentru redirecționatori CyberPanel și îmbunătățiri la provisionarea la checkout.
+Suplimentul Ultimate Multisite: Emails le permite proprietarilor de rețele să furnizeze și să gestioneze conturile de e-mail ale clienților alături de site-uri și abonamente. Versiunea 1.1.0 adaugă gestionarea conturilor de e-mail orientată către clienți, autentificare unică în webmail, suport pentru redirecționări CyberPanel și îmbunătățiri ale furnizării în timpul finalizării comenzii.
 
-## Funcționalități Cheie
+## Funcționalități cheie {#key-features}
 
-* **Widget de cont de e-mail pentru clienți**: Clienții pot crea și gestiona conturile de e-mail direct de pe pagina lor de cont, fără a fi nevoie să deschidă un ticket de suport.
-* **SSO Webmail și magic-link**: Clienții pot accesa webmail direct de pe pagina de cont, cu autentificare cu un singur click, dacă furnizorul suportă această funcționalitate.
-* **Schimbarea parolei**: Clienții și administratorii pot actualiza parolele de la cutia poșta din widget-ul de gestionare a e-mailurilor.
-* **Provisionare la checkout**: Crearea contului de e-mail al clientului poate avea loc în timpul procesului de checkout, astfel încât cutia poștală să fie gata după finalizarea achiziției.
-* **Redirecționatori CyberPanel**: Rețelele bazate pe CyberPanel pot crea și gestiona redirecționatori de e-mail ca parte a fluxului de servicii de e-mail.
-* **Setări adaptate furnizorului**: Pagina de setări filtrează furnizorii pentru a afișa doar integrarile active și configurate, astfel încât administratorii să vadă doar opțiunile utilizabile.
+* **Widget pentru contul de e-mail al clientului**: Clienții pot crea și gestiona căsuțe poștale din pagina lor de Account după ce au un abonament de e-mail activ.
+* **SSO pentru webmail și linkuri magice**: Clienții pot deschide webmailul direct din pagina de Account cu autentificare printr-un singur clic atunci când furnizorul o acceptă.
+* **Schimbări de parolă**: Clienții și administratorii pot actualiza parolele căsuțelor poștale din widgetul de gestionare a e-mailului.
+* **Furnizarea drepturilor la finalizarea comenzii**: Finalizarea comenzii creează abonamentul de e-mail, îl leagă de domeniul site-ului clientului și face disponibile instrumentele pentru căsuța poștală din pagina de Account.
+* **Redirecționări CyberPanel**: Rețelele susținute de CyberPanel pot crea și gestiona redirecționări de e-mail ca parte a fluxului serviciului de e-mail.
+* **Setări conștiente de furnizor**: Pagina de setări filtrează furnizorii la integrările active și configurate, astfel încât administratorii să vadă doar opțiunile utilizabile.
 
-## Cerințe
+## Cerințe {#requirements}
 
-* Ultimate Multisite 2.0.0 sau versiune mai mare
+* Ultimate Multisite 2.0.0 sau mai nou
 * Instalare WordPress Multisite
-* Cel puțin o integrare de furnizor de e-mail configurată
-* Credențiale API ale furnizorului cu permisiunea de a crea cutii poștale, de a schimba parolele și de a emite link-uri de acces webmail, acolo unde este suportat
+* Cel puțin o integrare configurată cu un furnizor de e-mail
+* Credențiale API ale furnizorului cu permisiunea de a crea căsuțe poștale, de a schimba parole și de a emite linkuri de acces la webmail acolo unde este acceptat
 
-## Instalare
+## Instalare {#installation}
 
-1. Urcați fișierele plugin-ului în `/wp-content/plugins/ultimate-multisite-emails`.
-2. Activați addon-ul la nivel de rețea din secțiunea **Plugins** în administratorul de rețea WordPress.
-3. Mergeți la **Ultimate Multisite** > **Settings** și deschideți setările addon-ului de e-mail.
-4. Activați integrarile de furnizori de e-mail pe care doriți ca clienții să le folosească.
-5. Salvați setările și apoi testați crearea contului cu un client non-producțional sau un site de staging.
+1. Încarcă fișierele pluginului în `/wp-content/plugins/ultimate-multisite-emails`.
+2. Activează suplimentul la nivel de rețea din **Pluginuri** în administrarea rețelei WordPress.
+3. Mergi la **Ultimate Multisite** > **Setări** și deschide setările de e-mail ale suplimentului.
+4. Activează integrările cu furnizorii de e-mail pe care vrei să le folosească clienții.
+5. Salvează setările, apoi testează crearea contului cu un client care nu este de producție sau cu un site de testare.
 
-## Gestionarea E-mailurilor în Contul Clientului
+## Cum funcționează fluxul de vânzare a e-mailului {#how-the-email-seller-flow-works}
 
-Versiunea 1.1.0 adaugă un widget de gestionare a e-mailurilor pe pagina de cont a clientului. Folosiți acest widget atunci când clienții ar trebui să își gestioneze singuri crearea și întreținerea cutiei poștale pentru propriile site-uri.
+Vânzarea de e-mail are două straturi separate:
 
-De pe pagina de cont, clienții pot:
+1. **Drept** — un produs/abonament de e-mail Ultimate Multisite care spune că utilizatorul are permisiunea să folosească e-mailul pentru un anumit domeniu de site, furnizor, cotă și limită de conturi.
+2. **Crearea căsuței poștale** — căsuța poștală reală la furnizor, cum ar fi `info@example.com`, creată atunci când clientul sau un administrator de rețea alege partea locală și parola.
 
-1. Vizualiza conturile de e-mail conectate de la membrii sau site-ul lor curent.
-2. Crea o cutie poștală nouă dacă planul lor permite conturi suplimentare.
-3. Schimba parola unei cutii poștale existente.
-4. Accesa furnizorii webmail suportați prin SSO sau un login cu magic-link.
+În timpul finalizării comenzii, suplimentul creează sau activează **abonamentul de e-mail** și înregistrează domeniul site-ului clientului și furnizorul pe acel abonament. Nu ghicește un nume de căsuță poștală sau o parolă. După ce achiziția este finalizată și contextul site-ului/domeniului există, clientul poate deschide pagina de Account și poate crea numele de căsuțe poștale pe care le dorește.
 
-Widget-ul folosește sistemul curent de pagină de cont al Ultimate Multisite, astfel încât acțiunile sunt limitate la contextul contului pe care îl vizualizează clientul. Acest lucru previne ca clienții să gestioneze conturi de e-mail care aparțin unui alt membru sau site.
+Aceasta înseamnă că un flux normal pentru client este:
 
-## SSO Webmail și Login cu Magic-Link
+1. Clientul cumpără un plan de site și adaugă un produs de e-mail în timpul finalizării comenzii.
+2. Ultimate Multisite creează abonamentul site-ului și abonamentul secundar de e-mail.
+3. Suplimentul Emails leagă abonamentul de e-mail de domeniul site-ului clientului și de furnizor.
+4. Clientul deschide **Account** în Dashboardul său.
+5. Panoul **Conturi de e-mail** apare pentru acel abonament de e-mail activ.
+6. Clientul face clic pe **Creează cont**, introduce partea locală, cum ar fi `info`, setează o parolă, iar suplimentul creează `info@their-domain.com` la furnizorul configurat.
 
-SSO Webmail oferă clienților o acțiune directă de tip **Open webmail** de pe pagina de cont. Când este suportat de furnizorul activ, addon-ul solicită un URL de acces cu durată limitată și redirecționează clientul către webmail, fără a cere acestuia să copieze credențialele cutiei poștale.
+## Configurează un produs de e-mail {#configure-an-email-product}
+
+Creează un produs de e-mail pentru fiecare pachet de e-mail pe care vrei să îl vinzi sau să îl oferi gratuit. Dacă ești la început cu configurarea produselor, începe cu [Crearea primului tău produs de abonament](../../user-guide/configuration/creating-your-first-subscription-product), apoi revino aici pentru setările specifice e-mailului.
+
+1. Mergi la **Administrare rețea > Ultimate Multisite > Produse > Adaugă produs**.
+2. Setează **Tip produs** la **E-mail**.
+3. Configurează prețurile. Folosește un preț recurent plătit pentru un plan vândut sau setează produsul ca gratuit/cu preț zero dacă ar trebui să fie un plan de e-mail oferit gratuit.
+4. Deschide secțiunea **Setări e-mail**.
+5. Selectează **Furnizorul de e-mail** configurat.
+6. Setează **Numărul de conturi**, **Cota de stocare (MB)**, limitele pentru aliasuri, redirecționările și răspunsurile automate după nevoie.
+7. Salvează produsul.
+
+Doar furnizorii care sunt activați și complet configurați pe pagina **Integrări** apar în selectorul de furnizor. Dacă selectorul este gol, configurează și testează mai întâi furnizorul.
+
+## Adaugă e-mail la finalizarea comenzii {#add-email-to-checkout}
+
+Produsele de e-mail sunt de obicei oferite ca suplimente la un plan de site. Consultă [Formulare de finalizare a comenzii](../../user-guide/configuration/checkout-forms) pentru fluxul general de lucru al editorului de finalizare a comenzii.
+
+1. Creează sau editează planul de site pe care clienții îl cumpără primul.
+2. Adaugă produsul de e-mail ca supliment disponibil/ofertă suplimentară pentru acel flux de finalizare a comenzii.
+3. Confirmă că formularul de finalizare a comenzii include în continuare câmpurile normale obligatorii ale site-ului, în special câmpul URL/domeniu al site-ului.
+4. Rulează o finalizare de comandă de test cu un client de testare.
+5. După finalizarea comenzii, deschide [pagina de Account](../../user-guide/client-management/account-page) a clientului și confirmă că apare panoul **Conturi de e-mail**.
+
+Domeniul de e-mail este preluat din domeniul site-ului clientului. Clienții nu introduc domeniul de e-mail în pasul produsului de e-mail.
+
+## Gestionarea e-mailului din contul clientului {#customer-account-email-management}
+
+Versiunea 1.1.0 adaugă un widget de gestionare a e-mailului pe pagina de Account a clientului. Folosește-l atunci când clienții ar trebui să își gestioneze singuri crearea și întreținerea căsuțelor poștale pentru propriile site-uri.
+
+Din pagina de Account, clienții pot:
+
+1. Vizualiza conturile de e-mail conectate la abonamentul lor de e-mail/domeniul site-ului curent.
+2. Crea o căsuță poștală nouă atunci când produsul lor de e-mail permite conturi suplimentare.
+3. Schimba parola unei căsuțe poștale existente.
+4. Deschide furnizorii de webmail acceptați prin SSO sau printr-o autentificare cu link magic.
+
+Widgetul folosește sistemul de contexte curente al paginii de Account din Ultimate Multisite, astfel încât acțiunile sunt limitate la contextul contului pe care îl vizualizează clientul. Acest lucru împiedică clienții să gestioneze conturi de e-mail care aparțin altui abonament sau altui site.
+
+Dacă clientul nu vede panoul de email, verificați că are un **abonament activ la un produs Email**, că abonamentul a fost legat de domeniul unui site și că produsul are un furnizor configurat.
+
+## Oferirea unui plan de email gratuit unui client {#giving-a-customer-a-free-email-plan}
+
+Pentru a oferi unui client email fără a-l taxa, acordați mai întâi **dreptul de email**, apoi creați căsuța poștală sau permiteți clientului să o creeze.
+
+Opțiuni recomandate:
+
+* **Creați un produs de email gratuit**: setați prețul produsului de email ca gratuit/zero, apoi adăugați un abonament activ pentru acel client din **Ultimate Multisite > Memberships > Add Membership**. Selectați produsul de email și clientul. Abonamentele gratuite sunt pe viață până când sunt modificate sau anulate. Dacă abonamentul de email este menit să urmeze un site existent, asigurați-vă că este legat de contextul acelui site/domeniu.
+* **Folosiți o reducere de 100% sau un link de checkout gratuit**: lăsați clientul să treacă prin checkout, astfel încât Ultimate Multisite să creeze automat abonamentul de email și înregistrarea de plată.
+* **Creați o căsuță poștală ca administrator**: mergeți la **Ultimate Multisite > Email Accounts > Add Email Account** pentru a crea o căsuță poștală specifică la furnizor pentru un client. Acest lucru este util pentru suport, dar nu înlocuiește abonamentul la produsul de email care alimentează instrumentele de autoservire ale clientului din pagina de Account.
+
+Dacă doriți ca clientul să gestioneze singur căsuța poștală din pagina de cont, asigurați-vă că are un abonament activ de email pentru domeniu. O căsuță poștală a furnizorului creată manual fără acel abonament poate exista, dar clientul poate să nu vadă panoul de email de autoservire pentru ea.
+
+## Conturi create de administrator și „Fără număr de comandă” {#admin-created-accounts-and-no-order-number}
+
+Pagina de administrare **Email Accounts** creează sau editează o căsuță poștală la furnizor. Nu este primul pas pentru vânzarea sau acordarea unui plan de email.
+
+Când editați un cont de email, câmpul **Membership** caută abonamente Ultimate Multisite existente după numărul lor de referință/comandă. Dacă încercați să atribuiți un cont înainte ca clientul să aibă un abonament de email, este posibil să nu existe niciun număr de comandă de selectat.
+
+Folosiți în schimb această ordine a operațiunilor:
+
+1. Creați sau localizați abonamentul de email al clientului. Pentru achiziții, checkout face acest lucru. Pentru un plan gratuit, creați abonamentul manual din [Memberships](../../user-guide/administration/managing-memberships) sau trimiteți clientul printr-un checkout gratuit.
+2. Confirmați că abonamentul este activ și folosește un produs Email.
+3. Confirmați că abonamentul de email este legat de domeniul/furnizorul site-ului.
+4. Creați căsuța poștală din pagina de Account a clientului sau din **Ultimate Multisite > Email Accounts**.
+5. Dacă este necesar, editați înregistrarea căsuței poștale și atribuiți clientul, abonamentul și site-ul.
+
+Dacă aveți nevoie doar să creați o căsuță poștală la furnizor pentru client și nu aveți nevoie de gestionare prin autoservire din pagina de Account, contul creat de administrator poate fi suficient. Dacă doriți ca clientul să o vadă și să o gestioneze în Ultimate Multisite, creați și abonamentul de email.
+
+## Webmail SSO și autentificare prin Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO oferă clienților o acțiune directă **Deschide webmail** din pagina de Account. Când este acceptată de furnizorul activ, extensia solicită un URL de acces cu durată scurtă și redirecționează clientul în webmail fără a-i cere să copieze credențialele căsuței poștale.
 
 Comportamentul furnizorului poate varia:
 
-* Furnizorii cu API-uri native SSO pot crea o sesiune webmail autentificată direct.
-* Furnizorii cu suport pentru magic-link pot genera un link de login cu durată limitată.
-* Furnizorii fără suport SSO sau magic-link ar trebui să afișeze totuși detaliile cutiei poștale și acțiunile de gestionare a parolei, dar fără butonul webmail cu un singur click.
+* Furnizorii cu API-uri SSO native pot crea o sesiune webmail autentificată directă.
+* Furnizorii cu suport pentru magic-link pot genera un link de autentificare cu durată limitată.
+* Furnizorii fără suport SSO sau magic-link ar trebui să afișeze în continuare detaliile căsuței poștale și acțiunile de gestionare a parolei, dar fără buton webmail cu un singur clic.
 
-Activați accesul webmail doar pentru furnizorii pentru care ați configurat credențialele API necesare. Dacă acțiunea lipsește pentru un furnizor, confirmați mai întâi că furnizorul este activ, configurat și suportă link-uri de login webmail.
+Activați accesul webmail doar pentru furnizorii pentru care ați configurat credențialele API necesare. Dacă acțiunea lipsește pentru un furnizor, confirmați mai întâi că furnizorul este activ, configurat și acceptă linkuri de autentificare webmail.
 
-## Provisionare la Checkout
+## Provizionare la checkout {#checkout-provisioning}
 
-Addon-ul poate crea conturi de e-mail ale clienților ca parte a procesului de checkout. Acest lucru este util atunci când planul include o cutie poștală implicit sau când formularul de checkout colectează detalii despre contul de e-mail.
+Extensia provizionează **contextul abonamentului** de email în timpul checkout. Înregistrează furnizorul, limita de conturi, cota și domeniul site-ului, astfel încât clienții să își poată crea propriile nume de căsuțe poștale din pagina de Account după achiziție.
 
-Flux de implementare recomandat:
+Implementare recomandată:
 
-1. Configurați limitările furnizorului și ale planului înainte de a activa provisionarea la checkout.
-2. Testați o achiziție cu un produs de staging și confirmați că cutia poștală este creată după checkout.
-3. Revizuiți pagina de cont a clientului pentru a confirma că noua cutie poștală apare în widget-ul de e-mail.
-4. Confirmați acțiunile de schimbare a parolei și webmail înainte de a activa acest flux pentru produsele de producție.
+1. Configurați furnizorul și limitele produsului înainte de a oferi produsul de email.
+2. Testați o achiziție cu un produs de staging și confirmați că abonamentul de email este creat.
+3. Revizuiți pagina de Account a clientului pentru a confirma că widgetul **Email Accounts** apare pentru domeniu.
+4. Creați o căsuță poștală de test din widget.
+5. Confirmați acțiunile de schimbare a parolei și webmail înainte de a activa fluxul pentru produsele de producție.
 
-Dacă provisionarea eșuează, contul și membrii clientului pot exista, în timp ce cutia poștală necesită urmărirea administratorului. Verificați jurnalele de activitate Ultimate Multisite și jurnalele furnizorului înainte de a reporni procesul.
+Dacă provizionarea eșuează, contul clientului și abonamentul pot exista în continuare, în timp ce abonamentul de email sau căsuța poștală la furnizor necesită intervenția administratorului. Verificați jurnalele de activitate Ultimate Multisite și jurnalele furnizorului înainte de a reîncerca.
 
-## Redirecționatori de E-mail CyberPanel
+## Redirecționări de email CyberPanel {#cyberpanel-email-forwarders}
 
-Pentru rețelele bazate pe CyberPanel, versiunea 1.1.0 adaugă suport pentru redirecționatori de e-mail. Folosiți redirecționatorii atunci când clienții au nevoie de adrese precum `info@customer-domain.test` pentru a redirecționa e-mailurile către o altă cutie poștală, fără a crea o cutie poștală completă.
+Pentru rețelele bazate pe CyberPanel, versiunea 1.1.0 adaugă suport pentru redirecționări de email. Folosiți redirecționări când clienții au nevoie de adrese precum `info@customer-domain.test` pentru a redirecționa emailurile către alt inbox fără a crea o căsuță poștală completă.
 
-Înainte de a oferi redirecționatori, confirmați că integrarea CyberPanel este configurată și accesibilă. Consultați ghidul [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) pentru constantele necesare de gazdă, utilizator, parolă și pachet.
+Înainte de a oferi redirecționări, confirmați că integrarea CyberPanel este configurată și accesibilă. Consultați ghidul [Integrare CyberPanel](../../user-guide/administration/cyberpanel-integration) pentru hostul, numele de utilizator, parola și constantele de pachet necesare.
 
-## Changelog
+## Jurnal de modificări {#changelog}
 
-### Versiunea 1.1.0 - Lansată pe 2026-05-05
+### Versiunea 1.1.0 - Lansată pe 2026-05-05 {#version-110---released-on-2026-05-05}
 
-* Nou: SSO Webmail și login cu magic-link — clienții pot accesa webmail direct de pe contul lor cu autentificare cu un singur click.
-* Nou: Funcționalitatea de schimbare a parolei adăugată în widget-ul de gestionare a contului de e-mail.
-* Nou: Suport pentru redirecționatori de e-mail CyberPanel.
-* Nou: Widget de gestionare a e-mailurilor pe pagina de cont a clientului pentru crearea și gestionarea contului în auto-serviciu.
-* Nou: Crearea contului de e-mail al clientului integrată în fluxul de checkout pentru provisionare automată.
-* Fix: Hook-ul widget-ului de pagină de cont actualizat pentru a folosi modelul corect de înregistrare UMS.
-* Fix: Formularul Create Account înlocuit cu vanilla JS și ieșirea corectă a documentului HTML complet.
-* Fix: Widget-ul de gestionare a e-mailurilor folosește acum sistemul UMS currents pentru paginile de cont ale administratorilor.
-* Fix: Formularul de creare a contului de e-mail pentru administrator include câmpul de parolă și folosește Email_Account_Manager.
-* Fix: Spam-ul jurnalului per-solicitare eliminat din inițializarea Email_Account_Manager.
-* Îmbunătățit: Pagina de setări filtrează acum pentru a afișa doar furnizorii de e-mail activi și configurați.
+* Nou: Webmail SSO și autentificare prin magic-link — clienții pot accesa webmail direct din Account cu autentificare printr-un singur clic.
+* Nou: Funcționalitate de schimbare a parolei adăugată la widgetul de gestionare a conturilor de email.
+* Nou: Suport pentru redirecționări de email CyberPanel.
+* Nou: Widget de gestionare a emailului pe pagina Account a clientului pentru crearea și gestionarea conturilor în regim self-service.
+* Nou: Alocarea drepturilor pentru conturile de email ale clienților integrată în fluxul de checkout.
+* Remediere: Hook-ul widgetului de pe pagina Account a fost actualizat pentru a folosi modelul corect de înregistrare UMS.
+* Remediere: Formularul Create Account a fost înlocuit cu vanilla JS și output corect de document HTML complet.
+* Remediere: Widgetul de gestionare a emailului folosește acum sistemul de curente UMS pentru paginile Account de admin.
+* Remediere: Formularul de creare a conturilor de email de către admin include câmpul pentru parolă și folosește Email_Account_Manager.
+* Remediere: Spam-ul de logare per cerere a fost eliminat din inițializarea Email_Account_Manager.
+* Îmbunătățit: Pagina de setări filtrează acum pentru a afișa doar furnizorii de email activi și configurați.
 
-## Întrebări Frecvente
+## Întrebări frecvente {#frequently-asked-questions}
 
-## Clienții pot crea propriile conturi de e-mail?
+### Pot clienții să își creeze propriile conturi de email? {#can-customers-create-their-own-email-accounts}
 
-Da. Când widget-ul de cont al clientului este activat și planul permite conturi de e-mail, clienții pot crea și gestiona propriile cutii poștale de pe pagina de cont.
+Da. Când clientul are un abonament de email activ pentru un domeniu și produsul permite conturi suplimentare, clienții își pot crea și gestiona propriile căsuțe poștale din pagina Account.
 
-## Toți furnizorii suportă SSO Webmail?
+### Toți furnizorii acceptă webmail SSO? {#does-every-provider-support-webmail-sso}
 
-Nu. Suportul pentru SSO și magic-link depinde de furnizorul de e-mail activ. Furnizorii fără API de link de acces pot suporta totuși crearea de cutii poștale și schimbarea parolelor.
+Nu. Suportul pentru SSO și magic-link depinde de furnizorul de email activ. Furnizorii fără un API pentru link de acces pot accepta totuși crearea de căsuțe poștale și schimbarea parolelor.
 
-## Administratorii pot crea conturi de e-mail pentru clienți?
+### Pot administratorii să creeze conturi de email pentru clienți? {#can-administrators-create-email-accounts-for-customers}
 
-Da. Administratorii pot crea conturi de e-mail din interfața de administrare, inclusiv setarea parolei inițiale la crearea contului.
+Da. Administratorii pot crea conturi de email din interfața de admin, inclusiv setarea parolei inițiale la crearea contului. Pentru gestionarea în regim self-service de către client, asigurați-vă și că clientul are un abonament de email activ pentru domeniu.
 
-## Sunt redirecționatorii la fel ca și cutiile poștale?
+### Pot oferi gratuit un cont de email? {#can-i-give-an-email-account-away-for-free}
 
-Nu. O cutie poștală stochează e-mailuri și are credențiale de login. Un redirecționator redirecționează e-mailurile către o altă adresă și nu oferă o cutie poștală separată.
+Da. Creați un produs Email gratuit/cu preț zero și adăugați-l ca abonament activ pentru client sau lăsați clientul să finalizeze checkout cu o reducere de 100%. După ce abonamentul de email există, clientul sau un administrator poate crea căsuța poștală propriu-zisă.
+
+### De ce atribuirea unui cont de email cere un număr de comandă? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Câmpul Membership caută un abonament Ultimate Multisite existent după numărul său de referință/comandă. Dacă clientul nu a cumpărat un produs de email și nu ați creat manual un abonament de email, nu există niciun abonament/comandă de email de atribuit. Creați mai întâi abonamentul de email, apoi creați sau atribuiți căsuța poștală.
+
+### Redirecționările sunt același lucru cu căsuțele poștale? {#are-forwarders-the-same-as-mailboxes}
+
+Nu. O căsuță poștală stochează emailuri și are credențiale de autentificare. O redirecționare redirecționează emailurile către o altă adresă și nu oferă o inbox separată.

@@ -1,0 +1,144 @@
+---
+title: Ultimate AI Connector għal WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM iġib inferenza AI nattiva għall-browser fin-network multisite WordPress tiegħek. Iħaddem mudelli kbar tal-lingwa kompletament fil-browser billi juża WebLLM u l-engine MLC — l-ebda API keys, l-ebda sejħiet esterni, l-ebda data ma titlaq mill-apparat tal-utent.
+
+## Karatteristiċi Ewlenin {#key-features}
+
+- **Inferenza fuq in-naħa tal-browser**: LLM jaħdem lokalment fil-browser tal-viżitatur permezz ta' WebLLM/MLC — l-ebda GPU tas-server meħtieġa
+- **Widget taċ-chat li jżomm f'wiċċ l-ilma**: Utenti logged-in jistgħu jagħtu prompt lill-LLM fuq in-naħa tal-browser direttament mill-front end
+- **Indikatur tal-istatus fl-admin-bar**: Status f'ħin reali tal-engine WebLLM viżibbli fil-bar tal-admin ta' WordPress
+- **Runtime SharedWorker**: Diversi tabs tal-browser jaqsmu sessjoni waħda tal-GPU minflok jikkompetu għar-riżorsi tal-GPU
+- **Middleware apiFetch**: Talbiet WordPress REST li jaqblu mal-mudell AI Client SDK jiġu mgħoddija b'mod trasparenti lill-broker WebLLM lokali — l-ebda vjaġġ HTTP loopback
+- **UI tas-settings tal-widget**: Settings tal-panel tal-connector biex tixgħel jew titfi l-widget taċ-chat u tikkonfigura l-imġiba tal-auto-prompt
+- **Cache IndexedDB**: Downloads tal-piżijiet tal-mudell jibqgħu jeżistu minkejja redirects tas-CDN li jkissru l-path default tal-Cache API
+- **Integrazzjoni tal-filtru wpai**: Jaqbad mal-filtru `wpai_preferred_text_models` sabiex il-karatteristika AI Experiments tgħaddi lill-engine tal-browser meta tkun ikkonfigurata
+
+## Rekwiżiti {#requirements}
+
+- WordPress 5.3 jew ogħla
+- PHP 7.4 jew ogħla
+- Plugin Ultimate Multisite (attiv)
+- Browser b'appoġġ WebGPU (Chrome 113+, Edge 113+, jew Firefox Nightly b'WebGPU attivat)
+
+## Installazzjoni {#installation}
+
+1. Tella' l-fajls tal-addon fid-direttorju `/wp-content/plugins/` tiegħek
+2. Attiva l-plugin permezz tal-menu 'Plugins' f'WordPress
+3. Mur lejn **Ultimate Multisite → AI Connector** biex tikkonfigura l-addon
+
+## Widget taċ-Chat li Jżomm f'Wiċċ l-Ilma {#floating-chat-widget}
+
+Il-widget taċ-chat li jżomm f'wiċċ l-ilma jippermetti lil kull utent logged-in jinteraġixxi mal-LLM fuq in-naħa tal-browser direttament mill-front end tiegħek, mingħajr ma jitlaq mill-paġna li jkun fuqha.
+
+### X'Jagħmel {#what-it-does}
+
+Meta jkun attivat, ikona taċ-chat tidher fir-rokna ta' kull paġna tal-front-end għal utenti logged-in. Meta tikklikkja l-ikona jinfetaħ panel taċ-chat fejn l-utent jista' jikteb prompts u jirċievi tweġibiet mill-mudell WebLLM li jkun qed jaħdem lokalment. Minħabba li l-mudell jaħdem kompletament fil-browser, it-tweġibiet huma privati u ma jinvolvu l-ebda proċessar fuq in-naħa tas-server.
+
+### Indikatur tal-Istatus fl-Admin-Bar {#admin-bar-status-indicator}
+
+Il-bar tal-admin ta' WordPress tinkludi indikatur tal-istatus li juri l-istat attwali tal-engine WebLLM:
+
+| Status | Tifsira |
+|--------|---------|
+| **Qed jitgħabba** | L-engine MLC qed jiġi inizjalizzat jew qed iniżżel il-piżijiet tal-mudell |
+| **Lest** | Il-mudell huwa mgħobbi u disponibbli għall-inferenza |
+| **Inattiv** | L-engine huwa mgħobbi iżda t-tab SharedWorker mhix attiva |
+| **Żball** | L-engine naqas milli jiġi inizjalizzat — iċċekkja l-console tal-browser għad-dettalji |
+
+L-indikatur jiġi aġġornat f'ħin reali mingħajr ma jkun meħtieġ tagħbija mill-ġdid tal-paġna.
+
+### Kif Tattiva jew Tiddiżattiva l-Widget {#how-to-enable-or-disable-the-widget}
+
+1. Mur lejn **Ultimate Multisite → AI Connector** fl-admin tan-network
+2. Sib il-panel **Connector**
+3. Ixgħel jew itfi **Attiva l-widget taċ-chat li jżomm f'wiċċ l-ilma**
+4. Issejvja s-settings
+
+Il-widget jista' wkoll jiġi attivat jew diżattivat għal kull sit mill-admin tas-sit innifsu jekk l-amministratur tan-network ikun ta dik il-kapaċità.
+
+## Settings tal-Widget {#widget-settings}
+
+Il-panel Connector f'**Ultimate Multisite → AI Connector** fih is-settings li ġejjin għall-widget taċ-chat li jżomm f'wiċċ l-ilma:
+
+### Attiva l-Widget taċ-Chat li Jżomm f'Wiċċ l-Ilma {#enable-floating-chat-widget}
+
+Jixgħel jew jitfi l-widget taċ-chat għan-network kollu. Meta jkun diżattivat, il-widget ma jidhirx fuq l-ebda paġna tal-front-end, irrispettivament mir-rwol tal-utent.
+
+**Default:** Mitfi
+
+### Imġiba tal-Auto-Prompt {#auto-prompt-behaviour}
+
+Jikkontrolla jekk il-widget taċ-chat jibgħatx prompt awtomatikament meta utent jiftħu.
+
+| Għażla | Imġiba |
+|--------|-----------|
+| **Diżattivat** | Il-widget jinfetaħ għal chat vojta — l-utent jikteb il-prompt tiegħu stess |
+| **Kuntest tal-paġna** | Il-widget jinfetaħ bi prompt mimli minn qabel ibbażat fuq it-titlu u l-kontenut tal-paġna attwali |
+| **Prompt personalizzat** | Il-widget jinfetaħ bi prompt personalizzat li tiddefinixxi fil-field hawn taħt |
+
+Meta jkun issettjat għal **Prompt personalizzat**, jidher field ta' test addizzjonali fejn tista' ddaħħal it-test tal-prompt default. Jappoġġja varjabbli bażiċi tat-template:
+
+- `{site_name}` — l-isem tas-sit attwali
+- `{page_title}` — it-titlu tal-paġna attwali
+- `{user_display_name}` — l-isem tal-wiri tal-utent logged-in
+
+**Default:** Diżattivat
+
+## Runtime SharedWorker {#sharedworker-runtime}
+
+Il-verżjoni 1.1.0 tintroduċi runtime SharedWorker għall-engine MLC. Qabel, kull tab tal-browser li kienet tuża WebLLM kienet tgħabbi l-istanza tagħha stess tal-mudell, tikkompeti għall-memorja tal-GPU u tikkawża problemi ta' prestazzjoni fuq apparati b'VRAM limitata.
+
+Bir-runtime SharedWorker, tab waħda taġixxi bħala l-host tal-engine. It-tabs l-oħra kollha jikkomunikaw ma' dik l-istanza waħda permezz tal-kanal tal-messaġġi tal-worker. Ir-riżultat:
+
+- Sessjoni waħda tal-GPU maqsuma bejn it-tabs miftuħa kollha
+- Tweġibiet aktar mgħaġġla ladarba l-mudell ikun mgħobbi (l-ebda inizjalizzazzjoni ripetuta)
+- Użu aktar baxx tal-memorja massima fuq l-apparat
+
+SharedWorker huwa trasparenti għall-utenti. L-indikatur tal-istatus fl-admin-bar dejjem jirrifletti l-istat tal-engine kondiviż, mhux tat-tab individwali.
+
+## Middleware apiFetch {#apifetch-middleware}
+
+L-addon jinstalla middleware `apiFetch` li jinterċetta talbiet WordPress REST API li jaqblu mal-mudell AI Client SDK. Minflok jagħmlu talba HTTP loopback lis-server, dawn it-talbiet jiġu mgħoddija direttament lill-broker WebLLM lokali li jkun qed jaħdem fis-SharedWorker.
+
+Dan ifisser li plugins u themes li jużaw l-API standard `apiFetch` ta' WordPress biex isejħu endpoints AI se jibbenefikaw awtomatikament mill-mudell fuq in-naħa tal-browser meta jkun disponibbli, mingħajr ma jkunu meħtieġa bidliet fil-code.
+
+## Hooks u Filtri {#hooks-and-filters}
+
+### Filtri {#filters}
+
+- `wpai_preferred_text_models` — Irreġistra l-magna WebLLM tal-browser bħala mudell ta’ test preferut. L-addon jaqbad ma’ dan il-filter awtomatikament meta l-magna tkun ikkonfigurata u disponibbli.
+- `ultimate_webllm_widget_enabled` — Ibdel l-istat attivat tal-widget għal utent jew kuntest speċifiku. Irritorna `true` jew `false`.
+- `ultimate_webllm_auto_prompt` — Immodifika t-test tal-auto-prompt qabel ma jintbagħat lill-widget. Jirċievi s-string tal-prompt u l-oġġett `WP_Post` kurrenti.
+
+## Soluzzjoni tal-problemi {#troubleshooting}
+
+### Il-widget taċ-chat ma jidhirx {#the-chat-widget-does-not-appear}
+
+- Ikkonferma li l-utent huwa logged in — il-widget jintwera biss lil utenti awtentikati
+- Iċċekkja li **Enable floating chat widget** huwa mixgħul fil-panel tal-Connector
+- Ivverifika li l-browser tal-utent jappoġġja WebGPU (ara r-Rekwiżiti hawn fuq)
+
+### L-indikatur tal-admin-bar juri "Żball" {#the-admin-bar-indicator-shows-error}
+
+Iftaħ il-console tal-iżviluppatur tal-browser (F12) u fittex żbalji relatati ma’ WebLLM. Kawżi komuni:
+
+- Il-browser ma jappoġġjax WebGPU
+- It-tniżżil tal-piżijiet tal-mudell falla — iċċekkja l-konnettività tan-network u pprova tnaddaf il-cache tal-IndexedDB fl-għodod tal-iżviluppatur tal-browser (Application → IndexedDB)
+- Estensjoni tal-browser qed timblokka s-SharedWorker
+
+### Il-piżijiet tal-mudell jitniżżlu kull darba {#model-weights-download-every-time}
+
+L-addon juża IndexedDB bħala l-backend tal-cache biex jiżgura li l-piżijiet tal-mudell jibqgħu wara redirects tas-CDN. Jekk il-piżijiet qed jerġgħu jitniżżlu f’kull żjara, iċċekkja li IndexedDB mhux qed jitnaddaf minn setting tal-privatezza tal-browser jew estensjoni.
+
+## Kronoloġija tal-bidliet {#changelog}
+
+Ara [Kronoloġija tal-bidliet](./changelog) għall-istorja sħiħa tal-verżjonijiet.

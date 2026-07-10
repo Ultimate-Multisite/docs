@@ -4,11 +4,11 @@ title: フィルタ - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 開発者が最終値をフィルタリングし、新しい処理ケースを追加できるようにします。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
@@ -16,14 +16,14 @@ _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 | $meta_type | `string` | 取得するメタデータのタイプ。 |
 | $meta_key | `string` | メタフィールドの名前。 |
 
-### Since
+### Since {#since}
 
 - 1.4.0
 
-### Source
+### Source {#source}
 
 Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) at line 93
 
-## Returns
+## Returns {#returns}
 
 新しいデフォルト値。

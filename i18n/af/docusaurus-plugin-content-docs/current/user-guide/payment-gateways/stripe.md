@@ -3,19 +3,19 @@ title: Installeer Stripe
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Opstel van die Stripe Gateway (v2)
+# Opstel van die Stripe Gateway (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
 Jy kan tot vier betalingsmetodes op ons betalingsinstellingsblad aktiveer: Stripe, Stripe Checkout, PayPal en Handmatig. In hierdie artikel sal ons kyk hoe om te integreer met **Stripe**.
 
-## Aktivering van Stripe
+## Aktivering van Stripe {#enabling-stripe}
 
 Om Stripe as 'n beskikbare betalingshek op jou netwerk te aktiveer, gaan na **Ultimate Multisite > Settings > Payments** en merk die omskakelaar langs **Stripe** of **Stripe Checkout** aan in die Aktiewe Betalingshekke afdeling.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe teenoor Stripe Checkout:
+### Stripe teenoor Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Hierdie metode sal 'n plek wys om die kredietkaartnommer tydens die afrekening in te voer.
 
@@ -47,7 +47,7 @@ Kopieer die waarde van die **Publishable key** en **Secret key**, uit die **Toke
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## Opstel van Stripe Webhook
+## Opstel van Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe stuur webhook-gebeurtenisse wat Ultimate Multisite laat weet enige keer wanneer 'n gebeurtenis op **jou Stripe-rekening** plaasvind.
 

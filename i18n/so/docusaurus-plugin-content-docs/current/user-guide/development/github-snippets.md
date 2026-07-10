@@ -3,7 +3,7 @@ title: Qaybaha GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# sida isticdaalka Ultimate Multisite snippets-kaaga ku jira GitHub repository-gaaga
+# sida isticdaalka Ultimate Multisite snippets-kaaga ku jira GitHub repository-gaaga {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 GitHub repository-gaagga waxaa ku jira code snippets ah oo ay si badan u codsadaan isticmaalayaasha Ultimate Multisite ee doonaya inay ku dariyaan waxyaabo yaryar sida ku darid script-ka Google Analytics bogagga isdiiwaangelinta ama qarinta meta box-ka laga soo qaado admin dashboard-ka.
 
@@ -19,7 +19,7 @@ Waxaa jira 2 hab oo aad ku dari karto koodhka:
 
   2. Must-Use Plugins (mu-plugins).
 
-# sida loo dariyo snippet-ka faylka functions.php ee theme-kaaga.
+# sida loo dariyo snippet-ka faylka functions.php ee theme-kaaga. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Tagashada admin dashboard-ka WordPress Network-kaaga oo aando Themes > Theme Editor (Waxaad arki doontaa screenshot-ka hoose).
 
@@ -29,7 +29,7 @@ Waxaa jira 2 hab oo aad ku dari karto koodhka:
 
 <!-- Screenshot aanu heli karin: WordPress Theme Editor oo muujinaya habka lagu wax ka beddelayo faylka functions.php -->
 
-# sida loo sameeyo Must-Use Plugins (mu-plugins)
+# sida loo sameeyo Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress wuxuu leeyahay astaamaha kuu oggolaanaya inaad soo dejiso habab cusub oo la yiraahdo "Must-Use Plugins", ama si kooban "mu-plugins".
 

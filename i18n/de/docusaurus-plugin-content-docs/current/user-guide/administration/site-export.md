@@ -3,27 +3,27 @@ title: Site Export
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Site Export
+# Site Export {#site-export}
 
 Die Admin-Seite **Site Export** ermöglicht es Netzwerkadministratoren, eine einzelne Website oder das gesamte Netzwerk in ein herunterladbares Archiv zu verpacken. Dies ist nützlich für Migrationen, Backups oder wenn Sie die Daten an einen Dritten übergeben müssen.
 
-## Exportieren einer einzelnen Website
+## Exportieren einer einzelnen Website {#exporting-one-site}
 
 Gehen Sie zu **Ultimate Multisite > Site Export** und wählen Sie **Generate new Site Export**. Wählen Sie die Unterseite aus, die Sie exportieren möchten, und entscheiden Sie dann, ob das Archiv auch Uploads, Plugins und Themes enthalten soll.
 
 Sobald der Export abgeschlossen ist, laden Sie die ZIP-Datei aus der Liste **Existing Exports** herunter. Die Export-ZIPs enthalten jetzt ein selbststartendes `index.php` und eine `readme.txt`, sodass das Archiv auf einem neuen Host hochgeladen und gestartet werden kann, ohne vorher ein separates Import-Plugin installieren zu müssen.
 
-## Exportieren des gesamten Netzwerks
+## Exportieren des gesamten Netzwerks {#exporting-the-whole-network}
 
 Verwenden Sie auf der Site Export Seite **Network Export**, wenn Sie ein einziges Archiv benötigen, das alle Unterseiten des Netzwerks enthält. Dies ist nützlich vor Host-Migrationen, bei Disaster-Recovery-Übungen oder beim Wiederaufbau von Staging-Umgebungen, bei denen jede Unterseite zusammengehören muss.
 
 Da ein Netzwerk-Export viel größer sein kann als ein Einzel-Site-Export, führen Sie diesen bitte während einer Zeit mit geringem Datenverkehr durch und stellen Sie sicher, dass der Zielspeicher genügend freien Platz für Uploads, Plugins, Themes und die erzeugten ZIP-Dateien hat.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Mit Ultimate Multisite 2.12.0 kann Site Exporter **network import bundles** erstellen – spezielle Archive, die für eine optimierte Wiederherstellung des gesamten Netzwerks konzipiert sind. Ein Netzwerk-Import-Bundle enthält alle notwendigen Dateien und Metadaten, um mehrere Websites auf einer neuen Netzwerkinstallation wiederherzustellen.
 
-#### Ein Network Import Bundle erstellen
+#### Ein Network Import Bundle erstellen {#generating-a-network-import-bundle}
 
 1. Gehen Sie zu **Ultimate Multisite > Site Export**
 2. Klicken Sie auf **Generate new Network Export**
@@ -32,7 +32,7 @@ Mit Ultimate Multisite 2.12.0 kann Site Exporter **network import bundles** erst
 5. Klicken Sie auf **Generate**
 6. Laden Sie das Bundle ZIP aus der Liste **Existing Exports** herunter
 
-#### Wiederherstellen aus einem Network Import Bundle
+#### Wiederherstellen aus einem Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 Um Websites aus einem Netzwerk-Import-Bundle wiederherzustellen:
 
@@ -52,7 +52,7 @@ Network import bundles bewahren:
 - Mediendateien (falls im Bundle enthalten)
 - Benutzerdefinierte Datenbanktabellen und Daten
 
-## Installation eines selbststartenden Export-ZIPs
+## Installation eines selbststartenden Export-ZIPs {#installing-a-self-booting-export-zip}
 
 Um ein selbststartendes ZIP auf einem neuen Host wiederherzustellen:
 

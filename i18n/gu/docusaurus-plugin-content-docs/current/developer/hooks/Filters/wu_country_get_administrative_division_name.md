@@ -4,11 +4,11 @@ title: ફિલ્ટર - wu_country_get_administrative_division_name
 sidebar_label: wu_country_get_administrative_division_name
 _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 ---
-# Filter: wu_country_get_administrative_division_name
+# Filter: wu_country_get_administrative_division_name {#filter-wucountrygetadministrativedivisionname}
 
 દેશના વહીવટી પેટા-વિભાગોનું સુંદર નામ પાછું આપે છે.
 
-## પરિમાણો (Parameters)
+## પરિમાણો (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -18,12 +18,12 @@ _i18n_hash: c0ef741f2ea438861e773d35fcb5900d
 | $ucwords | `bool` | જો આપણે શબ્દોને મોટા અક્ષરો (uppercase) માં કરવા માંગતા હોઈએ. |
 | $current_country | `\WP_Ultimo\Country\Country` | વર્તમાન ક્લાસની ઇન્સ્ટન્સ. |
 
-### ક્યારથી (Since)
+### ક્યારથી (Since) {#since}
 
 - 2.0.11
-### સ્ત્રોત (Source)
+### સ્ત્રોત (Source) {#source}
 
 [`inc/country/class-country.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/country/class-country.php#L250) માં લાઇન 250 પર વ્યાખ્યાયિત છે.
 
-## પરત કરે છે (Returns)
+## પરત કરે છે (Returns) {#returns}
 સુધારેલું વિભાગનું નામ.

@@ -4,23 +4,23 @@ title: فیلتر - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# فیلتر: ultimate_multisite_content_sync_url
+# فیلتر: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 این فیلتر به توسعه‌دهندگان اجازه می‌دهد تا مسیر نسبی (relative path) به ریشه پلاگین را مدیریت کنند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | نام | نوع | توضیحات |
 |------|------|-------------|
 | $dir | `string` | مسیری که نسبت به ریشه پلاگین می‌خواهید به آن دسترسی پیدا کنید. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 1.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) در خط ۵۲ تعریف شده است.
 
 
-## مقدار بازگشتی
+## مقدار بازگشتی {#returns}
 مسیر نسبی نسبت به ریشه پلاگین.

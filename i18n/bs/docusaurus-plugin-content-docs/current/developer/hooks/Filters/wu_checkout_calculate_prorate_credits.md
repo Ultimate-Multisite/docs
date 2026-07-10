@@ -4,20 +4,20 @@ title: Filter - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filter: wu_checkout_calculate_prorate_credits
+# Filter: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
 
 Omogućava programerima pluginova da mijenjaju vrijednost kredita.
 
-## Parametri
+## Parametri {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $credit | `int` | Iznos kredita. |
 | $cart | `self` | Ovaj objekat korpe. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Definisano u [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) na liniji 1287

@@ -1,138 +1,156 @@
 ---
-title: Gwylio eich ffurf cyfrannu
+title: Addasu eich ffurflen gofrestru
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Customizing eich Ffurfwrdd Cyflwyniad
+# Addasu eich Ffurflen Gofrestru {#customizing-your-registration-form}
 
-Iechon eich rheol yn ddeall yn unig o'r holl SaaSau a cael eu gweithredu ar ffurfwrdd WordPress, mae Ultimate Multisite yn sylw i chi allu gwneud eich pagedd cyflwyniad a cyflwyniad gyda'r ffurfwrdd **Checkout Forms** ein.
+I wneud i’ch rhwydwaith edrych yn unigryw o’i gymharu â’r holl SaaS eraill sydd wedi’u hadeiladu ar blatfform WordPress, mae Ultimate Multisite yn caniatáu i chi addasu eich tudalennau cofrestru a mewngofnodi gyda’n nodwedd **Checkout Forms**.
 
-Er bod nhw'n ffordd einfailig a chydweithiol i gymryd ysbrydion gyda'r ddefnyddio ddethau gwahanol pan fyddwch yn ceisio newid cleiention newydd, mae hi'n cael eu defnyddio'n fwyaf i creu ffurfwrdd cyflwyniad personol. Mae'r ail ddefnyddi hwn yn dangos i chi sut allwch chi wneud hynny.
+Er eu bod yn ffordd hawdd a hyblyg o arbrofi â gwahanol ddulliau wrth geisio trosi cwsmeriaid newydd, cânt eu defnyddio’n bennaf i greu ffurflenni cofrestru personol. Nod yr erthygl hon yw dangos i chi sut y gallwch wneud hynny.
 
-## Pagedd cyflwyniad a chwarae:
+## Tudalennau mewngofnodi a chofrestru: {#login-and-registration-pages}
 
-Ar ôl cael eich rhannu Ultimate Multisite, mae hi’n creu pagedd cyflwyniad a chwarae newydd ar eich safle canol yn awtomatig. Gallwch gwahanu'r pagedd hyn yn unrhyw pryd gan fynd i'r pagedd **Ultimate Multisite > Settings > Login & Registration**.
+Wrth osod Ultimate Multisite, mae’n creu tudalennau mewngofnodi a chofrestru personol yn awtomatig ar eich prif wefan. Gallwch newid y tudalennau diofyn hyn unrhyw bryd drwy fynd i’ch tudalen **Ultimate Multisite > Settings > Login & Registration**.
 
-![Pagedd setegau cyflwyniad a chwarae](/img/config/settings-general.png)
+![Tudalen gosodiadau Mewngofnodi a Chofrestru](/img/config/settings-general.png)
 
-Dyma'r gweld cyfan o'r pagedd setegau cyflwyniad a chwarae:
+Dyma olwg lawn ar y dudalen gosodiadau mewngofnodi a chofrestru:
 
-![Pagedd setegau cyflwyniad a chwarae yn llawn](/img/config/settings-login-registration-full.png)
+![Tudalen lawn gosodiadau Mewngofnodi a Chofrestru](/img/config/settings-login-registration-full.png)
 
-Gwylio'n ddefnyddio pob un o'r opsiynau sy gallwch chi gwahanu ar y pagedd **Login & Registration**:
+Gadewch i ni edrych ar bob un o’r opsiynau y gallwch eu haddasu ar y dudalen **Login & Registration**:
 
-  * **Enable registration (Gofal cyflwyniad):** Mae'r opsiwn hwn yn chwanegu neu ddifynnu'r cyflwyniad ar eich rheol. Os mae hi wedi cael ei ddwynio allan, nid yw'r cleiention yn gallu cyflwyni a chwarae i'ch cynlluniau.
+  * **Galluogi cofrestru:** Bydd yr opsiwn hwn yn galluogi neu’n analluogi cofrestru ar eich rhwydwaith. Os caiff ei ddiffodd, ni fydd eich cwsmeriaid yn gallu cofrestru na thanysgrifio i’ch cynhyrchion.
 
-  * **Enable email verification (Gofal cyflwyniad e-bost):** Os mae'r opsiwn hwn wedi cael ei ddwynio allan, bydd y cleiention sy'n chwarae am plan rhanbarth neu plan gyda phroses weithredol bydd yn cael e-bost cyflwyniad ac byddant yn angen i ddarganfod ar y linc cyflwyniad i gael eu safleoedd aros.
+  * **Galluogi dilysu e-bost:** Os caiff yr opsiwn hwn ei droi ymlaen, bydd cwsmeriaid sy’n tanysgrifio i gynllun am ddim neu gynllun taledig gyda chyfnod prawf yn derbyn e-bost dilysu a bydd angen iddynt glicio ar y ddolen ddilysu er mwyn i’w gwefannau gael eu creu.
 
-* **Pagadu cyfrifolion (Default registration page):** Mae hyn y peidiad cyfrifolion ar gyfer cyfrifolion newydd. Mae'r peidiad hwn angen i'w rhoi ar eich gwefan a fydd â ffurf cyfrifolion (ganid agor yn cael ei gweld hefyd) - lle bydd ychwanegwyr eich cynrychioli eich cynnyrchau. Gallwch creu pethau cyfrifolion a ffurfiadau cheictw (checkout forms) am gyfyngedig chi eisiau, ond cofio i rhoi'r shortcode cheictw ar y peidiad cyfrifolion, er ei ddim yn cael hynny, nid yw'n cael ei gweld.
+  * **Tudalen gofrestru ddiofyn:** Dyma’r dudalen ddiofyn ar gyfer cofrestru. Mae angen i’r dudalen hon fod wedi’i chyhoeddi ar eich gwefan a bod â ffurflen gofrestru (a elwir hefyd yn ffurflen dalu) - lle bydd eich cleientiaid yn tanysgrifio i’ch cynhyrchion. Gallwch greu cymaint o dudalennau cofrestru a ffurflenni talu ag y dymunwch, cofiwch roi cod byr y ffurflen dalu ar y dudalen gofrestru, fel arall ni fydd yn ymddangos.
 
-  * **Defnyddio peidiad cyfrifolion (Use custom login page):** Mae'r opsiwn hwn yn gallu chi defnyddio peidiad cyfrifolion wedi'i chysylltu, ar gyfer peidiad cyfrifolion allan y peidiad wp-login.php fel ddefnyddiol. Os mae'r opsiwn hwn yn cael ei gynnwys, gallwch ddewis y peidiad a fydd yn cael ei ddefnyddio ar gyfer y cyfrifolion ar **Peidiad cyfrifolion cyffredinol (Default login page)** (ar gael isel ymlaen).
+  * **Defnyddio tudalen mewngofnodi bersonol:** Mae’r opsiwn hwn yn caniatáu i chi ddefnyddio tudalen mewngofnodi wedi’i haddasu, yn hytrach na’r dudalen wp-login.php ddiofyn. Os caiff yr opsiwn hwn ei droi ymlaen, gallwch ddewis pa dudalen fydd yn cael ei defnyddio ar gyfer mewngofnodi yn yr opsiwn **Default login page** (yn union oddi tano).
 
-  * **Gwylio'r llwybr cyfrifolion angen (Obfuscate the original login url (wp-login.php))**: Os ydych chi eisiau gwneud y llwybr cyfrifolion angen yn gwbl, gallwch gynnwys y opsiwn hwn. Mae hyn yn ddefnyddiol i'w roedd brasterau (brute-force attacks) i'w droi. Os mae'r opsiwn hwn yn cael ei chynllunio, bydd Ultimate Multisite yn dangos eror 404 pan fydd ybain yn ceisio cyffredin â'r lwybr wp-login.php angen.
+  * **Cuddio’r url mewngofnodi gwreiddiol (wp-login.php)** : Os ydych am guddio’r URL mewngofnodi gwreiddiol, gallwch droi’r opsiwn hwn ymlaen. Mae hyn yn ddefnyddiol i atal ymosodiadau brute-force. Os yw’r opsiwn hwn wedi’i alluogi, bydd Ultimate Multisite yn dangos gwall 404 pan fydd defnyddiwr yn ceisio cyrchu’r ddolen wp-login.php wreiddiol
 
-  * **Gofio'r cyfrifolion sydd yn cael eu cyflwyno (Force synchronous site publication)**: Ar ôl i'w cynrychioli chwaraewr ar peth ar y rheol, mae'r peidiad newydd sydd yn cael ei ddefnyddio angen i fod yn llwybr peidiad gwefan neu. Mae'r proses cyfrifolion yn digwydd drwy Job Queue, yn asgynol (asynchronously). Gallwch ymlaen y opsiwn hwn i'w gofio bod y cyfrifolion yn digwydd yn yr un gyfle fel y cynrychioliad.
+  * **Gorfodi cyhoeddi gwefan yn gydamserol:** Ar ôl i gwsmer danysgrifio i gynnyrch ar rwydwaith, mae angen trosi’r wefan newydd sydd ar y gweill yn wefan rwydwaith go iawn. Mae’r broses gyhoeddi yn digwydd drwy Job Queue, yn anghydamserol. Galluogwch yr opsiwn hwn i orfodi’r cyhoeddi i ddigwydd yn yr un cais â’r cofrestru.
 
-Mae'n gweld ychwanegau eraill sydd yn parhaol i'r proses cyfrifolion a chwaraewr. Mae'n cael eu gweld isel ar **Opsiadau eraill (Other options)** ar yr un peidiad cyfrifolion a chwaraewr:
+Nawr, gadewch i ni weld opsiynau eraill sy’n dal yn berthnasol i’r broses mewngofnodi a chofrestru. Maent yn union o dan **Opsiynau eraill** ar yr un dudalen Mewngofnodi a chofrestru:
 
-  * **Rol cyffredinol (Default role):** Mae'r rol y mae eich chwaraewr yn cael ar ei gwefan ar ôl y proses cynrychioliad.
+  * **Rôl ddiofyn:** Dyma’r rôl fydd gan eich cwsmeriaid ar eu gwefan ar ôl y broses gofrestru.
 
-* **Gofalwch Jumper:** Mae'r Gofalwch (Jumper) yn sylw'r cyffredinol o'r admin area. Mae'r Jumper yn sylw i'r adminau i ddod yn gyflym i ddefnyddio screenau Ultimate Multisite, obydau cyd-llwybr (network objects), a destynau eraill sydd wedi'u chynllunio heb gwesoio drwy gydol y menu. Troswch ef os ydych chi eisiau gwahaniaeth i'r ffurf cyflym hwn o ddefnyddio o'r gyfnod admin.
+  * **Galluogi Jumper:** Yn galluogi llwybr byr Jumper yn yr ardal weinyddu. Mae Jumper yn gadael i weinyddwyr neidio’n gyflym i sgriniau Ultimate Multisite, gwrthrychau rhwydwaith, a chyrchfannau eraill a gefnogir heb bori drwy bob dewislen. Diffoddwch ef os yw’n well gennych guddio’r offeryn llywio cyflym hwnnw o’r rhyngwyneb gweinyddu.
 
-* **Ychwanegu benau i'r safle cyflym hefyd:** Bydd ychwanegu'r opsiwn hwn yn ychwanegu'r benau i'r safle cyflym o'r safle main eich rheini ar ôl y proses cyfathrebu. Os ydych chi'n sylw'r opsiwn hwn, bydd opsiwn i setio'r **rol cyffredinol** (default role) y benau hyn ar eich gwefan hefyd yn dangos osodol isel.
+  * **Ychwanegu defnyddwyr i’r brif wefan hefyd:** Bydd galluogi’r opsiwn hwn hefyd yn ychwanegu’r defnyddiwr at brif wefan eich rhwydwaith ar ôl y broses gofrestru. Os galluogwch yr opsiwn hwn, bydd opsiwn i osod **rôl ddiofyn** y defnyddwyr hyn ar eich gwefan hefyd yn ymddangos yn union oddi tano.
 
-* **Gofalwch cyfathrebu amserol:** Mae'n sylw i benau i gael cyfathrebu mewn safleoedd eraill o'r rheini eich network gyda'r uniad cyfathrebu fel email unig. Os ydych chi'n sylw'r opsiwn hwn yn off, nid yw eich cydweithwyr yn gallu creu benau ar wefanau eraill sydd ar gweiniant eich rheini gyda'r uniad cyfathrebu fel email unig.
+  * **Galluogi cyfrifon lluosog:** Caniatáu i ddefnyddwyr gael cyfrifon mewn gwahanol wefannau ar eich rhwydwaith gyda’r un cyfeiriad e-bost. Os yw’r opsiwn hwn i ffwrdd, ni fydd eich cwsmeriaid yn gallu creu cyfrif ar wefannau eraill sy’n rhedeg ar eich rhwydwaith gyda’r un cyfeiriad e-bost.
 
-Ac mae hyn i gyd yn y opsiynau sydd wedi'u chynllunio sydd â'r cyflwyniad a gyfrannu! Peidiwch â hoffi'r seteffau eich ar ôl i ddefnyddio eu.
+A dyna’r holl opsiynau sy’n ymwneud â mewngofnodi a chofrestru y gallwch eu haddasu! Peidiwch ag anghofio cadw eich gosodiadau ar ôl i chi orffen eu golygu.
 
-## Defnyddio ffurf cyfathrebu amserol amserol:
+## Defnyddio ffurflenni cofrestru lluosog: {#using-multiple-registration-forms}
 
-Mae Ultimate Multisite 2.0 yn cynnig redactor ffurf cyfathrebu (checkout form editor) sy'n sylw i chi i creu pethau cyfathrebu nawr yr ydych eisiau, gyda chyflenau cyffredinol, cynlluniau a chwarae ar gael, sns.
+Mae Ultimate Multisite 2.0 yn cynnig golygydd ffurflen dalu sy’n caniatáu i chi greu cymaint o ffurflenni ag y dymunwch, gyda gwahanol feysydd, cynhyrchion ar gynnig, ac ati.
 
-Mae pagedd cyfathrebu (login page) a pagedd cyfathrebu (registration page) wedi'u cynnwys gyda shortcodes: **[wu_login_form]** ar pagedd cyfathrebu a **[wu_checkout]** ar pagedd cyfathrebu. Gallwch chi roi chynlluniau eraill i'r pagedd cyfathrebu gan ddefnyddio neu creu ffurfau cyfathrebu (checkout forms).
+Mae’r tudalennau mewngofnodi a chofrestru ill dwy wedi’u hymgorffori gyda chodau byr: **[wu_login_form]** ar y dudalen mewngofnodi a**[wu_checkout]** ar gyfer y dudalen gofrestru. Gallwch addasu’r dudalen gofrestru ymhellach drwy adeiladu neu greu ffurflenni talu.
 
-I dod o hyd i'r fäith hon, mynd i'r menu **Checkout Forms**, ar y llawr o'r sidebar.
+I gyrchu’r nodwedd hon, ewch i’r ddewislen **Checkout Forms**, ar y bar ochr chwith.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+![Dewislen Checkout Forms yn y bar ochr](/img/config/checkout-forms-list.png)
 
-Ar y pagedd hwn, gallwch gweld pob ffurf cyfathrebu sydd chi wedi'i creu.
+Ar y dudalen hon, gallwch weld yr holl ffurflenni talu sydd gennych.
 
-Os ydych chi eisiau creu un newydd, gwchwch ar **Add Checkout Form** ar y ddefnyddi o'r pagedd.
+Os ydych am greu un newydd, cliciwch ar **Ychwanegu Ffurflen Dalu** ar frig y dudalen.
 
-Gallwch un un o'r tri opsi hyn fel نقطddiad cynnes eich dechrau: single step (un cyflwyniad), multi-step (cyflwyniadol), neu blank (talyb). Yna, cliwch i **Go to the Editor** (Gwneud i'r Editor).
+Gallwch ddewis un o’r tri opsiwn hyn fel eich man cychwyn: un cam, aml-gam neu wag. Yna, cliciwch i **Fynd i’r Golygydd**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Ychwanegu Checkout Form gydag opsiynau un cam, aml-gam, neu wag](/img/config/checkout-forms-list.png)
 
-Arall, gallwch redig neu dduplikat y ffurfau sy roedd chi wedi'u gynnwys gan cliw ar y opsiynau o'r lleol yn eu cyflwyno. Yn y cyflym hwn hefyd fyddwch chi ddod i'r opsiynau i copio'r shortcode y ffurf neu i ddefnyddio'r ffurf.
+Fel arall, gallwch olygu neu ddyblygu’r ffurflenni sydd gennych eisoes drwy glicio ar yr opsiynau o dan ei henw. Yno, byddwch hefyd yn dod o hyd i’r opsiynau i gopïo cod byr y ffurflen neu i ddileu’r ffurflen.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Gweithredoedd hofran ffurflen dalu gyda golygu, dyblygu, a dileu](/img/config/checkout-form-hover-actions.png)
 
-Os gwahironwch single step neu multi-step, bydd y ffurf cyflwyniad yn cael ei gyflwyno gyda chyflwyniadau sylfaenol i'i gweithio. Yna, os oes angen, gallwch chi dros y cyflwyniadau extra iddo ychwanegu.
+Os dewiswch un cam neu aml-gam, bydd y ffurflen dalu eisoes wedi’i rhag-boblogi â’r camau sylfaenol sydd eu hangen iddi weithio. Yna, os dymunwch, gallwch ychwanegu camau ychwanegol ati.
 
-### Redig Ffurf Cyflwyniad:
+### Golygu Checkout Form: {#editing-a-checkout-form}
 
-Fel y ddyfynaiwn yn ymlaen, gallwch creu ffurfau cyflwyniad ar gyfer gymharu o'r amgylchedd. Yn yr adran hwn byddwn ni weithio ar ffurf cyflwyniad cyfrifoldeb (registration form).
+Fel y soniasom o’r blaen, gallwch greu ffurflenni talu at wahanol ddibenion. Yn yr enghraifft hon byddwn yn gweithio ar ffurflen gofrestru.
 
-Ar ôl mynd i'r editor y ffurf cyflwyniad, rhoi enw i'ch ffurf (sy bydd yn cael ei ddefnyddio yn gyfrifol yn unig) a slug (a ddefnyddir i creu shortcakes, felly).
+Ar ôl llywio i olygydd y ffurflen dalu, rhowch enw i’ch ffurflen (a ddefnyddir ar gyfer cyfeirio mewnol yn unig) a slug (a ddefnyddir i greu codau byr, er enghraifft).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Golygydd ffurflen dalu gyda meysydd enw a slug](/img/config/checkout-form-name-slug.png)
 
-Mae ffurfau wedi'u gwneud o cyflwyniadau a ffeiliau. Gallwch chi dros ychwanegu cyflwyniad newydd gan cliw ar **Add New Checkout Step** (Ychwanegu Cyflwyniad Newydd).
+Mae ffurflenni wedi’u gwneud o gamau a meysydd. Gallwch ychwanegu cam newydd drwy glicio ar **Ychwanegu Cam Talu Newydd**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Botwm Ychwanegu Cam Talu Newydd](/img/config/checkout-form-add-step.png)
 
-Ar y cyflwyniad cyntaf o'r gwydl window, llenwi'r cynnwys y cyflwyniad eich ffurf. Rhoi ID, enw a disgrifiad. Mae'r prifau hyn yn cael eu defnyddio yn unig mewn cyfrifol.
+Ar dab cyntaf y ffenestr foddol, llenwch gynnwys cam eich ffurflen. Rhowch ID, enw a disgrifiad iddo. Defnyddir yr eitemau hyn yn fewnol gan amlaf.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tab cynnwys cam talu gydag ID, enw, a disgrifiad](/img/config/checkout-form-step-content.png)
 
-Yna, rhoi'r amgylchedd y cyflwyniad. Gallwch chi dewis rhwng **Always show** (Ddefnyddio bob amser), **Only show for logged in users** (Deffroi yn unig ar gyfer benn cael eu cyfrifol) neu **Only show for guests** (Deffroi yn unig ar gyfer gaeau).
+Nesaf, gosodwch welededd y cam. Gallwch ddewis rhwng **Dangos bob amser** , **Dangos i ddefnyddwyr sydd wedi mewngofnodi yn unig** neu **Dangos i westeion yn unig**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Opsiynau gwelededd cam talu](/img/config/checkout-form-step-visibility.png)
 
-Isolwch yn edrych ar y styl ystafellau. Mae'r ffeillion hyn yn ffeillion allweddol.
+Yn olaf, ffurfweddwch arddull y cam. Mae’r rhain yn feysydd dewisol.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Ffurfweddiad arddull cam talu](/img/config/checkout-form-step-style.png)
 
-Mae angen i chi dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen i dros ymlaen
+Nawr, mae’n bryd ychwanegu meysydd at ein cam cyntaf. Cliciwch **Ychwanegu Maes Newydd** a dewiswch y math o adran rydych ei eisiau.
 
-![Bwrddau'r bot yn y ffurf checyn](https://example.com/img/config/checkout-form-preview-button.png)![Prehelu ffurf checyn fel y myfyrwyr neu benyddol](/img/config/checkout-form-preview-modal.png)
+![Botwm Ychwanegu Maes Newydd](/img/config/checkout-form-add-field-button.png)![Cwymplen dewis math maes](/img/config/checkout-form-field-type-dropdown.png)
 
-Isaf, ar **Advanced Options** gallwch sicrwy'r message ar gyfer y peidiad **Thank You**, ychwanegu snippets i ddefnyddio eu cyflwyniadau (conversions), ychwanegu CSS manwl i ffurf checyn eich ffurf, neu redegol ei fod yn cael ei redegol i ddinasau penodol.
+Mae gan bob maes baramedrau gwahanol i’w llenwi. Ar gyfer y cofnod cyntaf hwn, byddwn yn dewis y maes **Enw defnyddiwr**.
 
-![Advanced Options gyda peidiad Thank You, traeddiadau cyflwyniadau, a CSS manwl](/img/config/checkout-form-advanced.png)
+![Ffurfweddiad maes enw defnyddiwr](/img/config/checkout-form-username-content.png)![Paramedrau maes enw defnyddiwr](/img/config/checkout-form-username-visibility.png)![Gosodiadau ychwanegol maes enw defnyddiwr](/img/config/checkout-form-username-style.png)
 
-Gallwch hefyd gael eich ffurf checyn yn weithredol neu redegol gan ddefnyddio'r opsiwn hwn ar y llawr o'r col yn gyferol, neu ddifynnu'r ffurf yn llawn.
+Gallwch ychwanegu cymaint o gamau a meysydd ag sydd eu hangen arnoch. I arddangos eich cynhyrchion fel bod eich cwsmeriaid yn gallu dewis un, defnyddiwch y maes Tabl Prisiau. Os ydych am adael i’ch cleientiaid ddewis templed, ychwanegwch y maes Dewis Templed. Ac ati.
 
-![Togol weithredol a opsiwn ddifyniad ar gyfer ffurf checyn](/img/config/checkout-form-active.png)
+![Golygydd ffurflen dalu gyda maes dewis templed](/img/config/checkout-form-with-template-field.png)
 
-Peidiwch â hoffi dod o hyd i eich ffurf checyn!
+_**Nodyn:** Os ydych yn creu cynnyrch ar ôl creu eich ffurflen dalu, bydd angen i chi ychwanegu’r cynnyrch yn yr adran Tabl Prisiau. Os nad ydych yn ei ychwanegu, ni fydd y cynnyrch yn ymddangos i’ch cwsmeriaid ar y dudalen gofrestru._
 
-![Bwrddau'r ffurf checyn](https://example.com/img/config/checkout-form-save.png)
+_**Nodyn 2:** mae enw defnyddiwr, e-bost, cyfrinair, teitl safle, URL safle, crynodeb archeb, taliad, a botwm cyflwyno yn feysydd gorfodol i greu ffurflen dalu._
 
-I gael eich shortcode y ffurf, cliw ar **Generate Shortcode** a cop y resgell a ddangos yn y window modal.
+Tra byddwch yn gweithio ar eich ffurflen dalu, gallwch bob amser ddefnyddio’r botwm Rhagolwg i weld sut y bydd eich cleientiaid yn gweld y ffurflen. Gallwch hefyd newid rhwng gweld fel defnyddiwr presennol neu ymwelydd.
 
-![Modal Generate Shortcode gyda shortcode i cop](/img/config/checkout-form-editor.png)
+![Botwm Rhagolwg ar olygydd y ffurflen dalu](/img/config/checkout-form-preview-button.png)![Rhagolwg ffurflen dalu fel ymwelydd neu ddefnyddiwr presennol](/img/config/checkout-form-preview-modal.png)
 
-_**Not:** Byddwch yn angen i drosgl y shortcode hwn ar eich peidiad cyfrifol i fod y ffurf checyn hwn wedi'i ychwanegu i'r peidiad hwn._
+Yn olaf, ar **Opsiynau Uwch** gallwch ffurfweddu’r neges ar gyfer y dudalen **Diolch**, ychwanegu pytiau i olrhain trosiadau, ychwanegu CSS personol at eich ffurflen dalu neu ei chyfyngu i wledydd penodol.
 
-## Pre-seilio cynlluniau a templaethau drwy parametrau URL:
+![Opsiynau Uwch gyda thudalen Diolch, olrhain trosiadau, a CSS personol](/img/config/checkout-form-advanced.png)
 
-Os ydych chi eisiau creu tabliadau prysau manwl ar gyfer eich cynlluniau a pre-seilio ar y ffurf checyn y cynllun neu'r templaeth sydd yn cael ei ddefnyddio gan eich cleient o'r peidiad eich tabliadau prysau neu'r peidiad templaethau, gallwch ddefnyddio parametrau URL i hyn.
+Gallwch hefyd alluogi neu analluogi eich ffurflen dalu â llaw drwy doglo’r opsiwn hwn yn y golofn dde, neu ddileu’r ffurflen yn barhaol.
 
-### **Ar gyfer cynlluniau (plans):**
+![Togl gweithredol ac opsiwn dileu ar gyfer ffurflen dalu](/img/config/checkout-form-active.png)
 
-Gewe ar **Ultimate Multisite > Products > Select a plan**. Doddiwch yn gweld y bot **Click to copy Shareable Link** ar y llawr o'r peidiad. Mae hwn yw'r link sydd yn gallwch ddefnyddio i pre-seilio'r cynllun penodol hwn ar eich ffurf checyn.
+Peidiwch ag anghofio cadw eich ffurflen dalu!
 
-![Peidiad cynlluniau gyda bot link cyfrifol](/img/config/products-list.png)
+![Botwm Cadw Ffurflen Dalu](/img/config/checkout-form-save.png)
 
-Mae'n nod yn hanfodol i gyd-fyddiaeth hwnnwch yw bod y linc a chyfathriwyd yn gywir yn unig ar gyfer **Plans**. Nid oes unrhyw ddefnyddio lincau cyfathriwyd ar gyfer cyddeithiau neu gwasanaethau.
+I gael cod byr eich ffurflen, cliciwch **Cynhyrchu Cod Byr** a chopïwch y canlyniad a ddangosir yn y ffenestr foddol.
 
-### Ar gyfer modelau (templates):
+![Modal Cynhyrchu Cod Byr gyda chod byr i’w gopïo](/img/config/checkout-form-editor.png)
 
-Os ydych chi eisiau gwilio'r modelau safle ar gyfer y ffurf cheddor eich cheddor, gallwch ddefnyddio'r parametrau: **?template_id=X** ar gyfer URL y peiriant eich cyfrifolion. Mae angen i'r "X" ei allw'r **nifer ID model safle**. I gael y nifer hwn, myndwch i **Ultimate Multisite > Sites**.
+_**Nodyn:** Bydd angen i chi ychwanegu’r cod byr hwn at eich tudalen gofrestru er mwyn ychwanegu’r ffurflen dalu hon ati._
 
-Cliciwch ar **Manage** osod y model safle sydd yn eich hoffi defnyddio. Byddwch yn gweld y nifer SITE ID. Defnyddiwch yr unifol hwn ar gyfer y model safle honno i fod wedi'i gwilio'r cheddor eich cyfrifolion. Yn ein cas, bydd y parametrau URL yn dod yn **?template_id=2**.
+## Rhag-ddewis cynhyrchion a thempledi drwy baramedrau URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Os ydych am greu tablau prisiau wedi’u teilwra ar gyfer eich cynhyrchion a rhag-ddewis ar y ffurflen dalu y cynnyrch neu’r templed y mae eich cwsmer yn ei ddewis o’ch tabl prisiau neu’ch tudalen templedi, gallwch ddefnyddio paramedrau URL ar gyfer hyn.
 
-Os ydych chi eisiau, gallwch gwilio'r droseddau a'r modelau safle i eich cheddor cyfrifolion hefyd. Mae angen i chi ddynnu'r linc cyfathriwyd y plan ac yn ddefnyddio'r parametrau model safle ar ben y diwedd. Bydd yn dod yn llai fel **www.mynetwork.com/register/premium-plan/?template** (www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+### **Ar gyfer cynlluniau:** {#for-plans}
+
+Ewch i **Ultimate Multisite > Cynhyrchion > Dewiswch gynllun**. Dylech weld y botwm **Cliciwch i gopïo Dolen Rannadwy** ar frig y dudalen. Dyma’r ddolen y gallwch ei defnyddio i rag-ddewis y cynllun penodol hwn ar eich ffurflen dalu.
+
+![Tudalen cynnyrch gyda botwm dolen rannadwy](/img/config/products-list.png)
+
+Sylwch fod y ddolen rannadwy hon yn ddilys ar gyfer **Cynlluniau** yn unig. Ni allwch ddefnyddio dolenni rannadwy ar gyfer pecynnau neu wasanaethau.
+
+### Ar gyfer templedi: {#for-templates}
+
+Os ydych am rag-ddewis templedi safle ar eich ffurflen dalu, gallwch ddefnyddio’r paramedr: **?template_id=X** ar URL eich tudalen gofrestru. Mae angen disodli’r "X" â’r **rhif ID templed safle**. I gael y rhif hwn, ewch i **Ultimate Multisite > Safleoedd**.
+
+Cliciwch ar **Rheoli** yn union o dan y templed safle rydych am ei ddefnyddio. Byddwch yn gweld rhif SITE ID. Defnyddiwch y rhif hwn ar gyfer y templed safle penodol hwn i’w rag-ddewis ar eich ffurflen dalu. Yn ein hachos ni yma, byddai’r paramedr URL yn **?template_id=2**.
+
+![Rhestr safleoedd yn dangos ID templed safle](/img/config/site-templates-list.png)
+
+Gadewch i ni ddweud mai ein gwefan rhwydwaith yw [**www.mynetwork.com**](http://www.mynetwork.com) a bod ein tudalen gofrestru gyda’n ffurflen dalu wedi’i lleoli ar y dudalen **/register**. Bydd yr URL cyfan gyda’r templed safle hwn wedi’i rag-ddewis yn edrych fel [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Ac os ydych eisiau, gallwch rag-ddewis cynhyrchion a thempledi ar eich ffurflen dalu. Y cyfan sydd angen i chi ei wneud yw copïo dolen rannadwy’r cynllun a gludo paramedr y templed ar y diwedd. Bydd yn edrych fel [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

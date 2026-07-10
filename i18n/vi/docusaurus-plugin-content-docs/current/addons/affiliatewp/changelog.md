@@ -3,7 +3,7 @@ title: AffiliateWP Lịch sử thay đổi
 sidebar_position: 99
 _i18n_hash: d05764507832965fa339d385268b8344
 ---
-# Lịch sử thay đổi AffiliateWP
+# Lịch sử thay đổi AffiliateWP {#affiliatewp-changelog}
 
 Version: 2.0.1 - Phát hành ngày 2025-09-28
 

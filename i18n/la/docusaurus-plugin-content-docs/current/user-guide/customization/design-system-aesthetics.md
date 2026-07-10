@@ -3,11 +3,11 @@ title: Aesthetica Systema Design
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Habilis in Estheticis Systematis Design
+# Habilis in Estheticis Systematis Design {#design-system-aesthetics-skill}
 
 La **Habilis in Estheticis Systematis Design** est un enfoque guiado para refinar la identidad visual de tu sitio. Te ayuda a tomar decisiones consistentes sobre tipografía, color, espaciado y tokens de movimiento que definen tu sistema de diseño.
 
-## ¿Qué es la Habilis in Estheticis Systematis Design?
+## ¿Qué es la Habilis in Estheticis Systematis Design? {#what-is-design-system-aesthetics}
 
 La Habilis in Estheticis Systematis Design es una habilidad estructurada que cubre:
 
@@ -20,9 +20,9 @@ La Habilis in Estheticis Systematis Design es una habilidad estructurada que cub
 
 Estas decisiones se guardan en el archivo `theme.json` de tu tema, creando un sistema visual cohesionado.
 
-## ¿Por qué usar la Habilis in Estheticis Systematis Design?
+## ¿Por qué usar la Habilis in Estheticis Systematis Design? {#why-use-design-system-aesthetics}
 
-### Consistencia
+### Consistencia {#consistency}
 
 Un sistema de diseño asegura:
 
@@ -31,7 +31,7 @@ Un sistema de diseño asegura:
 - Que el espaciado siga un patrón predecible
 - Que las animaciones se sientan unificadas
 
-### Eficiencia
+### Eficiencia {#efficiency}
 
 En lugar de tomar decisiones de diseño página por página, tú:
 
@@ -39,7 +39,7 @@ En lugar de tomar decisiones de diseño página por página, tú:
 - Los aplicas en todas partes
 - Actualizas globalmente cambiando un solo valor
 
-### Flexibilidad
+### Flexibilidad {#flexibility}
 
 Puedes:
 
@@ -47,9 +47,9 @@ Puedes:
 - Experimentar con diferentes estéticas
 - Mantener la coherencia de la marca mientras evolucionas
 
-## Activación de la Habilis in Estheticis Systematis Design
+## Activación de la Habilis in Estheticis Systematis Design {#triggering-the-design-system-aesthetics-skill}
 
-### Activación Manual
+### Activación Manual {#manual-activation}
 
 Puedes empezar la habilidad en cualquier momento:
 
@@ -69,7 +69,7 @@ o
 "Guíame a través de las decisiones del sistema de diseño"
 ```
 
-### Sugerencias Automáticas
+### Sugerencias Automáticas {#automatic-suggestions}
 
 Los agentes pueden sugerir usar esta habilidad cuando tú:
 
@@ -78,9 +78,9 @@ Los agentes pueden sugerir usar esta habilidad cuando tú:
 - Quieras mejorar la coherencia visual
 - Estés preparando el lanzamiento de tu sitio
 
-## Process Aestheticae Systematis
+## Process Aestheticae Systematis {#the-design-system-aesthetics-process}
 
-### Gradus 1: Typographia
+### Gradus 1: Typographia {#step-1-typography}
 
 Agent te de eligendis fontibus qua quaeritur:
 
@@ -110,7 +110,7 @@ Agent deinde definiet:
 - **Scala pondus**: Pondus fontium (regularis, medium, audax, etc.).
 - **Altura linea**: Spatium inter linias ad legibilitatem.
 
-### Gradus 2: Paletra Colorum
+### Gradus 2: Paletra Colorum {#step-2-color-palette}
 
 ```
 Definamus paletram tuam colorum.
@@ -140,7 +140,7 @@ Agent paletram completam creavit, includens:
 - Colores semantici (successus, advertentia, error).
 - Stati hover et activi.
 
-### Gradus 3: Spatium
+### Gradus 3: Spatium {#step-3-spacing}
 
 Quam spatia respirandi desideras?
 
@@ -160,7 +160,7 @@ Agent definet tokena distanti:
 - Scala: xs, sm, md, lg, xl, 2xl
 - Valera specifica ad padding, margin, gap
 
-### Gradus IV: Limina et Umbrae
+### Gradus IV: Limina et Umbrae {#step-4-borders-and-shadows}
 
 ```
 Profunditas visiva et definitio:
@@ -183,7 +183,7 @@ Agent creavit:
 - Tokena umbrae pro nivele elevationis
 - Tokena largitut liminis (border width tokens)
 
-### Gradus V: Motio et Animatio
+### Gradus V: Motio et Animatio {#step-5-motion-and-animation}
 
 ```
 Quom sit situs tuum cum interactivo?
@@ -205,9 +205,9 @@ Agent definet:
 - Functiones easing (ease-in, ease-out, ease-in-out)
 - Keyframes animationum ad interactiones communes
 
-## Applicatio Estetica Systematis Design
+## Applicatio Estetica Systematis Design {#applying-design-system-aesthetics}
 
-### Applicatio Automatica
+### Applicatio Automatica {#automatic-application}
 
 Postquam skill completas, agent:
 
@@ -216,7 +216,7 @@ Postquam skill completas, agent:
 3. Styles blocos regenerabit ut ad novum systema concordant
 4. Theme atualissimum activabit
 
-### Applicatio Manualis
+### Applicatio Manualis {#manual-application}
 
 Tu etiam `theme.json` directum editum potes:
 
@@ -255,9 +255,9 @@ Tu etiam `theme.json` directum editum potes:
 }
 ```
 
-## Visiō System Tuum
+## Visiō System Tuum {#viewing-your-design-system}
 
-### Quaestio Agentem
+### Quaestio Agentem {#ask-the-agent}
 
 ```
 "Mīne system design vīde"
@@ -271,13 +271,13 @@ vel
 
 Agentus tibi typographiam, colores, intervallum (spacing) et aliam tokena ostendit.
 
-### Visi theme.json
+### Visi theme.json {#view-themejson}
 
 `/wp-content/themes/[theme-name]/theme.json` in editore textu aperi ut definiitiones tokenum rudem vides.
 
-## Aggiornamento System Design Tuum
+## Aggiornamento System Design Tuum {#updating-your-design-system}
 
-### Aggiornatio Rapida
+### Aggiornatio Rapida {#quick-updates}
 
 Agentem specificas mutaciones pete:
 
@@ -297,7 +297,7 @@ vel
 "Fontem tituli in serifum muta"
 ```
 
-### Redesign Plenus
+### Redesign Plenus {#full-redesign}
 
 Skill Aesthetic System Design redi:
 
@@ -307,7 +307,7 @@ Skill Aesthetic System Design redi:
 
 Te per omnia decisiones redi ducat, a valoribus tuis actuellis incipiat.
 
-### Aggiornatio Parcialis
+### Aggiornatio Parcialis {#partial-updates}
 
 Specificos aspectus aggiorna:
 
@@ -315,15 +315,15 @@ Specificos aspectus aggiorna:
 "Solum paletam colorum aggrego, omnia alia tene"
 ```
 
-## Optima Practicae System Design Tuum
+## Optima Practicae System Design Tuum {#design-system-best-practices}
 
-### Consistentia
+### Consistentia {#consistency-1}
 
 - Edem tokena ubique usa
 - Colores vel magnitudines singularibus nōn crea
 - Valorem non codificando (hardcoding) tokenas referenda
 
-### Nomenclatura
+### Nomenclatura {#naming}
 
 Nomen clara, semantica usa:
 
@@ -333,17 +333,17 @@ Nomen clara, semantica usa:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalabilitas
+### Scalabilitas {#scalability}
 
-### Documenta tu sistema de diseño:
+### Documenta tu sistema de diseño: {#documentation}
 
 *   Por qué elegiste colores específicos
 *   Cuándo usar cada token
 *   Excepciones y casos límite
 
-## Patrones Comunes del Sistema de Diseño
+## Patrones Comunes del Sistema de Diseño {#common-design-system-patterns}
 
-### Minimalista Moderno
+### Minimalista Moderno {#modern-minimalist}
 
 *   Tipografía sin serifa (Inter, Helvetica)
 *   Paleta de colores limitada (2-3 colores)
@@ -351,7 +351,7 @@ Nomen clara, semantica usa:
 *   Sombras sutiles
 *   Animaciones suaves y rápidas
 
-### Cálido y Amigable
+### Cálido y Amigable {#warm-and-friendly}
 
 *   Mezcla de serif y sans-serif
 *   Paleta de colores cálida (naranjas, grises cálidos)
@@ -359,7 +359,7 @@ Nomen clara, semantica usa:
 *   Sombras suaves
 *   Animaciones juguetonas
 
-### Corporativo Profesional
+### Corporativo Profesional {#professional-corporate}
 
 *   Sans-serif limpio (Roboto, Open Sans)
 *   Paleta neutra con color de acento
@@ -367,7 +367,7 @@ Nomen clara, semantica usa:
 *   Sombras mínimas
 *   Transiciones sutiles
 
-### Creativo y Audaz
+### Creativo y Audaz {#creative-and-bold}
 
 *   Tipografía distintiva
 *   Paleta de colores audaz
@@ -375,7 +375,7 @@ Nomen clara, semantica usa:
 *   Sombras fuertes
 *   Animaciones notables
 
-## Solución de Problemas
+## Solución de Problemas {#troubleshooting}
 
 **Mis cambios en el sistema de diseño no se muestran**
 *   Vacía la caché del navegador
@@ -393,7 +393,7 @@ Nomen clara, semantica usa:
 *   Edita manualmente `theme.json` con los valores anteriores
 *   Vuelve a ejecutar la habilidad con diferentes opciones
 
-## Próximos Pasos
+## Próximos Pasos {#next-steps}
 
 Después de definir tu sistema de diseño:
 

@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
 
-# وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent)
+# وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) {#gratis-ai-agent}
 
 وكيل الذكاء الاصطناعي المجاني هو مساعد ذكاء اصطناعي مستقل لمنصة WordPress، يمكنه تخطيط وبناء وإدارة مواقع WordPress كاملة بالاعتماد على التعليمات النصية الطبيعية. إنه يعرض مجموعة منظمة من **القدرات (abilities)** — وهي إجراءات منفصلة وقابلة للاختبار يمكن للوكيل استدعاؤها — تغطي كل شيء بدءًا من إدارة المحتوى وصولاً إلى تخصيص أنظمة التصميم. في الإصدار 1.9.0، تمت إضافة قدرات إنشاء المحتوى، والمراجعة البصرية للصفحات عبر لقطات الشاشة من جانب العميل، وخمسة ملفات تعريف مدمجة للوكيل، بالإضافة إلى مفاتيح الميزات (feature flags) للتحكم في الوصول والعلامة التجارية.
 
-## الميزات الرئيسية
+## الميزات الرئيسية {#key-features}
 
 - **نظام القدرات (Abilities system)** — كتالوج معياري وقابل للتوسيع للإجراءات التي يمكن للوكيل تنفيذها على تثبيت WordPress الخاص بك.
 - **إدارة المحتوى (Content Management)** — إنشاء المنشورات والصفحات (بما في ذلك تعيين قوالب الصفحات)، وإنشاء عدة منشورات دفعة واحدة في استدعاء واحد، وتعيين الصور المميزة، وبناء نماذج الاتصال.
@@ -28,21 +28,21 @@ import AddonBanner from '@site/src/components/AddonBanner';
 - **تنظيم بناء الموقع v2 (Site Builder Orchestration v2)** — خطط بناء مواقع متعددة الخطوات مع اكتشاف الإضافات، وتتبع التقدم، واستعادة الأخطاء.
 - **أمر قياس الأداء لـ WP-CLI (WP-CLI benchmark command)** — تشغيل مجموعة اختبار قياس قدرات الوكيل من سطر الأوامر لأغراض التكامل المستمر (CI) وتقييم النموذج.
 
-## المتطلبات
+## المتطلبات {#requirements}
 
 - WordPress 6.0 أو أعلى
 - PHP 8.1 أو أعلى
 - WordPress Multisite (مفعل على مستوى الشبكة) أو تثبيت موقع واحد.
 - إضافة موفر ذكاء اصطناعي نشطة (Anthropic، OpenAI، أو متوافقة).
 
-## التثبيت
+## التثبيت {#installation}
 
 1. قم بتحميل ملفات الإضافة إلى المسار التالي: `/wp-content/plugins/gratis-ai-agent`
 2. قم بتفعيل الإضافة عبر شاشة **الإضافات (Plugins)** في WordPress.
 3. انتقل إلى **وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) → الإعدادات (Settings)** وقم بتوصيل موفر الذكاء الاصطناعي الخاص بك.
 4. (اختياري) تصفح **سجل القدرات (Abilities Registry)** لتثبيت حزم قدرات إضافية.
 
-## البدء السريع
+## البدء السريع {#quick-start}
 
 بمجرد التفعيل والتوصيل بموفر ذكاء اصطناعي، افتح لوحة **وكيل الذكاء الاصطناعي المجاني** في الشريط الجانبي لإدارة WordPress. اكتب تعليمات بلغة طبيعية وسيقوم الوكيل بتخطيط وتنفيذ الخطوات المطلوبة باستخدام القدرات المتاحة له.
 
@@ -60,7 +60,7 @@ Inject a dark-mode colour palette into the theme and set the primary colour to #
 Build a restaurant website with an online menu, booking form, and contact page.
 ```
 
-## نظرة عامة على القدرات (Abilities Overview)
+## نظرة عامة على القدرات (Abilities Overview) {#abilities-overview}
 
 القدرات هي الإجراءات الذرية التي يمكن للوكيل تنفيذها. كل قدرة هي فئة PHP مسجلة تعرض مخططًا (parameters and return types) يقرأه الوكيل أثناء التشغيل. يتم تجميع القدرات في مجالات وظيفية:
 
@@ -79,7 +79,7 @@ Build a restaurant website with an online menu, booking form, and contact page.
 
 راجع [مرجع القدرات (Abilities Reference)](./abilities) للحصول على التوثيق الكامل للمعلمات وأمثلة الاستخدام.
 
-## WP-CLI
+## WP-CLI {#wp-cli}
 
 يوفر وكيل الذكاء الاصطناعي المجاني عائلة أوامر `wp gratis-ai-agent` لتشغيل اختبارات قياس الأداء وإدارة القدرات من سطر الأوامر. راجع [مرجع WP-CLI (WP-CLI Reference)](./wp-cli) للحصول على قائمة الأوامر الكاملة.
 
@@ -94,7 +94,7 @@ wp gratis-ai-agent abilities list
 wp gratis-ai-agent abilities install <slug>
 ```
 
-## الإعدادات (Configuration)
+## الإعدادات (Configuration) {#configuration}
 
 جميع الإعدادات موجودة تحت **وكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) → الإعدادات (Settings)** في لوحة تحكم WordPress:
 
@@ -106,7 +106,7 @@ wp gratis-ai-agent abilities install <slug>
 | **Ability Timeout** | الحد الأقصى للثواني التي يمكن أن يعمل فيها قدرة فردية (الافتراضي 30). |
 | **Debug Logging** | تسجيل استدعاءات القدرات ومنطق الوكيل في سجل تصحيح أخطاء WordPress. |
 
-## قائمة الحظر لأمان إدارة الخيارات (Options Management Safety Blocklist)
+## قائمة الحظر لأمان إدارة الخيارات (Options Management Safety Blocklist) {#options-management-safety-blocklist}
 
 تتضمن قدرة إدارة الخيارات قائمة حظر مدمجة تمنع الوكيل من قراءة أو كتابة خيارات WordPress الحساسة. تغطي قائمة الحظر الافتراضية ما يلي:
 
@@ -118,26 +118,26 @@ wp gratis-ai-agent abilities install <slug>
 
 يمكن إضافة إدخالات إضافية عبر الفلتر `gratis_ai_agent_options_blocklist`.
 
-## الخطافات والفلاتر (Hooks and Filters)
+## الخطافات والفلاتر (Hooks and Filters) {#hooks-and-filters}
 
-### الإجراءات (Actions)
+### الإجراءات (Actions) {#actions}
 
 - `gratis_ai_agent_ability_registered` — يتم تشغيله بعد تسجيل قدرة، ويتلقى اسم فئة القدرة.
 - `gratis_ai_agent_plan_started` — يتم تشغيله عند بدء تنفيذ خطة بناء الموقع.
 - `gratis_ai_agent_plan_completed` — يتم تشغيله عند اكتمال الخطة بنجاح.
 - `gratis_ai_agent_plan_failed` — يتم تشغيله عند مواجهة الخطة لخطأ لا يمكن التعافي منه.
 
-### الفلاتر (Filters)
+### الفلاتر (Filters) {#filters}
 
 - `gratis_ai_agent_abilities` — لتعديل قائمة القدرات المسجلة قبل أن يقوم الوكيل بتحميلها.
 - `gratis_ai_agent_options_blocklist` — لتوسيع أو تقليل قائمة الحظر لأمان الخيارات.
 - `gratis_ai_agent_benchmark_questions` — لإضافة أسئلة قياس أداء مخصصة إلى مجموعة التقييم.
 - `gratis_ai_agent_plan_plugins` — لتعديل قائمة اكتشاف الإضافات أثناء إنشاء خطة الموقع.
 
-## الدعم (Support)
+## الدعم (Support) {#support}
 
 للحصول على الدعم، يرجى زيارة [ultimatemultisite.com](https://ultimatemultisite.com) أو فتح مشكلة في مستودع الإضافة.
 
-## سجل التغييرات (Changelog)
+## سجل التغييرات (Changelog) {#changelog}
 
 راجع [سجل التغييرات (Changelog)](./changelog) للاطلاع على تاريخ الإصدار الكامل.

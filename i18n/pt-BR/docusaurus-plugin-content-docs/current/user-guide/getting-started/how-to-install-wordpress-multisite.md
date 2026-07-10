@@ -1,67 +1,67 @@
 ---
-title: Como Instalar WordPress Multisite
+title: Como instalar o WordPress Multisite
 sidebar_position: 2
-_i18n_hash: 5572d2dd71ac4dc48427cd0f11545726
+_i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Como Instalar o WordPress Multisite?
+# Como instalo o WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
-O WordPress Multisite permite que você tenha uma rede de sites em uma única instalação. Este é um recurso integrado, mas não está ativo por padrão.
+O WordPress Multisite permite que você tenha uma rede de sites em uma única instalação. Este é um recurso integrado, mas não vem ativo por padrão.
 
 :::tip
-O Ultimate Multisite inclui um **[Assistente de Configuração Multisite integrado](./multisite-setup-wizard)** que automatiza todo esse processo. Se você tem o Ultimate Multisite instalado, recomendamos usar o assistente em vez de seguir os passos manuais abaixo.
+Ultimate Multisite inclui um **[Assistente de Configuração de Multisite integrado](./multisite-setup-wizard)** que automatiza todo esse processo. Se você tem o Ultimate Multisite instalado, recomendamos usar o assistente em vez de seguir as etapas manuais abaixo.
 :::
 
-Como o Ultimate Multisite é um plugin exclusivo para rede, neste tutorial você aprenderá como instalar e configurar o WordPress Multisite manualmente. Este texto baseia-se em [Como Instalar e Configurar a Rede WordPress Multisite](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), do WPBeginner.
+Como o Ultimate Multisite é um plugin somente para rede, neste tutorial, você aprenderá como instalar e configurar o WordPress Multisite manualmente. Este texto é baseado em [Como instalar e configurar uma rede WordPress Multisite](https://www.wpbeginner.com/wp-tutorials/how-to-install-and-setup-wordpress-multisite-network/), da WPBeginner.
 
-**Coisas a observar antes de criar sua rede multisite:**
+**Coisas às quais prestar atenção antes de criar sua rede multisite:**
 
-  * Obtenha um bom serviço de hospedagem WordPress! Sites em uma rede compartilham os mesmos recursos do servidor.
+  * Tenha uma boa hospedagem WordPress! Sites em uma rede compartilham os mesmos recursos do servidor.
 
-  * Caso você tenha apenas alguns sites com baixo tráfego, hospedagem compartilhada provavelmente funcionará para você.
+  * Caso você tenha apenas alguns sites com baixo tráfego, a hospedagem compartilhada provavelmente funcionará para você.
 
-  * A maioria dos **provedores de hospedagem WordPress gerenciada** oferece Multisite pronto (instalam o WordPress com Multisite já ativado e configurado para você). Isso acontece com WP Engine, Closte, Cloudways, etc. Se você não tem certeza se isso acontece com seu provedor, entre em contato com o suporte antes de prosseguir com este tutorial.
+  * A maioria dos **provedores de hospedagem WordPress gerenciada** oferece Multisite pronto para uso (eles instalam o WordPress com Multisite já ativado e configurado para você). Este é o caso da WP Engine, Closte, Cloudways etc. Se você não tiver certeza se esse é o caso do seu provedor de hospedagem, entre em contato com o suporte deles antes de continuar com este tutorial.
 
-  * Também é bom estar familiarizado com a instalação do WordPress e a edição de arquivos usando FTP.
+  * Também é bom estar familiarizado com a instalação do WordPress e a edição de arquivos usando FTP .
 
-_**IMPORTANTE**_ **:** Se você está configurando uma rede multisite em um site WordPress existente, não se esqueça de:
+_**IMPORTANTE**_ **:** Se você estiver configurando uma rede multisite em um site WordPress existente, não se esqueça de:
 
   * Criar um backup completo do seu site WordPress
 
-  * Desativar todos os plugins do seu site acessando a página de plugins, selecionando _Desativar_ nas ações em massa e clicando em _Aplicar_
+  * Desativar todos os plugins no seu site acessando a página de plugins, selecionando _Desativar_ nas ações em massa e, em seguida, clicando em _Aplicar_
 
-<!-- Screenshot unavailable: WordPress plugins page showing bulk deactivate action -->
+<!-- Captura de tela indisponível: página de plugins do WordPress mostrando a ação em massa de desativar -->
 
-Para habilitar o Multisite, primeiro conecte-se ao seu site usando um cliente FTP ou o gerenciador de arquivos do cPanel, e abra o arquivo wp-config.php para edição.
+Para ativar o Multisite, primeiro conecte-se ao seu site usando um cliente FTP ou o gerenciador de arquivos do cPanel, e abra seu arquivo wp-config.php para edição.
 
-Antes da linha _*Isso é tudo, pare de editar! Feliz blogando.*_, adicione o seguinte trecho de código:
+Antes da linha _*That’s all, stop editing! Happy blogging.*_, adicione o seguinte trecho de código:
 
 define('WP_ALLOW_MULTISITE', true);
 
-Salve e faça o upload do arquivo wp-config.php de volta ao servidor.
+Salve e envie seu arquivo wp-config.php de volta para o servidor.
 
-Com o recurso Multisite habilitado no seu site, agora é hora de configurar sua rede.
+Com o recurso multisite ativado no seu site, agora é hora de configurar sua rede.
 
-Vá em **Ferramentas » Configuração da Rede**
+Vá para **Ferramentas » Configuração da rede**
 
-<!-- Screenshot unavailable: WordPress Tools menu showing Network Setup option -->
+<!-- Captura de tela indisponível: menu Ferramentas do WordPress mostrando a opção Configuração da rede -->
 
-Agora você precisa informar ao WordPress que tipo de estrutura de domínio usará para os sites na sua rede: subdomínios ou subdiretórios.
+Agora você precisa informar ao WordPress que tipo de estrutura de domínio você usará para os sites na sua rede: subdomínios ou subdiretórios.
 
-Se você escolher subdomínios, deve alterar as configurações de DNS para mapeamento de domínio e garantir a configuração de _**subdomínios curinga**_ para sua rede multisite.
+Se você escolher subdomínios, deverá alterar suas configurações de DNS para mapeamento de domínio e garantir a configuração de _**subdomínios curinga**_ para sua rede multisite.
 
-Volte à Configuração da Rede, dê um título à sua rede e certifique-se de que o endereço de e-mail no e-mail do administrador da rede esteja correto. Clique em _Instalar_ para continuar.
+Voltando à Configuração da rede, dê um título para sua rede e certifique-se de que o endereço de e-mail em E-mail do administrador da rede esteja correto. Clique em _Instalar_ para continuar.
 
-<!-- Screenshot unavailable: WordPress Network Setup page with network title and admin email fields -->
+<!-- Captura de tela indisponível: página de Configuração da rede do WordPress com campos de título da rede e e-mail do administrador -->
 
 Adicione este código, fornecido pelo WordPress, ao seu _**wp-config.php**_ :
 
 define('MULTISITE', true); define('SUBDOMAIN_INSTALL', true); define('DOMAIN_CURRENT_SITE', 'multisite.local'); define('PATH_CURRENT_SITE', '/'); define('SITE_ID_CURRENT_SITE', 1); define('BLOG_ID_CURRENT_SITE', 1);
 
-E este código, também fornecido pelo **WordPress**, ao seu arquivo _**.htaccess**_ :
+E este código, também fornecido pelo WordPress, ao seu arquivo _**.htaccess**_:
 
 RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L]
 
-# add a trailing slash to /wp-admin
+# add a trailing slash to /wp-admin {#add-a-trailing-slash-to-wp-admin}
 
 RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
 
@@ -71,44 +71,42 @@ Use um cliente FTP ou um gerenciador de arquivos (se você estiver usando algo c
 
 Por fim, faça login novamente no seu site WordPress para acessar sua rede multisite.
 
-**É importante testar e garantir que você consiga criar um subsítio na sua instalação WordPress Multisite antes de instalar o Ultimate Multisite.**
+**É importante testar e garantir que você consegue criar um subsite na sua instalação WordPress Multisite antes de instalar o Ultimate Multisite.**
 
-Para criar um subsítio:
+Para criar um subsite:
 
-  1. Abra o wp-admin do seu site
+  1. Abra o wp-admin dos seus sites
 
   2. Navegue até Meus Sites > Sites (/wp-admin/network/sites.php)
 
-  3. Clique em Adicionar Novo no topo
+  3. Clique em Adicionar novo no topo
 
   4. Preencha todos os campos:
 
-  * Endereço do Site — Nunca use “www”
+  * Endereço do site — Nunca use “www”
 
-  * Subdomínio: [siteaddress.seudominio.com](http://siteaddress.seudominio.com)
+  * Subdomínio: [siteaddress.yourdomain.com](http://siteaddress.yourdomain.com)
 
-  * Subdiretório: [seudominio.com/siteaddress](http://seudominio.com/siteaddress)
+  * Subdiretório: [yourdomain.com/siteaddress](http://yourdomain.com/siteaddress)
 
-  * Título do Site — Título do site, pode ser alterado depois
+  * Título do site — Título do site, pode ser alterado depois
 
-  * E-mail do Administrador — Defina como o usuário administrador inicial para o subsítio
+  * E-mail do administrador — Definido como o usuário administrador inicial do subsite
 
-![Add new site form in WordPress Multisite](/img/admin/sites-list.png)
+![Formulário de adicionar novo site no WordPress Multisite](/img/admin/sites-list.png)
 
-Depois de preencher os campos, clique no botão "Adicionar site". Assim que o novo subsítio for criado, acesse-o para garantir que o subsítio esteja funcional.
+Depois de preencher os campos, clique no botão "Adicionar site". Assim que o novo subsite for criado, prossiga e acesse-o para garantir que o subsite esteja funcionando.
 
-## Problemas Comuns:
+## Problemas comuns: {#common-problems}
 
-### 1\. Eu consigo criar novos sites, mas eles não são acessíveis.
+### 1\. Consigo criar novos sites, mas eles não estão acessíveis. {#1-i-can-create-new-sites-but-they-are-not-accessible}
 
 Se você escolheu subdomínios, também precisa configurar subdomínios curinga para sua rede multisite.
 
-Para fazer isso, acesse o painel de controle da conta de hospedagem do seu site (por exemplo, cPanel/Plesk/Direct Admin, dependendo do seu provedor de hospedagem).
+Para fazer isso, vá para o dashboard do painel de controle da conta de hospedagem do seu site (por exemplo, cPanel/Plesk/Direct Admin, dependendo do seu provedor de hospedagem).
 
-Encontre uma opção para “Domínios” ou “Subdomínios”. Em alguns painéis de controle, ela é rotulada como “Administração de Domínios”.
+Encontre uma opção para “Domínios” ou “Subdomínios”. Em alguns painéis de controle, ela aparece como “Administração de domínio”.
 
-No campo de subdomínio, digite um asterisco (*). Em seguida, ele deve solicitar que você selecione um nome de domínio onde deseja que o subdomínio seja adicionado.
+No campo de subdomínio, insira um asterisco (*). Em seguida, ele deve pedir que você selecione um nome de domínio sob o qual deseja adicionar o subdomínio.
 
-A raiz do documento para o nome de domínio selecionado será detectada automaticamente. Clique no botão _Criar_ ou _Salvar_ para adicionar seu subdomínio curinga. A entrada deve ficar assim: "*.[meudominio.com](http://meudominio.com)"
-
-After bullet
+A raiz do documento para o nome de domínio selecionado será detectada automaticamente. Clique no botão _Criar_ ou _Salvar_ para adicionar seu subdomínio curinga. A entrada deve ficar parecida com “*.[mydomain.com](http://mydomain.com)”

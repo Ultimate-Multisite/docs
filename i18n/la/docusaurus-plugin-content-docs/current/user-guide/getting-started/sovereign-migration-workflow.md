@@ -3,11 +3,11 @@ title: Fluxus Migratio Sovranorum
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Flujo de Migración Soberana
+# Flujo de Migración Soberana {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 añade puertas de verificación de migración para mover un subsitio estándar a la infraestructura del inquilino soberano.
 
-## Antes de empezar
+## Antes de empezar {#before-you-start}
 
 Confirma que tienes:
 
@@ -17,7 +17,7 @@ Confirma que tienes:
 - Un enlace de anfitrión de base de datos que coincida con el entorno de destino.
 - Acceso para ejecutar comandos WP-CLI para la red.
 
-## Flujo recomendado
+## Flujo recomendado {#recommended-workflow}
 
 1. Prepara la base de datos y el sistema de archivos del inquilino de destino.
 2. Registra o actualiza la configuración de aislamiento del inquilino.
@@ -28,7 +28,7 @@ Confirma que tienes:
 7. Visita el inquilino con SSO.
 8. Cambia DNS o enrutamiento solo después de que la verificación sea exitosa.
 
-## Puertas de verificación
+## Puertas de verificación {#verification-gates}
 
 El flujo de verificación comprueba la migración desde varios ángulos:
 
@@ -40,6 +40,6 @@ El flujo de verificación comprueba la migración desde varios ángulos:
 
 Trata los fallos de verificación como bloqueadores previos al lanzamiento. Arregla el problema reportado de base de datos, usuario, cola o enrutamiento, y luego vuelve a ejecutar la verificación antes de exponer el inquilino a los clientes.
 
-## Primera visita a producción
+## Primera visita a producción {#first-production-visit}
 
 Después de que la verificación sea exitosa, utiliza **Visit (SSO)** desde la pantalla de gestión del sitio para la primera visita de administrador. Esto confirma el enrutamiento del inquilino, el manejo del token SSO, el anclaje de origen y el aprovisionamiento de usuarios del lado del inquilino en un solo paso controlado.

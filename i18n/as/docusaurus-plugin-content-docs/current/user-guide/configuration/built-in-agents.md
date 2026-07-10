@@ -1,132 +1,148 @@
 ---
-title: অন্তৰ্মীয় এজেণ্টসমূহ
+title: অন্তৰ্নিৰ্মিত এজেণ্টসমূহ
 sidebar_position: 12
-_i18n_hash: 4852fdc3ddd1a44a574c100846e84dc5
+_i18n_hash: a89717a9bbb03aa1da4d264e01acf11a
 ---
-# বিল্ট-ইন এজেণ্টসমূহ (Built-in Agents)
+# অন্তৰ্নিৰ্মিত Agents {#built-in-agents}
 
-Gratis AI Agent v1.9.0 ত পাঁচটা বিল্ট-ইন এজেণ্ট অন্তৰ্ভুক্ত কৰা হৈছে। প্ৰতিটো এজেণ্টেই এটা নিৰ্দিষ্ট ধৰণৰ টুলছ, এটা উপযুক্ত 'System prompt' আৰু সেই ক্ষেত্ৰৰ সাধাৰণ কামসমূহৰ সৈতে মিল থকা কিছুমান আৰম্ভণিৰ প্ৰস্তাৱ (starter suggestions) লৈ আগতে সেট কৰা হৈ থাকে। এজেণ্টৰ মাজত স্থানান্তৰ কৰিলে সহায়কটোৱে কি কৰিব পাৰিব আৰু কেনেকৈ উত্তৰ দিব, সেয়া সলনি হয় — আৰু ইয়াৰ বাবে আপুনি কোনো কনফিগাৰেচন কৰিবলগীয়া নহয়।
+Gratis AI Agent v1.9.0-এ পাঁচটা অন্তৰ্নিৰ্মিত agents সৈতে আহে, প্ৰত্যেকটো নিৰ্দিষ্ট সঁজুলিৰ এটা কেন্দ্ৰিত ছেট, অনুকূলিত system prompt, আৰু সেই ক্ষেত্ৰৰ সাধাৰণ কামৰ সৈতে মিলা আৰম্ভণি suggestions সহ পূৰ্ব-কনফিগাৰ কৰা। Agents-ৰ মাজত সলনি কৰিলে assistant-এ কি কৰিব পাৰে আৰু কেনেকৈ সঁহাৰি দিয়ে সেয়া সলনি হয় — আপোনাৰ ফালৰ পৰা কোনো configuration নকৰাকৈ। Superdav AI Agent v1.18.0-এ সংশ্লিষ্ট integrations কনফিগাৰ কৰা থাকিলে এই workflows-ত schedule-aware tools, reminder records, approval gates, আৰু SMS notifications যোগ কৰিব পাৰে।
 
-## এজেণ্ট মানে কি? (What Is an Agent?)
+## Agent কি? {#what-is-an-agent}
 
-প্ৰতিজন এজেণ্ট হৈছে এটা নামযুক্ত কনফিগাৰেচন প্ৰোফাইল যিয়ে তলত দিয়া উপাদানসমূহক একত্ৰিত কৰে:
+প্ৰতিটো agent হৈছে এটা নামযুক্ত configuration profile যি একেলগে মিলায়:
 
-- **Tools** — এইবোৰ হৈছে সেই ক্ষমতা যিবোৰ এজেণ্টক ব্যৱহাৰ কৰিবলৈ অনুমতি দিয়া হয় (উদাহৰণস্বৰূপে, এজন Content Writer-ৰ ওচৰত পোষ্ট সৃষ্টি কৰাৰ ক্ষমতা থাকে; Design Studio-ৰ ওচৰত CSS আৰু theme.json ব্যৱহাৰ কৰাৰ ক্ষমতা থাকে)
-- **System prompt** — এইবোৰ হৈছে সেই নিৰ্দেশাবলী যিয়ে এজেণ্টৰ ধৰণ, প্ৰয়োজনীয়তা আৰু সীমা নিৰ定 কৰে।
-- **Suggestions** — এইবোৰ হৈছে চ্যাট interfacer-ত আগতে লিখি থোৱা প্ৰম্পট, যিয়ে আপোনাক সোনকালে আৰম্ভ কৰাত সহায় কৰে।
+- **সঁজুলি** — agent-এ আহ্বান কৰিবলৈ অনুমতি পোৱা সক্ষমতাবোৰ (যেনে Content Writer-এ post সৃষ্টি সক্ষমতাত প্ৰৱেশাধিকাৰ পায়; Design Studio-এ CSS আৰু theme.json সক্ষমতাত প্ৰৱেশাধিকাৰ পায়)
+- **System prompt** — agent-ৰ সুৰ, অগ্ৰাধিকাৰ, আৰু সীমাবদ্ধতা নিৰ্ধাৰণ কৰা নিৰ্দেশনা
+- **Suggestions** — আপোনাক দ্ৰুতভাৱে আৰম্ভ কৰাত সহায় কৰিবলৈ chat interface-ত দেখুওৱা পূৰ্বে-লিখা prompts
 
-## এজেণ্ট পিকাৰলৈ প্ৰৱেশ কৰা (Accessing the Agent Picker)
+## Agent Picker-ত প্ৰৱেশ কৰা {#accessing-the-agent-picker}
 
-১. WordPress admin sidebar-ত **Gratis AI Agent** প্যানেলটো খুলক।
-২. চ্যাট হেডিংৰ ওপৰ-বামে থকা **agent icon** টোত ক্লিক কৰক (সক্ৰিয় এজেণ্টক প্ৰতিফলিত কৰিবলৈ এই আইকনটো সলনি হয়)।
-৩. **Agent Picker** এটা form-table overlay হিচাপে খুলি যায়। প্ৰতিজন এজেণ্টক তেওঁলোকৰ আইকন, নাম আৰু এটা শাৰীৰ বিৱৰণৰ সৈতে তালিকাভুক্ত কৰা হয়।
-৪. কোনো এজেণ্টৰ শাৰীত ক্লিক কৰি তাক সক্ৰিয় কৰক। চ্যাট হেডিংটো তৎক্ষণাত আপডেট হয়।
+1. WordPress admin sidebar-ত **Gratis AI Agent** panel খোলক।
+2. chat header-ৰ ওপৰৰ-বাওঁফালে থকা **agent icon**-ত ক্লিক কৰক (active agent প্ৰতিফলিত কৰিবলৈ icon সলনি হয়)।
+3. **Agent Picker** এটা form-table overlay হিচাপে খোলে। প্ৰতিটো agent-ৰ icon, নাম, আৰু এক-শাৰীৰ বিৱৰণৰ সৈতে তালিকাভুক্ত কৰা হয়।
+4. সক্ৰিয় কৰিবলৈ এটা agent row-ত ক্লিক কৰক। chat header তৎক্ষণাৎ update হয়।
 
-আপুনি কথোপকথনৰ মাজতো এজেণ্ট সলনি কৰিব পাৰে — নতুন এজেণ্টৰ system prompt টো পৰৱৰ্তী বাৰৰ মেছেজৰ পৰা কাৰ্যকৰী হয়।
+আপুনি conversation-ৰ মাজতো agents সলনি কৰিব পাৰে — নতুন agent-ৰ system prompt পৰৱৰ্তী message-ৰ পৰা কাৰ্যকৰী হয়।
 
-## পাঁচটা বিল্ট-ইন এজেণ্ট (The Five Built-in Agents)
+## পাঁচটা অন্তৰ্নিৰ্মিত Agents {#the-five-built-in-agents}
 
-### Content Writer
+### Content Writer {#content-writer}
 
-**মনোযোগ:** পোষ্ট, পেজ আৰু যোগাযোগ ফৰ্ম সৃষ্টি কৰা আৰু সম্পাদনা কৰা।
+**Focus:** posts, pages, আৰু contact forms সৃষ্টি আৰু সম্পাদনা।
 
-**উপলব্ধ টুলছ:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`
+**Available tools:** `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form`, `get_option`, `list_post_types`। Superdav AI Agent v1.18.0 integrations enabled থাকিলে, কনফিগাৰ কৰা calendar context, approval gates, reminders, আৰু SMS notification tools-ও approved workflows-ৰ বাবে উপলব্ধ হ’ব পাৰে।
 
-**কি ভালদৰে কৰে:**
-- এটা সংক্ষিপ্ত বা আউটলাইনৰ পৰা ব্লগ পোষ্ট লিখি প্ৰকাশ কৰা
-- এটা নতুন স্থানৰ বাবে ল্যান্ডিং পেজৰ এটা দল (batches) সৃষ্টি কৰা
-- যোগাযোগ আৰু প্ৰশ্নোত্তৰ ফৰ্ম নিৰ্মাণ কৰা
-- URL বা অনুসন্ধানৰ পৰা পোষ্টত featured image সেট কৰা
+**ই যি কাম ভালকৈ কৰে:**
+- brief বা outline-ৰ পৰা blog posts খচৰা কৰা আৰু প্ৰকাশ কৰা
+- নতুন site-ৰ বাবে landing pages-ৰ batch সৃষ্টি কৰা
+- contact আৰু enquiry forms নিৰ্মাণ কৰা
+- URL বা search-ৰ পৰা posts-ত featured images স্থাপন কৰা
+- configured Google Calendar context-ৰ পৰা event follow-up messages খচৰা কৰা, তাৰ পিছত notifications পঠিওৱাৰ আগতে approval-ৰ বাবে ৰখা
 
-**আৰম্ভণিৰ প্ৰস্তাৱ:**
-- *WordPress multisite-ৰ সুবিধাৰ ওপৰত ৫০০ শব্দৰ এটা ব্লগ পোষ্ট লিখক।*
-- *এটা About, Services, আৰু Contact পেজ সৃষ্টি কৰি প্ৰকাশ কৰক।*
-- *Contact পেজত এটা বুকিং প্ৰশ্নোত্তৰ ফৰ্ম যোগ কৰক।*
-
----
-
-### Site Builder
-
-**মনোযোগ:** এটা মাত্ৰ প্ৰম্পটৰ পৰা সম্পূৰ্ণ ওয়েবসাইট সৃষ্টি কৰা।
-
-**উপলব্ধ টুলছ:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`
-
-**কি ভালদৰে কৰে:**
-- বৰ্ণনা কৰা ব্যৱসায়ৰ ধৰণৰ বাবে এটা বহু-ধাপৰ সাইট বিল্ড پلان জেনারেট কৰা
-- প্ৰতিটো ধাপ স্বয়ংগত কাৰ্যকৰী কৰা — গঠন, বিষয়বস্তু, নেভিগেশ্যন, ডিজাইন
-- মানৱ হস্তক্ষেপৰ প্ৰয়োজন নোহোৱাকৈ প্লেনৰ মাজত হোৱা ভুলৰ পৰা পুনৰুদ্ধাৰ কৰা
-- বিল্ডৰ অংশ হিচাপে প্ৰয়োজনীয় plugin install কৰা
-- চ্যাট interfacerৰ পৰা পোনপটীয়াকৈ যোগাযোগ ফৰ্ম সৃষ্টি কৰা (Superdav AI Agent v1.10.0+)
-
-**আৰম্ভণিৰ প্ৰস্তাৱ:**
-- *এটা গැලৰি পোষ্ট টাইপ, এটা বুকিং পেজ আৰু এটা যোগাযোগ ফৰ্ম লৈ এটা ফটোফগ্ৰাফী প’ৰ্টফলিও সাইট বিল্ড কৰক।*
-- *অনলাইন মেনু, খোলার সময় আৰু টেবুল-বুকিং প্ৰশ্নোত্তৰ ফৰ্ম লৈ এটা ресторанৰ ওয়েবসাইট সৃষ্টি কৰক।*
-- *সেৱাৰ পেজ, এটা প’ৰ্টফলিও অংশ আৰু এটা ব্লগ লৈ এটা ফ্ৰিলেন্স কনসাল্টিং সাইট সেট কৰক।*
-- *সাইট বিল্ডাৰ ব্যৱহাৰ কৰি Contact পেজত এটা যোগাযোগ ফৰ্ম যোগ কৰক।*
+**Starter suggestions:**
+- *WordPress multisite-ৰ সুবিধাসমূহৰ বিষয়ে ৫০০-শব্দৰ blog post লিখক।*
+- *About, Services, আৰু Contact page সৃষ্টি কৰি প্ৰকাশ কৰক।*
+- *Contact page-ত এটা booking enquiry form যোগ কৰক।*
+- *কাইলৈৰ configured calendar event-ৰ attendees-ৰ বাবে এটা reminder খচৰা কৰক আৰু পঠিওৱাৰ আগতে approval-ৰ বাবে অপেক্ষা কৰক।*
 
 ---
 
-### Design Studio
+### Site Builder {#site-builder}
 
-**মনোযোগ:** দৃশ্যমান কাস্টমাইজেশ্যন — ৰং, টাইপগ্ৰাফী, CSS, আৰু ব্লক পটেৰ্ণ।
+**Focus:** এটা একক prompt-ৰ পৰা আৰম্ভ কৰি সম্পূৰ্ণ website সৃষ্টি।
 
-**উপলব্ধ টুলছ:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
+**Available tools:** `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error`, `create_post`, `batch_create_posts`, `register_post_type`, `create_menu`, `add_menu_item`, `inject_custom_css`, `apply_theme_json_preset`, `install_ability`, `recommend_plugin`, `create_contact_form`। Superdav AI Agent v1.18.0-ৰ সৈতে, administrators-এ enable কৰা ঠাইত configured managed-service, approval, reminder, calendar, আৰু SMS tools উপলব্ধ হ’ব পাৰে।
 
-**কি ভালদৰে কৰে:**
-- নামযুক্ত থীম প্ৰিসেট (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) প্ৰয়োগ কৰা
-- theme.jsonৰ জৰিয়তে গ্লোবাল টাইপগ্ৰাফী আৰু ৰংৰ প্যালেট সূক্ষ্মভাৱে পৰিৱৰ্তন কৰা
-- ব্ৰেণ্ড-নিৰ্দিষ্ট ওপৰাই থকা ৰংৰ বাবে কাস্টম CSS inject কৰা
-- এটা পেজৰ স্ক্ৰীনশ্বট লৈ ডিজাইনৰ সমস্যাৰ বাবে ইয়াক পৰীক্ষা কৰা
+**ই যি কাম ভালকৈ কৰে:**
+- বৰ্ণনা কৰা business type-ৰ বাবে multi-phase site build plan সৃষ্টি কৰা
+- প্ৰতিটো phase স্বয়ংক্ৰিয়ভাৱে execute কৰা — structure, content, navigation, design
+- manual intervention নালাগাকৈ plan-ৰ মাজতে errors-ৰ পৰা recover কৰা
+- build-ৰ অংশ হিচাপে recommended plugins install কৰা
+- chat interface-ৰ পৰা পোনপটীয়াকৈ contact forms সৃষ্টি কৰা (Superdav AI Agent v1.10.0+)
+- approval gates আৰু reminder records enabled থাকিলে duplicate notifications নোহোৱাকৈ launch reminders বা attendee follow-up সমন্বয় কৰা
 
-**আৰম্ভণিৰ প্ৰস্তাৱ:**
-- *warm-editorial প্ৰিসেটটো প্ৰয়োগ কৰক আৰু তাৰ পিছত primary color টো #2d6a4f সেট কৰক।*
-- *হোমপেজৰ এটা স্ক্ৰীনশ্বট লওক আৰু মই কি উন্নত কৰিব পাৰোঁ বুলি কওক।*
-- *এটা পূৰ্ণ-width background image আৰু কেন্দ্ৰীয় হেডিং লৈ এটা পুনৰ ব্যৱহাৰ কৰিব পৰা hero block pattern সৃষ্টি কৰক।*
-
----
-
-### Plugin Manager
-
-**মনোযোগ:** WordPress plugin আৱিষ্কাৰ কৰা, install কৰা আৰু ব্যৱস্থাপনা কৰা।
-
-**উপলব্ধ টুলছ:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
-
-**কি ভালদৰে কৰে:**
-- বৰ্ণনা কৰা ব্যৱহাৰৰ ক্ষেত্ৰৰ বাবে আটাইতকৈ ভাল plugin পৰামৰ্শ দিয়া
-- ৰেজিষ্ট্ৰীৰ পৰা ability pack install কৰা
-- categoria অনুসৰি উপলব্ধ ability catalogue ब्राउজি কৰা
-
-**আৰম্ভণিৰ প্ৰস্তাৱ:**
-- *membership directory-ৰ বাবে আটাইতকৈ ভাল plugin কি?*
-- *WooCommerce ability pack install কৰক।*
-- *উপলব্ধ ecommerce ability pack সমূহ মোৰ ওচৰত দেখুৱাওক।*
+**Starter suggestions:**
+- *gallery post type, booking page, আৰু contact form-সহ এটা photography portfolio site নিৰ্মাণ কৰক।*
+- *online menu, opening hours, আৰু table-booking enquiry form-সহ এটা restaurant website সৃষ্টি কৰক।*
+- *service pages, portfolio section, আৰু blog-সহ এটা freelance consulting site set up কৰক।*
+- *site builder ব্যৱহাৰ কৰি Contact page-ত এটা contact form যোগ কৰক।*
+- *site launch checklist approved হোৱাৰ পিছত, configured stakeholder contact-লৈ এটা SMS reminder পঠিয়াওক।*
 
 ---
 
-### Support Assistant
+### Design Studio {#design-studio}
 
-**মনোযোগ:** সাইটৰ বিষয়বস্তু, সেটিংস আৰু WordPress কনফিগাৰেচনৰ বিষয়ে প্ৰশ্নৰ উত্তৰ দিয়া।
+**Focus:** Visual customisation — colours, typography, CSS, আৰু block patterns।
 
-**উপলব্ধ টুলছ:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+**Available tools:** `inject_custom_css`, `apply_theme_json_preset`, `get_global_styles`, `set_global_styles`, `reset_global_styles`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `capture_screenshot`, `review_page_design`
 
-**কি ভালদৰে কৰে:**
-- বৰ্তমানৰ সাইট সেটিংস আৰু অপচনসমূহ তলবুত কৰা
-- সাইটত কি কি post types, taxonomies, আৰু menus কনফিগাৰেট কৰা আছে সেয়া ব্যাখ্যা কৰা
-- লাইভ মানদণ্ড পঢ়ি "এই সেটিংসটোৱে কি কৰে?" প্ৰশ্নৰ উত্তৰ দিয়া
-- কোনো পৰিৱৰ্তন কৰাৰ আগতে এটা read-only diagnostic layer হিচাপে কাম কৰা
+**ই যি কাম ভালকৈ কৰে:**
+- named theme presets (minimal-dark, warm-editorial, corporate-blue, vibrant-startup, classic-blog) প্ৰয়োগ কৰা
+- theme.json-ৰ মাধ্যমে global typography আৰু colour palettes সূক্ষ্মভাৱে সমন্বয় কৰা
+- brand-specific overrides-ৰ বাবে custom CSS inject কৰা
+- এটা page-ৰ screenshot লৈ design issues-ৰ বাবে review কৰা
 
-**আৰম্ভণিৰ প্ৰস্তাৱ:**
-- *এই সাইটত বৰ্তমান কোন কোন plugin আৰু সেটিংস সক্ৰিয় আছে?*
-- *এই সাইটত রেজিস্টাৰ কৰা সকলো কাস্টম post types তালিকাভুক্ত কৰক।*
-- *কোন কোন নেভিগেশ্যন মেনু আছে আৰু ইহঁত ক'ত নিৰ্ধাৰিত কৰা হৈছে?*
+**Starter suggestions:**
+- *warm-editorial preset প্ৰয়োগ কৰক আৰু তাৰ পিছত primary colour #2d6a4f-লৈ set কৰক।*
+- *homepage-ৰ এটা screenshot লৈ মোক কওক আপুনি কি উন্নত কৰিব।*
+- *full-width background image আৰু centred heading-সহ এটা reusable hero block pattern সৃষ্টি কৰক।*
+
+### Plugin Manager {#plugin-manager}
+
+**Focus:** WordPress plugins আৱিষ্কাৰ, install, আৰু পৰিচালনা কৰা।
+
+**Available tools:** `list_available_abilities`, `install_ability`, `recommend_plugin`, `get_option`, `set_option`
+
+**ই যি কাম ভালকৈ কৰে:**
+- বৰ্ণনা কৰা use case-ৰ বাবে সৰ্বোত্তম plugin recommend কৰা
+- registry-ৰ পৰা ability packs install কৰা
+- category অনুসৰি উপলব্ধ ability catalogue browse কৰা
+
+**Starter suggestions:**
+- *membership directory-ৰ বাবে সৰ্বোত্তম plugin কি?*
+- *WooCommerce abilities pack install কৰক।*
+- *মোক সকলো উপলব্ধ ecommerce ability packs দেখুৱাওক।*
 
 ---
 
-## এজেণ্ট কাস্টমাইজ কৰা (Customising Agents)
+### Support Assistant {#support-assistant}
 
-প্ৰতিজন বিল্ট-ইন এজেণ্টক `gratis_ai_agent_agents` filter ব্যৱহাৰ কৰি বৃদ্ধি কৰিব বা সলনি কৰিব পাৰি।
+**Focus:** site content, settings, আৰু WordPress configuration সম্পৰ্কীয় প্ৰশ্নৰ উত্তৰ দিয়া।
 
-### এটা বিদ্যমান এজেণ্টলৈ কাস্টম system prompt যোগ কৰা
+**Available tools:** `get_option`, `list_options`, `list_post_types`, `list_taxonomies`, `list_menus`, `list_available_abilities`
+
+**ই কি ভালদৰে কৰে:**
+- বৰ্তমান ছাইটৰ ছেটিংছ আৰু বিকল্পসমূহ বিচাৰি উলিওৱা
+- ছাইটত কোনবোৰ পোষ্ট প্ৰকাৰ, টেক্সোনমি, আৰু মেনু কনফিগাৰ কৰা হৈছে সেয়া বুজাই দিয়া
+- লাইভ মান পঢ়ি "এই ছেটিঙে কি কৰে?" ধৰণৰ প্ৰশ্নৰ উত্তৰ দিয়া
+- সলনি কৰাৰ আগতে কেৱল-পঢ়িব পৰা নিৰ্ণায়ক স্তৰ হিচাপে কাম কৰা
+
+**আৰম্ভণিৰ পৰামৰ্শ:**
+- *এই ছাইটত বৰ্তমান কোনবোৰ plugin আৰু ছেটিংছ সক্ৰিয় আছে?*
+- *এই ছাইটত পঞ্জীয়ন কৰা সকলো কাষ্টম পোষ্ট প্ৰকাৰ তালিকাভুক্ত কৰক।*
+- *কি কি নেভিগেশ্যন মেনু আছে আৰু সেইবোৰ ক’ত নিযুক্ত কৰা হৈছে?*
+
+---
+
+## Superdav অটোমেশ্যন ইণ্টিগ্ৰেশ্যনসমূহ {#superdav-automation-integrations}
+
+যেতিয়া Superdav AI Agent v1.18.0 ইণ্টিগ্ৰেশ্যনসমূহ কনফিগাৰ কৰা হয়, অন্তৰ্নিৰ্মিত agent-সমূহে অধিক সুৰক্ষিত সূচী-সচেতন অটোমেশ্যন ৱৰ্কফ্ল’ত অংশ ল’ব পাৰে:
+
+- **Google Calendar পঢ়া সঁজুলিসমূহে** follow-up কামৰ খচৰা প্ৰস্তুত কৰাৰ আগতে agent-সমূহক কনফিগাৰ কৰা কেলেণ্ডাৰ আৰু ইভেণ্ট পৰীক্ষা কৰিবলৈ দিয়ে।
+- **যোগাযোগ আৰু অংশগ্ৰহণকাৰী মেপিং**-এ ইভেণ্ট অংশগ্ৰহণকাৰীসকলক WordPress ব্যৱহাৰকাৰী বা জনা যোগাযোগৰ সৈতে মিলাবলৈ সহায় কৰে।
+- **মানৱ অনুমোদন গেটসমূহে** সংবেদনশীল কাৰ্যসমূহ এজন অধিকৃত ব্যৱহাৰকাৰীয়ে পৰ্যালোচনা আৰু নিশ্চিত নকৰালৈকে স্থগিত ৰাখে।
+- **সোঁৱৰনি ৰেকৰ্ডসমূহে** সূচীবদ্ধ কামসমূহ পুনৰ চেষ্টা বা পুনৰাবৃত্তি কৰিলে পুনৰাবৃত্ত জাননী ৰোধ কৰে।
+- **TextBee SMS জাননীসমূহে** SMS credentials আৰু workflow permissions সক্ৰিয় থাকিলেহে কনফিগাৰ কৰা টেক্সট বাৰ্তা পঠিয়ায়।
+
+পৰামৰ্শ দিয়া workflow: agent-ক বাৰ্তা বা কাৰ্য প্ৰস্তুত কৰিবলৈ কওক, অনুমোদন prompt পৰ্যালোচনা কৰক, তাৰ পিছত অনুমোদিত কাৰ্য পুনৰ আৰম্ভ কৰিবলৈ দিয়ক। পুনৰাবৃত্ত সোঁৱৰনিৰ বাবে, reminder deduplication সক্ৰিয় ৰাখক যাতে একেটা ইভেণ্ট বা যোগাযোগক বাৰে বাৰে জাননী দিয়া নহয়।
+
+---
+
+## Agentসমূহ কাষ্টমাইজ কৰা {#customising-agents}
+
+প্ৰতিটো অন্তৰ্নিৰ্মিত agent `gratis_ai_agent_agents` filter-ৰ জৰিয়তে সম্প্ৰসাৰিত বা সলনি কৰিব পাৰি।
+
+### বৰ্তমান থকা agent এটাত কাষ্টম system prompt যোগ কৰা {#adding-a-custom-system-prompt-to-an-existing-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -137,7 +153,7 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-### এটা নতুন এজেণ্ট রেজিস্টাৰ কৰা
+### নতুন agent পঞ্জীয়ন কৰা {#registering-a-new-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
@@ -156,9 +172,9 @@ add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {
 } );
 ```
 
-নতুন এজেণ্টটো filter টো চলি থকাৰ পিছত তাৎক্ষণিকভাৱে Agent Picker-ত দেখা যায়।
+filter চলাৰ লগে লগে নতুন agentটো Agent Picker-ত দেখা যায়।
 
-### এটা বিল্ট-ইন এজেণ্ট நீকৰণ কৰা
+### অন্তৰ্নিৰ্মিত agent আঁতৰোৱা {#removing-a-built-in-agent}
 
 ```php
 add_filter( 'gratis_ai_agent_agents', function ( array $agents ): array {

@@ -3,7 +3,7 @@ title: API-ის终ოს登録
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# The Ultimate Multisite Register API конектоრი (endpoint)
+# The Ultimate Multisite Register API конектоრი (endpoint) {#the-ultimate-multisite-register-api-endpoint}
 
 ამ ტუტორიაში გეცოდინება, როგორ გამოვიყენოთ Ultimate Multisite /register API конектоრი ახალი მომხმარებლის მთელი ინტეგრაციის პროცესის შესაქმნელად თქვენს ქსელში და როგორ გავაკეთოთ ეს Zapier-ით.
 
@@ -29,11 +29,11 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 ახლა კი, გამოვვიყოთ конеექტზე და შემდეგ შევქმნათ რეგისტრაციის მოქმედება Zapier-ში.
 
-## Endpoinტი სხეულის პარამეტრები (Endpoint body parameters)
+## Endpoinტი სხეულის პარამეტრები (Endpoint body parameters) {#endpoint-body-parameters}
 
 მოდით მიმოვიხილოთ მინიმალური ინფორმაცია, რომელიც საჭიროა конеექტზე გაგზავნისთვის. ამ სტატიის ბოლოს იპな შენს სრულ გამოძახებას.
 
-### Customer
+### Customer {#customer}
 
 ეს არის ინფორმაცია, რომელიც საჭიროა მომხმარებლისა და Ultimate Multisite-ის კლიენტის შექმნის პროცესისთვის:
 
@@ -43,25 +43,25 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **წევრიანობა (Membership)**
+### **წევრიანობა (Membership)** {#membership}
 
 ამ ობიექტში ჩვენ მხოლოდ წევრიანობის სტატუსის ინფორმაცია გვჭირდება.
 
 "membership" { "status" : "string", // ერთ-ერთი: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **პროდუქტები (Products)**
+### **პროდუქტები (Products)** {#products}
 
 პროდუქტებს მიენიჭება მასში 1 ან მეტი პროდუქტის ID-ების მასივი თქვენს ქსელში. ყურადღება მიაქციეთ, რომ ეს endpoinტი პროდუქტებს არ ქმნის. უფრო დეტალურად გაიგებისთვის პროდუქტების შექმნის endpoint-ზე Ultimate Multisite-ის დოკუმენტაციას შეამოწმეთ.
 
 **"products" : [1,2],**
 
-### **გადახდა (Payment)**
+### **გადახდა (Payment)** {#payment}
 
 წევრიანობის მსგავსად, ჩვენ მხოლოდ სტატუსი გვჭირდება.
 
 **"payment" { "status" : "string", // ერთ-ერთი: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **საიტი (Site)**
+### **საიტი (Site)** {#site}
 
 და სხეულის დახურვისთვის გვჭირდება საიტის URL და სათაური, ორივე Site ობიექტში.
 
@@ -69,13 +69,13 @@ _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 
 რეგისტრირების endpoint-ის დაბრუნება იქნება მასივი ახლად შექმნილი წევრიანობის ინფორმაციით.
 
-## ქმედების (action) შექმნა Zapier-ში
+## ქმედების (action) შექმნა Zapier-ში {#creating-an-action-in-zapier}
 
 ამ ახალი და უფრო ძლიერი ანგარიშის შექმნის endpoint-ის გამოჩენით, თქვენ ასევე მიიღებთ ახალ ქმედებას Zapier-ში.
 
 იცნობთ თუ არა, როგორ გამოიყენოთ და ისიამოვნოთ ყველაფრით, რასაც Zapier-ის ახალი ვერსია გთავაზობთ? მეტი ინფორმაციისთვის აქ ნახეთ. (link?)
 
-### ქმედების შექმნა
+### ქმედების შექმნა {#creating-an-action}
 
 გამოვიყენოთ Google Forms-ის ინტეგრაცია Zapier-თან, რათა უკეთ დავინახოთ, როგორ გამოვიყენოთ რეგისტრაციის конечная წერტილი (registration endpoint). ყოველ ჯერზე, როდესაც ეს ფორმა შევსდება და ინფორმაცია შენახული იქნება ფორმის პასუხების ცხრილში, Ultimate Multisite ქსელში ახალი წევრობა შეიქმნება.
 
@@ -105,7 +105,7 @@ Informatsja podesena, pradėkite galutinį testą. Maistoje ekrane pakaite matyt
 
 Testuokite savo naują Zap – jis turi sėkmingai pabaigti. Jei pasirodys koks nors klaida, patikrinkite visus laukus ir patikrinkite, ar jie siunami teisingai. Kadangi informacijos daug, kai kuriuos dalykus gali būti neįvykiantiems.
 
-### Visos endpoint parametrai
+### Visos endpoint parametrai {#complete-endpoint-parameters}
 
 Štai visas skaitinimas ir visi laukų galimybės, kurios gali būti siuntamos:
 

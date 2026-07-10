@@ -3,15 +3,15 @@ title: Site Builder Orchestration v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Site Builder Orchestratie v2
+# Site Builder Orchestratie v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestratie v2 (geïntroduceerd in Gratis AI Agent v1.4.0) is de motor die multi-step websitecreatie aandrijft. Wanneer u de agent vraagt om bijvoorbeeld "een restaurantwebsite te bouwen" of "een portfolio met een blog te creëren", breekt de orkestrator dat hoogwaardige doel op in een gestructureerd **plan**, ontdekt de benodigde plugins om dit te realiseren, voert elke stap in volgorde uit, houdt de voortgang bij en herstelt autonoom van fouten.
 
 ---
 
-## Hoe Het Werkt
+## Hoe Het Werkt {#how-it-works}
 
-### 1. Plan Generatie
+### 1. Plan Generatie {#1-plan-generation}
 
 Wanneer de agent een instructie voor het bouwen van een website ontvangt, roept deze de `create_site_plan` functionaliteit aan om een JSON **site plan** te produceren. Het plan beschrijft:
 
@@ -61,7 +61,7 @@ Wanneer de agent een instructie voor het bouwen van een website ontvangt, roept 
 }
 ```
 
-### 2. Plugin Discovery
+### 2. Plugin Discovery {#2-plugin-discovery}
 
 Voordat de uitvoering begint, scant de orkestrator de `plugin_requirements` van het plan en controleert welke plugins al actief zijn. Voor ontbrekende plugins:
 
@@ -71,7 +71,7 @@ Voordat de uitvoering begint, scant de orkestrator de `plugin_requirements` van 
 
 Mislukkingen bij het ontdekken van plugins zijn niet fataal — de orkestrator markeert de getroffen stappen als `skipped` en gaat verder met de rest van het plan.
 
-### 3. Plan Uitvoering
+### 3. Plan Uitvoering {#3-plan-execution}
 
 De orkestrator roept `execute_site_plan` aan met de plan ID. De uitvoering verloopt fase voor fase, stap voor stap:
 
@@ -79,7 +79,7 @@ De orkestrator roept `execute_site_plan` aan met de plan ID. De uitvoering verlo
 - **Parallel steps** — stappen binnen dezelfde fase die geen onderlinge afhankelijkheden hebben, worden gelijktijdig uitgevoerd wanneer de vlag `parallel` is ingesteld.
 - **Step timeout** — elke stap heeft een individuele timeout (standaard: de `Ability Timeout` instelling). Een stap die time-out gaat, wordt gemarkeerd als `failed` en het plan gaat verder.
 
-### 4. Voortgangsregistratie
+### 4. Voortgangsregistratie {#4-progress-tracking}
 
 Roep `get_plan_progress` op elk moment om de uitvoeringsstatus te controleren:
 
@@ -104,7 +104,7 @@ WP-CLI gebruikers kunnen de voortgang monitoren met:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Foutopsporing (Error Recovery)
+### 5. Foutopsporing (Error Recovery) {#5-error-recovery}
 
 Als een stap mislukt, controleert de orkestrator op een **fallback** stap die in het plan is gedefinieerd:
 
@@ -115,9 +115,9 @@ De agent rapporteert alle fouten in de uiteindelijke plan samenvatting en kan su
 
 ---
 
-## Site Plan Abilities
+## Site Plan Abilities {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Genereert een gestructureerd site plan op basis van een natuurlijke taal beschrijving van een doel.
 
@@ -134,7 +134,7 @@ Genereert een gestructureerd site plan op basis van een natuurlijke taal beschri
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Start met de uitvoering van een eerder gegenereerd site plan.
 
@@ -150,7 +150,7 @@ Start met de uitvoering van een eerder gegenereerd site plan.
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Retourneert de huidige uitvoeringsstatus van een site plan.
 
@@ -164,7 +164,7 @@ Retourneert de huidige uitvoeringsstatus van een site plan.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Lost een mislukte stap handmatig op en hervat de planuitvoering vanaf de volgende stap. Gebruik dit wanneer automatisch herstel niet mogelijk was en u wilt ingrijpen.
 
@@ -180,7 +180,7 @@ Lost een mislukte stap handmatig op en hervat de planuitvoering vanaf de volgend
 
 ---
 
-## Vergelijking v1 en v2
+## Vergelijking v1 en v2 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Lost een mislukte stap handmatig op en hervat de planuitvoering vanaf de volgend
 
 ---
 
-## WP-CLI Plan Commando's
+## WP-CLI Plan Commando's {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Genereert een site plan op basis van een doelbeschrijving.
 
@@ -205,7 +205,7 @@ Genereert een site plan op basis van een doelbeschrijving.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Voert een eerder gegenereerd plan uit.
 
@@ -213,7 +213,7 @@ Voert een eerder gegenereerd plan uit.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Toont de huidige voortgang van een uitvoerend of voltooid plan.
 
@@ -221,7 +221,7 @@ Toont de huidige voortgang van een uitvoerend of voltooid plan.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Lijst alle site plans (wachtend, in uitvoering en voltooid).
 
@@ -229,7 +229,7 @@ Lijst alle site plans (wachtend, in uitvoering en voltooid).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Reset een mislukt plan naar `pending` zodat het opnieuw uitgevoerd kan worden vanaf het begin.
 

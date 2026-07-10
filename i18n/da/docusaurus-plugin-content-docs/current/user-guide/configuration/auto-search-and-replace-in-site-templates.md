@@ -3,7 +3,7 @@ title: Automatisk søgning og erstatning i sidtempler
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Automatisk søgning og erstatning i sidtempler (v2)
+# Automatisk søgning og erstatning i sidtempler (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Denne tutorial kræver WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Din kunde vil derefter kunne udfylde dette felt under registreringen.
 
 Ultimate Multisite vil derefter automatisk erstatte pladsholderne med de data, kunden har angivet.
 
-## **Løsning på problemet med "templet fyldt med pladsholdere"**
+## **Løsning på problemet med "templet fyldt med pladsholdere"** {#solving-the-template-full-of-placeholders-problem}
 
 Alt det her er fantastisk, men vi støder på et grimt problem: nu er vores sidtempler - som vores kunder kan besøge - fyldt med grimme pladsholdere, der ikke fortæller meget.
 

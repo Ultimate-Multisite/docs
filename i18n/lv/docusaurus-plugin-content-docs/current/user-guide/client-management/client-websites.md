@@ -3,7 +3,7 @@ title: Klientu vietnes
 sidebar_position: 5
 _i18n_hash: 8feb5f30fc30be14a81037f0124c93f6
 ---
-# Jūsu Klientu vietnes (v2)
+# Jūsu Klientu vietnes (v2) {#your-clients-websites-v2}
 
 Pēc reģistrēšanās jūsu tīklā, klienti var piekļūt savam dashboardam.
 

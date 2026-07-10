@@ -4,13 +4,13 @@ title: Filter - get_blogs_of_user
 sidebar_label: get_blogs_of_user
 _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 ---
-# Filter: get_blogs_of_user
+# Filter: get_blogs_of_user {#filter-getblogsofuser}
 
 এটি মূল WP Filter-এর মতো কাজ করে, অতিরিক্ত সুরক্ষার জন্য।
 
 এটি একটি ব্যবহারকারীর সাথে যুক্ত সাইটগুলোর তালিকা ফিল্টার করে।
 
-## প্যারামিটারসমূহ
+## প্যারামিটারসমূহ {#parameters}
 
 | নাম | ধরন | বিবরণ |
 |------|------|-------------|
@@ -18,9 +18,9 @@ _i18n_hash: 77871d3651eb7f3ab1d055fdb89c061e
 | $user_id | `int` | ব্যবহারকারী আইডি। |
 | $all | `bool` | ফেরত আসা সাইট অ্যারেতে সমস্ত সাইট থাকা উচিত কিনা, এমনকি যেগুলো 'deleted', 'archived', বা 'spam' হিসেবে চিহ্নিত। ডিফল্ট মান false। |
 
-### কখন থেকে
+### কখন থেকে {#since}
 
 - 2.0.11
-### উৎস
+### উৎস {#source}
 
 [`inc/managers/class-site-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/managers/class-site-manager.php#L851) এর লাইন ৮৫১ এ সংজ্ঞায়িত।

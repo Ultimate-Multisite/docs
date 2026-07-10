@@ -1,0 +1,24 @@
+---
+id: wu_mcp_adapter_initialized
+title: Amal - wu_mcp_adapter_initialized
+sidebar_label: wu_mcp_adapter_initialized
+_i18n_hash: 0d5224ab7efaa954ce3d5b5c20e7f8c1
+---
+# Amal: wu_mcp_adapter_initialized {#action-wumcpadapterinitialized}
+
+MCP adapter ishga tushirilgandan keyin ishga tushadi.
+
+Boshqa pluginlar va themelarga o‘z imkoniyatlarini ro‘yxatdan o‘tkazishga ruxsat beradi.
+
+## Parametrlar {#parameters}
+
+| Nomi | Turi | Tavsif |
+|------|------|-------------|
+| $mcp_adapter | `\MCP_Adapter` | MCP adapter nusxasi. |
+
+### Boshlab {#since}
+
+- 2.5.0
+### Manba {#source}
+
+[`inc/class-mcp-adapter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-mcp-adapter.php#L98) faylida, 98-qatorda aniqlangan

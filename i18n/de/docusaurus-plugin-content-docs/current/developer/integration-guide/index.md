@@ -1,15 +1,17 @@
 ---
 title: Integrationsleitfaden
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrationsleitfaden
+# Integrationsleitfaden {#integration-guide}
 
-Dieser Leitfaden behandelt gängige Integrationsmuster mit Ultimate Multisite, einschließlich der Verbindung zu externen Diensten, dem Erstellen benutzerdefinierter Zahlungs-Gateways und der Verarbeitung von Webhooks.
+Dieser Leitfaden behandelt gängige Integrationsmuster mit Ultimate Multisite, einschließlich der Anbindung an externe Dienste, der Erstellung eigener Zahlungsgateways und der Verarbeitung von Webhooks.
 
-## CRM-Integration
+Für isolierte Mandanteninfrastruktur siehe [Multi-Tenancy-Integration](./multi-tenancy) für Anleitungen zu souveränem Mandanten-Bootstrap, Migrationsverifizierung, SSO und Teardown.
 
-Synchronisieren Sie Kundendaten mit Ihrem CRM, wenn neue Kunden sich anmelden:
+## CRM-Integration {#crm-integration}
+
+Synchronisiere Kundendaten mit deinem CRM, wenn sich neue Kunden registrieren:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## Analyse-Integration
+## Analytics-Integration {#analytics-integration}
 
-Verfolgen Sie wichtige Geschäftsereignisse über den gesamten Kundenlebenszyklus:
+Verfolge wichtige Geschäftsereignisse über den gesamten Kundenlebenszyklus hinweg:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Entwicklung benutzerdefinierter Gateways](./custom-gateway) — Erstellen Sie Ihr eigenes Zahlungs-Gateway
-- [Webhook-Verarbeitung](./webhooks) — Erstellen Sie benutzerdefinierte Webhook-Endpunkte
+- [Entwicklung eines eigenen Gateways](./custom-gateway) — Erstelle dein eigenes Zahlungsgateway
+- [Webhook-Verarbeitung](./webhooks) — Erstelle eigene Webhook-Endpunkte
+- [Multi-Tenancy-Integration](./multi-tenancy) — Integriere dich in souveräne Mandanten-Lebenszyklusabläufe

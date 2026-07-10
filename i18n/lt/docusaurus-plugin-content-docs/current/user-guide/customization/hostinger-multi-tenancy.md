@@ -3,13 +3,13 @@ title: Hostinger Multitenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 pridėja Hostinger multi-tenancy funkciją, leidžiančią išlaikyti įrenginius dalyvauti su suvereninės skaitmeninės infrastruktūros (tenant) nustatymais kartu su esamais Hostinger domenų mapavimo integracijomis.
 
 Naudokite šią funkciją, kai tenant domenus ir izoliuotas tenant infrastruktūra valdomos per Hostinger hPanel.
 
-## Įdiegimo atsitikimo žanai
+## Įdiegimo atsitikimo žanai {#setup-notes}
 
 1. Konfigūruokite pagrindinę Hostinger integraciją per **Ultimate Multisite > Settings > Host Integrations**.
 2. Patikrinkite, ar Hostinger API token gali valdyti tikslų domeną arba subdomainą.
@@ -19,14 +19,14 @@ Naudokite šią funkciją, kai tenant domenus ir izoliuotas tenant infrastruktū
 
 Hostinger funkcija naudoja bendrą Hostingerę ryšį host-sidoros veiksmų atlikimui. DNS vis dar turi viršyti į tinkamą Hostingerio paskyrą, ir apribojimai hPanel paskyros vis dar gelten.
 
-## Funkcijos specifiniai keitimai
+## Funkcijos specifiniai keitimai {#capability-specific-changes}
 
 - Suvereniniai tenantai gali būti sukurti su host-aware domenų veiksmis.
 - Same-machine bazos host stringai normalizuojami prieš suteikant patvirtinimą.
 - Hostingeri valdomi tenantai turėtų naudoti bazos host vertę, kuri rodoma hPanel'e, jei WordPress runtime ne reikalauja vietinio perpasenkimo (override).
 - SSO vizitas priklauso nuo to, kad tenantas domenų adresas viršytų į Hostingerio hostu sukurtyjantą tenantą.
 
-## Hostinger tenantų problemų vykdymas
+## Hostinger tenantų problemų vykdymas {#troubleshooting-hostinger-tenants}
 
 - Jei instalacija tenantos nepasirenka, patikrinkite, ar domenas jau priklausas su Hostingerio paskyra.
 - Jei bazos patvirtinimas nepasirenka, padykite taikomybą tenantos DB vartotojo vardą, bazos pavadinimu ir host bindingu per hPanel.

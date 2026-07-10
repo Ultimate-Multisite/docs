@@ -3,17 +3,17 @@ title: Export a import
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Export a importovať
+# Export a importovať {#export--import}
 
 Ultimate Multisite 2.9.0 pridáva nástroj **Export a import** pod sekciu **Nástroje > Export a import**. Použite ho, ak potrebujete jeden WordPress port v ZIP súbor zbalil, obnoviť tento ZIP alebo presmiesti port medzi kompatibilnými inštaláciami Ultimate Multisite a single-site WordPress.
 
-## Požadované prístupy
+## Požadované prístupy {#required-permissions}
 
 Musíte sa prihlásiť ako admin, ktorý má prístup k menu **Nástroje** v portu, ktorý exportujete alebo importujete. V siete multisite použite účet administrátora siete pri exportovaní alebo importovaní subportov z nástrojov Ultimate Multisite na úrovni siete.
 
 Stiahnutia ZIP súborov exportu sa poskytujú cez autentizovaný bod stiahnutia, takže si udržujte aktívnú admin sesiu, kým sa stiahnutie neuskutoční a nespoľahujte generované URL odkazy na stiahnutie verejnosti.
 
-## Exportovanie portu do ZIP súboru
+## Exportovanie portu do ZIP súboru {#exporting-a-site-to-a-zip}
 
 1. V admin WordPressa pre port, ktorý chcete skopírovať, prejdite do **Nástroje > Export a import**.
 2. Otvorte priestor exportu a vyberte port, ktorý chcete zbalil.
@@ -23,7 +23,7 @@ Stiahnutia ZIP súborov exportu sa poskytujú cez autentizovaný bod stiahnutia,
 
 Udržujte ZIP súbor na bezpečnom mieste. Môže obsahovať obsah portu, nastavenia, media súbory a vybrané kódsedlove.
 
-## Čo export zahŕňa
+## Čo export zahŕňa {#what-the-export-includes}
 
 ZIP súbor exportu môže obsahovať:
 
@@ -34,7 +34,7 @@ ZIP súbor exportu môže obsahovať:
 
 Účelový súbor ZIP závisí na objeme médií, vybraných pluginov a tém, ako aj veľkosti tabuliek databázy webu.
 
-## Importovanie webu z ZIP súboru
+## Importovanie webu z ZIP súboru {#importing-a-site-from-a-zip}
 
 1. Prejdite do **Nástroje > Export a import** na cieľovej WordPress site.
 2. Otvorte priestor pre import a načtajte ZIP súbor vytvorený nástrojom Export a import.
@@ -46,7 +46,7 @@ ZIP súbor exportu môže obsahovať:
 
 Na jednorazovej WordPress inštalácii sa import ZIP súboru nahradí aktuálnym webom načítaným webom. Pred začiatkom vytvorte kompletnú zálohu cieľového webu a vyhýbajcie sa spúšťania viacerých importov pre ten istý web naraz.
 
-## Omeňujúce informácie a poznámky o kompatibilite
+## Omeňujúce informácie a poznámky o kompatibilite {#limitations-and-compatibility-notes}
 
 Dôležité upozornenia:
 

@@ -3,15 +3,15 @@ title: Skapa meny
 sidebar_position: 3
 _i18n_hash: 916268f55a4ba451a8d8561d077b07f3
 ---
-# Skapa meny
+# Skapa meny {#create-menu}
 
 Funktionen **Skapa meny** skapar WordPress-navigeringsmenyer och stöder distinkta navigeringsetiketter som skiljer sig från sidtitlarna.
 
-## Översikt
+## Översikt {#overview}
 
 Denna funktion utökar standardfunktionaliteten för menyhantering genom att möjliggöra specificering av en `navigation_label`-parameter. Detta gör det möjligt för dig att skapa menyer där etiketten som visas i navigeringen skiljer sig från sidtiteln, vilket ger större flexibilitet i webbplatsstrukturen och användarupplevelsen.
 
-## Parametrar
+## Parametrar {#parameters}
 
 | Parameter | Typ | Obligatorisk | Beskrivning |
 |-----------|------|--------------|-------------|
@@ -19,7 +19,7 @@ Denna funktion utökar standardfunktionaliteten för menyhantering genom att mö
 | `location` | string | Nej | Temalokation som ska tilldelas menyn, t.ex. `primary` |
 | `navigation_label` | string | Nej | Etiketten som ska visas i navigeringen (skiljer sig från sidtiteln) |
 
-## Returvärde
+## Returvärde {#return-value}
 
 ```json
 {
@@ -30,7 +30,7 @@ Denna funktion utökar standardfunktionaliteten för menyhantering genom att mö
 }
 ```
 
-## Navigeringsetikett vs. Sidtitel
+## Navigeringsetikett vs. Sidtitel {#navigation-label-vs-page-title}
 
 Parametern `navigation_label` låter dig separera det interna menynamnet från etiketten som visas för användarna:
 
@@ -43,9 +43,9 @@ Detta är användbart när:
 - Du behöver stödja flera språk med olika längder på etiketter
 - Du bygger menyer för specifika regioner eller användargrupper
 
-## Användningsexempel
+## Användningsexempel {#usage-examples}
 
-### Exempel 1: Enkel meny med navigeringsetikett
+### Exempel 1: Enkel meny med navigeringsetikett {#example-1-simple-menu-with-navigation-label}
 
 **Prompt:**
 ```
@@ -62,7 +62,7 @@ Skapa en huvudnavigering med namnet "Main Navigation" och navigeringsetiketten "
 }
 ```
 
-### Exempel 2: Meny för specifik temalokation
+### Exempel 2: Meny för specifik temalokation {#example-2-menu-for-specific-theme-location}
 
 **Prompt:**
 ```
@@ -80,7 +80,7 @@ Skapa en sidfotmeny med namnet "Footer Links" och navigeringsetiketten "Quick Li
 }
 ```
 
-## Integration med Theme Builder
+## Integration med Theme Builder {#integration-with-theme-builder}
 
 När du använder Theme Builder:
 
@@ -89,13 +89,13 @@ När du använder Theme Builder:
 3. Tilldelar menyer till de korrekta temalokationerna
 4. Stöder tillägg av menyobjekt efter skapandet
 
-## Relaterade funktioner
+## Relaterade funktioner {#related-abilities}
 
 - **`add_menu_item`** — Lägg till objekt i en befintlig meny
 - **`update_menu`** — Byta namn på en meny eller tilldela den till en annan temalokation
 - **`delete_menu`** — Ta bort en meny från din webbplats
 
-## Bästa praxis
+## Bästa praxis {#best-practices}
 
 - **Använd tydliga navigeringsetiketter** — håll etiketterna koncisa och beskrivande för användarna
 - **Matcha temalokationer** — tilldela menyer till rätt temalokation för korrekt visning
@@ -103,14 +103,14 @@ När du använder Theme Builder:
 - **Testa responsivitet** — verifiera att menyer visas korrekt på mobila enheter
 - **Lokalisera etiketter** — använd olika navigeringsetiketter för olika språkversioner
 
-## Begränsningar
+## Begränsningar {#limitations}
 
 - Navigeringsetiketter är endast för visning; det interna `name` används fortfarande för WordPress-identifiering
 - Temastödet varierar; inte alla teman stöder alla menylokationer
 - Menyobjekt måste läggas till separat efter att menyn har skapats
 - Att ändra en navigeringsetikett kräver att du uppdaterar menyn
 
-## Relaterade funktioner
+## Relaterade funktioner {#related-abilities-1}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — skapa logotyper för webbplatsens rubrik
 - [Validate Palette Contrast](./validate-palette-contrast.md) — säkerställ tillgängliga färgscheman

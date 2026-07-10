@@ -3,7 +3,7 @@ title: Gestionem vinculorum partibilium pro planibus
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Gestionem Linkus Partagibilium Pro Planibus
+# Gestionem Linkus Partagibilium Pro Planibus {#managing-shareable-links-for-plans}
 
 Ultimate Multisite tibi optionem dabis ut linkus planum directum cum clienti tuis partas. Ut hoc facere possis, ad quamvis paginam editam planum tuum adere et boton **_Click to copy the Shareable Link_** clica.
 

@@ -3,7 +3,7 @@ title: 管理方案的可分享連結
 sidebar_position: 18
 _i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# 管理方案的可分享連結
+# 管理方案的可分享連結 {#managing-shareable-links-for-plans}
 
 Ultimate Multisite 提供您直接與客戶分享方案連結的功能。若要使用此功能，請前往任一方案的編輯頁面，點擊「_點擊複製可分享連結_」按鈕。
 

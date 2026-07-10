@@ -1,15 +1,17 @@
 ---
-title: সংযুক্তি নির্দেশিকা
+title: ইন্টিগ্রেশন গাইড
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ইন্টিগ্রেশন গাইড
+# ইন্টিগ্রেশন গাইড {#integration-guide}
 
-এই গাইডটি Ultimate Multisite-এর সাথে সাধারণ ইন্টিগ্রেশন প্যাটার্নগুলো কভার করে। এর মধ্যে রয়েছে বাইরের সার্ভিসগুলোর সাথে কানেক্ট করা, কাস্টম পেমেন্ট গেটওয়ে তৈরি করা এবং ওয়েবহুকস (webhooks) হ্যান্ডেল করা।
+এই গাইডে Ultimate Multisite-এর সঙ্গে সাধারণ ইন্টিগ্রেশন প্যাটার্নগুলো আলোচনা করা হয়েছে, যার মধ্যে বাহ্যিক সার্ভিসে সংযোগ, কাস্টম পেমেন্ট গেটওয়ে তৈরি, এবং webhook পরিচালনা অন্তর্ভুক্ত।
 
-## CRM ইন্টিগ্রেশন
+আলাদা tenant অবকাঠামোর জন্য, sovereign tenant bootstrap, migration verification, SSO, এবং teardown নির্দেশনার জন্য [Multi-Tenancy Integration](./multi-tenancy) দেখুন।
 
-যখন নতুন গ্রাহক সাইন আপ করবেন, তখন তাদের ডেটা আপনার CRM-এ সিঙ্ক (sync) করুন:
+## CRM ইন্টিগ্রেশন {#crm-integration}
+
+নতুন গ্রাহক সাইন আপ করলে আপনার CRM-এ গ্রাহকের ডেটা সিঙ্ক করুন:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## অ্যানালিটিক্স ইন্টিগ্রেশন
+## Analytics ইন্টিগ্রেশন {#analytics-integration}
 
-গ্রাহকের জীবনচক্র জুড়ে গুরুত্বপূর্ণ ব্যবসায়িক ইভেন্টগুলো ট্র্যাক করুন:
+গ্রাহক লাইফসাইকেলজুড়ে গুরুত্বপূর্ণ ব্যবসায়িক ইভেন্ট ট্র্যাক করুন:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## পরবর্তী পদক্ষেপ
+## পরবর্তী ধাপ {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — আপনার নিজস্ব পেমেন্ট গেটওয়ে তৈরি করুন
-- [Webhook Handling](./webhooks) — কাস্টম ওয়েবহুক এন্ডপয়েন্ট তৈরি করুন
+- [কাস্টম গেটওয়ে ডেভেলপমেন্ট](./custom-gateway) — নিজের পেমেন্ট গেটওয়ে তৈরি করুন
+- [Webhook পরিচালনা](./webhooks) — কাস্টম webhook endpoint তৈরি করুন
+- [Multi-Tenancy Integration](./multi-tenancy) — sovereign tenant lifecycle flow-এর সঙ্গে ইন্টিগ্রেট করুন

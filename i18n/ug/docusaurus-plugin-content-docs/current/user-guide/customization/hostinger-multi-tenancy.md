@@ -3,13 +3,13 @@ title: Hostinger Çoklu Kiralamalar
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0، Hostinger multi-tenancy (چند مالکیت) قابلیت اضافه کرد تا میزبانی شده دامنه‌ها بتوانند در کنار ادغام نقشه‌برداری دامنه موجود با تنظیمات جدید، در فرآیند فراهم کردن مستأجران حاکمیتی شرکت کنند.
 
 وقتی دامنه‌های مستأجر و زیرساخت‌های ایزوله مستأجری از طریق Hostinger hPanel مدیریت می‌شوند، از این قابلیت استفاده کنید.
 
-## نکات راه‌اندازی
+## نکات راه‌اندازی {#setup-notes}
 
 ۱. تنظیمات اصلی ادغام Hostinger را در **Ultimate Multisite > Settings > Host Integrations** پیکربندی کنید.
 ۲. تأیید کنید که توکن API Hostinger می‌تواند دامنه یا زیردامنه هدف را مدیریت کند.
@@ -19,14 +19,14 @@ Ultimate Multisite: Multi-Tenancy 1.2.0، Hostinger multi-tenancy (چند مال
 
 قابلیت Hostinger از اتصال مشترک Hostinger برای عملیات سمت میزبان استفاده می‌کند. DNS همچنان باید به حساب Hostinger صحیح اشاره کند و محدودیت‌های حساب hPanel همچنان اعمال می‌شود.
 
-## تغییرات خاص قابلیت‌ها
+## تغییرات خاص قابلیت‌ها {#capability-specific-changes}
 
 - می‌توان با عملیات دامنه آگاه به میزبان، مستأجران حاکمیتی (Sovereign tenants) ایجاد کرد.
 - رشته‌های میزبان دیتابیس روی یک ماشین را قبل از اعطای تأیید نرمال‌سازی می‌کنیم.
 - مستأجرانی که توسط Hostinger مدیریت می‌شوند باید از مقدار میزبان دیتابیس نشان داده شده در hPanel استفاده کنند، مگر اینکه زمان اجرا (runtime) وردپرس نیاز به بازنویسی محلی داشته باشد.
 - بازدیدهای SSO بر حل شدن دامنه مستأجر به مستأجر میزبانی شده توسط Hostinger متکی هستند.
 
-## عیب‌یابی مستأجران Hostinger
+## عیب‌یابی مستأجران Hostinger {#troubleshooting-hostinger-tenants}
 
 - اگر نصب یک مستأجر با شکست مواجه شد، تأیید کنید که دامنه قبلاً به حساب Hostinger متصل شده است.
 - اگر تأیید دیتابیس با شکست مواجه شد، نام کاربری دیتابیس، نام دیتابیس و اتصال میزبان را با hPanel مقایسه کنید.

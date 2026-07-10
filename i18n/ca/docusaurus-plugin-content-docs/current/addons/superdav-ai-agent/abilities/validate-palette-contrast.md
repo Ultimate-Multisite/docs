@@ -3,15 +3,15 @@ title: Validar el contraste de la paleta
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# Validar el Contraste de la Paleta
+# Validar el Contraste de la Paleta {#validate-palette-contrast}
 
 La capacidad **Validar el Contraste de la Paleta** comprueba los pares de colores en la paleta del teu disseny per a la conformitat amb les WCAG (Web Content Accessibility Guidelines) abans d'aplicar-los al teu tema.
 
-## Resum
+## Resum {#overview}
 
 Aquesta capabilitat assegura que el esquema de colors del teu lloc web complix els estàndards d'accessibilitat validant les relacions de contraste entre els textos i els fons. Ajuda a prevenir combinacions de colors que podrien ser difícils de llegir per als usuaris amb discapacitat visual.
 
-## Format d'entrada
+## Format d'entrada {#input-format}
 
 Aquesta capabilitat accepta una paleta de colors com entrada:
 
@@ -35,7 +35,7 @@ Aquesta capabilitat accepta una paleta de colors com entrada:
 }
 ```
 
-### Paràmetres
+### Paràmetres {#parameters}
 
 | Paràmetre | Tip | Obligatori | Descripció |
 |---|---|---|---|
@@ -43,7 +43,7 @@ Aquesta capabilitat accepta una paleta de colors com entrada:
 | `wcag_level` | string | No | Nivell de conformitat WCAG: "A", "AA" (default) o "AAA" |
 | `pairs_to_check` | array | No | Parecs de colors específics a validar (p. ex., `["primary-text", "background-text"]`) |
 
-## Nivells WCAG Comprovats
+## Nivells WCAG Comprovats {#wcag-levels-checked}
 
 La capabilitat valida les relacions de contraste segons els estàndards WCAG:
 
@@ -90,7 +90,7 @@ La possibilitat retorna un informe de validació detallat:
 }
 ```
 
-### Campins de Sortida
+### Campins de Sortida {#output-schema}
 
 | Camp | Tip | Descripció |
 |---|---|---|
@@ -101,7 +101,7 @@ La possibilitat retorna un informe de validació detallat:
 | `status` | string | "pass" o "fail" per a cada pare |
 | `recommendations` | array | Suggeriments per millorar els pares que fallin |
 
-## Exemple d'Ús
+## Exemple d'Ús {#output-fields}
 
 **Prompt:**
 ```
@@ -114,7 +114,7 @@ La capacitat valida totes les combinacions de colors i retorna:
 - ✅ Fons + Text: relació de 12,1:1 (passa WCAG AAA)
 - General: Compliment amb WCAG AA
 
-## Integració amb Theme Builder
+## Integració amb Theme Builder {#usage-example}
 
 Quan utilitzes la selecció de direcció de disseny del Theme Builder, la capacitat Validar Paleta Contrast:
 
@@ -124,7 +124,7 @@ Quan utilitzes la selecció de direcció de disseny del Theme Builder, la capaci
 4. Ofereix recomanacions per a parells no conformes
 5. Previne l'aplicació de esquemes de color inacessibles
 
-## Bontes Pràctiques
+## Bontes Pràctiques {#integration-with-theme-builder}
 
 - **Comença amb el nivell AA** — WCAG AA és el estàndard per a la majoria dels webs
 - **Prova abans d'aplicar** — valida la teva paleta abans de comprometer-te amb un disseny
@@ -132,7 +132,7 @@ Quan utilitzes la selecció de direcció de disseny del Theme Builder, la capaci
 - **Considera les preferències dels usuaris** — alguns usuaris poden tenir sensibilitat addicional al color
 - **Utilitza verificadors de contrast** — combina aquesta capacitat amb eines del navegador per a la verificació
 
-## Parells que Fallan i Recomanacions
+## Parells que Fallan i Recomanacions {#best-practices}
 
 Si un parell de colors falla la validació, la capacitat proporciona recomanacions:
 
@@ -150,7 +150,7 @@ Si un parell de colors falla la validació, la capacitat proporciona recomanacio
 }
 ```
 
-## Capacitats Relacionades
+## Capacitats Relacionades {#failing-pairs-and-recommendations}
 
 - [Generar Logo SVG](./generate-logo-svg.md) — crea logos amb la teva paleta de colors validada
 - [Crear Menú](./create-menu.md) — construeix la navegació amb colors accessibles

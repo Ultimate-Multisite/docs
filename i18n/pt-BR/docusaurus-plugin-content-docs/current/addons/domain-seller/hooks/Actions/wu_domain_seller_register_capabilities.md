@@ -2,21 +2,21 @@
 id: wu_domain_seller_register_capabilities
 title: Ação - wu_domain_seller_register_capabilities
 sidebar_label: wu_domain_seller_register_capabilities
-_i18n_hash: e98f40156ccda7c7ce6644d7412d47d3
+_i18n_hash: 2d0410d7e082c8a8d8f1fb970ccb40e2
 ---
-# Action: wu_domain_seller_register_capabilities
+# Ação: wu_domain_seller_register_capabilities {#action-wudomainsellerregistercapabilities}
 
 Permite que outros plugins registrem capacidades adicionais de venda de domínios.
 
-## Parameters
+## Parâmetros {#parameters}
 
-| Name | Type | Description |
+| Nome | Tipo | Descrição |
 |------|------|-------------|
 | $registry | `\WP_Ultimo\Integrations\Integration_Registry` | O registro de integração. |
 
-### Since
+### Desde {#since}
 
 - 2.1.0
-### Source
+### Fonte {#source}
 
-Definido em [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L298) na linha 298
+Definido em [`inc/class-domain-seller.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-domain-seller.php#L320) na linha 320

@@ -3,17 +3,17 @@ title: Integrare GridPane
 sidebar_position: 13
 _i18n_hash: b0a6427285411feb767e828911cdd794
 ---
-# Integrarea cu GridPane
+# Integrarea cu GridPane {#gridpane-integration}
 
-## Prezentare generală
+## Prezentare generală {#overview}
 GridPane este un panou de control pentru găzduire WordPress creat special pentru profesioniștii WordPress. Această integrare permite sincronizarea automată a domeniilor și gestionarea certificatelor SSL între Ultimate Multisite și GridPane.
 
-## Funcționalități
+## Funcționalități {#features}
 - Sincronizare automată a domeniilor
 - Gestionarea certificatelor SSL
 - Configurarea automată a constantei SUNRISE
 
-## Cerințe
+## Cerințe {#requirements}
 Următoarele constante trebuie definite în fișierul tău `wp-config.php`:
 
 ```php
@@ -23,16 +23,16 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_app_id');
 ```
 
-## Instrucțiuni de configurare
+## Instrucțiuni de configurare {#setup-instructions}
 
-### 1. Obține datele de autentificare pentru API-ul GridPane
+### 1. Obține datele de autentificare pentru API-ul GridPane {#1-get-your-gridpane-api-credentials}
 
 1. Autentifică-te în panoul de control GridPane
 2. Mergi la „Settings" > „API"
 3. Generează o cheie API dacă nu ai deja una
 4. Copiază cheia API
 
-### 2. Obține ID-urile serverului și site-ului
+### 2. Obține ID-urile serverului și site-ului {#2-get-your-server-and-site-ids}
 
 1. În panoul de control GridPane, mergi la „Servers"
 2. Selectează serverul pe care este găzduit multisite-ul tău WordPress
@@ -40,7 +40,7 @@ define('WU_GRIDPANE_APP_ID', 'your_app_id');
 4. Mergi la „Sites" și selectează site-ul tău WordPress
 5. Notează ID-ul site-ului (vizibil în URL sau pe pagina de detalii a site-ului)
 
-### 3. Adaugă constantele în wp-config.php
+### 3. Adaugă constantele în wp-config.php {#3-add-constants-to-wp-configphp}
 
 Adaugă următoarele constante în fișierul tău `wp-config.php`:
 
@@ -51,7 +51,7 @@ define('WU_GRIDPANE_SERVER_ID', 'your_server_id');
 define('WU_GRIDPANE_APP_ID', 'your_site_id');
 ```
 
-### 4. Activează integrarea
+### 4. Activează integrarea {#4-enable-the-integration}
 
 1. În administrarea WordPress, mergi la Ultimate Multisite > Settings
 2. Navighează la tab-ul „Domain Mapping"
@@ -59,7 +59,7 @@ define('WU_GRIDPANE_APP_ID', 'your_site_id');
 4. Activează integrarea GridPane
 5. Apasă „Save Changes"
 
-## Cum funcționează
+## Cum funcționează {#how-it-works}
 
 Când un domeniu este mapat în Ultimate Multisite:
 
@@ -69,23 +69,23 @@ Când un domeniu este mapat în Ultimate Multisite:
 
 Integrarea gestionează automat și constanta SUNRISE din fișierul wp-config.php, care este necesară pentru ca maparea domeniilor să funcționeze corect.
 
-## Gestionarea constantei SUNRISE
+## Gestionarea constantei SUNRISE {#sunrise-constant-management}
 
 O funcționalitate unică a integrării GridPane este că revine automat la valoarea constantei SUNRISE în wp-config.php pentru a preveni conflictele cu sistemul propriu de mapare a domeniilor GridPane. Acest lucru asigură că ambele sisteme pot funcționa împreună fără probleme.
 
-## Depanare
+## Depanare {#troubleshooting}
 
-### Probleme de conexiune la API
+### Probleme de conexiune la API {#api-connection-issues}
 - Verifică dacă cheia API este corectă
 - Verifică dacă ID-urile serverului și site-ului sunt corecte
 - Asigură-te că contul tău GridPane are permisiunile necesare
 
-### Probleme cu certificatele SSL
+### Probleme cu certificatele SSL {#ssl-certificate-issues}
 - GridPane poate avea nevoie de timp pentru a emite certificatele SSL
 - Verifică dacă domeniile tale sunt direcționate corect către adresa IP a serverului
 - Verifică setările SSL din GridPane pentru site-ul tău
 
-### Domeniul nu a fost adăugat
+### Domeniul nu a fost adăugat {#domain-not-added}
 - Verifică jurnalele Ultimate Multisite pentru eventuale mesaje de eroare
 - Verifică dacă domeniul nu este deja adăugat în GridPane
 - Asigură-te că înregistrările DNS ale domeniului sunt configurate corect

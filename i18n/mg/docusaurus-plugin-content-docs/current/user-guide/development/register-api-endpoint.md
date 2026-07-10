@@ -3,7 +3,7 @@ title: Manisana ny API Endpoint
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ny fidirana API an'ny Ultimate Multisite
+# Ny fidirana API an'ny Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Ao anatin'ity tutorial ity, ianao dia hahatantatra ny fomba fampiasana ny endpoint `/register` an'ny Ultimate Multisite /register API mba hamoronana ny dingana fanomanana (onboarding) manontolo ho an'ny mpanjifa vaovao ao amin'ny tambajotra misy anao ary ahoana no hanaovana izany miaraka amin'i Zapier.
 
@@ -29,11 +29,11 @@ Safidio ny **Enable API** ary azo ny fampahalalana API anao.
 
 Ity dia ny fandalinana ny endpoint sy ny famoronana asa fanamarinana (registration action) ao amin'i Zapier.
 
-## Parameters an'ny vatana (body parameters)
+## Parameters an'ny vatana (body parameters) {#endpoint-body-parameters}
 
 Andeha ho antsoina ny fampahalalana fototra ilaina izay tokony alefa any amin'ity endpoint ity. Amin'ny farany amin'ity lahatsoratra ity, dia hahita ny antso feno ianao.
 
-### Mpanjifa (Customer)
+### Mpanjifa (Customer) {#customer}
 
 Ity no fampahalalana ilaina ho an'ny dingana famoronana Mpampiasa (User) sy ny Mpanjifa ao amin'ny Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Mety azo atao ny mandefa ny ID mpanjifa nataona tao amin'ny tambajy anareo ve. R
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Fandraisana anjara (Membership)**
+### **Fandraisana anjara (Membership)** {#membership}
 
 Ny fampahalalana tokana ilainay ao anatin'ity object ity dia ny Toerana Fandraisana Anjara (Membership Status).
 
 "membership" { "status" : "string", // iray amin'ireto: "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Vokatra (Products)**
+### **Vokatra (Products)** {#products}
 
 Ny vokatra dia azo atao amin'ny array misy ID vokatra iray na maromaro avy ao amin'ny tambajy anareo. Aza matahotra, ity endpoint ity dia tsy mamorona vokatra. Jereo ny dokamanta an'Ultimate Multisite mba hahatakarana bebe kokoa momba ny endpoint famoronana vokatra.
 
 **"products" : [1,2],**
 
-### Fandoavam-bola (Payment)
+### Fandoavam-bola (Payment) {#payment}
 
 Tahaka amin'ny Membership, mila ny toetran'izany ihany isika.
 
 **"payment" { "status" : "string", // iray amin'ireto: "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Tranom-boary (Site)
+### Tranom-boary (Site) {#site}
 
 Ary mba hanakiana ny vatana dia mila ny URL sy ny Anaran'ny tranokala ianao, samy ao anatin'ny Site object.
 
@@ -69,13 +69,13 @@ Ary mba hanakiana ny vatana dia mila ny URL sy ny Anaran'ny tranokala ianao, sam
 
 Ny valin'ny register endpoint dia array misy ny fampahalalana momba ny fandraisana anjara vaovao natao.
 
-## Famoronana action ao amin'ny Zapier
+## Famoronana action ao amin'ny Zapier {#creating-an-action-in-zapier}
 
 Nanombaniana ity endpoint vaovao sy matanjaka kokoa ho fanamboarana kaonty ity, dia afaka miditra amin'ny action vaovao ao amin'ny Zapier ianao.
 
 Fantatro ve ny fomba fampiasana sy fandresena izay rehetra atolotra an'ny dikan-teny vaovao an'ny Zapier? Fantaro bebe kokoa eto. (link?)
 
-### Famoronana action
+### Famoronana action {#creating-an-action}
 
 Zapier amin'ny fampiasana ny registration endpoint miaraka amin'ny Zapier, dia ataovy ho mora kokoa ny fanazavana azy amin'ny alalan'ny famoronana integration amin'ny Google Forms. Isaky ny manome an-tsipika ity forms ity ary voatahiry ny vaovao ao amin'ny fampahafantarana valiny (answer sheet) an'ilay form, dia hisy fidirana vaovao iray ho voarakitra ao amin'ny tambajotra Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Ny fanomezana ny fampahalalana, dia mandroso amin'ny fitsapana farany. Amin'ilay
 
 Andramo ny Zap vaovao anao ary tokony ho vita tsara izany. Raha misy fahadisoana mitranga, jereo avy amin'ny sehatra rehetra ary raha alefa marina ve ireo zavatra rehetra. Satria misy fampahalalana marobe dia mety tsy ho voamarina ny zavatra sasany.
 
-### Paramètres manontolo an'ilay endpoint
+### Paramètres manontolo an'ilay endpoint {#complete-endpoint-parameters}
 
 Ity no antso manontolo sy ny dikan'ny sehatra rehetra azo alefa.
 

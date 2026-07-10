@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Integráció Mű változtathatatkönyve
+title: WooCommerce integráció változásnapló
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integrációs Újraírólapja
+# WooCommerce Integration változásnapló {#woocommerce-integration-changelog}
 
-Version 2.0.6 - Kiadás dátuma: 2026-01-16
-* Javítás: Az addonba fogadta a temel előfizetéseket. Nem igényel többé a Woocommerce Subscriptions extension-et.
+2.2.0 verzió - Megjelent: 2026-07-01
+* Új: Az Ultimate Multisite adóösszegei mostantól külön WooCommerce díjtételként jelennek meg a checkout során, így az adóösszesítések fizetés előtt áttekinthetőbbek.
+* Új: Hozzáadva egy választható "Suspend Memberships Immediately on Failed Renewals" beállítás és a `wu_woo_suspend_on_payment_failure` filter azokhoz az oldalakhoz, amelyek sikertelen megújítás esetén felfüggesztést szeretnének a WooCommerce Subscriptions újrapróbálkozási időablaka alatt.
+* Javítás: Összehangoltuk azokat a WooCommerce Subscription állapotokat, amelyek sikertelen vagy helyreállított megújítások után eltérhettek az Ultimate Multisite tagságoktól.
+* Javítás: Hozzáadtuk a WooCommerce áruház pénznemét az Ultimate Multisite pénznemlistához, amikor hiányzott.
+* Javítás: Megőriztük az ügyfél számlázási adatait, amikor az előfizetőket a WooCommerce checkout oldalra irányítottuk.
+* Fejlesztés: Kompatibilitás hozzáadva a Jetpack Autoloader 5-tel.
+* Fejlesztés: Megtisztítottuk a kiadási csomag generálását, hogy a GitHub és marketplace zip fájlok elkerüljék a beágyazott előkészítő könyvtárakat és fejlesztési fájlokat.
 
-Version 2.0.5 - Kiadás dátuma: 2026-01-09
-* Javítás: A fordításokat a glotpress API-ről tölti be.
-* Javítás: Halos hiba egyes page builder-ekben.
-* Javítás: Tartalmazó felhasználó esetén végtelen átirányítás.
+2.0.6 verzió - Megjelent: 2026-01-16
+* Fejlesztés: Az alap előfizetések bekerültek a kiegészítőbe. Már nincs szükség a Woocommerce Subscriptinos bővítményre.
 
-Version 2.0.4 - Kiadás dátuma: 2025-11-14
-* Hozzáadva: Sok sok más nyelvhez való fordítások.
-* Megváltoztatva: Ultimate Multisite: Woocommerce Integration néven.
-* Hozzáadva: Kompatibilitás a Woocommerce 10.2.1-lel.
-* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 7.7.0-lel.
-* Javítás: Kompatibilitás a PHP 8.4-el.
-* Javítás: Átirányítás, de akkor, ha nincs WC fiókoldal.
+2.0.5 verzió - Megjelent: 2026-01-09
+* Fejlesztés: Fordítások betöltése a glotpress API-ból.
+* Javítás: Végzetes hiba bizonyos oldalépítőkben.
+* javítás: Végtelen átirányítás, amikor az ügyfél a fő oldal tagja.
 
-Version 2.0.3 - Kiadás dátuma: 2025-08-13
-* Megváltoztatva: Automatikus frissítést engedélyezett új piacon keresztül.
+2.0.4 verzió - Megjelent: 2025-11-14
+* Hozzáadva: Fordítások sok további nyelvhez.
+* Módosítva: Átnevezve erre: Ultimate Multisite: Woocommerce Integration.
+* Hozzáadva: Kompatibilitás a Woocommerce 10.2.1-gyel.
+* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 7.7.0-val.
+* Javítás: Kompatibilitás a PHP 8.4-gyel
+* Javítás: Átirányítási hiba, amikor nem létezik WC Account oldal.
 
-Version 2.0.2 - Kiadás dátuma: 2025-07-05
-* Megváltoztatva: Multisite Ultimate: Woocommerce Integration néven.
-* Hozzáadva: Kompatibilitás a Woocommerce 9.8.1-lel.
-* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 7.3.0-lel.
-* Javítás: Előfizetés leiratkozása a felhasználó által.
-* Javítás: Halos hiba a checkout blokk használatakor.
-* Javítás: Most kompatibilis a Woocommerce magas teljesítményű, egyedi rendelési táblággal.
-* Javítás: A WooCommerce checkout-on történő leiratkozás még előfizetés szint emelésére is alkalmas.
+2.0.3 verzió - Megjelent: 2025-08-13
+* Módosítva: Automatikus frissítések engedélyezve az új marketplace-szel.
 
-Version 2.0.1 - Kiadás dátuma: 2023-08-09
+2.0.2 verzió - Megjelent: 2025-07-05
+* Módosítva: Átnevezve erre: Multisite Ultimate: Woocommerce Integration.
+* Hozzáadva: Kompatibilitás a Woocommerce 9.8.1-gyel.
+* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 7.3.0-val.
+* Javítás: Előfizetés lemondása az ügyfél által.
+* Javítás: Végzetes hiba checkout block használatakor.
+* Fejlesztés: Mostantól kompatibilis a Woocommerce nagy teljesítményű egyedi rendelési tábláival.
+* Javítás: A WooCommerce checkout során történő lemondás továbbra is frissíthet egy tagságot.
 
-* Hozzáadva: Kompatibilitás a Woocommerce 7.9.0-lel.
-* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 5.3.0-lel.
-* Hozzáadva: Támogatás a tagság frissítéséhez.
-* Hozzáadva: Felügyeleti üzenetek a próba és beállítási díjakról a Woocommerce-ban.
-* Hozzáadva: Az Ultimate Multisite Woocommerce termékek azonosítása meta értékkel.
-* Hozzáadva: Egy egyszeri javítás került beépítésre az Ultimate Multisite kapcsolatos összes Woocommerce termékére.
-* Hozzáadva: Az Ultimate Multisite által létrehozott termékek eltávolítása a Woocommerce listából.
-* Javítás: Nem ismétlődő Woocommerce kedvezmény létrehozása a kosárba alkalmazandóként.
-* Javítás: Az ismétlődő kedvezmény visszaállítása a Woocommerce termékre.
-* Javítás: Az ismétlődő kedvezmény címkéje hozzáadása a Woocommerce termékhez.
-* Javítás: Biztosítja a termék típust a checkout során.
-* Javítás: Megtartja a tagsági státuszt a szint csökkentési folyamat során.
-* Javítás: Ellenőrizte, hogy létezik-e előfizetés a leiratkozási folyamat során hiba elkerülése érdekében.
-* Javítás: Hozzáadta az előfizetés kezdő dátumát a Woocommerce előfizetésekhez használhatóként.
-* Belső: Bevezett egy új PHP 8.1 build folyamatot.
+2.0.1 verzió - Megjelent: 2023-08-09
 
-Version 2.0.0 - Teljes átírás.
+* Hozzáadva: Kompatibilitás a Woocommerce 7.9.0-val.
+* Hozzáadva: Kompatibilitás a Woocommerce Subscriptions 5.3.0-val.
+* Hozzáadva: Tagságfrissítések támogatása.
+* Hozzáadva: Értesítések a próbaidőszakokról és beállítási díjakról a Woocommerce-ben.
+* Hozzáadva: Ultimate Multisite Woocommerce termékek azonosítása metaértékkel.
+* Hozzáadva: Egyszeri javítás beillesztve az összes Ultimate Multisite-hoz kapcsolódó Woocommerce termék megjelölésére.
+* Hozzáadva: Az Ultimate Multisite által létrehozott termékek eltávolítva a Woocommerce listából.
+* Fejlesztés: Nem ismétlődő Woocommerce kedvezmény létrehozva a kosárra való alkalmazáshoz.
+* Fejlesztés: Az ismétlődő kedvezmény visszaállítva a Woocommerce termékre.
+* Fejlesztés: Ismétlődő kedvezménycímke hozzáadva a Woocommerce termékhez.
+* Fejlesztés: Terméktípus biztosítása checkout során.
+* Javítás: A tagsági állapot megőrizve a visszaminősítési folyamat során.
+* Javítás: Ellenőrizve, hogy létezik-e előfizetés, a lemondási folyamat közbeni hibák elkerülése érdekében.
+* Javítás: Hozzáadva az előfizetés kezdődátuma a Woocommerce subscriptions használatához.
+* Belső: Új PHP 8.1 build folyamat megvalósítva.
 
-* Hozzáadva: A leiratkozási folyamat módszere a woo előfizetés eltávolítására, ha a gateway-et vagy a tagságot változtatják/leiratkoznak;
-* Hozzáadva: Kezelő funkció a tagság szint csökkentéséhez és emeléséhez;
-* Javítás: Tölti be a woocommerce függőségeket a felhasználó frissítő űrlapon a subsite-okon fiókfrissítéshez;
-* Javítás: Javítja a Woocommerce kosár töltését, ha nem létezik;
-* Javítás: Biztosítja, hogy a checkout folyamat során a főoldal táblággal dolgozzunk;
-* Javítás: A Ultimo megújítási rendelését a Woocommerce előfizetési rendelési érték alapján, nem az utolsó fizetéstől függően kell képezni;
-* Javítás: A WU Membership gomb linkére irányítás;
-* Javítás: Beállítja az Ultimo rendelést alsztható státuszra, ha a Woocommerce előfizetés megújítása fizetős volt;
-* Build: Hozzáadva az MPB-t buildernek.
+2.0.0 verzió - Teljes újraírás.
 
-Version 2.0.0-beta-5 - Kiadás dátuma: 2022-01-21
+* Hozzáadva: Lemondási módszer feldolgozása a woo előfizetés eltávolításához a gateway módosításakor vagy a tagság lemondásakor;
+* Hozzáadva: Kezelő a tagságok visszaminősítéséhez és frissítéséhez;
+* Fejlesztés: Woocommerce függőségek betöltése az ügyfélfrissítési űrlapon aloldalakon, az Account frissítésének lehetővé tételéhez;
+* Fejlesztés: A Woocommerce kosár helyes betöltése, ha nem létezik;
+* Fejlesztés: Annak biztosítása, hogy checkout feldolgozásakor a fő oldal tábláin legyünk;
+* Fejlesztés: Az Ultimo megújítási rendelés a Woocommerce előfizetési rendelés értékén alapuljon, ne az utolsó fizetésen;
+* Javítás: Ugrás a WU Membership gomb hivatkozására;
+* Javítás: Ultimo rendelés fizetettként beállítása, amikor a Woocommerce subscriptions megújítása ki lett fizetve;
+* Build: MPB hozzáadása builderként;
 
-* Belső: Hozzáadva a hooks és filter generátort;
-* Belső: Hozzáadva az Ultimate Multisite stubsét a fejlesztői életminőség javítására;
-* Javítás: Megakadályozza a több termék létrehozását, ha nem szükséges;
+2.0.0-beta-5 verzió - Megjelent: 2022-01-21
 
-Version 2.0.0-beta.4 - 2021-09-23
+* Belső: Hookok és filterek generátora hozzáadva;
+* Belső: Ultimate Multisite stubs hozzáadva a fejlesztői életminőség javításához;
+* Javítva: Több termék létrehozásának megakadályozása, amikor nem szükséges;
 
-* Javítás: A WooCommerce-hoz kötelező lett a hálózat aktív állapotának ellenőrzése, nem csak a főoldal aktív állapotának;
-* Javítás: Hozzáadva egy filtert, amely lehetővé teszi az addon használatát mu-pluginként.
+2.0.0-beta.4 verzió - 2021-09-23
 
-Version 2.0.0-beta.3 - 2021-05-28
+* Javítás: annak megkövetelése, hogy a WooCommerce hálózati szinten legyen aktív, ne csak a fő oldalon;
+* Fejlesztés: filter hozzáadva, hogy a kiegészítő mu-plugin-ként is használható legyen;
 
-* Javítás: A dashboard hozzáférésének ellenőrzése túl agresszív volt;
-* Javítás: Hozzáadva WooCommerce segítségnyújtási linkeket az Ultimate Multisite felső menüjéhez;
+2.0.0-beta.3 verzió - 2021-05-28
 
-Version 2.0.0-beta.2 - 2021-05-04
+* Javítás: a Dashboard hozzáférés-vezérlése túl agresszív volt;
+* Fejlesztés: WooCommerce súgóhivatkozások hozzáadva az Ultimate Multisite felső menüjéhez;
 
-* Javítás: Létrehoz pending fizetéseket az Ultimo-on a WCS megújítási rendelés létrehozásakor;
-* Javítás: Elő-tölti a számlázási mezőket az Ultimate Multisite felhasználói adatai alapján;
-* Javítás: Visszaadja a számlázási mezőket a gateway-ekhez;
+2.0.0-beta.2 verzió - 2021-05-04
 
-Version 2.0.0-beta.1 - 2021-05-04
+* Fejlesztés: függőben lévő fizetéseket hoz létre az Ultimo-ban WCS megújítási rendelés létrehozásakor;
+* Fejlesztés: előre kitölti a számlázási mezőket az Ultimate Multisite ügyféladataival;
+* Fejlesztés: visszahozza a számlázási mezőket a gateway-ekhez;
 
-* Kezdeti beta kiadás
+2.0.0-beta.1 verzió - 2021-05-04
 
--- Örökségi verziók --
+* Kezdeti béta kiadás
 
-Version 1.2.6 - 2020/03/26
+-- Régi verziók --
 
-* Javítás: Kis kompatibilitási probléma a WooCommerce Subscriptions újabb verzióival;
+1.2.6 verzió - 26/03/2020
 
-Version 1.2.5 - 2019/08/26
+* Javítva: Kisebb inkompatibilitás a WooCommerce Subscriptions újabb verzióival;
 
-* Javítás: Hiba az előző kiadásban;
+1.2.5 verzió - 26/08/2019
 
-Version 1.2.4 - 2019/08/22
+* Javítva: Hiba az előző kiadásban;
 
-* Javítás: Hozzáadva az opciót, hogy az integráció után azonnal átirányítsa a WooCommerce checkout képernyőre;
+1.2.4 verzió - 22/08/2019
 
-Version 1.2.3 - 2019/05/26
+* Fejlesztve: Opció hozzáadva az azonnali átirányításhoz a WooCommerce checkout képernyőre az integráció után;
 
-* Javítás: A WooCommerce fizetési e-mailje egyes speciális esetekben eltűnt;
+1.2.3 verzió - 26/05/2019
 
-Version 1.2.2 - 2019/02/27
+* Javítva: A WooCommerce fizetési e-mailje eltűnt bizonyos szélsőséges esetekben;
 
-* Hozzáadva: Támogatás a beállítási díjak kezelésére az WooCommerce Subscription integrációban;
+1.2.2 verzió - 27/02/2019
 
-Version 1.2.1 - 2018/11/17
+* Hozzáadva: Beállítási díjak támogatása a WooCommerce Subscription integrációban;
 
-* Javítás: Kompatibilitási problémák az Ultimate Multisite 1.9.0 verziójával;
+1.2.1 verzió - 17/11/2018
 
-Version 1.2.0 - 2018/09/10
+* Javítva: Kompatibilitási problémák az Ultimate Multisite 1.9.0 verzióval;
 
-* Javítás: Új frissítési URL az addonokhoz;
-* Hozzáadva: Beta támogatás a WooCommerce Subscription-hoz;
+1.2.0 verzió - 10/09/2018
 
-Version 1.1.2 - 2018/02/11
+* Fejlesztve: Új frissítési URL a kiegészítőkhöz;
+* Hozzáadva: Béta támogatás a WooCommerce Subscription-höz;
 
-* Javítás: A Pay link dinamikusan generálódik, hogy reagáljon a WooCommerce endpoint-ek változásaira;
-* Javítás: Most kötelezővé válik a completed státuszunk a payment_completed híváskor, hogy biztosítsuk, hogy a megújítási hooksunk akkor futjanak, amikor kell;
+1.1.2 verzió - 11/02/2018
 
-Version 1.1.1 - 2018/01/24
+* Javítva: A fizetési hivatkozás dinamikusan generálódik, hogy reagáljon a WooCommerce endpointok változásaira;
+* Fejlesztve: Mostantól kikényszerítjük a completed állapotot a rendeléseinknél, amikor a payment_completed meghívásra kerül, hogy biztosítsuk: a megújítási hookjaink akkor fussanak le, amikor kell;
 
-* Javítás: Most ellenőrzi, hogy a WooCommerce csak aktiválódott-e a főoldalon;
-* Javítás: Beágyazott over-loading, hogy lehetővé tegye a rendelés létrehozását adókkal együtt;
+Version 1.1.1 - 24/01/2018
 
-Version 1.1.0 - 2017/11/04
+* Javítva: Most azt is ellenőrzi, hogy a WooCommerce éppen aktiválva van-e a fő site-on;
+* Javítva: Túlterhelések beépítve, hogy a rendeléslétrehozás tartalmazhassa az adókat;
 
-* Javítás: Most az integrációs gomb címkéje ténylegesen változik, hogy tükrözze a beállításokat. Követelmény: Ultimate Multisite 1.5.0;
-* Javítás: A WooCommerce Integration most működik, még akkor is, ha a WooCommerce nem hálózaton aktív, és csak a főoldalon van aktiválva;
+Version 1.1.0 - 04/11/2017
 
-1.0.0 - Kezdeti kiadás
+* Javítva: Most az integrációs gomb címkéje ténylegesen a beállításoknak megfelelően változik. Ultimate Multisite 1.5.0 szükséges;
+* Javítva: A WooCommerce Integration most akkor is működik, ha a WooCommerce nem hálózati szinten aktív, és csak a fő site-on van aktiválva;
+
+1.0.0 - Első kiadás

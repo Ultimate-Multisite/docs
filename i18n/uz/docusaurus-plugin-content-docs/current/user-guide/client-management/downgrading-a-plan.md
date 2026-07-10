@@ -3,13 +3,13 @@ title: Rejanni tushirish
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plani (subscription) tushirish (v2)
+# Plani (subscription) tushirish (v2) {#downgrading-a-plan-v2}
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 
 Plani yoki obunani tushirish bu sizning mijozlaringiz cheklangan byudjetga ega bo'lganlar yoki subsite'larini boshqarish uchun ko'p resurslarga ehtiyoj sezmayotganlar deb qaror qilib olishganlarida bajara oladigan keng tarqalgan harakatdir.
 
-## Planni qanday tushirish kerak
+## Planni qanday tushirish kerak {#how-to-downgrade-a-plan}
 
 Mijozlari o'z subsite administratsiya paneli (admin dashboard) orqali tizimiga kirib, akkaunt sahifasidagi **Change** (O'zgartirish) tugmasini bosish orqali har qanday vaqtda planni tushirishi mumkin.
 
@@ -25,7 +25,7 @@ Davom etish uchun foydalanuvchi faqat **Complete Checkout** (To'lovni yakunlash)
 
 ![Obunaning o'zgarishi haqida banner ko'rsatilgan hisob sahifasi](/img/account-page/pending-change.png)
 
-### Foydalanuvchi plani tushirsang nima bo'ladi
+### Foydalanuvchi plani tushirsang nima bo'ladi {#what-happens-when-a-user-downgrades-their-plan}
 
 Planni tushirishdan foydalanuvchining subsite'idagi mavjud konfiguratsiyaga ta'sir qilmasligini eslatib qo'yish muhimdir.
 
@@ -37,7 +37,7 @@ Reja belgilangan limitni oshirgan postlar uchun sizda 3 ta turli variant mavjud:
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### To'lovlar qanday sodir bo'ladi
+### To'lovlar qanday sodir bo'ladi {#what-happens-to-the-payment}
 
 2.0 versiyasida endi to'lovlarda pratsiyoning (proration) jihatidan hech qanday sozlash talab qilinmaydi.
 

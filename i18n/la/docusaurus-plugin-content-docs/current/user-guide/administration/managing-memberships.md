@@ -3,7 +3,7 @@ title: Gestionar membresías
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Gestionem Membraturas
+# Gestionem Membraturas {#managing-memberships}
 
 In Ultimate Multisite possuris gestionem membraturarum et accessum ad omnia abonamenta in rete tuo. Revide et edite detiles abonamentum ut planera et producta, numerum sitorum, quantitatem facturarum et frequentiam, historiam placetum, et temporas.
 

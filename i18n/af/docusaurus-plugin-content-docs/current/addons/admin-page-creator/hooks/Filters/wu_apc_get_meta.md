@@ -4,11 +4,11 @@ title: Filter - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Dit stel ontwikkelaars in staat om die finale waardes te filter en nuwe verwerkingsgevalle by te voeg.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Dit stel ontwikkelaars in staat om die finale waardes te filter en nuwe verwerki
 | $meta_type | `string` | Die tipe meta-data wat herwin moet word. |
 | $meta_key | `string` | Naam van die metaveld. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Defined in [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) at line 93
 
 
-## Returns
+## Returns {#returns}
 Die nuwe standaardwaarde.

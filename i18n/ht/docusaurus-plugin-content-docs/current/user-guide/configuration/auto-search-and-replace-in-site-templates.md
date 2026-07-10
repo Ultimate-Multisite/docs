@@ -3,7 +3,7 @@ title: Chèche otomatik ak ranplase nan Template Sit
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search et Remplacement dans les Modèles de Site (v2)
+# Auto Search et Remplacement dans les Modèles de Site (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Ce tutoriel nécessite WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Votre client pourra alors remplir ce champ pendant l'inscription.
 
 Ultimate Multisite remplacera ensuite les espaces réservés par les données fournies par le client automatiquement.
 
-## **Résoudre le problème du "modèle plein d'espaces réservés"**
+## **Résoudre le problème du "modèle plein d'espaces réservés"** {#solving-the-template-full-of-placeholders-problem}
 
 Tout cela est génial, mais nous rencontrons un problème laid : maintenant nos modèles de site - que nos clients peuvent visiter - sont remplis d'espaces réservés moches qui ne disent pas grand-chose.
 

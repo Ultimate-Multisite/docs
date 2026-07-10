@@ -1,15 +1,15 @@
 ---
 title: 고급 코드 예제
 sidebar_position: 1
-_i18n_hash: 2da26e5bbafe028cadbe53cde1335209
+_i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# 고급 코드 예시
+# 고급 코드 예제 {#advanced-code-examples}
 
-이 예시들은 Ultimate Multisite와의 고급 통합 패턴을 보여줍니다.
+이 예제들은 Ultimate Multisite와의 고급 통합 패턴을 보여줍니다.
 
-## 동적 가격 엔진
+## 동적 가격 책정 엔진 {#dynamic-pricing-engine}
 
-볼륨, 충성도, 시즌별 할인 등을 적용하는 규칙 기반 가격 엔진:
+수량, 충성도, 시즌 할인을 적용하는 규칙 기반 가격 책정 엔진:
 
 ```php
 class Dynamic_Pricing_Engine {
@@ -86,9 +86,9 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## 고급 사이트 프로비저닝
+## 고급 사이트 프로비저닝 {#advanced-site-provisioning}
 
-플랜 기능에 따라 플러그인, SSL, CDN, 백업, 모니터링을 자동으로 구성합니다:
+plan 기능을 기반으로 plugin, SSL, CDN, 백업 및 모니터링으로 새 사이트를 자동 구성합니다:
 
 ```php
 class Advanced_Site_Provisioner {
@@ -191,9 +191,9 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## 맞춤 제한 시스템
+## 사용자 지정 제한 시스템 {#custom-limitations-system}
 
-사용 경고와 함께 리소스 제한을 추적하고 적용합니다:
+사용량 경고와 함께 리소스 제한을 추적하고 적용합니다:
 
 ```php
 class Advanced_Limitations {
@@ -272,3 +272,99 @@ class Advanced_Limitations {
 
 new Advanced_Limitations();
 ```
+
+## `increment_item()`을 사용한 BerlinDB 원자적 카운터 {#berlindb-atomic-counter-with-incrementitem}
+
+Ultimate Multisite v2.6.1에는 BerlinDB `Query` 클래스에 `increment_item()` 메서드가 추가되었습니다. 이를 사용하면 읽기-수정-쓰기 경쟁 없이 숫자 열에 안전한 원자적 증가를 수행할 수 있습니다. 동시 요청에서 실행되는 카운터, 사용량 할당량, 속도 제한 검사에 유용합니다.
+
+### 메서드 시그니처 {#method-signature}
+
+```php
+/**
+ * Atomically increment a numeric column for a specific item.
+ *
+ * @param int    $item_id   Primary key of the row to update.
+ * @param string $column    Column name to increment (must be numeric).
+ * @param int    $amount    Amount to add. Use a negative value to decrement.
+ *                          Defaults to 1.
+ * @return bool True on success, false on failure or if the column is invalid.
+ */
+public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
+```
+
+### 기본 사용법 {#basic-usage}
+
+```php
+// Add 1 to the `api_calls` column for membership ID 42.
+$memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+$memberships->increment_item( 42, 'api_calls' );
+
+// Add 5 to a usage counter.
+$memberships->increment_item( 42, 'api_calls', 5 );
+
+// Decrement (subtract 1).
+$memberships->increment_item( 42, 'api_calls', -1 );
+```
+
+### 멤버십별 API 사용량 추적 {#tracking-api-usage-per-membership}
+
+멤버십별 API 속도 제한을 적용하기 위한 실용적인 패턴:
+
+```php
+class Membership_API_Limiter {
+
+    /** Maximum API calls allowed per billing cycle. */
+    const LIMIT = 500;
+
+    public function __construct() {
+        add_filter( 'wu_is_api_enabled', [ $this, 'check_and_count' ], 10, 2 );
+    }
+
+    /**
+     * Reject the request if the membership is over the limit;
+     * otherwise count the call atomically.
+     *
+     * @param bool   $enabled
+     * @param object $context  Object with a get_membership_id() method.
+     * @return bool
+     */
+    public function check_and_count( bool $enabled, $context ): bool {
+        if ( ! $enabled ) {
+            return false;
+        }
+
+        $membership_id = $context->get_membership_id();
+
+        $memberships = new WP_Ultimo\Database\Memberships\Memberships_Query();
+        $membership  = $memberships->get_item( $membership_id );
+
+        if ( ! $membership ) {
+            return false;
+        }
+
+        if ( (int) $membership->api_calls >= self::LIMIT ) {
+            return false;  // Over quota — reject.
+        }
+
+        // Atomic increment: safe under concurrent requests.
+        $memberships->increment_item( $membership_id, 'api_calls' );
+
+        return true;
+    }
+}
+
+new Membership_API_Limiter();
+```
+
+### `update_item()` 대신 `increment_item()`을 사용하는 이유 {#why-incrementitem-instead-of-updateitem}
+
+단순한 읽기-수정-쓰기 방식은 동시 요청에서 안전하지 않습니다.
+
+```php
+// UNSAFE — race condition between read and write.
+$membership = $memberships->get_item( $membership_id );
+$new_count  = (int) $membership->api_calls + 1;
+$memberships->update_item( $membership_id, [ 'api_calls' => $new_count ] );
+```
+
+두 개의 동시 요청이 같은 값을 읽고 둘 다 동일하게 증가된 결과를 다시 써서 한 번의 카운트가 누락될 수 있습니다. `increment_item()`은 단일 `UPDATE ... SET column = column + ?` 문으로 산술 연산을 데이터베이스 엔진에 위임하여, 작업이 본질적으로 원자적으로 수행되도록 합니다.

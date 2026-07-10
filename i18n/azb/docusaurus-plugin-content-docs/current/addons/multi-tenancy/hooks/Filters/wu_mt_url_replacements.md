@@ -4,11 +4,11 @@ title: Sieve - wu_mt_url_replacements
 sidebar_label: wu_mt_url_replacements
 _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 ---
-# Фильтр: wu_mt_url_replacements
+# Фильтр: wu_mt_url_replacements {#filter-wumturlreplacements}
 
 Фильтрует пары замены URL.
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -17,9 +17,9 @@ _i18n_hash: 2a3e1ab7bb695958155a426bfb7fce2b
 | $new_url | `string` | Новый URL. |
 | $blog_id | `int` | ID блога. |
 
-### Начиная с
+### Начиная с {#since}
 
 - 1.0.0
-### Источник
+### Источник {#source}
 
 Определен в [`inc/migration/class-url-rewriter.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multi-tenancy/blob/main/inc/migration/class-url-rewriter.php#L151) в строке 151

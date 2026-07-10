@@ -3,13 +3,13 @@ title: Nkwado Ọrụ Nkwado
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Ọ dị cách Nhận Trợ giúp Phát triển Tùy chỉnh từ Codeable?
+# Ọ dị cách Nhận Trợ giúp Phát triển Tùy chỉnh từ Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Đôi khi, chúng ta thực sự cần một vài tùy chỉnh tuyệt vời để làm cho luồng mạng của mình đúng như ý muốn. Nếu bạn đang tìm kiếm điều đó, chúng tôi đề xuất [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), một nơi mà bạn có thể tìm thấy các nhà phát triển giàu kinh nghiệm với chuyên môn về Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) là một nền tảng kết nối khách hàng với các nhà phát triển WordPress tự do đủ tiêu chuẩn, có khả năng làm việc trên các dự án mọi quy mô. Họ có một quy trình nộp đơn tỉ mỉ để đảm bảo bạn được ghép đôi với các chuyên gia đặc biệt đủ điều kiện cho nhiệm vụ mà bạn đang nghĩ đến.
 
-### Làm thế nào để tạo một dự án trong Codeable?
+### Làm thế nào để tạo một dự án trong Codeable? {#how-to-create-a-project-in-codeable}
 
 Đầu tiên, hãy truy cập [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) và nhấn nút **Start a Project** (Bắt đầu một Dự án).
 

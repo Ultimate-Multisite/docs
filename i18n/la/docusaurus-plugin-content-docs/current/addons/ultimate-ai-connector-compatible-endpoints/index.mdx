@@ -1,0 +1,113 @@
+---
+title: >-
+  Coniunctor intelligentiae artificialis ultimus ad puncta terminalia
+  compatibilia
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector pro Terminibus Compatibilibus {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector pro Terminibus Compatibilibus APIs provisorum AI cum OpenAI compatibiles cum rete multisitus WordPress tuo integrat. Configura plures provisores AI — unumquemque cum sua URL termini, clave API, et exemplari praedefinito — atque petitiones dirige cum reditu automatico cum provisor praesto non est.
+
+## Praecipuae Proprietates {#key-features}
+
+- **Sustentatio plurium provisorum**: Adde plures chartas provisorum AI, unamquamque cum sua URL termini, clave API, et exemplari praedefinito
+- **Trahere ad reordinandum**: Provisores ordine prioritatis dispone manubrio prehensili in unaquaque charta utens; petitiones provisores ordine utuntur
+- **Directio reditus automatica**: Si provisor primarius praesto non est, petitiones automatice ad proximum provisorem configuratum redeunt
+- **Configuratio per provisorem**: Unusquisque provisor separatim configuratur cum suis credentiis et electione exemplaris
+- **UI configurationum chartis innixa**: Ex stabilibus componentibus Card WordPress 6.9+ constructa (CardBody, CardHeader, CardDivider)
+- **Expansio automatica cum additur**: Novae chartae provisorum automatice expanduntur ut singula statim implere possis
+- **Scriptorum cache busting**: Scripta provisorum in renovatione additamenti cache-busted fiunt ut versio novissima oneretur
+
+## Requisita {#requirements}
+
+- WordPress 5.3 aut superius
+- PHP 7.4 aut superius
+- Additamentum Ultimate Multisite (activum)
+- Terminus API cum OpenAI compatibilis (apud te hospitatus aut tertiae partis)
+
+## Installatio {#installation}
+
+1. Fasciculos additamenti in directorium tuum `/wp-content/plugins/` onerato
+2. Additamentum per menu 'Plugins' in WordPress activa
+3. Naviga ad **Ultimate Multisite → AI Connector** ut additamentum configures
+
+## Configuratio {#configuration}
+
+### Constitutio Plurium Provisorum {#multi-provider-setup}
+
+Pagina configurationis dispositione chartis innixa utitur, ubi unaquaeque charta unum provisorem AI repraesentat. Tot provisores addere potes quot opus habes.
+
+#### Provisorem Addere {#adding-a-provider}
+
+1. Vade ad **Ultimate Multisite → AI Connector** in administratione retis
+2. Preme **Adde Provisorem**
+3. Nova charta provisoris apparet et automatice expanditur
+4. Singula provisoris imple:
+   - **Nomen Provisoris** — titulus ad hunc provisorem dignoscendum (ex. "OpenAI", "Mistral", "Local Ollama")
+   - **URL Termini** — URL basica API cum OpenAI compatibilis (ex. `https://api.openai.com/v1`)
+   - **Clavis API** — tua clavis API pro hoc provisore
+   - **Exemplar Praedefinitum** — identificator exemplaris quod per defaltam pro hoc provisore utendum est (ex. `gpt-4o`, `mistral-small`)
+5. Preme **Serva Configurationes**
+
+#### Provisorem Removere {#removing-a-provider}
+
+Preme puga **Remove** in quavis charta provisoris ut eam deleas. Configurationes serva ut mutationem applices.
+
+#### Provisores Reordinare {#reordering-providers}
+
+Trahe iconem prehensilem (⣿) in latere sinistro cuiusvis chartae provisoris ut eam reordines. Ordo prioritatem reditus determinat: petitiones ad primum provisorem mittuntur et ad provisores subsequentes redeunt si petitio deficit.
+
+### Directio Reditus {#fallback-routing}
+
+Cum petitio ad provisorem primarium deficit — propter tempus expletum, limitem frequentiae, aut intermissionem servitii — connector automatice cum proximo provisore in indice iterum conatur. Hoc per indicem continuatur donec provisor succedat aut omnes provisores temptati sint.
+
+| Scaena | Modus agendi |
+|----------|-----------|
+| Provisor primarius respondet | Petitio more solito ministratur |
+| Provisor primarius deficit | Petitio cum proximo provisore iterum temptatur |
+| Omnes provisores deficiunt | Error ad vocatorem redditur |
+
+Reditus additamento aut themati vocanti perspicuus est — responsum prosperum aut errorem finalem accipiunt, quotcumque provisores temptati sunt.
+
+### Relatio Configurationis Provisoris {#provider-configuration-reference}
+
+| Campus | Requisitus | Descriptio |
+|-------|----------|-------------|
+| Nomen Provisoris | Ita | Titulus ostendendus pro hoc provisore |
+| URL Termini | Ita | URL basica API cum OpenAI compatibilis |
+| Clavis API | Ita | Clavis authenticationis pro hoc provisore |
+| Exemplar Praedefinitum | Ita | Identificator exemplaris usus cum nullum exemplar in petitione specificatur |
+
+## Solutio Problematum {#troubleshooting}
+
+### Nulli provisores recensentur {#no-providers-are-listed}
+
+Si index provisorum post servandum vacuus est, confirma haec:
+
+- Premisti **Serva Configurationes** post provisores additos
+- Navigator tuus paginam configurationum a servando non prohibuit (consolam navigatoris pro erroribus JavaScript inspice)
+- Additamentum activum est et in pagina administrationis retis es
+
+### Petitiones apud omnes provisores deficiunt {#requests-are-failing-for-all-providers}
+
+- Verifica URL termini cuiusque provisoris e servo tuo attingibilem esse (non solum e navigatore tuo)
+- Inspice ut unaquaeque clavis API valida sit nec exspiraverit
+- Recognosce statum limitis frequentiae et quotae provisoris in eorum tabula moderatoria
+- Activa scripturam diagnosticam WordPress (`WP_DEBUG_LOG`) ut nuntios errorum accuratos e connector capias
+
+### Provisor ad reditum non adhibetur {#a-provider-is-not-being-used-for-fallback}
+
+Trahere ad reordinandum ordinem reditus mutat. Confirma provisorem quem exspectas petitiones reditus accepturum recte in indice positum esse atque eius URL termini et clavem API rectas esse.
+
+### Nova charta provisoris automatice non expanditur {#new-provider-card-does-not-expand-automatically}
+
+Expansio automatica JavaScript in navigatore tuo activum esse requirit. Si charta ad cliccum non expanditur, consolam navigatoris pro erroribus inspice. Contenta chartae semper adeunda sunt premendo caput chartae, etiamsi expansio automatica non excitatur.
+
+## Index Mutationum {#changelog}
+
+Vide [Indicem Mutationum](./changelog) pro plena historia versionum.

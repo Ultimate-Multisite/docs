@@ -1,0 +1,197 @@
+---
+title: Imeli
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Imeyili {#emails}
+
+Addon ya Ultimate Multisite: Emails ifasha ba nyiri network gutegura no gucunga accounts za email z'abakiriya hamwe na site na memberships. Verisiyo 1.1.0 yongeramo gucunga account za email bigenewe abakiriya, webmail single sign-on, gushyigikira CyberPanel forwarders, n'ibinonosorwa mu gutegura serivisi mu gihe cya checkout.
+
+## Ibiranga by'ingenzi {#key-features}
+
+* **Widget ya account za email z'abakiriya**: Abakiriya bashobora gukora no gucunga mailboxes bavuye ku rupapuro rwa account yabo nyuma yo kugira email membership ikora.
+* **Webmail SSO na magic links**: Abakiriya bashobora gufungura webmail bahereye ku rupapuro rwa account bakoresheje kwemeza umwirondoro kanda-rimwe iyo provider ibyemera.
+* **Guhindura ijambo ry'ibanga**: Abakiriya n'abayobozi bashobora kuvugurura amagambo y'ibanga ya mailbox bavuye muri widget yo gucunga email.
+* **Gutegura uburenganzira muri checkout**: Checkout ikora email membership, ikayihuza na domain ya site y'umukiriya, kandi igatuma ibikoresho bya mailbox byo ku rupapuro rwa account biboneka.
+* **CyberPanel forwarders**: Networks zishingiye kuri CyberPanel zishobora gukora no gucunga email forwarders nk'igice cy'uruhererekane rwa serivisi ya email.
+* **Igenamiterere rizi provider**: Urupapuro rw'igenamiterere rutoranya providers rukerekana integrations zikora kandi zateguwe, kugira ngo abayobozi babone gusa amahitamo ashobora gukoreshwa.
+
+## Ibisabwa {#requirements}
+
+* Ultimate Multisite 2.0.0 cyangwa iri hejuru
+* Ishyirwaho rya WordPress Multisite
+* Nibura email provider integration imwe yateguwe
+* Provider API credentials zifite uburenganzira bwo gukora mailboxes, guhindura amagambo y'ibanga, no gutanga links zo kwinjira muri webmail aho bishyigikiwe
+
+## Ishyirwaho {#installation}
+
+1. Shyira plugin files muri `/wp-content/plugins/ultimate-multisite-emails`.
+2. Koresha addon kuri network uhereye muri **Plugins** muri admin ya WordPress network.
+3. Jya kuri **Ultimate Multisite** > **Settings** maze ufungure igenamiterere rya email rya addon.
+4. Fungura email provider integrations ushaka ko abakiriya bakoresha.
+5. Bika igenamiterere, hanyuma ugerageze gukora account ukoresheje umukiriya utari uwa production cyangwa staging site.
+
+## Uko Uruhererekane rwo Kugurisha Email Rukora {#how-the-email-seller-flow-works}
+
+Kugurisha email bifite ibyiciro bibiri bitandukanye:
+
+1. **Uburenganzira** — product/membership ya email ya Ultimate Multisite ivuga ko umukiriya yemerewe gukoresha email kuri domain ya site runaka, provider, quota, n'umubare ntarengwa wa accounts.
+2. **Gukora mailbox** — mailbox nyirizina ya provider, nka `info@example.com`, ikorwa igihe umukiriya cyangwa umuyobozi wa network ahisemo local part n'ijambo ry'ibanga.
+
+Mu gihe cya checkout, addon ikora cyangwa igafungura **email membership** kandi ikandika domain ya site y'umukiriya na provider kuri iyo membership. Ntitekereza izina rya mailbox cyangwa ijambo ry'ibanga. Nyuma y'uko kugura birangiye kandi imiterere ya site/domain ihari, umukiriya ashobora gufungura urupapuro rwa account agakora amazina ya mailbox ashaka.
+
+Ibi bivuze ko uruhererekane rusanzwe rw'umukiriya ari:
+
+1. Umukiriya agura site plan akongeraho email product mu gihe cya checkout.
+2. Ultimate Multisite ikora site membership na email membership ya kabiri.
+3. Addon ya Emails ihuza email membership na domain ya site y'umukiriya na provider.
+4. Umukiriya afungura **Account** muri dashboard ye.
+5. Panel ya **Email Accounts** igaragara kuri iyo email membership ikora.
+6. Umukiriya akanda **Create Account**, akinjiza local part nka `info`, agashyiraho ijambo ry'ibanga, maze addon igakora `info@their-domain.com` kuri provider wateguwe.
+
+## Tegura Email Product {#configure-an-email-product}
+
+Kora email product imwe kuri buri email package ushaka kugurisha cyangwa gutanga. Niba uri mushya mu gutegura products, hera kuri [Gukora Subscription Product Yawe ya Mbere](../../user-guide/configuration/creating-your-first-subscription-product) hanyuma ugaruke hano ku igenamiterere ryihariye rya email.
+
+1. Jya kuri **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Shyira **Product Type** kuri **Email**.
+3. Tegura ibiciro. Koresha igiciro gisubirwamo cyishyurwa ku plan igurishwa, cyangwa ushyire product kuri free/zero-priced niba igomba kuba email plan itangwa ku buntu.
+4. Fungura igice cya **Email Settings**.
+5. Hitamo **Email Provider** yateguwe.
+6. Shyiraho **Number of Accounts**, **Storage Quota (MB)**, imipaka ya aliases, forwarders, na autoresponders uko bikenewe.
+7. Bika product.
+
+Providers gusa zafunguwe kandi zateguwe neza ku rupapuro rwa **Integrations** ni zo zigaragara mu ihitamo rya provider. Niba ihitamo ririmo ubusa, banza utegure kandi ugerageze provider.
+
+## Ongeraho Email muri Checkout {#add-email-to-checkout}
+
+Email products akenshi zitangwa nk'inyongera kuri site plan. Reba [Checkout Forms](../../user-guide/configuration/checkout-forms) ku buryo rusange bwo gukoresha checkout editor.
+
+1. Kora cyangwa uhindure site plan abakiriya babanza kugura.
+2. Ongeraho email product nk'add-on/order bump iboneka kuri urwo ruhererekane rwa checkout.
+3. Emeza ko checkout form ikirimo fields zisanzwe zisabwa za site, cyane cyane site URL/domain field.
+4. Kora checkout y'igerageza ukoresheje umukiriya wa staging.
+5. Nyuma ya checkout, fungura [urupapuro rwa account](../../user-guide/client-management/account-page) rw'umukiriya maze wemeze ko panel ya **Email Accounts** igaragara.
+
+Domain ya email ikurwa kuri domain ya site y'umukiriya. Abakiriya ntibinjiza domain ya email mu ntambwe ya email product.
+
+## Gucunga Email kuri Account y'Umukiriya {#customer-account-email-management}
+
+Verisiyo 1.1.0 yongeramo widget yo gucunga email ku rupapuro rwa account y'umukiriya. Yikoreshe igihe abakiriya bagomba kwikorera gukora no kwita kuri mailboxes za site zabo bwite.
+
+Uhereye ku rupapuro rwa account, abakiriya bashobora:
+
+1. Kureba accounts za email zihujwe na email membership/site domain yabo iriho.
+2. Gukora mailbox nshya igihe email product yabo yemera accounts z'inyongera.
+3. Guhindura ijambo ry'ibanga rya mailbox isanzwe.
+4. Gufungura providers ba webmail bashyigikiwe binyuze muri SSO cyangwa magic-link login.
+
+Widget ikoresha sisitemu ya currents yo ku rupapuro rwa account ya Ultimate Multisite, bityo ibikorwa bikagirwa mu mbibi z'imiterere ya account umukiriya arimo kureba. Ibi birinda abakiriya gucunga accounts za email ziri kuri indi membership cyangwa site.
+
+Niba umukiriya atabona panel ya email, genzura ko afite **membership y'ibicuruzwa bya Email ikora**, ko iyo membership yahujwe na domain y'urubuga, kandi ko igicuruzwa gifite provider yagenwe.
+
+## Guha Umukiriya Plan ya Email y'Ubuntu {#giving-a-customer-a-free-email-plan}
+
+Kugira ngo uhe umukiriya email utamwishyuza, banza umuhe **email entitlement**, hanyuma ukore cyangwa ureke umukiriya akore mailbox.
+
+Amahitamo asabwa:
+
+* **Kora igicuruzwa cya email cy'ubuntu**: shyira igiciro cy'igicuruzwa cya email ku buntu/zeru, hanyuma wongereho membership ikora kuri uwo mukiriya uhereye kuri **Ultimate Multisite > Memberships > Add Membership**. Hitamo igicuruzwa cya email n'umukiriya. Memberships z'ubuntu zimara igihe cyose kugeza zihinduwe cyangwa zihagaritswe. Niba email membership igomba gukurikira urubuga rusanzweho, menya neza ko ihujwe n'imiterere y'urwo rubuga/domain.
+* **Koresha discount ya 100% cyangwa free checkout link**: reka umukiriya anyure muri checkout kugira ngo Ultimate Multisite ikore email membership n'inyandiko y'ubwishyu mu buryo bwikora.
+* **Admin-create mailbox**: jya kuri **Ultimate Multisite > Email Accounts > Add Email Account** kugira ngo ukore mailbox yihariye kuri provider ku mukiriya. Ibi bifasha muri support, ariko ntibisimbura email product membership ikoreshwa n'ibikoresho by'umukiriya byo kwikorera kuri account page.
+
+Niba ushaka ko umukiriya yicungira mailbox we ubwe avuye kuri account page, menya neza ko afite email membership ikora kuri domain. Provider mailbox yakozwe n'intoki idafite iyo membership ishobora kubaho, ariko umukiriya ashobora kutabona self-service email panel yayo.
+
+## Accounts Zakozwe na Admin na "Nta Order Number" {#admin-created-accounts-and-no-order-number}
+
+Paji ya admin ya **Email Accounts** ikora cyangwa ihindura provider mailbox. Si intambwe ya mbere yo kugurisha cyangwa gutanga email plan.
+
+Iyo uhindura email account, field ya **Membership** ishakisha memberships zisanzwe za Ultimate Multisite hakurikijwe reference/order number yazo. Nugerageza guha account umukiriya ataragira email membership, hashobora kutaboneka order number yo guhitamo.
+
+Ahubwo koresha uru rutonde rw'ibikorwa:
+
+1. Kora cyangwa ushake email membership y'umukiriya. Ku byaguzwe, checkout ibikora. Kuri plan y'impano, kora membership n'intoki uhereye kuri [Memberships](../../user-guide/administration/managing-memberships) cyangwa wohereze umukiriya anyure muri free checkout.
+2. Emeza ko membership ikora kandi ikoresha igicuruzwa cya Email.
+3. Emeza ko email membership ihujwe na domain/provider y'urubuga.
+4. Kora mailbox uhereye kuri account page y'umukiriya cyangwa kuri **Ultimate Multisite > Email Accounts**.
+5. Nibiba ngombwa, hindura inyandiko ya mailbox maze ugenere umukiriya, membership, n'urubuga.
+
+Niba ukeneye gusa gukora provider mailbox y'umukiriya kandi udakeneye imicungire ya self-service kuri account page, account yakozwe na admin ishobora kuba ihagije. Niba ushaka ko umukiriya ayibona kandi akayicunga muri Ultimate Multisite, kora na email membership.
+
+## Webmail SSO na Magic-Link Login {#webmail-sso-and-magic-link-login}
+
+Webmail SSO iha abakiriya igikorwa cya **Open webmail** kitaziguye kivuye kuri account page. Iyo bishyigikiwe na provider ikora, addon isaba access URL imara igihe gito maze ikohereza umukiriya muri webmail itamusabye gukoporora credentials za mailbox.
+
+Imyitwarire ya provider ishobora gutandukana:
+
+* Providers bafite SSO APIs kavukire bashobora gukora session ya webmail yemejwe itaziguye.
+* Providers bafite magic-link support bashobora gukora login link ifite igihe ntarengwa.
+* Providers badafite SSO cyangwa magic-link support bakwiye gukomeza kwerekana ibisobanuro bya mailbox n'ibikorwa byo gucunga password, ariko nta buto bwa webmail bwa one-click.
+
+Emeza webmail access gusa kuri providers aho wagennye API credentials zisabwa. Niba igikorwa kibura kuri provider, banza wemeze ko provider ikora, yagenwe, kandi ishyigikira webmail login links.
+
+## Checkout Provisioning {#checkout-provisioning}
+
+Addon ikora provisioning y'**membership context** ya email mu gihe cya checkout. Iandika provider, account limit, quota, na domain y'urubuga kugira ngo abakiriya bashobore gukora amazina ya mailbox yabo bwite bavuye kuri account page nyuma yo kugura.
+
+Uburyo bwo gutangiza busabwa:
+
+1. Gena provider n'imbibi z'igicuruzwa mbere yo gutanga igicuruzwa cya email.
+2. Gerageza kugura ukoresheje staging product maze wemeze ko email membership ikorwa.
+3. Suzuma account page y'umukiriya kugira ngo wemeze ko widget ya **Email Accounts** igaragara kuri domain.
+4. Kora test mailbox uhereye kuri widget.
+5. Emeza ibikorwa byo guhindura password na webmail mbere yo gufungurira flow ibicuruzwa bya production.
+
+Niba provisioning inaniwe, account y'umukiriya na membership bishobora gukomeza kubaho mu gihe email membership cyangwa provider mailbox bisaba gukurikiranwa na administrator. Reba activity logs za Ultimate Multisite na logs za provider mbere yo kongera kugerageza.
+
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
+
+Ku networks zishingiye kuri CyberPanel, version 1.1.0 yongeraho support ya email forwarder. Koresha forwarders igihe abakiriya bakeneye addresses nka `info@customer-domain.test` kugira ngo mail yoherezwe ku yindi inbox hatabayeho gukora mailbox yuzuye.
+
+Mbere yo gutanga forwarders, wemeze ko CyberPanel integration yagenwe kandi ishobora kugerwaho. Reba umurongo ngenderwaho wa [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration) ku bisabwa bya host, username, password, na package constants.
+
+## Changelog {#changelog}
+
+### Version 1.1.0 - Yasohotse ku wa 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Gishya: Webmail SSO no kwinjira ukoresheje magic-link — abakiriya bashobora kugera kuri webmail biturutse muri Account yabo bahise bemezwa mu gukanda rimwe.
+* Gishya: Imikorere yo guhindura ijambobanga yongewe kuri widget yo gucunga Account ya email.
+* Gishya: Inkunga ya CyberPanel email forwarder.
+* Gishya: Widget yo gucunga email ku rupapuro rwa Account rw’umukiriya, igenewe kwikorera kurema no gucunga Account.
+* Gishya: Gutegurira umukiriya uburenganzira bwa Account ya email byinjijwe mu mikorere ya checkout.
+* Gukosora: Hook ya widget y’urupapuro rwa Account yavuguruwe kugira ngo ikoreshe uburyo nyabwo bwa kwiyandikisha bwa UMS.
+* Gukosora: Ifishi ya Create Account yasimbujwe vanilla JS n’isohoka rya HTML document yuzuye kandi nyayo.
+* Gukosora: Widget yo gucunga email ubu ikoresha sisitemu ya currents ya UMS ku mapaji ya Account y’abayobozi.
+* Gukosora: Ifishi y’umuyobozi yo kurema Account ya email irimo umurima w’ijambobanga kandi ikoresha Email_Account_Manager.
+* Gukosora: Log spam ya buri request yakuwe mu gutangiza Email_Account_Manager.
+* Byanonosowe: Urupapuro rwa Settings ubu rurayungurura kugira ngo rwerekane gusa providers ba email bakora kandi bashyizweho neza.
+
+## Ibibazo Bikunze Kubazwa {#frequently-asked-questions}
+
+### Ese abakiriya bashobora kwiremamo Account zabo za email? {#can-customers-create-their-own-email-accounts}
+
+Yego. Iyo umukiriya afite membership ya email ikora kuri domain kandi product yemera Account z’inyongera, abakiriya bashobora kurema no gucunga mailboxes zabo ku rupapuro rwa Account.
+
+### Ese buri provider ashyigikira webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Oya. Inkunga ya SSO na magic-link iterwa na provider wa email ukora. Providers badafite API ya access-link bashobora gukomeza gushyigikira kurema mailbox no guhindura ijambobanga.
+
+### Ese abayobozi bashobora kuremera abakiriya Account za email? {#can-administrators-create-email-accounts-for-customers}
+
+Yego. Abayobozi bashobora kurema Account za email bavuye muri admin interface, harimo no gushyiraho ijambobanga ry’ibanze igihe barema Account. Ku micungire y’umukiriya yikorera, banza unemeze ko umukiriya afite membership ya email ikora kuri domain.
+
+### Ese nshobora gutanga Account ya email ku buntu? {#can-i-give-an-email-account-away-for-free}
+
+Yego. Rema product ya Email y’ubuntu/ifite igiciro cya zero maze uyongerere umukiriya nka membership ikora, cyangwa ureke umukiriya arangize checkout afite discount ya 100%. Iyo membership ya email imaze kubaho, umukiriya cyangwa umuyobozi ashobora kurema mailbox nyayo.
+
+### Kuki guha umuntu Account ya email bisaba nimero y’itegeko? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Umurima wa Membership ushakisha membership ya Ultimate Multisite isanzwe iriho hakoreshejwe nimero yayo ya reference/order. Niba umukiriya ataraguze product ya email kandi ukaba utaremye membership ya email n’intoki, nta membership/order ya email ihari yo gutanga. Banza ureme membership ya email, hanyuma ureme cyangwa utange mailbox.
+
+### Ese forwarders ni kimwe na mailboxes? {#are-forwarders-the-same-as-mailboxes}
+
+Oya. Mailbox ibika ubutumwa kandi igira ibyangombwa byo kwinjira. Forwarder yohereza ubutumwa kuri indi aderesi kandi ntitanga inbox yihariye.

@@ -3,7 +3,7 @@ title: Material WP மாற்றப் பட்டியல்
 sidebar_position: 99
 _i18n_hash: 538c4a793920aec2ff59b49f27125329
 ---
-# Material WP Changelog
+# Material WP Changelog {#material-wp-changelog}
 
 Version 1.1.15 - 01/26/2026
 * மேம்படுத்தப்பட்டது: குறியீடு பாணி மற்றும் வடிவமைப்பு;

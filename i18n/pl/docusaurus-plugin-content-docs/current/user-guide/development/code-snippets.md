@@ -3,7 +3,7 @@ title: Fragmenty kodu
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmenty kodu dla wersji v2
+# Fragmenty kodu dla wersji v2 {#code-snippets-for-v2}
 
 Fragmenty kodu w **WordPress** służą do wykonywania określonych działań, które w przeciwnym razie wymagałyby osobnej, mniejszej wtyczki. Takie fragmenty kodu umieszcza się w jednym z plików rdzenia WordPressa lub motywu (zazwyczaj w pliku functions.php Twojego motywu) lub można ich używać jako wtyczki MU.
 
@@ -15,13 +15,13 @@ W tym artykule pokażemy trzy fragmenty kodu, których można używać z **Ultim
 
   * [**Rozwiązywanie problemów CORS z ikonami fontowymi w mapowanych domenach**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Zmiana pozycji elementu menu Konto
+## Zmiana pozycji elementu menu Konto {#changing-the-position-of-the-account-menu-item}
 
 Aby zmienić pozycję elementu menu Konto w kokpicie Twojego klienta, wystarczy dodać poniższy fragment kodu do pliku functions.php aktywnego motywu Twojej głównej witryny. Możesz też umieścić ten fragment w jednej ze swoich wtyczek mu-plugins lub własnych wtyczek.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Dostosuj tę wartość, aby umieścić menu w wybranej pozycji.
 
-## Jak sprawdzić, czy użytkownik jest w danym planie i/lub ma aktywną subskrypcję
+## Jak sprawdzić, czy użytkownik jest w danym planie i/lub ma aktywną subskrypcję {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Jako administrator sieci możesz potrzebować tworzyć własne funkcje, które będą wykonywać podstawowe działania lub udostępniać usługę/funkcję wybranej grupie subskrybentów lub użytkowników końcowych, w zależności od statusu ich subskrypcji i planu, który subskrybują.
 
@@ -47,8 +47,8 @@ Pamiętaj, że użytkownicy mogą subskrybować tylko **Plan**, nie Pakiet ani U
 
 ![Lista produktów pokazująca ID planów](/img/admin/products-list.png)
 
-## Rozwiązywanie problemów CORS z ikonami fontowymi w mapowanych domenach
-## Rozwiązywanie problemów CORS z ikonami fontowymi w mapowanych domenach
+## Rozwiązywanie problemów CORS z ikonami fontowymi w mapowanych domenach {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Rozwiązywanie problemów CORS z ikonami fontowymi w mapowanych domenach {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Po mapowaniu domeny do podwitryny możesz zauważyć, że witryna ma problemy z ładowaniem niestandardowych fontów. Jest to spowodowane blokadą cross-origin w ustawieniach Twojego serwera.
 
@@ -56,13 +56,13 @@ Ponieważ pliki fontów są prawie zawsze ładowane bezpośrednio z CSS, nasza w
 
 Poniżej znajdują się fragmenty kodu rozwiązujące problem dla Apache i NGINX. Te zmiany wymagają zaawansowanej wiedzy o plikach konfiguracyjnych serwera (pliki .htaccess i pliki konfiguracyjne NGINX). Jeśli nie czujesz się komfortowo, wprowadzając te zmiany samodzielnie, wyślij tę stronę do zespołu wsparcia Twojego dostawcy hostingu, prosząc o pomoc.
 
-### Apache
+### Apache {#apache}
 
 W swoim pliku .htaccess dodaj:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 W pliku konfiguracyjnym serwera (lokalizacja różni się w zależności od serwera) dodaj:
 

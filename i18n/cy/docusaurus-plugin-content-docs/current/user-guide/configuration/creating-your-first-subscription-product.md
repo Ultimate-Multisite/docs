@@ -3,13 +3,13 @@ title: Creu eich cyfrifau cyntaf
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creu eich gyfrifau cyntaf (v2)
+# Creu eich gyfrifau cyntaf (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTI'RHYD: Mae'r ail nghyddug hwn yn rhoi am Ultimate Multisite fersiwn 2.x yn unig. Os ydych chi yn defnyddio fersiwn 1.x,**_ **_pwyd ystodwch y ail nghyddug hwn**_ .
 
 I rywbeth i ddeall eich rheiniad a entynnu'r gwasanaethau eich cyhoeddol i benwiolion allweddol, mae angen gael wybodaeth gyfrifau gyntaf. Sut ydynt yn creu'r cynnyrch hyn? Beth yw rheolau gyfrifau a gallwch chi offeru? Yn yr ail nghyddug hwn, byddwn yn gweld pob hyn sy rhaid i chi gwybod am y cyfrifau.
 
-## Drychiad Cyfrifau (Product Type)
+## Drychiad Cyfrifau (Product Type) {#product-type}
 
  gyda Ultimate Multisite gallwch offeru ddau gategori o gyfrifau i'ch cleiention: **cyfrifau** a **add-ons (Order Bump)**. Gall add-ons cael eu cyflwyno mewn ddau rheolau: **packageau** a **gwasanaethau**. Byddwn yn gweld y gwahaniaethau a'r pethau penodol hyn nesaf.
 
@@ -19,7 +19,7 @@ I rywbeth i ddeall eich rheiniad a entynnu'r gwasanaethau eich cyhoeddol i benwi
 
   * **Gwasanaethau (Services)**: add-ons sy'n ddim yn newid y ffurfion gweithredol o Ultimate Multisite. Mae’r hyn yn gweithgareddau sydd yn cael eu cyflwyno ar gyfer eich cleient i adran y cyfrif a chwarae wedi'i gael. Ar enw, gall eich cleient gael ei chwarae un cyfrif sy'n sylweddol i safle un ac hefyd y pwyllid am gwasanaeth addol sydd yn creu'r safle hwn.
 
-## Rheoli Cyfrifau (Managing Products)
+## Rheoli Cyfrifau (Managing Products) {#managing-products}
 
 Ar gyferol, yw'r tab **Products** yn Ultimate Multisite **(Ultimate Multisite > Products)** gallai ei ddefnyddio fel planau mewn amgylchedd gweithredol traddodiadol.
 
@@ -29,7 +29,7 @@ Bydd y sicr hon yn gwneud eich deall o'r cernwr hanfodol yr Ultimate Multisite.
 
 ![Products list page](/img/config/products-list.png)
 
-## Ymyddu Prodwsigau (Adding Products)
+## Ymyddu Prodwsigau (Adding Products) {#adding-products}
 
 Rydych chi'n ddefnyddio plan, paka, neu weithred fel y cyfrifau i ddefnyddio newItem newydd drwy **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Mae'r ffurf yn cynnwys ddau sefyllfa ddefnyddiol. Ar y chwarae, mae rhai tabiau 
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Disgrifiad (Description)
+### Disgrifiad (Description) {#description}
 
 Gall y gwybodaeth gyntaf o'r produsg cael ei ddefnyddio gan ddefnyddio enw produsg a disgrifiad. Mae'r cyfathrebu hyn yn dangos lle mae angen y gwybodaeth o'r produsg fel y dechrau planau a'r pres, y ffurfiadau (invoices), y cyfathrydion (upgrades), a chwarae.
 
 ![Product description section](/img/config/product-description.png)
 
-### Mathig Pres (Pricing Type)
+### Mathig Pres (Pricing Type) {#pricing-type}
 
 Ar ochr y cyflym o'r ffurf, gall y pres gynnigol cael ei ddefnyddio.
 
@@ -53,7 +53,7 @@ Ar ochr y cyflym o'r ffurf, gall y pres gynnigol cael ei ddefnyddio.
 
 Mae Ultimate Multisite yn cefnogi tri mathig pres yn rhyddol. Mae'r opsiwn **paid** yn cyflwyno'r gynllunwrthyn weithredol am gwybodaeth am y pres y produsg a chwarae.
 
-### Pres (Pricing)
+### Pres (Pricing) {#pricing}
 
 Mae'r ffeithrin pres yn ddefnyddio'r pres gyntaf o'r produsg a'r cyfnod gynnigol.
 
@@ -61,7 +61,7 @@ Mae'r ffeithrin pres yn ddefnyddio'r pres gyntaf o'r produsg a'r cyfnod gynnigol
 
 fel hynnyr pris o'r $29.99 gyda setiad o 1 mlynedd bydd yn billio $29.99 eu cyntaf. Yn y cyflwyniad, mae pris o $89.97 gyda setiad o 3 mlynedd bydd yn billio ystod y cyrddedau.
 
-### Cyflwyniadau Billio (Billing Cycles)
+### Cyflwyniadau Billio (Billing Cycles) {#billing-cycles}
 
 Mae'r sefyllfa Cyflwyniadau Billio yn nodi rhyfedd y cyfnod billio a yw'n cael ei ddefnyddio mewn cyd-fyddiadau neu termau cyffredinol.
 
@@ -69,7 +69,7 @@ Mae'r sefyllfa Cyflwyniadau Billio yn nodi rhyfedd y cyfnod billio a yw'n cael e
 
 Ar enw, pris o $29.99 gyda cyfnod o 1 mlynedd a 12 cyflwyniadau billio bydd yn billio $29.99 eu cyntaf ar y produsg am y 12 mlynedd nesaf. Yn y llall, bydd setiad hwn yn creu term pris cyffredinol o $29.99 per mlynedd am 12 mlynedd a fe wylio'r billio.
 
-### Cyfnod Cynllun (Trial Period)
+### Cyfnod Cynllun (Trial Period) {#trial-period}
 
 Mae gael y toggl offer trial yn rhoi i'r gyn-archwizair y rheiniad i ddefnyddio cyfnod cynllun ar gyfer y produsg.
 
@@ -77,7 +77,7 @@ Mae gael y toggl offer trial yn rhoi i'r gyn-archwizair y rheiniad i ddefnyddio 
 
 Yn y cyfnod cynllun, mae cydweithwyr yn llwybr i ddefnyddio'r produsg ac nid bydd eu billio heb fod y cyfnod cynllun wedi cael ei gwellio.
 
-### Cyfeiriad Cynllun (Setup Fee)
+### Cyfeiriad Cynllun (Setup Fee) {#setup-fee}
 
 Gallwch hefyd gyflwyno cyfeiriad cynllun ar eich plan.
 
@@ -85,7 +85,7 @@ Gallwch hefyd gyflwyno cyfeiriad cynllun ar eich plan.
 
 Mae hyn yn ei golygu bod eich cleient yn talu amol o wahania ar y billio cyntaf (yn o fewn pris y plan) sy'n cyfathogh â'r cyfeiriad a ddefnyddiwchwch yn y sefyllfa hwn.
 
-### Actif (Active)
+### Actif (Active) {#active}
 
 Mae'r toggl Actif yn rhoi amlwg i ddewis ydynt y produsg ar gael i'r cydweithwyr ar gyfer newid cyflwyniadau.
 
@@ -95,13 +95,13 @@ Os oes ydyrchonau ar gyfer y gweithredwyr
 
 Os oes gaeedau cleient sydd ar y plan hwn, mae tynnu'r toggle yn ei statws wedi'i dysgu i'w ddisgwylio'n dysg, yn llwybr yn gwneud y plan yn cael ei ddifynnu o'r cyflwyniadau yn y dyfodol. **Bydd y cleientau sydd ar y plan yn parhau i gael eu cyfrannu** thawel ydynt yn cael eu tynnu i plan newydd neu ei ddefnyddio o'r plan.
 
-### Imgysg Cynllun
+### Imgysg Cynllun {#product-image}
 
 Mae'r botun **Upload Image** yn sylw'r gynllunion media i'r gynllunwrthwr cyd-llwybr i ddewis neu ddefnyddio pobeth o'r cynllun.
 
 ![Product image section](/img/config/product-image.png)
 
-### Talybu
+### Talybu {#delete}
 
 Mae'r botun **Delete Product** yn talybu'r cynllun o'r system. Mae'n dangos unwaith y bydd y cynllun wedi'i cyflwyno.
 
@@ -109,11 +109,11 @@ Mae'r botun **Delete Product** yn talybu'r cynllun o'r system. Mae'n dangos unwa
 
 Fel yma, nid yw'r cynllun yn cael ei leoli mewn statws "trash". Fel hyn, unig ar gyfer ei talybu mae'r gweithrediad yn anghyfrifol.
 
-### Opsiadau Cynllun
+### Opsiadau Cynllun {#product-options}
 
 Ar ôl i fod y wybodaeth cynllun o'r cyflym yn cael ei ddefnyddio, mae'r opsiynau cynllun yn helpu'r gynllunwrthwr i ddifynnu'r adranau penodol o'r cynllun.
 
-#### Amserol
+#### Amserol {#general}
 
 Mae'r tab **General** yn cyflwyno'r adranau amserol o'r cynllun sydd yn cael eu cyflwyno nid yw'n golygu unrhyw un o'r tabau penodol o'r cynllun.
 
@@ -127,7 +127,7 @@ Mae'r **Customer Role** yn cyflwyno'r rôl sydd wedi'i gael i'r cleient yn cael 
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Yn o Ddychwilio a'r Cynlluniau (Up & Downgrades)
+#### Yn o Ddychwilio a'r Cynlluniau (Up & Downgrades) {#up--downgrades}
 
 Mae'r tab hwn yn cyflwyno’r fforddau cynllunio a chynllunio sydd ar gael i'r cyd-defnyddwyr mewn trefn eu cywir.
 
@@ -145,7 +145,7 @@ I ddefnyddio cynllun grŵp, gwneud y cynlluniau cywir yn y rhestr **plan group**
 
 Mae Ultimate Multisite hefyd yn cynnwys ffeithrin **order bump**, lle gallai addau aystrol (add-on products) a chwarae ychwanegol cael eu ychwanegu i'r cynlluniau. Mae hyn yn cael ei cynnig i'r cyd-defnyddwyr fel item addysgu sydd wedi'u gallu ychwanegu i'r cynlluniau ar gyfer cyflwyniad neu yn ystod cynllunio.
 
-#### Cyfathrebu Cyfathrebu (Price Variations)
+#### Cyfathrebu Cyfathrebu (Price Variations) {#price-variations}
 
 Mae'r pwyllau pren (price variations) yn sylw'r gynllunwrth y rheol (network administrator) i ddefnyddio cyflwyniadau pren arall yn ôl am y cyfnod. Mae'r setiad hwn yn gwneud i'r merch yn llai i gynnig cyfnod cyfathrebu (billing period) fel manwl, cyntaf, annal, neu unrhyw cyfnod cyfathrebu arall ar gyfer ystodol. Ar enllaft, gallwch setlo produs ag $29.99/mth with opsiwn annal wedi'i ddefnyddio yn $249.99/blwyddyn.
 
@@ -167,7 +167,7 @@ Ar enllaft, os ydych chi'r pren ysgol (base product price) yn $29.99 per mth, ga
 Mae pwyllau pren yn unig nid yw'n cael toggel neu switch i'r checkout ar y frontend. I gynnig i'r cyddeeion gwahaniaethau cyfathrebu (billing periods) (e.e., Mthly / Annal), mae angen i chi drosglwyddo field **Period Selection** i'ch ffurf checkout. Gweld [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) ar gyfer gystadleuaeth o ddlethyrenau.
 :::
 
-#### Taxedau (Taxes)
+#### Taxedau (Taxes) {#taxes}
 
 Mae'r tab **Taxes** yn cysylltiedig â'r setiadau tax sydd wedi'u cyflwyno mewn **Ultimate Multisite > Settings > Taxes** a yn benodol gyda'r gynnwys taxa ar gyfer. I weithredol y taxedau a ddefnyddio taxa ar gyfer, gweld y drafiadau ar **Ultimate Multisite: Settings**.
 
@@ -181,7 +181,7 @@ Ar ôl i'r tescafell tescafell ei ddefnyddio mewn **Ultimate Multisite > Setting
 
 I ddangos bod produsg yn item cyflwrus, rhoi'r toggel **Is Taxable** i weithredol ac gwilio'r tescafell tescafell aelodol o'r drwyllau Tescafell (Tax Category).
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Yn ddeall, mae site templates yn wefan WordPress cyflym sydd wedi'i chloeni i wefan y golybuswr ar ddechrau eu cyflwyniad.
 
@@ -203,7 +203,7 @@ I'r olaf, mae **C** **hoose Available Site Templates** yn gwneud rhydd i'r stafe
 
 Yn ddiwedd, os oes angen i'r weithredwr cyd-gynllunio bod y wybilydd stafell yn digwydd mewn steddau chec, bydd setiadur ' _default_ ' yn cyfyngu. Fel alternatiw i talybu a chofio y wybilydd stafell ac rhoi'r wybilydd i'r setiadau y plan, gall y opsiynion ' _assign new template_ ' neu ' _choose available site templates_ ' fod yn dymunol.
 
-#### Sites (Steddau)
+#### Sites (Steddau) {#sites}
 
 Mae'r tab **Sites** yn rhan o ffurf gweithredol Ultimate Multisite.
 
@@ -213,7 +213,7 @@ Mae'r setiadur hwn yn cyflwyno angen mwyaf o steddau a gall y cyd-defnyddiwr cre
 
 I'w chynllunio'r gweithredol, rhoi'r toggel **limit sites** i'r status ei weithredol ac cyflwyno angen mwyaf o steddau yn y field **site allowance**.
 
-#### Visits (Ymrydion)
+#### Visits (Ymrydion) {#visits}
 
 Mae'r tab **Visits** yn rhan arall o system gweithredol Ultimate Multisite. Mae'r setiadur hwn yn sylwi ar gyfer cyfrifoldeb a ddiweddarau ar y chwarae unigol i'r stedd y cyd-defnyddiwr.
 
@@ -225,7 +225,7 @@ I weld y ffeithrin hwn, rhoi'r toggel **limit unique visits** i'r stat newydd ac
 
 Pan fydd y limit hwn wedi'i gael, bydd Ultimate Multisite yn ddeall i weithio ar gyfer y cyflwyniad ystafell yn lle dangos message i ddweud bod y limitau wedi'u gwblhau.
 
-#### Cyfathrebuwr (Users)
+#### Cyfathrebuwr (Users) {#users}
 
 Mae'r hanesau 'Users' o Ultimate Multisite yn sylw'r chyd-fyndwr network i redeg ar gyflwynion ar unig o gyfathrebuwr sydd bresennol a'i gael rôl.
 
@@ -235,7 +235,7 @@ I chynllun y ffeithrin hanesau hwn, rhoi'r toggel **limit user** i'r stat newydd
 
 Yna ar gyfer pob rôl sydd yn cael ei redeg, rhoi'r toggel yn ei gymryd gyda hi i'r stat newydd a chyflwyno'r limit uwch mwyaf yn y field cywir.
 
-#### Post Types (Tydau Post)
+#### Post Types (Tydau Post) {#post-types}
 
 Mae'r tab **Post Types** yn sylw'r chyd-fyndwr network i redeg ar gyflwynion sydd yn cael eu gwneud mewn amgylchedd fawr o post types yn WordPress.
 
@@ -247,7 +247,7 @@ I weld y subsystem hanesau hwn, rhoi'r toggel **limit post types** i'r stat newy
 
 Ar ôl post typeau i'r limitio, rheoliwch yn ei ymddangos gan ei llwybrio ar y gwylch i'r gael a nodi'r cyflwr ddefnyddiol uchaf yn y ffeil sy'n cywir.
 
-#### Cyflenau Disk (Disk Space)
+#### Cyflenau Disk (Disk Space) {#disk-space}
 
 Mae'r tab **Disk Space** yn sylwogol i'r gynllunwyr cyd-gynllunio i redeg y safon a ddefnyddir gan y cyd-gynllunwyr.
 
@@ -259,13 +259,13 @@ I gael y limitio ddefnyddio disk, rhoi'r gwylch **limit disk size per site** i'r
 
 Yna, nodwch y cyflwr uchaf yn megabai mewn ffeil **disk space allowance**.
 
-#### Domenau Custom (Custom Domain)
+#### Domenau Custom (Custom Domain) {#custom-domain}
 
 Gan ei ymddangos y opsiwn hwn, gallwch gael domenau custom ar y plan hwn yn benodol.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Theimau (Themes)
+#### Theimau (Themes) {#themes}
 
 Mae'r tab **Themes** ynghylch y opsiynau y produs, yn sylwogol i'r gynllunwr cyd-gynllunio i gael theimau ar gael i'r cyd-gynllunwyr i'u deall a i'r cyflwr i'r stat y theim yn cael ei gyfeiriol.
 
@@ -283,7 +283,7 @@ Mae'r wybodaeth **behavior** yn sylwogol i'r gynllunwr cyd-gynllunio i ddefnyddi
 
 Yn **stat gyflenwi** mae'r thema wedi cael ei ddefnyddio gan y cyddee ar gyfer cyflwyniad hunanol. Yn y pethau **Nid Mae Ar Gweithredoedd**, mae'r thema yn tystyr y cyddee i'r cyddee i chwarae'r thema. Yn olaf, mae'r opsiwn **Force Activate** yn golygu i'r thema cael ei ddefnyddio a chwarae yn uniongyrchol, gan ei wneud yn debyg ar gyfer y safle pan cael ei creu.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Fel ychwanegol i'r tab Themes, mae Ultimate Multisite yn sylwi'r gyn-archwizair y rheiniant i ddefnyddio'r cyflwyniad o'r plugins i'r cyddei fel hefyd fel stat eu pan cael ei creu safle newydd.
 
@@ -303,7 +303,7 @@ Mae'r setiadur **Force Activate & Lock** yn gweithio felly fel, ond mae'n gwarch
 
 Gall y cydweithredwr weleiddio'r setiadur Force Activate & Lock a Force Inactivate & Lock gyda chymryd â templau safle (site templates) fel pluginau, ac gall y statau o'r pluginau yng nghanol y templau cael eu cyflawni gan y setiadur hyn os oes angen.
 
-#### Gyhoeddi'r Batrodd
+#### Gyhoeddi'r Batrodd {#reset-limitations}
 
 Mae'r tab **Reset Limitations** yn trefnu allan y batroddau a gaelon ar y produs. I trefnu'r batroddau, gwchuedwch ar y bot **reset limitations**.
 
@@ -313,7 +313,7 @@ I sicr y gweithrediad, slai'r toggel **confirm reset** i'w stat "active" ar y oc
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Redig, Duplikat neu Ddilebu Prod
+## Redig, Duplikat neu Ddilebu Prod {#edit-duplicate-or-delete-product}
 Gallai redig, duplikat neu ddiilebu prodau sydd wedi'u cyflwyno gan weithrediad yn **Ultimate Multisite > Products** a chwilio ar y enw y produs sydd wedi'i gael.
 
 ![Product hover actions](/img/config/product-hover-actions.png)

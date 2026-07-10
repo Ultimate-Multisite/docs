@@ -3,15 +3,15 @@ title: Restaurantmenyer
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Restaurantmenyer
+# Restaurantmenyer {#hospitality-menus}
 
 Funksjonen **Restaurantmenyer** lar Theme Builder generere og innebygge strukturerte menyer for mat og drikke direkte på WordPress-nettstedet ditt.
 
-## Oversikt
+## Oversikt {#overview}
 
 Theme Builder kan nå lage profesjonelle, strukturerte menysider for bedrifter innen hotell- og restaurantbransjen, inkludert restauranter, kafeer, barer og cateringfirmaer. Disse menyene er fullstendig integrert i nettstedets design og er enkle å oppdatere og administrere.
 
-## Støttede bransjetyper
+## Støttede bransjetyper {#supported-hospitality-types}
 
 - **Restauranter** — menyer for fullservice-måltider
 - **Kafeer** — kaffe- og lettmatmenyer
@@ -21,9 +21,9 @@ Theme Builder kan nå lage profesjonelle, strukturerte menysider for bedrifter i
 - **Food Trucks** — mobile matservice-menyer
 - **Bryggerier og vinhandlerier** — drikkevaremenyer med beskrivelser
 
-## Menystruktur
+## Menystruktur {#menu-structure}
 
-### Menykategorier
+### Menykategorier {#menu-categories}
 
 Menyer er organisert i kategorier:
 
@@ -34,7 +34,7 @@ Menyer er organisert i kategorier:
 - **Drikkevarer** — drikke (alkoholiske og ikke-alkoholiske)
 - **Spesialiteter** — daglige eller sesongbaserte spesialiteter
 
-### Format for menyvare
+### Format for menyvare {#menu-item-format}
 
 Hver menyvare inkluderer:
 
@@ -49,7 +49,7 @@ Hver menyvare inkluderer:
 }
 ```
 
-#### Felt for varer
+#### Felt for varer {#item-fields}
 
 | Felt | Type | Beskrivelse |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Hver menyvare inkluderer:
 | `allergens` | array | Vanlige allergener (Nøtter, Skalldyr, etc.) |
 | `availability` | string | Når varen er tilgjengelig (Daglig, Sesongbasert, etc.) |
 
-## Oppretting av restaurantmenyer
+## Oppretting av restaurantmenyer {#creating-hospitality-menus}
 
-### Trinn 1: Oppgi menyinformasjon
+### Trinn 1: Oppgi menyinformasjon {#step-1-provide-menu-information}
 
 Fortell Theme Builder om menyen din:
 
@@ -71,7 +71,7 @@ Lag en restaurantmeny for min italienske restaurant med forretter,
 pastaretter, hovedretter og desserter. Inkluder priser og beskrivelser.
 ```
 
-### Trinn 2: Theme Builder genererer menyen
+### Trinn 2: Theme Builder genererer menyen {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Formaterer priser og beskrivelser
 5. Legger til informasjon om kosthold og allergener
 
-### Trinn 3: Gjennomgang og tilpasning
+### Trinn 3: Gjennomgang og tilpasning {#step-3-review-and-customize}
 
 Du kan:
 
@@ -91,9 +91,9 @@ Du kan:
 4. Oppdatere beskrivelser og kostholdsinformasjon
 5. Justere styling og layout
 
-## Menyvisningsalternativer
+## Menyvisningsalternativer {#menu-display-options}
 
-### Full meny-side
+### Full meny-side {#full-menu-page}
 
 En dedikert side som viser hele menyen din:
 
@@ -102,7 +102,7 @@ En dedikert side som viser hele menyen din:
 - Utformet for utskrift
 - Mobilvennlig design
 
-### Meny-widget
+### Meny-widget {#menu-widget}
 
 Innebyg menyseksjoner på andre sider:
 
@@ -111,7 +111,7 @@ Innebyg menyseksjoner på andre sider:
 - Drikkevaremeny på bar-siden
 - Dessertutstilling i bunnteksten
 
-### Meny-PDF
+### Meny-PDF {#menu-pdf}
 
 Generer en nedlastbar PDF-meny:
 
@@ -120,9 +120,9 @@ Generer en nedlastbar PDF-meny:
 - Inkluderer bilder og beskrivelser
 - Enkelt å dele og sende via e-post
 
-## Kosthold og allergener
+## Kosthold og allergener {#dietary-and-allergen-information}
 
-### Kostholdsegenskaper
+### Kostholdsegenskaper {#dietary-attributes}
 
 Marker varer med kostholdsinformasjon:
 
@@ -134,7 +134,7 @@ Marker varer med kostholdsinformasjon:
 - **Lavkarbo** — redusert karbohydrater
 - **Høyt proteininnhold** — proteinrikt
 
-### Allergenadvarsler
+### Allergenadvarsler {#allergen-warnings}
 
 Inkluder vanlige allergener:
 
@@ -147,9 +147,9 @@ Inkluder vanlige allergener:
 - **Gluten** — hvete og glutenholdige korn
 - **Sesam** — sesamfrø og olje
 
-## Menyadministrasjon
+## Menyadministrasjon {#menu-management}
 
-### Oppdatering av priser
+### Oppdatering av priser {#updating-prices}
 
 Oppdater menypriser enkelt:
 
@@ -159,7 +159,7 @@ Oppdater menypriser enkelt:
 4. Lagre endringene
 5. Endringene vises umiddelbart på nettstedet ditt
 
-### Legge til sesongvarer
+### Legge til sesongvarer {#adding-seasonal-items}
 
 Opprett sesongvariasjoner av menyen:
 
@@ -169,7 +169,7 @@ Opprett sesongvariasjoner av menyen:
 4. Sett tidsplan for tilgjengelighet
 5. Vises automatisk i sesongen
 
-### Administrere spesialiteter
+### Administrere spesialiteter {#managing-specials}
 
 Vis daglige eller ukentlige spesialiteter:
 
@@ -179,7 +179,7 @@ Vis daglige eller ukentlige spesialiteter:
 4. Oppdater daglig eller ukentlig
 5. Arkiver gamle spesialiteter
 
-## Integrasjon med Theme Builder
+## Integrasjon med Theme Builder {#integration-with-theme-builder}
 
 Når du bruker Theme Builder for hotell- og restaurantnettsteder:
 
@@ -189,9 +189,9 @@ Når du bruker Theme Builder for hotell- og restaurantnettsteder:
 4. **Mobiloptimalisering** — menyene vises vakkert på telefoner
 5. **SEO-optimalisering** — menyene er vennlige for søkemotorer
 
-## Beste praksiser
+## Beste praksiser {#best-practices}
 
-### Menyutforming
+### Menyutforming {#menu-design}
 
 - **Klar organisering** — logisk kategoristruktur
 - **Lesbare beskrivelser** — appetittvekkende og informative
@@ -199,7 +199,7 @@ Når du bruker Theme Builder for hotell- og restaurantnettsteder:
 - **Profesjonelle bilder** — høykvalitets matbilder
 - **Hvitt rom** — ikke overfyll siden
 
-### Innhold
+### Innhold {#content}
 
 - **Nøyaktige beskrivelser** — beskriv varene nøyaktig
 - **Fremhev spesialiteter** — få spesialitetene til å skinne
@@ -207,7 +207,7 @@ Når du bruker Theme Builder for hotell- og restaurantnettsteder:
 - **Oppdater regelmessig** — hold priser og varer oppdatert
 - **Bruk appetittvekkende språk** — få varene til å høres deilige ut
 
-### Tilgjengelighet
+### Tilgjengelighet {#accessibility}
 
 - **Lesbare fonter** — bruk klare, lettleste skrifttyper
 - **Tilstrekkelig kontrast** — sørg for at teksten er lesbar
@@ -215,9 +215,9 @@ Når du bruker Theme Builder for hotell- og restaurantnettsteder:
 - **Allergenadvarsler** — vis allergener fremtredende
 - **Mobilvennlig** — test på alle enheter
 
-## Eksempler
+## Eksempler {#examples}
 
-### Restaurantmenystruktur
+### Restaurantmenystruktur {#restaurant-menu-structure}
 
 ```
 Forretter
@@ -241,7 +241,7 @@ Dessert
 └── Gelato Selection
 ```
 
-### Kafe-menystruktur
+### Kafe-menystruktur {#cafe-menu-structure}
 
 ```
 Kaffe
@@ -260,7 +260,7 @@ Smørbrød
 └── Vegetarisk wrap
 ```
 
-## Relaterte funksjoner
+## Relaterte funksjoner {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — opprett navigasjonsmenyer
 - [Design Direction](./design-direction.md) — tilpass nettstedets design

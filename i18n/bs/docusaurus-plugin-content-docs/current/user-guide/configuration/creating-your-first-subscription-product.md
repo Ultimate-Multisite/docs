@@ -3,13 +3,13 @@ title: Kreiranje vašeg prvog pretplatničkog proizvoda
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Kreiranje vašeg prvog proizvoda pretplate (v2)
+# Kreiranje vašeg prvog proizvoda pretplate (v2) {#creating-your-first-subscription-product-v2}
 
 _**VAŽNA NAPOMENA: Ovaj članak je samo za korisnike Ultimate Multisite verzije 2.x. Ako koristite verziju 1.x,**_ **_**pogledajte ovaj članak**_**.
 
 Da biste pokrenuli svoju mrežu i počeli prodavati svoje usluge potencijalnim korisnicima, morate imati različite opcije pretplate. Kako kreirati ove proizvode? Koje vrste proizvoda možete ponuditi? U ovom članku, pokrićemo sve što trebate znati o proizvodima.
 
-## Vrsta proizvoda
+## Vrsta proizvoda {#product-type}
 
 Sa Ultimate Multisite-om možete ponuditi dvije kategorije proizvoda svojim klijentima: **planove** i **dodatke (Add-ons) (Order Bump)**. Dodatke se mogu podijeliti u dvije vrste: **pakete** i **usluge**. Razlike i specifičnosti ćemo pogledati u sljedećem dijelu.
 
@@ -19,7 +19,7 @@ Sa Ultimate Multisite-om možete ponuditi dvije kategorije proizvoda svojim klij
 
 *   **Usluge (Services):** Dodaci koji ne mijenjaju funkcionalnosti Ultimate Multisite-a. To su zadaci koje ćete realizirati za svog klijenta, pored plana koji je kupio. Na primjer, vaš klijent može kupiti plan koji dopušta jedan sajt, a istovremeno platiti za dodatnu uslugu koja će dizajnirati taj sajt.
 
-## Upravljanje proizvodima
+## Upravljanje proizvodima {#managing-products}
 
 Za mnoge, kartica **Proizvodi (Products)** u Ultimate Multisite-u (**Ultimate Multisite > Products**) može se ekvivalentirati planovima u tradicionalnom hosting okruženju.
 
@@ -29,7 +29,7 @@ Ovaj dio će vam pomoći da razumijete ovaj esencijalni temelj Ultimate Multisit
 
 ![Products list page](/img/config/products-list.png)
 
-## Dodavanje proizvoda
+## Dodavanje proizvoda {#adding-products}
 
 Bilo da je riječ o planu, paketu ili usluzi, ulazna točka za definisanje novog artikla je putem **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Interfejs sadrži dva glavna dijela. S lijeve strane nalaze se nekoliko kartica 
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Opis (Description)
+### Opis (Description) {#description}
 
 Osnovne informacije o proizvodu mogu se definisati navođenjem naziva i opisa proizvoda. Ovi identifikatori se prikazuju gdje god je potreban proizvodni sadržaj, kao što su odabir plana i cijena, fakture, nadogradnje i slično.
 
 ![Product description section](/img/config/product-description.png)
 
-### Vrsta cijene (Pricing Type)
+### Vrsta cijene (Pricing Type) {#pricing-type}
 
 S desne strane interfejsa, može se definisati osnovna cijena.
 
@@ -53,7 +53,7 @@ S desne strane interfejsa, može se definisati osnovna cijena.
 
 Ultimate Multisite podržava tri različite vrste cijena. Opcija **plaćeno (paid)** traži od administratora mreže informacije o cijeni proizvoda i učestalosti naplate.
 
-### Cijena (Pricing)
+### Cijena (Pricing) {#pricing}
 
 Komponenta cijene definiše osnovnu cijenu proizvoda i interval naplate.
 
@@ -61,7 +61,7 @@ Komponenta cijene definiše osnovnu cijenu proizvoda i interval naplate.
 
 Dakle, primjer cijene od 29,99 $ sa podešavanjem od 1 mjesec naplaćivat će 29,99 $ svaki mjesec. Slično tome, cijena od 89,97 $ sa podešavanjem od 3 mjeseca naplaćivat će taj iznos svakog kvartala.
 
-### Ciklusi naplate (Billing Cycles)
+### Ciklusi naplate (Billing Cycles) {#billing-cycles}
 
 Sekcija ciklusa naplate određuje učestalost navedenog intervala naplate i generalno se razumije u kontekstu ugovora ili fiksnih članaka.
 
@@ -69,7 +69,7 @@ Sekcija ciklusa naplate određuje učestalost navedenog intervala naplate i gene
 
 Na primjer, proizvodna cijena od 29,99 $ sa intervalom od 1 mjesec i 12 ciklusa naplate naplaćivat će 29,99 $ mjesečno za proizvod tokom sljedećih 12 mjeseci. Drugim riječima, takvo podešavanje uspostavlja fiksni period od 29,99 $ mjesečno za 12 mjeseci, a zatim prestaje naplata.
 
-### Period probnog korištenja (Trial Period)
+### Period probnog korištenja (Trial Period) {#trial-period}
 
 Omogućavanje prekidača **Trial Period** dozvoljava administratoru mreže da definira period probnog korištenja za proizvod.
 
@@ -77,7 +77,7 @@ Omogućavanje prekidača **Trial Period** dozvoljava administratoru mreže da de
 
 Tokom perioda probnog korištenja, klijenti su slobodni da koriste proizvod i neće biti naplaćeni dok se period probnog korištenja ne potroši.
 
-### Naknada za postavljanje (Setup Fee)
+### Naknada za postavljanje (Setup Fee) {#setup-fee}
 
 Takođe možete primijeniti naknadu za postavljanje na svoj plan.
 
@@ -85,7 +85,7 @@ Takođe možete primijeniti naknadu za postavljanje na svoj plan.
 
 To znači da će vaš klijent platiti dodatni iznos prilikom prve naplate (pored cijene plana) koji odgovara naknadi koju ste definisali u ovoj sekciji.
 
-### Aktivno (Active)
+### Aktivno (Active) {#active}
 
 Prekidač **Active** efektivno definiše da li je proizvod dostupan klijentima za nove prijave.
 
@@ -93,13 +93,13 @@ Prekidač **Active** efektivno definiše da li je proizvod dostupan klijentima z
 
 Ako postoje postojeći klijenti na ovom planu, postavljanje prekidača u neaktivno stanje efektivno "grandfatheruje" plan, uklanjajući ga iz budućih prijava. **Postojeći klijenti na planu će nastaviti biti naplaćeni** dok ne budu prebačeni na novi plan ili uklonjeni sa plana.
 
-### Slika proizvoda (Product Image)
+### Slika proizvoda (Product Image) {#product-image}
 
 Dugme **Upload Image** omogućava administratoru mreže da koristi medijalistiku za odabir ili učitavanje slike proizvoda.
 
 ![Product image section](/img/config/product-image.png)
 
-### Brisanje (Delete)
+### Brisanje (Delete) {#delete}
 
 Dugme **Delete Product** briše proizvod iz sistema. Pojavljuje se tek nakon što je proizvod objavljen.
 
@@ -107,11 +107,11 @@ Dugme **Delete Product** briše proizvod iz sistema. Pojavljuje se tek nakon št
 
 Za razliku od drugih brisanja, proizvod se ne stavlja u nikakvo kante za smeće stanje. Stoga, nakon brisanja, akcija je neopoziva.
 
-### Opcije proizvoda (Product Options)
+### Opcije proizvoda (Product Options) {#product-options}
 
 Nakon što se definisuju osnovne informacije o proizvodu, opcije proizvoda pomažu administratoru mreže da dalje definiše specifične atribute proizvoda.
 
-#### Opšte (General)
+#### Opšte (General) {#general}
 
 Kartica **General** definiše opšte atribute proizvoda koji nisu primjenjivi na nijednu od drugih kartica specifičnih za proizvod.
 
@@ -125,7 +125,7 @@ Ultimate Multisite podržava nekoliko tipova proizvoda, a to su Plan, Paket i Us
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Nadogradnje i degradacije (Up & Downgrades)
+#### Nadogradnje i degradacije (Up & Downgrades) {#up--downgrades}
 
 Ova kartica određuje puteve nadogradnje i degradacije dostupne klijentu unutar njegovog specifičnog nivoa.
 
@@ -143,7 +143,7 @@ Da biste definisali grupu planova, navedite kompatibilne planove u listi **plan 
 
 Ultimate Multisite takođe uključuje funkciju **order bump** gdje se odgovarajući dodatni proizvodi i usluge mogu dodati planovima. Oni se nude klijentu kao dodatni artikli koji se mogu dodati planovima prilikom naplate ili tokom nadogradnje.
 
-#### Varijacije cijena (Price Variations)
+#### Varijacije cijena (Price Variations) {#price-variations}
 
 Varijacije cijena omogućavaju administratoru mreže da navede alternativne nivoe cijena ovisno o trajanju. Ovo podešavanje omogućava da se za isti proizvod ponudi mjesečni, kvartalni, godišnji ili bilo koji drugi period naplate. Na primjer, možete postaviti proizvod na 29,99 $/mjesečno sa popustnom godišnjom opcijom od 249,99 $/godinu.
 
@@ -164,7 +164,7 @@ Na primjer, ako je vaša osnovna proizvodna cijena 29,99 $ mjesečno, mogli bist
 
 Samo varijacije cijena ne dodaju prekidač niti preklopnik na frontend naplati. Da biste klijentima omogućili prebacivanje između perioda naplate (npr. od meseca), potrebno je da imate na raspolaganju.
 
-### ⚙️ Kako koristiti ovo znanje?
+### ⚙️ Kako koristiti ovo znanje? {#taxes}
 
 Ovo je detaljan vodič za administraciju i prodaju usluga. Da biste ga koristili, morate znati:
 

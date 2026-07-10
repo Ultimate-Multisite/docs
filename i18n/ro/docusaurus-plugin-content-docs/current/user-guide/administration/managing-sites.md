@@ -3,7 +3,7 @@ title: Gestionarea Site-urilor
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# Gestionarea site-urilor
+# Gestionarea site-urilor {#managing-sites}
 
 Site-urile (sau subsite-urile) reprezintă nucleul afacerii tale WaaS. Ultimate Multisite oferă 3 tipuri de site-uri:
 
@@ -11,13 +11,13 @@ Site-urile (sau subsite-urile) reprezintă nucleul afacerii tale WaaS. Ultimate 
 - **Șabloane de site** — Site-uri predefinite pe care clienții le pot alege ca punct de plecare
 - **Site-ul principal** — Site-ul principal al rețelei tale
 
-## Vizualizarea site-urilor
+## Vizualizarea site-urilor {#viewing-sites}
 
 Navighează la **Ultimate Multisite → Sites** pentru a vedea toate subsite-urile din rețeaua ta. Fiecare site este etichetat în funcție de tip și poți filtra după Toate site-urile, Deținute de clienți, Șabloane sau În așteptare.
 
 ![Pagina cu lista site-urilor](/img/admin/sites-list.png)
 
-## Adăugarea unui site nou
+## Adăugarea unui site nou {#adding-a-new-site}
 
 Apasă butonul **Add Site** pentru a crea un site nou. Va trebui să furnizezi:
 
@@ -27,15 +27,15 @@ Apasă butonul **Add Site** pentru a crea un site nou. Va trebui să furnizezi:
 
 Opțiunea **Copy Site** îți permite să creezi un site nou pe baza unui șablon de site existent. Când este activată, poți selecta ce șablon să folosești ca punct de plecare. Asigură-te că opțiunea **Copy Media on Duplication** este activată pentru a include și fișierele media.
 
-## Gestionarea unui site existent
+## Gestionarea unui site existent {#managing-an-existing-site}
 
 Apasă **Manage** pe orice site pentru a deschide pagina **Edit Site**. Aici vei găsi:
 
-### Informații de bază
+### Informații de bază {#basic-information}
 
 Numele site-ului, tipul, ID-ul site-ului și descrierea. Vei vedea, de asemenea, domeniul mapat, membership-ul asociat și contul de client care deține site-ul.
 
-### Opțiuni pentru site
+### Opțiuni pentru site {#site-options}
 
 Configurează capabilitățile și limitele site-ului:
 
@@ -47,7 +47,7 @@ Configurează capabilitățile și limitele site-ului:
 
 În mod implicit, site-urile respectă limitele setate la nivelul membership-ului. Setarea limitelor la nivel de site va suprascrie setările membership-ului.
 
-### Asocieri
+### Asocieri {#associations}
 
 Sub opțiunile site-ului vei găsi informații despre:
 
@@ -55,7 +55,7 @@ Sub opțiunile site-ului vei găsi informații despre:
 - **Membership-ul** sub care se află site-ul
 - **Contul de client** legat de site
 
-### Bara laterală din dreapta
+### Bara laterală din dreapta {#right-sidebar}
 
 În partea dreaptă poți:
 

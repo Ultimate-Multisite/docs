@@ -3,11 +3,11 @@ title: Gudanar da Plugin & Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# سازنده و آزمایشگاه افزونه‌ها (Plugin Builder & Sandbox)
+# سازنده و آزمایشگاه افزونه‌ها (Plugin Builder & Sandbox) {#plugin-builder--sandbox}
 
 Gratis AI Agent v1.5.0-yi **سازنده و آزمایشگاه سیستم (Plugin Builder & Sandbox System)** darjara, wanda ke AI assistant zai iya ƙirƙira, ya kuma sarrafa WordPress plugins a kan gida ɗinka — kullum ta hanyar wani muhalli na tsaro da aka sanya (sandbox environment).
 
-## Nazarin Jigon (Overview)
+## Nazarin Jigon (Overview) {#overview}
 
 Plugin Builder yana ba AI assistant damar rubuta custom WordPress plugins a matsayin amsa ga tambayoyin yau da kullum. Plugins da aka ƙirƙira za a tabbatar da su, a kan wurin ajiya, sannan a kuma sarrafa su a cikin wani layer na sandbox kafin su shiga aiki a wurin gida (live site functionality).
 
@@ -17,7 +17,7 @@ Amfani da shi ga:
 - Bincike (prototyping) ƙarin ayyuka waɗanda ke buƙatar WordPress hooks ko custom post types.
 - Gano ƙaramin tsarin sarrafa ayyuka (automation scripts) don aiki da yawa (batch operations).
 
-## Kafa Plugin ta hanyar AI
+## Kafa Plugin ta hanyar AI {#generating-a-plugin-via-ai}
 
 Don ƙirƙirar plugin, buɗe wajen tattaunawar Gratis AI Agent kuma ka bayyana abin da kake so. Misali:
 

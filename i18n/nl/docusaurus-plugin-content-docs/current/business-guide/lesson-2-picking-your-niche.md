@@ -3,19 +3,19 @@ title: 'Les 2: Je Niche Kiezen'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Les 2: Je Niche Kiezen
+# Les 2: Je Niche Kiezen {#lesson-2-picking-your-niche}
 
 In Les 1 hebben we vastgesteld waarom een niche beter is dan algemeen. Nu moet je de jouwe kiezen. Deze les geeft je een raamwerk om een niche te vinden en te valideren voordat je tijd investeert in het bouwen ervan.
 
-## Waar We Gebleven Zijn
+## Waar We Gebleven Zijn {#where-we-left-off}
 
 We hebben het concept FitSite gedefinieerd: een websiteplatform voor fitnessstudio's. Maar hoe kwamen we dan specifiek bij fitnessstudio's? Deze les loopt door het proces heen, zodat je het kunt toepassen om je eigen niche te vinden.
 
-## De Drie Criteria
+## De Drie Criteria {#the-three-criteria}
 
 Een goede niche voor een websiteplatform voldoet aan drie voorwaarden:
 
-### 1. Ze Hebben Websites Nodig, Maar Hebben Moeite Met Goede Enkele
+### 1. Ze Hebben Websites Nodig, Maar Hebben Moeite Met Goede Enkele {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Zoek naar sectoren waarin:
 
@@ -26,7 +26,7 @@ Zoek naar sectoren waarin:
 
 **Fitnessstudio's passen**: leden verwachten online classchema's, prijzen en boekingen te vinden. De meeste studiowebsites zijn verouderd of gebouwd op algemene templates die het doel niet dienen.
 
-### 2. De Bedrijven Kunnen Een Maandelijkse Abonnement Betalen
+### 2. De Bedrijven Kunnen Een Maandelijkse Abonnement Betalen {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Je doelklanten moeten:
 
@@ -36,7 +36,7 @@ Je doelklanten moeten:
 
 **Fitnessstudio's passen**: ze betalen al voor boekingssoftware, betalingsverwerking en marketingtools. Een websiteabonnement is een natuurlijke aanvulling.
 
-### 3. Ze Spreken Met Elkaar
+### 3. Ze Spreken Met Elkaar {#3-they-talk-to-each-other}
 
 De beste niches hebben:
 
@@ -46,9 +46,9 @@ De beste niches hebben:
 
 **Fitnessstudio's passen**: studio-eigenaren nemen deel aan fitnessindustrie-evenementen, participeren in online gemeenschappen en delen vaak tools en diensten met collega's.
 
-## Hoe Je Niche Kandidaten Vindt
+## Hoe Je Niche Kandidaten Vindt {#how-to-find-niche-candidates}
 
-### Begin Met Wat Je Weet
+### Begin Met Wat Je Weet {#start-with-what-you-know}
 
 Je bestaande ervaring is een voordeel. Overweeg:
 
@@ -56,7 +56,7 @@ Je bestaande ervaring is een voordeel. Overweeg:
 - Hobby's of interesses waar je de gemeenschap begrijpt
 - Professionele netwerken waar je al lid van bent
 
-### Zoek Naar Pijnpunten
+### Zoek Naar Pijnpunten {#look-for-pain-signals}
 
 Zoek naar bewijs dat bedrijven in een niche moeite hebben met websites:
 
@@ -65,7 +65,7 @@ Zoek naar bewijs dat bedrijven in een niche moeite hebben met websites:
 - Bekijk daadwerkelijke websites in de niche – zijn de meeste slecht?
 - Controleer of er concurrenten bestaan en hoe goed ze de markt bedienen
 
-### Evalueer De Economie
+### Evalueer De Economie {#evaluate-the-economics}
 
 Voor elke kandidaat-niche, schat in:
 
@@ -73,11 +73,11 @@ Voor elke kandidaat-niche, schat in:
 - **Bereidheid om te betalen**: Wat geven ze momenteel uit aan soortgelijke tools?
 - **Potentieel levenslange waarde**: Zijn deze bedrijven stabiel, of haken ze snel af?
 
-## Je Niche Valideren
+## Je Niche Valideren {#validating-your-niche}
 
 Voordat je iets bouwt, valideer je de vraag:
 
-### Praat Met Potentiële Klanten
+### Praat Met Potentiële Klanten {#talk-to-potential-customers}
 
 Neem contact op met 10-15 ondernemers in je doelniche. Vraag:
 
@@ -88,17 +88,17 @@ Neem contact op met 10-15 ondernemers in je doelniche. Vraag:
 
 Je verkoopt nog niet. Je luistert.
 
-### Controleer Het Concurrentiebeeld
+### Controleer Het Concurrentiebeeld {#check-competitor-landscape}
 
 - **Geen concurrenten**: Kan betekenen dat er geen vraag is, of juist een onbenutgelegenheid. Klantgesprekken zullen je vertellen wat.
 - **Enkele concurrenten**: Goed teken. Valideert de vraag. Bestudeer wat ze goed doen en waar ze tekortschieten.
 - **Veel concurrenten**: Moeilijker te betreden, maar nog steeds mogelijk als je je duidelijk kunt onderscheiden.
 
-### Bouw Een Landingspagina
+### Bouw Een Landingspagina {#build-a-landing-page}
 
 Voordat je het platform bouwt, creëer je een eenvoudige landingspagina die de oplossing voor je niche beschrijft en waar je e-mailaanmeldingen verzamelt. Voer een kleine gerichte advertentie uit om de interesse te testen. Als mensen zich aanmelden, heb je validatie.
 
-## Dit Toepassen Op FitSite
+## Dit Toepassen Op FitSite {#applying-this-to-fitsite}
 
 Zo scoorde FitSite tegen de criteria:
 
@@ -112,7 +112,7 @@ Zo scoorde FitSite tegen de criteria:
 
 De validatie bevestigde de kans. Nu bouwen we.
 
-## Niche Ideeën Om Te Overwegen
+## Niche Ideeën Om Te Overwegen {#niche-ideas-to-consider}
 
 Als fitness niet jouw markt is, zijn hier andere niches die aan de criteria voldoen:
 
@@ -127,7 +127,7 @@ Als fitness niet jouw markt is, zijn hier andere niches die aan de criteria vold
 
 Elk van deze heeft dezelfde kenmerken: duidelijke websitebehoeften, het vermogen om te betalen en mond-tot-mondreclame binnen de gemeenschap.
 
-## Wat We Gebouwd Hebben In Deze Les
+## Wat We Gebouwd Hebben In Deze Les {#what-we-built-this-lesson}
 
 - **Een nicheselectie raamwerk**: drie criteria om elke niche te evalueren
 - **Validatiemethoden**: klantgesprekken, concurrentieanalyse, landingspagina-testen

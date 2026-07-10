@@ -3,11 +3,11 @@ title: Flujo de migrado souverena
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Sovereign Migra Workflow
+# Sovereign Migra Workflow {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 donas migraverifikacianportojn por pasigi standard subsite en souveren tenanto infrastrukturo.
 
-## Pred ke vi komencu
+## Pred ke vi komencu {#before-you-start}
 
 Konfirmu, ke vi havas:
 
@@ -17,7 +17,7 @@ Konfirmu, ke vi havas:
 - Una ligado de bazda host kiu korespondas kun la destina aĉento.
 - Aliro por fari WP-CLI komandojn por la retoj.
 
-## Rekomandita fludo
+## Rekomandita fludo {#recommended-workflow}
 
 1. Preparu la bazdon de la destina tenanto kaj filestrano.
 2. Registru aŭ aktualizu la ŝanĝon de la izolaj setoj de la tenanto.
@@ -28,7 +28,7 @@ Konfirmu, ke vi havas:
 7. Viziti la tenanton kun SSO.
 8. Migri DNS aŭ rutigadon nur post kiam verifikado pasas.
 
-## Verifikacian portoj
+## Verifikacian portoj {#verification-gates}
 
 La fludo de verifikado kontrolas la migron de pluraj anguloj:
 
@@ -40,6 +40,6 @@ La fludo de verifikado kontrolas la migron de pluraj anguloj:
 
 Tratar verifikacian malsukces kiel blokantajn obstaklojn antaŭlanciun. Fixu la donon, uzanton, kviro aŭ rutigadon raportitan, tiam fari verifikadon priankon de la tenanto al klientoj.
 
-## Unua produkcia vizito
+## Unua produkcia vizito {#first-production-visit}
 
 Post kiam verifikado pasas, uzu **Visit (SSO)** de la skrimi de la sistem por la unuan administran viziton. Tio konfirmu rutigon de la tenanto, la maneĝo de SSO-tokenoj, la origino pinado kaj la provizio de uzantoj de la lato de la tenanto en unu kontrolita paŝo.

@@ -3,13 +3,13 @@ title: Ustvarjanje vaše prve pretplatne izdelke
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Ustvarjanje vaše Prve Predskupne Produktne Ponudbe (v2)
+# Ustvarjanje vaše Prve Predskupne Produktne Ponudbe (v2) {#creating-your-first-subscription-product-v2}
 
 _**POMEMBNE NAPOMOTE: Ta članek je namenjen le uporabnikom Ultimate Multisite verzije 2.x. Če uporabljate verzijo 1.x,**_ **_ _glejte ta članek_**.
 
 Da bi začeli delovati svojo mrežno in začeli prodajati svoje storitve potencialnim uporabnikom, potrebujete različne opcije predskupnine (subscription). Kako ustvarjate te izdelke? Kakšne vrste izdelkov lahko ponudite? V tem članku bomo pokrili vse, kar morate vedeti o izdelkih.
 
-## Vrsta Izdelka
+## Vrsta Izdelka {#product-type}
 
 Z Ultimate Multisite lahko ponudite dve kategoriji izdelkov svojim strankam: **plani** in **dodatke (Order Bump)**. Dodatki se lahko razdelijo na dve vrste: **pakete** in **storitev**. Razliko in posebnosti bomo videli v naslednjih poglavjih.
 
@@ -19,7 +19,7 @@ Z Ultimate Multisite lahko ponudite dve kategoriji izdelkov svojim strankam: **p
 
   * **Storitev**: dodatki, ki ne spremenjajo delovanja Ultimate Multisite. To so naloge, ki jih boste izpolnili za svojega stranko poleg plana, ki ga je kupila. Na primer, vaš stranka bi lahko kupila plan, ki dovoljuje eno stran, in tudi plačala dodatno storitev, ki bo oblikovala to stran.
 
-## Upravljanje Izdelkov
+## Upravljanje Izdelkov {#managing-products}
 
 Za mnogih je tab **Products** v Ultimate Multisite **(Ultimate Multisite > Products)** enake z načrti v tradicionalnem hostinskega okolja.
 
@@ -29,7 +29,7 @@ Ta del vas bo vodil v razumeti to ključno osnovno element Ultimate Multisite.
 
 ![Products list page](/img/config/products-list.png)
 
-## Dodajanje produktov
+## Dodajanje produktov {#adding-products}
 
 Bilo da je načrt, paket ali storitev začetek definiranja novega predmeta preko **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Sprememba vsebuje dva glavna oddelka. Na levi strani so več tabov, ki pomagajo 
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Opis
+### Opis {#description}
 
 Osnovna informacija o produktu lahko definirate, saj navedete ime in opis produkta. Ti identifikatorji se prikazujejo vseh gor, kjer je potrebna informacija o produktu, kot so izbira načrtov in cen, računi, nadgradnje in podobno.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tip cene
+### Tip cene {#pricing-type}
 
 Na desni strani spletne interfejse lahko definirate osnovno cenovanje.
 
@@ -53,7 +53,7 @@ Na desni strani spletne interfejse lahko definirate osnovno cenovanje.
 
 Ultimate Multisite podpira tri različne tipe cenovanja. Opcija **paid** (plačljivo) zahteva od administratorja mreže informacije o ceni in frekvenci računanja za produkt.
 
-### Cenovanje
+### Cenovanje {#pricing}
 
 Cena določa osnovno ceno produkta in interval računanja.
 
@@ -61,7 +61,7 @@ Cena določa osnovno ceno produkta in interval računanja.
 
 tako je primer cena $29.99 z nastavitvijo 1 mesec, ki bo debitiral $29.99 vsak mesečno. Na enak način, cena $89.97 z nastavitvijo 3 mesece bo debitirana ta izdelek vsak kvartal.
 
-### Ciklične cene (Billing Cycles)
+### Ciklične cene (Billing Cycles) {#billing-cycles}
 
 Razdelek cikličnih cen specifikira frekvenco navedene cene in je običajno razumljiv v kontekstu pogodbenih rabatov ali fiksiranih obdobij.
 
@@ -69,7 +69,7 @@ Razdelek cikličnih cen specifikira frekvenco navedene cene in je običajno razu
 
 Na primer, če je cena izdelka $29.99 z intervalom od 1 meseca in 12 cikljev plačanja, bo se za izdelek debitirala $29.99 vsak mesečni obdobje skozi naslednja 12 mesecev. Drugi besedili, takšno nastavitvo ustvarja fiksno cenovno obdobje od $29.99 na mesec na 12 mesecev in nato se plačevanje ustavi.
 
-### Vrednostno obdobje (Trial Period)
+### Vrednostno obdobje (Trial Period) {#trial-period}
 
 Omogočitev preklopnika ponudbe trial omogoča administratorju mreže določiti obdobje za vprašanje izdelka.
 
@@ -77,7 +77,7 @@ Omogočitev preklopnika ponudbe trial omogoča administratorju mreže določiti 
 
 Med obdobjem za vprašanje so uporabniki svobodni, da uporabljajo izdelek in ne bodo debitirani, dokler ni poteklo obdobje za vprašanje.
 
-### Stroški nastavitve (Setup Fee)
+### Stroški nastavitve (Setup Fee) {#setup-fee}
 
 Lahko lahko dodate strošek za nastavitvo na vaš plan.
 
@@ -85,7 +85,7 @@ Lahko lahko dodate strošek za nastavitvo na vaš plan.
 
 To pomeni, da bo vaš stranke plačala dodatno skupno z prvo plačilo (v nadaljevanju do cene plana), ki se nanaša na strošek, ki ste ga določili v tem razdelku.
 
-### Aktiven (Active)
+### Aktiven (Active) {#active}
 
 Preklopnik "Aktiven" dejansko določa, ali je izdelek na voljo za stranke za nove registracije.
 
@@ -93,13 +93,13 @@ Preklopnik "Aktiven" dejansko določa, ali je izdelek na voljo za stranke za nov
 
 Če im imate obstoječe stranke na tem paketu je vklop preklic (toggle) na stanje "disabled" dejansko odločilo, da se paket odstrani iz prihodnjih registracij. **Osobi, ki so obstoječe na paketu, bodo nadaljnje plačljene** do trenutka, ko bodo prešli na novi paket ali bodo odstranjeni z paketa.
 
-### Slika izdelka
+### Slika izdelka {#product-image}
 
 Gumb **Upload Image** omogoča administratorju mreže uporabo medijske knjižnice za izbiro ali vnos slike izdelka.
 
 ![Product image section](/img/config/product-image.png)
 
-### Obriši
+### Obriši {#delete}
 
 Gumb **Delete Product** odstrani izdelek iz sistema. Pojavi se, ko je izdelek objavljen.
 
@@ -107,11 +107,11 @@ Gumb **Delete Product** odstrani izdelek iz sistema. Pojavi se, ko je izdelek ob
 
 Na rozdeli od drugih brisanj, izdelek ni v kakršnem koli stanje "trash". Zato je po brisanju dejanje neobratno.
 
-### Opcije izdelka
+### Opcije izdelka {#product-options}
 
 Ko so definirana osnovne informacije o izdelku, opcije izdelka pomagajo administratorju mreže še bolj specifično definirati lastnosti izdelka.
 
-#### Splošno
+#### Splošno {#general}
 
 Tab **General** določa splošne lastnosti izdelka, ki niso primerno za nobene druge tabe specifične za izdelek.
 
@@ -125,7 +125,7 @@ Ultimate Multisite podpira več vrst izdelkov, med katerimi so Plan, Package in 
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Na vs. Spuščanje (Up & Downgrades)
+#### Na vs. Spuščanje (Up & Downgrades) {#up--downgrades}
 
 Ta kartica določa poti za izboljšanje in spuščanje (upgrade and downgrade paths), ki so na voljo za stranke v njihovi specifični stopnji (tier).
 
@@ -143,7 +143,7 @@ Da bi določili skupino načrtov, navedite kompatibilne načrte v seznamu **plan
 
 Ultimate Multisite vključuje tudi funkcijo **order bump**, kjer lahko na sobrefikse (plans) dodate dodatne izdelke in storitve. Ti so ponujeni stranki kot dodatni elementi, ki se lahko dodajo plans med plačanjem ali med izboljšanjem.
 
-#### Variacije cen
+#### Variacije cen {#price-variations}
 
 Variacije cen omogočajo administraciji mreže, da določi različne cene v različnih časovnih intervalih. Ta nastavitjo je mogoče ponuditi mesečne, kvartalne, letne ali kakršno koli drugo obdobje plačanja za isti produkt. Na primer lahko postavite produkt na $29.99/mesec z popustom za letno naročilo na $249.99/let.
 
@@ -165,9 +165,9 @@ Na primer, če je cena vaše osnovne naloge $29.99 na mesec, lahko dodate:
 Samo cenovni varianti ne dodajo preklopnika ali preklic na sprednji strani pri plačevanju. Da bi omogočili strankam izbiro med različnimi obdobji plačanja (npr. Mesečno / Letno), morate v svojo obrazec za plačevanje dodati polje **Period Selection**. Za postopek po postopku se pozabite na [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle).
 :::
 
-#### Davki (Taxes)
+#### Davki (Taxes) {#taxes}
 
-Tab **Taxes** je usklajen z nastavitvami davkov, ki so določeni v **Ultimate Multisite > Settings > Taxes**, in bolj specifično s definiranim stopnjami davkov. Za vključitev davkov in določitev priporočljivih stopnjen davkov se pozabite na dokumentacijo na [Ultimate Multisite: Settings](ultimate-multisite-settings).
+Tab **Taxes** je usklajen z nastavitvami davkov, ki so določeni v **Ultimate Multisite > Settings > Taxes**, in bolj specifično s definiranim stopnjami davkov. Za vključitev davkov in določitev priporočljivih stopnjen davkov se pozabite na dokumentacijo na **Ultimate Multisite: Settings**.
 
 ![Taxes tab](/img/config/product-taxes.png)
 
@@ -179,7 +179,7 @@ Ko je davčna stopnja definirana v **Ultimate Multisite > Settings > Manage Tax 
 
 Da bi označili, da je izdelek podlagt davkom, vklopite preklopnik **Is Taxable** in izberite primerno davčno stopnjo iz spiska Tax Category.
 
-#### Site Templates
+#### Site Templates {#site-templates}
 
 Na splošno so site template (šabloni za spletne strani) popolni WordPress spletni domovci, ki se klonirajo na stranko kupca ob začetku njegove naročnine.
 
@@ -201,7 +201,7 @@ Na koncu, **C**hoose Available Site Templates (Izberi na voljo shablone za mesta
 
 Na koncu, če omrežni administrator želi, da se izbira shablona zgodi v korakih nakupa, dovolj bo nastavitev '_default_'. Alternativno za odstranitev in zaključevanje izbire shablona ter delegiranje izbire nastavitvam načrta je lahko priporočljivo uporabiti možnosti '_assign new template_' ali '_choose available site templates_'.
 
-#### Mesta (Sites)
+#### Mesta (Sites) {#sites}
 
 Tab **Sites** (Mesta) je del funkcionalnosti omejitev Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Ta nastavitva določa največji število mest, ki lahko ustvarja uporabnik v okv
 
 Za omogočitev omejitve postavite preklopnik **limit sites** (omejite mesta) na aktivno stanje in navedite maksimalno število mest v polju **site allowance** (določitev dovoljenja za mesta).
 
-#### Obrazej (Visits)
+#### Obrazej (Visits) {#visits}
 
 Tab **Visits** (Obraji) je še en del sistema omejitev Ultimate Multisite. Ta nastavitva omogoča računanje in kasnejše omejevanje edinstvenih obiskovalcev na mesto uporabnika.
 
@@ -223,7 +223,7 @@ Da bi uporabili to funkcijo, vklopite preklic **limit unique visits** (omejitev 
 
 Ko ta limit doseže, Ultimate Multisite se ne bo še nadaljeval z uporabo stranke, ampak bo prikazal sporočilo, ki kaže, da so omejitve presegli.
 
-#### Uporabniki
+#### Uporabniki {#users}
 
 Omejitve 'Users' (Uporabniki) v Ultimate Multisite omogočajo omrežnemu administratorju, da postavi omejitve na število uporabnikov, ki se lahko ustvarjajo in jim dodeljujejo role.
 
@@ -233,7 +233,7 @@ Da bi aktivirali funkcijo omejitev, vklopite preklic **limit user** (omejitev up
 
 Za vsako rol, ki bo omejena, vklopite preklic ob njem in določite največji zgornji limit v primerno polje.
 
-#### Tipovi postov (Post Types)
+#### Tipovi postov (Post Types) {#post-types}
 
 Tab **Post Types** (Tipovi postov) omogoča omrežnemu administratorju, da postavi细 granularne omejitve na obsežni niz tipov postov v WordPressu.
 
@@ -245,7 +245,7 @@ Da bi aktivirali ta podsistem omejitev, vklopite preklic **limit post types** (o
 
 Naslednje, za vsako tip spletne strani (post type), ga vklopite tako, da ga prenesete na desno in navedete maksimalno gornjo omejitev v odgovarjajočem polju.
 
-#### Disk prostor
+#### Disk prostor {#disk-space}
 
 Tab **Disk Space** omogoča administraciji mreže, da omeji prostor, ki ga uporabniki porabijo.
 
@@ -257,13 +257,13 @@ Da bi omogočili omejitev uporabe diska, postavite preklop **limit disk size per
 
 Naslednje, navedite maksimalno gornjo omejitev v megabajtih v polju **disk space allowance**.
 
-#### Custom Domain (Splošna domena)
+#### Custom Domain (Splošna domena) {#custom-domain}
 
 Sprejemanjem te opcije lahko omogočite splošne domene samo na tem paketu.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Teme)
+#### Themes (Teme) {#themes}
 
 Tab **Themes** v možnosti izdelka omogoča administraciji mreže, da temi ponudi uporabnikom za izbiro in opcionalno prisili stanje teme.
 
@@ -281,7 +281,7 @@ Izbira **behavior** omogoča administraciji mreže, da določi stanje teme ob kr
 
 V **Dostopno** stanja je tema na voljo za samodeaktivacijo stranke. Na nasprotju, v stanju **Ne dosegljivo** odstrani možnost aktivacije teme iz možnosti stranke. Na koncu možnost **Natisni aktiviraj** prisili aktivaciji in izbiro teme, kar jo postavi kot zadano pri kreiranju spletne strani.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Podobno kot v tabu Themes omogoča Ultimate Multisite omrežnem administratorju določiti vidljivost pluginov za stranke ter njihov kanal (stan) ob kreiranju nove strani.
 
@@ -301,7 +301,7 @@ Nastavitva **Force Activate & Lock** deluje na podoben način, vendar preprečuj
 
 Splošni administrator mreže lahko razmišlja o nastavitvah Force Activate & Lock in Force Inactivate & Lock v povezavi z štemami spletnih strani kot dodatki, saj lahko te nastavitve vplivajo na stanja dodatka v tem štemah, če so izbrane.
 
-#### Omejitve pri resetiranju
+#### Omejitve pri resetiranju {#reset-limitations}
 
 Tab **Reset Limitations** ponovno zadane vse prilagojene omejitve definirane za produkt. Za resetiranje omejitev kliknite gumb **reset limitations**.
 
@@ -311,7 +311,7 @@ Za potrditev akcije preklopite preklopnik **confirm reset** na aktivno stanje na
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Uredi, duplirajte ali odstranite produkt
+## Uredi, duplirajte ali odstranite produkt {#edit-duplicate-or-delete-product}
 
 Sistemske (existing) produkte lahko uredite, duplirate ali odstranite, navigiranjem na **Ultimate Multisite > Products** in prehodom mišom čez ime obstoječega produkta.
 

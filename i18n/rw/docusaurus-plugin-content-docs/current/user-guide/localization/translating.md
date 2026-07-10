@@ -3,11 +3,11 @@ title: Gukoresha Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Gutangura Ultimate Multisite
+# Gutangura Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite yariwe mu Icyongereza, ariko plugin yashobora guhindurwa kandi twari twa kwibanda cyane ku gukoresha uburyo bwo guhindura.
 
-## Ubindura bw'Urugero (Core Plugin Translations)
+## Ubindura bw'Urugero (Core Plugin Translations) {#core-plugin-translations}
 
 Plugin ya mbere ya Ultimate Multisite igishoborwe mu gihe cy'ubwujgwa bw'urugero rwa WordPress:
 
@@ -24,7 +24,7 @@ Iki ni uburyo bwo guhindura bw'umuganda w'Umuganda (WordPress) w'ubwujgwa. Iyo u
 
 Niba wumva wari wumva mu gihe cy'ubwujgwa (translation editor) ku kinyarwanda (uwo wumva ubindura), nshobora kwibanda kuri [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Ubindura bw'Addon Plugins
+## Ubindura bw'Addon Plugins {#addon-translations}
 
 Plugin z'add-on zihindurwa mu gihe cy'ubwujgwa bwo:
 
@@ -32,11 +32,11 @@ Plugin z'add-on zihindurwa mu gihe cy'ubwujgwa bwo:
 
 Ubindura bw'add-on bishobora kuba ari uburyo bwo gukoresha AI mu gihe cyo kumenya uburyo bwo guhindura. Iyo zishobora kubyara ibintu byiza cyangwa hari ibindi byitwa n'ibyo bitewe n'ubwujgwa. Turimo abantu bashobora guhindura kugira ngo biyereye kandi bizwi mu buryo bwiza.
 
-## Ubindura bwo Mu Rwanda (Local Translations)
+## Ubindura bwo Mu Rwanda (Local Translations) {#local-translations}
 
 Iyo wifuza gukora uburyo bwo kwandikira mu rugo rwawe ry'umwihariko kandi ushaka kwandika cyangwa guhindura uburenganzira, nta gukora mu gihe cy'ubwoko bw'umwihariko (upstream), hari iki cyo gukora:
 
-### Gukoresha Poedit
+### Gukoresha Poedit {#using-poedit}
 
 Ushobora gukoresha application ya desktop **[Poedit](https://poedit.net)** kugira ngo uhandike ifayile `.pot`:
 
@@ -46,6 +46,6 @@ Ushobora gukoresha application ya desktop **[Poedit](https://poedit.net)** kugir
 4. Save -- Poedit igira ifayile `.po` n'`.mo`
 5. Gufasha ifayile izo mu folder `lang`
 
-### Gukoresha Loco Translate
+### Gukoresha Loco Translate {#using-loco-translate}
 
 I plugin ya WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** inyuma yisaba uhandika cyangwa guhindura ibyo mu admin panel nta za mpamvu z'umwihariko (desktop tools). Igihe igira ubushobozi bwo gukora ifayile z'ubanditso n'ibindi byo mu gihe cyose.

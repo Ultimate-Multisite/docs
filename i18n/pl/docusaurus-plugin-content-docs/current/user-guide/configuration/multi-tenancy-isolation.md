@@ -3,11 +3,11 @@ title: Izolacja wielodostępna
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Izolacja wielodostępna (Multi-Tenancy Isolation)
+# Izolacja wielodostępna (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 wspiera izolację baz danych i systemu plików na poziomie poddomen dla suwerennych najemców. Dzięki temu dane najemcy pozostają oddzielne, zachowując jednocześnie zarządzanie siecią, fakturowanie i administrację.
 
-## Strategia izolacji
+## Strategia izolacji {#isolation-strategy}
 
 Używaj izolacji suwerennej dla klientów, którzy wymagają silniejszego oddzielenia danych, dedywalnego miejsca na systemie plików lub osobnej granicy hosta.
 
@@ -18,7 +18,7 @@ Każdy suwerenny najemca powinien posiadać:
 - Wpis w rejestrze najemców, który mapuje stronę na jej bazę danych, główną ścieżkę, nazwę hosta i model izolacji.
 - Wynik weryfikacji migracji przed uznaniem najemcy za aktywny (live).
 
-## Powiązanie z hostem bazy danych (Database host binding)
+## Powiązanie z hostem bazy danych (Database host binding) {#database-host-binding}
 
 W wersji 1.2.0 zmieniono domyślne zachowanie powiązania hosta na tej samej maszynie dla instalacji suwerennych. Wartości takie jak `localhost` są normalizowane tak, aby Bedrock, FrankenPHP i instalacje WordPress w kontenerach mogły udzielać i weryfikować uprawnienia względem stringu hosta MySQL, który faktycznie widzi.
 
@@ -31,11 +31,11 @@ Przy konfiguracji najemcy suwerennego:
 
 Jeśli raporty weryfikacji wskazują na niepowodzenia przy udzielaniu uprawnień, porównaj uprawnienia użytkownika w bazie danych najemcy z skonfigurowanym powiązaniem hosta. Użytkownik nadany dla `user@localhost` jest inny niż `user@127.0.0.1` lub `user@%`.
 
-## Korzeń systemu plików (Filesystem root)
+## Korzeń systemu plików (Filesystem root) {#filesystem-root}
 
 Korzeń najemcy powinien być stabilny po restartach i wdrożeniach. Unikaj tymczasowych ścieżek montowania. W instalacjach typu Bedrock upewnij się, że korzeń najemcy wskazuje katalog główny WordPressa oczekiwany przez bootstrap najemcy, a nie tylko katalog projektu.
 
-## Kolejność provisioningu (przygotowywania)
+## Kolejność provisioningu (przygotowywania) {#provisioning-order}
 
 Dla nowych najemców suwerennych używaj tej kolejności:
 
@@ -49,7 +49,7 @@ Dla nowych najemców suwerennych używaj tej kolejności:
 
 Ta kolejność zapobiega tym, że częściowo izolowane najemcy otrzymają ruch zanim baza danych, użytkownicy i system plików będą gotowe.
 
-## Przepływy zarządzania klientami suwerennymi
+## Przepływy zarządzania klientami suwerennymi {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 utrzymuje działania zarządzania klientami na głównym site, gdy tryb suwerenny jest włączony. Najemca może nadal działać jako izolowana instalacja WordPressa, ale czynności widoczne dla klienta, które zależą od rozliczeń sieciowych, członkostwa lub danych wspólnego konta, powinny przekierowywać klienta z powrotem na główny site zamiast próbować zakończyć działanie w czasie działania najemcy.
 

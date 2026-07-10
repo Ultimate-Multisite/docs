@@ -3,17 +3,17 @@ title: 'Leksyon 12: Pagpadagan sa Negosyo'
 sidebar_position: 13
 _i18n_hash: 0fe6371df216b74a2051b95972ad68e8
 ---
-# Lesson 12: Pagpadagan sa Negosyo
+# Lesson 12: Pagpadagan sa Negosyo {#lesson-12-running-the-business}
 
 Ang usa ka platform dili proyekto nga matapos—kini usa ka negosyo nga imong pagadumalahan. Kini nga leksyon naghisgot sa adlaw-adlaw nga operasyon sa pagdumala sa FitSite: suporta, billing (pagbayad), maintenance, ug pagpabilin nga malipayon ang mga kustomer.
 
-## Asa Kita Nagpahunong
+## Asa Kita Nagpahunong {#where-we-left-off}
 
 Ang FitSite anaa na og live ug nagsugod na og pagparehistro ang mga kustomer. Karon kinahanglan nimo i-padagan ang operasyon sa usa ka sustainable nga paagi.
 
-## Adlaw-adlaw nga Operasyon
+## Adlaw-adlaw nga Operasyon {#daily-operations}
 
-### Pagmonitor (Monitoring)
+### Pagmonitor (Monitoring) {#monitoring}
 
 Susiha kini matag adlaw (o mag-set up og alerts):
 
@@ -22,7 +22,7 @@ Susiha kini matag adlaw (o mag-set up og alerts):
 - **Napakyas nga bayad (Failed payments)**: Aduna bay mga pagbayad nga napakyas nga kinahanglan og atensyon?
 - **Mga hangyo sa suporta (Support requests)**: Aduna ba’y pangutana gikan sa kustomer nga wala pa masulti og tubag?
 
-### Suporta sa Kustomer (Customer Support)
+### Suporta sa Kustomer (Customer Support) {#customer-support}
 
 Ang imong focus sa usa ka niche maoy bentaha dinhi. Tungod kay ang tanan nimong kustomer mga fitness studio, makakita ka pag-usab sa parehas nga pangutana:
 
@@ -36,7 +36,7 @@ Ang imong focus sa usa ka niche maoy bentaha dinhi. Tungod kay ang tanan nimong 
 
 Pagmugna og imong knowledge base (nga gisugdan sa Lesson 8) bahin niining kanunay nga pangutana. Ang matag support ticket nga mahimong maayong article sa knowledge base usa ka senyales nga kinahanglan kang magsulat nianang article.
 
-### Mga Lebel sa Suporta (Support Tiers)
+### Mga Lebel sa Suporta (Support Tiers) {#support-tiers}
 
 Samtang nagkadako ka, i-structure ang suporta sumala sa plan:
 
@@ -48,9 +48,9 @@ Samtang nagkadako ka, i-structure ang suporta sumala sa plan:
 
 Ang [Support Tickets addon](/addons/support-tickets) makatabang sa pagdumala sa mga hangyo sa suporta sulod sa platform.
 
-## Operasyon sa Billing (Billing Operations)
+## Operasyon sa Billing (Billing Operations) {#billing-operations}
 
-### Pagbayad nga Regular (Recurring Payments)
+### Pagbayad nga Regular (Recurring Payments) {#recurring-payments}
 
 Ang Ultimate Multisite mo-handle og automated recurring billing pinaagi sa imong payment gateway. Ang trabaho nimo mao ang pagmonitor niini:
 
@@ -58,7 +58,7 @@ Ang Ultimate Multisite mo-handle og automated recurring billing pinaagi sa imong
 - **Dunning**: Mag-set up og automated retry logic pinaagi sa imong payment gateway (maayo ni ang Stripe)
 - **Mga hangyo sa pagkansela**: Sabton kung nganong molakaw ang mga kustomer. Ang matag pagkansela usa ka feedback.
 
-### Pagdumala sa Memberships
+### Pagdumala sa Memberships {#managing-memberships}
 
 adto sa **Ultimate Multisite > Memberships** aron:
 
@@ -69,13 +69,13 @@ adto sa **Ultimate Multisite > Memberships** aron:
 
 Tan-awa ang [Managing Memberships](/user-guide/administration/managing-memberships) alang sa kompleto nga reference.
 
-### Invoicing (Pagmugna og Invoice)
+### Invoicing (Pagmugna og Invoice) {#invoicing}
 
 Siguroha nga husto ang pagmugna og invoices para sa matag bayad. Ang mga kustomer mahimong magkinahanglan og invoices alang sa business expense reporting. Tan-awa ang [Managing Payments and Invoices](/user-guide/administration/managing-payments-and-invoices).
 
-## Pagmintina sa Platform (Platform Maintenance)
+## Pagmintina sa Platform (Platform Maintenance) {#platform-maintenance}
 
-### WordPress ug Plugin Updates
+### WordPress ug Plugin Updates {#wordpress-and-plugin-updates}
 
 Isip network administrator, ikaw responsable sa:
 
@@ -88,14 +88,14 @@ Isip network administrator, ikaw responsable sa:
 Ang nabali nga update makaapekto sa matag customer site sa imong network. Kanunay sulayi ang mga update sa usa ka staging copy sa imong network una.
 :::
 
-### Seguridad (Security)
+### Seguridad (Security) {#security}
 
 - Ipadayon ang pag-update sa tanang software
 - Gamit og lig-on nga passwords ug two-factor authentication para sa admin accounts
 - Monitor alang sa bisan unsang katingad-an o kahimtang
 - Pagplano og aksyon kon adunay security incident
 
-### Performance (Pagganap)
+### Performance (Pagganap) {#performance}
 
 Samtang nagkadako ang imong network, monitor:
 
@@ -105,9 +105,9 @@ Samtang nagkadako ang imong network, monitor:
 
 Pagkonsiderar sa pagpatuman og caching (page cache, object cache) ug usa ka CDN kon wala pa nimo kini gibuhat. Ang [Cloudflare integration](/user-guide/host-integrations/cloudflare) mo-handle niini og dako nga bahin.
 
-## Pagdumala sa Kustomer Lifecycle (Customer Lifecycle Management)
+## Pagdumala sa Kustomer Lifecycle (Customer Lifecycle Management) {#customer-lifecycle-management}
 
-### Pagkunhod sa Churn (Reducing Churn)
+### Pagkunhod sa Churn (Reducing Churn) {#reducing-churn}
 
 Ang churn mao ang porsyento sa mga kustomer nga makansela matag bulan. Alang sa usa ka subscription business, ang pagkunhod sa churn importante sama sa pagkuha og bag-ong kustomer.
 
@@ -119,7 +119,7 @@ Ang churn mao ang porsyento sa mga kustomer nga makansela matag bulan. Alang sa 
 - Nakakita sila og mas barato nga alternatibo → palig-on ang imong niche value
 - Nagkahitabo ang ilang negosyo → dili maiwasan, apan i-track kini pagahiwalay
 
-### Pagdasig sa Pag-upgrade (Encouraging Upgrades)
+### Pagdasig sa Pag-upgrade (Encouraging Upgrades) {#encouraging-upgrades}
 
 Ang mga kustomer sa Starter nga nagmalampuson kinahanglan nga dasigon og upgrade:
 
@@ -127,7 +127,7 @@ Ang mga kustomer sa Starter nga nagmalampuson kinahanglan nga dasigon og upgrade
 - Pagpadala og targeted emails nga naghisgot sa features sa Growth plan nga makabenepisyo kanila
 - Ipakita kung unsa na ka-build sa mga kustomer sa Growth/Pro
 
-### Win-Back Campaigns
+### Win-Back Campaigns {#win-back-campaigns}
 
 Kung adunay kustomer nga nakakansela:
 
@@ -135,30 +135,30 @@ Kung adunay kustomer nga nakakansela:
 2. Sulbii ang ilang kabalaka kon mahimo
 3. Magtanyag og discount aron mobalik (30-60 ka adlaw pagkahuman sa pagkansela)
 
-## Weekly ug Monthly Routines
+## Weekly ug Monthly Routines {#weekly-and-monthly-routines}
 
-### Kada Semana (Weekly)
+### Kada Semana (Weekly) {#weekly}
 
 - Review sa bag-ong pagparehistro ug mga pagkansela
 - Tubagi ang tanang bukas nga support tickets
 - Susiha ang performance ug uptime sa platform
 - Review sa bisan unsang napakyas nga bayad
 
-### Kada Bulan (Monthly)
+### Kada Bulan (Monthly) {#monthly}
 
 - Pag-analisar sa importanteng metrics (MRR, churn, bag-ong kustomer, upgrades)
 - I-apply ang WordPress ug plugin updates (human og staging test)
 - Review ug i-update ang knowledge base base sa support patterns
 - Pagpadala og newsletter o update sa mga kustomer (bag-ong features, tips, balita sa fitness industry)
 
-### Kada Kwarter (Quarterly)
+### Kada Kwarter (Quarterly) {#quarterly}
 
 - I-review ang pagpariho batok sa competitors ug feedback sa kustomer
 - Ebalwasyon sa template designs -- kinahanglan ba kini og refresh?
 - Pag-assess sa hosting capacity -- kinahanglan ba nimo mag-scale?
 - Review ug paayoa ang onboarding base sa activation data
 
-## Unsa ang Atong Gihimo Niining Leksyon
+## Unsa ang Atong Gihimo Niining Leksyon {#what-we-built-this-lesson}
 
 - **Adlaw-adlaw nga monitoring routines** alang sa uptime, signups, bayad, ug suporta
 - **Usa ka tiered support structure** nga nagkaparehas sa mga lebel sa plan

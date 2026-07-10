@@ -1,107 +1,152 @@
 ---
-title: Mawone AI Agent Settings
+title: Zokonda za Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Settings za AI Agent wa Bure
+# Zokonda za Gratis AI Agent {#gratis-ai-agent-settings}
 
-Skrini ya **Settings → Advanced** ya Gratis AI Agent inakupa uwezo wa kuweka mipangilio ya kiwango cha msimamizi kwa ajili ya vipengele vya nyuma (backend integrations) vilivyowekwa katika v1.5.0. Ukurasa huu unatoa maelezo kuhusu sehemu za **Feedback Endpoint** na muundo wake unaotarajiwa.
+Tsamba la **Zokonda → Zapamwamba** mu Gratis AI Agent limapereka kasinthidwe ka mulingo wa woyang'anira wa maulumikizidwe a backend. Tsambali limafotokoza kutumiza ndemanga, makiyi a opereka kusaka, kukhazikitsa ntchito yoyendetsedwa ya Superdav, zowongolera za Google Calendar, zokonda za SMS za TextBee, ndi ma feature flags a pa netiweki yonse.
 
-## Kujua Settings
+## Kupeza Zokonda {#accessing-settings}
 
-1. Katika admin ya WordPress, nenda kwenye **Gratis AI Agent → Settings**.
-2. Bonyeza tab ya **Advanced**.
+1. Mu WordPress admin, pitani ku **Gratis AI Agent → Zokonda**.
+2. Dinani tabu ya **Zapamwamba**.
 
-## Kuweka Mipangilio ya Feedback Endpoint
+## Kasinthidwe ka Feedback Endpoint {#feedback-endpoint-configuration}
 
-Feedback endpoint inapokea POST requests kutoka kwa AI agent kila wakati mtumiaji anapotoa maoni kupitia kitufe cha "thumbs-down", banner ya auto-prompt, au amri `/report-issue`.
+Feedback endpoint imalandira zopempha za POST kuchokera kwa AI agent nthawi iliyonse wogwiritsa ntchito akatumiza ndemanga kudzera pa batani la thumbs-down, banner ya auto-prompt, kapena lamulo la `/report-issue`.
 
-| Field | Maelezo |
+| Gawo | Kufotokozera |
 |---|---|
-| **Feedback Endpoint URL** | URL inayopokea maombi ya feedback kama POST requests yenye mwili (body) wa JSON. |
-| **Feedback API Key** | bearer token inatumiwa kwenye header ya `Authorization` ya kila ombi la feedback. Iacha tupu ikiwa endpoint yako haihitaji uthibitisho (authentication). |
+| **Feedback Endpoint URL** | URL yomwe imalandira zotumiza za ndemanga ngati zopempha za HTTP POST zokhala ndi thupi la JSON. |
+| **Feedback API Key** | bearer token yotumizidwa mu `Authorization` header ya pempho lililonse la ndemanga. Siyani chopanda kanthu ngati endpoint yanu sifuna kutsimikizira. |
 
-### Payload ya JSON Inayotarajiwa
+### JSON Payload Yoyembekezeredwa {#expected-json-payload}
 
-Feedback endpoint yako lazima iweze kukubali mwili wa JSON wenye angalau sehemu zifuatazo:
+Feedback endpoint yanu iyenera kuvomereza thupi la JSON lokhala ndi magawo osachepera awa:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Jibu lilikuwa lisilo sahihi kuhusu bei.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Sehemu nyingine zinaweza kuwepo kwenye payload kulingana na muktadha wa mazungumzo.
+Magawo owonjezera angakhalepo mu payload kutengera nkhani ya zokambirana.
 
-### Thamani za `triage_category`
+### Makhalidwe a `triage_category` {#triagecategory-values}
 
-Layer ya AI inachagua moja kati ya thamani hizi kwa `triage_category` kabla ya kuwasilisha payload:
+Gawo la AI triage limapereka chimodzi mwa makhalidwe otsatirawa ku `triage_category` musanatumize payload:
 
-| Value | Maana |
+| Mtengo | Tanthauzo |
 |---|---|
-| `factual_error` | Msaidizi alitoa habari isiyo sahihi. |
-| `unhelpful_answer` | Jibu lilikuwa sahihi kiufundi lakini halikuwa na msaada. |
-| `inappropriate_content` | Jibu lilikuwa na maudhui ambayo hayapaswi kuonyeshwa kwa watumiaji. |
-| `other` | Maoni hayakutafiti katika kategoria iliyojulikana. |
+| `factual_error` | Wothandizira anapereka chidziwitso cholakwika cha zenizeni. |
+| `unhelpful_answer` | Yankho linali lolondola mwaukadaulo koma silinali lothandiza. |
+| `inappropriate_content` | Yankho linali ndi zomwe siziyenera kuwonetsedwa kwa ogwiritsa ntchito. |
+| `other` | Ndemanga sinagwirizane ndi gulu lodziwika. |
 
-### Uthibitishaji (Authentication)
+### Kutsimikizira {#authentication}
 
-Muli muli, muli muli!
-
-Kung mwamba wanuwamba (endpoint) umayamba naliye mwamba (authentication), muli muwamba wanuwamba **Feedback API Key** muliye kuliye na token wanuwamba (bearer token). Muliye muliye:
+Ngati endpoint yanu imafuna kutsimikizira, ikani gawo la **Feedback API Key** kukhala bearer token yanu. Agent imatumiza:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Kung **Feedback API Key** umayamba, hakumbiri `Authorization` header haitendwa.
+Ngati gawo la **Feedback API Key** lili lopanda kanthu, palibe `Authorization` header yomwe imatumizidwa.
 
-### Kutsira Feedback Collection
+### Kuzimitsa Kusonkhanitsa Ndemanga {#disabling-feedback-collection}
 
-Muliye muwamba wanuwamba (Feedback Endpoint URL) na **Feedback API Key** muliye kuliye. Button ya thumbs-down na UI ya feedback zikukumbirira kwa users, koma zikuperekera ku service yotaliye.
+Siyani magawo onse a **Feedback Endpoint URL** ndi **Feedback API Key** opanda kanthu. Batani la thumbs-down ndi UI ya ndemanga zimakhalabe zowoneka kwa ogwiritsa ntchito, koma zotumiza sizitumizidwa ku ntchito iliyonse yakunja.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Muliye mu tabu ya **Advanced**, **Brave Search API Key** umayamba ufunika ufunika [Internet Search](../configuration/internet-search) ufunika.
+Komanso pa tabu ya **Zapamwamba**, gawo la **Brave Search API Key** limathandiza luso la [Kusaka pa Intaneti](../configuration/internet-search).
 
-| Field | Mwayi |
+| Gawo | Kufotokozera |
 |---|---|
-| **Brave Search API Key** | Api key yanuwamba ku dashboard ya Brave Search developer. Umayamba kuti muliye ufunika internet search mu AI assistant. |
+| **Brave Search API Key** | API key yanu kuchokera ku Brave Search developer dashboard. Imafunika kuti kuthandize kusaka pa intaneti mu AI assistant. |
 
-Mwayi wanuwamba umayamba link yotaliye ku Brave Search api sign-up page. Muliye kuliye kuti ututse internet search.
+Chizindikiro cha gawoli chimaphatikizapo ulalo wodinika wopita ku tsamba lolembetsa la Brave Search API. Siyani chopanda kanthu kuti muzimitse kusaka pa intaneti.
 
-Muliye [Internet Search](../configuration/internet-search) muliye documentation ya users ku feature iyi.
+Onani [Kusaka pa Intaneti](../configuration/internet-search) kuti mupeze zolemba za ogwiritsa ntchito omaliza za mbali imeneyi.
 
-## Feature Flags
+## Ntchito Yoyendetsedwa ya Superdav {#managed-superdav-service}
 
-Umayamba mu v1.9.0, **Settings → Feature Flags** umayamba toggle switches (mwayi wamwamba) kuti functionality yotaliye. Kuti flag imwezi imayamba kapena imayamba network-wide; hakukuna override ya per-site muliye.
+Superdav AI Agent v1.18.0 imawonjezera ma endpoint a ntchito yoyendetsedwa ya Superdav ndi kupereka kulumikizana kodzidzimutsa kwa ma site othandizidwa. Gwiritsani ntchito zowongolera izi pamene site yanu iyenera kulumikizana ndi provider wolandilidwa m'malo mwa service endpoint yokonzedwa pamanja.
 
-### Kupeza Feature Flags
+| Gawo | Kufotokozera |
+|---|---|
+| **Ntchito Yoyendetsedwa ya Superdav** | Imathandiza kulumikizana kwa hosted Superdav service kwa ma site othandizidwa. |
+| **Pereka Kulumikizana** | Imayambitsa kupereka endpoint ndi zitsimikizo modzidzimutsa. Gwiritsani ntchito izi mutatsimikizira kuti site iyenera kugwiritsa ntchito provider yoyendetsedwa. |
+| **Service Endpoint / Mkhalidwe wa Kulumikizana** | Imawonetsa endpoint yapano kapena mkhalidwe wa kulumikizana pambuyo popereka. |
 
-1. Mu WordPress admin, muliye mu **Gratis AI Agent → Settings**.
-2. Muliye mu tabu ya **Feature Flags**.
+Pambuyo popereka, sungani zokonda ndi kutsimikizira mkhalidwe wa kulumikizana musanadalire ma workflow a managed-service. Ngati kupereka kwalephera, onaninso malangizo obwerezanso omwe awonetsedwa ndipo tsimikizirani kuti site ili ndi chilolezo chogwiritsa ntchito provider wolandilidwa.
 
-### Access Control Flags
+## Kasinthidwe ka Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Maulonda |
+Pamene mbali za kalendala za Superdav AI Agent v1.18.0 zathandizidwa, agent imatha kuwerenga makalendala okonzedwa ndi tsatanetsatane wa zochitika. Zida za kalendala zimayang'ana pa kuwerenga ndipo ndi zothandiza pa zikumbutso zoganizira ndandanda, kutsatira opezeka, ndi kufananitsa ma contact.
+
+| Gawo | Kufotokozera |
+|---|---|
+| **Zitsimikizo za Google Calendar** | Zimasunga zitsimikizo kapena kulumikizana kwa token komwe kumafunika kuti kuwerenge deta ya kalendala. |
+| **Kusankha Kalendala** | Kumachepetsa makalendala okonzedwa omwe agent ingayang'ane. |
+| **Mkhalidwe wa Kulumikizana kwa Kalendala** | Kumatsimikizira ngati zitsimikizo zapano zingawerenge makalendala ndi zochitika. |
+
+Sungani zitsimikizo za kalendala zochepa ku makalendala omwe agent imafuna. Lumikizaninso kapena sinthani zitsimikizo ngati mkhalidwe ukuwonetsa token yomwe yatha ntchito.
+
+## Zidziwitso za SMS za TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 imawonjezera TextBee ngati provider wa SMS wa ma workflow a zidziwitso okonzedwa. Zidziwitso za SMS ziyenera kuphatikizidwa ndi zipata zovomerezedwa ndi munthu pa mauthenga okhudza zinthu zachinsinsi kapena owonekera kwa ogwiritsa ntchito.
+
+| Gawo | Kufotokozera |
+|---|---|
+| **TextBee API Key** | Imatsimikizira zopempha ku provider wa TextBee SMS. |
+| **TextBee Device / Wotumiza** | Imasankha wotumiza kapena chipangizo cha TextBee chogwiritsidwa ntchito pa mauthenga otuluka, ngati provider akufuna. |
+| **Zidziwitso za SMS Zathandizidwa** | Zimalola ma workflow ovomerezedwa kutumiza zidziwitso za mameseji. Siyani zolepheretsedwa kuti mupewe kutumiza SMS. |
+
+Tumizani uthenga woyesa kokha ku nambala ya woyang'anira, kenako tsimikizirani khalidwe la approval-gate musanayambitse zikumbutso zokonzedwa kapena zowonekera kwa opezeka.
+
+## Feature Flags {#feature-flags}
+
+Komanso zoyambitsidwa mu v1.9.0, tabu ya **Zokonda → Feature Flags** imapereka masiwichi osinthira magwiridwe antchito osankha. Flag iliyonse imakhala yathandizidwa kapena yolepheretsedwa pa netiweki yonse; palibe kusintha kwa pa site payekha panthawiyi.
+
+### Kupeza Feature Flags {#accessing-feature-flags}
+
+1. Mu WordPress admin, pitani ku **Gratis AI Agent → Zokonda**.
+2. Dinani tabu ya **Feature Flags**.
+
+### Ma Flag a Kuwongolera Mwayi {#access-control-flags}
+
+| Chizindikiro | Chokhazikika | Kufotokozera |
 |---|---|---|
-| **Restrict to Administrators** | Off | Pamene muli, pamene ndi wosangalala (administrator) matuonse kuti awonje panel ya AI Agent chat. Wosangalala wosiyanasiyana anayamba kuona meseji "Fonetsera wosangalala wanu". |
-| **Restrict to Network Admins** | Off | Pamene ikuyenera m'muli wosiyanasiyana (multisite network), pamene ikuyenera, matuonse ndi Super Admins matuonse kuti awonje agent. Wosangalala wa site wosiyanasiyana amapangidwa. Iyi imapereka mphamvu kuposa "Restrict to Administrators" ngati zambiri zimene zikuyenera. |
-| **Allow Subscriber Access** | Off | Pamene ikuyenera, wosangalala (subscriber) anayamba kuwunje interface ya chat komwe amapereka ulemu monga chifukwa cha kukhala ndi ulemu (read-only abilities) (samapereka kupanga posts kapena kusintha settings). |
-| **Disable for Non-Members** | Off | Iyi ikuyenera ndi Ultimate Multisite membership status. Pamene ikuyenera, chat limapangidwa kwa sites zomwe si mungakhale ulemu wosangalala (membership) woperekedwa. |
+| **Chepetsani kwa Administrators** | Off | Ikayatsidwa, ogwiritsa ntchito okhawo omwe ali ndi udindo wa `administrator` ndi amene angatsegule gulu la macheza la AI Agent. Maudindo ena onse amaona uthenga wakuti "Lumikizanani ndi administrator wanu" m'malo mwake. |
+| **Chepetsani kwa Network Admins** | Off | Ikayatsidwa pa netiweki ya multisite, Super Admins okha ndi amene angagwiritse ntchito agent. Admins a masaiti payekha amatsekedwa. Imakhala patsogolo pa "Chepetsani kwa Administrators" ngati zonse ziwiri zayatsidwa. |
+| **Lolani Subscriber Access** | Off | Ikayatsidwa, ogwiritsa ntchito omwe ali ndi udindo wa `subscriber` angagwiritse ntchito mawonekedwe a macheza koma amangokhala ndi kuthekera kowerenga kokha (palibe kupanga zolemba kapena kusintha makonzedwe). |
+| **Letsani kwa Osakhala Mamembala** | Off | Imalumikizana ndi udindo wa umembala wa Ultimate Multisite. Ikayatsidwa, macheza amabisika kwa masaiti omwe alibe umembala wogwira ntchito. |
 
-### Branding Flags
+### Zizindikiro za Branding {#branding-flags}
 
-| Flag | Default | Maulonda |
+| Chizindikiro | Chokhazikika | Kufotokozera |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Limapangidwa lalikulu la chithunzi lomwe limapereka m'muli ya chat. Limapangidwa kuti muli wosangalala (white-label deployments). |
-| **Custom Agent Name** | *(blank)* | Limapereka m'chithunzi cha agent lalikulu m'chat header ndi admin menu ndi dzina lanu la chinthu. Simapereka ngati muli wosangalala (default). |
-| **Hide Agent Picker** | Off | Pamene ikuyenera, anthu siwanje kusintha monga m'muli ya agents m'mili imodzi. Muli wa agent wosiyanasiyana umapereka monga momwe umaperekedwa m'Settings → General. |
-| **Use Site Icon as Chat Avatar** | Off | Limapangidwa lalikulu la AI m'chat widget header limapereka chithunzi cha site ya WordPress (limaperekedwa m'Appearance → Customize → Site Identity). |
+| **Bisani Mzere Wapansi wa "Powered by Gratis AI Agent"** | Off | Imachotsa mzere wa chizindikiro cha umwini womwe umawonekera pansi pa widget ya macheza. Zimalimbikitsidwa pa kukhazikitsa kwa white-label. |
+| **Dzina la Agent Lokonzedwa Mwamakonda** | *(chopanda kanthu)* | Imalowetsa m'malo mwa chizindikiro chokhazikika cha "Gratis AI Agent" pamutu wa macheza ndi menyu ya admin ndi dzina lanu la product. Siyani chopanda kanthu kuti mugwiritse ntchito chokhazikika. |
+| **Bisani Chosankhira Agent** | Off | Ikayatsidwa, ogwiritsa ntchito sangathe kusintha pakati pa agents asanu omangidwamo. Agent wapano amakhazikika pa chilichonse chomwe chakonzedwa ngati chokhazikika mu Settings → General. |
+| **Gwiritsani Ntchito Chizindikiro cha Saiti ngati Chat Avatar** | Off | Imalowetsa m'malo mwa chizindikiro chokhazikika cha AI pamutu wa widget ya macheza ndi chizindikiro cha saiti ya WordPress (chokhazikitsidwa pansi pa Appearance → Customize → Site Identity). |
 
-### Applying Changes
+### Zizindikiro za Chitetezo cha Automation {#automation-safety-flags}
 
-Muli **Save Settings** poyenera kusintha yofunsa yotani. Zomwe zimene zikuyenera kumukonza m'mili — samapereka kukhala ndi cache kapena kuyesa plugin.
+Superdav AI Agent v1.18.0 imabweretsa zipata zovomerezedwa ndi munthu komanso zolemba za zikumbutso kuti ma automation aziyenda motetezeka. Zowongolera izi zingawonekere mu zizindikiro za feature kapena makonzedwe apamwamba a automation, kutengera phukusi lomwe layikidwa.
+
+| Chizindikiro | Chokhazikika | Kufotokozera |
+|---|---|---|
+| **Funikirani Chivomerezo cha Munthu** | Zimalimbikitsidwa kuyatsidwa | Imayimitsa kaye ma automation okhudzika mpaka wogwiritsa ntchito wololedwa awunikire ndi kutsimikizira chochita chomwe chaperekedwa. |
+| **Kuchotsa Zobwerezabwereza pa Zikumbutso** | On | Imalemba zikumbutso zomwe zatumizidwa kuti kuyesanso kapena mayendedwe okonzedwa zisatumize zidziwitso zobwerezabwereza. |
+| **Yatsani Zida za Calendar** | Off mpaka zitakonzedwa | Imalola agent kuwerenga ma calendar ndi zochitika za Google zomwe zakonzedwa. |
+| **Yatsani Zidziwitso za SMS** | Off mpaka zitakonzedwa | Imalola mayendedwe ovomerezedwa kutumiza zidziwitso za TextBee SMS pambuyo poti credentials zasungidwa. |
+
+### Kugwiritsa Ntchito Zosintha {#applying-changes}
+
+Dinani **Save Settings** mutasintha chizindikiro chilichonse. Zosintha zimayamba kugwira ntchito nthawi yomweyo — palibe kuflush cache kapena kuyatsanso plugin komwe kumafunika.

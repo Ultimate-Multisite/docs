@@ -3,7 +3,7 @@ title: Kòd Snipe
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets pou v2
+# Code Snippets pou v2 {#code-snippets-for-v2}
 
 An reyalman, code snippets pou **WordPress** yo itilize pou fè kèk aksyon ki ka mande yon plugin pi piti ki dedye. Genyen sa yo mete nan youn nan dosye nòmal WordPress la oswa nan tem (theme) ou a (anjeneral dosye functions.php tem ou an), oubyen yo ka itilize kòm yon MU plugin.
 
@@ -15,7 +15,7 @@ Nan atik sa a, nou pral montre w twa code snippets ki ka itilize ak **Ultimate M
 
   * [**Repare pwoblèm CORS ak Font-Icons nan domèn ki mapé (mapped domains)**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Chanje pozisyon mennu Kont (Account menu item)
+## Chanje pozisyon mennu Kont (Account menu item) {#changing-the-position-of-the-account-menu-item}
 
 Pou chanje pozisyon mennu Kont la sou Dashboard kliyan ou a, jis ajoute code snippet sa a nan dosye functions.php tem prensipal sit ou an ap itilize a. Ou ka mete snippet la nan youn nan MU plugin oswa custom plugin ou yo tou.
 
@@ -37,8 +37,8 @@ Note ke itilizat yo sèlman ka abònye yon **Plan**, pa yon Package oswa yon Ser
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Repare pwoblèm CORS ak Font-Icons nan domèn ki mapé
-## Repare pwoblèm CORS ak Font-Icons nan domèn ki mapé
+## Repare pwoblèm CORS ak Font-Icons nan domèn ki mapé {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
+## Repare pwoblèm CORS ak Font-Icons nan domèn ki mapé {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Aprè w fin mapé yon domèn pou yon sub-site, ou ka jwenn ke sit la gen pwoblèm pou li chaje font koutim. Sa se poutèt yon bloke kòtori (cross-origin block) nan konfigirasyon sèvè ou a.
 
@@ -46,13 +46,13 @@ Puis ke fichye font yo anpòt toujou chaje dirèkteman soti nan CSS, plugin mapa
 
 Men kèk kòd pou rezoud pwoblèm nan pou Apache ak NGINX. Chanjman sa yo mande yon konpreyansyon avanse sou fichye konfigirasyon sèvè (.htaccess files ak NGINX config files). Si ou pa konfòtab fè chanjman sa tèt ou, voye paj sa a bay agent sipò hosting ou lè w bezwen èd.
 
-### Apache
+### Apache {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Nan fichye .htaccess ou an, ajoute sa:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#apache}
 
 Nan fichye konfigirasyon sèvè ou a (ki kote li varye selon sèvè a), ajoute sa:
 

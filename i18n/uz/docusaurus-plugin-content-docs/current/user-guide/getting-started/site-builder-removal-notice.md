@@ -3,13 +3,13 @@ title: Sayt Quruvchi Rejimdan Chiqarish Eslami
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Sayt Quruvchi Rejamsizligi Haqida Eslatma
+# Sayt Quruvchi Rejamsizligi Haqida Eslatma {#site-builder-mode-removal-notice}
 
 **Site Builder rejimi Superdav AI Agent v1.12.0 da olib tashlandi.** Agar siz Site Builder rejimidan foydalanayotgan bo'lsangiz, tema yaratish va sayt sozlamalari uchun **Setup Assistant agentiga** o'tishingiz kerak.
 
-## Nima Bo'ldi?
+## Nima Bo'ldi? {#what-happened}
 
-### Site Builder Rejimi (Eski)
+### Site Builder Rejimi (Eski) {#site-builder-mode-legacy}
 
 Site Builder rejimi quyidagilar uchun wizard asosidagi interfeys edi:
 
@@ -18,7 +18,7 @@ Site Builder rejimi quyidagilar uchun wizard asosidagi interfeys edi:
 - Tema tanlash
 - Dastlabki kontentni sozlash
 
-### Uni Nima Almashtirdi?
+### Uni Nima Almashtirdi? {#what-replaced-it}
 
 **Setup Assistant agenti** endi quyidagilar bilan barcha Site Builder funksionalligini boshqaradi:
 
@@ -27,15 +27,15 @@ Site Builder rejimi quyidagilar uchun wizard asosidagi interfeys edi:
 - Theme Builder (Tema Quruvchi) bilan integratsiya
 - Kelajak sessiyalar uchun doimiy `site_brief` xotirasi
 
-## Agar Siz Site Builder Rejimidan Foydalanayotgan Bo'lsangiz
+## Agar Siz Site Builder Rejimidan Foydalanayotgan Bo'lsangiz {#if-you-were-using-site-builder-mode}
 
-### Saytlaringiz Xavfsiz
+### Saytlaringiz Xavfsiz {#your-sites-are-safe}
 
 - Site Builder rejimi bilan yaratilgan mavjud saytlar ishlayveradi
 - Ma'lumot yo'qotilishi yoki sayt buzilishi yo'q
 - Siz saytlaringizni odatdagidek boshqarishda davom etishingiz mumkin
 
-### Setup Assistant Agentiga O'ting
+### Setup Assistant Agentiga O'ting {#migrate-to-setup-assistant-agent}
 
 Yangi sayt sozlash yoki tema o'zgarishlari uchun Setup Assistant agentidan foydalaning:
 
@@ -51,7 +51,7 @@ yoki
 
 Setup Assistant agenti ko'proq moslashuvchanlik bilan xuddi shu funksionallikni taqdim etadi.
 
-## Qiyoslash: Site Builder vs. Setup Assistant
+## Qiyoslash: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Xususiyat | Site Builder (Olib tashlandi) | Setup Assistant (Yangi) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agenti ko'proq moslashuvchanlik bilan xuddi shu funksionallikni 
 | Kelajak sessiyalari | Takrorlanadigan sozlash | Saqlangan site_brief dan foydalanish |
 | Moslashuvchanlik | Qat'iy ish oqimi | Moslashuvchan suhbat |
 
-## Setup Assistant Agentiga O'tish
+## Setup Assistant Agentiga O'tish {#migrating-to-setup-assistant-agent}
 
-### Yangi Saytlar Uchun
+### Yangi Saytlar Uchun {#for-new-sites}
 
 Sayt Quruvchi rejimidan foydalanish o'rniga:
 
@@ -76,7 +76,7 @@ Sayt Quruvchi rejimidan foydalanish o'rniga:
    - Tema yaratish
    - Dastlabki sozlash
 
-### Mavjud Saytlarga Uchun
+### Mavjud Saytlarga Uchun {#for-existing-sites}
 
 Agar sizda Site Builder rejimidan mavjud saytingiz bo'lsa:
 
@@ -85,7 +85,7 @@ Agar sizda Site Builder rejimidan mavjud saytingiz bo'lsa:
 3. Sozlash Assistent agent sizga yangi tema yaratishda yordam beradi
 4. Sayt ma'lumotlaringiz o'zgarmay qoladi
 
-### Tema O'zgarishlari Uchun
+### Tema O'zgarishlari Uchun {#for-theme-changes}
 
 Site Builder rejimidagi tema tanlash o'rniga:
 
@@ -95,9 +95,9 @@ Site Builder rejimidagi tema tanlash o'rniga:
    - Maxsus temani yaratadi
    - Uni saytingizda faollashtiradi
 
-## Asosiy Farqlar
+## Asosiy Farqlar {#key-differences}
 
-### Site Builder Rejimi
+### Site Builder Rejimi {#site-builder-mode}
 
 ```
 1. Shablondan tanlang
@@ -106,7 +106,7 @@ Site Builder rejimidagi tema tanlash o'rniga:
 4. Bitti
 ```
 
-### Sozlash Assistent Agent
+### Sozlash Assistent Agent {#setup-assistant-agent}
 
 ```
 1. Saytingizning maqsadi haqida tasvirlang
@@ -117,42 +117,42 @@ Site Builder rejimidagi tema tanlash o'rniga:
 6. Kelajak sessiyalar uchun sayt xulosasi saqlanadi (Site brief stored for future sessions)
 ```
 
-## Sozlash Assistent Agentning Afzalliklari
+## Sozlash Assistent Agentning Afzalliklari {#benefits-of-setup-assistant-agent}
 
-### Ko'proq Moslashuvchanlik
+### Ko'proq Moslashuvchanlik {#more-flexible}
 
 - Saytingizni tabiiy tilda tasvirlang
 - Maxsus tavsiyalarni oling
 - Sizning aniq ehtiyojlaringizga moslashish mumkin
 
-### Yaxshil Moslashuvchanlik
+### Yaxshil Moslashuvchanlik {#better-customization}
 
 - Maxsus tema yaratish
 - Dizayn tizimi qarorlari (Design system decisions)
 - Doimiy dizayn tokenlari (Persistent design tokens)
 
-### Doimiy Xotira
+### Doimiy Xotira {#persistent-memory}
 
 - Sizning `site_brief` saqlanadi
 - Kelajakdagi agentlar saytingizni tushunadi
 - Sozlash ma'lumotlarini takrorlash shart emas
 
-### Integratsiyalashgan Ishlash Jarayoni (Integrated Workflow)
+### Integratsiyalashgan Ishlash Jarayoni (Integrated Workflow) {#integrated-workflow}
 
 - Tema qurish bo'yicha kirish (Theme Builder onboarding)
 - Dizayn tizimi estetikasi ko'nikmasi (Design System Aesthetics skill)
 - Ko'rinuv kontrollerini faollashtirish imkoniyati (Ability Visibility controls)
 - Barcha ishlar silliq ravishda bir-biriga bog'liq
 
-## Muammolarni Hal Qilish (Troubleshooting)
+## Muammolarni Hal Qilish (Troubleshooting) {#troubleshooting}
 
-### Site Builder rejimi topa olmayman
+### Site Builder rejimi topa olmayman {#i-cant-find-site-builder-mode}
 
 Site Builder rejimi olib tashlandi. Endi Sozlash Assistent agentidan foydalaning:
 
 "Menga yangi sayt yaratishga yordam bering"
 
-### Site Builder danidan saytni qayta yaratmoqchiman
+### Site Builder danidan saytni qayta yaratmoqchiman {#i-want-to-recreate-a-site-from-site-builder}
 
 Siz uni Setup Assistant agenti orqali qayta yaratishingiz mumkin:
 
@@ -161,7 +161,7 @@ Siz uni Setup Assistant agenti orqali qayta yaratishingiz mumkin:
 3. Agent shunga o'xshash temani yaratadi
 4. Sizning site_briefing'ingiz kelajak uchun ma'lumot sifatida saqlanadi
 
-### Mavjud Site Builder saytim ishlamayapti
+### Mavjud Site Builder saytim ishlamayapti {#my-existing-site-builder-site-isnt-working}
 
 Site Builder rejimi bilan yaratilgan mavjud saytlar hali ham ishlaydi. Agar muammolarga duch kelsangiz:
 
@@ -170,7 +170,7 @@ Site Builder rejimi bilan yaratilgan mavjud saytlar hali ham ishlaydi. Agar muam
 3. WordPress xatolik yozuvlarini tekshiring
 4. Muammolar davom etsa, qo'llab-quvvatlash bilan bog'lanishni soving
 
-### Eski Site Builder shablonlarimdan foydalanish mumkinmi?
+### Eski Site Builder shablonlarimdan foydalanish mumkinmi? {#can-i-still-use-my-old-site-builder-templates}
 
 Site Builder shablonlari endi mavjud emas. Biroq:
 
@@ -178,14 +178,14 @@ Site Builder shablonlari endi mavjud emas. Biroq:
 - Siz Setup Assistant agenti orqali o'xshash saytlarni qayta yaratishingiz mumkin
 - Setup Assistant agenti ko'proq sozlash imkoniyatlarini taqdim etadi
 
-## Keyingi qadamlar
+## Keyingi qadamlar {#next-steps}
 
 1. **Yangi saytlar uchun**: Setup Assistant agentidan foydalaning
 2. **Mavjud saytlar uchun**: Ulardan hozirgi holatida foydalanishda davom eting
 3. **Tema o'zgarishlari uchun**: Setup Assistant agentidan yordam soving
 4. **Dizaynni takomillashtirish uchun**: Design System Aesthetics ko'nikmasidan foydalaning
 
-## Bog'liq mavzular
+## Bog'liq mavzular {#related-topics}
 
 - **Theme Builder Onboarding**: Maxsus temalar uchun yo'riqlar bilan sozlash
 - **Setup Assistant Agent**: Agent tomonidan boshqariladigan sayt sozlash

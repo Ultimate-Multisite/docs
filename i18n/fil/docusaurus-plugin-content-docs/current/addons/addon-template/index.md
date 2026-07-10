@@ -3,25 +3,25 @@ title: Template ng Addon
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Template ng Addon
+# Template ng Addon {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Mga Kinakailangan (Requirements)
+## Mga Kinakailangan (Requirements) {#requirements}
 
 - WordPress 5.3 o mas mataas
 - PHP 7.4 o mas mataas
 - Multisite Ultimate plugin (aktibo)
 
-## Pag-install (Installation)
+## Pag-install (Installation) {#installation}
 
 1. I-upload ang mga file ng addon sa iyong `/wp-content/plugins/` directory
 2. I-activate ang plugin sa pamamagitan ng 'Plugins' menu sa WordPress
 3. I-configure ang mga setting ng addon sa network admin
 
-## Pagbuo (Development)
+## Pagbuo (Development) {#development}
 
-### Pag-set Up (Setup)
+### Pag-set Up (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Istruktura ng Proyekto (Project Structure)
+### Istruktura ng Proyekto (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### Pag-test (Testing)
+### Pag-test (Testing) {#testing}
 
 Ang addon na ito ay may kumpletong testing framework:
 
@@ -75,44 +75,44 @@ Ang addon na ito ay may kumpletong testing framework:
 - **Test Coverage**: Nakakonfigura para subaybayan ang code coverage
 - **Multisite Testing**: Ang mga test ay tumatakbo sa multisite environment
 
-### Code Standards
+### Code Standards {#code-standards}
 
 - **WordPress Coding Standards**: Ipinapatupad gamit ang PHPCS
 - **PHP 7.4+ Compatibility**: Sinusuportahan ang modernong features ng PHP
 - **Static Analysis**: Integrasyon ng PHPStan para sa type checking
 - **Code Modernization**: Mga patakaran ng Rector para sa pag-upgrade ng PHP
 
-### Build System
+### Build System {#build-system}
 
 - **Asset Processing**: Minification para sa mga CSS/JS file
 - **Translation**: Pagbuo ng POT file
 - **Packaging**: Paglikha ng archive para sa pamamahagi
 - **Development Mode**: Hindi minified na assets para sa pag-debug
 
-## Pag-configure (Configuration)
+## Pag-configure (Configuration) {#configuration}
 
 Sinusuportahan ng addon ang iba't ibang opsyon sa pag-configure na makikita sa network admin interface.
 
-## Hooks at Filters
+## Hooks at Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Tumutunog pagkatapos i-initialize ang addon
 - `ultimate-multisite-addon-template_loaded` - Tumutunog pagkatapos ma-load ang lahat ng file ng addon
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Para baguhin ang mga setting ng addon
 - `ultimate-multisite-addon-template_enabled` - Para i-override ang status ng pag-enable/disable ng addon
 
-## Lisensya (License)
+## Lisensya (License) {#license}
 
 Ang addon na ito ay may lisensya sa ilalim ng GPL v3 o mas bago.
 
-## Suporta (Support)
+## Suporta (Support) {#support}
 
 Para sa suporta at dokumentasyon, bisitahin ang [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): pinalitan ang prefix ng ultimate-multisite; in-update ang text domain; version bump.
 

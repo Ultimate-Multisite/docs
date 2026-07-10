@@ -4,11 +4,11 @@ title: 'فیلتر - wu_{$this->model}_meta_pre_save'
 sidebar_label: 'wu_{$this->model}_meta_pre_save'
 _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 ---
-# Filter: wu_\{$this->model\}_meta_pre_save
+# Filter: wu_\{$this->model\}_meta_pre_save {#filter-wuthis-modelmetapresave}
 
 این فیلتر، داده‌های متا را قبل از اینکه برای ذخیره در دیتابیس سریالایز (تبدیل به فرمت ذخیره‌سازی) شوند، فیلتر می‌کند.
 
-## پارامترها
+## پارامترها {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: bd7ee30a03af6a465129c990e5cded7e
 | $data_unserialized | `array` | داده‌های شیء‌ای که قرار است ذخیره شوند. |
 | $this | `\Base_Model` | نمونه شیء. |
 
-### از نسخه
+### از نسخه {#since}
 
 - 2.0.0
-### منبع
+### منبع {#source}
 
 در [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L534) در خط ۵۳۴ تعریف شده است.

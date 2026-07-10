@@ -1,75 +1,75 @@
 ---
 title: Medan Checkout dan DNS Pelanggan
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Pengurusan Medan Checkout dan DNS Pelanggan
+# Checkout Field dan Pengurusan DNS Pelanggan {#checkout-field-and-customer-dns-management}
 
-## Medan Pemilihan Domain (Domain Selection checkout field)
+## Field checkout Pemilihan Domain {#the-domain-selection-checkout-field}
 
-Medan **Domain Selection** adalah elemen checkout yang memberikan pilihan kepada pelanggan tentang cara mendapatkan domain untuk laman web mereka. Tambahkan medan ini ke mana-mana borang checkout untuk membolehkan penjualan domain.
+Field **Domain Selection** ialah elemen checkout yang memberi pelanggan pilihan tentang cara mendapatkan domain tapak mereka. Tambahkannya pada mana-mana borang checkout untuk mendayakan penjualan domain.
 
-### Menambah medan ke borang checkout
+### Menambah field pada borang checkout {#adding-the-field-to-a-checkout-form}
 
 1. Pergi ke **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Buka atau cipta borang checkout
 3. Dalam editor checkout, klik **Add Field**
-4. Pilih **Domain Selection** dari senarai medan
-5. Konfigurasi pilihan medan (lihat di bawah)
+4. Pilih **Domain Selection** daripada senarai field
+5. Konfigurasikan pilihan field (lihat di bawah)
 6. Simpan borang
 
-### Pilihan medan (Field options)
+### Pilihan field {#field-options}
 
-**Domain modes** — Pilih tab mana yang akan dilihat oleh pelanggan. Setiap mod boleh diaktifkan atau dinyahaktifkan secara berasingan:
+**Mod domain** — Pilih tab yang pelanggan lihat. Setiap mod boleh didayakan atau dinyahdayakan secara berasingan:
 
-| Mode | Fungsi |
+| Mod | Perkara yang dilakukan |
 |---|---|
 | **Subdomain** | Pelanggan menggunakan subdomain percuma pada rangkaian anda (cth., `mysite.yournetwork.com`). Tiada bayaran diperlukan. |
-| **Register New Domain** | Pelanggan mencari domain baharu dan mendaftarkannya melalui penyedia yang telah anda konfigurasikan. Menggunakan produk domain yang sepadan untuk penetapan harga. |
-| **Existing Domain** | Pelanggan memetakan domain yang sudah mereka miliki. Tiada yuran pendaftaran. Domain akan dipetakan secara automatik ke laman web mereka. |
+| **Register New Domain** | Pelanggan mencari domain baharu dan mendaftarkannya melalui penyedia yang telah anda konfigurasikan. Menggunakan produk domain yang sepadan untuk harga. |
+| **Existing Domain** | Pelanggan memetakan domain yang sudah mereka miliki. Tiada yuran pendaftaran. Domain dipetakan secara automatik ke tapak mereka. |
 
-**Default mode** — Apabila ketiga-tiga mod diaktifkan, tab mana yang akan dibuka dahulu. Tetapkan kepada **Subdomain** untuk menjadikan pendaftaran domain pilihan, atau **Register New Domain** untuk menggalakkan pembelian.
+**Mod lalai** — Apabila ketiga-tiga mod didayakan, tab mana yang dibuka dahulu. Tetapkan kepada **Subdomain** untuk menjadikan pendaftaran domain pilihan, atau **Register New Domain** untuk menggalakkan pembelian.
 
-**Domain product** — Secara pilihan, pin medan ini kepada produk domain tertentu. Jika tidak ditetapkan, addon akan memilih produk yang sepadan secara automatik berdasarkan TLD yang dicari oleh pelanggan.
+**Produk domain** — Secara pilihan, pin field ini kepada produk domain tertentu. Jika tidak ditetapkan, addon memilih produk yang sepadan secara automatik berdasarkan TLD yang dicari oleh pelanggan.
 
-### Medan kontak pendaftar (Registrant contact fields)
+### Field hubungan pendaftar {#registrant-contact-fields}
 
-Apabila pelanggan memilih tab **Register New Domain**, borang checkout akan menambah medan kontak pendaftar secara dalam talian:
+Apabila pelanggan memilih tab **Register New Domain**, borang checkout menambah field hubungan pendaftar secara sebaris:
 
-- Nama depan / Nama belakang
+- Nama pertama / Nama akhir
 - Alamat e-mel
-- Alamat (baris 1, bandar, negeri/provinsi, kod pos, negara)
+- Alamat (baris 1, bandar, negeri/wilayah, poskod, negara)
 - Nombor telefon
 
-Ini adalah wajib oleh semua pendaftar dan disahkan sebelum panggilan API pendaftaran dibuat. Nombor telefon akan diformatkan secara automatik kepada format antarabangsa `+CC.NNN` yang dijangkakan oleh pendaftar.
+Ini diperlukan oleh semua pendaftar dan disahkan sebelum panggilan API pendaftaran dibuat. Nombor telefon diformatkan secara automatik kepada format antarabangsa `+CC.NNN` yang dijangka oleh pendaftar.
 
-### URL laman web yang dijana secara automatik (Auto-generated site URL)
+### URL tapak yang dijana automatik {#auto-generated-site-url}
 
-Apabila pelanggan mendaftar atau memetakan domain, medan URL laman web akan diisi secara automatik daripada domain yang dipilih. Pelanggan tidak perlu mengisi medan URL berasingan.
+Apabila pelanggan mendaftarkan atau memetakan domain, field URL tapak diisi secara automatik daripada domain yang dipilih. Pelanggan tidak perlu mengisi field URL yang berasingan.
 
-### Tingkah laku carian (Search behaviour)
+### Tingkah laku carian {#search-behaviour}
 
-- Ketersediaan domain diperiksa secara masa nyata dengan AJAX semasa pelanggan menaip
+- Ketersediaan domain disemak secara masa nyata dengan AJAX semasa pelanggan menaip
 - Cadangan TLD alternatif ditunjukkan apabila domain pilihan tidak tersedia
 - Harga diambil secara langsung dan dipaparkan dengan jelas (harga pendaftaran, harga pembaharuan, yuran privasi WHOIS pilihan)
-- Kod kupon dikenakan pada produk domain sama seperti produk lain
+- Kod kupon digunakan pada produk domain sama seperti mana-mana produk lain
 
-**Menala kebolehresponsifan carian:**
+**Melaras respons carian:**
 
 ```php
-// Tingkatkan kelewatan debounce (milisaat) untuk mengurangkan panggilan API pada sambungan perlahan
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Menambah medan tersuai ke borang carian domain:**
+**Menambah field tersuai pada borang carian domain:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Nota tambahan',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Pengurusan DNS Pelanggan (Customer DNS management)
+## Pengurusan DNS pelanggan {#customer-dns-management}
 
-Pelanggan boleh menguruskan rekod DNS untuk domain yang didaftarkan dari halaman **My Account**, di bawah entri domain mereka.
+Pelanggan boleh mengurus rekod DNS untuk domain berdaftar mereka daripada halaman **My Account**, di bawah entri domain mereka.
 
-### Jenis rekod yang disokong (Supported record types)
+### Jenis rekod yang disokong {#supported-record-types}
 
 | Jenis | Kegunaan |
 |---|---|
-| **A** | Memetakan nama hos kepada alamat IPv4 |
-| **AAAA** | Memetakan nama hos kepada alamat IPv6 |
-| **CNAME** | Mencipta alias yang menunjuk ke nama hos lain |
-| **MX** | Menetapkan pelayan pertukaran mel (mail exchange server) |
-| **TXT** | Menambah rekod teks SPF, DMARC, pengesahan, atau teks lain |
+| **A** | Petakan nama hos kepada alamat IPv4 |
+| **AAAA** | Petakan nama hos kepada alamat IPv6 |
+| **CNAME** | Cipta alias yang menunjuk kepada nama hos lain |
+| **MX** | Tetapkan pelayan pertukaran mel |
+| **TXT** | Tambah SPF, DMARC, pengesahan, atau rekod teks lain |
 
-### Penyedia mana yang menyokong pengurusan DNS?
+### Penyedia manakah yang menyokong pengurusan DNS? {#which-providers-support-dns-management}
 
-Pengurusan DNS (tambah, edit, padam rekod) tersedia dengan **OpenSRS**, **ResellerClub**, dan **Enom**. Domain Namecheap, GoDaddy, dan NameSilo memaparkan status dan maklumat luput, tetapi DNS mesti diuruskan terus dalam panel kawalan pendaftar.
+Pengurusan DNS (tambah, edit, padam rekod) tersedia dengan **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, dan **Openprovider**. Domain **Hostinger** boleh mengemas kini nameserver melalui Domain Seller; rekod DNS untuk domain yang dihoskan diurus oleh integrasi pemetaan domain Hostinger teras. Domain Namecheap, GoDaddy, dan NameSilo memaparkan status dan maklumat tamat tempoh tetapi DNS mesti diurus terus dalam panel kawalan pendaftar.
 
-### Rekod DNS lalai (Default DNS records)
+### Rekod DNS lalai {#default-dns-records}
 
-Anda boleh mengkonfigurasi rekod DNS lalai yang akan digunakan secara automatik apabila domain didaftarkan. Pergi ke **Settings › Domain Seller › Default DNS Records**.
+Anda boleh mengkonfigurasikan rekod DNS lalai yang digunakan secara automatik apabila domain didaftarkan. Pergi ke **Settings › Domain Seller › Default DNS Records**.
 
 Nilai rekod lalai menyokong dua token:
 
 | Token | Digantikan dengan |
 |---|---|
-| `{DOMAIN}` | Nama domain yang didaftarkan (cth., `example.com`) |
-| `{SITE_URL}` | URL laman web WordPress untuk laman web pelanggan |
+| `{DOMAIN}` | Nama domain berdaftar (cth., `example.com`) |
+| `{SITE_URL}` | URL tapak WordPress untuk tapak pelanggan |
 
-**Contoh — menunjuk domain apex dan www ke IP pelayan anda:**
+**Contoh — halakan domain apex dan www ke IP pelayan anda:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Pentadbir: melihat dan menyunting DNS
+### Admin: melihat dan mengedit DNS {#admin-viewing-and-editing-dns}
 
-Pentadbir rangkaian boleh melihat dan menyunting rekod DNS untuk mana-mana domain pelanggan dari halaman suntingan domain di **Network Admin › Ultimate Multisite › Domains**.
+Admin rangkaian boleh melihat dan mengedit rekod DNS untuk mana-mana domain pelanggan daripada halaman edit domain dalam **Network Admin › Ultimate Multisite › Domains**.

@@ -1,133 +1,154 @@
 ---
-title: Registre de canvis del Venedor de Domínis
+title: Registre de canvis del venedor de dominis
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Diari de canvis de Domain Seller
+# Registre de canvis de Domain Seller {#domain-seller-changelog}
 
-Versió 1.1.0 - Publicat el 2026-05-08
-- Nou: Creació de records DNS (add_dns_record) implementada per ResellerClub, Enom i OpenSRS registrars
-- Correcció: L'analitzador de records DNS per defecte ara tolera els tokens {DOMAIN} i {SITE_URL}
-- Correcció: Els slugs dels camps de pagament de selecció de domini estan desaclopats (namespaced) per evitar col·lisi amb site_url
+Versió 1.3.0 - Publicada el 2026-06-02
+- Nou: S'ha afegit un avís d'administració de xarxa quan el saldo de revenedor de HostAfrica baixa massa
+- Nou: S'ha afegit el mapatge automàtic dels dominis acabats de registrar al lloc de xarxa
+- Correcció: S'han aplicat els requisits dels camps del registrant només quan es registra un domini nou
+- Correcció: S'ha fet que els avisos de monitoratge de saldo es puguin descartar
+- Correcció: S'ha garantit que es conservin les dades de facturació del registrant de WooCommerce
+- Correcció: S'han aplicat els requisits de contacte del registrant durant el registre
+- Correcció: S'ha impedit que es creïn productes de registre de dominis amb un marge del 0%
+- Correcció: S'han conservat les seleccions de domini i els preus durant el flux de sessió de checkout
+- Correcció: S'ha millorat la visualització de la moneda dels preus de domini de HostAfrica
+- Correcció: S'ha millorat el comportament de form-action de checkout per evitar discrepàncies de query-var del nucli de WP
+- Millora: S'ha enllaçat la documentació de configuració de revenedor de HostAfrica a la guia de configuració
 
-Versió 1.0.8 - Publicat el 2026-05-07
-- Correcció: La cotització de domini de ResellerClub ara recupera els preus de cost en temps real de l'endpoint API correcte
+Versió 1.2.0 - Publicada el 2026-05-25
+- Nou: S'ha afegit HostAfrica com a integració de venda de dominis amb suport per a checkout, assistent de configuració, cerca, TLD/preus, registre, renovació, transferència, nameserver, DNS, codi EPP, bloqueig de registrador i protecció d'ID
+- Nou: S'ha afegit Openprovider com a integració de venda de dominis amb suport per a preus de revenedor, registre, renovació, transferència, nameserver, DNS, codi EPP, bloqueig de registrador, privadesa WHOIS i sincronització de TLD
+- Nou: S'ha afegit Hostinger com a integració de venda de dominis utilitzant el token d'API de Hostinger compartit de la integració principal per a comprovacions de disponibilitat, registre, actualitzacions de nameserver, bloqueig de registrador i privadesa WHOIS
+- Millora: S'han afegit docblocks d'accions i filtres del cicle de vida del domini per a orientació d'integració per a desenvolupadors
+- Millora: S'han actualitzat les metadades de compatibilitat del plugin a WordPress 7.0 al readme de l'addon
+- Millora: S'han actualitzat les plantilles de planificació utilitzades per coordinar properes versions
 
-Versió 1.0.7 - Publicat el 2026-05-06
-* Correcció: La prova de connexió de ResellerClub envia el paràmetre tlds requerit (#224)
+Versió 1.1.0 - Publicada el 2026-05-08
+- Nou: S'ha implementat la creació de registres DNS (add_dns_record) per als registradors ResellerClub, Enom i OpenSRS
+- Correcció: L'analitzador predeterminat de registres DNS ara tolera els tokens {DOMAIN} i {SITE_URL}
+- Correcció: Els slugs dels camps de checkout de selecció de domini ara tenen espai de noms per evitar col·lisions amb site_url
 
-Versió 1.0.6 - Publicat el 2026-05-05
-* Correcció: La registració de domini de ResellerClub funciona correctament ara amb una millor gestió de la resposta de l'API i el ruteig del proveïdor basat en el registre
-* Correcció: Millores en l'experiència d'usuari (UX) de la pàgina d'administració de Registre de Domini
-* Eliminat: Integració de registrars de CyberPanel
+Versió 1.0.8 - Publicada el 2026-05-07
+- Correcció: Els preus de domini de ResellerClub ara obtenen els preus de cost en directe des de l'endpoint d'API correcte
 
-Versió 1.0.5 - Publicat el 2026-04-02
-* Nou: Integració del registrar GoDaddy per a la registració i la gestió de domini
-* Nou: Integració del registrar NameSilo
-* Nou: Integració del registrar ResellerClub
-* Nou: Verificació automàtica de l'enviament de domini SES al comprar un domini i mapeig
-* Correcció: Constantes del plugin Guard contra la redefinició en l'entorn de prova
-* Correcció: MySQL flags es divideixen correctament en install-wp-tests.sh
+Versió 1.0.7 - Publicada el 2026-05-06
+* Correcció: ResellerClub test_connection envia el paràmetre tlds requerit (#224)
 
-Versió 1.0.4 - Publicat el 2026-03-14
-* **Correcció:** Alguns assets CSS faltants
-* **Correcció:** Error relatiu a tlds no disponibles
+Versió 1.0.6 - Publicada el 2026-05-05
+* Correcció: El registre de dominis de ResellerClub ara funciona correctament amb una gestió millorada de les respostes de l'API i encaminament del proveïdor impulsat pel registre
+* Correcció: Millores d'UX a la pàgina d'administració Register Domain
+* Eliminat: Integració del registrador CyberPanel
 
-Versió 1.0.3 - Publicat el 2026-03-09
-* **Correcció:** Errors de propietat reactiva de Vue (domain_option, selected_domain, domain_provider) quan es fa servir la plantilla de sign-up antiga amb el shortcode de pagament
-* **Correcció:** Desalineació del camp d'entrada de subdomain i text excessiu a la selecció de domini del pagament
-* **Correcció:** Es barra el bloc de previsualització "Your URL will be" quan el camp de selecció de domini és present
+Versió 1.0.5 - Publicada el 2026-04-02
+* Nou: Integració del registrador GoDaddy per al registre i la gestió de dominis
+* Nou: Integració del registrador NameSilo
+* Nou: Integració del registrador ResellerClub
+* Nou: Verificació automàtica del domini d'enviament de SES en comprar i mapar un domini
+* Correcció: Protecció de les constants del plugin contra redefinicions en l'entorn de proves
+* Correcció: Les marques de MySQL es divideixen correctament en paraules a install-wp-tests.sh
 
-Versió 1.0.2 - Publicat el 2026-03-01
-* **Millorat:** Eliminades les configuracions de marcatge global de la pàgina de configuració; ara el preu és exclusivament per producte
-* **Millorat:** Afegat el enllaç "Manage Domain Products" a la pàgina de configuració per a una navegació ràpida
-* **Millorat:** Descripcions de camps i *tooltips* més clars per a les configuracions de producte de domini (catch-all vs TLD-specific, tipus de marcatge, preu introdutori)
-* **Millorat:** Millores descripcions en tota la pàgina de configuració (cercar TLDs, renovacions, DNS, notificacions)
+Versió 1.0.4 - Publicada el 2026-03-14
+* **Correcció:** Alguns recursos css que faltaven
+* **Correcció:** Error relacionat amb tlds no disponibles
 
-Versió 1.0.1 - Publicat el 2026-02-27
+Versió 1.0.3 - Publicada el 2026-03-09
+* **Correcció:** Errors de propietats reactives de Vue (domain_option, selected_domain, domain_provider) en utilitzar la plantilla de registre heretada amb el shortcode de checkout
+* **Correcció:** Desalineació del camp d'entrada de subdomini i text massa gran al camp de checkout de selecció de domini
+* **Correcció:** Amaga el bloc de previsualització "El vostre URL serà" quan el camp de selecció de domini és present
 
-* **Nou:** Eina d'importació de TLD per a la gestió de preus en massa
-* **Nou:** Suport per a preus introdutòris per a productes de domini
-* **Nou:** Suite de tests E2E amb Cypress
-* **Nou:** Plantilles de correu electrònic per a notificacions del cicle de vida del domini
-* **Nou:** Camps d'adreça del registrant a la modal d'administració de domini, pre-rellenchs des de la configuració
-* **Nou:** Interfície de gestió de DNS per al client amb suport per a afegir, editar i eliminar records
-* **Nou:** Opció de pagament "Bring your own domain" amb mapeig automàtic de domini
-* **Nou:** Generació automàtica de l'URL del site a partir del nom de domini durant el pagament
-* **Nou:** Configuració de nameserver i record DNS per defecte a la configuració
-* **Nou:** Detalls de registració de domini i gestió de DNS a la pàgina de edició del domini del núcli
-* **Nou:** El *setup wizard* crea automàticament un producte de domini per defecte amb valors raonables
-* **Nou:** Sincronització TLD automàtica diària via cron per a tots els proveïdors configurats
-* **Nou:** Protecció de privacitat WHOIS amb configuració per producte (sempre activa, elecció del client o desactivada)
-* **Nou:** Casella de selecció de privacitat WHOIS amb mostratge de preu i suport per a mode fosco
-* **Nou:** Pàgina d'administració de Registre de Domini per a la registració manual de domini
-* **Nou:** Actualitzacions automàtiques de plugins via Ultimate Multisite update server
-* **Nou:** Tabulador de filtre de tipus de producte de domini a la taula de llista de productes amb estil de *badge* púrpura
-* **Nou:** Camps de contacte del registrant (nom, adreça, ciutat, estat, codi postal, país, telèfon) al formulari de pagament de domini
-* **Nou:** Validació de camps del registrant abans de cridar l'API del registrar amb missatges d'error clars
-* **Nou:** Canals de *log* específics del proveïdor per a esdeveniments de registració de domini (p. ex., domain-seller-namecheap.log)
-* **Nou:** Camps de contacte del registrant al formulari principal de pagament/sign-up (mostrat quan es registra un domini)
-* **Millorat:** El camp de pagament "Domain Search" s'ha substituït per un camp de Selecció de Domini unitari que suporta les pestanyes de subdomain, register i domini existent
-* **Millorat:** Les configuracions de producte de domini es renderitzen *inline* a la pàgina d'edició de producte a través del sistema de *widget* del núcli
-* **Millorat:** Les informacions del domini del client es connecten al *widget* de mapeig de domini del núcli en lloc d'una *metabox* independent
-* **Millorat:** El *wizard* d'importació de TLD s'ha simplificat a una sincronització de un clic des de tots els proveïdors
-* **Millorat:** La disponibilitat de domini de Namecheap utilitza una crida API per a partitzes per a una cerca més ràpida
-* **Millorat:** L'API de cotització de Namecheap utilitza paràmetres i analització de resposta correctes
-* **Millorat:** Emmagatzematge centralitzada de TLD en una única opció de xarxa
-* **Millorat:** Registre d'activitat de domini per a canvis de DNS, transferències i aplicació de configuració
-* **Millorat:** Sincronització completa de TLD per a OpenSRS utilitzant la llista mestra IANA amb validació per partitzes
-* **Millorat:** Sincronització completa de TLD per a Namecheap amb sol·licituds API paginades
-* **Millorat:** Les classes de proveïdor legaderes han estat substituïdes pel patró Integration Registry
-* **Millorat:** Panell de configuració amb configuració de DNS i transferències
-* **Millorat:** Els números de telèfon es formategen automàticament a +CC.NNN format de registrar
-* **Millorat:** La validació del camp de telèfon elimina els caràcters de formatat abans de la submissió
+Versió 1.0.2 - Publicada el 2026-03-01
+* **Millora:** S'han eliminat els paràmetres globals de marge de la pàgina de configuració — ara els preus són exclusivament per producte
+* **Millora:** S'ha afegit l'enllaç "Gestiona productes de domini" a la pàgina de configuració per a una navegació ràpida
+* **Millora:** Descripcions de camps i indicadors de funció més clars per a la configuració de productes de domini (catch-all vs específic de TLD, tipus de marge, preus introductoris)
+* **Millora:** Millors descripcions a tota la pàgina de configuració (cerca de TLDs, renovacions, DNS, notificacions)
+
+Versió 1.0.1 - Publicada el 2026-02-27
+
+* **Nou:** Eina d’importació de TLD per a la gestió de preus en bloc
+* **Nou:** Suport de preus introductoris per a productes de domini
+* **Nou:** Suite de proves E2E amb Cypress
+* **Nou:** Plantilles d’email per a notificacions del cicle de vida del domini
+* **Nou:** Camps d’adreça del registrant al modal d’administració de registre de domini, preemplenats des de la configuració
+* **Nou:** Interfície de gestió de DNS del client amb suport per afegir, editar i suprimir registres
+* **Nou:** Opció de checkout "Bring your own domain" amb mapatge automàtic de domini
+* **Nou:** Generació automàtica de l’URL del lloc a partir del nom de domini durant el checkout
+* **Nou:** Configuració de nameserver i registre DNS predeterminats a la configuració
+* **Nou:** Detalls de registre de domini i gestió de DNS a la pàgina principal d’edició de domini
+* **Nou:** L’assistent de configuració crea automàticament un producte de domini predeterminat amb valors per defecte raonables
+* **Nou:** Sincronització automàtica diària de TLD via cron en tots els proveïdors configurats
+* **Nou:** Protecció de privadesa WHOIS amb configuració per producte (sempre activada, a elecció del client o desactivada)
+* **Nou:** Casella de selecció de privadesa WHOIS al checkout amb visualització de preus i suport de mode fosc
+* **Nou:** Pàgina d’administració Register Domain per al registre manual de dominis
+* **Nou:** Actualitzacions automàtiques del plugin via el servidor d’actualitzacions d’Ultimate Multisite
+* **Nou:** Pestanya de filtre de tipus de producte de domini a la taula de llista de productes amb estil de distintiu porpra
+* **Nou:** Camps de contacte del registrant (nom, adreça, ciutat, estat, codi postal, país, telèfon) al formulari de checkout de domini
+* **Nou:** Validació dels camps del registrant abans de cridar l’API del registrador amb missatges d’error clars
+* **Nou:** Canals de registre específics del proveïdor per a esdeveniments de registre de domini (p. ex. domain-seller-namecheap.log)
+* **Nou:** Camps de contacte del registrant al formulari principal de registre/signup de checkout (es mostren en registrar un domini)
+* **Millorat:** Substituït el camp de checkout de cerca de domini per un camp unificat de selecció de domini que admet pestanyes de subdomini, registre i domini existent
+* **Millorat:** La configuració de productes de domini es renderitza en línia a la pàgina d’edició de producte mitjançant el sistema de widgets principal
+* **Millorat:** La informació de domini del client s’integra amb el widget principal de mapatge de domini en lloc d’una metabox independent
+* **Millorat:** L’assistent d’importació de TLD s’ha simplificat a una sincronització amb un sol clic des de tots els proveïdors
+* **Millorat:** La disponibilitat de dominis de Namecheap utilitza una crida d’API per lots per a una cerca més ràpida
+* **Millorat:** L’API de preus de Namecheap utilitza els paràmetres i l’anàlisi de resposta correctes
+* **Millorat:** Emmagatzematge centralitzat de TLD en una única opció de xarxa
+* **Millorat:** Registre d’activitat de domini per a canvis de DNS, transferències i aplicació de configuració
+* **Millorat:** Sincronització completa de TLD per a OpenSRS utilitzant la llista mestra d’IANA amb validació per lots
+* **Millorat:** Sincronització completa de TLD per a Namecheap amb sol·licituds d’API paginades
+* **Millorat:** Substituïdes les classes de proveïdor antigues pel patró Integration Registry
+* **Millorat:** Tauler de configuració amb configuració de DNS i transferència
+* **Millorat:** Els números de telèfon es formaten automàticament al format de registrador +CC.NNN
+* **Millorat:** La validació del camp de telèfon elimina els caràcters de format abans de l’enviament
 * **Millorat:** Requisit de versió augmentat a Ultimate Multisite 2.4.12 amb avís més clar
-* **Millorat:** El flux de treball CI utilitza el *checkout* proper per al plugin del núcli i l'addon
-* **Millorat:** prepare_registrant_info() liu de les metadades d'usuari guardades al *checkout* amb fallback a l'adreça de facturació
-* **Correcció:** AJAX de cerca de domini fallant per a usuaris no connectats durant el pagament
-* **Correcció:** AJAX de cotització de domini fallant per a usuaris no connectats durant el pagament
-* **Correcció:** Error fatal de redeclaració de la classe Spyc quan es fan servir comands WP-CLI
-* **Correcció:** Timeout de l'API de sandbox de Namecheap massa curt
-* **Correcció:** Text del botó de cerca de domini no visible sobre fons verd
-* **Correcció:** Registració de domini fallint amb l'error "RegistrantFirstName is Missing" a causa de faltar informació de contacte
-* **Correcció:** Domini registrat amb blog_id=0 quan el site encara no existia al moment del pagament
-* **Correcció:** Configuració de TLDs per defecte retornada com a string en lloc d'un array analitzat
-* **Eliminat:** Pàgina d'administració de Gestió de Domini independent — ara gestionada a través de les pàgines de domini del núcli
+* **Millorat:** El flux de treball de CI utilitza el checkout adequat tant per a l’addon com per al plugin principal
+* **Millorat:** prepare_registrant_info() llegeix des de les metadades d’usuari desades al checkout amb alternativa a l’adreça de facturació
+* **Corregit:** L’AJAX de cerca de domini fallava per a usuaris no connectats durant el checkout
+* **Corregit:** L’AJAX de preus de domini fallava per a usuaris no connectats durant el checkout
+* **Corregit:** Error fatal de redeclaració de la classe Spyc en executar ordres WP-CLI
+* **Corregit:** Temps d’espera de l’API sandbox de Namecheap massa curt
+* **Corregit:** El text del botó Selecciona de la cerca de domini no era visible sobre el fons verd
+* **Corregit:** El registre de domini fallava amb l’error "RegistrantFirstName is Missing" a causa de la manca d’informació de contacte
+* **Corregit:** Registre de domini creat amb blog_id=0 quan el lloc encara no existia en el moment del checkout
+* **Corregit:** La configuració de TLD predeterminats es retornava com a cadena en lloc d’una matriu analitzada
+* **Eliminat:** Pàgina d’administració independent de gestió de dominis — ara es gestiona a través de les pàgines principals de dominis
 
-Versió 1.0.0 - Publicat el 2025-09-28
+Versió 1.0.0 - Publicada el 2025-09-28
 
-**Reescritge major per a Ultimate Multisite v2**
+**Reescriptura important per a Ultimate Multisite v2**
 
-* **Nou:** Reescritge completa amb arquitectura moderna PHP 7.4+
-* **Nou:** Integració fluida amb el sistema de pagament Ultimate Multisite v2
-* **Nou:** Gestió de productes de domini amb opcions de cotització flexibles
+* **Nou:** Reescriptura completa amb arquitectura moderna PHP 7.4+
+* **Nou:** Integració fluida amb el sistema de checkout d’Ultimate Multisite v2
+* **Nou:** Gestió de productes de domini amb opcions de preus flexibles
 * **Nou:** Arquitectura de suport per a múltiples proveïdors de domini
 * **Nou:** Integració de renovació automàtica i subscripció
-* **Nou:** Interfície de gestió de domini del client
-* **Nou:** Monitorització i *logs* de domini d'administració
-* **Nou:** Suport per a cupons per a productes de domini
-* **Nou:** Gestió de configuració completa
-* **Nou:** Base de codi extensible i amigable per als desenvolupadors
-* **Millorat:** Proveïdor OpenSRS actualitzat amb suport de funcions completes
-* **Millorat:** UI moderna consistent amb Ultimate Multisite v2
-* **Correcció:** Tot el codi v1 deprecat actualitzat a estàndards v2
-* **Eliminat:** Compatibilitat v1 legadera (canvi disruptiu)
+* **Nou:** Interfície de gestió de dominis del client
+* **Nou:** Supervisió i registres de dominis per a l’administració
+* **Nou:** Suport de cupons per a productes de domini
+* **Nou:** Gestió integral de la configuració
+* **Nou:** Base de codi extensible i adequada per a desenvolupadors
+* **Millorat:** Proveïdor OpenSRS actualitzat amb suport complet de funcionalitats
+* **Millorat:** UI moderna coherent amb Ultimate Multisite v2
+* **Corregit:** Tot el codi v1 obsolet actualitzat als estàndards v2
+* **Eliminat:** Compatibilitat amb v1 antiga (canvi incompatible)
 
-### Versiós anteriors (v1 Legadera)
+### Versions anteriors (v1 antiga) {#previous-versions-v1-legacy}
 
-### Versió 0.0.3 - 20/08/2019
+### Versió 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Correcció: Incompatibilitat amb Groundhogg CRM
-* Nota: Va ser l'última publicació compatible amb v1
+* Corregit: Incompatibilitat amb Groundhogg CRM
+* Nota: Aquesta va ser l’última versió compatible amb v1
 
-### Versió 0.0.2 - 07/12/2018
+### Versió 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* Correcció: Eliminat el camp de Clau de Llicència
-* Correcció: Les pestanyes de Plan manquen quan el plugin de funcionalitat està actiu
-* Millorat: Afegat un botó de saltar al camp de registració
+* Corregit: Eliminat el camp License Key
+* Corregit: Faltaven les pestanyes de pla quan el plugin de funcionalitat està actiu
+* Millorat: Afegit un botó de saltar al camp de registre
 
-### Versió 0.0.1 - Lliurament inicial
+### Versió 0.0.1 - Llançament inicial {#version-001---initial-release}
 
-* Integració bàsica de OpenSRS per a WP Ultimo v1
-* Cerca i registració de domini simple
-* Permissió de domini basada en plans
+* Integració bàsica d’OpenSRS per a WP Ultimo v1
+* Cerca i registre simples de dominis
+* Permisos de domini basats en pla

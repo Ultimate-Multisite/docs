@@ -3,15 +3,15 @@ title: 鉤子使用指南
 sidebar_position: 1
 _i18n_hash: 6da56fd5e6cd83c2056ce9cb7fbb4453
 ---
-# 鉤子使用指南
+# 鉤子使用指南 {#hooks-usage-guide}
 
 Ultimate Multisite 提供了超過 200 個 action hooks 和超過 280 個 filter hooks。本頁面涵蓋了最常用到的鉤子，並附有實用範例。若需要完整的自動生成參考資料，請瀏覽本區的其他頁面。
 
-## Action Hooks
+## Action Hooks {#action-hooks}
 
-### Customer Lifecycle
+### Customer Lifecycle {#customer-lifecycle}
 
-#### 客戶建立後
+#### 客戶建立後 {#after-customer-creation}
 
 ```php
 /**
@@ -26,7 +26,7 @@ add_action('wu_customer_post_create', function($customer) {
 });
 ```
 
-#### 客戶狀態變更
+#### 客戶狀態變更 {#customer-status-change}
 
 ```php
 /**
@@ -39,9 +39,9 @@ add_action('wu_customer_status_change', function($customer, $old_status, $new_st
 }, 10, 3);
 ```
 
-### Site Hooks
+### Site Hooks {#site-hooks}
 
-#### 網站發布後
+#### 網站發布後 {#after-site-published}
 
 ```php
 /**
@@ -55,7 +55,7 @@ add_action('wu_site_published', function($site, $membership) {
 }, 10, 2);
 ```
 
-#### 應用範本前
+#### 應用範本前 {#before-template-application}
 
 ```php
 /**
@@ -73,9 +73,9 @@ add_action('wu_before_apply_template', function($site_id, $template_id) {
 }, 10, 2);
 ```
 
-### Membership Hooks
+### Membership Hooks {#membership-hooks}
 
-#### 狀態轉換
+#### 狀態轉換 {#status-transitions}
 
 ```php
 add_action('wu_membership_status_to_active', function($membership) {
@@ -91,9 +91,9 @@ add_action('wu_membership_status_to_expired', function($membership) {
 });
 ```
 
-### Payment Hooks
+### Payment Hooks {#payment-hooks}
 
-#### 付款完成/失敗
+#### 付款完成/失敗 {#payment-completed--failed}
 
 ```php
 add_action('wu_payment_completed', function($payment) {
@@ -110,9 +110,9 @@ add_action('wu_payment_failed', function($payment, $error_message) {
 }, 10, 2);
 ```
 
-### Checkout Hooks
+### Checkout Hooks {#checkout-hooks}
 
-#### 處理前/完成後
+#### 處理前/完成後 {#before-processing--after-completion}
 
 ```php
 /**
@@ -132,7 +132,7 @@ add_action('wu_checkout_completed', function($payment, $customer, $membership) {
 }, 10, 3);
 ```
 
-### Domain Hooks
+### Domain Hooks {#domain-hooks}
 
 ```php
 add_action('wu_domain_mapped', function($domain) {
@@ -144,11 +144,11 @@ add_action('wu_domain_ssl_verified', function($domain) {
 });
 ```
 
-## Filter Hooks
+## Filter Hooks {#filter-hooks}
 
-### Pricing Filters
+### Pricing Filters {#pricing-filters}
 
-#### 購物車總額
+#### 購物車總額 {#cart-total}
 
 ```php
 add_filter('wu_cart_total', function($total, $cart) {
@@ -162,7 +162,7 @@ add_filter('wu_cart_total', function($total, $cart) {
 }, 10, 2);
 ```
 
-#### 稅率
+#### 稅率 {#tax-rates}
 
 ```php
 add_filter('wu_tax_rate', function($rate, $country, $state) {
@@ -174,7 +174,7 @@ add_filter('wu_tax_rate', function($rate, $country, $state) {
 }, 10, 3);
 ```
 
-### Template Filters
+### Template Filters {#template-filters}
 
 ```php
 add_filter('wu_available_templates', function($templates, $customer) {
@@ -190,7 +190,7 @@ add_filter('wu_available_templates', function($templates, $customer) {
 }, 10, 2);
 ```
 
-### Limitation Filters
+### Limitation Filters {#limitation-filters}
 
 ```php
 add_filter('wu_limitation_feature_allowed', function($allowed, $site_id, $membership) {
@@ -210,7 +210,7 @@ add_filter('wu_disk_space_limit', function($limit, $site_id, $membership) {
 }, 10, 3);
 ```
 
-### Gateway Filters
+### Gateway Filters {#gateway-filters}
 
 ```php
 add_filter('wu_available_gateways', function($gateways, $cart) {
@@ -222,7 +222,7 @@ add_filter('wu_available_gateways', function($gateways, $cart) {
 }, 10, 2);
 ```
 
-### Checkout Form Fields
+### Checkout Form Fields {#checkout-form-fields}
 
 ```php
 add_filter('wu_checkout_form_final_fields', function($fields, $form) {
@@ -237,7 +237,7 @@ add_filter('wu_checkout_form_final_fields', function($fields, $form) {
 }, 10, 2);
 ```
 
-### Email Content
+### Email Content {#email-content}
 
 ```php
 add_filter('wu_email_content', function($content, $type, $customer) {

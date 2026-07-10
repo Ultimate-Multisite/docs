@@ -3,7 +3,7 @@ title: ' ადმინისტრაციული გვერდის შ
 sidebar_position: 5
 _i18n_hash: a1ed79aa238c1772c1750ed55d505f47
 ---
-# მართვის გვერდის შექმნა
+# მართვის გვერდის შექმნა {#admin-page-creator}
 
 ეს ფუნქცია მოგვითხობთ **Admin Page Creator** ადონსის მეშვეობით.
 

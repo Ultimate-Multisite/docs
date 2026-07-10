@@ -3,7 +3,7 @@ title: Ez jakinako inkompatibilitateak
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Ezpotikak ondoriozko beste Plugin-ek direne
+# Ezpotikak ondoriozko beste Plugin-ek direne {#known-incompatibilities-with-other-plugins}
 
 Ultimate Multisite instalatu eta aktibatu egin ondoren, beste plugin-ekin ez dagoen ondoezpenak gertatzen dira.
 

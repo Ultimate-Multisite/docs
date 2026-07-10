@@ -3,13 +3,13 @@ title: עזרה בפיתוח מותאם אישית
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# איך לקבל עזרה בפיתוח מותאם אישית מ-Codeable?
+# איך לקבל עזרה בפיתוח מותאם אישית מ-Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 לפעמים, אנחנו באמת צריכים התאמה אישית מעולה כדי שתהליכי הרשת שלנו יעבדו בדיוק כמו שאנחנו רוצים. אם זה מה שאתם מחפשים, אנחנו ממליצים על [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), מקום שבו תוכלו למצוא מפתחים מנוסים עם מומחיות ב-Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) היא פלטפורמה שמחברת לקוחות עם מפתחי WordPress פרילנסרים מוסמכים, שיכולים לעבוד על פרויקטים בכל גודל. יש להם תהליך מיון קפדני כדי להבטיח שתחוברו למומחים שמתאימים במיוחד למשימה שיש לכם בראש.
 
-### איך יוצרים פרויקט ב-Codeable?
+### איך יוצרים פרויקט ב-Codeable? {#how-to-create-a-project-in-codeable}
 
 ראשית, היכנסו ל-[Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) ולחצו על הכפתור **Start a Project**.
 

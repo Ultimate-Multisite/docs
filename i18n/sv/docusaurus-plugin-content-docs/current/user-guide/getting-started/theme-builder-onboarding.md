@@ -3,11 +3,11 @@ title: Temabuildarens onboarding-flöde
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 introducerar ett guidade **Theme Builder onboarding flow** som hjälper dig att skapa ett anpassat blocktema under din initiala uppsättning. Detta ersätter det äldre Site Builder-läget med ett mer flexibelt, agentassisterat tillvägagångssätt.
 
-## Vad är Theme Builder Onboarding Flow?
+## Vad är Theme Builder Onboarding Flow? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow är en interaktiv uppsättningswizard som:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow är en interaktiv uppsättningswizard som:
 
 Flödet drivs av **Setup Assistant agent**, som ställer förtydligande frågor och bygger ditt tema stegvis.
 
-## Starta Theme Builder Onboarding
+## Starta Theme Builder Onboarding {#starting-the-theme-builder-onboarding}
 
-### Första gångens uppsättning
+### Första gångens uppsättning {#first-run-setup}
 
 När du först startar Superdav AI Agent på en ny WordPress-installation ser du:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Välj **"Build a custom theme"** för att komma in i Theme Builder onboarding flow.
 
-### Manuell aktivering
+### Manuell aktivering {#manual-activation}
 
 Du kan också starta Theme Builder onboarding när som helst genom att begära:
 
@@ -49,9 +49,9 @@ eller
 "Help me create a custom theme"
 ```
 
-## Onboarding-stegen
+## Onboarding-stegen {#the-onboarding-steps}
 
-### Steg 1: Val av läge (Mode Selection)
+### Steg 1: Val av läge (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent frågar om dina preferenser:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 **Guided mode** rekommenderas för de flesta användare; agenten gör designrekommendationer baserat på din bransch och dina mål.
 
-### Steg 2: Webbplatsbeskrivning (Site Specification)
+### Steg 2: Webbplatsbeskrivning (Site Specification) {#step-2-site-specification}
 
 Du kommer att få svara på frågor om din webbplats:
 
@@ -74,7 +74,7 @@ Du kommer att få svara på frågor om din webbplats:
 
 Denna information sparas i ditt **site_brief** minne, som agenterna refererar till i framtida sessioner.
 
-### Steg 3: Designsystembeslut (Design System Decisions)
+### Steg 3: Designsystembeslut (Design System Decisions) {#step-3-design-system-decisions}
 
 Agenten guidar dig genom urval av design tokens:
 
@@ -83,7 +83,7 @@ Agenten guidar dig genom urval av design tokens:
 - **Spacing**: Kompakta, normala eller rymliga layouter
 - **Motion**: Animationer och övergångar (om önskat)
 
-### Steg 4: Temagenerering (Theme Generation)
+### Steg 4: Temagenerering (Theme Generation) {#step-4-theme-generation}
 
 Setup Assistant agent skapar ditt anpassade blocktema med:
 
@@ -92,7 +92,7 @@ Setup Assistant agent skapar ditt anpassade blocktema med:
 - Anpassade blockstilar som matchar ditt designsystem
 - Tema-metadata och WordPress-supportdeklarationer
 
-### Steg 5: Aktivering och verifiering (Activation and Verification)
+### Steg 5: Aktivering och verifiering (Activation and Verification) {#step-5-activation-and-verification}
 
 Temat aktiveras automatiskt, och du ser:
 
@@ -107,7 +107,7 @@ Temat aktiveras automatiskt, och du ser:
 
 Du kan sedan besöka din webbplats för att verifiera att temat visas korrekt.
 
-## Site Specification och site_brief Minne
+## Site Specification och site_brief Minne {#site-specification-and-sitebrief-memory}
 
 Under onboarding fångar agenten din webbplats specifikation i en **site_brief** minneskategori. Detta inkluderar:
 
@@ -117,7 +117,7 @@ Under onboarding fångar agenten din webbplats specifikation i en **site_brief**
 - Designpreferenser
 - Innehållsstruktur
 
-### Varför site_brief spelar roll
+### Varför site_brief spelar roll {#why-sitebrief-matters}
 
 I framtida sessioner refererar agenterna till ditt site_brief för att:
 
@@ -126,7 +126,7 @@ I framtida sessioner refererar agenterna till ditt site_brief för att:
 - Ge kontextmedvetna rekommendationer
 - Undvika att upprepa uppsättningsfrågor
 
-### Visa ditt site_brief
+### Visa ditt site_brief {#viewing-your-sitebrief}
 
 Du kan fråga agenten:
 
@@ -142,11 +142,11 @@ eller
 
 Agenten kommer att visa din sparade webbplatsbeskrivning.
 
-## Anpassning efter onboarding
+## Anpassning efter onboarding {#customizing-after-onboarding}
 
 När Theme Builder onboarding är slutfört kan du:
 
-### Använda Design System Aesthetics Skill
+### Använda Design System Aesthetics Skill {#use-the-design-system-aesthetics-skill}
 
 Begär designförfiningar:
 
@@ -162,7 +162,7 @@ eller
 
 **Design System Aesthetics skill** guidar dig genom riktade designuppdateringar.
 
-### Redigera theme.json direkt
+### Redigera theme.json direkt {#edit-themejson-directly}
 
 För avancerade användare, redigera `/wp-content/themes/[theme-name]/theme.json` för att justera:
 
@@ -171,7 +171,7 @@ För avancerade användare, redigera `/wp-content/themes/[theme-name]/theme.json
 - Spacing values
 - Border and shadow definitions
 
-### Skapa anpassade blockmallar
+### Skapa anpassade blockmallar {#create-custom-block-templates}
 
 Använd WordPress blockredigeraren för att skapa anpassade mallar för:
 
@@ -180,7 +180,7 @@ Använd WordPress blockredigeraren för att skapa anpassade mallar för:
 - Produktsidor
 - Kontaktformulär
 
-## Jämförelse: Gammalt vs. Nytt Onboarding
+## Jämförelse: Gammalt vs. Nytt Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Använd WordPress blockredigeraren för att skapa anpassade mallar för:
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
 **Onboarding-flödet slutfördes inte**
 - Starta om flödet: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Använd WordPress blockredigeraren för att skapa anpassade mallar för:
 - Be agenten att "regenerate the theme with [specific changes]"
 - Redigera theme.json direkt för exakt kontroll
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Efter att du har slutfört Theme Builder onboarding:
 

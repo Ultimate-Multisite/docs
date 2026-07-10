@@ -1,58 +1,58 @@
 ---
 title: Tema PRO
 sidebar_position: 12
-_i18n_hash: 507d2050365bae06955e8492c3e645f7
+_i18n_hash: b85a9eff636c1e8d2b966e16fe9f0a58
 ---
-# Personalizando tu Panel de Administración con PRO Theme
+# Personalizar tu panel de administración con PRO Theme {#customizing-your-admin-panel-with-pro-theme}
 
-A menudo, al realizar trabajos para clientes, necesitamos ofrecerles una experiencia personalizada en el panel de administración de WordPress. Si buscas un aspecto y sensación más profesional, PRO Theme puede ayudarte.
+A menudo, al trabajar para clientes, surge la necesidad de ofrecerles una experiencia personalizada en el panel de administración de WordPress. Si buscas una apariencia más profesional, PRO Theme puede ayudarte.
 
-PRO Theme es un tema de administración desarrollado para ayudarte al personalizar el Panel de tus clientes. Además, forma parte del núcleo de plugins premium de Ultimate Multisite.
+PRO Theme es un tema de administración desarrollado para ayudarte a personalizar el Dashboard de tus clientes. Y también forma parte del núcleo de plugins premium de Ultimate Multisite.
 
-Después de instalarlo, ve a tu página de _Plugins_ y haz clic para activarlo en tu Red.
+Después de instalarlo, ve a tu página de _Plugins_ y haz clic para activarlo en tu Network.
 
-<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for PRO Theme -->
+<!-- Captura de pantalla no disponible: página de WP Plugins que muestra el botón Network Activate para PRO Theme -->
 
-_Actívalo a nivel de red en tu página de Plugins_
+_Actívalo en toda la red desde tu página de Plugins_
 
-_**NOTA:**_ _Si lo instalas solo, aparecerá en el panel de tu cliente como una opción que se puede marcar para agregar el tema solo a ese usuario._
+_**NOTA:**_ _Si solo lo instalas, aparecerá como una opción en la de tu cliente que se puede marcar para añadir el tema solo a ese usuario._
 
-¡Ahora tienes tu interfaz de administración completamente rediseñada! También tienes un nuevo menú en la columna izquierda llamado PRO Theme.
+Ahora, ¡tienes tu interfaz de administración completamente rediseñada! También tienes un nuevo menú en la columna izquierda llamado PRO Theme.
 
-<!-- Screenshot unavailable: PRO Theme redesigned admin panel interface -->
+<!-- Captura de pantalla no disponible: interfaz del panel de administración rediseñada de PRO Theme -->
 
-_Un aspecto totalmente nuevo para tu Panel de Administración_
+_Un aspecto completamente nuevo para tu panel de administración_
 
 En este menú tendrás acceso a cinco pestañas:
 
-<!-- Screenshot unavailable: PRO Theme Styling Settings tab -->
+<!-- Captura de pantalla no disponible: pestaña Styling Settings de PRO Theme -->
 
-_Configuración de Estilo_
+_Ajustes de estilo_
 
-<!-- Screenshot unavailable: PRO Theme Functionality tab -->
+<!-- Captura de pantalla no disponible: pestaña Functionality de PRO Theme -->
 
 _Funcionalidad_
 
-<!-- Screenshot unavailable: PRO Theme Custom CSS tab -->
+<!-- Captura de pantalla no disponible: pestaña Custom CSS de PRO Theme -->
 
-_CSS Personalizado_
+_CSS personalizado_
 
-<!-- Screenshot unavailable: PRO Theme Import/Export tab -->
+<!-- Captura de pantalla no disponible: pestaña Import/Export de PRO Theme -->
 
 _Importar/Exportar_
 
-<!-- Screenshot unavailable: PRO Theme Activate tab -->
+<!-- Captura de pantalla no disponible: pestaña Activate de PRO Theme -->
 
 _Activar PRO Theme_
 
-En cada una de ellas, puedes habilitar y deshabilitar elementos de estilo, permitir o bloquear funcionalidades, y ofrecer a tus clientes la personalización que puedan estar buscando en tu red de sitios.
+En cada una de ellas, puedes activar y desactivar elementos de estilo, permitir o bloquear funcionalidades y ofrecer a tus clientes la personalización que podrían estar buscando en tu red de sitios.
 
 Aquí tienes un ejemplo de lo que puedes obtener después de algunos ajustes:
 
-<!-- Screenshot unavailable: Client dashboard with PRO Theme customizations applied -->
+<!-- Captura de pantalla no disponible: Dashboard del cliente con las personalizaciones de PRO Theme aplicadas -->
 
-_El Panel de tu cliente_
+_El Dashboard de tu cliente_
 
-<!-- Screenshot unavailable: Customized login page with PRO Theme -->
+<!-- Captura de pantalla no disponible: página de inicio de sesión personalizada con PRO Theme -->
 
 _Una página de inicio de sesión personalizada_

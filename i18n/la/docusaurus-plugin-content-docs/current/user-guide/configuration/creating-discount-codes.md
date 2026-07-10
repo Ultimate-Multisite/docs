@@ -3,13 +3,13 @@ title: Creare codices adhibendi
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Creare Códigos de Descuento (v2)
+# Creare Códigos de Descuento (v2) {#creating-discount-codes-v2}
 
 _**NOTA IMPORTANTE: Este artículo se refiere a Ultimate Multisite versión 2.x.**_
 
 Con Ultimate Multisite puedes crear códigos de descuento para ofrecer descuentos a tus clientes en sus suscripciones. ¡Y crearlos es muy fácil!
 
-## Creación y Edición de Códigos de Descuento
+## Creación y Edición de Códigos de Descuento {#creating-and-editing-discount-codes}
 
 Para crear o editar un código de descuento, ve a **Ultimate Multisite > Discount Codes**.
 
@@ -87,7 +87,7 @@ Le coupon est maintenant dans votre liste et, à partir de là, vous pouvez cliq
 
 ###
 
-### Utilisation des paramètres d'URL :
+### Utilisation des paramètres d'URL : {#using-url-parameters}
 
 Si vous souhaitez personnaliser vos tableaux de prix ou créer une belle page de code de réduction pour votre site web et appliquer automatiquement un code de réduction à votre formulaire de paiement, vous pouvez le faire via les paramètres d'URL.
 

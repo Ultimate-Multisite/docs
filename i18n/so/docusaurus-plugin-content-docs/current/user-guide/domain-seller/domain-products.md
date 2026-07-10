@@ -3,11 +3,11 @@ title: Waxyaabaha Domainka iyo Qiimaha
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Alaabaha iyo Qiimaha Domain-ka
+# Alaabaha iyo Qiimaha Domain-ka {#domain-products-and-pricing}
 
 Alaabaha domain-ka waa sida aad maamushay qiimaha, TLD-yada (domain extensions), faahfaahinta WHOIS privacy, iyo doorashada bixiyeyaasha. Qayb kasta oo alaab domain ah waa alaab caadi ah oo Ultimate Multisite ah oo leh tab dheeri oo la yiraahdo **Domain Settings**.
 
-## Abuurista alaab domain (domain product)
+## Abuurista alaab domain (domain product) {#creating-a-domain-product}
 
 1. Tag **Network Admin › Ultimate Multisite › Products**
 2. Click **Add New** (Ku dar cusub)
@@ -17,13 +17,13 @@ Alaabaha domain-ka waa sida aad maamushay qiimaha, TLD-yada (domain extensions),
 
 Alaabaha domain-ka waxay soo muuqda si ay ula socda badbaado madow oo la yiraahdo **Domain** (Domain) liiska alaabta, waxaana lagu filteri karaa iyadoo la isticmaalayo tabka **Domain Products**.
 
-## Tabka Domain Settings
+## Tabka Domain Settings {#domain-settings-tab}
 
-### Bixiyaha (Provider)
+### Bixiyaha (Provider) {#provider}
 
 Dooro meesha ay bixiyaha (registrar) ka qaadan doonaa diiwaangelinta alaabtan. Waxay ku tahay bixiyaha guud ee la dejiyay **Default provider** (Bixiyaha caadiga ah) ee dejinta Domain Seller.
 
-### TLD-yada La taageerada (Supported TLDs)
+### TLD-yada La taageerada (Supported TLDs) {#supported-tlds}
 
 Si aad samayso **product oo guud ah (catch-all product)** oo kuugu habboon dhammaan TLD-yada aan la aqoonin wax kale, u dhig meel mugdi ah.
 
@@ -31,7 +31,7 @@ Waxaad galaysaa liis laga kala saaro comma (tusaale: `.com, .net, .org`) si aad 
 
 **Sida ay u shaqeyso isku-dhafka (Product Matching):** Marka macmiil uu raadinayo domain, addon-ka wuxuu dooranayaa product-ka ugu saxdaa ee la midka ah. Product-ka leh `.com` ku jira liiska TLD-ga ayaa ka horreeya product-ka guud ee catch-all. Haddii aan jirin product gaar ah oo la mid ah TLD-ga, waxaa loo isticmaali doonaa catch-all-ka. Haddii aan jirin wax product ah oo la mid ah, raadinta domain-ka ma muujin doono.
 
-### Nooca Markup (Markup type)
+### Nooca Markup (Markup type) {#markup-type}
 
 Waxaa saddex hab ay u maamulaan sida qiimaha ganacsigaaga (retail price) loo xisaabiyo kharashka lacagta aad ka soo qaaday (wholesale cost):
 
@@ -41,11 +41,11 @@ Waxaa saddex hab ay u maamulaan sida qiimaha ganacsigaaga (retail price) loo xis
 | **Fixed markup** | Waxay ku daraysaa lacag cayiman. Haddii aad ku dari lahayd $5 markup oo lagu bixiyo domain qiimihiisa $10, waxay noqonaysaa $15. |
 | **Fixed price** | Waxay si buuxda uga eegataa qiimaha weeralfadda (wholesale cost). Mar kasta oo ay ku soo geliso lacagta aad qorsheysid. |
 
-### Qiimeynta hore (Introductory pricing)
+### Qiimeynta hore (Introductory pricing) {#introductory-pricing}
 
 Waxaad u oggolaanaysaa inaad bixisid qiimo la yar oo lagu bixiyo sanadka koowaad. Waxaad dejisan kartaa **Qiimaha hore (Introductory price)** (qiimaha sanadka 1-aad) oo la mid ah **Qiimaha cusboonaysiinta (Renewal price)** ee caadiga ah (sanadka 2-aad iyo kuwa ka dambeeya). Macaamihii waxay arkaan labada qiimaha marka ay ku wareegayaan si ay ogaadaan waxa ay u filan yihiin markii la cusboonaysiinayo.
 
-### Aaminaadda WHOIS (WHOIS privacy)
+### Aaminaadda WHOIS (WHOIS privacy) {#whois-privacy}
 
 Waxay xaqiijisaa in haddii domain-ka lagu diiwaangeliyo arrimaha ku jira badeecada (product), ma lahayn ilaalin (protection) oo WHOIS privacy ah.
 
@@ -59,7 +59,7 @@ For Namecheap, WHOIS privacy waxay isticmaashaa WhoisGuard (si toos ah uma bixiy
 
 ---
 
-## TLD import and sync
+## TLD import and sync {#tld-import-and-sync}
 
 Waxyaabaha domain-ka ah ayaa muujinaya qiimaha wholesale-ka dhabta ah oo la soo qaaday bixiyaha la xiriiray. Si tani ay u shaqayso, waa in TLD-yada (domain-ka) la soo diri doonaa.
 
@@ -70,7 +70,7 @@ Marka la sameeyo sync, tag qaybta Domain Settings ee lambarka domain-ka aad rabt
 
 ---
 
-## Auto-renewal (Dib u soo celinta tooska ah)
+## Auto-renewal (Dib u soo celinta tooska ah) {#auto-renewal}
 
 Dib u soo celinta domain-ka waxay ku xiran tahay xaaladda aabeya:
 
@@ -90,7 +90,7 @@ ID-yada template-ka emailka ee dhacdooyinka nolosha domain-ka:
 
 ---
 
-## Admin: Diyaarinta domain-ka gacanta lagu sameeyo (Manual domain registration)
+## Admin: Diyaarinta domain-ka gacanta lagu sameeyo (Manual domain registration) {#admin-manual-domain-registration}
 
 Si aad u diiirto domain oo ay macmiilku ku samaynayo iyada oo aanay mar la gaarin checkout:
 

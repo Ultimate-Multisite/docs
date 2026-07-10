@@ -4,21 +4,21 @@ title: الإجراء - update_network
 sidebar_label: update_network
 _i18n_hash: 30d641aa926dccf203a03423adfef217
 ---
-# Action: update_network
+# Action: update_network {#action-updatenetwork}
 
 يتم إطلاقه بعد تحديث شبكة موجودة.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
 | $network_id | `int` | معرّف الشبكة المضافة. |
 | $args | `array` | مصفوفة ذات أزواج مفتاح-قيمة لوسائط الشبكة. |
 
-### Since
+### Since {#since}
 
 - 1.3.0
 
-### Source
+### Source {#source}
 
 تم تعريفه في [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L1422) في السطر 1422

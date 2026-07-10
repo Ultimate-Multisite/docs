@@ -3,18 +3,18 @@ title: Còmhlaidheachd Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Cloudways Integration
+# Cloudways Integration {#cloudways-integration}
 
-## Aims (Overview)
+## Aims (Overview) {#overview}
 Cloudways is a platform where ye can deploy yer WordPress sites on different cloud providers like DigitalOcean, AWS, Google Cloud, and more. This integration lets you sync yer domain automatically and manage SSL certificates between Ultimate Multisite and Cloudways.
 
-## Features
+## Features {#features}
 - Syncing domain an-d automatic
 - Manage SSL certificates
 - Support for extra domains
 - DNS validation for SSL certificates
 
-## Requirements
+## Requirements {#requirements}
 Feuck following constants sin yer `wp-config.php` file:
 
 ```php
@@ -30,16 +30,16 @@ Optional, ye can also define:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 ```
 
-## Setup Instructions
+## Setup Instructions {#setup-instructions}
 
-### 1. Ghràdh Eairte API Credentials Cloudways-a
+### 1. Ghràdh Eairte API Credentials Cloudways-a {#1-get-your-cloudways-api-credentials}
 
 1. Log in tae yer dashboard Cloudways
 2. Go tae "Account" > "API Keys"
 3. Genere an API key thu seann thu e na h-eann thu ma
 4. Cop yer email an API key
 
-### 2. Ghràdh Eairte Server an Application IDs
+### 2. Ghràdh Eairte Server an Application IDs {#2-get-your-server-and-application-ids}
 
 1. In yer dashboard Cloudways, go tae "Servers"
 2. Select the server where yer WordPress multisite is hosted
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'comma,separated,list,of,domains');
 4. Go tae "Applications" an select yer application WordPress-a
 5. An ID App is visible in URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Add Constants tae wp-config.php
+### 3. Add Constants tae wp-config.php {#3-add-constants-to-wp-configphp}
 
 Add the following constants tae yer file `wp-config.php`:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 Donad add `*.your-network.com` (amar thaobhailtean a tha thuair eòlas) do `WU_CLOUDWAYS_EXTRA_DOMAINS`. Sealladh [Important — wildcard SSL pitfall](#important--wildcard-ssl-pitfall) a tha thuair a thig air an seo airson a bhith a' tighinn a' chluainn SSL per-tenant.
 :::
 
-### 4. Enable the Integration (Tha sealladh a' tighinn a' chluainn)
+### 4. Enable the Integration (Tha sealladh a' tighinn a' chluainn) {#4-enable-the-integration}
 
 1. Iar a tha thuair WordPress admin, adh a' chluainn Ultimate Multisite > Settings (Tha sealladh a' tighinn a' chluainn).
 2. Adh a' chluainn "Domain Mapping" (Sealladh an t-uisge an t-seallta).
@@ -76,9 +76,9 @@ Donad add `*.your-network.com` (amar thaobhailtean a tha thuair eòlas) do `WU_C
 4. Adh a' chluainn sealladh Cloudways.
 5. Adh a' chluainn "Save Changes" (Sealladh am atharrachadh).
 
-## How It Works (Chan eil e cheannach)
+## How It Works (Chan eil e cheannach) {#how-it-works}
 
-### Domain Syncing (Taisg an t-uisge an t-seallta)
+### Domain Syncing (Taisg an t-uisge an t-seallta) {#domain-syncing}
 
 Nuair a tha sealladh a' tighinn air Ultimate Multisite:
 
@@ -89,7 +89,7 @@ Nuair a tha sealladh a' tighinn air Ultimate Multisite:
 
 Note: Tha API Cloudways a’ gineadh a’ chluainn a’ chluainn a’ chluainn liosta sealladhaidh a tha thuair a thig gu latha, cha bhith e dìreach a' tighinn air a thaddadh mar a tha a' tighinn a' tighinn a' tighinn.
 
-### SSL Certificate Management (Bheadaidhean sealladh SSL)
+### SSL Certificate Management (Bheadaidhean sealladh SSL) {#ssl-certificate-management}
 
 An uair a tha sealladhaidh a’ chluainn:
 
@@ -99,7 +99,7 @@ An uair a tha sealladhaidh a’ chluainn:
 
 Tha sinneachadh tha a' chluas gu sònraich **standard** (non-wildcard) Let's Encrypt de Cloudways. Mar sin, má tha pattern wildcard yn cael fusnachadh mar `WU_CLOUDWAYS_EXTRA_DOMAINS`, faicinn an `*.` a' chluas a' chluas gu sònraich – níl a' chluas a' chluas gu sònraich a' chluas a' chluas. Tha e cridhe a' chluas gu sònraich a' chluas a' chluas a' chluas. Gu bhith a' chluas a' chluas gu sònraich ar Cloudways, rinn a tha thu a' chluas a' chluas gu sònraich gu fhaighinn gu mheasach, ach a' chluas a' chluas gu sònraich a' chluas a' chluas a' chluas a' chluas.
 
-## Domàin Eadar-dhearg
+## Domàin Eadar-dhearg {#extra-domains}
 
 Leidich `WU_CLOUDWAYS_EXTRA_DOMAINS` a' thu a' chluas a' chluas gu sònraich domàin eadar-dhearg a tha thu a' chluas a' chluas gu sònraich a' chluas. Rinn a tha e a' chluas gu:
 
@@ -108,7 +108,7 @@ Leidich `WU_CLOUDWAYS_EXTRA_DOMAINS` a' thu a' chluas a' chluas gu sònraich dom
 
 **Nì thu a' chluas a' chluas gu sònraich a' chluas a' chluas gu sònraich airson do thànaiche neach-beul (e.g., `*.your-network.com`).** Faicinn an pitfall SSL wildcard a' chluas a' chluas gu fhaighinn a' chluas a' chluas.
 
-## Sinneachadh Crucial — Pitfall SSL Wildcard
+## Sinneachadh Crucial — Pitfall SSL Wildcard {#important--wildcard-ssl-pitfall}
 
 Tha e sgaidh a tha a' chluas a' chluas gu sònraich gu sònraich a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a' chluas a'
 
@@ -120,19 +120,19 @@ Tha e a' chlàradh a' chlàradh mar a tha do domain custom de uile a' chlàradh,
 
 Tha do domain custom de uile a' chlàradh a' chlàradh a' chlàradh, chaidh e a' chlàradh air a' chlàradh gu fhaighinn an am beòr (integration) a le Let's Encrypt.
 
-## Tòiseachadh
-### Crisbeadh a' chluich API Connection Issues
+## Tòiseachadh {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
+### Crisbeadh a' chluich API Connection Issues {#troubleshooting}
 - Bheir de dhinn gu faic a tha do e-mail agus API key gu sònraichte.
 - Bheir de dhinn gu faic a tha do server ID agus application ID gu sònraichte.
 - Bheir de dhinn gu faic a tha do account Cloudways le amhdan sinneachaidh (permissions) a tha thuinn.
 
-### Problemanan Sertificat SSL
+### Problemanan Sertificat SSL {#api-connection-issues}
 - A Cloudways a'n deil gu robh tha domain sin gairmhan DNS a' chruinneachadh gu eadar-fhaighinn da teannach a' chùrsa.
 - Tha an t-eàinig a' chruinneachadh na teannach DNS gu bheil iad gu robh a' chruinneachadh sertificat SSL.
 - Má tha sertificat SSL a' nàidh a' chruinneachadh, leugh gu robh thu a' chruinneachadh domain sin gu fìor air an chùrsa a' chùrsa.
 - **Domainan casgach (per-tenant) a'n tòrraidh agus tha a' nàidh a' chruinneachadh SSL?** Leugh an tab Sertificat SSL a'n application Cloudways. Má tha sertificat wildcard (a' chruinneachadh gu fìor, no a' chruinneachadh `*.your-network.com`) a'n seachdainn, níl a' nàidh a' chruinneachadh sertificat Let's Encrypt airson domainan casgach a' chruinneachadh gu fìor. Rann an t-eàinig ùr le sertificat Let's Encrypt a' chruinneachadh gu fìor a' chruinneachadh gu fìor air an domain sin (`your-network.com`, `www.your-network.com`) agus sgeul an t-eàinig as eirich seachdaichean wildcard a' chruinneachadh gu fìor. A tha thu a' nàidh a' chruinneachadh mapping domain (no a' chruinneachadh airson an tòrraidh eile) no a' nàidh a' chàidheachadh air a' chùrsa, agus beidh an t-eàinig a' chruinneachadh sertificat per-domain.
 
-### Domain Cha Rhinn
+### Domain Cha Rhinn {#ssl-certificate-issues}
 - Leugh na loga Ultimate Multisite airson aon chluas a' chruinneachadh.
 - Bheir de dhinn gu robh domain sin a' nàidh a' chruinneachadh air Cloudways.
 - Bheir de dhinn gu robh an plan Cloudways a' tòrraidh na nàidhean domainan a tha thu a' chruinneachadh.

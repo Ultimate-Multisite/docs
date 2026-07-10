@@ -3,11 +3,11 @@ title: Umělobyté do témy
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Funkce závislé na tématu
+# Funkce závislé na tématu {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 obsahuje čtyři nové funkce závislé na tématu, které se automaticky přizpůsobí vašemu aktivnímu tématu WordPress. Tyto funkce poskytují specializované pokyny a možnosti, které jsou navrženy s ohledem na architekturu a funkce vašeho tématu.
 
-## Co jsou funkce závislé na tématu?
+## Co jsou funkce závislé na tématu? {#what-are-theme-aware-skills}
 
 Funkce závislé na tématu jsou předkonfigurované znalostní báze a sadu nástrojů, které si asistenta AI automaticky vybere na základě tématu WordPress, které je aktuálně aktivní na vašem webu. Když přepnete téma, dostupné funkce asistenta se automaticky aktualizují – není nutná ruční konfigurace.
 
@@ -18,9 +18,9 @@ Každá funkce zahrnuje:
 - **Příklady přizpůsobení** — kódové úryvky a vzory konfigurace pro běžné úkoly
 - **Nejlepší praxe** — doporučení pro architekturu a pracovní postup tématu
 
-## Dostupné funkce závislé na tématu
+## Dostupné funkce závislé na tématu {#available-theme-aware-skills}
 
-### Block Themes (Bloková témata)
+### Block Themes (Bloková témata) {#block-themes}
 
 **Používá se pro:** Témata, která používají blokovou architekturu WordPressu (Full Site Editing).
 
@@ -34,7 +34,7 @@ Funkce Block Themes poskytuje pokyny k:
 
 **Automaticky se aktivuje, když:** Vaše aktivní téma je blokové téma (podporuje funkci `block-templates`).
 
-### Classic Themes (Klasická témata)
+### Classic Themes (Klasická témata) {#classic-themes}
 
 **Používá se pro:** Tradiční témata WordPressu, která používají PHP šablony a klasický editor.
 
@@ -48,7 +48,7 @@ Funkce Classic Themes poskytuje pokyny k:
 
 **Automaticky se aktivuje, když:** Vaše aktivní téma je klasické (neblokové) téma.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Používá se pro:** Weby, které používají plugin Kadence Blocks pro pokročilý blokový design.
 
@@ -62,7 +62,7 @@ Funkce Kadence Blocks poskytuje pokyny k:
 
 **Automaticky se aktivuje, když:** Na vašem webu je aktivní plugin Kadence Blocks.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Používá se pro:** Weby, které používají téma Kadence pro blokový design a přizpůsobení.
 
@@ -76,15 +76,15 @@ Funkce Kadence Theme poskytuje pokyny k:
 
 **Automaticky se aktivuje, když:** Vaše aktivní téma je téma Kadence.
 
-## Jak se funkce vybírají
+## Jak se funkce vybírají {#how-skills-are-selected}
 
 Asistent automaticky detekuje vaše aktivní téma a nainstalované pluginy při každé zprávě. Pokud je k dispozici odpovídající funkce závislá na tématu, je automaticky načtena do kontextu asistenta. Nemusíte funkce ručně povolovat ani přepínat.
 
-### Více funkcí
+### Více funkcí {#multiple-skills}
 
 Pokud se na váš web vztahuje více funkcí (například máte aktivní jak Kadence Blocks, tak i Kadence Theme), asistent má přístup ke všech platných funkcích a může se odkazovat na pokyny z každé z nich.
 
-### Přepínání témat
+### Přepínání témat {#switching-themes}
 
 Když změníte své aktivní téma, dostupné funkce asistenta se automaticky aktualizují v následující zprávě. Například:
 
@@ -92,11 +92,11 @@ Když změníte své aktivní téma, dostupné funkce asistenta se automaticky a
 2. Přepnete se na klasické téma.
 3. V vaší další zprávě je funkce **Classic Themes** automaticky načtena a funkce **Block Themes** již není k dispozici.
 
-## Používání funkcí závislých na tématu
+## Používání funkcí závislých na tématu {#using-theme-aware-skills}
 
 Aby bylo možné využít funkci závislou na tématu, stačí v chatovém rozhraní popsat, co chcete udělat. Asistent automaticky odkazuje na vhodné pokyny z dané funkce.
 
-### Příklady dotazů
+### Příklady dotazů {#example-prompts}
 
 **Pro Block Themes:**
 > "Vytvořit sekci s herním obrázkem a centrovým textem pomocí blokových vzorů."

@@ -3,11 +3,11 @@ title: Habilidades conscientes do tema
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Habilidades Conscientes do Tema
+# Habilidades Conscientes do Tema {#theme-aware-skills}
 
 O Superdav AI Agent v1.10.0 lanza quatro novas habilidades integradas conscientes do tema que se adaptan automáticamente ao seu tema WordPress ativo. Estas habilidades fornecen orientação e capacidades especializadas adaptadas à arquitetura e aos recursos do seu tema.
 
-## O Que São Habilidades Conscientes do Tema?
+## O Que São Habilidades Conscientes do Tema? {#what-are-theme-aware-skills}
 
 As habilidades conscientes do tema são bases de conhecimento pré-configuradas e conjuntos de ferramentas que o assistente de IA seleciona automaticamente com base no tema WordPress atualmente ativo no seu site. Quando muda de tema, as habilidades disponíveis do assistente atualizam-se automaticamente — não é necessária nenhuma configuração manual.
 
@@ -18,9 +18,9 @@ Cada habilidade inclui:
 - **Exemplos de personalização** — trechos de código e padrões de configuração para tarefas comuns
 - **Melhores práticas** — recomendações para a arquitetura e o fluxo de trabalho do tema
 
-## Habilidades Conscientes do Tema Disponíveis
+## Habilidades Conscientes do Tema Disponíveis {#available-theme-aware-skills}
 
-### Temas de Blocos (Block Themes)
+### Temas de Blocos (Block Themes) {#block-themes}
 
 **Aplica-se a:** Temas que usam a arquitetura baseada em blocos do WordPress (Full Site Editing).
 
@@ -34,7 +34,7 @@ A habilidade Block Themes fornece orientação sobre:
 
 **Ativada automaticamente quando:** O seu tema ativo é um tema de blocos (suporta a funcionalidade `block-templates`).
 
-### Temas Clássicos (Classic Themes)
+### Temas Clássicos (Classic Themes) {#classic-themes}
 
 **Aplica-se a:** Temas WordPress tradicionais que usam templates PHP e o editor clássico.
 
@@ -48,7 +48,7 @@ Comprender a hierarquia do tema e as tags de template
 
 **Ativado automáticamente quando:** O seu tema ativo é un clásico (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Aplica-se a:** Sites que usen o plugin Kadence Blocks para design avançado basado en blocos.
 
@@ -62,7 +62,7 @@ A habilidade Kadence Blocks dá orientación sobre:
 
 **Ativado automaticamente quando:** O plugin Kadence Blocks está ativo no seu site.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Aplica-se a:** Sites que usen o tema Kadence para design baseado em blocos e personalização.
 
@@ -76,15 +76,15 @@ A habilidade Kadence Theme dá orientação sobre:
 
 **Ativado automaticamente quando:** O tema Kadence é o seu tema ativo.
 
-## Como são selecionadas as Habilidades
+## Como são selecionadas as Habilidades {#how-skills-are-selected}
 
 O assistente deteta automaticamente o seu tema ativo e os plugins instalados em cada mensagem. Se houver uma habilidade compatível com o tema disponível, ela carrega-se automaticamente no contexto do assistente. Não precisa de ativar ou mudar habilidades manualmente.
 
-### Múltiplas Habilidades
+### Múltiplas Habilidades {#multiple-skills}
 
 Se se aplican varias habilidades ao seu sitio (por exemplo, se tiver tanto Kadence Blocks como Kadence Theme activos), o assistente terá acesso a todas as habilidades aplicáveis e poderá referenciar orientações de cada uma.
 
-### Mudar de Tema
+### Mudar de Tema {#switching-themes}
 
 Quando muda o tema ativo, as habilidades disponíveis do assistente atualizam automaticamente na próxima mensagem. Por exemplo:
 
@@ -92,11 +92,11 @@ Quando muda o tema ativo, as habilidades disponíveis do assistente atualizam au
 2. Muda para um tema clássico.
 3. Na sua próxima mensagem, a habilidade **Classic Themes** é carregada automaticamente e a habilidade **Block Themes** deixa de estar disponível.
 
-## Usar Habilidades Sensíveis ao Tema (Theme-Aware Skills)
+## Usar Habilidades Sensíveis ao Tema (Theme-Aware Skills) {#using-theme-aware-skills}
 
 Para aproveitar uma habilidade sensível ao tema, basta descrever o que quer fazer na interface de chat. O assistente referenciará automaticamente as orientações da habilidade apropriada.
 
-### Exemplos de Prompts
+### Exemplos de Prompts {#example-prompts}
 
 **Para Block Themes:**
 > "Cria uma secção de herói com imagem de fundo e texto centralizado usando padrões de blocos."

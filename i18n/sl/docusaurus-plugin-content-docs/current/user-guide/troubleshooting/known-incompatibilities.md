@@ -3,7 +3,7 @@ title: Poznate neskladnosti
 sidebar_position: 15
 _i18n_hash: 93136dc6fe62867e55f770e7b74473e8
 ---
-# Znane neskladnosti z drugimi pluginami
+# Znane neskladnosti z drugimi pluginami {#known-incompatibilities-with-other-plugins}
 
 Po namestitvi in aktivaciji Ultimate Multisite boste morda srečali težave zaradi neskladnosti z drugimi pluginami, ki niso bile rešene.
 

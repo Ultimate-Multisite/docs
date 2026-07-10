@@ -3,17 +3,17 @@ title: ਡਿਜ਼ਾਈਨ ਦਿਸ਼ਾ
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction
+# Design Direction {#design-direction}
 
 **Design Direction** step aapko apne theme ke visual design ko review, refine, aur final karne deta hai, isse pehle ki Theme Builder poora theme generate kare.
 
-## Overview
+## Overview {#overview}
 
 Discovery Interview poora karne ke baad, Theme Builder aapko **desktop aur mobile preview rendering** ke saath aapki design direction dikhata hai. Isse aapko yeh dekhne ka mauka milta hai ki theme commit karne se pehle aapka design alag-alag devices par kaisa dikhega.
 
-## Design Direction Components
+## Design Direction Components {#design-direction-components}
 
-### 1. Color Palette
+### 1. Color Palette {#1-color-palette}
 
 Aapke theme ka rangon ka set (color scheme), jismein shamil hain:
 
@@ -23,7 +23,7 @@ Aapke theme ka rangon ka set (color scheme), jismein shamil hain:
 - **Neutral colors** — background aur text ke liye grey aur safed rang
 - **Text color** — padhne mein aasani ke liye primary text color
 
-### 2. Typography
+### 2. Typography {#2-typography}
 
 In cheezon ke liye font ka chunav:
 
@@ -33,14 +33,14 @@ In cheezon ke liye font ka chunav:
 - **Line height** — padhne mein aasani ke liye lines ke beech ki jagah
 - **Font weights** — bold, regular, aur light variations
 
-### 3. Layout and Spacing
+### 3. Layout and Spacing {#3-layout-and-spacing}
 
 - **Container width** — content ke liye maximum width
 - **Padding and margins** — elements ke aas-paas ki jagah
 - **Grid system** — responsive design ke liye column layout
 - **Component spacing** — UI elements ke beech ki doori
 
-### 4. Visual Elements
+### 4. Visual Elements {#4-visual-elements}
 
 - **Button styles** — primary, secondary, aur tertiary button designs
 - **Card designs** — content blocks ke liye layouts
@@ -48,9 +48,9 @@ In cheezon ke liye font ka chunav:
 - **Borders and shadows** — halki visual depth
 - **Hover effects** — interactive state styling
 
-## Preview Rendering
+## Preview Rendering {#preview-rendering}
 
-### Desktop Preview
+### Desktop Preview {#desktop-preview}
 
 Desktop preview aapka design full width (aam taur par 1200px ya usse zyada) par dikhata hai:
 
@@ -59,7 +59,7 @@ Desktop preview aapka design full width (aam taur par 1200px ya usse zyada) par 
 - Badi typography aur spacing
 - Sabhi visual elements poore size mein
 
-### Mobile Preview
+### Mobile Preview {#mobile-preview}
 
 Mobile preview aapka design mobile width (aam taur par 375px) par dikhata hai:
 
@@ -68,7 +68,7 @@ Mobile preview aapka design mobile width (aam taur par 375px) par dikhata hai:
 - Adjust ki gayi typography aur spacing
 - Touch-friendly button sizes
 
-### Responsive Breakpoints
+### Responsive Breakpoints {#responsive-breakpoints}
 
 Theme Builder in breakpoints par previews render karta hai:
 
@@ -79,9 +79,9 @@ Theme Builder in breakpoints par previews render karta hai:
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Refining Your Design
+## Refining Your Design {#refining-your-design}
 
-### Making Adjustments
+### Making Adjustments {#making-adjustments}
 
 Aap in tareekon se apni design direction ko refine kar sakte hain:
 
@@ -91,7 +91,7 @@ Aap in tareekon se apni design direction ko refine kar sakte hain:
 4. **Updating layout** — container widths aur grid columns badalna
 5. **Customizing elements** — button styles, card designs, aadi ko modify karna
 
-### Preview Updates
+### Preview Updates {#preview-updates}
 
 Badlav turant dikhte hain:
 
@@ -100,7 +100,7 @@ Badlav turant dikhte hain:
 - Saare responsive breakpoints update hote hain
 - Aap badlav verify karne ke liye previews ke beech switch kar sakte hain
 
-### Comparison View
+### Comparison View {#comparison-view}
 
 Apni design direction ki tulna in cheezon se karein:
 
@@ -108,7 +108,7 @@ Apni design direction ki tulna in cheezon se karein:
 - **Competitor designs** — inspiration sites se compare karne ke liye
 - **Previous versions** — pehle ke design directions par wapas jaane ke liye
 
-## Design Direction Approval
+## Design Direction Approval {#design-direction-approval}
 
 Jab aap apne design se santusht ho jaate hain:
 
@@ -118,7 +118,7 @@ Jab aap apne design se santusht ho jaate hain:
 4. **Layout confirm karein** — spacing aur alignment check karein
 5. **Design approve karein** — theme generation ke liye aage badhein
 
-## Next Steps
+## Next Steps {#next-steps}
 
 Apni design direction approve karne ke baad:
 
@@ -127,7 +127,7 @@ Apni design direction approve karne ke baad:
 3. Aap WordPress customizer ka upyog karke aur customize kar sakte hain
 4. [Hospitality Menus](./hospitality-menus.md) ya anya features par aage badhein
 
-## Best Practices
+## Best Practices {#best-practices}
 
 - **Real devices par test karein** — ho sake toh asli phones aur tablets ka istemal karein
 - **Readability check karein** — sunishchit karein ki text sabhi sizes par padhne mein aasan ho
@@ -135,30 +135,30 @@ Apni design direction approve karne ke baad:
 - **Performance consider karein** — speed ke liye images aur fonts ko optimize karein
 - **Content plan karein** — sunishchit karein ki layout aapke actual content ke saath kaam karta hai
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-### Preview Not Updating
+### Preview Not Updating {#preview-not-updating}
 
 - Page ko refresh karein
 - Browser cache clear karein
 - Koi alag browser try karein
 - Internet connection check karein
 
-### Colors Look Different
+### Colors Look Different {#colors-look-different}
 
 - Monitor color settings check karein
 - Alag-alag devices par try karein
 - Accessibility tools se color contrast verify karein
 - Color blindness simulators par विचार karein
 
-### Typography Issues
+### Typography Issues {#typography-issues}
 
 - Verify karein ki font files load ho rahi hain
 - Alag-alag breakpoints par font size check karein
 - Actual content ke saath test karein
 - Readability ke liye line length par विचार karein
 
-## Related Documentation
+## Related Documentation {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — design information ikattha karein
 - [Hospitality Menus](./hospitality-menus.md) — structured menu pages banayein

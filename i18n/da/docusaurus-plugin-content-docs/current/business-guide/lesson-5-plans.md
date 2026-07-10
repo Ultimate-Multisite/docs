@@ -3,15 +3,15 @@ title: 'Lektion 5: Design af dine planer'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lektion 5: Design af Dine Planer
+# Lektion 5: Design af Dine Planer {#lesson-5-designing-your-plans}
 
 Dine planer er ikke bare prisniveauer – de afspejler, hvordan dine nichekunder rent faktisk opererer. I denne lektion designer du produktniveauer, der matcher de reelle behov hos fitnessvirksomheder i forskellige faser.
 
-## Hvor Vi Sluttede
+## Hvor Vi Sluttede {#where-we-left-off}
 
 FitSite har tre skabeloner klar (Studio Essential, Gym Pro, Fitness Chain). Nu opretter vi planerne, der bestemmer, hvad kunder får adgang til, og hvad de betaler for det.
 
-## Tænkning i Kundesegmenter
+## Tænkning i Kundesegmenter {#thinking-in-customer-segments}
 
 Den fejl, de fleste mennesker begår, er at designe planer omkring tekniske funktioner (lagring, båndbredde, antal sider). Dine nichekunder tænker ikke på disse termer. En fitnessvirksomheds ejer tænker over, hvad de har brug for til at drive deres forretning.
 
@@ -25,11 +25,11 @@ For fitnessstudier findes der tre naturlige segmenter:
 
 Dine planer skal kortlægges op imod disse segmenter, ikke efter vilkårlige funktionspakker.
 
-## Oprettelse af FitSite Planerne
+## Oprettelse af FitSite Planerne {#creating-the-fitsite-plans}
 
 Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 
-### Plan 1: FitSite Starter -- $49/måned
+### Plan 1: FitSite Starter -- $49/måned {#plan-1-fitsite-starter----49month}
 
 **Målgruppe**: Solo trænere og små studier
 
@@ -59,7 +59,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Dit valgte tema: Tvunget aktivering
 - Alle andre temaer: Skjult
 
-### Plan 2: FitSite Growth -- $99/måned
+### Plan 2: FitSite Growth -- $99/måned {#plan-2-fitsite-growth----99month}
 
 **Målgruppe**: Etablerede fitnesscentre med ét lokation
 
@@ -85,7 +85,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Plan gruppe: FitSite Plans
 - Produktordre: 2
 
-### Plan 3: FitSite Pro -- $199/måned
+### Plan 3: FitSite Pro -- $199/måned {#plan-3-fitsite-pro----199month}
 
 **Målgruppe**: Fitnesskæder med flere lokationer
 
@@ -109,7 +109,7 @@ Gå til **Ultimate Multisite > Products > Add Product** for hver plan.
 - Plan gruppe: FitSite Plans
 - Produktrækkefølge: 3
 
-## Opsætning af plangruppen
+## Opsætning af plangruppen {#setting-up-the-plan-group}
 
 Plangruppen sikrer, at kunder kun kan opgradere eller nedgradere inden for FitSite planfamilien. På hver plans **Op & Nedgraderingsfane**:
 
@@ -118,7 +118,7 @@ Plangruppen sikrer, at kunder kun kan opgradere eller nedgradere inden for FitSi
 
 Dette skaber en klar opgraderingssti: Starter → Growth → Pro.
 
-## Tilføjelse af order bumps
+## Tilføjelse af order bumps {#adding-order-bumps}
 
 Order bumps er tillægsprodukter, der tilbydes under kassen. For FitSite kan du overveje:
 
@@ -128,7 +128,7 @@ Order bumps er tillægsprodukter, der tilbydes under kassen. For FitSite kan du 
 
 Opret disse som produkter af type **Package** i Ultimate Multisite og forbinder dem med de relevante planer.
 
-## Hvorfor denne struktur virker
+## Hvorfor denne struktur virker {#why-this-structure-works}
 
 - **Starter** fjer barrierer for indtræden – lav pris, simpel tilbud, får trænere online hurtigt
 - **Vækst** tilføjer de funktioner, fitnesscentre rent faktisk spørger om – booking, gallerier, custom domæner
@@ -136,7 +136,7 @@ Opret disse som produkter af type **Package** i Ultimate Multisite og forbinder 
 - **Order bumps** giver kunderne mulighed for at tilpasse uden at komplicere de grundlæggende planer
 - **Klar opgraderingssti** betyder, at kunder vokser sammen med dig i stedet for at forlade dig
 
-## FitSite Netværket Indtil Nu
+## FitSite Netværket Indtil Nu {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Klar til checkout konfiguration (næste lektion)
 ```
 
-## Hvad Vi Har Bygget Denne Lektion
+## Hvad Vi Har Bygget Denne Lektion {#what-we-built-this-lesson}
 
 - **Tre planer** kortlagt efter reelle fitnessvirksomhedssegmenter
 - **Funktionsbegrænsning** ved hjælp af Ultimate Multisite's plugin og template-kontroller

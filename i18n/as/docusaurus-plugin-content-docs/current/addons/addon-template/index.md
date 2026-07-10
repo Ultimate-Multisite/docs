@@ -3,25 +3,25 @@ title: Addon Template
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon Template
+# Addon Template {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## প্ৰয়োজনীয়তা (Requirements)
+## প্ৰয়োজনীয়তা (Requirements) {#requirements}
 
 - WordPress ৫.৩ বা তাৰ অধিক
 - PHP ৭.৪ বা তাৰ অধিক
 - Multisite Ultimate plugin (সক্ৰিয়)
 
-## স্থাপন (Installation)
+## স্থাপন (Installation) {#installation}
 
 ১. addon ফাইলবোৰ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপলোড কৰক।
 ২. WordPress-ৰ 'Plugins' মেনুৰ মাজেৰে plugin টি সক্ৰিয় কৰক।
 ৩. নেটৱৰ্ক এডমিনত addon ছেটিংবোৰ কনফিগাৰ কৰক।
 
-## বিকাশ (Development)
+## বিকাশ (Development) {#development}
 
-### সেটআপ (Setup)
+### সেটআপ (Setup) {#setup}
 
 ```bash
 # Install dependencies
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### প্ৰজেক্টৰ গঠন (Project Structure)
+### প্ৰজেক্টৰ গঠন (Project Structure) {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Code modernization rules
 ```
 
-### পৰীক্ষা (Testing)
+### পৰীক্ষা (Testing) {#testing}
 
 এই addon ত এটা সম্পূৰ্ণ পৰীক্ষাৰ কাঠামো (testing framework) অন্তৰ্ভুক্ত কৰা হৈছে:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Test Coverage**: কোড কভাৰেজ (code coverage) ট্ৰেক কৰিবলৈ কনফিগাৰ কৰা হৈছে।
 - **Multisite Testing**: এই পৰীক্ষাসমূহক multisite পৰিৱেশত চલા位 কৰা হয়।
 
-### কোড মানদণ্ড (Code Standards)
+### কোড মানদণ্ড (Code Standards) {#code-standards}
 
 - **WordPress Coding Standards**: PHPCS ৰ জৰিয়তে বলবৎ কৰা হয়।
 - **PHP ৭.৪+ সামঞ্জস্যতা (Compatibility)**: আধুনিক PHP বৈশিষ্ট্যসমূহ সমৰ্থন কৰে।
 - **Static Analysis**: টাইপ চেকিংৰ বাবে PHPStan ইন্টিগ্ৰেচন।
 - **Code Modernization**: PHP আপগ্রেডৰ বাবে Rector নিয়ম।
 
-### বিল্ড ছিষ্টেম (Build System)
+### বিল্ড ছিষ্টেম (Build System) {#build-system}
 
 - **Asset Processing**: CSS/JS ফাইলৰ বাবে মিনিফিকাচন (Minification)।
 - **Translation**: POT ফাইলৰ সৃষ্টি।
 - **Packaging**: বিতৰণৰ বাবে আৰ্কাইভ সৃষ্টি।
 - **Development Mode**: ডিবাগিংৰ বাবে মিনিফিকা নোহোৱা সম্পদ (Unminified assets)।
 
-## কনফিগাৰেশ্যন (Configuration)
+## কনফিগাৰেশ্যন (Configuration) {#configuration}
 
 এই addon ত নেটৱৰ্ক এডমিন ইন্টাৰফেচৰ মাজেৰে উপলব্ধ বিভিন্ন কনফিগাৰেশ্যন বিকল্প সমৰ্থন কৰে।
 
-## Hooks and Filters
+## Hooks and Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - addon ইনিশ্বিয়ালাইজেশ্যন হোৱাৰ পিছত ট্ৰিগাৰ হয়।
 - `ultimate-multisite-addon-template_loaded` - সকলো addon ফাইল লোড হোৱাৰ পিছত ট্ৰিগাৰ হয়।
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - addon ছেটিংছ সলনি কৰিবলৈ।
 - `ultimate-multisite-addon-template_enabled` - addon সক্ষম/নিষ্ক্ষম স্থিতি (status) ওপৰত কাৰ্য কৰিবলৈ।
 
-## লাইচেঞ্চ (License)
+## লাইচেঞ্চ (License) {#license}
 
 এই addon টি GPL v3 বা তাৰ অধিকৰ অধীনত লাইচেঞ্চ কৰা হৈছে।
 
-## সহায় (Support)
+## সহায় (Support) {#support}
 
 সহায় আৰু ডকুমেন্টেশ্যনৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) লভিজিট কৰক।
-## Changelog
+## Changelog {#changelog}
 
 - Version 1.0.1 (2025-09-28): prefix लाई ultimate-multisite লৈ নাম সলনি কৰা হ'ল; text domain আপডেট কৰা হ'ল; version বৃদ্ধি কৰা হ'ল।
 

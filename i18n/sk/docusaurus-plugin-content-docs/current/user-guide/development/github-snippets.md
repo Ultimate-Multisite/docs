@@ -3,7 +3,7 @@ title: GitHub kódodielky
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Ako použiť úryvky Ultimate Multisite na našom GitHub repozitórii
+# Ako použiť úryvky Ultimate Multisite na našom GitHub repozitórii {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 V GitHub repozitóriu sú prístupné kódové úryvky, ktoré používajú užívatelia Ultimate Multisite často požadujú pre pridanie malých funkcií, ako je pridaní skriptu Google Analytics na stránkach registrácii alebo skrytí meta box z admin dashboardu.
 
@@ -18,7 +18,7 @@ Máte dve možnosti, ako môžete pridať kód:
   1. Do súboru functions.php vášho témy.
   2. Must-Use Plugins (mu-plugins).
 
-# Ako pridať úryvek do súboru functions.php vašej témy.
+# Ako pridať úryvek do súboru functions.php vašej témy. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Prihláste sa do admin dashboardu sietí WordPress a prejdite na Themes > Theme Editor (vidieť snímku obrazovky nižšie).
 
@@ -28,7 +28,7 @@ Máte dve možnosti, ako môžete pridať kód:
 
 <!-- Snímka obrazovky nedostupné: WordPress Theme Editor zobrazujúce úpravu súboru functions.php -->
 
-# Ako vytvoriť Must-Use Plugins (mu-plugins)
+# Ako vytvoriť Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress má funkciu, ktorá vám umožňuje načúfať prispôsobené funkcie nazvané "Must-Use Plugins", alebo v skratke "mu-plugins".
 

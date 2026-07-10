@@ -1,105 +1,152 @@
 ---
-title: Settings tal-AI Agent Gratuiti
+title: Issettjar ta’ Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# Impostajs AI Agent Gratis
+# Settings ta' Gratis AI Agent {#gratis-ai-agent-settings}
 
-Il-skrin **Settings → Advanced** fil-Gratis AI Agent jipprovide konfigurazzjoni tal-administrator għall l-integrazzjonijiet ta' backend li tiddir b'versjoni v1.5.0. Hija dawk is-sigħa li jidokumenta l-field **Feedback Endpoint** u l-format attaratt.
+L-iskrin **Settings → Advanced** f'Gratis AI Agent jipprovdi konfigurazzjoni fil-livell ta' amministratur għal integrazzjonijiet tal-backend. Din il-paġna tiddokumenta t-trażmissjoni ta' feedback, iċ-ċwievet tal-fornitur tat-tiftix, is-setup tas-servizz Superdav immaniġġjat, il-kontrolli ta' Google Calendar, is-settings tal-SMS ta' TextBee, u feature flags fuq in-network kollu.
 
-## Aċċess għall-Settings
+## Aċċess għas-Settings {#accessing-settings}
 
-1. F'WordPress admin, għandu tmur għal **Gratis AI Agent → Settings**.
-2. Klikka fuq l-tab **Advanced**.
+1. Fl-amministrazzjoni ta' WordPress, mur **Gratis AI Agent → Settings**.
+2. Ikklikkja t-tab **Advanced**.
 
-## Konfigurazzjoni tal-Feedback Endpoint
+## Konfigurazzjoni tal-Endpoint tal-Feedback {#feedback-endpoint-configuration}
 
-Il-feedback endpoint jista' jista' jiffajti request POST mill-AI agent ogni volta li l-utenti jgħattu feedback b'attra w-button ta' thumbs-down, il-auto-prompt banner, jew il-komandu `/report-issue`.
+L-endpoint tal-feedback jirċievi talbiet POST mill-aġent tal-AI kull meta utent jibgħat feedback permezz tal-buttuna thumbs-down, il-banner auto-prompt, jew il-kmand `/report-issue`.
 
-| Field | Descrizzjoni |
+| Field | Description |
 |---|---|
-| **Feedback Endpoint URL** | Il-URL li jiffajti l-feedback submissions b'request HTTP POST مع body JSON. |
-| **Feedback API Key** | Bearer token li juttilja fil-header `Authorization` ta' ogni request ta feedback. Aħjar blaw se jgħid blaw jekk il-endpoint tiegħek ma għandux autentikazzjoni. |
+| **Feedback Endpoint URL** | Il-URL li jirċievi s-sottomissjonijiet tal-feedback bħala talbiet HTTP POST b'korp JSON. |
+| **Feedback API Key** | bearer token mibgħut fl-`Authorization` header ta' kull talba ta' feedback. Ħallih vojt jekk l-endpoint tiegħek ma jeħtieġx awtentikazzjoni. |
 
-### Payload JSON Attaratt
+### Payload JSON Mistenni {#expected-json-payload}
 
-Il-feedback endpoint tiegħek għandu jipprovvidi body JSON b'aħha l-field ewlenin:
+L-endpoint tal-feedback tiegħek irid jaċċetta korp JSON b'mill-inqas l-oqsma li ġejjin:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "Il-risposta kienet sħiħa dwar il-prezzijiet.",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-Field ewlenin aktar jista' jkunu f'payload b'dependenza mill-kontekst tal-konversazzjoni.
+Jistgħu jkunu preżenti oqsma addizzjonali fil-payload skont il-kuntest tal-konverżazzjoni.
 
-### Valuri ta `triage_category`
+### Valuri ta' `triage_category` {#triagecategory-values}
 
-Il-layer ta triage tal-AI jipprovvide waħda mill-valuri ewlenin li jgħid għal `triage_category` qabel ma jiffajti l-payload:
+Is-saff tat-triage tal-AI jassenja wieħed mill-valuri li ġejjin lil `triage_category` qabel ma jittrażmetti l-payload:
 
-| Valur | Signifika |
+| Value | Meaning |
 |---|---|
-| `factual_error` | L-assistenti fornì informazzjoni fattwali sħiħa. |
-| `unhelpful_answer` | Ir-risposta kienet tekniku korretta iżda ma għandha tkun uffi. |
-| `inappropriate_content` | Ir-risposta kienet kuntejnent li ma jista' jiġi mostru mill-utenti. |
-| `other` | Il-feedback ma kienx jittlaq mal-kategoria magħrufija. |
+| `factual_error` | L-assistent ipprovda informazzjoni fattwali żbaljata. |
+| `unhelpful_answer` | It-tweġiba kienet teknikament korretta iżda mhux utli. |
+| `inappropriate_content` | It-tweġiba kien fiha kontenut li m'għandux jintwera lill-utenti. |
+| `other` | Il-feedback ma qabilx ma' kategorija magħrufa. |
 
-### Autentikazzjoni
+### Awtentikazzjoni {#authentication}
 
-אם l-endpoint tiegħek jidreq autentikazzjoni, setti l-field **Feedback API Key** għall-bearer token tiegħek. L-agent jiffaċċja:
+Jekk l-endpoint tiegħek jeħtieġ awtentikazzjoni, issettja l-qasam **Feedback API Key** għall-bearer token tiegħek. L-aġent jibgħat:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-Jekk il-field **Feedback API Key** huwa vuṭi, ma tiffaċċja xemx header `Authorization`.
+Jekk il-qasam **Feedback API Key** ikun vojt, ma jintbagħat l-ebda `Authorization` header.
 
-### Disabilitjar tal-Kollezzjoni ta Feedback
+### Diżattivazzjoni tal-Ġbir tal-Feedback {#disabling-feedback-collection}
 
-Aħjar l-field **Feedback Endpoint URL** u **Feedback API Key** vuṭi. Il-button ta thumbs-down u l-UI ta feedback jifilħu b'aħha lil l-utenti, iżda il-submission ma tiffaċċja għal xogħol eksternal.
+Ħalli ż-żewġ oqsma **Feedback Endpoint URL** u **Feedback API Key** vojta. Il-buttuna thumbs-down u l-UI tal-feedback jibqgħu viżibbli għall-utenti, iżda s-sottomissjonijiet ma jiġux trażmessi lil xi servizz estern.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-Mhumiex fl-tab **Advanced**, il-field **Brave Search API Key** jfilabbilizzja l-funzjonalità ta [Internet Search](../configuration/internet-search).
+Ukoll fuq it-tab **Advanced**, il-qasam **Brave Search API Key** jattiva l-abbiltà [Tiftix fuq l-Internet](../configuration/internet-search).
 
-| Field | Deskrizzjoni |
+| Field | Description |
 |---|---|
-| **Brave Search API Key** | Il-API key tiegħek mill-dashboard tal-developer ta Brave Search. Necessar għall-attivazzjoni tal-internet search fil-AI assistant. |
+| **Brave Search API Key** | Iċ-ċavetta API tiegħek mid-dashboard tal-iżviluppaturi ta' Brave Search. Meħtieġa biex jiġi attivat it-tiftix fuq l-internet fl-assistent tal-AI. |
 
-Il-etichet tagħha jinkludi link ankabbli għal missistenza ta Brave Search API. Aħjar vuṭi biex tixgħel l-internet search.
+It-tikketta tal-qasam tinkludi link li tista' tikklikkja fuqu għall-paġna ta' reġistrazzjoni tal-Brave Search API. Ħallih vojt biex tiddiżattiva t-tiftix fuq l-internet.
 
-Vidi [Internet Search](../configuration/internet-search) għall-dokumentazzjoni tal-utenti dwar dan il-feature.
+Ara [Tiftix fuq l-Internet](../configuration/internet-search) għad-dokumentazzjoni għall-utenti finali dwar din il-karatteristika.
 
-## Feature Flags
+## Servizz Superdav Immaniġġjat {#managed-superdav-service}
 
-Mhumiex introdutt fatt fil-v1.9.0, il-tab **Settings → Feature Flags** joff toggle switches għall-funzjonalità opzjonali. Kulle flag huwa jew attivat jew disabilitat fuq l-netwerk; ma hemm override per siti f'dan l-istagħħar.
+Superdav AI Agent v1.18.0 iżid endpoints tas-servizz Superdav immaniġġjat u provisioning awtomatiku tal-konnessjoni għal siti appoġġjati. Uża dawn il-kontrolli meta s-sit tiegħek għandu jikkonnettja mal-fornitur ospitat minflok endpoint tas-servizz ikkonfigurat manwalment.
 
-### Aċċess għall-Feature Flags
+| Field | Description |
+|---|---|
+| **Managed Superdav Service** | Jattiva l-konnessjoni mas-servizz Superdav ospitat għal siti appoġġjati. |
+| **Provision Connection** | Jibda provisioning awtomatiku tal-endpoint u tal-kredenzjali. Uża dan wara li tikkonferma li s-sit għandu juża l-fornitur immaniġġjat. |
+| **Service Endpoint / Connection Status** | Juri l-endpoint attwali jew l-istat tal-konnessjoni wara l-provisioning. |
 
-1. F'l-admin ta WordPress, għandi **Gratis AI Agent → Settings**.
-2. Klikka fuq l-tab **Feature Flags**.
+Wara l-provisioning, salva s-settings u vverifika l-istatus tal-konnessjoni qabel ma tiddependi fuq workflows tas-servizz immaniġġjat. Jekk il-provisioning ifalli, irrevedi l-gwida ta' prova mill-ġdid murija u kkonferma li s-sit għandu permess juża l-fornitur ospitat.
 
-### Feature Flags tal-Kontroll tal-Aċċess
+## Konfigurazzjoni ta' Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Descripċja |
+Meta l-karatteristiċi tal-kalendarju ta' Superdav AI Agent v1.18.0 ikunu attivati, l-aġent jista' jaqra kalendarji kkonfigurati u dettalji tal-avvenimenti. L-għodod tal-kalendarju huma orjentati lejn il-qari u huma utli għal tfakkiriet konxji tal-iskeda, follow-up mal-parteċipanti, u tqabbil tal-kuntatti.
+
+| Field | Description |
+|---|---|
+| **Google Calendar Credentials** | Jaħżen il-kredenzjali jew il-konnessjoni tat-token meħtieġa biex tinqara d-data tal-kalendarju. |
+| **Calendar Selection** | Jillimita liema kalendarji kkonfigurati l-aġent jista' jispezzjona. |
+| **Calendar Connection Status** | Jikkonferma jekk il-kredenzjali attwali jistgħux jaqraw kalendarji u avvenimenti. |
+
+Żomm il-kredenzjali tal-kalendarju limitati għall-kalendarji li l-aġent jeħtieġ. Erġa' qabbad jew ibdel il-kredenzjali jekk l-istatus jindika token skadut.
+
+## Notifiki SMS ta' TextBee {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 iżid TextBee bħala fornitur tal-SMS għal workflows tan-notifiki kkonfigurati. In-notifiki SMS għandhom jiġu akkoppjati ma' punti ta' approvazzjoni umana għal messaġġi sensittivi jew immirati lejn l-utenti.
+
+| Field | Description |
+|---|---|
+| **TextBee API Key** | Jawtentika talbiet lill-fornitur tal-SMS TextBee. |
+| **TextBee Device / Sender** | Jagħżel il-mittent jew l-apparat TextBee użat għal messaġġi ħerġin, meta meħtieġ mill-fornitur. |
+| **SMS Notifications Enabled** | Jippermetti lil workflows approvati jibagħtu notifiki b'messaġġi testwali. Ħallih diżattivat biex tevita li jintbagħtu SMS. |
+
+Ibgħat messaġġ tat-test biss lil numru proprjetà ta' amministratur, imbagħad ikkonferma l-imġiba tal-punt ta' approvazzjoni qabel tattiva tfakkiriet skedati jew immirati lejn il-parteċipanti.
+
+## Feature Flags {#feature-flags}
+
+Introdotta wkoll f'v1.9.0, it-tab **Settings → Feature Flags** tipprovdi swiċċijiet toggle għal funzjonalità fakultattiva. Kull flag huwa jew attivat jew diżattivat fuq in-network kollu; bħalissa m'hemm l-ebda override għal kull sit.
+
+### Aċċess għall-Feature Flags {#accessing-feature-flags}
+
+1. Fl-amministrazzjoni ta' WordPress, mur **Gratis AI Agent → Settings**.
+2. Ikklikkja t-tab **Feature Flags**.
+
+### Flags tal-Kontroll tal-Aċċess {#access-control-flags}
+
+| Bandiera | Default | Deskrizzjoni |
 |---|---|---|
-| **Restrict to Administrators** | Off | Meta aktivar, meta jkun attivar, l-utenti b'roll `administrator` huma l-uni li jistgħu aġġustjaw il pannell chat tal-AI Agent. Kull l-altri rolli jorru "Kontatt il-appressali tatk". |
-| **Restrict to Network Admins** | Off | Meta aktivar fuq network multisite, meta jkun attivar, l-Super Admins huma l-uni li jistgħu jikelmu l'agent. L-admins tal-site individuallin huma bloccati. Jista'rriq il-priorità għal "Restrict to Administrators" meta kien aktivar bl-oħra. |
-| **Allow Subscriber Access** | Off | Meta aktivar, l-utenti b'roll `subscriber` jistgħu jikelmu l-interface chat iżda huma limitati għall-abilità ta qedra (m'għandhomx biex jagħmlu post jew jawmor xi impost. |
-| **Disable for Non-Members** | Off | Jistabbilixxi mal-status tal-membership tal-Ultimate Multisite. Meta jkun aktivar, il-chat jkun nascosto għals siti li ma għandhomx membership attivo. |
+| **Illimita għall-Amministraturi** | Mitfi | Meta jkun attivat, utenti biss bir-rwol `administrator` jistgħu jiftħu l-panel taċ-chat tal-AI Agent. Ir-rwoli l-oħra kollha jaraw messaġġ "Ikkuntattja lill-amministratur tiegħek" minflok. |
+| **Illimita għall-Amministraturi tan-Network** | Mitfi | Meta jkun attivat fuq network multisite, Super Admins biss jistgħu jużaw l-agent. L-amministraturi ta’ siti individwali jiġu mblukkati. Jieħu preċedenza fuq "Illimita għall-Amministraturi" jekk it-tnejn ikunu attivati. |
+| **Ħalli Aċċess għas-Subscriber** | Mitfi | Meta jkun attivat, utenti bir-rwol `subscriber` jistgħu jużaw l-interface taċ-chat iżda jkunu limitati għal kapaċitajiet ta’ qari biss (l-ebda ħolqien ta’ posts jew bidliet fis-settings). |
+| **Itfi għal Min Mhux Membri** | Mitfi | Jintegra mal-istatus ta’ sħubija ta’ Ultimate Multisite. Meta jkun attivat, iċ-chat jinħeba għal siti li m’għandhomx sħubija attiva. |
 
-### Branding Flags
+### Bnadar tal-Branding {#branding-flags}
 
-| Flag | Default | Descripċja |
+| Bandiera | Default | Deskrizzjoni |
 |---|---|---|
-| **Hide "Powered by Gratis AI Agent" Footer** | Off | Jixejx l-linea ta branding li tistabbilixxi fl-post ta' fondo tal-chat widget. Raccomandat għall-deployments b'white-label. |
-| **Custom Agent Name** | *(blank)* | Jistellix il-label default "Gratis AI Agent" f'header tal-chat u menu tal-admin b'isem proprju tiegħek. Aħjar it-blank biex tista' tista' l-default. |
-| **Hide Agent Picker** | Off | Meta aktivar, l-utenti ma jistgħux jikelmu bejn il-agent għall-built-in. L-agent tal-qedra huwa fixxat għal meta huwa konfigurat bħala default f Settings → General. |
-| **Use Site Icon as Chat Avatar** | Off | Jistellix l-ikon tal-site tal-WordPress fl-header tal-chat widget b'mod il-default tal-AI icon (jistabbilixxi taħt Appearance → Customize → Site Identity). |
+| **Aħbi l-Footer "Powered by Gratis AI Agent"** | Mitfi | Ineħħi l-linja ta’ attribuzzjoni tal-branding murija fil-qiegħ tal-widget taċ-chat. Rakkomandat għal implimentazzjonijiet white-label. |
+| **Isem tal-Agent Personalizzat** | *(vojt)* | Jissostitwixxi t-tikketta default "Gratis AI Agent" fil-header taċ-chat u fil-menu tal-admin bl-isem tal-prodott tiegħek. Ħallih vojt biex tuża d-default. |
+| **Aħbi l-Picker tal-Agent** | Mitfi | Meta jkun attivat, l-utenti ma jistgħux jaqilbu bejn il-ħames agents inkorporati. L-agent attwali jkun fiss għal dak li jkun ikkonfigurat bħala d-default f’Settings → General. |
+| **Uża l-Ikona tas-Sit bħala Avatar taċ-Chat** | Mitfi | Jissostitwixxi l-ikona default tal-AI fil-header tal-widget taċ-chat bl-ikona tas-sit WordPress (issettjata taħt Appearance → Customize → Site Identity). |
 
-### Applikazzjoni tal-Изżguri
+### Bnadar tas-Sigurtà tal-Awtomazzjoni {#automation-safety-flags}
 
-Iċ클ik fuq **Save Settings** wara li tġib aktivar qabel jeddika flag. Il-cambjamenti jikelu l-effett immediat – ma għandux flush ta cache jew riattivazzjoni tal-plugin.
+Superdav AI Agent v1.18.0 jintroduċi porti ta’ approvazzjoni umana u rekords ta’ tfakkiriet għal eżekuzzjonijiet ta’ awtomazzjoni aktar siguri. Dawn il-kontrolli jistgħu jidhru fil-feature flags jew fis-settings avvanzati tal-awtomazzjoni, skont il-pakkett installat.
+
+| Bandiera | Default | Deskrizzjoni |
+|---|---|---|
+| **Jeħtieġ Approvazzjoni Umana** | Rakkomandat mixgħul | Iwaqqaf temporanjament awtomazzjonijiet sensittivi sakemm utent awtorizzat jirrevedi u jikkonferma l-azzjoni proposta. |
+| **Deduplicazzjoni tat-Tfakkiriet** | Mixgħul | Jirreġistra tfakkiriet mibgħuta sabiex tentattivi mill-ġdid jew eżekuzzjonijiet skedati ma jibagħtux notifiki duplikati. |
+| **Attiva l-Għodod tal-Kalendarju** | Mitfi sakemm jiġi kkonfigurat | Jippermetti lill-agent jaqra kalendarji u avvenimenti Google kkonfigurati. |
+| **Attiva Notifiki SMS** | Mitfi sakemm jiġi kkonfigurat | Jippermetti workflows approvati jibagħtu notifiki SMS ta’ TextBee wara li l-kredenzjali jiġu ssejvjati. |
+
+### Applikazzjoni tal-Bidliet {#applying-changes}
+
+Ikklikkja **Save Settings** wara li taqleb kwalunkwe bandiera. Il-bidliet jidħlu fis-seħħ immedjatament — ma huwiex meħtieġ cache flush jew riattivazzjoni tal-plugin.

@@ -3,13 +3,13 @@ title: Skráningur fyrsta endurskoða produktans þíns
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Skráning fyrri skýrslu þín (v2)
+# Skráning fyrri skýrslu þín (v2) {#creating-your-first-subscription-product-v2}
 
 _**VIÐSKÖTTU: Þessi grein er aðeins fyrir notendur Ultimate Multisite v2.x. Ef þú notar v1.x,**_ **_sjáðu þetta grein**_**.
 
 Til að byrja nota netinu þínu og byrja selja þjónustu þína mögulegum notendum þarf að hafa ólíka skráninga (subscription) valkostlunar. Hvernig geturðu skapað þessar vörumeri? Hvað eru nauðsynlegir vörumeri sem þú getur bjóða? Í þessari greinin munum við dekka allt sem þú þarft að vita um vörumeri.
 
-## Vörumeriöfl
+## Vörumeriöfl {#product-type}
 
 Með Ultimate Multisite geturð bjóða fólkið þitt í tveimur hluta: **plans** og **add-ons (Order Bump)**. Add-ons geta verið skipt í tveir öfl: **packages** og **services**. Við munum sjá að því hvernig þeir eru skilvirkir og hvaða sérstök þættir þeir hafa næst.
 
@@ -19,7 +19,7 @@ Með Ultimate Multisite geturð bjóða fólkið þitt í tveimur hluta: **plans
 
   * **Services**: Add-ons sem ekki breytir skýrslur og möguleika Ultimate Multisite. Þetta eru verk sem þú mun fullfærja fyrir notendann þinn á að koma í gegnum planinn þeirra sem hafa kaupa. Til dæmis getur notandinn kaupa plan sem leyfir einn vísarstæð og samkvæmt því betalla fyrir extra þjónustu sem mun gera þennan vísarstæð designa.
 
-## Stjórnun vörumeri
+## Stjórnun vörumeri {#managing-products}
 
 Fyrir mörgum er **Products** tabinn í Ultimate Multisite **(Ultimate Multisite > Products)** getur samþættast við plan í tradinvefuþjónustu.
 
@@ -29,7 +29,7 @@ Fyrir mörgum er **Products** tabinn í Ultimate Multisite **(Ultimate Multisite
 
 ![Products list page](/img/config/products-list.png)
 
-## Að bæta vörum við
+## Að bæta vörum við {#adding-products}
 
 Eða plan, pakki eða þjónusta sem er aðgangur til að skilgreina nýja einstaklingar er með **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ Eða plan, pakki eða þjónusta sem er aðgangur til að skilgreina nýja einst
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Skilgreining
+### Skilgreining {#description}
 
 Grunnmiðlar vörunnar getur skilgreina með því að gefa vörudna nafn og skilgreiningu. Þessar kennslustaf eru sýndar har sem vörudrekturinn er nauðsynlegur, eins og val planins og verða, faktu, skipti og þess slíku.
 
 ![Product description section](/img/config/product-description.png)
 
-### Verðslustípar
+### Verðslustípar {#pricing-type}
 
 Á réttri hlið grífinni getur grunnverði skilgreina.
 
@@ -53,7 +53,7 @@ Grunnmiðlar vörunnar getur skilgreina með því að gefa vörudna nafn og ski
 
 Ultimate Multisite stendur fyrir þremur skilgreiningum verðs. **Paid** (betra) valinn kallar netverkstjórnara til upplýsinga um verði vörunnar og hönnun á betalingshertuðum.
 
-### Verðslustíkur
+### Verðslustíkur {#pricing}
 
 Verðsgefnan skilgrein grunnverða vörunnar og betalingsinterval.
 
@@ -61,7 +61,7 @@ Verðsgefnan skilgrein grunnverða vörunnar og betalingsinterval.
 
 á því er t.d. verð á $29.99 með settum 1 mánuði að því að reikna $29.99 hver mánuði. Á sama hátt, verð á $89.97 með settum 3 mánuðum er að reikna þessar sumur hver kvartal.
 
-### Reikningstímar (Billing Cycles)
+### Reikningstímar (Billing Cycles) {#billing-cycles}
 
 Í hluta um reikningstíma er nákvæmlega sagnir um hversu oft reikningurinn skal skiptast, og þetta er almennt skilningur í samræmi við samninga eða fastar tímabundin álagningar.
 
@@ -69,7 +69,7 @@ Verðsgefnan skilgrein grunnverða vörunnar og betalingsinterval.
 
 Til dæmis, ef verð vörunar er $29.99 með tveimur mánuði og 12 reikningstíma, skal það reikna $29.99 hver mánuði fyrir vöruna í næstu 12 mánuðum. Að annað höfundur: slítt settum skapar fasta verðarmiðil á $29.99 per mánuði í 12 mánuð og þá skal reikningurinn stoppa.
 
-### Prófa-tími (Trial Period)
+### Prófa-tími (Trial Period) {#trial-period}
 
 Við það að slá úr tilboðsprófa-brytjarinn getur netverslunarmannstjóri staða tölvunar fyrir vöruna.
 
@@ -77,7 +77,7 @@ Við það að slá úr tilboðsprófa-brytjarinn getur netverslunarmannstjóri 
 
 Á prófa-tíma er viðskiptavinum leyfið að nota vöruna og þeim skal ekki reikna þessar sumur þar sem prófa-tíminn hefur verið stuðlað á.
 
-### Settup-geð (Setup Fee)
+### Settup-geð (Setup Fee) {#setup-fee}
 
 Þú getur einnig skila settup-geð á planinn þinn.
 
@@ -85,7 +85,7 @@ Við það að slá úr tilboðsprófa-brytjarinn getur netverslunarmannstjóri 
 
 Þetta þýðir að viðskiptavinurinn skal halda yfir extra sumu á fyrstu reikningu (á hætti saman við verðarmiði planins) sem er samsvarandi geðum sem þú hefur sett í þessum hluta.
 
-### Aktivt (Active)
+### Aktivt (Active) {#active}
 
 Aktivt brytjarinn skilgreinir effektivt hvort vöruna sé að gangi fyrir viðskiptavini til nýrann skráningu.
 
@@ -93,13 +93,13 @@ Aktivt brytjarinn skilgreinir effektivt hvort vöruna sé að gangi fyrir viðsk
 
 Ef það eru núna viðkomandi viðskiptavinir á þessum plani, gerir það að skráninguna (toggle) er afskráð, og þetta fjarlægja planinn úr framtíðar skráningar. **Viðkomandi viðskiptavinir á planinum verða haldað eftir að þeir eru skilað til nýs plans eða fjarlægja frá planinum.**
 
-### Prödu mynd
+### Prödu mynd {#product-image}
 
 Knappinn **Upload Image** leyfir netverkstjórnara að nota media-bibliotékin til séravalda eða upplufna prödu mynd.
 
 ![Product image section](/img/config/product-image.png)
 
-### Slettja
+### Slettja {#delete}
 
 Knappinn **Delete Product** slettir prödu úr kerfinum. Hún kemur fram þegar prödu er skoðin.
 
@@ -107,11 +107,11 @@ Knappinn **Delete Product** slettir prödu úr kerfinum. Hún kemur fram þegar 
 
 Á skilnað við övrantar slettingar, er prödu ekki stóð í nokkrar "trash" (slettingu) tilstandi. Því að það sé slett í, er aðgenglið óskiljanlegt.
 
-### Prödu valkostir
+### Prödu valkostir {#product-options}
 
 Eft sem grunnupplýsingar um prödu eru settar upp, hjálpa **Product Options** netverkstjórnara við að skilgreina sérstaklega eiginleika prödu.
 
-#### Algengt
+#### Algengt {#general}
 
 Taburinn **General** skilgreinir algengu eiginleika prödu sem ekki er skýrð í nokkrum áhrifsvæðum fyrir övrantar taburefni um prödu.
 
@@ -125,7 +125,7 @@ Ultimate Multisite stendur fyrir fleiri prödutyper eins og Plan, Package og Ser
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Oppgraderingar og nedgrunnar
+#### Oppgraderingar og nedgrunnar {#up--downgrades}
 
 Þessi flugur sýnir uppgraderingarpáthefandi og nedgrunnarpáthefandi sem eru til við klienta í þeirri sérstakri styrkuna (tier).
 
@@ -143,7 +143,7 @@ Til að skilgreina plan group, sést viðkomandi plóf innan lista **plan group*
 
 Ultimate Multisite felur einnig í sér möguleika fyrir **order bump**, þar sem viðeigandi auðveldlegir vörp og þjónustur geta verið að bæta við plóf. Þetta er sýnt viðskiptavili sem aðferðarinnar vörp sem getur verið bætt við plóf á tíma á skráningu eða á meðan uppgraderingu fer.
 
-#### Prísbreytingar
+#### Prísbreytingar {#price-variations}
 
 Leiðing á verðarveitingum leyfir netverkstjórnara að skilgreina annar verðarstigi sem er afhängist á lengduna. Þessi innstilling gerir því mögulegt að bjóða upp á mánuðleg, kvartalslega, árs-eða einhver annað reikningstíma fyrir sama vögu. Til dæmis geturðu sett vögu upp á $29.99/mánað með viðskiptaheimildum á árinu til $249.99/ár.
 
@@ -165,7 +165,7 @@ Til dæmis, ef grunnverð vögu þinn er $29.99 per mánuð, gætirðu lagt við
 Verðarveitingar sjálfur þjónna ekki toggel eða skipti á front endi betalingsíðunni. Til að laða viðskiptavini til að skipta milli reikningstíma (t.d. Mánuðlegt / Ár) þarfurðu að bæta **Period Selection** (Val lengdunarstigs) fälti í betalingsformið þitt. Sjá [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) fyrir skref-skrefarferli.
 :::
 
-#### Skattar
+#### Skattar {#taxes}
 
 **Taxes** (Skattar) tabinn er tengd skattarstillingum sem eru gefnar í **Ultimate Multisite > Settings > Taxes** og sérstaklega viðskiptaheimildum skattarratum sem eru settir. Til að aktíva skattar og skilgreina viðkomandi skattarratum skoða þetta dokument á **Ultimate Multisite: Settings**.
 
@@ -179,7 +179,7 @@ Eftir að skattarhlutfall er sett í **Ultimate Multisite > Settings > Manage Ta
 
 Til að gefa til vörunar um að vönd sé skattafærandi, setni **Is Taxable** toggleinn á aktivt og veldu viðkomandi skattarhlutfall frá dropdowni Tax Category.
 
-#### Site Templates (Vöruskildi)
+#### Site Templates (Vöruskildi) {#site-templates}
 
 Í ensku eru site templates fullkomna WordPress-vísitaldir sem klónast yfir í vöndu síðar við byrjun meðferðar.
 
@@ -201,7 +201,7 @@ Líkurlega, **C** **hoose Available Site Templates** við mynd þástaflæðsfor
 
 Líkurlega, ef netversustjóri vill að staflæðsformletjum verði valdi í steginum í kassaferli, er innstillingin ' _default_ ' auðveldast tilfelli. Eða sem tækifæri til að fjarlægja og loka valstaflæðsformletsins og leggja valið á planinninn, gæti ' _assign new template_ ' eða ' _choose available site templates_ ' valdi verið góð.
 
-#### Staflætur (Sites)
+#### Staflætur (Sites) {#sites}
 
 **Sites** tabur er hluti af takmarkunni í Ultimate Multisite.
 
@@ -211,7 +211,7 @@ Líkurlega, ef netversustjóri vill að staflæðsformletjum verði valdi í ste
 
 Til að aktíva takmarkunina, set **limit sites** toggle í aktivt staða og gefðu stöðvar eftir hópinn í felti **site allowance**.
 
-#### Umsóknir (Visits)
+#### Umsóknir (Visits) {#visits}
 
 **Visits** tabur er enn hluti af kerfisins fyrir takmarkunni í Ultimate Multisite. Þessi innstilling leyfir reikning og eftir það hættingu einstaka gjöfendur á staflætur viðskiptavinin.
 
@@ -223,7 +223,7 @@ Til notkun þess eiginleika, setni **limit unique visits** (takmarkun einstakla 
 
 Eftir að þessi takmarkun er náð, mun Ultimate Multisite stoppa að veita viðskiptavendurinn sítt síti í stað þess að sýna texta sem gefur til vetta að takmarkanir séu náðar.
 
-#### Notendur (Users)
+#### Notendur (Users) {#users}
 
 Takmarkanir 'Users' í Ultimate Multisite leyfa netkunna stjórnenda að leggja takmark á fjölda notenda sem geta verið sköpt og gefnu hlutverki.
 
@@ -233,7 +233,7 @@ Til að aktíva takmarkunina setni **limit user** (takmarkun notenda) toggilinn 
 
 Næst fyrir hvert hlutverki sem skal takmarka, setni toggilinn nýttan við það og skildu hæsta upphæði í viðeigandi felti.
 
-#### Post Types (Gjörð postanna)
+#### Post Types (Gjörð postanna) {#post-types}
 
 **Post Types** tab leyfir netkunna stjórnendur að leggja nákvæma takmarkar á breiðan hlutfall gjörðum postanna í WordPress.
 
@@ -245,7 +245,7 @@ Til aktíva þess takmarkunssystem setni **limit post types** (takmarkun gjörð
 
 Næst, fyrir hvert posttype sem þú vilt takmarka, skaltu það á með því að draga það til höndar yraum og gefðu upp hæsta takmarki í viðeigandi feltinu.
 
-#### Disk Space (Skráningur)
+#### Disk Space (Skráningur) {#disk-space}
 
 **Disk Space** tabinn leyfir nýsköpunarstjórnendur að takmarka yfirborðsveita sem viðskiptavinir nota.
 
@@ -257,13 +257,13 @@ Til að aktíva takmarkningu diskveits, set **limit disk size per site** toggle 
 
 Næst, gefðu upp hæsta takmarki í megabyte í feltinu **disk space allowance**.
 
-#### Custom Domain (Eigilegt vísar)
+#### Custom Domain (Eigilegt vísar) {#custom-domain}
 
 Með því að skipta þessari möguleika á á, geturðu leyfa eigilega domænum á þessum plani sér.
 
 ![Custom Domains tab](/img/config/product-custom-domains.png)
 
-#### Themes (Skynslur)
+#### Themes (Skynslur) {#themes}
 
 **Themes** tabinn í mögulegum skiptum á netverkssjónvaröfunni leyfir netverkstjórnendur að gera skynslur til viðskiptavina til vals og að þýðja valkostnaðar fyrir skynsluna.
 
@@ -281,7 +281,7 @@ _**Athugi: Til að skynslur verji til viðskiptavina, þær verjast netverkstjó
 
 Í **Aðskiltu** (Available) tilstandi er þemað aðgengst fyrir viðskiptavininn til sjálfsvirkunar. Til heldurs í **Not Available** (Ekki aðgengst) tilstandi fjernir það viðskiptavinni möguleika á að virkja þemað. Í lokum ferlið **Force Activate** (Virkja á) þar sem val og virkjun þemað er tvíðvirk, sem setur það sem dæmi upp á síðunni við sköpun.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Eins og í tabinn fyrir Themes leyfir Ultimate Multisite netverkstjórnara að skilgreina sýnargildi plugins til viðskiptavina eins og stöðu þeirra þegar ný síða er skönnuð.
 
@@ -301,7 +301,7 @@ Innstillingin **Force Activate & Lock** virkar eins og áður, en hindrar viðko
 
 Netverkstjóri getur vilja að skoða innstillingar Force Activate & Lock og Force Inactivate & Lock í samnvirtun með vísitalmblöndunir (site templates) sem plugins, þar sem pluginstaðalsetningar innan blöndunlurnum gæti verið áhrifsvælt af þessum innstillingum ef þær eru valin.
 
-#### Viðbótum fyrir viðbrögð (Reset Limitations)
+#### Viðbótum fyrir viðbrögð (Reset Limitations) {#reset-limitations}
 
 Viðbótum fyrir viðbrögð (Reset Limitations) taburinn setja upp aftur allar sérstaka takmarkanir sem eru settar á vöruna. Til að setja upp aftur takmarkanir, klikkaðu á knappa **reset limitations**.
 
@@ -311,7 +311,7 @@ Til að staðfesta aðgengni drauma (action) dráum **confirm reset** skráningu
 
 ![Reset Limitations tab](/img/config/product-reset-limitations.png)
 
-## Breyta, Duplika eða Slettein Vöruna (Edit, Duplicate, or Delete Product)
+## Breyta, Duplika eða Slettein Vöruna (Edit, Duplicate, or Delete Product) {#edit-duplicate-or-delete-product}
 
 Nýr vörur getur breytt, duplika eða slettein með því að ferðast í **Ultimate Multisite > Products** og halda á núverandi vörunafnullu.
 

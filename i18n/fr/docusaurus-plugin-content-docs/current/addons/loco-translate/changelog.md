@@ -3,14 +3,14 @@ title: Loco Translate Historique des modifications
 sidebar_position: 99
 _i18n_hash: ae0920c4cf20523c12e43959ac518da2
 ---
-# Loco Translate Historique des modifications
+# Loco Translate Historique des modifications {#loco-translate-changelog}
 
-### 1.0.1
+### 1.0.1 {#101}
 * Compatibilité améliorée avec la dernière version de Loco Translate
 * Contrôle d'accès amélioré pour une meilleure sécurité
 * Optimisations de performance
 
-### 1.0.0
+### 1.0.0 {#100}
 * Version initiale
 * Répertoires de traduction spécifiques au site
 * Système de priorité de traduction

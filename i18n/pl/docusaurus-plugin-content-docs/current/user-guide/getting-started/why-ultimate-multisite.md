@@ -3,11 +3,11 @@ title: Dlaczego Ultimate Multisite
 sidebar_position: 14
 _i18n_hash: cfa1b443421e07ba865c992315f6a1fa
 ---
-# Dlaczego warto wybrać Ultimate Multisite
+# Dlaczego warto wybrać Ultimate Multisite {#why-ultimate-multisite}
 
 Jeśli dotarłeś do tego artykułu, prawdopodobnie słyszałeś, że nasza wtyczka może pomóc w realizacji Twojego pomysłu na biznes. Mamy nadzieję, że po przeczytaniu tego tekstu znajdziesz wszystkie potrzebne odpowiedzi.
 
-## Czym jest Ultimate Multisite?
+## Czym jest Ultimate Multisite? {#what-is-ultimate-multisite}
 
 Ultimate Multisite to wtyczka do WordPress Multisite, która pozwala oferować klientom WaaS (Website as a Service, czyli stronę internetową jako usługę). Dzięki naszej wtyczce możesz tworzyć różne poziomy subskrypcji i pobierać od klientów cykliczne opłaty za hosting ich stron w Twojej sieci Multisite.
 
@@ -15,7 +15,7 @@ Ultimate Multisite umożliwia przyjmowanie płatności przez różne bramki (tak
 
 To dopiero początek — funkcjonalność wtyczki można rozszerzać za pomocą dodatków i webhooków.
 
-## Inne funkcje
+## Inne funkcje {#other-features}
 
 Ultimate Multisite oferuje również:
 
@@ -33,11 +33,11 @@ A także bardziej zaawansowane funkcje:
 
   * API wyszukiwania i zamiany: możesz również oznaczać szablony stron znacznikami zastępczymi, takimi jak {{site_name}}, i używać API wyszukiwania i zamiany, aby automatycznie wypełniać te znaczniki danymi podanymi przez klienta zaraz po rejestracji.
 
-## Przykłady zastosowań
+## Przykłady zastosowań {#use-cases}
 
 Czas przyjrzeć się niektórym możliwym zastosowaniom Ultimate Multisite.
 
-### Przypadek 1: Agencja
+### Przypadek 1: Agencja {#case-1-an-agency}
 
 Zazwyczaj główne kompetencje agencji koncentrują się na projektowaniu stron internetowych, a usługi takie jak hosting czy marketing stanowią ofertę dodatkową.
 
@@ -47,7 +47,7 @@ Dla agencji Ultimate Multisite oferuje niesamowitą wartość dzięki możliwoś
 
 Agencje zyskają spokój ducha z Ultimate Multisite, mogąc skupić się na tym, co robią najlepiej — projektowaniu wyjątkowych stron internetowych.
 
-### Przypadek 2: Dostawca niszowy
+### Przypadek 2: Dostawca niszowy {#case-2-niche-provider}
 
 Stare powiedzenie mówi: „Rób jedną rzecz, ale rób ją dobrze". Dla wielu specjalistów oznacza to tworzenie produktu lub usługi wokół jednego głównego pomysłu.
 
@@ -57,7 +57,7 @@ Jedna z innowacyjnych funkcji Ultimate Multisite — szablon strony to strona z 
 
 Dla dostawcy niszowych stron i usług daje to niezrównaną przewagę — możliwość natychmiastowego utworzenia strony gotowej do działania z niestandardowymi wtyczkami i projektem. Klient musi podać tylko minimum informacji, aby zakończyć proces.
 
-### Przypadek 3: Hosting stron WordPress
+### Przypadek 3: Hosting stron WordPress {#case-3-wordpress-web-hosting}
 
 Istnieje wiele sposobów hostowania stron WordPress, ale rzadko kiedy sprowadza się to po prostu do udostępnienia klientowi przestrzeni dyskowej z preinstalowaną wersją WordPress. Wynika to z faktu, że wiele decyzji i aspektów musi się złożyć, aby zapewnić sensowną usługę.
 

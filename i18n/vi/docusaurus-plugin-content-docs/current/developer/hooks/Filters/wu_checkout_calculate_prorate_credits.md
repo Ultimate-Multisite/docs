@@ -4,20 +4,20 @@ title: Bộ lọc - wu_checkout_calculate_prorate_credits
 sidebar_label: wu_checkout_calculate_prorate_credits
 _i18n_hash: 154cf63c15da66e7cb0faee9530b45c3
 ---
-# Filter: wu_checkout_calculate_prorate_credits
+# Filter: wu_checkout_calculate_prorate_credits {#filter-wucheckoutcalculateproratecredits}
 
 Cho phép các nhà phát triển plugin can thiệp vào giá trị tín dụng.
 
-## Tham số
+## Tham số {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
 | $credit | `int` | Số tiền tín dụng. |
 | $cart | `self` | Đối tượng giỏ hàng này. |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 Được định nghĩa tại [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1287) ở dòng 1287

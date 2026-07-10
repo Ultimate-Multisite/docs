@@ -1,32 +1,32 @@
 ---
-title: Sayt Şablonlarında Avtomatik Axtarış və Əvəz Etmə
+title: Sayt şablonlarında avtomatik axtarış və əvəzetmə
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Sayt Şablonlarında Avtomatik Axtar və Əvəz Etmə (v2)
+# Sayt şablonlarında avtomatik axtarış və əvəzləmə (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**Bu təlimat üçün WP UItimo 2.x versiyası tələb olunur.**_
+_**Bu təlimat WP UItimo 2.x versiyasını tələb edir.**_
 
-Ultimate Multisite-in ən güclü xüsusiyyətlərindən biri qeydiyyat formasına ixtiyari mətn, rəng və seçimlər sahələri əlavə etmək imkanıdır. Bu məlumatları topladıqdan sonra, bunu istifadə edərək seçilmiş sayt şablonlarının müəyyən hissələrindəki məzmunu avtomatik doldura bilərik. Daha sonra yeni sayt nəşr edildikdə, Ultimate Multisite yer tutucuları qeydiyyat zamanı daxil edilmiş faktiki məlumatlarla əvəz edəcək.
+Ultimate Multisite-in ən güclü xüsusiyyətlərindən biri qeydiyyat formasına ixtiyari mətn, rəng və seçim sahələri əlavə etmək imkanıdır. Bu məlumatı əldə etdikdən sonra onu seçilmiş sayt şablonunun müəyyən hissələrində məzmunu əvvəlcədən doldurmaq üçün istifadə edə bilərik. Sonra yeni sayt dərc edildikdə, Ultimate Multisite yer tutucuları qeydiyyat zamanı daxil edilmiş faktiki məlumatla əvəz edəcək.
 
-Məsələn, şablon saytlarınızda yer tutucular istifadə edə bilərsiniz. Yer tutucular iki qeyri-müəyyən mötərizə ilə əhatə edilməlidir - {{placeholder_name}}.
+Məsələn, şablon saytlarınızı yer tutucularla hazırlaya bilərsiniz. Yer tutucular ikiqat fiqurlu mötərizələrin arasında əlavə edilməlidir - {{placeholder_name}}.
 
-Daha sonra, bu məlumatları toplamaq üçün uyğun bir qeydiyyat sahəsi əlavə edə bilərsiniz.
+Sonra həmin məlumatı toplamaq üçün sadəcə uyğun qeydiyyat sahəsi əlavə edə bilərsiniz
 
-Müştəriniz o sahəni qeydiyyat zamanı doldura biləcək.
+Müştəriniz daha sonra qeydiyyat zamanı həmin sahəni doldura biləcək.
 
-Ultimate Multisite isə yer tutucuları müştəri tərəfindən verilən məlumatlarla avtomatik olaraq əvəz edəcək.
+Ultimate Multisite daha sonra yer tutucuları müştəri tərəfindən təqdim edilmiş məlumatlarla avtomatik olaraq əvəz edəcək.
 
-## **"Yer tutucularla dolu şablon" problemini həll etmək**
+## **"yer tutucularla dolu şablon" probleminin həlli** {#solving-the-template-full-of-placeholders-problem}
 
-Bütün bunlar əladır, lakin qarşımıza pis bir problem çıxır: müştərilərimizin ziyarət edə biləcəyi sayt şablonlarımız görünüşü pis, çox yer tutucularla dolu olur və bu yer tutucular çox məlumat vermir.
+Bunların hamısı əladır, lakin xoşagəlməz bir problemlə qarşılaşırıq: indi müştərilərimizin ziyarət edə biləcəyi sayt şablonlarımız çox şey ifadə etməyən yöndəmsiz yer tutucularla doludur.
 
-Bunu həll etmək üçün, yer tutucular üçün saxta dəyərlər təyin etmək seçimlərimiz var və müştərilərin ziyarət etdiyi zaman şablon saytlarındakı məzmunlarını axtarıb əvəz etmək üçün bu dəyərlərdən istifadə edirik.
+Bunu həll etmək üçün yer tutucular üçün saxta dəyərlər təyin etmək seçimini təqdim edirik və müştəriləriniz ziyarət edərkən şablon saytlarda onların məzmununu axtarıb əvəz etmək üçün həmin dəyərlərdən istifadə edirik.
 
-Yer tutucu redaktoru üçün **Ultimate Multisite > Settings > Sites** səhifəsinə keçərək, yan çubuğunda "Edit Placeholders" (Yer tutucuları Redaktə Et) linkinə klikləyərək daxil ola bilərsiniz.
+Şablon yer tutucuları redaktoruna daxil olmaq üçün **Ultimate Multisite > Settings > Sites** bölməsinə keçin, Site Template Options sahəsinə qədər aşağı sürüşdürün və sonra **Edit Placeholders** keçidinə klikləyin.
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Sites tənzimləmələri səhifəsində Site Template Options sahəsi](/img/config/settings-sites-templates-section.png)
 
-Bu sizi yer tutucuların məzmun redaktoruna aparacaq ki, burada yer tutucuları və onların müvafiq məzmunlarını əlavə edə bilərsiniz.
+Bu sizi yer tutucuların məzmun redaktoruna aparacaq; burada yer tutucuları və onların müvafiq məzmununu əlavə edə bilərsiniz.
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![Şablon yer tutucuları redaktorunun giriş nöqtəsi](/img/config/settings-sites-templates-section.png)

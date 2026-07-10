@@ -3,13 +3,13 @@ title: Kufamba Kuti Kuondesha Modyu ya Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# Kufungurwa Kwemabasa YeMabasa (Site Builder Mode)
+# Kufungurwa Kwemabasa YeMabasa (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **Kufungurwa kwemabasa yeMabasa (Site Builder mode) kwanenge vachivayo mu Superdav AI Agent v1.12.0.** Kana wakaendera ku Site Builder mode, unofanira kutamba ku **Setup Assistant agent** kuti uingine umakwana kwe theme nekuvaka site.
 
-## Kufanana Kwakanaka? (What Happened?)
+## Kufanana Kwakanaka? (What Happened?) {#what-happened}
 
-### Site Builder Mode (Legacy)
+### Site Builder Mode (Legacy) {#site-builder-mode-legacy}
 
 Site Builder mode ndiri mufundisi wezwi (wizard-based interface) yokuva:
 
@@ -18,7 +18,7 @@ Site Builder mode ndiri mufundisi wezwi (wizard-based interface) yokuva:
 - Kuti uone theme
 - Kuvaka nguva yakare ye content
 
-### Chii Chiri Kufamba Kwake? (What Replaced It?)
+### Chii Chiri Kufamba Kwake? (What Replaced It?) {#what-replaced-it}
 
 **Setup Assistant agent** ndiri inozvaka zvose zveSite Builder mode nekuita izvi:
 
@@ -27,15 +27,15 @@ Site Builder mode ndiri mufundisi wezwi (wizard-based interface) yokuva:
 - Kuti zivimbike neTheme Builder onboarding
 - Kuti iwe uone site_brief (memory) inosvika panguva dzine mabhariro
 
-## Kana Wakaendera Ku Site Builder Mode
+## Kana Wakaendera Ku Site Builder Mode {#if-you-were-using-site-builder-mode}
 
-### Sites Dako Rinobva
+### Sites Dako Rinobva {#your-sites-are-safe}
 
 - Sites dzakare zvakagadzirwa neSite Builder mode dzinobva kuenda
 - Hakuna kunenge kune data kana kusarudza kwe site
 - Unogona kutamba kuita zvinobva nesite zako zvakare
 
-### Tamba Ku Setup Assistant Agent
+### Tamba Ku Setup Assistant Agent {#migrate-to-setup-assistant-agent}
 
 Kuti uingine vakaenderaite setup ye site dzine nguva yakare kana kuti mutambire theme, shandisa Setup Assistant agent:
 
@@ -51,7 +51,7 @@ kana
 
 Setup Assistant agent inopa zvinhu zvakawanda nekuita izvi.
 
-## Kufanana Kwakanaka: Site Builder vs. Setup Assistant
+## Kufanana Kwakanaka: Site Builder vs. Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | Feature | Site Builder (Chiri Kufamba) | Setup Assistant (Chine Kuva) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent inopa zvinhu zvakawanda nekuita izvi.
 | Future sessions | Kuita zvinobva nekuendesa nguva yakare | Kutamba site_brief inosvika |
 | Flexibility | Workflow inosvika | Conversation inosvika (inokwanisa kuendesa) |
 
-## Kufamba Kwemabasa Ku Setup Assistant Agent
+## Kufamba Kwemabasa Ku Setup Assistant Agent {#migrating-to-setup-assistant-agent}
 
-### Kune Sites Dzine Nguva Yakare
+### Kune Sites Dzine Nguva Yakare {#for-new-sites}
 
 Kuti unenge kuita Site Builder mode:
 
@@ -76,7 +76,7 @@ Kuti unenge kuita Site Builder mode:
    - Kuita theme (theme generation)
    - Kuratidza zvinhu zvinotanga (initial configuration)
 
-### Kuti Zvinenge Zvinobva (For Existing Sites)
+### Kuti Zvinenge Zvinobva (For Existing Sites) {#for-existing-sites}
 
 Kana uri nesite yakaita Site Builder mode:
 
@@ -85,7 +85,7 @@ Kana uri nesite yakaita Site Builder mode:
 3. Setup Assistant agent ichakubatsira kuita theme yenyu yakatanga
 4. Data ya site yako inozuva isingavei
 
-### Kuti Zvinenge Zvinobva (For Theme Changes)
+### Kuti Zvinenge Zvinobva (For Theme Changes) {#for-theme-changes}
 
 Kuti zvisina Site Builder mode dziri kuita selection ye theme:
 
@@ -95,9 +95,9 @@ Kuti zvisina Site Builder mode dziri kuita selection ye theme:
    - Kuita theme yenyu yakatanga (Generate a custom theme)
    - Kuratidza iye munyaka wako (Activate it on your site)
 
-## Zvinosimbisa Kuti Zvisina Site Builder mode dziri kuita selection ye theme:
+## Zvinosimbisa Kuti Zvisina Site Builder mode dziri kuita selection ye theme: {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. Chibvumiro
@@ -106,7 +106,7 @@ Kuti zvisina Site Builder mode dziri kuita selection ye theme:
 4. Done
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. Describe your site's purpose
@@ -117,42 +117,42 @@ Kuti zvisina Site Builder mode dziri kuita selection ye theme:
 6. Site brief stored for future sessions
 ```
 
-## Zvinhu Zvinosimbisa Kuita Setup Assistant Agent
+## Zvinhu Zvinosimbisa Kuita Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### Kuti Zvinobva (More Flexible)
+### Kuti Zvinobva (More Flexible) {#more-flexible}
 
 - Kuratidza site yako nechiitiko chinobva (natural language)
 - Kuwana zvinoda kuita (recommendations) zvako
 - Kuratidza zvinhu dzinoda dzako
 
-### Kuratidza Zvinhu Zvinogona Kubatsira (Better Customization)
+### Kuratidza Zvinhu Zvinogona Kubatsira (Better Customization) {#better-customization}
 
 - Kuita theme yenyu yakatanga (Custom theme generation)
 - Zvibvunzo zvemfumo ye design (Design system decisions)
 - Tokens dzinobva zvinosimbisa (Persistent design tokens)
 
-### Kuti Zvinenge Zvinozuva (Persistent Memory)
+### Kuti Zvinenge Zvinozuva (Persistent Memory) {#persistent-memory}
 
 - Site_brief yako inozuva isingavei
 - Agents dzakare dzichida kuona site yako
 - Usina kutaura zvinhu dzinobva zvinotanga
 
-### Workflow Inogara Yese Kubatana (Integrated Workflow)
+### Workflow Inogara Yese Kubatana (Integrated Workflow) {#integrated-workflow}
 
 - Onboarding we Theme Builder
 - Skill ya Aesthetics ye Design System
 - Kuita Visibility controls
 - Zvinhu zvose zvichida kubatana zvakanaka
 
-## Kuti Zvinenge Zvinobva (Troubleshooting)
+## Kuti Zvinenge Zvinobva (Troubleshooting) {#troubleshooting}
 
-### Ndinofamba kuona Site Builder mode
+### Ndinofamba kuona Site Builder mode {#i-cant-find-site-builder-mode}
 
 Site Builder mode yakadzikwa. Unogona kutamba Setup Assistant agent:
 
 "Ndinirisa kuti ndikwanise kuita site we chinobva"
 
-### Ndinoda kutamba site chinobva kuburikidza neSite Builder
+### Ndinoda kutamba site chinobva kuburikidza neSite Builder {#i-want-to-recreate-a-site-from-site-builder}
 
 Ungava kutaura iye nekubatsira kwakawanda (Setup Assistant agent):
 
@@ -161,7 +161,7 @@ Ungava kutaura iye nekubatsira kwakawanda (Setup Assistant agent):
 3. **Agent ichagadzira theme inogona kuitwa**
 4. **Site_brief yako itaiwe kuti uone mberi.**
 
-### Site Builder yako yakanaka isingazivikanzi
+### Site Builder yako yakanaka isingazivikanzi {#my-existing-site-builder-site-isnt-working}
 
 Sites dzakagadzirwa neSite Builder mode dzinobva kunoenda kuenda. Kana uchida kuratidza matambudziko:
 
@@ -170,7 +170,7 @@ Sites dzakagadzirwa neSite Builder mode dzinobva kunoenda kuenda. Kana uchida ku
 3. **Tsvaga logs dzinobva kuWordPress**
 4. **Tsvaga support kana matambudziko akaita zvinhu zvakawanda.**
 
-### Ndinogona kuratidza templates dzangu dzakare?
+### Ndinogona kuratidza templates dzangu dzakare? {#can-i-still-use-my-old-site-builder-templates}
 
 Templates dzemSite Builder hazvikanzi kuitwa mberi. Asi:
 
@@ -178,14 +178,14 @@ Templates dzemSite Builder hazvikanzi kuitwa mberi. Asi:
 - Ungava kutamba sites dzakagadzirwa zvinhu zvakasiyi nekubatsira kwakawanda (Setup Assistant agent)
 - Setup Assistant agent inopa zvinokwanisa kuitika zvakawanda.
 
-## Zvinhu Zvinotamba Mberi
+## Zvinhu Zvinotamba Mberi {#next-steps}
 
 1. **Kuti usave nesite chinobva:** Shandi Setup Assistant agent
 2. **Kuti usave nesite yakanga yakanaka:** Shandi kuenda neine iye
 3. **Kuti usave nekuura theme:** Shandi Setup Assistant agent
 4. **Kuti usave nekuratidza nzira dzehunhu (design refinement):** Shandi Design System Aesthetics skill
 
-## Zvinotamba Mberi
+## Zvinotamba Mberi {#related-topics}
 
 - **Theme Builder Onboarding**: Kutamba kwakawanda kune themes dzakasiyi
 - **Setup Assistant Agent**: Kutamba site kuburikidza nekubatsira kweagent

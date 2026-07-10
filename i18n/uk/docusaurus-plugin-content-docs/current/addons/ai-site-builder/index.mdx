@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Вимоги
+## Вимоги {#requirements}
 
 - WordPress 5.3 або вище
 - PHP 7.4 або вище
 - Плагін Ultimate Multisite (активний)
 
-## Встановлення
+## Встановлення {#installation}
 
 1. Завантажте файли аддону до каталогу `/wp-content/plugins/`
 2. Активуйте плагін через меню «Плагіни» у WordPress
 3. Налаштуйте аддон у мережевому адміністраторі
 
-## Розробка
+## Розробка {#development}
 
-### Налаштування
+### Налаштування {#setup}
 
 ```bash
 # Встановлення залежностей
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Структура проєкту
+### Структура проєкту {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Правила модернізації коду
 ```
 
-### Тестування
+### Тестування {#testing}
 
 Аддон включає комплексний фреймворк для тестування:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Покриття тестами (Test Coverage)**: Налаштовано для відстеження покриття кодом
 - **Тестування Multisite**: Тести виконуються в середовищі Multisite
 
-### Стандарти коду
+### Стандарти коду {#code-standards}
 
 - **Стандарти кодування WordPress**: Забезпечується за допомогою PHPCS
 - **Сумісність з PHP 7.4+**: Підтримуються сучасні функції PHP
 - **Статичний аналіз**: Інтеграція PHPStan для перевірки типів
 - **Модернізація коду**: Правила Rector для оновлення PHP
 
-### Система збірки
+### Система збірки {#build-system}
 
 - **Обробка ресурсів (Asset Processing)**: Мініфікація файлів CSS/JS
 - **Локалізація (Translation)**: Генерація файлів POT
 - **Пакування (Packaging)**: Створення архіву для розповсюдження
 - **Режим розробки (Development Mode)**: Немініфіковані ресурси для налагодження
 
-## Конфігурація
+## Конфігурація {#configuration}
 
 Аддон підтримує різні параметри конфігурації, доступні через інтерфейс мережевого адміністратора.
 
-## Хуки та фільтри
+## Хуки та фільтри {#hooks-and-filters}
 
-### Дії (Actions)
+### Дії (Actions) {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Викликається після ініціалізації аддону
 - `ultimate-multisite-ai-site-builder_loaded` - Викликається після завантаження всіх файлів аддону
 
-### Фільтри (Filters)
+### Фільтри (Filters) {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Зміна налаштувань аддону
 - `ultimate-multisite-ai-site-builder_enabled` - Перевизначення статусу увімкнення/вимкнення аддону
 
-## Ліцензія
+## Ліцензія {#license}
 
 Цей аддон ліцензовано під GPL v3 або пізнішою версією.
 
-## Підтримка
+## Підтримка {#support}
 
 Для підтримки та документації відвідайте [MultisiteUltimate.com](https://multisiteultimate.com)
-## Журнал змін (Changelog)
+## Журнал змін (Changelog) {#changelog}
 
 - Версія 1.0.1 (2025-09-28): змінено префікс на ultimate-multisite; оновлено текстову область; збільшено версію.
 

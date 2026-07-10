@@ -3,19 +3,19 @@ title: 'Lecția 2: Alegerea Nișei Tale'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Lecția 2: Alegerea Nișei
+# Lecția 2: Alegerea Nișei {#lesson-2-picking-your-niche}
 
 În Lecția 1 am stabilit de ce nișa este mai puternică decât abordarea generală. Acum trebuie să-ți alegi și tu nișa. Această lecție îți oferă un cadru de lucru pentru a găsi și valida o nișă înainte de a investi timp în dezvoltarea unei soluții pentru ea.
 
-## Unde ne-am oprit
+## Unde ne-am oprit {#where-we-left-off}
 
 Am definit conceptul FitSite: o platformă de website pentru studiouri de fitness. Dar cum am ajuns la studiouri de fitness în mod specific? Această lecție îți prezintă procesul, astfel încât să îl poți aplica pentru a-ți găsi propria nișă.
 
-## Cele Trei Criterii
+## Cele Trei Criterii {#the-three-criteria}
 
 O nișă bună pentru o platformă de website îndeplinește trei condiții:
 
-### 1. Au nevoie de website-uri, dar au dificultăți în a obține unele bune
+### 1. Au nevoie de website-uri, dar au dificultăți în a obține unele bune {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Caută industrii în care:
 
@@ -26,7 +26,7 @@ Caută industrii în care:
 
 **Studiourile de fitness se potrivesc**: membrii se așteaptă să găsească programul de clase, tarifele și rezervările online. Majoritatea website-urilor de studio sunt învețite sau construite pe șabloane generice care nu îndeplinesc scopul.
 
-### 2. Afacerile își pot permite o abonament lunar
+### 2. Afacerile își pot permite o abonament lunar {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Clienții tăi țintă trebuie să fie:
 
@@ -36,7 +36,7 @@ Clienții tăi țintă trebuie să fie:
 
 **Studiourile de fitness se potrivesc**: ele plătesc deja pentru software de rezervare, procesare plăți și instrumente de marketing. Un abonament pentru website este o adăugare naturală.
 
-### 3. Comunică între ei
+### 3. Comunică între ei {#3-they-talk-to-each-other}
 
 Cele mai bune nișe au:
 
@@ -46,9 +46,9 @@ Cele mai bune nișe au:
 
 **Studiourile de fitness se potrivesc**: proprietarii de studio participă la evenimente din industria fitness, sunt implicați în comunități online și își partajează frecvent instrumente și servicii cu colegii.
 
-## Cum să găsești candidați de nișă
+## Cum să găsești candidați de nișă {#how-to-find-niche-candidates}
 
-### Începe cu ce știi
+### Începe cu ce știi {#start-with-what-you-know}
 
 Experiența ta existentă este un avantaj. Ia în considerare:
 
@@ -56,7 +56,7 @@ Experiența ta existentă este un avantaj. Ia în considerare:
 - Hobby-urile sau interesele în care înțelegi comunitatea
 - Rețelele profesionale ale căror membru ești deja
 
-### Caută semnale de nevoie (Pain Signals)
+### Caută semnale de nevoie (Pain Signals) {#look-for-pain-signals}
 
 Caută dovezi că afacerile dintr-o nișă au dificultăți cu website-urile:
 
@@ -65,7 +65,7 @@ Caută dovezi că afacerile dintr-o nișă au dificultăți cu website-urile:
 - Examinează website-uri reale din nișă — sunt majoritatea de calitate slabă?
 - Verifică dacă există concurenți și cât de bine lează piața
 
-### Evaluează economia
+### Evaluează economia {#evaluate-the-economics}
 
 Pentru fiecare nișă candidat, estimează:
 
@@ -73,11 +73,11 @@ Pentru fiecare nișă candidat, estimează:
 - **Disponibilitatea de plată**: Ce cheltuiesc în prezent pentru instrumente similare?
 - **Potențialul de valoare pe viață**: Sunt aceste afaceri stabile, sau se dezabonărează rapid?
 
-## Validarea Nișei Tale
+## Validarea Nișei Tale {#validating-your-niche}
 
 Înainte de a construi orice, validează cererea:
 
-### Vorbește cu potențialii clienți
+### Vorbește cu potențialii clienți {#talk-to-potential-customers}
 
 Contactează 10-15 proprietari de afaceri din nișa țintă. Roagă:
 
@@ -88,17 +88,17 @@ Contactează 10-15 proprietari de afaceri din nișa țintă. Roagă:
 
 Nu vinde încă. Ești în căutare de informații.
 
-### Verifică peisajul concurenței
+### Verifică peisajul concurenței {#check-competitor-landscape}
 
 - **Fără concurenți**: Poate însemna lipsă de cerere, sau poate o oportunitate neexploatată. Conversațiile cu clienții îți vor spune care este cazul.
 - **Câțiva concurenți**: Semn bagus. Validatează cererea. Studiază ce fac bine și unde eșuează.
 - **Mulți concurenți**: Este mai greu de intrat, dar tot este posibil dacă poți diferenția clar.
 
-### Creează o pagină de destinație (Landing Page)
+### Creează o pagină de destinație (Landing Page) {#build-a-landing-page}
 
 Înainte de a construi platforma, creează o pagină de destinație simplă care descrie soluția ta pentru nișă și colectează înscrieri de email. Rulează o mică campanie de advertising țintit pentru a testa interesul. Dacă oamenii se înscriu, ai o validare.
 
-## Aplicarea acestui model la FitSite
+## Aplicarea acestui model la FitSite {#applying-this-to-fitsite}
 
 Iată cum a scorat FitSite în raport cu criteriile:
 
@@ -112,7 +112,7 @@ Iată cum a scorat FitSite în raport cu criteriile:
 
 Validarea a confirmat oportunitatea. Acum construim.
 
-## Idei de nișe de luat în considerare
+## Idei de nișe de luat în considerare {#niche-ideas-to-consider}
 
 Dacă fitness nu este piața ta, iată alte nișe care îndeplinesc criteriile:
 
@@ -127,7 +127,7 @@ Dacă fitness nu este piața ta, iată alte nișe care îndeplinesc criteriile:
 
 Fiecare dintre acestea au aceleași caracteristici: nevoi clare de website, capacitatea de a plăti și recomandări din comunitate.
 
-## Ce am construit în această lecție
+## Ce am construit în această lecție {#what-we-built-this-lesson}
 
 - **Un cadru de selecție a nișei**: trei criterii pentru evaluarea oricărei nișe
 - **Metode de validare**: conversații cu clienții, analiza concurenței, testarea paginii de destinație

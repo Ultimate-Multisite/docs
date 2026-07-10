@@ -4,11 +4,11 @@ title: פילטר - wu_apc_get_meta_content_default_content
 sidebar_label: wu_apc_get_meta_content_default_content
 _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 ---
-# מסנן: wu_apc_get_meta_content_default_content
+# מסנן: wu_apc_get_meta_content_default_content {#filter-wuapcgetmetacontentdefaultcontent}
 
 מאפשר למפתחים לסנן את ערכי ברירת המחדל.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | שם | סוג | תיאור |
 |------|------|-------------|
@@ -16,12 +16,12 @@ _i18n_hash: ca95d0731a5508ad059b3ff8bef258e5
 | $meta_type | `string` | סוג נתוני המטא שיש לשלוף. |
 | $meta_key | `string` | שם שדה המטא. |
 
-### מאז
+### מאז {#since}
 
 - 1.4.0
-### מקור
+### מקור {#source}
 
 מוגדר ב[`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L68) בשורה 68
 
-## מחזיר
+## מחזיר {#returns}
 ערך ברירת מחדל חדש.

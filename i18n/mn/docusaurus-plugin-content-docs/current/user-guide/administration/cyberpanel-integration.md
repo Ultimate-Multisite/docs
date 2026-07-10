@@ -3,25 +3,25 @@ title: CyberPanel-ийн нэгтгэл
 sidebar_position: 21
 _i18n_hash: d0607874b556c583dac2aaa33ba1dc1d
 ---
-# CyberPanel Integration
+# CyberPanel Integration {#cyberpanel-integration}
 
 Энэхүү гарын авлага нь Ultimate Multisite-ийн CyberPanel интеграцийг хэрхэн тохируулахыг тайлж байна. Энэ нь таны сүлжээнд байгаа домен шүүлтүүр (mapped domains)-ийг CyberPanel дээр виртуальный хост болгон автоматаар нэмэх (багасах) боломжийг, мөн Let's Encrypt-ээр SSL-ийг автоматаар олгох сонголтыг багтаасан юм.
 
-## Яаж ажилладаг вэ?
+## Яаж ажилладаг вэ? {#what-it-does}
 
 - Ultimate Multisite-д домен шүүлтүүр (domain) нэмэгдэх үед, интеграцийн систем нь тухайн доменд зориулсан виртуальный хостын үүсгэхийн тулд CyberPanel API-ийг дуудна.
 - Домен шүүлтүүрийг хасна (remove) үед, интеграцийн систем нь харгалзах виртуальный хостыг устгахын тулд API-д дуудлага хийнэ.
 - Автомат SSL-ийг идэвхжүүлсэн бол, интеграци нь виртуальный хостын үүсгэгдсэний дараа Let's Encrypt-ийн сертификаты олголтыг шууд эхлүүлнэ.
 - Домен шүүлтүүрийн тохиргоо (Domain Mapping settings)-д байгаа "Auto-create www subdomain" тохиргооны үндсэн дээр `www.` алиасыг нэмэх эсвэл хасах боломжтой.
 
-## Хэрэгтэй зүйлс (Prerequisites)
+## Хэрэгтэй зүйлс (Prerequisites) {#prerequisites}
 
 - Ажиллаж буй CyberPanel үйлчилгээ (2.3 эсвэл түүнээс дээш хувилбар зөвлөгдсөн). Энэ нь таны WordPress серверээс хүртэгдэх ёстой.
 - CyberPanel дээр аль хэдийн таны WordPress сүлжээний үндсэн (root) байрлалыг үйлчилж буй вебсайт байх ёстой. Интеграци нь шинэ виртуальный хостүүдийг энэ серверт холбоно.
 - CyberPanel API-ийн хандалтыг идэвхжүүлсэн байх. Баталгаажуулалт нь таны CyberPanel администраторын хэрэглэгчийн нэр болон нууц үгийг ашиглана.
 - Автомат SSL олгохоос өмнө, домен шүүлтүүрүүдийн DNS бүрт таны серверийн IP хаяг заасан байх шаардлагатай.
 
-## Шаардлага (Requirements)
+## Шаардлага (Requirements) {#requirements}
 
 Дараах тогтмол утгуудыг `wp-config.php` файлд тодорхойлох хэрэгтэй:
 
@@ -82,9 +82,9 @@ define('WU_CYBERPANEL_EMAIL', 'admin@yourdomain.com');
 2. **Test Connection**-ий товч.
 3. Амжилттай мессеж нь plugin CyberPanel API-д хүрэх боломжтой бөгөөд зөв батлагдсаныг баталдаг.
 
-## Хэрхэн ажилладаг вэ?
+## Хэрхэн ажилладаг вэ? {#setup-instructions}
 
-### Domain Mapping (Домен тохируулга)
+### Domain Mapping (Домен тохируулга) {#1-enable-the-cyberpanel-api}
 
 Ultimate Multisite-д домен тохируулсан үед:
 
@@ -93,7 +93,7 @@ Ultimate Multisite-д домен тохируулсан үед:
 3. Document root нь танай WordPress сүлжээний үндсэн каталог руу чиглүүлэхээр тохируулагддаг.
 4. Домен тохируулгыг арилгахад, integration нь virtual host-ийг цэвэрлэхийн тулд `/api/deleteWebsite`-ийг дуудна.
 
-### Auto-SSL (Автоматик SSL)
+### Auto-SSL (Автоматик SSL) {#2-add-constants-to-wp-configphp}
 
 `WU_CYBERPANEL_AUTO_SSL` хувьсагч `true` байх үед:
 
@@ -103,11 +103,11 @@ Ultimate Multisite-д домен тохируулсан үед:
 
 > **Анхаарах зүйл:** Let's Encrypt домен дээр шалгахын тулд DNS нь танай серверний IP хаягт бүрэн тархсан байх ёстой. Хэрэв тохируулсны дараа SSL-ийг шууд гаргахад алдаа гарвал, DNS-ийн тархалтыг хүлээгээд **SSL** > **Manage SSL** дотор CyberPanel-ийн dashboard-оос SSL-ийг дахин идэвхжүүлээрэй.
 
-### www Subdomain (www дэддомен)
+### www Subdomain (www дэддомен) {#3-enable-the-integration}
 
 Domain Mapping тохиргоонд **Auto-create www subdomain** асаасан бол, integration нь `www.<domain>`-д зориулсан virtual host alias үүсгэдэг бөгөөд Auto-SSL асаатай байвал apex болон www хувилбаруудыг бүгдийг хамарсан сертификат олгодог.
 
-### Email Forwarders (Имэйл удирдах)
+### Email Forwarders (Имэйл удирдах) {#4-verify-connectivity}
 
 [Ultimate Multisite: Emails](../../addons/ultimate-multisite-emails/) аддон идэвхтэй байх үед CyberPanel нь хэрэглэгчдийн цахим шуудан (email forwarders) үйлчилгээ үзүүлэх боломжийг олгодог. Forwarder нь бүрэн халаагүйгээр, нэг дорны хаягаас ирсэн мессеж бусад халааны хаяг руу чиглүүлдэг бөгөөд энэ нь `info@customer-domain.test` эсвэл `support@customer-domain.test` зэрэг аливаа аливаа алдааны (aliases) хувьд хэрэглэхэд тохиромжтой юм.
 
@@ -120,7 +120,7 @@ Domain Mapping тохиргоонд **Auto-create www subdomain** асаасан
 
 Хэрэв forwarder үүсгэхэд алдаа гарвал эхлээд Ultimate Multisite-ийн activity logs-ыг шалгана уу, дараа нь CyberPanel дээр тухайн эх сурвалж домен байгаа эсэхийг баталгаажуулж, API user-т email-management эрх байгаа эсэхийг шалгана уу.
 
-## Тохиргооны дурсгалт
+## Тохиргооны дурсгалт {#how-it-works}
 
 | Constant | Шаардлагатай | Анхны утга | Үзүүлбэр |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Domain Mapping тохиргоонд **Auto-create www subdomain** асаасан
 | `WU_CYBERPANEL_PHP_VERSION` | Үгүй | `PHP 8.2` | Шинэ virtual host-д ашиглах PHP хувилбар (CyberPanel дээр суурилуулсан хувилбартай таарч байх ёстой) |
 | `WU_CYBERPANEL_EMAIL` | Үгүй | — | SSL сертификат бүртгэлд хандах контакт email |
 
-## Чухал анхаарах зүйлс
+## Чухал анхаарах зүйлс {#domain-mapping}
 
 CyberPanel API нь сессион бодлоготой токен (session-based token) ашигладаг. Энэ интеграци нь API дуудлага бүрт токенийг автоматаар авч байна.
 Таны CyberPanel администратор хэрэглэгчийн аккаунтод вэбсайт үүсгэх, устгах эрх байх ёстой.
@@ -140,33 +140,33 @@ CyberPanel анх `8090` портоор ажилладаг. Хэрэв таны 
 Энэ интеграци нь DNS бүртгэлүүдийг удирдахгүй. Ultimate Multisite-т доменыг тохируулахын өмнө таны домены DNS-ийг серверinizin IP хаягаар заах ёстой.
 Хэрэв OpenLiteSpeed (OLS) ашиглаж байгаа бол виртуальный хост (virtual host)-ыг өөрчилсөн дараа автоматаар сайхан (graceful) эхлүүлэх үйлдэл хийгдэнэ. Ямар ч гараар оролдох шаардлагагүй.
 
-## Асуудал шийдэх
+## Асуудал шийдэх {#auto-ssl}
 
-### API холболт тасарсан байна (API Connection Refused)
+### API холболт тасарсан байна (API Connection Refused) {#www-subdomain}
 
 - Таны сервер фаерволд `8090` порт нээлттэй байгаа эсэхийг шалгана уу.
 - `WU_CYBERPANEL_HOST` утгад зөв протокол (`https://`) болон порты багтсан эсэхийг баталгаажуулна уу.
 - Таны CyberPanel SSL сертификат хүчинтэй эсэхийг шалгана уу; өөрөө гаргасан (self-signed) сертификатууд TLS шалгах алдаа үүсгэх боломжтой. Зөвхөн итгэлтэй нутагт (trusted private network) `WU_CYBERPANEL_VERIFY_SSL`-ийг `false` болгоно.
 
-### Баталгаажуулалт алдаа гарсан байна (Authentication Errors)
+### Баталгаажуулалт алдаа гарсан байна (Authentication Errors) {#email-forwarders}
 
 - CyberPanel руу шууд логин хийж байгаа эсэхийг шалгана уу, ингэснээр таны `WU_CYBERPANEL_USERNAME` болон `WU_CYBERPANEL_PASSWORD` зөв байгаа эсэхийг баталгаажуулна.
 - CyberPanel нь давхардсан алдаатай логин оролдлого хийсний дараа аккаунтыг хаадаг. Хэрэв ийм тохиолдол гарвал CyberPanel-ийн **Security** > **Brute Force Monitor** хэсгийг шалгана уу.
 
-### Домен үүсгээгүй байна (Domain Not Created)
+### Домен үүсгээгүй байна (Domain Not Created) {#configuration-reference}
 
 - API алдаа мессежүүдийг Ultimate Multisite-ын activity log (**Ultimate Multisite** > **Activity Logs**) -оос шалгана уу.
 - `WU_CYBERPANEL_PACKAGE`-д тодорхойлогдсон пакет CyberPanel-д байгаа эсэхийг баталгаажуулна уу (**Packages** > **List Packages**).
 - Домен нь CyberPanel дээр аль хэдийн вэбсайт болгож бүртгэгдээгүй эсэхийг шалгана уу — давхардсан вэбсайтыг үүсгэхэд алдаа гардаг.
 
-### SSL Сертификат олгоогүй байна (SSL Certificate Not Issued)
+### SSL Сертификат олгоогүй байна (SSL Certificate Not Issued) {#important-notes}
 
 DNS бүрэн тархсан эсэхийг баталгаажуулаарай: `dig +short your-domain.com` командыг ашиглан таны серверийн IP хаягийг гаргаж ирнэ эсэхийг шалгана уу.
 Let's Encrypt нь хурдны хязгаар (rate limits) тавьдаг. Хэрэв та саяхан ижил доменэд хэд хэдэн сертификат олгосон бол дахин орохоос өмнө хүлээх хэрэгтэй.
 Сертификат олгох алдаа тухай дэлгэрэнгүй мэдээллийг **Logs** > **Error Logs**-д байгаа CyberPanel-ийн SSL логуудыг шалгана уу.
 Хэрвээ дээрх арга ажиллахгүй бол та CyberPanel-ээс SSL-ийг гараар олгож болно: **SSL** > **Manage SSL** > домен сонгох > **Issue SSL**.
 
-## Эх сурвалжууд
+## Эх сурвалжууд {#troubleshooting}
 
 - CyberPanel API Документаци: https://docs.cyberpanel.net/docs/category/api
 - CyberPanel SSL Удирдах: https://docs.cyberpanel.net/docs/cyberpanel/SSL/manageSSL

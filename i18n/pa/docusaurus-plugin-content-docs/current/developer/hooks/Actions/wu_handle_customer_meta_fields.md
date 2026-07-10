@@ -4,11 +4,11 @@ title: Action - wu_handle_customer_meta_fields
 sidebar_label: wu_handle_customer_meta_fields
 _i18n_hash: a93030d6a7965ebed83579b198381fa8
 ---
-# Action: wu_handle_customer_meta_fields
+# Action: wu_handle_customer_meta_fields {#action-wuhandlecustomermetafields}
 
 ਇਹ ਐਕਸ਼ਨ plugin developers ਨੂੰ ਇਹ ਆਜ਼ਾਦੀ ਦਿੰਦਾ ਹੈ ਕਿ ਉਹ ਲੋੜ ਪੈਣ 'ਤੇ meta data ਨੂੰ ਵੱਖ-ਵੱਖ ਤਰੀਕਿਆਂ ਨਾਲ ਸੇਵ ਕਰ ਸਕਣ।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: a93030d6a7965ebed83579b198381fa8
 | $customer | `\Customer` | Ultimate Multisite ਦਾ customer object। |
 | $checkout | `\Checkout` | checkout class। |
 
-### Since
+### Since {#since}
 
 - 2.0.0
-### Source
+### Source {#source}
 
 [`inc/checkout/class-checkout.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-checkout.php#L1211) ਵਿੱਚ ਲਾਈਨ 1211 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।

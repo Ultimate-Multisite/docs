@@ -1,0 +1,192 @@
+---
+title: הוקס־רעפֿערענץ
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Hooks רעפֿערענץ {#hooks-reference}
+
+אויטאָמאַטיש גענערירטע דאָקומענטאַציע פֿאַר אַלע **59 אַקציעס** און **118 פֿילטערס** אין Ultimate Multisite.
+
+## אַקציעס {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — ווערט אויסגעפֿירט איידער דער אָטענטיפֿיקאַציע־ווײַטערפֿיר.
+- [set_auth_cookie](./Actions/set_auth_cookie) — ווערט אויסגעפֿירט גלײַך איידער דער אָטענטיפֿיקאַציע־קיכל ווערט באַשטימט.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — ווערט אויסגעפֿירט גלײַך איידער דער אָטענטיפֿיקאַציע־קיכל פֿאַר אײַנגעשריבענע באַניצער ווערט באַשטימט.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — דערלויבט אַנטוויקלערס צוצולייגן זייערע אייגענע האָסט־פֿאַרזאָרגער־אינטעגראַציעס דורך WordPress פּלוגינס.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — ווערט אויסגעלייזט ווען אַלע אָפהענגיקייטן זענען געלאָדן געוואָרן
+- [wu_activation](./Actions/wu_activation) — לאָזט אַנדערע טיילן פֿונעם פּלוגין צוהענגען זייערע רוטינען פֿאַר אַקטיוואַציע
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — דערלויבט פּלוגין־אַנטוויקלערס איינצוהענגען פֿונקציעס נאָך אַ באַניצער אָדער סופּער־אַדמין בײַט דעם וועבזײַטל־מוסטער
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — אין געוויסע פֿאַלן וועלן מיר דאַרפֿן לאָדן עקסטרע כּוח צו באַהאַנדלען אַקציעס.
+- [wu_before_search_models](./Actions/wu_before_search_models) — ווערט אויסגעפֿירט איידער די פֿאַראַרבעטונג פֿון דער זוך־בקשה.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — דערלויבט אַנטוויקלערס צו מאַכן נאָך ענדערונגען אינעם קאַסע־אָביעקט.
+- [wu_cart_setup](./Actions/wu_cart_setup) — דערלויבט אַנטוויקלערס צו מאַכן נאָך ענדערונגען אינעם קאַסע־אָביעקט.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — ווערט אויסגעפֿירט איידער אַ פֿעלד ווערט צוגעלייגט צום קאַסע־פֿאָרעם.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — דערלויבט אַנטוויקלערס אויסצולייזן נאָך האָקס.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — איידער מיר פֿאַראַרבעטן די קאַסע.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — ווערט אויסגעפֿירט נאָך דעם ווי דער קאַסע־באַשטעלונג איז גאָר צונויפֿגעשטעלט.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן ווידזשעטן צום Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן ווידזשעטן צום Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — לאָזט אַנדערע טיילן פֿונעם פּלוגין צוהענגען זייערע רוטינען פֿאַר דעאַקטיוואַציע
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן אַקציעס צום אויסמעק־פּראָצעס
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — ווערט אויסגעפֿירט ווען אַ דאָמיין ווערט דער הויפּט־דאָמיין פֿאַר אַ וועבזײַטל.
+- [wu_domain_created](./Actions/wu_domain_created) — ווערט אויסגעלייזט ווען אַ נײַע דאָמיין־מאַפּירונג ווערט צוגעלייגט.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — ווערט אויסגעפֿירט נאָך דעם ווי אונדזער קערן־דאָמיין־מאַפּירונג איז געלאָדן געוואָרן
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — געוויסע פּלוגינס וועלן אויפֿהיטן URL איידער די מאַפּירונג איז געווען אַקטיוו אָדער וועלן בויען URLס אויף אַן אַנדער אופֿן וואָס איז נישט אַרײַנגערעכנט
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — דערלויבט אַנטוויקלערס זיך איינצוהענגען נאָך דעם ווי אַ וועבזײַטל־דופּליקאַציע פּאַסירט.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך האָקס
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — האָק פֿאַר נאָך רייניקונג
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — ווערט אויסגעפֿירט איידער די בקשה פֿונעם מאָדאַל פֿאַר צולייגן אַ נײַעם דאָמיין ווערט באַהאַנדלט.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — דערלויבט פּלוגין־אַנטוויקלערס אויפֿצוהיטן מעטאַ־דאַטן אויף אַנדערע אופֿנים אויב זיי דאַרפֿן.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — דערלויבט פּלוגין־אַנטוויקלערס אויפֿצוהיטן באַניצער־מעטאַ־דאַטן אויף אַנדערע אופֿנים אויב זיי דאַרפֿן.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — ווערט אויסגעפֿירט ווען מען טרעפֿט אַן אומגילטיקן צייכן פֿון אַ מאַגישער לינק.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — ווערט אויסגעפֿירט נאָך דעם ווי אַ באַניצער ווערט אײַנגעשריבן דורך אַ מאַגישן לינק.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — דערלויבט פּלוגין־אַנטוויקלערס צו טאָן נאָך זאַכן ווען דער קונה ווערט צוגעלייגט.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — ווערט אויסגעפֿירט נאָך דעם ווי MCP פֿעיִקייטן ווערן רעגיסטרירט פֿאַר אַן ענטיטעט.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — ווערט אויסגעפֿירט נאָך דעם ווי דער MCP אַדאַפּטער ווערט איניציאַליזירט.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — ווערט אויסגעלייזט נאָך דעם ווי די מיטגלידשאַפֿט ווערט אַנולירט.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — ווערט אויסגעלייזט נאָך דער באַנײַונג פֿון דער מיטגלידשאַפֿט.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — ווערט אויסגעלייזט איידער די מיטגלידשאַפֿט ווערט אַנולירט.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — ווערט אויסגעלייזט איידער דער באַנײַונג פֿון דער מיטגלידשאַפֿט.
+- [wu_model_post_save](./Actions/wu_model_post_save) — ווערט אויסגעפֿירט נאָך דעם ווי אַן אָביעקט ווערט אויפֿגעהיטן אין דער דאַטנבאַזע.
+- [wu_page_added](./Actions/wu_page_added) — דערלויבט פּלוגין־אַנטוויקלערס צו לויפֿן נאָך זאַכן ווען בלעטער ווערן רעגיסטרירט.
+- [wu_page_after_render](./Actions/wu_page_after_render) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך אינהאַלט נאָך דעם ווי מיר דרוקן דאָס בלאַט
+- [wu_page_before_render](./Actions/wu_page_before_render) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך אינהאַלט איידער מיר דרוקן דאָס בלאַט.
+- [wu_page_load](./Actions/wu_page_load) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך האָקס צו אונדזערע בלעטער.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך אינהאַלט נאָך דעם ווי מיר דרוקן דאָס בלאַט
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך אינהאַלט איידער מיר דרוקן דאָס בלאַט.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך האָקס צו אונדזערע בלעטער.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — ווערט אויסגעפֿירט נאָך דעם ווי ווידזשעטן ווערן רעגיסטרירט פֿאַר דעם בלאַט.
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — ווערט אויסגעפֿירט כּדי צו דערלויבן צוגאָבן צוצוהענגען מעגלעכקייט־מאָדולן צו אינטעגראַציעס.
+- [wu_register_integrations](./Actions/wu_register_integrations) — ווערט אויסגעפֿירט כּדי צו דערלויבן אינטעגראַציעס זיך צו רעגיסטרירן.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — דערלויבט נאָך רוטעס רעגיסטרירט צו ווערן.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן אַקציעס צום אויפֿהיט־פּראָצעס
+- [wu_site_created](./Actions/wu_site_created) — ווערט אויסגעפֿירט נאָך דעם ווי אַ וועבזײַטל ווערט געשאַפֿן צום ערשטן מאָל.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן נאָך האָקס, אויב נייטיק.
+- [wu_template_previewer](./Actions/wu_template_previewer) — לויפֿט ווען מען איז אינעם קאָנטעקסט פֿון מוסטער־פֿאָרויסווײַזער.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — לייזט אויס דעם האָק פֿאַר אַרײַנשטעלן סקריפּטן.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — ווערט אויסגעפֿירט נאָך דעם ווי אַן אָביעקט ווערט אויפֿגעהיטן אין דער דאַטנבאַזע.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — ווערט אויסגעפֿירט נאָך דעם ווי אַן אָביעקט ווערט אויפֿגעהיטן אין דער דאַטנבאַזע.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — ווערט אויסגעפֿירט נאָך דעם ווי אַן אָביעקט ווערט אויפֿגעהיטן אין דער דאַטנבאַזע.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — דערלויבט פּלוגין־אַנטוויקלערס צוצולייגן אַקציעס צום אויפֿשליס־פּראָצעס.
+
+## פֿילטערס {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — פֿילטערט די געדויער פֿון דער אויסגיין־פּעריאָד פֿון דעם אָטענטיפֿיקאַציע־קיכל.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — פֿילטערט דעם אָטענטיפֿיקאַציע־ווײַטערפֿיר־סכעמע.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — רעפּליקירט דאָ דעם אָריגינעלן WP Filter, פֿאַר זיכערקייט.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — לאָזט plugin־אַנטוויקלער פֿילטערן דעם URL וואָס ווערט געניצט אין דעם פֿאָרויסקוקער
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — פֿילטערט צי דאָס auth־קיכל זאָל נאָר געשיקט ווערן איבער HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — פֿילטערט צי צו ניצן אַ זיכער אָטענטיפֿיקאַציע־ווײַטערפֿיר.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — פֿילטערט צי דאָס אַרײַנלאָגירט־קיכל זאָל נאָר געשיקט ווערן איבער HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — דערלויבט צו פֿאַרמיידן אַז auth־קיכלעך זאָלן טאַקע געשיקט ווערן צום קליענט.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — שטעלט דעם ווײַטערפֿיר־URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — לייגט צו נאָך שריט דורך פֿילטערס
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — לאָזט plugin־אַנטוויקלער צולייגן אַן עקסטרע וואַריאַבלע צום render־קאָנטעקסט גלאָבאַל.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — דערלויבט אַנטוויקלער צו קורצשליסן דעם קאָנטראָל.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — פֿילטערט די פֿעלדער פֿאַר דעם מאָדאַל פֿון צולייגן אַ נײַעם דאָמיין.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — לאָזט אַנטוויקלער מאַכן ענדערונגען אין דעם setup fee־שורה־אייטעם.
+- [wu_admin_notices](./Filters/wu_admin_notices) — לאָזט אַנטוויקלער פֿילטערן admin־מעלדונגען צוגעגעבן דורך Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — פֿילטער נאָך דעם ווי עס איז געביטן געוואָרן.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — איצט באַהאַנדלען מיר אַלע טיפּן.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — לאָזט plugin־אַנטוויקלער קורצשליסן די באַגרענעצונגען.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — פֿילטערט צי דער רעגיסטריר־אָפּצאָל זאָל אָדער זאָל נישט צוגעווענדט ווערן.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — פֿילטערט די אָריגינעלע api־אַרגומענטן.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — לאָזט plugin־אַנטוויקלער פֿילטערן די רעכענונג־אַדרעס־פֿעלדער.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — לאָזט אַנטוויקלער אַרומגיין דעם אַרויסגעבן און שטעלן אַ נײַעם
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — לאָזט אַנטוויקלער אַרומגיין דעם קאָד וואָס נעמט אַוועק דעם איצטיקן באַניצער.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — פֿילטערט דעם גאַנץ פֿון "ווידערקערנדיקער סומע".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — פֿילטערט דעם גאַנץ פֿון "ערשטע סומע".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — פֿילטערט דעם גאַנץ פֿון "ערשטע סומע".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — לאָזט plugin־אַנטוויקלער זיך אַרײַנמישן אין דעם קרעדיט־ווערט.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — פֿילטערט געטיילטע checkout־פֿאָרעם באַזע־דאָומיינס וואָס זאָלן נישט ווערן mapped-domain־רעקאָרדס.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — אונדזערע APIs צו צולייגן נײַע פֿעלד־מוסטערן הענגען זיך אָן דאָ.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — אונדזערע APIs צו צולייגן נײַע פֿעלד־טיפּן הענגען זיך אָן דאָ.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — פֿילטערט די טעות־מעלדונגען.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — לאָזט אַנטוויקלער אַרומגיין דעם קאָנטראָל אויב אַ פֿעלד איז אויטאָ־אײַנשיקלעך.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — לאָזט plugin־אַנטוויקלער צולייגן אייגענע אַליאַסן אין פֿאָרעם־וואַלידאַטאָר.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — לאָזט plugin־אַנטוויקלער פֿילטערן די וואַלידאַציע־כּללים.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — נעמט אַוועק נישט־געוווּנטשענע Params.
+- [wu_contains_element](./Filters/wu_contains_element) — לאָזט אַנטוויקלער טוישן די רעזולטאַטן פֿון דער ערשט־זוך.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — לאָזט האָסט־פּראָוויידערס אינסטאַלירן דעם קאָנסטאַנט אויף אַן אַנדער אופֿן.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — גיט צוריק אַ שיינעם נאָמען פֿון די אַדמיניסטראַטיווע אונטער־אָפּטיילונגען פֿון לאַנד.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — גיט צוריק די רשימה פֿון שטעט פֿאַר אַ שטאַט אין אַ לאַנד.
+- [wu_country_get_states](./Filters/wu_country_get_states) — גיט צוריק די רשימה פֿון שטאַטן פֿאַר דעם לאַנד.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — לאָזט אַנטוויקלער מאָדיפֿיצירן דעם פֿעליקייַט־אויפֿפֿיר און שטעלן דעם איצטיקן קונה אַנדערש.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — לאָזט אַנטוויקלער מאָדיפֿיצירן דעם פֿעליקייַט־אויפֿפֿיר און שטעלן די איצטיקע membership אַנדערש.
+- [wu_current_set_site](./Filters/wu_current_set_site) — לאָזט אַנטוויקלער מאָדיפֿיצירן דעם פֿעליקייַט־אויפֿפֿיר און שטעלן דעם איצטיקן פּלאַץ אַנדערש.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — לאָזט אַנטוויקלער מאָדיפֿיצירן די manage־פּלאַץ URL־פּאַראַמעטערס.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — לאָזט plugin־אַנטוויקלער פֿילטערן די לינקען.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — לאָזט plugin־אַנטוויקלער צולייגן נײַע קאָנטראָלן כּדי צו דעפֿינירן די רעזולטאַטן.
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — מיר וועלן מעגלעך דאַרפֿן צולייגן נאָך בלאָקן שפּעטער.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — לייגט צו אַ גענערישן פֿילטער צו לאָזן אַנטוויקלער פֿאַרברייטערן דעם parser צו באַהאַנדלען נאָך בויערס אָדער plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — פֿילטערט צי צו דורכפֿירן נאָך פּאַראָל־כּללים.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — פֿילטערט דזשענערירטן קונה־באַניצער־נאָמען.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — לאָזט plugin־אַנטוויקלער פֿילטערן די פֿאָרויס־אײַנשטעלונגען פֿון אַ checkout־בלאַט.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — לאָזט אַנטוויקלער צולייגן נײַע פֿאָרעם־slugs צו אַרומגיין דעם אויפֿפֿיר.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — לאָזט אַנטוויקלער און add-ons צולייגן נײַע מיגראַציע־שריט
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — זעט מער וועגן דעם פֿילטער אונטן, אויף דעם זעלבן מעטאָד.
+- [wu_get_post_types](./Filters/wu_get_post_types) — לאָזט אַנטוויקלער אויסקלייבן וועלכע פּאָסט־טיפּן זאָלן געוויזן ווערן.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — גיט צוריק שורות, פֿילטערבאַר
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — לאָזט אַנטוויקלער מאַניפּולירן די דאָמיין/דרך־פּאָרן.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — פֿילטערט די wizard־סעקציעס פֿאַר hosting־אינטעגראַציע־אויפֿשטעלונג.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — פֿילטערט די פֿעלדער אויף אַ פֿאָרעם. די פֿאָרעם ווערט אידענטיפֿיצירט דורך דעם ID אין דעם פֿילטער־נאָמען.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — פֿילטערט די פּראָדוקט־טיפּן וואָס האָבן אומאָפּהענגיקע רעכענונג־ציקלען.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — לאָזט plugin־אַנטוויקלער צווינגען אַ געוויסן צושטאַנד פֿאַר דעם API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — לאָזט plugin־אַנטוויקלער צולייגן נאָך טעסטן פֿאַר אַנטוויקלונג־מאָדוס.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — לאָזט plugin־אַנטוויקלער צווינגען אַ געוויסן צושטאַנד פֿאַר דעם MCP־אַדאַפּטער.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — צוליב זיכערהייט־סיבות באַגרענעצן מיר די צאָל אַקציעס בנימצא צו זיך אָנהענגען. דער פֿילטער לאָזט אַנטוויקלער פֿאַרברייטערן
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — קאָנטראָלירט צי אַ געוויסער פּאָסט־טיפּ איז ערלויבט אויף דעם פּלאַן לאָזט plugin־אַנטוויקלער פֿילטערן דעם צוריקקער־ווערט
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — פֿילטערט צי צו דורכפֿירן IP־אַדרעס־וועריפֿיקאַציע.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — פֿילטערט צי צו דורכפֿירן user agent־וועריפֿיקאַציע.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — פֿילטערט דעם דזשענערירטן magic link URL.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — פֿילטערט צי magic links זענען אַקטיווירט.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — פֿילטערט דעם ווײַטערפֿיר־URL נאָך מאַכן אַ דאָמיין הויפּט.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — שאַפֿט אַן אויסשליסונג־רשימה פֿון פּאַראַמעטערס וואָס פֿאַרמיידן דעם אויטאָ־ווײַטערפֿיר.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — פֿילטער צו איבערשרײַבן דעם MCP־פֿעיִקייט־אַרײַננעמען־באַשלוס.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — פֿילטערט דעם אויסגערעכנטן אויסגיין־דאַטום.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — פֿילטערט דעם אויסגערעכנטן אויסגיין־דאַטום וואָס זאָל ווערן געשטעלט נאָך דער באַנײַונג.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — לאָזט אַנטוויקלער צולייגן נײַע דערהייַנטיקונג־פֿאָרעם־slugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — פֿילטערט די מינימאַלע פּאַראָל־לענג.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — פֿילטערט די מינימאַלע פּאַראָל־שטאַרקייט וואָס ווערט געפֿאָדערט (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — לאָזט plugin־אַנטוויקלער, און אונדז אַליין, צולייגן אַקציע־לינקען צו אונדזערע רעדאַקטיר־בלעטער
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — פֿילטערט צי צו פֿאָדערן קליינע אותיות אין פּאַראָלן.
+- [wu_password_require_number](./Filters/wu_password_require_number) — פֿילטערט צי צו פֿאָדערן נומערן אין פּאַראָלן.
+- [wu_password_require_special](./Filters/wu_password_require_special) — פֿילטערט צי צו פֿאָדערן ספּעציעלע צייכנס אין פּאַראָלן.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — פֿילטערט צי צו פֿאָדערן גרויסע אותיות אין פּאַראָלן.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — לאָזט באַניצער טוישן די מעלדונג וועגן די אויסשטייענדיקע צאָלונגען.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — פֿילטערט די פּראָדוקט־טיפּן וואָס זאָלן באַהאַנדלט ווערן ווי פּלענער.
+- [wu_post_count](./Filters/wu_post_count) — לאָזט plugin־אַנטוויקלער טוישן דעם ציילונג־גאַנץ
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — לאָזט plugin־אַנטוויקלער טוישן וועלכער פּאָסט־סטאַטוס זאָל ווערן געציילט. לויט פֿעליקייט ווערן פּובליקירטע און פּריוואַטע פּאָסטן געצייל
+- [wu_post_default_status](./Filters/wu_post_default_status) — פֿילטערט די אָביעקט־דאַטן איידער זיי ווערן אויפֿגעהיט אין דער דאַטאַבאַזע.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — לאָזט אַנטוויקלער פֿילטערן אײַנשטעלונגען איידער היטן דורך Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — פֿילטערט צי עס איז ערלויבט פאָרצוגיין מיט דער בקשה אָדער נישט.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — פֿילטערט צי עס איז ערלויבט פאָרצוגיין מיט דער בקשה אָדער נישט.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — פֿילטערט צי עס איז דערלויבט ווייטערצוגיין מיט דער בקשה צי נישט.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — פֿילטערט צי עס איז דערלויבט ווייטערצוגיין מיט דער בקשה צי נישט.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — פֿילטערט צי עס איז דערלויבט ווייטערצוגיין מיט דער בקשה צי נישט.
+- [wu_return_url](./Filters/wu_return_url) — דערלויבט דעוועלאָפּערס צו טוישן דעם gateway צוריקקער־URL געניצט נאָך checkout פּראָצעסן.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — דערלויבט פּלאַגין־דעוועלאָפּערס צוצולייגן מער זוך־מאָדעל־פֿונקציעס.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — דערלויבט דעוועלאָפּערס צוצולייגן נאָך setup wizard טריט.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — פֿילטערט צי Ultimate Multisite זאָל שאַפֿן אַ דאָמיין־רעקאָרד פֿאַר אַ ניי־געשאַפֿן זייטל.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — דערלויבט דעוועלאָפּערס צו קורץ־שליסן די ווײַטערפֿירונג, כדי זי זאָל נישט פּאַסירן.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — דערלויבט איבערשרײַבן דעם האַנדלער
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — פֿילטערט די מאַסן־אַקציעס בנימצא פֿאַר זייטלעך.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — פֿילטער צו טוישן דעם ווערט פֿאַר באַקומען פּלאַגינס־זייטלעך אינעם נעץ.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — אַקטיווירן/דיאַקטיווירן קראָס־דאָמיין single-sign-on מעגלעכקייט.
+- [wu_sso_url](./Filters/wu_sso_url) — פֿילטערט דזשענערירטע SSO URLs איידער זיי ווערן צוריקגעגעבן פֿאַר קראָס־דאָמיין קונה־אַקציעס.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — פֿילטערט Stripe אַבאָנעמענט־דאַטן. קען איבערשרײַבן success_url אָדער cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — פֿילטערט די payment intent אַרגומענטן.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — פֿילטערט דעם ID פֿון דעם פּלאַן צו קאָנטראָלירן. אויב דאָס עקזיסטירט, וועט דער נייער אַבאָנעמענט נוצן דעם פּלאַן.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — פֿילטערט דעם ID פֿון דעם פּראָדוקט צו קאָנטראָלירן. אויב דאָס עקזיסטירט, וועט דער נייער אַבאָנעמענט נוצן דעם פּראָדוקט.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — פֿילטערט דעם idempotency_key ווערט געשיקט מיט די Stripe אָפּצאָל־אָפּציעס.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — פֿילטערט דעם מיטגלידערשאַפֿט־רעקאָרד פֿאַרבונדן מיט דעם וועבהוק.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — פֿילטערט די מעטאַ־דאַטן איידער זיי ווערן סעריאַליזירט צו ווערן געהיט אין דער דאַטאַבאַזע.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — פֿילטערט די אָביעקט־דאַטן איידער זיי ווערן געהיט אין דער דאַטאַבאַזע.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — דערלויבט דעוועלאָפּערס צו טוישן דעם upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — באַשטימט צי אַ mapping זאָל גענוצט ווערן
+- [wu_username_from_email](./Filters/wu_username_from_email) — פֿילטערט דעם נײַעם קונה־באַניצערנאָמען.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — דערלויבט דעוועלאָפּערס צו טוישן דעם אָנזאָג וועגן דעם מיטגלידערשאַפֿט־באַניצער־לימיט
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — דערלויבט דעוועלאָפּערס צוצולייגן נאָך טעקעס־טעקלעך צו דער פאַרבײַטלעכער רשימה.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — פֿילטערט וועלכע sub_commands זענען אַקטיווירט פֿאַר דעם ענטיטעט.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — מיר קאָנטראָלירן דריי מוסטערן ווען מיר פּרוּוון אויסצוגעפֿינען וווּ מיר קענען אַרײַנשפּריצן אונדזערע קאָנסטאַנטן:

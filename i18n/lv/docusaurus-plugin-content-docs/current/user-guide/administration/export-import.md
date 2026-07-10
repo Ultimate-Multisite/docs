@@ -3,17 +3,17 @@ title: Izpilde un ievadi
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Izvēles un Importeri
+# Izvēles un Importeri {#export--import}
 
 Ultimate Multisite 2.9.0 ieviesta vienu vietnes **Izvēles un Importeru** (Export & Import) rīku, kas atrodas menu **Tools > Export & Import**. Izmantojiet to, ja jums ir nepieciešams pakaļpakot WordPress vietni ZIP failā, atkārtoti šo ZIP failu vai pārvietot vietni starp saistītiem Ultimate Multisite un vienotas WordPress instalācijām.
 
-## Nepieciešamās atļaupas
+## Nepieciešamās atļaupas {#required-permissions}
 
 Jums jāiekļauj kā administrator, kuram ir piekļuve WordPress **Tools** menu apkārt vietnei, no kuru tiek izveidots vai importēts fail. Multites tīklā, pievienoties tīkla administratora kontu, ja jūs izveidat vai importējat subvietas ar tīkla līmeņa Ultimate Multisite rīkiem.
 
 Izvēles ZIP manholi tiek sniegti caur autentikētu lejupielādi, tāpēc turējiet admin sesiju aktīvu līdz lejupielāde beidzjas un neizplatiet generēto lejupielādes URL-us publiski.
 
-## Vietnes izveide ZIP failā
+## Vietnes izveide ZIP failā {#exporting-a-site-to-a-zip}
 
 1. WordPress admina vietnē, no kuras vēlaties kopēt, pārvietojiet uz **Tools > Export & Import**.
 2. Atveriet izveides lauku un izvēlieties vietni, ko vēlaties pakaļpakot.
@@ -23,7 +23,7 @@ Izvēles ZIP manholi tiek sniegti caur autentikētu lejupielādi, tāpēc turēj
 
 Turējiet ZIP failu drošā vietā. Tas var ietvert vietnes saturu, iestatījumus, mediju failus un izvēlētos kodu resursus.
 
-## Ko iekļauj izveide
+## Ko iekļauj izveide {#what-the-export-includes}
 
 Izveides ZIP faila var ietvert:
 
@@ -34,7 +34,7 @@ Izveides ZIP faila var ietvert:
 
 Tiecasu ZIP faila izvēles lieluma ir atkarīgs no mediju daudzuma, izvēlēto pluginu un temām, kā arī vietnes databāzes tabulu izmēra.
 
-## Vietnes  importešana no ZIP failas
+## Vietnes  importešana no ZIP failas {#importing-a-site-from-a-zip}
 
 1. Atgriezties uz **Tools > Export & Import** (Rīki > Izpilde un ieviešana) saimniekmet WordPress vietnē.
 2. Atveriet importu lauku un uzlabojiet ZIP failu, ko izveidoji "Export & Import" rīka ar ātrākās izpildes.
@@ -46,7 +46,7 @@ Tiecasu ZIP faila izvēles lieluma ir atkarīgs no mediju daudzuma, izvēlēto p
 
 V vienasvietas WordPress instalācijā ZIP faila importēšana aizstāj pašreizējās vietnes ar importētu vietni. Pirms sākat, izveidi pilnu rezerves kopiju (backup) mērķa vietnei un izvairieties sākāt vairākus importus vienlaikus par to pašu vietni.
 
-## ierobežojumi un pielāgošanas atzīmes
+## ierobežojumi un pielāgošanas atzīmes {#limitations-and-compatibility-notes}
 
 * Visi ļoti lielie uzlādes direktorijumi vai mediju bibliotējas var radīt liels ZIP failu. Pirms izveidotu vai ievadītu lielus vietnes, pārliecinieties, ka ir noteikti PHP uzlādes ierobežojumi, izpildes ierobežojumi, diskas vietas, memory un servera laika laika iestatījumi.
 * ļoti lielām mediju bibliotēm var būt nepieciešams pārvietoties laikā ar zema trafika apkopes laiku.

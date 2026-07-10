@@ -3,9 +3,9 @@ title: Dnevnik promjena više mreža
 sidebar_position: 99
 _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 ---
-# Dnevnik promjena za Multi-Network
+# Dnevnik promjena za Multi-Network {#multi-network-changelog}
 
-### 1.3.0
+### 1.3.0 {#130}
 * Novo: Preglednik šablona mreže — pregledajte i predgledajte šablone mreže na uživo sa panelom prije kupnje.
 * Novo: Odabir šablona mreže na checkoutu — kupci mogu odabrati šablon mreže tokom procesa prijave.
 * Novo: Međumrežni magic link SSO — kupci mogu pristupiti podmrežama bez problema putem autentifikacije magic link-om.
@@ -17,20 +17,20 @@ _i18n_hash: 277edeab455a1d2e70dbbb4617f115a0
 * Popravak: Zaštita od nedefinisiranog ključa `network_id` u opsegu upita lokacije.
 * Popravak: Provjera dozvole mreže prije prebacivanja konteksta sprječava greške svojstava `wpdb` tabele.
 
-### 1.0.4
+### 1.0.4 {#104}
 * Popravak: Kreiranje nove mreže.
 * Popravak: Renderovanje menija.
 
-### 1.0.3
+### 1.0.3 {#103}
 * Ažurirano na Plugin Update Checker v5
 * Dodati moderni WordPress zaglavlja za pluginove
 * Poboljšana kompatibilnost sa najnovijim verzijama WordPressa
 
-### 1.0.2
+### 1.0.2 {#102}
 * Popravci grešaka i poboljšanja performansi
 * Poboljšana izolacija mreže
 
-### 1.0.0
+### 1.0.0 {#100}
 * Početno izdanje
 * Osnovna funkcionalnost multi-mreže
 * Integracija sa Multisite Ultimate

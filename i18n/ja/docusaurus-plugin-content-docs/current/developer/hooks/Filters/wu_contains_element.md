@@ -4,12 +4,12 @@ title: フィルタ - wu_contains_element
 sidebar_label: wu_contains_element
 _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 ---
-# フィルタ: wu_contains_element
+# フィルタ: wu_contains_element {#filter-wucontainselement}
 
 開発者が初期検索結果を変更できるようにします。  
 これはサードパーティのビルダーなどに便利です。
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
@@ -18,10 +18,10 @@ _i18n_hash: 5254f5cdc4fb5e3992e8987cc4c5d82b
 | $element | `self` | 現在の要素。 |
 | $post | `null|WP_Post` | チェックする投稿。 |
 
-### 以降
+### 以降 {#since}
 
 - 2.0.0
 
-### Source
+### Source {#source}
 
 定義は [`inc/ui/class-base-element.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-base-element.php#L534) の 534 行目にあります。

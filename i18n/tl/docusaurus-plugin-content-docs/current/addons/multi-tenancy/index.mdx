@@ -1,0 +1,150 @@
+---
+title: Maramihang Nangungupahan
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy {#multi-tenancy}
+
+Ipamahagi ang mga sub-sityo sa iba't ibang server at base ng datos para sa pagganap at seguridad
+
+## Mga tampok na inilabas sa bersyon 1.2.0 {#version-120-release-highlights}
+
+Nagdaragdag ang Multi-Tenancy 1.2.0 ng pundasyong tenant na soberano para sa mga workflow ng isolasyon sa produksiyon:
+
+- Walang-estadong awtomatikong pag-login ng tenant na may maikli ang bisa at protektado laban sa replay na mga pagbisita sa SSO.
+- Bawat-sub-sityong isolasyon ng base ng datos at file system para sa mga tenant na soberano.
+- Kakayahang multi-tenancy ng Hostinger para sa provisioning ng tenant na may kamalayan sa host.
+- Mga gate ng beripikasyon ng migrasyong soberano para sa mga pagsusuri ng lumang datos at async na pagpoproseso ng push.
+- Nako-configure na pagbubuklod ng host ng base ng datos sa parehong makina para sa mga install ng Bedrock, FrankenPHP, at localhost.
+- Mga pagpapahusay sa bootstrap ng tenant, tagasulat ng base ng datos, bootstrap ng schema, at provisioning ng user.
+- Mas ligtas na pagbuwag na soberano na naglilinis ng mga kredensyal ng tenant.
+
+Tingnan ang mga gabay ng user para sa [workflow ng migrasyong soberano](/user-guide/getting-started/sovereign-migration-workflow), [isolasyon ng multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), at [mga operasyon ng tenant na soberano](/user-guide/administration/sovereign-tenant-operations).
+
+## Mga Kinakailangan {#requirements}
+
+- WordPress 5.3 o mas mataas
+- PHP 7.4 o mas mataas
+- Multisite Ultimate plugin (aktibo)
+
+## Pag-install {#installation}
+
+1. I-upload ang mga file ng add-on sa iyong direktoryong `/wp-content/plugins/`
+2. I-activate ang plugin sa pamamagitan ng menu na 'Plugins' sa WordPress
+3. I-configure ang mga setting ng add-on sa admin ng network
+
+## Pag-develop {#development}
+
+### Setup {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Istruktura ng Proyekto {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Mga class at include ng PHP
+│   ├── class-multisite-ultimate-updater.php  # Tagapangasiwa ng update
+│   └── class-multi_tenancy-main.php             # Pangunahing functionality
+├── tests/                        # Mga unit test
+│   ├── bootstrap.php            # Bootstrap ng test
+│   ├── class-*-base.php         # Base na class ng test
+│   └── class-*-test.php         # Mga kaso ng test
+├── views/                       # Mga file ng template
+├── assets/                      # Mga static na asset
+│   ├── css/                     # Mga stylesheet
+│   ├── js/                      # Mga JavaScript file
+│   └── images/                  # Mga larawan
+├── lang/                        # Mga file ng wika
+├── composer.json                # Mga dependency ng PHP
+├── package.json                 # Mga dependency ng Node.js
+├── phpunit.xml.dist             # Configuration ng PHPUnit
+├── .phpcs.xml.dist              # Configuration ng mga pamantayan ng code
+└── rector.php                   # Mga panuntunan sa pagmodernisa ng code
+```
+
+### Pagsusuri {#testing}
+
+Kasama sa add-on ang isang komprehensibong framework ng pagsusuri:
+
+- **Mga Unit Test**: Mga test na nakabatay sa PHPUnit na may test suite ng WordPress
+- **Base na Class ng Test**: Nagbibigay ng mga helper method para sa mga karaniwang senaryo ng test
+- **Saklaw ng Test**: Naka-configure upang subaybayan ang saklaw ng code
+- **Pagsusuri sa Multisite**: Tumatakbo ang mga test sa kapaligirang multisite
+
+### Mga Pamantayan ng Code {#code-standards}
+
+- **Mga Pamantayan sa Pag-code ng WordPress**: Ipinapatupad sa pamamagitan ng PHPCS
+- **Pagiging Compatible sa PHP 7.4+**: Sinusuportahan ang mga modernong feature ng PHP
+- **Static na Pagsusuri**: Integrasyon ng PHPStan para sa pagsusuri ng uri
+- **Pagmodernisa ng Code**: Mga panuntunan ng Rector para sa mga upgrade ng PHP
+
+### Sistema ng Build {#build-system}
+
+- **Pagproseso ng Asset**: Minification para sa mga CSS/JS file
+- **Pagsasalin**: Pagbuo ng POT file
+- **Pagpa-package**: Paglikha ng archive para sa distribusyon
+- **Mode ng Pag-develop**: Mga hindi naka-minify na asset para sa pag-debug
+
+## Configuration {#configuration}
+
+Sinusuportahan ng add-on ang iba't ibang opsyon sa configuration na maa-access sa pamamagitan ng interface ng admin ng network.
+
+### Configuration ng tenant na soberano {#sovereign-tenant-configuration}
+
+Para sa mga tenant na soberano, i-configure ang base ng datos ng tenant, ugat ng file system, pagbubuklod ng host ng base ng datos, at kakayahan ng host bago iruta ang trapiko sa tenant. Patakbuhin ang beripikasyon ng migrasyon pagkatapos ng bawat pagbabago na nakaaapekto sa mga kredensyal ng base ng datos, pagbubuklod ng host, pagruruta, o provisioning ng user.
+
+Gamitin ang `localhost` lamang kapag inaasahan ng runtime ng tenant at mga grant ng base ng datos ang lokal na socket o access sa parehong makina. Gamitin ang `127.0.0.1` o hostname ng serbisyo kapag iyon ang grant host na na-configure ng iyong provider.
+
+### Kakayahan ng Hostinger {#hostinger-capability}
+
+Gumagana ang kakayahang multi-tenancy ng Hostinger kasama ang nakabahaging integration token ng Hostinger. Kumpirmahing naroroon ang domain sa hPanel, nakaturo ang DNS sa Hostinger account, at tumutugma ang mga setting ng base ng datos ng tenant sa hPanel bago ang beripikasyon.
+
+## Mga Hook at Filter {#hooks-and-filters}
+
+### Mga Action {#actions}
+
+- `ultimate-multisite-addon-template_init` - Pinapagana pagkatapos ng initialization ng add-on
+- `ultimate-multisite-addon-template_loaded` - Pinapagana pagkatapos ma-load ang lahat ng file ng add-on
+
+### Mga Filter {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Baguhin ang mga setting ng add-on
+- `ultimate-multisite-addon-template_enabled` - I-override ang status ng pag-enable/pag-disable ng add-on
+
+## Lisensya {#license}
+
+Ang add-on na ito ay lisensiyado sa ilalim ng GPL v3 o mas bago.
+
+## Suporta {#support}
+
+Para sa suporta at dokumentasyon, bisitahin ang [MultisiteUltimate.com](https://multisiteultimate.com)
+## Talaan ng Pagbabago {#changelog}
+
+- Bersyon 1.2.0 (2026-06-03): magdagdag ng walang-estadong awtomatikong pag-login ng tenant, kakayahang multi-tenancy ng Hostinger, bawat-sub-sityong isolasyon ng base ng datos at file system, mga gate ng beripikasyon ng migrasyong soberano, mga pagpapahusay sa bootstrap ng tenant/tagasulat ng base ng datos, nako-configure na pagbubuklod ng host ng MySQL, at mas ligtas na pagbuwag na soberano.
+
+- Bersyon 1.0.1 (2025-09-28): palitan ang pangalan ng prefix sa ultimate-multisite; i-update ang text domain; pag-angat ng bersyon.
+
+
+- Bersyon  (2025-09-28): palitan ang pangalan ng prefix sa ultimate-multisite; i-update ang text domain; pag-angat ng bersyon.

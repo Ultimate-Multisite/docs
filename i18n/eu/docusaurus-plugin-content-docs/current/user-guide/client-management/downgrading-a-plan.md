@@ -3,13 +3,13 @@ title: Planaren eskaintzen edo zerbait jarraitzen azaltzea
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Plan batketa (v2)
+# Plan batketa (v2) {#downgrading-a-plan-v2}
 
 _**IMPORTANTE NOTA: Hego kalpo Ultimate Multisite 2.x-ean referentzia da.**_
 
 Plan edo abonazio bat batketa egin dezake client-ek, batez ere irudiak ez dute erresurgarriak aditzen edo subsite bat egindura behar ez duela.
 
-## Plan bat batketa ondo jakinarazteko
+## Plan bat batketa ondo jakinarazteko {#how-to-downgrade-a-plan}
 
 Client-ek plan bat batketa egin dezakoki, bere subsitearen admin dashboard-era logi eta kontua eskatzen **Change** (Gehiago/Aldatu) botoia klikizik.
 
@@ -25,7 +25,7 @@ Erabiltzaileak irudia jarraitzeko, **Complete Checkout** (Checkout-a amaitu) bot
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Erabiltzailea plan bat batketa egin ondoren zer egiten du?
+### Erabiltzailea plan bat batketa egin ondoren zer egiten du? {#what-happens-when-a-user-downgrades-their-plan}
 
 Plan bat batketa egiteak erabiltzailearen subsitearen jakinarazteko beste konfiguratura ez aldatzen duela garrantzitsia esan nahi du.
 
@@ -37,7 +37,7 @@ Plan batean ezarritutako limitazioa gehiago izan zen post-ezinburuak dira, irudi
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Zer egin da labenguaren (payment)
+### Zer egin da labenguaren (payment) {#what-happens-to-the-payment}
 
 3.0 bertsioan, proration-ekin lotutako labenguarekin ez duzu beharrezkoa erregistroa.
 

@@ -4,13 +4,13 @@ title: פילטר - wu_make_primary_domain_redirect_url
 sidebar_label: wu_make_primary_domain_redirect_url
 _i18n_hash: bda96824db400b25e97802e5567df22d
 ---
-# Filter: wu_make_primary_domain_redirect_url
+# Filter: wu_make_primary_domain_redirect_url {#filter-wumakeprimarydomainredirecturl}
 
 מסנן את כתובת ה-URL של ההפניה לאחר הגדרת דומיין כראשי.
 
 מאפשר למפתחים להתאים אישית לאן המשתמשים מופנים לאחר שהגדירו דומיין כראשי בהצלחה. כברירת מחדל, ההפניה מתבצעת לכתובת ה-URL הנוכחית באתר הראשי, או לכתובת ה-URL של המנהל (admin) של האתר שעובר שינוי.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,13 +19,13 @@ _i18n_hash: bda96824db400b25e97802e5567df22d
 | $domain | `\Domain` | אובייקט הדומיין שהוגדר כראשי. |
 | $old_primary_domains | `array` | מערך של מזהים (IDs) של דומיינים שהיו ראשיים בעבר. |
 
-### מאז
+### מאז {#since}
 
 - 2.0.0
-### מקור
+### מקור {#source}
 
 מוגדר ב-[inc/ui/class-domain-mapping-element.php](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-domain-mapping-element.php#L639) בשורה 639.
 
 
-## מחזיר
+## מחזיר {#returns}
 כתובת ה-URL המופנית והמסוננת.

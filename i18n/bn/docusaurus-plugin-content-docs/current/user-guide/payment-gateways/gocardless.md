@@ -3,7 +3,7 @@ title: GoCardless গেটওয়ে
 sidebar_position: 8
 _i18n_hash: dbf9269ae462e506432cf441e86b9647
 ---
-# GoCardless গেটওয়ে
+# GoCardless গেটওয়ে {#gocardless-gateway}
 
 এই ফিচারটি **GoCardless** অ্যাডঅন দ্বারা প্রদান করা হয়।
 

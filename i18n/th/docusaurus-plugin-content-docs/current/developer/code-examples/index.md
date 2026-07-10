@@ -3,11 +3,11 @@ title: ตัวอย่างโค้ดขั้นสูง
 sidebar_position: 1
 _i18n_hash: 98addf6b26f4c19754fed6e4f64a1704
 ---
-# ตัวอย่างโค้ดขั้นสูง
+# ตัวอย่างโค้ดขั้นสูง {#advanced-code-examples}
 
 ตัวอย่างเหล่านี้แสดงรูปแบบการผสานรวม (integration patterns) ขั้นสูงกับ Ultimate Multisite
 
-## Dynamic Pricing Engine
+## Dynamic Pricing Engine {#dynamic-pricing-engine}
 
 ระบบคำนวณราคาตามกฎเกณฑ์ที่สามารถใช้ส่วนลดตามปริมาณ (volume), ความภักดี (loyalty), และตามฤดูกาลได้:
 
@@ -86,7 +86,7 @@ class Dynamic_Pricing_Engine {
 new Dynamic_Pricing_Engine();
 ```
 
-## Advanced Site Provisioning
+## Advanced Site Provisioning {#advanced-site-provisioning}
 
 การตั้งค่าเว็บไซต์ใหม่โดยอัตโนมัติด้วยปลั๊กอิน (plugins), SSL, CDN, ระบบสำรองข้อมูล (backups), และการตรวจสอบ (monitoring) ตามฟีเจอร์ของแผนบริการ:
 
@@ -191,7 +191,7 @@ class Advanced_Site_Provisioner {
 new Advanced_Site_Provisioner();
 ```
 
-## Custom Limitations System
+## Custom Limitations System {#custom-limitations-system}
 
 การติดตามและบังคับใช้ขีดจำกัดทรัพยากร พร้อมคำเตือนการใช้งาน:
 
@@ -273,11 +273,11 @@ class Advanced_Limitations {
 new Advanced_Limitations();
 ```
 
-## BerlinDB Atomic Counter with `increment_item()`
+## BerlinDB Atomic Counter with `increment_item()` {#berlindb-atomic-counter-with-incrementitem}
 
 Ultimate Multisite v2.6.1 ได้เพิ่มเมธอด `increment_item()` ให้กับคลาส `Query` ของ BerlinDB คุณสามารถใช้เมธอดนี้เพื่อเพิ่มค่าตัวเลข (increment) ในคอลัมน์ต่างๆ ได้อย่างปลอดภัยและเป็นแบบอะตอมมิก (atomic) โดยไม่ต้องกังวลเรื่องการอ่าน-แก้ไข-เขียน (read-modify-write races) ซึ่งมีประโยชน์อย่างยิ่งสำหรับตัวนับ (counters), โควต้าการใช้งาน, และการตรวจสอบการจำกัดอัตรา (rate-limiting checks) ที่ทำงานภายใต้คำขอพร้อมกัน (concurrent requests)
 
-### Method signature
+### Method signature {#method-signature}
 
 ```php
 /**
@@ -292,7 +292,7 @@ Ultimate Multisite v2.6.1 ได้เพิ่มเมธอด `increment_ite
 public function increment_item( int $item_id, string $column, int $amount = 1 ): bool;
 ```
 
-### Basic usage
+### Basic usage {#basic-usage}
 
 ```php
 // เพิ่ม 1 ให้กับคอลัมน์ `api_calls` สำหรับ membership ID 42
@@ -306,7 +306,7 @@ $memberships->increment_item( 42, 'api_calls', 5 );
 $memberships->increment_item( 42, 'api_calls', -1 );
 ```
 
-### Tracking API usage per membership
+### Tracking API usage per membership {#tracking-api-usage-per-membership}
 
 รูปแบบการใช้งานจริงสำหรับการบังคับใช้ขีดจำกัดอัตรา API ต่อสมาชิกแต่ละราย:
 
@@ -356,7 +356,7 @@ class Membership_API_Limiter {
 new Membership_API_Limiter();
 ```
 
-### Why `increment_item()` instead of `update_item()`
+### Why `increment_item()` instead of `update_item()` {#why-incrementitem-instead-of-updateitem}
 
 การใช้วิธีอ่าน-แก้ไข-เขียน (read-modify-write) แบบตรงไปตรงมานั้นไม่ปลอดภัยเมื่อมีการเรียกใช้พร้อมกัน:
 

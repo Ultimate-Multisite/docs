@@ -3,13 +3,13 @@ title: Cúram Déilte
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Conas an tairm do chuidiúcháin de dhuit ó Codeable?
+# Conas an tairm do chuidiúcháin de dhuit ó Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Caithfidh méidí ar thuir, caithfidh méidí ar thuir chun na fáilteanna a bheith linn i gcónaí is lán mar atá ag méidí. Má tá sin é seo a bhfuil tú ag iarraidh, tá Codeable an t-amach agam. Is é seo curte áit a bhfaidh tú a fháil ar d'fhéanteach dévelperí le tuairiscí ar Ultimate Multisite.
 
 Is Codeable platform a chiallaíonn siad le oileú le chéile custaimerí le dévelperí WordPress freelance a bheith chuidaithe, ag eolais ar projéct de chuid méidí. Tá siad ar chur chun cinn a bheith scéal leat chun an t-amach leat a bheith mar chuid fhéanteacha is mhaith leat a bheith ag an t-amach leat.
 
-### Conas a dhéanamh ar projéct i Codeable?
+### Conas a dhéanamh ar projéct i Codeable? {#how-to-create-a-project-in-codeable}
 
 Ar anois, rag méidí ar [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) agus cliceáil ar **Start a Project**.
 

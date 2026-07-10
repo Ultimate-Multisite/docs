@@ -3,11 +3,11 @@ title: Produtos e Preços de Domínio
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Produtos e Preços de Domínio
+# Produtos e Preços de Domínio {#domain-products-and-pricing}
 
 Produtos de domínio são como você controla preços, TLDs (domínios de nível superior), privacidade WHOIS e a seleção do provedor. Cada produto de domínio é um produto padrão Ultimate Multisite com uma aba extra **Configurações de Domínio**.
 
-## Criando um produto de domínio
+## Criando um produto de domínio {#creating-a-domain-product}
 
 1. Vá para **Network Admin › Ultimate Multisite › Products**
 2. Clique em **Add New** (Adicionar Novo)
@@ -17,13 +17,13 @@ Produtos de domínio são como você controla preços, TLDs (domínios de nível
 
 Produtos de domínio aparecem com um selo roxo **Domain** (Domínio) na lista de produtos e podem ser filtrados usando a aba **Domain Products** (Produtos de Domínio).
 
-## Aba Configurações de Domínio
+## Aba Configurações de Domínio {#domain-settings-tab}
 
-### Provedor
+### Provedor {#provider}
 
 Selecione qual registrador será responsável pelo registro deste produto. O padrão é o **Default provider** (Provedor Padrão) global definido nas configurações do Vendedor de Domínios.
 
-### TLDs Suportados
+### TLDs Suportados {#supported-tlds}
 
 Deixe em branco para criar um **catch-all product** (produto comodín) que se aplica a todos os TLDs não correspondentes a outro produto.
 
@@ -31,7 +31,7 @@ Insira uma lista separada por vírgulas dos TLDs (ex: `.com, .net, .org`) para c
 
 **Como funciona o casamento de produtos:** Quando um cliente pesquisa um domínio, o addon seleciona o produto correspondente mais específico. Um produto com `.com` na lista de TLDs tem precedência sobre um produto comodín. Se nenhum produto específico de TLD corresponder, o comodín é usado. Se não houver produtos existentes, a busca por domínio não será exibida.
 
-### Tipo de Margem (Markup type)
+### Tipo de Margem (Markup type) {#markup-type}
 
 Três modos controlam como seu preço de varejo é calculado a partir do custo atacadista:
 
@@ -41,11 +41,11 @@ Três modos controlam como seu preço de varejo é calculado a partir do custo a
 | **Fixed markup** (Margem Fixa) | Adiciona um valor fixo em dólares. Uma margem de $5 em um domínio de $10 resulta em $15. |
 | **Fixed price** (Preço Fixo) | Ignora completamente o custo atacadista. Sempre cobra o valor que você inserir. |
 
-### Preços introdutórios
+### Preços introdutórios {#introductory-pricing}
 
 Permit a oferta de um preço promocional no primeiro ano. Defina um **Preço de Introdução** (o preço do primeiro ano) separado do **Preço de Renovação** regular (ano 2+). O cliente verá ambos os preços exibidos durante o checkout para saber o que esperar na renovação.
 
-### Privacidade WHOIS
+### Privacidade WHOIS {#whois-privacy}
 
 Controla se a proteção de privacidade WHOIS é oferecida para domínios registrados através deste produto.
 
@@ -59,7 +59,7 @@ Para Namecheap, a privacidade WHOIS usa WhoisGuard (sempre gratuita). Para OpenS
 
 ---
 
-## Importação e sincronização de TLD
+## Importação e sincronização de TLD {#tld-import-and-sync}
 
 Os produtos de domínio exibem preços de atacado em tempo real buscados do provedor conectado. Para que isso funcione, os TLDs precisam ser importados.
 
@@ -70,7 +70,7 @@ Após uma sincronização, vá para a aba Configurações do Domínio de qualque
 
 ---
 
-## Renovação automática
+## Renovação automática {#auto-renewal}
 
 As renovações de domínio estão vinculadas ao status de associação do cliente:
 
@@ -90,7 +90,7 @@ IDs de modelos de e-mail para eventos do ciclo de vida do domínio:
 
 ---
 
-## Admin: Registro manual de domínio
+## Admin: Registro manual de domínio {#admin-manual-domain-registration}
 
 Para registrar um domínio em nome de um cliente sem que ele passe pelo processo de checkout:
 

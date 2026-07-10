@@ -1,22 +1,22 @@
 ---
 title: هوستينجر (hPanel) همغږي
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Hostinger (hPanel) Integration
+# Hostinger (hPanel) Integration {#hostinger-hpanel-integration}
 
-## مروری (Overview)
+## مروری (Overview) {#overview}
 
 Hostinger یه شرکت خیلی معروف میاد که هاستینگ وب داره و پنل کنترلی مدرنی به اسم hPanel داره. Ultimate Multisite Hostinger integration این امکان رو فراهم می‌کنه که همگام‌سازی دامنه‌ها بین Ultimate Multisite و hPanelِ Hostinger خودت به‌صورت خودکار انجام بشه، طوری که بتونی تنظیمات نگاشت دامنه (domain mappings) و زیردامنه‌ها رو مستقیماً از پنل مدیریت وردپرس خودت مدیریت کنی.
 
-## ویژگی‌ها (Features)
+## ویژگی‌ها (Features) {#features}
 
 - ایجاد خودکار addon domain در hPanel
 - ایجاد خودکار subdomain در hPanel (برای نصب‌های چند دامنه‌ای با زیردامنه)
 - حذف دامنه وقتی نگاشت‌ها پاک می‌شن
 - ادغام بی‌نقص با API مدیریت دامنه hPanel
 
-## پیش‌نیازها (Requirements)
+## پیش‌نیازها (Requirements) {#requirements}
 
 برای استفاده از این integration Hostinger، به موارد زیر نیاز داری:
 
@@ -35,9 +35,9 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پایانی API پیش‌فرض
 ```
 
-## دستورالعمل‌های راه‌اندازی (Setup Instructions)
+## دستورالعمل‌های راه‌اندازی (Setup Instructions) {#setup-instructions}
 
-### ۱. توکن API Hostinger خودت رو بساز
+### ۱. توکن API Hostinger خودت رو بساز {#1-generate-your-hostinger-api-token}
 
 ۱. وارد حساب Hostinger خود شو و به hPanel دسترسی پیدا کن
 ۲. به **Account Settings** → **API Tokens** برو
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // نقطه پا
    - مدیریت زیردامنه (Subdomain management)
 ۶. توکن تولید شده رو کپی کن و محکم ذخیره کن
 
-### ۲. شناسه حساب خودت رو پیدا کن
+### ۲. شناسه حساب خودت رو پیدا کن {#2-find-your-account-id}
 
 ۱. توی hPanel، به **Account Settings** → **Account Information** برو
 ۲. شناسه حساب شما در این صفحه نمایش داده میشه
 ۳. این شناسه رو کپی و برای مرحله بعد ذخیره کن
 
-### ۳. ثابت‌ها رو توی wp-config.php اضافه کن
+### ۳. ثابت‌ها رو توی wp-config.php اضافه کن {#3-add-constants-to-wp-configphp}
 
 ثابت‌های زیر رو توی فایل `wp-config.php` خودت اضافه کن:
 
@@ -69,7 +69,7 @@ define('WU_HOSTINGER_ACCOUNT_ID', 'your_hostinger_account_id');
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### ۴. همکارۍ فعال کړئ (Enable the Integration)
+### ۴. همکارۍ فعال کړئ (Enable the Integration) {#4-enable-the-integration}
 
 ۱. په خپل WordPress admin کې، ورته **Ultimate Multisite > Settings** ته لاړ شئ.
 ۲. به **Domain Mapping** tab ته لاړ شئ.
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ۴. **Hostinger (hPanel)** همکارۍ فعال کړئ.
 ۵. **Save Changes** باندې کلیک وکړئ.
 
-## څنګه کار کوي (How It Works)
+## څنګه کار کوي (How It Works) {#how-it-works}
 
-### Addon Domains (د اضافي د دامینونو لپاره)
+### Addon Domains (د اضافي د دامینونو لپاره) {#addon-domains}
 
 کله چې تاسو Ultimate Multisite کې یو دامین مپ کړئ:
 
@@ -87,7 +87,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ۲. دامین وایله ده چې خپل root directory ته اشاره وکړي.
 ۳. کله چې یو دامین مپ ورکړل منوول شي، همکارۍ د hPanel څخه اضافي دامین اخیستل بخښنه得.
 
-### Subdomains (د ساب‌دامینونو لپاره)
+### Subdomains (د ساب‌دامینونو لپاره) {#subdomains}
 
 د ساب‌دامین Multisite نصب کولو لپاره، کله چې یو نوی سایت جوړ کړئ:
 
@@ -95,7 +95,7 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ۲. دا API ته درخواستونه پېژندلنیږي ترڅو ساب‌دامین اضافه کړي.
 ۳. ساب‌دامین وایله ده چې خپل root directory ته اشاره وکړي.
 
-## مهم ټکي (Important Notes)
+## مهم ټکي (Important Notes) {#important-notes}
 
 - همکارۍ د ستاسو اکاونه سره اړیکه نیسي د Hostinger REST API له لارې.
 - ستاسو API token باید د دامین او ساب‌دامین مدیریت لپاره لازم بصلاحیت ولري.
@@ -103,33 +103,33 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 - API درخواستونه په HTTPS له لارې په امنیت سره کیږي.
 - خپل API token محفوظ لرئ او هیڅکله یې علن کې شریک नगर्नुहोस्.
 
-## مشکې حل (Troubleshooting)
+## مشکې حل (Troubleshooting) {#troubleshooting}
 
-### API Connection Issues
+### API Connection Issues {#api-connection-issues}
 
 API token اوویره کړئ چې صحیح دی او منقضی نه دی
 اکثر ID خپل حساب هم صحیح دی
 یقین وکړئ چې API token ته د دامین مدیریت لپاره اړین اجازه ورکړل شوې دي
 تثبیت وکړئ چې Hostinger حساب فعال دی او ښه وضعیت کې دی
 
-### د دامنه اضافه نه ده شوې
+### د دامنه اضافه نه ده شوې {#domain-not-added}
 
 - د Ultimate Multisite لاگونه په هر ډول غلط پیغامونو لپاره وګورئ
 - کیکړئ چې دامین تر اوسه په خپل Hostinger حساب کې اضافه نه شوی دی
 - ډاغه یوازې که د اضافي دامینونو لپاره د Hostinger حساب محدودیت نه رسیدای دی
 - تایید وکړئ چې دامین به په سمه توګه د خپل Hostinger nameservers ته اشاره کړی وي
 
-### د SSL سرتیفیکات مسایل
+### د SSL سرتیفیکات مسایل {#ssl-certificate-issues}
 
 - دا همغږي سیستم د SSL سرتیفیکات ورکولو کار نه کوي
 - Hostinger معمولا له AutoSSL له لارې وړیا SSL سرتیفیکات وړاندې کوي
 - تاسو کولی شئ په hPanel کې د **SSL/TLS** تحت مستقیم مدیریت وکړئ
 - بدلونweise، له Hostinger د AutoSSL خاصیت څخه Let's Encrypt هم کار اخیستل
 
-## مرسته
+## مرسته {#support}
 
 د Hostinger همغږي کولو لپاره اضافي مرسته ترلاسه کولو لپاره، مهرباني وکړئ وګورئ:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

@@ -3,19 +3,19 @@ title: 'Bài học 2: Chọn ngách của bạn'
 sidebar_position: 3
 _i18n_hash: 4526ed4637937d4520afe876e8ced03f
 ---
-# Bài 2: Chọn Ngách Của Bạn
+# Bài 2: Chọn Ngách Của Bạn {#lesson-2-picking-your-niche}
 
 Ở Bài 1, chúng ta đã xác định tại sao việc tập trung vào một ngách (niche) lại tốt hơn là làm sản phẩm chung chung. Bây giờ, bạn cần chọn ngách của riêng mình. Bài học này sẽ cung cấp cho bạn một khung làm việc để tìm kiếm và xác thực một ngách trước khi bạn đầu tư thời gian xây dựng sản phẩm cho nó.
 
-## Chúng Ta Đã Dừng Ở Đâu
+## Chúng Ta Đã Dừng Ở Đâu {#where-we-left-off}
 
 Chúng ta đã định nghĩa khái niệm FitSite: một nền tảng website dành cho các phòng tập thể hình. Nhưng làm thế nào chúng ta lại đi đến việc tập trung vào phòng tập thể hình? Bài học này sẽ đi sâu vào quy trình đó để bạn có thể áp dụng nó nhằm tìm ra ngách của riêng mình.
 
-## Ba Tiêu Chí Cần Thiết
+## Ba Tiêu Chí Cần Thiết {#the-three-criteria}
 
 Một ngách tốt cho một nền tảng website phải đáp ứng ba điều kiện:
 
-### 1. Họ Cần Website Nhưng Gặp Khó Khăn Khi Có Được Website Chất Lượng
+### 1. Họ Cần Website Nhưng Gặp Khó Khăn Khi Có Được Website Chất Lượng {#1-they-need-websites-but-struggle-to-get-good-ones}
 
 Hãy tìm kiếm các ngành nghề mà:
 
@@ -26,7 +26,7 @@ Hãy tìm kiếm các ngành nghề mà:
 
 **Phòng tập thể hình phù hợp**: các thành viên mong đợi tìm thấy lịch lớp, giá cả và đặt lịch trực tuyến. Hầu hết các website phòng tập đều lỗi thời hoặc được xây dựng trên các mẫu chung chung không phục vụ đúng mục đích.
 
-### 2. Các Doanh Nghiệp Có Khả Năng Chi Trả Gói Đăng Ký Hàng Tháng
+### 2. Các Doanh Nghiệp Có Khả Năng Chi Trả Gói Đăng Ký Hàng Tháng {#2-the-businesses-can-afford-a-monthly-subscription}
 
 Khách hàng mục tiêu của bạn cần phải:
 
@@ -36,7 +36,7 @@ Khách hàng mục tiêu của bạn cần phải:
 
 **Phòng tập thể hình phù hợp**: họ đã trả tiền cho phần mềm đặt lịch, xử lý thanh toán và các công cụ marketing. Việc đăng ký website là một sự bổ sung tự nhiên.
 
-### 3. Họ Thường Tương Tác Với Nhau
+### 3. Họ Thường Tương Tác Với Nhau {#3-they-talk-to-each-other}
 
 Các ngách tốt nhất có:
 
@@ -46,9 +46,9 @@ Các ngách tốt nhất có:
 
 **Phòng tập thể hình phù hợp**: chủ phòng tập tham dự các sự kiện ngành thể hình, tham gia các cộng đồng trực tuyến và thường xuyên chia sẻ công cụ cũng như dịch vụ với đồng nghiệp.
 
-## Cách Tìm Ứng Viên Ngách
+## Cách Tìm Ứng Viên Ngách {#how-to-find-niche-candidates}
 
-### Bắt Đầu Từ Những Gì Bạn Biết
+### Bắt Đầu Từ Những Gì Bạn Biết {#start-with-what-you-know}
 
 Kinh nghiệm hiện có của bạn là một lợi thế. Hãy cân nhắc:
 
@@ -56,7 +56,7 @@ Kinh nghiệm hiện có của bạn là một lợi thế. Hãy cân nhắc:
 - Sở thích hoặc đam mê mà bạn hiểu rõ cộng đồng đó.
 - Các mạng lưới chuyên nghiệp mà bạn đã tham gia.
 
-### Tìm Kiếm Các Dấu Hiệu Vấn Đề (Pain Signals)
+### Tìm Kiếm Các Dấu Hiệu Vấn Đề (Pain Signals) {#look-for-pain-signals}
 
 Tìm kiếm bằng chứng cho thấy các doanh nghiệp trong một ngách đang gặp khó khăn với website:
 
@@ -65,7 +65,7 @@ Tìm kiếm bằng chứng cho thấy các doanh nghiệp trong một ngách đa
 - Xem các website thực tế trong ngách – hầu hết chúng có kém chất lượng không?
 - Kiểm tra xem có đối thủ cạnh tranh nào không và họ phục vụ thị trường tốt đến mức nào.
 
-### Đánh Giá Khía Cạnh Kinh Tế
+### Đánh Giá Khía Cạnh Kinh Tế {#evaluate-the-economics}
 
 Đối với mỗi ngách ứng viên, hãy ước tính:
 
@@ -73,11 +73,11 @@ Tìm kiếm bằng chứng cho thấy các doanh nghiệp trong một ngách đa
 - **Khả năng chi trả**: Hiện tại họ đang chi bao nhiêu cho các công cụ tương tự?
 - **Tiềm năng giá trị trọn đời**: Các doanh nghiệp này có ổn định không, hay họ thường xuyên thay đổi dịch vụ?
 
-## Xác Thực Ngách Của Bạn
+## Xác Thực Ngách Của Bạn {#validating-your-niche}
 
 Trước khi xây dựng bất cứ thứ gì, hãy xác thực nhu cầu:
 
-### Nói Chuyện Với Khách Hàng Tiềm Năng
+### Nói Chuyện Với Khách Hàng Tiềm Năng {#talk-to-potential-customers}
 
 Liên hệ với 10-15 chủ doanh nghiệp trong ngách mục tiêu của bạn. Hãy hỏi họ:
 
@@ -88,17 +88,17 @@ Liên hệ với 10-15 chủ doanh nghiệp trong ngách mục tiêu của bạn
 
 Bạn chưa bán hàng. Bạn đang lắng nghe.
 
-### Kiểm Tra Bức Tranh Cạnh Tranh
+### Kiểm Tra Bức Tranh Cạnh Tranh {#check-competitor-landscape}
 
 - **Không có đối thủ**: Có thể nghĩa là không có nhu cầu, hoặc có thể là một cơ hội chưa được khai thác. Các cuộc trò chuyện với khách hàng sẽ cho bạn biết điều đó.
 - **Một vài đối thủ**: Dấu hiệu tốt. Xác thực nhu cầu. Hãy nghiên cứu những gì họ làm tốt và những điểm họ còn thiếu sót.
 - **Nhiều đối thủ**: Khó thâm nhập hơn, nhưng vẫn khả thi nếu bạn có thể khác biệt hóa rõ ràng.
 
-### Xây Dựng Một Trang Đích (Landing Page)
+### Xây Dựng Một Trang Đích (Landing Page) {#build-a-landing-page}
 
 Trước khi xây dựng nền tảng, hãy tạo một trang đích đơn giản mô tả giải pháp ngách của bạn và thu thập đăng ký email. Chạy một lượng quảng cáo nhỏ có mục tiêu để kiểm tra sự quan tâm. Nếu mọi người đăng ký, bạn đã có sự xác thực.
 
-## Áp Dụng Điều Này Vào FitSite
+## Áp Dụng Điều Này Vào FitSite {#applying-this-to-fitsite}
 
 Đây là cách FitSite được đánh giá dựa trên các tiêu chí:
 
@@ -112,7 +112,7 @@ Trước khi xây dựng nền tảng, hãy tạo một trang đích đơn giả
 
 Sự xác thực đã xác nhận cơ hội. Bây giờ chúng ta xây dựng.
 
-## Các Ý Tưởng Ngách Khác Cần Cân Nhắc
+## Các Ý Tưởng Ngách Khác Cần Cân Nhắc {#niche-ideas-to-consider}
 
 Nếu thể hình không phải là thị trường của bạn, đây là một số ngách khác đáp ứng các tiêu chí:
 
@@ -127,7 +127,7 @@ Nếu thể hình không phải là thị trường của bạn, đây là một
 
 Mỗi ngách này đều có những đặc điểm giống nhau: nhu cầu website rõ ràng, khả năng chi trả, và truyền miệng trong cộng đồng.
 
-## Những Gì Chúng Ta Đã Xây Trong Bài Học Này
+## Những Gì Chúng Ta Đã Xây Trong Bài Học Này {#what-we-built-this-lesson}
 
 - **Khung chọn ngách**: ba tiêu chí để đánh giá bất kỳ ngách nào
 - **Phương pháp xác thực**: trò chuyện với khách hàng, phân tích đối thủ cạnh tranh, thử nghiệm trang đích

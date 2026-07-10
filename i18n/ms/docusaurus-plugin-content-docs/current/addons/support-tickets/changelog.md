@@ -3,13 +3,13 @@ title: Pencatatan Perubahan Tiket Sokongan
 sidebar_position: 99
 _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 ---
-# Senarai Perubahan Tiket Sokongan
+# Senarai Perubahan Tiket Sokongan {#support-tickets-changelog}
 
-### 1.0.4 - 2026-05-05
+### 1.0.4 - 2026-05-05 {#104---2026-05-05}
 * Peningkatan: Menanggalkan direktori vendor/ daripada pengesanan Git (sudah dilindungi oleh .gitignore), mengurangkan saiz repositori
 * Peningkatan: Diuji sehingga WordPress 7.0
 
-### 1.0.3 - 2026-05-01
+### 1.0.3 - 2026-05-01 {#103---2026-05-01}
 * Pembetulan: Menerima nilai null dalam penetap model tiket yang boleh null
 * Pembetulan: Menyimpan semua tiket dalam jadual global seluruh rangkaian untuk sokongan multisite yang betul
 * Pembetulan: Menyembunyikan medan kakitangan dan membetulkan pengalihan halaman kosong pada borang tiket baharu pelanggan
@@ -27,7 +27,7 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Peningkatan: Memuatkan aset bahagian hadapan (frontend) secara bersyarat hanya pada halaman tiket sokongan
 * Peningkatan: Melangkau autoloader plugin apabila autoloader root Bedrock sudah memuatkan kebergantungan
 
-### 1.0.2 - 2025-12-11
+### 1.0.2 - 2025-12-11 {#102---2025-12-11}
 * Penambahan: Fungsi melihat tiket sepenuhnya untuk pentadbir dan bahagian hadapan (frontend)
 * Penambahan: Pengendali AJAX untuk penghantaran balasan tiket
 * Penambahan: Sokongan untuk fungsi balasan tiket dengan pengendalian borang yang betul
@@ -43,12 +43,12 @@ _i18n_hash: 4ef7d3adaed4523e799ec78da9843a3d
 * Peningkatan: Struktur pangkalan data dengan kelas pertanyaan dan skema yang betul untuk balasan dan lampiran
 * Peningkatan: Migrasi kepada sifat (properties) sebenar berbanding atribut untuk model tiket
 
-### 1.0.1 - 2025-09-28
+### 1.0.1 - 2025-09-28 {#101---2025-09-28}
 * Dikemas kini: Menukar nama prefix kepada ultimate-multisite untuk konsistensi
 * Dikemas kini: Penyeragaman domain teks
 * Pembetulan: Pembetulan pepijat dan peningkatan kecil
 
-### 1.0.0 - 2025-09-01
+### 1.0.0 - 2025-09-01 {#100---2025-09-01}
 * Pelancaran awal
 * Sistem pengurusan tiket yang lengkap
 * Kawalan akses pelbagai peringkat

@@ -1,154 +1,156 @@
 ---
-title: Wax-soo-gaarsiinta Foomka Diyaarintaada
+title: Habeynta Foomkaaga Diiwaangelinta
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Wax-soo-qa barnaamistaaga
+# Habaynta Foomkaaga Diiwaangelinta {#customizing-your-registration-form}
 
-Si shabakadahaaga ay u muuqdaan gaar ah oo ka duwan dhammaan SaaS-yada kale ee ku dhisan platformka WordPress, Ultimate Multisite wuxuu kuu oggolaanayaa inaad si gaar ah ugu hagaajiso bogagga diiwaangelinta iyo galistaaga iyadoo la isticmaalayo astaanta **Checkout Forms** (Foomamka Lacag-bixinta).
+Si shabakaddaadu uga muuqato mid gaar ah marka loo eego dhammaan SaaS-yada kale ee lagu dhisay WordPress platform, Ultimate Multisite wuxuu kuu oggolaanayaa inaad habayso bogaggaaga diiwaangelinta iyo gelitaanka adigoo adeegsanaya astaantayada **Checkout Forms**.
 
-In kasta oo ay yihiin hab fudud oo la badbaado ah oo aad ku isku dayi karto qaabab kala duwan marka aad isku dayayso inaad cusub macaamiil ka beddesho, haddana waxay ugu badan tahay in la isticmaalo si loo abuuro foomam diiwaangelin gaar ah. Maqaalkani wuxuu ujeedadaa inuu kuu muujiyo sida aad u samayn karto.
+In kasta oo ay yihiin hab fudud oo dabacsan oo lagu tijaabiyo habab kala duwan marka la isku dayayo in macaamiil cusub loo beddelo, badanaa waxaa loo adeegsadaa abuurista foomam diiwaangelin oo shaqsiyaysan. Maqaalkani wuxuu ujeedkiisu yahay inuu ku tuso sida aad taas u samayn karto.
 
-## Bogagga galista iyo diiwaangelinta:
+## Bogagga gelitaanka iyo diiwaangelinta: {#login-and-registration-pages}
 
-Marka aad Ultimate Multisite ku rakibto, si toos ah ayay u abuureysaa bogagga galista iyo diiwaangelinta gaarka ah ee boggaaga ugu weyn. Waxaad beddeli kartaa bogagga asalka ah kuwaas oo kasta iyadoo aadan mar walba u socon **Ultimate Multisite > Settings > Login & Registration** boggaaga.
+Marka Ultimate Multisite la rakibo, wuxuu si otomaatig ah uga abuuraa bogag gelitaan iyo diiwaangelin oo la habeeyey goobtaada ugu weyn. Waxaad beddeli kartaa bogaggan caadiga ah wakhti kasta adigoo tagaya boggaaga **Ultimate Multisite > Settings > Login & Registration**.
 
-![Login and Registration settings page](/img/config/settings-general.png)
+![Bogga dejinta Gelitaanka iyo Diiwaangelinta](/img/config/settings-general.png)
 
-Halkan waa aragti buuxda ee bogga diiwaangelinta iyo galista:
+Halkan waxaa ku yaal muuqaal buuxa oo ah bogga dejinta gelitaanka iyo diiwaangelinta:
 
-![Login and Registration settings full page](/img/config/settings-login-registration-full.png)
+![Bogga buuxa ee dejinta Gelitaanka iyo Diiwaangelinta](/img/config/settings-login-registration-full.png)
 
-Aan eegno mid kasta oo ka mid ah doorbada aad hagaajin karto bogga **Login & Registration**:
+Aan eegno mid kasta oo ka mid ah ikhtiyaarrada aad ku habayn karto bogga **Login & Registration**:
 
-  * **Enable registration (Ficilista diiwaangelinta):** Tani doorbideed waxay furaysaa ama xirtaa diiwaangelinta shabakadahaaga. Haddii la xirto, macaamiishaadu ma heli doonaan fursad ay ku diiwaangeliyaan oo ay ku biiraan badeecadahaaga.
+  * **Dhaqaaji diiwaangelinta:** Ikhtiyaarkan wuxuu dhaqaajin doonaa ama damin doonaa diiwaangelinta shabakaddaada. Haddii la damiyo, macaamiishaadu ma awoodi doonaan inay isdiiwaangeliyaan oo ay ku biiraan badeecadahaaga.
 
-  * **Enable email verification (Ficilista xaqiijinta emailka):** Haddii doorbideeddu la furto, macaamiisha ku biiraya qorshe bilaash ah ama qorshe lacag-bixineed oo leh muddo isku day ah waxay helayaan email xaqiijin (verification) waxayna u baahan yihiin inay riixaan xiriirka xaqiijinta si bogga ay u noqdaan inay la shaqeeyaan.
+  * **Dhaqaaji xaqiijinta iimaylka:** Haddii ikhtiyaarkan la shido, macaamiisha ku biira qorshe bilaash ah ama qorshe lacag ah oo leh muddada tijaabada waxay heli doonaan iimayl xaqiijin ah waxayna u baahan doonaan inay gujiyaan xiriirka xaqiijinta si website-yadooda loo abuuro.
 
-* **Guryaha (Registration) Page-ka Macnaha Guud:** Tani waa bogga aasaasiga ah ee lagu diiwaangeliyo dadka cusub. Boggan wuxuu u baahan yahay in la soo bandhigo website-kaaga oo ay ku jirto foomka diiwaangelinta (oo sidoo kale loo yaqaan checkout form) - halkaas oo macaamiishaadu ay ku biirayaan badeecadahaaga. Waxaad samayn kartaa inta badan bogag diiwaangelin iyo foommo checkout ah, laakiin xusuusnow inaad ku dhigto shortcode-ka foomka checkout-ka bogga diiwaangelinta, haddii aadan, ma soo muuqan doona.
+  * **Bogga diiwaangelinta caadiga ah:** Kani waa bogga caadiga ah ee diiwaangelinta. Boggan waa inuu ku daabacan yahay website-kaaga oo uu leeyahay foom diiwaangelin (sidoo kale loo yaqaan foomka checkout) - halkaas oo macaamiishaadu ku biiri doonaan badeecadahaaga. Waxaad abuuri kartaa bogag diiwaangelin iyo foomam checkout intaad rabto, kaliya xusuusnow inaad shortcode-ka foomka checkout geliso bogga diiwaangelinta, haddii kale ma soo muuqan doono.
 
-  * **Isticmaal Bog Diyaarinta (Login Page) Gaar ah:** Tani waxay kuu oggolaanaysaa inaad isticmaasho bog diiwaangelin gaar ah, oo ka duwan bogga asaasiga ah ee wp-login.php. Haddii aad furto fursadan, waxaad dooran kartaa bogga la isticmaali doono diiwaangelinta (Default login page) qaybta hoose (oo ku taal).
+  * **Isticmaal bog gelitaan oo la habeeyey:** Ikhtiyaarkan wuxuu kuu oggolaanayaa inaad isticmaasho bog gelitaan oo la habeeyey, oo aan ahayn bogga caadiga ah ee wp-login.php. Haddii ikhtiyaarkan la shido, waxaad dooran kartaa bogga loo isticmaali doono gelitaanka ikhtiyaarka **Default login page** (hoos ku yaal).
 
-  * **Ka qabow URL-ka asaasiga ah ee diiwaangelinta (wp-login.php):** Haddii aad rabto inaad qariso URL-ka diiwaangelinta asaasiga ah, waxaad furtaa fursadan. Tani waxay caawisaa in la hor istaago weerarrada brute-force. Haddii fursadan la shidid, Ultimate Multisite wuxuu soo bandhigi doonaa qalad 404 marka isticmaaluhu isku dayo inuu helayo xiriirka asaasiga ah ee wp-login.php.
+  * **Qari url-ka gelitaanka asalka ah (wp-login.php)** : Haddii aad rabto inaad qariso URL-ka gelitaanka asalka ah, waad shidi kartaa ikhtiyaarkan. Tani waxay faa’iido u leedahay ka hortagga weerarrada brute-force. Haddii ikhtiyaarkan la dhaqaajiyo, Ultimate Multisite wuxuu soo bandhigi doonaa khalad 404 marka isticmaale isku dayo inuu galo xiriirka asalka ah ee wp-login.php
 
-  * **Cilaysi soo bandhigga bogga si uu u noqdo mid dhab ah (Force synchronous site publication):** Marka macaamiil cusub ay ku biiraan badeecad oo ku jira shabakad, boggaga cusub ee la filayo waa in lagu beddelo mid shabakad dhab ah. Habka soo bandhigga ayaa dhaca iyadoo loo marayo Job Queue, si aan isdaba joog ahayn (asynchronously). Fur fursadan si aad u xoojiso in soo bandhiggu uu dhaco isla request-ka diiwaangelinta.
+  * **Ku khasab daabacaadda goobta ee isku mar ah:** Ka dib marka macmiil ku biiro badeecad ku taal shabakad, goobta cusub ee sugaysa waa in loo beddelaa goob shabakad oo dhab ah. Habka daabacaaddu wuxuu ku dhacaa Job Queue, si aan isku mar ahayn. Dhaqaaji ikhtiyaarkan si aad ugu khasabto daabacaaddu inay ku dhacdo isla codsiga isdiiwaangelinta.
 
-Hadda, aan aragno fursado kale oo weli muhiim ah arrimaha diiwaangelinta iyo login-ka. Waxay ku jiraan hoos ka dambeeya **Other options** ee bogga Login & registration:
+Hadda, aan aragno ikhtiyaarro kale oo weli khuseeya habka gelitaanka iyo diiwaangelinta. Waxay ku yaallaan hoosta **Other options** ee isla bogga Login & registration:
 
-  * **Doorka Aasaasiga ah (Default role):** Tani waa doorka ay macaamiishaadu leeyihiin website-kaadkii ka dib markii la dhammeeyo habka diiwaangelinta.
+  * **Doorka caadiga ah:** Kani waa doorka ay macaamiishaadu ku yeelan doonaan website-kooda ka dib habka isdiiwaangelinta.
 
-* **Fashilinta Jumper (Enable Jumper):** Waxay furaysaa fariinta Jumper ee qaybta admin-ka. Jumper wuxuu u oggolaanaya maamulayaasha inay si degdeg ah u guuraan shabakadaha Ultimate Multisite, shayga shabakadda (network objects), iyo meel kale oo la taageero iyadoon in ay ku wareega dhammaan menu-yada. Haddii aad doorbidayso inaad ka hor istaagto qalabka fudud ee maarayntaas si aad u qariso, waa furaysi.
+  * **Dhaqaaji Jumper:** Wuxuu dhaqaajiyaa gaabiyaha Jumper ee aagga maamulka. Jumper wuxuu u oggolaanayaa maamulayaasha inay si dhakhso ah ugu boodaan shaashadaha Ultimate Multisite, walxaha shabakadda, iyo meelaha kale ee la taageero iyagoo aan dhex marin menu kasta. Demi haddii aad doorbidayso inaad ka qariso aaladdaas hagitaanka degdegga ah interface-ka maamulka.
 
-  * **Ku dar isticmaalayaasha qaybta ugu weyn:** Furitaanka fursaddaasi waxay sidoo kale ku dari doontaa isticmaalaha shabakaddaada qaybta ugu weyn ka dib markii la dhammeeyo habka kaydinta (signup process). Haddii aad furto fursadan, waxaad arki doontaa dooro lagu dejiyo **default role**-ka (role-ka asalka ah) isticmaalayaashani ee website-kaaga hoos ka dambeeya.
+  * **Ku dar isticmaalayaasha goobta ugu weyn sidoo kale:** Dhaqaajinta ikhtiyaarkan waxay sidoo kale ku dari doontaa isticmaalaha goobta ugu weyn ee shabakaddaada ka dib habka isdiiwaangelinta. Haddii aad dhaqaajiso ikhtiyaarkan, ikhtiyaar lagu dejinayo **doorka caadiga ah** ee isticmaalayaashan ee website-kaaga ayaa sidoo kale ka soo muuqan doona hoostiisa.
 
-  * **Furista laba ama badan oo xisaabaha:** U oggolaanshaha fursadan waxay u oggolaanaysaa isticmaalayaasha inay leeyihiin xisaabooyin ku jira meelal kala duwan oo shabakaddaada ah iyagoo isticmaalaya isku-dhafka email-ka. Haddii furitaankaasi uu furan yahay, macaamiishaadu ma heli doonaan fursad ay u abuuraan xisaab ku website kale oo ka socda shabkaddaada iyagoo isticmaalaya isku-dhafka email-ka ah.
+  * **Dhaqaaji akoonno badan:** U oggolow isticmaalayaasha inay akoonno ku yeeshaan goobo kala duwan oo ka tirsan shabakaddaada iyagoo adeegsanaya isla cinwaanka iimaylka. Haddii ikhtiyaarkan damman yahay, macaamiishaadu ma awoodi doonaan inay akoon ka abuuraan website-yo kale oo ku shaqeeya shabakaddaada iyagoo adeegsanaya isla cinwaanka iimaylka.
 
-Waxaa ku dhammaaday dhammaan doorbiyada la xiriira galitaanka (login) iyo kaydinta (registration) ee aad u beddesho! Ha iloobin inaad kaydsato dejimahaaga ka dib markaad dhammaystirto wax kasta oo aad hagaajisay.
+Taasina waa dhammaan ikhtiyaarrada la xiriira gelitaanka iyo diiwaangelinta ee aad habayn karto! Ha ilaawin inaad kaydiso dejimahaaga markaad dhamayso tafatirkooda.
 
-## Isticmaalka foomamka kaydinta badan:
+## Isticmaalka foomam diiwaangelin oo badan: {#using-multiple-registration-forms}
 
-Ultimate Multisite 2.0 wuxuu bixiyaa editor-ka foomamka checkout (checkout form) kaas oo kuu oggolaanaya inaad samayso inta badan foomamo aad rabto, iyadoo la isticmaalayo qaybo kala duwan, alaabaha la bixiyo, iwm.
+Ultimate Multisite 2.0 wuxuu bixiyaa tafatire foom checkout ah oo kuu oggolaanaya inaad abuurto foomam intaad rabto, oo leh beerro kala duwan, badeecado la soo bandhigay, iwm.
 
-Labada bogga galitaanka (login page) iyo kaydinta (registration page) waxaa lagu dhex qoray shortcodes: **[wu_login_form]** ee bogga galitaanka iyo **[wu_checkout]** ee bogga kaydinta. Waxaad si dheeri ah u hagaajin kartaa bogga kaydinta adiga oo dhisa ama samaynaya foomamka checkout-ka (checkout forms).
+Labada bog ee gelitaanka iyo diiwaangelinta waxaa lagu dhex daray shortcodes: **[wu_login_form]** bogga gelitaanka iyo**[wu_checkout]** bogga diiwaangelinta. Waxaad sii habayn kartaa bogga diiwaangelinta adigoo dhisaya ama abuuraya foomam checkout.
 
-Si aad u hesho astaantaas, tag menu-ga **Checkout Forms** ee dhinaca bidixda.
+Si aad u gasho astaantan, tag menu-ga **Checkout Forms**, ee dhinaca bidix ee sidebar-ka.
 
-![Checkout Forms menu in sidebar](/img/config/checkout-forms-list.png)
+![Menu-ga Checkout Forms ee sidebar-ka](/img/config/checkout-forms-list.png)
 
-Boggan, waxaad arki doontaa dhammaan foomamka checkout-ka (checkout forms) ee aad samaysay.
+Boggan, waxaad ka arki kartaa dhammaan foomamka checkout ee aad haysato.
 
-Haddii aad rabto inaad samayso mid cusub, si fudud guji **Add Checkout Form** oo ku taal sare-dhiga bogga.
+Haddii aad rabto inaad abuurto mid cusub, kaliya guji **Add Checkout Form** ee dusha bogga.
 
-Waxaad isku dooran kartaa mid ka mid ah saddexda dooro ee aad u bilaabato: single step (tallaabo hal), multi-step (tallaabo badan) ama blank (boos). Ka dib, riix si aad **Tallaabadda Editor-ka ugu tagto**.
+Waxaad dooran kartaa mid ka mid ah saddexdan ikhtiyaar sidii bartaada bilowga: hal tallaabo, tallaabooyin badan ama bannaan. Kadib, guji **Go to the Editor**.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+![Ku dar Checkout Form oo leh ikhtiyaarrada hal tallaabo, tallaabooyin badan, ama bannaan](/img/config/checkout-forms-list.png)
 
-Sida kale, waxaad wax ka beddeli kartaa ama ku dubbar kartaa foomamka aad horey u haysato adigoo riixaya doorooyinka ho magaca. Halkaas ayaad markaad hesho doorooyin lagu nuqul karo shortcode-ka foomamka ama laga saari karo foomamkaas.
+Haddii kale, waxaad tafatiri kartaa ama nuqul ka samayn kartaa foomamka aad hore u haysato adigoo gujinaya ikhtiyaarrada hoosta magaciisa. Halkaas, waxaad sidoo kale ka heli doontaa ikhtiyaarrada lagu koobiyeeyo shortcode-ka foomka ama lagu tirtiro foomka.
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+![Ficillada hover-ka ee foomka checkout oo leh tafatir, nuqul-samayn, iyo tirtir](/img/config/checkout-form-hover-actions.png)
 
-Haddii aad doorato single step ama multi-step, foomamka checkout wuxuu horey u buuxinayaa tallaabooyinka asaasiga ah si uu shaqeeyo. Ka dib, haddii aad rabto, waxaad ku dari kartaa tallaabooyin dheeraad ah.
+Haddii aad doorato hal tallaabo ama tallaabooyin badan, foomka checkout hore ayaa loogu buuxin doonaa tallaabooyinka aasaasiga ah ee uu ku shaqaynayo. Kadib, haddii aad rabto, waxaad ku dari kartaa tallaabooyin dheeraad ah.
 
-### Wax ka beddelid Foomam Checkout:
+### Tafatirka Checkout Form: {#editing-a-checkout-form}
 
-Sida aan hore u sheegnay, waxaad samayn kartaa foomamyo checkout oo loo isticmaalo ujeedo kala duwan. Tusaale ahaan, halkan waxaan diiradda saari doonaa foomam diiwaangelinta (registration form).
+Sida aan hore u sheegnay, waxaad abuuri kartaa foomam checkout ujeeddooyin kala duwan. Tusaalahan waxaan ka shaqayn doonaa foom diiwaangelin.
 
-Ka dib markaad tagto editor-ka foomamka checkout, siin magac foomamkaaga (oo loo isticmaali doono ujeeddo gudaha ah oo kaliya) iyo slug (oo loo isticmaalo in la abuuro shortcodes, tusaale ahaan).
+Ka dib markaad u gudubto tafatiraha foomka checkout, foomkaaga sii magac (oo loo isticmaali doono tixraac gudaha ah oo keliya) iyo slug (oo loo isticmaalo in lagu abuuro shortcodes, tusaale ahaan).
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+![Tifaftiraha foomka lacag-bixinta oo leh beeraha magaca iyo slug](/img/config/checkout-form-name-slug.png)
 
-Foomamku wuxuu ka kooban yahay tallaabooyin iyo meelo lagu qoro macluumaadka (fields). Waxaad ku dari kartaa tallaabo cusub adigoo riixaya **Add New Checkout Step**.
+Foomamku waxay ka samaysan yihiin tallaabooyin iyo beero. Waxaad ku dari kartaa tallaabo cusub adigoo gujinaya **Ku dar Tallaabo Cusub oo Lacag-bixin**.
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+![Badhanka Ku dar Tallaabo Cusub oo Lacag-bixin](/img/config/checkout-form-add-step.png)
 
-Marka aad hesho tabka ugu horreeya ee modal window-ga, buuxiso macluumaadka tallaabada foomamkaaga. Siin ID, magac iyo sharaxaad. Waxay inta badan loo isticmaalaa gudaha.
+Tab-ka koowaad ee daaqadda modal-ka, buuxi waxa ku jira tallaabada foomkaaga. Sii ID, magac iyo sharaxaad. Waxyaabahan inta badan gudaha ayaa loo isticmaalaa.
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+![Tab-ka nuxurka tallaabada lacag-bixinta oo leh ID, magac, iyo sharaxaad](/img/config/checkout-form-step-content.png)
 
-Markaas, qeex visibility (waxa uu muuqdo). Waxaad dooran kartaa inta u dhaxaysa **Always show** (mar kasta oo ay muuqato), **Only show for logged in users** (oo kaliya isticmaalaya kuwa galay/logged in) ama **Only show for guests** (oo kaliya isticmaalaya dadka aan galayn).
+Marka xigta, deji muuqashada tallaabada. Waxaad kala dooran kartaa **Had iyo jeer muuji** , **Kaliya u muuji isticmaaleyaasha soo galay** ama **Kaliya u muuji martida**.
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+![Ikhtiyaarrada muuqashada tallaabada lacag-bixinta](/img/config/checkout-form-step-visibility.png)
 
-Uguun, hagaajinta qaabka (step style) waa waqtigaas. Kuwaas waa meelo aan la qorsayn.
+Ugu dambayn, habee qaabka tallaabada. Kuwani waa beero ikhtiyaari ah.
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+![Habaynta qaabka tallaabada lacag-bixinta](/img/config/checkout-form-step-style.png)
 
-Hadda, wuxuu yahay wakhtiga inaan ku darno meelal (fields) qaybta ugu horreysa. Si aad u samayso, kaliya guji **Add New Field** oo dooro nooca qaybta aad rabto inaad isticmaasho.
+Hadda, waa waqtigii aan beero ku dari lahayn tallaabadeenna koowaad. Kaliya guji **Ku dar Beer Cusub** oo dooro nooca qaybta aad rabto.
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+![Badhanka Ku dar Beer Cusub](/img/config/checkout-form-add-field-button.png)![Dropdown-ka xulashada nooca beerta](/img/config/checkout-form-field-type-dropdown.png)
 
-Qayb kasta waxay leedahay faahfaahin kala duwan oo aad buuxin karto. Marka aan ku bilaabno, waxaan dooran doonaa qaybta **Username** (Magaca Isticmaalaha).
+Beer kasta waxay leedahay cabbirro kala duwan oo la buuxiyo. Gelitaankan koowaad, waxaan dooran doonaa beerta **Magaca isticmaalaha**.
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+![Habaynta beerta Magaca isticmaalaha](/img/config/checkout-form-username-content.png)![Cabbirrada beerta Magaca isticmaalaha](/img/config/checkout-form-username-visibility.png)![Dejinnada dheeraadka ah ee beerta Magaca isticmaalaha](/img/config/checkout-form-username-style.png)
 
-Waxaad ku dari kartaa inta aad u rabto meelal iyo qaybo. Si aad u soo bandhigidada alaabtaada si macaamiisha ay iibiyaan mid ka mid ah, isticmaal qaybta **Pricing Table** (Miisaaniyadda Qiimaha). Haddii aad rabto inaad u oggolaato macaamiisha inay dooradaan template-yo, ku dari qaybta **Template Selection**. Iloobkaas iyo kuwa kale.
+Waxaad ku dari kartaa tallaabooyin iyo beero intaad u baahan tahay. Si aad u muujiso badeecadahaaga si macaamiishaadu mid u doortaan, isticmaal beerta Jadwalka Qiimeynta. Haddii aad rabto inaad macaamiishaada u oggolaato inay doortaan qaab-dhismeed, ku dar beerta Xulashada Qaab-dhismeedka. Iyo wixii la mid ah.
 
-_**Fiiro:** Haddii aad samayso alaab ka dib markaad samaysato qaabka checkout-kaaga, waxaad u baahan doontaa inaad alaabtaas ku darto qaybta Pricing Table. Haddii aadan ku dariin, alaabtu ma soo muuqan doonto macaamiishaada bogga diiwaangelinta._
+![Tifaftiraha foomka lacag-bixinta oo leh beerta xulashada qaab-dhismeedka](/img/config/checkout-form-with-template-field.png)
 
-_**Fiiro 2:** username, email, password, site title (Magaca Website-ka), site URL (Link-ka Website-ka), order summary (Soomaaadda Dalabka), payment (Lacagta Bixinta), iyo submit button (Badhanka Soo Gudbinta) waa qaybo waajib ah si loo abuuro qaabka checkout-ka._
+_**Ogow:** Haddii aad abuurto badeecad ka dib markaad abuurto foomkaaga lacag-bixinta, waxaad u baahan doontaa inaad badeecadda ku darto qaybta Jadwalka Qiimeynta. Haddii aadan ku darin, badeecaddu uma muuqan doonto macaamiishaada bogga diiwaangelinta._
 
-Inta aad ka shaqaynayso qaabka checkout-kaaga, waxaad mar kasta isticmaali kartaa badhanka **Preview** (Soo Bandhigidda) si aad u aragto sida macaamiishu ay qaabkaas u arki doonaan. Waxaad sidoo kale isbeddeli kartaa in aad aragto sidii isticmaalay hay'n ama sidii martiqaad ah (visitor).
+_**Ogow 2:** magaca isticmaalaha, iimaylka, erayga sirta ah, cinwaanka site-ka, URL-ka site-ka, soo koobidda dalabka, lacag-bixinta, iyo badhanka gudbinta waa beero khasab ah si loo abuuro foom lacag-bixin._
 
-![Badhankaada qaybta la soo bandhigay ee foomka checkout editor-ka](/img/config/checkout-form-preview-button.png)![Foomka checkout-ka oo la soo bandhigay sida muuqaalka macmiilka ama isticmaalaha hore](/img/config/checkout-form-preview-modal.png)
+Inta aad ka shaqaynayso foomkaaga lacag-bixinta, had iyo jeer waxaad isticmaali kartaa badhanka Horudhac si aad u aragto sida macaamiishaadu u arki doonaan foomka. Sidoo kale waxaad isku beddeli kartaa aragtida isticmaale jira ama booqde.
 
-Ugu dambayn, **Advanced Options** (Qalabka Sare) kaaga beddelaysid fariinta ee bogga **Thank You** (Mahadsanid), ku dar qoraallo lagu la socdo isbeddellada (conversions), ku dari CSS gaar ah oo aad u samaysato foomka checkout-kaaga ama aad si xaddidan uga dhigto wadamada cayiman.
+![Badhanka Horudhac ee tifaftiraha foomka lacag-bixinta](/img/config/checkout-form-preview-button.png)![Horudhaca foomka lacag-bixinta sida booqde ama isticmaale jira](/img/config/checkout-form-preview-modal.png)
 
-![Advanced Options iyadoo la isticmaalayo bogga Thank You, la socodka isbeddellada, iyo CSS gaar ah](/img/config/checkout-form-advanced.png)
+Ugu dambayn, **Ikhtiyaarrada Sare** waxaad ku habayn kartaa farriinta bogga **Mahadsanid**, ku dari kartaa snippets si aad ula socoto beddelashada, ku dari kartaa CSS gaar ah foomkaaga lacag-bixinta ama ku xaddidi kartaa waddamo gaar ah.
 
-Waxaad sidoo kale si gacanta u fulin kartaa ama u xirfad (disable) foomka checkout-kaaga iyadoo aad dib u samaynayso qeybta (toggle) ee dhanka midig, ama aad si joogto ah uga saarto foomka.
+![Ikhtiyaarrada Sare oo leh bogga Mahadsanid, raadraaca beddelashada, iyo CSS gaar ah](/img/config/checkout-form-advanced.png)
 
-![Toggle-ka socda iyo doorista ka saarista foomka checkout-ka](/img/config/checkout-form-active.png)
+Sidoo kale waxaad gacanta ku hawlgelin kartaa ama ku curyaamin kartaa foomkaaga lacag-bixinta adigoo beddelaya ikhtiyaarkan ku yaal tiirka midig, ama si joogto ah u tirtiri kartaa foomka.
 
-Ha ilaawin inaad kaydsato foomka checkout-kaaga!
+![Toggle-ka firfircoon iyo ikhtiyaarka tirtirka ee foomka lacag-bixinta](/img/config/checkout-form-active.png)
 
-![Badhanka Kaydinta Foomka Checkout-ka](/img/config/checkout-form-save.png)
+Ha iloobin inaad kaydiso foomkaaga lacag-bixinta!
 
-Si aad u hesho shortcode-ka (shortcode) foomkaaga, guji **Generate Shortcode** (Abuur Shortcode) oo ku noqoto natiijada ee muuqata qaybta modal-ka ah.
+![Badhanka Kaydi Foomka Lacag-bixinta](/img/config/checkout-form-save.png)
 
-![Modal-ka Abuurista Shortcode-ka isagoo la soo koobaya shortcode-ka lagu copyayo](/img/config/checkout-form-editor.png)
+Si aad u hesho shortcode-ka foomkaaga guji **Abuur Shortcode** oo koobi garee natiijada lagu muujiyey daaqadda modal-ka.
 
-_**Fiiro Gaar Ah:** Waxaad u baahan doontaa inaad shortcode-kan ku dari lahayd bogga diiwaangelinta (registration page) si foomka checkout-kaaga uu ku lagu daro._
+![Modal-ka Abuur Shortcode oo leh shortcode la koobiyeeyo](/img/config/checkout-form-editor.png)
 
-## Soo xirnaanta alaabaha iyo template-yada iyadoo la isticmaalayo URL parameters:
+_**Ogow:** Waxaad u baahan doontaa inaad shortcode-kan ku darto boggaaga diiwaangelinta si foomkan lacag-bixinta loogu daro._
 
-Haddii aad rabto inaad samayso jadwalka qiimaha gaarka ah ee alaabahaaga (customized pricing tables) oo aad hore u doorato foomka checkout-kaaga template ama alaabta ay macmiilku ka doorto jadwalka qiimaha ama bogga template-yadaaga, waxaad isticmaali kartaa URL parameters.
+## Hore u xulashada badeecadaha iyo qaab-dhismeedyada adigoo adeegsanaya URL parameters: {#pre-selecting-products-and-templates-via-url-parameters}
 
-### **Haddii ay yihiin qorsheyaal (plans):**
+Haddii aad rabto inaad u abuurto jadwallo qiimeyn oo la habeeyey badeecadahaaga oo aad hore ugu xulato foomka lacag-bixinta badeecadda ama qaab-dhismeedka uu macmiilkaagu ka doorto jadwalkaaga qiimeynta ama bogga qaab-dhismeedyada, waxaad taas u isticmaali kartaa URL parameters.
 
-Tag **Ultimate Multisite > Products > Select a plan**. Waxaad arki doontaa badhanka **Click to copy Shareable Link** (Guji si aad u nuquldo Xiriir la wadaagayo) oo ku yaalla sare ee bogga. Tani waa xiriirka aad isticmaali karto si aad hore u doorato qorsheyaalka gaarka ah ee foomka checkout-kaaga.
+### **Qorshayaasha:** {#for-plans}
 
-![Bogga alaabta isagoo leh badhanka xiriirka la wadaagayo](/img/config/products-list.png)
+Tag **Ultimate Multisite > Badeecado > Dooro qorshe**. Waa inaad aragtaa badhanka **Guji si aad u koobiyeeso Link la wadaagi karo** ee ku yaal dusha bogga. Kani waa link-ga aad u isticmaali karto inaad hore ugu xulato qorshahan gaarka ah foomkaaga lacag-bixinta.
 
-Fadlan xiriirka la wadaagga ah (shareable link) ma shaqeeyo haddii aanu ku qiyaasno **Plans** (Qorshayaasha). Ma isticmaali kartid xiriirrada la wadaagga ah si aad u bixiso badeecooyin ama adeegyo.
+![Bogga badeecadda oo leh badhanka link la wadaagi karo](/img/config/products-list.png)
 
-### Ku saabsan template-yada:
+Ogow in link-gan la wadaagi karo uu kaliya ansax u yahay **Qorshayaasha**. Ma isticmaali kartid link-yada la wadaagi karo xirmooyinka ama adeegyada.
 
-Haddii aad rabto inaad hore u doorato template-yada website-kaaga marka aad ku meelaysid foomka lacagta (checkout form), waxaad isticmaali kartaa parameter-ka ah: **?template_id=X** oo ku jira URL-ka bogga diiwaangelintaada. Waxaad u baahan tahay inaad badbaadiso "X" inta badan **lambarka ID-ga template-ka website-ka**. Si aad hesho lambarkaas, tag **Ultimate Multisite > Sites**.
+### Qaab-dhismeedyada: {#for-templates}
 
-Marka hore ku riix **Manage** (Maamul) oo hoos ka dambeeya template-ka website-ka ah ee aad rabto inaad isticmaasho. Waxaad arki doontid lambarka SITE ID. Si kastaba ha isticmaalin lambarkaas si loo dooro template-kan gaarka ah inuu hore u lahayd foomka lacagtaada. Tusaale ahaan, URL parameter-ka wuxuu noqonayaa **?template_id=2**.
+Haddii aad rabto inaad hore ugu xulato qaab-dhismeedyada site-ka foomkaaga lacag-bixinta, waxaad isticmaali kartaa parameter-ka: **?template_id=X** ee URL-ka boggaaga diiwaangelinta. "X" waa in lagu beddelaa **lambarka ID-ga qaab-dhismeedka site-ka**. Si aad u hesho lambarkan, tag **Ultimate Multisite > Site-yada**.
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Guji **Maamul** si toos ah hoosta qaab-dhismeedka site-ka aad rabto inaad isticmaasho. Waxaad arki doontaa lambarka SITE ID. Kaliya isticmaal lambarkan qaab-dhismeedkan site-ka gaarka ah si hore loogu xulo foomkaaga lacag-bixinta. Xaaladdeenna halkan, URL parameter-ku wuxuu noqon doonaa **?template_id=2**.
 
-U malaynno in website-ka shirkadda aanu leenahay uu yahay [**www.mynetwork.com**](http://www.mynetwork.com) oo bogga diiwaangelintaada iyo foomka lacagta (checkout form) ay ku yaal qaybta **/register**. URL-ka oo dhan oo leh template-ka website-ka hore u dooranayaa wuxuu noqon doonaa sida [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+![Liiska site-yada oo muujinaya ID-ga qaab-dhismeedka site-ka](/img/config/site-templates-list.png)
 
-Haddii aad rabto, waxaad hore u dooran kartaa labada badeecada iyo template-yada foomka lacagtaada. Waxa kaliya inaad qabato xiriirka la wadaagga ah ee plan-ka (plan) oo aad ku dhejiso parameter-ka template-ka dhammaadka. Wuxuu noqon doonaa sida [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.
+Aan nidhaahno website-ka shabakaddeennu waa [**www.mynetwork.com**](http://www.mynetwork.com) oo boggayaga diiwaangelinta ee leh foomkayaga lacag-bixinta wuxuu ku yaal bogga **/register**. URL-ka oo dhan oo leh qaab-dhismeedkan site-ka oo hore loo xulay wuxuu u ekaan doonaa [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Haddii aad rabto, waxaad foomkaaga lacag-bixinta hore ugu xulan kartaa labadaba badeecado iyo qaab-dhismeedyo. Waxa kaliya ee aad u baahan tahay inaad sameyso waa inaad koobiyeeso link-ga la wadaagi karo ee qorshaha oo aad parameter-ka qaab-dhismeedka ku dhajiso dhammaadka. Waxay u ekaan doontaa [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

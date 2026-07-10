@@ -3,13 +3,13 @@ title: Hostinger Çoklu Kiracılık
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy мүмкіндігін қосады, бұл хостингті домендері барлық existing Hostinger домен картасы интеграциясымен қатар тәуелсіз арена (sovereign tenant) бөлуді қолдануға мүмкіндік береді.
 
 Бұл мүмкіндікті пайдаланыңыз, егер арена домендері мен оқшауланған арена инфрақұрылымы Hostinger hPanel арқылы басқалып жатса.
 
-## Орнату ескертулері
+## Орнату ескертулері {#setup-notes}
 
 1. Негізгі Hostinger интеграциясын **Ultimate Multisite > Settings > Host Integrations**-та орнатыңыз.
 2. Hostinger API токенінің мақсатты доменді немесе поддоменді басқара алатынын растаңыз.
@@ -19,13 +19,13 @@ Ultimate Multisite: Multi-Tenancy 1.2.0 Hostinger multi-tenancy мүмкінді
 
 Hostinger мүмкіндігі хост-жүктеме операциялары үшін ортақ Hostinger қосылымын қолданады. DNS әлі де дұрыс Hostinger есептеуге бағытталуы керек, және hPanel еселік шектеулері қолданылады.
 
-## Мүмкіндікке арналған өзгерістер
+## Мүмкіндікке арналған өзгерістер {#capability-specific-changes}
 
 - Арена ареналары хост-ақпаратты домен операцияларымен жасалуы мүмкін.
 - Бағдарламалық орындау (runtime) жергілікті өзгеруді талап етсе, Hostinger-басқаратын ареналар hPanel-де көрсетілген деректер хост мәнін қолдануы керек.
 - SSO кезінде визиттер арена домены Hostinger-жайындағы аренаға бағытталуына сүйенеді.
 
-## Hostinger ареналарын шешу (Troubleshooting)
+## Hostinger ареналарын шешу (Troubleshooting) {#troubleshooting-hostinger-tenants}
 
 - Егер арена орнату қате болса, доменнің Hostinger еселіне артылғанын тексеріңіз.
 - Егер деректерді растау қате болса, аренаның DB пайдаланушысы, деректер атауы және хост байланысын hPanel-мен салыстырыңыз.

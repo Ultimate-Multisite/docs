@@ -3,7 +3,7 @@ title: Formais a chluarach
 sidebar_position: 19
 _i18n_hash: 54516280441cfe5e123ab19bdfbd91af
 ---
-# Checkout Forms
+# Checkout Forms {#checkout-forms}
 
 Checkout Forms is tòr chuidh agus fòcas a tha a' tuiteam airson sgrùdadh de dhìon ùra gu fìdh.
 
@@ -36,13 +36,13 @@ An t-uisge, leat thu leat a' chlàradh (forms) a tha thuairdh gu eil agad, gu bh
 
 ![Checkout form hover actions](/img/config/checkout-form-hover-actions.png)
 
-#### Oibridh an Chlàradh Checkout Form
+#### Oibridh an Chlàradh Checkout Form {#checkout-form-editor-overview}
 
 Tha oibridhean an chlàradh checkout form a' toirt seòl mhath airson a' tighinn air e na h-forms a tha thu a' deug nas fhaic. Seannach a' chlàradh seo, tha seo a' toirt seòl mhath mun a' chlàradh:
 
 ![Checkout Form editor overview](/img/config/checkout-form-editor-overview.png)
 
-### A' Chlàradh an Checkout Form
+### A' Chlàradh an Checkout Form {#editing-a-checkout-form}
 
 Is eadar a' chlàradh checkout form a tha thu a' deug nas fhaic airson pearsantais. Is eadar a' chlàradh seo, rinn am prìomh cheannas air an chlàradh:
 
@@ -110,7 +110,7 @@ Chan thu a' faigh an shortcode a' chùineadh a' cheannach a' sgaidh, tha thu a' 
 
 ![Save button with shortcode](/img/config/checkout-form-save.png)
 
-### An fhadraidh a' chùineadh (The Pricing Table Field)
+### An fhadraidh a' chùineadh (The Pricing Table Field) {#the-pricing-table-field}
 
 Tha an **Pricing Table** field a' sgaidh eiridh a gach prodacht ar an cheannach a' tòiseachadh gu bheil na stiùirde (plans) a' chluaintean a' faicinn. Nuair a thabhair thu air atharrachadh seo, is eadar fhaigh thu air coimheadh beag eile:
 
@@ -128,17 +128,17 @@ Seo mar a tha an fhadraidh a' tòiseachadh ar an cheannach a' chluaintean (front
 
 Se thu a thabhair do prodacht air an Pricing Table a' chùineadh gu bheil an cheannach a' tòiseachadh air na stiùirde a tha thu a' tòiseachadh air a' bheach a tha thu a' tòiseachadh, tha an seann editor a' tòiseachadh. Aig an t-aithris a' faigh thu air atharrachadh a' chluaintean a' cheannach a' sgaidh gu bheil an fhadraidh a' tòiseachadh air na stiùirde a tha thu a' tòiseachadh air a' bheach a tha thu a' tòiseachadh.
 
-### A bhith a' chlàradhachadh seachdainn (Adding a Period Selection Toggle)
+### A bhith a' chlàradhachadh seachdainn (Adding a Period Selection Toggle) {#adding-a-period-selection-toggle}
 
 Tha thu air a' chlàradhachadh [Price Variations](creating-your-first-subscription-product#price-variations) ar eargaisgaidhean agad (e.g. prìs san mheán agus san fìor), le tuig a bhith agad de dhèanamh ùr **Period Selection** (Chlàradhachadh Seachdainn) ar do chàrrte cheannach. Tha an fhadraidh seo a' tòiseachadh àite airson na stiùir (toggle) a tha a' gineadh eadar prìomh seachdainn, agus tha an tabhadh prìs a' tòiseachadh gu fòcasach air seachd-dèan.
 
-#### Step 1: Sealltainn Price Variations ar do eargaisgaidhean
+#### Step 1: Sealltainn Price Variations ar do eargaisgaidhean {#step-1-set-up-price-variations-on-your-products}
 
 Tha thu ag deuchainn gu cunntas go tha eargaisgaidhean agad de dhèanamh prìs. Comharrach na stiùir **Ultimate Multisite > Products**, dìmeadh eargaisg, agus teicinn gu **Price Variations** airson a bhith a' chlàradhachadh seachdainn eile (e.g. San fìor air prìs a' chlàradh).
 
 ![Price Variations tab on a product](/img/config/product-price-variations-tab.png)
 
-#### Step 2: Aig an Period Selection Field ar do chàrrte cheannach
+#### Step 2: Aig an Period Selection Field ar do chàrrte cheannach {#step-2-add-the-period-selection-field-to-your-checkout-form}
 
 1. Comharrach **Ultimate Multisite > Checkout Forms** agus dìmeadh do chàrrte cheannach.
 
@@ -161,13 +161,13 @@ Tha thu ag deuchainn gu cunntas go tha eargaisgaidhean agad de dhèanamh prìs. 
 
 7. Cluich **Save Field**.
 
-#### Step 3: Colm an Fhàilteadh an Fhàilteadh a' Chàrnadh Prìsiche (Pricing Table)
+#### Step 3: Colm an Fhàilteadh an Fhàilteadh a' Chàrnadh Prìsiche (Pricing Table) {#step-3-position-the-field-above-the-pricing-table}
 
 Tha eadar-dhealaidh is dòig airson ùine chùlchnach airson ùr-fhaighinn (user experience), sinn a' churaidh sin a' chlàradh an fhailteadh prìsiche **a' chùlchnachadh** a' chàrnadh prìsiche. Is eadar-dhealaidh leat a thug faighinn a' chlàradhan gu réiteach iarrachdaidhean (reorder) anns an fòram fhailteadh. Mar sin, tha na h-ùisgeann a' chùlchnachadh a' tòiseachadh a' chluich an ùine chàrnadh prìsiche agus tha sinn a' faighinn prìsan airson sin.
 
 ![Checkout form editor showing field order](/img/config/checkout-form-editor-with-fields.png)
 
-#### Mar a tha eadar-dhealaidh air an fhuilich (Frontend)
+#### Mar a tha eadar-dhealaidh air an fhuilich (Frontend) {#how-it-works-on-the-frontend}
 
 Tha eadar-dhealaidh, tha na chluichinn a' chùlchnachadh a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a' chluichinn a
 
@@ -180,11 +180,11 @@ Se rinn a' chùis a tha thu'n a' tuiginn:
    - **Label** — An t-aithris a tha a' chùisean a' chùisean a' chleachdadh a' gach template (e.g., "Taisg de dhìon site").
    - **Required** — An t-aithris a tha thuiginn a' chùisean a' chluich air an template gu bheil na h-àitean a' chleachdadh a' chluichean a' chluichean.
 
-#### Conas a tha e a' tòiseachadh
+#### Conas a tha e a' tòiseachadh {#pre-selecting-a-billing-period-via-url}
 
 Nuair a thann a' chùisean a' chluichean air an template a dh'chaillte air an checkout, a' chluich Ultimate Multisite air an sin gu bheil e a' chluichean a' tuiginn an sin. Tha na h-templatea a' chluichean a' chluichean a' tòiseachadh seachdaidh a' chluichean agad (**Ultimate Multisite > Site Templates**). Tha na h-templatea a' chluichean a' chluichean a' tuiginn air an sin.
 
-### Checkout-form base domains
+### Checkout-form base domains {#the-template-selection-field}
 
 Tha Ultimate Multisite v2.13.0 a' tòiseachadh gu bheil na deasan (domains) a' chluichean a' cheannairt air fhaighinn a' cheannairt checkout form mar deasan base network. Ràdhbhaidh thu a' sgrùdadh an t-aithris 'available-domain' gu bheil thu a' chluichean a' tuiginn sitean a' chluichean air deasan a' cheannairt a' cheannairt, mar `example.com` agus `sites.example.com`.
 
@@ -192,7 +192,7 @@ Tha deasan base checkout form a' tòiseachadh gu bheil na fhaighinn-deasan (cust
 
 Ràdhbhaidh thu a' cheannairt na deasan a' cheannairt airson hosta a' cheannairt a' chùisean, mar `customer-example.com`. Ràdhbhaidh thu a' cheannairt na deasan base checkout form airson hosta a' cheannairt a' cheannairt a' cheannairt a' cheannairt a' cheannairt a' cheannairt a' cheannairt.
 
-#### A' chluichean a' tòiseachadh
+#### A' chluichean a' tòiseachadh {#adding-the-field-manually}
 
 (This section is just a heading, no prose to translate.)
 

@@ -1,109 +1,194 @@
 ---
 title: Αναφορά Hooks
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Αναφορά Hooks
+# Αναφορά Hooks {#hooks-reference}
 
-Εξ αποθήκευμένη τεκμηρίωση για όλες τις **59 ενέργειες (actions)** και τις **115 φίλτρα (filters)** στο Ultimate Multisite.
+Αυτόματα δημιουργημένη τεκμηρίωση για όλες τις **59 ενέργειες** και τα **118 φίλτρα** στο Ultimate Multisite.
 
-## Actions
+## Ενέργειες {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Εκτρέπεται πριν την ανακατεύθυνση प्रमाτογράφησης.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Εκτρέπεται αμέσως πριν τη ρύθμιση της cookie प्रमाτογράφησης.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Εκτρέπεται αμέσως πριν τη ρύθμιση της cookie σύνδεσης.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Επιτρέπει στους developers να προσθέσουν τις δικές τους ενσωματώσεις παρόχου hosting μέσω wp plugins.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Εκτρέπεται όταν έχουν φορτωθεί όλες οι εξαρτήσεις.
-- [wu_activation](./Actions/wu_activation) — Επιτρέπει σε άλλες ενότητες του plugin να συνδέσουν τις δικές τους ρουτίνες για την ενεργοποίηση.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Επιτρέπει στους developers του plugin να συνδέσουν συναρτήσεις μετά από αλλαγή του θέματος του site από τον χρήστη ή τον super admin.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Σε ορισμένες περιπτώσεις, θα χρειαστούμε να φορτώσουμε επιπλέον περιεχόμενο για να διαχειριστούμε τις ενέργειες.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Εκτρέπεται πριν την επεξεργασία του αιτήματος αναζήτησης.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Επιτρέπει στους developers να κάνουν επιπλέον αλλαγές στο αντικείμενο checkout.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Επιτρέπει στους developers να κάνουν επιπλέον αλλαγές στο αντικείμενο checkout.
-- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Εκτρέπεται πριν προστεθεί ένα πεδίο στο form checkout.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Επιτρέπει στους developers να ενεργοποιήσουν επιπλέον hooks.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Πριν επεξεργαστούμε το checkout.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Εκτρέπεται αφού το αίτημα checkout έχει ολοκληρωθεί πλήρως.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Επιτρέπει στους developers του plugin να προσθέσουν widgets στο Network Dashboard Panel.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Επιτρέπει στους developers του plugin να προσθέσουν widgets στο Network Dashboard Panel.
-- [wu_deactivation](./Actions/wu_deactivation) — Επιτρέπει σε άλλες ενότητες του plugin να συνδέσουν τις δικές τους ρουτίνες για την απενεργοποίηση.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Επιτρέπει στους developers του plugin να προσθέσουν ενέργειες στη διαδικασία διαγραφής.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Εκτρέπεται όταν ένα domain γίνεται το κύριο domain για ένα site.
-- [wu_domain_created](./Actions/wu_domain_created) — Εκτρέπεται όταν δημιουργείται ένα domain.
-- [wu_get_user_id] (Placeholder) — (Placeholder)
-- [wu_get_user_role] (Placeholder) — (Placeholder)
-- [wu_get_user_capabilities] (Placeholder) — (Placeholder)
-- [wu_get_user_meta] (Placeholder) — (Placeholder)
-- [wu_get_user_data] (Placeholder) — (Placeholder)
-- [wu_get_user_settings] (Placeholder) — (Placeholder)
-- [wu_get_user_preferences] (Placeholder) — (Placeholder)
-- [wu_get_user_activity] (Placeholder) — (Placeholder)
-- [wu_get_user_history] (Placeholder) — (Placeholder)
-- [wu_get_user_logs] (Placeholder) — (Placeholder)
-- [wu_get_user_notifications] (Placeholder) — (Placeholder)
-- [wu_get_user_messages] (Placeholder) — (Placeholder)
-- [wu_get_user_attachments] (Placeholder) — (Placeholder)
-- [wu_get_user_profile] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_backup] (Placeholder) — (Placeholder)
-- [wu_get_user_data_backup] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_restore] (Placeholder) — (Placeholder)
-- [wu_get_user_data_restore] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_export] (Placeholder) — (Placeholder)
-- [wu_get_user_data_export] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_import] (Placeholder) — (Placeholder)
-- [wu_get_user_data_import] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_validate] (Placeholder) — (Placeholder)
-- [wu_get_user_data_validate] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_cleanup] (Placeholder) — (Placeholder)
-- [wu_get_user_data_cleanup] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_optimize] (Placeholder) — (Placeholder)
-- [wu_get_user_data_optimize] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_reset] (Placeholder) — (Placeholder)
-- [wu_get_user_data_reset] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_backup_restore] (Placeholder) — (Placeholder)
-- [wu_get_user_data_backup_restore] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_compare] (Placeholder) — (Placeholder)
-- [wu_get_user_data_compare] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_diff] (Placeholder) — (Placeholder)
-- [wu_get_user_data_diff] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_merge] (Placeholder) — (Placeholder)
-- [wu_get_user_data_merge] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_conflict] (Placeholder) — (Placeholder)
-- [wu_get_user_data_conflict] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_resolve] (Placeholder) — (Placeholder)
-- [wu_get_user_data_resolve] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_validate_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_validate_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_cleanup_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_cleanup_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_optimize_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_optimize_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_reset_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_reset_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_backup_restore_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_backup_restore_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_compare_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_compare_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_diff_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_diff_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_merge_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_merge_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_conflict_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_conflict_all] (Placeholder) — (Placeholder)
-- [wu_get_user_settings_resolve_all] (Placeholder) — (Placeholder)
-- [wu_get_user_data_resolve_all] (Placeholder) — (Placeholder)
+- [auth_redirect](./Actions/auth_redirect) — Εκτελείται πριν από την ανακατεύθυνση πιστοποίησης.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Εκτελείται αμέσως πριν οριστεί το cookie πιστοποίησης.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Εκτελείται αμέσως πριν οριστεί το cookie πιστοποίησης συνδεδεμένου χρήστη.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Επιτρέπει στους προγραμματιστές να προσθέτουν τις δικές τους ενσωματώσεις παρόχων φιλοξενίας μέσω WordPress plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Ενεργοποιείται όταν έχουν φορτωθεί όλες οι εξαρτήσεις
+- [wu_activation](./Actions/wu_activation) — Επιτρέπει σε άλλα μέρη του plugin να συνδέουν τις ρουτίνες τους για ενεργοποίηση
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Επιτρέπει στους προγραμματιστές plugin να συνδέουν συναρτήσεις αφού ένας χρήστης ή super admin αλλάξει το πρότυπο ιστότοπου
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Σε ορισμένες περιπτώσεις, θα χρειαστεί να φορτώσουμε επιπλέον ισχύ για τον χειρισμό ενεργειών.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Εκτελείται πριν από την επεξεργασία του αιτήματος αναζήτησης.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Επιτρέπει στους προγραμματιστές να κάνουν πρόσθετες αλλαγές στο αντικείμενο ολοκλήρωσης αγοράς.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Επιτρέπει στους προγραμματιστές να κάνουν πρόσθετες αλλαγές στο αντικείμενο ολοκλήρωσης αγοράς.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Εκτελείται πριν προστεθεί ένα πεδίο στη φόρμα ολοκλήρωσης αγοράς.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Επιτρέπει στους προγραμματιστές να ενεργοποιούν πρόσθετα hooks.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Πριν επεξεργαστούμε την ολοκλήρωση αγοράς.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Εκτελείται αφού η παραγγελία ολοκλήρωσης αγοράς έχει συναρμολογηθεί πλήρως.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν widgets στον Πίνακα Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν widgets στον Πίνακα Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Επιτρέπει σε άλλα μέρη του plugin να συνδέουν τις ρουτίνες τους για απενεργοποίηση
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν ενέργειες στη διαδικασία διαγραφής
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Εκτελείται όταν ένας τομέας γίνεται ο κύριος τομέας για έναν ιστότοπο.
+- [wu_domain_created](./Actions/wu_domain_created) — Ενεργοποιείται όταν προστίθεται μια νέα αντιστοίχιση τομέα.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Εκτελέστηκε αφού το βασικό μας Domain Mapping έχει φορτωθεί
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Ορισμένα plugins θα αποθηκεύσουν URL πριν η αντιστοίχιση ήταν ενεργή ή θα δημιουργήσουν URLs με διαφορετικό τρόπο που δεν περιλαμβάνεται σ
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Επιτρέπει στους προγραμματιστές να συνδέονται μετά την αντιγραφή ενός ιστότοπου.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετα hooks
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook για πρόσθετο καθαρισμό
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Εκτελείται πριν από τον χειρισμό του αιτήματος modal προσθήκης νέου τομέα.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Επιτρέπει στους προγραμματιστές plugin να αποθηκεύουν μεταδεδομένα με διαφορετικούς τρόπους αν χρειάζεται.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Επιτρέπει στους προγραμματιστές plugin να αποθηκεύουν μεταδεδομένα χρήστη με διαφορετικούς τρόπους αν χρειάζεται.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Εκτελείται όταν εντοπίζεται ένα μη έγκυρο token magic link.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Εκτελείται αφού ένας χρήστης συνδεθεί μέσω magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Επιτρέπει στους προγραμματιστές plugin να κάνουν πρόσθετα πράγματα όταν προστίθεται ο πελάτης.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Εκτελείται αφού οι δυνατότητες MCP καταχωριστούν για μια οντότητα.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Εκτελείται αφού αρχικοποιηθεί ο προσαρμογέας MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Ενεργοποιείται μετά την ακύρωση της συνδρομής.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Ενεργοποιείται μετά την ανανέωση της συνδρομής.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Ενεργοποιείται πριν ακυρωθεί η συνδρομή.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Ενεργοποιείται πριν από την ανανέωση της συνδρομής.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Εκτελείται αφού ένα αντικείμενο αποθηκευτεί στη βάση δεδομένων.
+- [wu_page_added](./Actions/wu_page_added) — Επιτρέπει στους προγραμματιστές plugin να εκτελούν πρόσθετα πράγματα όταν καταχωρίζονται σελίδες.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετο περιεχόμενο αφού εκτυπώσουμε τη σελίδα
+- [wu_page_before_render](./Actions/wu_page_before_render) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετο περιεχόμενο πριν εκτυπώσουμε τη σελίδα.
+- [wu_page_load](./Actions/wu_page_load) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετα hooks στις σελίδες μας.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετο περιεχόμενο αφού εκτυπώσουμε τη σελίδα
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετο περιεχόμενο πριν εκτυπώσουμε τη σελίδα.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετα hooks στις σελίδες μας.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Εκτελείται αφού καταχωριστούν widgets για αυτήν τη σελίδα.
 
-*(Note: The placeholder functions are assumed to be related to user management and are kept as is, as they represent potential API calls or hooks.)*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Εκτελείται για να επιτρέψει στα addons να συνδέσουν μονάδες δυνατοτήτων με ενσωματώσεις.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Εκτελείται για να επιτρέψει στις ενσωματώσεις να καταχωρηθούν.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Επιτρέπει την καταχώρηση πρόσθετων διαδρομών.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν ενέργειες στη διαδικασία αποθήκευσης
+- [wu_site_created](./Actions/wu_site_created) — Εκτελείται αφού δημιουργηθεί ένας ιστότοπος για πρώτη φορά.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν πρόσθετα hooks, αν χρειάζεται.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Εκτελείται όταν βρίσκεται μέσα στο πλαίσιο προεπισκόπησης προτύπου.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Ενεργοποιεί το hook ένταξης scripts στην ουρά.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Εκτελείται αφού ένα αντικείμενο αποθηκευτεί στη βάση δεδομένων.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Εκτελείται αφού ένα αντικείμενο αποθηκευτεί στη βάση δεδομένων.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Εκτελείται αφού ένα αντικείμενο αποθηκευτεί στη βάση δεδομένων.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν ενέργειες στη διαδικασία ξεκλειδώματος.
 
----
+## Φίλτρα {#filters}
 
-**Summary of Changes/Review:**
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Φιλτράρει τη διάρκεια της περιόδου λήξης του cookie ελέγχου ταυτότητας.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Φιλτράρει το σχήμα ανακατεύθυνσης ελέγχου ταυτότητας.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Αναπαράγει εδώ το αρχικό WP Filter, για καλό μέτρο.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν το URL που χρησιμοποιείται στο previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Φιλτράρει αν το auth cookie πρέπει να αποστέλλεται μόνο μέσω HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Φιλτράρει αν θα χρησιμοποιηθεί ασφαλής ανακατεύθυνση ελέγχου ταυτότητας.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Φιλτράρει αν το cookie συνδεδεμένου χρήστη πρέπει να αποστέλλεται μόνο μέσω HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Επιτρέπει την αποτροπή της πραγματικής αποστολής των auth cookies στον πελάτη.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Ορίζει το URL ανακατεύθυνσης.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Προσθέτει επιπλέον βήματα μέσω φίλτρων
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν επιπλέον μεταβλητή στο περιβάλλον απόδοσης καθολικά.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Επιτρέπει στους προγραμματιστές να παρακάμπτουν αυτόν τον έλεγχο.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Φιλτράρει τα πεδία για το modal προσθήκης νέου domain.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Επιτρέπει στους προγραμματιστές να κάνουν αλλαγές στο στοιχείο γραμμής χρέωσης εγκατάστασης.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Επιτρέπει στους προγραμματιστές να φιλτράρουν ειδοποιήσεις διαχειριστή που προστίθενται από το Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Φιλτράρει μετά την αλλαγή.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Τώρα, διαχειριζόμαστε όλους τους τύπους.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Επιτρέπει στους προγραμματιστές plugin να παρακάμπτουν τους περιορισμούς.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Φιλτράρει αν θα εφαρμοστεί ή όχι η χρέωση εγγραφής.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Φιλτράρει τα αρχικά ορίσματα api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν τα πεδία διεύθυνσης χρέωσης.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Επιτρέπει στους προγραμματιστές να παρακάμψουν την έξοδο και να ορίσουν νέα
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Επιτρέπει στους προγραμματιστές να παρακάμπτουν τον κώδικα απενεργοποίησης του τρέχοντος χρήστη.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Φιλτράρει το σύνολο του "επαναλαμβανόμενου ποσού".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Φιλτράρει το σύνολο του "αρχικού ποσού".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Φιλτράρει το σύνολο του "αρχικού ποσού".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Επιτρέπει στους προγραμματιστές plugin να επεμβαίνουν στην αξία πίστωσης.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Φιλτράρει κοινόχρηστα βασικά domains φόρμας checkout που δεν πρέπει να γίνουν εγγραφές mapped-domain.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Τα API μας για την προσθήκη νέων προτύπων πεδίων συνδέονται εδώ.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Τα API μας για την προσθήκη νέων τύπων πεδίων συνδέονται εδώ.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Φιλτράρει τα μηνύματα σφαλμάτων.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Επιτρέπει στους προγραμματιστές να παρακάμπτουν τον έλεγχο αν ένα πεδίο είναι αυτόματα υποβλήσιμο.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν προσαρμοσμένα ψευδώνυμα στον επικυρωτή φόρμας.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν τους κανόνες επικύρωσης.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Αφαιρεί ανεπιθύμητες παραμέτρους.
+- [wu_contains_element](./Filters/wu_contains_element) — Επιτρέπει στους προγραμματιστές να αλλάξουν τα αποτελέσματα της αρχικής αναζήτησης.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Επιτρέπει στους παρόχους φιλοξενίας να εγκαταστήσουν τη σταθερά με διαφορετικό τρόπο.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Επιστρέφει το ωραίο όνομα των διοικητικών υποδιαιρέσεων της χώρας.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Επιστρέφει τη λίστα πόλεων για μια πολιτεία σε μια χώρα.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Επιστρέφει τη λίστα πολιτειών για αυτήν τη χώρα.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Επιτρέπει στους προγραμματιστές να τροποποιούν την προεπιλεγμένη συμπεριφορά και να ορίζουν τον τρέχοντα πελάτη διαφορετικά.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Επιτρέπει στους προγραμματιστές να τροποποιούν την προεπιλεγμένη συμπεριφορά και να ορίζουν την τρέχουσα συνδρομή διαφορετικά.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Επιτρέπει στους προγραμματιστές να τροποποιούν την προεπιλεγμένη συμπεριφορά και να ορίζουν τον τρέχοντα ιστότοπο διαφορετικά.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Επιτρέπει στους προγραμματιστές να τροποποιούν τις παραμέτρους URL διαχείρισης ιστότοπου.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν τους συνδέσμους.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν νέους ελέγχους για να καθορίζουν τα αποτελέσματα.
 
-The provided list of functions appears to be a comprehensive set of hooks or API endpoints, heavily focused on user management and data lifecycle operations (CRUD, backup, restore, compare, merge, etc.).
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Ίσως χρειαστεί να προσθέσουμε επιπλέον blocks αργότερα.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Προσθέτει γενικό filter για να επιτρέπει στους προγραμματιστές να επεκτείνουν αυτόν τον parser ώστε να χειρίζεται επιπλέον builders ή plugins.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Φιλτράρει αν θα επιβληθούν επιπλέον κανόνες κωδικού πρόσβασης.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Φιλτράρει το δημιουργημένο όνομα χρήστη πελάτη.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν τα προκαθορισμένα στοιχεία μιας σελίδας checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Επιτρέπει στους προγραμματιστές να προσθέτουν νέα form slugs για να παρακάμπτουν αυτήν τη συμπεριφορά.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Επιτρέπει στους προγραμματιστές και τα add-ons να προσθέτουν νέα βήματα μετεγκατάστασης
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Δείτε περισσότερα σχετικά με αυτό το filter παρακάτω, στην ίδια μέθοδο.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Επιτρέπει στους προγραμματιστές να επιλέγουν ποιοι τύποι αναρτήσεων θα εμφανίζονται.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Επιστρέφει γραμμές, με δυνατότητα φιλτραρίσματος
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Επιτρέπει στους προγραμματιστές να χειρίζονται τα ζεύγη domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Φιλτράρει τις ενότητες wizard για τη ρύθμιση ενσωμάτωσης hosting.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Φιλτράρει τα fields σε μια φόρμα. Η φόρμα ταυτοποιείται από το ID στο όνομα του filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Φιλτράρει τους τύπους προϊόντων που έχουν ανεξάρτητους κύκλους χρέωσης.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Επιτρέπει στους προγραμματιστές plugin να επιβάλουν μια δεδομένη κατάσταση για το API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν επιπλέον δοκιμές για τη λειτουργία ανάπτυξης.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Επιτρέπει στους προγραμματιστές plugin να επιβάλουν μια δεδομένη κατάσταση για τον MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Για λόγους ασφαλείας, περιορίζουμε τον αριθμό των διαθέσιμων ενεργειών για σύνδεση. Αυτό το filter επιτρέπει στους προγραμματιστές να επεκτείνουν
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Ελέγχει αν ένας δεδομένος τύπος ανάρτησης επιτρέπεται σε αυτό το πλάνο Επιτρέπει στους προγραμματιστές plugin να φιλτράρουν την τιμή επιστροφής
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Φιλτράρει αν θα επιβληθεί επαλήθευση διεύθυνσης IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Φιλτράρει αν θα επιβληθεί επαλήθευση user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Φιλτράρει το δημιουργημένο URL magic link.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Φιλτράρει αν τα magic links είναι ενεργοποιημένα.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Φιλτράρει το URL ανακατεύθυνσης μετά τον ορισμό ενός domain ως κύριου.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Δημιουργεί μια λίστα αποκλεισμού παραμέτρων που αποτρέπουν την αυτόματη ανακατεύθυνση.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter για παράκαμψη της απόφασης συμπερίληψης δυνατότητας MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Φιλτράρει την υπολογισμένη ημερομηνία λήξης.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Φιλτράρει την υπολογισμένη ημερομηνία λήξης που θα οριστεί μετά την ανανέωση.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Επιτρέπει στους προγραμματιστές να προσθέτουν νέα update form slugs.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Φιλτράρει το ελάχιστο μήκος κωδικού πρόσβασης.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Φιλτράρει την ελάχιστη απαιτούμενη ισχύ κωδικού πρόσβασης (βαθμολογία zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Επιτρέπει στους προγραμματιστές plugin, και σε εμάς, να προσθέτουμε συνδέσμους ενεργειών στις σελίδες επεξεργασίας μας
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Φιλτράρει αν θα απαιτούνται πεζά γράμματα στους κωδικούς πρόσβασης.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Φιλτράρει αν θα απαιτούνται αριθμοί στους κωδικούς πρόσβασης.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Φιλτράρει αν θα απαιτούνται ειδικοί χαρακτήρες στους κωδικούς πρόσβασης.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Φιλτράρει αν θα απαιτούνται κεφαλαία γράμματα στους κωδικούς πρόσβασης.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Επιτρέπει στον χρήστη να αλλάξει το μήνυμα σχετικά με τις εκκρεμείς πληρωμές.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Φιλτράρει τους τύπους προϊόντων που πρέπει να αντιμετωπίζονται ως πλάνα.
+- [wu_post_count](./Filters/wu_post_count) — Επιτρέπει στους προγραμματιστές plugin να αλλάζουν το συνολικό πλήθος
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Επιτρέπει στους προγραμματιστές plugin να αλλάζουν ποια κατάσταση ανάρτησης πρέπει να μετράται Από προεπιλογή, μετρώνται οι δημοσιευμένες και ιδιωτικές αναρτήσεις
+- [wu_post_default_status](./Filters/wu_post_default_status) — Φιλτράρει τα δεδομένα αντικειμένου πριν αποθηκευτούν στη βάση δεδομένων.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Επιτρέπει στους προγραμματιστές να φιλτράρουν τις ρυθμίσεις πριν από την αποθήκευση από το Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Φιλτράρει αν επιτρέπεται να συνεχιστεί το αίτημα ή όχι.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Φιλτράρει αν επιτρέπεται να συνεχιστεί το αίτημα ή όχι.
 
-**No functional changes were made** because the input was a list of function names/hooks, and the goal is to maintain the structure.
-
-**Review Conclusion:** The list is consistent in its naming convention (using `wu_` prefix) and covers a very broad scope of user data management.
-
----
-*(End of Review)*
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Φιλτράρει αν επιτρέπεται να προχωρήσει με το αίτημα ή όχι.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Φιλτράρει αν επιτρέπεται να προχωρήσει με το αίτημα ή όχι.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Φιλτράρει αν επιτρέπεται να προχωρήσει με το αίτημα ή όχι.
+- [wu_return_url](./Filters/wu_return_url) — Επιτρέπει στους προγραμματιστές να αλλάζουν το URL επιστροφής της πύλης που χρησιμοποιείται μετά τις διαδικασίες ολοκλήρωσης αγοράς.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Επιτρέπει στους προγραμματιστές plugin να προσθέτουν περισσότερες συναρτήσεις μοντέλων αναζήτησης.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Επιτρέπει στους προγραμματιστές να προσθέτουν επιπλέον βήματα οδηγού ρύθμισης.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Φιλτράρει αν το Ultimate Multisite πρέπει να δημιουργήσει μια εγγραφή domain για έναν νεοδημιουργημένο ιστότοπο.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Επιτρέπει στους προγραμματιστές να παρακάμπτουν την ανακατεύθυνση, αποτρέποντας την εκτέλεσή της.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Επιτρέπει την επανεγγραφή handler
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Φιλτράρει τις μαζικές ενέργειες που είναι διαθέσιμες για ιστότοπους.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Φίλτρο για την αλλαγή της τιμής για get pluginssites μέσα στο δίκτυο.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Ενεργοποιεί/απενεργοποιεί τη δυνατότητα single-sign-on μεταξύ domain.
+- [wu_sso_url](./Filters/wu_sso_url) — Φιλτράρει τα δημιουργημένα SSO URL πριν επιστραφούν για ενέργειες πελατών μεταξύ domain.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Φιλτράρει δεδομένα συνδρομής Stripe. Μπορεί να παρακάμψει το success_url ή το cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Φιλτράρει τα ορίσματα πρόθεσης πληρωμής.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Φιλτράρει το ID του πλάνου προς έλεγχο. Αν αυτό υπάρχει, η νέα συνδρομή θα χρησιμοποιήσει αυτό το πλάνο.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Φιλτράρει το ID του προϊόντος προς έλεγχο. Αν αυτό υπάρχει, η νέα συνδρομή θα χρησιμοποιήσει αυτό το προϊόν.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Φιλτράρει την τιμή idempotency_key που αποστέλλεται με τις επιλογές χρέωσης Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Φιλτράρει την εγγραφή συνδρομητικής ιδιότητας που σχετίζεται με αυτό το webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Φιλτράρει τα meta δεδομένα πριν σειριοποιηθούν για να αποθηκευτούν στη βάση δεδομένων.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Φιλτράρει τα δεδομένα αντικειμένου πριν αποθηκευτούν στη βάση δεδομένων.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Επιτρέπει στους προγραμματιστές να αλλάζουν το URL αναβάθμισης για ξεκλείδωμα
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Καθορίζει αν πρέπει να χρησιμοποιηθεί μια αντιστοίχιση
+- [wu_username_from_email](./Filters/wu_username_from_email) — Φιλτράρει το όνομα χρήστη νέου πελάτη.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Επιτρέπει στους προγραμματιστές να αλλάζουν το μήνυμα σχετικά με το όριο χρηστών της συνδρομητικής ιδιότητας
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Επιτρέπει στους προγραμματιστές να προσθέτουν επιπλέον φακέλους στη λίστα αντικατάστασης.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Φιλτράρει ποιες sub_commands είναι ενεργοποιημένες για αυτήν την οντότητα.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Ελέγχουμε για τρία μοτίβα όταν προσπαθούμε να καταλάβουμε πού μπορούμε να εισαγάγουμε τις σταθερές μας:

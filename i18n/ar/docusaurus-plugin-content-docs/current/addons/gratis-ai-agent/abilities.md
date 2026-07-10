@@ -3,7 +3,7 @@ title: مرجع القدرات
 sidebar_position: 2
 _i18n_hash: 1a83460648ea789162af417c6b11eecc
 ---
-# مرجع القدرات
+# مرجع القدرات {#abilities-reference}
 
 القدرات هي الإجراءات الذرية التي يمكن لوكيل الذكاء الاصطناعي المجاني (Gratis AI Agent) تنفيذها على تثبيت ووردبريس الخاص بك. كل قدرة هي فئة PHP مسجلة تعرض مخطط JSON — يقرأ الوكيل هذا المخطط أثناء وقت التشغيل لفهم المعلمات المطلوبة وما تعيده القدرة.
 
@@ -11,11 +11,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## أنواع المنشورات المخصصة (Custom Post Types)
+## أنواع المنشورات المخصصة (Custom Post Types) {#custom-post-types}
 
 تُدير هذه القدرات أنواع المنشورات المخصصة (CPTs) المسجلة عبر الوكيل. يتم حفظ عمليات التسجيل في جدول خيارات ووردبريس، لذا فإنها تبقى حتى عند إلغاء تنشيط الإضافة وإعادة تفعيلها.
 
-### `register_post_type`
+### `register_post_type` {#registerposttype}
 
 تسجل نوع منشور مخصص جديد.
 
@@ -50,7 +50,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_post_types`
+### `list_post_types` {#listposttypes}
 
 يعيد جميع أنواع المنشورات المخصصة التي سجلها الوكيل.
 
@@ -73,7 +73,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_post_type`
+### `delete_post_type` {#deleteposttype}
 
 يزيل نوع منشور مخصص تم تسجيله سابقًا بواسطة الوكيل. تظل المنشورات الموجودة من هذا النوع في قاعدة البيانات ولكنها لم تعد متاحة عبر نوع المنشور.
 
@@ -87,11 +87,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## التصنيفات المخصصة (Custom Taxonomies)
+## التصنيفات المخصصة (Custom Taxonomies) {#custom-taxonomies}
 
 تُدير هذه القدرات التصنيفات المخصصة. مثل أنواع المنشورات المخصصة، يتم حفظ تسجيلات التصنيف أيضًا.
 
-### `register_taxonomy`
+### `register_taxonomy` {#registertaxonomy}
 
 تسجل تصنيفًا مخصصًا جديدًا.
 
@@ -123,7 +123,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_taxonomies`
+### `list_taxonomies` {#listtaxonomies}
 
 يعيد جميع التصنيفات المخصصة التي سجلها الوكيل.
 
@@ -146,7 +146,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_taxonomy`
+### `delete_taxonomy` {#deletetaxonomy}
 
 يزيل تصنيفًا مخصصًا تم تسجيله سابقًا بواسطة الوكيل.
 
@@ -160,11 +160,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## نظام التصميم (Design System)
+## نظام التصميم (Design System) {#design-system}
 
 تعد قدرات نظام التصميم تعد العرض البصري لموقع ووردبريس — بدءًا من CSS المخصص وصولاً إلى أنماط الكتل وشعار الموقع.
 
-### `inject_custom_css`
+### `inject_custom_css` {#injectcustomcss}
 
 يضيف CSS إلى `<head>` الموقع عبر الدالة `wp_add_inline_style`. يتم تخزين CSS في الخيار `gratis_ai_agent_custom_css` ويتم إزالته بشكل نظيف عند إعادة تعيين القدرة.
 
@@ -190,7 +190,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_block_pattern`
+### `add_block_pattern` {#addblockpattern}
 
 يسجل نمط كتلة قابل لإعادة الاستخدام في مكتبة أنماط ووردبريس.
 
@@ -209,13 +209,13 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_block_patterns`
+### `list_block_patterns` {#listblockpatterns}
 
 يسرد جميع أنماط الكتل المسجلة بواسطة الوكيل.
 
 **المعلمات (Parameters)** — لا يوجد
 
-### `set_site_logo`
+### `set_site_logo` {#setsitelogo}
 
 يقوم هذا الإجراء بتعيين شعار موقع ووردبريس إلى معرف مرفق (attachment ID) معين أو رابط صورة عن بعد. عندما يتم توفير رابط URL، يتم تنزيل الصورة واستيرادها في مكتبة الوسائط (Media Library).
 
@@ -232,7 +232,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `apply_theme_json_preset`
+### `apply_theme_json_preset` {#applythemejsonpreset}
 
 يطبق إعداد مسبق (Preset) مُسمى للألوان/الخطوط على ملف `theme.json` الخاص بالقالب النشط (أو `global-styles`). هذه الإعدادات المسبقة هي حزم منسقة يتم الحفاظ عليها بواسطة فريق وكيل الذكاء الاصطناعي Gratis AI Agent.
 
@@ -257,11 +257,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## الأنماط العامة (Global Styles)
+## الأنماط العامة (Global Styles) {#global-styles}
 
 تسمح قدرات الأنماط العامة بقراءة وكتابة قيم `theme.json` عبر واجهة برمجة تطبيقات أنماط ووردبريس العالمية (WordPress Global Styles API)، مما يؤثر على جميع الكتل والقوالب في الموقع بأكمله.
 
-### `get_global_styles`
+### `get_global_styles` {#getglobalstyles}
 
 يعيد تكوين الأنماط العامة الحالي.
 
@@ -275,7 +275,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_global_styles`
+### `set_global_styles` {#setglobalstyles}
 
 يقوم بتحديث قيمة واحدة أو أكثر في تكوين الأنماط العامة.
 
@@ -302,7 +302,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `reset_global_styles`
+### `reset_global_styles` {#resetglobalstyles}
 
 يعيد جميع تغييرات الأنماط العامة التي طبقها الوكيل، مع استعادة إعدادات القالب الافتراضية.
 
@@ -312,11 +312,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## قوائم التنقل (Navigation Menus)
+## قوائم التنقل (Navigation Menus) {#navigation-menus}
 
 تسمح قدرات قائمة التنقل بإنشاء وإدارة قوائم التنقل الخاصة بووردبريس وعناصرها.
 
-### `create_menu`
+### `create_menu` {#createmenu}
 
 ينشئ قائمة تنقل جديدة في ووردبريس.
 
@@ -331,7 +331,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_menu`
+### `update_menu` {#updatemenu}
 
 يُعيد تسمية قائمة أو يعيد تعيينها إلى موقع قالب آخر.
 
@@ -347,7 +347,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `add_menu_item`
+### `add_menu_item` {#addmenuitem}
 
 يضيف عنصراً إلى قائمة تنقل موجودة.
 
@@ -367,7 +367,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `remove_menu_item`
+### `remove_menu_item` {#removemenuitem}
 
 يزيل عنصراً من قائمة التنقل.
 
@@ -381,7 +381,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_menus`
+### `list_menus` {#listmenus}
 
 يعرض جميع قوائم التنقل في ووردبريس، بما في ذلك مواقع القالب المخصصة لها.
 
@@ -404,11 +404,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## إدارة الخيارات (Options Management)
+## إدارة الخيارات (Options Management) {#options-management}
 
 تسمح قدرات الخيارات بقراءة وكتابة خيارات ووردبريس عبر `get_option` / `update_option`. يوجد كتلة أمان مدمجة تمنع التعديل العرضي للإعدادات الهامة.
 
-### `get_option`
+### `get_option` {#getoption}
 
 تقرأ خياراً من خيارات ووردبريس.
 
@@ -424,7 +424,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_option`
+### `set_option` {#setoption}
 
 تكتب خياراً في ووردبريس.
 
@@ -442,7 +442,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `delete_option`
+### `delete_option` {#deleteoption}
 
 يقوم بحذف خيار (option) من ووردبريس.
 
@@ -458,7 +458,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `list_options`
+### `list_options` {#listoptions}
 
 يسرد خيارات ووردبريس التي تطابق نمطًا معينًا (pattern).
 
@@ -482,11 +482,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## إدارة المحتوى (Content Management)
+## إدارة المحتوى (Content Management) {#content-management}
 
 تتيح قدرات إدارة المحتوى إنشاء وتحرير منشورات وصفحات و أنواع المنشور المخصصة في ووردبريس. يتم إرجاع معرفات المنشورات (Post IDs) حتى يمكن للمراحل اللاحقة في خطط القدرات المتعددة الإشارة إلى المحتوى الذي تم إنشاؤه.
 
-### `create_post`
+### `create_post` {#createpost}
 
 ينشئ منشورًا جديدًا أو صفحة أو مدخل نوع منشور مخصص في ووردبريس.
 
@@ -521,7 +521,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `update_post`
+### `update_post` {#updatepost}
 
 يقوم بتحديث منشور أو صفحة موجودة في ووردبريس.
 
@@ -551,7 +551,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `batch_create_posts`
+### `batch_create_posts` {#batchcreateposts}
 
 ينشئ عدة منشورات في استدعاء قدرة واحد، مما يقلل من عدد الطلبات (round-trips) أثناء بناء الموقع أو استيراد المحتوى بكميات كبيرة. يتم إنشاء المنشورات بالتسلسل؛ إذا فشل أحدها، يستمر الآخرون ويتم الإبلاغ عن الفشل في مصفوفة النتائج.
 
@@ -603,7 +603,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `set_featured_image`
+### `set_featured_image` {#setfeaturedimage}
 
 يعين صورة مميزة (صورة مصغرة للمنشور) لمنشور أو صفحة موجودة. يقبل معرف مرفق من مكتبة الوسائط (Media Library attachment ID) موجود، أو رابط صورة عن بعد؛ وعند توفير الرابط، يتم تنزيل الصورة واستيرادها تلقائيًا.
 
@@ -622,7 +622,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `create_contact_form`
+### `create_contact_form` {#createcontactform}
 
 ينشئ نموذج اتصال باستخدام إضافة النموذج النشطة (مثل Contact Form 7، WPForms، Fluent Forms، أو Gravity Forms، حسب الإضافة المثبتة). يعيد كود شورت آي (shortcode) يمكن تضمينه في أي منشور أو صفحة.
 
@@ -632,7 +632,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 تسمح قدرات المراجعة المرئية للوكيل بالتقاط لقطات شاشة للصفحات الحية وتحليلها، مما يتيح مراجعة التصميم المستقلة، ومقارنات قبل وبعد، واختبارات الانحدار البصري دون الحاجة إلى إضافة متصفح.
 
-### `capture_screenshot`
+### `capture_screenshot` {#visual-review}
 
 يلتقط هذه الدالة لقطة شاشة لصفحة WordPress في عنوان URL معين باستخدام متصفح بدون رأس (headless browser) يعمل من جانب الخادم. يتم حفظ الصورة في مكتبة الوسائط ويتم إرجاع رابط CDN لها.
 
@@ -661,7 +661,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `compare_screenshots`
+### `compare_screenshots` {#capturescreenshot}
 
 تأخذ هذه الدالة صورتين شاشة وتعيد درجة فرق مرئي بالإضافة إلى صورة فرق تبرز المناطق المتغيرة. مفيدة لتأكيد أن تغيير التصميم قد أنتج النتيجة المتوقعة أو للكشف عن أي تراجعات غير مقصودة.
 
@@ -691,7 +691,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `review_page_design`
+### `review_page_design` {#comparescreenshots}
 
 يلتقط هذه الدالة لقطة شاشة للصفحة ويرسلها إلى نموذج اللغة لتحليلها بصريًا. تعيد تقييمًا منظمًا يغطي التخطيط، والطباعة (Typography)، واستخدام الألوان، ومخاوف إمكانية الوصول.
 
@@ -722,11 +722,11 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-## القدرات القابلة للتثبيت
+## القدرات القابلة للتثبيت {#reviewpagedesign}
 
 تسمح سجل القدرات القابلة للتثبيت بتوسيع الوكيل الخاص بك بإضافة حزم قدرات يتم توزيعها كإضافات WordPress. تسجل كل حزمة واحدة أو أكثر من القدرات باستخدام واجهة برمجة تطبيقات القدرات القياسية (ability API).
 
-### `list_available_abilities`
+### `list_available_abilities` {#installable-abilities}
 
 تعيد كتالوج حزم القدرات المتاحة للتثبيت من السجل.
 
@@ -755,7 +755,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `install_ability`
+### `install_ability` {#listavailableabilities}
 
 يقوم بتنزيل وتفعيل حزمة قدرات (ability pack) من السجل.
 
@@ -769,7 +769,7 @@ _i18n_hash: 1a83460648ea789162af417c6b11eecc
 
 ---
 
-### `recommend_plugin`
+### `recommend_plugin` {#installability}
 
 يستعلم من سجل القدرات للعثور على أفضل إضافة (plugin) لاستخدام محدد، ويقوم بتثبيتها اختياريًا.
 

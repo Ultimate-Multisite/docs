@@ -3,11 +3,11 @@ title: Fanehoana ny Fanehoan'ny Mpanjifa sy ny Tatitra Olana
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Famaran'ny Mpanjifa sy Fanambarana Olana
+# Famaran'ny Mpanjifa sy Fanambarana Olana {#customer-feedback--issue-reporting}
 
 Ny Gratis AI Agent v1.5.0 dia manolotra rafitra fanambarana val fianarana (feedback) sy fanambarana olana mialoha izay ahafahana ny mpampiasa fahefana manamarina ireo valin-teny tsy nahomby sy manambara olana mivantana avy amin'ny interface chat. Ity rafitra ity dia ahitana fitantanana fankatoavana (consent management), baiko fanambarana ho azy, ary fandinihana (triage) an'ny AI any aoriana.
 
-## Boina Fandavana (Thumbs-Down Button)
+## Boina Fandavana (Thumbs-Down Button) {#thumbs-down-button}
 
 Ny hafatra rehetra alefa avy amin'ny asistantin'ny AI dia mampiseho bokotra **thumbs-down** (👎). Rehefa tsindrin'ilay bokotra ny mpampiasa, afaka manamarina ny valiny ho tsy nahomby na diso izy.
 
@@ -15,7 +15,7 @@ Ny hafatra rehetra alefa avy amin'ny asistantin'ny AI dia mampiseho bokotra **th
 - Rehefa tsindrin'ilay bokotra dia misokatra ny **Feedback Consent Modal**.
 - Ny fanambarana dia mifandray amin'ny tady resaka sy ny hafatra manokana.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Rehefa tsindrin'ny mpampiasa ilay bokotra thumbs-down, hiseho ny modal fankatoavana alohan'ny handefasana data aho. Ity modal ity dia:
 
@@ -26,13 +26,13 @@ Rehefa tsindrin'ny mpampiasa ilay bokotra thumbs-down, hiseho ny modal fankatoav
 
 Tsy voarakitra ny fanambarana raha tsy manamafy mazava ny mpampiasa izany.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Amin'ny faran'ny resaka, mety haneho ny asistantinao **auto-prompt feedback banner** — hafatra tsy mampitahotra izay mangataka raha nahomby ny fivoriana ilay fotoana.
 
 Ity banner ity dia miseho ho azy arakaraka ny halavany sy ny vokatra azo avy amin'ny fandinihana (heuristics). Mifandray amin'ny lalana fanambarana mitovy amin'ilay bokotra thumbs-down izy. Afaka manala an-tsokosoko ny banner ianao nefa tsy manome fanambarana.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Afaka manomboka ny fomba fanambarana (feedback flow) mivantana ny mpampiasa amin'ny alalan'ny soratra `/report-issue` ao anatin'ny input chat. Ity baiko ity dia:
 
@@ -42,7 +42,7 @@ Afaka manomboka ny fomba fanambarana (feedback flow) mivantana ny mpampiasa amin
 
 Misy ny `command /report-issue` azo ampiasaina amin'ny fomba lahatsoratra (inline), widget mifandray (floating widget), ary écran manontolo (full-screen).
 
-## AI-Assisted Triage (Fandaharam-potoana an'ny AI)
+## AI-Assisted Triage (Fandaharam-potoana an'ny AI) {#ai-assisted-triage}
 
 Ny hevitra voatoli dia alefa any amin'ny layer fandinihana (triage layer) an'ny AI izay:
 

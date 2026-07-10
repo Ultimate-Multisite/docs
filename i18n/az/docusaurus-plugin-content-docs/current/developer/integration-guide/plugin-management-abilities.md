@@ -3,11 +3,11 @@ title: Plugin İdarəetmə Bacarıqları
 sidebar_position: 4
 _i18n_hash: ef90f5181e76f8b1a3209101eded0653
 ---
-# Plugin Yönetimi Qabiliyyətləri
+# Plugin Yönetimi Qabiliyyətləri {#plugin-management-abilities}
 
 Gratis AI Agent v1.5.0, AI köməkçisinin söhbət zamanı çağırış edə biləcəyi **7 plugin yönetimi qabiliyyəti** ilə birlikdə gəlir. Bu qabiliyyətlər, [Plugin Builder & Sandbox System](../../user-guide/administration/plugin-builder-and-sandbox) vasitəsilə quraşdırılmış WordPress pluginləri üzərində proqramlaşdırılmış nəzarət təmin edir.
 
-## Qabiliyyətlərin Ümumi Baxışı
+## Qabiliyyətlərin Ümumi Baxışı {#abilities-overview}
 
 | Qabiliyyət | Slug | Təsvir |
 |---|---|---|
@@ -19,7 +19,7 @@ Gratis AI Agent v1.5.0, AI köməkçisinin söhbət zamanı çağırış edə bi
 | Plugin Quraşdır | `install_plugin` | Sandbox-da olan pluginləri canlı WordPress plugin kataloquna yerləşdirir. |
 | Plugin Aktivləşdir | `activate_plugin` | Sandbox mühitində pluginləri aktivləşdirir. |
 
-## Plugin Quraşdırıcı API
+## Plugin Quraşdırıcı API {#plugin-installer-api}
 
 Plugin quraşdırıcı, pluginləri yerləşdirərkən və ya silərkən fayl sistemi əməliyyatlarını idarə edir. Əsas davranışlar:
 
@@ -28,7 +28,7 @@ Plugin quraşdırıcı, pluginləri yerləşdirərkən və ya silərkən fayl si
 - **Yeniləmə (Update)**: Mövcud plugin fayllarını əvəz edir. Qismən işləmiş vəziyyət səhvlərindən yayınmaq üçün yazmadan əvvəl pluginləri deaktive edir.
 - **Slug ilə silmə**: Plugin dizinini slug-u ilə tapır, bütün saytlarda deaktiv edir və sonra dizini silir.
 
-### Xüsusi Quraşdırma Handler-i Qeydiyyatdan Keçirmək
+### Xüsusi Quraşdırma Handler-i Qeydiyyatdan Keçirmək {#registering-a-custom-install-handler}
 
 `gratis_ai_plugin_installer_before_install` və `gratis_ai_plugin_installer_after_install` action-larından istifadə edərək quraşdırma dövrünə qoşula bilərsiniz:
 
@@ -46,7 +46,7 @@ add_action('gratis_ai_plugin_installer_after_install', function(string $slug, bo
 }, 10, 2);
 ```
 
-## Ekosistem Kataloqu (Ecosystem Registry)
+## Ekosistem Kataloqu (Ecosystem Registry) {#ecosystem-registry}
 
 Qabiliyyətlər **plugin ekosistem kataloqu** vasitəsilə qeydiyyatdan keçir. Kataloq qabiliyyət slug-larını onların handler siniflərində eşləşdirir və onları AI agentinin tool dispatcher-ına təqdim edir.
 
@@ -97,7 +97,7 @@ class My_Custom_Plugin_Ability implements Gratis_AI_Ability_Interface {
 }
 ```
 
-## HookScanner İntegrasiyası
+## HookScanner İntegrasiyası {#hookscanner-integration}
 
 `create_plugin` və `update_plugin` qabiliyyətləri, avtomatik olaraq, yeni yaradılan kod üzərində **HookScanner** işlədir. HookScanner plugin tərəfindən qeyd olunan WordPress action və filter hook-larının siyahısını qaytarır.
 
@@ -118,7 +118,7 @@ foreach ($hooks['filters'] as $hook) {
 
 HookScanner avtomatik olaraq `vendor/` və `node_modules/` dizinlərini atlayır.
 
-## Asinxron İş Arxitekturası (Async Job Architecture)
+## Asinxron İş Arxitekturası (Async Job Architecture) {#async-job-architecture}
 
 Uzun müddət çəkən plugin əməliyyətləri (yaratmaq, quraşdırmaq) canlı irəliləyiş izlənməsi ilə **asinxron işlər (async jobs)** kimi göndərilir. AI chat interfeysi irəliləyiş üçün sorğu göndərir və status yeniləmələrini istifadəçiyə axın (stream) şəklində ötürür:
 

@@ -3,11 +3,11 @@ title: Sistema-emailak eskaintzea
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistema-emailak eskaintzea
+# Sistema-emailak eskaintzea {#managing-system-emails}
 
 Ultimate Multisite-ek esaiak gertatzen dira sistema-emailak, gertatuaren konfirmazioak, labenguenak eta talde-membresiaren hasierako albidetzak bezala. Horrek zure brand-a edo estailua erabiliz piztu dezakezu.
 
-## Sistema-emailak ikustea
+## Sistema-emailak ikustea {#viewing-system-emails}
 
 **Ultimate Multisite → Settings** (Konfigurazioa) funtziara jarraitu eta **Emails** (Emailak) tabira klik egin behar du email-eko konfiguratura hauek ikusteko.
 
@@ -21,7 +21,7 @@ Euskal sistema-email editori erabiliz email template batzuk edite dezakezu:
 
 ![System email editor](/img/admin/system-email-editor.png)
 
-## Email template berriak importatzea
+## Email template berriak importatzea {#importing-new-email-templates}
 
 Ultimate Multisite-en berri bertsioak eta add-onak email template berriak emateko iragildu dira. Konfliktualitatea prevenitzera, berri templateak otomatikoki ez jorratzen dira — horiek manuaz importatzen behar dira.
 
@@ -32,7 +32,7 @@ Berri email templateak importatzeko:
 3. **Import Emails** (Emailak importatu) opsioa onartu nahi duzu templateak ikusteko
 4. Importatzea nahi duzu templateak aukeratu eta konfirmatu
 
-## Email templateak eskatzea (Reset)
+## Email templateak eskatzea (Reset) {#resetting-email-templates}
 
 Email template bat personalizatu du eta default kontuentuara itxarri nahi du, aukera bat duzu:
 

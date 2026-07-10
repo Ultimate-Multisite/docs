@@ -3,27 +3,27 @@ title: የጣቢያ ኤክስፖርት
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# የጣቢያ ኤክስፖርት (Site Export)
+# የጣቢያ ኤክስፖርት (Site Export) {#site-export}
 
 የ**Site Export** የአስተዳሚ ገጽ የኔትወርክ አስተዳዳሪዎችን አንድ ጣቢያን፣ ወይም መላውን ኔትወርክ፣ ለዝውውር (migration)፣ ለጥቅም (backup) ወይም ለሌላ አካል ለማስረከብ በሚቻል አርካይቭ (downloadable archive) ውስጥ እንዲያከማቹ የሚያስችል ቦታ ነው።
 
-## አንድ ጣቢያን ኤክስፖርት ማድረግ
+## አንድ ጣቢያን ኤክስፖርት ማድረግ {#exporting-one-site}
 
 ወደ **Ultimate Multisite > Site Export** ይሂዱ እና **Generate new Site Export** ይምረጡ። ሊያወጡት የሚፈልጉትን ንዑስ ጣቢያ (subsite) ይምረጡ፣ ከዚያም አርካይቭው የፋይሎችን ዝውውር (uploads)፣ ፕልጊኖችን (plugins) እና ቴሞችን (themes) የሚያካትት መሆኑን ይምረጡ።
 
 ኤክስፖርቱ ሲጠናቀቅ፣ ከ**Existing Exports** ዝርዝር ውስጥ ያለውን ZIP ፋይል ያውርዱ። የኤክስፖርት ZIP ፋይሎች አሁን ራሳቸውን የሚያስጀምር `index.php` እና `readme.txt` አላቸው። ስለዚህ፣ አርካይቭው ተለየ የኢምፖርተር ፕልጊን ሳይጫኑ በቀጥታ በአዲስ ሆስት ላይ ተጭኖ እንዲጀመር ያስችላል።
 
-## መላውን ኔትወርክ ኤክስፖርት ማድረግ
+## መላውን ኔትወርክ ኤክስፖርት ማድረግ {#exporting-the-whole-network}
 
 በኔትወርክ ውስጥ ያሉትን ሁሉንም ንዑስ ጣቢያዎች በአንድ አርካይቭ ውስጥ የሚያስይዝ ከሆነ፣ በSite Export ገጹ ላይ **Network Export** ይጠቀሙ። ይህ በተለይ የሆስት ዝውውር (host migrations)፣ የአደጋ መከላከል ልምምዶች (disaster-recovery drills) ወይም እያንዳንዱ ንዑስ ጣቢያ በአንድነት መጓዝ ያለበት የstaging rebuilds ጊዜ በጣም ጠቃሚ ነው።
 
 የኔትወርክ ኤክስፖርት ከአንድ ጣቢያ ኤክስፖርት በጣም ትልቅ ሊሆን ስለሚችል፣ በዝቅተኛ የትራፊክ ሰዓት ውስጥ ያካሂዱት። እንዲሁም፣ ለፋይሎች ዝውውር (uploads)፣ ፕልጊኖች፣ ቴሞች እና ለሚፈጠሩ ZIP ፋይሎች በቂ ነጻ ቦታ መኖሩን በታለመው ማከማቻ (target storage) ያረጋግጡ።
 
-### የኔትወርክ ማስገቢያ ጥቅሎች (Network Import Bundles)
+### የኔትወርክ ማስገቢያ ጥቅሎች (Network Import Bundles) {#network-import-bundles}
 
 ከUltimate Multisite 2.12.0 ጀምሮ፣ Site Exporter **የኔትወርክ ማስገቢያ ጥቅሎችን (network import bundles)** መፍጠር ይችላል። እነዚህ ጥቅሎች ለኔትወርክ-አቀፍ የጣቢያ መልሶ ማቋቋም (site restoration) የተዘጋጁ ልዩ አርካይቮች ናቸው። የኔትወርክ ማስገቢያ ጥቅል ወደ አዲስ የኔትወርክ ተከላ (new network installation) በርካታ ጣቢያዎችን ለመመለስ የሚያስፈልጉትን ሁሉንም ፋይሎች እና ሜታዳታ (metadata) ይይዛል።
 
-#### የኔትወርክ ማስገቢያ ጥቅል መፍጠር
+#### የኔትወርክ ማስገቢያ ጥቅል መፍጠር {#generating-a-network-import-bundle}
 
 1. **Ultimate Multisite > Site Export** ይሂዱ።
 2. **Generate new Network Export** ላይ ይጫኑ።
@@ -32,7 +32,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 5. **Generate** ላይ ይጫኑ።
 6. የጥቅሉን ZIP ፋይል ከ**Existing Exports** ዝርዝር ውስጥ ያውርዱ።
 
-#### ከኔትወርክ ማስገቢያ ጥቅል መልሶ ማቋቋም
+#### ከኔትወርክ ማስገቢያ ጥቅል መልሶ ማቋቋም {#restoring-from-a-network-import-bundle}
 
 የጣቢያዎችን ከኔትወርክ ማስገቢያ ጥቅል መልሶ ለማቋቋም (restore):
 
@@ -52,7 +52,7 @@ _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 - የሚዲያ ፋይሎች (በጥቅሉ ውስጥ ከተካተቱ)
 - ልዩ የዳታቤዝ ሰንጠረዦች እና መረጃ
 
-## ራሱን የቻለ ኤክስፖርት ZIP መጫን
+## ራሱን የቻለ ኤክስፖርት ZIP መጫን {#installing-a-self-booting-export-zip}
 
 ራሱን የቻለ (self-booting) ZIP በአዲስ ሆስት ላይ ለመመለስ (restore):
 

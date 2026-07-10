@@ -1,0 +1,150 @@
+---
+title: Multitenencia
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multitenencia {#multi-tenancy}
+
+Distribúe subsitios entre servidores e bases de datos para mellorar o rendemento e a seguridade
+
+## Aspectos destacados da versión 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 engade a base de inquilino soberano para fluxos de traballo de illamento en produción:
+
+- Autoinicio de sesión de inquilino sen estado con visitas SSO de curta duración e protexidas contra repetición.
+- Illamento de base de datos e sistema de ficheiros por subsitio para inquilinos soberanos.
+- Capacidade de multitenencia de Hostinger para aprovisionamento de inquilinos consciente do host.
+- Portas de verificación de migración soberana para comprobacións de datos herdados e procesamento push asíncrono.
+- Vinculación configurable do host de base de datos na mesma máquina para instalacións Bedrock, FrankenPHP e localhost.
+- Melloras no arranque do inquilino, escritor de base de datos, arranque do esquema e aprovisionamento de usuarios.
+- Desmantelamento soberano máis seguro que limpa as credenciais do inquilino.
+
+Consulta as guías de usuario para o [fluxo de traballo de migración soberana](/user-guide/getting-started/sovereign-migration-workflow), o [illamento de multitenencia](/user-guide/configuration/multi-tenancy-isolation) e as [operacións de inquilino soberano](/user-guide/administration/sovereign-tenant-operations).
+
+## Requisitos {#requirements}
+
+- WordPress 5.3 ou superior
+- PHP 7.4 ou superior
+- plugin Multisite Ultimate (activo)
+
+## Instalación {#installation}
+
+1. Sobe os ficheiros do addon ao teu directorio `/wp-content/plugins/`
+2. Activa o plugin a través do menú 'Plugins' en WordPress
+3. Configura os axustes do addon na administración de rede
+
+## Desenvolvemento {#development}
+
+### Configuración {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Estrutura do proxecto {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # Clases PHP e inclusións
+│   ├── class-multisite-ultimate-updater.php  # Xestor de actualizacións
+│   └── class-multi_tenancy-main.php             # Funcionalidade principal
+├── tests/                        # Probas unitarias
+│   ├── bootstrap.php            # Arranque de probas
+│   ├── class-*-base.php         # Clase base de proba
+│   └── class-*-test.php         # Casos de proba
+├── views/                       # Ficheiros de modelo
+├── assets/                      # Recursos estáticos
+│   ├── css/                     # Follas de estilo
+│   ├── js/                      # Ficheiros JavaScript
+│   └── images/                  # Imaxes
+├── lang/                        # Ficheiros de idioma
+├── composer.json                # Dependencias PHP
+├── package.json                 # Dependencias Node.js
+├── phpunit.xml.dist             # Configuración PHPUnit
+├── .phpcs.xml.dist              # Configuración de estándares de código
+└── rector.php                   # Regras de modernización de código
+```
+
+### Probas {#testing}
+
+O addon inclúe un marco de probas completo:
+
+- **Probas unitarias**: probas baseadas en PHPUnit coa suite de probas de WordPress
+- **Clase base de proba**: proporciona métodos auxiliares para escenarios de proba comúns
+- **Cobertura de probas**: configurada para rastrexar a cobertura do código
+- **Probas Multisite**: as probas execútanse nun contorno multisite
+
+### Estándares de código {#code-standards}
+
+- **WordPress Coding Standards**: aplicados mediante PHPCS
+- **Compatibilidade con PHP 7.4+**: admite funcionalidades modernas de PHP
+- **Análise estática**: integración de PHPStan para comprobación de tipos
+- **Modernización de código**: regras de Rector para actualizacións de PHP
+
+### Sistema de compilación {#build-system}
+
+- **Procesamento de recursos**: minificación de ficheiros CSS/JS
+- **Tradución**: xeración de ficheiro POT
+- **Empaquetado**: creación de arquivo para distribución
+- **Modo de desenvolvemento**: recursos sen minificar para depuración
+
+## Configuración {#configuration}
+
+O addon admite varias opcións de configuración accesibles a través da interface de administración de rede.
+
+### Configuración de inquilino soberano {#sovereign-tenant-configuration}
+
+Para inquilinos soberanos, configura a base de datos do inquilino, a raíz do sistema de ficheiros, a vinculación do host da base de datos e a capacidade do host antes de enrutar tráfico ao inquilino. Executa a verificación de migración despois de cada cambio que afecte ás credenciais da base de datos, á vinculación do host, ao enrutamento ou ao aprovisionamento de usuarios.
+
+Usa `localhost` só cando o tempo de execución do inquilino e as concesións da base de datos esperen acceso mediante socket local ou na mesma máquina. Usa `127.0.0.1` ou un nome de host de servizo cando ese sexa o host de concesión configurado polo teu provedor.
+
+### Capacidade de Hostinger {#hostinger-capability}
+
+A capacidade de multitenencia de Hostinger funciona co token de integración compartido de Hostinger. Confirma que o dominio está presente en hPanel, que DNS apunta á Account de Hostinger e que os axustes da base de datos do inquilino coinciden con hPanel antes da verificación.
+
+## Hooks e filtros {#hooks-and-filters}
+
+### Accións {#actions}
+
+- `ultimate-multisite-addon-template_init` - Disparado despois da inicialización do addon
+- `ultimate-multisite-addon-template_loaded` - Disparado despois de que se carguen todos os ficheiros do addon
+
+### Filtros {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Modificar os axustes do addon
+- `ultimate-multisite-addon-template_enabled` - Sobrescribir o estado de activación/desactivación do addon
+
+## Licenza {#license}
+
+Este addon ten licenza GPL v3 ou posterior.
+
+## Soporte {#support}
+
+Para soporte e documentación, visita [MultisiteUltimate.com](https://multisiteultimate.com)
+## Rexistro de cambios {#changelog}
+
+- Versión 1.2.0 (2026-06-03): engade autoinicio de sesión de inquilino sen estado, capacidade de multitenencia de Hostinger, illamento de base de datos e sistema de ficheiros por subsitio, portas de verificación de migración soberana, melloras no arranque do inquilino/escritor de base de datos, vinculación configurable do host MySQL e desmantelamento soberano máis seguro.
+
+- Versión 1.0.1 (2025-09-28): renomear prefixo a ultimate-multisite; actualizar dominio de texto; incremento de versión.
+
+
+- Versión  (2025-09-28): renomear prefixo a ultimate-multisite; actualizar dominio de texto; incremento de versión.

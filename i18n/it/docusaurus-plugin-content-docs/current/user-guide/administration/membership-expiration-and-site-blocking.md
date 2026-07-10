@@ -3,11 +3,11 @@ title: Scadenza dell'abbonamento e blocco del sito
 sidebar_position: 10
 _i18n_hash: c94d67d4187b293a5e7068550d0703cc
 ---
-# Scadenza dell'Abbonamento e Blocco del Sito
+# Scadenza dell'Abbonamento e Blocco del Sito {#membership-expiration-and-site-blocking}
 
 Questa guida spiega come Ultimate Multisite gestisce la scadenza degli abbonamenti, la fine dei periodi di prova e il blocco del sito sul frontend. Copre il ciclo di vita di un abbonamento, dallo stato attivo a quello scaduto, le impostazioni che controllano se i siti vengono bloccati e cosa controllare quando i siti rimangono accessibili dopo la scadenza di un abbonamento.
 
-## Ciclo di Vita dello Stato dell'Abbonamento
+## Ciclo di Vita dello Stato dell'Abbonamento {#membership-status-lifecycle}
 
 Ogni abbonamento in Ultimate Multisite ha uno di questi stati:
 
@@ -24,7 +24,7 @@ Gli abbonamenti gratuiti non scadono automaticamente. Ultimate Multisite li cons
 | **Expired** | Superato il periodo di scadenza e il periodo di grazia senza rinnovo |
 | **Cancelled** | Cancellato esplicitamente dal cliente o dall'amministratore |
 
-### Come gli Abbonamenti Passano a Scaduto
+### Come gli Abbonamenti Passano a Scaduto {#how-memberships-transition-to-expired}
 
 Ultimate Multisite esegue un controllo in background **ogni ora** per cercare abbonamenti che dovrebbero essere contrassegnati come scaduti. Questo controllo utilizza [Action Scheduler](https://actionscheduler.org/) (non WP-Cron direttamente) ed è eseguito come azione pianificata `wu_membership_check`.
 
@@ -34,7 +34,7 @@ Il controllo di scadenza ha un **periodo di grazia integrato di 3 giorni** di de
 Il periodo di grazia di scadenza di 3 giorni è separato dall'impostazione "Frontend Block Grace Period" descritta di seguito. Il periodo di grazia di scadenza controlla quando lo **stato cambia** da attivo/in sospeso a scaduto. Il periodo di grazia di blocco del frontend controlla quando il **sito viene bloccato** dopo che lo stato è già cambiato.
 :::
 
-#### Abbonamenti con Rinnovo Automatico vs. Senza Rinnovo Automatico
+#### Abbonamenti con Rinnovo Automatico vs. Senza Rinnovo Automatico {#auto-renewing-vs-non-auto-renewing-memberships}
 
 Questa distinzione è fondamentale per comprendere il comportamento di scadenza:
 
@@ -42,7 +42,7 @@ Questa distinzione è fondamentale per comprendere il comportamento di scadenza:
 
 - **Abbonamenti con rinnovo automatico** (`auto_renew = true`): Il controllo di scadenza cron **salta completamente questi abbonamenti**. Ci si aspetta che il gateway di pagamento (Stripe, PayPal, ecc.) notifichi Ultimate Multisite tramite webhook quando un abbonamento fallisce o viene cancellato. Se il webhook non viene ricevuto — a causa di un endpoint mal configurato, un'interruzione del gateway o un abbonamento cancellato al di fuori del sistema — l'abbonamento potrebbe rimanere `active` indefinitamente anche dopo la data di scadenza.
 
-### Come Terminano i Periodi di Prova
+### Come Terminano i Periodi di Prova {#how-trials-end}
 
 Quando il periodo di prova di un abbonamento in `trialing` termina, il sistema:
 
@@ -52,11 +52,11 @@ Quando il periodo di prova di un abbonamento in `trialing` termina, il sistema:
 
 Questo processo viene eseguito sullo stesso programma orario del controllo di scadenza regolare, ma **solo per gli abbonamenti senza rinnovo automatico**. Per i periodi di prova con rinnovo automatico, è il gateway di pagamento a gestire il passaggio da prova ad abbonamento a pagamento.
 
-## Blocco dell'Accesso al Frontend
+## Blocco dell'Accesso al Frontend {#block-frontend-access}
 
 Di default, quando un abbonamento scade o passa in sospeso, **viene ristretto solo il dashboard wp-admin**. Il frontend pubblico del sito rimane accessibile ai visitatori. Per bloccare anche l'accesso pubblico, è necessario abilitare l'impostazione **Block Frontend Access**.
 
-### Configurazione dell'Impostazione
+### Configurazione dell'Impostazione {#configuring-the-setting}
 
 Vai su **Ultimate Multisite > Settings > Memberships** e abilita **Block Frontend Access**.
 
@@ -74,7 +74,7 @@ Tre impostazioni correlate controllano questo comportamento:
 | **Frontend Block Grace Period** | Numero di giorni da attendere dopo che l'abbonamento diventa inattivo prima di bloccare. Imposta su `0` per bloccare immediatamente. | 0 |
 | **Frontend Block Page** | Una pagina sul sito principale a cui reindirizzare i visitatori quando un sito è bloccato. Se non impostata, i visitatori vedono un messaggio generico "Site not available". | None |
 
-### Cosa Vedono i Visitatori Quando un Sito è Bloccato
+### Cosa Vedono i Visitatori Quando un Sito è Bloccato {#what-visitors-see-when-a-site-is-blocked}
 
 Quando l'accesso al frontend è bloccato, i visitatori del sito verranno:
 
@@ -83,7 +83,7 @@ Quando l'accesso al frontend è bloccato, i visitatori del sito verranno:
 
 Gli amministratori del sito possono comunque accedere — la pagina di accesso non viene mai bloccata.
 
-### Cosa Viene Bloccato e Quando
+### Cosa Viene Bloccato e Quando {#what-gets-blocked-and-when}
 
 Il comportamento di blocco dipende dallo stato dell'abbonamento:
 
@@ -104,21 +104,21 @@ Anche se il periodo di prova è terminato, un abbonamento con stato `trialing` *
 Gli abbonamenti cancellati vengono sempre bloccati una volta superata la data di scadenza, indipendentemente dal fatto che Block Frontend Access sia abilitato. Il Frontend Block Grace Period **non** si applica agli abbonamenti cancellati.
 :::
 
-## Risoluzione dei Problemi: Siti che Rimangono Accessibili Dopo la Scadenza
+## Risoluzione dei Problemi: Siti che Rimangono Accessibili Dopo la Scadenza {#troubleshooting-sites-remaining-accessible-after-expiration}
 
 Se i siti rimangono pubblicamente accessibili dopo la scadenza di un abbonamento, esegui questi controlli in ordine:
 
-### 1. Verifica che l'Impostazione Block Frontend Access Sia Abilitata
+### 1. Verifica che l'Impostazione Block Frontend Access Sia Abilitata {#1-verify-the-block-frontend-access-setting-is-enabled}
 
 Vai su **Ultimate Multisite > Settings > Memberships** e conferma che l'interruttore **Block Frontend Access** sia attivo. Questa impostazione è **disabilitata di default**, il che significa che solo wp-admin viene ristretto quando un abbonamento diventa inattivo.
 
-### 2. Controlla il Frontend Block Grace Period
+### 2. Controlla il Frontend Block Grace Period {#2-check-the-frontend-block-grace-period}
 
 Nella stessa pagina delle impostazioni, controlla il valore di **Frontend Block Grace Period**. Se è impostato su 7 giorni, ad esempio, il frontend non verrà bloccato fino a 7 giorni dopo la data di scadenza dell'abbonamento — anche se lo stato dell'abbonamento è già `expired`.
 
 Impostalo su `0` se desideri un blocco immediato dopo che l'abbonamento diventa inattivo.
 
-### 3. Conferma che lo Stato dell'Abbonamento Sia Effettivamente Cambiato
+### 3. Conferma che lo Stato dell'Abbonamento Sia Effettivamente Cambiato {#3-confirm-the-membership-status-has-actually-changed}
 
 Vai su **Ultimate Multisite > Memberships** e controlla lo stato dell'abbonamento interessato. Se mostra ancora `active` nonostante sia passata la data di scadenza, il passaggio di stato non è avvenuto. Cause comuni:
 
@@ -126,7 +126,7 @@ Vai su **Ultimate Multisite > Memberships** e controlla lo stato dell'abbonament
 
 - **Il cron job non è stato eseguito**: Vedi il passo successivo.
 
-### 4. Verifica che Action Scheduler Stia Funzionando
+### 4. Verifica che Action Scheduler Stia Funzionando {#4-verify-action-scheduler-is-running}
 
 Ultimate Multisite utilizza Action Scheduler per i suoi cron job. Vai su **Tools > Scheduled Actions** nell'admin di rete e cerca:
 
@@ -148,7 +148,7 @@ Per garantire un'esecuzione cron affidabile, imposta un cron job di sistema:
 */5 * * * * cd /path/to/wordpress && wp cron event run --due-now --url=https://your-network-url.com
 ```
 
-### 5. Controlla i Problemi con i Webhook del Gateway (Abbonamenti con Rinnovo Automatico)
+### 5. Controlla i Problemi con i Webhook del Gateway (Abbonamenti con Rinnovo Automatico) {#5-check-for-gateway-webhook-issues-auto-renewing-memberships}
 
 Se l'abbonamento è con rinnovo automatico e l'abbonamento del gateway è stato cancellato o ha fallito, ma Ultimate Multisite lo mostra ancora come `active`:
 
@@ -157,7 +157,7 @@ Se l'abbonamento è con rinnovo automatico e l'abbonamento del gateway è stato 
 
 Se il gateway mostra l'abbonamento come cancellato ma Ultimate Multisite no, è probabile che la notifica webhook sia andata persa. Puoi cambiare manualmente lo stato dell'abbonamento in **Ultimate Multisite > Memberships > [Edit Membership]**.
 
-### 6. Controlla il Periodo di Grazia di Scadenza (Livello Cron)
+### 6. Controlla il Periodo di Grazia di Scadenza (Livello Cron) {#6-check-the-expiration-grace-period-cron-level}
 
 Il controllo cron ha il proprio periodo di grazia (di default: 3 giorni) prima di contrassegnare un abbonamento come scaduto. Questo è separato dal periodo di grazia di blocco del frontend. Il tempo totale prima che un sito venga bloccato può essere:
 
@@ -165,7 +165,7 @@ Il controllo cron ha il proprio periodo di grazia (di default: 3 giorni) prima d
 
 Ad esempio, con le impostazioni predefinite e un periodo di grazia di frontend di 7 giorni, potrebbe volerci fino a 10 giorni dopo la `date_expiration` prima che il sito venga effettivamente bloccato.
 
-### 7. Scaducare Manualmente un Abbonamento
+### 7. Scaducare Manualmente un Abbonamento {#7-manually-expire-a-membership}
 
 Se devi bloccare immediatamente un sito senza aspettare il ciclo cron, puoi cambiare manualmente lo stato dell'abbonamento:
 
@@ -176,7 +176,7 @@ Se devi bloccare immediatamente un sito senza aspettare il ciclo cron, puoi camb
 
 Il blocco del frontend avrà effetto al prossimo caricamento della pagina (soggetto al Frontend Block Grace Period per gli abbonamenti scaduti, o immediatamente per quelli cancellati).
 
-## Riepilogo
+## Riepilogo {#summary}
 
 La cronologia completa dalla data di scadenza al blocco del sito:
 
@@ -208,7 +208,7 @@ Per gli abbonamenti cancellati, il percorso è più breve:
   Il frontend del sito viene bloccato immediatamente
 ```
 
-## Riferimento per Sviluppatori
+## Riferimento per Sviluppatori {#developer-reference}
 
 I seguenti hook e filtri ti consentono di personalizzare il comportamento di scadenza e blocco:
 

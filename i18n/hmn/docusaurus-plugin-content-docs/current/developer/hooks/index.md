@@ -1,0 +1,194 @@
+---
+title: Kev Siv Qhia Txog Hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Phau ntawv siv Hooks {#hooks-reference}
+
+Ntaub ntawv tsim cia rau tag nrho **59 actions** thiab **118 filters** hauv Ultimate Multisite.
+
+## Actions {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Khiav ua ntej kev xa rov mus rau kev txheeb xyuas tus kheej.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Khiav tam sim ua ntej cookie txheeb xyuas tus kheej raug teeb.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Khiav tam sim ua ntej cookie txheeb xyuas tus kheej rau tus uas twb nkag rau hauv lawm raug teeb.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Tso cai rau cov developer ntxiv lawv cov kev txuas nrog host provider ntawm wp plugins.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Tsim kev khiav thaum tag nrho cov dependencies twb raug thauj lawm
+- [wu_activation](./Actions/wu_activation) — Cia lwm feem ntawm plugin txuas lawv cov routine rau kev qhib siv
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Tso cai rau plugin developers hook functions tom qab tus user lossis super admin hloov site template
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Qee kis, peb yuav tsum thauj ntxiv zog los daws cov actions.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Khiav ua ntej kev ua tiav ntawm search request.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Tso cai rau developers ua kev hloov ntxiv rau checkout object.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Tso cai rau developers ua kev hloov ntxiv rau checkout object.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Khiav ua ntej ib field raug ntxiv rau checkout form.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Tso cai rau developers trigger hooks ntxiv.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Ua ntej peb process checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Khiav tom qab checkout order raug tsim tiav tag.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Tso cai rau plugin developers ntxiv widgets rau Network Dashboard Panel.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Tso cai rau plugin developers ntxiv widgets rau Network Dashboard Panel.
+- [wu_deactivation](./Actions/wu_deactivation) — Cia lwm feem ntawm plugin txuas lawv cov routine rau kev kaw tsis siv
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Tso cai rau plugin developers ntxiv actions rau txheej txheem rho tawm
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Khiav thaum ib domain dhau los ua domain tseem ceeb rau ib site.
+- [wu_domain_created](./Actions/wu_domain_created) — Tsim kev khiav thaum ib domain mapping tshiab raug ntxiv.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Tau khiav tom qab peb lub core Domain Mapping raug thauj lawm
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Qee plugins yuav khaws URL ua ntej mapping tau active lossis yuav tsim URLs txawv txoj kev uas tsis suav nrog o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Tso cai rau developers hook tom qab kev duplicate site tshwm sim.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Tso cai rau plugin developers ntxiv hooks ntxiv
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook rau kev ntxuav ntxiv
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Khiav ua ntej handle request add new domain modal.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Tso cai rau plugin developers khaws meta data txawv txoj kev yog lawv xav tau.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Tso cai rau plugin developers khaws user meta data txawv txoj kev yog lawv xav tau.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Khiav thaum ntsib ib magic link token uas tsis raug.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Khiav tom qab tus user nkag rau hauv ntawm magic link.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Tso cai rau plugin developers ua yam ntxiv thaum customer raug ntxiv.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Khiav tom qab MCP abilities raug registered rau ib entity.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Khiav tom qab MCP adapter raug initialized.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Tsim kev khiav tom qab membership raug tso tseg.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Tsim kev khiav tom qab membership renewal.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Tsim kev khiav ua ntej membership raug tso tseg.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Tsim kev khiav ua ntej membership renewal.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Khiav tom qab ib object raug khaws rau hauv database.
+- [wu_page_added](./Actions/wu_page_added) — Tso cai rau plugin developers khiav yam ntxiv thaum pages raug registered.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Tso cai rau plugin developers ntxiv content ntxiv tom qab peb print page
+- [wu_page_before_render](./Actions/wu_page_before_render) — Tso cai rau plugin developers ntxiv content ntxiv ua ntej peb print page.
+- [wu_page_load](./Actions/wu_page_load) — Tso cai rau plugin developers ntxiv hooks ntxiv rau peb cov pages.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Tso cai rau plugin developers ntxiv content ntxiv tom qab peb print page
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Tso cai rau plugin developers ntxiv content ntxiv ua ntej peb print page.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Tso cai rau plugin developers ntxiv hooks ntxiv rau peb cov pages.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Khiav tom qab widgets raug registered rau page no.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Khiav kom addons tuaj yeem txuas capability modules rau integrations.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Khiav kom integrations tuaj yeem sau npe lawv tus kheej.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Tso cai rau sau npe routes ntxiv.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Tso cai rau cov plugin developers ntxiv actions rau hauv txheej txheem khaws cia
+- [wu_site_created](./Actions/wu_site_created) — Khiav tom qab ib lub site raug tsim thawj zaug.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Tso cai rau cov plugin developers ntxiv hooks ntxiv, yog xav tau.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Khiav thaum nyob hauv template previewer context.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Ua kom enqueue scripts hook khiav.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Khiav tom qab ib object raug khaws cia rau hauv database.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Khiav tom qab ib object raug khaws cia rau hauv database.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Khiav tom qab ib object raug khaws cia rau hauv database.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Tso cai rau cov plugin developers ntxiv actions rau hauv txheej txheem qhib xauv.
+
+## Cov Filters {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Lim lub sijhawm ntev ntawm lub caij tas sijhawm rau authentication cookie.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Lim qhov authentication redirect scheme.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Rov ua WP Filter qub ntawm no, kom ruaj siab.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Tso cai rau cov plugin developers lim URL uas siv hauv previewer
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Lim seb auth cookie puas yuav tsum xa dhau HTTPS xwb.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Lim seb puas siv ib qho authentication redirect uas nyab xeeb.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Lim seb logged in cookie puas yuav tsum xa dhau HTTPS xwb.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Tso cai tiv thaiv tsis pub auth cookies raug xa tiag mus rau client.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Teeb redirect URL.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Ntxiv cov kauj ruam ntxiv los ntawm filters
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Tso cai rau cov plugin developers ntxiv variable ntxiv rau hauv render context thoob plaws.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Tso cai rau developers hla qhov kev kuaj no luv luv.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Lim cov fields rau add new domain modal.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Tso cai rau developers hloov setup fee line item.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Tso cai rau developers lim admin notices uas Ultimate Multisite ntxiv.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Lim tom qab tau hloov lawm.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Tam sim no, peb ua haujlwm nrog txhua hom.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Tso cai rau plugin developers hla cov kev txwv luv luv.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Lim seb signup fee puas yuav tsum raug siv los tsis siv.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Lim cov api arguments qub.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Tso cai rau plugin developers lim cov billing address fields.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Tso cai rau developers hla qhov output thiab teeb ib qho tshiab
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Tso cai rau developers hla unset current user code.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Lim tag nrho "recurring amount".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Lim tag nrho "initial amount".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Lim tag nrho "initial amount".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Tso cai rau plugin developers cuam tshuam nrog credit value.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Lim cov shared checkout-form base domains uas yuav tsum tsis txhob dhau los ua mapped-domain records.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Peb cov APIs rau ntxiv field templates tshiab hook rau ntawm no.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Peb cov APIs rau ntxiv field types tshiab hook rau ntawm no.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Lim cov error messages.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Tso cai rau developers hla kev kuaj yog tias ib field yog auto-submittable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Tso cai rau plugin developers ntxiv custom aliases hauv form validator.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Tso cai rau plugin developers lim cov validation rules.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Unset cov Params uas tsis xav tau.
+- [wu_contains_element](./Filters/wu_contains_element) — Tso cai rau developers hloov cov txiaj ntsig ntawm thawj qhov search.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Tso cai rau host providers nruab qhov constant txawv.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Rov qab muab lub npe zoo ntawm cov country administrative sub-divisions.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Rov qab muab daim ntawv teev cov nroog rau ib lub state hauv ib lub country.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Rov qab muab daim ntawv teev cov states rau lub country no.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Tso cai rau developers hloov tus cwj pwm default thiab teeb current customer txawv.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Tso cai rau developers hloov tus cwj pwm default thiab teeb current membership txawv.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Tso cai rau developers hloov tus cwj pwm default thiab teeb current site txawv.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Tso cai rau developers hloov cov manage site URL parameters.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Tso cai rau plugin developers lim cov links.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Tso cai rau plugin developers ntxiv cov kev kuaj tshiab kom txhais tau cov txiaj ntsig.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Tej zaum peb yuav tau ntxiv blocks ntxiv tom qab.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Ntxiv filter dav dav kom cov developers thiaj txuas ntxiv tau parser no los daws builders lossis plugins ntxiv.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filter seb puas yuam siv cov cai password ntxiv.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filter customer username uas tsim tawm.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Tso cai rau plugin developers filter cov pre-sets ntawm ib checkout page.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Tso cai rau developers ntxiv form slugs tshiab kom hla dhau tus cwj pwm no.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Tso cai rau developers thiab add-ons ntxiv migration steps tshiab
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Saib ntxiv txog filter no hauv qab no, ntawm method tib yam no.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Tso cai rau developers xaiv seb hom posts twg yuav tsum raug tso saib.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Xa rov qab Lines, filter tau
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Tso cai rau developers hloov kho cov khub domain/path.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filter cov seem wizard rau kev teeb hosting integration.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filter cov fields ntawm ib form. Lub form raug txheeb xyuas los ntawm ID hauv lub npe filter.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filter hom products uas muaj billing cycles ywj pheej.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Tso cai rau plugin developers yuam ib lub xeev muab rau API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Tso cai rau plugin developers ntxiv kev xeem ntxiv rau development mode.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Tso cai rau plugin developers yuam ib lub xeev muab rau MCP adapter.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Vim yog kev ruaj ntseg, peb txwv tus naj npawb actions uas muaj rau hooking rau hauv. Filter no tso cai rau developers nthuav ntxiv
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Xyuas seb ib hom post uas muab los puas raug tso cai rau plan no Tso cai rau plugin developers filter tus nqi xa rov qab
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filter seb puas yuam siv kev txheeb xyuas IP address.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filter seb puas yuam siv kev txheeb xyuas user agent.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filter magic link URL uas tsim tawm.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filter seb magic links puas qhib siv.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filter redirect URL tom qab ua ib domain ua primary.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Tsim ib daim ntawv exclusion ntawm parameters uas tiv thaiv auto-redirect.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filter los override kev txiav txim siab inclusion ntawm MCP ability.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filter hnub tas sij hawm uas xam tau.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filter hnub tas sij hawm uas xam tau kom muab teem tom qab renewal.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Tso cai rau developers ntxiv update form slugs tshiab.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filter qhov ntev password tsawg kawg.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filter lub zog password tsawg kawg uas yuav tsum muaj (zxcvbn score).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Tso cai rau plugin developers, thiab peb tus kheej, ntxiv action links rau peb cov nplooj ntawv kho
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filter seb puas yuav tsum muaj cov tsiaj ntawv me hauv passwords.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filter seb puas yuav tsum muaj lej hauv passwords.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filter seb puas yuav tsum muaj cov cim tshwj xeeb hauv passwords.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filter seb puas yuav tsum muaj cov tsiaj ntawv loj hauv passwords.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Tso cai rau user hloov cov lus hais txog cov nyiaj them uas tseem tos.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filter hom products uas yuav tsum raug saib tias yog plans.
+- [wu_post_count](./Filters/wu_post_count) — Tso cai rau plugin developers hloov tag nrho tus suav
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Tso cai rau plugin developers hloov seb post status twg yuav tsum raug suav Los ntawm default, posts uas published thiab private raug suav
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filter cov ntaub ntawv object ua ntej nws raug khaws rau hauv database.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Tso cai rau developers filter settings ua ntej Ultimate Multisite khaws cia.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filter seb puas raug tso cai mus txuas ntxiv nrog request lossis tsis tau.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filter seb puas raug tso cai mus txuas ntxiv nrog request lossis tsis tau.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Lim seb puas raug tso cai mus txuas ntxiv nrog qhov kev thov los tsis raug.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Lim seb puas raug tso cai mus txuas ntxiv nrog qhov kev thov los tsis raug.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Lim seb puas raug tso cai mus txuas ntxiv nrog qhov kev thov los tsis raug.
+- [wu_return_url](./Filters/wu_return_url) — Tso cai rau developers hloov gateway return URL uas siv tom qab cov txheej txheem checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Tso cai rau plugin developers ntxiv ntau search models functions ntxiv.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Tso cai rau developers ntxiv cov kauj ruam setup wizard ntxiv.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Lim seb Ultimate Multisite puas yuav tsum tsim ib domain record rau ib lub site uas nyuam qhuav tsim tshiab.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Tso cai rau developers short-circuit kev redirect, tiv thaiv kom nws tsis tshwm sim.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Tso cai rau handler rewrite
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Lim cov bulk actions uas muaj rau cov sites.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Lim kom hloov tus nqi rau get pluginssites hauv network.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Qhib/kaw peev xwm cross-domain single-sign-on.
+- [wu_sso_url](./Filters/wu_sso_url) — Lim cov SSO URLs uas tsim tawm ua ntej lawv raug xa rov qab rau cross-domain customer actions.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Lim Stripe Subscription data. Yuav override tau success_url lossis cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Lim cov payment intent arguments.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Lim tus ID ntawm plan uas yuav kuaj. Yog qhov no muaj lawm, subscription tshiab yuav siv plan no.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Lim tus ID ntawm product uas yuav kuaj. Yog qhov no muaj lawm, subscription tshiab yuav siv product no.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Lim tus nqi idempotency_key uas xa nrog Stripe charge options.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Lim membership record uas cuam tshuam nrog webhook no.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Lim data meta ua ntej nws raug serialized kom khaws cia rau hauv database.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Lim object data ua ntej nws raug khaws cia rau hauv database.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Tso cai rau developers hloov upgrade to unlock URL
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Txiav txim seb puas yuav siv ib mapping
+- [wu_username_from_email](./Filters/wu_username_from_email) — Lim new customer username.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Tso cai rau developers hloov cov lus hais txog membership users limit
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Tso cai rau developers ntxiv folders ntxiv rau daim replaceable list.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Lim seb cov sub_commands twg qhib rau entity no.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Peb kuaj peb hom patterns thaum sim txheeb xyuas seb peb txhaj tau peb cov constants rau qhov twg:

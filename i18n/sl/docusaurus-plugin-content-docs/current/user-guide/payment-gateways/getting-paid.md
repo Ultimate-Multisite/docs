@@ -1,126 +1,126 @@
 ---
-title: Prejem novance
+title: Prejemanje plačil
 sidebar_position: 15
-_i18n_hash: 0f45bd2eb659d27199ac9f9752e1a8ae
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Plačilnost (v2)
+# Prejemanje plačil (v2) {#getting-paid-v2}
 
-_**POMEMBNO OPOMENILO: Ta članek se nanaša na Ultimate Multisite verzijo 2.x.**_
+_**POMEMBNO OBVESTILO: Ta članek se nanaša na Ultimate Multisite različico 2.x.**_
 
-Ultimate Multisite ima vgrajen sistem za članstva in plačevanje. Da bi naš sistem za plačevanje deloval, smo integrirali najpogostejše platne bramke, ki se uporabljajo v e-trgovini. Standardni platni bramki v Ultimate Multisite so _Stripe_, _PayPal_ in Ručno plačilo (Manual Payment). Lahko lahko uporablja tudi _WooCommerce_, _GoCardless_ in _Payfast_ za prejem plačil z namestitvijo njihovih odgovarjajočih dodatkov.
+Ultimate Multisite ima vgrajen sistem članstva in obračunavanja. Da bi naš sistem obračunavanja deloval, smo integrirali najpogostejše plačilne prehode, ki se uporabljajo v e-trgovini. Privzeti plačilni prehodi v Ultimate Multisite so _Stripe_ , _PayPal_ in ročno plačilo. Uporabite lahko tudi _WooCommerce_ , _GoCardless_ in _Payfast_ za prejemanje plačil z namestitvijo njihovih ustreznih dodatkov.
 
-## Osnovne nastavitve
+## Osnovne nastavitve {#basic-settings}
 
-Iskanje in konfiguriranje katerikoli od teh platnih bramk je mogoče v nastavitvah plačevanja Ultimate Multisite. Lahko to najdete, če grete na **Ultimate Multisite meni > Nastavitve > Plačilo (Payments).**
+Kateri koli od teh plačilnih prehodov lahko konfigurirate v nastavitvah plačil Ultimate Multisite. Najdete jih tako, da odprete **meni Ultimate Multisite > Nastavitve > Plačila.**
 
-![Stranica nastavitev plačil v Ultimate Multisite, ki prikazuje panel za plačila](/img/config/payments-settings-page.png)
+![Stran z nastavitvami plačil v Ultimate Multisite, ki prikazuje ploščo Plačila](/img/config/payments-settings-page.png)
 
-Pred temeljitvijo svoj platni bramka, se pozabite na osnovne nastavitve plačila, ki lahko konfigurirate:
+Preden nastavite svoj plačilni prehod, si oglejte osnovne nastavitve plačil, ki jih lahko konfigurirate:
 
-**Force auto-rene (Forci avtomatno obnovo):** To zagotavlja, da bo plačilo samodejno ponovljeno na koncu vsakega ciklusa plačevanja, odvisno od frekvence plačevanja, ki jo uporabnik je izbral.
+**Vsili samodejno podaljšanje:** To bo zagotovilo, da se bo plačilo samodejno ponovilo ob koncu vsakega obračunskega cikla, odvisno od pogostosti obračunavanja, ki jo je izbral uporabnik.
 
-<!-- Screenshot unavailable: Nastavitev preklopnika Force Auto-Renew na strani nastavitev plačila -->
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-Ultimate Multisite v verziji 2.13.0 preverja, ali aktivni bramka imajo ponovno uporabno podatke za obnovo pred shranjevanjem ponavljajočega seznama z vključeno avtomatno obnovo. Podatki za obnovo lahko predstavljajo naročilo na bramko, pogodbo o plačevanju, shranjen token skladišča (vault token) ali ekvivalentno podatke za ponovno uporabo metode plačanja. Če bramka opoazi, da ne obstaja uporabna podatkovni podatki, Ultimate Multisite shranjuje članstvo, vendar vklopi avtomatno obnovo in beleži stanje z manjkalimi podatki, tako da lahko administrator ali pot za podporo prosili stranko, da ponovno autorizira plačilo pred datumom obnove.
+Ultimate Multisite v2.13.0 pred shranjevanjem ponavljajočega se članstva z omogočenim samodejnim podaljševanjem preveri, ali ima aktivni prehod ponovno uporabno poverilnico za podaljšanje. Poverilnica za podaljšanje je lahko naročnina prehoda, dogovor o obračunavanju, shranjen vault token ali enakovredna ponovno uporabna plačilna metoda. Če prehod sporoči, da uporabna poverilnica ne obstaja, Ultimate Multisite shrani članstvo, vendar izklopi samodejno podaljševanje in zabeleži stanje manjkajoče poverilnice, da lahko skrbnik ali podporni postopek stranko pozove k ponovni avtorizaciji plačila pred datumom podaljšanja.
 
-To preprečuje, da se članstvo ne bo pojavilo kot avtomatsko obnovljeno, če je gateway lahko sprejme samo jednokratne plačbe. Dodatki za gateway morajo potrditi, da se ponavljajo plačila shranjujejo ponovno uporabno podatke (credential), zlasti ko gateway podpiranja tako jednokrotno zadrževanje kot tudi načine plačev s shranjenimi/predskupni plačbi.
+To prepreči, da bi članstvo delovalo, kot da se samodejno podaljšuje, kadar lahko prehod pobira samo enkratna plačila. Dodatki za prehode morajo potrditi, da ponavljajoče se blagajne shranijo ponovno uporabno poverilnico, zlasti kadar prehod podpira tako enkratni zajem plačila kot načine plačila z vault/subscription.
 
-**Določite dovoljenje za preizkušnje brez plačilne metode** **metoda:** Z enabledo te opcije ne bo vaš stranke morala dodati kakršne koli finančne podatke med proces registracije. To bo potrebno le enkrat, ko poteka preizkusni obdobje.
+**Dovoli preizkusna obdobja brez plačilne** **metode:** Ko je ta možnost omogočena, vaši stranki med registracijskim postopkom ne bo treba dodati nobenih finančnih podatkov. To bo zahtevano šele, ko preizkusno obdobje poteče.
 
 <!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Pošlji račun na potrditev plačila:** Ta vam daje možnost, ali želite po plačbi poslati račun. Opazite, da bodo uporabniki imeli dostop do svoje zgodovine plačil pod svojim dashboardom subsite. Ta opcija ni za Manual Gateway.
+**Pošlji račun ob potrditvi plačila:** To vam omogoča izbiro, ali želite po plačilu poslati račun ali ne. Upoštevajte, da bodo uporabniki imeli dostop do svoje zgodovine plačil v nadzorni plošči svojega podmesta. Ta možnost ne velja za ročni prehod.
 
 <!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-**Splošna shema številčevanja računov:** Tukaj lahko izberete bodisi referenčni kod plačila ali sekvencno številko. Če izberete, da boste uporabili referenčni kod plačila za svoje račune, ne morate nič konfigurirati. Če pa izberete sekvenco številk, boste morali konfigurirati **nasledno številko računa** (Ta številka bo uporabljena kot številka računa za naslednji generirani račun na sistemu. Se poveča za eno vsakrat, ko se ustvari novi račun. Lahko jo spremenite in shranite, da boste lahko resetirali sekvenco številk računa na določeno vrednost) ter **predlog številke računa**.
+**Shema številčenja računov:** Tukaj lahko izberete bodisi referenčno kodo plačila bodisi zaporedno shemo številčenja. Če se odločite za uporabo referenčne kode plačila za svoje račune, vam ni treba ničesar konfigurirati. Če se odločite za uporabo zaporedne sheme številčenja, boste morali konfigurirati **naslednjo številko računa** (ta številka bo uporabljena kot številka računa za naslednji račun, ustvarjen v sistemu. Vsakič, ko je ustvarjen nov račun, se poveča za ena. Lahko jo spremenite in shranite, da ponastavite zaporedno številko računa na določeno vrednost) in **predpono številke računa.**
 
 <!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-<!-- Screenshot unavailable: Prikaz številke računa in predskupca številke računa, ko je izbrana Sekvencijalna številka -->
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-## Kje najdete bramske (gateways):
+## Kje najti prehode: {#where-to-find-the-gateways}
 
-Možete nastavit bramske za plačilo na isto stran (**Ultimate Multisite > Settings > Payments**). Pravipoškodno pod **aktivnimi bramskimi plačilni sistemi** boste videli: _Stripe_, _Stripe_ Checkout, _PayPal_ in _Manual_.
+Plačilne prehode lahko nastavite na isti strani ( **Ultimate Multisite > Nastavitve > Plačila**). Tik pod **aktivnimi plačilnimi prehodi** boste lahko videli: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ in _Manual_.
 
-![Razdelek Aktivne bramske plačilne sisteme z seznamom Stripe, Stripe Checkout, PayPal in Manual](/img/config/payments-active-gateways.png)
+![Razdelek Aktivni plačilni prehodi s seznamom Stripe, Stripe Checkout, PayPal in Manual](/img/config/payments-active-gateways.png)
 
-Imamo posvečen članek za vsako bramsko plačilo, ki vam bo vodil skozi korake nastavitve, ki ga lahko najdete na povezavah spodaj.
+Za vsak plačilni prehod imamo namenski članek, ki vas bo vodil skozi korake nastavitve; najdete jih na spodnjih povezavah.
 
-Lahko vidite in uredite podatke o plačilu:
+Ogledate si in urejate lahko podrobnosti plačila:
 
-![Splošna vprašna interfejs plačila](/img/admin/payment-edit.png)
+![Vmesnik za urejanje plačila](/img/admin/payment-edit.png)
 
-Tukaj je celoten pregled strani za urejanje plačila:
+Tukaj je celoten pogled strani za urejanje plačila:
 
-![Splošna vprašna interfejs nastavitve bramskih sistemov plačil](/img/admin/payment-edit-full.png)
+![Celoten vmesnik za urejanje plačila](/img/admin/payment-edit-full.png)
 
-Tukaj je tudi celoten pregled nastavitve bramskih sistemov plačil:
+Tukaj je tudi celoten pogled nastavitev plačilnih prehodov:
 
-![Splošna stran nastavitve bramskih sistemov plačil](/img/config/settings-payments-gateways-full.png)
+![Celotna stran z nastavitvami plačilnih prehodov](/img/config/settings-payments-gateways-full.png)
 
-**Nastavitev Stripe bramske**
+**Nastavitev prehoda Stripe**
 
-**Nastavitev PayPal bramske**** **
+**Nastavitev prehoda PayPal**** **
 
-**Nastavitev ručnih plačil**
+**Nastavitev ročnih plačil**
 
-Zdaj, če želite uporabiti _WooCommerce_, _GoCardless_ ali _Payfast_ kot svoj bramski sistem za plačilo, boste morali **instalirati in konfigurirati njihove dodatke (add-ons)**.
+Če želite zdaj kot svoj plačilni prehod uporabiti _WooCommerce_ , _GoCardless_ ali _Payfast_ , boste morali **namestiti in konfigurirati njihove dodatke**.
 
-### Kako instalirati dodatek WooCommerce:
+### Kako namestiti dodatek WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
-Razumemo, da sta _Stripe_ in _PayPal_ v nekaterih državah ne obstojata, kar omejuje ali moti uporabnike Ultimate Multisite pri učinkovitem uporabi našega plugin. Zato smo ustvarili dodatek za integracijo _WooCommerce_, ki je zelo popularni e-commerce plugin. Razvijalci po svetu so ustvarili dodatke za integracijo različnih bramskih sistemov plačil z njim. Uporabljamo to, da razširimo bramske sisteme plačil, ki jih lahko uporabljate z sistemom računovodstva Ultimate Multisite.
+Razumemo, da _Stripe_ in _PayPal_ nista na voljo v nekaterih državah, kar omejuje ali ovira uporabnike Ultimate Multisite pri učinkoviti uporabi našega vtičnika. Zato smo ustvarili dodatek za integracijo _WooCommerce,_ ki je zelo priljubljen vtičnik za e-trgovino. Razvijalci po vsem svetu so ustvarili dodatke za integracijo različnih plačilnih prehodov z njim. To smo izkoristili za razširitev plačilnih prehodov, ki jih lahko uporabljate z obračunskim sistemom Ultimate Multisite.
 
-**POMEMBNO:** Integracija Ultimate Multisite: WooCommerce zahteva, da je WooCommerce aktiviran vsaj na vašem glavnem spletni strani.
+_**POMEMBNO:** Ultimate Multisite: WooCommerce Integration zahteva, da je WooCommerce aktiviran vsaj na vašem glavnem spletnem mestu._
 
-Preden se začnete, prosim, idite na stran za dodatke (add-ons). Lahko jo najdete, če grete do **Ultimate Multisite > Settings**. Treba vam biti vidna tabela z dodatki (**Add-ons**). Kliknite na **Check our Add-ons**.
+Najprej pojdite na stran z dodatki. Najdete jo tako, da odprete **Ultimate Multisite > Nastavitve**. Videti bi morali tabelo **Dodatki**. Kliknite **Preverite naše dodatke**.
 
-<!-- Screenshot unavailable: Tabela z dodatki v strani nastavitve Ultimate Multisite s povezavo Check our Add-ons -->
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-Po klikanju na **Check our Add-ons** boste preusmerjeni na stran za dodatke. Tukaj najdete vse Ultimate Multisite dodatke. Kliknite na dodatek **Ultimate Multisite: WooCommerce Integration**.
+Po kliku na **Preverite naše dodatke** boste preusmerjeni na stran z dodatki. Tukaj najdete vse dodatke Ultimate Multisite. Kliknite dodatek **Ultimate Multisite: WooCommerce Integration**.
 
-![Stran z dodatki, ki prikazuje Ultimate Multisite dodatke vključno z integracijo WooCommerce](/img/addons/addons-page.png)
+![Stran z dodatki s seznamom dodatkov Ultimate Multisite, vključno z WooCommerce Integration](/img/addons/addons-page.png)
 
-Odpre se pojavno okno s podrobnostmi dodatka. Samo kliknite na **Install Now** (Instaliraj zdaj).
+Odprlo se bo okno s podrobnostmi dodatka. Samo kliknite **Namesti zdaj**.
 
-<!-- Screenshot unavailable: Dialog s podrobnostmi dodatka Ultimate Multisite WooCommerce Integration z gumbom Install Now -->
+<!-- Posnetek zaslona ni na voljo: pogovorno okno s podrobnostmi dodatka Ultimate Multisite WooCommerce Integration z gumbom Namesti zdaj -->
 
-Po dokončanemu namestitvi boste preusmerjeni na stran za pluginove. Tukaj samo kliknite na **Network Activate** (Aktiviraj omrežje), in dodatek WooCommerce bo aktiviran na vašem omrežju.
+Ko je namestitev končana, boste preusmerjeni na stran z vtičniki. Tukaj samo kliknite **Omrežno aktiviraj** in dodatek WooCommerce bo aktiviran v vašem omrežju.
 
-<!-- Screenshot unavailable: Stran z pluginovi s povezavo Network Activate za dodatek integracije WooCommerce -->
+<!-- Posnetek zaslona ni na voljo: stran z vtičniki s povezavo Omrežno aktiviraj za dodatek WooCommerce Integration -->
 
-Po aktivaciji, če še vedno niste imeli vključene in aktivirane WooCommerce pluginove na svoji spletni strani, boste prejeli opomnik.
+Po aktivaciji boste prejeli opomnik, če na svojem spletnem mestu še vedno nimate nameščenega in aktiviranega vtičnika WooCommerce.
 
-<!-- Screenshot unavailable: Admin obvestilo, ki opominja administratorja za namestitev in aktivacijo WooCommerce pluginove -->
+<!-- Posnetek zaslona ni na voljo: skrbniško obvestilo, ki skrbnika opominja, naj namesti in aktivira vtičnik WooCommerce -->
 
-Za več informacij o dodatku integraciji WooCommerce, **kliknite tukaj**.
+Če želite prebrati več o dodatku WooCommerce Integration, **kliknite tukaj**.
 
-### Kako namestiti dodatek GoCardless:
+### Kako namestiti dodatek GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Postopek za instalacijo dodatka _GoCardless_ je praktično isti kot pri dodtku _WooCommerce_. Predvsem samo gre, da se na strani zadevnikov (add-ons page) izberete dodatek **Ultimate Multisite: GoCardless Gateway**.
+Koraki za namestitev dodatka _GoCardless_ so skoraj enaki kot pri dodatku _WooCommerce_. Pojdite na stran z dodatki in izberite dodatek **Ultimate Multisite: GoCardless Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite GoCardless Gateway add-on highlighted -->
+<!-- Posnetek zaslona ni na voljo: stran z dodatki z označenim dodatkom Ultimate Multisite GoCardless Gateway -->
 
-Ogled dodatka se odpre. Kliknite na **Install Now** (Instaliraj zdaj).
+Odprlo se bo okno dodatka. Kliknite **Namesti zdaj**.
 
-<!-- Screenshot unavailable: Ultimate Multisite GoCardless Gateway add-on details dialog with Install Now button -->
+<!-- Posnetek zaslona ni na voljo: pogovorno okno s podrobnostmi dodatka Ultimate Multisite GoCardless Gateway z gumbom Namesti zdaj -->
 
-Po dokončanju instalacije boste preusmerjeni na stran zadevnikov (plugins page). Tamo samo kliknite na **Network Activate** in dodatek _GoCardless_ bo aktiviran na vašeta omrežju.
+Ko je namestitev končana, boste preusmerjeni na stran z vtičniki. Tukaj samo kliknite **Omrežno aktiviraj** in dodatek _GoCardless_ bo aktiviran v vašem omrežju.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the GoCardless Gateway add-on -->
+<!-- Posnetek zaslona ni na voljo: stran z vtičniki s povezavo Omrežno aktiviraj za dodatek GoCardless Gateway -->
 
-Za učenje kako začeti z _GoCardless_ gateway, **brskajte to članek**.
+Če želite izvedeti, kako začeti z vmesnikom _GoCardless_, **preberite ta članek**.
 
-### Kako instalirati dodatek Payfast:
+### Kako namestiti dodatek Payfast: {#how-to-install-the-payfast-add-on}
 
-Idi na stran zadevnikov (add-ons page) in izberite dodatek **Ultimate Multisite: Payfast Gateway**.
+Pojdite na stran z dodatki in izberite dodatek **Ultimate Multisite: Payfast Gateway**.
 
-<!-- Screenshot unavailable: Add-ons page with the Ultimate Multisite Payfast Gateway add-on highlighted -->
+<!-- Posnetek zaslona ni na voljo: stran z dodatki z označenim dodatkom Ultimate Multisite Payfast Gateway -->
 
-Ogled dodatka se odpre. Kliknite na **Install Now** (Instaliraj zdaj).
+Odprlo se bo okno dodatka. Kliknite **Namesti zdaj.**
 
-<!-- Screenshot unavailable: Ultimate Multisite Payfast Gateway add-on details dialog with Install Now button -->
+<!-- Posnetek zaslona ni na voljo: pogovorno okno s podrobnostmi dodatka Ultimate Multisite Payfast Gateway z gumbom Namesti zdaj -->
 
-Po dokončanju instalacije boste preusmerjeni na stran zadevnikov (plugins page). Tamo samo kliknite na **Network Activate** in dodatek _Payfast_ bo aktiviran na vašeta omrežju.
+Ko je namestitev končana, boste preusmerjeni na stran z vtičniki. Tukaj samo kliknite **Omrežno aktiviraj** in dodatek _Payfast_ bo aktiviran v vašem omrežju.
 
-<!-- Screenshot unavailable: Plugins page with the Network Activate link for the Payfast Gateway add-on -->
+<!-- Posnetek zaslona ni na voljo: stran z vtičniki s povezavo Omrežno aktiviraj za dodatek Payfast Gateway -->

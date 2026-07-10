@@ -4,7 +4,7 @@ title: フィルタ - wu_minimum_password_strength
 sidebar_label: wu_minimum_password_strength
 _i18n_hash: 13b3e1f6763c2ac8e8393676f5a46039
 ---
-# フィルタ: wu_minimum_password_strength
+# フィルタ: wu_minimum_password_strength {#filter-wuminimumpasswordstrength}
 
 Filter the minimum password strength required (zxcvbn score).  
 必要な最小パスワード強度をフィルタします (zxcvbn スコア)。
@@ -20,18 +20,18 @@ Strength levels:
 - 3: 中程度  
 - 4: 強い (デフォルト)
 
-## Parameters
+## Parameters {#parameters}
 
 | 名前 | タイプ | 説明 |
 |------|------|-------------|
 | $min_strength | `int` | 必要な最小強度レベル。 |
 | $strength_setting | `string` | 管理者設定値 (medium, strong, super_strong)。 |
 
-### 導入
+### 導入 {#since}
 
 - 2.4.0
 
-### ソース
+### ソース {#source}
 
 Defined in [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L516) at line 516  
 定義は [`inc/class-scripts.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-scripts.php#L516) の 516 行目にあります

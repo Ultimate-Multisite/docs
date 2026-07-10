@@ -3,9 +3,9 @@ title: Julkaisunäytöt
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Julkaisun tiedot
+# Julkaisun tiedot {#release-notes}
 
-## Versio 2.13.0 — Julkaistu 2026-06-05
+## Versio 2.13.0 — Julkaistu 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 Uusi: Lisätty suvereenisten tenantien tuki asiakastilille, kassalle, laskutukselle, sivustoille, laskuille, mallipohjojen vaihtamiselle ja verkkotunnusten kartoituksille, jotta tenantin verkostot voivat ohjata asiakkaita takaisin pääsivustolle hallittaviin toimintoihin.
 Uusi: Lisätty uusien tilausten vahvistus tarkistukset toistuvien jäsenyyksien yhteydessä, jolloin gatewayt voivat poistaa automaattisen uusiutumisen pois käytöstä, jos tallennettua laskutusasiaa, tilausta tai vault-tokenia puuttuu.
@@ -19,7 +19,7 @@ Korjaus: Levehdetyt sähköpostit pitävät nyt vastaanottajat yksityisinä sama
 Korjaus: Jäsenyyksien uusiutumiset, vanhentumisen näyttäminen ja maksutonnistukset välttävät nyt välittömän vanhentumisen, kaatumisen tai pakollisten maksujen jättämisen huomiotta.
 Parannettu: WordPress-yhteensopivuus testattu aina versioon 7.0 asti, tuotantoyhteiset Vue-asetteet rakennetaan uudelleen npm-lähteistä ja Cypressin loppupäivän kattavuus suorittaa nyt enemmän kassavirtoja, asennuksia, SSO:ta ja portaleja.
 
-## Versio 2.12.0 — Julkaistu 2026-05-15
+## Versio 2.12.0 — Julkaistu 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Uusi: Lisätty Hostinger (hPanel) tuetuksi isäntänä ja verkkotunnusten kartoitustuen kanssa
 - Uusi: Site Exporter käsittelee nyt verkkoimportin paketteja, mikä helpottaa verkkohallintojen laajuista sivuston palauttamista
@@ -30,7 +30,7 @@ Parannettu: WordPress-yhteensopivuus testattu aina versioon 7.0 asti, tuotantoyh
 - Korjaukset: Asetusoppaan kuvavalinta päivittää nyt oikein alla olevaa datamallia
 - Korjaukset: Site Exporter CLI säilyttää nyt oikean oletusverkon sivuston valinnan
 
-## Versio 2.11.0 — Julkaistu 2026-05-11
+## Versio 2.11.0 — Julkaistu 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Uusi: Site exportit pakkaavat nyt itsensä käynnistyvän `index.php`-tiedoston, jotta ZIP-tiedosto voidaan asentaa uuteen isäntään ilman erillistä plugin-asennusta
 - Uusi: Verkkoexportilla ylläpitäjät voivat exportoida kaikki alisivustot yhdeksi arkistoksi Site Export -hallintapaneelista
@@ -38,7 +38,7 @@ Parannettu: WordPress-yhteensopivuus testattu aina versioon 7.0 asti, tuotantoyh
 - Uusi: Kassakortin muokkauslomake varoittaa, jos tuotetta lisätään ilman määritettyä pakollista kenttää
 - Uusi: Import/Export -asetustabi selittää nyt selkeämmin sen laajuuden ja linkittää suoraan Site Export -työkaluun
 
-## Versio 2.10.0 — Julkaistu 2026-05-05
+## Versio 2.10.0 — Julkaistu 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 Uusi: PayPalin ohjeistettu asennuswizard manuaalisten tunnusten syöttämiseen OAuth-tunnisteella sujuvan porttikonfiguraation varmistamiseksi.
 Uusi: Mallin vaihtopaneeli suunniteltu uudelleen nykyisellä mallikortilla, pysyvällä ruudukolla ja **Nolla nykyinen malli** -painikkeella.
@@ -51,7 +51,7 @@ Korjaus: Nykyiset lajit ladataan ennen init hookia estämään ajoongelmia.
 Korjaus: Suodatettu SSO-polku noudatetaan kaikissa kirjautumisvirroissa.
 Korjaus: Tyhjän sivuston tunnistetiedot säilytetään tallennuksessa.
 
-## Versio 2.9.0 — Julkaistu 30.04.2026
+## Versio 2.9.0 — Julkaistu 30.04.2026 {#version-290--released-on-2026-04-30}
 
 Uusi: Yksittäisen sivuston vienti ja tuonti lisätty **Työkalut > Vienti & tuonti** -valikossa.
 Korjaus: Vientit ZIP-tiedostot tarjotaan nyt tunnistautuneen latauskohteen kautta.
@@ -65,7 +65,7 @@ Korjaus: Tuontikronin aikataulun kiertävä riippuvuus ratkaistu.
 Korjaus: Tour ID:t normalisoidaan alaviivuihin käyttäjäasetusten avaimissa.
 Parannettu: ZipArchive käytetään nyt Alchemy/Zippy:n sijaan paremman yhteensopivuuden vuoksi.
 
-## Versio 2.8.0 — Julkaistu 29.04.2026
+## Versio 2.8.0 — Julkaistu 29.04.2026 {#version-280--released-on-2026-04-29}
 
 Uusi: Jumper-kytkin lisätty Asetukset (Other Options) -käyttöliittymään.
 Uusi: Tilakolonne lisätty kassaportaalin lomake-taulukkoon.

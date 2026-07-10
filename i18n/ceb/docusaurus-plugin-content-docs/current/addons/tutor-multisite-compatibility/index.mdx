@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Kini usa ka WordPress plugin nga naghatag og mga compatibility fixes para sa Tutor LMS sa multisite environments.
 
-## Deskripsyon
+## Deskripsyon {#description}
 
 Kining plugin naghatag og importante nga mga compatibility fixes para sa pagpadagan sa Tutor LMS sa WordPress multisite networks. Kini nag-handle sa user enrollment, instructor management, course limitations, ug uban pang functionality nga espesipiko sa multisite.
 
-## Mga Feature
+## Mga Feature {#features}
 
 - **Database Table Management**: Awtomot nga nakatukoy ug naghimo og mga nawong (tables) sa Tutor LMS nga wala makita tungod sa multisite foreign key constraints
 - **Multisite User Enrollment**: Custom AJAX handlers para sa pagdumala sa user enrollment sa tibuok network sites
@@ -24,7 +24,7 @@ Kining plugin naghatag og importante nga mga compatibility fixes para sa pagpada
 - **Custom Admin Views**: Instructor list ug management interface nga aware sa multisite
 - **Admin Tools**: Interface sa database management para sa network ug site administrators
 
-## Mga Kinahanglanon
+## Mga Kinahanglanon {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Kining plugin naghatag og importante nga mga compatibility fixes para sa pagpada
 - WordPress Multisite installation
 - Ultimate Multisite plugin (para sa functionality sa course limitations)
 
-## Pag-install
+## Pag-install {#installation}
 
 1. I-upload ang mga files sa plugin sa `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Siguraduhon nga na-install ug na-activate ang Tutor LMS
 3. I-activate ang plugin pinaagi sa 'Plugins' menu sa WordPress
 4. Ang plugin awtomatikong mag-integrate uban sa Tutor LMS
 
-## File Structure
+## File Structure {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Functionality Gidala gikan sa MU Plugin
+## Functionality Gidala gikan sa MU Plugin {#functionality-moved-from-mu-plugin}
 
 Kini nga plugin adunay mga function nga kaniadto naa sa `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Kini nga plugin adunay mga function nga kaniadto naa sa `wp-content/mu-plugins/d
 - Pag-handle sa enrollment sa Multisite user
 - Pagpakita sa Course product ID
 
-## Pamamahala sa Database (Database Management)
+## Pamamahala sa Database (Database Management) {#database-management}
 
-### Ang Problema
+### Ang Problema {#the-problem}
 
 Sa mga WordPress multisite environment, dili magmalampuson ang paghimo og mga table sa Tutor LMS kung naa kini mga foreign key constraints ngadto sa users table. Kini mahitabo tungod kay:
 
@@ -81,7 +81,7 @@ Sa mga WordPress multisite environment, dili magmalampuson ang paghimo og mga ta
 - Ang foreign keys nagrefer sa `wp_2_users` (nga wala gyud anaa)
 - Ang actual nga users table mao ang `wp_users` (gisagol sa tibuok network)
 
-### Ang Solusyon
+### Ang Solusyon {#the-solution}
 
 Kini nga plugin awtomatikong:
 
@@ -92,13 +92,13 @@ Kini nga plugin awtomatikong:
    - Bag-ong site creation sa network
    - Manual checking sa mga table pinaagi sa admin interface
 
-### Mga Apektadong Tables
+### Mga Apektadong Tables {#affected-tables}
 
 - `tutor_coupon_usages` - Naglangkob sa foreign key ngadto sa users table
 - `tutor_carts` - Naglangkob sa foreign key ngadto sa users table
 - `tutor_notification_preferences` - TutorPro table nga adunay foreign key ngadto sa users table
 
-### Admin Interface
+### Admin Interface {#admin-interface}
 
 Mao ni ang mga database management tools:
 
@@ -111,6 +111,6 @@ Ang interface nagtugot kanimo sa paghimo og mga butang sama sa:
 - Pagsusi sa database configuration
 - Pagtan-aw sa detalyado nga impormasyon sa status
 
-## Suporta (Support)
+## Suporta (Support) {#support}
 
 Kini nga plugin gidesinyo gyud para sa KursoPro platform. Para sa teknikal nga suporta, kontaka ang development team.

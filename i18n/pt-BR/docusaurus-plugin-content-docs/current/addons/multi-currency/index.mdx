@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
 
-# Multi-Currency
+# Multi-Currency {#multi-currency}
 
 O Ultimate Multisite: Multi-Currency permite que sua rede aceite pagamentos em múltiplas moedas. Ele converte automaticamente os preços usando taxas de câmbio em tempo real ou manuais, permite que você defina preços exatos por produto para qualquer moeda e detecta a moeda preferida de cada visitante via geolocalização — tudo gerenciado a partir de um único painel de administração.
 
-## Principais Recursos
+## Principais Recursos {#key-features}
 
 - **Conversão automática de taxas de câmbio** — os preços são convertidos da sua moeda base usando taxas obtidas do provedor escolhido
 - **Substituições de preços por produto** — defina preços exatos específicos para moedas em qualquer produto para ignorar a conversão automática
@@ -20,22 +20,22 @@ O Ultimate Multisite: Multi-Currency permite que sua rede aceite pagamentos em m
 - **Detecção de moeda baseada em geolocalização** — pré-seleciona automaticamente a moeda que corresponde ao país do visitante
 - **Painel de administração** — gerencie moedas ativas, taxas de câmbio e configurações de provedores em um só lugar
 
-## Requisitos
+## Requisitos {#requirements}
 
 - Ultimate Multisite 2.0.0 ou superior
 - Instalação WordPress Multisite
 - PHP 7.4 ou superior
 
-## Instalação
+## Instalação {#installation}
 
 1. Faça o upload dos arquivos do plugin para `/wp-content/plugins/ultimate-multisite-multi-currency`
 2. Ative o plugin na tela **Plugins** do WordPress (Ativação de Rede)
 3. Navegue até **Ultimate Multisite → Multi-Currency** para abrir o painel de administração
 4. Adicione as moedas que você deseja aceitar e configure seu provedor de taxa de câmbio
 
-## Configuração
+## Configuração {#configuration}
 
-### Painel de Administração
+### Painel de Administração {#admin-dashboard}
 
 O painel de administração Multi-Currency (**Ultimate Multisite → Multi-Currency**) é o local central para:
 
@@ -44,7 +44,7 @@ O painel de administração Multi-Currency (**Ultimate Multisite → Multi-Curre
 - Revisar as taxas atuais para todas as moedas ativas
 - Definir taxas manuais quando os provedores automáticos não forem adequados
 
-### Provedores de Taxas de Câmbio
+### Provedores de Taxas de Câmbio {#exchange-rate-providers}
 
 | Provider | Description |
 |---|---|
@@ -55,7 +55,7 @@ O painel de administração Multi-Currency (**Ultimate Multisite → Multi-Curre
 
 Selecione seu provedor em **Ultimate Multisite → Multi-Currency → Settings → Exchange Rate Provider**. As taxas podem ser atualizadas manualmente a qualquer momento ou agendadas para atualização automática.
 
-### Substituições de Preços por Produto
+### Substituições de Preços por Produto {#per-product-pricing-overrides}
 
 Quando a conversão automática não é precisa o suficiente, você pode definir um preço exato para uma moeda específica em qualquer produto:
 
@@ -66,7 +66,7 @@ Quando a conversão automática não é precisa o suficiente, você pode definir
 
 Produtos sem substituição usam o preço convertido da sua moeda base.
 
-### Campo Seletor de Moeda no Cadastro
+### Campo Seletor de Moeda no Cadastro {#currency-selector-signup-field}
 
 O campo seletor de moeda pode ser adicionado ao seu fluxo de cadastro/checkout para que os clientes escolham sua moeda preferida no momento do registro:
 
@@ -76,7 +76,7 @@ O campo seletor de moeda pode ser adicionado ao seu fluxo de cadastro/checkout p
 
 A moeda selecionada é armazenada com a assinatura e usada para todas as cobranças subsequentes.
 
-### Detecção de Moeda Baseada em Geolocalização
+### Detecção de Moeda Baseada em Geolocalização {#geolocation-based-currency-detection}
 
 Quando a detecção de geolocalização está ativada, o addon mapeia o país do visitante para uma moeda e a pré-seleciona no campo seletor de moeda. Para ativar:
 
@@ -86,27 +86,27 @@ Quando a detecção de geolocalização está ativada, o addon mapeia o país do
 
 Se não houver mapeamento para o país do visitante, a moeda base da rede é usada como fallback.
 
-## Perguntas Frequentes
+## Perguntas Frequentes {#frequently-asked-questions}
 
-### O que acontece se um provedor de taxa de câmbio estiver indisponível?
+### O que acontece se um provedor de taxa de câmbio estiver indisponível? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
 
 O addon volta a usar as últimas taxas obtidas com sucesso. Se nenhuma taxa já tiver sido obtida, ele volta a usar as taxas manuais que você configurou. É recomendado configurar taxas manuais como uma rede de segurança.
 
-### Posso usar provedores diferentes para moedas diferentes?
+### Posso usar provedores diferentes para moedas diferentes? {#can-i-use-different-providers-for-different-currencies}
 
 Não — um provedor está ativo por vez para todas as moedas. Use **Manual** se você precisar de controle total sobre taxas individuais.
 
-### A geolocalização requer um plugin separado?
+### A geolocalização requer um plugin separado? {#does-geolocation-require-a-separate-plugin}
 
 Não é necessário nenhum plugin de geolocalização externo. O addon usa a detecção de IP para país embutida do WordPress. Para maior precisão, um serviço de geolocalização dedicado pode ser integrado via hooks de filtro fornecidos.
 
-### As substituições de preços por produto são aplicadas antes ou depois do imposto?
+### As substituições de preços por produto são aplicadas antes ou depois do imposto? {#are-per-product-overrides-applied-before-or-after-tax}
 
 As substituições de preços por produto definem o preço pré-imposto na moeda de destino. O imposto é calculado sobre o preço de substituição usando sua configuração de imposto existente.
 
-## Changelog
+## Changelog {#changelog}
 
-### Versão 1.0.0 — Lançado em 2026-04-02
+### Versão 1.0.0 — Lançado em 2026-04-02 {#version-100--released-on-2026-04-02}
 
 - Novo: Suporte a múltiplas moedas com conversão automática de taxas de câmbio
 - Novo: Substituições de preços por produto para preços exatos específicos de moeda

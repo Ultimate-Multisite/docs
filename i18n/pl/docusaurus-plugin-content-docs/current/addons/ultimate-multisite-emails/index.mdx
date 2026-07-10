@@ -1,114 +1,197 @@
 ---
-title: Emaile
+title: E-maile
 sidebar_position: 1
-_i18n_hash: 9ca607f2818aed44e29f982f2d425863
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-emails" name="Emails" />
 
-# E-maile
+# Emails {#emails}
 
-Dodatek Ultimate Multisite: E-maile pozwala właścicielom sieci zarządzać kontami e-mail klientów wraz z zarządzaniem stronami i członkostwami. W wersji 1.1.0 dodano zarządzanie kontami e-mail widocznymi dla klientów, jednokrotne logowanie do webmaila (SSO), wsparcie dla przekierowań CyberPanel oraz ulepszenia provisioningu w trakcie realizacji zamówienia.
+Dodatek Ultimate Multisite: Emails pozwala właścicielom sieci udostępniać i zarządzać kontami e-mail klientów wraz z witrynami i członkostwami. Wersja 1.1.0 dodaje zarządzanie kontami e-mail po stronie klienta, jednokrotne logowanie do webmaila, obsługę forwarderów CyberPanel oraz ulepszenia udostępniania podczas checkout.
 
-## Kluczowe funkcje
+## Kluczowe funkcje {#key-features}
 
-* **Widget konta e-mail klienta**: Klienci mogą tworzyć i zarządzać kontami e-mail ze swojej strony konta, bez konieczności otwierania zgłoszenia w obsłudze.
-* **SSO do webmaila i magiczne linki**: Klienci mogą uzyskać dostęp do webmaila bezpośrednio ze strony konta, z uwierzytelnianiem jednym kliknięciem, jeśli dostawca to wspiera.
-* **Zmiana hasła**: Klienci i administratorzy mogą aktualizować hasła do skrzynek pocztowych z widgetu zarządzania e-mailami.
-* **Provisioning przy realizacji zamówienia**: Tworzenie kont e-mail klientów może odbywać się podczas realizacji zamówienia, dzięki czemu skrzynka pocztowa jest gotowa po zakończeniu procesu zakupu.
-* **Przekierowania CyberPanel**: Sieci oparte na CyberPanel mogą tworzyć i zarządzać przekierowaniami e-mail jako część procesu usług e-mail.
-* **Ustawienia świadome dostawcy**: Strona ustawień filtruje dostawców, pokazując tylko aktywne i skonfigurowane integracje, dzięki czemu administrator widzi tylko użyteczne opcje.
+* **Widżet konta e-mail klienta**: Klienci mogą tworzyć skrzynki pocztowe i zarządzać nimi ze swojej strony konta po uzyskaniu aktywnego członkostwa e-mail.
+* **SSO webmaila i magiczne linki**: Klienci mogą otworzyć webmail bezpośrednio ze strony konta z uwierzytelnianiem jednym kliknięciem, gdy provider to obsługuje.
+* **Zmiany haseł**: Klienci i administratorzy mogą aktualizować hasła skrzynek pocztowych z widżetu zarządzania e-mailem.
+* **Udostępnianie uprawnień podczas checkout**: Checkout tworzy członkostwo e-mail, łączy je z domeną witryny klienta i udostępnia narzędzia skrzynek pocztowych na stronie konta.
+* **Forwardery CyberPanel**: Sieci oparte na CyberPanel mogą tworzyć forwardery e-mail i zarządzać nimi jako częścią przepływu usługi e-mail.
+* **Ustawienia świadome providera**: Strona ustawień filtruje providerów do aktywnych, skonfigurowanych integracji, aby administratorzy widzieli tylko użyteczne opcje.
 
-## Wymagania
+## Wymagania {#requirements}
 
 * Ultimate Multisite 2.0.0 lub nowszy
 * Instalacja WordPress Multisite
-* Co najmniej jedna skonfigurowana integracja dostawcy e-mail
-* Poświadczenia API dostawcy z uprawnieniami do tworzenia skrzynek pocztowych, zmiany haseł i wydawania linków dostępu do webmaila, jeśli jest to wspierane
+* Co najmniej jedna skonfigurowana integracja providera e-mail
+* Dane uwierzytelniające API providera z uprawnieniami do tworzenia skrzynek pocztowych, zmiany haseł i wystawiania linków dostępu do webmaila tam, gdzie jest to obsługiwane
 
-## Instalacja
+## Instalacja {#installation}
 
 1. Prześlij pliki pluginu do `/wp-content/plugins/ultimate-multisite-emails`.
-2. Aktywuj dodatek na poziomie sieci w panelu administracyjnym sieci WordPress.
-3. Przejdź do **Ultimate Multisite** > **Ustawienia** i otwórz ustawienia e-mail.
-4. Włącz integracje dostawców e-mail, których mają używać klienci.
-5. Zapisz ustawienia, a następnie przetestuj tworzenie konta z pomocą klienta nieprodukcyjnego lub na stronie stagingowej.
+2. Włącz dodatek w sieci z poziomu **Plugins** w administracji sieci WordPress.
+3. Przejdź do **Ultimate Multisite** > **Settings** i otwórz ustawienia e-mail dodatku.
+4. Włącz integracje providerów e-mail, których klienci mają używać.
+5. Zapisz ustawienia, a następnie przetestuj tworzenie konta z klientem nieprodukcyjnym lub witryną stagingową.
 
-## Zarządzanie e-mailami na koncie klienta
+## Jak działa przepływ sprzedaży e-mail {#how-the-email-seller-flow-works}
 
-Wersja 1.1.0 dodaje widget zarządzania e-mailami na stronę konta klienta. Użyj go, gdy klienci mają samodzielnie zarządzać tworzeniem i utrzymaniem skrzynek pocztowych dla swoich stron.
+Sprzedaż e-mail ma dwie oddzielne warstwy:
+
+1. **Uprawnienie** — produkt/członkostwo e-mail Ultimate Multisite, które określa, że klient może używać e-maila dla określonej domeny witryny, providera, limitu miejsca i limitu kont.
+2. **Tworzenie skrzynki pocztowej** — właściwa skrzynka pocztowa u providera, taka jak `info@example.com`, tworzona, gdy klient lub administrator sieci wybiera część lokalną i hasło.
+
+Podczas checkout dodatek tworzy lub aktywuje **członkostwo e-mail** i zapisuje domenę witryny klienta oraz providera w tym członkostwie. Nie zgaduje nazwy skrzynki pocztowej ani hasła. Po zakończeniu zakupu i gdy istnieje kontekst witryny/domeny, klient może otworzyć stronę konta i utworzyć wybrane nazwy skrzynek pocztowych.
+
+Oznacza to, że typowy przepływ klienta wygląda następująco:
+
+1. Klient kupuje plan witryny i dodaje produkt e-mail podczas checkout.
+2. Ultimate Multisite tworzy członkostwo witryny oraz dodatkowe członkostwo e-mail.
+3. Dodatek Emails łączy członkostwo e-mail z domeną witryny klienta i providerem.
+4. Klient otwiera **Account** w swoim dashboardzie.
+5. Panel **Konta e-mail** pojawia się dla tego aktywnego członkostwa e-mail.
+6. Klient klika **Utwórz konto**, wpisuje część lokalną, taką jak `info`, ustawia hasło, a dodatek tworzy `info@their-domain.com` u skonfigurowanego providera.
+
+## Skonfiguruj produkt e-mail {#configure-an-email-product}
+
+Utwórz jeden produkt e-mail dla każdego pakietu e-mail, który chcesz sprzedawać lub rozdawać. Jeśli dopiero zaczynasz konfigurację produktu, zacznij od [Tworzenie pierwszego produktu subskrypcyjnego](../../user-guide/configuration/creating-your-first-subscription-product), a następnie wróć tutaj po ustawienia specyficzne dla e-maila.
+
+1. Przejdź do **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Ustaw **Product Type** na **Email**.
+3. Skonfiguruj ceny. Użyj płatnej ceny cyklicznej dla sprzedawanego planu albo ustaw produkt jako bezpłatny/z ceną zerową, jeśli ma to być gratisowy plan e-mail.
+4. Otwórz sekcję **Email Settings**.
+5. Wybierz skonfigurowanego **Email Provider**.
+6. Ustaw **Number of Accounts**, **Storage Quota (MB)**, limity aliasów, forwardery i autorespondery według potrzeb.
+7. Zapisz produkt.
+
+W selektorze providera pojawiają się tylko providerzy włączeni i w pełni skonfigurowani na stronie **Integrations**. Jeśli selektor jest pusty, najpierw skonfiguruj i przetestuj providera.
+
+## Dodaj e-mail do checkout {#add-email-to-checkout}
+
+Produkty e-mail są zwykle oferowane jako dodatki do planu witryny. Zobacz [Formularze checkout](../../user-guide/configuration/checkout-forms), aby poznać ogólny przepływ pracy edytora checkout.
+
+1. Utwórz lub edytuj plan witryny, który klienci kupują jako pierwszy.
+2. Dodaj produkt e-mail jako dostępny dodatek/order bump dla tego przepływu checkout.
+3. Potwierdź, że formularz checkout nadal zawiera normalne wymagane pola witryny, zwłaszcza pole URL/domeny witryny.
+4. Uruchom testowy checkout z klientem stagingowym.
+5. Po checkout otwórz [stronę konta](../../user-guide/client-management/account-page) klienta i potwierdź, że pojawia się panel **Konta e-mail**.
+
+Domena e-mail jest pobierana z domeny witryny klienta. Klienci nie wpisują domeny e-mail w kroku produktu e-mail.
+
+## Zarządzanie e-mailem na koncie klienta {#customer-account-email-management}
+
+Wersja 1.1.0 dodaje widżet zarządzania e-mailem do strony konta klienta. Używaj go, gdy klienci powinni samodzielnie tworzyć i utrzymywać skrzynki pocztowe dla własnych witryn.
 
 Ze strony konta klienci mogą:
 
-1. Wyświetlić konta e-mail powiązane z ich obecnym członkostwem lub stroną.
-2. Utworzyć nową skrzynkę pocztową, jeśli ich plan pozwala na dodatkowe konta.
+1. Wyświetlać konta e-mail połączone z ich bieżącym członkostwem e-mail/domeną witryny.
+2. Utworzyć nową skrzynkę pocztową, gdy ich produkt e-mail pozwala na dodatkowe konta.
 3. Zmienić hasło istniejącej skrzynki pocztowej.
-4. Otworzyć obsługiwanych dostawców webmaila za pomocą SSO lub logowania magicznym linkiem.
+4. Otwierać obsługiwanych providerów webmaila przez SSO lub logowanie magicznym linkiem.
 
-Widget wykorzystuje system konta Ultimate Multisite, więc działania są ograniczone do kontekstu konta, które klient przegląda. Zapobiega to zarządzaniu przez klientów kontami e-mail należącymi do innego członkostwa lub strony.
+Widżet używa systemu bieżących elementów strony konta Ultimate Multisite, więc akcje są ograniczone do kontekstu konta, który klient przegląda. Zapobiega to zarządzaniu przez klientów kontami e-mail należącymi do innego członkostwa lub witryny.
 
-## SSO do webmaila i logowanie magicznym linkiem
+Jeśli klient nie widzi panelu email, sprawdź, czy ma **aktywne członkostwo produktu Email**, czy członkostwo zostało powiązane z domeną witryny oraz czy produkt ma skonfigurowanego dostawcę.
 
-SSO do webmaila daje klientom bezpośrednią akcję **Otwórz webmail** ze strony konta. Gdy jest to wspierane przez aktywny dostawca, dodatek żąda krótkotrwałego URL dostępu i przekierowuje klienta do webmaila, bez konieczności podawania poświadczeń skrzynki pocztowej.
+## Przyznawanie klientowi darmowego planu Email {#giving-a-customer-a-free-email-plan}
 
-Zachowanie dostawców może się różnić:
+Aby udostępnić klientowi email bez pobierania opłaty, najpierw przyznaj **uprawnienie email**, a następnie utwórz skrzynkę pocztową albo pozwól klientowi ją utworzyć.
 
-* Dostawcy z natywnymi API SSO mogą utworzyć bezpośrednią, uwierzytelnioną sesję webmaila.
-* Dostawcy z obsługą magicznych linków mogą generować link logowania o ograniczonym czasie.
-* Dostawcy bez obsługi SSO lub magicznych linków powinni nadal wyświetlać szczegóły skrzynki pocztowej i akcje zarządzania hasłem, ale bez przycisku webmaila jednym kliknięciem.
+Zalecane opcje:
 
-Włącz dostęp do webmaila tylko dla dostawców, dla których skonfigurowałeś wymagane poświadczenia API. Jeśli akcja jest niedostępna dla danego dostawcy, najpierw upewnij się, że dostawca jest aktywny, skonfigurowany i obsługuje linki logowania do webmaila.
+* **Utwórz darmowy produkt email**: ustaw cenę produktu email jako darmową/zerową, a następnie dodaj aktywne członkostwo dla tego klienta z **Ultimate Multisite > Memberships > Add Membership**. Wybierz produkt email i klienta. Darmowe członkostwa są dożywotnie, dopóki nie zostaną zmienione lub anulowane. Jeśli członkostwo email ma podążać za istniejącą witryną, upewnij się, że jest powiązane z kontekstem tej witryny/domeny.
+* **Użyj 100% rabatu lub darmowego linku checkout**: pozwól klientowi przejść przez checkout, aby Ultimate Multisite automatycznie utworzył członkostwo email i rekord płatności.
+* **Utwórz skrzynkę pocztową jako administrator**: przejdź do **Ultimate Multisite > Email Accounts > Add Email Account**, aby utworzyć konkretną skrzynkę pocztową u dostawcy dla klienta. Jest to przydatne dla wsparcia, ale nie zastępuje członkostwa produktu email, które zasila narzędzia samoobsługowe na stronie konta klienta.
 
-## Provisioning przy realizacji zamówienia
+Jeśli chcesz, aby klient samodzielnie zarządzał skrzynką pocztową ze strony konta, upewnij się, że ma aktywne członkostwo email dla domeny. Ręcznie utworzona skrzynka pocztowa u dostawcy bez takiego członkostwa może istnieć, ale klient może nie widzieć dla niej samoobsługowego panelu email.
 
-Dodatek może tworzyć konta e-mail klientów jako część procesu realizacji zamówienia. Jest to przydatne, gdy plan domyślnie zawiera skrzynkę pocztową lub gdy formularz realizacji zamówienia zbiera szczegóły konta e-mail.
+## Konta utworzone przez administratora i „brak numeru zamówienia” {#admin-created-accounts-and-no-order-number}
 
-Zalecany proces wdrożenia:
+Strona administracyjna **Email Accounts** tworzy lub edytuje skrzynkę pocztową u dostawcy. Nie jest to pierwszy krok przy sprzedaży lub przyznawaniu planu email.
 
-1. Skonfiguruj limity dostawcy i planu, zanim włączysz provisioning przy realizacji zamówienia.
-2. Przeprowadź zakup za pomocą produktu stagingowego i upewnij się, że skrzynka pocztowa jest tworzona po realizacji zamówienia.
-3. Przejrzyj stronę konta klienta, aby upewnić się, że nowa skrzynka pocztowa pojawia się w widgetcie e-mail.
-4. Potwierdź działanie zmiany hasła i webmaila, zanim włączysz ten proces dla produktów produkcyjnych.
+Podczas edycji konta email pole **Membership** wyszukuje istniejące członkostwa Ultimate Multisite według ich numeru referencyjnego/zamówienia. Jeśli spróbujesz przypisać konto, zanim klient ma członkostwo email, może nie być numeru zamówienia do wybrania.
 
-Jeśli provisioning się nie powiedzie, konto klienta i członkostwo mogą nadal istnieć, ale skrzynka pocztowa będzie wymagała interwencji administratora. Sprawdź logi aktywności Ultimate Multisite oraz logi dostawcy, zanim spróbujesz ponownie.
+Zamiast tego użyj następującej kolejności działań:
 
-## Przekierowania e-mail CyberPanel
+1. Utwórz lub znajdź członkostwo email klienta. W przypadku zakupów robi to checkout. W przypadku planu gratisowego utwórz członkostwo ręcznie z poziomu [Memberships](../../user-guide/administration/managing-memberships) albo wyślij klienta przez darmowy checkout.
+2. Potwierdź, że członkostwo jest aktywne i używa produktu Email.
+3. Potwierdź, że członkostwo email jest powiązane z domeną witryny/dostawcą.
+4. Utwórz skrzynkę pocztową ze strony konta klienta albo z **Ultimate Multisite > Email Accounts**.
+5. W razie potrzeby edytuj rekord skrzynki pocztowej i przypisz klienta, członkostwo oraz witrynę.
 
-Dla sieci opartych na CyberPanel, wersja 1.1.0 dodaje wsparcie dla przekierowań e-mail. Używaj przekierowań, gdy klienci potrzebują adresów takich jak `info@customer-domain.test`, aby przekierować pocztę do innej skrzynki, bez tworzenia pełnej skrzynki pocztowej.
+Jeśli potrzebujesz tylko utworzyć skrzynkę pocztową u dostawcy dla klienta i nie potrzebujesz samoobsługowego zarządzania na stronie konta, konto utworzone przez administratora może wystarczyć. Jeśli chcesz, aby klient widział je i zarządzał nim w Ultimate Multisite, utwórz też członkostwo email.
 
-Zanim zaczniesz oferować przekierowania, upewnij się, że integracja CyberPanel jest skonfigurowana i dostępna. Zapoznaj się z przewodnikiem [CyberPanel Integration](../../user-guide/administration/cyberpanel-integration), aby poznać wymagane stałe hosta, nazwy użytkownika, hasła i pakietu.
+## Webmail SSO i logowanie Magic-Link {#webmail-sso-and-magic-link-login}
 
-## Historia zmian
+Webmail SSO daje klientom bezpośrednią akcję **Otwórz webmail** ze strony konta. Gdy aktywny dostawca to obsługuje, addon żąda krótkotrwałego URL dostępowego i przekierowuje klienta do webmaila bez proszenia go o kopiowanie danych logowania skrzynki pocztowej.
 
-### Wersja 1.1.0 - Wydana 2026-05-05
+Zachowanie dostawcy może się różnić:
 
-* Nowość: SSO do webmaila i logowanie magicznym linkiem — klienci mogą uzyskać dostęp do webmaila bezpośrednio ze swojego konta z uwierzytelnianiem jednym kliknięciem.
-* Nowość: Funkcjonalność zmiany hasła dodana do widgetu zarządzania kontem e-mail.
-* Nowość: Wsparcie dla przekierowań e-mail CyberPanel.
-* Nowość: Widget zarządzania e-mailami na stronie konta klienta, umożliwiający samodzielne tworzenie i zarządzanie kontami.
-* Nowość: Tworzenie kont e-mail klientów zintegrowane z procesem realizacji zamówienia w celu automatycznego provisioningu.
-* Poprawka: Hook widgetu na stronie konta zaktualizowany, aby używać poprawnego wzorca rejestracji UMS.
-* Poprawka: Formularz „Utwórz konto” zastąpiony czystym JS i poprawnym wyjściem pełnego dokumentu HTML.
-* Poprawka: Widget zarządzania e-mailami teraz używa systemu UMS currents dla stron kont administratora.
-* Poprawka: Formularz tworzenia kont e-mail dla administratora zawiera pole hasła i używa Email_Account_Manager.
-* Poprawka: Log spam na żądanie usunięty z inicjalizacji Email_Account_Manager.
-* Ulepszenie: Strona ustawień teraz filtruje, pokazując tylko aktywne i skonfigurowane dostawcy e-mail.
+* Dostawcy z natywnymi API SSO mogą utworzyć bezpośrednią uwierzytelnioną sesję webmail.
+* Dostawcy z obsługą magic-link mogą wygenerować ograniczony czasowo link logowania.
+* Dostawcy bez obsługi SSO lub magic-link nadal powinni pokazywać szczegóły skrzynki pocztowej i akcje zarządzania hasłem, ale bez przycisku webmail jednym kliknięciem.
 
-## Najczęściej zadawane pytania
+Włącz dostęp do webmail tylko dla dostawców, dla których skonfigurowano wymagane dane uwierzytelniające API. Jeśli brakuje akcji dla dostawcy, najpierw potwierdź, że dostawca jest aktywny, skonfigurowany i obsługuje linki logowania webmail.
 
-## Czy klienci mogą tworzyć własne konta e-mail?
+## Provisioning podczas checkout {#checkout-provisioning}
 
-Tak. Gdy widget konta klienta jest włączony i plan pozwala na konta e-mail, klienci mogą tworzyć i zarządzać własnymi skrzynkami pocztowymi ze strony konta.
+Addon wykonuje provisioning **kontekstu członkostwa** email podczas checkout. Rejestruje dostawcę, limit kont, limit przestrzeni i domenę witryny, aby klienci mogli tworzyć własne nazwy skrzynek pocztowych ze strony konta po zakupie.
 
-## Czy każdy dostawca wspiera SSO do webmaila?
+Zalecane wdrożenie:
 
-Nie. Obsługa SSO i magicznych linków zależy od aktywnego dostawcy e-mail. Dostawcy bez API dostępu do linków mogą nadal wspierać tworzenie skrzynek pocztowych i zmianę haseł.
+1. Skonfiguruj dostawcę i limity produktu przed zaoferowaniem produktu email.
+2. Przetestuj zakup z produktem stagingowym i potwierdź, że członkostwo email zostało utworzone.
+3. Sprawdź stronę konta klienta, aby potwierdzić, że widget **Email Accounts** pojawia się dla domeny.
+4. Utwórz testową skrzynkę pocztową z widgetu.
+5. Potwierdź akcje zmiany hasła i webmail przed włączeniem przepływu dla produktów produkcyjnych.
 
-## Czy administratorzy mogą tworzyć konta e-mail dla klientów?
+Jeśli provisioning się nie powiedzie, konto klienta i członkostwo nadal mogą istnieć, podczas gdy członkostwo email lub skrzynka pocztowa u dostawcy wymaga działań administratora. Przed ponowną próbą sprawdź dzienniki aktywności Ultimate Multisite oraz dzienniki dostawcy.
 
-Tak. Administratorzy mogą tworzyć konta e-mail z interfejsu administracyjnego, w tym ustawiając początkowe hasło podczas tworzenia konta.
+## Forwardery email CyberPanel {#cyberpanel-email-forwarders}
 
-## Czy przekierowania są takie same jak skrzynki pocztowe?
+W przypadku sieci opartych na CyberPanel wersja 1.1.0 dodaje obsługę forwarderów email. Używaj forwarderów, gdy klienci potrzebują adresów takich jak `info@customer-domain.test`, aby przekierowywać pocztę do innej skrzynki odbiorczej bez tworzenia pełnej skrzynki pocztowej.
 
-Nie. Skrzynka pocztowa przechowuje pocztę i ma poświadczenia logowania. Przekierowanie przekierowuje pocztę na inny adres i nie zapewnia osobnej skrzynki odbiorczej.
+Przed zaoferowaniem forwarderów potwierdź, że integracja CyberPanel jest skonfigurowana i osiągalna. Zobacz przewodnik [Integracja CyberPanel](../../user-guide/administration/cyberpanel-integration), aby poznać wymagane stałe hosta, nazwy użytkownika, hasła i pakietu.
+
+## Dziennik zmian {#changelog}
+
+### Wersja 1.1.0 - wydana 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Nowość: Webmail SSO i logowanie za pomocą magic-link — klienci mogą uzyskać dostęp do poczty webmail bezpośrednio ze swojego Account z uwierzytelnianiem jednym kliknięciem.
+* Nowość: Funkcja zmiany hasła dodana do widżetu zarządzania kontem e-mail.
+* Nowość: Obsługa przekierowań e-mail CyberPanel.
+* Nowość: Widżet zarządzania e-mailem na stronie konta klienta do samodzielnego tworzenia konta i zarządzania nim.
+* Nowość: Przydzielanie uprawnień do konta e-mail klienta zintegrowane z procesem checkout.
+* Poprawka: Hak widżetu strony Account zaktualizowany tak, aby używał poprawnego wzorca rejestracji UMS.
+* Poprawka: Formularz Create Account zastąpiony vanilla JS i poprawnym wyjściem pełnego dokumentu HTML.
+* Poprawka: Widżet zarządzania e-mailem używa teraz systemu bieżących kontekstów UMS dla stron kont administratora.
+* Poprawka: Formularz tworzenia konta e-mail przez administratora zawiera pole hasła i używa Email_Account_Manager.
+* Poprawka: Usunięto spam w logach dla każdego żądania z inicjalizacji Email_Account_Manager.
+* Ulepszenie: Strona ustawień filtruje teraz wyniki, aby pokazywać tylko aktywnych i skonfigurowanych dostawców e-mail.
+
+## Często zadawane pytania {#frequently-asked-questions}
+
+### Czy klienci mogą tworzyć własne konta e-mail? {#can-customers-create-their-own-email-accounts}
+
+Tak. Gdy klient ma aktywne członkostwo e-mail dla domeny, a produkt pozwala na dodatkowe konta, klienci mogą tworzyć własne skrzynki pocztowe i zarządzać nimi ze strony Account.
+
+### Czy każdy dostawca obsługuje Webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Nie. Obsługa SSO i magic-link zależy od aktywnego dostawcy e-mail. Dostawcy bez API linku dostępowego nadal mogą obsługiwać tworzenie skrzynek pocztowych i zmiany haseł.
+
+### Czy administratorzy mogą tworzyć konta e-mail dla klientów? {#can-administrators-create-email-accounts-for-customers}
+
+Tak. Administratorzy mogą tworzyć konta e-mail z interfejsu administratora, w tym ustawiać początkowe hasło podczas tworzenia konta. W przypadku samodzielnego zarządzania przez klienta upewnij się również, że klient ma aktywne członkostwo e-mail dla domeny.
+
+### Czy mogę oddać konto e-mail za darmo? {#can-i-give-an-email-account-away-for-free}
+
+Tak. Utwórz darmowy/zerowo wyceniony produkt e-mail i dodaj go jako aktywne członkostwo dla klienta albo pozwól klientowi ukończyć checkout z rabatem 100%. Po utworzeniu członkostwa e-mail klient lub administrator może utworzyć właściwą skrzynkę pocztową.
+
+### Dlaczego przypisanie konta e-mail wymaga numeru zamówienia? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Pole Membership wyszukuje istniejące członkostwo Ultimate Multisite według jego numeru referencyjnego/zamówienia. Jeśli klient nie kupił produktu e-mail i nie utworzono ręcznie członkostwa e-mail, nie ma członkostwa/zamówienia e-mail do przypisania. Najpierw utwórz członkostwo e-mail, a następnie utwórz lub przypisz skrzynkę pocztową.
+
+### Czy przekierowania są tym samym co skrzynki pocztowe? {#are-forwarders-the-same-as-mailboxes}
+
+Nie. Skrzynka pocztowa przechowuje pocztę i ma dane logowania. Przekierowanie przekazuje pocztę na inny adres i nie zapewnia osobnej skrzynki odbiorczej.

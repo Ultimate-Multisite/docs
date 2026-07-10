@@ -1,0 +1,111 @@
+---
+title: Gabat gelýän Endpointler üçin Ultimate AI Connector
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Utgaşykly ahyrky nokatlar üçin Ultimate AI Connector {#ultimate-ai-connector-for-compatible-endpoints}
+
+Utgaşykly ahyrky nokatlar üçin Ultimate AI Connector OpenAI bilen utgaşykly AI üpjün ediji API-laryny siziň WordPress multisite toruňyz bilen birleşdirýär. Birnäçe AI üpjün edijini — hersiniň öz ahyrky nokat URL-i, API açary we deslapky modeli bilen — sazlaň we üpjün ediji elýeterli bolmadyk ýagdaýynda awtomatik ätiýaçlaýyn geçiş bilen islegleri ugrukdyryň.
+
+## Esasy aýratynlyklar {#key-features}
+
+- **Birnäçe üpjün edijini goldamak**: Birnäçe AI üpjün ediji kartyny goşuň, hersiniň öz ahyrky nokat URL-i, API açary we deslapky modeli bolýar
+- **Süýräp tertiplemek**: Her kartdaky tutawaçdan peýdalanyp üpjün edijileri ileri tutulýan tertipde ýerleşdiriň; islegler üpjün edijileri tertip boýunça ulanýar
+- **Awtomatik ätiýaçlaýyn ugrukdyrma**: Esasy üpjün ediji elýeterli bolmasa, islegler awtomatik indiki sazlanan üpjün edijä geçirilýär
+- **Her üpjün ediji boýunça sazlama**: Her üpjün ediji öz şahsy maglumatlary we model saýlawy bilen aýratynlykda sazlanýar
+- **Kart esasly sazlamalar UI**: Durnukly WordPress 6.9+ Card komponentleriniň (CardBody, CardHeader, CardDivider) üstünde guruldy
+- **Goşulanda awtomatik giňeltmek**: Täze üpjün ediji kartlary awtomatik giňelýär, şonuň üçin jikme-jiklikleri derrew dolduryp bilersiňiz
+- **Script keşini täzelemek**: Iň soňky wersiýanyň ýüklenmegini üpjün etmek üçin plugin täzelenende üpjün ediji scriptleri keşden çykarylýar
+
+## Talaplar {#requirements}
+
+- WordPress 5.3 ýa-da has ýokary
+- PHP 7.4 ýa-da has ýokary
+- Ultimate Multisite plugin (işjeň)
+- OpenAI bilen utgaşykly API ahyrky nokady (öz-özüňizde ýerleşdirilen ýa-da üçünji tarap)
+
+## Gurnama {#installation}
+
+1. Addon faýllaryny `/wp-content/plugins/` katalogyňyza ýükläň
+2. WordPress içinde 'Plugins' menýusy arkaly plugin-i işjeňleşdiriň
+3. Addon-y sazlamak üçin **Ultimate Multisite → AI Connector** bölümine geçiň
+
+## Sazlama {#configuration}
+
+### Birnäçe üpjün edijili sazlama {#multi-provider-setup}
+
+Sazlama ekranynda her kart bir AI üpjün edijini görkezýän kart esasly ýerleşiş ulanylýar. Gerek bolança üpjün ediji goşup bilersiňiz.
+
+#### Üpjin ediji goşmak {#adding-a-provider}
+
+1. Tor administratorynda **Ultimate Multisite → AI Connector** bölümine geçiň
+2. **Üpjin ediji goş** düwmesine basyň
+3. Täze üpjün ediji karty peýda bolýar we awtomatik giňelýär
+4. Üpjin ediji jikme-jikliklerini dolduryň:
+   - **Üpjin edijiniň ady** — bu üpjün edijini tanamak üçin bellik (meselem, "OpenAI", "Mistral", "Local Ollama")
+   - **Ahyrky nokat URL-i** — OpenAI bilen utgaşykly API-nyň esasy URL-i (meselem, `https://api.openai.com/v1`)
+   - **API açary** — bu üpjün ediji üçin API açaryňyz
+   - **Deslapky model** — bu üpjün ediji üçin deslapky ulanyljak model kesgitleýjisi (meselem, `gpt-4o`, `mistral-small`)
+5. **Sazlamalary ýazdyr** düwmesine basyň
+
+#### Üpjin edijini aýyrmak {#removing-a-provider}
+
+Islendik üpjün ediji kartyndaky **Aýyr** düwmesine basyp ony pozuň. Üýtgeşmäni ulanmak üçin sazlamalary ýazdyryň.
+
+#### Üpjin edijileri täzeden tertiplemek {#reordering-providers}
+
+Islendik üpjün ediji kartynyň çep tarapyndaky tutawaç nyşanyny (⣿) süýräp, ony täzeden tertipläň. Tertip ätiýaçlaýyn geçiş ileri tutulmasyny kesgitleýär: islegler birinji üpjün edijä iberilýär we isleg şowsuz bolsa, indiki üpjün edijilere geçirilýär.
+
+### Ätiýaçlaýyn ugrukdyrma {#fallback-routing}
+
+Esasy üpjün edijä iberilen isleg — wagt tamamlanmagy, tizlik çägi ýa-da hyzmatyň kesilmegi sebäpli — şowsuz bolsa, connector sanawdaky indiki üpjün ediji bilen awtomatik gaýtadan synanyşýar. Bu üpjün ediji üstünlik gazanýança ýa-da ähli üpjün edijiler synalýança sanaw boýunça dowam edýär.
+
+| Ýagdaý | Özünialyşy |
+|----------|-----------|
+| Esasy üpjün ediji jogap berýär | Isleg adaty ýagdaýda ýerine ýetirilýär |
+| Esasy üpjün ediji şowsuz bolýar | Isleg indiki üpjün ediji bilen gaýtadan synalýar |
+| Ähli üpjün edijiler şowsuz bolýar | Çagyryja ýalňyşlyk gaýtarylýar |
+
+Ätiýaçlaýyn geçiş çagyryjy plugin ýa-da theme üçin aýdyňdyr — näçe üpjün ediji synalanyna garamazdan, olar ýa üstünlikli jogap, ýa-da soňky ýalňyşlyk alýarlar.
+
+### Üpjin ediji sazlamalarynyň salgylanmasy {#provider-configuration-reference}
+
+| Meýdan | Hökmany | Düşündiriş |
+|-------|----------|-------------|
+| Üpjin edijiniň ady | Hawa | Bu üpjün ediji üçin görkezilýän bellik |
+| Ahyrky nokat URL-i | Hawa | OpenAI bilen utgaşykly API-nyň esasy URL-i |
+| API açary | Hawa | Bu üpjün ediji üçin tanamak açary |
+| Deslapky model | Hawa | Islegde model görkezilmedik ýagdaýynda ulanylýan model kesgitleýjisi |
+
+## Näsazlyklary düzetmek {#troubleshooting}
+
+### Hiç hili üpjün ediji sanawda ýok {#no-providers-are-listed}
+
+Ýazdyrandan soň üpjün ediji sanawy boş bolsa, şulary tassyklaň:
+
+- Üpjin edijileri goşanyňyzdan soň **Sazlamalary ýazdyr** düwmesine basdyňyz
+- Brauzeriňiz sazlamalar sahypasynyň ýazdyrmagyny bloklamady (JavaScript ýalňyşlyklary üçin brauzer konsolyny barlaň)
+- Plugin işjeň we siz tor administratory ekranynda
+
+### Islegler ähli üpjün edijiler üçin şowsuz bolýar {#requests-are-failing-for-all-providers}
+
+- Her üpjün edijiniň ahyrky nokat URL-iniň serweriňizden elýeterlidigini barlaň (diňe brauzeriňizden däl)
+- Her API açarynyň dogrudygyny we möhletiniň gutarmandygyny barlaň
+- Üpjin edijiniň dashboard-ynda onuň tizlik çägi we kwota ýagdaýyny gözden geçiriň
+- Connector-dan jikme-jik ýalňyşlyk habarlaryny almak üçin WordPress debug ýazgysyny (`WP_DEBUG_LOG`) işjeňleşdiriň
+
+### Üpjin ediji ätiýaçlaýyn geçiş üçin ulanylmaýar {#a-provider-is-not-being-used-for-fallback}
+
+Süýräp tertiplemek ätiýaçlaýyn geçiş tertibini üýtgedýär. Ätiýaçlaýyn islegleri almagyna garaşýan üpjün edijiňiziň sanawda dogry ýerde ýerleşendigini we onuň ahyrky nokat URL-i bilen API açarynyň dogrudygyny tassyklaň.
+
+### Täze üpjün ediji karty awtomatik giňelmeýär {#new-provider-card-does-not-expand-automatically}
+
+Awtomatik giňelmek üçin brauzeriňizde JavaScript işjeň bolmaly. Kart basylanda giňelmeýän bolsa, ýalňyşlyklar üçin brauzer konsolyny barlaň. Awtomatik giňelmek işlemese-de, kart mazmunyna kart sözbaşysyna basmak arkaly elmydama girip bolýar.
+
+## Üýtgeşmeler žurnaly {#changelog}
+
+Doly wersiýa taryhy üçin [Üýtgeşmeler žurnaly](./changelog) serediň.

@@ -3,11 +3,11 @@ title: Panel ko'rinishi umumiy ko'rinishi
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Ko'rinishi
+# Dashboard Ko'rinishi {#dashboard-overview}
 
 Ultimate Multisite menyusi ostida maxsus **Dashboard** mavjud bo'ladi, shuningdek, Network Dashboardga widgetlar qo'shadi. Bu maqolada siz ikkala joyda nimalarni ko'rishingiz mumkinligi haqida ma'lumot beriladi.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite network darajasidagi dashboard — **My Sites → Network Admin → Dashboard** — ga foydali widgetlarni kiritadi.
 
@@ -35,7 +35,7 @@ Har bir widget nima berishini quyida ko'rsatamiz:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Tarmoq (network) paneli tarmoq haqida umumiy ma'lumotlarni ko'rsatsa-da, Ultimate Multisite dashboardi (Ultimate Multisite menyusining eng yuqori darajasida joylashgan) xizmat haqidagi ma'lumotlarni ko'rsatadi.
 

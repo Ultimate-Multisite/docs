@@ -3,9 +3,9 @@ title: Kontent Sinkronizatsiya O'zgarishlar Ro'yxati
 sidebar_position: 99
 _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 ---
-# İçerik Senkronizasyonu Değişiklik Günlüğü
+# İçerik Senkronizasyonu Değişiklik Günlüğü {#content-sync-changelog}
 
-### Version 1.1.0 - Yayınlanma Tarihi 2025-12-31
+### Version 1.1.0 - Yayınlanma Tarihi 2025-12-31 {#version-110---released-on-2025-12-31}
 * Yeni: Tüm gönderi tiplerini (gönderiler, sayfalar, özel gönderi tipleri) senkronize etme desteği
 * Yeni: İçerik seçimi adımında gönderi tipi filtrelemesi
 * Yeni: Kaynak site seçimi adımı - sadece ana site değil, herhangi bir siteden senkronizasyon yapabilme
@@ -16,7 +16,7 @@ _i18n_hash: 3b44da06636d21415abe77d8cef605f3
 * Değiştirildi: "Select Templates" adımı "Select Data" olarak yeniden adlandırıldı
 * İyileştirildi: Elementor'a özel kod artık yalnızca elementor_library gönderi tipi için çalışıyor
 
-### Version 1.0.0 - Yayınlanma Tarihi 2025-12-19
+### Version 1.0.0 - Yayınlanma Tarihi 2025-12-19 {#version-100---released-on-2025-12-19}
 * İlk sürüm
 * Şablon ve site seçimi için çok adımlı sihirbaz
 * Gerçek zamanlı ilerleme geri bildirimi ile toplu işleme

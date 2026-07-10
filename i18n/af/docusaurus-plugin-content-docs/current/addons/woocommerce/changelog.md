@@ -1,138 +1,147 @@
 ---
-title: WooCommerce Integrasie Changelog
+title: WooCommerce-integrasie Veranderingslogboek
 sidebar_position: 99
-_i18n_hash: b34d062c52ab13dbab02f7162f01e641
+_i18n_hash: 54658c4a8d52e85998183f523437d5a3
 ---
-# WooCommerce Integrasie Versiëveranderinge
+# WooCommerce-integrasie-veranderingslog {#woocommerce-integration-changelog}
+
+Weergawe 2.2.0 - Vrygestel op 2026-07-01
+* Nuut: Ultimate Multisite-belastingbedrae verskyn nou as aparte WooCommerce-fooireëls by betaalpunt, wat belastingtotale duideliker maak voor betaling.
+* Nuut: Het ’n intekenbare "Suspend Memberships Immediately on Failed Renewals"-instelling en `wu_woo_suspend_on_payment_failure`-filter bygevoeg vir werwe wat opskorting by mislukte hernuwing tydens die WooCommerce Subscriptions-herprobeervenster wil hê.
+* Regstelling: WooCommerce Subscription-statusse versoen wat ná mislukte of herstelde hernuwings uit pas met Ultimate Multisite-lidmaatskappe kon bly.
+* Regstelling: Die WooCommerce-winkelgeldeenheid by die Ultimate Multisite-geldeenheidslys gevoeg toe dit ontbreek het.
+* Regstelling: Kliëntfaktureringsbesonderhede behou wanneer intekenare na WooCommerce-betaalpunt herlei word.
+* Verbeter: Verenigbaarheid met Jetpack Autoloader 5 bygevoeg.
+* Verbeter: Vrystellingspakketgenerering opgeskoon sodat GitHub- en markplek-zip-lêers geneste voorbereidingsgidse en ontwikkelingslêers vermy.
 
 Weergawe 2.0.6 - Vrygestel op 2026-01-16
-* Verbetering: Sluit kernabonnemente by die add-on. Vereis nie meer die Woocommerce Subscriptions-uitbreiding nie.
+* Verbetering: Sluit kernintekeninge in die byvoeging in. Vereis nie meer die Woocommerce Subscriptinos-uitbreiding nie.
 
 Weergawe 2.0.5 - Vrygestel op 2026-01-09
-* Verbetering: Laai vertalings vanaf die glotpress API.
-* Fiksing: Ernstige fout in sommige bladsybouers.
-* Fiksing: Oneindige herleiding wanneer die kliënt 'n lid van die hoofwebwerf is.
+* Verbetering: Laai vertalings vanaf glotpress API.
+* Regstelling: Fatale fout in sommige bladsybouers.
+* regstelling: Oneindige herleiding wanneer die kliënt ’n lid van die hoofwerf is.
 
 Weergawe 2.0.4 - Vrygestel op 2025-11-14
 * Bygevoeg: Vertalings vir baie meer tale.
-* Verander: Hernoem na Ultimate Multisite: Woocommerce Integrasie.
-* Bygevoeg: Kompatibiliteit met Woocommerce 10.2.1.
-* Bygevoeg: Kompatibiliteit met Woocommerce Subscriptions 7.7.0.
-* Fiksing: Kompatibiliteit met PHP 8.4
-* Fiksing: Herlei na die WC-rekeningblad wanneer geen WC-rekeningblad bestaan nie.
+* Verander: Hernoem na Ultimate Multisite: Woocommerce Integration.
+* Bygevoeg: Verenigbaarheid met Woocommerce 10.2.1.
+* Bygevoeg: Verenigbaarheid met Woocommerce Subscriptions 7.7.0.
+* Regstelling: Verenigbaarheid met PHP 8.4
+* Regstelling: Herlei, maar wanneer geen WC-rekeningbladsy bestaan nie.
 
 Weergawe 2.0.3 - Vrygestel op 2025-08-13
-* Verander: Geaktiveer outomatiese opdaterings met nuwe markplaas.
+* Verander: Outomatiese opdaterings met nuwe markplek geaktiveer.
 
 Weergawe 2.0.2 - Vrygestel op 2025-07-05
-* Verander: Hernoem na Multisite Ultimate: Woocommerce Integrasie.
-* Bygevoeg: Kompatibiliteit met Woocommerce 9.8.1.
-* Bygevoeg: Kompatibiliteit met Woocommerce Subscriptions 7.3.0.
-* Fiksing: Kanselleer 'n abonnement deur die kliënt.
-* Fiksing: Ernstige fout wanneer die uitcheck-blok gebruik word.
-* Verbetering: Nou kompatibel met Woocommerce hoë-prestasie aangepaste bestel-tabels.
-* Fiksing: Kanselleer by die WooCommerce-uitcheck kan steeds 'n lidmaatskap opgradeer.
+* Verander: Hernoem na Multisite Ultimate: Woocommerce Integration.
+* Bygevoeg: Verenigbaarheid met Woocommerce 9.8.1.
+* Bygevoeg: Verenigbaarheid met Woocommerce Subscriptions 7.3.0.
+* Regstelling: Kansellering van ’n intekening deur die kliënt.
+* Regstelling: Fatale fout wanneer die betaalpuntblok gebruik word.
+* Verbetering: Nou versoenbaar met Woocommerce-hoëprestasie-pasmaakbestellingstabelle.
+* Regstelling: Kansellering by WooCommerce-betaalpunt kan steeds ’n lidmaatskap opgradeer.
 
 Weergawe 2.0.1 - Vrygestel op 2023-08-09
 
-* Bygevoeg: Kompatibiliteit met Woocommerce 7.9.0.
-* Bygevoeg: Kompatibiliteit met Woocommerce Subscriptions 5.3.0.
+* Bygevoeg: Verenigbaarheid met Woocommerce 7.9.0.
+* Bygevoeg: Verenigbaarheid met Woocommerce Subscriptions 5.3.0.
 * Bygevoeg: Ondersteuning vir lidmaatskapopdaterings.
-* Bygevoeg: Kennisgewings oor proefperiodes en opstelgelde in Woocommerce.
-* Bygevoeg: Identifikasie van Ultimate Multisite Woocommerce produkte met 'n meta-waarde.
-* Bygevoeg: Voeg 'n eenmalige fiksing in om alle Ultimate Multisite-verwante Woocommerce produkte te merk.
-* Bygevoeg: Verwyder Ultimate Multisite-gekreë produkte uit die Woocommerce lys.
-* Verbetering: Geskep 'n nie-herhalende Woocommerce-korting om op die winkelmandjie toe te pas.
-* Verbetering: Herstel die herhalende korting na die Woocommerce-produk.
-* Verbetering: Voeg 'n label vir 'n herhalende korting by die Woocommerce-produk.
-* Verbetering: Verseker produktipe by die uitcheck.
-* Fiksing: Handhaaf lidmaatskapstatus tydens die degraderingsproses.
-* Fiksing: Kontroleer of 'n abonnement bestaan om foute tydens die kanselleeringsproses te vermy.
-* Fiksing: Voeg die beginabonnementdatum by vir gebruik in Woocommerce-abonnemente.
-* Intern: Implementeer 'n nuwe PHP 8.1 bouproses.
+* Bygevoeg: Kennisgewings oor proeftydperke en opstelfooie in Woocommerce.
+* Bygevoeg: Identifikasie van Ultimate Multisite Woocommerce-produkte met ’n meta-waarde.
+* Bygevoeg: ’n Eenmalige regstelling ingevoeg om alle Ultimate Multisite-verwante Woocommerce-produkte te merk.
+* Bygevoeg: Produkte wat deur Ultimate Multisite geskep is, uit die Woocommerce-lys verwyder.
+* Verbetering: ’n Nie-herhalende Woocommerce-afslag geskep om op die mandjie toe te pas.
+* Verbetering: Die herhalende afslag na die Woocommerce-produk herstel.
+* Verbetering: ’n Herhalende afslagetiket by die Woocommerce-produk gevoeg.
+* Verbetering: Produksoort by betaalpunt verseker.
+* Regstelling: Lidmaatskapstatus tydens die afgraderingsproses behou.
+* Regstelling: Gekontroleer of ’n intekening bestaan om foute tydens die kansellasieproses te vermy.
+* Regstelling: Die beginintekeningdatum bygevoeg vir gebruik in Woocommerce-intekeninge.
+* Intern: ’n Nuwe PHP 8.1-bouproses geïmplementeer.
 
-Weergawe 2.0.0 - Volledige herskrywing.
+Weergawe 2.0.0 - Volledige herskryf.
 
-* Bygevoeg: Proses kanselleermetode om woo-abonnement te verwyder wanneer die koppelvlak verander word of die lidmaatskap gekanselleer word;
-* Bygevoeg: Hanteraar om lidmaatskappe te degradeer en op te gradeer;
-* Verbetering: Laai woocommerce-afhanklikhede op die kliëntopdateringsformulier in subsites om rekeningopdatering toe te laat;
-* Verbetering: Korrek laai Woocommerce winkelmandjie indien nie bestaan nie;
-* Verbetering: Verseker dat ons op die hoofwebwerf-tabels is wanneer 'n uitcheck verwerk word;
-* Verbetering: Maak Ultimo-vernuwingsbestelling gebaseer op die Woocommerce-abonnementbestelwaarde en nie op die laaste betaling nie;
-* Fiksing: Gaan na die WU Membership knoppie-skakel;
-* Fiksing: Stel Ultimo-bestelling as betaal wanneer Woocommerce-abonnementvernuwing betaal is;
+* Bygevoeg: Kansellasiemetode verwerk om woo-intekening te verwyder wanneer die poort verander of die lidmaatskap gekanselleer word;
+* Bygevoeg: Hanteerder om lidmaatskappe af te gradeer en op te gradeer;
+* Verbetering: Laai woocommerce-afhanklikhede op kliëntopdateringsvorm in subwerwe om rekeningopdatering toe te laat;
+* Verbetering: Korrigeer die laai van Woocommerce-mandjie indien dit nie bestaan nie;
+* Verbetering: Verseker dat ons op hoofwerftabelle is wanneer ’n betaalpunt verwerk word;
+* Verbetering: Maak Ultimo-hernuwingsbestelling gebaseer op Woocommerce-intekeningbestellingswaarde en nie vanaf laaste betaling nie;
+* Regstelling: Gaan na WU Membership-knoppieskakel;
+* Regstelling: Stel Ultimo-bestelling as betaal wanneer Woocommerce Subscriptions-hernuwing betaal is;
 * Bou: Voeg MPB as bouer by;
 
 Weergawe 2.0.0-beta-5 - Vrygestel op 2022-01-21
 
-* Intern: Bygevoeg hooks en filters generator;
-* Intern: Bygevoeg Ultimate Multisite stubs vir ontwikkelaar lewenskwaliteit;
-* Gefiksing: Voorkom die skep van meerdere produkte wanneer dit nie nodig is nie;
+* Intern: Hooks- en filtersgenerator bygevoeg;
+* Intern: Ultimate Multisite-stubs vir ontwikkelaarslewensgehalte bygevoeg;
+* Reggestel: Voorkom die skepping van veelvuldige produkte wanneer dit nie nodig is nie;
 
 Weergawe 2.0.0-beta.4 - 2021-09-23
 
-* Fiksing: Vereis dat WooCommerce netwerk-aktief is en nie net die hoofwebwerf nie;
-* Verbetering: Voeg filter by om die add-on te laat gebruik word as 'n mu-plugin;
+* Regstelling: vereis dat WooCommerce netwerkaktief is in plaas van slegs op die hoofwerf;
+* Verbetering: filter bygevoeg om toe te laat dat die byvoeging as ’n mu-plugin gebruik word;
 
 Weergawe 2.0.0-beta.3 - 2021-05-28
 
-* Fiksing: Dashboard-toegangsbeheer was te aggressief;
-* Verbetering: Voeg WooCommerce-hulp-skakels by tot die Ultimate Multisite-topmenu;
+* Regstelling: Dashboard-toegangsbeheer was te aggressief;
+* Verbetering: WooCommerce-hulpskakels by Ultimate Multisite-boonste-kieslys gevoeg;
 
 Weergawe 2.0.0-beta.2 - 2021-05-04
 
-* Verbetering: Skep uitstaande betalings op Ultimo by WCS-vernuwingsbestel skep;
-* Verbetering: Vul faktuurvelde vooraf met Ultimate Multisite kliëntdata;
-* Verbetering: Voeg faktuurvelde terug vir koppelvlakke;
+* Verbetering: skep hangende betalings op Ultimo by skepping van WCS-hernuwingbestelling;
+* Verbetering: vul faktureringsvelde vooraf met Ultimate Multisite-kliëntdata;
+* Verbetering: voeg faktureringsvelde vir poorte terug;
 
 Weergawe 2.0.0-beta.1 - 2021-05-04
 
-* Aanvanklike beta-vrygawe
+* Aanvanklike beta-vrystelling
 
--- Ouer Weergaweë --
+-- Nalatenskapweergawes --
 
 Weergawe 1.2.6 - 26/03/2020
 
-* Gefiksing: Klein onverenigbaarheid met nuwer weergawes van WooCommerce Subscriptions;
+* Reggestel: Klein onverenigbaarheid met nuwer weergawes van WooCommerce Subscriptions;
 
 Weergawe 1.2.5 - 26/08/2019
 
-* Gefiksing: Fout op vorige vrygawe;
+* Reggestel: Fout in vorige vrystelling;
 
 Weergawe 1.2.4 - 22/08/2019
 
-* Verbeter: Voeg opsie by om na die WooCommerce-uitcheckskerm te herlei na integrasie onmiddellik;
+* Verbeter: Opsie bygevoeg om onmiddellik ná integrasie na WooCommerce-betaalpuntskerm te herlei;
 
 Weergawe 1.2.3 - 26/05/2019
 
-* Gefiksing: Betalings-e-pos vir WooCommerce het in sommige uitsonderlike gevalle verdwyn;
+* Reggestel: Betaling-e-pos vir WooCommerce het in sommige randgevalle verdwyn;
 
 Weergawe 1.2.2 - 27/02/2019
 
-* Bygevoeg: Ondersteuning vir opstelgelde op die WooCommerce Subscriptions-integrasie;
+* Bygevoeg: Ondersteuning vir opstelfooie op die WooCommerce Subscription-integrasie;
 
 Weergawe 1.2.1 - 17/11/2018
 
-* Gefiksing: Kompatibiliteitsprobleme met Ultimate Multisite weergawe 1.9.0;
+* Reggestel: Verenigbaarheidskwessies met Ultimate Multisite weergawe 1.9.0;
 
 Weergawe 1.2.0 - 10/09/2018
 
-* Verbeter: Nuwe opdaterings-URL vir add-ons;
+* Verbeter: Nuwe opdaterings-URL vir byvoegings;
 * Bygevoeg: Beta-ondersteuning vir WooCommerce Subscription;
 
 Weergawe 1.1.2 - 11/02/2018
 
-* Gefiksing: Skakel na Betalings word dinamies gegenereer om te reageer op veranderinge aan WooCommerce-eindpunte;
-* Verbetering: Ons dwing nou 'n voltooi status vir ons bestellings wanneer payment_completed genoem word om te verseker dat ons vernuwingshooks loop wanneer dit moet;
+* Reggestel: Skakel om te betaal word dinamies gegenereer om op veranderinge aan WooCommerce-eindpunte te reageer;
+* Verbeter: Ons dwing nou voltooide status vir ons bestellings af wanneer payment_completed geroep word om seker te maak ons hernuwing-hooks loop wanneer hulle moet;
 
 Weergawe 1.1.1 - 24/01/2018
 
-* Gefiksing: Kontroleer nou ook of WooCommerce net op die hoofwebwerf geaktiveer is;
-* Gefiksing: Insluit oor-lading om die skep van bestellings toe te laat om belasting te sluit.
+* Reggestel: Nou kontroleer dit ook om te sien of die WooCommerce net op die hoofwerf geaktiveer is;
+* Reggestel: Oorladings ingesluit om bestellingskepping toe te laat om belastings in te sluit;
 
 Weergawe 1.1.0 - 04/11/2017
 
-* Gefiksing: Die label van die integrasieknop verander nou werklik om die instellings te weerspieël. Vereis Ultimate Multisite 1.5.0;
-* Gefiksing: WooCommerce Integrasie werk nou selfs as WooCommerce nie netwerk-aktief is en slegs op die hoofwebwerf geaktiveer is nie;
+* Reggestel: Nou verander die etiket van die integrasieknoppie werklik om die instellings te weerspieël. Vereis Ultimate Multisite 1.5.0;
+* Reggestel: WooCommerce Integration werk nou selfs as WooCommerce nie netwerkaktief is nie en slegs op t^he hoofwerf geaktiveer is;
 
-1.0.0 - Aanvanklike Vrygawe
+1.0.0 - Aanvanklike vrystelling

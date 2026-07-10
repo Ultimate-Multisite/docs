@@ -3,13 +3,13 @@ title: Modèl Sit
 sidebar_position: 4
 _i18n_hash: fec01b1bf4e915bea1e8cd662fc1b465
 ---
-# Site Templates (v2)
+# Site Templates (v2) {#site-templates-v2}
 
 _**NOTE: Sa tèks sa a refere a Ultimate Multisite v2.x. Si ou ap itilize v1.x,**_ **gade tèks sa a.**_
 
 N ap eseye fè yon rezo premium ak Ultimate Multisite la pou automate pi gwo pwosesis posib pandan nou bay kliyan nou fleksibilite ak diferan opsyon pou yo chwazi lè yo ap kreye sit entènèt yo. Yon fason fasil pou atvine balans sa a se itilize fonksyonalite Site Templates Ultimate Multisite la.
 
-## Ki sa Site Template ye?
+## Ki sa Site Template ye? {#what-is-a-site-template}
 
 Kòm non li endike, yon Site Template se yon sit baz (boilerplate site) ki ka itilize kòm fondasyon lè ou ap kreye nouvo sit nan rezo w la.
 
@@ -17,7 +17,7 @@ Sa vle di ou ka kreye yon sit baz, aktive diferan plugin yo, mete yon thèm akti
 
 Sa sanble chwazi, men kijan mwen ka kreye yon nouvo Site Template? Li senp tankou sa ka rive.
 
-## Kreye epi Edite yon nouvo Site Template
+## Kreye epi Edite yon nouvo Site Template {#creating-and-editing-a-new-site-template}
 
 Site Templates se jis sit nòmal nan rezo ou a. Pou kreye yon nouvo template, ou ka senp ale **Network Admin > Ultimate Multisite > Sites > Add Site.**
 
@@ -35,7 +35,7 @@ Anwo an bas de bout nan fòm la, ou pral wè yon switch ki rele **Copy Site**. S
 
 ![Add site template modal with copy site toggle](/img/config/site-templates-list.png)
 
-### Personalize Kontni Yon Site Template
+### Personalize Kontni Yon Site Template {#customizing-the-contents-of-a-site-template}
 
 Pou personalize site template ou a, senp ale nan panel dashboard li epi fè chanjman ou bezwen. Ou ka kreye nouvo posts, paj, aktive plugin yo epi chanje thèm aktif la. Ou menm ka ale nan Customizer la epi chanje tout kalite opsyon kustomizasyon.
 
@@ -43,11 +43,11 @@ Pou personalize site template ou a, senp ale nan panel dashboard li epi fè chan
 
 Tout done sa a ap kopi lè yon kliyan kreye nouvo site ki baze sou Site Template sa a.
 
-### Opsyon Avansé
+### Opsyon Avansé {#advanced-options}
 
 Si ou konnen w gen kèk kòd koutim, ou ka itilize API Search and Replace nou an pou ranplase enfòmasyon otomatikman sou nouvo sit la apre li te kreye. Sa itil pou bagay tankou ranplase non konpayi sou paj About, ranplase imèl kontak sou paj Kontak, elatriye.
 
-### Itilize Site Templates
+### Itilize Site Templates {#using-site-templates}
 
 Ok, ou fin kreye anpil Site Template ki gen diferan konsepsyon, thèm ak chanjman. Kounye a, kijan pou w fè yo itil nan rezo ou?
 
@@ -59,7 +59,7 @@ Nan pati senp, gen de apwòch ou ka itilize kounye a (pa parèt ansanm):
 
   * Kite kliyan ou chwazi site template yo tèm nan lè yo ap mete kont.
 
-#### Mode 1: Asigne Site Template
+#### Mode 1: Asigne Site Template {#mode-1-assign-site-template}
 
 Nan mod sa mode sa sa a, client yo pa t'ap chwazi yon template lè yo ap kreye kont yo, men ou se ki ou dwe defini ki template ki ta dwe itilize sou chak Plan ou genyen.
 
@@ -71,7 +71,7 @@ Sa ap mennen ou nan paj **Edit Product**. Anba seksyon **Product Options**, chè
 
 ![Product site template tab with assign site template option](/img/config/product-site-templates.png)
 
-#### Mode 2: Chwazi Site Template Disponib
+#### Mode 2: Chwazi Site Template Disponib {#mode-2-choose-available-site-template}
 
 Nan mode sa a, ou pral bay client yo chwa pandan pwosesis anrejistreman yo. Yo ap ka chwazi ant diferan site templates ou defini anba konfigirasyon pwodwi a. Ou gen opsyon pou limite site template yo ka chwazi anba pwodwi ki chwazi la. Sa pèmèt ou gen diferan gwoup site templates anba chak pwodwi, ki se ide pou mete aksan sou fonksyon ak karakteristik diferan pou yon pwodwi ki pi chè.
 
@@ -79,7 +79,7 @@ Sou sou la **Edit Product** page. Anba seksyon **Product Options**, chèche tab 
 
 ![Choose available site templates with behavior options](/img/config/product-site-templates.png)
 
-### Mode Defolte: Seleksyon site template sou fòm Checkout
+### Mode Defolte: Seleksyon site template sou fòm Checkout {#default-mode-site-template-selection-on-the-checkout-form}
 
 Si ou vle tout site templates ou yo disponib pandan anrejistreman, oswa si ou pa renmen fè travay ekstra pou asigne oswa spesifye site templates anba chak pwodwi ou kreye. Lè sa a, ou ka senp mete seleksyon site template la anba **Checkout Form** ou. Pou fè sa, ale nan **Ultimate Multisite > Checkout Forms** epi klike sou **Edit** anba fòm ou vle configure a.
 
@@ -93,29 +93,29 @@ Sou frontend, kliyan yo wè chwazi template pandan checkout epi yo ka chwazi kon
 
 ![Frontend template chooser during registration](/img/config/frontend-template-chooser.png)
 
-### Opsyon Template Site
+### Opsyon Template Site {#site-template-options}
 
 Gen kèk fonksyon opsyon sit ki ka disponib ou pou w kache oswa montre anba konfigirasyon Ultimate Multisite.
 
 ![Opsyon template sit nan konfigirasyon Ultimate Multisite](/img/config/settings-sites-templates-section.png)
 
-#### Lòp Pou Chanje Template (Allow Template Switching)
+#### Lòp Pou Chanje Template (Allow Template Switching) {#allow-template-switching}
 
 Lè ou active opsyon sa a, kliyan ou ap ka chanje template yo chwazi pandan pwosesis anrejistrasyon apre kont ak sit la te kreye. Sa a itil pou kliyan anpil paske li bay chans pou yo re-chwazi yon template si yo aprann nan lòt moman ke chwa orijinal la pa t'ap pi bon pou bezwen espesifik yo.
 
-#### Lòp Pou Itilizat Yo itilize Sit yo kòm template (Allow Users to use their Site as templates)
+#### Lòp Pou Itilizat Yo itilize Sit yo kòm template (Allow Users to use their Site as templates) {#allow-users-to-use-their-site-as-templates}
 
 Puis ke itilizat subsite yo pase tan ap bati ak konsepsyon sit yo, yo ka vle klone epi itilize li kòm youn nan opsyon template ki disponib lè ou ap kreye yon lòt subsite sou rezo ou a. Opsyon sa a pral pèmèt yo reyisi bagay sa a.
 
-#### Kopye Media pandan Duplikasyon Template (Copy Media on Template Duplication)
+#### Kopye Media pandan Duplikasyon Template (Copy Media on Template Duplication) {#copy-media-on-template-duplication}
 
 Lè ou kontwole opsyon sa a, li pral kopye media ki te telechaje sou sit template la nan sit ki te kreye la nouvo a. Sa ka chanje selon chak plan ou genyen.
 
-#### **Prensipye pou Evite Moteur Rechèch yo Indexe Site Templates (Prevent Search Engines from indexing Site Templates)**
+#### **Prensipye pou Evite Moteur Rechèch yo Indexe Site Templates (Prevent Search Engines from indexing Site Templates)** {#prevent-search-engines-from-indexing-site-templates}
 
 Site templates tankou sa nou diskite nan atik sa a se yon "boilerplate" men yo tou pèsi rezo ou, ki vle di yo tou reyèlman disponib pou motè rechèch yo jwenn. Opsyon sa a pral pèmèt ou ka kache site templates yo pou motè rechèch yo pa ka indexe yo.
 
-## Pré-rempli Site Templates ak auto search-and-replace
+## Pré-rempli Site Templates ak auto search-and-replace {#pre-populating-site-templates-with-auto-search-and-replace}
 
 Yonn nan pi fèt Ultimate Multisite la se yon pati nan pi pwisan fonksyon li a: kapasite pou w ajoute tèks, koulè, ak chyen seleksyon nan fòm reyegisyan an. Lè nou jwenn done sa yo, nou ka itilize yo pou ranpli anvan kontni nan kèk pati nan template sit la ki chwazi a. Apre sa, lè nou ap pibliye sit la ki nouvo a, Ultimate Multisite pral ranplase plaslat yo ak enfòmasyon reyèl ki te antre pandan reyegisyan an.
 
@@ -135,7 +135,7 @@ Ultimate Multisite pral apre sa ranplase plaslat yo ak done ki te bay pa kliyan 
 
 ![Placeholders replaced with customer data on the site](/img/config/site-templates-list.png)
 
-### Rezoud pwoblèm "template plezi nan plaslat"
+### Rezoud pwoblèm "template plezi nan plaslat" {#solving-the-template-full-of-placeholders-problem}
 
 Tout sa a se gran, men nou gen yon pwoblèm malgre: kounye a template sit nou yo - ki ka vizite pa kliyan nou an - plen ak plaslat malgre ki pa di anpil bagay.
 

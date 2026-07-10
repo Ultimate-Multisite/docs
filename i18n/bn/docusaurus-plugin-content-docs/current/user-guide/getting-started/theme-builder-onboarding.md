@@ -3,11 +3,11 @@ title: থিম বিল্ডার অনবোর্ডিং ফ্লো
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Theme Builder Onboarding Flow
+# Theme Builder Onboarding Flow {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 একটি গাইড করা **Theme Builder onboarding flow** নিয়ে এসেছে, যা আপনার প্রাথমিক সেটআপের সময় একটি কাস্টম ব্লক থিম তৈরি করতে সাহায্য করে। এটি লেগ্যাসি Site Builder মোডকে একটি আরও নমনীয়, এজেন্ট-সহায়তা প্রাপ্ত পদ্ধতির সাথে প্রতিস্থাপন করে।
 
-## Theme Builder Onboarding Flow কী?
+## Theme Builder Onboarding Flow কী? {#what-is-the-theme-builder-onboarding-flow}
 
 Theme Builder onboarding flow হলো একটি ইন্টারেক্টিভ সেটআপ উইজার্ড যা:
 
@@ -18,9 +18,9 @@ Theme Builder onboarding flow হলো একটি ইন্টারেক্
 
 এই ফ্লোটি **Setup Assistant agent** দ্বারা চালিত, যা স্পষ্ট প্রশ্ন করে এবং ধাপে ধাপে আপনার থিমটি তৈরি করে।
 
-## Theme Builder Onboarding শুরু করা
+## Theme Builder Onboarding শুরু করা {#starting-the-theme-builder-onboarding}
 
-### প্রথমবার সেটআপ (First-Run Setup)
+### প্রথমবার সেটআপ (First-Run Setup) {#first-run-setup}
 
 যখন আপনি নতুন WordPress ইনস্টলেশনে Superdav AI Agent প্রথমবার চালু করবেন, তখন আপনি এটি দেখতে পাবেন:
 
@@ -35,7 +35,7 @@ What would you like to do?
 
 Theme Builder onboarding flow-এ প্রবেশ করতে **"Build a custom theme"** নির্বাচন করুন।
 
-### ম্যানুয়াল অ্যাক্টিভেশন (Manual Activation)
+### ম্যানুয়াল অ্যাক্টিভেশন (Manual Activation) {#manual-activation}
 
 আপনি যেকোনো সময় নিম্নলিখিত কমান্ডগুলো ব্যবহার করে Theme Builder onboarding শুরু করতে পারেন:
 
@@ -49,9 +49,9 @@ Theme Builder onboarding flow-এ প্রবেশ করতে **"Build a cus
 "Help me create a custom theme"
 ```
 
-## Onboarding ধাপগুলো
+## Onboarding ধাপগুলো {#the-onboarding-steps}
 
-### ধাপ ১: মোড নির্বাচন (Mode Selection)
+### ধাপ ১: মোড নির্বাচন (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent আপনার পছন্দ সম্পর্কে জিজ্ঞাসা করবে:
 
@@ -63,7 +63,7 @@ How would you like to build your theme?
 
 বেশিরভাগ ব্যবহারকারীর জন্য **Guided mode** সুপারিশ করা হয়; এজেন্ট আপনার শিল্প এবং লক্ষ্যগুলির উপর ভিত্তি করে ডিজাইনের পরামর্শ দেয়।
 
-### ধাপ ২: সাইট স্পেসিফিকেশন (Site Specification)
+### ধাপ ২: সাইট স্পেসিফিকেশন (Site Specification) {#step-2-site-specification}
 
 আপনার সাইট সম্পর্কে আপনাকে জিজ্ঞাসা করা হবে:
 
@@ -74,7 +74,7 @@ How would you like to build your theme?
 
 এই তথ্যগুলি আপনার **site_brief** মেমরিতে সংরক্ষণ করা হয়, যা এজেন্টরা ভবিষ্যতের সেশনগুলিতে রেফারেন্স হিসেবে ব্যবহার করে।
 
-### ধাপ ৩: ডিজাইন সিস্টেম সিদ্ধান্ত (Design System Decisions)
+### ধাপ ৩: ডিজাইন সিস্টেম সিদ্ধান্ত (Design System Decisions) {#step-3-design-system-decisions}
 
 এজেন্ট আপনাকে ডিজাইন টোকেন নির্বাচনগুলির মাধ্যমে গাইড করে:
 
@@ -83,7 +83,7 @@ How would you like to build your theme?
 - **Spacing**: কম্প্যাক্ট, নরমাল বা স্পেসিয়াস লেআউট
 - **Motion**: অ্যানিমেশন এবং ট্রানজিশন (যদি প্রয়োজন হয়)
 
-### ধাপ ৪: থিম জেনারেশন (Theme Generation)
+### ধাপ ৪: থিম জেনারেশন (Theme Generation) {#step-4-theme-generation}
 
 Setup Assistant agent নিম্নলিখিত উপাদানগুলি দিয়ে আপনার কাস্টম ব্লক থিমটি তৈরি করে:
 
@@ -92,7 +92,7 @@ Setup Assistant agent নিম্নলিখিত উপাদানগুল
 - আপনার ডিজাইন সিস্টেমের সাথে মিল রেখে কাস্টম ব্লক স্টাইল
 - থিম মেটাডেটা এবং WordPress সাপোর্ট ডিক্লারেশন
 
-### ধাপ ৫: অ্যাক্টিভেশন এবং যাচাইকরণ (Activation and Verification)
+### ধাপ ৫: অ্যাক্টিভেশন এবং যাচাইকরণ (Activation and Verification) {#step-5-activation-and-verification}
 
 থিমটি স্বয়ংক্রিয়ভাবে সক্রিয় হয়ে যায় এবং আপনি এটি দেখতে পাবেন:
 
@@ -107,7 +107,7 @@ Setup Assistant agent নিম্নলিখিত উপাদানগুল
 
 এরপর আপনি আপনার সাইটে গিয়ে যাচাই করতে পারেন যে থিমটি সঠিকভাবে দেখাচ্ছে কিনা।
 
-## Site Specification এবং site_brief Memory
+## Site Specification এবং site_brief Memory {#site-specification-and-sitebrief-memory}
 
 অনবোর্ডিং চলাকালীন, এজেন্ট আপনার সাইটের স্পেসিফিকেশন একটি **site_brief** মেমরি ক্যাটাগরিতে ধরে রাখে। এর মধ্যে রয়েছে:
 
@@ -117,7 +117,7 @@ Setup Assistant agent নিম্নলিখিত উপাদানগুল
 - ডিজাইন পছন্দ
 - কন্টেন্ট কাঠামো
 
-### site_brief কেন গুরুত্বপূর্ণ
+### site_brief কেন গুরুত্বপূর্ণ {#why-sitebrief-matters}
 
 ভবিষ্যৎ সেশনগুলিতে, এজেন্টরা আপনার site_brief ব্যবহার করে:
 
@@ -126,7 +126,7 @@ Setup Assistant agent নিম্নলিখিত উপাদানগুল
 - প্রসঙ্গ-সচেতন সুপারিশ প্রদান করতে
 - সেটআপ প্রশ্নগুলি পুনরাবৃত্তি এড়াতে
 
-### আপনার site_brief দেখা
+### আপনার site_brief দেখা {#viewing-your-sitebrief}
 
 আপনি এজেন্টকে জিজ্ঞাসা করতে পারেন:
 
@@ -142,11 +142,11 @@ Setup Assistant agent নিম্নলিখিত উপাদানগুল
 
 এজেন্ট আপনার সংরক্ষিত সাইট স্পেসিফিকেশনটি প্রদর্শন করবে।
 
-## Onboarding-এর পরে কাস্টমাইজ করা
+## Onboarding-এর পরে কাস্টমাইজ করা {#customizing-after-onboarding}
 
 Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, আপনি যা করতে পারেন:
 
-### Design System Aesthetics Skill ব্যবহার করা
+### Design System Aesthetics Skill ব্যবহার করা {#use-the-design-system-aesthetics-skill}
 
 ডিজাইন পরিমার্জন করার জন্য অনুরোধ করুন:
 
@@ -162,7 +162,7 @@ Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, 
 
 **Design System Aesthetics skill** আপনাকে লক্ষ্যযুক্ত ডিজাইন আপডেটগুলির মাধ্যমে গাইড করে।
 
-### theme.json সরাসরি এডিট করা
+### theme.json সরাসরি এডিট করা {#edit-themejson-directly}
 
 উন্নত ব্যবহারকারীদের জন্য, রঙ টোকেন, টাইপোগ্রাফি স্কেল, স্পেসিং ভ্যালু, বর্ডার এবং শ্যাডো সংজ্ঞাগুলি সামঞ্জস্য করতে `/wp-content/themes/[theme-name]/theme.json` এডিট করুন:
 
@@ -171,7 +171,7 @@ Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, 
 - Spacing values
 - Border and shadow definitions
 
-### কাস্টম ব্লক টেমপ্লেট তৈরি করা
+### কাস্টম ব্লক টেমপ্লেট তৈরি করা {#create-custom-block-templates}
 
 হোমপেজ লেআউট, ব্লগ পোস্ট পেজ, প্রোডাক্ট পেজ, কন্টাক্ট ফর্মের জন্য কাস্টম টেমপ্লেট তৈরি করতে WordPress ব্লক এডিটর ব্যবহার করুন:
 
@@ -180,7 +180,7 @@ Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, 
 - Product pages
 - Contact forms
 
-## তুলনা: পুরোনো বনাম নতুন Onboarding
+## তুলনা: পুরোনো বনাম নতুন Onboarding {#comparison-old-vs-new-onboarding}
 
 | Feature | Site Builder (Legacy) | Theme Builder (New) |
 |---------|----------------------|-------------------|
@@ -190,7 +190,7 @@ Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, 
 | Flexibility | Fixed options | Customizable |
 | Future updates | Not referenced | Stored in site_brief |
 
-## সমস্যা সমাধান (Troubleshooting)
+## সমস্যা সমাধান (Troubleshooting) {#troubleshooting}
 
 **onboarding flow সম্পূর্ণ হয়নি**
 - ফ্লোটি পুনরায় শুরু করুন: "Start the Theme Builder onboarding"
@@ -207,7 +207,7 @@ Theme Builder onboarding সম্পূর্ণ হওয়ার পরে, 
 - এজেন্টকে "regenerate the theme with [specific changes]" জিজ্ঞাসা করুন
 - সঠিক নিয়ন্ত্রণের জন্য সরাসরি theme.json এডিট করুন
 
-## পরবর্তী পদক্ষেপ (Next Steps)
+## পরবর্তী পদক্ষেপ (Next Steps) {#next-steps}
 
 Theme Builder onboarding সম্পন্ন করার পরে:
 

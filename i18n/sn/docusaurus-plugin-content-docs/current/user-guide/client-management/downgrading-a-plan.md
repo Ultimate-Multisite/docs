@@ -3,13 +3,13 @@ title: Kupfuura Plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kufamba plani (v2)
+# Kufamba plani (v2) {#downgrading-a-plan-v2}
 
 _**CHINARI CHINARI: Iriweyi iri rinorefererwa ku Ultimate Multisite version 2.x.**_
 
 Kufamba kana plani kana subscription ndiri chirevo chinotevera kuti vachine client vachitenda kana vane rudo raunenge rine budget yakapfuura kana vakati vachiti vanovaka zvakawanda kuti vave vachida kuita subsite yavo.
 
-## Kuita sei kufamba plani
+## Kuita sei kufamba plani {#how-to-downgrade-a-plan}
 
 Vachine client vanogona kufamba plani yavo mazuva ose nekuita login ku dashboard ya admin ya subsite yavo uye kupfeka **Change** pano pachikamu chepaka pacho (account page).
 
@@ -25,7 +25,7 @@ Kuti utande, user anofanira kupfeka button ye **Complete Checkout**. Izvi zvicha
 
 ![Account page showing pending membership change banner](/img/account-page/pending-change.png)
 
-### Chii chinotevera kana user kufamba plani yavo
+### Chii chinotevera kana user kufamba plani yavo {#what-happens-when-a-user-downgrades-their-plan}
 
 Zvinotarisirwa kuti kufamba plani hachishandane configuration yakaiita panguva yauser subsite.
 
@@ -37,7 +37,7 @@ Pansi pe posts dzakasiyana dzinotevera limit raunogadzirwa panguva dzese, unenge
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Chii chiri kuitika pamusoro pe payment
+### Chii chiri kuitika pamusoro pe payment {#what-happens-to-the-payment}
 
 Muvero we 2.0, haunoda kunge kuendesa zvinhu pamusoro pe proration (kuti zvinobva nekuita).
 

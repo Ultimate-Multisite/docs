@@ -1,133 +1,154 @@
 ---
-title: ڈومین سیلر چینج لاگ
+title: ڈومین فروخت کنندہ تبدیلیوں کا ریکارڈ
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller تبدیلیوں کا ریکارڈ (Changelog)
+# ڈومین فروخت کنندہ تبدیلی لاگ {#domain-seller-changelog}
 
-Version 1.1.0 - ریلیز ہونے کی تاریخ: 2026-05-08
-- نیا: ResellerClub, Enom, اور OpenSRS registrars کے لیے DNS ریکارڈ بنانے کی سہولت (add_dns_record) شامل کی گئی ہے۔
-- ٹھیک کیا: Default DNS Records parser اب {DOMAIN} اور {SITE_URL} ٹوکنز کو برداشت کرتا ہے۔
-- ٹھیک کیا: Domain selection checkout field کے slugs کو نام-سپیس کیا گیا ہے تاکہ site_url کے ساتھ ٹکراؤ (collision) سے بچا جا سکے۔
+ورژن 1.3.0 - 2026-06-02 کو جاری کیا گیا
+- نیا: HostAfrica ری سیلر بیلنس بہت کم ہونے پر network-admin انتباہ شامل کیا
+- نیا: نئے رجسٹر شدہ ڈومینز کی network سائٹ سے خودکار میپنگ شامل کی
+- درستگی: رجسٹرنٹ فیلڈ تقاضے صرف نیا ڈومین رجسٹر کرتے وقت لاگو کیے
+- درستگی: مانیٹر بیلنس نوٹسز کو برخاست کرنے کے قابل بنایا
+- درستگی: یقینی بنایا کہ WooCommerce رجسٹرنٹ بلنگ تفصیلات محفوظ رہیں
+- درستگی: رجسٹریشن کے دوران رجسٹرنٹ رابطہ تقاضے نافذ کیے
+- درستگی: ڈومین رجسٹریشن مصنوعات کو 0% مارک اپ کے ساتھ بننے سے روکا
+- درستگی: checkout سیشن فلو کے دوران ڈومین انتخاب اور قیمتیں محفوظ رکھیں
+- درستگی: HostAfrica ڈومین قیمتوں کی کرنسی ڈسپلے بہتر بنایا
+- درستگی: WP-core query-var عدم مطابقتوں کو روکنے کے لیے checkout form-action رویہ بہتر بنایا
+- بہتر: سیٹ اپ رہنمائی میں HostAfrica ری سیلر کنفیگریشن دستاویزات لنک کیں
 
-Version 1.0.8 - ریلیز ہونے کی تاریخ: 2026-05-07
-- ٹھیک کیا: ResellerClub domain کی قیمتیں اب صحیح API endpoint سے لائیو لاگت (live cost prices) حاصل کرتی ہیں۔
+ورژن 1.2.0 - 2026-05-25 کو جاری کیا گیا
+- نیا: HostAfrica کو ڈومین فروخت کرنے والی integration کے طور پر شامل کیا، جس میں checkout، سیٹ اپ وزرڈ، lookup، TLD/قیمتیں، رجسٹریشن، تجدید، منتقلی، nameserver، DNS، EPP کوڈ، registrar lock، اور ID protection سپورٹ شامل ہے
+- نیا: Openprovider کو ڈومین فروخت کرنے والی integration کے طور پر شامل کیا، جس میں ری سیلر قیمتیں، رجسٹریشن، تجدید، منتقلی، nameserver، DNS، EPP کوڈ، registrar lock، WHOIS privacy، اور TLD sync سپورٹ شامل ہے
+- نیا: Hostinger کو ڈومین فروخت کرنے والی integration کے طور پر شامل کیا جو دستیابی چیکس، رجسٹریشن، nameserver اپ ڈیٹس، registrar lock، اور WHOIS privacy کے لیے بنیادی integration سے مشترکہ Hostinger API token استعمال کرتی ہے
+- بہتر: developer integration رہنمائی کے لیے ڈومین lifecycle action اور filter docblocks شامل کیے
+- بہتر: addon readme میں plugin compatibility metadata کو WordPress 7.0 تک اپ ڈیٹ کیا
+- بہتر: آئندہ ریلیز کوآرڈینیشن کے لیے استعمال ہونے والے planning templates اپ ڈیٹ کیے
 
-Version 1.0.7 - ریلیز ہونے کی تاریخ: 2026-05-06
-* ٹھیک کیا: ResellerClub test_connection اب مطلوبہ tlds پیرامیٹر (#224) بھیجتا ہے۔
+ورژن 1.1.0 - 2026-05-08 کو جاری کیا گیا
+- نیا: ResellerClub، Enom، اور OpenSRS registrars کے لیے DNS record creation (add_dns_record) نافذ کی گئی
+- درستگی: Default DNS Records parser اب {DOMAIN} اور {SITE_URL} tokens برداشت کرتا ہے
+- درستگی: ڈومین selection checkout field slugs کو site_url کے ساتھ ٹکراؤ روکنے کے لیے namespaced کیا گیا
 
-Version 1.0.6 - ریلیز ہونے کی تاریخ: 2026-05-05
-* ٹھیک کیا: ResellerClub domain کی رجسٹریشن اب بہتر API response handling اور registry-driven provider routing کے ساتھ صحیح طریقے سے کام کرتی ہے۔
-* ٹھیک کیا: Register Domain ایڈمن پیج کے استعمال کے تجربے (UX) میں بہتری۔
-* ہٹایا گیا: CyberPanel registrar کا انضمام (integration)۔
+ورژن 1.0.8 - 2026-05-07 کو جاری کیا گیا
+- درستگی: ResellerClub ڈومین قیمتیں اب درست API endpoint سے live cost prices حاصل کرتی ہیں
 
-Version 1.0.5 - ریلیز ہونے کی تاریخ: 2026-04-02
-* نیا: domain registration اور management کے لیے GoDaddy registrar کا انضمام۔
-* نیا: NameSilo registrar کا انضمام۔
-* نیا: ResellerClub registrar کا انضمام۔
-* نیا: domain خریدنے اور map کرنے پر SES بھیجنے والے domain کی خودکار تصدیق (Auto-verify)۔
-* ٹھیک کیا: ٹیسٹ ماحول میں Guard plugin constants کو دوبارہ تعریف (redefinition) ہونے سے بچایا گیا۔
-* ٹھیک کیا: MySQL flags کو install-wp-tests.sh میں صحیح طریقے سے word-split کیا گیا۔
+ورژن 1.0.7 - 2026-05-06 کو جاری کیا گیا
+* درستگی: ResellerClub test_connection مطلوبہ tlds parameter بھیجتا ہے (#224)
 
-Version 1.0.4 - ریلیز ہونے کی تاریخ: 2026-03-14
-* **ٹھیک کیا:** کچھ گمشدہ css assets۔
-* **ٹھیک کیا:** دستیاب tlds سے متعلق غلطی (Error)۔
+ورژن 1.0.6 - 2026-05-05 کو جاری کیا گیا
+* درستگی: ResellerClub ڈومین رجسٹریشن اب بہتر API response handling اور registry-driven provider routing کے ساتھ درست طور پر کام کرتی ہے
+* درستگی: Register Domain admin page UX بہتریاں
+* ہٹایا گیا: CyberPanel registrar integration
 
-Version 1.0.3 - ریلیز ہونے کی تاریخ: 2026-03-09
-* **ٹھیک کیا:** جب checkout shortcode کے ساتھ legacy signup template استعمال کیا جاتا ہے تو Vue reactive property errors (domain_option, selected_domain, domain_provider)۔
-* **ٹھیک کیا:** domain selection checkout field میں subdomain input field کی بے ترتیب جگہ بندی اور بہت بڑا ٹیکسٹ۔
-* **ٹھیک کیا:** جب domain selection field موجود ہوتا ہے تو "Your URL will be" پریویو بلاک کو چھپا دیا گیا ہے۔
+ورژن 1.0.5 - 2026-04-02 کو جاری کیا گیا
+* نیا: ڈومین رجسٹریشن اور مینجمنٹ کے لیے GoDaddy registrar integration
+* نیا: NameSilo registrar integration
+* نیا: ResellerClub registrar integration
+* نیا: ڈومین خریداری اور میپنگ پر SES sending domain کی خودکار تصدیق
+* درستگی: test environment میں plugin constants کو redefinition سے محفوظ رکھا
+* درستگی: MySQL flags install-wp-tests.sh میں درست طور پر word-split ہوتے ہیں
 
-Version 1.0.2 - ریلیز ہونے کی تاریخ: 2026-03-01
-* **بہتر کیا:** سیٹنگز پیج سے گلوبل مارک اپ سیٹنگز ہٹا دی گئی ہیں — اب قیمتیں صرف ہر پروڈکٹ کے لحاظ سے ہیں۔
-* **بہتر کیا:** سیٹنگز پیج پر فوری نیویگیشن کے لیے "Manage Domain Products" لنک شامل کیا گیا ہے۔
-* **بہتر کیا:** domain product settings کے لیے واضح فیلڈ تفصیلات اور ٹولٹپس (catch-all vs TLD-specific, markup types, introductory pricing)۔
-* **بہتر کیا:** سیٹنگز پیج پر ہر جگہ بہتر تفصیلات (search TLDs, renewals, DNS, notifications)۔
+ورژن 1.0.4 - 2026-03-14 کو جاری کیا گیا
+* **درستگی:** کچھ غائب css assets
+* **درستگی:** غیر دستیاب tlds سے متعلق خرابی
 
-Version 1.0.1 - ریلیز ہونے کی تاریخ: 2026-02-27
+ورژن 1.0.3 - 2026-03-09 کو جاری کیا گیا
+* **درستگی:** checkout shortcode کے ساتھ legacy signup template استعمال کرتے وقت Vue reactive property errors (domain_option, selected_domain, domain_provider)
+* **درستگی:** ڈومین selection checkout field میں subdomain input field کی غلط alignment اور بہت بڑا متن
+* **درستگی:** جب ڈومین selection field موجود ہو تو "آپ کا URL ہوگا" preview block چھپائیں
 
-* **نیا:** bulk pricing management کے لیے TLD import ٹول۔
-* **نیا:** domain products کے لیے ابتدائی قیمتوں (Introductory pricing) کی سہولت۔
-* **نیا:** Cypress کے ساتھ E2E ٹیسٹ سوٹ۔
-* **نیا:** domain lifecycle notifications کے لیے ای میل ٹیمپلیٹس۔
-* **نیا:** ایڈمن domain registration modal پر Registrant address fields، جو سیٹنگز سے پہلے سے بھرے ہوئے (pre-populated) آتے ہیں۔
-* **نیا:** add, edit, اور delete ریکارڈ سپورٹ کے ساتھ Customer DNS management interface۔
-* **نیا:** خودکار domain mapping کے ساتھ "Bring your own domain" checkout آپشن۔
-* **نیا:** checkout کے دوران domain name سے site URL خودکار طور پر بنانا۔
-* **نیا:** سیٹنگز میں default nameserver اور DNS record کی ترتیب۔
-* **نیا:** core domain edit page پر domain registration details اور DNS management۔
-* **نیا:** Setup wizard خودکار طور پر مناسب default کے ساتھ ایک default domain product بناتا ہے۔
-* **نیا:** تمام configure کردہ providers پر cron کے ذریعے روزانہ خودکار TLD sync۔
-* **نیا:** per-product configuration کے ساتھ WHOIS privacy protection (always on, customer choice, یا disabled)۔
-* **نیا:** WHOIS privacy checkout checkbox جس میں قیمت کی نمائش اور dark mode سپورٹ ہے۔
-* **نیا:** دستی domain registration کے لیے Register Domain ایڈمن پیج۔
-* **نیا:** Ultimate Multisite update server کے ذریعے خودکار plugin updates۔
-* **نیا:** product list table میں domain product type filter tab جس میں purple badge styling ہے۔
-* **نیا:** domain checkout form پر Registrant contact fields (name, address, city, state, postal code, country, phone)۔
-* **نیا:** registrar API کو کال کرنے سے پہلے Registrant field validation کے ساتھ واضح error messages۔
-* **نیا:** domain registration events کے لیے provider-specific log channels (جیسے domain-seller-namecheap.log)۔
-* **نیا:** main registration/signup checkout form پر Registrant contact fields (جب domain رجسٹر کیا جا رہا ہو تو دکھائے جاتے ہیں)۔
-* **بہتر کیا:** Domain Search checkout field کو unified Domain Selection field سے تبدیل کیا گیا ہے جو subdomain, register, اور existing domain tabs کو سپورٹ کرتا ہے۔
-* **بہتر کیا:** Domain product settings کو product edit page پر core widget system کے ذریعے inline render کیا جاتا ہے۔
-* **بہتر کیا:** Customer domain info کو standalone metabox کے بجائے core domain mapping widget میں hook کیا گیا ہے۔
-* **بہتر کیا:** TLD import wizard کو تمام providers سے ایک کلک کے ساتھ sync کرنے کے لیے آسان بنایا گیا ہے۔
-* **بہتر کیا:** Namecheap domain availability کے لیے تیز تلاش کے لیے batch API call استعمال ہوتا ہے۔
-* **بہتر کیا:** Namecheap pricing API صحیح پیرامیٹرز اور response parsing استعمال کرتا ہے۔
-* **بہتر کیا:** TLD کی مرکزی اسٹوریج کو ایک ہی network option میں رکھا گیا ہے۔
-* **بہتر کیا:** DNS changes, transfers, اور config application کے لیے Domain activity logging۔
-* **بہتر کیا:** OpenSRS کے لیے IANA master list کے ساتھ full TLD sync اور batch validation۔
-* **بہتر کیا:** Namecheap کے لیے paginated API requests کے ساتھ full TLD sync۔
-* **بہتر کیا:** legacy provider classes کو Integration Registry pattern سے تبدیل کیا گیا ہے۔
-* **بہتر کیا:** DNS اور transfer configuration کے ساتھ سیٹنگز پینل۔
-* **بہتر کیا:** فون نمبرز کو خودکار طور پر +CC.NNN registrar format میں فارمیٹ کیا جاتا ہے۔
-* **بہتر کیا:** فون فیلڈ validation جمع کرانے سے پہلے formatting characters کو ہٹا دیتا ہے۔
-* **بہتر کیا:** Version requirement کو Ultimate Multisite 2.4.12 تک بڑھایا گیا ہے جس کے ساتھ واضح نوٹس ہے۔
-* **بہتر کیا:** CI workflow addon اور core plugin دونوں کے لیے صحیح checkout استعمال کرتا ہے۔
-* **بہتر کیا:** prepare_registrant_info() checkout-saved user meta سے پڑھتا ہے جس میں billing address fallback ہوتا ہے۔
-* **ٹھیک کیا:** checkout کے دوران non-logged-in صارفین کے لیے Domain search AJAX ناکام ہو رہا تھا۔
-* **ٹھیک کیا:** checkout کے دوران non-logged-in صارفین کے لیے Domain pricing AJAX ناکام ہو رہا تھا۔
-* **ٹھیک کیا:** WP-CLI کمانڈز چلانے پر Spyc class redeclaration fatal error۔
-* **ٹھیک کیا:** Namecheap sandbox API timeout بہت کم تھا۔
-* **ٹھیک کیا:** Domain search Select button کا ٹیکسٹ green background پر نظر نہیں آ رہا تھا۔
-* **ٹھیک کیا:** "RegistrantFirstName is Missing" غلطی کی وجہ سے domain registration ناکام ہو رہا تھا کیونکہ رابطہ کی معلومات موجود نہیں تھیں۔
-* **ٹھیک کیا:** جب site checkout کے وقت موجود نہیں تھی تو domain record blog_id=0 کے ساتھ بن رہا تھا۔
-* **ٹھیک کیا:** Default TLDs setting کو parsed array کے بجائے string کے طور پر واپس کیا جا رہا تھا۔
-* **ہٹایا گیا:** Standalone Domain Management admin page — اب core domain pages کے ذریعے ہینڈل کیا جاتا ہے۔
+ورژن 1.0.2 - 2026-03-01 کو جاری کیا گیا
+* **بہتر:** settings page سے global markup settings ہٹا دیں — قیمتیں اب صرف ہر product کے لیے ہیں
+* **بہتر:** فوری navigation کے لیے settings page پر "ڈومین مصنوعات منظم کریں" لنک شامل کیا
+* **بہتر:** ڈومین product settings کے لیے زیادہ واضح field descriptions اور tooltips (catch-all بمقابلہ TLD-specific، markup types، introductory pricing)
+* **بہتر:** settings page بھر میں بہتر descriptions (search TLDs، renewals، DNS، notifications)
 
-Version 1.0.0 - ریلیز ہونے کی تاریخ: 2025-09-28
+ورژن 1.0.1 - 2026-02-27 کو جاری کیا گیا
 
-**Ultimate Multisite v2 کے لیے بڑا ری‌رائٹ**
+* **نیا:** بڑے پیمانے پر قیمتوں کے انتظام کے لیے TLD درآمد ٹول
+* **نیا:** ڈومین مصنوعات کے لیے تعارفی قیمتوں کی سپورٹ
+* **نیا:** Cypress کے ساتھ E2E ٹیسٹ سویٹ
+* **نیا:** ڈومین لائف سائیکل اطلاعات کے لیے ای میل ٹیمپلیٹس
+* **نیا:** ایڈمن ڈومین رجسٹریشن موڈل پر رجسٹرنٹ ایڈریس فیلڈز، سیٹنگز سے پہلے سے پُر شدہ
+* **نیا:** کسٹمر DNS مینجمنٹ انٹرفیس جس میں ریکارڈ شامل کرنے، ترمیم کرنے، اور حذف کرنے کی سپورٹ ہے
+* **نیا:** خودکار ڈومین میپنگ کے ساتھ "اپنا ڈومین خود لائیں" چیک آؤٹ آپشن
+* **نیا:** چیک آؤٹ کے دوران ڈومین نام سے سائٹ URL خودکار طور پر بنانا
+* **نیا:** سیٹنگز میں ڈیفالٹ نیم سرور اور DNS ریکارڈ کنفیگریشن
+* **نیا:** کور ڈومین ایڈٹ صفحے پر ڈومین رجسٹریشن تفصیلات اور DNS مینجمنٹ
+* **نیا:** سیٹ اپ وزرڈ مناسب ڈیفالٹس کے ساتھ ایک ڈیفالٹ ڈومین پروڈکٹ خودکار طور پر بناتا ہے
+* **نیا:** تمام کنفیگرڈ پرووائیڈرز میں cron کے ذریعے روزانہ خودکار TLD سنک
+* **نیا:** فی پروڈکٹ کنفیگریشن کے ساتھ WHOIS پرائیویسی تحفظ (ہمیشہ آن، کسٹمر کا انتخاب، یا غیر فعال)
+* **نیا:** قیمت کے ڈسپلے اور ڈارک موڈ سپورٹ کے ساتھ WHOIS پرائیویسی چیک آؤٹ چیک باکس
+* **نیا:** دستی ڈومین رجسٹریشن کے لیے Register Domain ایڈمن صفحہ
+* **نیا:** Ultimate Multisite اپ ڈیٹ سرور کے ذریعے خودکار plugin اپ ڈیٹس
+* **نیا:** پروڈکٹ لسٹ ٹیبل میں جامنی بیج اسٹائلنگ کے ساتھ ڈومین پروڈکٹ ٹائپ فلٹر ٹیب
+* **نیا:** ڈومین چیک آؤٹ فارم پر رجسٹرنٹ رابطہ فیلڈز (نام، ایڈریس، شہر، ریاست، پوسٹل کوڈ، ملک، فون)
+* **نیا:** واضح ایرر پیغامات کے ساتھ رجسٹرار API کو کال کرنے سے پہلے رجسٹرنٹ فیلڈ ویلیڈیشن
+* **نیا:** ڈومین رجسٹریشن واقعات کے لیے پرووائیڈر-مخصوص لاگ چینلز (مثلاً domain-seller-namecheap.log)
+* **نیا:** مین رجسٹریشن/سائن اپ چیک آؤٹ فارم پر رجسٹرنٹ رابطہ فیلڈز (ڈومین رجسٹر کرتے وقت دکھائے جاتے ہیں)
+* **بہتر:** Domain Search چیک آؤٹ فیلڈ کو متحد Domain Selection فیلڈ سے بدل دیا گیا جو سب ڈومین، رجسٹر، اور موجودہ ڈومین ٹیبز کو سپورٹ کرتا ہے
+* **بہتر:** کور ویجٹ سسٹم کے ذریعے پروڈکٹ ایڈٹ صفحے پر ڈومین پروڈکٹ سیٹنگز اِن لائن رینڈر ہوتی ہیں
+* **بہتر:** کسٹمر ڈومین معلومات اسٹینڈ الون میٹا باکس کے بجائے کور ڈومین میپنگ ویجٹ میں ہُک ہوتی ہیں
+* **بہتر:** TLD درآمد وزرڈ تمام پرووائیڈرز سے ایک کلک سنک تک آسان بنایا گیا
+* **بہتر:** Namecheap ڈومین دستیابی تیز تلاش کے لیے بیچ API کال استعمال کرتی ہے
+* **بہتر:** Namecheap پرائسنگ API درست پیرامیٹرز اور رسپانس پارسنگ استعمال کرتی ہے
+* **بہتر:** ایک واحد نیٹ ورک آپشن میں مرکزی TLD اسٹوریج
+* **بہتر:** DNS تبدیلیوں، ٹرانسفرز، اور کنفیگ ایپلیکیشن کے لیے ڈومین سرگرمی لاگنگ
+* **بہتر:** بیچ ویلیڈیشن کے ساتھ IANA ماسٹر لسٹ استعمال کرتے ہوئے OpenSRS کے لیے مکمل TLD سنک
+* **بہتر:** پیجینیٹڈ API درخواستوں کے ساتھ Namecheap کے لیے مکمل TLD سنک
+* **بہتر:** پرانی پرووائیڈر کلاسز کو Integration Registry پیٹرن سے بدل دیا گیا
+* **بہتر:** DNS اور ٹرانسفر کنفیگریشن کے ساتھ سیٹنگز پینل
+* **بہتر:** فون نمبرز خودکار طور پر +CC.NNN رجسٹرار فارمیٹ میں فارمیٹ کیے جاتے ہیں
+* **بہتر:** فون فیلڈ ویلیڈیشن جمع کرانے سے پہلے فارمیٹنگ حروف ہٹا دیتی ہے
+* **بہتر:** ورژن تقاضہ Ultimate Multisite 2.4.12 تک بڑھا دیا گیا، زیادہ واضح نوٹس کے ساتھ
+* **بہتر:** CI ورک فلو addon اور کور plugin دونوں کے لیے درست checkout استعمال کرتا ہے
+* **بہتر:** prepare_registrant_info() چیک آؤٹ میں محفوظ user meta سے پڑھتا ہے، billing address fallback کے ساتھ
+* **درست:** چیک آؤٹ کے دوران لاگ اِن نہ ہونے والے صارفین کے لیے ڈومین سرچ AJAX ناکام ہو رہا تھا
+* **درست:** چیک آؤٹ کے دوران لاگ اِن نہ ہونے والے صارفین کے لیے ڈومین پرائسنگ AJAX ناکام ہو رہا تھا
+* **درست:** WP-CLI کمانڈز چلاتے وقت Spyc کلاس دوبارہ اعلان ہونے کا فیٹل ایرر
+* **درست:** Namecheap sandbox API ٹائم آؤٹ بہت کم تھا
+* **درست:** ڈومین سرچ Select بٹن کا متن سبز پس منظر پر نظر نہیں آ رہا تھا
+* **درست:** رابطہ معلومات غائب ہونے کی وجہ سے "RegistrantFirstName is Missing" ایرر کے ساتھ ڈومین رجسٹریشن ناکام ہو رہی تھی
+* **درست:** جب چیک آؤٹ وقت پر سائٹ ابھی موجود نہیں تھی تو blog_id=0 کے ساتھ ڈومین ریکارڈ بنایا گیا
+* **درست:** ڈیفالٹ TLDs سیٹنگ پارسڈ ارے کے بجائے سٹرنگ کے طور پر واپس آ رہی تھی
+* **ہٹایا گیا:** اسٹینڈ الون Domain Management ایڈمن صفحہ — اب کور ڈومین صفحات کے ذریعے سنبھالا جاتا ہے
 
-* **نیا:** جدید PHP 7.4+ architecture کے ساتھ مکمل ری‌رائٹ۔
-* **نیا:** Ultimate Multisite v2 checkout system کے ساتھ ہموار انضمام۔
-* **نیا:** لچکدار قیمتوں کے آپشنز کے ساتھ domain product management۔
-* **نیا:** متعدد domain provider سپورٹ architecture۔
-* **نیا:** خودکار تجدید (Auto-renewal) اور subscription انضمام۔
-* **نیا:** Customer domain management interface۔
-* **نیا:** ایڈمن domain monitoring اور logs۔
-* **نیا:** domain products کے لیے Coupon سپورٹ۔
-* **نیا:** جامع سیٹنگز مینجمنٹ۔
-* **نیا:** Developer-friendly extensible codebase۔
-* **بہتر کیا:** OpenSRS provider کو مکمل فیچر سپورٹ کے ساتھ اپ ڈیٹ کیا گیا۔
-* **بہتر کیا:** Ultimate Multisite v2 کے مطابق جدید UI۔
-* **ٹھیک کیا:** تمام deprecated v1 کوڈ کو v2 معیارات میں اپ ڈیٹ کیا گیا۔
-* **ہٹایا گیا:** Legacy v1 compatibility (breaking change)۔
+ورژن 1.0.0 - 2025-09-28 کو جاری کیا گیا
 
-### پچھلے ورژن (v1 Legacy)
+**Ultimate Multisite v2 کے لیے بڑی ازسرِنو تحریر**
 
-### Version 0.0.3 - 20/08/2019
+* **نیا:** جدید PHP 7.4+ آرکیٹیکچر کے ساتھ مکمل ازسرِنو تحریر
+* **نیا:** Ultimate Multisite v2 چیک آؤٹ سسٹم کے ساتھ ہموار انضمام
+* **نیا:** لچکدار قیمتوں کے آپشنز کے ساتھ ڈومین پروڈکٹ مینجمنٹ
+* **نیا:** متعدد ڈومین پرووائیڈر سپورٹ آرکیٹیکچر
+* **نیا:** آٹو رینیول اور سبسکرپشن انضمام
+* **نیا:** کسٹمر ڈومین مینجمنٹ انٹرفیس
+* **نیا:** ایڈمن ڈومین مانیٹرنگ اور لاگز
+* **نیا:** ڈومین مصنوعات کے لیے کوپن سپورٹ
+* **نیا:** جامع سیٹنگز مینجمنٹ
+* **نیا:** ڈیولپر کے لیے موزوں قابلِ توسیع کوڈ بیس
+* **بہتر:** مکمل فیچر سپورٹ کے ساتھ OpenSRS پرووائیڈر اپ ڈیٹ کیا گیا
+* **بہتر:** Ultimate Multisite v2 کے مطابق جدید UI
+* **درست:** تمام فرسودہ v1 کوڈ v2 معیارات کے مطابق اپ ڈیٹ کیا گیا
+* **ہٹایا گیا:** Legacy v1 مطابقت (بریکنگ تبدیلی)
 
-* ٹھیک کیا: Groundhogg CRM کے ساتھ عدم مطابقت (Incompatibility)۔
-* نوٹ: یہ آخری v1-compatible ریلیز تھی۔
+### پچھلے ورژنز (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.2 - 07/12/2018
+### ورژن 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* ٹھیک کیا: License Key فیلڈ ہٹا دیا گیا۔
-* ٹھیک کیا: Plan tabs غائب تھے جب فیچر plugin فعال تھا۔
-* بہتر کیا: رجسٹریشن فیلڈ پر ایک skip بٹن شامل کیا گیا۔
+* درست: Groundhogg CRM کے ساتھ عدم مطابقت
+* نوٹ: یہ آخری v1-مطابقت رکھنے والی ریلیز تھی
 
-### Version 0.0.1 - ابتدائی ریلیز
+### ورژن 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* WP Ultimo v1 کے لیے بنیادی OpenSRS انضمام۔
-* سادہ domain search اور رجسٹریشن۔
-* Plan پر مبنی domain permissions۔
+* درست: License Key فیلڈ ہٹا دی گئی
+* درست: فیچر plugin فعال ہونے پر Plan ٹیبز غائب تھے
+* بہتر: رجسٹریشن فیلڈ پر اسکیپ بٹن شامل کیا گیا
+
+### ورژن 0.0.1 - ابتدائی ریلیز {#version-001---initial-release}
+
+* WP Ultimo v1 کے لیے بنیادی OpenSRS انضمام
+* سادہ ڈومین تلاش اور رجسٹریشن
+* Plan پر مبنی ڈومین اجازتیں

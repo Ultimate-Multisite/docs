@@ -3,7 +3,7 @@ title: Truy cập Trang Tài khoản
 sidebar_position: 3
 _i18n_hash: eda32d736557d2ea1bcaae3b3a908159
 ---
-# Làm thế nào để truy cập trang tài khoản lần đầu tiên?
+# Làm thế nào để truy cập trang tài khoản lần đầu tiên? {#how-can-i-access-my-account-page-for-the-first-time}
 
 Chào mừng bạn đến với Ultimate Multisite!
 

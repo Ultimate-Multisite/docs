@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Integrazzjoni ma' Mailchimp
+
+Integra n-network Multisite Ultimate tiegħek ma' Mailchimp tiegħek. Tista' torbot ċerti pjanijiet ma' Mailchimp Lists u żżid awtomatikament abbonati ma' dawk il-listi waqt ir-reġistrazzjoni.
+
+## Installazzjoni {#installation}
+
+1. Tella' 'ultimate-multisite-mailchimp' fid-direttorju '/wp-content/plugins/'
+2. Attiva l-plugin permezz tal-menu 'Plugins' fil-WordPress Network Admin tiegħek
+
+## Gwida għall-Użu {#usage-guide}
+
+Is-sinkronizzazzjoni tal-emails tal-abbonati mal-listi MailChimp tiegħek hija tassew faċli bl-Add-on Ultimate Multisite: MailChimp Integration tagħna. Dan it-tutorjal għandu l-għan li jgħinek tissettja kollox!
+
+## Kif tikseb API key {#getting-an-api-key}
+
+Qabel ma nibdew nidħlu fis-settings differenti disponibbli, neħtieġu MailChimp API key. Din se tippermetti lil Ultimate Multisite jikkomunika mal-MailChimp API biex jiġbor listi, gruppi, u jżid indirizzi tal-email ma' dawk il-listi u gruppi meta l-utenti jirreġistraw.
+
+Segwi dan it-tutorjal biex tikseb il-MailChimp API key tiegħek: [Dwar API Keys | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Stampa tal-iskrin mhux disponibbli: settings tal-MailChimp API key fis-Settings tal-Add-on ta' Ultimate Multisite -->
+
+_Żid il-MailChimp API key tiegħek fuq_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Mod ta' Integrazzjoni {#integration-mode}
+
+L-add-on MailChimp Integration joffri żewġ “modi ta' integrazzjoni”, li jfisser li hemm żewġ modi differenti kif tista' tuża l-add-on biex tissinkronizza indirizzi tal-email.
+
+<!-- Stampa tal-iskrin mhux disponibbli: għażla tal-mod ta' integrazzjoni MailChimp b'għażliet Multiple Lists u Single List -->
+
+_Żewġ modi ta' integrazzjoni għal flessibbiltà akbar!_
+
+### Mod 1: Listi Multipli {#mode-1-multiple-lists}
+
+Il-mod predefinit juża **Listi Multipli**. Dan il-mod jippermettilek tagħżel diversi listi MailChimp għal kull wieħed mill-pjanijiet. Din hija l-aħjar għażla jekk taqsam lill-utenti tiegħek f'listi differenti.
+
+Pereżempju, ejja nassumu li għandek 3 listi differenti fuq il-kont MailChimp tiegħek: **Newsletter** , **Plan A** , u **Plan B**. Trid li l-utenti kollha, irrispettivament mill-pjan tagħhom, ikunu inklużi wkoll fil-lista Newsletter, sabiex ma jitilfux l-aġġornamenti tiegħek.
+
+Biex tikseb dan, tista' tuża l-mod Multiple Lists biex iżżid iż-żewġ listi **Newsletter** u **Plan A** mal-Plan A MailChimp Settings, u **Newsletter** u **Plan B** mal-Plan B MailChimp Settings.
+
+<!-- Stampa tal-iskrin mhux disponibbli: għażla tal-listi predefiniti ta' MailChimp għal kontijiet ġodda u kontijiet ikkanċellati -->
+
+_Agħżel il-listi predefiniti għal kontijiet ġodda u għal kontijiet ikkanċellati_
+
+### Mod 2: Lista Waħda + Gruppi Multipli {#mode-2-single-list--multiple-groups}
+
+MailChimp jippermettilek taqsam il-lista tiegħek fi gruppi iżgħar ta' utenti msejħa **Gruppi**. Dan jippermettilek ikollok aktar kontroll peress li tista' tibgħat kampanja lil sottogrupp speċifiku tal-abbonati tiegħek mingħajr ma jkollok toħloq diversi kopji tal-istess kampanja fuq MailChimp (li jagħmilha diffiċli biex tanalizza l-metriċi ta' dik il-kampanja wara).
+
+Pereżempju, jista' jkollok lista waħda msejħa **My Network Subscribers,** u fiha jkollok gruppi għal **Plan A** u **Plan B**.
+
+<!-- Stampa tal-iskrin mhux disponibbli: għażla ta' lista waħda u gruppi ta' MailChimp għal-listi predefiniti -->
+
+_Agħżel il-listi u l-gruppi predefiniti, jekk qed tuża l-mod ta' integrazzjoni “lista waħda + gruppi multipli”_
+
+## Listi u Gruppi Predefiniti {#default-lists-and-groups}
+
+Wara li tagħżel liema mod ta' integrazzjoni jagħmel aktar sens għall-każ ta' użu partikolari tiegħek, ikun wasal iż-żmien li tagħżel il-listi predefiniti (u l-gruppi, skont il-mod). Il-lista predefinita tintuża meta pjan partikolari ma jkollux Lista speċifika magħżula.
+
+Tista' tagħżel ukoll il-lista predefinita għal kontijiet ikkanċellati. Kull meta utent itemm is-sottoskrizzjoni tiegħu jew tagħha u jneħħi l-kont tiegħu jew tagħha min-network tiegħek, l-indirizz tal-email tiegħu jew tagħha jiġi mċaqlaq għal-lista ssettjata għal kontijiet ikkanċellati.
+
+## Kif tattiva Double Subscription {#enabling-double-subscription}
+
+Fuq l-istess paġna tas-settings, tkun tista' tattiva **Double Subscription**. Din l-għażla se żżid lill-utent kemm mal-lista predefinita magħżula U mal-lista magħżula għall-pjan ta' dak l-utent. Jekk din l-għażla mhix attivata, l-utent jiżdied biss mal-lista magħżula għall-pjan tal-utent. Jekk ma jkun hemm ebda waħda ssettjata għal dak il-pjan partikolari, allura l-utent jiżdied mal-lista predefinita magħżula.
+
+<!-- Stampa tal-iskrin mhux disponibbli: setting tat-toggle tad-double subscription ta' MailChimp -->
+
+_Tista' jkollok lill-utenti tiegħek abbonati kemm mal-lista predefinita kif ukoll mal-lista tal-pjan waqt ir-reġistrazzjoni_
+
+## Kif tagħżel Listi u Gruppi għal kull wieħed mill-Pjanijiet {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Mur fil-**Pjanijiet** tiegħek u agħżel il-pjan li trid teditja. Innota li fuq il-meta-box **Advanced Options**, se tkun disponibbli tab ġdida msejħa MailChimp.
+
+Fuq dik it-tab, tkun tista' tagħżel diversi listi jew lista waħda u diversi gruppi (skont il-mod ta' integrazzjoni) għal dak il-pjan.
+
+<!-- Stampa tal-iskrin mhux disponibbli: tab MailChimp fuq il-paġna tal-editjar tal-pjan li turi l-għażla tal-listi u l-gruppi -->
+
+_Agħżel il-Listi u l-Gruppi li trid tuża għal kull wieħed mill-pjanijiet tiegħek_
+
+Meta utent ġdid jirreġistra għal dak il-pjan, l-indirizz tal-email tiegħu jiżdied mal-listi u l-gruppi magħżula!

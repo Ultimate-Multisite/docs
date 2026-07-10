@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Mailchimp-integraatio
+
+Integroi Multisite Ultimate -verkkosi Mailchimpiin. Voit linkittää tietyt sopimukset Mailchimp-listoihin ja lisätä tilaajat automaattisesti näille listoille rekisteröitymisen yhteydessä.
+
+## Asennus {#installation}
+
+1. Lataa 'ultimate-multisite-mailchimp' hakemistoon '/wp-content/plugins/'
+2. Aktivoi lisäosa 'Lisäosat'-valikon kautta WordPress-verkon ylläpidossa
+
+## Käyttöopas {#usage-guide}
+
+Tilaajien sähköpostien synkronointi MailChimp-listojesi kanssa on todella helppoa Ultimate Multisite: MailChimp Integration -lisäosallamme. Tämän ohjeen tarkoituksena on auttaa sinua määrittämään kaikki!
+
+## API-avaimen hankkiminen {#getting-an-api-key}
+
+Ennen kuin alamme käydä läpi eri saatavilla olevia asetuksia, tarvitsemme MailChimp API -avaimen. Sen avulla Ultimate Multisite voi kommunikoida MailChimp API:n kanssa ja hakea listoja ja ryhmiä sekä lisätä sähköpostiosoitteita näille listoille ja näihin ryhmiin, kun käyttäjät rekisteröityvät.
+
+Seuraa tätä ohjetta hankkiaksesi oman MailChimp API -avaimesi: [Tietoja API-avaimista | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp API -avaimen asetukset Ultimate Multisite -lisäosan asetuksissa -->
+
+_Lisää MailChimp API -avaimesi kohdassa_ _**Ultimate Multisite -asetukset - > Lisäosan asetukset -> MailChimp**_
+
+## Integraatiotila {#integration-mode}
+
+MailChimp Integration -lisäosa tarjoaa kaksi “integraatiotilaa”, mikä tarkoittaa, että voit käyttää lisäosaa sähköpostiosoitteiden synkronointiin kahdella eri tavalla.
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp-integraatiotilan valinta vaihtoehdoilla Useita listoja ja Yksi lista -->
+
+_Kaksi integraatiotilaa lisää joustavuutta varten!_
+
+### Tila 1: Useita listoja {#mode-1-multiple-lists}
+
+Oletustila käyttää **useita listoja**. Tämän tilan avulla voit valita useita MailChimp-listoja kullekin sopimukselle. Tämä on paras vaihtoehto, jos jaottelet käyttäjäsi eri listoihin.
+
+Oletetaan esimerkiksi, että MailChimp-tililläsi on 3 eri listaa: **Uutiskirje** , **Sopimus A** , ja **Sopimus B**. Haluat, että kaikki käyttäjät sopimuksesta riippumatta sisällytetään myös Uutiskirje-listalle, jotta he eivät jää paitsi päivityksistäsi.
+
+Tämän saavuttamiseksi voit käyttää Useita listoja -tilaa lisätäksesi sekä **Uutiskirje**- että **Sopimus A** -listat Sopimus A:n MailChimp-asetuksiin ja **Uutiskirje**- sekä **Sopimus B** -listat Sopimus B:n MailChimp-asetuksiin.
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp-oletuslistojen valinta uusille tileille ja peruutetuille tileille -->
+
+_Valitse oletuslistat uusille tileille ja peruutetuille tileille_
+
+### Tila 2: Yksi lista + useita ryhmiä {#mode-2-single-list--multiple-groups}
+
+MailChimp antaa sinun jaotella listasi pienempiin käyttäjäryhmiin, joita kutsutaan **ryhmiksi**. Tämä antaa sinulle enemmän hallintaa, koska voit lähettää kampanjan tietylle tilaajajoukkosi osalle ilman, että sinun tarvitsee luoda useita kopioita samasta kampanjasta MailChimpissä (mikä vaikeuttaa kampanjan mittareiden analysointia jälkikäteen).
+
+Voit esimerkiksi käyttää yhtä listaa nimeltä **Verkkoni tilaajat,** ja sen sisällä ryhmiä **Sopimus A**:lle ja **Sopimus B**:lle.
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp-yksittäisen listan ja ryhmien valinta oletuslistoille -->
+
+_Valitse oletuslistat ja ryhmät, jos käytät “yksi lista + useita ryhmiä” -integraatiotilaa_
+
+## Oletuslistat ja -ryhmät {#default-lists-and-groups}
+
+Kun olet valinnut, mikä integraatiotila sopii parhaiten omaan käyttötapaukseesi, on aika valita oletuslistat (ja ryhmät tilasta riippuen). Oletuslistaa käytetään, kun tietylle sopimukselle ei ole valittu erillistä listaa.
+
+Voit myös valita oletuslistan peruutetuille tileille. Aina kun käyttäjä päättää tilauksensa ja poistaa tilinsä verkostasi, hänen sähköpostiosoitteensa siirretään peruutetuille tileille määritetylle listalle.
+
+## Kaksinkertaisen tilauksen ottaminen käyttöön {#enabling-double-subscription}
+
+Samalla asetussivulla voit ottaa käyttöön **kaksinkertaisen tilauksen**. Tämä vaihtoehto lisää käyttäjän sekä valitulle oletuslistalle ETTÄ kyseisen käyttäjän sopimukselle valitulle listalle. Jos tätä vaihtoehtoa ei ole otettu käyttöön, käyttäjä lisätään vain käyttäjän sopimukselle valitulle listalle. Jos kyseiselle sopimukselle ei ole asetettu mitään, käyttäjä lisätään valitulle oletuslistalle.
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp-kaksinkertaisen tilauksen vaihtokytkimen asetus -->
+
+_Voit tilata käyttäjäsi sekä oletuslistalle että sopimuksen listalle rekisteröitymisen yhteydessä_
+
+## Listojen ja ryhmien valitseminen kullekin sopimukselle {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Siirry **sopimuksiisi** ja valitse sopimus, jota haluat muokata. Huomaa, että **Lisäasetukset**-metalaatikossa on käytettävissä uusi MailChimp-niminen välilehti.
+
+Tällä välilehdellä voit valita useita listoja tai yhden listan ja useita ryhmiä (integraatiotilasta riippuen) kyseiselle sopimukselle.
+
+<!-- Kuvakaappaus ei saatavilla: MailChimp-välilehti sopimuksen muokkaussivulla, jossa näkyy listojen ja ryhmien valinta -->
+
+_Valitse listat ja ryhmät, joita haluat käyttää kullekin sopimuksellesi_
+
+Kun uusi käyttäjä rekisteröityy kyseiseen sopimukseen, hänen sähköpostiosoitteensa lisätään valituille listoille ja ryhmiin!

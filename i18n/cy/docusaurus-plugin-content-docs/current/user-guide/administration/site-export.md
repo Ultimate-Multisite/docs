@@ -3,27 +3,27 @@ title: Export y gartref
 sidebar_position: 11
 _i18n_hash: d25255aa1b01df64a9008f91e3dcbeb1
 ---
-# Export y Safl
+# Export y Safl {#site-export}
 
 Mae'r pagedd admin **Site Export** yn sylw'n gael eich rhaglenau (network administrators) i gwneud olygu un safle, neu'r holl rheol (network), i gael ei archiwio i ddefnyddio ar gyfer migraiddio, baka, neu gweithrediad trefnu.
 
-## Exportio un safle
+## Exportio un safle {#exporting-one-site}
 
 Rydych chi ar **Ultimate Multisite > Site Export** a chwilio am **Generate new Site Export**. Dewch chwilio y subsite sydd eich bod eisiau exportio, yna dewch chwilio o fewn aroli (archive) bydd yn cynnwys uploads, plugins, a themes.
 
 Pan fydd yr export wedi'i gwblhau, deallwch y ZIP o'r llyfr **Existing Exports**. Mae ZIPs exportio ar hyn o bryd yn cynnwys `index.php` sy'n deithio yn ei hun (self-booting) a `readme.txt`, felly gallai'r archiw cael ei ddefnyddio ar gyfer host newydd a entynnu heb ddechrau installio plugin importwr parhaol.
 
-## Exportio'r holl rheol
+## Exportio'r holl rheol {#exporting-the-whole-network}
 
 Defnyddiwch **Network Export** ar pagedd Site Export pan oes gennychu angen un archiwio sydd yn cynnwys pob subsite yn y rheol. Mae hyn yn ddefnyddiol قبل migraiddio host, gwylio'r gweithrediadau cael anghyddu (disaster-recovery drills), neu adnewidiadau mewn stadiad lle mae'r un subsite'n angen mynd gyda'i gilydd.
 
 Oherwydd bod export rheol yn gallu fod yn fawr iawn na export safle unig, gwneud ei chwarae yn ystod amser o ddefnydd (low-traffic window) a sicrwch bod y storiad cyflwyniadau'n cael ei gael i'r cyfathrebu cyflym ar gyfer uploads, plugins, themes, a ZIPs a gennychu.
 
-### Network Import Bundles
+### Network Import Bundles {#network-import-bundles}
 
 Eryng gyda Ultimate Multisite 2.12.0, gallai Site Exporter cynrychioli **network import bundles** — archiwioedd specialaidd a ddynol i'r ddefnydd o safleoedd yn y rheol (network-wide site restoration). Mae network import bundle yn cynnwys pob ffeil sydd angen i gael yr holl ffeiliaid a metadata i adnewidiariad safleoedd am ystod newydd.
 
-#### Cynrychioli Network Import Bundle
+#### Cynrychioli Network Import Bundle {#generating-a-network-import-bundle}
 
 1. Ymddwch i **Ultimate Multisite > Site Export**
 2. Clic ar **Generate new Network Export** (Genera new Export o Rheoliad Cyd-gynllun)
@@ -32,7 +32,7 @@ Eryng gyda Ultimate Multisite 2.12.0, gallai Site Exporter cynrychioli **network
 5. Clic ar **Generate** (Genera)
 6. Ddych chiwffordio'r ZIP bundle o'r llyfrgell **Existing Exports**
 
-#### Reddodi o'r Network Import Bundle
+#### Reddodi o'r Network Import Bundle {#restoring-from-a-network-import-bundle}
 
 I redi sites o'r network import bundle:
 
@@ -51,7 +51,7 @@ Ychwanegwch y network import bundles:
 - Cyflwyniadau media (if included in the bundle)
 - Cwmiadau database a data (Custom database tables and data)
 
-## Rheoli ZIP export sy'n gweithio yn ei hun ar host newydd
+## Rheoli ZIP export sy'n gweithio yn ei hun ar host newydd {#installing-a-self-booting-export-zip}
 
 I redi ZIP sy'n gweithio yn ei hun ar host newydd:
 

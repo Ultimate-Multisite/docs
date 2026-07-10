@@ -4,22 +4,21 @@ title: Aktion - wu_membership_post_renew
 sidebar_label: wu_membership_post_renew
 _i18n_hash: fbad65cce616f38b3b55d48b037365ad
 ---
-# Action: wu_membership_post_renew
+# Aktion: wu_membership_post_renew {#action-wumembershippostrenew}
 
-Auslöst nach der Verlängerung der Mitgliedschaft.
+Wird nach der Verlängerung der Mitgliedschaft ausgelöst.
 
-## Parameter
+## Parameter {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
-| $expiration | `string` | Neues Ablaufdatum, das gesetzt werden soll. |
-| $membership_id | `int` | Die ID der Mitgliedschaft. |
-| $membership | `\Membership` | Mitgliedschaftsobjekt. |
+| $expiration | `string` | New expiration date to be set. |
+| $membership_id | `int` | The ID of the membership. |
+| $membership | `\Membership` | Membership object. |
 
-### Seit
+### Seit {#since}
 
 - 2.0
+### Quelle {#source}
 
-### Quelle
-
-Definiert in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) at line 2235
+Definiert in [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2235) in Zeile 2235

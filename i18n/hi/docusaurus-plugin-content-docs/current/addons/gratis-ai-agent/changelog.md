@@ -3,11 +3,11 @@ title: चेंजलॉग
 sidebar_position: 5
 _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 ---
-# Changelog
+# Changelog {#changelog}
 
-## 1.9.0 — Released on 2026-04-28
+## 1.9.0 — Released on 2026-04-28 {#190--released-on-2026-04-28}
 
-### New
+### New {#new}
 
 - **`create_contact_form` ability** — यह सक्रिय फॉर्म प्लगइन (Contact Form 7, WPForms, Fluent Forms, या Gravity Forms) का उपयोग करके एक संपर्क फ़ॉर्म बनाता है और एक शॉर्टकोड लौटाता है जिसे किसी भी पोस्ट या पेज में एम्बेड किया जा सकता है।
 - **`set_featured_image` ability** — यह किसी मौजूदा Media Library अटैचमेंट ID या एक रिमोट URL से पोस्ट या पेज के लिए एक फीचर्ड इमेज असाइन करता है; यदि URL प्रदान किया जाता है तो यह स्वचालित रूप से इमेज को इम्पोर्ट करता है।
@@ -19,7 +19,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restore last session** — चैट पैनल अब पेज लोड होने पर और विजेट खुलने पर सबसे हाल की बातचीत को स्वचालित रूप से रीलोड करता है, इसलिए पेज नेविगेशन के दौरान संदर्भ कभी खोता नहीं है।
 - **Plugin action links** — सेटिंग्स और Abilities Registry के लिए त्वरित लिंक अब वर्डप्रेस के **Plugins → Installed Plugins** स्क्रीन पर प्लगइन विवरण के नीचे दिखाई देते हैं।
 
-### Improved
+### Improved {#improved}
 
 - **Image source retry** — डाउनलोड विफल होने पर एजेंट अब AI-जनरेटेड इमेज पर वापस जाने से पहले सभी कॉन्फ़िगर किए गए मुफ्त इमेज स्रोतों को पुनः प्रयास करता है।
 - **Model info panel** — यह चैट हेडर में हमेशा दिखाई देता है; अब पहले संदेश के बाद छिपाया नहीं जाता है।
@@ -29,7 +29,7 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Chat widget redesign** — एकीकृत AI आइकन पिछले कस्टम अवतार को बदलता है; यह बिल्ट-इन एजेंट सिस्टम के अनुरूप है।
 - **URL linkification** — सिस्टम संदेशों और त्रुटि संदेश बबल्स में दिखाई देने वाले URL अब क्लिक करने योग्य लिंक के रूप में रेंडर किए जाते हैं।
 
-### Fixed
+### Fixed {#fixed}
 
 - **Ability discoverability** — विवरण, सिस्टम प्रॉम्प्ट संदर्भ, और नेमस्पेस संरेखण को ठीक किया गया है ताकि सभी abilities एजेंट की टूल सूची में विश्वसनीय रूप से दिखाई दें।
 - **Providers cache** — प्रोवाइडर्स को अब एक वर्ज़न काउंटर के माध्यम से साइट-वाइड कैश किया जाता है, जिससे मल्टीसाइट नेटवर्क पर पुराने प्रोवाइडर (stale-provider) की समस्या को रोका जा सके।
@@ -44,9 +44,9 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.4.0 — Released on 2026-04-09
+## 1.4.0 — Released on 2026-04-09 {#140--released-on-2026-04-09}
 
-### New
+### New {#new-1}
 
 - **WP-CLI benchmark command** (`wp gratis-ai-agent benchmark`) — CI पाइपलाइनों और मॉडल मूल्यांकन वर्कफ़्लो के लिए कमांड लाइन से Agent Capabilities v1 बेंचमार्क सूट चलाता है। प्रति-प्रश्न रन, प्रोवाइडर/मॉडल ओवरराइड्स, और JSON/CSV आउटपुट का समर्थन करता है।
 - **Agent Capabilities v1 benchmark suite** — जटिल, बहु-चरणीय प्रॉम्प्ट का एक संरचित सेट जो पूरी ability सतह का अभ्यास करता है, जिसमें स्कोरिंग और टोकन/अवधि रिपोर्टिंग शामिल है।
@@ -61,11 +61,11 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 - **Restaurant website benchmark question** (`q-restaurant-website`) — CPT रजिस्ट्रेशन, डिज़ाइन सिस्टम, नेविगेशन, और प्लगइन डिस्कवरी को कवर करने वाला एंड-टू-एंड टेस्ट।
 - **AI provider connector plugins** को तेज़ लोकल डेवलपमेंट सेटअप के लिए WordPress Playground blueprints में जोड़ा गया।
 
-### Improved
+### Improved {#improved-1}
 
 - README को AI provider connector डॉक्यूमेंटेशन और सेटअप निर्देशों के साथ अपडेट किया गया।
 
-### Fixed
+### Fixed {#fixed-1}
 
 - `main` ब्रांच पर 25 PHPUnit टेस्ट विफलताओं को हल किया गया।
 - `blueprint.json` में GitHub releases URL फॉर्मेट को ठीक किया गया।
@@ -73,6 +73,6 @@ _i18n_hash: 59cb5f1cda2a3e8a789dcd3d67db33db
 
 ---
 
-## 1.3.x
+## 1.3.x {#13x}
 
 _पिछला रिलीज़ नोट्स प्लगइन रिपॉजिटरी में बनाए रखा गया है।_

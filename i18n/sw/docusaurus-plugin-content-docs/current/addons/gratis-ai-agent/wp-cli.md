@@ -3,11 +3,11 @@ title: Mwongozo wa WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# Rejeleo la WP-CLI
+# Rejeleo la WP-CLI {#wp-cli-reference}
 
 Gratis AI Agent inatuma amani ya amri ya `wp gratis-ai-agent` kwa ajili ya kupima uwezo wa agent, kusimamia uwezo (abilities), na kuuliza hali ya agent kutoka kwenye command line. Amri zote zinahitaji WP-CLI 2.0 au zaidi.
 
-## Usakinishaji (Installation)
+## Usakinishaji (Installation) {#installation}
 
 Amri za WP-CLI zinajisajili kiotomatiki wakati plugin inapoanzishwa. Thibitisha kwa kutumia:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 Inaendesha seti ya kupima uwezo wa Agent — ni seti ya maelekezo magumu na ya hatua nyingi ambayo yanajaribu uwezo wote. Tumia hili kutathmini utendaji wa mfumo (model), kulinganisha watoa huduma wa AI, au kuthibitisha vifurushi vya uwezo kabla ya kuweka kwenye mfumo halisi (production).
 
-### Muhtasari (Synopsis)
+### Muhtasari (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Chaguo (Options)
+### Chaguo (Options) {#options}
 
 | Chaguo | Maelezo |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Muundo wa matokeo: `table` (kawaida), `json`, `csv` |
 | `--save` | Hifadhi matokeo ya kupima kwenye database kwa ajili ya kulinganisha kihistoria |
 
-### Mifano (Examples)
+### Mifano (Examples) {#examples}
 
 Endesha seti nzima ya kupima kwa kutumia watoa huduma na mfumo wa sasa:
 
@@ -57,7 +57,7 @@ Endesha kwa kutumia mfumo maalum na kuhifadhi matokeo:
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Matokeo (Output)
+### Matokeo (Output) {#output}
 
 Kupima hutoa safu moja kwa kila swali na safu zifuatazo:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Maswali ya Kupima (Benchmark Questions)
+### Maswali ya Kupima (Benchmark Questions) {#benchmark-questions}
 
 Seti ya kawaida inajumuisha:
 
@@ -95,11 +95,11 @@ Maswali zaidi yanaweza kujisajili kupitia filter ya `gratis_ai_agent_benchmark_q
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 Inasimamia uwezo vilivyosakinishwa na vifurushi vya uwezo.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 Inorodhesha uwezo wote zilizosajiliwa, chanzo chao (core au pack), na hali yao ya sasa.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 Inapakua na kuwezesha vifurushi vya uwezo kutoka kwenye registry.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 Inazimisha uwezo maalum bila kuondoa kifurushi. Inafaa kwa kuzuia uwezo wa agent kwenye tovuti fulani.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 Inuwezesha tena uwezo uliozimishwa hapo awali.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 Inaonyesha mipangilio ya sasa ya agent na hali ya muunganisho.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 Inaonyesha shughuli za hivi karibuni za agent kutoka kwenye log ya debug.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 Inarejesha hali ya agent: inafuta CSS iliyoingizwa, inaondoa CPTs na taxonomies zilizosajiliwa na agent, inarejesha mipangilio ya global styles, na inafuta cache ya options ya agent. Haiondii plugin au mipangilio yake.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Vitengo vya Kutoka (Exit Codes)
+## Vitengo vya Kutoka (Exit Codes) {#exit-codes}
 
 Amri zote zinatoka `0` kwa mafanikio. Vitengo vya kutoka visivyo sifuri:
 

@@ -3,17 +3,17 @@ title: Arah Desain
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Arah Desain
+# Arah Desain {#design-direction}
 
 Langkah **Arah Desain** memungkinkan Anda meninjau, menyempurnakan, dan menyelesaikan desain visual tema Anda sebelum Theme Builder menghasilkan tema secara lengkap.
 
-## Gambaran Umum
+## Gambaran Umum {#overview}
 
 Setelah menyelesaikan Wawancara Penemuan (Discovery Interview), Theme Builder akan menampilkan arah desain Anda dengan **pratinjau (preview) desktop dan seluler**. Ini memungkinkan Anda melihat secara persis bagaimana desain Anda akan terlihat di berbagai perangkat sebelum memutuskan tema.
 
-## Komponen Arah Desain
+## Komponen Arah Desain {#design-direction-components}
 
-### 1. Palet Warna
+### 1. Palet Warna {#1-color-palette}
 
 Skema warna tema Anda, termasuk:
 
@@ -23,7 +23,7 @@ Skema warna tema Anda, termasuk:
 - **Warna Netral (Neutral colors)** — abu-abu dan putih untuk latar belakang dan teks
 - **Warna Teks (Text color)** — warna teks utama untuk keterbacaan
 
-### 2. Tipografi
+### 2. Tipografi {#2-typography}
 
 Pilihan font untuk:
 
@@ -33,14 +33,14 @@ Pilihan font untuk:
 - **Tinggi Baris (Line height)** — jarak antar baris untuk keterbacaan
 - **Berat Font (Font weights)** — variasi tebal, normal, dan ringan
 
-### 3. Tata Letak dan Jarak (Layout and Spacing)
+### 3. Tata Letak dan Jarak (Layout and Spacing) {#3-layout-and-spacing}
 
 - **Lebar Kontainer (Container width)** — lebar maksimum untuk konten
 - **Padding dan Margin** — jarak di sekitar elemen
 - **Sistem Grid (Grid system)** — tata letak kolom untuk desain responsif
 - **Jarak Komponen (Component spacing)** — jarak antar elemen UI
 
-### 4. Elemen Visual
+### 4. Elemen Visual {#4-visual-elements}
 
 - **Gaya Tombol (Button styles)** — desain tombol utama, sekunder, dan tersier
 - **Desain Kartu (Card designs)** — tata letak untuk blok konten
@@ -48,9 +48,9 @@ Pilihan font untuk:
 - **Batas dan Bayangan (Borders and shadows)** — kedalaman visual yang halus
 - **Efek Hover (Hover effects)** — gaya keadaan interaktif
 
-## Pratinjau (Preview Rendering)
+## Pratinjau (Preview Rendering) {#preview-rendering}
 
-### Pratinjau Desktop
+### Pratinjau Desktop {#desktop-preview}
 
 Pratinjau desktop menampilkan desain Anda pada lebar penuh (biasanya 1200px atau lebih lebar):
 
@@ -59,7 +59,7 @@ Pratinjau desktop menampilkan desain Anda pada lebar penuh (biasanya 1200px atau
 - Tipografi dan spasi besar
 - Semua elemen visual dalam ukuran penuh
 
-### Pratinjau Seluler
+### Pratinjau Seluler {#mobile-preview}
 
 Pratinjau seluler menampilkan desain Anda pada lebar seluler (biasanya 375px):
 
@@ -68,7 +68,7 @@ Pratinjau seluler menampilkan desain Anda pada lebar seluler (biasanya 375px):
 - Tipografi dan spasi yang disesuaikan
 - Ukuran tombol yang ramah sentuhan
 
-### Titik Henti Responsif (Responsive Breakpoints)
+### Titik Henti Responsif (Responsive Breakpoints) {#responsive-breakpoints}
 
 Theme Builder menampilkan pratinjau pada titik henti ini:
 
@@ -79,9 +79,9 @@ Theme Builder menampilkan pratinjau pada titik henti ini:
 | **Desktop** | 1200px | Desktop lebar penuh |
 | **Desktop Besar** | 1920px | Layar ultra-lebar |
 
-## Menyempurnakan Desain Anda
+## Menyempurnakan Desain Anda {#refining-your-design}
 
-### Melakukan Penyesuaian
+### Melakukan Penyesuaian {#making-adjustments}
 
 Anda dapat menyempurnakan arah desain Anda dengan:
 
@@ -91,7 +91,7 @@ Anda dapat menyempurnakan arah desain Anda dengan:
 4. **Memperbarui tata letak** — ubah lebar kontainer dan kolom grid
 5. **Menyesuaikan elemen** — modifikasi gaya tombol, desain kartu, dll.
 
-### Pembaruan Pratinjau
+### Pembaruan Pratinjau {#preview-updates}
 
 Perubahan akan tercermin secara *real-time*:
 
@@ -100,7 +100,7 @@ Perubahan akan tercermin secara *real-time*:
 - Semua titik henti responsif diperbarui
 - Anda dapat beralih antar pratinjau untuk memverifikasi perubahan
 
-### Tampilan Perbandingan
+### Tampilan Perbandingan {#comparison-view}
 
 Bandingkan arah desain Anda dengan:
 
@@ -108,7 +108,7 @@ Bandingkan arah desain Anda dengan:
 - **Desain Kompetitor (Competitor designs)** — bandingkan dengan situs inspirasi
 - **Versi Sebelumnya (Previous versions)** — kembali ke arah desain yang lebih awal
 
-## Persetujuan Arah Desain
+## Persetujuan Arah Desain {#design-direction-approval}
 
 Setelah Anda puas dengan desain Anda:
 
@@ -118,7 +118,7 @@ Setelah Anda puas dengan desain Anda:
 4. **Konfirmasi tata letak** — periksa spasi dan perataan
 5. **Setujui desain** — lanjutkan ke pembuatan tema
 
-## Langkah Selanjutnya
+## Langkah Selanjutnya {#next-steps}
 
 Setelah menyetujui arah desain Anda:
 
@@ -127,7 +127,7 @@ Setelah menyetujui arah desain Anda:
 3. Anda dapat menyesuaikan lebih lanjut menggunakan customizer WordPress
 4. Lanjutkan ke [Hospitality Menus](./hospitality-menus.md) atau fitur lainnya
 
-## Praktik Terbaik
+## Praktik Terbaik {#best-practices}
 
 - **Uji di perangkat nyata** — gunakan ponsel dan tablet asli jika memungkinkan
 - **Periksa keterbacaan** — pastikan teks mudah dibaca di semua ukuran
@@ -135,30 +135,30 @@ Setelah menyetujui arah desain Anda:
 - **Pertimbangkan kinerja** — optimalkan gambar dan font untuk kecepatan
 - **Rencanakan konten** — pastikan tata letak berfungsi dengan konten aktual Anda
 
-## Pemecahan Masalah (Troubleshooting)
+## Pemecahan Masalah (Troubleshooting) {#troubleshooting}
 
-### Pratinjau Tidak Diperbarui
+### Pratinjau Tidak Diperbarui {#preview-not-updating}
 
 - Muat ulang halaman
 - Hapus cache browser
 - Coba browser yang berbeda
 - Periksa koneksi internet
 
-### Warna Terlihat Berbeda
+### Warna Terlihat Berbeda {#colors-look-different}
 
 - Periksa pengaturan warna monitor
 - Coba di perangkat yang berbeda
 - Verifikasi kontras warna dengan alat aksesibilitas
 - Pertimbangkan simulator buta warna
 
-### Masalah Tipografi
+### Masalah Tipografi {#typography-issues}
 
 - Verifikasi file font sedang dimuat
 - Periksa ukuran font di berbagai titik henti
 - Uji dengan konten aktual
 - Pertimbangkan panjang baris untuk keterbacaan
 
-## Dokumentasi Terkait
+## Dokumentasi Terkait {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — kumpulkan informasi desain
 - [Hospitality Menus](./hospitality-menus.md) — buat halaman menu terstruktur

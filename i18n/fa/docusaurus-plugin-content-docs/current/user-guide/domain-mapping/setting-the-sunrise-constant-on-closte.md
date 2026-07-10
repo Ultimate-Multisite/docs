@@ -3,13 +3,13 @@ title: تنظیم ثابت Sunrise در Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# تنظیم ثابت Sunrise روی true در Closte
+# تنظیم ثابت Sunrise روی true در Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 برخی از ارائه‌دهندگان هاست، فایل wp-config.php را به دلایل امنیتی قفل می‌کنند. این یعنی Ultimate Multisite نمی‌تواند به صورت خودکار این فایل را ویرایش کند تا ثابت‌های لازم برای عملکرد صحیح نگاشت دامنه و سایر قابلیت‌ها را اضافه کند. Closte یکی از این هاست‌هاست.
 
 با این حال، Closte راهی امن برای افزودن ثابت‌ها به wp-config.php ارائه می‌دهد. کافی است مراحل زیر را دنبال کنید:
 
-## در داشبورد Closte
+## در داشبورد Closte {#on-the-closte-dashboard}
 
 ابتدا [وارد حساب Closte خود شوید](https://app.closte.com/)، روی گزینه Sites در منو کلیک کنید، سپس روی لینک Dashboard برای سایتی که روی آن کار می‌کنید کلیک کنید:
 

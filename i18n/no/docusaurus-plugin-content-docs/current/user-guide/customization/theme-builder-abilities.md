@@ -3,18 +3,18 @@ title: Mulighet for tema-bygging
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Theme Builder Funksjoner: Scaffold og Aktivere Block Themes
+# Theme Builder Funksjoner: Scaffold og Aktivere Block Themes {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Superdav AI Agent v1.12.0 introduserer to kraftige funksjoner som lar deg generere og implementere tilpassede block themes direkte fra chat-grensesnittet.
 
-## Oversikt
+## Oversikt {#overview}
 
 Funksjonene **scaffold-block-theme** og **activate-theme** gjør at agenten kan:
 - Generere komplette, produksjonsklare block themes basert på dine spesifikasjoner
 - Automatisk aktivere themes på nettstedet ditt uten manuell inngripen
 - Skape en sammenhengende visuell identitet gjennom veiledede designbeslutninger
 
-## Scaffold Block Theme
+## Scaffold Block Theme {#scaffold-block-theme}
 
 Funksjonen **scaffold-block-theme** genererer et nytt WordPress block theme med en komplett theme-struktur, inkludert:
 
@@ -23,7 +23,7 @@ Funksjonen **scaffold-block-theme** genererer et nytt WordPress block theme med 
 - Tilpassede block-stiler og variasjoner
 - Theme metadata og støtteerklæringer
 
-### Hvordan kalle funksjonen
+### Hvordan kalle funksjonen {#how-to-invoke}
 
 I chatten din med Superdav AI Agent kan du be om generering av et theme:
 
@@ -38,7 +38,7 @@ Agenten vil:
 3. Opprette alle nødvendige theme-filer
 4. Forberede theme for aktivering
 
-### Forventet utdata
+### Forventet utdata {#expected-output}
 
 Når funksjonen utføres vellykket, vil du se:
 
@@ -56,11 +56,11 @@ Eksempel på utdata:
   Status: Ready to activate
 ```
 
-## Aktivere Theme
+## Aktivere Theme {#activate-theme}
 
 Funksjonen **activate-theme** bytter nettstedet ditt til et nylig scaffoldet eller eksisterende block theme.
 
-### Hvordan kalle funksjonen
+### Hvordan kalle funksjonen {#how-to-invoke-1}
 
 Etter at du har scaffoldet et theme, kan du aktivere det umiddelbart:
 
@@ -74,7 +74,7 @@ Eller aktivere et hvilket som helst eksisterende theme:
 "Switch to the Twentytwentyfour theme"
 ```
 
-### Forventet utdata
+### Forventet utdata {#expected-output-1}
 
 Når aktiveringen lykkes:
 
@@ -92,7 +92,7 @@ Eksempel på utdata:
   Note: Check your homepage to verify the layout
 ```
 
-## Arbeidsflyt: Scaffold og Aktivere
+## Arbeidsflyt: Scaffold og Aktivere {#workflow-scaffold-and-activate}
 
 En typisk arbeidsflyt kombinerer begge funksjonene:
 
@@ -102,7 +102,7 @@ En typisk arbeidsflyt kombinerer begge funksjonene:
 4. **Aktivere**: "Activate the theme now"
 5. **Verifisere**: Besøk nettstedet ditt for å bekrefte at det nye designet er live
 
-## Design Tokens og Tilpasning
+## Design Tokens og Tilpasning {#design-tokens-and-customization}
 
 Scaffoldede themes bruker WordPress design tokens (via `theme.json`) for:
 
@@ -114,14 +114,14 @@ Scaffoldede themes bruker WordPress design tokens (via `theme.json`) for:
 
 Disse tokens er sentralisert i `theme.json`, noe som gjør det enkelt å justere hele designsystemet ditt fra én fil.
 
-## Begrensninger og merknader
+## Begrensninger og merknader {#limitations-and-notes}
 
 - Themes scaffoldes i `/wp-content/themes/` og må følge WordPress navnekonvensjoner
 - Aktivering krever passende tillatelser på WordPress-nettstedet ditt
 - Tilpasset PHP-kode i themes er minimal; bruk plugins for kompleks funksjonalitet
 - Block themes fungerer best med WordPress 5.9 og nyere
 
-## Feilsøking
+## Feilsøking {#troubleshooting}
 
 **Theme vises ikke etter scaffolding**
 - Verifiser at theme-mappen eksisterer og har riktige tillatelser
@@ -138,7 +138,7 @@ Disse tokens er sentralisert i `theme.json`, noe som gjør det enkelt å justere
 - Tøm eventuelle caching plugins
 - Sjekk at WordPress-versjonen din støtter tokens du bruker
 
-## Neste steg
+## Neste steg {#next-steps}
 
 Etter at du har aktivert theme, kan du:
 - Bruke **Design System Aesthetics skill** for å forbedre typografi, farger og avstand

@@ -1,44 +1,44 @@
 ---
-title: Pagbababa ng Plano
+title: Pag-downgrade ng Plano
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Pag-downgrade ng plan (v2)
+# Pag-downgrade ng plan (v2) {#downgrading-a-plan-v2}
 
-_**MAHALAGANG PAALALA: Ang artikulong ito ay tumutukoy sa Ultimate Multisite version 2.x.**_
+_**MAHALAGANG TANDAAN: Tumutukoy ang artikulong ito sa Ultimate Multisite bersyon 2.x.**_
 
-Ang pag-downgrade ng plan o subscription ay karaniwang ginagawa ng iyong mga kliyente kung limitado ang kanilang budget o kung napagdesisyunan nilang hindi nila kailangan ng maraming resources para patakbuhin ang kanilang subsite.
+Ang pag-downgrade ng plan o subscription ay karaniwang aksyon na maaaring gawin ng iyong mga client kung may limitado silang badyet o napagpasyahan nilang hindi nila kakailanganin ng maraming resource para patakbuhin ang kanilang subsite.
 
-## Paano mag-downgrade ng plan
+## Paano mag-downgrade ng plan {#how-to-downgrade-a-plan}
 
-Maaaring i-downgrade ng iyong mga kliyente ang kanilang plan anumang oras sa pamamagitan ng pag-login sa admin dashboard ng kanilang subsite at pag-click sa **Change** sa ilalim ng kanilang account page.
+Maaaring i-downgrade ng iyong mga client ang kanilang plan anumang oras sa pamamagitan ng pag-log in sa kanilang subsite admin dashboard at pag-click sa **Change** sa ilalim ng kanilang Account page.
 
-![Account page na may Change button sa ilalim ng membership](/img/admin/memberships-list.png)
+![Account page ng customer na may Your Membership card at Change button](/img/account-page/membership-change-button.png)
 
-Kapag na-click ang **Change** button, ididirekta ang user/kliyente sa checkout page kung saan maaari nilang piliin ang plan na gusto nilang palitan sa kanilang subscription.
+Pagkatapos i-click ang **Change** button, ire-redirect ang user/client sa checkout page kung saan maaari nilang piliin ang plan na gusto nilang pagpalitan para sa kanilang subscription.
 
-![Checkout page na nagpapakita ng mga plan option para sa downgrade](/img/admin/memberships-list.png)
+![Page ng mga opsyon sa pag-downgrade ng plan sa panig ng customer](/img/account-page/downgrade-picker.png)
 
 Sa halimbawang ito, dina-downgrade natin ang plan mula **Premium** patungong **Free**.
 
-Para magpatuloy, kailangan lang ng user na i-click ang **Complete Checkout** button. Ibabalik sila nito sa account page na may mensahe tungkol sa pending na pagbabago sa membership. Ang mga pagbabago ay magkakabisa sa **susunod na billing cycle** ng customer.
+Para magpatuloy, kailangan lang ng user na i-click ang **Complete Checkout** button. Pagkatapos, ibabalik sila nito sa Account page na nagpapakita ng mensahe tungkol sa nakabinbing pagbabago para sa membership. Magkakabisa ang mga pagbabago sa **susunod na billing cycle** ng customer.
 
-![Account page na nagpapakita ng mensahe tungkol sa pending membership change](/img/admin/memberships-list.png)
+![Account page na nagpapakita ng banner ng nakabinbing pagbabago sa membership](/img/account-page/pending-change.png)
 
-### Ano ang nangyayari kapag nag-downgrade ng plan ang isang user
+### Ano ang mangyayari kapag nag-downgrade ng plan ang isang user {#what-happens-when-a-user-downgrades-their-plan}
 
-Mahalagang tandaan na ang pag-downgrade ng plan ay hindi nagbabago sa kasalukuyang configuration ng subsite ng user.
+Mahalagang tandaan na ang pag-downgrade ng plan ay hindi nagbabago sa kasalukuyang configuration sa subsite ng user.
 
-Hindi nito awtomatikong binabago ang site template dahil ang pagpapalit ng site template ay ganap na magbubura at magri-reset ng subsite. Ito ay para maiwasan ang hindi kinakailangang pagkawala ng data. Kaya mananatiling buo ang disk space, themes, plugins atbp. maliban sa mga posts.
+Hindi nito awtomatikong binabago ang site template dahil ang pagbabago ng site template ay ganap na bubura at magre-reset sa subsite. Ito ay para maiwasan ang hindi kinakailangang pagkawala ng data. Kaya mananatiling buo ang disk space, mga theme, mga plugin, atbp., maliban sa mga post.
 
-Nauunawaan namin na ang pangunahing alalahanin mo ay ang mga limits at quotas na itinakda mo sa bawat plan, ngunit kailangan naming isaalang-alang ang pinsalang magagawa sa subsite ng user kung tatanggalin o babaguhin namin ang alinman sa mga configuration nito.
+Nauunawaan namin na ang pangunahing alalahanin mo ay ang mga limitasyon at quota na itinakda mo sa ilalim ng bawat plan, pero kailangan naming isaalang-alang ang pinsalang magagawa nito sa subsite ng user kung buburahin o babaguhin namin ang alinman sa mga configuration nito.
 
-Para sa mga posts na lumampas sa limit na itinakda sa plan, mayroon kang 3 magkakaibang opsyon: **Keep the posts as it** *,* **Move the posts to trash** *,* o **Move the posts to draft** *.* Maaari mong i-configure ito sa ilalim ng Ultimate Multisite settings.
+Para sa mga post na lumalampas sa limitasyong itinakda sa plan, mayroon kang 3 magkakaibang opsyon: **Panatilihin ang mga post gaya nito** *,* **Ilipat ang mga post sa trash** *,* o **Ilipat ang mga post sa draft** *.* Maaari mo itong i-configure sa ilalim ng mga setting ng Ultimate Multisite.
 
-![Mga opsyon kapag lumampas sa post limit sa Ultimate Multisite settings](/img/config/settings-sites.png)
+![Page ng Network Admin Settings Sites na nagpapakita ng mga opsyon sa kilos kapag lumampas sa limitasyon ng post](/img/account-page/settings-sites-post-limit.png)
 
-### Ano ang nangyayari sa bayarin
+### Ano ang mangyayari sa pagbabayad {#what-happens-to-the-payment}
 
-Sa version 2.0, hindi na kailangan ng anumang adjustments sa bayarin pagdating sa proration.
+Sa bersyon 2.0, hindi na ito nangangailangan ng anumang adjustment sa pagbabayad pagdating sa proration.
 
-Ito ay dahil maghihintay ang sistema na **makumpleto ng kasalukuyang membership ang billing cycle nito bago** magkabisa ang bagong plan/membership. Ang bagong halaga ng billing para sa bagong membership ay awtomatikong ilalapat at sisingilin sa susunod na billing cycle.
+Ito ay dahil hihintayin ng system na **makumpleto muna ang billing cycle** ng kasalukuyang membership bago magkabisa ang bagong plan/membership. Awtomatikong ilalapat at sisingilin sa susunod na billing cycle ang bagong halaga ng bayad para sa bagong membership.

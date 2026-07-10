@@ -3,7 +3,7 @@ title: Regystro'r cyfeiriad API
 sidebar_position: 6
 _i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# Ymddyn API Register o'r Ultimate Multisite
+# Ymddyn API Register o'r Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
 Yn yst tutorial, byddwch yn dysgu sut i ddefnyddio'r endpoint API /register o'r Ultimate Multisite i creu'r cyfnod gyfan o'r cyflwyniad am newyddol customer mewn rhwydwaith eich a sut i wneud hyn gyda Zapier.
 
@@ -29,11 +29,11 @@ Dechrau **Enable API** a gael eich cyfrifau API.
 
 Bellch, byddwn yn chwilio am y endpoint ac ymlaen i creu gweithrediad cyflwyniad (registration action) mewn Zapier.
 
-## Parametriau ffurf yr endpoint
+## Parametriau ffurf yr endpoint {#endpoint-body-parameters}
 
 Byddwn yn cael gweld am y gairiad minimau sydd ei angen i anfon i'r endpoint. Yn y diwedd o'r ail ddefnydd, byddwch yn dod â'r cyfarfod cyfan.
 
-### Customer
+### Customer {#customer}
 
 Mae hyn yn wybodaeth sydd ei angen ar gyfer y proses creu'r User a'r Customer mewn Ultimate Multisite:
 
@@ -43,25 +43,25 @@ Mae'n posibilr i gyflwyno'r ID cyddeeiriad y gast yn eich rheiniad. Os nid yw'n 
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Cymdeithas** (Membership)
+### **Cymdeithas** (Membership) {#membership}
 
 Ynfon y cyfathrebu sydd yn angen i ni yn ysbryd, yw Statws Cymdeithas.
 
 "membership" { "status" : "string", // un o "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Producaethau** (Products)
+### **Producaethau** (Products) {#products}
 
 Mae producaethau cael ei rhoi â arall-llwybr gyda 1 neu fwy o ID producaeth o'r rheiniad eich. Beirddwch yn ddiogel, nid yw'r endpoint hwn yn creu producaethau. Gwellyn y drafiad Ultimate Multisite i ddeall wellfwy sydd mewn i'r endpoint creu producaethau.
 
 **"products" : [1,2],**
 
-### **Plaid** (Payment)
+### **Plaid** (Payment) {#payment}
 
 Fel gyda Cymdeithas, mae angen i ni Statws.
 
 **"payment" { "status" : "string", // un o "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### **Gwefan** (Site)
+### **Gwefan** (Site) {#site}
 
 Ac i ddeall y bodgel, mae angen i ni'r URL a'r Titell y gwefan yn y Gymryd Gwefan.
 
@@ -69,13 +69,13 @@ Ac i ddeall y bodgel, mae angen i ni'r URL a'r Titell y gwefan yn y Gymryd Gwefa
 
 Bydd y cyflwyniad o'r endpoint register yn cael ei ddarparu fel arall-llwybr gyda phrydnewid y gairau cymdeithas a creuwyd.
 
-## Creu gweithrediad mewn Zapier
+## Creu gweithrediad mewn Zapier {#creating-an-action-in-zapier}
 
  gyda'r cyflwyniad o'r endpoint creu account newydd a fwy gaeligol hwn, byddwch yn cael cyffredinol â gweithrediad newydd mewn Zapier hefyd.
 
 A oes gennych chi ddefnyddio a lawen pob hyn ychwanegau sydd mewn i'r fersiwl newydd o Zapier? Dysgai mwy yma. (llink?)
 
-### Creu gweithrediad
+### Creu gweithrediad {#creating-an-action}
 
 I'nchw i'n ddefnyddio'r endpoint o regradd gyda Zapier yn fwy wellilltrefnu, byddwn ni'n creu cyfathrebu â Google Forms. Mae pob gdarau honno wedi'i llenwi a'i cadw yn y llyfr ymateb y ffurf, bydd einnewid newydd yn cael ei creu mewn rheolion Ultimate Multisite.
 
@@ -105,7 +105,7 @@ Yn ddefnyddio'r wybodaethau wedi'u setio, dod ar y gwsteliad o gwylio. Ar y blae
 
 Gwylwch eich Zap newydd ac byddai'n gwblu'n llwyddiannus. Os oes unrhyw eros yn digwydd, gwylwch pob field a gweld os iddynt yn cael ei anfon yn dda. Oedd llawer o wybodaethau, gall rhywbethau fod yn cael eu gwach.
 
-### Parametriau y endpoint cyfan
+### Parametriau y endpoint cyfan {#complete-endpoint-parameters}
 
 Dyma'r cyfarfod cyfan a pob posibilrwydd y fieldau sydd yn cael eu anfon.
 

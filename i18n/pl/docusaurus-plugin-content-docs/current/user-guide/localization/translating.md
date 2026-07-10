@@ -3,11 +3,11 @@ title: Tłumaczenie Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Tłumaczenie Ultimate Multisite
+# Tłumaczenie Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite jest rozwijany w języku angielskim, ale wtyczka jest w pełni przetłumaczalna i chętnie przyjmujemy wkład w tłumaczenia.
 
-## Tłumaczenia głównej wtyczki
+## Tłumaczenia głównej wtyczki {#core-plugin-translations}
 
 Główna wtyczka Ultimate Multisite jest tłumaczona za pośrednictwem oficjalnej **platformy tłumaczeń WordPress.org**:
 
@@ -24,7 +24,7 @@ To standardowy system tłumaczeń społeczności WordPress. Gdy tłumaczenia osi
 
 Jeśli chcesz zostać redaktorem tłumaczeń dla swojego języka (z możliwością zatwierdzania tłumaczeń), skontaktuj się z nami przez [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Tłumaczenia dodatków
+## Tłumaczenia dodatków {#addon-translations}
 
 Wtyczki dodatkowe (addony) są tłumaczone osobno na:
 
@@ -32,11 +32,11 @@ Wtyczki dodatkowe (addony) są tłumaczone osobno na:
 
 Tłumaczenia dodatków są obecnie generowane przez AI jako punkt wyjścia. Obejmują wszystkie obsługiwane języki, ale mogą zawierać niezręczne sformułowania lub nieścisłości. Zapraszamy tłumaczy do przeglądania i proponowania poprawek, aby były bardziej naturalne i dokładne.
 
-## Lokalne tłumaczenia
+## Lokalne tłumaczenia {#local-translations}
 
 Jeśli wolisz tworzyć tłumaczenia lokalnie dla własnego projektu zamiast przekazywać je do głównego repozytorium, masz dwie opcje:
 
-### Używanie Poedit
+### Używanie Poedit {#using-poedit}
 
 Możesz użyć aplikacji desktopowej **[Poedit](https://poedit.net)** do przetłumaczenia pliku `.pot`:
 
@@ -46,6 +46,6 @@ Możesz użyć aplikacji desktopowej **[Poedit](https://poedit.net)** do przetł
 4. Zapisz -- Poedit wygeneruje pliki `.po` i `.mo`
 5. Umieść pliki wynikowe w folderze `lang`
 
-### Używanie Loco Translate
+### Używanie Loco Translate {#using-loco-translate}
 
 Wtyczka WordPress **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** pozwala tłumaczyć bezpośrednio z panelu administracyjnego bez żadnych narzędzi desktopowych. Sama zajmuje się tworzeniem i kompilowaniem plików tłumaczeń.

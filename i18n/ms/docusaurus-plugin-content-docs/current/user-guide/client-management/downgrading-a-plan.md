@@ -1,44 +1,44 @@
 ---
 title: Menurunkan Taraf Pelan
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Menurunkan taraf pelan (v2)
+# Menurunkan taraf pelan (v2) {#downgrading-a-plan-v2}
 
 _**NOTA PENTING: Artikel ini merujuk kepada Ultimate Multisite versi 2.x.**_
 
-Menurunkan taraf pelan atau langganan adalah tindakan biasa yang mungkin dilakukan oleh pelanggan anda jika mereka mempunyai bajet terhad atau telah memutuskan bahawa mereka tidak memerlukan banyak sumber untuk menjalankan subsite mereka.
+Menurunkan taraf pelan atau langganan ialah tindakan biasa yang mungkin dilakukan oleh klien anda jika mereka mempunyai bajet terhad atau mereka memutuskan bahawa mereka tidak memerlukan banyak sumber untuk menjalankan subsite mereka.
 
-## Cara menurunkan taraf pelan
+## Cara menurunkan taraf pelan {#how-to-downgrade-a-plan}
 
-Pelanggan anda boleh menurunkan taraf pelan mereka pada bila-bila masa dengan log masuk ke dashboard admin subsite mereka dan klik **Change** di bawah halaman akaun mereka.
+Klien anda boleh menurunkan taraf pelan mereka pada bila-bila masa dengan log masuk ke dashboard pentadbir subsite mereka dan mengklik **Change** di bawah halaman Account mereka.
 
-![Halaman akaun dengan butang Change di bawah keahlian](/img/admin/memberships-list.png)
+![Halaman Account pelanggan dengan kad Your Membership dan butang Change](/img/account-page/membership-change-button.png)
 
-Selepas mengklik butang **Change**, pengguna/pelanggan akan dibawa ke halaman checkout di mana mereka boleh memilih pelan yang ingin mereka tukar untuk langganan mereka.
+Apabila mengklik butang **Change**, pengguna/klien akan dialihkan ke halaman checkout di mana mereka boleh memilih pelan yang mereka mahu tukarkan langganan mereka kepadanya.
 
-![Halaman checkout menunjukkan pilihan pelan untuk penurunan taraf](/img/admin/memberships-list.png)
+![Halaman pilihan turun taraf pelan di pihak pelanggan](/img/account-page/downgrade-picker.png)
 
-Dalam contoh ini, kami menurunkan taraf pelan daripada **Premium** kepada **Free**.
+Dalam contoh ini, kami sedang menurunkan taraf pelan daripada **Premium** kepada **Free**.
 
-Untuk meneruskan, pengguna hanya perlu klik butang **Complete Checkout**. Mereka kemudian akan dibawa kembali ke halaman akaun yang menunjukkan mesej tentang perubahan yang belum berkuat kuasa untuk keahlian tersebut. Perubahan akan berkuat kuasa pada **kitaran bil seterusnya** pelanggan.
+Untuk meneruskan, pengguna hanya perlu mengklik butang **Complete Checkout**. Ia kemudian akan membawa mereka kembali ke halaman Account yang memaparkan mesej tentang perubahan tertunda untuk keahlian tersebut. Perubahan akan berkuat kuasa pada **kitaran bil seterusnya** pelanggan.
 
-![Halaman akaun menunjukkan mesej perubahan keahlian yang belum berkuat kuasa](/img/admin/memberships-list.png)
+![Halaman Account yang menunjukkan sepanduk perubahan keahlian tertunda](/img/account-page/pending-change.png)
 
-### Apa yang berlaku apabila pengguna menurunkan taraf pelan mereka
+### Apa yang berlaku apabila pengguna menurunkan taraf pelan mereka {#what-happens-when-a-user-downgrades-their-plan}
 
-Penting untuk diambil perhatian bahawa menurunkan taraf pelan tidak mengubah konfigurasi sedia ada dalam subsite pengguna.
+Penting untuk diingat bahawa menurunkan taraf pelan tidak mengubah konfigurasi sedia ada dalam subsite pengguna.
 
-Ia tidak menukar template laman secara automatik kerana menukar template laman akan memadam dan menetapkan semula subsite sepenuhnya. Ini adalah untuk mengelakkan kehilangan data yang tidak perlu. Jadi ruang cakera, tema, plugin dan sebagainya akan kekal utuh kecuali untuk pos.
+Ia tidak menukar templat laman secara automatik kerana menukar templat laman akan memadam dan menetapkan semula subsite sepenuhnya. Ini adalah untuk mengelakkan kehilangan data yang tidak perlu. Jadi ruang cakera, tema, plugin dan sebagainya akan kekal utuh kecuali untuk siaran.
 
-Kami faham bahawa kebimbangan utama anda adalah had dan kuota yang anda tetapkan di bawah setiap pelan tetapi kami perlu mempertimbangkan kerosakan yang akan berlaku kepada subsite pengguna sekiranya kami memadam atau mengubah mana-mana konfigurasinya.
+Kami faham bahawa kebimbangan utama anda ialah had dan kuota yang anda tetapkan di bawah setiap pelan, tetapi kami perlu mempertimbangkan kerosakan yang mungkin berlaku pada subsite pengguna sekiranya kami memadam atau mengubah mana-mana konfigurasinya.
 
-Untuk pos yang melebihi had yang ditetapkan pada pelan, anda mempunyai 3 pilihan berbeza: **Keep the posts as it** *,* **Move the posts to trash** *,* atau **Move the posts to draft** *.* Anda boleh mengkonfigurasi ini di bawah tetapan Ultimate Multisite.
+Untuk siaran yang melebihi had yang ditetapkan pada pelan, anda mempunyai 3 pilihan berbeza: **Keep the posts as it** *,* **Move the posts to trash** *,* atau **Move the posts to draft** *.* Anda boleh mengkonfigurasi ini di bawah tetapan Ultimate Multisite.
 
-![Pilihan had pos melebihi dalam tetapan Ultimate Multisite](/img/config/settings-sites.png)
+![Halaman Network Admin Settings Sites yang menunjukkan pilihan tingkah laku post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Apa yang berlaku kepada pembayaran
+### Apa yang berlaku kepada pembayaran {#what-happens-to-the-payment}
 
-Dalam versi 2.0, ia tidak lagi memerlukan sebarang pelarasan pada pembayaran dari segi proration.
+Dalam versi 2.0, ia tidak lagi memerlukan sebarang pelarasan pada pembayaran dari segi prorata.
 
-Ini kerana sistem akan menunggu keahlian sedia ada untuk **melengkapkan kitaran bilnya sebelum** pelan/keahlian baharu berkuat kuasa. Jumlah bil baharu untuk keahlian baharu akan digunakan dan dicaj secara automatik pada kitaran bil seterusnya.
+Ini kerana sistem akan menunggu keahlian sedia ada untuk **melengkapkan kitaran bilnya sebelum** pelan/keahlian baharu berkuat kuasa. Jumlah bil baharu untuk keahlian baharu akan digunakan secara automatik dan dicaj pada kitaran bil seterusnya.

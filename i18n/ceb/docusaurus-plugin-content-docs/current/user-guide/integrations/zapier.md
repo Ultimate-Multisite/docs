@@ -3,7 +3,7 @@ title: Zapier Integration
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Pag-integrate sa Ultimate Multisite gamit ang Zapier
+# Pag-integrate sa Ultimate Multisite gamit ang Zapier {#integrating-ultimate-multisite-with-zapier}
 
 Sa isa sa mga artikulo, pinag-istoryahan nato ang [Webhooks](webhooks.md) ug unsaon ni paggamit para mag-integrate sa mga third-party application.
 
@@ -15,7 +15,7 @@ Makakab-ot nimo ang paghimo og **Triggers** nga mag-activate kung adunay mga pan
 
 Kini posible tungod kay ang mga **Ultimate Multisite Zapier triggers** ug actions gipagana sa [REST API](https://developer.ultimatemultisite.com/api/docs/).
 
-## Unsaon pag-umpisa
+## Unsaon pag-umpisa {#how-to-start}
 
 Una, pangitaa ang Ultimate Multisite sa listahan sa apps sa Zapier. Alternatibo, pwede kang mag-click ni [kini nga link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ Sa URL field, ibutang ang imong network full URL, lakip na ang protocol (HTTP o 
 
 I-click ang **Yes, Continue** button para molihok sa sunod nga lakang. Kung maayo tanan, mabati ka na sa imong bagong konektadong account! I-click ang **Continue** para maghimo og bag-ong trigger.
 
-## Unsaon paghimo og bag-ong Trigger
+## Unsaon paghimo og bag-ong Trigger {#how-to-create-a-new-trigger}
 
 Karon nga konektado na ang imong account, makakita ka na sa mga available events. Atong pilion ang **payment_received** event para ni tutorial.
 
@@ -67,7 +67,7 @@ Ni ni nga stage, akong itest sa Zap kung makakuha ba kini og **specific payload 
 
 Sa atong tutorial, ang test **nagsukol sa maayo** ug nagbalik sa sample nga impormasyon sa payload. Kini nga sample nga impormasyon magamit kanato aron maggiya namo samtang naghimo og mga aksyon. Ang imong trigger kay gibuhat na ug andam na para i-connect sa ubang applications.
 
-## Unsaon paghimo og Actions
+## Unsaon paghimo og Actions {#how-to-create-actions}
 
 Ang Actions naggamit og impormasyon gikan sa ubang triggers aron makahimo og bag-ong entries sa imong network.
 
@@ -79,7 +79,7 @@ Sa sunod nga lakang, maghimo ka o magpili og authentication, sama sa gihimo nato
 
 ![Selecting authentication for the Zapier action](/img/admin/webhooks-list.png)
 
-### Pag-set up sa Action
+### Pag-set up sa Action {#setting-up-the-action}
 
 Kini ang **main step sa action** ug diri medyo lain ang mga butang. Ang unang impormasyon nga imong pilion kay ang **Item**. Ang Item mao ang **information model** sa imong network sama sa **Customers, Payments, Sites, Emails** ug uban pa.
 

@@ -3,13 +3,13 @@ title: ئامۆژاری لە بەڕێوەبردنی شوێنەکە (Site Builder
 sidebar_position: 19
 _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 ---
-# یادداشت درباره حذف حالت سازنده سایت (Site Builder Mode)
+# یادداشت درباره حذف حالت سازنده سایت (Site Builder Mode) {#site-builder-mode-removal-notice}
 
 **حالت Site Builder در نسخه Superdav AI Agent v1.12.0 حذف شده است.** اگر از حالت Site Builder استفاده می‌کردید، باید برای ساخت قالب و راه‌اندازی سایت به **Setup Assistant agent** منتقل شوید.
 
-## چه اتفاقی افتاد؟
+## چه اتفاقی افتاد؟ {#what-happened}
 
-### حالت Site Builder (قدیمی)
+### حالت Site Builder (قدیمی) {#site-builder-mode-legacy}
 
 حالت Site Builder یک رابط کاربری مبتنی بر راهنما بود که برای کارهای زیر استفاده می‌شد:
 
@@ -18,7 +18,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - انتخاب تم (Theme)
 - راه‌اندازی محتوای اولیه
 
-### چه چیزی جایگزین آن شد؟
+### چه چیزی جایگزین آن شد؟ {#what-replaced-it}
 
 **Setup Assistant agent** اکنون تمام قابلیت‌های Site Builder را با موارد زیر مدیریت می‌کند:
 
@@ -27,15 +27,15 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 - ادغام با فرآیند آشنایی Theme Builder (Theme Builder onboarding)
 - حافظه پایدار `site_brief` برای جلسات بعدی
 
-## اگر از حالت Site Builder استفاده می‌کردید
+## اگر از حالت Site Builder استفاده می‌کردید {#if-you-were-using-site-builder-mode}
 
-### سایت‌های شما امن هستند
+### سایت‌های شما امن هستند {#your-sites-are-safe}
 
 - سایت‌هایی که قبلاً با Site Builder ساخته شده بودند، همچنان کار می‌کنند.
 - هیچ داده‌ای از دست نمی‌رود یا سایتی دچار اختلال نمی‌شود.
 - می‌توانید به طور عادی مدیریت سایت‌های خود را ادامه دهید.
 
-### به Setup Assistant agent منتقل شوید
+### به Setup Assistant agent منتقل شوید {#migrate-to-setup-assistant-agent}
 
 برای راه‌اندازی سایت جدید یا تغییر تم، از Setup Assistant agent استفاده کنید:
 
@@ -51,7 +51,7 @@ _i18n_hash: 3abf37d17f19e045e9d9da3ffe8e3179
 
 Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذیری بیشتر ارائه می‌دهد.
 
-## مقایسه: Site Builder در مقابل Setup Assistant
+## مقایسه: Site Builder در مقابل Setup Assistant {#comparison-site-builder-vs-setup-assistant}
 
 | ویژگی | Site Builder (حذف شده) | Setup Assistant (جدید) |
 |---------|----------------------|----------------------|
@@ -62,9 +62,9 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
 | جلسات بعدی | تنظیم مجدد تکراری | استفاده از site_brief ذخیره شده |
 | انعطاف‌پذیری | گردش کار ثابت | مکالمه سازگار و متغیر |
 
-## مهاجرت به Setup Assistant agent
+## مهاجرت به Setup Assistant agent {#migrating-to-setup-assistant-agent}
 
-### برای سایت‌های جدید
+### برای سایت‌های جدید {#for-new-sites}
 
 لەبری بەکارهێنانی Site Builder mode:
 
@@ -76,7 +76,7 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
    - دروستکردنی Theme (قالب)
    - ڕێکخستنی سەرەتایی
 
-### بۆ سایتەکان کە پێشتر لە Site Builder mode هەبوون
+### بۆ سایتەکان کە پێشتر لە Site Builder mode هەبوون {#for-existing-sites}
 
 ئەگەر سایتێکی ئێستایەک لە Site Builder mode هەبێت:
 
@@ -85,7 +85,7 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
 ۳. Agent ی یاریدەدەری سیسترا یارمەتیت دەدات بۆ دروستکردنی Themeیەکی نوێ
 ۴. داتاکانی سایتەکە گۆڕاوە
 
-### بۆ گۆڕانکارییەکانی Theme
+### بۆ گۆڕانکارییەکانی Theme {#for-theme-changes}
 
 لەبری هەڵبژاردنی Theme لە Site Builder mode:
 
@@ -95,9 +95,9 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
    - Themeیەکی تایبەت دروست بکات
    - لەسەر سایتەکە چالاک بکات
 
-## جیاوازییە سەرەکییەکان
+## جیاوازییە سەرەکییەکان {#key-differences}
 
-### Site Builder Mode
+### Site Builder Mode {#site-builder-mode}
 
 ```
 1. هەڵبژاردنی Template (نموونەی پێشوەخت)
@@ -106,7 +106,7 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
 4. تەواو بوو
 ```
 
-### Setup Assistant Agent
+### Setup Assistant Agent {#setup-assistant-agent}
 
 ```
 1. مەبەستی سایتەکەت باس بکە
@@ -117,42 +117,42 @@ Setup Assistant agent همان قابلیت‌ها را با انعطاف‌پذ
 6. کورتەی سایتەکە بۆ جلسەکانی داهاتووی هەڵگرتراوە (stored)
 ```
 
-## سوودەکانی Setup Assistant Agent
+## سوودەکانی Setup Assistant Agent {#benefits-of-setup-assistant-agent}
 
-### زیاتر ئاسانکاری (More Flexible)
+### زیاتر ئاسانکاری (More Flexible) {#more-flexible}
 
 - سایتەکەت بە زمانی سروشتی باس بکە
 - پێشنیاری تایبەتی وەربگرە
 - بۆ پێداچوونەوەکانی تایبەتت گۆڕانکاری بکە
 
-### تایبەتمەندیی زیاتری ڕێکخستن (Better Customization)
+### تایبەتمەندیی زیاتری ڕێکخستن (Better Customization) {#better-customization}
 
 - دروستکردنی Theme تایبەت
 - بڕیارەکانی سیستەمی دیزاین (Design system decisions)
 - تۆکنە دیزاینی بەردەوام (Persistent design tokens)
 
-### بیرەوەری بەردەوام (Persistent Memory)
+### بیرەوەری بەردەوام (Persistent Memory) {#persistent-memory}
 
 - `site_brief` ی سایتەکەت هەڵگرتراوە
 - Agentی داهاتوو سایتەکەت دەزانێت
 - پێویستی بە دووبارێژکردنی زانیاری ڕێکخستن نییە
 
-### کارگێڕێکی یەکگرتوو (Integrated Workflow)
+### کارگێڕێکی یەکگرتوو (Integrated Workflow) {#integrated-workflow}
 
 - سەرەتایی دروستکردنی Theme (Theme Builder onboarding)
 - توانای فنۆری دیزاین سیستەم (Design System Aesthetics skill)
 - توانای کۆنتڕۆڵی بینراو (Ability Visibility controls)
 - هەموویان بە شێوەیەکی یەکگرتوو کار دەکەن
 
-## چارەسەرکردنی کێشەکان (Troubleshooting)
+## چارەسەرکردنی کێشەکان (Troubleshooting) {#troubleshooting}
 
-### ناتوانم Site Builder mode بکەمەڕوو
+### ناتوانم Site Builder mode بکەمەڕوو {#i-cant-find-site-builder-mode}
 
 Site Builder mode لەناوچوون. لەبری ئەوە، Agent ی Setup Assistant بەکاربهێنە:
 
 "کمک کن من سایتێکی نو ڕابگرێنم"
 
-### من ده‌مەوێت سایتێک لەسەر بنووسمەوە لە Site Builder-ی پێشوو
+### من ده‌مەوێت سایتێک لەسەر بنووسمەوە لە Site Builder-ی پێشوو {#i-want-to-recreate-a-site-from-site-builder}
 
 تۆ دەتوانی بە ئامۆژگاری Setup Assistant ئەم کارە تکرار بکەیت:
 
@@ -161,7 +161,7 @@ Site Builder mode لەناوچوون. لەبری ئەوە، Agent ی Setup Assis
 3. ئەو Agent دەتوانێت قالبێکی دوێنێ بەشێوەیەکی نزیک دروست بکات
 4. `site_brief` ی تۆ بۆ ئامادەکردنی داهاتووی هەڵگرتراوە
 
-### سایتەکە من لە Site Builder-ی پێشوو کار ناکات
+### سایتەکە من لە Site Builder-ی پێشوو کار ناکات {#my-existing-site-builder-site-isnt-working}
 
 سایتی نوێ کە بە Mode-ی Site Builder دروستکراون بەردەوام دەبن کە کار دەکەن. ئەگەر کێشەیەک هەست دەکەیت:
 
@@ -170,7 +170,7 @@ Site Builder mode لەناوچوون. لەبری ئەوە، Agent ی Setup Assis
 3. تۆمارەکانی هەڵگرتراو (error logs) ی WordPress دەبینیت
 4. ئەگەر کێشە بەردەوام بوون، پەیوەندی بە پشتیوانی داوا بکە
 
-### ئایا من دەتوانم لەسەر پێوانە کۆنەکانی Site Builder بەکاربهێنم؟
+### ئایا من دەتوانم لەسەر پێوانە کۆنەکانی Site Builder بەکاربهێنم؟ {#can-i-still-use-my-old-site-builder-templates}
 
 پێوانەکانی Site Builder زیاتر نییە. بەڵام:
 
@@ -178,14 +178,14 @@ Site Builder mode لەناوچوون. لەبری ئەوە، Agent ی Setup Assis
 - دەتوانی سایتە نزیکەکانی تکرار بکەیت بە یارمەتی Setup Assistant Agent
 - Setup Assistant Agent هەڵبژاردنی زیاتر بۆ تۆ دەدات
 
-## هەنگاوەکانی دوای ئەمە (Next Steps)
+## هەنگاوەکانی دوای ئەمە (Next Steps) {#next-steps}
 
 1. **بۆ سایتە نوێکان**: بەکاربهێنە Setup Assistant agent
 2. **بۆ سایتە کۆنەکان**: بەکاری بهێنە وەک خۆیان
 3. **بۆ گۆڕینی قالب**: داواکاری یارمەتی لە Setup Assistant agent بکە
 4. **بۆ باشترکردنی دیزاین**: توانای Design System Aesthetics بەکاربهێنە
 
-## بابەتەکانی پەیوەندیدار (Related Topics)
+## بابەتەکانی پەیوەندیدار (Related Topics) {#related-topics}
 
 - **Theme Builder Onboarding**: ئامۆژگاریی سیستەم بۆ قالبە تایبەتەکان
 - **Setup Assistant Agent**: دامەزراندنی سایت بە ڕێنمایی Agent

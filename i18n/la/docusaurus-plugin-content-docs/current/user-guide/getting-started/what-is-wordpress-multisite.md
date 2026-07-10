@@ -3,7 +3,7 @@ title: Quid est WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Quid est WordPress Multisite?
+# Quid est WordPress Multisite? {#what-is-wordpress-multisite}
 
 In sua essentia, WordPress offre una funzione chiamata ‘Multisite’ che risale alle sue origini al 2010 con il lancio di WordPress 3.0. Da allora ha ricevuto diverse revisioni volte a introdurre nuove funzionalità e rafforzare la sicurezza.
 
@@ -11,7 +11,7 @@ In sostanza, un multisite di WordPress può essere pensato così: Un'Università
 
 ##
 
-## Che cos'è esattamente WordPress Multisite?
+## Che cos'è esattamente WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite è una funzione di WordPress che permette a più siti di condividere un'unica installazione di WordPress. Quando si attiva il multisite, il sito WordPress originale viene convertito per supportare ciò che di solito viene chiamato una **rete di siti**.
 
@@ -23,7 +23,7 @@ Questo fatto è uno dei principali vantaggi del multisite, perché ti permette d
 
 ##
 
-## Sottodominio o Sottodirectory?
+## Sottodominio o Sottodirectory? {#subdomain-or-subdirectory}
 
 Esistono due modalità per far funzionare un WordPress multisite – e devi sceglierne una quando converti la tua installazione WordPress normale in una installazione multisite:
 
@@ -49,7 +49,7 @@ Unum ex magnis difficilibus in configuration modo subdomain est copertura SSL (H
 
 In contrasto ad modo subdirectory, subsites in rete ad basem subdomain considerant search engines ut separate websites, quod significat quod contentus in uno subsite nullo modo affectat performance SEO aliorum subsites.
 
-## Super Admin
+## Super Admin {#the-super-admin}
 
 Installatio WordPress unius loci permittit te ad additionem numerorum utilizatorum infinitorum et conferendum illis distinctas roles utilisateur cum distinctis permissionibus.
 
@@ -63,7 +63,7 @@ Plugin et thema solum per panel network admin ab super admins instalari vel dein
 
 _Nota: uti possides, ut videas, invitare aliquem in network tu et concedere ei status super admin daret hoc utor controlem totalem super network tuum. Ut exemplum, alii super admini potuerunt etiam status tuum super adminis removere, de facto te ex panel admin network tuum clausisse. Ut clientibus Ultimate Multisite permittamus habere controllem granularem in quo super admini additionales possunt facere, habemus add-on vocatum Support Agents. Hoc add-on tibi permittit creare ulterius generis utrumque – agentem – cum tantis permissionibus quibus necesse sunt ad operandum in network._
 
-## Quid est communis inter subsites et quid non est
+## Quid est communis inter subsites et quid non est {#what-is-shared-among-subsites-and-what-is-not}
 
 Sicut dicimus ante, una ex clavis vantacibus WordPress multisite est quod omnes subsites eadem configurationes, files core, themes, plugins, files core WordPress, etc., partifecunt.
 
@@ -75,7 +75,7 @@ Sed sunt elementa quae per subsite particularem modo bene limitantur.
 
 - Plures tabulae database pro quo cada subsitem creantur, quod significat quod posts, commentarii, paginae, settinges, et aliae sunt per cada subsite limitatae.
 
-## Management utentium in WordPress Multisite
+## Management utentium in WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Una delicata materia in WordPress multisite est management utentium. Tabula utentium WordPress est una ex paucardis quae inter omnes subsites partifecit.
 
@@ -99,7 +99,7 @@ _Nota: Nos damos cuenta de lo malo que puede ser esto dependiendo de tu caso de 
 
 Etiam tabula hominum partitur, sed utentes in sub-sites adhiberi et removere possunt administratores sub-sites vel super administrator, et etiam in sub-sites distinctis roles utentium habere possunt.
 
-## Consideratio de performance
+## Consideratio de performance {#performance-considerations}
 
 WordPress multisite est verum potentia quando qua de numero situeriorum potest sustinere est. Hoc potest probari per factum quod [WordPress.com](https://WordPress.com), Edublogs et Campuspress omnes servitia sunt ad multisite fundatae, et quomodo unus host milia situerium sustinet.
 

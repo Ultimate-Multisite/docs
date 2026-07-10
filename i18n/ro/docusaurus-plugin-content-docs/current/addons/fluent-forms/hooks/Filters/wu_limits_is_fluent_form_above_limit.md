@@ -4,11 +4,11 @@ title: Filtru - wu_limits_is_fluent_form_above_limit
 sidebar_label: wu_limits_is_fluent_form_above_limit
 _i18n_hash: 8fd05176d097f0d8576b5656778bd633
 ---
-# Filter: wu_limits_is_fluent_form_above_limit
+# Filter: wu_limits_is_fluent_form_above_limit {#filter-wulimitsisfluentformabovelimit}
 
 Verifică dacă un anumit tip de formular este permis pe acest plan. Permite dezvoltatorilor de plugin să filtreze valoarea returnată.
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -17,10 +17,10 @@ Verifică dacă un anumit tip de formular este permis pe acest plan. Permite dez
 | $form_count | `int` | Numărul curent de formulare. |
 | $quota | `int` | Cota maximă permisă. |
 
-### De la
+### De la {#since}
 
 - 1.0.0
-### Sursă
+### Sursă {#source}
 
 - Definit în [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L56) la linia 56
 - Definit în [`inc/limitations/class-limit-fluent-forms.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-fluent-forms/blob/main/inc/limitations/class-limit-fluent-forms.php#L89) la linia 89

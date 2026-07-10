@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Integrimi Mailchimp
+
+Integro rrjetin tënd Multisite Ultimate me Mailchimp-in tënd. Mund të lidhësh plane të caktuara me Mailchimp Lists dhe të shtosh automatikisht abonentë në ato lista gjatë regjistrimit.
+
+## Instalimi {#installation}
+
+1. Ngarko 'ultimate-multisite-mailchimp' në direktorinë '/wp-content/plugins/'
+2. Aktivizo plugin-in përmes menusë 'Plugins' në WordPress Network Admin
+
+## Udhëzues përdorimi {#usage-guide}
+
+Sinkronizimi i email-eve të abonentëve me listat e tua MailChimp është vërtet i lehtë me shtesën tonë Ultimate Multisite: MailChimp Integration. Ky udhëzues synon të të ndihmojë të konfigurosh gjithçka!
+
+## Marrja e një çelësi API {#getting-an-api-key}
+
+Para se të fillojmë të hyjmë te cilësimet e ndryshme të disponueshme, na duhet një çelës API i MailChimp. Kjo do t’i lejojë Ultimate Multisite të komunikojë me MailChimp API për të marrë listat, grupet dhe për të shtuar adresa email-i në ato lista dhe grupe kur përdoruesit regjistrohen.
+
+Ndiq këtë udhëzues për të marrë çelësin tënd API të MailChimp: [Rreth çelësave API | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Shto çelësin tënd API të MailChimp te_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Modaliteti i integrimit {#integration-mode}
+
+Shtesa MailChimp Integration ofron dy “modalitete integrimi”, që do të thotë se ka dy mënyra të ndryshme se si mund ta përdorësh shtesën për të sinkronizuar adresat email.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dy modalitete integrimi për fleksibilitet më të madh!_
+
+### Modaliteti 1: Lista të shumta {#mode-1-multiple-lists}
+
+Modaliteti i parazgjedhur përdor **Lista të shumta**. Ky modalitet do të të lejojë të zgjedhësh disa lista MailChimp për secilin prej planeve. Ky është opsioni më i mirë nëse i segmenton përdoruesit e tu në lista të ndryshme.
+
+Për shembull, le të supozojmë se ke 3 lista të ndryshme në Account-in tënd MailChimp: **Newsletter** , **Plani A** , dhe **Plani B**. Dëshiron që të gjithë përdoruesit, pavarësisht nga plani i tyre, të përfshihen gjithashtu në listën Newsletter, që të mos i humbasin përditësimet e tua.
+
+Për ta arritur këtë, mund të përdorësh modalitetin Lista të shumta për të shtuar të dyja listat **Newsletter** dhe **Plani A** te Cilësimet MailChimp të Planit A, dhe **Newsletter** dhe **Plani B** te Cilësimet MailChimp të Planit B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Zgjidh listat e parazgjedhura për account-e të reja dhe për account-e të anuluara_
+
+### Modaliteti 2: Listë e vetme + grupe të shumta {#mode-2-single-list--multiple-groups}
+
+MailChimp të lejon ta segmentosh listën tënde në grupe më të vogla përdoruesish të quajtura **Grupe**. Kjo të lejon të kesh më shumë kontroll, pasi mund t’i dërgosh një fushatë një nëngrupi specifik të abonentëve të tu pa pasur nevojë të krijosh kopje të shumta të së njëjtës fushatë në MailChimp (gjë që e bën të vështirë analizimin e metrikave të asaj fushate më pas).
+
+Për shembull, mund të kesh një listë të vetme të quajtur **Abonentët e rrjetit tim,** dhe brenda saj të kesh grupe për **Planin A** dhe **Planin B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Zgjidh listat dhe grupet e parazgjedhura, nëse përdor modalitetin e integrimit “listë e vetme + grupe të shumta”_
+
+## Listat dhe grupet e parazgjedhura {#default-lists-and-groups}
+
+Pasi të zgjedhësh se cili modalitet integrimi ka më shumë kuptim për rastin tënd të veçantë të përdorimit, është koha të zgjedhësh listat e parazgjedhura (dhe grupet, në varësi të modalitetit). Lista e parazgjedhur do të përdoret kur një plan i caktuar nuk ka një Listë specifike të zgjedhur.
+
+Mund të zgjedhësh gjithashtu listën e parazgjedhur për account-e të anuluara. Sa herë që një përdorues e përfundon abonimin e tij ose të saj dhe e heq account-in e tij ose të saj nga rrjeti yt, adresa e tij ose e saj email do të zhvendoset te lista e caktuar për account-e të anuluara.
+
+## Aktivizimi i abonimit të dyfishtë {#enabling-double-subscription}
+
+Në të njëjtën faqe cilësimesh, do të mund të aktivizosh **Abonimin e dyfishtë**. Ky opsion do ta shtojë përdoruesin si te lista e parazgjedhur e zgjedhur, ASHTU EDHE te lista e zgjedhur për planin e atij përdoruesi. Nëse ky opsion nuk është i aktivizuar, përdoruesi do të shtohet vetëm te lista e zgjedhur për planin e përdoruesit. Nëse nuk është caktuar asnjë për atë plan të veçantë, atëherë përdoruesi do të shtohet te lista e parazgjedhur e zgjedhur.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Mund t’i kesh përdoruesit e tu të abonuar si te lista e parazgjedhur, ashtu edhe te lista e planit gjatë regjistrimit_
+
+## Zgjedhja e listave dhe grupeve për secilin prej planeve {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Shko te **Planet** e tua dhe zgjidh planin që dëshiron të redaktosh. Vër re se në meta-box-in **Advanced Options**, do të jetë i disponueshëm një skedë e re e quajtur MailChimp.
+
+Në atë skedë, do të mund të zgjedhësh disa lista ose një listë të vetme dhe disa grupe (në varësi të modalitetit të integrimit) për atë plan.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Zgjidh Listat dhe Grupet që dëshiron të përdorësh për secilin prej planeve të tua_
+
+Kur një përdorues i ri regjistrohet për atë plan, adresa e tij email do të shtohet te listat dhe grupet e zgjedhura!

@@ -1,31 +1,45 @@
 ---
-title: Multi-Tenancy
+title: Multi-Tenansi
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
-Mendistribusikan subsites di berbagai server dan database untuk meningkatkan performa dan keamanan
+Distribusikan subsitus di berbagai server dan database untuk performa dan keamanan
 
-## Persyaratan
+## Sorotan rilis versi 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 menambahkan fondasi tenant berdaulat untuk alur kerja isolasi produksi:
+
+- Autologin tenant stateless dengan kunjungan SSO berumur pendek dan terlindungi dari replay.
+- Isolasi database dan filesystem per-subsitus untuk tenant berdaulat.
+- Kemampuan multi-tenancy Hostinger untuk penyediaan tenant yang sadar host.
+- Gerbang verifikasi migrasi berdaulat untuk pemeriksaan data lama dan pemrosesan push asinkron.
+- Pengikatan host database pada mesin yang sama yang dapat dikonfigurasi untuk instalasi Bedrock, FrankenPHP, dan localhost.
+- Peningkatan bootstrap tenant, penulis database, bootstrap skema, dan penyediaan pengguna.
+- Teardown berdaulat yang lebih aman yang membersihkan kredensial tenant.
+
+Lihat panduan pengguna untuk [alur kerja migrasi berdaulat](/user-guide/getting-started/sovereign-migration-workflow), [isolasi multi-tenancy](/user-guide/configuration/multi-tenancy-isolation), dan [operasi tenant berdaulat](/user-guide/administration/sovereign-tenant-operations).
+
+## Persyaratan {#requirements}
 
 - WordPress 5.3 atau lebih tinggi
 - PHP 7.4 atau lebih tinggi
-- Plugin Ultimate Multisite (aktif)
+- plugin Multisite Ultimate (aktif)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file addon ke direktori `/wp-content/plugins/` Anda
 2. Aktifkan plugin melalui menu 'Plugins' di WordPress
-3. Konfigurasi pengaturan addon di admin jaringan
+3. Konfigurasikan pengaturan addon di admin jaringan
 
-## Pengembangan
+## Pengembangan {#development}
 
-### Setup
+### Penyiapan {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Project Structure
+### Struktur Proyek {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # Kelas dan include PHP
+├── inc/                          # Kelas PHP dan include
 │   ├── class-multisite-ultimate-updater.php  # Penangan pembaruan
 │   └── class-multi_tenancy-main.php             # Fungsionalitas utama
-├── tests/                        # Unit tests
+├── tests/                        # Pengujian unit
 │   ├── bootstrap.php            # Bootstrap pengujian
-│   ├── class-*-base.php         # Kelas uji dasar
-│   └── class-*-test.php         # Kasus uji
+│   ├── class-*-base.php         # Kelas pengujian dasar
+│   └── class-*-test.php         # Kasus pengujian
 ├── views/                       # File template
 ├── assets/                      # Aset statis
-│   ├── css/                     # Stylesheets
+│   ├── css/                     # Stylesheet
 │   ├── js/                      # File JavaScript
 │   └── images/                  # Gambar
 ├── lang/                        # File bahasa
-├── composer.json                # Dependencies PHP
-├── package.json                 # Dependencies Node.js
+├── composer.json                # Dependensi PHP
+├── package.json                 # Dependensi Node.js
 ├── phpunit.xml.dist             # Konfigurasi PHPUnit
 ├── .phpcs.xml.dist              # Konfigurasi standar kode
 └── rector.php                   # Aturan modernisasi kode
 ```
 
-### Pengujian
+### Pengujian {#testing}
 
-Addon ini mencakup kerangka pengujian yang komprehensif:
+Addon ini mencakup kerangka kerja pengujian yang komprehensif:
 
-- **Unit Tests**: Pengujian berbasis PHPUnit dengan suite pengujian WordPress
-- **Base Test Class**: Menyediakan metode bantu untuk skenario pengujian umum
-- **Test Coverage**: Dikonfigurasi untuk melacak cakupan kode
-- **Multisite Testing**: Pengujian berjalan di lingkungan multisite
+- **Pengujian Unit**: Pengujian berbasis PHPUnit dengan rangkaian pengujian WordPress
+- **Kelas Pengujian Dasar**: Menyediakan metode pembantu untuk skenario pengujian umum
+- **Cakupan Pengujian**: Dikonfigurasi untuk melacak cakupan kode
+- **Pengujian Multisite**: Pengujian berjalan di lingkungan multisite
 
-### Code Standards
+### Standar Kode {#code-standards}
 
-- **WordPress Coding Standards**: Diterapkan melalui PHPCS
-- **PHP 7.4+ Compatibility**: Mendukung fitur PHP modern
-- **Static Analysis**: Integrasi PHPStan untuk pemeriksaan tipe data
-- **Code Modernization**: Aturan Rector untuk peningkatan PHP
+- **Standar Pengodean WordPress**: Ditegakkan melalui PHPCS
+- **Kompatibilitas PHP 7.4+**: Fitur PHP modern didukung
+- **Analisis Statis**: Integrasi PHPStan untuk pemeriksaan tipe
+- **Modernisasi Kode**: Aturan Rector untuk peningkatan PHP
 
-### Build System
+### Sistem Build {#build-system}
 
-- **Asset Processing**: Minifikasi untuk file CSS/JS
-- **Translation**: Pembuatan file POT
-- **Packaging**: Pembuatan arsip untuk distribusi
-- **Development Mode**: Aset yang tidak diminifikasi untuk debugging
+- **Pemrosesan Aset**: Minifikasi untuk file CSS/JS
+- **Terjemahan**: Pembuatan file POT
+- **Pengemasan**: Pembuatan arsip untuk distribusi
+- **Mode Pengembangan**: Aset tidak diminifikasi untuk debugging
 
-## Konfigurasi
+## Konfigurasi {#configuration}
 
 Addon ini mendukung berbagai opsi konfigurasi yang dapat diakses melalui antarmuka admin jaringan.
 
-## Hooks dan Filters
+### Konfigurasi tenant berdaulat {#sovereign-tenant-configuration}
 
-### Actions
+Untuk tenant berdaulat, konfigurasikan database tenant, root filesystem, pengikatan host database, dan kemampuan host sebelum merutekan lalu lintas ke tenant. Jalankan verifikasi migrasi setelah setiap perubahan yang memengaruhi kredensial database, pengikatan host, routing, atau penyediaan pengguna.
+
+Gunakan `localhost` hanya ketika runtime tenant dan grant database mengharapkan soket lokal atau akses pada mesin yang sama. Gunakan `127.0.0.1` atau hostname layanan ketika itulah host grant yang dikonfigurasi oleh penyedia Anda.
+
+### Kemampuan Hostinger {#hostinger-capability}
+
+Kemampuan multi-tenancy Hostinger bekerja dengan token integrasi Hostinger bersama. Pastikan domain ada di hPanel, DNS mengarah ke akun Hostinger, dan pengaturan database tenant cocok dengan hPanel sebelum verifikasi.
+
+## Hook dan Filter {#hooks-and-filters}
+
+### Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - Dipicu setelah inisialisasi addon
 - `ultimate-multisite-addon-template_loaded` - Dipicu setelah semua file addon dimuat
 
-### Filters
+### Filter {#filters}
 
-- `ultimate-multisite-addon-template_settings` - Memodifikasi pengaturan addon
-- `ultimate-multisite-addon-template_enabled` - Mengganti status aktif/nonaktif addon
+- `ultimate-multisite-addon-template_settings` - Ubah pengaturan addon
+- `ultimate-multisite-addon-template_enabled` - Timpa status aktif/nonaktif addon
 
-## Lisensi
+## Lisensi {#license}
 
 Addon ini dilisensikan di bawah GPL v3 atau yang lebih baru.
 
-## Dukungan
+## Dukungan {#support}
 
 Untuk dukungan dan dokumentasi, kunjungi [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
-- Versi 1.0.1 (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.
+- Versi 1.2.0 (2026-06-03): menambahkan autologin tenant stateless, kemampuan multi-tenancy Hostinger, isolasi database dan filesystem per-subsitus, gerbang verifikasi migrasi berdaulat, peningkatan bootstrap tenant/penulis database, pengikatan host MySQL yang dapat dikonfigurasi, dan teardown berdaulat yang lebih aman.
+
+- Versi 1.0.1 (2025-09-28): mengganti nama prefiks menjadi ultimate-multisite; memperbarui text domain; peningkatan versi.
 
 
-- Versi (2025-09-28): ganti awalan menjadi ultimate-multisite; perbarui domain teks; peningkatan versi.
+- Versi  (2025-09-28): mengganti nama prefiks menjadi ultimate-multisite; memperbarui text domain; peningkatan versi.

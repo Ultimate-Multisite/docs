@@ -3,9 +3,9 @@ title: Cathetan Rilis
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Catatan Rilis
+# Catatan Rilis {#release-notes}
 
-## Versi 2.13.0 — Dirilis pada 2026-06-05
+## Versi 2.13.0 — Dirilis pada 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Anyar: Ditambah dukungan sovereign-tenant untuk akun pelanggan, checkout, penagihan (billing), situs, invoice, pergantian template, dan pemetaan domain sehingga jaringan tenant bisa mengarahkan pelanggan kembali ke situs utama untuk tindakan yang dikelola.
 - Anyar: Ditambahkan pengecekan kredensial perpanjangan (renewal-credential checks) untuk langganan berulang agar gateway bisa menonaktifkan perpanjangan otomatis jika tidak ada kesepakatan penagihan, langganan, atau token vault yang tersimpan.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Kasus tepi seperti perpanjangan keanggotaan, tampilan kedaluwarsa, dan pengumpulan pembayaran kini menghindari kedaluwarsa segera, *crash*, atau pembayaran yang terlewat.
 - Peningkatan: Kompatibilitas WordPress diuji hingga versi 7.0, aset Vue produksi dibangun kembali dari sumber npm, dan cakupan end-to-end Cypress sekarang menguji lebih banyak alur checkout, pengaturan (setup), SSO, dan gateway.
 
-## Versi 2.12.0 — Dirilis tanggal 2026-05-15
+## Versi 2.12.0 — Dirilis tanggal 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Anyar: Nambah Hostinger (hPanel) minangka penyedia host sing didukung karo integrasi pemetaan domain.
 - Anyar: Site Exporter saiki bisa ngurus paket impor jaringan kanggo restorasi site sak jaringan kanthi luwih lancar.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: CLI Site Exporter saiki tetep njaga pilihan site jaringan default sing bener.
 - Peningkatan: WP-cli sing di-bundle saka paket plugin wis dihilangi, nggawe ukuran plugin luwih cilik.
 
-## Versi 2.11.0 — Dirilis tanggal 2026-05-11
+## Versi 2.11.0 — Dirilis tanggal 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Anyar: Site export saiki ngemas `index.php` sing bisa boot dhewe supaya ZIP bisa dipasang ing host anyar tanpa perlu instal plugin terpisah.
 - Anyar: Ekspor jaringan ngidini administrator ekspor kabeh subsite ing siji arsip saka halaman admin Site Export.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Anyar: Editor formulir checkout bakal ngelingake yen produk ditambah tanpa field sing wajib dikonfigurasi.
 - Anyar: Tab pengaturan Import/Export saiki jelas njlentrego cakupane lan langsung nyambung menyang alat Site Export.
 
-## Versi 2.10.0 — Dirilis tanggal 2026-05-05
+## Versi 2.10.0 — Dirilis tanggal 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Anyar: Wizard setup PayPal kanggo input manual karo flag OAuth supaya konfigurasi gateway lancar tanpa masalah.
 - Anyar: Panel pelanggan ganti template didesain ulang nganggo kartu current-template, grid sing tetep ana, lan tombol **Reset current template**.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Jalur SSO sing difilter dihormati ing kabeh alur login.
 - Perbaikan: Pilihan identitas situs kosong tetep dipertahankan nalika simpan.
 
-## Versi 2.9.0 — Dirilis tanggal 30-04-2026
+## Versi 2.9.0 — Dirilis tanggal 30-04-2026 {#version-290--released-on-2026-04-30}
 
 - Anyar: Ekspor lan import satu situs ditambahi ing **Tools > Export & Import**.
 - Perbaikan: File ZIP ekspor saiki diwenehake liwat endpoint unduh sing wis diautentikasi.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Perbaikan: Tour IDs normalisasi menyang underscore ing kunci pengaturan pengguna.
 - Peningkatan: ZipArchive saiki digunakake tinimbang Alchemy/Zippy kanggo kompatibilitas sing luwih apik.
 
-## Versi 2.8.0 — Dirilis tanggal 29-04-2026
+## Versi 2.8.0 — Dirilis tanggal 29-04-2026 {#version-280--released-on-2026-04-29}
 
 - Baru: Tombol Jumper diaktifkan di UI pengaturan Other Options.
 - Baru: Kolom Status ditambahkan ke tabel daftar formulir checkout.

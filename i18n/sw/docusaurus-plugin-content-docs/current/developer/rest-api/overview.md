@@ -1,46 +1,46 @@
 ---
 title: Muhtasari wa REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Rejeleo la REST API
+# Rejeleo la REST API {#rest-api-reference}
 
-## Mipangilio ya Msingi
+## Usanidi wa Msingi {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Uthibitisho:** API Key & Secret (HTTP Basic Auth au URL Parameters)
+**URL ya Msingi:** `{site_url}/wp-json/wu/v2/`
+**Uthibitishaji:** Ufunguo wa API na Siri (HTTP Basic Auth au Vigezo vya URL)
 
-## Uthibitisho wa Utambulisho
+## Uthibitishaji {#authentication}
 
-### Washa API
+### Washa API {#enable-api}
 ```php
-// Washa API katika mipangilio ya Ultimate Multisite au kwa njia ya programu
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Pata Credentials za API
+### Pata Vitambulisho vya API {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Njia za Uthibitisho wa Utambulisho
+### Mbinu za Uthibitishaji {#authentication-methods}
 
 **HTTP Basic Auth (Inapendekezwa):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**Vigezo vya URL:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Endpoints Kuu
+## Endpointi Kuu {#core-endpoints}
 
-### 1. API ya Wateja (Customers API)
+### 1. API ya Wateja {#1-customers-api}
 
-**Base Route:** `/customers`
+**Njia ya Msingi:** `/customers`
 
 **Pata Wateja Wote**
 ```http
@@ -52,7 +52,7 @@ GET /wu/v2/customers
 GET /wu/v2/customers/{id}
 ```
 
-**Tengeneza Mteja**
+**Unda Mteja**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Vidokezo vya mteja VIP"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API ya Vituo (Sites API)
+### 2. API ya Site {#2-sites-api}
 
-**Base Route:** `/sites`
+**Njia ya Msingi:** `/sites`
 
-**Tengeneza Kituo**
+**Unda Site**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -96,17 +96,17 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Kituo Changu Kipya",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API ya Uanachama (Memberships API)
+### 3. API ya Uanachama {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**Njia ya Msingi:** `/memberships`
 
-**Tengeneza Uanachama**
+**Unda Uanachama**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. API ya Bidhaa (Products API)
+### 4. API ya Bidhaa {#4-products-api}
 
-**Base Route:** `/products`
+**Njia ya Msingi:** `/products`
 
 **Pata Bidhaa Zote**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API ya Malipo (Payments API)
+### 5. API ya Malipo {#5-payments-api}
 
-**Base Route:** `/payments`
+**Njia ya Msingi:** `/payments`
 
-**Tengeneza Malipo**
+**Unda Malipo**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API ya Nyanja (Domains API)
+### 6. API ya Vikoa {#6-domains-api}
 
-**Base Route:** `/domains`
+**Njia ya Msingi:** `/domains`
 
-**Unganisha Nyanja**
+**Unganisha Kikoa**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint la Usajili (Registration Endpoint)
+## Endpointi ya Usajili {#registration-endpoint}
 
-Endpoint la `/register` linatoa mchakato kamili wa malipo/usajili:
+Endpointi ya `/register` hutoa mtiririko kamili wa checkout/usajili:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Kituo Changu Kipya",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Jibu (Response):**
+**Jibu:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Majibu ya Makosa (Error Responses)
+## Endpointi za Mpangaji Huru {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 huongeza ufunikaji wa REST kwa wapangaji huru kwa miunganisho inayotoa, kukagua, au kuthibitisha wapangaji waliotengwa.
+
+Mzigo halisi wa ombi hutegemea uwezo wa host uliowezeshwa, lakini miunganisho inapaswa kutarajia makundi haya ya endpointi:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Tumia endpointi ya bootstrap kuandaa rejista ya mpangaji, hifadhidata, mfumo wa faili, na hali ya uelekezaji. Tumia endpointi za hali ya uhamishaji na uthibitishaji kabla ya kubadilisha trafiki ya uzalishaji. Tumia endpointi ya ufutaji kwa ubomoaji huru ili vitambulisho vya hifadhidata viondolewe kupitia mtiririko wa usafishaji wa addon.
+
+Majibu ya kawaida ya hali ya uhamishaji yanajumuisha:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Chukulia `ready: false` kama kizuizi cha kabla ya uzinduzi. Kagua maelezo ya uthibitishaji, rekebisha ufungaji wa host ya hifadhidata, foleni, utoaji wa watumiaji, au tatizo la uelekezaji, kisha jaribu tena uthibitishaji.
+
+## Majibu ya Hitilafu {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Thamani ya kiparametri ni mbaya",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Muundo wa barua pepe ni mbaya"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Ukurasa na Kuchuja Data (Pagination and Filtering)
+## Uwekaji Kurasa na Uchujaji {#pagination-and-filtering}
 
-**Query Parameters:**
+**Vigezo vya Hoja:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Viparametri vya kawaida:
-- `per_page` - Idadi ya vitu kwa ukurasa (kiwango cha kawaida: 20, kiwango cha juu: 100)
-- `page` - Namba ya ukurasa
-- `search` - Neno la utafutaji
+Vigezo vya kawaida:
+- `per_page` - Vipengee kwa kila ukurasa (chaguomsingi: 20, upeo wa juu: 100)
+- `page` - Nambari ya ukurasa
+- `search` - Neno la kutafuta
 - `orderby` - Sehemu ya kupanga
 - `order` - Mwelekeo wa kupanga (asc/desc)
-- `status` - Kuchuja kwa kulingana na hali
-- `date_created` - Kuchuja kwa kulingana na kiwango cha tarehe
+- `status` - Chuja kwa hali
+- `date_created` - Chuja kwa kipindi cha tarehe

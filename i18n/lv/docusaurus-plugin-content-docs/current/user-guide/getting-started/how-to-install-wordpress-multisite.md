@@ -3,7 +3,7 @@ title: Kādu WordPress Multisite instalēt?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kā kādu man ir jāinstalē WordPress Multisite?
+# Kā kādu man ir jāinstalē WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite ļauj jums turēt tīklu vietnes vienā instalācijā. Tas ir iekļauts funkcija, bet pēc defaulta tā nav aktīva.
 
@@ -98,9 +98,9 @@ Lai izveidotu subvietni:
 
 Pēc lauku aizpildīšanas nospressiet pogu "Add site". Kad ja jaunais subviets ir izveidots, dodieties pie tā un pārbaudiet, vai subviets darbojas.
 
-## Kopas problēmas:
+## Kopas problēmas: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Es varu izveidot jaunas vietnes, bet tās nav pieejamas.
+### 1. Es varu izveidot jaunas vietnes, bet tās nav pieejamas. {#common-problems}
 
 Ja jūs izvēlējāt subdomēnus, jums ir arī jāizmanto viltru subdomēni (wildcard subdomains) savā multisite tīklā.
 

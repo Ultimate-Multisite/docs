@@ -3,11 +3,11 @@ title: Workflow ta Migrazzjoni Sovranija
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Workflow Migrazzjon Sovran
+# Workflow Migrazzjon Sovran {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 aggi sistemi verifikazzjoni għall-migrazzjoni biex tinqel subsite standard għal infrastruttura tal-tenant sovran.
 
-## Qabel ma tibda
+## Qabel ma tibda {#before-you-start}
 
 Konferma li għandek:
 
@@ -17,7 +17,7 @@ Konferma li għandek:
 - Binding tal-host tal-database li jidher (binding) jittlaq mal-ambiente destinazzjonat.
 - Aċċess biex tgħidu WP-CLI commands għall-network.
 
-## Workflow mġiegħt għal-irsekuzzjoni
+## Workflow mġiegħt għal-irsekuzzjoni {#recommended-workflow}
 
 1. Ipprepara il-database tal-tenant u l-filesystem destinazzjonati.
 2. Iscrivi jew aġġenna is-setting tal-isolazzjoni tal-tenant.
@@ -28,7 +28,7 @@ Konferma li għandek:
 7. Visita il-tenant b SSO.
 8. Switch id-DNS jew l-routing *għandu* jipprovvdi *għodda* lill-verifikazzjoni.
 
-## Portali ta verifikazzjoni (Verification gates)
+## Portali ta verifikazzjoni (Verification gates) {#verification-gates}
 
 Il-workflow tal-verifikazzjoni jikkontrolla l-migrazzjoni min żiel ħafna angoli:
 
@@ -40,6 +40,6 @@ Il-workflow tal-verifikazzjoni jikkontrolla l-migrazzjoni min żiel ħafna angol
 
 Trattja l-fallijiet tal-verifikazzjoni bħala bloker pre-launch. Ipprova l-problema tal-database, utent, queue, jew routing li qed tinrappreża, u phirri verifika min id-nuqba qabel ma tixponi il-tenant lil kliementi.
 
-## Visita prodduzzjonali l-prima
+## Visita prodduzzjonali l-prima {#first-production-visit}
 
 Wara ma jittlaq il-verifikazzjoni, uża **Visit (SSO)** mill-screen tal-gestjoni tal-sajt għall-visita amministrattiva l-prima. Dan jkonferma l-routing tal-tenant, it-trattament tal-token SSO, in-pinning tal-origin, u il-provisioning tal-utenti tal-tenant f un step kontrollata.

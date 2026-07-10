@@ -1,140 +1,138 @@
 ---
-title: Comharrachadh a' chlàradh dhòmnainn
+title: Mar a rèiticheas tu mapadh àrainn
 sidebar_position: 6
-_i18n_hash: 53ce91dcbf4f1046b0f74271decfcb77
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Fuad a' sàmhailachadh de mhaighmhan domhainn (v2)
+# Mar a rèiticheas tu mapadh àrainn (v2) {#how-to-configure-domain-mapping-v2}
 
-_**NOTE CRUCIAL: Tha an article seo a' tighinn air Ultimate Multisite version 2.x.**_
+_**NOTA CUDROMACH: Tha an artaigil seo a’ toirt iomradh air Ultimate Multisite tionndadh 2.x.**_
 
-Am cheann de lasaichean a tha fòrlaidh a tha feumach, is eadar a bheachd a thabhairt do chliachdaichean na stiùir a bhith ag tòiseachadh air domhainn ùr (top-level domain) air iad. Tha e cinnteach gu faide: cúidhe fhaighinn a tha nàdarach: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) a' chomh maoinich is [_**joesbikeshop.com**_](http://joesbikeshop.com)? Tha seo a' cheannach Ultimate Multisite a thabhairt, gu h-èifeachdach, gu fada air a bhith ag faighinn plugin-eile a' chàrachadh.
+’S e aon de na feartan as cumhachdaiche aig lìonra premium an comas cothrom a thoirt don luchd-dèiligidh againn àrainn àrd-ìre a cheangal ris na làraichean aca. Às dèidh na h-uile, dè tha a’ coimhead nas proifeiseanta: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) no [_**joesbikeshop.com**_](http://joesbikeshop.com)? Sin as coireach gu bheil Ultimate Multisite a’ tabhann na feart sin a-staigh, gun fheum air plugins treas-phàrtaidh a chleachdadh.
 
-## Cò a tha mhaighmhan domhainn?
+## Dè th’ ann am mapadh àrainn? {#whats-domain-mapping}
 
-Mar a tha an t-aon-fhaisg a' sgaidh, tha mhaighmhan domhainn (domain mapping) gun a bhith a' gineadh de Ultimate Multisite a bhith ag fháil air cur fhaighinn airson domhainn ùr agus a bhith a' chàrachadh sin air an site a thoilseachd anns an stiùir.
+Mar a tha an t-ainm a’ moladh, ’s e mapadh àrainn an comas a tha Ultimate Multisite a’ tabhann iarrtas airson àrainn ghnàthaichte a ghabhail a-steach agus an t-iarrtas sin a mhapadh ris an làrach fhreagarrach san lìonra leis an àrainn shònraichte sin ceangailte ris.
 
-### Cò a tha mhaighmhan domhainn a' sgaidh ar t-aon-fhaisg na h-Ultimate Multisite Network
+### Mar a shuidhicheas tu mapadh àrainn air an lìonra Ultimate Multisite agad {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Tha mhaighmhan domhainn ag iarraidh tha seachdainn a bhith a' sgaidh air a bheachd. Tha e cinnteach gu bheil Ultimate Multisite a' sgaidh an dìomhaidh airson a' chùineachadh air a ghràdh, mar a tha e a' tòiseachadh an t-aon-fhaisg.
+Feumaidh mapadh àrainn beagan rèiteachaidh air do thaobh gus obrachadh. Gu fortanach, bidh Ultimate Multisite ag fèin-obrachadh na h-obrach chruaidh dhut gus an urrainn dhut na riatanasan a choileanadh gu furasta.
 
-Ag ciamar a tha Ultimate Multisite a' sgaidh, salaichean a' sgaidh agus a' chlàradh **sunrise.php** air an lathaidheachda. Tha an salaichean a' tòiseachadh gu bheil thu a' sgaidh a' chàrachadh sin a' chluich.
+Rè stàladh Ultimate Multisite, copaidh agus stàlaichidh an draoidh **sunrise.php** gu fèin-obrachail dhan phasgan ainmichte. **Cha leig an draoidh leat leantainn air adhart gus am bi an ceum seo crìochnaichte**.
 
-<!-- Screenshot unavailable: Salaichean a' sgaidh Ultimate Multisite le sunrise.php -->
+<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
 
-Air a' cheann, an sin gu bagairte, air an t-aon-fhaisg Ultimate Multisite a' sgaidh a' chluich a' sgaidh an stiùir agad agad.
+Tha seo a’ ciallachadh, aon uair ’s gu bheil draoidh stàlaidh Ultimate Multisite air crìoch a chur air rèiteachadh an lìonra agad, gun urrainn dhut tòiseachadh air an àrainn ghnàthaichte a mhapadh sa bhad.
 
-Tha e cinnteach gu bheil mhaighmhan domhainn ann an Ultimate Multisite **dèan** (mandatory). Tha e fhaighinn cur fhaighinn air a' sgaidh fhaighinn WordPress Multisite na h-aon-fhaisg, no tha aon fhaisg mhaighmhan domhainn eile.
+Thoir an aire nach eil mapadh àrainn ann an Ultimate Multisite èigneachail. Tha roghainn agad gnìomh mapadh àrainn dùthchasach WordPress Multisite no fuasgladh mapadh àrainn sam bith eile a chleachdadh.
 
-Tha thuair a tha thuair thuair a thug an t-seòl (domain mapping) de Ultimate Multisite a leathadh airson curtha air eòlas lain sin, gu bheil thu a' faicinn an t-seòl lain eile. Is eadar a tha seo a' fàilte.
+Ma dh’fheumas tu mapadh àrainn Ultimate Multisite a chur à comas gus àite a thoirt do fhuasglaidhean mapadh àrainn eile, faodaidh tu am feart seo a chur à comas fo **Ultimate Multisite > Roghainnean > Mapadh Àrainn**.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Duilleag roghainnean Mapadh Àrainn a’ sealltainn ath-stiùireadh rianachd, teachdaireachd mapaidh agus roghainnean DNS](/img/config/domain-mapping-settings.png)
 
-An tòiseachadh a tha seo, leathair thu a faicinn an tòiseil **Force Admin Redirect**. A tha seo a' toirt thu a' faicinn a' sgrùdadh gu sònach an tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh. A tha seo a' toirt thu a' faicinn a' sgrùdadh gu sònach an tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Dìreach fon roghainn seo, chì thu cuideachd an roghainn **Cuir Ath-stiùireadh Rianachd an Sàs**. Leigidh an roghainn seo leat smachd a chumail air am bi e comasach don luchd-ceannach agad faighinn chun Dashboard rianachd aca an dà chuid air an àrainn ghnàthaichte agus air an fho-àrainn aca, no dìreach air aon dhiubh.
 
-Tha thu a' tighinn **Force redirect to mapped domain**, beann thu a thig an tòiseil a tha thu a' faicinn a' sgrùdadh gu sònach an tòiseil a tha thu a' faicinn a' sgrùdadh.
+Ma thaghas tu **Cuir ath-stiùireadh chun àrainn mhapaichte an sàs** , cha bhi e comasach don luchd-ceannach agad faighinn chun Dashboard rianachd aca ach air na h-àrainnean gnàthaichte aca.
 
-Tha tòiseil **Force redirect to** **network domain** a' toirt thu a' faicinn a' sgrùdadh a' sònach - beann thu a thig an tòiseil a tha thu a' faicinn a' sgrùdadh gu sònach an tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Nì an roghainn **Cuir ath-stiùireadh gu** **àrainn an lìonra** dìreach an taobh eile - cha cheadaichear don luchd-ceannach agad faighinn chun Dashboard aca ach air an fho-àrainn aca, eadhon ma tha iad a’ feuchainn ri clàradh a-steach air na h-àrainnean gnàthaichte aca.
 
-Agus tha tòiseil **Allow access to the admin by both mapped domain domain and network domain** a' toirt thu a' faicinn a' sgrùdadh a' sònach air an t-seòl lain agus an t-seòl lain.
+Agus leigidh an roghainn **Leig inntrigeadh dhan rianachd leis an dà chuid an àrainn mhapaichte agus àrainn an lìonra** leotha faighinn chun Dashboard rianachd aca an dà chuid air an fho-àrainn agus air an àrainn ghnàthaichte.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Clàr-taice tuiteam-sìos Ath-stiùireadh Rianachd air a leudachadh a’ sealltainn nan trì roghainnean ath-stiùiridh](/img/config/domain-mapping-redirect-options.png)
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Tha dà dhòigh ann àrainn ghnàthaichte a mhapadh. Tha a’ chiad fhear le bhith a’ mapadh ainm na h-àrainn bhon Dashboard rianachd lìonra agad mar an super admin agus tha an dàrna fear tro Dashboard rianachd na fo-làraich fo dhuilleag Account.
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Ach mus tòisich thu air an àrainn ghnàthaichte a mhapadh ri aon de na fo-làraichean san lìonra agad, feumaidh tu dèanamh cinnteach gu bheil **roghainnean DNS** ainm na h-àrainn air an rèiteachadh gu ceart.
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+###
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+### Dèanamh cinnteach gu bheil roghainnean DNS na h-àrainn air an rèiteachadh gu ceart {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Gus am bi mapadh ag obair, feumaidh tu dèanamh cinnteach gu bheil an àrainn a tha thu an dùil a mhapadh a’ comharrachadh gu seòladh IP an lìonra agad. Thoir an aire gu bheil feum agad air seòladh IP an Lìonra - seòladh IP na h-àrainn far a bheil Ultimate Multisite air a stàladh - chan e seòladh IP na h-àrainn ghnàthaichte a tha thu airson a mhapadh. Gus seòladh IP àrainn shònraichte a lorg, tha sinn a’ moladh a dhol gu [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html), mar eisimpleir.
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Gus an àrainn a mhapadh gu ceart, feumaidh tu **A RECORD** a chur ris air an rèiteachadh **DNS** agad a’ comharrachadh chun **t-seòlaidh IP** sin. Tha riaghladh DNS ag atharrachadh gu mòr eadar diofar chlàradairean àrainn, ach tha pailteas oideachaidhean air-loidhne ann a tha a’ còmhdach sin ma nì thu lorg airson " _Creating A Record on XXXX_ " far a bheil XXXX na chlàradair àrainn agad (m.e.: " _Creating A Record on_ _GoDaddy_ ").
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Ma tha duilgheadas agad seo fhaighinn ag obair, **cuir fios gu taic clàradair na h-àrainn agad** agus bidh iad comasach air do chuideachadh leis a’ phàirt seo.
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' tòiseil a tha thu a' faicinn a' sgrùdadh a tha thu a' faicinn a' sgrùdadh.
+Ma tha thu an dùil leigeil leis an luchd-dèiligidh agad na h-àrainnean aca fhèin a mhapadh, feumaidh iadsan an obair air a’ phàirt seo a dhèanamh iad fhèin. Stiùir iad a dh’ionnsaigh siostam taic a’ chlàradair aca ma tha iad gan lorg fhèin gun chomas an A Record a chruthachadh.
 
-Tha eadar latha airson leathadh curtha air eòlas lain. An uair a' fàilte, tha an uair a' faicinn a' sgrùdadh de dhutha a' t
+### Mapadh ainm àrainn ghnàthaichte mar Super Admin {#mapping-custom-domain-name-as-super-admin}
 
-Chan eil a tha a' sgaidh an t-seòl a' sgaidh, rinn thuig a tha thuig a' sgaidh a' chàrachadh (domain) a tha thuig a' sgaidh a' chàrachadh. Rinn thuig thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha Ultimate Multisite a' sgaidh - chaich thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh. Tha amach a bhith a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh. Tha amach a bhith a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh.
+Nuair a tha thu air logadh a-steach mar super admin air an lìonra agad, faodaidh tu ainmean àrainn gnàthaichte a chur ris agus a stiùireadh gu furasta le bhith a’ dol fo **Ultimate Multisite > Àrainnean**.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+![Duilleag liosta Àrainnean ann an Ultimate Multisite](/img/admin/domains-list.png)
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Fon duilleag seo, faodaidh tu briogadh air a’ phutan **Cuir Àrainn Ris** aig a’ mhullach agus bheir seo suas uinneag modal far an urrainn dhut **ainm na h-àrainn ghnàthaichte** a shuidheachadh agus a lìonadh a-steach, **an fho-làrach** ris a bheil thu airson ainm na h-àrainn ghnàthaichte a chur an sàs, agus co-dhùnadh a bheil thu airson a shuidheachadh mar ainm na **prìomh àrainn** no nach eil (thoir an aire gun urrainn dhut **iomadh ainm àrainn a mhapadh ri aon fho-làrach**).
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+![Modal Cuir Àrainn Ris le ainm àrainn, taghadair làraich agus suidse prìomh àrainn](/img/admin/domain-add-modal.png)
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Às dèidh dhut am fiosrachadh gu lèir a chur a-steach, faodaidh tu an uair sin briogadh air a’ phutan **Cuir Àrainn Làithreach Ris** aig a’ bhonn.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Tòisichidh seo am pròiseas dearbhaidh agus faighinn fiosrachadh DNS na h-àrainn ghnàthaichte. Chì thu cuideachd loga aig bonn na duilleige gus am pròiseas a tha e a’ dol troimhe a leantainn. Dh’fhaodadh gun toir am pròiseas seo beagan mhionaidean airson crìochnachadh.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Ultimate Multisite v2.13.0 cruthaichidh e cuideachd an clàr àrainn a-staigh gu fèin-obrachail nuair a thèid làrach ùr a chruthachadh air òstair a bu chòir a làimhseachadh mar àrainn gach-làraich. Ma tha an t-òstair na phrìomh àrainn aig an lìonra, no mar aon de na h-àrainnean-bunaiteach co-roinnte airson foirm pàighidh a tha air an rèiteachadh air raon **Site URL**, thèid an clàr àrainn mhapta gu fèin-obrachail a leum seachad gus am bi an àrainn-bhunaiteach cho-roinnte fhathast ri fhaighinn do gach làrach a bhios ga cleachdadh.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Nuair a chlàras neach-ceannach àrainn ùr tro Domain Seller v1.3.0 no nas ùire, mapaidh Ultimate Multisite an àrainn chlàraichte gu làrach lìonra an neach-ceannach gu fèin-obrachail mar bhun-roghainn. Chan fheum rianairean tuilleadh clàr àrainn mhapta air leth a chur ris às dèidh clàradh soirbheachail mura h-eil iad airson roghainnean atharrachadh leithid bratach na prìomh-àrainne, staid gnìomhachaidh, no làimhseachadh SSL.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+Bu chòir don **Ìre** no don inbhe atharrachadh bho **A' sgrùdadh DNS** gu **Deiseil** ma tha a h-uile càil air a chur air dòigh mar bu chòir.
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Sreath àrainne a' sealltainn na h-ìre A' sgrùdadh DNS ann an liosta nan àrainnean -->
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Sreath àrainne a' sealltainn na h-ìre Deiseil leis a' chomharra inbhe uaine -->
 
-Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de chàrachadh. Chan thuig a tha thuig a' sgaidh an IP address a th' ann an t-seòl a tha thuig a' sgaidh, mar de ch
+Ma bhriogas tu air ainm na h-àrainne, bidh e comasach dhut cuid de roghainnean fhaicinn na broinn. Bheir sinn sùil luath orra:
 
-Ansa an seo, tha thuinnach a tha thuinadh air an seann seo, tha thuinadh air an nút **Add Domain** air a' chùl, agus gu bheil e a' tòiseachadh le moal window a' cui thuinid a' seteathe agus a' fhillteadh **custom domain name**, **the subsite** a tha thuinnach a' tòiseachadh air an custom domain name, agus a chlàradh thuair a tha thuinnach a' seteathe gu siostama **primary domain** air ann no. (a tha thuinnach a' chlàradh **multiple domain names to one subsite**).
+![Duilleag mion-fhiosrachadh àrainne le suidsichean ìre, làraich, gnìomhach, prìomh agus SSL](/img/admin/domain-edit.png)
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+**Ìre:** Seo an ìre aig a bheil an àrainn. Nuair a chuireas tu an àrainn ris an toiseach, is dòcha gum bi i air an ìre **A' sgrùdadh DNS**. Nì am pròiseas sgrùdadh air na h-inntrigidhean DNS agus dearbhaidh e gu bheil iad ceart. An uair sin, thèid an àrainn a chur aig an ìre **A' sgrùdadh SSL**. Nì Ultimate Multisite sgrùdadh a bheil SSL aig an àrainn no nach eil agus seòrsachaidh e an àrainn agad mar **Deiseil** no **Deiseil (às aonais SSL)**.
 
-An uair a thabhair thu a h-uile an fòcas air, tha thuinnach a' chlàradh **Add Existing Domain** air a' chùl a' chùl.
+**Làrach:** An fho-àrainn a tha co-cheangailte ris an àrainn seo. Seallaidh an àrainn mhapta susbaint na làraich shònraichte seo.
 
-Tha seo a' tòiseachadh air an proses a' chlàradh agus a' gathlan fiosrachadh DNS air an custom domain. Tha thuinnach a' faic thu seann air an deaghal a' an seann airson a' sgrùdadh a tha e a' tòiseachadh le **Checking DNS**. Tha seo a' tòiseachadh le **Ready** thu chan thuin thu a tha e gu sònraichte.
+**Gnìomhach:** Faodaidh tu an roghainn seo a thionndadh air no dheth gus an àrainn a chur an gnìomh no a chur à gnìomh.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+**An e Prìomh Àrainn a th' ann?:** Faodaidh barrachd air aon àrainn mhapta a bhith aig do luchd-ceannach airson gach làrach. Cleachd an roghainn seo gus taghadh an e seo am prìomh àrainn airson na làraich shònraichte.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+**A bheil i Tèarainte?:** Ged a nì Ultimate Multisite sgrùdadh a bheil teisteanas SSL aig an àrainn no nach eil mus cuir e an comas i, faodaidh tu taghadh le làimh an àrainn a luchdadh le teisteanas SSL no às aonais. Thoir an aire mura h-eil teisteanas SSL aig an làrach-lìn agus ma dh'fheuchas tu ri toirt oirre luchdadh le SSL, dh'fhaodadh i mearachdan a thoirt dhut.
 
-Tha thuinnach a' chlàradh air an domain name, tha thuinnach a' faic thu seann options air a' chùl. Tha sinn a' tòiseachadh gu sònraichte air a' chlàradh:
+### Mapadh ainm àrainne gnàthaichte mar chleachdaiche fo-làraich {#mapping-custom-domain-name-as-subsite-user}
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+Faodaidh rianairean fo-làraich ainmean àrainne gnàthaichte a mhapadh cuideachd bho dheas-bhòrd rianachd na fo-làraich aca.
 
-**Staid:** Is e stad a chan an domhainn a tha. Nuair a thacsa thu am beag, rinn a' bheil e ar stad **Checking DNS**. Bidh an proses a' cheannach airson curthaichean DNS agus a' faighinn gu sònraich gu faicealaidhean sinn. An uair a tha e ar stad **Checking SSL** a thacsa an domhainn. Ultimate Multisite a' cheannach an domhainn airson a bhith deacair SSL air a bheachd, agus a' chlàradh thu am beag don domhainn sin gu **Ready** no **Ready (without SSL)**.
+An toiseach, feumaidh tu dèanamh cinnteach gun cuir thu an roghainn seo an comas fo na roghainnean **Mapadh àrainne**. Faic an glacadh-sgrìn gu h-ìosal.
 
-**Site:** Is subdomhainn a tha a' leathaithe agad gu domhainn sin. Bidh an domhainn a' leathaithe ag tairt an curthaichean seo de sin site a tha.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Roghainnean mapadh àrainne a' leigeil le luchd-cleachdaidh fo-làraich àrainnean a mhapadh tro shuidse Riaghladh DNS Luchd-ceannach -->
 
-**Active:** Is e fhaighinn thu an option seo air a bheachd a' sgaidh no a' fàgadh airson an domhainn a bheachd a' sgaidh.
+Faodaidh tu cuideachd an roghainn seo a shuidheachadh no a rèiteachadh fo ìre a' **Phlana** no roghainnean toraidh air **Ultimate Multisite > Toraidhean**.
 
-**Is Primary Domain?:** Aer thu do chùiseilheir thu am beag a bhith agad de sin domhainn a leathaithe airson site sin. Bheir an option seo a' sgaidh gu tha seo a' bheil e domhainn a leathaithe airson site sin.
+![Earrann Àrainnean Gnàthaichte air duilleag deasachaidh an toraidh](/img/config/product-custom-domains.png)
 
-**Is Secure?:** Gu sònraich, air an seo a cheannach Ultimate Multisite a' cheannach an SSL certificate air a bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a' bheachd a'
+Nuair a tha gin de na roghainnean sin air an cur an comas agus nuair a tha cead aig cleachdaiche fo-làraich ainmean àrainne gnàthaichte a mhapadh, bu chòir don chleachdaiche fo-làraich metabox fhaicinn fon duilleag **Account** ris an canar **Àrainnean**.
 
-Chan eil am fhaighinn a tha sin na h-uileithean seo a tha a' guth a tha sealltainn na nàdarraichean ùr, thuig an uisgeil a tha a' guth a tha sealltainn na nàdarraichean ùr, s ealltainn a tha a' guth a tha sealltainn na nàdarraichean ùr.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Metabox Àrainnean air duilleag Account na fo-làraich le putan Cuir Àrainn Ris -->
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+Faodaidh an cleachdaiche briogadh air a' phutan **Cuir Àrainn Ris** agus bheir e suas uinneag modal le cuid de stiùireadh.
 
-Is eolais a bheil an uisgeil ag iarraidh a' chluinadh **Add Domain** agus tha e a' guth a tha sealltainn moileadh le stòradh (modal window) le fhaighinn stiùirichean.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Modal Cuir Àrainn Ris a' sealltainn stiùireadh A-record DNS airson luchd-cleachdaidh fo-làraich -->
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+Faodaidh an cleachdaiche an uair sin briogadh air **An Ath Cheum** agus leantainn air adhart gus an t-ainm àrainne gnàthaichte a chur ris. Faodaidh iad cuideachd taghadh am bi seo na phrìomh àrainn no nach bi.
 
-An uisgeil thuig an uisgeil a' chluinadh **Next Step** agus a' tòiseachadh a' guth a tha sealltainn na nàdarraichean ùr. Is eolais a bheil an uisgeil ag iarraidh a' chluinadh gu siostam (primary domain) a' ann no.
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Foirm Cuir Àrainn Ris le raon ainm àrainne gnàthaichte agus suidse prìomh àrainne -->
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Ceum dearbhaidh Cuir Àrainn Ris a thòisicheas dearbhadh DNS -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+Tòisichidh briogadh air **Cuir Àrainn Ris** am pròiseas airson fiosrachadh DNS na h-àrainne gnàthaichte a dhearbhadh agus fhaighinn.
 
-Chluinadh gu **Add Domain** a' tòiseachadh an proses a tha a' guth a tha sealltainn na nàdarraichean ùr agus a fhaighinn fiosrachadh DNS a' chùineadh.
+### Mu Shioncronachadh Àrainnean {#about-domain-syncing}
 
-### Am beag faiceair a' chluinadh na nàdarraichean ùr (About Domain Syncing)
+'S e pròiseas a th' ann an Sioncronachadh Àrainnean far am bi Ultimate Multisite a' cur an ainm àrainne gnàthaichte ris a' chunntas òstachaidh agad mar àrainn add-on **gus an obraich mapadh na h-àrainne**.
 
-Tha am beag faiceair a tha a' guth a tha sealltainn na nàdarraichean ùr (Domain Syncing) mar proses a tha Ultimate Multisite a' guth a tha sealltainn an t-aon nàdarraich ùr dhan àm leat is eòlas a' chluinadh airson a bhith ag obair.
+Tachraidh sioncronachadh àrainnean gu fèin-obrachail ma tha amalachadh aig an t-solaraiche òstachaidh agad le feart mapadh àrainne Ultimate Multisite. An-dràsta, 's iad na solaraichean òstachaidh seo _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ agus _Cpanel._
 
-Tha am beag faiceair a' chluinadh gu sgaidh a' tòiseachadh gu robh e a' guth a tha sealltainn na nàdarraichean ùr dhan àm leat is eòlas a' chluinadh. Tha an t-aon beag faiceair seo ag obair gu robh e a' guth a tha sealltainn na nàdarraichean ùr. Gu h-uileithean seo, tha na beag faiceair seo a' guth a tha sealltainn na nàdarraichean ùr dhan àm leat is eòlas a' chluinadh. Tha na beag faiceair seo a' guth a tha sealltainn na nàdarraichean ùr dhan àm leat is eòlas a' chluinadh.
+Nuair a tha amalachadh solaraiche-òstair gnìomhach, faodaidh Ultimate Multisite cuideachd an obair cruthachaidh DNS no fo-àrainne air taobh an t-solaraiche a chur ann an ciudha airson làraichean a chaidh a chruthachadh às ùr. Mura h-eil amalachadh sam bith ag èisteachd ris an obair sin, thèid an obair cùlaibh a leum seachad gus inntrigidhean ciudha gun ghnìomh a sheachnadh. Leanaidh sgrùdaidhean DNS agus SSL airson àrainnean mapta orra a' ruith tron phròiseas àbhaisteach ìrean-àrainne.
 
-Nuair a tha beag faiceair a' chluinadh, cuirinn Ultimate Multisite an t-aon beag faiceair DNS no sgaidh a' chluinadh airson sitean a tha a' guth a tha sealltainn na nàdarraichean ùr. Mar a tha beag faiceair seo ag obair gu robh e a' guth a tha sealltainn na nàdarraichean ùr dhan àm leat is eòlas a' chluinadh. Tha an t-aon beag faiceair seo a' guth a tha sealltainn na nàdarraichean ùr dhan àm leat is eòlas a' chluinadh.
+Feumaidh tu an t-amalachadh seo a chur an gnìomh ann an roghainnean Ultimate Multisite fon taba **Amalachadh**.
 
-Rinn a' chùis seo ar fhaighinn an t-eòlas (integration) ar Ultimate Multisite settings, an t-tab **Integration**.
+![Taba Amalachaidh ann an roghainnean Ultimate Multisite a' sealltainn solaraichean òstachaidh](/img/config/integrations-tab.png)
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+<!-- Chan eil glacadh-sgrìn ri fhaighinn: Ceanglaichean Rèiteachaidh solaraiche òstachaidh air taba roghainnean nan Amalachadh -->
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
-
-_Air a' ghràdh gu cunntas: má tha an t-eòlas (hosting provider) agad chaicheachd, mar a tha sin ann an t-eòlas a' sgeulachda above, **thá sin a' chùis a' thuir a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chùis a' chù
+_Thoir an aire mura h-eil an solaraiche òstachaidh agad mar aon de na solaraichean sin a chaidh ainmeachadh gu h-àrd,**feumaidh tu an t-ainm àrainne a shioncronachadh no a chur ris a' chunntas òstachaidh agad le làimh**._

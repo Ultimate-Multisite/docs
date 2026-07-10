@@ -4,20 +4,20 @@ title: Handling - wu_membership_pre_cancel
 sidebar_label: wu_membership_pre_cancel
 _i18n_hash: 0a9e6270824bf3aeac93b4ad8909f4d3
 ---
-# Action: wu_membership_pre_cancel
+# Action: wu_membership_pre_cancel {#action-wumembershipprecancel}
 
 Utløses før medlemskapet kanselleres.
 
-## Parametere
+## Parametere {#parameters}
 
 | Navn | Type | Beskrivelse |
 |------|------|-------------|
 | $membership_id | `int` | ID-en til medlemskapet. |
 | $membership | `\WP_Ultimo\Models\Membership` | Medlemskaps-objektet. |
 
-### Siden
+### Siden {#since}
 
 - 2.0
-### Kilde
+### Kilde {#source}
 
 Definert i [`inc/models/class-membership.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-membership.php#L2267) på linje 2267

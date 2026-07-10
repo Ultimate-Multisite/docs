@@ -1,32 +1,32 @@
 ---
-title: Site Templates-ত স্বয়ংক্রিয় Search and Replace
+title: ছাইট টেমপ্লেটসমূহত স্বয়ংক্ৰিয় সন্ধান আৰু প্ৰতিস্থাপন
 sidebar_position: 8
-_i18n_hash: ae72baba9155f43f2ca762880ece1e5c
+_i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Site Templates-ত স্বয়ংক্রিয় Search and Replace (v2)
+# ছাইট টেমপ্লেটত স্বয়ংক্ৰিয় সন্ধান আৰু সলনি (v2) {#auto-search-and-replace-in-site-templates-v2}
 
-_**এই টিউটোরিয়ালটোৰ বাবে WP UItimo version 2.x প্ৰয়োজন।**_
+_**এই টিউটোৰিয়েলৰ বাবে WP UItimo সংস্কৰণ 2.x প্ৰয়োজন।**_
 
-Ultimate Multisite-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ অন্যতম হৈছে ৰেজিষ্ট্ৰেচন ফৰ্মত arbitrary text, color, আৰু select field যোগ কৰাৰ ক্ষমতা। আমি যেতিয়া এই তথ্যসমূহ সংগ্ৰহ কৰো, তেতিয়া আমি ইয়াক ব্যৱহাৰ কৰি নিৰ্দিষ্ট কিছুমান site template-ৰ বিষয়বস্তু পূৰণ কৰিব পাৰোঁ। তাৰ পিছত, নতুন site টি প্ৰকাশ কৰাৰ সময়ত, Ultimate Multisite-এ placeholders সমূহক ৰেজিষ্ট্ৰেচনৰ সময়ত প্ৰৱেশ কৰা আচল তথ্যৰে সলনি কৰিব।
+Ultimate Multisite-ৰ আটাইতকৈ শক্তিশালী বৈশিষ্ট্যসমূহৰ এটা হৈছে পঞ্জীয়ন ফৰ্মত ইচ্ছানুযায়ী পাঠ্য, ৰং, আৰু নিৰ্বাচন ক্ষেত্ৰ যোগ কৰাৰ সক্ষমতা। এবাৰ আমি সেই তথ্য সংগ্ৰহ কৰিলে, নিৰ্বাচিত ছাইট টেমপ্লেটৰ নিৰ্দিষ্ট অংশত থকা বিষয়বস্তু আগতীয়াকৈ পূৰণ কৰিবলৈ ইয়াক ব্যৱহাৰ কৰিব পাৰোঁ। তাৰ পাছত, নতুন ছাইট প্ৰকাশ হ’লে, Ultimate Multisite-এ পঞ্জীয়নৰ সময়ত প্ৰৱেশ কৰা প্ৰকৃত তথ্যৰে placeholders সলনি কৰিব।
 
-উদাহৰণস্বৰূপে, আপুনি placeholders ব্যৱহাৰ কৰি নিজৰ template site সমূহ বনাব পাৰে। Placeholders সমূহক double curly braces - {{placeholder_name}} - ৰ দ্বাৰা আৱৰি থকা উচিত।
+উদাহৰণস্বৰূপে, আপুনি placeholders-সহ আপোনাৰ টেমপ্লেট ছাইটসমূহ সাজিব পাৰে। Placeholders দুটা curly braces-ৰ ভিতৰত যোগ কৰিব লাগে - {{placeholder_name}}।
 
-তাৰ পিছত, আপুনি সেই তথ্য সংগ্ৰহ কৰিবলৈ এটা মিল থকা registration field যোগ কৰিব পাৰে।
+তাৰ পাছত, সেই তথ্য সংগ্ৰহ কৰিবলৈ আপুনি সহজে মিল থকা পঞ্জীয়ন ক্ষেত্ৰ এটা যোগ কৰিব পাৰে
 
-আপোনাৰ গ্ৰাহকে তেতিয়া সেই field ত তথ্য ভৰিব পাৰিব।
+আপোনাৰ গ্ৰাহকে তাৰ পাছত পঞ্জীয়নৰ সময়ত সেই ক্ষেত্ৰ পূৰণ কৰিব পাৰিব।
 
-Ultimate Multisite-এ স্বয়ংক্রিয়ভাৱে placeholders সমূহক গ্ৰাহকে দিয়া তথ্যৰে সলনি কৰিব।
+Ultimate Multisite-এ তাৰ পাছত গ্ৰাহকে দিয়া তথ্যৰে placeholders স্বয়ংক্ৰিয়ভাৱে সলনি কৰিব।
 
-## **"টেমপ্লেটত কেৱল placeholders থকা" সমস্যা সমাধান কৰা**
+## **"placeholders-ৰে ভৰা টেমপ্লেট" সমস্যাৰ সমাধান** {#solving-the-template-full-of-placeholders-problem}
 
-এই সকলোবোৰ কথা ভাল, কিন্তু আমি এটা বেয়া সমস্যাৰ সন্মুখীন হওঁ: এতিয়া আমাৰ site template সমূহ—যিটো আমাৰ গ্ৰাহকে ভ্ৰমণ কৰিব পাৰে—সেবোৰ বেয়া placeholdersৰে ভৰি আছে যিয়ে বিশেষ কিছু নিদিয়ে।
+এই সকলোখিনি ভাল, কিন্তু আমি এটা দেখিবলৈ বেয়া সমস্যাত পৰোঁ: এতিয়া আমাৰ ছাইট টেমপ্লেটসমূহ - যিবোৰ আমাৰ গ্ৰাহকে চাব পাৰে - দেখিবলৈ বেয়া placeholders-ৰে ভৰা থাকে, যিবোৰে বেছি কথা নকয়।
 
-এই সমস্যাটো সমাধান কৰিবলৈ, আমি placeholders-ৰ বাবে নকল (fake) মান (values) সেট কৰাৰ বিকল্প আগবঢ়াওঁ, আৰু গ্ৰাহকে ভ্ৰমণ কৰোঁতে আমি সেই মানসমূহ ব্যৱহাৰ কৰি template site সমূহৰ বিষয়বস্তু Search and Replace কৰোঁ।
+সেইটো সমাধান কৰিবলৈ, আমি placeholders-ৰ বাবে নকল মান নিৰ্ধাৰণ কৰাৰ বিকল্প দিওঁ, আৰু আপোনাৰ গ্ৰাহকে টেমপ্লেট ছাইটসমূহ ভ্ৰমণ কৰি থকাৰ সময়ত সেই মানসমূহ ব্যৱহাৰ কৰি সিহঁতৰ বিষয়বস্তু সন্ধান আৰু সলনি কৰোঁ।
 
-আপুনি **Ultimate Multisite > Settings > Sites** লৈ গৈ, আৰু তাৰ পিছত, sidebar ত, Edit Placeholders link ক্লিক কৰি template placeholders editor-লৈ যাব পাৰিব।
+আপুনি **Ultimate Multisite > Settings > Sites**-লৈ গৈ, Site Template Options এলেকালৈ স্ক্ৰল কৰি, তাৰ পাছত **Edit Placeholders** লিংকত ক্লিক কৰি টেমপ্লেট placeholders সম্পাদকত প্ৰৱেশ কৰিব পাৰে।
 
-![Edit Placeholders link in the Sites settings sidebar](/img/config/settings-sites.png)
+![Sites ছেটিংছ পৃষ্ঠাৰ Site Template Options এলেকা](/img/config/settings-sites-templates-section.png)
 
-এনেক কৰিলে আপোনাক placeholders-ৰ content editor-লৈ লৈ যাব, য'ত আপুনি placeholders আৰু তেওঁলোকৰ নিজ নিজ বিষয়বস্তু যোগ কৰিব পাৰে।
+সেইটোৱে আপোনাক placeholders-ৰ বিষয়বস্তু সম্পাদকলৈ লৈ যাব, য’ত আপুনি placeholders আৰু সিহঁতৰ সংশ্লিষ্ট বিষয়বস্তু যোগ কৰিব পাৰে।
 
-![Placeholders content editor with placeholder names and values](/img/config/settings-sites.png)
+![টেমপ্লেট placeholders সম্পাদকৰ প্ৰৱেশ বিন্দু](/img/config/settings-sites-templates-section.png)

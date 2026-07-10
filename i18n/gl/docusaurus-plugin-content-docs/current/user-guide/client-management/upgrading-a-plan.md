@@ -3,7 +3,7 @@ title: Actualización de plan
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Actualización de un Plan (v2)
+# Actualización de un Plan (v2) {#upgrading-a-plan-v2}
 
 _**NOTA IMPORTANTE: Este artigo refere à versão 2.x do Ultimate Multisite.**_
 
@@ -39,7 +39,7 @@ Tras completar o checkout, os novos produto(s) se añadirán á conta dos vuestr
 
 ##
 
-## Camiños de Actualización e Downgrade
+## Camiños de Actualización e Downgrade {#upgrade-and-downgrade-paths}
 
 En cada un dos vuestros produtos, terás unha pestaña **Up & Downgrades**. A primeira opción nesa pestaña é un campo chamado **Plan Group**.
 

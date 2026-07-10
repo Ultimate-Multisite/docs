@@ -3,11 +3,11 @@ title: ڈیش بورڈ کا جائزہ
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# ڈیش بورڈ کا جائزہ
+# ڈیش بورڈ کا جائزہ {#dashboard-overview}
 
 Ultimate Multisite کا اپنا ایک مخصوص **Dashboard** ہے جو Ultimate Multisite مینو کے تحت ملتا ہے، اور یہ Network Dashboard میں بھی ویجٹس شامل کرتا ہے۔ اس مضمون میں ہم دونوں جگہوں پر موجود چیزوں کا جائزہ لیں گے۔
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite نیٹ ورک لیول کے ڈیش بورڈ میں کارآمد ویجٹس شامل کرتا ہے جو **My Sites → Network Admin → Dashboard** پر موجود ہے۔
 
@@ -35,7 +35,7 @@ Ultimate Multisite نیٹ ورک لیول کے ڈیش بورڈ میں کارآم
 
 ![News ویجٹ](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 جہاں network dashboard پورے نیٹ ورک کے بارے میں جامع معلومات پیش کرتا ہے، وہیں Ultimate Multisite dashboard (جو Ultimate Multisite مینو کے اوپری حصے میں ہے) سروس کے بارے میں معلومات فراہم کرتا ہے۔
 

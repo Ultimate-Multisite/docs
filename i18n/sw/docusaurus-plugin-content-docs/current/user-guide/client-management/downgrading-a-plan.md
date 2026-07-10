@@ -1,44 +1,44 @@
 ---
-title: Kupunguza Mpango
+title: Kupunguza kiwango cha mpango
 sidebar_position: 7
-_i18n_hash: dc3ac67048002b04bfb952a01cf289c9
+_i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Kushushisha mpango (v2)
+# Kushusha plan (v2) {#downgrading-a-plan-v2}
 
-_**TAARIFA MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
+_**DOKEZO MUHIMU: Makala hii inahusu Ultimate Multisite toleo la 2.x.**_
 
-Kushushisha mpango au usajili ni hatua ya kawaida ambayo wateja wako wanaweza kufanya ikiwa wana bajeti ndogo au wameamua kuwa hawatahitaji rasilimali nyingi kuendesha tovuti yao ndogo.
+Kushusha plan au subscription ni kitendo cha kawaida ambacho clients wako wanaweza kufanya ikiwa wana bajeti ndogo au wameamua kwamba hawatahitaji rasilimali nyingi kuendesha subsite yao.
 
-## Jinsi ya kushushisha mpango
+## Jinsi ya kushusha plan {#how-to-downgrade-a-plan}
 
-Wateja wako wanaweza kushushisha mpango wao wakati wowote kwa kuingia kwenye dashibodi ya msimamizi wa tovuti yao ndogo na kubofya **Change** chini ya ukurasa wao wa akaunti.
+Clients wako wanaweza kushusha plan yao wakati wowote kwa kuingia kwenye dashboard ya msimamizi wa subsite yao na kubofya **Change** chini ya ukurasa wao wa Account.
 
-![Ukurasa wa akaunti ukiwa na kitufe cha Change chini ya uanachama](/img/admin/memberships-list.png)
+![Ukurasa wa Account wa mteja wenye kadi ya Your Membership na kitufe cha Change](/img/account-page/membership-change-button.png)
 
-Baada ya kubofya kitufe cha **Change**, mtumiaji/mteja ataelekezwa kwenye ukurasa wa malipo ambapo wanaweza kuchagua mpango wanaotaka kubadilisha usajili wao.
+Baada ya kubofya kitufe cha **Change**, user/client ataelekezwa kwenye ukurasa wa checkout ambapo wanaweza kuchagua plan wanayotaka kubadilishia subscription yao.
 
-![Ukurasa wa malipo ukionyesha chaguo za mpango za kushushisha](/img/admin/memberships-list.png)
+![Ukurasa wa chaguo za kushusha plan upande wa mteja](/img/account-page/downgrade-picker.png)
 
-Katika mfano huu, tunashushisha mpango kutoka **Premium** hadi **Free**.
+Katika mfano huu, tunashusha plan kutoka **Premium** hadi **Free**.
 
-Ili kuendelea mtumiaji anahitaji tu kubofya kitufe cha **Complete Checkout**. Hii itawarudisha kwenye ukurasa wa akaunti ikionyesha ujumbe kuhusu mabadiliko yanayosubiri kwa uanachama. Mabadiliko yataanza kutumika kwenye **mzunguko wa bili unaofuata** wa mteja.
+Ili kuendelea, user anahitaji tu kubofya kitufe cha **Complete Checkout**. Kisha itawarudisha kwenye ukurasa wa Account ukionyesha ujumbe kuhusu mabadiliko yanayosubiri kwa membership. Mabadiliko yataanza kutumika kwenye **mzunguko unaofuata wa bili** wa mteja.
 
-![Ukurasa wa akaunti ukionyesha ujumbe wa mabadiliko ya uanachama yanayosubiri](/img/admin/memberships-list.png)
+![Ukurasa wa Account unaoonyesha bango la mabadiliko ya membership yanayosubiri](/img/account-page/pending-change.png)
 
-### Kinachotokea mtumiaji anaposhushisha mpango wao
+### Kinachotokea user anaposhusha plan yake {#what-happens-when-a-user-downgrades-their-plan}
 
-Ni muhimu kuzingatia kuwa kushushisha mpango hakubadilishi usanidi uliopo kwenye tovuti ndogo ya mtumiaji.
+Ni muhimu kutambua kwamba kushusha plan hakubadilishi usanidi uliopo kwenye subsite ya user.
 
-Haibadilishi kiolezo cha tovuti kiotomatiki kwa sababu kubadilisha kiolezo cha tovuti kutafuta na kuweka upya tovuti ndogo kabisa. Hii ni kuepuka upotevu wa data usio wa lazima. Kwa hivyo nafasi ya diski, mandhari, programu-jalizi n.k vitabaki bila kubadilika isipokuwa machapisho.
+Hakubadilishi kiotomatiki site template kwa kuwa kubadilisha site template kutafuta kabisa na kuweka upya subsite. Hii ni kuepuka upotevu wa data usio wa lazima. Kwa hivyo nafasi ya diski, themes, plugins n.k. vitabaki kama vilivyo isipokuwa posts.
 
-Tunaelewa kuwa wasiwasi wako mkubwa ungekuwa mipaka na viwango unavyoweka chini ya kila mpango lakini tunapaswa kuzingatia uharibifu ambao ungefanya kwenye tovuti ndogo ya mtumiaji ikiwa tungefuta au kubadilisha usanidi wowote wake.
+Tunaelewa kwamba wasiwasi wako mkuu ungekuwa limits na quotas ulizoweka chini ya kila plan, lakini tunapaswa kuzingatia madhara ambayo ingesababisha kwa subsite ya user endapo tungefuta au kubadilisha usanidi wowote wake.
 
-Kwa machapisho yanayozidi kikomo kilichowekwa kwenye mpango, una chaguo 3 tofauti: **Acha machapisho kama yalivyo**, **Hamisha machapisho kwenye takataka**, au **Hamisha machapisho kuwa rasimu**. Unaweza kusanidi hii chini ya mipangilio ya Ultimate Multisite.
+Kwa posts zinazozidi limit iliyowekwa kwenye plan, una chaguo 3 tofauti: **Weka posts kama zilivyo** *,* **Hamisha posts hadi trash** *,* au **Hamisha posts hadi draft** *.* Unaweza kusanidi hili chini ya mipangilio ya Ultimate Multisite.
 
-![Chaguo za kikomo cha machapisho kilichozidiwa katika mipangilio ya Ultimate Multisite](/img/config/settings-sites.png)
+![Ukurasa wa Network Admin Settings Sites unaoonyesha chaguo za tabia ya post-limit-exceeded](/img/account-page/settings-sites-post-limit.png)
 
-### Kinachotokea kwa malipo
+### Kinachotokea kwa malipo {#what-happens-to-the-payment}
 
-Katika toleo la 2.0, haihitaji tena marekebisho yoyote kwenye malipo kuhusu uwiano wa gharama.
+Katika toleo la 2.0, halihitaji tena marekebisho yoyote kwenye malipo kwa upande wa proration.
 
-Hii ni kwa sababu mfumo utasubiri uanachama uliopo **ukamilishe mzunguko wake wa bili kabla** mpango/uanachama mpya hautaanza kutumika. Kiasi kipya cha bili kwa uanachama mpya kitatumika kiotomatiki na kutozwa kwenye mzunguko wa bili unaofuata.
+Hii ni kwa sababu mfumo utasubiri membership iliyopo **ikamilishe mzunguko wake wa bili kabla ya** plan/membership mpya kuanza kutumika. Kiasi kipya cha bili kwa membership mpya kitatumika kiotomatiki na kutozwa kwenye mzunguko unaofuata wa bili.

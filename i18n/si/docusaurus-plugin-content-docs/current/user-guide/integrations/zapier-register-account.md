@@ -3,7 +3,7 @@ title: Zapier හරහා ගිණුමක් ලියාපදිංචි 
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# සිදුවීම: Zapier හරහා ගිණුමක් ලියාපදිංචි කිරීම
+# සිදුවීම: Zapier හරහා ගිණුමක් ලියාපදිංචි කිරීම {#event-register-an-account-via-zapier}
 
 [Integrating Ultimate Multisite with Zapier](zapier.md) ලිපියේදී, ට්‍රිගර් සහ සිදුවීම් මත පදනම්ව Ultimate Multisite තුළ Zapier භාවිතා කර විවිධ ක්‍රියාවන් සිදු කළ හැකි ආකාරය අපි සාකච්ඡා කළෙමු. මෙම ලිපියෙන්, අපට තෙවන පාර්ශවීය යෙදුම් (3rd party applications) ඒකාබද්ධ කරගත හැකි ආකාරය පෙන්වන්නෙමු. මෙහිදී, දත්ත මූලාශ්‍රයක් ලෙස Google Sheets භාවිතා කර ගිණුමක් ලියාපදිංචි කිරීමට Ultimate Multisite වෙත තොරතුරු යොමු කරනු ලැබේ.
 

@@ -3,11 +3,11 @@ title: 대시보드 개요
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# 대시보드 개요
+# 대시보드 개요 {#dashboard-overview}
 
 Ultimate Multisite는 Ultimate Multisite 메뉴 아래에 전용 **Dashboard**를 제공하며, 네트워크 대시보드에도 위젯을 추가합니다. 이 문서는 두 곳에서 볼 수 있는 내용을 다룹니다.
 
-## 네트워크 대시보드
+## 네트워크 대시보드 {#the-network-dashboard}
 
 Ultimate Multisite는 **My Sites → Network Admin → Dashboard**에서 찾을 수 있는 네트워크 수준 대시보드에 유용한 위젯을 삽입합니다.
 
@@ -35,7 +35,7 @@ Ultimate Multisite는 **My Sites → Network Admin → Dashboard**에서 찾을 
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite 대시보드
+## Ultimate Multisite 대시보드 {#the-ultimate-multisite-dashboard}
 
 네트워크 대시보드는 네트워크에 대한 전체 정보를 제공하는 반면, Ultimate Multisite 대시보드(Ultimate Multisite 메뉴의 최상위 수준)는 서비스에 대한 정보를 제공합니다.
 

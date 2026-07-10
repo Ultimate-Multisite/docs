@@ -3,11 +3,11 @@ title: Abilidad sa Pagkakita
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility
+# Ability Visibility {#ability-visibility}
 
 Ang Superdav AI Agent v1.12.0 nagpaila og **Ability Visibility** controls nga nagdumala kung uns mga surfaces ang magpakita sa matag ability. Nagtugot kini sa mga administrator nga i-fine-tune kung uns mga abilidad sa agent ang magamit pinaagi sa REST APIs, MCP servers, WooCommerce integrations, ug uban pang mga interface.
 
-## Unsa ang Ability Visibility?
+## Unsa ang Ability Visibility? {#what-is-ability-visibility}
 
 Ang Ability Visibility usa ka sistema sa permiso nga nagkontrol:
 
@@ -18,9 +18,9 @@ Ang Ability Visibility usa ka sistema sa permiso nga nagkontrol:
 
 Ang matag ability adunay lebel sa visibility nga nagtino sa pagka-available niini sa lain-laing mga surface.
 
-## Visibility Levels
+## Visibility Levels {#visibility-levels}
 
-### Public
+### Public {#public}
 
 Ang mga **Public abilities** an available bisan asa:
 
@@ -32,7 +32,7 @@ Ang mga **Public abilities** an available bisan asa:
 
 Pananglitan: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal
+### Internal {#internal}
 
 Ang mga **Internal abilities** an available lang sulod sa imong WordPress installation:
 
@@ -43,7 +43,7 @@ Ang mga **Internal abilities** an available lang sulod sa imong WordPress instal
 
 Pananglitan: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner
+### Partner {#partner}
 
 Ang mga **Partner abilities** an available lang sa mga whitelisted partner:
 
@@ -54,7 +54,7 @@ Ang mga **Partner abilities** an available lang sa mga whitelisted partner:
 
 Pananglitan: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled
+### Disabled {#disabled}
 
 Ang mga **Disabled abilities** dili an available bisan asa:
 
@@ -63,15 +63,15 @@ Ang mga **Disabled abilities** dili an available bisan asa:
 - Wala an available sa admin panels
 - Makatabang kini alang sa mga deprecated o experimental nga abilities
 
-## Pagdumala sa Ability Visibility
+## Pagdumala sa Ability Visibility {#managing-ability-visibility}
 
-### Pag-access sa Mga Setting sa Ability Visibility
+### Pag-access sa Mga Setting sa Ability Visibility {#accessing-ability-visibility-settings}
 
 1. Adto sa **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. I-click ang tab nga **Abilities**
 3. Makita nimo ang listahan sa tanang na-install nga abilities uban sa ilang mga lebel sa visibility (pagkakita).
 
-### Pagtan-aw sa Detalye sa Ability
+### Pagtan-aw sa Detalye sa Ability {#viewing-ability-details}
 
 I-click ang bisan unsang ability aron makita:
 
@@ -82,7 +82,7 @@ I-click ang bisan unsang ability aron makita:
 - **Last updated**: Kanus-a huli giusab ang visibility
 - **Status**: Recognized (Giila) o Unclassified (Wala giila)
 
-### Pagbag-o sa Mga Lebel sa Visibility
+### Pagbag-o sa Mga Lebel sa Visibility {#changing-visibility-levels}
 
 Aron usbon ang visibility sa usa ka ability:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Bulk Operations (Pagsulod sa Daghang Operasyon)
+### Bulk Operations (Pagsulod sa Daghang Operasyon) {#bulk-operations}
 
 Aron usbon ang visibility para sa dagkong mga ability:
 
@@ -108,11 +108,11 @@ Aron usbon ang visibility para sa dagkong mga ability:
 2. Pili og bag-ong lebel sa visibility gikan sa bulk action dropdown
 3. I-click ang **Apply** (I-apply)
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 Ang **partner allow-list** nagkontrol kung unsang external partners ang maka-access sa mga ability nga naa sa Partner-level.
 
-### Pagdadagdag og Mga Partner
+### Pagdadagdag og Mga Partner {#adding-partners}
 
 1. Adto sa **Superdav AI Agent** → **Settings** → **Partners**
 2. I-click ang **Add Partner** (Magdugang og Partner)
@@ -120,7 +120,7 @@ Ang **partner allow-list** nagkontrol kung unsang external partners ang maka-acc
 4. Optional nga iapil ang ngalan ug deskripsyon sa partner
 5. I-click ang **Save** (I-save)
 
-### Paghatag og Abilities sa mga Partners
+### Paghatag og Abilities sa mga Partners {#assigning-abilities-to-partners}
 
 Human magdugang og partner:
 
@@ -130,7 +130,7 @@ Human magdugang og partner:
 4. Sa seksyon nga "Partner allow-list", i-check ang mga kahon alang sa mga partner nga kinahanglan adunay access
 5. I-click ang **Save**
 
-### Pagbawi sa Access sa Partner
+### Pagbawi sa Access sa Partner {#revoking-partner-access}
 
 Para ma-remove ang access sa usa ka partner:
 
@@ -140,11 +140,11 @@ Para ma-remove ang access sa usa ka partner:
 
 Ang partner dayon mawala ang access niining ability.
 
-## Unclassified Abilities
+## Unclassified Abilities {#unclassified-abilities}
 
 Kung mag-install ka og third-party ability nga wala giila sa Superdav AI Agent, kini gi-marka isip **Unclassified**.
 
-### Admin Notice para sa Unclassified Abilities
+### Admin Notice para sa Unclassified Abilities {#admin-notice-for-unclassified-abilities}
 
 Makita nimo ang admin notice:
 
@@ -161,7 +161,7 @@ Palihog i-review ug i-classify kini.
 [Review Abilities] [Dismiss]
 ```
 
-### Pag-review sa Unclassified Abilities
+### Pag-review sa Unclassified Abilities {#reviewing-unclassified-abilities}
 
 1. I-click ang **Review Abilities** sa notice
 2. Para sa matag unclassified ability, makita nimo:
@@ -178,7 +178,7 @@ Palihog i-review ug i-classify kini.
 
 4. I-click ang **Classify** para i-save ang imong desisyon
 
-### Ngano Kinahanglan I-classify ang Unclassified Abilities?
+### Ngano Kinahanglan I-classify ang Unclassified Abilities? {#why-classify-unclassified-abilities}
 
 Ang pag-classify sa mga ability:
 
@@ -187,9 +187,9 @@ Ang pag-classify sa mga ability:
 - **Naghatag og features**: Human ma-classify, ang ability mahimong magamit na
 - **Nagdokumento sa mga desisyon**: Ang imong mga pagpili gi-log para sa audit purposes
 
-## Pagkakita sa Nagkalain nga mga Surface (Visibility in Different Surfaces)
+## Pagkakita sa Nagkalain nga mga Surface (Visibility in Different Surfaces) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 Ang mga **Public abilities** pwedeng makuha pinaagi sa REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 Ang mga **Internal and Partner abilities** dili makuha pinaagi sa REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 Ang mga **Public abilities** pwedeng makuha pinaagi sa MCP:
 
@@ -215,7 +215,7 @@ Ang mga **Internal abilities** dili ipakita pinaagi sa MCP.
 
 Ang mga **Partner abilities** pwedeng gamiton lang kung naa kay partner credentials.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 Ang mga **Public abilities** nga may kalabotan sa WooCommerce pwedeng gamiton:
 
@@ -225,7 +225,7 @@ Ang mga **Public abilities** nga may kalabotan sa WooCommerce pwedeng gamiton:
 
 Ang mga **Internal abilities** dili ipakita sa WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 Ang tanang mga **abilities** (Public, Internal, Partner) pwedeng gamiton sa chat, depende sa permissions sa user:
 
@@ -233,34 +233,34 @@ Ang tanang mga **abilities** (Public, Internal, Partner) pwedeng gamiton sa chat
 - Regular users makakita lang sa Public abilities
 - Partners makakita sa Public + Partner abilities (kung gi-whitelist sila)
 
-## Mga Best Practices sa Seguridad (Security Best Practices)
+## Mga Best Practices sa Seguridad (Security Best Practices) {#security-best-practices}
 
-### Principle of Least Privilege
+### Principle of Least Privilege {#principle-of-least-privilege}
 
 - Ibutang ang mga abilities sa pinaka-restrictive nga visibility nga pwedeng gamiton gihapon.
 - Gamita ang Partner visibility para sa sensitibo nga mga operasyon.
 - Patilin ang mga abilities nga dili nimo gigamit.
 
-### Regular Audits
+### Regular Audits {#regular-audits}
 
 - I-review ang visibility sa ability kada bulan.
 - Siguraduhon nga walay unclassified abilities.
 - Tangtangon ang access alang sa mga partner nga wala na naggamit.
 
-### Logging and Monitoring
+### Logging and Monitoring {#logging-and-monitoring}
 
 - Monitor kung uns mga abilities ang labing gamiton.
 - Subayhi ang mga pattern sa access sa partner.
 - Mag-alert kung adunay dili kasagaran nga paggamit sa ability.
 
-### Third-Party Abilities
+### Third-Party Abilities {#third-party-abilities}
 
 - I-review ang third-party abilities sa dili pa kini i-enable.
 - Klaro nga klasipikahon sila.
 - Sugdan gamiton sa Internal o Partner visibility una.
 - Ipromote sa Public lang human ma-vetting (ma-check).
 
-## Pag-troubleshoot
+## Pag-troubleshoot {#troubleshooting}
 
 **Wala'y makita ang usa ka ability sa listahan**
 - Siguraduhon nga na-install ug aktibo ang ability
@@ -283,7 +283,7 @@ Ang tanang mga **abilities** (Public, Internal, Partner) pwedeng gamiton sa chat
 - Siguraduhon nga na-save ang imong klasipikasyon
 - Siguraduhon nga updated ang plugin nga naghatag sa ability
 
-## Migrasyon gikan sa Legacy Mode
+## Migrasyon gikan sa Legacy Mode {#migration-from-legacy-mode}
 
 Kung nag-upgrade ka gikan sa mas daan nga bersyon sa Superdav AI Agent:
 
@@ -293,7 +293,7 @@ Kung nag-upgrade ka gikan sa mas daan nga bersyon sa Superdav AI Agent:
 
 Tan-awa ang **Third-Party Mode Migration** para sa dugang detalye bahin sa paglipat ngadto sa native Abilities API integration.
 
-## Sunod nga mga lakang
+## Sunod nga mga lakang {#next-steps}
 
 Human ma-configure ang visibility sa ability:
 

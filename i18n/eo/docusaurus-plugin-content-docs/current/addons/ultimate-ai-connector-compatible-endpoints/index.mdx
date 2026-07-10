@@ -1,0 +1,111 @@
+---
+title: Ultimate AI-Konektilo por Kongruaj Finpunktoj
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI-Konektilo por Kongruaj Finpunktoj {#ultimate-ai-connector-for-compatible-endpoints}
+
+La Ultimate AI-Konektilo por Kongruaj Finpunktoj integras OpenAI-kongruajn AI-provizantajn API-ojn kun via WordPress multretejo. Agordu plurajn AI-provizantojn — ĉiun kun sia propra finpunkta URL, API-ŝlosilo kaj defaŭlta modelo — kaj direktu petojn kun aŭtomata rezerva transiro kiam provizanto ne disponeblas.
+
+## Ĉefaj Trajtoj {#key-features}
+
+- **Subteno por pluraj provizantoj**: Aldonu plurajn AI-provizantajn kartojn, ĉiun kun sia propra finpunkta URL, API-ŝlosilo kaj defaŭlta modelo
+- **Trenu por reordigi**: Aranĝu provizantojn laŭ prioritato uzante la kroĉan tenilon sur ĉiu karto; petoj uzas provizantojn laŭ ordo
+- **Aŭtomata rezerva direktado**: Se la ĉefa provizanto ne disponeblas, petoj aŭtomate transiras al la sekva agordita provizanto
+- **Agordo por ĉiu provizanto**: Ĉiu provizanto estas sendepende agordita kun siaj propraj akreditaĵoj kaj modelelekto
+- **Kart-bazita agorda UI**: Konstruita sur stabilaj WordPress 6.9+ Card-komponantoj (CardBody, CardHeader, CardDivider)
+- **Aŭtomata vastigo ĉe aldono**: Novaj provizantaj kartoj aŭtomate vastiĝas por ke vi povu tuj enigi la detalojn
+- **Malvalidigo de skripta kaŝmemoro**: Provizantaj skriptoj ricevas kaŝmemoran malvalidigon ĉe kromprograma ĝisdatigo por certigi ke la plej nova versio estas ŝargita
+
+## Postuloj {#requirements}
+
+- WordPress 5.3 aŭ pli alta
+- PHP 7.4 aŭ pli alta
+- Ultimate Multisite kromprogramo (aktiva)
+- OpenAI-kongrua API-finpunkto (memgastigita aŭ de tria partio)
+
+## Instalado {#installation}
+
+1. Alŝutu la aldonaĵajn dosierojn al via dosierujo `/wp-content/plugins/`
+2. Aktivigu la kromprogramon per la menuo 'Plugins' en WordPress
+3. Iru al **Ultimate Multisite → AI-Konektilo** por agordi la aldonaĵon
+
+## Agordo {#configuration}
+
+### Agordo de Pluraj Provizantoj {#multi-provider-setup}
+
+La agorda ekrano uzas kart-bazitan aranĝon kie ĉiu karto reprezentas unu AI-provizanton. Vi povas aldoni tiom da provizantoj kiom vi bezonas.
+
+#### Aldoni Provizanton {#adding-a-provider}
+
+1. Iru al **Ultimate Multisite → AI-Konektilo** en la reta administrado
+2. Alklaku **Aldoni Provizanton**
+3. Nova provizanta karto aperas kaj aŭtomate vastiĝas
+4. Enigu la detalojn de la provizanto:
+   - **Nomo de Provizanto** — etikedo por identigi ĉi tiun provizanton (ekz. "OpenAI", "Mistral", "Loka Ollama")
+   - **Finpunkta URL** — la baza URL de la OpenAI-kongrua API (ekz. `https://api.openai.com/v1`)
+   - **API-ŝlosilo** — via API-ŝlosilo por ĉi tiu provizanto
+   - **Defaŭlta Modelo** — la modelidentigilo uzota defaŭlte por ĉi tiu provizanto (ekz. `gpt-4o`, `mistral-small`)
+5. Alklaku **Konservi Agordojn**
+
+#### Forigi Provizanton {#removing-a-provider}
+
+Alklaku la butonon **Forigi** sur iu ajn provizanta karto por forigi ĝin. Konservu agordojn por apliki la ŝanĝon.
+
+#### Reordigi Provizantojn {#reordering-providers}
+
+Trenu la kroĉan ikonon (⣿) ĉe la maldekstra flanko de iu ajn provizanta karto por reordigi ĝin. La ordo determinas rezervan prioritaton: petoj estas sendataj al la unua provizanto kaj transiras al postaj provizantoj se peto malsukcesas.
+
+### Rezerva Direktado {#fallback-routing}
+
+Kiam peto al la ĉefa provizanto malsukcesas — pro tempolimo, tariflimo aŭ servopaneo — la konektilo aŭtomate reprovas kun la sekva provizanto en la listo. Ĉi tio daŭras tra la listo ĝis provizanto sukcesas aŭ ĉiuj provizantoj estis provitaj.
+
+| Scenaro | Konduto |
+|----------|-----------|
+| Ĉefa provizanto respondas | Peto estas servata normale |
+| Ĉefa provizanto malsukcesas | Peto estas reprovitaj kun sekva provizanto |
+| Ĉiuj provizantoj malsukcesas | Eraro estas resendita al la alvokanto |
+
+Rezerva transiro estas travidebla por la alvokanta kromprogramo aŭ etoso — ili ricevas aŭ sukcesan respondon aŭ finan eraron, sendepende de kiom da provizantoj estis provitaj.
+
+### Referenco pri Provizanta Agordo {#provider-configuration-reference}
+
+| Kampo | Postulata | Priskribo |
+|-------|----------|-------------|
+| Nomo de Provizanto | Jes | Montra etikedo por ĉi tiu provizanto |
+| Finpunkta URL | Jes | Baza URL de la OpenAI-kongrua API |
+| API-ŝlosilo | Jes | Aŭtentikiga ŝlosilo por ĉi tiu provizanto |
+| Defaŭlta Modelo | Jes | Modelidentigilo uzata kiam neniu modelo estas specifita en la peto |
+
+## Problemsolvado {#troubleshooting}
+
+### Neniuj provizantoj estas listigitaj {#no-providers-are-listed}
+
+Se la listo de provizantoj estas malplena post konservado, konfirmu ke:
+
+- Vi alklakis **Konservi Agordojn** post aldono de provizantoj
+- Via retumilo ne blokis la konservadon de la agorda paĝo (kontrolu la retumilan konzolon por JavaScript-eraroj)
+- La kromprogramo estas aktiva kaj vi estas sur la reta administra ekrano
+
+### Petoj malsukcesas por ĉiuj provizantoj {#requests-are-failing-for-all-providers}
+
+- Kontrolu ke la finpunkta URL de ĉiu provizanto estas atingebla de via servilo (ne nur de via retumilo)
+- Kontrolu ke ĉiu API-ŝlosilo validas kaj ne eksvalidiĝis
+- Reviziu la tarifliman kaj kvotan staton de la provizanto en ilia Dashboard
+- Ebligu WordPress sencimigan protokoladon (`WP_DEBUG_LOG`) por kapti detalajn erarmesaĝojn de la konektilo
+
+### Provizanto ne estas uzata por rezerva transiro {#a-provider-is-not-being-used-for-fallback}
+
+Trenu-por-reordigi ŝanĝas la rezervan ordon. Konfirmu ke la provizanto, kiun vi atendas ricevi rezervajn petojn, estas ĝuste poziciigita en la listo kaj ke ĝiaj finpunkta URL kaj API-ŝlosilo estas ĝustaj.
+
+### Nova provizanta karto ne aŭtomate vastiĝas {#new-provider-card-does-not-expand-automatically}
+
+Aŭtomata vastigo postulas ke JavaScript estu ebligita en via retumilo. Se la karto ne vastiĝas post alklako, kontrolu la retumilan konzolon por eraroj. La karta enhavo ĉiam estas alirebla per alklako de la karta kaplinio eĉ se aŭtomata vastigo ne ekas.
+
+## Ŝanĝprotokolo {#changelog}
+
+Vidu [Ŝanĝprotokolo](./changelog) por la plena versihistorio.

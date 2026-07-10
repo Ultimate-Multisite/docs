@@ -3,11 +3,11 @@ title: Vereisten
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Vereisten voor Ultimate Multisite
+# Vereisten voor Ultimate Multisite {#ultimate-multisite-requirements}
 
 Het eerste wat je jezelf misschien vraagt voordat je Ultimate Multisite koopt, is wat de vereisten zijn om onze plugin te draaien. Wel, gelukkig zijn er slechts een paar basisvereisten voor het draaien van Ultimate Multisite: een **domeinnaam**, een goede **hostingprovider** en een WordPress **Multisite** installatie. Dat is alles wat je nodig hebt!
 
-## Domeinnaam
+## Domeinnaam {#domain-name}
 
 Allereerst, laten we het hebben over de domeinnaam.
 
@@ -17,7 +17,7 @@ Onze plugin biedt abonnementsdiensten, betalingsverzameling, afrekenformulieren,
 
 Elke niche die je kiest, kan beheerd worden met onze plugin zolang je websites als dienst verkoopt! Zorg ervoor dat je een domeinnaam kiest die overeenkomt met je bedrijfsplan.
 
-## Hostingprovider
+## Hostingprovider {#hosting-provider}
 
 Nu je een pakkende domeinnaam hebt die je niche en bedrijf vertegenwoordigt, moet je een goede webhostingmaatschappij kiezen om je netwerk te hosten met Ultimate Multisite. Er zijn enkele goede opties op de markt. Sommige hostingproviders integreren goed met Ultimate Multisite, wat een doorslaggevende factor kan zijn, afhankelijk van wat je van plan bent te bouwen.
 
@@ -25,7 +25,7 @@ Ultimate Multisite zou in elke hostingprovider moeten werken. Het enige verschil
 
 Wat betreft serverspecificaties, is er geen specifieke formule, omdat dit afhankelijk is van de functies en mogelijkheden die je zult aanbieden en de grootte van je netwerk. Een gedeelde hosting kan een goede start zijn, maar zodra je netwerk begint te groeien, heb je waarschijnlijk een dedicated VPS nodig.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Laten we nu een beetje praten over een WordPress Multisite-installatie.
 

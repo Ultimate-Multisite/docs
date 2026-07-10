@@ -3,13 +3,13 @@ title: Kuunda Uunganisho wa Usajili Maalum
 sidebar_position: 10
 _i18n_hash: ee4c4ad8a1defe5760fd09b8f173ef7d
 ---
-# Kuunda Uunganishaji wa Usajili Maalum
+# Kuunda Uunganishaji wa Usajili Maalum {#building-a-custom-registrar-integration}
 
 Addon ya Domain Seller inatumia mfumo wa **Integration Registry**. Kila registrar ni class ya PHP ambayo inatekeleza `Domain_Selling_Capability` na kujisajili kupitia action hook ya `wu_domain_seller_register_capabilities`.
 
 Mwongozo huu unakuonyesha jinsi ya kuunganisha (wire in) registrar yako maalum.
 
-## Interface
+## Interface {#the-interface}
 
 Class yako lazima itekeleze `WP_Ultimo\Integrations\Capabilities\Domain_Selling_Capability` na kuimarisha (extend) `WP_Ultimo\Integrations\Base_Capability_Module`.
 
@@ -65,7 +65,7 @@ class My_Registrar_Selling extends Base_Capability_Module implements Domain_Sell
 }
 ```
 
-### Methods za Hiari
+### Methods za Hiari {#optional-methods}
 
 Tumia hizi ili kufungua vipengele zaidi. Addon inatambua usaidizi kupitia `method_exists()`:
 
@@ -81,7 +81,7 @@ Tumia hizi ili kufungua vipengele zaidi. Addon inatambua usaidizi kupitia `metho
 | `get_epp_code(string $domain_name): array` | Uhamisho wa domain (kuondoka) |
 | `transfer_domain(string $domain, string $auth_code, array $registrant_info, array $options): array` | Uhamisho wa domain (kuingia) |
 
-### Kanuni ya Thamani ya Kurudisha
+### Kanuni ya Thamani ya Kurudisha {#return-value-convention}
 
 Methods zote zinakurudisha array yenye angalau key ya `success`:
 
@@ -95,7 +95,7 @@ return ['success' => false, 'message' => 'Kosa linaloweza kusomwa na binadamu'];
 
 ---
 
-## Kujisajili kwa Capability yako
+## Kujisajili kwa Capability yako {#registering-your-capability}
 
 Sajili class yako kwa kutumia action ya `wu_domain_seller_register_capabilities`:
 
@@ -109,7 +109,7 @@ Argumenti ya kwanza kwa `add_capability()` ni **provider ID** — ni slug ndogo 
 
 ---
 
-## Kuongeza Fields za Credentials kwenye Wizard
+## Kuongeza Fields za Credentials kwenye Wizard {#adding-credential-fields-to-the-wizard}
 
 Ili kuruhusu wasimamizi kuingiza credentials kupitia setup wizard, sajili uunganishaji wako:
 
@@ -137,7 +137,7 @@ Credentials hihifadhiwa kama network options kwa kutumia field IDs kama keys. Up
 
 ---
 
-## Hooks kwa Actions Baada ya Usajili
+## Hooks kwa Actions Baada ya Usajili {#hooks-for-post-registration-actions}
 
 Tumia actions hizi ili kuanzisha webhooks, provisioning, notifications, au updates za CRM:
 
@@ -177,7 +177,7 @@ add_action('wu_domain_ses_verified', function($domain) {
 
 ---
 
-## Logging
+## Logging {#logging}
 
 Andika kwenye channel yako ya log maalum kwa provider kwa kutumia `wu_log_add()`:
 

@@ -1,22 +1,22 @@
 ---
 id: wu_page_enqueue_scripts
-title: الإجراء - wu_page_enqueue_scripts
+title: إجراء - wu_page_enqueue_scripts
 sidebar_label: wu_page_enqueue_scripts
-_i18n_hash: 3004f784084d124b8fdd5fd29bee2545
+_i18n_hash: 3ac07c0174f0c9930e32e5e28d72166f
 ---
-# Action: wu_page_enqueue_scripts
+# Action: wu_page_enqueue_scripts {#action-wupageenqueuescripts}
 
-Adding a custom action here so we have a place to enqueue the scripts and styles as needed\ and make sure they only get loaded on the right pages
+إضافة action مخصص هنا بحيث يكون لدينا مكان لإدراج السكربتات والأنماط حسب الحاجة\ والتأكد من تحميلها فقط على الصفحات الصحيحة
 
-## Parameters
+## المعاملات {#parameters}
 
-| Name | Type | Description |
+| الاسم | النوع | الوصف |
 |------|------|-------------|
-| $ | `\WU_Page` | The current admin page |
+| $ | `\WU_Page` | صفحة admin الحالية |
 
-### Since
+### منذ {#since}
 
 - 1.3.0
-### Source
+### المصدر {#source}
 
-Defined in [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1153) at line 1153
+مُعرّف في [`inc/class-wu-admin-pages.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/class-wu-admin-pages.php#L1123) في السطر 1123

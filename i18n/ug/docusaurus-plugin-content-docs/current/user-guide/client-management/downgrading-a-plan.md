@@ -3,13 +3,13 @@ title: خطة تكميلى قيد تلاشتۇرۇش
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# پلanı پایین آوردن (v2)
+# پلanı پایین آوردن (v2) {#downgrading-a-plan-v2}
 
 _**مهم توجه: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
 
 پایین آوردن یک طرح یا اشتراک کاری یکی از کارهایی است که مشتریان شما ممکن است انجام دهند، اگر بودجه محدودی داشته باشند یا تصمیم بگیرند که برای اداره زیرساخت خود نیازی به منابع زیادی ندارند.
 
-## چگونه پلن را پایین بیاوریم؟
+## چگونه پلن را پایین بیاوریم؟ {#how-to-downgrade-a-plan}
 
 مشتریان شما می‌توانند هر زمان با وارد شدن به داشبورد مدیریت سایت فرعی (subsite admin dashboard) و کلیک بر روی **Change** در صفحه حساب کاربری خود، پلنشان را پایین بیاورند.
 
@@ -25,7 +25,7 @@ _**مهم توجه: این مقاله به Ultimate Multisite نسخه ۲.x اش
 
 ![صفحه حساب که بنر تغییر عضویت معلق را نشان می‌دهد](/img/account-page/pending-change.png)
 
-### وقتی کاربر پلن خود را پایین می‌آورد چه اتفاقی می‌افتد؟
+### وقتی کاربر پلن خود را پایین می‌آورد چه اتفاقی می‌افتد؟ {#what-happens-when-a-user-downgrades-their-plan}
 
 مهم است بدانید که پایین آوردن پلن، تنظیمات موجود در زیرساخت سایت کاربر را تغییر نمی‌دهد.
 
@@ -37,7 +37,7 @@ Planın belirlediği limiti aşan gönderiler için size 3 farklı seçenek sunu
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### Ödeme ne olur?
+### Ödeme ne olur? {#what-happens-to-the-payment}
 
 2.0 sürümünde, prorsiyonlama (proration) açısından ödemede artık herhangi bir ayarlama yapmanıza gerek kalmıyor.
 

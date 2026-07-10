@@ -4,11 +4,11 @@ title: പ്രവർത്തനം - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 ഓതന്റിക്കേഷൻ കുക്കി സജ്ജമാക്കുന്നതിന് തൊട്ടുമുമ്പ് ഇത് പ്രവർത്തിക്കുന്നു.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 | $scheme | `string` | ഓതന്റിക്കേഷൻ സ്കീം. ഇതിന് 'auth' അല്ലെങ്കിൽ 'secure_auth' പോലുള്ള മൂല്യങ്ങൾ ഉൾപ്പെടുന്നു. |
 | $token | `string` | ഈ കുക്കിക്ക് ഉപയോഗിക്കാനുള്ള യൂസറുടെ സെഷൻ ടോക്കൺ. |
 
-### Since
+### Since {#since}
 
 - 2.5.0
 - 4.9.0: <code>$token</code> എന്ന പാരാമീറ്റർ ചേർത്തു.
-### Source
+### Source {#source}
 
 [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) എന്ന ഫയലിലെ 124-ാം വരിയിൽ നിർവചിച്ചിരിക്കുന്നു.

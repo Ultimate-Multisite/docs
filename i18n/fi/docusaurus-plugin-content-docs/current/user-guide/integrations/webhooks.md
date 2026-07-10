@@ -3,7 +3,7 @@ title: Webhookit
 sidebar_position: 15
 _i18n_hash: f8456622538d07af8f5aa36c1ec19249
 ---
-# Webhookien esikatselu (v2)
+# Webhookien esikatselu (v2) {#a-first-look-on-webhooks-v2}
 
 _**HUOMIO: Huomioi, että tämä ominaisuus tai artikkeli on tarkoitettu edistyneille käyttäjille.**_
 
@@ -11,7 +11,7 @@ _**HUOMIO: Huomioi, että tämä ominaisuus tai artikkeli on tarkoitettu edistyn
 
 Tämä on hyödyllistä, jos tarvitset integraatiota tai haluat siirtää tiettyä dataa Ultimate Multisite-sta toiseen CRM:ään tai järjestelmään joka kerta kun tapahtuma käynnistyy. Esimerkiksi sinun täytyy lähettää käyttäjän nimi ja sähköpostiosoite postituslistalle aina, kun uusi käyttäjäprofiili luodaan.
 
-## Webhookin luominen
+## Webhookin luominen {#how-to-create-a-webhook}
 
 Webhookin luomiseksi siirry verkko-admin-dashboardisi. Napsauta **Ultimate Multisite > Webhooks > Add New Webhook.**
 

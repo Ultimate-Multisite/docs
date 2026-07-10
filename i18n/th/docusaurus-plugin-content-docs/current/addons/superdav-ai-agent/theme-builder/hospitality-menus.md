@@ -3,15 +3,15 @@ title: เมนูร้านอาหารสำหรับแขก
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# เมนูร้านอาหารและบริการด้านการต้อนรับ (Hospitality Menus)
+# เมนูร้านอาหารและบริการด้านการต้อนรับ (Hospitality Menus) {#hospitality-menus}
 
 ฟีเจอร์ **Hospitality Menus** ช่วยให้ Theme Builder สามารถสร้างและฝังหน้าเมนูอาหารและเครื่องดื่มที่มีโครงสร้างอย่างเป็นระบบลงในเว็บไซต์ WordPress ของคุณได้โดยตรง
 
-## ภาพรวม (Overview)
+## ภาพรวม (Overview) {#overview}
 
 ตอนนี้ Theme Builder สามารถสร้างหน้าเมนูที่มีโครงสร้างอย่างมืออาชีพสำหรับธุรกิจด้านการต้อนรับ ไม่ว่าจะเป็นร้านอาหาร คาเฟ่ บาร์ หรือบริการจัดเลี้ยง เมนูเหล่านี้จะถูกรวมเข้ากับการออกแบบเว็บไซต์ของคุณอย่างสมบูรณ์ และสามารถอัปเดตและจัดการได้อย่างง่ายดาย
 
-## ประเภทธุรกิจที่รองรับ (Supported Hospitality Types)
+## ประเภทธุรกิจที่รองรับ (Supported Hospitality Types) {#supported-hospitality-types}
 
 - **Restaurants** — เมนูอาหารสำหรับร้านอาหารแบบบริการเต็มรูปแบบ
 - **Cafes** — เมนูเครื่องดื่มและอาหารว่าง
@@ -21,9 +21,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Food Trucks** — เมนูบริการอาหารเคลื่อนที่
 - **Breweries and Wineries** — เมนูเครื่องดื่มพร้อมคำอธิบาย
 
-## โครงสร้างเมนู (Menu Structure)
+## โครงสร้างเมนู (Menu Structure) {#menu-structure}
 
-### หมวดหมู่เมนู (Menu Categories)
+### หมวดหมู่เมนู (Menu Categories) {#menu-categories}
 
 เมนูจะถูกจัดระเบียบออกเป็นหมวดหมู่ต่างๆ:
 
@@ -34,7 +34,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 - **Beverages** — เครื่องดื่ม (ทั้งแอลกอฮอล์และไม่มีแอลกอฮอล์)
 - **Specials** — เมนูพิเศษประจำวันหรือตามฤดูกาล
 
-### รูปแบบรายการเมนู (Menu Item Format)
+### รูปแบบรายการเมนู (Menu Item Format) {#menu-item-format}
 
 รายการเมนูแต่ละรายการประกอบด้วย:
 
@@ -49,7 +49,7 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 }
 ```
 
-#### ฟิลด์ของรายการ (Item Fields)
+#### ฟิลด์ของรายการ (Item Fields) {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 | `allergens` | array | สารก่อภูมิแพ้ทั่วไป (ถั่ว, เปลือกหอย, ฯลฯ) |
 | `availability` | string | ช่วงเวลาที่จำหน่าย (รายวัน, ตามฤดูกาล, ฯลฯ) |
 
-## การสร้างเมนูร้านอาหารและบริการด้านการต้อนรับ (Creating Hospitality Menus)
+## การสร้างเมนูร้านอาหารและบริการด้านการต้อนรับ (Creating Hospitality Menus) {#creating-hospitality-menus}
 
-### ขั้นตอนที่ 1: ให้ข้อมูลเมนู (Provide Menu Information)
+### ขั้นตอนที่ 1: ให้ข้อมูลเมนู (Provide Menu Information) {#step-1-provide-menu-information}
 
 บอก Theme Builder เกี่ยวกับเมนูของคุณ:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### ขั้นตอนที่ 2: Theme Builder สร้างเมนู (Theme Builder Generates Menu)
+### ขั้นตอนที่ 2: Theme Builder สร้างเมนู (Theme Builder Generates Menu) {#step-2-theme-builder-generates-menu}
 
 Theme Builder จะ:
 
@@ -81,7 +81,7 @@ Theme Builder จะ:
 4. จัดรูปแบบราคาและคำอธิบาย
 5. เพิ่มข้อมูลโภชนาการและสารก่อภูมิแพ้
 
-### ขั้นตอนที่ 3: ตรวจสอบและปรับแต่ง (Review and Customize)
+### ขั้นตอนที่ 3: ตรวจสอบและปรับแต่ง (Review and Customize) {#step-3-review-and-customize}
 
 คุณสามารถ:
 
@@ -91,9 +91,9 @@ Theme Builder จะ:
 4. อัปเดตคำอธิบายและข้อมูลโภชนาการ
 5. ปรับแต่งสไตล์และการจัดวาง
 
-## ตัวเลือกการแสดงผลเมนู (Menu Display Options)
+## ตัวเลือกการแสดงผลเมนู (Menu Display Options) {#menu-display-options}
 
-### หน้าเมนูเต็ม (Full Menu Page)
+### หน้าเมนูเต็ม (Full Menu Page) {#full-menu-page}
 
 หน้าเฉพาะที่แสดงเมนูทั้งหมดของคุณ:
 
@@ -102,7 +102,7 @@ Theme Builder จะ:
 - รูปแบบที่เหมาะสำหรับการพิมพ์
 - การออกแบบที่รองรับการแสดงผลบนมือถือ
 
-### วิดเจ็ตเมนู (Menu Widget)
+### วิดเจ็ตเมนู (Menu Widget) {#menu-widget}
 
 ฝังส่วนเมนูในหน้าอื่นๆ:
 
@@ -111,7 +111,7 @@ Theme Builder จะ:
 - เมนูเครื่องดื่มในหน้าบาร์
 - ส่วนแสดงของหวานในส่วนท้าย (footer)
 
-### เมนู PDF (Menu PDF)
+### เมนู PDF (Menu PDF) {#menu-pdf}
 
 สร้างเมนูในรูปแบบไฟล์ PDF ที่สามารถดาวน์โหลดได้:
 
@@ -120,9 +120,9 @@ Theme Builder จะ:
 - รวมรูปภาพและคำอธิบาย
 - ง่ายต่อการแชร์และส่งทางอีเมล
 
-## ข้อมูลโภชนาการและสารก่อภูมิแพ้ (Dietary and Allergen Information)
+## ข้อมูลโภชนาการและสารก่อภูมิแพ้ (Dietary and Allergen Information) {#dietary-and-allergen-information}
 
-### คุณสมบัติทางโภชนาการ (Dietary Attributes)
+### คุณสมบัติทางโภชนาการ (Dietary Attributes) {#dietary-attributes}
 
 ทำเครื่องหมายรายการด้วยข้อมูลโภชนาการ:
 
@@ -134,7 +134,7 @@ Theme Builder จะ:
 - **Low-Carb** — คาร์โบไฮเดรตต่ำ
 - **High-Protein** — อุดมด้วยโปรตีน
 
-### คำเตือนสารก่อภูมิแพ้ (Allergen Warnings)
+### คำเตือนสารก่อภูมิแพ้ (Allergen Warnings) {#allergen-warnings}
 
 รวมสารก่อภูมิแพ้ทั่วไป:
 
@@ -147,9 +147,9 @@ Theme Builder จะ:
 - **Gluten** — ข้าวสาลีและธัญพืชที่มีกลูเตน
 - **Sesame** — งาและน้ำมันงา
 
-## การจัดการเมนู (Menu Management)
+## การจัดการเมนู (Menu Management) {#menu-management}
 
-### การอัปเดตราคา (Updating Prices)
+### การอัปเดตราคา (Updating Prices) {#updating-prices}
 
 อัปเดตราคาเมนูได้อย่างง่ายดาย:
 
@@ -159,7 +159,7 @@ Theme Builder จะ:
 4. บันทึกการเปลี่ยนแปลง
 5. การเปลี่ยนแปลงจะปรากฏบนเว็บไซต์ของคุณทันที
 
-### การเพิ่มรายการตามฤดูกาล (Adding Seasonal Items)
+### การเพิ่มรายการตามฤดูกาล (Adding Seasonal Items) {#adding-seasonal-items}
 
 สร้างเมนูที่ปรับเปลี่ยนตามฤดูกาล:
 
@@ -169,7 +169,7 @@ Theme Builder จะ:
 4. กำหนดวันที่จำหน่าย
 5. แสดงผลโดยอัตโนมัติในช่วงฤดูกาล
 
-### การจัดการเมนูพิเศษ (Managing Specials)
+### การจัดการเมนูพิเศษ (Managing Specials) {#managing-specials}
 
 แสดงเมนูพิเศษประจำวันหรือประจำสัปดาห์:
 
@@ -179,7 +179,7 @@ Theme Builder จะ:
 4. อัปเดตรายวันหรือรายสัปดาห์
 5. เก็บถาวรเมนูพิเศษเก่า
 
-## การผสานรวมกับ Theme Builder (Integration with Theme Builder)
+## การผสานรวมกับ Theme Builder (Integration with Theme Builder) {#integration-with-theme-builder}
 
 เมื่อใช้ Theme Builder สำหรับเว็บไซต์ด้านการต้อนรับ:
 
@@ -189,9 +189,9 @@ Theme Builder จะ:
 4. **Mobile optimization** — เมนูจะแสดงผลได้อย่างสวยงามบนโทรศัพท์มือถือ
 5. **SEO optimization** — เมนูเป็นมิตรต่อเครื่องมือค้นหา
 
-## แนวทางปฏิบัติที่ดีที่สุด (Best Practices)
+## แนวทางปฏิบัติที่ดีที่สุด (Best Practices) {#best-practices}
 
-### การออกแบบเมนู (Menu Design)
+### การออกแบบเมนู (Menu Design) {#menu-design}
 
 - **การจัดระเบียบที่ชัดเจน** — โครงสร้างหมวดหมู่ที่เป็นเหตุเป็นผล
 - **คำอธิบายที่อ่านง่าย** — น่ารับประทานและให้ข้อมูล
@@ -199,7 +199,7 @@ Theme Builder จะ:
 - **รูปภาพระดับมืออาชีพ** — รูปภาพอาหารคุณภาพสูง
 - **พื้นที่ว่าง (Whitespace)** — อย่าทำให้หน้าดูแน่นเกินไป
 
-### เนื้อหา (Content)
+### เนื้อหา (Content) {#content}
 
 - **คำอธิบายที่ถูกต้อง** — อธิบายรายการอย่างแม่นยำ
 - **เน้นเมนูพิเศษ** — ทำให้เมนูพิเศษโดดเด่น
@@ -207,7 +207,7 @@ Theme Builder จะ:
 - **อัปเดตอย่างสม่ำเสมอ** — รักษาความทันสมัยของราคาและรายการ
 - **ใช้ภาษาที่น่ารับประทาน** — ทำให้รายการดูน่าอร่อย
 
-### การเข้าถึง (Accessibility)
+### การเข้าถึง (Accessibility) {#accessibility}
 
 - **ฟอนต์ที่อ่านง่าย** — ใช้รูปแบบตัวอักษรที่ชัดเจนและอ่านง่าย
 - **ความเปรียบต่างที่เพียงพอ** — ตรวจสอบให้แน่ใจว่าข้อความอ่านได้
@@ -215,9 +215,9 @@ Theme Builder จะ:
 - **คำเตือนสารก่อภูมิแพ้** — แสดงสารก่อภูมิแพ้ให้เห็นอย่างเด่นชัด
 - **รองรับมือถือ** — ทดสอบบนอุปกรณ์ทุกชนิด
 
-## ตัวอย่าง (Examples)
+## ตัวอย่าง (Examples) {#examples}
 
-### โครงสร้างเมนูร้านอาหาร (Restaurant Menu Structure)
+### โครงสร้างเมนูร้านอาหาร (Restaurant Menu Structure) {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### โครงสร้างเมนูคาเฟ่ (Cafe Menu Structure)
+### โครงสร้างเมนูคาเฟ่ (Cafe Menu Structure) {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## ฟีเจอร์ที่เกี่ยวข้อง (Related Features)
+## ฟีเจอร์ที่เกี่ยวข้อง (Related Features) {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — สร้างเมนูนำทาง
 - [Design Direction](./design-direction.md) — ปรับแต่งการออกแบบเว็บไซต์ของคุณ

@@ -1,0 +1,117 @@
+---
+title: Forbrugsbaserede abonnementer
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Målebaserede planer {#metered-plans}
+
+Ultimate Multisite: Målebaserede planer-tilføjelsen ændrer, hvordan du fakturerer dine kunder, ved at introducere fleksible muligheder for målebaseret fakturering. I stedet for stive hårde grænser, der blokerer brugere, når de overskrides, kan du aktivere overforbrugsgebyrer, der automatisk fakturerer kunder for yderligere brug.
+
+## Nøglefunktioner {#key-features}
+
+* **Målebaseret fakturering**: Opkræv kunder baseret på faktisk brug i stedet for faste niveauer
+* **Håndtering af overforbrug**: Fakturér automatisk for brug, der overstiger planens grænser
+* **Brugssporing**: Overvåg kunders ressourceforbrug i realtid
+* **Fleksibel prissætning**: Angiv brugerdefinerede satser for forskellige ressourcer (lagerplads, båndbredde, sites osv.)
+* **AI-tokenfakturering**: Spor og fakturér input- og output-tokens for AI-brug på tværs af kunders undersites
+* **Automatisk fakturering**: Generér fakturaer automatisk, når brugstærskler overskrides
+* **Brugsrapporter**: Detaljeret brugsanalyse og rapportering for kunder og administratorer
+
+## Perfekt til {#perfect-for}
+
+* **Hostingudbydere**: Tilbyd skalerbare planer, der vokser med kundernes behov
+* **SaaS-platforme**: Fakturér baseret på faktisk ressourceforbrug
+* **Bureaunetværk**: Fleksible prissætningsmodeller til klientprojekter
+* **Reseller-hosting**: Gør det muligt for partnere at tilbyde brugsbaseret prissætning
+
+## Sådan fungerer det {#how-it-works}
+
+1. Konfigurer målebaserede ressourcer (diskplads, båndbredde, antal sites osv.)
+2. Angiv basisplangrænser og overforbrugssatser
+3. Systemet sporer automatisk brug på tværs af dit netværk
+4. Når kunder overskrider grænser, beregnes overforbrugsgebyrer
+5. Fakturaer genereres automatisk baseret på faktureringscyklus
+6. Kunder kan se deres brug og kommende gebyrer i realtid
+
+## AI-tokenfakturering {#ai-token-billing}
+
+Version 1.1.0 tilføjer AI-tokenfakturering for netværk, der tilbyder AI-funktioner via WordPress AI Client SDK. Målebaserede planer lytter efter fuldførte AI-genereringsanmodninger, registrerer antal input- og output-tokens for det aktuelle undersite og omregner disse tokens til fakturerbart AI-forbrug for kundens aktuelle faktureringsperiode.
+
+Brug AI-tokenfakturering, når du vil tilbyde AI-værktøjer på kunders sites uden at absorbere uforudsigelige modelomkostninger. Hver anmodning tilskrives undersitet, kunden, medlemskabet, udbyderen og modellen, så administratorer kan revidere brugen, mens kunder kan se, hvordan deres AI-forbrug påvirker deres Account.
+
+### Konfigurer satser pr. token {#configure-per-token-rates}
+
+AI-satser konfigureres pr. model som separate input- og output-satser. Satser beregnes pr. 1 million tokens, hvilket matcher almindelige prissider hos AI-udbydere.
+
+1. I netværksadministrationen skal du åbne **Multisite Ultimate → Indstillinger → Målebaserede planer**.
+2. Aktivér måling af AI-forbrug for produktet eller medlemskabet, der skal fakturere AI-brug.
+3. Tilføj modelsats-poster ved hjælp af de model-ID'er, der returneres af din connector, såsom `gpt-4o`, `gpt-4o-mini` eller en anden OpenAI-kompatibel modelidentifikator.
+4. Indtast separate værdier for **Inputsats** og **Outputsats** i dit sites valuta pr. 1 million tokens.
+5. Angiv kundens inkluderede AI-forbrugsbeløb og overforbrugsadfærd for planen.
+
+Når et nøjagtigt model-ID ikke er konfigureret, kan Målebaserede planer matche efter modelpræfiks. For eksempel kan en sats, der er konfigureret for `claude-sonnet-4`, gælde for tidsstemplede model-ID'er, der starter med det præfiks. Udviklere kan også justere den endelige satstabel med filteret [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates).
+
+### Understøttede AI-connectors {#supported-ai-connectors}
+
+AI-tokenfakturering fungerer med connectors, der udsender WordPress AI Client SDK-genereringshændelser og inkluderer tokenbrug i svarmetadataene. Dette omfatter Ultimate Multisite AI connector-familien, der er dokumenteret her:
+
+* [Ultimate AI Connector til kompatible endpoints](../ultimate-ai-connector-compatible-endpoints/) for OpenAI-kompatible API'er, inklusive OpenAI, Mistral, Ollama-kompatible gateways og andre udbydere, der eksponerer kompatible tokenbrugsmetadata
+* [Ultimate AI Connector til WebLLM](../ultimate-ai-connector-webllm/) for browserbaseret WebLLM-brug, når anmodninger dirigeres gennem AI Client SDK-hændelsesflowet
+* AI-udbyderconnectors, der bruges af [Gratis AI Agent](../gratis-ai-agent/), når den valgte udbyder rapporterer antal prompt- og completion-tokens via SDK'et
+
+Brugerdefinerede connectors kan deltage ved at udløse standardhændelserne `wp_ai_client_before_generate_result` og `wp_ai_client_after_generate_result` med metadata for model, udbyder og tokenbrug. Connector-indstillinger håndhæves fra hovedsitet til undersites, så kundesites bruger de netværksgodkendte udbydere og grænser.
+
+### Kunders Account-brug {#customer-account-usage}
+
+Kunder ser AI-brug sammen med deres andre målebaserede ressourcer i deres account-område. AI-forbrugsrækken viser den aktuelle total for faktureringsperioden, afledt af registrerede prompt- og completion-tokens, de konfigurerede modelsatser og eventuelt inkluderet forbrugsbeløb i planen.
+
+Hvis en kunde har en betalingsmetode registreret, behandles brug over det inkluderede forbrugsbeløb som fakturerbart overforbrug. Hvis planen er konfigureret med en hård afbrydelse, og kunden ikke har nogen betalingsmetode tilgængelig, kan AI-anmodninger blokeres, når forbrugsbeløbet er nået, og kunden bliver bedt om at tilføje betalingsoplysninger, før der fortsættes.
+
+## Understøttede ressourcer {#supported-resources}
+
+* Disklager
+* Båndbredde/dataoverførsel
+* Antal sites
+* Antal brugere
+* AI-tokenbrug og AI-forbrug
+* Brugerdefinerede ressourcetyper
+
+## Krav {#requirements}
+
+* Multisite Ultimate 2.0.0 eller højere
+* WordPress Multisite-installation
+* PHP 7.4 eller højere
+
+## Installation {#installation}
+
+1. Upload plugin-filerne til `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktivér pluginet via skærmen 'Plugins' i WordPress
+3. Gå til Multisite Ultimate → Indstillinger → Målebaserede planer
+4. Konfigurer dine målebaserede ressourcer og din prissætning
+5. Aktivér målebaseret fakturering for produkter i produkteditoren
+
+## Ofte stillede spørgsmål {#frequently-asked-questions}
+
+## Hvad sker der, når en kunde overskrider sin grænse? {#what-happens-when-a-customer-exceeds-their-limit}
+
+I stedet for at blokere adgang registrerer systemet overforbruget og tilføjer det til deres næste faktura baseret på de satser, du har konfigureret.
+
+## Kan jeg angive forskellige overforbrugssatser for forskellige produkter? {#can-i-set-different-overage-rates-for-different-products}
+
+Ja, hvert produkt kan have unikke målte ressourcer og priser for overforbrug.
+
+## Hvordan får kunder besked om forbrug? {#how-are-customers-notified-about-usage}
+
+Kunder kan se deres aktuelle forbrug i deres Dashboard og modtage valgfrie notifikationer, når de nærmer sig eller overskrider grænser.
+
+## Hvordan prissættes AI-tokenforbrug? {#how-is-ai-token-usage-priced}
+
+AI-tokenforbrug prissættes ud fra modellens konfigurerede input- og outputsatser pr. 1 million tokens. Målte planer ganger hver anmodnings antal prompt- og completion-tokens med disse satser, lægger resultatet til kundens aktuelle AI-forbrug for faktureringsperioden og anvender planens inkluderede mængde eller regler for overforbrug.
+
+## Kan jeg stadig bruge hårde grænser? {#can-i-still-use-hard-limits}
+
+Ja, målt fakturering er valgfri pr. produkt. Du kan blande traditionelle produkter med hårde grænser med målte produkter.

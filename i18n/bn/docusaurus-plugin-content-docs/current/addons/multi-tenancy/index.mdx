@@ -1,31 +1,45 @@
 ---
 title: মাল্টি-টেন্যান্সি
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# মাল্টি-টেন্যান্সি (Multi-Tenancy)
+# Multi-Tenancy {#multi-tenancy}
 
-কর্মক্ষমতা এবং নিরাপত্তার জন্য সাবসাইটগুলিকে সার্ভার এবং ডেটাবেস জুড়ে বিতরণ করা
+পারফরম্যান্স ও নিরাপত্তার জন্য সাবসাইটগুলো সার্ভার ও ডেটাবেসজুড়ে বিতরণ করুন
 
-## প্রয়োজনীয়তা (Requirements)
+## Version 1.2.0 রিলিজের প্রধান বিষয় {#version-120-release-highlights}
 
-- WordPress ৫.৩ বা তার বেশি সংস্করণ
-- PHP ৭.৪ বা তার বেশি সংস্করণ
-- মাল্টিসাইট আলটিমেট প্লাগইন (সক্রিয় থাকতে হবে)
+Multi-Tenancy 1.2.0 প্রোডাকশন আইসোলেশন ওয়ার্কফ্লোর জন্য sovereign tenant ভিত্তি যোগ করে:
 
-## ইনস্টলেশন (Installation)
+- স্বল্পস্থায়ী, রিপ্লে-সুরক্ষিত SSO ভিজিটসহ স্টেটলেস tenant autologin।
+- sovereign tenants-এর জন্য প্রতি-সাবসাইট ডেটাবেস ও ফাইলসিস্টেম আইসোলেশন।
+- host-সচেতন tenant provisioning-এর জন্য Hostinger multi-tenancy সক্ষমতা।
+- legacy ডেটা পরীক্ষা ও async push প্রক্রিয়াকরণের জন্য sovereign migration যাচাইকরণ গেট।
+- Bedrock, FrankenPHP, এবং localhost ইনস্টলের জন্য কনফিগারযোগ্য একই-মেশিন ডেটাবেস host binding।
+- tenant bootstrap, ডেটাবেস writer, schema bootstrap, এবং user provisioning উন্নতি।
+- আরও নিরাপদ sovereign teardown, যা tenant credentials পরিষ্কার করে।
 
-১. অ্যাডন ফাইলগুলি আপনার `/wp-content/plugins/` ডিরেক্টরিতে আপলোড করুন।
-২. ওয়ার্ডপ্রেসের 'Plugins' মেনু থেকে প্লাগইনটি সক্রিয় করুন।
-৩. নেটওয়ার্ক অ্যাডমিনে অ্যাডন সেটিংস কনফিগার করুন।
+[sovereign migration workflow](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy isolation](/user-guide/configuration/multi-tenancy-isolation), এবং [sovereign tenant operations](/user-guide/administration/sovereign-tenant-operations)-এর জন্য user guide দেখুন।
 
-## ডেভেলপমেন্ট (Development)
+## প্রয়োজনীয়তা {#requirements}
 
-### সেটআপ (Setup)
+- WordPress 5.3 বা তার বেশি
+- PHP 7.4 বা তার বেশি
+- Multisite Ultimate plugin (সক্রিয়)
+
+## ইনস্টলেশন {#installation}
+
+1. addon ফাইলগুলো আপনার `/wp-content/plugins/` ডিরেক্টরিতে আপলোড করুন
+2. WordPress-এর 'Plugins' মেনু থেকে plugin সক্রিয় করুন
+3. network admin-এ addon সেটিংস কনফিগার করুন
+
+## ডেভেলপমেন্ট {#development}
+
+### সেটআপ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### প্রজেক্ট স্ট্রাকচার (Project Structure)
+### প্রজেক্ট কাঠামো {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP ক্লাস এবং ইনক্লুড ফাইল
-│   ├── class-multisite-ultimate-updater.php  # আপডেট হ্যান্ডলার
+├── inc/                          # PHP ক্লাস ও include
+│   ├── class-multisite-ultimate-updater.php  # আপডেট handler
 │   └── class-multi_tenancy-main.php             # মূল কার্যকারিতা
-├── tests/                        # ইউনিট টেস্ট
-│   ├── bootstrap.php            # টেস্ট বুটস্ট্র্যাপ
-│   ├── class-*-base.php         # বেস টেস্ট ক্লাস
-│   └── class-*-test.php         # টেস্ট কেস
-├── views/                       # টেমপ্লেট ফাইল
-├── assets/                      # স্ট্যাটিক অ্যাসেট
-│   ├── css/                     # স্টাইলশীট
-│   ├── js/                      # জাভাস্ক্রিপ্ট ফাইল
+├── tests/                        # Unit test
+│   ├── bootstrap.php            # Test bootstrap
+│   ├── class-*-base.php         # বেস test class
+│   └── class-*-test.php         # Test case
+├── views/                       # Template ফাইল
+├── assets/                      # Static asset
+│   ├── css/                     # Stylesheet
+│   ├── js/                      # JavaScript ফাইল
 │   └── images/                  # ছবি
 ├── lang/                        # ভাষা ফাইল
-├── composer.json                # PHP নির্ভরতা
-├── package.json                 # Node.js নির্ভরতা
-├── phpunit.xml.dist             # PHPUnit কনফিগারেশন
-├── .phpcs.xml.dist              # কোড স্ট্যান্ডার্ড কনফিগারেশন
-└── rector.php                   # কোড আধুনিকীকরণের নিয়ম
+├── composer.json                # PHP dependency
+├── package.json                 # Node.js dependency
+├── phpunit.xml.dist             # PHPUnit configuration
+├── .phpcs.xml.dist              # Code standard configuration
+└── rector.php                   # Code modernization নিয়ম
 ```
 
-### টেস্টিং (Testing)
+### পরীক্ষা {#testing}
 
-এই অ্যাডনটিতে একটি ব্যাপক টেস্টিং ফ্রেমওয়ার্ক রয়েছে:
+addon-এ একটি বিস্তৃত testing framework অন্তর্ভুক্ত আছে:
 
-- **ইউনিট টেস্ট (Unit Tests)**: ওয়ার্ডপ্রেস টেস্ট স্যুট সহ PHPUnit-ভিত্তিক টেস্ট।
-- **বেস টেস্ট ক্লাস (Base Test Class)**: সাধারণ টেস্ট পরিস্থিতির জন্য সহায়ক পদ্ধতি সরবরাহ করে।
-- **টেস্ট কভারেজ (Test Coverage)**: কোড কভারেজ ট্র্যাক করার জন্য কনফিগার করা হয়েছে।
-- **মাল্টিসাইট টেস্টিং (Multisite Testing)**: মাল্টিসাইট পরিবেশে টেস্ট চালানো হয়।
+- **Unit Tests**: WordPress test suite সহ PHPUnit-ভিত্তিক test
+- **Base Test Class**: সাধারণ test পরিস্থিতির জন্য সহায়ক method দেয়
+- **Test Coverage**: code coverage ট্র্যাক করার জন্য কনফিগার করা
+- **Multisite Testing**: test multisite environment-এ চলে
 
-### কোড স্ট্যান্ডার্ড (Code Standards)
+### Code Standards {#code-standards}
 
-- **ওয়ার্ডপ্রেস কোডিং স্ট্যান্ডার্ড (WordPress Coding Standards)**: PHPCS এর মাধ্যমে প্রয়োগ করা হয়।
-- **PHP ৭.৪+ সামঞ্জস্যতা (PHP 7.4+ Compatibility)**: আধুনিক PHP বৈশিষ্ট্যগুলি সমর্থিত।
-- **স্ট্যাটিক অ্যানালাইসিস (Static Analysis)**: টাইপ চেকিংয়ের জন্য PHPStan ইন্টিগ্রেশন।
-- **কোড আধুনিকীকরণ (Code Modernization)**: PHP আপগ্রেডের জন্য Rector নিয়ম।
+- **WordPress Coding Standards**: PHPCS দিয়ে প্রয়োগ করা হয়
+- **PHP 7.4+ Compatibility**: আধুনিক PHP feature সমর্থিত
+- **Static Analysis**: type checking-এর জন্য PHPStan integration
+- **Code Modernization**: PHP upgrade-এর জন্য Rector rules
 
-### বিল্ড সিস্টেম (Build System)
+### Build System {#build-system}
 
-- **অ্যাসেট প্রসেসিং (Asset Processing)**: CSS/JS ফাইলগুলির জন্য মিনিফিকেশন।
-- **অনুবাদ (Translation)**: POT ফাইল তৈরি।
-- **প্যাকেজিং (Packaging)**: বিতরণের জন্য আর্কাইভ তৈরি।
-- **ডেভেলপমেন্ট মোড (Development Mode)**: ডিবাগিংয়ের জন্য মিনিফাই না করা অ্যাসেট।
+- **Asset Processing**: CSS/JS ফাইলের জন্য minification
+- **Translation**: POT ফাইল তৈরি
+- **Packaging**: বিতরণের জন্য archive তৈরি
+- **Development Mode**: debugging-এর জন্য unminified asset
 
-## কনফিগারেশন (Configuration)
+## কনফিগারেশন {#configuration}
 
-এই অ্যাডনটি নেটওয়ার্ক অ্যাডমিন ইন্টারফেসের মাধ্যমে অ্যাক্সেস করা বিভিন্ন কনফিগারেশন অপশন সমর্থন করে।
+addon বিভিন্ন কনফিগারেশন অপশন সমর্থন করে, যা network admin interface থেকে পাওয়া যায়।
 
-## হুকস এবং ফিল্টার (Hooks and Filters)
+### Sovereign tenant configuration {#sovereign-tenant-configuration}
 
-### অ্যাকশনস (Actions)
+sovereign tenants-এর জন্য, tenant-এ traffic routing করার আগে tenant ডেটাবেস, ফাইলসিস্টেম root, database host binding, এবং host capability কনফিগার করুন। ডেটাবেস credentials, host binding, routing, বা user provisioning-কে প্রভাবিত করে এমন প্রতিটি পরিবর্তনের পর migration verification চালান।
 
-- `ultimate-multisite-addon-template_init` - অ্যাডন ইনিশিয়ালাইজেশনের পরে ট্রিগার হয়।
-- `ultimate-multisite-addon-template_loaded` - সমস্ত অ্যাডন ফাইল লোড হওয়ার পরে ট্রিগার হয়।
+tenant runtime এবং ডেটাবেস grant যদি local socket বা একই-মেশিন access আশা করে, শুধু তখনই `localhost` ব্যবহার করুন। আপনার provider যে grant host কনফিগার করেছে সেটি হলে `127.0.0.1` বা service hostname ব্যবহার করুন।
 
-### ফিল্টারস (Filters)
+### Hostinger capability {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - অ্যাডন সেটিংস পরিবর্তন করুন।
-- `ultimate-multisite-addon-template_enabled` - অ্যাডন সক্ষম/নিষ্ক্রিয় অবস্থা ওভাররাইড করুন।
+Hostinger multi-tenancy capability শেয়ার করা Hostinger integration token-এর সঙ্গে কাজ করে। যাচাইকরণের আগে নিশ্চিত করুন domain hPanel-এ আছে, DNS Hostinger account-এ point করছে, এবং tenant ডেটাবেস সেটিংস hPanel-এর সঙ্গে মিলে।
 
-## লাইসেন্স (License)
+## Hook ও Filter {#hooks-and-filters}
 
-এই অ্যাডনটি GPL v3 বা পরবর্তী সংস্করণের অধীনে লাইসেন্সপ্রাপ্ত।
+### Action {#actions}
 
-## সাপোর্ট (Support)
+- `ultimate-multisite-addon-template_init` - addon initialization-এর পরে চালু হয়
+- `ultimate-multisite-addon-template_loaded` - সব addon ফাইল লোড হওয়ার পরে চালু হয়
 
-সাপোর্ট এবং ডকুমেন্টেশনের জন্য, [MultisiteUltimate.com](https://multisiteultimate.com) ভিজিট করুন।
-## চেঞ্জলগ (Changelog)
+### Filter {#filters}
 
-- Version 1.0.1 (2025-09-28): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।
+- `ultimate-multisite-addon-template_settings` - addon সেটিংস পরিবর্তন করুন
+- `ultimate-multisite-addon-template_enabled` - addon enable/disable status override করুন
+
+## লাইসেন্স {#license}
+
+এই addon GPL v3 বা পরবর্তী সংস্করণের অধীনে লাইসেন্সপ্রাপ্ত।
+
+## সহায়তা {#support}
+
+সহায়তা ও documentation-এর জন্য [MultisiteUltimate.com](https://multisiteultimate.com) দেখুন
+## Changelog {#changelog}
+
+- Version 1.2.0 (2026-06-03): stateless tenant autologin, Hostinger multi-tenancy capability, প্রতি-সাবসাইট ডেটাবেস ও ফাইলসিস্টেম আইসোলেশন, sovereign migration verification gates, tenant bootstrap/database writer উন্নতি, কনফিগারযোগ্য MySQL host binding, এবং আরও নিরাপদ sovereign teardown যোগ করা হয়েছে।
+
+- Version 1.0.1 (2025-09-28): prefix ultimate-multisite-এ rename; text domain update; version bump।
 
 
-- Version (2025-09-28): প্রিফিক্স ultimate-multisite এ রিনেম করা হয়েছে; টেক্সট ডোমেইন আপডেট করা হয়েছে; ভার্সন বৃদ্ধি।
+- Version  (2025-09-28): prefix ultimate-multisite-এ rename; text domain update; version bump।

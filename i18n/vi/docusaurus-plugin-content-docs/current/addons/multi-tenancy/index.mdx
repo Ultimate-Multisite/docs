@@ -1,124 +1,150 @@
 ---
-title: Đa người thuê
+title: Đa thuê bao
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Đa người thuê (Multi-Tenancy)
+# Đa thuê bao {#multi-tenancy}
 
-Phân tán các subsites (trang con) trên nhiều máy chủ và cơ sở dữ liệu để tăng hiệu suất và bảo mật.
+Phân phối các trang con trên nhiều máy chủ và cơ sở dữ liệu để tăng hiệu năng và bảo mật
 
-## Yêu cầu
+## Điểm nổi bật của bản phát hành phiên bản 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 bổ sung nền tảng bên thuê độc lập cho các quy trình cô lập trong môi trường sản xuất:
+
+- Tự động đăng nhập bên thuê không trạng thái với các lượt truy cập SSO ngắn hạn, được bảo vệ chống phát lại.
+- Cô lập cơ sở dữ liệu và hệ thống tệp theo từng trang con cho các bên thuê độc lập.
+- Năng lực đa thuê bao Hostinger để cấp phát bên thuê có nhận biết máy chủ.
+- Các cổng xác minh di chuyển độc lập để kiểm tra dữ liệu cũ và xử lý đẩy bất đồng bộ.
+- Liên kết máy chủ cơ sở dữ liệu cùng máy có thể cấu hình cho các bản cài đặt Bedrock, FrankenPHP và localhost.
+- Cải thiện khởi tạo bên thuê, trình ghi cơ sở dữ liệu, khởi tạo lược đồ và cấp phát người dùng.
+- Gỡ bỏ độc lập an toàn hơn, có dọn dẹp thông tin xác thực của bên thuê.
+
+Xem các hướng dẫn người dùng về [quy trình di chuyển độc lập](/user-guide/getting-started/sovereign-migration-workflow), [cô lập đa thuê bao](/user-guide/configuration/multi-tenancy-isolation), và [vận hành bên thuê độc lập](/user-guide/administration/sovereign-tenant-operations).
+
+## Yêu cầu {#requirements}
 
 - WordPress 5.3 trở lên
 - PHP 7.4 trở lên
-- Plugin Multisite Ultimate (đang kích hoạt)
+- plugin Multisite Ultimate (đang hoạt động)
 
-## Cài đặt
+## Cài đặt {#installation}
 
-1. Tải các tệp addon lên thư mục `/wp-content/plugins/`
+1. Tải các tệp addon lên thư mục `/wp-content/plugins/` của bạn
 2. Kích hoạt plugin thông qua menu 'Plugins' trong WordPress
-3. Cấu hình cài đặt addon trong khu vực quản trị mạng (network admin)
+3. Cấu hình cài đặt addon trong khu vực quản trị mạng
 
-## Phát triển
+## Phát triển {#development}
 
-### Thiết lập
+### Thiết lập {#setup}
 
 ```bash
-# Cài đặt dependencies
+# Install dependencies
 composer install
 npm install
 
-# Chạy tests
+# Run tests
 npm run test
 
-# Chạy kiểm tra tiêu chuẩn mã hóa
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Sửa các vấn đề về phong cách mã
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Build cho môi trường sản xuất
+# Build for production
 npm run build
 ```
 
-### Cấu trúc dự án
+### Cấu trúc dự án {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # Các lớp và tệp PHP
-│   ├── class-multisite-ultimate-updater.php  # Xử lý cập nhật
+├── inc/                          # Các lớp PHP và tệp include
+│   ├── class-multisite-ultimate-updater.php  # Trình xử lý cập nhật
 │   └── class-multi_tenancy-main.php             # Chức năng chính
-├── tests/                        # Các bài kiểm thử đơn vị (Unit tests)
+├── tests/                        # Kiểm thử đơn vị
 │   ├── bootstrap.php            # Khởi tạo kiểm thử
 │   ├── class-*-base.php         # Lớp kiểm thử cơ sở
-│   └── class-*-test.php         # Các trường hợp kiểm thử
-├── views/                       # Các tệp template
-├── assets/                      # Tài sản tĩnh
-│   ├── css/                     # Các bảng kiểu (Stylesheets)
-│   ├── js/                      # Các tệp JavaScript
+│   └── class-*-test.php         # Trường hợp kiểm thử
+├── views/                       # Tệp mẫu
+├── assets/                      # Tài nguyên tĩnh
+│   ├── css/                     # Bảng định kiểu
+│   ├── js/                      # Tệp JavaScript
 │   └── images/                  # Hình ảnh
-├── lang/                        # Các tệp ngôn ngữ
-├── composer.json                # Dependencies PHP
-├── package.json                 # Dependencies Node.js
+├── lang/                        # Tệp ngôn ngữ
+├── composer.json                # Phụ thuộc PHP
+├── package.json                 # Phụ thuộc Node.js
 ├── phpunit.xml.dist             # Cấu hình PHPUnit
-├── .phpcs.xml.dist              # Cấu hình tiêu chuẩn mã hóa
+├── .phpcs.xml.dist              # Cấu hình tiêu chuẩn mã
 └── rector.php                   # Quy tắc hiện đại hóa mã
 ```
 
-### Kiểm thử (Testing)
+### Kiểm thử {#testing}
 
-Addon này bao gồm một bộ khung kiểm thử toàn diện:
+Addon bao gồm một khung kiểm thử toàn diện:
 
-- **Unit Tests**: Các bài kiểm thử dựa trên PHPUnit cùng với bộ kiểm thử của WordPress
-- **Base Test Class**: Cung cấp các phương thức hỗ trợ cho các kịch bản kiểm thử chung
-- **Test Coverage**: Được cấu hình để theo dõi độ bao phủ mã (code coverage)
-- **Multisite Testing**: Các bài kiểm thử chạy trong môi trường multisite
+- **Kiểm thử đơn vị**: Kiểm thử dựa trên PHPUnit với bộ kiểm thử WordPress
+- **Lớp kiểm thử cơ sở**: Cung cấp các phương thức hỗ trợ cho những kịch bản kiểm thử phổ biến
+- **Phạm vi kiểm thử**: Được cấu hình để theo dõi độ bao phủ mã
+- **Kiểm thử multisite**: Các kiểm thử chạy trong môi trường multisite
 
-### Tiêu chuẩn mã hóa (Code Standards)
+### Tiêu chuẩn mã {#code-standards}
 
-- **WordPress Coding Standards**: Được thực thi bằng PHPCS
+- **Tiêu chuẩn mã hóa WordPress**: Được thực thi thông qua PHPCS
 - **Tương thích PHP 7.4+**: Hỗ trợ các tính năng PHP hiện đại
-- **Static Analysis**: Tích hợp PHPStan để kiểm tra kiểu dữ liệu (type checking)
-- **Code Modernization**: Các quy tắc Rector để nâng cấp PHP
+- **Phân tích tĩnh**: Tích hợp PHPStan để kiểm tra kiểu
+- **Hiện đại hóa mã**: Quy tắc Rector cho các nâng cấp PHP
 
-### Hệ thống Build (Build System)
+### Hệ thống build {#build-system}
 
-- **Asset Processing**: Thu nhỏ (Minification) các tệp CSS/JS
-- **Translation**: Tạo tệp POT
-- **Packaging**: Tạo kho lưu trữ (archive) để phân phối
-- **Development Mode**: Tài sản chưa thu nhỏ (unminified) để gỡ lỗi
+- **Xử lý tài nguyên**: Thu nhỏ các tệp CSS/JS
+- **Dịch thuật**: Tạo tệp POT
+- **Đóng gói**: Tạo tệp lưu trữ để phân phối
+- **Chế độ phát triển**: Tài nguyên chưa thu nhỏ để gỡ lỗi
 
-## Cấu hình (Configuration)
+## Cấu hình {#configuration}
 
-Addon hỗ trợ nhiều tùy chọn cấu hình khác nhau, có thể truy cập thông qua giao diện quản trị mạng (network admin).
+Addon hỗ trợ nhiều tùy chọn cấu hình có thể truy cập thông qua giao diện quản trị mạng.
 
-## Hooks và Filters (Móc nối và Bộ lọc)
+### Cấu hình bên thuê độc lập {#sovereign-tenant-configuration}
 
-### Actions (Hành động)
+Đối với các bên thuê độc lập, hãy cấu hình cơ sở dữ liệu bên thuê, thư mục gốc hệ thống tệp, liên kết máy chủ cơ sở dữ liệu và năng lực máy chủ trước khi định tuyến lưu lượng đến bên thuê. Chạy xác minh di chuyển sau mỗi thay đổi ảnh hưởng đến thông tin xác thực cơ sở dữ liệu, liên kết máy chủ, định tuyến hoặc cấp phát người dùng.
+
+Chỉ sử dụng `localhost` khi runtime của bên thuê và quyền cấp cơ sở dữ liệu yêu cầu socket cục bộ hoặc quyền truy cập cùng máy. Sử dụng `127.0.0.1` hoặc tên máy chủ dịch vụ khi đó là máy chủ cấp quyền được nhà cung cấp của bạn cấu hình.
+
+### Năng lực Hostinger {#hostinger-capability}
+
+Năng lực đa thuê bao Hostinger hoạt động với token tích hợp Hostinger dùng chung. Xác nhận tên miền có trong hPanel, DNS trỏ đến Account Hostinger, và cài đặt cơ sở dữ liệu bên thuê khớp với hPanel trước khi xác minh.
+
+## Hook và bộ lọc {#hooks-and-filters}
+
+### Action {#actions}
 
 - `ultimate-multisite-addon-template_init` - Được kích hoạt sau khi khởi tạo addon
-- `ultimate-multisite-addon-template_loaded` - Được kích hoạt sau khi tất cả các tệp addon được tải
+- `ultimate-multisite-addon-template_loaded` - Được kích hoạt sau khi tất cả tệp addon đã được tải
 
-### Filters (Bộ lọc)
+### Bộ lọc {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Sửa đổi cài đặt addon
-- `ultimate-multisite-addon-template_enabled` - Ghi đè trạng thái bật/tắt của addon
+- `ultimate-multisite-addon-template_enabled` - Ghi đè trạng thái bật/tắt addon
 
-## Giấy phép (License)
+## Giấy phép {#license}
 
-Addon này được cấp phép theo GPL v3 trở lên.
+Addon này được cấp phép theo GPL v3 hoặc mới hơn.
 
-## Hỗ trợ (Support)
+## Hỗ trợ {#support}
 
 Để được hỗ trợ và xem tài liệu, hãy truy cập [MultisiteUltimate.com](https://multisiteultimate.com)
-## Nhật ký thay đổi (Changelog)
+## Nhật ký thay đổi {#changelog}
 
-- Phiên bản 1.0.1 (2025-09-28): đổi tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.
+- Phiên bản 1.2.0 (2026-06-03): thêm tự động đăng nhập bên thuê không trạng thái, năng lực đa thuê bao Hostinger, cô lập cơ sở dữ liệu và hệ thống tệp theo từng trang con, các cổng xác minh di chuyển độc lập, cải thiện khởi tạo bên thuê/trình ghi cơ sở dữ liệu, liên kết máy chủ MySQL có thể cấu hình, và gỡ bỏ độc lập an toàn hơn.
+
+- Phiên bản 1.0.1 (2025-09-28): đổi tên tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.
 
 
-- Phiên bản (2025-09-28): đổi tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.
+- Phiên bản  (2025-09-28): đổi tên tiền tố thành ultimate-multisite; cập nhật text domain; tăng phiên bản.

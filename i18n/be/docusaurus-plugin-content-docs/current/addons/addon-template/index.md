@@ -3,25 +3,25 @@ title: Аддаткавы шаблон
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Аддон-шаблон
+# Аддон-шаблон {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Патраebaванні
+## Патраebaванні {#requirements}
 
 - WordPress 5.3 або больш высокія
 - PHP 7.4 або больш высокія
 - Прэміум-плагін Ultimate Multisite (актыўны)
 
-## Устаноўка
+## Устаноўка {#installation}
 
 1. Загрузіце файлы аддону ў каталог `/wp-content/plugins/`
 2. Актывуйце плагін праз меню «Плагіны» у WordPress
 3. Наладзьце аддон у адмін-панелі сеткі
 
-## Разработка
+## Разработка {#development}
 
-### Наладка
+### Наладка {#setup}
 
 ```bash
 # Устаноўка залежнасцей
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Структура праекта
+### Структура праекта {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Правілы мадэрнізацыі кода
 ```
 
-### Тэставанне
+### Тэставанне {#testing}
 
 Аддон ўключае размаўлены тэставы фрэймворк:
 
@@ -75,44 +75,44 @@ ultimate-multisite-addon-template/
 - **Test Coverage**: Наладжаны для адсоткаў пакрыцця кода
 - **Multisite Testing**: Тэсты праходзяць у асяроддзі multisite
 
-### Стандарты кода
+### Стандарты кода {#code-standards}
 
 - **WordPress Coding Standards**: Вымушаны праз PHPCS
 - **PHP 7.4+ Compatibility**: Падтрымка сучасных функцый PHP
 - **Static Analysis**: Інтеграцыя PHPStan для праверкі тыпаў
 - **Code Modernization**: Правілы Rector для апаเกрацыі PHP
 
-### Сістэма пабудовы
+### Сістэма пабудовы {#build-system}
 
 - **Asset Processing**: Мініфікацыя для файлаў CSS/JS
 - **Translation**: Генерацыя файлаў POT
 - **Packaging**: Стваৰэнне архіва для распылення
 - **Development Mode**: Немініфікаваныя актывы для наладжвання
 
-## Канфігурацыя
+## Канфігурацыя {#configuration}
 
 Аддон падтрымлівае розныя варыянты канфігурацыі, даступныя праз адмін-панель сеткі.
 
-## Hooks і Filters
+## Hooks і Filters {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-addon-template_init` - Выконваецца пасля ініцыялізацыі аддону
 - `ultimate-multisite-addon-template_loaded` - Выконваецца пасля загрузкі ўсіх файлаў аддону
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Змена налад для аддону
 - `ultimate-multisite-addon-template_enabled` - Прымусовая змена статусу ўключэння/выключэння аддону
 
-## Ліцэнцыя
+## Ліцэнцыя {#license}
 
 Гэты аддон ліцэнзіяваны па GPL v3 або больш высокай.
 
-## Падтрымка
+## Падтрымка {#support}
 
 Для падтрымкі і дакументацыі наведайце [MultisiteUltimate.com](https://multisiteultimate.com)
-## Журнал змены
+## Журнал змены {#changelog}
 
 - Версія 1.0.1 (2025-09-28): змена прафікса на ultimate-multisite; абнаўленне тэкставай сферы; павышэнне версіі.
 

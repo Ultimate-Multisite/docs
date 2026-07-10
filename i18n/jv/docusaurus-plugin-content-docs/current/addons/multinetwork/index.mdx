@@ -1,0 +1,100 @@
+---
+title: Multi-Jaringan
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network {#multi-network}
+
+Tambahan Ultimate Multisite: Multinetwork ngembangake platform Ultimate Multisite sampeyan nganggo fungsi multinetwork sing kuat. Tambahan iki ndadekake pelanggan sampeyan bisa tuku lan ngatur sakabehing jejaring WordPress multisite, ora mung situs individu.
+
+## Fitur Utama {#key-features}
+
+* **Panyedhiyan Jejaring**: Nggawe lan ngatur konfigurasi jejaring WordPress multisite lengkap kanthi otomatis kanggo pelanggan sampeyan
+* **Cithakan Jejaring**: Ayo pelanggan njelajah, pratinjau, lan milih cithakan jejaring sing wis digawe sadurunge ndhaptar
+* **Manajemen Jejaring**: Kapabilitas manajemen lengkap kanggo lingkungan multinetwork
+* **Jejaring Terisolasi**: Saben jejaring pelanggan mlaku kanthi mandiri nganggo tabel basis data lan konfigurasi dhewe
+* **SSO Lintas-Jejaring**: Menehi pelanggan akses mulus menyang sub-jejaring nganggo otentikasi magic-link
+* **Arsitektur sing Bisa Diskalakake**: Nangani pirang-pirang jejaring kanthi efisien nganggo alokasi sumber daya sing dioptimalake
+* **Integrasi**: Terintegrasi kanthi mulus karo sistem langganan lan tagihan Ultimate Multisite
+
+## Kasus Panggunaan {#use-cases}
+
+* **Hosting White Label**: Nyedhiyakake pelanggan nganggo jejaring multisite bermerek dhewe
+* **Solusi Agensi**: Ngidini agensi ngatur pirang-pirang jejaring klien saka siji platform
+* **Panyebaran Perusahaan**: Ndhukung organisasi gedhe kanthi kabutuhan multi-jejaring sing kompleks
+* **Platform Pendidikan**: Nggawe jejaring kapisah kanggo sekolah utawa departemen sing beda-beda
+
+## Syarat {#requirements}
+
+* Ultimate Multisite 2.0.0 utawa luwih dhuwur
+* Instalasi WordPress Multisite
+* PHP 7.4 utawa luwih dhuwur
+* MySQL 5.6 utawa luwih dhuwur
+
+## Instalasi {#installation}
+
+1. Unggah berkas plugin menyang direktori `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktifake plugin liwat layar 'Plugins' ing WordPress
+3. Atur setelan multinetwork liwat Ultimate Multisite → Settings
+
+## Cithakan Jejaring {#network-templates}
+
+Versi 1.3.0 nambah alur nemokake lan milih cithakan kanggo pelanggan sing tuku jejaring anyar. Gunakake cithakan jejaring nalika sampeyan pengin saben jejaring pelanggan anyar miwiti saka struktur, desain, pustaka isi, utawa setelan khusus-vertikal sing wis disiapake.
+
+### Pratinjau cithakan {#template-previewer}
+
+Pratinjau cithakan jejaring ngidini pelanggan njelajah cithakan sing kasedhiya sadurunge checkout. Saben cithakan bisa dibukak ing panel pratinjau langsung, supaya pelanggan bisa mbandhingake tata letak lan isi sadurunge tuku jejaring.
+
+Gunakake pratinjau kanggo mbantu pelanggan:
+
+* Mriksa tampilan lan struktur saben cithakan jejaring sing kasedhiya
+* Mbandhingake pirang-pirang cithakan tanpa ninggalake alur tuku
+* Milih cithakan sing paling cocog karo kasus panggunaan sadurunge ndhaptar
+
+Jaga jeneng lan katrangan cithakan supaya grapyak kanggo pelanggan. Pratinjau paling migunani nalika pelanggan bisa ngerti kasus panggunaan sing dimaksud, kayata jejaring agensi, jejaring sekolah, jejaring waralaba, utawa paket hosting white-label.
+
+### Pamilih cithakan nalika checkout {#template-picker-at-checkout}
+
+Pamilih cithakan bisa ditambahake menyang alur checkout ndhaptar minangka kolom. Nalika dikonfigurasi, pelanggan milih cithakan jejaring sing dikarepake sajrone checkout, lan cithakan sing dipilih digunakake nalika jejaring anyar disedhiyakake.
+
+Kanggo nggunakake pamilih ing alur checkout:
+
+1. Siapake jejaring sing pengin sampeyan tawakake minangka cithakan.
+2. Aktifake kolom pilihan cithakan Multinetwork ing formulir ndhaptar utawa checkout sing relevan.
+3. Pilih cithakan endi sing kudu kasedhiya kanggo alur checkout kasebut.
+4. Terbitake alur checkout lan uji ndhaptar kanggo mesthekake cithakan sing dipilih ditrapake menyang jejaring anyar.
+
+Yen alur checkout mung nawakake siji produk jejaring, pamilih isih bisa migunani minangka langkah onboarding sing dipandu. Kanggo corong multi-plan, tampilake mung cithakan sing kompatibel karo produk utawa plan sing dipilih.
+
+## SSO Magic Link Lintas-Jejaring {#cross-network-magic-link-sso}
+
+SSO magic link lintas-jejaring ngidini pelanggan pindhah antarane area account utama lan sub-jejaring tanpa kudu mlebu maneh kanthi manual. Nalika pelanggan ngetutake tautan akses lintas-jejaring, Ultimate Multisite ngasilake magic link sing winates wektu lan ngotentikasi pelanggan menyang jejaring tujuan.
+
+Iki ningkatake pengalaman kanggo pelanggan sing ngatur luwih saka siji jejaring utawa sing kudu ngakses jejaring cithakan sing mentas dikloning langsung sawise tuku.
+
+Dhaptar priksa admin:
+
+* Pesthekake tambahan Multinetwork aktif ing saindhenging instalasi WordPress multisite.
+* Pesthekake pelanggan duwe akses jejaring sing bener sadurunge ditawani tautan lintas-jejaring.
+* Jaga domain jejaring lan domain sing dipetakake supaya dikonfigurasi kanthi bener supaya magic link tumuju menyang jejaring tujuan sing dimaksud.
+* Uji dashboard pelanggan lan tombol akses sawise checkout apa wae sawise ngganti setelan jejaring, domain, utawa checkout.
+
+Magic link kudu dianggep minangka tautan mlebu. Iki dirancang kanggo akses pelanggan sing mulus lan ora kena diterusake utawa digunakake maneh ing njaba sesi sing dimaksud.
+
+## Pitakonan sing Kerep Ditakokake {#frequently-asked-questions}
+
+### Apa iku multinetwork? {#what-is-multinetwork}
+
+Multinetwork yaiku fitur WordPress sing ngidini sampeyan mbukak pirang-pirang jejaring multisite mandiri ing siji instalasi WordPress.
+
+### Apa bedane karo multisite biasa? {#how-is-this-different-from-regular-multisite}
+
+Multisite biasa ngidini pirang-pirang situs ing siji jejaring. Multinetwork ngidini pirang-pirang jejaring, saben siji nganggo situs dhewe-dhewe, kabeh ana ing siji instalasi WordPress.
+
+### Apa iki mbutuhake konfigurasi server khusus? {#does-this-require-special-server-configuration}
+
+Ya, multinetwork mbutuhake panyetelan lan konfigurasi server tartamtu. Mangga delengen dokumentasi kanggo pandhuan panyetelan sing rinci.

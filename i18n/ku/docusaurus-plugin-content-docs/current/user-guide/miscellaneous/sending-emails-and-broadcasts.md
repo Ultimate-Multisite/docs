@@ -1,124 +1,124 @@
 ---
-title: ناردنی ئیمەیلەکان و بڵاوکردنەوەیەکان
+title: Şandina E-nameyan û Weşanên Giştî
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# فرستادن ایمیل‌ها و پخش پیام‌ها (نسخه ۲)
+# Şandina E-nameyan û Weşanên Giştî (v2) {#sending-emails-and-broadcasts-v2}
 
-_**توجه مهم: این مقاله به Ultimate Multisite نسخه ۲.x اشاره دارد.**_
+_**TÊBÎNIYA GIRÎNG: Ev gotar li ser Ultimate Multisite guhertoya 2.x e.**_
 
-Ultimate Multisite یک قابلیت دارد که به شما اجازه می‌دهد با ارسال ایمیل به کاربر هدف یا گروهی از کاربران، و همچنین ارسال اطلاعیه‌ها در داشبورد مدیریت آن‌ها، اطلاعیه‌های پخش (broadcast announcements) بفرستید تا با مشتریان خود ارتباط برقرار کنید.
+Ultimate Multisite bi taybetmendiyek tê ku dê bihêle hûn bi xerîdarên xwe re têkilî daynin; bi şandina e-nameyek ji bo bikarhênerek armancgirtî an komek bikarhêneran, her weha bi şandina hişyariyan li ser Dashboard-a rêveberiyê ya wan ji bo ragihandinên giştî.
 
-## افزودن اطلاعیه‌های مدیریتی به داشبورد مشتریان با استفاده از پخش پیام‌ها (Broadcasts)
+## Bi Weşanên Giştî re hişyariyên rêveberiyê li Dashboard-a xerîdarên xwe zêde bikin {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-با استفاده از قابلیت پخش پیام‌های Ultimate Multisite، می‌توانید **اطلاعیه‌های مدیریتی** را به داشبورد مدیریت زیرساخت (subsite admin dashboard) کاربر خود اضافه کنید.
+Bi bikaranîna taybetmendiya weşana giştî ya Ultimate Multisite, hûn dikarin **hişyariyên rêveberiyê** li Dashboard-a rêveberiyê ya bin-malpera bikarhênerê xwe zêde bikin.
 
-این کار زمانی بسیار مفید است که نیاز دارید اطلاعیه‌ای مانند نگهداری سیستم (system maintenance) یا ارائه محصولات و خدمات جدید به کاربران فعلی خود داشته باشید. اینطور است که اطلاعیه مدیریتی در داشبورد کاربر شما نمایش داده می‌شود.
+Ev pir alîkar e heke hûn hewce bin ragihandinek bikin, wekî parastina pergalê an pêşkêşkirina berhem an xizmetên nû ji bikarhênerên heyî re. Hişyariya rêveberiyê dê li ser Dashboard-a bikarhênerê we wiha xuya bike.
 
-<!-- Screenshot unavailable: نمایش اطلاعیه مدیریتی پخش شده روی داشبورد زیرساخت مشتری -->
+<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
 
-برای شروع یک اطلاعیه مدیریتی، به داشبورد مدیریت شبکه (network admin dashboard) خود بروید و در منوی **Ultimate Multisite**، گزینه **Broadcasts** را پیدا خواهید کرد.
+Ji bo destpêkirina hişyariyeke rêveberiyê, biçin Dashboard-a rêveberiya torê ya xwe û di bin menuya **Ultimate Multisite** de, hûn ê vebijarka **Weşanên Giştî** bibînin.
 
-![صفحه لیست پخش پیام‌ها در مدیریت Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Rûpela lîsteya Weşanên Giştî di rêveberiya Ultimate Multisite de](/img/admin/broadcasts-list.png)
 
-همچنین می‌توانید پخش‌های موجود را ویرایش کنید:
+Hûn dikarin weşanên giştî yên heyî jî biguherînin:
 
-![رابط ویرایش پخش پیام](/img/admin/broadcast-edit.png)
+![Navrûya guherandina weşana giştî](/img/admin/broadcast-edit.png)
 
-از این صفحه، روی دکمه **Add Broadcast** (افزودن پخش پیام) در بالا کلیک کنید.
+Ji vê rûpelê, li jor bişkoka **Weşana Giştî Zêde Bike** bitikînin.
 
-این کار پنجره مودال افزودن پخش پیام (Add broadcast modal window) را باز می‌کند که در آن می‌توانید نوع پخشی که می‌خواهید ارسال کنید را انتخاب نمایید.
+Ev dê paceya modal a Zêdekirina weşana giştî veke, ku tê de hûn dikarin hilbijêrin dixwazin kîjan cure weşana giştî bişînin.
 
-ادامه دهید و **Message** (پیام) را انتخاب کرده سپس روی دکمه **Next Step** (گام بعدی) کلیک کنید.
+Biçe pêş û **Peyam** hilbijêre, paşê li bişkoka **Gava Din** bitikîne.
 
-![پنجره مودال افزودن پخش پیام با گزینه Message انتخاب شده](/img/admin/broadcast-add-message.png)
+![Modal-a zêdekirina weşana giştî ku vebijarka Peyamê lê hatiye hilbijartin](/img/admin/broadcast-add-message.png)
 
-پنجره بعدی از شما می‌پرسد که یا **Target customer** (مشتری هدف) را وارد کنید یا **Target product** (محصول هدف). توجه داشته باشید که می‌توانید بیش از یک کاربر یا بیش از یک محصول را انتخاب کنید.
+Paceya din dê ji we **Xerîdarê armancgirtî** an **Berhema armancgirtî** bixwaze. Bibînin ku hûn dikarin ji yekê zêdetir bikarhêner an ji yekê zêdetir berhem hilbijêrin.
 
-بۆ گەڕان بۆ یەکپۆشێکی کاربری یان بەرهەم، دەبێت دەست بە تایپکردنی ئەو کاتابەیت (keyword) بکەیتە ناو فیلدەکە.
+Ji bo lêgerîna hesabê bikarhêner an berhemekê, divê hûn dest bi nivîsandina peyva sereke di nav qada de bikin.
 
-لە خێڕی **Message type**دا، دەتوانیت ڕەنگی ئاگادارییەکە هەڵبژێریت. ئەمە گرنگی پەیامەکەت دەدات.
+Di bin qada **Cureyê peyamê** de, hûn dikarin rengê hişyariyê hilbijêrin. Ev dê girîngiya peyama we derxe pêş.
 
-ئەو کات دەتوانیت **Next Step** بکەیت.
+Paşê hûn dikarin li **Gava Din** bitikînin.
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![Qadên xerîdarên armancgirtî, berhema armancgirtî û cureyê peyamê ji bo weşana giştî ya Peyamê](/img/admin/broadcast-message-targets.png)
 
-پەڕەی دوایەکە ئەو شوێنەیە کە دەتوانیت دەست بە نووسینی پەیامەکەت بکەیت بە بنووسینی بابەت (subject) و ناوەڕۆک/پەیامی ئەو شتانەی کە دەتەوێت بۆ بەکارهێنەران بڵێیت.
+Paceya din ew cih e ku hûn dikarin bi têketina mijarê û naverok/peyama ku dixwazin ji bikarhêneran re biweşînin, dest bi amadekirina peyama xwe bikin.
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![Edîtora mijar û naveroka peyama weşana giştî di gava amadekirinê de](/img/admin/broadcast-edit.png)
 
-پاش دروستکردنی پەیامەکەت، دەتوانیت **Send** بکەیت.
+Piştî afirandina peyama xwe, hûn dikarin li bişkoka **Bişîne** bidin.
 
-وە هەموو ئەوەیە. ئاگاداری ئەدمنەکە بە خێرایی لەسەر داشبۆردی بەکارهێنەرەکەت دەردەکەوێت.
+Û ev hemû ye. Divê hişyariya rêveberiyê tavilê li ser Dashboard-a bikarhênerê we xuya bibe.
 
-## بۆ دابینکردنی ئیمەیڵ بۆ کڕیارەکانت
+## E-nameyan ji xerîdarên xwe re bişînin {#send-emails-to-your-customers}
 
-بەکارھێنانی تایبەتمەندی بڵاوکردنەوەی Ultimate Multisite، دەتوانیت ئیمەیڵێک بۆ بەکارهێنەرەکانت بنێیت. هەڵبژاردەیەکی هەیە کە ئیمەیڵەکە تەنها بۆ بەکارهێنەرانی دیاریکراو بنێیت یان گرووپێکی تایبەت لە بەکارهێنەران گرێبەست بکەیت پێکەوە بەپێی بەرهەم یان پلانی کارکردن (plan) کە لەسەردا ناونیشان دروستکراون.
+Bi bikaranîna taybetmendiya weşana giştî ya Ultimate Multisite, hûn dikarin e-nameyek ji bikarhênerên xwe re bişînin. Vebijarka we heye ku e-nameyê tenê ji bikarhênerên taybet re bişînin an komek bikarhêner a taybet li gorî berhem an plana ku ew di bin wê de abone ne armanc bigirin.
 
-بۆ دەستپێکردنی بڵاوکردنەوەی ئیمەیڵ، بگواشبە داشبۆردی ئەدمن تۆڕەکەت و لە خێراو **Ultimate Multisite**، دەتوانیت کارتی Broadcast بکەیت.
+Ji bo destpêkirina weşana giştî ya e-nameyê, biçin Dashboard-a rêveberiya torê ya xwe û di bin menuya Ultimate Multisite de, hûn ê vebijarka Weşana Giştî bibînin.
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![Rûpela lîsteya Weşanên Giştî ku wekî destpêk ji bo weşana giştî ya e-nameyê tê bikaranîn](/img/admin/broadcasts-list.png)
 
-لە ئەم پەڕەدا، دپیچکەی **Add broadcast** لە سەرەوەی هەڵبژێرە.
+Ji vê rûpelê, li jor bişkoka **Weşana giştî zêde bike** bitikînin.
 
-ئەم کارە دەربڕێت بۆ پۆپ-مۆدال (modal window) یان Add broadcast کە تێیدا دەتوانیت هەڵبژێریت چ جۆرە بڵاوکردنەوەیە کە دەتەوێت بنێیت. بەردەوام بیت و **Email** هەڵبژێرە پاشان دپیچکەی **Next Step** بکە.
+Ev dê paceya modal a Zêdekirina weşana giştî veke, ku tê de hûn dikarin hilbijêrin dixwazin kîjan cure weşana giştî bişînin. Biçe pêş û **E-name** hilbijêre, paşê li bişkoka **Gava Din** bitikîne.
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![Modal-a zêdekirina weşana giştî ku vebijarka E-name lê hatiye hilbijartin](/img/admin/broadcast-add-email.png)
 
-پەڕەی دوایەکە پێشکەشکردنی یەکێک لە نشتەکانی **Target customer** یان **Target product** دەکرێت. ئاگاداری ئەوە بکە کە دەتوانیت زیاتر لە یەک بەکارهێنەر یان زیاتر لە یەک بەرهەم هەڵبژێریت.
+Paceya din dê ji we **Xerîdarê armancgirtî** an **Berhema armancgirtî** bipirse. Bibînin ku hûn dikarin ji yekê zêdetir bikarhêner an ji yekê zêdetir berhem hilbijêrin.
 
-بۆ گەڕان بۆ یەکپۆشێکی کاربری یان بەرهەم، دەبێت دەستت بکەوێت بە تایپکردنی ئەو وشەیە لەناو فیلدەکەدا.
+Ji bo lêgerîna hesabê bikarhêner an berhemekê, divê hûn dest bi nivîsandina peyva sereke di nav qada de bikin.
 
-کاتێک ناوبەندیی تۆ دیاری کرد، دەتوانیت **Next Step** (پێشوەختەی پاشەکەوت) بڵێیتەوە.
+Dema ku temaşevanên we yên armancgirtî hatin hilbijartin, hûn dikarin li **Gava Din** bitikînin.
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![Hilbijartina xerîdarên armancgirtî û berhema armancgirtî ji bo weşana giştî ya E-nameyê](/img/admin/broadcast-email-targets.png)
 
-پەڕەی دوایە ئەو شوێنەیە کە دەتوانیت بەدەستهێنانی ئیمێلکەکەت دەست پێبکەیت بە نووسینی بابەت و ناوەڕۆکی یان پەیامێک کە دەتەوێت بۆ بەکارهێنەران بنێریت.
+Paceya din ew cih e ku hûn dikarin bi têketina mijarê û naverok/peyama ku dixwazin ji bikarhêneran re bişînin, dest bi amadekirina e-nameya xwe bikin.
 
 <!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
 
-پاش دروستکردنی پەیامەکەت، دەتوانیت دابەزێنە **Send** (نێردران).
+Piştî afirandina peyama xwe, hûn dikarin li bişkoka **Bişîne** bidin.
 
-و ئەمە چەند ئاسانە بۆ نێردان ئیمێل بۆ بەکارهێنەرانی کۆتایی بە بەکارهێنانی تایبەتمەندی broadcast.
+Û ev qas hêsan e ku hûn bi bikaranîna taybetmendiya weşana giştî e-nameyek ji bikarhênerên dawî yên xwe re bişînin.
 
-## ئیمێلەکانی سیستەم (System emails)
+## E-nameyên pergalê {#system-emails}
 
-ئیمێلەکانی سیستەم لە Ultimate Multisite، ئەو **ئاخاوتن و ڕاگەیاندنە ئۆتۆماتیکی**ن کە سیستەم دوای کارکردنەکان وەک تۆمارکردن، پارەدان، مۆڵپەندی ناوچە (domain mapping) و هتد، دەست پێدەکەن. ئەم ئیمێلانە دەتوانیت لە ڕێگەی تنظیماتەکانی Ultimate Multisite دەستکاری یان بگۆڕیت. هەروەها تایبەتمەندییەکی هەیە کە دەبێت بڵێیتەوە بۆ ئەوەی تنظیماتە ئێستە بگۆڕیت و لە جێبەجێ بکەیت (reset) یان کۆپی بکەیت (import) لە دامەزراوەێکی Ultimate Multisite دیکە.
+E-nameyên pergalê di Ultimate Multisite de ew **agahdarkirinên xweber** in ku piştî hin çalakiyan, wekî qeydkirin, dayîn, girêdana domainê û hwd., ji aliyê pergalê ve têne şandin. Ev e-name dikarin ji mîhengên Ultimate Multisite bên guherandin an sererastkirin. Her weha bi taybetmendiyek tê ku dihêle hûn mîhengên heyî ji sazkirineke din a Ultimate Multisite vegerînin û têxin hundir.
 
-### گۆڕینی و کۆپیکردنەوە (Resetting & Importing)
+### Vegerandin & Têxistin {#resetting--importing}
 
-وەرگرتنی وەرگرتنی نوێیەکانی Ultimate Multisite، هەروەها add-ons (پلانگینەکان)، دەتوانن لە کاتێکدا ئیمێل نوێیان تۆمار بکەن.
+Guhertoyên nû yên Ultimate Multisite, her weha add-on, dikarin dem bi dem e-nameyên nû tomar bikin û dê bikin.
 
-بۆ ڕێگرتن لە تێکچوون و کێشەی دیکەکان، **ئێمە نێو سیستەم بە شێوەیەکی ئۆتۆماتیکی قالبەکانی ئیمێل نوێیەکەت وەک System Emails زیاد ناکەین**، ئەگەر بۆ کارکردنی دروست و دروست بوونی تایبەتمەیەکی دیاریکراو گرنگ بێت.
+Ji bo pêşîlêgirtina pevçûn û pirsgirêkên din, **em dê şablonên nû yên e-nameyê wekî E-nameyên Pergalê li ser sazkirina we bi awayekî xweber zêde nekin** , heya ku ew ji bo xebitandina rast a taybetmendiyek diyarkirî ne girîng bin.
 
-بەڵام، سوپەر ئادمین (super admins) و ئەژمارەکان دەتوانن ئەم ئیمێلە نوێیە بە ڕێگەی ئامێرەی importer (واردگرتوو) بگۆڕنەوە. ئەو پڕۆسەیە ئیمێلێکی سیستەم نوێی لەگەڵ ناوەڕۆک و پێکهاتەی قالب ئیمێلەکە دروست دەکات، کە دەبێت سوپەر ئادمین بتوانێت هەر گۆڕانێک بکات یان بە شێوەیەکی ئێستایان پاراستنی بێت.
+Lêbelê, super admin û agent dikarin van e-nameyên nû tomarkirî bi amûra têxistinê têxin hundir. Ew pêvajo dê e-nameyeke nû ya pergalê bi naverok û veavakirina şablona e-nameya nû biafirîne, û dihêle super admin her guherandina ku dixwaze bike an wan wekî xwe bihêle.
 
-#### چۆن ئیمێلەکانی سیستەم بگۆڕیتەوە (How to import system emails)
+#### Çawa e-nameyên pergalê têxin hundir {#how-to-import-system-emails}
 
-بڕۆ بۆ پەیج تنظیمات Ultimate Multisite و بچکە بۆ تبەکە **Emails**.
+Biçin rûpela Mîhengên Ultimate Multisite ya xwe û biçin taba **E-name**.
 
-![تب Emails لە تنظیمات Ultimate Multisite کە بەشی System Emails دەردەخات](/img/config/settings-emails-tab.png)
+![Taba E-name di mîhengên Ultimate Multisite de ku beşa E-nameyên Pergalê nîşan dide](/img/config/settings-emails-tab.png)
 
-پاشان، لەسەر لایەنی دووەم (sidebar)، بۆ دابۆزەکەی **Customize System Emails** بگرە.
+Paşê, li ser sidebar, li bişkoka **E-nameyên Pergalê Taybet Bike** bitikînin.
 
-<!-- Screenshot unavailable: دابۆز Customize System Emails لە پۆلێکی لایەنی System Emails -->
+<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
 
-لە پەیجی System Emails، دەتوانیت دەکەیت بەدوای سەرەوە دۆکۆمەتی کار **Reset & Import** ببینیت. کلیککردن لەسەر ئەو دۆکۆمەتە دەبێت پەنجەرەی import و reset بکاتەوە بازنێریت.
+Li ser rûpela E-nameyên Pergalê, hûn ê li jor bişkoka çalakiya **Vegerandin & Têxistin** bibînin. Bi tikandina wê bişkokê divê paceya modal a têxistin û vegerandinê vebe.
 
-![دۆکۆمەتی Reset or Import لە پەیجی admin System Emails](/img/admin/system-emails-reset-import.png)
+![Bişkoka çalakiya Vegerandin an Têxistin li ser rûpela rêveberiya E-nameyên Pergalê](/img/admin/system-emails-reset-import.png)
 
-پاشان، دەتوانیت کارکردنی دابەزاندنی (toggle) آپشنەکانی Import Emails بکەیتەوە بۆ ئەوەی ببینیت چ پرسیارێکی سیستمی هەیە کە دەتوانیت import بکەیت.
+Paşê, hûn dikarin vebijarkên Têxistina E-nameyan biguherînin da ku bibînin kîjan e-nameyên pergalê ji bo têxistinê amade ne.
 
-<!-- Screenshot unavailable: دۆکۆمەتی Reset and Import لەگەڵ آپشنەکانی Import Emails بازنراو -->
+<!-- Wêneya ekranê tune ye: modala Ji nû ve saz kirin û anîn hundir bi vebijarkên Anîna e-nameyan firehkirî -->
 
-#### Resetکردنی System Emails
+#### Ji nû ve sazkirina e-nameyên pergalê {#reseting-system-emails}
 
-لە کاتەکانی دیکە، دەبینیت کە ئەو گۆڕانکارییانەی کردووەت بۆ قالبێکی ایمیل بە کار ناکات و دەتەوێت بیکەیت بە **دۆخی سەرەکی (default state)**ی خۆی.
+Carinan jî, tu dê bibînî ku guhertinên ku te li şablona e-nameyeke diyarkirî kirine êdî ji bo te nayên bikar, û tu dixwazî wê vegerînî **rewşa xwerû**.
 
-لە چەند حاڵەتیەکدا، دوو هەڵبژاردەیە دەبینیت: دەتوانیت سادەکان ئەو ایمیل سیستمی دیاریکراو لەناو ببەیت و دووبارە import بکەیتەوە (بەکارھێنانی ڕێنماییەکانی سەرەوە) - ئەم کارە بەڵگەنامەی فرستکردن و شتەکان دەپاکرێت، بۆیە ئەم ڕێگایە کەمترین پێداویستییەکە.
+Di rewşên wisa de, du vebijarkên te hene: tu dikarî bi tenê e-nameya pergalê jê bibî û dîsa wê bînî hundir (bi rêwerzên li jor) - ev ê metricên şandinê û tiştên din jê bibe, ji ber vê yekê ev rêbaz kêm tê tercîhkirin.
 
-یان دەتوانیت **Reset & Import tool** بەکاربهێنیت بۆ resetکردنی ئەو قالبە ایمیلەکەت.
+An jî tu dikarî **amûra Ji nû ve saz kirin û anîn hundir** bikar bînî da ku ew şablona e-nameyê ji nû ve saz bikî.
 
-بۆ resetکردنی قالبێکی ایمیل، دەتوانیت هەنگاوەکان لە سەرەوە بەدوای دابۆزەی Reset & Import بکەیت تا بگەیەنیتە ئامرازەکە، پاشان آپشنەکە **Reset** دەدابەزێنە و ئەو ایمیلانە هەڵبژێرە کە دەتەوێت بیکەیت بە ناوەڕۆکی سەرەکیی خۆیان.
+Ji bo ji nû ve sazkirina şablona e-nameyê, tu dikarî gavên li jor bişopînî heta ku bigihîjî amûra Ji nû ve saz kirin û anîn hundir, û paşê vebijarka **Ji nû ve saz kirin** çalak bikî û e-nameyên ku dixwazî vegerînî naveroka wan a xwerû hilbijêrî.
 
-<!-- Screenshot unavailable: دۆکۆمەتی Reset and Import لەگەڵ آپشنەکانی Reset Emails بازنراو -->
+<!-- Wêneya ekranê tune ye: modala Ji nû ve saz kirin û anîn hundir bi vebijarkên Ji nû ve sazkirina e-nameyan firehkirî -->

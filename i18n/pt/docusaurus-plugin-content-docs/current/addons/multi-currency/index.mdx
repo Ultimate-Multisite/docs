@@ -1,0 +1,117 @@
+---
+title: Multi-Moeda
+sidebar_position: 1
+_i18n_hash: 820ba0ed4f32198c58e4d235f1d61a0e
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-currency" name="Multi-Currency" />
+
+# Multimoeda {#multi-currency}
+
+Ultimate Multisite: Multimoeda permite que a sua rede aceite pagamentos em várias moedas. Converte automaticamente preços usando taxas de câmbio em tempo real ou manuais, permite definir preços exatos por produto para qualquer moeda e deteta a moeda preferida de cada visitante por geolocalização — tudo gerido a partir de um único Dashboard de administração.
+
+## Principais funcionalidades {#key-features}
+
+- **Conversão automática da taxa de câmbio** — os preços são convertidos a partir da sua moeda base usando taxas obtidas do fornecedor escolhido
+- **Substituições de preços por produto** — defina preços exatos específicos por moeda em qualquer produto para ignorar a conversão automática
+- **Campo de inscrição do seletor de moeda** — permite que os clientes escolham a sua moeda preferida durante a finalização da compra/inscrição
+- **Vários fornecedores de taxas de câmbio** — ECB, Frankfurter, Stripe ou taxas totalmente manuais
+- **Deteção de moeda baseada em geolocalização** — pré-seleciona automaticamente a moeda que corresponde ao país do visitante
+- **Dashboard de administração** — gira moedas ativas, taxas de câmbio e definições do fornecedor a partir de um único local
+
+## Requisitos {#requirements}
+
+- Ultimate Multisite 2.0.0 ou superior
+- Instalação WordPress Multisite
+- PHP 7.4 ou superior
+
+## Instalação {#installation}
+
+1. Carregue os ficheiros da extensão para `/wp-content/plugins/ultimate-multisite-multi-currency`
+2. Ative a extensão através do ecrã **Extensões** no WordPress (Ativar na rede)
+3. Navegue até **Ultimate Multisite → Multimoeda** para abrir o Dashboard de administração
+4. Adicione as moedas que pretende aceitar e configure o seu fornecedor de taxas de câmbio
+
+## Configuração {#configuration}
+
+### Dashboard de administração {#admin-dashboard}
+
+O Dashboard de administração de Multimoeda (**Ultimate Multisite → Multimoeda**) é o local central para:
+
+- Adicionar, ativar ou desativar moedas
+- Escolher um fornecedor de taxas de câmbio e atualizar taxas a pedido
+- Rever as taxas atuais de todas as moedas ativas
+- Definir taxas manuais quando os fornecedores automáticos não forem adequados
+
+### Fornecedores de taxas de câmbio {#exchange-rate-providers}
+
+| Fornecedor | Descrição |
+|---|---|
+| **ECB** | Banco Central Europeu — taxas diárias gratuitas para redes baseadas em EUR |
+| **Frankfurter** | API espelho ECB de código aberto — gratuita, sem chave de API necessária |
+| **Stripe** | Usa as taxas FX em tempo real da Stripe — requer uma integração Stripe ativa |
+| **Manual** | Introduz as taxas diretamente; sem chamadas a API externas |
+
+Selecione o seu fornecedor em **Ultimate Multisite → Multimoeda → Definições → Fornecedor de taxas de câmbio**. As taxas podem ser atualizadas manualmente a qualquer momento ou agendadas para atualização automática.
+
+### Substituições de preços por produto {#per-product-pricing-overrides}
+
+Quando a conversão automática não é suficientemente precisa, pode definir um preço exato para uma moeda específica em qualquer produto:
+
+1. Abra o editor de produto (**Ultimate Multisite → Produtos → Editar**)
+2. Desloque-se até à secção **Preços por moeda**
+3. Introduza o preço exato para cada moeda que pretende substituir
+4. Guarde o produto
+
+Os produtos sem substituição usam o preço convertido a partir da sua moeda base.
+
+### Campo de inscrição do seletor de moeda {#currency-selector-signup-field}
+
+O campo do seletor de moeda pode ser adicionado ao seu fluxo de inscrição/finalização da compra para que os clientes escolham a sua moeda preferida no registo:
+
+1. Vá a **Ultimate Multisite → Multimoeda → Definições**
+2. Ative **Mostrar seletor de moeda na inscrição**
+3. Opcionalmente, defina uma moeda predefinida ou deixe a geolocalização determinar o valor pré-selecionado
+
+A moeda selecionada é armazenada com a subscrição e usada para toda a faturação subsequente.
+
+### Deteção de moeda baseada em geolocalização {#geolocation-based-currency-detection}
+
+Quando a deteção por geolocalização está ativada, a extensão associa o país do visitante a uma moeda e pré-seleciona-a no campo do seletor de moeda. Para ativar:
+
+1. Vá a **Ultimate Multisite → Multimoeda → Definições**
+2. Ative **Detetar moeda a partir da localização do visitante**
+3. Associe países a moedas na tabela **Mapeamento de geolocalização**
+
+Se não existir nenhum mapeamento para o país de um visitante, a moeda base da rede é usada como alternativa.
+
+## Perguntas frequentes {#frequently-asked-questions}
+
+### O que acontece se um fornecedor de taxas de câmbio estiver indisponível? {#what-happens-if-an-exchange-rate-provider-is-unavailable}
+
+A extensão recorre às últimas taxas obtidas com sucesso. Se nunca tiverem sido obtidas taxas, recorre às taxas manuais que configurou. Recomenda-se configurar taxas manuais como rede de segurança.
+
+### Posso usar fornecedores diferentes para moedas diferentes? {#can-i-use-different-providers-for-different-currencies}
+
+Não — um fornecedor está ativo de cada vez para todas as moedas. Use **Manual** se precisar de controlo total sobre taxas individuais.
+
+### A geolocalização requer uma extensão separada? {#does-geolocation-require-a-separate-plugin}
+
+Não é necessária nenhuma extensão externa de geolocalização. A extensão usa a deteção de IP para país integrada do WordPress. Para maior precisão, um serviço de geolocalização dedicado pode ser integrado através dos hooks de filtro fornecidos.
+
+### As substituições por produto são aplicadas antes ou depois do imposto? {#are-per-product-overrides-applied-before-or-after-tax}
+
+As substituições por produto definem o preço antes de imposto na moeda de destino. O imposto é calculado por cima do preço de substituição usando a sua configuração fiscal existente.
+
+## Registo de alterações {#changelog}
+
+### Versão 1.0.0 — Lançada em 2026-04-02 {#version-100--released-on-2026-04-02}
+
+- Novo: Suporte multimoeda com conversão automática de taxas de câmbio
+- Novo: Substituições de preços por produto para preços exatos específicos por moeda
+- Novo: Campo de inscrição do seletor de moeda para o fluxo de finalização da compra
+- Novo: Fornecedores de taxas de câmbio: ECB, Frankfurter, Stripe e manual
+- Novo: Deteção de moeda baseada em geolocalização
+- Novo: Dashboard de administração para gerir moedas e taxas de câmbio
+- Correção: Dashboard mostrava sempre os preços na moeda base, independentemente da moeda selecionada

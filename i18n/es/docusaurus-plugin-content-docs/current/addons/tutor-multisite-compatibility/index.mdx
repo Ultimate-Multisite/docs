@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Tutor Multisite Compatibility
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
 
 Un plugin de WordPress que añade correcciones de compatibilidad para Tutor LMS en entornos multisite.
 
-## Descripción
+## Descripción {#description}
 
 Este plugin proporciona correcciones esenciales de compatibilidad para ejecutar Tutor LMS en redes multisite de WordPress. Gestiona la inscripción de usuarios, la administración de instructores, las limitaciones de cursos y otras funcionalidades específicas de multisite.
 
-## Características
+## Características {#features}
 
 - **Gestión de Tablas de Base de Datos**: Detecta automáticamente y crea tablas de Tutor LMS faltantes que fallan debido a restricciones de claves externas multisite
 - **Inscripción de Usuarios Multisite**: Manejadores AJAX personalizados para gestionar la inscripción de usuarios en sitios de la red
@@ -24,7 +24,7 @@ Este plugin proporciona correcciones esenciales de compatibilidad para ejecutar 
 - **Vistas Administrativas Personalizadas**: Lista de instructores y interfaz de gestión conscientes de multisite
 - **Herramientas Administrativas**: Interfaz de gestión de base de datos para administradores de la red y del sitio
 
-## Requisitos
+## Requisitos {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Este plugin proporciona correcciones esenciales de compatibilidad para ejecutar 
 - WordPress Multisite installation
 - Ultimate Multisite plugin (para la funcionalidad de limitaciones de cursos)
 
-## Instalación
+## Instalación {#installation}
 
 1. Sube los archivos del plugin a `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Asegúrate de que Tutor LMS esté instalado y activado
 3. Activa el plugin a través del menú 'Plugins' en WordPress
 4. El plugin se integrará automáticamente con Tutor LMS
 
-## Estructura de Archivos
+## Estructura de Archivos {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Funcionalidad Movida desde el Plugin MU
+## Funcionalidad Movida desde el Plugin MU {#functionality-moved-from-mu-plugin}
 
 Este plugin contiene funcionalidad que antes estaba en `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Este plugin contiene funcionalidad que antes estaba en `wp-content/mu-plugins/da
 - Manejo de inscripción de usuarios multisite
 - Visualización del ID de producto de curso
 
-## Gestión de Base de Datos
+## Gestión de Base de Datos {#database-management}
 
-### El Problema
+### El Problema {#the-problem}
 
 En entornos multisite de WordPress, la creación de tablas de Tutor LMS falla para tablas con restricciones de claves externas a la tabla de usuarios. Esto ocurre porque:
 
@@ -81,7 +81,7 @@ En entornos multisite de WordPress, la creación de tablas de Tutor LMS falla pa
 - Las claves externas hacen referencia a `wp_2_users` (que no existe)
 - La tabla real de usuarios es `wp_users` (compartida en toda la red)
 
-### La Solución
+### La Solución {#the-solution}
 
 Este plugin automáticamente:
 
@@ -89,13 +89,13 @@ Este plugin automáticamente:
 2. **Crea Tablas con Referencias Correctas**: Utiliza el nombre correcto de la tabla de usuarios (`wp_users` en multisite)
 3. **Gestiona Múltiples Escenarios**: Activación/rea activación del plugin, creación de nuevo sitio en la red, verificación manual de tablas a través de la interfaz administrativa
 
-### Tablas Afectadas
+### Tablas Afectadas {#affected-tables}
 
 - `tutor_coupon_usages` - Contiene una clave externa a la tabla de usuarios
 - `tutor_carts` - Contiene una clave externa a la tabla de usuarios
 - `tutor_notification_preferences` - Tabla de TutorPro con clave externa a la tabla de usuarios
 
-### Interfaz Administrativa
+### Interfaz Administrativa {#admin-interface}
 
 Accede a las herramientas de gestión de base de datos en:
 
@@ -109,6 +109,6 @@ La interfaz te permite:
 - Verificar la configuración de la base de datos
 - Ver información de estado detallada
 
-## Soporte
+## Soporte {#support}
 
 Este plugin está diseñado específicamente para la plataforma KursoPro. Para soporte técnico, contacta al equipo de desarrollo.

@@ -3,7 +3,7 @@ title: తరచుగా అడిగే ప్రశ్నలు
 sidebar_position: 18
 _i18n_hash: 2aae003605ca306aebc782d92f605d7c
 ---
-# ଅନୁଭବ କରାଯାଉଥିବା ପ୍ରଶ୍ନ (Frequently Asked Questions)
+# ଅନୁଭବ କରାଯାଉଥିବା ପ୍ରଶ୍ନ (Frequently Asked Questions) {#frequently-asked-questions}
 
 ଏଠାରେ ସେହି **ଅନୁଭବ କରାଯାଉଥିବା ପ୍ରଶ୍ନଗୁଡ଼ିକ ଦିଆଗଲା** ଯାହା ସମର୍ଥନ ଅନୁରୋଧ ମଧ୍ୟରେ ଅନେକ ଥରେ ଆସିଥାଏ।
 

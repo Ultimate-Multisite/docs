@@ -3,14 +3,14 @@ title: 'Læoni 11: Finna viðskiptavini'
 sidebar_position: 12
 _i18n_hash: fc2aa274dbe11c72dff25b9276e5d583
 ---
-# Læoni 11: Finna viðskiptavini
+# Læoni 11: Finna viðskiptavini {#lesson-11-finding-customers}
 
 Ein glínn platta með engum viðskiptavinum er bara hlutverks. Þessi læonið hefur að segja þér hvernig á að ná viðskiptavinum í sérstakri hluti – stefnur sem virka sérstaklega þegar þú ert að foka á eina brúðarhlut.
 
-## Hvar Við Stod
+## Hvar Við Stod {#where-we-left-off}
 FitSite er live. En nú þurfum við eigendur træninga til að finna hana og skrá sig.
 
-## Hvað gerir sérhæfð námsins skilningu aðeins annleiknu?
+## Hvað gerir sérhæfð námsins skilningu aðeins annleiknu? {#why-niche-acquisition-is-different}
 
 Þegar þú sölur fyrir alla, kveðja þú í uppættröku á óvæntum markaði. Þegar þú sölur fyrir sérhæfð hluti, hefurð þú möguleika:
 
@@ -18,26 +18,26 @@ FitSite er live. En nú þurfum við eigendur træninga til að finna hana og sk
 - **Mótunni þín er áhrifsvæðandi strax** – „vísindaleg net fyrir træninga“ stoppar gymmiðilmann mitt í skrópum
 - **Viðskiptavini sem tilgangur eru að aukast** – eigendur træninga vita um övrantar eigendur træninga
 
-## Kanal 1: Árangursmiðju (Direct Outreach)
+## Kanal 1: Árangursmiðju (Direct Outreach) {#channel-1-direct-outreach}
 
 Hvern er hraðasta leið í fyrsta viðskiptavinum þínum beint, persónulegt tengsl.
 
-### Finna möguleika
+### Finna möguleika {#find-prospects}
 - Leita á Google Maps eftir træninga, gymmi og persónulega trænjum í svæði þínu
 - Bestuðu yfir þeim núverandi netasíður (eða skrifu niður það að þau ekki hafa ein)
 - Samla tengslupplýsingar frá Google Business profiles eða sosialum netum þeirra
 
-### Sjáðu núverandi tilstand þeirra
+### Sjáðu núverandi tilstand þeirra {#evaluate-their-current-situation}
 Fyrir hverjum möguleika, skrifu niður:
 
 - **Engin netasíða**: Starkt möguleiki – þau þurfa það sem þú býður í
 - **Ógæð netasíða**: Starkt möguleiki – sýðu þeim hvernig betri valinn á að sjá út
 - **Góð netasíða**: Svakt möguleiki – þau hafa þegar laust þennan hugmynd
 
-### Tengjast við þeim
+### Tengjast við þeim {#make-contact}
 Sendu persónulegt tölvupóst eða melding:
 
-## Kanal 2: Niche Samfélög (Niche Communities)
+## Kanal 2: Niche Samfélög (Niche Communities) {#channel-2-niche-communities}
 
 Eigendómstjórar fítness staðna mæta í sérstökum staðnum netinu:
 
@@ -46,7 +46,7 @@ Eigendómstjórar fítness staðna mæta í sérstökum staðnum netinu:
 - **Branndisforum** og viðskiptaforn
 - **LinkedIn grupper** fyrir fítness fagfólk
 
-### Hvernig Skilast Fram? (How to Participate)
+### Hvernig Skilast Fram? (How to Participate) {#how-to-participate}
 
 Skilist ekki og byrjaðu strax með það að sýna fram hugverfið. Þarfðu:
 
@@ -55,7 +55,7 @@ Skilist ekki og byrjaðu strax með það að sýna fram hugverfið. Þarfðu:
 3. **Deila þegar það er viðeigandi** -- þegar fólk spyr um vísbendingar, deila plattforma þinni naturgildi
 4. **Skapa gagnlegt innihald** -- skrifa um "hvað gerir glæpni fítness staðsins til að vera hönnuð" sem naturgildi leiða í plattforma þína
 
-## Kanal 3: Innihaldstækni (Content Marketing)
+## Kanal 3: Innihaldstækni (Content Marketing) {#channel-3-content-marketing}
 
 Skapa innihald sem eigendur fítness staðna leita eftir:
 
@@ -64,7 +64,7 @@ Skapa innihald sem eigendur fítness staðna leita eftir:
 - "Þarf persónuþjónustuþjónustu netisíða?"
 - "Hvernig sýna einstaklingaferðir þín á netinu"
 
-## Kanal 4: Samningar
+## Kanal 4: Samningar {#channel-4-partnerships}
 
 Samstarfiðu við fyrirtæki sem þjónna fitness studio:
 
@@ -75,7 +75,7 @@ Samstarfiðu við fyrirtæki sem þjónna fitness studio:
 
 Bítaðu til að bjóða fram tilgangurafíllingum eða gjensamrætur. [AffiliateWP addon](/addons/affiliatewp) getur hjálpað þér við að sett upp formlegt tilgangurafíllingarnetverk.
 
-## Kanal 5: Brúkildar fyrir brúkildar
+## Kanal 5: Brúkildar fyrir brúkildar {#channel-5-industry-events}
 
 Brúkildar í fitness hlutum setja þig fyrir framan hundruð mögulega viðskiptavina:
 
@@ -86,7 +86,7 @@ Brúkildar í fitness hlutum setja þig fyrir framan hundruð mögulega viðskip
 
 Þú þarft ekki stórt fjármagn. Það að þú vitnar sem þáttakarl og heldur samræður um það sem þú gerir getur skapað viðskiptavini.
 
-## Kanal 6: Samþættar staðlar
+## Kanal 6: Samþættar staðlar {#channel-6-showcase-sites}
 
 Best markvarp fyrir þig er staðlar fyrrra viðskiptavina þín. Með leyfi:
 
@@ -96,7 +96,7 @@ Fá til viðskiptavli á markaðarútgöngu þinni
 - Fá hugsanlega viðskiptavli til að skrifa hugleiðingar (testimonials)
 - Uppfordu viðskiptavli til að nefnast FitSite þegar þeir spyrja um síðuna sína
 
-## Uppsetning samstarfssækja
+## Uppsetning samstarfssækja {#setting-up-a-referral-program}
 
 Orð í mun er sterkasta kanál fyrir sérhæfðir markaðarútgöngu. Formlegðu það:
 
@@ -104,7 +104,7 @@ Orð í mun er sterkasta kanál fyrir sérhæfðir markaðarútgöngu. Formlegð
 2. Búið til áhuga fyrir núverandi viðskiptavli fyrir sækja (eins og ein mánuð frelst, reikningaútbetun, etc.)
 3. Geri það einfalt – gefðu þeim sækja-link og einfalda texta sem þeir geta sendi
 
-## Fylgja eftir því hvað virkar
+## Fylgja eftir því hvað virkar {#tracking-what-works}
 
 Fyrir hvert kanál fylgja eftir:
 

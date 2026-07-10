@@ -3,15 +3,15 @@ title: Orchestrarea Site Builder v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# Orchestrarea Site-ului cu Constructorul v2
+# Orchestrarea Site-ului cu Constructorul v2 {#site-builder-orchestration-v2}
 
 Site Builder Orchestration v2 (introducție în Gratis AI Agent v1.4.0) este motorul care alimentează crearea de site-uri web cu mai multe etape. Când îi ceri agentului să „construiască un site pentru un restaurant” sau să „creeze un portofoliu cu un blog”, orchestratorul descompune acest obiectiv de nivel înalt într-un **plan** structurat, descoperă plugin-urile necesare pentru a-l îndeplini, execută fiecare pas în ordine, urmărește progresul și se recuperează autonom de erori.
 
 ---
 
-## Cum Funcționează
+## Cum Funcționează {#how-it-works}
 
-### 1. Generarea Planului
+### 1. Generarea Planului {#1-plan-generation}
 
 Când agentul primește o instrucțiune de construire a unui site, apelează abilitatea `create_site_plan` pentru a produce un **plan de site** în format JSON. Planul descrie:
 
@@ -61,7 +61,7 @@ Când agentul primește o instrucțiune de construire a unui site, apelează abi
 }
 ```
 
-### 2. Descoperirea Plugin-urilor
+### 2. Descoperirea Plugin-urilor {#2-plugin-discovery}
 
 Înainte de a începe execuția, orchestratorul scanează `plugin_requirements` din plan și verifică ce plugin-uri sunt deja active. Pentru plugin-urile lipsă, el:
 
@@ -71,7 +71,7 @@ Când agentul primește o instrucțiune de construire a unui site, apelează abi
 
 Eșecurile de descoperire a plugin-urilor nu sunt fatale — orchestratorul marchează pașii afectați ca `skipped` (sărit) și continuă cu restul planului.
 
-### 3. Execuția Planului
+### 3. Execuția Planului {#3-plan-execution}
 
 Orchestratorul apelează `execute_site_plan` cu ID-ul planului. Execuția se desfășoară fază cu fază, pas cu pas:
 
@@ -79,7 +79,7 @@ Orchestratorul apelează `execute_site_plan` cu ID-ul planului. Execuția se des
 - **Pași paraleli** — pașii din aceeași fază care nu au dependențe între ei sunt trimși în mod concomitent atunci când este setat flag-ul `parallel`.
 - **Timeout pas** — fiecare pas are un timeout individual (implicit: setarea `Ability Timeout`). Un pas care expiră este marcat ca `failed` (eșuat) și planul continuă.
 
-### 4. Urmărirea Progresului
+### 4. Urmărirea Progresului {#4-progress-tracking}
 
 Apelează `get_plan_progress` în orice moment pentru a verifica starea execuției:
 
@@ -104,7 +104,7 @@ Utilizatorii WP-CLI pot monitoriza progresul cu:
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. Recuperarea de Erori
+### 5. Recuperarea de Erori {#5-error-recovery}
 
 Când un pas eșuează, orchestratorul verifică dacă există un pas de **rezervă (fallback)** definit în plan:
 
@@ -115,9 +115,9 @@ Agentul raportează toate eșecurile în rezumatul final al planului și poate s
 
 ---
 
-## Abilitățile Planului de Site
+## Abilitățile Planului de Site {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 Generează un plan de site structurat dintr-o descriere de obiectiv în limbaj natural.
 
@@ -134,7 +134,7 @@ Generează un plan de site structurat dintr-o descriere de obiectiv în limbaj n
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 Începe executarea unui plan de site generat anterior.
 
@@ -150,7 +150,7 @@ Generează un plan de site structurat dintr-o descriere de obiectiv în limbaj n
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 Returnează starea curentă de execuție a unui plan de site.
 
@@ -164,7 +164,7 @@ Returnează starea curentă de execuție a unui plan de site.
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 Rezolvă manual un pas eșuat și reia execuția planului de la pasul următor. Folosește acest lucru când recuperarea automată nu a fost posibilă și vrei să intervii.
 
@@ -180,7 +180,7 @@ Rezolvă manual un pas eșuat și reia execuția planului de la pasul următor. 
 
 ---
 
-## Compararea v1 și v2
+## Compararea v1 și v2 {#comparing-v1-and-v2}
 
 | Funcționalitate | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ Rezolvă manual un pas eșuat și reia execuția planului de la pasul următor. 
 
 ---
 
-## Comenzi Plan WP-CLI
+## Comenzi Plan WP-CLI {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 Generează un plan de site dintr-o descriere de obiectiv.
 
@@ -205,7 +205,7 @@ Generează un plan de site dintr-o descriere de obiectiv.
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 Execută un plan generat anterior.
 
@@ -213,7 +213,7 @@ Execută un plan generat anterior.
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 Arată progresul curent pentru un plan în execuție sau completat.
 
@@ -221,7 +221,7 @@ Arată progresul curent pentru un plan în execuție sau completat.
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 Listează toate planurile de site (în așteptare, în progres și completate).
 
@@ -229,7 +229,7 @@ Listează toate planurile de site (în așteptare, în progres și completate).
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 Resetează un plan eșuat la starea `pending` (în așteptare) pentru a putea fi reexecutat de la început.
 

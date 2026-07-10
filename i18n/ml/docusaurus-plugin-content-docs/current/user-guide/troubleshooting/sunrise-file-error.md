@@ -3,7 +3,7 @@ title: Sunrise ഫയൽ പിശക്
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise ഫയൽ ഇൻസ്റ്റാൾ ചെയ്യുമ്പോഴുള്ള പിശക്
+# Sunrise ഫയൽ ഇൻസ്റ്റാൾ ചെയ്യുമ്പോഴുള്ള പിശക് {#error-installing-the-sunrise-file}
 
 sunrise.php ഫയൽ WordPress ബൂട്ട്‌സ്ട്രാപ്പ് ചെയ്യുമ്പോൾ തിരയുന്ന ഒരു പ്രത്യേക ഫയലാണ്. WordPress-ന് sunrise.php ഫയൽ കണ്ടെത്താൻ കഴിയണമെങ്കിൽ, അത് **wp-content ഫോൾഡറിനുള്ളിൽ** സ്ഥിതി ചെയ്യണം.
 

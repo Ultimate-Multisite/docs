@@ -3,7 +3,7 @@ title: โค้ดสนิปเพต
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Code Snippets สำหรับ v2
+# Code Snippets สำหรับ v2 {#code-snippets-for-v2}
 
 โดยทั่วไปแล้ว code snippets สำหรับ **WordPress** ใช้เพื่อทำงานบางอย่างที่อาจต้องใช้ปลั๊กอินขนาดเล็กแยกต่างหาก code snippets เหล่านี้จะวางไว้ในไฟล์หลักของ WordPress หรือไฟล์ธีม (โดยทั่วไปคือไฟล์ functions.php ของธีมที่คุณใช้) หรือสามารถใช้เป็น MU plugin ได้
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**การแก้ไขปัญหา CORS กับ Font-Icons ในโดเมนที่แมปแล้ว**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## การเปลี่ยนตำแหน่งของรายการเมนู Account
+## การเปลี่ยนตำแหน่งของรายการเมนู Account {#changing-the-position-of-the-account-menu-item}
 
 หากต้องการเปลี่ยนตำแหน่งของรายการเมนู Account บน Dashboard ของลูกค้า เพียงเพิ่ม code snippet ต่อไปนี้ลงใน functions.php ของธีมที่ใช้งานอยู่บนเว็บไซต์หลักของคุณ คุณยังสามารถวาง snippet นี้ไว้ใน mu-plugins หรือปลั๊กอินที่คุณสร้างเองได้
 
 add_filter('wu_my_account_menu_position', function() { return 10; // ปรับค่านี้เพื่อวางเมนูในตำแหน่งที่ต้องการ
 
-## วิธีตรวจสอบว่าผู้ใช้อยู่ภายใต้แพลนที่กำหนดและ/หรือมีการสมัครสมาชิกที่ใช้งานอยู่
+## วิธีตรวจสอบว่าผู้ใช้อยู่ภายใต้แพลนที่กำหนดและ/หรือมีการสมัครสมาชิกที่ใช้งานอยู่ {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 ในฐานะ network admin คุณอาจต้องสร้างฟังก์ชันที่กำหนดเองเพื่อทำงานพื้นฐานหรือทำให้บริการ/ฟีเจอร์พร้อมใช้งานสำหรับกลุ่มสมาชิกหรือผู้ใช้ปลายทางที่เลือกไว้ โดยอิงจากสถานะการสมัครสมาชิกและแพลนที่พวกเขาสมัครไว้
 
@@ -47,8 +47,8 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ![รายการ Products แสดง plan IDs](/img/admin/products-list.png)
 
-## การแก้ไขปัญหา CORS กับ Font-Icons ในโดเมนที่แมปแล้ว
-## การแก้ไขปัญหา CORS กับ Font-Icons ในโดเมนที่แมปแล้ว
+## การแก้ไขปัญหา CORS กับ Font-Icons ในโดเมนที่แมปแล้ว {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## การแก้ไขปัญหา CORS กับ Font-Icons ในโดเมนที่แมปแล้ว {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 หลังจากแมปโดเมนไปยังเว็บไซต์ย่อย คุณอาจพบว่าเว็บไซต์มีปัญหาในการโหลดฟอนต์ที่กำหนดเอง ซึ่งเกิดจากการบล็อก cross-origin ในการตั้งค่าเซิร์ฟเวอร์ของคุณ
 
@@ -56,13 +56,13 @@ $user_id = get_current_user_id();$plan_id = 50;if (wu_has_plan($user_id, $plan_i
 
 ด้านล่างนี้คือ code snippets เพื่อแก้ไขปัญหาสำหรับ Apache และ NGINX การเปลี่ยนแปลงเหล่านี้ต้องใช้ความรู้ขั้นสูงเกี่ยวกับไฟล์การตั้งค่าเซิร์ฟเวอร์ (ไฟล์ .htaccess และไฟล์ config ของ NGINX) หากคุณไม่สะดวกที่จะทำการเปลี่ยนแปลงเหล่านี้ด้วยตัวเอง ให้ส่งหน้านี้ไปยังทีมสนับสนุนของผู้ให้บริการโฮสติ้งเมื่อขอความช่วยเหลือ
 
-### Apache
+### Apache {#apache}
 
 ในไฟล์ .htaccess ของคุณ ให้เพิ่ม:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 ในไฟล์ server config ของคุณ (ตำแหน่งจะแตกต่างกันไปตามแต่ละเซิร์ฟเวอร์) ให้เพิ่ม:
 

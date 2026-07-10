@@ -3,13 +3,13 @@ title: Pānga Whakawātea me DNS o te Wheneaha
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Whakamana Whakamahi me Kaha DNS o te Whene
+# Whakamana Whakamahi me Kaha DNS o te Whene {#checkout-field-and-customer-dns-management}
 
-## Te pāngere Domain Selection checkout field
+## Te pāngere Domain Selection checkout field {#the-domain-selection-checkout-field}
 
 He mea he pāngere i te checkout he tino whai ake ana ki aha te hoki o te domain o te wāhi. Whakawhana i **Domain Selection** i tō fōmā checkout kia taea ai ngā mea katoa e ngā mea hei pēke i te domain.
 
-### Whakau i te pāngere i te fōmā checkout
+### Whakau i te pāngere i te fōmā checkout {#adding-the-field-to-a-checkout-form}
 
 1. Pāinga ki **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Whakaaro au he fōmā checkout, pe āwhi ana koe i te whakatō i tō fōmā checkout
@@ -18,7 +18,7 @@ He mea he pāngere i te checkout he tino whai ake ana ki aha te hoki o te domain
 5. Whakawhana i ngā option o te pāngere (pāpā i roto)
 6. Whakawhana i te fōmā
 
-### Option o te pāngere
+### Option o te pāngere {#field-options}
 
 **Domain modes** — Whakarite i ngā tab he whakaatu ki te koutou. He taea ai whakamahi ana ko ngā mode katoa, he taea ai whakamutu ana ko ngā mode katoa:
 
@@ -32,7 +32,7 @@ He mea he pāngere i te checkout he tino whai ake ana ki aha te hoki o te domain
 
 **Domain product** — He kaha ai koe ki te whakatō tēnei pāngere ki te product domain-specific he tino tika ana. Ae rawa he set, ko e kore e whakamaoritia ana te addon he matching product based on the TLD he whakatere ana te koutou.
 
-### Pāngere o te whakapā i te whaiaro (Registrant contact fields)
+### Pāngere o te whakapā i te whaiaro (Registrant contact fields) {#registrant-contact-fields}
 
 I roto i te wā he whakatere koe i te tab **Register New Domain**, ka whero te fōmā checkout i ngā pāngere o te whakapā i te whaiaro:
 
@@ -43,11 +43,11 @@ I roto i te wā he whakatere koe i te tab **Register New Domain**, ka whero te f
 
 Kua tino pēnei e pēnei ake ana e ngā registrar katoa me te whakamārama i te mea kua oti te whakamārama i te API registration. Ka whakamaoritia ngā nomurau pūtahe (phone numbers) ki te format hoatoa o au ratoa (international format) `+CC.NNN` e whai ake nei e whakaaakitanga o ngā registrar.
 
-### URL o te wāhi i roto i te site (Auto-generated site URL)
+### URL o te wāhi i roto i te site (Auto-generated site URL) {#auto-generated-site-url}
 
 I take i te mea ka whakatere koe he mea, ka whakamaoritia te URL o te wāhi i roto i te site (site URL field) anō ana i te domain e whai ake. Kaau e hiahia ngā mea katoa ki te whakatira i te URL i roto i te fēneke.
 
-### Aho whakamua o te whakatira (Search behaviour)
+### Aho whakamua o te whakatira (Search behaviour) {#search-behaviour}
 
 - Ka whakamaoritia te whakahirahira o te domain i te wā real-time me AJAX i roto i te wā ka whakatira koe
 - Ka whakaataki ngā suggestion TLD alternative (alternative top-level domains) i roto i te wā ka pēnei te domain e whai ake ana ka pēnei te mea e pēnei te domain e whai ake ana.
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Kaha o te whakamaoritia DNS (Customer DNS management)
+## Kaha o te whakamaoritia DNS (Customer DNS management) {#customer-dns-management}
 
 Ka taea e ngā mea katoa te whakamaoritia i ngā record DNS mō ngā domain kua whakatere koe noa i te **My Account** page, i runga i te whakataki o tō domain.
 
-### Ngā wāhi o te record (Supported record types)
+### Ngā wāhi o te record (Supported record types) {#supported-record-types}
 
 | Wāhi | Whakarite |
 |---|---|
@@ -91,13 +91,13 @@ Ka taea e ngā mea katoa te whakamaoritia i ngā record DNS mō ngā domain kua 
 | **MX** | Ka whakamaoritia te mail exchange server |
 | **TXT** | Ka puta SPF, DMARC, verification, ko ngā record text kia oti |
 
-### He aha ngā whai whakaaro (providers) ka whakatere DNS?
+### He aha ngā whai whakaaro (providers) ka whakatere DNS? {#which-providers-support-dns-management}
 
 Kia ora! He tino pai tēnei whakamārama mō te whakahaere o DNS.
 
 He whānau o mga wahi (records) DNS, he tino kaha ana i te **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica**, me **Openprovider**. Mō domain o **Hostinger**, e taea ai te whakapuaki i ngā nameservers mō te whakamua o te Domain Seller. Ko ngā wahi DNS mō ngā domain o whai hoahoa (hosted domains) e whakahaere ana roto i te core Hostinger domain-mapping integration. Mō **Namecheap**, **GoDaddy**, me **NameSilo** domain, e whakaatu ana ngā statusi me ngā wā o te whae, engari me whakahaere i ngā DNS mōhanga i te panel o te registrar tekau.
 
-### Ngā wahi DNS pēnei (Default DNS records)
+### Ngā wahi DNS pēnei (Default DNS records) {#default-dns-records}
 
 E taea ai koe te whakarite ngā wahi DNS pēnei (default DNS records) e whakamahia ana automatically i roto i te wā o te whai hoahoa domain. Pāpāke ki **Settings › Domain Seller › Default DNS Records**.
 
@@ -120,6 +120,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: Whakarite me whakawhiti i ngā DNS
+### Admin: Whakarite me whakawhiti i ngā DNS {#admin-viewing-and-editing-dns}
 
 E taea ai mō ngā admin o te whānau (network admins) te whakaahua me te whakawhiti i ngā wahi DNS mō ahau domain o te customer, i runga i te manawa o te whai hoahoa domain i **Network Admin › Ultimate Multisite › Domains**.

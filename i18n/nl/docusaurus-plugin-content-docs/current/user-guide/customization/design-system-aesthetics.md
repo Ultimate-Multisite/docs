@@ -3,11 +3,11 @@ title: Design System Esthetiek Vaardigheid
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Esthetiek Vaardigheid
+# Design System Esthetiek Vaardigheid {#design-system-aesthetics-skill}
 
 De **Design System Esthetiek vaardigheid** is een gestructureerde aanpak om de visuele identiteit van uw site te verfijnen. Het helpt u consistente beslissingen te nemen over typografie, kleur, witruimte en bewegingstokens die uw design system definiëren.
 
-## Wat is Design System Esthetiek?
+## Wat is Design System Esthetiek? {#what-is-design-system-aesthetics}
 
 Design System Esthetiek is een gestructureerde vaardigheid die de volgende onderdelen behandelt:
 
@@ -20,9 +20,9 @@ Design System Esthetiek is een gestructureerde vaardigheid die de volgende onder
 
 Deze beslissingen worden vastgelegd in het `theme.json` bestand van uw thema, wat zorgt voor een samenhangend visueel systeem.
 
-## Waarom Design System Esthetiek gebruiken?
+## Waarom Design System Esthetiek gebruiken? {#why-use-design-system-aesthetics}
 
-### Consistentie
+### Consistentie {#consistency}
 
 Een design system zorgt ervoor dat:
 
@@ -31,7 +31,7 @@ Een design system zorgt ervoor dat:
 - Witruimte een voorspelbaar patroon volgt
 - Animaties eenheid voelen
 
-### Efficiëntie
+### Efficiëntie {#efficiency}
 
 In plaats van designbeslissingen pagina voor pagina te nemen, doet u het volgende:
 
@@ -39,7 +39,7 @@ In plaats van designbeslissingen pagina voor pagina te nemen, doet u het volgend
 - Passt ze overal toe
 - Updateert globaal door één waarde te wijzigen
 
-### Flexibiliteit
+### Flexibiliteit {#flexibility}
 
 U kunt:
 
@@ -47,9 +47,9 @@ U kunt:
 - Experimenteren met verschillende esthetieken
 - Merkconsistentie behouden terwijl u evolueert
 
-## Het activeren van de Design System Esthetiek Vaardigheid
+## Het activeren van de Design System Esthetiek Vaardigheid {#triggering-the-design-system-aesthetics-skill}
 
-### Handmatige activatie
+### Handmatige activatie {#manual-activation}
 
 U kunt de vaardigheid op elk moment starten:
 
@@ -69,7 +69,7 @@ of
 "Guide me through design system decisions"
 ```
 
-### Automatische suggesties
+### Automatische suggesties {#automatic-suggestions}
 
 Agents kunnen de vaardigheid suggereren wanneer u:
 
@@ -78,9 +78,9 @@ Agents kunnen de vaardigheid suggereren wanneer u:
 - De visuele consistentie wilt verbeteren
 - Voorbereidt op de lancering van uw site
 
-## Het Design System Esthetiek Proces
+## Het Design System Esthetiek Proces {#the-design-system-aesthetics-process}
 
-### Stap 1: Typografie
+### Stap 1: Typografie {#step-1-typography}
 
 De agent vraagt naar uw lettertypekeuzes:
 
@@ -110,7 +110,7 @@ De agent definieert vervolgens:
 - **Gewicht schaal (Weight scale)**: Lettertypegewichten (regular, medium, bold, enz.)
 - **Regelafstand (Line height)**: Afstand tussen regels voor leesbaarheid
 
-### Stap 2: Kleurenpalet
+### Stap 2: Kleurenpalet {#step-2-color-palette}
 
 ```
 Laten we uw kleurenpalet definiëren.
@@ -140,7 +140,7 @@ De agent creëert een compleet palet, inclusief:
 - Semantische kleuren (succes, waarschuwing, fout)
 - Hover- en actieve statussen
 
-### Stap 3: Witruimte (Spacing)
+### Stap 3: Witruimte (Spacing) {#step-3-spacing}
 
 ```
 Hoeveel ademruimte wilt u?
@@ -162,7 +162,7 @@ De agent definieert witruimte-tokens:
 - Schaal: xs, sm, md, lg, xl, 2xl
 - Specifieke waarden voor padding, marge, gap
 
-### Stap 4: Grenzen en Schaduwen
+### Stap 4: Grenzen en Schaduwen {#step-4-borders-and-shadows}
 
 ```
 Visuele diepte en definitie:
@@ -185,7 +185,7 @@ De agent creëert:
 - Schaduwtokens voor elevatieniveaus
 - Border breedte tokens
 
-### Stap 5: Beweging en Animatie
+### Stap 5: Beweging en Animatie {#step-5-motion-and-animation}
 
 ```
 Hoe moet uw site aanvoelen bij interactie?
@@ -207,9 +207,9 @@ De agent definieert:
 - Easing functies (ease-in, ease-out, ease-in-out)
 - Animatie keyframes voor veelvoorkomende interacties
 
-## Design System Esthetiek Toepassen
+## Design System Esthetiek Toepassen {#applying-design-system-aesthetics}
 
-### Automatische toepassing
+### Automatische toepassing {#automatic-application}
 
 Nadat u de vaardigheid heeft voltooid, doet de agent:
 
@@ -218,7 +218,7 @@ Nadat u de vaardigheid heeft voltooid, doet de agent:
 3. Genereert blokstijlen opnieuw om overeen te komen met het nieuwe systeem
 4. Activeert het bijgewerkte thema
 
-### Handmatige toepassing
+### Handmatige toepassing {#manual-application}
 
 U kunt ook `theme.json` direct bewerken:
 
@@ -257,9 +257,9 @@ U kunt ook `theme.json` direct bewerken:
 }
 ```
 
-## Uw Design System Bekijken
+## Uw Design System Bekijken {#viewing-your-design-system}
 
-### Vraag de Agent
+### Vraag de Agent {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ of
 
 De agent toont uw typografie, kleuren, witruimte en andere tokens.
 
-### Bekijk theme.json
+### Bekijk theme.json {#view-themejson}
 
 Open `/wp-content/themes/[theme-name]/theme.json` in een teksteditor om de ruwe token-definities te zien.
 
-## Uw Design System Bijwerken
+## Uw Design System Bijwerken {#updating-your-design-system}
 
-### Snelle updates
+### Snelle updates {#quick-updates}
 
 Vraag de agent om specifieke wijzigingen:
 
@@ -299,7 +299,7 @@ of
 "Change the heading font to a serif"
 ```
 
-### Volledig herontwerp
+### Volledig herontwerp {#full-redesign}
 
 Voer de Design System Esthetiek vaardigheid opnieuw uit:
 
@@ -309,7 +309,7 @@ Voer de Design System Esthetiek vaardigheid opnieuw uit:
 
 Dit begeleidt u opnieuw door alle beslissingen, beginnend met uw huidige waarden.
 
-### Partiële updates
+### Partiële updates {#partial-updates}
 
 Update specifieke aspecten:
 
@@ -317,15 +317,15 @@ Update specifieke aspecten:
 "Just update the color palette, keep everything else"
 ```
 
-## Best Practices voor Design Systemen
+## Best Practices voor Design Systemen {#design-system-best-practices}
 
-### Consistentie
+### Consistentie {#consistency-1}
 
 - Gebruik overal dezelfde tokens
 - Creëer geen eenmalige kleuren of groottes
 - Verwijs naar tokens in plaats van waarden hard te coderen
 
-### Naamgeving
+### Naamgeving {#naming}
 
 Gebruik duidelijke, semantische namen:
 
@@ -335,7 +335,7 @@ Gebruik duidelijke, semantische namen:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Schaalbaarheid
+### Schaalbaarheid {#scalability}
 
 Ontwerp uw systeem om te kunnen schalen:
 
@@ -343,7 +343,7 @@ Ontwerp uw systeem om te kunnen schalen:
 - Creëer schalen (xs, sm, md, lg, xl) in plaats van willekeurige waarden
 - Plan voor toekomstige toevoegingen
 
-### Documentatie
+### Documentatie {#documentation}
 
 Documenteer uw design system:
 
@@ -351,9 +351,9 @@ Documenteer uw design system:
 - Wanneer elk token te gebruiken
 - Uitzonderingen en randgevallen
 
-## Veelvoorkomende Design System Patronen
+## Veelvoorkomende Design System Patronen {#common-design-system-patterns}
 
-### Modern Minimalistisch
+### Modern Minimalistisch {#modern-minimalist}
 
 - Sans-serif typografie (Inter, Helvetica)
 - Beperkt kleurenpalet (2-3 kleuren)
@@ -361,7 +361,7 @@ Documenteer uw design system:
 - Subtiele schaduwen
 - Vloeiende, snelle animaties
 
-### Warm en Vriendelijk
+### Warm en Vriendelijk {#warm-and-friendly}
 
 - Mix van serif en sans-serif
 - Warme kleurenpalet (oranje, warme grijstinten)
@@ -369,7 +369,7 @@ Documenteer uw design system:
 - Zachte schaduwen
 - Speelse animaties
 
-### Professioneel Corporatief
+### Professioneel Corporatief {#professional-corporate}
 
 - Strakke sans-serif (Roboto, Open Sans)
 - Neutraal palet met accentkleur
@@ -377,7 +377,7 @@ Documenteer uw design system:
 - Minimale schaduwen
 - Subtiele overgangen
 
-### Creatief en Krachtig
+### Creatief en Krachtig {#creative-and-bold}
 
 - Opvallende typografie
 - Krachtig kleurenpalet
@@ -385,7 +385,7 @@ Documenteer uw design system:
 - Sterke schaduwen
 - Opvallende animaties
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
 **Mijn design system wijzigingen worden niet getoond**
 - Wis uw browsercache
@@ -403,7 +403,7 @@ Documenteer uw design system:
 - Bewerk handmatig `theme.json` naar eerdere waarden
 - Voer de vaardigheid opnieuw uit met andere keuzes
 
-## Volgende Stappen
+## Volgende Stappen {#next-steps}
 
 Nadat u uw design system heeft gedefinieerd:
 

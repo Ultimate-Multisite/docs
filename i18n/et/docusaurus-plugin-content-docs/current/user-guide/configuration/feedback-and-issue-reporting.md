@@ -3,11 +3,11 @@ title: Kliendifeedback ja probleemide raportimine
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Klientide annused ja probleemide raportimine
+# Klientide annused ja probleemide raportimine {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 on lisatud sisemine süsteem, mis võimaldab kasutajatel endiselt esitada tagasiannutusi ja raportida probleeme otseselt kesksechatina. See süsteem hõlmab nõusoleku haldamist, automaatset raportimendist ja AI-assistitud triagimist backendi tasemel.
 
-## Peale-tagi nupp (Thumbs-Down Button)
+## Peale-tagi nupp (Thumbs-Down Button) {#thumbs-down-button}
 
 AI-assistentil saadud iga sõnumi kõrval on näha **peale-tagi** (👎) nupp. Kui kasutaja seda klõpsab, saab ta märida vastust ebavastuna või väärjana.
 
@@ -15,7 +15,7 @@ AI-assistentil saadud iga sõnumi kõrval on näha **peale-tagi** (👎) nupp. K
 - Klõpsamine avab **Tagasiannutuse nõusoleku modaali** (Feedback Consent Modal).
 - Tagasiannutus on seotud kesksekonniga ja konkreetse sõnumiga.
 
-## Tagasiannutuse nõusoleku modaal (Feedback Consent Modal)
+## Tagasiannutuse nõusoleku modaal (Feedback Consent Modal) {#feedback-consent-modal}
 
 Kui kasutaja klõpsab peale-tagi nuppu, ilmub enne seda, kui märgistatakse edastatud infot. Modaali:
 
@@ -26,13 +26,13 @@ Kui kasutaja klõpsab peale-tagi nuppu, ilmub enne seda, kui märgistatakse edas
 
 Tagasiannutusi ei registreeru enne kui kasutaja kinnitab seda otseselt.
 
-## Automaatne tagasiannutusbanneri (Auto-Prompt Feedback Banner)
+## Automaatne tagasiannutusbanneri (Auto-Prompt Feedback Banner) {#auto-prompt-feedback-banner}
 
 Konversatsiooni lõpule jäädes võib assistent näidata **automaatset tagasiannutuse bannerit** – see on mittehäirelik sõnum, mis küsib, kas sessioon oli kasulik.
 
 See banner ilmub automaatselt konversatsiooni pikkuse ja tulemuse algoritmide põhjal. See linkib sama tagasiannutusvoolu nagu peale-tagi nupp. Kasutajad võivad bannerit tühistada ilma tagasiannutust antamata.
 
-## /report-issue slash command
+## /report-issue slash command {#report-issue-slash-command}
 
 Kasutajad võivad tagasiannutusvoolu käivitada otseselt kirjutades chatikku `/report-issue`. See käsk:
 
@@ -42,7 +42,7 @@ Käitlejad saavad lisate üksikasjuid esitamiseks enne esitamist.
 
 `/report-issue` käsk on saadaval kõigis jutustest (inline, lühikese väljakit, täieliku ekraan).
 
-## AI-põhine prioriteetide seadmine (AI-Assisted Triage)
+## AI-põhine prioriteetide seadmine (AI-Assisted Triage) {#ai-assisted-triage}
 
 Esitatud tagastamine suunatakse AI-prioriteetide küsimusele, mis:
 

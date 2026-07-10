@@ -3,33 +3,33 @@ title: Lula ho nna le lilikong la control panel
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Goeletsa Ho Letsopeho Control Panel
+# Goeletsa Ho Letsopeho Control Panel {#enhance-control-panel-integration}
 
-## Leholo (Overview)
+## Leholo (Overview) {#overview}
 Enhance ke control panel e modern se e leba ho fana ka baithang le fetoga ea hosting le management e tšepang. Le fetoga le fetisa le fetoga le fetisa lefetso la domain le certificate SSL ho tloha ho Ultimate Multisite le Enhance Control Panel.
 
 **Lekgetho le fetisa:** Le bona [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) ho ba le litšepo tsa setso le litšepo tse ling le litšepo tse nyane.
 
-## Litšepo (Features)
+## Litšepo (Features) {#features}
 - Le fetoga la domain lefetisa ho tloha ha domains a fetilwe ka Ultimate Multisite
 - Le fetoga la certificate SSL le fetisa ka LetsEncrypt ha DNS e fetola
 - Ho ba le support le subdomains ho networks a ba ba le subdomain mode
 - Ho fana ka domain ha mappings a fetilwe
 - Ho batla ho fetisa ho bona litšepo tsa API
 
-## Litšepo (Requirements)
+## Litšepo (Requirements) {#requirements}
 
-### Litšepo tsa Setso (System Requirements)
+### Litšepo tsa Setso (System Requirements) {#system-requirements}
 - Enhance Control Panel e fetilwe le e fetilwe
 - WordPress Multisite e fetilwe e ba ba laokanyetswe ka server ea Enhance le e fetilwe ho e fetisa
 - Apache web server (Enhance e fetisa configuration ea Apache; LiteSpeed Enterprise e fetisa ka tšepo e fetileng)
 
-### Ho Ba Le Fetoga API (API Access)
+### Ho Ba Le Fetoga API (API Access) {#api-access}
 O hloka ho ba le access la administrator la Enhance Control Panel ho fetola API tokens.
 
-## Ho Ba Lefetisa Litšepo tsa API (Getting Your API Credentials)
+## Ho Ba Lefetisa Litšepo tsa API (Getting Your API Credentials) {#getting-your-api-credentials}
 
-### 1. Fetola API Token
+### 1. Fetola API Token {#1-create-an-api-token}
 
 1. Baithoa ka Enhance Control Panel ea hau ka administrator
 2. Thaba ka **Settings** sa menu ea navigation
@@ -42,7 +42,7 @@ O hloka ho ba le access la administrator la Enhance Control Panel ho fetola API 
 
 Ho fana, ha u feta, **Access Token** le **Organization ID** ho tla ba tsamaiswa. **Tlhola li ka ntlha** ka nako e kholo, ka nako e kholo ka nako e kholo, ka nako e kholo ka nako e kholo, ka nako e kholo ka nako e kholo, ka nako e kholo ka nako e kholo.
 
-### 2. Get Your Organization ID
+### 2. Get Your Organization ID {#2-get-your-organization-id}
 
 Organization ID ho tla tsamaiswa ka leela la Access Tokens le box ya rona ya mofuta a tšhoang kae "Org ID: {your_id}".
 
@@ -53,7 +53,7 @@ O ka utloha Organization ID ya mofuta a morao ho:
 2. Leela **Manage customer** ho mofuta o ntsaang
 3. Leela URL - Organization ID e le litšepo tsa alifabetso le litshelo tse di fetang /customers/
 
-### 3. Get Your Server ID
+### 3. Get Your Server ID {#3-get-your-server-id}
 
 Ho utloha Server ID (ho hloka ho tlhahlobo ea domain) ho:
 
@@ -70,7 +70,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID e fetang UUID format: `00000000-0000-0000-0000-000000000000`
 
-### 4. Get Your API URL
+### 4. Get Your API URL {#4-get-your-api-url}
 
 API URL ya hau e le URL ya Enhance Control Panel ya hau le /api/ e fetang:
 
@@ -82,9 +82,9 @@ https://your-enhance-panel.com/api/
 - Ho u sebelisa domain fa ho na le /api/
 - Ho u sebelisa HTTP fa ho na le HTTPS (HTTPS e hloka ho ba le bohlokoa)
 
-## Configuration
+## Configuration {#configuration}
 
-### Required Constants
+### Required Constants {#required-constants}
 
 Leela constants tse hlokang mo file ya hau `wp-config.php`:
 
@@ -94,7 +94,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### Setup via Integration Wizard
+### Setup via Integration Wizard {#setup-via-integration-wizard}
 
 1. Morago ka WordPress admin, go to **Ultimate Multisite** > **Settings** (Go to Ultimate Multisite admin settings)
 2. Navigate to the **Integrations** tab (Go to Integrations tab)
@@ -109,17 +109,17 @@ You ka kopa go: (You can choose to:)
 - Let the wizard inject the constants into your `wp-config.php` file automatically (Let the wizard inject the constants into your `wp-config.php` file automatically)
 - Copy the constant definitions and add them manually (Copy the constant definitions and add them manually)
 
-## Additional WordPress Configuration
+## Additional WordPress Configuration {#additional-wordpress-configuration}
 
 Based on feedback ya ba community ([Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)), you ka na le go set up these settings e leng: (Based on community feedback, you might need to configure these additional settings:)
 
-### .htaccess Configuration
+### .htaccess Configuration {#htaccess-configuration}
 
 If you experience issues with domain mapping: (If you experience issues with domain mapping:)
 1. Delete the original Enhance `.htaccess` file (Delete the original Enhance `.htaccess` file)
 2. Replace it with the standard WordPress Multisite `.htaccess` file (Replace it with the standard WordPress Multisite `.htaccess` file)
 
-### Cookie Constants
+### Cookie Constants {#cookie-constants}
 
 Add these constants to `wp-config.php` to ensure proper cookie handling across mapped domains: (Add these constants to `wp-config.php` to ensure proper cookie handling across mapped domains:)
 
@@ -129,9 +129,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## How It Works
+## How It Works {#how-it-works}
 
-### When a Domain is Mapped
+### When a Domain is Mapped {#when-a-domain-is-mapped}
 
 (When a Domain is Mapped)
 
@@ -141,14 +141,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. Fa morero a DNS a fetoga mo server ea hau, Enhance e fana SSL certificate ka LetsEncrypt
 5. Morero a domain a ba lehle le HTTPS
 
-### Le fa morero a domain
+### Le fa morero a domain {#when-a-domain-is-removed}
 
 1. A deletea mapping ea domain ka Ultimate Multisite
 2. Ka integration e query Enhance ho hloba ID ea domain
 3. DELETE request e fana mo: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance e fetola domain se server ea hau
 
-### Ho le fa DNS le SSL
+### Ho le fa DNS le SSL {#dns-and-ssl-checking}
 
 Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
 - U ka setse interval ea checking sa **Domain Mapping Settings** (default: 300 seconds/5 minutes)
@@ -156,9 +156,9 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
 - Validity ea SSL certificate e fetoga ka auto
 - Enhance e fetola SSL automatically, ka ho hlokomisa configuration ea SSL manually
 
-## Ho le fa setup
+## Ho le fa setup {#verifying-setup}
 
-### Le fa connection a fetoga
+### Le fa connection a fetoga {#test-the-connection}
 
 1. Ka Integration Wizard, u sebelisa step ea **Test Connection**
 2. Plugin e tla batla ho lishoa domains ka server ea hau
@@ -168,7 +168,7 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
    - Server ID e le tseba
    - Permissions e setse ka bonako
 
-### Ha morero a domain
+### Ha morero a domain {#after-mapping-a-domain}
 
 1. Morero test domain ka Ultimate Multisite
 2. Le fa logs ea Ultimate Multisite (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -177,9 +177,9 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
    - Domain e ntlha e tla ba le mo list ea hau
 4. Ha DNS a fetoga, tsamaela SSL e fetolwe ka auto
 
-## Ho Tloko (Troubleshooting)
+## Ho Tloko (Troubleshooting) {#troubleshooting}
 
-### Masimo a Sebope (API Connection Issues)
+### Masimo a Sebope (API Connection Issues) {#api-connection-issues}
 
 **Tsela: "Failed to connect to Enhance API"**
 - Re bona `WU_ENHANCE_API_URL` e bolela `/api/` a tsone.
@@ -197,7 +197,7 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
 - Bonele hore Server ID e le sebope sa UUID (valid format).
 - Bonele hore server ya hau e le ho ba Enhance panel.
 
-### Domain E Sebope (Domain Not Added)
+### Domain E Sebope (Domain Not Added) {#domain-not-added}
 
 **Re bona logs:**
 1. La **Ultimate Multisite** > **Logs**.
@@ -210,7 +210,7 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
 - Permissions ya API e sebope (bonele hore token e le System Administrator role).
 - Server ID e sebope sa server ya tsela ya hau mo Enhance.
 
-### Masimo a Sertifika ya SSL (SSL Certificate Issues)
+### Masimo a Sertifika ya SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 
 **SSL e sebope:**
 - Re bona DNS e bolela mo IP address ya hau ya server.
@@ -224,7 +224,7 @@ Ultimate Multisite e na le checking ea DNS le SSL ka ho ba lehle:
 2. Bonele domain ya hau le bone status ya SSL.
 3. O ka leba manual go ba lela (trigger) masimo a SSL fa o na dikgwetlho.
 
-### Tsela ya DNS Check Interval
+### Tsela ya DNS Check Interval {#dns-check-interval}
 
 Ha o se domain a le SSL certificates a le fa motho ho fana:
 1. La **Ultimate Multisite** > **Settings** > **Domain Mapping** e la.
@@ -232,7 +232,7 @@ Ha o se domain a le SSL certificates a le fa motho ho fana:
 3. Le fetoha ho tlo haholo (default 300 seconds) ho seting le lalo (minimum: 10 seconds).
 4. **Lekgetso:** Seting le lalo li bolela hore e tla le fa motho a lefa, empa li tla fana ka load ea server e leholo.
 
-### Leano la Thaba (Authentication Errors)
+### Leano la Thaba (Authentication Errors) {#authentication-errors}
 
 **HTTP 401/403 errors:**
 - Re-generate API token ha Enhance.
@@ -240,7 +240,7 @@ Ha o se domain a le SSL certificates a le fa motho ho fana:
 - Leha token e ne e le fa fana.
 - Leha u sebelise Organization ID e ntse e le hlophiso (empa haholo ha e hlophiswe ka URL).
 
-### Ho Hlalosa Logs (Log Analysis)
+### Ho Hlalosa Logs (Log Analysis) {#log-analysis}
 
 Leha logging le le fetoha:
 ```php
@@ -254,15 +254,15 @@ Lapa ha u le fa logs:
 - WordPress debug log: `wp-content/debug.log`
 - Enhance panel logs: Ha fana ka interface ea admin ea Enhance
 
-## Leano la API (API Reference)
+## Leano la API (API Reference) {#api-reference}
 
-### Authentication
+### Authentication {#authentication}
 Mona u le thata hloekoe ho seting sa Bearer token:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Endpoints e sebelisoang haholo
+### Endpoints e sebelisoang haholo {#common-endpoints-used}
 
 **Ho Hlalosa Servers:**
 ```
@@ -285,28 +285,28 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### Leano lehle la API (Full API Documentation)
+### Leano lehle la API (Full API Documentation) {#full-api-documentation}
 Leano lehle la API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Ho Baetsi Boetsoang (Best Practices)
+## Ho Baetsi Boetsoang (Best Practices) {#best-practices}
 
-### Bopelofetso (Security)
+### Bopelofetso (Security) {#security}
 - **A re nna ba le token API e fana ka seba mo version control**
 - Ba tsena tokens mo `wp-config.php` le e tla ba fana ka seba mo Git
 - Ba u le ba le token le ba le tselaetso (System Administrator) ho ba le tselaetso e fetang (full integration)
 
-### Ho Lefa (Performance)
+### Ho Lefa (Performance) {#performance}
 - U le ba le tsena ea DNS check interval e fetang (300 seconds) ho fana ka seba sa API sefane
 - U le ba le tsena resourses ea Enhance ha u le ba le feta ka tselaetso ea domain e fetang
 - Le tla ba le tsena ho fana ka seba tsa domain ha u le ba le feta ka tselaetso ea domain e fetang
 
-### Ho Tlhaloso (Monitoring)
+### Ho Tlhaloso (Monitoring) {#monitoring}
 - U le ba le tsena logs ea Ultimate Multisite ka tselaetso ea litietsi (integration errors)
 - U le ba le setseba ho fana ka seba tsa domain tse di fetileng (failed domain additions)
 - U le ba le tsena hore SSL certificates li feta ka bonako e fetang
 - U le ba le tsena ha u le ba le feta ka tselaetso ea Enhance le limits ea domain
 
-## Boitshwaro Bafane (Additional Resources)
+## Boitshwaro Bafane (Additional Resources) {#additional-resources}
 
 - **Dokumente ea Enhance Efetang:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Dokumente ea API ea Enhance:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -314,7 +314,7 @@ Leano lehle la API: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 - **Tlhahlobo ea GitHub:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Melemo ea Ho Hlalosa Domain Mapping ea Ultimate Multisite:** Le tla ba le tsena wiki page "How to Configure Domain Mapping v2"
 
-## Ho Tlhaloso (Support)
+## Ho Tlhaloso (Support) {#support}
 
 Ha u le ba le tselaetso:
 1. U le ba le tsena sefane sa Troubleshooting sefane leng
@@ -323,7 +323,7 @@ Ha u le ba le tselaetso:
 4. U le ba le tselaetso ea Enhance ho litietsi tsa panel
 5. U le ba le qala sefane se fetang sa logs le sefane sa error ho ntsha ho ho thusa komuniti
 
-## Melemo (Notes)
+## Melemo (Notes) {#notes}
 
 - Ho fana ha le fa'aiga o le fa'aiga o le domain aliases fua; O Enhance e fa'amalosia le SSL automatically.
 - O le fa'aiga o le integration e fa'amalosia both custom domain mappings ma subdomain-based sites.

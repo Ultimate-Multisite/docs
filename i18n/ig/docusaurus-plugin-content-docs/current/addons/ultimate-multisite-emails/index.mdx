@@ -1,0 +1,197 @@
+---
+title: Ozi-e
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Email {#emails}
+
+Ultimate Multisite: Emails addon na-enye ndị nwe network ohere ịmepụta ma jikwaa akaụntụ email ndị ahịa n'akụkụ saịtị na membership. Version 1.1.0 na-agbakwunye njikwa akaụntụ email nke ndị ahịa na-ahụ, webmail single sign-on, nkwado CyberPanel forwarder, na mmezi provisioning n'oge checkout.
+
+## Njirimara Ndị Dị Mkpa {#key-features}
+
+* **Widget akaụntụ email onye ahịa**: Ndị ahịa nwere ike ịmepụta ma jikwaa igbe ozi site na peeji Account ha mgbe ha nwere email membership na-arụ ọrụ.
+* **Webmail SSO na magic links**: Ndị ahịa nwere ike imeghe webmail ozugbo site na peeji Account site na authentication otu-pịa mgbe provider na-akwado ya.
+* **Mgbanwe okwuntughe**: Ndị ahịa na administrators nwere ike imelite okwuntughe igbe ozi site na widget njikwa email.
+* **Provisioning ikike checkout**: Checkout na-emepụta email membership, jikọọ ya na domain saịtị onye ahịa, ma mee ka ngwaọrụ igbe ozi peeji Account dị.
+* **CyberPanel forwarders**: Network ndị CyberPanel na-akwado nwere ike ịmepụta ma jikwaa email forwarders dịka akụkụ nke usoro ọrụ email.
+* **Ntọala maara provider**: Peeji ntọala na-enyocha providers ka ọ bụrụ integrations ndị na-arụ ọrụ ma hazie, ka administrators hụ naanị nhọrọ ndị a pụrụ iji.
+
+## Ihe Achọrọ {#requirements}
+
+* Ultimate Multisite 2.0.0 ma ọ bụ nke ka elu
+* Nwụnye WordPress Multisite
+* Opekempe otu integration email provider ahaziri
+* Provider API credentials nwere ikike ịmepụta igbe ozi, ịgbanwe okwuntughe, na iwepụta njikọ ohere webmail ebe a na-akwado ya
+
+## Nwụnye {#installation}
+
+1. Bulite faịlụ plugin gaa `/wp-content/plugins/ultimate-multisite-emails`.
+2. Mee addon ka ọ rụọ ọrụ na network site na **Plugins** n'ime WordPress network admin.
+3. Gaa **Ultimate Multisite** > **Settings** ma mepee ntọala email addon.
+4. Kwado integrations email provider ị chọrọ ka ndị ahịa jiri.
+5. Chekwaa ntọala, mgbe ahụ nwalee ịmepụta akaụntụ site na onye ahịa na-abụghị production ma ọ bụ staging site.
+
+## Otu Usoro Ịre Email Si Arụ Ọrụ {#how-the-email-seller-flow-works}
+
+Ịre email nwere ọkwa abụọ dị iche:
+
+1. **Ikike** — ngwaahịa/membership email Ultimate Multisite nke na-ekwu na a na-enye onye ahịa ohere iji email maka domain saịtị kpọmkwem, provider, quota, na oke akaụntụ.
+2. **Ịmepụta igbe ozi** — igbe ozi provider n'ezie, dịka `info@example.com`, nke a na-emepụta mgbe onye ahịa ma ọ bụ network administrator họrọ local part na okwuntughe.
+
+N'oge checkout, addon na-emepụta ma ọ bụ mee ka **email membership** rụọ ọrụ ma dekọọ domain saịtị onye ahịa na provider na membership ahụ. Ọ naghị amụma aha igbe ozi ma ọ bụ okwuntughe. Mgbe ịzụrụchara ma ọnọdụ saịtị/domain dị, onye ahịa nwere ike imeghe peeji Account ma mepụta aha igbe ozi ha chọrọ.
+
+Nke a pụtara na usoro onye ahịa nkịtị bụ:
+
+1. Onye ahịa zụtara plan saịtị ma tinye ngwaahịa email n'oge checkout.
+2. Ultimate Multisite na-emepụta membership saịtị na email membership nke abụọ.
+3. Emails addon na-ejikọta email membership na domain saịtị onye ahịa na provider.
+4. Onye ahịa na-emepe **Account** na dashboard ha.
+5. Panel **Akaụntụ Email** na-apụta maka email membership ahụ na-arụ ọrụ.
+6. Onye ahịa pịa **Mepụta Akaụntụ**, tinye local part dịka `info`, setịpụ okwuntughe, addon wee mepụta `info@their-domain.com` n'aka provider ahaziri.
+
+## Hazie Ngwaahịa Email {#configure-an-email-product}
+
+Mepụta otu ngwaahịa email maka ngwugwu email ọ bụla ịchọrọ ire ma ọ bụ inye n'efu. Ọ bụrụ na ị bụ onye ọhụrụ na nhazi ngwaahịa, malite na [Ịmepụta Ngwaahịa Subscription Mbụ Gị](../../user-guide/configuration/creating-your-first-subscription-product) wee laghachi ebe a maka ntọala pụrụ iche maka email.
+
+1. Gaa **Network Admin > Ultimate Multisite > Products > Add Product**.
+2. Tọọ **Product Type** ka ọ bụrụ **Email**.
+3. Hazie ọnụahịa. Jiri ọnụahịa recurring akwụ ụgwọ maka plan a na-ere, ma ọ bụ tọọ ngwaahịa ahụ ka ọ bụrụ n'efu/ọnụahịa-efu ma ọ bụrụ na ọ ga-abụ plan email onyinye.
+4. Mepee ngalaba **Email Settings**.
+5. Họrọ **Email Provider** ahaziri.
+6. Tọọ **Number of Accounts**, **Storage Quota (MB)**, oke alias, forwarders, na autoresponders dịka achọrọ.
+7. Chekwaa ngwaahịa ahụ.
+
+Naanị providers ndị akwadoro ma hazie kpamkpam na peeji **Integrations** na-apụta na selector provider. Ọ bụrụ na selector ahụ tọgbọ chakoo, buru ụzọ hazie ma nwalee provider.
+
+## Tinye Email na Checkout {#add-email-to-checkout}
+
+A na-enyekarị ngwaahịa email dịka add-ons na plan saịtị. Lee [Fọm Checkout](../../user-guide/configuration/checkout-forms) maka usoro ọrụ checkout editor izugbe.
+
+1. Mepụta ma ọ bụ dezie plan saịtị ndị ahịa na-ebu ụzọ zụta.
+2. Tinye ngwaahịa email dịka add-on/order bump dị maka usoro checkout ahụ.
+3. Kwenye na fọm checkout ka nwere field saịtị nkịtị achọrọ, karịsịa field URL/domain saịtị.
+4. Mee checkout nnwale site na onye ahịa staging.
+5. Mgbe checkout gasịrị, mepee [peeji Account](../../user-guide/client-management/account-page) onye ahịa ma kwenye na panel **Akaụntụ Email** pụtara.
+
+A na-ewere domain email site na domain saịtị onye ahịa. Ndị ahịa anaghị etinye domain email na nzọụkwụ ngwaahịa email.
+
+## Njikwa Email Akaụntụ Onye Ahịa {#customer-account-email-management}
+
+Version 1.1.0 na-agbakwunye widget njikwa email na peeji Account onye ahịa. Jiri ya mgbe ndị ahịa kwesịrị iji self-service mepụta ma lekọta igbe ozi maka saịtị nke ha.
+
+Site na peeji Account, ndị ahịa nwere ike:
+
+1. Lee akaụntụ email ejikọrọ na email membership/domain saịtị ha dị ugbu a.
+2. Mepụta igbe ozi ọhụrụ mgbe ngwaahịa email ha na-ekwe ka akaụntụ ndị ọzọ.
+3. Gbanwee okwuntughe igbe ozi dị adị.
+4. Mepee providers webmail a na-akwado site na SSO ma ọ bụ nbanye magic-link.
+
+Widget ahụ na-eji usoro currents peeji Account Ultimate Multisite, ya mere actions na-adabere na account context onye ahịa na-ele. Nke a na-egbochi ndị ahịa ijikwa akaụntụ email nke membership ma ọ bụ saịtị ọzọ nwere.
+
+Ọ bụrụ na onye ahịa ahụ ahụghị panel email, lelee na ha nwere **otu membership ngwaahịa Email na-arụ ọrụ**, na ejikọtala membership ahụ na domain saịtị, nakwa na ngwaahịa ahụ nwere provider ahaziri.
+
+## Inye Onye Ahịa Plan Email N'efu {#giving-a-customer-a-free-email-plan}
+
+Iji nye onye ahịa email na-enweghị ịkwụ ha ụgwọ, nye **ikike email** mbụ, mgbe ahụ mepụta ma ọ bụ hapụ onye ahịa ka o mepụta mailbox.
+
+Nhọrọ akwadoro:
+
+* **Mepụta ngwaahịa email n'efu**: tinye ọnụahịa ngwaahịa email ka ọ bụrụ n'efu/efu, mgbe ahụ tinye membership na-arụ ọrụ maka onye ahịa ahụ site na **Ultimate Multisite > Memberships > Add Membership**. Họrọ ngwaahịa email na onye ahịa ahụ. Memberships n'efu na-adị ndụ ruo mgbe a gbanwere ma ọ bụ kagbuo ha. Ọ bụrụ na email membership ahụ kwesị ịgbaso saịtị dị adị, hụ na ejikọtara ya na context saịtị/domain ahụ.
+* **Jiri mbelata 100% ma ọ bụ njikọ checkout n'efu**: hapụ onye ahịa ka ọ gafee checkout ka Ultimate Multisite mepụta email membership na ndekọ ịkwụ ụgwọ na-akpaghị aka.
+* **Admin mepụta mailbox**: gaa na **Ultimate Multisite > Email Accounts > Add Email Account** iji mepụta mailbox kpọmkwem na provider maka onye ahịa. Nke a bara uru maka nkwado, mana ọ naghị dochie email product membership nke na-enye ngwaọrụ self-service account-page nke onye ahịa ike.
+
+Ọ bụrụ na ịchọrọ ka onye ahịa jikwaa mailbox ahụ n'onwe ha site na account page, hụ na ha nwere email membership na-arụ ọrụ maka domain ahụ. Mailbox provider e mepụtara aka na-enweghị membership ahụ nwere ike ịdị, mana onye ahịa nwere ike ghara ịhụ panel email self-service maka ya.
+
+## Akaụntụ Admin Mepụtara na "Enweghị Nọmba Order" {#admin-created-accounts-and-no-order-number}
+
+Peeji admin **Email Accounts** na-emepụta ma ọ bụ na-edezi mailbox provider. Ọ bụghị nzọụkwụ mbụ maka ire ma ọ bụ inye plan email.
+
+Mgbe ị na-edezi akaụntụ email, field **Membership** na-achọ memberships Ultimate Multisite dị adị site na reference/order number ha. Ọ bụrụ na ị nwaa ikenye akaụntụ tupu onye ahịa enwee email membership, enwere ike ghara inwe order number ịhọrọ.
+
+Jiri usoro ọrụ a kama:
+
+1. Mepụta ma ọ bụ chọta email membership nke onye ahịa. Maka ịzụrụ, checkout na-eme nke a. Maka plan onyinye, jiri aka mepụta membership site na [Memberships](../../user-guide/administration/managing-memberships) ma ọ bụ ziga onye ahịa site na checkout n'efu.
+2. Kwenye na membership ahụ na-arụ ọrụ ma na-eji ngwaahịa Email.
+3. Kwenye na ejikọrọ email membership ahụ na domain/provider saịtị ahụ.
+4. Mepụta mailbox site na account page onye ahịa ma ọ bụ site na **Ultimate Multisite > Email Accounts**.
+5. Ọ bụrụ na achọrọ, dezie ndekọ mailbox ahụ ma kenye onye ahịa, membership, na saịtị.
+
+Ọ bụrụ na ihe ịchọrọ naanị bụ imepụta mailbox provider maka onye ahịa ma ị chọghị njikwa self-service account-page, akaụntụ admin mepụtara nwere ike izu. Ọ bụrụ na ịchọrọ ka onye ahịa hụ ma jikwaa ya na Ultimate Multisite, mepụta email membership kwa.
+
+## Webmail SSO na Nbanye Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO na-enye ndị ahịa omume **Mepee webmail** ozugbo site na account page. Mgbe provider na-arụ ọrụ na-akwado ya, addon na-arịọ URL access dị mkpirikpi ma na-eduzi onye ahịa banye na webmail na-ajụghị ha ka ha detuo credentials mailbox.
+
+Omume provider nwere ike ịdị iche:
+
+* Providers nwere SSO APIs nke ha nwere ike ịmepụta session webmail e nyochara ozugbo.
+* Providers nwere nkwado magic-link nwere ike ịmepụta njikọ nbanye nwere oge njedebe.
+* Providers na-enweghị nkwado SSO ma ọ bụ magic-link ka kwesịrị igosi nkọwa mailbox na omume njikwa okwuntughe, mana enweghị bọtịnụ webmail otu-click.
+
+Mee ka access webmail rụọ ọrụ naanị maka providers ebe ị hazirila credentials API achọrọ. Ọ bụrụ na omume ahụ adịghị maka provider, buru ụzọ kwenye na provider ahụ na-arụ ọrụ, ahaziri ya, ma na-akwado njikọ nbanye webmail.
+
+## Provisioning Checkout {#checkout-provisioning}
+
+Addon na-eme provision **context membership** email n'oge checkout. Ọ na-edekọ provider, account limit, quota, na domain saịtị ka ndị ahịa nwee ike ịmepụta aha mailbox nke ha site na account page mgbe ha zụrụ.
+
+Rollout akwadoro:
+
+1. Hazie provider na oke ngwaahịa tupu ịnye ngwaahịa email.
+2. Nwalee ịzụrụ site na ngwaahịa staging ma kwenye na e mepụtara email membership.
+3. Nyochaa account page onye ahịa iji kwenye na widget **Email Accounts** pụtara maka domain ahụ.
+4. Mepụta mailbox nnwale site na widget ahụ.
+5. Kwenye omume mgbanwe okwuntughe na webmail tupu ịmee ka flow ahụ rụọ ọrụ maka ngwaahịa production.
+
+Ọ bụrụ na provisioning ada, akaụntụ onye ahịa na membership ka nwere ike ịdị ebe email membership ma ọ bụ mailbox provider chọrọ nlekọta administrator. Lelee ndekọ ọrụ Ultimate Multisite na ndekọ provider tupu ịnwale ọzọ.
+
+## CyberPanel Email Forwarders {#cyberpanel-email-forwarders}
+
+Maka networks a na-akwado site na CyberPanel, version 1.1.0 na-agbakwunye nkwado email forwarder. Jiri forwarders mgbe ndị ahịa chọrọ adreesị dịka `info@customer-domain.test` iji zigharịa mail gaa inbox ọzọ na-enweghị ịmepụta mailbox zuru ezu.
+
+Tupu ịnye forwarders, kwenye na integration CyberPanel ahaziri ma nwee ike iru. Lee ntuziaka [Integration CyberPanel](../../user-guide/administration/cyberpanel-integration) maka host, username, password, na constants package achọrọ.
+
+## Changelog {#changelog}
+
+### Version 1.1.0 - E wepụtara na 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Ọhụrụ: Webmail SSO na nbanye magic-link — ndị ahịa nwere ike ịbanye na webmail ozugbo site na Account ha site na nkwenye otu-pịa.
+* Ọhụrụ: Agbakwunyere ọrụ ịgbanwe okwuntughe na widget njikwa akaụntụ email.
+* Ọhụrụ: Nkwado email forwarder nke CyberPanel.
+* Ọhụrụ: Widget njikwa email na ibe Account onye ahịa maka imepụta na ijikwa Account n'onwe onye.
+* Ọhụrụ: Etinyere inye ikike akaụntụ email onye ahịa n'ime usoro checkout.
+* Mmezi: Emelitere hook widget ibe Account ka o jiri usoro ndebanye UMS ziri ezi.
+* Mmezi: Eji vanilla JS dochie fọm Create Account ma jiri mmepụta akwụkwọ HTML zuru ezu ziri ezi.
+* Mmezi: Widget njikwa email ugbu a na-eji sistemụ currents nke UMS maka ibe Account admin.
+* Mmezi: Fọm imepụta akaụntụ email admin gụnyere field okwuntughe ma na-eji Email_Account_Manager.
+* Mmezi: Ewepụla log spam kwa arịrịọ site na mmalite Email_Account_Manager.
+* Emeziri ka mma: Ibe ntọala ugbu a na-enyocha iji gosi naanị ndị na-eweta email ndị dị ndụ ma hazie ha.
+
+## Ajụjụ A Na-ajụkarị {#frequently-asked-questions}
+
+### Ndị ahịa nwere ike ịmepụta akaụntụ email nke ha? {#can-customers-create-their-own-email-accounts}
+
+Ee. Mgbe onye ahịa nwere membership email dị ndụ maka domain ma product ahụ kwere ka enwekwuo Account, ndị ahịa nwere ike ịmepụta ma jikwaa mailbox nke ha site na ibe Account.
+
+### Onye na-eweta email ọ bụla na-akwado webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Mba. Nkwado SSO na magic-link dabere na onye na-eweta email dị ndụ. Ndị na-eweta email na-enweghị API access-link ka nwere ike ịkwado imepụta mailbox na mgbanwe okwuntughe.
+
+### Ndị administrators nwere ike ịmepụta akaụntụ email maka ndị ahịa? {#can-administrators-create-email-accounts-for-customers}
+
+Ee. Ndị administrators nwere ike ịmepụta akaụntụ email site na interface admin, gụnyere ịtọ okwuntughe mbụ mgbe a na-emepụta Account ahụ. Maka njikwa self-service nke onye ahịa, hụkwa na onye ahịa nwere membership email dị ndụ maka domain ahụ.
+
+### Enwere m ike inye akaụntụ email n'efu? {#can-i-give-an-email-account-away-for-free}
+
+Ee. Mepụta product Email efu/ọnụahịa-efu ma tinye ya dị ka membership dị ndụ maka onye ahịa, ma ọ bụ hapụ onye ahịa ka o mechaa checkout na mbelata 100%. Mgbe membership email dị, onye ahịa ma ọ bụ administrator nwere ike ịmepụta mailbox ahụ n'ezie.
+
+### Gịnị mere ikenye akaụntụ email ji ajụ maka nọmba order? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Field Membership na-achọ membership Ultimate Multisite dị adị site na nọmba reference/order ya. Ọ bụrụ na onye ahịa azụtaghị product email ma ịmepụtabeghị membership email n'aka, enweghị membership/order email a ga-ekenye. Mepụta membership email mbụ, mgbe ahụ mepụta ma ọ bụ kenye mailbox.
+
+### Forwarders hà bụ otu ihe dị ka mailboxes? {#are-forwarders-the-same-as-mailboxes}
+
+Mba. Mailbox na-echekwa mail ma nwee credentials nbanye. Forwarder na-ezigara mail gaa na address ọzọ ma ọ naghị enye inbox dị iche.

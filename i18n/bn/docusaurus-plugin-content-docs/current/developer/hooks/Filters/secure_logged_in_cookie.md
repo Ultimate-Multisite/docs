@@ -4,11 +4,11 @@ title: Filter - secure_logged_in_cookie
 sidebar_label: secure_logged_in_cookie
 _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 ---
-# Filter: secure_logged_in_cookie
+# Filter: secure_logged_in_cookie {#filter-secureloggedincookie}
 
 এটি ফিল্টার করে যে লগড-ইন কুকিটি শুধুমাত্র HTTPS এর মাধ্যমে পাঠানো হবে কিনা।
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: 4dbde39f6b78088a1397f654cf66c92c
 | $user_id | `int` | ব্যবহারকারী আইডি। |
 | $secure | `bool` | অথ কুকিটি শুধুমাত্র HTTPS এর মাধ্যমে পাঠানো হবে কিনা। |
 
-### Since
+### Since {#since}
 
 - 3.1.0
-### Source
+### Source {#source}
 
 Defined in [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L91) at line 91

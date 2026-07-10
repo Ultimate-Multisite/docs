@@ -3,11 +3,11 @@ title: Requisoj
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Requisitoj la Ultimate Multisite
+# Requisitoj la Ultimate Multisite {#ultimate-multisite-requirements}
 
 La unua cosa ki vi povas diri memu antaŭ ol iachti Ultimate Multisite estas kio bezonas por fari labori kun nia plugino. Behatko, ĝuste ekzistas nur malfortaj rekvizito por fari labori kun Ultimate Multisite: **domeno**, bona **hostaĝo** (hosting provider) kaj WordPress **Multisite** instalita. Tio estas ĉio necese!
 
-## Domeno
+## Domeno {#domain-name}
 
 Unue, partemble pri la domeno.
 
@@ -17,7 +17,7 @@ Nia plugino provizas subskriban servojn, pagamentajn kolektajn, checkout formojn
 
 Kaj kualia nicho vi elektas povas esti administrita per nia plugino, ĉar vi vendos sitiojn kiel servon! Ĉu certigu vi elektas domenon, kiu korespondas kun via bizneplan.
 
-## Hostaĝo (Hosting Provider)
+## Hostaĝo (Hosting Provider) {#hosting-provider}
 
 Nove ke vi havas akta domeno, kiu reprezentas vian nichon kaj bizneson, vi bezonas elekti bonan web-hostaĝcompany por hosti vian reton kun Ultimate Multisite. Ekzistas pli bonej opcioj sur la merkato. Diversaj hostaĝcompany integri bone kun Ultimate Multisite, kio povas esti decida faktoro dependante de tio, kion vi planas konstrui.
 
@@ -25,7 +25,7 @@ Ultimate Multisite devas kun ĉiuj hospedaj proviĝos fari işpon. La unika dife
 
 Kiam temas pri server specifikoj, ne ekzistas specifika formulo, ĉar ĝi dependos de la funkcio kaj funkcio, kiun vi ofertas kaj de la grandeco de via rano. Partita hospedado povas esti bona komenco, sed kiam via rano komencas kreski, vi probable necesos dedicitan VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Nove, partemble pri instalado de WordPress Multisite.
 

@@ -3,11 +3,11 @@ title: Järjestelmän sähköpostien hallinta
 sidebar_position: 13
 _i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Järjestelmän sähköpostien hallinta
+# Järjestelmän sähköpostien hallinta {#managing-system-emails}
 
 Ultimate Multisite lähettää erilaisia järjestelmän sähköposteja tapahtumista, kuten rekisteröitymisvahvistuksista, maksutodistuksista ja jäsenyysmuutoksista. Voit muokata näitä sähköpostimalotteja sopimaan brändisi kanssa.
 
-## Järjestelmän sähköpostien katselu
+## Järjestelmän sähköpostien katselu {#viewing-system-emails}
 
 Siirry **Ultimate Multisite → Asetukset** -sivulle ja napsauta **Sähköpostit**-välilehteä nähdäksesi sähköposti-asetukset.
 
@@ -21,7 +21,7 @@ Voit myös muokata yksittäisiä sähköpostimalotteja käyttämällä järjeste
 
 ![Järjestelmän sähköpostieditori](/img/admin/system-email-editor.png)
 
-## Uusien sähköpostimalottien tuominen
+## Uusien sähköpostimalottien tuominen {#importing-new-email-templates}
 
 Uudet Ultimate Multisite -versiot ja lisäosat voivat rekisteröidä uusia sähköpostimalotteja. Konfliktien välttämiseksi uusia malleja ei lisätä automaattisesti – sinun on niiden täytyttävä tuoda ne manuaalisesti.
 
@@ -32,7 +32,7 @@ Uusien sähköpostimalottien tuominen:
 3. Vaihda **Tuo sähköposteja (Import Emails)** -vaihtoehto nähdäksesi saatavilla olevat mallit
 4. Valitse ne mallit, joita haluat tuoda ja vahvista
 
-## Sähköpostimalottien nollaaminen
+## Sähköpostimalottien nollaaminen {#resetting-email-templates}
 
 Jos olet muokannut sähköpostimaloitta ja haluat palata oletussisältöön, sinulla on kaksi vaihtoehtoa:
 

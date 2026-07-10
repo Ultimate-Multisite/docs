@@ -3,21 +3,21 @@ title: Wax-soo-gaarsiinta iyo Isdiiwaangelinta Bixiyaha
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Bixiyaha Domainka: Dejinta iyo Isticmaalka Provider-ka
+# Bixiyaha Domainka: Dejinta iyo Isticmaalka Provider-ka {#domain-seller-setup-and-provider-configuration}
 
 Addon-ka Domain Seller wuxuu la socdaa qaab dejin (wizard) oo tilmaamaya tallaabo kasta oo loo baahan yahay. Boggan ayaa ka hadlaya habka dejinta iyo sida aad u hagaajin karto ama dib u dejin karto kuwa provider-kaas ka dib.
 
-## Shuruudaha
+## Shuruudaha {#requirements}
 
 - **Multisite Ultimate** v2.4.12 ama ka weel badan, oo la hawlgelin karo shabakad (network-activated)
 - **PHP** 7.4+
 - Macluumaadka API ee laba-dambe oo lagu taageero registrar kasta
 
-## Qaabka Dejinta Marka Labaadama La Isticmaalo (First-run setup wizard)
+## Qaabka Dejinta Marka Labaadama La Isticmaalo (First-run setup wizard) {#first-run-setup-wizard}
 
 Qaabka dejin wuxuu si toos ah u bilaabmaa markaad ugu hor mar hawlgelinayso plugin-ka. Waxaa sidoo kale laga heli karaa muddo kasta oo aad tagto **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Tallaabada 1 — Doorashada Provider-ka
+### Tallaabada 1 — Doorashada Provider-ka {#step-1--choose-a-provider}
 
 Dooro registrar-ka aad rabto inaad la xiriirto. Doorashooyinka taageerada:
 
@@ -33,7 +33,7 @@ Dooro registrar-ka aad rabto inaad la xiriirto. Doorashooyinka taageerada:
 | NameSilo | Maya | Maya |
 | Enom | Haa | Maya |
 
-### Tallaabada 2 — Gel isticmaalka macluumaadka (credentials)
+### Tallaabada 2 — Gel isticmaalka macluumaadka (credentials) {#step-2--enter-credentials}
 
 Bixiyaha kasta wuxuu leeyahay meelo kala duwan oo lagu galo macluumaadka:
 
@@ -57,17 +57,17 @@ Bixiyaha kasta wuxuu leeyahay meelo kala duwan oo lagu galo macluumaadka:
 
 Hubi **Sandbox mode** haddii uu jiro si aad u isku baahdaan oo aad ku baahan tahay inaad isku hubiso nidaamka horay intaadan bilaabin.
 
-### Tallaabada 3 — Hubinta xiriirka
+### Tallaabada 3 — Hubinta xiriirka {#step-3--test-the-connection}
 
 Riix **Test Connection**. Wizard-ku wuxuu u dirayaa call API fudud si uu u hubiyo macluumaadkaaga iyo xiriirka. Samee hagaajinta dhibaatooyinka la xiriira macluumaadkaaga ka hor intaadan sii socon.
 
-### Tallaabada 4 — Soo darista TLD-yada (Top-Level Domains)
+### Tallaabada 4 — Soo darista TLD-yada (Top-Level Domains) {#step-4--import-tlds}
 
 Riix **Import TLDs** si aad u soo celiso dhammaan TLD-yada la heli karo iyo qiimaha wholesale-ka laga helo bixiyaha la xiriira. Tani waxay buuxisaa liiska TLD-yada loo isticmaalo alaabta domain-ka ah. Soo darista wuxuu qaadan karaa 30–60 ilbiriqsi haddii bixiyaha uu leeyahay liis weyn oo TLD-yo ah.
 
 TLD-yadu waxay si isku kalsoon ugu dib u habaysadaan hal mar maalinta iyada oo loo marayo cron job la qorsheeyay (scheduled cron job).
 
-### Tallaabada 5 — Abuurista alaab domain-ka ah
+### Tallaabada 5 — Abuurista alaab domain-ka ah {#step-5--create-a-domain-product}
 
 Wizard-ku wuxuu abuuraa alaab domain oo guud ah (catch-all) iyadoo la isticmaalayo qiimeyn 10%. Waxaad si degdeg ah wax ka beddeli kartaa alaabtaas ama aad ka dhaafi kartaa oo aad gacanta ku samayn karto alaabooyin adigoo isticmaalaya **Ultimate Multisite › Products**.
 
@@ -75,7 +75,7 @@ Waxaad arki kartaa [Domain Products and Pricing](./domain-products) si aad u hes
 
 ---
 
-## Dib u habaynista bixiyaha (Reconfiguring a provider)
+## Dib u habaynista bixiyaha (Reconfiguring a provider) {#reconfiguring-a-provider}
 
 U socda **Network Admin › Ultimate Multisite › Settings › Domain Seller** (ama ku riix **Settings**-ka liiska plugin-yada).
 
@@ -88,17 +88,17 @@ Bogga settings-ku wuxuu ka kooban yahay:
 - **Maareynta alaabta domainka (Manage domain products)** — xiriir degdeg ah oo loo maro liiska Alaabta (Products list).
 - **Habaynta bixiyaha (Configure providers)** — waxay furaysaa Wizard-ka Isdhaafinta (Integration Wizard) si aad u ku darto ama ugu hagaajisid bixiyaha.
 
-### Ku darid bixiye labaad (Adding a second provider)
+### Ku darid bixiye labaad (Adding a second provider) {#adding-a-second-provider}
 
 Riix **Configure providers** oo mar kale ku fuli wizard-ka (wizard) si aad u dejisid registrar cusub. Waxaad leedahay fursad aad isku dejisid dhowr provider. U qeyb goobta domain kasta oo uu yahay provider gaar ah, ama ka tag inaad haysato default-ka.
 
-### Syncing TLDs si gacanta ah (manually)
+### Syncing TLDs si gacanta ah (manually) {#syncing-tlds-manually}
 
 Gudaha bogga settings-ka, riix **Sync TLDs** ee dhanka qofka aad dejisay (provider) si aad u soo celiso qiimaha ugu dambeeyay. Tani waxay muhiim u tahay markii provider uu cusboonaysiiyo qiimaha wholesale ama ku daro TLD-yada cusub.
 
 ---
 
-## Logs
+## Logs {#logs}
 
 Qof kasta oo provider-ku wuxuu qoraa log-kiisa gaarka ah. Waxaad arki kartaa logs-ka hoos ka dhaca **Network Admin › Ultimate Multisite › Logs**:
 
@@ -118,7 +118,7 @@ Qof kasta oo provider-ku wuxuu qoraa log-kiisa gaarka ah. Waxaad arki kartaa log
 
 ---
 
-## Fikradaha ku saabsan awoodda bixiyeyaasha (Provider capability notes)
+## Fikradaha ku saabsan awoodda bixiyeyaasha (Provider capability notes) {#provider-capability-notes}
 
 Ma aha in dhammaan API-yada registarr-ka isku day inay bixiyaan hawlo isku mid ah. Addon-ka wuxuu soo bandhigayaa hawlo aan la taageerin (unsupported operations) iyadoo si cad u muujinayo qalad kasta oo la xiriira maamulka, halkii uu si aamusnaan ku fashilmo.
 

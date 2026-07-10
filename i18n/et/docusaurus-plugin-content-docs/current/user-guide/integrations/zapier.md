@@ -3,7 +3,7 @@ title: Zapier integreerimine
 sidebar_position: 12
 _i18n_hash: 7f23136e0e69417e244a9930f9620e95
 ---
-# Ultimate Multisite integreerimise Zapieriga
+# Ultimate Multisite integreerimise Zapieriga {#integrating-ultimate-multisite-with-zapier}
 
 Ühel artiklis käsitledime [Webhooks](webhooks.md) ja kuidas neid kasutada kolmandate asutuste abil ühendamiseks.
 
@@ -15,7 +15,7 @@ Saate luua **Triggerid**, mis käivituvad, kui sissejuhatavud sündmused võrku 
 
 See on võimalik, kuna **Ultimate Multisite Zapieri triggerid ja Actionid** on toetatud [REST API](https://developer.ultimatemultisite.com/api/docs/) abil.
 
-## Kuidas alguses alustada
+## Kuidas alguses alustada {#how-to-start}
 
 Eelise etappina otsige Ultimate Multisite Zapieril olevast rakenduste loendist. Alternatiivseks saate klõpsata [nimetule link](https://zapier.com/apps/wp-ultimo/integrations).
 
@@ -51,7 +51,7 @@ URL-väljalikule panna oma võrku täieliku URL-i, sealhulgas protokoll (HTTP v�
 
 Klõpsake **Yes, Continue** (Jah, jätka) nupul, et minna järgmise sammu viia. Kui kõik toimib hästi, tervitub teid teie uue ühendatud kontoga! Klõpsake **Continue** (Jätka), et luua uus trigger.
 
-## Uue Triggeri loomine
+## Uue Triggeri loomine {#how-to-create-a-new-trigger}
 
 Nüüd, kui konto on seotud, saate näha saadaval olevad sündmused. Selle tutori jaoks valige **payment_received** (maksutuse saamist) sündmust.
 
@@ -67,7 +67,7 @@ Selles etapis testib Zapier, kas teie Zap suudab selle sündmusele **spetsiifili
 
 Mõõdistus meie tutoriaals oli **valmistatud õnnestult** ja tagasi sai laadimisnäite informatsiooni. See näide informatsioon on kasulik juhendamiseks, kui luute teid toimende loomisel. Teie trigger on nüüd loodud ja valmis ühendama teiste rakenduste kanssa.
 
-## Kuidas luua Action'id (Toimendid)
+## Kuidas luua Action'id (Toimendid) {#how-to-create-actions}
 
 Action'id kasutavad teist triggeritest tulevat infot uute sissejuhtimist oma võrku.
 
@@ -79,7 +79,7 @@ Järgmisel sammas luute või valite oma autentikas, nagu te tegid **Alustamise a
 
 ![Autentikatsiooni valimine Zapier Actioni jaoks](/img/admin/webhooks-list.png)
 
-### Actioni seadistamine
+### Actioni seadistamine {#setting-up-the-action}
 
 See on **actioni peamine samm**, ja siin asjad on natuke erinevad. Esimene tegeleme antud infot, mis on **Item** (Element). Item on teie võrku **informatsioonimudel**, nagu **Kliendid, Makside, Sitat, E-kirjaleid** ja muutuvad.
 

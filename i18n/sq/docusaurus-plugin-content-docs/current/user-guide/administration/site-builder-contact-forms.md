@@ -3,11 +3,11 @@ title: Forma Kontakt për Ndërtues Shtëpisë
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Formularitë për Kontakt në Site Builder
+# Formularitë për Kontakt në Site Builder {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 shton aftësinë të krijoni formularë kontaktje direkt nga interfejsi i bisedës duke përdorur agentin e Site Builder. Kjo ju lejon të shtoni formularë kontaktje plotësisht funksionalë në çdo faqe pa u larguar nga biseda.
 
-## Përmbledhje
+## Përmbledhje {#overview}
 
 Aftësia për krijimin e formularit të kontaktit në Site Builder (`create_contact_form`) automatikisht zbulon plugin-in që keni instaluar dhe krijon një formular kontaktje duke përdorur aftësitë natyrore të atij plugin. Pluginet e mbështetura janë:
 
@@ -18,7 +18,7 @@ Aftësia për krijimin e formularit të kontaktit në Site Builder (`create_cont
 
 Asistenti zgjedh automatikisht pluginin më të mirë të disponues në faquin tuaj dhe gjeneron një formular kontaktje i përshtatur për atë plugin.
 
-## Krijimi i një Formularit të Kontaktit
+## Krijimi i një Formularit të Kontaktit {#creating-a-contact-form}
 
 Për të krijuar një formular kontaktje duke përdorur Site Builder:
 
@@ -34,7 +34,7 @@ Për të krijuar një formular kontaktje duke përdorur Site Builder:
 
 4. Site Builder do të gjenerojë formularin e kontaktit dhe do të kthejë një shortcode (p.sh., `[contact-form-7 id="123"]`) gati për të vendosur.
 
-## Përdorimi i Shortcode-it Gjeneruar
+## Përdorimi i Shortcode-it Gjeneruar {#using-the-generated-shortcode}
 
 Pas kur Site Builder krijon formularin e kontaktit, ai kthen një shortcode (p.sh., `[contact-form-7 id="123"]`). Ju mund të:
 
@@ -45,11 +45,11 @@ Pas kur Site Builder krijon formularin e kontaktit, ai kthen një shortcode (p.s
 
 3. **Përdorni në një template** — Nëse jeni i sigurt me PHP, mund të shtoni shortcode-in në një skedar teme (theme template file).
 
-## Personalizimi i Formës së Kontaktit
+## Personalizimi i Formës së Kontaktit {#customizing-the-contact-form}
 
 Pas kur Site Builder krijon formën e kontaktit, ju mund ta personalizoni më tej:
 
-### Përmes Interfejës së Chatit
+### Përmes Interfejës së Chatit {#via-the-chat-interface}
 
 Kërkoni nga Site Builder të modifikojë formën:
 
@@ -57,7 +57,7 @@ Kërkoni nga Site Builder të modifikojë formën:
 
 Site Builder do të përditësojë formën dhe do të kthejë shortcode-in e përditësuar.
 
-### Përmes Interfejës Admin e Pluginit të Formës
+### Përmes Interfejës Admin e Pluginit të Formës {#via-the-form-plugins-admin-interface}
 
 Ju mund ta personalizoni direkt në cilësimet e pluginit tuaj të formës:
 
@@ -65,7 +65,7 @@ Ju mund ta personalizoni direkt në cilësimet e pluginit tuaj të formës:
 2. Gjeni formën e krijuar nga Site Builder.
 3. Redaktoni fushat e formës, rregjet e validimit dhe njoftimet me email sipas nevojës.
 
-## Pluginet e Formave dhe Kompatibiliteti
+## Pluginet e Formave dhe Kompatibiliteti {#form-plugins-and-compatibility}
 
 Site Builder zbulon automatikisht cilin plugin i formës është instaluar në faqen tuaj dhe e përdor atë për të krijuar formën e kontaktit. Nëse janë instaluar disa pluginet e formave, Site Builder i jep prioritet kështu:
 
@@ -76,7 +76,7 @@ Site Builder zbulon automatikisht cilin plugin i formës është instaluar në f
 
 Nëse asnjë nga këto pluginet nuk është instaluar, Site Builder do të rekomandojë instalimin e një prej tyre para krijimit të formës së kontaktit.
 
-## Njoftimet me Email
+## Njoftimet me Email {#email-notifications}
 
 Forma e kontaktit e krijuar nga Site Builder janë konfiguruar për të dërguar njoftime me email te administrator i faqes në mënyrë paracaktuar. Ju mund ta personalizoni adresën e emailit të marrës dhe mesazhin e njoftimit:
 
@@ -91,21 +91,21 @@ Për udhizaime më të detajuara, referohuni dokumentacionit të pluginit tuaj t
 - [Notifikimet me Email për Fluent Forms](https://fluentforms.com/docs/)
 - [Notifikimet me Email për Gravity Forms](https://docs.gravityforms.com/)
 
-## Shembuj Përdorimi
+## Shembuj Përdorimi {#example-use-cases}
 
-### Formi i Thjeshtë i Kontaktit
+### Formi i Thjeshtë i Kontaktit {#simple-contact-form}
 
 > "Krijoni një formë kontakt të thjeshtë me fusha për emër, email dhe mesazh."
 
-### Formë me Hapa
+### Formë me Hapa {#multi-step-form}
 
 > "Krijoni një formë kontakt me një hap të parë për informacionin e kontaktit dhe një hap të dytë për mesazhin dhe metodën e preferuar të kontaktimit."
 
-### Formë me Logjik Kondicionale
+### Formë me Logjik Kondicionale {#form-with-conditional-logic}
 
 > "Krijoni një formë kontakt që tregon fusha të ndryshme bazuar në zgjedhjen e përdoruesit në një dropdown."
 
-### Formë me Ngarkim File
+### Formë me Ngarkim File {#form-with-file-upload}
 
 > "Krijoni një formë kontakt që lejon përdoruesve të ngarkojnë një skedar ose aneks."
 

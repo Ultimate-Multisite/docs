@@ -3,7 +3,7 @@ title: Fanavaozana ny Tetikasa
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Fampitranana ny Plan (v2)
+# Fampitranana ny Plan (v2) {#upgrading-a-plan-v2}
 
 _**FANAMARI-MANAN-DANJA: Ity lahatsoratra ity dia manondro ny dikan'ny Ultimate Multisite v2.x.**_
 
@@ -39,7 +39,7 @@ Rehefa vita ny checkout dia ho ampiana ao amin'ny kaontin'ny mpanjifa ireo vokat
 
 ##
 
-## Lalan'ny Fanatsarana sy Fandresena (Upgrade and Downgrade Paths)
+## Lalan'ny Fanatsarana sy Fandresena (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 Amin'ny vokatra tsirairay anao dia hisy tabilao antsoina hoe **Up & Downgrades**. Ny safidy voalohany ao amin'io tabilao io dia tolo-kevitra iray antsoina hoe **Plan Group**.
 

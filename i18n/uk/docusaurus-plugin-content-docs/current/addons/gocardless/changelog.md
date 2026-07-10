@@ -3,7 +3,7 @@ title: GoCardless Журнал змін
 sidebar_position: 99
 _i18n_hash: 6fb81ff030ca403765c66d8e86a50faa
 ---
-# Журнал змін GoCardless
+# Журнал змін GoCardless {#gocardless-changelog}
 
 Version: 1.0.3 - Випущено 2026-05-05
 * Виправлення: Тепер очищаються сайти, що перебувають у стані очікування і є сиротами, коли членство GoCardless скасовується у стані очікування або призупинення.

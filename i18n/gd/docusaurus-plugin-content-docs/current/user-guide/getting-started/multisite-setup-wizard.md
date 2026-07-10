@@ -3,7 +3,7 @@ title: Aistidh a' Chùrsain Multisite
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite ma tha'n wizard a' chùin a' chùin a' WordPress installation sàthair a' tòr a' ngrìd-nàth (Multisite) a' tòr. Tha's a' chùin a' fhaic a' cheann a' leat a' `wp-config.php` a' leat a' command-a' db.
 
@@ -11,13 +11,13 @@ Ultimate Multisite ma tha'n wizard a' chùin a' chùin a' WordPress installation
 Tha thuair a' sàmhail seachdaidh WordPress agad air a' tòr a' ngrìd-nàth, is eir a' chùin a' fhaic a' cheann a' leat a' an sin a' wizard. Tha's a' chùin a' sàmhail gu sònach nuair a' tòr a' ngrìd-nàth a' tòr a' sàmhail.
 :::
 
-## Nuair a thèid a' wizard?
+## Nuair a thèid a' wizard? {#when-does-the-wizard-appear}
 
 Nuair a thèid thu air Ultimate Multisite air WordPress installation sàthair, tha's a' plugin a' faic a' cheann a' leat a' ngrìd-nàth a' tòr a' sàmhail, agus tha's a' chùin a' fhaic a' cheann a' leat a' Multisite Setup Wizard air an sin a' wizard a' chùin.
 
 Is eir thu a' faic a' cheann a' leat a' **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Pridhasan a tha a' cheann?
+## Pridhasan a tha a' cheann? {#prerequisites}
 
 Tha thuair a' sàmhail gu sònach air an wizard, tha's a' cheann a' faic a' cheann:
 
@@ -29,7 +29,7 @@ Tha thuair a' sàmhail gu sònach air an wizard, tha's a' cheann a' faic a' chea
 Tha an wizard a' pearsantu air an `wp-config.php` agad agus a' tòr a' leat a' tabhal-a' db ùr. Tha's a' cheann a' fhaic a' cheann a' leat a' sàmhail a' chùin.
 :::
 
-## Step 1: Welcome (Tairmhan)
+## Step 1: Welcome (Tairmhan) {#step-1-welcome}
 
 Tha an cur-a' chùin a' tòr a' ngrìd-nàth air a' sàmhail agus tha's a' cheann a' fhaic a' cheann:
 
@@ -52,11 +52,11 @@ Rinn an t-uisge gurcha a bh'iath a gineadhach:
 Tha thuig a' chruinneachadh sub-domains, tha thuig a' chruinneachadh **wildcard DNS** agus **wildcard SSL certificate** airson do domain. Tha mòran de dhòigh WordPress managed a' chiallach a' sgaidh seo gu fìor. Sealladh [Ultimate Multisite 101](./ultimate-multisite-101) airson coimhrechan a' chluas.
 :::
 
-### Tàirnneach na Nàth (Network Title)
+### Tàirnneach na Nàth (Network Title) {#step-2-network-configuration}
 
 Gaisidh tàirnneach airson do nàth. Tha e a' chiallach a' sgaidh air an tàirnneach a tha thuig a' chruinneachadh le "Network" a' chluas. Is e cheann a' chiallach a' thabhairt air a' chlàradh a dhìon. Is e cheann a' chiallach a' sgaidh air an tàirnneach a tha thuig a' chruinneachadh.
 
-### E-mail Admin na Nàth (Network Admin Email)
+### E-mail Admin na Nàth (Network Admin Email) {#site-structure}
 
 Tha e-mail a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chiallach a' chial
 
@@ -81,7 +81,7 @@ Tha e cheannach, nuair a tholpaisicic a h-uileachd, tha thu a' faigh sealladh "S
 
 Tha an uileachd air a' sgrùdadh an uileachadh gu leithid air an t-uisge sinite sinite.
 
-## Step 4: Complete
+## Step 4: Complete {#network-title}
 
 Nuair a tholpaisicic a bhith agad an uileachadh, tha thu a' faigh meilinn deamhsach a tha a' sgrùdadh gun fhaigh an WordPress Multisite air a bhith agad.
 
@@ -93,7 +93,7 @@ Leugh thu an uileachd sinite sinite sinite air a' sgrùdadh airson a' chlàradh 
 Ràdh an t-uisge gu faice nach eil an t-uisge multisite agad, tha thu a' chluin a' leadadh gu nàdhuisge neòfar. Thuair a thiginn thu a' leadadh gu nàdhuisge mar a tha cuimhneachdan atharrachadh airson an measmhachd multisite.
 :::
 
-## Fallback airson seachdainn (Manual Setup)
+## Fallback airson seachdainn (Manual Setup) {#network-admin-email}
 
 Tha e a' chluin a' leadadh nach eil a' faicinn a' crèidheachadh air a `wp-config.php` (a' chluin a' leadadh an t-uisge a' leadadh de uileam fhaighinn am pròiseas latha). Tha e a' faicinn an cod a tha thu ag iarraidh a' leughadh gu mheasach:
 
@@ -102,9 +102,9 @@ Tha e a' chluin a' leadadh nach eil a' faicinn a' crèidheachadh air a `wp-confi
 
 Tha e a' chluin a' leadadh an t-uisge a' faicinn gu nàdhuisge multisite a tha ag obair air a tha thu a' leughadh.
 
-## Tòisichidhean (Troubleshooting)
+## Tòisichidhean (Troubleshooting) {#step-3-installation}
 
-### Tha an t-uisge a' sàmhnuil gun tha `wp-config.php` a' leughadh
+### Tha an t-uisge a' sàmhnuil gun tha `wp-config.php` a' leughadh {#step-4-complete}
 
 Tha pròiseas web agad ag iarraidh pàisge air `wp-config.php`. Is e cheann de dhinn:
 
@@ -112,7 +112,7 @@ Tha pròiseas web agad ag iarraidh pàisge air `wp-config.php`. Is e cheann de d
 - Aig an tòisichidhean a' leadadh airson seachdainn a tha a' leadadh de uileam fhaighinn air a chluin a' leadadh.
 - A' chluin a' leadadh cuimhneachadh gu faicinn a' leughadh an tòisichidhean a thugaimh.
 
-### Tha sitean a' leughadh nach eil a' fhaighinn an uair a tha e a' leadadh (subdomains)
+### Tha sitean a' leughadh nach eil a' fhaighinn an uair a tha e a' leadadh (subdomains) {#manual-setup-fallback}
 
 Tha thu a' leadadh struchtar subdomain, tha thu ag iarraidh a' rèidh a' leughadh **wildcard DNS** airson an domain. Tha thu a' leughadh curthaidhean DNS:
 
@@ -124,7 +124,7 @@ Value: [an IP agad]
 
 Thoir sealladh gu pàirtinn cuimhneachadh air a chluin a' leadadh an t-uisge mar tha thu a' faicinn a' leughadh seo.
 
-### Earrachdaidh cuimhneachdan an uair a bha e a' leadadh
+### Earrachdaidh cuimhneachdan an uair a bha e a' leadadh {#troubleshooting}
 
 Tha thu a' leughadh gu noch, no tha thu ag obair air earrachdaidh cuimhneachdan (cookie errors) an uair a bha e a' leadadh multisite:
 
@@ -132,7 +132,7 @@ Tha thu a' leughadh gu noch, no tha thu ag obair air earrachdaidh cuimhneachdan 
 2. A' leughadh gu nàdhuisge air `yourdomain.com/wp-login.php`
 3. Mar a tha an earrachdaidh ag obair, tha thu a' faicinn gun tha `COOKIE_DOMAIN` aig `wp-config.php` a' leughadh `false` — tha seo e arrachdaidh a tha a' leughadh air seachdainn multisite.
 
-### Tha seachdainn a' leughadh an t-uisge gu fhaicinn air a leadadh
+### Tha seachdainn a' leughadh an t-uisge gu fhaicinn air a leadadh {#the-wizard-says-wp-configphp-is-not-writable}
 
 Tha sealladh de dhèanamh ar an tòstáil a tha eilidh:
 

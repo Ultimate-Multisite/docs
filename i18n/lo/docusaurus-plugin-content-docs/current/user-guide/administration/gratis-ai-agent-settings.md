@@ -1,105 +1,152 @@
 ---
-title: ການຕັ້ງຄ່າ AI Agent ຟຣີ
+title: ການຕັ້ງຄ່າ Gratis AI Agent
 sidebar_position: 22
-_i18n_hash: 7b593387e5e7b44903bfd6f0a1ff42ee
+_i18n_hash: 06c2f7052f5b1a44d525d8446a5403a7
 ---
-# การตั้งค่า AI Agent ฟรี
+# ການຕັ້ງຄ່າ Gratis AI Agent {#gratis-ai-agent-settings}
 
-หน้า **Settings → Advanced** ใน Gratis AI Agent จะให้การตั้งค่าระดับผู้ดูแลระบบสำหรับการเชื่อมต่อส่วนหลัง (backend integrations) ที่เพิ่มเข้ามาในเวอร์ชัน v1.5.0 หน้านี้จะอธิบายเกี่ยวกับฟิลด์ **Feedback Endpoint** และรูปแบบที่คาดหวังไว้ครับ
+ໜ້າຈໍ **ການຕັ້ງຄ່າ → ຂັ້ນສູງ** ໃນ Gratis AI Agent ໃຫ້ການກຳນົດຄ່າລະດັບຜູ້ບໍລິຫານສຳລັບການເຊື່ອມຕໍ່ backend. ໜ້ານີ້ອະທິບາຍການສົ່ງຕໍ່ຄຳຕິຊົມ, ກະແຈຜູ້ໃຫ້ບໍລິການຄົ້ນຫາ, ການຕັ້ງຄ່າບໍລິການ Superdav ທີ່ຈັດການໃຫ້, ການຄວບຄຸມ Google Calendar, ການຕັ້ງຄ່າ TextBee SMS, ແລະທຸງຄຸນສົມບັດທົ່ວເຄືອຂ່າຍ.
 
-## การเข้าถึงการตั้งค่า
+## ການເຂົ້າເຖິງການຕັ້ງຄ່າ {#accessing-settings}
 
-1. ใน WordPress admin ให้ไปที่ **Gratis AI Agent → Settings**
-2. คลิกแท็บ **Advanced**
+1. ໃນສ່ວນຜູ້ບໍລິຫານ WordPress, ໄປທີ່ **Gratis AI Agent → ການຕັ້ງຄ່າ**.
+2. ຄລິກແຖບ **ຂັ້ນສູງ**.
 
-## การกำหนดค่า Feedback Endpoint
+## ການກຳນົດຄ່າ endpoint ຄຳຕິຊົມ {#feedback-endpoint-configuration}
 
-feedback endpoint จะได้รับคำขอแบบ POST จาก AI agent ทุกครั้งที่มีผู้ใช้ส่งข้อเสนอแนะผ่านปุ่มยกนิ้วลง (thumbs-down button), แบนเนอร์ auto-prompt หรือคำสั่ง `/report-issue` ครับ
+endpoint ຄຳຕິຊົມຮັບຄຳຂໍ POST ຈາກ AI agent ເມື່ອໃດກໍຕາມທີ່ຜູ້ໃຊ້ສົ່ງຄຳຕິຊົມຜ່ານປຸ່ມຍົກນິ້ວລົງ, ແຖບຂໍ້ຄວາມເຕືອນອັດຕະໂນມັດ, ຫຼືຄຳສັ່ງ `/report-issue`.
 
-| ฟิลด์ | คำอธิบาย |
+| ຟິວ | ຄຳອະທິບາຍ |
 |---|---|
-| **Feedback Endpoint URL** | คือ URL ที่จะรับการส่งข้อเสนอแนะในรูปแบบ HTTP POST พร้อมเนื้อหาเป็น JSON body |
-| **Feedback API Key** | เป็น bearer token ที่ถูกส่งไปใน header `Authorization` ของทุกคำขอ feedback หาก endpoint ของคุณไม่ต้องการการยืนยันตัวตน (authentication) ให้ปล่อยว่างไว้ได้เลยครับ |
+| **URL endpoint ຄຳຕິຊົມ** | URL ທີ່ຮັບການສົ່ງຄຳຕິຊົມເປັນຄຳຂໍ HTTP POST ພ້ອມກັບ body JSON. |
+| **Feedback API Key** | bearer token ທີ່ສົ່ງໃນ `Authorization` header ຂອງແຕ່ລະຄຳຂໍຄຳຕິຊົມ. ປະໄວ້ຫວ່າງຖ້າ endpoint ຂອງທ່ານບໍ່ຕ້ອງການການຢືນຢັນຕົວຕົນ. |
 
-### รูปแบบ JSON Payload ที่คาดหวัง
+### JSON Payload ທີ່ຄາດໝາຍ {#expected-json-payload}
 
-feedback endpoint ของคุณจะต้องรับ JSON body ที่มีฟิลด์อย่างน้อยดังต่อไปนี้:
+endpoint ຄຳຕິຊົມຂອງທ່ານຕ້ອງຍອມຮັບ body JSON ທີ່ມີຢ່າງໜ້ອຍຟິວຕໍ່ໄປນີ້:
 
 ```json
 {
   "message_id": "msg_abc123",
   "conversation_id": "conv_xyz789",
-  "feedback_text": "คำตอบไม่ถูกต้องเกี่ยวกับราคา",
+  "feedback_text": "The answer was incorrect about pricing.",
   "triage_category": "factual_error"
 }
 ```
 
-อาจมีฟิลด์เพิ่มเติมใน payload ขึ้นอยู่กับบริบทของการสนทนาครับ
+ອາດມີຟິວເພີ່ມເຕີມໃນ payload ຂຶ້ນກັບບໍລິບົດຂອງການສົນທະນາ.
 
-### ค่าของ `triage_category`
+### ຄ່າ `triage_category` {#triagecategory-values}
 
-เลเยอร์การคัดแยก (triage layer) ของ AI จะกำหนดค่าใดค่าหนึ่งต่อไปนี้ให้กับ `triage_category` ก่อนที่จะส่ง payload ต่อไป:
+ຊັ້ນການຄັດກອງ AI ກຳນົດໜຶ່ງໃນຄ່າຕໍ່ໄປນີ້ໃຫ້ `triage_category` ກ່ອນສົ່ງຕໍ່ payload:
 
-| ค่า | ความหมาย |
+| ຄ່າ | ຄວາມໝາຍ |
 |---|---|
-| `factual_error` | ผู้ช่วยให้ข้อมูลข้อเท็จจริงที่ไม่ถูกต้อง |
-| `unhelpful_answer` | คำตอบนั้นถูกต้องในทางเทคนิคแต่ไม่เป็นประโยชน์ |
-| `inappropriate_content` | คำตอบมีเนื้อหาที่ไม่ควรแสดงให้ผู้ใช้เห็น |
-| `other` | ข้อเสนอแนะไม่ตรงกับหมวดหมู่ที่รู้จัก |
+| `factual_error` | ຜູ້ຊ່ວຍໃຫ້ຂໍ້ມູນຂໍ້ເທັດຈິງທີ່ບໍ່ຖືກຕ້ອງ. |
+| `unhelpful_answer` | ຄຳຕອບຖືກຕ້ອງທາງເທັກນິກ ແຕ່ບໍ່ເປັນປະໂຫຍດ. |
+| `inappropriate_content` | ຄຳຕອບມີເນື້ອຫາທີ່ບໍ່ຄວນສະແດງໃຫ້ຜູ້ໃຊ້ເຫັນ. |
+| `other` | ຄຳຕິຊົມບໍ່ກົງກັບໝວດໝູ່ທີ່ຮູ້ຈັກ. |
 
-### การยืนยันตัวตน (Authentication)
+### ການຢືນຢັນຕົວຕົນ {#authentication}
 
-ຖ້າ endpoint ຂອງທ່ານຕ້ອງການການຢັ້ງຢືນ (authentication), ໃຫ້ຕັ້ງຄ່າຊ່ອງ **Feedback API Key** ເປັນ bearer token ຂອງທ່ານ. agent ຈະສົ່ງ:
+ຖ້າ endpoint ຂອງທ່ານຕ້ອງການການຢືນຢັນຕົວຕົນ, ຕັ້ງຟິວ **Feedback API Key** ເປັນ bearer token ຂອງທ່ານ. agent ຈະສົ່ງ:
 
 ```
 Authorization: Bearer <your-api-key>
 ```
 
-ຖ້າຊ່ອງ **Feedback API Key** ຫວ່າງ, ຈະບໍ່ມີ header `Authorization` ສົ່ງໄປ.
+ຖ້າຟິວ **Feedback API Key** ຫວ່າງ, ຈະບໍ່ມີການສົ່ງ `Authorization` header.
 
-### ການປິດການເກັບ Feedback
+### ການປິດໃຊ້ການເກັບຄຳຕິຊົມ {#disabling-feedback-collection}
 
-ໃຫ້ປະໄວ້ທັງຊ່ອງ **Feedback Endpoint URL** ແລະ **Feedback API Key** ຫວ່າງ. ປຸ່ມ thumbs-down ແລະ UI feedback ຍັງເຫັນໄດ້ກັບຜູ້ໃຊ້, ແຕ່ການສົ່ງຂໍ້ມູນຈະບໍ່ຖືກສົ່ງຕໍ່ໄປຫາບໍລິການພາຍນອກໃດໆ.
+ປະຟິວ **URL endpoint ຄຳຕິຊົມ** ແລະ **Feedback API Key** ທັງສອງໄວ້ຫວ່າງ. ປຸ່ມຍົກນິ້ວລົງ ແລະ UI ຄຳຕິຊົມຍັງຄົງສະແດງໃຫ້ຜູ້ໃຊ້ເຫັນ, ແຕ່ການສົ່ງຈະບໍ່ຖືກສົ່ງຕໍ່ໄປຫາບໍລິການພາຍນອກໃດໆ.
 
-## Brave Search API Key
+## Brave Search API Key {#brave-search-api-key}
 
-ໃນ tab **Advanced** ນັ້ນ, ຊ່ອງ **Brave Search API Key** ກໍເຮັດໃຫ້ຄວາມສາມາດໃນການຄົ້ນຫາອິນເຕີເນັດ [Internet Search](../configuration/internet-search) ເປີດໃຊ້ໄດ້.
+ຢູ່ໃນແຖບ **ຂັ້ນສູງ** ເຊັ່ນກັນ, ຟິວ **Brave Search API Key** ເປີດໃຊ້ຄວາມສາມາດ [ການຄົ້ນຫາອິນເຕີເນັດ](../configuration/internet-search).
 
-| Field | Description |
+| ຟິວ | ຄຳອະທິບາຍ |
 |---|---|
-| **Brave Search API Key** | API key ຂອງທ່ານຈາກ developer dashboard ຂອງ Brave Search. ຈຳເປັນຕ້ອງມີເພື່ອເປີດໃຊ້ການຄົ້ນຫາອິນເຕີເນັດໃນ AI assistant. |
+| **Brave Search API Key** | API key ຂອງທ່ານຈາກ dashboard ນັກພັດທະນາ Brave Search. ຈຳເປັນສຳລັບການເປີດໃຊ້ການຄົ້ນຫາອິນເຕີເນັດໃນ AI assistant. |
 
-ປ້າຍຊື່ຊ່ອງນີ້ມີ link ສາມາດກົດເຂົ້າໄປໄດ້ສູ່ໜ້າລົງທະບຽນ Brave Search API. ຖ້າປະໄວ້ຫວ່າງ ເພື່ອປິດການຄົ້ນຫາອິນເຕີເນັດ.
+ປ້າຍຊື່ຟິວມີລິ້ງທີ່ຄລິກໄດ້ໄປຫາໜ້າລົງທະບຽນ Brave Search API. ປະໄວ້ຫວ່າງເພື່ອປິດໃຊ້ການຄົ້ນຫາອິນເຕີເນັດ.
 
-ເບິ່ງ [Internet Search](../configuration/internet-search) ເພື່ອຂໍ້ມູນຂອງຜູ້ໃຊ້ກ່ຽວກັບຟີເຈີນີ້.
+ເບິ່ງ [ການຄົ້ນຫາອິນເຕີເນັດ](../configuration/internet-search) ສຳລັບເອກະສານຜູ້ໃຊ້ປາຍທາງກ່ຽວກັບຄຸນສົມບັດນີ້.
 
-## Feature Flags
+## ບໍລິການ Superdav ທີ່ຈັດການໃຫ້ {#managed-superdav-service}
 
-ຖືກເພີ່ມເຂົ້າມາໃນ v1.9.0 ນີ້, tab **Settings → Feature Flags** ຈະມີປຸ່ມ toggle ສຳລັບການເຮັດວຽກທາງເລືອກ. ແຕ່ລະ flag ຈະເປີດໃຊ້ ຫຼື ปิดໃຊ້ທົ່ວເຄືອຂ່າຍ; ຕອນນີ້ຍັງບໍ່ມີການປິດແບບສະເພາະ site ເລີຍ.
+Superdav AI Agent v1.18.0 ເພີ່ມ endpoint ບໍລິການ Superdav ທີ່ຈັດການໃຫ້ ແລະການຈັດຫາການເຊື່ອມຕໍ່ອັດຕະໂນມັດສຳລັບ site ທີ່ຮອງຮັບ. ໃຊ້ການຄວບຄຸມເຫຼົ່ານີ້ເມື່ອ site ຂອງທ່ານຄວນເຊື່ອມຕໍ່ກັບຜູ້ໃຫ້ບໍລິການທີ່ໂຮສໄວ້ ແທນທີ່ endpoint ບໍລິການທີ່ກຳນົດຄ່າດ້ວຍຕົນເອງ.
 
-### ການເຂົ້າເຖິງ Feature Flags
+| ຟິວ | ຄຳອະທິບາຍ |
+|---|---|
+| **ບໍລິການ Superdav ທີ່ຈັດການໃຫ້** | ເປີດໃຊ້ການເຊື່ອມຕໍ່ບໍລິການ Superdav ທີ່ໂຮສໄວ້ສຳລັບ site ທີ່ຮອງຮັບ. |
+| **ຈັດຫາການເຊື່ອມຕໍ່** | ເລີ່ມການຈັດຫາ endpoint ແລະຂໍ້ມູນຮັບຮອງອັດຕະໂນມັດ. ໃຊ້ສິ່ງນີ້ຫຼັງຈາກຢືນຢັນວ່າ site ຄວນໃຊ້ຜູ້ໃຫ້ບໍລິການທີ່ຈັດການໃຫ້. |
+| **endpoint ບໍລິການ / ສະຖານະການເຊື່ອມຕໍ່** | ສະແດງ endpoint ຫຼືສະຖານະການເຊື່ອມຕໍ່ປັດຈຸບັນຫຼັງຈາກການຈັດຫາ. |
 
-1. ໃນ WordPress admin, ໄປທີ່ **Gratis AI Agent → Settings**.
-2. ກົດ tab **Feature Flags**.
+ຫຼັງຈາກການຈັດຫາ, ບັນທຶກການຕັ້ງຄ່າ ແລະກວດສອບສະຖານະການເຊື່ອມຕໍ່ກ່ອນພຶ່ງພາ workflow ຂອງບໍລິການທີ່ຈັດການໃຫ້. ຖ້າການຈັດຫາລົ້ມເຫຼວ, ກວດເບິ່ງຄຳແນະນຳການລອງໃໝ່ທີ່ສະແດງ ແລະຢືນຢັນວ່າ site ມີສິດໃຊ້ຜູ້ໃຫ້ບໍລິການທີ່ໂຮສໄວ້.
 
-### Access Control Flags
+## ການກຳນົດຄ່າ Google Calendar {#google-calendar-configuration}
 
-| Flag | Default | Mô tả |
+ເມື່ອເປີດໃຊ້ຄຸນສົມບັດປະຕິທິນຂອງ Superdav AI Agent v1.18.0, agent ສາມາດອ່ານປະຕິທິນທີ່ກຳນົດຄ່າໄວ້ ແລະລາຍລະອຽດເຫດການ. ເຄື່ອງມືປະຕິທິນເນັ້ນການອ່ານ ແລະມີປະໂຫຍດສຳລັບການເຕືອນທີ່ຮູ້ຕາຕະລາງ, ການຕິດຕາມຜູ້ເຂົ້າຮ່ວມ, ແລະການຈັບຄູ່ຜູ້ຕິດຕໍ່.
+
+| ຟິວ | ຄຳອະທິບາຍ |
+|---|---|
+| **ຂໍ້ມູນຮັບຮອງ Google Calendar** | ເກັບຂໍ້ມູນຮັບຮອງ ຫຼືການເຊື່ອມຕໍ່ token ທີ່ຈຳເປັນເພື່ອອ່ານຂໍ້ມູນປະຕິທິນ. |
+| **ການເລືອກປະຕິທິນ** | ຈຳກັດວ່າ agent ສາມາດກວດເບິ່ງປະຕິທິນທີ່ກຳນົດຄ່າໄວ້ໃດໄດ້. |
+| **ສະຖານະການເຊື່ອມຕໍ່ປະຕິທິນ** | ຢືນຢັນວ່າຂໍ້ມູນຮັບຮອງປັດຈຸບັນສາມາດອ່ານປະຕິທິນ ແລະເຫດການໄດ້ຫຼືບໍ່. |
+
+ຈຳກັດຂໍ້ມູນຮັບຮອງປະຕິທິນໃຫ້ຢູ່ພຽງປະຕິທິນທີ່ agent ຕ້ອງການ. ເຊື່ອມຕໍ່ໃໝ່ ຫຼືປ່ຽນຂໍ້ມູນຮັບຮອງຖ້າສະຖານະລະບຸວ່າ token ໝົດອາຍຸ.
+
+## ການແຈ້ງເຕືອນ TextBee SMS {#textbee-sms-notifications}
+
+Superdav AI Agent v1.18.0 ເພີ່ມ TextBee ເປັນຜູ້ໃຫ້ບໍລິການ SMS ສຳລັບ workflow ການແຈ້ງເຕືອນທີ່ກຳນົດຄ່າໄວ້. ການແຈ້ງເຕືອນ SMS ຄວນຈັບຄູ່ກັບດ່ານການອະນຸມັດຈາກມະນຸດສຳລັບຂໍ້ຄວາມທີ່ອ່ອນໄຫວ ຫຼືຫັນໜ້າຫາຜູ້ໃຊ້.
+
+| ຟິວ | ຄຳອະທິບາຍ |
+|---|---|
+| **TextBee API Key** | ຢືນຢັນຕົວຕົນຄຳຂໍໄປຫາຜູ້ໃຫ້ບໍລິການ TextBee SMS. |
+| **TextBee Device / ຜູ້ສົ່ງ** | ເລືອກຜູ້ສົ່ງ ຫຼືອຸປະກອນ TextBee ທີ່ໃຊ້ສຳລັບຂໍ້ຄວາມຂາອອກ, ເມື່ອຜູ້ໃຫ້ບໍລິການຕ້ອງການ. |
+| **ເປີດໃຊ້ການແຈ້ງເຕືອນ SMS** | ອະນຸຍາດໃຫ້ workflow ທີ່ອະນຸມັດແລ້ວສົ່ງການແຈ້ງເຕືອນແບບຂໍ້ຄວາມ. ປະໄວ້ໃຫ້ປິດໃຊ້ເພື່ອປ້ອງກັນການສົ່ງ SMS. |
+
+ສົ່ງຂໍ້ຄວາມທົດສອບໄປຫາເລກທີ່ຜູ້ບໍລິຫານເປັນເຈົ້າຂອງເທົ່ານັ້ນ, ຈາກນັ້ນຢືນຢັນພຶດຕິກຳດ່ານການອະນຸມັດກ່ອນເປີດໃຊ້ການເຕືອນທີ່ກຳນົດເວລາໄວ້ ຫຼືຫັນໜ້າຫາຜູ້ເຂົ້າຮ່ວມ.
+
+## ທຸງຄຸນສົມບັດ {#feature-flags}
+
+ຖືກນຳເຂົ້າໃນ v1.9.0 ເຊັ່ນກັນ, ແຖບ **ການຕັ້ງຄ່າ → ທຸງຄຸນສົມບັດ** ໃຫ້ສະວິດເປີດປິດສຳລັບຟັງຊັນທາງເລືອກ. ແຕ່ລະທຸງຈະເປີດໃຊ້ ຫຼືປິດໃຊ້ທົ່ວເຄືອຂ່າຍ; ຂະນະນີ້ບໍ່ມີການຂຽນທັບແຍກຕາມ site.
+
+### ການເຂົ້າເຖິງທຸງຄຸນສົມບັດ {#accessing-feature-flags}
+
+1. ໃນສ່ວນຜູ້ບໍລິຫານ WordPress, ໄປທີ່ **Gratis AI Agent → ການຕັ້ງຄ່າ**.
+2. ຄລິກແຖບ **ທຸງຄຸນສົມບັດ**.
+
+### ທຸງການຄວບຄຸມການເຂົ້າເຖິງ {#access-control-flags}
+
+| ທຸງ | ຄ່າເລີ່ມຕົ້ນ | ຄຳອະທິບາຍ |
 |---|---|---|
-| **Hạn chế cho Quản trị viên** | Tắt | Khi bật, chỉ những người dùng có vai trò `administrator` mới có thể mở bảng trò chuyện của AI Agent. Các vai trò khác sẽ thấy thông báo "Liên hệ với quản trị viên của bạn". |
-| **Hạn chế cho Quản trị viên mạng** | Tắt | Khi được bật trên mạng đa trang (multisite), chỉ Siêu Quản trị viên mới có thể sử dụng agent. Quản trị viên trang cá nhân sẽ bị chặn. Nó sẽ ưu tiên hơn "Hạn chế cho Quản trị viên" nếu cả hai đều được bật. |
-| **Cho phép Người đăng ký truy cập** | Tắt | Khi bật, người dùng có vai trò `subscriber` có thể sử dụng giao diện trò chuyện nhưng chỉ giới hạn ở khả năng đọc (không tạo bài viết hoặc thay đổi cài đặt). |
-| **Tắt cho Người không phải thành viên** | Tắt | Tích hợp với trạng thái thành viên của Ultimate Multisite. Khi được bật, cửa sổ trò chuyện sẽ bị ẩn đối với các trang không có tư cách thành viên đang hoạt động. |
+| **ຈຳກັດໃຫ້ແຕ່ຜູ້ບໍລິຫານ** | ປິດ | ເມື່ອເປີດໃຊ້, ມີພຽງຜູ້ໃຊ້ທີ່ມີບົດບາດ `administrator` ເທົ່ານັ້ນທີ່ສາມາດເປີດແຜງແຊັດ AI Agent ໄດ້. ບົດບາດອື່ນທັງໝົດຈະເຫັນຂໍ້ຄວາມ "ຕິດຕໍ່ຜູ້ບໍລິຫານຂອງທ່ານ" ແທນ. |
+| **ຈຳກັດໃຫ້ແຕ່ Network Admins** | ປິດ | ເມື່ອເປີດໃຊ້ໃນເຄືອຂ່າຍ multisite, ມີພຽງ Super Admins ເທົ່ານັ້ນທີ່ສາມາດໃຊ້ຕົວແທນໄດ້. ຜູ້ບໍລິຫານເວັບໄຊລາຍບຸກຄົນຈະຖືກບລັອກ. ມີລຳດັບຄວາມສຳຄັນເໜືອ "ຈຳກັດໃຫ້ແຕ່ຜູ້ບໍລິຫານ" ຖ້າທັງສອງຖືກເປີດໃຊ້. |
+| **ອະນຸຍາດການເຂົ້າເຖິງສຳລັບ Subscriber** | ປິດ | ເມື່ອເປີດໃຊ້, ຜູ້ໃຊ້ທີ່ມີບົດບາດ `subscriber` ສາມາດໃຊ້ອິນເຕີເຟດແຊັດໄດ້ ແຕ່ຈະຖືກຈຳກັດໃຫ້ມີຄວາມສາມາດແບບອ່ານຢ່າງດຽວ (ບໍ່ມີການສ້າງໂພສ ຫຼື ການປ່ຽນການຕັ້ງຄ່າ). |
+| **ປິດໃຊ້ສຳລັບຜູ້ທີ່ບໍ່ແມ່ນສະມາຊິກ** | ປິດ | ເຊື່ອມຮວມກັບສະຖານະສະມາຊິກ Ultimate Multisite. ເມື່ອເປີດໃຊ້, ແຊັດຈະຖືກເຊື່ອງສຳລັບເວັບໄຊທີ່ບໍ່ມີສະມາຊິກທີ່ໃຊ້ງານຢູ່. |
 
-### Cờ Thương hiệu (Branding Flags)
+### ທຸງການສ້າງແບຣນ {#branding-flags}
 
-| Flag | Default | Mô tả |
+| ທຸງ | ຄ່າເລີ່ມຕົ້ນ | ຄຳອະທິບາຍ |
 |---|---|---|
-| **Ẩn chân trang "Được cung cấp bởi AI Agent miễn phí"** | Tắt | Loại bỏ dòng ghi nhận thương hiệu được hiển thị ở cuối widget trò chuyện. Khuyến nghị cho các triển khai nhãn trắng (white-label). |
-| **Tên Agent tùy chỉnh** | *(trống)* | Thay thế nhãn mặc định "Gratis AI Agent" trong tiêu đề trò chuyện và menu quản trị bằng tên sản phẩm của bạn. Để trống để sử dụng mặc định. |
-| **Ẩn Bộ chọn Agent** | Tắt | Khi được bật, người dùng không thể chuyển đổi giữa năm agent tích hợp sẵn. Agent hiện tại sẽ được cố định theo cấu hình mặc định trong Cài đặt → Chung (Settings → General). |
-| **Sử dụng Biểu tượng Trang web làm Ảnh đại diện Trò chuyện** | Tắt | Thay thế biểu tượng AI mặc định trong tiêu đề widget trò chuyện bằng biểu tượng trang web WordPress (được thiết lập trong Appearance → Customize → Site Identity). |
+| **ເຊື່ອງສ່ວນທ້າຍ "Powered by Gratis AI Agent"** | ປິດ | ເອົາແຖວການອ້າງອີງແບຣນທີ່ສະແດງຢູ່ດ້ານລຸ່ມຂອງວິດເຈັດແຊັດອອກ. ແນະນຳສຳລັບການນຳໃຊ້ແບບ white-label. |
+| **ຊື່ຕົວແທນກຳນົດເອງ** | *(ວ່າງ)* | ແທນປ້າຍເລີ່ມຕົ້ນ "Gratis AI Agent" ໃນສ່ວນຫົວແຊັດ ແລະ ເມນູຜູ້ບໍລິຫານ ດ້ວຍຊື່ຜະລິດຕະພັນຂອງທ່ານເອງ. ປ່ອຍໃຫ້ວ່າງເພື່ອໃຊ້ຄ່າເລີ່ມຕົ້ນ. |
+| **ເຊື່ອງຕົວເລືອກຕົວແທນ** | ປິດ | ເມື່ອເປີດໃຊ້, ຜູ້ໃຊ້ບໍ່ສາມາດສະຫຼັບລະຫວ່າງຕົວແທນໃນຕົວຫ້າຕົວໄດ້. ຕົວແທນປັດຈຸບັນຈະຖືກກຳນົດຄົງທີ່ເປັນອັນໃດກໍຕາມທີ່ຖືກຕັ້ງເປັນຄ່າເລີ່ມຕົ້ນໃນ ການຕັ້ງຄ່າ → ທົ່ວໄປ. |
+| **ໃຊ້ໄອຄອນເວັບໄຊເປັນອາວາຕາແຊັດ** | ປິດ | ແທນໄອຄອນ AI ເລີ່ມຕົ້ນໃນສ່ວນຫົວວິດເຈັດແຊັດດ້ວຍໄອຄອນເວັບໄຊ WordPress (ຕັ້ງຄ່າພາຍໃຕ້ ຮູບລັກສະນະ → ປັບແຕ່ງ → ຕົວຕົນເວັບໄຊ). |
 
-### Áp dụng Thay đổi
+### ທຸງຄວາມປອດໄພຂອງອັດຕະໂນມັດ {#automation-safety-flags}
 
-Nhấn **Lưu Cài đặt** sau khi chuyển đổi bất kỳ cờ nào. Các thay đổi có hiệu lực ngay lập tức — không cần xóa cache hay kích hoạt lại plugin.
+Superdav AI Agent v1.18.0 ແນະນຳປະຕູການອະນຸມັດຈາກມະນຸດ ແລະ ບັນທຶກການເຕືອນຄວາມຈຳ ສຳລັບການຣັນອັດຕະໂນມັດທີ່ປອດໄພກວ່າ. ຕົວຄວບຄຸມເຫຼົ່ານີ້ອາດປາກົດໃນທຸງຟີເຈີ ຫຼື ການຕັ້ງຄ່າອັດຕະໂນມັດຂັ້ນສູງ, ຂຶ້ນກັບແພັກເກດທີ່ຕິດຕັ້ງ.
+
+| ທຸງ | ຄ່າເລີ່ມຕົ້ນ | ຄຳອະທິບາຍ |
+|---|---|---|
+| **ຕ້ອງການການອະນຸມັດຈາກມະນຸດ** | ແນະນຳໃຫ້ເປີດ | ຢຸດອັດຕະໂນມັດທີ່ອ່ອນໄຫວໄວ້ຊົ່ວຄາວ ຈົນກວ່າຜູ້ໃຊ້ທີ່ໄດ້ຮັບອະນຸຍາດຈະກວດທານ ແລະ ຢືນຢັນການກະທຳທີ່ສະເໜີ. |
+| **ການກຳຈັດການເຕືອນຊ້ຳ** | ເປີດ | ບັນທຶກການເຕືອນທີ່ສົ່ງແລ້ວ ເພື່ອໃຫ້ການລອງໃໝ່ ຫຼື ການຣັນຕາມກຳນົດການບໍ່ສົ່ງການແຈ້ງເຕືອນຊ້ຳ. |
+| **ເປີດໃຊ້ເຄື່ອງມືປະຕິທິນ** | ປິດຈົນກວ່າຈະກຳນົດຄ່າ | ອະນຸຍາດໃຫ້ຕົວແທນອ່ານປະຕິທິນ Google ແລະ ເຫດການທີ່ກຳນົດຄ່າໄວ້. |
+| **ເປີດໃຊ້ການແຈ້ງເຕືອນ SMS** | ປິດຈົນກວ່າຈະກຳນົດຄ່າ | ອະນຸຍາດໃຫ້ເວີກໂຟລວທີ່ອະນຸມັດແລ້ວສົ່ງການແຈ້ງເຕືອນ TextBee SMS ຫຼັງຈາກບັນທຶກຂໍ້ມູນປະຈຳຕົວແລ້ວ. |
+
+### ການນຳໃຊ້ການປ່ຽນແປງ {#applying-changes}
+
+ຄລິກ **ບັນທຶກການຕັ້ງຄ່າ** ຫຼັງຈາກສະຫຼັບທຸງໃດໆ. ການປ່ຽນແປງຈະມີຜົນທັນທີ — ບໍ່ຈຳເປັນຕ້ອງລ້າງແຄຊ ຫຼື ເປີດໃຊ້ plugin ໃໝ່.

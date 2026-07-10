@@ -3,11 +3,11 @@ title: Yin da ake bukata
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# شروط Ultimate Multisite
+# شروط Ultimate Multisite {#ultimate-multisite-requirements}
 
 قبل از اینکه بخواهید Ultimate Multisite رو بخرید، اولین چیزی که ممکنه از خودتون بپرسید اینه که برای اجرای افزونه ما چه نیازی هست. خب خوشبختانه، فقط چند تا شرط اساسی برای اجرای Ultimate Multisite وجود داره: یک **نام دامنه**، یک **ارائه‌دهنده هاستینگ** خوب و یک نصب **Multisite** در وردپرس. همین‌ها کافیه!
 
-## نام دامنه
+## نام دامنه {#domain-name}
 
 اول، بیایید در مورد نام دامنه صحبت کنیم.
 
@@ -17,7 +17,7 @@ _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 
 هر تخصص یا حوزه‌ای که انتخاب می‌کنید، تا زمانی که وب‌سایت‌ها را به عنوان یک سرویس بفروشید، می‌توانید از افزونه ما استفاده کنید! مطمئن شوید نام دامنه‌ای را انتخاب می‌کنید که با برنامه کسب‌وکار شما همخوانی داشته باشد.
 
-## ارائه‌دهنده هاستینگ
+## ارائه‌دهنده هاستینگ {#hosting-provider}
 
 حالا که یک نام دامنه جذاب دارید که نشان‌دهنده تخصص و کسب‌وکار شماست، باید یک شرکت هاستینگ وب خوب برای میزبانی شبکه خود با Ultimate Multisite انتخاب کنید. گزینه‌های خوبی در بازار وجود دارد. برخی از ارائه‌دهندگان هاستینگ به خوبی با Ultimate Multisite سازگار هستند، که بسته به اینکه قصد ساخت چه چیزی دارید، ممکن است عامل تعیین‌کننده‌ای باشد.
 
@@ -25,7 +25,7 @@ Ultimate Multisite kowane hosting providers aiki aiki zaiye. Hanya bambancin shi
 
 Idan yana nufin bayanan server, ba akwai wata shari'a ta musamman ba saboda zai dogara ne ga ƙarin siffofi da ayyukan da za ka bayar. Kuma kuma girman gida (network) naka. Hosting na raba (shared hosting) zai iya zama wani kyau a farko, amma yayin da gidan ku ya fara girma, zai yiwu cewa za ka buƙaci wani dedicated VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Yanzu, mu tattauna rikitarwa kan installation na WordPress Multisite.
 

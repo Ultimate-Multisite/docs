@@ -1,132 +1,138 @@
 ---
-title: Hoe om Domein-mapping te Konfigureer
+title: Hoe om domeinkartering op te stel
 sidebar_position: 6
-_i18n_hash: 70b0ea1fd4e24e701978329f52843452
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Hoe om Domeinmapping te Konfigureer (v2)
+# Hoe om domeinkartering op te stel (v2) {#how-to-configure-domain-mapping-v2}
 
-_**BELANGRIKIEKE OPMERKING: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
+_**BELANGRIKE NOTA: Hierdie artikel verwys na Ultimate Multisite weergawe 2.x.**_
 
-Een van die kragtigste kenmerke van 'n premium netwerk is die vermoë om ons kliënte die geleentheid te gee om 'n top-level domein aan hul webwerwe te koppel. Want, wat lyk meer professioneel: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) of [_**joesbikeshop.com**_](http://joesbikeshop.com)? Daarom bied Ultimate Multisite hierdie kenmerk ingebou, sonder dat jy derde party plugins hoef te gebruik.
+Een van die kragtigste kenmerke van ’n premium-netwerk is die vermoë om ons kliënte die kans te bied om ’n topvlakdomein aan hul webwerwe te koppel. Per slot van rekening, wat lyk meer professioneel: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) of [_**joesbikeshop.com**_](http://joesbikeshop.com)? Daarom bied Ultimate Multisite daardie kenmerk ingebou, sonder dat dit nodig is om derdeparty-plugins te gebruik.
 
-## Wat is domeinmapping?
+## Wat is domeinkartering? {#whats-domain-mapping}
 
-Soos die naam voorgstel, is domeinmapping die vermoë wat Ultimate Multisite bied om 'n versoek vir 'n aangepaste domein te ontvang en daardie versoek te koppel aan die ooreenstemmende webwerf in die netwerk met daardie spesifieke domein aangeheg.
+Soos die naam aandui, is domeinkartering die vermoë wat deur Ultimate Multisite gebied word om ’n versoek vir ’n pasgemaakte domein te ontvang en daardie versoek te karteer na die ooreenstemmende webwerf in die netwerk waaraan daardie spesifieke domein gekoppel is.
 
-### Hoe om domeinmapping op jou Ultimate Multisite Netwerk op te stel
+### Hoe om domeinkartering op jou Ultimate Multisite-netwerk op te stel {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domeinmapping vereis 'n bietjie opstelling van jou kant om te werk. Gelukkig outomatiseer Ultimate Multisite die moeilike werk vir jou, sodat jy maklik aan die vereistes kan voldoen.
+Domeinkartering vereis ’n bietjie opstelling van jou kant af om te werk. Gelukkig outomatiseer Ultimate Multisite die harde werk vir jou sodat jy maklik aan die vereistes kan voldoen.
 
-Tydens die Ultimate Multisite-installasie sal die wizard outomaties die **sunrise.php** na die aangewese lêerhouer kopieer en installeer. **Die wizard sal jou nie toelaat om voort te gaan totdat hierdie stap voltooi is nie.**
+Tydens Ultimate Multisite-installasie sal die assistent outomaties die **sunrise.php** na die aangewese vouer kopieer en installeer. **Die assistent sal jou nie toelaat om voort te gaan totdat hierdie stap voltooi is nie**.
 
-<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
+<!-- Skermskoot nie beskikbaar nie: Ultimate Multisite-installasieassistent met sunrise.php-stap -->
 
-Dit beteken dat sodra die Ultimate Multisite-installasie-wizard jou netwerk ingestel het, kan jy dadelik met die mappasie van die aangepaste domein begin.
+Dit beteken dat sodra die Ultimate Multisite-installasieassistent klaar is met die opstelling van jou netwerk, jy dadelik die pasgemaakte domein kan begin karteer.
 
-Let wel dat domeinmapping in Ultimate Multisite nie verpligtend is nie. Jy het die opsie om die ingebooide WordPress Multisite domeinmappasie-funksie of enige ander domeinmappasie-oplossing te gebruik.
+Let daarop dat domeinkartering in Ultimate Multisite nie verpligtend is nie. Jy het die opsie om WordPress Multisite se inheemse domeinkarteringsfunksie of enige ander domeinkarteringsoplossing te gebruik.
 
-Indien jy Ultimate Multisite domeinmappasie wil uitskakel om plek te maak vir ander domeinmappasie-oplossings, kan jy hierdie kenmerk uitskakel onder **Ultimate Multisite > Settings > Domain Mapping**.
+Indien jy Ultimate Multisite-domeinkartering moet deaktiveer om plek te maak vir ander domeinkarteringsoplossings, kan jy hierdie kenmerk onder **Ultimate Multisite > Settings > Domain Mapping** deaktiveer.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Domeinkartering-instellingsbladsy wat admin-herleiding, karteringsboodskap en DNS-opsies wys](/img/config/domain-mapping-settings.png)
 
-Net onder hierdie opsie, kan jy ook die opsie **Force Admin Redirect** sien. Hierdie opsie laat jou toe om te bepaal of jou kliënte toegang tot hul admin-dashboard sal hê op hul aangepaste domein en subdomein, of net op een van die twee.
+Reg onder hierdie opsie kan jy ook die opsie **Force Admin Redirect** sien. Hierdie opsie laat jou toe om te beheer of jou kliënte toegang tot hul admin-Dashboard op beide hul pasgemaakte domein en subdomein sal hê, of slegs op een van hulle.
 
-As jy **Force redirect to mapped domain** kies, sal jou kliënte slegs toegang tot hul admin-dashboard hê op hul aangepaste domeine.
+As jy **Force redirect to mapped domain** kies, sal jou kliënte slegs toegang tot hul admin-Dashboard op hul pasgemaakte domeine hê.
 
-Die opsie **Force redirect to network domain** sal presies die teenoorgestelde doen – jou kliënte sal slegs toegang tot hul dashboards word toegelaat op hul subdomein, selfs as hulle probeer aanmeld op hul aangepaste domeine.
+Die opsie **Force redirect to** **network domain** sal presies die teenoorgestelde doen - jou kliënte sal slegs toegelaat word om toegang tot hul Dashboards op hul subdomein te verkry, selfs as hulle probeer om op hul pasgemaakte domeine aan te meld.
 
-En die opsie **Allow access to the admin by both mapped domain domain and network domain** laat hulle toe om toegang tot hul admin-dashboards te hê op beide die subdomein en die aangepaste domein.
+En die opsie **Allow access to the admin by both mapped domain domain and network domain** laat hulle toe om toegang tot hul admin-Dashboards op beide die subdomein en die pasgemaakte domein te verkry.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Admin-herleiding-aftreklys oopgevou wat die drie herleidingsopsies wys](/img/config/domain-mapping-redirect-options.png)
 
-Daar is twee maniere om 'n aangepaste domein te map. Die eerste is deur die domeinnaam vanaf jou netwerk-admin-dashboard as super admin, en die tweede is deur die subwerf-admin-dashboard onder die rekeningbladsy.
+Daar is twee maniere om ’n pasgemaakte domein te karteer. Die eerste is deur die domeinnaam vanaf jou netwerk-admin-Dashboard as die super-admin te karteer, en die tweede is deur die subwebwerf-admin-Dashboard onder die Account-bladsy.
 
-Maar voordat jy die aangepaste domein aan een van die subwerwe in jou netwerk begin map, moet jy verseker dat die **DNS-instellings** van die domeinnaam korrek gekonfigureer is.
+Maar voordat jy die pasgemaakte domein aan een van die subwebwerwe in jou netwerk begin karteer, sal jy moet seker maak dat die **DNS-instellings** van die domeinnaam behoorlik gekonfigureer is.
 
 ###
 
-### Verseker dat die domein DNS-instellings korrek gekonfigureer is
+### Maak seker dat die domein se DNS-instellings behoorlik gekonfigureer is {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Vir 'n mappasie om te werk, moet jy verseker dat die domein wat jy beplan om te map, na jou Netwerk se IP-adres wys. Let op dat jy die Netwerk IP-adres benodig – die IP-adres van die domein waar Ultimate Multisite geïnstalleer is – en nie die IP-adres van die aangepaste domein wat jy wil map nie. Om na die IP-adres van 'n spesifieke domein te soek, stel ons voor om na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) te gaan, byvoorbeeld.
+Vir ’n kartering om te werk, moet jy seker maak dat die domein wat jy beplan om te karteer na jou netwerk se IP-adres wys. Let daarop dat jy die netwerk-IP-adres benodig - die IP-adres van die domein waar Ultimate Multisite geïnstalleer is - nie die IP-adres van die pasgemaakte domein wat jy wil karteer nie. Om na die IP-adres van ’n spesifieke domein te soek, stel ons voor dat jy byvoorbeeld na [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) gaan.
 
-Om die domein korrek te map, moet jy 'n **A RECORD** by jou **DNS**-konfigurasie voeg wat na daardie **IP-adres** wys. DNS-bestuur verskil baie tussen verskillende domein-registreerders, maar daar is baie tutorials aanlyn wat dit dek as jy soek na " _Creating A Record on XXXX_ " waar XXXX jou domein-registreerder is (bv.: " _Creating A Record on_ _GoDaddy_ ").
+Om die domein korrek te karteer, moet jy ’n **A RECORD** op jou **DNS**-konfigurasie byvoeg wat na daardie **IP-adres** wys. DNS-bestuur verskil baie tussen verskillende domeinregistreerders, maar daar is volop tutoriale aanlyn wat dit dek as jy soek vir " _Creating A Record on XXXX_ " waar XXXX jou domeinregistreerder is (bv.: " _Creating A Record on_ _GoDaddy_ ").
 
-As jy sukkel om dit te laat werk, **kontak jou domein-registreerder se ondersteuning** en hulle sal jou met hierdie deel kan help.
+As jy sukkel om dit te laat werk, **kontak jou domeinregistreerder se ondersteuning** en hulle sal jou met hierdie deel kan help.
 
-As jy beplan om jou kliënte toe te laat om hul eie domeine te map, sal hulle die werk op hierdie deel self moet doen. Wys hulle na hul registreerder-ondersteuningssisteem as hulle sukkel om die A Record te skep.
+As jy beplan om jou kliënte toe te laat om hul eie domeine te karteer, sal hulle self die werk aan hierdie deel moet doen. Verwys hulle na hul registreerder se ondersteuningstelsel as hulle nie daarin slaag om die A Record te skep nie.
 
-### Aangepaste domeinnaam as Super Admin Map
+### Pasgemaakte domeinnaam as Super Admin karteer {#mapping-custom-domain-name-as-super-admin}
 
-Wanneer jy as super admin op jou netwerk ingelog is, kan jy maklik aangepaste domeinname byvoeg en bestuur deur na **Ultimate Multisite > Domains** te gaan.
+Wanneer jy as super-admin op jou netwerk aangemeld is, kan jy maklik pasgemaakte domeinname byvoeg en bestuur deur na **Ultimate Multisite > Domains** te gaan.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Domeine-lysbladsy in Ultimate Multisite](/img/admin/domains-list.png)
 
-Onder hierdie bladsy kan jy op die **Add Domain**-knoppie bo-op klik en dit sal 'n modale venster oopmaak waar jy die **aangepaste domeinnaam** kan stel en invul, **die subwerf** waarna jy die aangepaste domeinnaam wil toepas, en besluit of jy dit as die **primêre domein**naam wil stel of nie (let op dat jy **meerdere domeinname aan een subwerf** kan map).
+Onder hierdie bladsy kan jy bo-op die **Add Domain**-knoppie klik en dit sal ’n modale venster oopmaak waar jy die **pasgemaakte domeinnaam**, **die subwebwerf** waarop jy die pasgemaakte domeinnaam wil toepas, kan stel en invul, en kan besluit of jy dit as die **primêre domein**naam wil stel of nie (let daarop dat jy **meervoudige domeinname aan een subwebwerf** kan karteer).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Add Domain-modale venster met domeinnaam, webwerf-kieser en primêre-domein-skakelaar](/img/admin/domain-add-modal.png)
 
-Nadat jy al die inligting ingegee het, kan jy op die **Add Existing Domain**-knoppie onderaan klik.
+Nadat jy al die inligting ingevoer het, kan jy dan die **Add Existing Domain**-knoppie onderaan klik.
 
-Dit sal die proses van verifieer en ophaal van die DNS-inligting van die aangepaste domein begin. Jy sal ook 'n log onderaan die bladsy sien om die proses te volg wat dit deurgaan. Hierdie proses kan 'n paar minute neem om te voltooi.
+Dit sal die proses begin om die DNS-inligting van die pasgemaakte domein te verifieer en op te haal. Jy sal ook ’n log onderaan die bladsy sien sodat jy die proses waardeur dit gaan, kan volg. Hierdie proses kan ’n paar minute neem om te voltooi.
 
-Die **Stage** of die status moet van **Checking DNS** na **Ready** verander as alles korrek ingestel is.
+Ultimate Multisite v2.13.0 skep ook outomaties die interne domeinrekord wanneer ’n nuwe werf geskep word op ’n host wat as ’n per-werf-domein behandel moet word. As die host die netwerk se primêre domein is, of een van die gedeelde checkout-vorm-basisdomeine is wat op ’n **Site URL**-veld gekonfigureer is, word die outomatiese mapped-domain-rekord oorgeslaan sodat daardie gedeelde basisdomein beskikbaar bly vir elke werf wat dit gebruik.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Wanneer ’n kliënt ’n nuwe domein deur Domain Seller v1.3.0 of nuwer registreer, koppel Ultimate Multisite outomaties die geregistreerde domein by verstek aan die kliënt se netwerkwerf. Administrateurs hoef nie meer ’n aparte mapped-domain-rekord ná ’n suksesvolle registrasie by te voeg nie, tensy hulle opsies soos die primêre-domein-vlag, aktiveringstatus, of SSL-hantering wil aanpas.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+Die **Stage** of die status behoort van **Checking DNS** na **Ready** te verander as alles behoorlik opgestel is.
 
-As jy op die domeinnaam klik, sal jy 'n paar opsies binne daarin kan sien. Kom ons kyk vinnig na hulle:
+<!-- Screenshot unavailable: Domeinry wat die Checking DNS-stadium in die domeinlys wys -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+<!-- Screenshot unavailable: Domeinry wat die Ready-stadium met die groen statusaanwyser wys -->
 
-**Stage:** Dit is die stadium waarin die domein is. Wanneer jy die domein vir die eerste keer byvoeg, sal dit waarskynlik op die **Checking DNS**-stadium wees. Die proses sal die DNS-inskrywings kontroleer en bevestig dat dit korrek is. Daarna sal die domein op die **Checking SSL**-stadium geplaas word. Ultimate Multisite sal nagaan of die domein SSL het of nie en sal jou domein as **Ready** of **Ready (without SSL)** kategoriseer.
+As jy op die domeinnaam klik, sal jy ’n paar opsies daarin kan sien. Kom ons kyk vinnig daarna:
 
-**Site:** Die subdomein wat aan hierdie domein gekoppel is. Die gemapte domein sal die inhoud van hierdie spesifieke webwerf wys.
+![Domeinbesonderhedebladsy met stage-, werf-, aktief-, primêr- en SSL-skakelaars](/img/admin/domain-edit.png)
 
-**Active:** Jy kan hierdie opsie aan of af skakel om die domein te aktiveer of te deaktiveer.
+**Stage:** Dit is die stadium waarin die domein is. Wanneer jy die domein die eerste keer byvoeg, sal dit waarskynlik in die **Checking DNS**-stadium wees. Die proses sal na die DNS-inskrywings kyk en bevestig dat hulle korrek is. Daarna sal die domein in die **Checking SSL**-stadium geplaas word. Ultimate Multisite sal nagaan of die domein SSL het of nie en sal jou domein as **Ready** of **Ready (without SSL)** kategoriseer.
 
-**Is Primary Domain?:** Jou kliënte kan meer as een gemapte domein vir elke webwerf hê. Gebruik hierdie opsie om te kies of dit die primêre domein vir die spesifieke webwerf is.
+**Site:** Die subdomein wat met hierdie domein geassosieer word. Die gekoppelde domein sal die inhoud van hierdie spesifieke werf wys.
 
-**Is Secure?:** Selfs al kontroleer Ultimate Multisite of die domein 'n SSL-sertifikaat het of nie voordat dit dit aktiveer nie, kan jy handmatig kies om die domein met of sonder 'n SSL-sertifikaat te laai. Let op dat as die webwerf nie 'n SSL-sertifikaat het en jy probeer om dit met SSL te dwing, dit foute kan gee.
+**Active:** Jy kan hierdie opsie aan- of afskakel om die domein te aktiveer of te deaktiveer.
 
-### Aangepaste domeinnaam as Subwerfgebruiker Map
+**Is Primary Domain?:** Jou kliënte kan meer as een gekoppelde domein vir elke werf hê. Gebruik hierdie opsie om te kies of dit die primêre domein vir die spesifieke werf is.
 
-Subwerfadministrateurs kan ook aangepaste domeinname vanaf hul subwerf-admin-dashboard map.
+**Is Secure?:** Alhoewel Ultimate Multisite nagaan of die domein ’n SSL-sertifikaat het of nie voordat dit geaktiveer word, kan jy handmatig kies om die domein met of sonder ’n SSL-sertifikaat te laai. Let daarop dat as die webwerf nie ’n SSL-sertifikaat het nie en jy probeer om dit met SSL te forseer, dit vir jou foute kan gee.
 
-Eerstens moet jy verseker dat jy hierdie opsie aktiveer onder die **Domain mapping**-instellings. Kyk na die skermkiekie hieronder.
+### Koppel pasgemaakte domeinnaam as Subsite-gebruiker {#mapping-custom-domain-name-as-subsite-user}
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Subsite-administrateurs kan ook pasgemaakte domeinname vanaf hul subsite-admin-dashboard koppel.
 
-Jy kan ook hierdie opsie stel of konfigureer onder die **Plan**-vlak of produkopsies op **Ultimate Multisite > Products**.
+Eerstens moet jy seker maak dat jy hierdie opsie onder die **Domain mapping**-instellings aktiveer. Sien die skermskoot hieronder.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+<!-- Screenshot unavailable: Domain mapping-instellings wat subsite-gebruikers toelaat om domeine via Customer DNS Management-skakelaar te koppel -->
 
-Wanneer enige van daardie opsies geaktiveer is en 'n subwerfgebruiker toegelaat word om aangepaste domeinname te map, sal die subwerfgebruiker 'n metaboks onder die **Account**-bladsy genaamd **Domains** sien.
+Jy kan ook hierdie opsie op die **Plan**-vlak of produkopsies op **Ultimate Multisite > Products** stel of konfigureer.
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+![Custom Domains-afdeling op die produk-wysigbladsy](/img/config/product-custom-domains.png)
 
-Die gebruiker kan op die **Add Domain**-knoppie klik en dit sal 'n modale venster met 'n paar instruksies oopmaak.
+Wanneer enige van daardie opsies geaktiveer is en ’n subsite-gebruiker toegelaat word om pasgemaakte domeinname te koppel, behoort die subsite-gebruiker ’n metabox onder die **Account**-bladsy genaamd **Domains** te sien.
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+<!-- Screenshot unavailable: Domains-metabox op die subsite Account-bladsy met Add Domain-knoppie -->
 
-Die gebruiker kan dan op **Next Step** klik en voortgaan met die byvoeging van die aangepaste domeinnaam. Hulle kan ook kies of dit die primêre domein sal wees of nie.
+Die gebruiker kan op die **Add Domain**-knoppie klik en dit sal ’n modale venster met ’n paar instruksies oopmaak.
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- Screenshot unavailable: Add Domain-modale venster wat DNS A-record-instruksies vir subsite-gebruikers wys -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+Die gebruiker kan dan op **Next Step** klik en voortgaan om die pasgemaakte domeinnaam by te voeg. Hulle kan ook kies of dit die primêre domein sal wees of nie.
 
-Klik op **Add Domain** sal die proses van verifieer en ophaal van die DNS-inligting van die aangepaste domein begin.
+<!-- Screenshot unavailable: Add Domain-vorm met pasgemaakte domeinnaamveld en primêre domein-skakelaar -->
 
-### Oor Domeinsynkronisering
+<!-- Screenshot unavailable: Add Domain-bevestigingstap wat DNS-verifikasie aktiveer -->
 
-Domeinsynkronisering is 'n proses waar Ultimate Multisite die aangepaste domeinnaam by jou hosting-rekening byvoeg as 'n add-on domein **vir dat die domeinmappasie te werk doen**.
+Klik op **Add Domain** sal die proses begin om die DNS-inligting van die pasgemaakte domein te verifieer en op te haal.
 
-Domeinsynkronisering gebeur outomaties as jou hosting-verskaareder integrasie het met die Ultimate Multisite domeinmappasie-kenmerk. Tans is hierdie hosting-verskaareder _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ en _Cpanel._
+### Oor domeinsinkronisering {#about-domain-syncing}
 
-Jy sal hierdie integrasie op Ultimate Multisite-instellings onder die **Integration**-tab moet aktiveer.
+Domeinsinkronisering is ’n proses waar Ultimate Multisite die pasgemaakte domeinnaam by jou hosting-rekening voeg as ’n byvoegdomein **sodat die domain mapping kan werk**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Domeinsinkronisering gebeur outomaties as jou hosting-verskaffer integrasie met die Ultimate Multisite domain mapping-funksie het. Tans is hierdie hosting-verskaffers _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ en _Cpanel._
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+Wanneer ’n host-verskaffer-integrasie aktief is, kan Ultimate Multisite ook die verskafferkant-DNS- of subdomeinskeppingstaak vir nuutgeskepte werwe in die tou plaas. As geen integrasie na daardie taak luister nie, word die agtergrondtaak oorgeslaan om no-op-tou-inskrywings te vermy. DNS- en SSL-kontroles vir gekoppelde domeine bly deur die normale domein-stadiumproses loop.
 
-_Let op dat as jou hosting-verskaareder nie een van die verskaareder wat hierbo genoem is nie,**sal jy die domeinnaam handmatig moet sinkroniseer of by jou hosting-rekening moet voeg]._
+Jy sal hierdie integrasie in Ultimate Multisite-instellings onder die **Integration**-oortjie moet aktiveer.
+
+![Integrations-oortjie in Ultimate Multisite-instellings wat hosting-verskaffers wys](/img/config/integrations-tab.png)
+
+<!-- Screenshot unavailable: Hosting-verskaffer Configuration-skakels op die Integrations-instellingsoortjie -->
+
+_Let daarop dat as jou hosting-verskaffer nie een van daardie verskaffers hierbo genoem is nie,**jy die domeinnaam handmatig sal moet sinkroniseer of byvoeg** by jou hosting-rekening._

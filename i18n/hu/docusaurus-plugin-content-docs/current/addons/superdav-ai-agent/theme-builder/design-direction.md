@@ -3,17 +3,17 @@ title: Tervezési irány
 sidebar_position: 2
 _i18n_hash: 0a55afffd66ffad6930c7794d4074971
 ---
-# Design Direction
+# Design Direction {#design-direction}
 
 A **Design Direction** (Tervezési irány) lépés lehetővé teszi, hogy áttekintse, finomítsa és véglegesítse a témájának vizuális dizájnját, mielőtt a Theme Builder generálja a teljes témát.
 
-## Overview
+## Overview {#overview}
 
 Az „Discovery Interview” elvégzése után a Theme Builder a design irányát **desktop és mobil előnézetelési funkcióval** mutatja be. Ez lehetővé teszi, hogy pontosan lássa, hogyan fog nézni a dizájn különböző eszközökön, mielőtt elköteleződik a témában.
 
-## Design Direction Components
+## Design Direction Components {#design-direction-components}
 
-### 1. Color Palette (Színpaletta)
+### 1. Color Palette (Színpaletta) {#1-color-palette}
 
 A téma színkombinációja, beleértve:
 
@@ -23,7 +23,7 @@ A téma színkombinációja, beleértve:
 - **Neutral colors (Semleges színek)** — háttérhez és szöveghez használt szürke és fehér árnyalatok
 - **Text color (Szöveg színe)** — az olvasatosság érdekében használt elsődleges szöveg színe
 
-### 2. Typography (Tipográfia)
+### 2. Typography (Tipográfia) {#2-typography}
 
 A következő elemekre vonatkozó betűtípus kiválasztása:
 
@@ -33,14 +33,14 @@ A következő elemekre vonatkozó betűtípus kiválasztása:
 - **Line height (Sor 간 távolság)** — a sorok közötti távolság az olvasatosság érdekében
 - **Font weights (Betűsúlyok)** — bold, regular és light változatok
 
-### 3. Layout and Spacing (Elrendezés és Távolság)
+### 3. Layout and Spacing (Elrendezés és Távolság) {#3-layout-and-spacing}
 
 - **Container width (Tartalmi szélesség)** — a tartalom maximális szélessége
 - **Padding and margins (Betöltés és hézag)** — az elemek körüli távolság
 - **Grid system (Rácsrendszer)** — a választható dizájnhoz szükséges oszlopos elrendezés
 - **Component spacing (Komponens távolsága)** — az UI elemek közötti távolság
 
-### 4. Visual Elements (Vizsális elemek)
+### 4. Visual Elements (Vizsális elemek) {#4-visual-elements}
 
 - **Button styles (Gomb stílusok)** — elsődleges, másodlagos és harmadlagos gomb dizájnjai
 - **Card designs (Kártya dizájnok)** — tartalomblokkok elrendezései
@@ -48,9 +48,9 @@ A következő elemekre vonatkozó betűtípus kiválasztása:
 - **Borders and shadows (Keretek és árnyékok)** — finom vizuális mélység
 - **Hover effects (Merőzés hatásai)** — interaktív állapot stílusítása
 
-## Preview Rendering (Előnézetelési Funkció)
+## Preview Rendering (Előnézetelési Funkció) {#preview-rendering}
 
-### Desktop Preview (Desktop előnézet)
+### Desktop Preview (Desktop előnézet) {#desktop-preview}
 
 A desktop előnézet a teljes szélességben látható (általában 1200px vagy szélesebb):
 
@@ -59,7 +59,7 @@ A desktop előnézet a teljes szélességben látható (általában 1200px vagy 
 - Nagyméretű tipográfia és távolság
 - Minden vizsális elem teljes méretben
 
-### Mobile Preview (Mobil előnézet)
+### Mobile Preview (Mobil előnézet) {#mobile-preview}
 
 A mobil előnézet a mobil szélességben látható (általában 375px):
 
@@ -68,7 +68,7 @@ A mobil előnézet a mobil szélességben látható (általában 375px):
 - Ábsztalt tipográfia és távolság
 - Tippelhető gombméretek
 
-### Responsive Breakpoints (Választható pontok)
+### Responsive Breakpoints (Választható pontok) {#responsive-breakpoints}
 
 A Theme Builder ezeken a pontokon keresztül generál előnézeteket:
 
@@ -79,9 +79,9 @@ A Theme Builder ezeken a pontokon keresztül generál előnézeteket:
 | **Desktop** | 1200px | Full-width desktop |
 | **Large Desktop** | 1920px | Ultra-wide display |
 
-## Refining Your Design (Dizájn Finomítása)
+## Refining Your Design (Dizájn Finomítása) {#refining-your-design}
 
-### Making Adjustments (Beállítások)
+### Making Adjustments (Beállítások) {#making-adjustments}
 
 A design irányát a következőképpen finomíthatja:
 
@@ -91,7 +91,7 @@ A design irányát a következőképpen finomíthatja:
 4. **Updating layout (Elrendezés frissítése)** — módosítsa a tartalmi szélességeket és a rácsoszlopokat
 5. **Customizing elements (Elemek személyre szabása)** — módosítsa a gombstílusokat, kártya dizájnokat stb.
 
-### Preview Updates (Előnézet frissítése)
+### Preview Updates (Előnézet frissítése) {#preview-updates}
 
 A változtatások valós időben láthatók:
 
@@ -100,7 +100,7 @@ A változtatások valós időben láthatók:
 - Minden választható pont frissül
 - A különböző előnézetek között váltással ellenőrizheti a változásokat
 
-### Comparison View (Össравниási nézet)
+### Comparison View (Össравниási nézet) {#comparison-view}
 
 Összehasonlíthatja a design irányát a következőkkal:
 
@@ -108,7 +108,7 @@ A változtatások valós időben láthatók:
 - **Competitor designs (Versenyző dizájnok)** — összehasonlítás inspirációs oldalakhoz
 - **Previous versions (Előző verziók)** — visszatérhet korábbi design irányokhoz
 
-## Design Direction Approval (Design Irány Engedélyezése)
+## Design Direction Approval (Design Irány Engedélyezése) {#design-direction-approval}
 
 Amikor elégedett a dizájnnal:
 
@@ -118,7 +118,7 @@ Amikor elégedett a dizájnnal:
 4. **Confirm layout (Megerősítse az elrendezést)** — ellenőrizze a távolságot és az igazítást
 5. **Approve design (Engedélyezze a dizájn)** — haladjon tovább a téma generálásához
 
-## Next Steps (Következő lépések)
+## Next Steps (Következő lépések) {#next-steps}
 
 Az engedélyezés után:
 
@@ -127,7 +127,7 @@ Az engedélyezés után:
 3. Továbbra is személyre szabhatja a WordPress customizer segítségével
 4. Haladjon tovább a [Hospitality Menus](./hospitality-menus.md) vagy más funkciókhoz
 
-## Best Practices (Jó gyakorlatok)
+## Best Practices (Jó gyakorlatok) {#best-practices}
 
 - **Test on real devices (Teszteljen való eszközökön)** — ha lehetséges, használjon való telefonokat és táblagépeket
 - **Check readability (Ellenőrizze az olvasatosságot)** — győződjön meg róla, hogy a szöveg olvasható minden méretben
@@ -135,30 +135,30 @@ Az engedélyezés után:
 - **Consider performance (Fontosak a teljesítmény)** — optimalizálja az képeket és betűtípusokat a sebesség érdekében
 - **Plan for content (Tervezze a tartalmat)** — győződjön meg róla, hogy az elrendezés megfelel az Ön tényleges tartalmának
 
-## Troubleshooting (Hibaelhárítás)
+## Troubleshooting (Hibaelhárítás) {#troubleshooting}
 
-### Preview Not Updating (Az előnézet nem frissül)
+### Preview Not Updating (Az előnézet nem frissül) {#preview-not-updating}
 
 - Frissítse az oldalt
 - Törölje a böngésző gyorsítéktárolását (cache)
 - Próbáljon más böngészővel
 - Ellenőrizze az internet kapcsolatot
 
-### Colors Look Different (Más színeknek tűnik)
+### Colors Look Different (Más színeknek tűnik) {#colors-look-different}
 
 - Ellenőrizze a monitor színszabályait
 - Próbáljon más eszközökön
 - Ellenőrizze a színek kontrasztját az elérhetőségi eszközökkel
 - Fontosak a színszakmai szimulátorok
 
-### Typography Issues (Tipográfiai problémák)
+### Typography Issues (Tipográfiai problémák) {#typography-issues}
 
 - Ellenőrizze, hogy a betűtípusok betöltődtek-e
 - Ellenőrizze a betűméretet különböző választható pontokon
 - Teszteljen tényleges tartalommal
 - Fontosak a sor hossza az olvasatosság érdekében
 
-## Related Documentation (Kapcsolódó dokumentáció)
+## Related Documentation (Kapcsolódó dokumentáció) {#related-documentation}
 
 - [Discovery Interview](./discovery-interview.md) — gyűjtse össze a design információkat
 - [Hospitality Menus](./hospitality-menus.md) — hozzon létre struktúrált menőoldalakat

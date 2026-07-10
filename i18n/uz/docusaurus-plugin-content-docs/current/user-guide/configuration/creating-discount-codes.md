@@ -3,13 +3,13 @@ title: Chek kodlari yaratish
 sidebar_position: 19
 _i18n_hash: d6adaf916f3e21b4fda2deeaa6672d00
 ---
-# Cheg'imlar (Discount Codes) Yaratish (v2)
+# Cheg'imlar (Discount Codes) Yaratish (v2) {#creating-discount-codes-v2}
 
 _**MUHIM ESLATMA: Bu maqola Ultimate Multisite 2.x versiyasiga oid.**_
 
 Ultimate Multisite yordamida siz mijozlaringizga obunalar ustidan chegirmalar beradigan chegirma kodlari yaratishingiz mumkin. Va ularni yaratish juda oson!
 
-## Chegirma Kodlarini Yaratish va Tahrirlash
+## Chegirma Kodlarini Yaratish va Tahrirlash {#creating-and-editing-discount-codes}
 
 Chegirma kodini yaratish yoki tahrirlash uchun **Ultimate Multisite > Discount Codes** ga kiring.
 
@@ -87,7 +87,7 @@ Endi kuponingiz ro'yxatda turadi va undan tahrirlash yoki o'chirish uchun bosing
 
 ###
 
-### URL parametrlari dan foydalanish:
+### URL parametrlari dan foydalanish: {#using-url-parameters}
 
 Agar siz narx jadvalaringizni moslashtirmoqchi bo'lsangiz yoki veb-saytingiz uchun chiroyli kupon kodi sahifasini yaratmoqchi bo'lsangiz va chegirma kodini to'lov shaklingizga avtomatik qo'llashni xohlasangiz, bunga URL parametrlari orqali amal qilishingiz mumkin.
 

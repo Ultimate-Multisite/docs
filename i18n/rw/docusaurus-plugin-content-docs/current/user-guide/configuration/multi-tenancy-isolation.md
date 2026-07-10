@@ -3,11 +3,11 @@ title: Ubwumvikane bw'ubwoko bwinshi
 sidebar_position: 12
 _i18n_hash: 5aaf1504c3022f94b9aec9faaa4eda22
 ---
-# Umuhagariko mu Ubwokozi (Multi-Tenancy Isolation)
+# Umuhagariko mu Ubwokozi (Multi-Tenancy Isolation) {#multi-tenancy-isolation}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 yashobora gukoresha ubwokozi bw'ubwokozi bwa database n'ubwokozi bwa filesystem kuri subsite cyose kugira ngo abantu bashobore kubaho mu buryo bw'ubwokozi (sovereign tenants). Ibi bikunda ibyerekeye amakuru y'umuntu ku subsite, ariko byashobora gukoresha uburyo bwo gutera uburenganzira bw'ubwokozi.
 
-## Uburyo bwo gutera ubwokozi (Isolation strategy)
+## Uburyo bwo gutera ubwokozi (Isolation strategy) {#isolation-strategy}
 
 Gukoresha ubwokozi bwa sovereign cyangwa ubwokozi bwa mbere ku muntu w'umutwe (sovereign isolation) kuri abantu bashobora kubyitondera uburenganzira bw'ubwokozi bukomeye, uburyo bwo gukoresha filesystem cy'ubwokozi bukomeye, cyangwa uburyo bwa host runaka.
 
@@ -18,7 +18,7 @@ Abantu bwa sovereign bishobora kuba bifite:
 - Icyemezo cy'ubwokozi (tenant registry entry) kigira ngo kishobore kwerekana subsite kuri database yayo, uburyo bwo gukoresha root path, hostname, n'uburyo bw'ubwokozi (isolation model).
 - Icyemezo cyo gukoresha uburenganzira mu gihe cy'umvugo (migration verification result) mbere y'uko subsite kigenda kuba kigenda.
 
-## Gutera Ubwokozi bwa Database host binding
+## Gutera Ubwokozi bwa Database host binding {#database-host-binding}
 
 Version 1.2.0 igaragaza uburyo bw'ubwokozi bwa host binding bukurikirana kuri default ku muntu w'umutwe (same-machine) ku subsite by'ubwokozi. Ibyo nko `localhost` byoroshye kugira ngo Bedrock, FrankenPHP, no containerized WordPress bashobore gukora akazi kandi bakoreshe uburenganzira kuri host string MySQL yashobora kubona.
 
@@ -31,11 +31,11 @@ Iyo uburyo bwo gutera ubwokozi bwa sovereign:
 
 Iyo verification itanga ibintu byo gutera uburenganzira (grant failures), rurinda database user grants n'ubwokozi bwo host binding. User yashobora gukoresha kuri `user@localhost` ni ikindi cy'user@127.0.0.1 cyangwa `user@%`.
 
-## Ubwokozi bwa Filesystem root
+## Ubwokozi bwa Filesystem root {#filesystem-root}
 
 Ururu mu gukoresha (tenant root) yoroshye ku gukoresha mu gihe cyangwa mu gihe uburyo bwo gukoresha (deployments). Kugabanya amashobora y'umutara (temporary mount paths). Ku gukoresha ubushobozi bwa Bedrock, ugomba kwibanda ko uru gukoresha (tenant root) rishobora kuba mu gihe cyangwa mu gihe uburyo bwo gukoresha (deployments) y'umutara w'umutara (tenant bootstrap), kandi si gusa mu gihe cyangwa mu gihe uburyo bwo gukoresha (project root).
 
-## Icyemezo cyo gukoresha (Provisioning order)
+## Icyemezo cyo gukoresha (Provisioning order) {#provisioning-order}
 
 Ku gukoresha umutara w'ubwoko bw'umutara (sovereign tenants) uyu gihe, gukoresha uburyo bwa mbere:
 
@@ -49,7 +49,7 @@ Ku gukoresha umutara w'ubwoko bw'umutara (sovereign tenants) uyu gihe, gukoresha
 
 Icyemezo cyo gukoresha cyangwa mu gihe uburyo bwo gukoresha (Provisioning order) igabanya umutara w'umutara (tenants) guhindurwa nyuma y'uko database, abantu, no gukoresha amakuru ya gukoresha (filesystem) bafite ubushobozi.
 
-## Uburyo bw'ubwoko bw'umutara (Sovereign customer management flows)
+## Uburyo bw'ubwoko bw'umutara (Sovereign customer management flows) {#sovereign-customer-management-flows}
 
 Ultimate Multisite v2.13.0 igabanya amashobora y'ubwoko bw'umutara (customer management actions) ku gihe cyangwa mu gihe uburyo bwo gukoresha (main site) iyo umutara w'ubwoko bw'umutara (sovereign mode) yari yagize. Umutara yashobora gukoreshwa nk'umutara w'WordPress w'igice (isolated WordPress install), ariko amashobora y'ubantu bafite uburyo bwo gukoresha (customer-facing actions) yashobora gufata umutara w'umutara (main site) nyuma yo gukora uko byerekana ku mutara w'umutara (network billing), ubwoko bw'ubwoko (membership), cyangwa amakuru y'umutara w'umutara (shared account data).
 

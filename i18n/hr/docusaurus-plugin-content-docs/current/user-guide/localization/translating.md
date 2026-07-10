@@ -3,11 +3,11 @@ title: Prevod Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Prevod Ultimate Multisite
+# Prevod Ultimate Multisite {#translating-ultimate-multisite}
 
 Ultimate Multisite je razvijen na engleskom jeziku, ali plugin je potpuno prevodljiv i aktivno pozivamo doprinose prijevima.
 
-## Prevo Ultimate Core Plugin-a
+## Prevo Ultimate Core Plugin-a {#core-plugin-translations}
 
 Core Ultimate Multisite plugin se prevodi putem službene **platforme za prijevod WordPress.org**:
 
@@ -24,7 +24,7 @@ Ovo je standardni sustav za prijevima u zajednici WordPressa. Kada se prevodi do
 
 Ako želite postati urednik prijevovnih tekstova za svoj jezik (koji može odobriti prevode), obratite se putem [GitHub Discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Prevo Addon Pluginova
+## Prevo Addon Pluginova {#addon-translations}
 
 Addon pluginovi se prevode zasebno na:
 
@@ -32,11 +32,11 @@ Addon pluginovi se prevode zasebno na:
 
 Prevo addon pluginova trenutno generiraju AI kao početnu točku. Oni pokrivaju sve podržane jezike, ali mogu sadržavati neobične fraze ili pogreške u preciznosti. Dobro bismo primili ljudske prevodnike da ih pregledaju i predlažu poboljšanja kako bi postali prirodniji i točniji.
 
-## Lokalni Prevo
+## Lokalni Prevo {#local-translations}
 
 Ako preferirate da napravite prevode lokalno za svoj projekat umjesto da doprinijivate upstream projektu, postoje dvije opcije:
 
-### Korištenje Poedita (Poedit)
+### Korištenje Poedita (Poedit) {#using-poedit}
 
 Možete koristiti desktop aplikaciju **[Poedit](https://poedit.net)** za prevođenje `.pot` datoteke:
 
@@ -46,6 +46,6 @@ Možete koristiti desktop aplikaciju **[Poedit](https://poedit.net)** za prevođ
 4. Sačuvajte -- Poedit će generirati `.po` i `.mo` datoteke
 5. Postavite izlazne datoteke u `lang` folder
 
-### Korištenje Loco Translate
+### Korištenje Loco Translate {#using-loco-translate}
 
 WordPress plugin **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** omogućuje vam da prevodite direktno iz admin panela bez potrebe za desktop alatima. On će se pobrinuti o kreiranju i kompilaciji datoteka za prijevod za vas.

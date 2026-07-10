@@ -4,11 +4,11 @@ title: Aksi - set_auth_cookie
 sidebar_label: set_auth_cookie
 _i18n_hash: 30ea64dc01d9f9805c09717f5113e4fd
 ---
-# Action: set_auth_cookie
+# Action: set_auth_cookie {#action-setauthcookie}
 
 Dipicu segera sebelum *cookie* otentikasi diatur.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
@@ -19,10 +19,10 @@ Dipicu segera sebelum *cookie* otentikasi diatur.
 | $scheme | `string` | Skema otentikasi. Nilai yang mungkin termasuk 'auth' atau 'secure_auth'. |
 | $token | `string` | Token sesi pengguna yang akan digunakan untuk *cookie* ini. |
 
-### Sejak
+### Sejak {#since}
 
 - 2.5.0
 - 4.9.0: Parameter `<code>$token</code>` ditambahkan.
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L124) pada baris 124

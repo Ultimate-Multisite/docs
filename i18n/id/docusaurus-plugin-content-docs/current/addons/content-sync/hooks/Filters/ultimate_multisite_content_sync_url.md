@@ -4,23 +4,23 @@ title: Filter - ultimate_multisite_content_sync_url
 sidebar_label: ultimate_multisite_content_sync_url
 _i18n_hash: 3f6bc9c63e6138e9f69c4d1db9e32d7b
 ---
-# Filter: ultimate_multisite_content_sync_url
+# Filter: ultimate_multisite_content_sync_url {#filter-ultimatemultisitecontentsyncurl}
 
 Memungkinkan pengembang untuk mengelola jalur relatif ke akar plugin.
 
-## Parameter
+## Parameter {#parameters}
 
 | Nama | Tipe | Deskripsi |
 |------|------|-------------|
 | $dir | `string` | Jalur relatif dari akar plugin yang ingin Anda akses. |
 
-### Sejak
+### Sejak {#since}
 
 - 1.0.0
-### Sumber
+### Sumber {#source}
 
 Didefinisikan di [`inc/class-helper.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-content-sync/blob/main/inc/class-helper.php#L52) pada baris 52
 
 
-## Mengembalikan
+## Mengembalikan {#returns}
 Jalur relatif dari akar plugin.

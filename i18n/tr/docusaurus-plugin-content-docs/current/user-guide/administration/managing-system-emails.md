@@ -1,38 +1,42 @@
 ---
 title: Sistem E-postalarını Yönetme
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Sistem E-postalarını Yönetme
+# Sistem E-postalarını Yönetme {#managing-system-emails}
 
-Ultimate Multisite, kayıt onayları, ödeme makbuzları ve üyelik değişiklikleri gibi çeşitli etkinlikler için sistem e-postaları gönderir. Bu e-posta şablonlarını markanıza uygun şekilde özelleştirebilirsiniz.
+Ultimate Multisite; kayıt onayları, ödeme makbuzları ve üyelik değişiklikleri gibi etkinlikler için çeşitli sistem e-postaları gönderir. Bu e-posta şablonlarını markanıza uyacak şekilde özelleştirebilirsiniz.
 
-## Sistem E-postalarını Görüntüleme
+## Sistem E-postalarını Görüntüleme {#viewing-system-emails}
 
-**Ultimate Multisite → Ayarlar** bölümüne gidin ve e-postayla ilgili ayarları görmek için **E-postalar** sekmesine tıklayın.
+E-postayla ilgili ayarları görmek için **Ultimate Multisite → Settings** bölümüne gidin ve **Emails** sekmesine tıklayın.
 
-![Ayarlar - E-postalar sekmesi](/img/admin/settings-emails.png)
+![Settings - Emails sekmesi](/img/admin/settings-emails.png)
 
-Buradan tüm e-posta şablonlarını görmek için **Sistem E-postaları** sayfasına erişebilirsiniz.
+Buradan tüm e-posta şablonlarını görmek için **System Emails** sayfasına erişebilirsiniz.
 
-![Sistem E-postaları listesi](/img/admin/system-emails-list.png)
+![System Emails listesi](/img/admin/system-emails-list.png)
 
-## Yeni E-posta Şablonlarını İçe Aktarma
+Ayrıca sistem e-posta düzenleyicisini kullanarak tek tek e-posta şablonlarını düzenleyebilirsiniz:
 
-Yeni Ultimate Multisite sürümleri ve eklentiler, yeni e-posta şablonları tanımlayabilir. Olası çakışmaları önlemek için yeni şablonlar otomatik olarak eklenmez — bunları manuel olarak içe aktarmanız gerekir.
+![Sistem e-posta düzenleyicisi](/img/admin/system-email-editor.png)
+
+## Yeni E-posta Şablonlarını İçe Aktarma {#importing-new-email-templates}
+
+Yeni Ultimate Multisite sürümleri ve add-on’lar yeni e-posta şablonları kaydedebilir. Çakışmaları önlemek için yeni şablonlar otomatik olarak eklenmez — bunları manuel olarak içe aktarmanız gerekir.
 
 Yeni e-posta şablonlarını içe aktarmak için:
 
-1. **Sistem E-postaları** sayfasına gidin
-2. Sayfanın üst kısmındaki **Sıfırla ve İçe Aktar** düğmesine tıklayın
-3. Mevcut şablonları görmek için **E-postaları İçe Aktar** seçeneğini etkinleştirin
+1. **System Emails** sayfasına gidin
+2. Sayfanın üst kısmındaki **Reset & Import** düğmesine tıklayın
+3. Kullanılabilir şablonları görmek için **Import Emails** seçeneğini açın
 4. İçe aktarmak istediğiniz şablonları seçin ve onaylayın
 
-## E-posta Şablonlarını Sıfırlama
+## E-posta Şablonlarını Sıfırlama {#resetting-email-templates}
 
-Bir e-posta şablonunu özelleştirdiyseniz ve varsayılan içeriğe geri dönmek istiyorsanız, iki seçeneğiniz var:
+Bir e-posta şablonunu özelleştirdiyseniz ve varsayılan içeriğe geri dönmek istiyorsanız iki seçeneğiniz vardır:
 
-1. **Sil ve yeniden içe aktar** — Sistem e-postasını silin ve tekrar içe aktarın (bu işlem gönderim istatistiklerini siler)
-2. **Araç üzerinden sıfırla** — **Sıfırla ve İçe Aktar** aracını kullanın, **Sıfırla** seçeneğini etkinleştirin ve sıfırlamak istediğiniz e-postaları seçin
+1. **Sil ve yeniden içe aktar** — Sistem e-postasını silin ve yeniden içe aktarın (bu, gönderim metriklerini siler)
+2. **Araç üzerinden sıfırla** — **Reset & Import** aracını kullanın, **Reset** seçeneğini açın ve sıfırlamak istediğiniz e-postaları seçin
 
-Sıfırla seçeneği tercih edilir çünkü varsayılan içeriği geri yüklerken gönderim istatistiklerini ve diğer meta verileri korur.
+Varsayılan içeriği geri yüklerken gönderim metriklerini ve diğer üst verileri koruduğu için Reset seçeneği tercih edilir.

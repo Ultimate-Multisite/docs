@@ -1,110 +1,126 @@
 ---
 title: Primirea plăților
 sidebar_position: 15
-_i18n_hash: 8d591eda27cdf7dcd856d9b3c806db00
+_i18n_hash: 7808f514b91797f7ffb68811b12c48be
 ---
-# Primirea plăților (v2)
+# Primirea plăților (v2) {#getting-paid-v2}
 
 _**NOTĂ IMPORTANTĂ: Acest articol se referă la Ultimate Multisite versiunea 2.x.**_
 
-Ultimate Multisite are un sistem integrat de membership și facturare. Pentru ca sistemul nostru de facturare să funcționeze, am integrat cele mai comune gateway-uri de plată folosite în e-commerce. Gateway-urile de plată implicite în Ultimate Multisite sunt _Stripe_, _PayPal_ și Plata manuală. Poți folosi și _WooCommerce_, _GoCardless_ și _Payfast_ pentru a primi plăți, instalând add-on-urile corespunzătoare.
+Ultimate Multisite are un sistem integrat de abonamente și facturare. Pentru ca sistemul nostru de facturare să funcționeze, am integrat cele mai comune gateway-uri de plată folosite în comerțul electronic. Gateway-urile de plată implicite în Ultimate Multisite sunt _Stripe_ , _PayPal_ și Plată manuală. De asemenea, poți folosi _WooCommerce_ , _GoCardless_ și _Payfast_ pentru a primi plăți prin instalarea add-on-urilor lor respective.
 
-## Setări de bază
+## Setări de bază {#basic-settings}
 
-Poți configura oricare dintre aceste gateway-uri de plată în setările de plată ale Ultimate Multisite. Le găsești accesând **meniul Ultimate Multisite > Settings > Payments.**
+Poți configura oricare dintre aceste gateway-uri de plată în setările de plată Ultimate Multisite. Le poți găsi accesând **meniul Ultimate Multisite > Setări > Plăți.**
 
-![Pagina de setări pentru plăți în Ultimate Multisite](/img/config/settings-payment-gateways.png)
+![Pagina de setări Plăți în Ultimate Multisite, afișând panoul Plăți](/img/config/payments-settings-page.png)
 
-Înainte de a configura gateway-ul de plată, te rugăm să arunci o privire asupra setărilor de bază pe care le poți configura:
+Înainte să îți configurezi gateway-ul de plată, te rugăm să consulți setările de plată de bază pe care le poți configura:
 
-**Force auto-renew:** Această opțiune se asigură că plata se va reînnoi automat la sfârșitul fiecărui ciclu de facturare, în funcție de frecvența de facturare selectată de utilizator.
+**Forțează reînnoirea automată** **:** Aceasta va asigura că plata se va repeta automat la sfârșitul fiecărui ciclu de facturare, în funcție de frecvența de facturare selectată de utilizator.
 
-![Setarea toggle pentru reînnoirea automată forțată](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Force Auto-Renew toggle setting on the Payments settings page -->
 
-**Allow trials without payment method:** Cu această opțiune activată, clientul tău nu va trebui să adauge nicio informație financiară în timpul procesului de înregistrare. Aceasta va fi necesară doar după expirarea perioadei de probă.
+Ultimate Multisite v2.13.0 verifică dacă gateway-ul activ are o credențială de reînnoire reutilizabilă înainte de a salva un abonament recurent cu reînnoirea automată activată. O credențială de reînnoire poate fi un abonament de gateway, un acord de facturare, un token salvat în seif sau o metodă de plată reutilizabilă echivalentă. Dacă gateway-ul raportează că nu există nicio credențială utilizabilă, Ultimate Multisite salvează abonamentul, dar dezactivează reînnoirea automată și înregistrează starea de credențială lipsă, astfel încât un administrator sau un flux de suport să poată cere clientului să reautorizeze plata înainte de data reînnoirii.
 
-![Toggle pentru permiterea perioadei de probă fără metodă de plată](/img/config/settings-payment-gateways.png)
+Acest lucru împiedică un abonament să pară că se reînnoiește automat atunci când gateway-ul poate colecta doar plăți unice. Add-on-urile de gateway ar trebui să confirme că checkout-urile recurente stochează o credențială reutilizabilă, mai ales când gateway-ul acceptă atât capturarea unică, cât și moduri de plată cu seif/abonament.
 
-**Send invoice on payment confirmation:** Această opțiune îți permite să alegi dacă dorești sau nu să trimiți o factură după efectuarea plății. Reține că utilizatorii vor avea acces la istoricul plăților din dashboard-ul subsite-ului lor. Această opțiune nu se aplică pentru Gateway-ul manual.
+**Permite perioade de încercare fără** **metodă de plată:** Cu această opțiune activată, clientul tău nu va trebui să adauge nicio informație financiară în timpul procesului de înregistrare. Aceasta va fi necesară doar după expirarea perioadei de încercare.
 
-![Toggle pentru trimiterea facturii la confirmarea plății](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Allow Trials Without Payment Method toggle on the Payments settings page -->
 
-**Invoice numbering scheme:** Aici poți selecta fie un cod de referință pentru plată, fie o schemă de numerotare secvențială. Dacă alegi să folosești un cod de referință pentru facturile tale, nu trebuie să configurezi nimic. Dacă alegi să folosești o schemă de numerotare secvențială, va trebui să configurezi **următorul număr de factură** (Acest număr va fi folosit ca număr de factură pentru următoarea factură generată în sistem. Este incrementat cu unu de fiecare dată când se creează o factură nouă. Îl poți modifica și salva pentru a reseta numărul secvențial al facturii la o valoare specifică) și **prefixul numărului de factură.**
+**Trimite factura la confirmarea plății:** Aceasta îți oferă opțiunea de a trimite sau nu o factură după plată. Reține că utilizatorii vor avea acces la istoricul lor de plăți în dashboard-ul subsite-ului lor. Această opțiune nu se aplică Gateway-ului manual.
 
-![Selectarea schemei de numerotare a facturilor](/img/config/settings-payment-gateways.png)
+<!-- Screenshot unavailable: Send Invoice on Payment Confirmation toggle on the Payments settings page -->
 
-![Setări pentru numărul secvențial și prefixul facturii](/img/config/settings-payment-gateways.png)
+**Schema de numerotare a facturilor:** Aici, poți selecta fie un cod de referință al plății, fie o schemă de numerotare secvențială. Dacă alegi să folosești un cod de referință al plății pentru facturile tale, nu trebuie să configurezi nimic. Dacă alegi să folosești o schemă de numerotare secvențială, va trebui să configurezi **următorul număr de factură** (Acest număr va fi folosit ca număr de factură pentru următoarea factură generată în sistem. Este incrementat cu unu de fiecare dată când este creată o factură nouă. Îl poți modifica și salva pentru a reseta numărul secvențial al facturii la o valoare specifică) și **prefixul numărului de factură.**
 
-## Unde găsești gateway-urile:
+<!-- Screenshot unavailable: Invoice numbering scheme dropdown with Payment Reference Code and Sequential Number options -->
 
-Poți configura gateway-urile de plată pe aceeași pagină (**Ultimate Multisite > Settings > Payments**). Chiar sub **active payment gateways**, vei putea vedea: _Stripe_, _Stripe Checkout_, _PayPal_ și _Manual_.
+<!-- Screenshot unavailable: Next invoice number and invoice number prefix fields shown when Sequential Number is selected -->
 
-![Lista gateway-urilor de plată active](/img/config/settings-payment-gateways.png)
+## Unde găsești gateway-urile: {#where-to-find-the-gateways}
 
-Avem un articol dedicat pentru fiecare gateway de plată care te va ghida prin pașii de configurare, pe care îl poți găsi la linkurile de mai jos.
+Poți configura gateway-urile de plată pe aceeași pagină ( **Ultimate Multisite > Setări > Plăți**). Chiar sub **gateway-uri de plată active** , vei putea vedea: _Stripe_ , _Stripe_ _Checkout_ , _PayPal_ și _Manual_.
+
+![Secțiunea Gateway-uri de plată active listând Stripe, Stripe Checkout, PayPal și Manual](/img/config/payments-active-gateways.png)
+
+Avem un articol dedicat pentru fiecare gateway de plată, care te va ghida prin pașii de configurare și pe care îl poți găsi la linkurile de mai jos.
+
+Poți vizualiza și edita detaliile plății:
+
+![Interfață de editare a plății](/img/admin/payment-edit.png)
+
+Iată o vizualizare completă a paginii de editare a plății:
+
+![Interfață completă de editare a plății](/img/admin/payment-edit-full.png)
+
+Iată, de asemenea, o vizualizare completă a setărilor gateway-urilor de plată:
+
+![Pagina completă a setărilor gateway-urilor de plată](/img/config/settings-payments-gateways-full.png)
 
 **Configurarea gateway-ului Stripe**
 
-**Configurarea gateway-ului PayPal**
+**Configurarea gateway-ului PayPal**** **
 
 **Configurarea plăților manuale**
 
-Acum, dacă dorești să folosești _WooCommerce_, _GoCardless_ sau _Payfast_ ca gateway de plată, va trebui să **instalezi și să configurezi add-on-urile lor**.
+Acum, dacă vrei să folosești _WooCommerce_ , _GoCardless_ sau _Payfast_ ca gateway de plată, va trebui să **instalezi și să configurezi add-on-urile lor**.
 
-### Cum instalezi add-on-ul WooCommerce:
+### Cum să instalezi add-on-ul WooCommerce: {#how-to-install-the-woocommerce-add-on}
 
-Înțelegem că _Stripe_ și _PayPal_ nu sunt disponibile în unele țări, ceea ce limitează sau împiedică utilizatorii Ultimate Multisite să folosească eficient plugin-ul nostru. Așa că am creat un add-on pentru a integra _WooCommerce_, care este un plugin de e-commerce foarte popular. Dezvoltatorii din întreaga lume au creat add-on-uri pentru a integra diferite gateway-uri de plată cu acesta. Am profitat de acest lucru pentru a extinde gateway-urile de plată pe care le poți folosi cu sistemul de facturare Ultimate Multisite.
+Înțelegem că _Stripe_ și _PayPal_ nu sunt disponibile în unele țări, ceea ce limitează sau împiedică utilizatorii Ultimate Multisite să folosească eficient pluginul nostru. Așa că am creat un add-on pentru a integra _WooCommerce,_ care este un plugin de comerț electronic foarte popular. Dezvoltatori din întreaga lume au creat add-on-uri pentru a integra diferite gateway-uri de plată cu acesta. Am profitat de acest lucru pentru a extinde gateway-urile de plată pe care le poți folosi cu sistemul de facturare Ultimate Multisite.
 
 _**IMPORTANT:** Ultimate Multisite: WooCommerce Integration necesită ca WooCommerce să fie activat cel puțin pe site-ul tău principal._
 
-Mai întâi, te rugăm să accesezi pagina de add-on-uri. O găsești accesând **Ultimate Multisite > Settings**. Ar trebui să vezi tabelul **Add-ons**. Click pe **Check our Add-ons**.
+Mai întâi, te rugăm să mergi la pagina de add-on-uri. O poți găsi accesând **Ultimate Multisite > Setări**. Ar trebui să vezi tabelul **Add-ons**. Fă clic pe **Verifică add-on-urile noastre**.
 
-![Pagina de setări cu secțiunea add-on-uri](/img/config/settings-general.png)
+<!-- Screenshot unavailable: Add-ons table on the Ultimate Multisite Settings sidebar with the Check our Add-ons link -->
 
-După ce dai click pe **Check our Add-ons**, vei fi redirecționat către pagina de add-on-uri. Aici poți găsi toate add-on-urile Ultimate Multisite. Click pe add-on-ul **Ultimate Multisite: WooCommerce Integration**.
+După ce faci clic pe **Verifică add-on-urile noastre** , vei fi redirecționat către pagina de add-on-uri. Aici poți găsi toate add-on-urile Ultimate Multisite. Fă clic pe add-on-ul **Ultimate Multisite: WooCommerce Integration**.
 
-![Pagina de add-on-uri care listează add-on-urile disponibile](/img/config/settings-general.png)
+![Pagina de add-on-uri listând add-on-urile Ultimate Multisite, inclusiv WooCommerce Integration](/img/addons/addons-page.png)
 
-Va apărea o fereastră cu detaliile add-on-ului. Pur și simplu click pe **Install Now**.
+Va apărea o fereastră cu detaliile add-on-ului. Doar faceți clic pe **Instalează acum**.
 
-![Dialogul de instalare pentru add-on-ul WooCommerce](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: dialog cu detaliile add-on-ului Ultimate Multisite WooCommerce Integration, cu butonul Instalează acum -->
 
-După finalizarea instalării, vei fi redirecționat către pagina de plugin-uri. Aici, pur și simplu click pe **Network Activate** și add-on-ul WooCommerce va fi activat în rețeaua ta.
+După finalizarea instalării, veți fi redirecționat către pagina de plugin-uri. Aici, doar faceți clic pe **Activează în rețea**, iar add-on-ul WooCommerce va fi activat în rețeaua dvs.
 
-![Activarea în rețea a add-on-ului WooCommerce](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: pagina de plugin-uri cu linkul Activează în rețea pentru add-on-ul WooCommerce Integration -->
 
-După activare, dacă încă nu ai plugin-ul WooCommerce instalat și activat pe site-ul tău, vei primi o notificare.
+După activarea acestuia, dacă încă nu aveți plugin-ul WooCommerce instalat și activat pe website-ul dvs., veți primi un memento.
 
-![Notificare de reminder pentru activarea WooCommerce](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: notificare de administrare care îi reamintește administratorului să instaleze și să activeze plugin-ul WooCommerce -->
 
-Pentru a citi mai multe despre add-on-ul WooCommerce Integration, **click aici**.
+Pentru a citi mai multe despre add-on-ul WooCommerce Integration, **faceți clic aici**.
 
-### Cum instalezi add-on-ul GoCardless:
+### Cum să instalați add-on-ul GoCardless: {#how-to-install-the-gocardless-add-on}
 
-Pașii pentru a instala add-on-ul _GoCardless_ sunt aproape identici cu cei pentru add-on-ul _WooCommerce_. Te rugăm să accesezi pagina de add-on-uri și să selectezi add-on-ul **Ultimate Multisite: GoCardless Gateway**.
+Pașii pentru instalarea add-on-ului _GoCardless_ sunt aproape aceiași ca pentru add-on-ul _WooCommerce_. Vă rugăm să mergeți la pagina de add-on-uri și să selectați add-on-ul **Ultimate Multisite: GoCardless Gateway**.
 
-![Pagina de add-on-uri care listează add-on-urile disponibile](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: pagina de add-on-uri cu add-on-ul Ultimate Multisite GoCardless Gateway evidențiat -->
 
-Va apărea fereastra add-on-ului. Click pe **Install Now**.
+Fereastra add-on-ului va apărea. Faceți clic pe **Instalează acum**.
 
-![Dialogul de instalare pentru add-on-ul GoCardless](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: dialog cu detaliile add-on-ului Ultimate Multisite GoCardless Gateway, cu butonul Instalează acum -->
 
-După finalizarea instalării, vei fi redirecționat către pagina de plugin-uri. Aici, pur și simplu click pe **Network Activate** și add-on-ul _GoCardless_ va fi activat în rețeaua ta.
+După finalizarea instalării, veți fi redirecționat către pagina de plugin-uri. Aici, doar faceți clic pe **Activează în rețea**, iar add-on-ul _GoCardless_ va fi activat în rețeaua dvs.
 
-![Activarea în rețea a add-on-ului GoCardless](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: pagina de plugin-uri cu linkul Activează în rețea pentru add-on-ul GoCardless Gateway -->
 
-Pentru a afla cum să începi cu gateway-ul _GoCardless_, **citește acest articol**.
+Pentru a afla cum să începeți cu gateway-ul _GoCardless_, **citiți acest articol**.
 
-### Cum instalezi add-on-ul Payfast:
+### Cum să instalați add-on-ul Payfast: {#how-to-install-the-payfast-add-on}
 
-Accesează pagina de add-on-uri și selectează add-on-ul **Ultimate Multisite: Payfast Gateway**.
+Mergeți la pagina de add-on-uri și selectați add-on-ul **Ultimate Multisite: Payfast Gateway**.
 
-![Pagina de add-on-uri care listează add-on-urile disponibile](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: pagina de add-on-uri cu add-on-ul Ultimate Multisite Payfast Gateway evidențiat -->
 
-Va apărea fereastra add-on-ului. Click pe **Install Now.**
+Fereastra add-on-ului va apărea. Faceți clic pe **Instalează acum.**
 
-![Dialogul de instalare pentru add-on-ul Payfast](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: dialog cu detaliile add-on-ului Ultimate Multisite Payfast Gateway, cu butonul Instalează acum -->
 
-După finalizarea instalării, vei fi redirecționat către pagina de plugin-uri. Aici, pur și simplu click pe **Network Activate** și add-on-ul _Payfast_ va fi activat în rețeaua ta.
+După finalizarea instalării, veți fi redirecționat către pagina de plugin-uri. Aici, doar faceți clic pe **Activează în rețea**, iar add-on-ul _Payfast_ va fi activat în rețeaua dvs.
 
-![Activarea în rețea a add-on-ului Payfast](/img/config/settings-general.png)
+<!-- Captură de ecran indisponibilă: pagina de plugin-uri cu linkul Activează în rețea pentru add-on-ul Payfast Gateway -->

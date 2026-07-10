@@ -1,53 +1,53 @@
 ---
-title: Преглед на REST API
+title: Общ преглед на REST API
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# Справка за REST API
+# Справочник за REST API {#rest-api-reference}
 
-## Основна конфигурация
+## Базова конфигурация {#base-configuration}
 
-**Основен URL:** `{site_url}/wp-json/wu/v2/`
-**Аутентикация:** API Ключ и Секрет (HTTP Basic Auth или Параметри в URL)
+**Базов URL:** `{site_url}/wp-json/wu/v2/`
+**Удостоверяване:** API ключ и Secret (HTTP Basic Auth или URL параметри)
 
-## Аутентикация
+## Удостоверяване {#authentication}
 
-### Включване на API
+### Активиране на API {#enable-api}
 ```php
-// Включване на API в настройките на Ultimate Multisite или програмно
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### Получаване на API Употребяваемост
+### Получаване на API идентификационни данни {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Методи за Аутентикация
+### Методи за удостоверяване {#authentication-methods}
 
-**HTTP Basic Auth (Препоръчително):**
+**HTTP Basic Auth (препоръчително):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**Параметри в URL:**
+**URL параметри:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Основни Endpoints
+## Основни крайни точки {#core-endpoints}
 
-### 1. API за Клиенти (Customers API)
+### 1. API за клиенти {#1-customers-api}
 
-**Основен маршрут:** `/customers`
+**Базов маршрут:** `/customers`
 
 **Получаване на всички клиенти**
 ```http
 GET /wu/v2/customers
 ```
 
-**Получаване на конкретен клиент**
+**Получаване на един клиент**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "Забележки за VIP клиент"
+    "extra_information": "VIP customer notes"
 }
 ```
 
@@ -82,9 +82,9 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. API за Сайтове (Sites API)
+### 2. API за сайтове {#2-sites-api}
 
-**Основен маршрут:** `/sites`
+**Базов маршрут:** `/sites`
 
 **Създаване на сайт**
 ```http
@@ -96,15 +96,15 @@ Content-Type: application/json
     "membership_id": 10,
     "domain": "example.com",
     "path": "/",
-    "title": "Моят нов сайт",
+    "title": "My New Site",
     "template_id": 1,
     "type": "customer_owned"
 }
 ```
 
-### 3. API за Членства (Memberships API)
+### 3. API за членства {#3-memberships-api}
 
-**Основен маршрут:** `/memberships`
+**Базов маршрут:** `/memberships`
 
 **Създаване на членство**
 ```http
@@ -121,18 +121,18 @@ Content-Type: application/json
 }
 ```
 
-### 4. API за Продукти (Products API)
+### 4. API за продукти {#4-products-api}
 
-**Основен маршрут:** `/products`
+**Базов маршрут:** `/products`
 
 **Получаване на всички продукти**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. API за Плащания (Payments API)
+### 5. API за плащания {#5-payments-api}
 
-**Основен маршрут:** `/payments`
+**Базов маршрут:** `/payments`
 
 **Създаване на плащане**
 ```http
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. API за Домейни (Domains API)
+### 6. API за домейни {#6-domains-api}
 
-**Основен маршрут:** `/domains`
+**Базов маршрут:** `/domains`
 
-**Мапиране на домейн**
+**Свързване на домейн**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Endpoint за Регистрация
+## Крайна точка за регистрация {#registration-endpoint}
 
-Endpoint-ът `/register` предоставя пълен процес на регистрация/checkout:
+Крайната точка `/register` предоставя цялостен поток за поръчка/регистрация:
 
 ```http
 POST /wu/v2/register
@@ -187,7 +187,7 @@ Content-Type: application/json
     "auto_renew": true,
     "site": {
         "site_url": "mynewsite",
-        "site_title": "Моят нов сайт",
+        "site_title": "My New Site",
         "template_id": 1
     },
     "payment": {
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Отговори при Грешки
+## Крайни точки за суверенни наематели {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 добавя REST покритие за суверенни наематели за интеграции, които предоставят, инспектират или проверяват изолирани наематели.
+
+Точният payload на заявката зависи от активираната възможност на хоста, но интеграциите трябва да очакват тези групи крайни точки:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Използвайте крайната точка за bootstrap, за да подготвите регистъра на наемателя, базата данни, файловата система и състоянието на маршрутизацията. Използвайте крайните точки за състояние на миграцията и проверка, преди да превключите производствения трафик. Използвайте крайната точка за изтриване за суверенно премахване, така че идентификационните данни за базата данни да бъдат премахнати чрез потока за почистване на addon.
+
+Типичните отговори за състояние на миграцията включват:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Третирайте `ready: false` като блокер преди стартиране. Проверете подробностите от верификацията, поправете обвързването на хоста на базата данни, опашката, предоставянето на потребители или проблема с маршрутизацията, след което опитайте верификацията отново.
+
+## Отговори с грешки {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Невалидна стойност на параметър",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Невалиден формат на имейл"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Пагинация и Филтриране
+## Пагинация и филтриране {#pagination-and-filtering}
 
-**Параметри в заявката:**
+**Параметри на заявката:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Общи параметри:
-- `per_page` - Предметни ставки на страница (по подразбиране: 20, максимум: 100)
-- `page` - Номер на страницата
-- `search` - Търсещ израз
+Често срещани параметри:
+- `per_page` - Елементи на страница (по подразбиране: 20, макс.: 100)
+- `page` - Номер на страница
+- `search` - Термин за търсене
 - `orderby` - Поле за сортиране
 - `order` - Посока на сортиране (asc/desc)
-- `status` - Филтриране по статус
+- `status` - Филтриране по състояние
 - `date_created` - Филтриране по диапазон от дати

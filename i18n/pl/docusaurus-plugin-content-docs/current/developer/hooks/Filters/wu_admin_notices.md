@@ -4,11 +4,11 @@ title: Filtry - wu_admin_notices
 sidebar_label: wu_admin_notices
 _i18n_hash: b98d294d75277dfcfd941ca0e573e10c
 ---
-# Filter: wu_admin_notices
+# Filter: wu_admin_notices {#filter-wuadminnotices}
 
 Pozwala deweloperom filtrować powiadomienia administracyjne dodane przez Ultimate Multisite.
 
-## Parametry
+## Parametry {#parameters}
 
 | Nazwa | Typ | Opis |
 |------|------|-------------|
@@ -18,12 +18,12 @@ Pozwala deweloperom filtrować powiadomienia administracyjne dodane przez Ultima
 | $filter | `string` | Czy powiadomienia, które można zamknąć, zostały wyfiltrowane. |
 | $dismissed_messages | `array` | Lista kluczy powiadomień, które zostały zamknięte. |
 
-### Od
+### Od {#since}
 
 - 2.0.0
-### Źródło
+### Źródło {#source}
 
 Zdefiniowane w [`inc/class-admin-notices.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-admin-notices.php#L121) w linii 121.
 
 
-## Zwraca
+## Zwraca {#returns}

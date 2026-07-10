@@ -1,0 +1,111 @@
+---
+title: Umuhuza wa AI uhebuje ku Endpoints zijyanye
+sidebar_position: 1
+_i18n_hash: bce5f8a907ee496f07e38ca87a3e5324
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
+
+# Ultimate AI Connector y’Amaherezo Ahujwe {#ultimate-ai-connector-for-compatible-endpoints}
+
+Ultimate AI Connector y’Amaherezo Ahujwe ihuza APIs z’abatanga AI zihujwe na OpenAI n’umurongo wawe wa WordPress multisite. Teguza abatanga AI benshi — buri wese afite URL y’iherezo rye, API key, na model isanzwe — maze wohereze ibisabwa ukoresheje gusimbuza byikora igihe utanga serivisi ataboneka.
+
+## Ibiranga by’ingenzi {#key-features}
+
+- **Gushyigikira abatanga benshi**: Ongeraho amakarita menshi y’abatanga AI, buri wese afite URL y’iherezo rye, API key, na model isanzwe
+- **Gukurura ngo uhindure gahunda**: Tondeka abatanga ukurikije icyihutirwa ukoresheje gufata kuri buri karita; ibisabwa bikoresha abatanga hakurikijwe urutonde
+- **Kuyobora gusimbuza byikora**: Niba utanga w’ibanze ataboneka, ibisabwa bihita bisimbuzwa bigakoresha utanga ukurikiyeho wateguwe
+- **Igenamiterere rya buri mutanga**: Buri mutanga ategurwa ukwawo n’ibyangombwa bye byo kwinjira n’ihitamo rya model
+- **UI y’igenamiterere ishingiye ku makarita**: Yubatswe ku bice bya Card bihamye bya WordPress 6.9+ (CardBody, CardHeader, CardDivider)
+- **Kwaguka byikora iyo wongeyeho**: Amakarita mashya y’abatanga ahita yaguka kugira ngo uhite wuzuza ibisobanuro
+- **Gukuraho cache ya script**: Scripts z’abatanga zivanwaho cache igihe plugin ivugururwa kugira ngo hamenyekane ko version nshya iheruka ari yo yapakiwe
+
+## Ibisabwa {#requirements}
+
+- WordPress 5.3 cyangwa irenzeho
+- PHP 7.4 cyangwa irenzeho
+- Ultimate Multisite plugin (ikora)
+- Iherezo rya API rihujwe na OpenAI (ryakiriwe na wowe cyangwa ry’undi mutanga)
+
+## Kwinjiza {#installation}
+
+1. Shyira amadosiye ya addon muri directory yawe ya `/wp-content/plugins/`
+2. Koresha plugin unyuze muri menu ya 'Plugins' muri WordPress
+3. Jya kuri **Ultimate Multisite → AI Connector** kugira ngo utegure addon
+
+## Igenamiterere {#configuration}
+
+### Gutegura Abatanga Benshi {#multi-provider-setup}
+
+Mugaragaza y’igenamiterere ikoresha imiterere ishingiye ku makarita aho buri karita ihagarariye utanga AI umwe. Ushobora kongeraho abatanga uko ubakeneye.
+
+#### Kongeraho Utanga {#adding-a-provider}
+
+1. Jya kuri **Ultimate Multisite → AI Connector** muri admin y’umurongo
+2. Kanda **Ongeraho Utanga**
+3. Ikarita nshya y’utanga iragaragara kandi ikaguka byikora
+4. Uzuza ibisobanuro by’utanga:
+   - **Izina ry’Utanga** — ikirango cyo kumenya uyu mutanga (urugero: "OpenAI", "Mistral", "Local Ollama")
+   - **URL y’Iherezo** — URL y’ibanze ya API ihujwe na OpenAI (urugero: `https://api.openai.com/v1`)
+   - **API Key** — API key yawe kuri uyu mutanga
+   - **Model Isanzwe** — ikiranga model ikoreshwa by’imbere kuri uyu mutanga (urugero: `gpt-4o`, `mistral-small`)
+5. Kanda **Bika Igenamiterere**
+
+#### Gukuraho Utanga {#removing-a-provider}
+
+Kanda buto ya **Kuraho** ku ikarita iyo ari yo yose y’utanga kugira ngo uyisibe. Bika igenamiterere kugira ngo impinduka zikurikizwe.
+
+#### Guhindura Gahunda y’Abatanga {#reordering-providers}
+
+Kurura agashushondanga ko gufata (⣿) ku ruhande rw’ibumoso rw’ikarita iyo ari yo yose y’utanga kugira ngo uhindure gahunda yayo. Urutonde rugena icyihutirwa cyo gusimbuza: ibisabwa byoherezwa ku mutanga wa mbere kandi bigasimbuzwa abatanga bakurikiyeho niba icyifuzo kinaniwe.
+
+### Kuyobora Gusimbuza {#fallback-routing}
+
+Iyo icyifuzo ku mutanga w’ibanze kinaniwe — bitewe no kurenza igihe, igipimo ntarengwa, cyangwa ihagarara rya serivisi — connector ihita igerageza bundi bushya ikoresheje utanga ukurikiyeho mu rutonde. Ibi bikomeza kumanuka mu rutonde kugeza utanga atanze igisubizo cyangwa abatanga bose bageragejwe.
+
+| Ibyabaye | Imyitwarire |
+|----------|-----------|
+| Utanga w’ibanze asubije | Icyifuzo gitangwa uko bisanzwe |
+| Utanga w’ibanze ananiwe | Icyifuzo cyongera kugeragezwa n’utanga ukurikiyeho |
+| Abatanga bose bananiwe | Ikosa risubizwa uwahamagaye |
+
+Gusimbuza ntikugaragarira plugin cyangwa theme ihamagara — bakira igisubizo cyagenze neza cyangwa ikosa rya nyuma, hatitawe ku mubare w’abatanga bageragejwe.
+
+### Icyifashisho cy’Igenamiterere ry’Utanga {#provider-configuration-reference}
+
+| Umwanya | Urasabwa | Ibisobanuro |
+|-------|----------|-------------|
+| Izina ry’Utanga | Yego | Ikirango kigaragara kuri uyu mutanga |
+| URL y’Iherezo | Yego | URL y’ibanze ya API ihujwe na OpenAI |
+| API Key | Yego | Urufunguzo rwo kwemeza uyu mutanga |
+| Model Isanzwe | Yego | Ikiranga model gikoreshwa igihe nta model yagaragajwe mu cyifuzo |
+
+## Gukemura ibibazo {#troubleshooting}
+
+### Nta batanga bari ku rutonde {#no-providers-are-listed}
+
+Niba urutonde rw’abatanga ruri ubusa nyuma yo kubika, emeza ko:
+
+- Wakanze **Bika Igenamiterere** nyuma yo kongeraho abatanga
+- Mucukumbuzi yawe itabujije paji y’igenamiterere kubika (reba console ya mucukumbuzi niba harimo amakosa ya JavaScript)
+- Plugin ikora kandi uri kuri mugaragaza ya admin y’umurongo
+
+### Ibisabwa birananirwa ku batanga bose {#requests-are-failing-for-all-providers}
+
+- Menya neza ko URL y’iherezo ya buri mutanga ishobora kugerwaho ivuye kuri server yawe (si muri mucukumbuzi yawe gusa)
+- Reba ko buri API key ari yo kandi itarangije igihe
+- Suzuma igipimo ntarengwa n’uko quota y’utanga ihagaze muri dashboard yabo
+- Fungura kwandika logs zo gukemura ibibazo muri WordPress (`WP_DEBUG_LOG`) kugira ngo ufate ubutumwa burambuye bw’amakosa buva muri connector
+
+### Utanga ntakoreshwa mu gusimbuza {#a-provider-is-not-being-used-for-fallback}
+
+Gukurura ngo uhindure gahunda bihindura urutonde rwo gusimbuza. Emeza ko utanga witeze ko yakira ibisabwa byo gusimbuza ari mu mwanya nyawo mu rutonde kandi ko URL y’iherezo rye na API key ari byo.
+
+### Ikarita nshya y’utanga ntiyaguka byikora {#new-provider-card-does-not-expand-automatically}
+
+Kwaguka byikora bisaba ko JavaScript iba ikora muri mucukumbuzi yawe. Niba ikarita itaguka iyo ukanze, reba console ya mucukumbuzi niba harimo amakosa. Ibiri mu ikarita bihora bigerwaho ukanze umutwe w’ikarita, nubwo kwaguka byikora kudatangira.
+
+## Urutonde rw’impinduka {#changelog}
+
+Reba [Urutonde rw’impinduka](./changelog) ku mateka yuzuye ya version.

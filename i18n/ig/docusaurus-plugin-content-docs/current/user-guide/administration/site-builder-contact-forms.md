@@ -3,11 +3,11 @@ title: Ndu Nkwado Site Builder Contact Forms
 sidebar_position: 22
 _i18n_hash: b8d4d2003a8946f4184ca72fd9529d35
 ---
-# Forms Kontakt Website
+# Forms Kontakt Website {#site-builder-contact-forms}
 
 Superdav AI Agent v1.10.0 nwere ike ị chụm forms kontakt direktu na chat interface eziro Site Builder agent. Oge a ji ị chụm forms kontakt nke dị mma na ndale anyị anọ site ma ọ bụ anọ.
 
-## Overview
+## Overview {#overview}
 
 Ihe ị chụm contact form Site Builder (`create_contact_form`) ji otomatik nwere ike ịhụ plugin form ị nwere na-adịsite na-adịsite, maara ya contact form ji ihe plugin ahụ na-eme. Ihe a doro anyị bụ:
 
@@ -18,7 +18,7 @@ Ihe ị chụm contact form Site Builder (`create_contact_form`) ji otomatik nwe
 
 Assistant ahụ ji otomatik chụm plugin form mgbe ọ dị mma na site ị nwere ma ji eme contact form nke dị mma na-adịsite na-adịsite.
 
-## Creating a Contact Form
+## Creating a Contact Form {#creating-a-contact-form}
 
 Ọ bụrụ na ị chụm contact form ji Site Builder:
 
@@ -34,7 +34,7 @@ Assistant ahụ ji otomatik chụm plugin form mgbe ọ dị mma na site ị nwe
 
 4. Site Builder ji eme contact form ma hụrụ shortcode nke siapụ ya embed.
 
-## Using the Generated Shortcode
+## Using the Generated Shortcode {#using-the-generated-shortcode}
 
 Ọ bụrụ na Site Builder ji eme contact form, ọ ga-eme shortcode (ọchịrị, `[contact-form-7 id="123"]`). Ị ga-anọchịrị:
 
@@ -45,11 +45,11 @@ Assistant ahụ ji otomatik chụm plugin form mgbe ọ dị mma na site ị nwe
 
 3. **Use nó na template** — Ka ọ bụrụ ị chụrụ PHP, ị nwere ike ịcha shortcode ahụ n'ime file template theme.
 
-## Ịchara Contact Form-ah
+## Ịchara Contact Form-ah {#customizing-the-contact-form}
 
 Ọ bụrụ na Site Builder ya bụ contact form ahụ, ị nwere ike ịchara ya nke warụ:
 
-### Baka Chat Interface
+### Baka Chat Interface {#via-the-chat-interface}
 
 Kọwa Site Builder ahụ ka ọ gbachara form ahụ:
 
@@ -57,7 +57,7 @@ Kọwa Site Builder ahụ ka ọ gbachara form ahụ:
 
 Site Builder ahụ ga-agbanye form ahụ ma gbanwe shortcode ahụ nkea anyị.
 
-### Baka Admin Interface Plugin Form Ahụ
+### Baka Admin Interface Plugin Form Ahụ {#via-the-form-plugins-admin-interface}
 
 Ị nwere ike ịchara form ahụ dirine n'ime settings plugin form ahụ:
 
@@ -65,7 +65,7 @@ Site Builder ahụ ga-agbanye form ahụ ma gbanwe shortcode ahụ nkea anyị.
 2. Le ka form ahụ Site Builder ya bụ.
 3. Gbanwe fields form, validation rules, na email notifications dịka ọ dị.
 
-## Plugin Form Ahụ na Compatibility
+## Plugin Form Ahụ na Compatibility {#form-plugins-and-compatibility}
 
 Site Builder ahụ ga-achie automatically onye plugin form ahụ nwere n'site ị chọpụta ya ma jiri ya ịchara contact form ahụ. Ọ bụrụ na ị nwere multiple form plugins, Site Builder ahụ ga-prioritize ha n'ime ọkụmọọ ndị a:
 
@@ -76,7 +76,7 @@ Site Builder ahụ ga-achie automatically onye plugin form ahụ nwere n'site �
 
 Ọ bụrụ na ọ bụla plugin ndị a dịghị nwere, Site Builder ahụ ga-rekomend na ị chọpụta ọ bụla ha ọzọ ma ọ bụrụ na ị gbanwe contact form ahụ.
 
-## Email Notifications
+## Email Notifications {#email-notifications}
 
 Contact forms ndị Site Builder ya bụ configured ịgba email notifications gaa site administrator by default. Ị nwere ike ịchara recipient email address na notification message:
 
@@ -91,21 +91,21 @@ Contact forms ndị Site Builder ya bụ configured ịgba email notifications g
 - [Notifikasyon Email Notifications Fluent Forms](https://fluentforms.com/docs/)
 - [Notifikasyon Email Notifications Gravity Forms](https://docs.gravityforms.com/)
 
-## Ụdụ Uzoofia (Example Use Cases)
+## Ụdụ Uzoofia (Example Use Cases) {#example-use-cases}
 
-### Contact Form Simple
+### Contact Form Simple {#simple-contact-form}
 
 > "Kụziri contact form simple na fields name, email, na message."
 
-### Form Multi-Step
+### Form Multi-Step {#multi-step-form}
 
 > "Kụziri contact form na step ọzọ ọzọ: step ọzọ na information contact na step ọzọ na message na cara contact preferred."
 
-### Form Na Logic Conditional
+### Form Na Logic Conditional {#form-with-conditional-logic}
 
 > "Kụziri contact form na nwere fields dị iche iche dựaa selection user na dropdown."
 
-### Form Na File Upload
+### Form Na File Upload {#form-with-file-upload}
 
 > "Kụziri contact form na cho users nwere ike upload file ma attachment."
 

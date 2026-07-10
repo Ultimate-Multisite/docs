@@ -3,7 +3,7 @@ title: Sunrise ဖိုင် အမှား
 sidebar_position: 12
 _i18n_hash: 53d988d644c244d20f04444350bd5d3c
 ---
-# Sunrise File ထည့်သွင်းရာတွင် အမှားဖြစ်ခြင်း
+# Sunrise File ထည့်သွင်းရာတွင် အမှားဖြစ်ခြင်း {#error-installing-the-sunrise-file}
 
 sunrise.php ဖိုင်သည် WordPress စတင်အလုပ်လုပ်စဉ်တွင် ရှာဖွေသည့် အထူးဖိုင်တစ်ခုဖြစ်သည်။ WordPress က sunrise.php ဖိုင်ကို တွေ့ရှိနိုင်ရန် **wp-content folder** အတွင်းတွင် ရှိနေရန် လိုအပ်သည်။
 

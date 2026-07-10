@@ -4,11 +4,11 @@ title: 'الإجراء - wu_page_{$this->id}_load'
 sidebar_label: 'wu_page_{$this->id}_load'
 _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 ---
-# الإجراء: wu_page_\{$this->id\}_load
+# الإجراء: wu_page_\{$this->id\}_load {#action-wupagethis-idload}
 
 السماح لمطوري الإضافات بإضافة نقاط ربط إضافية إلى صفحاتنا.
 
-## المعلمات
+## المعلمات {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -16,11 +16,11 @@ _i18n_hash: d386046d2a23406f0fed8400e9aefa6e
 | $page_hook | `string` | نقطة الربط الخاصة بهذه الصفحة. |
 | $admin_page | `self` | مثيل الصفحة. |
 
-### منذ
+### منذ {#since}
 
 - 1.8.2
 - 2.0.4: تمت إضافة المعامل الثالث: مثيل الصفحة.
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L332) في السطر 332

@@ -3,21 +3,21 @@ title: Kugadzirisa uye Kuva Nekuti Mupenyu
 sidebar_position: 1
 _i18n_hash: 854fd649457edceefde0eb8246446ebe
 ---
-# Domain Seller: Setup uye Kuita Provider Configuration
+# Domain Seller: Setup uye Kuita Provider Configuration {#domain-seller-setup-and-provider-configuration}
 
 Addon ya Domain Seller inosvika ne wizard ye setup inoshandisa kuti inokupa mhinduro yakakubatsira kuenda zvinhu zvose zvinodzidzera. Ipeji iyi inozivaka kurumo (flow) ye wizard uye sei kutaura kana kutambawo (reconfigure) providers panguva apo.
 
-## Zvinodzidzera (Requirements)
+## Zvinodzidzera (Requirements) {#requirements}
 
 - **Multisite Ultimate** v2.4.12 kana yakare, inoshandiswa ne network
 - **PHP** 7.4+
 - Credentials dzem API dzinogona kuita kune registrar inga yakaita zvinhu zvakakosha.
 
-## Wizard ye setup yavo yakare (First-run setup wizard)
+## Wizard ye setup yavo yakare (First-run setup wizard) {#first-run-setup-wizard}
 
 Wizard ya setup inokuramba inozivaka nekuti unowada network-activate plugin yakare. Inoonekawo kunge mazuva ose ku **Network Admin › Ultimate Multisite › Domain Seller Setup**.
 
-### Step 1 — Chibvumirano (Choose a provider)
+### Step 1 — Chibvumirano (Choose a provider) {#step-1--choose-a-provider}
 
 Tsvaka registrar inotipa kuti utangei kune iye. Zvinogona kutanga zvinhu izvi:
 
@@ -33,7 +33,7 @@ Tsvaka registrar inotipa kuti utangei kune iye. Zvinogona kutanga zvinhu izvi:
 | NameSilo | No | No |
 | Enom | Yes | No |
 
-### Step 2 — Shanda (Enter credentials)
+### Step 2 — Shanda (Enter credentials) {#step-2--enter-credentials}
 
 Mwari wese we provider anogona kuita zvinhu dzakasiyana dze credentials:
 
@@ -65,11 +65,11 @@ Chinjisa **Sandbox mode** kana inengei ine kuti uone zvinhu vachiri munzvimbo ye
 - **Manage domain products** — link yakafanana kune Products list
 - **Configure providers** — inosimbisa Integration Wizard kuti uonge kana utaunganidza providers
 
-### Kuongeza provider yechipiri
+### Kuongeza provider yechipiri {#step-3--test-the-connection}
 
 Chira **Configure providers** uye run wizard anobva dzinotora registrar yese. Unogona kuva neproviders dzakawanda dzinotsvaga mumwe nguva. Ramba unoreva domain product kune provider yakasiya, kana uva pamusoro pe default.
 
-### Kuita sync TLDs manually
+### Kuita sync TLDs manually {#step-4--import-tlds}
 
 Muninga settings page, chira **Sync TLDs** panguva yese inosimbisa configured provider kuti utore pricing dzakare. Izvi zviri kuita zvakanaka panguva provider inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge inenge
 
@@ -89,7 +89,7 @@ Muninga settings page, chira **Sync TLDs** panguva yese inosimbisa configured pr
 
 ---
 
-## Notes dzinogona kuita neva (Provider capability notes)
+## Notes dzinogona kuita neva (Provider capability notes) {#step-5--create-a-domain-product}
 
 Hauonzi zvose API dzine zvinhu zvakasiyana. Addon inoshandisa zvinhu hazvazovanzwiswa nekugadzirisa matambudziko akakosha kune admin, pane kupfuura nekugadzirisa matambudziko akakosha kune admin pane kuita zvinangwa dzine kuratidza (support).
 

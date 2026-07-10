@@ -1,0 +1,144 @@
+---
+title: Panyambung AI Pamungkas pikeun WebLLM
+sidebar_position: 1
+_i18n_hash: f7101bbe1ed9d827a5fc25c451fd2614
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-connector-webllm" name="Ultimate AI Connector for WebLLM" />
+
+# Ultimate AI Connector for WebLLM {#ultimate-ai-connector-for-webllm}
+
+Ultimate AI Connector for WebLLM mawa inferensi AI asli-browser ka jaringan multisite WordPress anjeun. Ieu ngajalankeun model basa ageung sagemblengna dina browser maké WebLLM jeung mesin MLC — teu perlu API keys, teu aya panggilan éksternal, teu aya data anu kaluar tina alat pamaké.
+
+## Fitur Utama {#key-features}
+
+- **Inferensi sisi-browser**: LLM jalan sacara lokal dina browser pangunjung liwat WebLLM/MLC — teu perlu GPU server
+- **Widget obrolan ngambang**: Pamaké anu geus asup bisa méré prompt ka LLM sisi-browser langsung ti front end
+- **Indikator status admin-bar**: Status real-time tina mesin WebLLM katingali dina admin bar WordPress
+- **Runtime SharedWorker**: Sababaraha tab browser ngabagi hiji sési GPU tibatan silih rebut sumber daya GPU
+- **Middleware apiFetch**: Pamundut REST WordPress anu cocog jeung pola AI Client SDK sacara transparan dialihkeun ka broker WebLLM lokal — teu aya perjalanan bolak-balik HTTP loopback
+- **UI setélan widget**: Setélan panel konektor pikeun ngahurungkeun atawa mareuman widget obrolan jeung ngonfigurasi paripolah auto-prompt
+- **Cache IndexedDB**: Unduhan beurat model tetep salamet tina alihan CDN anu ngaruksak jalur Cache API standar
+- **Integrasi filter wpai**: Nyambung kana filter `wpai_preferred_text_models` supaya fitur AI Experiments ngalir ka mesin browser nalika dikonfigurasi
+
+## Sarat {#requirements}
+
+- WordPress 5.3 atawa leuwih luhur
+- PHP 7.4 atawa leuwih luhur
+- Plugin Ultimate Multisite (aktip)
+- Browser kalayan rojongan WebGPU (Chrome 113+, Edge 113+, atawa Firefox Nightly kalayan WebGPU diaktipkeun)
+
+## Pamasangan {#installation}
+
+1. Unggah file addon ka diréktori `/wp-content/plugins/` anjeun
+2. Aktipkeun plugin liwat ménu 'Plugins' dina WordPress
+3. Pindah ka **Ultimate Multisite → AI Connector** pikeun ngonfigurasi addon
+
+## Widget Obrolan Ngambang {#floating-chat-widget}
+
+Widget obrolan ngambang ngamungkinkeun pamaké naon waé anu geus asup pikeun berinteraksi jeung LLM sisi-browser langsung ti front end anjeun, tanpa ninggalkeun kaca anu keur dibuka.
+
+### Naon Anu Dilakukeun {#what-it-does}
+
+Nalika diaktipkeun, ikon obrolan mucunghul di juru unggal kaca front-end pikeun pamaké anu geus asup. Ngaklik ikon muka panel obrolan tempat pamaké bisa ngetik prompt jeung narima réspon ti model WebLLM anu jalan sacara lokal. Sabab model jalan sagemblengna dina browser, réspon téh pribadi jeung henteu ngalibetkeun pamrosésan sisi-server naon waé.
+
+### Indikator Status Admin-Bar {#admin-bar-status-indicator}
+
+Admin bar WordPress ngawengku indikator status anu némbongkeun kaayaan ayeuna tina mesin WebLLM:
+
+| Status | Harti |
+|--------|---------|
+| **Loading** | Mesin MLC keur ngamimitian atawa ngundeur beurat model |
+| **Ready** | Model geus dimuat jeung sadia pikeun inferensi |
+| **Idle** | Mesin geus dimuat tapi tab SharedWorker henteu aktip |
+| **Error** | Mesin gagal ngamimitian — pariksa konsol browser pikeun rinci |
+
+Indikator ngamutahirkeun sacara real-time tanpa merlukeun muat ulang kaca.
+
+### Kumaha Ngaktipkeun atawa Nonaktipkeun Widget {#how-to-enable-or-disable-the-widget}
+
+1. Buka **Ultimate Multisite → AI Connector** dina admin jaringan
+2. Pilarian panel **Connector**
+3. Hurungkeun atawa pareuman **Enable floating chat widget**
+4. Simpen setélan
+
+Widget ogé bisa diaktipkeun atawa dinonaktipkeun per-site tina admin situs sorangan lamun administrator jaringan geus méré kamampuhan éta.
+
+## Setélan Widget {#widget-settings}
+
+Panel Connector dina **Ultimate Multisite → AI Connector** ngandung setélan di handap pikeun widget obrolan ngambang:
+
+### Aktipkeun Widget Obrolan Ngambang {#enable-floating-chat-widget}
+
+Ngahurungkeun atawa mareuman widget obrolan pikeun sakabéh jaringan. Nalika dinonaktipkeun, widget henteu mucunghul dina kaca front-end mana waé, teu paduli kana peran pamaké.
+
+**Standar:** Pareum
+
+### Paripolah Auto-Prompt {#auto-prompt-behaviour}
+
+Ngatur naha widget obrolan sacara otomatis ngirim prompt nalika pamaké mukana.
+
+| Pilihan | Paripolah |
+|--------|-----------|
+| **Disabled** | Widget muka kana obrolan kosong — pamaké ngetik prompt sorangan |
+| **Page context** | Widget muka kalayan prompt anu geus dieusian sateuacanna dumasar kana judul jeung eusi kaca ayeuna |
+| **Custom prompt** | Widget muka kalayan prompt khusus anu anjeun tangtukeun dina widang di handap |
+
+Nalika disetél ka **Custom prompt**, widang téks tambahan mucunghul tempat anjeun bisa ngasupkeun téks prompt standar. Ngarojong variabel témplat dasar:
+
+- `{site_name}` — ngaran situs ayeuna
+- `{page_title}` — judul kaca ayeuna
+- `{user_display_name}` — ngaran tampilan pamaké anu geus asup
+
+**Standar:** Disabled
+
+## Runtime SharedWorker {#sharedworker-runtime}
+
+Vérsi 1.1.0 ngenalkeun runtime SharedWorker pikeun mesin MLC. Saméméhna, unggal tab browser anu ngagunakeun WebLLM ngamuat instansi sorangan tina model, silih saingan pikeun mémori GPU jeung nyababkeun masalah kinerja dina alat kalayan VRAM kawates.
+
+Kalayan runtime SharedWorker, hiji tab bertindak salaku host mesin. Sadaya tab séjén komunikasi jeung instansi tunggal éta ngaliwatan kanal pesen worker. Hasilna:
+
+- Hiji sési GPU dibagi ka sadaya tab anu kabuka
+- Réspon leuwih gancang sanggeus model dimuat (teu aya ngamimitian ulang-ulang)
+- Pamakéan mémori puncak leuwih handap dina alat
+
+SharedWorker transparan pikeun pamaké. Indikator status admin-bar sok ngagambarkeun kaayaan mesin babarengan, lain tab individual.
+
+## Middleware apiFetch {#apifetch-middleware}
+
+Addon masang middleware `apiFetch` anu nyegat pamundut WordPress REST API anu cocog jeung pola AI Client SDK. Tibatan nyieun pamundut HTTP loopback ka server, pamundut ieu dialihkeun langsung ka broker WebLLM lokal anu jalan dina SharedWorker.
+
+Ieu hartina plugin jeung theme anu ngagunakeun API `apiFetch` WordPress standar pikeun nelepon endpoint AI bakal otomatis meunang mangpaat tina model sisi-browser nalika éta sadia, tanpa merlukeun parobahan code.
+
+## Hooks jeung Filters {#hooks-and-filters}
+
+### Filters {#filters}
+
+- `wpai_preferred_text_models` — Ngadaptarkeun engine browser WebLLM minangka modél téks anu dipikaresep. Tambihan otomatis nyambung kana filter ieu nalika engine geus dikonfigurasi jeung sayaga.
+- `ultimate_webllm_widget_enabled` — Nimpa kaayaan widget diaktipkeun pikeun pamaké atawa kontéks husus. Balikeun `true` atawa `false`.
+- `ultimate_webllm_auto_prompt` — Ngarobah téks auto-prompt saméméh dikirim ka widget. Narima string prompt jeung objék `WP_Post` ayeuna.
+
+## Ngungkulan Masalah {#troubleshooting}
+
+### Widget obrolan henteu mucunghul {#the-chat-widget-does-not-appear}
+
+- Pastikeun pamaké geus asup — widget ngan dipintonkeun ka pamaké anu geus diauténtikasi
+- Pariksa yén **Aktipkeun widget obrolan ngambang** geus dihurungkeun dina panel Connector
+- Pastikeun browser pamaké ngarojong WebGPU (tingali Sarat di luhur)
+
+### Indikator admin-bar némbongkeun "Error" {#the-admin-bar-indicator-shows-error}
+
+Buka konsol developer browser (F12) jeung pilari kasalahan anu patali jeung WebLLM. Sabab umum:
+
+- Browser henteu ngarojong WebGPU
+- Undeuran beurat modél gagal — pariksa konektipitas jaringan jeung coba mupus cache IndexedDB dina pakakas developer browser (Application → IndexedDB)
+- Éksténsi browser ngahalangan SharedWorker
+
+### Beurat modél diundeur unggal waktos {#model-weights-download-every-time}
+
+Tambihan ngagunakeun IndexedDB minangka backend cache pikeun mastikeun beurat modél tetep aya sanajan aya alihan CDN. Lamun beurat diundeur deui dina unggal kunjungan, pariksa yén IndexedDB henteu keur dipupus ku setélan privasi browser atawa eksténsi.
+
+## Changelog {#changelog}
+
+Tingali [Changelog](./changelog) pikeun sajarah vérsi lengkep.

@@ -3,11 +3,11 @@ title: Zahtevi
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Zahtevi za Ultimate Multisite
+# Zahtevi za Ultimate Multisite {#ultimate-multisite-requirements}
 
 Prvi vprašanje, ki si lahko postavite pred kupanjem Ultimate Multisite, je verjetno kakšna so zahtev za delovanje našega plugin-a. Na srečo obstaja samo nekaj osnovnih zahtev za delovanje Ultimate Multisite: **imenje domena**, dobro **hostinarno storitev** in WordPress **Multisite** instalacija. To je vse, kar vam je potrebno!
 
-## Ime domena
+## Ime domena {#domain-name}
 
 Preden se ukvarjamo z imenom domena, pomislite na to kakšno je vaše specifično nišo in kaj boste ustvarjali s Ultimate Multisite: Da želite ustvariti agencijo? Prodajati spletne strani podobne trgovinjem? Lahko pa WordPress web hosting? S Ultimate Multisite je vse mogoče.
 
@@ -15,7 +15,7 @@ Naš plugin zagotavlja storitve naročnine, zbiranje plačil, forme za nakup, ra
 
 Koli nišo izberete, lahko upravljate s našim pluginom, če prodajate spletne strani kot storitev! Preverite, da ste izbrali ime domena ki se uskladi z vašim poslovnim načrtom.
 
-## Hostinarna storitev
+## Hostinarna storitev {#hosting-provider}
 
 S čakanjem na zanimivo ime domena, ki predstavlja vašo nišo in poslovanje, boste morali izbrati dobri spletni hostinarno podjetje za hostiranje svoje mreže s Ultimate Multisite. Na trgu obstajajo dobre možnosti. Nekateri hostniki se dobro integrirajo z Ultimate Multisite, kar lahko utriličilo odločitev, odvisno od tega kaj načrtujete.
 
@@ -23,7 +23,7 @@ Ultimate Multisite bi se bo deluje na katerem koli hostingu. Edina razlika je, d
 
 Kaj kabe serverih specifikacij se nanaša, ni to specifična formula, ker bo odvisno od funkcij in delov, ki jih ponujate ter velikosti vaše mreže. Deljeni hosting lahko predstavlja dober začetek, vendar ko se vaša mreža začne razvijati, boste verjetno potrebovali dedikirani VPS.
 
-## WordPress Multisite
+## WordPress Multisite {#wordpress-multisite}
 
 Zdaj давайте malo pogovorimo o namestitvi WordPress Multisite.
 

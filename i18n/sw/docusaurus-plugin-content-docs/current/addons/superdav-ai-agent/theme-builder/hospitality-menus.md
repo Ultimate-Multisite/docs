@@ -3,15 +3,15 @@ title: Menyu za Ukarimu
 sidebar_position: 3
 _i18n_hash: 6005be1ddbd4aa6dddf175828f4fc8f5
 ---
-# Menyu za Ukarimu
+# Menyu za Ukarimu {#hospitality-menus}
 
 Kipengele cha **Menyu za Ukarimu** kinawezesha Theme Builder kutengeneza na kuingiza kurasa za menyu za chakula na vinywaji zenye muundo moja kwa moja kwenye tovuti yako ya WordPress.
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Sasa Theme Builder inaweza kuunda kurasa za menyu zenye muundo na za kitaalamu kwa biashara za ukarimu, ikiwemo migahawa, vituo vya kahawa, barları, na huduma za uandaaji chakula. Menyu hizi zimeunganishwa kikamilifu na muundo wa tovuti yako na zinaweza kuhaririwa na kudhibitiwa kwa urahisi.
 
-## Aina za Ukarimu Zinazoukutana
+## Aina za Ukarimu Zinazoukutana {#supported-hospitality-types}
 
 - **Migahawa** — menyu za chakula cha huduma kamili
 - **Vituo vya Kahawa** — menyu za kahawa na vitafunio vya mwanga
@@ -21,9 +21,9 @@ Sasa Theme Builder inaweza kuunda kurasa za menyu zenye muundo na za kitaalamu k
 - **Food Trucks** — menyu za huduma ya chakula kwa magari
 - **Briweries na Wineries** — menyu za vinywaji zenye maelezo
 
-## Muundo wa Menyu
+## Muundo wa Menyu {#menu-structure}
 
-### Makundi ya Menyu
+### Makundi ya Menyu {#menu-categories}
 
 Menyu huandaliwa katika makundi:
 
@@ -34,7 +34,7 @@ Menyu huandaliwa katika makundi:
 - **Vinywaji** — kinywaji (kwa pombe na bila pombe)
 - **Maalum** — maalum ya kila siku au ya msimu
 
-### Muundo wa Kipengele cha Menyu
+### Muundo wa Kipengele cha Menyu {#menu-item-format}
 
 Kipengele kimoja cha menyu kinajumuisha:
 
@@ -49,7 +49,7 @@ Kipengele kimoja cha menyu kinajumuisha:
 }
 ```
 
-#### Vipengele vya Kipengele
+#### Vipengele vya Kipengele {#item-fields}
 
 | Field | Type | Description |
 |-------|------|-------------|
@@ -60,9 +60,9 @@ Kipengele kimoja cha menyu kinajumuisha:
 | `allergens` | array | Vyenye mzio vya kawaida (Nuts, Shellfish, n.k.) |
 | `availability` | string | Linapatikana lini (Daily, Seasonal, n.k.) |
 
-## Kuunda Menyu za Ukarimu
+## Kuunda Menyu za Ukarimu {#creating-hospitality-menus}
 
-### Hatua ya 1: Toa Taarifa za Menyu
+### Hatua ya 1: Toa Taarifa za Menyu {#step-1-provide-menu-information}
 
 Mueleze Theme Builder kuhusu menyu yako:
 
@@ -71,7 +71,7 @@ Create a restaurant menu for my Italian restaurant with appetizers,
 pasta dishes, main courses, and desserts. Include prices and descriptions.
 ```
 
-### Hatua ya 2: Theme Builder Anaunda Menyu
+### Hatua ya 2: Theme Builder Anaunda Menyu {#step-2-theme-builder-generates-menu}
 
 Theme Builder:
 
@@ -81,7 +81,7 @@ Theme Builder:
 4. Anafomati bei na maelezo
 5. Anoongeza taarifa za lishe na viyenye mzio
 
-### Hatua ya 3: Pitia na Rekebisha
+### Hatua ya 3: Pitia na Rekebisha {#step-3-review-and-customize}
 
 Unaweza:
 
@@ -91,9 +91,9 @@ Unaweza:
 4. Kusasisha maelezo na taarifa za lishe
 5. Kurekebisha mtindo na mpangilio
 
-## Chaguo za Kuonyesha Menyu
+## Chaguo za Kuonyesha Menyu {#menu-display-options}
 
-### Ukurasa Kamili wa Menyu
+### Ukurasa Kamili wa Menyu {#full-menu-page}
 
 Ukurasa maalum unaoonyesha menyu yako yote:
 
@@ -102,7 +102,7 @@ Ukurasa maalum unaoonyesha menyu yako yote:
 - Mpangilio rafiki kwa uchapishaji
 - Muundo unaojibu simu (Mobile-responsive)
 
-### Widget ya Menyu
+### Widget ya Menyu {#menu-widget}
 
 Ingiza sehemu za menyu kwenye kurasa zingine:
 
@@ -111,7 +111,7 @@ Ingiza sehemu za menyu kwenye kurasa zingine:
 - Menyu ya vinywaji kwenye ukurasa wa barları
 - Maonyesho ya vitamu kwenye sehemu ya chini (footer)
 
-### PDF ya Menyu
+### PDF ya Menyu {#menu-pdf}
 
 Tengeneza menyu ya PDF inayoweza kupakuliwa:
 
@@ -120,9 +120,9 @@ Tengeneza menyu ya PDF inayoweza kupakuliwa:
 - Inajumuisha picha na maelezo
 - Rahisi kushiriki na kutuma kwa barua pepe
 
-## Taarifa za Lishe na Vyenye Mzio
+## Taarifa za Lishe na Vyenye Mzio {#dietary-and-allergen-information}
 
-### Sifa za Lishe
+### Sifa za Lishe {#dietary-attributes}
 
 Weka alama kwenye vitu kwa taarifa za lishe:
 
@@ -134,7 +134,7 @@ Weka alama kwenye vitu kwa taarifa za lishe:
 - **Low-Carb** — kabonihidrati zimepunguzwa
 - **High-Protein** — zenye protini nyingi
 
-### Onyo la Vyenye Mzio
+### Onyo la Vyenye Mzio {#allergen-warnings}
 
 Jumuisha viyenye mzio vya kawaida:
 
@@ -147,9 +147,9 @@ Jumuisha viyenye mzio vya kawaida:
 - **Gluten** — ngano na nafaka zenye gluten
 - **Sesame** — mbegu za simsim na mafuta
 
-## Usimamizi wa Menyu
+## Usimamizi wa Menyu {#menu-management}
 
-### Kusasisha Bei
+### Kusasisha Bei {#updating-prices}
 
 Sasisha bei za menyu kwa urahisi:
 
@@ -159,7 +159,7 @@ Sasisha bei za menyu kwa urahisi:
 4. Hifadhi mabadiliko
 5. Mabadiliko yanaonekana mara moja kwenye tovuti yako
 
-### Kuongeza Vitu vya Msimu
+### Kuongeza Vitu vya Msimu {#adding-seasonal-items}
 
 Tengeneza tofauti za menyu za msimu:
 
@@ -169,7 +169,7 @@ Tengeneza tofauti za menyu za msimu:
 4. Panga tarehe za upatikanaji
 5. Inaonyeshwa kiotomatiki wakati wa msimu
 
-### Kudhibiti Maalum
+### Kudhibiti Maalum {#managing-specials}
 
 Onyesha maalum ya kila siku au ya wiki:
 
@@ -179,7 +179,7 @@ Onyesha maalum ya kila siku au ya wiki:
 4. Sasisha kila siku au kila wiki
 5. Hifadhi maalum ya zamani
 
-## Uunganishaji na Theme Builder
+## Uunganishaji na Theme Builder {#integration-with-theme-builder}
 
 Unapotumia Theme Builder kwa tovuti za ukarimu:
 
@@ -189,9 +189,9 @@ Unapotumia Theme Builder kwa tovuti za ukarimu:
 4. **Uboreshaji wa simu** — menyu zinaonekana vizuri kwenye simu
 5. **Uboreshaji wa SEO** — menyu zinaendana na injini za utafutaji
 
-## Mazoea Bora
+## Mazoea Bora {#best-practices}
 
-### Muundo wa Menyu
+### Muundo wa Menyu {#menu-design}
 
 - **Mpangilio wazi** — muundo wa makundi wenye mantiki
 - **Maelezo yanayosomeka** — yanayochochea hamu na yenye taarifa
@@ -199,7 +199,7 @@ Unapotumia Theme Builder kwa tovuti za ukarimu:
 - **Picha za kitaalamu** — picha za chakula zenye ubora wa juu
 - **Nusu nafasi (Whitespace)** — usijazoe sana ukurasa
 
-### Maudhui
+### Maudhui {#content}
 
 - **Maelezo sahihi** — elezea vitu kwa usahihi
 - **Angazia maalum** — fanya maalum yatotoke
@@ -207,7 +207,7 @@ Unapotumia Theme Builder kwa tovuti za ukarimu:
 - **Sasisha mara kwa mara** — weka bei na vitu kuwa vya kisasa
 - **Tumia lugha inayochochea hamu** — fanya vitu vionekane tamu
 
-### Upatikanaji
+### Upatikanaji {#accessibility}
 
 - **Fonti zinazosomeka** — tumia fonti wazi na zinazosomeka
 - **Tofauti ya kutosha** — hakikisha maandishi yanayosomeka
@@ -215,9 +215,9 @@ Unapotumia Theme Builder kwa tovuti za ukarimu:
 - **Onyo la viyenye mzio** — onyesha viyenye mzio kwa uwazi
 - **Rafiki kwa simu** — jaribu kwenye vifaa vyote
 
-## Mifano
+## Mifano {#examples}
 
-### Muundo wa Menyu ya Migahawa
+### Muundo wa Menyu ya Migahawa {#restaurant-menu-structure}
 
 ```
 Appetizers
@@ -241,7 +241,7 @@ Desserts
 └── Gelato Selection
 ```
 
-### Muundo wa Menyu ya Vituo vya Kahawa
+### Muundo wa Menyu ya Vituo vya Kahawa {#cafe-menu-structure}
 
 ```
 Coffee
@@ -260,7 +260,7 @@ Sandwiches
 └── Vegetarian Wrap
 ```
 
-## Vipengele Vinavyohusiana
+## Vipengele Vinavyohusiana {#related-features}
 
 - [Create Menu](../abilities/create-menu.md) — unda menyu za urambazaji
 - [Design Direction](./design-direction.md) — rekebisha muundo wa tovuti yako

@@ -3,9 +3,9 @@ title: Ngā Whakawātea
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Whakamārama o te Rereke
+# Whakamārama o te Rereke {#release-notes}
 
-## Versi 2.13.0 — Whakawātea i te 2026-06-05
+## Versi 2.13.0 — Whakawātea i te 2026-06-05 {#version-2130--released-on-2026-06-05}
 
 - Hou Hou: Whakawhanaungatanga (sovereign-tenant support) e whāinga ana ki te mōhaka o ngā aka o te whānau wāhi (customer account), checkout, billing, site, invoice, template switching, me domain mapping. Ko tēnei he tino nui kia taea ai i ngā whānau wāhi te whakahaere i ngā mea e tika ana ki te māmā, ā, hei whakaatu i ngā mea e tika ana ki te wāhi nui (main site) mo ngā mahi e kaha ki te whakahaere.
 - Hou Hou: Whakawhanaungatanga (renewal-credential checks) he whāinga ki te whakamārama i ngā korekore o te whakatere (recurring memberships). Ko tēnei e hiahia ana ki te whaiaro i te gateway kia taea ai ia te whero i te auto-renewal (auto-whakawhanaungatanga) i roto i ngā wā e pōtiki ko he tino whakahou o te billing agreement, subscription, heta token vault.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Whakamahinga (Fix): Ko ngā edge cases o membership renewals, expiration display, me payment collection e pōtiki ko he whakatika ai i ngā expiration immediate, crashes, or missed required payments.
 - Whakawhanaungatanga (Improved): He tino whakamātautanga i te WordPress compatibility i te 7.0, he whakamaoritanga o ngā assets o production Vue mai npm sources, ā, ko Cypress end-to-end coverage e pōtiki ko he whakatika ai i ngā flows o checkout, setup, SSO, me gateway mō te tino whakamātautanga.
 
-## Versja 2.12.0 — Rerehua i 2026-05-15
+## Versja 2.12.0 — Rerehua i 2026-05-15 {#version-2120--released-on-2026-05-15}
 
 - Hou Hou: Whakawhanaungatanga Hostinger (hPanel) mō whaiwhi host supported, me te whakawhanaungatanga domain mapping.
 - Hou Hou: Ko Site Exporter e whaiaro ngā network import bundles mō te whakatū i te site paku, hei whakatau i te restoration o te site katoa i te whenua.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Whakawhanaungatanga (Fix): Ko te Site Exporter CLI e whaiaro te selection o te site network default e tika ana.
 - Whakamaharatanga (Improved): Whakawātea ko wp-cli bundled i te package plugin, kia whakatau i te kite o te plugin.
 
-## Versja 2.11.0 — Rerehua i 2026-05-11
+## Versja 2.11.0 — Rerehua i 2026-05-11 {#version-2110--released-on-2026-05-11}
 
 - Hou Hou: Ko te site exports e whaiaro ngā `index.php` e self-booting, hei āwhina i te ZIP ki te whakauru i host hou i roto i te whakamahi plugin paku.
 - Hou Hou: Ko te network export e tino whaiaro ai ngā administrator mō te whakaputa i ngā subsites katoa i archive paku mai i te Site Export admin page.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Hou Hou: Ko te checkout form editor e whaiaro ai i te product e pātata ki te field e tino kitea.
 - Hou Hou: Ko te settings tab mō Import/Export e tino whakatika ana i te scope (whakawhanaungatanga) me te whaiwhi tika ki te Site Export tool.
 
-## Versja 2.10.0 — Rerehua i 2026-05-05
+## Versja 2.10.0 — Rerehua i 2026-05-05 {#version-2100--released-on-2026-05-05}
 
 - Houroa: Whakaaro hou mō te PayPal guided setup wizard mō te whakauru manuahi, me te flag OAuth mō te whaiaro whakamārama i te gateway i runga i te pai.
 - Houroa: He whakaora mō te panel o te mea waka (customer panel) e whakahouhia ana ki te whakamahi i te card current-template, grid pēri, me te puta mai o te **Reset current template** button.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Whakaora: Ka whakaae ai te SSO path i roto i ngā wāhanga whakatū katoa.
 - Whakaora: Ka whakatutuku ai ngā titi o te site (site identity options) i runga i te save.
 
-## Version 2.9.0 — Whakawātea i te 2026-04-30
+## Version 2.9.0 — Whakawātea i te 2026-04-30 {#version-290--released-on-2026-04-30}
 
 - Houroa: He whakawhiti export me import mō te single-site e whānui ana i **Tools > Export & Import**.
 - Whakaora: Ka puta ai ngā ZIP files o te export i roto i te endpoint o te download e whakatū ana i te whaiaro.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Whakaora: Ka whakatika ai ngā Tour IDs i runga i underscores i ngā user settings keys.
 - Whakamaharatanga: Ka whakamahia ai te ZipArchive i roto i te wā e pēri i Alchemy/Zippy mō pai ake te compatibility.
 
-## Version 2.8.0 — Whakawātea i te 2026-04-29
+## Version 2.8.0 — Whakawātea i te 2026-04-29 {#version-280--released-on-2026-04-29}
 
 - Hou Hou: Whakawhanaungaho (Jumper) toggle whakahouwha i te UI o Aopito Option.
 - Hou Hou: Whakawhanaungaho (Status) whakawhanaunga ki te whānui o te whānui o te checkout forms list table.

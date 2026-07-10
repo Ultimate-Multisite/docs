@@ -3,17 +3,17 @@ title: Сыртқа экспорт һәм импорт
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Экспорт жана импорт
+# Экспорт жана импорт {#export--import}
 
 Ultimate Multisite 2.9.0 да **Tools > Export & Import** (Куралдар > Экспорт жана импорт) бөлүмүнөн бир сайтты ZIP файлы катары пакеттөө, андан ошол ZIP-ти калыбына келтирүү же бир сайтты бири-бирдиктүү Ultimate Multisite жана бир сайттуу WordPress орнотуулары арасында жылдыруу керек болгон учурда бир гана **Export & Import** куралын кошот.
 
-## Зарыл укуштар (permissions)
+## Зарыл укуштар (permissions) {#required-permissions}
 
 Сиз экспорту же импортту жүргүзгүңүз келген сайттагы WordPress **Tools** менюсуна кирүүгө мүмкүнчүлүгү бар администратор катары киришиңиз керек. Multisite тармагында, сеть-уровду Ultimate Multisite куралдарынан подсайттарды экспорту же импорттоо учурунда сеть администратору эсебинен колдонуңуз.
 
 Экспорт ZIP жүктөп алуу үчүн аутентификацияланган жүктөө конети аркылуу көрсөтүлөт, ошондуктан жүгүртүү аяктаганча администратор сессиясын активде болгоңуз жана түзүлгөн жүктөө URL'лерин публик жерде бөлүшпөңүз.
 
-## Сайтты ZIP-ке экспорту
+## Сайтты ZIP-ке экспорту {#exporting-a-site-to-a-zip}
 
 1. Копилоону каалаганыңызды WordPress администраторунда, **Tools > Export & Import** (Куралдар > Экспорт жана импорт) баракчасына кириңиз.
 2. Экспорт аймагын ачып, пакеттөөңүз келген сайтты тандаңыз.
@@ -23,7 +23,7 @@ Ultimate Multisite 2.9.0 да **Tools > Export & Import** (Куралдар > Э
 
 ZIP файлын коопсуз жерде сактаңыз. Ал сайттын мазмунун, жөнгө салууларын (settings), медиа файлдарын жана танланган код активдерине болгон маалыматтарды камтышы мүмкүн.
 
-## Экспорттун ичиндеги нерселер
+## Экспорттун ичиндеги нерселер {#what-the-export-includes}
 
 Экспорт ZIP төмөнкүлөрдү камтый алат:
 
@@ -34,7 +34,7 @@ ZIP файлын коопсуз жерде сактаңыз. Ал сайттын
 
 ZIP faylın tam boyutu medya miktarına, seçtiğiniz eklentilere ve sitenin veritabanı tablolarının boyutuna bağlıdır.
 
-## Bir siteyi ZIP'ten içe aktarma
+## Bir siteyi ZIP'ten içe aktarma {#importing-a-site-from-a-zip}
 
 1. Hedef WordPress sitesinde **Araçlar > Dışa Aktar ve İçe Aktar** bölümüne gidin.
 2. İçe aktarma alanını açın ve Dışa Aktar ve İçe Aktar aracıyla oluşturduğunuz ZIP dosyasını yükleyin.
@@ -46,7 +46,7 @@ ZIP faylın tam boyutu medya miktarına, seçtiğiniz eklentilere ve sitenin ver
 
 Tek bir sitedeki WordPress kurulumunda, bir ZIP dosyası mevcut siteyi içe aktarılan siteyle değiştirir. Başlamadan önce hedef sitenin tam yedeğini alın ve aynı anda aynı site için birden fazla içe aktarma işlemine başlamaktan kaçının.
 
-## Sınırlamalar ve uyumluluk notları
+## Sınırlamalar ve uyumluluk notları {#limitations-and-compatibility-notes}
 
 Очень большие папки с загрузками или медиабиблиотеки могут создавать большие ZIP-файлы. Перед экспортом или импортом больших сайтов обязательно проверьте лимиты загрузок PHP, лимиты выполнения, свободное место на диске, оперативную память и настройки таймаута сервера.
 Очень большие медиабиблиотеки могут потребовать перемещения во время окна технического обслуживания с низкой нагрузкой.

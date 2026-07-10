@@ -8,7 +8,7 @@ _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 
 フック名の動的部分である `$this->id` はページIDを指します。
 
-## Parameters
+## Parameters {#action-wupagethis-idregisterwidgets}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ _i18n_hash: accfd3a11e80c5b3d9c753f065a15fbe
 | $page_hook | `string` | ページフック。 |
 | $page | `object` | ページオブジェクト。 |
 
-### Since
+### Since {#parameters}
 
 - 2.4.10
-### Source
+### Source {#since}
 
 Defined in [`inc/admin-pages/class-base-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-base-admin-page.php#L755) at line 755

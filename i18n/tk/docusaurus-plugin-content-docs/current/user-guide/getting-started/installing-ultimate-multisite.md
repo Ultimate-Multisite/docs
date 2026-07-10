@@ -3,13 +3,13 @@ title: Ultimate Multisite-i quraşdyrmaq
 sidebar_position: 12
 _i18n_hash: dda8f0d2b67bc421c0a484c76c8eae6d
 ---
-# Ultimate Multisite-iň gurulmagy
+# Ultimate Multisite-iň gurulmagy {#installing-ultimate-multisite}
 
 :::note
 Bu okuw materialy, WordPress Multisite-iň ýaýdan hem-de gurnama diliniň özleşdirilendigini çaklaýar. Görnüşini öwrenmek üçin, WP Beginner-iň [şu okuw materialyna](https://www.wpbeginner.com/glossary/multisite/) seredip geçiň.
 :::
 
-## Plugin gurulmagy
+## Plugin gurulmagy {#installing-the-plugin}
 
 Ultimate Multisite [WordPress.org](https://wordpress.org/plugins/ultimate-multisite/) saýtynda ýörite berilýär.
 
@@ -29,17 +29,17 @@ Aktiwleşdirilenden soňra, awtomatiki ýolla gurnama usulynda geçirilýärsiň
 
 ![Plugin aktiwleşdirildi we usula geçirildi](/img/installation/plugin-activated.png)
 
-## Gurnama usuly
+## Gurnama usuly {#setup-wizard}
 
 Gurnama usuly, Ultimate Multisite-iň 10 minutda gurulmagy üçin talyp edýär.
 
-### Salamlaşma
+### Salamlaşma {#welcome}
 
 Başlamak üçin **Başlaýaýyn** düwmä basyň.
 
 ![Gurnama usulynda salamlaşma sahypasy](/img/installation/wizard-welcome.png)
 
-### Öňden barlaglar
+### Öňden barlaglar {#pre-install-checks}
 
 Bu ädim, sistemanyň we WordPress gurşagynyň maglumatlaryny barlap, Ultimate Multisite-iň talaplaryna laýyk gelýänligini anyklaýar. Eger her zady gowy bolan bolsa, **Kiçi ädime geç** düwmä basyň.
 
@@ -51,31 +51,31 @@ Eger Ultimate Multisite gurulan bolsa, emma **heniz torunyň ähli böleklerinde
 **Torbada işlädirmek** düwmä basmak, pluginleri awtomatiki ýolla torunyzyň ähli böleklerinde işlädirer. Aktiwleşdirilenden soňra, usul normalda gurnama ädimine geçýär. Usuly tamamlamak üçin, usuldan çykman gerek däl.
 :::
 
-### Gurma
+### Gurma {#installation}
 
 Gurnama programmasy, zerur maglumat bazalaryny döreder we Ultimate Multisite-iň işlemesi üçin zerur bolan `sunrise.php` faýlyny gurar. Dowam etmek üçin **Gurmak** düwmä basyň.
 
 ![Gurnama ädiminde maglumat bazalary we sunrise.php](/img/installation/wizard-installation.png)
 
-### Siziň kompaniýaňyz
+### Siziň kompaniýaňyz {#your-company}
 
 Kompaniýanyň maglumatlaryny giriziň we özüňiz üçin ýörite pul birligini saýtlaň. Bu maglumatlar, WaaS platformasyňyzyň ähli böleklerinde ulanylýar. Gutardygyňyzdan soňra **Dowam et** düwmä basyň.
 
 ![Siziň kompaniýaňyz konfigurasiýa ädimi](/img/installation/wizard-your-company.png)
 
-### Ýönekeý maglumatlar
+### Ýönekeý maglumatlar {#default-content}
 
 Bu ädim, öňünden döredilen şablonlary, önümleri we beýleki başlangyç maglumatlary gurmagyna mümkinçilik berýär. Bu, Ultimate Multisite-iň funksiýalary bilen tanyşmak üçin peýdaly usuldyr. Ýönekeý maglumatlary goşmak üçin **Gurmak** düwmä basyň ýa-da bu ädimden geçmek isleseňiz, özbaşdak başlaň.
 
 ![Ýönekeý maglumatlar gurma ädimi](/img/installation/wizard-default-content.png)
 
-### Maslahat berilýän pluginler
+### Maslahat berilýän pluginler {#recommended-plugins}
 
 Maslahat berilýän goşmaça pluginleri ýa-da isleseňiz, bu ädimden geçip bilersiňiz.
 
 ![Maslahat berilýän pluginler ädimi](/img/installation/wizard-recommended-plugins.png)
 
-### Taýyndy!
+### Taýyndy! {#ready}
 
 Şuňa galdy! Siziň Ultimate Multisite gurşagynyzyň gurulmagy tamamlandy. Indi **Torbasy administratorynyň paneli** arkaly öz Web saýt platformasyňyzda işläp bilersiňiz.
 

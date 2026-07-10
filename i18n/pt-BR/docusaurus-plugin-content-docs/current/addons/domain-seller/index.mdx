@@ -1,118 +1,135 @@
 ---
-title: Vendedor de Domínio
+title: Vendedor de Domínios
 sidebar_position: 1
-_i18n_hash: 5c8b8b2b64d22ad6e2ee561b985102e9
+_i18n_hash: 74562d4e09bdd5b6301fe67738fbd02c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-domain-seller" name="Domain Seller" />
 
-# Domain Seller
+# Domain Seller {#domain-seller}
 
-**Multisite Ultimate: Domain Seller** transforma sua rede WordPress Multisite em uma plataforma poderosa de venda de domínios. Este complemento integra-se perfeitamente com o Multisite Ultimate v2 para oferecer:
+**Multisite Ultimate: Domain Seller** transforma sua rede WordPress Multisite em uma poderosa plataforma de venda de domínios. Permita que os clientes registrem domínios personalizados diretamente durante o cadastro ou pelo Dashboard, com verificação de disponibilidade em tempo real e preços transparentes.
 
-### Recursos Principais
+### Por que usar Domain Seller? {#why-domain-seller}
 
-#### **🌐 Suporte a Múltiplos Provedores de Domínio**
-* **Integração OpenSRS** - Suporte completo para registro e gerenciamento de domínios OpenSRS
-* **Arquitetura Extensível** - Estrutura para adicionar Namecheap, GoDaddy e outros provedores
-* **Teste de Provedor** - Teste de conexão e validação de configuração embutidos
-* **Suporte a Failover** - Failover automático entre provedores para maior confiabilidade
+O registro de domínios é um dos upsells mais solicitados para qualquer plataforma WaaS (Website as a Service). Em vez de enviar seus clientes para um registrador terceirizado, você pode oferecer domínios diretamente — mantendo mais receita na sua rede enquanto proporciona aos clientes uma experiência sem atritos.
 
-#### **💰 Preços Avançados & Produtos**
-* **Produtos de Domínio** - Tipo de produto nativo do Multisite Ultimate v2 para domínios
-* **Markup Flexível** - Acréscimo fixo ou percentual sobre preços de atacado
-* **Preços Específicos por TLD** - Estratégias de preços diferentes por TLD (.com, .net, etc.)
-* **Preços em Tempo Real** - Preços ao vivo dos provedores com cache inteligente
-* **Integração de Cupons** - Suporte completo para cupons e descontos do Multisite Ultimate
+### Principais recursos {#key-features}
 
-#### **🛒 Experiência de Checkout Sem Interrupções**
-* **Busca de Domínio Integrada** - Disponibilidade de domínios em tempo real durante o checkout
-* **Interface com AJAX** - Busca de domínios rápida e responsiva sem recarregamento de página
-* **Sugestões Inteligentes** - Sugestões de domínios alternativos quando os preferidos não estão disponíveis
-* **Preços Transparentes** - Exibição clara de preços com detalhamento de markup
-* **Seleção com Um Clique** - Processo simples de seleção de domínio e checkout
+#### Suporte a múltiplos registradores de domínio {#multiple-domain-registrar-support}
+* **OpenSRS** — Registro, renovação e gerenciamento completos
+* **Namecheap** — Integração completa com WhoisGuard e testes em sandbox
+* **HostAfrica** — Busca de domínios, preços, registro, transferência, DNS e proteção de ID via Domains Reseller API
+* **Openprovider** — Preços de revenda, registro, renovação, transferências, DNS, privacidade WHOIS e sincronização de TLDs
+* **Hostinger** — Busca e registro de domínios usando o token de integração compartilhado da Hostinger
+* **Arquitetura extensível** — Criada com base no padrão Integration Registry, facilitando a adição de mais provedores
+* **Teste de conexão integrado** — Valide credenciais e conectividade do provedor antes de entrar em produção
 
-#### **🔄 Sistema Inteligente de Renovação Automática**
-* **Integração de Assinatura** - Domínios vinculados ao status de associação do cliente
-* **Agendamento Automático** - Agendamento inteligente de renovação baseado nas datas de expiração
-* **Processamento de Pagamento** - Pagamentos automáticos de renovação através dos gateways existentes do cliente
-* **Lógica de Repetição** - Sistema inteligente de repetição para renovações falhadas
-* **Sistema de Notificação** - Alertas por e‑mail para renovações, falhas e expirações
+#### Assistente de configuração guiado {#guided-setup-wizard}
+* **Onboarding com um clique** — Orienta você pela configuração do provedor, importação de TLDs e criação de produtos de domínio
+* **Sincronização automática de TLDs** — Importa todos os TLDs disponíveis e preços de atacado dos seus provedores conectados
+* **Criação de produto padrão** — Cria um produto de domínio pronto para uso com padrões de markup sensatos
 
-#### **👨‍💼 Ferramentas Administrativas Abrangentes**
-* **Painel de Gerenciamento de Domínios** - Monitore todos os domínios dos clientes a partir de uma única interface
-* **Configuração de Provedor** - Configuração e teste fáceis de provedores de domínios
-* **Operações Manuais** - Registro, renovação e gerenciamento manual de domínios
-* **Registro Detalhado** - Registro completo de auditoria de todas as operações de domínio
-* **Operações em Massa** - Processar múltiplos domínios simultaneamente
+#### Preços flexíveis de domínio {#flexible-domain-pricing}
+* **Três modos de markup** — Markup percentual, markup fixo ou preço fixo por TLD
+* **Produtos específicos por TLD** — Crie produtos de domínio separados para diferentes grupos de TLDs (.com/.net, .io, códigos de país etc.)
+* **Preços introdutórios** — Ofereça um preço com desconto no primeiro ano para atrair novos registros
+* **Preços em tempo real** — Preços de atacado ao vivo dos provedores com cache inteligente
+* **Suporte a cupons** — Compatibilidade total com códigos de desconto do Multisite Ultimate
 
-#### **👤 Experiência do Cliente Aprimorada**
-* **Painel do Cliente** - Interface de gerenciamento de domínios autogerenciável
-* **Gerenciamento de Renovação** - Clientes podem visualizar e gerenciar renovações automáticas
-* **Status do Domínio** - Atualizações de status em tempo real e informações de expiração
-* **Ferramentas de Transferência** - Capacidades de transferência de domínio e gerenciamento de DNS
+#### Proteção de privacidade WHOIS {#whois-privacy-protection}
+* **Configuração por produto** — Defina a privacidade WHOIS como Desativada, Sempre incluída ou Escolha do cliente
+* **Opt-in do cliente** — Quando definida como Escolha do cliente, uma caixa de seleção no checkout permite que os clientes adicionem proteção de privacidade
+* **Preços configuráveis** — Defina um preço anual para o add-on de privacidade ou ofereça-o gratuitamente
+* **Integração com registrador** — Ativa automaticamente o WhoisGuard (Namecheap) ou a privacidade WHOIS (OpenSRS) no momento do registro
 
-### Provedores Suportados
+#### Experiência de checkout unificada {#unified-checkout-experience}
+* **Três modos de domínio** — Os clientes escolhem entre um subdomínio (gratuito), registrar um novo domínio ou mapear um domínio existente que já possuem
+* **Busca de domínio em tempo real** — Verificação de disponibilidade com AJAX, sem recarregamento de página
+* **Sugestões inteligentes** — Sugestões de TLDs alternativos quando o domínio preferido já está em uso
+* **Preços transparentes** — Exibição clara do preço de registro, preço de renovação e taxa opcional de privacidade WHOIS
+* **Campos de contato do registrante** — Coleta as informações obrigatórias do registrante (nome, endereço, telefone) inline durante o checkout
+* **URL do site gerada automaticamente** — O endereço do site é derivado automaticamente do domínio escolhido
 
-* **OpenSRS** - Integração completa com registro, renovação e gerenciamento
-* **Arquitetura Extensível** - Fácil adicionar provedores adicionais
+#### Sistema de renovação automática {#auto-renewal-system}
+* **Renovações vinculadas à assinatura** — Os domínios são renovados automaticamente enquanto a assinatura do cliente estiver ativa
+* **Agendamento inteligente** — Tarefas de renovação são enfileiradas com base nas datas de expiração dos domínios
+* **Lógica de novas tentativas** — Novas tentativas inteligentes para tentativas de renovação com falha
+* **Notificações por e-mail** — Alertas configuráveis para renovações futuras, renovações bem-sucedidas, falhas e expirações
 
-### Especificações Técnicas
+#### Gerenciamento de DNS pelo cliente {#customer-dns-management}
+* **DNS self-service** — Os clientes podem adicionar, editar e excluir registros DNS (A, AAAA, CNAME, MX, TXT) pelo Dashboard
+* **Status do domínio** — Status de registro, datas de expiração e informações de nameserver em tempo real
+* **Mapeamento automático de domínio** — Domínios registrados ou existentes são mapeados automaticamente para o site do cliente
 
-#### **🏗️ Arquitetura Moderna**
-* **Compatibilidade com PHP 7.4+** - Base de código moderna com tipagem estrita e tipos de retorno
-* **Autoloading PSR-4** - Estrutura de classes limpa e organizada
-* **Padrões WordPress** - Segue os padrões de codificação WordPress e melhores práticas de segurança
-* **Otimizado para Multisite** - Projetado especificamente para redes WordPress Multisite
+#### Ferramentas administrativas {#admin-tools}
+* **Registro manual de domínio** — Registre domínios em nome dos clientes pelo painel administrativo
+* **Monitoramento de domínios** — Veja todos os domínios dos clientes, status e datas de expiração em uma única página
+* **Logs específicos por provedor** — Canais de log separados para cada registrador (por exemplo, domain-seller-namecheap.log)
+* **Detalhes do registro** — Veja informações do registrante e dados de registro na página principal de edição de domínio
 
-#### **🔧 Pontos de Integração**
-* **Tipo de Produto Nativo** - Domínios são produtos de primeira classe do Multisite Ultimate
-* **Sistema de Checkout** - Integração profunda com checkout e fluxos de cadastro v2
-* **Gateways de Pagamento** - Funciona com todos os gateways de pagamento do Multisite Ultimate
-* **Sistema de Assinatura** - Integração completa com assinaturas e subscrições de clientes
-* **Sistema de Log** - Registro abrangente usando o framework de log do Multisite Ultimate
+### Provedores compatíveis {#supported-providers}
 
-#### **⚡ Funcionalidades de Desempenho**
-* **Cache Inteligente** - Cache de preços e disponibilidade dos provedores
-* **Processamento Assíncrono** - Processamento em segundo plano para renovação e operações em massa
-* **Operações em Lote** - Processamento eficiente de múltiplos domínios
-* **Gerenciamento de Filas** - Filas de repetição para operações falhadas
+* **OpenSRS** — Integração completa com registro, renovação, gerenciamento de DNS e privacidade WHOIS
+* **Namecheap** — Integração completa com registro, renovação, verificação de disponibilidade em lote e WhoisGuard gratuito
+* **HostAfrica** — Registro, renovação, transferências, gerenciamento de DNS, recuperação de código EPP, bloqueio de registrador e proteção de ID
+* **Openprovider** — Registro, renovação, transferências, gerenciamento de DNS, recuperação de código EPP, bloqueio de registrador, privacidade WHOIS e sincronização de TLDs de revenda
+* **Hostinger** — Registro, consulta de domínio, atualizações de nameserver, bloqueio de registrador e privacidade WHOIS; renovações são gerenciadas pela renovação automática da Hostinger
+* **GoDaddy** — Registro e renovação
+* **ResellerClub** — Registro, renovação e gerenciamento de DNS
+* **NameSilo** — Registro e renovação
+* **Enom** — Registro, renovação e gerenciamento de DNS
 
-### Funcionalidades para Desenvolvedores
+### Detalhes técnicos {#technical-details}
 
-* Código base moderna em PHP 7.4+ com tipagem estrita
-* Sistema extensível de provedores
-* Ganchos de ação e filtro em todo o código
-* Autoloading PSR-4
-* Registro abrangente e tratamento de erros
+* **Requer:** PHP 7.4+, Multisite Ultimate 2.4.12+
+* **Arquitetura:** Padrão Integration Registry com interface Domain_Selling_Capability
+* **Autoloading:** Autoloader Jetpack com mapeamento de classes PSR-4
+* **Padrões:** Padrões de codificação WordPress, tipagem estrita, instruções preparadas
 
-## Instalação
+## Instalação {#installation}
 
-1. Certifique-se de que **Multisite Ultimate v2.0.0+** está instalado e ativo
-2. Upload the plugin files to `/wp-content/plugins/ultimate-multisite-domain-seller/`
-3. Ative o plugin através do menu 'Plugins' no Admin da Rede WordPress
-4. Navegue até **Ultimate Multisite > Settings > Domain Seller** para configurar os provedores
-5. Crie produtos de domínio em **Ultimate Multisite > Products**
+1. Certifique-se de que **Multisite Ultimate v2.4.12+** esteja instalado e ativado na rede
+2. Envie o plugin para `/wp-content/plugins/ultimate-multisite-domain-seller/`
+3. Ative o plugin na rede em **Plugins** no WordPress Network Admin
+4. O **Setup Wizard** é iniciado automaticamente na primeira ativação — siga as etapas para:
+   * Conectar seu registrador de domínios
+   * Testar a conexão
+   * Importar TLDs disponíveis e preços de atacado
+   * Criar seu primeiro produto de domínio com markup de preço
+5. Adicione o campo **Seleção de Domínio** ao seu formulário de checkout em **Ultimate Multisite > Formulários de Checkout**
 
-## Perguntas Frequentes
+## Perguntas frequentes {#frequently-asked-questions}
 
-## Qual versão do Multisite Ultimate é necessária?
+### Qual versão do Multisite Ultimate é necessária? {#what-version-of-multisite-ultimate-is-required}
 
-Este complemento requer a versão 2.0.0 ou superior do Multisite Ultimate. Não é compatível com o Ultimate Multisite v1.x.
+Versão 2.4.12 ou superior. O addon não é compatível com WP Ultimo v1.x nem com versões do Ultimate Multisite abaixo da 2.4.12.
 
-## Quais provedores de domínio são suportados?
+### Quais provedores de domínio são compatíveis? {#which-domain-providers-are-supported}
 
-Atualmente, o OpenSRS é totalmente suportado. O complemento foi arquitetado para suportar facilmente provedores adicionais - mais serão adicionados em futuras versões.
+Nove registradores são compatíveis: **OpenSRS**, **Namecheap**, **HostAfrica**, **Openprovider**, **Hostinger**, **GoDaddy**, **ResellerClub**, **NameSilo** e **Enom**. Os recursos variam conforme o provedor, pois as APIs dos registradores expõem operações diferentes; consulte o guia de configuração para uma visão geral provedor por provedor. A arquitetura Integration Registry do addon facilita adicionar provedores personalizados — consulte o [guia do desenvolvedor](/developer/integration-guide/custom-registrar).
 
-## Posso definir preços diferentes para diferentes TLDs?
+### Posso oferecer proteção de privacidade WHOIS? {#can-i-offer-whois-privacy-protection}
 
-Sim! Você pode criar produtos de domínio separados para diferentes grupos de TLD, cada um com seu próprio markup de preço e configuração.
+Sim. Cada produto de domínio tem uma configuração de Privacidade WHOIS com três modos: Desativada, Sempre Incluída ou Escolha do Cliente. Quando definida como Escolha do Cliente, os clientes veem uma caixa de seleção durante o checkout com o preço (ou "Grátis" para o WhoisGuard da Namecheap). O sinalizador de privacidade é enviado automaticamente ao registrador no momento do registro.
 
-## O complemento suporta renovação automática?
+### Posso definir preços diferentes para TLDs diferentes? {#can-i-set-different-pricing-for-different-tlds}
 
-Sim, os domínios podem ser configurados para renovação automática e integrar com as assinaturas dos clientes para faturamento contínuo.
+Sim. Crie produtos de domínio separados para grupos de TLDs diferentes. Cada produto pode ter seu próprio tipo de markup (porcentagem, markup fixo ou preço fixo), TLDs compatíveis e preço introdutório.
 
-## Os clientes podem gerenciar seus domínios?
+### Quais opções de checkout os clientes veem? {#what-checkout-options-do-customers-see}
 
-Sim, os clientes recebem uma interface de gerenciamento de domínios em seu painel para visualizar registros, datas de renovação e funções básicas de gerenciamento.
+O campo Seleção de Domínio oferece aos clientes três abas: **Subdomínio** (usar um subdomínio gratuito na sua rede), **Registrar Novo Domínio** (pesquisar e registrar um novo domínio) e **Domínio Existente** (mapear um domínio que eles já possuem). Apenas os modos que você habilitar aparecerão.
+
+### Ele oferece suporte a renovações automáticas? {#does-it-support-automatic-renewals}
+
+Sim. Os domínios podem ser configurados para renovação automática e ficam vinculados ao status da assinatura do cliente. Os pagamentos de renovação são processados por meio do gateway de pagamento existente do cliente.
+
+### Os clientes podem gerenciar seus registros DNS? {#can-customers-manage-their-dns-records}
+
+Sim. Os clientes têm uma interface de gerenciamento de DNS em seu painel para adicionar, editar e excluir registros A, AAAA, CNAME, MX e TXT. O gerenciamento de DNS está disponível com OpenSRS, ResellerClub, Enom, HostAfrica e Openprovider. O DNS da Hostinger para domínios hospedados é tratado pela integração principal de mapeamento de domínios da Hostinger.
+
+### Há um assistente de configuração? {#is-there-a-setup-wizard}
+
+Sim. O assistente de configuração é executado automaticamente na primeira ativação e orienta você na conexão de um registrador, na importação de TLDs e na criação do seu primeiro produto de domínio. Você também pode executar o assistente novamente nas configurações do addon.

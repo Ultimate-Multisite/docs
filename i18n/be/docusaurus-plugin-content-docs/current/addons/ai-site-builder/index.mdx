@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## Патрабаванні
+## Патрабаванні {#requirements}
 
 - WordPress 5.3 або больш высокія
 - PHP 7.4 або больш высокія
 - Плагін Ultimate Multisite (актываваны)
 
-## Устаноўка
+## Устаноўка {#installation}
 
 1. Загрузіце файлы адзона ў каталог `/wp-content/plugins/`
 2. Актывуйце плагін праз меню «Plugins» у WordPress
 3. Настройце адзонныя параметры ў адмініস্ট্রцыі сеткі
 
-## Разработка
+## Разработка {#development}
 
-### Наладка
+### Наладка {#setup}
 
 ```bash
 # Устаноўка залежнасцей
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Структура праекта
+### Структура праекта {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Правілы мадэрнізацыі кода
 ```
 
-### Тэставанне
+### Тэставанне {#testing}
 
 Адзон уключае камплексную сістэму тэставання:
 
@@ -79,44 +79,44 @@ ultimate-multisite-ai-site-builder/
 - **Test Coverage**: Наладжаны для адсоткаў пакрыцця кода
 - **Multisite Testing**: Тэсты праходзяць у асяроддзі multisite
 
-### Стандарты кода
+### Стандарты кода {#code-standards}
 
 - **WordPress Coding Standards**: Вымушаны праз PHPCS
 - **PHP 7.4+ Compatibility**: Падтрымка сучасных функцый PHP
 - **Static Analysis**: Інтеграцыя PHPStan для праверкі тыпаў
 - **Code Modernization**: Правілы Rector для апгрэйду PHP
 
-### Сістэма пабудовы
+### Сістэма пабудовы {#build-system}
 
 - **Asset Processing**: Мініфікацыя для файлаў CSS/JS
 - **Translation**: Генерацыя файлаў POT
 - **Packaging**: Стваৰэнне архіву для распылення
 - **Development Mode**: Немініфікаваныя актывы для наладжвання
 
-## Канфігурацыя
+## Канфігурацыя {#configuration}
 
 Адзон падтрымлівае розныя параметры канфігурацыі, даступныя праз адпаведнік адмініস্ট্রцыі сеткі.
 
-## Хукі і фільтры
+## Хукі і фільтры {#hooks-and-filters}
 
-### Actions
+### Actions {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Выконваецца пасля ініцыялізацыі адзона
 - `ultimate-multisite-ai-site-builder_loaded` - Выконваецца пасля загруўкі ўсіх файлаў адзона
 
-### Filters
+### Filters {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Змяніць параметры адзона
 - `ultimate-multisite-ai-site-builder_enabled` - Прымусовы стан актывацыі/дэактывацыі адзона
 
-## Ліцэнцыя
+## Ліцэнцыя {#license}
 
 Гэты адзон ліцэнзіяваны па GPL v3 або паўнавартай.
 
-## Падтрымка
+## Падтрымка {#support}
 
 Для падтрымкі і дакументацыі наведайце [MultisiteUltimate.com](https://multisiteultimate.com)
-## Журнал змены
+## Журнал змены {#changelog}
 
 - Версія 1.0.1 (2025-09-28): змяніў прафікс на ultimate-multisite; абнавіў тэкстовы домен; павысіў версію.
 

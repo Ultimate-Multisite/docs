@@ -3,13 +3,13 @@ title: To'lov maydoni va Mijoz DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Maydon va Mijoz DNS Boshqarzligini Boshqarish
+# Checkout Maydon va Mijoz DNS Boshqarzligini Boshqarish {#checkout-field-and-customer-dns-management}
 
-## Domen Tanlash checkout maydoni
+## Domen Tanlash checkout maydoni {#the-domain-selection-checkout-field}
 
 **Domain Selection** maydoni bu mijozlarga o'z veb-sayt domenini qanday olishlari haqida tanlov beradigan checkout elementidir. Domen sotishni faollashtirish uchun uni har qanday checkout formiga qo'shing.
 
-### Maydonni checkout formiga qo'shish
+### Maydonni checkout formiga qo'shish {#adding-the-field-to-a-checkout-form}
 
 1. **Network Admin › Ultimate Multisite › Checkout Forms** ga o'ting
 2. Checkout formini oching yoki yangi yarating
@@ -18,7 +18,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 5. Maydon opsiyalarini sozlang (quyida ko'ring)
 6. Formni saqlang
 
-### Maydon opsiyalari
+### Maydon opsiyalari {#field-options}
 
 **Domain modlari** — Mijozlarning qaysi tablarni ko'rishini tanlang. Har bir model mustaqil ravishda faollashtirilishi yoki o'chirilishi mumkin:
 
@@ -32,7 +32,7 @@ _i18n_hash: b5312cf530779a7cb03d611e6827be87
 
 **Domain mahsuloti** — Bu maydonni ma'lum bir domen mahsulotiga tanlash imkoniyatini beradi. Agar belgilansangiz, qo'shimcha avtomatik ravishda mijoz qidirayotgan TLD (toplanuvchi domen kengaytmasi) asosida mos keladigan mahsulotni tanlaydi.
 
-### Ro'yxatdagi kontakt ma'lumotlari maydonlari
+### Ro'yxatdagi kontakt ma'lumotlari maydonlari {#registrant-contact-fields}
 
 Mijoz **Register New Domain** tabini tanlaganda, checkout formasi quyidagi kontakt maydonlarini avtomatik ravishda qo'shadi:
 
@@ -43,11 +43,11 @@ Mijoz **Register New Domain** tabini tanlaganda, checkout formasi quyidagi konta
 
 Bularlar barcha ro'yxat beruvchilar tomonidan talab qilinadi va ro'yxatdan o'tish API chaqirilishidan oldin tasdiqlanadi. Telefon raqamlari avtomatik ravishda ro'yxat beruvchilar kutiladigan `+CC.NNN` xalqaro formatiga moslashtiriladi.
 
-### Avtomatik yaratilgan sayt URL-i
+### Avtomatik yaratilgan sayt URL-i {#auto-generated-site-url}
 
 Mijoz ro'yxatdan o'tganida yoki domenni xarita qilsa, sayt URL maydoni tanlangan domenidan avtomatik to'ldirilib boriladi. Mijozlarning alohida URL maydonini to'ldirishga hojat yo'q.
 
-### Qidiruv xatti-harakati
+### Qidiruv xatti-harakati {#search-behaviour}
 
 - Domen mavjudligi mijoz harf yozganda AJAX orqali real vaqtda tekshiriladi
 - Afzal domen mavjud bo'lmagan holda muqobil TLD takliflari ko'rsatiladi
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Mijoz DNS boshqaruvi
+## Mijoz DNS boshqaruvi {#customer-dns-management}
 
 Mijozlar **Mening Hisobim** sahifasidan, o'z domenlari ostidagi kirish orqali ro'yxatdan o'tgan domenlar uchun DNS yozuvlarini boshqarishlari mumkin.
 
-### Qo'llab-quvvatlanadigan yozuv turlari
+### Qo'llab-quvvatlanadigan yozuv turlari {#supported-record-types}
 
 | Tur | Foydalanish |
 |---|---|
@@ -91,11 +91,11 @@ Mijozlar **Mening Hisobim** sahifasidan, o'z domenlari ostidagi kirish orqali ro
 | **MX** | Xabar almashish serverini belgilash |
 | **TXT** | SPF, DMARC, tasdiqlash yoki boshqa matn yozuvlarini qo'shish |
 
-### DNS boshqaruvidan qaysi provayderlar qo'llab-quvvatlaydi?
+### DNS boshqaruvidan qaysi provayderlar qo'llab-quvvatlaydi? {#which-providers-support-dns-management}
 
 DNS boshqarmasi (ro'yxatnomalarni qo'shish, tahrirlash, o'chirish) **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** va **Openprovider** bilan mavjud. **Hostinger** domenlari nom serverlarini Domen Sotuvchisi orqali yangilash mumkin; joylashtirilgan domenlar uchun DNS yozuvlari asosiy Hostinger domen-xaritma integratsiyasi tomonidan boshqariladi. Namecheap, GoDaddy va NameSilo domenlari holat va muddati ma'lumotlarini ko'rsatadi, ammo DNS to'g'ridan-to'g'ri ro'yxatnomachining boshqaruv paneli orqali boshqarilishi kerak.
 
-### Default DNS yozuvlari
+### Default DNS yozuvlari {#default-dns-records}
 
 Domen ro'yxatdan olinadigan va avtomatik qo'llaniladigan default DNS yozuvlarini sozlash mumkin. **Settings › Domain Seller › Default DNS Records** ga kiring.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: DNS ko'rish va tahrirlash
+### Admin: DNS ko'rish va tahrirlash {#admin-viewing-and-editing-dns}
 
 Tarmoq administratorlari har qanday mijoz domenining DNS yozuvlarini **Network Admin › Ultimate Multisite › Domains** dagi domen tahrirlash sahifasidan ko'rishi va tahrirlashi mumkin.

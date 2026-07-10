@@ -4,21 +4,21 @@ title: Filtro - networks_user_is_network_admin
 sidebar_label: networks_user_is_network_admin
 _i18n_hash: f8e40a1c47591c0cab73d671cf681281
 ---
-# Filtro: networks_user_is_network_admin
+# Filtro: networks_user_is_network_admin {#filter-networksuserisnetworkadmin}
 
 Filtra as redes em que o usuário é administrador.
 
-## Parâmetros
+## Parâmetros {#parameters}
 
 | Nome | Tipo | Descrição |
 |------|------|-----------|
 | $ | `array\|bool` | Lista de IDs de rede ou false se não houver redes para o usuário. |
 | $ | `int` | ID do usuário para o qual as redes devem ser retornadas. |
 
-### Desde
+### Desde {#since}
 
 - 2.0.0
 
-### Fonte
+### Fonte {#source}
 
 Definido em [`inc/functions/network.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-multinetwork/blob/main/inc/functions/network.php#L703) na linha 703

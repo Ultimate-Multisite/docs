@@ -1,107 +1,112 @@
 ---
 title: Đăng ký API Endpoint
 sidebar_position: 6
-_i18n_hash: 33318472a834d15f5533362cddfeca20
+_i18n_hash: 8d9b47668bce413a2466cf2b1c37d2cf
 ---
-# API endpoint Đăng ký của Ultimate Multisite
+# Điểm cuối API đăng ký Ultimate Multisite {#the-ultimate-multisite-register-api-endpoint}
 
-Trong hướng dẫn này, bạn sẽ học cách sử dụng API endpoint /register của Ultimate Multisite để tạo toàn bộ quy trình đăng ký cho khách hàng mới trong mạng của bạn, và cách thực hiện điều này với Zapier.
+Trong hướng dẫn này, bạn sẽ học cách sử dụng điểm cuối API /register của Ultimate Multisite để tạo toàn bộ quy trình onboarding cho một khách hàng mới trong mạng của bạn và cách thực hiện điều đó với Zapier.
 
-Endpoint này sử dụng phương thức POST và được gọi thông qua URL _**https://yoursite.com/wp-json/wu/v2/register**_. Trong lệnh gọi này, 4 quy trình sẽ được thực hiện trong mạng của bạn:
+Điểm cuối sử dụng phương thức POST và được gọi bằng URL _**https://yoursite.com/wp-json/wu/v2/register**_. Trong lệnh gọi này, 4 quy trình sẽ được thực thi trong mạng của bạn:
 
-  * Một người dùng WordPress mới sẽ được tạo, hoặc người dùng hiện có sẽ được xác định thông qua user ID.
+  * Một người dùng WordPress mới hoặc việc nhận diện người dùng đó thông qua ID người dùng sẽ được tạo.
 
-  * Một Khách hàng mới trong Ultimate Multisite sẽ được tạo, hoặc khách hàng hiện có sẽ được xác định thông qua customer ID.
+  * Một Khách hàng mới trong Ultimate Multisite hoặc việc nhận diện khách hàng đó thông qua ID khách hàng sẽ được tạo.
 
-  * Một site mới trên mạng WordPress sẽ được tạo.
+  * Một trang mới trên mạng WordPress sẽ được tạo.
 
-  * Cuối cùng, một Membership mới trong Ultimate Multisite sẽ được tạo.
+  * Cuối cùng, một Tư cách thành viên mới trong Ultimate Multisite sẽ được tạo.
 
-Để thực hiện quy trình này, bạn cần có thông tin xác thực API. Để lấy thông tin này, hãy vào bảng điều khiển quản trị mạng, điều hướng đến **Ultimate Multisite > Settings** > **API & Webhooks,** và tìm phần API Settings.
+Đối với quy trình này, bạn sẽ cần thông tin xác thực API của mình. Để lấy chúng, hãy đi tới bảng quản trị mạng của bạn, điều hướng đến **Ultimate Multisite > Cài đặt** > **API & Webhooks,** và tìm phần Cài đặt API.
 
-![Phần API Settings trong Ultimate Multisite](/img/config/settings-api.png)  
-Chọn **Enable API** và lấy thông tin xác thực API của bạn.
+![Phần Cài đặt API trong Ultimate Multisite](/img/config/settings-api.png)
 
-Bây giờ, hãy cùng tìm hiểu endpoint này và sau đó tạo một action đăng ký trong Zapier.
+Đây là chế độ xem đầy đủ của trang cài đặt API:
 
-## Các tham số body của endpoint
+![Toàn bộ trang cài đặt API](/img/config/settings-api-full.png)
 
-Hãy xem tổng quan về những thông tin tối thiểu cần gửi đến endpoint. Ở cuối bài viết này, bạn sẽ tìm thấy lệnh gọi đầy đủ.
+Chọn **Bật API** và lấy thông tin xác thực API của bạn.
 
-### Customer
+Bây giờ, hãy khám phá điểm cuối rồi tạo một hành động đăng ký trong Zapier.
 
-Đây là thông tin cần thiết cho quy trình tạo User và Customer trong Ultimate Multisite:
+## Tham số phần thân của điểm cuối {#endpoint-body-parameters}
+
+Hãy xem tổng quan về thông tin tối thiểu mà chúng ta cần gửi đến điểm cuối. Ở cuối bài viết này, bạn sẽ tìm thấy lệnh gọi đầy đủ.
+
+### Khách hàng {#customer}
+
+Đây là thông tin cần thiết cho quy trình tạo Người dùng và Khách hàng Ultimate Multisite:
 
 "customer_id" : integer
 
-Bạn có thể gửi customer ID đã được tạo trong mạng của bạn. Nếu không gửi, thông tin bên dưới sẽ được sử dụng để tạo khách hàng mới và người dùng WordPress mới. User ID cũng có thể được gửi theo cách tương tự như customer ID.
+Có thể gửi ID khách hàng đã được tạo trong mạng của bạn. Nếu không được gửi, thông tin bên dưới sẽ được dùng để tạo một khách hàng mới và một người dùng WordPress mới. ID người dùng cũng có thể được gửi theo cùng cách như ID khách hàng.
 
 "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", },
 
-### **Membership**
+### **Tư cách thành viên** {#membership}
 
-Thông tin duy nhất chúng ta cần trong object này là Trạng thái Membership.
+Thông tin duy nhất chúng ta cần bên trong đối tượng này là Trạng thái Tư cách thành viên.
 
-"membership" { "status" : "string", // một trong các giá trị "pending", "active", "trialing", "expired", "on-hold", "canceled" },
+"membership" { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "canceled" },
 
-### **Products**
+### **Sản phẩm** {#products}
 
-Products được truyền dưới dạng mảng với 1 hoặc nhiều product ID từ mạng của bạn. Lưu ý, endpoint này không tạo sản phẩm. Hãy xem tài liệu của Ultimate Multisite để hiểu rõ hơn về endpoint tạo sản phẩm.
+Sản phẩm được cung cấp dưới dạng một mảng với 1 hoặc nhiều ID sản phẩm từ mạng của bạn. Lưu ý, điểm cuối này không tạo sản phẩm. Hãy xem tài liệu của Ultimate Multisite để hiểu rõ hơn về điểm cuối tạo sản phẩm.
 
 **"products" : [1,2],**
 
-### Payment
+### Thanh toán {#payment}
 
-Giống như Membership, chúng ta chỉ cần trạng thái.
+Cũng như với Tư cách thành viên, chúng ta chỉ cần trạng thái.
 
-**"payment" { "status" : "string", // một trong các giá trị "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
+**"payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "canceled" },**
 
-### Site
+### Trang {#site}
 
-Và để hoàn tất phần body, chúng ta cần URL và Tiêu đề của site, cả hai đều nằm trong object Site.
+Và để hoàn tất phần thân, chúng ta cần URL và Tiêu đề của trang, cả hai đều nằm trong đối tượng Trang.
 
 **"site" : { "site_url" : "string", "site_title" : "string" }**
 
-Kết quả trả về từ endpoint register sẽ là một mảng chứa thông tin membership vừa được tạo.
+Kết quả trả về của điểm cuối đăng ký sẽ là một mảng chứa thông tin tư cách thành viên vừa được tạo.
 
-## Tạo action trong Zapier
+## Tạo một hành động trong Zapier {#creating-an-action-in-zapier}
 
-Với sự ra mắt của endpoint tạo tài khoản mới mạnh mẽ hơn này, bạn cũng sẽ có quyền truy cập vào một action mới trong Zapier.
+Với việc giới thiệu điểm cuối tạo tài khoản mới và mạnh mẽ hơn này, bạn cũng sẽ truy cập được một hành động mới trong Zapier.
 
-Bạn đã biết cách sử dụng và tận dụng mọi tính năng mà phiên bản mới của Zapier mang lại chưa? Tìm hiểu thêm tại đây. (link?)
+Bạn có biết cách sử dụng và tận dụng mọi thứ mà phiên bản mới của Zapier cung cấp không? Tìm hiểu thêm tại đây. (liên kết?)
 
-### Tạo action
+### Tạo một hành động {#creating-an-action}
 
-Để minh họa rõ hơn cách sử dụng endpoint đăng ký với Zapier, hãy tạo một tích hợp với Google Forms. Mỗi khi form này được điền và thông tin được lưu vào bảng trả lời của form, một membership mới sẽ được tạo trong mạng Ultimate Multisite.
+Để minh họa rõ hơn cách sử dụng điểm cuối đăng ký với Zapier, hãy tạo một tích hợp với Google Forms. Mỗi khi biểu mẫu này được điền và thông tin được lưu trong trang tính câu trả lời của biểu mẫu, một tư cách thành viên mới sẽ được tạo trong mạng Ultimate Multisite.
 
-Trong Google Forms, tạo một form với các trường tối thiểu cần thiết để tạo membership mới trong mạng.
+Trong Google Forms, hãy tạo một biểu mẫu với các trường tối thiểu cần thiết để tạo một tư cách thành viên mới trong mạng.
 
-<!-- Screenshot unavailable: Google Forms form with fields for creating a new membership -->
+<!-- Không có ảnh chụp màn hình: Biểu mẫu Google Forms với các trường để tạo một tư cách thành viên mới -->
 
-Bây giờ trong Zapier, tạo một Zap mới và kết nối form đã tạo trong Google thông qua bảng tính nơi dữ liệu được lưu.
+Bây giờ trong Zapier, hãy tạo một Zap mới và kết nối biểu mẫu đã tạo trong Google thông qua bảng tính nơi dữ liệu được lưu.
 
-<!-- Screenshot unavailable: Zapier trigger configuration connecting to Google Forms spreadsheet -->
+<!-- Không có ảnh chụp màn hình: Cấu hình trình kích hoạt Zapier kết nối với bảng tính Google Forms -->
 
-Xong! Form Google Forms đã được kết nối với Zapier và sẵn sàng để tích hợp với mạng. Bây giờ hãy chuyển sang Action sẽ được thực hiện khi Trigger từ Google Forms được kích hoạt mỗi khi form được điền.
+Xong! Biểu mẫu Google Forms đã được kết nối với Zapier và sẵn sàng được tích hợp với mạng. Bây giờ hãy chuyển sang Hành động sẽ là kết quả từ Trình kích hoạt mà Google Forms kích hoạt mỗi khi biểu mẫu được điền.
 
-Tìm ứng dụng Ultimate Multisite mới và chọn nó. Với loại Zap này, hãy chọn tùy chọn Register.
+Tìm ứng dụng Ultimate Multisite mới và chọn ứng dụng đó. Đối với loại Zap này, hãy chọn tùy chọn Đăng ký.
 
-<!-- Screenshot unavailable: Zapier action selection showing Ultimate Multisite app with Register option -->
+<!-- Không có ảnh chụp màn hình: Lựa chọn hành động Zapier hiển thị ứng dụng Ultimate Multisite với tùy chọn Đăng ký -->
 
-Sau bước đầu tiên này, chọn tài khoản sẽ được kết nối với Zap này.<!-- Screenshot unavailable: Zapier account connection step for Ultimate Multisite -->
+Sau bước đầu tiên này, hãy chọn tài khoản sẽ được kết nối với Zap này.<!-- Không có ảnh chụp màn hình: Bước kết nối tài khoản Zapier cho Ultimate Multisite -->
 
-Đây là phần quan trọng nhất của toàn bộ quy trình. Chúng ta cần khớp các trường từ Google Forms với các trường tối thiểu cần thiết cho endpoint register, như đã trình bày ở phần trước của bài viết này.
+Đây là phần nhạy cảm nhất của toàn bộ quy trình. Chúng ta cần khớp các trường đến từ Google Forms với các trường tối thiểu cần thiết cho điểm cuối đăng ký, như đã trình bày trong phần trước của bài viết này.
 
-Trong ví dụ này, chúng ta chỉ cần cấu hình username, email, password, tên và URL của website. Phần còn lại được để sẵn giá trị mặc định để tất cả membership được tạo từ Google Forms này đều theo cùng một mẫu sản phẩm và trạng thái.
+Trong ví dụ này, chúng ta chỉ cần cấu hình tên người dùng, email, mật khẩu, tên và URL của trang web. Phần còn lại được để mặc định để tất cả tư cách thành viên được tạo trên Google Forms này tuân theo cùng một mẫu sản phẩm và trạng thái.
 
-<!-- Screenshot unavailable: Zapier field mapping between Google Forms and Ultimate Multisite register endpoint -->
+<!-- Không có ảnh chụp màn hình: Ánh xạ trường Zapier giữa Google Forms và điểm cuối đăng ký Ultimate Multisite -->
 
-Sau khi thiết lập xong thông tin, tiến hành kiểm tra cuối cùng. Trên màn hình cuối, bạn có thể thấy tất cả các trường sẽ được gửi đến endpoint, thông tin tương ứng của chúng và các trường sẽ được gửi trống.<!-- Screenshot unavailable: Zapier test screen showing all fields to be sent to the register endpoint -->
+Sau khi thiết lập thông tin, hãy tiếp tục đến bài kiểm tra cuối cùng. Trên màn hình cuối cùng, bạn có thể thấy tất cả các trường sẽ được gửi đến điểm cuối, thông tin tương ứng của chúng và các trường sẽ được gửi trống.<!-- Không có ảnh chụp màn hình: Màn hình kiểm tra Zapier hiển thị tất cả các trường sẽ được gửi đến điểm cuối đăng ký -->
 
-Kiểm tra Zap mới của bạn và nó sẽ hoàn thành thành công. Nếu có lỗi xảy ra, hãy kiểm tra tất cả các trường và xem chúng có được gửi đúng không. Vì có nhiều thông tin, một số thứ có thể bị bỏ sót.
+Kiểm tra Zap mới của bạn và nó sẽ hoàn tất thành công. Nếu có bất kỳ lỗi nào xảy ra, hãy kiểm tra tất cả các trường và xem chúng có đang được gửi đúng cách hay không. Vì có rất nhiều thông tin, một số điều có thể bị bỏ sót.
 
-### Tham số endpoint đầy đủ
+### Tham số điểm cuối đầy đủ {#complete-endpoint-parameters}
 
-Đây là lệnh gọi đầy đủ và tất cả các trường có thể gửi.
+Đây là lệnh gọi đầy đủ và tất cả các khả năng của các trường có thể được gửi.
 
-"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // một trong các giá trị "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // một trong các giá trị "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }
+"customer_id" : integer, "customer" : { "user_id" : integer "username" : "string", "password" : "string", "email" : "string", }, "membership" : { "status" : "string", // one of "pending", "active", "trialing", "expired", "on-hold", "cancelled" "date_expiration" : "string", "date_trial_end" : "string", "date_activated" : "string", "date_renewed" : "string", "date_cancellation" : "string", "date_payment_plan_completed": "string", }, "products" : [1,2], "duration" : "string", "duration_unit" : "string", "discount_code" : "string", "auto_renew" : "boolean", "country" : "string", "currency" : "string", "payment" { "status" : "string", // one of "pending", "completed", "refunded", "partially-refunded", "partially-paid", "failed", "cancelled" }, "payment_method" : { "gateway" : "string", "gateway_customer_id" : "string", "gateway_subscription_id" : "string", "gateway_payment_id" : "string", }, "site" : { "site_url" : "string", "site_title" : "string", "publish" : "boolean", "template_id" : "string", }

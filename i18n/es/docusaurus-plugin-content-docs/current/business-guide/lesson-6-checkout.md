@@ -3,15 +3,15 @@ title: 'Lección 6: La experiencia de registro'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lección 6: La Experiencia de Registro
+# Lección 6: La Experiencia de Registro {#lesson-6-the-signup-experience}
 
 El flujo de pago es donde el interés se convierte en ingresos. Un proceso de registro confuso o genérico hace que los clientes se vayan. Un flujo específico para un nicho que hable su idioma y se sienta natural, los convierte.
 
-## Dónde nos quedamos
+## Dónde nos quedamos {#where-we-left-off}
 
 FitSite ya tiene configuradas las plantillas y los planes. Ahora construiremos la experiencia de registro y pago que convierte a los dueños de estudios de fitness en clientes de pago.
 
-## Entendiendo el Flujo de Registro
+## Entendiendo el Flujo de Registro {#understanding-the-registration-flow}
 
 Los formularios de checkout de Ultimate Multisite son formularios de varios pasos totalmente personalizables. Para FitSite, queremos un flujo que:
 
@@ -21,11 +21,11 @@ Los formularios de checkout de Ultimate Multisite son formularios de varios paso
 
 Consulta [El Flujo de Registro](/user-guide/configuration/the-registration-flow) para la referencia técnica completa.
 
-## Diseñando el Checkout de FitSite
+## Diseñando el Checkout de FitSite {#designing-the-fitsite-checkout}
 
 Navega a **Ultimate Multisite > Checkout Forms** y crea un nuevo formulario.
 
-### Paso 1: Selección de Plan
+### Paso 1: Selección de Plan {#step-1-plan-selection}
 
 Lo primero que debe ver un dueño de estudio de fitness son los planes, presentados en términos que entienda.
 
@@ -37,7 +37,7 @@ Lo primero que debe ver un dueño de estudio de fitness son los planes, presenta
 "1 GB de almacenamiento" no significa nada para un dueño de gimnasio. "Todo lo que necesitas para un sitio web profesional de estudio" significa todo. Escribe las descripciones de los planes en el lenguaje de tu cliente.
 :::
 
-### Paso 2: Selección de Plantilla
+### Paso 2: Selección de Plantilla {#step-2-template-selection}
 
 Después de elegir un plan, el cliente selecciona su plantilla de inicio.
 
@@ -45,7 +45,7 @@ Después de elegir un plan, el cliente selecciona su plantilla de inicio.
 - Las plantillas disponibles se filtran según el plan que seleccionaron (configurado en la Lección 5).
 - Cada plantilla debe tener una imagen de vista previa que muestre un diseño específico para fitness.
 
-### Paso 3: Creación de Cuenta
+### Paso 3: Creación de Cuenta {#step-3-account-creation}
 
 Mantenlo mínimo. Recoge solo:
 
@@ -55,27 +55,27 @@ Mantenlo mínimo. Recoge solo:
 
 No pidas información que no necesites en el registro. Cada campo extra reduce las conversiones.
 
-### Paso 4: Configuración del Sitio
+### Paso 4: Configuración del Sitio {#step-4-site-setup}
 
 - **Título del sitio**: Rellénalo automáticamente con el nombre del estudio ingresado en el Paso 3.
 - **URL del sitio**: Genera automáticamente a partir del nombre del estudio (ej. `ironworks.fitsite.com`).
 
-### Paso 5: Pago
+### Paso 5: Pago {#step-5-payment}
 
 - Añade el campo de **Pago** (Payment)
 - Configura tu pasarela de pago (se recomienda [Stripe](/user-guide/payment-gateways/stripe) para facturación por suscripción).
 - Si creaste complementos de pedido (order bumps) en la Lección 5, añade un campo de **Complemento de Pedido** (Order Bump) antes del paso de pago.
 
-### Paso 6: Confirmación
+### Paso 6: Confirmación {#step-6-confirmation}
 
 - Personaliza el mensaje de confirmación con lenguaje específico para fitness.
 - Ejemplo: "Su sitio web de estudio de fitness se está creando. Será redirigido a su nuevo sitio en unos segundos."
 
-## Añadiendo un Selector de Periodo
+## Añadiendo un Selector de Periodo {#adding-a-period-selection-toggle}
 
 Si configuraste variaciones de precios en tus planes (mensual vs. anual), añade un campo de **Selección de Periodo** (Period Selection) al formulario de checkout para que los clientes puedan cambiar entre los periodos de facturación. Consulta [Formularios de Checkout](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) para obtener instrucciones.
 
-## Configurando el Pago
+## Configurando el Pago {#configuring-payment}
 
 Si aún no has configurado una pasarela de pago:
 
@@ -85,7 +85,7 @@ Si aún no has configurado una pasarela de pago:
 
 Consulta [Recibir Pagos](/user-guide/payment-gateways/getting-paid) para obtener detalles sobre cómo fluyen los pagos a tu cuenta.
 
-## Probando el Flujo
+## Probando el Flujo {#testing-the-flow}
 
 Antes de continuar, completa un registro de prueba completo:
 
@@ -105,7 +105,7 @@ Verifica que:
 - [ ] El cliente aterriza en un sitio funcional con la plantilla seleccionada.
 - [ ] Los correos electrónicos de confirmación utilizan lenguaje específico para fitness.
 
-## La Red FitSite hasta ahora
+## La Red FitSite hasta ahora {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Listo para marca (próxima lección)
 ```
 
-## Lo que construimos en esta lección
+## Lo que construimos en esta lección {#what-we-built-this-lesson}
 
 - **Un formulario de checkout de varios pasos** adaptado para dueños de estudios de fitness.
 - **Lenguaje específico del nicho** en todo el flujo de registro.

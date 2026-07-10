@@ -3,18 +3,18 @@ title: Ymddygiad Cloudways
 sidebar_position: 3
 _i18n_hash: 09425d90def2b755c27a698d78d7d4b0
 ---
-# Ymddianion Cloudways
+# Ymddianion Cloudways {#cloudways-integration}
 
-## Cyflwyniadau
+## Cyflwyniadau {#overview}
 Mae Cloudways yn ffurf gweithredol (managed) o chwilio cloud sy'n sylw'r eich bod i ddefnyddio safon WordPress ar gyfer ychwanegau cloud fel DigitalOcean, AWS, Google Cloud, a mwy. Mae’r cyfathriadu hwn yn sylwi'r symudau domain (domain syncing) a'r rheoli certydd SSL rhwng Ultimate Multisite a Cloudways.
 
-## Adranau
+## Adranau {#features}
 - Symudau domain symudol (Automatic domain syncing)
 - Rheoli certydd SSL (SSL certificate management)
 - Cyddefnyddio domenau ychwanegol (Support for extra domains)
 - Cynllunio DNS ar gyfer certydd SSL (DNS validation for SSL certificates)
 
-## Cyflwyniadau
+## Cyflwyniadau {#requirements}
 Rhaid i'r cyfaintau canlynol i'w ddarlu yn eich ffeil `wp-config.php`:
 
 ```php
@@ -30,16 +30,16 @@ Oesblygiol, gallwch hefyd ddarlu:
 define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'lista_o_domena_yn_gwrth,a_rannwyd');
 ```
 
-## Cynllunau Rheoli
+## Cynllunau Rheoli {#setup-instructions}
 
-### 1. Derbyn eich Cyfaintau API Cloudways
+### 1. Derbyn eich Cyfaintau API Cloudways {#1-get-your-cloudways-api-credentials}
 
 1. Logi i'r dashboard Cloudways eich.
 2. Ymddangos i "Account" > "API Keys".
 3. Gynllunwch un gol API os nad oes gennych yn ei gael.
 4. Copiwch eich eimel a'r gol API.
 
-### 2. Derbyn eich ID Server a Aplikacio
+### 2. Derbyn eich ID Server a Aplikacio {#2-get-your-server-and-application-ids}
 
 1. Yn eich dashboard Cloudways, ymddangos i "Servers".
 2. Deiliwch y server lle mae eich multisite WordPress yn cael ei gweithredu.
@@ -47,7 +47,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'lista_o_domena_yn_gwrth,a_rannwyd');
 4. Ymddangos i "Applications" a deiliwch eich aplikacio WordPress.
 5. Mae'r App ID yn agor yn yr URL: `https://platform.cloudways.com/server/{SERVER_ID}/application/{APP_ID}`
 
-### 3. Ychwanegu Cyfaintau i wp-config.php
+### 3. Ychwanegu Cyfaintau i wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ymddarlwch y cyfaintau canlynol i'r ffeil `wp-config.php` eich:
 
@@ -68,7 +68,7 @@ define('WU_CLOUDWAYS_EXTRA_DOMAINS', 'extradomain1.com,extradomain2.com');
 Peidiwch â chynllunio `*.chirop-network.com` (neu unrhyw model subdomain o'r rheini eich hun) i `WU_CLOUDWAYS_EXTRA_DOMAINS`. Gweld [Mae'n bwysig — pethau SSL gweithredol](#important--wildcard-ssl-pitfall) iselwch am beth mae hyn yn gwneud i'r certiau SSL per-tenant cael eu cyflwyno.
 :::
 
-### 4. Mae'r Cyfathriau wedi'i Gynllhau
+### 4. Mae'r Cyfathriau wedi'i Gynllhau {#4-enable-the-integration}
 
 1. Yn eich admin WordPress, mynd i Ultimate Multisite > Settings
 2. Mynd i'r tab "Domain Mapping" (Cyfluniadau Ddrefn)
@@ -76,9 +76,9 @@ Peidiwch â chynllunio `*.chirop-network.com` (neu unrhyw model subdomain o'r rh
 4. Mae'r cyfathriau Cloudways wedi'i chynllhau
 5. Click ar "Save Changes" (Cadw newidiadau)
 
-## Sut mae hyn yn gweithio
+## Sut mae hyn yn gweithio {#how-it-works}
 
-### Cyfluniadau Ddrefn (Domain Syncing)
+### Cyfluniadau Ddrefn (Domain Syncing) {#domain-syncing}
 
 Pan cael ddrefn yn cael ei ddefnyddio mewn Ultimate Multisite:
 
@@ -89,7 +89,7 @@ Pan cael ddrefn yn cael ei ddefnyddio mewn Ultimate Multisite:
 
 Meddefnyddio: Mae'r API Cloudways yn rhoi angen i anfon y llyfr cyfan o ddrefniadau pob amser, nid dim ond i drosu neu dod o hyd i ddrefniadau unigol.
 
-### Rheoli Certiau SSL (SSL Certificate Management)
+### Rheoli Certiau SSL (SSL Certificate Management) {#ssl-certificate-management}
 
 Ar ôl cael ddrefniadau wedi'u cyfathri:
 
@@ -99,7 +99,7 @@ Ar ôl cael ddrefniadau wedi'u cyfathri:
 
 Mae'r cyfathrebu yn rheoli'r certys Let's Encrypt **standard** (nadwyll) o Cloudways. Os oes ffurfyniad wildcard yn cael ei rhoi mewn `WU_CLOUDWAYS_EXTRA_DOMAINS`, mae'r `*.` yn cael ei taro ar y cyfleu cyn y gyflwyniad SSL — nid yw'r wildcard ei ddefnyddio gan y cyfathrebu hwn. I ddefnyddio certys wildcard ar Cloudways, byddwch yn rhaid i chi ei chwarae'n manwl, ond mae hyn yn blocu y gyflwyniad Let's Encrypt ar gyfer domainau custom sydd wedi'u mapi (gweli'r peth hanesydd isod).
 
-## Domainau Addol
+## Domainau Addol {#extra-domains}
 
 Mae'r constant `WU_CLOUDWAYS_EXTRA_DOMAINS` yn sylw i chi ddarganfod domainau **ewr** addol sydd ei ddefnyddio arallai mewn llyfr y alias o'r cyfathrebu Cloudways. Defnyddiwyd y tu mewn iddo i:
 
@@ -108,13 +108,13 @@ Mae'r constant `WU_CLOUDWAYS_EXTRA_DOMAINS` yn sylw i chi ddarganfod domainau **
 
 **Peidiwch â defnyddio'r constant hwn ar gyfer wildcard subdomain o'ch nodedig (e.e., `*.your-network.com`).** Gweli'r peth hanesydd SSL wildcard isod.
 
-## Importiant — Peth Hanesydd SSL Wildcard
+## Importiant — Peth Hanesydd SSL Wildcard {#important--wildcard-ssl-pitfall}
 
 Mae rhywbeth hanesydd pan fyddwch yn dilyn y setffroi cyffredinol o Cloudways yw cyflwyno wildcard fel `*.your-network.com` i `WU_CLOUDWAYS_EXTRA_DOMAINS`, neu ei chwarae'n manwl i gael certys SSL wildcard o Cloudways ar gyfer y wildcard hwn.
 
 **Os ydych chi'r hyn, bydd Cloudways yn gwahaniaethu i ddefnyddio Let's Encrypt ar gyfer domainau custom sydd wedi'u mapi gan Ultimate Multisite.** Mae Cloudways yn gwahaniaethu certys SSL weithredol ar y application gyda'i gael yn llwyr, ac mae certys wildcard sydd wedi'i chwarae ar y application yn blocio'r gyflwyniad Let's Encrypt ar gyfer domainau un-un.
 
-### Setffroi SSL Cloudways Arallangol i Rhedd Ultimate Multisite
+### Setffroi SSL Cloudways Arallangol i Rhedd Ultimate Multisite {#recommended-cloudways-ssl-setup-for-an-ultimate-multisite-network}
 
 1. Yn y tab **SSL Certificate** yn ddefnyddio'r cyflwyniad **Let's Encrypt standard** sy mae'n gwriadu dim ond ar `your-network.com` a `www.your-network.com` — nid rhywfaint (wildcard).
 2. Peidiwch â rhoi `*.your-network.com` (neu unrhyw model subdomain o'ch rheiniad) yn `WU_CLOUDWAYS_EXTRA_DOMAINS`. Rhowch y constant hwn ar gyfer **domainau allanol** dim ond.
@@ -123,20 +123,20 @@ Mae rhywbeth hanesydd pan fyddwch yn dilyn y setffroi cyffredinol o Cloudways yw
 
 Os oes angen i'r domainau custom o'ch ddyn-gwrth sydd wedi'u gwblio heb SSL, gwchwch ar y tab SSL Cloudways. Os mae'r certifig rhywfaint (wildcard) yn weithredol yno, tystyrnu ei, cyflwyni eto'r certifig Let's Encrypt standard ar gyfer domain rheiniad canol dim ond, a tystyrnu unrhyw gynnwysau rhywfaint o `WU_CLOUDWAYS_EXTRA_DOMAINS`. Yna re-triggerwch mapiad domain (neu gwchwch ar y un nesaf) ac bydd y cyfathryd yn dechrau cyflwyni certifig ar gyfer domain dim ond.
 
-## Cynllunio Problemyngau
+## Cynllunio Problemyngau {#troubleshooting}
 
-### Pัญหาau mewn cysyllti API
+### Pัญหาau mewn cysyllti API {#api-connection-issues}
 - Gwylio bod eich e-bost a chref API'n cywir
 - Gwchwch bod eich IDs serwer a ddefnyddio yn wir
 - Sicrhewch bod eich cyfrifau Cloudways gyda'r permisiwnau sydd angen.
 
-### Pัญหา gyda Sertifig SSL
+### Pัญหา gyda Sertifig SSL {#ssl-certificate-issues}
 - Mae Cloudways yn rhestru bod domena gyda record DNS gywir sy'n cyfeirio at eich server قبل ychwanegu sertifigau SSL.
 - Mae'r cyfathriant yn gwalia recordau DNS قبل ychwanegu sertifigau SSL.
 - Os nad yw sertifigau SSL yn cael eu chwanegu, gwalia i sicr ydynt eich domena yn cyfeirio'n iawn at yr adran IP eich server.
 - **Domena personol (per-tenant) sydd wedi cael eu cyd-derbynio heb SSL?** Gwalia y tab Sertifig SSL o'r app Cloudways. Os oes sertifig wildcard (aidd yn cael ei chwarae, neu mae'n gwru `*.your-network.com`) yn gweithredol, nid yw Cloudways yn chwanegu sertifigau Let's Encrypt ar gyfer domena personol sydd wedi'u mapi'n rhyngweithiol. Rhowch ei wahan gyda sertifig Let's Encrypt standard sy'n gwru dim ond ar domena rheini'r network ( `your-network.com`, `www.your-network.com`) a taro chiweryn cyllid wildcard o `WU_CLOUDWAYS_EXTRA_DOMAINS`. Yna re-triggerwch mapi domena (neu gweso i'r un nesaf) ac fydd y cyfathriant yn rhestru sertifigau ar gyfer domena.
 
-### Domena Nid wedi cael ei ddefnyddio
+### Domena Nid wedi cael ei ddefnyddio {#domain-not-added}
 - Gwalia log Ultimate Multisite am unrhyw atebau eros.
 - Gyfarwyddwch bod y domena nid wedi cael ei ddefnyddio'n rhyngweithiol i Cloudways.
 - Sicr bod eich plan Cloudways yn cefnogi'r amser domena sydd chi'n ddefnyddio.

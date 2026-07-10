@@ -4,11 +4,11 @@ title: Aktion - add_user_to_blog
 sidebar_label: add_user_to_blog
 _i18n_hash: ac7b281fe49bfc7d858869b1a24e9ae3
 ---
-# Aktion: add_user_to_blog
+# Aktion: add_user_to_blog {#action-addusertoblog}
 
 Auslöst sofort, nachdem ein Benutzer zu einer Site hinzugefügt wurde.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Typ | Beschreibung |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Auslöst sofort, nachdem ein Benutzer zu einer Site hinzugefügt wurde.
 | $role | `string` | Benutzerrolle. |
 | $blog_id | `int` | Blog-ID. |
 
-### Seit
+### Seit {#since}
 
 - MU: MU
 
-### Quelle
+### Quelle {#source}
 
 Definiert in [`inc/mu-migration/includes/helpers.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/helpers.php#L174) an Zeile 174

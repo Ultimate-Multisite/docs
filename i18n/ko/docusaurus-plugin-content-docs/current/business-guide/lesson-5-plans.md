@@ -3,15 +3,15 @@ title: '5과: 계획 설계하기'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesson 5: 플랜 설계하기
+# Lesson 5: 플랜 설계하기 {#lesson-5-designing-your-plans}
 
 플랜 단계는 단순히 가격 수준을 의미하는 것이 아닙니다. 이는 고객님의 틈새 시장 고객들이 실제로 어떻게 운영되는지를 반영합니다. 이번 레슨에서는 다양한 단계에 있는 피트니스 비즈니스의 실제 필요에 맞는 제품 플랜을 설계해 보겠습니다.
 
-## 어디까지 진행했나요
+## 어디까지 진행했나요 {#where-we-left-off}
 
 FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 준비되어 있습니다. 이제 고객이 무엇에 접근할 수 있고 얼마를 지불해야 하는지를 결정하는 플랜을 만듭니다.
 
-## 고객 세그먼트로 생각하기
+## 고객 세그먼트로 생각하기 {#thinking-in-customer-segments}
 
 대부분의 사람들이 저지르는 실수는 기술적 기능(저장 공간, 대역폭, 페이지 수)을 중심으로 플랜을 설계하는 것입니다. 고객님의 틈새 시장 고객들은 그런 방식으로 생각하지 않습니다. 체육관 주인은 자신의 사업을 운영하는 데 무엇이 필요한지 생각합니다.
 
@@ -25,11 +25,11 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 
 플랜은 임의의 기능 묶음이 아니라, 이 세그먼트에 맞춰져야 합니다.
 
-## FitSite 플랜 만들기
+## FitSite 플랜 만들기 {#creating-the-fitsite-plans}
 
 각 플랜에 대해 **Ultimate Multisite > Products > Add Product**로 이동합니다.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **타겟**: 개인 트레이너 및 소규모 스튜디오
 
@@ -59,7 +59,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **타겟**: 기존 단일 위치 체육관
 
@@ -85,7 +85,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **타겟**: 다중 위치 피트니스 체인
 
@@ -109,7 +109,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 - Plan group: FitSite Plans
 - Product order: 3
 
-## 플랜 그룹 설정하기
+## 플랜 그룹 설정하기 {#setting-up-the-plan-group}
 
 플랜 그룹을 설정하면 고객이 FitSite 플랜군 내에서만 업그레이드하거나 다운그레이드할 수 있도록 보장합니다. 각 플랜의 **Up & Downgrades** 탭에서 다음을 수행합니다.
 
@@ -118,7 +118,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 
 이렇게 하면 명확한 업그레이드 경로가 생성됩니다: Starter → Growth → Pro.
 
-## 주문 추가 상품 (Order Bumps) 추가하기
+## 주문 추가 상품 (Order Bumps) 추가하기 {#adding-order-bumps}
 
 주문 추가 상품은 결제 과정에서 제공되는 추가 옵션 상품입니다. FitSite의 경우 다음을 고려해 보세요.
 
@@ -128,7 +128,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 
 이 상품들을 Ultimate Multisite에서 **Package** 유형의 제품으로 생성하고 관련 플랜과 연결합니다.
 
-## 이 구조가 작동하는 이유
+## 이 구조가 작동하는 이유 {#why-this-structure-works}
 
 - **Starter**는 진입 장벽을 낮춥니다. (저렴한 가격, 간단한 제공, 트레이너가 빠르게 온라인에 진출할 수 있게 함)
 - **Growth**는 체육관이 실제로 요청하는 기능을 추가합니다. (예약, 갤러리, 맞춤 도메인)
@@ -136,7 +136,7 @@ FitSite에는 세 가지 템플릿(Studio Essential, Gym Pro, Fitness Chain)이 
 - **주문 추가 상품**은 핵심 플랜을 복잡하게 만들지 않으면서 고객이 맞춤 설정할 수 있게 합니다.
 - **명확한 업그레이드 경로**는 고객이 떠나는 대신 함께 성장한다는 의미입니다.
 
-## 현재 FitSite 네트워크 구성
+## 현재 FitSite 네트워크 구성 {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## 이번 레슨에서 구축한 것
+## 이번 레슨에서 구축한 것 {#what-we-built-this-lesson}
 
 - 실제 피트니스 비즈니스 세그먼트에 매핑된 **세 가지 플랜 단계**
 - Ultimate Multisite의 플러그인 및 템플릿 제어를 사용한 **기능 제한(Feature gating)**

@@ -1,124 +1,150 @@
 ---
-title: Multi-tenancy
+title: Multitenantnost
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# Multi-Tenancy {#multi-tenancy}
 
-Rozdělení subsitů na více serverů a databází pro lepší výkon a vyšší bezpečnost.
+Distribuujte podweby napříč servery a databázemi pro výkon a zabezpečení
 
-## Požadavky
+## Hlavní novinky ve verzi 1.2.0 {#version-120-release-highlights}
 
-- WordPress verze 5.3 nebo vyšší
-- PHP verze 7.4 nebo vyšší
-- Plugin Ultimate Multisite (aktivní)
+Multi-Tenancy 1.2.0 přidává základ pro suverénní tenanty pro pracovní postupy izolace v produkci:
 
-## Instalace
+- Bezstavové automatické přihlášení tenantů s krátkodobými SSO návštěvami chráněnými proti opakovanému přehrání.
+- Izolace databáze a souborového systému pro každý podweb u suverénních tenantů.
+- Schopnost Hostinger multi-tenancy pro zřizování tenantů s ohledem na hostitele.
+- Ověřovací brány suverénní migrace pro kontroly legacy dat a asynchronní zpracování push.
+- Konfigurovatelné navázání databázového hostitele na stejném stroji pro instalace Bedrock, FrankenPHP a localhost.
+- Vylepšení bootstrapu tenanta, zapisovače databáze, bootstrapu schématu a zřizování uživatelů.
+- Bezpečnější odstranění suverénního tenanta, které čistí přihlašovací údaje tenanta.
 
-1. Nahraj soubory addon do adresáře `/wp-content/plugins/`
-2. Aktivuj plugin v menu „Plugins“ v WordPressu
-3. Konfiguruj nastavení addon v administraci sítě
+Viz uživatelské příručky pro [pracovní postup suverénní migrace](/user-guide/getting-started/sovereign-migration-workflow), [izolaci multi-tenancy](/user-guide/configuration/multi-tenancy-isolation) a [operace se suverénními tenanty](/user-guide/administration/sovereign-tenant-operations).
 
-## Vývoj
+## Požadavky {#requirements}
 
-### Nastavení
+- WordPress 5.3 nebo vyšší
+- PHP 7.4 nebo vyšší
+- plugin Multisite Ultimate (aktivní)
+
+## Instalace {#installation}
+
+1. Nahrajte soubory addonu do svého adresáře `/wp-content/plugins/`
+2. Aktivujte plugin přes menu „Pluginy“ ve WordPress
+3. Nakonfigurujte nastavení addonu v administraci sítě
+
+## Vývoj {#development}
+
+### Nastavení {#setup}
 
 ```bash
-# Nainstalovat závislosti
+# Install dependencies
 composer install
 npm install
 
-# Spustit testy
+# Run tests
 npm run test
 
-# Spustit kontroly standardů kódu
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Opravit problémy se stylem kódu
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Vytvořit build pro produkci
+# Build for production
 npm run build
 ```
 
-### Struktura projektu
+### Struktura projektu {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP třídy a zahrnutí
-│   ├── class-multisite-ultimate-updater.php  # Handler pro aktualizace
+├── inc/                          # PHP třídy a include soubory
+│   ├── class-multisite-ultimate-updater.php  # Obsluha aktualizací
 │   └── class-multi_tenancy-main.php             # Hlavní funkcionalita
-├── tests/                        # Unit testy
-│   ├── bootstrap.php            # Bootstrap pro testy
-│   ├── class-*-base.php         # Základní třída testu
+├── tests/                        # Jednotkové testy
+│   ├── bootstrap.php            # Bootstrap testů
+│   ├── class-*-base.php         # Základní testovací třída
 │   └── class-*-test.php         # Testovací případy
 ├── views/                       # Soubory šablon
-├── assets/                      # Statické soubory
-│   ├── css/                     # Styly
+├── assets/                      # Statické assety
+│   ├── css/                     # Stylesheety
 │   ├── js/                      # JavaScript soubory
 │   └── images/                  # Obrázky
 ├── lang/                        # Jazykové soubory
 ├── composer.json                # PHP závislosti
-├── package.json                 # Závislosti Node.js
+├── package.json                 # Node.js závislosti
 ├── phpunit.xml.dist             # Konfigurace PHPUnit
 ├── .phpcs.xml.dist              # Konfigurace standardů kódu
 └── rector.php                   # Pravidla modernizace kódu
 ```
 
-### Testování
+### Testování {#testing}
 
 Addon obsahuje komplexní testovací framework:
 
-- **Unit Tests**: Testy založené na PHPUnit a testovací sadě WordPressu
-- **Base Test Class**: Poskytuje pomocné metody pro běžné testovací scénáře
-- **Test Coverage**: Konfigurováno pro sledování pokrytí kódu
-- **Multisite Testing**: Testy se spouštějí v prostředí multisite
+- **Jednotkové testy**: Testy založené na PHPUnit s testovací sadou WordPress
+- **Základní testovací třída**: Poskytuje pomocné metody pro běžné testovací scénáře
+- **Pokrytí testy**: Nakonfigurováno pro sledování pokrytí kódu
+- **Multisite testování**: Testy běží v multisite prostředí
 
-### Standardy kódu
+### Standardy kódu {#code-standards}
 
-- **WordPress Coding Standards**: Enforzovány pomocí PHPCS
-- **Kompatibilita s PHP 7.4+**: Podporuje moderní funkce PHP
+- **WordPress Coding Standards**: Vynucováno přes PHPCS
+- **Kompatibilita s PHP 7.4+**: Podporovány moderní funkce PHP
 - **Statická analýza**: Integrace PHPStan pro kontrolu typů
-- **Modernizace kódu**: Pravidla Rector pro aktualizace PHP
+- **Modernizace kódu**: Pravidla Rector pro upgrady PHP
 
-### Build systém
+### Build systém {#build-system}
 
 - **Zpracování assetů**: Minifikace souborů CSS/JS
-- **Překlad**: Generování souborů POT
-- **Balení**: Vytváření archivu pro distribuci
-- **Vývojový režim**: Neminifikované assety pro debugování
+- **Překlad**: Generování POT souboru
+- **Balení**: Vytvoření archivu pro distribuci
+- **Vývojový režim**: Neminifikované assety pro ladění
 
-## Konfigurace
+## Konfigurace {#configuration}
 
 Addon podporuje různé možnosti konfigurace dostupné přes rozhraní administrace sítě.
 
-## Hooks a Filtry
+### Konfigurace suverénního tenanta {#sovereign-tenant-configuration}
 
-### Actions
+U suverénních tenantů nakonfigurujte databázi tenanta, kořen souborového systému, navázání databázového hostitele a schopnost hostitele před směrováním provozu na tenanta. Spusťte ověření migrace po každé změně, která ovlivňuje přihlašovací údaje k databázi, navázání hostitele, směrování nebo zřizování uživatelů.
 
-- `ultimate-multisite-addon-template_init` - Spouští se po inicializaci addon
-- `ultimate-multisite-addon-template_loaded` - Spouští se po načtení všech souborů addon
+Použijte `localhost` pouze tehdy, když runtime tenanta a databázová oprávnění očekávají místní socket nebo přístup na stejném stroji. Použijte `127.0.0.1` nebo název hostitele služby, pokud je to hostitel oprávnění nakonfigurovaný vaším poskytovatelem.
 
-### Filters
+### Schopnost Hostinger {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Změna nastavení addon
-- `ultimate-multisite-addon-template_enabled` - Přepsání stavu povolení/zakázání addon
+Schopnost Hostinger multi-tenancy funguje se sdíleným integračním tokenem Hostinger. Před ověřením potvrďte, že doména je přítomna v hPanel, DNS směřuje na účet Hostinger a nastavení databáze tenanta odpovídá hPanel.
 
-## Licence
+## Hooky a filtry {#hooks-and-filters}
+
+### Akce {#actions}
+
+- `ultimate-multisite-addon-template_init` - Spuštěno po inicializaci addonu
+- `ultimate-multisite-addon-template_loaded` - Spuštěno po načtení všech souborů addonu
+
+### Filtry {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Upravte nastavení addonu
+- `ultimate-multisite-addon-template_enabled` - Přepište stav povolení/zakázání addonu
+
+## Licence {#license}
 
 Tento addon je licencován pod GPL v3 nebo novější.
 
-## Podpora
+## Podpora {#support}
 
 Pro podporu a dokumentaci navštivte [MultisiteUltimate.com](https://multisiteultimate.com)
-## Changelog
+## Changelog {#changelog}
 
-- Verze 1.0.1 (2025-09-28): změna prefixu na ultimate-multisite; aktualizace textového domény; zvýšení verze.
+- Verze 1.2.0 (2026-06-03): přidává bezstavové automatické přihlášení tenanta, schopnost Hostinger multi-tenancy, izolaci databáze a souborového systému pro každý podweb, ověřovací brány suverénní migrace, vylepšení bootstrapu tenanta/zapisovače databáze, konfigurovatelné navázání hostitele MySQL a bezpečnější odstranění suverénního tenanta.
+
+- Verze 1.0.1 (2025-09-28): přejmenování prefixu na ultimate-multisite; aktualizace text domain; navýšení verze.
 
 
-- Verze (2025-09-28): změna prefixu na ultimate-multisite; aktualizace textového domény; zvýšení verze.
+- Verze  (2025-09-28): přejmenování prefixu na ultimate-multisite; aktualizace text domain; navýšení verze.

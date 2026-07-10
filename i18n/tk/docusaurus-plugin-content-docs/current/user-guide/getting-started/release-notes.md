@@ -3,9 +3,9 @@ title: Çykyş Notları
 sidebar_position: 9
 _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Çykyş Notları
+# Çykyş Notları {#release-notes}
 
-## Versiya 2.13.0 — 2026-06-05-de Çykaryldy
+## Versiya 2.13.0 — 2026-06-05-de Çykaryldy {#version-2130--released-on-2026-06-05}
 
 - Täze: Müşteri hesabı, checkout, fatura, sayt, şablon değiştirme we domen eşleştirme akymlary üçin sovrann tenant (sovereign-tenant) durnamasy goşuldy. Bu bilen tenant taraplar müşterileri yönetilen hereketler üçin esas sayta geri yöneltebilirler.
 - Täze: Tekrarlanan üyelikler üçin yenileme kredensialar çekuşlary goşuldy, böylece gateway-ler sazlanyp saklanýan fatura kesişleri, subskripsiýa ýa-da vault tokeni tapylmasa awtomatik yenilenmegi sazlanyp sazlanyp bilmezler.
@@ -19,7 +19,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Üyelik yenilenmeleri, gysga wagtyň aýlanmagy we tölemek üçin meseleler indi has çalt aýlanmalary, çöküntileri ýa-da zerur tölegleri tapylmadyklyklary gaçyp bilýär.
 - Gelişdirildi: WordPress 7.0-a çenli jogapkärçiligi test edildi, öňki Vue assetleri npm mannalarından ýen döredilip alnyp, Cypress end-to-end görkezmeleri indi has köp checkout, guramak, SSO we gateway akymlaryny synaglyp biler.
 
-## Versi 2.12.0 — 2026-05-15-de çykaryldy
+## Versi 2.12.0 — 2026-05-15-de çykaryldy {#version-2120--released-on-2026-05-15}
 
 - Täze: Hostinger (hPanel) host provaydaryny domain eşleşdirme integrasiýasy bilen birlikte desteklenen host provaydar hökmünde goşuldy
 - Täze: Site Exporter indi ulgamyň ähli taraplar üçin siteyi gurluşy arkaly ağ import paketlerini işleýär, bu bolsa ulgamda siteyi has ýönekeý etmek üçin amatlydyr.
@@ -31,7 +31,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzedildi: Site Exporter CLI indi dogry standart ağ siteini saýlap saklaýar.
 - Gelişdirildi: Plugin paketindäki wp-cli toparlanmagyny aýyrmagyň netijesinde plugin ululygyny azaldyrmak üçin toparlanma (bundling) ýok edildi.
 
-## Versi 2.11.0 — 2026-05-11-de çykaryldy
+## Versi 2.11.0 — 2026-05-11-de çykaryldy {#version-2110--released-on-2026-05-11}
 
 - Täze: Site eksportlary indi özüni başlatýan `index.php` faylyny toparlaýar, bu bolsa ZIP arkyny täze hostda egerlik paketini ayrı plugin goşmak arkaly ýüklemek üçin amatlydyr.
 - Täze: Ağ eksporty administrasiýaçylara Site Export admin sahhasından ähli taraplar üçin siteji bir arkada eksport etmegi mümkinçilik berýär.
@@ -39,7 +39,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Täze: Checkout form edytijisinde resminji ulanyjy sazlaryň ýerleşdirilip biljekligi belirmekden soň, zerurlaşdyrylan ulanyjylar ýok edilmese hem habar berýär.
 - Täze: Import/Export saplanyşyklary tabyny indi öz işini has anyk düşündirýär we Site Export gurşawyna dogry arkaly baglanýar.
 
-## Versi 2.10.0 — 2026-05-05-de çykaryldy
+## Versi 2.10.0 — 2026-05-05-de çykaryldy {#version-2100--released-on-2026-05-05}
 
 - Täze: Manuel kimlik doğrulama girişi için PayPal rehberli kurulum sihirbazı, sorunsuz ağ geçidi yapılandırması için OAuth bayrak kapısı ile yeni eklendi.
 - Täze: Şablon değiştirme müşteri paneli, mevcut şablon kartı, kalıcı ızgara ve **Mevcut şablonu sıfırla** butonu ile yeniden tasarlandı.
@@ -52,7 +52,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Filtrelenmiş SSO yolu tüm giriş akışlarında korunuyor.
 - Düzeltme: Kaydedilirken boş site kimliği seçenekleri korundu.
 
-## Sürüm 2.9.0 — 30 Nisan 2026'da Yayınlandı
+## Sürüm 2.9.0 — 30 Nisan 2026'da Yayınlandı {#version-290--released-on-2026-04-30}
 
 - Täze: **Araçlar > Dışa/İçe Aktar** altında tek site dışa aktarma ve içe aktarma eklendi.
 - Düzeltme: Dışa aktarma ZIP dosyaları artık kimlik doğrulamalı indirme uç noktası üzerinden sunuluyor.
@@ -66,7 +66,7 @@ _i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 - Düzeltme: Kullanıcı ayarları anahtarlarında Tour ID'ler alt çizgiye dönüştürüldü.
 - Geliştirildi: Daha iyi uyumluluk için ZipArchive artık Alchemy/Zippy yerine kullanılıyor.
 
-## Sürüm 2.8.0 — 29 Nisan 2026'da Yayınlandı
+## Sürüm 2.8.0 — 29 Nisan 2026'da Yayınlandı {#version-280--released-on-2026-04-29}
 
 - Täze: Biri (Jumper) düğmesini "Other Options" ayarlary UI-sına eklenip işe tutuldy.
 - Täze: Checkout formlary list tablosuna Status sütunu goşdirildi.

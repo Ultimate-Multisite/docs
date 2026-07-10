@@ -1,58 +1,58 @@
 ---
-title: REST API નું વિવરણ
+title: REST API અવલોકન
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API સંદર્ભ
+# REST API સંદર્ભ {#rest-api-reference}
 
-## મૂળભૂત ગોઠવણી (Base Configuration)
+## આધારભૂત રૂપરેખાંકન {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key અને Secret (HTTP Basic Auth અથવા URL Parameters)
+**આધાર URL:** `{site_url}/wp-json/wu/v2/`
+**પ્રમાણીકરણ:** API Key અને Secret (HTTP Basic Auth અથવા URL પરિમાણો)
 
-## પ્રમાણીકરણ (Authentication)
+## પ્રમાણીકરણ {#authentication}
 
-### API સક્ષમ કરો (Enable API)
+### API સક્ષમ કરો {#enable-api}
 ```php
-// Ultimate Multisite settings માં અથવા પ્રોગ્રામમેટિકલી API સક્ષમ કરો
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API credentials મેળવો (Get API Credentials)
+### API ઓળખપત્રો મેળવો {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authentication પદ્ધતિઓ (Authentication Methods)
+### પ્રમાણીકરણ પદ્ધતિઓ {#authentication-methods}
 
-**HTTP Basic Auth (સલાહભર્યું):**
+**HTTP Basic Auth (ભલામણ કરેલ):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL પરિમાણો:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## મુખ્ય Endpoints (Core Endpoints)
+## મુખ્ય અંતબિંદુઓ {#core-endpoints}
 
-### 1. Customers API
+### 1. ગ્રાહકો API {#1-customers-api}
 
-**Base Route:** `/customers`
+**આધાર રૂટ:** `/customers`
 
-**તમામ ગ્રાહકો મેળવો (Get All Customers)**
+**બધા ગ્રાહકો મેળવો**
 ```http
 GET /wu/v2/customers
 ```
 
-**એક ગ્રાહક મેળવો (Get Single Customer)**
+**એક ગ્રાહક મેળવો**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ગ્રાહક બનાવો (Create Customer)**
+**ગ્રાહક બનાવો**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**ગ્રાહક અપડેટ કરો (Update Customer)**
+**ગ્રાહક અપડેટ કરો**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP ગ્રાહક નોંધો"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**ગ્રાહક કાઢી નાખો (Delete Customer)**
+**ગ્રાહક કાઢી નાખો**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. સાઇટ્સ API {#2-sites-api}
 
-**Base Route:** `/sites`
+**આધાર રૂટ:** `/sites`
 
-**સાઇટ બનાવો (Create Site)**
+**સાઇટ બનાવો**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. Memberships API
+### 3. સભ્યપદો API {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**આધાર રૂટ:** `/memberships`
 
-**Membership બનાવો (Create Membership)**
+**સભ્યપદ બનાવો**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. Products API
+### 4. ઉત્પાદનો API {#4-products-api}
 
-**Base Route:** `/products`
+**આધાર રૂટ:** `/products`
 
-**તમામ પ્રોડક્ટ્સ મેળવો (Get All Products)**
+**બધા ઉત્પાદનો મેળવો**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. Payments API
+### 5. ચુકવણીઓ API {#5-payments-api}
 
-**Base Route:** `/payments`
+**આધાર રૂટ:** `/payments`
 
-**Payment બનાવો (Create Payment)**
+**ચુકવણી બનાવો**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domains API
+### 6. ડોમેન્સ API {#6-domains-api}
 
-**Base Route:** `/domains`
+**આધાર રૂટ:** `/domains`
 
-**ડોમેન મેપ કરો (Map Domain)**
+**ડોમેન મેપ કરો**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registration Endpoint
+## નોંધણી અંતબિંદુ {#registration-endpoint}
 
-`/register` એન્ડપોઇન્ટ એક સંપૂર્ણ ચેકઆઉટ/રજીસ્ટ્રેશન ફ્લો પૂરો પાડે છે:
+`/register` અંતબિંદુ સંપૂર્ણ checkout/નોંધણી પ્રવાહ પ્રદાન કરે છે:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Response:**
+**પ્રતિસાદ:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## Error Responses
+## સ્વતંત્ર ટેનન્ટ અંતબિંદુઓ {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 એવા એકીકરણો માટે સ્વતંત્ર ટેનન્ટ REST આવરણ ઉમેરે છે જે અલગ કરાયેલા ટેનન્ટ્સની જોગવાઈ, તપાસ અથવા ચકાસણી કરે છે.
+
+ચોક્કસ વિનંતી પેલોડ સક્ષમ હોસ્ટ ક્ષમતા પર આધાર રાખે છે, પરંતુ એકીકરણોએ આ અંતબિંદુ જૂથોની અપેક્ષા રાખવી જોઈએ:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+ટેનન્ટ રજિસ્ટ્રી, ડેટાબેઝ, ફાઇલસિસ્ટમ અને રૂટિંગ સ્થિતિ તૈયાર કરવા માટે bootstrap અંતબિંદુનો ઉપયોગ કરો. ઉત્પાદન ટ્રાફિક સ્વિચ કરતા પહેલાં સ્થળાંતર સ્થિતિ અને ચકાસણી અંતબિંદુઓનો ઉપયોગ કરો. સ્વતંત્ર ટિયરડાઉન માટે કાઢી નાખવાના અંતબિંદુનો ઉપયોગ કરો જેથી ડેટાબેઝ ઓળખપત્રો addon cleanup પ્રવાહ દ્વારા દૂર થાય.
+
+સામાન્ય સ્થળાંતર સ્થિતિ પ્રતિસાદોમાં શામેલ છે:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` ને પ્રી-લૉન્ચ અવરોધક તરીકે ગણો. ચકાસણી વિગતો તપાસો, ડેટાબેઝ હોસ્ટ બાઇન્ડિંગ, કતાર, વપરાશકર્તા જોગવાઈ અથવા રૂટિંગ સમસ્યા ઠીક કરો, પછી ફરીથી ચકાસણીનો પ્રયાસ કરો.
+
+## ભૂલ પ્રતિસાદો {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## Pagination અને Filtering
+## પેજિનેશન અને ફિલ્ટરિંગ {#pagination-and-filtering}
 
-**Query Parameters:**
+**ક્વેરી પરિમાણો:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-સામાન્ય parameters:
-- `per_page` - પ્રતિ પૃષ્ઠ વસ્તુઓ (default: 20, max: 100)
+સામાન્ય પરિમાણો:
+- `per_page` - પ્રતિ પૃષ્ઠ વસ્તુઓ (ડિફૉલ્ટ: 20, મહત્તમ: 100)
 - `page` - પૃષ્ઠ નંબર
-- `search` - શોધ શબ્દ (Search term)
-- `orderby` - સોર્ટ કરવા માટેનું ફીલ્ડ
-- `order` - સોર્ટ કરવાની દિશા (asc/desc)
-- `status` - સ્ટેટસ દ્વારા ફિલ્ટર કરો
-- `date_created` - તારીખની રેન્જ દ્વારા ફિલ્ટર કરો
+- `search` - શોધ શબ્દ
+- `orderby` - સોર્ટ ફીલ્ડ
+- `order` - સોર્ટ દિશા (asc/desc)
+- `status` - સ્થિતિ દ્વારા ફિલ્ટર કરો
+- `date_created` - તારીખ શ્રેણી દ્વારા ફિલ્ટર કરો

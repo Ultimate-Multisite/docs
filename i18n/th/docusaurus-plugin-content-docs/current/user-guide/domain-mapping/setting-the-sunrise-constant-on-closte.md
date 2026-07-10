@@ -3,13 +3,13 @@ title: การตั้งค่า Sunrise Constant บน Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# การตั้งค่าคงที่ Sunrise เป็น true บน Closte
+# การตั้งค่าคงที่ Sunrise เป็น true บน Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 ผู้ให้บริการโฮสติ้งบางรายล็อกไฟล์ wp-config.php ไว้เพื่อความปลอดภัย ซึ่งหมายความว่า Ultimate Multisite ไม่สามารถแก้ไขไฟล์โดยอัตโนมัติเพื่อเพิ่มค่าคงที่ที่จำเป็นสำหรับการทำงานของ domain mapping และฟีเจอร์อื่นๆ ได้ Closte เป็นหนึ่งในโฮสต์เหล่านั้น
 
 อย่างไรก็ตาม Closte มีวิธีให้คุณเพิ่มค่าคงที่ลงใน wp-config.php ได้อย่างปลอดภัย เพียงทำตามขั้นตอนด้านล่างนี้:
 
-## บนแดชบอร์ดของ Closte
+## บนแดชบอร์ดของ Closte {#on-the-closte-dashboard}
 
 ขั้นแรก [ล็อกอินเข้าสู่บัญชี Closte ของคุณ](https://app.closte.com/) คลิกที่เมนู Sites จากนั้นคลิกลิงก์ Dashboard บนเว็บไซต์ที่คุณกำลังทำงานอยู่:
 

@@ -3,11 +3,11 @@ title: Апрацоўка вебкакаўт
 sidebar_position: 3
 _i18n_hash: cdc7583622760f8654cdd8fbb9f9ffa5
 ---
-# Апрацоўка Webhook
+# Апрацоўка Webhook {#webhook-handling}
 
 Стварыце ўласныя Webhook-адрэсы, каб прымаць паведамленні ад знешніх сэрвісаў і разагнаць дадзеныя з Ultimate Multisite.
 
-## Уласны адрэс Webhook
+## Уласны адрэс Webhook {#custom-webhook-endpoint}
 
 ```php
 // Register webhook endpoint
@@ -51,7 +51,7 @@ function verify_webhook_signature($request) {
 }
 ```
 
-## Аспекты бяспекі
+## Аспекты бяспекі {#security-considerations}
 
 - Заўсёды праверка sygnatur Webhook праз HMAC або агульны пароль (shared secret)
 - Выкарыстоўвайце `permission_callback` для вашага REST-маршруту — ніколі не ўсталёўвайце яго ў `__return_true` у прадакшэн-рэжыме

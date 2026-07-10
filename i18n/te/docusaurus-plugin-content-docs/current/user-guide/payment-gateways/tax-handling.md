@@ -1,112 +1,120 @@
 ---
-title: పన్ను నిర్వహణ
+title: పన్నుల నిర్వహణ
 sidebar_position: 4
-_i18n_hash: a50fddb07455f714128e042744ab5859
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# పన్ను నిర్వహణ
+# పన్ను నిర్వహణ {#tax-handling}
 
-Ultimate Multisite మా కోర్ ప్లగిన్‌లో పన్ను సేకరణ మాడ్యూల్‌ను కలిగి ఉంది, కాబట్టి మీ ప్లాన్లు, ప్యాకేజీలు మరియు సేవలపై అమ్మకపు పన్నులు సేకరించాల్సి వస్తే, ఎటువంటి add-onలు ఇన్‌స్టాల్ చేయకుండానే సులభంగా చేయవచ్చు.
+Ultimate Multisite మా ప్రధాన plugin‌లోనే పన్ను వసూలు module‌ను కలిగి ఉంది. కాబట్టి మీ plans, packages మరియు services‌పై sales taxes వసూలు చేయాల్సి ఉంటే, ఎలాంటి add-ons‌ను install చేయకుండానే సులభంగా చేయవచ్చు.
 
-యూరప్‌లో ఉన్న కంపెనీల కోసం, **VAT** సమ్మతికి మెరుగైన సహాయం అందించే టూల్స్ మరియు ఫీచర్లను జోడించే ఒక **add-on** అందిస్తున్నాము.
+యూరప్‌లో ఉన్న కంపెనీల కోసం, VAT compliance‌కు మెరుగైన **మద్దతు ఇవ్వడానికి** tools మరియు features‌ను జోడించే ఒక **add-on** మేము అందిస్తున్నాము.
 
-Ultimate Multisite మీ తరపున ప్రభుత్వానికి పన్నులు ఫైల్ చేయదు లేదా చెల్లించదు; లావాదేవీ సమయంలో సముచితమైన పన్నులను సేకరించడంలో మాత్రమే సహాయం చేస్తాము. **పన్నులను మీరే చెల్లించాల్సి ఉంటుంది.**
+Ultimate Multisite మీ తరఫున ప్రభుత్వానికి పన్నులు file చేయదు లేదా remit చేయదు; లావాదేవీ సమయంలో సరైన పన్నులను వసూలు చేయడంలో మాత్రమే మేము మీకు సహాయం చేస్తాము. **పన్నులను మీరు స్వయంగా remit చేయాల్సిందే.**
 
-## పన్ను సేకరణను ఎనేబుల్ చేయడం
+## పన్ను వసూలును ప్రారంభించడం {#enabling-tax-collection}
 
-పన్ను సేకరణ డిఫాల్ట్‌గా ఎనేబుల్ చేయబడదు. దీన్ని ఎనేబుల్ చేయడానికి, **Ultimate Multisite > Settings > Taxes** కు వెళ్లి Enable Taxes సెట్టింగ్‌ను ఆన్ చేయండి.
+పన్ను వసూలు default‌గా ప్రారంభించబడదు. దాన్ని ప్రారంభించడానికి, మీరు **Ultimate Multisite > Settings > Taxes** కు వెళ్లి Enable Taxes setting‌ను ప్రారంభించేలా toggle చేయాలి.
 
-![పన్ను సెట్టింగ్స్‌లో Enable Taxes టోగుల్](/img/config/settings-taxes.png)
+![Tax settings పేజీ పైభాగంలో Enable Taxes toggle](/img/config/settings-taxes-enable.png)
 
-### పన్ను మినహాయించబడినది vs. పన్ను చేర్చబడినది
+ఇది tax settings పేజీ యొక్క పూర్తి దృశ్యం:
 
-డిఫాల్ట్‌గా, మీ అన్ని ప్రోడక్ట్ ధరలు పన్ను మినహాయించబడినవి, అంటే ప్రోడక్ట్ ధరలో పన్నులు **చేర్చబడవు**. ఒక కస్టమర్ నిర్దిష్ట కొనుగోలుపై పన్నులు చెల్లించాలని మేము నిర్ధారిస్తే, సబ్‌టోటల్ **పైన** పన్నులను జోడిస్తాము.
+![Tax settings పూర్తి పేజీ](/img/config/settings-taxes-full.png)
 
-మీ ప్రోడక్ట్ ధరలో పన్నులు చేర్చబడాలని మీరు కోరుకుంటే, **Inclusive Tax** సెట్టింగ్‌ను ఎనేబుల్ చేయడం ద్వారా అలా చేయవచ్చు.
+మీరు వ్యక్తిగత products కోసం tax settings‌ను కూడా చూడవచ్చు:
 
-![Inclusive Tax సెట్టింగ్ టోగుల్](/img/config/settings-taxes.png)
+![products కోసం Tax settings](/img/config/settings-taxes.png)
 
-మీరు చేసిన మార్పులను **సేవ్** చేయడం మర్చిపోకండి.
+### పన్ను మినహాయింపు vs. పన్ను చేర్చబడింది {#tax-excluded-vs-tax-included}
 
-### 
+Default‌గా, మీ product ధరలన్నీ పన్ను మినహాయింపుతో ఉంటాయి. అంటే product ధరలో పన్నులు **చేర్చబడవు**. నిర్దిష్ట కొనుగోలుపై customer పన్నులు చెల్లించాలి అని మేము నిర్ణయిస్తే, subtotal‌కు **అదనంగా** పన్నులను జోడిస్తాము.
 
-## పన్ను రేట్లను సృష్టించడం
+మీ product ధరలోనే పన్నులు చేర్చాలని మీరు కోరుకుంటే, **Inclusive Tax** setting‌ను ప్రారంభించడం ద్వారా అలా చేయవచ్చు.
 
-పన్ను సేకరణను ఎనేబుల్ చేసిన తర్వాత, మా పన్ను రేట్ల ఎడిటర్ ఉపయోగించి నిర్దిష్ట ప్రాంతాలకు పన్ను రేట్లను సృష్టించాల్సి ఉంటుంది.
+![Enable Taxes setting కింద Inclusive Tax toggle వరుస](/img/config/settings-taxes-inclusive.png)
 
-Tax సెట్టింగ్స్ పేజీ సైడ్‌బార్‌లో **Manage Tax Rates** బటన్‌పై క్లిక్ చేయడం ద్వారా ఎడిటర్‌ను యాక్సెస్ చేయవచ్చు.
+మీరు చేసిన మార్పులను **save** చేయడం మర్చిపోవద్దు.
 
-![సైడ్‌బార్‌లో Manage Tax Rates బటన్](/img/config/settings-taxes.png)
+###
 
-పన్ను రేట్ల ఎడిటర్ పేజీలో, **Add new Row** బటన్‌పై క్లిక్ చేయడం ద్వారా కొత్త పన్ను రేట్లను జోడించవచ్చు.
+## పన్ను రేట్లను సృష్టించడం {#creating-tax-rates}
 
-![Add new Row బటన్‌తో పన్ను రేట్ల ఎడిటర్](/img/config/settings-taxes.png)
+Tax Collection‌ను ప్రారంభించిన తర్వాత, మా tax rates editor‌ను ఉపయోగించి నిర్దిష్ట locations కోసం tax rates‌ను సృష్టించాలి.
 
-ప్రతి పన్ను రేటుకు ఒక **టైటిల్** (ఇన్‌వాయిస్‌లలో ఉపయోగించబడుతుంది) ఇవ్వాలి. తర్వాత ఈ పన్ను వసూలు చేయబడే **దేశం** (అవసరం), **రాష్ట్రం** మరియు **నగరం** (రెండూ ఐచ్ఛికం) ఎంచుకోవచ్చు. చివరగా, **శాతంలో పన్ను రేటు** జోడించండి.
+Tax settings పేజీ sidebar‌లోని **Manage Tax Rates** button‌ను click చేయడం ద్వారా editor‌ను access చేయవచ్చు.
 
-### పన్ను వర్గాలు
+![settings పేజీలోని Tax Rates panel‌లో Manage Tax Rates link](/img/config/settings-taxes-manage-rates.png)
 
-వివిధ రకాల ప్రోడక్ట్‌లకు వేర్వేరు పన్ను రేట్లు జోడించడానికి బహుళ పన్ను వర్గాలను కూడా సృష్టించవచ్చు.
+tax rates editor పేజీలో, **Add new Row** button‌ను click చేసి కొత్త Tax Rates‌ను జోడించవచ్చు.
 
-**Add new Tax Category** పై క్లిక్ చేసి, మీ వర్గం పేరు రాసి **Create** నొక్కండి.
+![పైభాగంలో Add new Row button ఉన్న Tax rates editor table](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category బటన్](/img/config/settings-taxes.png)
+ప్రతి tax rate‌కు మీరు ఒక **title** ఇవ్వాలి (invoices‌లో ఉపయోగించబడుతుంది). తర్వాత ఈ పన్ను వసూలు చేయబడే **country** (అవసరం), **state,** మరియు **city** (రెండూ optional) ఎంచుకోవచ్చు. చివరగా, **tax rate in percents** జోడించండి.
 
-![కొత్త పన్ను వర్గాన్ని సృష్టించడం](/img/config/settings-taxes.png)
+### పన్ను వర్గాలు {#tax-categories}
 
-వర్గాల మధ్య బ్రౌజ్ చేయడానికి, **Switch** క్లిక్ చేసి కొత్త పన్నులు జోడించాలనుకునే వర్గాన్ని ఎంచుకోండి.
+వివిధ రకాల products‌కు వేర్వేరు tax rates‌ను జోడించడానికి మీరు అనేక Tax Categories‌ను కూడా సృష్టించవచ్చు.
 
-![పన్ను వర్గాల మధ్య మారడం](/img/config/settings-taxes.png)
+**Add new Tax Category** ను click చేసి, మీ category పేరు రాసి **Create** నొక్కండి.
 
-![చూడాలనుకునే పన్ను వర్గాన్ని ఎంచుకోవడం](/img/config/settings-taxes.png)
+![tax rates editor పైభాగంలో Add new Tax Category button](/img/config/tax-categories-add.png)
 
-**Product edit page** కు వెళ్లి Taxes ట్యాబ్‌కు వెళ్లడం ద్వారా నిర్దిష్ట ప్రోడక్ట్‌కు పన్ను వర్గాన్ని సెట్ చేయవచ్చు.
+![create category modal‌లో Tax Category Name input field](/img/config/tax-categories-create-modal.png)
 
-![పన్ను వర్గం మరియు taxable టోగుల్‌తో ప్రోడక్ట్ taxes ట్యాబ్](/img/config/product-taxes.png)
+categories‌ను browse చేయడానికి, **Switch** click చేసి మీరు కొత్త taxes జోడించాలనుకునే category‌ను ఎంచుకోండి.
 
-అదే స్క్రీన్‌లో, ఆ నిర్దిష్ట ప్రోడక్ట్‌పై పన్నులు సేకరించకూడదని Ultimate Multisiteకు తెలియజేయడానికి **Is Taxable?** టోగుల్‌ను ఆఫ్ చేయవచ్చు.
+![tax categories మధ్య మార్చడానికి Switch dropdown button](/img/config/tax-categories-switch.png)
 
-## యూరోపియన్ VAT సపోర్ట్
+![లభ్యమైన categories‌ను చూపుతున్న Tax category selector dropdown](/img/config/tax-categories-select.png)
 
-ముందుగా చెప్పినట్లు, యూరోపియన్ VAT నిబంధనల కారణంగా అదనపు అవసరాలు ఉన్న EUలోని కస్టమర్ల కోసం మాకు ఒక add-on అందుబాటులో ఉంది.
+నిర్దిష్ట product కోసం tax category‌ను set చేయడానికి, **Product edit page** కు వెళ్లి తర్వాత Taxes tab‌కు వెళ్లండి.
 
-మా VAT టూల్స్ కొన్ని ముఖ్యమైన విషయాలలో సహాయపడతాయి:
+![tax category మరియు taxable toggle ఉన్న Product taxes tab](/img/config/product-taxes.png)
 
-  * EU VAT రేట్లను సులభంగా లోడ్ చేయడం;
+అదే screen‌లో, ఆ నిర్దిష్ట product‌పై పన్నులు వసూలు చేయకూడదని Ultimate Multisite‌కు తెలియజేయడానికి **Is Taxable?** toggle‌ను off చేయవచ్చు.
 
-  * VAT నంబర్ సేకరణ మరియు ధృవీకరణ - మరియు VAT మినహాయింపు ఉన్న సంస్థలకు (చెల్లుబాటు అయ్యే VAT నంబర్లు ఉన్న కంపెనీలు వంటివి) రివర్స్ ఛార్జింగ్;
+## యూరోపియన్ VAT మద్దతు {#european-vat-support}
 
-ఆ add-onను ఇన్‌స్టాల్ చేయడానికి, **Ultimate Multisite > Settings** కు వెళ్లి **Check our Add-ons** సైడ్‌బార్ లింక్‌పై క్లిక్ చేయండి.
+ముందుగా చెప్పినట్లుగా, European VAT regulations కారణంగా అదనపు requirements ఉన్న EUలోని customers కోసం మాకు ఒక add-on అందుబాటులో ఉంది.
 
-![add-ons సైడ్‌బార్ లింక్‌తో సెట్టింగ్స్ పేజీ](/img/config/settings-taxes.png)
+మా VAT tools కొన్ని ముఖ్యమైన విషయాల్లో సహాయపడతాయి:
 
-మీరు మా add-ons పేజీకి రీడైరెక్ట్ అవుతారు. అక్కడ, **Ultimate Multisite VAT add-on** కోసం వెతికి దాన్ని ఇన్‌స్టాల్ చేయవచ్చు.
+  * EU VAT rates‌ను సులభంగా load చేయడం;
 
-![add-ons పేజీలో VAT add-on](/img/config/settings-taxes.png)
+  * VAT Number సేకరణ మరియు validation - అలాగే VAT exempt entities కోసం reverse charging (valid VAT numbers ఉన్న companies వంటివి);
 
-![VAT add-on ఇన్‌స్టాల్ డైలాగ్](/img/config/settings-taxes.png)
+ఆ add-on‌ను install చేయడానికి, **Ultimate Multisite > Settings** కు వెళ్లి, తర్వాత **Check our Add-ons** sidebar link‌పై click చేయండి.
 
-తర్వాత, **Network Admin > Plugins** కు వెళ్లి ఆ add-onను నెట్‌వర్క్-వైడ్‌గా యాక్టివేట్ చేయండి.
+![Check our Add-ons link ఉన్న Settings పేజీ sidebar](/img/config/settings-taxes-addons-link.png)
 
-![VAT add-onను Network Activate చేయడం](/img/config/settings-taxes.png)
+మీరు మా add-ons పేజీకి redirect చేయబడతారు. అక్కడ, మీరు **Ultimate Multisite VAT add-on** కోసం search చేసి దాన్ని install చేయవచ్చు.
 
-**Tax Settings ట్యాబ్** కు తిరిగి వెళ్తే, కొత్త ఆప్షన్లు కనిపిస్తాయి. కొత్త VAT టూల్స్‌ను ఎనేబుల్ చేయడానికి **Enable VAT Support** ఆప్షన్‌ను టోగుల్ చేయండి. మీ సెట్టింగ్స్‌ను **సేవ్** చేయడం మర్చిపోకండి!
+<!-- Screenshot అందుబాటులో లేదు: Add-ons పేజీలో VAT add-on tile -->
 
-![పన్ను సెట్టింగ్స్‌లో Enable VAT Support టోగుల్](/img/config/settings-taxes.png)
+<!-- Screenshot అందుబాటులో లేదు: VAT add-on Install Now dialog -->
 
-### VAT పన్ను రేట్లను పుల్ చేయడం
+తర్వాత, **Network Admin > Plugins** కు వెళ్లి ఆ add-on‌ను network-wide‌గా activate చేయండి.
 
-మా ఇంటిగ్రేషన్ జోడించే టూల్స్‌లో ఒకటి EU సభ్య దేశాల పన్ను రేట్లను లోడ్ చేసే సామర్థ్యం. EU VAT సపోర్ట్ ఎనేబుల్ చేసిన తర్వాత పన్ను రేట్ల ఎడిటర్ పేజీని సందర్శించడం ద్వారా ఇది చేయవచ్చు.
+<!-- Screenshot అందుబాటులో లేదు: Plugins పేజీలో VAT add-on కోసం Network Activate action -->
 
-పేజీ దిగువన, VAT పుల్లింగ్ ఆప్షన్లు కనిపిస్తాయి. రేటు రకాన్ని ఎంచుకుని **Update EU VAT Rates** బటన్‌పై క్లిక్ చేస్తే ప్రతి EU సభ్య దేశానికి పన్ను రేట్లతో టేబుల్ ఆటోమేటిక్‌గా నిండిపోతుంది. తర్వాత, దాన్ని సేవ్ చేయడమే మిగిలింది.
+మీరు మళ్లీ **Tax Settings tab** కు వెళ్తే, కొత్త options అందుబాటులో కనిపిస్తాయి. కొత్త VAT tools‌ను ప్రారంభించడానికి **Enable VAT Support** option‌ను toggle చేయండి. మీ settings‌ను **save** చేయడం మర్చిపోవద్దు!
 
-### ![Update EU VAT Rates బటన్‌తో VAT రేట్ల పుల్లింగ్ ఆప్షన్లు](/img/config/settings-taxes.png)
+<!-- Screenshot అందుబాటులో లేదు: add-on activation తర్వాత Tax settings‌లో Enable VAT Support toggle -->
 
-పుల్ చేసిన తర్వాత విలువలను కూడా ఎడిట్ చేయవచ్చు. దీన్ని చేయడానికి, మీకు అవసరమైన టేబుల్ లైన్‌ను ఎడిట్ చేసి కొత్త విలువలను సేవ్ చేయడానికి క్లిక్ చేయండి.
+### VAT పన్ను రేట్లను తీసుకోవడం {#pulling-on-vat-tax-rates}
 
-### VAT ధృవీకరణ
+మా integration జోడించే tools‌లో ఒకటి EU member states కోసం tax rates‌ను load చేసే సామర్థ్యం. EU VAT support‌ను ప్రారంభించిన తర్వాత tax rates editor పేజీని సందర్శించడం ద్వారా ఇది చేయవచ్చు.
 
-VAT సపోర్ట్ ఎనేబుల్ చేయబడినప్పుడు, Ultimate Multisite చెకౌట్ ఫారమ్‌కు బిల్లింగ్ అడ్రస్ ఫీల్డ్ కింద అదనపు ఫీల్డ్‌ను జోడిస్తుంది. ఈ ఫీల్డ్ EUలో ఉన్న కస్టమర్లకు మాత్రమే కనిపిస్తుంది.
+పేజీ దిగువన, VAT pulling options కనిపిస్తాయి. rate type‌ను ఎంచుకుని **Update EU VAT Rates** button‌ను click చేస్తే, ప్రతి EU member state కోసం tax rates‌తో table‌ను pull చేసి auto-populate చేస్తుంది. తర్వాత, మీరు దాన్ని save చేస్తే సరిపోతుంది.
 
-![చెకౌట్ ఫారమ్‌లో VAT నంబర్ ఫీల్డ్](/img/config/settings-taxes.png)
+![tax rates editor దిగువన Update EU VAT Rates button](/img/config/tax-rates-vat-pull.png)
 
-Ultimate Multisite తర్వాత VAT నంబర్‌ను ధృవీకరిస్తుంది మరియు అది చెల్లుబాటు అయ్యేదిగా తిరిగి వస్తే, రివర్స్ ఛార్జ్ మెకానిజం వర్తింపజేయబడుతుంది మరియు ఆ ఆర్డర్‌పై పన్ను రేటు 0%కి సెట్ చేయబడుతుంది.
+వాటిని pull చేసిన తర్వాత values‌ను కూడా edit చేయవచ్చు. అలా చేయడానికి, మీకు అవసరమైన table line‌ను edit చేసి కొత్త values‌ను save చేయండి.
+
+### VAT Validation {#vat-validation}
+
+VAT support ప్రారంభించబడినప్పుడు, Ultimate Multisite checkout form‌కు billing address field కింద అదనపు field‌ను జోడిస్తుంది. EUలో ఉన్న customers‌కు మాత్రమే ఆ field కనిపిస్తుంది.
+
+<!-- Screenshot అందుబాటులో లేదు: frontend checkout form‌లో billing address కింద VAT Number field -->
+
+Ultimate Multisite ఆ తరువాత VAT నంబర్‌ను ధృవీకరిస్తుంది. అది చెల్లుబాటు అయ్యేదిగా తిరిగి వస్తే, reverse charge విధానం వర్తింపజేయబడుతుంది మరియు ఆ ఆర్డర్‌పై పన్ను రేటు 0%గా సెట్ చేయబడుతుంది.

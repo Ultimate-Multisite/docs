@@ -1,75 +1,75 @@
 ---
 title: Kassafält och kund-DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Hantering av domän och kundens DNS
+# Checkout-fält och kundens DNS-hantering {#checkout-field-and-customer-dns-management}
 
-## Fältet för domänval i kassan
+## Checkout-fältet Domain Selection {#the-domain-selection-checkout-field}
 
-Fältet **Domain Selection** (Domänval) är ett kassafält som ger kunderna ett val av hur de vill få sin webbplatsdomän. Lägg till det på vilket kasseformulär som helst för att möjliggöra försäljning av domäner.
+Fältet **Domain Selection** är ett checkout-element som ger kunder ett val för hur de får sin webbplats domän. Lägg till det i valfritt checkout-formulär för att aktivera domänförsäljning.
 
-### Lägga till fältet i ett kasseformulär
+### Lägga till fältet i ett checkout-formulär {#adding-the-field-to-a-checkout-form}
 
 1. Gå till **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Öppna eller skapa ett kasseformulär
-3. I kasseeditorn, klicka på **Add Field** (Lägg till fält)
+2. Öppna eller skapa ett checkout-formulär
+3. Klicka på **Add Field** i checkout-redigeraren
 4. Välj **Domain Selection** från fältlistan
-5. Konfigurera fältoalternativen (se nedan)
+5. Konfigurera fältalternativen (se nedan)
 6. Spara formuläret
 
-### Fältoalternativ
+### Fältalternativ {#field-options}
 
-**Domain modes** (Domänlägen) — Välj vilka flikar kunden ska se. Varje läge kan aktiveras eller inaktiveras oberoende:
+**Domänlägen** — Välj vilka flikar kunden ser. Varje läge kan aktiveras eller inaktiveras oberoende:
 
-| Mode | Vad det gör |
+| Läge | Vad det gör |
 |---|---|
-| **Subdomain** | Kunden använder en gratis subdomän på ditt nätverk (t.ex. `mysite.yournetwork.com`). Ingen betalning krävs. |
-| **Register New Domain** | Kunden söker efter en ny domän och registrerar den via din konfigurerade leverantör. Använder det matchande domänprodukten för prissättning. |
-| **Existing Domain** | Kunden kopplar en domän de redan äger. Ingen registreringsavgift. Domänen kopplas automatiskt till deras webbplats. |
+| **Subdomän** | Kunden använder en gratis subdomän på ditt nätverk (t.ex. `mysite.yournetwork.com`). Ingen betalning behövs. |
+| **Registrera ny domän** | Kunden söker efter en ny domän och registrerar den via din konfigurerade leverantör. Använder den matchande domänprodukten för prissättning. |
+| **Befintlig domän** | Kunden mappar en domän de redan äger. Ingen registreringsavgift. Domänen mappas automatiskt till deras webbplats. |
 
-**Default mode** (Standardläge) — När alla tre lägena är aktiverade, vilken flik öppnas först. Ställ in till **Subdomain** för att hålla domänregistreringen valfri, eller **Register New Domain** för att uppmuntra köp.
+**Standardläge** — När alla tre lägen är aktiverade, vilken flik som öppnas först. Ställ in på **Subdomän** för att hålla domänregistrering valfri, eller **Registrera ny domän** för att uppmuntra köp.
 
-**Domain product** (Domänprodukt) — Du kan valfritt koppla detta fält till en specifik domänprodukt. Om det inte är inställt, väljer tillägget automatiskt den matchande produkten baserat på TLD som kunden söker.
+**Domänprodukt** — Fäst eventuellt detta fält vid en specifik domänprodukt. Om det inte är inställt väljer addon automatiskt den matchande produkten baserat på den TLD kunden söker efter.
 
-### Registrant contact fields (Kontaktuppgifter för registreraren)
+### Kontaktfält för registrant {#registrant-contact-fields}
 
-När en kund väljer fliken **Register New Domain**, lägger kasseformuläret till kontaktuppgifter för registreraren inline:
+När en kund väljer fliken **Registrera ny domän** lägger checkout-formuläret till kontaktfält för registrant direkt i formuläret:
 
 - Förnamn / Efternamn
 - E-postadress
-- Adress (rad 1, stad, län/provins, postnummer, land)
+- Adress (rad 1, stad, delstat/provins, postnummer, land)
 - Telefonnummer
 
-Dessa krävs av alla registreringar och valideras innan API-anropet för registreringen görs. Telefonnummer formateras automatiskt till det internationella formatet `+CC.NNN` som krävs av registreringarna.
+Dessa krävs av alla registrarer och valideras innan API-anropet för registrering görs. Telefonnummer formateras automatiskt till det internationella formatet `+CC.NNN` som registrarer förväntar sig.
 
-### Auto-generated site URL (Automatgenererad webbadress)
+### Automatiskt genererad webbplats-URL {#auto-generated-site-url}
 
-När en kund registrerar eller kopplar en domän, fylls fältet för webbadress automatiskt på baserat på den valda domänen. Kunderna behöver inte fylla i ett separat URL-fält.
+När en kund registrerar eller mappar en domän fylls fältet för webbplats-URL automatiskt i från den valda domänen. Kunder behöver inte fylla i ett separat URL-fält.
 
-### Search behaviour (Sökbeteende)
+### Sökbeteende {#search-behaviour}
 
-- Domänåtkomlighet kontrolleras i realtid med AJAX medan kunden skriver
-- Alternativa TLD-förslag visas när den föredragna domänen är otillgänglig
-- Prissättning hämtas live och visas tydligt (registreringspris, förnyelsepris, valfri WHOIS-integritetsavgift)
+- Domäntillgänglighet kontrolleras i realtid med AJAX medan kunden skriver
+- Alternativa TLD-förslag visas när den önskade domänen inte är tillgänglig
+- Prissättning hämtas live och visas tydligt (registreringspris, förnyelsepris, valfri avgift för WHOIS-sekretess)
 - Kupongkoder gäller för domänprodukter på samma sätt som för alla andra produkter
 
-**Justering av sökresponsivitet:**
+**Finjustera sökresponsivitet:**
 
 ```php
-// Öka debounce-fördröjningen (millisekunder) för att minska API-anrop på långsamma anslutningar
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Lägga till anpassade fält i domänssökformuläret:**
+**Lägga till anpassade fält i domänsökformuläret:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Ytterligare anteckningar',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Hantering av kundens DNS
+## Kundens DNS-hantering {#customer-dns-management}
 
-Kunder kan hantera DNS-poster för sina registrerade domäner från sidan **My Account** (Mitt konto), under sin domänpost.
+Kunder kan hantera DNS-poster för sina registrerade domäner från sidan **My Account**, under posten för deras domän.
 
-### Stödde posttyper
+### Record-typer som stöds {#supported-record-types}
 
-| Type | Användning |
+| Typ | Användning |
 |---|---|
-| **A** | Mappar värdnamn till IPv4-adress |
-| **AAAA** | Mappar värdnamn till IPv6-adress |
-| **CNAME** | Skapar ett alias som pekar till ett annat värdnamn |
-| **MX** | Ställer in mailutbytesserver |
-| **TXT** | Lägger till SPF-, DMARC-, verifierings- eller andra textposter |
+| **A** | Mappa värdnamn till IPv4-adress |
+| **AAAA** | Mappa värdnamn till IPv6-adress |
+| **CNAME** | Skapa ett alias som pekar på ett annat värdnamn |
+| **MX** | Ange e-postväxlingsserver |
+| **TXT** | Lägg till SPF, DMARC, verifiering eller andra textposter |
 
-### Vilka leverantörer stöder DNS-hantering?
+### Vilka leverantörer stöder DNS-hantering? {#which-providers-support-dns-management}
 
-DNS-hantering (lägga till, redigera, ta bort poster) är tillgängligt med **OpenSRS**, **ResellerClub** och **Enom**. Domäner från Namecheap, GoDaddy och NameSilo visar status- och utgångsinformation, men DNS måste hanteras direkt i registratörens kontrollpanel.
+DNS-hantering (lägga till, redigera, ta bort poster) är tillgänglig med **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** och **Openprovider**. **Hostinger**-domäner kan uppdatera namnservrar via Domain Seller; DNS-poster för hostade domäner hanteras av den centrala Hostinger-integrationen för domänmappning. Namecheap-, GoDaddy- och NameSilo-domäner visar status- och utgångsinformation men DNS måste hanteras direkt i registrarens kontrollpanel.
 
-### Standard DNS-poster
+### Standard-DNS-poster {#default-dns-records}
 
-Du kan konfigurera standard DNS-poster som automatiskt tillämpas när en domän registreras. Gå till **Settings › Domain Seller › Default DNS Records**.
+Du kan konfigurera standard-DNS-poster som tillämpas automatiskt när en domän registreras. Gå till **Settings › Domain Seller › Default DNS Records**.
 
-Standardpostvärden stöder två tokens:
+Standardvärden för poster stöder två tokens:
 
 | Token | Ersätts med |
 |---|---|
 | `{DOMAIN}` | Det registrerade domännamnet (t.ex. `example.com`) |
-| `{SITE_URL}` | WordPress-webbadressen för kundens webbplats |
+| `{SITE_URL}` | WordPress-webbplatsens URL för kundens webbplats |
 
-**Exempel — peka apex-domänen och www till din server-IP:**
+**Exempel — peka apex-domänen och www till din servers IP-adress:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: visning och redigering av DNS
+### Admin: visa och redigera DNS {#admin-viewing-and-editing-dns}
 
-Nätverksadministratörer kan se och redigera DNS-poster för vilken kunddomän som helst från domänens redigeringssida i **Network Admin › Ultimate Multisite › Domains**.
+Nätverksadministratörer kan visa och redigera DNS-poster för valfri kunddomän från domänens redigeringssida i **Network Admin › Ultimate Multisite › Domains**.

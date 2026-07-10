@@ -3,7 +3,7 @@ title: Registra una conta per Zapier
 sidebar_position: 1
 _i18n_hash: f452b2407a1eee1d88505abe1cff8f9e
 ---
-# Eventum: Registrare un contul prin Zapier
+# Eventum: Registrare un contul prin Zapier {#event-register-an-account-via-zapier}
 
 În articolul [Integrarea Ultimate Multisite cu Zapier](zapier.md), am discutat despre cum să folosești Zapier pentru a realiza diferite acțiuni în cadrul Ultimate Multisite, bazându-te pe trigger-uri și evenimente. În acest articol, vom arăta cum poți integra aplicații terțe. Vom folosi Google Sheets ca sursă de date și le vom trimite informațiile către Ultimate Multisite pentru a se înregistra un cont.
 

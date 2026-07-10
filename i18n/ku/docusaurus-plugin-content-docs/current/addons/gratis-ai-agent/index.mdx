@@ -1,0 +1,143 @@
+---
+title: Gratis AI Agent
+sidebar_position: 1
+_i18n_hash: ee53c615357976da81fc901c304598b0
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="gratis-ai-agent" name="Gratis AI Agent" />
+
+# Gratis AI Agent {#gratis-ai-agent}
+
+Gratis AI Agent arîkarekî AI yê xweser ê WordPress e ku dikare bi rêwerzên zimanê xwezayî malperên WordPress ên temam plan bike, ava bike û rêve bibe. Ew komeke rêkûpêk a **şiyanên** pêşkêş dike — kiryarên cuda û ceribandinbar ku agent dikare bang bike — ji rêvebirina naverokê heta taybetkirina pergala sêwiranê. Guhertoya 1.9.0 şiyanên afirandina naverokê, nirxandina rûpelê ya dîtbar bi screenshots ji aliyê client, pênc profîlên agent ên amade, û feature flags ji bo kontrola gihîştinê û brandingê zêde dike.
+
+## Taybetmendiyên Girîng {#key-features}
+
+- **Pergala şiyanên** — katalogeke moduler û firehbar a kiryarên ku agent dikare li ser sazkirina te ya WordPress bang bike
+- **Rêvebirina Naverokê** — nivîs û rûpelan biafirîne (tevî tayînkirina şablonên rûpelê), di yek bangê de çend nivîsan bi komî biafirîne, wêneyên featured saz bike, û formên têkiliyê ava bike
+- **Nirxandina Dîtbar** — screenshots ji rûpelên zindî bigire, rewşên berî/paşê bidûhev bike, û nirxandinek sêwiranê ya bi AI-wê afirandî bistîne ku layout, typography, reng û accessibility digire
+- **Pênc agent ên amade** — Content Writer, Site Builder, Design Studio, Plugin Manager, û Support Assistant; bi rêya Agent Picker di sernavê sohbetê de dikare were guhartin
+- **Feature flags** — toggleên kontrola-gihîştinê û brandingê di Settings → Feature Flags de ji bo sînorkirinên rolê, navkirina white-label, û taybetkirina widget
+- **Rêvebirina Custom Post Type** — cureyên nivîsa taybet tomar bike, lîste bike û jê bibe, bi mayînbûnê di navbera destpêkirinên nû de
+- **Rêvebirina Custom Taxonomy** — taxonomiyên taybet tomar bike, lîste bike û jê bibe, bi mayînbûnê
+- **Şiyanên Pergala Sêwiranê** — CSS a taybet têxe, block patternên bijartî rêve bibe, logoya malperê saz bike, û presetên theme.json bisepîne
+- **Rêvebirina Global Styles** — nirxên theme.json ji bo paletên rengê, typography, navber û hwd. bixwîne û binivîse
+- **Rêvebirina Menuya Navigation** — menuên navigation û tiştên wan bi awayekî programî biafirîne û nû bike
+- **Rêvebirina Options** — options ên WordPress bixwîne û binivîse, bi blocklist a ewlehiyê ya amade ji bo parastina mîhengên girîng
+- **Registry a Şiyanên Sazkirbar** — pakêtên şiyanên zêde bibîne û çalak bike bêyî guhartina pelên bingehîn ên plugin
+- **Orkestrasyona Site Builder v2** — planên çend-gavî yên avakirina malperê bi dîtina plugin, şopandina pêşveçûnê, û başkirina çewtiyan
+- **Fermana benchmark a WP-CLI** — ji rêza fermanê suite a benchmark a şiyana agent bixebitîne ji bo CI û nirxandina modelê
+
+## Pêdivî {#requirements}
+
+- WordPress 6.0 an jor
+- PHP 8.1 an jor
+- WordPress Multisite (network-activated) an sazkirina single-site
+- Pluginek connector a dabînkerê AI ya çalak (Anthropic, OpenAI, an hevaheng)
+
+## Sazkirin {#installation}
+
+1. Pelên plugin bar bike bo `/wp-content/plugins/gratis-ai-agent`
+2. Plugin ji rêya dîmendera **Plugins** di WordPress de çalak bike
+3. Biçe **Gratis AI Agent → Settings** û dabînkerê AI yê xwe girê bide
+4. (Vebijarkî) **Abilities Registry** bigere da ku pakêtên şiyanên zêde saz bikî
+
+## Destpêka Bilez {#quick-start}
+
+Piştî çalakbûnê û girêdana bi dabînkerê AI re, panela **Gratis AI Agent** di sidebar a rêveberiya WordPress de veke. Rêwerzeke zimanê xwezayî binivîse û agent dê gavên pêdivî bi karanîna şiyanên berdest ên xwe plan bike û pêk bîne.
+
+**Mînakên rêwerzan:**
+
+```
+Custom post type ya "Portfolio" bi taxonomy ya "Project Category" biafirîne.
+```
+
+```
+Paleteke rengê ya dark-mode têxe theme û rengê sereke bike #1a1a2e.
+```
+
+```
+Malpereke xwaringehê ava bike bi menuyeke online, forma veqetandinê, û rûpela têkiliyê.
+```
+
+## Kurtenêrîna Şiyanên {#abilities-overview}
+
+Şiyan kiryarên atomîk in ku agent dikare pêk bîne. Her şiyan klaseke PHP ya tomarkirî ye ku schemayekê (parameter û cureyên vegerê) pêşkêş dike ku agent di dema xebitandinê de dixwîne. Şiyan li gorî qadên fonksiyonel kom dibin:
+
+| Qad | Şiyan |
+|---|---|
+| **Rêvebirina Naverokê** | `create_post`, `update_post`, `batch_create_posts`, `set_featured_image`, `create_contact_form` |
+| **Nirxandina Dîtbar** | `capture_screenshot`, `compare_screenshots`, `review_page_design` |
+| **Custom Post Types** | `register_post_type`, `list_post_types`, `delete_post_type` |
+| **Custom Taxonomies** | `register_taxonomy`, `list_taxonomies`, `delete_taxonomy` |
+| **Pergala Sêwiranê** | `inject_custom_css`, `add_block_pattern`, `list_block_patterns`, `set_site_logo`, `apply_theme_json_preset` |
+| **Global Styles** | `get_global_styles`, `set_global_styles`, `reset_global_styles` |
+| **Menuyên Navigation** | `create_menu`, `update_menu`, `add_menu_item`, `remove_menu_item`, `list_menus` |
+| **Rêvebirina Options** | `get_option`, `set_option`, `delete_option`, `list_options` |
+| **Şiyanên Sazkirbar** | `list_available_abilities`, `install_ability`, `recommend_plugin` |
+| **Site Builder** | `create_site_plan`, `execute_site_plan`, `get_plan_progress`, `handle_plan_error` |
+
+Ji bo belgekirina parameteran a temam û mînakên karanînê, li [Referansa Şiyanên](./abilities) binêre.
+
+## WP-CLI {#wp-cli}
+
+Gratis AI Agent malbata fermanên `wp gratis-ai-agent` pê re tîne ji bo xebitandina benchmarkan û rêvebirina şiyanên ji rêza fermanê. Ji bo lîsteya fermanên temam, li [Referansa WP-CLI](./wp-cli) binêre.
+
+```bash
+# Run the full benchmark suite
+wp gratis-ai-agent benchmark
+
+# List installed abilities
+wp gratis-ai-agent abilities list
+
+# Install an ability pack
+wp gratis-ai-agent abilities install <slug>
+```
+
+## Veavakirin {#configuration}
+
+Hemû mîheng di bin **Gratis AI Agent → Settings** de ne di rêveberiya WordPress de:
+
+| Mîheng | Danasîn |
+|---|---|
+| **AI Provider** | Connector a dabînkerê AI ya çalak hilbijêre û veava bike |
+| **Model** | Modela zimanê hilbijêre ku ji bo danişînên agent were bikaranîn |
+| **Max Tokens** | Budceya token ji bo her daxwazê (default 4096) |
+| **Ability Timeout** | Zêdetirîn çirkeyên ku şiyaneke takekesî dikare bixebite (default 30) |
+| **Debug Logging** | Bangên şiyanên û aqilmendiya agent têxe loga debug a WordPress |
+
+## Blocklist a Ewlehiyê ya Rêvebirina Options {#options-management-safety-blocklist}
+
+Hêza rêveberiya vebijarkan blocklistek xwemalî dihewîne ku nahêle agent vebijarkên hestiyar ên WordPress bixwîne an binivîse. Blocklista standard van dihewîne:
+
+- `admin_email`, `blogadmin_email`
+- `siteurl`, `home` (vebijarkên URL — ji bo van amûreke koçberiyê ya taybet bikar bîne)
+- `auth_key`, `secure_auth_key`, `logged_in_key`, `nonce_key` (kilîtên veşartî)
+- `active_plugins`, `template` (çalak kirina plugin/theme — hêzên taybet bikar bîne)
+- Nasnameyên dergehên dayînê û kilîtên API yên ku ji aliyê pluginên sazbuyî ve hatine tomar kirin
+
+Têketinên zêde dikarin bi rêya filtera `gratis_ai_agent_options_blocklist` werin zêdekirin.
+
+## Hook û Filter {#hooks-and-filters}
+
+### Çalakî {#actions}
+
+- `gratis_ai_agent_ability_registered` — piştî ku hêzek tê tomarkirin tê şandin, navê pola hêzê distîne
+- `gratis_ai_agent_plan_started` — dema plana avakirina malperê dest bi bicihanînê dike tê şandin
+- `gratis_ai_agent_plan_completed` — dema planek bi serkeftî diqede tê şandin
+- `gratis_ai_agent_plan_failed` — dema planek rastî çewtiyek neguhêzbar tê tê şandin
+
+### Filter {#filters}
+
+- `gratis_ai_agent_abilities` — berî ku agent wê bar bike, lîsteya hêzên tomarkirî biguherîne
+- `gratis_ai_agent_options_blocklist` — blocklista ewlekariya vebijarkan fireh bike an kêm bike
+- `gratis_ai_agent_benchmark_questions` — pirsên benchmark ên xweser li komika nirxandinê zêde bike
+- `gratis_ai_agent_plan_plugins` — di dema çêkirina plana malperê de lîsteya dîtina pluginan biguherîne
+
+## Piştgirî {#support}
+
+Ji bo piştgiriyê, biçin [ultimatemultisite.com](https://ultimatemultisite.com) an di depoya pluginê de pirsgirêkek vekin.
+
+## Changelog {#changelog}
+
+Ji bo dîroka tevahî ya guhertoyan, li [Changelog](./changelog) binêre.

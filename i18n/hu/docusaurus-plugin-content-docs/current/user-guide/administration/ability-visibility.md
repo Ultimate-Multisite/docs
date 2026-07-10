@@ -3,11 +3,11 @@ title: Képesség láthatósága
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility
+# Ability Visibility {#ability-visibility}
 
 A Superdav AI Agent v1.12.0 bevezeti az **Ability Visibility** (Képesség Láthatósági) szabályozó elemeket, amelyek meghatározzák, mely felületek jelenítik meg adott képességet. Ez lehetővé teszi az adminisztrátorok számára, hogy finomhangolják, hogy mely agent funkciók állnak rendelkezésre a REST API-kon, MCP szervereken, WooCommerce integrációkban és más interfészokon.
 
-## Mi az Ability Visibility?
+## Mi az Ability Visibility? {#what-is-ability-visibility}
 
 Az Ability Visibility egy engedélyezési rendszer, amely szabályozza:
 
@@ -18,9 +18,9 @@ Az Ability Visibility egy engedélyezési rendszer, amely szabályozza:
 
 Minden képességhez egy láthatósági szint társul, amely meghatározza elérhetőségét a különböző felületeken.
 
-## Láthatósági Szintek
+## Láthatósági Szintek {#visibility-levels}
 
-### Public (Könyvelési)
+### Public (Könyvelési) {#public}
 
 Az **Public képességek** mindenhol elérhetők:
 
@@ -32,7 +32,7 @@ Az **Public képességek** mindenhol elérhetők:
 
 Példa: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (Belső)
+### Internal (Belső) {#internal}
 
 Az **Internal képességek** csak a WordPress telepítésének belső részein elérhetők:
 
@@ -43,7 +43,7 @@ Az **Internal képességek** csak a WordPress telepítésének belső részein e
 
 Példa: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (Partneri)
+### Partner (Partneri) {#partner}
 
 Az **Partner képességek** csak a fehérlistázott partnerek számára elérhetők:
 
@@ -54,7 +54,7 @@ Az **Partner képességek** csak a fehérlistázott partnerek számára elérhet
 
 Példa: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (Kiáramolt)
+### Disabled (Kiáramolt) {#disabled}
 
 Az **Disabled képességek** semhol nem elérhetők:
 
@@ -63,15 +63,15 @@ Az **Disabled képességek** semhol nem elérhetők:
 - Nem elérhetők az admin panelokon
 - Hasznos elavult vagy kísérleti képességek esetén
 
-## Ability Visibility Kezelése
+## Ability Visibility Kezelése {#managing-ability-visibility}
 
-### Az Ability Visibility Beállításainak Elérése
+### Az Ability Visibility Beállításainak Elérése {#accessing-ability-visibility-settings}
 
 1. Navigáljon a **WordPress Admin** → **Superdav AI Agent** → **Settings** menüpontra
 2. Kattintson az **Abilities** fülre
 3. Látni fogja az összes telepített képességet, láthatósági szintjükkel együtt
 
-### Képesség Részleteinek Megtekintése
+### Képesség Részleteinek Megtekintése {#viewing-ability-details}
 
 Kattintson bármilyen képességre, hogy lássa:
 
@@ -82,7 +82,7 @@ Kattintson bármilyen képességre, hogy lássa:
 - **Last updated**: Mikor változott utolsó alkalommal a láthatóság
 - **Status**: Recognized vagy Unclassified
 
-### Láthatósági Szintek Megváltoztatása
+### Láthatósági Szintek Megváltoztatása {#changing-visibility-levels}
 
 Egy képesség láthatósága megváltoztatásához:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Tömeges Operációk
+### Tömeges Operációk {#bulk-operations}
 
 Néhány képesség láthatósága megváltoztatása érdekében:
 
@@ -108,11 +108,11 @@ Néhány képesség láthatósága megváltoztatása érdekében:
 2. Válasszon ki egy új láthatósági szintet a tömeges művelet legördülő menüből
 3. Kattintson **Apply** (Alkalmazás)
 
-## Partner Allow-List
+## Partner Allow-List {#partner-allow-list}
 
 A **partner allow-list** szabályozza, hogy mely külső partnerek férhetnek hozzá a Partner szintű képességekhez.
 
-### Partnerek Hozzáadása
+### Partnerek Hozzáadása {#adding-partners}
 
 1. Navigáljon a **Superdav AI Agent** → **Settings** → **Partners** menüpontra
 2. Kattintson **Add Partner** (Partner hozzáadása)
@@ -120,7 +120,7 @@ A **partner allow-list** szabályozza, hogy mely külső partnerek férhetnek ho
 4. Opcionálisan adja hozzá a partner nevét és leírását
 5. Kattintson **Save** (Mentés)
 
-### Képességek Meghatározása Partnereknek
+### Képességek Meghatározása Partnereknek {#assigning-abilities-to-partners}
 
 Egy partner hozzáadása után:
 
@@ -130,7 +130,7 @@ Egy partner hozzáadása után:
 4. Az "Partner allow-list" szekciójában tikozza a partnerek melletti négyzeteket, akiknek hozzáférése kell
 5. Kattintson **Save** (Mentés)
 
-### Partner Hozzáférés Revíziója (Megvonása)
+### Partner Hozzáférés Revíziója (Megvonása) {#revoking-partner-access}
 
 Egy partner hozzáférésének megszüntetéséhez:
 
@@ -140,11 +140,11 @@ Egy partner hozzáférésének megszüntetéséhez:
 
 A partner azonnal elveszíti a hozzáférést az adott képességhez.
 
-## Unclassified Abilities (Nem Osztályozott Képességek)
+## Unclassified Abilities (Nem Osztályozott Képességek) {#unclassified-abilities}
 
 Ha telepít egy harmadik féltől származó képességet, amit a Superdav AI Agent nem ismeri, azt **Unclassified** (Nem Osztályozott) jelölésűként jelöli.
 
-### Adminisztrációs Értesítés az Unclassified Abilities-ről
+### Adminisztrációs Értesítés az Unclassified Abilities-ről {#admin-notice-for-unclassified-abilities}
 
 Látni fogja az adminisztrációs értesítést:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Unclassified Abilities Ellenőrzése
+### Unclassified Abilities Ellenőrzése {#reviewing-unclassified-abilities}
 
 1. Kattintson az **Review Abilities** (Képességek áttekintése) gombra az értesítésben
 2. Minden nem osztályozott képesség esetén láthatja:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Kattintson **Classify** (Osztályozás) gombra, hogy elmentse döntését
 
-### Miért kell Osztályozni az Unclassified Abilities-t?
+### Miért kell Osztályozni az Unclassified Abilities-t? {#why-classify-unclassified-abilities}
 
 Az képességek osztályozása:
 
@@ -187,9 +187,9 @@ Az képességek osztályozása:
 - **Meghetővé teszi funkciókat**: Osztályozás után a képesség elérhetővé válik
 - **Dokumentálja a döntéseket**: A választásai audit célra rögzítve maradnak
 
-## Láthatóság Különböző Felületeken
+## Láthatóság Különböző Felületeken {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 A **Public képességek** elérhetők a REST endpoint-okon keresztül:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal és Partner képességek** nem elérhetők REST API-n keresztül.
 
-### MCP Szerverek
+### MCP Szerverek {#mcp-servers}
 
 A **Public képességek** elérhetők az MCP-n keresztül:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner képességek** csak partner hitelesítéssel elérhetők.
 
-### WooCommerce Integráció
+### WooCommerce Integráció {#woocommerce-integration}
 
 A WooCommerce-hez kapcsolódó **Public képességek** elérhetők:
 
@@ -227,7 +227,7 @@ A WooCommerce-hez kapcsolódó **Public képességek** elérhetők:
 
 **Internal képességek** nem érhetők el WooCommerce-on keresztül.
 
-### Chat Interfész
+### Chat Interfész {#chat-interface}
 
 **Minden képesség** (Public, Internal, Partner) elérhető a chatben, a felhasználói engedélyek függvényében:
 
@@ -235,34 +235,34 @@ A WooCommerce-hez kapcsolódó **Public képességek** elérhetők:
 - A normál felhasználók csak a Public képességeket látják
 - A partnerek látják a Public + Partner képességeket (ha fehérlistázva)
 
-## Biztonsági Javasolt Gyakorlatok
+## Biztonsági Javasolt Gyakorlatok {#security-best-practices}
 
-### Legkisebb Jogok Elv (Principle of Least Privilege)
+### Legkisebb Jogok Elv (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Áállítsa a képességeket a legszigorúbb láthatósági szintre, ami még használatát engeli
 - Használja a Partner láthatóságot a kritikus műveletekhez
 - Áramolassa azokat a képességeket, amelyeket nem használ
 
-### Rendszeres Auditok
+### Rendszeres Auditok {#regular-audits}
 
 - Ellenőrizze a képesség láthatóságát havonta
 - Keressen rá nem osztályozott képességekre
 - Vónja meg a hozzáférést a nem használt partnerekről
 
-### Naplózás és Monitoring
+### Naplózás és Monitoring {#logging-and-monitoring}
 
 - Követje nyomon, mely képességeket használják leginkább
 - Rögzítse a partner hozzáférési mintáit
 - Értesítse az apró eltéréseket a képesség használatában
 
-### Harmadik Féltől Származó Képességek
+### Harmadik Féltől Származó Képességek {#third-party-abilities}
 
 - Ellenőrizze a harmadik féltől származó képességeket, mielőtt aktiválja
 - Osztályozza őket explicit módon
 - Kezdje az Internal vagy Partner láthatósággal
 - Csak alapos ellenőrzés után emelje Public státuszra
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
 **Egy képesség nem látható a listában**
 - Ellenőrizze, hogy a képesség telepítve és aktív állapotban van-e
@@ -285,7 +285,7 @@ A WooCommerce-hez kapcsolódó **Public képességek** elérhetők:
 - Győződjön meg róla, hogy a minősítése elmentődött
 - Ellenőrizze, hogy a képességet biztosító plugin friss verziójú van-e
 
-## Migráció Örökségi Módusból (Legacy Mode)
+## Migráció Örökségi Módusból (Legacy Mode) {#migration-from-legacy-mode}
 
 Ha egy régebbi Superdav AI Agent verziójától frissít:
 
@@ -295,7 +295,7 @@ Ha egy régebbi Superdav AI Agent verziójától frissít:
 
 Látogasson el a **Third-Party Mode Migration** (Harmadik Féltől Származó Módus Migráció) oldalra a részletesebb információkért az alapvető Abilities API integráció felé való átmenetről.
 
-## Következő Lépések
+## Következő Lépések {#next-steps}
 
 Az ability visibility konfigurálása után:
 

@@ -1,124 +1,124 @@
 ---
-title: Enviar emails e comunicados de masas
+title: Envío de correos electrónicos e difusións
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# Enviando Emails e Transmissões (v2)
+# Enviar correos electrónicos e difusións (v2) {#sending-emails-and-broadcasts-v2}
 
-_**NOTA IMPORTANTE: Este artigo refere à versão 2.x do Ultimate Multisite.**_
+_**NOTA IMPORTANTE: Este artigo refírese á versión 2.x de Ultimate Multisite.**_
 
-O Ultimate Multisite vem com uma funcionalidade que lhe permite comunicar com os seus clientes enviando um email a um utilizador específico ou a um grupo de utilizadores, bem como enviar avisos no painel de administração deles para fazer anúncios em massa (broadcasts).
+Ultimate Multisite inclúe unha funcionalidade que che permitirá comunicarte cos teus clientes enviando un correo electrónico a un usuario obxectivo ou a un grupo de usuarios, así como enviar avisos no seu Dashboard de administración para difundir anuncios
 
-## Adicionar avisos de administrador ao painel do cliente com Broadcasts
+## Engadir avisos de administración ao Dashboard dos teus clientes con difusións {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-Usando a funcionalidade de broadcast do Ultimate Multisite, pode adicionar **avisos de administrador** ao painel de administração do subsite do seu utilizador.
+Usando a funcionalidade de difusión de Ultimate Multisite, podes engadir **avisos de administración** ao Dashboard de administración do subsitio do teu usuario.
 
-Isto é extremamente útil se precisar fazer um anúncio, como manutenção do sistema ou oferecer novos produtos ou serviços aos seus utilizadores existentes. É assim que o aviso de administrador aparecer no painel do seu utilizador.
+Isto é extremadamente útil se precisas facer un anuncio como mantemento do sistema ou ofrecer novos produtos ou servizos aos teus usuarios existentes. Así se verá o aviso de administración no Dashboard do teu usuario.
 
-<!-- Screenshot unavailable: Broadcast de aviso de administrador mostrado no painel do subsite do cliente -->
+<!-- Captura de pantalla non dispoñible: aviso de administración de difusión mostrado no Dashboard do subsitio dun cliente -->
 
-Para começar um aviso de administrador, aceda ao painel de administração da sua rede e, no menu **Ultimate Multisite**, encontrará a opção **Broadcasts**.
+Para iniciar un aviso de administración, vai ao Dashboard de administración da túa rede e, baixo o menú **Ultimate Multisite**, atoparás a opción **Difusións**.
 
-![Página de lista de Broadcasts no admin Ultimate Multisite](/img/admin/broadcasts-list.png)
+![Páxina da lista de difusións na administración de Ultimate Multisite](/img/admin/broadcasts-list.png)
 
-Também pode editar broadcasts existentes:
+Tamén podes editar difusións existentes:
 
-![Interface de edição de broadcast](/img/admin/broadcast-edit.png)
+![Interface de edición de difusión](/img/admin/broadcast-edit.png)
 
-A partir desta página, clique no botão **Add Broadcast** (Adicionar Broadcast) no topo.
+Desde esta páxina, fai clic no botón **Engadir difusión** da parte superior.
 
-Isto abrirá a janela modal Add broadcast onde poderá escolher o tipo de broadcast que deseja enviar.
+Isto abrirá a xanela modal Engadir difusión, onde podes escoller que tipo de difusión desexas enviar.
 
-Vá em frente e selecione **Message** (Mensagem), depois clique no botão **Next Step** (Próximo Passo).
+Continúa e selecciona **Mensaxe** e despois fai clic no botón **Seguinte paso**.
 
-![Modal de adicionar broadcast com a opção Message selecionada](/img/admin/broadcast-add-message.png)
+![Modal Engadir difusión coa opción Mensaxe seleccionada](/img/admin/broadcast-add-message.png)
 
-A próxima janela irá pedir-lhe o **Target customer** (Cliente Alvo) ou o **Target product** (Produto Alvo). Note que pode selecionar mais de um utilizador ou mais de um produto.
+A seguinte xanela pedirache o **Cliente de destino** ou o **Produto de destino**. Ten en conta que podes seleccionar máis dun usuario ou máis dun produto.
 
-Para buscar unha conta de usuario ou un producto, hai que empezar a escribir a palabra clave dentro do campo.
+Para buscar unha conta de usuario ou un produto, tes que comezar a escribir a palabra clave dentro do campo.
 
-No campo **Tipo de mensagem**, podes seleccionar o color do aviso. Isto enfatizará a urgencia da túa mensagem.
+Baixo o campo **Tipo de mensaxe**, podes seleccionar a cor do aviso. Isto enfatizará a urxencia da túa mensaxe.
 
-Despois podes clicar en **Próximo paso**.
+Despois podes facer clic en **Seguinte paso**.
 
-![Campos para clientes al vosso público, producto alvo e tipo de mensagem para un envío de mensagem](/img/admin/broadcast-message-targets.png)
+![Campos de clientes de destino, produto de destino e tipo de mensaxe para unha difusión de Mensaxe](/img/admin/broadcast-message-targets.png)
 
-A próxima ventana é onde podes empezar a redactar a túa mensagem introduzindo o asunto e o contenido/mensagem que queres enviar aos usuarios.
+A seguinte xanela é onde podes comezar a redactar a túa mensaxe introducindo o asunto e o contido/mensaxe que desexas difundir aos usuarios.
 
-![Editor do assunto e contenido da mensagem para o paso de creación](/img/admin/broadcast-edit.png)
+![Editor de asunto e contido da mensaxe de difusión no paso de redacción](/img/admin/broadcast-edit.png)
 
-Despois de crear a túa mensagem, podes pulsar o botón **Enviar**.
+Despois de crear a túa mensaxe, podes premer o botón **Enviar**.
 
-E listo. O aviso administrativo debería aparecer inmediatamente no dashboard do vosso usuario.
+E iso é todo. O aviso de administración debería mostrarse inmediatamente no Dashboard do teu usuario.
 
-## Enviar emails aos vosso clientes
+## Enviar correos electrónicos aos teus clientes {#send-emails-to-your-customers}
 
-Usando a función de broadcast de Ultimate Multisite, podes enviar un email aos vosso usuarios. Tendes a opción de enviar o email só a usuarios específicos ou de almejar un grupo de usuarios específico basándose no producto ou plano ao que están suscritos.
+Usando a funcionalidade de difusión de Ultimate Multisite, podes enviar un correo electrónico aos teus usuarios. Tes a opción de enviar o correo electrónico só a usuarios específicos ou dirixilo a un grupo de usuarios específico segundo o produto ou plan ao que estean subscritos.
 
-Para empezar un broadcast de email, diríxase ao seu dashboard de administrador da rede e, no menú Ultimate Multisite, encontrará a opción Broadcast.
+Para iniciar unha difusión por correo electrónico, vai ao Dashboard de administración da túa rede e, baixo o menú Ultimate Multisite, atoparás a opción Difusión.
 
-![Páxina de lista de broadcasts usada como punto de partida para un broadcast de email](/img/admin/broadcasts-list.png)
+![Páxina da lista de difusións usada como punto de partida para unha difusión por correo electrónico](/img/admin/broadcasts-list.png)
 
-De esta páxina, pulsa o botón **Añadir broadcast** na parte superior.
+Desde esta páxina, fai clic no botón **Engadir difusión** da parte superior.
 
-Isto abrirá a ventana modal Añadir broadcast onde podes escoller que tipo de broadcast queres enviar. Decide e selecciona **Email**, despois pulsa o botón **Próximo paso**.
+Isto abrirá a xanela modal Engadir difusión, onde podes escoller que tipo de difusión desexas enviar. Continúa e selecciona **Correo electrónico** e despois fai clic no botón **Seguinte paso**.
 
-![Ventana modal para añadir broadcast con a opción Email seleccionada](/img/admin/broadcast-add-email.png)
+![Modal Engadir difusión coa opción Correo electrónico seleccionada](/img/admin/broadcast-add-email.png)
 
-A próxima ventana te pedirá que elijas o **Cliente alvo** ou o **Producto alvo**. Nota que podes seleccionar máis de un usuario ou máis de un producto.
+A seguinte xanela pedirache o **Cliente de destino** ou o **Produto de destino**. Ten en conta que podes seleccionar máis dun usuario ou máis dun produto.
 
-Para buscar unha conta de usuario ou un producto, hai que empezar a escribir a palabra clave dentro do campo.
+Para buscar unha conta de usuario ou un produto, tes que comezar a escribir a palabra clave dentro do campo.
 
-Una vez que seleccionas o teu público al que queres enviar a información, podes clicar en **Next Step** (Pró paso).
+Unha vez seleccionado o teu público obxectivo, podes facer clic en **Seguinte paso**.
 
-![Selección de clientes e produto alvo para un envío por email](/img/admin/broadcast-email-targets.png)
+![Selección de clientes de destino e produto de destino para unha difusión por correo electrónico](/img/admin/broadcast-email-targets.png)
 
-A próxima ventana é onde podes empezar a redactar o teu email introduzindo o asunto e o contenido/mensaxe que queres enviar aos usuarios.
+A seguinte xanela é onde podes comezar a redactar o teu correo electrónico introducindo o asunto e o contido/mensaxe que desexas enviar aos usuarios.
 
-<!-- Screenshot unavailable: Editor de asunto e contenido do envío por email na fase de composición -->
+<!-- Captura de pantalla non dispoñible: editor de asunto e contido da difusión por correo electrónico no paso de redacción -->
 
-Tras crear a mensaxe, podes pulsar o botón **Send** (Enviar).
+Despois de crear a túa mensaxe, podes premer o botón **Enviar**.
 
-E así é fácil enviar un email aos teus usuarios utilizando a función de broadcast.
+E así de doado é enviar un correo electrónico aos teus usuarios finais usando a funcionalidade de difusión.
 
-## Emails do sistema
+## Correos electrónicos do sistema {#system-emails}
 
-Os emails do sistema en Ultimate Multisite son esas **notificacións automáticas** que o sistema envía despois de ciertas accións como o rexistro, o pagamento, a mapeo de dominios, etc. Estes emails poden ser editados ou modificados desde as configuración de Ultimate Multisite. Tamén virá con unha función que te permitirá reiniciar e importar configuración existente de outra instalación de Ultimate Multisite.
+Os correos electrónicos do sistema en Ultimate Multisite son aquelas **notificacións automáticas** enviadas polo sistema despois de certas accións como rexistro, pagamento, mapeamento de dominio, etc. Estes correos electrónicos pódense editar ou modificar desde a configuración de Ultimate Multisite. Tamén inclúe unha funcionalidade que che permitirá restablecer e importar configuracións existentes desde outra instalación de Ultimate Multisite.
 
-### Reiniciar e Importar
+### Restablecemento e importación {#resetting--importing}
 
-As novas versións de Ultimate Multisite, así como os add-ons, poden e virán rexistrando novos emails de vez en tanto.
+As novas versións de Ultimate Multisite, así como os complementos, poden rexistrar e rexistrarán novos correos electrónicos de cando en vez.
 
-Para evitar conflitos ou outros problemas, **non incluiremos as novas plantillas de email como Emails do sistema na súa instalación automáticamente**, a menos que sexan cruciais para o funcionamento correcto dun determinado recurso.
+Para evitar conflitos e outros problemas, **non engadiremos automaticamente os novos modelos de correo electrónico como Correos electrónicos do sistema na túa instalación** , a menos que sexan cruciais para o funcionamento correcto dunha funcionalidade determinada.
 
-Non obstante, os super administradores e agentes poden importar estes emails recién rexistrados vía o *importer tool*. Aquela proseso creará un novo email do sistema con o contenido e a configuración da nova plantilla de email, permitindo ao super administrador hacer as modificacións que deseen ou deixalos como están.
+Porén, os superadministradores e axentes poden importar estes correos electrónicos recentemente rexistrados mediante a ferramenta de importación. Ese proceso creará un novo correo electrónico do sistema co contido e a configuración do novo modelo de correo electrónico, permitindo ao superadministrador facer as modificacións que queira ou mantelo tal como está.
 
-#### Como importar emails do sistema
+#### Como importar correos electrónicos do sistema {#how-to-import-system-emails}
 
-Vaya á pá, ve a página de Configuración do Ultimate Multisite e diríxase à aba **Emails**.
+Vai á túa páxina de configuración de Ultimate Multisite e diríxete á lapela **Correos electrónicos**.
 
-![Aba Emails nas configuración do Ultimate Multisite mostrando a sección System Emails](/img/config/settings-emails-tab.png)
+![Lapela Correos electrónicos na configuración de Ultimate Multisite mostrando a sección Correos electrónicos do sistema](/img/config/settings-emails-tab.png)
 
-Despois, na barra lateral, clica no botón **Customize System Emails** (Personalizar Emails).
+Despois, na barra lateral, fai clic no botón **Personalizar correos electrónicos do sistema**.
 
-<!-- Screenshot unavailable: Botón Customize System Emails na panel lateral de System Emails -->
+<!-- Captura de pantalla non dispoñible: botón Personalizar correos electrónicos do sistema no panel lateral de Correos electrónicos do sistema -->
 
-Na página de System Emails, verás o botón de acción **Reset & Import** (Restablecer e Importar) no topo. Clicar neste botón abrirá a ventana modal de importación e restablecimiento.
+Na páxina Correos electrónicos do sistema, verás o botón de acción **Restablecer e importar** na parte superior. Ao facer clic nese botón debería abrirse a xanela modal de importación e restablecemento.
 
-![Botón Reset or Import na página admin de System Emails](/img/admin/system-emails-reset-import.png)
+![Botón de acción Restablecer ou importar na páxina de administración de Correos electrónicos do sistema](/img/admin/system-emails-reset-import.png)
 
-Despois, podes activar as opción **Import Emails** (Importar Emails) para ver que emails do sistema están dispoñibles para ser importados.
+Despois, podes alternar as opcións de Importar correos electrónicos para ver que correos electrónicos do sistema están dispoñibles para importar.
 
-<!-- Screenshot unavailable: Modal de Reset e Import con as opción Import Emails expandidas -->
+<!-- Captura de pantalla non dispoñible: modal Reset and Import coas opcións de Import Emails expandidas -->
 
-#### Restablecer System Emails
+#### Restablecemento dos correos electrónicos do sistema {#reseting-system-emails}
 
-Outras veces, darás a cabo das moitas que fizeste a unha determinada plantilla de email non te funcionan máis e querrás restablecela ao seu **estado predefinido**.
+Outras veces, decataraste de que os cambios que fixeches nun determinado modelo de correo electrónico xa non che funcionan e quererás restablecelo ao seu **estado predeterminado**.
 
-Nai tales casos, tes dúas opción: podes simplemente deletrear o email do sistema e importalo de volta (usando as instrucións anteriores) - o que borrará as métricas de envío e outras cousas, o que torna este método o menos preferido.
+Nestes casos, tes dúas opcións: podes simplemente eliminar o correo electrónico do sistema e importalo de novo (usando as instrucións anteriores), o que borrará as métricas de envío e outras cousas, polo que este método é o menos recomendable.
 
-Ou podes usar a **Reset & Import tool** (Herramienta de Restablecer e Importar) para restablecer esa plantilla de email.
+Ou podes usar a **ferramenta Reset & Import** para restablecer ese modelo de correo electrónico.
 
-Para restablecer unha plantilla de email, podes seguir os pasos anteriores ata que chegas á ferramenta Reset & Import, e despois, activa a opción **Reset** (Restablecer) e selecciona os emails que queres restaurar ao seu contido predefinido.
+Para restablecer un modelo de correo electrónico, podes seguir os pasos anteriores ata chegares á ferramenta Reset & Import e, despois, activar a opción **Reset** e seleccionar os correos electrónicos que queres restablecer ao seu contido predeterminado.
 
-<!-- Screenshot unavailable: Modal de Reset e Import con as opción Reset Emails expandidas -->
+<!-- Captura de pantalla non dispoñible: modal Reset and Import coas opcións de Reset Emails expandidas -->

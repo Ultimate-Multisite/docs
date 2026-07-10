@@ -1,0 +1,101 @@
+---
+title: Saidi eksportija
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Saidi eksportija {#site-exporter}
+
+## Sisu {#content}
+
+Mõistame vajadust saada liigutada alam-saite oma võrgus ühe saidi paigaldusse ja vastupidi, kui teie klient otsustab oma veebisaidi migreerida. Saidi eksportija ja importija lisamoodul muudab selle ülesande lihtsamaks. See tööriist ekspordib ja impordib saite zip-failide abil, mis võivad toimida ka varukoopiana.
+
+## Funktsioonid {#features}
+
+* Ekspordi ja impordi saite
+
+* Lihtsasti kasutatav liides
+
+* Loo saidi varukoopia
+
+## Dokumentatsioon {#documentation}
+**Kuidas saiti eksportida ja importida**
+
+## Paigaldamine {#installation}
+
+1. Laadige **ultimate-multisite-site-exporter** üles kataloogi **/wp-content/plugins/**
+2. Aktiveerige lisamoodul WordPressi menüü **Pluginad** kaudu
+3. Järgige samm-sammulist viisardit, et lisamoodul seadistada
+
+## Kasutusjuhend {#usage-guide}
+
+Ultimate Multisite abil saate eksportida saidi oma võrgust või importida saidi oma mitme saidi või ühe saidi paigaldusse.
+
+Protsessi alustamiseks minge meie lisamoodulite lehele ja paigaldage Ultimate Multisite: Saidi eksportija ja importija lisamoodul.![Lisamoodulite leht](/img/admin/addons-page.png)
+
+![Lisamoodulite leht paigaldamise valikuga](/img/admin/addons-page.png)
+
+Minge oma pluginate lehele ja klõpsake äsja paigaldatud lisamooduli **Aktiveeri võrgus**.<!-- Ekraanipilt pole saadaval: WP pluginate leht, kus on näha saidi eksportija lisamooduli nupp Aktiveeri võrgus -->
+
+Valiku **Eksport ja import** leiate vasakul asuvast Ultimate Multisite menüüst.
+
+<!-- Ekraanipilt pole saadaval: Ultimate Multisite menüü, kus on näha valik Eksport ja import -->
+
+## Kuidas saiti eksportida {#how-to-export-a-site}
+
+Saidi eksportimiseks oma võrgust minge Ultimate Multisite menüüs valikusse **Eksport ja import** ning klõpsake vahekaardil **Ekspordi saidid** nuppu **Genereeri uus saidi eksport**.
+
+<!-- Ekraanipilt pole saadaval: vahekaart Ekspordi saidid nupuga Genereeri uus saidi eksport -->
+
+Otsige sait, mida soovite eksportida, ja valige üksused, mida soovite eksporditud faili lisada. Saate lisada teemasid, lisamooduleid ja üleslaadimisi. Kui teie sait on liiga suur, saate valida ekspordiprotsessi käivitamise taustal.<!-- Ekraanipilt pole saadaval: saidi ekspordi valikud saidi otsingu ning teemade/lisamoodulite/üleslaadimiste märkeruutudega -->
+
+Klõpsake nuppu **Ekspordi sait**. Teie eksporditud sait on saadaval loendis **Olemasolevad ekspordid**. Faili allalaadimiseks klõpsake nuppu **Laadi ZIP alla**. Ekspordi ZIP-failid sisaldavad isekäivituvat `index.php` ja faili `readme.txt`, nii et neid saab paigaldada värskesse hosti ilma eraldi importija lisamoodulit esmalt paigaldamata.<!-- Ekraanipilt pole saadaval: olemasolevate eksportide loend nupuga Laadi ZIP alla -->
+
+## Kuidas eksportida kogu võrku {#how-to-export-the-whole-network}
+
+Kõigi alam-saitide koos eksportimiseks minge Ultimate Multisite menüüs valikusse **Eksport ja import** ning kasutage ekspordiekraanil valikut **Võrgu eksport**. Loodud arhiiv sisaldab kõiki alam-saite ühes ZIP-failis hosti migreerimiste, ettevalmistuskeskkonna taastamiste või võrgutaseme varukoopiate jaoks.
+
+Võrgu ekspordid võivad olla suured. Käivitage need siis, kui liiklust on vähe, ja veenduge, et serveril oleks arhiivi ning kõigi kaasatud üleslaadimiste, lisamoodulite ja teemade jaoks piisavalt salvestusruumi.
+
+## Kuidas saiti importida {#how-to-import-a-site}
+
+Saidi importimiseks minge vahekaardile **Impordi sait** ja laadige üles selle saidi .zip-fail, mida soovite importida. Võite muuta URL-i uueks või jätta vana URL-i alles, jättes välja tühjaks. Samuti saate märkida ruudu, et kustutada .zip-fail pärast importi oma paigaldusest. Seejärel klõpsake **Alusta importi**.
+
+<!-- Ekraanipilt pole saadaval: vahekaart Impordi sait zip-üleslaadimisvälja ja nupuga Alusta importi -->
+
+Protsess võib veidi aega võtta. Näete importija all olevas loendis ootel importi.
+
+<!-- Ekraanipilt pole saadaval: ootel import importija all olevas loendis -->
+
+Protsessi saate peatada, klõpsates **Tühista import**.
+
+<!-- Ekraanipilt pole saadaval: nupp Tühista import importimisprotsessi peatamiseks -->
+
+Pärast protsessi lõppu on teie sait juba teie võrgus saadaval.
+
+## Kuidas importida saiti ühes paigalduses {#how-to-import-a-site-on-a-single-install}
+
+Saidi importimiseks oma ühte paigaldusse paigaldage ja aktiveerige esmalt importija oma saidil. Selle allalaadimise lingi leiate eksportija vahekaardilt.
+
+<!-- Ekraanipilt pole saadaval: eksportija vahekaart lingiga ühe saidi importija allalaadimiseks -->
+
+Importija leiate vasakul asuvast menüüst **Tööriistad**, alamüksuse **Eksport ja import** alt.
+
+<!-- Ekraanipilt pole saadaval: ühe saidi Tööriistade menüü, kus on näha alam-menüü Eksport ja import -->
+
+Laadige üles selle saidi .zip-fail, mida soovite importida. Võite muuta URL-i uueks või jätta vana URL-i alles, jättes välja tühjaks. Samuti saate märkida ruudu, et kustutada .zip-fail pärast importi oma paigaldusest. Seejärel klõpsake **Alusta importi**.
+
+<!-- Ekraanipilt pole saadaval: ühe saidi importimisvorm zip-üleslaadimise ja nupuga Alusta importi -->
+
+Protsess võib veidi aega võtta. Näete importija all olevas loendis ootel importi.
+
+<!-- Ekraanipilt pole saadaval: ühe saidi ootel import loendis -->
+
+Protsessi saate peatada, klõpsates **Tühista import**.
+
+<!-- Ekraanipilt pole saadaval: nupp Tühista import importimisprotsessi peatamiseks -->
+
+Pärast protsessi lõppu asendatakse teie sait saidiga, mille äsja importisite.

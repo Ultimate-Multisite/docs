@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: integrácia Mailchimp
+
+Integrujte svoju sieť Multisite Ultimate so svojím Mailchimp. Môžete prepojiť určité plány so zoznamami Mailchimp a automaticky pridávať odberateľov do týchto zoznamov pri registrácii.
+
+## Inštalácia {#installation}
+
+1. Nahrajte 'ultimate-multisite-mailchimp' do adresára '/wp-content/plugins/'
+2. Aktivujte plugin cez menu 'Plugins' vo svojom WordPress Network Admin
+
+## Návod na používanie {#usage-guide}
+
+Synchronizácia e-mailov odberateľov s vašimi zoznamami MailChimp je s naším doplnkom Ultimate Multisite: MailChimp Integration naozaj jednoduchá. Tento návod vám pomôže všetko nastaviť!
+
+## Získanie API kľúča {#getting-an-api-key}
+
+Skôr než sa pustíme do rôznych dostupných nastavení, potrebujeme MailChimp API kľúč. Ten umožní Ultimate Multisite komunikovať s MailChimp API na načítanie zoznamov, skupín a pridávanie e-mailových adries do týchto zoznamov a skupín, keď sa používatelia zaregistrujú.
+
+Postupujte podľa tohto návodu a získajte vlastný MailChimp API kľúč: [O API kľúčoch | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Pridajte svoj MailChimp API kľúč v_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Režim integrácie {#integration-mode}
+
+Doplnok MailChimp Integration ponúka dva „režimy integrácie“, čo znamená, že existujú dva rôzne spôsoby, ako môžete doplnok použiť na synchronizáciu e-mailových adries.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dva režimy integrácie pre väčšiu flexibilitu!_
+
+### Režim 1: Viaceré zoznamy {#mode-1-multiple-lists}
+
+Predvolený režim využíva **viaceré zoznamy**. Tento režim vám umožní vybrať viacero zoznamov MailChimp pre každý z plánov. Je to najlepšia možnosť, ak segmentujete používateľov do rôznych zoznamov.
+
+Napríklad predpokladajme, že vo svojom Account MailChimp máte 3 rôzne zoznamy: **Newsletter** , **Plán A** , a **Plán B**. Chcete, aby všetci používatelia bez ohľadu na svoj plán boli zahrnutí aj v zozname Newsletter, aby nezmeškali vaše aktualizácie.
+
+Aby ste to dosiahli, môžete použiť režim viacerých zoznamov a pridať oba zoznamy **Newsletter** a **Plán A** do nastavení MailChimp pre Plán A a **Newsletter** a **Plán B** do nastavení MailChimp pre Plán B.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Vyberte predvolené zoznamy pre nové účty a pre zrušené účty_
+
+### Režim 2: Jeden zoznam + viaceré skupiny {#mode-2-single-list--multiple-groups}
+
+MailChimp vám umožňuje segmentovať zoznam na menšie skupiny používateľov nazývané **skupiny**. To vám dáva väčšiu kontrolu, pretože môžete odoslať kampaň konkrétnej podmnožine svojich odberateľov bez toho, aby ste museli v MailChimp vytvárať viacero kópií rovnakej kampane (čo následne sťažuje analýzu metrík tejto kampane).
+
+Napríklad môžete mať jeden zoznam s názvom **Moji odberatelia siete,** a v ňom skupiny pre **Plán A** a **Plán B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Vyberte predvolené zoznamy a skupiny, ak používate režim integrácie „jeden zoznam + viaceré skupiny“_
+
+## Predvolené zoznamy a skupiny {#default-lists-and-groups}
+
+Po výbere režimu integrácie, ktorý dáva pre váš konkrétny prípad použitia najväčší zmysel, je čas vybrať predvolené zoznamy (a skupiny, v závislosti od režimu). Predvolený zoznam sa použije vtedy, keď daný plán nemá vybraný konkrétny zoznam.
+
+Môžete vybrať aj predvolený zoznam pre zrušené účty. Vždy, keď používateľ ukončí svoje predplatné a odstráni svoj účet z vašej siete, jeho e-mailová adresa sa presunie do zoznamu nastaveného pre zrušené účty.
+
+## Povolenie dvojitého odberu {#enabling-double-subscription}
+
+Na tej istej stránke nastavení budete môcť povoliť **dvojitý odber**. Táto možnosť pridá používateľa do vybraného predvoleného zoznamu AJ do zoznamu vybraného pre plán daného používateľa. Ak táto možnosť nie je povolená, používateľ bude pridaný iba do zoznamu vybraného pre plán používateľa. Ak pre daný plán nie je nastavený žiadny zoznam, používateľ bude pridaný do vybraného predvoleného zoznamu.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Môžete mať používateľov prihlásených na odber predvoleného zoznamu aj zoznamu plánu pri registrácii_
+
+## Výber zoznamov a skupín pre každý z plánov {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Prejdite na svoje **plány** a vyberte plán, ktorý chcete upraviť. Všimnite si, že v meta-boxe **Pokročilé možnosti** bude dostupná nová karta s názvom MailChimp.
+
+Na tejto karte budete môcť pre daný plán vybrať viacero zoznamov alebo jeden zoznam a viacero skupín (v závislosti od režimu integrácie).
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Vyberte zoznamy a skupiny, ktoré chcete použiť pre každý zo svojich plánov_
+
+Keď sa nový používateľ zaregistruje do tohto plánu, jeho e-mailová adresa bude pridaná do vybraných zoznamov a skupín!

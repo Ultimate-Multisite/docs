@@ -3,11 +3,11 @@ title: Tema-aware skills
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Tema-Aware Skills
+# Tema-Aware Skills {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 lanzatzen da hiru eskila berriak, tema-aware (tema-eriketa-du) eskila hauek, zehatz WordPress tema aktiboan aukeratzen dira. Hau eskilak ematen dute espezialbidegitura garrantzitsu eta funtzionalitate batzuk, diseinuaren eta funtzioiaduen bidez onartutakoa.
 
-## Zer da Theme-Aware Skills?
+## Zer da Theme-Aware Skills? {#what-are-theme-aware-skills}
 
 Theme-aware skills hauek da ezarrituta dagoen jakintza-baseak eta tool set-ak (herri-erakundeak) zehatz AI asistentua, diseinuaren WordPress tema aktiboan aukeratzen duenean. Tema aldatu duenean, asistentiaren eskila hauek otomatikoki onartzen dira — manualean konfiguratzea ez da beharrezkoa.
 
@@ -18,9 +18,9 @@ Ezkila batekin jarraitzen da:
 - **Onartzeko oinarriak (Customization examples)** — common task-ek bitarteko kode-snippet eta konfiguratura patternak
 - **Best practices** — tema erariketa eta workflow-erako aukera batzuk
 
-## Disponible Theme-Aware Skills
+## Disponible Theme-Aware Skills {#available-theme-aware-skills}
 
-### Block Themes
+### Block Themes {#block-themes}
 
 **Erakusten da:** WordPress block-based (Full Site Editing) arkitektura erabiltzen dituzten tema hauek.
 
@@ -34,7 +34,7 @@ Block Themes eskila hau ematen du:
 
 **Automatiko onartzen daenean:** Tema aktiboak block theme bat da (block-templates funtzioia suportatzen du).
 
-### Classic Themes
+### Classic Themes {#classic-themes}
 
 **Erakusten da:** WordPress tema tradizionalak, PHP templates eta classic editor erabiltzen dituztenak.
 
@@ -52,7 +52,7 @@ Tema hierarkia eta template tags ezberditate
 
 **Automatikoa aktiboa da horrek:** Aktiboa tema irudial (non-block) tema bat izan zen.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Erabilera:** Advanced block-based design-ek Kadence Blocks plugin erabiltzen duten webstei.
 
@@ -66,7 +66,7 @@ Kadence Blocks skill-ek erantzunak ematen du:
 
 **Automatikoa aktiboa da horrek:** Kadence Blocks pluginak websteian aktibo dagoenean.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Erabilera:** Block-based design eta customizazio-ek Kadence theme erabiltzen duten webstei.
 
@@ -80,15 +80,15 @@ Kadence Theme skill-ek erantzunak ematen du:
 
 **Automatikoa aktiboa da horrek:** Kadence theme-ak aktibo tema dela.
 
-## Skill-ek onartzen jakin nahi duzu?
+## Skill-ek onartzen jakin nahi duzu? {#how-skills-are-selected}
 
 Asistenta lekuan dagoen tema eta plugin-ek automatikoki identifikatzen du. Eguna zehar, eskaera baten bitartean, ematuta skill bat erabilera, asistentia kontekstuan automaticoki sartzen da. Skill-ek manuelki aktiboa edo aldatu behar du ez da.
 
-### Multiple Skills
+### Multiple Skills {#multiple-skills}
 
 Ez dago, non bilatzen ari zaitzen duzun skill bat edo gehiago (adibidez, Kadence Blocks eta Kadence Theme duzun), asistentia da guztizko skill-ekara dago eta horiek batzuketik gizarteak emateko gure gizarteak ere referentzia egiten dute.
 
-### Tema-larpenak (Switching Themes)
+### Tema-larpenak (Switching Themes) {#switching-themes}
 
 Aktiboa tema aldatzen duenean, asistentiaren eskaintzen dituen skill-ekara automatikoki update dira iragazlearen lehen mensegunean. Adibidez:
 
@@ -96,11 +96,11 @@ Aktiboa tema aldatzen duenean, asistentiaren eskaintzen dituen skill-ekara autom
 2. Klasikoa tema (classic theme) gai aldatu duzu.
 3. Lehen mensegunean, **Classic Themes** skill-a automatikoki laden dira, eta **Block Themes** skill-a ez dago erabilera.
 
-## Tema-larpenak Skill-ekoa Erabilizten
+## Tema-larpenak Skill-ekoa Erabilizten {#using-theme-aware-skills}
 
 Tema-larpenak skill bat erabilira, gai-eragilearen (chat interface) lehen mensegunean zer egin nahi duzu esaltzea saja. Asistentia da automatikoki eskerazko skill-aren gizarteak referentzia egiten du.
 
-### Eguneko Promentak (Example Prompts)
+### Eguneko Promentak (Example Prompts) {#example-prompts}
 
 **Block Themes-erik:**
 > "Background imagen bat eta testu sentratu bat emateko hero section bat block patterns erabiliz sortu."

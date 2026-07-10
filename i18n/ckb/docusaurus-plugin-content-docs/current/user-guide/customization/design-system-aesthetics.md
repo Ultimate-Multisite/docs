@@ -3,11 +3,11 @@ title: توانای ئەستێتی سیستەمی دیزاین
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# مهارەتی جمالیات سیستمی طراحی (Design System Aesthetics Skill)
+# مهارەتی جمالیات سیستمی طراحی (Design System Aesthetics Skill) {#design-system-aesthetics-skill}
 
 **مهارت جمالیات سیستمی طراحی** یک رویکرد راهنما برای اصلاح هویت بصری سایت شماست. این مهارت به شما کمک می‌کند تصمیمات سازگاری در مورد تایپوگرافی، رنگ، فاصله و توکن‌های حرکت را که سیستم طراحی شما را تعریف می‌کنند، بگیرید.
 
-## جمالیات سیستمی طراحی چیست؟
+## جمالیات سیستمی طراحی چیست؟ {#what-is-design-system-aesthetics}
 
 جمالیات سیستمی طراحی یک مهارت ساختاریافته است که موارد زیر را پوشش می‌دهد:
 
@@ -20,9 +20,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 
 این تصمیمات در فایل `theme.json` قالب شما ثبت می‌شوند و یک سیستم بصری منسجم ایجاد می‌کنند.
 
-## چرا از جمالیات سیستمی طراحی استفاده کنیم؟
+## چرا از جمالیات سیستمی طراحی استفاده کنیم؟ {#why-use-design-system-aesthetics}
 
-### سازگاری (Consistency)
+### سازگاری (Consistency) {#consistency}
 
 یک سیستم طراحی تضمین می‌کند:
 
@@ -31,7 +31,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - فاصله‌ها الگوی قابل پیش‌بینی داشته باشند
 - انیمیشن‌ها با هم هماهنگ به نظر برسند
 
-### کارایی (Efficiency)
+### کارایی (Efficiency) {#efficiency}
 
 به جای اینکه تصمیمات طراحی را صفحه به صفحه بگیرید، شما:
 
@@ -39,7 +39,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - از همه جا از آن‌ها استفاده می‌کنید
 - با تغییر یک مقدار، به‌صورت سراسری به‌روزرسانی می‌کنید
 
-### انعطاف‌پذیری (Flexibility)
+### انعطاف‌پذیری (Flexibility) {#flexibility}
 
 شما می‌توانید:
 
@@ -47,9 +47,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - با زیبایی‌های مختلف آزمایش کنید
 - در عین تکامل، سازگاری برند را حفظ کنید
 
-## فعال کردن مهارت جمالیات سیستمی طراحی
+## فعال کردن مهارت جمالیات سیستمی طراحی {#triggering-the-design-system-aesthetics-skill}
 
-### فعال‌سازی دستی (Manual Activation)
+### فعال‌سازی دستی (Manual Activation) {#manual-activation}
 
 شما می‌توانید این مهارت را در هر زمان شروع کنید:
 
@@ -69,7 +69,7 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 "من رو از تصمیمات سیستم طراحی راهنمایی کن"
 ```
 
-### پیشنهادات خودکار (Automatic Suggestions)
+### پیشنهادات خودکار (Automatic Suggestions) {#automatic-suggestions}
 
 نمایندگان ممکن است پیشنهاد استفاده از این مهارت را در مواقعی بدهند که شما:
 
@@ -78,9 +78,9 @@ _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 - بخواهید سازگاری بصری خود را بهبود ببخشید
 - برای راه‌اندازی سایت خود آماده می‌شوید
 
-## پروسيسى دیزاین سیستیم
+## پروسيسى دیزاین سیستیم {#the-design-system-aesthetics-process}
 
-### پله ١: تایپوگرافی
+### پله ١: تایپوگرافی {#step-1-typography}
 
 Agent دەپرسێت لەسەر هەڵبژاردنی فۆنتەکانت:
 
@@ -110,7 +110,7 @@ Agent دەپرسێت لەسەر هەڵبژاردنی فۆنتەکانت:
 - **پێکهاتەی وزە (Weight scale)**: قورسایی فۆنتەکان (ڕگولار، ناوەند، قورس، هتد).
 - **ارتفاعی خاڵان (Line height)**: فاصلەکردن لە نێوان ڕیزەکان بۆ ئاسانخوێندنەوە.
 
-### پله ٢: پالتۆی ڕەنگەکان
+### پله ٢: پالتۆی ڕەنگەکان {#step-2-color-palette}
 
 ```
 بۆ دیاریکردنی پالتۆی ڕەنگەکانت، بیگەین.
@@ -140,7 +140,7 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 - ڕەنگەکانی مەزن (سەرکەوتن، ئاگاداری، هەڵە).
 - حالەتەکانی دەستپێکردن (Hover) و چالاکبوون (Active states).
 
-### پله ٣: فاصلەکان (Spacing)
+### پله ٣: فاصلەکان (Spacing) {#step-3-spacing}
 
 چەند فضا و فضای کافی چقدر می‌خواید؟
 
@@ -160,7 +160,7 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 - مقیاس: xs، sm، md، lg، xl، 2xl
 - مقادیر خاص برای پدینگ، مارجین و گپ (Gap)
 
-### مرحله ۴: حاشیه و سایه‌ها (Borders and Shadows)
+### مرحله ۴: حاشیه و سایه‌ها (Borders and Shadows) {#step-4-borders-and-shadows}
 
 ```
 عمق بصری و تعریف عناصر:
@@ -183,7 +183,7 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 - توکن‌های سایه برای سطوح ارتفاع (Elevation levels)
 - توکن‌های عرض حاشیه (Border width tokens)
 
-### مرحله ۵: حرکت و انیمیشن (Motion and Animation)
+### مرحله ۵: حرکت و انیمیشن (Motion and Animation) {#step-5-motion-and-animation}
 
 ```
 سایت شما وقتی تعاملی باشد چه حسی داشته باشد؟
@@ -205,9 +205,9 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 - توابع نرم‌سازی (Easing functions): ease-in، ease-out، ease-in-out
 - فریم‌های کلید انیمیشن برای تعاملات متداول
 
-## اعمال زیبایی‌شناسی سیستم طراحی (Applying Design System Aesthetics)
+## اعمال زیبایی‌شناسی سیستم طراحی (Applying Design System Aesthetics) {#applying-design-system-aesthetics}
 
-### اعمال خودکار (Automatic Application)
+### اعمال خودکار (Automatic Application) {#automatic-application}
 
 بعد از اتمام این مهارت، عامل موارد زیر را انجام می‌دهد:
 
@@ -216,7 +216,7 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 ۳. استایل‌های بلوک‌ها را برای مطابقت با سیستم جدید بازسازی می‌کند
 ۴. قالب به‌روز شده را فعال می‌سازد
 
-### اعمال دستی (Manual Application)
+### اعمال دستی (Manual Application) {#manual-application}
 
 شما همچنین می‌توانید مستقیماً فایل `theme.json` را ویرایش کنید:
 
@@ -255,9 +255,9 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 }
 ```
 
-## Naqshandina Sistemê Dizanîna We
+## Naqshandina Sistemê Dizanîna We {#viewing-your-design-system}
 
-### Porsê Agentê (Ask the Agent)
+### Porsê Agentê (Ask the Agent) {#ask-the-agent}
 
 ```
 "Têrê sistemê dizanîna min derxistin"
@@ -271,13 +271,13 @@ Agent پالتۆی تەواو دروست دەکات کە لەخۆ دەگرێت:
 
 Agentê dê tipografiya, rengên, distansiyên û hûrguliyên din yên we derxistin.
 
-### Li Berandina theme.json
+### Li Berandina theme.json {#view-themejson}
 
 `/wp-content/themes/[theme-name]/theme.json` ji bernameyek tekstualê dibin biftur ku definjisyonên raw (raw) yên tokenan derxistin binihin.
 
-## Günberûnên Sistemê Dizanîna We
+## Günberûnên Sistemê Dizanîna We {#updating-your-design-system}
 
-### Günberûnên Xûr
+### Günberûnên Xûr {#quick-updates}
 
 Ji agentê xwesta gelek gelek binivîsîn:
 
@@ -297,7 +297,7 @@ Ji agentê xwesta gelek gelek binivîsîn:
 "Fonta başê ji bo serif (serif) gelek bike"
 ```
 
-### Redizanînê Pûr
+### Redizanînê Pûr {#full-redesign}
 
 Hûrguliyên Sistemê Dizanîna xwe derxistin:
 
@@ -307,7 +307,7 @@ Hûrguliyên Sistemê Dizanîna xwe derxistin:
 
 Ev dê we li ser hemû porsê pêşvebûn re ji navaqên werin destpê dikate, li ser qiîmatên te yên berê.
 
-### Günberûnên Partsîyel
+### Günberûnên Partsîyel {#partial-updates}
 
 Porsên taybetî guhberin:
 
@@ -315,15 +315,15 @@ Porsên taybetî guhberin:
 "Têrê rengan derxistin, hemû din we bi xwe bide"
 ```
 
-## Pişterên Bestarî yên Sistemê Dizanîna
+## Pişterên Bestarî yên Sistemê Dizanîna {#design-system-best-practices}
 
-### Hêzbarî (Consistency)
+### Hêzbarî (Consistency) {#consistency-1}
 
 - Ji cihê hene li hemû jay hatine ji tokenên yaweyên we bistînin.
 - Rengên an jî pîlên taybetî nê şan bikin.
 - Ji bo vekirina qiîmatên rast ne, ji bo referansa tokenan bistînin.
 
-### Navendin (Naming)
+### Navendin (Naming) {#naming}
 
 Navên ronahî û semantic li stranên xwe bistînin:
 
@@ -333,7 +333,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Pêşveberî (Scalability)
+### Pêşveberî (Scalability) {#scalability}
 
 سیستم خود را برای مقیاس‌پذیری طراحی کنید:
 
@@ -341,15 +341,15 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - مقیاس‌ها (xs، sm، md، lg، xl) ایجاد کنید به جای مقادیر دلخواه
 - برای افزودنی‌های آینده برنامه‌ریزی کنید
 
-### مستندسازی سیستم طراحی خود:
+### مستندسازی سیستم طراحی خود: {#documentation}
 
 - چرا رنگ‌های خاص را انتخاب کردید
 - از هر توکن چه زمانی استفاده کنید
 - استثناها و موارد حاشیه‌ای
 
-## الگوهای رایج سیستم طراحی
+## الگوهای رایج سیستم طراحی {#common-design-system-patterns}
 
-### مینیمال مدرن
+### مینیمال مدرن {#modern-minimalist}
 
 - تایپوگرافی بدون سریف (Inter، Helvetica)
 - پالت رنگی محدود (۲-۳ رنگ)
@@ -357,7 +357,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - سایه‌های ظریف
 - انیمیشن‌های روان و سریع
 
-### گرم و دوستانه
+### گرم و دوستانه {#warm-and-friendly}
 
 - ترکیبی از فونت‌های سریف و سریف
 - پالت رنگی گرم (نارنجی، خاکستری گرم)
@@ -365,7 +365,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - سایه‌های نرم
 - انیمیشن‌های بازیگوشانه
 
-### حرفه‌ای شرکتی
+### حرفه‌ای شرکتی {#professional-corporate}
 
 - بدون سریف تمیز (Roboto، Open Sans)
 - پالت خنثی با یک رنگ تاکیدی
@@ -373,7 +373,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - حداقل سایه‌ها
 - انتقال‌های ظریف
 
-### خلاق و جسورانه
+### خلاق و جسورانه {#creative-and-bold}
 
 - تایپوگرافی متمایز
 - پالت رنگی جسورانه
@@ -381,7 +381,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - سایه‌های قوی
 - انیمیشن‌های قابل توجه
 
-## عیب‌یابی
+## عیب‌یابی {#troubleshooting}
 
 **تغییرات سیستم طراحی من نمایش داده نمی‌شود**
 - کش مرورگر را پاک کنید
@@ -399,7 +399,7 @@ Navên ronahî û semantic li stranên xwe bistînin:
 - دستی فایل theme.json را به مقادیر قبلی ویرایش کنید
 - با انتخاب‌های متفاوت، مهارت را دوباره اجرا کنید
 
-## مراحل بعدی
+## مراحل بعدی {#next-steps}
 
 پس از تعریف سیستم طراحی خود:
 

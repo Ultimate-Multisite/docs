@@ -1,32 +1,32 @@
 ---
-title: REST API Overzicht
+title: REST API-overzicht
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API Referentie
+# REST API-referentie {#rest-api-reference}
 
-## Basisconfiguratie
+## Basisconfiguratie {#base-configuration}
 
-**Basis-URL:** `{site_url}/wp-json/wu/v2/`  
-**Authenticatie:** API-sleutel & Geheim (HTTP Basic Auth of URL-parameters)
+**Basis-URL:** `{site_url}/wp-json/wu/v2/`
+**Authenticatie:** API-sleutel en Secret (HTTP Basic Auth of URL-parameters)
 
-## Authenticatie
+## Authenticatie {#authentication}
 
-### API inschakelen
+### API inschakelen {#enable-api}
 ```php
-// API inschakelen in Ultimate Multisite-instellingen of programmatisch
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API-gegevens ophalen
+### API-gegevens ophalen {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### Authenticatiemethoden
+### Authenticatiemethoden {#authentication-methods}
 
-**HTTP Basic Auth (Aanbevolen):**
+**HTTP Basic Auth (aanbevolen):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
@@ -36,9 +36,9 @@ curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## Kernpunten
+## Kern-eindpunten {#core-endpoints}
 
-### 1. Klanten API
+### 1. Klanten-API {#1-customers-api}
 
 **Basisroute:** `/customers`
 
@@ -47,7 +47,7 @@ curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=y
 GET /wu/v2/customers
 ```
 
-**Enkel klant ophalen**
+**Eén klant ophalen**
 ```http
 GET /wu/v2/customers/{id}
 ```
@@ -82,11 +82,11 @@ Content-Type: application/json
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. Sites API
+### 2. Websites-API {#2-sites-api}
 
 **Basisroute:** `/sites`
 
-**Site aanmaken**
+**Website aanmaken**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-### 3. Lidmaatschappen API
+### 3. Lidmaatschappen-API {#3-memberships-api}
 
 **Basisroute:** `/memberships`
 
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 ```
 
-### 4. Producten API
+### 4. Producten-API {#4-products-api}
 
 **Basisroute:** `/products`
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 GET /wu/v2/products
 ```
 
-### 5. Betalingen API
+### 5. Betalingen-API {#5-payments-api}
 
 **Basisroute:** `/payments`
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 }
 ```
 
-### 6. Domeinen API
+### 6. Domeinen-API {#6-domains-api}
 
 **Basisroute:** `/domains`
 
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## Registratie-eindpunt
+## Registratie-eindpunt {#registration-endpoint}
 
-De `/register`-eindpunt biedt een volledige afreken-/registratieflow:
+Het `/register`-eindpunt biedt een volledige afreken-/registratiestroom:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**Respons:**
+**Reactie:**
 ```json
 {
     "customer": { ... },
@@ -209,33 +209,66 @@ Content-Type: application/json
 }
 ```
 
-## Foutresponsen
+## Soevereine tenant-eindpunten {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 voegt soevereine tenant-REST-dekking toe voor integraties die geïsoleerde tenants inrichten, inspecteren of verifiëren.
+
+De exacte request-payload hangt af van de ingeschakelde hostmogelijkheid, maar integraties moeten rekening houden met deze eindpuntgroepen:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+Gebruik het bootstrap-eindpunt om het tenantregister, de database, het bestandssysteem en de routingstatus voor te bereiden. Gebruik de migratiestatus- en verificatie-eindpunten voordat je productieverkeer omschakelt. Gebruik het verwijderingseindpunt voor soevereine teardown, zodat databasegegevens worden verwijderd via de opschoonflow van de add-on.
+
+Typische reacties voor migratiestatus omvatten:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+Behandel `ready: false` als een blokkade vóór de lancering. Controleer de verificatiedetails, los het probleem met de database-hostbinding, wachtrij, gebruikersprovisioning of routing op en probeer de verificatie vervolgens opnieuw.
+
+## Foutreacties {#error-responses}
 
 ```json
 {
     "code": "wu_rest_invalid_parameter",
-    "message": "Ongeldige parameterwaarde",
+    "message": "Invalid parameter value",
     "data": {
         "status": 400,
         "params": {
-            "email": "Ongeldig e-mailadresformaat"
+            "email": "Invalid email format"
         }
     }
 }
 ```
 
-## Pagina- en filteren
+## Paginering en filtering {#pagination-and-filtering}
 
-**Query-parameters:**
+**Queryparameters:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-Veelvoorkomende parameters:
-- `per_page` - Items per pagina (standaard: 20, maximaal: 100)
-- `page` - Pagina nummer
-- `search` - Zoeksleutel
+Veelgebruikte parameters:
+- `per_page` - Items per pagina (standaard: 20, max: 100)
+- `page` - Paginanummer
+- `search` - Zoekterm
 - `orderby` - Sorteerveld
-- `order` - Sorteer richting (asc/desc)
-- `status` - Filter op status
-- `date_created` - Filter op datum bereik
+- `order` - Sorteerrichting (asc/desc)
+- `status` - Filteren op status
+- `date_created` - Filteren op datumbereik

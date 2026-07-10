@@ -3,7 +3,7 @@ title: Injektor reklám
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Inserovanie reklám na vašej sieti s Ultimate Multisite: Ad Injector
+# Inserovanie reklám na vašej sieti s Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector je **bezplatné doplnok**, ktorý vám dá nástroje na inzerovanie na svojich plannách priamo z ich editovacej stránky.
 
@@ -35,7 +35,7 @@ Môžete tiež zahrnúť reklamy do hlavičky (header) administratívnych strán
 
 _Prejdite na možnosť Kód reklamy v Admin Panel, ak chcete zobrazovať reklamy v západnej časti (back-end) vášho používateľa._
 
-### Viac ako inzerovanie
+### Viac ako inzerovanie {#beyond-advertising}
 
 Môžete tiež použiť Ultimate Multisite: Ad Injector na poskytnutie podpory vysokým plánom.
 

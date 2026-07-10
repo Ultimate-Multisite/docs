@@ -3,9 +3,9 @@ title: Ultimate AI Connector for WebLLM Changelog
 sidebar_position: 99
 _i18n_hash: da117fc30b104eada947892d417a2899
 ---
-# Ultimate AI Connector for WebLLM 変更履歴
+# Ultimate AI Connector for WebLLM 変更履歴 {#ultimate-ai-connector-for-webllm-changelog}
 
-## Version 1.1.0 — 2026-04-09 リリース
+## Version 1.1.0 — 2026-04-09 リリース {#version-110--released-on-2026-04-09}
 
 * **新機能:** 管理バーのステータスインジケーター付きフローティングチャットウィジェット — ログインしているユーザーであれば、フロントエンドからブラウザ側のLLMに直接プロンプトを送信できるようになりました。
 * **新機能:** SharedWorkerランタイム — MLCエンジンがSharedWorker内で動作するようになったため、複数のタブがGPUセッションを奪い合うことなく、1つのセッションを共有できます。
@@ -17,4 +17,4 @@ _i18n_hash: da117fc30b104eada947892d417a2899
 * **修正:** WebLLMをwpai_preferred_text_modelsフィルターにフック — これにより、AI Experiments機能がモデルを設定している場合にブラウザエンジンにルーティングされるようになりました。
 * **改善:** エンドツーエンドのテスト中に、キャッシュバスター、コンテンツ正規化、ハードウェア参照に関する修正が適用されました。
 
-## Version 1.0.0 — 初期リリース
+## Version 1.0.0 — 初期リリース {#version-100--initial-release}

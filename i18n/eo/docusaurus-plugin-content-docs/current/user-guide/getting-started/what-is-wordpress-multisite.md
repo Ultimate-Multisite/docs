@@ -3,7 +3,7 @@ title: Kio estas WordPress Multisite?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# Kion estas WordPress Multisite?
+# Kion estas WordPress Multisite? {#what-is-wordpress-multisite}
 
 En sia ĝia core, WordPress donas funkcion nomitan ‘Multisite’, kiu rastas sin origino al 2010 kiam WordPress 3.0 elanĝis. Desde ti, ĝi ricevis plurajn reviziojn orientajn al introdukti novajn funkciojn kaj plibonigi sekurecon.
 
@@ -11,7 +11,7 @@ En esence, WordPress multisite povas esti pensita kiel ĉi tio: Un Universitato 
 
 ##
 
-## Kion Tio Esakite estas WordPress Multisite?
+## Kion Tio Esakite estas WordPress Multisite? {#what-exactly-is-wordpress-multisite}
 
 Multisite estas funkcio de WordPress, kiu permesas plurajn sitiojn partoprenki en unu instalita WordPress-instanco. Kiam multisite aktivas, la originala WordPress-sito konvertiĝas por subteni tio, kion oni usualne nomas **rete de sitioj**.
 
@@ -23,7 +23,7 @@ Tio signifas, ke aktualizoj de WordPress, temoj kaj pluginoj bezonas fariĝi nur
 
 ##
 
-## Subdomajno aŭ Subdirektorio?
+## Subdomajno aŭ Subdirektorio? {#subdomain-or-subdirectory}
 
 Ekzistas du modoj por diri WordPress multisite – kaj vi bezonas elekti unu el ili pri konverti via regularan WordPress-instaliron en multisite instaliron:
 
@@ -49,7 +49,7 @@ Un de la plej gravaj problemoj pri la kreado modo subdomain estas SSL-koverado (
 
 Kontrastante al subdirektora modo, subsitoj sur retoj bazitaj sur subdomain estas konsiderata de motorkontrolloj kiel apartaj vortodoj, kio signifas, ke la enhavo prezentita sur unu subsudo ne interafiktas la SEO performon de aliaj subsitoj en maniero niro.
 
-## La Super Administrado (The Super Admin)
+## La Super Administrado (The Super Admin) {#the-super-admin}
 
 Unaj unuj-sito WordPress instalacioj permesas al vi aĉeti nefinan talon de uzantoj kaj doni ti uzantoj apartajn uzanto-rolojn kun apartajn permesojn.
 
@@ -63,7 +63,7 @@ Pluginoj kaj temoj povas esti instalitaj aŭ neinstalitaj de la network admin pa
 
 _Note: kiel vi si, dass jemanden zu Ihrem Netzwerk einladen und ihm Super-Admin-Status geben, diesem Benutzer die volle Kontrolle über Ihr Netzwerk gibt. Als Beispiel können andere Super-Admins Ihren Super-Admin-Status sogar entfernen und Sie effektiv von Ihrem eigenen Netzwerk-Admin-Panel ausschließen. Um Ultimate Multisite Kunden eine feingranulare Kontrolle darüber zu ermöglichen, was zusätzliche Super-Admins tun dürfen, haben wir ein Add-on namens Support Agents. Dieses Add-on ermöglicht es Ihnen, eine weitere Art von Benutzer – einen Agenten – mit nur den Berechtigungen zu erstellen, die er für seine Aufgaben im Netzwerk benötigt._
 
-## Was zwischen Subsites geteilt wird und was nicht
+## Was zwischen Subsites geteilt wird und was nicht {#what-is-shared-among-subsites-and-what-is-not}
 
 Wie scho erwähnt, einer der wichtigsten Vorteile von WordPress Multisite ist, dass alle Subsites dieselben Konfigurationen, Kern-Dateien, Themes, Plugins, WordPress-Kern-Dateien usw. teilen.
 
@@ -75,7 +75,7 @@ Es gibt jedoch Elemente, die auf Basis jeder einzelnen Subsite gut begrenzt sind
 
 \- Die meisten Datenbanktabellen werden für jede Subsite erstellt, was bedeutet, dass Beiträge, Kommentare, Seiten, Einstellungen usw. für jede Subsite begrenzt sind.
 
-## Benutzerverwaltung in WordPress Multisite
+## Benutzerverwaltung in WordPress Multisite {#user-management-on-wordpress-multisite}
 
 Ein heikles Thema bei WordPress Multisite ist die Benutzerverwaltung. Die WordPress-Benutzer-Tabelle ist eine von wenigen Tabellen, die zwischen allen Subsites geteilt werden.
 
@@ -99,7 +99,7 @@ _Notu: Ni komprenas, ki malbone tio povas esti, dependante de via uzado, tiel Ul
 
 Eĉ se la tabelo de uzantoj estas partaj, uzantoj povas esti aĉetitaj kaj ellevitaj de subsitaj administrajnoj aŭ superadministrado, kaj ili eĉ povas havi malsamajn uzanto-rolojn sur malsamaj subsitaj.
 
-## Performereco konsideroj
+## Performereco konsideroj {#performance-considerations}
 
 WordPress multisite estas vere potenca pri la nulo de sitoj, kiujn ĝi povas suporti. Tion povas testigi per fakton, ke [WordPress.com](https://WordPress.com), Edublogs kaj Campuspress estas ĉiuj multisite-bazitaj servoj, kaj ĉiu hosto tenias milojn de sitoj.
 

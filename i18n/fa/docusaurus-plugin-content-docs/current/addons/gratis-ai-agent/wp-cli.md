@@ -3,11 +3,11 @@ title: مرجع WP-CLI
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# مرجع WP-CLI
+# مرجع WP-CLI {#wp-cli-reference}
 
 افزونه Gratis AI Agent مجموعه‌ای از دستورات `wp gratis-ai-agent` را برای بنچمارک‌گیری از Agent، مدیریت قابلیت‌ها (abilities)، و استعلام وضعیت Agent از خط فرمان فراهم می‌کند. تمام دستورات نیاز به WP-CLI نسخه ۲.۰ یا بالاتر دارند.
 
-## نصب (Installation)
+## نصب (Installation) {#installation}
 
 دستورات WP-CLI به طور خودکار زمانی که افزونه فعال شود، ثبت می‌شوند. برای تأیید، از دستور زیر استفاده کنید:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 این دستور مجموعه بنچمارک قابلیت‌های Agent را اجرا می‌کند — مجموعه‌ای از پرامپت‌های پیچیده و چند مرحله‌ای که تمام قابلیت‌های موجود را آزمایش می‌کنند. از این دستور برای ارزیابی عملکرد مدل، مقایسه ارائه‌دهندگان AI، یا اعتبارسنجی بسته‌های قابلیت قبل از استقرار در محیط عملیاتی (production) استفاده کنید.
 
-### خلاصه (Synopsis)
+### خلاصه (Synopsis) {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### گزینه‌ها (Options)
+### گزینه‌ها (Options) {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | فرمت خروجی: `table` (پیش‌فرض)، `json`، `csv` |
 | `--save` | ذخیره نتایج بنچمارک در دیتابیس برای مقایسه تاریخی |
 
-### مثال‌ها (Examples)
+### مثال‌ها (Examples) {#examples}
 
 اجرای کل مجموعه بنچمارک با ارائه‌دهنده و مدل فعلی:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### خروجی (Output)
+### خروجی (Output) {#output}
 
 بنچمارک، یک ردیف برای هر سؤال با ستون‌های زیر خروجی می‌دهد:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### سؤالات بنچمارک (Benchmark Questions)
+### سؤالات بنچمارک (Benchmark Questions) {#benchmark-questions}
 
 مجموعه پیش‌فرض شامل موارد زیر است:
 
@@ -95,11 +95,11 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 این دستور مسئول مدیریت قابلیت‌ها و بسته‌های قابلیت نصب شده است.
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 تمام قابلیت‌های ثبت شده، منبع آن‌ها (core یا pack)، و وضعیت فعلی آن‌ها را لیست می‌کند.
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 یک بسته قابلیت را از رجیستری دانلود و فعال می‌کند.
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 یک قابلیت خاص را بدون حذف بسته، غیرفعال می‌کند. این کار برای محدود کردن دامنه Agent در یک سایت خاص مفید است.
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 قابلیتی که قبلاً غیرفعال شده بود را دوباره فعال می‌کند.
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 پیکربندی فعلی Agent و وضعیت اتصال آن را نمایش می‌دهد.
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 فعالیت‌های اخیر Agent را از لاگ دیباگ (debug log) نمایش می‌دهد.
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 حالت Agent را بازنشانی می‌کند: CSS تزریق شده را پاک می‌کند، CPTها و تاکسونومی‌های ثبت شده توسط Agent را حذف می‌کند، استایل‌های سراسری را ریست می‌کند، و کش تنظیمات (options cache) Agent را خالی می‌سازد. افزونه یا تنظیمات آن را حذف نمی‌کند.
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 تمام دستورات در صورت موفقیت، خروج کد `0` دارند. کدهای خروج غیر صفر:
 

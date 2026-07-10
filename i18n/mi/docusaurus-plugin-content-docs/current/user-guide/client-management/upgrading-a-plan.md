@@ -6,7 +6,7 @@ title: |-
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# Whakamutunga i Heata (v2)
+# Whakamutunga i Heata (v2) {#upgrading-a-plan-v2}
 
 _**NOTE WHAKANGA: Ko tēnei whakamārama he tino mō Ultimate Multisite v2.x.**_
 
@@ -44,7 +44,7 @@ Iha i te checkout (checkout) ko, ka puta ake i te whai whakaaro hou (new product
 
 ##
 
-## Ngā Wāhanga Whakamutunga me Whakawhanaungatanga (Upgrade and Downgrade Paths)
+## Ngā Wāhanga Whakamutunga me Whakawhanaungatanga (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 I roto i roto i ngā mea e pēnei ana, ka puta ake i te tab **Up & Downgrades**. Ko te oneto (option) tūroa i tēnei tab he ingoa ingoa **Plan Group**.
 

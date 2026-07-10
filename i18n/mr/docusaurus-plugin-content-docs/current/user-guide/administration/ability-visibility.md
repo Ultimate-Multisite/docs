@@ -3,11 +3,11 @@ title: क्षमता दृश्यता
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Ability Visibility (क्षमता दृश्यमानता)
+# Ability Visibility (क्षमता दृश्यमानता) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 मध्ये **Ability Visibility** नियंत्रणे (controls) जोडली आहेत, जी ठरवतात की कोणकोणत्या इंटरफेसवर कोणती क्षमता (ability) उपलब्ध होईल. यामुळे प्रशासकांना (administrators) हे बारीकपणे सेट करता येते की कोणत्या agent क्षमता REST APIs, MCP servers, WooCommerce integrations आणि इतर इंटरफेसद्वारे उपलब्ध असतील.
 
-## What is Ability Visibility? (Ability Visibility म्हणजे काय?)
+## What is Ability Visibility? (Ability Visibility म्हणजे काय?) {#what-is-ability-visibility}
 
 Ability Visibility हे एक परमिशन सिस्टीम आहे जे खालील गोष्टी नियंत्रित करते:
 
@@ -18,9 +18,9 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 
 प्रत्येक क्षमतेसोबत एक visibility level जोडलेला असतो, जो वेगवेगळ्या इंटरफेसवर त्याची उपलब्धता ठरवतो.
 
-## Visibility Levels (दृश्यमानता स्तर)
+## Visibility Levels (दृश्यमानता स्तर) {#visibility-levels}
 
-### Public (सार्वजनिक)
+### Public (सार्वजनिक) {#public}
 
 **Public abilities** सर्वत्र उपलब्ध असतात:
 
@@ -32,7 +32,7 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 
 उदाहरणार्थ: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal (अंतर्गत)
+### Internal (अंतर्गत) {#internal}
 
 **Internal abilities** फक्त तुमच्या WordPress installation मध्ये उपलब्ध असतात:
 
@@ -43,7 +43,7 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 
 उदाहरणार्थ: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner (भागीदार)
+### Partner (भागीदार) {#partner}
 
 **Partner abilities** फक्त whitelisted (यादीत असलेल्या) भागीदारांसाठी उपलब्ध असतात:
 
@@ -54,7 +54,7 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 
 उदाहरणार्थ: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled (निष्क्रिय)
+### Disabled (निष्क्रिय) {#disabled}
 
 **Disabled abilities** कुठेही उपलब्ध नसतात:
 
@@ -63,15 +63,15 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 - admin panels मध्ये उपलब्ध नाहीत
 - जुन्या किंवा प्रायोगिक (experimental) क्षमतांसाठी उपयुक्त
 
-## Managing Ability Visibility (Ability Visibility व्यवस्थापित करणे)
+## Managing Ability Visibility (Ability Visibility व्यवस्थापित करणे) {#managing-ability-visibility}
 
-### Accessing Ability Visibility Settings (Ability Visibility सेटिंग्जमध्ये प्रवेश करणे)
+### Accessing Ability Visibility Settings (Ability Visibility सेटिंग्जमध्ये प्रवेश करणे) {#accessing-ability-visibility-settings}
 
 1. **WordPress Admin** → **Superdav AI Agent** → **Settings** वर जा.
 2. **Abilities** टॅबवर क्लिक करा.
 3. तुम्हाला सर्व स्थापित (installed) क्षमतांची यादी आणि त्यांचे visibility levels दिसतील.
 
-### Viewing Ability Details (Ability तपशील पाहणे)
+### Viewing Ability Details (Ability तपशील पाहणे) {#viewing-ability-details}
 
 कोणत्याही क्षमतेवर क्लिक करून तुम्ही खालील गोष्टी पाहू शकता:
 
@@ -82,7 +82,7 @@ Ability Visibility हे एक परमिशन सिस्टीम आह
 - **Last updated**: शेवटचे कधी बदलले गेले
 - **Status**: Recognized (ओळखली गेली) की Unclassified (वर्गीकृत नाही)
 
-### Changing Visibility Levels (visibility स्तर बदलणे)
+### Changing Visibility Levels (visibility स्तर बदलणे) {#changing-visibility-levels}
 
 एखाद्या क्षमतेची visibility बदलायची असल्यास:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Bulk Operations (सामूहिक कार्ये)
+### Bulk Operations (सामूहिक कार्ये) {#bulk-operations}
 
 अनेक क्षमतांची visibility बदलायची असल्यास:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. bulk action ड्रॉपडाउनमधून नवीन visibility level निवडा.
 3. **Apply** वर क्लिक करा.
 
-## Partner Allow-List (भागीदार अनुमती यादी)
+## Partner Allow-List (भागीदार अनुमती यादी) {#partner-allow-list}
 
 **partner allow-list** हे नियंत्रित करते की कोणत्या बाह्य भागीदारांना Partner-level abilities ॲक्सेस करता येतील.
 
-### Adding Partners (भागीदार जोडणे)
+### Adding Partners (भागीदार जोडणे) {#adding-partners}
 
 1. **Superdav AI Agent** → **Settings** → **Partners** वर जा.
 2. **Add Partner** वर क्लिक करा.
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. पर्यायीरित्या भागीदाराचे नाव आणि वर्णन जोडा.
 5. **Save** वर क्लिक करा.
 
-### Assigning Abilities to Partners (भागीदारांना क्षमता नियुक्त करणे)
+### Assigning Abilities to Partners (भागीदारांना क्षमता नियुक्त करणे) {#assigning-abilities-to-partners}
 
 भागीदार जोडल्यानंतर:
 
@@ -130,7 +130,7 @@ Partner allow-list: partner-123, partner-456
 4. "Partner allow-list" विभागात, ज्या भागीदारांना ॲक्सेस हवा आहे, त्यांच्या बॉक्सवर टिक करा.
 5. **Save** वर क्लिक करा.
 
-### Revoking Partner Access (भागीदाराचा ॲक्सेस रद्द करणे)
+### Revoking Partner Access (भागीदाराचा ॲक्सेस रद्द करणे) {#revoking-partner-access}
 
 भागीदाराचा ॲक्सेस काढून टाकायचा असल्यास:
 
@@ -140,11 +140,11 @@ Partner allow-list: partner-123, partner-456
 
 भागीदाराचा त्या क्षमतेवरील ॲक्सेस त्वरित काढून घेतला जाईल.
 
-## Unclassified Abilities (वर्गीकृत नसलेल्या क्षमता)
+## Unclassified Abilities (वर्गीकृत नसलेल्या क्षमता) {#unclassified-abilities}
 
 जेव्हा तुम्ही एखादी third-party ability install करता जी Superdav AI Agent ला ओळखता येत नाही, तेव्हा तिला **Unclassified** म्हणून मार्क केले जाते.
 
-### Admin Notice for Unclassified Abilities (Unclassified Abilities साठी Admin सूचना)
+### Admin Notice for Unclassified Abilities (Unclassified Abilities साठी Admin सूचना) {#admin-notice-for-unclassified-abilities}
 
 तुम्हाला एक admin notice दिसेल:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Reviewing Unclassified Abilities (Unclassified Abilities तपासणे)
+### Reviewing Unclassified Abilities (Unclassified Abilities तपासणे) {#reviewing-unclassified-abilities}
 
 1. सूचनांमधील **Review Abilities** वर क्लिक करा.
 2. प्रत्येक unclassified ability साठी, तुम्हाला खालील गोष्टी दिसतील:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. तुमचा निर्णय सेव्ह करण्यासाठी **Classify** वर क्लिक करा.
 
-### Why Classify Unclassified Abilities? (Unclassified Abilities का वर्गीकृत करावे?)
+### Why Classify Unclassified Abilities? (Unclassified Abilities का वर्गीकृत करावे?) {#why-classify-unclassified-abilities}
 
 क्षमता वर्गीकृत करण्याचे फायदे:
 
@@ -187,9 +187,9 @@ Please review and classify them.
 - **Enables features**: एकदा वर्गीकृत झाल्यावर, ती क्षमता उपलब्ध होते.
 - **Documents decisions**: तुमच्या निवडी ऑडिट उद्देशांसाठी लॉग केल्या जातात.
 
-## Visibility in Different Surfaces (वेगवेगळ्या इंटरफेसवर दृश्यमानता)
+## Visibility in Different Surfaces (वेगवेगळ्या इंटरफेसवर दृश्यमानता) {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Public abilities** REST endpoints द्वारे उपलब्ध असतात:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Internal and Partner abilities** REST API द्वारे उपलब्ध नसतात.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Public abilities** MCP द्वारे उपलब्ध असतात:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Partner abilities** फक्त partner credentials सह उपलब्ध असतात.
 
-### WooCommerce Integration (WooCommerce एकत्रीकरण)
+### WooCommerce Integration (WooCommerce एकत्रीकरण) {#woocommerce-integration}
 
 WooCommerce शी संबंधित **Public abilities** उपलब्ध असतात:
 
@@ -227,7 +227,7 @@ WooCommerce शी संबंधित **Public abilities** उपलब्ध
 
 **Internal abilities** WooCommerce ला एक्सपोज होत नाहीत.
 
-### Chat Interface (चॅट इंटरफेस)
+### Chat Interface (चॅट इंटरफेस) {#chat-interface}
 
 **सर्व abilities** (Public, Internal, Partner) वापरकर्त्याच्या परवानग्यांवर अवलंबून चॅटमध्ये उपलब्ध असतात:
 
@@ -235,34 +235,34 @@ WooCommerce शी संबंधित **Public abilities** उपलब्ध
 - Regular users फक्त Public abilities पाहू शकतात.
 - Partners Public + Partner abilities पाहू शकतात (जर whitelisted असतील).
 
-## Security Best Practices (सुरक्षा सर्वोत्तम पद्धती)
+## Security Best Practices (सुरक्षा सर्वोत्तम पद्धती) {#security-best-practices}
 
-### Principle of Least Privilege (सर्वात कमी विशेषाधिकार तत्त्व)
+### Principle of Least Privilege (सर्वात कमी विशेषाधिकार तत्त्व) {#principle-of-least-privilege}
 
 - क्षमता अशा सर्वात प्रतिबंधात्मक (restrictive) visibility वर सेट करा जी त्यांच्या वापरास परवानगी देते.
 - संवेदनशील कार्यांसाठी Partner visibility वापरा.
 - जी क्षमता वापरत नाही, ती निष्क्रिय करा.
 
-### Regular Audits (नियमित ऑडिट)
+### Regular Audits (नियमित ऑडिट) {#regular-audits}
 
 - दर महिन्याला ability visibility तपासा.
 - unclassified abilities तपासा.
 - न वापरलेल्या भागीदारांचा ॲक्सेस काढून टाका.
 
-### Logging and Monitoring (लॉगिंग आणि निरीक्षण)
+### Logging and Monitoring (लॉगिंग आणि निरीक्षण) {#logging-and-monitoring}
 
 - कोणत्या abilities चा सर्वाधिक वापर होतो, याचे निरीक्षण करा.
 - भागीदारांच्या ॲक्सेस पॅटर्नचा मागोवा घ्या.
 - असामान्य ability वापरासाठी अलर्ट सेट करा.
 
-### Third-Party Abilities (तृतीय-पक्ष क्षमता)
+### Third-Party Abilities (तृतीय-पक्ष क्षमता) {#third-party-abilities}
 
 - सक्षम करण्यापूर्वी third-party abilities तपासा.
 - त्यांना स्पष्टपणे वर्गीकृत करा.
 - Internal किंवा Partner visibility ने सुरुवात करा.
 - फक्त तपासणीनंतर Public मध्ये वाढ करा.
 
-## Troubleshooting (समस्या निवारण)
+## Troubleshooting (समस्या निवारण) {#troubleshooting}
 
 **Ability यादीत दिसत नाही**
 - तपासा की ability install आणि active आहे की नाही.
@@ -285,7 +285,7 @@ WooCommerce शी संबंधित **Public abilities** उपलब्ध
 - तपासा की तुमचे वर्गीकरण सेव्ह झाले आहे की नाही.
 - तपासा की ability देणारे plugin अपडेटेड आहे की नाही.
 
-## Migration from Legacy Mode (Legacy Mode मधून स्थलांतर)
+## Migration from Legacy Mode (Legacy Mode मधून स्थलांतर) {#migration-from-legacy-mode}
 
 जर तुम्ही Superdav AI Agent च्या जुन्या आवृत्तीमधून अपग्रेड करत असाल:
 
@@ -295,7 +295,7 @@ WooCommerce शी संबंधित **Public abilities** उपलब्ध
 
 Native Abilities API integration कडे संक्रमण (transition) करण्यासाठी अधिक तपशीलांसाठी **Third-Party Mode Migration** पहा.
 
-## Next Steps (पुढील पाऊले)
+## Next Steps (पुढील पाऊले) {#next-steps}
 
 ability visibility कॉन्फिगर केल्यानंतर:
 

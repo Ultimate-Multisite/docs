@@ -3,11 +3,11 @@ title: Productos de Dominio y Precios
 sidebar_position: 2
 _i18n_hash: 48757ad5b423db8f169a793b96d7bc71
 ---
-# Productos y precios de dominio
+# Productos y precios de dominio {#domain-products-and-pricing}
 
 Los productos de dominio son la forma en que usted controla los precios, los TLDs, la privacidad WHOIS y la selección de proveedores. Cada producto de dominio es un producto estándar de Ultimate Multisite con una pestaña adicional de **Configuración de dominio** (Domain Settings).
 
-## Creación de un producto de dominio
+## Creación de un producto de dominio {#creating-a-domain-product}
 
 1. Vaya a **Network Admin › Ultimate Multisite › Products**
 2. Haga clic en **Add New**
@@ -17,13 +17,13 @@ Los productos de dominio son la forma en que usted controla los precios, los TLD
 
 Los productos de dominio aparecen con una insignia púrpura de **Domain** en la lista de productos y se pueden filtrar usando la pestaña **Domain Products**.
 
-## Pestaña de configuración de dominio
+## Pestaña de configuración de dominio {#domain-settings-tab}
 
-### Proveedor
+### Proveedor {#provider}
 
 Seleccione qué registrador gestiona el registro para este producto. Por defecto, utiliza el **Default provider** global establecido en la configuración de Domain Seller.
 
-### TLDs compatibles
+### TLDs compatibles {#supported-tlds}
 
 Déjelo en blanco para crear un **producto comodín** (catch-all product) que se aplica a todos los TLDs que no sean cubiertos por otro producto.
 
@@ -31,7 +31,7 @@ Introduzca una lista de TLDs separada por comas (ej. `.com, .net, .org`) para cr
 
 **Cómo funciona la coincidencia de productos:** Cuando un cliente busca un dominio, el complemento selecciona el producto que mejor coincida y sea más específico. Un producto con `.com` en su lista de TLDs tiene prioridad sobre un producto comodín. Si ningún producto específico de TLD coincide, se utiliza el comodín. Si no existen productos, no se muestra la búsqueda de dominio.
 
-### Tipo de margen
+### Tipo de margen {#markup-type}
 
 Tres modos controlan cómo se calcula su precio minorista a partir del costo mayorista:
 
@@ -41,11 +41,11 @@ Tres modos controlan cómo se calcula su precio minorista a partir del costo may
 | **Margen fijo** | Añade una cantidad fija en dólares. Un margen de $5 sobre un dominio de $10 da $15. |
 | **Precio fijo** | Ignora completamente el costo mayorista. Siempre cobra la cantidad que usted ingrese. |
 
-### Precios de introducción
+### Precios de introducción {#introductory-pricing}
 
 Active esta opción para ofrecer un precio de primer año con descuento. Establezca un **Introductory price** (el precio del año 1) separado del **Renewal price** regular (año 2 en adelante). El cliente verá ambos precios mostrados durante el pago para saber qué esperar en la renovación.
 
-### Privacidad WHOIS
+### Privacidad WHOIS {#whois-privacy}
 
 Controla si se ofrece protección de privacidad WHOIS para los dominios registrados a través de este producto.
 
@@ -59,7 +59,7 @@ Para Namecheap, la privacidad WHOIS utiliza WhoisGuard (siempre gratis). Para Op
 
 ---
 
-## Importación y sincronización de TLD
+## Importación y sincronización de TLD {#tld-import-and-sync}
 
 Los productos de dominio muestran precios mayoristas en tiempo real obtenidos del proveedor conectado. Para que esto funcione, los TLDs deben importarse.
 
@@ -70,7 +70,7 @@ Después de una sincronización, vaya a la pestaña de Configuración de dominio
 
 ---
 
-## Renovación automática
+## Renovación automática {#auto-renewal}
 
 Las renovaciones de dominio están vinculadas al estado de membresía del cliente:
 
@@ -90,7 +90,7 @@ IDs de plantillas de correo electrónico para eventos del ciclo de vida del domi
 
 ---
 
-## Administración: Registro manual de dominio
+## Administración: Registro manual de dominio {#admin-manual-domain-registration}
 
 Para registrar un dominio en nombre de un cliente sin que este pase por el proceso de pago:
 

@@ -3,11 +3,11 @@ title: Kasanayan sa Estetika ng Design System
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Kasanayan sa Estetika ng Design System
+# Kasanayan sa Estetika ng Design System {#design-system-aesthetics-skill}
 
 Ang **Design System Aesthetics skill** ay isang gabay na paraan para pagandahin ang visual identity ng iyong site. Tinutulungan ka nitong gumawa ng consistent na desisyon tungkol sa typography, kulay, pagitan (spacing), at motion tokens na siyang nagtatakda ng design system mo.
 
-## Ano ang Design System Aesthetics?
+## Ano ang Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Ang Design System Aesthetics ay isang structured na kasanayan na sumasaklaw sa:
 
@@ -20,9 +20,9 @@ Ang Design System Aesthetics ay isang structured na kasanayan na sumasaklaw sa:
 
 Ang mga desisyong ito ay nakukuha sa `theme.json` file ng iyong theme, na lumilikha ng isang magkakaugnay na visual system.
 
-## Bakit Gamitin ang Design System Aesthetics?
+## Bakit Gamitin ang Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Pagkakapare-pareho (Consistency)
+### Pagkakapare-pareho (Consistency) {#consistency}
 
 Tinitiyak ng isang design system na:
 
@@ -31,7 +31,7 @@ Tinitiyak ng isang design system na:
 - Ang spacing ay sumusunod sa isang predictable na pattern
 - Ang mga animation ay nagbibigay ng iisang pakiramdam
 
-### Kahusayan (Efficiency)
+### Kahusayan (Efficiency) {#efficiency}
 
 Sa halip na gumawa ng design decisions page-by-page, ikaw ay:
 
@@ -39,7 +39,7 @@ Sa halip na gumawa ng design decisions page-by-page, ikaw ay:
 - Inilalapat ito sa lahat ng lugar
 - Nag-u-update nang global sa pamamagitan ng pagbabago ng isang value
 
-### Kakayahang Mag-adjust (Flexibility)
+### Kakayahang Mag-adjust (Flexibility) {#flexibility}
 
 Maaari mong:
 
@@ -47,9 +47,9 @@ Maaari mong:
 - Mag-eksperimento sa iba't ibang aesthetics
 - Mapanatili ang brand consistency habang nagbabago
 
-## Pag-trigger ng Design System Aesthetics Skill
+## Pag-trigger ng Design System Aesthetics Skill {#triggering-the-design-system-aesthetics-skill}
 
-### Manual Activation
+### Manual Activation {#manual-activation}
 
 Maaari mong simulan ang skill anumang oras:
 
@@ -69,7 +69,7 @@ o
 "Guide me through design system decisions"
 ```
 
-### Automatic Suggestions
+### Automatic Suggestions {#automatic-suggestions}
 
 Maaaring magmungkahi ang mga Agents na gamitin ang skill kapag ikaw ay:
 
@@ -78,9 +78,9 @@ Maaaring magmungkahi ang mga Agents na gamitin ang skill kapag ikaw ay:
 - Nais pagandahin ang visual consistency
 - Naghahanda na i-launch ang iyong site
 
-## Ang Proseso ng Design System Aesthetics
+## Ang Proseso ng Design System Aesthetics {#the-design-system-aesthetics-process}
 
-### Step 1: Typography
+### Step 1: Typography {#step-1-typography}
 
 Tatanungin ka ng agent tungkol sa mga font na gusto mo:
 
@@ -110,7 +110,7 @@ Pagkatapos, idedefine ng agent ang:
 - **Weight scale**: Mga font weights (regular, medium, bold, atbp.)
 - **Line height**: Pagitan ng mga linya para sa madaling basahin
 
-### Step 2: Color Palette
+### Step 2: Color Palette {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Lilikha ang agent ng kumpletong palette kasama ang:
 - Semantic colors (success, warning, error)
 - Hover at active states
 
-### Step 3: Spacing
+### Step 3: Spacing {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Idedefine ng agent ang spacing tokens:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specific values para sa padding, margin, gap
 
-### Step 4: Borders and Shadows
+### Step 4: Borders and Shadows {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Lilikha ang agent ng:
 - Shadow tokens para sa mga elevation levels
 - Border width tokens
 
-### Step 5: Motion and Animation
+### Step 5: Motion and Animation {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Idedefine ng agent ang:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes para sa mga karaniwang interaksyon
 
-## Paglalapat ng Design System Aesthetics
+## Paglalapat ng Design System Aesthetics {#applying-design-system-aesthetics}
 
-### Automatic Application
+### Automatic Application {#automatic-application}
 
 Pagkatapos mong kumpletuhin ang skill, ang agent ay:
 
@@ -218,7 +218,7 @@ Pagkatapos mong kumpletuhin ang skill, ang agent ay:
 3. Nagre-regenerate ng block styles para tumugma sa bagong system
 4. Ina-activate ang updated theme
 
-### Manual Application
+### Manual Application {#manual-application}
 
 Maaari mo ring i-edit ang `theme.json` nang direkta:
 
@@ -257,9 +257,9 @@ Maaari mo ring i-edit ang `theme.json` nang direkta:
 }
 ```
 
-## Pagtingin sa Iyong Design System
+## Pagtingin sa Iyong Design System {#viewing-your-design-system}
 
-### Tanungin ang Agent
+### Tanungin ang Agent {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ o
 
 Ipapalabas ng agent ang iyong typography, kulay, spacing, at iba pang tokens.
 
-### View theme.json
+### View theme.json {#view-themejson}
 
 Buksan ang `/wp-content/themes/[theme-name]/theme.json` sa isang text editor para makita ang raw token definitions.
 
-## Pag-update ng Iyong Design System
+## Pag-update ng Iyong Design System {#updating-your-design-system}
 
-### Quick Updates
+### Quick Updates {#quick-updates}
 
 Hilingin sa agent ang mga specific na pagbabago:
 
@@ -299,7 +299,7 @@ o
 "Change the heading font to a serif"
 ```
 
-### Full Redesign
+### Full Redesign {#full-redesign}
 
 Muling patakbuhin ang Design System Aesthetics skill:
 
@@ -309,7 +309,7 @@ Muling patakbuhin ang Design System Aesthetics skill:
 
 Gagabayan ka nito sa lahat ng desisyon, simula sa iyong kasalukuyang values.
 
-### Partial Updates
+### Partial Updates {#partial-updates}
 
 I-update ang mga specific na aspeto:
 
@@ -317,15 +317,15 @@ I-update ang mga specific na aspeto:
 "Just update the color palette, keep everything else"
 ```
 
-## Design System Best Practices
+## Design System Best Practices {#design-system-best-practices}
 
-### Pagkakapare-pareho (Consistency)
+### Pagkakapare-pareho (Consistency) {#consistency-1}
 
 - Gumamit ng parehong tokens sa lahat ng lugar
 - Huwag gumawa ng one-off colors o sizes
 - I-reference ang tokens sa halip na mag-hardcode ng values
 
-### Pagpapangalan (Naming)
+### Pagpapangalan (Naming) {#naming}
 
 Gumamit ng malinaw, semantic na pangalan:
 
@@ -335,7 +335,7 @@ Gumamit ng malinaw, semantic na pangalan:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Scalability
+### Scalability {#scalability}
 
 Idisenyo ang iyong system para makapag-scale:
 
@@ -343,7 +343,7 @@ Idisenyo ang iyong system para makapag-scale:
 - Gumawa ng scales (xs, sm, md, lg, xl) sa halip na arbitrary values
 - Magplano para sa mga pagdaragdag sa hinaharap
 
-### Dokumentasyon (Documentation)
+### Dokumentasyon (Documentation) {#documentation}
 
 Idokumento ang iyong design system:
 
@@ -351,9 +351,9 @@ Idokumento ang iyong design system:
 - Kailan gagamitin ang bawat token
 - Mga exception at edge cases
 
-## Common Design System Patterns
+## Common Design System Patterns {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 
 - Sans-serif typography (Inter, Helvetica)
 - Limitadong color palette (2-3 colors)
@@ -361,7 +361,7 @@ Idokumento ang iyong design system:
 - Subtle shadows
 - Smooth, fast animations
 
-### Warm and Friendly
+### Warm and Friendly {#warm-and-friendly}
 
 - Pinaghalong serif at sans-serif
 - Warm color palette (oranges, warm grays)
@@ -369,7 +369,7 @@ Idokumento ang iyong design system:
 - Soft shadows
 - Playful animations
 
-### Professional Corporate
+### Professional Corporate {#professional-corporate}
 
 - Clean sans-serif (Roboto, Open Sans)
 - Neutral palette na may accent color
@@ -377,7 +377,7 @@ Idokumento ang iyong design system:
 - Minimal shadows
 - Subtle transitions
 
-### Creative and Bold
+### Creative and Bold {#creative-and-bold}
 
 - Distinctive typography
 - Bold color palette
@@ -385,7 +385,7 @@ Idokumento ang iyong design system:
 - Strong shadows
 - Noticeable animations
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **Hindi nagpapakita ang pagbabago sa design system ko**
 - Linisin ang browser cache mo
@@ -403,7 +403,7 @@ Idokumento ang iyong design system:
 - I-edit nang mano-mano ang theme.json sa mga naunang values
 - Muling patakbuhin ang skill gamit ang ibang choices
 
-## Next Steps
+## Next Steps {#next-steps}
 
 Pagkatapos mong i-define ang iyong design system:
 

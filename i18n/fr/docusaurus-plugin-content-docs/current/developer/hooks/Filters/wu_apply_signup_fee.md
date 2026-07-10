@@ -4,11 +4,11 @@ title: Filtre - wu_apply_signup_fee
 sidebar_label: wu_apply_signup_fee
 _i18n_hash: b6a5ac9b0ef2d459003fa02766ad6f81
 ---
-# Filtre : wu_apply_signup_fee
+# Filtre : wu_apply_signup_fee {#filter-wuapplysignupfee}
 
 Filtre pour déterminer si les frais d'inscription doivent être appliqués.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ Filtre pour déterminer si les frais d'inscription doivent être appliqués.
 | $product | `object` | Objet de niveau d'adhésion. |
 | $this | `\WP_Ultimo\Checkout\Cart` | Objet d'inscription. |
 
-### Depuis
+### Depuis {#since}
 
 - 3.1
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/checkout/class-cart.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/checkout/class-cart.php#L1769) à la ligne 1769

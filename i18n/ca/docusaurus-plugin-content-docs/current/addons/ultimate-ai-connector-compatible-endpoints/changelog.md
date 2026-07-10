@@ -3,9 +3,9 @@ title: Diari de canvis de Ultimate AI Connector per Endpoints Compatibles
 sidebar_position: 99
 _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 ---
-# Diari de canvis d'Ultimate AI Connector per a Endpoints Compatibles
+# Diari de canvis d'Ultimate AI Connector per a Endpoints Compatibles {#ultimate-ai-connector-for-compatible-endpoints-changelog}
 
-## Versió 2.0.0 — Publicada el 2026-04-24
+## Versió 2.0.0 — Publicada el 2026-04-24 {#version-200--released-on-2026-04-24}
 
 * Nou: Suport multi-proveïdor — configura múltiples endpoints d'IA i dirigeix les sol·licituds amb un fallback automàtic entre proveïdors.
 * Correcció: Integració multi-proveïdor de l'SDK amb IDs de proveïdor correctes, URL de registre i àmbit de filtre HTTP per a cada proveïdor.
@@ -16,4 +16,4 @@ _i18n_hash: bc1e5acc3b2415defb863e64a18d271c
 * Correcció: S'ha eliminat una sol·licitud HTTP bloquejant que es disparava a cada càrrega de pàgina.
 * Millorat: Els fluxos de treball de GitHub Actions han sido actualitzats a Node.js 24.
 
-## Versió 1.0.0 — Lliurament inicial
+## Versió 1.0.0 — Lliurament inicial {#version-100--initial-release}

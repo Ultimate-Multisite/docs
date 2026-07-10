@@ -1,0 +1,100 @@
+---
+title: Višestruka mreža
+sidebar_position: 1
+_i18n_hash: 80f47832197bcc41b12f16bebfafcabd
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multinetwork" name="Multi-Network" />
+
+# Multi-Network {#multi-network}
+
+Ultimate Multisite: Multinetwork addon proširuje vašu Ultimate Multisite platformu snažnom multinetwork funkcionalnošću. Ovaj addon omogućuje vašim korisnicima kupnju i upravljanje cijelim WordPress multisite mrežama, a ne samo pojedinačnim web-mjestima.
+
+## Ključne značajke {#key-features}
+
+* **Provisioning mreže**: Automatski stvorite i konfigurirajte potpune WordPress multisite mreže za svoje korisnike
+* **Predlošci mreže**: Omogućite korisnicima pregledavanje, pretpregled i odabir unaprijed izrađenog predloška mreže prije registracije
+* **Upravljanje mrežom**: Potpune mogućnosti upravljanja za multinetwork okruženja
+* **Izolirane mreže**: Svaka korisnička mreža radi neovisno s vlastitim tablicama baze podataka i konfiguracijom
+* **Cross-Network SSO**: Omogućite korisnicima besprijekoran pristup njihovim podmrežama pomoću autentikacije putem magic-linka
+* **Skalabilna arhitektura**: Učinkovito rukujte višestrukim mrežama uz optimiziranu dodjelu resursa
+* **Integracija**: Besprijekorno se integrira sa sustavima pretplate i naplate Ultimate Multisite
+
+## Primjeri upotrebe {#use-cases}
+
+* **White Label hosting**: Omogućite korisnicima njihove vlastite brendirane multisite mreže
+* **Rješenja za agencije**: Omogućite agencijama upravljanje višestrukim mrežama klijenata s jedne platforme
+* **Implementacije za poduzeća**: Podržite velike organizacije sa složenim zahtjevima za više mreža
+* **Obrazovne platforme**: Stvorite zasebne mreže za različite škole ili odjele
+
+## Zahtjevi {#requirements}
+
+* Ultimate Multisite 2.0.0 ili noviji
+* WordPress Multisite instalacija
+* PHP 7.4 ili noviji
+* MySQL 5.6 ili noviji
+
+## Instalacija {#installation}
+
+1. Prenesite datoteke plugina u direktorij `/wp-content/plugins/ultimate-multisite-multinetwork`
+2. Aktivirajte plugin putem zaslona 'Plugins' u WordPress
+3. Konfigurirajte multinetwork postavke putem Ultimate Multisite → Settings
+
+## Predlošci mreže {#network-templates}
+
+Verzija 1.3.0 dodaje tijek otkrivanja i odabira predložaka za korisnike koji kupuju nove mreže. Koristite predloške mreže kada želite da svaka nova korisnička mreža započne od pripremljene strukture, dizajna, biblioteke sadržaja ili postavke specifične za određenu vertikalu.
+
+### Pretpreglednik predložaka {#template-previewer}
+
+Pretpreglednik predložaka mreže omogućuje korisnicima pregledavanje dostupnih predložaka prije checkouta. Svaki se predložak može otvoriti u panelu s prikazom uživo, tako da korisnici mogu usporediti rasporede i sadržaj prije kupnje mreže.
+
+Koristite pretpreglednik kako biste korisnicima pomogli:
+
+* Pregledati izgled i strukturu svakog dostupnog predloška mreže
+* Usporediti više predložaka bez napuštanja tijeka kupnje
+* Odabrati predložak koji najbolje odgovara njihovu slučaju upotrebe prije registracije
+
+Neka nazivi i opisi predložaka budu prilagođeni korisnicima. Pretpreglednik je najkorisniji kada korisnici mogu razumjeti namijenjeni slučaj upotrebe, kao što su mreže za agencije, školske mreže, franšizne mreže ili white-label hosting paketi.
+
+### Odabir predloška pri checkoutu {#template-picker-at-checkout}
+
+Odabir predloška može se dodati u tijek checkouta za registraciju kao polje. Kada je konfigurirano, korisnici tijekom checkouta odabiru željeni predložak mreže, a odabrani se predložak koristi pri provisioningu njihove nove mreže.
+
+Za korištenje odabira u tijeku checkouta:
+
+1. Pripremite mreže koje želite ponuditi kao predloške.
+2. Omogućite polje za odabir Multinetwork predloška u relevantnom obrascu za registraciju ili checkout.
+3. Odaberite koji predlošci trebaju biti dostupni za taj tijek checkouta.
+4. Objavite tijek checkouta i testirajte registraciju kako biste potvrdili da se odabrani predložak primjenjuje na novu mrežu.
+
+Ako tijek checkouta nudi samo jedan mrežni proizvod, odabir i dalje može biti koristan kao vođeni korak uvođenja. Za tokove s više planova prikažite samo predloške koji su kompatibilni s odabranim proizvodom ili planom.
+
+## Cross-Network Magic Link SSO {#cross-network-magic-link-sso}
+
+Cross-network magic link SSO omogućuje korisnicima prelazak između njihova primarnog područja računa i podmreža bez ponovne ručne prijave. Kada korisnik slijedi cross-network pristupnu poveznicu, Ultimate Multisite generira vremenski ograničenu magic link poveznicu i autentificira korisnika u odredišnu mrežu.
+
+To poboljšava iskustvo korisnicima koji upravljaju s više od jedne mreže ili kojima je potreban pristup novo kloniranim mrežama predložaka odmah nakon kupnje.
+
+Administratorski kontrolni popis:
+
+* Potvrdite da je Multinetwork addon aktivan u cijeloj WordPress multisite instalaciji.
+* Provjerite imaju li korisnici ispravan pristup mreži prije nego što im se ponude cross-network poveznice.
+* Održavajte mrežne domene i mapirane domene ispravno konfiguriranima kako bi magic link poveznice vodile na predviđenu odredišnu mrežu.
+* Testirajte korisnički dashboard i sve gumbe za pristup nakon checkouta nakon promjene postavki mreže, domene ili checkouta.
+
+Magic link poveznice treba tretirati kao poveznice za prijavu. Osmišljene su za besprijekoran pristup korisnika i ne smiju se prosljeđivati ili ponovno upotrebljavati izvan predviđene sesije.
+
+## Često postavljana pitanja {#frequently-asked-questions}
+
+### Što je multinetwork? {#what-is-multinetwork}
+
+Multinetwork je WordPress značajka koja vam omogućuje pokretanje više neovisnih multisite mreža na jednoj WordPress instalaciji.
+
+### Po čemu se razlikuje od običnog multisitea? {#how-is-this-different-from-regular-multisite}
+
+Obični multisite omogućuje više web-mjesta unutar jedne mreže. Multinetwork omogućuje više mreža, svaku s vlastitim web-mjestima, sve unutar jedne WordPress instalacije.
+
+### Zahtijeva li to posebnu konfiguraciju poslužitelja? {#does-this-require-special-server-configuration}
+
+Da, multinetwork zahtijeva posebnu postavku i konfiguraciju poslužitelja. Za detaljne upute za postavljanje konzultirajte dokumentaciju.

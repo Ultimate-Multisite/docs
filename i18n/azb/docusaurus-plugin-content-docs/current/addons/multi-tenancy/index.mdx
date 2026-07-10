@@ -1,124 +1,150 @@
 ---
-title: Multi-Tenancy
+title: چوخ‌مستاجیرلی
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# چوخ‌ایجاره‌چی‌لیک {#multi-tenancy}
 
-Performans ve güvenlik için alt siteleri sunucular ve veritabanları arasında dağıtma
+آلت‌سایت‌لاری پرفورمانس و گؤوه‌نلیک اوچون سرورلر و دیتابیس‌لر آراسیندا پایلایین
 
-## Gereksinimler
+## Version 1.2.0 بوراخیلیشینین اؤنه چیخانلاری {#version-120-release-highlights}
 
-- WordPress 5.3 veya üzeri
-- PHP 7.4 veya üzeri
-- Multisite Ultimate eklentisi (aktif olmalı)
+Multi-Tenancy 1.2.0 تولید عایرما ایش‌آخیشلاری اوچون مستقل ایجاره‌چی تؤملینی آرتیریر:
 
-## Kurulum
+- قیسا‌اؤمورلو، تکرار حمله‌سیندن قورونان SSO گؤروش‌لری ایله حال‌سیز ایجاره‌چی اوتوماتیک گیریشی.
+- مستقل ایجاره‌چیلر اوچون هر آلت‌سایتا آیری دیتابیس و فایل‌سیستم عایرماسی.
+- میزبان‌دان آگاه ایجاره‌چی یاراتماق اوچون Hostinger چوخ‌ایجاره‌چی‌لیک قابلیتی.
+- کؤهنه داده یوخلامالاری و async گؤندریش ایشلنمه‌سی اوچون مستقل کؤچورمه دوغرولاما قاپیلاری.
+- Bedrock، FrankenPHP و localhost قورولوشلاری اوچون تنظیم‌اولا بیلن عینی‌ماشین دیتابیس میزبان باغلانماسی.
+- ایجاره‌چی باشلاتما، دیتابیس یازان، شِما باشلاتما و ایشلدن یاراتما یاخشیلاشمالاری.
+- ایجاره‌چی کیملیک‌لرینی تمیزله‌ین داها گؤوه‌نلی مستقل سیلمه.
 
-1. Eklenti dosyalarını `/wp-content/plugins/` dizininize yükleyin
-2. WordPress'te 'Eklentiler' menüsünden eklentiyi etkinleştirin
-3. Eklenti ayarlarını ağ yöneticisinden yapılandırın
+[مستقل کؤچورمه ایش‌آخیشی](/user-guide/getting-started/sovereign-migration-workflow)، [چوخ‌ایجاره‌چی‌لیک عایرماسی](/user-guide/configuration/multi-tenancy-isolation)، و [مستقل ایجاره‌چی عملیاتی](/user-guide/administration/sovereign-tenant-operations) اوچون ایشلدن راهنما‌لارینا باخین.
 
-## Geliştirme
+## گره‌کلر {#requirements}
 
-### Kurulum
+- WordPress 5.3 یا داها یوخاری
+- PHP 7.4 یا داها یوخاری
+- Multisite Ultimate افزونه‌سی (فعال)
+
+## قوراشدیرما {#installation}
+
+1. افزونه فایل‌لارینی `/wp-content/plugins/` دایرکتوری‌سینه یوکله‌یین
+2. افزونه‌نی WordPress ایچینده 'Plugins' منوسی ایله فعال ائدین
+3. افزونه تنظیم‌لرینی شبکه ایداره‌چی‌سینده قورون
+
+## گلیشدیرمه {#development}
+
+### قورولوش {#setup}
 
 ```bash
-# Bağımlılıkları kurun
+# Install dependencies
 composer install
 npm install
 
-# Testleri çalıştırın
+# Run tests
 npm run test
 
-# Kod standartları kontrollerini çalıştırın
+# Run code standards checks
 vendor/bin/phpcs
 vendor/bin/phpstan
 
-# Kod stil sorunlarını düzeltin
+# Fix code style issues
 vendor/bin/phpcbf
 
-# Üretim için derleyin
+# Build for production
 npm run build
 ```
 
-### Proje Yapısı
+### پروژه قورولوشو {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP sınıfları ve dahil edilen dosyalar
-│   ├── class-multisite-ultimate-updater.php  # Güncelleme işleyicisi
-│   └── class-multi_tenancy-main.php             # Ana işlevsellik
-├── tests/                        # Birim testleri
-│   ├── bootstrap.php            # Test başlangıç dosyası
-│   ├── class-*-base.php         # Temel test sınıfı
-│   └── class-*-test.php         # Test senaryoları
-├── views/                       # Şablon dosyaları
-├── assets/                      # Statik varlıklar
-│   ├── css/                     # Stil sayfaları
-│   ├── js/                      # JavaScript dosyaları
-│   └── images/                  # Görseller
-├── lang/                        # Dil dosyaları
-├── composer.json                # PHP bağımlılıkları
-├── package.json                 # Node.js bağımlılıkları
-├── phpunit.xml.dist             # PHPUnit yapılandırması
-├── .phpcs.xml.dist              # Kod standartları yapılandırması
-└── rector.php                   # Kod modernizasyonu kuralları
+├── inc/                          # PHP کلاس‌لاری و شامل‌لر
+│   ├── class-multisite-ultimate-updater.php  # گونجل‌لمه ایشله‌دنی
+│   └── class-multi_tenancy-main.php             # اصلی ایشلک
+├── tests/                        # واحد تست‌لری
+│   ├── bootstrap.php            # تست باشلاتماسی
+│   ├── class-*-base.php         # تؤمل تست کلاسی
+│   └── class-*-test.php         # تست موردلری
+├── views/                       # قالب فایل‌لاری
+├── assets/                      # ساکین دارلیقلار
+│   ├── css/                     # استایل‌شیط‌لر
+│   ├── js/                      # JavaScript فایل‌لاری
+│   └── images/                  # تصویرلر
+├── lang/                        # دیل فایل‌لاری
+├── composer.json                # PHP باغلیلیق‌لاری
+├── package.json                 # Node.js باغلیلیق‌لاری
+├── phpunit.xml.dist             # PHPUnit قورولوشو
+├── .phpcs.xml.dist              # کد استانداردلاری قورولوشو
+└── rector.php                   # کدو مدرن‌لشدیرمه قایدالاری
 ```
 
-### Test Etme
+### تست {#testing}
 
-Eklenti, kapsamlı bir test çatısı içerir:
+بو افزونه گئنیش بیر تست چارچیوَه‌سی داخیل ائدیر:
 
-- **Birim Testleri (Unit Tests)**: WordPress test paketi ile PHPUnit tabanlı testler
-- **Temel Test Sınıfı (Base Test Class)**: Ortak test senaryoları için yardımcı yöntemler sağlar
-- **Test Kapsamı (Test Coverage)**: Kod kapsamını izlemek için yapılandırılmıştır
-- **Multisite Test Etme**: Testler çok siteli ortamda çalışır
+- **واحد تست‌لری**: WordPress تست مجموعه‌سی ایله PHPUnit اساسلی تست‌لر
+- **تؤمل تست کلاسی**: عمومی تست سناریولاری اوچون یاردیمچی روش‌لار وئریر
+- **تست اؤرتویو**: کد اؤرتویونو ایزله‌مک اوچون قورولوب
+- **چوخ‌سایت تستی**: تست‌لر چوخ‌سایت محیطینده ایشله‌ییر
 
-### Kod Standartları
+### کد استانداردلاری {#code-standards}
 
-- **WordPress Kod Standartları**: PHPCS aracılığıyla zorunlu kılınır
-- **PHP 7.4+ Uyumluluğu**: Modern PHP özellikleri desteklenir
-- **Statik Analiz**: Tip kontrolü için PHPStan entegrasyonu
-- **Kod Modernizasyonu**: PHP yükseltmeleri için Rector kuralları
+- **WordPress کدلاشتیرما استانداردلاری**: PHPCS ایله اجرا اولونور
+- **PHP 7.4+ اویغونلوغو**: مدرن PHP اؤزللیک‌لری دستکلنیر
+- **ساکین تحلیل**: نوع یوخلاماسی اوچون PHPStan بیرلشمه‌سی
+- **کدو مدرن‌لشدیرمه**: PHP یوکسه‌لتمه‌لری اوچون Rector قایدالاری
 
-### Derleme Sistemi
+### قورما سیستمی {#build-system}
 
-- **Varlık İşleme (Asset Processing)**: CSS/JS dosyaları için küçültme (Minification)
-- **Çeviri (Translation)**: POT dosyası oluşturma
-- **Paketleme (Packaging)**: Dağıtım için arşiv oluşturma
-- **Geliştirme Modu (Development Mode)**: Hata ayıklama için küçültülmemiş varlıklar
+- **دارلیق ایشله‌مه**: CSS/JS فایل‌لاری اوچون کیچیلتمه
+- **ترجمه**: POT فایل یاراتماسی
+- **باغلاما**: پایلاماق اوچون آرشیو یاراتماسی
+- **گلیشدیرمه حالتی**: عیب‌تاپما اوچون کیچیلدیلمه‌میش دارلیقلار
 
-## Yapılandırma
+## قورولوش {#configuration}
 
-Eklenti, ağ yöneticisi arayüzü üzerinden erişilebilen çeşitli yapılandırma seçeneklerini destekler.
+بو افزونه شبکه ایداره‌چی آرا‌یوزو ایله چاتیلان چئشیدلی قورولوش سئچیم‌لرینی دستکله‌ییر.
 
-## Hook'lar ve Filtreler
+### مستقل ایجاره‌چی قورولوشو {#sovereign-tenant-configuration}
 
-### Aksiyonlar (Actions)
+مستقل ایجاره‌چیلر اوچون، ایجاره‌چی دیتابیسینی، فایل‌سیستم کؤکونو، دیتابیس میزبان باغلانماسینی و میزبان قابلیتی‌نی، ترافیکی ایجاره‌چی‌یه یؤنلتمه‌دن قاباق قورون. دیتابیس کیملیک‌لری، میزبان باغلانماسی، یؤنلندیرمه یا ایشلدن یاراتمایا تأثیر ائدن هر دَییشیک‌دن سونرا کؤچورمه دوغرولاماسینی ایشله‌دین.
 
-- `ultimate-multisite-addon-template_init` - Eklenti başlatıldıktan sonra tetiklenir
-- `ultimate-multisite-addon-template_loaded` - Tüm eklenti dosyaları yüklendikten sonra tetiklenir
+`localhost`-و یالنیز ایجاره‌چی اجرا محیطی و دیتابیس ایجازه‌لری یئرلی سوکت یا عینی‌ماشین گئریشینی گؤزله‌دییی زامان ایشلدین. تأمین‌ایدن‌نیزین قوردوغو ایجازه میزبان او اولا، `127.0.0.1` یا بیر خیدمت میزبان آدینی ایشلدین.
 
-### Filtreler (Filters)
+### Hostinger قابلیتی {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - Eklenti ayarlarını değiştirir
-- `ultimate-multisite-addon-template_enabled` - Eklentinin etkin/devre dışı durumunu geçersiz kılar
+Hostinger چوخ‌ایجاره‌چی‌لیک قابلیتی پایلاشیلمیش Hostinger بیرلشمه token-ی ایله ایشله‌ییر. دوغرولامادان قاباق دامینین hPanel-ده وار اولدوغونو، DNS-ین Hostinger Account-ونا اشاره ائتدییینی و ایجاره‌چی دیتابیس تنظیم‌لرینین hPanel ایله اویغون اولدوغونو دوغرولایین.
 
-## Lisans
+## Hook-لار و Filter-لر {#hooks-and-filters}
 
-Bu eklenti GPL v3 veya daha yeni bir sürüm altında lisanslanmıştır.
+### Action-لار {#actions}
 
-## Destek
+- `ultimate-multisite-addon-template_init` - افزونه باشلاتماسیندان سونرا چاغیریلیر
+- `ultimate-multisite-addon-template_loaded` - بوتون افزونه فایل‌لاری یوکلندن سونرا چاغیریلیر
 
-Destek ve dokümantasyon için [MultisiteUltimate.com](https://multisiteultimate.com) adresini ziyaret edin.
-## Değişiklik Günlüğü
+### Filter-لر {#filters}
 
-- Sürüm 1.0.1 (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+- `ultimate-multisite-addon-template_settings` - افزونه تنظیم‌لرینی دَییشدیرین
+- `ultimate-multisite-addon-template_enabled` - افزونه‌نین فعال/غیرفعال حالتی‌نی اؤزونه‌گؤره دَییشدیرین
+
+## لیسانس {#license}
+
+بو افزونه GPL v3 یا سونراکی نسخه آلتندا لیسانسلانمیشدیر.
+
+## دستک {#support}
+
+دستک و سندلر اوچون [MultisiteUltimate.com](https://multisiteultimate.com) سایتینا باش چکین
+## دَییشیکلیک تاریخی {#changelog}
+
+- Version 1.2.0 (2026-06-03): حال‌سیز ایجاره‌چی اوتوماتیک گیریشی، Hostinger چوخ‌ایجاره‌چی‌لیک قابلیتی، هر آلت‌سایتا آیری دیتابیس و فایل‌سیستم عایرماسی، مستقل کؤچورمه دوغرولاما قاپیلاری، ایجاره‌چی باشلاتما/دیتابیس یازان یاخشیلاشمالاری، تنظیم‌اولا بیلن MySQL میزبان باغلانماسی و داها گؤوه‌نلی مستقل سیلمه آرتیریلدی.
+
+- Version 1.0.1 (2025-09-28): prefix، ultimate-multisite-ه آد دَییشدی؛ متن domain-ی گونجللندی؛ نسخه آرتیریلدی.
 
 
-- Sürüm (2025-09-28): ön eki ultimate-multisite olarak yeniden adlandırıldı; metin alanı güncellendi; sürüm artışı.
+- Version  (2025-09-28): prefix، ultimate-multisite-ه آد دَییشدی؛ متن domain-ی گونجللندی؛ نسخه آرتیریلدی.

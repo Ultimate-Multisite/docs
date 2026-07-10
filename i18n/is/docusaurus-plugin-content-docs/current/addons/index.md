@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Ultimate Multisite Addons
+# Ultimate Multisite Addons {#ultimate-multisite-addons}
 
 Addons breytir Ultimate Multisite við vísaframleiðandi eiginleika og tengingar. Það er mest addons sem eru betaldir og getur verið kaupa frá [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Innstæðing
+## Innstæðing {#installation}
 
 Addons geta innstæðist á tveimur hátt:
 
 1. **Via the Addon Page** -- Navigera yfir í menustafninn fyrir addon-stjórnun á síðunni þinni í WordPress admin
 2. **Manual Download** -- Lóða frá [rekkjum](https://ultimatemultisite.com/my-account/downloads/) og hleða upp með Plugins > Add New
 
-## Til að gera við Addons
+## Til að gera við Addons {#available-addons}
 
 | Addon | Áskildur |
 |-------|-------------|

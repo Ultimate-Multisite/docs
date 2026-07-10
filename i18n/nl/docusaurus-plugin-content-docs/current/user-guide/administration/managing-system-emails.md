@@ -1,38 +1,42 @@
 ---
-title: Beheren van Systeem E-mails
+title: Systeem-e-mails beheren
 sidebar_position: 13
-_i18n_hash: b1bc640a1a5d9b508b8c46ab59bb1221
+_i18n_hash: 6dc6899342f363987fd7307df698a5bb
 ---
-# Beheren van Systeem E-mails
+# Systeem-e-mails beheren {#managing-system-emails}
 
-Ultimate Multisite verzendt verschillende systeem e-mails voor gebeurtenissen zoals registratiebevestigingen, betalingsbewijzen en wijzigingen in het lidmaatschap. Je kunt deze e-mailsjablonen aanpassen om ze aan je merk te laten voldoen.
+Ultimate Multisite stuurt verschillende systeem-e-mails voor gebeurtenissen zoals aanmeldbevestigingen, betalingsbewijzen en wijzigingen in lidmaatschappen. Je kunt deze e-mailtemplates aanpassen aan je merk.
 
-## Bekijken van Systeem E-mails
+## Systeem-e-mails bekijken {#viewing-system-emails}
 
-Navigeer naar **Ultimate Multisite → Settings** en klik op het tabblad **Emails** om e-mailgerelateerde instellingen te bekijken.
+Ga naar **Ultimate Multisite → Settings** en klik op het tabblad **Emails** om e-mailgerelateerde instellingen te bekijken.
 
-![Instellingen - Emails tab](/img/admin/settings-emails.png)
+![Tabblad Settings - Emails](/img/admin/settings-emails.png)
 
-Vanaf daar kun je de pagina **System Emails** openen om alle e-mailsjablonen te bekijken.
+Van daaruit kun je de pagina **System Emails** openen om alle e-mailtemplates te bekijken.
 
-![Systeem E-mails lijst](/img/admin/system-emails-list.png)
+![Lijst met System Emails](/img/admin/system-emails-list.png)
 
-## Importeren van Nieuwe E-mailsjablonen
+Je kunt ook afzonderlijke e-mailtemplates bewerken met de systeem-e-maileditor:
 
-Nieuwe Ultimate Multisite versies en add-ons kunnen nieuwe e-mailsjablonen registreren. Om conflicten te voorkomen, worden nieuwe sjablonen niet automatisch toegevoegd — je moet ze handmatig importeren.
+![Systeem-e-maileditor](/img/admin/system-email-editor.png)
 
-Om nieuwe e-mailsjablonen te importeren:
+## Nieuwe e-mailtemplates importeren {#importing-new-email-templates}
+
+Nieuwe versies en add-ons van Ultimate Multisite kunnen nieuwe e-mailtemplates registreren. Om conflicten te voorkomen, worden nieuwe templates niet automatisch toegevoegd — je moet ze handmatig importeren.
+
+Om nieuwe e-mailtemplates te importeren:
 
 1. Ga naar de pagina **System Emails**
 2. Klik op de knop **Reset & Import** bovenaan de pagina
-3. Schakel de optie **Import Emails** in om beschikbare sjablonen te zien
-4. Selecteer de sjablonen die je wilt importeren en bevestig
+3. Schakel de optie **Import Emails** in om beschikbare templates te zien
+4. Selecteer de templates die je wilt importeren en bevestig
 
-## Resetten van E-mailsjablonen
+## E-mailtemplates resetten {#resetting-email-templates}
 
-Als je een e-mailsjabloon hebt aangepast en terug wilt gaan naar de standaardinhoud, heb je twee opties:
+Als je een e-mailtemplate hebt aangepast en wilt terugzetten naar de standaardinhoud, heb je twee opties:
 
-1. **Delete and re-import** — Verwijder de systeem e-mail en importeer deze opnieuw (dit wist verzendstatistieken)
-2. **Reset via the tool** — Gebruik de **Reset & Import** tool, schakel de optie **Reset** in, en selecteer de e-mails die je wilt resetten
+1. **Verwijderen en opnieuw importeren** — Verwijder de systeem-e-mail en importeer deze opnieuw (dit wist verzendstatistieken)
+2. **Resetten via de tool** — Gebruik de tool **Reset & Import**, schakel de optie **Reset** in en selecteer de e-mails die je wilt resetten
 
-De Reset-optie is de voorkeur omdat deze verzendstatistieken en andere metadata behoudt terwijl de standaardinhoud wordt hersteld.
+De Reset-optie heeft de voorkeur, omdat deze verzendstatistieken en andere metadata behoudt terwijl de standaardinhoud wordt hersteld.

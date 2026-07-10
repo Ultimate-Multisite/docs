@@ -1,82 +1,96 @@
 ---
 title: Note di rilascio
 sidebar_position: 9
-_i18n_hash: e9f9d20e55608b81945ab7dfcf495fcb
+_i18n_hash: f43456fb08d6572cbc3ddf432a51d7d5
 ---
-# Note di rilascio
+# Note di rilascio {#release-notes}
 
-## Versione 2.12.0 — Rilasciata il 2026-05-15
+## Versione 2.13.0 — Rilasciata il 2026-06-05 {#version-2130--released-on-2026-06-05}
 
-- Nuovo: Aggiunto Hostinger (hPanel) come provider di hosting supportato con integrazione di mappatura del dominio
-- Nuovo: Site Exporter ora gestisce i bundle di importazione di rete per un ripristino del sito su rete più snello
-- Correzione: Le email broadcast BCC ora utilizzano un header `undisclosed-recipients` per evitare di esporre gli indirizzi dei destinatari
-- Correzione: La data di scadenza dell'abbonamento non viene più corrotta quando si salva con un valore non datato
-- Correzione: Gli aggiornamenti degli abbonamenti Stripe cancellano correttamente gli sconti senza chiamare l'API obsoleta `deleteDiscount`
-- Correzione: I reindirizzamenti SSO sui siti con mappatura di dominio sono ora limitati per prevenire cicli di reindirizzamento infiniti
-- Correzione: La selezione dell'immagine nel wizard di configurazione aggiorna correttamente il modello dati sottostante
-- Correzione: L'interfaccia CLI di Site Exporter ora conserva la corretta selezione predefinita del sito di rete
-- Migliorato: Rimosso wp-cli incluso dal pacchetto plugin, riducendo le dimensioni del plugin
+- Nuovo: aggiunto il supporto per tenant sovrani per i flussi di Account cliente, checkout, fatturazione, sito, fattura, cambio di template e mappatura dei domini, così le reti di tenant possono indirizzare i clienti di nuovo al sito principale per le azioni gestite.
+- Nuovo: aggiunti controlli delle credenziali di rinnovo per le membership ricorrenti, così i gateway possono disabilitare il rinnovo automatico quando manca un accordo di fatturazione salvato, una sottoscrizione o un token del vault.
+- Nuovo: aggiunta la pubblicazione in loopback verificata con HMAC per la creazione di siti in sospeso, per rendere il provisioning da checkout a sito più affidabile su host in cui i job in background sono in ritardo.
+- Nuovo: aggiunti punti di estensione per sviluppatori per URL SSO, domini di base dei moduli di checkout e creazione automatica dei record di dominio.
+- Correzione: SSO è più affidabile tra domini mappati, visite anonime al broker, logout e conflitti di dipendenze tra plugin.
+- Correzione: la creazione di siti in sospeso ora recupera dai flag di pubblicazione obsoleti ed evita di lasciare i clienti bloccati nella schermata di creazione del sito.
+- Correzione: i record di dominio non vengono più creati per domini di base condivisi dei moduli di checkout, e i job in background dei provider host inutilizzati vengono saltati quando non è attiva alcuna integrazione.
+- Correzione: casi limite di checkout, indirizzo di fatturazione, reimpostazione password, verifica email, cambio di template, tour e Dashboard cliente non bloccano più i normali flussi dei clienti.
+- Correzione: le email broadcast ora mantengono privati i destinatari evitando errori fatali SMTP/plugin quando gli elenchi dei destinatari o i trasporti email falliscono.
+- Correzione: i casi limite relativi a rinnovi delle membership, visualizzazione della scadenza e riscossione dei pagamenti ora evitano scadenze immediate, crash o pagamenti obbligatori mancati.
+- Migliorato: la compatibilità con WordPress è testata fino alla 7.0, gli asset Vue di produzione sono ricompilati dalle sorgenti npm e la copertura end-to-end Cypress ora esercita più flussi di checkout, configurazione, SSO e gateway.
 
-## Versione 2.11.0 — Rilasciata il 2026-05-11
+## Versione 2.12.0 — Rilasciata il 2026-05-15 {#version-2120--released-on-2026-05-15}
 
-- Nuovo: Gli esportazioni dei siti ora includono un `index.php` auto-booting in modo che il file ZIP possa essere installato su un host nuovo senza un'installazione plugin separata.
-- Nuovo: L'esportazione di rete consente agli amministratori di esportare tutti i sottositi in un unico archivio dalla pagina di amministrazione di Site Export.
-- Nuovo: L'interruttore "Allow Site Templates" è ora applicato tramite una catena di fallback, limitando correttamente la disponibilità dei template in base ai limiti del piano.
-- Nuovo: L'editor del modulo di checkout avvisa quando viene aggiunto un prodotto senza un campo obbligatorio configurato.
-- Nuovo: La scheda Impostazioni di Importazione/Esportazione descrive ora chiaramente il suo ambito e fornisce un link diretto allo strumento Site Export.
+- Nuovo: aggiunto Hostinger (hPanel) come provider host supportato con integrazione di mappatura domini
+- Nuovo: l’Esportatore di siti ora gestisce bundle di importazione di rete per un ripristino semplificato dei siti a livello di rete
+- Correzione: le email broadcast BCC ora usano un header undisclosed-recipients per evitare di esporre gli indirizzi dei destinatari
+- Correzione: la data di scadenza della membership non viene più corrotta quando si salva con un valore non di tipo data
+- Correzione: gli aggiornamenti delle membership Stripe ora cancellano correttamente gli sconti senza chiamare l’API deprecata deleteDiscount
+- Correzione: i reindirizzamenti SSO sui siti con domini mappati ora sono limitati per prevenire loop di reindirizzamento infiniti
+- Correzione: la selezione nel selettore immagini della procedura guidata di configurazione ora aggiorna correttamente il modello di dati sottostante
+- Correzione: la CLI dell’Esportatore di siti ora preserva la corretta selezione predefinita del sito di rete
+- Migliorato: rimosso wp-cli incluso dal pacchetto del plugin, riducendo la dimensione del plugin
 
-## Versione 2.10.0 — Rilasciata il 2026-05-05
+## Versione 2.11.0 — Rilasciata il 2026-05-11 {#version-2110--released-on-2026-05-11}
 
-- Nuovo: Wizard di configurazione guidato di PayPal per l'inserimento manuale delle credenziali con un flag OAuth per una configurazione del gateway senza interruzioni.
-- Nuovo: Il pannello clienti per il cambio template è stato ridisegnato con la scheda del template corrente, una griglia persistente e il pulsante **Reset current template**.
-- Correzione: Il cambio template non blocca più l'interfaccia utente in caso di fallimento AJAX.
-- Correzione: Gli stati di permessi per il cambio template sono protetti contro l'accesso non autorizzato.
-- Correzione: Gli input di override del sito vengono validati prima di salvare.
-- Correzione: Il prompt per l'indirizzo di fatturazione viene ora mostrato quando l'indirizzo è vuoto.
-- Correzione: Risolti i messaggi di deprecazione null-to-string di PHP 8.1.
-- Correzione: Currents viene caricato in modo lazy prima dell'hook `init` per prevenire problemi di tempistica.
-- Correzione: Il percorso SSO filtrato è rispettato in tutti i flussi di accesso.
-- Correzione: Le opzioni di identità del sito vuoto vengono salvate.
+- Nuovo: le esportazioni dei siti ora includono un `index.php` autoavviante, così il ZIP può essere installato su un host nuovo senza un’installazione separata del plugin.
+- Nuovo: l’esportazione di rete consente agli amministratori di esportare tutti i sottositi in un unico archivio dalla pagina di amministrazione Esportazione sito.
+- Nuovo: l’interruttore del piano Consenti template di sito ora viene applicato tramite una catena di fallback, limitando correttamente la disponibilità dei template in base ai limiti del piano.
+- Nuovo: l’editor del modulo di checkout avvisa quando viene aggiunto un prodotto senza aver configurato un campo obbligatorio.
+- Nuovo: la scheda impostazioni Importazione/Esportazione ora descrive chiaramente il proprio ambito e collega direttamente allo strumento Esportazione sito.
 
-## Versione 2.9.0 — Rilasciata il 2026-04-30
+## Versione 2.10.0 — Rilasciata il 2026-05-05 {#version-2100--released-on-2026-05-05}
 
-- Nuovo: Esportazione e importazione di singolo sito aggiunte sotto **Strumenti > Esporta e importa**.
-- Correzione: I file ZIP di esportazione vengono ora serviti tramite un endpoint di download autenticato.
-- Correzione: Corretti i rischi di SQL injection e i problemi di query nelle query di esportazione/importazione in sospeso.
-- Correzione: Il sito in sospeso non viene pubblicato quando l'amministratore verifica manualmente l'email del cliente.
-- Correzione: I record `pending_site` orfani vengono puliti quando manca l'abbonamento.
-- Correzione: Corretti il padding della navigazione delle impostazioni e la navigazione per ancoraggio di ricerca.
-- Correzione: I siti in sospeso vengono ora mostrati per primi nella vista Tutti i siti.
-- Correzione: Aggiunto l'header User-Agent del provider di screenshot (mShots) per prevenire errori 403.
-- Correzione: Risolta la dipendenza circolare del cron di importazione.
-- Correzione: Gli ID dei tour vengono normalizzati con underscore nelle chiavi delle impostazioni utente.
-- Migliorato: Ora viene utilizzato ZipArchive invece di Alchemy/Zippy per una migliore compatibilità.
+- Nuovo: procedura guidata di configurazione PayPal per l’inserimento manuale delle credenziali con flag gate OAuth per una configurazione del gateway senza interruzioni.
+- Nuovo: pannello cliente per il cambio di template riprogettato con scheda del template corrente, griglia persistente e pulsante **Reimposta template corrente**.
+- Correzione: il cambio di template non blocca più l’UI in caso di errore AJAX.
+- Correzione: gli stati dei permessi per il cambio di template sono stati messi in sicurezza contro accessi non autorizzati.
+- Correzione: input di override del sito validati prima del salvataggio.
+- Correzione: il prompt dell’indirizzo di fatturazione ora viene mostrato quando l’indirizzo è vuoto.
+- Correzione: risolti gli avvisi di deprecazione da null a stringa in PHP 8.1.
+- Correzione: Currents caricati in lazy load prima dell’hook init per prevenire problemi di timing.
+- Correzione: percorso SSO filtrato rispettato in tutti i flussi di accesso.
+- Correzione: opzioni vuote dell’identità del sito preservate al salvataggio.
 
-## Versione 2.8.0 — Rilasciata il 2026-04-29
+## Versione 2.9.0 — Rilasciata il 2026-04-30 {#version-290--released-on-2026-04-30}
 
-- Nuovo: Aggiuto l'interruttore "Enable Jumper" all'interfaccia utente delle Impostazioni Altre Opzioni.
-- Nuovo: Aggiunta la colonna Stato alla tabella di elenco dei moduli di checkout.
-- Nuovo: Caricatore di file Addon sunrise per estensioni personalizzate MU-plugin sunrise.
-- Migliorato: Rimosso l'opzione di opt-in per la segnalazione degli errori dalla pagina delle impostazioni.
-- Correzione: Scheda del sito sulla pagina di ringraziamento: l'immagine è ora vincolata e i link sono stilizzati correttamente.
-- Correzione: Il provider di screenshot è stato spostato da thum.io a WordPress.com mShots.
-- Correzione: "Enable Registration" e "Default Role" ora impostano i valori predefiniti corretti su una nuova installazione.
-- Correzione: `get_site_url()` non restituisce più valori vuoti quando il dominio include una porta.
-- Correzione: I file multimediali clonati vengono ora copiati correttamente quando l'impostazione `copy_media` era vuota.
-- Correzione: La cache degli oggetti viene invalidata correttamente dopo la scrittura di sitemeta network-activate.
-- Correzione: Il dominio personalizzato viene automaticamente promosso a primario dopo la verifica DNS per i domini a 3 parti.
-- Correzione: L'abbonamento in sospeso viene annullato quando viene pulito un pagamento scaduto.
-- Correzione: Il controllore di forza della password viene riattivato dopo che il prompt di accesso inline è stato chiuso.
-- Correzione: Arrestato il ricaricamento infinito della pagina sulla pagina di ringraziamento quando il sito è già stato creato.
-- Correzione: L'opzione di registrazione WP core viene sincronizzata all'attivazione del plugin e al salvataggio delle impostazioni.
-- Correzione: Aggiunto un guard per la scadenza nulla in `calculate_expiration` per la compatibilità con PHP 8.4.
-- Correzione: I nuovi registrazioni duplicate vengono bloccate quando il cliente ha già un abbonamento attivo.
-- Correzione: Aggiunto un controllo null per `date_expiration` nel checkout.
-- Correzione: Rafforzato l'approvvigionamento del sito: limitazioni, inferenza dell'abbonamento, promozione del dominio.
-- Correzione: Etichetta dello stato del controllo pre-installazione corretta in NON Attivato quando il controllo fallisce.
-- Correzione: Dominio di checkout utilizzato per gli URL di verifica email.
-- Correzione: Accesso automatico dopo il checkout quando non è presente un campo password.
-- Correzione: Gli abbonamenti gratuiti non scadono più — vengono trattati come a vita.
-- Correzione: Il blocco di verifica email mantiene la pubblicazione del sito fino a quando il cliente non verifica l'email.
-- Correzione: Corretto il percorso base dell'endpoint API SES v2 e il percorso di identità.
-- Correzione: L'hook `wu_inline_login_error` viene emesso nel blocco catch pre-submit.
+- Nuovo: esportazione e importazione di singoli siti aggiunte sotto **Strumenti > Esportazione e importazione**.
+- Correzione: i file ZIP di esportazione ora vengono serviti tramite un endpoint di download autenticato.
+- Correzione: corretti rischio di SQL injection e problemi di query nelle query di esportazione/importazione in sospeso.
+- Correzione: sito in sospeso non pubblicato quando l’amministratore verifica manualmente l’email del cliente.
+- Correzione: record pending_site orfani eliminati quando manca la membership.
+- Correzione: corretti il padding della navigazione impostazioni e la navigazione degli anchor di ricerca.
+- Correzione: i siti in sospeso ora vengono mostrati per primi nella vista Tutti i siti.
+- Correzione: aggiunto header User-Agent del provider di screenshot (mShots) per prevenire errori 403.
+- Correzione: risolta dipendenza circolare nella pianificazione cron dell’importazione.
+- Correzione: ID dei tour normalizzati con trattini bassi nelle chiavi delle impostazioni utente.
+- Migliorato: ora viene usato ZipArchive invece di Alchemy/Zippy per una migliore compatibilità.
+
+## Versione 2.8.0 — Rilasciata il 2026-04-29 {#version-280--released-on-2026-04-29}
+
+- Nuovo: toggle Enable Jumper aggiunto all'interfaccia utente delle impostazioni Other Options.
+- Nuovo: colonna dello stato aggiunta alla tabella dell'elenco dei moduli di checkout.
+- Nuovo: loader del file sunrise dell'addon per estensioni sunrise MU-plugin personalizzate.
+- Migliorato: rimossa l'impostazione di adesione alla segnalazione degli errori dalla pagina delle impostazioni.
+- Correzione: scheda del sito nella pagina di ringraziamento — immagine ora vincolata e link stilizzati correttamente.
+- Correzione: provider degli screenshot cambiato da thum.io a WordPress.com mShots.
+- Correzione: Enable Registration e Default Role ora impostano i valori predefiniti corretti su una nuova installazione.
+- Correzione: `get_site_url()` non restituisce più vuoto quando il dominio include una porta.
+- Correzione: i file multimediali clonati ora vengono copiati correttamente quando l'impostazione `copy_media` era vuota.
+- Correzione: cache degli oggetti invalidata correttamente dopo la scrittura di sitemeta con attivazione a livello di rete.
+- Correzione: dominio personalizzato promosso automaticamente a primario alla verifica DNS per domini a 3 parti.
+- Correzione: membership in sospeso annullata quando il pagamento scaduto viene ripulito.
+- Correzione: controllo della robustezza della password ricollegato dopo la chiusura del prompt di accesso inline.
+- Correzione: ricaricamento infinito della pagina interrotto nella pagina di ringraziamento quando il sito è già stato creato.
+- Correzione: opzione di registrazione del core WP sincronizzata all'attivazione del plugin e al salvataggio delle impostazioni.
+- Correzione: protezione contro scadenza nulla aggiunta in `calculate_expiration` per compatibilità con PHP 8.4.
+- Correzione: iscrizioni duplicate bloccate quando il cliente ha già una membership attiva.
+- Correzione: controllo null aggiunto per `date_expiration` nel checkout.
+- Correzione: provisioning del sito rafforzato — limitazioni, deduzione della membership, promozione del dominio.
+- Correzione: etichetta di stato del controllo pre-installazione corretta in NON attivato quando il controllo fallisce.
+- Correzione: dominio di checkout usato per gli URL di verifica email.
+- Correzione: accesso automatico dopo il checkout quando non è presente alcun campo password.
+- Correzione: le membership gratuite non scadono più — trattate come a vita.
+- Correzione: gate di verifica email trattiene la pubblicazione del sito finché il cliente non verifica l'email.
+- Correzione: percorso di base dell'endpoint SES v2 API e rotta dell'identità corretti.
+- Correzione: hook `wu_inline_login_error` emesso nel blocco catch pre-invio.

@@ -3,13 +3,13 @@ title: Ajutor pentru Dezvoltare Personalizată
 sidebar_position: 10
 _i18n_hash: 92675ef1c1dfa981cb05f3e328042cbc
 ---
-# Cum să obții ajutor pentru dezvoltare personalizată de la Codeable?
+# Cum să obții ajutor pentru dezvoltare personalizată de la Codeable? {#how-to-get-custom-development-help-from-codeable}
 
 Uneori, avem nevoie de personalizări avansate pentru ca fluxurile rețelei noastre să funcționeze exact așa cum ne dorim. Dacă asta cauți, îți recomandăm [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE), o platformă unde poți găsi dezvoltatori experimentați, cu expertiză în Ultimate Multisite.
 
 [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) este o platformă care conectează clienții cu dezvoltatori WordPress freelance calificați, capabili să lucreze la proiecte de orice dimensiune. Au un proces riguros de selecție pentru a te asigura că ești pus în legătură cu experți calificați specific pentru sarcina pe care o ai în vedere.
 
-### Cum să creezi un proiect în Codeable?
+### Cum să creezi un proiect în Codeable? {#how-to-create-a-project-in-codeable}
 
 Mai întâi, accesează [Codeable](https://codeable.io/partners/wpultimo/?ref=7wHwE) și dă clic pe butonul **Start a Project**.
 

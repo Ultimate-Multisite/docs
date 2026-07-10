@@ -7,28 +7,28 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
 
-# יצוא אתר
+# יצוא אתר {#site-exporter}
 
-## תוכן
+## תוכן {#content}
 
 אנו מבינים את הצורך ביכולת להעביר אתרים משנה (subsites) ברשת שלך לאינסטלציה של אתר יחיד, ולהיפך, אם הלקוח שלך מחליט להעביר את האתר שלו. ה-add-on "Site Exporter and Importer" מקל על משימה זו. כלי זה מייצא וייבא אתרים באמצעות קבצי zip, שיכולים לשמש גם כגיבוי.
 
-## תכונות
+## תכונות {#features}
 
 * ייצוא וייבוא אתרים
 * ממשק קל לשימוש
 * יצירת גיבוי לאתר
 
-## תיעוד
+## תיעוד {#documentation}
 **כיצד לייצא וייבא אתר**
 
-## התקנה
+## התקנה {#installation}
 
 1. העלה את **ultimate-multisite-site-exporter** לתיקייה **/wp-content/plugins/**
 2. הפעל את ה-plugin דרך תפריט **Plugins** ב-WordPress
 3. עקוב אחר המדריך המפורט (Wizard) להגדרת ה-plugin
 
-## מדריך שימוש
+## מדריך שימוש {#usage-guide}
 
 עם Ultimate Multisite, תוכל לייצא אתר מהרשת שלך או לייבא אתר לאינסטלציה המולטי-אתרית (multisite) או לאינסטלציה של אתר יחיד.
 
@@ -42,7 +42,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <!-- Screenshot unavailable: Ultimate Multisite menu showing Export and Import option -->
 
-## כיצד לייצא אתר
+## כיצד לייצא אתר {#how-to-export-a-site}
 
 כדי לייצא אתר מהרשת שלך, עבור אל **Export & Import** בתפריט Ultimate Multisite, וללחוץ על **Generate new Site Export** בלשונית **Export Sites**.
 
@@ -52,13 +52,13 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 לחץ על כפתור **Export Site**. האתר המיוצא יהיה זמין ברשימה **Existing Exports**. לחץ על כפתור **Download ZIP** כדי להוריד את הקובץ. קבצי ZIP המיוצאים כוללים `index.php` ו-`readme.txt` שמופעלים בעצמם (self-booting), כך שניתן להתקין אותם על מארח (host) חדש מבלי להתקין קודם plugin ייבוא נפרד.<!-- Screenshot unavailable: Existing Exports list with Download ZIP button -->
 
-## כיצד לייצא את כל הרשת
+## כיצד לייצא את כל הרשת {#how-to-export-the-whole-network}
 
 כדי לייצא את כל אתרי המשנה יחד, עבור אל **Export & Import** בתפריט Ultimate Multisite והשתמש באפשרות **Network Export** במסך הייצוא. הארכיון שנוצר מכיל את כל אתרי המשנה בקובץ ZIP יחיד, וזה שימושי להעברות מארח (host migrations), לבניית סביבת staging, או לגיבוי ברמת הרשת.
 
 ייצוא רשת יכול להיות גדול. הפעל אותו כאשר התנועה נמוכה וודא שהשרת מספיק מקום אחסון לארכיון וגם לכל קבצי ההעלאה, ה-plugins והתבניות הכלולים.
 
-## כיצד לייבא אתר
+## כיצד לייבא אתר {#how-to-import-a-site}
 
 כדי לייבא אתר, עבור ללשונית **Import a Site** והעלה את קובץ ה-.zip של האתר שברצונך לייבא. תוכל לשנות את ה-URL לכתובת חדשה או לשמור על ה-URL הישן על ידי השארת השדה ריק. כמו כן, תוכל לסמן את התיבה למחיקת קובץ ה-.zip מההתקנה שלך לאחר הייבוא. לאחר מכן, לחץ על **Begin Import**.
 
@@ -74,7 +74,7 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 לאחר שהתהליך הושלם, האתר שלך זמין כבר ברשת שלך.
 
-## כיצד לייבא אתר בהתקנה יחידה
+## כיצד לייבא אתר בהתקנה יחידה {#how-to-import-a-site-on-a-single-install}
 
 כדי לייבא אתר להתקנה היחידה שלך, התקן והפעל את המייבא (importer) באתר שלך. תוכל למצוא את הקישור להורדה בלשונית ה-exporter.
 

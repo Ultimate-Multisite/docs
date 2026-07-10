@@ -4,11 +4,11 @@ title: ફિલ્ટર - retrieve_password_message
 sidebar_label: retrieve_password_message
 _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 ---
-# Filter: retrieve_password_message
+# Filter: retrieve_password_message {#filter-retrievepasswordmessage}
 
 પાસવર્ડ રીસેટ મેલના સંદેશના મુખ્ય ભાગને ફિલ્ટર કરે છે.
 
-## પેરામીટર્સ
+## પેરામીટર્સ {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -17,14 +17,14 @@ _i18n_hash: c1e9fbd9909dd93e70f291de55ba00e4
 | $user_login | `string` | યુઝરનું યુઝરનેમ. |
 | $user_data | `\WP_User` | WP_User object. |
 
-### ક્યારથી
+### ક્યારથી {#since}
 
 - 2.8.0
 - 4.1.0: <code>$user_login</code> અને <code>$user_data</code> પેરામીટર્સ ઉમેરવામાં આવ્યા.
-### સ્ત્રોત
+### સ્ત્રોત {#source}
 
 [`inc/mu-migration/includes/commands/class-mu-migration-users.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-users.php#L149) માં લાઇન 149 પર વ્યાખ્યાયિત છે.
 
 
-## પરત કરે છે
+## પરત કરે છે {#returns}
 ડિફોલ્ટ મેલ સંદેશ.

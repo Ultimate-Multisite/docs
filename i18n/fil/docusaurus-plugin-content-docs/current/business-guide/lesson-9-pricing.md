@@ -3,17 +3,17 @@ title: 'Lesson 9: Pagpepresyo para sa Kita'
 sidebar_position: 10
 _i18n_hash: 0f58d92d3effcc1ffc1f62104d21cdcc
 ---
-# Aralin 9: Pagpepresyo para sa Kita
+# Aralin 9: Pagpepresyo para sa Kita {#lesson-9-pricing-for-profit}
 
 Sa Aralin 5, nagtakda tayo ng paunang presyo para sa mga plano ng FitSite. Ngayon, pagpipino natin ang *pricing strategy* gamit ang mga teknik na magpapataas ng kita, maghihikayat ng pag-upgrade, at magbabawas ng *churn* (pag-alis ng customer).
 
-## Saan Tayo Tumigil
+## Saan Tayo Tumigil {#where-we-left-off}
 
 Kumpleto na ang FitSite sa mga plano, template, checkout, branding, at onboarding. Ang paunang presyo ay $49/$99/$199 bawat buwan. Ngayon, gagawin nating mas epektibo ang paggamit ng presyong iyon.
 
-## Mga Prinsipyo sa Pagpepresyo para sa Niche Platforms
+## Mga Prinsipyo sa Pagpepresyo para sa Niche Platforms {#pricing-principles-for-niche-platforms}
 
-### Magpresyo batay sa Halaga, Hindi sa Gastos
+### Magpresyo batay sa Halaga, Hindi sa Gastos {#price-on-value-not-cost}
 
 Ang iyong *hosting* cost ay maaaring $5-$15 bawat *customer site*. Hindi ibig sabihin nito na ang presyo mo ay dapat $20. Hindi ka nagbebenta ng *hosting*. Nagbebenta ka ng:
 
@@ -24,7 +24,7 @@ Ang iyong *hosting* cost ay maaaring $5-$15 bawat *customer site*. Hindi ibig sa
 
 Magpresyo batay sa halaga na ibinibigay mo, hindi sa gastos para maibigay ito.
 
-### Pag-uugnay sa mga Alternatibo
+### Pag-uugnay sa mga Alternatibo {#anchor-to-alternatives}
 
 Kapag sinusuri ng isang *fitness studio owner* ang FitSite, ikukumpara nila ito sa:
 
@@ -34,7 +34,7 @@ Kapag sinusuri ng isang *fitness studio owner* ang FitSite, ikukumpara nila ito 
 
 Sa $49-$199/buwan, mas mura ang FitSite kaysa sa isang *developer*, mas kakayahan kaysa sa mga generic na *builder*, at walang katulad na mas maganda kaysa sa walang website.
 
-## Pagpapatupad ng Pagkakaiba-iba ng Presyo
+## Pagpapatupad ng Pagkakaiba-iba ng Presyo {#implementing-price-variations}
 
 Ang pagpepresyo nang taunan ay naghihikayat ng pangako at nagbabawas ng *churn*. Pumunta sa tab na **Price Variations** ng bawat plano at magdagdag ng mga opsyon para sa taunan:
 
@@ -46,12 +46,12 @@ Ang pagpepresyo nang taunan ay naghihikayat ng pangako at nagbabawas ng *churn*.
 
 Magdagdag ng **Period Selection** field sa iyong checkout form para makapag-toggle ang mga customer sa pagitan ng buwanan at taunan na pagbabayad. Tingnan ang [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle).
 
-### Bakit Epektibo ang Taunang Pagpepresyo
+### Bakit Epektibo ang Taunang Pagpepresyo {#why-annual-pricing-works}
 
 - **Para sa iyo**: Cash sa simula, mas mababang *churn* (ang mga customer na nagbabayad nang taunan ay hindi gaanong malamang na mag-cancel sa kalagitnaan ng panahon)
 - **Para sa kanila**: Tunay na matitipid, *budget predictability*
 
-## Setup Fees (Mga Bayad sa Pag-set Up)
+## Setup Fees (Mga Bayad sa Pag-set Up) {#setup-fees}
 
 Isaalang-alang ang isang *one-time setup fee* para sa mga planong nangangailangan ng hands-on na pag-configure:
 
@@ -61,7 +61,7 @@ Isaalang-alang ang isang *one-time setup fee* para sa mga planong nangangailanga
 
 I-configure ang *setup fees* sa *pricing section* ng bawat plano. Tingnan ang [Creating Your First Subscription Product](/user-guide/configuration/creating-your-first-subscription-product) para sa mga detalye.
 
-## Trial Periods (Panahon ng Pagsubok)
+## Trial Periods (Panahon ng Pagsubok) {#trial-periods}
 
 Ang pag-aalok ng *trial* ay nagbabawas ng pagkaantala sa pag-sign up, ngunit nagdadala rin ito ng panganib na hindi mag-convert ang customer. Para sa FitSite:
 
@@ -70,11 +70,11 @@ Ang pag-aalok ng *trial* ay nagbabawas ng pagkaantala sa pag-sign up, ngunit nag
 
 I-configure ang *trial* sa *pricing section* ng Starter plan sa pamamagitan ng pag-e-enable ng **Offer Trial** toggle at pagtatakda ng tagal sa 7 araw.
 
-### Pagpapataas ng Conversion mula sa Trials
+### Pagpapataas ng Conversion mula sa Trials {#making-trials-convert}
 
 Ang isang *trial* ay gumagana lamang kung makakaranas ng halaga ang customer sa loob ng *trial period*. Ang iyong *onboarding sequence* (Aralin 8) ay kritikal dito — ang mga *welcome email* ay dapat naka-iskedyul para mag-udyok ng *engagement* sa loob ng 7-araw na *window*.
 
-## Discount Codes (Mga Code ng Diskwento)
+## Discount Codes (Mga Code ng Diskwento) {#discount-codes}
 
 Gumawa ng mga estratehikong *discount code* para sa mga tiyak na layunin:
 
@@ -88,7 +88,7 @@ Pumunta sa **Ultimate Multisite > Discount Codes** para gawin ang mga ito. Tingn
 Ang mga diskwento ay dapat na mga estratehikong kasangkapan, hindi permanenteng bahagi. Kung lahat ay makakakuha ng diskwento, hindi na ito diskwento — ito na ang totoong presyo mo. Gamitin ang mga ito para sa mga tiyak na kampanya, *referral*, at *time-limited promotion*.
 :::
 
-## Tax Handling (Paghawak ng Buwis)
+## Tax Handling (Paghawak ng Buwis) {#tax-handling}
 
 Kung nag-ooperate ka sa isang hurisdiksyon na nangangailangan ng pagkolekta ng buwis:
 
@@ -98,7 +98,7 @@ Kung nag-ooperate ka sa isang hurisdiksyon na nangangailangan ng pagkolekta ng b
 
 Tingnan ang [Tax Handling](/user-guide/payment-gateways/tax-handling) para sa detalyadong *configuration*. Kung naglilingkod ka sa mga customer sa ibang bansa, isaalang-alang ang [VAT addon](/addons/vat) para sa pagsunod sa EU.
 
-## Pagre-review ng Iyong Pagpepresyo
+## Pagre-review ng Iyong Pagpepresyo {#reviewing-your-pricing}
 
 Pagkatapos mag-launch, balikan ang pagpepresyo kada quarter. Tingnan ang:
 
@@ -107,7 +107,7 @@ Pagkatapos mag-launch, balikan ang pagpepresyo kada quarter. Tingnan ang:
 - **Churn by plan**: Kung mas mababa ang *churn* ng mga taunang customer, mas palakasin ang pagbebenta ng *annual pricing*
 - **Competitor pricing**: Magkano ang sinisingil ng mga alternatibo? Tama ba ang posisyon mo?
 
-## Ang FitSite Network Hanggang Ngayon
+## Ang FitSite Network Hanggang Ngayon {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -132,7 +132,7 @@ FitSite Network
 └── Ready for launch (next lesson)
 ```
 
-## Ano ang Binuo Natin sa Araling Ito
+## Ano ang Binuo Natin sa Araling Ito {#what-we-built-this-lesson}
 
 - **Annual pricing** na may 20% diskwento para hikayatin ang pangako
 - **Setup fees** sa mas mataas na *tier* para masakop ang pagsisikap sa *onboarding*

@@ -3,7 +3,7 @@ title: Céadtaíocht WooCommerce
 sidebar_position: 9
 _i18n_hash: 64e2517a66a209111e1cdb519a920b37
 ---
-# Iompairte le WooCommerce
+# Iompairte le WooCommerce {#woocommerce-integration}
 
 Is feidmhse seo curte á leat ag an **WooCommerce Integration**.
 

@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector के साथ अपने नेटवर्क पर विज्ञापन लगाना
+# Ultimate Multisite: Ad Injector के साथ अपने नेटवर्क पर विज्ञापन लगाना {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector एक **मुफ्त add-on** है जो आपको सीधे plan के edit page से विज्ञापन लगाने की सुविधा देता है।
 
@@ -35,7 +35,7 @@ _अपने विज्ञापन का code डालने के बा
 
 _अगर आप अपने user के back-end पर विज्ञापन दिखाना चाहते हैं तो Admin Panel Ad Code option पर जाएं_
 
-### विज्ञापन से परे
+### विज्ञापन से परे {#beyond-advertising}
 
 आप Ultimate Multisite: Ad Injector का उपयोग high-tier plans के लिए सपोर्ट देने के लिए भी कर सकते हैं।
 

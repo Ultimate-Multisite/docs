@@ -3,7 +3,7 @@ title: Plugin en Tema Bestuurder
 sidebar_position: 11
 _i18n_hash: 12308e3f7d1aa025d7dc4088496e3ad8
 ---
-# Plugin en Tema Bestuurder
+# Plugin en Tema Bestuurder {#plugin-and-theme-manager}
 
 Hierdie funksie word verskaf deur die **Plugin & Theme Manager** addon.
 

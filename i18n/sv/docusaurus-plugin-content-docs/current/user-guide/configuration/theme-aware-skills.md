@@ -3,11 +3,11 @@ title: Temabevigande färdigheter
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Temabevigade färdigheter
+# Temabevigade färdigheter {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 släpper fyra nya temabevigade inbyggda färdigheter som automatiskt anpassar sig till det WordPress-tema du använder. Dessa färdigheter ger specialiserad vägledning och kapacitet anpassad efter ditt temas arkitektur och funktioner.
 
-## Vad är temabevigade färdigheter?
+## Vad är temabevigade färdigheter? {#what-are-theme-aware-skills}
 
 Temabevigade färdigheter är förkonfigurerade kunskapsdatabaser och verktyg som AI-assistenten automatiskt väljer baserat på det WordPress-tema som för närvarande är aktivt på din webbplats. När du byter tema uppdateras assistentens tillgängliga färdigheter automatiskt – ingen manuell konfiguration krävs.
 
@@ -18,9 +18,9 @@ Varje färdighet inkluderar:
 - **Anpassningsexempel** — kodsnuttar och konfigurationsmönster för vanliga uppgifter
 - **Bästa praxis** — rekommendationer för tematets arkitektur och arbetsflöde
 
-## Tillgängliga temabevigade färdigheter
+## Tillgängliga temabevigade färdigheter {#available-theme-aware-skills}
 
-### Blockteman
+### Blockteman {#block-themes}
 
 **Gäller för:** Teman som använder WordPress blockbaserade (Full Site Editing) arkitektur.
 
@@ -34,7 +34,7 @@ Blockteman-färdigheten ger vägledning om:
 
 **Aktiveras automatiskt när:** Ditt aktiva tema är ett blocktema (stöder funktionen `block-templates`).
 
-### Klassiska teman
+### Klassiska teman {#classic-themes}
 
 **Gäller för:** Traditionella WordPress-teman som använder PHP-mallar och den klassiska redigeraren.
 
@@ -48,7 +48,7 @@ Klassiska teman-färdigheten ger vägledning om:
 
 **Aktiveras automatiskt när:** Ditt aktiva tema är ett klassiskt (icke-block) tema.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Gäller för:** Webbplatser som använder Kadence Blocks-plugin för avancerad blockbaserad design.
 
@@ -62,7 +62,7 @@ Kadence Blocks-färdigheten ger vägledning om:
 
 **Aktiveras automatiskt när:** Kadence Blocks-plugin är aktivt på din webbplats.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Gäller för:** Webbplatser som använder Kadence-temat för blockbaserad design och anpassning.
 
@@ -76,15 +76,15 @@ Kadence Theme-färdigheten ger vägledning om:
 
 **Aktiveras automatiskt när:** Kadence-temat är ditt aktiva tema.
 
-## Hur färdigheter väljs
+## Hur färdigheter väljs {#how-skills-are-selected}
 
 Assistenten upptäcker automatiskt ditt aktiva tema och installerade plugins i varje meddelande. Om en matchande temabevigad färdighet finns tillgänglig laddas den automatiskt in i assistentens kontext. Du behöver inte manuellt aktivera eller byta färdigheter.
 
-### Flera färdigheter
+### Flera färdigheter {#multiple-skills}
 
 Om flera färdigheter gäller för din webbplats (till exempel om du har både Kadence Blocks och Kadence Theme aktiva) har assistenten tillgång till alla tillämpliga färdigheter och kan hänvisa till vägledning från var och en.
 
-### Byte av teman
+### Byte av teman {#switching-themes}
 
 När du byter ditt aktiva tema uppdateras assistentens tillgängliga färdigheter automatiskt i nästa meddelande. Till exempel:
 
@@ -92,11 +92,11 @@ När du byter ditt aktiva tema uppdateras assistentens tillgängliga färdighete
 2. Du byter till ett klassiskt tema.
 3. I ditt nästa meddelande laddas **Klassiska teman**-färdigheten automatiskt, och **Blockteman**-färdigheten är inte längre tillgänglig.
 
-## Använda temabevigade färdigheter
+## Använda temabevigade färdigheter {#using-theme-aware-skills}
 
 För att utnyttja en temabevigad färdighet, beskriv helt enkelt vad du vill göra i chattgränssnittet. Assistenten kommer automatiskt att hänvisa till den lämpliga färdighetens vägledning.
 
-### Exempelförfrågningar
+### Exempelförfrågningar {#example-prompts}
 
 **För Blockteman:**
 > "Skapa en hero-sektion med en bakgrundsbild och centrerad text med hjälp av blockmönster."

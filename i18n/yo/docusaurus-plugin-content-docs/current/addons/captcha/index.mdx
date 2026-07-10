@@ -1,0 +1,210 @@
+---
+title: Captcha
+sidebar_position: 1
+_i18n_hash: bc55abb7ee355db31ba70e00c3e346ef
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-captcha" name="Captcha" />
+
+# Captcha {#captcha}
+
+**Dá Àwọn Bọ́ọ̀tì Dúró. Dáàbò Bo Owo-wíwọlé. Kò Sí Ìnira Ìṣètò Rárá.**
+
+Ṣe o ń ṣiṣẹ́ nẹ́tíwọ́ọ̀kì ọ̀pọ̀-sáìtì pẹ̀lú àwọn domain àdáni? O mọ ìrora náà: Google reCAPTCHA àti hCaptcha nílò kí o forúkọsílẹ̀ *gbogbo domain kọ̀ọ̀kan* nínú console admin wọn. Fi sáìtì oníbàárà tuntun kún un? Ṣe àfikún captcha config. Map domain àdáni kan? Ṣe àfikún lẹ́ẹ̀kansi. Kò ní òpin.
+
+**Ultimate Multisite: Captcha yí ohun gbogbo padà.**
+
+## Cap Captcha: Ààbò Self-Hosted Tí Ó Kan Ṣiṣẹ́ {#cap-captcha-self-hosted-protection-that-just-works}
+
+Olùpèsè **Cap Captcha** tuntun wa jẹ́ ohun tó yí eré padà fún àwọn nẹ́tíwọ́ọ̀kì ọ̀pọ̀-sáìtì:
+
+* **Kò Sí Ìṣètò Rárá** — Mú addon ṣiṣẹ́, o sì ti ní ààbò. Kò sí API keys, kò sí Google account, kò sí hCaptcha dashboard, kò sí fífi domain sí whitelist.
+* **Ó Ṣiṣẹ́ Lórí Gbogbo Domain Láìfẹ̀sùn Kan** — Subdomains, mapped domains, customer domains—gbogbo wọn ni a dáàbò bò lẹ́sẹ̀kẹsẹ̀.
+* **Self-Hosted & Àṣírí** — Data rẹ kì í fi server rẹ sílẹ̀. Ó bá GDPR mu pátápátá láìsí ìtọpa ẹni-kẹta.
+* **Proof-of-Work Aláìrí** — Àwọn aṣàmúlò yanju ìṣòro ìṣirò ní abẹ́lẹ̀. Kò sí fífi ọwọ́ tẹ fire hydrants, kò sí image grids tó ń mú ìbínú.
+* **Fúyẹ́** — 20KB péré. Kì yóò fa checkout rẹ lọ́ra.
+
+## Ààbò WooCommerce Card Testing {#woocommerce-card-testing-protection}
+
+Àwọn ìkọlù card testing ń ná àwọn oníṣòwò ní ọ̀pọ̀ bílíọ̀nù lọ́dọọdún. Àwọn fraudsters máa ń lo bọ́ọ̀tì láti fìdí àwọn credit cards tí wọ́n jí gbé múlẹ̀ lòdì sí WooCommerce checkout rẹ—ìwọ ni yóò san processing fees, wọ́n yóò sì gba àwọn nọ́ńbà káàdì tó wúlò.
+
+**A ń dáàbò bo ibi tí ó ṣe pàtàkì jù lọ:**
+
+* **Ààbò Store API** — Dínà àwọn ìkọlù bọ́ọ̀tì lórí `/wp-json/wc/store/v1/checkout` tí ń yà àwọn captcha fọ́ọ̀mù àtẹ̀yìnwá kọjá
+* **Ó Bá PayPal Payments Mu** — Ó ṣiṣẹ́ láìsí ìṣòro pẹ̀lú WooCommerce PayPal Payments
+* **Statistics Ní Àkókò Gidi** — Wo iye ìkọlù gangan tí o ń dínà
+
+## Ṣe O Ṣì Nílò Google reCAPTCHA tàbí hCaptcha? {#still-need-google-recaptcha-or-hcaptcha}
+
+A ti pèsè fún ọ. Àtìlẹ́yìn kíkún fún:
+
+* Google reCAPTCHA v2 (Checkbox)
+* Google reCAPTCHA v2 (Invisible)
+* Google reCAPTCHA v3 (Score-based)
+* hCaptcha (Standard)
+* hCaptcha (Invisible)
+
+Yípadà láàárín àwọn olùpèsè nígbàkigbà láti àwọn settings nẹ́tíwọ́ọ̀kì rẹ.
+
+## A Kọ Ó Fún Ìwọn Nlá {#built-for-scale}
+
+* Àwọn settings tó kan gbogbo nẹ́tíwọ́ọ̀kì pẹ̀lú per-site overrides
+* Statistics dashboard láti tọ́pa ààbò
+* Àwọn ìpele ààbò tí a lè ṣàtúnṣe (Yára, Àárín, Gíga Jù)
+* Ó rọrùn fún developer pẹ̀lú provider architecture tí a lè faagun
+
+## Ìfìsípò {#installation}
+
+1. Upload `ultimate-multisite-captcha` sí directory `/wp-content/plugins/` rẹ
+2. Network Activate plugin náà
+3. **Ìyẹn ni. O ti ní ààbò.**
+
+Cap Captcha máa ń ṣiṣẹ́ láìfẹ̀sùn kan—kò sí settings láti configure, kò sí API keys láti tẹ̀ sílẹ̀. Gbogbo endpoint tí a ṣe àtìlẹ́yìn fún jákèjádò gbogbo nẹ́tíwọ́ọ̀kì rẹ ni a dáàbò bò ní ìṣẹ́jú tí o bá activate.
+
+**Àṣàyàn:** Láti lo Google reCAPTCHA tàbí hCaptcha dípò rẹ̀, lọ sí **Ultimate Multisite → Settings → Captcha** kí o sì yan olùpèsè tí o fẹ́.
+
+## Àwọn Ìbéèrè Tí A Máa Ń Béèrè Lọ́pọ̀ Ìgbà {#frequently-asked-questions}
+
+## Ṣe mo nílò láti configure ohunkóhun? {#do-i-need-to-configure-anything}
+
+Rárá! Cap Captcha máa ń ṣiṣẹ́ láìfẹ̀sùn kan nígbà tí o bá activate addon náà. Gbogbo nẹ́tíwọ́ọ̀kì rẹ ni a dáàbò bò lẹ́sẹ̀kẹsẹ̀—kò sí settings láti configure, kò sí API keys láti tẹ̀ sílẹ̀.
+
+## Ṣe mo nílò API keys fún Cap Captcha? {#do-i-need-api-keys-for-cap-captcha}
+
+Rárá. Cap Captcha jẹ́ self-hosted pátápátá. Kò sí accounts òde, kò sí ìforúkọsílẹ̀ domain, kò sí wahalà configuration.
+
+## Ṣé èyí yóò fa checkout mi lọ́ra? {#will-this-slow-down-my-checkout}
+
+Cap Captcha jẹ́ 20KB péré, ó sì ń ṣiṣẹ́ àwọn ìpèníjà proof-of-work ní abẹ́lẹ̀. Àwọn oníbàárà rẹ kì yóò rí ìdádúró kankan.
+
+## Ṣé èyí ń dáàbò bo lòdì sí àwọn ìkọlù card testing? {#does-this-protect-against-card-testing-attacks}
+
+Bẹ́ẹ̀ ni! Kò dàbí àwọn captcha àtẹ̀yìnwá tí wọ́n ń dáàbò bo àwọn fọ́ọ̀mù HTML nìkan, ìṣepọ̀ WooCommerce wa so mọ́ Store API taara láti dínà àwọn ìkọlù bọ́ọ̀tì ní ìpele API—ibi tí ọ̀pọ̀ jùlọ àwọn ìkọlù card testing ti máa ń ṣẹlẹ̀.
+
+## Ṣé mo lè lo àwọn olùpèsè captcha ọ̀tọ̀ọ̀tọ̀ lórí àwọn sáìtì ọ̀tọ̀ọ̀tọ̀? {#can-i-use-different-captcha-providers-on-different-sites}
+
+Olùpèsè captcha ni a ṣètò fún gbogbo nẹ́tíwọ́ọ̀kì, ṣùgbọ́n o lè ṣàtúnṣe àwọn settings ìṣòro gẹ́gẹ́ bí àìní rẹ.
+
+## Ṣé èyí bá GDPR mu? {#is-this-gdpr-compliant}
+
+Cap Captcha jẹ́ 100% self-hosted láìsí data tí a fi ránṣẹ́ sí àwọn iṣẹ́ òde. Fún Google reCAPTCHA àti hCaptcha, jọ̀wọ́ ṣàyẹ̀wò àwọn ìlànà ìpamọ́ wọn kálukú.
+
+## Rate Limiting {#rate-limiting}
+
+Ultimate Multisite: Captcha v1.5.0 mú rate limiter hard-stop wá tí ń dáàbò bo nẹ́tíwọ́ọ̀kì rẹ lòdì sí brute-force àti àwọn ìkọlù card-testing.
+
+### Bí Ó Ṣe Ń Ṣiṣẹ́ {#how-it-works}
+
+Rate limiter náà ń ka gbogbo ìbéèrè GET àti POST lórí àwọn ojú-ìfẹ́lẹ̀ tí captcha dáàbò bò:
+
+* **Àwọn endpoint login WordPress** — wp-login, register, lost-password, comments
+* **WooCommerce checkout** — my-account, checkout, pay-for-order
+* **Ultimate Multisite** — checkout, inline-login
+
+Nígbà tí alejo bá kọjá rate limit, plugin náà máa dáhùn pẹ̀lú:
+
+* **HTTP 429 (Too Many Requests)** status code
+* Header **Retry-After** tó ń fi hàn ìgbà tí a lè gbìyànjú lẹ́ẹ̀kansi
+* **Orun tarpit tí a randomise** (1–5 ìṣẹ́jú-àáyá nípa default, tí a hard-cap sí 15 ìṣẹ́jú-àáyá) láti fa àwọn attackers lọ́ra
+
+### Configuration {#configuration}
+
+#### Tarpit Timing {#tarpit-timing}
+
+Ṣàkóso ìdádúró tí a randomise tí a fi sí àwọn ìbéèrè tí rate-limited:
+
+* **`cap_rate_limit_tarpit_min`** — Gígùn orun tó kéré jù ní ìṣẹ́jú-àáyá (default: 1)
+* **`cap_rate_limit_tarpit_max`** — Gígùn orun tó pọ̀ jù ní ìṣẹ́jú-àáyá (default: 5, hard-capped at 15)
+
+Àwọn settings wọ̀nyí wà ní **Ultimate Multisite → Settings → Captcha**.
+
+### Extensibility {#extensibility}
+
+#### IP Whitelist Filter {#ip-whitelist-filter}
+
+Yọ àwọn IP ranges tí a gbẹ́kẹ̀lé kúrò nínú rate limiting:
+
+```php
+add_filter( 'wu_cap_rate_limit_whitelist_ip', function( $is_whitelisted, $ip ) {
+    // Whitelist your monitoring service
+    if ( $ip === '203.0.113.42' ) {
+        return true;
+    }
+    return $is_whitelisted;
+}, 10, 2 );
+```
+
+#### Pre-Block Action {#pre-block-action}
+
+Ṣiṣe logic àdáni lẹ́sẹ̀kẹsẹ̀ ṣáájú kí a tó fi rate-limit block ránṣẹ́:
+
+```php
+add_action( 'wu_cap_rate_limit_will_block', function( $ip, $surface ) {
+    // Log the block, notify admins, or update custom metrics
+    error_log( "Rate limit triggered for $ip on $surface" );
+}, 10, 2 );
+```
+
+## Ìṣàwárí Client IP & Àwọn Proxies Tí A Gbẹ́kẹ̀lé {#client-ip-detection--trusted-proxies}
+
+Ultimate Multisite: Captcha v1.5.0 mú ìṣàwárí client-IP tí ń kọ spoofing wá. Method `Captcha_Core::get_client_ip()` ni orísun òtítọ́ kan ṣoṣo báyìí fún ìsọ IP alejo jákèjádò:
+
+* Àwọn rate-limit bucket keys
+* Olùpèsè Captcha `remoteip` (reCAPTCHA, hCaptcha `siteverify`)
+* Àwọn hashes IP Statistics
+
+### Trust Model {#trust-model}
+
+Plugin náà ń fi agbára mú ìpele ìgbẹ́kẹ̀lé IP tó muna:
+
+1. **REMOTE_ADDR** — A máa ń gbẹ́kẹ̀lé nígbà gbogbo (IP peer lẹ́sẹ̀kẹsẹ̀)
+2. **CF-Connecting-IP** — A máa bọ̀wọ̀ fún un nìkan nígbà tí:
+   - Peer lẹ́sẹ̀kẹsẹ̀ wà nínú Cloudflare IP range lọwọlọwọ
+   - `cap_trust_cloudflare_headers` ti ṣiṣẹ́ (default: OFF)
+3. **X-Forwarded-For** — A máa bọ̀wọ̀ fún un nìkan nígbà tí:
+   - Peer lẹ́sẹ̀kẹsẹ̀ wà nínú àtòjọ trusted-proxy tí admin rẹ configure
+   - A parse header náà láti ọ̀tún sí òsì, ní fífi trusted/Cloudflare hops sílẹ̀
+
+### Configuration {#configuration-1}
+
+#### Ìgbẹ́kẹ̀lé Cloudflare Header {#cloudflare-header-trust}
+
+Mú ìgbẹ́kẹ̀lé header `CF-Connecting-IP` ti Cloudflare ṣiṣẹ́:
+
+* **`cap_trust_cloudflare_headers`** — Ṣètò sí ON láti wọ inú ìgbẹ́kẹ̀lé `CF-Connecting-IP`
+  - Default: OFF (disabled)
+  - Plugin náà wá pẹ̀lú Cloudflare CIDR snapshot tí a bundled
+  - CIDR ranges ni a máa ń túnṣe lẹ́ẹ̀kan lọ́sẹ̀ nípasẹ̀ wp-cron
+  - Bundled fallback ni a máa lò bí refresh bá kuna
+
+#### Configuration Trusted Proxy {#trusted-proxy-configuration}
+
+Ṣàlàyé àwọn proxies àti load-balancers iwájú rẹ:
+
+* **`cap_trusted_proxies`** — Textarea fún CIDRs tàbí IPs lasan (ọ̀kan ní laini kọ̀ọ̀kan)
+  - A gba comments láàyè (àwọn laini tó bẹ̀rẹ̀ pẹ̀lú `#`)
+  - Láìsí setting yìí, `X-Forwarded-For` ni a máa kọ̀, kódà nígbà tí rate limiter bá ṣiṣẹ́
+  - Àpẹẹrẹ:
+    ```
+    # Our load balancer
+    192.0.2.0/24
+
+    # Backup proxy
+    198.51.100.50
+    ```
+
+#### Ìṣàwárí Aládàáṣiṣẹ́ Nígbà Ìmúṣiṣẹ́ Àkọ́kọ́ {#first-enable-auto-detection}
+
+Nígbà tí o bá kọ́kọ́ mú rate limiter ṣiṣẹ́, plugin náà máa ṣàwárí ìpò Cloudflare àti proxy tí ó ṣeé ṣe kí o ní, ó sì máa fi ìkìlọ̀ admin “Apply detected settings” tí o lè tẹ lẹ́ẹ̀kan hàn.
+
+* Plugin náà **kì í kọ lórí** àwọn iye tí o ti fipamọ́ rí
+* Bí traffic tó tẹ̀lé bá fi hàn pé config rẹ kò bá òtítọ́ mu mọ́ (fún àpẹẹrẹ, Cloudflare yí CIDR ranges padà), ìkìlọ̀ mismatch tí a kò lè dismiss máa fi update tí a ṣàbẹ̀wò hàn
+
+### Ìdí Tí Èyí Fi Ṣe Pàtàkì {#why-this-matters}
+
+Trust model IP tó muna ń pa ọ̀nà spoofing pàtàkì kan: àwọn ìbéèrè origin-server taara tí wọ́n gbé header `CF-Connecting-IP` èké wá ni a ti máa ti fi sínú bucket nípa IP èké dípò peer gidi tẹ́lẹ̀. Èyí ṣe pàtàkì gan-an fún:
+
+* **Rate limiting** — Àwọn attackers kò lè yà limits kọjá nípa spoofing IPs
+* **Statistics** — Àwọn metrics ìkọlù rẹ ń fi àwọn IPs alejo gidi hàn, kì í ṣe àwọn èké
+* **Ìfìdí Captcha múlẹ̀** — Àwọn olùpèsè gba IP alejo tó tọ́ fún risk assessment

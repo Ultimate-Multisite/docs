@@ -3,11 +3,11 @@ title: Zvinovaka dzeMudzidzo nemarudzo ekutendeka
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Kurudzera Kwezvinovhu neKutanga Matambudziko
+# Kurudzera Kwezvinovhu neKutanga Matambudziko {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 inoratidza sistemu yekutanga zvinhu uye kutanga matambudziko inotanga kune mupfumbiro wekuti vanhu vakuru (end users) vanogona kuita kuti zvinovhu zvakasiya uye kuita kutanga matambudziko nekuti vachishandisa chat interface. Iyi sistemu inoratidza kuratidza kuti vachikubatsira kana vachisanganisira, command yekutanga kutanga (automated reporting command), uye kuteerera kwemashure (triage) kubatsirwa neAI mumapfumbiro ekupfumbiro.
 
-## Button YeKutanga Kuti Zvinovhu (Thumbs-Down Button)
+## Button YeKutanga Kuti Zvinovhu (Thumbs-Down Button) {#thumbs-down-button}
 
 Mazuva onozuva kuti AI assistant inenge inotangura, inoratidza button ye**thumbs-down** (👎). Kana mutsavo anokutanga, anogona kuita kuti mupfumbiro uone sei kana unowanikwa.
 
@@ -15,7 +15,7 @@ Mazuva onozuva kuti AI assistant inenge inotangura, inoratidza button ye**thumbs
 - Kana ukutanga, inongova **Feedback Consent Modal**.
 - Mupfumbiro unogona kuita kuti uone sei kana mupfumbiro uyu unowanikwa kana unowanikwa.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Kana mutsavo anokutanga button yethumbs-down, modal yekutanga (consent modal) inoratidzorwa panguva dambudziko rinogona kuita kuti data ine kutanga. Modal iyi:
 
@@ -26,13 +26,13 @@ Kana mutsavo anokutanga button yethumbs-down, modal yekutanga (consent modal) in
 
 Hakuna kutanga kwemupfumbiro kunoita mpaka mutsavo anokubatsira kuti uone sei.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Panguva conversation inotanga, assistant inogona kuoratidza **auto-prompt feedback banner** — iye ndiyo message inosawana nekutanga (non-intrusive) inobvunza kana mupfumbiro uyu unowanikwa.
 
 Banner iyi inongova nekuita zvinhu zvakasiya uye kuratidza kuti conversation yakasiyana, kune heuristics dzakasiyana dzekusarudzo. Inoita link kune flow yese yekutanga kutanga (thumbs-down button). Vanhu vanogona kuita banner iyi sei pane kunge kubvunza mupfumbiro.
 
-## /report-issue Slash Command
+## /report-issue Slash Command {#report-issue-slash-command}
 
 Vanhu vanogona kuratidza flow yeutanga kutanga nekuti vachishandisa `/report-issue` mu chat input. Command iyi:
 
@@ -42,7 +42,7 @@ Vanhu vanogona kuratidza flow yeutanga kutanga nekuti vachishandisa `/report-iss
 
 Command ya `/report-issue` inenge yakaita mazuva onozivaka (inline), widget inotevera, uye full-screen.
 
-## AI-Assisted Triage
+## AI-Assisted Triage {#ai-assisted-triage}
 
 Feedback inoshandiswa kuenda ku layer ya AI triage inotanga:
 

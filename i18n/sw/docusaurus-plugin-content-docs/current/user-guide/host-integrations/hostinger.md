@@ -1,22 +1,22 @@
 ---
 title: Uunganishaji wa Hostinger (hPanel)
 sidebar_position: 7
-_i18n_hash: db876ad40b78d2075e03ba70fe7f541f
+_i18n_hash: ce631be523b8bbe2bf3156a106abfa3d
 ---
-# Uunganishaji na Hostinger (hPanel)
+# Uunganishaji na Hostinger (hPanel) {#hostinger-hpanel-integration}
 
-## Muhtasari
+## Muhtasari {#overview}
 
 Hostinger ni mtoa huduma maarufu wa hosting ya tovuti mwenye control panel ya kisasa inayoitwa hPanel. Uunganishaji wa Ultimate Multisite na Hostinger unaruhusu kuunganishwa kiotomatiki cha nyanja (domain syncing) kati ya Ultimate Multisite na hPanel ya Hostinger. Hii inakuruhusu kusimamia ramani za nyanja (domain mappings) na subdomains kiotomatiki moja kwa moja kutoka kwenye admin yako ya WordPress.
 
-## Vipengele
+## Vipengele {#features}
 
 - Kuunda addon domains kiotomatiki katika hPanel
 - Kuunda subdomains kiotomatiki katika hPanel (kwa usakinishaji wa multisite wa subdomains)
 - Kuondoa nyanja wakati ramani zake zinapofutwa
 - Uunganishaji laini na API ya usimamizi wa nyanja ya hPanel
 
-## Mahitaji
+## Mahitaji {#requirements}
 
 Ili kutumia uunganishaji wa Hostinger, unahitaji:
 
@@ -35,9 +35,9 @@ Kwa hiari, pia unaweza kufafanua:
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API endpoint ya kiwango
 ```
 
-## Maelekezo ya Usakinishaji
+## Maelekezo ya Usakinishaji {#setup-instructions}
 
-### 1. Tengeneza Token yako ya API ya Hostinger
+### 1. Tengeneza Token yako ya API ya Hostinger {#1-generate-your-hostinger-api-token}
 
 1. Ingia kwenye akaunti yako ya Hostinger na ufikie hPanel
 2. Nenda kwenye **Account Settings** → **API Tokens**
@@ -48,13 +48,13 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1'); // API endpoint 
    - Usimamizi wa subdomains (Subdomain management)
 6. Nakili token iliyotengenezwa na kuihifadhi kwa usalama
 
-### 2. Tafuta Account ID yako
+### 2. Tafuta Account ID yako {#2-find-your-account-id}
 
 1. Katika hPanel, nenda kwenye **Account Settings** → **Account Information**
 2. Account ID yako inaonyeshwa kwenye ukurasa huu
 3. Nakili na hifadhi ID hii kwa hatua inayofuata
 
-### 3. Ongeza Constants kwenye wp-config.php
+### 3. Ongeza Constants kwenye wp-config.php {#3-add-constants-to-wp-configphp}
 
 Ongeza *constants* zifuatazo kwenye faili yako ya `wp-config.php`:
 
@@ -69,7 +69,7 @@ Ikiwa akaunti yako ya Hostinger inatumia *API endpoint* tofauti, unaweza kuifany
 define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 ```
 
-### 4. Washa Uunganishaji
+### 4. Washa Uunganishaji {#4-enable-the-integration}
 
 1. Katika admin yako ya WordPress, nenda kwenye **Ultimate Multisite > Settings**
 2. Nenda kwenye tab ya **Domain Mapping**
@@ -77,9 +77,9 @@ define('WU_HOSTINGER_API_URL', 'https://api.hostinger.com/v1');
 4. Washa uunganishaji wa **Hostinger (hPanel)**
 5. Bonyeza **Save Changes**
 
-## Jinsi Inavyofanya Kazi
+## Jinsi Inavyofanya Kazi {#how-it-works}
 
-### Addon Domains
+### Addon Domains {#addon-domains}
 
 Unapoweka ramani ya nyanja (domain) katika Ultimate Multisite:
 
@@ -87,7 +87,7 @@ Unapoweka ramani ya nyanja (domain) katika Ultimate Multisite:
 2. Nyanja hiyo inaanwaniwa kuonyesha kwenye *root directory* yako
 3. Wakati ramani ya nyanja inapotolewa, uunganishaji unatoa *addon domain* kiotomatiki kutoka hPanel
 
-### Subdomains
+### Subdomains {#subdomains}
 
 Kwa usakinishaji wa multisite wa subdomains, wakati tovuti mpya inapotengenezwa:
 
@@ -95,7 +95,7 @@ Kwa usakinishaji wa multisite wa subdomains, wakati tovuti mpya inapotengenezwa:
 2. Unatuma ombi kwa API ya Hostinger kuongeza subdomain hiyo
 3. Subdomain hiyo inaanwaniwa kuonyesha kwenye *root directory* yako
 
-## Vidokezo Muhimu
+## Vidokezo Muhimu {#important-notes}
 
 - Uunganishaji unatumia REST API ya Hostinger kuwasiliana na akaunti yako
 - Token yako ya API lazima iwe na ruhusa muhimu kwa usimamizi wa nyanja na subdomains
@@ -103,33 +103,33 @@ Kwa usakinishaji wa multisite wa subdomains, wakati tovuti mpya inapotengenezwa:
 - Maombi ya API yanatumiwa kwa usalama kupitia HTTPS
 - Hifadhi token yako ya API kwa usalama na usiwahi kushiriki hadharani
 
-## Kutatua Matatizo
+## Kutatua Matatizo {#troubleshooting}
 
-### Matatizo ya Muunganisho wa API
+### Matatizo ya Muunganisho wa API {#api-connection-issues}
 
 - Thibitisha kuwa token yako ya API ni sahihi na haijapita muda wake
 - Angalia kuwa Account ID yako ni sahihi
 - Hakikisha kuwa token yako ya API ina ruhusa muhimu kwa usimamizi wa nyanja
 - Thibitisha kuwa akaunti yako ya Hostinger ni hai na katika hali nzuri
 
-### Nyanja Haiongezekwi
+### Nyanja Haiongezekwi {#domain-not-added}
 
 - Angalia logi za Ultimate Multisite kwa ujumbe wowote wa makosa
 - Thibitisha kuwa nyanja hiyo haiongezekwaje tayari kwenye akaunti yako ya Hostinger
 - Hakikisha kuwa akaunti yako ya Hostinger haifiki kikomo chake cha *addon domains*
 - Thibitisha kuwa nyanja hiyo inaonyeshwa ipasavyo kwenye *nameservers* za Hostinger
 
-### Matatizo ya Cheti cha SSL
+### Matatizo ya Cheti cha SSL {#ssl-certificate-issues}
 
 - Uunganishaji hausimami kutoa cheti cha SSL
 - Hostinger kwa kawaida hutoa cheti cha SSL bure kupitia AutoSSL
 - Unaweza kusimamia cheti cha SSL moja kwa moja katika hPanel chini ya **SSL/TLS**
 - Badala yake, tumia Let's Encrypt na kipengele cha AutoSSL cha Hostinger
 
-## Wasili
+## Wasili {#support}
 
 Kwa msaada zaidi kuhusu uunganishaji wa Hostinger, tafadhali rejelea:
 
 - [Hostinger API Documentation](https://support.hostinger.com/en/articles/4286-api-documentation)
-- [Ultimate Multisite Documentation](/docs)
+- [Ultimate Multisite Documentation](/)
 - [Ultimate Multisite Support](https://ultimatemultisite.com/support)

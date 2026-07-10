@@ -3,9 +3,9 @@ title: Makside ja faktuuride haldamine
 sidebar_position: 15
 _i18n_hash: 1aefdd4ebf84e2eda188b3d28ce18e36
 ---
-# Makside maksude ja faktuuride haldamine
+# Makside maksude ja faktuuride haldamine {#managing-payments-and-invoices}
 
-## Makse seadistused
+## Makse seadistused {#payment-settings}
 
 Enne alustate makside vastaanGimiseks peab teada seadistuste konfiguratsioonidest. Minimeerige **Ultimate Multisite → Seaded** ja klõpsake **Makse** tabile.
 
@@ -15,7 +15,7 @@ Siin on täielik vaade makse seadistuste lehel:
 
 ![Payment settings full page](/img/admin/settings-payments-full.png)
 
-### Üldised maksukohad
+### Üldised maksukohad {#general-payment-options}
 
 Üldise seadistustes saate konfigurida:
 
@@ -24,7 +24,7 @@ Siin on täielik vaade makse seadistuste lehel:
 
 ![Payment gateway settings](/img/admin/settings-payments-options.png)
 
-### Makseportaalid
+### Makseportaalid {#payment-gateways}
 
 Ultimate Multisite toetab mitmeid makseportaalideid. Saate aktiveerida ja konfigurida igaühtest sellest seadistuste tabist.
 
@@ -40,11 +40,11 @@ Iga portaalil on oma konfiguratsiooniseksjon, kus anda API-kaudid ja teised sead
 
 ![Additional gateway settings](/img/admin/settings-payments-gateways-2.png)
 
-### Sandboxi režiim
+### Sandboxi režiim {#sandbox-mode}
 
 Saate aktiveerida **Sandboxi režiimi** testi makseintegreerimise enne elamisel. Kui sandboxi režiim on aktiivne, ei tehtakse tõelisi lahkumisi.
 
-## Makside vaatamise
+## Makside vaatamise {#viewing-payments}
 
 Minimeerige Ultimate Multisite all olevat **Maksid** lehte, et näha kõik transaktsioonid kogu oma võrku üle.
 
@@ -54,7 +54,7 @@ Saate filtreerida makseid staatuse järgi (läbinähtud, ootamisel, ebaõnnestun
 
 Klikkage maksuluse peale, et näha selle täieliku detailid, sealhulgas linjaid, seotud li membershipi, kliendi teavet ja maksuportaalide andmeid.
 
-## Faktuurid
+## Faktuurid {#invoices}
 
 Ultimate Multisite suutab automaatselt faktuurid genereerida maksude kohta. Saate oma faktuuritest ja numbrilendimise vormist kasutustäitida Makse seadistustes.
 

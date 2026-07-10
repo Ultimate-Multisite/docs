@@ -4,11 +4,11 @@ title: الإجراء - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# الإجراء: set_logged_in_cookie
+# الإجراء: set_logged_in_cookie {#action-setloggedincookie}
 
 يتم إطلاقه مباشرة قبل تعيين ملف تعريف الارتباط للمصادقة عند تسجيل الدخول.
 
-## Parameters
+## Parameters {#parameters}
 
 | الاسم | النوع | الوصف |
 |------|------|-------------|
@@ -19,11 +19,11 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | نظام المصادقة. الافتراضي هو 'logged_in'. |
 | $token | `string` | رمز الجلسة للمستخدم لاستخدامه في هذا ملف تعريف الارتباط. |
 
-### منذ
+### منذ {#since}
 
 - 2.6.0
 - 4.9.0: تم إضافة معلمة <code>$token</code>.
 
-### المصدر
+### المصدر {#source}
 
 تم تعريفه في [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) في السطر 141

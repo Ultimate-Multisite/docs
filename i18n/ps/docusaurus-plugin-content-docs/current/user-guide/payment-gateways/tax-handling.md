@@ -1,119 +1,120 @@
 ---
-title: م thuế مدیریت
+title: د مالیې اداره
 sidebar_position: 4
-_i18n_hash: a331943b7d5764cc5f2277c08595b235
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# مالیاتِ سنبھالنه (Tax Handling)
+# د مالیاتو سمبالونه {#tax-handling}
 
-Ultimate Multisite ۾ اسان جي کور پيجنٽ ۾ هڪ ٽيڪس ڪولڪشن ماڊيول بڻايو آهي، تنهن ڪري جيڪڏهن توهان کي پنهنجي پلانز، پيڪيجز ۽ خدمتن تي سيلز ٽيڪس ڪوله چاهيو ته توهان آساني سان اهو ڪري سگهو ٿا جنهن لاءِ ڪا add-ons نصب ڪرڻ جي ضرورت نه آهي.
+Ultimate Multisite زموږ په اصلي plugin کې د مالیاتو راټولولو ماډل لري، نو که تاسو اړتیا لرئ چې پر خپلو پلانونو، کڅوړو او خدمتونو د پلور مالیات راټول کړئ، دا کار په اسانۍ سره د هېڅ add-ons له نصبولو پرته کولای شئ.
 
-يورپ ۾ موجود ڪمپنيون لاءِ، اسان هڪ **add-on** پيش ڪريون ٿا جيڪو VAT تعمیل کي بهتر سپورٽ ڪرڻ لاءِ اوزار ۽ خصوصيتون شامل ڪري ٿو.
+د هغو شرکتونو لپاره چې په اروپا کې موقعیت لري، موږ یو **add-on** وړاندې کوو چې د **VAT ملاتړ** د ښه برابرښت لپاره وسایل او ځانګړتیاوې زیاتوي.
 
-Ultimate Multisite توهان جي طرف کان گورنمينٽ تائين ٽيڪس فائل نه ڪندو يا جمع نه ڪندو؛ اسان صرف توهان کي عمل ۾ اچڻ وقت مناسب ٽيڪس کوله مدد ڪندون آهيون. **توهان کي اڃا به پنهنجي طرف کان ٽيڪس جمع ڪرڻو پوندو.**
+Ultimate Multisite ستاسو له خوا حکومت ته مالیات نه ثبتوي او نه یې استوي؛ موږ یوازې تاسو سره د معاملې په وخت کې د مناسبو مالیاتو په راټولولو کې مرسته کوو. **تاسو به لا هم اړتیا ولرئ چې مالیات پخپله واستوئ.**
 
-## ٽيڪس ڪولڪشن کي فعال ڪرڻ (Enabling Tax Collection)
+## د مالیاتو راټولولو فعالول {#enabling-tax-collection}
 
-ٽيڪس ڪولڪشن بالڊيو طور تي فعال نه آهي. ان کي فعال ڪرڻ لاءِ، توهان کي **Ultimate Multisite > Settings > Taxes** وڃڻو پوندو ۽ Enable Taxes جو هي setting آن ڪرڻ جي ضرورت آهي.
+د مالیاتو راټولول په تلواله توګه فعال نه دي. د دې د فعالولو لپاره، تاسو باید **Ultimate Multisite > Settings > Taxes** ته لاړ شئ او د Enable Taxes تنظیم د فعالولو لپاره سویچ چالان کړئ.
 
-![Tax settings toggle at the top of the Tax settings page](/img/config/settings-taxes-enable.png)
+![د Taxes تنظیماتو پاڼې په سر کې د Enable Taxes سویچ](/img/config/settings-taxes-enable.png)
 
-هتي ٽيڪس جي setings جو پورو ڏوه ڏسي سگهجي ٿو:
+دلته د مالیاتو د تنظیماتو پاڼې بشپړ لید دی:
 
-![Tax settings full page](/img/config/settings-taxes-full.png)
+![د مالیاتو تنظیماتو بشپړه پاڼه](/img/config/settings-taxes-full.png)
 
-توهان انحدي طور تي مصنوعات لاءِ ٽيڪس جي setings به ڏسي سگهو ٿا:
+تاسو کولی شئ د جلا محصولاتو لپاره د مالیاتو تنظیمات هم وګورئ:
 
-![Tax settings for products](/img/config/settings-taxes.png)
+![د محصولاتو لپاره د مالیاتو تنظیمات](/img/config/settings-taxes.png)
 
-### ٽيڪس شامل نه ڪرڻ بليڪه مقابل ٽيڪس شامل ڪرڻ (Tax excluded vs. Tax included)
+### له مالیې پرته او د مالیې په ګډون {#tax-excluded-vs-tax-included}
 
-بالڊيو طور تي، توهان جي تمام مصنوعات جا قيمت ٽيڪس کان خارج آهن، جس کا مطلب آهي ته ٽيڪس مصنوعي جي قيمت ۾ **شامل نه** آهن. جيڪڏهن اسان اهو پنهنجي ڪا خريد جو ٽيڪس ادا ڪرڻ گهرجي ٿو ته اسان هي ٽيڪس سبٽيول تي **اوپر** شامل ڪريون ٿا.
+په تلواله توګه، ستاسو د ټولو محصولاتو بیې له مالیې پرته دي، یعنې مالیات د محصول په بیه کې **شامل نه دي**. که موږ وټاکو چې یو پېرودونکی باید پر یوې ټاکلې پېرودنې مالیات ورکړي، نو موږ به مالیات د فرعي مجموعې **سربېره** ورزیات کړو.
 
-اگر توهان چاهيو ته توهان جي مصنوعي جي قيمت ۾ ٽيڪس شامل رهون، ته توهان **Inclusive Tax** جو setting آن ڪري سگهو ٿا.
+که تاسو غوره ګڼئ چې مالیات د خپل محصول په بیه کې شامل وي، دا کار د **Inclusive Tax** تنظیم په فعالولو سره کولی شئ.
 
-![Inclusive Tax toggle row below the Enable Taxes setting](/img/config/settings-taxes-inclusive.png)
+![د Enable Taxes تنظیم لاندې د Inclusive Tax سویچ قطار](/img/config/settings-taxes-inclusive.png)
 
-پنهنجي ڪيل ڪيل تبديلين کي **save** ڪرڻ کي بھولي نه پيو.
+مه هېروئ چې خپل ترسره کړي بدلونونه **خوندي** کړئ.
 
 ###
 
-## ٽيڪس جي شرحون (Creating Tax Rates)
+## د مالیاتو نرخونه جوړول {#creating-tax-rates}
 
-جڏهن کان توهان Tax Collection آن ڪري ڇڏيو آهي، تڏهن توهان اسان جي tax rates editor جو استعمال ڪري مخصوص جڳه لاءِ ٽيڪس جي شرحون bana sakoonge.
+وروسته له دې چې د مالیاتو راټولول فعال کړئ، تاسو به اړتیا ولرئ چې د مشخصو ځایونو لپاره زموږ د مالیاتو نرخونو اېډېټر په کارولو سره د مالیاتو نرخونه جوړ کړئ.
 
-تا تاسو کولی شئ د تنظیماتو (settings) په سایدبار کې د **Manage Tax Rates** د ګډ按钮 باندې کلیک کولو وسیله ترلاسه کړئ.
+تاسو کولی شئ اېډېټر ته د Tax تنظیماتو پاڼې په څنډه‌پټه کې د **Manage Tax Rates** تڼۍ په کلیک کولو لاسرسی ومومئ.
 
-![Tax Rates panel link in the settings page](/img/config/settings-taxes-manage-rates.png)
+![د تنظیماتو پاڼې په Tax Rates پینل کې د Manage Tax Rates لینک](/img/config/settings-taxes-manage-rates.png)
 
-د د کرښو نرخونو ویډيور صفحې ته، تاسو کولی شئ د **Add new Row** د بټ باندې کلیک गरेर نوي Tax Rates اضافه کړئ.
+د مالیاتو نرخونو اېډېټر پاڼه کې، تاسو کولی شئ د **Add new Row** تڼۍ په کلیک کولو نوي Tax Rates زیات کړئ.
 
-![Tax rates editor table with Add new Row button at the top](/img/config/tax-rates-editor.png)
+![د Add new Row تڼۍ سره د مالیاتو نرخونو اېډېټر جدول په سر کې](/img/config/tax-rates-editor.png)
 
-تاسو باید هر ډول کرښه نرخ (tax rate) یو **title** ورکړئ (که په فانو کې کارول شي). بیا تاسو کولی شئ **country** (زه اړینه ده)، **state**، او **city** (دو یې اختیاري دي) غوره کړئ چې دا کرښه نرخ چیرته لاړې. وروسته، **tax rate in percents** اضافه کړئ.
+تاسو باید هر مالیاتي نرخ ته یو **سرلیک** ورکړئ (په انوایسونو کې کارېږي). بیا تاسو کولی شئ **هېواد** (اړین)، **ایالت،** او **ښار** (دواړه اختیاري) وټاکئ چې دا مالیه به پکې اخیستل کېږي. په پای کې، **د مالیې نرخ په سلنه کې** زیات کړئ.
 
-### Tax Categories
+### د مالیاتو کټګورۍ {#tax-categories}
 
-تاسو کولی شئ هم متعدد Tax Categories جوړ کړئ، ترڅو د مختلف ډول مصنوعي لپاره مختلف کرښه نرخونه اضافه کړئ.
+تاسو کولی شئ څو Tax Categories هم جوړې کړئ، څو د بېلابېلو ډوله محصولاتو لپاره بېلابېل مالیاتي نرخونه ورزیات کړئ.
 
-د **Add new Tax Category** باندې کلیک وکړئ، بیا د خپل category نوم لیکئ او **Create** فشار ورکړئ.
+د **Add new Tax Category** لپاره کلیک وکړئ، بیا د خپلې کټګورۍ نوم ولیکئ او **Create** کېکاږئ.
 
-![Add new Tax Category button at the top of the tax rates editor](/img/config/tax-categories-add.png)
+![د مالیاتو نرخونو اېډېټر په سر کې د Add new Tax Category تڼۍ](/img/config/tax-categories-add.png)
 
-![Tax Category Name input field in the create category modal](/img/config/tax-categories-create-modal.png)
+![د کټګورۍ جوړولو کړکۍ کې د Tax Category Name داخلولو ډګر](/img/config/tax-categories-create-modal.png)
 
-تر هغه چې تاسو د categories په ګډه کولو کې ګرځئ، **Switch** باندې کلیک وکړئ او هغه category غوره کړئ چې تاسو غواړئ نوي کرښې نرخونه یې اضافه کړئ.
+د کټګوریو د کتلو لپاره، **Switch** کلیک کړئ او هغه کټګوري وټاکئ چې غواړئ نوي مالیات ورته زیات کړئ.
 
-![Switch dropdown button to change between tax categories](/img/config/tax-categories-switch.png)
+![د مالیاتو کټګوریو ترمنځ د بدلون لپاره د Switch ښکته‌غورځېدونکی تڼۍ](/img/config/tax-categories-switch.png)
 
-![Tax category selector dropdown showing available categories](/img/config/tax-categories-select.png)
+![د شته کټګوریو ښودونکی د مالیاتو کټګورۍ ټاکونکی ښکته‌غورځېدونکی](/img/config/tax-categories-select.png)
 
-تاسو کولی شئ د یو خاص محصول لپاره Tax Category تنظیم کړئ بیا په **Product edit page** ته لاړ شئ او بیا **Taxes** (کرښې نرخونه) 탭 ته لاړ شئ.
+تاسو کولی شئ د ځانګړي محصول لپاره د مالیې کټګوري د **Product edit page** ته په تګ او بیا د Taxes ټب ته په تګ وټاکئ.
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+![د محصول د مالیاتو ټب د مالیې کټګورۍ او taxable سویچ سره](/img/config/product-taxes.png)
 
-په عین ذات کې، تاسو کولی شئ د **Is Taxable?** toggles ب کار وکړئ ترڅو Ultimate Multisite ته خبر ورکړئ چې دا ځانګړی محصول پر کرښو نرخونه نه باید جمع کړي.
+په هماغه پرده کې، تاسو کولی شئ د **Is Taxable?** سویچ بند کړئ څو Ultimate Multisite ته وښيي چې پر دغه ټاکلي محصول مالیات راټول نه کړي.
 
-## European VAT Support
+## د اروپايي VAT ملاتړ {#european-vat-support}
 
-همانطور که قبلاً ذکر شده، موږ د مشتریان لپاره یو اضافي (add-on) لرئ چې له اروپا کرپسی نرخونو (VAT regulations) له امله ځانګړتیاوې لري.
+لکه مخکې چې یادونه وشوه، موږ په EU کې د پېرودونکو لپاره یو add-on لرو چې د اروپايي VAT مقرراتو له امله اضافي اړتیاوې لري.
 
-د زموږ VAT инструمنټونه دوه مهم کارونه هم کمکی کوي:
+زموږ د VAT وسایل له څو مهمو شیانو سره مرسته کوي:
 
-* د اروپایی VAT نرخونو په آساني کارول؛
-* د VAT نمبر جمع کول او اعتبار سنجي کول - او د VAT څخه免 شوي ادارو لپاره بیا چارجینګ (reverse charging) (لکه شرکتونه چې لاغری VAT نمبر لري).
+  * د EU VAT نرخونو اسانه پورته کول؛
 
-د دې اضافي نصب کولو لپاره، ته ورته **Ultimate Multisite > Settings** ته لاړ شه او بیا په **Check our Add-ons** سایدبار لینک باندې کلیک درانه.
+  * د VAT Number راټولول او تایید - او د VAT معافو بنسټونو لپاره بېرته چارج کول (لکه هغه شرکتونه چې معتبر VAT نمبرونه لري)؛
 
-![Settings page sidebar with Check our Add-ons link](/img/config/settings-taxes-addons-link.png)
+د دغه add-on د نصبولو لپاره، **Ultimate Multisite > Settings** ته لاړ شئ او بیا د څنډه‌پټې پر **Check our Add-ons** لینک کلیک وکړئ.
 
-تاسو به د زموږ اضافي (add-ons) صفحه ته ریدا شي. তাত، تاسو کولی شئ **Ultimate Multisite VAT add-on** وڅیړئ او یې نصب کړئ.
+![د Settings پاڼې څنډه‌پټه د Check our Add-ons لینک سره](/img/config/settings-taxes-addons-link.png)
 
-<!-- Screenshot unavailable: VAT add-on tile on the Add-ons page -->
+تاسو به زموږ د add-ons پاڼې ته ولېږدول شئ. هلته، تاسو کولی شئ د **Ultimate Multisite VAT add-on** ولټوئ او نصب یې کړئ.
 
-<!-- Screenshot unavailable: VAT add-on Install Now dialog -->
+<!-- Screenshot unavailable: د Add-ons پاڼه کې د VAT add-on ټایل -->
 
-بیا، ته **Network Admin > Plugins** ته لاړ شه او دا اضافي په ټول شبکه کې فعال کړئ.
+<!-- Screenshot unavailable: د VAT add-on Install Now کړکۍ -->
 
-<!-- Screenshot unavailable: Network Activate action for the VAT add-on on the Plugins page -->
+بیا، **Network Admin > Plugins** ته لاړ شئ او هغه add-on په ټولې شبکې کې فعال کړئ.
 
-که تاسو به **Tax Settings tab** ته بیرته لاړ شئ، تاسو به نوی خپاري选项ونه وګورئ. **Enable VAT Support** د انتخاب فعال کړئ ترڅو نوي VAT инструمنټونه فعال شي. خپل تنظیمات **save** کول غواړئ!
+<!-- Screenshot unavailable: د Plugins پاڼه کې د VAT add-on لپاره Network Activate کړنه -->
 
-<!-- Screenshot unavailable: Enable VAT Support toggle in the Tax settings after add-on activation -->
+که بېرته د **Tax Settings tab** ته لاړ شئ، نو نوې شته غوراوي به ووینئ. د نوو VAT وسیلو د فعالولو لپاره د **Enable VAT Support** غوراوی چالان کړئ. خپل تنظیمات **خوندي** کول مه هېروئ!
 
-### د VAT کرپسی نرخونو کاوهنه (Pulling on VAT Tax Rates)
+<!-- Screenshot unavailable: د add-on له فعالېدو وروسته د Tax تنظیماتو کې د Enable VAT Support سویچ -->
 
-د زموږ همغږي (integration) یو له инструمنټونه چې اضافه کوي، هغه د اروپایی ملګرو دولتونو لپاره کرپسی نرخونه کارول सक्ने وړتیا ده. دا کار په اروپایی VAT دعموتلو وروسته د کرپسی نرخونو ویډیو ویرایشونکي صفحه ته لاړل کولو وسیله دی.
+### د VAT مالیاتي نرخونو راوستل {#pulling-on-vat-tax-rates}
 
-صفحې په منځ کې، تاسو به VAT (مجموعی کروم) اخیستنې د خټکۍ (pulling options) انتخابونه وګورئ. کله چې تاسو یو نرخ ډول غوره کړئ او **Update EU VAT Rates** د ګډ按钮 (button) باندې کلیک وکړئ، نو دا جدول له خودي سره खुल्ني او په هر EU دولتي حالت لپاره کروم اخیستنې نرخونه پرې پوره کوي. بیا، تاسو یوازې باید یې سېوئ (save) کړئ.
+یو له هغو وسیلو څخه چې زموږ ادغام یې زیاتوي، د EU غړو هېوادونو لپاره د مالیاتي نرخونو د پورته کولو وړتیا ده. دا کار د EU VAT ملاتړ له فعالولو وروسته د مالیاتو نرخونو اېډېټر پاڼې ته په تګ سره کېدای شي.
 
-![Update EU VAT Rates button at the bottom of the tax rates editor](/img/config/tax-rates-vat-pull.png)
+د پاڼې په ښکته برخه کې، تاسو به د VAT راوستلو غوراوي ووینئ. د نرخ ډول ټاکل او د **Update EU VAT Rates** تڼۍ کلیک کول به جدول د هر EU غړي هېواد د مالیاتي نرخونو سره راوباسي او په اتومات ډول ډک کړي. بیا، تاسو یوازې اړتیا لرئ چې دا خوندي کړئ.
 
-تاسو کولی شئ د اخیستنې وروسته یې هم ویلو (edit) کی શકો. دا کار کوئ، یوازې هغه جدول ردیف چې تاسو یې بدلول غواړئ بدل کړئ او نوی ارزښتونه سېوئ کولو لپاره کلیک وکړئ.
+![د مالیاتو نرخونو اېډېټر په ښکته برخه کې د Update EU VAT Rates تڼۍ](/img/config/tax-rates-vat-pull.png)
 
-### VAT Validation (VAT کروم اخیستنې تایید)
+تاسو کولی شئ د راایستلو وروسته ارزښتونه هم سم کړئ. د دې لپاره، یوازې هغه د جدول کرښه سم کړئ چې اړتیا ورته لرئ او د نوو ارزښتونو د خوندي کولو لپاره کلیک وکړئ.
 
-کله چې VAT دعمو (support) فعال وي، Ultimate Multisite د چک اوټ (checkout) formu په پای کې یو اضافه فیلد اضافهوي، چې د بیا کولو پته (billing address) فیلد څخه ښکاره کیږي. دا فیلد یوازې د EU کې موندل شوي کليونټونه ښودلی وي.
+### د VAT تایید {#vat-validation}
 
-<!-- Screenshot unavailable: VAT Number field on the frontend checkout form below the billing address -->
+کله چې د VAT ملاتړ فعال وي، Ultimate Multisite به د checkout فورم ته، د billing address ډګر لاندې، یو اضافي ډګر ورزیات کړي. دا ډګر به یوازې هغو پېرودونکو ته ښکاره شي چې په EU کې موقعیت لري.
 
-Ultimate Multisite بیا VAT Number تاییدوي او که دا به یو لاحق (valid) وي، نو د بده مرجعه میکانیزم (reverse charge mechanism) लागू کیږي او هغه 주문 (order) د کروم اخیستنې نرخ 0% ته تنظیم کیږي.
+<!-- Screenshot unavailable: د frontend checkout فورم کې د billing address لاندې د VAT Number ډګر -->
+
+Ultimate Multisite به بیا د VAT Number اعتبار وڅېړي، او که دا د معتبر په توګه بېرته راشي، نو د reverse charge مېکانېزم پلي کېږي او د هغه فرمایش لپاره د مالیې کچه 0% ته ټاکل کېږي.

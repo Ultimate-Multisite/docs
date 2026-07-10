@@ -3,7 +3,7 @@ title: Sunaɓanin GitHub
 sidebar_position: 3
 _i18n_hash: c643f3d76aace8c15fd224b984af6633
 ---
-# Zabi da amfani da snippets na Ultimate Multisite a GitHub repository ɗinmuwar mu
+# Zabi da amfani da snippets na Ultimate Multisite a GitHub repository ɗinmuwar mu {#how-to-use-ultimate-multisite-snippets-on-our-github-repository}
 
 Akwai ƙananan kodin da ke cikin GitHub repository wanda masu amfani na Ultimate Multisite suke bukata sosai, waɗanda suke so su ƙara ƙarin ayyuka kamar ƙara script na Google Analytics a hanyoyin shiga (sign-up pages) ko ninka wani meta box daga dashboard na admin.
 
@@ -19,7 +19,7 @@ Akwai hanyoyi biyu don ƙara kudin:
 
   2. Must-Use Plugins (mu-plugins)
 
-# Yadda za ka saka snippet a fayil ɗin functions.php na theme ɗinka.
+# Yadda za ka saka snippet a fayil ɗin functions.php na theme ɗinka. {#how-to-add-the-snippet-on-your-themes-functionsphp-file}
 
   1. Shiga dashboard na admin na WordPress Network ɗinka kuma ka je Themes > Theme Editor (Ka gani screenshot a ƙasa).
 
@@ -29,7 +29,7 @@ Akwai hanyoyi biyu don ƙara kudin:
 
 <!-- Screenshot ba na bayyana: WordPress Theme Editor yana nuna gyara fayil ɗin functions.php -->
 
-# Yadda za ka ƙirƙiro Must-Use Plugins (mu-plugins)
+# Yadda za ka ƙirƙiro Must-Use Plugins (mu-plugins) {#how-to-create-must-use-plugins-mu-plugins}
 
 WordPress yana da wata hanya tana ba shi damar shiga ayyuka na musamman wanda ake kira "Must-Use Plugins", ko a taƙa cewa "mu-plugins".
 

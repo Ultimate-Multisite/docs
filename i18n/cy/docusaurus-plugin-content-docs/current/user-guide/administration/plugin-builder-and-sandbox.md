@@ -3,11 +3,11 @@ title: Ymddygiwr Plugin a Sandbox
 sidebar_position: 21
 _i18n_hash: 74c409a36b52ea261922998822b286d0
 ---
-# Gweithredigwr Plugin & Sandbox
+# Gweithredigwr Plugin & Sandbox {#plugin-builder--sandbox}
 
 Mae Gratis AI Agent v1.5.0 yn cyflwyno'r **Plugin Builder & Sandbox System**, sy'n sylw'r AI assistant i ddatblygu, gael ei chwarae, a’u’i rheoli pluginau WordPress ar eich rheini — pob yn ymlaen drwy ffoethafiad bach, wedi'i sicrhau mewn amgylchedd bach a'raddasu.
 
-## Oglwyddictod
+## Oglwyddictod {#overview}
 
 Mae'r Plugin Builder yn gallu i'r AI assistant ddatblygu pluginau WordPress newydd yn gyfeiriad â chwarae'n naturiol. Mae pluginau a ddatblygu neu'n cael eu cyflwyno yn cael eu chyfeiriad, ei storio, a’u'i chwarae mewn amgylchedd bach قبل y bydd nhw yn effeithio ar ffurfion y safle byw.
 
@@ -17,7 +17,7 @@ Mae ganlyn y ddefnyddiau:
 - Prototypa ffurfion sydd angen rhag hookau WordPress neu post-typerau custom.
 - Creu scriptau awtomatig byr am ymarferion cyflwyniad.
 
-## Cyflwyno Plugin drwy AI
+## Cyflwyno Plugin drwy AI {#generating-a-plugin-via-ai}
 
 I ddatblygu plugin, gwahanwch y ffurf chwarae chat o Gratis AI Agent a sylwi ar beth mae angen i chi. Ar enw, felly:
 
@@ -32,7 +32,7 @@ Bydd y AI yn:
 
 Gallwch gwella'r enghyniad gan ddatblygu gan dilyn y cyfathryd yn yr un ffurf siarad ar gyfer ychwanegu قبل chwarae.
 
-## Cyflwyniad mewn Sandbox
+## Cyflwyniad mewn Sandbox {#sandbox-activation}
 
 Mae cyflwyniad plugin a ddatblygu mewn sandbox yn gwrthosi'r cyflwyniad ei o mewn i rheini byw. Mae'r sandbox:
 
@@ -46,7 +46,7 @@ I chwarae plugin mewn sandbox, cliwch ar botllen **Activate in Sandbox** yn y cy
 
 Mae mesgarwch cyflwyniad yn cywir ystyr y cafodd neu ddim yn llwyddiannus. Ar dros y fail, mae'r log eror yn cael ei dangos yn y thrafen chat.
 
-## Cyfathrebu Pluginau Aroswyd
+## Cyfathrebu Pluginau Aroswyd {#managing-generated-plugins}
 
 Mae pluginau aroswyd yn cael eu listri mewn **Gratis AI Agent → Plugin Builder → Manage Plugins**. O'r screen hwn, gallwch:
 
@@ -62,7 +62,7 @@ Mae pluginau aroswyd yn cael eu listri mewn **Gratis AI Agent → Plugin Builder
 Mae **Install on network** yn gyflwyno'r plugin aroswyd i'r rheol WordPress multisite sydd ar gael. Ddychwio'r code y plugin قبل ychwanegu. Bydd Gratis AI Agent yn cyhoeddi am ymgymorth i gyd-derbyniad cyn gwblhau'r chwarae live.
 :::
 
-## Cyflwyno Plugin Aroswyd ar y Rheol
+## Cyflwyno Plugin Aroswyd ar y Rheol {#installing-a-generated-plugin-on-the-network}
 
 Pan fyddwch chi ddigon gyda plugin aroswyd mewn sandbox, gallwch ei gyflwyno ar y rheol sydd ar gael:
 
@@ -76,7 +76,7 @@ Arall, defnyddiwch y ffurf slash yn y cyfathrebu chat:
 /install-plugin <plugin-slug>
 ```
 
-## Cyfathregiadau Pluginau
+## Cyfathregiadau Pluginau {#plugin-updates}
 
 I chwilio plugin aroswyd, sylwi ar newid i'r asiant AI mewn siarad newydd:
 
@@ -84,7 +84,7 @@ I chwilio plugin aroswyd, sylwi ar newid i'r asiant AI mewn siarad newydd:
 
 Mae'r AI yn creu fersian newydd, sydd yn dangos yn y sandbox gyda'r fersian ar gyfer y fersian cyfredol. Byddwch yn ddigon y diff ac yn cyfathrebu cyn cael y cyfathregiad.
 
-## Ymddianolwg HookScanner
+## Ymddianolwg HookScanner {#hookscanner-integration}
 
 Mae'r Plugin Builder yn defnyddio **HookScanner** sydd wedi'i gysylltu i'r cyfathrebu'r hookau a'r filterau a ddefnyddir gan unrhyw plugin a gennych. Mae output y HookScanner yn cael ei dangos yn y cyfraddiad chat ac mae'n cynnwys:
 
@@ -94,7 +94,7 @@ Mae'r Plugin Builder yn defnyddio **HookScanner** sydd wedi'i gysylltu i'r cyfat
 
 Mae hyn yn rhoi'n ddefnyddio'r gymryd o'r weithredol o'r plugin cyn ei chwarae.
 
-## Cynllunio Diogelwch
+## Cynllunio Diogelwch {#security-considerations}
 
 - Mae'r pluginau a gennych wedi'u cyflwyno ar gyfer yn cael eu cadw yn rhydd o'r pluginau a ddefnyddir yn hanesydd, ac nid yw'n cyffredinol gan gael y canlyniad rheoli pluginau WordPress heb eich bod yn eu chwarae'n ddefnyddio'nwy.
 - Mae'r sandbox yn defnyddio gyfathrebu llwybr i brofi'r gyfeiriad o'r dyfodol pan mae'n ysgrifennu ffiliadau pluginau.

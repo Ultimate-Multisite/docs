@@ -3,15 +3,15 @@ title: 網站建構器協調 v2
 sidebar_position: 4
 _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 ---
-# 網站建構協調 v2
+# 網站建構協調 v2 {#site-builder-orchestration-v2}
 
 網站建構協調 v2（在 Gratis AI Agent v1.4.0 中引入）是驅動多步驟網站創建的引擎。當您要求代理「建立一家餐廳網站」或「創建一個帶部落格的作品集」時，協調器會將這個高層目標分解成一個結構化的**計畫**，找出完成它所需的外掛，依序執行每個步驟，追蹤進度，並能自主從錯誤中恢復。
 
 ---
 
-## 工作原理
+## 工作原理 {#how-it-works}
 
-### 1. 計畫生成
+### 1. 計畫生成 {#1-plan-generation}
 
 當代理收到網站建構指令時，它會呼叫 `create_site_plan` 功能來產生一個 JSON **網站計畫**。該計畫描述了：
 
@@ -61,7 +61,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 }
 ```
 
-### 2. 外掛發現
+### 2. 外掛發現 {#2-plugin-discovery}
 
 在執行開始之前，協調器會掃描計畫中的 `plugin_requirements`，並檢查哪些外掛已經啟用。對於缺少的外掛，它會：
 
@@ -71,7 +71,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 
 外掛發現失敗並不會導致致命錯誤 — 協調器會將受影響的步驟標記為 `skipped`（跳過），並繼續執行計畫的其餘部分。
 
-### 3. 計畫執行
+### 3. 計畫執行 {#3-plan-execution}
 
 協調器會使用計畫 ID 呼叫 `execute_site_plan`。執行會按階段、按步驟進行：
 
@@ -79,7 +79,7 @@ _i18n_hash: 3a3d15844b4a0751fc59ac3a4e1fb0c0
 - **平行步驟** — 同一個階段內、沒有相互依賴性的步驟，在設定了 `parallel` 旗標時會同時發送執行。
 - **步驟超時** — 每個步驟都有獨立的超時時間（預設為 `Ability Timeout` 設定）。超時的步驟會被標記為 `failed`（失敗），但計畫會繼續執行。
 
-### 4. 進度追蹤
+### 4. 進度追蹤 {#4-progress-tracking}
 
 隨時呼叫 `get_plan_progress` 來檢查執行狀態：
 
@@ -104,7 +104,7 @@ WP-CLI 使用者可以使用以下指令監控進度：
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### 5. 錯誤恢復
+### 5. 錯誤恢復 {#5-error-recovery}
 
 當一個步驟失敗時，協調器會檢查計畫中是否定義了**備用方案**：
 
@@ -115,9 +115,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## 網站計畫功能 (Site Plan Abilities)
+## 網站計畫功能 (Site Plan Abilities) {#site-plan-abilities}
 
-### `create_site_plan`
+### `create_site_plan` {#createsiteplan}
 
 根據自然語言的目標描述，生成結構化的網站計畫。
 
@@ -134,7 +134,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `execute_site_plan`
+### `execute_site_plan` {#executesiteplan}
 
 開始執行先前生成的網站計畫。
 
@@ -150,7 +150,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `get_plan_progress`
+### `get_plan_progress` {#getplanprogress}
 
 回傳網站計畫目前的執行狀態。
 
@@ -164,7 +164,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-### `handle_plan_error`
+### `handle_plan_error` {#handleplanerror}
 
 手動解決失敗的步驟，並從下一個步驟恢復計畫執行。當自動恢復不可行，且您需要介入時使用此功能。
 
@@ -180,7 +180,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## v1 與 v2 的比較
+## v1 與 v2 的比較 {#comparing-v1-and-v2}
 
 | Feature | v1 | v2 |
 |---|---|---|
@@ -195,9 +195,9 @@ wp gratis-ai-agent plan status plan_restaurant_001
 
 ---
 
-## WP-CLI 計畫指令
+## WP-CLI 計畫指令 {#wp-cli-plan-commands}
 
-### `wp gratis-ai-agent plan create`
+### `wp gratis-ai-agent plan create` {#wp-gratis-ai-agent-plan-create}
 
 根據目標描述生成網站計畫。
 
@@ -205,7 +205,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan create "Build a restaurant website with an online menu, booking form, and contact page" [--dry-run] [--output=json]
 ```
 
-### `wp gratis-ai-agent plan execute`
+### `wp gratis-ai-agent plan execute` {#wp-gratis-ai-agent-plan-execute}
 
 執行先前生成的計畫。
 
@@ -213,7 +213,7 @@ wp gratis-ai-agent plan create "Build a restaurant website with an online menu, 
 wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 ```
 
-### `wp gratis-ai-agent plan status`
+### `wp gratis-ai-agent plan status` {#wp-gratis-ai-agent-plan-status}
 
 顯示正在執行或已完成計畫的當前進度。
 
@@ -221,7 +221,7 @@ wp gratis-ai-agent plan execute plan_restaurant_001 [--auto-install-plugins]
 wp gratis-ai-agent plan status plan_restaurant_001
 ```
 
-### `wp gratis-ai-agent plan list`
+### `wp gratis-ai-agent plan list` {#wp-gratis-ai-agent-plan-list}
 
 列出所有網站計畫（待處理、進行中和已完成）。
 
@@ -229,7 +229,7 @@ wp gratis-ai-agent plan status plan_restaurant_001
 wp gratis-ai-agent plan list [--status=<status>] [--format=table|json|csv]
 ```
 
-### `wp gratis-ai-agent plan reset`
+### `wp gratis-ai-agent plan reset` {#wp-gratis-ai-agent-plan-reset}
 
 將失敗的計畫重置為 `pending` 狀態，以便從頭開始重新執行。
 

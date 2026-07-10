@@ -1,61 +1,194 @@
 ---
-title: Reference k hookům
+title: Referenční příručka k hookům
 sidebar_position: 1
-_i18n_hash: 126ed8ba22f4c3faebf743dd13eeb90e
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
 ---
-# Reference pro hooks
+# Reference hooků {#hooks-reference}
 
-Automaticky vygenerovaná dokumentace pro všech **59 akcí** a **115 filtrů** v Ultimate Multisite.
+Automaticky generovaná dokumentace pro všech **59 akcí** a **118 filtrů** v Ultimate Multisite.
 
-## Actions
+## Akce {#actions}
 
-- [auth_redirect](./Actions/auth_redirect) — Spouští se před přesměrováním při ověřování.
-- [set_auth_cookie](./Actions/set_auth_cookie) — Spouští se ihned před nastavením cookie pro ověření.
-- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Spouští se ihned před nastavením cookie pro přihlášeného uživatele.
-- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Umožňuje vývojářům přidat vlastní integrace poskytovatelů hostingu pomocí pluginů pro WP.
-- [wp_ultimo_load](./Actions/wp_ultimo_load) — Spouští se, když jsou všechny závislosti načteny.
-- [wu_activation](./Actions/wu_activation) — Umožňuje jiným částem pluginu připojit své rutiny pro aktivaci.
-- [wu_after_switch_template](./Actions/wu_after_switch_template) — Umožňuje vývojářům pluginů připojit funkce po přepnutí šablony uživatelem nebo superadministratorem.
-- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — V některých případech budeme potřebovat načíst extra obsah pro zpracování akcí.
-- [wu_before_search_models](./Actions/wu_before_search_models) — Spouští se před zpracováním vyhledávacího dotazu.
-- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Umožňuje vývojářům provést další změny objektu pokladny.
-- [wu_cart_setup](./Actions/wu_cart_setup) — Umožňuje vývojářům provést další změny objektu pokladny.
+- [auth_redirect](./Actions/auth_redirect) — Spouští se před přesměrováním ověření.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Spouští se bezprostředně před nastavením ověřovací cookie.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Spouští se bezprostředně před nastavením ověřovací cookie pro přihlášeného uživatele.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Umožňuje vývojářům přidat vlastní integrace poskytovatelů hostingu prostřednictvím wp pluginů.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Spustí se, když jsou načteny všechny závislosti
+- [wu_activation](./Actions/wu_activation) — Umožňuje ostatním částem pluginu připojit své rutiny pro aktivaci
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Umožňuje vývojářům pluginů navázat funkce po tom, co uživatel nebo super admin přepne šablonu webu
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — V některých případech budeme muset načíst dodatečný výkon pro zpracování akcí.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Spouští se před zpracováním požadavku na vyhledávání.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Umožňuje vývojářům provést další změny v objektu pokladny.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Umožňuje vývojářům provést další změny v objektu pokladny.
 - [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Spouští se před přidáním pole do formuláře pokladny.
-- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Umožňuje vývojářům spustit další hooks.
-- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Před zpracováním pokladny.
-- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Spouští se po úplném sestavení objednávky z pokladny.
-- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Umožňuje vývojářům pluginů přidat widgety na panel Network Dashboard.
-- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Umožňuje vývojářům pluginů přidat widgety na panel Network Dashboard.
-- [wu_deactivation](./Actions/wu_deactivation) — Umožňuje jiným částem pluginu připojit své rutiny pro deaktivaci.
-- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Umožňuje vývojářům pluginů přidat akce do procesu mazání.
-- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Spouští se, když se doména stane primární doménou pro stránku.
-- [wu_domain_created](./Actions/wu_domain_created) — Spouští se při přidání nové mapování domény.
-- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Spouští se po načtení našeho jádrového mapování domény.
-- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Některé pluginy uloží URL před aktivací mapování nebo budou URL vytvářet jinak, což není zahrnuto v
-- [wu_duplicate_site](./Actions/wu_duplicate_site) — Umožňuje vývojářům připojit hook po duplikaci stránky.
-- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Umožňuje vývojářům pluginů přidat další hooks.
-- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook pro další čištění.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Umožňuje vývojářům spustit další hooky.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Než zpracujeme pokladnu.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Spouští se po úplném sestavení objednávky pokladny.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Umožňuje vývojářům pluginů přidat widgety do panelu Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Umožňuje vývojářům pluginů přidat widgety do panelu Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Umožňuje ostatním částem pluginu připojit své rutiny pro deaktivaci
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Umožňuje vývojářům pluginů přidat akce do procesu mazání
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Spouští se, když se doména stane primární doménou webu.
+- [wu_domain_created](./Actions/wu_domain_created) — Spustí se, když je přidáno nové mapování domény.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Spuštěno po načtení našeho základního mapování domén
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Některé pluginy uloží URL předtím, než bylo mapování aktivní, nebo budou vytvářet URL jiným způsobem, který není zahrnut o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Umožňuje vývojářům navázat se po duplikaci webu.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Umožňuje vývojářům pluginů přidat další hooky
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook pro dodatečné čištění
 - [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Spouští se před zpracováním požadavku modalu pro přidání nové domény.
-- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Umožňuje vývojářům pluginů ukládat metadatové údaje různými způsoby, pokud je to nutné.
-- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Umožňuje vývojářům pluginů ukládat uživatelské metadatové údaje různými způsoby, pokud je to nutné.
-- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Spouští se, když je narazit na neplatný token magického odkazu.
-- [wu_magic_link_login](./Actions/wu_magic_link_login) — Spouští se po přihlášení uživatele pomocí magického odkazu.
-- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Umožňuje vývojářům pluginů provést další kroky, když je přidán zákazník.
-- [wu_mcp_user_role_id] — [Omluva, chybí toto pole v seznamu, ale předpokládám, že se jedná o nějaký identifikátor role. Pokud je to tak, je třeba ho doplnit.]
-- [Omluva, chybí toto pole v seznamu, ale předpokládám, že se jedná o nějaký identifikátor role. Pokud je to tak, je třeba ho doplnit.]
-- [Omluva, chybí toto pole v seznamu, ale předpokládám, že se jedná o nějaký identifikátor role. Pokud je to tak, je třeba ho doplnit.]
-- [Omluva, chybí toto pole v seznamu, ale předpokládám, že se jedná o nějaký identifikátor role. Pokud je to tak, je třeba ho doplnit.]
-- [Omluva, chybí toto pole v seznamu, ale předpokládám, že se jedná o nějaký identifikátor role. Pokud je to tak, je třeba ho doplnit.]
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Umožňuje vývojářům pluginů ukládat metadata různými způsoby, pokud to potřebují.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Umožňuje vývojářům pluginů ukládat metadata uživatele různými způsoby, pokud to potřebují.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Spouští se, když je zjištěn neplatný token magického odkazu.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Spouští se po přihlášení uživatele prostřednictvím magického odkazu.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Umožňuje vývojářům pluginů provést další věci, když je zákazník přidán.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Spouští se po zaregistrování schopností MCP pro entitu.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Spouští se po inicializaci adaptéru MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Spustí se po zrušení členství.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Spustí se po obnovení členství.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Spustí se před zrušením členství.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Spustí se před obnovením členství.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Spouští se po uložení objektu do databáze.
+- [wu_page_added](./Actions/wu_page_added) — Umožňuje vývojářům pluginů spustit další věci při registraci stránek.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Umožňuje vývojářům pluginů přidat další obsah poté, co stránku vypíšeme
+- [wu_page_before_render](./Actions/wu_page_before_render) — Umožňuje vývojářům pluginů přidat další obsah předtím, než stránku vypíšeme.
+- [wu_page_load](./Actions/wu_page_load) — Umožňuje vývojářům pluginů přidat další hooky na naše stránky.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Umožňuje vývojářům pluginů přidat další obsah poté, co stránku vypíšeme
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Umožňuje vývojářům pluginů přidat další obsah předtím, než stránku vypíšeme.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Umožňuje vývojářům pluginů přidat další hooky na naše stránky.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Spouští se po registraci widgetů pro tuto stránku.
 
-*(Poznámka: V původním seznamu chybí některé položky, které se opakují nebo jsou neúplné. Předpokládám, že se jedná o seznam akcí/hooků, a převedu je do standardního formátu.)*
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Spouští se, aby addons mohly připojit moduly oprávnění k integracím.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Spouští se, aby se integrace mohly samy zaregistrovat.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Umožňuje zaregistrovat další trasy.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Umožňuje vývojářům pluginu přidat akce do procesu ukládání.
+- [wu_site_created](./Actions/wu_site_created) — Spouští se po prvním vytvoření webu.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Umožňuje vývojářům pluginu přidat další hooky, pokud je potřeba.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Spouští se v kontextu náhledu šablony.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Spouští hook pro zařazení skriptů do fronty.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Spouští se po uložení objektu do databáze.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Spouští se po uložení objektu do databáze.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Spouští se po uložení objektu do databáze.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Umožňuje vývojářům pluginu přidat akce do procesu odemykání.
 
----
+## Filtry {#filters}
 
-**Shrnutí a Doporučení:**
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtruje dobu trvání období expirace autentizační cookie.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtruje schéma přesměrování autentizace.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Zde pro jistotu replikuje původní WP Filter.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Umožňuje vývojářům pluginů filtrovat URL používanou v previeweru
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtruje, zda má být auth cookie odesílána pouze přes HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtruje, zda použít zabezpečené přesměrování autentizace.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtruje, zda má být cookie přihlášeného uživatele odesílána pouze přes HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Umožňuje zabránit tomu, aby byly auth cookies skutečně odeslány klientovi.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Nastavuje URL přesměrování.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Přidává další kroky prostřednictvím filtrů
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Umožňuje vývojářům pluginů globálně přidat další proměnnou do kontextu vykreslování.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Umožňuje vývojářům zkrátit toto ověření.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtruje pole modálního okna pro přidání nové domény.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Umožňuje vývojářům provádět změny v položce poplatku za nastavení.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Umožňuje vývojářům filtrovat administrátorská oznámení přidaná Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtr po změně.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Nyní pracujeme se všemi typy.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Umožňuje vývojářům pluginů zkratovat omezení.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtruje, zda má být registrační poplatek použit, nebo ne.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtruje původní api argumenty.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Umožňuje vývojářům pluginů filtrovat pole fakturační adresy.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Umožňuje vývojářům obejít výstup a nastavit nový
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Umožňuje vývojářům obejít kód pro zrušení aktuálního uživatele.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtruje celkovou „opakovanou částku“.
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtruje celkovou „počáteční částku“.
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtruje celkovou „počáteční částku“.
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Umožňuje vývojářům pluginů zasahovat do hodnoty kreditu.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtruje sdílené základní domény checkout formuláře, které se nemají stát záznamy mapovaných domén.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — Naše API pro přidávání nových šablon polí se napojují sem.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — Naše API pro přidávání nových typů polí se napojují sem.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtruje chybové zprávy.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Umožňuje vývojářům obejít kontrolu, zda je pole automaticky odesílatelné.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Umožňuje vývojářům pluginů přidat vlastní aliasy do validátoru formuláře.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Umožňuje vývojářům pluginů filtrovat validační pravidla.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Ruší nastavení nežádoucích parametrů.
+- [wu_contains_element](./Filters/wu_contains_element) — Umožňuje vývojářům změnit výsledky počátečního vyhledávání.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Umožňuje poskytovatelům hostingu nainstalovat konstantu odlišně.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Vrací pěkný název administrativních pododdílů země.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Vrací seznam měst pro stát v zemi.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Vrací seznam států pro tuto zemi.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Umožňuje vývojářům upravit výchozí chování a nastavit aktuálního zákazníka odlišně.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Umožňuje vývojářům upravit výchozí chování a nastavit aktuální membership odlišně.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Umožňuje vývojářům upravit výchozí chování a nastavit aktuální web odlišně.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Umožňuje vývojářům upravit parametry URL pro správu webu.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Umožňuje vývojářům pluginů filtrovat odkazy.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Umožňuje vývojářům pluginů přidat nové kontroly za účelem definování výsledků.
 
-Pokud je toto seznam *akcí* (actions) nebo *filtry* (filters) pro vývojáře, je nutné je rozdělit do kategorií:
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — Později možná budeme potřebovat přidat další bloky.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Přidává obecný filtr, který vývojářům umožňuje rozšířit tento parser, aby si poradil s dalšími buildery nebo pluginy.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtrovat, zda vynucovat dodatečná pravidla pro hesla.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtrovat vygenerované uživatelské jméno zákazníka.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Umožnit vývojářům pluginů filtrovat přednastavení stránky checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Umožnit vývojářům přidat nové slugy formulářů pro obejití tohoto chování.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Umožnit vývojářům a add-onům přidávat nové kroky migrace
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Více o tomto filtru najdete níže, u této stejné metody.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Umožnit vývojářům vybrat, které typy příspěvků se mají zobrazovat.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Vrátit řádky, filtrovatelné
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Umožnit vývojářům upravovat dvojice doména/cesta.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtruje sekce průvodce pro nastavení integrace hostingu.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtruje pole ve formuláři. Formulář je identifikován ID v názvu filtru.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtrovat typy produktů, které mají nezávislé fakturační cykly.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Umožnit vývojářům pluginů vynutit daný stav pro API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Umožnit vývojářům pluginů přidat dodatečné testy pro vývojový režim.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Umožnit vývojářům pluginů vynutit daný stav pro MCP adaptér.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Z bezpečnostních důvodů omezujeme počet akcí dostupných pro napojení. Tento filtr umožňuje vývojářům rozšíření
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Kontroluje, zda je daný typ příspěvku v tomto plánu povolen. Umožnit vývojářům pluginů filtrovat návratovou hodnotu
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtrovat, zda vynucovat ověření IP adresy.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtrovat, zda vynucovat ověření user agentu.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtrovat vygenerovanou URL magic link.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtrovat, zda jsou magic links povoleny.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtruje URL přesměrování po nastavení domény jako primární.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Vytvořit seznam výjimek parametrů, které zabrání automatickému přesměrování.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtr pro přepsání rozhodnutí o zahrnutí schopnosti MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtruje vypočtené datum expirace.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtruje vypočtené datum expirace, které se má nastavit po obnovení.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Umožnit vývojářům přidat nové slugy formulářů pro aktualizaci.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtrovat minimální délku hesla.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtrovat minimální požadovanou sílu hesla (skóre zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Umožnit vývojářům pluginů i nám přidávat odkazy akcí na naše editační stránky
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtrovat, zda v heslech vyžadovat malá písmena.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtrovat, zda v heslech vyžadovat čísla.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtrovat, zda v heslech vyžadovat speciální znaky.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtrovat, zda v heslech vyžadovat velká písmena.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Umožnit uživateli změnit zprávu o čekajících platbách.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtrovat typy produktů, které se mají považovat za plány.
+- [wu_post_count](./Filters/wu_post_count) — Umožnit vývojářům pluginů změnit celkový počet
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Umožnit vývojářům pluginů změnit, který stav příspěvku se má započítávat. Ve výchozím nastavení se počítají publikované a soukromé příspěvky
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtruje data objektu před uložením do databáze.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Umožnit vývojářům filtrovat nastavení před uložením pomocí Ultimate Multisite.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtruje, zda je povoleno pokračovat s požadavkem, nebo ne.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtruje, zda je povoleno pokračovat s požadavkem, nebo ne.
 
-1.  **Akce (Actions):** Tyto se spouštějí, když se něco stane (např. `user_registered`).
-2.  **Filtry (Filters):** Tyto umožňují změnit hodnotu předtím, než je použita (např. `content`).
-
-**Pokud je seznam kompletní, je připraven k použití v dokumentaci pro vývojáře.**
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtruje, zda je povoleno pokračovat s požadavkem, nebo ne.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtruje, zda je povoleno pokračovat s požadavkem, nebo ne.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtruje, zda je povoleno pokračovat s požadavkem, nebo ne.
+- [wu_return_url](./Filters/wu_return_url) — Umožňuje vývojářům změnit návratovou URL brány použitou po procesech pokladny.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Umožňuje vývojářům pluginů přidat další funkce vyhledávacích modelů.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Umožňuje vývojářům přidat další kroky průvodce nastavením.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtruje, zda má Ultimate Multisite vytvořit doménový záznam pro nově vytvořený web.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Umožňuje vývojářům zkrátit přesměrování a zabránit jeho provedení.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Umožňuje přepsání handleru
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtruje hromadné akce dostupné pro weby.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtr pro změnu hodnoty pro get pluginssites uvnitř sítě.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Povolí/zakáže možnost jednotného přihlášení napříč doménami.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtruje vygenerované SSO URL před jejich vrácením pro zákaznické akce napříč doménami.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtruje data Stripe Subscription. Může přepsat success_url nebo cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtruje argumenty payment intentu.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtruje ID plánu, který se má zkontrolovat. Pokud existuje, nové předplatné použije tento plán.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtruje ID produktu, který se má zkontrolovat. Pokud existuje, nové předplatné použije tento produkt.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtruje hodnotu idempotency_key odeslanou s možnostmi platby Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtruje záznam členství přidružený k tomuto webhooku.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtruje meta data před jejich serializací pro uložení do databáze.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtruje data objektu před jejich uložením do databáze.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Umožňuje vývojářům změnit URL pro upgrade k odemčení
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Určuje, zda se má použít mapování
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtruje uživatelské jméno nového zákazníka.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Umožňuje vývojářům změnit zprávu o limitu uživatelů členství
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Umožňuje vývojářům přidat další složky do nahraditelného seznamu.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtruje, které sub_commands jsou pro tuto entitu povoleny.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Při pokusu zjistit, kam můžeme vložit naše konstanty, kontrolujeme tři vzory:

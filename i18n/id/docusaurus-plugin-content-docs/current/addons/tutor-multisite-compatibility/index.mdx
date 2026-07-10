@@ -7,15 +7,15 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
 
-# Kompatibilitas Tutor Multisite
+# Kompatibilitas Tutor Multisite {#tutor-multisite-compatibility}
 
 Sebuah plugin WordPress yang menambahkan perbaikan kompatibilitas untuk Tutor LMS di lingkungan multisite.
 
-## Deskripsi
+## Deskripsi {#description}
 
 Plugin ini menyediakan perbaikan kompatibilitas penting untuk menjalankan Tutor LMS di jaringan WordPress multisite. Plugin ini menangani pendaftaran pengguna, manajemen instruktur, batasan kursus, dan fungsionalitas spesifik multisite lainnya.
 
-## Fitur
+## Fitur {#features}
 
 - **Manajemen Tabel Database**: Secara otomatis mendeteksi dan membuat tabel Tutor LMS yang hilang yang gagal karena batasan kunci asing multisite
 - **Pendaftaran Pengguna Multisite**: Penangan AJAX kustom untuk mengelola pendaftaran pengguna di seluruh situs jaringan
@@ -24,7 +24,7 @@ Plugin ini menyediakan perbaikan kompatibilitas penting untuk menjalankan Tutor 
 - **Tampilan Admin Kustom**: Antarmuka daftar dan manajemen instruktur yang sadar multisite
 - **Alat Admin**: Antarmuka manajemen database untuk administrator jaringan dan situs
 
-## Persyaratan
+## Persyaratan {#requirements}
 
 - WordPress 5.0+
 - PHP 7.4+
@@ -32,14 +32,14 @@ Plugin ini menyediakan perbaikan kompatibilitas penting untuk menjalankan Tutor 
 - Instalasi WordPress Multisite
 - Plugin Ultimate Multisite (untuk fungsionalitas batasan kursus)
 
-## Instalasi
+## Instalasi {#installation}
 
 1. Unggah file plugin ke `/wp-content/plugins/tutor-multisite-compatibility/`
 2. Pastikan Tutor LMS sudah terinstal dan diaktifkan
 3. Aktifkan plugin melalui menu 'Plugins' di WordPress
 4. Plugin akan terintegrasi secara otomatis dengan Tutor LMS
 
-## Struktur File
+## Struktur File {#file-structure}
 
 ```
 tutor-multisite-compatibility/
@@ -60,7 +60,7 @@ tutor-multisite-compatibility/
 └── README.md
 ```
 
-## Fungsionalitas yang Dipindahkan dari Plugin MU
+## Fungsionalitas yang Dipindahkan dari Plugin MU {#functionality-moved-from-mu-plugin}
 
 Plugin ini berisi fungsionalitas yang sebelumnya berada di `wp-content/mu-plugins/daves.php`:
 
@@ -71,9 +71,9 @@ Plugin ini berisi fungsionalitas yang sebelumnya berada di `wp-content/mu-plugin
 - Penanganan pendaftaran pengguna multisite
 - Tampilan ID produk kursus
 
-## Manajemen Database
+## Manajemen Database {#database-management}
 
-### Masalahnya
+### Masalahnya {#the-problem}
 
 Di lingkungan WordPress multisite, pembuatan tabel Tutor LMS gagal untuk tabel dengan batasan kunci asing ke tabel pengguna. Ini terjadi karena:
 
@@ -81,7 +81,7 @@ Di lingkungan WordPress multisite, pembuatan tabel Tutor LMS gagal untuk tabel d
 - Kunci asing merujuk ke `wp_2_users` (yang tidak ada)
 - Tabel pengguna yang sebenarnya adalah `wp_users` (dibagikan di seluruh jaringan)
 
-### Solusinya
+### Solusinya {#the-solution}
 
 Plugin ini secara otomatis:
 
@@ -92,13 +92,13 @@ Plugin ini secara otomatis:
    - Pembuatan situs baru di jaringan
    - Pemeriksaan tabel manual melalui antarmuka admin
 
-### Tabel yang Terpengaruh
+### Tabel yang Terpengaruh {#affected-tables}
 
 - `tutor_coupon_usages` - Berisi kunci asing ke tabel pengguna
 - `tutor_carts` - Berisi kunci asing ke tabel pengguna
 - `tutor_notification_preferences` - Tabel TutorPro dengan kunci asing ke tabel pengguna
 
-### Antarmuka Admin
+### Antarmuka Admin {#admin-interface}
 
 Akses alat manajemen database di:
 
@@ -111,6 +111,6 @@ Antarmuka ini memungkinkan Anda untuk:
 - Memeriksa konfigurasi database
 - Melihat informasi status terperinci
 
-## Dukungan
+## Dukungan {#support}
 
 Plugin ini dirancang khusus untuk platform KursoPro. Untuk dukungan teknis, hubungi tim pengembang.

@@ -1,0 +1,30 @@
+---
+id: wu_checkout_form_base_domains
+title: Сүзгі - wu_checkout_form_base_domains
+sidebar_label: wu_checkout_form_base_domains
+_i18n_hash: 49dcc3fe0fa685304a70aeb9424749fd
+---
+# Сүзгі: wu_checkout_form_base_domains {#filter-wucheckoutformbasedomains}
+
+Ортақ checkout үлгісінің негізгі домендерін сүзеді, олар mapped-domain жазбаларына айналмауы тиіс.
+
+Бұл сүзгіні интеграция checkout үлгісіндегі **сайт URL** өрістері үшін қосымша негізгі домендер ұсынғанда пайдаланыңыз. Бұл сүзгі қайтаратын домендер әр сайтқа арналған жеке домендер емес, ортақ тіркеу хосттары ретінде қарастырылады.
+
+## Параметрлер {#parameters}
+
+| Атауы | Түрі | Сипаттамасы |
+|------|------|-------------|
+| $domains | `array` | Checkout үлгісінің конфигурациясынан жиналған ортақ негізгі домендер. |
+
+### Нұсқадан бастап {#since}
+
+- 2.13.0
+
+### Дереккөз {#source}
+
+`inc/functions/domain.php` ішінде анықталған.
+
+
+## Қайтарады {#returns}
+
+Қалыпқа келтірілген checkout үлгісінің негізгі домендерінің массиві.

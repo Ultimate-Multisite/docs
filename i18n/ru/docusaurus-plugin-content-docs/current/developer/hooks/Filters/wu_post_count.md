@@ -4,11 +4,11 @@ title: Фильтр - wu_post_count
 sidebar_label: wu_post_count
 _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 ---
-# Фильтр: wu_post_count
+# Фильтр: wu_post_count {#filter-wupostcount}
 
 Позволяет разработчикам плагинов изменить общее количество
 
-## Параметры
+## Параметры {#parameters}
 
 | Имя | Тип | Описание |
 |------|------|-------------|
@@ -16,13 +16,13 @@ _i18n_hash: 435505abb02375a268c71a8cb10b7ac6
 | $post_counts | `object` | Объект WordPress, возвращаемый функцией wp_count_posts |
 | $post_type | `string` | Слаг типа записи |
 
-### С версии
+### С версии {#since}
 
 - 1.9.1
 
-### Источник
+### Источник {#source}
 
 Определено в [`inc/limitations/class-limit-post-types.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/limitations/class-limit-post-types.php#L136) на строке 136
 
-## Возвращает
+## Возвращает {#returns}
 Новое общее количество

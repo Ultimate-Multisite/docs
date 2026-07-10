@@ -3,28 +3,28 @@ title: Hestia Панель Интеграция
 sidebar_position: 7
 _i18n_hash: 252519613f4d84d44875a5b2090e4bd6
 ---
-# Hestia Control Panel Интеграция
+# Hestia Control Panel Интеграция {#hestia-control-panel-integration}
 
 Bu kılavuzda Ultimate Multisite Hestia entegrasyonunu nasıl yapılandıracağınızı ve ağınızdaki haritalanmış alan adlarının otomatik olarak Hestia'da Web Domain Alias'ları (takma adlar) olarak eklenip çıkarılacağını anlatıyoruz.
 
 - Hestia CLI referansı: v-add-web-domain-alias / v-delete-web-domain-alias
 - Resmi REST API dokümantasyonu: https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Ne Yapar?
+## Ne Yapar? {#what-it-does}
 - Ultimate Multisite'ta bir alan adı haritalandığında, entegrasyon Hestia API'sini çağırarak şunları çalıştırır:
   - `v-add-web-domain-alias <KULLANICI> <ALAN_ADI> <ALIAS> [YENİLE]`
 - Bir alan adı eşleşmesi kaldırıldığında, şun çalıştırılır:
   - `v-delete-web-domain-alias <KULLANICI> <ALAN_ADI> <ALIAS> [YENİLE]`
 - Alan Eşleştirme ayarlarınızdaki "Otomatik www alt alan adı oluştur" (Auto-create www subdomain) seçeneğine bağlı olarak `www.` takma adını isteğe bağlı olarak ekler/kaldırır.
 
-## Ön Koşullar
+## Ön Koşullar {#prerequisites}
 - Zaten WordPress kurulumunuza işaret eden mevcut bir Hestia Web Domain'i olmalı. Entegrasyon, bu temel alana takma adlar ekleyecektir.
 - Hestia API erişimi etkin olmalı. Kimlik doğrulamayı ya şifre ya da bir API hash/token kullanarak yapabilirsiniz.
 
 API erişimini ve kimlik doğrulama ayrıntılarını etkinleştirmek için Hestia'nın REST API dokümantasyonuna bakın:
 https://hestiacp.com/docs/server-administration/rest-api.html
 
-## Yapılandırma (Wizard → Integrations → Hestia)
+## Yapılandırma (Wizard → Integrations → Hestia) {#configuration-wizard--integrations--hestia}
 Aşağıdaki değerleri sağlayın:
 
 - `WU_HESTIA_API_URL` (задан)
@@ -42,16 +42,16 @@ Aşağıdaki değerleri sağlayın:
 
 Вы можете позволить мастеру подставить эти константы в файл `wp-config.php`, или определить их вручную.
 
-## Проверка настройки
+## Проверка настройки {#verifying-setup}
 - На шаге мастера «Тестирование» плагин вызывает `v-list-web-domains <WU_HESTIA_ACCOUNT> json` через API. Успешный ответ подтверждает подключение и аутентификацию.
 - После привязки домена проверьте в Hestia: Web > базовый домен > Алиасы. Вы должны увидеть добавленный новый алиас.
 
-## Заметки и советы
+## Заметки и советы {#notes--tips}
 - Убедитесь, что `WU_HESTIA_WEB_DOMAIN` уже существует и принадлежит `WU_HESTIA_ACCOUNT`.
 - Если требуется SSL, управляйте сертификатами в Hestia. Эта интеграция на данный момент работает только с алиасами.
 - Плагин также может добавлять/удалять `www.<domain>` в зависимости от вашей настройки "www subdomain" при сопоставлении доменов (Domain Mapping).
 
-## Пример вызова API (cURL)
+## Пример вызова API (cURL) {#example-api-call-curl}
 Ниже приведен концептуальный пример (настройте под свою среду). См. официальную документацию для точных параметров.
 
 POST https://your-hestia-host:8083/api/
@@ -68,11 +68,11 @@ cmd=v-add-web-domain-alias
 
 Удаление для удаления используется `cmd=v-delete-web-domain-alias` и те же аргументы.
 
-## Устранение неполадок (Troubleshooting)
+## Устранение неполадок (Troubleshooting) {#troubleshooting}
 - Ошибка HTTP от API: проверьте, доступен ли адрес `WU_HESTIA_API_URL` и содержит ли он `/api`.
 - Ошибки аутентификации: подтвердите, что установлены переменные `WU_HESTIA_API_USER` и либо `WU_HESTIA_API_PASSWORD`, либо `WU_HESTIA_API_HASH`.
 - «Отсутствует учетная запись/базовый домен» в логах: убедитесь, что `WU_HESTIA_ACCOUNT` и `WU_HESTIA_WEB_DOMAIN` установлены и действительны в Hestia.
 
-## Ссылки (References)
+## Ссылки (References) {#references}
 - REST API Hestia: https://hestiacp.com/docs/server-administration/rest-api.html
 - Справочник Hestia CLI (Псевдонимы): https://hestiacp.com/docs/reference/cli.html#v-add-web-domain-alias

@@ -3,11 +3,11 @@ title: Gambaran Keseluruhan Papan Pemuka
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Gambaran Keseluruhan Dashboard
+# Gambaran Keseluruhan Dashboard {#dashboard-overview}
 
 Ultimate Multisite mempunyai **Dashboard** khusus di bawah menu Ultimate Multisite, dan juga menambah widget pada Network Dashboard. Artikel ini menerangkan apa yang akan anda lihat di kedua-dua tempat tersebut.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite menyuntik widget berguna ke dalam dashboard peringkat rangkaian yang terdapat di **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Berikut adalah fungsi setiap widget:
 
 ![Widget News](/img/admin/network-dashboard-news.png)
 
-## Dashboard Ultimate Multisite
+## Dashboard Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Walaupun network dashboard mempersembahkan maklumat menyeluruh tentang rangkaian, dashboard Ultimate Multisite (di peringkat atas menu Ultimate Multisite) mempersembahkan maklumat tentang perkhidmatan tersebut.
 

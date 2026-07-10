@@ -1,46 +1,46 @@
 ---
-title: Manual tölegleri goýmak
+title: El bilen tölegleri sazlamak
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manual Ödemeleri Kurmak (v2)
+# El bilen tölegleri sazlamak (v2) {#setting-up-manual-payments-v2}
 
-_**ÖNEMLİ QAYDAMA: Bu makale Ultimate Multisite versiyon 2.x-iňizi aňladýar.**_
+_**MÖHÜM BELLIK: Bu makala Ultimate Multisite 2.x wersiýasyna degişlidir.**_
 
-Manual ödemeler, **Stripe** ýa-da **PayPal** ulgamy sizi wezipeleri üçin bar bolsa hem, käbir hakda pul geçirmegi teklip etmek üçin bir usuldyr. Bu, wire (telgraf) ýa-da bank transferi ýa-da sizin ulgamanyz üçin lokal ýagdaýda bar bolan başga ödeme usulyny aňladýar.
+El bilen tölegler, **Stripe** ýa-da **PayPal** ulanyjylaryňyz üçin elýeterli bolmadyk ýagdaýynda, başga töleg usullaryny hödürlemegiň bir ýoludyr. Bu bank geçirimi ýa-da ulanyjylaryňyz üçin ýerli derejede elýeterli bolan islendik başga töleg usuly bolup biler.
 
-## Manual Ödemeleri Näme wepa etmek
+## El bilen tölegleri nädip işjeňleşdirmeli {#how-to-enable-manual-payments}
 
-Manual ödemeleri sozlamak örän aňsatdyr. Siz onu ödeme portal laryny (payment gateways) aşakdan wekil etmeli we ulgamda pul geçirmegi nädip göndermeli, şol barada giňişli düşündirişleri bermeli.
+El bilen tölegi sazlamak örän aňsat. Diňe ony töleg geçelgeleriniň aşagynda işjeňleşdirmeli we ulanyjynyň tölegi nädip ibermelidigi barada jikme-jik görkezmeleri girizmeli.
 
-Ilki bilen, **Ultimate Multisite > Settings > Payments**-e gitdiň. **Payment Gateways** aşagynda **Manual** düğünü ýapyp bilersiňiz (toggle on). Siz bir **Payment Instructions** saryny görseňiz.
+Ilki bilen, **Ultimate Multisite > Sazlamalar > Tölegler** bölümine gidiň. **Töleg geçelgeleri** aşagynda **El bilen** açyň. Siziň üçin **Töleg görkezmeleri** gutusynyň peýda bolandygyny görersiňiz.
 
-Bu saryna adamyň ödeme etmegi üçin zerur boljak maglumatlary goýuň. Bu, bank hasabyňyz we e-poçt adresiniz bolup biler, şonuň bilen adam sizden ödeme kanadyny göndere biljekdir, mysal üçin.
+Bu gutujyga müşderiňiziň tölegi amala aşyrmak üçin gerek boljak maglumatlaryny goşuň. Mysal üçin, bu bank hasabyňyzyň maglumatlary we müşderiniň size töleg tassyklamasyny ibermegi üçin e-poçta salgyňyz bolup biler.
 
-![Payment Instructions tekst saryny manual ödeme portal düğümini görkezýär](/img/config/manual-gateway-expanded.png)
+![Töleg görkezmeleri tekst meýdany bilen el bilen töleg geçelgesini açyp-ýapmak düwmesi](/img/config/manual-gateway-expanded.png)
 
-Bu aşakda manual ödeme portal dyramaty (settings interface) görkezilendir:
+Ine, el bilen geçelge sazlamalarynyň interfeýsi:
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+![El bilen geçelge sazlamalary](/img/config/manual-gateway-settings.png)
 
-Soňra onu sozlap, diňe **Save Settings** düwümini basyň we işi bitirip bilersiňiz. Ulgamyza ýazylanda, ulgama öwüşi tamamlamak üçin sizden ödeme kanadyny aljakdygy barada habar beren mesaj görkeziljekdir.
+Ony sazlap bolanyňyzdan soň, diňe **Sazlamalary ýatda sakla** düwmesine basyň, şonuň bilen tamamlanýar. Ulanyjylar ulgamyňyza hasaba alnanda, satyn alşy tamamlamak üçin siziň görkezmeleriňizi aljakdyklaryny aýdýan habary görerler.
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+![Ulanyja töleg görkezmelerini aljakdygyny aýdýan hasaba alyş tassyklama habary](/img/frontend/registration-manual-notice.png)
 
-We olaryň **Thank You** sabynda hem ödeme kanadyny aljakdygy barada bir habar ýazyljakdyr.
+Şeýle hem olar siziň **Sag boluň** sahypaňyzda töleg görkezmeleriňiz bilen habar alarlar.
 
 <!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
 
-## Manual ödemeleri tasdiqlamak
+## El bilen tölegleri tassyklamak {#confirming-manual-payments}
 
-Manuel töhlemeňizi tassyklamak üçin, sol çyzykdaky **Payments** menüsine gidiň. Orada şeýleki ulgamyňizdeki ähli töhlämeleri we olaryň **statusyny** göräp bilersiňiz. Manuel töhleme her wagt onuň statusyny siz özüňiz üýtgetdiginiz çen çen **Pending** (Beklenipdirilen) bolup galýar.
+El bilen tölegi tassyklamak üçin, çep paneldäki **Tölegler** menýusyna gidiň. Ol ýerde ulgamyňyzdaky ähli tölegleri we olaryň jikme-jikliklerini, şol sanda olaryň **ýagdaýyny** görüp bilersiňiz. El bilen töleg, siz ony el bilen üýtgedýänçäňiz, hemişe **Garaşylýar** ýagdaýynda bolar.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Garaşylýan el bilen tölegi görkezýän tölegler sanawy](/img/admin/payments-list.png)
 
-**reference code** bilen basyp töhleme səhpaçasyna giriziň. Bu səhpa sizde beklenen töhlenin ähli maglumatlary bar, mysal üçin reference ID, önüm, wagty we başga zatlar.
+**Salgylanma koduna** basyp, töleg sahypasyna giriň. Bu sahypada garaşylýan tölegiň ähli jikme-jiklikleri bar, meselem salgylanma ID-si, önümler, wagt bellikleri we başgalar.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Salgylanma koduny, önümleri we jemi mukdarlary görkezýän töleg jikme-jiklikleri sahypasy](/img/admin/payment-edit.png)
 
-Sağ sütüde töhlemenizin statusyny üýtgetip bilersiňiz. Onu **Completed** (Tamamlandı) bilen üýtgetmek we **Activate Membership** opsiyasyny açyp-ýap (toggle etmek) siziň müşderiniň sahypasy işjeňleşdirilip, olaryň üyeliksi aktif bolmaga mümkinçilik berer.
+Sag sütünde tölegiň ýagdaýyny üýtgedip bilersiňiz. Ony **Tamamlandy** diýip üýtgetmek we **Agzalygy işjeňleşdir** opsiýasyny açmak müşderiňiziň saýtyny işjeňleşdirer we olaryň agzalygy aktiw bolar.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Ýagdaýy Tamamlandy edilip bellenen we Agzalygy işjeňleşdir açyk bolan tölegi redaktirleme sahypasy](/img/admin/payment-activate-membership.png)

@@ -3,13 +3,13 @@ title: Hostinger Multi-Tenancy
 sidebar_position: 8
 _i18n_hash: d7facb9c131877c2c834bd2184d9a073
 ---
-# Hostinger Multi-Tenancy
+# Hostinger Multi-Tenancy {#hostinger-multi-tenancy}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 voegt een Hostinger multi-tenancy functionaliteit toe, zodat gehoste domeinen kunnen deelnemen aan soevereine tenantprovisioning naast de bestaande Hostinger domain-mapping integratie.
 
 Gebruik deze functionaliteit wanneer tenantdomeinen en geïsoleerde tenantinfrastructuur worden beheerd via Hostinger hPanel.
 
-## Setup notities
+## Setup notities {#setup-notes}
 
 1. Configureer de kernintegratie met Hostinger onder **Ultimate Multisite > Settings > Host Integrations**.
 2. Controleer of de Hostinger API token het doel-domein of subdomain kan beheren.
@@ -19,14 +19,14 @@ Gebruik deze functionaliteit wanneer tenantdomeinen en geïsoleerde tenantinfras
 
 De Hostinger functionaliteit maakt gebruik van de gedeelde Hostinger verbinding voor host-side operaties. Het DNS moet nog steeds wijzen naar het juiste Hostinger account, en de hPanel accountlimieten gelden nog steeds.
 
-## Functionaliteitsspecifieke wijzigingen
+## Functionaliteitsspecifieke wijzigingen {#capability-specific-changes}
 
 - Soevereine tenants kunnen worden aangemaakt met hostbewuste domeinoperaties.
 - Database hoststrings op dezelfde machine worden genormaliseerd voordat de verificatie wordt uitgevoerd.
 - Hostinger beheerde tenants moeten het database hostwaarde gebruiken die in hPanel wordt weergegeven, tenzij de WordPress runtime een lokale override vereist.
 - SSO bezoeken zijn afhankelijk van het tenantdomein dat resulteert in de door Hostinger gehoste tenant.
 
-## Probleemoplossing voor Hostinger tenants
+## Probleemoplossing voor Hostinger tenants {#troubleshooting-hostinger-tenants}
 
 - Als een installatie van een tenant mislukt, controleer dan of het domein al aan het Hostinger account is gekoppeld.
 - Als de databaseverificatie faalt, vergelijk dan de DB-gebruikersnaam, de databasenaam en de hostbinding van de tenant met hPanel.

@@ -3,15 +3,15 @@ title: 'Les 5: Ontwerp van Jou Planne'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Les 5: Die Ontwerp van Jou Planne
+# Les 5: Die Ontwerp van Jou Planne {#lesson-5-designing-your-plans}
 
 Jou planverdiepings is meer as net prysniveaus – dit is 'n weerspieëling van hoe jou niche-kliënte eintlik funksioneer. In hierdie les gaan jy produkverdiepings ontwerp wat die werklike behoeftes van fiksheidsbesighede op verskillende vlakke bymekaar bring.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite het drie sjablone gereed (Studio Essential, Gym Pro, Fitness Chain). Nou skep ons die planne wat bepaal wat kliënte toegang daartoe kry en wat hulle betaal.
 
-## Dink in Kliëntsegmentering
+## Dink in Kliëntsegmentering {#thinking-in-customer-segments}
 
 Die fout wat die meeste mense maak, is om planne te ontwerp rondom tegniese kenmerke (bergingsplek, bandwydte, aantal bladsye). Jou niche-kliënte dink nie in daardie terme nie. 'n Gim-eienaar dink daaroor wat hy nodig het om sy besigheid te laat loop.
 
@@ -25,11 +25,11 @@ Vir fiksheidsstudio's bestaan drie natuurlike segmente:
 
 Jou planne moet by hierdie segmente pas, en nie by willekeurige kenmerke-bundels nie.
 
-## Die Skep van die FitSite Planne
+## Die Skep van die FitSite Planne {#creating-the-fitsite-plans}
 
 Navigeer na **Ultimate Multisite > Products > Add Product** vir elke plan.
 
-### Plan 1: FitSite Starter -- $49/maand
+### Plan 1: FitSite Starter -- $49/maand {#plan-1-fitsite-starter----49month}
 
 **Teiken**: Solo-trainers en klein studio's
 
@@ -59,7 +59,7 @@ Navigeer na **Ultimate Multisite > Products > Add Product** vir elke plan.
 - Jou geselekteerde tema: Force Activate
 - Alle ander temas: Verberg
 
-### Plan 2: FitSite Growth -- $99/maand
+### Plan 2: FitSite Growth -- $99/maand {#plan-2-fitsite-growth----99month}
 
 **Teiken**: Gevestigde enkele-liggings gimme
 
@@ -85,7 +85,7 @@ Navigeer na **Ultimate Multisite > Products > Add Product** vir elke plan.
 - Plan groep: FitSite Plans
 - Produk volgorde: 2
 
-### Plan 3: FitSite Pro -- $199/maand
+### Plan 3: FitSite Pro -- $199/maand {#plan-3-fitsite-pro----199month}
 
 **Teiken**: Multi-liggings fiksheidsnetwerke
 
@@ -109,7 +109,7 @@ Navigeer na **Ultimate Multisite > Products > Add Product** vir elke plan.
 - Plan groep: FitSite Plans
 - Produk volgorde: 3
 
-## Opstel van die Plan Groep
+## Opstel van die Plan Groep {#setting-up-the-plan-group}
 
 Die plan groep verseker dat kliënte net binne die FitSite planfamilie kan opgradeer of afgradeer. Op elke plan se **Op & Afgradeer** tabblad:
 
@@ -118,7 +118,7 @@ Die plan groep verseker dat kliënte net binne die FitSite planfamilie kan opgra
 
 Dit skep 'n duidelike opgraderingspad: Starter → Growth → Pro.
 
-## Byvoeg van Bestel-Boosters
+## Byvoeg van Bestel-Boosters {#adding-order-bumps}
 
 Bestel-boosters is add-on produkte wat tydens die afrekening aangebied word. Vir FitSite, oorweeg:
 
@@ -128,7 +128,7 @@ Bestel-boosters is add-on produkte wat tydens die afrekening aangebied word. Vir
 
 Skep hierdie as **Pakket** tipe produkte in Ultimate Multisite en koppel dit aan die relevante planne.
 
-## Hoekom Hierdie Struktuur Werk
+## Hoekom Hierdie Struktuur Werk {#why-this-structure-works}
 
 - **Starter** verwyder toetredingsbarriers -- lae prys, eenvoudige aanbod, kry trainers vinnig aanlyn
 - **Growth** voeg die kenmerke by wat gimme werklik vra -- bespreking, galery's, eie domeine
@@ -136,7 +136,7 @@ Skep hierdie as **Pakket** tipe produkte in Ultimate Multisite en koppel dit aan
 - **Bestel-boosters** laat kliënte toe om te personaliseer sonder om die kernplanne te kompliseer
 - **Duidelike opgraderingspad** beteken dat kliënte met jou groei en nie wegloop nie
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **Drie planverdiepings** wat gekoppel is aan werklike fiksheidsbesigheidssegmentes
 - **Kenmerke-hekwerk** (Feature gating) met Ultimate Multisite se plugin- en sjabloonbeheer

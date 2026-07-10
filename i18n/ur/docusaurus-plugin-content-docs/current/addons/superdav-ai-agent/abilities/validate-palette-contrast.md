@@ -3,15 +3,15 @@ title: پالت رنگ کا تضاد جانچیں
 sidebar_position: 2
 _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 ---
-# رنگوں کے تضاد کا جائزہ لینا (Validate Palette Contrast)
+# رنگوں کے تضاد کا جائزہ لینا (Validate Palette Contrast) {#validate-palette-contrast}
 
 **Validate Palette Contrast** کی صلاحیت آپ کے ڈیزائن پیلیٹ میں موجود رنگوں کے جوڑوں کا جائزہ لیتی ہے تاکہ یہ تصدیق ہو سکے کہ وہ WCAG (Web Content Accessibility Guidelines) کے مطابق ہیں، اس سے پہلے کہ آپ انہیں اپنے تھیم پر لاگو کریں۔
 
-## جائزہ (Overview)
+## جائزہ (Overview) {#overview}
 
 یہ صلاحیت اس بات کو یقینی بناتی ہے کہ آپ کی سائٹ کا رنگوں کا مجموعہ (color scheme) ٹیکسٹ اور پس منظر (background) کے رنگوں کے درمیان تضاد کے تناسب (contrast ratios) کو جانچ کر قابلِ رسائی (accessibility) کے معیار پر پورا اترے۔ یہ ایسے رنگوں کے امتزاج کو روکنے میں مدد کرتا ہے جنہیں بصری کمزوری والے صارفین کے لیے پڑھنا مشکل ہو سکتا ہے۔
 
-## ان پٹ فارمیٹ (Input Format)
+## ان پٹ فارمیٹ (Input Format) {#input-format}
 
 یہ صلاحیت ایک رنگوں کا پیلیٹ ان پٹ کے طور پر قبول کرتی ہے:
 
@@ -35,7 +35,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### پیرامیٹرز (Parameters)
+### پیرامیٹرز (Parameters) {#parameters}
 
 | پیرامیٹر (Parameter) | قسم (Type) | ضروری (Required) | تفصیل (Description) |
 |-----------|------|----------|-------------|
@@ -43,7 +43,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `wcag_level` | string | No | WCAG کی تعمیل کا لیول: "A", "AA" (ڈیفالٹ), یا "AAA" |
 | `pairs_to_check` | array | No | جانچ کرنے کے لیے مخصوص رنگوں کے جوڑے (مثلاً، `["primary-text", "background-text"]`) |
 
-## چیک کیے جانے والے WCAG لیولز (WCAG Levels Checked)
+## چیک کیے جانے والے WCAG لیولز (WCAG Levels Checked) {#wcag-levels-checked}
 
 یہ صلاحیت WCAG کے معیارات کے مطابق تضاد کے تناسب (contrast ratios) کی تصدیق کرتی ہے:
 
@@ -56,7 +56,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 - **نارمل ٹیکسٹ** — 18pt سے چھوٹا ٹیکسٹ (یا 14pt بولڈ)
 - **بڑا ٹیکسٹ** — 18pt یا اس سے بڑا ٹیکسٹ (یا 14pt بولڈ یا اس سے بڑا)
 
-## آؤٹ پٹ اسکیما (Output Schema)
+## آؤٹ پٹ اسکیما (Output Schema) {#output-schema}
 
 یہ صلاحیت ایک تفصیلی تصدیقی رپورٹ واپس کرتی ہے:
 
@@ -95,7 +95,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 }
 ```
 
-### آؤٹ پٹ فیلڈز (Output Fields)
+### آؤٹ پٹ فیلڈز (Output Fields) {#output-fields}
 
 | فیلڈ (Field) | قسم (Type) | تفصیل (Description) |
 |-------|------|-------------|
@@ -106,7 +106,7 @@ _i18n_hash: b1be22868f9257a232b89cc2a2c2768d
 | `status` | string | ہر جوڑے کے لیے "pass" یا "fail" |
 | `recommendations` | array | ناکام جوڑوں کو بہتر بنانے کے لیے تجاویز |
 
-## استعمال کا نمونہ (Usage Example)
+## استعمال کا نمونہ (Usage Example) {#usage-example}
 
 **پرامپٹ (Prompt):**
 ```
@@ -119,7 +119,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - ✅ پس منظر + ٹیکسٹ: 12.1:1 تناسب (WCAG AAA کے مطابق ہے)
 - مجموعی طور پر: WCAG AA کے مطابق ہے
 
-## تھیم بلڈر کے ساتھ انضمام (Integration with Theme Builder)
+## تھیم بلڈر کے ساتھ انضمام (Integration with Theme Builder) {#integration-with-theme-builder}
 
 جب تھیم بلڈر کے ڈیزائن-ڈائریکشن سلیکشن کا استعمال کیا جاتا ہے، تو Validate Palette Contrast کی صلاحیت:
 
@@ -129,7 +129,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 4. غیر مطابقت پذیر جوڑوں کے لیے سفارشات فراہم کرتی ہے
 5. ناقابلِ رسائی رنگوں کے امتزاج کو لاگو ہونے سے روکتی ہے
 
-## بہترین طریقے (Best Practices)
+## بہترین طریقے (Best Practices) {#best-practices}
 
 - **AA لیول سے آغاز کریں** — زیادہ تر ویب سائٹس کے لیے WCAG AA معیار ہے۔
 - **لاگو کرنے سے پہلے جانچ کریں** — ڈیزائن پر عمل کرنے سے پہلے اپنے پیلیٹ کی تصدیق کریں۔
@@ -137,7 +137,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 - **صارف کی ترجیحات پر غور کریں** — کچھ صارفین میں رنگوں کی اضافی حساسیت ہو سکتی ہے۔
 - **تضاد جانچنے والے ٹولز استعمال کریں** — تصدیق کے لیے اس صلاحیت کو براؤزر ٹولز کے ساتھ استعمال کریں۔
 
-## ناکام جوڑے اور سفارشات (Failing Pairs and Recommendations)
+## ناکام جوڑے اور سفارشات (Failing Pairs and Recommendations) {#failing-pairs-and-recommendations}
 
 اگر کوئی رنگ کا جوڑا تصدیق میں ناکام ہو جاتا ہے، تو یہ صلاحیت سفارشات فراہم کرتی ہے:
 
@@ -155,7 +155,7 @@ Check if my color palette meets WCAG AA standards. I have primary color #678233,
 }
 ```
 
-## متعلقہ صلاحیتیں (Related Abilities)
+## متعلقہ صلاحیتیں (Related Abilities) {#related-abilities}
 
 - [Generate Logo SVG](./generate-logo-svg.md) — اپنے تصدیق شدہ رنگوں کے پیلیٹ سے لوگو بنائیں
 - [Create Menu](./create-menu.md) — قابلِ رسائی رنگوں کے ساتھ نیویگیشن بنائیں

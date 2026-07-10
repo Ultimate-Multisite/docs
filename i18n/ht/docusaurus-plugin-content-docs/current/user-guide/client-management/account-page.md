@@ -3,7 +3,7 @@ title: Paj Kont Kliyan
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# Pagyan Akontman Kliyan Ou (v2)
+# Pagyan Akontman Kliyan Ou (v2) {#your-clients-account-page-v2}
 
 _**NOTE KRITIK: Sa tèks sa a se refere a Ultimate Multisite v2.x.**_
 
@@ -11,7 +11,7 @@ Lè kliyan yo abone yon plan sou rezo ou an, yo jwenn aksè nan yon sit entènè
 
 Nan tèmisyèl sa a, nou pral gide ou atravè paj kont kliyan an epi ou pral wè sa kliyan ou ka wè ak fè la.
 
-## Paj Kont La
+## Paj Kont La {#the-account-page}
 
 Paj kont la rive jwenn li lè ou klike sou **Account** nan dashboard kliyan ou an.
 
@@ -27,7 +27,7 @@ Lè yon kliyan klike sou li, yo pral wè yon ganon sou manmship yo, adrès faktu
 
 Yo ka tou chanje manmship yo pou yon lòt plan, oswa achte yon lòt pake oswa sèvis ou ofri. Ann gade chak seksyon sepilman.
 
-### Aperçu de votre adhésion :
+### Aperçu de votre adhésion : {#your-membership-overview}
 
 Le premier bloc juste en dessous du nom du site de vos clients montre un aperçu de leur plan actuel et des services/forfaits qu'ils ont achetés avec celui-ci. Ce bloc affiche aussi le numéro d'adhésion, le montant initial payé pour celle-ci, combien coûte le plan et tout service/forfait, et combien de fois cette adhésion a été facturée. Ils peuvent aussi voir si l'adhésion est **Active**, **Expirée** ou **Annulée**.
 
@@ -43,7 +43,7 @@ Maintenant, si vos clients choisissent d'acheter des forfaits ou des services po
 
 Notez que vous ne pouvez pas ajouter de codes de réduction sur cette page de changement d'adhésion. Si le client a utilisé un code de réduction lors du premier achat de l'adhésion, ce code s'appliquera aussi à cette nouvelle adhésion.
 
-### Mettre à jour l'adresse de facturation :
+### Mettre à jour l'adresse de facturation : {#updating-the-billing-address}
 
 Souvan pa paj page compte la, nou ka fè kliyan ou yo chanje adrès faktura yo tou. Yo sèlman bezwen klike sou **Update** ki bò _Billing Address_ la.
 
@@ -53,7 +53,7 @@ Yon fenèt nouvo ap parèt pou kliyan ou a. Tout sa li bezwen fè se ranpli adr�
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Chanje Site Template la:
+### Chanje Site Template la: {#changing-the-site-template}
 
 Pou pèmèt kliyan ou yo chanje site template yo, ou dwe ale nan **Ultimate Multisite > Settings > Sites** epi klike sou opsyon **Allow Template Switching**.
 
@@ -81,7 +81,7 @@ Malgre ke ou klike sou confirmation epi klike pou **Process Switch**, sit templa
 
 Kliyan yo ka itilize tou **Reset current template** soti nan panel sa a lè yo bezwen retounen sit la ba template ki te chwazi a kounye a. Tankou chanje pou yon lòt template, reponn yon template ka ap ekri sou kontni sit la, konsa kliyan yo sèlman dwe konfime li lè yo konprann aksyon reset la.
 
-### Ajoute Domèn Koutim:
+### Ajoute Domèn Koutim: {#adding-custom-domains}
 
 Kliyan ou yo gen opsyon ajoute domèn koutim pou plan sa a sou paj kont yo. Pou pèmèt kliyan ou yo itilize domèn koutim, ale nan **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Apou apre klike sou **Next Step**, tout client yo ka ajoute non custom domain yo
 
 Apou apre klike sou **Add Domain**, domain sa a ap ajoute nan kont tout client ou an. Tout sa yo bezwen fè kounye se chanje aksyon DNS custom domain sa a sou registran domain yo.
 
-### Chanje Pawòl:
+### Chanje Pawòl: {#changing-password}
 
 Nan dashboard account la, tout client yo ka chanje pawòl yo tou lè yo klike sou **Change Password**.
 
@@ -125,7 +125,7 @@ Sa a wè sa la pral montre yon nouvo fenèt kote kliyan ou yo ap bezwen antre pw
 
 ![Form chanje mot ak champs pou mot de klavye ki genyen ak nouvo mot de klavye](/img/account-page/change-password-form.png)
 
-### Zòn Danje:
+### Zòn Danje: {#danger-zone}
 
 Nou gen de opsyon ki montre nan pati **Danger Zone** la: **Delete Site** (Sè Site a) ak **Delete Account** (Sè Kont la). Yo tou de nan zòn danje paske de aksyon sa yo pa ka geri. Si kliyan ou yo delete sit entènèt yo oswa kont yo, yo pa ka retounen yo ankò.
 

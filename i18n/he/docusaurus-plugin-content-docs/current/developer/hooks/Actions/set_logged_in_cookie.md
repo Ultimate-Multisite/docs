@@ -4,11 +4,11 @@ title: פעולה - set_logged_in_cookie
 sidebar_label: set_logged_in_cookie
 _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 ---
-# פעולה: set_logged_in_cookie
+# פעולה: set_logged_in_cookie {#action-setloggedincookie}
 
 מופעל מיד לפני שקוביית האימות (cookie) של המשתמש המחובר מוגדרת.
 
-## פרמטרים
+## פרמטרים {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -19,10 +19,10 @@ _i18n_hash: f26ccae9b12cf56942b7e99a288ea87c
 | $scheme | `string` | סכמת אימות. ברירת המחדל היא 'logged_in'. |
 | $token | `string` | אסימון המשתמש (session token) שצריך להשתמש בו עבור קוקי זה. |
 
-### מאז
+### מאז {#since}
 
 - 2.6.0
 - 4.9.0: נוסף הפרמטר <code>$token</code>.
-### מקור
+### מקור {#source}
 
 מוגדר ב[`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L141) בשורה 141

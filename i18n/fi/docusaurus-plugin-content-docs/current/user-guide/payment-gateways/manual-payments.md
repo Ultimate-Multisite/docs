@@ -1,46 +1,46 @@
 ---
-title: Manuaalisten maksujen asettelu
+title: Manuaalisten maksujen määrittäminen
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuaalmaksujen asennus (v2)
+# Manuaalisten maksujen määrittäminen (v2) {#setting-up-manual-payments-v2}
 
-_**TÄRKEÄ HUOMIO: Tämä artikkeli viittaa Ultimate Multisite -versioon 2.x.**_
+_**TÄRKEÄ HUOMAUTUS: Tämä artikkeli koskee Ultimate Multisite -version 2.x käyttöä.**_
 
-Manuaaliset maksut ovat tapa tarjota käyttäjille muita maksuvaihtoehtoja, jos **Stripe** tai **PayPal** eivät ole saatavilla heidän käyttäjilleen. Se voi olla sähköinen siirto (wire), pankkisiirto tai mikä tahansa muu maksutapa, joka on saatavilla käyttäjillesi paikallisesti.
+Manuaaliset maksut ovat tapa tarjota muita maksutapoja, jos **Stripe** tai **PayPal** ei ole käyttäjiesi saatavilla. Se voi olla tilisiirto tai pankkisiirto tai mikä tahansa muu maksutapa, joka on paikallisesti käyttäjiesi saatavilla.
 
-## Manuaalisten maksujen aktivoiminen
+## Manuaalisten maksujen käyttöönotto {#how-to-enable-manual-payments}
 
-Manuaalisten maksujen asennus on erittäin helppoa. Sinun tarvitsee vain ottaa sen käyttöön maksukeskusten (payment gateways) alta ja antaa yksityiskohtaisia ohjeita siitä, miten käyttäjän tulee lähettää maksu.
+Manuaalisen maksun määrittäminen on erittäin helppoa. Sinun tarvitsee vain ottaa se käyttöön maksuyhdyskäytävien kohdalla ja lisätä yksityiskohtaiset ohjeet siitä, miten käyttäjän tulee lähettää maksu.
 
-Aloita menimällä **Ultimate Multisite > Asetukset > Maksut**. Alhaalla kohdasta **Maksukeskukset** (Payment Gateways) kytke **Manuaalinen** (Manual) päälle. Näet, että sinulle ilmestyy **Maksutiedot** (Payment Instructions) -laatikko.
+Siirry ensin kohtaan **Ultimate Multisite > Asetukset > Maksut**. Ota **Maksuyhdyskäytävät**-kohdan alla **Manuaalinen** käyttöön. Näet, että **Maksuohjeet**-laatikko tulee näkyviin.
 
-Lisää tähän laatikkoon tiedot, joita asiakkaasi tarvitsee maksua varten. Siinä voi olla pankkitilin tiedot ja sähköpostiosoitteesi jne., jotta asiakas voi lähettää sinulle maksun vahvistuksen esimerkiksi.
+Lisää tähän laatikkoon tiedot, joita asiakkaasi tarvitsee maksun suorittamiseen. Ne voivat olla esimerkiksi pankkitilisi tiedot ja sähköpostiosoitteesi, jotta asiakas voi lähettää sinulle maksuvahvistuksen.
 
-![Manuaalisen maksuportin kytkin, jossa on teksti Maksuitiedot](/img/config/manual-gateway-expanded.png)
+![Manuaalisen maksuyhdyskäytävän valitsin ja Maksuohjeet-tekstialue](/img/config/manual-gateway-expanded.png)
 
-Tässä on manuaalisten maksujen asetusten käyttöliittymä:
+Tässä on manuaalisen yhdyskäytävän asetusnäkymä:
 
-![Manuaalisten maksuasetukset](/img/config/manual-gateway-settings.png)
+![Manuaalisen yhdyskäytävän asetukset](/img/config/manual-gateway-settings.png)
 
-Asennuksen jälkeen klikkaa vain **Tallenna asetukset** (Save Settings), ja valmis. Kun käyttäjät rekisteröityvät verkkoosi, he näkevät viestin, jossa kerrotaan heille lähetyväsi ohjeet ostoksen viimeistelemiseksi.
+Kun olet määrittänyt sen, napsauta vain **Tallenna asetukset**, ja se on valmis. Kun käyttäjät rekisteröityvät verkostoosi, he näkevät viestin, jossa kerrotaan, että he saavat ohjeesi ostoksen viimeistelemiseksi.
 
-![Rekisteröitymisvahvistusviesti, jossa kerrotaan käyttäjälle saavansa maksuohjeita](/img/frontend/registration-manual-notice.png)
+![Rekisteröinnin vahvistusviesti, joka kertoo käyttäjälle, että hän saa maksuohjeet](/img/frontend/registration-manual-notice.png)
 
-He saavat myös viestin **Kiitos** (Thank You) -sivullasi maksutiedoistasi.
+He saavat myös viestin **Kiitos**-sivullasi maksuohjeidesi kanssa.
 
-<!-- Screenshot unavailable: Kiitos-sivu, joka näyttää maksutiedot ostoksen jälkeen -->
+<!-- Kuvakaappaus ei saatavilla: Kiitos-sivu, joka näyttää maksuohjeet checkoutin jälkeen -->
 
-## Manuaalisten maksujen vahvistaminen
+## Manuaalisten maksujen vahvistaminen {#confirming-manual-payments}
 
-Manuaalmaksu vahvistamiseksi siirry vasemmassa palkissa olevaan **Payments**-valikkoon. Siellä näet kaikki verkostosi maksut ja niiden tiedot, mukaan lukien niiden **status**. Manuaalinen maksu on aina **Pending**-tilassa, kunnes muutat sitä manuaalisesti itse.
+Vahvistaaksesi manuaalisen maksun siirry vasemman palkin **Maksut**-valikkoon. Siellä näet kaikki verkostosi maksut ja niiden tiedot, mukaan lukien niiden **tilan**. Manuaalisella maksulla on aina **Odottaa**-tila, kunnes muutat sen manuaalisesti.
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+![Maksuluettelo, jossa näkyy odottava manuaalinen maksu](/img/admin/payments-list.png)
 
-Syötä maksuun liittyvän sivun osoite klikkaamalla **reference code** -kenttää. Tällä sivulla on kaikki tiedot odottavasta maksusta, kuten viittauskoodi (reference ID), tuotteet, aikaleimat ja paljon muuta.
+Avaa maksusivu napsauttamalla **viitekoodia**. Tällä sivulla on kaikki odottavan maksun tiedot, kuten viitetunnus, tuotteet, aikaleimat ja muuta.
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+![Maksun tietosivu, jossa näkyy viitekoodi, tuotteet ja loppusummat](/img/admin/payment-edit.png)
 
-Oikeassa sarakkeessa voit muuttaa maksun tilaa. Muuttamalla sen **Completed**-tilaan ja kytkemällä päälle **Activate Membership** -vaihtoehdon, asiakkaan sivusto aktivoituu ja hänen jäsenyytesan tulee aktiivinen.
+Oikeassa sarakkeessa voit muuttaa maksun tilaa. Sen muuttaminen tilaan **Valmis** ja **Aktivoi jäsenyys** -vaihtoehdon ottaminen käyttöön ottaa asiakkaasi site käyttöön, ja hänen jäsenyytensä on aktiivinen.
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+![Maksun muokkaussivu, jossa tilaksi on asetettu Valmis ja Aktivoi jäsenyys -valitsin](/img/admin/payment-activate-membership.png)

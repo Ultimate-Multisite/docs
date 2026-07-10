@@ -1,0 +1,194 @@
+---
+title: Referencia de hooks
+sidebar_position: 1
+_i18n_hash: f21ec62ce5130c333873ff2e5686a25b
+---
+# Referencia de hooks {#hooks-reference}
+
+Documentación xerada automaticamente para todas as **59 accións** e **118 filtros** en Ultimate Multisite.
+
+## Accións {#actions}
+
+- [auth_redirect](./Actions/auth_redirect) — Dispárase antes da redirección de autenticación.
+- [set_auth_cookie](./Actions/set_auth_cookie) — Dispárase inmediatamente antes de que se estableza a cookie de autenticación.
+- [set_logged_in_cookie](./Actions/set_logged_in_cookie) — Dispárase inmediatamente antes de que se estableza a cookie de autenticación de sesión iniciada.
+- [wp_ultimo_host_providers_load](./Actions/wp_ultimo_host_providers_load) — Permite aos desenvolvedores engadir as súas propias integracións de provedor de aloxamento mediante plugins de wp.
+- [wp_ultimo_load](./Actions/wp_ultimo_load) — Actívase cando se cargaron todas as dependencias
+- [wu_activation](./Actions/wu_activation) — Permite que outras partes do plugin anexen as súas rutinas de activación
+- [wu_after_switch_template](./Actions/wu_after_switch_template) — Permite aos desenvolvedores de plugin enganchar funcións despois de que un usuario ou superadministrador cambie o modelo do sitio
+- [wu_before_light_ajax](./Actions/wu_before_light_ajax) — Nalgúns casos, necesitaremos cargar recursos extra para xestionar accións.
+- [wu_before_search_models](./Actions/wu_before_search_models) — Dispárase antes do procesamento da solicitude de busca.
+- [wu_cart_after_setup](./Actions/wu_cart_after_setup) — Permite aos desenvolvedores facer cambios adicionais no obxecto de checkout.
+- [wu_cart_setup](./Actions/wu_cart_setup) — Permite aos desenvolvedores facer cambios adicionais no obxecto de checkout.
+- [wu_checkout_add_field_field_class-get_type](./Actions/wu_checkout_add_field_field_class-get_type) — Dispárase antes de que se engada un campo ao formulario de checkout.
+- [wu_checkout_after_process_order](./Actions/wu_checkout_after_process_order) — Permite aos desenvolvedores activar hooks adicionais.
+- [wu_checkout_before_process_checkout](./Actions/wu_checkout_before_process_checkout) — Antes de procesarmos o checkout.
+- [wu_checkout_order_created](./Actions/wu_checkout_order_created) — Dispárase despois de que a orde de checkout estea completamente ensamblada.
+- [wu_dashboard_this-tab_widgets](./Actions/wu_dashboard_this-tab_widgets) — Permite aos desenvolvedores de plugin engadir widgets ao Panel do Network Dashboard.
+- [wu_dashboard_widgets](./Actions/wu_dashboard_widgets) — Permite aos desenvolvedores de plugin engadir widgets ao Panel do Network Dashboard.
+- [wu_deactivation](./Actions/wu_deactivation) — Permite que outras partes do plugin anexen as súas rutinas de desactivación
+- [wu_delete_this-object_id](./Actions/wu_delete_this-object_id) — Permite aos desenvolvedores de plugin engadir accións ao proceso de eliminación
+- [wu_domain_became_primary](./Actions/wu_domain_became_primary) — Dispárase cando un dominio se converte no dominio principal dun sitio.
+- [wu_domain_created](./Actions/wu_domain_created) — Actívase cando se engade unha nova asignación de dominio.
+- [wu_domain_mapping_load](./Actions/wu_domain_mapping_load) — Dispárase despois de que se cargase o noso Domain Mapping principal
+- [wu_domain_mapping_register_filters](./Actions/wu_domain_mapping_register_filters) — Algúns plugins gardarán o URL antes de que a asignación estivese activa ou construirán URLs dun xeito diferente que non está incluído o
+- [wu_duplicate_site](./Actions/wu_duplicate_site) — Permite aos desenvolvedores engancharse despois de que ocorra unha duplicación de sitio.
+- [wu_enqueue_extra_hooks](./Actions/wu_enqueue_extra_hooks) — Permite aos desenvolvedores de plugin engadir hooks adicionais
+- [wu_flush_known_caches](./Actions/wu_flush_known_caches) — Hook para limpeza adicional
+- [wu_handle_add_new_domain_modal](./Actions/wu_handle_add_new_domain_modal) — Dispárase antes de xestionar a solicitude do modal para engadir un novo dominio.
+- [wu_handle_customer_meta_fields](./Actions/wu_handle_customer_meta_fields) — Permite aos desenvolvedores de plugin gardar metadatos de diferentes maneiras se o precisan.
+- [wu_handle_user_meta_fields](./Actions/wu_handle_user_meta_fields) — Permite aos desenvolvedores de plugin gardar metadatos de usuario de diferentes maneiras se o precisan.
+- [wu_magic_link_invalid_token](./Actions/wu_magic_link_invalid_token) — Dispárase cando se atopa un token de ligazón máxica non válido.
+- [wu_magic_link_login](./Actions/wu_magic_link_login) — Dispárase despois de que un usuario inicie sesión mediante ligazón máxica.
+- [wu_maybe_create_customer](./Actions/wu_maybe_create_customer) — Permite aos desenvolvedores de plugin facer cousas adicionais cando se engade o cliente.
+- [wu_mcp_abilities_registered](./Actions/wu_mcp_abilities_registered) — Dispárase despois de que as capacidades de MCP se rexistren para unha entidade.
+- [wu_mcp_adapter_initialized](./Actions/wu_mcp_adapter_initialized) — Dispárase despois de que se inicialice o adaptador MCP.
+- [wu_membership_post_cancel](./Actions/wu_membership_post_cancel) — Actívase despois de que se cancele a subscrición.
+- [wu_membership_post_renew](./Actions/wu_membership_post_renew) — Actívase despois da renovación da subscrición.
+- [wu_membership_pre_cancel](./Actions/wu_membership_pre_cancel) — Actívase antes de que se cancele a subscrición.
+- [wu_membership_pre_renew](./Actions/wu_membership_pre_renew) — Actívase antes da renovación da subscrición.
+- [wu_model_post_save](./Actions/wu_model_post_save) — Dispárase despois de que un obxecto se almacene na base de datos.
+- [wu_page_added](./Actions/wu_page_added) — Permite aos desenvolvedores de plugin executar cousas adicionais cando se rexistran páxinas.
+- [wu_page_after_render](./Actions/wu_page_after_render) — Permite aos desenvolvedores de plugin engadir contido adicional despois de que imprimamos a páxina
+- [wu_page_before_render](./Actions/wu_page_before_render) — Permite aos desenvolvedores de plugin engadir contido adicional antes de que imprimamos a páxina.
+- [wu_page_load](./Actions/wu_page_load) — Permite aos desenvolvedores de plugin engadir hooks adicionais ás nosas páxinas.
+- [wu_page_this-id_after_render](./Actions/wu_page_this-id_after_render) — Permite aos desenvolvedores de plugin engadir contido adicional despois de que imprimamos a páxina
+- [wu_page_this-id_before_render](./Actions/wu_page_this-id_before_render) — Permite aos desenvolvedores de plugin engadir contido adicional antes de que imprimamos a páxina.
+- [wu_page_this-id_load](./Actions/wu_page_this-id_load) — Permite aos desenvolvedores de plugin engadir hooks adicionais ás nosas páxinas.
+- [wu_page_this-id_register_widgets](./Actions/wu_page_this-id_register_widgets) — Dispárase despois de que se rexistren widgets para esta páxina.
+
+- [wu_register_capabilities](./Actions/wu_register_capabilities) — Dispárase para permitir que os addons anexen módulos de capacidade ás integracións.
+- [wu_register_integrations](./Actions/wu_register_integrations) — Dispárase para permitir que as integracións se rexistren.
+- [wu_register_rest_routes](./Actions/wu_register_rest_routes) — Permite rexistrar rutas adicionais.
+- [wu_save_this-object_id](./Actions/wu_save_this-object_id) — Permite aos desenvolvedores de plugin engadir accións ao proceso de gardado
+- [wu_site_created](./Actions/wu_site_created) — Dispárase despois de que se cree un sitio por primeira vez.
+- [wu_sso_loaded](./Actions/wu_sso_loaded) — Permite aos desenvolvedores de plugin engadir hooks adicionais, se é necesario.
+- [wu_template_previewer](./Actions/wu_template_previewer) — Execútase cando se está dentro do contexto do previsualizador de modelos.
+- [wu_this-id_scripts](./Actions/wu_this-id_scripts) — Activa o hook de enfileiramento de scripts.
+- [wu_this-model_post_delete](./Actions/wu_this-model_post_delete) — Dispárase despois de que un obxecto se garde na base de datos.
+- [wu_this-model_post_save](./Actions/wu_this-model_post_save) — Dispárase despois de que un obxecto se garde na base de datos.
+- [wu_this-model_pre_delete](./Actions/wu_this-model_pre_delete) — Dispárase despois de que un obxecto se garde na base de datos.
+- [wu_unlock_this-object_id](./Actions/wu_unlock_this-object_id) — Permite aos desenvolvedores de plugin engadir accións ao proceso de desbloqueo.
+
+## Filtros {#filters}
+
+- [auth_cookie_expiration](./Filters/auth_cookie_expiration) — Filtra a duración do período de caducidade da cookie de autenticación.
+- [auth_redirect_scheme](./Filters/auth_redirect_scheme) — Filtra o esquema de redirección de autenticación.
+- [get_blogs_of_user](./Filters/get_blogs_of_user) — Replica aquí o filtro orixinal de WP, por se acaso.
+- [get_site_url_for_previewer](./Filters/get_site_url_for_previewer) — Permite aos desenvolvedores de plugins filtrar o URL usado no previsualizador
+- [secure_auth_cookie](./Filters/secure_auth_cookie) — Filtra se a cookie de autenticación só debe enviarse por HTTPS.
+- [secure_auth_redirect](./Filters/secure_auth_redirect) — Filtra se se debe usar unha redirección de autenticación segura.
+- [secure_logged_in_cookie](./Filters/secure_logged_in_cookie) — Filtra se a cookie de sesión iniciada só debe enviarse por HTTPS.
+- [send_auth_cookies](./Filters/send_auth_cookies) — Permite impedir que as cookies de autenticación se envíen realmente ao cliente.
+- [wp_ultimo_redirect_url_after_signup](./Filters/wp_ultimo_redirect_url_after_signup) — Define o URL de redirección.
+- [wp_ultimo_registration_steps](./Filters/wp_ultimo_registration_steps) — Engade pasos adicionais mediante filtros
+- [wp_ultimo_render_vars](./Filters/wp_ultimo_render_vars) — Permite aos desenvolvedores de plugins engadir variables adicionais ao contexto de renderización globalmente.
+- [wp_ultimo_skip_network_active_check](./Filters/wp_ultimo_skip_network_active_check) — Permite aos desenvolvedores saltar esta comprobación.
+- [wu_add_new_domain_modal_fields](./Filters/wu_add_new_domain_modal_fields) — Filtra os campos do modal para engadir un novo dominio.
+- [wu_add_product_setup_fee_line_item](./Filters/wu_add_product_setup_fee_line_item) — Permite aos desenvolvedores facer cambios no elemento de liña da taxa de configuración.
+- [wu_admin_notices](./Filters/wu_admin_notices) — Permite aos desenvolvedores filtrar os avisos de administración engadidos por Ultimate Multisite.
+- [wu_after_.this-slug._api_arguments](./Filters/wu_after_.this-slug._api_arguments) — Filtra despois de ser cambiado.
+- [wu_allowed_line_item_types](./Filters/wu_allowed_line_item_types) — Agora, tratamos con todos os tipos.
+- [wu_apply_plan_limits](./Filters/wu_apply_plan_limits) — Permite aos desenvolvedores de plugins saltar as limitacións.
+- [wu_apply_signup_fee](./Filters/wu_apply_signup_fee) — Filtra se se debe aplicar ou non a taxa de rexistro.
+- [wu_before_.this-slug._api_arguments](./Filters/wu_before_.this-slug._api_arguments) — Filtra os argumentos orixinais da api.
+- [wu_billing_address_fields](./Filters/wu_billing_address_fields) — Permite aos desenvolvedores de plugins filtrar os campos do enderezo de facturación.
+- [wu_bypass_checkout_form](./Filters/wu_bypass_checkout_form) — Permite aos desenvolvedores omitir a saída e establecer unha nova
+- [wu_bypass_unset_current_user](./Filters/wu_bypass_unset_current_user) — Permite aos desenvolvedores omitir o código de desasignar o usuario actual.
+- [wu_cart_get_recurring_total](./Filters/wu_cart_get_recurring_total) — Filtra o total do "importe recorrente".
+- [wu_cart_get_subtotal](./Filters/wu_cart_get_subtotal) — Filtra o total do "importe inicial".
+- [wu_cart_get_total](./Filters/wu_cart_get_total) — Filtra o total do "importe inicial".
+- [wu_checkout_calculate_prorate_credits](./Filters/wu_checkout_calculate_prorate_credits) — Permite aos desenvolvedores de plugins interferir co valor do crédito.
+- [wu_checkout_form_base_domains](./Filters/wu_checkout_form_base_domains) — Filtra os dominios base do formulario de checkout compartido que non deben converterse en rexistros de dominio mapeado.
+- [wu_checkout_field_templates](./Filters/wu_checkout_field_templates) — As nosas APIs para engadir novos modelos de campos engánchanse aquí.
+- [wu_checkout_field_types](./Filters/wu_checkout_field_types) — As nosas APIs para engadir novos tipos de campos engánchanse aquí.
+- [wu_checkout_pages_error_messages](./Filters/wu_checkout_pages_error_messages) — Filtra as mensaxes de erro.
+- [wu_checkout_step_validation_submittable_field_types](./Filters/wu_checkout_step_validation_submittable_field_types) — Permite aos desenvolvedores omitir a comprobación se un campo é autoenviable.
+- [wu_checkout_validation_aliases](./Filters/wu_checkout_validation_aliases) — Permite aos desenvolvedores de plugins engadir alias personalizados no validador de formularios.
+- [wu_checkout_validation_rules](./Filters/wu_checkout_validation_rules) — Permite aos desenvolvedores de plugins filtrar as regras de validación.
+- [wu_cli_params_to_remove](./Filters/wu_cli_params_to_remove) — Desasigna os parámetros non desexados.
+- [wu_contains_element](./Filters/wu_contains_element) — Permite aos desenvolvedores cambiar os resultados da busca inicial.
+- [wu_core_installer_install_sunrise](./Filters/wu_core_installer_install_sunrise) — Permite aos provedores de aloxamento instalar a constante de forma diferente.
+- [wu_country_get_administrative_division_name](./Filters/wu_country_get_administrative_division_name) — Devolve o nome amigable das subdivisións administrativas do país.
+- [wu_country_get_cities](./Filters/wu_country_get_cities) — Devolve a lista de cidades para un estado nun país.
+- [wu_country_get_states](./Filters/wu_country_get_states) — Devolve a lista de estados para este país.
+- [wu_current_set_customer](./Filters/wu_current_set_customer) — Permite aos desenvolvedores modificar o comportamento predeterminado e establecer o cliente actual de forma diferente.
+- [wu_current_set_membership](./Filters/wu_current_set_membership) — Permite aos desenvolvedores modificar o comportamento predeterminado e establecer a membership actual de forma diferente.
+- [wu_current_set_site](./Filters/wu_current_set_site) — Permite aos desenvolvedores modificar o comportamento predeterminado e establecer o sitio actual de forma diferente.
+- [wu_current_type_get_manage_url](./Filters/wu_current_type_get_manage_url) — Permite aos desenvolvedores modificar os parámetros do URL de xestión do sitio.
+- [wu_documentation_get_link](./Filters/wu_documentation_get_link) — Permite aos desenvolvedores de plugins filtrar as ligazóns.
+- [wu_domain_has_correct_dns](./Filters/wu_domain_has_correct_dns) — Permite aos desenvolvedores de plugins engadir novas comprobacións para definir os resultados.
+
+- [wu_element_block_types_to_check](./Filters/wu_element_block_types_to_check) — É posible que teñamos que engadir bloques adicionais máis adiante.
+- [wu_element_maybe_extract_arguments](./Filters/wu_element_maybe_extract_arguments) — Engade un filtro xenérico para permitir aos desenvolvedores ampliar este analizador para tratar con construtores ou plugins adicionais.
+- [wu_enforce_password_rules](./Filters/wu_enforce_password_rules) — Filtra se se deben aplicar regras adicionais de contrasinal.
+- [wu_generated_username_from_email](./Filters/wu_generated_username_from_email) — Filtra o nome de usuario xerado do cliente.
+- [wu_get_checkout_variables](./Filters/wu_get_checkout_variables) — Permite aos desenvolvedores de plugins filtrar os preaxustes dunha páxina de checkout.
+- [wu_get_membership_allowed_forms](./Filters/wu_get_membership_allowed_forms) — Permite aos desenvolvedores engadir novos slugs de formulario para evitar este comportamento.
+- [wu_get_migration_steps](./Filters/wu_get_migration_steps) — Permite aos desenvolvedores e add-ons engadir novos pasos de migración
+- [wu_get_network_public_ip](./Filters/wu_get_network_public_ip) — Consulta máis sobre este filtro abaixo, neste mesmo método.
+- [wu_get_post_types](./Filters/wu_get_post_types) — Permite aos desenvolvedores seleccionar que tipos de publicación deben amosarse.
+- [wu_get_pricing_table_lines_this-id](./Filters/wu_get_pricing_table_lines_this-id) — Devolve liñas, filtrable
+- [wu_get_site_domain_and_path](./Filters/wu_get_site_domain_and_path) — Permite aos desenvolvedores manipular os pares dominio/ruta.
+- [wu_hosting_integration_wizard_sections](./Filters/wu_hosting_integration_wizard_sections) — Filtra as seccións do asistente para a configuración da integración de aloxamento.
+- [wu_id_form_fields](./Filters/wu_id_form_fields) — Filtra os campos dun formulario. O formulario identifícase polo ID no nome do filtro.
+- [wu_independent_billing_cycle_product_types](./Filters/wu_independent_billing_cycle_product_types) — Filtra os tipos de produto que teñen ciclos de facturación independentes.
+- [wu_is_api_enabled](./Filters/wu_is_api_enabled) — Permite aos desenvolvedores de plugins forzar un estado determinado para a API.
+- [wu_is_development_mode](./Filters/wu_is_development_mode) — Permite aos desenvolvedores de plugins engadir probas adicionais para o modo de desenvolvemento.
+- [wu_is_mcp_enabled](./Filters/wu_is_mcp_enabled) — Permite aos desenvolvedores de plugins forzar un estado determinado para o adaptador MCP.
+- [wu_light_ajax_allowed_hooks](./Filters/wu_light_ajax_allowed_hooks) — Por razóns de seguridade, limitamos o número de accións dispoñibles ás que engancharse. Este filtro permite aos desenvolvedores amplialo
+- [wu_limits_is_post_above_limit](./Filters/wu_limits_is_post_above_limit) — Comproba se un tipo de publicación determinado está permitido neste plan. Permite aos desenvolvedores de plugins filtrar o valor devolto
+- [wu_magic_link_enforce_ip](./Filters/wu_magic_link_enforce_ip) — Filtra se se debe aplicar a verificación do enderezo IP.
+- [wu_magic_link_enforce_user_agent](./Filters/wu_magic_link_enforce_user_agent) — Filtra se se debe aplicar a verificación do axente de usuario.
+- [wu_magic_link_url](./Filters/wu_magic_link_url) — Filtra o URL da ligazón máxica xerada.
+- [wu_magic_links_enabled](./Filters/wu_magic_links_enabled) — Filtra se as ligazóns máxicas están activadas.
+- [wu_make_primary_domain_redirect_url](./Filters/wu_make_primary_domain_redirect_url) — Filtra o URL de redirección despois de facer primario un dominio.
+- [wu_maybe_redirect_to_admin_panel_exclusion_list](./Filters/wu_maybe_redirect_to_admin_panel_exclusion_list) — Crea unha lista de exclusión de parámetros que impiden a redirección automática.
+- [wu_mcp_include_ability](./Filters/wu_mcp_include_ability) — Filtro para anular a decisión de inclusión dunha capacidade MCP.
+- [wu_membership_calculated_date_expiration](./Filters/wu_membership_calculated_date_expiration) — Filtra a data de caducidade calculada.
+- [wu_membership_renewal_expiration_date](./Filters/wu_membership_renewal_expiration_date) — Filtra a data de caducidade calculada que se establecerá despois da renovación.
+- [wu_membership_update_forms](./Filters/wu_membership_update_forms) — Permite aos desenvolvedores engadir novos slugs de formulario de actualización.
+- [wu_minimum_password_length](./Filters/wu_minimum_password_length) — Filtra a lonxitude mínima do contrasinal.
+- [wu_minimum_password_strength](./Filters/wu_minimum_password_strength) — Filtra a forza mínima do contrasinal requirida (puntuación zxcvbn).
+- [wu_page_get_title_links](./Filters/wu_page_get_title_links) — Permite aos desenvolvedores de plugins, e a nós mesmos, engadir ligazóns de acción ás nosas páxinas de edición
+- [wu_password_require_lowercase](./Filters/wu_password_require_lowercase) — Filtra se se deben requirir letras minúsculas nos contrasinais.
+- [wu_password_require_number](./Filters/wu_password_require_number) — Filtra se se deben requirir números nos contrasinais.
+- [wu_password_require_special](./Filters/wu_password_require_special) — Filtra se se deben requirir caracteres especiais nos contrasinais.
+- [wu_password_require_uppercase](./Filters/wu_password_require_uppercase) — Filtra se se deben requirir letras maiúsculas nos contrasinais.
+- [wu_pending_payment_message](./Filters/wu_pending_payment_message) — Permite ao usuario cambiar a mensaxe sobre os pagamentos pendentes.
+- [wu_plan_product_types](./Filters/wu_plan_product_types) — Filtra os tipos de produto que deben tratarse como plans.
+- [wu_post_count](./Filters/wu_post_count) — Permite aos desenvolvedores de plugins cambiar o reconto total
+- [wu_post_count_statuses](./Filters/wu_post_count_statuses) — Permite aos desenvolvedores de plugins cambiar que estado de publicación debe contarse. De maneira predeterminada, cóntanse as publicacións publicadas e privadas
+- [wu_post_default_status](./Filters/wu_post_default_status) — Filtra os datos do obxecto antes de almacenalos na base de datos.
+- [wu_pre_save_settings](./Filters/wu_pre_save_settings) — Permite aos desenvolvedores filtrar a configuración antes de que Ultimate Multisite a garde.
+- [wu_rest_create_item](./Filters/wu_rest_create_item) — Filtra se se permite continuar coa solicitude ou non.
+- [wu_rest_delete_item](./Filters/wu_rest_delete_item) — Filtra se se permite continuar coa solicitude ou non.
+
+- [wu_rest_get_item](./Filters/wu_rest_get_item) — Filtra se se permite continuar coa solicitude ou non.
+- [wu_rest_get_items](./Filters/wu_rest_get_items) — Filtra se se permite continuar coa solicitude ou non.
+- [wu_rest_update_item](./Filters/wu_rest_update_item) — Filtra se se permite continuar coa solicitude ou non.
+- [wu_return_url](./Filters/wu_return_url) — Permite aos desenvolvedores cambiar o URL de retorno da pasarela usado despois dos procesos de checkout.
+- [wu_search_models_functions](./Filters/wu_search_models_functions) — Permite aos desenvolvedores de plugins engadir máis funcións de modelos de busca.
+- [wu_setup_wizard](./Filters/wu_setup_wizard) — Permite aos desenvolvedores engadir pasos adicionais ao asistente de configuración.
+- [wu_should_create_domain_record_for_site](./Filters/wu_should_create_domain_record_for_site) — Filtra se Ultimate Multisite debe crear un rexistro de dominio para un sitio recentemente creado.
+- [wu_should_redirect_to_primary_domain](./Filters/wu_should_redirect_to_primary_domain) — Permite aos desenvolvedores interromper a redirección, evitando que se produza.
+- [wu_signup_step_handler_this-step](./Filters/wu_signup_step_handler_this-step) — Permite reescribir o manipulador
+- [wu_site_list_get_bulk_actions](./Filters/wu_site_list_get_bulk_actions) — Filtra as accións en lote dispoñibles para os sitios.
+- [wu_sites_column_limit](./Filters/wu_sites_column_limit) — Filtro para cambiar o valor para obter os sitios de plugins dentro da rede.
+- [wu_sso_enabled](./Filters/wu_sso_enabled) — Activa/desactiva a capacidade de inicio de sesión único entre dominios.
+- [wu_sso_url](./Filters/wu_sso_url) — Filtra os URL de SSO xerados antes de seren devoltos para accións de clientes entre dominios.
+- [wu_stripe_checkout_subscription_data](./Filters/wu_stripe_checkout_subscription_data) — Filtra os datos de subscrición de Stripe. Pode sobrescribir success_url ou cancel_url.
+- [wu_stripe_create_payment_intent_args](./Filters/wu_stripe_create_payment_intent_args) — Filtra os argumentos da intención de pagamento.
+- [wu_stripe_existing_plan_id](./Filters/wu_stripe_existing_plan_id) — Filtra o ID do plan que se vai comprobar. Se este existe, a nova subscrición usará este plan.
+- [wu_stripe_existing_product_id](./Filters/wu_stripe_existing_product_id) — Filtra o ID do produto que se vai comprobar. Se este existe, a nova subscrición usará este produto.
+- [wu_stripe_generate_idempotency_key](./Filters/wu_stripe_generate_idempotency_key) — Filtra o valor idempotency_key enviado coas opcións de cargo de Stripe.
+- [wu_stripe_webhook_membership](./Filters/wu_stripe_webhook_membership) — Filtra o rexistro de membership asociado con este webhook.
+- [wu_this-model_meta_pre_save](./Filters/wu_this-model_meta_pre_save) — Filtra os datos meta antes de seren serializados para almacenarse na base de datos.
+- [wu_this-model_pre_save](./Filters/wu_this-model_pre_save) — Filtra os datos do obxecto antes de seren almacenados na base de datos.
+- [wu_upgrade_to_unlock_url](./Filters/wu_upgrade_to_unlock_url) — Permite aos desenvolvedores cambiar o URL de actualizar para desbloquear
+- [wu_use_domain_mapping](./Filters/wu_use_domain_mapping) — Determina se se debe usar unha asignación
+- [wu_username_from_email](./Filters/wu_username_from_email) — Filtra o nome de usuario do novo cliente.
+- [wu_users_membership_limit_message](./Filters/wu_users_membership_limit_message) — Permite aos desenvolvedores cambiar a mensaxe sobre o límite de usuarios da membership
+- [wu_view_override_replaceable_views](./Filters/wu_view_override_replaceable_views) — Permite aos desenvolvedores engadir cartafoles adicionais á lista substituíble.
+- [wu_wp_cli_enabled_sub_commands](./Filters/wu_wp_cli_enabled_sub_commands) — Filtra que sub_commands están activados para esta entidade.
+- [wu_wp_config_reference_hook_line_patterns](./Filters/wu_wp_config_reference_hook_line_patterns) — Comprobamos tres patróns ao tentar descubrir onde podemos inxectar as nosas constantes:

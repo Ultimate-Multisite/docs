@@ -1,0 +1,109 @@
+---
+title: Integrácia WooCommerce
+sidebar_position: 1
+_i18n_hash: 86f6dfa2a659a0e37f251a97d4fadb44
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="woocommerce-integration" name="WooCommerce Integration" />
+
+# WooCommerce integrácia {#woocommerce-integration}
+
+WooCommerce integrácia funguje veľmi podobne ako naša manuálna brána. Ponúka vašim používateľom veľkú flexibilitu a umožňuje im vybrať si ktorýkoľvek z platobných formulárov dostupných vo vašej inštalácii WooCommerce. A je to jednoduché: po skončení fakturačného obdobia používateľa sa používateľské predplatné pozastaví. Zároveň sa v inštalácii WooCommerce hlavnej stránky siete vytvorí objednávka. Používateľ potom dostane e-mailom faktúru s odkazom na vykonanie platby. Po prijatí platby sa predplatné obnoví.
+
+## Funkcie {#features}
+
+- Jednoduchá integrácia medzi Ultimate Multisite a WooCommerce
+- K dispozícii je niekoľko spôsobov platby
+- Automatizovaná opakovaná fakturácia pomocou pribaleného jadra predplatných, s voliteľnými vylepšeniami pluginu WooCommerce Subscriptions
+- Súhrny pri pokladni zahŕňajú dane Ultimate Multisite ako samostatné, nezdaniteľné riadky poplatkov WooCommerce, aby si zákazníci mohli pred platbou skontrolovať sumy daní
+
+## Dokumentácia {#documentation}
+
+**Nastavenie WooCommerce integrácie**
+
+**Rozšírenie vašich možností platieb pomocou Ultimate Multisite: WooCommerce integrácia**
+
+## Inštalácia {#installation}
+
+1. Nahrajte 'ultimate-multisite-woocommerce' do adresára '/wp-content/plugins/'
+2. Aktivujte plugin cez menu 'Pluginy' vo WordPress
+3. Postupujte podľa sprievodcu krok za krokom a nastavte plugin
+
+## Sprievodca používaním {#usage-guide}
+
+_**DÔLEŽITÁ POZNÁMKA: Tento článok sa vzťahuje na Ultimate Multisite verziu 2.x.**_
+
+_**UPOZORNENIE:** Ultimate Multisite: WooCommerce integrácia vyžaduje, aby bol WooCommerce aktivovaný aspoň na vašej hlavnej stránke._
+
+Chápeme, že _Stripe_ a _PayPal_ nie sú dostupné v niektorých krajinách, čo obmedzuje alebo sťažuje používateľom Ultimate Multisite efektívne používanie nášho pluginu. Preto sme vytvorili **doplnok na integráciu _WooCommerce_**.
+
+_WooCommerce_ je veľmi populárny eCommerce plugin. Vývojári po celom svete vytvorili doplnky na integráciu rôznych platobných brán. Využili sme to na rozšírenie platobných brán, ktoré môžete používať vo fakturačnom systéme Ultimate Multisite.
+
+## Nastavenie {#setting-it-up}
+
+Najprv musíte nainštalovať doplnok WooCommerce Integration, ktorý je **bezplatný pre licencovaných používateľov**. Ak ho chcete nainštalovať, kliknite na Ultimate Multisite vo svojom paneli super administrátora a vyberte **Doplnky**.
+
+![Stránka doplnkov](/img/admin/addons-page.png)
+
+Tu nájdete všetky doplnky Ultimate Multisite. Kliknite na doplnok **Ultimate Multisite: WooCommerce Integration**.
+
+![Stránka doplnkov zobrazujúca WooCommerce Integration](/img/admin/addons-page.png)
+
+Zobrazí sa okno s podrobnosťami doplnku. Stačí kliknúť na **Nainštalovať teraz** *.*
+
+<!-- Screenshot unavailable: WooCommerce Integration addon install popup with Install Now button -->
+
+Po dokončení inštalácie budete presmerovaní na stránku pluginov. Tu stačí kliknúť na **Aktivovať v sieti** a doplnok _WooCommerce_ sa aktivuje vo vašej sieti.
+
+<!-- Screenshot unavailable: WP Plugins page showing Network Activate button for WooCommerce Integration -->
+
+Po jeho aktivácii, ak ešte nemáte plugin WooCommerce nainštalovaný a aktivovaný na svojej webovej stránke, **dostanete pripomienku**.
+
+<!-- Screenshot unavailable: Admin notice reminding to install and activate WooCommerce plugin -->
+
+Po nainštalovaní uvidíte ďalšiu možnosť v nastaveniach platieb Ultimate Multisite. Odtiaľ potom môžete možnosť _WooCommerce_ **povoliť**.
+
+![Nastavenia platobnej brány Ultimate Multisite s povoleným WooCommerce](/img/addons/woocommerce-payment-gateway.png)
+
+Môžete nakonfigurovať niektoré základné nastavenia, ako je zobrazovaný názov, ktorý sa zobrazí vo front ende, a pokyny, ktoré usmernia vašich používateľov v ich procese pokladne. Potom môžete prejsť do **nastavení _WooCommerce_ vašej hlavnej stránky** a povoliť a nakonfigurovať platobnú bránu, ktorú chcete používať.
+
+### Riadky daňových poplatkov pri pokladni {#checkout-tax-fee-lines}
+
+Keď pokladňa Ultimate Multisite zahŕňa dane, integrácia pridá každú sumu dane Ultimate Multisite do pokladne WooCommerce ako samostatný, nezdaniteľný riadok poplatku. Tým zostane celková suma dane viditeľná pred platbou a zároveň sa zabráni tomu, aby WooCommerce znova zdanil daňový poplatok.
+
+## Ako spravovať platbu {#how-to-manage-the-payment}
+
+WooCommerce integrácia funguje veľmi podobne ako naša **manuálna brána**. Nevýhodou je, že každá platba musí byť na konci fakturačného obdobia zaplatená manuálne. Takto funguje priebeh:
+
+  * Keď sa skončí fakturačný cyklus používateľa, členstvo sa **pozastaví**. Zároveň sa vytvorí objednávka v inštalácii _WooCommerce_ na hlavnej stránke vašej siete.
+
+  * Používatelia potom dostanú e-mailom faktúru s odkazom na vykonanie platby (odkaz sa zobrazí aj v ich histórii fakturácie z Dashboardu ich podstránky). Tento odkaz presmeruje používateľa na _**WooCommerce**_ **pokladňu** , kde si používatelia budú môcť vybrať jednu z **dostupných brán _WooCommerce_** na spracovanie svojej platby.
+
+  * Po prijatí platby sa členstvo **obnoví** , platba sa zaznamená v Ultimate Multisite a objednávka sa nastaví ako dokončená.
+
+### Niekoľko dôležitých poznámok: {#some-important-notes}
+
+  * Predvolená funkcionalita Ultimate Multisite stále funguje s touto formou integrácie. Napríklad **vystavovanie refundácií** z obrazovky **Správa predplatného** bude komunikovať s WooCommerce, aby vystavil refundáciu pomocou zvoleného platobného formulára.
+
+  * Ultimate Multisite: WooCommerce Integration sa pri práci spolieha na WP-Cron. Väčšinou to funguje veľmi dobre, ale ak má stránka nízku návštevnosť, cron nie je vyzvaný na kontrolu naplánovaných udalostí a udalosť sa vynechá, čo môže spôsobiť oneskorenia vykonania.
+
+## Plugin WooCommerce Subscriptions {#woocommerce-subscriptions-plugin}
+
+Manuálne iniciovanie platby každý mesiac nie je pre koncových používateľov ideálne, pretože sa očakáva, že predplatné sa bude automaticky opakovať v každom fakturačnom cykle. Doplnok WooCommerce Integration teraz obsahuje základný kód predplatných, takže opakujúce sa produkty vždy používajú predplatné na opakovanú fakturáciu.
+
+**Nemusíte** si kupovať ani inštalovať samostatný [WooCommerce Subscriptions plugin](https://woocommerce.com/products/woocommerce-subscriptions/), aby ste mohli predávať opakujúce sa produkty cez túto integráciu. Ak je tento plugin zakúpený, nainštalovaný a dostupný na vašej hlavnej stránke, Ultimate Multisite ho použije a WooCommerce sprístupní ďalšie funkcie správy predplatného. Ak dostupný nie je, opakujúce sa produkty stále spracúva pribalené jadro predplatných.
+
+![Nastavenia integrácie WooCommerce predplatného](/img/addons/woocommerce-subscription-integration.png)
+
+A to je všetko. Vaši koncoví používatelia už nebudú musieť manuálne vykonávať platbu na konci svojho fakturačného cyklu za opakujúce sa produkty.
+
+Okrem vytvorenia objednávky na vašej hlavnej stránke v časti _WooCommerce_ sa pre každý Account vytvorí aj predplatné.
+
+### Správanie pozastavenia pri neúspešnom obnovení {#failed-renewal-suspension-behavior}
+
+Predvolene zostávajú členstvá aktívne, kým WooCommerce Subscriptions spracúva svoj plán opakovaných pokusov po neúspešnej platbe. Tým sa zachováva bežné ochranné okno WooCommerce Subscriptions, takže úspešne obnovená platba môže opäť zosynchronizovať predplatné a členstvo bez predčasného prerušenia prístupu.
+
+Administrátori, ktorí chcú prísnejšiu kontrolu prístupu, môžu v nastaveniach WooCommerce Integration povoliť možnosť **Okamžite pozastaviť členstvá pri neúspešných obnoveniach**. Keď je toto voliteľné nastavenie povolené, Ultimate Multisite pozastaví súvisiace členstvo hneď, ako platba za obnovenie zlyhá, namiesto čakania na dokončenie spracovania opakovaných pokusov WooCommerce Subscriptions.
+
+Vývojári môžu rovnaké rozhodnutie prepísať pomocou filtra `wu_woo_suspend_on_payment_failure`. Referenčné stránky hookov sa generujú zo zdrojového kódu doplnku, takže tento prehľad uvádza iba názov filtra pre vlastné pravidlá pozastavenia.

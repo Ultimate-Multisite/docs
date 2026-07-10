@@ -4,11 +4,11 @@ title: Szűrő - wu_apc_get_meta
 sidebar_label: wu_apc_get_meta
 _i18n_hash: 2e9eb97d518c759f9d675f1d54b85282
 ---
-# Filter: wu_apc_get_meta
+# Filter: wu_apc_get_meta {#filter-wuapcgetmeta}
 
 Lehetővé teszi a fejlesztőknek a végleges értékek szűrését, és új feldolgozási esetek hozzáadását.
 
-## Paraméterek
+## Paraméterek {#parameters}
 
 | Name | Type | Leírás |
 |------|------|-------------|
@@ -16,13 +16,13 @@ Lehetővé teszi a fejlesztőknek a végleges értékek szűrését, és új fel
 | $meta_type | `string` | Az elvileg lekérdezendő meta adat típusa. |
 | $meta_key | `string` | A meta mező neve. |
 
-### Since
+### Since {#since}
 
 - 1.4.0
-### Source
+### Source {#source}
 
 Definálva van a [`inc/wu-apc-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-admin-page-creator/blob/main/inc/wu-apc-functions.php#L93) fájlban a 93-edik soron.
 
 
-## Vrászik
+## Vrászik {#returns}
 Új alapértelmezett érték.

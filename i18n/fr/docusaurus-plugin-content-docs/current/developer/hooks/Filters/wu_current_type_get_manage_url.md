@@ -4,11 +4,11 @@ title: 'Filtre - wu_current_{$type}_get_manage_url'
 sidebar_label: 'wu_current_{$type}_get_manage_url'
 _i18n_hash: b3c7180a6e4666d7998ce8a20ba1cfea
 ---
-# Filtre: wu_current_\{$type\}_get_manage_url
+# Filtre: wu_current_\{$type\}_get_manage_url {#filter-wucurrenttypegetmanageurl}
 
 Permet aux développeurs de modifier les paramètres d'URL de gestion du site.
 
-## Paramètres
+## Paramètres {#parameters}
 
 | Nom | Type | Description |
 |------|------|-------------|
@@ -16,14 +16,14 @@ Permet aux développeurs de modifier les paramètres d'URL de gestion du site.
 | $id | `int` | L'ID du site. |
 | $site_hash | `string` | Le hachage du site. |
 
-### Depuis
+### Depuis {#since}
 
 - 2.0.9
 
-### Source
+### Source {#source}
 
 Défini dans [`inc/class-current.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/class-current.php#L214) à la ligne 214
 
 
-## Retourne
+## Retourne {#returns}
 L'URL de gestion modifiée.

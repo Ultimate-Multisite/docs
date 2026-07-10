@@ -3,25 +3,25 @@ title: Tilleggmalplate
 sidebar_position: 1
 _i18n_hash: 8036666d38c392e40bfedcdc73a73c2a
 ---
-# Addon-mal
+# Addon-mal {#addon-template}
 
 {{ADDON_DESCRIPTION}}
 
-## Krav
+## Krav {#requirements}
 
 - WordPress 5.3 eller høyere
 - PHP 7.4 eller høyere
 - Ultimate Multisite plugin (aktiv)
 
-## Installasjon
+## Installasjon {#installation}
 
 1. Last opp addon-filene til katalogen din `/wp-content/plugins/`
 2. Aktiver pluginet via menyen 'Plugins' i WordPress
 3. Konfigurer addon-innstillingene i nettverksadministratoren
 
-## Utvikling
+## Utvikling {#development}
 
-### Oppsett
+### Oppsett {#setup}
 
 ```bash
 # Installer avhengigheter
@@ -42,7 +42,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### Prosjektstruktur
+### Prosjektstruktur {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
@@ -66,7 +66,7 @@ ultimate-multisite-addon-template/
 └── rector.php                   # Regler for kodeoppgradering
 ```
 
-### Testing
+### Testing {#testing}
 
 Addonet inkluderer et omfattende testrammeverk:
 
@@ -75,44 +75,44 @@ Addonet inkluderer et omfattende testrammeverk:
 - **Testdekning (Test Coverage)**: Konfigurert for å spore kodekdekning
 - **Multisite Testing**: Tester kjøres i et multisite-miljø
 
-### Kodekrav
+### Kodekrav {#code-standards}
 
 - **WordPress Coding Standards**: Håndheves via PHPCS
 - **PHP 7.4+ Kompatibilitet**: Støtter moderne PHP-funksjoner
 - **Statisk Analyse**: PHPStan-integrasjon for typesjekking
 - **Kodeoppgradering**: Rector-regler for PHP-oppgraderinger
 
-### Byggsystem (Build System)
+### Byggsystem (Build System) {#build-system}
 
 - **Asset-behandling**: Minifisering av CSS/JS-filer
 - **Oversettelse**: Generering av POT-filer
 - **Pakking**: Opprettelse av arkiver for distribusjon
 - **Utviklingsmodus**: Ikke-minifiserte ressurser for feilsøking
 
-## Konfigurasjon
+## Konfigurasjon {#configuration}
 
 Addonet støtter ulike konfigurasjonsalternativer som er tilgjengelige via nettverksadministratorgrensesnittet.
 
-## Hooks og Filtre
+## Hooks og Filtre {#hooks-and-filters}
 
-### Handlinger (Actions)
+### Handlinger (Actions) {#actions}
 
 - `ultimate-multisite-addon-template_init` - Utløses etter addon-initialisering
 - `ultimate-multisite-addon-template_loaded` - Utløses etter at alle addon-filer er lastet
 
-### Filtre (Filters)
+### Filtre (Filters) {#filters}
 
 - `ultimate-multisite-addon-template_settings` - Endre addon-innstillinger
 - `ultimate-multisite-addon-template_enabled` - Overstyre addon-aktiveringsstatus
 
-## Lisens
+## Lisens {#license}
 
 Dette addonet er lisensiert under GPL v3 eller nyere.
 
-## Support
+## Support {#support}
 
 For support og dokumentasjon, besøk [MultisiteUltimate.com](https://multisiteultimate.com)
-## Endringslogg (Changelog)
+## Endringslogg (Changelog) {#changelog}
 
 - Versjon 1.0.1 (2025-09-28): omdøper prefiks til ultimate-multisite; oppdaterer tekstdomene; versjonsøkning.
 

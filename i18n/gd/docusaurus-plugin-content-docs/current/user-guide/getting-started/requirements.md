@@ -3,11 +3,11 @@ title: Còmhraidhean
 sidebar_position: 1
 _i18n_hash: 77ce1a129b3eb304cc0b89d72faef9cf
 ---
-# Aighrimean Eirbhleachd Ultimate Multisite
+# Aighrimean Eirbhleachd Ultimate Multisite {#ultimate-multisite-requirements}
 
 Tha am bith sin as fheàrr a gEachaidh agad air a bhith a' chlàradh Ultimate Multisite? Tha am fhirinn as beag gu cunbhalach airson a bhith ag obair sinn le earrachda seo: **teann-nàme (domain name)**, **còmhlaidheachd (hosting provider)** gu mhath, agus seachnaidhean WordPress **Multisite**. Tha sin gu tric a' chiallachadh!
 
-## Teann-nàme (Domain Name)
+## Teann-nàme (Domain Name) {#domain-name}
 
 Tha an uair a th’sgaidh tu air teann-nàme.
 
@@ -17,7 +17,7 @@ Tha an plugin seo a tha a’ toirt seòl-beatha (subscription services), a’ ch
 
 Tha aon niche a th’sgaidh tu a bhith ag obair le plugin seo gu sònraichte mar a tha thu a' chlàradh seachnaidhean! Seachda gu robh teann-nàme a tha a' chiallachadh de dhòigh agad.
 
-## Còmhlaidheachd (Hosting Provider)
+## Còmhlaidheachd (Hosting Provider) {#hosting-provider}
 
 An uair a tha thu a' chiallachadh teann-nàme gu mhath a tha a' chiallachadh na niche agus an seachnaid, faic thu air a thiginn gu robh a bhith ag obair le còmhlaidheachd web gu mhath le Ultimate Multisite. Tha mòran de fhirinn gu mhath aig a' chlàradh. Tha fhirinn gu mhath a' chiallachadh gu sònraichte le Ultimate Multisite, agus tha sin eirinn air a bhith ag obair le rud a tha thu a' chlàradh.
 

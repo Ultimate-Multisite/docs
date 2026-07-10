@@ -1,0 +1,117 @@
+---
+title: Pagal naudojimą apmokestinami planai
+sidebar_position: 1
+_i18n_hash: 456eeb3ecee642c1e41acfab69490595
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-metered-plans" name="Metered Plans" />
+
+# Matuojami planai {#metered-plans}
+
+Ultimate Multisite: Matuojami planai priedas pakeičia tai, kaip apmokestinate savo klientus, įdiegdamas lanksčias matuojamo apmokestinimo galimybes. Vietoj griežtų limitų, kurie blokuoja naudotojus juos viršijus, įgalinkite viršijimo mokesčius, kurie automatiškai apmokestina klientus už papildomą naudojimą.
+
+## Pagrindinės funkcijos {#key-features}
+
+* **Matuojamas apmokestinimas**: Apmokestinkite klientus pagal faktinį naudojimą, o ne pagal fiksuotus lygius
+* **Viršijimų valdymas**: Automatiškai apmokestinkite už naudojimą, viršijantį plano limitus
+* **Naudojimo stebėjimas**: Stebėkite klientų išteklių naudojimą realiuoju laiku
+* **Lanksti kainodara**: Nustatykite pasirinktinius įkainius skirtingiems ištekliams (saugyklai, pralaidumui, svetainėms ir kt.)
+* **AI žetonų apmokestinimas**: Stebėkite ir apmokestinkite įvesties bei išvesties žetonus už AI naudojimą klientų antrinėse svetainėse
+* **Automatinis sąskaitų išrašymas**: Automatiškai generuokite sąskaitas, kai viršijamos naudojimo ribos
+* **Naudojimo ataskaitos**: Išsami naudojimo analizė ir ataskaitos klientams bei administratoriams
+
+## Puikiai tinka {#perfect-for}
+
+* **Prieglobos teikėjams**: Siūlykite keičiamo mastelio planus, augančius kartu su klientų poreikiais
+* **SaaS platformoms**: Apmokestinkite pagal faktinį išteklių naudojimą
+* **Agentūrų tinklams**: Lankstūs kainodaros modeliai klientų projektams
+* **Perpardavėjų prieglobai**: Suteikite partneriams galimybę siūlyti naudojimu pagrįstą kainodarą
+
+## Kaip tai veikia {#how-it-works}
+
+1. Sukonfigūruokite matuojamus išteklius (disko vietą, pralaidumą, svetainių skaičių ir kt.)
+2. Nustatykite bazinio plano limitus ir viršijimo įkainius
+3. Sistema automatiškai stebi naudojimą visame jūsų tinkle
+4. Kai klientai viršija limitus, apskaičiuojami viršijimo mokesčiai
+5. Sąskaitos generuojamos automatiškai pagal atsiskaitymo ciklą
+6. Klientai gali realiuoju laiku matyti savo naudojimą ir būsimus mokesčius
+
+## AI žetonų apmokestinimas {#ai-token-billing}
+
+1.1.0 versija prideda AI žetonų apmokestinimą tinklams, kurie siūlo AI funkcijas per WordPress AI Client SDK. Matuojami planai klausosi užbaigtų AI generavimo užklausų, įrašo dabartinės antrinės svetainės įvesties ir išvesties žetonų skaičių ir paverčia tuos žetonus apmokestinamomis AI išlaidomis kliento dabartiniam atsiskaitymo laikotarpiui.
+
+Naudokite AI žetonų apmokestinimą, kai norite siūlyti AI įrankius klientų svetainėse neprisiimdami nenuspėjamų modelių išlaidų. Kiekviena užklausa priskiriama antrinei svetainei, klientui, narystei, teikėjui ir modeliui, kad administratoriai galėtų audituoti naudojimą, o klientai galėtų matyti, kaip jų AI vartojimas veikia jų paskyrą.
+
+### Konfigūruokite įkainius už žetoną {#configure-per-token-rates}
+
+AI įkainiai konfigūruojami kiekvienam modeliui kaip atskiri įvesties ir išvesties įkainiai. Įkainiai skaičiuojami už 1 milijoną žetonų, o tai atitinka įprastus AI teikėjų kainodaros puslapius.
+
+1. Tinklo administravimo srityje atidarykite **Multisite Ultimate → Nustatymai → Matuojami planai**.
+2. Įgalinkite AI išlaidų matavimą produktui arba narystei, kuri turėtų apmokestinti AI naudojimą.
+3. Pridėkite modelių įkainių įrašus naudodami jūsų jungties grąžinamus modelių ID, pvz., `gpt-4o`, `gpt-4o-mini` arba kitą su OpenAI suderinamą modelio identifikatorių.
+4. Įveskite atskiras **Įvesties įkainio** ir **Išvesties įkainio** reikšmes jūsų svetainės valiuta už 1 milijoną žetonų.
+5. Nustatykite klientui įtrauktą AI išlaidų limitą ir plano viršijimo elgseną.
+
+Kai tikslus modelio ID nesukonfigūruotas, Matuojami planai gali atitikti pagal modelio prefiksą. Pavyzdžiui, įkainis, sukonfigūruotas `claude-sonnet-4`, gali būti taikomas modelių ID su laiko žyma, kurie prasideda tuo prefiksu. Kūrėjai taip pat gali koreguoti galutinę įkainių lentelę naudodami [`wu_ai_token_rates`](./hooks/Filters/wu_ai_token_rates) filtrą.
+
+### Palaikomos AI jungtys {#supported-ai-connectors}
+
+AI žetonų apmokestinimas veikia su jungtimis, kurios skleidžia WordPress AI Client SDK generavimo įvykius ir atsakymo metaduomenyse įtraukia žetonų naudojimą. Tai apima čia dokumentuotą Ultimate Multisite AI jungčių šeimą:
+
+* [Ultimate AI Connector suderinamiems Endpoint](../ultimate-ai-connector-compatible-endpoints/) OpenAI suderinamoms API, įskaitant OpenAI, Mistral, su Ollama suderinamus šliuzus ir kitus teikėjus, kurie pateikia suderinamus žetonų naudojimo metaduomenis
+* [Ultimate AI Connector for WebLLM](../ultimate-ai-connector-webllm/) naršyklėje veikiančiam WebLLM naudojimui, kai užklausos nukreipiamos per AI Client SDK įvykių srautą
+* AI teikėjų jungtys, naudojamos [Gratis AI Agent](../gratis-ai-agent/), kai pasirinktas teikėjas per SDK praneša užklausos ir užbaigimo žetonų skaičius
+
+Pasirinktinės jungtys gali dalyvauti paleisdamos standartinius `wp_ai_client_before_generate_result` ir `wp_ai_client_after_generate_result` įvykius su modelio, teikėjo ir žetonų naudojimo metaduomenimis. Jungčių nustatymai taikomi iš pagrindinės svetainės antrinėms svetainėms, kad klientų svetainės naudotų tinklo patvirtintus teikėjus ir limitus.
+
+### Kliento Account naudojimas {#customer-account-usage}
+
+Klientai mato AI naudojimą kartu su kitais matuojamais ištekliais savo Account srityje. AI išlaidų eilutė rodo dabartinio atsiskaitymo laikotarpio sumą, gautą iš įrašytų užklausos ir užbaigimo žetonų, sukonfigūruotų modelių įkainių ir bet kokio plane įtraukto limito.
+
+Jei klientas turi išsaugotą mokėjimo būdą, naudojimas virš įtraukto limito laikomas apmokestinamu viršijimu. Jei planas sukonfigūruotas griežtam nutraukimui ir klientas neturi prieinamo mokėjimo būdo, AI užklausos gali būti blokuojamos pasiekus limitą, o klientas raginamas pridėti mokėjimo duomenis prieš tęsiant.
+
+## Palaikomi ištekliai {#supported-resources}
+
+* Disko saugykla
+* Pralaidumas / duomenų perdavimas
+* Svetainių skaičius
+* Naudotojų skaičius
+* AI žetonų naudojimas ir AI išlaidos
+* Pasirinktiniai išteklių tipai
+
+## Reikalavimai {#requirements}
+
+* Multisite Ultimate 2.0.0 arba naujesnė versija
+* WordPress Multisite diegimas
+* PHP 7.4 arba naujesnė versija
+
+## Diegimas {#installation}
+
+1. Įkelkite plugin failus į `/wp-content/plugins/ultimate-multisite-metered-plans`
+2. Aktyvuokite plugin per „WordPress“ ekraną „Plugins“
+3. Eikite į Multisite Ultimate → Nustatymai → Matuojami planai
+4. Sukonfigūruokite savo matuojamus išteklius ir kainodarą
+5. Įgalinkite matuojamą apmokestinimą produktams produkto redaktoriuje
+
+## Dažnai užduodami klausimai {#frequently-asked-questions}
+
+## Kas nutinka, kai klientas viršija savo limitą? {#what-happens-when-a-customer-exceeds-their-limit}
+
+Užuot blokavusi prieigą, sistema fiksuoja viršijimą ir prideda jį prie kitos jų sąskaitos pagal jūsų sukonfigūruotus tarifus.
+
+## Ar galiu nustatyti skirtingus viršijimo tarifus skirtingiems produktams? {#can-i-set-different-overage-rates-for-different-products}
+
+Taip, kiekvienas produktas gali turėti unikalius matuojamus išteklius ir viršijimo kainodarą.
+
+## Kaip klientai informuojami apie naudojimą? {#how-are-customers-notified-about-usage}
+
+Klientai gali matyti savo dabartinį naudojimą savo Dashboard ir gauti pasirenkamus pranešimus, kai artėja prie limitų arba juos viršija.
+
+## Kaip nustatoma AI token naudojimo kaina? {#how-is-ai-token-usage-priced}
+
+AI token naudojimo kaina nustatoma pagal modelio sukonfigūruotus įvesties ir išvesties tarifus už 1 milijoną tokenų. Metered Plans padaugina kiekvienos užklausos prompt ir completion tokenų skaičius iš tų tarifų, prideda rezultatą prie kliento dabartinio atsiskaitymo laikotarpio AI išlaidų ir pritaiko plano įtrauktą limitą arba viršijimo taisykles.
+
+## Ar vis dar galiu naudoti griežtus limitus? {#can-i-still-use-hard-limits}
+
+Taip, matuojamas atsiskaitymas yra pasirenkamas kiekvienam produktui. Galite derinti tradicinius produktus su griežtais limitais ir matuojamus produktus.

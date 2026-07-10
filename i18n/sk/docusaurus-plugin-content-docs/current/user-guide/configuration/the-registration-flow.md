@@ -3,13 +3,13 @@ title: Postup registráции
 sidebar_position: 3
 _i18n_hash: ae01b241f684c1a85d93bdc765eec135
 ---
-# Registračný tok (v2)
+# Registračný tok (v2) {#the-registration-flow-v2}
 
 _**DÔLEŽITÉU POZNÁMKA: Tento článok sa týka Ultimate Multisite verzie 2.x.**_
 
 Používatelia môžu sa registrovať na vašej sieti rôznymi spôsobmi. Môžu použiť váš formulár na registrácia alebo zdieľateľný odkaz na predvolený plán. Tu vám ukážeme, ako môžu vaši zákazníci sa zaregistrovať na vašej sieti pomocou dostupných ciest a čo sa stane po ich registrácii na vašej sieti.
 
-## Používanie formulára na registrácia:
+## Používanie formulára na registrácia: {#using-the-registration-form}
 
 Toto je štandardný proces registráции. Vytvoríte stránku na registrácia s **formulárom na objednávku (checkout form)**, a to bude miesto, kam sa vaši zákazníci dostanú, aby sa zaregistrovali na vašej sieti a podali sa plánu. Môžete mať viacero stránok na registrácia, každá s iným formulárom v závislosti od toho, ak chcete.
 
@@ -35,13 +35,13 @@ Ak sa zaregistrovali na plno platný plán alebo nie je povinné potvrdenie e-ma
 
 ![Stránka aktivovaná s odkazom na prihlásenie do dashboardu](/img/frontend/site-activated.png)
 
-## Používanie zdieľateľného odkazu:
+## Používanie zdieľateľného odkazu: {#using-a-shareable-link}
 
 Proces registráции pomocou zdieľateľného odkazu je v podstate ten istý ako formulár registrácii, jediné zmenu je, že pri použití zdieľateľného odkazu môžu vaši zákazníci mať produkt alebo šablon webovej stránky predodôvodnený v formulári objednávky (referencie na sekciu Predodôvodnenie produktov a šablon pomocou URL parametrov) alebo možno pridaný kód kuponu (referencie na sekciu Používanie URL parametrov).
 
 Proces registráции bude ten istý: budú musieť vyplniť svoje meno, používateľské meno, e-mailovú adresu, názov webovej stránky a titul atď..., ale plán alebo šablona webovej stránky im bude už predodôvodnená.
 
-### Registrácia pomocou manuálnych platieb:
+### Registrácia pomocou manuálnych platieb: {#registering-using-manual-payments}
 
 Ak nechcete používať PayPal, Stripe alebo akýkoľvek iný platobný gateway ponúkaný Ultimate Multisite alebo jeho doplnkami, môžete použiť manuálne platby pre svoje zákazníkov. Týmto spôsobom si môžete vygenerovať faktúru, ktorú im môžu zaplatiť na vašom preferovanom platobnom procesore po registrácii v vašej sieti.
 

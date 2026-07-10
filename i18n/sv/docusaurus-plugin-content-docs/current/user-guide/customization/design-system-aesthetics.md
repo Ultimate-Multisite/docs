@@ -3,11 +3,11 @@ title: Design System Estetik Färdighet
 sidebar_position: 21
 _i18n_hash: 3fef8415909ed14038f38e9eda3a4545
 ---
-# Design System Aesthetics-förmågan
+# Design System Aesthetics-förmågan {#design-system-aesthetics-skill}
 
 **Design System Aesthetics-förmågan** är ett vägledd tillvägagångssätt för att förfina din webbplats visuella identitet. Den hjälper dig att fatta konsekventa beslut om typografi, färg, avstånd och rörelsetokens som definierar ditt designsystem.
 
-## Vad är Design System Aesthetics?
+## Vad är Design System Aesthetics? {#what-is-design-system-aesthetics}
 
 Design System Aesthetics är en strukturerad förmåga som täcker:
 
@@ -20,9 +20,9 @@ Design System Aesthetics är en strukturerad förmåga som täcker:
 
 Dessa beslut sparas i din temas `theme.json`-fil, vilket skapar ett sammanhängande visuellt system.
 
-## Varför använda Design System Aesthetics?
+## Varför använda Design System Aesthetics? {#why-use-design-system-aesthetics}
 
-### Konsistens
+### Konsistens {#consistency}
 
 Ett designsystem säkerställer att:
 
@@ -31,7 +31,7 @@ Ett designsystem säkerställer att:
 - Avståndet följer ett förutsägbart mönster
 - Animationerna känns enhetliga
 
-### Effektivitet
+### Effektivitet {#efficiency}
 
 Istället för att fatta designbeslut sida för sida, gör du följande:
 
@@ -39,7 +39,7 @@ Istället för att fatta designbeslut sida för sida, gör du följande:
 - Tillämpar dem överallt
 - Uppdaterar globalt genom att ändra ett enda värde
 
-### Flexibilitet
+### Flexibilitet {#flexibility}
 
 Du kan:
 
@@ -47,9 +47,9 @@ Du kan:
 - Experimentera med olika estetiker
 - Bibehålla varumärkeskonsistens samtidigt som du utvecklas
 
-## Aktivering av Design System Aesthetics-förmågan
+## Aktivering av Design System Aesthetics-förmågan {#triggering-the-design-system-aesthetics-skill}
 
-### Manuell aktivering
+### Manuell aktivering {#manual-activation}
 
 Du kan starta förmågan när som helst:
 
@@ -69,7 +69,7 @@ eller
 "Guide me through design system decisions"
 ```
 
-### Automatiska förslag
+### Automatiska förslag {#automatic-suggestions}
 
 Agenten kan föreslå att du använder förmågan när du:
 
@@ -78,9 +78,9 @@ Agenten kan föreslå att du använder förmågan när du:
 - Vill förbättra den visuella konsistensen
 - Förbereder dig för att lansera din webbplats
 
-## Processen för Design System Aesthetics
+## Processen för Design System Aesthetics {#the-design-system-aesthetics-process}
 
-### Steg 1: Typografi
+### Steg 1: Typografi {#step-1-typography}
 
 Agenten frågar om dina typsnittsförordanden:
 
@@ -110,7 +110,7 @@ Agenten definierar sedan:
 - **Weight scale**: Typsnittsvikter (regular, medium, bold, etc.)
 - **Line height**: Avståndet mellan raderna för läsbarhet
 
-### Steg 2: Färgpalett
+### Steg 2: Färgpalett {#step-2-color-palette}
 
 ```
 Let's define your color palette.
@@ -140,7 +140,7 @@ Agenten skapar en komplett palett som inkluderar:
 - Semantiska färger (framgång, varning, fel)
 - Hover- och aktiva tillstånd
 
-### Steg 3: Avstånd (Spacing)
+### Steg 3: Avstånd (Spacing) {#step-3-spacing}
 
 ```
 How much breathing room do you want?
@@ -162,7 +162,7 @@ Agenten definierar avståndstokens:
 - Scale: xs, sm, md, lg, xl, 2xl
 - Specifika värden för padding, margin, gap
 
-### Steg 4: Gränser och Skuggor
+### Steg 4: Gränser och Skuggor {#step-4-borders-and-shadows}
 
 ```
 Visual depth and definition:
@@ -185,7 +185,7 @@ Agenten skapar:
 - Shadow tokens för höjdnivåer
 - Border width tokens
 
-### Steg 5: Rörelse och Animation
+### Steg 5: Rörelse och Animation {#step-5-motion-and-animation}
 
 ```
 How should your site feel when interactive?
@@ -207,9 +207,9 @@ Agenten definierar:
 - Easing functions (ease-in, ease-out, ease-in-out)
 - Animation keyframes för vanliga interaktioner
 
-## Tillämpning av Design System Aesthetics
+## Tillämpning av Design System Aesthetics {#applying-design-system-aesthetics}
 
-### Automatisk tillämpning
+### Automatisk tillämpning {#automatic-application}
 
 När du slutför förmågan:
 
@@ -218,7 +218,7 @@ När du slutför förmågan:
 3. Regenererar blockstilar för att matcha det nya systemet
 4. Aktiverar det uppdaterade temat
 
-### Manuell tillämpning
+### Manuell tillämpning {#manual-application}
 
 Du kan också redigera `theme.json` direkt:
 
@@ -257,9 +257,9 @@ Du kan också redigera `theme.json` direkt:
 }
 ```
 
-## Visa ditt Design System
+## Visa ditt Design System {#viewing-your-design-system}
 
-### Fråga agenten
+### Fråga agenten {#ask-the-agent}
 
 ```
 "Show me my design system"
@@ -273,13 +273,13 @@ eller
 
 Agenten kommer att visa din typografi, färger, avstånd och andra tokens.
 
-### Visa theme.json
+### Visa theme.json {#view-themejson}
 
 Öppna `/wp-content/themes/[theme-name]/theme.json` i en textredigerare för att se de råa token-definitionerna.
 
-## Uppdatering av ditt Design System
+## Uppdatering av ditt Design System {#updating-your-design-system}
 
-### Snabba uppdateringar
+### Snabba uppdateringar {#quick-updates}
 
 Be agenten om specifika ändringar:
 
@@ -299,7 +299,7 @@ eller
 "Change the heading font to a serif"
 ```
 
-### Fullständig omarbetning
+### Fullständig omarbetning {#full-redesign}
 
 Kör Design System Aesthetics-förmågan igen:
 
@@ -309,7 +309,7 @@ Kör Design System Aesthetics-förmågan igen:
 
 Detta vägleder dig igenom alla beslut, och börjar med dina nuvarande värden.
 
-### Partiella uppdateringar
+### Partiella uppdateringar {#partial-updates}
 
 Uppdatera specifika aspekter:
 
@@ -317,15 +317,15 @@ Uppdatera specifika aspekter:
 "Just update the color palette, keep everything else"
 ```
 
-## Bästa praxis för Design System
+## Bästa praxis för Design System {#design-system-best-practices}
 
-### Konsistens
+### Konsistens {#consistency-1}
 
 - Använd samma tokens överallt
 - Skapa inte engångsfärger eller storlekar
 - Hänvisa till tokens istället för att hårdkoda värden
 
-### Namngivning
+### Namngivning {#naming}
 
 Använd tydliga, semantiska namn:
 
@@ -335,7 +335,7 @@ Använd tydliga, semantiska namn:
 - ✓ `heading-lg`, `body-sm`
 - ✗ `font-size-24`, `text-large`
 
-### Skalbarhet
+### Skalbarhet {#scalability}
 
 Designa ditt system för att skalas:
 
@@ -343,7 +343,7 @@ Designa ditt system för att skalas:
 - Skapa skalor (xs, sm, md, lg, xl) istället för godtyckliga värden
 - Planera för framtida tillägg
 
-### Dokumentation
+### Dokumentation {#documentation}
 
 Dokumentera ditt designsystem:
 
@@ -351,37 +351,37 @@ Dokumentera ditt designsystem:
 - När du ska använda varje token
 - Undantag och kantfall
 
-## Vanliga Design System Mönster
+## Vanliga Design System Mönster {#common-design-system-patterns}
 
-### Modern Minimalist
+### Modern Minimalist {#modern-minimalist}
 - Sans-serif typografi (Inter, Helvetica)
 - Begränsad färgpalett (2-3 färger)
 - Generöst avstånd
 - Subtila skuggor
 - Mjuka, snabba animationer
 
-### Varmt och Vänligt
+### Varmt och Vänligt {#warm-and-friendly}
 - Blandning av serif och sans-serif
 - Varm färgpalett (orange, varma gråtoner)
 - Avrundade hörn
 - Mjuka skuggor
 - Lekfulla animationer
 
-### Professionellt Corporate
+### Professionellt Corporate {#professional-corporate}
 - Rent sans-serif (Roboto, Open Sans)
 - Neutral palett med accentfärg
 - Strukturerat avstånd
 - Minimala skuggor
 - Subtila övergångar
 
-### Kreativt och Djärvt
+### Kreativt och Djärvt {#creative-and-bold}
 - Distinkt typografi
 - Djärv färgpalett
 - Varierat avstånd
 - Starka skuggor
 - Märkbara animationer
 
-## Felsökning
+## Felsökning {#troubleshooting}
 
 **Mina designsystemändringar visas inte**
 - Rensa din webbläsartjänst (cache)
@@ -399,7 +399,7 @@ Dokumentera ditt designsystem:
 - Redigera manuellt `theme.json` till tidigare värden
 - Kör förmågan igen med andra val
 
-## Nästa steg
+## Nästa steg {#next-steps}
 
 Efter att du har definierat ditt designsystem:
 

@@ -3,7 +3,7 @@ title: Reklaami injektor
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Reklaad reklaame oma võrku Ultimate Multisite'iga: Ad Injector
+# Reklaad reklaame oma võrku Ultimate Multisite'iga: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector on **tasuta lisamoodul**, mis annab teil tööriistad reklaamide paigutamiseks juba nende redigeerimisest.
 
@@ -35,7 +35,7 @@ Võite ka reklaame sisaldada administraatorile (Admin Panel) lehekülgede, kasut
 
 _Minudenda "Admin Panel Ads" (Administraatorile reklaamikoode) valikku, kui soovite reklaame näidata oma kasutajate back-endil._
 
-### Reklaadide üleliituse üle
+### Reklaadide üleliituse üle {#beyond-advertising}
 
 Võite ka Ultimate Multisite: Ad Injectorist kasutada kõrge taseme plaane jaoks tärinike.
 

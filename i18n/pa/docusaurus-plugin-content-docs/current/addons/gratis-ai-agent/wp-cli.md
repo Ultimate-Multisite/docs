@@ -3,11 +3,11 @@ title: WP-CLI ਸੰਦਰਭ
 sidebar_position: 3
 _i18n_hash: 365bd4ea4c1118b4258408f43a8020fc
 ---
-# WP-CLI Reference
+# WP-CLI Reference {#wp-cli-reference}
 
 Gratis AI Agent, agent ਨੂੰ benchmark ਕਰਨ, abilities manage ਕਰਨ, ਅਤੇ command line ਤੋਂ agent status query ਕਰਨ ਲਈ `wp gratis-ai-agent` command family ਨਾਲ ਆਉਂਦਾ ਹੈ। ਸਾਰੇ commands ਲਈ WP-CLI 2.0 ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਵਰਜ਼ਨ ਦੀ ਲੋੜ ਹੈ।
 
-## Installation
+## Installation {#installation}
 
 ਜਦੋਂ plugin active ਹੋ ਜਾਂਦਾ ਹੈ ਤਾਂ WP-CLI commands ਆਪਣੇ ਆਪ register ਹੋ ਜਾਂਦੇ ਹਨ। ਇਹ verify ਕਰਨ ਲਈ:
 
@@ -17,17 +17,17 @@ wp gratis-ai-agent --info
 
 ---
 
-## `wp gratis-ai-agent benchmark`
+## `wp gratis-ai-agent benchmark` {#wp-gratis-ai-agent-benchmark}
 
 ਇਹ Agent Capabilities benchmark suite ਚਲਾਉਂਦਾ ਹੈ — ਇਹ complex, multi-step prompts ਦਾ ਇੱਕ set ਹੈ ਜੋ agent ਦੀ ਪੂਰੀ ability surface ਨੂੰ test ਕਰਦਾ ਹੈ। ਇਸਦੀ ਵਰਤੋਂ model performance evaluate ਕਰਨ, AI providers ਦੀ ਤੁਲਨਾ ਕਰਨ, ਜਾਂ production ਵਿੱਚ deploy ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ability packs ਨੂੰ validate ਕਰਨ ਲਈ ਕਰੋ।
 
-### Synopsis
+### Synopsis {#synopsis}
 
 ```bash
 wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=<model>] [--output=<format>] [--save]
 ```
 
-### Options
+### Options {#options}
 
 | Option | Description |
 |---|---|
@@ -37,7 +37,7 @@ wp gratis-ai-agent benchmark [--question=<id>] [--provider=<provider>] [--model=
 | `--output=<format>` | Output format: `table` (default), `json`, `csv` |
 | `--save` | ਇਤਿਹਾਸਕ ਤੁਲਨਾ ਲਈ benchmark results ਨੂੰ database ਵਿੱਚ save ਕਰੋ |
 
-### Examples
+### Examples {#examples}
 
 current provider ਅਤੇ model ਨਾਲ ਪੂਰਾ benchmark suite ਚਲਾਓ:
 
@@ -57,7 +57,7 @@ wp gratis-ai-agent benchmark --question=q-restaurant-website --output=json
 wp gratis-ai-agent benchmark --model=claude-opus-4-6 --save
 ```
 
-### Output
+### Output {#output}
 
 benchmark ਹਰ question ਲਈ ਇੱਕ row output ਕਰਦਾ ਹੈ, ਜਿਸ ਵਿੱਚ ਹੇਠ ਲਿਖੇ columns ਹੁੰਦੇ ਹਨ:
 
@@ -78,7 +78,7 @@ q-dark-mode-theme        Apply a dark theme preset           100    apply_theme_
 ...
 ```
 
-### Benchmark Questions
+### Benchmark Questions {#benchmark-questions}
 
 default suite ਵਿੱਚ ਇਹ ਸ਼ਾਮਲ ਹਨ:
 
@@ -95,11 +95,11 @@ default suite ਵਿੱਚ ਇਹ ਸ਼ਾਮਲ ਹਨ:
 
 ---
 
-## `wp gratis-ai-agent abilities`
+## `wp gratis-ai-agent abilities` {#wp-gratis-ai-agent-abilities}
 
 install ਹੋਈ abilities ਅਤੇ ability packs ਨੂੰ manage ਕਰਦਾ ਹੈ।
 
-### `wp gratis-ai-agent abilities list`
+### `wp gratis-ai-agent abilities list` {#wp-gratis-ai-agent-abilities-list}
 
 ਸਾਰੀਆਂ registered abilities, ਉਨ੍ਹਾਂ ਦੇ source (core ਜਾਂ pack), ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ current status ਨੂੰ list ਕਰਦਾ ਹੈ।
 
@@ -128,7 +128,7 @@ create_product            gratis-ai-agent-woocommerce     active
 
 ---
 
-### `wp gratis-ai-agent abilities install`
+### `wp gratis-ai-agent abilities install` {#wp-gratis-ai-agent-abilities-install}
 
 registry ਤੋਂ ਇੱਕ ability pack download ਕਰਦਾ ਹੈ ਅਤੇ activate ਕਰਦਾ ਹੈ।
 
@@ -151,7 +151,7 @@ Success: Installed gratis-ai-agent-woocommerce. Added 3 abilities: create_produc
 
 ---
 
-### `wp gratis-ai-agent abilities disable`
+### `wp gratis-ai-agent abilities disable` {#wp-gratis-ai-agent-abilities-disable}
 
 pack ਨੂੰ remove ਕੀਤੇ ਬਿਨਾਂ ਇੱਕ specific ability ਨੂੰ disable ਕਰਦਾ ਹੈ। ਇਹ ਕਿਸੇ ਦਿੱਤੇ site 'ਤੇ agent ਦੇ scope ਨੂੰ restrict ਕਰਨ ਲਈ useful ਹੈ।
 
@@ -168,7 +168,7 @@ Success: Ability 'delete_post_type' disabled.
 
 ---
 
-### `wp gratis-ai-agent abilities enable`
+### `wp gratis-ai-agent abilities enable` {#wp-gratis-ai-agent-abilities-enable}
 
 ਇੱਕ ਪਹਿਲਾਂ disable ਹੋਈ ability ਨੂੰ re-enable ਕਰਦਾ ਹੈ।
 
@@ -178,7 +178,7 @@ wp gratis-ai-agent abilities enable <ability>
 
 ---
 
-## `wp gratis-ai-agent status`
+## `wp gratis-ai-agent status` {#wp-gratis-ai-agent-status}
 
 current agent configuration ਅਤੇ connectivity status ਨੂੰ display ਕਰਦਾ ਹੈ।
 
@@ -200,7 +200,7 @@ Options Blocklist: 18 entries
 
 ---
 
-## `wp gratis-ai-agent logs`
+## `wp gratis-ai-agent logs` {#wp-gratis-ai-agent-logs}
 
 debug log ਵਿੱਚੋਂ recent agent activity ਨੂੰ display ਕਰਦਾ ਹੈ।
 
@@ -224,7 +224,7 @@ wp gratis-ai-agent logs --last=20 --level=error
 
 ---
 
-## `wp gratis-ai-agent reset`
+## `wp gratis-ai-agent reset` {#wp-gratis-ai-agent-reset}
 
 agent state ਨੂੰ reset ਕਰਦਾ ਹੈ: inject ਕੀਤੇ CSS ਨੂੰ clear ਕਰਦਾ ਹੈ, agent-registered CPTs ਅਤੇ taxonomies ਨੂੰ remove ਕਰਦਾ ਹੈ, global styles ਨੂੰ reset ਕਰਦਾ ਹੈ, ਅਤੇ agent ਦੇ options cache ਨੂੰ empty ਕਰਦਾ ਹੈ। ਇਹ plugin ਜਾਂ ਇਸਦੀ settings ਨੂੰ remove ਨਹੀਂ ਕਰਦਾ।
 
@@ -241,7 +241,7 @@ Success: Agent state reset. Cleared: 2 post types, 1 taxonomy, custom CSS, globa
 
 ---
 
-## Exit Codes
+## Exit Codes {#exit-codes}
 
 ਸਾਰੇ commands success 'ਤੇ `0` exit code return ਕਰਦੇ ਹਨ। Non-zero exit codes:
 

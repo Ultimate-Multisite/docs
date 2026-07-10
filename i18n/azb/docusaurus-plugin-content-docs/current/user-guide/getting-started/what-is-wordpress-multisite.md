@@ -3,7 +3,7 @@ title: WordPress Multisite-in kya hai?
 sidebar_position: 15
 _i18n_hash: 5cb80eb341ce29b88cd433057da8bea2
 ---
-# WordPress Multisite Nedir?
+# WordPress Multisite Nedir? {#what-is-wordpress-multisite}
 
 WordPress'in çekirdek yapısı içinde, 2010 yılında WordPress 3.0'ın piyasaya sürülmesiyle kökenleri bulunan 'Multisite' adında bir özellik bulunur. O zamandan beri, yeni özellikler eklemek ve güvenliği artırmak amacıyla birçok revizyon geçirdi.
 
@@ -11,7 +11,7 @@ WordPress'in çekirdek yapısı içinde, 2010 yılında WordPress 3.0'ın piyasa
 
 ##
 
-## WordPress Multisite Tam Olarak Ne Demek?
+## WordPress Multisite Tam Olarak Ne Demek? {#what-exactly-is-wordpress-multisite}
 
 Multisite, birden fazla sitenin tek bir WordPress kurulumunu paylaşmasına olanak tanıyan bir WordPress özelliğidir. Multisite etkinleştirildiğinde, orijinal WordPress sitesi, genellikle **site ağı** olarak adlandırılan bir yapıyı destekleyecek şekilde dönüştürülür.
 
@@ -23,7 +23,7 @@ Bu gerçek, multisite'ın ana avantajlarından biridir, çünkü yönettiğiniz 
 
 ##
 
-## Alt Alan Adı mı Yoksa Alt Dizin mi?
+## Alt Alan Adı mı Yoksa Alt Dizin mi? {#subdomain-or-subdirectory}
 
 WordPress multisite çalıştırmanın iki modu vardır ve normal WordPress kurulumunuzu multisite kurulumuna dönüştürürken birini seçmeniz gerekir:
 
@@ -49,7 +49,7 @@ Alt alan adı modunu kurmanın ana zorluklarından biri, tüm ağ için SSL kaps
 
 Alt dizin modunun aksine, alt alan adı tabanlı bir ağdaki alt siteler, arama motorları tarafından ayrı web siteleri olarak kabul edilir, bu da bir alt sitede bulunan içeriğin diğer alt sitelerin SEO performansını hiç etkilemeyeceği anlamına gelir.
 
-## Süper Yönetici (The Super Admin)
+## Süper Yönetici (The Super Admin) {#the-super-admin}
 
 Tek siteli WordPress kurulumları, sınırsız sayıda kullanıcı eklemenize ve bu kullanıcılara farklı izinlere sahip farklı kullanıcı rolleri vermenize olanak tanır.
 
@@ -63,7 +63,7 @@ Plugin'ler ve theme'ler, yalnızca süper yöneticiler tarafından ağ yönetici
 
 _Not: Gördüğünüz gibi, birini ağınıza davet etmek ve ona süper yönetici statüsü vermek, bu kullanıcıya ağınız üzerinde tam kontrol sağlar. Örneğin, diğer süper yöneticiler bile sizin süper yönetici statünüzü kaldırabilir, bu da sizi kendi ağ yöneticisi panelinizden etkili bir şekilde dışarıda bırakır. Ultimate Multisite müşterilerinin, ek süper yöneticilerin ne yapabileceği konusunda ayrıntılı kontrol sahibi olmasını sağlamak için, Support Agents adında bir eklentimiz var. Bu eklenti, sadece görevlerini yerine getirmek için ihtiyaç duyabilecekleri izinlere sahip ayrı bir kullanıcı türü olan bir 'ajan' oluşturmanıza olanak tanır._
 
-## Alt Siteler Arasında Neler Paylaşılır, Neler Paylaşılmaz?
+## Alt Siteler Arasında Neler Paylaşılır, Neler Paylaşılmaz? {#what-is-shared-among-subsites-and-what-is-not}
 
 Daha önce bahsettiğimiz gibi, WordPress multisite'ın temel avantajlarından biri, tüm alt sitelerin aynı yapılandırmaları, çekirdek dosyaları, theme'leri, plugin'leri, WordPress çekirdek dosyaları vb. paylaşmasıdır.
 
@@ -75,7 +75,7 @@ Ancak, alt site bazında güzelce sınırlandırılmış (scoped) öğeler de va
 
 - Çoğu veritabanı tablosu her alt site için oluşturulur, bu da gönderilerin, yorumların, sayfaların, ayarların ve daha fazlasının her alt site için sınırlandırıldığı anlamına gelir.
 
-## WordPress Multisite'ta Kullanıcı Yönetimi
+## WordPress Multisite'ta Kullanıcı Yönetimi {#user-management-on-wordpress-multisite}
 
 WordPress multisite'ta hassas bir konu kullanıcı yönetimidir. WordPress kullanıcı tablosu, tüm alt siteler arasında paylaşılan birkaç tablodan biridir.
 
@@ -99,7 +99,7 @@ _Not: Kullanım senaryonuza bağlı olarak bunun ne kadar kötü olabileceğinin
 
 Kullanıcı tablosu paylaşılsa bile, kullanıcılar alt site yöneticileri veya süper yönetici tarafından alt sitelere eklenebilir ve kaldırılabilir ve hatta farklı alt sitelerde farklı kullanıcı rollerine sahip olabilirler.
 
-## Performans Hususları
+## Performans Hususları {#performance-considerations}
 
 WordPress multisite, destekleyebileceği site sayısı açısından gerçekten güçlüdür. Bu, [WordPress.com](https://WordPress.com), Edublogs ve Campuspress gibi hizmetlerin hepsinin multisite tabanlı olması ve her birinin binlerce site barındırması gerçeğiyle test edilebilir.
 

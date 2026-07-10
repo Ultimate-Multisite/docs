@@ -3,11 +3,11 @@ title: Ultimate Multisite 101
 sidebar_position: 10
 _i18n_hash: 031ea0b6a4b8709559485159811f6b31
 ---
-# Ultimate Multisite 101
+# Ultimate Multisite 101 {#ultimate-multisite-101}
 
 Mae Ultimate Multisite yn plugin WordPress Multisite sy'n gynnig i chi gynnig WaaS neu Gweithredinolau ar gyfer ystodau. Trước y byth i ddarganoch a ddysgu sut gallai Ultimate Multisite helpu eich busnes a'r cyddeeion, mae angen i niid gwneud ychwanegiadau cyning ti'n cael eu cyflwyno.
 
-## WordPress Multisite
+## WordPress Multisite {#the-wordpress-multisite}
 
 Mae llawer oennenn yn ymwybodol â'r ffurf standard o WordPress. Gallwch ei creu drwy panel cyddefnyddio eich darparwr gweithredinol neu, neu, i'r ddynion uchel, gwneud server webl a database newydd, dod â'r ffeiliau canol ac ymladdio'r proses lladd.
 
@@ -21,13 +21,13 @@ Yn y cyfathrebu, gallai'r multisite WordPress ei weld fel hyn: Mae uniwersitet y
 
 I'n bydd ychwanegu'r ddefnyddiolau sydd ar gael yn yr unigoldeb.
 
-### Y Cwmni (The Network)
+### Y Cwmni (The Network) {#the-network}
 
 Yn terms o WordPress, mae cwnniet cwmwd (multisite network) yn lle mae'r amlgenau subsaites gallai cael eu cyfathoghio o ddashboard unigoldeb. Er bod ychwanegu cwnniet cwmwd yn gwahaniaethol rhwng prifau gweithredol, mae anwy'r byddiad yn aml yn dod â chwaraeau ychwanegol yn fylch yn `wp-config.php` i ddweud i WordPress bod yn gweithio mewn modd honno.
 
 Mae rhai diffygyniad ddefnyddiol rhwng cwnniet cwmwd a gyflwyniad WordPress unigoldeb sydd yn cael eu dysgu yn briodol, y byddwn yn ei ddefnyddio'n cyffredinol.
 
-#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory)
+#### Subdomain vs. Subdirectory (Subdomain vs. Subdirectory) {#subdomain-vs-subdirectory}
 
 Un o'r penderfynion mwyaf cyntaf sydd eich bod eisiau gwneud yw arolu arol ydynt y bydd cwnniet cwmwd yn gweithio gyda _subdirectories_ neu _subdomains_. Mae Ultimate Multisite yn gweithio'n briodol gyda phrychiadau allan, ond mae rhai diffygyniad argynghorol rhwng y ddau ffurfau.
 
@@ -43,7 +43,7 @@ Mewn cyfathrebu _subdomain_, mae defnyddio certysau SSL wildcard yn un o'r opsiy
 
 Er bod ychwanegau eraill sydd, mae'r hyn yw'r hanesol ac y ddefnyddio yn cael eu hanesol yn aml. Mae'r hyn yn rhoi angen cyflwyno a chymryd ychwanegiadau ar gyfer ei ddioddef.
 
-#### Plugins a Theming
+#### Plugins a Theming {#plugins-and-themes}
 
 Beth mae WordPress yn rhoi i'w gael hefyd, felly o'r ochr y cytuned. Yn ddeall WordPress unigol, os mae'r gynllunwrth safle yn lenhangu plugin dda neu nid yw'n gwarchu ei gyflwyniad yn llawn, mae'r unigol victim a chwarae o'r gweithredol hwn yw ei hun. Fodd bynnag, os mae'r gynllunwrth safle yn lenhangu plugin dda ar gyfer cyfathrebu multisite, mae'n creu victim o bob safle a ddarlledu mewn cyd-llwybr.
 
@@ -51,7 +51,7 @@ Ar gyfer hynny, pan fydd wedi'i cyflwyno fel WordPress multisite, mae WordPress 
 
 I'r gyfeiriad hwn, mae'r aelodwr cyd-gynhadledig yn gyfrifol am y cyflwyno pluginau a thymau i'r cyd-gynhadledig ac yn ddelio prifysgolion i'w gael eu defnyddio ar y safleoedd cyd-gynhadledig. Nid gall dddyfynwyr y safleoedd cyflwyno pluginau a thymau neu cyffredin pluginau a thymau nad yw cael eu cyflwyno i'u safle.
 
-#### Bwyliau a Aelodwyr (Users and Administrators)
+#### Bwyliau a Aelodwyr (Users and Administrators) {#users-and-administrators}
 
 Yn WordPress Multisite, mae pob safle cyd-gynhadledig yn rhannu'r dbatws (database) felly sydd yn rhannu'r bwyllau (users), rôlau (roles) a galluau (capabilities). Mae'r ffordd mwyaf cywir i'n meddwl hwn yn bod y bywllau pob un yn aelod o'r cyd-gynhadledig ac nid safle penodol.
 
@@ -63,13 +63,13 @@ Gan allu'r cyflwyno'r meddwl isention yn ôl, er bod y bywllau yn dangos fel yn 
 
 Er ei ffurfennol concept yn systemau enterprise, mae hyn y cyfieithiad ar gyfer y cyflwyniad o benau. Mae'r cyflenwiol hwn o benau a chwarae (user registration and authentication) yn cael ei ddefnyddio yn anodd i bobl sydd yn cyfarwydd â WordPress installaeth unig, lle mae gynllunio benau yn fwy ddefnyddiol.
 
-#### Media
+#### Media {#media}
 
 Pan mae safleoedd cyd-gynllunio (network sites) yn rhannu database unig mewn WordPress Multisite, mae nhw'n cadw llwybrau (paths) cyffredinol ar y filesystem i ffiliad media.
 
 Mae lleoliad standard WordPress (wp-content/uploads) yn parhau; ond mae ei lwybr yn cael ei newid i ddefnyddio ID unig o'r safleoedd cyd-gynllunio. Fel yma, mae fyliau media ar gyfer safle cyd-gynllunio yn dangos fel wp-contents/uploads/site/[id].
 
-#### Permalinks
+#### Permalinks {#permalinks}
 
 Rydyn ni wedi cyfeirio at ychwanegau ddefnyddiol o _subdomain_ yn ôl _subdirectory_, ac mae hynny yma: fyliau.
 
@@ -83,7 +83,7 @@ Ar gyfer postau, mae fyllyw /blog/ cyflenwiol wedi'i ychwanegu i'r safle canlyno
 
 <!-- Screenshot unavailable: WordPress permalink settings for subdomain configuration -->
 
-#### Static Pages
+#### Static Pages {#static-pages}
 
 Yn _cynnig_ configuration, mae'r potential i gynnwys enwio cyflwrddion statol yn gyffredinol gyda'r pethau arall fel y safon cyntaf a'r safon cyd-gynlluniau.
 
@@ -93,7 +93,7 @@ I'r ddefnyddio hyn i lawer yma, mae WordPress yn rhoi ffordd i gael ei ddefnyddi
 
 Yn _cynnig_ subdomain, mae'r phosibl i gynnwys enwau yn cael eu cyffredinol wedi'i ddeall gan y _subdomain_, felly mae'n unigol i'r safon cyd-gynlluniau ac nid yw'n gysylltiedig â'r safon gyntaf mewn unrhyw ffordd.
 
-### Cyflwyniad (Registration)
+### Cyflwyniad (Registration) {#registration}
 
 Yn ystod y setegau cyd-gynlluniau WordPress Multisite mae nifer o opsiyn cyflwyniad newydd yn cael eu cyflwyno, gan gael y byddau newydd a'r byddau sydd i'w brofi creu safon.
 
@@ -111,7 +111,7 @@ Yn ystod hyn, pan mae dyn yn cyflwyno, mae hi'n cyflwyno i'r cyd-gynllun ac yn d
 
 Fodd bynnag, os oedd natur a gweithredol y multisite yn cynnig safonau cyd-gynllun sydd â chofal arall heb unrhyw cysylltiad gyda'i gilydd, mae anwy'r cyfathrebu neu'r pluginau addysgol yn cael eu gwneud i'r rôlau o'r benwerth.
 
-### Domen a SSL
+### Domen a SSL {#domain-and-ssl}
 
 Fe wylio am y safon WordPress Multisite sy'n dod yn llwyr yn cael ei golli ar ôl-yn-gweithredol – Wordpress.com. Mae hyn yn ddefnyddio'r multisite mwyaf cyffredinol o WordPress ac mae'n dangos ei gallu cael ei addefynnu a chwaraeho'n gyflym i fod yn llwybr am y gweithredol.
 
@@ -125,11 +125,11 @@ Ar gyfer ddefnyddwyr rheiniant, mae hyn yn cyflwyno llawer o chymdeithas arall y
 
 I'r gradd hwnnw, er bod WordPress Multisite yn rhoi ffordd i'w gael [www.anotherdomain.com](http://www.anotherdomain.com) wedi'i mapi ar ‘site1’, mae'r rheiniant siatol yn cael ei ddefnyddio gyda'r chwilio o gyfathrebu DNS allan a'r cyflwyniad certyddion SSL.
 
-## Ultimate Multisite
+## Ultimate Multisite {#ultimate-multisite}
 
 Gan fod y gwahaniaethau rhwng seiliedig WordPress (stand-alone) a seiliedig Multisite wedi'u gael, fe wylio sut mae Ultimate Multisite yn cael ei ddefnyddio fel y arweinydd mwyaf i rhoi Gwefan fel Gwasanaeth (Website as a Service - WaaS).
 
-### Cyflwyniad
+### Cyflwyniad {#introduction}
 
 Mae Ultimate Multisite yn eich cyd-gofal Swiss Army pan fyddwch yn creu Gwefan fel Gwasanaeth (WaaS). Meddwch am Wix.com, Squarespace, WordPress.com ac ynddo meddwch am gael eich gwasanaeth eich hun.
 
@@ -137,9 +137,9 @@ Ond yn ystafell, mae Ultimate Multisite'n defnyddio WordPress Multisite ond yn e
 
 Yn y cyfnodau canlynol byddwn yn gwylio rhai chymdeithas a chynlluniau sydd angen i gyflwyno'r chyfathrebu hyn.
 
-### Chymdeithas
+### Chymdeithas {#use-cases}
 
-#### Cas 1: Cynlluniau (An Agency)
+#### Cas 1: Cynlluniau (An Agency) {#case-1-an-agency}
 
 Yn y cyffredinol, mae'r galluon canol o'r cynlluniau yn dod yn gysylltiedig â chyd-gofal siatol gyda phrydion fel eu cyfathrebu neu ei marketing yn cael eu listri fel gwasanaeth addlaw.
 
@@ -165,7 +165,7 @@ Mae'r thema'n rhoi ffurfynau tebygol yn cyflwyno ffurfynau tebygol o ddifrif, ga
 
 Bydd y gweithredwyr yn cael gwthnos gyda Ultimate Multisite gan ei allu gwneud hyn yr oeddent yn ddaest - ddefnyddio thema'n cael eu cyflwyno ar y safle.
 
-#### Cas 2: Cyflennydd Niche (Niche Provider)
+#### Cas 2: Cyflennydd Niche (Niche Provider) {#case-2-niche-provider}
 
 Mae gennyrdd iawn sydd yn ddyddiad hwn sydd yn dweud, “gwneud un neu gwneid ei dda”. Ar gyfer llawer o specialisau, mae hyn yn ei golygu i creu produsg neu weithredol ar ystod un iddoedd canol.
 
@@ -179,7 +179,7 @@ Ar gyfer rhoi gwasanaethau safleoedd neu weithredol niche, mae hyn yn rhoi cyfat
 
 Depend yn y haneseddau sy angennychu, gallai'r ffurfau _subdirectory_ neu _subdomain_ bydd yn hanfodol, ac yn y bynnag, bydd y dechrau argyngolygu yn cael ei gwneud rhwng certyf. SSL simple ar gyfer _subdirectories_ neu certyf. SSL cyflwrdd (wildcard) ar gyfer _subdomains_.
 
-#### Cas 3: Gweithrediad Web WordPress
+#### Cas 3: Gweithrediad Web WordPress {#case-3-wordpress-web-hosting}
 
 Mae y maeau llawer o ffordd i gweithredu safleoedd WordPress, ond yn rhy ddigon iddo fod yn einfal iawn i rhoi safle web i'r cydweithredwr gyda ffurf WordPress wedi'i chwarae. Mae hynny oherwydd bod angen i'r destunion a'r mynediadau ychwanegu i'r gilydd i ddod yn unigol i rhoi weithrediad sydd â golybus.
 
@@ -191,11 +191,11 @@ Ar gyfer y dewelwyr sydd yn dymuno â Ultimate Multisite, mae'r cydweithrediad h
 
 Tan fod yn cyfyngu i llawer o pluginau ac certyfion allanol, mae Ultimate Multisite yn rhoi ddefnyddio sydd yn gyflwrdd (feature rich) a chwarae yn unigol â'r ffurf Wix, Squarespace, WordPress.com a eraill.
 
-### Mynegiadau argyngolygu
+### Mynegiadau argyngolygu {#architecture-considerations}
 
 Er ei fod nid cyfarwyddyd cyflwrddol, bydd y pethau canlynol yn gynnig gyfarwyddyd i'r dechrau'r wybilydd o ddefnyddio technolegau i chynllunio installiad Ultimate Multisite.
 
-#### Gweithrediad Cynfrifol vs. Gweithrediad Cyflwrdd (Shared vs. Dedicated Hosting)
+#### Gweithrediad Cynfrifol vs. Gweithrediad Cyflwrdd (Shared vs. Dedicated Hosting) {#shared-vs-dedicated-hosting}
 
 Mae'n ddigon na pob ychwanegwyr gweithredol yn unig, ac mae rhai yn gwneud gweithredoedd ar gyfer serverau yn rhy ddwfn. Mae gan ychwanegwyr sydd â chynllun bach yn cyflwyno cyflymion drwy ddefnyddio ddwfn serverau. Fel hyn, gall eich ychwanegiad Ultimate Multisite fod yn un o'r chyfathreduau amserol ar yr un server.
 
@@ -209,7 +209,7 @@ Mae Ultimate Multisite yn cael ei adnabod ei fod yn gweithio gyda nifer o chynll
 
 Ar gyfer llyfrgell o chynllunwyr cyfathredu a gyfarwyddiadau llawn i gyd-fyndol ar ei gael, gwchwch drwy'r drafod ychwanegiadau Cyfathredu (Compatible Providers).
 
-#### Cynllunio Perfformiad
+#### Cynllunio Perfformiad {#performance-considerations}
 
 Mae Ultimate Multisite nid yn ddefnyddiad bach, ond mae'n cyflym yn rhyfeddol. Fodd bynnag, mae'n gweithio fel dda fel ychwanegiad a'r drafod sydd o'r chynlluniau ac infrastructure, ac gallai ei ddefnyddio dim ond hyn sydd â'i cyffredinol.
 
@@ -225,7 +225,7 @@ Gallai'n ddefnyddio'r sefyllfaeth hwn yn llai ei ddefnyddio gan gael ei chwarae,
 
 Mae Ultimate Multisite yn cynnwys add-on Cloudflare sydd yn ddefnyddiol i'r rheolwr serverau i leoli eu cyflwyniadau yn ôl Cloudflare ac i ddefnyddio nid yn unig ei fadaisau caching, ond hefyd y gael ychwanegau DNS hosting, certydd SSL a mecanwaith diogelwch.
 
-#### Backups
+#### Backups {#backups}
 
 Gallai'r chwarae 50 pobl am cyfateleʊ ar backups ac cael 50 ddyniad cyffredinol ar y strategaethau back up. Ymateb yw: mae'n dipynol.
 
@@ -235,7 +235,7 @@ Ar gyfer y rheol hwn, byddwn yn cytuno bod cyfathrebu (backup) yn cop o statws y
 
  gyda'r meddyliau hyn, bydd y ateb am beth yw ffurfio'r cyfathrebu a beth yw'r iawnoror i eich dyfodol yn cyflwyno'r serchion ac y mae'n dda ar gyfer eich dyfodol yn cyffredin yn bennaf ar eich rheiddio a'r gallu gael ystyr hyn. ond, o'r ffurfiau sydd yn ddefnyddiolestrach i'r ddifrifu, bydd y opsiynau isod ymlaen yn rhoi rhywfaint o gyfarwyddiadau.
 
-#### Snapshots (Cyflenwiadau)
+#### Snapshots (Cyflenwiadau) {#snapshots}
 
 Mae snapshots yn "silver bullets" i'r cyfathrebu oherwydd ei fod yn einfedol, nid yn cael eu hanfodio (hyd yn oed os ydych chi eisiau gael ychwanegiad), ac mae hi'n "yn gweithio" yn unig. ond mae angen i'r chydweithredwr eich help, ac mae'n cyflwyno'r pethau hyn yn bennaf os oes gennych VPS (Virtual Private Server) neu rhywbeth sydd yn cyfathrebu â hynny. Mae sawl ychwanegwyr a ddefnyddir mewn ddogfen y "Compatible Providers" yn cynnig cyfathrebu sy'n angen i ddifrifu neu chwilio gan y adeiladu cyd-llwybr.
 
@@ -243,7 +243,7 @@ Pobethau'r barchnadau traddionol yn tynal y cyfathrebu a ddatblygiadau, mae snap
 
 Gall snapshotau dod â chystalau ychwanegol gyda'r cyfathrebuwr hosting, ond mae'n fod yn polisi diogelwch yn erbyn anghytuntiau.
 
-#### Scriptau Extern
+#### Scriptau Extern {#external-scripts}
 
 Mae'n dyfarnio dim ond scriptau a chyflwyniadau extern i farchnad WordPress a resurau MySQL, ac bydd hynny'n gweithio'n dda ar gyfer Ultimate Multisite gan fod yn plugin WordPress sy'n defnyddio y filesystem a'r database o WordPress. Fel gael ei ddefnyddio snapshotau safle WordPress byddai'n gwriadu'r angenau Ultimate Multisite'n ddigonol.
 
@@ -251,7 +251,7 @@ Ni gallwn ni allu cyflwyno unrhyw script yn fwy na chwarae arall, ond mae'r cyng
 
 Rhaid gynnwys ei fod y scriptau hyn, wrth eu chwarae, yn llwybr y cefnogaeth system sydd i'w gwahanu.
 
-#### Plugins
+#### Plugins {#plugins}
 
 Mae dim ond problem yn WordPress sydd wedi'i ail yn cael ei ddefnyddio gyda plugin ac os nid yw'r rheoli scriptau extern yn eich hoffter, gall yr unigol plugin fod yn opsiwn sydd arall.
 
@@ -259,7 +259,7 @@ Mae'r pluginau yn gwahaniaethu mewn opsiynau a ffeithiau, ond mae'n cyflawni'r u
 
 Pan mae eich plugin yn cael ei ddefnyddio, gwneudai gofyn i chi gweld i sicr ydynt yn gwrthosi'r multisite. Oherwydd natur ei ffurf gweithredu, gallwch anghofio chwarae amserol ar y server wrth y cyfnod backup yn cael ei gyflawni wedi'i gwblhau.
 
-#### Domain a SSL
+#### Domain a SSL {#domain-and-ssl-1}
 
 Mae llawer wedi siarad am enw domainau mewn modd _subdomain_ multisite. Mae'r ateb allanolol i gweithredwyr cyd-gynlluniau ar gyfer hyn yn cael ei ddefnyddio cyfathoghlyd DNS wildcards (wildcard DNS entries).
 
@@ -283,7 +283,7 @@ Ar gyfer y cytundebau, mae defnyddio Cloudflare yn opsiwn dda. Mae angen i'r cyd
 
 Ar ôl hynny, mae angen gael ysgolion allweddol sydd wedi'u chwilio, y gallai fod ebyd y prosess o sethedig DNS a SSL yn rhyfedd. Fodd bynnag, gyda'r cyfathri Ultimate Multisite â'r sgilau hyn, mae'r amgylchedd yn cael ei ddefnyddio ac mae'r gweithrediad yn cael ei awtomatgyrchu.
 
-#### Plugins
+#### Plugins {#plugins-1}
 
 Mae'n rhyfeddol fod angen rhai pluginau ychwanegol i rhoi ffurf ystyr i eich cyddeewyr neu weithgareddion. Allwch ddefnyddio pob plugin gyda WordPress Multisite a Ultimate Multisite? Mae hyn yn cyflwyno'r amser.
 

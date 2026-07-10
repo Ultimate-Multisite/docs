@@ -1,118 +1,122 @@
 ---
-title: Admin Paneldə Gəzmək
+title: Admin paneli ilə tanışlıq
 sidebar_position: 16
-_i18n_hash: de6ee9c85eb19e725b0fdb0a98d1a29b
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Admin Paneldə Gəzinti
+# Admin Panelə tur {#touring-the-admin-panel}
 
-Ultimate Multisite mümkün qədər sadə və özünü izah edən olmaq məqsədi daşıyır, lakin bu qədər güclü bir alət olduğu üçün, bələdçi bir gəzinti faydalı ola bilər. Yerdə qurulmanıza kömək etmək üçün admin səhifələrində bir gəzinti edək.
+Ultimate Multisite mümkün qədər sadə və özünü izah edən olmağı hədəfləyir, amma bu qədər güclü bir alətdə bələdçili tur faydalı ola bilər. Gəlin, yerləşməyinizə kömək etmək üçün admin səhifələrini nəzərdən keçirək.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-Ultimate Multisite **Dashboard**-u gəlirlər, sayt fəaliyyəti, üzvlik artımı, ziyarətçi sayı və coğrafi məlumatlar daxil olmaqla əsas hesabatlar və analitikalar göstərir.
+Ultimate Multisite **Dashboard** gəlirlər, sayt fəaliyyətləri, üzvlük artımı, ziyarətçi sayları və coğrafi məlumatlar daxil olmaqla əsas hesabatları və analitikanı göstərir.
 
 ![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-Dashboard-un tam görünüşü budur:
+Dashboard-un tam görünüşü belədir:
 
-![Ultimate Multisite Dashboard full page](/img/admin/um-dashboard-full.png)
+![Ultimate Multisite Dashboard tam səhifə](/img/admin/um-dashboard-full.png)
 
-Və dashboard-un aşağı hissəsi:
+Və dashboard-un alt bölməsi:
 
-![Ultimate Multisite Dashboard bottom section](/img/admin/um-dashboard-bottom.png)
+![Ultimate Multisite Dashboard alt bölmə](/img/admin/um-dashboard-bottom.png)
 
-Network dashboard-un tam görünüşü də budur:
+Şəbəkə dashboard-unun tam görünüşü də belədir:
 
-![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
+![Network Dashboard tam səhifə](/img/admin/network-dashboard-full-page.png)
 
-## Checkout Forms
+## Ödəniş formaları {#checkout-forms}
 
-**Checkout Forms** sizə fərdi qeydiyyat səhifələri yaratmaqda çeviklik verir. Sahifələri fərdiləşdirə, fərdi class və scriptlər əlavə edə və ziyarətçinin ölkəsi və ya yerləşdiyi məkan əsasında girişi məhdudlaşdıra bilərsiniz.
+**Ödəniş formaları** sizə fərdi qeydiyyat səhifələri yaratmaq çevikliyi verir. Sahələri fərdiləşdirə, xüsusi siniflər və skriptlər əlavə edə, həmçinin ziyarətçinin ölkəsinə və ya məkanına əsasən girişi məhdudlaşdıra bilərsiniz.
 
-![Checkout Forms list](/img/admin/checkout-forms-list.png)
+![Ödəniş formaları siyahısı](/img/admin/checkout-forms-list.png)
 
-## Products
+## Məhsullar {#products}
 
-**Products** bölməsi sizin şəbəkəniz üçün müxtəlif planlar, paketlər və xidmətlər yaratdığınız yerdir. Qiymətləri, hesablaşma tezliklərini və məhdudiyyətləri/kvotaları məhsul səviyyəsində müəyyən edin.
+**Məhsullar** bölməsi şəbəkəniz üçün müxtəlif planlar, paketlər və xidmətlər yaratdığınız yerdir. Qiymətləri, hesablaşma tezliklərini və limitləri & kvotaları məhsul səviyyəsində təyin edin.
 
-![Products list](/img/admin/products-list.png)
+![Məhsullar siyahısı](/img/admin/products-list.png)
 
-## Memberships
+## Üzvlüklər {#memberships}
 
-**Memberships** səhifəsi şəbəkənizdəki bütün abunəlikləri göstərir. Planlar, məhsullar, hesablaşma məbləğləri və tezlikləri, ödəniş tarixi və zaman damğları daxil olmaqla abunəlik detallarını nəzərdən keçirin və redaktə edin.
+**Üzvlüklər** səhifəsi şəbəkənizdəki bütün abunəlikləri göstərir. Planlar, məhsullar, hesablaşma məbləğləri və tezlikləri, ödəniş tarixçəsi və vaxt damğaları daxil olmaqla abunəlik təfərrüatlarını nəzərdən keçirin və redaktə edin.
 
-![Memberships list](/img/admin/memberships-list.png)
+![Üzvlüklər siyahısı](/img/admin/memberships-list.png)
 
-## Payments
+## Ödənişlər {#payments}
 
-**Payments** səhifəsi bütün şəbəkənizdəki ödəniş tarixçəsinə bir baxış təqdim edir və müəyyən məhsullar və məbləğlər daxil olmaqla ətraflı əməliyyat məlumatları verir.
+**Ödənişlər** səhifəsi bütün şəbəkəniz üzrə ödəniş tarixçəsinin sürətli görünüşünü təqdim edir və konkret məhsullar və məbləğlər daxil olmaqla ətraflı tranzaksiya məlumatlarını göstərir.
 
-![Payments list](/img/admin/payments-list.png)
+![Ödənişlər siyahısı](/img/admin/payments-list.png)
 
-## Customers
+## Müştərilər {#customers}
 
-**Customers** səhifəsi şəbəkənizdə qeydiyyatdan keçmiş bütün üzvləri, ad, e-poçt ünvanı, son daxil olma tarixi və alt saytlarına daxil olmaq üçün "keçid et" linki daxil olmaqla əsas istifadəçi məlumatları ilə göstərir.
+**Müştərilər** səhifəsi şəbəkənizdə qeydiyyatdan keçmiş bütün üzvləri ad, e-poçt ünvanı, son giriş və onların alt saytına daxil olmaq üçün "keçid et" linki daxil olmaqla əsas istifadəçi məlumatları ilə göstərir.
 
-![Customers list](/img/admin/customers-list.png)
+![Müştərilər siyahısı](/img/admin/customers-list.png)
 
-## Sites
+## Saytlar {#sites}
 
-**Sites** səhifəsi şəbəkənizdəki bütün alt saytları, o cümlədən sayt şablonlarını və müştəri sahibliyi olan saytları siyahıya alır. Xəritələnmiş domenləri, məhdudiyyətləri/kvotaları, pluginləri və temaları, sayt miniatür şəkillərini asanlıqla idarə edin.
+**Saytlar** səhifəsi şəbəkənizdəki bütün alt saytları, o cümlədən sayt şablonlarını və müştəriyə məxsus saytları siyahılayır. Xəritələnmiş domenləri, limitləri & kvotaları, plugin-ləri və theme-ləri, həmçinin sayt miniatürlərini asanlıqla idarə edin.
 
-![Sites list](/img/admin/sites-list.png)
+![Saytlar siyahısı](/img/admin/sites-list.png)
 
-## Domains
+## Domenlər {#domains}
 
-**Domains** səhifəsi alt saytlara xəritələnmiş fərdi domenlərə ayrılmışdır. Super admin kimi, fərdi domen adlarını əl ilə əlavə edə və ya xəritələyə, həmçinin DNS qeydlərinə və loglara baxa bilərsiniz.
+**Domenlər** səhifəsi alt saytlara xəritələnmiş fərdi domenlərə həsr olunub. Super admin kimi, fərdi domen adlarını əl ilə əlavə edə və ya xəritələyə, həmçinin DNS qeydlərinə və jurnallara baxa bilərsiniz.
 
-![Domains list](/img/admin/domains-list.png)
+![Domenlər siyahısı](/img/admin/domains-list.png)
 
-## Discount Codes
+## Endirim kodları {#discount-codes}
 
-**Discount Codes** sizə son istifadəçilərinizə endirim təklif etmək üçün kupon kodları yaratmağa imkan verir. Endirim dəyərini göstərin və müəyyən istifadəçiləri və ya qrupları hədəf alın.
+**Endirim kodları** son istifadəçilərinizə endirimlər təklif etmək üçün kupon kodları yaratmağa imkan verir. Endirim dəyərini göstərin və konkret istifadəçiləri və ya qrupları hədəfləyin.
 
-![Discount Codes list](/img/admin/discount-codes-list.png)
+![Endirim kodları siyahısı](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Yayımlar {#broadcasts}
 
-**Broadcasts** alt sayt istifadəçilərinizə elanlar yaymaq və ya şəxsi mesajlar göndərmək üçün bir alətdir. Müəyyən istifadəçi qruplarını, onların abunə olduqları plana və ya məhsula əsasən hədəfləyin.
+**Yayımlar** elanları yaymaq və ya alt sayt istifadəçilərinizə şəxsi mesajlar göndərmək üçün bir alətdir. Abunə olduqları plana və ya məhsula əsasən konkret istifadəçi qruplarını hədəfləyin.
 
-![Broadcasts list](/img/admin/broadcasts-list.png)
+![Yayımlar siyahısı](/img/admin/broadcasts-list.png)
 
-## Settings
+## Parametrlər {#settings}
 
-**Settings** səhifəsi Ultimate Multisite-u konfiqurasiya etdiyiniz yerdir — qeydiyyat parametrləri, ödənişlər, API və webhooks, domen xəritələnməsi və digər inteqrasiyalar.
+**Parametrlər** səhifəsi Ultimate Multisite-ı konfiqurasiya etdiyiniz yerdir — qeydiyyat parametrləri, ödənişlər, API və webhook-lar, domen xəritələmə və digər inteqrasiyalar.
 
-![Settings page](/img/admin/settings-general.png)
+AI connector parametrləri hazırda dəstəklənən OAuth provayder hovuzlarını siyahılayır: Anthropic Max, OpenAI ChatGPT/Codex və Google AI Pro. Hər provayder kartı super admin-lərə Account-ları qoşmağa, saxlanmış Account-ları yeniləməyə, Account-ları e-poçta görə silməyə və sandbox mühiti brauzer yönləndirməsini blokladıqda əl ilə OAuth ehtiyat yolundan istifadə etməyə imkan verir. Cursor Pro quraşdırma seçimləri admin paneldən silinib.
 
-Ümumi parametrlər səhifəsinin tam görünüşü budur:
+ChatGPT/Codex Account-ları əməliyyat alətlərə icazə verdikdə connector dəstəkli alət istifadəsini dəstəkləyir; buna görə connector dəstəkli əməliyyatlardan asılı olan admin iş axınları OpenAI Account-u qoşulduqdan sonra Codex alət davranışından istifadə edə bilər.
 
-![Settings general full page](/img/admin/settings-general-full.png)
+![Parametrlər səhifəsi](/img/admin/settings-general.png)
+
+Ümumi parametrlər səhifəsinin tam görünüşü belədir:
+
+![Ümumi parametrlər tam səhifə](/img/admin/settings-general-full.png)
 
 Və e-poçt parametrləri səhifəsi:
 
-![Settings emails full page](/img/admin/settings-emails-full.png)
+![E-poçt parametrləri tam səhifə](/img/admin/settings-emails-full.png)
 
 Və ödəniş parametrləri səhifəsi:
 
-![Settings payments full page](/img/admin/settings-payments-full.png)
+![Ödəniş parametrləri tam səhifə](/img/admin/settings-payments-full.png)
 
-Və ödəniş parametrlərinin aşağı hissəsi:
+Və ödəniş parametrlərinin alt bölməsi:
 
-![Settings payments bottom section](/img/admin/settings-payments-bottom.png)
+![Ödəniş parametrləri alt bölmə](/img/admin/settings-payments-bottom.png)
 
-Və saytlar parametrləri səhifəsi:
+Və sayt parametrləri səhifəsi:
 
-![Settings sites full page](/img/admin/settings-sites-full.png)
+![Sayt parametrləri tam səhifə](/img/admin/settings-sites-full.png)
 
-## Events
+## Hadisələr {#events}
 
-**Events** səhifəsi şəbəkənizdəki bütün hadisələri və logları qeyd edir. Plan dəyişiklikləri, qeydiyyatlar və digər hərəkətlər kimi fəaliyyətləri izləyir — bu da multisite-ınızı monitorinq etmək üçün faydalıdır.
+**Hadisələr** səhifəsi şəbəkənizdəki bütün hadisələrin və jurnalların qeydini saxlayır. Plan dəyişiklikləri, qeydiyyatlar və digər hərəkətlər kimi fəaliyyətləri izləyir — multisite-inizi monitorinq etmək üçün faydalıdır.
 
-![Events list](/img/admin/events-list.png)
+![Hadisələr siyahısı](/img/admin/events-list.png)
 
-## Webhooks
+## Webhook-lar {#webhooks}
 
-**Webhooks** sizə məlumatları başqa bir tətbiqə çatdırmanıza imkan verir. Ultimate Multisite-dan Zapier kimi platformalara məlumat göndərmək üçün faydalıdır.
+**Webhook-lar** məlumatları başqa bir tətbiqə çatdırmağa imkan verir. Ultimate Multisite-dan Zapier kimi platformalara məlumat göndərmək üçün faydalıdır.
 
-![Webhooks list](/img/admin/webhooks-list.png)
+![Webhook-lar siyahısı](/img/admin/webhooks-list.png)

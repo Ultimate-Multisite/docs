@@ -1,15 +1,17 @@
 ---
-title: ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਗਾਈਡ
+title: ਏਕੀਕਰਨ ਗਾਈਡ
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਗਾਈਡ
+# ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਗਾਈਡ {#integration-guide}
 
-ਇਹ ਗਾਈਡ Ultimate Multisite ਨਾਲ ਆਮ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਪੈਟਰਨ ਬਾਰੇ ਦੱਸਦੀ ਹੈ। ਇਸ ਵਿੱਚ ਬਾਹਰੀ ਸਰਵਿਸ ਨਾਲ ਕਨੈਕਟ ਕਰਨਾ, ਕਸਟਮ ਪੇਮੈਂਟ ਗੇਟਵੇ ਬਣਾਉਣਾ, ਅਤੇ ਵੇਬਹੂਕਸ ਨੂੰ ਹੈਂਡਲ ਕਰਨਾ ਸ਼ਾਮਲ ਹੈ।
+ਇਹ ਗਾਈਡ Ultimate Multisite ਨਾਲ ਆਮ ਇੰਟੀਗ੍ਰੇਸ਼ਨ ਪੈਟਰਨਾਂ ਨੂੰ ਕਵਰ ਕਰਦੀ ਹੈ, ਜਿਸ ਵਿੱਚ ਬਾਹਰੀ ਸੇਵਾਵਾਂ ਨਾਲ ਕਨੈਕਟ ਕਰਨਾ, ਕਸਟਮ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾਉਣਾ, ਅਤੇ webhooks ਨੂੰ ਸੰਭਾਲਣਾ ਸ਼ਾਮਲ ਹੈ।
 
-## CRM ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+ਅਲੱਗ tenant ਇੰਫ੍ਰਾਸਟ੍ਰਕਚਰ ਲਈ, sovereign tenant bootstrap, migration verification, SSO, ਅਤੇ teardown ਮਾਰਗਦਰਸ਼ਨ ਲਈ [Multi-Tenancy ਇੰਟੀਗ੍ਰੇਸ਼ਨ](./multi-tenancy) ਵੇਖੋ।
 
-ਜਦੋਂ ਕੋਈ ਨਵਾਂ ਗਾਹਕ ਸਾਈਨ ਅਪ ਕਰਦਾ ਹੈ, ਤਾਂ ਉਸਦਾ ਡਾਟਾ ਤੁਹਾਡੇ CRM ਨਾਲ ਸਿੰਕ (sync) ਕਰਨਾ:
+## CRM ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#crm-integration}
+
+ਨਵੇਂ ਗਾਹਕ ਸਾਈਨ ਅੱਪ ਕਰਨ ਵੇਲੇ ਗਾਹਕ ਡਾਟਾ ਆਪਣੇ CRM ਨਾਲ ਸਿੰਕ ਕਰੋ:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -29,9 +31,9 @@ function sync_customer_to_crm($customer) {
 }
 ```
 
-## ਐਨਾਲਿਟਿਕਸ ਇੰਟੀਗ੍ਰੇਸ਼ਨ
+## ਵਿਸ਼ਲੇਸ਼ਣ ਇੰਟੀਗ੍ਰੇਸ਼ਨ {#analytics-integration}
 
-ਗਾਹਕ ਦੇ ਪੂਰੇ ਜੀਵਨ ਚੱਕਰ (customer lifecycle) ਵਿੱਚ ਮੁੱਖ ਕਾਰੋਬਾਰੀ ਘਟਨਾਵਾਂ (events) ਨੂੰ ਟ੍ਰੈਕ ਕਰਨਾ:
+ਗਾਹਕ lifecycle ਵਿੱਚ ਮੁੱਖ ਕਾਰੋਬਾਰੀ ਘਟਨਾਵਾਂ ਟਰੈਕ ਕਰੋ:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## ਅਗਲੇ ਕਦਮ (Next Steps)
+## ਅਗਲੇ ਕਦਮ {#next-steps}
 
-- [Custom Gateway Development](./custom-gateway) — ਆਪਣਾ ਪੇਮੈਂਟ ਗੇਟਵੇ ਬਣਾਓ
-- [Webhook Handling](./webhooks) — ਕਸਟਮ ਵੇਬਹੂਕ ਐਂਡਪੁਆਇੰਟ ਬਣਾਓ
+- [ਕਸਟਮ ਗੇਟਵੇ ਵਿਕਾਸ](./custom-gateway) — ਆਪਣਾ ਭੁਗਤਾਨ ਗੇਟਵੇ ਬਣਾਓ
+- [Webhook ਹੈਂਡਲਿੰਗ](./webhooks) — ਕਸਟਮ webhook endpoints ਬਣਾਓ
+- [Multi-Tenancy ਇੰਟੀਗ੍ਰੇਸ਼ਨ](./multi-tenancy) — sovereign tenant lifecycle flows ਨਾਲ ਇੰਟੀਗ੍ਰੇਟ ਕਰੋ

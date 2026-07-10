@@ -1,75 +1,75 @@
 ---
-title: Pole při pokladně a DNS zákazníka
+title: Pole pokladny a zákaznické DNS
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Správa polí pro domény a DNS zákazníků
+# Checkout pole pro správu domén a zákaznická správa DNS {#checkout-field-and-customer-dns-management}
 
-## Pole výběru domény
+## Checkout pole Výběr domény {#the-domain-selection-checkout-field}
 
-Pole **Výběr domény** je prvek v nákupním formuláři, který zákazníkům nabízí výběr, jak získat doménu pro svůj web. Přidejte ho do jakéhokoli nákupního formuláře, abyste umožnili prodej domén.
+Pole **Výběr domény** je checkout prvek, který zákazníkům dává na výběr, jak získat doménu pro svůj web. Přidejte ho do libovolného checkout formuláře a povolte prodej domén.
 
-### Přidání pole do nákupního formuláře
+### Přidání pole do checkout formuláře {#adding-the-field-to-a-checkout-form}
 
-1. Přejděte na **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Otevřete nebo vytvořte nákupní formulář
-3. V editoru nákupního formuláře klikněte na **Add Field**
-4. Z nabídky polí vyberte **Domain Selection**
-5. Konfigurujte možnosti pole (viz níže)
+1. Přejděte do **Správa sítě › Ultimate Multisite › Checkout formuláře**
+2. Otevřete nebo vytvořte checkout formulář
+3. V editoru checkoutu klikněte na **Přidat pole**
+4. Ze seznamu polí vyberte **Výběr domény**
+5. Nakonfigurujte možnosti pole (viz níže)
 6. Uložte formulář
 
-### Možnosti pole
+### Možnosti pole {#field-options}
 
-**Režimy domény** — Vyberte, které záložky uvidí zákazníci. Každý režim lze nezávisle zapnout nebo vypnout:
+**Režimy domény** — Vyberte, které karty zákazník uvidí. Každý režim lze nezávisle povolit nebo zakázat:
 
 | Režim | Co dělá |
 |---|---|
-| **Subdomain** | Zákazník použije bezplatnou subdoménu na vaší síti (např. `mysite.vašesíť.com`). Neplatí žádná poplatek. |
-| **Registrovat novou doménu** | Zákazník vyhledá novou doménu a zaregistruje ji u vašeho nakonfigurovaného poskytovatele. Používá se produkt odpovídající doméně pro výpočet ceny. |
-| **Existující doména** | Zákazník mapuje doménu, kterou již vlastní. Žádný registrační poplatek. Doména je automaticky mapována na jeho web. |
+| **Subdoména** | Zákazník používá bezplatnou subdoménu ve vaší síti (např. `mysite.yournetwork.com`). Není potřeba žádná platba. |
+| **Registrovat novou doménu** | Zákazník vyhledá novou doménu a zaregistruje ji přes vašeho nakonfigurovaného poskytovatele. Pro cenu se použije odpovídající doménový produkt. |
+| **Existující doména** | Zákazník namapuje doménu, kterou už vlastní. Bez registračního poplatku. Doména se automaticky namapuje na jeho web. |
 
-**Výchozí režim** — Když jsou zapnuty všechny tři režimy, která záložka se otevře jako první. Nastavte na **Subdomain**, pokud chcete, aby byla registrace domény volitelná, nebo na **Register New Domain**, pokud chcete povzbudit k nákupu.
+**Výchozí režim** — Když jsou povoleny všechny tři režimy, určuje, která karta se otevře jako první. Nastavte na **Subdoména**, aby registrace domény zůstala volitelná, nebo na **Registrovat novou doménu**, abyste podpořili nákupy.
 
-**Produkt domény** — Volitelně toto pole přiřaďte k konkrétnímu produktu domény. Pokud není nastaven, addon automaticky vybere odpovídající produkt na základě TLD, které zákazník vyhledá.
+**Doménový produkt** — Volitelně připněte toto pole ke konkrétnímu doménovému produktu. Pokud není nastaveno, addon automaticky vybere odpovídající produkt podle TLD, kterou zákazník vyhledává.
 
-### Pole pro kontaktní údaje registračního subjektu
+### Pole kontaktu držitele {#registrant-contact-fields}
 
-Když zákazník vybere záložku **Register New Domain**, nákupní formulář do pole přidá kontaktní údaje registračního subjektu:
+Když zákazník vybere kartu **Registrovat novou doménu**, checkout formulář vloží přímo do formuláře kontaktní pole držitele:
 
 - Jméno / Příjmení
 - E-mailová adresa
-- Adresa (řádek 1, město, stát/kraj, poštovní směrovací číslo, země)
+- Adresa (řádek 1, město, stát/provincie, PSČ, země)
 - Telefonní číslo
 
-Tyto údaje jsou vyžadovány všemi registračními subjekty a ověřují se před odesláním API volání pro registraci. Telefonní čísla jsou automaticky formátována do mezinárodního formátu `+CC.NNN`, který vyžadují registrační subjekty.
+Tato pole vyžadují všichni registrátoři a ověřují se před provedením volání registračního API. Telefonní čísla se automaticky formátují do mezinárodního formátu `+CC.NNN`, který registrátoři očekávají.
 
-### Automaticky generovaná URL webu
+### Automaticky vygenerovaná URL webu {#auto-generated-site-url}
 
-Když zákazník doménu registruje nebo mapuje, pole URL webu je automaticky vyplněno z vybrané domény. Zákazníci nemusí vyplňovat samostatné pole s URL.
+Když zákazník zaregistruje nebo namapuje doménu, pole URL webu se automaticky vyplní z vybrané domény. Zákazníci nemusí vyplňovat samostatné pole URL.
 
-### Chování vyhledávání
+### Chování vyhledávání {#search-behaviour}
 
-- Dostupnost domény je kontrolována v reálném čase pomocí AJAX, jak zákazník píše
-- Alternativní návrhy TLD jsou zobrazeny, když není preferovaná doména dostupná
-- Cena je načtena v reálném čase a jasně zobrazena (cena za registraci, cena za obnovu, volitný poplatek za WHOIS privacy)
-- Kuponské kódy se vztahují na produkty domény stejně jako na jakýkoli jiný produkt
+- Dostupnost domény se kontroluje v reálném čase pomocí AJAX při psaní zákazníkem
+- Když preferovaná doména není dostupná, zobrazí se návrhy alternativních TLD
+- Ceny se načítají živě a zobrazují se přehledně (cena registrace, cena obnovení, volitelný poplatek za soukromí WHOIS)
+- Kódy kupónů se na doménové produkty vztahují stejně jako na jakýkoli jiný produkt
 
-**Optimalizace odezvy vyhledávání:**
+**Ladění odezvy vyhledávání:**
 
 ```php
-// Zvýšení zpoždění debounce (milisekundy) k snížení API volání na pomalých spojích
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
-    return 800; // výchozí: 500
+    return 800; // default: 500
 });
 ```
 
-**Přidání vlastních polí do formuláře vyhledávání domény:**
+**Přidání vlastních polí do formuláře pro vyhledávání domény:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Doplňující poznámky',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Správa DNS zákazníků
+## Zákaznická správa DNS {#customer-dns-management}
 
-Zákazníci mohou spravovat DNS záznamy pro své registrované domény na stránce **My Account** (Můj účet), v sekci odpovídající jejich doméně.
+Zákazníci mohou spravovat DNS záznamy pro své registrované domény na stránce **My Account**, pod položkou své domény.
 
-### Podporované typy záznamů
+### Podporované typy záznamů {#supported-record-types}
 
 | Typ | Použití |
 |---|---|
-| **A** | Mapuje hélání na IPv4 adresu |
-| **AAAA** | Mapuje hélání na IPv6 adresu |
-| **CNAME** | Vytvoří alias ukazující na jiné hélání |
-| **MX** | Nastaví server pro výměnu e-mailů |
-| **TXT** | Přidá textové záznamy pro SPF, DMARC, ověření nebo jiné |
+| **A** | Namapovat název hostitele na IPv4 adresu |
+| **AAAA** | Namapovat název hostitele na IPv6 adresu |
+| **CNAME** | Vytvořit alias směřující na jiný název hostitele |
+| **MX** | Nastavit server pro výměnu pošty |
+| **TXT** | Přidat SPF, DMARC, ověřovací nebo jiné textové záznamy |
 
-### Kterí poskytovatelé podporují správu DNS?
+### Kteří poskytovatelé podporují správu DNS? {#which-providers-support-dns-management}
 
-Správa DNS (přidání, úprava, smazání záznamů) je dostupná u **OpenSRS**, **ResellerClub** a **Enom**. Domény Namecheap, GoDaddy a NameSilo zobrazují stav a expiraci, ale DNS musí být spravován přímo v ovládacím panelu registračního subjektu.
+Správa DNS (přidání, úprava, odstranění záznamů) je dostupná u **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** a **Openprovider**. Domény **Hostinger** mohou aktualizovat nameservery prostřednictvím Domain Seller; DNS záznamy pro hostované domény spravuje základní integrace mapování domén Hostinger. Domény Namecheap, GoDaddy a NameSilo zobrazují stav a informace o expiraci, ale DNS je nutné spravovat přímo v ovládacím panelu registrátora.
 
-### Výchozí DNS záznamy
+### Výchozí DNS záznamy {#default-dns-records}
 
-Můžete nakonfigurovat výchozí DNS záznamy, které se automaticky aplikují při registraci domény. Přejděte na **Settings › Domain Seller › Default DNS Records**.
+Můžete nakonfigurovat výchozí DNS záznamy, které se automaticky použijí při registraci domény. Přejděte do **Nastavení › Domain Seller › Výchozí DNS záznamy**.
 
 Výchozí hodnoty záznamů podporují dva tokeny:
 
-| Token | Nahrazeno |
+| Token | Nahrazuje se |
 |---|---|
-| `{DOMAIN}` | Registrovaná doména (např. `example.com`) |
-| `{SITE_URL}` | URL webu WordPress pro zákazníkov web |
+| `{DOMAIN}` | Registrovaný název domény (např. `example.com`) |
+| `{SITE_URL}` | URL WordPress webu zákazníka |
 
-**Příklad — směřování kořenové domény a www na IP adresu vašeho serveru:**
+**Příklad — nasměrujte apex doménu a www na IP adresu svého serveru:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Administrátoři: prohlížení a úprava DNS
+### Administrátor: zobrazení a úprava DNS {#admin-viewing-and-editing-dns}
 
-Administrátoři sítě mohou prohlížet a upravovat DNS záznamy pro jakoukoli doménu zákazníka ze stránky úpravy domény v **Network Admin › Ultimate Multisite › Domains**.
+Správci sítě mohou zobrazovat a upravovat DNS záznamy pro jakoukoli zákaznickou doménu ze stránky úprav dané domény v **Správa sítě › Ultimate Multisite › Domény**.

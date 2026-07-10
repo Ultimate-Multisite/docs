@@ -3,11 +3,11 @@ title: Fluxo de Migração Soberana
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Fluxo de Migração Soberana
+# Fluxo de Migração Soberana {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 adiciona portões de verificação de migração para mover um subsite padrão para a infraestrutura do inquilino soberano.
 
-## Antes de começar
+## Antes de começar {#before-you-start}
 
 Confirme que você tem:
 
@@ -17,7 +17,7 @@ Confirme que você tem:
 - Uma vinculação do host do banco de dados que corresponda ao ambiente de destino.
 - Acesso para executar comandos WP-CLI para a rede.
 
-## Fluxo de trabalho recomendado
+## Fluxo de trabalho recomendado {#recommended-workflow}
 
 1. Prepare o banco de dados e o sistema de arquivos do inquilino de destino.
 2. Registre ou atualize as configurações de isolamento do inquilino.
@@ -28,7 +28,7 @@ Confirme que você tem:
 7. Acesse o inquilino com SSO.
 8. Altere o DNS ou o roteamento somente após a verificação ser aprovada.
 
-## Portões de verificação
+## Portões de verificação {#verification-gates}
 
 O fluxo de trabalho de verificação checa a migração de vários ângulos:
 
@@ -40,6 +40,6 @@ O fluxo de trabalho de verificação checa a migração de vários ângulos:
 
 Trate falhas de verificação como bloqueios pré-lançamento. Corrija o problema relatado no banco de dados, usuário, fila ou roteamento e execute a verificação novamente antes de expor o inquilino aos clientes.
 
-## Primeira visita à produção
+## Primeira visita à produção {#first-production-visit}
 
 Após a aprovação da verificação, use **Visitar (SSO)** na tela de gerenciamento do site para a primeira visita administrativa. Isso confirma o roteamento do inquilino, o tratamento do token SSO, o *origin pinning* e o provisionamento de usuários no lado do inquilino em uma etapa controlada.

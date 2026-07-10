@@ -3,11 +3,11 @@ title: Hallintaosion tutkailu
 sidebar_position: 16
 _i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Hallinta Admin-paneelin tutkiskelu
+# Hallinta Admin-paneelin tutkiskelu {#touring-the-admin-panel}
 
 Ultimate Multisite pyrkii olemaan mahdollisimman yksinkertainen ja selkeä, mutta tällaisen tehokkaan työkalun kanssa se voi auttaa ohjattavassa kierroksessa. Käydään läpi admin-sivuja auttaaksemme sinua asettumaan paikoillesi.
 
-## Dashboard
+## Dashboard {#dashboard}
 
 Ultimate Multisite **Dashboard** näyttää perusraportteja ja analyysejä, mukaan lukien tulot, sivuston aktiviteetit, jäsenkasvu, vierailijamäärät ja maantieteelliset tiedot.
 
@@ -25,61 +25,61 @@ Tässä on myös verkko-dashboardin kokonaisnäkymä:
 
 ![Network Dashboard full page](/img/admin/network-dashboard-full-page.png)
 
-## Kassaprosessit (Checkout Forms)
+## Kassaprosessit (Checkout Forms) {#checkout-forms}
 
 **Checkout Forms** antavat sinulle joustavuutta luodaksesi räätälöityjä rekisteröintisivuja. Voit muokata kenttiä, lisätä omaa luokkaa ja skriptejä sekä rajoittaa pääsyä vierailijan maan tai sijainnin perusteella.
 
 ![Checkout Forms list](/img/admin/checkout-forms-list.png)
 
-## Tuotteet (Products)
+## Tuotteet (Products) {#products}
 
 **Products** -osio on paikka, jossa luot eri suunnitelmia, paketteja ja palveluita verkostollesi varten. Määrittele hinnat, laskutusajot ja rajoitukset sekä kvootit tuote-tason tasolla.
 
 ![Products list](/img/admin/products-list.png)
 
-## Jäsenyydet (Memberships)
+## Jäsenyydet (Memberships) {#memberships}
 
 **Memberships** -sivu näyttää kaikki tilaukset verkostossasi. Tarkista ja muokkaa tilaustietoja, mukaan lukien suunnitelmat, tuotteet, laskutusmäärät ja -ajot, maksushistoria sekä aikaleimat.
 
 ![Memberships list](/img/admin/memberships-list.png)
 
-## Maksut (Payments)
+## Maksut (Payments) {#payments}
 
 **Maksut**-sivu tarjoaa nopean yleiskuvan maksahistoriasta koko verkostossasi, sisältäen yksityiskohtaisia tapahtumatietoja, mukaan lukien tiettyjä tuotteita ja summia.
 
 ![Payments list](/img/admin/payments-list.png)
 
-## Asiakkaat
+## Asiakkaat {#customers}
 
 **Asiakkaat**-sivu näyttää kaikki verkostossasi rekisteröityneet jäsenet peruskäyttötiedoilla, kuten nimellä, sähköpostiosoitteella, viimeisimmällä sisäänkirjautumisella ja "vaihto" -linkillä aliasivustolle kirjautumiseen.
 
 ![Customers list](/img/admin/customers-list.png)
 
-## Sivustot
+## Sivustot {#sites}
 
 **Sivustot**-sivu listaa kaikki aliasivustosi verkostossasi, mukaan lukien sivustomallit ja asiakkaiden omistamat sivustot. Hallinnoi helposti kartoitettuja domeeneja, rajoituksia ja kvootteja, plugin-ohjelmia ja teemoja sekä sivuston esikatselukuvia.
 
 ![Sites list](/img/admin/sites-list.png)
 
-## Domeenit
+## Domeenit {#domains}
 
 **Domeenit**-sivu on omistettu aliasivustoille kartoitettaville custom-domeeneille. Superadminina voit lisätä tai kartoittaa custom-domeenne nimi manuaalisesti ja tarkastella DNS-rekistereitä sekä logeja.
 
 ![Domains list](/img/admin/domains-list.png)
 
-## Alennuskoodit
+## Alennuskoodit {#discount-codes}
 
 **Alennuskoodit** antavat sinulle mahdollisuuden luoda kuponkikoodejä tarjota alennuksia loppukäyttäjillesi. Määrittele alennusarvo ja kohdenna tiettyjä käyttäjiä tai ryhmiä.
 
 ![Discount Codes list](/img/admin/discount-codes-list.png)
 
-## Lähetysviestit
+## Lähetysviestit {#broadcasts}
 
 **Lähetysviestit** on työkalu ilmoitusten levittämiseen tai yksityisten viestien lähettämiseen aliasivustosi käyttäjille. Kohdenna tiettyjä käyttäjäryhmiä sopimuksen tai tuotteen perusteella, johon he ovat tilaajia.
 
 ![Broadcasts list](/img/admin/broadcasts-list.png)
 
-## Asetukset
+## Asetukset {#settings}
 
 **Asetukset**-sivu on paikka, josta voit määrittää Ultimate Multisite — rekisteröintiasetukset, maksut, API ja webhooks, domeenikartaus sekä muut integraatiot.
 
@@ -109,13 +109,13 @@ Ja sivustojen asetussivu:
 
 ![Settings sites full page](/img/admin/settings-sites-full.png)
 
-## Tapahtumat (Events)
+## Tapahtumat (Events) {#events}
 
 **Tapahtumat**-sivu pitää kirjaa kaikista tapahtumista ja lokeista verkostossasi. Se seuraa toimintoja kuten suunnitelmien muutoksia, rekisteröitymistä ja muita liikkeitä – hyödyllistä multisite-ympäristön seurannassa.
 
 ![Events list](/img/admin/events-list.png)
 
-## Webhookit
+## Webhookit {#webhooks}
 
 **Webhookit** antavat sinulle mahdollisuuden lähettää dataa toiselle sovellukselle. Hyödyllistä datan lähettämiseen Ultimate Multisite -alustalta palveluihin kuten Zapier.
 

@@ -1,133 +1,154 @@
 ---
-title: ဒိုမိန်ရောင်းသူ ပြောင်းလဲမှုမှတ်တမ်း
+title: ဒိုမိန်း ရောင်းချသူ ပြောင်းလဲမှုမှတ်တမ်း
 sidebar_position: 99
-_i18n_hash: bc3ab4e3f0076e80e8c38ed313f4430d
+_i18n_hash: 6b9be73c1503d8df8a806bb02b241873
 ---
-# Domain Seller Changelog
+# Domain Seller ပြောင်းလဲမှုမှတ်တမ်း {#domain-seller-changelog}
 
-Version 1.1.0 - 2026-05-08 တွင် ထုတ်ဝေသည်
-- New: ResellerClub, Enom, နဲ့ OpenSRS registrar တွေအတွက် DNS record အသစ်တွေ ဖန်တီးနိုင်အောင် (add_dns_record) လုပ်ပေးထားပါတယ်
-- Fix: Default DNS Records parser က {DOMAIN} နဲ့ {SITE_URL} tokens တွေကို အခုဆိုရင် သည်းခံနိုင်ပြီ
-- Fix: Domain ရွေးချယ်တဲ့ checkout field တွေရဲ့ slug တွေကို site_url နဲ့ မတူအောင် (collision မဖြစ်အောင်) နာမည်ပေးထားပါတယ်
+ဗားရှင်း 1.3.0 - 2026-06-02 တွင် ထုတ်ပြန်ခဲ့သည်
+- အသစ်: HostAfrica reseller balance အလွန်နည်းလာသောအခါ network-admin သတိပေးချက် ထည့်သွင်းခဲ့သည်
+- အသစ်: အသစ်မှတ်ပုံတင်ထားသော domain များကို network site သို့ အလိုအလျောက် mapping လုပ်ခြင်း ထည့်သွင်းခဲ့သည်
+- ပြင်ဆင်ချက်: domain အသစ်တစ်ခု မှတ်ပုံတင်သည့်အခါသာ registrant field လိုအပ်ချက်များကို အသုံးပြုခဲ့သည်
+- ပြင်ဆင်ချက်: monitor balance သတိပေးချက်များကို ပယ်ဖျက်နိုင်အောင် ပြုလုပ်ခဲ့သည်
+- ပြင်ဆင်ချက်: WooCommerce registrant billing အသေးစိတ်များကို ထိန်းသိမ်းထားကြောင်း သေချာစေခဲ့သည်
+- ပြင်ဆင်ချက်: မှတ်ပုံတင်စဉ် registrant contact လိုအပ်ချက်များကို အတည်ပြုလိုက်နာစေခဲ့သည်
+- ပြင်ဆင်ချက်: domain မှတ်ပုံတင်ခြင်း product များကို 0% markup ဖြင့် ဖန်တီးခြင်းမှ ကာကွယ်ခဲ့သည်
+- ပြင်ဆင်ချက်: checkout session flow တစ်လျှောက် domain ရွေးချယ်မှုများနှင့် ဈေးနှုန်းများကို ထိန်းသိမ်းခဲ့သည်
+- ပြင်ဆင်ချက်: HostAfrica domain ဈေးနှုန်း currency ပြသမှုကို ပိုမိုကောင်းမွန်စေခဲ့သည်
+- ပြင်ဆင်ချက်: WP-core query-var မကိုက်ညီမှုများကို ကာကွယ်ရန် checkout form-action အပြုအမူကို ပိုမိုကောင်းမွန်စေခဲ့သည်
+- ပိုမိုကောင်းမွန်စေခဲ့သည်: setup လမ်းညွှန်တွင် HostAfrica reseller configuration စာတမ်းလင့်ခ်ကို ထည့်သွင်းခဲ့သည်
 
-Version 1.0.8 - 2026-05-07 တွင် ထုတ်ဝေသည်
-- Fix: ResellerClub domain ရဲ့ ဈေးနှုန်းတွေဟာ မှန်ကန်တဲ့ API endpoint ကနေ လက်ရှိကုန်ကျစရိတ်တွေကို ယူလာပြီ
+ဗားရှင်း 1.2.0 - 2026-05-25 တွင် ထုတ်ပြန်ခဲ့သည်
+- အသစ်: checkout၊ setup wizard၊ lookup၊ TLD/ဈေးနှုန်း၊ မှတ်ပုံတင်ခြင်း၊ သက်တမ်းတိုးခြင်း၊ transfer၊ nameserver၊ DNS၊ EPP code၊ registrar lock နှင့် ID protection ပံ့ပိုးမှုများပါဝင်သော domain ရောင်းချရေး integration အဖြစ် HostAfrica ကို ထည့်သွင်းခဲ့သည်
+- အသစ်: reseller ဈေးနှုန်း၊ မှတ်ပုံတင်ခြင်း၊ သက်တမ်းတိုးခြင်း၊ transfer၊ nameserver၊ DNS၊ EPP code၊ registrar lock၊ WHOIS privacy နှင့် TLD sync ပံ့ပိုးမှုများပါဝင်သော domain ရောင်းချရေး integration အဖြစ် Openprovider ကို ထည့်သွင်းခဲ့သည်
+- အသစ်: availability စစ်ဆေးမှုများ၊ မှတ်ပုံတင်ခြင်း၊ nameserver အပ်ဒိတ်များ၊ registrar lock နှင့် WHOIS privacy အတွက် core integration မှ shared Hostinger API token ကို အသုံးပြုသော domain ရောင်းချရေး integration အဖြစ် Hostinger ကို ထည့်သွင်းခဲ့သည်
+- ပိုမိုကောင်းမွန်စေခဲ့သည်: developer integration လမ်းညွှန်အတွက် domain lifecycle action နှင့် filter docblocks များ ထည့်သွင်းခဲ့သည်
+- ပိုမိုကောင်းမွန်စေခဲ့သည်: addon readme တွင် plugin compatibility metadata ကို WordPress 7.0 သို့ အပ်ဒိတ်လုပ်ခဲ့သည်
+- ပိုမိုကောင်းမွန်စေခဲ့သည်: လာမည့် release ညှိနှိုင်းမှုအတွက် အသုံးပြုသော planning templates များကို အပ်ဒိတ်လုပ်ခဲ့သည်
 
-Version 1.0.7 - 2026-05-06 တွင် ထုတ်ဝေသည်
-* Fix: ResellerClub test_connection က လိုအပ်တဲ့ tlds parameter (#224) ကို ပို့ပေးပြီ
+ဗားရှင်း 1.1.0 - 2026-05-08 တွင် ထုတ်ပြန်ခဲ့သည်
+- အသစ်: ResellerClub၊ Enom နှင့် OpenSRS registrars များအတွက် DNS record ဖန်တီးခြင်း (add_dns_record) ကို အကောင်အထည်ဖော်ခဲ့သည်
+- ပြင်ဆင်ချက်: မူလ DNS Records parser သည် ယခု {DOMAIN} နှင့် {SITE_URL} tokens များကို လက်ခံနိုင်သည်
+- ပြင်ဆင်ချက်: site_url နှင့် တိုက်မိခြင်းကို ကာကွယ်ရန် domain selection checkout field slugs များကို namespaced လုပ်ခဲ့သည်
 
-Version 1.0.6 - 2026-05-05 တွင် ထုတ်ဝေသည်
-* Fix: ResellerClub domain မှတ်ပုံတင်မှုဟာ API response ကို ပိုကောင်းအောင် ကိုင်တွယ်နိုင်မှုနဲ့ registry-driven provider routing တို့နဲ့ အခုဆိုရင် မှန်ကန်စွာ အလုပ်လုပ်ပြီ
-* Fix: Register Domain admin page ရဲ့ အသုံးပြုရလွယ်ကူမှု (UX) ကို ပိုမိုကောင်းမွန်အောင် လုပ်ပေးထားပါတယ်
-* Removed: CyberPanel registrar integration ကို ဖယ်ရှားလိုက်ပါပြီ
+ဗားရှင်း 1.0.8 - 2026-05-07 တွင် ထုတ်ပြန်ခဲ့သည်
+- ပြင်ဆင်ချက်: ResellerClub domain ဈေးနှုန်းသည် ယခု မှန်ကန်သော API endpoint မှ live cost prices များကို ရယူသည်
 
-Version 1.0.5 - 2026-04-02 တွင် ထုတ်ဝေသည်
-* New: domain မှတ်ပုံတင်ခြင်းနဲ့ စီမံခန့်ခွဲမှုအတွက် GoDaddy registrar integration အသစ်ထည့်ပေးထားပါတယ်
-* New: NameSilo registrar integration အသစ်ထည့်ပေးထားပါတယ်
-* New: ResellerClub registrar integration အသစ်ထည့်ပေးထားပါတယ်
-* New: domain ဝယ်ယူပြီး domain mapping လုပ်တဲ့အခါ SES ပို့တဲ့ domain ကို အလိုအလျောက် စစ်ဆေးပေးခြင်း
-* Fix: test environment မှာ guard plugin constants တွေ ပြန်လည်သတ်မှတ်တာကို ကာကွယ်ပေးလိုက်ပါတယ်
-* Fix: MySQL flags တွေကို install-wp-tests.sh မှာ စကားလုံးခွဲတာကို မှန်ကန်စွာ လုပ်ပေးလိုက်ပါတယ်
+ဗားရှင်း 1.0.7 - 2026-05-06 တွင် ထုတ်ပြန်ခဲ့သည်
+* ပြင်ဆင်ချက်: ResellerClub test_connection သည် လိုအပ်သော tlds parameter ကို ပေးပို့သည် (#224)
 
-Version 1.0.4 - 2026-03-14 တွင် ထုတ်ဝေသည်
-* **Fix:** ပျောက်ဆုံးနေတဲ့ css assets အချို့ကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fix:** မရနိုင်တဲ့ tlds နဲ့ ပတ်သက်တဲ့ အမှားတွေကို ပြင်ဆင်ပေးထားပါတယ်
+ဗားရှင်း 1.0.6 - 2026-05-05 တွင် ထုတ်ပြန်ခဲ့သည်
+* ပြင်ဆင်ချက်: ပိုမိုကောင်းမွန်သော API response ကိုင်တွယ်မှုနှင့် registry-driven provider routing ဖြင့် ResellerClub domain မှတ်ပုံတင်ခြင်းသည် ယခု မှန်ကန်စွာ အလုပ်လုပ်သည်
+* ပြင်ဆင်ချက်: Register Domain admin page UX ပိုမိုကောင်းမွန်စေမှုများ
+* ဖယ်ရှားခဲ့သည်: CyberPanel registrar integration
 
-Version 1.0.3 - 2026-03-09 တွင် ထုတ်ဝေသည်
-* **Fix:** checkout shortcode နဲ့ legacy signup template ကို အသုံးပြုတဲ့အခါ Vue reactive property အမှားများ (domain_option, selected_domain, domain_provider) ကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fix:** domain ရွေးချယ်တဲ့ checkout field မှာ subdomain input field ရဲ့ နေရာမမှန်တာနဲ့ စာသားကြီးလွန်းတာတွေကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fix:** domain ရွေးချယ်တဲ့ field ရှိနေရင် "Your URL will be" preview block ကို ပုန်းခိုင်းလိုက်ပါတယ်
+ဗားရှင်း 1.0.5 - 2026-04-02 တွင် ထုတ်ပြန်ခဲ့သည်
+* အသစ်: domain မှတ်ပုံတင်ခြင်းနှင့် စီမံခန့်ခွဲမှုအတွက် GoDaddy registrar integration
+* အသစ်: NameSilo registrar integration
+* အသစ်: ResellerClub registrar integration
+* အသစ်: domain ဝယ်ယူမှုနှင့် mapping လုပ်ချိန်တွင် SES sending domain ကို အလိုအလျောက် verify လုပ်ခြင်း
+* ပြင်ဆင်ချက်: test environment တွင် plugin constants များကို ပြန်လည်သတ်မှတ်ခြင်းမှ ကာကွယ်ခဲ့သည်
+* ပြင်ဆင်ချက်: install-wp-tests.sh တွင် MySQL flags များကို မှန်ကန်စွာ word-split လုပ်ခဲ့သည်
 
-Version 1.0.2 - 2026-03-01 တွင် ထုတ်ဝေသည်
-* **Improved:** settings page ကနေ global markup settings တွေကို ဖယ်ရှားလိုက်ပါတယ် — ဈေးနှုန်းတွေဟာ အခုဆိုရင် product တစ်ခုချင်းစီအတွက်ပဲ ဖြစ်ပါတယ်
-* **Improved:** settings page မှာ "Manage Domain Products" link ကို ထပ်ထည့်ပေးလိုက်ပါတယ်၊ ဒါမှ အလွယ်တကူ သွားနိုင်မှာပါ
-* **Improved:** domain product settings တွေအတွက် field description တွေနဲ့ tooltips တွေ ပိုရှင်းလင်းသွားပါတယ် (catch-all vs TLD-specific, markup types, introductory pricing)
-* **Improved:** settings page တစ်ခုလုံးမှာ (search TLDs, renewals, DNS, notifications) ဖော်ပြချက်တွေကို ပိုကောင်းအောင် လုပ်ပေးထားပါတယ်
+ဗားရှင်း 1.0.4 - 2026-03-14 တွင် ထုတ်ပြန်ခဲ့သည်
+* **ပြင်ဆင်ချက်:** ပျောက်နေသော css assets အချို့
+* **ပြင်ဆင်ချက်:** မရရှိနိုင်သော tlds များနှင့် ဆက်စပ်သော အမှား
 
-Version 1.0.1 - 2026-02-27 တွင် ထုတ်ဝေသည်
+ဗားရှင်း 1.0.3 - 2026-03-09 တွင် ထုတ်ပြန်ခဲ့သည်
+* **ပြင်ဆင်ချက်:** checkout shortcode နှင့်အတူ legacy signup template ကို အသုံးပြုသောအခါ Vue reactive property အမှားများ (domain_option, selected_domain, domain_provider)
+* **ပြင်ဆင်ချက်:** domain selection checkout field တွင် subdomain input field မညီညာခြင်းနှင့် စာသားအရွယ်အစား ကြီးလွန်းခြင်း
+* **ပြင်ဆင်ချက်:** domain selection field ရှိနေသောအခါ "သင့် URL ဖြစ်မည်" preview block ကို ဖျောက်ထားခြင်း
 
-* **New:** bulk pricing စီမံခန့်ခွဲဖို့ TLD import tool အသစ်
-* **New:** domain products အတွက် introductory pricing ပံ့ပိုးမှုအသစ်
-* **New:** Cypress နဲ့ E2E test suite အသစ်
-* **New:** domain lifecycle notification အတွက် email templates အသစ်များ
-* **New:** admin domain registration modal မှာ registrant address fields တွေ ထည့်ပေးထားပါတယ်၊ ဒါတွေက settings ကနေ အလိုအလျောက် ဖြည့်ပေးမှာပါ
-* **New:** add, edit, နဲ့ delete record support ပါတဲ့ customer DNS management interface အသစ်
-* **New:** domain အလိုအလျောက် mapping လုပ်တဲ့ "Bring your own domain" checkout option အသစ်
-* **New:** checkout လုပ်တဲ့အချိန်မှာ domain name ကနေ site URL ကို အလိုအလျောက် ထုတ်ပေးခြင်း
-* **New:** settings မှာ default nameserver နဲ့ DNS record configuration အသစ်
-* **New:** core domain edit page မှာ domain registration details နဲ့ DNS management အသစ်
-* **New:** Setup wizard က အဓိပ္ပာယ်ရှိတဲ့ default တွေနဲ့ default domain product ကို အလိုအလျောက် ဖန်တီးပေးခြင်း
-* **New:** configured provider အားလုံးမှာ cron ကနေ နေ့စဉ် TLD sync အလိုအလျောက် လုပ်ပေးခြင်း
-* **New:** WHOIS privacy protection ကို product တစ်ခုချင်းစီအလိုက် စီမံခန့်ခွဲနိုင်ခြင်း (always on, customer choice, or disabled)
-* **New:** WHOIS privacy checkout checkbox နဲ့ ဈေးနှုန်းပြသမှု၊ dark mode support ပါဝင်ခြင်း
-* **New:** manual domain registration အတွက် Register Domain admin page အသစ်
-* **New:** Ultimate Multisite update server ကနေ plugin အဆင့်မြှင့်တင်မှုတွေကို အလိုအလျောက် လုပ်ပေးခြင်း
-* **New:** product list table မှာ domain product type filter tab နဲ့ purple badge styling ပါဝင်ခြင်း
-* **New:** domain checkout form မှာ registrant contact fields (name, address, city, state, postal code, country, phone) အသစ်
-* **New:** registrar API ကို ခေါ်မမီခင် registrant field validation လုပ်ပြီး ရှင်းလင်းတဲ့ error message တွေ ပြပေးခြင်း
-* **New:** domain registration events အတွက် provider-specific log channels များ (ဥပမာ- domain-seller-namecheap.log)
-* **New:** main registration/signup checkout form မှာ registrant contact fields (domain မှတ်ပုံတင်တဲ့အခါ ပြသသည်)
-* **Improved:** Domain Search checkout field ကို subdomain, register, နဲ့ existing domain tabs တွေကို ပံ့ပိုးပေးတဲ့ unified Domain Selection field နဲ့ အစားထိုးလိုက်ပါတယ်
-* **Improved:** Domain product settings တွေကို product edit page မှာ core widget system ကနေ inline အဖြစ် ပြသပေးနိုင်ပြီ
-* **Improved:** Customer domain info ကို standalone metabox အစား core domain mapping widget နဲ့ ချိတ်ဆက်ပေးလိုက်ပါတယ်
-* **Improved:** TLD import wizard ကို provider အားလုံးကနေ တစ်ချက်နှိပ်ရုံနဲ့ sync လုပ်နိုင်အောင် ရိုးရှင်းအောင် လုပ်ပေးလိုက်ပါတယ်
-* **Improved:** Namecheap domain availability က ပိုမြန်တဲ့ search အတွက် batch API call ကို အသုံးပြုလာပါတယ်
-* **Improved:** Namecheap pricing API က မှန်ကန်တဲ့ parameters နဲ့ response parsing ကို အသုံးပြုလာပါတယ်
-* **Improved:** TLD storage ကို single network option မှာ စုစည်းထားပါတယ်
-* **Improved:** DNS changes, transfers, နဲ့ config application အတွက် domain activity logging လုပ်ပေးနိုင်ပြီ
-* **Improved:** OpenSRS အတွက် IANA master list နဲ့ batch validation ကို အသုံးပြုပြီး TLD sync အပြည့်အဝ လုပ်ပေးနိုင်ပြီ
-* **Improved:** Namecheap အတွက် paginated API requests နဲ့ TLD sync အပြည့်အဝ လုပ်ပေးနိုင်ပြီ
-* **Improved:** legacy provider classes တွေကို Integration Registry pattern နဲ့ အစားထိုးလိုက်ပါတယ်
-* **Improved:** DNS နဲ့ transfer configuration ပါတဲ့ Settings panel အသစ်
-* **Improved:** ဖုန်းနံပါတ်တွေကို +CC.NNN registrar format အတိုင်း အလိုအလျောက် ပုံစံထုတ်ပေးပါတယ်
-* **Improved:** Phone field validation က submit မလုပ်ခင် format characters တွေကို ဖယ်ရှားပေးပါတယ်
-* **Improved:** Version requirement ကို Ultimate Multisite 2.4.12 ကို တိုးမြှင့်ပြီး ပိုရှင်းလင်းတဲ့ အသိပေးချက် ထည့်ပေးလိုက်ပါတယ်
-* **Improved:** CI workflow က addon နဲ့ core plugin နှစ်ခုစလုံးအတွက် proper checkout ကို အသုံးပြုပါတယ်
-* **Improved:** prepare_registrant_info() က checkout-saved user meta ကနေ ဖတ်ပြီး billing address ကို fallback အဖြစ် အသုံးပြုပါတယ်
-* **Fixed:** checkout လုပ်နေတဲ့ non-logged-in user တွေအတွက် Domain search AJAX မအောင်မြင်တာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** checkout လုပ်နေတဲ့ non-logged-in user တွေအတွက် Domain pricing AJAX မအောင်မြင်တာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** WP-CLI command တွေ run တဲ့အခါ Spyc class redeclaration fatal error ကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** Namecheap sandbox API timeout က အရမ်းတိုလွန်းတာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** Domain search Select button text ကို green background ပေါ်မှာ မမြင်ရတာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** contact info မရှိလို့ "RegistrantFirstName is Missing" error နဲ့ domain မှတ်ပုံတင်တာ မအောင်မြင်တာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** site မရှိသေးတဲ့အချိန်မှာ checkout လုပ်တဲ့အခါ domain record ကို blog_id=0 နဲ့ ဖန်တီးမိတာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Fixed:** Default TLDs setting ကို parsed array အစား string အနေနဲ့ ပြန်ပေးနေတာကို ပြင်ဆင်ပေးထားပါတယ်
-* **Removed:** Standalone Domain Management admin page ကို ဖယ်ရှားလိုက်ပါတယ် — အခုဆိုရင် core domain pages ကနေ စီမံခန့်ခွဲပေးမှာပါ
+ဗားရှင်း 1.0.2 - 2026-03-01 တွင် ထုတ်ပြန်ခဲ့သည်
+* **ပိုမိုကောင်းမွန်စေခဲ့သည်:** settings page မှ global markup settings များကို ဖယ်ရှားခဲ့သည် — ဈေးနှုန်းသည် ယခု product တစ်ခုချင်းစီအလိုက်သာ ဖြစ်သည်
+* **ပိုမိုကောင်းမွန်စေခဲ့သည်:** လျင်မြန်စွာ သွားလာနိုင်ရန် settings page တွင် "Domain Products များကို စီမံရန်" လင့်ခ် ထည့်သွင်းခဲ့သည်
+* **ပိုမိုကောင်းမွန်စေခဲ့သည်:** domain product settings များအတွက် field ဖော်ပြချက်များနှင့် tooltips များကို ပိုမိုရှင်းလင်းစေခဲ့သည် (catch-all နှင့် TLD-specific၊ markup အမျိုးအစားများ၊ introductory pricing)
+* **ပိုမိုကောင်းမွန်စေခဲ့သည်:** settings page တစ်လျှောက် ဖော်ပြချက်များ ပိုမိုကောင်းမွန်စေခဲ့သည် (TLDs ရှာဖွေခြင်း၊ သက်တမ်းတိုးခြင်းများ၊ DNS၊ အကြောင်းကြားချက်များ)
 
-Version 1.0.0 - 2025-09-28 တွင် ထုတ်ဝေသည်
+ဗားရှင်း 1.0.1 - 2026-02-27 တွင် ထုတ်ပြန်ခဲ့သည်
 
-**Ultimate Multisite v2 အတွက် အကြီးအကျယ် ပြန်လည်ရေးသားခြင်း**
+* **အသစ်:** အစုလိုက် စျေးနှုန်း စီမံခန့်ခွဲရန် TLD ထည့်သွင်းကိရိယာ
+* **အသစ်:** ဒိုမိန်း ထုတ်ကုန်များအတွက် မိတ်ဆက်ကာလ စျေးနှုန်း ပံ့ပိုးမှု
+* **အသစ်:** Cypress ဖြင့် E2E စမ်းသပ်မှုစု
+* **အသစ်:** ဒိုမိန်း သက်တမ်းစက်ဝန်း အသိပေးချက်များအတွက် အီးမေးလ် နမူနာပုံစံများ
+* **အသစ်:** အက်ဒမင် ဒိုမိန်း မှတ်ပုံတင် modal တွင် စာရင်းသွင်းသူ လိပ်စာ အကွက်များ၊ ဆက်တင်များမှ ကြိုတင်ဖြည့်ထားသည်
+* **အသစ်:** မှတ်တမ်း ထည့်ခြင်း၊ ပြင်ခြင်း၊ ဖျက်ခြင်း ပံ့ပိုးမှုပါသော ဖောက်သည် DNS စီမံခန့်ခွဲမှု မျက်နှာပြင်
+* **အသစ်:** အလိုအလျောက် ဒိုမိန်း mapping ပါသော "ကိုယ်ပိုင် ဒိုမိန်း ယူလာပါ" ငွေပေးချေမှု ရွေးချယ်စရာ
+* **အသစ်:** ငွေပေးချေချိန်တွင် ဒိုမိန်းအမည်မှ ဆိုက် URL ကို အလိုအလျောက် ထုတ်လုပ်ခြင်း
+* **အသစ်:** ဆက်တင်များတွင် မူလ nameserver နှင့် DNS မှတ်တမ်း ဖွဲ့စည်းမှု
+* **အသစ်:** အဓိက ဒိုမိန်း ပြင်ဆင်ရေး စာမျက်နှာတွင် ဒိုမိန်း မှတ်ပုံတင် အသေးစိတ်များနှင့် DNS စီမံခန့်ခွဲမှု
+* **အသစ်:** Setup wizard သည် သင့်လျော်သော မူလတန်ဖိုးများပါသော မူလ ဒိုမိန်း ထုတ်ကုန်တစ်ခုကို အလိုအလျောက် ဖန်တီးသည်
+* **အသစ်:** သတ်မှတ်ထားသော provider အားလုံးတွင် cron မှတစ်ဆင့် နေ့စဉ် အလိုအလျောက် TLD sync
+* **အသစ်:** ထုတ်ကုန်အလိုက် ဖွဲ့စည်းမှုပါသော WHOIS ကိုယ်ရေးလုံခြုံရေး ကာကွယ်မှု (အမြဲဖွင့်၊ ဖောက်သည် ရွေးချယ်မှု၊ သို့မဟုတ် ပိတ်ထား)
+* **အသစ်:** စျေးနှုန်း ပြသမှုနှင့် dark mode ပံ့ပိုးမှုပါသော WHOIS ကိုယ်ရေးလုံခြုံရေး ငွေပေးချေမှု checkbox
+* **အသစ်:** လက်ဖြင့် ဒိုမိန်း မှတ်ပုံတင်ရန် Register Domain အက်ဒမင် စာမျက်နှာ
+* **အသစ်:** Ultimate Multisite update server မှတစ်ဆင့် အလိုအလျောက် ပလပ်အင် အပ်ဒိတ်များ
+* **အသစ်:** ခရမ်းရောင် badge စတိုင်ပါသော ထုတ်ကုန်စာရင်း ဇယားရှိ ဒိုမိန်း ထုတ်ကုန် အမျိုးအစား filter tab
+* **အသစ်:** ဒိုမိန်း ငွေပေးချေမှု ဖောင်တွင် စာရင်းသွင်းသူ ဆက်သွယ်ရန် အကွက်များ (အမည်၊ လိပ်စာ၊ မြို့၊ ပြည်နယ်၊ စာပို့ကုဒ်၊ နိုင်ငံ၊ ဖုန်း)
+* **အသစ်:** registrar API ကို မခေါ်မီ ရှင်းလင်းသော အမှားစာများဖြင့် စာရင်းသွင်းသူ အကွက် စစ်ဆေးမှု
+* **အသစ်:** ဒိုမိန်း မှတ်ပုံတင် ဖြစ်ရပ်များအတွက် provider-သီးသန့် မှတ်တမ်း channel များ (ဥပမာ domain-seller-namecheap.log)
+* **အသစ်:** အဓိက မှတ်ပုံတင်ခြင်း/စာရင်းသွင်းခြင်း ငွေပေးချေမှု ဖောင်တွင် စာရင်းသွင်းသူ ဆက်သွယ်ရန် အကွက်များ (ဒိုမိန်း မှတ်ပုံတင်သည့်အခါ ပြသည်)
+* **တိုးတက်:** Domain Search ငွေပေးချေမှု အကွက်ကို subdomain၊ မှတ်ပုံတင်ရန်နှင့် ရှိပြီးသား ဒိုမိန်း tab များ ပံ့ပိုးသော ပေါင်းစည်းထားသည့် Domain Selection အကွက်ဖြင့် အစားထိုးခဲ့သည်
+* **တိုးတက်:** အဓိက widget စနစ်မှတစ်ဆင့် ထုတ်ကုန်ပြင်ဆင်ရေး စာမျက်နှာတွင် ဒိုမိန်း ထုတ်ကုန် ဆက်တင်များကို တိုက်ရိုက် ပြသသည်
+* **တိုးတက်:** ဖောက်သည် ဒိုမိန်း အချက်အလက်ကို သီးခြား metabox အစား အဓိက ဒိုမိန်း mapping widget ထဲသို့ ချိတ်ဆက်ထားသည်
+* **တိုးတက်:** TLD ထည့်သွင်း wizard ကို provider အားလုံးမှ တစ်ချက်နှိပ် sync အဖြစ် ရိုးရှင်းစေခဲ့သည်
+* **တိုးတက်:** ပိုမြန်သော ရှာဖွေမှုအတွက် Namecheap ဒိုမိန်း ရရှိနိုင်မှုသည် batch API call ကို အသုံးပြုသည်
+* **တိုးတက်:** Namecheap စျေးနှုန်း API သည် မှန်ကန်သော parameter များနှင့် response parsing ကို အသုံးပြုသည်
+* **တိုးတက်:** TLD သိမ်းဆည်းမှုကို network option တစ်ခုတည်းတွင် ဗဟိုပြုထားသည်
+* **တိုးတက်:** DNS ပြောင်းလဲမှုများ၊ လွှဲပြောင်းမှုများနှင့် config အသုံးချမှုအတွက် ဒိုမိန်း လုပ်ဆောင်ချက် မှတ်တမ်းတင်ခြင်း
+* **တိုးတက်:** batch validation ပါသော IANA master list ကို အသုံးပြု၍ OpenSRS အတွက် TLD sync အပြည့်အစုံ
+* **တိုးတက်:** paginated API request များဖြင့် Namecheap အတွက် TLD sync အပြည့်အစုံ
+* **တိုးတက်:** legacy provider class များကို Integration Registry pattern ဖြင့် အစားထိုးခဲ့သည်
+* **တိုးတက်:** DNS နှင့် လွှဲပြောင်းမှု ဖွဲ့စည်းမှုပါသော ဆက်တင် panel
+* **တိုးတက်:** ဖုန်းနံပါတ်များကို +CC.NNN registrar format သို့ အလိုအလျောက် ပုံစံပြောင်းသည်
+* **တိုးတက်:** ဖုန်းအကွက် စစ်ဆေးမှုသည် တင်သွင်းမှု မလုပ်မီ ပုံစံချထားသော စာလုံးများကို ဖယ်ရှားသည်
+* **တိုးတက်:** ဗားရှင်း လိုအပ်ချက်ကို ပိုရှင်းသော အသိပေးချက်ဖြင့် Ultimate Multisite 2.4.12 သို့ မြှင့်တင်ထားသည်
+* **တိုးတက်:** CI workflow သည် addon နှင့် အဓိက ပလပ်အင် နှစ်ခုလုံးအတွက် သင့်လျော်သော checkout ကို အသုံးပြုသည်
+* **တိုးတက်:** prepare_registrant_info() သည် billing address fallback ဖြင့် checkout တွင် သိမ်းထားသော user meta မှ ဖတ်သည်
+* **ပြင်ဆင်:** ငွေပေးချေချိန်တွင် login မဝင်ထားသော အသုံးပြုသူများအတွက် ဒိုမိန်း ရှာဖွေမှု AJAX မအောင်မြင်ခြင်း
+* **ပြင်ဆင်:** ငွေပေးချေချိန်တွင် login မဝင်ထားသော အသုံးပြုသူများအတွက် ဒိုမိန်း စျေးနှုန်း AJAX မအောင်မြင်ခြင်း
+* **ပြင်ဆင်:** WP-CLI command များ run သောအခါ Spyc class ပြန်လည်ကြေညာမှု fatal error
+* **ပြင်ဆင်:** Namecheap sandbox API timeout တိုလွန်းခြင်း
+* **ပြင်ဆင်:** ဒိုမိန်း ရှာဖွေမှု Select ခလုတ်စာသားသည် အစိမ်းရောင် နောက်ခံပေါ်တွင် မမြင်ရခြင်း
+* **ပြင်ဆင်:** ဆက်သွယ်ရန် အချက်အလက် မရှိသောကြောင့် "RegistrantFirstName ပျောက်နေသည်" အမှားဖြင့် ဒိုမိန်း မှတ်ပုံတင်မှု မအောင်မြင်ခြင်း
+* **ပြင်ဆင်:** ငွေပေးချေချိန်တွင် ဆိုက် မရှိသေးသောအခါ ဒိုမိန်း မှတ်တမ်းကို blog_id=0 ဖြင့် ဖန်တီးခဲ့ခြင်း
+* **ပြင်ဆင်:** မူလ TLD များ ဆက်တင်သည် parsed array အစား string အဖြစ် ပြန်လာခြင်း
+* **ဖယ်ရှား:** သီးခြား Domain Management အက်ဒမင် စာမျက်နှာ — ယခု အဓိက ဒိုမိန်း စာမျက်နှာများမှတစ်ဆင့် ကိုင်တွယ်သည်
 
-* **New:** ခေတ်မီ PHP 7.4+ architecture နဲ့ အလုံးစုံ ပြန်လည်ရေးသားထားပါတယ်
-* **New:** Ultimate Multisite v2 checkout system နဲ့ ချောမွေ့စွာ ပေါင်းစပ်ထားပါတယ်
-* **New:** ဈေးနှုန်းရွေးချယ်မှုများနဲ့ domain product စီမံခန့်ခွဲမှုအသစ်
-* **New:** domain provider အမျိုးမျိုးကို ပံ့ပိုးပေးနိုင်တဲ့ architecture အသစ်
-* **New:** အလိုအလျောက် သက်တမ်းတိုးခြင်းနဲ့ subscription ပေါင်းစပ်မှုအသစ်
-* **New:** Customer domain management interface အသစ်
-* **New:** Admin domain monitoring နဲ့ logs အသစ်
-* **New:** domain products အတွက် Coupon support အသစ်
-* **New:** comprehensive settings management အသစ်
-* **New:** developer-friendly extensible codebase အသစ်
-* **Improved:** OpenSRS provider ကို full feature support နဲ့ အဆင့်မြှင့်တင်ပေးထားပါတယ်
-* **Improved:** Ultimate Multisite v2 နဲ့ ကိုက်ညီတဲ့ ခေတ်မီ UI ကို အသုံးပြုထားပါတယ်
-* **Fixed:** အဟောင်းဖြစ်တဲ့ v1 code အားလုံးကို v2 စံနှုန်းတွေနဲ့ အဆင့်မြှင့်ပေးထားပါတယ်
-* **Removed:** Legacy v1 compatibility (breaking change) ကို ဖယ်ရှားလိုက်ပါတယ်
+ဗားရှင်း 1.0.0 - 2025-09-28 တွင် ထုတ်ပြန်ခဲ့သည်
 
-### Previous Versions (v1 Legacy)
+**Ultimate Multisite v2 အတွက် အကြီးစား ပြန်လည်ရေးသားမှု**
 
-### Version 0.0.3 - 20/08/2019
+* **အသစ်:** ခေတ်မီ PHP 7.4+ architecture ဖြင့် အပြည့်အစုံ ပြန်လည်ရေးသားမှု
+* **အသစ်:** Ultimate Multisite v2 ငွေပေးချေမှု စနစ်နှင့် ချောမွေ့စွာ ပေါင်းစည်းမှု
+* **အသစ်:** လိုက်လျောညီထွေသော စျေးနှုန်း ရွေးချယ်စရာများပါသော ဒိုမိန်း ထုတ်ကုန် စီမံခန့်ခွဲမှု
+* **အသစ်:** ဒိုမိန်း provider အများအပြား ပံ့ပိုးနိုင်သော architecture
+* **အသစ်:** အလိုအလျောက် သက်တမ်းတိုးခြင်းနှင့် subscription ပေါင်းစည်းမှု
+* **အသစ်:** ဖောက်သည် ဒိုမိန်း စီမံခန့်ခွဲမှု မျက်နှာပြင်
+* **အသစ်:** အက်ဒမင် ဒိုမိန်း စောင့်ကြည့်မှုနှင့် မှတ်တမ်းများ
+* **အသစ်:** ဒိုမိန်း ထုတ်ကုန်များအတွက် coupon ပံ့ပိုးမှု
+* **အသစ်:** ပြည့်စုံသော ဆက်တင် စီမံခန့်ခွဲမှု
+* **အသစ်:** developer အတွက် အဆင်ပြေပြီး တိုးချဲ့နိုင်သော codebase
+* **တိုးတက်:** လုပ်ဆောင်ချက် ပံ့ပိုးမှု အပြည့်အစုံပါသော OpenSRS provider ကို အပ်ဒိတ်လုပ်ထားသည်
+* **တိုးတက်:** Ultimate Multisite v2 နှင့် ကိုက်ညီသော ခေတ်မီ UI
+* **ပြင်ဆင်:** deprecated v1 code အားလုံးကို v2 စံနှုန်းများသို့ အပ်ဒိတ်လုပ်ထားသည်
+* **ဖယ်ရှား:** legacy v1 compatibility (breaking change)
 
-* Fixed: Groundhogg CRM နဲ့ မကိုက်ညီမှုတွေကို ပြင်ဆင်ပေးထားပါတယ်
-* Note: ဒါဟာ v1 နဲ့ ကိုက်ညီတဲ့ နောက်ဆုံးထုတ်ဝေမှု ဖြစ်ပါတယ်
+### ယခင် ဗားရှင်းများ (v1 Legacy) {#previous-versions-v1-legacy}
 
-### Version 0.0.2 - 07/12/2018
+### ဗားရှင်း 0.0.3 - 20/08/2019 {#version-003---20082019}
 
-* Fixed: License Key field ကို ဖယ်ရှားလိုက်ပါတယ်
-* Fixed: feature plugin ကို အသုံးပြုတဲ့အခါ Plan tabs တွေ ပျောက်နေတာကို ပြင်ဆင်ပေးထားပါတယ်
-* Improved: registration field ပေါ်မှာ skip button တစ်ခု ထပ်ထည့်ပေးလိုက်ပါတယ်
+* ပြင်ဆင်: Groundhogg CRM နှင့် မကိုက်ညီမှု
+* မှတ်ချက်: ၎င်းသည် v1 နှင့် ကိုက်ညီသော နောက်ဆုံး ထုတ်ပြန်မှု ဖြစ်ခဲ့သည်
 
-### Version 0.0.1 - Initial Release
+### ဗားရှင်း 0.0.2 - 07/12/2018 {#version-002---07122018}
 
-* WP Ultimo v1 အတွက် basic OpenSRS integration
-* ရိုးရှင်းတဲ့ domain search နဲ့ မှတ်ပုံတင်မှု
-* Plan အခြေခံ domain ခွင့်ပြုချက်များ
+* ပြင်ဆင်: License Key အကွက်ကို ဖယ်ရှားခဲ့သည်
+* ပြင်ဆင်: feature ပလပ်အင် active ဖြစ်နေသည့်အခါ plan tab များ ပျောက်နေခြင်း
+* တိုးတက်: မှတ်ပုံတင် အကွက်တွင် ကျော်ရန် ခလုတ် ထည့်ခဲ့သည်
+
+### ဗားရှင်း 0.0.1 - ကနဦး ထုတ်ပြန်မှု {#version-001---initial-release}
+
+* WP Ultimo v1 အတွက် အခြေခံ OpenSRS ပေါင်းစည်းမှု
+* ရိုးရှင်းသော ဒိုမိန်း ရှာဖွေမှုနှင့် မှတ်ပုံတင်မှု
+* plan အခြေပြု ဒိုမိန်း ခွင့်ပြုချက်များ

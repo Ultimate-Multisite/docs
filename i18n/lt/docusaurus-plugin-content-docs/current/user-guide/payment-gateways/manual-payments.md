@@ -1,45 +1,46 @@
 ---
-title: Manulinių mokėjimų nustatymas
+title: Rankinių mokėjimų nustatymas
 sidebar_position: 20
-_i18n_hash: cc6364919e001b3e1c8a9de72dab4f76
+_i18n_hash: 98210a45c3d3af7368f60d7593235163
 ---
-# Manuelios atsiuntimas (v2)
+# Rankinių mokėjimų nustatymas (v2) {#setting-up-manual-payments-v2}
 
-_**SVARINGU NUOTRAVIMAS: Šis straipsnis taikomas Ultimate Multisite versijai 2.x.**_
+_**SVARBI PASTABA: Šis straipsnis skirtas Ultimate Multisite 2.x versijai.**_
 
-Manualios atsiuntimai yra būdas pasiūlyti kitus mokėjimo būdus, jei jūsų vartotojams nėra įrengta **Stripe** ar **PayPal**. Tai gali būti bankinis arba wire transfer arba bet kokis kitas mokėjimo būdas, kuris yra jūsų vartotojams lokaliai.
+Rankiniai mokėjimai yra būdas pasiūlyti kitus mokėjimo metodus, jei **Stripe** arba **PayPal** nėra prieinami jūsų naudotojams. Tai gali būti pavedimas, banko pervedimas ar bet koks kitas mokėjimo metodas, vietiškai prieinamas jūsų naudotojams.
 
-## Kaip įjungti manualius atsiuntimus
+## Kaip įjungti rankinius mokėjimus {#how-to-enable-manual-payments}
 
-Manualio atsiuntimo nustatymas yra labai lengras. Jums reikalinga tik ją įjungti pavadinimu "Payment Gateways" ir pateikti detalius instrukcijas, kaip vartotojas turi išsiųsti mokėjimą.
+Nustatyti rankinį mokėjimą labai paprasta. Jums tereikia jį įjungti mokėjimo sąsajose ir įrašyti išsamias instrukcijas, kaip naudotojas turėtų atsiųsti mokėjimą.
 
-1. Eikite į **Ultimate Multisite > Settings > Payments**. Poje **Payment Gateways** paleiskite **Manual**. Prieš jums pasirodys **Payment Instructions** laukelis.
-2. Įdėkite į šį laukelį informaciją, kurią jūsų klientui reikės mokėti. Tai gali būti jūsų banko dešiantų duomenys ir jūsų el. pašto adresas, kad vartotojas galėtų siųsti jums mokėjimo patvirtinimo, pavyzdžiui.
+Pirmiausia eikite į **Ultimate Multisite > Nustatymai > Mokėjimai**. Po **Mokėjimo sąsajos** įjunkite **Rankinis**. Pamatysite, kad jums atsiras **Mokėjimo instrukcijos** laukelis.
 
-![Manual payment gateway toggle with Payment Instructions text area](/img/config/manual-gateway-expanded.png)
+Į šį laukelį įrašykite informaciją, kurios jūsų klientui reikės mokėjimui atlikti. Pavyzdžiui, tai gali būti jūsų banko sąskaitos duomenys ir jūsų el. paštas, kad klientas galėtų atsiųsti jums mokėjimo patvirtinimą.
 
-Štai interfeis manualių gateway nustatymų:
+![Rankinio mokėjimo sąsajos perjungiklis su Mokėjimo instrukcijų teksto sritimi](/img/config/manual-gateway-expanded.png)
 
-![Manual gateway settings](/img/config/manual-gateway-settings.png)
+Štai rankinės sąsajos nustatymų sąsaja:
 
-Nustatymas po įdėjimo atlikite vieną veiksmą **Save Settings**, ir tai padarytas. Kai vartotojai registruojasi jūsų tinkluose, jie pamatys pranešimą, kad gautų jūsų instrukcijas, kaip užbaigti pirkimą.
+![Rankinės sąsajos nustatymai](/img/config/manual-gateway-settings.png)
 
-![Registration confirmation message telling the user they will receive payment instructions](/img/frontend/registration-manual-notice.png)
+Viską nustatę, tiesiog spustelėkite **Išsaugoti nustatymus** ir viskas bus atlikta. Kai naudotojai registruosis jūsų tinkle, jie matys pranešimą, informuojantį, kad gaus jūsų instrukcijas pirkimui užbaigti.
 
-Jie gaus ir pranešimą ir jūsų **Thank You** puslapyje su jūsų mokėjimo instrukcijos.
+![Registracijos patvirtinimo pranešimas, informuojantis naudotoją, kad jis gaus mokėjimo instrukcijas](/img/frontend/registration-manual-notice.png)
 
-<!-- Screenshot unavailable: Thank You page showing payment instructions after checkout -->
+Jie taip pat gaus pranešimą jūsų **Ačiū** puslapyje su jūsų mokėjimo instrukcijomis.
 
-## Manualių atsiuntimų patvirtinimas
+<!-- Ekrano kopija nepasiekiama: Ačiū puslapis, kuriame po atsiskaitymo rodomos mokėjimo instrukcijos -->
 
-Manulines mokėjimą patvirtinti, eikite į **Payments** meniu kairėje skelbimose. Ten jūs pakaite visus savo tinklo mokėjimų ir jų detales, įskaitant jų **statusą**. Manulinis mokėjimas bus laikytis **Pending** statuso kol jį manuliniu būdu nepasirinksite.
+## Rankinių mokėjimų patvirtinimas {#confirming-manual-payments}
 
-![Payments list showing pending manual payment](/img/admin/payments-list.png)
+Norėdami patvirtinti rankinį mokėjimą, eikite į **Mokėjimai** meniu kairėje juostoje. Ten galite matyti visus savo tinklo mokėjimus ir jų duomenis, įskaitant jų **būseną**. Rankinis mokėjimas visada turės **Laukiama** būseną, kol ją pakeisite rankiniu būdu.
 
-Įveskite mokėjimų puslapį paspaudę **referencijos kodą**. Šiame puslapyje turite visus detales apie laisvą mokėjimą, tokias kaip referencijos ID, produktai, laiko žymokai ir daugiau.
+![Mokėjimų sąrašas, kuriame rodomas laukiantis rankinis mokėjimas](/img/admin/payments-list.png)
 
-![Payment details page showing reference code, products, and totals](/img/admin/payment-edit.png)
+Į mokėjimo puslapį pateksite spustelėję **nuorodos kodą**. Šiame puslapyje pateikiama visa laukiančio mokėjimo informacija, pvz., nuorodos ID, produktai, laiko žymos ir daugiau.
 
-Dešinėje kolono galite pakeisti mokėjimo statusą. Pakeisdami jį į **Completed** ir paleidžiu „Activate Membership“ (Aktyvuoti nuskaitą), pateiksite savo klientų svetainę, o jų nuskaita bus aktyvi.
+![Mokėjimo informacijos puslapis, kuriame rodomas nuorodos kodas, produktai ir sumos](/img/admin/payment-edit.png)
 
-![Payment edit page with Status set to Completed and Activate Membership toggle](/img/admin/payment-activate-membership.png)
+Dešiniajame stulpelyje galite pakeisti mokėjimo būseną. Pakeitus ją į **Užbaigta** ir **įjungus Aktyvuoti narystę** parinktį, jūsų kliento svetainė bus įjungta, o jo narystė taps aktyvi.
+
+![Mokėjimo redagavimo puslapis, kuriame būsena nustatyta į Užbaigta ir įjungtas Aktyvuoti narystę perjungiklis](/img/admin/payment-activate-membership.png)

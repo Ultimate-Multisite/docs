@@ -3,13 +3,13 @@ title: Għal-downgrading ta plan
 sidebar_position: 7
 _i18n_hash: ce49309d1cd1d8310fd360fa324119f3
 ---
-# Downgrading a plan (v2)
+# Downgrading a plan (v2) {#downgrading-a-plan-v2}
 
 _**NOTA IMPORTANTI: Questo articolo si riferisce alla versione 2.x di Ultimate Multisite.**_
 
 Downgradare un piano o un abbonamento è un'azione comune che i vostri clienti potrebbero fare se hanno un budget limitato o se hanno deciso che non avranno bisogno di molte risorse per far funzionare il loro subsite.
 
-## Come abbassare il piano (downgrade)
+## Come abbassare il piano (downgrade) {#how-to-downgrade-a-plan}
 
 I vostri clienti possono abbassare il loro piano in qualsiasi momento effettuando il login al dashboard di amministrazione del loro subsite e cliccando su **Change** (Cambia) sotto la pagina del loro account.
 
@@ -25,7 +25,7 @@ Per procedere l'utente deve solo cliccare sul pulsante **Complete Checkout** (Co
 
 ![Pagina dell'account che mostra il banner del cambiamento in sospeso della membership](/img/account-page/pending-change.png)
 
-### Cosa succede quando un utente abbassa il suo piano
+### Cosa succede quando un utente abbassa il suo piano {#what-happens-when-a-user-downgrades-their-plan}
 
 È importante notare che abbassare il piano non modifica la configurazione esistente nel subsite dell'utente.
 
@@ -37,7 +37,7 @@ B'mod kif ma jkun posts (artikoli) ewimin mill-limit impost fuq il-plan, għande
 
 ![Network Admin Settings Sites page showing post-limit-exceeded behaviour options](/img/account-page/settings-sites-post-limit.png)
 
-### X'għad se jkun l-pagament
+### X'għad se jkun l-pagament {#what-happens-to-the-payment}
 
 F'versjoni 2.0, ma għandu jaħtieġx xi aġustamenti fuq il-pagament dwar il proration (parti tal-ciclu),
 

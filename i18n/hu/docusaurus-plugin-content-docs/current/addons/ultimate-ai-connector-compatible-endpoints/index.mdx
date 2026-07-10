@@ -7,11 +7,11 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-connector-compatible-endpoints" name="Ultimate AI Connector for Compatible Endpoints" />
 
-# Ultimate AI Connector Compatible Endpontokhoz
+# Ultimate AI Connector Compatible Endpontokhoz {#ultimate-ai-connector-for-compatible-endpoints}
 
 Az Ultimate AI Connector Compatible Endpontokhoz integrálja az OpenAI-kompatibilis AI szolgáltató API-endpointjeit a WordPress multisite hálózatába. Konfigurálhat több AI szolgáltatót is — mindegyiknek saját endpoint URL-je, API kulcsa és alapértelmezett modellje van — és automatikus fallback (visszaesítés) mechanizmussal irányítja a kéréseket, ha egy szolgáltató elérhetetlen.
 
-## Főbb funkciók
+## Főbb funkciók {#key-features}
 
 - **Multi-provider támogatás**: Ad hozzá több AI szolgáltató kártyáját is, mindegyik saját endpoint URL-jával, API kulcsaival és alapértelmezett modelljével.
 - **Húzással újrarendelhető**: A szolgáltatókat a kártyán lévő fogantyú segítségével sorrendben rendezheti; a kérések a szolgáltatókat a sorrendben használják.
@@ -21,26 +21,26 @@ Az Ultimate AI Connector Compatible Endpontokhoz integrálja az OpenAI-kompatibi
 - **Automatikus kibővítés hozzáadáskor**: Az új szolgáltató kártyák automatikusan kibővülnek, így azonnal kitölthetők a részletek.
 - **Script cache busting**: A szolgáltató scriptjeit frissítéssel (plugin update) cache-bustolják, hogy biztosítsák, hogy a legfrissebb verzió töltődjön be.
 
-## Feltételek
+## Feltételek {#requirements}
 
 - WordPress 5.3 vagy magasabb
 - PHP 7.4 vagy magasabb
 - Ultimate Multisite plugin (aktív)
 - Egy OpenAI-kompatibilis API endpoint (önként üzemeltetett vagy harmadik fél által biztosított)
 
-## Telepítés
+## Telepítés {#installation}
 
 1. Töltse fel az addon fájlokat a `/wp-content/plugins/` könyvtárába.
 2. Aktiválja a plugin-t a WordPress 'Plugins' menüpontján keresztül.
 3. Navigáljon az **Ultimate Multisite → AI Connector** menüpontra a konfigurációhoz.
 
-## Konfiguráció
+## Konfiguráció {#configuration}
 
-### Multi-Provider Beállítás
+### Multi-Provider Beállítás {#multi-provider-setup}
 
 A konfigurációs képernyő kártyán alapuló elrendezést használ, ahol minden kártya egy AI szolgáltatót képvisel. Annyi szolgáltatót ad hozzá, amennyit szüksége.
 
-#### Szolgáltató hozzáadása
+#### Szolgáltató hozzáadása {#adding-a-provider}
 
 1. Navigáljon az **Ultimate Multisite → AI Connector** menüpontra a hálózat admin felületén.
 2. Kattintson az **Add Provider** gombra.
@@ -52,15 +52,15 @@ A konfigurációs képernyő kártyán alapuló elrendezést használ, ahol mind
    - **Default Model** — a modell azonosító, amelyet alapértelmezésként kell használni ehhez a szolgáltatóhoz (pl. `gpt-4o`, `mistral-small`).
 5. Kattintson a **Save Settings** gombra.
 
-#### Szolgáltató eltávolítása
+#### Szolgáltató eltávolítása {#removing-a-provider}
 
 Kattintson az **Remove** gombra bármely szolgáltató kártyáján, hogy törölje. Mentse el a beállításokat, hogy alkalmazza a változást.
 
-#### Szolgáltatók újrarendelése
+#### Szolgáltatók újrarendelése {#reordering-providers}
 
 Húzza el a fogantyú ikonot (⣿) bármely szolgáltató kártyájának bal oldaláról, hogy újrarendelje. A sorrend határozza meg a fallback prioritását: a kéréseket az első szolgáltatóhoz küldik, és ha a kérés sikertelen, a következő szolgáltatókra fallback-ot biztosít.
 
-### Fallback (Visszaesítés) Irányítása
+### Fallback (Visszaesítés) Irányítása {#fallback-routing}
 
 Ha a kérés sikertelen a primary (elsődleges) szolgáltatóhoz — például időtúllépés, rate limit vagy szolgáltatás kiesés miatt — a connector automatikusan megpróbálja újra a lista következő szolgáltatójával. Ez a folyamat a listán végig halad, amíg egy szolgáltató sikeres választ ad, vagy amíg minden szolgáltatót megpróbáltak.
 
@@ -72,7 +72,7 @@ Ha a kérés sikertelen a primary (elsődleges) szolgáltatóhoz — például i
 
 A fallback átlátszó a hívó plugin vagy témája számára — függetlenül attól, hogy hány szolgáltatót próbáltak ki, sikeres választ vagy végleges hibaüzenetet kapnak.
 
-### Szolgáltató Konfigurációs Referencia
+### Szolgáltató Konfigurációs Referencia {#provider-configuration-reference}
 
 | Field | Required | Description |
 |-------|----------|-------------|
@@ -81,9 +81,9 @@ A fallback átlátszó a hívó plugin vagy témája számára — függetlenül
 | API Key | Yes | Hitelesítő kulcs ehhez a szolgáltatóhoz |
 | Default Model | Yes | A modell azonosító, amelyet használatban lennak, ha a kérésben nincs megadva modell |
 
-## Hibaelhárítás
+## Hibaelhárítás {#troubleshooting}
 
-### Nincs listázott szolgáltató
+### Nincs listázott szolgáltató {#no-providers-are-listed}
 
 Ha az adatok mentése után üres a szolgáltatólista, kérjük, ellenőrizze, hogy:
 
@@ -91,21 +91,21 @@ Ha az adatok mentése után üres a szolgáltatólista, kérjük, ellenőrizze, 
 - Nem blokkolta a böngészője a beállítások mentését (nézze meg a böngésző konzolját JavaScript hibaüzenetek után).
 - Aktív a plugin, és a hálózat admin felületén van.
 
-### A kérések minden szolgáltatóhoz sikertelenek
+### A kérések minden szolgáltatóhoz sikertelenek {#requests-are-failing-for-all-providers}
 
 - Ellenőrizze, hogy minden szolgáltató endpoint URL-je elérhető-e a szerveréről (nem csak a böngészőjéből).
 - Nézze át, hogy minden API kulcs érvényes és nem lejárt.
 - Vizsgálja meg a szolgáltató rate-limit és kvóta státuszát a dashboard-jában.
 - Aktiválja a WordPress debug logging-ot (`WP_DEBUG_LOG`) a részletes hibaüzenetek rögzítéséhez a connector-től.
 
-### Egy szolgáltatót nem használják fallback-hoz
+### Egy szolgáltatót nem használják fallback-hoz {#a-provider-is-not-being-used-for-fallback}
 
 A húzással újrarendelése megváltoztatja a fallback sorrendet. Kérjük, erősítse meg, hogy a fallback kéréseket váró szolgáltató megfelelően pozícionált a listában, és hogy az endpoint URL-je és API kulcsa helyes.
 
-### Az új szolgáltató kártyája nem bővül automatikusan
+### Az új szolgáltató kártyája nem bővül automatikusan {#new-provider-card-does-not-expand-automatically}
 
 Az auto-expand funkció JavaScript elindítását igényel a böngészőjében. Ha a kártya nem bővül kattintással, ellenőrizze a böngésző konzolját hibák szempontjából. A kártya tartalma mindig elérhető a kártya fejlécének kattintásával, még akkor is, ha az auto-expand nem aktiválódik.
 
-## Changelog
+## Changelog {#changelog}
 
 Látja a teljes verzió történetét a [Changelog](./changelog) alatt.

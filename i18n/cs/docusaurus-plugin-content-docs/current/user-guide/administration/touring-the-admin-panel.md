@@ -1,86 +1,122 @@
 ---
-title: Prohlídka administračního panelu
+title: Seznámení s administračním panelem
 sidebar_position: 16
-_i18n_hash: d2c69f4c9371627aa84351884683672e
+_i18n_hash: d8ee34d53f01aaaa8009bec02bcd891a
 ---
-# Průvodce administrátorským panelem
+# Prohlídka panelu správce {#touring-the-admin-panel}
 
-Ultimate Multisite se snaží být co nejjednodušší a nejsrozumitelnější, ale u tak mocného nástroje se může hodit mít průvodce. Pojďme si projít jednotlivé stránky administrace, abyste se lépe zorientovali.
+Ultimate Multisite se snaží být co nejjednodušší a nejsrozumitelnější, ale u takto výkonného nástroje může pomoci komentovaná prohlídka. Projděme si stránky správy, abyste se zorientovali.
 
-## Dashboard
+## Dashboard {#dashboard}
 
-**Dashboard** Ultimate Multisite zobrazuje základní přehledy a analytiku včetně příjmů, aktivit na webech, růstu členství, počtu návštěvníků a geografických dat.
+**Dashboard** Ultimate Multisite zobrazuje základní přehledy a analytiku včetně příjmů, aktivit webů, růstu členství, počtů návštěvníků a geografických údajů.
 
-![Dashboard Ultimate Multisite](/img/admin/um-dashboard-top.png)
+![Ultimate Multisite Dashboard](/img/admin/um-dashboard-top.png)
 
-## Checkout Forms
+Zde je úplný pohled na dashboard:
 
-**Checkout Forms** vám dávají možnost vytvářet vlastní registrační stránky. Můžete upravovat pole, vkládat vlastní třídy a skripty a omezit přístup podle země nebo polohy návštěvníka.
+![Ultimate Multisite Dashboard celá stránka](/img/admin/um-dashboard-full.png)
 
-![Seznam Checkout Forms](/img/admin/checkout-forms-list.png)
+A spodní část dashboard:
 
-## Products
+![Ultimate Multisite Dashboard spodní část](/img/admin/um-dashboard-bottom.png)
 
-V sekci **Products** vytváříte různé tarify, balíčky a služby pro vaši síť. Na úrovni produktu definujete ceny, frekvence fakturace a limity & kvóty.
+Zde je také úplný pohled na network dashboard:
+
+![Network Dashboard celá stránka](/img/admin/network-dashboard-full-page.png)
+
+## Checkout formuláře {#checkout-forms}
+
+**Checkout formuláře** vám dávají flexibilitu vytvářet vlastní registrační stránky. Můžete přizpůsobit pole, vkládat vlastní třídy a skripty a omezit přístup podle země nebo polohy návštěvníka.
+
+![Seznam Checkout formulářů](/img/admin/checkout-forms-list.png)
+
+## Produkty {#products}
+
+Sekce **Produkty** je místem, kde vytváříte různé plány, balíčky a služby pro svou síť. Definujte ceny, frekvence fakturace a limity & kvóty na úrovni produktu.
 
 ![Seznam produktů](/img/admin/products-list.png)
 
-## Memberships
+## Členství {#memberships}
 
-Stránka **Memberships** zobrazuje všechna předplatná ve vaší síti. Můžete si prohlížet a upravovat detaily předplatného včetně tarifů, produktů, fakturovaných částek a frekvencí, historie plateb a časových údajů.
+Stránka **Členství** zobrazuje všechna předplatná ve vaší síti. Kontrolujte a upravujte podrobnosti předplatného včetně plánů, produktů, fakturovaných částek a frekvencí, historie plateb a časových značek.
 
 ![Seznam členství](/img/admin/memberships-list.png)
 
-## Payments
+## Platby {#payments}
 
-Stránka **Payments** poskytuje rychlý přehled historie plateb napříč celou vaší sítí s podrobnými informacemi o transakcích včetně konkrétních produktů a částek.
+Stránka **Platby** poskytuje rychlý přehled historie plateb v celé vaší síti s podrobnými informacemi o transakcích včetně konkrétních produktů a částek.
 
 ![Seznam plateb](/img/admin/payments-list.png)
 
-## Customers
+## Zákazníci {#customers}
 
-Stránka **Customers** zobrazuje všechny členy registrované ve vaší síti se základními informacemi o uživatelích včetně jména, e-mailové adresy, posledního přihlášení a odkazu „přepnout na" pro přihlášení na jejich podweb.
+Stránka **Zákazníci** zobrazuje všechny členy registrované ve vaší síti se základními informacemi o uživateli včetně jména, e-mailové adresy, posledního přihlášení a odkazu „přepnout na“ pro přihlášení do jejich podwebu.
 
 ![Seznam zákazníků](/img/admin/customers-list.png)
 
-## Sites
+## Weby {#sites}
 
-Stránka **Sites** obsahuje seznam všech podwebů ve vaší síti včetně šablon webů a webů vlastněných zákazníky. Snadno spravujete mapované domény, limity & kvóty, pluginy a šablony vzhledu a miniatury webů.
+Stránka **Weby** uvádí všechny podweby ve vaší síti včetně šablon webů a webů vlastněných zákazníky. Snadno spravujte namapované domény, limity & kvóty, pluginy a motivy a náhledy webů.
 
 ![Seznam webů](/img/admin/sites-list.png)
 
-## Domains
+## Domény {#domains}
 
-Stránka **Domains** je věnována vlastním doménám mapovaným na podweby. Jako super admin můžete ručně přidávat nebo mapovat vlastní doménová jména a prohlížet DNS záznamy a logy.
+Stránka **Domény** je určena pro vlastní domény namapované na podweby. Jako super admin můžete ručně přidávat nebo mapovat vlastní názvy domén a zobrazovat DNS záznamy a protokoly.
 
 ![Seznam domén](/img/admin/domains-list.png)
 
-## Discount Codes
+## Slevové kódy {#discount-codes}
 
-**Discount Codes** vám umožňují vytvářet slevové kódy pro vaše koncové uživatele. Můžete určit hodnotu slevy a cílit na konkrétní uživatele nebo skupiny.
+**Slevové kódy** vám umožňují vytvářet kuponové kódy pro nabídku slev koncovým uživatelům. Určete hodnotu slevy a zacilte na konkrétní uživatele nebo skupiny.
 
 ![Seznam slevových kódů](/img/admin/discount-codes-list.png)
 
-## Broadcasts
+## Rozesílky {#broadcasts}
 
-**Broadcasts** je nástroj pro rozesílání oznámení nebo posílání soukromých zpráv uživatelům vašich podwebů. Můžete cílit na konkrétní skupiny uživatelů podle tarifu nebo produktu, který mají předplacený.
+**Rozesílky** jsou nástroj pro zavádění oznámení nebo posílání soukromých zpráv uživatelům vašich podwebů. Zacilte na konkrétní skupiny uživatelů podle plánu nebo produktu, k němuž mají předplatné.
 
-![Seznam broadcastů](/img/admin/broadcasts-list.png)
+![Seznam rozesílek](/img/admin/broadcasts-list.png)
 
-## Settings
+## Nastavení {#settings}
 
-Na stránce **Settings** konfigurujete Ultimate Multisite — nastavení registrace, plateb, API a webhooků, mapování domén a dalších integrací.
+Stránka **Nastavení** je místem, kde konfigurujete Ultimate Multisite — nastavení registrace, platby, API a webhooky, mapování domén a další integrace.
+
+Nastavení AI konektorů uvádí aktuálně podporované fondy OAuth providerů: Anthropic Max, OpenAI ChatGPT/Codex a Google AI Pro. Každá karta providera umožňuje super adminům připojit účty, obnovit uložené účty, odebrat účty podle e-mailu a použít ruční náhradní postup OAuth, když sandboxované prostředí blokuje přesměrování prohlížeče. Možnosti nastavení Cursor Pro byly z admin panelu odstraněny.
+
+Účty ChatGPT/Codex podporují použití nástrojů zajištěné konektorem tam, kde operace nástroje povoluje, takže administrátorské pracovní postupy, které závisí na operacích podporovaných konektorem, mohou po připojení účtu OpenAI používat chování nástrojů Codex.
 
 ![Stránka nastavení](/img/admin/settings-general.png)
 
-## Events
+Zde je úplný pohled na stránku obecných nastavení:
 
-Stránka **Events** uchovává záznamy o všech událostech a logách ve vaší síti. Sleduje aktivity jako změny tarifů, registrace a další pohyby — užitečné pro monitoring vašeho multisite.
+![Obecná nastavení celá stránka](/img/admin/settings-general-full.png)
+
+A stránka nastavení e-mailů:
+
+![Nastavení e-mailů celá stránka](/img/admin/settings-emails-full.png)
+
+A stránka nastavení plateb:
+
+![Nastavení plateb celá stránka](/img/admin/settings-payments-full.png)
+
+A spodní část nastavení plateb:
+
+![Nastavení plateb spodní část](/img/admin/settings-payments-bottom.png)
+
+A stránka nastavení webů:
+
+![Nastavení webů celá stránka](/img/admin/settings-sites-full.png)
+
+## Události {#events}
+
+Stránka **Události** uchovává záznam všech událostí a protokolů ve vaší síti. Sleduje aktivity, jako jsou změny plánů, registrace a další pohyby — užitečné pro monitorování vašeho multisite.
 
 ![Seznam událostí](/img/admin/events-list.png)
 
-## Webhooks
+## Webhooky {#webhooks}
 
-**Webhooks** vám umožňují odesílat data do jiné aplikace. Hodí se pro posílání dat z Ultimate Multisite do platforem jako Zapier.
+**Webhooky** vám umožňují doručovat data do jiné aplikace. Užitečné pro odesílání dat z Ultimate Multisite na platformy jako Zapier.
 
 ![Seznam webhooků](/img/admin/webhooks-list.png)

@@ -1,124 +1,124 @@
 ---
-title: የኢሜይሎችን እና ስርጭቶችን መላክ
+title: ኢሜይሎችን እና ብሮድካስቶችን መላክ
 sidebar_position: 11
-_i18n_hash: e9ddc461d32299505e4a7a5af491cff6
+_i18n_hash: 0563b0c364cc014990c7066b8251ba36
 ---
-# ኢሜይሎችን እና ማሰራጫዎችን መላክ (v2)
+# ኢሜይሎችን እና Broadcasts መላክ (v2) {#sending-emails-and-broadcasts-v2}
 
-_**አስፈላጊ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
+_**አስፈላጊ ማስታወሻ፦ ይህ ጽሑፍ Ultimate Multisite ስሪት 2.xን ይመለከታል።**_
 
-Ultimate Multisite በደንበኞችዎ ላይ ኢሜይል በመላክ ወይም በዳሽቦርድ ማስታወቂያዎችን በማሰራጨት እንዲገናኙ የሚያስችል ባህሪ አለው።
+Ultimate Multisite ለተወሰነ ተጠቃሚ ወይም ለተጠቃሚዎች ቡድን ኢሜይል በመላክ፣ እንዲሁም ማስታወቂያዎችን ለማሰራጨት በአስተዳዳሪ Dashboard ላይ ማሳወቂያዎችን በመላክ ከደንበኞችዎ ጋር እንዲገናኙ የሚያስችል ባህሪ አለው
 
-## በBroadcasts አማካኝነት የአስተዳዳሪ ማስታወቂያዎችን ለደንበኞችዎ ዳሽቦርድ ይጨምሩ
+## Broadcasts በመጠቀም የአስተዳዳሪ ማሳወቂያዎችን ወደ ደንበኞችዎ Dashboard ያክሉ {#add-admin-notices-to-your-customers-dashboard-with-broadcasts}
 
-በUltimate Multisite broadcast ባህሪ በመጠቀም፣ ለተጠቃሚዎ የሱብሳይት አስተዳዳሪ ዳሽቦርድ ላይ **የአስተዳዳሪ ማስታወቂያዎችን** ማከል ይችላሉ።
+የUltimate Multisite broadcast ባህሪን በመጠቀም፣ **የአስተዳዳሪ ማሳወቂያዎችን** ወደ ተጠቃሚዎ subsite አስተዳዳሪ Dashboard ማከል ይችላሉ።
 
-ይህ ለምሳሌ እንደ ሲስተም ጥገና ማስታወቂያ ወይም ለነባር ተጠቃሚዎች አዳዲስ ምርቶችን ወይም አገልግሎቶችን ለመስጠት የሚያስፈልግዎ ከሆነ እጅግ በጣም ጠቃሚ ነው። የአስተዳዳሪው ማስታወቂያ በየተጠቃሚው ዳሽቦርድ ላይ የሚታየው በዚህ መልኩ ነው።
+እንደ የስርዓት ጥገና ወይም ለነባር ተጠቃሚዎችዎ አዳዲስ ምርቶችን ወይም አገልግሎቶችን ማቅረብ ያሉ ማስታወቂያዎችን ማድረግ ካስፈለገዎ ይህ እጅግ ጠቃሚ ነው። የአስተዳዳሪ ማሳወቂያው በተጠቃሚዎ Dashboard ላይ የሚታየው እንዲህ ነው።
 
-<!-- Screenshot unavailable: Admin notice broadcast shown on a customer's subsite dashboard -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ በደንበኛ ንዑስ ጣቢያ Dashboard ላይ የታየ የአስተዳዳሪ ማሳወቂያ broadcast -->
 
-የአስተዳዳሪ ማስታወቂያ ለመጀመር፣ ወደ የኔትወርክ አስተዳዳሪ ዳሽቦርድ በመሄድ በ**Ultimate Multisite** ሜኑ ስር **Broadcasts** አማራጩን ያገኛሉ።
+የአስተዳዳሪ ማሳወቂያ ለመጀመር፣ ወደ ኔትወርክ አስተዳዳሪ Dashboard ይሂዱ፣ እና በ**Ultimate Multisite** ምናሌ ስር **Broadcasts** አማራጭን ያገኛሉ።
 
-![Broadcasts list page in Ultimate Multisite admin](/img/admin/broadcasts-list.png)
+![በUltimate Multisite አስተዳዳሪ ውስጥ የBroadcasts ዝርዝር ገጽ](/img/admin/broadcasts-list.png)
 
-በነባር ማሰራጫዎች ላይም ማርትዕ ይችላሉ፦
+ነባር broadcastsንም ማርትዕ ይችላሉ፦
 
-![Broadcast edit interface](/img/admin/broadcast-edit.png)
+![የBroadcast ማርትያ በይነገጽ](/img/admin/broadcast-edit.png)
 
-ከዚህ ገጽ፣ በላይ ባለው **Add Broadcast** ቁልፍ ላይ ይጫኑ።
+ከዚህ ገጽ፣ ከላይ ያለውን **Broadcast አክል** አዝራር ጠቅ ያድርጉ።
 
-ይህ የAdd broadcast ሞዳል መስኮት ይከፍታል፣ እዚያም ምን ዓይነት ማሰራጫ እንደሚልኩ መምረጥ ይችላሉ።
+ይህ ምን ዓይነት broadcast መላክ እንደሚፈልጉ መምረጥ የሚችሉበትን Add broadcast modal መስኮት ያመጣል።
 
-**Message** ይምረጡና ከዚያ **Next Step** ቁልፍ ላይ ይጫኑ።
+ቀጥለው **መልዕክት** ይምረጡ ከዚያም **Next Step** አዝራርን ጠቅ ያድርጉ።
 
-![Add broadcast modal with the Message option selected](/img/admin/broadcast-add-message.png)
+![የMessage አማራጭ ተመርጦ የሚያሳይ Add broadcast modal](/img/admin/broadcast-add-message.png)
 
-የሚቀጥለው መስኮት ደግሞ **Target customer** ወይም **Target product** እንዲመርጡ ይጠይቃል። አንድን ተጠቃሚ ወይም ከአንድ በላይ ምርት መምረጥ እንደሚችሉ ልብ ይበሉ።
+ቀጣዩ መስኮት **ዒላማ ደንበኛ** ወይም **ዒላማ ምርት** ይጠይቃል። ከአንድ በላይ ተጠቃሚ ወይም ከአንድ በላይ ምርት መምረጥ እንደሚችሉ ያስተውሉ።
 
-የተጠቃሚ አካውንትም ሆነ ምርት ለመፈለግ፣ በቦታው ውስጥ ቁልፉን መተየብ ይጀምራሉ።
+የተጠቃሚ Account ወይም ምርትን ለመፈለግ፣ በመስኩ ውስጥ ቁልፍ ቃሉን መተየብ መጀመር ያስፈልግዎታል።
 
-በ**Message type** መስክ ስር፣ የማስታወቂያውን ቀለም መምረጥ ይችላሉ። ይህ የመልእክቱ አስቸኳይነትን ያጎላል።
+በ**የመልዕክት ዓይነት** መስክ ስር፣ የማሳወቂያውን ቀለም መምረጥ ይችላሉ። ይህ የመልዕክትዎን አስቸኳይነት ያጎላል።
 
-ከዚያም **Next Step** ላይ መጫን ይችላሉ።
+ከዚያ **Next Step** ጠቅ ማድረግ ይችላሉ።
 
-![Target customers, target product and message type fields for a Message broadcast](/img/admin/broadcast-message-targets.png)
+![ለMessage broadcast የዒላማ ደንበኞች፣ የዒላማ ምርት እና የመልዕክት ዓይነት መስኮች](/img/admin/broadcast-message-targets.png)
 
-የሚቀጥለው መስኮት ደግሞ ርዕሱን እና ለተጠቃሚዎች ሊያሰራጩት የሚፈልጉትን ይዘት/መልእክት በማስገባት መልእክትዎን መቅረጽበት ነው።
+ቀጣዩ መስኮት ለተጠቃሚዎች ማሰራጨት የሚፈልጉትን ርዕስ እና ይዘት/መልዕክት በማስገባት መልዕክትዎን መጻፍ የሚጀምሩበት ነው።
 
-![Broadcast message subject and content editor on the compose step](/img/admin/broadcast-edit.png)
+![በcompose ደረጃ ላይ የBroadcast መልዕክት ርዕስ እና ይዘት አርታዒ](/img/admin/broadcast-edit.png)
 
-መልእክትዎን ከፈጠሩ በኋላ፣ **Send** ቁልፉን መጫን ይችላሉ።
+መልዕክትዎን ከፈጠሩ በኋላ፣ ከዚያ **Send** አዝራርን መጫን ይችላሉ።
 
-እናም ያ ብቻ ነው። የአስተዳዳሪ ማስታወቂያው ወዲያውኑ በየተጠቃሚው ዳሽቦርድ ላይ ይታያል።
+እና ይሄ ነው። የአስተዳዳሪ ማሳወቂያው በተጠቃሚዎ Dashboard ላይ ወዲያውኑ መታየት አለበት።
 
-## ለደንበኞችዎ ኢሜይሎችን ይላኩ
+## ለደንበኞችዎ ኢሜይሎችን ይላኩ {#send-emails-to-your-customers}
 
-በUltimate Multisite broadcast ባህሪ በመጠቀም፣ ለተጠቃሚዎችዎ ኢሜይል መላክ ይችላሉ። ኢሜይሉን ለተወሰኑ ተጠቃሚዎች ብቻ ለመላክ ወይም በምርቱ ወይም በፕላኑ መሰረት የተወሰነ የደንበኛ ቡድን ላይ ለመድረስ አማራጭ አለዎት።
+የUltimate Multisite broadcast ባህሪን በመጠቀም፣ ለተጠቃሚዎችዎ ኢሜይል መላክ ይችላሉ። ኢሜይሉን ለተወሰኑ ተጠቃሚዎች ብቻ ለመላክ ወይም በተመዘገቡበት ምርት ወይም ፕላን መሠረት የተወሰነ የተጠቃሚ ቡድንን ዒላማ ለማድረግ አማራጭ አለዎት።
 
-የኢሜይል ማሰራጫ ለመጀመር፣ ወደ የኔትወርክ አስተዳዳሪ ዳሽቦርድ በመሄድ በUltimate Multisite ሜኑ ስር **Broadcast** አማራጩን ያገኛሉ።
+የኢሜይል broadcast ለመጀመር፣ ወደ ኔትወርክ አስተዳዳሪ Dashboard ይሂዱ፣ እና በUltimate Multisite ምናሌ ስር Broadcast አማራጭን ያገኛሉ።
 
-![Broadcasts list page used as the starting point for an email broadcast](/img/admin/broadcasts-list.png)
+![ለኢሜይል broadcast መነሻ ነጥብ ሆኖ የሚጠቀም የBroadcasts ዝርዝር ገጽ](/img/admin/broadcasts-list.png)
 
-ከዚህ ገጽ፣ በላይ ባለው **Add broadcast** ቁልፍ ላይ ይጫኑ።
+ከዚህ ገጽ፣ ከላይ ያለውን **broadcast አክል** አዝራር ጠቅ ያድርጉ።
 
-ይህ የAdd broadcast ሞዳል መስኮት ይከፍታል፣ እዚያም ምን ዓይነት ማሰራጫ እንደሚልኩ መምረጥ ይችላሉ። **Email** ይምረጡና ከዚያ **Next Step** ቁልፍ ላይ ይጫኑ።
+ይህ ምን ዓይነት broadcast መላክ እንደሚፈልጉ መምረጥ የሚችሉበትን Add broadcast modal መስኮት ያመጣል። ቀጥለው **ኢሜይል** ይምረጡ ከዚያም **Next Step** አዝራርን ጠቅ ያድርጉ።
 
-![Add broadcast modal with the Email option selected](/img/admin/broadcast-add-email.png)
+![የEmail አማራጭ ተመርጦ የሚያሳይ Add broadcast modal](/img/admin/broadcast-add-email.png)
 
-የሚቀጥለው መስኮት ደግሞ **Target customer** ወይም **Target product** እንዲመርጡ ይጠይቃል። አንድን ተጠቃሚ ወይም ከአንድ በላይ ምርት መምረጥ እንደሚችሉ ልብ ይበሉ።
+ቀጣዩ መስኮት **ዒላማ ደንበኛ** ወይም **ዒላማ ምር**ት ይጠይቃል። ከአንድ በላይ ተጠቃሚ ወይም ከአንድ በላይ ምርት መምረጥ እንደሚችሉ ያስተውሉ።
 
-የተጠቃሚ አካውንትም ሆነ ምርት ለመፈለግ፣ በቦታው ውስጥ ቁልፉን መተየብ ይጀምራሉ።
+የተጠቃሚ Account ወይም ምርትን ለመፈለግ፣ በመስኩ ውስጥ ቁልፍ ቃሉን መተየብ መጀመር ያስፈልግዎታል።
 
-የዒላማ ተመልካቾችዎ ከተመረጡ በኋላ፣ **Next Step** ላይ መጫን ይችላሉ።
+ዒላማ ታዳሚዎ ከተመረጠ በኋላ፣ **Next Step** ጠቅ ማድረግ ይችላሉ።
 
-![Target customers and target product selection for an Email broadcast](/img/admin/broadcast-email-targets.png)
+![ለEmail broadcast የዒላማ ደንበኞች እና የዒላማ ምርት ምርጫ](/img/admin/broadcast-email-targets.png)
 
-የሚቀጥለው መስኮት ደግሞ ርዕሱን እና ለተጠቃሚዎች ሊልኩት የሚፈልጉትን ይዘት/መልእክት በማስገባት ኢሜይልዎን መቅረጽበት ነው።
+ቀጣዩ መስኮት ለተጠቃሚዎች መላክ የሚፈልጉትን ርዕስ እና ይዘት/መልዕክት በማስገባት ኢሜይልዎን መጻፍ የሚጀምሩበት ነው።
 
-<!-- Screenshot unavailable: Email broadcast subject and content editor on the compose step -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ በcompose ደረጃ ላይ የEmail broadcast ርዕስ እና ይዘት አርታዒ -->
 
-መልእክትዎን ከፈጠሩ በኋላ፣ **Send** ቁልፉን መጫን ይችላሉ።
+መልዕክትዎን ከፈጠሩ በኋላ፣ **Send** አዝራርን መጫን ይችላሉ።
 
-በbroadcast ባህሪ በመጠቀም ለተጠቃሚዎችዎ ኢሜይል መላክ ምን ያህል ቀላል እንደሆነ የሚያሳይ ነው።
+እና የbroadcast ባህሪን በመጠቀም ለመጨረሻ ተጠቃሚዎችዎ ኢሜይል መላክ እንዲህ ቀላል ነው።
 
-## የስርዓት ኢሜይሎች
+## የስርዓት ኢሜይሎች {#system-emails}
 
-በUltimate Multisite ውስጥ ያሉ የስርዓት ኢሜይሎች (System emails) እንደ ምዝገባ፣ ክፍያ፣ የዶሜን ካርታ አሰጣጥ (domain mapping) ወዘተ ባሉ የተወሰኑ ድርጊቶች በኋላ በስርዓቱ የሚላኩ **ራስ-ሰር ማሳወቂያዎች** ናቸው። እነዚህ ኢሜይሎች ከUltimate Multisite ቅንብሮች ውስጥ ሊስተካከሉ ወይም ሊቀየሩ ይችላሉ። በተጨማሪም፣ ከሌላ Ultimate Multisite ተከላ (installation) ያሉ ቅንብሮችን ዳግም ማስጀመር እና ማስገባት የሚችል ባህሪ አለው።
+በUltimate Multisite ውስጥ የስርዓት ኢሜይሎች እንደ ምዝገባ፣ ክፍያ፣ የዶሜይን ማዛመድ፣ ወዘተ ካሉ የተወሰኑ እርምጃዎች በኋላ በስርዓቱ የሚላኩ **ራስ-ሰር ማሳወቂያዎች** ናቸው። እነዚህ ኢሜይሎች ከUltimate Multisite settings ማርትዕ ወይም ማሻሻል ይችላሉ። ከሌላ የUltimate Multisite መጫኛ ነባር settingsን ዳግም ለማስጀመር እና ለማስመጣት የሚያስችል ባህሪም አለው።
 
-### ማስቀመጥ እና ማስገባት (Resetting & Importing)
+### ዳግም ማስጀመር እና ማስመጣት {#resetting--importing}
 
-አዳዲስ የUltimate Multisite ስሪቶች፣ እንዲሁም ተጨማሪዎች (add-ons) ከጊዜ ወደ ጊዜ አዳዲስ ኢሜይል ቴምፕሌቶችን መመዝገብ ይችላሉ።
+አዲስ የUltimate Multisite ስሪቶች፣ እንዲሁም add-ons፣ ከጊዜ ወደ ጊዜ አዲስ ኢሜይሎችን ሊመዘግቡ ይችላሉ እና ይመዘግባሉ።
 
-ግጭቶችን እና ሌሎች ችግሮችን ለመከላከል፣ **አንድ የተሰጠ ባህሪ በትክክል እንዲሰራ ወሳኝ ካልሆነ በስተቀር አዳዲስ የኢሜይል ቴምፕሌቶችን በራስ-ሰር እንደ የስርዓት ኢሜይሎች አንጨምርም**።
+ግጭቶችን እና ሌሎች ችግኝቶችን ለመከላከል፣ ለአንድ ባህሪ ትክክለኛ አሠራር አስፈላጊ ካልሆኑ በስተቀር፣ **አዲሶቹን የኢሜይል አብነቶች በመጫኛዎ ላይ እንደ System Emails በራስ-ሰር አንጨምርም**።
 
-ሆኖም፣ super admins እና agents እነዚህን አዲስ የተመዘገቡ ኢሜይሎች በimporter tool አማካኝነት ማስገባት ይችላሉ። ያ ሂደት አዲሱን የኢሜይል ቴምፕሌት ይዘት እና ውቅር ያለው አዲስ የስርዓት ኢሜይል ይፈጥራል፣ ይህም super admin የሚፈልጉትን ማሻሻያ እንዲያደርጉ ወይም እንደነበሩ እንዲይዟቸው ያስችላል።
+ሆኖም፣ super admins እና agents እነዚህን አዲስ የተመዘገቡ ኢሜይሎች በimporter መሣሪያ ማስመጣት ይችላሉ። ያ ሂደት የአዲሱ የኢሜይል አብነት ይዘት እና ውቅር ያለው አዲስ የስርዓት ኢሜይል ይፈጥራል፣ ይህም super admin የፈለጉትን ማንኛውንም ማሻሻያ እንዲያደርጉ ወይም እንዳለ እንዲያስቀምጡት ያስችላል።
 
-#### የስርዓት ኢሜይሎችን እንዴት ማስገባት እንደሚቻል
+#### የስርዓት ኢሜይሎችን እንዴት ማስመጣት እንደሚቻል {#how-to-import-system-emails}
 
-ወደ Ultimate Multisite Settings ገጽ በመሄድ ወደ **Emails** ታብ ይሂዱ።
+ወደ Ultimate Multisite Settings ገጽዎ ይሂዱ እና ወደ **Emails** ትር ይሂዱ።
 
-![Emails tab in Ultimate Multisite settings showing the System Emails section](/img/config/settings-emails-tab.png)
+![በUltimate Multisite settings ውስጥ System Emails ክፍልን የሚያሳይ Emails ትር](/img/config/settings-emails-tab.png)
 
-ከዚያም፣ በጎን አሞሌው ላይ፣ **Customize System Emails** ቁልፍ ላይ ይጫኑ።
+ከዚያ፣ በጎን አሞሌው ላይ፣ **Customize System Emails** አዝራርን ጠቅ ያድርጉ።
 
-<!-- Screenshot unavailable: Customize System Emails button on the System Emails sidebar panel -->
+<!-- የማያ ገጽ ምስል አይገኝም፦ በSystem Emails ጎን አሞሌ ፓነል ላይ የCustomize System Emails አዝራር -->
 
-በSystem Emails ገጽ ላይ፣ በላይ ባለው **Reset & Import** የአction ቁልፍ ይታያል። ይህን ቁልፍ መጫን የimport እና reset ሞዳል መስኮት ይከፍታል።
+በSystem Emails ገጽ ላይ፣ ከላይ **Reset & Import** የእርምጃ አዝራር ያያሉ። ያንን አዝራር መጫን የማስመጣት እና ዳግም ማስጀመር modal መስኮትን መክፈት አለበት።
 
-![Reset or Import action button on the System Emails admin page](/img/admin/system-emails-reset-import.png)
+![በSystem Emails አስተዳዳሪ ገጽ ላይ የReset ወይም Import እርምጃ አዝራር](/img/admin/system-emails-reset-import.png)
 
-ከዚያም፣ የትኞቹ የስርዓት ኢሜይሎች ሊሰበሰቡ እንደሚችሉ ለማየት የImport Emails አማራጮችን መጫን ይችላሉ።
+ከዚያ፣ የትኞቹ የስርዓት ኢሜይሎች ለማስመጣት እንደሚገኙ ለማየት የImport Emails አማራጮችን መቀያየር ይችላሉ።
 
 <!-- Screenshot unavailable: Reset and Import modal with the Import Emails options expanded -->
 
-#### የስርዓት ኢሜይሎችን ዳግም ማስጀመር (Resetting System Emails)
+#### የስርዓት ኢሜይሎችን ዳግም ማስጀመር {#reseting-system-emails}
 
-ሌላ ጊዜ፣ ለተሰጠው የኢሜይል ቴምፕሌት ያደረጉት ለውጥ ከእንግዲህ አይሰራም እና ወደ **መነሻ ሁኔታው** (default state) መልሰው እንዲቀየሩ ይፈልጋሉ ይሆናል።
+አንዳንድ ጊዜ፣ በተወሰነ የኢሜይል አብነት ላይ ያደረጉት ለውጦች ከእንግዲህ ለእርስዎ እንደማይሰሩ ይገነዘባሉ፣ እና ወደ **ነባሪ ሁኔታው** ዳግም ማስጀመር ይፈልጋሉ።
 
-በእንደዚህ ባሉ ሁኔታዎች፣ ሁለት አማራጮች አሉዎት፡ በቀላሉ የስርዓት ኢሜይሉን መሰረዝ እና እንደገና ማስገባት ይችላሉ (ከላይ ባሉት መመሪያዎች በመጠቀም) - ይህም የመላኪያ መለኪያዎችን እና ሌሎች ነገሮችን ስለሚያጠፋ ይህ ዘዴ ብዙም ተመራጭ አይደለም።
+በእንዲህ ያሉ ሁኔታዎች፣ ሁለት አማራጮች አሉዎት፦ በቀላሉ የስርዓት ኢሜይሉን መሰረዝ እና እንደገና ማስመጣት ይችላሉ (ከላይ ያሉትን መመሪያዎች በመጠቀም) - ይህም የመላኪያ መለኪያዎችንና ሌሎች ነገሮችን ይሰርዛል፣ ስለዚህ ይህ ዘዴ በጣም የማይመረጥ ያደርገዋል።
 
-ወይም የኢሜይል ቴምፕሌቱን ዳግም ለማስጀመር **Reset & Import tool** መጠቀም ይችላሉ።
+ወይም ያንን የኢሜይል አብነት ዳግም ለማስጀመር **Reset & Import tool** መጠቀም ይችላሉ።
 
-የኢሜይል ቴምፕሌት ዳግም ለማስጀመር፣ ከላይ ያሉትን እርምጃዎች ተከትለው እስከ Reset & Import tool ድረስ ይሂዱ፣ ከዚያም **Reset** አማራጩን አብረው እና ወደ መነሻ ይዘት እንዲመለሱ የሚፈልጓቸውን ኢሜይሎች ይምረጡ።
+የኢሜይል አብነትን ዳግም ለማስጀመር፣ Reset & Import tool እስኪደርሱ ድረስ ከላይ ያሉትን ደረጃዎች መከተል ይችላሉ፣ ከዚያም **Reset** አማራጩን ያብሩ እና ወደ ነባሪ ይዘታቸው መመለስ የሚፈልጉትን ኢሜይሎች ይምረጡ።
 
 <!-- Screenshot unavailable: Reset and Import modal with the Reset Emails options expanded -->

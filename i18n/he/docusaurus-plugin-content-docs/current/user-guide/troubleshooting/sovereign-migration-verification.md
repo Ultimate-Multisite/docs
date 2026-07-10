@@ -3,11 +3,11 @@ title: אימות הגירה ריבונית
 sidebar_position: 16
 _i18n_hash: a19bc6263b278573f09cbba17581f632
 ---
-# אימות מיגרציה סובריינית (Sovereign Migration Verification)
+# אימות מיגרציה סובריינית (Sovereign Migration Verification) {#sovereign-migration-verification}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 כולל פקודות וריפוי WP-CLI עבור מיגרציות של שוכני סובריין (sovereign tenants). השתמש בהן כאשר מיגרציה של שוכר, ביקור SSO או התקנה מבודדת אינן מתנהגות כמצופה.
 
-## פקודות להרצה
+## פקודות להרצה {#commands-to-run}
 
 הרצת וריפוי מההתקנת WordPress ברשת:
 
@@ -18,28 +18,28 @@ wp tenant verify-sovereign-push --site=<site-id>
 
 השתמש ב-ID של השוכר שאתה ממיר. הפקודה הראשונה בודקת שהשוכר כבר לא תלוי בנתונים ישנים בצד הרשת (legacy network-side data). הפקודה השנייה מאמת שאבדי push סוברייניים יכולים לעבד ולרוקן את ה-queue שלהם.
 
-## כשלים נפוצים
+## כשלים נפוצים {#common-failures}
 
-### אישור מסד הנתונים אינו תואם את המארח (Database grants do not match the host)
+### אישור מסד הנתונים אינו תואם את המארח (Database grants do not match the host) {#database-grants-do-not-match-the-host}
 
 אם הריפוי מדווח על כשלים באישור (grant) או במשתמש הכותב (writer-user), בדוק את מארח מסד הנתונים שהוגדר. `localhost`, `127.0.0.1` ושם שירות קונטיינר הם מארחים MySQL שונים לאותו מקום. עדכן את קישור המארח של השוכר או את אישורי מסד הנתונים, ואז הרץ מחדש את הריפוי.
 
-### התקנות Bedrock או מקומיות (local installs) אינן יכולות להתחבר
+### התקנות Bedrock או מקומיות (local installs) אינן יכולות להתחבר {#bedrock-or-local-installs-cannot-connect}
 
 התקנות Bedrock והתקנות Socket המקומיות עשויות לדווח על מסד הנתונים כ-`localhost` בעוד שהרצה מתחברת דרך כתובת מנורמלת. גרסה 1.2.0 מארמת מחרוזות מארח לאותו מכונה, אך התאמות מארח מותאמות אישית עדיין עלולות להתנגש עם אישורי מסד הנתונים.
 
-### תור ה-async push אינו מתרוקן (Async push queue does not drain)
+### תור ה-async push אינו מתרוקן (Async push queue does not drain) {#async-push-queue-does-not-drain}
 
 אם `verify-sovereign-push` לא מסתיים, בדוק את Action Scheduler או את המריץ האסינכרוני שהוגדר. נקה משימות שנכשלו רק לאחר שאתה מאשר שהן בטוחות לניסיון חוזר או השלכה (discard).
 
-### מספר משתמשי השוכר שגוי (Tenant user count is wrong)
+### מספר משתמשי השוכר שגוי (Tenant user count is wrong) {#tenant-user-count-is-wrong}
 
 המיגרציה אמורה לספק משתמשים לשוכר הסובריין. אם המשתמש המצופה של ההתקנה חסר, הרץ מחדש את שלב אספקת המשתמשים לפני שתנסה שוב SSO.
 
-### ביקור SSO נדחה (SSO visit is rejected)
+### ביקור SSO נדחה (SSO visit is rejected) {#sso-visit-is-rejected}
 
 התחברות אוטומטית של שוכני ללא מצב (Stateless tenant autologin) דורשת התאמה בין דומיין השוכנת, קוד ה-origin pin, מטרת הטוקן, ה-nonce ותאריך התפוגגות. ודא שהכתובת של השוכנת נכונה וההתחברות תנסה זמן קצר לאחר יצירת ביקור SSO (SSO visit).
 
-## מתי לנסות שוב
+## מתי לנסות שוב {#when-to-retry}
 
 נסה לאמת לאחר כל שינוי בתשתית. אל תשנה את תעבורת הייצור, מחק את הנתונים המקוריים או הסר את פרטי ההגירה עד שכל בדיקות האימות יעברו בהצלחה.

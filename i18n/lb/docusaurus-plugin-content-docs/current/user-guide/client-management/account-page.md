@@ -3,7 +3,7 @@ title: Kunde-Account-Siite
 sidebar_position: 14
 _i18n_hash: f7b0d45273561b6a0754b736c4dc4e3f
 ---
-# D'Account-Page vun Ihrem Kunde (v2)
+# D'Account-Page vun Ihrem Kunde (v2) {#your-clients-account-page-v2}
 
 _**WICHTIGE NOTIZ: Dëse Artikel bezieht sich uf Ultimate Multisite version 2.x.**_
 
@@ -11,7 +11,7 @@ Wann Kunde en Plan uf Ier Netz abonnéieren, kriecht er Zesatz zu enere Website 
 
 In dësem Tutorial fänn mir Sie dur d'Account-Page vum Kunde führe an, und Dir gsehnd, wat Ier Kunde do drin gsehnt aach kann.
 
-## D'Account-Page
+## D'Account-Page {#the-account-page}
 
 D'Account-Page kënnt me erschliich, wann dech uf **Account** iiricht in dem Dashboard vun Ihrem Kunde klickt.
 
@@ -27,7 +27,7 @@ Nachdem de Kunde druf klickt, gseet er en Überblick über sin Mitmemberfe, Bill
 
 Er kann au d'Mitmemberfe uf en anderen Plan ändere oder en anderen Paket oder Service kaufe, dat Dir anbietet. Lat eus jede Abschnitt separat aaluegen.
 
-### Üsi Membership-Übersicht:
+### Üsi Membership-Übersicht: {#your-membership-overview}
 
 De erscht Block direkt under de Name vo de Kundewebsite zeigt e Übersicht über de aktuelli Plan und d'Services/Paket, wo mit dem abonniert worde sind. De Block zeigt au d'Mitgliedsnummer, de Anfangsbetrag, wo dafür zahlt worde isch, wie viel de Plan und jede Service/Paket choschtet und wie oft für die Mitgliedschaft abgerechnet worde isch. Sie chönd au gseh, öb d'Mitgliedschaft **Aktiv**, **Abgelaufen** oder **Abgsetzt** isch.
 
@@ -43,7 +43,7 @@ Jetzt, wenn Ihre Kunden wähle, dass sie Pakete oder Services für die aktuelli 
 
 Bitte beachte Sie, dass Gutscheincodes uf de Seite für d'Änderig vo der Mitgliedschaft nöd hinzugefügt werde chönd. Wenn de Kunde en Gutscheincode bi de erschte Mitgliedschaftskauf brucht het, gilt de Code au für die neui Mitgliedschaft.
 
-### Abrechnungsadresse aktualisiere:
+### Abrechnungsadresse aktualisiere: {#updating-the-billing-address}
 
 Auf de Kontopage chönne dini Kunde au d'Rechnigsadresse aktualisiere. Si müesse nume uf **Update** nebed _Billing Address_ klicke.
 
@@ -53,7 +53,7 @@ Es wird es nöis Fänschter zu dim Kunde uftauche. All, was er müesst mache, is
 
 ![Update billing address form](/img/account-page/billing-address-form.png)
 
-### Site Template ändere:
+### Site Template ändere: {#changing-the-site-template}
 
 Damit dini Kunde ihri Site Templates chönne ändere, muesch du zu **Ultimate Multisite > Settings > Sites** go und d'Option **Allow Template Switching** iischalte.
 
@@ -81,7 +81,7 @@ Nachdem de Bestätigung uffgange huet an uf **Process Switch** geklickt huet, wi
 
 Kunde chënnen au **Reset current template** vu dësem Panel benotzen, wyl se d'Site zrugg op de aktuell zugewiesene Template reset wëllen. Wéi sech d'Änderung wärend dem Wechsle zu enger andere Template, kannen Sie e Template reset übereschriien, also sölle Kunde etzëm nur bestätigen, wyl se d'Reset-Aktion verstoen.
 
-### Custom Domains hinzufügen:
+### Custom Domains hinzufügen: {#adding-custom-domains}
 
 Ihre Kunde hänn au d'Option, fir dëse Plan op de Account Page en custom domain hinzuezfüegen. Um Ihren Kunde hiert custom domains z'laassen, gaen Sie zu **Ultimate Multisite > Settings >** **Domain Mapping**.
 
@@ -115,7 +115,7 @@ Nachdem sie uf **Next Step** klicke, chönd dini Kunde ihri eigeti Domain-Name h
 
 Nachdem sie uf **Add Domain** klicke, wird d'Domain zu em Account vo dim Kunde hinzugefügt. Alles, was sie jetzt müend mache, isch, die DNS-Einträge vo dere eigete Domain bi ihrem Domain Registrar z'ändere.
 
-### Passwort ändere:
+### Passwort ändere: {#changing-password}
 
 Im Account Dashboard chönd dini Kunde au s'Passwort über **Change Password** ändere, indem sie druf klicke.
 
@@ -125,7 +125,7 @@ Das zeigt es enge Fenster, wo dini Kunde s'aktuelli Passwort iigäh müesse und 
 
 ![Change password form with current and new password fields](/img/account-page/change-password-form.png)
 
-### Gefährlichi Zone:
+### Gefährlichi Zone: {#danger-zone}
 
 Mir händ au zwei Option, wo im **Danger Zone** Teil zeige sind: **Site löschen** und **Account löschen**. Die beidi sind i de Danger Zone, will die zwei Aktionen nöd rückgängig gmacht werde chönne. Wenn dini Kunde ihri Website oder ihri Account lösche, chönd sie die nöd wider hergriefe.
 

@@ -1,89 +1,89 @@
 ---
 title: Mailchimp
 sidebar_position: 1
-_i18n_hash: bcd842bce9afd5e634b8c939f9efb0ea
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
 
-# Mailchimp
+# Mailchimp {#mailchimp}
 
-Multisite Ultimate: Mailchimp Integrasie
+Multisite Ultimate: Mailchimp-integrasie
 
-Integreer jou Multisite Ultimate-netwerk met jou Mailchimp. Jy kan sekere planne aan Mailchimp-liste koppel en abonnees outomaties by daardie lys op inskrywing voeg.
+Integreer jou Multisite Ultimate-netwerk met jou Mailchimp. Jy kan sekere planne aan Mailchimp-lyste koppel en intekenare outomaties by daardie lyste voeg wanneer hulle registreer.
 
-## Installasie
+## Installasie {#installation}
 
-1. Laai 'ultimate-multisite-mailchimp' op na die '/wp-content/plugins/' gids
-2. Aktiveer die plugin via die 'Plugins' kieslys in jou WordPress Netwerk Administrasie
+1. Laai 'ultimate-multisite-mailchimp' op na die '/wp-content/plugins/'-gids
+2. Aktiveer die plugin deur die 'Plugins'-kieslys in jou WordPress-netwerkadministrasie
 
-## Gebruiksgids
+## Gebruiksgids {#usage-guide}
 
-Die sinkronisering van abonnees se e-posse met jou MailChimp-liste is regtig eenvoudig met ons Ultimate Multisite: MailChimp Integrasie Add-on. Hierdie leerboek is daarop gemik om jou te help alles op te stel!
+Om intekenare se e-posse met jou MailChimp-lyste te sinkroniseer is regtig maklik met ons Ultimate Multisite: MailChimp Integration-byvoeging. Hierdie tutoriaal is bedoel om jou te help om alles op te stel!
 
-## Verkry 'n API-sleutel
+## Kry ’n API-sleutel {#getting-an-api-key}
 
-Voordat ons begin om die verskillende beskikbare instellings te ondersoek, benodig ons 'n MailChimp API-sleutel. Dit sal Ultimate Multisite toelaat om met die MailChimp API te kommunikeer om lys, groepe te verkry en e-posadresse by daardie lys en groepe te voeg wanneer gebruikers skryf.
+Voordat ons na die verskillende beskikbare instellings begin kyk, het ons ’n MailChimp API-sleutel nodig. Dit sal Ultimate Multisite toelaat om met die MailChimp API te kommunikeer om lyste en groepe te verkry, en e-posadresse by daardie lyste en groepe te voeg wanneer gebruikers registreer.
 
-Volg hierdie leerboek om jou eie MailChimp API-sleutel te kry: [Oor API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+Volg hierdie tutoriaal om jou eie MailChimp API-sleutel te kry: [Oor API-sleutels | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
 
 <!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
 
-_Voeg jou MailChimp API-sleutel by_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+_Voeg jou MailChimp API-sleutel by op_ _**Ultimate Multisite-instellings - > Byvoeginginstellings -> MailChimp**_
 
-## Integrasie Modus
+## Integrasiemodus {#integration-mode}
 
-Die MailChimp Integrasie add-on bied twee “integrasie modes”, wat beteken dat daar twee verskillende maniere is waarop jy die add-on kan gebruik om e-posadresse te sinkroniseer.
+Die MailChimp Integration add-on bied twee “integrasiemodusse”, wat beteken daar is twee verskillende maniere waarop jy die add-on kan gebruik om e-posadresse te sinkroniseer.
 
 <!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
 
-_Twee integrasie modes vir groter fleksibiliteit!_
+_Twee integrasiemodusse vir groter buigsaamheid!_
 
-### Modus 1: Meerdere Lys
+### Modus 1: Multiple Lists {#mode-1-multiple-lists}
 
-Die standaardmodus maak gebruik van **Multiple Lists**. Hierdie modus laat jou toe om verskeie MailChimp-lyste vir elke plan te kies. Dit is die beste opsie as jy jou gebruikers in verskillende lys segmenteer.
+Die verstekmodus maak gebruik van **Multiple Lists**. Hierdie modus sal jou toelaat om verskeie MailChimp-lyste vir elk van die planne te kies. Dit is die beste opsie as jy jou gebruikers in verskillende lyste segmenteer.
 
-Byvoorbeeld, laat ons aanneem jy het 3 verskillende lys op jou MailChimp-rekening: **Newsletter**, **Plan A**, en **Plan B**. Jy wil hê dat alle gebruikers, ongeag hul plan, ook op die Newsletter-lis ingesluit word, sodat hulle nie jou opdaterings mis nie.
+Byvoorbeeld, kom ons veronderstel jy het 3 verskillende lyste op jou MailChimp Account: **Newsletter** , **Plan A** , en **Plan B**. Jy wil hê alle gebruikers, ongeag hul plan, moet ook by die Newsletter-lys ingesluit word, sodat hulle nie jou opdaterings misloop nie.
 
-Om dit te bereik, kan jy die Multiple Lists-modus gebruik om beide lys **Newsletter** en **Plan A** by die Plan A MailChimp-instellings te voeg, en **Newsletter** en **Plan B** by die Plan B MailChimp-instellings.
+Om dit te bereik, kan jy die Multiple Lists-modus gebruik om beide lyste **Newsletter** en **Plan A** by die Plan A MailChimp Settings te voeg, en **Newsletter** en **Plan B** by die Plan B MailChimp Settings.
 
 <!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
 
-_Kies die standaardlysse vir nuwe rekeninge en vir gekanselleerde rekeninge_
+_Kies die versteklyste vir nuwe accounts en vir gekanselleerde accounts_
 
-### Modus 2: Enkel Lys + Meerdere Groepe
+### Modus 2: Single List + Multiple Groups {#mode-2-single-list--multiple-groups}
 
-MailChimp laat jou toe om jou lys in kleiner groepe gebruikers te segmenteer, genoem **Groups**. Dit laat jou meer beheer toe, aangesien jy 'n veldtog kan stuur na 'n spesifieke subgroep van jou abonnees sonder om verskeie kopieë van dieselfde veldtog op MailChimp te skep (wat dit moeilik maak om die metrics van daardie veldtog later te ontleed).
+MailChimp laat jou toe om jou lys in kleiner groepe gebruikers te segmenteer, genaamd **Groepe**. Dit gee jou meer beheer, aangesien jy ’n veldtog na ’n spesifieke subset van jou intekenare kan stuur sonder om veelvuldige kopieë van dieselfde veldtog op MailChimp te hoef te skep (wat dit moeilik maak om die metrieke van daardie veldtog daarna te ontleed).
 
-Byvoorbeeld, jy kan 'n enkel lys hê genaamd **My Network Subscribers**, en binne dit groepe hê vir **Plan A** en **Plan B**.
+Byvoorbeeld, jy kan ’n enkele lys hê genaamd **My Network Subscribers,** en daarin groepe hê vir **Plan A** en **Plan B**.
 
 <!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
 
-_Kies die standaardlysse en groepe, indien jy die “single list + multiple groups” integrasie-modus gebruik_
+_Kies die versteklyste en groepe, indien jy die “enkele lys + veelvuldige groepe”-integrasiemodus gebruik_
 
-## Standaardlysse en Groepe
+## Versteklyste en -groepe {#default-lists-and-groups}
 
-Nadat jy gekies het watter integrasie-modus meer sin maak vir jou spesifieke gebruiksgeval, is dit tyd om die standaardlysse (en groepe, afhangende van die modus) te kies. Die standaardlys sal gebruik word wanneer 'n gegewe plan nie 'n spesifieke lys gekies het nie.
+Nadat jy gekies het watter integrasiemodus die meeste sin maak vir jou spesifieke gebruiksgeval, is dit tyd om die versteklyste (en groepe, afhangend van die modus) te kies. Die versteklys sal gebruik word wanneer ’n gegewe plan nie ’n spesifieke lys gekies het nie.
 
-Jy kan ook die standaardlys vir gekanselleerde rekeninge kies. Wanneer 'n gebruiker sy of haar inskrywing beëindig en sy of haar rekening van jou netwerk verwyder, sal sy of haar e-posadres na die lys wat vir gekanselleerde rekeninge gestel is, verskuif word.
+Jy kan ook die versteklys vir gekanselleerde rekeninge kies. Wanneer ’n gebruiker sy of haar intekening beëindig en sy of haar rekening uit jou netwerk verwyder, sal sy of haar e-posadres na die lys geskuif word wat vir gekanselleerde rekeninge gestel is.
 
-## Aktivering van Dubbel Inskrywing
+## Aktivering van dubbele intekening {#enabling-double-subscription}
 
-Op dieselfde instellingsblad sal jy **Dubbel Inskrywing** kan aktiveer. Hierdie opsie sal die gebruiker by beide die standaardlys wat gekies is en die lys wat aan die gebruiker se plan gekies is, voeg. As hierdie opsie nie geaktiveer is nie, sal die gebruiker slegs by die lys wat vir die gebruiker se plan gekies is, gevoeg word. As daar geen lys vir daardie spesifieke plan gestel is nie, sal die gebruiker by die standaardlys wat gekies is, gevoeg word.
+Op dieselfde instellingsbladsy sal jy **Double Subscription** kan aktiveer. Hierdie opsie sal die gebruiker by beide die versteklys wat gekies is EN die lys wat vir daardie gebruiker se plan gekies is, voeg. As hierdie opsie nie geaktiveer is nie, sal die gebruiker slegs by die lys gevoeg word wat vir die gebruiker se plan gekies is. As niks vir daardie spesifieke plan gestel is nie, sal die gebruiker by die versteklys wat gekies is, gevoeg word.
 
 <!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
 
-_Jy kan jou gebruikers inskryf by beide die standaardlys en die plan se lys op inskrywing_
+_Jy kan jou gebruikers by beide die versteklys en die plan se lys laat inteken wanneer hulle aansluit_
 
-## Lysse en Groepe kies vir elke plan
+## Lyste en groepe vir elkeen van die planne kies {#selecting-lists-and-groups-for-each-of-the-plans}
 
-Gaan na jou **Plans** en kies die plan wat jy wil wysig. Let daarop dat op die **Advanced Options** meta-box 'n nuwe oortjie genaamd MailChimp beskikbaar sal wees.
+Gaan na jou **Plans** en kies die plan wat jy wil wysig. Let daarop dat op die **Advanced Options**-metaboks ’n nuwe oortjie genaamd MailChimp beskikbaar sal wees.
 
-Op daardie oortjie sal jy verskeie lysse of 'n enkel lys en verskeie groepe (afhangende van die integrasie-modus) vir daardie plan kan kies.
+Op daardie oortjie sal jy veelvuldige lyste of ’n enkele lys en veelvuldige groepe (afhangend van die integrasiemodus) vir daardie plan kan kies.
 
 <!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
 
-_Kies die Lysse en Groepe wat jy vir elke van jou planne wil gebruik_
+_Kies die lyste en groepe wat jy vir elkeen van jou planne wil gebruik_
 
-Wanneer 'n nuwe gebruiker op daardie plan skryf, sal sy e-posadres by die gekose lysse en groepe gevoeg word!
+Wanneer ’n nuwe gebruiker vir daardie plan aansluit, sal sy e-posadres by die gekose lyste en groepe gevoeg word!

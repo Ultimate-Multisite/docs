@@ -3,17 +3,17 @@ title: 附加组件 Sunrise 文件加载器
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Addon Sunrise File Loader
+# Addon Sunrise File Loader {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 为 add-on 和自定义 MU-plugin 集成提供了一个 sunrise 扩展加载器。这些集成需要在 WordPress 的 sunrise 启动阶段运行，而无需直接编辑生成的 `wp-content/sunrise.php` 文件。
 
-## 何时使用它
+## 何时使用它 {#when-to-use-it}
 
 当您的集成必须在常规插件加载之前运行时，请使用 sunrise 扩展。例如，自定义域名路由、特定主机请求处理或早期网络启动调整。
 
 对于正常的集成，请优先使用常规 WordPress 插件、MU-plugins 以及文档中记录的 Ultimate Multisite hooks。Sunrise 代码运行得非常早，因此应该保持代码精简、防御性强，并且不依赖其他组件。
 
-## 文件命名约定
+## 文件命名约定 {#file-naming-convention}
 
 在 addon 目录下创建一个名为 `sunrise.php` 的 PHP 文件，该目录名称必须以 `ultimate-multisite-` 开头：
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 匹配的文件将按照 addon 路径的字母顺序加载。
 
-## 文件放置位置
+## 文件放置位置 {#where-to-place-the-file}
 
 请将文件放置在拥有 sunrise 行为的 addon 的根目录下：
 
@@ -45,7 +45,7 @@ wp-content/
 
 请勿直接编辑生成的 `wp-content/sunrise.php` 文件。使用此加载器可以在不修改 Ultimate Multisite 安装和更新的核心 sunrise 文件的情况下，让自定义代码扩展 sunrise 行为。
 
-## 可用的 Hooks 和 Filters
+## 可用的 Hooks 和 Filters {#hooks-and-filters-available}
 
 Addon sunrise 文件在 Ultimate Multisite 完成域名映射加载之后，并在 WordPress 触发 `ms_loaded` 之前运行。此时，一个 sunrise 文件可以：
 
@@ -58,7 +58,7 @@ Ultimate Multisite 在其 sunrise 加载器完成之后会触发 `wu_sunrise_loa
 
 只调用在 sunrise 阶段已经加载的函数。避免进行大量数据库操作、模板渲染、HTTP 请求，以及假设常规插件加载顺序已经完成的代码。
 
-## 最小示例
+## 最小示例 {#minimal-example}
 
 ```php
 <?php

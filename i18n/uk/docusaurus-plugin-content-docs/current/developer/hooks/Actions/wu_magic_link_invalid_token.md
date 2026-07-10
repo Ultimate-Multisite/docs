@@ -4,19 +4,19 @@ title: Дія - wu_magic_link_invalid_token
 sidebar_label: wu_magic_link_invalid_token
 _i18n_hash: 122806eb779ac296404a6984019a9e98
 ---
-# Дія: wu_magic_link_invalid_token
+# Дія: wu_magic_link_invalid_token {#action-wumagiclinkinvalidtoken}
 
 Викликається, коли виявлено недійсний токен магічного посилання.
 
-## Параметри
+## Параметри {#parameters}
 
 | Ім'я | Тип | Опис |
 |------|------|-------------|
 | $reason | `string` | Причина недійсного токена. |
 
-### Починаючи з
+### Починаючи з {#since}
 
 - 2.0.0
-### Джерело
+### Джерело {#source}
 
 Визначено в [`inc/sso/class-magic-link.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/class-magic-link.php#L326) на рядку 326

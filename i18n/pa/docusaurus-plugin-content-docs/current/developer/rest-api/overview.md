@@ -1,58 +1,58 @@
 ---
-title: REST API ਦਾ ਸੰਖੇਪ ਜਾਣਕਾਰੀ
+title: REST API ਸੰਖੇਪ ਜਾਣਕਾਰੀ
 sidebar_position: 1
-_i18n_hash: 4e511d92e0002dff445f45ff05adbeda
+_i18n_hash: cabcc173f6a77e5de94e39fff19bc2fa
 ---
-# REST API ਦਾ ਹਵਾਲਾ (Reference)
+# REST API ਹਵਾਲਾ {#rest-api-reference}
 
-## ਬੇਸ ਕਨਫਿਗਰੇਸ਼ਨ (Base Configuration)
+## ਆਧਾਰ ਸੰਰਚਨਾ {#base-configuration}
 
-**Base URL:** `{site_url}/wp-json/wu/v2/`
-**Authentication:** API Key ਅਤੇ Secret (HTTP Basic Auth ਜਾਂ URL Parameters)
+**ਆਧਾਰ URL:** `{site_url}/wp-json/wu/v2/`
+**ਪ੍ਰਮਾਣੀਕਰਨ:** API ਕੁੰਜੀ ਅਤੇ ਰਾਜ਼ (HTTP Basic Auth ਜਾਂ URL ਪੈਰਾਮੀਟਰ)
 
-## ਪ੍ਰਮਾਣਿਕਤਾ (Authentication)
+## ਪ੍ਰਮਾਣੀਕਰਨ {#authentication}
 
-### API ਨੂੰ ਐਨੇਬਲ ਕਰਨਾ
+### API ਸਮਰੱਥ ਕਰੋ {#enable-api}
 ```php
-// Ultimate Multisite ਸੈਟਿੰਗਸ ਵਿੱਚ ਜਾਂ ਕੋਡ ਰਾਹੀਂ API ਨੂੰ ਐਨੇਬਲ ਕਰੋ
+// Enable API in Ultimate Multisite settings or programmatically
 wu_save_setting('enable_api', true);
 ```
 
-### API ਕ੍ਰੈਡੈਂਸ਼ੀਅਲਸ ਪ੍ਰਾਪਤ ਕਰਨਾ
+### API ਪ੍ਰਮਾਣ-ਪੱਤਰ ਪ੍ਰਾਪਤ ਕਰੋ {#get-api-credentials}
 ```php
 $api_key = wu_get_setting('api_key');
 $api_secret = wu_get_setting('api_secret');
 ```
 
-### ਪ੍ਰਮਾਣਿਕਤਾ ਦੇ ਤਰੀਕੇ (Authentication Methods)
+### ਪ੍ਰਮਾਣੀਕਰਨ ਢੰਗ {#authentication-methods}
 
-**HTTP Basic Auth (ਸਿਫਾਰਸ਼ ਕੀਤਾ ਜਾਂਦਾ ਹੈ):**
+**HTTP Basic Auth (ਸਿਫ਼ਾਰਸ਼ੀ):**
 ```bash
 curl -u "api_key:api_secret" https://yoursite.com/wp-json/wu/v2/customers
 ```
 
-**URL Parameters:**
+**URL ਪੈਰਾਮੀਟਰ:**
 ```bash
 curl "https://yoursite.com/wp-json/wu/v2/customers?api_key=your_key&api_secret=your_secret"
 ```
 
-## ਮੁੱਖ ਐਂਡਪੁਆਇੰਟਸ (Core Endpoints)
+## ਮੁੱਖ ਅੰਤ-ਬਿੰਦੂ {#core-endpoints}
 
-### 1. ਗਾਹਕ API (Customers API)
+### 1. ਗਾਹਕ API {#1-customers-api}
 
-**Base Route:** `/customers`
+**ਆਧਾਰ ਰੂਟ:** `/customers`
 
-**ਸਾਰੇ ਗਾਹਕਾਂ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨਾ (Get All Customers)**
+**ਸਾਰੇ ਗਾਹਕ ਪ੍ਰਾਪਤ ਕਰੋ**
 ```http
 GET /wu/v2/customers
 ```
 
-**ਇੱਕ ਗਾਹਕ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨਾ (Get Single Customer)**
+**ਇੱਕ ਗਾਹਕ ਪ੍ਰਾਪਤ ਕਰੋ**
 ```http
 GET /wu/v2/customers/{id}
 ```
 
-**ਗਾਹਕ ਬਣਾਉਣਾ (Create Customer)**
+**ਗਾਹਕ ਬਣਾਓ**
 ```http
 POST /wu/v2/customers
 Content-Type: application/json
@@ -66,27 +66,27 @@ Content-Type: application/json
 }
 ```
 
-**ਗਾਹਕ ਨੂੰ ਅਪਡੇਟ ਕਰਨਾ (Update Customer)**
+**ਗਾਹਕ ਅੱਪਡੇਟ ਕਰੋ**
 ```http
 PUT /wu/v2/customers/{id}
 Content-Type: application/json
 
 {
     "vip": true,
-    "extra_information": "VIP ਗਾਹਕ ਨੋਟਸ"
+    "extra_information": "VIP customer notes"
 }
 ```
 
-**ਗਾਹਕ ਨੂੰ ਮਿਟਾਉਣਾ (Delete Customer)**
+**ਗਾਹਕ ਮਿਟਾਓ**
 ```http
 DELETE /wu/v2/customers/{id}
 ```
 
-### 2. ਸਾਈਟਾਂ API (Sites API)
+### 2. ਸਾਈਟਾਂ API {#2-sites-api}
 
-**Base Route:** `/sites`
+**ਆਧਾਰ ਰੂਟ:** `/sites`
 
-**ਸਾਈਟ ਬਣਾਉਣਾ (Create Site)**
+**ਸਾਈਟ ਬਣਾਓ**
 ```http
 POST /wu/v2/sites
 Content-Type: application/json
@@ -102,11 +102,11 @@ Content-Type: application/json
 }
 ```
 
-### 3. ਮੈਂਬਰਸ਼ਿਪ API (Memberships API)
+### 3. ਮੈਂਬਰਸ਼ਿਪਾਂ API {#3-memberships-api}
 
-**Base Route:** `/memberships`
+**ਆਧਾਰ ਰੂਟ:** `/memberships`
 
-**ਮੈਂਬਰਸ਼ਿਪ ਬਣਾਉਣਾ (Create Membership)**
+**ਮੈਂਬਰਸ਼ਿਪ ਬਣਾਓ**
 ```http
 POST /wu/v2/memberships
 Content-Type: application/json
@@ -121,20 +121,20 @@ Content-Type: application/json
 }
 ```
 
-### 4. ਪ੍ਰੋਡਕਟਸ API (Products API)
+### 4. ਉਤਪਾਦ API {#4-products-api}
 
-**Base Route:** `/products`
+**ਆਧਾਰ ਰੂਟ:** `/products`
 
-**ਸਾਰੇ ਪ੍ਰੋਡਕਟਸ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰਨਾ (Get All Products)**
+**ਸਾਰੇ ਉਤਪਾਦ ਪ੍ਰਾਪਤ ਕਰੋ**
 ```http
 GET /wu/v2/products
 ```
 
-### 5. ਭੁਗਤਾਨ API (Payments API)
+### 5. ਭੁਗਤਾਨ API {#5-payments-api}
 
-**Base Route:** `/payments`
+**ਆਧਾਰ ਰੂਟ:** `/payments`
 
-**ਭੁਗਤਾਨ ਬਣਾਉਣਾ (Create Payment)**
+**ਭੁਗਤਾਨ ਬਣਾਓ**
 ```http
 POST /wu/v2/payments
 Content-Type: application/json
@@ -150,11 +150,11 @@ Content-Type: application/json
 }
 ```
 
-### 6. ਡੋਮੇਨ API (Domains API)
+### 6. ਡੋਮੇਨ API {#6-domains-api}
 
-**Base Route:** `/domains`
+**ਆਧਾਰ ਰੂਟ:** `/domains`
 
-**ਡੋਮੇਨ ਮੈਪ ਕਰਨਾ (Map Domain)**
+**ਡੋਮੇਨ ਮੈਪ ਕਰੋ**
 ```http
 POST /wu/v2/domains
 Content-Type: application/json
@@ -167,9 +167,9 @@ Content-Type: application/json
 }
 ```
 
-## ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਐਂਡਪੁਆਇੰਟ (Registration Endpoint)
+## ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਅੰਤ-ਬਿੰਦੂ {#registration-endpoint}
 
-`/register` ਐਂਡਪੁਆਇੰਟ ਇੱਕ ਪੂਰਾ ਚੈੱਕਆਉਟ/ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਫਲੋ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ:
+`/register` ਅੰਤ-ਬਿੰਦੂ ਪੂਰਾ checkout/ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਪ੍ਰਵਾਹ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ:
 
 ```http
 POST /wu/v2/register
@@ -199,7 +199,7 @@ Content-Type: application/json
 }
 ```
 
-**ਜਵਾਬ (Response):**
+**ਜਵਾਬ:**
 ```json
 {
     "customer": { ... },
@@ -209,7 +209,40 @@ Content-Type: application/json
 }
 ```
 
-## ਗਲਤੀ ਦੇ ਜਵਾਬ (Error Responses)
+## ਸਵੈ-ਸਰਬਭੌਮ ਕਿਰਾਏਦਾਰ ਅੰਤ-ਬਿੰਦੂ {#sovereign-tenant-endpoints}
+
+Ultimate Multisite: Multi-Tenancy 1.2.0 ਉਹਨਾਂ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਲਈ ਸਵੈ-ਸਰਬਭੌਮ ਕਿਰਾਏਦਾਰ REST ਕਵਰੇਜ ਜੋੜਦਾ ਹੈ ਜੋ ਅਲੱਗ-ਥਲੱਗ ਕਿਰਾਏਦਾਰਾਂ ਨੂੰ ਪ੍ਰਾਵਿਜ਼ਨ, ਜਾਂਚ ਜਾਂ ਤਸਦੀਕ ਕਰਦੇ ਹਨ।
+
+ਸਟੀਕ ਬੇਨਤੀ ਪੇਲੋਡ ਸਮਰੱਥ ਹੋਸਟ ਸਮਰੱਥਾ ਉੱਤੇ ਨਿਰਭਰ ਕਰਦਾ ਹੈ, ਪਰ ਇੰਟੀਗ੍ਰੇਸ਼ਨਾਂ ਨੂੰ ਇਨ੍ਹਾਂ ਅੰਤ-ਬਿੰਦੂ ਸਮੂਹਾਂ ਦੀ ਉਮੀਦ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ:
+
+```http
+POST /wu/v2/tenants/{site_id}/bootstrap
+GET /wu/v2/tenants/{site_id}/migration-status
+POST /wu/v2/tenants/{site_id}/verify
+DELETE /wu/v2/tenants/{site_id}
+```
+
+ਕਿਰਾਏਦਾਰ ਰਜਿਸਟਰੀ, ਡਾਟਾਬੇਸ, ਫਾਈਲ ਸਿਸਟਮ ਅਤੇ ਰੂਟਿੰਗ ਸਥਿਤੀ ਤਿਆਰ ਕਰਨ ਲਈ bootstrap ਅੰਤ-ਬਿੰਦੂ ਵਰਤੋ। ਉਤਪਾਦਨ ਟ੍ਰੈਫਿਕ ਸਵਿੱਚ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ migration status ਅਤੇ verification ਅੰਤ-ਬਿੰਦੂ ਵਰਤੋ। ਸਵੈ-ਸਰਬਭੌਮ ਵਿਘਟਨ ਲਈ deletion ਅੰਤ-ਬਿੰਦੂ ਵਰਤੋ ਤਾਂ ਜੋ ਡਾਟਾਬੇਸ ਪ੍ਰਮਾਣ-ਪੱਤਰ addon cleanup ਪ੍ਰਵਾਹ ਰਾਹੀਂ ਹਟਾਏ ਜਾਣ।
+
+ਆਮ migration status ਜਵਾਬਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ:
+
+```json
+{
+    "site_id": 123,
+    "isolation_model": "sovereign",
+    "database_host": "localhost",
+    "verification": {
+        "no_legacy": "passed",
+        "sovereign_push": "passed",
+        "tenant_users": "passed"
+    },
+    "ready": true
+}
+```
+
+`ready: false` ਨੂੰ ਪ੍ਰੀ-ਲਾਂਚ ਰੋਕ ਵਜੋਂ ਮੰਨੋ। verification ਵੇਰਵਿਆਂ ਦੀ ਜਾਂਚ ਕਰੋ, ਡਾਟਾਬੇਸ ਹੋਸਟ ਬਾਈਂਡਿੰਗ, ਕਤਾਰ, ਵਰਤੋਂਕਾਰ ਪ੍ਰਾਵਿਜ਼ਨਿੰਗ ਜਾਂ ਰੂਟਿੰਗ ਸਮੱਸਿਆ ਠੀਕ ਕਰੋ, ਫਿਰ verification ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।
+
+## ਗਲਤੀ ਜਵਾਬ {#error-responses}
 
 ```json
 {
@@ -224,18 +257,18 @@ Content-Type: application/json
 }
 ```
 
-## ਪੇਜੇਸ਼ਨ ਅਤੇ ਫਿਲਟਰਿੰਗ (Pagination and Filtering)
+## ਪੇਜੀਨੇਸ਼ਨ ਅਤੇ ਫਿਲਟਰਿੰਗ {#pagination-and-filtering}
 
-**Query Parameters:**
+**ਕੁਐਰੀ ਪੈਰਾਮੀਟਰ:**
 ```http
 GET /wu/v2/customers?per_page=20&page=2&search=john&status=active
 ```
 
-ਆਮ ਪੈਰਾਮੀਟਰਸ (Common parameters):
-- `per_page` - ਪ੍ਰਤੀ ਪੰਨਾ ਆਈਟਮਾਂ ਦੀ ਗਿਣਤੀ (default: 20, max: 100)
-- `page` - ਪੰਨੇ ਦਾ ਨੰਬਰ
-- `search` - ਖੋਜਣ ਵਾਲਾ ਸ਼ਬਦ (Search term)
-- `orderby` - ਸੌਰਟ ਕਰਨ ਵਾਲਾ ਫੀਲਡ
-- `order` - ਸੌਰਟ ਕਰਨ ਦੀ ਦਿਸ਼ਾ (asc/desc)
-- `status` - ਸਟੇਟਸ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ
-- `date_created` - ਤਰੀਕਾ ਸੀਮਾ (date range) ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ
+ਆਮ ਪੈਰਾਮੀਟਰ:
+- `per_page` - ਪ੍ਰਤੀ ਪੰਨਾ ਆਈਟਮਾਂ (ਮੂਲ: 20, ਅਧਿਕਤਮ: 100)
+- `page` - ਪੰਨਾ ਨੰਬਰ
+- `search` - ਖੋਜ ਸ਼ਬਦ
+- `orderby` - ਛਾਂਟਣ ਵਾਲਾ ਖੇਤਰ
+- `order` - ਛਾਂਟਣ ਦੀ ਦਿਸ਼ਾ (asc/desc)
+- `status` - ਸਥਿਤੀ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ
+- `date_created` - ਮਿਤੀ ਦੀ ਸੀਮਾ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ

@@ -3,19 +3,19 @@ title: سەرکردای Stripeی دانان
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# راکردن گیت‌وی Stripe (نسخه v2)
+# راکردن گیت‌وی Stripe (نسخه v2) {#setting-up-the-stripe-gateway-v2}
 
 _**توجه مهم: این مقاله به Ultimate Multisite نسخه 2.x اشاره دارد.**_
 
 شما می‌توانید تا چهار روش پرداخت را در صفحه تنظیمات پرداخت خود فعال کنید: Stripe، Stripe Checkout، PayPal و دستی. در این مقاله، نحوه ادغام با **Stripe** را خواهیم دید.
 
-## فعال کردن Stripe
+## فعال کردن Stripe {#enabling-stripe}
 
 برای فعال کردن Stripe به عنوان یک دروازه پرداخت موجود در شبکه خود، به مسیر **Ultimate Multisite > Settings > Payments** بروید و دکمه کنار **Stripe** یا **Stripe Checkout** در بخش Active Payment Gateways را تیک بزنید.
 
 ![فعال کردن Stripe در دروازه‌های پرداخت فعال](/img/config/settings-payment-gateways.png)
 
-### Stripe در مقابل Stripe Checkout:
+### Stripe در مقابل Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** این روش فضایی برای وارد کردن شماره کارت اعتباری در طول فرآیند خرید نشان می‌دهد.
 
@@ -47,7 +47,7 @@ _**نکته:** شما می‌توانید **Sandbox mode** را برای تست 
 
 ![Pasting Stripe keys in Ultimate Multisite settings](/img/config/settings-payment-gateways.png)
 
-## ڕێکخستنی Stripe Webhook
+## ڕێکخستنی Stripe Webhook {#setting-up-stripe-webhook}
 
 Stripe پەیامە webhook (webhook events) دەدات کە هەر کاتێک جۆرێک لە ڕوودۆک لە **حسابی stripe** یەکەت ڕوودەدات، Ultimate Multisite ئاگادار دەکاتەوە.
 

@@ -3,11 +3,11 @@ title: Uburyo bwo kwibanda ku Theme Builder
 sidebar_position: 17
 _i18n_hash: 67d84d7e08c2ccfaa459bba0c40cb1ea
 ---
-# Urugerer Ubwumva W'Umuhanga (Theme Builder Onboarding Flow)
+# Urugerer Ubwumva W'Umuhanga (Theme Builder Onboarding Flow) {#theme-builder-onboarding-flow}
 
 Superdav AI Agent v1.12.0 yitangira **uwo muhanga w'ubwumva (Theme Builder onboarding flow)** uho muvugwa kandi ubufasha ukugira umuhere w'ubushobozi bwawe bwiza, uho gukora theme ya custom cyane mu gihe cyo gutangira. Iyo igihe cyo mbere, iyo ubanze Site Builder mode (mode y'ubwumva) n'uwo mu buryo ufite ubwoba kandi wibone ubufasha bw'agent.
 
-## Uburyo bwo muhanga w'ubwumva (Theme Builder Onboarding Flow) ni iki?
+## Uburyo bwo muhanga w'ubwumva (Theme Builder Onboarding Flow) ni iki? {#what-is-the-theme-builder-onboarding-flow}
 
 Uwo muhanga w'ubwumva ni umuganda w'ubwumva (setup wizard) witeguye ukugira ibi:
 
@@ -18,9 +18,9 @@ Uwo muhanga w'ubwumva ni umuganda w'ubwumva (setup wizard) witeguye ukugira ibi:
 
 Uwo muhanga uho muvugwa n'ubushobozi bwa **Setup Assistant agent**, uwo mufasha gufata ibyo ushaka kandi uburyo bwo gutera theme yawe mu gihe cyo gutera.
 
-## Gutangira Umuhanga w'ubwumva (Starting the Theme Builder Onboarding)
+## Gutangira Umuhanga w'ubwumva (Starting the Theme Builder Onboarding) {#starting-the-theme-builder-onboarding}
 
-### Gukora Icyo Cy'Urugero (First-Run Setup)
+### Gukora Icyo Cy'Urugero (First-Run Setup) {#first-run-setup}
 
 Iyo ubanze Superdav AI Agent ku mpamvu ya WordPress yashya, uza kubona iki:
 
@@ -35,7 +35,7 @@ Ubwishaka gukora iki?
 
 Wumva **"Gukora theme ya custom"** kugira ngo uingire mu muhanga w'ubwumva.
 
-### Gukora Icyo Cy'Urugero (Manual Activation)
+### Gukora Icyo Cy'Urugero (Manual Activation) {#manual-activation}
 
 Ushobora kandi gutangira muhanga w'ubwumva mu gihe cyose ukusaba:
 
@@ -49,9 +49,9 @@ cyangwa
 "Help me create a custom theme"
 ```
 
-## Icyiciro Cy'Umuhanga (The Onboarding Steps)
+## Icyiciro Cy'Umuhanga (The Onboarding Steps) {#the-onboarding-steps}
 
-### Icyiciro 1: Ubwoba bwo Gukora (Mode Selection)
+### Icyiciro 1: Ubwoba bwo Gukora (Mode Selection) {#step-1-mode-selection}
 
 Setup Assistant agent yandikira ku buryo uhoza gukora theme yawe:
 
@@ -63,7 +63,7 @@ Ushaka gukora theme yawe mu buryo bwo?
 
 **Uburyo bwo guhagarara (Guided mode)** ni umuntu ushobora gukoresha cyane; agent yandikira amashanyarazi ku buryo bw'ubushobozi bwawe n'ibyo uhoza.
 
-### Icyiciro 2: Ubwoba bwo Site (Site Specification)
+### Icyiciro 2: Ubwoba bwo Site (Site Specification) {#step-2-site-specification}
 
 Ushobora kubazwa ibi kuri site yawe:
 
@@ -74,7 +74,7 @@ Ushobora kubazwa ibi kuri site yawe:
 
 Iyi makuru yose irimo mu **site_brief** memory yawe, kandi abantu b'ubwujobozi (agents) bafite inama ku gihe cy'ibindi.
 
-### Icyemezo cy'Uburyo bw'ingingo (Step 3: Design System Decisions)
+### Icyemezo cy'Uburyo bw'ingingo (Step 3: Design System Decisions) {#step-3-design-system-decisions}
 
 Igihe cyo gukora ibyemezo by'uburyo bw'ingingo, umuntu w'ubwujobozi yugence ku gihe cyo gutanga design tokens:
 
@@ -83,7 +83,7 @@ Igihe cyo gukora ibyemezo by'uburyo bw'ingingo, umuntu w'ubwujobozi yugence ku g
 - **Spacing**: Uburyo bwo gutanga ubwoko bw'ingingo (compact, normal, cyangwa spacious layouts).
 - **Motion**: Icyemezo cy'ibikorwa by'umwihariko n'ibikorwa by'uburyo (if desired).
 
-### Gutanga Uburyo bw'ingingo (Step 4: Theme Generation)
+### Gutanga Uburyo bw'ingingo (Step 4: Theme Generation) {#step-4-theme-generation}
 
 Umuntu w'ubwujobozi w'Umuvugizi (Setup Assistant agent) yugence uburyo bwo gukora theme yawe ya custom ku gihe cyo gutanga ibi bikurikira:
 
@@ -92,7 +92,7 @@ Umuntu w'ubwujobozi w'Umuvugizi (Setup Assistant agent) yugence uburyo bwo gukor
 - Styles za block zikoresheje design system yawe
 - Metadata ya theme n'ibyo uburyo bwo gukoresha WordPress
 
-### Gutangira no Gushyira mu bikorwa (Step 5: Activation and Verification)
+### Gutangira no Gushyira mu bikorwa (Step 5: Activation and Verification) {#step-5-activation-and-verification}
 
 Theme igaragara cyangwa ikoreshwa mu gihe cyo gutanga, kandi uza kumenya iki:
 
@@ -107,7 +107,7 @@ Theme igaragara cyangwa ikoreshwa mu gihe cyo gutanga, kandi uza kumenya iki:
 
 Icyose, uza kumenya site yawe kugira ngo yari itangiraho neza mu gukoresha.
 
-## Icyemezo cy'Uburyo bwo Gukora Site n'site_brief Memory
+## Icyemezo cy'Uburyo bwo Gukora Site n'site_brief Memory {#site-specification-and-sitebrief-memory}
 
 Mu gihe cyo gutanga ibyo (onboarding), umuntu w'ubwujobozi yugence uburyo bw'isondwa yawe mu category ya **site_brief** memory. Iyi makuru zikoresha:
 
@@ -117,7 +117,7 @@ Mu gihe cyo gutanga ibyo (onboarding), umuntu w'ubwujobozi yugence uburyo bw'iso
 - Icyemezo cy'uburyo bw'ingingo
 - Uburyo bwo gutanga ibintu
 
-### Uburyo bwo gukoresha site_brief Memory
+### Uburyo bwo gukoresha site_brief Memory {#why-sitebrief-matters}
 
 Mu gihe cyo gukora ibi bikurikira, abantu bafite inama ku gihe cyo gukoresha **site_brief** memory kugira ngo:
 
@@ -137,11 +137,11 @@ cyangwa
 
 Umwujiza uzakubwira ibyo wariwe yagize mu gukoresha.
 
-## Gukoresha Icyiza Nyuma Y'uko Ugiye Gutangira (Onboarding)
+## Gukoresha Icyiza Nyuma Y'uko Ugiye Gutangira (Onboarding) {#viewing-your-sitebrief}
 
 Nyuma yo gukemura uburyo bwo gutangira Theme Builder, uza kuba:
 
-### Gukoresha Ubushobozi bwo Design System Aesthetics Skill
+### Gukoresha Ubushobozi bwo Design System Aesthetics Skill {#customizing-after-onboarding}
 
 Gukoresha ibyo:
 
@@ -157,7 +157,7 @@ cyangwa
 
 **Design System Aesthetics skill** izakubwira uko uza gukora uburyo bwo guhindura design mu buryo bwiza.
 
-### Gukoresha theme.json Gutera
+### Gukoresha theme.json Gutera {#use-the-design-system-aesthetics-skill}
 
 Abantu bashobora bakoresha ibyo: Edit `/wp-content/themes/[theme-name]/theme.json` kugira ngo wihindure:
 
@@ -166,7 +166,7 @@ Abantu bashobora bakoresha ibyo: Edit `/wp-content/themes/[theme-name]/theme.jso
 - Spacing values (amabwiriza y'umutekano hagati)
 - Border and shadow definitions (ibyo bikorera umukoresha n'umutekano mu gukoresha)
 
-### Gukora Custom Block Templates
+### Gukora Custom Block Templates {#edit-themejson-directly}
 
 Gukoresha block editor ya WordPress kugira ngo wukore templates zikoreshwa ku:
 
@@ -175,7 +175,7 @@ Gukoresha block editor ya WordPress kugira ngo wukore templates zikoreshwa ku:
 - Product pages (Icyongereza cy'ibintu bikoreshwa mu dukoresha)
 - Contact forms (Amabwiriza y'ubwumvikane)
 
-## Uburyo bwo Gukumbura: Mu gihe cy'Uburyo Bwo Gutangira (Onboarding)
+## Uburyo bwo Gukumbura: Mu gihe cy'Uburyo Bwo Gutangira (Onboarding) {#create-custom-block-templates}
 
 | Icyiciro | Site Builder (Icyerekeza) | Theme Builder (Urururu) |
 |---|---|---|
@@ -185,7 +185,7 @@ Gukoresha block editor ya WordPress kugira ngo wukore templates zikoreshwa ku:
 | Uburyo bwo guhindura | Icyerekeza cyangwa cyiza | Gukoreshwa cyane |
 | Uburyo bwo gutera mu gihe cy'ubwoko | Nta gukumburwa | Gutagize mu site_brief |
 
-## Guhagararira Icyiciro (Troubleshooting)
+## Guhagararira Icyiciro (Troubleshooting) {#comparison-old-vs-new-onboarding}
 
 **Uburyo bwo gutangira ntabyo yisigye**
 - Gukoresha cyane: "Start the Theme Builder onboarding"
@@ -202,7 +202,7 @@ Gukoresha block editor ya WordPress kugira ngo wukore templates zikoreshwa ku:
 - Muvuga ku umuntu: "Regenerate the theme with [specific changes]" (Gusubiza uburyo bw'umuri n'ibyo wifuza)
 - Gukora ubutumwa bwa theme.json mu buryo bwawe kugira ngo ubone neza
 
-## Icyemezo cy'Umuco (Next Steps)
+## Icyemezo cy'Umuco (Next Steps) {#troubleshooting}
 
 Nyuma yisobanura gukoresha Theme Builder:
 

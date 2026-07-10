@@ -3,11 +3,11 @@ title: Ttrasliż tal-Ultimate Multisite
 sidebar_position: 19
 _i18n_hash: a433d81386db16579adeb9a60f6af240
 ---
-# Traduzzjoni ta Ultimate Multisite
+# Traduzzjoni ta Ultimate Multisite {#translating-ultimate-multisite}
 
 L-Ultimate Multisite tivt sviluppat b'l-Ingliż, iżda il-plugin huwa transabbil għal kollha u nħobb b'mod aktattiv kontributi tal-traduzzjoni.
 
-## Traduzzjonijiet tal-Plugin Primari
+## Traduzzjonijiet tal-Plugin Primari {#core-plugin-translations}
 
 Il-plugin primari ta Ultimate Multisite jitfrannu per id-definita **plattforma tat-traduzzjoni oħra**:
 
@@ -24,7 +24,7 @@ Dan huwa sistema tat-traduzzjoni standard tal-komunità ta WordPress. Meta l-tra
 
 Meta tħseb li tista' twila editor ta traduzzjoni għall-lingwa tiegħek (li tista' approvizzjoni traduzzjonijiet), tikkunsidra l-GitHub Discussions: [https://github.com/Ultimate-Multisite/ultimate-multisite/discussions](https://github.com/Ultimate-Multisite/ultimate-multisite/discussions).
 
-## Traduzzjonijiet tal-Addons (Addon Translations)
+## Traduzzjonijiet tal-Addons (Addon Translations) {#addon-translations}
 
 Il-plugin addoni jitfrannu separat f:
 
@@ -32,11 +32,11 @@ Il-plugin addoni jitfrannu separat f:
 
 Il-traduzzjonijiet tal-addoni huma għal propost biex jidħlu l-Intelligenza Artificiali (AI). Humma koperti kull lingwa tad-deċydda, iżda tista' jkollhom frasiawk awtrali jew inkorreżjonijiet. Nħobb traduttori umani jippruwdu u jipproppojaw miglioramenti biex huma aktar naturali u precisi.
 
-## Traduzzjonijiet Lokali
+## Traduzzjonijiet Lokali {#local-translations}
 
 אם תרצה ליצור תרגומים מקומי לפרויקט שלך במקום לתרום למקור, יש לך שתי אפשרויות:
 
-### שימוש ב-Poedit
+### שימוש ב-Poedit {#using-poedit}
 
 אתה יכול להשתמש ביישום שולחני **[Poedit](https://poedit.net)** כדי לתרגם את הקובץ `.pot`:
 
@@ -46,6 +46,6 @@ Il-traduzzjonijiet tal-addoni huma għal propost biex jidħlu l-Intelligenza Art
 4. שמור -- Poedit יפיק עבורך קבצי `.po` ו-`.mo`
 5. מקם את הקבצים שנוצרו בתיקייה `lang`
 
-### שימוש ב-Loco Translate
+### שימוש ב-Loco Translate {#using-loco-translate}
 
 התוסף **[Loco Translate](https://wordpress.org/plugins/loco-translate/)** של WordPress מאפשר לך לתרגם ישירות מהלוח הניהול (admin panel) בלי צורך בכלים שולחניים. הוא מטפל ביצירה ובהפעלת קבצי התרגום עבורך.

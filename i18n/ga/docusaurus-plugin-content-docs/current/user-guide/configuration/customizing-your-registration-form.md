@@ -1,150 +1,156 @@
 ---
-title: An t-amhasadh do chuid form ríomhphoistíochta
+title: Do Fhoirm Chláraithe a Shaincheapadh
 sidebar_position: 17
-_i18n_hash: 13f72671d55f48becd6bd89f6571f111
+_i18n_hash: 3dada0e900a1f46d950e1815ae8f5085
 ---
-# Aistriúchán ar formáil an t-aonráin agat
+# Do Fhoirm Chláraithe a Shaincheapadh {#customizing-your-registration-form}
 
-Leat a bheith an t-aonráin agat ag teacht chun éadromtacht ó chuid eile SaaS a bhailte ar platform WordPress, leannítear Ultimate Multisite go léiríonn sé go bhfuil tú ag teacht. Le linn a bheith i gcónaí, is é sin curte ábhairt ar fáil agus foirfeach chun ardánacha nua a chothabhairt, ach is é sin an t-aonráin a bhailte leat chun formáid aistriúla a chur i gcomhthéacs. Tá an curte seo ag teacht chun aistriúcháin pearsantaithe a dhéanamh. Is é seo an t-amach a chosúil go bhfuil sé ag teacht.
+Chun cuma uathúil a chur ar do líonra i gcomparáid leis na SaaS eile ar fad atá tógtha ar ardán WordPress, ligeann Ultimate Multisite duit do leathanaigh chlárúcháin agus logála isteach a shaincheapadh lenár ngné **Foirmeacha Checkout**.
 
-## Páipéad login agus aistriúchán:
+Cé gur bealach éasca agus solúbtha iad chun triail a bhaint as cuir chuige éagsúla agus tú ag iarraidh custaiméirí nua a thiontú, úsáidtear iad den chuid is mó chun foirmeacha cláraithe pearsantaithe a chruthú. Tá sé mar aidhm ag an alt seo a thaispeáint duit conas is féidir leat é sin a dhéanamh.
 
-Ar dtús, tar éifeachtach a chur ar fáil Ultimate Multisite, curte ábhairt login agus aistriúchán pearsanta ar an site bunaithe agat. Is féidir leat an páipéadan seo athrú amach ag cur isteach ar **Ultimate Multisite > Settings > Login & Registration**.
+## Leathanaigh logála isteach agus chlárúcháin: {#login-and-registration-pages}
 
-![Páipéad login agus aistriúchán settings](/img/config/settings-general.png)
+Nuair a shuiteáiltear Ultimate Multisite, cruthaíonn sé leathanaigh shaincheaptha logála isteach agus chlárúcháin go huathoibríoch ar do phríomhshuíomh. Is féidir leat na leathanaigh réamhshocraithe seo a athrú am ar bith trí dhul chuig do leathanach **Ultimate Multisite > Settings > Login & Registration**.
 
-Seo curte fada ar an páipéadan setting login agus aistriúchán:
+![Leathanach socruithe Logála Isteach agus Clárúcháin](/img/config/settings-general.png)
 
-![Páipéad login agus aistriúchán settings full page](/img/config/settings-login-registration-full.png)
+Seo radharc iomlán ar leathanach socruithe an logála isteach agus an chlárúcháin:
 
-Déanannám chun an curte sin a fheiceáil ar chomh maith leis an curte sin a bheith agat ar an **Login & Registration**:
+![Leathanach iomlán socruithe Logála Isteach agus Clárúcháin](/img/config/settings-login-registration-full.png)
 
-  * **Enable registration (Féachaint aistriúcháin):** Is é seo an curte a leagan nó a fhágáil aistriúchán ar do ngrú. Má tá sé ag fhágáil, ní féidir leis na chuid istireacha aistriúchán a dhéanamh agus a chur i gcomhthéacs ar do guthanna.
+Breathnaímis ar gach ceann de na roghanna is féidir leat a shaincheapadh ar an leathanach **Login & Registration**:
 
-  * **Enable email verification (Féachaint e-mail):** Má tá an curte seo ag fháil, bbeidh na chuid istireacha a bhfuil siad ag teacht le plan gréimnéis nó plan le tairgseán ag tairgseán, beidh siad ag tairgseán e-mail agus beidh siad ag iarraidh cliceáil ar an link fháil chun na websites a chur i gcomhthéacs.
+  * **Cumasaigh clárú:** Cumasóidh nó díchumasóidh an rogha seo an clárú ar do líonra. Má mhúchtar é, ní bheidh do chustaiméirí in ann clárú ná liostáil le do tháirgí.
 
-* **Páirc ro fáilte (Default registration page):** Is é an cur síne ro fáilte ar an cur síne de athchrua. Caithfidh an cur síne seo bheith ag cur síne ar do websait agus phải a fáil (a bheith ag cur síne) - léiri an cur síne seo a bhfaidh do chliachta a chur i gceol ar do rialta. Is féidir leat a chur arís cur síne ro fáilte agus form cur síne (a bheith ag cur síne) mar atá ag tú, ach é a bheith agat an cur síne de athchrua ar an cur síne ro fáilte, eile níl *wp-login.php*.
+  * **Cumasaigh fíorú ríomhphoist:** Má chuirtear an rogha seo ar siúl, gheobhaidh custaiméirí a liostálann le plean saor in aisce nó le plean íoctha a bhfuil tréimhse trialach aige ríomhphost fíoraithe agus beidh orthu cliceáil ar an nasc fíoraithe chun a suíomhanna gréasáin a chruthú.
 
-* **Use custom login page:** Le túin seo leat a bheith ag úsáid cur síne cur síne (login page) a bhuaite go hiomlán, eile níl an cur síne de athchrua ar *wp-login.php*. Má tá an cur síne seo ar fáil, is féidir leat a chosaint atá a chur i gceol chun cur síne a bheith ag úsáid ar **Default login page** (ar an bhfáth ar an cur síne de athchrua).
+  * **Leathanach cláraithe réamhshocraithe:** Seo é an leathanach réamhshocraithe don chlárú. Ní mór an leathanach seo a bheith foilsithe ar do shuíomh gréasáin agus foirm chláraithe a bheith air (ar a dtugtar foirm checkout freisin) - áit a liostálfaidh do chliaint le do tháirgí. Is féidir leat an oiread leathanaigh chlárúcháin agus foirmeacha checkout agus is mian leat a chruthú, ach cuimhnigh an shortcode don fhoirm checkout a chur ar an leathanach cláraithe; murach sin, ní thaispeánfar í.
 
-* **Obfuscate the original login url (wp-login.php)**: Má tá tú ag iarraidh a cheart an cur síne cur síne origialt (wp-login.php) a chosaint, is féidir leat an cur síne seo ar fáil a chur ar fáil. Is é seo ag cur isteach chun athrúcháin brute-force a cheart. Má tá an cur síne seo ar fáil, beidh Ultimate Multisite ag tairiscint an cur síne 404 nuair a dhéanann cur chliachta cur síne ar an línn *wp-login.php* ar chuid na duine.
+  * **Úsáid leathanach logála isteach saincheaptha:** Ligeann an rogha seo duit leathanach logála isteach saincheaptha a úsáid, seachas an leathanach réamhshocraithe wp-login.php. Má chuirtear an rogha seo ar siúl, is féidir leat an leathanach a úsáidfear le haghaidh logála isteach a roghnú sa rogha **Default login page** (díreach thíos).
 
-* **Force synchronous site publication:** Tar éis lá a chur i gceol do chliach ar cur síne ar chuid rialta ar net, caithfidh an cur síne nua ag athrú chun cur síne rialta réel. Tá an t-aithris cur síne seo ag cur isteach tríd Job Queue, asínron. Féach ar an cur síne seo chun a bheith ag cur síne a dhéanamh i bhfíomha is éasta le cur chliachta ar an cur síne.
+  * **Doiléirigh an bun-URL logála isteach (wp-login.php)** : Más mian leat an bun-URL logála isteach a cheilt, is féidir leat an rogha seo a chur ar siúl. Tá sé seo úsáideach chun ionsaithe brute-force a chosc. Má chumasaítear an rogha seo, taispeánfaidh Ultimate Multisite earráid 404 nuair a dhéanfaidh úsáideoir iarracht rochtain a fháil ar an mbunnasc wp-login.php
 
-Anois, léimhseadh an cur síne eile a bhfuil an t-aithris ar an cur síne agus an cur síne de athchrua ar fáil: Tá siad ar an cur síne **Other options** ar an cur síne cur síne agus an cur síne de athchrua.
+  * **Cuir iallach ar fhoilsiú sioncrónach suímh:** Tar éis do chustaiméir liostáil le táirge ar líonra, ní mór an suíomh nua atá ar feitheamh a thiontú ina fhíorshuíomh líonra. Tarlaíonn an próiseas foilsithe trí Job Queue, go haisioncrónach. Cumasaigh an rogha seo chun iallach a chur ar an bhfoilsiú tarlú san iarratas céanna leis an gclárú.
 
-* **Default role:** Is é an ról a bhfaidh do chliachta ar do websait tar éis an cur síne a chur i gceol.
+Anois, féachaimis ar roghanna eile atá fós ábhartha don phróiseas logála isteach agus cláraithe. Tá siad díreach faoi **Roghanna eile** ar an leathanach céanna Login & registration:
 
-* **Féachail an Jumper:** Fáilte an Jumper (Jumper) ag fáilte an gcurtaí admin. Feicfidh an Jumper na hiontaí Ultimate Multisite, obairí ngréamhchaomhairleacha agus síosanna eile a bheith ag an t-amach ar chuid deicimní gan a bheith ag iarraidh a bheith ag iarraidh a bheith ag fáilte ar chuid deicimní. Déan é off if dóchas tú go bhfuil sin áit an t-amach i bhfíneadh an curtaí admin.
+  * **Ról réamhshocraithe:** Seo é an ról a bheidh ag do chustaiméirí ar a suíomh gréasáin tar éis an phróisis chlárúcháin.
 
-* **Add users to the main site as well:** Beidh an tairgse seo ag iarraidh a bheith ag fáilte an chuid is móint a shonraithe ar an site máintireacht agat tar éis an t-amach de na iontaí. Má leagan tú an tairgse seo, beidh cur chun cinn a bheith ag fáilte an **role deart** seo ar an website atá agat ag an chuid is móint ag cur chun cinn ag cur chun cinn tar éis.
+  * **Cumasaigh Jumper:** Cumasaíonn sé aicearra Jumper sa limistéar riaracháin. Ligeann Jumper do riarthóirí léim go tapa chuig scáileáin Ultimate Multisite, rudaí líonra, agus cinn scríbe tacaithe eile gan brabhsáil trí gach roghchlár. Múch é más fearr leat an uirlis thapa nascleanúna sin a cheilt ón gcomhéadan riaracháin.
 
-* **Enable multiple accounts:** Feicfidh na hiontaí go leor do chuidaithe i gcurtaí eile ar an chuid máintireacht agat le curte mailte amach. Má tá an t-amach seo off, ní féidir leis na chuidaithe a bheith ag curtais ar chuid deicimní eile ag cur chun cinn ar an chuid máintireacht agat le curte mailte amach.
+  * **Cuir úsáideoirí leis an bpríomhshuíomh chomh maith:** Má chumasaítear an rogha seo, cuirfear an t-úsáideoir le príomhshuíomh do líonra freisin tar éis an phróisis chlárúcháin. Má chumasaíonn tú an rogha seo, taispeánfar rogha chun **ról réamhshocraithe** na n-úsáideoirí seo ar do shuíomh gréasáin a shocrú díreach thíos freisin.
 
-Is é sin an curtaí a bhaineann le login agus registration a bhfuil tú féidir leat a thaispeáint! Ná bhfuisc an t-amach a shábháil tar éis a dhéanamh ar na stóirí atá agat.
+  * **Cumasaigh cuntais iolracha:** Lig d’úsáideoirí cuntais a bheith acu ar shuíomhanna éagsúla de do líonra leis an seoladh ríomhphoist céanna. Má tá an rogha seo múchta, ní bheidh do chustaiméirí in ann Account a chruthú ar shuíomhanna gréasáin eile atá ag rith ar do líonra leis an seoladh ríomhphoist céanna.
 
-## Aistriú curtaí registration go leor:
+Agus sin iad na roghanna ar fad a bhaineann le logáil isteach agus clárú is féidir leat a shaincheapadh! Ná déan dearmad do shocruithe a shábháil tar éis duit iad a chur in eagar.
 
-Tairgse Ultimate Multisite 2.0 ag curtaí checkout a bheith ag fáilte a bhfuil tú féidir leat a chur i bhfeidm, le feidhmeanna eile, agus curte ar fáil, is é sin an t-amach.
+## Foirmeacha cláraithe iolracha a úsáid: {#using-multiple-registration-forms}
 
-Tá curtaí login agus registration ag curte shortcodes: **[wu_login_form]** ar an curta login agus **[wu_checkout]** ar an curta registration. Is féidir leat an curta registration a chur i bhfeidm níos mó ag cur chun cinn checkout forms a bheith ag cur chun cinn nó a chur in bhfeidm.
+Cuireann Ultimate Multisite 2.0 eagarthóir foirme checkout ar fáil a ligeann duit an oiread foirmeacha agus is mian leat a chruthú, le réimsí éagsúla, táirgí ar tairiscint, srl.
 
-Leat a fáil ar an curta seo, go dtí an curta **Checkout Forms**, ar an chuid deicimní.
+Tá na leathanaigh logála isteach agus chlárúcháin araon leabaithe le shortcodes: **[wu_login_form]** ar an leathanach logála isteach agus**[wu_checkout]** don leathanach cláraithe. Is féidir leat an leathanach cláraithe a shaincheapadh tuilleadh trí fhoirmeacha checkout a thógáil nó a chruthú.
 
-![Checkout Forms menu in the sidebar](/img/config/checkout-forms-list.png)
+Chun rochtain a fháil ar an ngné seo, téigh chuig an roghchlár **Checkout Forms**, ar an taobhbharra clé.
 
-Ar an curta seo, is féidir leat a fheiceáil gach curta checkout atá agat.
+![Roghchlár Checkout Forms sa taobhbharra](/img/config/checkout-forms-list.png)
 
-Má tá tú ag cur isteach nua, déan é go dtí **Add Checkout Form** ar an tairgse.
+Ar an leathanach seo, is féidir leat na foirmeacha checkout go léir atá agat a fheiceáil.
 
-Leat é a fáilte! Beidh tú ag cur i bhfeidhm aon cheada seo mar páirt de athrúcháin. Déan sé go dtí an **Editor**.
+Más mian leat ceann nua a chruthú, cliceáil ar **Add Checkout Form** ag barr an leathanaigh.
 
-![Add Checkout Form with single step, multi-step, or blank options](/img/config/checkout-forms-list.png)
+Is féidir leat ceann de na trí rogha seo a roghnú mar phointe tosaigh: céim aonair, ilchéimeach nó bán. Ansin, cliceáil ar **Go to the Editor**.
 
-Mar chuid eile, leat é a athrúchadh nó a dubhail na fómharí atá agat ag cur ar an t-aon cheada seo mar bhfáth. Beidh tú ag iarraidh a bheith ag cur i bhfeidhm ar na fómharí sin ag cur ar na cheadaí a leagan anois.
+![Add Checkout Form le roghanna céime aonair, ilchéimeacha, nó bána](/img/config/checkout-forms-list.png)
 
-![Checkout form hover actions with edit, duplicate, and delete](/img/config/checkout-form-hover-actions.png)
+Mar mhalairt air sin, is féidir leat na foirmeacha atá agat cheana a chur in eagar nó a dhúbailt trí chliceáil ar na roghanna faoi bhun a n-ainm. Ansin, gheobhaidh tú freisin na roghanna chun shortcode na foirme a chóipeáil nó chun an fhoirm a scriosadh.
 
-Má thug tú seachaint (single step) nó multi-step, beidh an fómhar de chuid cheada seo ag cur i bhfeidhm ar na cheadaí bunaithe a bheith ag eolais. Ansin, má tá tú ag iarraidh, leat é a chur i bhfeidhm extra cheadaí ar é.
+![Gníomhartha ainlithe foirme checkout le heagarthóireacht, dúbailt, agus scriosadh](/img/config/checkout-form-hover-actions.png)
 
-### Athrúchadh an Fómhar Cheada:
+Má roghnaíonn tú céim aonair nó ilchéimeach, beidh an fhoirm checkout réamhlíonta cheana leis na céimeanna bunúsacha chun go n-oibreoidh sí. Ansin, más mian leat, is féidir leat céimeanna breise a chur léi.
 
-Mar a dhéannta arís, leat a chur in féadh fómharí cheada ar chuid páirtí eile. I arr naois seo, beidh muid ag cur i bhfeidhm ar fómhar ríomhphoistí.
+### Foirm Checkout a Chur in Eagar: {#editing-a-checkout-form}
 
-Tar é sin chun an editor fómhar cheada, déan leimear ar an fómhar (a bhrúchas a úsáidtear do chuid a bheith ag eolais anois) agus slug (a úsáidtear chun shortcodes a chur in féadh, dá réir).
+Mar a luamar cheana, is féidir leat foirmeacha checkout a chruthú chun críocha éagsúla. Sa sampla seo oibreoimid ar fhoirm chláraithe.
 
-![Checkout form editor with name and slug fields](/img/config/checkout-form-editor.png)
+Tar éis duit nascleanúint a dhéanamh chuig eagarthóir na foirme checkout, tabhair ainm do d’fhoirm (a úsáidfear le haghaidh tagartha inmheánaí amháin) agus slug (a úsáidtear chun shortcakes a chruthú, mar shampla).
 
-Tá fómharí atá ag cheadaí agus ar chuid páirtí. Leat nua cheada a chur i bhfeidhm ag cur ar **Add New Checkout Step**.
+![Eagarthóir foirme seiceála amach le réimsí ainm agus slug](/img/config/checkout-form-name-slug.png)
 
-![Add New Checkout Step button](/img/config/checkout-form-add-step.png)
+Tá foirmeacha déanta as céimeanna agus réimsí. Is féidir leat céim nua a chur leis trí chliceáil ar **Cuir Céim Nua Seiceála Amach leis**.
 
-Ar an ábhar céanna de mo chuid window, dhéan an curthaí do cheada. Déan idirí an ID, an teann agus an curtha. Is é astain na curtha seo ag úsáidtear go ginearálach ar an t-aon cheada.
+![Cnaipe Cuir Céim Nua Seiceála Amach leis](/img/config/checkout-form-add-step.png)
 
-![Checkout step content tab with ID, name, and description](/img/config/checkout-form-step-content.png)
+Ar an gcéad chluaisín den fhuinneog mhódúil, líon isteach ábhar chéim d’fhoirme. Tabhair ID, ainm agus cur síos di. Úsáidtear na míreanna seo go hinmheánach den chuid is mó.
 
-Ansin, déan an fhoireann (visibility) do cheada. Leat a bheith ag cur i bhfeidhm ar **Always show** , **Only show for logged in users** nó **Only show for guests**.
+![Cluaisín ábhair céime seiceála amach le ID, ainm, agus cur síos](/img/config/checkout-form-step-content.png)
 
-![Checkout step visibility options](/img/config/checkout-form-step-visibility.png)
+Ansin, socraigh infheictheacht na céime. Is féidir leat roghnú idir **Taispeáin i gcónaí** , **Taispeáin d’úsáideoirí logáilte isteach amháin** nó **Taispeáin d’aíonna amháin**.
 
-An de, féach an stíl na step. Is éiríseanna (optional fields) seo.
+![Roghanna infheictheachta céime seiceála amach](/img/config/checkout-form-step-visibility.png)
 
-![Checkout step style configuration](/img/config/checkout-form-step-style.png)
+Ar deireadh, cumraigh stíl na céime. Is réimsí roghnacha iad seo.
 
-Anois, tá sé an t-am chun add fáilíocht i ar an áit ar bith. Cliom chun **Add New Field** agus déan chun an tairgseán (type of section) a bhfuil tú ag iarraidh.
+![Cumraíocht stíle céime seiceála amach](/img/config/checkout-form-step-style.png)
 
-![Add New Field button](/img/config/checkout-form-step-with-fields.png)![Field type selection dropdown](/img/config/checkout-form-field-type-dropdown.png)
+Anois, tá sé in am réimsí a chur lenár gcéad chéim. Níl le déanamh ach cliceáil chun **Réimse Nua a Chur Leis** agus roghnaigh an cineál rannáin atá uait.
 
-Tá paraméatra eile ar chuid fáilíocht na fáilíocht. Do ardán seo, mbeidh méid **Username** (Username) ag cur chun cinn.
+![Cnaipe Cuir Réimse Nua Leis](/img/config/checkout-form-add-field-button.png)![Roghchlár anuas roghnaithe cineáil réimse](/img/config/checkout-form-field-type-dropdown.png)
 
-![Username field configuration](/img/config/checkout-form-username-content.png)![Username field parameters](/img/config/checkout-form-username-visibility.png)![Username field additional settings](/img/config/checkout-form-username-style.png)
+Tá paraiméadair éagsúla le líonadh ag gach réimse. Don chéad iontráil seo, roghnóimid an réimse **Ainm úsáideora**.
 
-Is féidir leat add an gcultaí agus fáilíocht atá tú ag iarraidh. Chun a chur i seacht an t-aontúcháin do do chliachta a bhfáthfaidh siad aon cheann, usaigh an fáilíocht Pricing Table (Pricing Table) a úsáid. Má tá tú ag iarraidh a bheith leat do chliachta a chur ar chluainn (template), add an fáilíocht Template Selection (Template Selection). Agus sin agus sin.
+![Cumraíocht réimse Ainm úsáideora](/img/config/checkout-form-username-content.png)![Paraiméadair réimse Ainm úsáideora](/img/config/checkout-form-username-visibility.png)![Socruithe breise réimse Ainm úsáideora](/img/config/checkout-form-username-style.png)
 
-_**Note:** Má a chur i seacht sản (product) tar éis féach an fáilíocht ar fáil, bíodh tú ag cur an sản i ar an tairgseán Pricing Table. Má níl tú é seo ag cur i seacht, ní bhfaidh an sản a bheith agat do do chliachta ar an cur chuimhne (registration page)._
+Is féidir leat an oiread céimeanna agus réimsí is gá duit a chur leis. Chun do tháirgí a thaispeáint do do chustaiméirí ionas gur féidir leo ceann a roghnú, úsáid an réimse Tábla Praghsála. Más mian leat ligean do do chliaint teimpléad a roghnú, cuir an réimse Roghnú Teimpléid leis. Agus mar sin de.
 
-_**Note 2:** Username, email, password, site title, site URL, order summary, payment, agus nút an tairgseán (submit button) is fáilíocht iadach (mandatory fields) chun fáilíocht a chur in seacht._
+![Eagarthóir foirme seiceála amach le réimse roghnaithe teimpléid](/img/config/checkout-form-with-template-field.png)
 
-Agus rud éigin ag cur ar do fáilíocht, leat semper é a úsáid chun an Preview a fheiceáil conas beidh do chliachta ag fheiceáil an fáilíocht. Is féidir leat hefyd athrú idir view as an existing user (view mar chuidistí) agus visitor (visitor).
+_**Nóta:** Má chruthaíonn tú táirge tar éis duit d’fhoirm seiceála amach a chruthú, beidh ort an táirge a chur leis sa rannán Tábla praghsála. Mura gcuireann tú leis é, ní bheidh an táirge le feiceáil ag do chustaiméirí ar an leathanach clárúcháin._
 
-![Button Preagraithe ar foirme cheolais an chuidhe](/img/config/checkout-form-preview-button.png)![Preagraithe foirme cheolais as ghráiste nó duine a bheith ag iarraidh](/img/config/checkout-form-preview-modal.png)
+_**Nóta 2:** is réimsí éigeantacha iad ainm úsáideora, ríomhphost, pasfhocal, teideal suímh, URL suímh, achoimre ordaithe, íocaíocht, agus cnaipe cuir isteach chun foirm seiceála amach a chruthú._
 
-Go raibh tú ag **Advanced Options** inbh, leat ormúint an meán ar na stárta ar an cur tiúch **Thank You**, add snippets chun teachtais a chur ar fáil (track conversions), add CSS a mhaith agat do foirme cheolais go hiomlán nó a chruthú éifeachtach do chontailte.
+Agus tú ag obair ar d’fhoirm seiceála amach, is féidir leat an cnaipe Réamhamhairc a úsáid i gcónaí chun a fheiceáil conas a fheicfidh do chliaint an fhoirm. Is féidir leat malartú freisin idir amharc mar úsáideoir atá ann cheana nó mar chuairteoir.
 
-![Advanced Options le Thank You page, conversion tracking, agus CSS mhaith agat](/img/config/checkout-form-advanced.png)
+![Cnaipe Réamhamhairc ar eagarthóir na foirme seiceála amach](/img/config/checkout-form-preview-button.png)![Réamhamharc ar fhoirm seiceála amach mar chuairteoir nó úsáideoir atá ann cheana](/img/config/checkout-form-preview-modal.png)
 
-Is féidir leat hefyd a chruinneáil nó a chruthú an foirme cheolais go hiomlán ag teacht ar an option seo ar an chuid uile, nó éifeachtach a dhéanamh ar na hontailte. Nóchaidh tú a bheith ag cur an t-aon seo ar foirme cheolais a bhaint ag cur an t-aon seo ar foirme cheolais.
+Ar deireadh, faoi **Ardroghanna** is féidir leat an teachtaireacht don leathanach **Go raibh maith agat** a chumrú, snippets a chur leis chun tiontuithe a rianú, CSS saincheaptha a chur le d’fhoirm seiceála amach nó í a shrianadh do thíortha áirithe.
 
-![Togailt activ agus option de chruinneáil le foirme cheolais](/img/config/checkout-form-active.png)
+![Ardroghanna le leathanach Go raibh maith agat, rianú tiontaithe, agus CSS saincheaptha](/img/config/checkout-form-advanced.png)
 
-Ná bhfuisc an cur tiúch an foirme cheolais!
+Is féidir leat d’fhoirm seiceála amach a chumasú nó a dhíchumasú de láimh freisin tríd an rogha seo a scoránú sa cholún ar dheis, nó an fhoirm a scriosadh go buan.
 
-![Button Save Checkout Form](/img/config/checkout-form-save.png)
+![Scorán gníomhach agus rogha scriosta don fhoirm seiceála amach](/img/config/checkout-form-active.png)
 
-Leat a fháil ar do shortcode, cur isteach ar **Generate Shortcode** agus coinnigh an t-aon a bhaineann ar an seomra modal.
+Ná déan dearmad d’fhoirm seiceála amach a shábháil!
 
-![Modal Generate Shortcode le shortcode chun coinnigh](/img/config/checkout-form-editor.png)
+![Cnaipe Sábháil Foirm Seiceála Amach](/img/config/checkout-form-save.png)
 
-_**Note:** Beidh tú ag cur an t-aon seo ar do cur tiúch registration chun an foirme cheolais seo a chomhcheangail go éifeachtach._
+Chun shortcode d’fhoirme a fháil, cliceáil ar **Gin Shortcode** agus cóipeáil an toradh a thaispeántar ar an bhfuinneog mhódúil.
 
-## Preagraithe púdacha agus templatach trí paramhaidéir URL:
+![Módal Gin Shortcode le shortcode le cóipeáil](/img/config/checkout-form-editor.png)
 
-Má tá tú ag iarraidh cur teachtais áitneamhaithe ar na tabhairteas a bhaineann le púdacha a bhfuil tú ag cur an t-aon seo ar foirme cheolais, nó preagraithe an púdach nó templat a bhíonn an chontailte ag iarraidh de do tabhairteas a bhaineann le púdacha nó templat a bhíonn ag iarraidh de do cur tiúch tabhairteas nó tabhairteas templat, leat a bheith ag úsáid paramhaidéir URL ar an cheolais seo.
+_**Nóta:** Beidh ort an shortcode seo a chur le do leathanach clárúcháin chun an fhoirm seiceála amach seo a chur leis._
 
-### **Do chlána:**
+## Táirgí agus teimpléid a réamhroghnú trí pharaiméadair URL: {#pre-selecting-products-and-templates-via-url-parameters}
 
-Go dtí **Ultimate Multisite > Products > Select a plan**. Ba cheart tú a fheiceáil an nútair **Click to copy Shareable Link** ar an cur uile. Is é sin an link atá agat chun an plan a bhfuil tú ag preagraithe seo ar do foirme cheolais a úsáid.
+Más mian leat táblaí praghsála saincheaptha a chruthú do do tháirgí agus an táirge nó an teimpléad a roghnaíonn do chustaiméir ó do thábla praghsála nó ó leathanach na dteimpléad a réamhroghnú ar an bhfoirm seiceála amach, is féidir leat paraiméadair URL a úsáid chuige seo.
 
-![Púdach page le nútair shareable link](/img/config/products-list.png)
+### **Do phleananna:** {#for-plans}
 
-Nóta goint mbe an link shareable seo shamta an tairgí **Plans** an curtha. Níl féidir a bheith ag úsáid liomha shareable ar package nó ar service.
+Téigh go **Ultimate Multisite > Táirgí > Roghnaigh plean**. Ba chóir duit an cnaipe **Cliceáil chun Nasc Inroinnte a chóipeáil** a fheiceáil ag barr an leathanaigh. Seo é an nasc is féidir leat a úsáid chun an plean sonrach seo a réamhroghnú ar d’fhoirm seiceála amach.
 
-### Do chuiditeanna (templates):
+![Leathanach táirge le cnaipe naisc inroinnte](/img/config/products-list.png)
 
-Má tá tú ag iarraidh seachaint site templates ar fáil ar fómhar checkout agat, leat a bheith ag úsáid an paraméar: **?template_id=X** ar URL de do cur chuimhneacht. Ba cheart a chur an "X" go cur isteach an **núm ID site template**. Leat a fháil an cuid seo ag cur isteach, go dtí **Ultimate Multisite > Sites**.
+Tabhair faoi deara nach bhfuil an nasc inroinnte seo bailí ach do **Phleananna**. Ní féidir leat naisc inroinnte a úsáid do phacáistí ná do sheirbhísí.
 
-Cliceáil ar **Manage** leathanach ar chuid site template atá tú ag úsáid. Beidh tú ag fheiceáil an n-nóm ID SITE. Use an n-nóm seo do seo-site template chun é a bheith ag cur chuimhneacht ar fómhar checkout dearmad. Ag naionán seo, beidh an paraméar URL ag bheith mar **?template_id=2**.
+### Do theimpléid: {#for-templates}
 
-![Sites list showing site template ID](/img/config/site-templates-list.png)
+Más mian leat teimpléid suímh a réamhroghnú ar d’fhoirm seiceála amach, is féidir leat an paraiméadar seo a úsáid: **?template_id=X** ar URL do leathanaigh clárúcháin. Ní mór an "X" a chur in ionad leis an **uimhir ID teimpléid suímh**. Chun an uimhir seo a fháil, téigh go **Ultimate Multisite > Suímh**.
 
-Le gcurchu, leat a bheith ag cur chuimhneacht ar dual product agus templates ar fómhar checkout dearmad. Is é seo an t-amach atá tú ag déanamh: tapaidh liomha shareable de **plan** agus tapaidh an paraméar template ar dheasc. Ba cheannach mar **www.mynetwork.com/register/premium-plan/?template**_id=2**.
+Cliceáil ar **Bainistigh** díreach faoi bhun an teimpléid suímh is mian leat a úsáid. Feicfidh tú uimhir SITE ID. Úsáid an uimhir seo don teimpléad suímh sonrach seo chun é a réamhroghnú ar d’fhoirm seiceála amach. Inár gcás anseo, bheadh an paraiméadar URL mar **?template_id=2**.
+
+![Liosta suíomhanna a thaispeánann ID teimpléid suímh](/img/config/site-templates-list.png)
+
+Abair gurb é [**www.mynetwork.com**](http://www.mynetwork.com) suíomh Gréasáin ár líonra agus go bhfuil ár leathanach clárúcháin lenár bhfoirm seiceála amach suite ar an leathanach **/register**. Beidh cuma mar seo ar an URL iomlán leis an teimpléad suímh seo réamhroghnaithe: [**www.mynetwork.com/register/?template**](http://www.mynetwork.com/register/?template)**_id=2**.
+
+Agus más mian leat, is féidir leat táirgí agus teimpléid araon a réamhroghnú do d’fhoirm seiceála amach. Níl le déanamh agat ach nasc inroinnte an phlean a chóipeáil agus an paraiméadar teimpléid a ghreamú ag an deireadh. Beidh cuma mar seo air: [**www.mynetwork.com/register/premium-plan/?template**](http://www.mynetwork.com/register/premium-plan/?template)**_id=2**.

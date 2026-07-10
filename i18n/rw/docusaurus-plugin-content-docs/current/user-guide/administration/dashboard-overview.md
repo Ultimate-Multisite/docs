@@ -3,11 +3,11 @@ title: Uburyo bwo gukoresha Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Uburyo mu Dashboard
+# Uburyo mu Dashboard {#dashboard-overview}
 
 Ultimate Multisite yashobora uba na **Dashboard** ikomeye kandi ku menu ya Ultimate Multisite, kandi yashobora guhuza widgets ku Network Dashboard. Iyi ndokuriye itangira ibyo wumva muri ubwonko bwo mu gihe cyose.
 
-## Network Dashboard
+## Network Dashboard {#the-network-dashboard}
 
 Ultimate Multisite yugira widgets zishobora gukoreshwa mu dashboard ya network (ubwoko bw'Umuco) ifite ku **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Iyi ni ibyo byo widget cyose bishobora kugufasha:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## Ultimate Multisite Dashboard
+## Ultimate Multisite Dashboard {#the-ultimate-multisite-dashboard}
 
 Ntabwo Network Dashboard yishobora gukoresha uburyo bwo kubona ibyo byose mu network, **Ultimate Multisite dashboard** (ikiye ku cyiciro cy'umutwe w'Ultimate Multisite menu) yishobora gukoresha iby'ingenzi by'ubwujgwa bw'ikoranabuhanga.
 

@@ -1,0 +1,22 @@
+---
+id: wu_id_form_fields
+title: 'Զտիչ - wu_{$id}_form_fields'
+sidebar_label: 'wu_{$id}_form_fields'
+_i18n_hash: 4ce34f82555356308c280b58fd6b4b26
+---
+# Filter: wu_\{$id\}_form_fields {#filter-wuidformfields}
+
+Զտում է ձևի դաշտերը։ Ձևը նույնականացվում է զտիչի անվան մեջ նշված ID-ով։
+
+## Պարամետրեր {#parameters}
+
+| Անուն | Տեսակ | Նկարագրություն |
+|------|------|-------------|
+| $fields | `array` | Ձևի դաշտերի ցանկը։ |
+
+### Սկսած {#since}
+
+- 2.0.0
+### Աղբյուր {#source}
+
+Սահմանված է [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148)-ում՝ 148-րդ տողում

@@ -3,7 +3,7 @@ title: Cancelar unha Membresía
 sidebar_position: 2
 _i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# Cancelar unha Membresía (v2)
+# Cancelar unha Membresía (v2) {#canceling-a-membership-v2}
 
 _**NOTA IMPORTANTE: Este artigo refírese a Ultimate Multisite versión 2.x.**_
 

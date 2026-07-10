@@ -1,26 +1,26 @@
 ---
-title: Verwalten von teilbaren Links für Pläne
+title: Verwalten von teilbaren Links für Tarife
 sidebar_position: 18
-_i18n_hash: c891b25549cd81c8f45ba60ee6e74105
+_i18n_hash: acdaeecdd9ac8cc0e659b9d4c7deefeb
 ---
-# Verwalten von teilbaren Links für Pläne
+# Teilbare Links für Tarife verwalten {#managing-shareable-links-for-plans}
 
-Ultimate Multisite bietet Ihnen die Möglichkeit, Plan-Links direkt mit Ihren Kunden zu teilen. Um dies zu tun, gehen Sie zu einer der Bearbeitungsseiten Ihrer Pläne und klicken Sie auf die Schaltfläche _Klicken, um den teilbaren Link zu kopieren_.
+Ultimate Multisite bietet Ihnen die Möglichkeit, Tarif-Links direkt mit Ihren Kunden zu teilen. Gehen Sie dazu zu einer der Bearbeitungsseiten Ihrer Tarife und klicken Sie auf den Button _Klicken, um den teilbaren Link zu kopieren_.
 
-![Product edit page with shareable link button](/img/config/product-edit-full.png)
+![Produkt-Bearbeitungsseite mit Button für teilbaren Link](/img/config/product-edit-full.png)
 
-_Auf der Bearbeitungsseite des Plans finden Sie die Schaltfläche zum Erstellen teilbarer Links_
+_Auf der Bearbeitungsseite des Tarifs finden Sie den Button zum Erstellen teilbarer Links_
 
-Beachten Sie, dass dieser Mechanismus die Standardabrechnungsfrequenz verwendet, um den Link zu erstellen. Das bedeutet, dass wenn Ihre Standardabrechnung monatlich ist, zum Beispiel, am Ende einen Link wie diesen haben wird: [_**https://network.com/register/premium/**_](https://network.com/register/premium/)
+Beachten Sie, dass dieser Mechanismus die standardmäßige Abrechnungshäufigkeit verwendet, um den Link zu erstellen. Das bedeutet: Wenn Ihre Standardabrechnung beispielsweise monatlich ist, haben Sie am Ende einen Link wie diesen: [_**https://network.com/register/premium/**_](https://network.com/register/premium/)
 
-Wenn Sie möchten, dass der teilbare Link standardmäßig vierteljährlich ist, müssen Sie 3 am Ende hinzufügen
+Wenn der teilbare Link standardmäßig vierteljährlich sein soll, müssen Sie am Ende 3 hinzufügen
 
 [_**https://network.com/register/premium/3**_](https://network.com/register/premium/3)
 
-Um den Plan _premium_ mit einem jährlichen Zeitplan auszuwählen, fügen Sie 1 und dann das Wort hinzu:
+Um den Tarif _premium_ mit einem jährlichen Zahlungsrhythmus auszuwählen, fügen Sie 1 und dann das Wort hinzu:
 
 [_**https://network.com/register/premium/1/year**_](https://network.com/register/premium/1/year)
 
-Beachten Sie, dass Sie nicht nur einen Link für verschiedene Abrechnungsfrequenzen haben können. Sie sollten für jede Ihrer Abrechnungsfrequenzen einen spezifischen Link teilen.
+Denken Sie daran, dass Sie nicht nur einen Link für verschiedene Abrechnungshäufigkeiten haben können. Sie sollten für jede Ihrer Abrechnungshäufigkeiten einen spezifischen Link teilen.
 
-Sobald Sie den Link mit Ihren Kunden teilen, wird er sie zum ersten Schritt Ihres Anmeldeflusses weiterleiten.
+Sobald Sie den Link mit Ihren Kunden teilen, leitet er sie zum ersten Schritt Ihres Registrierungsablaufs weiter.

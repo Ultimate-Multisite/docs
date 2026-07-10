@@ -4,11 +4,11 @@ title: Filtru - wu_setup_wizard
 sidebar_label: wu_setup_wizard
 _i18n_hash: dc634d6e39db4ee62d4b90237fe06c40
 ---
-# Filter: wu_setup_wizard
+# Filter: wu_setup_wizard {#filter-wusetupwizard}
 
 Permite dezvoltatorilor să adauge pași suplimentari în asistentul de configurare (setup wizard).
 
-## Parametri
+## Parametri {#parameters}
 
 | Nume | Tip | Descriere |
 |------|------|-------------|
@@ -16,12 +16,12 @@ Permite dezvoltatorilor să adauge pași suplimentari în asistentul de configur
 | $is_migration | `bool` | Dacă este vorba de o migrare sau nu. |
 | $wizard | `object` | Instanța curentă. |
 
-### De la
+### De la {#since}
 
 - 2.0.0
-### Sursă
+### Sursă {#source}
 
 Definit în [`inc/admin-pages/class-setup-wizard-admin-page.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/admin-pages/class-setup-wizard-admin-page.php#L525) la linia 525
 
 
-## Returnează
+## Returnează {#returns}

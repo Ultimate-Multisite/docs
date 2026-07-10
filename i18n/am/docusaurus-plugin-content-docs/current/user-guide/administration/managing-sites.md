@@ -3,7 +3,7 @@ title: የጣቢያዎች አስተዳደር
 sidebar_position: 14
 _i18n_hash: 520a6eed862c756f0475de6f264632c6
 ---
-# የድረ-ገጾችን አያያዝ
+# የድረ-ገጾችን አያያዝ {#managing-sites}
 
 የድረ-ገጾች (Sites) ወይም የሰርጥ ድረ-ገጾች (subsites) የ WaaS ንግድዎ ዋና አካል ናቸው። Ultimate Multisite ሶስት ዓይነት የድረ-ገጾችን አለው፦
 
@@ -11,13 +11,13 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 - **የድረ-ገጽ አብነቶች (Site Templates)** — ደንበኞች እንደ መነሻ ነጥብ ሊመርጡ የሚችሉ ቀድሞ የተዘጋጁ ድረ-ገጾች
 - **ዋናው ድረ-ገጽ (Main Site)** — የእርስዎ ዋና የኔትወርክ ድረ-ገጽ
 
-## የድረ-ገጾችን መመልከት
+## የድረ-ገጾችን መመልከት {#viewing-sites}
 
 በኔትወርክዎ ውስጥ ያሉ ሁሉንም የሰርጥ ድረ-ገጾች ለማየት ወደ **Ultimate Multisite → Sites** ይሂዱ። እያንዳንዱ ድረ-ገጽ በዓይነቱ ተለያይቷል፣ እና በሁሉም ድረ-ገጾች (All Sites)፣ በደንበኛው ባለቤትነት የሆኑ (Customer-Owned)፣ አብነቶች (Templates)፣ ወይም በመጠባበቅ ላይ ያሉ (Pending) መሠረት ማጣራት ይችላሉ።
 
 ![Sites list page](/img/admin/sites-list.png)
 
-## አዲስ ድረ-ገጽ መጨመር
+## አዲስ ድረ-ገጽ መጨመር {#adding-a-new-site}
 
 አዲስ ድረ-ገጽ ለመፍጠር የ **Add Site** የሚለውን ቁልፍ ይጫኑ። የሚከተሉትን መረጃዎች ማስገባት ያስፈልግዎታል፦
 
@@ -27,15 +27,15 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 **Copy Site** አማራጩ በነባር የድረ-ገጽ አብነት ላይ በመመስረት አዲስ ድረ-ገጽ እንዲፈጥሩ ያስችልዎታል። ሲበ성화፣ እንደ መነሻ ነጥብ የትኛውን አብነት መጠቀም እንደሚፈልጉ መምረጥ ይችላሉ። ሚዲያ ፋይሎችን ለማካተት **Copy Media on Duplication** መበ성화 መሆኑን ያረጋግጡ።
 
-## ያለውን ድረ-ገጽ ማስተዳደር
+## ያለውን ድረ-ገጽ ማስተዳደር {#managing-an-existing-site}
 
 በማንኛውም ድረ-ገጽ ላይ **Manage** የሚለውን በመጫን **Edit Site** ገጽ ይክፈቱ። እዚህ ላይ የሚከተሉትን ያገኛሉ፦
 
-### መሠረታዊ መረጃ (Basic Information)
+### መሠረታዊ መረጃ (Basic Information) {#basic-information}
 
 የድረ-ገጹ ስም፣ ዓይነት፣ የድረ-ገጽ መለያ ቁጥር (site ID) እና መግለጫ። እንዲሁም የተመደበው ዶሜን፣ የተያያዘው አባልነት (membership) እና ድረ-ገጹን የያዘው የደንበኛ አካውንት ይታያል።
 
-### የድረ-ገጽ አማራጮች (Site Options)
+### የድረ-ገጽ አማራጮች (Site Options) {#site-options}
 
 የድረ-ገጹን አቅም እና ገደቦች ያቅዱ፦
 
@@ -47,7 +47,7 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 
 በመነሻ ሁኔታ፣ ድረ-ገጾቹ በአባልነት ደረጃ (membership level) በተቀመጡት ገደቦች ይከተላሉ። በድረ-ገጽ ደረጃ ገደቦችን ማዘጋጀት የአባልነት ቅንብሮችን ይተካዋል።
 
-### ትስስሮች (Associations)
+### ትስስሮች (Associations) {#associations}
 
 ከየድረ-ገጽ አማራጮች በታች የሚከተሉትን መረጃዎች ያገኛሉ፦
 
@@ -55,7 +55,7 @@ _i18n_hash: 520a6eed862c756f0475de6f264632c6
 - ድረ-ገጹ ያለበት **አባልነት (Membership)**
 - ከድረ-ገጹ ጋር የተገናኘው **የደንበኛ አካውንት (Customer account)**
 
-### የቀኝ የጎን አሞሌ (Right Sidebar)
+### የቀኝ የጎን አሞሌ (Right Sidebar) {#right-sidebar}
 
 በቀኝ በኩል የሚከተሉትን ማድረግ ይችላሉ፦
 

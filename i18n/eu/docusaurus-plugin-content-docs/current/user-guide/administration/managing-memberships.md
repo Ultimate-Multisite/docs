@@ -3,7 +3,7 @@ title: Membrietan menedera
 sidebar_position: 9
 _i18n_hash: 9cfbbc3aea33c91995328b1bf4bd9a52
 ---
-# Memendua (Memberships) Ustez
+# Memendua (Memberships) Ustez {#managing-memberships}
 
 Ultimate Multisite-an daude memenduek eta zehatzatu duzu irudiak eta abonamendu guztiek network-an. Abonamenduaren detallak, gure planak eta produkzioak, sitiaren kopurua, labenguen aurrekontu eta frekwentzia, mugimenduaren historia eta horrekiko datuak editeatu eta jartzeko.
 

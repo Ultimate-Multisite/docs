@@ -1,75 +1,75 @@
 ---
-title: Polje za naplatu i DNS klijenta
+title: Polje za plaćanje i DNS korisnika
 sidebar_position: 3
-_i18n_hash: 6723eb72a4f1a6663a643a8d310c2e63
+_i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Upravljanje poljem za domenu i DNS-om klijenta
+# Checkout polje i upravljanje DNS-om korisnika {#checkout-field-and-customer-dns-management}
 
-## Polje za odabir domene
+## Checkout polje za odabir domena {#the-domain-selection-checkout-field}
 
-Polje **Odabir domene** je element za naplatu koji klijentima daje izbor kako će dobiti domen za svoj sajt. Dodajte ga u bilo koju formu za naplatu kako biste omogućili prodaju domena.
+Polje **Domain Selection** je checkout element koji korisnicima daje izbor kako da dobiju domen svoje stranice. Dodajte ga u bilo koji checkout obrazac da omogućite prodaju domena.
 
-### Dodavanje polja u formu za naplatu
+### Dodavanje polja u checkout obrazac {#adding-the-field-to-a-checkout-form}
 
 1. Idite na **Network Admin › Ultimate Multisite › Checkout Forms**
-2. Otvorite ili kreirajte formu za naplatu
-3. U editoru za naplatu, kliknite **Add Field**
-4. Izaberite **Domain Selection** iz liste polja
-5. Konfigurišite opcije polja (videti ispod)
-6. Sačuvajte formu
+2. Otvorite ili kreirajte checkout obrazac
+3. U checkout uređivaču kliknite **Add Field**
+4. Odaberite **Domain Selection** sa liste polja
+5. Konfigurišite opcije polja (pogledajte ispod)
+6. Sačuvajte obrazac
 
-### Opcije polja
+### Opcije polja {#field-options}
 
-**Modovi domena** — Odaberite koje kartice će klijent vidjeti. Svaki mod može biti neovisno uključen ili isključen:
+**Načini domena** — Odaberite koje kartice korisnik vidi. Svaki način se može omogućiti ili onemogućiti nezavisno:
 
-| Mod | Šta radi |
+| Način | Šta radi |
 |---|---|
-| **Subdomain** | Klijent koristi besplatnu poddomenu na vašoj mreži (npr. `mysite.yournetwork.com`). Ne zahtijeva plaćanje. |
-| **Register New Domain** | Klijent pretražuje novu domenu i registruje je putem vašeg konfigurisanog provajdera. Koristi se odgovarajući proizvod domena za određivanje cijene. |
-| **Existing Domain** | Klijent mapira domenu koju već posjeduje. Bez naknade za registraciju. Domen se automatski mapira na njihov sajt. |
+| **Subdomain** | Korisnik koristi besplatan poddomen na vašoj mreži (npr. `mysite.yournetwork.com`). Plaćanje nije potrebno. |
+| **Register New Domain** | Korisnik pretražuje novi domen i registruje ga preko vašeg konfigurisanog pružaoca usluge. Koristi odgovarajući proizvod domena za cijenu. |
+| **Existing Domain** | Korisnik mapira domen koji već posjeduje. Nema naknade za registraciju. Domen se automatski mapira na njegovu stranicu. |
 
-**Podrazumevani mod** — Kada su sva tri moda uključena, koja kartica se otvara prva. Postavite na **Subdomain** kako biste zadržali opciju registracije domena, ili na **Register New Domain** kako biste potaknuli kupovine.
+**Zadani način** — Kada su sva tri načina omogućena, koja kartica se prva otvara. Postavite na **Subdomain** da registracija domena ostane opcionalna, ili na **Register New Domain** da potaknete kupovine.
 
-**Proizvod domena** — Opciono, možete ovo polje povezati sa specifičnim proizvodom domena. Ako nije postavljeno, dodatak automatski bira odgovarajući proizvod na temelju TLD-a koji klijent pretražuje.
+**Proizvod domena** — Opcionalno vežite ovo polje za određeni proizvod domena. Ako nije postavljeno, dodatak automatski odabire odgovarajući proizvod na osnovu TLD-a koji korisnik pretražuje.
 
-### Polja za kontakt registratora
+### Kontakt polja registranta {#registrant-contact-fields}
 
-Kada klijent odabere karticu **Register New Domain**, forma za naplatu dodaje polja za kontakt registratora u liniji:
+Kada korisnik odabere karticu **Register New Domain**, checkout obrazac dodaje kontakt polja registranta unutar obrasca:
 
 - Ime / Prezime
-- Adresa e-pošte
-- Adresa (linija 1, grad, država/provincija, poštanski broj, država)
+- Email adresa
+- Adresa (linija 1, grad, država/pokrajina, poštanski broj, zemlja)
 - Broj telefona
 
-Ova polja su obavezna za sve registrare i validiraju se prije nego što se izvrši API poziv za registraciju. Brojevi telefona se automatski formatiraju u međunarodni format `+CC.NNN` koji je očekivan od strane registara.
+Ovo zahtijevaju svi registrari i provjerava se prije nego što se izvrši poziv registracijskog API-ja. Brojevi telefona se automatski formatiraju u međunarodni format `+CC.NNN` koji registrari očekuju.
 
-### Automatski generisana URL adresa sajta
+### Automatski generisan URL stranice {#auto-generated-site-url}
 
-Kada klijent registruje ili mapira domen, polje URL adrese sajta automatski se popunja na temelju odabranog domena. Klijenti ne moraju popunjavati zasebno polje za URL.
+Kada korisnik registruje ili mapira domen, polje URL-a stranice se automatski popunjava iz odabranog domena. Korisnici ne moraju popunjavati zasebno URL polje.
 
-### ponašanje pretraživanja
+### Ponašanje pretrage {#search-behaviour}
 
-- Dostupnost domena provjerava se u stvarnom vremenu putem AJAX-a dok klijent kuca
-- Predlaže se alternativa TLD rješenja kada je željeni domen nedostupan
-- Cijena se dohvaća uživo i jasno prikazuje (cijena registracije, cijena obnove, opcionalna WHOIS privatna naknada)
-- Kuponi se primjenjuju na proizvode domena isto kao i na bilo koji drugi proizvod
+- Dostupnost domena se provjerava u stvarnom vremenu pomoću AJAX-a dok korisnik kuca
+- Prijedlozi alternativnih TLD-ova se prikazuju kada željeni domen nije dostupan
+- Cijena se preuzima uživo i jasno prikazuje (cijena registracije, cijena obnove, opcionalna naknada za WHOIS privatnost)
+- Kodovi kupona se primjenjuju na proizvode domena isto kao i na bilo koji drugi proizvod
 
-**Podešavanje odgovora pretraživanja:**
+**Podešavanje odzivnosti pretrage:**
 
 ```php
-// Povećajte debounce kašnjenje (milisekunde) kako biste smanjili API pozive na sporim vezama
+// Increase debounce delay (milliseconds) to reduce API calls on slow connections
 add_filter('wu_domain_seller_search_delay', function($delay) {
     return 800; // default: 500
 });
 ```
 
-**Dodavanje prilagođenih polja u formu za pretraživanje domena:**
+**Dodavanje prilagođenih polja u obrazac za pretragu domena:**
 
 ```php
 add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
     $fields['custom_note'] = [
         'type'  => 'text',
-        'label' => 'Dodatne napomene',
+        'label' => 'Additional notes',
     ];
     return $fields;
 });
@@ -77,36 +77,36 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Upravljanje DNS-om klijenta
+## Upravljanje DNS-om korisnika {#customer-dns-management}
 
-Klijenti mogu upravljati DNS zapisima za svoje registrovane domene sa stranice **My Account**, pod unosom njihovog domena.
+Korisnici mogu upravljati DNS zapisima za svoje registrovane domene sa stranice **My Account**, pod unosom svog domena.
 
-### Podržane vrste zapisa
+### Podržane vrste zapisa {#supported-record-types}
 
 | Vrsta | Upotreba |
 |---|---|
-| **A** | Mapira hostname na IPv4 adresu |
-| **AAAA** | Mapira hostname na IPv6 adresu |
-| **CNAME** | Kreira alias koji ukazuje na drugi hostname |
-| **MX** | Postavlja server za razmjenu e-pošte |
-| **TXT** | Dodaje SPF, DMARC, verifikacione ili druge tekstualne zapise |
+| **A** | Mapira naziv hosta na IPv4 adresu |
+| **AAAA** | Mapira naziv hosta na IPv6 adresu |
+| **CNAME** | Kreira alias koji upućuje na drugi naziv hosta |
+| **MX** | Postavlja server za razmjenu pošte |
+| **TXT** | Dodaje SPF, DMARC, verifikacijske ili druge tekstualne zapise |
 
-### Koji provajderi podržavaju upravljanje DNS-om?
+### Koji pružaoci usluga podržavaju upravljanje DNS-om? {#which-providers-support-dns-management}
 
-Upravljanje DNS zapisima (dodavanje, uređivanje, brisanje zapisa) dostupno je sa **OpenSRS**, **ResellerClub** i **Enom**. Domeni Namecheap, GoDaddy i NameSilo prikazuju status i informacije o isteku, ali DNS mora biti upravljan direktno u kontrolnom panelu registratora.
+Upravljanje DNS-om (dodavanje, uređivanje, brisanje zapisa) dostupno je sa **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** i **Openprovider**. **Hostinger** domeni mogu ažurirati nameservere kroz Domain Seller; DNS zapisima za hostovane domene upravlja osnovna Hostinger integracija za mapiranje domena. Namecheap, GoDaddy i NameSilo domeni prikazuju status i informacije o isteku, ali se DNS mora upravljati direktno u kontrolnom panelu registrara.
 
-### Podrazumevani DNS zapisi
+### Zadani DNS zapisi {#default-dns-records}
 
-Možete konfigurisati podrazumevane DNS zapise koji se automatski primjenjuju kada se domen registruje. Idite na **Settings › Domain Seller › Default DNS Records**.
+Možete konfigurisati zadane DNS zapise koji se automatski primjenjuju kada se domen registruje. Idite na **Settings › Domain Seller › Default DNS Records**.
 
-Vrijednosti podrazumevanih zapisa podržavaju dva tokena:
+Zadane vrijednosti zapisa podržavaju dva tokena:
 
 | Token | Zamijenjeno sa |
 |---|---|
 | `{DOMAIN}` | Registrovani naziv domena (npr. `example.com`) |
-| `{SITE_URL}` | URL sajta WordPress za klijentov sajt |
+| `{SITE_URL}` | WordPress URL stranice za korisnikovu stranicu |
 
-**Primjer — usmjeravanje apex domena i www na IP adrese vašeg servera:**
+**Primjer — usmjerite apex domen i www na IP vašeg servera:**
 
 ```
 Type: A
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admin: pregled i uređivanje DNS-a
+### Admin: pregled i uređivanje DNS-a {#admin-viewing-and-editing-dns}
 
-Network administratori mogu pregledati i uređivati DNS zapise za bilo koji domen klijenta sa stranice za uređivanje domena na **Network Admin › Ultimate Multisite › Domains**.
+Mrežni administratori mogu pregledati i uređivati DNS zapise za bilo koji korisnički domen sa stranice za uređivanje domena u **Network Admin › Ultimate Multisite › Domains**.

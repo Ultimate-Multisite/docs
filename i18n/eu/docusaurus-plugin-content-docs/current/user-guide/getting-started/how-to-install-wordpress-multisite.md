@@ -3,7 +3,7 @@ title: WordPress Multisite-a nola instalatzen da?
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Hau in Instalatu WordPress Multisite?
+# Hau in Instalatu WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite-eku daite du talde batzueko web-sailak bat server-rakonarian. Hau in-built (berri) funtua da, baina default-ean ez dago aktibo.
 
@@ -94,9 +94,9 @@ Subsite bat leitzeko:
 
 Fields pleratu ondoren, "Add site" (Leitu situaile) botontik klikatu. Berria subsitea leitzituta jakinarazten duren, hori funtzionatzen duen jakinarazten eta probatzeko irriztu behar duzu.
 
-## Problema batzuk:
+## Problema batzuk: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Berria situaileak ez da erantzuten.
+### 1. Berria situaileak ez da erantzuten. {#common-problems}
 
 Subdomainak ere erabiltu dutenean, multisite network-eko wildcard subdomainak ere konfiguratuta behar duzu.
 

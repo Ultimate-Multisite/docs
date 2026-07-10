@@ -3,11 +3,11 @@ title: Veštine s obzirom na temu
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Veštine s obzirom na temu (Theme-Aware Skills)
+# Veštine s obzirom na temu (Theme-Aware Skills) {#theme-aware-skills}
 
 Superdav AI Agent v1.10.0 dolazi sa četiri nove ugrađene veštine koje su prilagođene temi koju trenutno koristite u WordPressu. Ove veštine pružaju specijalizovanov savet i mogućnosti prilagođene arhitekturi i karakteristikama vaše teme.
 
-## Šta su Veštine s obzirom na temu?
+## Šta su Veštine s obzirom na temu? {#what-are-theme-aware-skills}
 
 Veštine s obzirom na temu su unapred podešene baze znanja i setovi alata koje AI asistent automatski bira na osnovu trenutno aktivne WordPress teme na vašem sajtu. Kada promenite teme, dostupne veštine asistenta se automatski ažuriraju — nema potrebe za ručnom konfiguracijom.
 
@@ -18,9 +18,9 @@ Svaka veština uključuje:
 - **Primerove prilagođavanja** — kod fragmente i obrasce konfiguracije za uobičajene zadatke
 - **Najbolje prakse** — preporuke za arhitekturu teme i radni tok
 
-## Dostupne Veštine s obzirom na temu
+## Dostupne Veštine s obzirom na temu {#available-theme-aware-skills}
 
-### Teme sa blokovima (Block Themes)
+### Teme sa blokovima (Block Themes) {#block-themes}
 
 **Primeti se na:** Teme koje koriste arhitekturu zasnovanu na blokovima WordPressa (Full Site Editing).
 
@@ -34,7 +34,7 @@ Veština za Teme sa blokovima pruža savete o:
 
 **Automatski se aktivira kada:** Vaša aktivna tema je tema sa blokovima (podržava funkciju `block-templates`).
 
-### Klasične teme (Classic Themes)
+### Klasične teme (Classic Themes) {#classic-themes}
 
 **Primeti se na:** Tradicionalne WordPress teme koje koriste PHP šablone i klasični editor.
 
@@ -48,7 +48,7 @@ Veština za Klasične teme pruža savete o:
 
 **Ауто активира се када:** Ваш активни тема је класичан (не блочни) тема.
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Примењује се на:** Саит који користе плагин Kadence Blocks за напредну дизајн основану на блоковима.
 
@@ -62,7 +62,7 @@ Veština za Klasične teme pruža savete o:
 
 **Ауто активира се када:** Плагин Kadence Blocks је активен на вашем саиту.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Примењује се на:** Саит који користе тему Kadence за блочни дизајн и прилагођавање.
 
@@ -76,15 +76,15 @@ Veština za Klasične teme pruža savete o:
 
 **Ауто активира се када:** Тема Kadence је ваша активна тема.
 
-## Како се Избирају Скилди (Skills)
+## Како се Избирају Скилди (Skills) {#how-skills-are-selected}
 
 Асистент аутоматски препознаје вашу активну тему и инсталисане плагинове на сваком поруци. Ако је доступен скилд који одговара вашој теми, он ће бити аутоматски учитан у контекст асистента. Не морате ручно да омогућите или пребаците скилдове.
 
-### Множество Скилдова
+### Множество Скилдова {#multiple-skills}
 
 Ако се на вашем сајту примени више вештина (на пример, ако имате активне и Kadence Blocks и Kadence Theme), асистент има доступ на све применљиве вештине и може да се придружи свој упутствима из сваке од њих.
 
-### Преласка међу темама (Switching Themes)
+### Преласка међу темама (Switching Themes) {#switching-themes}
 
 Када промените активну тему, доступне вештине асистента се аутоматски освеже на следећем поруци. На пример:
 
@@ -92,11 +92,11 @@ Veština za Klasične teme pruža savete o:
 2. Прелазите на класичну тему.
 3. На следећој поруци, вештина **Classic Themes** се аутоматски учитава, а вештина **Block Themes** више није доступна.
 
-## Коришћење вештина сасвим зависних од теме (Using Theme-Aware Skills)
+## Коришћење вештина сасвим зависних од теме (Using Theme-Aware Skills) {#using-theme-aware-skills}
 
 Да бисте могли да користите вештину која је свест тема (theme-aware skill), просто опишите шта желите да урадите у чат интерфејсу. Асистент ће аутоматски поменути прикладне упутства за одговарајућу вештину.
 
-### Примери промта (Example Prompts)
+### Примери промта (Example Prompts) {#example-prompts}
 
 **За Block Themes:**
 > "Создај секцију за 헤рој са фоном и централизованим текстовима користећи блок шаблоне."

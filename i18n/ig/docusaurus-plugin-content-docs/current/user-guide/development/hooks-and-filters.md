@@ -3,7 +3,7 @@ title: Hook-a na Filter
 sidebar_position: 13
 _i18n_hash: 6da69219acbcab02df57343de4e3a145
 ---
-# Ultimate Multisite Hooks and filters
+# Ultimate Multisite Hooks and filters {#ultimate-multisite-hooks-and-filters}
 
 Ultimate Multisite na-adị bởi rất nhiều hàm và truy vấn cơ sở dữ liệu. Nó có các hook và filter cho phép bạn sửa đổi hoặc thêm mã mới vào các hàm hiện có.
 

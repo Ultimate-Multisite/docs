@@ -3,11 +3,11 @@ title: Specifikimet e faqes aftësi
 sidebar_position: 18
 _i18n_hash: 7470e8d04c1f380b3dca6ba5559b34f5
 ---
-# Aftësia Specifikimi i Sitet
+# Aftësia Specifikimi i Sitet {#site-specification-skill}
 
 Aftësia e **Specifikimit të Sitet** është një mënyrë e strukturuar për të mbledhur qëllimet, audiencën dhe identitetin e markës së faqes suaj. Kjo informacion ruhet në kujtesën tuaj **site_brief**, ku agjentët i referohen gjatë seancave për të ofruar ndihmë konsistente dhe me kontekst.
 
-## Çfarë është Specifikimi i Sitet?
+## Çfarë është Specifikimi i Sitet? {#what-is-site-specification}
 
 Specifikimi i Sitet është procesi i dokumentimit të:
 
@@ -19,9 +19,9 @@ Specifikimi i Sitet është procesi i dokumentimit të:
 
 Ky specifikim bëhet **site_brief** tuaj, një kujtesë që mbetet e qëndrueshme (persistent memory) që agjentët e përdorin për të kuptuar kontekstin e faqes suaj.
 
-## Pse të Përdorni Specifikimin e Sitet?
+## Pse të Përdorni Specifikimin e Sitet? {#why-use-site-specification}
 
-### Konsistencë Gjithë Seancave
+### Konsistencë Gjithë Seancave {#consistency-across-sessions}
 
 Pa site_brief, do të duhet të shpjegoni çdo herë që filloni një seancë të re qëllimin e faqes suaj. Me atë, agjentët kuptojnë menjëherë:
 
@@ -30,7 +30,7 @@ Pa site_brief, do të duhet të shpjegoni çdo herë që filloni një seancë t�
 - Struktura e përmbajtjes suaj
 - Objektivat tuaja biznesi
 
-### Rekomandime më të Mira
+### Rekomandime më të Mira {#better-recommendations}
 
 Agjentët përdorin site_brief tuaj për të:
 
@@ -39,16 +39,16 @@ Agjentët përdorin site_brief tuaj për të:
 - Proposto dizajne konsistente me markën tuaj
 - Të shmangur sugjerimin e veprimeve jo-përshtatshme
 
-### Përfaqësim më I Shpejtë (Onboarding)
+### Përfaqësim më I Shpejtë (Onboarding) {#faster-onboarding}
 
 Agjentët e rinj (ose agjentët në seancat e reja) mund të marrin shpejt njohuri duke lexuar site_brief tuaj në vend që të kërkoni pyetje qartësuese.
 
-## Fillimi i Specifikimit të Sitet
+## Fillimi i Specifikimit të Sitet {#initiating-site-specification}
 
-### Gjatë Onboarding-ut të Theme Builder
+### Gjatë Onboarding-ut të Theme Builder {#during-theme-builder-onboarding}
 Aftësia e Specifikimit të Sitet fillon automatikisht gjatë **flow-it të onboarding-ut të Theme Builder**. Agjenti Asistenti i Konfigurimit pyet dhe ndërton site_brief tuaj.
 
-### Fillimi Manual
+### Fillimi Manual {#manual-initiation}
 
 Ndonjeni mund të filloni Specifikimin e Sitet në çdo kohë:
 
@@ -62,9 +62,9 @@ ose
 "Më ndihmo të krijoj një kuptim për sitin"
 ```
 
-## Procesi i Specifikimit të Sitet
+## Procesi i Specifikimit të Sitet {#the-site-specification-process}
 
-### Hapi 1: Qëllimi i Sytës
+### Hapi 1: Qëllimi i Sytës {#step-1-site-purpose}
 
 Agjenti pyet:
 
@@ -80,7 +80,7 @@ Agjenti pyet:
 
 Ju mund të zgjidhni një kategori ose të përshkruani qëllimin tuaj.
 
-### Hapi 2: Audienca Targete
+### Hapi 2: Audienca Targete {#step-2-target-audience}
 
 ```
 Kush është audienca kryesore juaj?
@@ -93,7 +93,7 @@ Kush është audienca kryesore juaj?
 Çfarë janë nevojat kryesore të tyre?
 ```
 
-### Hapi 3: Identiteti i Markës (Brand Identity)
+### Hapi 3: Identiteti i Markës (Brand Identity) {#step-3-brand-identity}
 
 ```
 Cilat janë ngjyrat e markës suaj?
@@ -109,7 +109,7 @@ Si do të përshkruani tonin e markës suaj?
 - Ngrohtë / miqësor
 ```
 
-### Hapi 4: Qëllimet Biznesore
+### Hapi 4: Qëllimet Biznesore {#step-4-business-goals}
 
 ```
 Si duket suksesi për sitin tuaj?
@@ -128,7 +128,7 @@ Cil është metri kryesor juaj?
 - Tjetër
 ```
 
-### Hapi 5: Struktura e Përmbajtjes
+### Hapi 5: Struktura e Përmbajtjes {#step-5-content-structure}
 
 ```
 Si është organizimi i përmbajtjes suaj?
@@ -147,13 +147,13 @@ Si është organizimi i përmbajtjes suaj?
 - Tjetër
 ```
 
-## Memoria jote site_brief
+## Memoria jote site_brief {#your-sitebrief-memory}
 
 Pas përfundimit të Specifikimit të Sytës, informacionet tuaja ruhen si **site_brief** në memorin e agjentit tuaj. Kjo është një regjistër i strukturuar që përmban:
 
-## Vizualizimi dhe Përditësimin e Site_brief-it tuaj
+## Vizualizimi dhe Përditësimin e Site_brief-it tuaj {#viewing-and-updating-your-sitebrief}
 
-### Shikoni site_brief-in tuaj
+### Shikoni site_brief-in tuaj {#view-your-sitebrief}
 
 Pyetni agentit:
 
@@ -169,7 +169,7 @@ ose
 
 Agenti do të shfaq specifikimet që keni ruajtur.
 
-### Përditësoni site_brief-in tuaj
+### Përditësoni site_brief-in tuaj {#update-your-sitebrief}
 
 Nëse sitja ju ndryshon, mund ta përditësoni:
 
@@ -185,9 +185,9 @@ ose
 
 Kjo do të riekzekutojë aftësinë Site Specification me informacionin që keni tashmë si pikë nisje.
 
-## Si Përdorin Agentët site_brief-in
+## Si Përdorin Agentët site_brief-in {#how-agents-use-sitebrief}
 
-### Rekomandimet e Dizajnit
+### Rekomandimet e Dizajnit {#design-recommendations}
 
 Kur pyetni për ndryshime dizajni, agentët referohen te site_brief-i juaj:
 
@@ -198,7 +198,7 @@ me një ton të ngrohtë dhe artesanial. Do të krijoj një dizajn që thekson
 turizmin tuaj i vjetër dhe vlerat e juadha të qëndrueshme."
 ```
 
-### Sugjerimet për Karakteristikat (Features)
+### Sugjerimet për Karakteristikat (Features) {#feature-suggestions}
 
 Agentët sugjerojnë karakteristike që janë në përputhje me qëllimet tuaja:
 
@@ -209,20 +209,20 @@ unë do të rekomandoj: program lojaliteti, vlerat e klientëve,
 newsletter me email dhe sugjerime produktesh."
 ```
 
-### Struktura e Përmbajtjes (Content Structure)
+### Struktura e Përmbajtjes (Content Structure) {#content-structure}
 
 Agentët propozojnë organizimin e përmbajtjes bazuar në strukturën tuaj:
 
-## Beste Praktiken
+## Beste Praktiken {#best-practices}
 
-### Bukëni Specifik
+### Bukëni Specifik {#be-specific}
 
 Ndonjëherë, në vend të thjesht "audienca e përgjithshme", përshkruaj audiencën tuaj reale:
 
 - ✓ "Femina me moshën 25-45 vjeç, të interesuara për modë e qëndrueshme"
 - ✗ "Për të gjithë"
 
-### Përditëso Rregullisht
+### Përditëso Rregullisht {#update-regularly}
 
 Sip që faqja juaj të zhvillohet, përditësoni site_brief:
 
@@ -231,14 +231,14 @@ Sip që faqja juaj të zhvillohet, përditësoni site_brief:
 - Kur ndryshon identiteti i markës suaj
 - Kur ndryshojnë qëllimet e biznesit tuaj
 
-### Përdorni Terminoje Konsistente
+### Përdorni Terminoje Konsistente {#use-consistent-terminology}
 
 Përdorni të njëjtat terma gjatë seancave:
 
 - ✓ Gjithmonë thoni "bisjet e qëndrueshme" (jo "bisjet miqësore" dhe "produkte të gjelbra")
 - ✓ Referoni audiencën tuaj në të njëjtën mënyrë
 
-### Përfshini Kontekst
+### Përfshini Kontekst {#include-context}
 
 Jepni informacion që ndihmon agentët të kuptojnë vendimet tuaja:
 
@@ -246,7 +246,7 @@ Jepni informacion që ndihmon agentët të kuptojnë vendimet tuaja:
 - "Audienca jonë është teknologjikisht e njohur dhe pret dizajn modern"
 - "Ne jemi një startup i financuar nga vetja, kështu që ne kemi nevojë për zgjidhje me kostim të ulët"
 
-## Marrëdhënia me Onboarding Theme Builder
+## Marrëdhënia me Onboarding Theme Builder {#relationship-to-theme-builder-onboarding}
 
 Aftësia Site Specification integruar në **flow-inon e onboarding-it Theme Builder**. Kur përfundoni onboarding-in, site_brief juaj krijohet automatikisht me informacionin që keni dhënë.
 
@@ -256,7 +256,7 @@ Ndonjëherë mund të ekzekutoni Site Specification pavarësisht nëse dëshiron
 - Përditësoni site_brief-in tuaj sa faqja juaj zhvillohet
 - Krijoni një specifikim të detajuar para se të nisni Theme Builder
 
-## Zgjidhja e Problemeve (Troubleshooting)
+## Zgjidhja e Problemeve (Troubleshooting) {#troubleshooting}
 
 **site_brief-i im nuk po përdoret**
 - Sigurohuni që agenti ka akses në memory
@@ -272,7 +272,7 @@ Ndonjëherë mund të ekzekutoni Site Specification pavarësisht nëse dëshiron
 - Përditësoni site_brief-in tuaj nëse është i vjetër
 - Jepni kontekst shtesë në kërkesat tuaja
 
-## Hapat e Ardhshëm (Next Steps)
+## Hapat e Ardhshëm (Next Steps) {#next-steps}
 
 Pas përcaktimit të specifikimeve të faqes:
 

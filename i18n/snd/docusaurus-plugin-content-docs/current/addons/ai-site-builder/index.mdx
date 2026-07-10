@@ -1,0 +1,124 @@
+---
+title: AI سائيٽ ٺاهيندڙ
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI سائيٽ بلڊر {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## گهرجون {#requirements}
+
+- WordPress 5.3 يا وڌيڪ
+- PHP 7.4 يا وڌيڪ
+- Multisite Ultimate پلگ اِن (فعال)
+
+## انسٽاليشن {#installation}
+
+1. addon فائلون پنهنجي `/wp-content/plugins/` ڊائريڪٽري ۾ اپلوڊ ڪريو
+2. WordPress ۾ 'Plugins' مينيو ذريعي پلگ اِن فعال ڪريو
+3. نيٽ ورڪ ايڊمن ۾ addon سيٽنگون ترتيب ڏيو
+
+## ڊولپمينٽ {#development}
+
+### سيٽ اپ {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### منصوبي جي جوڙجڪ {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP ڪلاسون ۽ شامل فائلون
+│   ├── class-multisite-ultimate-updater.php  # اپڊيٽ هينڊلر
+│   └── class-ai_site_builder-main.php             # مکيه ڪارڪردگي
+├── tests/                        # يونٽ ٽيسٽ
+│   ├── bootstrap.php            # ٽيسٽ بوٽ اسٽريپ
+│   ├── class-*-base.php         # بنيادي ٽيسٽ ڪلاس
+│   └── class-*-test.php         # ٽيسٽ ڪيس
+├── views/                       # ٽيمپليٽ فائلون
+├── assets/                      # جامد اثاثا
+│   ├── css/                     # اسٽائل شيٽون
+│   ├── js/                      # JavaScript فائلون
+│   └── images/                  # تصويرون
+├── lang/                        # ٻولي فائلون
+├── composer.json                # PHP انحصار
+├── package.json                 # Node.js انحصار
+├── phpunit.xml.dist             # PHPUnit ترتيب
+├── .phpcs.xml.dist              # ڪوڊ معيارن جي ترتيب
+└── rector.php                   # ڪوڊ جديد ڪرڻ جا قاعدا
+```
+
+### ٽيسٽنگ {#testing}
+
+addon ۾ هڪ جامع ٽيسٽنگ فريم ورڪ شامل آهي:
+
+- **يونٽ ٽيسٽ**: WordPress ٽيسٽ سوٽ سان PHPUnit تي ٻڌل ٽيسٽ
+- **بنيادي ٽيسٽ ڪلاس**: عام ٽيسٽ حالتن لاءِ مددگار طريقا فراهم ڪري ٿو
+- **ٽيسٽ ڪوريج**: ڪوڊ ڪوريج ٽريڪ ڪرڻ لاءِ ترتيب ڏنل
+- **ملٽي سائيٽ ٽيسٽنگ**: ٽيسٽ ملٽي سائيٽ ماحول ۾ هلن ٿا
+
+### ڪوڊ معيار {#code-standards}
+
+- **WordPress ڪوڊنگ معيار**: PHPCS ذريعي لاڳو ڪيل
+- **PHP 7.4+ مطابقت**: جديد PHP خاصيتون سپورٽ ٿيل
+- **جامد تجزيو**: قسم چيڪنگ لاءِ PHPStan انٽيگريشن
+- **ڪوڊ جديد ڪرڻ**: PHP اپگريڊن لاءِ Rector قاعدا
+
+### بلڊ سسٽم {#build-system}
+
+- **اثاثن جي پروسيسنگ**: CSS/JS فائلن لاءِ منيفڪيشن
+- **ترجمو**: POT فائل ٺاهڻ
+- **پيڪيجنگ**: ورڇ لاءِ آرڪائيو ٺاهڻ
+- **ڊولپمينٽ موڊ**: ڊيبگنگ لاءِ اڻ منيفاءِ ٿيل اثاثا
+
+## ترتيب {#configuration}
+
+addon مختلف ترتيب اختيارن کي سپورٽ ڪري ٿو، جيڪي نيٽ ورڪ ايڊمن انٽرفيس ذريعي پهچ لائق آهن.
+
+## Hooks ۽ Filters {#hooks-and-filters}
+
+### عمل {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - addon جي شروعات کان پوءِ هلندو آهي
+- `ultimate-multisite-ai-site-builder_loaded` - سڀ addon فائلون لوڊ ٿيڻ کان پوءِ هلندو آهي
+
+### Filters {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - addon سيٽنگون تبديل ڪريو
+- `ultimate-multisite-ai-site-builder_enabled` - addon جي فعال/غير فعال حالت کي اوور رائيڊ ڪريو
+
+## لائسنس {#license}
+
+هي addon GPL v3 يا ان کان پوءِ واري لائسنس تحت لائسنس ٿيل آهي.
+
+## سپورٽ {#support}
+
+سپورٽ ۽ دستاويزن لاءِ، [MultisiteUltimate.com](https://multisiteultimate.com) تي وڃو
+## تبديلي لاگ {#changelog}
+
+- ورزن 1.0.1 (2025-09-28): prefix کي ultimate-multisite ۾ نالو مٽايو؛ text domain اپڊيٽ ڪريو؛ ورزن وڌايو.
+
+
+- ورزن  (2025-09-28): prefix کي ultimate-multisite ۾ نالو مٽايو؛ text domain اپڊيٽ ڪريو؛ ورزن وڌايو.

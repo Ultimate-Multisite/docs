@@ -4,18 +4,18 @@ sidebar_position: 1
 slug: /addons
 _i18n_hash: 941241b02ee36dd2c6c1a3bd0142942b
 ---
-# Các Addon của Ultimate Multisite
+# Các Addon của Ultimate Multisite {#ultimate-multisite-addons}
 
 Các Addon giúp mở rộng Ultimate Multisite với các tính năng và khả năng tích hợp bổ sung. Hầu hết các Addon đều là tính năng trả phí và bạn có thể mua chúng tại [ultimatemultisite.com](https://ultimatemultisite.com).
 
-## Cài đặt
+## Cài đặt {#installation}
 
 Các Addon có thể được cài đặt theo hai cách sau:
 
 1. **Qua Trang Addon** -- Truy cập trang quản lý Addon của trang web bạn trong khu vực quản trị WordPress
 2. **Tải Thủ Công** -- Tải về từ [tài khoản của bạn](https://ultimatemultisite.com/my-account/downloads/) và tải lên qua Plugins > Add New
 
-## Các Addon Có Sẵn
+## Các Addon Có Sẵn {#available-addons}
 
 | Addon | Mô tả |
 |-------|-------------|

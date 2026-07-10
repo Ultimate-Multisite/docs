@@ -3,11 +3,11 @@ title: Umpan Balik Pelanggan & Pelaporan Masalah
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Umpan Balik & Pelaporan Masalah Pelanggan
+# Umpan Balik & Pelaporan Masalah Pelanggan {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 ngajang sistem umpan balik dan pelaporan masalah anu aya di dalamnya, nu ngidinan pengguna akhir bisa nunjukkeun jawaban nu teu mantep jeung lapor masalah langsung ti antarmuka obrolan. Sistem ieu ngawengku manajemen persetujuan (consent management), perintah pelaporan otomatis, sarta triage dibantu AI di *backend*.
 
-## Tombol Jempol Turun (*Thumbs-Down Button*)
+## Tombol Jempol Turun (*Thumbs-Down Button*) {#thumbs-down-button}
 
 Setiap pesan anu dikirim ku asisten AI bakal aya tombol **jempol turun** (👎). Lamun pengguna ngacanna, maranéhna bisa menandai jawaban éta salaku teu mantep atawa salah.
 
@@ -15,7 +15,7 @@ Setiap pesan anu dikirim ku asisten AI bakal aya tombol **jempol turun** (👎).
 - Nalika diklik, tombol éta bakal ngabuka **Feedback Consent Modal**.
 - Umpan balik éta bakal nyambung jeung alur obrolan jeung pesan anu spesifik.
 
-## Feedback Consent Modal
+## Feedback Consent Modal {#feedback-consent-modal}
 
 Lamun pengguna ngacanna tombol jempol turun, modal persetujuan bakal muncul saméméh data dikirim. Modal ieu:
 
@@ -26,13 +26,13 @@ Lamun pengguna ngacanna tombol jempol turun, modal persetujuan bakal muncul sam�
 
 Teu aya umpan balik anu dicatet nepi ka pengguna ngabales sacara eksplisit.
 
-## Auto-Prompt Feedback Banner
+## Auto-Prompt Feedback Banner {#auto-prompt-feedback-banner}
 
 Di ahir obrolan, asisten bisa nunjukkeun **auto-prompt feedback banner** — hiji pesan nu teu ganggu nu nanya yén sesi éta mantep atawa teu mantep.
 
 Banner ieu bakal muncul otomatis dumasar kana panjang obrolan jeung patokan (heuristics) hasil obrolan. Banner ieu nyambung ka alur umpan balik anu sarua jeung tombol jempol turun. Pengguna bisa ngalungkeun banner éta tanpa kudu ngajelaskeun umpan balik.
 
-## Perintah `/report-issue` Slash Command
+## Perintah `/report-issue` Slash Command {#report-issue-slash-command}
 
 Pengguna bisa ngajak alur umpan balik langsung ku cara ngetik `/report-issue` dina kolom input obrolan. Perintah ieu:
 
@@ -42,7 +42,7 @@ Pengguna bisa ngajak alur umpan balik langsung ku cara ngetik `/report-issue` di
 
 Perintah `/report-issue` bisa digunakan di semua mode obrolan (inline, widget mengambang, layar penuh).
 
-## Triage Dibantu AI (AI-Assisted Triage)
+## Triage Dibantu AI (AI-Assisted Triage) {#ai-assisted-triage}
 
 Umpan balik yang dikirim akan dialirkan ke lapisan triage AI yang akan:
 

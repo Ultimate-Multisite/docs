@@ -3,17 +3,17 @@ title: Add-on Sunrise File Loader
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# Add-on Sunrise Bestandlaaër
+# Add-on Sunrise Bestandlaaër {#addon-sunrise-file-loader}
 
 Ultimate Multisite 2.8.0 voeg 'n sunrise-uitbreidingslaaër by vir add-ons en aangepaste MU-plugin-integrasies wat moet loop tydens WordPress sunrise bootstrapping sonder om die gegenereerde `wp-content/sunrise.php` lêer te wysig.
 
-## Wanneer om dit te gebruik
+## Wanneer om dit te gebruik {#when-to-use-it}
 
 Gebruik 'n sunrise-uitbreiding wanneer jou integrasie moet loop voordat gewone plugins gelaai word, soos aangepaste domeinroutering, host-spesifieke aanvraaghantering, of vroeë netwerk-bootstrapping aanpassings.
 
 Vir normale integrasies, verkies ons gewone WordPress plugins, MU-plugins, en die gedokumenteerde Ultimate Multisite hooks. Sunrise-kode loop baie vroeg en moet klein, verdedigend en vry van afhanklikhede bly.
 
-## Bestandnaamkonvensie
+## Bestandnaamkonvensie {#file-naming-convention}
 
 Skep 'n PHP-bestand genaamd `sunrise.php` in 'n add-on-direktorie wie se naam begin met `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 Pasgemaakte lêers word in alfabetiese volgorde volgens die add-on-pad gelaai.
 
-## Waar om die lêer te plaas
+## Waar om die lêer te plaas {#where-to-place-the-file}
 
 Plaas die lêer in die hoofdirektorie van die add-on wat die sunrise-gedrag besit:
 
@@ -45,7 +45,7 @@ Die skandering word opgelos ten opsigte van `WP_CONTENT_DIR`, nie die huidige wa
 
 Moenie die gegenereerde `wp-content/sunrise.php` lêer direk wysig nie. Die laaër laat aangepaste kode toe om die sunrise-gedrag uit te brei sonder om die kern sunrise-lêer te fork wat Ultimate Multisite installeer en opdateer.
 
-## Beschikbare Hooks en Filters
+## Beschikbare Hooks en Filters {#hooks-and-filters-available}
 
 Addon sunrise lêers loop ná Ultimate Multisite domeinmapping gelaai is en voor WordPress `ms_loaded` uitlok. Op hierdie punt kan 'n sunrise-lêer:
 
@@ -58,7 +58,7 @@ Ultimate Multisite lok `wu_sunrise_loaded` uit nadat sy sunrise-laaër klaar is.
 
 Roep slegs funksies aan wat reeds in die sunrise-fase gelaai is. Vermy databasis-intensiewe werk, sjabloonrendering, HTTP-aanvrae, en kode wat aanneem dat die normale plugin-laaiorde voltooi is.
 
-## Minimale voorbeeld
+## Minimale voorbeeld {#minimal-example}
 
 ```php
 <?php

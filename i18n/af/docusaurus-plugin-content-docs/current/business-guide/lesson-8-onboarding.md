@@ -3,15 +3,15 @@ title: 'Les 8: Klant-onboarding'
 sidebar_position: 9
 _i18n_hash: 5b71133bebf067164c77d33db7c81806
 ---
-# Les 8: Kliënt Onboarding
+# Les 8: Kliënt Onboarding {#lesson-8-customer-onboarding}
 
 Om 'n kliënt aan te meld is net die eerste stap. As hulle inlog, oorweldig voel, en nooit weer terugkom nie, het jy hulle verloor. Hierdie les ontwerp die ervaring wat 'n nuwe aanmelding omskep in 'n aktiewe, betrokke kliënt.
 
-## Waar Ons Gebly Het
+## Waar Ons Gebly Het {#where-we-left-off}
 
 FitSite is volledig gebrand met 'n werkende checkout-proses. Nou fokus ons op wat gebeur nadat 'n egsportstudio-eienaar suksesvol aangemeld het en vir die eerste keer op hul nuwe webwerf land.
 
-## Hoekom Onboarding Belangrik Is
+## Hoekom Onboarding Belangrik Is {#why-onboarding-matters}
 
 Die eerste 30 minute ná aanmelding bepaal of 'n kliënt bly of *churn* (verlaat). 'n Egsportstudio-eienaar wat:
 
@@ -21,9 +21,9 @@ Die eerste 30 minute ná aanmelding bepaal of 'n kliënt bly of *churn* (verlaat
 
 Jou niche-templates (Les 4) hanteer die eerste punt. Hierdie les hanteer die tweede.
 
-## Die Eerste Inlog Ervaring
+## Die Eerste Inlog Ervaring {#the-first-login-experience}
 
-### Welkom Dashboard Widget
+### Welkom Dashboard Widget {#welcome-dashboard-widget}
 
 Skep 'n aangepaste dashboard widget wat nuwe kliënte groet en hulle deur die opstel lei. Dit moet prominent verskyn wanneer hulle vir die eerste keer inlog.
 
@@ -37,7 +37,7 @@ Skep 'n aangepaste dashboard widget wat nuwe kliënte groet en hulle deur die op
 
 Elke stap skakel direk na die relevante bladsy of instelling. Geen soekwerk deur menu's nie.
 
-### Vereenvoudig die Dashboard
+### Vereenvoudig die Dashboard {#simplify-the-dashboard}
 
 Nuwe kliënte hoef nie elke WordPress-menuitem te sien nie. Oorweeg:
 
@@ -47,40 +47,40 @@ Nuwe kliënte hoef nie elke WordPress-menuitem te sien nie. Oorweeg:
 
 Die [Plugin & Theme Manager](/addons/plugin-and-theme-manager) addon kan help om te beheer wat kliënte sien.
 
-## Welkom E-posreeks
+## Welkom E-posreeks {#welcome-email-sequence}
 
 Een welkomst-e-pos is nie genoeg nie. Stel 'n reeks op wat kliënte deur hul eerste week lei:
 
-### E-pos 1: Welkom (Onmiddellik ná aanmelding)
+### E-pos 1: Welkom (Onmiddellik ná aanmelding) {#email-1-welcome-immediately-after-signup}
 
 - Onderwerp: "Welkom by FitSite -- jou studio webwerf is live"
 - Inhoud: Inlogskakel, vinnige startstappe, skakel na hulpbronne
 - Toon: Opgewonde, aanmoedigend, egsport-spesifiek
 
-### E-pos 2: Vinnige Wins (Dag 1)
+### E-pos 2: Vinnige Wins (Dag 1) {#email-2-quick-wins-day-1}
 
 - Onderwerp: "3 dinge wat jy eers op jou FitSite moet doen"
 - Inhoud: Voeg jou logo by, pas die hoofwebwerf-hero-beeld aan, voeg jou klasrooster by
 - Sluit skermkaptures in wat presies wys waar om te klik
 
-### E-pos 3: Maak Dit Joune (Dag 3)
+### E-pos 3: Maak Dit Joune (Dag 3) {#email-3-make-it-yours-day-3}
 
 - Onderwerp: "Maak jou egsportwebwerf uitstaande"
 - Inhoud: Pas kleure aan, voeg foto's van trainers by, skryf jou studio se storie
 - Skakel na voorbeelde van wonderlike egsportwebwerwe op die platform
 
-### E-pos 4: Live Skakel (Dag 7)
+### E-pos 4: Live Skakel (Dag 7) {#email-4-go-live-day-7}
 
 - Onderwerp: "Klaar om jou FitSite met die wêreld te deel?"
 - Inhoud: Kontrolelys van wat te verifieer voordat jy deel, hoe om 'n aangepaste domein te koppel (indien op Growth/Pro), tips vir sosiale deel
 - Tip: E-pos Outomatisering
 Gebruik [Webhooks](/user-guide/integrations/webhooks) of [Zapier](/user-guide/integrations/zapier) om hierdie e-posse deur jou e-posmarkingsplatform te trigger. Dit gee jou meer beheer oor tydsberekening en laat jou toe om betrokkenheid te monitor.
 
-## Hulpbronne
+## Hulpbronne {#help-resources}
 
 Skep niche-spesifieke hulpinhoud wat die vrae beantwoord wat egsportstudio-eienaars eintlik vra:
 
-### Kennisbank Artikels
+### Kennisbank Artikels {#knowledge-base-articles}
 
 - "Hoe om jou klasrooster op te dateer"
 - "Trainersprofiele by te voeg en te redigeer"
@@ -90,7 +90,7 @@ Skep niche-spesifieke hulpinhoud wat die vrae beantwoord wat egsportstudio-eiena
 
 Skryf hierdie vir nie-tegniese gebruikers. Gebruik skermkaptures. Vermy WordPress-jargon.
 
-### Video-demonstrasies
+### Video-demonstrasies {#video-walkthroughs}
 
 Kort (2-3 minute) skermopnames wat wys:
 
@@ -101,7 +101,7 @@ Kort (2-3 minute) skermopnames wat wys:
 
 Hierdie hoef nie gepoliste produksies te wees nie. Duidelik, nuttig en niche-spesifiek is wat saak maak.
 
-## Die Rekeningbladsy
+## Die Rekeningbladsy {#the-account-page}
 
 Ultimate Multisite sluit 'n kliënt-georiënteerde [Account Page](/user-guide/client-management/account-page) in waar kliënte hul abonnement bestuur. Pas dit aan om:
 
@@ -110,7 +110,7 @@ Ultimate Multisite sluit 'n kliënt-georiënteerde [Account Page](/user-guide/cl
 - Faktuurgeskiedenis en faktuurdownloads te verskaf
 - Na hulpbronne te skakel
 
-## Meet Onboarding Sukses
+## Meet Onboarding Sukses {#measuring-onboarding-success}
 
 Monitor hierdie aanwysers om te weet of jou onboarding werk:
 
@@ -119,7 +119,7 @@ Monitor hierdie aanwysers om te weet of jou onboarding werk:
 - **Ondersteuningswenke van nuwe kliënte**: 'n Hoë volume beteken dat jou onboarding leemtes het
 - **Proef-naar-betaalde omset**: As jy proewe aanbied, watter persentasie konverteer?
 
-## Die FitSite Netwerk Tot Nou
+## Die FitSite Netwerk Tot Nou {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -140,7 +140,7 @@ FitSite Network
 └── Ready for pricing strategy (next lesson)
 ```
 
-## Wat Ons Hierdie Les Gebou Het
+## Wat Ons Hierdie Les Gebou Het {#what-we-built-this-lesson}
 
 - **'n Begeleide eerste-inlog ervaring** met 'n Quick Start widget
 - **'n Vereenvoudigde dashboard** gefokus op egsportwebwerfbestuur take

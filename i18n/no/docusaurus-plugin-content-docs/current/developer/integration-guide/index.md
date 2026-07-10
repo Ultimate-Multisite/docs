@@ -1,15 +1,17 @@
 ---
-title: Integreringsguide
+title: Integrasjonsveiledning
 sidebar_position: 1
-_i18n_hash: 4196aeba91300afc6b4cecd78747deff
+_i18n_hash: 411dce333e4af28fdf4c677df18e5a06
 ---
-# Integrasjonsguide
+# Integrasjonsveiledning {#integration-guide}
 
-Denne guiden dekker vanlige integrasjonsmønstre med Ultimate Multisite, inkludert tilkobling til eksterne tjenester, bygging av tilpassede betalingsløsninger og håndtering av webhooks.
+Denne veiledningen dekker vanlige integrasjonsmønstre med Ultimate Multisite, inkludert tilkobling til eksterne tjenester, bygging av tilpassede betalingsportaler og håndtering av webhooks.
 
-## CRM-integrasjon
+For isolert tenant-infrastruktur, se [Multi-Tenancy-integrasjon](./multi-tenancy) for veiledning om sovereign tenant-oppstart, migreringsverifisering, SSO og nedbygging.
 
-Synkroniser kundedata til ditt CRM når nye kunder registrerer seg:
+## CRM-integrasjon {#crm-integration}
+
+Synkroniser kundedata til CRM-et ditt når nye kunder registrerer seg:
 
 ```php
 add_action('wu_customer_post_create', 'sync_customer_to_crm');
@@ -24,14 +26,14 @@ function sync_customer_to_crm($customer) {
         'plan' => $customer->get_membership()->get_plan()->get_name()
     ]);
 
-    // Lagre CRM ID for fremtidig referanse
+    // Store CRM ID for future reference
     $customer->add_meta('crm_contact_id', $crm_api->get_last_contact_id());
 }
 ```
 
-## Analyseintegrasjon
+## Analytics-integrasjon {#analytics-integration}
 
-Spor viktige forretningshendelser gjennom hele kundereisen:
+Spor viktige forretningshendelser gjennom kundens livssyklus:
 
 ```php
 add_action('wu_checkout_completed', 'track_conversion', 10, 3);
@@ -57,7 +59,8 @@ function track_conversion($payment, $customer, $membership) {
 }
 ```
 
-## Neste steg
+## Neste steg {#next-steps}
 
-- [Utvikling av tilpasset gateway](./custom-gateway) — Bygg din egen betalingsløsning
-- [Håndtering av webhooks](./webhooks) — Opprett egendefinerte webhook-endepunkter
+- [Utvikling av tilpasset gateway](./custom-gateway) — Bygg din egen betalingsgateway
+- [Håndtering av webhooks](./webhooks) — Opprett tilpassede webhook-endpoints
+- [Multi-Tenancy-integrasjon](./multi-tenancy) — Integrer med sovereign tenant-livssyklusflyter

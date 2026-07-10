@@ -1,0 +1,101 @@
+---
+title: Izvoznik spletnega mesta
+sidebar_position: 1
+_i18n_hash: dfad991393f9268c14ef43686f5d52fb
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-site-exporter" name="Site Exporter" />
+
+# Izvoznik spletnih mest {#site-exporter}
+
+## Vsebina {#content}
+
+Razumemo potrebo po tem, da lahko podmesta znotraj svojega omrežja premaknete v namestitev enega spletnega mesta in obratno, če se vaša stranka odloči preseliti svoje spletno mesto. Dodatek za izvoz in uvoz spletnih mest olajša to opravilo. To orodje izvozi in uvozi spletna mesta z uporabo zip datotek, ki lahko služijo tudi kot varnostna kopija.
+
+## Funkcije {#features}
+
+* Izvoz in uvoz spletnih mest
+
+* Vmesnik, preprost za uporabo
+
+* Ustvarjanje varnostne kopije spletnega mesta
+
+## Dokumentacija {#documentation}
+**Kako izvoziti in uvoziti spletno mesto**
+
+## Namestitev {#installation}
+
+1. Naložite **ultimate-multisite-site-exporter** v imenik **/wp-content/plugins/**
+2. Aktivirajte vtičnik prek menija **Vtičniki** v WordPress
+3. Sledite čarovniku korak za korakom, da nastavite vtičnik
+
+## Vodnik za uporabo {#usage-guide}
+
+Z Ultimate Multisite lahko izvozite spletno mesto iz svojega omrežja ali uvozite spletno mesto v svojo večmestno ali enomestno namestitev.
+
+Za začetek postopka pojdite na našo stran z dodatki in namestite dodatek Ultimate Multisite: Izvoznik in uvoznik spletnih mest.![Stran z dodatki](/img/admin/addons-page.png)
+
+![Stran z dodatki z možnostjo namestitve](/img/admin/addons-page.png)
+
+Pojdite na svojo stran Vtičniki in kliknite **Omrežno aktiviraj** za dodatek, ki ste ga pravkar namestili.<!-- Posnetek zaslona ni na voljo: stran WP Vtičniki, ki prikazuje gumb Omrežno aktiviraj za dodatek Izvoznik spletnih mest -->
+
+Možnost **Izvoz in uvoz** najdete v meniju Ultimate Multisite na levi strani.
+
+<!-- Posnetek zaslona ni na voljo: meni Ultimate Multisite, ki prikazuje možnost Izvoz in uvoz -->
+
+## Kako izvoziti spletno mesto {#how-to-export-a-site}
+
+Za izvoz spletnega mesta iz svojega omrežja pojdite na **Izvoz in uvoz** v meniju Ultimate Multisite in na zavihku **Izvoz spletnih mest** kliknite **Ustvari nov izvoz spletnega mesta**.
+
+<!-- Posnetek zaslona ni na voljo: zavihek Izvoz spletnih mest z gumbom Ustvari nov izvoz spletnega mesta -->
+
+Poiščite spletno mesto, ki ga želite izvoziti, in izberite elemente, ki jih želite vključiti v izvoženo datoteko. Vključite lahko teme, vtičnike in naložene datoteke. Če je vaše spletno mesto preveliko, lahko izberete zagon postopka izvoza v ozadju.<!-- Posnetek zaslona ni na voljo: možnosti izvoza spletnega mesta z iskanjem spletnega mesta in potrditvenimi polji za vključitev tem/vtičnikov/naloženih datotek -->
+
+Kliknite gumb **Izvozi spletno mesto**. Vaše izvoženo spletno mesto bo na voljo na seznamu **Obstoječi izvozi**. Kliknite gumb **Prenesi ZIP**, da prenesete datoteko. Izvozni ZIP-i vključujejo samodejno zagonski `index.php` in `readme.txt`, zato jih je mogoče namestiti na svežega gostitelja, ne da bi bilo treba najprej namestiti ločen vtičnik za uvoz.<!-- Posnetek zaslona ni na voljo: seznam Obstoječi izvozi z gumbom Prenesi ZIP -->
+
+## Kako izvoziti celotno omrežje {#how-to-export-the-whole-network}
+
+Za izvoz vseh podmest skupaj pojdite na **Izvoz in uvoz** v meniju Ultimate Multisite in uporabite možnost **Izvoz omrežja** na zaslonu za izvoz. Ustvarjeni arhiv vsebuje vsa podmesta v enem ZIP-u za selitve gostiteljev, ponovne vzpostavitve pripravljalnih okolij ali varnostne kopije na ravni omrežja.
+
+Izvozi omrežja so lahko veliki. Zaženite jih, ko je promet nizek, in potrdite, da ima strežnik dovolj prostora za shranjevanje arhiva ter morebitnih vključenih naloženih datotek, vtičnikov in tem.
+
+## Kako uvoziti spletno mesto {#how-to-import-a-site}
+
+Za uvoz spletnega mesta pojdite na zavihek **Uvozi spletno mesto** in naložite .zip datoteko spletnega mesta, ki ga želite uvoziti. URL lahko spremenite v novega ali obdržite stari URL tako, da pustite prostor prazen. Prav tako lahko označite polje za brisanje .zip datoteke iz svoje namestitve po uvozu. Nato kliknite **Začni uvoz**.
+
+<!-- Posnetek zaslona ni na voljo: zavihek Uvozi spletno mesto s poljem za nalaganje zip in gumbom Začni uvoz -->
+
+Postopek lahko traja nekaj časa. Na seznamu pod uvoznikom boste videli čakajoči uvoz.
+
+<!-- Posnetek zaslona ni na voljo: čakajoči uvoz na seznamu pod uvoznikom -->
+
+Postopek lahko ustavite s klikom na **Prekliči uvoz**.
+
+<!-- Posnetek zaslona ni na voljo: gumb Prekliči uvoz za ustavitev postopka uvoza -->
+
+Ko je postopek končan, je vaše spletno mesto že na voljo v vašem omrežju.
+
+## Kako uvoziti spletno mesto v enojni namestitvi {#how-to-import-a-site-on-a-single-install}
+
+Za uvoz spletnega mesta v svojo enojno namestitev najprej namestite in aktivirajte uvoznik na svojem spletnem mestu. Povezavo za prenos najdete na zavihku izvoznika.
+
+<!-- Posnetek zaslona ni na voljo: zavihek izvoznika s povezavo za prenos uvoznika za eno spletno mesto -->
+
+Uvoznik najdete v meniju **Orodja** na levi strani, v podpostavki **Izvoz in uvoz**.
+
+<!-- Posnetek zaslona ni na voljo: meni Orodja za eno spletno mesto, ki prikazuje podmeni Izvoz in uvoz -->
+
+Naložite .zip datoteko spletnega mesta, ki ga želite uvoziti. URL lahko spremenite v novega ali obdržite stari URL tako, da pustite prostor prazen. Prav tako lahko označite polje za brisanje .zip datoteke iz svoje namestitve po uvozu. Nato kliknite **Začni uvoz**.
+
+<!-- Posnetek zaslona ni na voljo: obrazec za uvoz na enem spletnem mestu z nalaganjem zip in gumbom Začni uvoz -->
+
+Postopek lahko traja nekaj časa. Na seznamu pod uvoznikom boste videli čakajoči uvoz.
+
+<!-- Posnetek zaslona ni na voljo: čakajoči uvoz na seznamu za eno spletno mesto -->
+
+Postopek lahko ustavite s klikom na **Prekliči uvoz**.
+
+<!-- Posnetek zaslona ni na voljo: gumb Prekliči uvoz za ustavitev postopka uvoza -->
+
+Ko je postopek končan, bo vaše spletno mesto zamenjano s spletnim mestom, ki ste ga pravkar uvozili.

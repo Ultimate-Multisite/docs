@@ -3,15 +3,15 @@ title: レッスン5：計画を設計する
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Lesson 5: プランの設計
+# Lesson 5: プランの設計 {#lesson-5-designing-your-plans}
 
 プランの階層は単なる価格設定レベルではありません。それは、あなたのニッチな顧客が実際にどのようにビジネスを運営しているかを反映するものです。このレッスンでは、フィットネスビジネスが異なる段階で抱える実際のニーズに合った製品の階層を設計します。
 
-## ここまでの進捗
+## ここまでの進捗 {#where-we-left-off}
 
 FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、Fitness Chain）が用意されています。次に、顧客が何にアクセスでき、いくら支払うかを決定する「プラン」を作成します。
 
-## 顧客セグメントで考える
+## 顧客セグメントで考える {#thinking-in-customer-segments}
 
 ほとんどの人が犯す間違いは、技術的な機能（ストレージ、帯域幅、ページ数など）に基づいてプランを設計してしまうことです。あなたのニッチな顧客は、そういった言葉で考えていません。ジムのオーナーは、自分のビジネスを運営するために何が必要かを考えています。
 
@@ -25,11 +25,11 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 
 あなたのプランは、恣意的な機能の組み合わせではなく、これらのセグメントに対応するように設計する必要があります。
 
-## FitSiteプランの作成
+## FitSiteプランの作成 {#creating-the-fitsite-plans}
 
 各プランについて、**Ultimate Multisite > Products > Add Product** に移動してください。
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **ターゲット**: 個人トレーナーおよび小規模スタジオ
 
@@ -59,7 +59,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 - 選択したテーマ: Force Activate
 - その他のすべてのテーマ: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **ターゲット**: 確立された単一拠点ジム
 
@@ -85,7 +85,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 - プラングループ: FitSite Plans
 - 製品の順序: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **ターゲット**: 複数拠点フィットネスチェーン
 
@@ -109,7 +109,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 - プラングループ: FitSite Plans
 - 製品の順序: 3
 
-## プラングループの設定
+## プラングループの設定 {#setting-up-the-plan-group}
 
 プラングループを設定することで、顧客がFitSiteプランファミリー内でのみアップグレードまたはダウングレードできるようにします。各プランの**Up & Downgrades**タブで以下を設定します。
 
@@ -118,7 +118,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 
 これにより、明確なアップグレードパスが作成されます：Starter → Growth → Pro。
 
-## オプション商品（Order Bumps）の追加
+## オプション商品（Order Bumps）の追加 {#adding-order-bumps}
 
 オプション商品（Order bumps）は、チェックアウト時に提供される追加商品です。FitSiteの場合、以下のようなものを検討してください。
 
@@ -128,7 +128,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 
 これらをUltimate Multisiteで**Package**タイプの製品として作成し、関連するプランに関連付けます。
 
-## この構造が機能する理由
+## この構造が機能する理由 {#why-this-structure-works}
 
 - **Starter** は参入障壁を取り除く — 低価格、シンプルな提供、トレーナーがすぐにオンラインになれる
 - **Growth** はジムが実際に求める機能を追加する — 予約システム、ギャラリー、カスタムドメイン
@@ -136,7 +136,7 @@ FitSiteにはすでに3つのテンプレート（Studio Essential、Gym Pro、F
 - **オプション商品** は、コアプランを複雑にすることなく、顧客にカスタマイズの自由を与える
 - **明確なアップグレードパス** は、顧客が離脱するのではなく、あなたと一緒に成長することを意味する
 
-## これまでのFitSiteネットワーク
+## これまでのFitSiteネットワーク {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## 今回構築した内容
+## 今回構築した内容 {#what-we-built-this-lesson}
 
 - 実際のフィットネスビジネスセグメントに対応した**3つのプラン階層**
 - Ultimate Multisiteのプラグインおよびテンプレートコントロールを使用した**機能制限（Feature gating）**

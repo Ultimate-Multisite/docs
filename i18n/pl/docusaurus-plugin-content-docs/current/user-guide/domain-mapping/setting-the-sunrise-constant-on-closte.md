@@ -3,13 +3,13 @@ title: Ustawianie stałej Sunrise na Closte
 sidebar_position: 16
 _i18n_hash: ce55527b126282d167eec4e3a8f824ea
 ---
-# Ustawianie stałej Sunrise na true w Closte
+# Ustawianie stałej Sunrise na true w Closte {#setting-the-sunrise-constant-to-true-on-closte}
 
 Niektórzy dostawcy hostingu blokują plik wp-config.php ze względów bezpieczeństwa. Oznacza to, że Ultimate Multisite nie może automatycznie edytować tego pliku, aby dodać stałe niezbędne do działania mapowania domen i innych funkcji. Closte jest jednym z takich dostawców.
 
 Na szczęście Closte oferuje bezpieczny sposób dodawania stałych do pliku wp-config.php. Wystarczy wykonać poniższe kroki:
 
-## W panelu Closte
+## W panelu Closte {#on-the-closte-dashboard}
 
 Najpierw [zaloguj się na swoje konto Closte](https://app.closte.com/), kliknij pozycję Sites w menu, a następnie kliknij link Dashboard przy stronie, nad którą aktualnie pracujesz:
 

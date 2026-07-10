@@ -3,7 +3,7 @@ title: Kuidas installida WordPress Multisite
 sidebar_position: 2
 _i18n_hash: 81ac2c706ca3b3b48bacaf85039d4753
 ---
-# Kuidas installi WordPress Multisite?
+# Kuidas installi WordPress Multisite? {#how-do-i-install-wordpress-multisite}
 
 WordPress Multisite võimaldab teil luua sotsiaalset võrku veebilehtide ühe installatsiooni all. See on sissejuhatav funktsioon, kuid see ei ole oletuks aktiveeritud.
 
@@ -100,9 +100,9 @@ Alsubsite loomiseks:
 
 Väljad täidetud pärast klõpsake "Lisa site" (Add site) nupul. Kui uus alsubsite on loodud, päästa selle kasutamiseks ja veenduda sellest, et alsubsite toimib.
 
-## Tavaliselt esinevad probleemid:
+## Tavaliselt esinevad probleemid: {#add-a-trailing-slash-to-wp-admin}
 
-### 1. Mul saan uusi sisse luua, kuid neid ei ole kättesaadav.
+### 1. Mul saan uusi sisse luua, kuid neid ei ole kättesaadav. {#common-problems}
 
 Kui te valisite subdomaane, peate ka seadistama wildcard-subdomainid oma multisite võrku jaoks.
 

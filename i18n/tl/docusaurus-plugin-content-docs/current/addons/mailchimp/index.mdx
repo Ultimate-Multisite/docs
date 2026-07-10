@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Integrasyon sa Mailchimp
+
+Isama ang iyong Multisite Ultimate network sa iyong Mailchimp. Maaari mong i-link ang ilang plano sa Mailchimp Lists at awtomatikong magdagdag ng mga subscriber sa mga listahang iyon sa pag-sign up.
+
+## Pag-install {#installation}
+
+1. I-upload ang 'ultimate-multisite-mailchimp' sa direktoryong '/wp-content/plugins/'
+2. I-activate ang plugin sa pamamagitan ng menu na 'Mga Plugin' sa iyong WordPress Network Admin
+
+## Gabay sa Paggamit {#usage-guide}
+
+Talagang madali ang pag-sync ng mga email ng subscriber sa iyong mga listahan sa MailChimp gamit ang aming Ultimate Multisite: MailChimp Integration Add-on. Nilalayon ng tutorial na ito na tulungan kang mai-set up ang lahat!
+
+## Pagkuha ng API key {#getting-an-api-key}
+
+Bago tayo magsimulang pumasok sa iba’t ibang available na setting, kailangan natin ng MailChimp API key. Papayagan nito ang Ultimate Multisite na makipag-ugnayan sa MailChimp API upang kunin ang mga listahan, grupo, at magdagdag ng mga email address sa mga listahan at grupong iyon kapag nag-sign up ang mga user.
+
+Sundin ang tutorial na ito upang makuha ang sarili mong MailChimp API key: [Tungkol sa mga API Key | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Idagdag ang iyong MailChimp API key sa_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Mode ng Integrasyon {#integration-mode}
+
+Nag-aalok ang MailChimp Integration add-on ng dalawang “mode ng integrasyon”, na nangangahulugang may dalawang magkaibang paraan kung paano mo magagamit ang add-on upang i-sync ang mga email address.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Dalawang mode ng integrasyon para sa mas malaking flexibility!_
+
+### Mode 1: Maramihang Listahan {#mode-1-multiple-lists}
+
+Ginagamit ng default na mode ang **Maramihang Listahan**. Papayagan ka ng mode na ito na pumili ng maraming listahan sa MailChimp para sa bawat isa sa mga plano. Ito ang pinakamainam na opsyon kung hinahati mo ang iyong mga user sa iba’t ibang listahan.
+
+Halimbawa, ipagpalagay nating mayroon kang 3 magkakaibang listahan sa iyong MailChimp Account: **Newsletter** , **Plan A** , at **Plan B**. Gusto mong maisama rin ang lahat ng user, anuman ang kanilang plano, sa listahan ng Newsletter, upang hindi nila mapalampas ang iyong mga update.
+
+Upang magawa iyon, maaari mong gamitin ang mode na Maramihang Listahan upang idagdag ang parehong listahang **Newsletter** at **Plan A** sa Plan A MailChimp Settings, at **Newsletter** at **Plan B** sa Plan B MailChimp Settings.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Piliin ang mga default na listahan para sa mga bagong account at para sa mga nakanselang account_
+
+### Mode 2: Iisang Listahan + Maramihang Grupo {#mode-2-single-list--multiple-groups}
+
+Pinapayagan ka ng MailChimp na hatiin ang iyong listahan sa mas maliliit na grupo ng mga user na tinatawag na **Mga Grupo**. Pinapayagan ka nitong magkaroon ng mas maraming kontrol dahil maaari kang magpadala ng campaign sa isang partikular na subset ng iyong mga subscriber nang hindi kinakailangang gumawa ng maraming kopya ng parehong campaign sa MailChimp (na nagpapahirap na suriin ang mga sukatan ng campaign na iyon pagkatapos).
+
+Halimbawa, maaari kang magkaroon ng iisang listahan na tinatawag na **My Network Subscribers,** at sa loob nito ay may mga grupo para sa **Plan A** at **Plan B**.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Piliin ang mga default na listahan at grupo, kung ginagamit ang mode ng integrasyon na “iisang listahan + maramihang grupo”_
+
+## Mga Default na Listahan at Grupo {#default-lists-and-groups}
+
+Pagkatapos mong piliin kung aling mode ng integrasyon ang mas angkop sa iyong partikular na gamit, oras na upang piliin ang mga default na listahan (at mga grupo, depende sa mode). Gagamitin ang default na listahan kapag ang isang ibinigay na plano ay walang partikular na Listahang napili.
+
+Maaari mo ring piliin ang default na listahan para sa mga nakanselang account. Sa tuwing tinatapos ng isang user ang kanyang subscription at inaalis ang kanyang account mula sa iyong network, ililipat ang kanyang email address sa listahang itinakda para sa mga nakanselang account.
+
+## Pag-enable ng Double Subscription {#enabling-double-subscription}
+
+Sa parehong pahina ng mga setting, magagawa mong i-enable ang **Double Subscription**. Idaragdag ng opsyong ito ang user sa parehong napiling default na listahan AT sa listahang napili para sa plano ng user na iyon. Kung hindi naka-enable ang opsyong ito, idaragdag lamang ang user sa listahang napili para sa plano ng user. Kung walang nakatakda para sa partikular na planong iyon, idaragdag ang user sa napiling default na listahan.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Maaari mong mapasubscribe ang iyong mga user sa parehong default na listahan at listahan ng plano sa pag-sign up_
+
+## Pagpili ng mga Listahan at Grupo para sa bawat isa sa mga Plano {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Pumunta sa iyong **Mga Plano** at piliin ang planong gusto mong i-edit. Tandaan na sa meta-box na **Mga Advanced na Opsyon**, magiging available ang isang bagong tab na tinatawag na MailChimp.
+
+Sa tab na iyon, magagawa mong pumili ng maraming listahan o iisang listahan at maraming grupo (depende sa mode ng integrasyon) para sa planong iyon.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Piliin ang mga Listahan at Grupo na gusto mong gamitin para sa bawat isa sa iyong mga plano_
+
+Kapag nag-sign up ang isang bagong user para sa planong iyon, idaragdag ang kanyang email address sa mga napiling listahan at grupo!

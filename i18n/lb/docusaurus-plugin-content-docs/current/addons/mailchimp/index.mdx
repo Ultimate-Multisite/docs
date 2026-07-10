@@ -1,0 +1,89 @@
+---
+title: Mailchimp
+sidebar_position: 1
+_i18n_hash: 663616b910ca13680b3794b8be3c5f2c
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-mailchimp" name="Mailchimp" />
+
+# Mailchimp {#mailchimp}
+
+Multisite Ultimate: Mailchimp-Integratioun
+
+Integréiert Äert Multisite Ultimate-Netzwierk mat Ärem Mailchimp. Dir kënnt bestëmmte Pläng mat Mailchimp-Lëschte verknëppen an Abonnenten automatesch bei der Umeldung zu dëse Lëschten derbäisetzen.
+
+## Installatioun {#installation}
+
+1. Luet 'ultimate-multisite-mailchimp' an den '/wp-content/plugins/'-Verzeechnes erop
+2. Aktivéiert de Plugin iwwer de 'Plugins'-Menü an Ärem WordPress Network Admin
+
+## Benotzungsguide {#usage-guide}
+
+D'Synchroniséiere vun den E-Mail-Adresse vun Abonnente mat Äre MailChimp-Lëschten ass wierklech einfach mat eisem Ultimate Multisite: MailChimp Integration Add-on. Dësen Tutorial soll Iech hëllefen, alles anzestellen!
+
+## En API-Schlëssel kréien {#getting-an-api-key}
+
+Ier mir mat de verschiddene verfügbaren Astellungen ufänken, brauche mir e MailChimp API-Schlëssel. Dëst erlaabt Ultimate Multisite, mat der MailChimp API ze kommunizéieren, fir Lëschten a Gruppen ofzeruffen an E-Mail-Adressen zu dëse Lëschten a Gruppen derbäizesetzen, wann d'Benotzer sech umellen.
+
+Follegt dësem Tutorial, fir Ären eegene MailChimp API-Schlëssel ze kréien: [Iwwer API-Schlësselen | MailChimp](https://kb.mailchimp.com/integrations/api-integrations/about-api-keys)
+
+<!-- Screenshot unavailable: MailChimp API key settings in Ultimate Multisite Add-on Settings -->
+
+_Füügt Äre MailChimp API-Schlëssel bäi ënner_ _**Ultimate Multisite Settings - > Add-on Settings -> MailChimp**_
+
+## Integratiounsmodus {#integration-mode}
+
+De MailChimp Integration Add-on bitt zwee „Integratiounsmodi“, dat heescht et ginn zwou verschidde Méiglechkeeten, wéi Dir den Add-on benotze kënnt, fir E-Mail-Adressen ze synchroniséieren.
+
+<!-- Screenshot unavailable: MailChimp integration mode selection with Multiple Lists and Single List options -->
+
+_Zwee Integratiounsmodi fir méi Flexibilitéit!_
+
+### Modus 1: Méi Lëschten {#mode-1-multiple-lists}
+
+De Standardmodus benotzt **Méi Lëschten**. Dëse Modus erlaabt Iech, méi MailChimp-Lëschte fir all eenzele Plang auszewielen. Dat ass déi bescht Optioun, wann Dir Är Benotzer a verschidde Lëschte segmentéiert.
+
+Zum Beispill, loosse mir unhuelen, Dir hutt 3 verschidde Lëschten an Ärem MailChimp Account: **Newsletter** , **Plang A** , an **Plang B**. Dir wëllt, datt all Benotzer, onofhängeg vun hirem Plang, och an der Newsletter-Lëscht enthale sinn, sou datt si Är Aktualiséierungen net verpassen.
+
+Fir dat z'erreechen, kënnt Dir de Modus Méi Lëschte benotzen, fir béid Lëschten **Newsletter** an **Plang A** bei d'Plang A MailChimp-Astellungen derbäizesetzen, an **Newsletter** an **Plang B** bei d'Plang B MailChimp-Astellungen.
+
+<!-- Screenshot unavailable: MailChimp default lists selection for new accounts and canceled accounts -->
+
+_Wielt d'Standardlëschte fir nei Konten a fir annuléiert Konten aus_
+
+### Modus 2: Eng eenzeg Lëscht + méi Gruppen {#mode-2-single-list--multiple-groups}
+
+MailChimp erlaabt Iech, Är Lëscht a méi kleng Benotzergruppen ze segmentéieren, déi **Gruppen** genannt ginn. Dëst erlaabt Iech méi Kontroll, well Dir eng Campagne un eng spezifesch Ënnergrupp vun Ären Abonnente schécke kënnt, ouni méi Kopië vun därselwechter Campagne op MailChimp erstellen ze mussen (wat et schwéier mécht, d'Metrike vun där Campagne duerno ze analyséieren).
+
+Zum Beispill kënnt Dir eng eenzeg Lëscht hunn, déi **Meng Netzwierk-Abonnenten,** heescht, an doran Gruppe fir **Plang A** an **Plang B** hunn.
+
+<!-- Screenshot unavailable: MailChimp single list and groups selection for default lists -->
+
+_Wielt d'Standardlëschten a Gruppen aus, wann Dir den Integratiounsmodus „eng eenzeg Lëscht + méi Gruppen“ benotzt_
+
+## Standardlëschten a Gruppen {#default-lists-and-groups}
+
+Nodeems Dir ausgewielt hutt, wéi en Integratiounsmodus fir Äre konkrete Benotzungsfall am meeschte Sënn mécht, ass et Zäit, d'Standardlëschten (a Gruppen, ofhängeg vum Modus) auszewielen. D'Standardlëscht gëtt benotzt, wann e bestëmmte Plang keng spezifesch Lëscht ausgewielt huet.
+
+Dir kënnt och d'Standardlëscht fir annuléiert Konten auswielen. All Kéier wann e Benotzer säin Abonnement ophält a säin Account aus Ärem Netzwierk ewechhëlt, gëtt seng E-Mail-Adress an d'Lëscht geréckelt, déi fir annuléiert Konten agestallt ass.
+
+## Double Subscription aktivéieren {#enabling-double-subscription}
+
+Op där selwechter Astellungssäit kënnt Dir **Double Subscription** aktivéieren. Dës Optioun setzt de Benotzer souwuel op déi ausgewielte Standardlëscht WÉI OCH op d'Lëscht, déi fir de Plang vun deem Benotzer ausgewielt ass. Wann dës Optioun net aktivéiert ass, gëtt de Benotzer nëmmen op d'Lëscht gesat, déi fir de Plang vum Benotzer ausgewielt ass. Wann näischt fir dee konkrete Plang agestallt ass, da gëtt de Benotzer op déi ausgewielte Standardlëscht gesat.
+
+<!-- Screenshot unavailable: MailChimp double subscription toggle setting -->
+
+_Dir kënnt Är Benotzer bei der Umeldung souwuel op d'Standardlëscht wéi och op d'Lëscht vum Plang abonnéiert hunn_
+
+## Lëschten a Gruppe fir all eenzele Plang auswielen {#selecting-lists-and-groups-for-each-of-the-plans}
+
+Gitt op Är **Pläng** a wielt de Plang aus, deen Dir ännere wëllt. Notéiert, datt an der **Erweidert Optiounen** Meta-Box en neien Tab mam Numm MailChimp verfügbar ass.
+
+Op deem Tab kënnt Dir méi Lëschten oder eng eenzeg Lëscht a méi Gruppen (ofhängeg vum Integratiounsmodus) fir dee Plang auswielen.
+
+<!-- Screenshot unavailable: MailChimp tab on plan edit page showing lists and groups selection -->
+
+_Wielt d'Lëschten a Gruppen aus, déi Dir fir all Är Pläng benotze wëllt_
+
+Wann en neie Benotzer sech fir dee Plang umellt, gëtt seng E-Mail-Adress zu den ausgewielte Lëschten a Gruppen derbäigesat!

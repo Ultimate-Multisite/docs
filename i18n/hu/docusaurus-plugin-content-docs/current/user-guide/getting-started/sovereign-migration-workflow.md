@@ -3,11 +3,11 @@ title: Sovereign Migration Workflow
 sidebar_position: 8
 _i18n_hash: f8aebdd695ed2f5b3f074c7aa7d52175
 ---
-# Szouverén migráci folyamat
+# Szouverén migráci folyamat {#sovereign-migration-workflow}
 
 Ultimate Multisite: Multi-Tenancy 1.2.0 beilleszi a migráció ellenőrzési beavatkozásokat egy standard alszítást szouverén tenyész infrastruktúrába való átmenethez.
 
-## Előkészületek
+## Előkészületek {#before-you-start}
 
 Ellenőrizze, hogy rendelkezik-e:
 
@@ -17,7 +17,7 @@ Ellenőrizze, hogy rendelkezik-e:
 - Egy adatbázis host kötés, amely megegyezik a célkörnyezet környezetével.
 -Hozzáférés az WP-CLI parancsok futtatásához a hálózatra.
 
-## Ajánlott folyamat
+## Ajánlott folyamat {#recommended-workflow}
 
 1. Készítsen fel a céltenyész adatbázist és fájlrendszert.
 2. Rögzítse vagy frissítse a tenyész szigetelési beállításokat (tenant isolation settings).
@@ -28,7 +28,7 @@ Ellenőrizze, hogy rendelkezik-e:
 7. Látogasson el a tenyészen SSO-val.
 8. Válassza meg a DNS vagy a ruttorozást csak akkor, ha az ellenőrzés sikeresen sikerül.
 
-## Ellenőrzési beavatkozások (Verification gates)
+## Ellenőrzési beavatkozások (Verification gates) {#verification-gates}
 
 Az ellenőrzési folyamat több szélről ellenőrzi a migrációt:
 
@@ -40,6 +40,6 @@ Az ellenőrzési folyamat több szélről ellenőrzi a migrációt:
 
 Treatedtenő ellenőrzési hibákat előzetes akadályokkal tekintsen az elindítás előtt. Javítsa a jelentett adatbázisi, felhasználói, sor vagy ruttorozási problémát, majd futtassa újra az ellenőrzést, mielőtt a tenyészetet ügyfeleknek kitakarja.
 
-## Első termék látogatás (First production visit)
+## Első termék látogatás (First production visit) {#first-production-visit}
 
 Az ellenőrzés sikeres befejezése után használjon a weboldal kezelő képernyőjön lévő **Visit (SSO)** funkciót az első admin látogatáshoz. Ez egy kontrollált lépésben megerősíti a tenyész ruttorozását, az SSO token kezelését, a forrás pontosítását és a tenyész oldalán történő felhasználói beállítást.

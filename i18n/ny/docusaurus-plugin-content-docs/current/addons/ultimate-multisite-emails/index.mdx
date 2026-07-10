@@ -1,0 +1,197 @@
+---
+title: Maimelo
+sidebar_position: 1
+_i18n_hash: 75849e07a61ac1328ac5ab440874c28f
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-emails" name="Emails" />
+
+# Maimelo {#emails}
+
+Chowonjezera cha Ultimate Multisite: Emails chimalola eni ake a netiweki kupereka ndi kuyang'anira maakaunti a imelo a makasitomala limodzi ndi masamba ndi umembala. Mtundu wa 1.1.0 umawonjezera kuyang'anira akaunti ya imelo kwa makasitomala, kulowa mu webmail kamodzi, chithandizo cha CyberPanel forwarder, ndi kukonza kopereka pa nthawi yolipira.
+
+## Zinthu Zofunika {#key-features}
+
+* **Widget ya akaunti ya imelo ya kasitomala**: Makasitomala angathe kupanga ndi kuyang'anira mabokosi a makalata kuchokera patsamba lawo la Account atakhala ndi umembala wa imelo wogwira ntchito.
+* **Webmail SSO ndi maulalo a magic**: Makasitomala angathe kutsegula webmail mwachindunji kuchokera patsamba la Account ndi kutsimikizira kwa kudina kamodzi pamene wopereka akuchirikiza.
+* **Kusintha mawu achinsinsi**: Makasitomala ndi oyang'anira angathe kusintha mawu achinsinsi a bokosi la makalata kuchokera pa widget yoyang'anira imelo.
+* **Kupereka zilolezo pa nthawi yolipira**: Kulipira kumapanga umembala wa imelo, kumalumikiza ku domeni ya tsamba la kasitomala, ndipo kumapangitsa zida za bokosi la makalata la patsamba la Account kupezeka.
+* **CyberPanel forwarders**: Maukonde omwe amathandizidwa ndi CyberPanel angathe kupanga ndi kuyang'anira email forwarders monga gawo la kayendedwe ka utumiki wa imelo.
+* **Zokonda zomwe zimadziwa wopereka**: Tsamba la zokonda limasefa opereka kuti likhale ndi ma integrations ogwira ntchito ndi okonzedwa, kotero oyang'anira amaona zosankha zokha zomwe zingagwiritsidwe ntchito.
+
+## Zofunikira {#requirements}
+
+* Ultimate Multisite 2.0.0 kapena yapamwamba
+* Kuyika kwa WordPress Multisite
+* Osachepera integration imodzi ya wopereka imelo yokonzedwa
+* Zizindikiro za Provider API zokhala ndi chilolezo chopanga mabokosi a makalata, kusintha mawu achinsinsi, ndi kupereka maulalo olowera mu webmail kumene zikuchirikizidwa
+
+## Kuyika {#installation}
+
+1. Kwezani mafayilo a pulagini ku `/wp-content/plugins/ultimate-multisite-emails`.
+2. Yambitsani chowonjezerachi pa netiweki kuchokera ku **Plugins** mu admin wa netiweki ya WordPress.
+3. Pitani ku **Ultimate Multisite** > **Zokonda** ndipo tsegulani zokonda za imelo za chowonjezera.
+4. Yambitsani ma integrations a wopereka imelo omwe mukufuna kuti makasitomala agwiritse ntchito.
+5. Sungani zokonda, kenako yesani kupanga akaunti ndi kasitomala wosati wa kupanga kapena tsamba loyesera.
+
+## Momwe Kayendedwe Kogulitsa Imelo Kamagwirira Ntchito {#how-the-email-seller-flow-works}
+
+Kugulitsa imelo kuli ndi magawo awiri osiyana:
+
+1. **Chilolezo** — chinthu/umembala wa imelo wa Ultimate Multisite chomwe chimati kasitomala amaloledwa kugwiritsa ntchito imelo pa domeni ya tsamba inayake, wopereka, malire a kusungira, ndi malire a akaunti.
+2. **Kupanga bokosi la makalata** — bokosi lenileni la wopereka, monga `info@example.com`, lopangidwa pamene kasitomala kapena woyang'anira netiweki asankha gawo la local ndi mawu achinsinsi.
+
+Pa nthawi yolipira, chowonjezerachi chimapanga kapena kuyambitsa **umembala wa imelo** ndipo chimalemba domeni ya tsamba la kasitomala ndi wopereka pa umembalawo. Sichilingalira dzina la bokosi la makalata kapena mawu achinsinsi. Kugula kukatha ndipo nkhani ya tsamba/domeni ilipo, kasitomala angatsegule tsamba la Account ndikupanga mayina a mabokosi a makalata omwe akufuna.
+
+Izi zikutanthauza kuti kayendedwe kabwinobwino ka kasitomala ndi:
+
+1. Kasitomala amagula pulani ya tsamba ndipo amawonjezera chinthu cha imelo pa nthawi yolipira.
+2. Ultimate Multisite imapanga umembala wa tsamba ndi umembala wachiwiri wa imelo.
+3. Chowonjezera cha Emails chimalumikiza umembala wa imelo ku domeni ya tsamba la kasitomala ndi wopereka.
+4. Kasitomala amatsegula **Account** mu dashboard yawo.
+5. Pano la **Maakaunti a Imelo** limaoneka pa umembala wa imelo umenewo womwe ukugwira ntchito.
+6. Kasitomala amadina **Pangani Akaunti**, amalowa gawo la local monga `info`, amaika mawu achinsinsi, ndipo chowonjezerachi chimapanga `info@their-domain.com` kwa wopereka wokonzedwa.
+
+## Konzani Chinthu cha Imelo {#configure-an-email-product}
+
+Pangani chinthu chimodzi cha imelo pa phukusi lililonse la imelo lomwe mukufuna kugulitsa kapena kupereka kwaulere. Ngati ndinu watsopano pa kukonza zinthu, yambani ndi [Kupanga Chinthu Chanu Choyamba cha Subscription](../../user-guide/configuration/creating-your-first-subscription-product) kenako bwererani kuno pa zokonda zapadera za imelo.
+
+1. Pitani ku **Network Admin > Ultimate Multisite > Zinthu > Onjezani Chinthu**.
+2. Ikani **Mtundu wa Chinthu** kukhala **Imelo**.
+3. Konzani mitengo. Gwiritsani ntchito mtengo wobwerezabwereza wolipidwa pa pulani yogulitsidwa, kapena ikani chinthucho kukhala chaulere/cha mtengo wa zero ngati chiyenera kukhala pulani ya imelo yowonjezera yaulere.
+4. Tsegulani gawo la **Zokonda za Imelo**.
+5. Sankhani **Wopereka Imelo** wokonzedwa.
+6. Ikani **Chiwerengero cha Maakaunti**, **Malire a Kusungira (MB)**, malire a alias, forwarders, ndi autoresponders monga zikufunikira.
+7. Sungani chinthucho.
+
+Opereka okha omwe ayatsidwa ndi kukonzedwa mokwanira patsamba la **Integrations** ndi omwe amaoneka mu chosankhira wopereka. Ngati chosankhiracho chilibe kanthu, konzani ndi kuyesa woperekayo kaye.
+
+## Onjezani Imelo ku Kulipira {#add-email-to-checkout}
+
+Zinthu za imelo nthawi zambiri zimaperekedwa ngati zowonjezera ku pulani ya tsamba. Onani [Mafomu Olipira](../../user-guide/configuration/checkout-forms) kuti mudziwe kayendedwe ka mkonzi wolipira wamba.
+
+1. Pangani kapena sinthani pulani ya tsamba yomwe makasitomala amagula poyamba.
+2. Onjezani chinthu cha imelo ngati chowonjezera/order bump chomwe chilipo pa kayendedwe kameneko ka kulipira.
+3. Tsimikizani kuti fomu yolipira ikuphatikizabe minda yabwinobwino yofunikira ya tsamba, makamaka munda wa URL/domeni ya tsamba.
+4. Yendetsani kuyesa kulipira ndi kasitomala woyesera.
+5. Pambuyo pa kulipira, tsegulani [tsamba la Account](../../user-guide/client-management/account-page) la kasitomala ndipo tsimikizani kuti pano la **Maakaunti a Imelo** laoneka.
+
+Domeni ya imelo imatengedwa kuchokera ku domeni ya tsamba la kasitomala. Makasitomala salowetsa domeni ya imelo pa sitepe ya chinthu cha imelo.
+
+## Kuyang'anira Imelo ya Account ya Kasitomala {#customer-account-email-management}
+
+Mtundu wa 1.1.0 umawonjezera widget yoyang'anira imelo patsamba la Account la kasitomala. Gwiritsani ntchito pamene makasitomala ayenera kudzitumikira okha popanga ndi kusamalira mabokosi a makalata a masamba awo.
+
+Kuchokera patsamba la Account, makasitomala angathe:
+
+1. Kuwona maakaunti a imelo olumikizidwa ku umembala wawo wa imelo/domeni ya tsamba yapano.
+2. Kupanga bokosi latsopano la makalata pamene chinthu chawo cha imelo chimalola maakaunti owonjezera.
+3. Kusintha mawu achinsinsi a bokosi la makalata lomwe lilipo.
+4. Kutsegula opereka webmail omwe akuchirikizidwa kudzera mu SSO kapena kulowa ndi ulalo wa magic.
+
+Widget imagwiritsa ntchito dongosolo la zomwe zikuchitika pa tsamba la Account la Ultimate Multisite, kotero zochita zimayikidwa malinga ndi nkhani ya akaunti yomwe kasitomala akuiona. Izi zimalepheretsa makasitomala kuyang'anira maakaunti a imelo omwe ali a umembala kapena tsamba lina.
+
+Ngati kasitomala sawona gulu la imelo, onani kuti ali ndi **umembala wa chinthu cha Imelo womwe ukugwira ntchito**, kuti umembalawo walumikizidwa ndi domain ya tsamba, komanso kuti chinthucho chili ndi wopereka wokonzedwa.
+
+## Kupatsa Kasitomala Pulani ya Imelo Yaulere {#giving-a-customer-a-free-email-plan}
+
+Kuti mupatse kasitomala imelo osamulipiritsa, perekani **ufulu wa imelo** poyamba, kenako pangani kapena mulole kasitomala apange bokosi la imelo.
+
+Zosankha zolimbikitsidwa:
+
+* **Pangani chinthu cha imelo chaulere**: ikani mtengo wa chinthu cha imelo kukhala waulere/ziro, kenako onjezani umembala wogwira ntchito kwa kasitomala ameneyo kuchokera ku **Ultimate Multisite > Umembala > Onjezani Umembala**. Sankhani chinthu cha imelo ndi kasitomala. Umembala waulere umakhala wa moyo wonse mpaka utasinthidwa kapena kuthetsedwa. Ngati umembala wa imelo ukuyenera kutsatira tsamba lomwe lilipo, onetsetsani kuti walumikizidwa ndi tsambalo/domain imeneyo.
+* **Gwiritsani ntchito kuchotsera kwa 100% kapena ulalo wolipirira waulere**: lolani kasitomala adutse pa kulipira kuti Ultimate Multisite ipange umembala wa imelo ndi mbiri ya kulipira zokha.
+* **Admin apange bokosi la imelo**: pitani ku **Ultimate Multisite > Maakaunti a Imelo > Onjezani Akaunti ya Imelo** kuti mupange bokosi la imelo lapadera kwa wopereka kwa kasitomala. Izi ndi zothandiza pothandiza, koma sizilowa m'malo mwa umembala wa chinthu cha imelo womwe umayendetsa zida za tsamba la akaunti za kasitomala zodzithandizira okha.
+
+Ngati mukufuna kuti kasitomala aziyang'anira bokosi la imelo yekha kuchokera patsamba la akaunti, onetsetsani kuti ali ndi umembala wa imelo wogwira ntchito pa domain imeneyo. Bokosi la imelo la wopereka lopangidwa pamanja popanda umembalawo lingakhalepo, koma kasitomala mwina sangawone gulu la imelo lodzithandizira okha la ilo.
+
+## Maakaunti Opangidwa ndi Admin ndi "Palibe Nambala ya Oda" {#admin-created-accounts-and-no-order-number}
+
+Tsamba la admin la **Maakaunti a Imelo** limapanga kapena kusintha bokosi la imelo la wopereka. Si sitepe yoyamba yogulitsira kapena kupereka pulani ya imelo.
+
+Mukasintha akaunti ya imelo, gawo la **Umembala** limafufuza maumbembala a Ultimate Multisite omwe alipo pogwiritsa ntchito nambala yawo ya cholozera/oda. Ngati muyesa kugawira akaunti kasitomala asanakhale ndi umembala wa imelo, pangakhale palibe nambala ya oda yosankha.
+
+Gwiritsani ntchito dongosolo ili la ntchito m'malo mwake:
+
+1. Pangani kapena pezani umembala wa imelo wa kasitomala. Pa zogula, kulipira kumachita izi. Pa pulani yaulere, pangani umembalawo pamanja kuchokera ku [Maumbembala](../../user-guide/administration/managing-memberships) kapena tumizani kasitomala kudzera mu kulipira kwaulere.
+2. Tsimikizirani kuti umembalawo ukugwira ntchito ndipo ukugwiritsa ntchito chinthu cha Imelo.
+3. Tsimikizirani kuti umembala wa imelo walumikizidwa ndi domain ya tsamba/wopereka.
+4. Pangani bokosi la imelo kuchokera patsamba la akaunti ya kasitomala kapena kuchokera ku **Ultimate Multisite > Maakaunti a Imelo**.
+5. Ngati pakufunika, sinthani mbiri ya bokosi la imelo ndipo mugawire kasitomala, umembala, ndi tsamba.
+
+Ngati mukungofunika kupanga bokosi la imelo la wopereka kwa kasitomala ndipo simukufuna kasamalidwe kodzithandizira okha patsamba la akaunti, akaunti yopangidwa ndi admin ingakhale yokwanira. Ngati mukufuna kuti kasitomala awone ndi kuyang'anira mu Ultimate Multisite, panganinso umembala wa imelo.
+
+## Webmail SSO ndi Kulowa ndi Magic-Link {#webmail-sso-and-magic-link-login}
+
+Webmail SSO imapatsa makasitomala chochita cha **Tsegulani webmail** mwachindunji kuchokera patsamba la akaunti. Ikathandizidwa ndi wopereka amene akugwira ntchito, addon imapempha URL yolowera ya nthawi yochepa ndipo imatumiza kasitomala ku webmail popanda kumupempha kukopera zidziwitso za bokosi la imelo.
+
+Khalidwe la wopereka lingasiyane:
+
+* Opereka omwe ali ndi ma API a SSO achibadwa angapange gawo la webmail lotsimikiziridwa mwachindunji.
+* Opereka omwe ali ndi thandizo la magic-link angapange ulalo wolowera wokhala ndi nthawi yochepa.
+* Opereka opanda thandizo la SSO kapena magic-link ayenera kuonetsabe tsatanetsatane wa bokosi la imelo ndi zochita za kasamalidwe ka mawu achinsinsi, koma osakhala ndi batani la webmail la kudina kamodzi.
+
+Yatsani mwayi wa webmail kokha kwa opereka omwe mwakonza zidziwitso za API zofunikira. Ngati chochitacho chikusowa kwa wopereka, choyamba tsimikizirani kuti woperekayo akugwira ntchito, wakonzedwa, ndipo amathandiza maulalo olowera ku webmail.
+
+## Kupereka pa Kulipira {#checkout-provisioning}
+
+Addon imapereka **nkhani ya umembala** wa imelo panthawi yolipira. Imalemba wopereka, malire a akaunti, quota, ndi domain ya tsamba kuti makasitomala athe kupanga mayina awo a mabokosi a imelo kuchokera patsamba la akaunti atagula.
+
+Kutulutsa kolimbikitsidwa:
+
+1. Konzani wopereka ndi malire a chinthu musanapereke chinthu cha imelo.
+2. Yesani kugula ndi chinthu cha staging ndipo tsimikizirani kuti umembala wa imelo wapangidwa.
+3. Unikaninso tsamba la akaunti ya kasitomala kuti mutsimikizire kuti widget ya **Maakaunti a Imelo** ikuwoneka pa domain.
+4. Pangani bokosi la imelo loyesera kuchokera pa widget.
+5. Tsimikizirani zochita zosintha mawu achinsinsi ndi webmail musanayambitse flow ya zinthu za production.
+
+Ngati kupereka kwalephera, akaunti ya kasitomala ndi umembala zingakhalebe zilipo pamene umembala wa imelo kapena bokosi la imelo la wopereka likufuna kutsatiridwa ndi administrator. Onani zolemba za zochitika za Ultimate Multisite ndi zolemba za wopereka musanayesenso.
+
+## Ma Forwarder a Imelo a CyberPanel {#cyberpanel-email-forwarders}
+
+Kwa ma netiweki omwe amathandizidwa ndi CyberPanel, mtundu 1.1.0 umawonjezera thandizo la ma forwarder a imelo. Gwiritsani ntchito ma forwarder pamene makasitomala akufuna ma adilesi monga `info@customer-domain.test` kuti atumizenso makalata ku inbox ina popanda kupanga bokosi la imelo lathunthu.
+
+Musanapereke ma forwarder, tsimikizirani kuti kulumikizana kwa CyberPanel kwakonzedwa ndipo kukupezeka. Onani kalozera wa [Kulumikizana kwa CyberPanel](../../user-guide/administration/cyberpanel-integration) pa host, dzina lolowera, mawu achinsinsi, ndi ma constants a package ofunikira.
+
+## Mbiri ya Zosintha {#changelog}
+
+### Mtundu 1.1.0 - Watulutsidwa pa 2026-05-05 {#version-110---released-on-2026-05-05}
+
+* Chatsopano: Webmail SSO ndi kulowa ndi magic-link — makasitomala angathe kulowa mu webmail mwachindunji kuchokera mu Account yawo ndi kutsimikizika kwa kudina kamodzi.
+* Chatsopano: Ntchito yosinthira mawu achinsinsi yawonjezedwa ku widget yoyendetsera Account ya imelo.
+* Chatsopano: Thandizo la CyberPanel email forwarder.
+* Chatsopano: Widget yoyendetsera imelo pa tsamba la Account la kasitomala kuti adzipangire ndi kuyang’anira Account okha.
+* Chatsopano: Kupereka mwayi wa Account ya imelo ya kasitomala kwaphatikizidwa mu checkout flow.
+* Konzani: Hook ya widget ya tsamba la Account yasinthidwa kuti igwiritse ntchito UMS registration pattern yolondola.
+* Konzani: Fomu ya Create Account yasinthidwa ndi vanilla JS ndi kutulutsa document ya HTML yonse yolondola.
+* Konzani: Widget yoyendetsera imelo tsopano imagwiritsa ntchito UMS currents system pa masamba a Account a admin.
+* Konzani: Fomu yopangira Account ya imelo ya admin ili ndi field ya password ndipo imagwiritsa ntchito Email_Account_Manager.
+* Konzani: Log spam ya pempho lililonse yachotsedwa pa kuyambitsa kwa Email_Account_Manager.
+* Zasinthidwa bwino: Tsamba la Settings tsopano limasefa kuti liwonetse okha email providers omwe ali active ndi configured.
+
+## Mafunso Ofunsidwa Kawirikawiri {#frequently-asked-questions}
+
+### Kodi makasitomala angapange ma Account awo a imelo? {#can-customers-create-their-own-email-accounts}
+
+Inde. Pamene kasitomala ali ndi membership ya imelo yogwira ntchito ya domain ndipo product imalola ma Account owonjezera, makasitomala angapange ndi kuyang’anira mailboxes awo kuchokera pa tsamba la Account.
+
+### Kodi provider aliyense amathandiza webmail SSO? {#does-every-provider-support-webmail-sso}
+
+Ayi. Thandizo la SSO ndi magic-link limadalira email provider yogwira ntchito. Providers opanda access-link API angathandizebe kupanga mailbox ndi kusintha mawu achinsinsi.
+
+### Kodi oyang’anira angapange ma Account a imelo a makasitomala? {#can-administrators-create-email-accounts-for-customers}
+
+Inde. Oyang’anira angapange ma Account a imelo kuchokera pa admin interface, kuphatikizapo kuyika mawu achinsinsi oyambirira akamapanga Account. Pa kuyendetsa kwa kasitomala yekha, onetsetsaninso kuti kasitomala ali ndi membership ya imelo yogwira ntchito ya domain.
+
+### Kodi ndingapereke Account ya imelo kwaulere? {#can-i-give-an-email-account-away-for-free}
+
+Inde. Pangani product ya Email yaulere/yamtengo zero ndipo muwonjezere ngati membership yogwira ntchito kwa kasitomala, kapena lolani kasitomala amalize checkout ndi discount ya 100%. Membership ya imelo ikakhalapo, kasitomala kapena woyang’anira angapange mailbox yeniyeni.
+
+### Chifukwa chiyani kupereka Account ya imelo kumafunsa nambala ya order? {#why-does-assigning-an-email-account-ask-for-an-order-number}
+
+Field ya Membership imayang’ana membership ya Ultimate Multisite yomwe ilipo pogwiritsa ntchito reference/order number yake. Ngati kasitomala sanagule product ya imelo ndipo simunapange pamanja membership ya imelo, palibe membership/order ya imelo yoti mupereke. Pangani membership ya imelo kaye, kenako pangani kapena perekani mailbox.
+
+### Kodi forwarders ndi zofanana ndi mailboxes? {#are-forwarders-the-same-as-mailboxes}
+
+Ayi. Mailbox imasunga maimelo ndipo ili ndi login credentials. Forwarder imatumizanso maimelo ku adiresi ina ndipo sapereka inbox yosiyana.

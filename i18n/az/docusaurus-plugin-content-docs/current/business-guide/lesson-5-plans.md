@@ -3,15 +3,15 @@ title: 'Dərs 5: Planlarınızı Dizayn Etmək'
 sidebar_position: 6
 _i18n_hash: 8c58dfd0a186bd585f43342bc4ea4f43
 ---
-# Dərs 5: Planlarınızı Qurmaq
+# Dərs 5: Planlarınızı Qurmaq {#lesson-5-designing-your-plans}
 
 Plan səviyyələriniz sadəcə qiymətləndirmə səviyyələri deyil — onlar niş müştərilərinizin həqiqətən necə fəaliyyət göstərdiyinin əksidir. Bu dərslikdə, müxtəlif mərhələlərdəki fitness bizneslərinin real ehtiyaclarına uyğun məhsul səviyyələri quracaqsınız.
 
-## Harada Qalmışdıq
+## Harada Qalmışdıq {#where-we-left-off}
 
 FitSite-da üç hazır şablon var (Studio Essential, Gym Pro, Fitness Chain). İndi isə müştərilərin nəyə çıxış əldə etdiyini və nə ödədiyini müəyyən edən planları yaradırıq.
 
-## Müştəri Segmentləri Üzrə Düşünmək
+## Müştəri Segmentləri Üzrə Düşünmək {#thinking-in-customer-segments}
 
 Əksər insanların etdiyi səhv, planları texniki xüsusiyyətlər ətrafında (yaddaş, bant genişliyi, səhifə sayı) qurmaqdır. Niş müştəriləriniz bu şəkildə düşünmürlər. Bir gimnastika salonu sahibi öz biznesini idarə etmək üçün nəyə ehtiyacı olduğuna baxır.
 
@@ -25,11 +25,11 @@ Fitness studiyaları üçün üç təbii segment mövcuddur:
 
 Planlarınız rastgicə xüsusiyyət paketlərinə deyil, bu segmentlərə uyğun gəlməlidir.
 
-## FitSite Planlarını Yaratmaq
+## FitSite Planlarını Yaratmaq {#creating-the-fitsite-plans}
 
 Hər bir plan üçün **Ultimate Multisite > Products > Add Product** yolunu izləyin.
 
-### Plan 1: FitSite Starter -- $49/month
+### Plan 1: FitSite Starter -- $49/month {#plan-1-fitsite-starter----49month}
 
 **Hədəf**: Solo trainerlər və kiçik studiyalar
 
@@ -59,7 +59,7 @@ Hər bir plan üçün **Ultimate Multisite > Products > Add Product** yolunu izl
 - Your selected theme: Force Activate
 - All other themes: Hidden
 
-### Plan 2: FitSite Growth -- $99/month
+### Plan 2: FitSite Growth -- $99/month {#plan-2-fitsite-growth----99month}
 
 **Hədəf**: Təsis olunmuş tək yerləşməli gimnastika salonları
 
@@ -85,7 +85,7 @@ Hər bir plan üçün **Ultimate Multisite > Products > Add Product** yolunu izl
 - Plan group: FitSite Plans
 - Product order: 2
 
-### Plan 3: FitSite Pro -- $199/month
+### Plan 3: FitSite Pro -- $199/month {#plan-3-fitsite-pro----199month}
 
 **Hədəf**: Bir neçə yerləşməli fitness zəncirləri
 
@@ -109,7 +109,7 @@ Hər bir plan üçün **Ultimate Multisite > Products > Add Product** yolunu izl
 - Plan group: FitSite Plans
 - Product order: 3
 
-## Plan Qrupunu Qurmaq
+## Plan Qrupunu Qurmaq {#setting-up-the-plan-group}
 
 Plan qrupu müştərilərin FitSite plan ailəsi daxilində yalnız yüksəltmə və ya aşağı salma edə bilməsini təmin edir. Hər bir planın **Up & Downgrades** tabında:
 
@@ -118,7 +118,7 @@ Plan qrupu müştərilərin FitSite plan ailəsi daxilində yalnız yüksəltmə
 
 Bu, aydın bir yüksəltmə yolu yaradır: Starter → Growth → Pro.
 
-## Sifariş Artırıcılar Əlavə Etmək
+## Sifariş Artırıcılar Əlavə Etmək {#adding-order-bumps}
 
 Sifariş artırıcılar (Order bumps), checkout zamanı təklif edilən əlavə məhsullardır. FitSite üçün nəzərdən keçirə bilərsiniz:
 
@@ -128,7 +128,7 @@ Sifariş artırıcılar (Order bumps), checkout zamanı təklif edilən əlavə 
 
 Bunları Ultimate Multisite-da **Package** növ məhsulları kimi yaradın və müvafiq planlarla əlaqələndirin.
 
-## Bu Struktur Niyə İşləyir
+## Bu Struktur Niyə İşləyir {#why-this-structure-works}
 
 - **Starter** giriş maneələrini aradan qaldırır -- aşağı qiymət, sadə təklif, trainerləri tez onlayn edir
 - **Growth** gimnastika salonlarının həqiqətən istədiyi xüsusiyyətləri əlavə edir -- booking, qalereyalar, özəl domenlər
@@ -136,7 +136,7 @@ Bunları Ultimate Multisite-da **Package** növ məhsulları kimi yaradın və m
 - **Sifariş artırıcılar** müştərilərə əsas planları mürəkkəbləşdirmədən özəlləşdirməyə imkan verir
 - **Aydın yüksəltmə yolu** o deməkdir ki, müştərilər getmək əvəzinə sizinlə böyüyürlər
 
-## FitSite Network (İndiyə Qədər)
+## FitSite Network (İndiyə Qədər) {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -152,7 +152,7 @@ FitSite Network
 └── Ready for checkout configuration (next lesson)
 ```
 
-## Bu Dərslikdə Nə Qurduq
+## Bu Dərslikdə Nə Qurduq {#what-we-built-this-lesson}
 
 - Real fitness biznes segmentlərinə uyğunlaşdırılmış **üç plan səviyyəsi**
 - Ultimate Multisite-ın plugin və template kontrollerindən istifadə edərək **xüsusiyyət məhdudiyyəti**

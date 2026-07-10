@@ -3,7 +3,7 @@ title: Kod qismlari
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# v2 uchun Kod Kesitlari
+# v2 uchun Kod Kesitlari {#code-snippets-for-v2}
 
 Asosiy qilib, **WordPress** uchun kod kesitlari ba'zi harakatlarni bajarish uchun ishlatiladi, bu esa boshqa bir maxsus kichik plugin talab qilishi mumkin. Bunday kod kesitlari WordPress yadrosining yoki temangizning (odatda `functions.php` fayli) bittasiga joylashtiriladi yoki MU plugin sifatida ham ishlatilishi mumkin.
 
@@ -15,7 +15,7 @@ Bu maqolada sizga **Ultimate Multisite v2** bilan ishlash uchun foydalanish mumk
 
 * [**Font-Icons bilan xaritalangan domenlarda CORS muammolarini tuzatish**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Hisob menyusi qatorini o'zgartirish
+## Hisob menyusi qatorini o'zgartirish {#changing-the-position-of-the-account-menu-item}
 
 Mijozingiz Dashboardidagi "Hisob" (Account) menyusining joylashuvini o'zgartirish uchun, quyidagi kod parchasini asosiy saytingiz faol tema `functions.php` fayliga qo'shishingiz kifoya. Bu qismlarni mu-pluginlaringiz yoki maxsus pluginlaringizning ichiga ham qo'yishingiz mumkin.
 
@@ -23,7 +23,7 @@ Mijozingiz Dashboardidagi "Hisob" (Account) menyusining joylashuvini o'zgartiris
 add_filter('wu_my_account_menu_position', function() { return 10; // Menyu joylashuvini kerakli joyga qo'yish uchun bu qiymatni sozlang.
 ```
 
-## Foydalanuvchi ma'lum bir reja ostida ekanligini va/yoki faol obuna mavjudligini qanday tekshirish mumkin
+## Foydalanuvchi ma'lum bir reja ostida ekanligini va/yoki faol obuna mavjudligini qanday tekshirish mumkin {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Bir tarmoq administrator sifatida sizga obunachilar yoki foydalanuvchilarning obuna holati va ular obuna bo'lgan reja asosida ma'lum bir guruh uchun bazaviy harakatlarni bajaradigan maxsus funksiyalarni yaratish kerak bo'lishi mumkin.
 
@@ -49,7 +49,7 @@ Eslatma: foydalanuvchilar faqat **Plan**ga subskribtsiya qilishlari mumkin, Pake
 
 ![Products list showing plan IDs](/img/admin/products-list.png)
 
-## Xaritaga solingan domenlarda Font-Icons muammolarini bartaraf etish
+## Xaritaga solingan domenlarda Font-Icons muammolarini bartaraf etish {#fixing-cors-issues-with-font-icons-in-mapped-domains}
 
 Bir domenni sub-saytga xarita (mapping) qilsangiz, saytingizda maxsus shriftlarni yuklashda muammo bo'lishi mumkin. Bu sizning server sozlamalaringizdagi cross-origin bloklovchidan sabablangan.
 
@@ -61,7 +61,7 @@ Sizning .htaccess faylingizga quyidagini qo'shing:
 
 <FilesMatch “.(ttf|ttc|otf|eot|woff|font.css|css)$”> Header set Access-Control-Allow-Origin “*”
 
-### NGINX
+### NGINX {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 Server konfiguratsiya faylingizga (bu joy serverdan serverga farq qilishi mumkin) quyidagini qo'shing:
 

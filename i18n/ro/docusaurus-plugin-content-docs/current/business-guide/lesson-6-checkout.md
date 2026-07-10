@@ -3,15 +3,15 @@ title: 'Lecția 6: Experiența de înregistrare'
 sidebar_position: 7
 _i18n_hash: a5c16cdd9b4e53a69e138df7bb042411
 ---
-# Lecția 6: Experiența de Înscriere
+# Lecția 6: Experiența de Înscriere {#lesson-6-the-signup-experience}
 
 Procesul de plată este locul unde interesul se transformă în venit. Un proces de înscriere confuz sau generic face ca clienții să plece. Un flux specific nișei, care vorbește limba lor și pare fără efort, îi va transforma în clienți plătitori.
 
-## Unde Ne-am Oprit
+## Unde Ne-am Oprit {#where-we-left-off}
 
 FitSite are deja configurate temele și planurile. Acum vom construi experiența de înscriere și plată care să transforme proprietarii de studiouri de fitness în clienți plătitori.
 
-## Înțelegerea Fluxului de Înscriere
+## Înțelegerea Fluxului de Înscriere {#understanding-the-registration-flow}
 
 Formarele de checkout ale Ultimate Multisite sunt formulare multi-pasi complet personalizabile. Pentru FitSite, dorim un flux care să:
 
@@ -21,11 +21,11 @@ Formarele de checkout ale Ultimate Multisite sunt formulare multi-pasi complet p
 
 Vedeți [Fluxul de Înscriere](/user-guide/configuration/the-registration-flow) pentru referința tehnică completă.
 
-## Proiectarea Checkout-ului FitSite
+## Proiectarea Checkout-ului FitSite {#designing-the-fitsite-checkout}
 
 Navigați la **Ultimate Multisite > Checkout Forms** și creați un formular nou.
 
-### Pasul 1: Selectarea Planului
+### Pasul 1: Selectarea Planului {#step-1-plan-selection}
 
 Prima cosa pe care să o vadă un proprietar de studio de fitness ar trebui să fie planurile, prezentate în termeni pe care le înțelege.
 
@@ -37,7 +37,7 @@ Prima cosa pe care să o vadă un proprietar de studio de fitness ar trebui să 
 „1 GB de stocare” nu înseamnă nimic pentru un proprietar de sală de sport. „Tot ce îți trebuie pentru un site profesional de studio” înseamnă totul. Scrieți descrierile planurilor în limba clientului dumneavoastră.
 :::
 
-### Pasul 2: Selectarea Template-ului
+### Pasul 2: Selectarea Template-ului {#step-2-template-selection}
 
 După ce a ales un plan, clientul își alege template-ul de start.
 
@@ -45,7 +45,7 @@ După ce a ales un plan, clientul își alege template-ul de start.
 - Template-urile disponibile sunt filtrate în funcție de planul selectat (configurat la Lecția 5)
 - Fiecare template ar trebui să aibă o imagine de previzualizare care să arate un design specific fitness-ului
 
-### Pasul 3: Crearea Contului
+### Pasul 3: Crearea Contului {#step-3-account-creation}
 
 Mențineți asta cât mai simplu. Colectați doar:
 
@@ -55,27 +55,27 @@ Mențineți asta cât mai simplu. Colectați doar:
 
 Nu cereți informații de care nu aveți nevoie la înscriere. Fiecare câmp suplimentar reduce conversiile.
 
-### Pasul 4: Configurarea Site-ului
+### Pasul 4: Configurarea Site-ului {#step-4-site-setup}
 
 - **Site title**: Umpleți automat din numele studioului introdus la Pasul 3
 - **Site URL**: Generat automat din numele studioului (ex: `ironworks.fitsite.com`)
 
-### Pasul 5: Plățile
+### Pasul 5: Plățile {#step-5-payment}
 
 - Adăugați câmpul **Payment**
 - Configurați gateway-ul de plată ([Stripe](/user-guide/payment-gateways/stripe) este recomandat pentru facturarea abonamentelor)
 - Dacă ați creat *order bumps* la Lecția 5, adăugați un câmp **Order Bump** înainte de pasul de plată
 
-### Pasul 6: Confirmarea
+### Pasul 6: Confirmarea {#step-6-confirmation}
 
 - Personalizați mesajul de confirmare cu un limbaj specific fitness-ului
 - Exemplu: „Site-ul dumneavoastră de fitness este în curs de creare. Veți fi redirecționat către noul site în câteva secunde.”
 
-## Adăugarea unui Toggle de Selecție a Perioadei
+## Adăugarea unui Toggle de Selecție a Perioadei {#adding-a-period-selection-toggle}
 
 Dacă ați setat variații de preț în planurile dumneavoastră (lunare vs. anual), adăugați un câmp **Period Selection** în formularul de checkout, astfel încât clienții să poată comuta între perioadele de facturare. Vedeți [Checkout Forms](/user-guide/configuration/checkout-forms#adding-a-period-selection-toggle) pentru instrucțiuni.
 
-## Configurarea Plăților
+## Configurarea Plăților {#configuring-payment}
 
 Dacă nu ați configurat încă un gateway de plată:
 
@@ -85,7 +85,7 @@ Dacă nu ați configurat încă un gateway de plată:
 
 Vedeți [Getting Paid](/user-guide/payment-gateways/getting-paid) pentru detalii despre modul în care plățile ajung în contul dumneavoastră.
 
-## Testarea Fluxului
+## Testarea Fluxului {#testing-the-flow}
 
 Înainte de a continua, finalizați o înscriere de test completă:
 
@@ -105,7 +105,7 @@ Verificați următoarele:
 - [ ] Clientul ajunge pe un site funcțional cu template-ul selectat
 - [ ] Email-urile de confirmare folosesc un limbaj specific fitness-ului
 
-## Rețeaua FitSite Până Acum
+## Rețeaua FitSite Până Acum {#the-fitsite-network-so-far}
 
 ```
 FitSite Network
@@ -123,7 +123,7 @@ FitSite Network
 └── Ready for branding (next lesson)
 ```
 
-## Ce Am Construit în Această Lecție
+## Ce Am Construit în Această Lecție {#what-we-built-this-lesson}
 
 - **Un formular de checkout cu mai multe pași** adaptat proprietarilor de studiouri de fitness
 - **Limbaj specific nișei** pe tot parcursul fluxului de înscriere

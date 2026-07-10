@@ -3,18 +3,18 @@ title: Ffyddau Theme Builder
 sidebar_position: 20
 _i18n_hash: 9289bf7c5f164c1b2052ea428e0e3898
 ---
-# Ffrawdau Gweithredoedd: Scaffold a Actiwpio Theming Blocked
+# Ffrawdau Gweithredoedd: Scaffold a Actiwpio Theming Blocked {#theme-builder-abilities-scaffold-and-activate-block-themes}
 
 Mae Superdav AI Agent v1.12.0 yn cyflwyno ddau gweithredol sy'n sylweddol i chi gynhyrchu a chwarae theming block newydd o'r chat interface.
 
-## Oglwyddictod
+## Oglwyddictod {#overview}
 
 Mae'r ddefnyddio **scaffold-block-theme** a **activate-theme** yn gallu i'r agentau:
 - Gynhyrchu theming block cyffredinol, iawn yn barod i'r proddection, ar adlygu eich amgylchedd
 - Chwarae themingau ar eich site heb ystyriaeth manwl o'r unigolion
 - Creu identedigol wizual sy'n cydweithio drwy penderfyniadau dylunol a gyfarwyddwyd
 
-## Scaffold Theming Block
+## Scaffold Theming Block {#scaffold-block-theme}
 
 Mae'r ddefnyddio **scaffold-block-theme** yn gynhyrchu theming block WordPress newydd gyda strwythur theming cyffredinol, gan gynnwys:
 
@@ -23,7 +23,7 @@ Mae'r ddefnyddio **scaffold-block-theme** yn gynhyrchu theming block WordPress n
 - Stilio a fersylliadau block cyfathrebu
 - Metadata theming a ddefnyddiochion cefnogaeth
 
-### Sut i Gweithredu
+### Sut i Gweithredu {#how-to-invoke}
 
 Yn eich siarad â Superdav AI Agent, gallwch gofyn am gynhyrchu theming:
 
@@ -38,7 +38,7 @@ Bydd y agent yn:
 3. Creu pob fylpenau theming sydd angen
 4. Paratoi'r theming i'r chwarae
 
-### Ymddangos Cyflwyniad
+### Ymddangos Cyflwyniad {#expected-output}
 
 Pan fydd y ddefnyddio yn weithredu'n llwyddiannus, byddwch yn gweld:
 
@@ -56,11 +56,11 @@ Prif amgylchiad:
   Status: Ready to activate
 ```
 
-## Chwarae Theming
+## Chwarae Theming {#activate-theme}
 
 Mae'r fäith **activate-theme** yn newid eich siw i thymor bloc neu gyffredinol sydd wedi'i gysylltu neu sydd wedi'i gysylltu.
 
-### Sut i Gweithredu
+### Sut i Gweithredu {#how-to-invoke-1}
 
 Ar ôl gysylltu thymor, gallwch chi ei gweithredu yn uniongyrchol:
 
@@ -74,7 +74,7 @@ Neu gweithredu unrhyw thymor sydd wedi'i gysylltu:
 "Swiithio i thymor Twentytwentyfour"
 ```
 
-### Ymddangos a Ddeall
+### Ymddangos a Ddeall {#expected-output-1}
 
 Pan fydd y gweithredu yn cyffredinol:
 
@@ -92,7 +92,7 @@ Prif o ddeall:
   Nod: Ddysg eich peiriant i gywirio'r llwybr
 ```
 
-## Gweithro: Gysylltu a Gweithredu
+## Gweithro: Gysylltu a Gweithredu {#workflow-scaffold-and-activate}
 
 Mae gweithro tyvoeddol yn ychwanegu'r ddau fäith:
 
@@ -102,7 +102,7 @@ Mae gweithro tyvoeddol yn ychwanegu'r ddau fäith:
 4. **Gweithredu**: "Gweithredu thymor nawr"
 5. **Cywirio**: Ymddangos eich siw i sicr y dylunio newydd yn gweithredu
 
-## Tokenau Dylunio a Chysylltu
+## Tokenau Dylunio a Chysylltu {#design-tokens-and-customization}
 
 Mae thymori wedi'i gysylltu yn defnyddio tokenau dylunio WordPress (drwy `theme.json`) ar gyfer:
 
@@ -114,7 +114,7 @@ Mae thymori wedi'i gysylltu yn defnyddio tokenau dylunio WordPress (drwy `theme.
 
 Mae'r tokenau hyn yn cael eu cyddeallt mewn `theme.json`, gan ei fod yn einfail iawn i wneud newid eich system dylunio cyfan o'r ffeil un.
 
-## Gyfyngau a Nodau
+## Gyfyngau a Nodau {#limitations-and-notes}
 
 Ymddau yn cael ei ddefnyddio:
 
@@ -123,7 +123,7 @@ Ymddau yn cael ei ddefnyddio:
 - Mae cod PHP newydd yn thema'n bach; defnyddiwch pluginau ar gyfer ffurfyniadau cymhleth.
 - Mae thema bloc yn gweithio'n iawn gyda WordPress 5.9 a yms yn ddiweddarach.
 
-## Cyflawniad (Troubleshooting)
+## Cyflawniad (Troubleshooting) {#troubleshooting}
 
 **Mae thema nid yn dangos ar ôl y cystadleu**
 - Gwylio i ddweud bod y cyfrif thema sydd yn cael ei gystadleu yn dod olys ac yn cael permisiwnau iawn.
@@ -140,7 +140,7 @@ Ymddau yn cael ei ddefnyddio:
 - Trosglid unrhyw pluginau cache.
 - Cynllunio bod yr uniad WordPress eich cefnogi'r tokenau sydd yn cael eich defnyddio.
 
-## Ymddangosau Canlynol (Next Steps)
+## Ymddangosau Canlynol (Next Steps) {#next-steps}
 
 Ar ôl cyflawniad eich thema, gallwch:
 - Defnyddio'r **Design System Aesthetics skill** i gyfeiriaddu y tipografia, y ngwidiadau a'r gwahaniaethau ar gyfer y cefn.

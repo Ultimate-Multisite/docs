@@ -1,31 +1,32 @@
 ---
 title: メンバーシップのキャンセル
 sidebar_position: 2
-_i18n_hash: 1e2e0e42ea0aebad987e389838ecdfd5
+_i18n_hash: a34353ea4630d9815bde4ca7bcfeb95d
 ---
-# メンバーシップのキャンセル (v2)
+# メンバーシップのキャンセル（v2） {#canceling-a-membership-v2}
 
-_**重要な注意: 本記事はUltimate Multisiteバージョン2.xを対象としています。**_
+_**重要な注意: この記事は Ultimate Multisite バージョン 2.x を対象としています。**_
 
-お客様側でメンバーシップをキャンセルするのは非常に簡単です。
+顧客側でメンバーシップをキャンセルするのはとても簡単です。
 
-ユーザーがメンバーシップをキャンセルしたい場合、まずは****Account****ページにアクセスする必要があります。
+ユーザーがメンバーシップをキャンセルしたい場合は、まず ****Account**** ページにアクセスする必要があります。
 
-そこで、**Danger Zone**へ進み、**Delete Account**をクリックします。
+そこで、**危険ゾーン** に移動し、**Account を削除** をクリックします。
 
-![Account page Danger Zone with Delete Account button](/img/admin/memberships-list.png)
+![Account ページの危険ゾーンと Account を削除ボタン](/img/account-page/danger-zone.png)
 
-確認を求めるモジュールが開きます。**Confirm Account Deletion**オプションをオンにし、**Delete Account**をクリックしてください。
+確認を求めるモジュールが開きます。**Account 削除を確認** オプションをオンにして、**Account を削除** をクリックします。
 
-![Confirm Account Deletion dialog](/img/admin/memberships-list.png)
+![Account 削除確認ダイアログ](/img/account-page/delete-account-confirm.png)
 
-これにより、サイトからログアウトし、ネットワーク上のメンバーシップがキャンセルされ、サイトもネットワークから削除されます。
+これにより、ユーザーはサイトからログアウトされ、ネットワーク上のメンバーシップがキャンセルされます。同時に、そのサイトもネットワークから削除されます。
 
-![Logged out after account deletion](/img/admin/memberships-list.png)
+![Account 削除後にログアウト](/img/account-page/logged-out-after-delete.png)
 
-![Membership canceled confirmation](/img/admin/memberships-list.png)
+![メンバーシップキャンセルの確認](/img/account-page/membership-canceled.png)
 
-**重要:** この操作は、顧客をネットワークから除外しないことに注意してください。顧客は複数のメンバーシップを持っている場合や、メンバーシップを持っていない場合があります。
+**重要:** この操作で顧客がネットワークから除外されるわけではありません。顧客には複数のメンバーシップが紐づいている場合も、メンバーシップがまったく紐づいていない場合もあるためです。
 
-![Customer still exists in the network after cancellation](/img/admin/memberships-list.png) | ![Customer with no active memberships](/img/admin/memberships-list.png)
----|---
+![キャンセル後も顧客はネットワークに存在する](/img/admin/customer-after-cancel.png)
+
+![有効なメンバーシップがない顧客](/img/admin/memberships-customer-empty.png)

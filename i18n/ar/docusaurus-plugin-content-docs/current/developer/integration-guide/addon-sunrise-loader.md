@@ -3,17 +3,17 @@ title: إضافة محمل ملفات شروق
 sidebar_position: 5
 _i18n_hash: 2b24e0c6cf53f4dab0334db99a3b267b
 ---
-# محمل ملفات Sunrise للإضافات
+# محمل ملفات Sunrise للإضافات {#addon-sunrise-file-loader}
 
 يضيف Ultimate Multisite 2.8.0 مُحمّل امتدادات Sunrise للإضافات (add-ons) والتكاملات المخصصة لـ MU-plugin التي تحتاج إلى العمل أثناء مرحلة الإقلاع (bootstrapping) في WordPress دون الحاجة إلى تعديل ملف `wp-content/sunrise.php` المُنشأ.
 
-## متى تستخدمه
+## متى تستخدمه {#when-to-use-it}
 
 استخدم امتداد Sunrise عندما يتطلب تكاملك أن يعمل قبل تحميل الإضافات العادية، مثل توجيه النطاقات المخصصة، أو معالجة الطلبات الخاصة بالمضيف، أو تعديلات مبكرة على تهيئة الشبكة (network bootstrap).
 
 بالنسبة للتكاملات العادية، يفضل استخدام إضافات WordPress العادية، أو إضافات MU-plugins، أو الخطافات (hooks) الموثقة في Ultimate Multisite. يعمل كود Sunrise في وقت مبكر جداً، ويجب أن يبقى صغيراً، دفاعياً، ومستقلاً عن التبعيات (dependency-free).
 
-## اصطلاح تسمية الملفات
+## اصطلاح تسمية الملفات {#file-naming-convention}
 
 أنشئ ملف PHP باسم `sunrise.php` داخل دليل إضافة (addon directory) يبدأ اسمه بـ `ultimate-multisite-`:
 
@@ -29,7 +29,7 @@ wp-content/plugins/ultimate-multisite-*/sunrise.php
 
 يتم تحميل الملفات المطابقة بترتيب أبجدي حسب مسار الإضافة.
 
-## مكان وضع الملف
+## مكان وضع الملف {#where-to-place-the-file}
 
 ضع الملف في الدليل الجذر (root directory) للإضافة التي تمتلك سلوك Sunrise:
 
@@ -45,7 +45,7 @@ wp-content/
 
 لا تقم بتعديل ملف `wp-content/sunrise.php` المُنشأ مباشرة. يسمح لك المُحمّل بتوسيع سلوك Sunrise المخصص دون الحاجة إلى تفريغ (forking) ملف Sunrise الأساسي الذي يقوم Ultimate Multisite بتثبيته وتحديثه.
 
-## الخطافات والفلاتر المتاحة
+## الخطافات والفلاتر المتاحة {#hooks-and-filters-available}
 
 تعمل ملفات Sunrise للإضافات بعد تحميل تعيين النطاقات (domain mapping) الخاص بـ Ultimate Multisite وقبل أن يقوم WordPress بتشغيل `ms_loaded`. في هذه المرحلة، يمكن لملف Sunrise:
 
@@ -58,7 +58,7 @@ wp-content/
 
 استدعِ فقط الدوال التي تم تحميلها بالفعل في مرحلة Sunrise. تجنب العمل الثقيل على قاعدة البيانات، أو عرض القوالب (template rendering)، أو طلبات HTTP، أو أي كود يفترض أن ترتيب تحميل الإضافات العادي قد اكتمل.
 
-## مثال بسيط
+## مثال بسيط {#minimal-example}
 
 ```php
 <?php

@@ -3,7 +3,7 @@ title: Auto Search ug Palit-on sa mga Template sa Site
 sidebar_position: 8
 _i18n_hash: 0842f53505d24579010d91568e06ef68
 ---
-# Auto Search ug Replace sa Site Templates (v2)
+# Auto Search ug Replace sa Site Templates (v2) {#auto-search-and-replace-in-site-templates-v2}
 
 _**Kini nga tutorial nagkinahanglan og WP UItimo version 2.x.**_
 
@@ -17,7 +17,7 @@ Ang imong customer mahimong magpuno ni nga field panahon sa registration.
 
 Unya, ang Ultimate Multisite mag-replace sa mga placeholders gamit ang data nga gihatag sa customer awtomatiko.
 
-## **Pag-solve sa problema sa "template puno og placeholders"**
+## **Pag-solve sa problema sa "template puno og placeholders"** {#solving-the-template-full-of-placeholders-problem}
 
 Lahat na niana maayo, pero naa tay problema: karon ang atong site templates - nga pwedeng bisitaha sa atong mga customer - puno na og mga ugly placeholder nga dili daghan og sulti.
 

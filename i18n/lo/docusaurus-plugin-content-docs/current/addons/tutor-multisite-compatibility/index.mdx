@@ -1,0 +1,116 @@
+---
+title: ຄວາມເຂົ້າກັນໄດ້ຂອງ Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+ປລັກອິນ WordPress ທີ່ເພີ່ມການແກ້ໄຂຄວາມເຂົ້າກັນໄດ້ສຳລັບ Tutor LMS ໃນສະພາບແວດລ້ອມ multisite.
+
+## ຄຳອະທິບາຍ {#description}
+
+ປລັກອິນນີ້ມີການແກ້ໄຂຄວາມເຂົ້າກັນໄດ້ທີ່ຈຳເປັນສຳລັບການໃຊ້ Tutor LMS ຢູ່ເທິງເຄືອຂ່າຍ multisite ຂອງ WordPress. ມັນຈັດການການລົງທະບຽນຜູ້ໃຊ້, ການຈັດການຜູ້ສອນ, ຂໍ້ຈຳກັດຂອງຫຼັກສູດ, ແລະຟັງຊັນອື່ນໆທີ່ເຉພາະສຳລັບ multisite.
+
+## ຄຸນສົມບັດ {#features}
+
+- **ການຈັດການຕາຕະລາງຖານຂໍ້ມູນ**: ກວດພົບແລະສ້າງຕາຕະລາງ Tutor LMS ທີ່ຂາດຫາຍໂດຍອັດຕະໂນມັດ ເຊິ່ງລົ້ມເຫຼວເນື່ອງຈາກຂໍ້ຈຳກັດ foreign key ຂອງ multisite
+- **ການລົງທະບຽນຜູ້ໃຊ້ Multisite**: ຕົວຈັດການ AJAX ແບບກຳນົດເອງສຳລັບການຈັດການການລົງທະບຽນຜູ້ໃຊ້ຂ້າມເວັບໄຊໃນເຄືອຂ່າຍ
+- **ການຈັດການບົດບາດຜູ້ສອນ**: ການກຳນົດແລະຈັດການບົດບາດຜູ້ສອນໂດຍອັດຕະໂນມັດໃນສະພາບແວດລ້ອມ multisite
+- **ຂໍ້ຈຳກັດຂອງຫຼັກສູດ**: ການຜະສານກັບ Ultimate Multisite ສຳລັບການຈັດການຂໍ້ຈຳກັດການສ້າງຫຼັກສູດແລະ funnel ຕາມແຜນຂອງເວັບໄຊ
+- **ມຸມມອງຜູ້ດູແລແບບກຳນົດເອງ**: ລາຍການຜູ້ສອນແລະອິນເຕີເຟດການຈັດການທີ່ຮັບຮູ້ multisite
+- **ເຄື່ອງມືຜູ້ດູແລ**: ອິນເຕີເຟດການຈັດການຖານຂໍ້ມູນສຳລັບຜູ້ດູແລເຄືອຂ່າຍແລະເວັບໄຊ
+
+## ຂໍ້ກຳນົດ {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- ປລັກອິນ Tutor LMS (ບັງຄັບໃຊ້ໂດຍອັດຕະໂນມັດຜ່ານສ່ວນຫົວ `Requires Plugins`)
+- ການຕິດຕັ້ງ WordPress Multisite
+- ປລັກອິນ Ultimate Multisite (ສຳລັບຟັງຊັນຂໍ້ຈຳກັດຂອງຫຼັກສູດ)
+
+## ການຕິດຕັ້ງ {#installation}
+
+1. ອັບໂຫຼດໄຟລ໌ປລັກອິນໄປທີ່ `/wp-content/plugins/tutor-multisite-compatibility/`
+2. ໃຫ້ແນ່ໃຈວ່າ Tutor LMS ໄດ້ຖືກຕິດຕັ້ງແລະເປີດໃຊ້ງານແລ້ວ
+3. ເປີດໃຊ້ງານປລັກອິນຜ່ານເມນູ 'ປລັກອິນ' ໃນ WordPress
+4. ປລັກອິນຈະຜະສານກັບ Tutor LMS ໂດຍອັດຕະໂນມັດ
+
+## ໂຄງສ້າງໄຟລ໌ {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## ຟັງຊັນທີ່ຍ້າຍມາຈາກ MU plugin {#functionality-moved-from-mu-plugin}
+
+ປລັກອິນນີ້ມີຟັງຊັນທີ່ເຄີຍຢູ່ໃນ `wp-content/mu-plugins/daves.php`:
+
+- ຂໍ້ຈຳກັດການປ່ຽນສະຖານະຫຼັກສູດ
+- ຂໍ້ຈຳກັດການສ້າງຫຼັກສູດ
+- ການຜະສານ CartFlows ແລະຂີດຈຳກັດ
+- ການຈັດການບົດບາດຜູ້ສອນ Tutor
+- ການຈັດການການລົງທະບຽນຜູ້ໃຊ້ Multisite
+- ການສະແດງ ID ສິນຄ້າຂອງຫຼັກສູດ
+
+## ການຈັດການຖານຂໍ້ມູນ {#database-management}
+
+### ບັນຫາ {#the-problem}
+
+ໃນສະພາບແວດລ້ອມ multisite ຂອງ WordPress, ການສ້າງຕາຕະລາງ Tutor LMS ຈະລົ້ມເຫຼວສຳລັບຕາຕະລາງທີ່ມີຂໍ້ຈຳກັດ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້. ສິ່ງນີ້ເກີດຂຶ້ນເພາະວ່າ:
+
+- ຕາຕະລາງເຉພາະເວັບໄຊໃຊ້ຄຳນຳໜ້າເຊັ່ນ `wp_2_tutor_carts`
+- Foreign keys ອ້າງອີງໄປຫາ `wp_2_users` (ເຊິ່ງບໍ່ມີຢູ່)
+- ຕາຕະລາງຜູ້ໃຊ້ຕົວຈິງແມ່ນ `wp_users` (ໃຊ້ຮ່ວມກັນທົ່ວເຄືອຂ່າຍ)
+
+### ວິທີແກ້ໄຂ {#the-solution}
+
+ປລັກອິນນີ້ຈະເຮັດສິ່ງຕໍ່ໄປນີ້ໂດຍອັດຕະໂນມັດ:
+
+1. **ກວດພົບຕາຕະລາງທີ່ຂາດຫາຍ**: ກວດສອບຕາຕະລາງທີ່ສ້າງບໍ່ສຳເລັດເນື່ອງຈາກຂໍ້ຈຳກັດ foreign key
+2. **ສ້າງຕາຕະລາງດ້ວຍການອ້າງອີງທີ່ຖືກຕ້ອງ**: ໃຊ້ຊື່ຕາຕະລາງຜູ້ໃຊ້ທີ່ເໝາະສົມ (`wp_users` ໃນ multisite)
+3. **ຈັດການຫຼາຍສະຖານະການ**:
+   - ການເປີດໃຊ້ງານ/ເປີດໃຊ້ງານຄືນປລັກອິນ
+   - ການສ້າງເວັບໄຊໃໝ່ໃນເຄືອຂ່າຍ
+   - ການກວດສອບຕາຕະລາງແບບຄູ່ມືຜ່ານອິນເຕີເຟດຜູ້ດູແລ
+
+### ຕາຕະລາງທີ່ໄດ້ຮັບຜົນກະທົບ {#affected-tables}
+
+- `tutor_coupon_usages` - ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
+- `tutor_carts` - ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
+- `tutor_notification_preferences` - ຕາຕະລາງ TutorPro ທີ່ມີ foreign key ໄປຫາຕາຕະລາງຜູ້ໃຊ້
+
+### ອິນເຕີເຟດຜູ້ດູແລ {#admin-interface}
+
+ເຂົ້າເຖິງເຄື່ອງມືການຈັດການຖານຂໍ້ມູນໄດ້ທີ່:
+
+- **ຜູ້ດູແລເຄືອຂ່າຍ**: ການຕັ້ງຄ່າ → Tutor Multisite DB
+- **ຜູ້ດູແລເວັບໄຊ**: ເຄື່ອງມື → Tutor Multisite DB
+
+ອິນເຕີເຟດນີ້ຊ່ວຍໃຫ້ທ່ານ:
+- ເບິ່ງຕາຕະລາງທີ່ຂາດຫາຍທົ່ວທຸກເວັບໄຊ
+- ກະຕຸ້ນການສ້າງຕາຕະລາງແບບຄູ່ມື
+- ກວດສອບການກຳນົດຄ່າຖານຂໍ້ມູນ
+- ເບິ່ງຂໍ້ມູນສະຖານະແບບລະອຽດ
+
+## ການສະໜັບສະໜູນ {#support}
+
+ປລັກອິນນີ້ຖືກອອກແບບມາເຉພາະສຳລັບແພລດຟອມ KursoPro. ສຳລັບການສະໜັບສະໜູນດ້ານເຕັກນິກ, ຕິດຕໍ່ທີມພັດທະນາ.

@@ -3,11 +3,11 @@ title: Feedback Ọnụrụ Ụta na Ihe Ọ dị Ọzọ
 sidebar_position: 25
 _i18n_hash: b8cc1801782ca29dbdcddcf9db34fb48
 ---
-# Feedback & Báo Cáo Vấn Đề Khách Hàng
+# Feedback & Báo Cáo Vấn Đề Khách Hàng {#customer-feedback--issue-reporting}
 
 Gratis AI Agent v1.5.0 mang đến một hệ thống báo cáo phản hồi và vấn đề tích hợp sẵn, cho phép người dùng cuối đánh dấu những câu trả lời không hữu ích và báo cáo các sự cố trực tiếp từ giao diện trò chuyện. Hệ thống này bao gồm quản lý sự đồng ý (consent management), lệnh báo cáo tự động, và phân loại ưu tiên bằng AI ở phía sau (backend).
 
-## Nút Thumbs-Down (Không Hợp Lý)
+## Nút Thumbs-Down (Không Hợp Lý) {#thumbs-down-button}
 
 Mỗi tin nhắn mà trợ lý AI gửi đi đều hiển thị một nút **thumbs-down** (👎). Khi người dùng nhấp vào đó, họ có thể đánh dấu phản hồi là không hữu ích hoặc sai.
 
@@ -15,7 +15,7 @@ Mỗi tin nhắn mà trợ lý AI gửi đi đều hiển thị một nút **thu
 - Nhấp vào nó sẽ mở **Feedback Consent Modal**.
 - Phản hồi được liên kết với luồng trò chuyện và tin nhắn cụ thể đó.
 
-## Feedback Consent Modal (Cửa Sổ Đồng Ý Phản Hồi)
+## Feedback Consent Modal (Cửa Sổ Đồng Ý Phản Hồi) {#feedback-consent-modal}
 
 Khi người dùng nhấp vào nút thumbs-down, một cửa sổ đồng ý (consent modal) sẽ hiện ra trước khi bất kỳ dữ liệu nào được gửi đi. Cửa sổ này:
 
@@ -26,13 +26,13 @@ Khi người dùng nhấp vào nút thumbs-down, một cửa sổ đồng ý (co
 
 Không có phản hồi nào được ghi lại cho đến khi người dùng xác nhận rõ ràng.
 
-## Auto-Prompt Feedback Banner (Biểu ngữ Phản Hồi Tự động)
+## Auto-Prompt Feedback Banner (Biểu ngữ Phản Hồi Tự động) {#auto-prompt-feedback-banner}
 
 Ở cuối một cuộc trò chuyện, trợ lý có thể hiển thị một **auto-prompt feedback banner** — một thông báo không gây phiền nhiễu hỏi liệu phiên làm việc đó có hữu ích hay không.
 
 Biểu ngữ này xuất hiện tự động dựa trên độ dài và kết quả của cuộc trò chuyện. Nó liên kết đến cùng luồng phản hồi như nút thumbs-down. Người dùng có thể đóng biểu ngữ mà không cần cung cấp phản hồi.
 
-## Lệnh /report-issue (Slash Command)
+## Lệnh /report-issue (Slash Command) {#report-issue-slash-command}
 
 Người dùng có thể kích hoạt luồng phản hồi trực tiếp bằng cách gõ `/report-issue` vào ô nhập liệu trò chuyện. Lệnh này:
 
@@ -42,7 +42,7 @@ Người dùng có thể kích hoạt luồng phản hồi trực tiếp bằng 
 
 Lệnh `/report-issue` có sẵn trong tất cả các chế độ chat (inline, floating widget, full-screen).
 
-## AI-Assisted Triage (Phân loại hỗ trợ bởi AI)
+## AI-Assisted Triage (Phân loại hỗ trợ bởi AI) {#ai-assisted-triage}
 
 Phản hồi được gửi sẽ đi qua một lớp phân loại AI (AI triage layer) mà nó:
 
@@ -52,7 +52,7 @@ Phản hồi được gửi sẽ đi qua một lớp phân loại AI (AI triage 
 
 Điều này giúp giảm thời gian xem xét thủ công bằng cách đưa ra những vấn đề quan trọng nhất trước.
 
-## Settings > Advanced {#settings-advanced} (Cài đặt > Nâng cao)
+## Settings > Advanced {#settings-advanced} (Cài đặt > Nâng cao) {#settings--advanced}
 
 Để bật backend phản hồi, hãy cấu hình các trường sau dưới **Gratis AI Agent → Settings → Advanced**:
 

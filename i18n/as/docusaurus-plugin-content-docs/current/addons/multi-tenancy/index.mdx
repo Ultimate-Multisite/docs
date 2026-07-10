@@ -1,31 +1,45 @@
 ---
-title: মাল্টি-টেনেন্সী
+title: Multi-Tenancy
 sidebar_position: 1
-_i18n_hash: 6be3e16103deeb2e81cc831426d3accb
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
 ---
 import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
 
-# Multi-Tenancy
+# বহু-ভাড়াটীয়া ব্যৱস্থা {#multi-tenancy}
 
-কাৰ্যক্ষমতা আৰু নিৰাপত্তা বৰ্ধৰণৰ বাবে সাব-সাইটসমূহ বিভিন্ন ছাৰ্ভাৰ আৰু ডেটাবেছত বিতৰণ কৰে।
+কাৰ্যক্ষমতা আৰু সুৰক্ষাৰ বাবে উপ-ছাইটসমূহ ছাৰ্ভাৰ আৰু ডাটাবেছসমূহৰ মাজত বিতৰণ কৰক
 
-## প্ৰয়োজনীয়তা (Requirements)
+## Version 1.2.0 মুক্তিৰ মুখ্য দিশসমূহ {#version-120-release-highlights}
 
-- WordPress ৫.৩ বা তাৰ অধিক
-- PHP ৭.৪ বা তাৰ অধিক
-- Multisite Ultimate plugin (সক্ৰিয়)
+Multi-Tenancy 1.2.0-এ উৎপাদন বিচ্ছিন্নকৰণ কাৰ্যপ্ৰবাহৰ বাবে স্বায়ত্তশাসিত ভাড়াটীয়াৰ ভিত্তি যোগ কৰে:
 
-## স্থাপন (Installation)
+- অল্পকালীন, পুনৰাবৃত্তি-সুৰক্ষিত SSO ভ্ৰমণৰ সৈতে অৱস্থাহীন ভাড়াটীয়া স্বয়ংক্ৰিয় লগইন।
+- স্বায়ত্তশাসিত ভাড়াটীয়াৰ বাবে প্ৰতিটো উপ-ছাইটভিত্তিক ডাটাবেছ আৰু ফাইলছিষ্টেম বিচ্ছিন্নকৰণ।
+- host-সচেতন ভাড়াটীয়া provisioning-ৰ বাবে Hostinger বহু-ভাড়াটীয়া ক্ষমতা।
+- পুৰণি ডাটাৰ পৰীক্ষা আৰু async push প্ৰক্ৰিয়াকৰণৰ বাবে স্বায়ত্তশাসিত migration যাচাইকৰণ gate।
+- Bedrock, FrankenPHP, আৰু localhost install-ৰ বাবে কনফিগাৰযোগ্য একে-মেচিন ডাটাবেছ host binding।
+- ভাড়াটীয়া bootstrap, ডাটাবেছ writer, schema bootstrap, আৰু ব্যৱহাৰকাৰী provisioning উন্নতি।
+- ভাড়াটীয়াৰ credentials পৰিষ্কাৰ কৰা অধিক নিৰাপদ স্বায়ত্তশাসিত teardown।
 
-১. addons ফাইলসমূহ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপলোড কৰক।
-২. WordPress-ৰ 'Plugins' মেনুৰ মাজেৰে প্লাগইনটো সক্ৰিয় কৰক।
-৩. নেটৱৰ্ক এডমিনত addons ছেটিংসমূহ কনফিগাৰ কৰক।
+[স্বায়ত্তশাসিত migration কাৰ্যপ্ৰবাহ](/user-guide/getting-started/sovereign-migration-workflow), [বহু-ভাড়াটীয়া বিচ্ছিন্নকৰণ](/user-guide/configuration/multi-tenancy-isolation), আৰু [স্বায়ত্তশাসিত ভাড়াটীয়া কাৰ্যকলাপ](/user-guide/administration/sovereign-tenant-operations)-ৰ বাবে ব্যৱহাৰকাৰী guideসমূহ চাওক।
 
-## বিকাশ (Development)
+## প্ৰয়োজনীয়তা {#requirements}
 
-### ছেটআপ (Setup)
+- WordPress 5.3 বা তাতকৈ উচ্চ
+- PHP 7.4 বা তাতকৈ উচ্চ
+- Multisite Ultimate প্লাগইন (সক্ৰিয়)
+
+## ইনষ্টলেচন {#installation}
+
+1. addon ফাইলসমূহ আপোনাৰ `/wp-content/plugins/` ডাইৰেক্টৰীত আপল'ড কৰক
+2. WordPress-ত 'Plugins' মেনুৰ জৰিয়তে প্লাগইন সক্ৰিয় কৰক
+3. নেটৱৰ্ক admin-ত addon ছেটিংছ কনফিগাৰ কৰক
+
+## বিকাশ {#development}
+
+### ছেটআপ {#setup}
 
 ```bash
 # Install dependencies
@@ -46,79 +60,91 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### প্ৰজেক্টৰ গঠন (Project Structure)
+### প্ৰকল্পৰ গঠন {#project-structure}
 
 ```
 ultimate-multisite-addon-template/
-├── inc/                          # PHP classes and includes
-│   ├── class-multisite-ultimate-updater.php  # Update handler
-│   └── class-multi_tenancy-main.php             # Main functionality
-├── tests/                        # Unit tests
+├── inc/                          # PHP class আৰু includeসমূহ
+│   ├── class-multisite-ultimate-updater.php  # আপডেট handler
+│   └── class-multi_tenancy-main.php             # মুখ্য কাৰ্যক্ষমতা
+├── tests/                        # Unit testসমূহ
 │   ├── bootstrap.php            # Test bootstrap
 │   ├── class-*-base.php         # Base test class
-│   └── class-*-test.php         # Test cases
-├── views/                       # Template files
-├── assets/                      # Static assets
-│   ├── css/                     # Stylesheets
-│   ├── js/                      # JavaScript files
-│   └── images/                  # Images
-├── lang/                        # Language files
-├── composer.json                # PHP dependencies
-├── package.json                 # Node.js dependencies
-├── phpunit.xml.dist             # PHPUnit configuration
-├── .phpcs.xml.dist              # Code standards configuration
-└── rector.php                   # Code modernization rules
+│   └── class-*-test.php         # Test caseসমূহ
+├── views/                       # Template ফাইলসমূহ
+├── assets/                      # Static assetসমূহ
+│   ├── css/                     # Stylesheetসমূহ
+│   ├── js/                      # JavaScript ফাইলসমূহ
+│   └── images/                  # ছবিসমূহ
+├── lang/                        # ভাষা ফাইলসমূহ
+├── composer.json                # PHP dependencyসমূহ
+├── package.json                 # Node.js dependencyসমূহ
+├── phpunit.xml.dist             # PHPUnit কনফিগাৰেচন
+├── .phpcs.xml.dist              # Code standards কনফিগাৰেচন
+└── rector.php                   # Code modernization নিয়মসমূহ
 ```
 
-### পৰীক্ষা (Testing)
+### পৰীক্ষণ {#testing}
 
-এই addons ত এটা বিস্তৃত পৰীক্ষা ব্যৱস্থা অন্তৰ্ভুক্ত কৰা হৈছে:
+addon-টোত এটা বিস্তৃত পৰীক্ষণ framework অন্তৰ্ভুক্ত আছে:
 
-- **Unit Tests**: WordPress test suite সহ PHPUnit-ভিত্তিক পৰীক্ষা।
-- **Base Test Class**: সাধাৰণ পৰীক্ষাৰ দৃশ্যপটৰ বাবে সহায়ক পদ্ধতি (helper methods) প্ৰদান কৰে।
-- **Test Coverage**: কোড কভাৰেজ ট্ৰেক কৰিবলৈ কনফিগাৰ কৰা।
-- **Multisite Testing**: পৰীক্ষাসমূহ এটা multisite পৰিৱেশত চলি।
+- **Unit Tests**: WordPress test suite-সহ PHPUnit-ভিত্তিক testসমূহ
+- **Base Test Class**: সাধাৰণ test পৰিস্থিতিৰ বাবে helper methodসমূহ প্ৰদান কৰে
+- **Test Coverage**: code coverage অনুসৰণ কৰিবলৈ কনফিগাৰ কৰা হৈছে
+- **Multisite Testing**: testসমূহ multisite পৰিৱেশত চলে
 
-### কোড মানদণ্ড (Code Standards)
+### Code Standards {#code-standards}
 
-- **WordPress Coding Standards**: PHPCS ৰ মাজেৰে বলবৎ কৰা।
-- **PHP ৭.৪+ Compatibility**: আধুনিক PHP বৈশিষ্ট্যসমূহ সমৰ্থন কৰে।
-- **Static Analysis**: টাইপ চেকিংৰ বাবে PHPStan ইন্টিগ্ৰেচন।
-- **Code Modernization**: PHP আপগ্রেডৰ বাবে Rector নিয়ম।
+- **WordPress Coding Standards**: PHPCS-ৰ জৰিয়তে বলৱৎ কৰা হয়
+- **PHP 7.4+ Compatibility**: আধুনিক PHP বৈশিষ্ট্যসমূহ সমৰ্থিত
+- **Static Analysis**: type checking-ৰ বাবে PHPStan সংহতি
+- **Code Modernization**: PHP upgradeসমূহৰ বাবে Rector নিয়মসমূহ
 
-### বিল্ড ব্যৱস্থা (Build System)
+### Build System {#build-system}
 
-- **Asset Processing**: CSS/JS ফাইলসমূহৰ বাবে মিনিফিকাচন (Minification)।
-- **Translation**: POT ফাইলৰ সৃষ্টি।
-- **Packaging**: বিতৰণৰ বাবে আৰ্কাইভ সৃষ্টি।
-- **Development Mode**: ডিবাগিংৰ বাবে মিনিফিকা নোহোৱা asset।
+- **Asset Processing**: CSS/JS ফাইলসমূহৰ বাবে minification
+- **Translation**: POT ফাইল সৃষ্টি
+- **Packaging**: বিতৰণৰ বাবে archive সৃষ্টি
+- **Development Mode**: debugging-ৰ বাবে unminified assetসমূহ
 
-## কনফিগাৰেচন (Configuration)
+## কনফিগাৰেচন {#configuration}
 
-এই addons ত নেটৱৰ্ক এডমিন ইন্টাৰফেচৰ মাজেৰে উপলব্ধ বিভিন্ন কনফিগাৰেচন বিকল্প সমৰ্থন কৰে।
+addon-এ নেটৱৰ্ক admin interface-ৰ জৰিয়তে প্ৰবেশযোগ্য বিভিন্ন কনফিগাৰেচন বিকল্প সমৰ্থন কৰে।
 
-## হুক আৰু ফিল্টাৰ (Hooks and Filters)
+### স্বায়ত্তশাসিত ভাড়াটীয়া কনফিগাৰেচন {#sovereign-tenant-configuration}
 
-### Actions (কাৰ্য)
+স্বায়ত্তশাসিত ভাড়াটীয়াৰ বাবে, traffic ভাড়াটীয়ালৈ route কৰাৰ আগতে ভাড়াটীয়া ডাটাবেছ, ফাইলছিষ্টেম root, ডাটাবেছ host binding, আৰু host ক্ষমতা কনফিগাৰ কৰক। ডাটাবেছ credentials, host binding, routing, বা ব্যৱহাৰকাৰী provisioning-ত প্ৰভাৱ পেলোৱা প্ৰতিটো পৰিৱৰ্তনৰ পাছত migration যাচাইকৰণ চলাওক।
 
-- `ultimate-multisite-addon-template_init` - addons ইনিশ্বিয়ালাইজেশ্যনৰ পিছত ট্ৰিগাৰ হয়।
-- `ultimate-multisite-addon-template_loaded` - সকলো addons ফাইল লোড হোৱাৰ পিছত ট্ৰিগাৰ হয়।
+ভাড়াটীয়া runtime আৰু ডাটাবেছ grantসমূহে local socket বা একে-মেচিন access আশা কৰিলেহে `localhost` ব্যৱহাৰ কৰক। আপোনাৰ provider-এ কনফিগাৰ কৰা grant host সেইটোৱেই হ'লে `127.0.0.1` বা এটা service hostname ব্যৱহাৰ কৰক।
 
-### Filters (ফিল্টাৰ)
+### Hostinger ক্ষমতা {#hostinger-capability}
 
-- `ultimate-multisite-addon-template_settings` - addons ছেটিং মডিফাই কৰিবলৈ।
-- `ultimate-multisite-addon-template_enabled` - addons সক্ষম/নিষ্ক্ষম স্থিতি ওপৰ কৰিবলৈ।
+Hostinger বহু-ভাড়াটীয়া ক্ষমতাই shared Hostinger integration token-ৰ সৈতে কাম কৰে। যাচাইকৰণৰ আগতে domain hPanel-ত উপস্থিত আছে, DNS-এ Hostinger account-লৈ point কৰে, আৰু ভাড়াটীয়া ডাটাবেছ ছেটিংছ hPanel-ৰ সৈতে মিলে বুলি নিশ্চিত কৰক।
 
-## লাইচেঞ্চ (License)
+## Hook আৰু Filterসমূহ {#hooks-and-filters}
 
-এই addons টি GPL v3 বা তাৰ অধিকৰ অধীনত লাইচেঞ্চ কৰা হৈছে।
+### Actionসমূহ {#actions}
 
-## সমৰ্থন (Support)
+- `ultimate-multisite-addon-template_init` - addon initialization-ৰ পাছত চলোৱা হয়
+- `ultimate-multisite-addon-template_loaded` - সকলো addon ফাইল load হোৱাৰ পাছত চলোৱা হয়
 
-সমৰ্থন আৰু ডকুমেন্টেশ্যনৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) লভিজিট কৰক।
-## চেঞ্জলগ (Changelog)
+### Filterসমূহ {#filters}
 
-- Version 1.0.1 (2025-09-28): prefix 'ultimate-multisite' লৈ নাম সলনি কৰা; text domain আপডেট কৰা; version বৃদ্ধি কৰা।
+- `ultimate-multisite-addon-template_settings` - addon ছেটিংছ সলনি কৰক
+- `ultimate-multisite-addon-template_enabled` - addon enable/disable স্থিতি override কৰক
+
+## লাইচেন্স {#license}
+
+এই addon-টো GPL v3 বা তাৰ পাছৰ সংস্কৰণৰ অধীনত licensed।
+
+## সহায়তা {#support}
+
+সহায়তা আৰু documentation-ৰ বাবে, [MultisiteUltimate.com](https://multisiteultimate.com) ভ্ৰমণ কৰক
+## Changelog {#changelog}
+
+- Version 1.2.0 (2026-06-03): অৱস্থাহীন ভাড়াটীয়া স্বয়ংক্ৰিয় লগইন, Hostinger বহু-ভাড়াটীয়া ক্ষমতা, প্ৰতিটো উপ-ছাইটভিত্তিক ডাটাবেছ আৰু ফাইলছিষ্টেম বিচ্ছিন্নকৰণ, স্বায়ত্তশাসিত migration যাচাইকৰণ gateসমূহ, ভাড়াটীয়া bootstrap/ডাটাবেছ writer উন্নতি, কনফিগাৰযোগ্য MySQL host binding, আৰু অধিক নিৰাপদ স্বায়ত্তশাসিত teardown যোগ কৰক।
+
+- Version 1.0.1 (2025-09-28): prefix ultimate-multisite-লৈ rename কৰক; text domain আপডেট কৰক; version bump।
 
 
-- Version (2025-09-28): prefix 'ultimate-multisite' লৈ নাম সলনি কৰা; text domain আপডেট কৰা; version বৃদ্ধি কৰা।
+- Version  (2025-09-28): prefix ultimate-multisite-লৈ rename কৰক; text domain আপডেট কৰক; version bump।

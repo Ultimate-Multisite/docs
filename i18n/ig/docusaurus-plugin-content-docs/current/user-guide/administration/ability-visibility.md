@@ -3,11 +3,11 @@ title: Nche Ihe Ọ dị Mma
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Visibility Ability
+# Visibility Ability {#ability-visibility}
 
 Superdav AI Agent v1.12.0 nwere introduce **Ability Visibility** controls wey go govern which surfaces expose each ability. Eme this allow administrators fine-tune which agent capabilities dey available through REST APIs, MCP servers, WooCommerce integrations, and other interfaces.
 
-## What is Ability Visibility?
+## What is Ability Visibility? {#what-is-ability-visibility}
 
 Ability Visibility na permission system wey control:
 
@@ -18,9 +18,9 @@ Ability Visibility na permission system wey control:
 
 Each ability carry a visibility level wey determine its availability across different surfaces.
 
-## Visibility Levels
+## Visibility Levels {#visibility-levels}
 
-### Public
+### Public {#public}
 
 **Public abilities** dey available everywhere:
 
@@ -32,7 +32,7 @@ Each ability carry a visibility level wey determine its availability across diff
 
 Example: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Internal
+### Internal {#internal}
 
 **Internal abilities** dey available only within your WordPress installation:
 
@@ -43,7 +43,7 @@ Example: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Example: `manage-settings`, `view-analytics`, `export-data`
 
-### Partner
+### Partner {#partner}
 
 **Partner abilities** dey available only to whitelisted partners:
 
@@ -54,7 +54,7 @@ Example: `manage-settings`, `view-analytics`, `export-data`
 
 Example: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Disabled
+### Disabled {#disabled}
 
 **Disabled abilities** no dey available anywhere:
 
@@ -63,15 +63,15 @@ Example: `bulk-import-users`, `modify-billing`, `access-analytics`
 - No available in admin panels
 - Useful for deprecated or experimental abilities
 
-## Quản lý Khả năng Hiển thị
+## Quản lý Khả năng Hiển thị {#managing-ability-visibility}
 
-### Truy cập Cài đặt Khả năng Hiển thị
+### Truy cập Cài đặt Khả năng Hiển thị {#accessing-ability-visibility-settings}
 
 1. Vào **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Nhấn vào tab **Abilities** (Khả năng)
 3. Bạn sẽ thấy danh sách tất cả các khả năng đã cài đặt cùng với mức độ hiển thị của chúng.
 
-### Xem Chi tiết Khả năng
+### Xem Chi tiết Khả năng {#viewing-ability-details}
 
 Nhấn vào bất kỳ khả năng nào để xem:
 
@@ -82,7 +82,7 @@ Nhấn vào bất kỳ khả năng nào để xem:
 - **Last updated**: Lần cuối mức độ hiển thị được thay đổi khi nào
 - **Status**: Đã nhận diện (Recognized) hay Chưa phân loại (Unclassified)
 
-### Thay đổi Mức độ Hiển thị
+### Thay đổi Mức độ Hiển thị {#changing-visibility-levels}
 
 Để thay đổi mức độ hiển thị của một khả năng:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Các thao tác Hàng loạt
+### Các thao tác Hàng loạt {#bulk-operations}
 
 Để thay đổi hiển thị cho nhiều khả năng cùng lúc:
 
@@ -108,11 +108,11 @@ Partner allow-list: partner-123, partner-456
 2. Chọn một mức độ hiển thị mới từ menu thả xuống hành động hàng loạt (bulk action)
 3. Nhấn **Apply** (Áp dụng)
 
-## Danh sách Cho phép Đối tác (Partner Allow-List)
+## Danh sách Cho phép Đối tác (Partner Allow-List) {#partner-allow-list}
 
 **partner allow-list** kiểm soát những đối tác bên ngoài nào có thể truy cập các khả năng ở cấp độ Đối tác (Partner-level abilities).
 
-### Thêm Đối tác
+### Thêm Đối tác {#adding-partners}
 
 1. Vào **Superdav AI Agent** → **Settings** → **Partners**
 2. Nhấn **Add Partner** (Thêm Đối tác)
@@ -120,7 +120,7 @@ Partner allow-list: partner-123, partner-456
 4. Tùy chọn thêm tên và mô tả của đối tác
 5. Nhấn **Save** (Lưu)
 
-### Gán Khả năng cho Đối tác
+### Gán Khả năng cho Đối tác {#assigning-abilities-to-partners}
 
 Sau khi đã thêm một đối tác:
 
@@ -130,7 +130,7 @@ Sau khi đã thêm một đối tác:
 4. Na dị n'ụm nwere "Partner allow-list" (dị n'ụm nwere oruọ), jikọ oruọ ndị na ọ bụ ndị partner ndị ọrụ ga-anọchịrị
 5. Jikọ **Save**
 
-### Ọkụ Partner Access
+### Ọkụ Partner Access {#revoking-partner-access}
 
 Ọ bụrụ na ị chọrọ ịgbagba access nke partner:
 
@@ -140,11 +140,11 @@ Sau khi đã thêm một đối tác:
 
 Partner ahụ ga-anọchịrị access nke ability ahụ a n'ụlọ.
 
-## Abilities Ndị Ekwupụrụ (Unclassified Abilities)
+## Abilities Ndị Ekwupụrụ (Unclassified Abilities) {#unclassified-abilities}
 
 Ọ dị n'ụdị ọ bụrụ na ị chọrọ ability nke third-party (nkwado ọzọ) nke Superdav AI Agent ahụ ezụrụ, ọ ga-anọchịrị dị ka **Unclassified** (Ndị Ekwupụrụ).
 
-### Onye Ndu Admin Maka Abilities Ndị Ekwupụrụ
+### Onye Ndu Admin Maka Abilities Ndị Ekwupụrụ {#admin-notice-for-unclassified-abilities}
 
 Ị ga ị chọta oge admin:
 
@@ -161,7 +161,7 @@ Biko, jikọ site na ị chọrọ ya.
 [Review Abilities] [Dismiss]
 ```
 
-### Jikọ Abilities Ndị Ekwupụrụ
+### Jikọ Abilities Ndị Ekwupụrụ {#reviewing-unclassified-abilities}
 
 1. Jikọ **Review Abilities** n'oge oge admin ahụ
 2. Na-akọwa abụọ ndị ekwupụrụ, ị ga ị chọta:
@@ -178,7 +178,7 @@ Biko, jikọ site na ị chọrọ ya.
 
 4. Jikọ **Classify** ka ị chọrọ ịsa mmeghị ya
 
-### Ọ bụrụ na ị Classify Abilities Ndị Ekwupụrụ?
+### Ọ bụrụ na ị Classify Abilities Ndị Ekwupụrụ? {#why-classify-unclassified-abilities}
 
 Jikọ abilities:
 
@@ -187,9 +187,9 @@ Jikọ abilities:
 - **Nkempe features**: Oge ịclassify ya, ability ahụ ga-anọchịrị
 - **Nchebe ihe ndị dị n'ụ**: Ịchọta ọ bụ ihe ị chọrọ na-e logọdụ maka audit
 
-## Visibility in Different Surfaces
+## Visibility in Different Surfaces {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Khasi (Public) abilities** available qua REST endpoints:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Abilities Internal na Partner** ka o nwere qua REST API.
 
-### MCP Servers
+### MCP Servers {#mcp-servers}
 
 **Khasi (Public) abilities** available qua MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Abilities Partner** ka nwere karị partner credentials (credentials) banyere.
 
-### WooCommerce Integration
+### WooCommerce Integration {#woocommerce-integration}
 
 **Khasi (Public) abilities** related to WooCommerce available:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Abilities Internal** na nwere karị WooCommerce.
 
-### Chat Interface
+### Chat Interface {#chat-interface}
 
 **All abilities** (Public, Internal, Partner) available in chat, ọ bụ na eziokwu aka user permissions:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Regular users na-agba mazi Public abilities karị
 - Partners na-agba mazi Public + Partner abilities (ọchụrụ n'ime whitelisted)
 
-## Security Best Practices
+## Security Best Practices {#security-best-practices}
 
-### Principle of Least Privilege
+### Principle of Least Privilege {#principle-of-least-privilege}
 
 - Set abilities ruo visibility ọ bụ eziokwu aka a dị kẹta koko nke na-agbanwe site ịrụ ihe ndị a.
 - Use Partner visibility karị operations dị mma (sensitive operations).
 - Disable abilities ndị ị na-agbanwe n'ime ịrụ ihe.
 
-### Regular Audits
+### Regular Audits {#regular-audits}
 
 - Review ability visibility ọ bụ eziokwu aka ọ bụchi ọgụrụ ọjụ (monthly)
 - Check for unclassified abilities
 - Remove access karị partners dị mma (unused partners).
 
-### Logging and Monitoring
+### Logging and Monitoring {#logging-and-monitoring}
 
 - Monitor which abilities na-agbanwe n'ime ihe ndị a koko
 - Track partner access patterns
 - Alert on unusual ability usage.
 
-### Third-Party Abilities
+### Third-Party Abilities {#third-party-abilities}
 
 - Review third-party abilities karị enabling
 - Classify them explicitly
 - Start with Internal or Partner visibility
 - Promote to Public karị ọ bụrụ na ị gbanwe mazi (vetting).
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 **O nkwu (ability) na mazi na list**
 - Check if o nkwu na-emechi (installed and active)
@@ -285,7 +285,7 @@ Available abilities:
 - Check if classification ị na-save
 - Verify plugin na-emechi o nkwu na-up to date
 
-## Migration from Legacy Mode
+## Migration from Legacy Mode {#migration-from-legacy-mode}
 
 Ka ị na-upgrade na Superdav AI Agent version ọkọ dị ike:
 
@@ -295,7 +295,7 @@ Ka ị na-upgrade na Superdav AI Agent version ọkọ dị ike:
 
 See **Third-Party Mode Migration** for more details on the transition to native Abilities API integration.
 
-## Next Steps
+## Next Steps {#next-steps}
 
 Akpọdị na visibility o nkwu:
 

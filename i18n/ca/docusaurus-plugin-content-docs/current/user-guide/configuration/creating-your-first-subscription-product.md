@@ -3,13 +3,13 @@ title: Creant el teu primer product de subscripció
 sidebar_position: 6
 _i18n_hash: a4a36ed896f6691eebb099208a746cd7
 ---
-# Creació del teu primer producte de subscripció (v2)
+# Creació del teu primer producte de subscripció (v2) {#creating-your-first-subscription-product-v2}
 
 _**NOTA IMPORTANT:** Aquest article és només per a usuaris de Ultimate Multisite versió 2.x. Si utilitzeu la versió 1.x,**_ **_**mireu aquest article**_**.
 
 Per començar a gestionar la teva xarxa i començar a vendre els teus serveis a potencials usuaris, necessites tenir diverses opcions de subscripció. Com es creen aquests productes? Quins són els tipus de productes que pots oferir? En aquest article, cobreixerem tot el que has de saber sobre els productes.
 
-## Tipus de producte
+## Tipus de producte {#product-type}
 
 Amb Ultimate Multisite pots oferir dues categories de productes als teus clients: **plans** i **add-ons** **(Order Bump)**. Els add-ons es poden dividir en dos tipus: **packages** i **services**. Veurem les seves diferències i particularitats a continuació.
 
@@ -19,7 +19,7 @@ Amb Ultimate Multisite pots oferir dues categories de productes als teus clients
 
 *   **Services:** add-ons que no modifiquen les funcionalitats d'Ultimate Multisite. Són tasques que realitzaràs per al teu client a més del plan que va comprar. Per exemple, el teu client pot comprar un plan que permet un únic site i també pagar un servei addicional que farà el disseny d'aquest site.
 
-## Gestió de productes
+## Gestió de productes {#managing-products}
 
 Per a molts, la pestanya **Products** d'Ultimate Multisite **(Ultimate Multisite > Products)** es pot equiparar als plans en un entorn d'hosting tradicional.
 
@@ -29,7 +29,7 @@ Aquesta secció et guiarà en la comprensió d'aquest pilar essencial d'Ultimate
 
 ![Products list page](/img/config/products-list.png)
 
-## Afegir productes
+## Afegir productes {#adding-products}
 
 Tindem sigui un plan, un package o un servei, el punt d'entrada per definir un nou element és a través de **Ultimate Multisite > Products > Add Product**.
 
@@ -39,13 +39,13 @@ L'interfeceixa conté dues seccions predominants. A la esquerra hi ha diverses p
 
 ![Product edit page overview](/img/config/product-edit-full.png)
 
-### Descripció
+### Descripció {#description}
 
 Les informacions base del producte es poden definir proporcionant un nom i una descripció del producte. Aquests identificadors es mostren on sigui que es requereix la informació del producte, com ara la selecció de plans i preus, factures, actualitzacions, i el cos que.
 
 ![Product description section](/img/config/product-description.png)
 
-### Tipus de preu
+### Tipus de preu {#pricing-type}
 
 A la dreta de l'interfeceixa, es pot definir el preu base.
 
@@ -53,7 +53,7 @@ A la dreta de l'interfeceixa, es pot definir el preu base.
 
 Ultimate Multisite suporta tres tipus de preu diferents. L'opció **paid** demana al administrador de la xarxa informació sobre el preu i la freqüència de facturació del producte.
 
-### Preu
+### Preu {#pricing}
 
 El component de preu defineix el preu base del producte i l'interval de facturació.
 
@@ -61,7 +61,7 @@ El component de preu defineix el preu base del producte i l'interval de facturac
 
 amb això un preu d'exemple de $29.99 amb una configuració d'1 mes facturarà $29.99 cada mes. De manera similar, un preu de $89.97 amb una configuració de 3 mesos facturarà aquesta quantitat cada trimestre.
 
-### Cicles de facturació
+### Cicles de facturació {#billing-cycles}
 
 La secció de cicles de facturació especifica la freqüència de l'anterior interval de facturació i es compren generalment en el context de contractes o termes fixos.
 
@@ -69,7 +69,7 @@ La secció de cicles de facturació especifica la freqüència de l'anterior int
 
 Per exemple, un preu de producte de $29.99 amb un interval d'1 mes i 12 cicles de facturació facturaria $29.99 per mes durant els 12 mesos successius. En altres mots, aquesta configuració establiria un termini de preu fix de $29.99 per mes durant 12 mesos i després cessaria la facturació.
 
-### Període d'essai
+### Període d'essai {#trial-period}
 
 Activar el interruptor d'essai de l'oferta permet a l'administrador de la xarxa definir un període d'essai per al producte.
 
@@ -77,7 +77,7 @@ Activar el interruptor d'essai de l'oferta permet a l'administrador de la xarxa 
 
 Durant el període d'essai, els clients són lliures d'utilitzar el producte i no es facturarà fins que hagi esgotat el període d'essai.
 
-### Taula de configuració
+### Taula de configuració {#setup-fee}
 
 També pots aplicar una taula de configuració al teu plan.
 
@@ -85,7 +85,7 @@ També pots aplicar una taula de configuració al teu plan.
 
 Esto significa que el teu client pagarà una quantitat addicional al primer càrrec (a més del preu del plan) que correspon a la taula que va definir en aquesta secció.
 
-### Actiu
+### Actiu {#active}
 
 L'interruptor actiu defineix efectivament si el producte està disponible per als clients per a noves inscripcions.
 
@@ -93,13 +93,13 @@ L'interruptor actiu defineix efectivament si el producte està disponible per al
 
 Si hi ha clients existents en aquest plan, posar l'interruptor en estat desactivat fa efectivament un "grandfathering" del plan, eliminant-lo de les inscripcions futures. **Els clients existents del plan continuarà de ser facturats** fins que es transitin a un nou plan o es retiri del plan.
 
-### Imatge del producte
+### Imatge del producte {#product-image}
 
 El botó **Upload Image** permet a l'administrador de la xarxa utilitzar la biblioteca de mitjà per seleccionar o carregar una imatge del producte.
 
 ![Product image section](/img/config/product-image.png)
 
-### Eliminar
+### Eliminar {#delete}
 
 El botó **Delete Product** elimina el producte del sistema. Apareix quan el producte està publicat.
 
@@ -107,11 +107,11 @@ El botó **Delete Product** elimina el producte del sistema. Apareix quan el pro
 
 A diferència d'altres eliminacions, el producte no es posa en cap estat de paparella. Així que, una vegada eliminat, l'acció és irreversible.
 
-### Opcions del producte
+### Opcions del producte {#product-options}
 
 Una vegada definida la informació del producte a nivell base, les opcions del producte ajuden l'administrador de la xarxa a definir més els atributs específics del producte.
 
-#### General
+#### General {#general}
 
 La pestanya **General** defineix els atributs generals del producte no aplicables a cap de les altres pestanyes específiques del producte.
 
@@ -125,7 +125,7 @@ El **Customer Role** especifica el rol que es assigna al client quan es crea el 
 
 ![Customer role settings](/img/config/product-customer-role-settings.png)
 
-#### Actualitzacions i degradacions
+#### Actualitzacions i degradacions {#up--downgrades}
 
 Aquesta pestanya especifica els camins d'actualització i degradació disponibles per a un client dins del seu nivell específic.
 
@@ -143,7 +143,7 @@ Per definir un grup de plans, especifica els plans compatibles a la llista **pla
 
 Ultimate Multisite també inclou una funcionalitat d'**order bump** on es poden afegir add-ons de productes i serveis apropiats als plans. Aquests es ofereixen al client com a articles addicionals que es poden afegir als plans al moment del checkout o durant una actualització.
 
-#### Variacions de preu
+#### Variacions de preu {#price-variations}
 
 Les variacions de preu permeten a l'administrador de la xarxa especificar nivells de preu alternatius depenent de la durada. Aquesta configuració fa possible oferir un període de facturació mensual, trimestral, anual o de qualsevol altre tipus per al mateix producte. Per exemple, pots configurar un producte a $29.99/mes amb una opció anual de descompte a $249.99/any.
 
@@ -165,7 +165,7 @@ Per exemple, si el teu preu base del producte és de $29.99 per mes, podríeu af
 Les variacions de preu soles no afegeixen un interruptor o un *switch* al checkout de la frontend. Per deixar que els clients canvi entre períodes de facturació (per exemple, Mensual / Anual), has de fer servir un camp de **Period Selection** al teu formulari de checkout. Veure [Checkout Forms: Adding a Period Selection Toggle](checkout-forms#adding-a-period-selection-toggle) per a instruccions pas a pas.
 :::
 
-#### Impostos
+#### Impostos {#taxes}
 
 La pestanya **Taxes** s'alinea amb la configuració d'impostos especificada a **Ultimate Multisite > Settings > Taxes** i més específicament amb les taxes definides. Per activar els impostos i definir les taxes aplicables, consulta la documentació a **Ultimate Multisite: Settings**
 
@@ -179,7 +179,7 @@ Una vegada que la taxa impositiva es defineix a **Ultimate Multisite > Settings 
 
 Per indicar que un producte és un article imposable, activa l'interruptor **Is Taxable** i selecciona la taxa impositiva aplicable del desplegable Tax Category.
 
-#### Templates de site
+#### Templates de site {#site-templates}
 
 En essència, els templates de site són websites complets de WordPress que es clonen al site d'un client al començament de la seva subscripció.
 
@@ -191,7 +191,7 @@ Aquesta pestanya permet a l'administrador de la xarxa especificar el comportamen
 
 Quan **Allow Site Templates** està desactivat, els clients del plan no poden triar templates encara que un formulari de checkout, un enllaç compartible o un paràmetre d'URL farien que els templates estiguessin disponibles. Ultimate Multisite ara fa tenir aquest límit mitjançant una cadena de reserva a través dels punts d'entrada disponibles: es compruegen les configuracions del plan, després les configuracions del formulari de checkout, i després els templates preseleccionats o proporcionats per URL. Això manté les limitacions del plan consistents i els clients.
 
-### Resum de la traducció:
+### Resum de la traducció: {#sites}
 
 * **"clients"** (en el context de la traducció) es refereix a "clients" o "usuàri".
 * **"clients"** (en el context de la traducció) es refereix a "clients" o "usuàri".

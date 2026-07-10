@@ -3,13 +3,13 @@ title: Fila de pagado kaj Kliento DNS
 sidebar_position: 3
 _i18n_hash: b5312cf530779a7cb03d611e6827be87
 ---
-# Checkout Campo kaj DNS-menado de Klianto
+# Checkout Campo kaj DNS-menado de Klianto {#checkout-field-and-customer-dns-management}
 
-## La campo Selekto de Domeno
+## La campo Selekto de Domeno {#the-domain-selection-checkout-field}
 
 La campo **Domain Selection** estas elementa en la checkout kiu donas klientoj eleki, kiel ili akiras sianjn domeno. Ado it alian ĉiu checkout form por permi domeno vendon.
 
-### Ado de la campo al checkout formo
+### Ado de la campo al checkout formo {#adding-the-field-to-a-checkout-form}
 
 1. Aliri **Network Admin › Ultimate Multisite › Checkout Forms**
 2. Ĉiŝi aŭ krei un checkout formon
@@ -18,7 +18,7 @@ La campo **Domain Selection** estas elementa en la checkout kiu donas klientoj e
 5. Konfiguri la opciojn de la campo (vidu alio)
 6. Salvi la formon
 
-### Opcioj de la campo
+### Opcioj de la campo {#field-options}
 
 **Domain modes** — Elekti kiuj tabojn klienton vidas. Ĉiu modo povas esti aktiva aŭ deaktivita indefende:
 
@@ -32,7 +32,7 @@ La campo **Domain Selection** estas elementa en la checkout kiu donas klientoj e
 
 **Domain product** — Opционаle pin ĉi tian kampon al specifita domeno produkto. Se ĝi ne estas setita, la addon aŭtomate selektas la korespondantan produkton bazite sur la TLD, kiun klientas serĉas.
 
-### Kampoj de kontakta persona registrianto
+### Kampoj de kontakta persona registrianto {#registrant-contact-fields}
 
 Kiam klientas selektas la tabon **Register New Domain**, la checkout formo aldon inline kampojn por kontakto de la registrianto:
 
@@ -43,11 +43,11 @@ Kiam klientas selektas la tabon **Register New Domain**, la checkout formo aldon
 
 Kiel estas bezonaj necesaj de ĉiuj por ĉiuj registratoroj kaj validiĝas antaŭ la API-vokado de registriĝo. Telefonnomeroj estas aŭtomate formatiĝita en la internacia formato `+CC.NNN`, kiun registratoroj esperas.
 
-### Auto-generita sitio URL (site URL)
+### Auto-generita sitio URL (site URL) {#auto-generated-site-url}
 
 Kiam klientas registriĝas aŭ mapas domenon, la campo sito URL estas aŭtomate plenigita el elektita domeno. Klientoj ne bezonas plenumi apartan URL-champon.
 
-### Serĉilaprovo (Search behaviour)
+### Serĉilaprovo (Search behaviour) {#search-behaviour}
 
 - La disponibilitarto de domeno estas kontrolita en reala tempo per AJAX, kiam la klientas skribas
 - Alternativa TLD sugestoj estas montritaj, kiam la preferita domeno ne estas disponabla
@@ -77,11 +77,11 @@ add_filter('wu_checkout_form_register_domain_form_fields', function($fields) {
 
 ---
 
-## Klientaj DNS-menado (Customer DNS management)
+## Klientaj DNS-menado (Customer DNS management) {#customer-dns-management}
 
 Klientoj povas administra DNS-registrojn por siaj registritaj domenoj el la paĝo **Mia Konta** (My Account), sub siaj domeno-entrado.
 
-### Subtenitaj registraj tipoj (Supported record types)
+### Subtenitaj registraj tipoj (Supported record types) {#supported-record-types}
 
 | Tipo | Uzo |
 |---|---|
@@ -91,11 +91,11 @@ Klientoj povas administra DNS-registrojn por siaj registritaj domenoj el la paĝ
 | **MX** | Aŭtri la serviron de poŝton (mail exchange server) |
 | **TXT** | Aŭadi SPF, DMARC, verifikadon aŭ aliaj tekstregistrojn |
 
-### Kio provizondas DNS-menado?
+### Kio provizondas DNS-menado? {#which-providers-support-dns-management}
 
 DNS-menedri (registri, modifigi, elimini) estas disponabla per **OpenSRS**, **ResellerClub**, **Enom**, **HostAfrica** kaj **Openprovider**. La domeno de **Hostinger** povas modernizi nomerversajn per Domain Seller; DNS-registroj por alojnitaj domenoj estas administriitaj de la bazaj Hostinger domain-mapping integriĝo. Namecheap, GoDaddy kaj NameSilo domenoj montras staton kaj ekspiradon informojn, sed DNS devas esti administritita direkte en la kontrolpanelo de la registratorso.
 
-### Default DNS-registroj
+### Default DNS-registroj {#default-dns-records}
 
 Vi povas konfiguri default DNS-registrojn, kiuj estas aplikiitaj aŭtomate, kiam domeno estas registrita. Irari al **Settings › Domain Seller › Default DNS Records**.
 
@@ -118,6 +118,6 @@ Name: www.{DOMAIN}
 Value: {DOMAIN}
 ```
 
-### Admina: vidado kaj modifo de DNS
+### Admina: vidado kaj modifo de DNS {#admin-viewing-and-editing-dns}
 
 ReteAdmin-administrajoj povas vidi kaj modifi DNS-registrojn por ĉian klientdomeno de la domeno's modifa paĝo en **Network Admin › Ultimate Multisite › Domains**.

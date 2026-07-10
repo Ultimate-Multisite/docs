@@ -1,0 +1,116 @@
+---
+title: Компатибилност са Tutor Multisite
+sidebar_position: 1
+_i18n_hash: eb70406013fbbbd32019b48d0d6558f3
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="tutor-multisite-compatibility" name="Tutor Multisite Compatibility" />
+
+# Tutor Multisite Compatibility {#tutor-multisite-compatibility}
+
+WordPress додатак који додаје исправке компатибилности за Tutor LMS у мултисајт окружењима.
+
+## Опис {#description}
+
+Овај додатак пружа основне исправке компатибилности за покретање Tutor LMS-а на WordPress мултисајт мрежама. Обрађује упис корисника, управљање инструкторима, ограничења курсева и друге функционалности специфичне за мултисајт.
+
+## Функције {#features}
+
+- **Управљање табелама базе података**: Аутоматски открива и креира недостајуће Tutor LMS табеле које не успевају због ограничења страних кључева у мултисајту
+- **Упис корисника у мултисајту**: Прилагођени AJAX руковаоци за управљање уписом корисника преко сајтова у мрежи
+- **Управљање улогом инструктора**: Аутоматска додела и управљање улогом инструктора у мултисајт окружењима
+- **Ограничења курсева**: Интеграција са Ultimate Multisite за управљање ограничењима креирања курсева и левкова на основу планова сајта
+- **Прилагођени администраторски прикази**: Листа инструктора и интерфејс за управљање који су свесни мултисајта
+- **Администраторски алати**: Интерфејс за управљање базом података за администраторе мреже и сајта
+
+## Захтеви {#requirements}
+
+- WordPress 5.0+
+- PHP 7.4+
+- Tutor LMS додатак (аутоматски се намеће преко `Requires Plugins` заглавља)
+- WordPress Multisite инсталација
+- Ultimate Multisite додатак (за функционалност ограничења курсева)
+
+## Инсталација {#installation}
+
+1. Отпремите датотеке додатка у `/wp-content/plugins/tutor-multisite-compatibility/`
+2. Уверите се да је Tutor LMS инсталиран и активиран
+3. Активирајте додатак преко менија „Plugins“ у WordPress-у
+4. Додатак ће се аутоматски интегрисати са Tutor LMS-ом
+
+## Структура датотека {#file-structure}
+
+```
+tutor-multisite-compatibility/
+├── tutor-multisite-compatibility.php (Main plugin file)
+├── includes/
+│   ├── class-database-manager.php (Database table creation and management)
+│   ├── class-admin-interface.php (Admin interface for database management)
+│   ├── class-course-limits.php (Course and funnel limitation handlers)
+│   ├── class-instructor-manager.php (Instructor role management)
+│   ├── class-ajax-handlers.php (Custom AJAX handlers)
+│   ├── class-query-helper.php (Database query utilities)
+│   ├── models/
+│   │   └── class-multisite-user-model.php (Multisite user model)
+│   └── admin/
+│       ├── class-instructors-list.php (Custom instructor list)
+│       └── views/
+│           └── instructors.php (Instructor admin view)
+└── README.md
+```
+
+## Функционалност премештена из MU plugin-а {#functionality-moved-from-mu-plugin}
+
+Овај додатак садржи функционалност која је претходно била у `wp-content/mu-plugins/daves.php`:
+
+- Ограничења промене статуса курса
+- Ограничења креирања курса
+- CartFlows интеграција и ограничења
+- Управљање улогом Tutor инструктора
+- Обрада уписа корисника у мултисајту
+- Приказ ID-а производа курса
+
+## Управљање базом података {#database-management}
+
+### Проблем {#the-problem}
+
+У WordPress мултисајт окружењима, креирање Tutor LMS табела не успева за табеле са ограничењима страних кључева ка табели корисника. Ово се дешава зато што:
+
+- Табеле специфичне за сајт користе префиксе као што је `wp_2_tutor_carts`
+- Страни кључеви референцирају `wp_2_users` (која не постоји)
+- Стварна табела корисника је `wp_users` (дељена преко мреже)
+
+### Решење {#the-solution}
+
+Овај додатак аутоматски:
+
+1. **Открива недостајуће табеле**: Проверава табеле које нису успеле да се креирају због ограничења страних кључева
+2. **Креира табеле са исправним референцама**: Користи одговарајући назив табеле корисника (`wp_users` у мултисајту)
+3. **Обрађује више сценарија**:
+   - Активација/реактивација додатка
+   - Креирање новог сајта у мрежи
+   - Ручна провера табела преко администраторског интерфејса
+
+### Погођене табеле {#affected-tables}
+
+- `tutor_coupon_usages` - Садржи страни кључ ка табели корисника
+- `tutor_carts` - Садржи страни кључ ка табели корисника
+- `tutor_notification_preferences` - TutorPro табела са страним кључем ка табели корисника
+
+### Администраторски интерфејс {#admin-interface}
+
+Приступите алатима за управљање базом података на:
+
+- **Администратор мреже**: Settings → Tutor Multisite DB
+- **Администратор сајта**: Tools → Tutor Multisite DB
+
+Интерфејс вам омогућава да:
+- Прегледате недостајуће табеле преко свих сајтова
+- Ручно покренете креирање табела
+- Проверите конфигурацију базе података
+- Прегледате детаљне информације о статусу
+
+## Подршка {#support}
+
+Овај додатак је посебно дизајниран за KursoPro платформу. За техничку подршку контактирајте развојни тим.

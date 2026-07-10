@@ -1,132 +1,138 @@
 ---
-title: Domain Mappingu Necə Konfiqurasiya Edilir
+title: Domen xəritələşdirilməsini necə konfiqurasiya etmək olar
 sidebar_position: 6
-_i18n_hash: 70b0ea1fd4e24e701978329f52843452
+_i18n_hash: 5e3edfad8e0d51fa677f5c6f40a105e4
 ---
-# Domain Mapping Necə Qurulur (v2)
+# Domen xəritələnməsini necə konfiqurasiya etmək olar (v2) {#how-to-configure-domain-mapping-v2}
 
-_**MÜHİM QEYD: Bu məqalə Ultimate Multisite-ın 2.x versiyasına aiddir.**_
+_**VACİB QEYD: Bu məqalə Ultimate Multisite 2.x versiyasına aiddir.**_
 
-Premium bir network-in ən güclü xüsusiyyətlərindən biri də müştərilərimizə öz saytlarına bir üst səviyyə domen (top-level domain) bağlama imkanı verməsidir. Nə ki, hansı daha peşəkar görünür: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoxsa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Məhz buna görə də Ultimate Multisite bu funksiyanı üçüncü tərəf plugin-lərindən istifadə etməyə ehtiyac olmadan özündə birləşdirir.
+Premium şəbəkənin ən güclü xüsusiyyətlərindən biri müştərilərimizə saytlarına üst səviyyəli domen qoşmaq imkanı təklif etməkdir. Axı, hansı daha peşəkar görünür: [_**joesbikeshop.yournetwork.com**_](http://joesbikeshop.yournetwork.com) yoxsa [_**joesbikeshop.com**_](http://joesbikeshop.com)? Məhz buna görə Ultimate Multisite bu funksiyanı üçüncü tərəf plaginlərindən istifadə etməyə ehtiyac olmadan daxili şəkildə təklif edir.
 
-## Domain mapping nədir?
+## Domen xəritələnməsi nədir? {#whats-domain-mapping}
 
-Adından da göründüyü kimi, domain mapping, Ultimate Multisite-ın istifadəçiyə özəl bir domen tələbini qəbul edib, bu tələbi həmin domenlə əlaqəli müvafiq sayta xəritələmə (map) imkanı verməsidir.
+Adından da göründüyü kimi, domen xəritələnməsi Ultimate Multisite tərəfindən təklif olunan, fərdi domen üçün sorğunu qəbul edib həmin sorğunu şəbəkədə həmin xüsusi domenin qoşulduğu uyğun sayta yönləndirmək imkanıdır.
 
-### Ultimate Multisite Network-inizdə domain mapping necə qurulur
+### Ultimate Multisite Şəbəkənizdə domen xəritələnməsini necə qurmaq olar {#how-to-setup-domain-mapping-on-your-ultimate-multisite-network}
 
-Domain mapping işləməsi üçün sizin tərəfinizdən bəzi qurulmalar tələb edir. Nə vaxt ki, Ultimate Multisite bu çətin işi sizin yerinizə avtomatik yerinə yetirir, bu da tələbləri asanlıqla yerinə yetirməyinizi təmin edir.
+Domen xəritələnməsinin işləməsi üçün sizin tərəfinizdən müəyyən quraşdırma tələb olunur. Xoşbəxtlikdən, Ultimate Multisite çətin işi sizin üçün avtomatlaşdırır ki, tələbləri asanlıqla yerinə yetirə biləsiniz.
 
-Ultimate Multisite quraşdırılması zamanı, wizard avtomatik olaraq **sunrise.php** faylını müəyyən edilmiş qovluğa kopyalayıb quraşdıracaq. **Wizard bu addım tamamlanana qədər davam etməyə icazə verməyəcək**.
+Ultimate Multisite quraşdırılması zamanı sehrbaz **sunrise.php** faylını avtomatik olaraq təyin olunmuş qovluğa kopyalayıb quraşdıracaq. **Bu addım tamamlanana qədər sehrbaz davam etməyə icazə verməyəcək**.
 
-<!-- Screenshot unavailable: Ultimate Multisite installation wizard with sunrise.php step -->
+<!-- Ekran görüntüsü əlçatan deyil: sunrise.php addımı ilə Ultimate Multisite quraşdırma sehrbazı -->
 
-Bu o deməkdir ki, Ultimate Multisite quraşdırma wizard-i network-inizi qurmağa bitirdikdən sonra, dərhal özəl domenləri xəritələməyə başlaya bilərsiniz.
+Bu o deməkdir ki, Ultimate Multisite quraşdırma sehrbazı şəbəkənizi qurmağı tamamladıqdan sonra fərdi domeni dərhal xəritələndirməyə başlaya bilərsiniz.
 
-Qeyd edin ki, Ultimate Multisite-dakı domain mapping məcburi deyil. Siz WordPress Multisite-ın yerli domain mapping funksiyasından və ya istənilən başqa domain mapping həllindən istifadə etmək imkanınız var.
+Nəzərə alın ki, Ultimate Multisite-də domen xəritələnməsi məcburi deyil. WordPress Multisite-in yerli domen xəritələnməsi funksiyasından və ya hər hansı digər domen xəritələnməsi həllindən istifadə etmək seçiminiz var.
 
-Əgər başqa domain mapping həllinlərinin yolunu açmaq üçün Ultimate Multisite domain mapping funksiyasını deaktiv etmək lazım gəlirsə, bunu **Ultimate Multisite > Settings > Domain Mapping** altında edə bilərsiniz.
+Digər domen xəritələnməsi həllərinə yer açmaq üçün Ultimate Multisite domen xəritələnməsini deaktiv etməyə ehtiyacınız olarsa, bu funksiyanı **Ultimate Multisite > Parametrlər > Domen Xəritələnməsi** bölməsində deaktiv edə bilərsiniz.
 
-![Domain Mapping settings page showing admin redirect, mapping message and DNS options](/img/config/domain-mapping-settings.png)
+![Admin yönləndirməsi, xəritələnmə mesajı və DNS seçimlərini göstərən Domen Xəritələnməsi parametrləri səhifəsi](/img/config/domain-mapping-settings.png)
 
-Bu seçimin birbaşa altında **Force Admin Redirect** seçimi də görünür. Bu seçim müştərilərin özəllər domenləri və ya alt domenləri üzərindən admin dashboard-larına daxil olub-olmayacağını nəzarət etməyinizə imkan verir.
+Bu seçimin dərhal altında **Admin Yönləndirməsini Məcbur Et** seçimini də görə bilərsiniz. Bu seçim müştərilərinizin admin dashboard-larına həm fərdi domenlərində, həm də subdomenlərində, yoxsa yalnız onlardan birində daxil ola biləcəyini idarə etməyə imkan verir.
 
-Əgər **Force redirect to mapped domain** seçsəniz, müştərilərin öz admin dashboard-larına yalnız özəllər domenləri üzərindən daxil olmaları mümkün olacaq.
+Əgər **Xəritələnmiş domenə məcburi yönləndir** seçsəniz, müştəriləriniz admin dashboard-larına yalnız fərdi domenlərində daxil ola biləcəklər.
 
-**Force redirect to network domain** seçimi isə tam əksini edəcək – müştərilər özəllər domenlərində daxil olmağa çalışsalar belə, yalnız alt domenləri üzərindən dashboard-larına daxil olacaqlar.
+**Şəbəkə domeninə məcburi yönləndir** seçimi isə bunun tam əksini edəcək - müştəriləriniz fərdi domenlərində daxil olmağa cəhd etsələr belə, dashboard-larına yalnız subdomenlərində daxil ola biləcəklər.
 
-Və **Allow access to the admin by both mapped domain domain and network domain** seçimi isə onlara həm alt domen, həm də özəllər domenləri üzərindən admin dashboard-larına daxil olmağa icazə verir.
+Və **Adminə həm xəritələnmiş domen, həm də şəbəkə domeni ilə girişə icazə ver** seçimi onlara admin dashboard-larına həm subdomen, həm də fərdi domen üzərindən daxil olmağa imkan verir.
 
-![Admin Redirect dropdown expanded showing the three redirect options](/img/config/domain-mapping-redirect-options.png)
+![Üç yönləndirmə seçimini göstərən açılmış Admin Yönləndirməsi açılan menyusu](/img/config/domain-mapping-redirect-options.png)
 
-Özəl domenləri xəritələməyin iki yolu var. Birincisi, network admin dashboard-unuzdan super admin kimi domen adını xəritələməkdir, ikincisi isə subsite admin dashboard-u altındakı account səhifəsidir.
+Fərdi domeni xəritələndirməyin iki yolu var. Birincisi, super admin kimi şəbəkə admin dashboard-unuzdan domen adını xəritələndirməkdir, ikincisi isə Account səhifəsi altında alt sayt admin dashboard-u vasitəsilədir.
 
-Ancaq network-inizdəki subsite-lardan birinə özəl domen xəritələməyə başlamazdan əvvəl, domen adının **DNS settings**-lərinin düzgün qurulduğundan əmin olmalısınız.
+Lakin fərdi domeni şəbəkənizdəki alt saytlardan birinə xəritələndirməyə başlamazdan əvvəl domen adının **DNS parametrlərinin** düzgün konfiqurasiya olunduğundan əmin olmalısınız.
 
 ###
 
-### Domen DNS ayarlarının düzgün qurulduğundan əmin olmaq
+### Domen DNS parametrlərinin düzgün konfiqurasiya olunduğundan əmin olmaq {#making-sure-the-domain-dns-settings-are-properly-configured}
 
-Bir xəritələmənin işləməsi üçün, xəritələməyi planlaşdırdığınız domen, Network-inizin IP ünvaninə işarə etməlidir. Qeyd edin ki, siz xəritələmək istədiyiniz özəl domenin IP ünvanını deyil, Ultimate Multisite-ın quraşdırıldığı domenin Network IP ünvanına ehtiyacınız var. Müəyyən bir domenin IP ünvanını axtarmaq üçün, məsələn, [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) saytına getməyi təklif edirik.
+Xəritələnmənin işləməsi üçün xəritələndirməyi planlaşdırdığınız domenin Şəbəkənizin IP ünvanına yönəldiyindən əmin olmalısınız. Nəzərə alın ki, sizə Şəbəkə IP ünvanı lazımdır - xəritələndirmək istədiyiniz fərdi domenin IP ünvanı deyil, Ultimate Multisite-in quraşdırıldığı domenin IP ünvanı. Məsələn, konkret domenin IP ünvanını axtarmaq üçün [Site24x7](https://www.site24x7.com/find-ip-address-of-web-site.html) istifadə etməyi təklif edirik.
 
-Domeni düzgün xəritələmək üçün, **DNS** konfiqurasiyanızda həmin **IP ünvaninə** işarə edən bir **A RECORD** əlavə etməlisiniz. DNS idarəetməsi fərqli domen registratorları arasında çox fərqlənir, lakin " _Creating A Record on XXXX_ " axtarışını edərək, burada XXXX sizin domen registratorunuzdur (məsələn: " _Creating A Record on_ _GoDaddy_ ") kimi, onlayn çoxlu tutorial mövcuddur.
+Domeni düzgün xəritələndirmək üçün **DNS** konfiqurasiyanızda həmin **IP ünvanına** yönələn **A RECORD** əlavə etməlisiniz. DNS idarəetməsi müxtəlif domen qeydiyyatçıları arasında xeyli fərqlənir, lakin XXXX-in domen qeydiyyatçınız olduğu " _XXXX-də A Record yaratmaq_ " ifadəsini axtarsanız, bunu əhatə edən çoxlu onlayn təlimatlar var (məs.: " _GoDaddy-də A Record yaratmaq_ ").
 
-Əgər bunu işlətməkdə çətinlik çəkirsinizsə, **domen registratorunuzun dəstəyinə müraciət edin** və onlar bu hissədə sizə kömək edə biləcəklər.
+Bunu işlətməkdə çətinlik çəkirsinizsə, **domen qeydiyyatçınızın dəstəyi ilə əlaqə saxlayın** və onlar bu hissədə sizə kömək edə biləcəklər.
 
-Əgər müştərilərin öz domenlərini xəritələməsinə icazə vermək planlaşdırırsınızsa, onlar bu hissədə öz işlərini görməlidirlər. Əgər A Record yaratmaqda çətinlik çəkirlərsə, onları öz registrator dəstək sistemlərinə yönləndirin.
+Əgər müştərilərinizə öz domenlərini xəritələndirməyə icazə verməyi planlaşdırırsınızsa, onlar bu hissədə işi özləri görməli olacaqlar. A Record yarada bilmədikləri halda onları qeydiyyatçılarının dəstək sisteminə yönləndirin.
 
-### Super Admin kimi özəl domen adını xəritələmək
+### Super Admin kimi fərdi domen adını xəritələndirmək {#mapping-custom-domain-name-as-super-admin}
 
-Network-inizdə super admin kimi daxil olarkən, **Ultimate Multisite > Domains** bölməsinə getməklə özəl domen adlarını asanlıqla əlavə edə və idarə edə bilərsiniz.
+Şəbəkənizdə super admin kimi daxil olduqda, **Ultimate Multisite > Domenlər** bölməsinə keçərək fərdi domen adlarını asanlıqla əlavə edib idarə edə bilərsiniz.
 
-![Domains list page in Ultimate Multisite](/img/admin/domains-list.png)
+![Ultimate Multisite-də Domenlər siyahısı səhifəsi](/img/admin/domains-list.png)
 
-Bu səhifə altında, yuxarıdakı **Add Domain** düyməsinə klik edə bilərsiniz və bu, özəl domen adını təyin edib doldura biləcəyiniz, özəl domen adını tətbiq etmək istədiyiniz **subsite**-ı seçə biləcəyiniz və bunu **primary domain** adı olaraq təyin edib-etməyəcəyinizi qərarlaşdıra biləcəyiniz bir modal pəncərə açacaq (qeyd edin ki, **bir subsite-a bir neçə domen adı xəritələyə bilərsiniz**).
+Bu səhifədə yuxarıdakı **Domen Əlavə Et** düyməsinə klikləyə bilərsiniz və bu, **fərdi domen adını**, fərdi domen adını tətbiq etmək istədiyiniz **alt saytı** təyin edib doldura biləcəyiniz və onu **əsas domen** adı kimi təyin edib-etməməyə qərar verə biləcəyiniz modal pəncərə açacaq (nəzərə alın ki, **bir alt sayta bir neçə domen adı xəritələndirə** bilərsiniz).
 
-![Add Domain modal with domain name, site picker and primary domain toggle](/img/admin/domain-add-modal.png)
+![Domen adı, sayt seçicisi və əsas domen keçid düyməsi olan Domen Əlavə Et modalı](/img/admin/domain-add-modal.png)
 
-Bütün məlumatları daxil etdikdən sonra, aşağıdakı **Add Existing Domain** düyməsinə klik edə bilərsiniz.
+Bütün məlumatları daxil etdikdən sonra aşağıdakı **Mövcud Domeni Əlavə Et** düyməsinə klikləyə bilərsiniz.
 
-Bu, özəl domenin DNS məlumatlarını yoxlama və alma prosesini başlatacaq. Həmçinin, prosesin keçdiyi mərhələləri izləyə biləcəyiniz bir log da səhifənin altında görünəcək. Bu prosesin tamamlanması bir neçə dəqiqə çəkə bilər.
+Bu, fərdi domenin DNS məlumatlarının yoxlanması və əldə edilməsi prosesini başladacaq. Həmçinin səhifənin aşağısında prosesin necə irəlilədiyini izləməyiniz üçün jurnal görəcəksiniz. Bu prosesin tamamlanması bir neçə dəqiqə çəkə bilər.
 
-Hər şey düzgün qurulubsa, **Stage** və ya status **Checking DNS**-dən **Ready**-yə keçməlidir.
+Ultimate Multisite v2.13.0 həmçinin yeni sayt hər sayt üçün ayrıca domen kimi qəbul edilməli olan hostda yaradıldıqda daxili domen qeydini avtomatik yaradır. Əgər host şəbəkənin əsas domenidirsə və ya **Sayt URL-i** sahəsində konfiqurasiya edilmiş ortaq checkout-form baza domenlərindən biridirsə, avtomatik mapped-domain qeydi ötürülür ki, həmin ortaq baza domen ondan istifadə edən hər sayt üçün əlçatan qalsın.
 
-<!-- Screenshot unavailable: Domain row showing the Checking DNS stage in the domains list -->
+Müştəri Domain Seller v1.3.0 və ya daha yeni versiya vasitəsilə yeni domen qeydiyyatdan keçirdikdə, Ultimate Multisite qeydiyyatdan keçirilmiş domeni standart olaraq avtomatik şəkildə müştərinin şəbəkə saytına xəritələndirir. Administratorlar artıq uğurlu qeydiyyatdan sonra əsas-domen bayrağı, aktivləşdirmə vəziyyəti və ya SSL idarəetməsi kimi seçimləri tənzimləmək istəmədikləri halda ayrıca mapped-domain qeydi əlavə etməli deyillər.
 
-<!-- Screenshot unavailable: Domain row showing the Ready stage with the green status indicator -->
+Hər şey düzgün qurulubsa, **Mərhələ** və ya status **DNS yoxlanılır** vəziyyətindən **Hazır** vəziyyətinə dəyişməlidir.
 
-Domen adına klik etsəniz, onun içində bəzi seçimlər görmək mümkün olacaq. Onlara bir baxaq:
+<!-- Skrinşot əlçatan deyil: Domenlər siyahısında DNS yoxlanılır mərhələsini göstərən domen sətri -->
 
-![Domain detail page with stage, site, active, primary and SSL toggles](/img/admin/domain-edit.png)
+<!-- Skrinşot əlçatan deyil: Yaşıl status göstəricisi ilə Hazır mərhələsini göstərən domen sətri -->
 
-**Stage:** Bu, domenün hazırkı mərhələsidir. Domeni ilk dəfə əlavə etdiyiniz zaman, ehtimal ki, **Checking DNS** mərhələsində olacaq. Proses DNS girişlərini yoxlayacaq və onların düzgünlüyünü təsdiqləyəcək. Sonra, domen **Checking SSL** mərhələsinə keçəcək. Ultimate Multisite domenin SSL-i olub-olmadığını yoxlayacaq və domeninizi **Ready** və ya **Ready (without SSL)** olaraq təsnif edəcək.
+Domen adına klikləsəniz, onun daxilində bəzi seçimləri görə biləcəksiniz. Gəlin onlara qısa nəzər salaq:
 
-**Site:** Bu domenə qoşulmuş alt domen. Xəritələnmiş domen bu müəyyən saytın məzmununu göstərəcək.
+![Mərhələ, sayt, aktiv, əsas və SSL keçidləri olan domen detalları səhifəsi](/img/admin/domain-edit.png)
 
-**Active:** Domeni aktivləşdirmək və ya deaktiv etmək üçün bu seçimi açılıb-bağlı edə bilərsiniz.
+**Mərhələ:** Bu, domenin olduğu mərhələdir. Domeni ilk dəfə əlavə etdikdə, o, yəqin ki, **DNS yoxlanılır** mərhələsində olacaq. Proses DNS qeydlərini yoxlayacaq və onların düzgün olduğunu təsdiqləyəcək. Sonra domen **SSL yoxlanılır** mərhələsinə keçiriləcək. Ultimate Multisite domenin SSL-ə sahib olub-olmadığını yoxlayacaq və domeninizi **Hazır** və ya **Hazır (SSL olmadan)** kimi kateqoriyalaşdıracaq.
 
-**Is Primary Domain?:** Müştərilərin hər sayt üçün bir neçə xəritələnmiş domen ola bilər. Bu seçimi, bu sayt üçün əsas domen olub-olmadığını seçmək üçün istifadə edin.
+**Sayt:** Bu domenlə əlaqələndirilmiş subdomendir. Xəritələnmiş domen bu konkret saytın məzmununu göstərəcək.
 
-**Is Secure?:** Ultimate Multisite domen aktivləşdirməzdən əvvəl SSL sertifikatı olub-olmadığını yoxlasa da, siz domenə SSL sertifikatı ilə və ya onun olmadan yükləməyi əl ilə seçə bilərsiniz. Qeyd edin ki, veb saytın SSL sertifikatı yoxdursa və siz onu SSL ilə yükləməyə məcbur qoysanız, səhvlər verə bilər.
+**Aktiv:** Domeni aktivləşdirmək və ya deaktivləşdirmək üçün bu seçimi açıb-söndürə bilərsiniz.
 
-### Subsite istifadəçisi kimi özəl domen adını xəritələmək
+**Əsas domendir?:** Müştəriləriniz hər sayt üçün birdən çox xəritələnmiş domenə sahib ola bilər. Bunun konkret sayt üçün əsas domen olub-olmadığını seçmək üçün bu seçimdən istifadə edin.
 
-Subsite administratorları öz subsite admin dashboard-larından da özəl domen adlarını xəritələyə bilərlər.
+**Təhlükəsizdir?:** Ultimate Multisite domeni aktivləşdirməzdən əvvəl onun SSL sertifikatına sahib olub-olmadığını yoxlasa da, domeni SSL sertifikatı ilə və ya onsuz yükləməyi əl ilə seçə bilərsiniz. Qeyd edin ki, vebsaytın SSL sertifikatı yoxdursa və siz onu SSL ilə məcburi yükləməyə çalışsanız, bu, sizə xətalar verə bilər.
 
-Əvvəlcə, **Domain mapping** ayarları altında bu seçimi aktivləşdirməli olduğunuzdan əmin olun. Aşağıdakı skrinşota baxın.
+### Fərdi domen adını Subsite istifadəçisi kimi xəritələndirmək {#mapping-custom-domain-name-as-subsite-user}
 
-<!-- Screenshot unavailable: Domain mapping settings allowing subsite users to map domains via Customer DNS Management toggle -->
+Subsite administratorları da öz subsite admin dashboard-larından fərdi domen adlarını xəritələndirə bilərlər.
 
-Bu seçimi **Ultimate Multisite > Products** altında **Plan** səviyyəsində və ya məhsul seçimlərində də təyin edə və ya konfiqurasiya edə bilərsiniz.
+Əvvəlcə bu seçimi **Domen xəritələndirməsi** ayarları altında aktivləşdirdiyinizə əmin olmalısınız. Aşağıdakı skrinşota baxın.
 
-![Custom Domains section on the product edit page](/img/config/product-custom-domains.png)
+<!-- Skrinşot əlçatan deyil: Customer DNS Management keçidi vasitəsilə subsite istifadəçilərinə domenləri xəritələndirməyə icazə verən domen xəritələndirməsi ayarları -->
 
-Bu seçimlərdən hər hansı biri aktivləşdirildiyi və subsite istifadəçisinə özəl domen adlarını xəritələməyə icazə verildiyi zaman, subsite istifadəçisi **Account** səhifəsi altında **Domains** adlı bir metabox görməlidir.
+Bu seçimi **Plan** səviyyəsində və ya **Ultimate Multisite > Məhsullar** bölməsində məhsul seçimləri altında da qura və ya konfiqurasiya edə bilərsiniz.
 
-<!-- Screenshot unavailable: Domains metabox on the subsite Account page with Add Domain button -->
+![Məhsul redaktə səhifəsində Fərdi domenlər bölməsi](/img/config/product-custom-domains.png)
 
-İstifadəçi **Add Domain** düyməsinə klik edə bilər və bu, bəzi təlimatlar olan bir modal pəncərə açacaq.
+Bu seçimlərdən hər hansı biri aktivləşdirildikdə və subsite istifadəçisinə fərdi domen adlarını xəritələndirməyə icazə verildikdə, subsite istifadəçisi **Account** səhifəsi altında **Domenlər** adlı metabox görməlidir.
 
-<!-- Screenshot unavailable: Add Domain modal showing DNS A-record instructions for subsite users -->
+<!-- Skrinşot əlçatan deyil: Subsite Account səhifəsində Domen əlavə et düyməsi olan Domenlər metabox-u -->
 
-İstifadəçi sonra **Next Step** düyməsinə klik edib özəl domen adını əlavə etmək prosesinə davam edə bilər. Həmçinin, bunun əsas domen olub-olmayacağını da seçə bilər.
+İstifadəçi **Domen əlavə et** düyməsinə klikləyə bilər və bu, bəzi təlimatları olan modal pəncərəni açacaq.
 
-<!-- Screenshot unavailable: Add Domain form with custom domain name field and primary domain toggle -->
+<!-- Skrinşot əlçatan deyil: Subsite istifadəçiləri üçün DNS A-record təlimatlarını göstərən Domen əlavə et modalı -->
 
-<!-- Screenshot unavailable: Add Domain confirmation step that triggers DNS verification -->
+Sonra istifadəçi **Növbəti addım** düyməsinə klikləyib fərdi domen adını əlavə etməyə davam edə bilər. Onlar bunun əsas domen olub-olmadığını da seçə bilərlər.
 
-**Add Domain** düyməsinə klik etmək, özəl domenin DNS məlumatlarını yoxlama və alma prosesini başlatacaq.
+<!-- Skrinşot əlçatan deyil: Fərdi domen adı sahəsi və əsas domen keçidi olan Domen əlavə et forması -->
 
-### Domain Syncing haqqında
+<!-- Skrinşot əlçatan deyil: DNS doğrulamasını işə salan Domen əlavə et təsdiq addımı -->
 
-Domain Syncing, Ultimate Multisite-ın domain mapping-in işləməsi üçün özəl domen adını hosting hesabınıza əlavə etdiyi bir prosesdir (add-on domain kimi).
+**Domen əlavə et** üzərinə klikləmək fərdi domenin DNS məlumatlarını doğrulama və əldə etmə prosesini başladacaq.
 
-Hosting provayderiniz Ultimate Multisite domain mapping funksiyası ilə inteqrasiyaya malikdirsə, domain syncing avtomatik baş verir. Hazırda bu hosting provayderləri _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways_ və _Cpanel_ -dir.
+### Domen sinxronizasiyası haqqında {#about-domain-syncing}
 
-Bu inteqrasiyanı Ultimate Multisite ayarları altında **Integration** tabında aktivləşdirməlisiniz.
+Domen sinxronizasiyası Ultimate Multisite-in fərdi domen adını hosting hesabınıza əlavə domen kimi əlavə etdiyi prosesdir **ki, domen xəritələndirməsi işləsin**.
 
-![Integrations tab in Ultimate Multisite settings showing hosting providers](/img/config/integrations-tab.png)
+Hosting provayderinizin Ultimate Multisite domen xəritələndirmə funksiyası ilə inteqrasiyası varsa, domen sinxronizasiyası avtomatik baş verir. Hazırda bu hosting provayderləri _Runcloud, Closte, WP Engine, Gridpane, WPMU Dev, Cloudways,_ və _Cpanel_-dir.
 
-<!-- Screenshot unavailable: Hosting provider Configuration links on the Integrations settings tab -->
+Host-provayder inteqrasiyası aktiv olduqda, Ultimate Multisite yeni yaradılmış saytlar üçün provayder tərəfində DNS və ya subdomen yaratma tapşırığını da növbəyə əlavə edə bilər. Əgər həmin tapşırığı dinləyən inteqrasiya yoxdursa, faydasız növbə qeydlərinin qarşısını almaq üçün fon işi ötürülür. Xəritələnmiş domenlər üçün DNS və SSL yoxlamaları normal domen-mərhələsi prosesi vasitəsilə işləməyə davam edir.
 
-_Qeyd edin ki, əgər hosting provayderiniz yuxarıda qeyd olunan provayderlərdən biri deyilsə,**domen adını əl ilə sinxronizasiya etməli və ya əlavə etməlisiniz**._
+Bu inteqrasiyanı Ultimate Multisite ayarlarında **İnteqrasiya** tabı altında aktivləşdirməlisiniz.
+
+![Hosting provayderlərini göstərən Ultimate Multisite ayarlarında İnteqrasiyalar tabı](/img/config/integrations-tab.png)
+
+<!-- Skrinşot əlçatan deyil: İnteqrasiya ayarları tabında hosting provayderi Konfiqurasiya linkləri -->
+
+_Qeyd edin ki, hosting provayderiniz yuxarıda qeyd olunan provayderlərdən biri deyilsə, **domen adını hosting hesabınızla əl ilə sinxronlaşdırmalı və ya əlavə etməli olacaqsınız**._

@@ -4,19 +4,19 @@ title: 'ማጣሪያ - wu_{$id}_form_fields'
 sidebar_label: 'wu_{$id}_form_fields'
 _i18n_hash: 4ce34f82555356308c280b58fd6b4b26
 ---
-# ማጣሪያ፡ wu_\{$id\}_form_fields
+# ማጣሪያ፡ wu_\{$id\}_form_fields {#filter-wuidformfields}
 
 በቅጽ ላይ ያሉትን መስኮች ያጣራል። ቅጹ በማጣሪያው ስም ውስጥ ባለው ID ይለየናል።
 
-## መለኪያዎች
+## መለኪያዎች {#parameters}
 
 | ስም | ዓይነት | መግለጫ |
 |------|------|-------------|
 | $fields | `array` | የቅጹ መስኮች ዝርዝር። |
 
-### ከቀረበበት ጊዜ
+### ከቀረበበት ጊዜ {#since}
 
 - 2.0.0
-### ምንጭ
+### ምንጭ {#source}
 
 [`inc/ui/class-form.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/ui/class-form.php#L148) ላይ በ148ኛው መስመር ተገልጿል።

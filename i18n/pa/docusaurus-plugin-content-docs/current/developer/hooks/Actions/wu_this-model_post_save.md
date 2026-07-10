@@ -4,11 +4,11 @@ title: 'Action - wu_{$this->model}_post_save'
 sidebar_label: 'wu_{$this->model}_post_save'
 _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 ---
-# Action: wu_\{$this->model\}_post_save
+# Action: wu_\{$this->model\}_post_save {#action-wuthis-modelpostsave}
 
 ਇਹ ਟ੍ਰਿਗਰ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਕੋਈ ਆਬਜੈਕਟ ਡੇਟਾਗ੍ਰੀਸ ਵਿੱਚ ਸਟੋਰ ਹੋ ਜਾਂਦਾ ਹੈ।
 
-## ਪੈਰਾਮੀਟਰਾਂ (Parameters)
+## ਪੈਰਾਮੀਟਰਾਂ (Parameters) {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,10 +16,10 @@ _i18n_hash: d799b8b07a9d78eeaf6a9f4142f23efb
 | $this | `\Base_Model` | ਆਬਜੈਕਟ ਦਾ ਇੰਸਟੈਂਸ। |
 | $new | `bool` | ਸੱਚ (True) ਜੇਕਰ ਆਬਜੈਕਟ ਨਵਾਂ ਹੈ। |
 
-### ਕਦੋਂ ਤੋਂ (Since)
+### ਕਦੋਂ ਤੋਂ (Since) {#since}
 
 - 2.0.0
-### ਸਰੋਤ (Source)
+### ਸਰੋਤ (Source) {#source}
 
 - [`inc/models/class-base-model.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-base-model.php#L624) ਵਿੱਚ ਲਾਈਨ 624 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਹੈ
 - [`inc/models/class-site.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/models/class-site.php#L1754) ਵਿੱਚ ਲਾਈਨ 1754 'ਤੇ ਪਰਿਭਾਸ਼ਿਤ ਹੈ

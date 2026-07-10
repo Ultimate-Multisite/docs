@@ -3,7 +3,7 @@ title: Fluent Forms Wijzigingslog
 sidebar_position: 99
 _i18n_hash: 6059926e412a5fa1b8d2dc63f301cefe
 ---
-# Fluent Forms Wijzigingslog
+# Fluent Forms Wijzigingslog {#fluent-forms-changelog}
 
 Versie: 2.0.1 - Uitgebracht op 2025-09-28
 

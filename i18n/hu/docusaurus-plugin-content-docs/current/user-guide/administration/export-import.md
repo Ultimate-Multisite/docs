@@ -3,17 +3,17 @@ title: Exportálás és Importálás
 sidebar_position: 12
 _i18n_hash: 6536f9ebee269a8553a57733e4cb03fc
 ---
-# Exportálás és Importálás
+# Exportálás és Importálás {#export--import}
 
 Az Ultimate Multisite 2.9.0 egy egysiteszt **Exportálás és Importálás** eszközt ad hozzá a **Tools > Export & Import** alatt. Használja akkor, ha egy WordPress oldalt szeretne ZIP fájlba csomagolni, visszaállítani, vagy egy kompatibilis Ultimate Multisite és egysiteszt WordPress telepítés között áthelyezni.
 
-## Előfeltételezett engedélyek
+## Előfeltételezett engedélyek {#required-permissions}
 
 Adminisztrátort kell lennie, aki hozzáférhet a kiexportált vagy importált WordPress oldal **Tools** menüpontjához. Egy multisite hálózat esetén a hálózatadminisztrátor fiókot kell használni, ha hálózat szintű Ultimate Multisite eszközökkel dolgozik aloldalak exportálásán vagy importálásán.
 
 Az export ZIP letöltései hiteles letöltési végpontokon keresztül történnek, ezért kérjük, hogy ne hagyja kiaktivált az adminisztrációs munkamenetét a letöltés végéig, és ne osztja ki nyilvánosan a generált letöltési URL-eket.
 
-## Oldal exportálása ZIP-ként
+## Oldal exportálása ZIP-ként {#exporting-a-site-to-a-zip}
 
 1.  A másolni kívánt oldal WordPress adminisztrációjában navigáljon a **Tools > Export & Import** menüpontra.
 2.  Nyitssa az exportációs területet, és válassza ki az oldalt, amelyet csomagolni szeretne.
@@ -23,7 +23,7 @@ Az export ZIP letöltései hiteles letöltési végpontokon keresztül történn
 
 Tárolja biztonságos helyen a ZIP fájlt. Az olyan tartalmat, beállításokat, média fájlokat és kiválasztott kódforrásokat tartalmazhat, mint az oldal tartalma.
 
-## Mit tartalmaz az exportálás
+## Mit tartalmaz az exportálás {#what-the-export-includes}
 
 Az export ZIP fájl tartalmazhat:
 
@@ -34,7 +34,7 @@ Az export ZIP fájl tartalmazhat:
 
 A pontos ZIP méret függ a média mennyiségétől, a kiválasztott plugin-ektől és témákról, valamint az oldal adatbázistábláinak méretétől.
 
-## Oldal importálása egy ZIP-ből
+## Oldal importálása egy ZIP-ből {#importing-a-site-from-a-zip}
 
 1.  Navigáljon a cél WordPress oldal **Tools > Export & Import** menüpontjára.
 2.  Nyitssa az importációs területet, és töltse fel a ZIP fájlt, amelyet az Export & Import eszköz hozott létre.
@@ -46,7 +46,7 @@ A pontos ZIP méret függ a média mennyiségétől, a kiválasztott plugin-ekt�
 
 Egy egysiteszt WordPress telepítésén az importálás helyettesíti az aktuális oldalt az importált oldallal. Kérjük, készítsen teljes biztonsági másolatot a céloldalról, mielőtt elkezdi, és kerülje el, hogy ugyanazon az időpontban több importálást indítson el ugyanarra az oldalra.
 
-## Korlátozások és kompatibilitási megjegyzések
+## Korlátozások és kompatibilitási megjegyzések {#limitations-and-compatibility-notes}
 
 - Nagyon nagy feltöltési könyvtárak vagy média könyvtárak nagy ZIP fájlokat eredményezhetnek. Kérjük, ellenőrizze a PHP feltöltési limitjeit, a végrehajtási limitjeit, a lemezterületet, a memóriát és a szerver időkorlátozását, mielőtt nagy oldalt exportál vagy importál.
 - Nagyon nagy média könyvtárak esetén lehet, hogy egy alacsony forgalmú karbantartási ablak alatt kell őket áthelyezni.

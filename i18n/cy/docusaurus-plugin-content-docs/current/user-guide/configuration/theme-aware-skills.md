@@ -3,11 +3,11 @@ title: Gwirioneddolau y Gymuned
 sidebar_position: 27
 _i18n_hash: b61ebe1e7de0e5e8edb96c9bc21743cc
 ---
-# Skillau Gwyrddol i'r Theim
+# Skillau Gwyrddol i'r Theim {#theme-aware-skills}
 
 Mae Superdav AI Agent v1.10.0 yn cyflwyno pedair newydd o thau gwrddol i'r theim sy mae'n gweithredol gyda'ch WordPress. Mae’r thau hyn yn ychwanegu gynnig a fyddu wedi'u cyfathoghio i'r argyngorthol, gan ei ddefnyddio'r argyllun a phatrwyddau'r theim.
 
-## Beth yw Thau Gwyrddol i'r Theim?
+## Beth yw Thau Gwyrddol i'r Theim? {#what-are-theme-aware-skills}
 
 Mae thau gwrddol i'r theim yn cyfathoghau gwybodaeth a set o weithgareddau wedi'u cyflwyno ar gyfer y AI assistant, gan ei ddefnyddio'r theim WordPress sy mae'n gweithredol ar eich safle. Pan gwahanwch theimau, mae'r thau a ddefnyddirol yn cyfathoghio'n awtomatig — nid oes angen i chi roi unrhyw gyfathogi manwl.
 
@@ -18,9 +18,9 @@ Mae pob thau yn cynnwys:
 - **Enwystau Cyfathogi** — cyfathrebu cod a pethau gyfathogi ar gyfer gweithgareddau cyffredinol
 - **Practysgol Cynhwysol** — cadarnhau argyngllun a ffordd gweithredol y theim
 
-## Thau Gwyrddol Aelodol
+## Thau Gwyrddol Aelodol {#available-theme-aware-skills}
 
-### Theimau Block
+### Theimau Block {#block-themes}
 
 **Mae'n cyflwyno i:** Theimau sy'n defnyddio argyllun block-based (Full Site Editing) o WordPress.
 
@@ -34,7 +34,7 @@ Mae'r thau Theim yn rhoi gynnig ar gyfer:
 
 **Mae'n gweithredol yn cael ei chynllunio pan:** Mae'r theim sy mae'n gweithredol yn thau block (cynllunio `block-templates`).
 
-### Theimau Clasig
+### Theimau Clasig {#classic-themes}
 
 **Mae'n cyflwyno i:** Theimau WordPress clasig sy'n defnyddio PHP templates a'r editor clasig.
 
@@ -54,7 +54,7 @@ Gwrthod y cyfyngedig o'r thwm a'r tagau template
 
 **Mae'n cael ei gweithredu'n awtomatig pan:** Mae'r thwm eich gweithredol yn thwm clasic (non-block).
 
-### Kadence Blocks
+### Kadence Blocks {#kadence-blocks}
 
 **Mae'n cyflwyno i:** Safio sydd yn defnyddio'r plugin Kadence Blocks ar gyfer dylunio adeiladu-based a chyfathrebu.
 
@@ -67,7 +67,7 @@ Mae'r gallu Kadence Blocks yn rhoi gwirioneddol ar y cyfarwyddiadau ar:
 
 **Mae'n cael ei gweithredu'n awtomatig pan:** Mae'r plugin Kadence Blocks yn weithredol ar eich safle.
 
-### Kadence Theme
+### Kadence Theme {#kadence-theme}
 
 **Mae'n cyflwyno i:** Safio sydd yn defnyddio'r thwm Kadence ar gyfer dylunio adeiladu-based a chyfathrebu.
 
@@ -81,15 +81,15 @@ Mae'r gallu Kadence Theme yn rhoi gwirioneddol ar y cyfarwyddiadau ar:
 
 **Mae'n cael ei gweithredu'n awtomatig pan:** Mae'r thwm Kadence yn eich thwm gweithredol.
 
-## Sut mae gallu'r Gallau wedi'i debyddu?
+## Sut mae gallu'r Gallau wedi'i debyddu? {#how-skills-are-selected}
 
 Mae'r asiantteur yn gweld eich thwm gweithredol a'r pluginau sydd yn ei weithredu ar y message hwnnw. Os oes gennych chi gallu skill sydd yn cyflwyno i, mae'n cael ei chwarae yn awtomatig i'r context o'r asiantteur. Nid oes angen Rhinau i gweithredu neu gwahaniaethu'r skillau manwl.
 
-### Gallau amlwr
+### Gallau amlwr {#multiple-skills}
 
 Os yr holl ddynion sy'n cyflwyno ar eich safle (er enw, os oes gennych both Kadence Blocks a Kadence Theme yn gweithredol), mae'r asiant yn cael ei cyffredinol â'r holl ddyfynion sy'n cyflwyno ac gallai ei cyfeiriadwy gyda chyfarwyddiadau o'r un.
 
-### Gwylio Thymau (Switching Themes)
+### Gwylio Thymau (Switching Themes) {#switching-themes}
 
 Pan gwahaniawch eich thymau weithredol, mae'r ddyfynion sy'n cael eu cyffredinol i'r asiant yn cyfathogh yn awt ar y message nesaf. Er enw:
 
@@ -97,11 +97,11 @@ Pan gwahaniawch eich thymau weithredol, mae'r ddyfynion sy'n cael eu cyffredinol
 2. Gwahaniawch i thymau clasic.
 3. Ar eich message nesaf, mae'r ddyfyn **Classic Themes** yn cael ei chwarae yn awt, ac nid yw'r ddyfyn **Block Themes** yn cael ei gael.
 
-## Defnyddio Ddyfynion Sylltiad Thymau (Using Theme-Aware Skills)
+## Defnyddio Ddyfynion Sylltiad Thymau (Using Theme-Aware Skills) {#using-theme-aware-skills}
 
 I gefnogi ddyfyn sy'n cael ei gyflwyno ar y thymau, gwneudwch eithaf i ddisgrif beth byddwch yn ei wneud mewn cyfnod chat. Bydd y asiant yn cyfeiriadwy'r chyfarwyddiadau o'r ddyfyn cywir yn awt.
 
-### Prifau Prif (Example Prompts)
+### Prifau Prif (Example Prompts) {#example-prompts}
 
 **Ar gyfer Block Themes:**
 > "Creu sefyn hero gyda chymorth llun canlynol a text wedi'i cynllunio gan ddefnyddio modelau bloc."

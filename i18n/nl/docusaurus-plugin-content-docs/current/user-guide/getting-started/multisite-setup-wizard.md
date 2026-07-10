@@ -3,7 +3,7 @@ title: Multisite Setup Wizard
 sidebar_position: 3
 _i18n_hash: fd09dc94f24b0b37245b847380feea3f
 ---
-# Multisite Setup Wizard
+# Multisite Setup Wizard {#multisite-setup-wizard}
 
 Ultimate Multisite bevat een ingebouwde wizard die een standaard WordPress-installatie automatisch omzet in een WordPress Multisite-netwerk. Dit elimineert de noodzaak om handmatig `wp-config.php` te bewerken of databasecommando's uit te voeren.
 
@@ -11,13 +11,13 @@ Ultimate Multisite bevat een ingebouwde wizard die een standaard WordPress-insta
 Als je WordPress-installatie al draait als een Multisite-netwerk, kun je deze stap volledig overslaan. De wizard verschijnt alleen als Multisite nog niet is ingeschakeld.
 :::
 
-## Wanneer verschijnt de wizard?
+## Wanneer verschijnt de wizard? {#when-does-the-wizard-appear}
 
 Wanneer je Ultimate Multisite activeert op een standaard (niet-Multisite) WordPress-installatie, detecteert de plugin dat Multisite niet is ingeschakeld en leidt je automatisch naar de Multisite Setup Wizard in plaats van naar de reguliere setup wizard.
 
 Je kunt het ook rechtstreeks openen via **WP Admin > Ultimate Multisite > Multisite Setup**.
 
-## Voorwaarden
+## Voorwaarden {#prerequisites}
 
 Voordat je de wizard uitvoert, zorg ervoor dat:
 
@@ -29,7 +29,7 @@ Voordat je de wizard uitvoert, zorg ervoor dat:
 De wizard wijzigt je `wp-config.php`-bestand en maakt nieuwe databanktabellen aan. Maak altijd een back-up voordat je verdergaat.
 :::
 
-## Stap 1: Welkom
+## Stap 1: Welkom {#step-1-welcome}
 
 Het eerste scherm legt uit wat WordPress Multisite is en wat de wizard zal doen:
 
@@ -42,11 +42,11 @@ Het eerste scherm legt uit wat WordPress Multisite is en wat de wizard zal doen:
 
 Klik op **Doorgaan** om door te gaan.
 
-## Stap 2: Netwerkconfiguratie
+## Stap 2: Netwerkconfiguratie {#step-2-network-configuration}
 
 Deze stap vraagt je om je netwerkinstellingen te configureren.
 
-### Site-structuur
+### Site-structuur {#site-structure}
 
 Kies hoe je netwerk sites georganiseerd zullen worden:
 
@@ -57,11 +57,11 @@ Kies hoe je netwerk sites georganiseerd zullen worden:
 Als je subdomeinen kiest, moet je **wildcard DNS** en een **wildcard SSL-certificaat** voor je domein configureren. De meeste beheerde WordPress-hosts doen dit automatisch. Zie [Ultimate Multisite 101](./ultimate-multisite-101) voor een gedetailleerde vergelijking.
 :::
 
-### Netwerk Titel
+### Netwerk Titel {#network-title}
 
 Voer een naam in voor je netwerk. Standaard is dit de huidige sitetitel met 'Network' toegevoegd. Je kunt dit later wijzigen via de netwerkinstellingen.
 
-### Netwerkbeheerder E-mailadres
+### Netwerkbeheerder E-mailadres {#network-admin-email}
 
 Het e-mailadres dat wordt gebruikt voor netwerkbeheer notificaties. Standaard is dit het e-mailadres van de huidige gebruiker.
 
@@ -69,7 +69,7 @@ Het e-mailadres dat wordt gebruikt voor netwerkbeheer notificaties. Standaard is
 
 Na het invullen van de velden, klik op **Doorgaan** om door te gaan.
 
-## Stap 3: Installatie
+## Stap 3: Installatie {#step-3-installation}
 
 Klik op de knop **Install** om te beginnen. De wizard voert vijf geautomatiseerde stappen achter elkaar uit, waarbij elke stap zijn voortgang in realtime toont:
 
@@ -96,7 +96,7 @@ Zodra alle stappen succesvol zijn voltooid, zie je een groene status 'Succes!' v
 
 De wizard gaat vervolgens automatisch naar het voltooide scherm.
 
-## Stap 4: Voltooid
+## Stap 4: Voltooid {#step-4-complete}
 
 Zodra de installatie voltooid is, zie je een succesbericht dat bevestigt dat WordPress Multisite is ingeschakeld.
 
@@ -108,7 +108,7 @@ Je kunt nu doorgaan met de Ultimate Multisite setup wizard om je WaaS-platform t
 Na het voltooien van de multisite-installatie wordt je browser doorgestuurd via de nieuw ingeschakelde netwerkbeheerder. Mogelijk moet je opnieuw inloggen, omdat de authenticatiecookies zijn bijgewerkt voor de multisite-omgeving.
 :::
 
-## Handmatige Setup Terugval
+## Handmatige Setup Terugval {#manual-setup-fallback}
 
 Als de wizard niet kan schrijven naar je `wp-config.php`-bestand (door bestandspermissies of serverbeperkingen), toont hij de exacte code die je handmatig moet toevoegen:
 
@@ -117,9 +117,9 @@ Als de wizard niet kan schrijven naar je `wp-config.php`-bestand (door bestandsp
 
 Na het aanbrengen van de handmatige wijzigingen, vernieuw je de pagina en detecteert de wizard dat multisite nu actief is.
 
-## Probleemoplossing
+## Probleemoplossing {#troubleshooting}
 
-### De wizard geeft aan dat wp-config.php niet schrijfbaar is
+### De wizard geeft aan dat wp-config.php niet schrijfbaar is {#the-wizard-says-wp-configphp-is-not-writable}
 
 Het webserverproces heeft schrijfrechten nodig voor het `wp-config.php`-bestand. Je kunt:
 
@@ -127,7 +127,7 @@ Het webserverproces heeft schrijfrechten nodig voor het `wp-config.php`-bestand.
 - Gebruik de handmatige setup terugval-instructies die door de wizard worden verstrekt
 - Vraag hulp aan je hostingprovider
 
-### Sites zijn niet toegankelijk na de installatie (subdomeinen)
+### Sites zijn niet toegankelijk na de installatie (subdomeinen) {#sites-are-not-accessible-after-setup-subdomains}
 
 Als je de subdomeinstructuur hebt gekozen, moet je **wildcard DNS** voor je domein configureren. Voeg een DNS-record toe:
 
@@ -139,7 +139,7 @@ Value: [your server IP]
 
 Controleer bij je hostingprovider als je niet zeker weet hoe je dit moet configureren.
 
-### Authenticatieproblemen na de installatie
+### Authenticatieproblemen na de installatie {#authentication-issues-after-setup}
 
 Als je bent uitgelogd of cookiefouten ervaart na de multisite-installatie:
 
@@ -147,7 +147,7 @@ Als je bent uitgelogd of cookiefouten ervaart na de multisite-installatie:
 2. Log opnieuw in op `yourdomain.com/wp-login.php`
 3. Als het probleem aanhoudt, controleer dan of je `wp-config.php` niet `COOKIE_DOMAIN` op `false` heeft ingesteld — dit is een bekend probleem bij subdomein multisite-installaties
 
-### Een stap faalde tijdens de installatie
+### Een stap faalde tijdens de installatie {#a-step-failed-during-installation}
 
 Als een van de installatie stappen een fout toont:
 

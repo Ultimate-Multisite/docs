@@ -3,11 +3,11 @@ title: Aims a bhreithreachadh an tasanach
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Aosgadh an Dàrraidh (Dashboard Overview)
+# Aosgadh an Dàrraidh (Dashboard Overview) {#dashboard-overview}
 
 Mae **Ultimate Multisite** a' leigeann **Dashboard** a tha fìor, a' le a' leigeann widget-an dhan Dashboard an t-neth-luachda (Network Dashboard). Tha an article seo a' leigeann choimbeidh sin a' chleachdadh.
 
-## An Dashboard an Dàrraidh (The Network Dashboard)
+## An Dashboard an Dàrraidh (The Network Dashboard) {#the-network-dashboard}
 
 Tha Ultimate Multisite a' leigeann widget-an fìor dhan dashboard an t-neth-luachda a tha air **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Seo cheann a' leigeann a' chùl eachdraidh:
 
 ![News widget](/img/admin/network-dashboard-news.png)
 
-## An Dashboard Ultimate Multisite (The Ultimate Multisite Dashboard)
+## An Dashboard Ultimate Multisite (The Ultimate Multisite Dashboard) {#the-ultimate-multisite-dashboard}
 
 Mar a tha an dashboard an t-neth-luachda a' leigeann fhaighinn fiosrachadh fìor air an neth, tha an dashboard Ultimate Multisite (air athraidh an menu Ultimate Multisite) a' leigeann fiosrachadh air an seirbheis.
 

@@ -3,11 +3,11 @@ title: סקירת לוח הבקרה
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# סקירת לוח הבקרה
+# סקירת לוח הבקרה {#dashboard-overview}
 
 ל-Ultimate Multisite יש **לוח בקרה** ייעודי בתפריט של Ultimate Multisite, והוא גם מוסיף ווידג'טים ללוח הבקרה של הרשת. מאמר זה מסביר מה תראו בשני המקומות.
 
-## לוח הבקרה של הרשת
+## לוח הבקרה של הרשת {#the-network-dashboard}
 
 Ultimate Multisite מוסיף ווידג'טים שימושיים ללוח הבקרה ברמת הרשת, שנמצא ב-**האתרים שלי → ניהול רשת → לוח בקרה**.
 
@@ -35,7 +35,7 @@ Ultimate Multisite מוסיף ווידג'טים שימושיים ללוח הבק
 
 ![ווידג'ט חדשות](/img/admin/network-dashboard-news.png)
 
-## לוח הבקרה של Ultimate Multisite
+## לוח הבקרה של Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 בעוד שלוח הבקרה של הרשת מציג מידע כולל על הרשת, לוח הבקרה של Ultimate Multisite (ברמה העליונה של תפריט Ultimate Multisite) מציג מידע על השירות.
 

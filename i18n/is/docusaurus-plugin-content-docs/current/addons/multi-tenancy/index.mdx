@@ -1,0 +1,150 @@
+---
+title: Fjölleigjendahögun
+sidebar_position: 1
+_i18n_hash: 88ac685ddd21fd57b23c179c6c511c19
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-multi-tenancy" name="Multi-Tenancy" />
+
+# Multi-Tenancy {#multi-tenancy}
+
+Dreifðu undirvefjum milli þjóna og gagnagrunna fyrir afköst og öryggi
+
+## Helstu atriði í útgáfu 1.2.0 {#version-120-release-highlights}
+
+Multi-Tenancy 1.2.0 bætir við grunni fyrir fullvalda leigjendur fyrir einangrunarverkflæði í framleiðslu:
+
+- Stöðulaus sjálfvirk innskráning leigjenda með skammlífum, endurspilunarvörðum SSO-heimsóknum.
+- Einangrun gagnagrunns og skráakerfis fyrir hvern undirvef fyrir fullvalda leigjendur.
+- Hostinger multi-tenancy-geta fyrir hýsilmeðvitaða úthlutun leigjenda.
+- Staðfestingarhlið fullvalda flutnings fyrir eldri gagnaprófanir og ósamstillta ýtuvinnslu.
+- Stillanleg tenging gagnagrunnshýsils á sömu vél fyrir Bedrock, FrankenPHP og localhost-uppsetningar.
+- Endurbætur á ræsingu leigjanda, gagnagrunnsskrifara, skemaræsingu og úthlutun notenda.
+- Öruggari niðurrif fullvalda leigjanda sem hreinsar auðkenni leigjanda.
+
+Sjá notendahandbækurnar fyrir [verkflæði fullvalda flutnings](/user-guide/getting-started/sovereign-migration-workflow), [multi-tenancy-einangrun](/user-guide/configuration/multi-tenancy-isolation) og [aðgerðir fullvalda leigjanda](/user-guide/administration/sovereign-tenant-operations).
+
+## Kröfur {#requirements}
+
+- WordPress 5.3 eða nýrra
+- PHP 7.4 eða nýrra
+- Multisite Ultimate plugin (virkt)
+
+## Uppsetning {#installation}
+
+1. Hladdu addon-skránum upp í `/wp-content/plugins/` möppuna þína
+2. Virkjaðu plugin í gegnum 'Plugins' valmyndina í WordPress
+3. Stilltu addon-stillingarnar í netstjórnuninni
+
+## Þróun {#development}
+
+### Uppsetning {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Verkefnauppbygging {#project-structure}
+
+```
+ultimate-multisite-addon-template/
+├── inc/                          # PHP klasar og innifaldar skrár
+│   ├── class-multisite-ultimate-updater.php  # Uppfærslumeðhöndlari
+│   └── class-multi_tenancy-main.php             # Aðalvirkni
+├── tests/                        # Einingapróf
+│   ├── bootstrap.php            # Prófaupphaf
+│   ├── class-*-base.php         # Grunnprófunarklasi
+│   └── class-*-test.php         # Próftilvik
+├── views/                       # Sniðmátsskrár
+├── assets/                      # Fastar eignir
+│   ├── css/                     # Stílblöð
+│   ├── js/                      # JavaScript skrár
+│   └── images/                  # Myndir
+├── lang/                        # Tungumálsskrár
+├── composer.json                # PHP ósjálfstæði
+├── package.json                 # Node.js ósjálfstæði
+├── phpunit.xml.dist             # PHPUnit stillingar
+├── .phpcs.xml.dist              # Stillingar kóðastaðla
+└── rector.php                   # Reglur fyrir nútímavæðingu kóða
+```
+
+### Prófanir {#testing}
+
+Addon inniheldur yfirgripsmikinn prófunarramma:
+
+- **Einingapróf**: PHPUnit-byggð próf með WordPress prófunarsvítu
+- **Grunnprófunarklasi**: Veitir hjálparaðferðir fyrir algeng prófunarsvið
+- **Prófþekja**: Stillt til að rekja kóðaþekju
+- **Multisite-prófanir**: Próf keyra í multisite-umhverfi
+
+### Kóðastaðlar {#code-standards}
+
+- **WordPress Coding Standards**: Framfylgt með PHPCS
+- **PHP 7.4+ samhæfni**: Nútímalegir PHP eiginleikar studdir
+- **Föst greining**: PHPStan samþætting fyrir gerðaprófun
+- **Nútímavæðing kóða**: Rector reglur fyrir PHP uppfærslur
+
+### Smíðakerfi {#build-system}
+
+- **Eignavinnsla**: Smækkun fyrir CSS/JS skrár
+- **Þýðing**: POT-skrármyndun
+- **Pökkun**: Gerð safnskrár til dreifingar
+- **Þróunarhamur**: Ósmækkaðar eignir fyrir villuleit
+
+## Stillingar {#configuration}
+
+Addon styður ýmsa stillingavalkosti sem eru aðgengilegir í gegnum netstjórnunarviðmótið.
+
+### Stillingar fullvalda leigjanda {#sovereign-tenant-configuration}
+
+Fyrir fullvalda leigjendur skaltu stilla gagnagrunn leigjanda, rót skráakerfis, tengingu gagnagrunnshýsils og hýsilgetu áður en umferð er beint til leigjandans. Keyrðu flutningsstaðfestingu eftir hverja breytingu sem hefur áhrif á gagnagrunnsauðkenni, hýsiltengingu, beiningu eða úthlutun notenda.
+
+Notaðu `localhost` aðeins þegar keyrsluumhverfi leigjanda og gagnagrunnsheimildir gera ráð fyrir staðbundnum socket eða aðgangi á sömu vél. Notaðu `127.0.0.1` eða þjónustuhýsilheiti þegar það er heimildarhýsillinn sem þjónustuveitan þín hefur stillt.
+
+### Hostinger-geta {#hostinger-capability}
+
+Hostinger multi-tenancy-getan virkar með sameiginlega Hostinger samþættingartákninu. Staðfestu að lénið sé til staðar í hPanel, DNS vísi á Hostinger Account og að gagnagrunnsstillingar leigjandans passi við hPanel fyrir staðfestingu.
+
+## Hooks og síur {#hooks-and-filters}
+
+### Aðgerðir {#actions}
+
+- `ultimate-multisite-addon-template_init` - Keyrt eftir frumstillingu addon
+- `ultimate-multisite-addon-template_loaded` - Keyrt eftir að allar addon-skrár hafa verið hlaðnar
+
+### Síur {#filters}
+
+- `ultimate-multisite-addon-template_settings` - Breyta addon-stillingum
+- `ultimate-multisite-addon-template_enabled` - Hnekkja stöðu virkja/slökkva á addon
+
+## Leyfi {#license}
+
+Þetta addon er gefið út samkvæmt GPL v3 eða síðari útgáfu.
+
+## Aðstoð {#support}
+
+Fyrir aðstoð og skjölun, heimsæktu [MultisiteUltimate.com](https://multisiteultimate.com)
+## Breytingaskrá {#changelog}
+
+- Útgáfa 1.2.0 (2026-06-03): bæta við stöðulausri sjálfvirkri innskráningu leigjanda, Hostinger multi-tenancy-getu, einangrun gagnagrunns og skráakerfis fyrir hvern undirvef, staðfestingarhliðum fullvalda flutnings, endurbótum á ræsingu leigjanda/gagnagrunnsskrifara, stillanlegri MySQL hýsiltengingu og öruggara niðurrifi fullvalda leigjanda.
+
+- Útgáfa 1.0.1 (2025-09-28): endurnefna forskeyti í ultimate-multisite; uppfæra textalén; hækka útgáfu.
+
+
+- Útgáfa  (2025-09-28): endurnefna forskeyti í ultimate-multisite; uppfæra textalén; hækka útgáfu.

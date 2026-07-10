@@ -3,7 +3,7 @@ title: Ad Injector
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Pléad Iarann Áiríse ar do ngrúda le Ultimate Multisite: Ad Injector
+# Pléad Iarann Áiríse ar do ngrúda le Ultimate Multisite: Ad Injector {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Is é **add-on grátis** an Ultimate Multisite: Ad Injector a thug tú na fáilteanna a bheith ag cur ads ar do plána tríchtain.
 
@@ -35,7 +35,7 @@ Is féidir leat hefyd a bheith ads curte ag an héad (header) deacháin Admin Pa
 
 _Go dtí an option Ad Code ar an Admin Panel mar thuair tú ads a chur i bhfíneán chuid úsáidheoracht._
 
-### An áiríse ar an tairgseáil
+### An áiríse ar an tairgseáil {#beyond-advertising}
 
 Is féidir leat hefyd a bheith ag úsáid Ultimate Multisite: Ad Injector chun cur fáil ar na plána chomh maith agat.
 

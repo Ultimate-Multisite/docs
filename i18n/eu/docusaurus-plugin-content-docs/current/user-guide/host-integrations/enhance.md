@@ -3,33 +3,33 @@ title: Control Panel Integrazioa hobetzea
 sidebar_position: 2
 _i18n_hash: 2b4047e6b7b32a1c96a0b562e251cbfb
 ---
-# Kontrol Panelaren Integrazioa Hobatzea
+# Kontrol Panelaren Integrazioa Hobatzea {#enhance-control-panel-integration}
 
-## Deskuntzua
+## Deskuntzua {#overview}
 Enhance da modern kontrol panel bat dauden potente hostizazio automatizazio eta administrazio funtunalitatea ematen du. Horrek Ultimate Multisite eta Enhance Control Panel-a gitelako domainerak automatican sinxetzeko eta SSL bidegiturak administrazio egiteko espezialitate ematen du.
 
 **Eskaintza Erdatu:** Komunitatearen lehen osuntzak eta informazio gehiago hartzeko [GitHub Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265) ikusi.
 
-## Funktionalitateak
+## Funktionalitateak {#features}
 - Ultimate Multisite-an domainerak mapatuta dagoenean domainerak automatican sinxetzea
 - DNS-ek iradoketa egiten duenean LetsEncrypt bidegiturak automatican ematezea
 - Subdomain modu erabiltzen dituen arraketari (networks) suporta
 - Mapatutakoak borratzen duenean domaineraren borratzea
 - API identifikazioak bideratzea bidez konektibitatea probatzeko
 
-## Erreguntzak
+## Erreguntzak {#requirements}
 
-### Sistematiko Erreguntzak
+### Sistematiko Erreguntzak {#system-requirements}
 - Enhance Control Panel instalatuta eta erabilera dutela
 - WordPress Multisite instalazioa Enhance serverra edo Enhance serverra konektatuta dagoela
 - Apache web server (Enhance-ak Apache konfiguratura bat suportatzen du; LiteSpeed Enterprise da, jarduera handiagoan erreguntzu gabe prezio txikiagoan dago)
 
-### API Bideratzea
+### API Bideratzea {#api-access}
 API tokenak sortzeko Enhance Control Panelaren administrazio bideratu behar duzu.
 
-## API Identifikazioak Hondamendua
+## API Identifikazioak Hondamendua {#getting-your-api-credentials}
 
-### 1. API Token Sortzea
+### 1. API Token Sortzea {#1-create-an-api-token}
 
 1. Administrazio gisa Enhance Control Panelera logiatu
 2. Menu nagusiarean **Settings** (Konfigurazioa) funtzialari klik egin
@@ -44,7 +44,7 @@ API tokenak sortzeko Enhance Control Panelaren administrazio bideratu behar duzu
 
 Ukreizatu ondoren, er **Access Token** eta **Organization ID** ematen dira. **Savedzu horiek hemen** gaur du, karena tokena batra aldiz ez da ematen da.
 
-### 2. Hondaritu Idietu (Organization ID)
+### 2. Hondaritu Idietu (Organization ID) {#2-get-your-organization-id}
 
 Hondaritu Idietua (Organization ID) ematen da Access Tokens eskuratzeko lapurikoan, "Org ID: {your_id}" labelatutako ahalegin informazio box-ean.
 
@@ -55,7 +55,7 @@ Kunde batzaren Hondaritu Idietua aldatzeko, hauek ere egin dezakezu:
 2. Horrek duen kudeaketa (Manage customer) klikatu
 3. URL-era begiratu du - Hondaritu Idietua da `/customers/` ondoren dagoen alfanumeriko karakterak
 
-### 3. Hondaritu Idietu (Server ID) emate
+### 3. Hondaritu Idietu (Server ID) emate {#3-get-your-server-id}
 
 Idietu Hondaritu Idietua (Server ID) aurkitzeko (domain operazioetara beharrezkoa da):
 
@@ -72,7 +72,7 @@ curl -s -X GET https://your-enhance-panel.com/api/servers \
 
 Server ID da UUID formatua aldatzen du: `00000000-0000-0000-0000-000000000000`
 
-### 4. API URL emate
+### 4. API URL emate {#4-get-your-api-url}
 
 API URL-a da zure Enhance Control Panel lapurikoaren URL-a `/api/` ondoren apenderatuta:
 
@@ -84,9 +84,9 @@ https://your-enhance-panel.com/api/
 - `/api/` gabe domaina bat lekuan erabiliz
 - HTTPS-en alde HTTP-aren erabiliz (seguritatebidebi HTTPS da)
 
-## Konfigurazioa
+## Konfigurazioa {#configuration}
 
-### Konstante beharrezkoak
+### Konstante beharrezkoak {#required-constants}
 
 Hauko konstante hauek `wp-config.php` lapurikoan gehitu:
 
@@ -95,7 +95,7 @@ define('WU_ENHANCE_API_TOKEN', 'your-bearer-token-here');
 define('WU_ENHANCE_API_URL', 'https://your-enhance-panel.com/api/');
 define('WU_ENHANCE_SERVER_ID', 'your-server-uuid-here');
 
-### Integrazioa Wizarden bidez konfiguratzea
+### Integrazioa Wizarden bidez konfiguratzea {#setup-via-integration-wizard}
 
 1. WordPress administrazioan, **Ultimate Multisite** > **Settings** (Konfigurazioak) funtziara jarraitu.
 2. **Integrations** (Integrazioak) tabera jarraitu.
@@ -110,17 +110,17 @@ Mendataritza daiteke:
 - Wizard-ek konstante hauek automaticoki `wp-config.php` file-era sartu (inject) ematean.
 - Konstanteak kopiotu eta manuaz gehiago ezartu.
 
-## WordPressaren garrantziendu konfiguratura horiek
+## WordPressaren garrantziendu konfiguratura horiek {#additional-wordpress-configuration}
 
 Komunitatearen iragailuk (\[Discussion #265](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)) erabiliz, hauek gehiago konfiguratzea beharrezkoa izan daiteke:
 
-### .htaccess Konfigurazioa
+### .htaccess Konfigurazioa {#htaccess-configuration}
 
 Domain mapping (domainak jartzen) erantzunak eragiten dutenean:
 1. Origoaren Enhance `.htaccess` file-a boratu.
 2. Standard WordPress Multisite `.htaccess` file-a erabiliz aldatu.
 
-### Cookie Konstanteak
+### Cookie Konstanteak {#cookie-constants}
 
 Mapped domainetan cookie handling (cookie-ak jartzen) ondo egin eta hauek `wp-config.php`-le sartu:
 
@@ -130,9 +130,9 @@ define('COOKIEPATH', '/');
 define('ADMIN_COOKIE_PATH', '/');
 ```
 
-## Ondo jakinarazteko erantzuna
+## Ondo jakinarazteko erantzuna {#how-it-works}
 
-### Domain bat jartzen duenean
+### Domain bat jartzen duenean {#when-a-domain-is-mapped}
 
 1. Errekariak erabiltzaileak Ultimate Multisitean (edo da leku batean subdomain moduan irudi bat)
 2. Integrazioa Enhance API-rraren POST request bat bidala: `/servers/{server_id}/domains`
@@ -140,14 +140,14 @@ define('ADMIN_COOKIE_PATH', '/');
 4. DNS-ek serverra ireki denean, Enhance automaticoki LetsEncrypt bidez SSL sertifikatua ematen du
 5. Domain-a HTTPS-rekin aktibo da
 
-### Domainu Erregitu Dugu
+### Domainu Erregitu Dugu {#when-a-domain-is-removed}
 
 1. Ultimate Multisitean domain mapping bat boratzen da
 2. Integrazioa Enhance-ri galdu egiten du domain-aren ID-a aurkitzeko
 3. DELETE request bat bidala: `/servers/{server_id}/domains/{domain_id}`
 4. Enhance domain-a server konfiguratura zehatzera ustez da
 
-### DNS eta SSL Kontrolla
+### DNS eta SSL Kontrolla {#dns-and-ssl-checking}
 
 Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
 - Kontrolaren iraupenean **Domain Mapping Settings** (default: 300 segundea/5 minutu) konfiguratuta duzu
@@ -155,9 +155,9 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
 - SSL sertifikatua bereziki kontrolatzen da
 - Enhance automaticoki SSL ematen du, zehatza manuala SSL konfiguratzea ez da beharrezkoa
 
-## Konfigurazioa Bidez Kontrolla
+## Konfigurazioa Bidez Kontrolla {#verifying-setup}
 
-### Konektibitatea Probatzea
+### Konektibitatea Probatzea {#test-the-connection}
 
 1. Integrazio Wizardan, **Test Connection** irudiena eratu duzu
 2. Plugin-ek serverra domainak listatzeko proposatuko da
@@ -167,7 +167,7 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
    - Server ID berezia da
    - Permisoak lehiak aukera dutela
 
-### Domainu Boratzenaren Orain
+### Domainu Boratzenaren Orain {#after-mapping-a-domain}
 
 1. Ultimate Multisitean test domain bat boratu duzu
 2. Ultimate Multisite log-ak kontrolatu (**Ultimate Multisite** > **Logs** > **integration-enhance**)
@@ -176,9 +176,9 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
    - Domainu berria listan erabiliz da
 4. DNS propagaziora jartzen denean, SSL automaticoki ematen da kontrollatu
 
-## Problema jak ez da konponbatu (Troubleshooting)
+## Problema jak ez da konponbatu (Troubleshooting) {#troubleshooting}
 
-### Problema konektibitatea API-aren
+### Problema konektibitatea API-aren {#api-connection-issues}
 
 **Error: "Failed to connect to Enhance API" (Konektibitatea Enhance API-ra konektatzeko sumagana)**
 - Ezkiritu `WU_ENHANCE_API_URL` hasi eta `/api/` da irralatu.
@@ -196,7 +196,7 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
 - Server ID-ak UUID format bat bereziko jakin.
 - Enhance panelan servera dagoela konfirmatu.
 
-### Domenia ez hasituratu (Domain Not Added)
+### Domenia ez hasituratu (Domain Not Added) {#domain-not-added}
 
 **Log-ak errazatu:**
 1. **Ultimate Multisite** > **Logs** (Log-ak) funtziora jarraitu.
@@ -209,7 +209,7 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
 - API permietza ez duena (token-ek System Administrator role bereziko jakin).
 - Server ID-ak Enhance-an dagoen serverrekin ez bat dagoela.
 
-### SSL Sertifikatua Problemaak
+### SSL Sertifikatua Problemaak {#ssl-certificate-issues}
 
 **SSL ez hasituratu (SSL not provisioning):**
 - DNS-ak server-ren IP-ra apuntatzen duen irralatu.
@@ -223,7 +223,7 @@ Ultimate Multisitean DNS eta SSL kontrolak inplikatuta dira:
 2. Domenia-ren aurkitu eta SSL status-ak errazatu.
 3. Bezatzera SSL hasitzea beharrezkoa dela jakin.
 
-### DNS Erantzunaren Irraldu Aldazpenak (DNS Check Interval)
+### DNS Erantzunaren Irraldu Aldazpenak (DNS Check Interval) {#dns-check-interval}
 
 Domain edo SSL-akordeak hasten daitezke oso luze jakin dituzenean:
 1. **Ultimate Multisite** > **Settings** > **Domain Mapping** fun jarri duzu.
@@ -231,7 +231,7 @@ Domain edo SSL-akordeak hasten daitezke oso luze jakin dituzenean:
 3. Default 300 segundik bat txikiago (minimuma: 10 segund) aldatu duzu.
 4. **Ez zurekin:** Txikiko intervalak erantzunak lehen daude, baina serveraren zergabatoreko irudi handiagoa izan daiteke.
 
-### Autentifikazio Errorrak
+### Autentifikazio Errorrak {#authentication-errors}
 
 **HTTP 401/403 errorrak:**
 - Enhance-an API tokena berriago (Regenerate) duzu.
@@ -239,7 +239,7 @@ Domain edo SSL-akordeak hasten daitezke oso luze jakin dituzenean:
 - Tokena ez dagoen duen jakinarazteko jarduera ez daiko.
 - Organikazio ID (Organization ID) iruditzen duzu (mendia URL-an ez behar da).
 
-### Log Analisia
+### Log Analisia {#log-analysis}
 
 Log detallatuak aktibatu duzu:
 ```php
@@ -253,15 +253,15 @@ Gero, logak jartu duzu:
 - WordPress debug loga: `wp-content/debug.log`
 - Enhance panel logak: Enhance-ren admin interfacean aurkitu daitezke.
 
-## API Referentzia
+## API Referentzia {#api-reference}
 
-### Autentifikazio
+### Autentifikazio {#authentication}
 API eskaera guztiek Bearer token autentifikazioa erabiltzen du:
 ```
 Authorization: Bearer YOUR_TOKEN_HERE
 ```
 
-### Lehen Erantzunak Erabiltzenak
+### Lehen Erantzunak Erabiltzenak {#common-endpoints-used}
 
 **Servers listatzea:**
 ```
@@ -284,30 +284,30 @@ Body: {"domain": "example.com"}
 DELETE /servers/{server_id}/domains/{domain_id}
 ```
 
-### API Dokumentazioa Nagusia
+### API Dokumentazioa Nagusia {#full-api-documentation}
 API dokumentazioa oso guztia: [https://apidocs.enhance.com](https://apidocs.enhance.com)
 
-## Best Practiceak
+## Best Practiceak {#best-practices}
 
-### Seguritate (Security)
+### Seguritate (Security) {#security}
 - **Ez ez dut API tokens edo version control-an ez emitu**
 - Tokens hauek `wp-config.php`-an garduin behar dira, eta hori Git-etik ez dagoela behar da.
 - Token hauek espezifiko permietua (System Administrator) erabiliztenbe (integrazio guztiaren bitartean).
 - Produksio (production) erabilera token-ekaren amaierak (expiry dates) emitu.
 - Periodikoki token-ek rotatzi ditu.
 
-### Prestazioa (Performance)
+### Prestazioa (Performance) {#performance}
 - API anizki gehiago ez dute, hori gabe default DNS kontrola intervala (300 segundea) erabiliztenbe.
 - Domain-ek handi-lerra operazioak egiten ari denge gutxi edo server resource hauek monitorizatu.
 - Domain-ek asko bat barne mapatzen ari den gehiago da, hori gabe domain-ek ezarri eta jarraitu (staggering) iruditzen dena.
 
-### Monitorizazioa (Monitoring)
+### Monitorizazioa (Monitoring) {#monitoring}
 - Integrazio errorrak bitartean Ultimate Multisite log-ek regularment kontrolatu.
 - Domain-ek ezarritzenaren errazaingoak monitorizatu.
 - SSL certificate hauek lehenik gabe emitu daitezkeen jakin.
 - Enhance server-ren kapasitatea eta domain-ekaren limitazioak ikusten ditu.
 
-## Ressurgarriak Nagusiak (Additional Resources)
+## Ressurgarriak Nagusiak (Additional Resources) {#additional-resources}
 
 - **Enhance Ofizial Dokumentazioa:** [https://enhance.com/docs](https://enhance.com/docs)
 - **Enhance API Dokumentazioa:** [https://apidocs.enhance.com](https://apidocs.enhance.com)
@@ -315,7 +315,7 @@ API dokumentazioa oso guztia: [https://apidocs.enhance.com](https://apidocs.enha
 - **GitHub Diskusiokoa:** [Issue #265 - Enhance Integration Tips](https://github.com/Multisite-Ultimate/ultimate-multisite/discussions/265)
 - **Ultimate Multisite Domain Mapatzea Gida:** "How to Configure Domain Mapping v2" wiki paginaz ikusten duzu.
 
-## Udalak (Support)
+## Udalak (Support) {#support}
 
 Problema bat aurkitu jakin:
 1. Atalean dagoen Troubleshooting (Aurrekontzako) seksioa kontrolatu.
@@ -324,7 +324,7 @@ Problema bat aurkitu jakin:
 4. Panel-eko problema bat izan, Enhance suportiari kontaktatu.
 5. Komunitatearen laguntza eskolari log-ek detallatuak eta error logs-ek handiagoak emitu diskusio berria sortu.
 
-## Nota (Notes)
+## Nota (Notes) {#notes}
 
 - Hauzenak handalegia horrek domain alias-ez betetzeko; Enhance-ek SSL-a automatikoki jartzen du.
 - Handalegia horrek både custom domain mapping eta subdomain-bazte websteiak ere suportatzen du.

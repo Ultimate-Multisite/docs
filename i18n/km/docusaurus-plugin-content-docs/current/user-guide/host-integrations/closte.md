@@ -3,18 +3,18 @@ title: ការរួមបញ្ចូល Closte
 sidebar_position: 7
 _i18n_hash: 8f07c74ab2f7df614f502e0cc089c3e0
 ---
-# ការតភ្ជាប់ Closte
+# ការតភ្ជាប់ Closte {#closte-integration}
 
-## ទិដ្ឋភាពទូទៅ
+## ទិដ្ឋភាពទូទៅ {#overview}
 Closte គឺជាវេទិកាបង្ហោះ WordPress ដែលត្រូវបានគ្រប់គ្រង (managed) ដែលបង្កើតឡើងនៅលើហេដ្ឋារចនាសម្ព័ន្ធ Google Cloud។ ការតភ្ជាប់នេះអនុញ្ញាតឱ្យមានការធ្វើសមកាលកម្មដែន (domain syncing) ដោយស្វ័យប្រវត្តិ និងការគ្រប់គ្រងវិញ្ញាបនបត្រ SSL រវាង Ultimate Multisite និង Closte។
 
-## លក្ខណៈពិសេស
+## លក្ខណៈពិសេស {#features}
 - ការធ្វើសមកាលកម្មដែនដោយស្វ័យប្រវត្តិ
 - ការគ្រប់គ្រងវិញ្ញាបនបត្រ SSL
 - ការគាំទ្រដែន Wildcard (wildcard domain)
 - មិនចាំបាច់កំណត់រចនាសម្ព័ន្ធអ្វីទេ ប្រសិនបើអ្នកដំណើរការនៅលើ Closte
 
-## តម្រូវការ
+## តម្រូវការ {#requirements}
 ថេរ (constant) ខាងក្រោមនេះត្រូវតែត្រូវបានកំណត់នៅក្នុងឯកសារ `wp-config.php` របស់អ្នក ប្រសិនបើអ្នកកំពុងប្រើ Closte៖
 
 ```php
@@ -23,19 +23,19 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ថេរនេះជាធម្មតាត្រូវបានកំណត់រួចហើយ ប្រសិនបើអ្នកបង្ហោះនៅលើ Closte។
 
-## ការណែនាំអំពីការរៀបចំ (Setup Instructions)
+## ការណែនាំអំពីការរៀបចំ (Setup Instructions) {#setup-instructions}
 
-### ១. ផ្ទៀងផ្ទាត់ API Key របស់ Closte របស់អ្នក
+### ១. ផ្ទៀងផ្ទាត់ API Key របស់ Closte របស់អ្នក {#1-verify-your-closte-api-key}
 ប្រសិនបើអ្នកកំពុងបង្ហោះនៅលើ Closte، ថេរ `CLOSTE_CLIENT_API_KEY` គួរតែត្រូវបានកំណត់រួចហើយនៅក្នុងឯកសារ `wp-config.php` របស់អ្នក។ អ្នកអាចផ្ទៀងផ្ទាត់វាបានដោយពិនិត្យមើលឯកសារ `wp-config.php` របស់អ្នក។
 
-### ២. បើកដំណើរការការតភ្ជាប់ (Enable the Integration)
+### ២. បើកដំណើរការការតភ្ជាប់ (Enable the Integration) {#2-enable-the-integration}
 1. នៅក្នុង admin របស់ WordPress របស់អ្នក សូមចូលទៅកាន់ Ultimate Multisite > Settings
 2. ចូលទៅកាន់แท็บ "Domain Mapping"
 3. រំលងចុះក្រោមទៅផ្នែក "Host Integrations"
 4. បើកដំណើរការការតភ្ជាប់ Closte (Enable the Closte integration)
 5. ចុចលើ "Save Changes"
 
-## វាដំណើរការដោយរបៀបណា (How It Works)
+## វាដំណើរការដោយរបៀបណា (How It Works) {#how-it-works}
 
 នៅពេលដែលដែនមួយត្រូវបានកំណត់រចនាសម្ព័ន្ធនៅក្នុង Ultimate Multisite៖
 
@@ -45,26 +45,26 @@ define('CLOSTE_CLIENT_API_KEY', 'your_api_key');
 
 ការតភ្ជាប់នេះក៏ដំណើរការជាមួយការកំណត់អត្រានៃការពិនិត្យ DNS (DNS check interval setting) នៅក្នុង Ultimate Multisite ដែលអនុញ្ញាតឱ្យអ្នកកំណត់ថាតើប្រព័ន្ធគួរពិនិត្យមើលការផ្សព្វផ្សាយ DNS និងការចេញវិញ្ញាបនបត្រ SSL រៀងរាល់ប៉ុន្មានដង។
 
-## ការបង្កើតបញ្ជីដែន (Domain Record Creation)
+## ការបង្កើតបញ្ជីដែន (Domain Record Creation) {#domain-record-creation}
 
 ការតភ្ជាប់នេះធានាថា នៅពេលបង្កើត ឬចម្លងគេហទំព័រមួយ វានឹងបង្កើតកំណត់ត្រាដែន (domain record) ដោយស្វ័យប្រវត្តិ។ នេះមានសារៈសំខាន់ជាពិសេសសម្រាប់ការរួមបញ្ចូល Closte ព្រោះការបង្កើតកំណត់ត្រាដែននេះនឹងបង្កឱ្យ API របស់ Closte បង្កើតដែន និងវិញ្ញាបនបត្រ SSL។
 
-## ការដោះស្រាយបញ្ហា (Troubleshooting)
+## ការដោះស្រាយបញ្ហា (Troubleshooting) {#troubleshooting}
 
-### បញ្ហានៃការតភ្ជាប់ API (API Connection Issues)
+### បញ្ហានៃការតភ្ជាប់ API (API Connection Issues) {#api-connection-issues}
 - សូមពិនិត្យមើលថាតើ Closte API key របស់អ្នកត្រឹមត្រូវឬអត់
 - ត្រូវប្រាកដថាគណនី Closte របស់អ្នកមានសិទ្ធិគ្រប់គ្រាន់ដែលត្រូវការ។
 
-### បញ្ហានៃវិញ្ញាបនបត្រ SSL (SSL Certificate Issues)
+### បញ្ហានៃវិញ្ញាបនបត្រ SSL (SSL Certificate Issues) {#ssl-certificate-issues}
 - Closte ប្រហែលជាចំណាយពេលខ្លះក្នុងការចេញវិញ្ញាបនបត្រ SSL (ជាធម្មតា ៥-១០ នាទី)
 - សូមពិនិត្យមើលថាតើដែនរបស់អ្នកកំពុងចង្អុលទៅ IP address របស់ server Closte របស់អ្នកបានត្រឹមត្រូវឬទេ
 - សូមពិនិត្យមើលកំណត់ត្រា DNS សម្រាប់ដែនរបស់អ្នក ដើម្បីធានាថាវាត្រូវបានកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវ។
 
-### ដែនមិនត្រូវបានបន្ថែម (Domain Not Added)
+### ដែនមិនត្រូវបានបន្ថែម (Domain Not Added) {#domain-not-added}
 - សូមពិនិត្យមើល logs របស់ Ultimate Multisite សម្រាប់សារកំហុសណាមួយ
 - សូមផ្ទៀងផ្ទាត់ថាតើដែននោះមិនទាន់ត្រូវបានបន្ថែមទៅ Closte រួចហើយឬនៅ
 - សូមធានាថាកំណត់ត្រា DNS របស់ដែនរបស់អ្នកត្រូវបានកំណត់រចនាសម្ព័ន្ធត្រឹមត្រូវ។
 
-### វគ្គពេលវេលាកំណត់នៃការពិនិត្យ DNS (DNS Check Interval)
+### វគ្គពេលវេលាកំណត់នៃការពិនិត្យ DNS (DNS Check Interval) {#dns-check-interval}
 - ប្រសិនបើវិញ្ញាបនបត្រ SSL ត្រូវការពេលយូរក្នុងការចេញ អ្នកអាចកែសម្រួលវគ្គពេលវេលាកំណត់នៃការពិនិត្យ DNS នៅក្នុងការកំណត់ Domain Mapping បាន។
 - វគ្គពេលវេលាដែលបានកំណត់ជាលំនាំដើមគឺ ៣០០ វិនាទី (៥ នាទី) ប៉ុន្តែអ្នកអាចកំណត់វាឱ្យទាបបំផុតត្រឹម ១០ វិនាទីសម្រាប់ការពិនិត្យកាន់តែលឿនក្នុងពេលធ្វើតេស្ត។

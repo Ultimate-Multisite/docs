@@ -3,11 +3,11 @@ title: 'Loj 1: U vim li dab tsi niche yu ua haujlwm'
 sidebar_position: 2
 _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 ---
-# Lesson 1: ຍ້ອນເປັນ Niche ຈຶ່ງຊະນະ
+# Lesson 1: ຍ້ອນເປັນ Niche ຈຶ່ງຊະນະ {#lesson-1-why-niche-wins}
 
 ກ່ອນທີ່ເຮົາຈະເລີ່ມໃຊ້ software ໃດໆ, ເຮົາຕ້ອງເຂົ້າໃຈວ່າເປັນຫຍັງການສ້າງເວັບໄຊໃຫ້ກັບຄົນສະເພາະຈຶ່ງເປັນການຕັດສິນໃຈທີ່ສຳຄັນທີ່ສຸດທີ່ຈະເຮັດ.
 
-## ບັນຫາຂອງການຂາຍເວັບໄຊທົ່ວໄປ (Generic Websites)
+## ບັນຫາຂອງການຂາຍເວັບໄຊທົ່ວໄປ (Generic Websites) {#the-problem-with-selling-generic-websites}
 
 ຖ້າເຈົ້າສະເໜີ "ເວັບໄຊສຳລັບທຸກຄົນ", ເຈົ້າກຳລັງແຂ່ງຂັນກັບ:
 
@@ -17,11 +17,11 @@ _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 
 ເຈົ້າບໍ່ສາມາດຊະນະໃນເລື່ອງລາຄາໄດ້. ເຈົ້າບໍ່ສາມາດຊະນະໃນເລື່ອງຟີເຈີ (features) ໄດ້. ຕະຫຼາດເວັບໄຊທົ່ວໄປແມ່ນການແຂ່ງຂັນລົງຕ່ຳໆ.
 
-## ສິ່ງທີ່ປ່ຽນແປງເມື່ອເຈົ້າເລືອກ Niche
+## ສິ່ງທີ່ປ່ຽນແປງເມື່ອເຈົ້າເລືອກ Niche {#what-changes-when-you-pick-a-niche}
 
 ເມື່ອເຈົ້າສ້າງ platform ໂດຍສະເພາະສຳລັບສະຕູຟຟຟິດເນສ (fitness studios) (ຫຼື Niche ອື່ນໆ), ທຸກຢ່າງຈະປ່ຽນໄປໃນທາງທີ່ດີຂອງເຈົ້າ:
 
-### ເຈົ້າແກ້ໄຂບັນຫາຕົວຈິງໄດ້
+### ເຈົ້າແກ້ໄຂບັນຫາຕົວຈິງໄດ້ {#you-solve-real-problems}
 
 ເຈົ້າຂອງສະຕູຟຟຟິດບໍ່ຕ້ອງການ "ເວັບໄຊ". ພວກເຂົາຕ້ອງການ:
 
@@ -33,47 +33,47 @@ _i18n_hash: 2a597b3445f07f9a81903f50a1ee1fe0
 
 ເມື່ອ platform ຂອງເຈົ້າສາມາດແກ້ໄຂບັນຫາສະເພາະເຫຼົ່ານີ້ໄດ້ໂດຍບໍ່ຕ້ອງປ່ຽນຫຍັງເລີຍ, ເຈົ້າບໍ່ໄດ້ຂາຍເວັບໄຊອີກຕໍ່ໄປ. ເຈົ້າກຳລັງຂາຍ "ວິທີແກ້ໄຂ" (solution).
 
-### ເຈົ້າສາມາດຮ້ອງຂໍລາຄາໄດ້ຫຼາຍຂຶ້ນ
+### ເຈົ້າສາມາດຮ້ອງຂໍລາຄາໄດ້ຫຼາຍຂຶ້ນ {#you-can-charge-more}
 
 ເວັບໄຊ WordPress ທົ່ວໄປອາດຈະຂາຍໄດ້ $500-$2,000 ໃນຖານະໂຄງການດຽວ. ແຕ່ platform Niche ທີ່ແກ້ໄຂບັນຫາສະເພາະຂອງອຸດສາຫະກຳໄດ້ສາມາດຮ້ອງຂໍລາຄາ $49-$199/ເດືອນໃນຮູບແບບການຈ່າຍເປັນປະຈຳ ເພາະວ່າຄຸນຄ່າຂອງມັນແມ່ນມີຢູ່ເລື້ອຍໆ ແລະ ສະເພາະເຈາະຈົງ.
 
-### ເຈົ້າກາຍເປັນຜູ້ຊ່ຽວຊານ (Expert)
+### ເຈົ້າກາຍເປັນຜູ້ຊ່ຽວຊານ (Expert) {#you-become-the-expert}
 
 Tha u fokus rau ib lub hom sijhawm ib laj, koj yu xav tau kab lus ntawm no, tus txhua yam u tsis raug (pain points), thiab qhov u tias hauv kev txais. Tus dejm txhua neeg u haum nrog nhau. Tha ib tug neeg tau pom platform u ua haujlwm, lawv yu thov leeb rau lwm tus. Word of mouth hauv lub laj no zoo heev vim tias lub cộng đồng ntawd muaj kev hlub tshua tawm.
 
-### Koj Txais Rau Kev Marketing Yu Zoo Heev
+### Koj Txais Rau Kev Marketing Yu Zoo Heev {#your-marketing-gets-easier}
 
 Thaum koj hais "peev xiam txhua yam website rau lub neej," koj yu hais tias "peev xiam txhua yam website rau fitness studio." Lub landing page u hais txog tus chủ studio txog tias. Tus template u muaj hom kuv ua ib tug fitness site. Tus testimonials u tu hauv tus trainer thiab tus chủ studio. Txhua yam kev marketing u thov heev vim nws tseem ceeb tshung yog qhov tseeb.
 
-## Lub Tshawb Nrhiav FitSite
+## Lub Tshawb Nrhiav FitSite {#the-fitsite-opportunity}
 
 Tus tshawb nrhiav lub hom sijhawm fitness zoo li no:
 
-### Lub Txoj Kev Txais (Market Size)
+### Lub Txoj Kev Txais (Market Size) {#market-size}
 
 - Muaj txais 100,000+ lub hom sijhawm fitness hauv United States tsuog.
 - Tus pib nrho u yog tus neej ua lub neej txhua tus.
 - Tus pib nrho muaj website tsis muaj, website zoo heev, lossis website u hloov txais heev u tsis raug ua rau nws khudob.
 
-### Lub Txais U Muaj Rau (Current Solutions)
+### Lub Txais U Muaj Rau (Current Solutions) {#current-solutions}
 
 - **Generic builders** (Wix, Squarespace): Tsis muaj qhov tseeb tshung hauv fitness, tus chủ studio u tsis zoo rau ua yuav xav.
 - **Custom development**: Thov heev, ua ib txว, thiab kho txiav siab txawm.
 - **Industry-specific platforms**: Muaj zog heev, thiab pib nrho muaj qhov tseeb tshung hauv booking systems tsis muaj kev tsim quav website u zoo.
 
-### Lub Txais (The Gap)
+### Lub Txais (The Gap) {#the-gap}
 
 Kuvau tsis muaj yam uas "generic website builder" thiab "expensive custom development" rau lub hom phiaj ua siab. Platform uas tiv thaiv studio owners mu web zoo, zoo li yuav ua haujlwm siab, leej twg xav tau -- nrog tus kaum uas muaj qhuas uas hèn rau lub hom phiaj uas muaj tsam rau lub neej uas tsis meej txaus -- yuav tiv thaiv yam uas thov.
 
 No yog qhov uas FitSite yuav ua peev xwm.
 
-## Qhov Ua Ua Hauv Rau
+## Qhov Ua Ua Hauv Rau {#key-takeaway}
 
 Txhua tus tsis muaj haujlwm teknikal los, tab sis no yog lub neej uas muaj yee yam uas hlooj mus rau koj:
 
 - **Kuv uas niche ua siab**: Kuv tau txog qhov uas muaj qhuas tshaj plaws heev heev heev heev heev. Qhov niche platform uas tiv thaiv tus neej 500 nrog $99/month yog lub hom phiaj uas thuam txog $600,000/year. Koj tsis xav tau tus kaum hauv ntau. Koj xav tau tus kaum uas zoo tshaj plaws.
 
-## Kuv Ua Hauv Rau Qhov Ua Ua Hauv Rau
+## Kuv Ua Hauv Rau Qhov Ua Ua Hauv Rau {#what-we-built-this-lesson}
 
 Tsis muaj haujlwm teknikal los -- tab sis koj yuav muaj lub neej uas hlooj mus rau koj:
 

@@ -3,7 +3,7 @@ title: የፕላን ማሻሻል
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# የPlan ማሻሻያ (v2)
+# የPlan ማሻሻያ (v2) {#upgrading-a-plan-v2}
 
 _**ጠቃሚ ማሳሰቢያ፡ ይህ ጽሑፍ የሚያመለክተው Ultimate Multisite version 2.xን ነው።**_
 
@@ -41,7 +41,7 @@ Plan ሊያሻሽሉ፣ ደንበኞችዎ ወደ **Dashboard** ገጻቸው በ
 
 ##
 
-## የPlan ማሻሻያ እና መቀነስ መንገዶች (Upgrade and Downgrade Paths)
+## የPlan ማሻሻያ እና መቀነስ መንገዶች (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 በእያንዳንዱ ምርትዎ ላይ **Up & Downgrades** የሚል ታብ ይኖራል። በዚያ ታብ ላይ ያለው የመጀመሪያ አማራጭ **Plan Group** የሚባል መስክ ነው።
 

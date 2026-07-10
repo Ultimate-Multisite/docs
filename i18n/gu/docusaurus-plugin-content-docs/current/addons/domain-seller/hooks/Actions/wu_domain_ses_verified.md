@@ -4,19 +4,19 @@ title: ક્રિયા - wu_domain_ses_verified
 sidebar_label: wu_domain_ses_verified
 _i18n_hash: 5ef424a1d1a4d3569ebfa9caf2d1a3d7
 ---
-# Action: wu_domain_ses_verified
+# Action: wu_domain_ses_verified {#action-wudomainsesverified}
 
 જ્યારે SES કોઈ ડોમેનને DKIM-verified ની પુષ્ટિ કરે છે, ત્યારે આ એક્શન ટ્રિગર થાય છે.
 
-## પેરામીટર્સ (Parameters)
+## પેરામીટર્સ (Parameters) {#parameters}
 
 | નામ | પ્રકાર | વર્ણન |
 |------|------|-------------|
 | $domain | `\WP_Ultimo\Models\Domain` | ડોમેન ઓબ્જેક્ટ. |
 
-### ક્યારથી (Since)
+### ક્યારથી (Since) {#since}
 
 - 2.2.0
-### સ્ત્રોત (Source)
+### સ્ત્રોત (Source) {#source}
 
 આ [`inc/class-ses-verification-manager.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-domain-seller/blob/main/inc/class-ses-verification-manager.php#L480) માં લાઇન 480 પર વ્યાખ્યાયિત થયેલ છે.

@@ -3,7 +3,7 @@ title: Reklama enjektori
 sidebar_position: 10
 _i18n_hash: 579c3e30ae77efa38190eec2ecb5b049
 ---
-# Ultimate Multisite: Ad Injector bilan tarmoqqa reklamalar joylash
+# Ultimate Multisite: Ad Injector bilan tarmoqqa reklamalar joylash {#placing-ads-on-your-network-with-ultimate-multisite-ad-injector}
 
 Ultimate Multisite: Ad Injector — bu sizga o'zingizning reja sahifalaridan bevosita reklamalarni joylashtirish uchun vositalar beradigan **bepul qo'shimcha**dir.
 
@@ -35,7 +35,7 @@ Shuningdek, siz ushbu reja foydalanuvchilari uchun Admin Sahifalarning sarlavhas
 
 _Agar foydalanuvchingizning back-endida reklama ko'rsatmoqchi bo'lsangiz, Admin Paneldagi Reklama Kodu (Ad Code) variantiga kiring._
 
-### Reklamalardan tashqari
+### Reklamalardan tashqari {#beyond-advertising}
 
 Shuningdek, Ultimate Multisite: Ad Injector dan yuqori darajadagi rejalarga qo'llab-quvvatlashni taqdim etish uchun foydalanishingiz mumkin.
 

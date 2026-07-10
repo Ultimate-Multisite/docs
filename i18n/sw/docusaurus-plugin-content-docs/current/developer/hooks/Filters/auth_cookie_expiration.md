@@ -4,11 +4,11 @@ title: Kichujio - auth_cookie_expiration
 sidebar_label: auth_cookie_expiration
 _i18n_hash: abdb61f075bb0c28e31605ab622e26f5
 ---
-# Filter: auth_cookie_expiration
+# Filter: auth_cookie_expiration {#filter-authcookieexpiration}
 
 Hii inarekebisha muda ambao cookie ya uthibitisho (authentication cookie) inadumu kabla ya kuisha.
 
-## Parameters
+## Parameters {#parameters}
 
 | Name | Type | Description |
 |------|------|-------------|
@@ -16,9 +16,9 @@ Hii inarekebisha muda ambao cookie ya uthibitisho (authentication cookie) inadum
 | $user_id | `int` | Kitambulisho cha mtumiaji (User ID). |
 | $remember | `bool` | Kama inapaswa kukumbuka kuingia kwa mtumiaji. Kiwango cha awali ni *false*. |
 
-### Tangu
+### Tangu {#since}
 
 - 2.8.0
-### Chanzo
+### Chanzo {#source}
 
 Imefafanuliwa katika [`inc/sso/auth-functions.php`](https://github.com/Ultimate-Multisite/ultimate-multisite/blob/main/inc/sso/auth-functions.php#L52) kwenye mstari wa 52

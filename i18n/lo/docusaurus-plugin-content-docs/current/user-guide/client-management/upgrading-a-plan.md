@@ -3,7 +3,7 @@ title: ການອັບເກຣດແຜນການ
 sidebar_position: 11
 _i18n_hash: 292fe52b63762d11e65c720ada133d39
 ---
-# ການອັບເກຣດແຜນການ (v2)
+# ການອັບເກຣດແຜນການ (v2) {#upgrading-a-plan-v2}
 
 _**ຂໍ້ຄວນລະວັງ: ບົດຄວາມນີ້ອ້າງອີງເຖິງ Ultimate Multisite version 2.x.**_
 
@@ -41,7 +41,7 @@ _**ຂໍ້ຄວນລະວັງ: ບົດຄວາມນີ້ອ້າງ
 
 ##
 
-## ລະບົບການອັບເກຣດ ແລະ ດາວເກຣດ (Upgrade and Downgrade Paths)
+## ລະບົບການອັບເກຣດ ແລະ ດາວເກຣດ (Upgrade and Downgrade Paths) {#upgrade-and-downgrade-paths}
 
 ໃນຜະລິດຕະພັນແຕ່ລະຊະນິດຂອງເຈົ້າ, ເຈົ້າຈະມີ tab ຊື່ວ່າ **Up & Downgrades**. ທາງເລືອກທຳອິດໃນ tab ນັ້ນແມ່ນຊ່ອງຂໍ້ມູນທີ່ເອີ້ນວ່າ **Plan Group**.
 

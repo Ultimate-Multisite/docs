@@ -3,11 +3,11 @@ title: Keterlihatan Kebolehan
 sidebar_position: 16
 _i18n_hash: 5c2956a28cbd9800895f8783ca92e109
 ---
-# Kebolehlihatan Kebolehan (Ability Visibility)
+# Kebolehlihatan Kebolehan (Ability Visibility) {#ability-visibility}
 
 Superdav AI Agent v1.12.0 memperkenalkan kawalan **Kebolehlihatan Kebolehan (Ability Visibility)** yang mengawal permukaan mana yang boleh mengakses setiap kebolehan. Ini membolehkan pentadbir menyempurnakan keupayaan agen mana yang tersedia melalui REST APIs, pelayan MCP, integrasi WooCommerce, dan antara muka lain.
 
-## Apakah Kebolehlihatan Kebolehan?
+## Apakah Kebolehlihatan Kebolehan? {#what-is-ability-visibility}
 
 Kebolehlihatan Kebolehan ialah sistem kebenaran yang mengawal:
 
@@ -18,9 +18,9 @@ Kebolehlihatan Kebolehan ialah sistem kebenaran yang mengawal:
 
 Setiap kebolehan membawa tahap kebolehlihatan yang menentukan ketersediaannya merentasi permukaan yang berbeza.
 
-## Tahap Kebolehlihatan
+## Tahap Kebolehlihatan {#visibility-levels}
 
-### Awam (Public)
+### Awam (Public) {#public}
 
 **Kebolehan Awam** tersedia di mana-mana sahaja:
 
@@ -32,7 +32,7 @@ Setiap kebolehan membawa tahap kebolehlihatan yang menentukan ketersediaannya me
 
 Contoh: `scaffold-block-theme`, `activate-theme`, `send-email`
 
-### Dalaman (Internal)
+### Dalaman (Internal) {#internal}
 
 **Kebolehan Dalaman** hanya tersedia di dalam pemasangan WordPress anda:
 
@@ -43,7 +43,7 @@ Contoh: `scaffold-block-theme`, `activate-theme`, `send-email`
 
 Contoh: `manage-settings`, `view-analytics`, `export-data`
 
-### Rakan Kongsi (Partner)
+### Rakan Kongsi (Partner) {#partner}
 
 **Kebolehan Rakan Kongsi** hanya tersedia untuk rakan kongsi yang disenaraikan (whitelisted):
 
@@ -54,7 +54,7 @@ Contoh: `manage-settings`, `view-analytics`, `export-data`
 
 Contoh: `bulk-import-users`, `modify-billing`, `access-analytics`
 
-### Dinonaktifkan (Disabled)
+### Dinonaktifkan (Disabled) {#disabled}
 
 **Kebolehan Dinonaktifkan** tidak tersedia di mana-mana sahaja:
 
@@ -63,15 +63,15 @@ Contoh: `bulk-import-users`, `modify-billing`, `access-analytics`
 - Tidak tersedia dalam panel pentadbir
 - Berguna untuk kebolehan yang telah usang atau eksperimen
 
-## Mengurus Kebolehlihatan Kebolehan
+## Mengurus Kebolehlihatan Kebolehan {#managing-ability-visibility}
 
-### Mengakses Tetapan Kebolehlihatan Kebolehan
+### Mengakses Tetapan Kebolehlihatan Kebolehan {#accessing-ability-visibility-settings}
 
 1. Pergi ke **WordPress Admin** → **Superdav AI Agent** → **Settings**
 2. Klik tab **Abilities**
 3. Anda akan melihat senarai semua kebolehan yang dipasang dengan tahap kebolehlihatan masing-masing
 
-### Melihat Butiran Kebolehan
+### Melihat Butiran Kebolehan {#viewing-ability-details}
 
 Klik pada mana-mana kebolehan untuk melihat:
 
@@ -82,7 +82,7 @@ Klik pada mana-mana kebolehan untuk melihat:
 - **Last updated**: Bila kebolehlihatan itu terakhir diubah
 - **Status**: Dikenali atau Tidak Diklasifikasikan
 
-### Mengubah Tahap Kebolehlihatan
+### Mengubah Tahap Kebolehlihatan {#changing-visibility-levels}
 
 Untuk mengubah kebolehlihatan kebolehan:
 
@@ -100,7 +100,7 @@ Change to: Partner
 Partner allow-list: partner-123, partner-456
 ```
 
-### Operasi Secara Pukal (Bulk Operations)
+### Operasi Secara Pukal (Bulk Operations) {#bulk-operations}
 
 Untuk mengubah kebolehlihatan bagi beberapa kebolehan:
 
@@ -108,11 +108,11 @@ Untuk mengubah kebolehlihatan bagi beberapa kebolehan:
 2. Pilih tahap kebolehlihatan baharu daripada menu lungsur tindakan pukal
 3. Klik **Apply**
 
-## Senarai Kebenaran Rakan Kongsi (Partner Allow-List)
+## Senarai Kebenaran Rakan Kongsi (Partner Allow-List) {#partner-allow-list}
 
 **Senarai kebenaran rakan kongsi** mengawal rakan kongsi luaran mana yang boleh mengakses kebolehan tahap Rakan Kongsi.
 
-### Menambah Rakan Kongsi
+### Menambah Rakan Kongsi {#adding-partners}
 
 1. Pergi ke **Superdav AI Agent** → **Settings** → **Partners**
 2. Klik **Add Partner**
@@ -120,7 +120,7 @@ Untuk mengubah kebolehlihatan bagi beberapa kebolehan:
 4. Secara pilihan tambahkan nama dan penerangan rakan kongsi
 5. Klik **Save**
 
-### Menetapkan Kebolehan kepada Rakan Kongsi
+### Menetapkan Kebolehan kepada Rakan Kongsi {#assigning-abilities-to-partners}
 
 Selepas menambah rakan kongsi:
 
@@ -130,7 +130,7 @@ Selepas menambah rakan kongsi:
 4. Dalam bahagian "Partner allow-list", tandakan kotak untuk rakan kongsi yang sepatutnya mempunyai akses
 5. Klik **Save**
 
-### Mencabut Akses Rakan Kongsi
+### Mencabut Akses Rakan Kongsi {#revoking-partner-access}
 
 Untuk menghapuskan akses rakan kongsi:
 
@@ -140,11 +140,11 @@ Untuk menghapuskan akses rakan kongsi:
 
 Rakan kongsi itu akan serta-merta kehilangan akses kepada kebolehan itu.
 
-## Kebolehan Tidak Diklasifikasikan (Unclassified Abilities)
+## Kebolehan Tidak Diklasifikasikan (Unclassified Abilities) {#unclassified-abilities}
 
 Apabila anda memasang kebolehan pihak ketiga yang tidak dikenali oleh Superdav AI Agent, ia ditandakan sebagai **Tidak Diklasifikasikan (Unclassified)**.
 
-### Notis Pentadbir untuk Kebolehan Tidak Diklasifikasikan
+### Notis Pentadbir untuk Kebolehan Tidak Diklasifikasikan {#admin-notice-for-unclassified-abilities}
 
 Anda akan melihat notis pentadbir:
 
@@ -161,7 +161,7 @@ Please review and classify them.
 [Review Abilities] [Dismiss]
 ```
 
-### Menyemak Kebolehan Tidak Diklasifikasikan
+### Menyemak Kebolehan Tidak Diklasifikasikan {#reviewing-unclassified-abilities}
 
 1. Klik **Review Abilities** dalam notis
 2. Untuk setiap kebolehan yang tidak diklasifikasikan, anda akan melihat:
@@ -178,7 +178,7 @@ Please review and classify them.
 
 4. Klik **Classify** untuk menyimpan keputusan anda
 
-### Mengapa Mengklasifikasikan Kebolehan Tidak Diklasifikasikan?
+### Mengapa Mengklasifikasikan Kebolehan Tidak Diklasifikasikan? {#why-classify-unclassified-abilities}
 
 Mengklasifikasikan kebolehan:
 
@@ -187,9 +187,9 @@ Mengklasifikasikan kebolehan:
 - **Membolehkan ciri**: Setelah diklasifikasikan, kebolehan itu menjadi tersedia
 - **Mendokumentasikan keputusan**: Pilihan anda direkodkan untuk tujuan audit
 
-## Kebolehlihatan dalam Permukaan Berbeza
+## Kebolehlihatan dalam Permukaan Berbeza {#visibility-in-different-surfaces}
 
-### REST API
+### REST API {#rest-api}
 
 **Kebolehan Awam** tersedia melalui endpoint REST:
 
@@ -201,7 +201,7 @@ curl -X POST https://yoursite.com/wp-json/superdav/v1/abilities/scaffold-block-t
 
 **Kebolehan Dalaman dan Rakan Kongsi** tidak tersedia melalui REST API.
 
-### Pelayan MCP
+### Pelayan MCP {#mcp-servers}
 
 **Kebolehan Awam** tersedia melalui MCP:
 
@@ -217,7 +217,7 @@ Available abilities:
 
 **Kebolehan Rakan Kongsi** hanya tersedia dengan kelayakan rakan kongsi.
 
-### Integrasi WooCommerce
+### Integrasi WooCommerce {#woocommerce-integration}
 
 **Kebolehan Awam** yang berkaitan dengan WooCommerce tersedia:
 
@@ -227,7 +227,7 @@ Available abilities:
 
 **Kebolehan Dalaman** tidak didedahkan kepada WooCommerce.
 
-### Antara Muka Sembang (Chat Interface)
+### Antara Muka Sembang (Chat Interface) {#chat-interface}
 
 **Semua kebolehan** (Awam, Dalaman, Rakan Kongsi) tersedia dalam sembang, bergantung pada kebenaran pengguna:
 
@@ -235,34 +235,34 @@ Available abilities:
 - Pengguna biasa hanya melihat kebolehan Awam
 - Rakan kongsi melihat kebolehan Awam + Rakan Kongsi (jika disenaraikan)
 
-## Amalan Terbaik Keselamatan
+## Amalan Terbaik Keselamatan {#security-best-practices}
 
-### Prinsip Keistimewaan Paling Rendah (Principle of Least Privilege)
+### Prinsip Keistimewaan Paling Rendah (Principle of Least Privilege) {#principle-of-least-privilege}
 
 - Tetapkan kebolehan kepada kebolehlihatan paling ketat yang masih membenarkan penggunaannya
 - Gunakan kebolehlihatan Rakan Kongsi untuk operasi sensitif
 - Nyahaktifkan kebolehan yang anda tidak gunakan
 
-### Audit Berkala
+### Audit Berkala {#regular-audits}
 
 - Semak kebolehlihatan kebolehan setiap bulan
 - Semak kebolehan yang tidak diklasifikasikan
 - Tanggalkan akses untuk rakan kongsi yang tidak digunakan
 
-### Log dan Pemantauan
+### Log dan Pemantauan {#logging-and-monitoring}
 
 - Pantau kebolehan mana yang paling banyak digunakan
 - Jejaki corak akses rakan kongsi
 - Beri amaran tentang penggunaan kebolehan yang luar biasa
 
-### Kebolehan Pihak Ketiga
+### Kebolehan Pihak Ketiga {#third-party-abilities}
 
 - Semak kebolehan pihak ketiga sebelum mengaktifkannya
 - Klasifikasikan ia secara eksplisit
 - Mulakan dengan kebolehlihatan Dalaman atau Rakan Kongsi
 - Promosikan kepada Awam hanya selepas semakan menyeluruh
 
-## Penyelesaian Masalah (Troubleshooting)
+## Penyelesaian Masalah (Troubleshooting) {#troubleshooting}
 
 **Kebolehan tidak muncul dalam senarai**
 - Sahkan kebolehan itu dipasang dan aktif
@@ -285,7 +285,7 @@ Available abilities:
 - Semak bahawa klasifikasi anda telah disimpan
 - Sahkan plugin yang menyediakan kebolehan itu adalah terkini
 
-## Migrasi dari Mod Lama (Legacy Mode)
+## Migrasi dari Mod Lama (Legacy Mode) {#migration-from-legacy-mode}
 
 Jika anda menaik taraf dari versi Superdav AI Agent yang lebih lama:
 
@@ -295,7 +295,7 @@ Jika anda menaik taraf dari versi Superdav AI Agent yang lebih lama:
 
 Sila lihat **Third-Party Mode Migration** untuk butiran lanjut mengenai peralihan kepada integrasi Abilities API asli.
 
-## Langkah Seterusnya
+## Langkah Seterusnya {#next-steps}
 
 Selepas mengkonfigurasi kebolehlihatan kebolehan:
 

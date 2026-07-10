@@ -1,0 +1,124 @@
+---
+title: MI vietņu veidotājs
+sidebar_position: 1
+_i18n_hash: c9106d0fabbfd489110fb86fa542053a
+---
+import AddonBanner from '@site/src/components/AddonBanner';
+
+<AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
+
+# AI vietņu veidotājs {#ai-site-builder}
+
+ultimate-multisite-ai-site-builder
+
+## Prasības {#requirements}
+
+- WordPress 5.3 vai jaunāks
+- PHP 7.4 vai jaunāks
+- Multisite Ultimate plugin (aktīvs)
+
+## Instalēšana {#installation}
+
+1. Augšupielādējiet papildinājuma failus savā `/wp-content/plugins/` direktorijā
+2. Aktivizējiet plugin, izmantojot izvēlni 'Plugins' WordPress vidē
+3. Konfigurējiet papildinājuma iestatījumus tīkla administratora sadaļā
+
+## Izstrāde {#development}
+
+### Iestatīšana {#setup}
+
+```bash
+# Install dependencies
+composer install
+npm install
+
+# Run tests
+npm run test
+
+# Run code standards checks
+vendor/bin/phpcs
+vendor/bin/phpstan
+
+# Fix code style issues
+vendor/bin/phpcbf
+
+# Build for production
+npm run build
+```
+
+### Projekta struktūra {#project-structure}
+
+```
+ultimate-multisite-ai-site-builder/
+├── inc/                          # PHP klases un iekļāvumi
+│   ├── class-multisite-ultimate-updater.php  # Atjauninājumu apstrādātājs
+│   └── class-ai_site_builder-main.php             # Galvenā funkcionalitāte
+├── tests/                        # Vienību testi
+│   ├── bootstrap.php            # Testu sāknēšana
+│   ├── class-*-base.php         # Pamata testa klase
+│   └── class-*-test.php         # Testu gadījumi
+├── views/                       # Veidņu faili
+├── assets/                      # Statiskie resursi
+│   ├── css/                     # Stilu lapas
+│   ├── js/                      # JavaScript faili
+│   └── images/                  # Attēli
+├── lang/                        # Valodu faili
+├── composer.json                # PHP atkarības
+├── package.json                 # Node.js atkarības
+├── phpunit.xml.dist             # PHPUnit konfigurācija
+├── .phpcs.xml.dist              # Koda standartu konfigurācija
+└── rector.php                   # Koda modernizācijas noteikumi
+```
+
+### Testēšana {#testing}
+
+Papildinājumā ir iekļauta visaptveroša testēšanas sistēma:
+
+- **Vienību testi**: Uz PHPUnit balstīti testi ar WordPress testu komplektu
+- **Pamata testa klase**: Nodrošina palīgmetodes biežiem testu scenārijiem
+- **Testu pārklājums**: Konfigurēts koda pārklājuma izsekošanai
+- **Multisite testēšana**: Testi darbojas multisite vidē
+
+### Koda standarti {#code-standards}
+
+- **WordPress kodēšanas standarti**: Ieviesti, izmantojot PHPCS
+- **PHP 7.4+ saderība**: Atbalstītas modernas PHP funkcijas
+- **Statiskā analīze**: PHPStan integrācija tipu pārbaudei
+- **Koda modernizācija**: Rector noteikumi PHP jauninājumiem
+
+### Būvēšanas sistēma {#build-system}
+
+- **Resursu apstrāde**: CSS/JS failu minimizēšana
+- **Tulkošana**: POT faila ģenerēšana
+- **Pakošana**: Arhīva izveide izplatīšanai
+- **Izstrādes režīms**: Neminimizēti resursi atkļūdošanai
+
+## Konfigurācija {#configuration}
+
+Papildinājums atbalsta dažādas konfigurācijas opcijas, kas pieejamas tīkla administratora saskarnē.
+
+## Hooks un filtri {#hooks-and-filters}
+
+### Darbības {#actions}
+
+- `ultimate-multisite-ai-site-builder_init` - Izpildās pēc papildinājuma inicializācijas
+- `ultimate-multisite-ai-site-builder_loaded` - Izpildās pēc visu papildinājuma failu ielādes
+
+### Filtri {#filters}
+
+- `ultimate-multisite-ai-site-builder_settings` - Mainīt papildinājuma iestatījumus
+- `ultimate-multisite-ai-site-builder_enabled` - Pārrakstīt papildinājuma iespējots/atspējots statusu
+
+## Licence {#license}
+
+Šis papildinājums ir licencēts saskaņā ar GPL v3 vai jaunāku versiju.
+
+## Atbalsts {#support}
+
+Lai saņemtu atbalstu un dokumentāciju, apmeklējiet [MultisiteUltimate.com](https://multisiteultimate.com)
+## Izmaiņu žurnāls {#changelog}
+
+- Versija 1.0.1 (2025-09-28): pārdēvēt prefiksu uz ultimate-multisite; atjaunināt teksta domēnu; versijas palielinājums.
+
+
+- Versija  (2025-09-28): pārdēvēt prefiksu uz ultimate-multisite; atjaunināt teksta domēnu; versijas palielinājums.

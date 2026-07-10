@@ -5,24 +5,24 @@ title: >-
 sidebar_label: mu_migration/export/user/headers
 _i18n_hash: 93e90658913589a4b0b6bbb79e7d0be4
 ---
-# フィルタ: mu_migration/export/user/headers
+# フィルタ: mu_migration/export/user/headers {#filter-mumigrationexportuserheaders}
 
 エクスポート/インポート対象のユーザーヘッダーのデフォルトセットをフィルタリングします。
 
-## パラメータ
+## パラメータ {#parameters}
 
 | 名前 | 型 | 説明 |
 |------|------|-------------|
 | $custom_headers | `array` | カスタムヘッダー配列です。 |
 
-### 以降
+### 以降 {#since}
 
 - 0.1.0
 
-### ソース
+### ソース {#source}
 
 以下のファイルで定義されています: [`inc/mu-migration/includes/commands/class-mu-migration-export.php`](https://github.com/Ultimate-Multisite/ultimate-multisite-site-exporter/blob/main/inc/mu-migration/includes/commands/class-mu-migration-export.php#L52) 52行目
 
-## 戻り値
+## 戻り値 {#returns}
 
 配列データヘッダーです。

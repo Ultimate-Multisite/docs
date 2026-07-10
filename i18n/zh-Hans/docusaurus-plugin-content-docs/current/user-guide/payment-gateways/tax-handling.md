@@ -1,111 +1,120 @@
 ---
 title: 税务处理
 sidebar_position: 4
-_i18n_hash: 087a366fc43cafff9e887f68e71e23fe
+_i18n_hash: 8b94c58406519f9c55fe837c6addfc12
 ---
-# Tax Handling
+# 税务处理 {#tax-handling}
 
-Ultimate Multisite 在我们的核心插件中内置了税费收集模块，因此如果您需要在计划、套餐和服务上收取销售税，您可以轻松完成，而无需安装任何插件。
+Ultimate Multisite 在我们的核心 plugin 中内置了税款收取模块，因此如果你需要对你的方案、套餐和服务收取销售税，无需安装任何附加组件即可轻松完成。
 
-对于位于欧洲的公司，我们提供一个 **插件**，它添加了工具和功能，以更好地 **支持 VAT** 合规。
+对于位于欧洲的公司，我们提供一个**附加组件**，它添加了工具和功能，以更好地**支持 VAT** 合规。
 
-Ultimate Multisite 不会代表您向政府申报或缴纳税款；我们仅在交易时帮助您收取适当的税费。**您仍需自行缴纳税款。**
+Ultimate Multisite 不会代表你向政府申报或缴纳税款；我们只是帮助你在交易时收取适当的税款。**你仍然需要自行缴纳税款。**
 
-## Enabling Tax Collection
+## 启用税款收取 {#enabling-tax-collection}
 
-税费收集默认未启用。要启用它，您需要前往 **Ultimate Multisite > Settings > Taxes** 并切换以启用 Enable Taxes 设置。
+默认情况下未启用税款收取。要启用它，你需要前往 **Ultimate Multisite > 设置 > 税务**，并切换以启用“启用税务”设置。
 
-![Enable Taxes toggle in tax settings](/img/config/settings-taxes.png)
+![税务设置页面顶部的启用税务切换开关](/img/config/settings-taxes-enable.png)
 
-### Tax excluded vs. Tax included
+下面是税务设置页面的完整视图：
 
-默认情况下，所有产品价格均不含税，意味着税费 **不包含** 在产品价格中。如果我们判断客户在某笔购买中应缴纳税费，我们将把税费 **加在小计之上**。
+![税务设置完整页面](/img/config/settings-taxes-full.png)
 
-如果您希望在产品价格中包含税费，可以通过启用 **Inclusive Tax** 设置来实现。
+你也可以查看单个产品的税务设置：
 
-![Inclusive Tax setting toggle](/img/config/settings-taxes.png)
+![产品的税务设置](/img/config/settings-taxes.png)
 
-别忘了 **保存** 您所做的更改。
+### 不含税与含税 {#tax-excluded-vs-tax-included}
 
-### 
+默认情况下，你所有的产品价格都是不含税的，这意味着税款**不包含**在产品价格中。如果我们确定客户应为某次购买支付税款，我们会在小计**之上**添加税款。
 
-## Creating Tax Rates
+如果你希望税款包含在产品价格中，可以通过启用**含税**设置来实现。
 
-启用税费收集后，您需要使用我们的税率编辑器为特定位置创建税率。
+![启用税务设置下方的含税切换行](/img/config/settings-taxes-inclusive.png)
 
-您可以通过点击税务设置页面侧边栏的 **Manage Tax Rates** 按钮来访问编辑器。
+不要忘记**保存**你所做的更改。
 
-![Manage Tax Rates button on the sidebar](/img/config/settings-taxes.png)
+###
 
-在税率编辑器页面，您可以点击 **Add new Row** 按钮添加新的税率。
+## 创建税率 {#creating-tax-rates}
 
-![Tax rates editor with Add new Row button](/img/config/settings-taxes.png)
+启用税款收取后，你需要使用我们的税率编辑器为特定地点创建税率。
 
-您需要为每个税率提供一个 **title**（用于发票）。然后您可以选择 **country**（必填）、**state** 和 **city**（均为可选）来确定该税费的适用地区。最后，添加 **tax rate in percents**。
+你可以通过点击税务设置页面侧边栏上的**管理税率**按钮来访问编辑器。
 
-### Tax Categories
+![设置页面税率面板中的管理税率链接](/img/config/settings-taxes-manage-rates.png)
 
-您还可以创建多个税务类别，以为不同类型的产品添加不同的税率。
+在税率编辑器页面，你可以通过点击**添加新行**按钮来添加新的税率。
 
-点击 **Add new Tax Category**，然后输入类别名称并按 **Create**。
+![顶部带有添加新行按钮的税率编辑器表格](/img/config/tax-rates-editor.png)
 
-![Add new Tax Category button](/img/config/settings-taxes.png)
+你需要为每个税率提供一个**标题**（用于发票）。然后你可以选择将收取此税款的**国家/地区**（必填）、**州/省，**以及**城市**（两者均为可选）。最后，添加**百分比形式的税率**。
 
-![Creating a new tax category](/img/config/settings-taxes.png)
+### 税务类别 {#tax-categories}
 
-要浏览类别，请点击 **Switch** 并选择您想要添加新税费的类别。
+你还可以创建多个税务类别，以便为不同类型的产品添加不同的税率。
 
-![Switch between tax categories](/img/config/settings-taxes.png)
+点击**添加新税务类别**，然后写入你的类别名称并按**创建**。
 
-![Selecting a tax category to view](/img/config/settings-taxes.png)
+![税率编辑器顶部的添加新税务类别按钮](/img/config/tax-categories-add.png)
 
-您可以通过前往 **Product edit page** 并切换到 Taxes 选项卡来为特定产品设置税务类别。
+![创建类别模态框中的税务类别名称输入字段](/img/config/tax-categories-create-modal.png)
 
-![Product taxes tab with tax category and taxable toggle](/img/config/product-taxes.png)
+要浏览类别，请点击**切换**并选择你想要添加新税款的类别。
 
-在同一屏幕上，您可以关闭 **Is Taxable?** 开关，让 Ultimate Multisite 知道不应对该产品收取税费。
+![用于在税务类别之间切换的下拉按钮](/img/config/tax-categories-switch.png)
 
-## European VAT Support
+![显示可用类别的税务类别选择器下拉菜单](/img/config/tax-categories-select.png)
 
-如前所述，我们为欧盟客户提供了一个插件，以满足因欧洲 VAT 规定而产生的额外需求。
+你可以通过前往**产品编辑页面**，然后进入“税务”选项卡，为特定产品设置税务类别。
 
-我们的 VAT 工具可帮助完成以下几个重要任务：
+![带有税务类别和应税切换开关的产品税务选项卡](/img/config/product-taxes.png)
 
-- 轻松加载欧盟 VAT 率；
-- VAT 号码收集与验证 - 以及对 VAT 免税实体（如拥有有效 VAT 号码的公司）的反向计费；
+在同一屏幕上，你可以关闭**是否应税？**切换开关，以让 Ultimate Multisite 知道它不应对此指定产品收取税款。
 
-要安装该插件，请前往 **Ultimate Multisite > Settings**，然后点击侧边栏的 **Check our Add-ons** 链接。
+## 欧洲 VAT 支持 {#european-vat-support}
 
-![Settings page with add-ons sidebar link](/img/config/settings-taxes.png)
+如前所述，我们为欧盟客户提供了一个附加组件，以满足欧洲 VAT 法规带来的额外要求。
 
-您将被重定向到我们的插件页面。在那里，您可以搜索 **Ultimate Multisite VAT add-on** 并安装它。
+我们的 VAT 工具有助于处理几个重要事项：
 
-![VAT add-on on the add-ons page](/img/config/settings-taxes.png)
+  * 轻松加载欧盟 VAT 税率；
 
-![VAT add-on install dialog](/img/config/settings-taxes.png)
+  * VAT 号码收集与验证——以及对 VAT 免税实体（例如拥有有效 VAT 号码的公司）进行反向征税；
 
-然后，前往 **Network Admin > Plugins** 并在网络范围内激活该插件。
+要安装该附加组件，请前往 **Ultimate Multisite > 设置**，然后点击**查看我们的附加组件**侧边栏链接。
 
-![Network Activate the VAT add-on](/img/config/settings-taxes.png)
+![带有查看我们的附加组件链接的设置页面侧边栏](/img/config/settings-taxes-addons-link.png)
 
-如果您返回 **Tax Settings tab**，您将看到新的选项。切换 **Enable VAT Support** 选项以启用新的 VAT 工具。别忘了 **保存** 您的设置！
+你将被重定向到我们的附加组件页面。在那里，你可以搜索 **Ultimate Multisite VAT 附加组件**并安装它。
 
-![Enable VAT Support toggle in tax settings](/img/config/settings-taxes.png)
+<!-- 截图不可用：附加组件页面上的 VAT 附加组件卡片 -->
 
-### Pulling on VAT Tax Rates
+<!-- 截图不可用：VAT 附加组件“立即安装”对话框 -->
 
-我们的集成提供的工具之一是加载欧盟成员国税率的功能。启用 EU VAT 支持后，您可以访问税率编辑器页面来完成此操作。
+然后，前往**网络管理 > 插件**并在整个网络范围内启用该附加组件。
 
-在页面底部，您将看到 VAT 拉取选项。选择一个费率类型并点击 **Update EU VAT Rates** 按钮，将自动拉取并填充表格中的每个欧盟成员国税率。随后，您只需保存即可。
+<!-- 截图不可用：插件页面上 VAT 附加组件的网络启用操作 -->
 
-### ![VAT rates pulling options with Update EU VAT Rates button](/img/config/settings-taxes.png)
+如果你返回**税务设置选项卡**，你会看到可用的新选项。切换**启用 VAT 支持**选项以启用新的 VAT 工具。不要忘记**保存**你的设置！
 
-您还可以在拉取后编辑这些值。只需编辑所需的表格行并点击保存新值即可。
+<!-- 截图不可用：附加组件启用后税务设置中的启用 VAT 支持切换开关 -->
 
-### VAT Validation
+### 拉取 VAT 税率 {#pulling-on-vat-tax-rates}
 
-当启用 VAT 支持时，Ultimate Multisite 会在结账表单中添加一个额外字段，位于账单地址字段下方。该字段仅对位于欧盟的客户显示。
+我们的集成添加的工具之一，是能够加载欧盟成员国的税率。启用欧盟 VAT 支持后，访问税率编辑器页面即可完成此操作。
 
-![VAT number field on the checkout form](/img/config/settings-taxes.png)
+在页面底部，你会看到 VAT 拉取选项。选择一个税率类型并点击**更新欧盟 VAT 税率**按钮，将拉取并自动填充表格，加入每个欧盟成员国的税率。然后，你只需保存即可。
 
-Ultimate Multisite 将随后验证 VAT 号码，如果验证通过，则应用反向计费机制，并将该订单的税率设为 0%。
+![税率编辑器底部的更新欧盟 VAT 税率按钮](/img/config/tax-rates-vat-pull.png)
+
+你也可以在拉取后编辑这些值。要执行此操作，只需编辑你需要的表格行，然后点击保存新值。
+
+### VAT 验证 {#vat-validation}
+
+启用 VAT 支持后，Ultimate Multisite 会在结账表单中添加一个额外字段，位于账单地址字段下方。该字段只会显示给位于欧盟的客户。
+
+<!-- 截图不可用：前端结账表单中位于账单地址下方的 VAT 号码字段 -->
+
+Ultimate Multisite 随后会验证 VAT Number；如果返回结果为有效，则会应用反向征税机制，并将该订单的税率设为 0%。

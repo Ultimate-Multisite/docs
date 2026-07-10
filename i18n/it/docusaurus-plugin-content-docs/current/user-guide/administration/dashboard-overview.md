@@ -3,11 +3,11 @@ title: Panoramica della Dashboard
 sidebar_position: 8
 _i18n_hash: df15906d3aee31e6cc56f85d09ec431d
 ---
-# Dashboard Overview
+# Dashboard Overview {#dashboard-overview}
 
 Ultimate Multisite dispone di un **Dashboard** dedicato nel menu Ultimate Multisite, e aggiunge anche widget al Dashboard di Rete. Questo articolo copre ciò che vedrai in entrambi i luoghi.
 
-## Il Dashboard di Rete
+## Il Dashboard di Rete {#the-network-dashboard}
 
 Ultimate Multisite inietta widget utili nel dashboard a livello di rete trovato in **My Sites → Network Admin → Dashboard**.
 
@@ -35,7 +35,7 @@ Ecco cosa fornisce ciascun widget:
 
 ![Widget Notizie](/img/admin/network-dashboard-news.png)
 
-## Il Dashboard di Ultimate Multisite
+## Il Dashboard di Ultimate Multisite {#the-ultimate-multisite-dashboard}
 
 Mentre il dashboard di rete presenta informazioni olistiche sulla rete, il dashboard di Ultimate Multisite (alla prima pagina del menu Ultimate Multisite) presenta informazioni sul servizio.
 

@@ -3,19 +3,19 @@ title: Stripe-a konpondu
 sidebar_position: 6
 _i18n_hash: a73a808f5976fbabb54e2c9889334d00
 ---
-# Stripe Gateway-aren kon konpona (v2)
+# Stripe Gateway-aren kon konpona (v2) {#setting-up-the-stripe-gateway-v2}
 
 _**IMPORTANTE NOTA: Hau artikulu Ultimate Multisite bersyon 2.x-era referentzia da.**_
 
 Payment-aren kontua dört metodo erabilizue ditu: Stripe, Stripe Checkout, PayPal eta Manual. Hau honetan, **Stripe**arekin nola integratzen da ikusten dugu.
 
-## Stripe-aren aktiboa egitea
+## Stripe-aren aktiboa egitea {#enabling-stripe}
 
 Stripe-aren network-an erabilera gisa aktiboa egiteko, **Ultimate Multisite > Settings > Payments** funtziara jarraitu eta Active Payment Gateways (Aktibo Payment Gateway-ak) sezazioan **Stripe** edo **Stripe Checkout** iraupenean dagoen toggle-aren ikusi.
 
 ![Enabling Stripe in active payment gateways](/img/config/settings-payment-gateways.png)
 
-### Stripe vs Stripe Checkout:
+### Stripe vs Stripe Checkout: {#stripe-vs-stripe-checkout}
 
 **Stripe:** Hau metodoarekin checkout-aren ondorioz, barne cartea numerua sartzeko leku izango da.
 
@@ -25,7 +25,7 @@ Stripe-aren network-an erabilera gisa aktiboa egiteko, **Ultimate Multisite > Se
 
 ![Stripe Checkout redirect page during checkout](/img/config/settings-payment-gateways.png)
 
-### Stripe API key-ak hartzea
+### Stripe API key-ak hartzea {#setting-up-stripe-webhook}
 
 Stripe-aren payment gateway gisa aktiboa egindatzen dela, **Stripe Publishable Key** eta **Stripe Secret Key** iraupenean ematen behar duzu. Haua Stripe kontuan logiindu dakitu dezakezu.
 

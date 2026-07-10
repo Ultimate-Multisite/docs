@@ -7,25 +7,25 @@ import AddonBanner from '@site/src/components/AddonBanner';
 
 <AddonBanner slug="ultimate-multisite-ai-site-builder" name="AI Site Builder" />
 
-# AI Site Builder
+# AI Site Builder {#ai-site-builder}
 
 ultimate-multisite-ai-site-builder
 
-## 需求
+## 需求 {#requirements}
 
 - WordPress 5.3 or higher
 - PHP 7.4 or higher
 - Multisite Ultimate plugin (active)
 
-## 安装
+## 安装 {#installation}
 
 1. Upload the addon files to your `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Configure the addon settings in the network admin
 
-## 开发
+## 开发 {#development}
 
-### 设置
+### 设置 {#setup}
 
 ```bash
 # Install dependencies
@@ -46,7 +46,7 @@ vendor/bin/phpcbf
 npm run build
 ```
 
-### 项目结构
+### 项目结构 {#project-structure}
 
 ```
 ultimate-multisite-ai-site-builder/
@@ -70,7 +70,7 @@ ultimate-multisite-ai-site-builder/
 └── rector.php                   # Code modernization rules
 ```
 
-### 测试
+### 测试 {#testing}
 
 The addon includes a comprehensive testing framework:
 
@@ -79,45 +79,45 @@ The addon includes a comprehensive testing framework:
 - **Test Coverage**: Configured to track code coverage
 - **Multisite Testing**: Tests run in multisite environment
 
-### 代码标准
+### 代码标准 {#code-standards}
 
 - **WordPress Coding Standards**: Enforced via PHPCS
 - **PHP 7.4+ Compatibility**: Modern PHP features supported
 - **Static Analysis**: PHPStan integration for type checking
 - **Code Modernization**: Rector rules for PHP upgrades
 
-### 构建系统
+### 构建系统 {#build-system}
 
 - **Asset Processing**: Minification for CSS/JS files
 - **Translation**: POT file generation
 - **Packaging**: Archive creation for distribution
 - **Development Mode**: Unminified assets for debugging
 
-## 配置
+## 配置 {#configuration}
 
 The addon supports various configuration options accessible through the network admin interface.
 
-## 挂钩与过滤器
+## 挂钩与过滤器 {#hooks-and-filters}
 
-### 动作
+### 动作 {#actions}
 
 - `ultimate-multisite-ai-site-builder_init` - Fired after addon initialization
 - `ultimate-multisite-ai-site-builder_loaded` - Fired after all addon files are loaded
 
-### 过滤器
+### 过滤器 {#filters}
 
 - `ultimate-multisite-ai-site-builder_settings` - Modify addon settings
 - `ultimate-multisite-ai-site-builder_enabled` - Override addon enable/disable status
 
-## 许可证
+## 许可证 {#license}
 
 This addon is licensed under the GPL v3 or later.
 
-## 支持
+## 支持 {#support}
 
 For support and documentation, visit [MultisiteUltimate.com](https://multisiteultimate.com)
 
-## 更新日志
+## 更新日志 {#changelog}
 
 - 版本 1.0.1 (2025-09-28)：将前缀重命名为 ultimate-multisite；更新文本域；版本升级。
 

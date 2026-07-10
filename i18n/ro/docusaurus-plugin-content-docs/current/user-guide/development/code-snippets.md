@@ -3,7 +3,7 @@ title: Fragmente de cod
 sidebar_position: 1
 _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 ---
-# Fragmente de cod pentru v2
+# Fragmente de cod pentru v2 {#code-snippets-for-v2}
 
 În principiu, fragmentele de cod pentru **WordPress** sunt folosite pentru a realiza anumite acțiuni care altfel ar necesita un plugin dedicat mai mic. Astfel de fragmente de cod sunt plasate într-unul dintre fișierele de bază ale WordPress sau ale temei (de obicei fișierul functions.php al temei tale) sau pot fi folosite ca MU plugin.
 
@@ -15,13 +15,13 @@ _i18n_hash: 2284b14474d86f665fa7c84cc305553e
 
   * [**Rezolvarea problemelor CORS cu pictogramele de font în domeniile mapate**](#fixing-cors-issues-with-font-icons-in-mapped-domains)
 
-## Schimbarea poziției elementului de meniu Cont
+## Schimbarea poziției elementului de meniu Cont {#changing-the-position-of-the-account-menu-item}
 
 Pentru a schimba poziția elementului de meniu Cont în Dashboard-ul clientului tău, trebuie doar să adaugi următorul fragment de cod în functions.php al temei active de pe site-ul principal. De asemenea, poți pune fragmentul într-unul dintre mu-plugins sau pluginurile tale personalizate.
 
 add_filter('wu_my_account_menu_position', function() { return 10; // Modifică această valoare pentru a plasa meniul în poziția dorită.
 
-## Cum să verifici dacă utilizatorul este într-un anumit plan și/sau are un abonament activ
+## Cum să verifici dacă utilizatorul este într-un anumit plan și/sau are un abonament activ {#how-to-check-if-the-user-is-under-a-given-plan-andor-has-an-active-subscription}
 
 Ca administrator de rețea, s-ar putea să ai nevoie să creezi funcții personalizate care vor efectua acțiuni de bază sau vor face un serviciu/funcționalitate disponibilă unui grup selectat de abonați sau utilizatori finali, în funcție de starea abonamentului lor și planul la care sunt abonați.
 
@@ -47,8 +47,8 @@ Reține că utilizatorii pot fi abonați doar la un **Plan**, nu la un Package s
 
 ![Lista de produse care arată ID-urile planurilor](/img/admin/products-list.png)
 
-## Rezolvarea problemelor CORS cu pictogramele de font în domeniile mapate
-## Rezolvarea problemelor CORS cu pictogramele de font în domeniile mapate
+## Rezolvarea problemelor CORS cu pictogramele de font în domeniile mapate {#fixing-cors-issues-with-font-icons-in-mapped-domains}
+## Rezolvarea problemelor CORS cu pictogramele de font în domeniile mapate {#fixing-cors-issues-with-font-icons-in-mapped-domains-1}
 
 După maparea unui domeniu către un sub-site, s-ar putea să descoperi că site-ul are probleme cu încărcarea fonturilor personalizate. Aceasta este cauzată de o blocare cross-origin în setările serverului tău.
 
@@ -56,13 +56,13 @@ Deoarece fișierele de font sunt aproape întotdeauna încărcate direct din CSS
 
 Mai jos sunt fragmente de cod pentru a rezolva problema pentru Apache și NGINX. Aceste modificări necesită cunoștințe avansate despre fișierele de configurare ale serverului (fișiere .htaccess și fișiere de configurare NGINX). Dacă nu te simți confortabil să faci aceste modificări singur, trimite această pagină agenților de suport ai furnizorului tău de hosting când ceri asistență.
 
-### Apache
+### Apache {#apache}
 
 În fișierul tău .htaccess, adaugă:
 
 <FilesMatch ".(ttf|ttc|otf|eot|woff|font.css|css)$"> Header set Access-Control-Allow-Origin "*" 
 
-### NGINX
+### NGINX {#nginx}
 
 În fișierul de configurare al serverului (locația variază de la server la server), adaugă:
 

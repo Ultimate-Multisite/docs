@@ -3,7 +3,7 @@ title: Mailchimp 변경 로그
 sidebar_position: 99
 _i18n_hash: 042b569887eb26599793e18914922c78
 ---
-# Mailchimp 변경 로그
+# Mailchimp 변경 로그 {#mailchimp-changelog}
 
 버전: 1.1.1 - 2025-09-28
 

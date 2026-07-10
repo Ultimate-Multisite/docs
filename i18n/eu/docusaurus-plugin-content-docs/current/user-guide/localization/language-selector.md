@@ -3,7 +3,7 @@ title: Lan-lehiakoki
 sidebar_position: 11
 _i18n_hash: d6c43dfab70277b14ba82ce5bd62d050
 ---
-# Linguatu Irudiari (Language Selector)
+# Linguatu Irudiari (Language Selector) {#language-selector}
 
 Hau funtsezko da **Language Selector** addon-ek.
 
